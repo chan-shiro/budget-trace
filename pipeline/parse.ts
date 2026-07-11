@@ -25,7 +25,7 @@ const files = meta.files.map((f) => ({
 }));
 const doc = anyParsedDocSchema.parse(parser(files, source));
 writeJson(parsedPath(sourceId), doc);
-const what = doc.docType === "budget-book" ? "款" : "自治体";
+const what = doc.docType === "municipal-accounts" ? "自治体" : "款";
 console.log(
   `✓ ${sourceId}: ${files.length} ファイルから ${doc.facts.length} ${what}を抽出 → data/parsed/${sourceId}.json`,
 );

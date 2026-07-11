@@ -1,0 +1,403 @@
+{
+  "docType": "budget-execution",
+  "sourceId": "kofu-zaisei-jokyo-r7",
+  "parser": "kofu-zaisei-jokyo",
+  "parserVersion": "0.1.0",
+  "parsedAt": "2026-07-11T16:37:15.544Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R7",
+  "account": "一般会計",
+  "asOf": "令和8年3月31日現在",
+  "population": 181461,
+  "revenueBudgetTotal": 106361080,
+  "revenueSettledTotal": 88317050,
+  "expenditureBudgetTotal": 106361080,
+  "expenditureSettledTotal": 80383300,
+  "facts": [
+    {
+      "side": "revenue",
+      "name": "市税",
+      "currentBudget": 30874560,
+      "settled": 29356430,
+      "ratePct": 95.1,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "地方譲与税",
+      "currentBudget": 421890,
+      "settled": 415490,
+      "ratePct": 98.5,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "利子割交付金",
+      "currentBudget": 26380,
+      "settled": 51790,
+      "ratePct": 196.3,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "配当割交付金",
+      "currentBudget": 179090,
+      "settled": 230910,
+      "ratePct": 128.9,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "株式等譲渡所得割交付金",
+      "currentBudget": 304020,
+      "settled": 378310,
+      "ratePct": 124.4,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "法人事業税交付金",
+      "currentBudget": 659500,
+      "settled": 646110,
+      "ratePct": 98,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "地方消費税交付金",
+      "currentBudget": 5136470,
+      "settled": 5803980,
+      "ratePct": 113,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "環境性能割交付金",
+      "currentBudget": 75740,
+      "settled": 58430,
+      "ratePct": 77.1,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "地方特例交付金",
+      "currentBudget": 157130,
+      "settled": 152420,
+      "ratePct": 97,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "地方交付税",
+      "currentBudget": 12790210,
+      "settled": 12943240,
+      "ratePct": 101.2,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "交通安全対策特別交付金",
+      "currentBudget": 24730,
+      "settled": 26030,
+      "ratePct": 105.3,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "分担金及び負担金",
+      "currentBudget": 361100,
+      "settled": 126060,
+      "ratePct": 34.9,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "使用料及び手数料",
+      "currentBudget": 951980,
+      "settled": 753530,
+      "ratePct": 79.2,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "国庫支出金",
+      "currentBudget": 22619110,
+      "settled": 18631800,
+      "ratePct": 82.4,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "県支出金",
+      "currentBudget": 7934760,
+      "settled": 4630580,
+      "ratePct": 58.4,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "財産収入",
+      "currentBudget": 125970,
+      "settled": 138140,
+      "ratePct": 109.7,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "寄附金",
+      "currentBudget": 11091720,
+      "settled": 10143050,
+      "ratePct": 91.4,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "繰入金",
+      "currentBudget": 3294980,
+      "settled": 5240,
+      "ratePct": 0.2,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "繰越金",
+      "currentBudget": 1005560,
+      "settled": 1005560,
+      "ratePct": 100,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "諸収入",
+      "currentBudget": 2821480,
+      "settled": 1606110,
+      "ratePct": 56.9,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "市債",
+      "currentBudget": 5504700,
+      "settled": 1213840,
+      "ratePct": 22.1,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "議会費",
+      "currentBudget": 545710,
+      "settled": 532930,
+      "ratePct": 97.7,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "総務費",
+      "currentBudget": 21647250,
+      "settled": 11569330,
+      "ratePct": 53.4,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "民生費",
+      "currentBudget": 41556820,
+      "settled": 34923240,
+      "ratePct": 84,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "衛生費",
+      "currentBudget": 10660050,
+      "settled": 9324220,
+      "ratePct": 87.5,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "労働費",
+      "currentBudget": 164310,
+      "settled": 156790,
+      "ratePct": 95.4,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "農林水産業費",
+      "currentBudget": 1212110,
+      "settled": 786000,
+      "ratePct": 64.8,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "商工費",
+      "currentBudget": 2649740,
+      "settled": 1249340,
+      "ratePct": 47.1,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "土木費",
+      "currentBudget": 6791990,
+      "settled": 4288150,
+      "ratePct": 63.1,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "消防費",
+      "currentBudget": 2826290,
+      "settled": 2243040,
+      "ratePct": 79.4,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "教育費",
+      "currentBudget": 9811860,
+      "settled": 6882390,
+      "ratePct": 70.1,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "災害復旧費",
+      "currentBudget": 0,
+      "settled": 0,
+      "ratePct": null,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "公債費",
+      "currentBudget": 8462010,
+      "settled": 8411780,
+      "ratePct": 99.4,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "諸支出金",
+      "currentBudget": 16230,
+      "settled": 16090,
+      "ratePct": 99.1,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "予備費",
+      "currentBudget": 16710,
+      "settled": 0,
+      "ratePct": 0,
+      "locator": {
+        "file": "01ipankaikei.pdf",
+        "page": 2
+      }
+    }
+  ]
+}

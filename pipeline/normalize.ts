@@ -30,11 +30,11 @@ if (!sourceId) {
 }
 const source = findSource(sourceId);
 const doc = anyParsedDocSchema.parse(readJson(parsedPath(sourceId)));
-if (doc.docType === "budget-book") {
-  // 予算書は自治体間比較のレイヤではなく単一自治体の款別データ。
+if (doc.docType !== "municipal-accounts") {
+  // 予算書・執行状況は自治体間比較のレイヤではなく単一自治体のデータ。
   // アプリへは pipeline:derive で parsed から直接導出する（validate 通過が前提）
   console.log(
-    `– ${sourceId}: budget-book は normalize 対象外です。validate 通過後、pipeline:derive で利用します。`,
+    `– ${sourceId}: ${doc.docType} は normalize 対象外です。validate 通過後、pipeline:derive で利用します。`,
   );
   process.exit(0);
 }

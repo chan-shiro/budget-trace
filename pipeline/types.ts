@@ -148,8 +148,52 @@ export const budgetBookDocSchema = z.object({
 });
 export type BudgetBookDoc = z.infer<typeof budgetBookDocSchema>;
 
+// ---- [2''] parsed: 予算執行状況（財政事情の公表） ------------------------------
+// 地方自治法に基づく年2回の財政事情公表から抽出した款別の予算現額・収入/支出済額。
+// 単位は千円（資料の万円を変換）。
+export const executionLineFactSchema = z.object({
+  side: z.enum(["revenue", "expenditure"]),
+  /** 款名（資料表記から空白を除去） */
+  name: z.string().min(1),
+  /** 予算現額（千円） */
+  currentBudget: z.number(),
+  /** 収入済額（歳入）/ 支出済額（歳出）（千円） */
+  settled: z.number(),
+  /** 資料記載の収入率/執行率（%）。予算現額0の款は null */
+  ratePct: z.number().nullable(),
+  locator: locatorSchema,
+});
+export type ExecutionLineFact = z.infer<typeof executionLineFactSchema>;
+
+export const budgetExecutionDocSchema = z.object({
+  docType: z.literal("budget-execution"),
+  sourceId: z.string(),
+  parser: z.string(),
+  parserVersion: z.string(),
+  parsedAt: z.string(),
+  unit: z.literal("thousandYen"),
+  /** 対象会計年度（例: "R7"） */
+  fiscalYear: z.string(),
+  account: z.string(),
+  /** 基準日（例: "令和8年3月31日現在"）。年度末値でも出納整理期間前の速報にあたる */
+  asOf: z.string(),
+  /** 基準日現在の人口（資料記載） */
+  population: z.number().nullable(),
+  /** 資料記載の合計行（千円）。内訳の和との照合は validate が行う */
+  revenueBudgetTotal: z.number(),
+  revenueSettledTotal: z.number(),
+  expenditureBudgetTotal: z.number(),
+  expenditureSettledTotal: z.number(),
+  facts: z.array(executionLineFactSchema),
+});
+export type BudgetExecutionDoc = z.infer<typeof budgetExecutionDocSchema>;
+
 /** parse/validate が受け取り得る全ドキュメント型 */
-export const anyParsedDocSchema = z.union([budgetBookDocSchema, parsedDocSchema]);
+export const anyParsedDocSchema = z.union([
+  budgetBookDocSchema,
+  budgetExecutionDocSchema,
+  parsedDocSchema,
+]);
 export type AnyParsedDoc = z.infer<typeof anyParsedDocSchema>;
 
 // ---- 検証ゲート ---------------------------------------------------------------

@@ -2,7 +2,12 @@
 // 予算・決算データは「合計 = 内訳の和」で自己検証できるのが強み。
 // error が1件でもあれば needs_review になり、normalize は通らない。
 // 使い方: bun run pipeline:validate <sourceId>
-import { anyParsedDocSchema, type BudgetBookDoc, type ValidationResult } from "./types";
+import {
+  anyParsedDocSchema,
+  type BudgetBookDoc,
+  type BudgetExecutionDoc,
+  type ValidationResult,
+} from "./types";
 import { parsedPath, readJson, validationPath, writeJson } from "./lib/store";
 
 const sourceId = process.argv[2];
@@ -109,6 +114,49 @@ function validateBudgetBook(d: BudgetBookDoc): void {
 
 if (doc.docType === "budget-book") {
   validateBudgetBook(doc);
+  finish(doc.facts.length, "款");
+}
+
+// ---- 予算執行状況（財政事情の公表）の検証 -------------------------------------
+function validateBudgetExecution(d: BudgetExecutionDoc): void {
+  for (const side of ["revenue", "expenditure"] as const) {
+    const label = side === "revenue" ? "歳入" : "歳出";
+    const lines = d.facts.filter((f) => f.side === side);
+    const budgetTotal = side === "revenue" ? d.revenueBudgetTotal : d.expenditureBudgetTotal;
+    const settledTotal = side === "revenue" ? d.revenueSettledTotal : d.expenditureSettledTotal;
+
+    // 合計 = 内訳の和（万円→千円変換のみなので厳密一致）
+    const bSum = lines.reduce((a, f) => a + f.currentBudget, 0);
+    const sSum = lines.reduce((a, f) => a + f.settled, 0);
+    if (bSum !== budgetTotal) {
+      issues.push({ level: "error", message: `${label}: 予算現額の和 ${bSum} が合計 ${budgetTotal} と一致しません（差 ${bSum - budgetTotal}）` });
+    }
+    if (sSum !== settledTotal) {
+      issues.push({ level: "error", message: `${label}: 済額の和 ${sSum} が合計 ${settledTotal} と一致しません（差 ${sSum - settledTotal}）` });
+    }
+    for (const f of lines) {
+      if (f.currentBudget < 0 || f.settled < 0) {
+        issues.push({ level: "error", message: `${label} ${f.name}: 負値 (${f.currentBudget} / ${f.settled})` });
+      }
+      // 資料記載の率と 済額/現額 の再計算が一致するか（記載は小数1桁・四捨五入）
+      if (f.ratePct != null && f.currentBudget > 0) {
+        const calc = (f.settled / f.currentBudget) * 100;
+        if (Math.abs(calc - f.ratePct) > 0.06) {
+          issues.push({
+            level: "warning",
+            message: `${label} ${f.name}: 記載率 ${f.ratePct}% と再計算 ${calc.toFixed(2)}% が乖離（列の取り違えの可能性）`,
+          });
+        }
+      }
+    }
+  }
+  if (d.population != null && d.population <= 0) {
+    issues.push({ level: "error", message: `人口が不正 (${d.population})` });
+  }
+}
+
+if (doc.docType === "budget-execution") {
+  validateBudgetExecution(doc);
   finish(doc.facts.length, "款");
 }
 

@@ -477,7 +477,15 @@ describe("GET /api/budgets/:municipalityId/dashboard", () => {
       ↓ pipeline:validate（検証ゲート）
 [3] normalized   data/normalized/<dataset>/<年度>.json — 比較可能レイヤ。
                  団体コード（JIS X 0402）・標準科目・千円単位で統一。sourceRef で来歴保持
+      ↓ pipeline:derive
+[4] gen          src/client/lib/*.gen.ts — アプリが読む消費目的別の断面（コミット対象）
 ```
+
+メダリオンアーキテクチャで言うと **raw = Bronze、parsed / normalized = Silver（資料構造の
+まま→標準分類へ conformed の2段）、gen = Gold** に相当する。sources はデータ層ではなく
+カタログ（台帳）。下流は常に上流から再生成でき、層を跨ぐときに検証ゲートを通す。
+単一自治体の資料（budget-book）は自治体間比較の層である normalized を意図的にスキップし、
+parsed → gen に直行する。
 
 ### ルール
 

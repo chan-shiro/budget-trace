@@ -53,6 +53,24 @@ export const SOURCES: SourceEntry[] = [
     parserOptions: { revenuePage: 12, expenditurePage: 13, projectPages: { from: 14, to: 23 } },
   },
   {
+    // 甲府市の財政事情の公表（地方自治法 §243の3）。年2回、款別の予算現額と
+    // 収入/支出済額（＝執行状況）が出る。直リンクは公表のたびに同じパスへ
+    // 上書きされるため、アーカイブ済み raw と sha256 が版を固定する。
+    // 現在の版: 令和8年3月31日現在（= R7年度末・出納整理期間前）
+    id: "kofu-zaisei-jokyo-r7",
+    title: "令和7年度 甲府市財政事情（一般会計の状況・令和8年3月31日現在）",
+    publisher: "甲府市",
+    url: null,
+    urls: ["https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/zaise/documents/01ipankaikei.pdf"],
+    landingPage: "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/zaise/r07zaiseijokyo.html",
+    kind: "pdf",
+    fiscalYear: "R7",
+    scope: "甲府市（一般会計）",
+    license: "甲府市ウェブサイト掲載資料（利用条件は同サイト参照）",
+    parser: "kofu-zaisei-jokyo",
+    parserOptions: { revenuePage: 1, expenditurePage: 2 },
+  },
+  {
     // 開発用フィクスチャ: 上記と同じ構造の小さな Excel を dev/make-fixture.ts が
     // 生成する。パイプラインの end-to-end 検証専用。normalized 出力は
     // data/normalized/_fixtures/ に隔離され、アプリからは import しない。

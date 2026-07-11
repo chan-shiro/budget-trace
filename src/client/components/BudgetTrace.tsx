@@ -7,7 +7,7 @@ import BudgetTraceView from "./BudgetTraceView";
 
 const {
   KOFU, GLOSS, SIM_MIX_COLS, SIMILAR, SIMILAR_EVIDENCE, SOURCES,
-  KOFU_BUDGET, KOFU_PROJECTS, KOFU_PROJECTS_SOURCE, YAMANASHI_MUNIS,
+  KOFU_BUDGET, KOFU_PROJECTS, KOFU_PROJECTS_SOURCE, KOFU_EXECUTION, YAMANASHI_MUNIS,
   fmtOku, pctOf, fmtPerCap, fadeColor, donutBg, setPalette,
 } = D;
 
@@ -23,6 +23,7 @@ interface St {
   searchQ: string;
   unit?: string;
   compSide?: string;
+  execSide?: string;
   tip?: any;
 }
 
@@ -85,7 +86,7 @@ export default function BudgetTrace() {
   const mapColorMode = props.colorMode ?? "カラフル";
   setPalette(mapColorMode);
   const screen = s.screen;
-  const isApp = ["dash", "drill", "compare", "themes", "similar", "sources"].includes(screen);
+  const isApp = ["dash", "drill", "compare", "themes", "execution", "similar", "sources"].includes(screen);
   const data = KOFU; // 収録済み自治体は甲府市のみ
   const accent = "#1798D0";
 
@@ -251,12 +252,32 @@ export default function BudgetTrace() {
     { label: "歳入", pick: () => setSt({ compSide: "rev" }), bg: compSide === "rev" ? "#14181C" : "#FFFFFF", fg: compSide === "rev" ? "#F7FAFC" : "#5C6B77" },
   ];
 
+  // --- 予算執行状況（R7・財政事情の公表） ---
+  const execSide = s.execSide || "exp";
+  const execRows0 = execSide === "rev" ? KOFU_EXECUTION.revenue : KOFU_EXECUTION.expenditure;
+  const execBudgetTotal = execSide === "rev" ? KOFU_EXECUTION.revenueBudgetTotalOku : KOFU_EXECUTION.expenditureBudgetTotalOku;
+  const execSettledTotal = execSide === "rev" ? KOFU_EXECUTION.revenueSettledTotalOku : KOFU_EXECUTION.expenditureSettledTotalOku;
+  const execOverallRate = (execSettledTotal / execBudgetTotal) * 100;
+  const execRows = execRows0.map((r, i) => ({
+    name: r.name, sw: D.PALETTE[i % D.PALETTE.length],
+    budgetFmt: fmtOku(r.budgetOku), settledFmt: fmtOku(r.settledOku),
+    rateFmt: r.ratePct != null ? r.ratePct.toFixed(1) + "%" : "—",
+    barW: r.ratePct != null ? Math.min(100, r.ratePct).toFixed(1) : "0",
+    restFmt: fmtOku(Math.max(0, r.budgetOku - r.settledOku)),
+    refLabel: r.refLabel, ref: r.ref,
+  }));
+  const execTabs = [
+    { label: "歳出", pick: () => setSt({ execSide: "exp" }), bg: execSide === "exp" ? "#14181C" : "#FFFFFF", fg: execSide === "exp" ? "#F7FAFC" : "#5C6B77" },
+    { label: "歳入", pick: () => setSt({ execSide: "rev" }), bg: execSide === "rev" ? "#14181C" : "#FFFFFF", fg: execSide === "rev" ? "#F7FAFC" : "#5C6B77" },
+  ];
+
   // --- header nav ---
   const navDefs: [string, string, () => void][] = [
     ["ダッシュボード", "dash", () => nav({ screen: "dash" })],
     ["款別ドリルダウン", "drill", () => nav({ screen: "drill" })],
     ["前年比較", "compare", () => nav({ screen: "compare" })],
     ["政策テーマ", "themes", () => nav({ screen: "themes" })],
+    ["予算執行状況", "execution", () => nav({ screen: "execution" })],
     ["類似自治体", "similar", () => nav({ screen: "similar" })],
   ];
   const navTabs = navDefs.map(([label, key, open]) => ({ label, open, fg: screen === key ? "#14181C" : "#5C6B77", fw: screen === key ? "700" : "500", ul: screen === key ? accent : "transparent" }));
@@ -264,6 +285,17 @@ export default function BudgetTrace() {
   const v: any = {
     isTop: screen === "top", isMuni: screen === "muni", isApp,
     isDash: screen === "dash", isDrill: screen === "drill", isThemes: screen === "themes", isCompare: screen === "compare",
+    isExecution: screen === "execution",
+    execTabs, execRows,
+    execFyLabel: KOFU_EXECUTION.fyLabel, execAsOfNote: KOFU_EXECUTION.asOfNote,
+    execSideLabel: execSide === "rev" ? "歳入" : "歳出",
+    execRateLabel: execSide === "rev" ? "収入率" : "執行率",
+    execSettledColLabel: execSide === "rev" ? "収入済額" : "支出済額",
+    execOverallRate: execOverallRate.toFixed(1) + "%",
+    execOverallBarW: Math.min(100, execOverallRate).toFixed(1),
+    execBudgetFmt: fmtOku(execBudgetTotal), execSettledFmt: fmtOku(execSettledTotal),
+    execEvidence: KOFU_EXECUTION.evidence,
+    execSourceUrl: KOFU_EXECUTION.sourceUrl,
     showEvidence,
     onPrefSelect: (name: string) => nav({ screen: "muni", pref: name }),
     mapColorMode,
