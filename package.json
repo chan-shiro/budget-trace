@@ -8,12 +8,20 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "pipeline:fetch": "bun pipeline/fetch.ts",
+    "pipeline:ingest": "bun pipeline/ingest-local.ts",
+    "pipeline:parse": "bun pipeline/parse.ts",
+    "pipeline:validate": "bun pipeline/validate.ts",
+    "pipeline:normalize": "bun pipeline/normalize.ts",
+    "pipeline:fixture": "bun pipeline/dev/make-fixture.ts"
   },
   "dependencies": {
     "next": "^14.2.35",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "xlsx": "^0.18.5",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@types/node": "20.14.10",

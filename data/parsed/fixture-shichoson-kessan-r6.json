@@ -1,0 +1,144 @@
+{
+  "sourceId": "fixture-shichoson-kessan-r6",
+  "parser": "soumu-shichoson-kessan",
+  "parserVersion": "0.1.0",
+  "parsedAt": "2026-07-11T12:55:22.577Z",
+  "unit": "thousandYen",
+  "facts": [
+    {
+      "muniCode": "192015",
+      "prefName": "山梨県",
+      "muniName": "甲府市",
+      "population": 186000,
+      "revenueTotal": 82820000,
+      "expenditureTotal": 80800000,
+      "expenditureByPurpose": {
+        "議会費": 565600,
+        "総務費": 11877600,
+        "民生費": 33936000,
+        "衛生費": 8888000,
+        "労働費": 161600,
+        "農林水産業費": 969600,
+        "商工費": 1212000,
+        "土木費": 5898400,
+        "消防費": 2181600,
+        "教育費": 7756800,
+        "公債費": 7029600,
+        "諸支出金": 323200
+      },
+      "locator": {
+        "file": "fixture-shichoson-kessan-r6.xlsx",
+        "sheet": "決算状況調",
+        "row": 2
+      }
+    },
+    {
+      "muniCode": "192023",
+      "prefName": "山梨県",
+      "muniName": "富士吉田市",
+      "population": 46000,
+      "revenueTotal": 27060000,
+      "expenditureTotal": 26400000,
+      "expenditureByPurpose": {
+        "議会費": 184800,
+        "総務費": 3880800,
+        "民生費": 11088000,
+        "衛生費": 2904000,
+        "労働費": 52800,
+        "農林水産業費": 316800,
+        "商工費": 396000,
+        "土木費": 1927200,
+        "消防費": 712800,
+        "教育費": 2534400,
+        "公債費": 2296800,
+        "諸支出金": 105600
+      },
+      "locator": {
+        "file": "fixture-shichoson-kessan-r6.xlsx",
+        "sheet": "決算状況調",
+        "row": 3
+      }
+    },
+    {
+      "muniCode": "202013",
+      "prefName": "長野県",
+      "muniName": "松本市",
+      "population": 239000,
+      "revenueTotal": 107932500,
+      "expenditureTotal": 105300000,
+      "expenditureByPurpose": {
+        "議会費": 737100,
+        "総務費": 15479100,
+        "民生費": 44226000,
+        "衛生費": 11583000,
+        "労働費": 210600,
+        "農林水産業費": 1263600,
+        "商工費": 1579500,
+        "土木費": 7686900,
+        "消防費": 2843100,
+        "教育費": 10108800,
+        "公債費": 9161100,
+        "諸支出金": 421200
+      },
+      "locator": {
+        "file": "fixture-shichoson-kessan-r6.xlsx",
+        "sheet": "決算状況調",
+        "row": 4
+      }
+    },
+    {
+      "muniCode": "202045",
+      "prefName": "長野県",
+      "muniName": "上田市",
+      "population": 153000,
+      "revenueTotal": 67752500,
+      "expenditureTotal": 66100000,
+      "expenditureByPurpose": {
+        "議会費": 462700,
+        "総務費": 9716700,
+        "民生費": 27762000,
+        "衛生費": 7271000,
+        "労働費": 132200,
+        "農林水産業費": 793200,
+        "商工費": 991500,
+        "土木費": 4825300,
+        "消防費": 1784700,
+        "教育費": 6345600,
+        "公債費": 5750700,
+        "諸支出金": 264400
+      },
+      "locator": {
+        "file": "fixture-shichoson-kessan-r6.xlsx",
+        "sheet": "決算状況調",
+        "row": 5
+      }
+    },
+    {
+      "muniCode": "222038",
+      "prefName": "静岡県",
+      "muniName": "沼津市",
+      "population": 187000,
+      "revenueTotal": 82102500,
+      "expenditureTotal": 80100000,
+      "expenditureByPurpose": {
+        "議会費": 560700,
+        "総務費": 11774700,
+        "民生費": 33642000,
+        "衛生費": 8811000,
+        "労働費": 160200,
+        "農林水産業費": 961200,
+        "商工費": 1201500,
+        "土木費": 5847300,
+        "消防費": 2162700,
+        "教育費": 7689600,
+        "公債費": 6968700,
+        "諸支出金": 320400
+      },
+      "locator": {
+        "file": "fixture-shichoson-kessan-r6.xlsx",
+        "sheet": "決算状況調",
+        "row": 6
+      }
+    }
+  ]
+}

@@ -459,7 +459,60 @@ describe("GET /api/budgets/:municipalityId/dashboard", () => {
 
 ---
 
-## 10. 守るべきこと（チェックリスト）
+## 10. データパイプライン（情報収集マシン）
+
+一次資料の収集は `pipeline/` のバッチ（bun スクリプト）で行い、アプリ本体とは分離する。
+データは4層で管理する:
+
+```
+[0] sources      pipeline/registry/sources.ts — 資料の台帳
+                 （URL・ランディングページ・発行元・年度・ライセンス・パーサ指定）
+      ↓ pipeline:fetch（自動）/ pipeline:ingest（手動投入）
+[1] raw          data/raw/<sourceId>/ — 取得したままのファイル。gitignore
+                 来歴は data/raw-meta/<sourceId>.json（SHA-256・取得日時・取得元）をコミット
+      ↓ pipeline:parse（parser_version 付き・再実行可能）
+[2] parsed       data/parsed/<sourceId>.json — 資料の構造のまま抽出した事実。
+                 全数値に locator（ファイル・シート・行 / PDF はページ）必須
+      ↓ pipeline:validate（検証ゲート）
+[3] normalized   data/normalized/<dataset>/<年度>.json — 比較可能レイヤ。
+                 団体コード（JIS X 0402）・標準科目・千円単位で統一。sourceRef で来歴保持
+```
+
+### ルール
+
+- **来歴が第一級**: raw は不変。読み出し時に必ずハッシュ照合し、不一致は即エラー。
+  parsed の数値は locator なしで存在してはならない（エビデンス表示・監査の基盤）
+- **検証ゲート**: 予算・決算データは「合計 = 内訳の和」「歳入 ≧ 歳出（決算）」等で
+  自己検証できる。error が1件でもあれば `needs_review` となり normalize は通らない
+  （人が確認して解消するか、明示的に `--force`）
+- **標準分類に寄せる**: normalized で独自スキーマを発明しない。自治体は団体コード、
+  歳出は目的別標準科目（`STANDARD_PURPOSES`）。未知の科目は黙って「その他」に
+  寄せず error にする。自治体独自の款項目 → 標準分類のマッピング表もレビュー対象のデータ
+- **フィクスチャ隔離**: `fixture: true` のソースの normalized 出力は
+  `data/normalized/_fixtures/` に置かれ、アプリから import してはならない
+- **2トラック戦略**: 総務省の統一 Excel（決算状況調・財政状況資料集）で「広く浅く」
+  全国比較データを先に確保し、各自治体の予算書 PDF（LLM 併用: 抽出 → Zod 検証 →
+  整合チェックで誤りを弾く）で「深く狭く」款項目節・事業・エビデンスを掘る
+- 政府系サイトは自動取得を弾くことがある。その場合は landingPage から手動取得して
+  `pipeline:ingest` で投入する（来歴には `manual:` として記録される）
+
+### コマンド
+
+```bash
+bun run pipeline:fetch [sourceId]               # URL から raw へ取得（ハッシュ記録）
+bun run pipeline:ingest <sourceId> <file>       # 手動取得ファイルの投入
+bun run pipeline:parse <sourceId>               # raw → parsed（Zod 検証込み）
+bun run pipeline:validate <sourceId>            # 整合チェック → ok / needs_review
+bun run pipeline:normalize <sourceId> [--force] # parsed → normalized
+bun run pipeline:fixture                        # 開発用フィクスチャ生成（e2e 検証用）
+```
+
+DB（Postgres）導入時は `data/parsed` `data/normalized` の中身がテーブルへ移り、
+pipeline の各ステージはそのまま Repository 経由の書き込みに置き換わる。
+
+---
+
+## 11. 守るべきこと（チェックリスト）
 
 新しいコードを書く前 / レビューする前に、これに沿っているか確認する。
 
@@ -477,3 +530,7 @@ describe("GET /api/budgets/:municipalityId/dashboard", () => {
 - [ ] `@ts-ignore` を使っていない
 - [ ] Enter を扱う `onKeyDown` で IME 変換確定（`isComposing || keyCode === 229`）を無視している
 - [ ] 実データとダミー・推計の区別（来歴の注記）を崩していない。金額を出す画面には出典（エビデンス）への導線がある
+- [ ] 一次資料は registry に登録してから扱っている（`data/` に手でファイルを置かない）
+- [ ] parsed の数値に locator（出所の位置情報）が付いている
+- [ ] validate を通っていないデータを normalize していない（`--force` は理由をコミットメッセージに残す）
+- [ ] フィクスチャ由来のデータ（`_fixtures/`）を実データと混ぜていない・アプリから import していない

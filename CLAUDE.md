@@ -19,6 +19,14 @@ bun run dev        # 開発サーバ (http://localhost:3000)
 bun run build      # 本番ビルド（型チェック込み）
 bun run start      # 本番サーバ
 bun run typecheck  # tsc --noEmit
+
+# データパイプライン（一次資料の収集。詳細は docs/architecture.md §10）
+bun run pipeline:fetch [sourceId]               # レジストリのURLから raw を取得
+bun run pipeline:ingest <sourceId> <file>       # 手動取得ファイルの投入
+bun run pipeline:parse <sourceId>               # raw → parsed（locator 付き抽出）
+bun run pipeline:validate <sourceId>            # 整合チェック（検証ゲート）
+bun run pipeline:normalize <sourceId> [--force] # parsed → normalized（比較可能化）
+bun run pipeline:fixture                        # e2e 検証用フィクスチャ生成
 ```
 
 - テストランナーは未導入。サーバー層を導入するときに Vitest + Testcontainers を [docs/architecture.md](docs/architecture.md) の方針で入れる。
@@ -34,6 +42,10 @@ bun run typecheck  # tsc --noEmit
 - `src/client/components/JapanMap.tsx` — 日本地図（地域→都道府県→市区町村ズーム、島しょ部の別枠、エリアズーム、フリーワード検索）。SVG を直接 DOM 操作する React 管理外領域があるため、変更時は `boxRef` 配下と React 描画の境界を崩さないこと。
 - `src/client/components/ui.tsx` — `S()`（CSS 文字列→style オブジェクト。プロトタイプの inline style を逐語移植するためのヘルパ）、`HoverBox`（style-hover 相当）、`CountUpNum`（数値カウントアップ）。既存画面のスタイルは `S("...")` の文字列を**プロトタイプと diff 可能な形で維持**する。
 - `src/app/globals.css` — inline style では書けない media query を `data-mq="..."` 属性で上書きするモバイル最適化。新しいグリッド行を足すときは対応する `data-mq` ルールも確認する。
+
+# データパイプライン
+
+一次資料は `pipeline/`（バッチ）で **sources（台帳）→ raw（不変・gitignore・ハッシュ来歴）→ parsed（locator 付き抽出）→ normalized（団体コード・標準科目で比較可能化）** の4層で扱う。規約は [docs/architecture.md](docs/architecture.md) §10。特に: 検証ゲート（`needs_review` を normalize に通さない）、フィクスチャ隔離（`data/normalized/_fixtures/` をアプリから import しない）、未知の科目を黙って「その他」に寄せない。
 
 # アーキテクチャ規約
 
