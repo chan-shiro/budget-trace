@@ -52,7 +52,7 @@ src/
   server/                Hono サーバー層（docs/architecture.md 参照・現状スケルトン）
   shared/                Zod スキーマ / 純粋型（現状スケルトン）
   test/                  Testcontainers ヘルパ / fixtures（現状スケルトン）
-docs/                  アーキテクチャ規約・デザインシステム・デプロイ方針
+docs/                  アーキテクチャ規約
 public/mapdata/        同梱した地図形状データ（SVG + 47都道府県の市区町村 GeoJSON）
 project/, chats/       元となった Claude Design のプロトタイプと会話ログ（参考）
 ```
@@ -69,9 +69,8 @@ bun run start      # 本番サーバ
 bun run typecheck  # 型チェック
 ```
 
-コードを書く前に [CLAUDE.md](CLAUDE.md) と [docs/architecture.md](docs/architecture.md)（アーキテクチャ規約）、
-[docs/design-system.md](docs/design-system.md)（デザインシステム）を参照してください。
-デプロイ方針（未構築）は [docs/deploy.md](docs/deploy.md)。
+コードを書く前に [CLAUDE.md](CLAUDE.md) と [docs/architecture.md](docs/architecture.md)（アーキテクチャ規約）を参照してください。
+デプロイは Vercel を想定（未構築）。
 
 ## 注意
 
