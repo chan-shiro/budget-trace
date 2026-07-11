@@ -1,5 +1,6 @@
 // data/ 階層の入出力ヘルパ。
-// - data/raw/<sourceId>/         バイナリ本体（gitignore・fetch/ingest で再取得可能）
+// - data/raw/<sourceId>/         バイナリ本体（原本アーカイブとしてコミット。
+//                                フィクスチャの raw だけ gitignore・再生成可能）
 // - data/raw-meta/<sourceId>.json 取得来歴（コミット対象。ハッシュで raw を固定）
 // - data/parsed/<sourceId>.json   抽出結果（コミット対象）
 // - data/parsed/<sourceId>.validation.json 検証結果
@@ -89,7 +90,7 @@ export function resolveRawFile(sourceId: string, filename: string): string {
   const path = join(rawDir(sourceId), filename);
   if (!existsSync(path)) {
     throw new Error(
-      `${path} がありません（raw は gitignore です）。fetch/ingest で再取得してください。`,
+      `${path} がありません。fetch/ingest で再取得してください（フィクスチャは pipeline:fixture で再生成）。`,
     );
   }
   const actual = sha256Of(path);
