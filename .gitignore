@@ -6,3 +6,6 @@
 next-env.d.ts
 .DS_Store
 npm-debug.log*
+
+# raw データ本体は再取得可能なため追跡しない（来歴は data/raw-meta/ をコミット）
+/data/raw/
