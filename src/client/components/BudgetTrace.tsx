@@ -2,7 +2,7 @@
 
 import React from "react";
 import { CountUpNum } from "./ui";
-import * as D from "@/lib/data";
+import * as D from "@/client/lib/data";
 import BudgetTraceView from "./BudgetTraceView";
 
 const {

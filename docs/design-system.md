@@ -1,7 +1,7 @@
 # デザインシステム
 
 予算トレースの UI を追加・変更するときは、この既存の視覚言語に合わせる。
-（Claude Design プロトタイプ由来。トークンの実体は `app/globals.css` / `lib/data.ts` / 各コンポーネントの inline style）
+（Claude Design プロトタイプ由来。トークンの実体は `src/app/globals.css` / `src/client/lib/data.ts` / 各コンポーネントの inline style）
 
 ## 基本方針
 
@@ -22,7 +22,7 @@
 | 罫線 | カード枠 `#DFE7EC` / 行区切り `#ECF2F6`・`#E3EBF0` |
 | アクセント | `#1798D0`（hover `#0F76A3`、淡背景 `#E3F4FC`、淡枠 `#B9E0F2`） |
 | セマンティック | 増加・達成・賛成 `#0F76A3` / 減少・未達 `#C25400` / 反対 `#A85A45` |
-| チャート系列 | `PALETTE`（`lib/data.ts` の `P_VIVID` = Okabe-Ito ベース。Tweaks 相当で `P_BLUE` に切替可） |
+| チャート系列 | `PALETTE`（`src/client/lib/data.ts` の `P_VIVID` = Okabe-Ito ベース。Tweaks 相当で `P_BLUE` に切替可） |
 
 - フォント: 本文 **IBM Plex Sans JP** / **数値・コード・年度ラベルは必ず IBM Plex Mono**
 - 角丸: カード 14–16px、小カード・行 11–13px、ピル・トグルは `999px`
@@ -36,9 +36,9 @@
 - **ツールチップ**: ポインタ近傍の黒背景（`#14181C`）ツールチップ。タップ時は約3.2秒で自動消滅
 - **アニメーション**: 画面遷移 `fadeUp`、バー `barGrow`/`vbarGrow`、ドーナツ `sweepIn`、主要数値は `CountUpNum`。
   すべて `prefers-reduced-motion: reduce` で無効化される（新規アニメーションも必ず対応する）
-- **ホバースタイル**: inline style では `:hover` が書けないため `HoverBox`（`components/ui.tsx`）を使う
+- **ホバースタイル**: inline style では `:hover` が書けないため `HoverBox`（`src/client/components/ui.tsx`）を使う
 - **モバイル**: inline style では media query が書けないため、要素に `data-mq="..."` を付けて
-  `app/globals.css` の `@media (max-width:640px)` ブロックで上書きする。グリッド列の増減時は対応ルールを必ず更新
+  `src/app/globals.css` の `@media (max-width:640px)` ブロックで上書きする。グリッド列の増減時は対応ルールを必ず更新
 - **一覧**: CSS grid の行ボタン（ヘッダ行は 11px muted、行区切りは `#ECF2F6` の下線のみ）。表に外枠を付けない
 
 ## してはいけないこと

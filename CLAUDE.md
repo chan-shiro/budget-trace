@@ -23,14 +23,14 @@ npm run typecheck  # tsc --noEmit
 
 # 現在の構成（ビッグピクチャー）
 
-現状は**サーバーレスの UI プロトタイプ**。画面遷移は URL ではなくコンポーネント内 state（`st.screen`）で管理する SPA で、プロトタイプの挙動を忠実に再現している。
+現状は**サーバーレスの UI プロトタイプ**。画面遷移は URL ではなくコンポーネント内 state（`st.screen`）で管理する SPA で、プロトタイプの挙動を忠実に再現している。ディレクトリは [docs/architecture.md](docs/architecture.md) の `src/` レイアウトへ移行済み（`src/server/` `src/shared/` `src/test/` はスケルトンのみ）。
 
-- `components/BudgetTrace.tsx` — アプリ本体。全 state と算出ロジック（プロトタイプの `renderVals` 相当）。年度スケール・補正反映・1人あたり換算・ドリルダウン木の解決などは**すべてここで計算し、描画用の値オブジェクト `v` にまとめて**渡す。
-- `components/BudgetTraceView.tsx` — 全画面（トップ / 市区町村選択 / ダッシュボード / 款項目節ドリルダウン / 前年比較 / 政策テーマ / 事業詳細 / 過年度実績 / 類似自治体 / 基本情報 / 出典）の JSX。ロジックを持たない。
-- `lib/data.ts` — 予算・事業・テーマ・基本情報などの全データと整形関数（`fmtOku` / `fmtPerCap` / `donutBg` / `synthChildren` 等）。チャート色 `PALETTE` は**モジュール変数を `setPalette()` で切り替える**方式なので、描画前に呼ばれる順序に注意。
-- `components/JapanMap.tsx` — 日本地図（地域→都道府県→市区町村ズーム、島しょ部の別枠、エリアズーム、フリーワード検索）。SVG を直接 DOM 操作する React 管理外領域があるため、変更時は `boxRef` 配下と React 描画の境界を崩さないこと。
-- `components/ui.tsx` — `S()`（CSS 文字列→style オブジェクト。プロトタイプの inline style を逐語移植するためのヘルパ）、`HoverBox`（style-hover 相当）、`CountUpNum`（数値カウントアップ）。既存画面のスタイルは `S("...")` の文字列を**プロトタイプと diff 可能な形で維持**する。
-- `app/globals.css` — inline style では書けない media query を `data-mq="..."` 属性で上書きするモバイル最適化。新しいグリッド行を足すときは対応する `data-mq` ルールも確認する。
+- `src/client/components/BudgetTrace.tsx` — アプリ本体。全 state と算出ロジック（プロトタイプの `renderVals` 相当）。年度スケール・補正反映・1人あたり換算・ドリルダウン木の解決などは**すべてここで計算し、描画用の値オブジェクト `v` にまとめて**渡す。
+- `src/client/components/BudgetTraceView.tsx` — 全画面（トップ / 市区町村選択 / ダッシュボード / 款項目節ドリルダウン / 前年比較 / 政策テーマ / 事業詳細 / 過年度実績 / 類似自治体 / 基本情報 / 出典）の JSX。ロジックを持たない。
+- `src/client/lib/data.ts` — 予算・事業・テーマ・基本情報などの全データと整形関数（`fmtOku` / `fmtPerCap` / `donutBg` / `synthChildren` 等）。チャート色 `PALETTE` は**モジュール変数を `setPalette()` で切り替える**方式なので、描画前に呼ばれる順序に注意。サーバー層導入時に型→`src/shared/`、データ→seed / fixture へ分割する。
+- `src/client/components/JapanMap.tsx` — 日本地図（地域→都道府県→市区町村ズーム、島しょ部の別枠、エリアズーム、フリーワード検索）。SVG を直接 DOM 操作する React 管理外領域があるため、変更時は `boxRef` 配下と React 描画の境界を崩さないこと。
+- `src/client/components/ui.tsx` — `S()`（CSS 文字列→style オブジェクト。プロトタイプの inline style を逐語移植するためのヘルパ）、`HoverBox`（style-hover 相当）、`CountUpNum`（数値カウントアップ）。既存画面のスタイルは `S("...")` の文字列を**プロトタイプと diff 可能な形で維持**する。
+- `src/app/globals.css` — inline style では書けない media query を `data-mq="..."` 属性で上書きするモバイル最適化。新しいグリッド行を足すときは対応する `data-mq` ルールも確認する。
 
 # アーキテクチャ規約
 

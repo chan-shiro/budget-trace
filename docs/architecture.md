@@ -6,16 +6,17 @@
 
 ## 0. 現状と適用範囲
 
-このリポジトリは現在 **UI のみのプロトタイプ**（データは `lib/data.ts` に静的定義、サーバー層なし）。
-本書の規約は **最初のサーバーサイド機能を書く時点から**適用する。想定される契機:
+このリポジトリは現在 **UI のみのプロトタイプ**（データは `src/client/lib/data.ts` に静的定義、サーバー層なし）。
+ディレクトリは下記の `src/` レイアウトへ**移行済み**だが、`src/server/` `src/shared/` `src/test/` は
+スケルトン（空ディレクトリ）のみ。本書のサーバー側規約は **最初のサーバーサイド機能を書く時点から**適用する。
+想定される契機:
 
 - 予算書 PDF / オープンデータの取込パイプライン（甲府市以外の自治体追加）
 - 管理画面（データ登録・エビデンス添付・公開フラグ）
 - 認証つきの編集機能
 
-サーバー層を導入するタイミングで、既存コードを下記レイアウトへ移行する
-（`app/` → `src/app/`、`components/` → `src/client/components/`、`lib/data.ts` → 当面は seed / fixture として温存）。
-移行前に UI だけを触る変更では、現行の `app/ components/ lib/` 構成のままでよい。
+その時点で `src/client/lib/data.ts` を分割する（型 → `src/shared/schema` / `src/shared/types`、
+甲府市データ → `src/test/fixtures` と DB seed）。
 
 ---
 
@@ -59,7 +60,9 @@ src/
         route.ts                Hono のルート定義 (Zod バリデーション含む)
         index.ts                外部公開する型と DI トークンを再エクスポート
   client/
-    components/                 画面コンポーネント (現 components/ を移設)
+    components/                 画面コンポーネント
+    lib/
+      data.ts                   予算・事業データと整形関数 (サーバー導入時に shared / fixtures へ分割)
     hooks/
       use[Resource].ts          React Query フック (Hono RPC を呼ぶ)
     rpc.ts                      hc<AppType> で作った RPC クライアント
@@ -68,7 +71,7 @@ src/
     types/                      純粋型のみ
   test/
     containers/                 Testcontainers の起動ヘルパ
-    fixtures/                   テスト用データ (lib/data.ts 由来の甲府市データ含む)
+    fixtures/                   テスト用データ (src/client/lib/data.ts 由来の甲府市データ含む)
 ```
 
 このプロジェクトで想定するドメイン（予算トレースの言葉に合わせる）:
@@ -127,7 +130,7 @@ export interface BudgetService {
 
 - `@injectable()` + `@inject(TOKENS.BudgetRepository)` で Repository を受け取る
 - アプリケーション固有のユースケース（年度スケール・補正反映・1人あたり換算・ドリルダウン解決など、
-  現在 `components/BudgetTrace.tsx` にある計算のサーバー側対応物）を書く
+  現在 `src/client/components/BudgetTrace.tsx` にある計算のサーバー側対応物）を書く
 - Repository を直接呼ぶのは Service だけ。route から Repository を直接触らない
 
 ### `route.ts` — Hono ルート
@@ -271,8 +274,8 @@ export function useBudgetDrill(
 ## 6. 型ルール
 
 - **`any` 禁止**。本当に「どんな値でも構わない」場面でだけ許可する（実質ほぼ無い）
-  - 現行プロトタイプの `components/*.tsx` には移植由来の `any`（`eslint-disable` 付き）が残っている。
-    **新規コードでは倣わない**こと。サーバー層導入・src/ 移行時に描画用値オブジェクト `v` を型付けして解消する
+  - 現行プロトタイプの `src/client/components/*.tsx` には移植由来の `any`（`eslint-disable` 付き）が残っている。
+    **新規コードでは倣わない**こと。サーバー層導入時に描画用値オブジェクト `v` を型付けして解消する
 - 型が決まらないときは **`unknown`** を使い、絞り込んでから扱う
 - 外部 API / 取込 PDF / オープンデータのレスポンスは Zod で `parse` してから内部型に乗せる
 - 関数の戻り値型は基本的に明示する。例外として、Hono の route handler は推論を活かしたいので戻り値型を書かない
@@ -421,7 +424,7 @@ export function buildAbilityFor(user: AppUser): AppAbility {
 | `hooks/` | コンポーネントテスト | MSW で RPC をモックし、React Testing Library で検証 |
 
 予算計算（年度スケール・補正反映・按分・1人あたり換算）は数値の正しさが信頼性そのものなので、
-Service の単体テストでは `src/test/fixtures/` の甲府市データ（現 `lib/data.ts` 由来）を使い、
+Service の単体テストでは `src/test/fixtures/` の甲府市データ（現 `src/client/lib/data.ts` 由来）を使い、
 画面に出ている既知の値（例: 総額918.0億・補正後922.2億）と突き合わせる。
 
 ### Testcontainers のルール

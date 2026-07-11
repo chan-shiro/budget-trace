@@ -39,15 +39,22 @@
 ## ディレクトリ
 
 ```
-app/                 Next.js App Router（layout, page, globals.css, icon）
-components/
-  BudgetTrace.tsx    アプリ本体：state と算出ロジック（renderVals 相当）
-  BudgetTraceView.tsx 全画面の描画（JSX）
-  JapanMap.tsx       日本地図コンポーネント
-  ui.tsx             CountUpNum / HoverBox / cssToStyle ヘルパー
-lib/data.ts          予算・事業・テーマ・基本情報などのデータと整形関数
-public/mapdata/      同梱した地図形状データ（SVG + 47都道府県の市区町村 GeoJSON）
-project/, chats/     元となった Claude Design のプロトタイプと会話ログ（参考）
+src/
+  app/                 Next.js App Router（layout, page, globals.css, icon）
+  client/
+    components/
+      BudgetTrace.tsx    アプリ本体：state と算出ロジック（renderVals 相当）
+      BudgetTraceView.tsx 全画面の描画（JSX）
+      JapanMap.tsx       日本地図コンポーネント
+      ui.tsx             CountUpNum / HoverBox / cssToStyle ヘルパー
+    lib/data.ts          予算・事業・テーマ・基本情報などのデータと整形関数
+    hooks/               React Query フック（サーバー層導入時に使用・現状スケルトン）
+  server/                Hono サーバー層（docs/architecture.md 参照・現状スケルトン）
+  shared/                Zod スキーマ / 純粋型（現状スケルトン）
+  test/                  Testcontainers ヘルパ / fixtures（現状スケルトン）
+docs/                  アーキテクチャ規約・デザインシステム・デプロイ方針
+public/mapdata/        同梱した地図形状データ（SVG + 47都道府県の市区町村 GeoJSON）
+project/, chats/       元となった Claude Design のプロトタイプと会話ログ（参考）
 ```
 
 ## 開発

@@ -1,4 +1,4 @@
-import BudgetTrace from "@/components/BudgetTrace";
+import BudgetTrace from "@/client/components/BudgetTrace";
 
 export default function Page() {
   return <BudgetTrace />;
