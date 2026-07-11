@@ -6,7 +6,7 @@ import * as D from "@/client/lib/data";
 import BudgetTraceView from "./BudgetTraceView";
 
 const {
-  KOFU, YAMANASHI, PROJECTS, PROJ_SETSU, THEMES, GLOSS, SIM_MIX_COLS, SIMILAR,
+  KOFU, YAMANASHI, PROJECTS, PROJ_SETSU, THEMES, GLOSS, SIM_MIX_COLS, SIMILAR, SIMILAR_EVIDENCE,
   SOURCES, BASIC_INFO, HOSEI, YOY_EXP, YOY_REV, HIST, YAMANASHI_MUNIS, REGIONS,
   fmtOku, pctOf, fmtPerCap, hash, fadeColor, donutBg, synthChildren, setPalette,
 } = D;
@@ -442,12 +442,14 @@ export default function BudgetTrace() {
       const sHover = hoverFor("sim-" + r.name);
       return {
         name: r.name, pop: r.pop, totalFmt: fmtOku(r.total), perCap: r.perCap,
+        ref: r.ref, refLabel: r.refLabel,
         bg: r.self ? "#E3F4FC" : "transparent", fw: r.self ? "700" : "500",
         badge: r.self ? "このまち" : "",
         segs: r.mix.map((p, i) => ({ w: String(p), sw: sHover == null || sHover === i ? cols[i] : fadeColor(cols[i]), tipMove: mkSegTip(`${r.name}・${SIM_MIX_COLS[i]}`, p + "%", "歳出構成比", cols[i], { key: "sim-" + r.name, idx: i }) })),
       };
     }),
     simLegend: SIM_MIX_COLS.map((n, i) => ({ name: n, sw: [D.PALETTE[0], D.PALETTE[1], D.PALETTE[2], D.PALETTE[4], "#C6D2DA"][i] })),
+    similarEvidence: SIMILAR_EVIDENCE,
     sourcesRows: SOURCES,
     themeCards, ...themeVals,
     ...projVals, goBack: () => nav({ screen: s.prevScreen || "dash" }),

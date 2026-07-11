@@ -24,9 +24,12 @@ Claude Design のプロトタイプ（`project/予算トレース.dc.html`）を
   全1,741市区町村（特別区含む・47都道府県）の人口・歳入歳出総額・目的別歳出が入っている。
   検証ゲートは error 0 / warning 0（全自治体で目的別合計＝歳出総額が ±0.5% 以内）。
   再現は `bun run pipeline:fetch soumu-shichoson-kessan-r6` → parse → validate → normalize
-- **類似自治体タブは実データ接続済み**: `bun run pipeline:derive` が normalized から
-  甲府市＋人口帯の近い4市＋帯内70市平均を選出して `src/client/lib/similar.gen.ts` を生成し、
-  `data.ts` が re-export する（1.6MB の JSON をバンドルに入れない方式）
+- **類似自治体タブは実データ接続済み（エビデンス付き）**: `bun run pipeline:derive` が
+  normalized から甲府市＋人口帯の近い4市＋帯内70市平均を選出して
+  `src/client/lib/similar.gen.ts` を生成し、`data.ts` が re-export する
+  （1.6MB の JSON をバンドルに入れない方式）。各行に出典位置（例「都市別・概況 436行目」、
+  title 属性に機械可読 ref）、テーブル下に一次資料カード（総務省への実リンク＋sha256＋取得日。
+  raw-meta とレジストリから生成、表示行を裏付けるファイルのみ掲載）を表示する
 - **それ以外のアプリデータはまだ `src/client/lib/data.ts` の静的データ**（款レベルは甲府市公表の
   実データ、項以下・補正・執行率はダミー）
 - サーバー層（`src/server/` ほか）は**スケルトンのみ**。Hono/Inversify/CASL/Postgres は未導入

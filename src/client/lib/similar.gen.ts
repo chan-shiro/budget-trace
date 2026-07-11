@@ -25,8 +25,10 @@ export interface SimilarRow {
   perCap: string;
   /** SIM_MIX_COLS 順の歳出構成比（%、合計100） */
   mix: number[];
-  /** 来歴（原資料ファイル内の位置） */
+  /** 来歴（原資料ファイル内の位置。機械可読） */
   ref: string;
+  /** 来歴の画面表示用ラベル（例: "都市別・概況 436行目"） */
+  refLabel: string;
 }
 
 export const SIMILAR: SimilarRow[] = [
@@ -43,7 +45,8 @@ export const SIMILAR: SimilarRow[] = [
       9.1,
       30.7
     ],
-    "ref": "001061669.xlsx#row436"
+    "ref": "001061669.xlsx#row436",
+    "refLabel": "都市別・概況 436行目"
   },
   {
     "name": "和泉市",
@@ -57,7 +60,8 @@ export const SIMILAR: SimilarRow[] = [
       7.2,
       23.1
     ],
-    "ref": "001061669.xlsx#row635"
+    "ref": "001061669.xlsx#row635",
+    "refLabel": "都市別・概況 635行目"
   },
   {
     "name": "沼津市",
@@ -71,7 +75,8 @@ export const SIMILAR: SimilarRow[] = [
       6.9,
       31.2
     ],
-    "ref": "001061669.xlsx#row500"
+    "ref": "001061669.xlsx#row500",
+    "refLabel": "都市別・概況 500行目"
   },
   {
     "name": "豊川市",
@@ -85,7 +90,8 @@ export const SIMILAR: SimilarRow[] = [
       6.8,
       31.2
     ],
-    "ref": "001061669.xlsx#row531"
+    "ref": "001061669.xlsx#row531",
+    "refLabel": "都市別・概況 531行目"
   },
   {
     "name": "山口市",
@@ -99,7 +105,8 @@ export const SIMILAR: SimilarRow[] = [
       9.6,
       43.4
     ],
-    "ref": "001061669.xlsx#row766"
+    "ref": "001061669.xlsx#row766",
+    "refLabel": "都市別・概況 766行目"
   },
   {
     "name": "類似団体平均",
@@ -113,6 +120,34 @@ export const SIMILAR: SimilarRow[] = [
       7.2,
       29.4
     ],
-    "ref": "全国の人口15〜25万人の市 70市の平均"
+    "ref": "全国の人口15〜25万人の市 70市から算出",
+    "refLabel": "帯内70市から算出（導出値）"
+  }
+];
+
+export interface SimilarEvidence {
+  title: string;
+  type: string;
+  /** 一次資料への実リンク（総務省サイトの直リンク） */
+  url: string;
+  source: string;
+  /** サムネイル枠に出す来歴（ファイル名・sha256・取得日） */
+  thumb: string;
+}
+
+export const SIMILAR_EVIDENCE: SimilarEvidence[] = [
+  {
+    "title": "令和6年度 市町村別決算状況調 都市別（1）概況",
+    "type": "Excel",
+    "url": "https://www.soumu.go.jp/main_content/001061669.xlsx",
+    "source": "www.soumu.go.jp",
+    "thumb": "001061669.xlsx ・ sha256 700fc73e7547cc7b… ・ 2026-07-11 取得"
+  },
+  {
+    "title": "令和6年度 市町村別決算状況調 都市別（3）目的別歳出内訳",
+    "type": "Excel",
+    "url": "https://www.soumu.go.jp/main_content/001061671.xlsx",
+    "source": "www.soumu.go.jp",
+    "thumb": "001061671.xlsx ・ sha256 a5928ea0f8134d93… ・ 2026-07-11 取得"
   }
 ];
