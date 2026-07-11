@@ -78,6 +78,7 @@ export { SIMILAR, SIM_MIX_COLS, SIMILAR_FY_LABEL, SIMILAR_EVIDENCE } from './sim
 export { KOFU_BUDGET } from './kofu.gen';
 export { KOFU_PROJECTS, KOFU_PROJECTS_SOURCE } from './projects.gen';
 export { KOFU_EXECUTION } from './execution.gen';
+export { KOFU_R6_DETAIL } from './detail.gen';
 
 // データ出典・更新日一覧（アプリが実際に使用している一次資料のみ）
 export const SOURCES = [

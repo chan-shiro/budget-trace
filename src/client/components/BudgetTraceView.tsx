@@ -247,7 +247,29 @@ export default function BudgetTraceView({ v }: { v: any }) {
                       </HoverBox>
                     ))}
 
-                    {v.drillNoChildrenNote && !v.hasRealProjects && (
+                    {v.hasR6Detail && (
+                      <div style={S("margin-top:8px;")}>
+                        <h3 style={S("margin:0 0 4px; font-size:14px; font-weight:700;")}>項別の内訳（{v.r6DetailFyLabel}）</h3>
+                        <p style={S("margin:0 0 10px; font-size:12px; color:#5C6B77;")}>令和8年度予算の項別内訳は原典未公開のため、直近の決算値を参考として表示しています。決算計 {v.r6DetailKanTotalFmt}。</p>
+                        <div style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:11px; padding:6px 16px;")}>
+                          {v.r6DetailRows.map((r: any, i: number) => (
+                            <div key={i} data-mq="drill" style={S("display:grid; grid-template-columns:14px minmax(120px,1.4fr) 2fr 92px 56px 20px; align-items:center; gap:12px; border-bottom:1px solid #ECF2F6; padding:10px 0;")}>
+                              <span style={S(`width:11px; height:11px; border-radius:3px; background:${r.sw};`)}></span>
+                              <span style={S("font-size:13.5px; font-weight:600; color:#14181C;")}>{r.name}</span>
+                              <span style={S("height:8px; border-radius:999px; background:#E3EBF0; overflow:hidden;")}><span data-anim="bar" style={S(`display:block; height:100%; width:${r.barW}%; background:${r.sw};`)}></span></span>
+                              <span style={S("font-family:'IBM Plex Mono',monospace; font-size:13px; text-align:right;")}>{r.amtFmt}</span>
+                              <span style={S("font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:#5C6B77; text-align:right;")}>{r.pctFmt}</span>
+                              <span></span>
+                            </div>
+                          ))}
+                        </div>
+                        <p style={S("margin:8px 2px 0; font-size:12px; color:#5C6B77;")}>
+                          <a href={v.r6DetailSourceUrl} target="_blank" rel="noopener noreferrer" style={S("color:#5C6B77;")}>{v.r6DetailSourceLabel} ↗</a>
+                        </p>
+                      </div>
+                    )}
+
+                    {v.drillNoChildrenNote && !v.hasRealProjects && !v.hasR6Detail && (
                       <p style={S("margin:8px 2px 0; font-size:12.5px; color:#5C6B77;")}>この款の項・目・節の内訳は未収録です（予算書本編の収録後に追加予定）。</p>
                     )}
 
