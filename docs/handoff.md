@@ -45,6 +45,7 @@ Claude Design のプロトタイプ（`project/予算トレース.dc.html`）を
 | デプロイは Vercel 想定 | 旧 deploy.md（Cloud Run + Terraform）は削除 |
 | クリーンアーキテクチャ規約 | docs/architecture.md。**最初のサーバーサイド機能から適用**（現状は UI のみ） |
 | パイプライン4層 + 検証ゲート | raw は不変・ハッシュ来歴、parsed は locator 必須、error は normalize 不可 |
+| raw 原本はコミットしてアーカイブ | 発行元の差し替え・削除に備え原典の写しを保全（2026-07-11 決定）。フィクスチャの raw のみ gitignore |
 | 比較は標準分類に寄せる | 団体コード（JIS X 0402）・目的別標準科目。独自スキーマを発明しない |
 | 収集は2トラック | 総務省統一 Excel で「広く浅く」→ 予算書 PDF（LLM併用）で「深く狭く」 |
 

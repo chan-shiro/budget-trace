@@ -7,5 +7,6 @@ next-env.d.ts
 .DS_Store
 npm-debug.log*
 
-# raw データ本体は再取得可能なため追跡しない（来歴は data/raw-meta/ をコミット）
-/data/raw/
+# raw の実データは原本アーカイブとしてコミットする（発行元がファイルを差し替え・
+# 削除してもエビデンスを検証できるように）。フィクスチャの raw だけは生成物なので追跡しない
+/data/raw/fixture-*/

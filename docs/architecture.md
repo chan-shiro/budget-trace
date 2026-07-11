@@ -468,7 +468,8 @@ describe("GET /api/budgets/:municipalityId/dashboard", () => {
 [0] sources      pipeline/registry/sources.ts — 資料の台帳
                  （URL・ランディングページ・発行元・年度・ライセンス・パーサ指定）
       ↓ pipeline:fetch（自動）/ pipeline:ingest（手動投入）
-[1] raw          data/raw/<sourceId>/ — 取得したままのファイル。gitignore
+[1] raw          data/raw/<sourceId>/ — 取得したままのファイル。原本アーカイブとして
+                 コミットする（発行元の差し替え・削除に備える。フィクスチャの raw のみ gitignore）。
                  来歴は data/raw-meta/<sourceId>.json（SHA-256・取得日時・取得元）をコミット
       ↓ pipeline:parse（parser_version 付き・再実行可能）
 [2] parsed       data/parsed/<sourceId>.json — 資料の構造のまま抽出した事実。
