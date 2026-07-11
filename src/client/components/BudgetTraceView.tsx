@@ -718,7 +718,10 @@ export default function BudgetTraceView({ v }: { v: any }) {
                   </div>
                   {v.similarRows.map((sr: any, i: number) => (
                     <div key={i} data-mq="sim" style={S(`display:grid; grid-template-columns:minmax(120px,1.2fr) 80px 100px 110px 2fr; gap:12px; padding:12px 8px; border-bottom:1px solid #ECF2F6; font-size:13px; align-items:center; background:${sr.bg}; border-radius:8px;`)}>
-                      <span style={S(`font-weight:${sr.fw}; display:inline-flex; align-items:center; gap:8px;`)}>{sr.name}<span style={S("font-size:10.5px; color:#0F76A3; font-weight:700;")}>{sr.badge}</span></span>
+                      <span style={S("display:flex; flex-direction:column; gap:2px;")}>
+                        <span style={S(`font-weight:${sr.fw}; display:inline-flex; align-items:center; gap:8px;`)}>{sr.name}<span style={S("font-size:10.5px; color:#0F76A3; font-weight:700;")}>{sr.badge}</span></span>
+                        <span title={sr.ref} style={S("font-family:'IBM Plex Mono',monospace; font-size:10px; color:#8494A0; font-weight:400;")}>{sr.refLabel}</span>
+                      </span>
                       <span style={S("font-family:'IBM Plex Mono',monospace; text-align:right;")}>{sr.pop}</span>
                       <span style={S("font-family:'IBM Plex Mono',monospace; text-align:right;")}>{sr.totalFmt}</span>
                       <span style={S("font-family:'IBM Plex Mono',monospace; text-align:right; font-weight:600;")}>{sr.perCap}</span>
@@ -732,6 +735,22 @@ export default function BudgetTraceView({ v }: { v: any }) {
                   <div style={S("display:flex; gap:14px; flex-wrap:wrap; margin-top:12px; font-size:11.5px; color:#5C6B77;")}>
                     {v.simLegend.map((sl: any, i: number) => (
                       <span key={i} style={S("display:inline-flex; align-items:center; gap:5px;")}><span style={S(`width:10px; height:10px; border-radius:3px; background:${sl.sw};`)}></span>{sl.name}</span>
+                    ))}
+                  </div>
+                </section>
+
+                <section style={S("margin-bottom:16px;")}>
+                  <h3 style={S("margin:0 0 12px; font-size:14px; font-weight:700;")}>エビデンス（一次資料）</h3>
+                  <div style={S("display:grid; grid-template-columns:repeat(auto-fill, minmax(240px,1fr)); gap:12px;")}>
+                    {v.similarEvidence.map((ev: any, i: number) => (
+                      <HoverBox as="a" key={i} href={ev.url} target="_blank" rel="noopener noreferrer" style={S("display:block; background:#FFFFFF; border:1px solid #DFE7EC; border-radius:13px; overflow:hidden; text-decoration:none; color:#14181C;")} hoverStyle={S("border-color:#1798D0; text-decoration:none;")}>
+                        <span style={S("display:flex; align-items:center; justify-content:center; height:110px; background:repeating-linear-gradient(45deg,#ECF2F6 0 10px,#E1EAF0 10px 20px); font-family:'IBM Plex Mono',monospace; font-size:11px; color:#5C6B77; text-align:center; padding:0 14px; line-height:1.5;")}>{ev.thumb}</span>
+                        <span style={S("display:block; padding:12px 15px;")}>
+                          <span style={S("display:inline-block; font-size:10.5px; font-weight:600; color:#1798D0; border:1px solid #B9E0F2; border-radius:999px; padding:1px 9px; margin-bottom:6px;")}>{ev.type}</span>
+                          <span style={S("display:block; font-size:13px; font-weight:600; line-height:1.5;")}>{ev.title}</span>
+                          <span style={S("display:block; font-size:11px; color:#5C6B77; margin-top:3px; font-family:'IBM Plex Mono',monospace;")}>{ev.source}</span>
+                        </span>
+                      </HoverBox>
                     ))}
                   </div>
                 </section>
@@ -872,7 +891,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
           </main>
 
           <footer data-mq-pad="" style={S("border-top:1px solid #DFE7EC; padding:16px 28px; font-size:12px; color:#5C6B77; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;")}>
-            <span>予算トレース — プロトタイプ。数値・事業名・資料名はすべてダミーです。<button onClick={v.goSources} style={S("border:none; background:none; padding:0; margin-left:8px; color:#1798D0; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")}>データ出典・更新日一覧 →</button></span>
+            <span>予算トレース — プロトタイプ。実データ（款レベル・類似自治体比較）以外の数値・事業名・資料名はダミー・推計です。<button onClick={v.goSources} style={S("border:none; background:none; padding:0; margin-left:8px; color:#1798D0; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")}>データ出典・更新日一覧 →</button></span>
             <span style={S("font-family:'IBM Plex Mono',monospace;")}>SOURCE: 甲府市 R8年度当初予算（参考）</span>
           </footer>
         </div>

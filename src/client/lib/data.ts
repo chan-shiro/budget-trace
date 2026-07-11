@@ -346,7 +346,7 @@ export const GLOSS: Record<string, string> = {
 
 // 類似自治体比較 — 総務省「令和6年度 市町村別決算状況調」からの導出実データ。
 // 再生成: bun run pipeline:derive（normalized → similar.gen.ts）
-export { SIMILAR, SIM_MIX_COLS, SIMILAR_FY_LABEL } from './similar.gen';
+export { SIMILAR, SIM_MIX_COLS, SIMILAR_FY_LABEL, SIMILAR_EVIDENCE } from './similar.gen';
 
 // データ出典・更新日一覧（ダミー）
 export const SOURCES = [
