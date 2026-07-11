@@ -49,7 +49,7 @@ bun run typecheck  # tsc --noEmit
 
 # UI デザイン
 
-UI を追加・変更する前に [docs/design-system.md](docs/design-system.md) を読むこと。IBM Plex Sans JP + IBM Plex Mono、白カード + `#DFE7EC` ボーダー、アクセント `#1798D0`、チャートは Okabe-Ito ベースの色覚多様性対応パレット。**数値は必ず IBM Plex Mono**、金額整形は `fmtOku` / `fmtPerCap` を再利用する。出典チップ（エビデンス）を伴わない数値表示を新設しない。
+**このプロジェクトの既存デザインを尊重する**（専用のデザインシステム文書は置かない。実装が仕様）。UI を追加・変更するときは既存画面の視覚言語に合わせること: IBM Plex Sans JP + IBM Plex Mono、白カード + `#DFE7EC` ボーダー、アクセント `#1798D0`、チャートは `PALETTE`（Okabe-Ito ベースの色覚多様性対応・`src/client/lib/data.ts`）以外の系列色を新設しない。**数値は必ず IBM Plex Mono**、金額整形は `fmtOku` / `fmtPerCap` を再利用する。出典チップ（エビデンス）を伴わない数値表示を新設しない。アニメーションは `prefers-reduced-motion` に対応させる。
 
 ## Enter キーは IME 変換確定を無視する
 
@@ -67,4 +67,4 @@ onKeyDown={(e) => {
 
 # デプロイ
 
-未構築。方針と初期構築手順の雛形は [docs/deploy.md](docs/deploy.md)（Cloud Run + Terraform + GitHub Actions / WIF）。
+**Vercel を想定**（未構築）。GitHub リポジトリを Vercel に接続し、`main` への push で自動デプロイする方式。ビルド設定はデフォルトの Next.js プリセット + bun でよい。
