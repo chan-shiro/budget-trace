@@ -24,6 +24,20 @@ Claude Design のプロトタイプ（`project/予算トレース.dc.html`）を
   全1,741市区町村（特別区含む・47都道府県）の人口・歳入歳出総額・目的別歳出が入っている。
   検証ゲートは error 0 / warning 0（全自治体で目的別合計＝歳出総額が ±0.5% 以内）。
   再現は `bun run pipeline:fetch soumu-shichoson-kessan-r6` → parse → validate → normalize
+- **甲府市 R8 予算書（款別）投入・アプリ接続済み**: `kofu-yosansho-r8`（当初予算案資料 PDF、
+  原本アーカイブ済み・sha256 9a3cb941…）から歳入21款・歳出14款＋前年度額を `pdftotext` で
+  決定的にパース（docType: "budget-book"、locator はページ番号、検証 error 0）。
+  `pipeline:derive` が `src/client/lib/kofu.gen.ts` を生成し、`data.ts` の KOFU 款レベルは
+  この正確値になった（歳出14款は全款表示、歳入はダッシュボードの9グループへマッピング）。
+  項以下のダミー内訳は `withDetail()` が款合計に按分。前年比較は予算書の前年度当初額
+  （実データ）を使い、増減額が原典と厳密一致。ダッシュボードとドリルダウンの EVIDENCE から
+  予算書 PDF への実リンクあり。budget-book は normalize 対象外（derive で直接アプリへ）
+- **「主な事業一覧」83事業も抽出・表示済み**: p.14-23 を `pdftotext -tsv` の単語座標で
+  決定的にパース（列はX座標、行は No. のY中点、款は見出しフォント高で追跡。
+  「介護保険事業特別会計」セクションにも対応）。検証は No 連番・款予算超過・基本目標の
+  パターン等で error 0。`projects.gen.ts` に導出し、款ドリルダウンの款レベルに
+  「この款の主な事業（実データ）」として表示（新規/拡充バッジ・内容・施策・出典ページ付き、
+  クリック遷移なし）。LLM 併用は不要だった
 - **類似自治体タブは実データ接続済み（エビデンス付き）**: `bun run pipeline:derive` が
   normalized から甲府市＋人口帯の近い4市＋帯内70市平均を選出して
   `src/client/lib/similar.gen.ts` を生成し、`data.ts` が re-export する
@@ -33,7 +47,8 @@ Claude Design のプロトタイプ（`project/予算トレース.dc.html`）を
 - **それ以外のアプリデータはまだ `src/client/lib/data.ts` の静的データ**（款レベルは甲府市公表の
   実データ、項以下・補正・執行率はダミー）
 - サーバー層（`src/server/` ほか）は**スケルトンのみ**。Hono/Inversify/CASL/Postgres は未導入
-- デプロイ未構築（Vercel 想定: GitHub 連携で main 自動デプロイ）
+- **デプロイ構築済み**: Vercel チーム `philosophyhouse` / プロジェクト `budget-trace`。
+  GitHub 連携で main push → 本番自動デプロイ。本番 https://budget-trace-tawny.vercel.app
 
 ## 3. 主要な決定事項（経緯つき）
 
@@ -77,10 +92,11 @@ Claude Design のプロトタイプ（`project/予算トレース.dc.html`）を
 
 ## 5. 残タスク（優先順）
 
-1. **予算書 PDF パーサ**（LLM 併用: 抽出 → Zod 検証 → 整合チェック）で款項目節・事業の実データ化。
-   registry に甲府市 R8 予算書を登録するところから
-2. **Vercel 接続**（GitHub 連携・main 自動デプロイ）
-3. サーバー層導入（Hono/Inversify/CASL/Postgres + Testcontainers）— data/ の DB 移行、
+1. **事業詳細画面の実データ化**: 「主な事業一覧」83事業は抽出・表示済み（款ドリルダウンの
+   款レベル）。ダミーの PROJECTS（事業詳細デモ: KPI・契約・節配分）はまだ別軸で残っている。
+   実事業をクリック可能にして詳細画面を持たせるには、決算・成果報告書など追加の一次資料が
+   要る（款レベルの主な事業には執行率・支出先が無い）
+2. サーバー層導入（Hono/Inversify/CASL/Postgres + Testcontainers）— data/ の DB 移行、
    `v` の型付け解消もこのタイミング。`*.gen.ts`（pipeline:derive の生成モジュール）も
    API 化して置き換える
 

@@ -3,8 +3,19 @@
 // 巨大な normalized JSON をクライアントに import せず、必要な断面だけを
 // 決定的（タイムスタンプなし）に生成してコミットする。
 // 使い方: bun run pipeline:derive
-import { normalizedDatasetSchema, type NormalizedMuniAccount } from "./types";
-import { normalizedPath, readJson, readRawMeta } from "./lib/store";
+import {
+  anyParsedDocSchema,
+  normalizedDatasetSchema,
+  validationResultSchema,
+  type NormalizedMuniAccount,
+} from "./types";
+import {
+  normalizedPath,
+  parsedPath,
+  readJson,
+  readRawMeta,
+  validationPath,
+} from "./lib/store";
 import { findSource } from "./registry/sources";
 import { writeFileSync } from "node:fs";
 import { join } from "node:path";
@@ -190,3 +201,211 @@ const dest = join(process.cwd(), "src/client/lib/similar.gen.ts");
 writeFileSync(dest, out, "utf8");
 console.log(`✓ 類似自治体比較を導出 → src/client/lib/similar.gen.ts`);
 console.log(`  自身: ${self.muniName} / 近隣: ${peers.map((p) => p.muniName).join("・")} / 帯内 ${band.length}市`);
+
+// ============================================================================
+// 甲府市 R8 予算書（款別）→ src/client/lib/kofu.gen.ts
+// アプリの KOFU 款レベル（従来は丸め値）を予算書パース値＋出典位置で置き換える。
+// 項以下のダミー内訳の按分は data.ts 側で行う（生成物は款レベルの事実のみ）。
+// ============================================================================
+const KOFU_SOURCE_ID = "kofu-yosansho-r8";
+// ダッシュボードの歳入表示グループ（款名の完全一致）。残りの款は「諸収入・その他」へ合算
+const REVENUE_GROUPS = [
+  "市税", "国庫支出金", "地方交付税", "県支出金", "地方消費税交付金", "繰入金", "寄附金", "市債",
+] as const;
+
+// 検証ゲート: needs_review の parsed を derive に通さない
+const kofuValidation = validationResultSchema.parse(readJson(validationPath(KOFU_SOURCE_ID)));
+if (kofuValidation.status !== "ok") {
+  throw new Error(`${KOFU_SOURCE_ID}: 検証が ${kofuValidation.status} のため derive しません`);
+}
+const kofuDoc = anyParsedDocSchema.parse(readJson(parsedPath(KOFU_SOURCE_ID)));
+if (kofuDoc.docType !== "budget-book") {
+  throw new Error(`${KOFU_SOURCE_ID}: budget-book ドキュメントではありません`);
+}
+const kofuMeta = readRawMeta(KOFU_SOURCE_ID);
+if (!kofuMeta) throw new Error(`${KOFU_SOURCE_ID}: raw-meta がありません（先に pipeline:fetch）`);
+const kofuSource = findSource(KOFU_SOURCE_ID);
+const kofuFile = kofuMeta.files[0]!;
+const kofuUrl = kofuSource.urls?.[0] ?? kofuSource.landingPage ?? "";
+
+const toOku = (thousandYen: number) => thousandYen / 100_000;
+const yoyPctOf = (cur: number, prev: number | null): number | null =>
+  prev != null && prev > 0 ? Math.round((cur / prev - 1) * 1000) / 10 : null;
+
+interface KofuKanRowGen {
+  name: string;
+  v: number;
+  prevV: number | null;
+  yoy: number | null;
+  ref: string;
+  refLabel: string;
+}
+const kanRow = (
+  name: string,
+  amount: number,
+  prevAmount: number | null,
+  page: number,
+  refLabel?: string,
+): KofuKanRowGen => ({
+  name,
+  v: toOku(amount),
+  prevV: prevAmount != null ? toOku(prevAmount) : null,
+  yoy: yoyPctOf(amount, prevAmount),
+  ref: `${kofuFile.filename}#p${page}`,
+  refLabel: refLabel ?? `予算書 p.${page}`,
+});
+
+const expFacts = kofuDoc.facts.filter((f) => f.side === "expenditure");
+const revFacts = kofuDoc.facts.filter((f) => f.side === "revenue");
+
+const kofuExpenditure = expFacts
+  .map((f) => kanRow(f.kanName, f.amount, f.prevAmount, f.locator.page ?? 0))
+  .sort((a, b) => b.v - a.v);
+
+const groupedRevenue: KofuKanRowGen[] = REVENUE_GROUPS.map((g) => {
+  const f = revFacts.find((x) => x.kanName === g);
+  if (!f) throw new Error(`歳入款「${g}」が parsed にありません（表示グループの款名を見直してください）`);
+  return kanRow(f.kanName, f.amount, f.prevAmount, f.locator.page ?? 0);
+});
+const restFacts = revFacts.filter((f) => !(REVENUE_GROUPS as readonly string[]).includes(f.kanName));
+if (restFacts.length > 0) {
+  const restPage = restFacts[0]!.locator.page ?? 0;
+  groupedRevenue.push(
+    kanRow(
+      "諸収入・その他",
+      restFacts.reduce((a, f) => a + f.amount, 0),
+      restFacts.every((f) => f.prevAmount != null)
+        ? restFacts.reduce((a, f) => a + (f.prevAmount ?? 0), 0)
+        : null,
+      restPage,
+      `予算書 p.${restPage}（残り${restFacts.length}款の合算）`,
+    ),
+  );
+}
+const kofuRevenue = [...groupedRevenue].sort((a, b) => b.v - a.v);
+
+// 合算の自己検証（グループ化でこぼしていないか）
+const revSum = kofuRevenue.reduce((a, r) => a + r.v, 0);
+if (Math.abs(revSum - toOku(kofuDoc.revenueTotal)) > 1e-6) {
+  throw new Error(`歳入グループの和 ${revSum} が歳入合計 ${toOku(kofuDoc.revenueTotal)} と一致しません`);
+}
+
+const yoyTotal = yoyPctOf(kofuDoc.expenditureTotal, kofuDoc.prevExpenditureTotal);
+const pagesOpts = (kofuSource.parserOptions ?? {}) as {
+  revenuePage?: number;
+  expenditurePage?: number;
+  projectPages?: { from: number; to: number };
+};
+const kofuBudget = {
+  fyLabel: "令和8年度 当初予算",
+  totalOku: toOku(kofuDoc.expenditureTotal),
+  prevTotalOku: kofuDoc.prevExpenditureTotal != null ? toOku(kofuDoc.prevExpenditureTotal) : null,
+  yoyLabel: yoyTotal != null ? `${yoyTotal >= 0 ? "+" : ""}${yoyTotal.toFixed(1)}%` : "",
+  sourceTitle: kofuSource.title,
+  sourceUrl: kofuUrl,
+  pagesLabel: `p.${pagesOpts.revenuePage}–${pagesOpts.expenditurePage}`,
+  revenue: kofuRevenue,
+  expenditure: kofuExpenditure,
+  evidence: [
+    {
+      title: kofuSource.title,
+      type: "PDF",
+      url: kofuUrl,
+      source: kofuUrl ? new URL(kofuUrl).hostname : "",
+      thumb: `${kofuFile.filename} ・ sha256 ${kofuFile.sha256.slice(0, 16)}… ・ ${kofuFile.fetchedAt.slice(0, 10)} 取得`,
+    },
+  ],
+};
+
+const kofuOut = `// このファイルは自動生成です。手で編集しないこと。
+// 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
+// 出典: ${kofuSource.title}（${kofuFile.filename} sha256=${kofuFile.sha256.slice(0, 16)}…）
+// 金額は億円（予算書の千円値を 1e5 で割った正確値）。yoy は前年度当初比%（小数1桁）
+
+export interface KofuKanRow {
+  name: string;
+  /** 当初予算額（億円） */
+  v: number;
+  /** 前年度当初予算額（億円） */
+  prevV: number | null;
+  /** 前年度当初比（%） */
+  yoy: number | null;
+  /** 来歴（原資料ファイル内の位置。機械可読） */
+  ref: string;
+  /** 来歴の画面表示用ラベル */
+  refLabel: string;
+}
+
+export const KOFU_BUDGET: {
+  fyLabel: string;
+  totalOku: number;
+  prevTotalOku: number | null;
+  yoyLabel: string;
+  sourceTitle: string;
+  sourceUrl: string;
+  pagesLabel: string;
+  revenue: KofuKanRow[];
+  expenditure: KofuKanRow[];
+  evidence: { title: string; type: string; url: string; source: string; thumb: string }[];
+} = ${JSON.stringify(kofuBudget, null, 2)};
+`;
+
+const kofuDest = join(process.cwd(), "src/client/lib/kofu.gen.ts");
+writeFileSync(kofuDest, kofuOut, "utf8");
+console.log(`✓ 甲府市 R8 款別予算を導出 → src/client/lib/kofu.gen.ts`);
+console.log(
+  `  総額 ${kofuBudget.totalOku}億円（前年比 ${kofuBudget.yoyLabel}） / 歳入 ${kofuRevenue.length}グループ・歳出 ${kofuExpenditure.length}款`,
+);
+
+// ---- 主な事業一覧 → src/client/lib/projects.gen.ts ---------------------------
+if (kofuDoc.projects && kofuDoc.projects.length > 0) {
+  const projRows = kofuDoc.projects.map((p) => ({
+    kan: p.kan,
+    no: p.no,
+    kubun: p.kubun,
+    name: p.name,
+    budgetBookName: p.budgetBookName,
+    amountOku: toOku(p.amount),
+    description: p.description,
+    basicGoal: p.basicGoal,
+    shisaku: p.shisaku,
+    ref: `${kofuFile.filename}#p${p.locator.page}`,
+    refLabel: `予算資料 p.${p.locator.page}`,
+  }));
+  const projOut = `// このファイルは自動生成です。手で編集しないこと。
+// 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
+// 出典: ${kofuSource.title}「主な事業一覧」（${kofuFile.filename} sha256=${kofuFile.sha256.slice(0, 16)}…）
+// 金額は億円（資料の千円値を 1e5 で割った正確値）
+
+export interface KofuProject {
+  /** 歳出款または特別会計名 */
+  kan: string;
+  /** 資料の掲載番号（全体で連番） */
+  no: number;
+  kubun: "新規" | "拡充" | null;
+  /** 事業名（【N】=KOFU NEXT ACTION、【連】=県央ネットやまなし関連） */
+  name: string;
+  /** 予算書上の事業名（資料の下段（ ）書き） */
+  budgetBookName: string | null;
+  /** 予算額（億円） */
+  amountOku: number;
+  description: string;
+  /** 総合計画の基本目標（ひと/まち/魅力。複数は「・」連結） */
+  basicGoal: string;
+  /** 総合計画の施策 */
+  shisaku: string;
+  ref: string;
+  refLabel: string;
+}
+
+export const KOFU_PROJECTS: KofuProject[] = ${JSON.stringify(projRows, null, 2)};
+
+export const KOFU_PROJECTS_SOURCE = {
+  title: ${JSON.stringify(kofuSource.title)},
+  url: ${JSON.stringify(kofuUrl)},
+  pagesLabel: ${JSON.stringify(pagesOpts.projectPages ? `p.${pagesOpts.projectPages.from}–${pagesOpts.projectPages.to}` : "")},
+};
+`;
+  writeFileSync(join(process.cwd(), "src/client/lib/projects.gen.ts"), projOut, "utf8");
+  console.log(`✓ 主な事業一覧を導出 → src/client/lib/projects.gen.ts（${projRows.length}事業）`);
+}

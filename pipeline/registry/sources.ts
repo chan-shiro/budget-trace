@@ -35,6 +35,24 @@ export const SOURCES: SourceEntry[] = [
     parser: "soumu-shichoson-kessan",
   },
   {
+    // 甲府市の当初予算（案）資料。款別の歳入・歳出一覧（前年度比較つき）と
+    // 主な事業一覧を収録。まず款別一覧を決定的にパースする（pdftotext / poppler が必要）。
+    // 主な事業一覧ページ（p.14-23）の抽出は LLM 併用パーサとして今後追加。
+    id: "kofu-yosansho-r8",
+    title: "令和8年度 甲府市当初予算（案）資料",
+    publisher: "甲府市",
+    url: null,
+    urls: ["https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf"],
+    landingPage: "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r8yosan.html",
+    kind: "pdf",
+    fiscalYear: "R8",
+    scope: "甲府市（一般会計）",
+    license: "甲府市ウェブサイト掲載資料（利用条件は同サイト参照）",
+    parser: "kofu-yosansho",
+    // 款別一覧・主な事業一覧の PDF ページ番号（1-origin）。資料の構成が変わったらここを更新する
+    parserOptions: { revenuePage: 12, expenditurePage: 13, projectPages: { from: 14, to: 23 } },
+  },
+  {
     // 開発用フィクスチャ: 上記と同じ構造の小さな Excel を dev/make-fixture.ts が
     // 生成する。パイプラインの end-to-end 検証専用。normalized 出力は
     // data/normalized/_fixtures/ に隔離され、アプリからは import しない。

@@ -278,7 +278,11 @@ export default function BudgetTraceView({ v }: { v: any }) {
                       </HoverBox>
                     ))}
                   </div>
-                  <p style={S("margin:14px 2px 0; font-size:12px; color:#5C6B77;")}>出典：甲府市 令和8年度当初予算（款レベルは公表実データ・項以下は按分推計）</p>
+                  <p style={S("margin:14px 2px 0; font-size:12px; color:#5C6B77;")}>
+                    {v.dashSourceUrl
+                      ? <a href={v.dashSourceUrl} target="_blank" rel="noopener noreferrer" style={S("color:#5C6B77;")}>{v.dashSourceLabel} ↗</a>
+                      : "出典：甲府市 令和8年度当初予算（款レベルは公表実データ・項以下は按分推計）"}
+                  </p>
                 </section>
               </div>
             )}
@@ -320,7 +324,9 @@ export default function BudgetTraceView({ v }: { v: any }) {
                     <div style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:12px; padding:12px 16px; max-width:240px;")}>
                       <div style={S("font-size:11px; font-family:'IBM Plex Mono',monospace; letter-spacing:0.12em; color:#5C6B77; margin-bottom:5px;")}>EVIDENCE</div>
                       <div style={S("font-size:12.5px; line-height:1.6;")}>{v.drillEvidence}</div>
-                      <a href="#" style={S("font-size:12px;")}>予算書PDFを開く ↗</a>
+                      {v.drillPdfUrl
+                        ? <a href={v.drillPdfUrl} target="_blank" rel="noopener noreferrer" style={S("font-size:12px;")}>予算書PDFを開く ↗</a>
+                        : <a href="#" style={S("font-size:12px;")}>予算書PDFを開く ↗</a>}
                     </div>
                   </div>
 
@@ -351,6 +357,34 @@ export default function BudgetTraceView({ v }: { v: any }) {
                           ))}
                         </div>
                         <p style={S("margin:10px 2px 0; font-size:12px; color:#5C6B77;")}>会計項目（款・項・目・節）と政策意図は別軸です。<button onClick={v.goThemes} style={S("border:none;background:none;padding:0;color:#1798D0;cursor:pointer;font-size:12px;font-family:'IBM Plex Sans JP',sans-serif;")}>政策テーマ別の集計はこちら →</button></p>
+                      </div>
+                    )}
+
+                    {v.hasRealProjects && (
+                      <div style={S("margin-top:24px;")}>
+                        <h3 style={S("margin:0 0 10px; font-size:14px; font-weight:700;")}>この款の主な事業（予算資料より・実データ）</h3>
+                        <div style={S("display:flex; flex-direction:column; gap:8px;")}>
+                          {v.realProjects.map((rp: any, i: number) => (
+                            <div key={i} style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:11px; padding:12px 16px;")}>
+                              <div style={S("display:flex; align-items:baseline; justify-content:space-between; gap:14px;")}>
+                                <span style={S("display:inline-flex; align-items:center; gap:8px; min-width:0;")}>
+                                  {rp.kubun && <span style={S(`font-size:10.5px; font-weight:700; border-radius:999px; padding:1px 9px; white-space:nowrap; color:${rp.kubun === "新規" ? "#0F76A3" : "#C25400"}; border:1px solid ${rp.kubun === "新規" ? "#B9E0F2" : "#EFD4BE"};`)}>{rp.kubun}</span>}
+                                  <span style={S("font-size:14px; font-weight:600;")}>{rp.name}</span>
+                                </span>
+                                <span style={S("font-family:'IBM Plex Mono',monospace; font-size:13px; white-space:nowrap;")}>{rp.amountFmt}</span>
+                              </div>
+                              <div style={S("font-size:11.5px; color:#5C6B77; margin-top:4px; line-height:1.6;")}>{rp.desc}</div>
+                              <div style={S("display:flex; gap:10px; flex-wrap:wrap; margin-top:6px; font-size:11px; color:#5C6B77;")}>
+                                <span>基本目標: {rp.goal}</span>
+                                <span>施策: {rp.shisaku}</span>
+                                <span title={rp.refTitle} style={S("font-family:'IBM Plex Mono',monospace; color:#8494A0;")}>{rp.refLabel}{rp.bookName && ` ・ 予算書名${rp.bookName}`}</span>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                        <p style={S("margin:10px 2px 0; font-size:12px; color:#5C6B77;")}>
+                          <a href={v.realProjectsSourceUrl} target="_blank" rel="noopener noreferrer" style={S("color:#5C6B77;")}>{v.realProjectsSourceLabel} ↗</a>
+                        </p>
                       </div>
                     )}
                   </div>
@@ -891,7 +925,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
           </main>
 
           <footer data-mq-pad="" style={S("border-top:1px solid #DFE7EC; padding:16px 28px; font-size:12px; color:#5C6B77; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;")}>
-            <span>予算トレース — プロトタイプ。実データ（款レベル・類似自治体比較）以外の数値・事業名・資料名はダミー・推計です。<button onClick={v.goSources} style={S("border:none; background:none; padding:0; margin-left:8px; color:#1798D0; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")}>データ出典・更新日一覧 →</button></span>
+            <span>予算トレース — プロトタイプ。実データ（款レベル・款の主な事業・類似自治体比較）以外の数値・事業名・資料名はダミー・推計です。<button onClick={v.goSources} style={S("border:none; background:none; padding:0; margin-left:8px; color:#1798D0; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")}>データ出典・更新日一覧 →</button></span>
             <span style={S("font-family:'IBM Plex Mono',monospace;")}>SOURCE: 甲府市 R8年度当初予算（参考）</span>
           </footer>
         </div>

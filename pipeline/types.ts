@@ -78,6 +78,8 @@ export const muniAccountFactSchema = z.object({
 export type MuniAccountFact = z.infer<typeof muniAccountFactSchema>;
 
 export const parsedDocSchema = z.object({
+  /** ドキュメント種別。既存ファイルとの互換のため default 付き */
+  docType: z.literal("municipal-accounts").default("municipal-accounts"),
   sourceId: z.string(),
   parser: z.string(),
   parserVersion: z.string(),
@@ -86,6 +88,69 @@ export const parsedDocSchema = z.object({
   facts: z.array(muniAccountFactSchema),
 });
 export type ParsedDoc = z.infer<typeof parsedDocSchema>;
+
+// ---- [2'] parsed: 予算書（款別） ---------------------------------------------
+// 自治体の当初予算書・予算資料から抽出した款別の歳入・歳出。単位は千円。
+export const budgetLineFactSchema = z.object({
+  side: z.enum(["revenue", "expenditure"]),
+  kanNo: z.number().int().positive(),
+  kanName: z.string().min(1),
+  /** 当年度当初予算額（千円） */
+  amount: z.number(),
+  /** 前年度当初予算額（千円）。資料に無ければ null */
+  prevAmount: z.number().nullable(),
+  locator: locatorSchema,
+});
+export type BudgetLineFact = z.infer<typeof budgetLineFactSchema>;
+
+/** 予算資料「主な事業一覧」の1事業 */
+export const budgetProjectFactSchema = z.object({
+  /** 属するセクション: 歳出款（例: "総務費"）または特別会計名（例: "介護保険事業特別会計"） */
+  kan: z.string().min(1),
+  /** 款内の掲載番号（資料の No. 列） */
+  no: z.number().int().positive(),
+  /** 区分列（新規/拡充。無印は null） */
+  kubun: z.enum(["新規", "拡充"]).nullable(),
+  /** 事業名（【N】【連】マーカー含む、資料の表記のまま） */
+  name: z.string().min(1),
+  /** 下段（ ）書きの予算書上の事業名 */
+  budgetBookName: z.string().nullable(),
+  /** 予算額（千円） */
+  amount: z.number(),
+  /** 内容列の全文 */
+  description: z.string(),
+  /** 基本目標（ひと/まち/魅力。複数は「・」連結） */
+  basicGoal: z.string(),
+  /** 総合計画の施策 */
+  shisaku: z.string(),
+  locator: locatorSchema,
+});
+export type BudgetProjectFact = z.infer<typeof budgetProjectFactSchema>;
+
+export const budgetBookDocSchema = z.object({
+  docType: z.literal("budget-book"),
+  sourceId: z.string(),
+  parser: z.string(),
+  parserVersion: z.string(),
+  parsedAt: z.string(),
+  unit: z.literal("thousandYen"),
+  fiscalYear: z.string(),
+  /** 会計名（現状は一般会計のみ） */
+  account: z.string(),
+  /** 資料記載の歳入合計・歳出合計（千円）。内訳の和との照合は validate が行う */
+  revenueTotal: z.number(),
+  expenditureTotal: z.number(),
+  prevRevenueTotal: z.number().nullable(),
+  prevExpenditureTotal: z.number().nullable(),
+  facts: z.array(budgetLineFactSchema),
+  /** 「主な事業一覧」ページの抽出結果（ページ指定がある場合のみ） */
+  projects: z.array(budgetProjectFactSchema).optional(),
+});
+export type BudgetBookDoc = z.infer<typeof budgetBookDocSchema>;
+
+/** parse/validate が受け取り得る全ドキュメント型 */
+export const anyParsedDocSchema = z.union([budgetBookDocSchema, parsedDocSchema]);
+export type AnyParsedDoc = z.infer<typeof anyParsedDocSchema>;
 
 // ---- 検証ゲート ---------------------------------------------------------------
 export const validationIssueSchema = z.object({

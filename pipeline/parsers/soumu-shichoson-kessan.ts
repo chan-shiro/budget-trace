@@ -248,6 +248,7 @@ export function parseShichosonKessan(
   }
 
   return {
+    docType: "municipal-accounts",
     sourceId: source.id,
     parser: source.parser,
     parserVersion: PARSER_VERSION,

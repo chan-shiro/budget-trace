@@ -5,8 +5,8 @@
 // - 各レコードに来歴（sourceId + ファイルの sha256 + locator）を残す
 // 使い方: bun run pipeline:normalize <sourceId> [--force]
 import {
+  anyParsedDocSchema,
   normalizedDatasetSchema,
-  parsedDocSchema,
   validationResultSchema,
   STANDARD_PURPOSES,
   type NormalizedMuniAccount,
@@ -29,7 +29,15 @@ if (!sourceId) {
   process.exit(1);
 }
 const source = findSource(sourceId);
-const doc = parsedDocSchema.parse(readJson(parsedPath(sourceId)));
+const doc = anyParsedDocSchema.parse(readJson(parsedPath(sourceId)));
+if (doc.docType === "budget-book") {
+  // 予算書は自治体間比較のレイヤではなく単一自治体の款別データ。
+  // アプリへは pipeline:derive で parsed から直接導出する（validate 通過が前提）
+  console.log(
+    `– ${sourceId}: budget-book は normalize 対象外です。validate 通過後、pipeline:derive で利用します。`,
+  );
+  process.exit(0);
+}
 const validation = validationResultSchema.parse(readJson(validationPath(sourceId)));
 if (validation.status !== "ok" && !force) {
   console.error(

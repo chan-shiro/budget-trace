@@ -2,7 +2,7 @@
 // 使い方: bun run pipeline:parse <sourceId>
 import { findSource } from "./registry/sources";
 import { getParser } from "./parsers/index";
-import { parsedDocSchema } from "./types";
+import { anyParsedDocSchema } from "./types";
 import { parsedPath, readRawMeta, resolveRawFile, writeJson } from "./lib/store";
 
 const sourceId = process.argv[2];
@@ -23,9 +23,10 @@ const files = meta.files.map((f) => ({
   path: resolveRawFile(sourceId, f.filename), // ハッシュ検証込み
   filename: f.filename,
 }));
-const doc = parsedDocSchema.parse(parser(files, source));
+const doc = anyParsedDocSchema.parse(parser(files, source));
 writeJson(parsedPath(sourceId), doc);
+const what = doc.docType === "budget-book" ? "款" : "自治体";
 console.log(
-  `✓ ${sourceId}: ${files.length} ファイルから ${doc.facts.length} 自治体を抽出 → data/parsed/${sourceId}.json`,
+  `✓ ${sourceId}: ${files.length} ファイルから ${doc.facts.length} ${what}を抽出 → data/parsed/${sourceId}.json`,
 );
 console.log(`  次: bun run pipeline:validate ${sourceId}`);
