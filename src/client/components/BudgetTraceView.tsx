@@ -709,7 +709,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
               <div data-screen-label="類似自治体との比較" style={S("animation:fadeUp .35s ease both;")}>
                 <div style={S("margin-bottom:20px;")}>
                   <h1 style={S("margin:0 0 6px; font-size:24px; font-weight:700;")}>類似自治体との比較</h1>
-                  <p style={S("margin:0; color:#5C6B77; font-size:13.5px;")}>人口15〜25万人の類似規模の市と、規模・1人あたり歳出・歳出構成を比べます（ダミーデータ）。</p>
+                  <p style={S("margin:0; color:#5C6B77; font-size:13.5px;")}>人口15〜25万人の類似規模の市と、規模・1人あたり歳出・歳出構成を比べます（令和6年度 普通会計決算の実データ）。</p>
                 </div>
 
                 <section style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:20px 24px; margin-bottom:16px;")}>
@@ -737,7 +737,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                 </section>
 
                 <div style={S("display:flex; gap:6px; flex-wrap:wrap;")}>
-                  <span style={S("font-size:11.5px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:3px 11px;")}>出典：財政状況資料集（総務省）</span>
+                  <span style={S("font-size:11.5px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:3px 11px;")}>出典：令和6年度 市町村別決算状況調（総務省）</span>
                   <span style={S("font-size:11.5px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:3px 11px;")}>地方財政状況調査（決算統計）</span>
                 </div>
                 <p style={S("margin:12px 2px 0; font-size:12px; color:#5C6B77;")}>1人あたり歳出が高い＝非効率とは限りません。面積・高齢化率・保有施設などの条件が異なります。</p>

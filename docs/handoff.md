@@ -24,8 +24,11 @@ Claude Design のプロトタイプ（`project/予算トレース.dc.html`）を
   全1,741市区町村（特別区含む・47都道府県）の人口・歳入歳出総額・目的別歳出が入っている。
   検証ゲートは error 0 / warning 0（全自治体で目的別合計＝歳出総額が ±0.5% 以内）。
   再現は `bun run pipeline:fetch soumu-shichoson-kessan-r6` → parse → validate → normalize
-- **アプリのデータはまだ `src/client/lib/data.ts` の静的データ**（款レベルは甲府市公表の実データ、
-  項以下・補正・執行率はダミー）。パイプラインの normalized 出力はまだアプリに接続していない
+- **類似自治体タブは実データ接続済み**: `bun run pipeline:derive` が normalized から
+  甲府市＋人口帯の近い4市＋帯内70市平均を選出して `src/client/lib/similar.gen.ts` を生成し、
+  `data.ts` が re-export する（1.6MB の JSON をバンドルに入れない方式）
+- **それ以外のアプリデータはまだ `src/client/lib/data.ts` の静的データ**（款レベルは甲府市公表の
+  実データ、項以下・補正・執行率はダミー）
 - サーバー層（`src/server/` ほか）は**スケルトンのみ**。Hono/Inversify/CASL/Postgres は未導入
 - デプロイ未構築（Vercel 想定: GitHub 連携で main 自動デプロイ）
 
@@ -70,14 +73,12 @@ Claude Design のプロトタイプ（`project/予算トレース.dc.html`）を
 
 ## 5. 残タスク（優先順）
 
-1. **類似自治体タブを normalized 実データに接続**（全1,741市区町村から人口帯で近隣を選出、
-   現在の SIMILAR ダミー定数を置換）。データは `data/normalized/municipal-accounts/R6.json` に
-   投入済み。アプリへの取込み方（ビルド時 import / API 化）は要設計
-2. **予算書 PDF パーサ**（LLM 併用: 抽出 → Zod 検証 → 整合チェック）で款項目節・事業の実データ化。
+1. **予算書 PDF パーサ**（LLM 併用: 抽出 → Zod 検証 → 整合チェック）で款項目節・事業の実データ化。
    registry に甲府市 R8 予算書を登録するところから
-3. **Vercel 接続**（GitHub 連携・main 自動デプロイ）
-4. サーバー層導入（Hono/Inversify/CASL/Postgres + Testcontainers）— data/ の DB 移行、
-   `v` の型付け解消もこのタイミング
+2. **Vercel 接続**（GitHub 連携・main 自動デプロイ）
+3. サーバー層導入（Hono/Inversify/CASL/Postgres + Testcontainers）— data/ の DB 移行、
+   `v` の型付け解消もこのタイミング。`*.gen.ts`（pipeline:derive の生成モジュール）も
+   API 化して置き換える
 
 ## 6. 動かし方（要点）
 

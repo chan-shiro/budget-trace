@@ -509,7 +509,12 @@ bun run pipeline:parse <sourceId>               # raw → parsed（Zod 検証込
 bun run pipeline:validate <sourceId>            # 整合チェック → ok / needs_review
 bun run pipeline:normalize <sourceId> [--force] # parsed → normalized
 bun run pipeline:fixture                        # 開発用フィクスチャ生成（e2e 検証用）
+bun run pipeline:derive                         # normalized → アプリ用生成モジュール
 ```
+
+サーバー層ができるまでの normalized → アプリの接続は `pipeline:derive` で行う:
+巨大な normalized JSON をクライアントに import せず、必要な断面だけを決定的に
+`src/client/lib/*.gen.ts` へ生成してコミットする（例: 類似自治体比較の `similar.gen.ts`）。
 
 DB（Postgres）導入時は `data/parsed` `data/normalized` の中身がテーブルへ移り、
 pipeline の各ステージはそのまま Repository 経由の書き込みに置き換わる。
