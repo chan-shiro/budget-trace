@@ -69,7 +69,8 @@ build/push (web [/ migrate])
 
 ## 残タスク（構築時に作るもの）
 
-- [ ] `Dockerfile`（Next.js standalone 出力。`next.config.mjs` に `output: "standalone"` を追加）
+- [ ] `Dockerfile`（Next.js standalone 出力。`next.config.mjs` に `output: "standalone"` を追加。
+      依存インストールは `oven/bun` イメージで `bun install --frozen-lockfile`）
 - [ ] `infra/terraform/`（Cloud Run / Artifact Registry / Secret Manager / WIF / deployer SA）
-- [ ] `.github/workflows/deploy.yml`（build → push → deploy。DB 導入後は migrate Job を挟む）
+- [ ] `.github/workflows/deploy.yml`（build → push → deploy。セットアップは `oven-sh/setup-bun`。DB 導入後は migrate Job を挟む）
 - [ ] `public/mapdata/`（約 7.7MB）を image に含める前提でサイズ確認

@@ -11,11 +11,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 # コマンド
 
+パッケージマネージャは **bun**（lockfile は `bun.lock`）。npm / yarn / pnpm を使わず、`package-lock.json` を生成しないこと。
+
 ```bash
-npm run dev        # 開発サーバ (http://localhost:3000)
-npm run build      # 本番ビルド（型チェック込み）
-npm run start      # 本番サーバ
-npm run typecheck  # tsc --noEmit
+bun install        # 依存インストール
+bun run dev        # 開発サーバ (http://localhost:3000)
+bun run build      # 本番ビルド（型チェック込み）
+bun run start      # 本番サーバ
+bun run typecheck  # tsc --noEmit
 ```
 
 - テストランナーは未導入。サーバー層を導入するときに Vitest + Testcontainers を [docs/architecture.md](docs/architecture.md) の方針で入れる。
