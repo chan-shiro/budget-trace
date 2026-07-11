@@ -278,7 +278,11 @@ export default function BudgetTraceView({ v }: { v: any }) {
                       </HoverBox>
                     ))}
                   </div>
-                  <p style={S("margin:14px 2px 0; font-size:12px; color:#5C6B77;")}>出典：甲府市 令和8年度当初予算（款レベルは公表実データ・項以下は按分推計）</p>
+                  <p style={S("margin:14px 2px 0; font-size:12px; color:#5C6B77;")}>
+                    {v.dashSourceUrl
+                      ? <a href={v.dashSourceUrl} target="_blank" rel="noopener noreferrer" style={S("color:#5C6B77;")}>{v.dashSourceLabel} ↗</a>
+                      : "出典：甲府市 令和8年度当初予算（款レベルは公表実データ・項以下は按分推計）"}
+                  </p>
                 </section>
               </div>
             )}
@@ -320,7 +324,9 @@ export default function BudgetTraceView({ v }: { v: any }) {
                     <div style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:12px; padding:12px 16px; max-width:240px;")}>
                       <div style={S("font-size:11px; font-family:'IBM Plex Mono',monospace; letter-spacing:0.12em; color:#5C6B77; margin-bottom:5px;")}>EVIDENCE</div>
                       <div style={S("font-size:12.5px; line-height:1.6;")}>{v.drillEvidence}</div>
-                      <a href="#" style={S("font-size:12px;")}>予算書PDFを開く ↗</a>
+                      {v.drillPdfUrl
+                        ? <a href={v.drillPdfUrl} target="_blank" rel="noopener noreferrer" style={S("font-size:12px;")}>予算書PDFを開く ↗</a>
+                        : <a href="#" style={S("font-size:12px;")}>予算書PDFを開く ↗</a>}
                     </div>
                   </div>
 

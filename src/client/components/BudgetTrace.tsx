@@ -319,15 +319,24 @@ export default function BudgetTrace() {
 
   // --- compare (前年比較) ---
   const compSide = s.compSide || "exp";
-  const compItems = (compSide === "rev" ? data.revenue : data.expenditure).map((it) => ({ name: it.name, v: Math.round(it.v * fyScale * 10) / 10 }));
+  // 0.1億で丸めると実データの増減額が原典とズレるため、丸めは表示（fmtOku）に任せる
+  const compItems = (compSide === "rev" ? data.revenue : data.expenditure).map((it) => ({ name: it.name, v: it.v * fyScale }));
   const compCurSum = Math.round(data.total * fyScale * 10) / 10;
   const compGrowth = compSide === "rev" ? YOY_REV : YOY_EXP;
   const gOf = (nm: string) => compGrowth[nm] ?? ((hash(nm) % 90) - 40) / 10;
+  // 甲府市の R8 当初は予算書の前年度当初額（実データ）をそのまま使う。
+  // それ以外（県・過年度スケール）は従来どおり YOY からの逆算（ダミー）
+  const exactPrevOf = (nm: string): number | null => {
+    if (data !== KOFU || !isCurFy) return null;
+    const rows = compSide === "rev" ? D.KOFU_BUDGET.revenue : D.KOFU_BUDGET.expenditure;
+    return rows.find((r) => r.name === nm)?.prevV ?? null;
+  };
   const compMax = Math.max(...compItems.map((it) => it.v));
   let compPrevSum = 0;
   const compRows = compItems.map((it, i) => {
-    const g = gOf(it.name);
-    const prev = it.v / (1 + g / 100);
+    const exactPrev = exactPrevOf(it.name);
+    const g = exactPrev != null && exactPrev > 0 ? (it.v / exactPrev - 1) * 100 : gOf(it.name);
+    const prev = exactPrev ?? it.v / (1 + g / 100);
     compPrevSum += prev;
     const dd = it.v - prev;
     const up = dd >= 0;
@@ -422,6 +431,10 @@ export default function BudgetTrace() {
     drillSideTabs, drillCrumbs, drillLevelLabel: isProjLevel ? "事業" : levelNames[Math.min(depth, 3)],
     drillTitle: nodeName, drillTotalFmt: fmtOku(nodeTotal), drillDonutBg: donutBg(nodeItems, hoverFor("drill")),
     drillRows, hasRelated: drillRelated.length > 0, drillRelated, drillEvidence,
+    // 予算書 PDF への実リンク（甲府市・R8 当初のみ。他年度・補正はダミーのまま）
+    drillPdfUrl: data === KOFU && isCurFy ? D.KOFU_BUDGET.sourceUrl : "",
+    dashSourceLabel: `出典：${D.KOFU_BUDGET.sourceTitle} ${D.KOFU_BUDGET.pagesLabel}（款は実データ・項以下は按分推計）`,
+    dashSourceUrl: data === KOFU ? D.KOFU_BUDGET.sourceUrl : "",
     drillTipMove: mkDonutTip(nodeItems, nodeTotal, data.pop, "drill"),
     drillSub: subV(nodeTotal),
     tipShow: !!(s.tip && s.tip.title), tipX: s.tip ? s.tip.x : 0, tipY: s.tip ? s.tip.y : 0,

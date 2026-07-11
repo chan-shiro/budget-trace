@@ -1,8 +1,10 @@
 // ============================================================================
 // 予算トレース — データレイヤー
-// 款レベルの数値は甲府市公表の令和8年度当初予算（総額918億円）の実データ。
+// 款レベルの数値は甲府市の令和8年度当初予算（案）資料をパースした実データ
+// （kofu.gen.ts・予算書のページ位置つき。再生成は bun run pipeline:derive）。
 // 項以下の内訳・補正・執行率・議会の会派別賛否などは推計・ダミー。
 // ============================================================================
+import { KOFU_BUDGET, type KofuKanRow } from './kofu.gen';
 
 // ---- 型 --------------------------------------------------------------------
 export interface BudgetNode {
@@ -116,9 +118,60 @@ export const REGIONS = [
 
 export const YAMANASHI_MUNIS = ['甲府市','富士吉田市','都留市','山梨市','大月市','韮崎市','南アルプス市','北杜市','甲斐市','笛吹市','上野原市','甲州市','中央市','市川三郷町','身延町','富士川町','昭和町','忍野村','山中湖村','富士河口湖町'];
 
-// ---- 甲府市 R8 当初予算（款レベル実データ） --------------------------------
+// ---- 甲府市 R8 当初予算 ------------------------------------------------------
+// 款レベルは予算書パース値（kofu.gen.ts・出典位置つき）の実データ。
+// 項以下の内訳は按分推計（ダミー）で、款合計に合わせて withDetail() が按分する。
+const KOFU_REV_DETAIL: Record<string, BudgetNode[]> = {
+  '市税': [
+    { name:'市民税', v:139.8 },{ name:'固定資産税', v:135.8 },{ name:'都市計画税', v:19.2 },{ name:'市たばこ税', v:13.5 },{ name:'軽自動車税', v:4.9 },{ name:'その他市税', v:3.8 }],
+};
+const KOFU_EXP_DETAIL: Record<string, BudgetNode[]> = {
+  '民生費': [
+    { name:'社会福祉費', v:142.5 },
+    { name:'児童福祉費', v:151.0, children:[
+      { name:'児童福祉総務費', v:40.1 },
+      { name:'児童措置費', v:68.4, children:[
+        { name:'扶助費', v:58.4 },{ name:'委託料', v:6.1 },{ name:'負担金、補助及び交付金', v:2.8 },{ name:'需用費', v:1.1 }] },
+      { name:'保育所費', v:32.4 },
+      { name:'児童福祉施設費', v:10.1 }] },
+    { name:'生活保護費', v:84.6 },
+    { name:'国民年金費', v:10.4 },
+    { name:'災害救助費', v:0.5 }],
+  '総務費': [{ name:'総務管理費', v:97.6 },{ name:'徴税費', v:14.0 },{ name:'企画費', v:10.0 },{ name:'戸籍住民基本台帳費', v:9.2 },{ name:'選挙費', v:3.0 },{ name:'統計調査費', v:1.2 }],
+  '衛生費': [{ name:'保健衛生費', v:47.4 },{ name:'清掃費', v:53.6 }],
+  '教育費': [{ name:'教育総務費', v:18.0 },{ name:'小学校費', v:21.1 },{ name:'中学校費', v:12.5 },{ name:'幼稚園費', v:6.0 },{ name:'社会教育費', v:14.5 },{ name:'保健体育費', v:15.9 }],
+  '公債費': [{ name:'元金', v:70.0 },{ name:'利子', v:9.7 },{ name:'公債諸費', v:0.3 }],
+  '土木費': [
+    { name:'道路橋りょう費', v:24.2, children:[
+      { name:'道路橋りょう総務費', v:3.6 },
+      { name:'道路維持費', v:12.4, children:[{ name:'工事請負費', v:8.3 },{ name:'委託料', v:2.6 },{ name:'需用費', v:0.9 },{ name:'原材料費', v:0.6 }] },
+      { name:'道路新設改良費', v:6.1 },
+      { name:'橋りょう維持費', v:2.1 }] },
+    { name:'都市計画費', v:27.8 },{ name:'住宅費', v:7.8 },{ name:'土木管理費', v:7.2 }],
+  '消防費': [{ name:'常備消防費', v:20.9 },{ name:'非常備消防費', v:2.1 },{ name:'消防施設費', v:2.0 }],
+  '商工費': [{ name:'商工振興費', v:9.1 },{ name:'観光費', v:4.9 }],
+  '農林水産業費': [{ name:'農業費', v:8.0 },{ name:'林業費', v:3.0 }],
+};
+
+// ダミー内訳を実データの款合計に合わせて按分する（内訳の和 = 款合計を厳密に維持）
+function scaleTree(nodes: BudgetNode[], factor: number): BudgetNode[] {
+  return nodes.map((n) => ({
+    ...n,
+    v: Math.round(n.v * factor * 10000) / 10000,
+    children: n.children ? scaleTree(n.children, factor) : undefined,
+  }));
+}
+function withDetail(rows: KofuKanRow[], detail: Record<string, BudgetNode[]>): BudgetNode[] {
+  return rows.map((r) => {
+    const d = detail[r.name];
+    if (!d) return { name: r.name, v: r.v };
+    const base = d.reduce((a, b) => a + b.v, 0);
+    return { name: r.name, v: r.v, children: scaleTree(d, r.v / base) };
+  });
+}
+
 export const KOFU: Municipality = {
-  name:'甲府市', total: 918.0, yoy:'+4.2%', year:'令和8年度 当初予算', pop:186000, households:89000,
+  name:'甲府市', total: KOFU_BUDGET.totalOku, yoy: KOFU_BUDGET.yoyLabel, year: KOFU_BUDGET.fyLabel, pop:186000, households:89000,
   council: { body:'甲府市議会', seats:32, decided:'令和8年3月定例会（令和8年3月24日）',
     vote:{ approve:26, oppose:4, absent:2 },
     parties:[
@@ -128,47 +181,8 @@ export const KOFU: Municipality = {
       { name:'立憲・市民フォーラム', seats:5, stance:'賛成' },
       { name:'日本共産党', seats:4, stance:'反対' },
       { name:'無所属', seats:2, stance:'退席・欠席' } ] },
-  revenue: [
-    { name:'市税', v:317.0, children:[
-      { name:'市民税', v:139.8 },{ name:'固定資産税', v:135.8 },{ name:'都市計画税', v:19.2 },{ name:'市たばこ税', v:13.5 },{ name:'軽自動車税', v:4.9 },{ name:'その他市税', v:3.8 }] },
-    { name:'国庫支出金', v:173.0 },
-    { name:'地方交付税', v:111.0 },
-    { name:'県支出金', v:79.0 },
-    { name:'地方消費税交付金', v:60.0 },
-    { name:'繰入金', v:51.0 },
-    { name:'寄附金', v:45.0 },
-    { name:'市債', v:33.0 },
-    { name:'諸収入・その他', v:49.0 },
-  ],
-  expenditure: [
-    { name:'民生費', v:389.0, children:[
-      { name:'社会福祉費', v:142.5 },
-      { name:'児童福祉費', v:151.0, children:[
-        { name:'児童福祉総務費', v:40.1 },
-        { name:'児童措置費', v:68.4, children:[
-          { name:'扶助費', v:58.4 },{ name:'委託料', v:6.1 },{ name:'負担金、補助及び交付金', v:2.8 },{ name:'需用費', v:1.1 }] },
-        { name:'保育所費', v:32.4 },
-        { name:'児童福祉施設費', v:10.1 }] },
-      { name:'生活保護費', v:84.6 },
-      { name:'国民年金費', v:10.4 },
-      { name:'災害救助費', v:0.5 }] },
-    { name:'総務費', v:135.0, children:[{ name:'総務管理費', v:97.6 },{ name:'徴税費', v:14.0 },{ name:'企画費', v:10.0 },{ name:'戸籍住民基本台帳費', v:9.2 },{ name:'選挙費', v:3.0 },{ name:'統計調査費', v:1.2 }] },
-    { name:'衛生費', v:101.0, children:[{ name:'保健衛生費', v:47.4 },{ name:'清掃費', v:53.6 }] },
-    { name:'教育費', v:88.0, children:[{ name:'教育総務費', v:18.0 },{ name:'小学校費', v:21.1 },{ name:'中学校費', v:12.5 },{ name:'幼稚園費', v:6.0 },{ name:'社会教育費', v:14.5 },{ name:'保健体育費', v:15.9 }] },
-    { name:'公債費', v:80.0, children:[{ name:'元金', v:70.0 },{ name:'利子', v:9.7 },{ name:'公債諸費', v:0.3 }] },
-    { name:'土木費', v:67.0, children:[
-      { name:'道路橋りょう費', v:24.2, children:[
-        { name:'道路橋りょう総務費', v:3.6 },
-        { name:'道路維持費', v:12.4, children:[{ name:'工事請負費', v:8.3 },{ name:'委託料', v:2.6 },{ name:'需用費', v:0.9 },{ name:'原材料費', v:0.6 }] },
-        { name:'道路新設改良費', v:6.1 },
-        { name:'橋りょう維持費', v:2.1 }] },
-      { name:'都市計画費', v:27.8 },{ name:'住宅費', v:7.8 },{ name:'土木管理費', v:7.2 }] },
-    { name:'消防費', v:25.0, children:[{ name:'常備消防費', v:20.9 },{ name:'非常備消防費', v:2.1 },{ name:'消防施設費', v:2.0 }] },
-    { name:'商工費', v:14.0, children:[{ name:'商工振興費', v:9.1 },{ name:'観光費', v:4.9 }] },
-    { name:'農林水産業費', v:11.0, children:[{ name:'農業費', v:8.0 },{ name:'林業費', v:3.0 }] },
-    { name:'議会費', v:6.0 },
-    { name:'労働費', v:2.0 },
-  ],
+  revenue: withDetail(KOFU_BUDGET.revenue, KOFU_REV_DETAIL),
+  expenditure: withDetail(KOFU_BUDGET.expenditure, KOFU_EXP_DETAIL),
 };
 
 export const YAMANASHI: Municipality = {
@@ -347,10 +361,11 @@ export const GLOSS: Record<string, string> = {
 // 類似自治体比較 — 総務省「令和6年度 市町村別決算状況調」からの導出実データ。
 // 再生成: bun run pipeline:derive（normalized → similar.gen.ts）
 export { SIMILAR, SIM_MIX_COLS, SIMILAR_FY_LABEL, SIMILAR_EVIDENCE } from './similar.gen';
+export { KOFU_BUDGET } from './kofu.gen';
 
 // データ出典・更新日一覧（ダミー）
 export const SOURCES = [
-  { title:'令和8年度 当初予算書', type:'PDF', org:'甲府市 財政課', date:'2026-07-01', used:'ダッシュボード／款・項・目・節' },
+  { title:'令和8年度 甲府市当初予算（案）資料', type:'PDF', org:'甲府市', date:'2026-07-12', used:'ダッシュボード／款・項・目・節（款レベル実データ）／前年比較' },
   { title:'令和8年度 補正予算書（第1号）', type:'PDF', org:'甲府市 財政課', date:'2026-07-01', used:'予算の変遷／事業詳細' },
   { title:'令和8年度 施政方針', type:'PDF', org:'甲府市', date:'2026-07-01', used:'政策テーマ（政策意図サマリー）' },
   { title:'第七次甲府市総合計画', type:'PDF', org:'甲府市', date:'2026-06-15', used:'政策テーマ' },
@@ -463,8 +478,12 @@ export const HOSEI = {
 };
 
 // 前年比較用：款・区分ごとの対前年増減率（%）（甲府市は令和8/7年度当初予算の実データ、県はダミー）
-export const YOY_EXP: Record<string, number> = { '民生費':3.7, '総務費':4.7, '教育費':20.5, '土木費':6.3, '公債費':-5.9, '衛生費':2.0, '商工費':40.0, '消防費':-13.8, '農林水産業費':0.0, '議会費':20.0, '労働費':0.0, 'その他':-8.0, '警察費':1.1 };
-export const YOY_REV: Record<string, number> = { '市税':2.6, '県税':1.6, '国庫支出金':6.1, '地方交付税':-5.1, '県支出金':14.5, '地方消費税交付金':17.6, '寄附金':0.0, '市債':-17.5, '県債':3.8, '繰入金':13.3, '諸収入・その他':1.2 };
+// 前年比: 甲府市の款は予算書の前年度当初額から算出した実値で上書きする。
+// 県のみの科目（県税・県債・警察費・その他）は引き続きダミー
+const exactYoy = (rows: KofuKanRow[]): Record<string, number> =>
+  Object.fromEntries(rows.filter((r) => r.yoy != null).map((r) => [r.name, r.yoy as number]));
+export const YOY_EXP: Record<string, number> = { 'その他':-8.0, '警察費':1.1, ...exactYoy(KOFU_BUDGET.expenditure) };
+export const YOY_REV: Record<string, number> = { '県税':1.6, '県債':3.8, ...exactYoy(KOFU_BUDGET.revenue) };
 
 export const HIST: Record<string, { title: string; scale: number; rates: Record<string, number> }> = {
   // scale は甲府市当初予算の実データ比（R7:881億 / R6:808億 ÷ R8:918億）。執行率はダミー

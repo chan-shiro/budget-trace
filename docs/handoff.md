@@ -24,11 +24,14 @@ Claude Design のプロトタイプ（`project/予算トレース.dc.html`）を
   全1,741市区町村（特別区含む・47都道府県）の人口・歳入歳出総額・目的別歳出が入っている。
   検証ゲートは error 0 / warning 0（全自治体で目的別合計＝歳出総額が ±0.5% 以内）。
   再現は `bun run pipeline:fetch soumu-shichoson-kessan-r6` → parse → validate → normalize
-- **甲府市 R8 予算書（款別）投入済み**: `kofu-yosansho-r8`（当初予算案資料 PDF、原本アーカイブ済み・
-  sha256 9a3cb941…）から歳入21款・歳出14款＋前年度額を `pdftotext` で決定的にパースし
-  `data/parsed/kofu-yosansho-r8.json` に格納（docType: "budget-book"、locator はページ番号）。
-  検証 error 0（款の和＝合計が歳入・歳出とも厳密一致、歳入合計＝歳出合計 91,787,060千円）。
-  budget-book は normalize 対象外で、アプリへは今後 derive で接続する
+- **甲府市 R8 予算書（款別）投入・アプリ接続済み**: `kofu-yosansho-r8`（当初予算案資料 PDF、
+  原本アーカイブ済み・sha256 9a3cb941…）から歳入21款・歳出14款＋前年度額を `pdftotext` で
+  決定的にパース（docType: "budget-book"、locator はページ番号、検証 error 0）。
+  `pipeline:derive` が `src/client/lib/kofu.gen.ts` を生成し、`data.ts` の KOFU 款レベルは
+  この正確値になった（歳出14款は全款表示、歳入はダッシュボードの9グループへマッピング）。
+  項以下のダミー内訳は `withDetail()` が款合計に按分。前年比較は予算書の前年度当初額
+  （実データ）を使い、増減額が原典と厳密一致。ダッシュボードとドリルダウンの EVIDENCE から
+  予算書 PDF への実リンクあり。budget-book は normalize 対象外（derive で直接アプリへ）
 - **類似自治体タブは実データ接続済み（エビデンス付き）**: `bun run pipeline:derive` が
   normalized から甲府市＋人口帯の近い4市＋帯内70市平均を選出して
   `src/client/lib/similar.gen.ts` を生成し、`data.ts` が re-export する
@@ -83,11 +86,9 @@ Claude Design のプロトタイプ（`project/予算トレース.dc.html`）を
 
 ## 5. 残タスク（優先順）
 
-1. **予算書の続き**: 款別一覧は投入済み（下記）。残りは
-   (a) 「主な事業一覧」（p.14-23、事業名・予算額・内容・総合計画の施策紐付け）の抽出
-   — 表が複雑なので LLM 併用（抽出 → Zod 検証 → 整合チェック）を設計する、
-   (b) アプリ接続 — `data.ts` の KOFU 款レベル（丸め値）を parsed の正確な値＋出典位置で
-   置換する derive。項以下のダミー children は款合計に合わせて再スケールが必要
+1. **予算書の続き**: 「主な事業一覧」（p.14-23、事業名・予算額・内容・総合計画の施策紐付け）
+   の抽出 — 表が複雑なので LLM 併用（抽出 → Zod 検証 → 整合チェック）を設計する。
+   抽出できれば PROJECTS のダミー事業を実事業で置換できる
 2. サーバー層導入（Hono/Inversify/CASL/Postgres + Testcontainers）— data/ の DB 移行、
    `v` の型付け解消もこのタイミング。`*.gen.ts`（pipeline:derive の生成モジュール）も
    API 化して置き換える
