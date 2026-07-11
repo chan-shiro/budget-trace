@@ -1,0 +1,1860 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+  html, body { margin:0; padding:0; background:#F7FAFC; }
+  * { box-sizing:border-box; }
+  a { color:#1798D0; text-decoration:none; }
+  a:hover { color:#0F76A3; text-decoration:underline; }
+  input { font-family:'IBM Plex Sans JP', sans-serif; }
+  input:focus { outline:2px solid #1798D0; outline-offset:-1px; }
+  @keyframes fadeUp { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:none; } }
+  [data-mq="tabs"], [data-mq="hctrl"] { scrollbar-width:none; }
+  [data-mq="tabs"]::-webkit-scrollbar, [data-mq="hctrl"]::-webkit-scrollbar { display:none; }
+  /* ===== チャートのエントランスアニメーション ===== */
+  @property --sweep { syntax:'<percentage>'; inherits:false; initial-value:100%; }
+  @keyframes sweepIn { from { --sweep:0%; } to { --sweep:100%; } }
+  @keyframes barGrow { from { width:0; } }
+  @keyframes vbarGrow { from { height:0; } }
+  [data-anim="bar"] { animation: barGrow .9s cubic-bezier(.25,.72,.25,1) both; transition: width .6s ease; }
+  [data-anim="vbar"] { animation: vbarGrow .9s cubic-bezier(.25,.72,.25,1) both; transition: height .6s ease; }
+  [data-anim="donutcover"] { -webkit-mask: conic-gradient(transparent var(--sweep,100%), #000 0); mask: conic-gradient(transparent var(--sweep,100%), #000 0); animation: sweepIn 1s cubic-bezier(.45,.05,.35,1) both; }
+  @media (prefers-reduced-motion: reduce){ [data-anim="bar"], [data-anim="vbar"], [data-anim="donutcover"]{ animation:none !important; transition:none !important; } }
+  /* ===== モバイル最適化（inline style は media query を書けないためここで上書き） ===== */
+  @media (max-width:640px){
+    [data-mq-pad]{ padding-left:16px !important; padding-right:16px !important; }
+    [data-mq="head"]{ padding-top:8px !important; gap:5px !important; }
+    [data-mq="hctrl"]{ flex-wrap:nowrap !important; width:100%; overflow-x:auto; padding-bottom:2px; }
+    [data-mq="hctrl"] > *{ flex-shrink:0; white-space:nowrap; }
+    [data-mq="hctrl"] button{ padding:5px 12px !important; }
+    [data-mq="tabs"] button{ padding:8px 11px 10px !important; font-size:13.5px !important; }
+    [data-mq="hero"]{ padding:20px 16px 32px !important; gap:28px !important; }
+    [data-mq="cta"]{ width:100% !important; }
+    [data-mq="ralign"]{ text-align:left !important; }
+    [data-mq="arrow"]{ display:none !important; }
+    [data-mq="statcard"]{ width:100% !important; justify-content:space-between !important; gap:14px !important; padding:14px 16px !important; flex-wrap:wrap !important; }
+    [data-mq="council"]{ grid-template-columns:12px 1fr 58px 84px !important; gap:8px !important; }
+    [data-mq="drill"]{ grid-template-columns:12px 1fr 80px 16px !important; gap:8px !important; }
+    [data-mq="drill"] > :nth-child(3), [data-mq="drill"] > :nth-child(5){ display:none !important; }
+    [data-mq="comp"]{ grid-template-columns:12px 1fr 80px 84px !important; gap:8px !important; }
+    [data-mq="comp"] > :nth-child(3), [data-mq="comp"] > :nth-child(4){ display:none !important; }
+    [data-mq="tproj"]{ grid-template-columns:1fr 92px !important; gap:8px 12px !important; }
+    [data-mq="tproj"] > :nth-child(2){ display:none !important; }
+    [data-mq="tproj"] > :nth-child(4){ grid-column:1 / -1 !important; }
+    [data-mq="kpi"]{ grid-template-columns:1.3fr 0.7fr 1fr 58px !important; gap:8px !important; }
+    [data-mq="past"]{ grid-template-columns:44px 1fr 80px 48px !important; gap:8px !important; }
+    [data-mq="past"] > :nth-child(3){ display:none !important; }
+    [data-mq="hist"]{ grid-template-columns:1fr 80px 80px 44px !important; gap:8px !important; }
+    [data-mq="hist"] > :nth-child(2), [data-mq="hist"] > :nth-child(6){ display:none !important; }
+    [data-mq="sim-h"]{ grid-template-columns:1fr 60px 90px !important; gap:8px !important; }
+    [data-mq="sim-h"] > :nth-child(3), [data-mq="sim-h"] > :nth-child(5){ display:none !important; }
+    [data-mq="sim"]{ grid-template-columns:1fr 60px 90px !important; gap:8px !important; }
+    [data-mq="sim"] > :nth-child(3){ display:none !important; }
+    [data-mq="sim"] > :nth-child(5){ grid-column:1 / -1 !important; margin-top:4px !important; }
+    [data-mq="src"]{ grid-template-columns:1fr 58px 84px !important; gap:8px !important; }
+    [data-mq="src"] > :nth-child(3), [data-mq="src"] > :nth-child(5){ display:none !important; }
+    [data-mq-pad] h1{ font-size:22px !important; }
+    [data-mq="ralign"] > div:first-child{ font-size:28px !important; }
+    [data-mq="bsum-card"]{ padding:14px 16px !important; gap:12px !important; }
+    [data-mq="bsum"]{ display:grid !important; grid-template-columns:repeat(2,1fr) !important; gap:10px 16px !important; }
+    [data-mq="bsum"] span{ white-space:normal !important; }
+    [data-mq="bfacts"]{ grid-template-columns:repeat(2,1fr) !important; gap:10px !important; }
+    [data-mq="bfacts"] section{ padding:12px 14px !important; }
+    [data-mq="bfacts"] section > div:nth-child(2){ font-size:18px !important; }
+    [data-mq="bleader"]{ gap:8px 12px !important; flex-wrap:wrap !important; }
+    [data-mq="bleader"] > :first-child{ width:102px !important; font-size:11px !important; }
+  }
+</style>
+</helmet>
+
+<div style="min-height:100vh; background:#F7FAFC; color:#14181C; font-family:'IBM Plex Sans JP',sans-serif; font-size:15px; line-height:1.65;">
+
+<!-- ============ TOP ============ -->
+<sc-if value="{{ isTop }}" hint-placeholder-val="{{ true }}">
+<div data-screen-label="トップ（自治体選択）" style="min-height:100vh; display:flex; flex-direction:column;">
+
+  <header data-mq-pad="" style="display:flex; align-items:center; justify-content:space-between; gap:16px; padding:20px 32px; flex-wrap:wrap;">
+    <div style="display:flex; align-items:baseline; gap:10px;">
+      <span style="font-weight:700; font-size:17px; letter-spacing:0.02em;">予算トレース</span>
+      
+    </div>
+  </header>
+
+  <div data-mq="hero" style="flex:1; width:min(1160px,100%); margin:0 auto; padding:32px; display:flex; gap:48px; align-items:center; flex-wrap:wrap; animation:fadeUp .4s ease both;">
+    <div style="flex:1 1 380px; min-width:300px;">
+      
+      <h1 style="margin:0 0 18px; font-size:clamp(32px,4vw,48px); font-weight:700; line-height:1.28;">税金のゆくえを、<br>執行まで。</h1>
+      <p style="margin:0 0 30px; color:#5C6B77; max-width:44ch;">「予算はこうでした」で終わらせない。執行率、支出先、事業報告までを一次資料（エビデンス）付きで確認できます。</p>
+      <div style="display:flex; gap:28px; margin-bottom:34px; flex-wrap:wrap;">
+        <div><div style="font-family:'IBM Plex Mono',monospace; font-size:24px; font-weight:600;">47</div><div style="font-size:12px; color:#5C6B77;">都道府県</div></div>
+        <div><div style="font-family:'IBM Plex Mono',monospace; font-size:24px; font-weight:600;">1,741</div><div style="font-size:12px; color:#5C6B77;">市区町村</div></div>
+        <div><div style="font-family:'IBM Plex Mono',monospace; font-size:24px; font-weight:600;">1</div><div style="font-size:12px; color:#5C6B77;">サンプル収録（甲府市）</div></div>
+      </div>
+      <button onClick="{{ openKofuLink }}" data-mq="cta" style="background:#14181C; color:#F7FAFC; border:none; border-radius:10px; padding:14px 26px; font-size:15px; font-weight:600; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="background:#1798D0;">甲府市のサンプルを見る →</button>
+    </div>
+    <div style="flex:1 1 420px; min-width:300px;">
+      <x-import component="JapanMap" from="./JapanMap.jsx" on-select="{{ onPrefSelect }}" on-select-muni="{{ onMuniSelect }}" color-mode="{{ mapColorMode }}" hint-size="100%,480px"></x-import>
+    </div>
+  </div>
+
+  <footer data-mq-pad="" style="padding:18px 32px; border-top:1px solid #DFE7EC; font-size:12px; color:#5C6B77; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+    <span>本サイトはプロトタイプです。款レベルの数値は甲府市公表の令和8年度当初予算（総額918億円）の実データ、項以下の内訳・補正・執行率などは推計・ダミーです。</span>
+    <span style="font-family:'IBM Plex Mono',monospace;">v0.1 / 2026-07</span>
+  </footer>
+</div>
+</sc-if>
+
+<!-- ============ 市区町村選択 ============ -->
+<sc-if value="{{ isMuni }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="市区町村選択" data-mq-pad="" style="min-height:100vh; width:min(880px,100%); margin:0 auto; padding:28px 32px 64px; animation:fadeUp .35s ease both;">
+  <button onClick="{{ goTop }}" style="border:none; background:none; color:#5C6B77; font-size:13px; cursor:pointer; padding:0; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="color:#1798D0;">← 日本地図へ戻る</button>
+  <h1 style="margin:18px 0 6px; font-size:32px; font-weight:700;">{{ muniPrefName }}</h1>
+  <p style="margin:0 0 28px; color:#5C6B77; font-size:14px;">自治体を選択してください。「県全体」を選ぶと都道府県レベルの予算を表示します。</p>
+
+  <button onClick="{{ prefAllOpen }}" style="width:100%; text-align:left; display:flex; align-items:center; justify-content:space-between; gap:12px; background:{{ prefAllBg }}; color:{{ prefAllFg }}; border:1px solid {{ prefAllBd }}; border-radius:12px; padding:18px 22px; cursor:pointer; margin-bottom:22px; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="border-color:#1798D0;">
+    <span>
+      <span style="display:block; font-size:17px; font-weight:700;">{{ muniPrefName }}全体（都道府県レベル）</span>
+      <span style="display:block; font-size:12.5px; opacity:0.75; margin-top:2px;">{{ prefAllNote }}</span>
+    </span>
+    <span style="font-family:'IBM Plex Mono',monospace; font-size:12px; border:1px solid currentColor; border-radius:999px; padding:3px 10px; white-space:nowrap;">{{ prefAllBadge }}</span>
+  </button>
+
+  <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(190px,1fr)); gap:10px;">
+    <sc-for list="{{ muniList }}" as="m" hint-placeholder-count="8">
+      <button onClick="{{ m.open }}" style="text-align:left; display:flex; flex-direction:column; gap:6px; background:{{ m.bg }}; border:1px solid {{ m.bd }}; border-radius:12px; padding:14px 16px; cursor:{{ m.cursor }}; color:{{ m.fg }}; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="border-color:#1798D0;">
+        <span style="font-size:15px; font-weight:600;">{{ m.name }}</span>
+        <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:{{ m.badgeFg }};">{{ m.badge }}</span>
+      </button>
+    </sc-for>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ アプリ共通ヘッダー ============ -->
+<sc-if value="{{ isApp }}" hint-placeholder-val="{{ false }}">
+<div style="min-height:100vh; display:flex; flex-direction:column;">
+  <header style="background:#FFFFFF; border-bottom:1px solid #DFE7EC; position:sticky; top:0; z-index:10;">
+    <div data-mq-pad="" data-mq="head" style="width:min(1160px,100%); margin:0 auto; padding:12px 28px 0; display:flex; flex-direction:column; gap:8px;">
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+        <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap;">
+          <button onClick="{{ goTop }}" style="border:none; background:none; padding:0; cursor:pointer; font-weight:700; font-size:15px; color:#14181C; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="color:#1798D0;">予算トレース</button>
+          <span style="color:#C6D2DA;">/</span>
+          <nav style="display:flex; align-items:center; gap:6px; font-size:13px; color:#5C6B77;">
+            <button onClick="{{ goTop }}" style="border:none; background:none; padding:0; cursor:pointer; color:#5C6B77; font-size:13px; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="color:#1798D0;">日本</button>
+            <span>›</span>
+            <button onClick="{{ goMuniSelect }}" style="border:none; background:none; padding:0; cursor:pointer; color:#5C6B77; font-size:13px; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="color:#1798D0;">{{ crumbPref }}</button>
+            <span>›</span>
+            <span style="color:#14181C; font-weight:600;">{{ crumbMuni }}</span>
+          </nav>
+        </div>
+        <div data-mq="hctrl" style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+          <div style="display:inline-flex; border:1px solid #DFE7EC; border-radius:999px; overflow:hidden; background:#FFFFFF;">
+            <sc-for list="{{ unitTabs }}" as="ut" hint-placeholder-count="2">
+              <button onClick="{{ ut.pick }}" style="border:none; background:{{ ut.bg }}; color:{{ ut.fg }}; padding:6px 14px; font-size:12px; font-weight:600; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;">{{ ut.label }}</button>
+            </sc-for>
+          </div>
+          <sc-if value="{{ hasStages }}" hint-placeholder-val="{{ false }}">
+            <div style="display:inline-flex; border:1px solid #DFE7EC; border-radius:999px; overflow:hidden; background:#FFFFFF;">
+              <sc-for list="{{ stageTabs }}" as="stg" hint-placeholder-count="2">
+                <button onClick="{{ stg.pick }}" style="border:none; background:{{ stg.bg }}; color:{{ stg.fg }}; padding:6px 14px; font-size:12px; font-weight:600; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;">{{ stg.label }}</button>
+              </sc-for>
+            </div>
+          </sc-if>
+          <button onClick="{{ fyToggle }}" style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:#5C6B77; background:#ECF2F6; border:1px solid transparent; border-radius:999px; padding:4px 12px; cursor:pointer; display:inline-flex; align-items:center; gap:6px; white-space:nowrap;" style-hover="border-color:#1798D0; color:#0F76A3;">{{ yearLabel }} <span style="font-size:8.5px;">▼</span></button>
+        </div>
+      </div>
+      <nav data-mq="tabs" style="display:flex; gap:4px; overflow-x:auto;">
+        <sc-for list="{{ navTabs }}" as="t" hint-placeholder-count="4">
+          <button onClick="{{ t.open }}" style="border:none; background:none; padding:10px 14px 12px; cursor:pointer; font-size:14px; font-weight:{{ t.fw }}; color:{{ t.fg }}; border-bottom:2.5px solid {{ t.ul }}; white-space:nowrap; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="color:#1798D0;">{{ t.label }}</button>
+        </sc-for>
+      </nav>
+    </div>
+  </header>
+
+  <main data-mq-pad="" style="flex:1; width:min(1160px,100%); margin:0 auto; padding:28px 28px 72px;">
+
+  <!-- ==== ダッシュボード ==== -->
+  <sc-if value="{{ isDash }}" hint-placeholder-val="{{ true }}">
+  <div data-screen-label="自治体ダッシュボード" style="animation:fadeUp .35s ease both;">
+    <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:24px;">
+      <div>
+        <h1 style="margin:0 0 4px; font-size:28px; font-weight:700;">{{ dashTitle }}</h1>
+        <p style="margin:0; color:#5C6B77; font-size:13.5px;">一般会計 当初予算 ・ 歳入と歳出は同額で編成されます</p>
+      </div>
+      <div data-mq="ralign" style="text-align:right;">
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:34px; font-weight:600; line-height:1.1;">{{ totalFmtAnim }}</div>
+        <div style="font-size:12.5px; color:#5C6B77;">対前年度 <span style="color:#0F76A3; font-weight:600;">{{ yoy }}</span></div>
+        <div style="font-size:12px; color:#5C6B77; margin-top:3px;">{{ perCapitaLine }}</div>
+      </div>
+    </div>
+
+    <sc-if value="{{ hasStages }}" hint-placeholder-val="{{ false }}">
+    <section style="background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:18px 24px; margin-bottom:22px;">
+      <div style="display:flex; align-items:baseline; justify-content:space-between; gap:10px; flex-wrap:wrap; margin-bottom:12px;">
+        <div style="display:flex; align-items:center; gap:7px;">
+          <h2 style="margin:0; font-size:15px; font-weight:700;">予算の変遷（当初 → 補正 → 現額）</h2>
+          <button onMouseEnter="{{ gGenkei }}" onClick="{{ gGenkei }}" onMouseLeave="{{ hideTip }}" style="width:17px; height:17px; border-radius:50%; border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; font-size:11px; line-height:1; cursor:help; padding:0; font-family:'IBM Plex Mono',monospace;">?</button>
+        </div>
+        <span style="font-size:11.5px; color:#5C6B77;">カードをクリックすると表示が切り替わります ・ 補正額は款レベルで反映（ダミー）</span>
+      </div>
+      <div style="display:flex; align-items:stretch; gap:10px; flex-wrap:wrap;">
+        <sc-for list="{{ stageFlow }}" as="sf" hint-placeholder-count="3">
+          <button onClick="{{ sf.pick }}" style="flex:1; min-width:190px; text-align:left; border:1.5px solid {{ sf.bd }}; background:{{ sf.bg }}; border-radius:12px; padding:13px 16px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="border-color:#1798D0;">
+            <span style="display:block; font-size:12px; font-weight:700; color:{{ sf.labelFg }}; margin-bottom:4px;">{{ sf.t }}</span>
+            <span style="display:block; font-family:'IBM Plex Mono',monospace; font-size:19px; font-weight:600; color:{{ sf.amtFg }};">{{ sf.amt }}</span>
+            <span style="display:block; font-size:11.5px; color:#5C6B77; margin-top:3px; line-height:1.5;">{{ sf.sub }}</span>
+          </button>
+          <span data-mq="arrow" style="align-self:center; color:#9DACB7; font-size:18px; display:{{ sf.sep }};">→</span>
+        </sc-for>
+      </div>
+      <div style="display:flex; gap:6px; flex-wrap:wrap; margin-top:12px;">
+        <span style="font-size:11.5px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:3px 11px;">出典：令和8年度 補正予算書（第1号）</span>
+        <span style="font-size:11.5px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:3px 11px;">6月定例会 議決結果</span>
+      </div>
+    </section>
+    </sc-if>
+
+    <section data-mq="bsum-card" style="background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:14px 24px; margin-bottom:22px; display:flex; align-items:center; gap:20px; flex-wrap:wrap;">
+      <div data-mq="bsum" style="display:flex; align-items:center; gap:26px; flex-wrap:wrap; flex:1;">
+        <sc-for list="{{ basicSummary }}" as="bs" hint-placeholder-count="5">
+          <div style="display:flex; flex-direction:column; gap:2px;">
+            <span style="font-size:11px; color:#5C6B77;">{{ bs.label }}</span>
+            <span style="font-family:'IBM Plex Mono',monospace; font-size:14.5px; font-weight:600; color:#14181C; white-space:nowrap;">{{ bs.v }}</span>
+          </div>
+        </sc-for>
+      </div>
+      <button onClick="{{ goBasic }}" style="border:none; background:none; color:#1798D0; font-size:12.5px; font-weight:600; cursor:pointer; padding:0; font-family:'IBM Plex Sans JP',sans-serif; white-space:nowrap;" style-hover="text-decoration:underline;">基本情報を見る →</button>
+    </section>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(340px,1fr)); gap:18px; margin-bottom:26px;">
+      <sc-for list="{{ dashPanels }}" as="pn" hint-placeholder-count="2">
+        <section style="background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:22px 24px;">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:16px;">
+            <div style="display:flex; align-items:center; gap:7px;">
+              <h2 style="margin:0; font-size:16px; font-weight:700;">{{ pn.title }}</h2>
+              <button onMouseEnter="{{ pn.gloss }}" onClick="{{ pn.gloss }}" onMouseLeave="{{ hideTip }}" style="width:17px; height:17px; border-radius:50%; border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; font-size:11px; line-height:1; cursor:help; padding:0; font-family:'IBM Plex Mono',monospace;">?</button>
+            </div>
+            <button onClick="{{ pn.openDrill }}" style="border:none; background:none; color:#1798D0; font-size:12.5px; font-weight:600; cursor:pointer; padding:0; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="text-decoration:underline;">款・項・目・節で見る →</button>
+          </div>
+          <div style="display:flex; gap:22px; align-items:center; flex-wrap:wrap;">
+            <div onMouseMove="{{ pn.tipMove }}" onClick="{{ pn.tipMove }}" onMouseLeave="{{ hideTip }}" style="width:170px; height:170px; border-radius:50%; background:{{ pn.donutBg }}; position:relative; flex-shrink:0; cursor:pointer;">
+              <span data-anim="donutcover" style="position:absolute; inset:0; border-radius:50%; background:#FFFFFF; pointer-events:none;"></span>
+              <div style="position:absolute; inset:34px; border-radius:50%; background:#FFFFFF; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+                <span style="font-size:10.5px; color:#5C6B77;">{{ pn.centerLabel }}</span>
+                <span style="font-family:'IBM Plex Mono',monospace; font-size:16px; font-weight:600;">{{ pn.centerAmt }}</span>
+              </div>
+            </div>
+            <div style="flex:1; min-width:200px; display:flex; flex-direction:column;">
+              <sc-for list="{{ pn.legend }}" as="lg" hint-placeholder-count="6">
+                <button onClick="{{ lg.open }}" onMouseEnter="{{ lg.hoverOn }}" onMouseLeave="{{ lg.hoverOff }}" style="display:flex; align-items:center; gap:9px; border:none; background:none; padding:5px 6px; cursor:pointer; border-radius:7px; text-align:left; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="background:#ECF2F6;">
+                  <span style="width:10px; height:10px; border-radius:3px; background:{{ lg.sw }}; flex-shrink:0;"></span>
+                  <span style="flex:1; font-size:13px; color:#14181C;">{{ lg.name }}</span>
+                  <span style="font-family:'IBM Plex Mono',monospace; font-size:12.5px;">{{ lg.amtFmt }}</span>
+                  <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#5C6B77; width:44px; text-align:right;">{{ lg.pctFmt }}</span>
+                </button>
+              </sc-for>
+            </div>
+          </div>
+        </section>
+      </sc-for>
+    </div>
+
+    <section style="background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:22px 24px; margin-bottom:26px;">
+      <div style="display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:16px;">
+        <h2 style="margin:0; font-size:16px; font-weight:700;">議会の構成（予算議決時）</h2>
+        <span style="font-size:12.5px; color:#5C6B77;">{{ councilBody }} ・ 定数 {{ councilSeats }} ・ 会派名等はダミー</span>
+      </div>
+      <div style="display:flex; gap:30px; flex-wrap:wrap;">
+        <div style="flex:2 1 380px; min-width:300px;">
+          <div style="display:flex; height:16px; border-radius:999px; overflow:hidden; margin-bottom:14px; background:#E3EBF0;">
+            <sc-for list="{{ councilParties }}" as="cp" hint-placeholder-count="5">
+              <span data-anim="bar" onMouseMove="{{ cp.tipMove }}" onClick="{{ cp.tipMove }}" onMouseLeave="{{ hideTip }}" style="width:{{ cp.w }}%; background:{{ cp.sw }}; cursor:pointer;"></span>
+            </sc-for>
+          </div>
+          <div style="display:flex; flex-direction:column;">
+            <sc-for list="{{ councilParties }}" as="cp" hint-placeholder-count="5">
+              <div data-mq="council" style="display:grid; grid-template-columns:14px minmax(140px,1fr) 70px 110px; align-items:center; gap:10px; padding:7px 4px; border-bottom:1px solid #ECF2F6; font-size:13px;">
+                <span style="width:10px; height:10px; border-radius:3px; background:{{ cp.sw }};"></span>
+                <span style="font-weight:600;">{{ cp.name }}</span>
+                <span style="font-family:'IBM Plex Mono',monospace; text-align:right;">{{ cp.seats }}議席</span>
+                <span style="font-size:11.5px; font-weight:600; color:{{ cp.stanceFg }}; text-align:right;">{{ cp.stance }}</span>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        <div style="flex:1 1 240px; min-width:220px;">
+          <div style="background:#F1F6F9; border-radius:12px; padding:16px 18px; margin-bottom:12px;">
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+              <span style="font-size:11.5px; font-weight:700; background:#E3F4FC; color:#0F76A3; border-radius:999px; padding:3px 11px;">可決</span>
+              <span style="font-size:12px; color:#5C6B77;">{{ councilDecided }}</span>
+            </div>
+            <div style="display:flex; gap:20px;">
+              <sc-for list="{{ councilVote }}" as="cv" hint-placeholder-count="3">
+                <div><div style="font-family:'IBM Plex Mono',monospace; font-size:22px; font-weight:600; color:{{ cv.fg }};">{{ cv.n }}</div><div style="font-size:11.5px; color:#5C6B77;">{{ cv.label }}</div></div>
+              </sc-for>
+            </div>
+          </div>
+          <div style="display:flex; gap:6px; flex-wrap:wrap;">
+            <span style="font-size:11.5px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:3px 11px;">出典：本会議 会議録（3月定例会）</span>
+            <span style="font-size:11.5px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:3px 11px;">議会だより</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-bottom:26px;">
+      <div style="display:flex; align-items:baseline; justify-content:space-between; margin-bottom:12px;">
+        <h2 style="margin:0; font-size:16px; font-weight:700;">政策テーマ別に見る</h2>
+        <button onClick="{{ goThemes }}" style="border:none; background:none; color:#1798D0; font-size:12.5px; font-weight:600; cursor:pointer; padding:0; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="text-decoration:underline;">すべてのテーマ →</button>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(180px,1fr)); gap:10px;">
+        <sc-for list="{{ themeStrip }}" as="th" hint-placeholder-count="4">
+          <button onClick="{{ th.open }}" style="text-align:left; background:#FFFFFF; border:1px solid #DFE7EC; border-radius:12px; padding:14px 16px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="border-color:#1798D0;">
+            <span style="display:block; font-size:14px; font-weight:600; margin-bottom:6px;">{{ th.name }}</span>
+            <span style="display:block; font-family:'IBM Plex Mono',monospace; font-size:15px;">{{ th.totalFmt }}</span>
+            <span style="display:block; font-size:11.5px; color:#5C6B77;">{{ th.count }}事業 ・ {{ th.sub }}</span>
+          </button>
+        </sc-for>
+      </div>
+    </section>
+
+    <section>
+      <div style="display:flex; align-items:baseline; justify-content:space-between; margin-bottom:12px;">
+        <h2 style="margin:0; font-size:16px; font-weight:700;">注目の事業（執行状況）</h2>
+        <button onClick="{{ goHistory }}" style="border:none; background:none; color:#1798D0; font-size:12.5px; font-weight:600; cursor:pointer; padding:0; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="text-decoration:underline;">過年度の執行実績 →</button>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:12px;">
+        <sc-for list="{{ featured }}" as="f" hint-placeholder-count="3">
+          <button onClick="{{ f.open }}" style="text-align:left; background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; padding:18px 20px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="border-color:#1798D0; box-shadow:0 4px 14px rgba(20,24,28,0.06);">
+            <span style="display:block; font-size:11.5px; color:#5C6B77; font-family:'IBM Plex Mono',monospace; margin-bottom:6px;">{{ f.kanPath }}</span>
+            <span style="display:block; font-size:15px; font-weight:700; margin-bottom:12px; color:#14181C;">{{ f.name }}</span>
+            <span style="display:flex; justify-content:space-between; font-size:12px; color:#5C6B77; margin-bottom:5px;">
+              <span>予算 <span style="font-family:'IBM Plex Mono',monospace; color:#14181C;">{{ f.budgetFmt }}</span>（{{ f.sub }}）</span>
+              <span>執行率 <span style="font-family:'IBM Plex Mono',monospace; color:#14181C; font-weight:600;">{{ f.rateFmt }}</span></span>
+            </span>
+            <span style="display:block; height:6px; border-radius:999px; background:#E3EBF0; overflow:hidden;">
+              <span data-anim="bar" style="display:block; height:100%; width:{{ f.barW }}%; background:#1798D0; border-radius:999px;"></span>
+            </span>
+          </button>
+        </sc-for>
+      </div>
+      <p style="margin:14px 2px 0; font-size:12px; color:#5C6B77;">出典：甲府市 令和8年度当初予算（款レベルは公表実データ・項以下は按分推計）</p>
+    </section>
+  </div>
+  </sc-if>
+
+  <!-- ==== 款・項・目・節ドリルダウン ==== -->
+  <sc-if value="{{ isDrill }}" hint-placeholder-val="{{ false }}">
+  <div data-screen-label="款・項・目・節ドリルダウン" style="animation:fadeUp .35s ease both;">
+    <div style="display:flex; align-items:center; gap:8px; margin-bottom:18px; flex-wrap:wrap;">
+      <div style="display:inline-flex; border:1px solid #DFE7EC; border-radius:999px; overflow:hidden; background:#FFFFFF;">
+        <sc-for list="{{ drillSideTabs }}" as="st" hint-placeholder-count="2">
+          <button onClick="{{ st.pick }}" style="border:none; background:{{ st.bg }}; color:{{ st.fg }}; padding:7px 18px; font-size:13px; font-weight:600; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;">{{ st.label }}</button>
+        </sc-for>
+      </div>
+      <span style="display:inline-flex; align-items:center; gap:6px; font-size:12px; color:#5C6B77;">款 → 項 → 目 → 節 → 事業 の順に掘り下げられます（事業は収録済の目のみ）
+        <button onMouseEnter="{{ gKanmoku }}" onClick="{{ gKanmoku }}" onMouseLeave="{{ hideTip }}" style="width:17px; height:17px; border-radius:50%; border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; font-size:11px; line-height:1; cursor:help; padding:0; font-family:'IBM Plex Mono',monospace;">?</button>
+      </span>
+    </div>
+
+    <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap; margin-bottom:20px; font-size:14px;">
+      <sc-for list="{{ drillCrumbs }}" as="c" hint-placeholder-count="2">
+        <button onClick="{{ c.jump }}" style="border:none; background:{{ c.bg }}; color:{{ c.fg }}; font-weight:{{ c.fw }}; border-radius:8px; padding:5px 12px; cursor:pointer; font-size:13.5px; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="color:#1798D0;">{{ c.label }}</button>
+        <span style="color:#C6D2DA; display:{{ c.sep }};">›</span>
+      </sc-for>
+      <span style="margin-left:auto; font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:#5C6B77; background:#ECF2F6; border-radius:999px; padding:4px 12px;">この階層：{{ drillLevelLabel }}</span>
+    </div>
+
+    <div style="display:flex; gap:24px; flex-wrap:wrap;">
+      <div style="flex:0 0 auto; display:flex; flex-direction:column; align-items:center; gap:14px;">
+        <div onMouseMove="{{ drillTipMove }}" onClick="{{ drillTipMove }}" onMouseLeave="{{ hideTip }}" style="width:220px; height:220px; border-radius:50%; background:{{ drillDonutBg }}; position:relative; cursor:pointer;">
+          <span data-anim="donutcover" style="position:absolute; inset:0; border-radius:50%; background:#F7FAFC; pointer-events:none;"></span>
+          <div style="position:absolute; inset:44px; border-radius:50%; background:#F7FAFC; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center;">
+            <span style="font-size:11px; color:#5C6B77; max-width:110px; line-height:1.4;">{{ drillTitle }}</span>
+            <span style="font-family:'IBM Plex Mono',monospace; font-size:19px; font-weight:600;">{{ drillTotalFmt }}</span>
+            <span style="font-size:10.5px; color:#5C6B77;">{{ drillSub }}</span>
+          </div>
+        </div>
+        <div style="background:#FFFFFF; border:1px solid #DFE7EC; border-radius:12px; padding:12px 16px; max-width:240px;">
+          <div style="font-size:11px; font-family:'IBM Plex Mono',monospace; letter-spacing:0.12em; color:#5C6B77; margin-bottom:5px;">EVIDENCE</div>
+          <div style="font-size:12.5px; line-height:1.6;">{{ drillEvidence }}</div>
+          <a href="#" style="font-size:12px;">予算書PDFを開く ↗</a>
+        </div>
+      </div>
+
+      <div style="flex:1; min-width:320px;">
+        <sc-for list="{{ drillRows }}" as="r" hint-placeholder-count="6">
+          <button onClick="{{ r.open }}" onMouseEnter="{{ r.hoverOn }}" onMouseLeave="{{ r.hoverOff }}" data-mq="drill" style="width:100%; display:grid; grid-template-columns:14px minmax(120px,1.4fr) 2fr 92px 56px 20px; align-items:center; gap:12px; border:none; border-bottom:1px solid #E3EBF0; background:none; padding:12px 8px; cursor:{{ r.cursor }}; text-align:left; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="background:#ECF2F6;">
+            <span style="width:11px; height:11px; border-radius:3px; background:{{ r.sw }};"></span>
+            <span style="font-size:14px; font-weight:600; color:#14181C;">{{ r.name }}</span>
+            <span style="height:8px; border-radius:999px; background:#E3EBF0; overflow:hidden;"><span data-anim="bar" style="display:block; height:100%; width:{{ r.barW }}%; background:{{ r.sw }};"></span></span>
+            <span style="text-align:right;"><span style="display:block; font-family:'IBM Plex Mono',monospace; font-size:13.5px;">{{ r.amtFmt }}</span><span style="display:block; font-size:10px; color:#5C6B77;">{{ r.sub }}</span></span>
+            <span style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:#5C6B77; text-align:right;">{{ r.pctFmt }}</span>
+            <span style="color:#9DACB7; font-size:14px;">{{ r.arrow }}</span>
+          </button>
+        </sc-for>
+
+        <sc-if value="{{ hasRelated }}" hint-placeholder-val="{{ false }}">
+          <div style="margin-top:24px;">
+            <h3 style="margin:0 0 10px; font-size:14px; font-weight:700;">この会計項目に紐づく事業</h3>
+            <div style="display:flex; flex-direction:column; gap:8px;">
+              <sc-for list="{{ drillRelated }}" as="rp" hint-placeholder-count="2">
+                <button onClick="{{ rp.open }}" style="display:flex; align-items:center; justify-content:space-between; gap:14px; background:#FFFFFF; border:1px solid #DFE7EC; border-radius:11px; padding:12px 16px; cursor:pointer; text-align:left; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="border-color:#1798D0;">
+                  <span>
+                    <span style="display:block; font-size:14px; font-weight:600;">{{ rp.name }}</span>
+                    <span style="display:block; font-size:11.5px; color:#5C6B77;">{{ rp.themes }}</span>
+                  </span>
+                  <span style="font-family:'IBM Plex Mono',monospace; font-size:13px; white-space:nowrap;">{{ rp.budgetFmt }} <span style="color:#5C6B77; font-size:11px;">執行 {{ rp.rateFmt }}</span></span>
+                </button>
+              </sc-for>
+            </div>
+            <p style="margin:10px 2px 0; font-size:12px; color:#5C6B77;">会計項目（款・項・目・節）と政策意図は別軸です。<button onClick="{{ goThemes }}" style="border:none;background:none;padding:0;color:#1798D0;cursor:pointer;font-size:12px;font-family:'IBM Plex Sans JP',sans-serif;">政策テーマ別の集計はこちら →</button></p>
+          </div>
+        </sc-if>
+      </div>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ==== 前年比較 ==== -->
+  <sc-if value="{{ isCompare }}" hint-placeholder-val="{{ false }}">
+  <div data-screen-label="予算の前年比較" style="animation:fadeUp .35s ease both;">
+    <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:20px;">
+      <div>
+        <h1 style="margin:0 0 6px; font-size:24px; font-weight:700;">前年度との比較</h1>
+        <p style="margin:0; color:#5C6B77; font-size:13.5px;">{{ compPrevLabel }} と {{ compCurLabel }} の当初予算を款ごとに比較します（甲府市は公表実データ）。</p>
+      </div>
+      <div style="display:inline-flex; border:1px solid #DFE7EC; border-radius:999px; overflow:hidden; background:#FFFFFF;">
+        <sc-for list="{{ compTabs }}" as="ct" hint-placeholder-count="2">
+          <button onClick="{{ ct.pick }}" style="border:none; background:{{ ct.bg }}; color:{{ ct.fg }}; padding:8px 20px; font-size:13px; font-weight:600; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;">{{ ct.label }}</button>
+        </sc-for>
+      </div>
+    </div>
+
+    <div style="background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:20px 24px; margin-bottom:22px; display:flex; gap:34px; align-items:center; flex-wrap:wrap;">
+      <div><div style="font-size:12px; color:#5C6B77;">{{ compPrevLabel }}</div><div style="font-family:'IBM Plex Mono',monospace; font-size:24px; font-weight:600; color:#5C6B77;">{{ compPrevTotal }}</div></div>
+      <span style="color:#9DACB7; font-size:20px;">→</span>
+      <div><div style="font-size:12px; color:#5C6B77;">{{ compCurLabel }}</div><div style="font-family:'IBM Plex Mono',monospace; font-size:28px; font-weight:600;">{{ compCurTotal }}</div><div style="font-size:10.5px; color:#5C6B77;">{{ compSub }}</div></div>
+      <div style="margin-left:auto; text-align:right;">
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:22px; font-weight:600; color:{{ compTotalFg }};">{{ compTotalDelta }}</div>
+        <div style="font-size:12px; color:#5C6B77;">増減（{{ compTotalPct }}）</div>
+      </div>
+    </div>
+
+    <section style="background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:20px 24px;">
+      <div style="display:flex; gap:16px; font-size:11.5px; color:#5C6B77; margin-bottom:12px;">
+        <span style="display:inline-flex; align-items:center; gap:5px;"><span style="width:18px; height:7px; border-radius:999px; background:#C6D2DA;"></span>{{ compPrevLabel }}</span>
+        <span style="display:inline-flex; align-items:center; gap:5px;"><span style="width:18px; height:7px; border-radius:999px; background:#0072B2;"></span>{{ compCurLabel }}</span>
+      </div>
+      <div data-mq="comp" style="display:grid; grid-template-columns:14px minmax(110px,1fr) 2.2fr 92px 92px 110px; gap:12px; font-size:11px; color:#5C6B77; border-bottom:1px solid #DFE7EC; padding-bottom:8px;">
+        <span></span><span>款</span><span></span><span style="text-align:right;">前年度</span><span style="text-align:right;">今年度</span><span style="text-align:right;">増減</span>
+      </div>
+      <sc-for list="{{ compRows }}" as="cr" hint-placeholder-count="8">
+        <button onClick="{{ cr.open }}" data-mq="comp" style="width:100%; display:grid; grid-template-columns:14px minmax(110px,1fr) 2.2fr 92px 92px 110px; gap:12px; padding:12px 0; border:none; border-bottom:1px solid #ECF2F6; background:none; font-size:13px; align-items:center; cursor:pointer; text-align:left; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="background:#F1F6F9;">
+          <span style="width:10px; height:10px; border-radius:3px; background:{{ cr.sw }};"></span>
+          <span style="font-weight:600;">{{ cr.name }}</span>
+          <span style="display:flex; flex-direction:column; gap:4px;">
+            <span style="display:block; height:7px; border-radius:999px; background:#ECF2F6; overflow:hidden;"><span data-anim="bar" style="display:block; height:100%; width:{{ cr.prevW }}%; background:#C6D2DA;"></span></span>
+            <span style="display:block; height:7px; border-radius:999px; background:#ECF2F6; overflow:hidden;"><span data-anim="bar" style="display:block; height:100%; width:{{ cr.curW }}%; background:{{ cr.sw }};"></span></span>
+          </span>
+          <span style="font-family:'IBM Plex Mono',monospace; text-align:right; color:#5C6B77;">{{ cr.prevFmt }}</span>
+          <span style="font-family:'IBM Plex Mono',monospace; text-align:right;">{{ cr.curFmt }}</span>
+          <span style="font-family:'IBM Plex Mono',monospace; text-align:right; font-weight:600; color:{{ cr.deltaFg }};">{{ cr.deltaFmt }}</span>
+        </button>
+      </sc-for>
+      <p style="margin:12px 2px 0; font-size:12px; color:#5C6B77;">増減は当初予算同士の比較。行をクリックすると款の内訳へ移動します。</p>
+    </section>
+  </div>
+  </sc-if>
+
+  <!-- ==== 政策テーマ ==== -->
+  <sc-if value="{{ isThemes }}" hint-placeholder-val="{{ false }}">
+  <div data-screen-label="政策テーマ別ビュー" style="animation:fadeUp .35s ease both;">
+    <section data-mq-pad="" style="background:#FFFFFF; border:1px solid #DFE7EC; border-radius:18px; padding:26px 30px; margin-bottom:24px;">
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.18em; color:#0F76A3; margin-bottom:10px;">POLICY INTENT — 甲府市の政策意図サマリー</div>
+      <p style="margin:0 0 14px; font-size:15px; line-height:1.9; max-width:76ch;">令和8年度当初予算は、次の3つを重点の柱として編成されています。インフラは新設よりも長寿命化・維持管理へ重心を移しています。</p>
+      <ul style="margin:0 0 18px; padding:0 0 0 1.3em; display:flex; flex-direction:column; gap:8px; font-size:14.5px; line-height:1.8; max-width:80ch;">
+        <li><strong>こども・若者への投資</strong> — 保育の受け皿確保や応援金給付など、子育て関連を前年度比 +8.2% と最も高い伸びで重点配分</li>
+        <li><strong>災害に強いまちづくり</strong> — 自主防災組織の強化と、道路・橋りょうの予防保全への転換</li>
+        <li><strong>中心市街地のにぎわい再生</strong> — 空き店舗リノベーションと出店支援で、まちなかの回遊を回復</li>
+      </ul>
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <span style="font-size:12px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:4px 12px;">出典：令和8年度 施政方針（PDF）</span>
+        <span style="font-size:12px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:4px 12px;">第七次甲府市総合計画</span>
+      </div>
+    </section>
+
+    <p style="margin:0 0 14px; font-size:13px; color:#5C6B77;">政策テーマは会計上の款・項とは別に、事業単位で「ゆるく」分類したものです。1つの事業が複数テーマに属することがあります。</p>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(170px,1fr)); gap:10px; margin-bottom:28px;">
+      <sc-for list="{{ themeCards }}" as="tc" hint-placeholder-count="6">
+        <button onClick="{{ tc.open }}" style="text-align:left; background:{{ tc.bg }}; border:1.5px solid {{ tc.bd }}; border-radius:13px; padding:15px 16px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="border-color:#1798D0;">
+          <span style="display:block; font-size:14px; font-weight:700; margin-bottom:7px; color:#14181C;">{{ tc.name }}</span>
+          <span style="display:block; font-family:'IBM Plex Mono',monospace; font-size:16px;">{{ tc.totalFmt }}</span>
+          <span style="display:block; font-size:11.5px; color:#5C6B77;">{{ tc.count }}事業 ・ {{ tc.sub }}</span>
+        </button>
+      </sc-for>
+    </div>
+
+    <sc-if value="{{ hasTheme }}" hint-placeholder-val="{{ false }}">
+    <section data-mq-pad="" style="background:#FFFFFF; border:1px solid #DFE7EC; border-radius:18px; padding:26px 30px;">
+      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:18px; flex-wrap:wrap; margin-bottom:6px;">
+        <div>
+          <h2 style="margin:0 0 8px; font-size:22px; font-weight:700;">{{ themeName }}</h2>
+          <p style="margin:0; color:#5C6B77; font-size:14px; max-width:64ch; line-height:1.8;">{{ themeIntent }}</p>
+        </div>
+        <div style="text-align:right;">
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:26px; font-weight:600;">{{ themeTotalFmt }}</div>
+          <div style="font-size:12px; color:#5C6B77;">{{ themeCount }}事業の予算合計 ・ 市民1人あたり <span style="font-family:'IBM Plex Mono',monospace; color:#14181C; font-weight:600;">{{ themePer }}</span></div>
+        </div>
+      </div>
+
+      <div style="margin:18px 0 22px;">
+        <div style="font-size:12px; color:#5C6B77; margin-bottom:8px;">会計項目（款）別の内訳 — 政策テーマ ⇄ 款・項・目・節 は相互に集計できます</div>
+        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <sc-for list="{{ themeKanChips }}" as="kc" hint-placeholder-count="3">
+            <button onClick="{{ kc.open }}" style="display:inline-flex; align-items:center; gap:7px; border:1px solid #DFE7EC; background:#F7FAFC; border-radius:999px; padding:5px 13px; font-size:12.5px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="border-color:#1798D0; color:#1798D0;">
+              <span style="width:9px; height:9px; border-radius:3px; background:{{ kc.sw }};"></span>{{ kc.name }} <span style="font-family:'IBM Plex Mono',monospace;">{{ kc.amtFmt }}</span>
+            </button>
+          </sc-for>
+        </div>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:9px;">
+        <sc-for list="{{ themeProjects }}" as="tp" hint-placeholder-count="3">
+          <button onClick="{{ tp.open }}" data-mq="tproj" style="display:grid; grid-template-columns:minmax(200px,2fr) minmax(140px,1.2fr) 96px 110px; align-items:center; gap:14px; border:1px solid #E3EBF0; background:#F7FAFC; border-radius:12px; padding:14px 18px; cursor:pointer; text-align:left; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="border-color:#1798D0; background:#FFFFFF;">
+            <span>
+              <span style="display:block; font-size:14.5px; font-weight:700; color:#14181C;">{{ tp.name }}</span>
+              <span style="display:block; font-size:11.5px; color:#5C6B77; margin-top:2px;">{{ tp.summary }}</span>
+            </span>
+            <span style="font-size:11.5px; color:#5C6B77; font-family:'IBM Plex Mono',monospace;">{{ tp.kanPath }}</span>
+            <span style="text-align:right;"><span style="display:block; font-family:'IBM Plex Mono',monospace; font-size:13.5px;">{{ tp.budgetFmt }}</span><span style="display:block; font-size:10px; color:#5C6B77;">{{ tp.sub }}</span></span>
+            <span>
+              <span style="display:flex; justify-content:space-between; font-size:10.5px; color:#5C6B77; margin-bottom:3px;"><span>執行率</span><span style="font-family:'IBM Plex Mono',monospace; color:#14181C; font-weight:600;">{{ tp.rateFmt }}</span></span>
+              <span style="display:block; height:5px; border-radius:999px; background:#E3EBF0; overflow:hidden;"><span data-anim="bar" style="display:block; height:100%; width:{{ tp.barW }}%; background:#1798D0;"></span></span>
+            </span>
+          </button>
+        </sc-for>
+      </div>
+    </section>
+    </sc-if>
+  </div>
+  </sc-if>
+
+  <!-- ==== 事業詳細 ==== -->
+  <sc-if value="{{ isProject }}" hint-placeholder-val="{{ false }}">
+  <div data-screen-label="事業詳細" style="animation:fadeUp .35s ease both;">
+    <button onClick="{{ goBack }}" style="border:none; background:none; color:#5C6B77; font-size:13px; cursor:pointer; padding:0; margin-bottom:14px; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="color:#1798D0;">← 戻る</button>
+
+    <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:18px; flex-wrap:wrap; margin-bottom:20px;">
+      <div>
+        <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;">
+          <span style="font-size:11.5px; font-weight:600; background:#E3F4FC; color:#0F76A3; border-radius:999px; padding:3px 11px;">{{ projStatus }}</span>
+          <sc-for list="{{ projThemes }}" as="pt" hint-placeholder-count="1">
+            <button onClick="{{ pt.open }}" style="font-size:11.5px; border:1px solid #DFE7EC; background:#FFFFFF; color:#5C6B77; border-radius:999px; padding:3px 11px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="color:#1798D0; border-color:#1798D0;">{{ pt.name }}</button>
+          </sc-for>
+        </div>
+        <h1 style="margin:0 0 8px; font-size:26px; font-weight:700;">{{ projName }}</h1>
+        <div style="display:flex; gap:18px; flex-wrap:wrap; font-size:12.5px; color:#5C6B77;">
+          <button onClick="{{ projKanOpen }}" style="border:none; background:none; padding:0; cursor:pointer; color:#1798D0; font-size:12.5px; font-family:'IBM Plex Mono',monospace;" style-hover="text-decoration:underline;">{{ projKanPath }}</button>
+          <span>所管：{{ projDept }}</span>
+          <span>期間：{{ projPeriod }}</span>
+        </div>
+      </div>
+      <div data-mq="statcard" style="background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; padding:16px 22px; display:flex; gap:26px; align-items:center; flex-wrap:wrap;">
+        <div><div style="font-size:11px; color:#5C6B77;">{{ projBudgetLabel }}</div><div style="font-family:'IBM Plex Mono',monospace; font-size:20px; font-weight:600;">{{ projBudgetFmt }}</div><div style="font-size:10.5px; color:#5C6B77;">{{ projBudgetSub }}</div></div>
+        <div><div style="font-size:11px; color:#5C6B77;">支出済額</div><div style="font-family:'IBM Plex Mono',monospace; font-size:20px; font-weight:600;">{{ projSpentFmt }}</div></div>
+        <div><div style="display:flex; align-items:center; gap:5px; font-size:11px; color:#5C6B77;">執行率<button onMouseEnter="{{ gRate }}" onClick="{{ gRate }}" onMouseLeave="{{ hideTip }}" style="width:15px; height:15px; border-radius:50%; border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; font-size:10px; line-height:1; cursor:help; padding:0; font-family:'IBM Plex Mono',monospace;">?</button></div><div style="font-family:'IBM Plex Mono',monospace; font-size:20px; font-weight:600; color:#1798D0;">{{ projRateFmt }}</div></div>
+      </div>
+    </div>
+
+    <sc-if value="{{ projHoseiShow }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex; align-items:center; gap:12px; background:#E3F4FC; border:1px solid #B9E0F2; border-radius:11px; padding:10px 16px; margin-bottom:14px; font-size:13px; flex-wrap:wrap;">
+        <span style="font-size:11.5px; font-weight:700; color:#0F76A3; border:1px solid #0F76A3; border-radius:999px; padding:2px 10px; white-space:nowrap;">補正あり</span>
+        <span style="line-height:1.6;">{{ projHoseiText }}</span>
+        <span style="margin-left:auto; display:inline-flex; align-items:center; gap:8px; white-space:nowrap;">
+          <span style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#0F76A3; font-weight:600;">{{ projHoseiAfter }}</span>
+          <span style="font-size:11.5px; border:1px solid #B9E0F2; color:#0F76A3; border-radius:999px; padding:3px 11px;">補正予算書（第1号）</span>
+        </span>
+      </div>
+    </sc-if>
+
+    <div style="height:10px; border-radius:999px; background:#E3EBF0; overflow:hidden; margin-bottom:26px;">
+      <div data-anim="bar" style="height:100%; width:{{ projBarW }}%; background:linear-gradient(90deg,#1798D0,#55BBE4); border-radius:999px;"></div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:14px; margin-bottom:26px;">
+      <section style="background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; padding:20px 22px;">
+        <h3 style="margin:0 0 8px; font-size:13px; font-weight:700; color:#5C6B77; letter-spacing:0.06em;">目的</h3>
+        <p style="margin:0; font-size:14px; line-height:1.85;">{{ projPurpose }}</p>
+      </section>
+      <section style="background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; padding:20px 22px;">
+        <h3 style="margin:0 0 8px; font-size:13px; font-weight:700; color:#5C6B77; letter-spacing:0.06em;">事業内容</h3>
+        <p style="margin:0; font-size:14px; line-height:1.85;">{{ projDesc }}</p>
+      </section>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px,1fr)); gap:14px; margin-bottom:26px;">
+      <section style="background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; padding:20px 22px;">
+        <h3 style="margin:0 0 14px; font-size:14px; font-weight:700;">四半期ごとの執行推移（累計）</h3>
+        <div style="display:flex; align-items:flex-end; gap:18px; height:150px; padding:0 6px;">
+          <sc-for list="{{ projQuarters }}" as="q" hint-placeholder-count="4">
+            <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:6px; height:100%; justify-content:flex-end;">
+              <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#14181C;">{{ q.actLabel }}</span>
+              <div style="display:flex; align-items:flex-end; gap:4px; width:100%; justify-content:center;">
+                <div data-anim="vbar" style="width:22px; height:{{ q.planH }}px; background:#DCE5EB; border-radius:4px 4px 0 0;" title="計画"></div>
+                <div data-anim="vbar" style="width:22px; height:{{ q.actH }}px; background:{{ q.actBg }}; border:{{ q.actBorder }}; border-radius:4px 4px 0 0;" title="実績"></div>
+              </div>
+              <span style="font-size:11px; color:#5C6B77;">{{ q.label }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <div style="display:flex; gap:16px; margin-top:10px; font-size:11.5px; color:#5C6B77;">
+          <span style="display:inline-flex; align-items:center; gap:5px;"><span style="width:10px;height:10px;background:#DCE5EB;border-radius:3px;"></span>計画</span>
+          <span style="display:inline-flex; align-items:center; gap:5px;"><span style="width:10px;height:10px;background:#1798D0;border-radius:3px;"></span>実績</span>
+          <span style="display:inline-flex; align-items:center; gap:5px;"><span style="width:10px;height:10px;border:1.5px dashed #9DACB7;border-radius:3px;"></span>未到来</span>
+        </div>
+      </section>
+
+      <section style="background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; padding:20px 22px;">
+        <h3 style="margin:0 0 14px; font-size:14px; font-weight:700;">契約・支出先の内訳</h3>
+        <div style="display:flex; flex-direction:column;">
+          <div style="display:grid; grid-template-columns:2fr 1.2fr 90px; gap:10px; font-size:11px; color:#5C6B77; border-bottom:1px solid #DFE7EC; padding-bottom:7px;">
+            <span>支出先・内容</span><span>契約方法</span><span style="text-align:right;">金額</span>
+          </div>
+          <sc-for list="{{ projContracts }}" as="ct" hint-placeholder-count="3">
+            <div style="display:grid; grid-template-columns:2fr 1.2fr 90px; gap:10px; padding:10px 0; border-bottom:1px solid #ECF2F6; font-size:13px; align-items:center;">
+              <span><span style="display:block; font-weight:600;">{{ ct.to }}</span><span style="display:block; font-size:11.5px; color:#5C6B77;">{{ ct.desc }}</span></span>
+              <span><span style="display:block; font-size:12px; color:#5C6B77;">{{ ct.method }}</span><span style="display:block; font-size:11px; color:#1798D0;">{{ ct.bid }}</span></span>
+              <span style="font-family:'IBM Plex Mono',monospace; text-align:right;">{{ ct.amtFmt }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </section>
+    </div>
+
+    <section style="background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; padding:20px 22px; margin-bottom:26px;">
+      <div style="display:flex; align-items:baseline; justify-content:space-between; gap:10px; flex-wrap:wrap; margin-bottom:12px;">
+        <h3 style="margin:0; font-size:14px; font-weight:700;">成果指標（KPI）— お金と成果の突き合わせ</h3>
+        <span style="font-size:11.5px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:3px 11px;">出典：主要な施策の成果報告書（R7）</span>
+      </div>
+      <div data-mq="kpi" style="display:grid; grid-template-columns:minmax(180px,2fr) 1fr 1.4fr 70px; gap:12px; font-size:11px; color:#5C6B77; border-bottom:1px solid #DFE7EC; padding-bottom:7px;">
+        <span>指標</span><span style="text-align:right;">目標</span><span style="text-align:right;">実績（R7年度）</span><span style="text-align:right;">状態</span>
+      </div>
+      <sc-for list="{{ projKpis }}" as="kp" hint-placeholder-count="2">
+        <div data-mq="kpi" style="display:grid; grid-template-columns:minmax(180px,2fr) 1fr 1.4fr 70px; gap:12px; padding:11px 0; border-bottom:1px solid #ECF2F6; font-size:13px; align-items:center;">
+          <span style="font-weight:600;">{{ kp.name }}</span>
+          <span style="font-family:'IBM Plex Mono',monospace; text-align:right; color:#5C6B77;">{{ kp.target }}</span>
+          <span style="font-family:'IBM Plex Mono',monospace; text-align:right;">{{ kp.actual }}</span>
+          <span style="text-align:right;"><span style="display:inline-block; font-size:11px; font-weight:700; color:{{ kp.stFg }}; background:{{ kp.stBg }}; border-radius:999px; padding:2px 10px;">{{ kp.status }}</span></span>
+        </div>
+      </sc-for>
+      <p style="margin:10px 2px 0; font-size:12px; color:#5C6B77;">実績は前年度（R7）の値。今年度分は決算・成果報告書の公表後に更新されます（ダミー）。</p>
+    </section>
+
+    <sc-if value="{{ showEvidence }}" hint-placeholder-val="{{ true }}">
+    <section style="margin-bottom:26px;">
+      <h3 style="margin:0 0 12px; font-size:14px; font-weight:700;">エビデンス（一次資料）</h3>
+      <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(240px,1fr)); gap:12px;">
+        <sc-for list="{{ projEvidence }}" as="ev" hint-placeholder-count="3">
+          <a href="#" style="display:block; background:#FFFFFF; border:1px solid #DFE7EC; border-radius:13px; overflow:hidden; text-decoration:none; color:#14181C;" style-hover="border-color:#1798D0; text-decoration:none;">
+            <span style="display:flex; align-items:center; justify-content:center; height:110px; background:repeating-linear-gradient(45deg,#ECF2F6 0 10px,#E1EAF0 10px 20px); font-family:'IBM Plex Mono',monospace; font-size:11px; color:#5C6B77; text-align:center; padding:0 14px; line-height:1.5;">{{ ev.thumb }}</span>
+            <span style="display:block; padding:12px 15px;">
+              <span style="display:inline-block; font-size:10.5px; font-weight:600; color:#1798D0; border:1px solid #B9E0F2; border-radius:999px; padding:1px 9px; margin-bottom:6px;">{{ ev.type }}</span>
+              <span style="display:block; font-size:13px; font-weight:600; line-height:1.5;">{{ ev.title }}</span>
+              <span style="display:block; font-size:11px; color:#5C6B77; margin-top:3px; font-family:'IBM Plex Mono',monospace;">{{ ev.source }}</span>
+            </span>
+          </a>
+        </sc-for>
+      </div>
+    </section>
+    </sc-if>
+
+    <section style="background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; padding:20px 22px;">
+      <div style="display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
+        <h3 style="margin:0; font-size:14px; font-weight:700;">過年度の予算と執行実績</h3>
+        <button onClick="{{ goHistory }}" style="border:none; background:none; color:#1798D0; font-size:12.5px; font-weight:600; cursor:pointer; padding:0; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="text-decoration:underline;">自治体全体の過年度実績 →</button>
+      </div>
+      <div data-mq="past" style="display:grid; grid-template-columns:64px 1fr 110px 110px 70px; gap:12px; font-size:11px; color:#5C6B77; border-bottom:1px solid #DFE7EC; padding-bottom:7px;">
+        <span>年度</span><span>執行率</span><span style="text-align:right;">予算現額</span><span style="text-align:right;">支出済額</span><span style="text-align:right;">率</span>
+      </div>
+      <sc-for list="{{ projPast }}" as="py" hint-placeholder-count="3">
+        <div data-mq="past" style="display:grid; grid-template-columns:64px 1fr 110px 110px 70px; gap:12px; padding:11px 0; border-bottom:1px solid #ECF2F6; font-size:13px; align-items:center;">
+          <span style="font-family:'IBM Plex Mono',monospace; font-weight:600;">{{ py.year }}</span>
+          <span style="display:block; height:7px; border-radius:999px; background:#E3EBF0; overflow:hidden;"><span data-anim="bar" style="display:block; height:100%; width:{{ py.barW }}%; background:#7FC9E8;"></span></span>
+          <span style="font-family:'IBM Plex Mono',monospace; text-align:right;">{{ py.budgetFmt }}</span>
+          <span style="font-family:'IBM Plex Mono',monospace; text-align:right;">{{ py.execFmt }}</span>
+          <span style="font-family:'IBM Plex Mono',monospace; text-align:right; font-weight:600;">{{ py.rateFmt }}</span>
+        </div>
+      </sc-for>
+    </section>
+  </div>
+  </sc-if>
+
+  <!-- ==== 過年度実績 ==== -->
+  <sc-if value="{{ isHistory }}" hint-placeholder-val="{{ false }}">
+  <div data-screen-label="過年度の執行実績" style="animation:fadeUp .35s ease both;">
+    <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:20px;">
+      <div>
+        <h1 style="margin:0 0 6px; font-size:24px; font-weight:700;">過年度の執行実績</h1>
+        <p style="margin:0; color:#5C6B77; font-size:13.5px;">款ごとに「予算はこうでした → 実際にこう使われました」を確認できます。</p>
+      </div>
+      <div style="display:inline-flex; border:1px solid #DFE7EC; border-radius:999px; overflow:hidden; background:#FFFFFF;">
+        <sc-for list="{{ histTabs }}" as="ht" hint-placeholder-count="2">
+          <button onClick="{{ ht.pick }}" style="border:none; background:{{ ht.bg }}; color:{{ ht.fg }}; padding:8px 20px; font-size:13px; font-weight:600; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;">{{ ht.label }}</button>
+        </sc-for>
+      </div>
+    </div>
+
+    <div style="background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:20px 24px; margin-bottom:22px; display:flex; align-items:center; gap:26px; flex-wrap:wrap;">
+      <div>
+        <div style="font-size:12px; color:#5C6B77;">{{ histYearTitle }} 一般会計 執行率</div>
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:38px; font-weight:600; line-height:1.1;">{{ histOverallRate }}</div>
+        <div style="font-size:11px; color:#5C6B77;">支出済 {{ histSub }}</div>
+      </div>
+      <div style="flex:1; min-width:220px;">
+        <div style="height:12px; border-radius:999px; background:#E3EBF0; overflow:hidden;">
+          <div data-anim="bar" style="height:100%; width:{{ histOverallBarW }}%; background:linear-gradient(90deg,#1798D0,#55BBE4); border-radius:999px;"></div>
+        </div>
+        <div style="display:flex; justify-content:space-between; font-size:11.5px; color:#5C6B77; margin-top:6px;">
+          <span>予算現額 <span style="font-family:'IBM Plex Mono',monospace; color:#14181C;">{{ histBudgetFmt }}</span></span>
+          <span>支出済額 <span style="font-family:'IBM Plex Mono',monospace; color:#14181C;">{{ histSpentFmt }}</span></span>
+        </div>
+      </div>
+    </div>
+
+    <section style="background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:20px 24px; margin-bottom:22px;">
+      <div data-mq="hist" style="display:grid; grid-template-columns:minmax(110px,1fr) 2fr 100px 100px 64px 90px; gap:12px; font-size:11px; color:#5C6B77; border-bottom:1px solid #DFE7EC; padding-bottom:8px;">
+        <span>款</span><span>執行率</span><span style="text-align:right;">予算現額</span><span style="text-align:right;">支出済額</span><span style="text-align:right;">率</span><span style="text-align:right;">不用額等</span>
+      </div>
+      <sc-for list="{{ histRows }}" as="hr" hint-placeholder-count="8">
+        <button onClick="{{ hr.open }}" data-mq="hist" style="width:100%; display:grid; grid-template-columns:minmax(110px,1fr) 2fr 100px 100px 64px 90px; gap:12px; padding:12px 0; border:none; border-bottom:1px solid #ECF2F6; background:none; font-size:13px; align-items:center; cursor:pointer; text-align:left; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="background:#F1F6F9;">
+          <span style="font-weight:600; display:inline-flex; align-items:center; gap:8px;"><span style="width:10px; height:10px; border-radius:3px; background:{{ hr.sw }};"></span>{{ hr.name }}</span>
+          <span style="display:block; height:8px; border-radius:999px; background:#E3EBF0; overflow:hidden;"><span data-anim="bar" style="display:block; height:100%; width:{{ hr.barW }}%; background:{{ hr.sw }};"></span></span>
+          <span style="font-family:'IBM Plex Mono',monospace; text-align:right;">{{ hr.budgetFmt }}</span>
+          <span style="font-family:'IBM Plex Mono',monospace; text-align:right;">{{ hr.spentFmt }}</span>
+          <span style="font-family:'IBM Plex Mono',monospace; text-align:right; font-weight:600;">{{ hr.rateFmt }}</span>
+          <span style="font-family:'IBM Plex Mono',monospace; text-align:right; color:#5C6B77;">{{ hr.unusedFmt }}</span>
+        </button>
+      </sc-for>
+      <p style="margin:12px 2px 0; display:flex; align-items:center; gap:6px; font-size:12px; color:#5C6B77;">不用額等＝予算現額－支出済額（翌年度繰越を含む・ダミー値）。款をクリックすると内訳へ移動します。
+        <button onMouseEnter="{{ gFuyou }}" onClick="{{ gFuyou }}" onMouseLeave="{{ hideTip }}" style="width:17px; height:17px; border-radius:50%; border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; font-size:11px; line-height:1; cursor:help; padding:0; font-family:'IBM Plex Mono',monospace; flex-shrink:0;">?</button>
+      </p>
+    </section>
+
+    <sc-if value="{{ showEvidence }}" hint-placeholder-val="{{ true }}">
+    <section>
+      <h3 style="margin:0 0 12px; font-size:14px; font-weight:700;">エビデンス（一次資料）</h3>
+      <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(240px,1fr)); gap:12px;">
+        <sc-for list="{{ histEvidence }}" as="he" hint-placeholder-count="3">
+          <a href="#" style="display:block; background:#FFFFFF; border:1px solid #DFE7EC; border-radius:13px; overflow:hidden; text-decoration:none; color:#14181C;" style-hover="border-color:#1798D0; text-decoration:none;">
+            <span style="display:flex; align-items:center; justify-content:center; height:96px; background:repeating-linear-gradient(45deg,#ECF2F6 0 10px,#E1EAF0 10px 20px); font-family:'IBM Plex Mono',monospace; font-size:11px; color:#5C6B77; text-align:center; padding:0 14px; line-height:1.5;">{{ he.thumb }}</span>
+            <span style="display:block; padding:12px 15px;">
+              <span style="display:inline-block; font-size:10.5px; font-weight:600; color:#1798D0; border:1px solid #B9E0F2; border-radius:999px; padding:1px 9px; margin-bottom:6px;">{{ he.type }}</span>
+              <span style="display:block; font-size:13px; font-weight:600; line-height:1.5;">{{ he.title }}</span>
+              <span style="display:block; font-size:11px; color:#5C6B77; margin-top:3px; font-family:'IBM Plex Mono',monospace;">{{ he.source }}</span>
+            </span>
+          </a>
+        </sc-for>
+      </div>
+    </section>
+    </sc-if>
+  </div>
+  </sc-if>
+
+  <!-- ==== 類似自治体との比較 ==== -->
+  <sc-if value="{{ isSimilar }}" hint-placeholder-val="{{ false }}">
+  <div data-screen-label="類似自治体との比較" style="animation:fadeUp .35s ease both;">
+    <div style="margin-bottom:20px;">
+      <h1 style="margin:0 0 6px; font-size:24px; font-weight:700;">類似自治体との比較</h1>
+      <p style="margin:0; color:#5C6B77; font-size:13.5px;">人口15〜25万人の類似規模の市と、規模・1人あたり歳出・歳出構成を比べます（ダミーデータ）。</p>
+    </div>
+
+    <section style="background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:20px 24px; margin-bottom:16px;">
+      <div data-mq="sim-h" style="display:grid; grid-template-columns:minmax(120px,1.2fr) 80px 100px 110px 2fr; gap:12px; font-size:11px; color:#5C6B77; border-bottom:1px solid #DFE7EC; padding-bottom:8px;">
+        <span>自治体</span><span style="text-align:right;">人口</span><span style="text-align:right;">一般会計</span><span style="text-align:right;">1人あたり歳出</span><span>歳出構成（ホバー／タップで内訳）</span>
+      </div>
+      <sc-for list="{{ similarRows }}" as="sr" hint-placeholder-count="5">
+        <div data-mq="sim" style="display:grid; grid-template-columns:minmax(120px,1.2fr) 80px 100px 110px 2fr; gap:12px; padding:12px 8px; border-bottom:1px solid #ECF2F6; font-size:13px; align-items:center; background:{{ sr.bg }}; border-radius:8px;">
+          <span style="font-weight:{{ sr.fw }}; display:inline-flex; align-items:center; gap:8px;">{{ sr.name }}<span style="font-size:10.5px; color:#0F76A3; font-weight:700;">{{ sr.badge }}</span></span>
+          <span style="font-family:'IBM Plex Mono',monospace; text-align:right;">{{ sr.pop }}</span>
+          <span style="font-family:'IBM Plex Mono',monospace; text-align:right;">{{ sr.totalFmt }}</span>
+          <span style="font-family:'IBM Plex Mono',monospace; text-align:right; font-weight:600;">{{ sr.perCap }}</span>
+          <span style="display:flex; height:16px; border-radius:999px; overflow:hidden; background:#ECF2F6;">
+            <sc-for list="{{ sr.segs }}" as="sg" hint-placeholder-count="5">
+              <span data-anim="bar" onMouseMove="{{ sg.tipMove }}" onClick="{{ sg.tipMove }}" onMouseLeave="{{ hideTip }}" style="width:{{ sg.w }}%; background:{{ sg.sw }}; cursor:pointer;"></span>
+            </sc-for>
+          </span>
+        </div>
+      </sc-for>
+      <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:12px; font-size:11.5px; color:#5C6B77;">
+        <sc-for list="{{ simLegend }}" as="sl" hint-placeholder-count="5">
+          <span style="display:inline-flex; align-items:center; gap:5px;"><span style="width:10px; height:10px; border-radius:3px; background:{{ sl.sw }};"></span>{{ sl.name }}</span>
+        </sc-for>
+      </div>
+    </section>
+
+    <div style="display:flex; gap:6px; flex-wrap:wrap;">
+      <span style="font-size:11.5px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:3px 11px;">出典：財政状況資料集（総務省）</span>
+      <span style="font-size:11.5px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:3px 11px;">地方財政状況調査（決算統計）</span>
+    </div>
+    <p style="margin:12px 2px 0; font-size:12px; color:#5C6B77;">1人あたり歳出が高い＝非効率とは限りません。面積・高齢化率・保有施設などの条件が異なります。</p>
+  </div>
+  </sc-if>
+
+  <!-- ==== データ出典・更新日 ==== -->
+  <!-- ==== 基本情報 ==== -->
+  <sc-if value="{{ isBasic }}" hint-placeholder-val="{{ false }}">
+  <div data-screen-label="基本情報" style="animation:fadeUp .35s ease both;">
+    <div style="margin-bottom:20px;">
+      <h1 style="margin:0 0 4px; font-size:28px; font-weight:700;">{{ basicTitle }}</h1>
+      <p style="margin:0; color:#5C6B77; font-size:13.5px;">{{ basicSub }}</p>
+    </div>
+
+    <div data-mq="bfacts" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px,1fr)); gap:14px; margin-bottom:22px;">
+      <sc-for list="{{ basicFacts }}" as="bf" hint-placeholder-count="4">
+        <section style="background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; padding:16px 18px;">
+          <div style="font-size:12px; color:#5C6B77; margin-bottom:5px;">{{ bf.label }}</div>
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:22px; font-weight:600;">{{ bf.v }}</div>
+          <div style="font-size:11.5px; color:#5C6B77; margin-top:3px;">{{ bf.note }}</div>
+        </section>
+      </sc-for>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(340px,1fr)); gap:18px;">
+      <section style="background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:22px 24px;">
+        <h2 style="margin:0 0 16px; font-size:16px; font-weight:700;">人口動態</h2>
+        <div style="display:flex; align-items:stretch; gap:10px; height:150px;">
+          <sc-for list="{{ basicPopTrend }}" as="pt" hint-placeholder-count="5">
+            <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; gap:5px;">
+              <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#3A4750;">{{ pt.v }}</span>
+              <div style="width:100%; max-width:46px; height:100px; display:flex; align-items:flex-end; justify-content:center; flex-shrink:0;">
+                <div style="width:100%; height:{{ pt.h }}%; background:{{ pt.bg }}; border-radius:6px 6px 0 0; transition:height .5s ease;"></div>
+              </div>
+              <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#5C6B77;">{{ pt.y }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(140px,1fr)); gap:10px; margin-top:16px;">
+          <sc-for list="{{ basicPopStats }}" as="ps" hint-placeholder-count="4">
+            <div style="background:#F7FAFC; border-radius:10px; padding:10px 12px;">
+              <div style="font-size:11.5px; color:#5C6B77; margin-bottom:3px;">{{ ps.label }}</div>
+              <div style="font-family:'IBM Plex Mono',monospace; font-size:16px; font-weight:600;">{{ ps.v }}</div>
+            </div>
+          </sc-for>
+        </div>
+      </section>
+
+      <section style="background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:22px 24px;">
+        <h2 style="margin:0 0 16px; font-size:16px; font-weight:700;">産業</h2>
+        <sc-for list="{{ basicIndustry }}" as="ind" hint-placeholder-count="3">
+          <div style="margin-bottom:12px;">
+            <div style="display:flex; justify-content:space-between; gap:10px; font-size:12.5px; margin-bottom:4px;">
+              <span style="color:#14181C;">{{ ind.name }}</span>
+              <span style="font-family:'IBM Plex Mono',monospace; color:#3A4750;">{{ ind.share }}</span>
+            </div>
+            <div style="height:8px; background:#ECF2F6; border-radius:999px; overflow:hidden;">
+              <div style="width:{{ ind.w }}%; height:100%; background:{{ ind.sw }}; border-radius:999px;"></div>
+            </div>
+          </div>
+        </sc-for>
+        <div style="font-size:12px; color:#5C6B77; font-weight:700; margin:16px 0 8px;">特色ある産業・地場産業</div>
+        <div style="display:flex; flex-wrap:wrap; gap:6px;">
+          <sc-for list="{{ basicSpecialties }}" as="sp" hint-placeholder-count="4">
+            <span style="font-size:12px; border:1px solid #C6D2DA; color:#3A4750; border-radius:999px; padding:4px 12px;">{{ sp.name }}</span>
+          </sc-for>
+        </div>
+      </section>
+
+      <section style="background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:22px 24px;">
+        <h2 style="margin:0 0 10px; font-size:16px; font-weight:700;">{{ basicLeaderTitle }}</h2>
+        <div style="display:flex; flex-direction:column;">
+          <sc-for list="{{ basicLeaders }}" as="ld" hint-placeholder-count="4">
+            <div data-mq="bleader" style="display:flex; gap:14px; align-items:baseline; padding:10px 0; border-bottom:1px solid #ECF2F6;">
+              <span style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#5C6B77; width:128px; flex-shrink:0;">{{ ld.term }}</span>
+              <span style="font-size:14px; font-weight:{{ ld.fw }}; color:#14181C;">{{ ld.name }}</span>
+              <span style="font-size:12px; color:#5C6B77;">{{ ld.note }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </section>
+
+      <section style="background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:22px 24px;">
+        <h2 style="margin:0 0 16px; font-size:16px; font-weight:700;">気候</h2>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(140px,1fr)); gap:10px;">
+          <sc-for list="{{ basicClimate }}" as="cl" hint-placeholder-count="4">
+            <div style="background:#F7FAFC; border-radius:10px; padding:10px 12px;">
+              <div style="font-size:11.5px; color:#5C6B77; margin-bottom:3px;">{{ cl.label }}</div>
+              <div style="font-family:'IBM Plex Mono',monospace; font-size:16px; font-weight:600;">{{ cl.v }}</div>
+            </div>
+          </sc-for>
+        </div>
+        <p style="font-size:12.5px; color:#5C6B77; line-height:1.8; margin:14px 0 0;">{{ basicClimateNote }}</p>
+      </section>
+    </div>
+
+    <div style="display:flex; gap:6px; flex-wrap:wrap; margin-top:22px;">
+      <span style="font-size:11.5px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:3px 11px;">出典：国勢調査（総務省統計局）</span>
+      <span style="font-size:11.5px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:3px 11px;">経済センサス</span>
+      <span style="font-size:11.5px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:3px 11px;">気象庁 平年値</span>
+      <span style="font-size:11.5px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:3px 11px;">一部ダミー値を含みます</span>
+    </div>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ isSources }}" hint-placeholder-val="{{ false }}">
+  <div data-screen-label="データ出典・更新日" style="animation:fadeUp .35s ease both;">
+    <button onClick="{{ goDash }}" style="border:none; background:none; color:#5C6B77; font-size:13px; cursor:pointer; padding:0; margin-bottom:14px; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="color:#1798D0;">← ダッシュボードへ戻る</button>
+    <div style="margin-bottom:20px;">
+      <h1 style="margin:0 0 6px; font-size:24px; font-weight:700;">データ出典・更新日</h1>
+      <p style="margin:0; color:#5C6B77; font-size:13.5px;">このサイトで使用している一次資料と最終確認日の一覧です。すべての数値はこれらの資料まで遡れます。</p>
+    </div>
+    <section style="background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:20px 24px;">
+      <div data-mq="src" style="display:grid; grid-template-columns:minmax(200px,2fr) 70px minmax(140px,1.4fr) 100px minmax(160px,1.6fr); gap:12px; font-size:11px; color:#5C6B77; border-bottom:1px solid #DFE7EC; padding-bottom:8px;">
+        <span>資料名</span><span>種別</span><span>発行元</span><span>最終確認日</span><span>使用箇所</span>
+      </div>
+      <sc-for list="{{ sourcesRows }}" as="src" hint-placeholder-count="10">
+        <div data-mq="src" style="display:grid; grid-template-columns:minmax(200px,2fr) 70px minmax(140px,1.4fr) 100px minmax(160px,1.6fr); gap:12px; padding:11px 0; border-bottom:1px solid #ECF2F6; font-size:13px; align-items:center;">
+          <a href="#" style="font-weight:600;">{{ src.title }} ↗</a>
+          <span><span style="display:inline-block; font-size:10.5px; font-weight:600; color:#0F76A3; border:1px solid #B9E0F2; border-radius:999px; padding:1px 9px;">{{ src.type }}</span></span>
+          <span style="font-size:12.5px; color:#5C6B77;">{{ src.org }}</span>
+          <span style="font-family:'IBM Plex Mono',monospace; font-size:12px;">{{ src.date }}</span>
+          <span style="font-size:12px; color:#5C6B77;">{{ src.used }}</span>
+        </div>
+      </sc-for>
+      <p style="margin:12px 2px 0; font-size:12px; color:#5C6B77;">本プロトタイプでは資料名・日付はダミーです。実運用ではここから各資料の原本へリンクします。</p>
+    </section>
+  </div>
+  </sc-if>
+
+  </main>
+
+  <footer data-mq-pad="" style="border-top:1px solid #DFE7EC; padding:16px 28px; font-size:12px; color:#5C6B77; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+    <span>予算トレース — プロトタイプ。数値・事業名・資料名はすべてダミーです。<button onClick="{{ goSources }}" style="border:none; background:none; padding:0; margin-left:8px; color:#1798D0; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="text-decoration:underline;">データ出典・更新日一覧 →</button></span>
+    <span style="font-family:'IBM Plex Mono',monospace;">SOURCE: 甲府市 R8年度当初予算（参考）</span>
+  </footer>
+</div>
+</sc-if>
+
+<sc-if value="{{ fyOpen }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ fyClose }}" style="position:fixed; inset:0; z-index:60;"></div>
+  <div style="position:fixed; left:{{ fyX }}px; top:{{ fyY }}px; transform:translateX(-100%); background:#FFFFFF; border:1px solid #DFE7EC; border-radius:12px; box-shadow:0 10px 28px rgba(20,24,28,0.16); padding:6px; z-index:61; min-width:232px;">
+    <div style="font-size:10.5px; color:#5C6B77; padding:6px 12px 4px; letter-spacing:0.08em; font-family:'IBM Plex Mono',monospace;">年度を切り替え</div>
+    <sc-for list="{{ fyOptions }}" as="fo" hint-placeholder-count="3">
+      <button onClick="{{ fo.pick }}" style="display:flex; width:100%; align-items:center; justify-content:space-between; gap:12px; border:none; background:{{ fo.bg }}; border-radius:8px; padding:9px 12px; cursor:pointer; text-align:left; font-family:'IBM Plex Sans JP',sans-serif;" style-hover="background:#ECF2F6;">
+        <span style="font-size:13px; font-weight:{{ fo.fw }}; color:#14181C;">{{ fo.label }}</span>
+        <span style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#5C6B77; white-space:nowrap;">{{ fo.note }}</span>
+      </button>
+    </sc-for>
+  </div>
+</sc-if>
+
+<sc-if value="{{ tipShow }}" hint-placeholder-val="{{ false }}">
+  <div style="position:fixed; left:{{ tipX }}px; top:{{ tipY }}px; transform:translate(-50%,-100%); background:#14181C; color:#F7FAFC; border-radius:9px; padding:8px 12px; font-size:12.5px; line-height:1.5; pointer-events:none; z-index:999; box-shadow:0 6px 18px rgba(20,24,28,0.25); white-space:nowrap;">
+    <span style="display:flex; align-items:center; gap:7px; font-weight:700;"><span style="width:9px; height:9px; border-radius:3px; background:{{ tipSw }};"></span>{{ tipTitle }}</span>
+    <span style="display:block; font-family:'IBM Plex Mono',monospace;">{{ tipAmtLine }}</span>
+    <span style="display:block; max-width:270px; white-space:normal; font-weight:400; opacity:0.92; line-height:1.65;">{{ tipDesc }}</span>
+  </div>
+</sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;colorMode&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;カラフル&quot;, &quot;青系&quot;], &quot;default&quot;: &quot;カラフル&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;表示&quot;}, &quot;showEvidence&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;表示&quot;}}">
+const P_BLUE = ['#55BBE4','#31586E','#6FC5E9','#84A0B0','#0F5E84','#A9D9EC','#527E96','#C5DFEC','#0C82B4','#93AEBD','#8494A0','#3EA9D8'];
+// カラフルモード：Okabe-Ito（色覚多様性に配慮した配色）ベース
+const P_VIVID = ['#0072B2','#E69F00','#009E73','#CC79A7','#56B4E9','#D55E00','#7B5AA6','#8C564B','#66A61E','#B8A016','#17A2B8','#5C6B77'];
+let PALETTE = P_VIVID;
+
+const REGIONS = [
+  { name:'北海道', color:'#DCE4EE', prefs:[['北海道',14,1]] },
+  { name:'東北', color:'#D9E8E1', prefs:[['青森県',14,2],['秋田県',13,3],['岩手県',14,3],['山形県',13,4],['宮城県',14,4],['福島県',13,5]] },
+  { name:'関東', color:'#F0E4D3', prefs:[['群馬県',12,6],['栃木県',13,6],['茨城県',14,6],['埼玉県',12,7],['千葉県',14,7],['東京都',13,7],['神奈川県',12,8]] },
+  { name:'中部', color:'#E6DFEE', prefs:[['新潟県',12,5],['富山県',10,6],['石川県',9,6],['福井県',9,7],['長野県',11,6],['岐阜県',10,7],['山梨県',11,7],['静岡県',11,8],['愛知県',10,8]] },
+  { name:'近畿', color:'#DCE9EC', prefs:[['滋賀県',8,7],['京都府',7,7],['兵庫県',6,7],['大阪府',7,8],['奈良県',8,8],['三重県',9,8],['和歌山県',7,9]] },
+  { name:'中国', color:'#EAE8D6', prefs:[['鳥取県',5,7],['島根県',4,7],['岡山県',5,8],['広島県',4,8],['山口県',3,8]] },
+  { name:'四国', color:'#F0DEDC', prefs:[['香川県',5,9],['徳島県',6,9],['愛媛県',4,9],['高知県',5,10]] },
+  { name:'九州・沖縄', color:'#E4E0D6', prefs:[['福岡県',2,9],['佐賀県',1,9],['長崎県',1,10],['大分県',3,9],['熊本県',2,10],['宮崎県',3,10],['鹿児島県',2,11],['沖縄県',1,13]] },
+];
+
+const YAMANASHI_MUNIS = ['甲府市','富士吉田市','都留市','山梨市','大月市','韮崎市','南アルプス市','北杜市','甲斐市','笛吹市','上野原市','甲州市','中央市','市川三郷町','身延町','富士川町','昭和町','忍野村','山中湖村','富士河口湖町'];
+
+const KOFU = {
+  // 款レベルは甲府市公表の令和8年度当初予算（総額918億円・過去最大）の実データ。項以下の内訳は予算書PDF未取込のため按分推計
+  name:'甲府市', total: 918.0, yoy:'+4.2%', year:'令和8年度 当初予算', pop:186000, households:89000,
+  council: { body:'甲府市議会', seats:32, decided:'令和8年3月定例会（令和8年3月24日）',
+    vote:{ approve:26, oppose:4, absent:2 },
+    parties:[
+      { name:'創政こうふ（自民党系）', seats:9, stance:'賛成' },
+      { name:'政友クラブ（自民党系）', seats:7, stance:'賛成' },
+      { name:'公明党', seats:5, stance:'賛成' },
+      { name:'立憲・市民フォーラム', seats:5, stance:'賛成' },
+      { name:'日本共産党', seats:4, stance:'反対' },
+      { name:'無所属', seats:2, stance:'退席・欠席' } ] },
+  revenue: [
+    { name:'市税', v:317.0, children:[
+      { name:'市民税', v:139.8 },{ name:'固定資産税', v:135.8 },{ name:'都市計画税', v:19.2 },{ name:'市たばこ税', v:13.5 },{ name:'軽自動車税', v:4.9 },{ name:'その他市税', v:3.8 }] },
+    { name:'国庫支出金', v:173.0 },
+    { name:'地方交付税', v:111.0 },
+    { name:'県支出金', v:79.0 },
+    { name:'地方消費税交付金', v:60.0 },
+    { name:'繰入金', v:51.0 },
+    { name:'寄附金', v:45.0 },
+    { name:'市債', v:33.0 },
+    { name:'諸収入・その他', v:49.0 },
+  ],
+  expenditure: [
+    { name:'民生費', v:389.0, children:[
+      { name:'社会福祉費', v:142.5 },
+      { name:'児童福祉費', v:151.0, children:[
+        { name:'児童福祉総務費', v:40.1 },
+        { name:'児童措置費', v:68.4, children:[
+          { name:'扶助費', v:58.4 },{ name:'委託料', v:6.1 },{ name:'負担金、補助及び交付金', v:2.8 },{ name:'需用費', v:1.1 }] },
+        { name:'保育所費', v:32.4 },
+        { name:'児童福祉施設費', v:10.1 }] },
+      { name:'生活保護費', v:84.6 },
+      { name:'国民年金費', v:10.4 },
+      { name:'災害救助費', v:0.5 }] },
+    { name:'総務費', v:135.0, children:[{ name:'総務管理費', v:97.6 },{ name:'徴税費', v:14.0 },{ name:'企画費', v:10.0 },{ name:'戸籍住民基本台帳費', v:9.2 },{ name:'選挙費', v:3.0 },{ name:'統計調査費', v:1.2 }] },
+    { name:'衛生費', v:101.0, children:[{ name:'保健衛生費', v:47.4 },{ name:'清掃費', v:53.6 }] },
+    { name:'教育費', v:88.0, children:[{ name:'教育総務費', v:18.0 },{ name:'小学校費', v:21.1 },{ name:'中学校費', v:12.5 },{ name:'幼稚園費', v:6.0 },{ name:'社会教育費', v:14.5 },{ name:'保健体育費', v:15.9 }] },
+    { name:'公債費', v:80.0, children:[{ name:'元金', v:70.0 },{ name:'利子', v:9.7 },{ name:'公債諸費', v:0.3 }] },
+    { name:'土木費', v:67.0, children:[
+      { name:'道路橋りょう費', v:24.2, children:[
+        { name:'道路橋りょう総務費', v:3.6 },
+        { name:'道路維持費', v:12.4, children:[{ name:'工事請負費', v:8.3 },{ name:'委託料', v:2.6 },{ name:'需用費', v:0.9 },{ name:'原材料費', v:0.6 }] },
+        { name:'道路新設改良費', v:6.1 },
+        { name:'橋りょう維持費', v:2.1 }] },
+      { name:'都市計画費', v:27.8 },{ name:'住宅費', v:7.8 },{ name:'土木管理費', v:7.2 }] },
+    { name:'消防費', v:25.0, children:[{ name:'常備消防費', v:20.9 },{ name:'非常備消防費', v:2.1 },{ name:'消防施設費', v:2.0 }] },
+    { name:'商工費', v:14.0, children:[{ name:'商工振興費', v:9.1 },{ name:'観光費', v:4.9 }] },
+    { name:'農林水産業費', v:11.0, children:[{ name:'農業費', v:8.0 },{ name:'林業費', v:3.0 }] },
+    { name:'議会費', v:6.0 },
+    { name:'労働費', v:2.0 },
+  ],
+};
+
+const YAMANASHI = {
+  name:'山梨県', total: 5360.0, yoy:'+1.4%', year:'令和8年度 当初予算', pop:790000, households:350000,
+  council: { body:'山梨県議会', seats:37, decided:'令和8年2月定例会（令和8年3月18日）',
+    vote:{ approve:33, oppose:2, absent:2 },
+    parties:[
+      { name:'自由民主党誠心会', seats:17, stance:'賛成' },
+      { name:'未来やまなし', seats:8, stance:'賛成' },
+      { name:'無所属', seats:5, stance:'賛成3・欠席2' },
+      { name:'立憲民主党', seats:3, stance:'賛成' },
+      { name:'公明党', seats:2, stance:'賛成' },
+      { name:'日本共産党', seats:2, stance:'反対' } ] },
+  revenue: [
+    { name:'県税', v:1210.0 },{ name:'地方交付税', v:1720.0 },{ name:'国庫支出金', v:660.0 },{ name:'県債', v:480.0 },{ name:'諸収入・その他', v:1290.0 },
+  ],
+  expenditure: [
+    { name:'教育費', v:1010.0 },{ name:'民生費', v:810.0 },{ name:'公債費', v:690.0 },{ name:'土木費', v:620.0 },{ name:'商工費', v:520.0 },{ name:'総務費', v:460.0 },{ name:'農林水産業費', v:390.0 },{ name:'衛生費', v:310.0 },{ name:'警察費', v:280.0 },{ name:'その他', v:270.0 },
+  ],
+};
+
+const PROJECTS = [
+  { id:'p1', name:'保育所等運営支援事業', kan:'民生費', ko:'児童福祉費', moku:'児童措置費', dept:'子ども保育課', period:'継続（通年）',
+    themes:['子育て・教育','少子化対策'], budget:49.8, spent:13.2,
+    hosei:{ delta:1.8, reason:'物価高騰に伴う給付単価の改定・保育所等整備（国庫内示対応）' },
+    summary:'私立保育所・認定こども園等への施設型給付',
+    purpose:'保護者の就労等により保育を必要とする児童が、居住地域にかかわらず安心して質の高い保育を受けられる環境を確保する。',
+    desc:'私立保育所・認定こども園・地域型保育事業者（市内42園）への施設型給付費等の給付、副食費補足給付、保育補助者雇上支援などを実施。',
+    plan:[25,50,75,100], actual:[26.5],
+    kpis:[ { n:'待機児童数（4月1日時点）', t:'0人', a:'3人', ok:false }, { n:'保育定員', t:'5,600人', a:'5,620人', ok:true } ],
+    contracts:[
+      { to:'市内私立保育所・認定こども園（42園）', desc:'施設型給付費の給付', method:'法定給付', amt:12.1 },
+      { to:'保育団体連合会', desc:'副食費補足給付事務', method:'随意契約', amt:0.6 },
+      { to:'システム事業者', desc:'給付管理システム保守', method:'指名競争入札', amt:0.3, bid:'落札率 91.2%・応札3者' } ],
+    evidence:[
+      { title:'令和8年度 当初予算書（民生費）', type:'PDF', source:'city.kofu.yamanashi.jp', thumb:'予算書 P.132 スクリーンショット' },
+      { title:'保育所等の利用状況（月次）', type:'ページ', source:'city.kofu.yamanashi.jp', thumb:'利用状況ページ キャプチャ' },
+      { title:'子ども・子育て支援事業計画（第3期）', type:'PDF', source:'city.kofu.yamanashi.jp', thumb:'計画書 表紙' } ],
+    past:[ { y:'R5', b:45.2, e:44.8 },{ y:'R6', b:46.9, e:46.1 },{ y:'R7', b:48.4, e:47.6 } ] },
+  { id:'p2', name:'こうふ子育て応援金給付事業', kan:'民生費', ko:'児童福祉費', moku:'児童福祉総務費', dept:'子ども支援課', period:'R6〜R9',
+    themes:['少子化対策','子育て・教育'], budget:6.2, spent:1.4,
+    hosei:{ delta:0.8, reason:'応援金の対象拡大（第2子以降の加算引上げ）' },
+    summary:'第2子以降の出生世帯へ応援金を給付',
+    purpose:'出産・子育てに伴う経済的負担を軽減し、安心して第2子以降を持てる環境をつくることで出生数の反転を図る。',
+    desc:'第2子以降の出生1人につき応援金を給付（所得制限なし）。申請はオンライン完結。給付実績・効果検証は年度末に公表。',
+    plan:[20,45,75,100], actual:[22.6],
+    kpis:[ { n:'第2子以降の出生数', t:'950人', a:'912人', ok:false }, { n:'オンライン申請率', t:'90%', a:'93.2%', ok:true } ],
+    contracts:[
+      { to:'給付対象世帯（約1,150件見込）', desc:'応援金給付', method:'直接給付', amt:1.3 },
+      { to:'決済代行事業者', desc:'オンライン給付事務', method:'公募型プロポーザル', amt:0.1 } ],
+    evidence:[
+      { title:'令和8年度 当初予算書（民生費）', type:'PDF', source:'city.kofu.yamanashi.jp', thumb:'予算書 P.128 スクリーンショット' },
+      { title:'応援金給付実績（R7年度）', type:'ページ', source:'city.kofu.yamanashi.jp', thumb:'給付実績ページ キャプチャ' } ],
+    past:[ { y:'R6', b:5.4, e:5.1 },{ y:'R7', b:5.9, e:5.7 } ] },
+  { id:'p3', name:'放課後児童クラブ運営事業', kan:'民生費', ko:'児童福祉費', moku:'児童福祉総務費', dept:'子ども支援課', period:'継続（通年）',
+    themes:['子育て・教育'], budget:4.1, spent:1.0,
+    summary:'市内小学校区の放課後児童クラブ運営',
+    purpose:'就労家庭等の小学生に放課後の安全な生活・遊びの場を保障し、保護者の就労継続を支える。',
+    desc:'市内25小学校区・38クラブの運営委託、支援員の処遇改善、長期休業期間の開所時間延長を実施。',
+    plan:[25,50,75,100], actual:[24.4],
+    kpis:[ { n:'放課後児童クラブの待機児童数', t:'0人', a:'12人', ok:false }, { n:'開所クラブ数', t:'38クラブ', a:'38クラブ', ok:true } ],
+    contracts:[
+      { to:'社会福祉協議会ほか運営法人', desc:'クラブ運営委託（38クラブ）', method:'随意契約（公募）', amt:0.9 },
+      { to:'施設管理事業者', desc:'専用施設の維持管理', method:'指名競争入札', amt:0.1, bid:'落札率 89.5%・応札3者' } ],
+    evidence:[
+      { title:'令和8年度 当初予算書（民生費）', type:'PDF', source:'city.kofu.yamanashi.jp', thumb:'予算書 P.130 スクリーンショット' },
+      { title:'放課後児童クラブ一覧・空き状況', type:'ページ', source:'city.kofu.yamanashi.jp', thumb:'クラブ一覧ページ キャプチャ' } ],
+    past:[ { y:'R5', b:3.6, e:3.5 },{ y:'R6', b:3.8, e:3.7 },{ y:'R7', b:4.0, e:3.9 } ] },
+  { id:'p4', name:'道路橋りょう長寿命化事業', kan:'土木費', ko:'道路橋りょう費', moku:'道路維持費', dept:'道路河川課', period:'R4〜R13（長寿命化計画）',
+    themes:['インフラ・都市基盤','防災・安全'], budget:12.4, spent:2.2,
+    summary:'舗装・橋りょうの点検と計画的な修繕',
+    purpose:'高度成長期に整備した道路・橋りょうの老朽化に対し、事後対応から予防保全へ転換し、更新費用の平準化と安全確保を両立する。',
+    desc:'舗装修繕（約8.2km）、橋りょう定期点検（52橋）、判定区分Ⅲの橋りょう5橋の補修工事を実施。工事箇所は地図で公開。',
+    plan:[15,40,75,100], actual:[17.7],
+    kpis:[ { n:'舗装修繕延長（年間）', t:'8.2km', a:'7.9km', ok:false }, { n:'判定区分Ⅲ橋りょうの補修完了', t:'5橋', a:'2橋（3橋は工事中）', ok:false } ],
+    contracts:[
+      { to:'市内建設業者（6社・工区別）', desc:'舗装修繕工事', method:'一般競争入札', amt:1.6, bid:'落札率 92.4%・応札6者' },
+      { to:'橋梁点検コンサルタント', desc:'定期点検業務委託', method:'指名競争入札', amt:0.4, bid:'落札率 88.7%・応札4者' },
+      { to:'補修工事JV', desc:'橋りょう補修工事（2橋着手）', method:'一般競争入札', amt:0.2, bid:'落札率 94.1%・応札2者' } ],
+    evidence:[
+      { title:'令和8年度 当初予算書（土木費）', type:'PDF', source:'city.kofu.yamanashi.jp', thumb:'予算書 P.156 スクリーンショット' },
+      { title:'道路メンテナンス年報', type:'PDF', source:'city.kofu.yamanashi.jp', thumb:'年報 橋りょう健全度グラフ' },
+      { title:'工事発注情報・入札結果', type:'ページ', source:'city.kofu.yamanashi.jp', thumb:'入札結果ページ キャプチャ' } ],
+    past:[ { y:'R5', b:10.8, e:10.2 },{ y:'R6', b:11.5, e:10.9 },{ y:'R7', b:12.0, e:11.3 } ] },
+  { id:'p5', name:'中心市街地にぎわい創出事業', kan:'商工費', ko:'商工振興費', moku:'商工振興費', dept:'産業振興課', period:'R7〜R11',
+    themes:['産業・にぎわい'], budget:3.8, spent:0.7,
+    hosei:{ delta:0.5, reason:'プレミアム付商品券の発行支援を追加（物価高騰対策）' },
+    summary:'甲府駅周辺のリノベーション・出店支援',
+    purpose:'甲府駅南口〜中央商店街エリアの空き店舗を減らし、歩行者通行量と若年層の出店を回復させる。',
+    desc:'空き店舗リノベーション補助（上限500万円）、チャレンジショップ運営、オープンストリート社会実験（年4回）を実施。',
+    plan:[18,45,72,100], actual:[18.4],
+    kpis:[ { n:'歩行者通行量（対R6比）', t:'+10%', a:'+4.2%', ok:false }, { n:'空き店舗への新規出店', t:'12件', a:'14件', ok:true } ],
+    contracts:[
+      { to:'出店者・物件オーナー（12件）', desc:'リノベーション補助金', method:'公募・審査', amt:0.5 },
+      { to:'まちづくり会社', desc:'チャレンジショップ運営委託', method:'公募型プロポーザル', amt:0.2 } ],
+    evidence:[
+      { title:'令和8年度 当初予算書（商工費）', type:'PDF', source:'city.kofu.yamanashi.jp', thumb:'予算書 P.148 スクリーンショット' },
+      { title:'中心市街地活性化基本計画 進捗評価', type:'PDF', source:'city.kofu.yamanashi.jp', thumb:'通行量調査グラフ' } ],
+    past:[ { y:'R7', b:3.2, e:2.8 } ] },
+  { id:'p6', name:'地域防災力強化事業', kan:'消防費', ko:'非常備消防費', moku:'非常備消防費', dept:'防災企画課', period:'継続（通年）',
+    themes:['防災・安全'], budget:2.6, spent:0.6,
+    summary:'自主防災組織・備蓄・訓練の底上げ',
+    purpose:'南海トラフ地震等の大規模災害に備え、自助・共助の中核となる自主防災組織の活動率と資機材整備率を高める。',
+    desc:'自主防災組織への資機材購入補助、避難所備蓄品の計画更新、総合防災訓練・地区別訓練の実施。',
+    plan:[20,55,80,100], actual:[23.1],
+    kpis:[ { n:'自主防災組織の活動率', t:'85%', a:'78%', ok:false }, { n:'備蓄品の更新計画達成率', t:'100%', a:'100%', ok:true } ],
+    contracts:[
+      { to:'自主防災組織（86団体）', desc:'資機材整備補助', method:'交付決定', amt:0.4 },
+      { to:'防災用品納入業者', desc:'備蓄品更新（食料・毛布等）', method:'指名競争入札', amt:0.2, bid:'落札率 90.8%・応札5者' } ],
+    evidence:[
+      { title:'令和8年度 当初予算書（消防費）', type:'PDF', source:'city.kofu.yamanashi.jp', thumb:'予算書 P.162 スクリーンショット' },
+      { title:'地域防災計画・訓練実施報告', type:'ページ', source:'city.kofu.yamanashi.jp', thumb:'訓練報告ページ キャプチャ' } ],
+    past:[ { y:'R5', b:2.2, e:2.1 },{ y:'R6', b:2.4, e:2.2 },{ y:'R7', b:2.5, e:2.4 } ] },
+  { id:'p7', name:'ごみ処理施設維持管理事業', kan:'衛生費', ko:'清掃費', moku:'清掃費', dept:'環境総室', period:'継続（通年）',
+    themes:['環境・循環'], budget:9.7, spent:2.5,
+    hosei:{ delta:0.8, reason:'燃料費・電気料金の高騰への対応' },
+    summary:'クリーンセンターの運転・基幹改良',
+    purpose:'一般廃棄物を安定的・衛生的に処理しつつ、焼却熱の発電利用により施設の環境負荷とコストを低減する。',
+    desc:'焼却施設の運転管理委託、基幹的設備改良工事（2か年）、最終処分場の水質モニタリングを実施。',
+    plan:[25,50,75,100], actual:[25.8],
+    kpis:[ { n:'リサイクル率', t:'28%', a:'24.6%', ok:false }, { n:'施設稼働率（計画停止除く）', t:'95%', a:'97.1%', ok:true } ],
+    contracts:[
+      { to:'施設運転管理事業者', desc:'運転管理業務委託（長期包括）', method:'総合評価一般競争入札', amt:2.1, bid:'総合評価・応札2者' },
+      { to:'プラントメーカー', desc:'基幹的設備改良工事', method:'随意契約（技術特定）', amt:0.4 } ],
+    evidence:[
+      { title:'令和8年度 当初予算書（衛生費）', type:'PDF', source:'city.kofu.yamanashi.jp', thumb:'予算書 P.142 スクリーンショット' },
+      { title:'一般廃棄物処理実態調査 結果', type:'PDF', source:'city.kofu.yamanashi.jp', thumb:'処理量推移グラフ' } ],
+    past:[ { y:'R5', b:8.9, e:8.8 },{ y:'R6', b:9.2, e:9.0 },{ y:'R7', b:9.5, e:9.4 } ] },
+  { id:'p8', name:'高齢者見守り・地域包括ケア推進事業', kan:'民生費', ko:'社会福祉費', moku:'社会福祉費', dept:'長寿介護課', period:'継続（通年）',
+    themes:['健康・福祉'], budget:1.9, spent:0.5,
+    summary:'地域包括支援センターと見守りネットワーク',
+    purpose:'独居高齢者等が住み慣れた地域で安心して暮らし続けられるよう、医療・介護・生活支援の連携体制を維持・強化する。',
+    desc:'市内9か所の地域包括支援センター運営委託、見守り協定事業者ネットワークの拡充、認知症初期集中支援チームの運営。',
+    plan:[25,50,75,100], actual:[26.3],
+    kpis:[ { n:'見守りネットワーク登録者数', t:'3,000人', a:'2,750人', ok:false }, { n:'包括支援センター相談件数', t:'12,000件', a:'13,400件', ok:true } ],
+    contracts:[
+      { to:'社会福祉法人等（9法人）', desc:'地域包括支援センター運営委託', method:'公募型プロポーザル', amt:0.5 } ],
+    evidence:[
+      { title:'令和8年度 当初予算書（民生費）', type:'PDF', source:'city.kofu.yamanashi.jp', thumb:'予算書 P.124 スクリーンショット' },
+      { title:'高齢者保健福祉計画 進捗報告', type:'PDF', source:'city.kofu.yamanashi.jp', thumb:'計画進捗 評価表' } ],
+    past:[ { y:'R5', b:1.7, e:1.7 },{ y:'R6', b:1.8, e:1.8 },{ y:'R7', b:1.9, e:1.8 } ] },
+];
+
+// 節×事業マッピング — 各事業の予算を節別に配分（実運用では予算書の節内訳から取得・ここではダミー）
+const PROJ_SETSU = {
+  p1: { '負担金、補助及び交付金': 0.62, '委託料': 0.30, '需用費': 0.08 },
+  p2: { '負担金、補助及び交付金': 0.85, '需用費': 0.10, '報酬・給料等': 0.05 },
+  p3: { '委託料': 0.72, '需用費': 0.18, '報酬・給料等': 0.10 },
+  p4: { '工事請負費': 0.78, '委託料': 0.17, '需用費': 0.05 },
+  p5: { '負担金、補助及び交付金': 0.45, '委託料': 0.38, '需用費': 0.17 },
+  p6: { '需用費': 0.40, '負担金、補助及び交付金': 0.35, '報酬・給料等': 0.25 },
+  p7: { '委託料': 0.66, '工事請負費': 0.22, '需用費': 0.12 },
+  p8: { '委託料': 0.58, '報酬・給料等': 0.30, '需用費': 0.12 },
+};
+
+const THEMES = [
+  { name:'子育て・教育', intent:'保育の受け皿確保と放課後の居場所づくりを両輪に、「子育てするなら甲府」を掲げて関連予算を前年度比+8.2%と重点配分しています。', ids:['p1','p2','p3'] },
+  { name:'少子化対策', intent:'経済的負担の軽減（応援金）と保育環境の充実を組み合わせ、出生数反転を狙う分野横断のテーマです。', ids:['p2','p1'] },
+  { name:'インフラ・都市基盤', intent:'新設から予防保全へ。長寿命化計画に基づき、修繕費を平準化しながら道路・橋りょうの安全を確保します。', ids:['p4'] },
+  { name:'防災・安全', intent:'大規模地震に備えた自助・共助の強化と、インフラの耐震・保全を一体で進めます。', ids:['p6','p4'] },
+  { name:'環境・循環', intent:'ごみ処理の安定運転と施設改良による省エネ・発電利用で、環境負荷とコストの同時低減を図ります。', ids:['p7'] },
+  { name:'健康・福祉', intent:'地域包括ケアの体制維持を軸に、高齢者が地域で暮らし続けられる支援ネットワークを広げます。', ids:['p8'] },
+  { name:'産業・にぎわい', intent:'中心市街地の空き店舗解消と若年層の出店支援で、まちなかの回遊とにぎわいを取り戻します。', ids:['p5'] },
+];
+
+// 用語解説（インラインヘルプ）
+const GLOSS = {
+  '歳入':'1年間に入ってくるお金。税金、国・県からの交付金・補助金、借入（市債）などで構成されます。',
+  '歳出':'1年間に使うお金。予算では歳入と同額になるように編成されます。',
+  '款・項・目・節':'予算書の階層構造。款（大分類）→ 項（中分類）→ 目（小分類）→ 節（支出の性質別）の順に細かくなります。',
+  '予算現額':'当初予算に補正予算（追加・減額）や前年度からの繰越を反映した、現在時点の予算総額。執行率の分母になります。',
+  '執行率':'予算現額のうち、実際に支出した割合。年度末に向けて100%に近づいていきます。',
+  '不用額':'使わずに残った予算。翌年度への繰越分を含む場合があります。理由は決算資料で確認できます。',
+};
+
+// 類似自治体比較（人口15〜25万の類似規模、ダミー）
+const SIM_MIX_COLS = ['民生費','教育費','土木費','公債費','その他'];
+const SIMILAR = [
+  { name:'甲府市', self:true, pop:'18.6万人', total:918.0, perCap:'49.4万円', mix:[42.4,9.6,7.3,8.7,32.0] },
+  { name:'松本市', pop:'23.9万人', total:1102.0, perCap:'46.1万円', mix:[36.2,12.4,10.8,7.9,32.7] },
+  { name:'沼津市', pop:'18.7万人', total:842.0, perCap:'45.0万円', mix:[38.1,9.8,11.2,8.4,32.5] },
+  { name:'上田市', pop:'15.3万人', total:688.0, perCap:'45.0万円', mix:[37.4,11.6,9.9,9.6,31.5] },
+  { name:'類似団体平均', pop:'19.3万人', total:877.0, perCap:'45.4万円', mix:[37.2,11.3,10.6,8.6,32.3] },
+];
+
+// データ出典・更新日一覧（ダミー）
+const SOURCES = [
+  { title:'令和8年度 当初予算書', type:'PDF', org:'甲府市 財政課', date:'2026-07-01', used:'ダッシュボード／款・項・目・節' },
+  { title:'令和8年度 補正予算書（第1号）', type:'PDF', org:'甲府市 財政課', date:'2026-07-01', used:'予算の変遷／事業詳細' },
+  { title:'令和8年度 施政方針', type:'PDF', org:'甲府市', date:'2026-07-01', used:'政策テーマ（政策意図サマリー）' },
+  { title:'第七次甲府市総合計画', type:'PDF', org:'甲府市', date:'2026-06-15', used:'政策テーマ' },
+  { title:'令和6年度 歳入歳出決算書', type:'PDF', org:'甲府市 会計課', date:'2026-06-15', used:'過年度実績' },
+  { title:'主要な施策の成果報告書（R6・R7）', type:'PDF', org:'甲府市', date:'2026-06-15', used:'過年度実績／成果指標（KPI）' },
+  { title:'監査委員 決算審査意見書', type:'PDF', org:'甲府市監査委員', date:'2026-06-15', used:'過年度実績' },
+  { title:'本会議 会議録（3月・6月定例会）', type:'ページ', org:'甲府市議会', date:'2026-07-01', used:'議会の構成／予算の変遷' },
+  { title:'入札・契約情報（入札結果の公表）', type:'ページ', org:'甲府市 契約課', date:'2026-07-01', used:'事業詳細（契約・支出先）' },
+  { title:'財政状況資料集・地方財政状況調査', type:'PDF', org:'総務省', date:'2026-06-01', used:'類似自治体との比較' },
+  { title:'国勢調査 人口・世帯数', type:'統計', org:'総務省統計局', date:'2026-06-01', used:'1人あたり換算' },
+  { title:'都道府県形状（japanese-prefectures）', type:'SVG', org:'Geolonia（GFDL）', date:'2026-07-10', used:'トップページの地図' },
+  { title:'市区町村形状（japan-topography）', type:'GeoJSON', org:'国土数値情報（国土交通省）を加工／SMRI', date:'2026-07-10', used:'トップページの地図' },
+];
+
+// 基本情報（人口動態・面積・産業・歴代首長・気候）※数値はダミーを含む
+const BASIC_INFO = {
+  '甲府市': {
+    sub:'山梨県の県庁所在地 ・ 甲府盆地の中央に位置',
+    facts: [
+      { label:'面積', v:'212.47 km²', note:'南北に細長い市域' },
+      { label:'総人口', v:'18.6万人', note:'令和7年推計' },
+      { label:'世帯数', v:'9.3万世帯', note:'1世帯平均 約2.0人' },
+      { label:'人口密度', v:'875人/km²', note:'市街地は盆地中央に集中' },
+    ],
+    popTrend: [['1985',20.2],['1995',19.7],['2005',19.9],['2015',19.3],['2025',18.6]],
+    popStats: [
+      { label:'高齢化率（65歳以上）', v:'31.2%' },
+      { label:'年少人口率（15歳未満）', v:'10.8%' },
+      { label:'年間出生数', v:'約1,100人' },
+      { label:'社会増減（転入−転出）', v:'−320人/年' },
+    ],
+    industry: [
+      { name:'第3次産業（商業・サービス等）', share:74.9 },
+      { name:'第2次産業（製造・建設）', share:21.6 },
+      { name:'第1次産業（農業等）', share:3.5 },
+    ],
+    specialties: ['宝飾・ジュエリー（国内有数の集積地）','ワイン醸造','果樹（ぶどう・もも）','機械電子部品','観光（昇仙峡・武田神社）'],
+    leaderTitle:'歴代市長（近年）',
+    leaders: [
+      { term:'2015 −（現職）', name:'樋口 雄一', note:'3期目' },
+      { term:'2003 − 2015', name:'宮島 雅展', note:'3期' },
+      { term:'1991 − 2003', name:'山本 栄彦', note:'3期' },
+      { term:'1979 − 1991', name:'原 忠三', note:'3期' },
+    ],
+    climate: [
+      { label:'年平均気温', v:'15.1℃' },
+      { label:'年降水量', v:'1,161 mm' },
+      { label:'年間日照時間', v:'2,225時間' },
+      { label:'猛暑日（年間）', v:'約20日' },
+    ],
+    climateNote:'甲府盆地特有の内陸性気候。夏は全国有数の猛暑となる一方で降水量は少なく、長い日照時間が果樹栽培やワイン醸造を支えています。冬は放射冷却により朝晩の冷え込みが強くなります。',
+  },
+  '山梨県': {
+    sub:'中部地方（甲信越） ・ 県庁所在地は甲府市',
+    facts: [
+      { label:'面積', v:'4,465 km²', note:'約8割を山地が占める' },
+      { label:'総人口', v:'79.5万人', note:'令和7年推計' },
+      { label:'世帯数', v:'35.4万世帯', note:'1世帯平均 約2.2人' },
+      { label:'人口密度', v:'178人/km²', note:'可住地は盆地部に集中' },
+    ],
+    popTrend: [['1985',83.3],['1995',88.1],['2005',88.4],['2015',83.5],['2025',79.5]],
+    popStats: [
+      { label:'高齢化率（65歳以上）', v:'31.7%' },
+      { label:'年少人口率（15歳未満）', v:'10.9%' },
+      { label:'年間出生数', v:'約4,400人' },
+      { label:'社会増減（転入−転出）', v:'+210人/年' },
+    ],
+    industry: [
+      { name:'第3次産業（商業・サービス等）', share:66.5 },
+      { name:'第2次産業（製造・建設）', share:27.3 },
+      { name:'第1次産業（農業等）', share:6.2 },
+    ],
+    specialties: ['果樹（ぶどう・もも 生産量全国1位）','ワイン（ワイナリー数全国1位）','ミネラルウォーター（採水量全国1位）','機械電子・産業用ロボット','観光（富士山・富士五湖・温泉）'],
+    leaderTitle:'歴代知事（近年）',
+    leaders: [
+      { term:'2019 −（現職）', name:'長崎 幸太郎', note:'2期目' },
+      { term:'2015 − 2019', name:'後藤 斎', note:'1期' },
+      { term:'2007 − 2015', name:'横内 正明', note:'2期' },
+      { term:'2003 − 2007', name:'山本 栄彦', note:'1期' },
+    ],
+    climate: [
+      { label:'年平均気温（甲府）', v:'15.1℃' },
+      { label:'年降水量（甲府）', v:'1,161 mm' },
+      { label:'年間日照時間', v:'全国トップ級' },
+      { label:'標高差', v:'約3,500 m' },
+    ],
+    climateNote:'内陸性気候で寒暖差が大きく、日照時間の長さは全国トップ級。富士山麓から甲府盆地まで標高差が大きく、地域ごとの気候の違いが果樹・高原野菜など多様な農業を生んでいます。',
+  },
+};
+
+// 補正予算（甲府市・令和8年度 第1号補正、ダミー）：款・区分レベルの増減額（億円）
+const HOSEI = {
+  total: 4.2, label:'第1号補正', decidedShort:'令和8年6月20日 議決',
+  desc:'物価高騰対策給付・保育所等整備（国庫内示対応）ほか',
+  exp: { '民生費':2.6, '衛生費':0.8, '商工費':0.5, '総務費':0.3 },
+  rev: { '国庫支出金':3.1, '県支出金':0.6, '諸収入・その他':0.5 },
+};
+
+// 前年比較用：款・区分ごとの対前年増減率（%）（甲府市は令和8/7年度当初予算の実データ、県はダミー）
+const YOY_EXP = { '民生費':3.7, '総務費':4.7, '教育費':20.5, '土木費':6.3, '公債費':-5.9, '衛生費':2.0, '商工費':40.0, '消防費':-13.8, '農林水産業費':0.0, '議会費':20.0, '労働費':0.0, 'その他':-8.0, '警察費':1.1 };
+const YOY_REV = { '市税':2.6, '県税':1.6, '国庫支出金':6.1, '地方交付税':-5.1, '県支出金':14.5, '地方消費税交付金':17.6, '寄附金':0.0, '市債':-17.5, '県債':3.8, '繰入金':13.3, '諸収入・その他':1.2 };
+
+const HIST = {
+  // scale は甲府市当初予算の実データ比（R7:881億 / R6:808億 ÷ R8:918億）。執行率はダミー
+  R7: { title:'令和7年度（決算見込）', scale:0.960, rates:{ '民生費':0.985,'総務費':0.952,'教育費':0.941,'土木費':0.902,'公債費':0.999,'衛生費':0.968,'商工費':0.914,'消防費':0.961,'農林水産業費':0.925,'議会費':0.987,'その他':0.872 } },
+  R6: { title:'令和6年度（決算）', scale:0.880, rates:{ '民生費':0.981,'総務費':0.944,'教育費':0.936,'土木費':0.889,'公債費':0.999,'衛生費':0.972,'商工費':0.905,'消防費':0.955,'農林水産業費':0.918,'議会費':0.985,'その他':0.861 } },
+};
+
+function fmtOku(v) {
+  if (v >= 10000) return (v/10000).toFixed(2) + '兆円';
+  if (v >= 1) return (v >= 100 ? Math.round(v).toLocaleString() : v.toFixed(1)) + '億円';
+  return Math.round(v*10000).toLocaleString() + '万円';
+}
+function pctOf(v, total) { return (v/total*100).toFixed(1) + '%'; }
+// 億円 → 1人あたり金額
+function fmtPerCap(oku, pop) {
+  const yen = oku * 1e8 / pop;
+  return yen >= 10000 ? (yen/1e4).toFixed(1) + '万円' : Math.round(yen).toLocaleString() + '円';
+}
+function hash(s) { let h = 0; for (let i=0;i<s.length;i++) { h = (h*31 + s.charCodeAt(i)) >>> 0; } return h; }
+function fadeColor(c) { return `color-mix(in srgb, ${c} 26%, #F2F6F9)`; }
+function donutBg(items, hi) {
+  const total = items.reduce((a,b)=>a+b.v,0);
+  let acc = 0; const stops = [];
+  items.forEach((it,i)=>{ const from = acc/total*100; acc += it.v; const to = acc/total*100; const col = PALETTE[i%PALETTE.length]; stops.push(`${(hi==null||hi===i)?col:fadeColor(col)} ${from.toFixed(2)}% ${to.toFixed(2)}%`); });
+  return `conic-gradient(${stops.join(', ')})`;
+}
+function synthChildren(node, level) {
+  const base = node.name.replace(/費$/,'').replace(/^その他/,'諸');
+  let names;
+  if (level === 1) names = [base+'総務費', base+'振興費', base+'施設費'];
+  else if (level === 2) names = [base+'管理費', base+'運営費', base+'整備費'];
+  else names = ['報酬・給料等','需用費','委託料','工事請負費','負担金、補助及び交付金'];
+  const ws = names.map((n,i)=> 0.5 + (hash(node.name+n+i)%100)/70);
+  const wsum = ws.reduce((a,b)=>a+b,0);
+  let rem = node.v;
+  return names.map((n,i)=>{
+    let v = i === names.length-1 ? rem : Math.max(0.1, Math.round(node.v*ws[i]/wsum*10)/10);
+    if (v > rem) v = rem;
+    rem = Math.round((rem - v)*10)/10;
+    return { name:n, v, synth:true };
+  }).filter(c => c.v > 0.05);
+}
+
+// 数値カウントアップ（マウント時 0→値、値変更時は旧値→新値をイージング補間）
+function CountUpNum({ value, fmt, dur }) {
+  const [n, setN] = React.useState(0);
+  const fromRef = React.useRef(0);
+  React.useEffect(() => {
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setN(value); fromRef.current = value; return;
+    }
+    const from = fromRef.current, to = value, t0 = performance.now(), d = dur || 950;
+    let raf;
+    const tick = t => {
+      const p = Math.min(1, (t - t0) / d);
+      const e = 1 - Math.pow(1 - p, 3);
+      setN(from + (to - from) * e);
+      if (p < 1) raf = requestAnimationFrame(tick); else fromRef.current = to;
+    };
+    raf = requestAnimationFrame(tick);
+    return () => { cancelAnimationFrame(raf); fromRef.current = to; };
+  }, [value]);
+  return fmt ? fmt(n) : String(Math.round(n));
+}
+
+class Component extends DCLogic {
+  state = {
+    screen:'top', variantOverride:null, pref:null, muni:null,
+    drillSide:'exp', drillPath:[], theme:null, project:null, histYear:'R7',
+    fy:'R8', fyOpen:false, fyX:0, fyY:0,
+    searchQ:'', prevScreen:'dash',
+  };
+
+  nav(patch) { this.setState(patch); window.scrollTo(0,0); }
+
+  // --- チャート近傍ツールチップ（ホバー／タップ） ---
+  showTip(e, title, amt, pct, sw, desc, hover) {
+    this.setState({ tip: { x: e.clientX, y: e.clientY - 12, title, amt, pct, sw, desc: desc || '', hover: hover || null } });
+    clearTimeout(this._tipT);
+    this._tipT = setTimeout(() => this.setState({ tip: null }), 3200); // タップ時も自動で消える
+  }
+  hideTip = () => { clearTimeout(this._tipT); this.setState({ tip: null }); };
+  // ドーナツ：ポインタ角度からセグメントを特定
+  mkDonutTip(items, total, pop, key) {
+    return (e) => {
+      const rect = e.currentTarget.getBoundingClientRect();
+      const cx = rect.left + rect.width / 2, cy = rect.top + rect.height / 2;
+      const dx = e.clientX - cx, dy = e.clientY - cy;
+      const dist = Math.hypot(dx, dy), R = rect.width / 2;
+      if (dist > R || dist < R * 0.58) { this.setState({ tip: null }); return; }
+      let deg = Math.atan2(dy, dx) * 180 / Math.PI + 90;
+      if (deg < 0) deg += 360;
+      let acc = 0, seg = items[items.length - 1], idx = items.length - 1;
+      for (let i = 0; i < items.length; i++) {
+        acc += items[i].v / total * 360;
+        if (deg <= acc) { seg = items[i]; idx = i; break; }
+      }
+      this.showTip(e, seg.name, fmtOku(seg.v), pctOf(seg.v, total), PALETTE[idx % PALETTE.length],
+        pop ? `1人あたり ${fmtPerCap(seg.v, pop)}` : '', key ? { key, idx } : null);
+    };
+  }
+  mkSegTip(title, amt, pct, sw, hover) { return (e) => this.showTip(e, title, amt, pct, sw, '', hover); }
+  // 用語解説ツールチップ
+  mkGloss(term) { return (e) => this.showTip(e, term, '', '', '#1798D0', GLOSS[term]); }
+
+  getMuniData() { return this.state.muni === '山梨県全体' ? YAMANASHI : KOFU; }
+
+  renderVals() {
+    const s = this.state;
+    const props = this.props || {};
+    const variant = 'c'; // トップページはC案（スプリット）固定
+    const showEvidence = props.showEvidence ?? true;
+    const mapColorMode = props.colorMode ?? 'カラフル';
+    PALETTE = mapColorMode === '青系' ? P_BLUE : P_VIVID;
+    const screen = s.screen;
+    const isApp = ['dash','basic','drill','compare','themes','project','history','similar','sources'].includes(screen);
+    const data = this.getMuniData();
+    const accent = '#1798D0';
+
+    // --- 会計年度（令和8 / 7 / 6） ---
+    const fy = s.fy || 'R8';
+    const isCurFy = fy === 'R8';
+    const fyScale = isCurFy ? 1 : HIST[fy].scale;
+    const FY_NUM = { R8:8, R7:7, R6:6 };
+    const FY_YOY = { R7:'+9.0%', R6:'+1.9%' }; // R7は実データ（881億/808億）
+    const scaleNode = it => ({ ...it, v: Math.round(it.v*fyScale*10)/10, children: it.children ? it.children.map(scaleNode) : it.children });
+    const fyToggle = (e) => { const r = e.currentTarget.getBoundingClientRect(); this.setState({ fyOpen: !s.fyOpen, fyX: r.right, fyY: r.bottom + 6 }); };
+    const fyOptions = [
+      { y:'R8', label:'令和8年度', note:'当初予算・執行中' },
+      { y:'R7', label:'令和7年度', note:'決算見込' },
+      { y:'R6', label:'令和6年度', note:'決算' },
+    ].map(o => ({ label:o.label, note:o.note, fw: fy===o.y?'700':'500', bg: fy===o.y?'#E3F4FC':'transparent',
+      pick:()=>this.setState({ fy:o.y, fyOpen:false }) }));
+
+    // --- 表示単位（総額 / 1人あたり） ---
+    const unit = s.unit || 'total';
+    const isPer = unit === 'per';
+    const fmtV = oku => isPer ? fmtPerCap(oku, data.pop) + '/人' : fmtOku(oku);
+    const subV = oku => isPer ? '総額 ' + fmtOku(oku) : fmtPerCap(oku, data.pop) + '/人';
+    const unitTabs = [
+      { label:'総額', pick:()=>this.setState({unit:'total'}), bg: !isPer?'#14181C':'#FFFFFF', fg: !isPer?'#F7FAFC':'#5C6B77' },
+      { label:'1人あたり', pick:()=>this.setState({unit:'per'}), bg: isPer?'#14181C':'#FFFFFF', fg: isPer?'#F7FAFC':'#5C6B77' },
+    ];
+
+    // --- 予算の変遷（当初 → 補正 → 現額） ---
+    const hasStages = data === KOFU && isCurFy; // 補正データは甲府市・令和8年度のみ収録
+    const stage = hasStages ? (s.stage || 'tousho') : 'tousho';
+    const isGenkei = hasStages && stage === 'genkei';
+    const stAdj = (items, adjMap) => isGenkei
+      ? items.map(it => { const a = adjMap[it.name]; return a ? { ...it, v: Math.round((it.v + a) * 10) / 10 } : it; })
+      : items;
+    const revItems = stAdj(data.revenue, HOSEI.rev).map(scaleNode);
+    const expItems = stAdj(data.expenditure, HOSEI.exp).map(scaleNode);
+    const totalNow = Math.round((isGenkei ? data.total + HOSEI.total : data.total) * fyScale * 10) / 10;
+    const yearLabel = isCurFy ? (isGenkei ? '令和8年度 予算現額（第1号補正後）' : data.year) : HIST[fy].title;
+    const yearDocBase = isCurFy ? data.year : `令和${FY_NUM[fy]}年度 当初予算`;
+    const pickStage = (st) => () => this.setState({ stage: st });
+    const stageTabs = [
+      { label:'当初予算', pick:pickStage('tousho'), bg: stage==='tousho'?'#14181C':'#FFFFFF', fg: stage==='tousho'?'#F7FAFC':'#5C6B77' },
+      { label:'補正後（現額）', pick:pickStage('genkei'), bg: stage==='genkei'?'#14181C':'#FFFFFF', fg: stage==='genkei'?'#F7FAFC':'#5C6B77' },
+    ];
+    const stageFlow = [
+      { t:'当初予算', amt:React.createElement(CountUpNum, { value: data.total, fmt: fmtOku }), sub:'令和8年3月24日 議決', pick:pickStage('tousho'),
+        bd: stage==='tousho'?'#1798D0':'#DFE7EC', bg: stage==='tousho'?'#E3F4FC':'#F7FAFC', labelFg:'#5C6B77', amtFg:'#14181C', sep:'inline' },
+      { t:HOSEI.label + '（追加）', amt:React.createElement(CountUpNum, { value: HOSEI.total, fmt: v => '+' + fmtOku(v) }), sub:HOSEI.decidedShort + ' — ' + HOSEI.desc, pick:pickStage('genkei'),
+        bd:'#DFE7EC', bg:'#F7FAFC', labelFg:'#5C6B77', amtFg:'#0F76A3', sep:'inline' },
+      { t:'予算現額', amt:React.createElement(CountUpNum, { value: data.total + HOSEI.total, fmt: fmtOku }), sub:'現在の予算総額（執行の分母）', pick:pickStage('genkei'),
+        bd: stage==='genkei'?'#1798D0':'#DFE7EC', bg: stage==='genkei'?'#E3F4FC':'#F7FAFC', labelFg:'#5C6B77', amtFg:'#14181C', sep:'none' },
+    ];
+
+    const openPref = (prefName) => () => this.nav({ screen:'muni', pref:prefName });
+    const openMuni = (muniName) => () => this.nav({ screen:'dash', muni:muniName, drillPath:[], theme:null });
+
+    // --- ホバー強調（強調セグメント以外を淡色化） ---
+    const hoverFor = key => (s.tip && s.tip.hover && s.tip.hover.key === key) ? s.tip.hover.idx : null;
+    const hoverOnFn = (key, idx) => () => this.setState({ tip: { hover: { key, idx } } });
+
+    // --- council ---
+    const council = data.council;
+    const cHover = hoverFor('council');
+    const councilParties = council.parties.map((p,i) => ({
+      name:p.name, seats:String(p.seats), w:(p.seats/council.seats*100).toFixed(1),
+      sw:(cHover==null||cHover===i)?PALETTE[i%PALETTE.length]:fadeColor(PALETTE[i%PALETTE.length]), stance:p.stance,
+      stanceFg: p.stance.includes('反対') ? '#A85A45' : p.stance.includes('賛成') ? '#0F76A3' : '#5C6B77',
+      tipMove:this.mkSegTip(p.name, p.seats + '議席', (p.seats/council.seats*100).toFixed(1) + '%', PALETTE[i%PALETTE.length], { key:'council', idx:i }),
+    }));
+    const councilVote = [
+      { label:'賛成', n:String(council.vote.approve), fg:'#0F76A3' },
+      { label:'反対', n:String(council.vote.oppose), fg:'#A85A45' },
+      { label:'退席・欠席', n:String(council.vote.absent), fg:'#5C6B77' },
+    ];
+
+    // --- search (variant B) ---
+    const q = s.searchQ.trim();
+    const searchRegions = REGIONS.map(rg => ({
+      name: rg.name,
+      prefs: rg.prefs.filter(([n]) => !q || n.includes(q) || (n==='山梨県' && '甲府市'.includes(q)))
+        .map(([n]) => {
+          const avail = n === '山梨県';
+          return { name:n, open:openPref(n), avail,
+            bg: avail ? '#E3F4FC' : '#FFFFFF', fg: avail ? accent : '#3A3A35',
+            bd: avail ? accent : '#DFE7EC', fw: avail ? '700' : '400' };
+        }),
+    })).filter(rg => rg.prefs.length > 0);
+
+    // --- muni select ---
+    const prefName = s.pref || '山梨県';
+    const prefAvail = prefName === '山梨県';
+    const muniList = (prefAvail ? YAMANASHI_MUNIS : []).map(m => {
+      const avail = m === '甲府市';
+      return {
+        name:m, badge: avail ? '収録済 R8予算+執行' : '準備中',
+        badgeFg: avail ? accent : '#9DACB7',
+        bg: avail ? '#FFFFFF' : '#F0F5F8', bd: avail ? accent : '#DFE7EC',
+        fg: avail ? '#14181C' : '#8494A0', cursor: avail ? 'pointer' : 'default',
+        open: avail ? openMuni(m) : () => {},
+      };
+    });
+
+    // --- dashboard panels ---
+    const mkLegend = (items, side) => { const hv = hoverFor(side); return items.map((it,i) => ({
+      name:it.name, amtFmt:fmtV(it.v), pctFmt:pctOf(it.v, totalNow),
+      sw:(hv==null||hv===i)?PALETTE[i%PALETTE.length]:fadeColor(PALETTE[i%PALETTE.length]),
+      hoverOn:hoverOnFn(side, i), hoverOff:this.hideTip,
+      open: () => this.nav({ screen:'drill', drillSide:side, drillPath:[it.name] }),
+    })); };
+    const dashPanels = [
+      { title:'歳入（どこから来るお金か）', donutBg:donutBg(revItems, hoverFor('rev')), centerLabel:'歳入合計', centerAmt:React.createElement(CountUpNum, { value: totalNow, fmt: fmtV }),
+        legend:mkLegend(revItems,'rev'), openDrill:() => this.nav({ screen:'drill', drillSide:'rev', drillPath:[] }),
+        tipMove:this.mkDonutTip(revItems, totalNow, data.pop, 'rev'), gloss:this.mkGloss('歳入') },
+      { title:'歳出（なにに使うお金か）', donutBg:donutBg(expItems, hoverFor('exp')), centerLabel:'歳出合計', centerAmt:React.createElement(CountUpNum, { value: totalNow, fmt: fmtV }),
+        legend:mkLegend(expItems,'exp'), openDrill:() => this.nav({ screen:'drill', drillSide:'exp', drillPath:[] }),
+        tipMove:this.mkDonutTip(expItems, totalNow, data.pop, 'exp'), gloss:this.mkGloss('歳出') },
+    ];
+
+    const projOf = id => PROJECTS.find(p=>p.id===id);
+    const pPast = p => isCurFy ? null : (p.past || []).find(x => x.y === fy);
+    const pBudget = p => { const pe = pPast(p); return pe ? pe.b : Math.round(p.budget*fyScale*10)/10; };
+    const pSpent = p => { const pe = pPast(p); return pe ? pe.e : Math.round(pBudget(p)*((HIST[fy] && HIST[fy].rates[p.kan]) || 0.94)*10)/10; };
+    const themeTotal = t => { const seen={}; return t.ids.reduce((a,id)=>{ if(seen[id])return a; seen[id]=1; return a+(isCurFy ? projOf(id).budget : pBudget(projOf(id))); },0); };
+    const openTheme = t => () => this.nav({ screen:'themes', theme:t.name });
+    const openProject = p => () => this.nav({ screen:'project', project:p.id, prevScreen:screen });
+
+    const themeStrip = THEMES.slice(0,4).map(t => ({ name:t.name, totalFmt:fmtV(themeTotal(t)), sub:subV(themeTotal(t)), count:String(t.ids.length), open:openTheme(t) }));
+    // 執行率の分母：補正後表示のときは予算現額（当初＋補正）
+    const effBudget = p => isCurFy ? ((isGenkei && p.hosei) ? Math.round((p.budget + p.hosei.delta)*10)/10 : p.budget) : pBudget(p);
+    const rateOf = p => isCurFy ? (p.spent/effBudget(p)*100) : (pSpent(p)/pBudget(p)*100);
+    const featured = ['p1','p4','p5'].map(id => { const p = projOf(id); return {
+      name:p.name, kanPath:`${p.kan} › ${p.ko}`, budgetFmt:fmtV(effBudget(p)), sub:subV(effBudget(p)), rateFmt:rateOf(p).toFixed(1)+'%', barW:rateOf(p).toFixed(1), open:openProject(p) }; });
+
+    // --- drill ---
+    const side = s.drillSide;
+    const rootItems = side === 'rev' ? revItems : expItems;
+    const levelNames = side === 'rev' ? ['税目・区分','内訳','内訳','内訳'] : ['款','項','目','節'];
+    let nodeItems = rootItems; let nodeTotal = totalNow; let nodeName = side==='rev' ? '歳入合計' : '歳出合計';
+    const pathNodes = [];
+    s.drillPath.forEach((nm, depth) => {
+      let found = nodeItems.find(n => n.name === nm);
+      if (!found) return;
+      pathNodes.push(found);
+      nodeName = found.name; nodeTotal = found.v;
+      nodeItems = found.children || synthChildren(found, depth+1);
+    });
+    const depth = pathNodes.length;
+    // --- 節の下：事業レベル（エビデンス収録済みの事業に接続） ---
+    const isProjLevel = side === 'exp' && depth >= 4;
+    const mokuProjects = (side === 'exp' && s.drillPath.length >= 3)
+      ? PROJECTS.filter(p => p.kan === s.drillPath[0] && [p.ko, p.moku].includes(s.drillPath[2]))
+      : [];
+    const setsuProjects = nm => mokuProjects
+      .filter(p => PROJ_SETSU[p.id] && PROJ_SETSU[p.id][nm])
+      .map(p => ({ name: p.name, v: Math.round(effBudget(p) * PROJ_SETSU[p.id][nm] * 100) / 100, share: PROJ_SETSU[p.id][nm], proj: p }));
+    if (isProjLevel) {
+      nodeName = s.drillPath[3];
+      nodeItems = setsuProjects(nodeName);
+      nodeTotal = nodeItems.reduce((a, b) => a + b.v, 0) || 1;
+    }
+    const canDrillDeeper = nm => depth < 3 || (depth === 3 && side === 'exp' && setsuProjects(nm).length > 0);
+    const drillCrumbs = [{ label: side==='rev'?'歳入':'歳出', jump:()=>this.setState({drillPath:[]}), bg: depth===0?'#14181C':'transparent', fg: depth===0?'#F7FAFC':'#5C6B77', fw: depth===0?'700':'500', sep: s.drillPath.length?'inline':'none' }];
+    s.drillPath.forEach((nm,i) => {
+      const last = i === s.drillPath.length-1;
+      drillCrumbs.push({ label:nm, jump:()=>this.setState({drillPath:s.drillPath.slice(0,i+1)}), bg:last?'#14181C':'transparent', fg:last?'#F7FAFC':'#5C6B77', fw:last?'700':'500', sep:last?'none':'inline' });
+    });
+    const dHover = hoverFor('drill');
+    const drillRows = nodeItems.map((it,i) => {
+      const clickable = isProjLevel ? true : canDrillDeeper(it.name);
+      return { name:it.name, amtFmt:fmtV(it.v),
+        sub: isProjLevel ? `事業予算の${Math.round(it.share*100)}%を配分` : subV(it.v),
+        pctFmt:pctOf(it.v,nodeTotal), barW:(it.v/(nodeItems[0].v||1)*100).toFixed(1),
+        sw:(dHover==null||dHover===i)?PALETTE[i%PALETTE.length]:fadeColor(PALETTE[i%PALETTE.length]),
+        hoverOn:hoverOnFn('drill', i), hoverOff:this.hideTip,
+        cursor:clickable?'pointer':'default', arrow:clickable?'›':'',
+        open: clickable ? (isProjLevel ? openProject(it.proj) : ()=>this.setState({drillPath:[...s.drillPath, it.name]})) : ()=>{} };
+    });
+    const related = side==='exp' && s.muni !== '山梨県全体'
+      ? PROJECTS.filter(p => depth===0 ? false : [p.kan,p.ko,p.moku].includes(nodeName)) : [];
+    const drillRelated = related.map(p => ({ name:p.name, themes:p.themes.join(' / '), budgetFmt:fmtV(effBudget(p)), rateFmt:rateOf(p).toFixed(1)+'%', open:openProject(p) }));
+    const synthNote = pathNodes.some(n=>n.synth) || nodeItems.some(n=>n.synth);
+    const drillEvidence = isProjLevel
+      ? `「${nodeName}」に予算を配分している事業 ${nodeItems.length}件（節×事業の配分率はダミー）。事業をクリックすると契約・支出先・KPI・一次資料へ。`
+      : `${yearDocBase.replace(' ','')}書 「${nodeName}」 該当ページ${synthNote?'（この階層はダミー生成値）':''}`;
+    const drillSideTabs = [
+      { label:'歳出', pick:()=>this.setState({drillSide:'exp',drillPath:[]}), bg: side==='exp'?'#14181C':'#FFFFFF', fg: side==='exp'?'#F7FAFC':'#5C6B77' },
+      { label:'歳入', pick:()=>this.setState({drillSide:'rev',drillPath:[]}), bg: side==='rev'?'#14181C':'#FFFFFF', fg: side==='rev'?'#F7FAFC':'#5C6B77' },
+    ];
+
+    // --- themes ---
+    const themeCards = THEMES.map(t => ({ name:t.name, totalFmt:fmtV(themeTotal(t)), sub:subV(themeTotal(t)), count:String(t.ids.length), open:openTheme(t),
+      bg: s.theme===t.name?'#E3F4FC':'#FFFFFF', bd: s.theme===t.name?accent:'#DFE7EC' }));
+    const curTheme = THEMES.find(t=>t.name===s.theme);
+    let themeVals = { hasTheme:false, themeName:'', themeIntent:'', themeTotalFmt:'', themeCount:'', themeKanChips:[], themeProjects:[] };
+    if (curTheme) {
+      const ps = [...new Set(curTheme.ids)].map(projOf);
+      const kanAgg = {};
+      ps.forEach(p => { kanAgg[p.kan] = (kanAgg[p.kan]||0) + p.budget; });
+      const kanIdx = nm => Math.max(0, data.expenditure.findIndex(k=>k.name===nm));
+      themeVals = {
+        hasTheme:true, themeName:curTheme.name, themeIntent:curTheme.intent,
+        themeTotalFmt:fmtV(themeTotal(curTheme)), themeSub:subV(themeTotal(curTheme)), themeCount:String(ps.length),
+        themeKanChips:Object.entries(kanAgg).map(([nm,v]) => ({ name:nm, amtFmt:fmtV(v), sw:PALETTE[kanIdx(nm)%PALETTE.length],
+          open:()=>this.nav({screen:'drill', drillSide:'exp', drillPath:[nm]}) })),
+        themeProjects: ps.map(p => ({ name:p.name, summary:p.summary, kanPath:`${p.kan}›${p.ko}›${p.moku}`, budgetFmt:fmtV(effBudget(p)), sub:subV(effBudget(p)),
+          rateFmt:rateOf(p).toFixed(1)+'%', barW:rateOf(p).toFixed(1), open:openProject(p) })),
+      };
+    }
+
+    // --- project ---
+    const proj = PROJECTS.find(p=>p.id===s.project) || PROJECTS[0];
+    const pr = rateOf(proj);
+    const projQuarters = proj.plan.map((pl,i) => {
+      const act = isCurFy ? proj.actual[i] : Math.round(pl * rateOf(proj)) / 100;
+      const has = act != null;
+      return { label:`Q${i+1}`, planH:Math.round(pl*1.15), actH: has?Math.max(3,Math.round(act*1.15)):Math.round(pl*1.15),
+        actBg: has?accent:'transparent', actBorder: has?'none':'1.5px dashed #9DACB7', actLabel: has?act.toFixed(1)+'%':'—' };
+    });
+    const projVals = {
+      projName:proj.name, projStatus: isCurFy ? '令和8年度 執行中（第1四半期時点）' : HIST[fy].title,
+      projThemes:proj.themes.map(nm => ({ name:nm, open:()=>this.nav({screen:'themes', theme:nm}) })),
+      projKanPath:`${proj.kan} › ${proj.ko} › ${proj.moku}`,
+      projKanOpen:()=>this.nav({screen:'drill', drillSide:'exp', drillPath:[proj.kan, proj.ko, proj.moku].filter((x,i,a)=>a.indexOf(x)===i)}),
+      projDept:proj.dept, projPeriod:proj.period, projPurpose:proj.purpose, projDesc:proj.desc,
+      projBudgetLabel: (isGenkei && proj.hosei) ? '予算現額（補正後）' : '予算現額（当初）',
+      projBudgetFmt:fmtV(effBudget(proj)), projBudgetSub:subV(effBudget(proj)), projSpentFmt:fmtV(isCurFy ? proj.spent : pSpent(proj)), projRateFmt:pr.toFixed(1)+'%', projBarW:pr.toFixed(1),
+      projHoseiShow: !!(hasStages && proj.hosei),
+      projHoseiText: proj.hosei ? `${HOSEI.label} +${fmtOku(proj.hosei.delta)}（${HOSEI.decidedShort}）— ${proj.hosei.reason}` : '',
+      projHoseiAfter: proj.hosei ? `当初 ${fmtOku(proj.budget)} → 現額 ${fmtOku(Math.round((proj.budget+proj.hosei.delta)*10)/10)}` : '',
+      projQuarters,
+      projContracts:proj.contracts.map(c => ({ to:c.to, desc:c.desc, method:c.method, amtFmt:fmtV(isCurFy ? c.amt : Math.round(c.amt*fyScale*100)/100), bid:c.bid || '' })),
+      projKpis:(proj.kpis || []).map(k => ({ name:k.n, target:k.t, actual:k.a,
+        status:k.ok ? '達成' : '未達', stFg:k.ok ? '#0F76A3' : '#C25400', stBg:k.ok ? '#E3F4FC' : '#FBEDE3' })),
+      projEvidence:proj.evidence,
+      projPast:proj.past.map(py => ({ year:py.y, budgetFmt:fmtV(py.b), execFmt:fmtV(py.e), rateFmt:(py.e/py.b*100).toFixed(1)+'%', barW:(py.e/py.b*100).toFixed(1) })),
+    };
+
+    // --- history ---
+    const hist = HIST[s.histYear];
+    const histRows = KOFU.expenditure.map((k,i) => {
+      const budget = k.v * hist.scale;
+      const rate = hist.rates[k.name] ?? 0.94;
+      const spent = budget * rate;
+      return { name:k.name, sw:PALETTE[i%PALETTE.length], budgetFmt:fmtV(budget), spentFmt:fmtV(spent),
+        rateFmt:(rate*100).toFixed(1)+'%', barW:(rate*100).toFixed(1), unusedFmt:fmtV(budget-spent),
+        open:()=>this.nav({screen:'drill', drillSide:'exp', drillPath:[k.name]}) };
+    });
+    const hBudget = KOFU.expenditure.reduce((a,k)=>a+k.v*hist.scale,0);
+    const hSpent = KOFU.expenditure.reduce((a,k)=>a+k.v*hist.scale*(hist.rates[k.name]??0.94),0);
+    const histTabs = ['R7','R6'].map(y => ({ label:HIST[y].title, pick:()=>this.setState({histYear:y}),
+      bg: s.histYear===y?'#14181C':'#FFFFFF', fg: s.histYear===y?'#F7FAFC':'#5C6B77' }));
+    const histEvidence = [
+      { title:`${hist.title.replace(/（.*/,'')} 歳入歳出決算書`, type:'PDF', source:'city.kofu.yamanashi.jp', thumb:'決算書 総括表 スクリーンショット' },
+      { title:'主要な施策の成果報告書', type:'PDF', source:'city.kofu.yamanashi.jp', thumb:'成果報告書 目次ページ' },
+      { title:'監査委員 決算審査意見書', type:'PDF', source:'city.kofu.yamanashi.jp', thumb:'意見書 表紙' },
+    ];
+
+    // --- compare (前年比較) ---
+    const compSide = s.compSide || 'exp';
+    const compItems = (compSide === 'rev' ? data.revenue : data.expenditure).map(it => ({ name: it.name, v: Math.round(it.v*fyScale*10)/10 }));
+    const compCurSum = Math.round(data.total*fyScale*10)/10;
+    const compGrowth = compSide === 'rev' ? YOY_REV : YOY_EXP;
+    const gOf = nm => compGrowth[nm] ?? (((hash(nm) % 90) - 40) / 10);
+    const compMax = Math.max(...compItems.map(it => it.v));
+    let compPrevSum = 0;
+    const compRows = compItems.map((it, i) => {
+      const g = gOf(it.name);
+      const prev = it.v / (1 + g / 100);
+      compPrevSum += prev;
+      const d = it.v - prev;
+      const up = d >= 0;
+      return {
+        name: it.name, sw: PALETTE[i % PALETTE.length],
+        prevFmt: fmtV(prev), curFmt: fmtV(it.v),
+        prevW: (prev / compMax * 100).toFixed(1), curW: (it.v / compMax * 100).toFixed(1),
+        deltaFmt: (up ? '+' : '−') + fmtV(Math.abs(d)) + '（' + (up ? '+' : '−') + Math.abs(g).toFixed(1) + '%）',
+        deltaFg: up ? '#0F76A3' : '#C25400',
+        open: () => this.nav({ screen: 'drill', drillSide: compSide, drillPath: [it.name] }),
+      };
+    });
+    const compDelta = compCurSum - compPrevSum;
+    const compTabs = [
+      { label: '歳出', pick: () => this.setState({ compSide: 'exp' }), bg: compSide === 'exp' ? '#14181C' : '#FFFFFF', fg: compSide === 'exp' ? '#F7FAFC' : '#5C6B77' },
+      { label: '歳入', pick: () => this.setState({ compSide: 'rev' }), bg: compSide === 'rev' ? '#14181C' : '#FFFFFF', fg: compSide === 'rev' ? '#F7FAFC' : '#5C6B77' },
+    ];
+
+    // --- header nav ---
+    const navDefs = [
+      ['ダッシュボード','dash',()=>this.nav({screen:'dash'})],
+      ['基本情報','basic',()=>this.nav({screen:'basic'})],
+      ['款・項・目・節','drill',()=>this.nav({screen:'drill'})],
+      ['前年比較','compare',()=>this.nav({screen:'compare'})],
+      ['政策テーマ','themes',()=>this.nav({screen:'themes'})],
+      ['過年度実績','history',()=>this.nav({screen:'history'})],
+      ['類似自治体','similar',()=>this.nav({screen:'similar'})],
+    ];
+    const navList = data === KOFU ? navDefs : navDefs.filter(d => d[1] !== 'similar');
+    const navTabs = navList.map(([label,key,open]) => ({ label, open,
+      fg: screen===key?'#14181C':'#5C6B77', fw: screen===key?'700':'500', ul: screen===key?accent:'transparent' }));
+
+    // --- 基本情報 ---
+    const binfo = BASIC_INFO[data.name] || BASIC_INFO['甲府市'];
+    const popMax = Math.max(...binfo.popTrend.map(p=>p[1]));
+    const popMin = Math.min(...binfo.popTrend.map(p=>p[1]));
+    const popH = v => popMax === popMin ? 100 : Math.round(35 + (v - popMin) / (popMax - popMin) * 65); // 差が読める相対スケール
+    const basicVals = {
+      basicTitle: `${data.name}の基本情報`,
+      basicSub: binfo.sub,
+      basicFacts: binfo.facts,
+      basicPopTrend: binfo.popTrend.map(([y,v],i,arr) => ({ y, v: v.toFixed(1)+'万', h: popH(v), bg: i===arr.length-1 ? accent : '#B8D9EA' })),
+      basicPopStats: binfo.popStats,
+      basicIndustry: binfo.industry.map((it,i)=>({ name:it.name, share:it.share.toFixed(1)+'%', w:it.share, sw:PALETTE[i%PALETTE.length] })),
+      basicSpecialties: binfo.specialties.map(nm=>({ name:nm })),
+      basicLeaderTitle: binfo.leaderTitle,
+      basicLeaders: binfo.leaders.map((l,i)=>({ ...l, fw: i===0?'700':'500' })),
+      basicClimate: binfo.climate,
+      basicClimateNote: binfo.climateNote,
+      goBasic: ()=>this.nav({screen:'basic'}),
+      basicSummary: [
+        { label:'総人口', v: binfo.facts[1].v },
+        { label:'面積', v: binfo.facts[0].v },
+        { label:'高齢化率', v: binfo.popStats[0].v },
+        { label: binfo.leaderTitle.includes('知事') ? '知事' : '市長', v: binfo.leaders[0].name },
+        { label:'特色ある産業', v: binfo.specialties.slice(0,2).map(nm=>nm.split('（')[0]).join('・') },
+      ],
+    };
+
+    return {
+      isTop: screen==='top', isMuni: screen==='muni', isApp,
+      isDash: screen==='dash', isDrill: screen==='drill', isThemes: screen==='themes', isCompare: screen==='compare',
+      isBasic: screen==='basic', ...basicVals,
+      isProject: screen==='project', isHistory: screen==='history',
+      topA: variant==='a', topB: variant==='b', topC: variant==='c',
+      showEvidence,
+      variantPills: [['A','a'],['B','b'],['C','c']].map(([label,v]) => ({ label:label,
+        pick:()=>this.setState({variantOverride:v}),
+        bg: variant===v?'#14181C':'#FFFFFF', fg: variant===v?'#F7FAFC':'#5C6B77', bd: variant===v?'#14181C':'#C6D2DA' })),
+      onPrefSelect:(name)=>this.nav({screen:'muni', pref:name}),
+      mapColorMode,
+      onMuniSelect:(prefName, muniName)=>{
+        if (prefName === '山梨県' && muniName === null) this.nav({screen:'dash', pref:prefName, muni:'山梨県全体', drillPath:[], theme:null});
+        else if (prefName === '山梨県' && muniName === '甲府市') this.nav({screen:'dash', pref:prefName, muni:'甲府市', drillPath:[], theme:null});
+        else this.nav({screen:'muni', pref:prefName});
+      },
+      councilBody:council.body, councilSeats:String(council.seats), councilDecided:council.decided,
+      councilParties, councilVote,
+      searchQ:s.searchQ, onSearch:(e)=>this.setState({searchQ:e.target.value}), searchRegions,
+      openKofuLink:(e)=>{ if(e&&e.preventDefault)e.preventDefault(); this.nav({screen:'dash', muni:'甲府市', pref:'山梨県'}); },
+      goTop:()=>this.nav({screen:'top'}), goMuniSelect:()=>this.nav({screen:'muni'}),
+      muniPrefName:prefName,
+      prefAllOpen: prefAvail ? openMuni('山梨県全体') : ()=>{},
+      prefAllBg: prefAvail?'#14181C':'#F0F5F8', prefAllFg: prefAvail?'#F7FAFC':'#8494A0', prefAllBd: prefAvail?'#14181C':'#DFE7EC',
+      prefAllBadge: prefAvail?'収録済':'準備中',
+      prefAllNote: prefAvail?'県の一般会計 約5,360億円を表示':'この都道府県のデータは順次収録予定です',
+      muniList,
+      crumbPref:s.pref||'山梨県', crumbMuni:s.muni||'甲府市', yearLabel,
+      fyToggle, fyClose:()=>this.setState({fyOpen:false}), fyOpen:!!s.fyOpen, fyX:s.fyX||0, fyY:s.fyY||0, fyOptions,
+      hasStages, stageTabs, stageFlow,
+      navTabs,
+      dashTitle:`${data.name}の予算`, totalFmt:fmtV(totalNow),
+      totalFmtAnim:React.createElement(CountUpNum, { value: totalNow, fmt: fmtV }),
+      yoy: isCurFy ? data.yoy : FY_YOY[fy],
+      dashPanels, themeStrip, featured,
+      goThemes:()=>this.nav({screen:'themes'}), goHistory:()=>this.nav({screen:'history'}),
+      drillSideTabs, drillCrumbs, drillLevelLabel: isProjLevel ? '事業' : levelNames[Math.min(depth,3)],
+      drillTitle:nodeName, drillTotalFmt:fmtOku(nodeTotal), drillDonutBg:donutBg(nodeItems, hoverFor('drill')),
+      drillRows, hasRelated:drillRelated.length>0, drillRelated, drillEvidence,
+      drillTipMove:this.mkDonutTip(nodeItems, nodeTotal, data.pop, 'drill'),
+      drillSub:subV(nodeTotal),
+      tipShow:!!(s.tip && s.tip.title), tipX:s.tip?s.tip.x:0, tipY:s.tip?s.tip.y:0,
+      tipTitle:s.tip?s.tip.title:'', tipSw:s.tip?s.tip.sw:'#14181C',
+      tipAmtLine:(s.tip && s.tip.amt) ? `${s.tip.amt}（${s.tip.pct}）` : '',
+      tipDesc:s.tip?(s.tip.desc||''):'',
+      hideTip:this.hideTip,
+      gRev:this.mkGloss('歳入'), gExp:this.mkGloss('歳出'), gKanmoku:this.mkGloss('款・項・目・節'),
+      gGenkei:this.mkGloss('予算現額'), gRate:this.mkGloss('執行率'), gFuyou:this.mkGloss('不用額'),
+      perCapitaLine: isPer
+        ? `総額 ${fmtOku(totalNow)} ・ 1世帯あたり ${(totalNow*1e8/data.households/1e4).toFixed(1)}万円`
+        : `市民1人あたり ${(totalNow*1e8/data.pop/1e4).toFixed(1)}万円 ・ 1世帯あたり ${(totalNow*1e8/data.households/1e4).toFixed(1)}万円`,
+      unitTabs,
+      isSimilar: screen==='similar', isSources: screen==='sources',
+      goSources:()=>this.nav({screen:'sources'}), goDash:()=>this.nav({screen:'dash'}),
+      similarRows:SIMILAR.map(r => {
+        const cols = [PALETTE[0], PALETTE[1], PALETTE[2], PALETTE[4], '#C6D2DA'];
+        const sHover = hoverFor('sim-' + r.name);
+        return { name:r.name, pop:r.pop, totalFmt:fmtOku(r.total), perCap:r.perCap,
+          bg: r.self ? '#E3F4FC' : 'transparent', fw: r.self ? '700' : '500',
+          badge: r.self ? 'このまち' : '',
+          segs: r.mix.map((p,i) => ({ w:String(p), sw:(sHover==null||sHover===i)?cols[i]:fadeColor(cols[i]),
+            tipMove:this.mkSegTip(`${r.name}・${SIM_MIX_COLS[i]}`, p + '%', '歳出構成比', cols[i], { key:'sim-' + r.name, idx:i }) })) };
+      }),
+      simLegend:SIM_MIX_COLS.map((n,i) => ({ name:n, sw:[PALETTE[0], PALETTE[1], PALETTE[2], PALETTE[4], '#C6D2DA'][i] })),
+      sourcesRows:SOURCES,
+      themeCards, ...themeVals,
+      ...projVals, goBack:()=>this.nav({screen:s.prevScreen||'dash'}),
+      compTabs, compRows,
+      compPrevLabel:`令和${FY_NUM[fy]-1}年度`, compCurLabel:`令和${FY_NUM[fy]}年度`,
+      compPrevTotal:fmtV(compPrevSum), compCurTotal:fmtV(compCurSum), compSub:subV(compCurSum),
+      compTotalDelta:(compDelta>=0?'+':'−')+fmtV(Math.abs(compDelta)),
+      compTotalPct:(compDelta>=0?'+':'−')+(Math.abs(compDelta)/compPrevSum*100).toFixed(1)+'%',
+      compTotalFg: compDelta>=0?'#0F76A3':'#C25400',
+      histTabs, histYearTitle:hist.title, histOverallRate:(hSpent/hBudget*100).toFixed(1)+'%',
+      histOverallBarW:(hSpent/hBudget*100).toFixed(1), histBudgetFmt:fmtV(hBudget), histSpentFmt:fmtV(hSpent),
+      histSub:subV(hSpent),
+      histRows, histEvidence,
+    };
+  }
+}
+</script>
+</body>
+</html>
