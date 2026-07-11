@@ -1,6 +1,12 @@
 {
   "sourceId": "soumu-shichoson-kessan-r6",
-  "validatedAt": "2026-07-11T16:57:11.255Z",
+  "validatedAt": "2026-07-11T17:24:08.646Z",
   "status": "ok",
-  "issues": []
+  "issues": [
+    {
+      "level": "warning",
+      "muniCode": "242161",
+      "message": "242161 伊賀市: 歳入科目の和 50516979 が歳入総額 50516978 と一致しません（差 1）"
+    }
+  ]
 }

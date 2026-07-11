@@ -74,6 +74,26 @@ export const muniAccountFactSchema = z.object({
   expenditureByPurposeDetail: z
     .record(z.string(), z.record(z.string(), z.number()))
     .optional(),
+  /** 歳入の科目別（地方税・地方交付税・国庫支出金…）。キーは資料の科目名そのまま */
+  revenueByCategory: z.record(z.string(), z.number()).optional(),
+  /** 歳入の内訳（科目名 → 内訳名 → 千円）。「うち〜」の部分列挙を含むことに注意 */
+  revenueByCategoryDetail: z
+    .record(z.string(), z.record(z.string(), z.number()))
+    .optional(),
+  /** 面積（km²・概況の記載値） */
+  areaKm2: z.number().optional(),
+  /** 産業構造（令和2年国調・%） */
+  industryPct: z
+    .object({ primary: z.number(), secondary: z.number(), tertiary: z.number() })
+    .optional(),
+  /** 財政力指数 */
+  financialIndex: z.number().optional(),
+  /** 経常収支比率（%） */
+  keijoShushiPct: z.number().optional(),
+  /** 実質公債費比率（%） */
+  jisshitsuKosaihiPct: z.number().optional(),
+  /** 将来負担比率（%）。「-」の団体は欠損 */
+  shoraiFutanPct: z.number().optional(),
   /** 主たる出典位置（概況ファイルの行）。normalized の sourceRef になる */
   locator: locatorSchema,
   /** 複数ファイルから合成した場合の全出典位置（locator を含む） */
@@ -235,6 +255,25 @@ export const normalizedMuniAccountSchema = z.object({
   revenueTotal: z.number().nullable(),
   expenditureTotal: z.number().nullable(),
   expenditureByPurpose: z.partialRecord(standardPurposeSchema, z.number()),
+  /** 目的別歳出の項レベル内訳（款名 → 項名 → 千円） */
+  expenditureByPurposeDetail: z
+    .record(z.string(), z.record(z.string(), z.number()))
+    .optional(),
+  /** 歳入の科目別（資料の標準科目名のまま） */
+  revenueByCategory: z.record(z.string(), z.number()).optional(),
+  /** 歳入の内訳（「うち〜」の部分列挙を含む） */
+  revenueByCategoryDetail: z
+    .record(z.string(), z.record(z.string(), z.number()))
+    .optional(),
+  /** 基本情報・財政指標（概況の記載値） */
+  areaKm2: z.number().optional(),
+  industryPct: z
+    .object({ primary: z.number(), secondary: z.number(), tertiary: z.number() })
+    .optional(),
+  financialIndex: z.number().optional(),
+  keijoShushiPct: z.number().optional(),
+  jisshitsuKosaihiPct: z.number().optional(),
+  shoraiFutanPct: z.number().optional(),
   /** 1人あたり歳出（円）。population が無い場合は null */
   expenditurePerCapitaYen: z.number().nullable(),
   /** 来歴: どのソースのどの位置から来たか */

@@ -23,8 +23,10 @@ export const SOURCES: SourceEntry[] = [
     url: null,
     urls: [
       "https://www.soumu.go.jp/main_content/001061669.xlsx", // 都市別 (1)概況
+      "https://www.soumu.go.jp/main_content/001061670.xlsx", // 都市別 (2)歳入内訳
       "https://www.soumu.go.jp/main_content/001061671.xlsx", // 都市別 (3)目的別歳出内訳
       "https://www.soumu.go.jp/main_content/001061674.xlsx", // 町村別 (1)概況
+      "https://www.soumu.go.jp/main_content/001061675.xlsx", // 町村別 (2)歳入内訳
       "https://www.soumu.go.jp/main_content/001061676.xlsx", // 町村別 (3)目的別歳出内訳
     ],
     landingPage: "https://www.soumu.go.jp/iken/zaisei/r06_shichouson.html",

@@ -25,6 +25,16 @@ const PURPOSE_COLUMNS = [
   "前年度繰上充用金",
 ] as const;
 
+// 歳入内訳ファイルの科目（一〜二十八）。名前は資料表記のまま
+const REVENUE_COLUMNS = [
+  "地方税", "地方譲与税", "利子割交付金", "配当割交付金", "株式等譲渡所得割交付金",
+  "分離課税所得割交付金", "地方消費税交付金", "ゴルフ場利用税交付金", "自動車取得税交付金",
+  "軽油引取税交付金", "自動車税環境性能割交付金", "法人事業税交付金", "地方特例交付金等",
+  "地方交付税", "交通安全対策特別交付金", "分担金及び負担金", "使用料", "手数料",
+  "国庫支出金", "国有提供施設等所在市町村助成交付金", "都道府県支出金", "財産収入",
+  "寄附金", "繰入金", "繰越金", "諸収入", "地方債", "特別区財政調整交付金",
+] as const;
+
 const normalize = (s: unknown): string =>
   String(s ?? "").replace(/[\s　\r\n]/g, "");
 
@@ -81,6 +91,14 @@ interface PartialFact {
   expenditureTotal?: number | null;
   expenditureByPurpose?: Record<string, number>;
   expenditureByPurposeDetail?: Record<string, Record<string, number>>;
+  revenueByCategory?: Record<string, number>;
+  revenueByCategoryDetail?: Record<string, Record<string, number>>;
+  areaKm2?: number;
+  industryPct?: { primary: number; secondary: number; tertiary: number };
+  financialIndex?: number;
+  keijoShushiPct?: number;
+  jisshitsuKosaihiPct?: number;
+  shoraiFutanPct?: number;
   locator: Locator;
 }
 
@@ -140,67 +158,98 @@ function parseOneFile(
   })();
   const revCol = colOf("歳入総額");
   const expCol = colOf("歳出総額");
+  // 概況の基本情報・財政指標列（面積・産業構造・財政力指数など）。
+  // 「経常収支比率」は includes 一致だが、「減収補塡債…除いた経常収支比率」より
+  // 左にある素の列が先に一致する
+  const areaCol = colOf("面積");
+  // 産業構造は「産業構造(令和2年国調)」の結合セル下に 第１次/第２次/第３次 が並ぶ
+  const indCol = (label: string): number => {
+    for (let c = 0; c < refStart; c++) {
+      if ((h0[c] ?? "").includes("産業構造") && (h1[c] ?? "") === label) return c;
+    }
+    return -1;
+  };
+  const ind1Col = indCol("第１次");
+  const ind2Col = indCol("第２次");
+  const ind3Col = indCol("第３次");
+  const finIdxCol = colOf("財政力指数");
+  const keijoCol = colOf("経常収支比率");
+  const jkhCol = colOf("実質公債費比率");
+  const sfhCol = colOf("将来負担比率");
 
-  // 目的別歳出の列解決:
+  // 科目リストに対して 総額列・合算グループ列・内訳（項レベル）列を解決する。
+  // 歳出（目的別）と歳入で共通のヘッダパターン:
   // - 総額列: ヘッダ先頭行が科目名そのもの（フィクスチャ）、または
-  //   先頭行が款番号（漢数字のみ）で2行目が科目名（実ファイル）
-  // - 総額列がない科目（労働費・諸支出金）: 先頭行が「<款番号><科目名>」の
+  //   先頭行が科目番号（漢数字のみ）で2行目が科目名（実ファイル）
+  // - 総額列がない科目（労働費・諸支出金）: 先頭行が「<番号><科目名>」の
   //   結合セルで内訳列だけが並ぶ → 小計列を除いた内訳列を合算する
-  const purposeTotalCols: [string, number][] = [];
-  const purposeGroupCols: [string, number[]][] = [];
-  for (const p of PURPOSE_COLUMNS) {
-    let total = -1;
-    const group: number[] = [];
-    for (let c = 0; c < refStart; c++) {
-      const top = h0[c] ?? "";
-      const mid = h1[c] ?? "";
-      const sub = h2[c] ?? "";
-      if (top === p) total = total < 0 ? c : total; // フィクスチャ形式
-      else if (isKanjiNoOnly(top) && top !== "" && mid === p) total = total < 0 ? c : total; // 実ファイルの総額列
-      else if (stripKanjiNo(top) === p && top !== p && !mid.includes("小計") && !sub.includes("小計")) {
-        group.push(c); // 総額列のない款の内訳列
-      }
-      if (total >= 0) break;
-    }
-    if (total >= 0) purposeTotalCols.push([p, total]);
-    else if (group.length > 0) purposeGroupCols.push([p, group]);
-  }
-  if (purposeTotalCols.length === 0 && purposeGroupCols.length === 0 && revCol < 0 && expCol < 0) {
-    throw new Error(
-      `${filename}: 目的別歳出・歳入歳出総額のいずれの列も見つかりません。対象外のファイルの可能性があります。\nヘッダ: ${h0.join(" | ")}`,
-    );
-  }
-
-  // 項レベル内訳の列解決。各款の内訳ブロック（h0 が「<款名>内訳」または
-  // 「<款番号><款名>」の結合セル）の中で:
-  // - 直下の項: h1 が連番（"1"〜）で h2 が項名（例: 総務費内訳/1/総務管理費）
-  // - 入れ子の項（都市計画費・保健体育費）: h1 が「<連番><項名>」で
-  //   h2 が "(1)"…、h3 が目名 → 目列を合算して項とする（小計列は除外）
-  const detailCols = new Map<string, Map<string, number[]>>(); // 款 → 項 → 列
-  for (const p of PURPOSE_COLUMNS) {
-    const isGroupTop = (top: string) =>
-      top === `${p}内訳` || (top !== p && stripKanjiNo(top) === p);
-    for (let c = 0; c < refStart; c++) {
-      const top = h0[c] ?? "";
-      if (!isGroupTop(top)) continue;
-      const mid = h1[c] ?? "";
-      const sub = h2[c] ?? "";
-      const sub2 = h3[c] ?? "";
-      if ([mid, sub, sub2].some((s) => s.includes("小計"))) continue;
-      let kou: string | null = null;
-      if (/^\d+$/.test(mid) && sub) {
-        kou = sub; // 直下の項
-      } else {
-        const m = mid.match(/^\d+(.{2,})$/);
-        if (m && !mid.includes("内訳") && sub.startsWith("(") && sub2) {
-          kou = m[1]!; // 入れ子の項（目列の合算）
+  // - 内訳（項レベル）: 「<科目名>内訳」ブロックの中で、
+  //   直下: h1 が連番・h2 が名前（例: 総務費内訳/1/総務管理費）
+  //   入れ子: h1 が「<連番><名前>」・h2 が "(1)"…・h3 が下位名
+  //   （例: 土木費内訳/5都市計画費/(1)/街路費、使用料内訳/1授業料/(1)/高等学校）
+  //   → 下位列を合算して項とする（小計列は除外）
+  const resolveCategories = (list: readonly string[]) => {
+    const totalCols: [string, number][] = [];
+    const groupCols: [string, number[]][] = [];
+    const detailCols = new Map<string, Map<string, number[]>>(); // 科目 → 内訳名 → 列
+    for (const p of list) {
+      let total = -1;
+      const group: number[] = [];
+      for (let c = 0; c < refStart; c++) {
+        const top = h0[c] ?? "";
+        const mid = h1[c] ?? "";
+        const sub = h2[c] ?? "";
+        if (top === p) total = total < 0 ? c : total; // フィクスチャ形式
+        else if (isKanjiNoOnly(top) && top !== "" && mid === p) total = total < 0 ? c : total;
+        else if (stripKanjiNo(top) === p && top !== p && !mid.includes("小計") && !sub.includes("小計")) {
+          group.push(c);
         }
+        if (total >= 0) break;
       }
-      if (!kou) continue;
-      const byKou = detailCols.get(p) ?? new Map<string, number[]>();
-      byKou.set(kou, [...(byKou.get(kou) ?? []), c]);
-      detailCols.set(p, byKou);
+      if (total >= 0) totalCols.push([p, total]);
+      else if (group.length > 0) groupCols.push([p, group]);
+
+      const isGroupTop = (top: string) =>
+        top === `${p}内訳` || (top !== p && stripKanjiNo(top) === p);
+      for (let c = 0; c < refStart; c++) {
+        const top = h0[c] ?? "";
+        if (!isGroupTop(top)) continue;
+        const mid = h1[c] ?? "";
+        const sub = h2[c] ?? "";
+        const sub2 = h3[c] ?? "";
+        if ([mid, sub, sub2].some((s) => s.includes("小計"))) continue;
+        let kou: string | null = null;
+        if (/^\d+$/.test(mid) && sub) {
+          kou = sub; // 直下の内訳
+        } else {
+          const m = mid.match(/^\d+(.{2,})$/);
+          if (m && !mid.includes("内訳") && sub.startsWith("(") && sub2) {
+            kou = m[1]!; // 入れ子の内訳（下位列の合算）
+          }
+        }
+        if (!kou) continue;
+        const byKou = detailCols.get(p) ?? new Map<string, number[]>();
+        byKou.set(kou, [...(byKou.get(kou) ?? []), c]);
+        detailCols.set(p, byKou);
+      }
     }
+    return { totalCols, groupCols, detailCols };
+  };
+  const expCat = resolveCategories(PURPOSE_COLUMNS);
+  const revCat = resolveCategories(REVENUE_COLUMNS);
+  const purposeTotalCols = expCat.totalCols;
+  const purposeGroupCols = expCat.groupCols;
+  const detailCols = expCat.detailCols;
+  if (
+    purposeTotalCols.length === 0 &&
+    purposeGroupCols.length === 0 &&
+    revCat.totalCols.length === 0 &&
+    revCol < 0 &&
+    expCol < 0
+  ) {
+    throw new Error(
+      `${filename}: 目的別歳出・歳入内訳・歳入歳出総額のいずれの列も見つかりません。対象外のファイルの可能性があります。\nヘッダ: ${h0.join(" | ")}`,
+    );
   }
 
   const facts: PartialFact[] = [];
@@ -234,6 +283,27 @@ function parseOneFile(
         detail[p][kou] = vs.reduce((a, b) => a + b, 0);
       }
     }
+    // 歳入内訳ファイルの科目・内訳
+    const byRevenue: Record<string, number> = {};
+    for (const [p, col] of revCat.totalCols) {
+      const v = toNumber(row[col]);
+      if (v != null) byRevenue[p] = v;
+    }
+    let revenueDetail: Record<string, Record<string, number>> | undefined;
+    for (const [p, byKou] of revCat.detailCols) {
+      for (const [kou, cols] of byKou) {
+        const vs = cols.map((c) => toNumber(row[c])).filter((v): v is number => v != null);
+        if (vs.length === 0) continue;
+        revenueDetail ??= {};
+        revenueDetail[p] ??= {};
+        revenueDetail[p][kou] = vs.reduce((a, b) => a + b, 0);
+      }
+    }
+    const pct = (col: number): number | undefined => {
+      if (col < 0) return undefined;
+      const v = toNumber(row[col]);
+      return v == null ? undefined : v;
+    };
     facts.push({
       muniCode,
       prefName: prefCol >= 0 ? String(row[prefCol] ?? "").trim() : currentPref,
@@ -244,6 +314,22 @@ function parseOneFile(
       expenditureByPurpose:
         purposeTotalCols.length + purposeGroupCols.length > 0 ? byPurpose : undefined,
       expenditureByPurposeDetail: detail,
+      revenueByCategory: revCat.totalCols.length > 0 ? byRevenue : undefined,
+      revenueByCategoryDetail: revenueDetail,
+      areaKm2: pct(areaCol),
+      industryPct:
+        ind1Col >= 0 && ind2Col >= 0 && ind3Col >= 0
+          ? (() => {
+              const p1 = pct(ind1Col), p2 = pct(ind2Col), p3 = pct(ind3Col);
+              return p1 != null && p2 != null && p3 != null
+                ? { primary: p1, secondary: p2, tertiary: p3 }
+                : undefined;
+            })()
+          : undefined,
+      financialIndex: pct(finIdxCol),
+      keijoShushiPct: pct(keijoCol),
+      jisshitsuKosaihiPct: pct(jkhCol),
+      shoraiFutanPct: pct(sfhCol),
       locator: { file: filename, sheet: sheetName, row: i + 1 }, // 1-origin（Excel表示行）
     });
   }
@@ -275,6 +361,16 @@ export function parseShichosonKessan(
           ...(part.expenditureByPurposeDetail
             ? { expenditureByPurposeDetail: part.expenditureByPurposeDetail }
             : {}),
+          ...(part.revenueByCategory ? { revenueByCategory: part.revenueByCategory } : {}),
+          ...(part.revenueByCategoryDetail
+            ? { revenueByCategoryDetail: part.revenueByCategoryDetail }
+            : {}),
+          ...(part.areaKm2 != null ? { areaKm2: part.areaKm2 } : {}),
+          ...(part.industryPct ? { industryPct: part.industryPct } : {}),
+          ...(part.financialIndex != null ? { financialIndex: part.financialIndex } : {}),
+          ...(part.keijoShushiPct != null ? { keijoShushiPct: part.keijoShushiPct } : {}),
+          ...(part.jisshitsuKosaihiPct != null ? { jisshitsuKosaihiPct: part.jisshitsuKosaihiPct } : {}),
+          ...(part.shoraiFutanPct != null ? { shoraiFutanPct: part.shoraiFutanPct } : {}),
           locator: part.locator,
           locators: [part.locator],
         });
@@ -298,6 +394,24 @@ export function parseShichosonKessan(
           prev.expenditureByPurposeDetail[k] ??= d;
         }
       }
+      if (part.revenueByCategory) {
+        prev.revenueByCategory ??= {};
+        for (const [k, v] of Object.entries(part.revenueByCategory)) {
+          prev.revenueByCategory[k] ??= v;
+        }
+      }
+      if (part.revenueByCategoryDetail) {
+        prev.revenueByCategoryDetail ??= {};
+        for (const [k, d] of Object.entries(part.revenueByCategoryDetail)) {
+          prev.revenueByCategoryDetail[k] ??= d;
+        }
+      }
+      prev.areaKm2 ??= part.areaKm2;
+      prev.industryPct ??= part.industryPct;
+      prev.financialIndex ??= part.financialIndex;
+      prev.keijoShushiPct ??= part.keijoShushiPct;
+      prev.jisshitsuKosaihiPct ??= part.jisshitsuKosaihiPct;
+      prev.shoraiFutanPct ??= part.shoraiFutanPct;
       prev.locators!.push(part.locator);
     }
   }
