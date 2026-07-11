@@ -60,6 +60,10 @@ npm run start      # 本番サーバ
 npm run typecheck  # 型チェック
 ```
 
+コードを書く前に [CLAUDE.md](CLAUDE.md) と [docs/architecture.md](docs/architecture.md)（アーキテクチャ規約）、
+[docs/design-system.md](docs/design-system.md)（デザインシステム）を参照してください。
+デプロイ方針（未構築）は [docs/deploy.md](docs/deploy.md)。
+
 ## 注意
 
 本サイトはプロトタイプです。数値・事業名・資料名の多くはダミーを含みます。款レベルの
