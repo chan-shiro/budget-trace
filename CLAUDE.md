@@ -84,4 +84,4 @@ onKeyDown={(e) => {
 
 # デプロイ
 
-**Vercel を想定**（未構築）。GitHub リポジトリを Vercel に接続し、`main` への push で自動デプロイする方式。ビルド設定はデフォルトの Next.js プリセット + bun でよい。
+**Vercel（構築済み）**。チーム `philosophyhouse` のプロジェクト `budget-trace`。GitHub 連携済みで、`main` への push で本番へ自動デプロイされる（PR は Preview デプロイ）。本番 URL: https://budget-trace-tawny.vercel.app 。ビルド設定はデフォルトの Next.js プリセット + bun（`bun.lock` 自動検出）。環境変数は現状不要。CLI 操作は `bunx vercel`（`.vercel/` と `.env*` は gitignore）。

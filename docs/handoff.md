@@ -38,7 +38,8 @@ Claude Design のプロトタイプ（`project/予算トレース.dc.html`）を
 - **それ以外のアプリデータはまだ `src/client/lib/data.ts` の静的データ**（款レベルは甲府市公表の
   実データ、項以下・補正・執行率はダミー）
 - サーバー層（`src/server/` ほか）は**スケルトンのみ**。Hono/Inversify/CASL/Postgres は未導入
-- デプロイ未構築（Vercel 想定: GitHub 連携で main 自動デプロイ）
+- **デプロイ構築済み**: Vercel チーム `philosophyhouse` / プロジェクト `budget-trace`。
+  GitHub 連携で main push → 本番自動デプロイ。本番 https://budget-trace-tawny.vercel.app
 
 ## 3. 主要な決定事項（経緯つき）
 
@@ -87,8 +88,7 @@ Claude Design のプロトタイプ（`project/予算トレース.dc.html`）を
    — 表が複雑なので LLM 併用（抽出 → Zod 検証 → 整合チェック）を設計する、
    (b) アプリ接続 — `data.ts` の KOFU 款レベル（丸め値）を parsed の正確な値＋出典位置で
    置換する derive。項以下のダミー children は款合計に合わせて再スケールが必要
-2. **Vercel 接続**（GitHub 連携・main 自動デプロイ）
-3. サーバー層導入（Hono/Inversify/CASL/Postgres + Testcontainers）— data/ の DB 移行、
+2. サーバー層導入（Hono/Inversify/CASL/Postgres + Testcontainers）— data/ の DB 移行、
    `v` の型付け解消もこのタイミング。`*.gen.ts`（pipeline:derive の生成モジュール）も
    API 化して置き換える
 
