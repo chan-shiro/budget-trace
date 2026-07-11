@@ -239,6 +239,8 @@ interface KofuKanRowGen {
   yoy: number | null;
   ref: string;
   refLabel: string;
+  /** 表示グループの内訳（実データの款）。「諸収入・その他」のみ持つ */
+  children?: KofuKanRowGen[];
 }
 const kanRow = (
   name: string,
@@ -270,8 +272,8 @@ const groupedRevenue: KofuKanRowGen[] = REVENUE_GROUPS.map((g) => {
 const restFacts = revFacts.filter((f) => !(REVENUE_GROUPS as readonly string[]).includes(f.kanName));
 if (restFacts.length > 0) {
   const restPage = restFacts[0]!.locator.page ?? 0;
-  groupedRevenue.push(
-    kanRow(
+  groupedRevenue.push({
+    ...kanRow(
       "諸収入・その他",
       restFacts.reduce((a, f) => a + f.amount, 0),
       restFacts.every((f) => f.prevAmount != null)
@@ -280,7 +282,11 @@ if (restFacts.length > 0) {
       restPage,
       `予算書 p.${restPage}（残り${restFacts.length}款の合算）`,
     ),
-  );
+    // 合算グループだけは実データの款を内訳として持つ（ドリルダウン用）
+    children: restFacts
+      .map((f) => kanRow(f.kanName, f.amount, f.prevAmount, f.locator.page ?? 0))
+      .sort((a, b) => b.v - a.v),
+  });
 }
 const kofuRevenue = [...groupedRevenue].sort((a, b) => b.v - a.v);
 
@@ -298,6 +304,9 @@ const pagesOpts = (kofuSource.parserOptions ?? {}) as {
 };
 const kofuBudget = {
   fyLabel: "令和8年度 当初予算",
+  // 人口は総務省 R6 決算状況調の住民基本台帳人口（令7.1.1現在）。1人あたり換算に使う
+  population: self.population,
+  populationLabel: "住民基本台帳人口（令7.1.1現在）",
   totalOku: toOku(kofuDoc.expenditureTotal),
   prevTotalOku: kofuDoc.prevExpenditureTotal != null ? toOku(kofuDoc.prevExpenditureTotal) : null,
   yoyLabel: yoyTotal != null ? `${yoyTotal >= 0 ? "+" : ""}${yoyTotal.toFixed(1)}%` : "",
@@ -334,10 +343,14 @@ export interface KofuKanRow {
   ref: string;
   /** 来歴の画面表示用ラベル */
   refLabel: string;
+  /** 表示グループの内訳（実データの款）。「諸収入・その他」のみ持つ */
+  children?: KofuKanRow[];
 }
 
 export const KOFU_BUDGET: {
   fyLabel: string;
+  population: number;
+  populationLabel: string;
   totalOku: number;
   prevTotalOku: number | null;
   yoyLabel: string;
