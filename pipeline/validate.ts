@@ -74,6 +74,37 @@ function validateBudgetBook(d: BudgetBookDoc): void {
       message: `歳入合計 ${d.revenueTotal} と歳出合計 ${d.expenditureTotal} が一致しません（予算は同額編成のはず）`,
     });
   }
+
+  // 主な事業一覧の整合
+  if (d.projects) {
+    const kanBudget = new Map(
+      d.facts.filter((f) => f.side === "expenditure").map((f) => [f.kanName, f.amount]),
+    );
+    const seenNo = new Set<number>();
+    let prevNo = 0;
+    for (const p of d.projects) {
+      const tag = `事業 No.${p.no}「${p.name}」`;
+      if (seenNo.has(p.no)) issues.push({ level: "error", message: `${tag}: No が重複` });
+      seenNo.add(p.no);
+      if (p.no !== prevNo + 1) {
+        issues.push({ level: "warning", message: `${tag}: No が連番ではありません（直前 ${prevNo}）` });
+      }
+      prevNo = p.no;
+      if (p.amount <= 0) issues.push({ level: "error", message: `${tag}: 予算額が不正 (${p.amount})` });
+      // 一般会計の款に属する事業は款予算を超えられない（特別会計セクションは対象外）
+      const kb = kanBudget.get(p.kan);
+      if (kb != null && p.amount > kb) {
+        issues.push({ level: "error", message: `${tag}: 事業額 ${p.amount} が款「${p.kan}」の予算 ${kb} を超過` });
+      }
+      if (kb == null && !/会計$/.test(p.kan)) {
+        issues.push({ level: "error", message: `${tag}: 款「${p.kan}」が歳出款別一覧にありません` });
+      }
+      if (p.basicGoal && !/^(ひと|まち|魅力)(・(ひと|まち|魅力))*$/.test(p.basicGoal)) {
+        issues.push({ level: "warning", message: `${tag}: 基本目標が想定外（${p.basicGoal}）` });
+      }
+      if (!p.shisaku) issues.push({ level: "warning", message: `${tag}: 施策が空` });
+    }
+  }
 }
 
 if (doc.docType === "budget-book") {

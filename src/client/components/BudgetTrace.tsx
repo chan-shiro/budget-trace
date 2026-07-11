@@ -431,6 +431,23 @@ export default function BudgetTrace() {
     drillSideTabs, drillCrumbs, drillLevelLabel: isProjLevel ? "事業" : levelNames[Math.min(depth, 3)],
     drillTitle: nodeName, drillTotalFmt: fmtOku(nodeTotal), drillDonutBg: donutBg(nodeItems, hoverFor("drill")),
     drillRows, hasRelated: drillRelated.length > 0, drillRelated, drillEvidence,
+    // 予算資料「主な事業一覧」の実データ（款レベルのみ・甲府市 R8 当初のみ）。
+    // ダミーの PROJECTS（事業詳細デモ）とは別軸で、クリック遷移はしない
+    ...(() => {
+      const show = data === KOFU && isCurFy && side === "exp" && depth === 1;
+      const rows = show ? D.KOFU_PROJECTS.filter((p) => p.kan === nodeName) : [];
+      return {
+        hasRealProjects: rows.length > 0,
+        realProjects: rows.map((p) => ({
+          no: p.no, kubun: p.kubun ?? "", name: p.name,
+          bookName: p.budgetBookName ? `（${p.budgetBookName}）` : "",
+          amountFmt: fmtOku(p.amountOku), desc: p.description,
+          goal: p.basicGoal, shisaku: p.shisaku, refLabel: p.refLabel, refTitle: p.ref,
+        })),
+        realProjectsSourceUrl: D.KOFU_PROJECTS_SOURCE.url,
+        realProjectsSourceLabel: `出典：${D.KOFU_PROJECTS_SOURCE.title} 主な事業一覧 ${D.KOFU_PROJECTS_SOURCE.pagesLabel}`,
+      };
+    })(),
     // 予算書 PDF への実リンク（甲府市・R8 当初のみ。他年度・補正はダミーのまま）
     drillPdfUrl: data === KOFU && isCurFy ? D.KOFU_BUDGET.sourceUrl : "",
     dashSourceLabel: `出典：${D.KOFU_BUDGET.sourceTitle} ${D.KOFU_BUDGET.pagesLabel}（款は実データ・項以下は按分推計）`,

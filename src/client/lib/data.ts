@@ -362,6 +362,7 @@ export const GLOSS: Record<string, string> = {
 // 再生成: bun run pipeline:derive（normalized → similar.gen.ts）
 export { SIMILAR, SIM_MIX_COLS, SIMILAR_FY_LABEL, SIMILAR_EVIDENCE } from './similar.gen';
 export { KOFU_BUDGET } from './kofu.gen';
+export { KOFU_PROJECTS, KOFU_PROJECTS_SOURCE } from './projects.gen';
 
 // データ出典・更新日一覧（ダミー）
 export const SOURCES = [

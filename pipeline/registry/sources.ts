@@ -49,8 +49,8 @@ export const SOURCES: SourceEntry[] = [
     scope: "甲府市（一般会計）",
     license: "甲府市ウェブサイト掲載資料（利用条件は同サイト参照）",
     parser: "kofu-yosansho",
-    // 款別一覧の PDF ページ番号（1-origin）。資料の構成が変わったらここを更新する
-    parserOptions: { revenuePage: 12, expenditurePage: 13 },
+    // 款別一覧・主な事業一覧の PDF ページ番号（1-origin）。資料の構成が変わったらここを更新する
+    parserOptions: { revenuePage: 12, expenditurePage: 13, projectPages: { from: 14, to: 23 } },
   },
   {
     // 開発用フィクスチャ: 上記と同じ構造の小さな Excel を dev/make-fixture.ts が

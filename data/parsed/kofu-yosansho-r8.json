@@ -2,8 +2,8 @@
   "docType": "budget-book",
   "sourceId": "kofu-yosansho-r8",
   "parser": "kofu-yosansho",
-  "parserVersion": "0.1.0",
-  "parsedAt": "2026-07-11T14:39:38.174Z",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-07-11T15:27:51.891Z",
   "unit": "thousandYen",
   "fiscalYear": "R8",
   "account": "一般会計",
@@ -395,6 +395,1253 @@
       "locator": {
         "file": "r8toushoyosansiryou.pdf",
         "page": 13
+      }
+    }
+  ],
+  "projects": [
+    {
+      "kan": "総務費",
+      "no": 1,
+      "kubun": "新規",
+      "name": "インド・ウッタルプラデーシュ州への訪問",
+      "budgetBookName": "国際交流事業費",
+      "amount": 6881,
+      "description": "インド・ウッタルプラデーシュ州への訪問を通じ、人材・産業などの分野において、関係性を構築するなど持続的な発展を目指します。",
+      "basicGoal": "ひと",
+      "shisaku": "互いを尊重し共生できる社会の実現",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": 2,
+      "kubun": "拡充",
+      "name": "ジェンダー平等の推進",
+      "budgetBookName": "男女共同参画推進事業費",
+      "amount": 3424,
+      "description": "性別に関わらず誰もが互いを尊重し合う社会の実現に向け、日本女性会議レガシー講演会や性に関する講座の開催を通じて、ジェンダー平等に対する理解を促進します。",
+      "basicGoal": "ひと",
+      "shisaku": "互いを尊重し共生できる社会の実現",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": 3,
+      "kubun": "拡充",
+      "name": "【N】多文化共生の推進",
+      "budgetBookName": "多文化共生推進事業費",
+      "amount": 5220,
+      "description": "日本語教室の拡充による外国人住民の日本語能力の向上とセミナー等の実施により、外国人を雇用している企業の多文化共生に対する理解の醸成を図ります。",
+      "basicGoal": "ひと",
+      "shisaku": "互いを尊重し共生できる社会の実現",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": 4,
+      "kubun": "新規",
+      "name": "市ホームページのリニューアル",
+      "budgetBookName": "広報推進事業費",
+      "amount": 45487,
+      "description": "スマートフォン主流の時代に則した見やすさや使いやすいデザインへの変更、AIなど最新技術の活用のほか、システム面や管理・運用面の整備も含めたリニューアルを行います。",
+      "basicGoal": "ひと",
+      "shisaku": "地域とのつながり・愛着の醸成",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": 5,
+      "kubun": null,
+      "name": "【N】デマンド型乗合タクシーの実証運行事業",
+      "budgetBookName": "公共交通体系整備推進事業費",
+      "amount": 21259,
+      "description": "公共交通のセーフティネットとして高齢者の移動手段を確保する、「デマンド型乗合タクシー」の導入に向けて実証運行を行います。",
+      "basicGoal": "まち",
+      "shisaku": "生活を支えるインフラの整備・更新",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": 6,
+      "kubun": "新規",
+      "name": "早朝特急を利用する通学者への支援",
+      "budgetBookName": "在来鉄道の利便性向上事業費",
+      "amount": 2400,
+      "description": "通学者を対象に早朝特急券の購入費に対して補助を行うことで、早朝特急の利用促進及び人口転出抑制を図ります。",
+      "basicGoal": "まち",
+      "shisaku": "生活を支えるインフラの整備・更新",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": 7,
+      "kubun": null,
+      "name": "ふるさと応援寄附金の推進",
+      "budgetBookName": "ふるさと応援寄附金推進事業費",
+      "amount": 2390861,
+      "description": "ふるさと納税や企業版ふるさと納税を推進し、ジュエリーや果樹をはじめとする本市の魅力や地場産品等をPRします。",
+      "basicGoal": "魅力",
+      "shisaku": "宝飾をはじめとする地域産業を活かしたブランド力の強化",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": 8,
+      "kubun": "新規",
+      "name": "甲府ジュエリー認定証作成業務",
+      "budgetBookName": "ふるさと応援寄附金推進事業費",
+      "amount": 12606,
+      "description": "甲府ジュエリーの品質と付加価値の向上に繋げる取組として、ふるさと納税におけるジュエリーの返礼品に対して認定証を発行します。",
+      "basicGoal": "魅力",
+      "shisaku": "宝飾をはじめとする地域産業を活かしたブランド力の強化",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": 9,
+      "kubun": "新規",
+      "name": "【N】こうふFANクリエーションプロジェクト業務",
+      "budgetBookName": "シティプロモーション事業費",
+      "amount": 5500,
+      "description": "KOFUプロモーションデザインディレクターとの協働により、一貫性のある情報発信体制を構築し、戦略的かつ効果的な広報・PR等を実施します。",
+      "basicGoal": "魅力",
+      "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": 10,
+      "kubun": null,
+      "name": "【連】結婚への支援事業",
+      "budgetBookName": "連携推進事業費",
+      "amount": 893,
+      "description": "若者が希望する結婚を後押しするための「出会いの場」を創出するなど、圏域全体で結婚への支援に取り組みます。",
+      "basicGoal": "魅力",
+      "shisaku": "多様な主体との連携の推進",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": 11,
+      "kubun": "新規",
+      "name": "【連】MIRAITOやまなし将来発見プラットフォームの構築",
+      "budgetBookName": "移住・定住促進事業費",
+      "amount": 9757,
+      "description": "MIRAITOやまなし将来発見バスツアーに加え、ツアー参加者向け交流会やSNSを通じて、地元と繋がるプラットフォームを構築し、若者の回帰・定着に向けた意識の醸成を図ります。",
+      "basicGoal": "魅力",
+      "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": 12,
+      "kubun": null,
+      "name": "【連】圏域の高校と連携した探究コンペティションの実施",
+      "budgetBookName": "移住・定住促進事業費",
+      "amount": 200,
+      "description": "郷土愛を育むため、圏域内の高校を対象とした地域課題の探究学習の成果を発表するコンペティションを実施します。",
+      "basicGoal": "魅力",
+      "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": 13,
+      "kubun": "新規",
+      "name": "【N】リニア駅前エリアに係るコンセプトブック策定等業務",
+      "budgetBookName": "リニアプロジェクト推進事業費",
+      "amount": 29882,
+      "description": "リニア新時代の“こうふく”のあり方や“こうふく”な駅前空間の実現方法など、基本計画の方向性を示す「コンセプトブック」を策定します。",
+      "basicGoal": "魅力",
+      "shisaku": "リニア開業を見据えたまちづくりの展開",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": 14,
+      "kubun": "新規",
+      "name": "【N】リニア駅前エリアのVRによる都市空間検討業務",
+      "budgetBookName": "リニアプロジェクト推進事業費",
+      "amount": 10000,
+      "description": "市民等のまちづくりへの関心を高めるべく、リニア駅前エリア内の各種施設の3D都市モデルを作成し、まちのイメージを可視化します。",
+      "basicGoal": "魅力",
+      "shisaku": "リニア開業を見据えたまちづくりの展開",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": 15,
+      "kubun": "新規",
+      "name": "全庁業務量調査の実施",
+      "budgetBookName": "情報システム事業費",
+      "amount": 10186,
+      "description": "全庁横断的な業務量調査により、業務効率化を阻害する根本的原因（ボトルネック）を特定し、更なる業務改善を推進します。",
+      "basicGoal": "魅力",
+      "shisaku": "将来にわたり持続可能な行財政運営の推進",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": 16,
+      "kubun": "新規",
+      "name": "第二期照明設備一括更新事業",
+      "budgetBookName": "公共施設等マネジメント推進事業費",
+      "amount": 267492,
+      "description": "市内約120ヶ所の公共施設のLED化工事を、公共施設等マネジメントの視点を踏まえて、効率的に行います。（R8～R9継続費設定）",
+      "basicGoal": "魅力",
+      "shisaku": "将来にわたり持続可能な行財政運営の推進",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": 17,
+      "kubun": "新規",
+      "name": "コンビニ交付サービス利用促進事業",
+      "budgetBookName": "戸籍住民基本台帳費",
+      "amount": 11557,
+      "description": "コンビニ交付サービスの更なる利用促進を図るため、コンビニ交付専用マルチコピー機による証明書取得体験支援を実施するとともに、非居住者の戸籍等コンビニ交付サービスを開始します。",
+      "basicGoal": "魅力",
+      "shisaku": "将来にわたり持続可能な行財政運営の推進",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": 18,
+      "kubun": "新規",
+      "name": "窓口センターにおけるマイナンバーカード申請・受取りの開始",
+      "budgetBookName": "窓口センター費、個人番号制度管理事業費",
+      "amount": 7803,
+      "description": "各窓口センターにおいてもマイナンバーカードの申請・受取りができるよう、窓口体制の整備を実施します。",
+      "basicGoal": "魅力",
+      "shisaku": "将来にわたり持続可能な行財政運営の推進",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": 19,
+      "kubun": "新規",
+      "name": "訪問調査モバイル導入",
+      "budgetBookName": "介護保険対策事業費",
+      "amount": 19845,
+      "description": "介護認定調査に訪問調査モバイルを導入することで、調査から審査完了までに係る日数の短縮に繋げ、速やかに介護サービスの提供を開始できるよう事務の効率化を図ります。",
+      "basicGoal": "ひと",
+      "shisaku": "自分らしく暮らせる福祉の充実",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": 20,
+      "kubun": "拡充",
+      "name": "老人保護措置費の充実",
+      "budgetBookName": "老人保護措置費",
+      "amount": 408196,
+      "description": "高齢者のセーフティネットとして重要な役割を有している、養護老人ホームに対する老人保護措置費の支弁額の改定を行います。",
+      "basicGoal": "ひと",
+      "shisaku": "自分らしく暮らせる福祉の充実",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": 21,
+      "kubun": null,
+      "name": "【N】終活サポート事業",
+      "budgetBookName": "成年後見制度普及促進事業費",
+      "amount": 8864,
+      "description": "住み慣れた地域で自分らしく暮らし安心して年を重ねることができるよう、単身高齢者等を対象とした終活に係る相談窓口を設置します。",
+      "basicGoal": "ひと",
+      "shisaku": "自分らしく暮らせる福祉の充実",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": 22,
+      "kubun": null,
+      "name": "各種障害福祉サービスの提供",
+      "budgetBookName": "自立支援サービス事業費、障害児通所支援事業費",
+      "amount": 7253963,
+      "description": "障がい児（者）が住み慣れた地域で安心して暮らせるよう日常生活に必要な訓練や生活能力の向上のためのサービスを提供します。",
+      "basicGoal": "ひと",
+      "shisaku": "自分らしく暮らせる福祉の充実",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": 23,
+      "kubun": "拡充",
+      "name": "日常生活用具給付物品の追加",
+      "budgetBookName": "地域生活支援事業費",
+      "amount": 2100,
+      "description": "停電時に医療的ケア児（者）が自宅にて医療を継続できるよう、新たにポータブル電源等を給付対象に追加します。",
+      "basicGoal": "ひと",
+      "shisaku": "自分らしく暮らせる福祉の充実",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": 24,
+      "kubun": "新規",
+      "name": "生活保護事務の効率化",
+      "budgetBookName": "生活保護総務費",
+      "amount": 6635,
+      "description": "生活保護システムに決裁機能を追加し、事務効率化を図ることで、被保護者への積極的な支援の拡充に繋げます。",
+      "basicGoal": "ひと",
+      "shisaku": "自分らしく暮らせる福祉の充実",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": 25,
+      "kubun": "新規",
+      "name": "圏域におけるヤングケアラー支援事業",
+      "budgetBookName": "子育て総合相談窓口運営事業費",
+      "amount": 3209,
+      "description": "ヤングケアラー支援における職員研修、理解促進、実態調査を圏域で一体となって行うことにより、スケールメリットを活かした効果的な事業展開を図ります。",
+      "basicGoal": "ひと",
+      "shisaku": "子育て・子育ちを支える環境づくり",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": 26,
+      "kubun": null,
+      "name": "【N】「",
+      "budgetBookName": "仮称）子ども応援拠点施設」の整備（（仮称）子ども応援拠点施設整備事業費",
+      "amount": 37015,
+      "description": "子どもを中心とした様々な世代の交流や運動遊びができる機能等を備えた「（仮称）子ども応援拠点施設」の整備に向けて、実施設計業務を行います。",
+      "basicGoal": "ひと",
+      "shisaku": "子育て・子育ちを支える環境づくり",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": 27,
+      "kubun": "新規",
+      "name": "保育所等における使用済みおむつの処分費の補助",
+      "budgetBookName": "教育・保育施設等運営給付費",
+      "amount": 3456,
+      "description": "子育て世帯の負担軽減を図るため、使用済みおむつの処分を行う保育所等に対し、経費の一部を補助します。",
+      "basicGoal": "ひと",
+      "shisaku": "子育て・子育ちを支える環境づくり",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": 28,
+      "kubun": "新規",
+      "name": "1か月児健康診査の実施",
+      "budgetBookName": "母子保健事業費",
+      "amount": 7441,
+      "description": "子育て世帯の経済的負担を軽減するとともに、疾病等の早期発見と適切な支援により乳児の健康の保持・増進を図るため、1か月児健康診査を実施します。",
+      "basicGoal": "ひと",
+      "shisaku": "子育て・子育ちを支える環境づくり",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": 29,
+      "kubun": "新規",
+      "name": "5歳児健康診査の実施に向けた体制整備",
+      "budgetBookName": "母子保健事業費",
+      "amount": 3918,
+      "description": "子どもの特性等の早期発見により就学前後の切れ目ない支援に繋げるため、令和9年度からの5歳児健康診査実施に向けた体制整備を進めます。",
+      "basicGoal": "ひと",
+      "shisaku": "子育て・子育ちを支える環境づくり",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": 30,
+      "kubun": "新規",
+      "name": "RSウイルスワクチンの定期接種化",
+      "budgetBookName": "各種予防費",
+      "amount": 32548,
+      "description": "生まれてくる子どものRSウイルス感染症による罹患及び重症化を予防するため、妊娠28週から36週6日までの妊婦に対してRSウイルスワクチン接種を実施します。",
+      "basicGoal": "ひと",
+      "shisaku": "健康に生活できる環境の整備",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": 31,
+      "kubun": "拡充",
+      "name": "高齢者インフルエンザ定期予防接種の助成",
+      "budgetBookName": "各種予防費",
+      "amount": 137413,
+      "description": "65歳以上の高齢者への従来の助成と合わせて、75歳以上の高齢者を対象に、より予防効果の高いインフルエンザワクチンの助成を行います。",
+      "basicGoal": "ひと",
+      "shisaku": "健康に生活できる環境の整備",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": 32,
+      "kubun": null,
+      "name": "【N】【連】在宅医療と介護連携の推進(健康政策推進事業費)",
+      "budgetBookName": null,
+      "amount": 13790,
+      "description": "近隣市町と連携する中で資源把握や人材育成を行うとともに、普及啓発イベントを通じて将来の医療・介護について考える機会を創出します。",
+      "basicGoal": "ひと",
+      "shisaku": "健康に生活できる環境の整備",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": 33,
+      "kubun": "拡充",
+      "name": "【N】民間企業と連携した働き盛り世代の健康づくり及びアプリを活用した健康づくり支援事業(健康政策推進事業費)",
+      "budgetBookName": null,
+      "amount": 9398,
+      "description": "青壮年期層の健康づくりを促進するため、民間企業と連携した従業員の健康づくりに関する伴走支援及びこうふ健康アプリを活用した健康づくり支援を実施します。",
+      "basicGoal": "ひと",
+      "shisaku": "健康に生活できる環境の整備",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": 34,
+      "kubun": "新規",
+      "name": "【N】職場対抗運動会(健康政策推進事業費)",
+      "budgetBookName": null,
+      "amount": 2119,
+      "description": "働き盛り世代を対象として、健康づくりの意識の醸成と運動習慣化を目的とした職場対抗運動会を実施します。",
+      "basicGoal": "ひと",
+      "shisaku": "健康に生活できる環境の整備",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": 35,
+      "kubun": "新規",
+      "name": "データ活用による分析業務(健康政策推進事業費)",
+      "budgetBookName": null,
+      "amount": 3000,
+      "description": "高齢者の健康課題に対する予防施策を効果的に展開するため、医療・介護・健診等の多様なデータを基に健康状態を分析します。",
+      "basicGoal": "ひと",
+      "shisaku": "健康に生活できる環境の整備",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": 36,
+      "kubun": null,
+      "name": "【N】自殺対策住民向け講演会",
+      "budgetBookName": "精神保健福祉事業費",
+      "amount": 285,
+      "description": "社会問題となっている女性や若者の自殺者数の増加への対策として、講演会を実施します。",
+      "basicGoal": "ひと",
+      "shisaku": "健康に生活できる環境の整備",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": 37,
+      "kubun": null,
+      "name": "【N】生涯を通じた歯・口腔の健康づくり",
+      "budgetBookName": "健康診査費",
+      "amount": 16748,
+      "description": "質の高い生活の基礎となる歯科口腔の健康保持のため、成人歯周疾患健診の受診勧奨による受診者数の増加に関する取組など、生涯を通じた歯・口腔の健康づくりを推進します。",
+      "basicGoal": "ひと",
+      "shisaku": "健康に生活できる環境の整備",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": 38,
+      "kubun": "新規",
+      "name": "【N】こうふエコ人材育成プロジェクト",
+      "budgetBookName": "地球温暖化対策事業費",
+      "amount": 390,
+      "description": "こうふグリーンラボ展示コーナーの活用強化に向けた取組として、特別ゲストを招き、水素について楽しく学べるイベントや小学生を対象とした水素実験教室を開催します。",
+      "basicGoal": "まち",
+      "shisaku": "心地よく暮らせる住環境の形成",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": 39,
+      "kubun": "新規",
+      "name": "【N】地域脱炭素パートナーズプログラム",
+      "budgetBookName": "地球温暖化対策事業費",
+      "amount": 6590,
+      "description": "市内事業者の脱炭素行動を促進することを目的に、省エネ・再エネ機器導入に向けたセミナーや伴走支援を行うとともに、脱炭素化を図る取組への後押しを実施します。",
+      "basicGoal": "まち",
+      "shisaku": "心地よく暮らせる住環境の形成",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": 40,
+      "kubun": "新規",
+      "name": "【N】タクシー事業者向け水素・燃料電池自動車導入助成事業",
+      "budgetBookName": "地球温暖化対策事業費",
+      "amount": 6000,
+      "description": "水素エネルギー普及啓発の促進に向け、タクシー事業者の水素・燃料電池自動車導入費用を補助します。",
+      "basicGoal": "まち",
+      "shisaku": "心地よく暮らせる住環境の形成",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "労働費",
+      "no": 41,
+      "kubun": null,
+      "name": "【N】【連】県央ネットやまなし合同企業説明会の開催",
+      "budgetBookName": "雇用促進対策事業費",
+      "amount": 14729,
+      "description": "圏域での就職マッチングを促進するため、圏域自治体による合同企業説明会を開催します。",
+      "basicGoal": "魅力",
+      "shisaku": "地域活力を支える産業の振興と雇用の創出",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "労働費",
+      "no": 42,
+      "kubun": null,
+      "name": "【N】【連】メタバース合同企業説明会の開催",
+      "budgetBookName": "雇用促進対策事業費",
+      "amount": 3916,
+      "description": "全国から誰でも気軽に参加できるようメタバースを活用したオンライン合同企業説明会を開催します。",
+      "basicGoal": "魅力",
+      "shisaku": "地域活力を支える産業の振興と雇用の創出",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "労働費",
+      "no": 43,
+      "kubun": "拡充",
+      "name": "雇用に係るインターンシップの利用促進",
+      "budgetBookName": "雇用促進対策事業費",
+      "amount": 2000,
+      "description": "地元企業の認知度向上や人材の育成・確保、若者の地元定着を図るため、企業への支援を拡大するとともに、県外学生のインターンシップの参加促進に取り組みます。",
+      "basicGoal": "魅力",
+      "shisaku": "地域活力を支える産業の振興と雇用の創出",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": 44,
+      "kubun": null,
+      "name": "ツキノワグマ対策の実施",
+      "budgetBookName": "森林保護事業費",
+      "amount": 483,
+      "description": "「緊急銃猟」を含めたツキノワグマへの対策を進める中で、市民生活の安全・安心の確保に取り組みます。",
+      "basicGoal": "まち",
+      "shisaku": "心地よく暮らせる住環境の形成",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": 45,
+      "kubun": null,
+      "name": "【連】圏域農産物の販売PR",
+      "budgetBookName": "産地保全強化対策事業費",
+      "amount": 1579,
+      "description": "県央ネットやまなしの圏域市町の農産物のPRのため、林政課が取り組むYAMAP×県央ネットやまなし「山のぼり・まち歩き」キャンペーンと連携を図り、デジタルバッジを活用した農産物の販促活動を実施します。",
+      "basicGoal": "魅力",
+      "shisaku": "地域活力を支える産業の振興と雇用の創出",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": 46,
+      "kubun": null,
+      "name": "【N】「半農半X」のサポート体制の充実",
+      "budgetBookName": "農業経営基盤強化促進対策事業費",
+      "amount": 452,
+      "description": "農業経験がない方でも不安なくチャレンジできるよう、農産物の栽培指導や農業機械の操作研修を行います。",
+      "basicGoal": "魅力",
+      "shisaku": "地域活力を支える産業の振興と雇用の創出",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": 47,
+      "kubun": null,
+      "name": "【N】【連】山のぼり・まち歩き促進事業",
+      "budgetBookName": "森林林業普及啓発事業費",
+      "amount": 10978,
+      "description": "県央ネットやまなしの圏域における登山を契機とした誘客の促進を図るため、登山用アプリを活用した「山のぼり・まち歩き」イベントを開催します。",
+      "basicGoal": "魅力",
+      "shisaku": "地域活力を支える産業の振興と雇用の創出",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": 48,
+      "kubun": null,
+      "name": "【N】中道南地区土地改良事業",
+      "budgetBookName": "農業施設等管理事業費",
+      "amount": 17399,
+      "description": "鳥獣被害防止対策を含む農業生産基盤整備を行い、優良農地の保全と営農環境の改善を図ります。",
+      "basicGoal": "魅力",
+      "shisaku": "地域活力を支える産業の振興と雇用の創出",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": 49,
+      "kubun": "新規",
+      "name": "ジュエリースタート事業",
+      "budgetBookName": "地場産業振興対策事業費",
+      "amount": 5850,
+      "description": "「ベビージュエリー」の普及に繋げるため、誕生を記念した宝石を贈呈します。",
+      "basicGoal": "魅力",
+      "shisaku": "宝飾をはじめとする地域産業を活かしたブランド力の強化",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": 50,
+      "kubun": "新規",
+      "name": "鯖江市との連携協定事業",
+      "budgetBookName": "地場産業振興対策事業費",
+      "amount": 5565,
+      "description": "「ものづくり」を軸に栄えてきた両市が、「つくる」をテーマに連携して課題解決に取り組み、地場産業の活性化と魅力の発信を行います。",
+      "basicGoal": "魅力",
+      "shisaku": "宝飾をはじめとする地域産業を活かしたブランド力の強化",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": 51,
+      "kubun": "新規",
+      "name": "【N】甲府市地場産品バスツアー造成支援事業補助金",
+      "budgetBookName": "地場産業振興対策事業費",
+      "amount": 1000,
+      "description": "地場産品の魅力や文化の発信等に向けたバスツアーを提供する事業者に向け、補助金を交付します。",
+      "basicGoal": "魅力",
+      "shisaku": "宝飾をはじめとする地域産業を活かしたブランド力の強化",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": 52,
+      "kubun": "新規",
+      "name": "【N】市内企業マッチング支援業務",
+      "budgetBookName": "産業立地等推進事業費",
+      "amount": 2266,
+      "description": "ノウハウを持つ民間事業者の聞き取りなどを通じて、市内企業が抱える課題を明確化し、スタートアップ企業と市内企業とのマッチング効果を高めます。",
+      "basicGoal": "魅力",
+      "shisaku": "地域活力を支える産業の振興と雇用の創出",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": 53,
+      "kubun": "新規",
+      "name": "【N】こうふ亀屋座のイルミネーション",
+      "budgetBookName": "観光施設整備事業費",
+      "amount": 6000,
+      "description": "新たな冬の風物詩として、こうふ亀屋座においてイルミネーション装飾を行います。",
+      "basicGoal": "魅力",
+      "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": 54,
+      "kubun": "新規",
+      "name": "【N】「信玄の湯湯村温泉」再開発事業への支援",
+      "budgetBookName": "観光開発事業費",
+      "amount": 460000,
+      "description": "観光地の高付加価値化に向けた「信玄の湯湯村温泉」の再開発事業への支援を行います。",
+      "basicGoal": "魅力",
+      "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": 55,
+      "kubun": "新規",
+      "name": "【N】華やかなりし小江戸甲府のVR等体験コンテンツの造成",
+      "budgetBookName": "観光開発事業費",
+      "amount": 22000,
+      "description": "「こうふ亀屋座」の更なる集客を図るため、デジタル技術（VR等）を活用した体験コンテンツを造成します。",
+      "basicGoal": "魅力",
+      "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": 56,
+      "kubun": "新規",
+      "name": "【N】緑が丘スポーツ公園第2期整備工事実施設計業務",
+      "budgetBookName": "緑が丘スポーツ公園整備事業費",
+      "amount": 66000,
+      "description": "「緑が丘スポーツ公園施設整備基本計画」に基づき、レクリエーションや生涯スポーツの振興を支える、からだとこころの元気交流拠点とするため、第2期整備工事のための実施設計を行います。",
+      "basicGoal": "ひと",
+      "shisaku": "健康に生活できる環境の整備",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": 57,
+      "kubun": "拡充",
+      "name": "【N】空き家バンク制度の推進",
+      "budgetBookName": "空家等対策推進事業費",
+      "amount": 5000,
+      "description": "「甲府市空き家バンク活用促進助成金制度」において、解体費への助成を新設し、空き家の更なる解消を目指します。",
+      "basicGoal": "まち",
+      "shisaku": "心地よく暮らせる住環境の形成",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": 58,
+      "kubun": null,
+      "name": "建築物耐震化の推進",
+      "budgetBookName": "建築物耐震化支援事業費",
+      "amount": 102432,
+      "description": "戸別訪問等を通じて耐震化の重要性や補助制度等について丁寧に説明することで、耐震化の更なる推進を図ります。",
+      "basicGoal": "まち",
+      "shisaku": "心地よく暮らせる住環境の形成",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": 59,
+      "kubun": null,
+      "name": "【N】都市計画道路の整備",
+      "budgetBookName": "城東三丁目敷島線整備事業費",
+      "amount": 413154,
+      "description": "快適で豊かな暮らしの実現に欠かせない都市計画道路の整備を推進するため、城東三丁目敷島線（伊勢工区）の用地交渉・用地取得及び道路築造工事を進めます。",
+      "basicGoal": "まち",
+      "shisaku": "生活を支えるインフラの整備・更新",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": 60,
+      "kubun": null,
+      "name": "【N】都市計画道路の整備",
+      "budgetBookName": "住吉四丁目善光寺線整備事業費",
+      "amount": 313904,
+      "description": "快適で豊かな暮らしの実現に欠かせない都市計画道路の整備を推進するため、住吉四丁目善光寺線（善光寺工区）の用地交渉・用地取得を進めます。",
+      "basicGoal": "まち",
+      "shisaku": "生活を支えるインフラの整備・更新",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": 61,
+      "kubun": null,
+      "name": "【N】都市計画道路の整備",
+      "budgetBookName": "高畑町昇仙峡線整備事業費",
+      "amount": 763425,
+      "description": "快適で豊かな暮らしの実現に欠かせない都市計画道路の整備を推進するため、高畑町昇仙峡線（池田工区）の用地交渉・用地取得を進めます。",
+      "basicGoal": "まち",
+      "shisaku": "生活を支えるインフラの整備・更新",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": 62,
+      "kubun": null,
+      "name": "甲府城周辺の整備",
+      "budgetBookName": "甲府城周辺地域活性化計画整備事業費",
+      "amount": 882,
+      "description": "甲府城周辺地域活性化計画整備事業に係る事前調査を実施します。",
+      "basicGoal": "魅力",
+      "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": 63,
+      "kubun": null,
+      "name": "甲府市都市計画マスタープランの策定",
+      "budgetBookName": "都市基本計画推進事業費",
+      "amount": 7676,
+      "description": "本市の総合計画に即した、都市計画の基本的な方針となる計画策定を引き続き進めます。",
+      "basicGoal": "まち",
+      "shisaku": "時代に合った良好な都市空間の形成",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": 64,
+      "kubun": null,
+      "name": "都市計画道路の見直し",
+      "budgetBookName": "都市基本計画推進事業費",
+      "amount": 9600,
+      "description": "社会経済情勢や交通需要の変化に的確に対応するため、目指すべき都市像を見据えた都市計画道路の見直し（整備・変更・廃止路線）を引き続き進めます。",
+      "basicGoal": "まち",
+      "shisaku": "時代に合った良好な都市空間の形成",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": 65,
+      "kubun": null,
+      "name": "朝日町通り沿線の整備",
+      "budgetBookName": "甲府駅周辺土地区画整理事業費",
+      "amount": 366123,
+      "description": "人々が住み・集いそして交流する、複合的な住みやすいまちに再生するため、朝日町通り沿線を中心に整備を進めます。",
+      "basicGoal": "まち",
+      "shisaku": "時代に合った良好な都市空間の形成",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": 66,
+      "kubun": null,
+      "name": "【N】遊亀公園・附属動物園の再整備",
+      "budgetBookName": "遊亀公園・附属動物園整備事業費",
+      "amount": 1341568,
+      "description": "多くの方々に愛され、人にも動物にも優しい遊亀公園・附属動物園を目指し、動物園内の獣舎や公園整備等を推進します。",
+      "basicGoal": "まち",
+      "shisaku": "時代に合った良好な都市空間の形成",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": 67,
+      "kubun": null,
+      "name": "【N】岡島百貨店跡地の再開発",
+      "budgetBookName": "優良建築物等整備事業費",
+      "amount": 21800,
+      "description": "まちなか再生の要の一つである岡島百貨店跡地の再開発に対し、優良建築物等整備事業の制度を活用した支援を行います。",
+      "basicGoal": "魅力",
+      "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": 68,
+      "kubun": null,
+      "name": "【N】まちなか未来ビジョンの推進",
+      "budgetBookName": "地域デザイン推進事業費",
+      "amount": 27561,
+      "description": "まちなか未来ビジョンの実現に向けて「甲府まちなかエリアプラットフォーム」を中心とした、公民連携による社会実験等の取組を推進します。",
+      "basicGoal": "魅力",
+      "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": 69,
+      "kubun": "新規",
+      "name": "玉諸分団本部拠点施設の建設工事に係る実施設計等",
+      "budgetBookName": "非常備消防費",
+      "amount": 7478,
+      "description": "令和9年度に建設を予定する玉諸分団本部拠点施設建設工事に係る実施設計及び地質調査業務を行います。",
+      "basicGoal": "まち",
+      "shisaku": "災害・感染症等に強い地域づくり",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": 70,
+      "kubun": "拡充",
+      "name": "避難所用防災備蓄品の拡充",
+      "budgetBookName": "防災対策整備事業費",
+      "amount": 1441,
+      "description": "避難所における良好な衛生環境や生活環境の整備に向け、妊産婦向けの衛生用品など、女性の視点に立った備蓄品を拡充します。",
+      "basicGoal": "まち",
+      "shisaku": "災害・感染症等に強い地域づくり",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": 71,
+      "kubun": "新規",
+      "name": "わが家の防災マニュアルの改訂",
+      "budgetBookName": "防災対策整備事業費",
+      "amount": 8455,
+      "description": "気象庁が新たに運用を開始する防災気象情報など、市民の迅速・適切な避難行動に資する情報をわかりやすく提供できるよう、わが家の防災マニュアルを改訂します。",
+      "basicGoal": "まち",
+      "shisaku": "災害・感染症等に強い地域づくり",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": 72,
+      "kubun": null,
+      "name": "【連】防災備蓄資機材",
+      "budgetBookName": "蓄電池及びソーラーパネル）の調達・共同利活用（防災対策整備事業費",
+      "amount": 18612,
+      "description": "避難所における生活環境の整備に向け、蓄電池及びソーラーパネルを「県央ネットやまなし」の圏域内の避難所に配備し、共同利活用を図ります。",
+      "basicGoal": "まち",
+      "shisaku": "災害・感染症等に強い地域づくり",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": 73,
+      "kubun": "新規",
+      "name": "【N】学校給食費の無償化",
+      "budgetBookName": "学校給食費、私立学校等就学者給食費等給付事業費",
+      "amount": 938564,
+      "description": "本市の児童生徒の保護者を対象に、学校給食費の負担軽減等を行うことで、教育環境の充実を図り、子育て支援を一層充実させます。",
+      "basicGoal": "ひと",
+      "shisaku": "誰もが学び、成長できる機会の創出",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": 74,
+      "kubun": "新規",
+      "name": "【N】児童生徒1人1台端末の更新",
+      "budgetBookName": "教材・情報環境整備事業費",
+      "amount": 624611,
+      "description": "経年劣化により故障・破損が増加しており、令和8年度に耐用年数を迎える児童生徒1人1台端末を更新します。",
+      "basicGoal": "ひと",
+      "shisaku": "誰もが学び、成長できる機会の創出",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": 75,
+      "kubun": null,
+      "name": "【N】新JIS規格児童生徒用机椅子の整備",
+      "budgetBookName": "維持管理費",
+      "amount": 112112,
+      "description": "1人1台端末や教科書等を同時に並べて置ける広さを有する新JIS規格の机椅子について、令和8年度は小学校3年生、4年生、中学校2年生分の入替えを実施します。",
+      "basicGoal": "ひと",
+      "shisaku": "誰もが学び、成長できる機会の創出",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": 76,
+      "kubun": null,
+      "name": "【N】「こうふ開府の日」記念イベントの開催",
+      "budgetBookName": "こうふ開府500年レガシー事業費",
+      "amount": 10076,
+      "description": "令和8年度は12月20日の「こうふ開府の日」が休日となることから、より多くの市民の方々にこうふの始まりの日を認識していただき、更なるこうふ愛の醸成に繋げます。",
+      "basicGoal": "ひと",
+      "shisaku": "誰もが学び、成長できる機会の創出",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": 77,
+      "kubun": "新規",
+      "name": "図書館開館100周年記念事業",
+      "budgetBookName": "図書館管理運営費",
+      "amount": 1786,
+      "description": "開館100周年を迎える令和8年度に記念展示などのイベントを開催し、更なる図書館活動の啓発と読書活動の推進を図ります。",
+      "basicGoal": "ひと",
+      "shisaku": "誰もが学び、成長できる機会の創出",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 23
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": 78,
+      "kubun": "新規",
+      "name": "【N】体育館への空調設備の整備",
+      "budgetBookName": "中学校体育館空調設備設置事業費、一般管理費（商業高校）",
+      "amount": 1368447,
+      "description": "「甲府市学校施設等体育館空調設備等整備基本方針」に基づき、子どもたちの安全・安心な教育環境を確保するため、また、災害時に避難所となる全市立中学校（R8.3月補正）及び甲府商業高等学校の体育館について、空調設備を整備します。",
+      "basicGoal": "ひと・まち",
+      "shisaku": "誰もが学び、成長できる機会の創出災害・感染症等に強い地域づくり（再掲）",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 23
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": 79,
+      "kubun": "拡充",
+      "name": "【N】不登校総合対策の推進",
+      "budgetBookName": "教育指導費（中学校）、教職員人事管理費、新しい時代を担う人づくり基金事業費",
+      "amount": 54196,
+      "description": "校内教育支援センター「ほっとルーム」を3校増設し、全市立中学校に設置することで、不登校対策を更に強化します。",
+      "basicGoal": "ひと",
+      "shisaku": "子育て・子育ちを支える環境づくり誰もが学び、成長できる機会の創出",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 23
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": 80,
+      "kubun": null,
+      "name": "【N】児童生徒支援センター",
+      "budgetBookName": "すてっぷ）の運営（学校危機管理体制整備事業費、教育研修所等管理運営費",
+      "amount": 36318,
+      "description": "令和5年度に開設した教育支援センター「すてっぷ」を継続して運営することで、不登校・特別支援教育・いじめ問題に対応します。",
+      "basicGoal": "ひと",
+      "shisaku": "子育て・子育ちを支える環境づくり",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 23
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": 81,
+      "kubun": "拡充",
+      "name": "部活動地域展開の実施",
+      "budgetBookName": "スポーツ振興事業費、文化芸術推進事業費",
+      "amount": 42341,
+      "description": "新たにバトミントン、卓球、陸上、ソフトボール、ハンドボール、吹奏楽、演劇等の地域クラブ設置を目指すなど、部活動の地域展開を更に推進します。",
+      "basicGoal": "ひと",
+      "shisaku": "健康に生活できる環境の整備地域とのつながり・愛着の醸成",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 23
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": 82,
+      "kubun": "新規",
+      "name": "第81回国民スポーツ大会冬季大会の開催経費",
+      "budgetBookName": "国民スポーツ大会冬季大会開催事業費",
+      "amount": 28950,
+      "description": "国民スポーツ大会冬季大会スケート競技会を令和9年2月に小瀬スポーツ公園にて開催します。",
+      "basicGoal": "ひと",
+      "shisaku": "健康に生活できる環境の整備",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 23
+      }
+    },
+    {
+      "kan": "介護保険事業特別会計",
+      "no": 83,
+      "kubun": "新規",
+      "name": "認知症高齢者等へのGPS機能付き機器購入費等の助成",
+      "budgetBookName": "認知症高齢者見守り事業費",
+      "amount": 393,
+      "description": "屋外での独り歩き認知症高齢者等を早期発見するために、GPS機能付き機器の購入費等を助成します。",
+      "basicGoal": "ひと",
+      "shisaku": "自分らしく暮らせる福祉の充実",
+      "locator": {
+        "file": "r8toushoyosansiryou.pdf",
+        "page": 23
       }
     }
   ]

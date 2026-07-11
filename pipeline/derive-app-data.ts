@@ -291,7 +291,11 @@ if (Math.abs(revSum - toOku(kofuDoc.revenueTotal)) > 1e-6) {
 }
 
 const yoyTotal = yoyPctOf(kofuDoc.expenditureTotal, kofuDoc.prevExpenditureTotal);
-const pagesOpts = (kofuSource.parserOptions ?? {}) as { revenuePage?: number; expenditurePage?: number };
+const pagesOpts = (kofuSource.parserOptions ?? {}) as {
+  revenuePage?: number;
+  expenditurePage?: number;
+  projectPages?: { from: number; to: number };
+};
 const kofuBudget = {
   fyLabel: "令和8年度 当初予算",
   totalOku: toOku(kofuDoc.expenditureTotal),
@@ -352,3 +356,56 @@ console.log(`✓ 甲府市 R8 款別予算を導出 → src/client/lib/kofu.gen.
 console.log(
   `  総額 ${kofuBudget.totalOku}億円（前年比 ${kofuBudget.yoyLabel}） / 歳入 ${kofuRevenue.length}グループ・歳出 ${kofuExpenditure.length}款`,
 );
+
+// ---- 主な事業一覧 → src/client/lib/projects.gen.ts ---------------------------
+if (kofuDoc.projects && kofuDoc.projects.length > 0) {
+  const projRows = kofuDoc.projects.map((p) => ({
+    kan: p.kan,
+    no: p.no,
+    kubun: p.kubun,
+    name: p.name,
+    budgetBookName: p.budgetBookName,
+    amountOku: toOku(p.amount),
+    description: p.description,
+    basicGoal: p.basicGoal,
+    shisaku: p.shisaku,
+    ref: `${kofuFile.filename}#p${p.locator.page}`,
+    refLabel: `予算資料 p.${p.locator.page}`,
+  }));
+  const projOut = `// このファイルは自動生成です。手で編集しないこと。
+// 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
+// 出典: ${kofuSource.title}「主な事業一覧」（${kofuFile.filename} sha256=${kofuFile.sha256.slice(0, 16)}…）
+// 金額は億円（資料の千円値を 1e5 で割った正確値）
+
+export interface KofuProject {
+  /** 歳出款または特別会計名 */
+  kan: string;
+  /** 資料の掲載番号（全体で連番） */
+  no: number;
+  kubun: "新規" | "拡充" | null;
+  /** 事業名（【N】=KOFU NEXT ACTION、【連】=県央ネットやまなし関連） */
+  name: string;
+  /** 予算書上の事業名（資料の下段（ ）書き） */
+  budgetBookName: string | null;
+  /** 予算額（億円） */
+  amountOku: number;
+  description: string;
+  /** 総合計画の基本目標（ひと/まち/魅力。複数は「・」連結） */
+  basicGoal: string;
+  /** 総合計画の施策 */
+  shisaku: string;
+  ref: string;
+  refLabel: string;
+}
+
+export const KOFU_PROJECTS: KofuProject[] = ${JSON.stringify(projRows, null, 2)};
+
+export const KOFU_PROJECTS_SOURCE = {
+  title: ${JSON.stringify(kofuSource.title)},
+  url: ${JSON.stringify(kofuUrl)},
+  pagesLabel: ${JSON.stringify(pagesOpts.projectPages ? `p.${pagesOpts.projectPages.from}–${pagesOpts.projectPages.to}` : "")},
+};
+`;
+  writeFileSync(join(process.cwd(), "src/client/lib/projects.gen.ts"), projOut, "utf8");
+  console.log(`✓ 主な事業一覧を導出 → src/client/lib/projects.gen.ts（${projRows.length}事業）`);
+}

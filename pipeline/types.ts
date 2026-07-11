@@ -103,6 +103,30 @@ export const budgetLineFactSchema = z.object({
 });
 export type BudgetLineFact = z.infer<typeof budgetLineFactSchema>;
 
+/** 予算資料「主な事業一覧」の1事業 */
+export const budgetProjectFactSchema = z.object({
+  /** 属するセクション: 歳出款（例: "総務費"）または特別会計名（例: "介護保険事業特別会計"） */
+  kan: z.string().min(1),
+  /** 款内の掲載番号（資料の No. 列） */
+  no: z.number().int().positive(),
+  /** 区分列（新規/拡充。無印は null） */
+  kubun: z.enum(["新規", "拡充"]).nullable(),
+  /** 事業名（【N】【連】マーカー含む、資料の表記のまま） */
+  name: z.string().min(1),
+  /** 下段（ ）書きの予算書上の事業名 */
+  budgetBookName: z.string().nullable(),
+  /** 予算額（千円） */
+  amount: z.number(),
+  /** 内容列の全文 */
+  description: z.string(),
+  /** 基本目標（ひと/まち/魅力。複数は「・」連結） */
+  basicGoal: z.string(),
+  /** 総合計画の施策 */
+  shisaku: z.string(),
+  locator: locatorSchema,
+});
+export type BudgetProjectFact = z.infer<typeof budgetProjectFactSchema>;
+
 export const budgetBookDocSchema = z.object({
   docType: z.literal("budget-book"),
   sourceId: z.string(),
@@ -119,6 +143,8 @@ export const budgetBookDocSchema = z.object({
   prevRevenueTotal: z.number().nullable(),
   prevExpenditureTotal: z.number().nullable(),
   facts: z.array(budgetLineFactSchema),
+  /** 「主な事業一覧」ページの抽出結果（ページ指定がある場合のみ） */
+  projects: z.array(budgetProjectFactSchema).optional(),
 });
 export type BudgetBookDoc = z.infer<typeof budgetBookDocSchema>;
 
