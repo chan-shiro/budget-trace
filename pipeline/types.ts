@@ -78,6 +78,8 @@ export const muniAccountFactSchema = z.object({
 export type MuniAccountFact = z.infer<typeof muniAccountFactSchema>;
 
 export const parsedDocSchema = z.object({
+  /** ドキュメント種別。既存ファイルとの互換のため default 付き */
+  docType: z.literal("municipal-accounts").default("municipal-accounts"),
   sourceId: z.string(),
   parser: z.string(),
   parserVersion: z.string(),
@@ -86,6 +88,43 @@ export const parsedDocSchema = z.object({
   facts: z.array(muniAccountFactSchema),
 });
 export type ParsedDoc = z.infer<typeof parsedDocSchema>;
+
+// ---- [2'] parsed: 予算書（款別） ---------------------------------------------
+// 自治体の当初予算書・予算資料から抽出した款別の歳入・歳出。単位は千円。
+export const budgetLineFactSchema = z.object({
+  side: z.enum(["revenue", "expenditure"]),
+  kanNo: z.number().int().positive(),
+  kanName: z.string().min(1),
+  /** 当年度当初予算額（千円） */
+  amount: z.number(),
+  /** 前年度当初予算額（千円）。資料に無ければ null */
+  prevAmount: z.number().nullable(),
+  locator: locatorSchema,
+});
+export type BudgetLineFact = z.infer<typeof budgetLineFactSchema>;
+
+export const budgetBookDocSchema = z.object({
+  docType: z.literal("budget-book"),
+  sourceId: z.string(),
+  parser: z.string(),
+  parserVersion: z.string(),
+  parsedAt: z.string(),
+  unit: z.literal("thousandYen"),
+  fiscalYear: z.string(),
+  /** 会計名（現状は一般会計のみ） */
+  account: z.string(),
+  /** 資料記載の歳入合計・歳出合計（千円）。内訳の和との照合は validate が行う */
+  revenueTotal: z.number(),
+  expenditureTotal: z.number(),
+  prevRevenueTotal: z.number().nullable(),
+  prevExpenditureTotal: z.number().nullable(),
+  facts: z.array(budgetLineFactSchema),
+});
+export type BudgetBookDoc = z.infer<typeof budgetBookDocSchema>;
+
+/** parse/validate が受け取り得る全ドキュメント型 */
+export const anyParsedDocSchema = z.union([budgetBookDocSchema, parsedDocSchema]);
+export type AnyParsedDoc = z.infer<typeof anyParsedDocSchema>;
 
 // ---- 検証ゲート ---------------------------------------------------------------
 export const validationIssueSchema = z.object({

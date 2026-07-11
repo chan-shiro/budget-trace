@@ -513,6 +513,10 @@ bun run pipeline:fixture                        # 開発用フィクスチャ生
 bun run pipeline:derive                         # normalized → アプリ用生成モジュール
 ```
 
+予算書 PDF（テキスト層あり）のパースは poppler の `pdftotext` を使う（`brew install poppler`）。
+スキャン画像 PDF や複雑な表（主な事業一覧など）は LLM 併用パーサ（抽出 → Zod 検証 →
+整合チェック）で扱う。
+
 サーバー層ができるまでの normalized → アプリの接続は `pipeline:derive` で行う:
 巨大な normalized JSON をクライアントに import せず、必要な断面だけを決定的に
 `src/client/lib/*.gen.ts` へ生成してコミットする（例: 類似自治体比較の `similar.gen.ts`）。
