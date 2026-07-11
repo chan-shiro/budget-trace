@@ -59,12 +59,14 @@ project/, chats/       元となった Claude Design のプロトタイプと会
 
 ## 開発
 
+パッケージマネージャは [bun](https://bun.sh)（Next.js の実行ランタイムには Node.js 18.17+ も必要）。
+
 ```bash
-npm install
-npm run dev        # http://localhost:3000
-npm run build      # 本番ビルド
-npm run start      # 本番サーバ
-npm run typecheck  # 型チェック
+bun install
+bun run dev        # http://localhost:3000
+bun run build      # 本番ビルド
+bun run start      # 本番サーバ
+bun run typecheck  # 型チェック
 ```
 
 コードを書く前に [CLAUDE.md](CLAUDE.md) と [docs/architecture.md](docs/architecture.md)（アーキテクチャ規約）、
