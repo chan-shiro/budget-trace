@@ -12,18 +12,25 @@ import { sourceEntrySchema, type SourceEntry } from "../types";
 
 export const SOURCES: SourceEntry[] = [
   {
-    // 全市区町村の普通会計決算（歳入・歳出・目的別内訳）が1ファイルに入った
-    // 総務省の統一データ。normalized（全国比較）レイヤの基盤。
-    // 注: 総務省サイトは自動取得を弾くことがあるため url は未設定。
-    //     landingPage から年度の Excel をダウンロードして ingest する。
+    // 全市町村の普通会計決算（人口・歳入歳出総額・目的別内訳）が入った総務省の
+    // 統一データ。normalized（全国比較）レイヤの基盤。
+    // 1年度分が4ファイル構成: (都市別/町村別) × (概況/目的別歳出内訳)。
+    // パーサが団体コードでマージする。直リンクは landingPage の年度ページから
+    // 「(1)概況」「(3)目的別歳出内訳」を確認して更新する。
     id: "soumu-shichoson-kessan-r6",
     title: "令和6年度 市町村別決算状況調",
     publisher: "総務省 自治財政局",
     url: null,
-    landingPage: "https://www.soumu.go.jp/iken/kessan_jokyo_2.html",
+    urls: [
+      "https://www.soumu.go.jp/main_content/001061669.xlsx", // 都市別 (1)概況
+      "https://www.soumu.go.jp/main_content/001061671.xlsx", // 都市別 (3)目的別歳出内訳
+      "https://www.soumu.go.jp/main_content/001061674.xlsx", // 町村別 (1)概況
+      "https://www.soumu.go.jp/main_content/001061676.xlsx", // 町村別 (3)目的別歳出内訳
+    ],
+    landingPage: "https://www.soumu.go.jp/iken/zaisei/r06_shichouson.html",
     kind: "excel",
     fiscalYear: "R6",
-    scope: "全市区町村（普通会計）",
+    scope: "全市町村（普通会計）",
     license: "公共データ利用規約（政府標準利用規約準拠）",
     parser: "soumu-shichoson-kessan",
   },

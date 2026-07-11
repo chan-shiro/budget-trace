@@ -1,8 +1,8 @@
 {
   "sourceId": "fixture-shichoson-kessan-r6",
   "parser": "soumu-shichoson-kessan",
-  "parserVersion": "0.1.0",
-  "parsedAt": "2026-07-11T12:55:22.577Z",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-07-11T13:54:57.710Z",
   "unit": "thousandYen",
   "facts": [
     {
@@ -30,7 +30,14 @@
         "file": "fixture-shichoson-kessan-r6.xlsx",
         "sheet": "決算状況調",
         "row": 2
-      }
+      },
+      "locators": [
+        {
+          "file": "fixture-shichoson-kessan-r6.xlsx",
+          "sheet": "決算状況調",
+          "row": 2
+        }
+      ]
     },
     {
       "muniCode": "192023",
@@ -57,7 +64,14 @@
         "file": "fixture-shichoson-kessan-r6.xlsx",
         "sheet": "決算状況調",
         "row": 3
-      }
+      },
+      "locators": [
+        {
+          "file": "fixture-shichoson-kessan-r6.xlsx",
+          "sheet": "決算状況調",
+          "row": 3
+        }
+      ]
     },
     {
       "muniCode": "202013",
@@ -84,7 +98,14 @@
         "file": "fixture-shichoson-kessan-r6.xlsx",
         "sheet": "決算状況調",
         "row": 4
-      }
+      },
+      "locators": [
+        {
+          "file": "fixture-shichoson-kessan-r6.xlsx",
+          "sheet": "決算状況調",
+          "row": 4
+        }
+      ]
     },
     {
       "muniCode": "202045",
@@ -111,7 +132,14 @@
         "file": "fixture-shichoson-kessan-r6.xlsx",
         "sheet": "決算状況調",
         "row": 5
-      }
+      },
+      "locators": [
+        {
+          "file": "fixture-shichoson-kessan-r6.xlsx",
+          "sheet": "決算状況調",
+          "row": 5
+        }
+      ]
     },
     {
       "muniCode": "222038",
@@ -138,7 +166,14 @@
         "file": "fixture-shichoson-kessan-r6.xlsx",
         "sheet": "決算状況調",
         "row": 6
-      }
+      },
+      "locators": [
+        {
+          "file": "fixture-shichoson-kessan-r6.xlsx",
+          "sheet": "決算状況調",
+          "row": 6
+        }
+      ]
     }
   ]
 }

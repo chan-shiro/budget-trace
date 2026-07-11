@@ -2,7 +2,8 @@
 import type { ParsedDoc, SourceEntry } from "../types";
 import { parseShichosonKessan } from "./soumu-shichoson-kessan";
 
-type ParserFn = (filePath: string, filename: string, source: SourceEntry) => ParsedDoc;
+/** 1ソースの raw ファイル群をまとめて受け取り、マージ済みの facts を返す */
+type ParserFn = (files: { path: string; filename: string }[], source: SourceEntry) => ParsedDoc;
 
 const PARSERS: Record<string, ParserFn> = {
   "soumu-shichoson-kessan": parseShichosonKessan,

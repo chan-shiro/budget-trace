@@ -2,7 +2,7 @@
   "dataset": "municipal-accounts",
   "fiscalYear": "R6",
   "unit": "thousandYen",
-  "generatedAt": "2026-07-11T12:54:59.342Z",
+  "generatedAt": "2026-07-11T13:54:57.767Z",
   "sources": [
     {
       "sourceId": "fixture-shichoson-kessan-r6",

@@ -10,30 +10,43 @@ import { tmpdir } from "node:os";
 import { SOURCES, findSource } from "./registry/sources";
 import { registerRawFile } from "./lib/store";
 
-async function fetchSource(id: string): Promise<void> {
-  const source = findSource(id);
-  if (!source.url) {
-    console.log(
-      `– ${id}: url 未設定のためスキップ（手動投入: pipeline:ingest）` +
-        (source.landingPage ? `\n  ランディングページ: ${source.landingPage}` : ""),
-    );
-    return;
-  }
-  console.log(`↓ ${id}: ${source.url}`);
-  const res = await fetch(source.url);
+// 政府系サイトは既定 UA のプログラム的アクセスを弾くことがあるため、ブラウザ相当の UA を名乗る
+const FETCH_HEADERS = {
+  "User-Agent":
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+};
+
+async function fetchOne(id: string, url: string): Promise<void> {
+  console.log(`↓ ${id}: ${url}`);
+  const res = await fetch(url, { headers: FETCH_HEADERS });
   if (!res.ok) {
     throw new Error(
       `${id}: HTTP ${res.status}。自動取得が拒否された場合は landingPage から手動取得 → pipeline:ingest してください。`,
     );
   }
   const buf = Buffer.from(await res.arrayBuffer());
-  const filename = decodeURIComponent(new URL(source.url).pathname.split("/").pop() || `${id}.bin`);
+  const filename = decodeURIComponent(new URL(url).pathname.split("/").pop() || `${id}.bin`);
   const tmp = join(tmpdir(), filename);
   mkdirSync(tmpdir(), { recursive: true });
   writeFileSync(tmp, buf);
-  const { meta } = registerRawFile(id, tmp, source.url);
+  const { meta } = registerRawFile(id, tmp, url);
   const f = meta.files.find((x) => x.filename === filename)!;
   console.log(`✓ ${id}/${filename} (${f.bytes.toLocaleString()} bytes, sha256=${f.sha256.slice(0, 12)}…)`);
+}
+
+async function fetchSource(id: string): Promise<void> {
+  const source = findSource(id);
+  const urls = source.urls ?? (source.url ? [source.url] : []);
+  if (urls.length === 0) {
+    console.log(
+      `– ${id}: url 未設定のためスキップ（手動投入: pipeline:ingest）` +
+        (source.landingPage ? `\n  ランディングページ: ${source.landingPage}` : ""),
+    );
+    return;
+  }
+  for (const url of urls) {
+    await fetchOne(id, url);
+  }
 }
 
 const arg = process.argv[2];
