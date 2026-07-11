@@ -1,0 +1,83 @@
+# Handoff — セッション引き継ぎメモ
+
+新しいセッション（ローカル/クラウド問わず）は CLAUDE.md → docs/architecture.md の次にこれを読む。
+最終更新: 2026-07-11（クラウドセッションからローカル開発への移行時点）
+
+---
+
+## 1. これは何か
+
+**予算トレース** — 地方自治体の予算（歳入・歳出）から補正・執行率・支出先・事業報告までを
+一次資料（エビデンス）付きでたどれる可視化サイト。甲府市の令和8年度当初予算をサンプル収録。
+
+Claude Design のプロトタイプ（`project/予算トレース.dc.html`）を Next.js で本実装したもの。
+`project/` と `chats/` は元デザインと会話ログの**参照用アーカイブ**（編集・import しない）。
+
+## 2. 現在の状態（2026-07-11 時点）
+
+- `main` = `448e3b8`。PR #1（実装一式）・#2（bun移行）・#3（docs整理）マージ済み
+  ＋ データパイプラインは直接マージ済み
+- 実装済み: 全画面 UI（トップ日本地図 / ダッシュボード / 款項目節→事業ドリルダウン /
+  政策テーマ / 事業詳細 / 前年比較 / 過年度実績 / 類似自治体 / 基本情報 / 出典）、
+  データ収集パイプライン（sources → raw → parsed → normalized、フィクスチャで e2e 検証済み）
+- **アプリのデータはまだ `src/client/lib/data.ts` の静的データ**（款レベルは甲府市公表の実データ、
+  項以下・補正・執行率はダミー）。パイプラインの normalized 出力はまだアプリに接続していない
+- サーバー層（`src/server/` ほか）は**スケルトンのみ**。Hono/Inversify/CASL/Postgres は未導入
+- デプロイ未構築（Vercel 想定: GitHub 連携で main 自動デプロイ）
+
+## 3. 主要な決定事項（経緯つき）
+
+| 決定 | 理由・経緯 |
+| --- | --- |
+| Next.js 14 (App Router) + React 18 + TS | Claude Design ハンドオフ時にユーザーが選択 |
+| パッケージマネージャは **bun**（`bun.lock`） | npm から移行済み。package-lock.json を作らない |
+| デザインシステム文書は置かない | 既存実装が仕様。要点は CLAUDE.md の UI 節に集約（旧 design-system.md は削除） |
+| デプロイは Vercel 想定 | 旧 deploy.md（Cloud Run + Terraform）は削除 |
+| クリーンアーキテクチャ規約 | docs/architecture.md。**最初のサーバーサイド機能から適用**（現状は UI のみ） |
+| パイプライン4層 + 検証ゲート | raw は不変・ハッシュ来歴、parsed は locator 必須、error は normalize 不可 |
+| 比較は標準分類に寄せる | 団体コード（JIS X 0402）・目的別標準科目。独自スキーマを発明しない |
+| 収集は2トラック | 総務省統一 Excel で「広く浅く」→ 予算書 PDF（LLM併用）で「深く狭く」 |
+
+## 4. 横断的な暗黙知（ハマりどころ）
+
+- **GitHub 運用**: このリポジトリは **squash マージが使われる**。マージ後は必ず
+  `git fetch origin main && git checkout -B implement-budget-trace origin/main` でブランチを作り直す
+  （古いコミットを積み直すと重複する）
+- **データ来歴**: 画面の「ダミー」「推計」注記は仕様。データを触るとき整合を崩さない。
+  フィクスチャ出力（`data/normalized/_fixtures/`）をアプリから import しない
+- **PALETTE はモジュール変数**: `src/client/lib/data.ts` の `setPalette()` で描画前に切替。呼び出し順に注意
+- **スタイルは `S("...")` の CSS 文字列**（プロトタイプと diff 可能な形を維持）。
+  ホバーは `HoverBox`、モバイルは `data-mq` 属性 + `src/app/globals.css` の media query
+- **JapanMap は React 管理外の直接 DOM 操作を含む**（`boxRef` 配下の SVG）。境界を崩さない
+- **地図データは `public/mapdata/` に同梱**。CDN 実行時フェッチに戻さない
+- **政府系サイト（総務省・e-Stat）はクラウド環境から 403**（環境の許可リスト + 先方 WAF の2層）。
+  ローカルなら制限なし。クラウドで通す場合は環境設定で `*.soumu.go.jp` 等を Custom 許可
+  （「Also include default list …」に必ずチェック。外すと git/bun が壊れる）
+- **描画用値オブジェクト `v` は any のまま**（プロトタイプ移植由来・eslint-disable 付き）。
+  新規コードでは倣わない。サーバー層導入時に型付けして解消する予定
+- IME 変換確定 Enter のガード（CLAUDE.md 参照）— Enter ハンドラ追加時は必須
+
+## 5. 残タスク（優先順）
+
+1. **総務省 R6 Excel（市町村別決算状況調）の実データ投入** — 手順は architecture.md §10。
+   ローカルで https://www.soumu.go.jp/iken/kessan_jokyo_2.html から Excel を取得 →
+   `bun run pipeline:ingest soumu-shichoson-kessan-r6 <file>` → parse → validate → normalize。
+   実ファイルは複数行ヘッダの可能性があり、パーサ（`pipeline/parsers/soumu-shichoson-kessan.ts`）の
+   ヘッダ解決か `parserOptions.columnAliases` の調整が要る想定
+2. **類似自治体タブを normalized 実データに接続**（全1,741市区町村から人口帯で近隣を選出、
+   現在の SIMILAR ダミー定数を置換）
+3. **予算書 PDF パーサ**（LLM 併用: 抽出 → Zod 検証 → 整合チェック）で款項目節・事業の実データ化。
+   registry に甲府市 R8 予算書を登録するところから
+4. **Vercel 接続**（GitHub 連携・main 自動デプロイ）
+5. サーバー層導入（Hono/Inversify/CASL/Postgres + Testcontainers）— data/ の DB 移行、
+   `v` の型付け解消もこのタイミング
+
+## 6. 動かし方（要点）
+
+```bash
+bun install && bun run dev     # アプリ (http://localhost:3000)
+bun run typecheck              # 型チェック
+bun run pipeline:fixture && bun run pipeline:parse fixture-shichoson-kessan-r6 \
+  && bun run pipeline:validate fixture-shichoson-kessan-r6 \
+  && bun run pipeline:normalize fixture-shichoson-kessan-r6   # パイプライン e2e 確認
+```
