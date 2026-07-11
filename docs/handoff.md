@@ -1,7 +1,7 @@
 # Handoff — セッション引き継ぎメモ
 
 新しいセッション（ローカル/クラウド問わず）は CLAUDE.md → docs/architecture.md の次にこれを読む。
-最終更新: 2026-07-11（クラウドセッションからローカル開発への移行時点）
+最終更新: 2026-07-11（総務省 R6 実データ投入完了時点）
 
 ---
 
@@ -20,8 +20,15 @@ Claude Design のプロトタイプ（`project/予算トレース.dc.html`）を
 - 実装済み: 全画面 UI（トップ日本地図 / ダッシュボード / 款項目節→事業ドリルダウン /
   政策テーマ / 事業詳細 / 前年比較 / 過年度実績 / 類似自治体 / 基本情報 / 出典）、
   データ収集パイプライン（sources → raw → parsed → normalized、フィクスチャで e2e 検証済み）
-- **アプリのデータはまだ `src/client/lib/data.ts` の静的データ**（款レベルは甲府市公表の実データ、
-  項以下・補正・執行率はダミー）。パイプラインの normalized 出力はまだアプリに接続していない
+- **総務省 R6 実データ投入済み**: `data/normalized/municipal-accounts/R6.json` に
+  全1,741市区町村（特別区含む・47都道府県）の人口・歳入歳出総額・目的別歳出が入っている。
+  検証ゲートは error 0 / warning 0（全自治体で目的別合計＝歳出総額が ±0.5% 以内）。
+  再現は `bun run pipeline:fetch soumu-shichoson-kessan-r6` → parse → validate → normalize
+- **類似自治体タブは実データ接続済み**: `bun run pipeline:derive` が normalized から
+  甲府市＋人口帯の近い4市＋帯内70市平均を選出して `src/client/lib/similar.gen.ts` を生成し、
+  `data.ts` が re-export する（1.6MB の JSON をバンドルに入れない方式）
+- **それ以外のアプリデータはまだ `src/client/lib/data.ts` の静的データ**（款レベルは甲府市公表の
+  実データ、項以下・補正・執行率はダミー）
 - サーバー層（`src/server/` ほか）は**スケルトンのみ**。Hono/Inversify/CASL/Postgres は未導入
 - デプロイ未構築（Vercel 想定: GitHub 連携で main 自動デプロイ）
 
@@ -51,26 +58,27 @@ Claude Design のプロトタイプ（`project/予算トレース.dc.html`）を
 - **JapanMap は React 管理外の直接 DOM 操作を含む**（`boxRef` 配下の SVG）。境界を崩さない
 - **地図データは `public/mapdata/` に同梱**。CDN 実行時フェッチに戻さない
 - **政府系サイト（総務省・e-Stat）はクラウド環境から 403**（環境の許可リスト + 先方 WAF の2層）。
-  ローカルなら制限なし。クラウドで通す場合は環境設定で `*.soumu.go.jp` 等を Custom 許可
+  ローカルなら制限なし（fetch.ts はブラウザ相当 UA を名乗る。R6 は自動取得できた）。
+  クラウドで通す場合は環境設定で `*.soumu.go.jp` 等を Custom 許可
   （「Also include default list …」に必ずチェック。外すと git/bun が壊れる）
+- **決算状況調の実ファイルの構造**（R6 で確認。パーサ 0.2.0 が対応済み）:
+  1年度 = 4ファイル（都市別/町村別 × 概況/目的別歳出内訳）で、団体コードでマージする。
+  ヘッダは複数行（目的別は 款番号/科目名・連番/内訳名 の3段＋結合セル）。
+  労働費・諸支出金は総額列がなく内訳列の合算。「（参考）一般行政経費」ブロックは
+  款名を再掲するので列解決から除外。都道府県名の列はなく「団体コード空 + 団体名だけ」の
+  区切り行（字間スペース入り）で県が変わる。特別区は都市別ファイルに含まれる
 - **描画用値オブジェクト `v` は any のまま**（プロトタイプ移植由来・eslint-disable 付き）。
   新規コードでは倣わない。サーバー層導入時に型付けして解消する予定
 - IME 変換確定 Enter のガード（CLAUDE.md 参照）— Enter ハンドラ追加時は必須
 
 ## 5. 残タスク（優先順）
 
-1. **総務省 R6 Excel（市町村別決算状況調）の実データ投入** — 手順は architecture.md §10。
-   ローカルで https://www.soumu.go.jp/iken/kessan_jokyo_2.html から Excel を取得 →
-   `bun run pipeline:ingest soumu-shichoson-kessan-r6 <file>` → parse → validate → normalize。
-   実ファイルは複数行ヘッダの可能性があり、パーサ（`pipeline/parsers/soumu-shichoson-kessan.ts`）の
-   ヘッダ解決か `parserOptions.columnAliases` の調整が要る想定
-2. **類似自治体タブを normalized 実データに接続**（全1,741市区町村から人口帯で近隣を選出、
-   現在の SIMILAR ダミー定数を置換）
-3. **予算書 PDF パーサ**（LLM 併用: 抽出 → Zod 検証 → 整合チェック）で款項目節・事業の実データ化。
+1. **予算書 PDF パーサ**（LLM 併用: 抽出 → Zod 検証 → 整合チェック）で款項目節・事業の実データ化。
    registry に甲府市 R8 予算書を登録するところから
-4. **Vercel 接続**（GitHub 連携・main 自動デプロイ）
-5. サーバー層導入（Hono/Inversify/CASL/Postgres + Testcontainers）— data/ の DB 移行、
-   `v` の型付け解消もこのタイミング
+2. **Vercel 接続**（GitHub 連携・main 自動デプロイ）
+3. サーバー層導入（Hono/Inversify/CASL/Postgres + Testcontainers）— data/ の DB 移行、
+   `v` の型付け解消もこのタイミング。`*.gen.ts`（pipeline:derive の生成モジュール）も
+   API 化して置き換える
 
 ## 6. 動かし方（要点）
 

@@ -32,6 +32,14 @@ for (const f of doc.facts) {
     issues.push({ level: "error", muniCode: f.muniCode, message: `${tag}: 人口が不正 (${f.population})` });
   }
 
+  // 複数ファイル合成の取りこぼし（概況だけ・目的別だけの自治体）
+  if (f.expenditureTotal == null) {
+    issues.push({ level: "warning", muniCode: f.muniCode, message: `${tag}: 歳出総額が欠損（概況ファイルに行がない可能性）` });
+  }
+  if (Object.keys(f.expenditureByPurpose).length === 0) {
+    issues.push({ level: "warning", muniCode: f.muniCode, message: `${tag}: 目的別歳出が欠損（目的別歳出内訳ファイルに行がない可能性）` });
+  }
+
   // 目的別の和 ≒ 歳出総額（許容 0.5% / 5% 超は error）
   const purposeSum = Object.values(f.expenditureByPurpose).reduce((a, b) => a + b, 0);
   if (f.expenditureTotal != null && f.expenditureTotal > 0 && purposeSum > 0) {

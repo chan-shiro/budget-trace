@@ -15,6 +15,8 @@ export const sourceEntrySchema = z.object({
   publisher: z.string(),
   /** ファイルへの直リンク。null = 手動投入（ingest-local）のみ */
   url: z.url().nullable(),
+  /** 1ソースが複数ファイルで構成される場合の直リンク一覧（url より優先） */
+  urls: z.array(z.url()).optional(),
   /** 人間が確認するランディングページ（直リンクが変わったときの起点） */
   landingPage: z.url().optional(),
   kind: z.enum(["excel", "csv", "pdf", "page"]),
@@ -68,7 +70,10 @@ export const muniAccountFactSchema = z.object({
   expenditureTotal: z.number().nullable(),
   /** 目的別歳出（議会費・総務費・民生費…）。キーは資料の科目名そのまま */
   expenditureByPurpose: z.record(z.string(), z.number()),
+  /** 主たる出典位置（概況ファイルの行）。normalized の sourceRef になる */
   locator: locatorSchema,
+  /** 複数ファイルから合成した場合の全出典位置（locator を含む） */
+  locators: z.array(locatorSchema).optional(),
 });
 export type MuniAccountFact = z.infer<typeof muniAccountFactSchema>;
 

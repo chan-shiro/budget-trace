@@ -40,7 +40,10 @@ if (validation.status !== "ok" && !force) {
 }
 
 const rawMeta = readRawMeta(sourceId);
-const sha256 = rawMeta?.files[0]?.sha256 ?? "unknown";
+// locator が指すファイルのハッシュを来歴として残す（1ソース=複数ファイル対応）
+const sha256ByFile = new Map<string, string>(
+  (rawMeta?.files ?? []).map((f) => [f.filename, f.sha256]),
+);
 const standardSet = new Set<string>(STANDARD_PURPOSES);
 
 const records: NormalizedMuniAccount[] = doc.facts.map((f) => {
@@ -66,7 +69,11 @@ const records: NormalizedMuniAccount[] = doc.facts.map((f) => {
       f.population && f.expenditureTotal != null
         ? Math.round((f.expenditureTotal * 1000) / f.population)
         : null,
-    sourceRef: { sourceId, sha256, locator: f.locator },
+    sourceRef: {
+      sourceId,
+      sha256: sha256ByFile.get(f.locator.file) ?? "unknown",
+      locator: f.locator,
+    },
   };
 });
 
@@ -75,7 +82,7 @@ const dataset = normalizedDatasetSchema.parse({
   fiscalYear: source.fiscalYear,
   unit: "thousandYen",
   generatedAt: new Date().toISOString(),
-  sources: [{ sourceId, sha256 }],
+  sources: (rawMeta?.files ?? []).map((f) => ({ sourceId, sha256: f.sha256 })),
   records,
 });
 

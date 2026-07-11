@@ -18,10 +18,14 @@ if (!meta) {
 }
 
 const parser = getParser(source.parser);
-// 現状は 1ソース=1ファイル想定。複数ファイル化するときは facts を結合する。
-const [file] = meta.files;
-const path = resolveRawFile(sourceId, file.filename); // ハッシュ検証込み
-const doc = parsedDocSchema.parse(parser(path, file.filename, source));
+// 1ソース=複数ファイル可。パーサが団体コードで facts をマージする
+const files = meta.files.map((f) => ({
+  path: resolveRawFile(sourceId, f.filename), // ハッシュ検証込み
+  filename: f.filename,
+}));
+const doc = parsedDocSchema.parse(parser(files, source));
 writeJson(parsedPath(sourceId), doc);
-console.log(`✓ ${sourceId}: ${doc.facts.length} 自治体を抽出 → data/parsed/${sourceId}.json`);
+console.log(
+  `✓ ${sourceId}: ${files.length} ファイルから ${doc.facts.length} 自治体を抽出 → data/parsed/${sourceId}.json`,
+);
 console.log(`  次: bun run pipeline:validate ${sourceId}`);

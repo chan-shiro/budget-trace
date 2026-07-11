@@ -493,8 +493,12 @@ describe("GET /api/budgets/:municipalityId/dashboard", () => {
 - **2トラック戦略**: 総務省の統一 Excel（決算状況調・財政状況資料集）で「広く浅く」
   全国比較データを先に確保し、各自治体の予算書 PDF（LLM 併用: 抽出 → Zod 検証 →
   整合チェックで誤りを弾く）で「深く狭く」款項目節・事業・エビデンスを掘る
-- 政府系サイトは自動取得を弾くことがある。その場合は landingPage から手動取得して
-  `pipeline:ingest` で投入する（来歴には `manual:` として記録される）
+- **1ソース=複数ファイル可**: 実資料が複数ファイルに分かれる場合（例: 決算状況調の
+  都市別/町村別 × 概況/目的別）は registry の `urls` に直リンクを列挙し、パーサが
+  団体コードで facts をマージする。主 locator に加え `locators` で全出典位置を残す
+- 政府系サイトは自動取得を弾くことがある（クラウド環境の DC IP は特に）。fetch は
+  ブラウザ相当の UA を名乗るためローカルなら通ることが多い。弾かれたら landingPage
+  から手動取得して `pipeline:ingest` で投入する（来歴には `manual:` として記録される）
 
 ### コマンド
 
@@ -505,7 +509,12 @@ bun run pipeline:parse <sourceId>               # raw → parsed（Zod 検証込
 bun run pipeline:validate <sourceId>            # 整合チェック → ok / needs_review
 bun run pipeline:normalize <sourceId> [--force] # parsed → normalized
 bun run pipeline:fixture                        # 開発用フィクスチャ生成（e2e 検証用）
+bun run pipeline:derive                         # normalized → アプリ用生成モジュール
 ```
+
+サーバー層ができるまでの normalized → アプリの接続は `pipeline:derive` で行う:
+巨大な normalized JSON をクライアントに import せず、必要な断面だけを決定的に
+`src/client/lib/*.gen.ts` へ生成してコミットする（例: 類似自治体比較の `similar.gen.ts`）。
 
 DB（Postgres）導入時は `data/parsed` `data/normalized` の中身がテーブルへ移り、
 pipeline の各ステージはそのまま Repository 経由の書き込みに置き換わる。

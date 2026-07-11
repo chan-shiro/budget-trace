@@ -344,15 +344,9 @@ export const GLOSS: Record<string, string> = {
   '不用額':'使わずに残った予算。翌年度への繰越分を含む場合があります。理由は決算資料で確認できます。',
 };
 
-// 類似自治体比較（人口15〜25万の類似規模、ダミー）
-export const SIM_MIX_COLS = ['民生費','教育費','土木費','公債費','その他'];
-export const SIMILAR = [
-  { name:'甲府市', self:true, pop:'18.6万人', total:918.0, perCap:'49.4万円', mix:[42.4,9.6,7.3,8.7,32.0] },
-  { name:'松本市', pop:'23.9万人', total:1102.0, perCap:'46.1万円', mix:[36.2,12.4,10.8,7.9,32.7] },
-  { name:'沼津市', pop:'18.7万人', total:842.0, perCap:'45.0万円', mix:[38.1,9.8,11.2,8.4,32.5] },
-  { name:'上田市', pop:'15.3万人', total:688.0, perCap:'45.0万円', mix:[37.4,11.6,9.9,9.6,31.5] },
-  { name:'類似団体平均', pop:'19.3万人', total:877.0, perCap:'45.4万円', mix:[37.2,11.3,10.6,8.6,32.3] },
-];
+// 類似自治体比較 — 総務省「令和6年度 市町村別決算状況調」からの導出実データ。
+// 再生成: bun run pipeline:derive（normalized → similar.gen.ts）
+export { SIMILAR, SIM_MIX_COLS, SIMILAR_FY_LABEL } from './similar.gen';
 
 // データ出典・更新日一覧（ダミー）
 export const SOURCES = [
@@ -365,7 +359,7 @@ export const SOURCES = [
   { title:'監査委員 決算審査意見書', type:'PDF', org:'甲府市監査委員', date:'2026-06-15', used:'過年度実績' },
   { title:'本会議 会議録（3月・6月定例会）', type:'ページ', org:'甲府市議会', date:'2026-07-01', used:'議会の構成／予算の変遷' },
   { title:'入札・契約情報（入札結果の公表）', type:'ページ', org:'甲府市 契約課', date:'2026-07-01', used:'事業詳細（契約・支出先）' },
-  { title:'財政状況資料集・地方財政状況調査', type:'PDF', org:'総務省', date:'2026-06-01', used:'類似自治体との比較' },
+  { title:'令和6年度 市町村別決算状況調', type:'Excel', org:'総務省 自治財政局', date:'2026-07-11', used:'類似自治体との比較' },
   { title:'国勢調査 人口・世帯数', type:'統計', org:'総務省統計局', date:'2026-06-01', used:'1人あたり換算' },
   { title:'都道府県形状（japanese-prefectures）', type:'SVG', org:'Geolonia（GFDL）', date:'2026-07-10', used:'トップページの地図' },
   { title:'市区町村形状（japan-topography）', type:'GeoJSON', org:'国土数値情報（国土交通省）を加工／SMRI', date:'2026-07-10', used:'トップページの地図' },

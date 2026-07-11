@@ -5,7 +5,7 @@
       "filename": "fixture-shichoson-kessan-r6.xlsx",
       "sha256": "1914e3252db0c06171b7b6a20f3c3d322cc7f2700afe527268d0cf8c5851f0dd",
       "bytes": 19289,
-      "fetchedAt": "2026-07-11T12:55:22.254Z",
+      "fetchedAt": "2026-07-11T13:54:57.630Z",
       "fetchedFrom": "generated:pipeline/dev/make-fixture.ts"
     }
   ]
