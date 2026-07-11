@@ -187,6 +187,23 @@ for (const f of doc.facts) {
     issues.push({ level: "warning", muniCode: f.muniCode, message: `${tag}: 目的別歳出が欠損（目的別歳出内訳ファイルに行がない可能性）` });
   }
 
+  // 項レベル内訳の和 = 款（資料は整数の千円なので厳密一致）
+  for (const [kan, detail] of Object.entries(f.expenditureByPurposeDetail ?? {})) {
+    const kanTotal = f.expenditureByPurpose[kan];
+    if (kanTotal == null) {
+      issues.push({ level: "warning", muniCode: f.muniCode, message: `${tag}: ${kan} の内訳はあるが款の総額がない` });
+      continue;
+    }
+    const sum = Object.values(detail).reduce((a, b) => a + b, 0);
+    if (sum !== kanTotal) {
+      issues.push({
+        level: "error",
+        muniCode: f.muniCode,
+        message: `${tag}: ${kan} の項の和 ${sum} が款 ${kanTotal} と一致しません（差 ${sum - kanTotal}）`,
+      });
+    }
+  }
+
   // 目的別の和 ≒ 歳出総額（許容 0.5% / 5% 超は error）
   const purposeSum = Object.values(f.expenditureByPurpose).reduce((a, b) => a + b, 0);
   if (f.expenditureTotal != null && f.expenditureTotal > 0 && purposeSum > 0) {

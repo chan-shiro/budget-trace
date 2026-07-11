@@ -7,7 +7,7 @@ import BudgetTraceView from "./BudgetTraceView";
 
 const {
   KOFU, GLOSS, SIM_MIX_COLS, SIMILAR, SIMILAR_EVIDENCE, SOURCES,
-  KOFU_BUDGET, KOFU_PROJECTS, KOFU_PROJECTS_SOURCE, KOFU_EXECUTION, YAMANASHI_MUNIS,
+  KOFU_BUDGET, KOFU_PROJECTS, KOFU_PROJECTS_SOURCE, KOFU_EXECUTION, KOFU_R6_DETAIL, YAMANASHI_MUNIS,
   fmtOku, pctOf, fmtPerCap, fadeColor, donutBg, setPalette,
 } = D;
 
@@ -173,7 +173,12 @@ export default function BudgetTrace() {
     nodeItems = found.children ?? [];
   });
   const depth = pathNodes.length;
-  const canDrillDeeper = (it: any) => !!(it.children && it.children.length > 0);
+  // 款は「実データの内訳・主な事業・R6決算の項内訳」のいずれかがあれば掘れる
+  const canDrillDeeper = (it: any) =>
+    !!(it.children && it.children.length > 0) ||
+    (side === "exp" &&
+      depth === 0 &&
+      (!!KOFU_R6_DETAIL.byKan[it.name] || KOFU_PROJECTS.some((p) => p.kan === it.name)));
   const drillCrumbs: any[] = [{ label: side === "rev" ? "歳入" : "歳出", jump: () => setSt({ drillPath: [] }), bg: depth === 0 ? "#14181C" : "transparent", fg: depth === 0 ? "#F7FAFC" : "#5C6B77", fw: depth === 0 ? "700" : "500", sep: s.drillPath.length ? "inline" : "none" }];
   s.drillPath.forEach((nm, i) => {
     const last = i === s.drillPath.length - 1;
@@ -322,6 +327,23 @@ export default function BudgetTrace() {
     drillSideTabs, drillCrumbs, drillLevelLabel: depth === 0 ? "款" : "内訳",
     drillTitle: nodeName, drillTotalFmt: fmtOku(nodeTotal), drillDonutBg: donutBg(donutItems, hoverFor("drill")),
     drillRows, drillEvidence,
+    // R8 予算の項以下は原典未公開のため、R6 決算の項内訳を年度明示で参考表示する
+    ...(() => {
+      const rows = side === "exp" && depth === 1 ? KOFU_R6_DETAIL.byKan[nodeName] ?? [] : [];
+      const kanTotal = rows.reduce((a, r) => a + r.v, 0);
+      return {
+        hasR6Detail: rows.length > 0,
+        r6DetailFyLabel: KOFU_R6_DETAIL.fyLabel,
+        r6DetailRows: rows.map((r, i) => ({
+          name: r.name, amtFmt: fmtOku(r.v), pctFmt: pctOf(r.v, kanTotal),
+          barW: ((r.v / (rows[0]?.v || 1)) * 100).toFixed(1),
+          sw: D.PALETTE[i % D.PALETTE.length],
+        })),
+        r6DetailKanTotalFmt: fmtOku(kanTotal),
+        r6DetailSourceUrl: KOFU_R6_DETAIL.sourceUrl,
+        r6DetailSourceLabel: `出典：${KOFU_R6_DETAIL.sourceTitle} 目的別歳出内訳（${KOFU_R6_DETAIL.refLabel}）`,
+      };
+    })(),
     drillNoChildrenNote: depth > 0 && nodeItems.length === 0,
     // 予算資料「主な事業一覧」の実データ（款レベル・歳出のみ）
     ...(() => {

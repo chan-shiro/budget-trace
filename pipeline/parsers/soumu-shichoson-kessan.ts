@@ -80,6 +80,7 @@ interface PartialFact {
   revenueTotal?: number | null;
   expenditureTotal?: number | null;
   expenditureByPurpose?: Record<string, number>;
+  expenditureByPurposeDetail?: Record<string, Record<string, number>>;
   locator: Locator;
 }
 
@@ -98,10 +99,12 @@ function parseOneFile(
   const headerIdx = rows.findIndex((r) => (r ?? []).some((c) => normalize(c).includes("団体コード")));
   if (headerIdx < 0) throw new Error(`${filename}: ヘッダ行（「団体コード」を含む行）が見つかりません`);
   const alias = (s: string): string => opts.columnAliases?.[s] ?? s;
-  // ヘッダ3行分（実ファイルの目的別歳出は 款番号/科目名・連番/内訳名 の3段）
+  // ヘッダ4行分（実ファイルの目的別歳出は 款番号/科目名・連番/項名/目名 の最大4段。
+  // 例: 土木費内訳 / 5都市計画費 / (1) / 街路費）
   const h0 = (rows[headerIdx] ?? []).map((c) => alias(normalize(c)));
   const h1 = (rows[headerIdx + 1] ?? []).map((c) => alias(normalize(c)));
   const h2 = (rows[headerIdx + 2] ?? []).map((c) => alias(normalize(c)));
+  const h3 = (rows[headerIdx + 3] ?? []).map((c) => alias(normalize(c)));
   const width = Math.max(h0.length, h1.length, h2.length);
 
   // 「（参考）…」ブロック以降は款名を再掲するため列解決から外す
@@ -168,6 +171,38 @@ function parseOneFile(
     );
   }
 
+  // 項レベル内訳の列解決。各款の内訳ブロック（h0 が「<款名>内訳」または
+  // 「<款番号><款名>」の結合セル）の中で:
+  // - 直下の項: h1 が連番（"1"〜）で h2 が項名（例: 総務費内訳/1/総務管理費）
+  // - 入れ子の項（都市計画費・保健体育費）: h1 が「<連番><項名>」で
+  //   h2 が "(1)"…、h3 が目名 → 目列を合算して項とする（小計列は除外）
+  const detailCols = new Map<string, Map<string, number[]>>(); // 款 → 項 → 列
+  for (const p of PURPOSE_COLUMNS) {
+    const isGroupTop = (top: string) =>
+      top === `${p}内訳` || (top !== p && stripKanjiNo(top) === p);
+    for (let c = 0; c < refStart; c++) {
+      const top = h0[c] ?? "";
+      if (!isGroupTop(top)) continue;
+      const mid = h1[c] ?? "";
+      const sub = h2[c] ?? "";
+      const sub2 = h3[c] ?? "";
+      if ([mid, sub, sub2].some((s) => s.includes("小計"))) continue;
+      let kou: string | null = null;
+      if (/^\d+$/.test(mid) && sub) {
+        kou = sub; // 直下の項
+      } else {
+        const m = mid.match(/^\d+(.{2,})$/);
+        if (m && !mid.includes("内訳") && sub.startsWith("(") && sub2) {
+          kou = m[1]!; // 入れ子の項（目列の合算）
+        }
+      }
+      if (!kou) continue;
+      const byKou = detailCols.get(p) ?? new Map<string, number[]>();
+      byKou.set(kou, [...(byKou.get(kou) ?? []), c]);
+      detailCols.set(p, byKou);
+    }
+  }
+
   const facts: PartialFact[] = [];
   // 実ファイルは都道府県名列がなく、「団体コード空 + 団体名だけ」の区切り行で県が変わる
   let currentPref = "";
@@ -189,6 +224,16 @@ function parseOneFile(
       const vs = cols.map((c) => toNumber(row[c])).filter((v): v is number => v != null);
       if (vs.length > 0) byPurpose[p] = vs.reduce((a, b) => a + b, 0);
     }
+    let detail: Record<string, Record<string, number>> | undefined;
+    for (const [p, byKou] of detailCols) {
+      for (const [kou, cols] of byKou) {
+        const vs = cols.map((c) => toNumber(row[c])).filter((v): v is number => v != null);
+        if (vs.length === 0) continue;
+        detail ??= {};
+        detail[p] ??= {};
+        detail[p][kou] = vs.reduce((a, b) => a + b, 0);
+      }
+    }
     facts.push({
       muniCode,
       prefName: prefCol >= 0 ? String(row[prefCol] ?? "").trim() : currentPref,
@@ -198,6 +243,7 @@ function parseOneFile(
       expenditureTotal: expCol >= 0 ? toNumber(row[expCol]) : undefined,
       expenditureByPurpose:
         purposeTotalCols.length + purposeGroupCols.length > 0 ? byPurpose : undefined,
+      expenditureByPurposeDetail: detail,
       locator: { file: filename, sheet: sheetName, row: i + 1 }, // 1-origin（Excel表示行）
     });
   }
@@ -226,6 +272,9 @@ export function parseShichosonKessan(
           revenueTotal: part.revenueTotal ?? null,
           expenditureTotal: part.expenditureTotal ?? null,
           expenditureByPurpose: part.expenditureByPurpose ?? {},
+          ...(part.expenditureByPurposeDetail
+            ? { expenditureByPurposeDetail: part.expenditureByPurposeDetail }
+            : {}),
           locator: part.locator,
           locators: [part.locator],
         });
@@ -242,6 +291,12 @@ export function parseShichosonKessan(
       prev.expenditureTotal ??= part.expenditureTotal ?? null;
       for (const [k, v] of Object.entries(part.expenditureByPurpose ?? {})) {
         prev.expenditureByPurpose[k] ??= v;
+      }
+      if (part.expenditureByPurposeDetail) {
+        prev.expenditureByPurposeDetail ??= {};
+        for (const [k, d] of Object.entries(part.expenditureByPurposeDetail)) {
+          prev.expenditureByPurposeDetail[k] ??= d;
+        }
       }
       prev.locators!.push(part.locator);
     }

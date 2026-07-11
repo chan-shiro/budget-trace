@@ -371,6 +371,62 @@ console.log(
 );
 
 // ============================================================================
+// 甲府市 R6 決算の項レベル内訳（決算状況調）→ src/client/lib/detail.gen.ts
+// R8 予算の項以下は原典未公開のため、款ドリルダウンには R6 決算の項内訳を
+// 「参考」として年度を明示して出す（推計はしない）。
+// ============================================================================
+{
+  const SOUMU_ID = "soumu-shichoson-kessan-r6";
+  const soumuValidation = validationResultSchema.parse(readJson(validationPath(SOUMU_ID)));
+  if (soumuValidation.status !== "ok") {
+    throw new Error(`${SOUMU_ID}: 検証が ${soumuValidation.status} のため derive しません`);
+  }
+  const soumuDoc = anyParsedDocSchema.parse(readJson(parsedPath(SOUMU_ID)));
+  if (soumuDoc.docType !== "municipal-accounts") throw new Error(`${SOUMU_ID}: municipal-accounts ではありません`);
+  const kofuFact = soumuDoc.facts.find((f) => f.muniCode === SELF_CODE);
+  if (!kofuFact?.expenditureByPurposeDetail) {
+    throw new Error(`${SOUMU_ID}: 甲府市の項レベル内訳がありません（パーサ拡張前の parsed の可能性）`);
+  }
+  const soumuMeta = readRawMeta(SOUMU_ID);
+  const soumuSource = findSource(SOUMU_ID);
+  // 目的別歳出内訳ファイル（内訳の出典）の locator と sha256
+  const mokutekiLoc = kofuFact.locators?.find((l) => l.file.includes("001061671")) ?? kofuFact.locator;
+  const mokutekiFile = soumuMeta?.files.find((f) => f.filename === mokutekiLoc.file);
+  const mokutekiUrl = soumuSource.urls?.find((u) => u.endsWith(mokutekiLoc.file)) ?? soumuSource.landingPage ?? "";
+
+  const byKan = Object.fromEntries(
+    Object.entries(kofuFact.expenditureByPurposeDetail).map(([kan, kou]) => [
+      kan,
+      Object.entries(kou)
+        .map(([name, v]) => ({ name, v: toOku(v) }))
+        .sort((a, b) => b.v - a.v),
+    ]),
+  );
+  const detailOut = `// このファイルは自動生成です。手で編集しないこと。
+// 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
+// 出典: ${soumuSource.title} 目的別歳出内訳（${mokutekiLoc.file} sha256=${mokutekiFile?.sha256.slice(0, 16) ?? "?"}… 行${mokutekiLoc.row}）
+// 金額は億円（資料の千円値を 1e5 で割った正確値）。R6 決算であり R8 予算の内訳ではない
+
+export const KOFU_R6_DETAIL: {
+  fyLabel: string;
+  /** 款名 → 項の一覧（金額降順） */
+  byKan: Record<string, { name: string; v: number }[]>;
+  sourceTitle: string;
+  sourceUrl: string;
+  refLabel: string;
+} = {
+  fyLabel: "令和6年度 普通会計決算",
+  byKan: ${JSON.stringify(byKan, null, 2)},
+  sourceTitle: ${JSON.stringify(soumuSource.title)},
+  sourceUrl: ${JSON.stringify(mokutekiUrl)},
+  refLabel: ${JSON.stringify(`${mokutekiLoc.file} ${mokutekiLoc.row}行目`)},
+};
+`;
+  writeFileSync(join(process.cwd(), "src/client/lib/detail.gen.ts"), detailOut, "utf8");
+  console.log(`✓ R6 決算の項レベル内訳を導出 → src/client/lib/detail.gen.ts（${Object.keys(byKan).length}款）`);
+}
+
+// ============================================================================
 // 甲府市 R7 予算執行状況（財政事情の公表）→ src/client/lib/execution.gen.ts
 // ============================================================================
 const EXEC_SOURCE_ID = "kofu-zaisei-jokyo-r7";

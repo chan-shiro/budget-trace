@@ -70,6 +70,10 @@ export const muniAccountFactSchema = z.object({
   expenditureTotal: z.number().nullable(),
   /** 目的別歳出（議会費・総務費・民生費…）。キーは資料の科目名そのまま */
   expenditureByPurpose: z.record(z.string(), z.number()),
+  /** 目的別歳出の項レベル内訳（款名 → 項名 → 千円）。資料に内訳列がある款のみ */
+  expenditureByPurposeDetail: z
+    .record(z.string(), z.record(z.string(), z.number()))
+    .optional(),
   /** 主たる出典位置（概況ファイルの行）。normalized の sourceRef になる */
   locator: locatorSchema,
   /** 複数ファイルから合成した場合の全出典位置（locator を含む） */
