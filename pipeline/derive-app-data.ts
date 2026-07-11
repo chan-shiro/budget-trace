@@ -239,6 +239,8 @@ interface KofuKanRowGen {
   yoy: number | null;
   ref: string;
   refLabel: string;
+  /** 表示グループの内訳（実データの款）。「諸収入・その他」のみ持つ */
+  children?: KofuKanRowGen[];
 }
 const kanRow = (
   name: string,
@@ -270,8 +272,8 @@ const groupedRevenue: KofuKanRowGen[] = REVENUE_GROUPS.map((g) => {
 const restFacts = revFacts.filter((f) => !(REVENUE_GROUPS as readonly string[]).includes(f.kanName));
 if (restFacts.length > 0) {
   const restPage = restFacts[0]!.locator.page ?? 0;
-  groupedRevenue.push(
-    kanRow(
+  groupedRevenue.push({
+    ...kanRow(
       "諸収入・その他",
       restFacts.reduce((a, f) => a + f.amount, 0),
       restFacts.every((f) => f.prevAmount != null)
@@ -280,7 +282,11 @@ if (restFacts.length > 0) {
       restPage,
       `予算書 p.${restPage}（残り${restFacts.length}款の合算）`,
     ),
-  );
+    // 合算グループだけは実データの款を内訳として持つ（ドリルダウン用）
+    children: restFacts
+      .map((f) => kanRow(f.kanName, f.amount, f.prevAmount, f.locator.page ?? 0))
+      .sort((a, b) => b.v - a.v),
+  });
 }
 const kofuRevenue = [...groupedRevenue].sort((a, b) => b.v - a.v);
 
@@ -298,6 +304,9 @@ const pagesOpts = (kofuSource.parserOptions ?? {}) as {
 };
 const kofuBudget = {
   fyLabel: "令和8年度 当初予算",
+  // 人口は総務省 R6 決算状況調の住民基本台帳人口（令7.1.1現在）。1人あたり換算に使う
+  population: self.population,
+  populationLabel: "住民基本台帳人口（令7.1.1現在）",
   totalOku: toOku(kofuDoc.expenditureTotal),
   prevTotalOku: kofuDoc.prevExpenditureTotal != null ? toOku(kofuDoc.prevExpenditureTotal) : null,
   yoyLabel: yoyTotal != null ? `${yoyTotal >= 0 ? "+" : ""}${yoyTotal.toFixed(1)}%` : "",
@@ -334,10 +343,14 @@ export interface KofuKanRow {
   ref: string;
   /** 来歴の画面表示用ラベル */
   refLabel: string;
+  /** 表示グループの内訳（実データの款）。「諸収入・その他」のみ持つ */
+  children?: KofuKanRow[];
 }
 
 export const KOFU_BUDGET: {
   fyLabel: string;
+  population: number;
+  populationLabel: string;
   totalOku: number;
   prevTotalOku: number | null;
   yoyLabel: string;
@@ -355,6 +368,95 @@ writeFileSync(kofuDest, kofuOut, "utf8");
 console.log(`✓ 甲府市 R8 款別予算を導出 → src/client/lib/kofu.gen.ts`);
 console.log(
   `  総額 ${kofuBudget.totalOku}億円（前年比 ${kofuBudget.yoyLabel}） / 歳入 ${kofuRevenue.length}グループ・歳出 ${kofuExpenditure.length}款`,
+);
+
+// ============================================================================
+// 甲府市 R7 予算執行状況（財政事情の公表）→ src/client/lib/execution.gen.ts
+// ============================================================================
+const EXEC_SOURCE_ID = "kofu-zaisei-jokyo-r7";
+const execValidation = validationResultSchema.parse(readJson(validationPath(EXEC_SOURCE_ID)));
+if (execValidation.status !== "ok") {
+  throw new Error(`${EXEC_SOURCE_ID}: 検証が ${execValidation.status} のため derive しません`);
+}
+const execDoc = anyParsedDocSchema.parse(readJson(parsedPath(EXEC_SOURCE_ID)));
+if (execDoc.docType !== "budget-execution") {
+  throw new Error(`${EXEC_SOURCE_ID}: budget-execution ドキュメントではありません`);
+}
+const execMeta = readRawMeta(EXEC_SOURCE_ID);
+if (!execMeta) throw new Error(`${EXEC_SOURCE_ID}: raw-meta がありません（先に pipeline:fetch）`);
+const execSource = findSource(EXEC_SOURCE_ID);
+const execFile = execMeta.files[0]!;
+const execUrl = execSource.urls?.[0] ?? execSource.landingPage ?? "";
+
+const execRow = (f: (typeof execDoc.facts)[number]) => ({
+  name: f.name,
+  budgetOku: toOku(f.currentBudget),
+  settledOku: toOku(f.settled),
+  ratePct: f.ratePct,
+  ref: `${execFile.filename}#p${f.locator.page}`,
+  refLabel: `財政事情 p.${f.locator.page}`,
+});
+const kofuExecution = {
+  fyLabel: `令和7年度（${execDoc.asOf}）`,
+  asOf: execDoc.asOf,
+  asOfNote: "出納整理期間前の年度末速報値。予算現額は補正・繰越を含むため当初予算とは一致しません",
+  population: execDoc.population,
+  revenueBudgetTotalOku: toOku(execDoc.revenueBudgetTotal),
+  revenueSettledTotalOku: toOku(execDoc.revenueSettledTotal),
+  expenditureBudgetTotalOku: toOku(execDoc.expenditureBudgetTotal),
+  expenditureSettledTotalOku: toOku(execDoc.expenditureSettledTotal),
+  revenue: execDoc.facts.filter((f) => f.side === "revenue").map(execRow),
+  expenditure: execDoc.facts.filter((f) => f.side === "expenditure").map(execRow),
+  sourceTitle: execSource.title,
+  sourceUrl: execUrl,
+  evidence: [
+    {
+      title: execSource.title,
+      type: "PDF",
+      url: execUrl,
+      source: execUrl ? new URL(execUrl).hostname : "",
+      thumb: `${execFile.filename} ・ sha256 ${execFile.sha256.slice(0, 16)}… ・ ${execFile.fetchedAt.slice(0, 10)} 取得`,
+    },
+  ],
+};
+const execOut = `// このファイルは自動生成です。手で編集しないこと。
+// 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
+// 出典: ${execSource.title}（${execFile.filename} sha256=${execFile.sha256.slice(0, 16)}…）
+// 金額は億円（資料の万円値を千円経由で変換した正確値）。率は資料記載値
+
+export interface KofuExecRow {
+  name: string;
+  /** 予算現額（億円・補正/繰越込み） */
+  budgetOku: number;
+  /** 収入済額（歳入）/ 支出済額（歳出）（億円） */
+  settledOku: number;
+  /** 資料記載の収入率/執行率（%）。予算現額0の款は null */
+  ratePct: number | null;
+  ref: string;
+  refLabel: string;
+}
+
+export const KOFU_EXECUTION: {
+  fyLabel: string;
+  asOf: string;
+  asOfNote: string;
+  population: number | null;
+  revenueBudgetTotalOku: number;
+  revenueSettledTotalOku: number;
+  expenditureBudgetTotalOku: number;
+  expenditureSettledTotalOku: number;
+  revenue: KofuExecRow[];
+  expenditure: KofuExecRow[];
+  sourceTitle: string;
+  sourceUrl: string;
+  evidence: { title: string; type: string; url: string; source: string; thumb: string }[];
+} = ${JSON.stringify(kofuExecution, null, 2)};
+`;
+writeFileSync(join(process.cwd(), "src/client/lib/execution.gen.ts"), execOut, "utf8");
+console.log(
+  `✓ R7 予算執行状況を導出 → src/client/lib/execution.gen.ts（歳出執行率 ${(
+    (execDoc.expenditureSettledTotal / execDoc.expenditureBudgetTotal) * 100
+  ).toFixed(1)}%）`,
 );
 
 // ---- 主な事業一覧 → src/client/lib/projects.gen.ts ---------------------------

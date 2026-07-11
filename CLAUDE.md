@@ -11,7 +11,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 **予算トレース** — 地方自治体の予算（歳入・歳出）から補正・執行率・支出先・事業報告までを一次資料（エビデンス）付きでたどれる可視化サイト。甲府市の令和8年度当初予算をサンプル収録している。
 
 - Claude Design のプロトタイプ（`project/予算トレース.dc.html`）を Next.js に本実装したもの。`project/` と `chats/` は**元デザインと会話ログの参照用アーカイブ**であり、編集・import しない（`tsconfig.json` でも除外済み）。
-- **データの来歴ルール**: 款レベルの金額は甲府市公表の実データ、項以下・補正・執行率・議会の会派別賛否などは推計・ダミー。画面上の「ダミー」「推計」の注記は仕様であり、データを触るときは注記との整合を必ず保つこと。
+- **データの来歴ルール**: アプリに載せる数値は**すべて一次資料由来の実データのみ**（款別歳入歳出・前年度額・主な事業83件は甲府市 R8 当初予算案資料、人口・類似自治体比較は総務省 R6 決算状況調）。ダミー・推計値は置かない（2026-07-12 に全ダミーを排除済み）。一次資料が無い機能（項以下の内訳・補正・執行率・事業詳細など）は実装せず「未収録」とし、資料を収録してから追加する。
 
 # コマンド
 
@@ -42,15 +42,15 @@ bun run pipeline:derive                         # normalized → アプリ用生
 現状は**サーバーレスの UI プロトタイプ**。画面遷移は URL ではなくコンポーネント内 state（`st.screen`）で管理する SPA で、プロトタイプの挙動を忠実に再現している。ディレクトリは [docs/architecture.md](docs/architecture.md) の `src/` レイアウトへ移行済み（`src/server/` `src/shared/` `src/test/` はスケルトンのみ）。
 
 - `src/client/components/BudgetTrace.tsx` — アプリ本体。全 state と算出ロジック（プロトタイプの `renderVals` 相当）。年度スケール・補正反映・1人あたり換算・ドリルダウン木の解決などは**すべてここで計算し、描画用の値オブジェクト `v` にまとめて**渡す。
-- `src/client/components/BudgetTraceView.tsx` — 全画面（トップ / 市区町村選択 / ダッシュボード / 款項目節ドリルダウン / 前年比較 / 政策テーマ / 事業詳細 / 過年度実績 / 類似自治体 / 基本情報 / 出典）の JSX。ロジックを持たない。
-- `src/client/lib/data.ts` — 予算・事業・テーマ・基本情報などの全データと整形関数（`fmtOku` / `fmtPerCap` / `donutBg` / `synthChildren` 等）。チャート色 `PALETTE` は**モジュール変数を `setPalette()` で切り替える**方式なので、描画前に呼ばれる順序に注意。サーバー層導入時に型→`src/shared/`、データ→seed / fixture へ分割する。
+- `src/client/components/BudgetTraceView.tsx` — 全画面（トップ / 市区町村選択 / ダッシュボード / 款別ドリルダウン / 前年比較 / 政策テーマ / 類似自治体 / 出典）の JSX。ロジックを持たない。
+- `src/client/lib/data.ts` — 実データ生成モジュール（`kofu.gen.ts` / `projects.gen.ts` / `similar.gen.ts`、`bun run pipeline:derive` で再生成）の re-export と整形関数（`fmtOku` / `fmtPerCap` / `donutBg` 等）。チャート色 `PALETTE` は**モジュール変数を `setPalette()` で切り替える**方式なので、描画前に呼ばれる順序に注意。サーバー層導入時に型→`src/shared/`、データ→ API へ分割する。
 - `src/client/components/JapanMap.tsx` — 日本地図（地域→都道府県→市区町村ズーム、島しょ部の別枠、エリアズーム、フリーワード検索）。SVG を直接 DOM 操作する React 管理外領域があるため、変更時は `boxRef` 配下と React 描画の境界を崩さないこと。
 - `src/client/components/ui.tsx` — `S()`（CSS 文字列→style オブジェクト。プロトタイプの inline style を逐語移植するためのヘルパ）、`HoverBox`（style-hover 相当）、`CountUpNum`（数値カウントアップ）。既存画面のスタイルは `S("...")` の文字列を**プロトタイプと diff 可能な形で維持**する。
 - `src/app/globals.css` — inline style では書けない media query を `data-mq="..."` 属性で上書きするモバイル最適化。新しいグリッド行を足すときは対応する `data-mq` ルールも確認する。
 
 # データパイプライン
 
-一次資料は `pipeline/`（バッチ）で **sources（台帳）→ raw（不変・原本コミット・ハッシュ来歴）→ parsed（locator 付き抽出）→ normalized（団体コード・標準科目で比較可能化）** の4層で扱う。規約は [docs/architecture.md](docs/architecture.md) §10。特に: 検証ゲート（`needs_review` を normalize に通さない）、フィクスチャ隔離（`data/normalized/_fixtures/` をアプリから import しない）、未知の科目を黙って「その他」に寄せない。
+一次資料は `pipeline/`（バッチ）で **sources（台帳）→ raw（不変・原本コミット・ハッシュ来歴）→ parsed（locator 付き抽出）→ normalized（団体コード・標準科目で比較可能化）→ gen（アプリ用断面）** の層で扱う（メダリオンの Bronze/Silver/Gold に相当）。**各資料の取得手順・構造のクセは [docs/data-sources.md](docs/data-sources.md)** に記録してあり、資料を追加・更新したら必ず追記する。規約は [docs/architecture.md](docs/architecture.md) §10。特に: 検証ゲート（`needs_review` を normalize に通さない）、フィクスチャ隔離（`data/normalized/_fixtures/` をアプリから import しない）、未知の科目を黙って「その他」に寄せない。
 
 # アーキテクチャ規約
 

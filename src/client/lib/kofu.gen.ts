@@ -15,10 +15,14 @@ export interface KofuKanRow {
   ref: string;
   /** 来歴の画面表示用ラベル */
   refLabel: string;
+  /** 表示グループの内訳（実データの款）。「諸収入・その他」のみ持つ */
+  children?: KofuKanRow[];
 }
 
 export const KOFU_BUDGET: {
   fyLabel: string;
+  population: number;
+  populationLabel: string;
   totalOku: number;
   prevTotalOku: number | null;
   yoyLabel: string;
@@ -30,6 +34,8 @@ export const KOFU_BUDGET: {
   evidence: { title: string; type: string; url: string; source: string; thumb: string }[];
 } = {
   "fyLabel": "令和8年度 当初予算",
+  "population": 183850,
+  "populationLabel": "住民基本台帳人口（令7.1.1現在）",
   "totalOku": 917.8706,
   "prevTotalOku": 880.85032,
   "yoyLabel": "+4.2%",
@@ -91,7 +97,113 @@ export const KOFU_BUDGET: {
       "prevV": 59.95868,
       "yoy": -19,
       "ref": "r8toushoyosansiryou.pdf#p12",
-      "refLabel": "予算書 p.12（残り13款の合算）"
+      "refLabel": "予算書 p.12（残り13款の合算）",
+      "children": [
+        {
+          "name": "諸収入",
+          "v": 13.61948,
+          "prevV": 27.09616,
+          "yoy": -49.7,
+          "ref": "r8toushoyosansiryou.pdf#p12",
+          "refLabel": "予算書 p.12"
+        },
+        {
+          "name": "使用料及び手数料",
+          "v": 9.51077,
+          "prevV": 9.51854,
+          "yoy": -0.1,
+          "ref": "r8toushoyosansiryou.pdf#p12",
+          "refLabel": "予算書 p.12"
+        },
+        {
+          "name": "法人事業税交付金",
+          "v": 6.83802,
+          "prevV": 6.59498,
+          "yoy": 3.7,
+          "ref": "r8toushoyosansiryou.pdf#p12",
+          "refLabel": "予算書 p.12"
+        },
+        {
+          "name": "地方譲与税",
+          "v": 4.137,
+          "prevV": 4.21887,
+          "yoy": -1.9,
+          "ref": "r8toushoyosansiryou.pdf#p12",
+          "refLabel": "予算書 p.12"
+        },
+        {
+          "name": "株式等譲渡所得割交付金",
+          "v": 3.41771,
+          "prevV": 3.04016,
+          "yoy": 12.4,
+          "ref": "r8toushoyosansiryou.pdf#p12",
+          "refLabel": "予算書 p.12"
+        },
+        {
+          "name": "地方特例交付金",
+          "v": 2.55287,
+          "prevV": 1.57128,
+          "yoy": 62.5,
+          "ref": "r8toushoyosansiryou.pdf#p12",
+          "refLabel": "予算書 p.12"
+        },
+        {
+          "name": "分担金及び負担金",
+          "v": 2.54892,
+          "prevV": 3.61101,
+          "yoy": -29.4,
+          "ref": "r8toushoyosansiryou.pdf#p12",
+          "refLabel": "予算書 p.12"
+        },
+        {
+          "name": "配当割交付金",
+          "v": 2.51406,
+          "prevV": 1.79091,
+          "yoy": 40.4,
+          "ref": "r8toushoyosansiryou.pdf#p12",
+          "refLabel": "予算書 p.12"
+        },
+        {
+          "name": "財産収入",
+          "v": 2.22573,
+          "prevV": 1.24827,
+          "yoy": 78.3,
+          "ref": "r8toushoyosansiryou.pdf#p12",
+          "refLabel": "予算書 p.12"
+        },
+        {
+          "name": "利子割交付金",
+          "v": 0.95384,
+          "prevV": 0.26377,
+          "yoy": 261.6,
+          "ref": "r8toushoyosansiryou.pdf#p12",
+          "refLabel": "予算書 p.12"
+        },
+        {
+          "name": "交通安全対策特別交付金",
+          "v": 0.24349,
+          "prevV": 0.24729,
+          "yoy": -1.5,
+          "ref": "r8toushoyosansiryou.pdf#p12",
+          "refLabel": "予算書 p.12"
+        },
+        {
+          "name": "環境性能割交付金",
+          "v": 0.00001,
+          "prevV": 0.75743,
+          "yoy": -100,
+          "ref": "r8toushoyosansiryou.pdf#p12",
+          "refLabel": "予算書 p.12"
+        },
+        {
+          "name": "繰越金",
+          "v": 0.00001,
+          "prevV": 0.00001,
+          "yoy": 0,
+          "ref": "r8toushoyosansiryou.pdf#p12",
+          "refLabel": "予算書 p.12"
+        }
+      ]
     },
     {
       "name": "寄附金",
