@@ -8,6 +8,7 @@
 // ============================================================================
 import { KOFU_BUDGET, KOFU_BUDGET_YEARS, type KofuBudgetYear, type KofuKanRow } from './kofu.gen';
 import { KOFU_EXECUTION } from './execution.gen';
+import { WAYBACK_BY_URL } from './archives.gen';
 
 // ---- 型 --------------------------------------------------------------------
 export interface BudgetNode {
@@ -88,14 +89,18 @@ export { KOFU_R6_DETAIL } from './detail.gen';
 export { KOFU_TREND } from './trend.gen';
 
 // データ出典・更新日一覧（数値の一次資料のみ。地図形状などの素材はトップページに記載）
+// url = Wayback Machine のコピー（魚拓）を優先。直リンクは中身だけ差し替えられ得るが、
+// コピーはパース時点の版に固定されるため透明性が高い。originUrl = 発行元の元 URL。
+// 台帳は data/archives.json、登録は bun run pipeline:archive
+const SOUMU_R6_LANDING = 'https://www.soumu.go.jp/iken/zaisei/r06_shichouson.html';
 export const SOURCES = [
   ...KOFU_BUDGET_YEARS.map((b) => ({
     title: b.sourceTitle, type: 'PDF', org: '甲府市', date: '2026-07-12',
     used: `ダッシュボード／款別ドリルダウン／前年比較／主な事業（${b.fyLabel.replace(' 当初予算', '')}）` + (b.fy === 'R8' ? '／政策テーマ' : ''),
-    url: b.sourceUrl,
+    url: b.sourceUrl, originUrl: b.originUrl,
   })),
-  { title:'令和7年度 甲府市財政事情（一般会計の状況・令和8年3月31日現在）', type:'PDF', org:'甲府市', date:'2026-07-12', used:'予算執行状況（款別の予算現額・収入/支出済額・執行率）', url: KOFU_EXECUTION.sourceUrl },
-  { title:'令和6年度 市町村別決算状況調', type:'Excel', org:'総務省 自治財政局', date:'2026-07-11', used:'類似自治体との比較／項別内訳（決算）／人口（1人あたり換算）', url: 'https://www.soumu.go.jp/iken/zaisei/r06_shichouson.html' },
+  { title:'令和7年度 甲府市財政事情（一般会計の状況・令和8年3月31日現在）', type:'PDF', org:'甲府市', date:'2026-07-12', used:'予算執行状況（款別の予算現額・収入/支出済額・執行率）', url: KOFU_EXECUTION.sourceUrl, originUrl: KOFU_EXECUTION.originUrl },
+  { title:'令和6年度 市町村別決算状況調', type:'Excel', org:'総務省 自治財政局', date:'2026-07-11', used:'類似自治体との比較／項別内訳（決算）／人口（1人あたり換算）', url: WAYBACK_BY_URL[SOUMU_R6_LANDING] ?? SOUMU_R6_LANDING, originUrl: SOUMU_R6_LANDING },
 ];
 
 // ---- ヘルパー --------------------------------------------------------------

@@ -5,11 +5,13 @@
 // 使い方: bun run pipeline:derive
 import {
   anyParsedDocSchema,
+  archivesLedgerSchema,
   normalizedDatasetSchema,
   validationResultSchema,
   type NormalizedMuniAccount,
 } from "./types";
 import {
+  DATA_DIR,
   normalizedPath,
   parsedPath,
   readJson,
@@ -17,11 +19,24 @@ import {
   validationPath,
 } from "./lib/store";
 import { findSource } from "./registry/sources";
-import { writeFileSync } from "node:fs";
+import { existsSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const SOURCE_ID = "soumu-shichoson-kessan-r6";
 const SELF_CODE = "192015"; // 甲府市
+
+// ---- 外部アーカイブ台帳（data/archives.json） --------------------------------
+// 画面のエビデンスリンクは**発行元の直リンクではなく Wayback のコピー**を優先する。
+// 直リンクは中身だけ差し替えられ得るが、コピーはパース時点の版に固定されるため
+// 透明性が高い（ユーザー方針 2026-07-12）。未登録の URL は直リンクにフォールバック。
+const ARCHIVES = (() => {
+  const p = join(DATA_DIR, "archives.json");
+  if (!existsSync(p)) return {} as Record<string, string>;
+  const entries = archivesLedgerSchema.parse(readJson(p)).entries;
+  return Object.fromEntries(entries.map((e) => [e.url, e.waybackUrl]));
+})();
+/** URL → Wayback コピー（未登録なら元 URL のまま） */
+const wayback = (url: string): string => ARCHIVES[url] ?? url;
 // 画面の説明文と揃えた人口帯（15〜25万人の市）
 const BAND_MIN = 150_000;
 const BAND_MAX = 250_000;
@@ -144,7 +159,7 @@ const evidence = rawMeta.files
   .map((f) => ({
     title: `${source.title} ${FILE_INFO[f.filename].label}`,
     type: "Excel",
-    url: source.urls?.find((u) => u.endsWith(f.filename)) ?? source.landingPage ?? "",
+    url: wayback(source.urls?.find((u) => u.endsWith(f.filename)) ?? source.landingPage ?? ""),
     source: new URL(source.urls?.[0] ?? source.landingPage!).hostname,
     thumb: `${f.filename} ・ sha256 ${f.sha256.slice(0, 16)}… ・ ${f.fetchedAt.slice(0, 10)} 取得`,
   }));
@@ -187,7 +202,7 @@ export const SIMILAR: SimilarRow[] = ${JSON.stringify(rows, null, 2)};
 export interface SimilarEvidence {
   title: string;
   type: string;
-  /** 一次資料への実リンク（総務省サイトの直リンク） */
+  /** 一次資料へのリンク（Wayback コピー優先） */
   url: string;
   source: string;
   /** サムネイル枠に出す来歴（ファイル名・sha256・取得日） */
@@ -339,7 +354,9 @@ function buildKofuBudgetYear(entry: (typeof BUDGET_YEARS)[number]) {
     prevTotalOku: doc.prevExpenditureTotal != null ? toOku(doc.prevExpenditureTotal) : null,
     yoyLabel: yoyTotal != null ? `${yoyTotal >= 0 ? "+" : ""}${yoyTotal.toFixed(1)}%` : "",
     sourceTitle: source.title,
-    sourceUrl: url,
+    // リンクは Wayback コピー（パース時点の版に固定）。発行元の元 URL は originUrl
+    sourceUrl: wayback(url),
+    originUrl: url,
     pagesLabel: `p.${pagesOpts.revenuePage}–${pagesOpts.expenditurePage}`,
     revenue,
     expenditure,
@@ -347,7 +364,7 @@ function buildKofuBudgetYear(entry: (typeof BUDGET_YEARS)[number]) {
       {
         title: source.title,
         type: "PDF",
-        url,
+        url: wayback(url),
         source: url ? new URL(url).hostname : "",
         thumb: `${file.filename} ・ sha256 ${file.sha256.slice(0, 16)}… ・ ${file.fetchedAt.slice(0, 10)} 取得`,
       },
@@ -389,7 +406,10 @@ export interface KofuBudgetYear {
   prevTotalOku: number | null;
   yoyLabel: string;
   sourceTitle: string;
+  /** リンク用 URL（Wayback コピー優先。パース時点の版に固定） */
   sourceUrl: string;
+  /** 発行元の元 URL */
+  originUrl: string;
   pagesLabel: string;
   revenue: KofuKanRow[];
   expenditure: KofuKanRow[];
@@ -437,7 +457,7 @@ for (const b of budgetYears) {
       byPurpose: Object.fromEntries(
         Object.entries(k.expenditureByPurpose).map(([name, v2]) => [name, toOku(v2 as number)]),
       ),
-      landingUrl: src.landingPage ?? "",
+      landingUrl: wayback(src.landingPage ?? ""),
       ref: `${k.sourceRef.locator.file} ${k.sourceRef.locator.row}行目`,
     };
   });
@@ -495,7 +515,9 @@ export const KOFU_TREND: KofuTrendRow[] = ${JSON.stringify(trendRows, null, 2)};
   // 目的別歳出内訳ファイル（内訳の出典）の locator と sha256
   const mokutekiLoc = kofuFact.locators?.find((l) => l.file.includes("001061671")) ?? kofuFact.locator;
   const mokutekiFile = soumuMeta?.files.find((f) => f.filename === mokutekiLoc.file);
-  const mokutekiUrl = soumuSource.urls?.find((u) => u.endsWith(mokutekiLoc.file)) ?? soumuSource.landingPage ?? "";
+  const mokutekiUrl = wayback(
+    soumuSource.urls?.find((u) => u.endsWith(mokutekiLoc.file)) ?? soumuSource.landingPage ?? "",
+  );
 
   const byKan = Object.fromEntries(
     Object.entries(kofuFact.expenditureByPurposeDetail).map(([kan, kou]) => [
@@ -567,12 +589,14 @@ const kofuExecution = {
   revenue: execDoc.facts.filter((f) => f.side === "revenue").map(execRow),
   expenditure: execDoc.facts.filter((f) => f.side === "expenditure").map(execRow),
   sourceTitle: execSource.title,
-  sourceUrl: execUrl,
+  // リンクは Wayback コピー（この資料は同一 URL 上書き型なのでコピーが特に重要）
+  sourceUrl: wayback(execUrl),
+  originUrl: execUrl,
   evidence: [
     {
       title: execSource.title,
       type: "PDF",
-      url: execUrl,
+      url: wayback(execUrl),
       source: execUrl ? new URL(execUrl).hostname : "",
       thumb: `${execFile.filename} ・ sha256 ${execFile.sha256.slice(0, 16)}… ・ ${execFile.fetchedAt.slice(0, 10)} 取得`,
     },
@@ -607,7 +631,10 @@ export const KOFU_EXECUTION: {
   revenue: KofuExecRow[];
   expenditure: KofuExecRow[];
   sourceTitle: string;
+  /** リンク用 URL（Wayback コピー優先） */
   sourceUrl: string;
+  /** 発行元の元 URL */
+  originUrl: string;
   evidence: { title: string; type: string; url: string; source: string; thumb: string }[];
 } = ${JSON.stringify(kofuExecution, null, 2)};
 `;
@@ -637,12 +664,13 @@ console.log(
         shisaku: p.shisaku,
         ref: `${b.file.filename}#p${p.locator.page}`,
         refLabel: `予算資料 p.${p.locator.page}`,
-        // PDF のページアンカー付きリンク（ブラウザの PDF ビューアが該当ページを開く）
-        refUrl: `${b.url}#page=${p.locator.page}`,
+        // PDF のページアンカー付きリンク（Wayback コピー優先。フラグメントはコピーでも効く）
+        refUrl: `${wayback(b.url)}#page=${p.locator.page}`,
       })),
       source: {
         title: b.source.title,
-        url: b.url,
+        url: wayback(b.url),
+        originUrl: b.url,
         pagesLabel: b.pagesOpts.projectPages
           ? `p.${b.pagesOpts.projectPages.from}–${b.pagesOpts.projectPages.to}`
           : "",
@@ -673,7 +701,7 @@ export interface KofuProject {
   shisaku: string;
   ref: string;
   refLabel: string;
-  /** 原資料 PDF の該当ページへの直リンク */
+  /** 原資料 PDF の該当ページへのリンク（Wayback コピー優先） */
   refUrl: string;
 }
 
@@ -682,7 +710,8 @@ export interface KofuProjectYear {
   fy: string;
   fyLabel: string;
   projects: KofuProject[];
-  source: { title: string; url: string; pagesLabel: string };
+  /** url = Wayback コピー優先のリンク / originUrl = 発行元の元 URL */
+  source: { title: string; url: string; originUrl: string; pagesLabel: string };
 }
 
 /** 収録済みの主な事業一覧（新しい年度順） */
@@ -697,4 +726,25 @@ export const KOFU_PROJECTS_SOURCE = KOFU_PROJECT_YEARS[0]!.source;
   console.log(
     `✓ 主な事業一覧を導出 → src/client/lib/projects.gen.ts（${projectYears.map((y) => `${y.fy}:${y.projects.length}事業`).join(" / ")}）`,
   );
+}
+
+// ============================================================================
+// 外部アーカイブ台帳（data/archives.json）→ src/client/lib/archives.gen.ts
+// 出典タブで「魚拓（Wayback Machine スナップショット）」リンクを出すための断面。
+// 台帳が無い環境でも derive は通す（空マップを生成）
+// ============================================================================
+{
+  const archivesPath = join(DATA_DIR, "archives.json");
+  const entries = existsSync(archivesPath)
+    ? archivesLedgerSchema.parse(readJson(archivesPath)).entries
+    : [];
+  const byUrl = Object.fromEntries(entries.map((e) => [e.url, e.waybackUrl]));
+  const archOut = `// このファイルは自動生成です。手で編集しないこと。
+// 再生成: bun run pipeline:derive（台帳の更新は bun run pipeline:archive）
+// 一次資料の元 URL → Wayback Machine スナップショット URL
+
+export const WAYBACK_BY_URL: Record<string, string> = ${JSON.stringify(byUrl, null, 2)};
+`;
+  writeFileSync(join(process.cwd(), "src/client/lib/archives.gen.ts"), archOut, "utf8");
+  console.log(`✓ 外部アーカイブ台帳を導出 → src/client/lib/archives.gen.ts（${entries.length}件）`);
 }

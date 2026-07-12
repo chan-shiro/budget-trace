@@ -22,7 +22,7 @@ export interface KofuProject {
   shisaku: string;
   ref: string;
   refLabel: string;
-  /** 原資料 PDF の該当ページへの直リンク */
+  /** 原資料 PDF の該当ページへのリンク（Wayback コピー優先） */
   refUrl: string;
 }
 
@@ -31,7 +31,8 @@ export interface KofuProjectYear {
   fy: string;
   fyLabel: string;
   projects: KofuProject[];
-  source: { title: string; url: string; pagesLabel: string };
+  /** url = Wayback コピー優先のリンク / originUrl = 発行元の元 URL */
+  source: { title: string; url: string; originUrl: string; pagesLabel: string };
 }
 
 /** 収録済みの主な事業一覧（新しい年度順） */
@@ -52,7 +53,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "互いを尊重し共生できる社会の実現",
         "ref": "r8toushoyosansiryou.pdf#p14",
         "refLabel": "予算資料 p.14",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=14"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=14"
       },
       {
         "kan": "総務費",
@@ -66,7 +67,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "互いを尊重し共生できる社会の実現",
         "ref": "r8toushoyosansiryou.pdf#p14",
         "refLabel": "予算資料 p.14",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=14"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=14"
       },
       {
         "kan": "総務費",
@@ -80,7 +81,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "互いを尊重し共生できる社会の実現",
         "ref": "r8toushoyosansiryou.pdf#p14",
         "refLabel": "予算資料 p.14",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=14"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=14"
       },
       {
         "kan": "総務費",
@@ -94,7 +95,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "地域とのつながり・愛着の醸成",
         "ref": "r8toushoyosansiryou.pdf#p14",
         "refLabel": "予算資料 p.14",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=14"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=14"
       },
       {
         "kan": "総務費",
@@ -108,7 +109,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "生活を支えるインフラの整備・更新",
         "ref": "r8toushoyosansiryou.pdf#p14",
         "refLabel": "予算資料 p.14",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=14"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=14"
       },
       {
         "kan": "総務費",
@@ -122,7 +123,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "生活を支えるインフラの整備・更新",
         "ref": "r8toushoyosansiryou.pdf#p14",
         "refLabel": "予算資料 p.14",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=14"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=14"
       },
       {
         "kan": "総務費",
@@ -136,7 +137,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "宝飾をはじめとする地域産業を活かしたブランド力の強化",
         "ref": "r8toushoyosansiryou.pdf#p14",
         "refLabel": "予算資料 p.14",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=14"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=14"
       },
       {
         "kan": "総務費",
@@ -150,7 +151,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "宝飾をはじめとする地域産業を活かしたブランド力の強化",
         "ref": "r8toushoyosansiryou.pdf#p14",
         "refLabel": "予算資料 p.14",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=14"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=14"
       },
       {
         "kan": "総務費",
@@ -164,7 +165,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
         "ref": "r8toushoyosansiryou.pdf#p15",
         "refLabel": "予算資料 p.15",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
       },
       {
         "kan": "総務費",
@@ -178,7 +179,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "多様な主体との連携の推進",
         "ref": "r8toushoyosansiryou.pdf#p15",
         "refLabel": "予算資料 p.15",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
       },
       {
         "kan": "総務費",
@@ -192,7 +193,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
         "ref": "r8toushoyosansiryou.pdf#p15",
         "refLabel": "予算資料 p.15",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
       },
       {
         "kan": "総務費",
@@ -206,7 +207,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
         "ref": "r8toushoyosansiryou.pdf#p15",
         "refLabel": "予算資料 p.15",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
       },
       {
         "kan": "総務費",
@@ -220,7 +221,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "リニア開業を見据えたまちづくりの展開",
         "ref": "r8toushoyosansiryou.pdf#p15",
         "refLabel": "予算資料 p.15",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
       },
       {
         "kan": "総務費",
@@ -234,7 +235,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "リニア開業を見据えたまちづくりの展開",
         "ref": "r8toushoyosansiryou.pdf#p15",
         "refLabel": "予算資料 p.15",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
       },
       {
         "kan": "総務費",
@@ -248,7 +249,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "将来にわたり持続可能な行財政運営の推進",
         "ref": "r8toushoyosansiryou.pdf#p15",
         "refLabel": "予算資料 p.15",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
       },
       {
         "kan": "総務費",
@@ -262,7 +263,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "将来にわたり持続可能な行財政運営の推進",
         "ref": "r8toushoyosansiryou.pdf#p15",
         "refLabel": "予算資料 p.15",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
       },
       {
         "kan": "総務費",
@@ -276,7 +277,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "将来にわたり持続可能な行財政運営の推進",
         "ref": "r8toushoyosansiryou.pdf#p15",
         "refLabel": "予算資料 p.15",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
       },
       {
         "kan": "総務費",
@@ -290,7 +291,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "将来にわたり持続可能な行財政運営の推進",
         "ref": "r8toushoyosansiryou.pdf#p15",
         "refLabel": "予算資料 p.15",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
       },
       {
         "kan": "民生費",
@@ -304,7 +305,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "自分らしく暮らせる福祉の充実",
         "ref": "r8toushoyosansiryou.pdf#p16",
         "refLabel": "予算資料 p.16",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
       },
       {
         "kan": "民生費",
@@ -318,7 +319,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "自分らしく暮らせる福祉の充実",
         "ref": "r8toushoyosansiryou.pdf#p16",
         "refLabel": "予算資料 p.16",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
       },
       {
         "kan": "民生費",
@@ -332,7 +333,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "自分らしく暮らせる福祉の充実",
         "ref": "r8toushoyosansiryou.pdf#p16",
         "refLabel": "予算資料 p.16",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
       },
       {
         "kan": "民生費",
@@ -346,7 +347,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "自分らしく暮らせる福祉の充実",
         "ref": "r8toushoyosansiryou.pdf#p16",
         "refLabel": "予算資料 p.16",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
       },
       {
         "kan": "民生費",
@@ -360,7 +361,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "自分らしく暮らせる福祉の充実",
         "ref": "r8toushoyosansiryou.pdf#p16",
         "refLabel": "予算資料 p.16",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
       },
       {
         "kan": "民生費",
@@ -374,7 +375,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "自分らしく暮らせる福祉の充実",
         "ref": "r8toushoyosansiryou.pdf#p16",
         "refLabel": "予算資料 p.16",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
       },
       {
         "kan": "民生費",
@@ -388,7 +389,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "子育て・子育ちを支える環境づくり",
         "ref": "r8toushoyosansiryou.pdf#p16",
         "refLabel": "予算資料 p.16",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
       },
       {
         "kan": "民生費",
@@ -402,7 +403,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "子育て・子育ちを支える環境づくり",
         "ref": "r8toushoyosansiryou.pdf#p16",
         "refLabel": "予算資料 p.16",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
       },
       {
         "kan": "民生費",
@@ -416,7 +417,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "子育て・子育ちを支える環境づくり",
         "ref": "r8toushoyosansiryou.pdf#p16",
         "refLabel": "予算資料 p.16",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
       },
       {
         "kan": "衛生費",
@@ -430,7 +431,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "子育て・子育ちを支える環境づくり",
         "ref": "r8toushoyosansiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
       },
       {
         "kan": "衛生費",
@@ -444,7 +445,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "子育て・子育ちを支える環境づくり",
         "ref": "r8toushoyosansiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
       },
       {
         "kan": "衛生費",
@@ -458,7 +459,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康に生活できる環境の整備",
         "ref": "r8toushoyosansiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
       },
       {
         "kan": "衛生費",
@@ -472,7 +473,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康に生活できる環境の整備",
         "ref": "r8toushoyosansiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
       },
       {
         "kan": "衛生費",
@@ -486,7 +487,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康に生活できる環境の整備",
         "ref": "r8toushoyosansiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
       },
       {
         "kan": "衛生費",
@@ -500,7 +501,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康に生活できる環境の整備",
         "ref": "r8toushoyosansiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
       },
       {
         "kan": "衛生費",
@@ -514,7 +515,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康に生活できる環境の整備",
         "ref": "r8toushoyosansiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
       },
       {
         "kan": "衛生費",
@@ -528,7 +529,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康に生活できる環境の整備",
         "ref": "r8toushoyosansiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
       },
       {
         "kan": "衛生費",
@@ -542,7 +543,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康に生活できる環境の整備",
         "ref": "r8toushoyosansiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
       },
       {
         "kan": "衛生費",
@@ -556,7 +557,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康に生活できる環境の整備",
         "ref": "r8toushoyosansiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
       },
       {
         "kan": "衛生費",
@@ -570,7 +571,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "心地よく暮らせる住環境の形成",
         "ref": "r8toushoyosansiryou.pdf#p18",
         "refLabel": "予算資料 p.18",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=18"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=18"
       },
       {
         "kan": "衛生費",
@@ -584,7 +585,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "心地よく暮らせる住環境の形成",
         "ref": "r8toushoyosansiryou.pdf#p18",
         "refLabel": "予算資料 p.18",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=18"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=18"
       },
       {
         "kan": "衛生費",
@@ -598,7 +599,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "心地よく暮らせる住環境の形成",
         "ref": "r8toushoyosansiryou.pdf#p18",
         "refLabel": "予算資料 p.18",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=18"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=18"
       },
       {
         "kan": "労働費",
@@ -612,7 +613,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "地域活力を支える産業の振興と雇用の創出",
         "ref": "r8toushoyosansiryou.pdf#p18",
         "refLabel": "予算資料 p.18",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=18"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=18"
       },
       {
         "kan": "労働費",
@@ -626,7 +627,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "地域活力を支える産業の振興と雇用の創出",
         "ref": "r8toushoyosansiryou.pdf#p18",
         "refLabel": "予算資料 p.18",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=18"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=18"
       },
       {
         "kan": "労働費",
@@ -640,7 +641,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "地域活力を支える産業の振興と雇用の創出",
         "ref": "r8toushoyosansiryou.pdf#p18",
         "refLabel": "予算資料 p.18",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=18"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=18"
       },
       {
         "kan": "農林水産業費",
@@ -654,7 +655,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "心地よく暮らせる住環境の形成",
         "ref": "r8toushoyosansiryou.pdf#p19",
         "refLabel": "予算資料 p.19",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=19"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=19"
       },
       {
         "kan": "農林水産業費",
@@ -668,7 +669,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "地域活力を支える産業の振興と雇用の創出",
         "ref": "r8toushoyosansiryou.pdf#p19",
         "refLabel": "予算資料 p.19",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=19"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=19"
       },
       {
         "kan": "農林水産業費",
@@ -682,7 +683,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "地域活力を支える産業の振興と雇用の創出",
         "ref": "r8toushoyosansiryou.pdf#p19",
         "refLabel": "予算資料 p.19",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=19"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=19"
       },
       {
         "kan": "農林水産業費",
@@ -696,7 +697,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "地域活力を支える産業の振興と雇用の創出",
         "ref": "r8toushoyosansiryou.pdf#p19",
         "refLabel": "予算資料 p.19",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=19"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=19"
       },
       {
         "kan": "農林水産業費",
@@ -710,7 +711,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "地域活力を支える産業の振興と雇用の創出",
         "ref": "r8toushoyosansiryou.pdf#p19",
         "refLabel": "予算資料 p.19",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=19"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=19"
       },
       {
         "kan": "商工費",
@@ -724,7 +725,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "宝飾をはじめとする地域産業を活かしたブランド力の強化",
         "ref": "r8toushoyosansiryou.pdf#p19",
         "refLabel": "予算資料 p.19",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=19"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=19"
       },
       {
         "kan": "商工費",
@@ -738,7 +739,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "宝飾をはじめとする地域産業を活かしたブランド力の強化",
         "ref": "r8toushoyosansiryou.pdf#p19",
         "refLabel": "予算資料 p.19",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=19"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=19"
       },
       {
         "kan": "商工費",
@@ -752,7 +753,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "宝飾をはじめとする地域産業を活かしたブランド力の強化",
         "ref": "r8toushoyosansiryou.pdf#p20",
         "refLabel": "予算資料 p.20",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=20"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=20"
       },
       {
         "kan": "商工費",
@@ -766,7 +767,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "地域活力を支える産業の振興と雇用の創出",
         "ref": "r8toushoyosansiryou.pdf#p20",
         "refLabel": "予算資料 p.20",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=20"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=20"
       },
       {
         "kan": "商工費",
@@ -780,7 +781,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
         "ref": "r8toushoyosansiryou.pdf#p20",
         "refLabel": "予算資料 p.20",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=20"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=20"
       },
       {
         "kan": "商工費",
@@ -794,7 +795,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
         "ref": "r8toushoyosansiryou.pdf#p20",
         "refLabel": "予算資料 p.20",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=20"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=20"
       },
       {
         "kan": "商工費",
@@ -808,7 +809,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
         "ref": "r8toushoyosansiryou.pdf#p20",
         "refLabel": "予算資料 p.20",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=20"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=20"
       },
       {
         "kan": "土木費",
@@ -822,7 +823,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康に生活できる環境の整備",
         "ref": "r8toushoyosansiryou.pdf#p20",
         "refLabel": "予算資料 p.20",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=20"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=20"
       },
       {
         "kan": "土木費",
@@ -836,7 +837,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "心地よく暮らせる住環境の形成",
         "ref": "r8toushoyosansiryou.pdf#p20",
         "refLabel": "予算資料 p.20",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=20"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=20"
       },
       {
         "kan": "土木費",
@@ -850,7 +851,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "心地よく暮らせる住環境の形成",
         "ref": "r8toushoyosansiryou.pdf#p20",
         "refLabel": "予算資料 p.20",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=20"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=20"
       },
       {
         "kan": "土木費",
@@ -864,7 +865,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "生活を支えるインフラの整備・更新",
         "ref": "r8toushoyosansiryou.pdf#p21",
         "refLabel": "予算資料 p.21",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
       },
       {
         "kan": "土木費",
@@ -878,7 +879,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "生活を支えるインフラの整備・更新",
         "ref": "r8toushoyosansiryou.pdf#p21",
         "refLabel": "予算資料 p.21",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
       },
       {
         "kan": "土木費",
@@ -892,7 +893,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "生活を支えるインフラの整備・更新",
         "ref": "r8toushoyosansiryou.pdf#p21",
         "refLabel": "予算資料 p.21",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
       },
       {
         "kan": "土木費",
@@ -906,7 +907,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
         "ref": "r8toushoyosansiryou.pdf#p21",
         "refLabel": "予算資料 p.21",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
       },
       {
         "kan": "土木費",
@@ -920,7 +921,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "時代に合った良好な都市空間の形成",
         "ref": "r8toushoyosansiryou.pdf#p21",
         "refLabel": "予算資料 p.21",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
       },
       {
         "kan": "土木費",
@@ -934,7 +935,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "時代に合った良好な都市空間の形成",
         "ref": "r8toushoyosansiryou.pdf#p21",
         "refLabel": "予算資料 p.21",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
       },
       {
         "kan": "土木費",
@@ -948,7 +949,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "時代に合った良好な都市空間の形成",
         "ref": "r8toushoyosansiryou.pdf#p21",
         "refLabel": "予算資料 p.21",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
       },
       {
         "kan": "土木費",
@@ -962,7 +963,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "時代に合った良好な都市空間の形成",
         "ref": "r8toushoyosansiryou.pdf#p21",
         "refLabel": "予算資料 p.21",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
       },
       {
         "kan": "土木費",
@@ -976,7 +977,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
         "ref": "r8toushoyosansiryou.pdf#p21",
         "refLabel": "予算資料 p.21",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
       },
       {
         "kan": "土木費",
@@ -990,7 +991,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
         "ref": "r8toushoyosansiryou.pdf#p21",
         "refLabel": "予算資料 p.21",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
       },
       {
         "kan": "消防費",
@@ -1004,7 +1005,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "災害・感染症等に強い地域づくり",
         "ref": "r8toushoyosansiryou.pdf#p22",
         "refLabel": "予算資料 p.22",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=22"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=22"
       },
       {
         "kan": "消防費",
@@ -1018,7 +1019,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "災害・感染症等に強い地域づくり",
         "ref": "r8toushoyosansiryou.pdf#p22",
         "refLabel": "予算資料 p.22",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=22"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=22"
       },
       {
         "kan": "消防費",
@@ -1032,7 +1033,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "災害・感染症等に強い地域づくり",
         "ref": "r8toushoyosansiryou.pdf#p22",
         "refLabel": "予算資料 p.22",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=22"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=22"
       },
       {
         "kan": "消防費",
@@ -1046,7 +1047,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "災害・感染症等に強い地域づくり",
         "ref": "r8toushoyosansiryou.pdf#p22",
         "refLabel": "予算資料 p.22",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=22"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=22"
       },
       {
         "kan": "教育費",
@@ -1060,7 +1061,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "誰もが学び、成長できる機会の創出",
         "ref": "r8toushoyosansiryou.pdf#p22",
         "refLabel": "予算資料 p.22",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=22"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=22"
       },
       {
         "kan": "教育費",
@@ -1074,7 +1075,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "誰もが学び、成長できる機会の創出",
         "ref": "r8toushoyosansiryou.pdf#p22",
         "refLabel": "予算資料 p.22",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=22"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=22"
       },
       {
         "kan": "教育費",
@@ -1088,7 +1089,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "誰もが学び、成長できる機会の創出",
         "ref": "r8toushoyosansiryou.pdf#p22",
         "refLabel": "予算資料 p.22",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=22"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=22"
       },
       {
         "kan": "教育費",
@@ -1102,7 +1103,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "誰もが学び、成長できる機会の創出",
         "ref": "r8toushoyosansiryou.pdf#p22",
         "refLabel": "予算資料 p.22",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=22"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=22"
       },
       {
         "kan": "教育費",
@@ -1116,7 +1117,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "誰もが学び、成長できる機会の創出",
         "ref": "r8toushoyosansiryou.pdf#p23",
         "refLabel": "予算資料 p.23",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=23"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=23"
       },
       {
         "kan": "教育費",
@@ -1130,7 +1131,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "誰もが学び、成長できる機会の創出災害・感染症等に強い地域づくり（再掲）",
         "ref": "r8toushoyosansiryou.pdf#p23",
         "refLabel": "予算資料 p.23",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=23"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=23"
       },
       {
         "kan": "教育費",
@@ -1144,7 +1145,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "子育て・子育ちを支える環境づくり誰もが学び、成長できる機会の創出",
         "ref": "r8toushoyosansiryou.pdf#p23",
         "refLabel": "予算資料 p.23",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=23"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=23"
       },
       {
         "kan": "教育費",
@@ -1158,7 +1159,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "子育て・子育ちを支える環境づくり",
         "ref": "r8toushoyosansiryou.pdf#p23",
         "refLabel": "予算資料 p.23",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=23"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=23"
       },
       {
         "kan": "教育費",
@@ -1172,7 +1173,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康に生活できる環境の整備地域とのつながり・愛着の醸成",
         "ref": "r8toushoyosansiryou.pdf#p23",
         "refLabel": "予算資料 p.23",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=23"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=23"
       },
       {
         "kan": "教育費",
@@ -1186,7 +1187,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康に生活できる環境の整備",
         "ref": "r8toushoyosansiryou.pdf#p23",
         "refLabel": "予算資料 p.23",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=23"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=23"
       },
       {
         "kan": "介護保険事業特別会計",
@@ -1200,12 +1201,13 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "自分らしく暮らせる福祉の充実",
         "ref": "r8toushoyosansiryou.pdf#p23",
         "refLabel": "予算資料 p.23",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=23"
+        "refUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=23"
       }
     ],
     "source": {
       "title": "令和8年度 甲府市当初予算（案）資料",
-      "url": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf",
+      "url": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf",
+      "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf",
       "pagesLabel": "p.14–23"
     }
   },
@@ -1225,7 +1227,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "国際交流・多文化共生の推進",
         "ref": "r7toushoyosansiryou.pdf#p15",
         "refLabel": "予算資料 p.15",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=15"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=15"
       },
       {
         "kan": "総務費",
@@ -1239,7 +1241,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "国際交流・多文化共生の推進",
         "ref": "r7toushoyosansiryou.pdf#p15",
         "refLabel": "予算資料 p.15",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=15"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=15"
       },
       {
         "kan": "総務費",
@@ -1253,7 +1255,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "協働の推進",
         "ref": "r7toushoyosansiryou.pdf#p15",
         "refLabel": "予算資料 p.15",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=15"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=15"
       },
       {
         "kan": "総務費",
@@ -1267,7 +1269,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "シティプロモーションの推進",
         "ref": "r7toushoyosansiryou.pdf#p15",
         "refLabel": "予算資料 p.15",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=15"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=15"
       },
       {
         "kan": "総務費",
@@ -1281,7 +1283,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "持続可能な行財政運営",
         "ref": "r7toushoyosansiryou.pdf#p15",
         "refLabel": "予算資料 p.15",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=15"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=15"
       },
       {
         "kan": "総務費",
@@ -1295,7 +1297,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "持続可能な行財政運営",
         "ref": "r7toushoyosansiryou.pdf#p15",
         "refLabel": "予算資料 p.15",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=15"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=15"
       },
       {
         "kan": "総務費",
@@ -1309,7 +1311,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "持続可能な行財政運営",
         "ref": "r7toushoyosansiryou.pdf#p15",
         "refLabel": "予算資料 p.15",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=15"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=15"
       },
       {
         "kan": "総務費",
@@ -1323,7 +1325,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "持続可能な行財政運営",
         "ref": "r7toushoyosansiryou.pdf#p15",
         "refLabel": "予算資料 p.15",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=15"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=15"
       },
       {
         "kan": "総務費",
@@ -1337,7 +1339,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "持続可能な行財政運営",
         "ref": "r7toushoyosansiryou.pdf#p16",
         "refLabel": "予算資料 p.16",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=16"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=16"
       },
       {
         "kan": "総務費",
@@ -1351,7 +1353,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "持続可能な行財政運営",
         "ref": "r7toushoyosansiryou.pdf#p16",
         "refLabel": "予算資料 p.16",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=16"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=16"
       },
       {
         "kan": "総務費",
@@ -1365,7 +1367,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "公共交通の利便性の向上",
         "ref": "r7toushoyosansiryou.pdf#p16",
         "refLabel": "予算資料 p.16",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=16"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=16"
       },
       {
         "kan": "総務費",
@@ -1379,7 +1381,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "公共交通の利便性の向上",
         "ref": "r7toushoyosansiryou.pdf#p16",
         "refLabel": "予算資料 p.16",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=16"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=16"
       },
       {
         "kan": "総務費",
@@ -1393,7 +1395,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "広域的な連携の推進",
         "ref": "r7toushoyosansiryou.pdf#p16",
         "refLabel": "予算資料 p.16",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=16"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=16"
       },
       {
         "kan": "総務費",
@@ -1407,7 +1409,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "移住・定住の促進",
         "ref": "r7toushoyosansiryou.pdf#p16",
         "refLabel": "予算資料 p.16",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=16"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=16"
       },
       {
         "kan": "総務費",
@@ -1421,7 +1423,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "移住・定住の促進",
         "ref": "r7toushoyosansiryou.pdf#p16",
         "refLabel": "予算資料 p.16",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=16"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=16"
       },
       {
         "kan": "総務費",
@@ -1435,7 +1437,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "移住・定住の促進",
         "ref": "r7toushoyosansiryou.pdf#p16",
         "refLabel": "予算資料 p.16",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=16"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=16"
       },
       {
         "kan": "総務費",
@@ -1449,7 +1451,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "移住・定住の促進",
         "ref": "r7toushoyosansiryou.pdf#p16",
         "refLabel": "予算資料 p.16",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=16"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=16"
       },
       {
         "kan": "総務費",
@@ -1463,7 +1465,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "持続可能な行財政運営",
         "ref": "r7toushoyosansiryou.pdf#p16",
         "refLabel": "予算資料 p.16",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=16"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=16"
       },
       {
         "kan": "総務費",
@@ -1477,7 +1479,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "持続可能な行財政運営",
         "ref": "r7toushoyosansiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=17"
       },
       {
         "kan": "総務費",
@@ -1491,7 +1493,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "商業・工業の振興",
         "ref": "r7toushoyosansiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=17"
       },
       {
         "kan": "総務費",
@@ -1505,7 +1507,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "持続可能な行財政運営",
         "ref": "r7toushoyosansiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=17"
       },
       {
         "kan": "民生費",
@@ -1519,7 +1521,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "子ども・子育てへの支援",
         "ref": "r7toushoyosansiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=17"
       },
       {
         "kan": "民生費",
@@ -1533,7 +1535,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "子ども・子育てへの支援",
         "ref": "r7toushoyosansiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=17"
       },
       {
         "kan": "民生費",
@@ -1547,7 +1549,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "子ども・子育てへの支援",
         "ref": "r7toushoyosansiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=17"
       },
       {
         "kan": "民生費",
@@ -1561,7 +1563,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "子ども・子育てへの支援",
         "ref": "r7toushoyosansiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=17"
       },
       {
         "kan": "民生費",
@@ -1575,7 +1577,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "高齢者福祉の充実",
         "ref": "r7toushoyosansiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=17"
       },
       {
         "kan": "民生費",
@@ -1589,7 +1591,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "高齢者福祉の充実",
         "ref": "r7toushoyosansiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=17"
       },
       {
         "kan": "民生費",
@@ -1603,7 +1605,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "障がい者福祉の充実",
         "ref": "r7toushoyosansiryou.pdf#p18",
         "refLabel": "予算資料 p.18",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=18"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=18"
       },
       {
         "kan": "民生費",
@@ -1617,7 +1619,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "障がい者福祉の充実",
         "ref": "r7toushoyosansiryou.pdf#p18",
         "refLabel": "予算資料 p.18",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=18"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=18"
       },
       {
         "kan": "民生費",
@@ -1631,7 +1633,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "社会保障の充実",
         "ref": "r7toushoyosansiryou.pdf#p18",
         "refLabel": "予算資料 p.18",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=18"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=18"
       },
       {
         "kan": "民生費",
@@ -1645,7 +1647,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "社会保障の充実",
         "ref": "r7toushoyosansiryou.pdf#p18",
         "refLabel": "予算資料 p.18",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=18"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=18"
       },
       {
         "kan": "衛生費",
@@ -1659,7 +1661,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "子ども・子育てへの支援",
         "ref": "r7toushoyosansiryou.pdf#p18",
         "refLabel": "予算資料 p.18",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=18"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=18"
       },
       {
         "kan": "衛生費",
@@ -1673,7 +1675,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康づくりの推進",
         "ref": "r7toushoyosansiryou.pdf#p18",
         "refLabel": "予算資料 p.18",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=18"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=18"
       },
       {
         "kan": "衛生費",
@@ -1687,7 +1689,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康づくりの推進",
         "ref": "r7toushoyosansiryou.pdf#p18",
         "refLabel": "予算資料 p.18",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=18"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=18"
       },
       {
         "kan": "衛生費",
@@ -1701,7 +1703,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康づくりの推進",
         "ref": "r7toushoyosansiryou.pdf#p18",
         "refLabel": "予算資料 p.18",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=18"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=18"
       },
       {
         "kan": "衛生費",
@@ -1715,7 +1717,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康づくりの推進",
         "ref": "r7toushoyosansiryou.pdf#p19",
         "refLabel": "予算資料 p.19",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=19"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=19"
       },
       {
         "kan": "衛生費",
@@ -1729,7 +1731,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康づくりの推進",
         "ref": "r7toushoyosansiryou.pdf#p19",
         "refLabel": "予算資料 p.19",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=19"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=19"
       },
       {
         "kan": "衛生費",
@@ -1743,7 +1745,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康づくりの推進",
         "ref": "r7toushoyosansiryou.pdf#p19",
         "refLabel": "予算資料 p.19",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=19"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=19"
       },
       {
         "kan": "衛生費",
@@ -1757,7 +1759,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康づくりの推進",
         "ref": "r7toushoyosansiryou.pdf#p19",
         "refLabel": "予算資料 p.19",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=19"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=19"
       },
       {
         "kan": "衛生費",
@@ -1771,7 +1773,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康づくりの推進",
         "ref": "r7toushoyosansiryou.pdf#p19",
         "refLabel": "予算資料 p.19",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=19"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=19"
       },
       {
         "kan": "衛生費",
@@ -1785,7 +1787,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康づくりの推進",
         "ref": "r7toushoyosansiryou.pdf#p19",
         "refLabel": "予算資料 p.19",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=19"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=19"
       },
       {
         "kan": "衛生費",
@@ -1799,7 +1801,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "子ども・子育てへの支援",
         "ref": "r7toushoyosansiryou.pdf#p19",
         "refLabel": "予算資料 p.19",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=19"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=19"
       },
       {
         "kan": "衛生費",
@@ -1813,7 +1815,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "自然環境の保全と地球温暖化対策の推進",
         "ref": "r7toushoyosansiryou.pdf#p19",
         "refLabel": "予算資料 p.19",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=19"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=19"
       },
       {
         "kan": "衛生費",
@@ -1827,7 +1829,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "自然環境の保全と地球温暖化対策の推進",
         "ref": "r7toushoyosansiryou.pdf#p19",
         "refLabel": "予算資料 p.19",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=19"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=19"
       },
       {
         "kan": "衛生費",
@@ -1841,7 +1843,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "自然環境の保全と地球温暖化対策の推進",
         "ref": "r7toushoyosansiryou.pdf#p19",
         "refLabel": "予算資料 p.19",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=19"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=19"
       },
       {
         "kan": "衛生費",
@@ -1855,7 +1857,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "自然環境の保全と地球温暖化対策の推進",
         "ref": "r7toushoyosansiryou.pdf#p20",
         "refLabel": "予算資料 p.20",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=20"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=20"
       },
       {
         "kan": "衛生費",
@@ -1869,7 +1871,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "循環型社会の構築",
         "ref": "r7toushoyosansiryou.pdf#p20",
         "refLabel": "予算資料 p.20",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=20"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=20"
       },
       {
         "kan": "衛生費",
@@ -1883,7 +1885,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "生活衛生の充実",
         "ref": "r7toushoyosansiryou.pdf#p20",
         "refLabel": "予算資料 p.20",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=20"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=20"
       },
       {
         "kan": "衛生費",
@@ -1897,7 +1899,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "生活衛生の充実",
         "ref": "r7toushoyosansiryou.pdf#p20",
         "refLabel": "予算資料 p.20",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=20"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=20"
       },
       {
         "kan": "労働費",
@@ -1911,7 +1913,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "雇用対策の推進",
         "ref": "r7toushoyosansiryou.pdf#p20",
         "refLabel": "予算資料 p.20",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=20"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=20"
       },
       {
         "kan": "労働費",
@@ -1925,7 +1927,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "雇用対策の推進",
         "ref": "r7toushoyosansiryou.pdf#p20",
         "refLabel": "予算資料 p.20",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=20"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=20"
       },
       {
         "kan": "農林水産業費",
@@ -1939,7 +1941,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "農業・林業の振興",
         "ref": "r7toushoyosansiryou.pdf#p21",
         "refLabel": "予算資料 p.21",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=21"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=21"
       },
       {
         "kan": "農林水産業費",
@@ -1953,7 +1955,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "農業・林業の振興",
         "ref": "r7toushoyosansiryou.pdf#p21",
         "refLabel": "予算資料 p.21",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=21"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=21"
       },
       {
         "kan": "農林水産業費",
@@ -1967,7 +1969,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "農業・林業の振興",
         "ref": "r7toushoyosansiryou.pdf#p21",
         "refLabel": "予算資料 p.21",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=21"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=21"
       },
       {
         "kan": "農林水産業費",
@@ -1981,7 +1983,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "農業・林業の振興",
         "ref": "r7toushoyosansiryou.pdf#p21",
         "refLabel": "予算資料 p.21",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=21"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=21"
       },
       {
         "kan": "商工費",
@@ -1995,7 +1997,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "商業・工業の振興",
         "ref": "r7toushoyosansiryou.pdf#p21",
         "refLabel": "予算資料 p.21",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=21"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=21"
       },
       {
         "kan": "商工費",
@@ -2009,7 +2011,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "産業の振興",
         "ref": "r7toushoyosansiryou.pdf#p21",
         "refLabel": "予算資料 p.21",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=21"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=21"
       },
       {
         "kan": "商工費",
@@ -2023,7 +2025,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "観光の振興",
         "ref": "r7toushoyosansiryou.pdf#p21",
         "refLabel": "予算資料 p.21",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=21"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=21"
       },
       {
         "kan": "商工費",
@@ -2037,7 +2039,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "観光の振興",
         "ref": "r7toushoyosansiryou.pdf#p22",
         "refLabel": "予算資料 p.22",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=22"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=22"
       },
       {
         "kan": "商工費",
@@ -2051,7 +2053,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "観光の振興",
         "ref": "r7toushoyosansiryou.pdf#p22",
         "refLabel": "予算資料 p.22",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=22"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=22"
       },
       {
         "kan": "商工費",
@@ -2065,7 +2067,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "観光の振興",
         "ref": "r7toushoyosansiryou.pdf#p22",
         "refLabel": "予算資料 p.22",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=22"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=22"
       },
       {
         "kan": "商工費",
@@ -2079,7 +2081,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "中心市街地の活性化",
         "ref": "r7toushoyosansiryou.pdf#p22",
         "refLabel": "予算資料 p.22",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=22"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=22"
       },
       {
         "kan": "土木費",
@@ -2093,7 +2095,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "中心市街地の活性化",
         "ref": "r7toushoyosansiryou.pdf#p22",
         "refLabel": "予算資料 p.22",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=22"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=22"
       },
       {
         "kan": "土木費",
@@ -2107,7 +2109,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "中心市街地の活性化",
         "ref": "r7toushoyosansiryou.pdf#p22",
         "refLabel": "予算資料 p.22",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=22"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=22"
       },
       {
         "kan": "土木費",
@@ -2121,7 +2123,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "良好な景観の形成",
         "ref": "r7toushoyosansiryou.pdf#p22",
         "refLabel": "予算資料 p.22",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=22"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=22"
       },
       {
         "kan": "土木費",
@@ -2135,7 +2137,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "住環境の向上",
         "ref": "r7toushoyosansiryou.pdf#p22",
         "refLabel": "予算資料 p.22",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=22"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=22"
       },
       {
         "kan": "土木費",
@@ -2149,7 +2151,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "住環境の向上",
         "ref": "r7toushoyosansiryou.pdf#p23",
         "refLabel": "予算資料 p.23",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=23"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=23"
       },
       {
         "kan": "土木費",
@@ -2163,7 +2165,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "公園の整備と緑化の推進",
         "ref": "r7toushoyosansiryou.pdf#p23",
         "refLabel": "予算資料 p.23",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=23"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=23"
       },
       {
         "kan": "土木費",
@@ -2177,7 +2179,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "計画的な土地利用の推進",
         "ref": "r7toushoyosansiryou.pdf#p23",
         "refLabel": "予算資料 p.23",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=23"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=23"
       },
       {
         "kan": "土木費",
@@ -2191,7 +2193,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "計画的な土地利用の推進",
         "ref": "r7toushoyosansiryou.pdf#p23",
         "refLabel": "予算資料 p.23",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=23"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=23"
       },
       {
         "kan": "土木費",
@@ -2205,7 +2207,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "道路の整備",
         "ref": "r7toushoyosansiryou.pdf#p23",
         "refLabel": "予算資料 p.23",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=23"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=23"
       },
       {
         "kan": "土木費",
@@ -2219,7 +2221,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "道路の整備",
         "ref": "r7toushoyosansiryou.pdf#p23",
         "refLabel": "予算資料 p.23",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=23"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=23"
       },
       {
         "kan": "土木費",
@@ -2233,7 +2235,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "道路の整備",
         "ref": "r7toushoyosansiryou.pdf#p23",
         "refLabel": "予算資料 p.23",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=23"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=23"
       },
       {
         "kan": "消防費",
@@ -2247,7 +2249,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "防災・危機管理対策の推進",
         "ref": "r7toushoyosansiryou.pdf#p23",
         "refLabel": "予算資料 p.23",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=23"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=23"
       },
       {
         "kan": "消防費",
@@ -2261,7 +2263,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "防災・危機管理対策の推進",
         "ref": "r7toushoyosansiryou.pdf#p23",
         "refLabel": "予算資料 p.23",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=23"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=23"
       },
       {
         "kan": "消防費",
@@ -2275,7 +2277,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "防災・危機管理対策の推進",
         "ref": "r7toushoyosansiryou.pdf#p24",
         "refLabel": "予算資料 p.24",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=24"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=24"
       },
       {
         "kan": "消防費",
@@ -2289,7 +2291,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "防災・危機管理対策の推進",
         "ref": "r7toushoyosansiryou.pdf#p24",
         "refLabel": "予算資料 p.24",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=24"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=24"
       },
       {
         "kan": "消防費",
@@ -2303,7 +2305,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "防災・危機管理対策の推進",
         "ref": "r7toushoyosansiryou.pdf#p24",
         "refLabel": "予算資料 p.24",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=24"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=24"
       },
       {
         "kan": "消防費",
@@ -2317,7 +2319,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "消防・救急体制の充実",
         "ref": "r7toushoyosansiryou.pdf#p24",
         "refLabel": "予算資料 p.24",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=24"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=24"
       },
       {
         "kan": "教育費",
@@ -2331,7 +2333,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "学校教育の充実",
         "ref": "r7toushoyosansiryou.pdf#p24",
         "refLabel": "予算資料 p.24",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=24"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=24"
       },
       {
         "kan": "教育費",
@@ -2345,7 +2347,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "学校教育の充実",
         "ref": "r7toushoyosansiryou.pdf#p24",
         "refLabel": "予算資料 p.24",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=24"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=24"
       },
       {
         "kan": "教育費",
@@ -2359,7 +2361,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "学校教育の充実",
         "ref": "r7toushoyosansiryou.pdf#p24",
         "refLabel": "予算資料 p.24",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=24"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=24"
       },
       {
         "kan": "教育費",
@@ -2373,7 +2375,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "学校教育の充実",
         "ref": "r7toushoyosansiryou.pdf#p24",
         "refLabel": "予算資料 p.24",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=24"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=24"
       },
       {
         "kan": "教育費",
@@ -2387,7 +2389,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "学校教育の充実",
         "ref": "r7toushoyosansiryou.pdf#p24",
         "refLabel": "予算資料 p.24",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=24"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=24"
       },
       {
         "kan": "教育費",
@@ -2401,7 +2403,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "学校教育の充実",
         "ref": "r7toushoyosansiryou.pdf#p25",
         "refLabel": "予算資料 p.25",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=25"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=25"
       },
       {
         "kan": "教育費",
@@ -2415,7 +2417,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "生涯学習の充実",
         "ref": "r7toushoyosansiryou.pdf#p25",
         "refLabel": "予算資料 p.25",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=25"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=25"
       },
       {
         "kan": "教育費",
@@ -2429,12 +2431,13 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "スポーツの振興",
         "ref": "r7toushoyosansiryou.pdf#p25",
         "refLabel": "予算資料 p.25",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=25"
+        "refUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf#page=25"
       }
     ],
     "source": {
       "title": "令和7年度 甲府市当初予算資料",
-      "url": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf",
+      "url": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf",
+      "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf",
       "pagesLabel": "p.15–25"
     }
   },
@@ -2454,7 +2457,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "国際交流・多文化共生の推進",
         "ref": "03r6tousyoshiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=17"
       },
       {
         "kan": "総務費",
@@ -2468,7 +2471,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "移住・定住の促進",
         "ref": "03r6tousyoshiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=17"
       },
       {
         "kan": "総務費",
@@ -2482,7 +2485,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "移住・定住の促進",
         "ref": "03r6tousyoshiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=17"
       },
       {
         "kan": "総務費",
@@ -2496,7 +2499,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "移住・定住の促進",
         "ref": "03r6tousyoshiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=17"
       },
       {
         "kan": "総務費",
@@ -2510,7 +2513,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "移住・定住の促進",
         "ref": "03r6tousyoshiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=17"
       },
       {
         "kan": "総務費",
@@ -2524,7 +2527,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "防犯・交通安全対策の充実",
         "ref": "03r6tousyoshiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=17"
       },
       {
         "kan": "総務費",
@@ -2538,7 +2541,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "公共交通の利便性の向上",
         "ref": "03r6tousyoshiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=17"
       },
       {
         "kan": "総務費",
@@ -2552,7 +2555,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "公共交通の利便性の向上",
         "ref": "03r6tousyoshiryou.pdf#p17",
         "refLabel": "予算資料 p.17",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=17"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=17"
       },
       {
         "kan": "総務費",
@@ -2566,7 +2569,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "協働の推進",
         "ref": "03r6tousyoshiryou.pdf#p18",
         "refLabel": "予算資料 p.18",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=18"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=18"
       },
       {
         "kan": "総務費",
@@ -2580,7 +2583,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "シティプロモーションの推進",
         "ref": "03r6tousyoshiryou.pdf#p18",
         "refLabel": "予算資料 p.18",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=18"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=18"
       },
       {
         "kan": "総務費",
@@ -2594,7 +2597,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "シティプロモーションの推進",
         "ref": "03r6tousyoshiryou.pdf#p18",
         "refLabel": "予算資料 p.18",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=18"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=18"
       },
       {
         "kan": "総務費",
@@ -2608,7 +2611,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "協働の推進",
         "ref": "03r6tousyoshiryou.pdf#p18",
         "refLabel": "予算資料 p.18",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=18"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=18"
       },
       {
         "kan": "総務費",
@@ -2622,7 +2625,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "持続可能な行財政運営",
         "ref": "03r6tousyoshiryou.pdf#p18",
         "refLabel": "予算資料 p.18",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=18"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=18"
       },
       {
         "kan": "総務費",
@@ -2636,7 +2639,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "持続可能な行財政運営",
         "ref": "03r6tousyoshiryou.pdf#p18",
         "refLabel": "予算資料 p.18",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=18"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=18"
       },
       {
         "kan": "総務費",
@@ -2650,7 +2653,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "持続可能な行財政運営",
         "ref": "03r6tousyoshiryou.pdf#p18",
         "refLabel": "予算資料 p.18",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=18"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=18"
       },
       {
         "kan": "総務費",
@@ -2664,7 +2667,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "持続可能な行財政運営",
         "ref": "03r6tousyoshiryou.pdf#p18",
         "refLabel": "予算資料 p.18",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=18"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=18"
       },
       {
         "kan": "総務費",
@@ -2678,7 +2681,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "持続可能な行財政運営",
         "ref": "03r6tousyoshiryou.pdf#p18",
         "refLabel": "予算資料 p.18",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=18"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=18"
       },
       {
         "kan": "総務費",
@@ -2692,7 +2695,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "持続可能な行財政運営",
         "ref": "03r6tousyoshiryou.pdf#p18",
         "refLabel": "予算資料 p.18",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=18"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=18"
       },
       {
         "kan": "総務費",
@@ -2706,7 +2709,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "持続可能な行財政運営",
         "ref": "03r6tousyoshiryou.pdf#p19",
         "refLabel": "予算資料 p.19",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=19"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=19"
       },
       {
         "kan": "総務費",
@@ -2720,7 +2723,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "持続可能な行財政運営",
         "ref": "03r6tousyoshiryou.pdf#p19",
         "refLabel": "予算資料 p.19",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=19"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=19"
       },
       {
         "kan": "民生費",
@@ -2734,7 +2737,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "子ども・子育てへの支援",
         "ref": "03r6tousyoshiryou.pdf#p19",
         "refLabel": "予算資料 p.19",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=19"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=19"
       },
       {
         "kan": "民生費",
@@ -2748,7 +2751,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "子ども・子育てへの支援",
         "ref": "03r6tousyoshiryou.pdf#p19",
         "refLabel": "予算資料 p.19",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=19"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=19"
       },
       {
         "kan": "民生費",
@@ -2762,7 +2765,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "子ども・子育てへの支援",
         "ref": "03r6tousyoshiryou.pdf#p19",
         "refLabel": "予算資料 p.19",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=19"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=19"
       },
       {
         "kan": "民生費",
@@ -2776,7 +2779,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "子ども・子育てへの支援",
         "ref": "03r6tousyoshiryou.pdf#p19",
         "refLabel": "予算資料 p.19",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=19"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=19"
       },
       {
         "kan": "民生費",
@@ -2790,7 +2793,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "子ども・子育てへの支援",
         "ref": "03r6tousyoshiryou.pdf#p19",
         "refLabel": "予算資料 p.19",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=19"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=19"
       },
       {
         "kan": "民生費",
@@ -2804,7 +2807,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "障がい者福祉の充実",
         "ref": "03r6tousyoshiryou.pdf#p19",
         "refLabel": "予算資料 p.19",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=19"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=19"
       },
       {
         "kan": "民生費",
@@ -2818,7 +2821,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "障がい者福祉の充実",
         "ref": "03r6tousyoshiryou.pdf#p19",
         "refLabel": "予算資料 p.19",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=19"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=19"
       },
       {
         "kan": "民生費",
@@ -2832,7 +2835,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "社会保障の充実",
         "ref": "03r6tousyoshiryou.pdf#p20",
         "refLabel": "予算資料 p.20",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=20"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=20"
       },
       {
         "kan": "衛生費",
@@ -2846,7 +2849,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "子ども・子育てへの支援",
         "ref": "03r6tousyoshiryou.pdf#p20",
         "refLabel": "予算資料 p.20",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=20"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=20"
       },
       {
         "kan": "衛生費",
@@ -2860,7 +2863,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "子ども・子育てへの支援",
         "ref": "03r6tousyoshiryou.pdf#p20",
         "refLabel": "予算資料 p.20",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=20"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=20"
       },
       {
         "kan": "衛生費",
@@ -2874,7 +2877,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康づくりの推進",
         "ref": "03r6tousyoshiryou.pdf#p20",
         "refLabel": "予算資料 p.20",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=20"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=20"
       },
       {
         "kan": "衛生費",
@@ -2888,7 +2891,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康づくりの推進",
         "ref": "03r6tousyoshiryou.pdf#p20",
         "refLabel": "予算資料 p.20",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=20"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=20"
       },
       {
         "kan": "衛生費",
@@ -2902,7 +2905,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康づくりの推進",
         "ref": "03r6tousyoshiryou.pdf#p20",
         "refLabel": "予算資料 p.20",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=20"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=20"
       },
       {
         "kan": "衛生費",
@@ -2916,7 +2919,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康づくりの推進",
         "ref": "03r6tousyoshiryou.pdf#p20",
         "refLabel": "予算資料 p.20",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=20"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=20"
       },
       {
         "kan": "衛生費",
@@ -2930,7 +2933,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康づくりの推進",
         "ref": "03r6tousyoshiryou.pdf#p20",
         "refLabel": "予算資料 p.20",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=20"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=20"
       },
       {
         "kan": "衛生費",
@@ -2944,7 +2947,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康づくりの推進",
         "ref": "03r6tousyoshiryou.pdf#p20",
         "refLabel": "予算資料 p.20",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=20"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=20"
       },
       {
         "kan": "衛生費",
@@ -2958,7 +2961,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康づくりの推進",
         "ref": "03r6tousyoshiryou.pdf#p21",
         "refLabel": "予算資料 p.21",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=21"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=21"
       },
       {
         "kan": "衛生費",
@@ -2972,7 +2975,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康づくりの推進",
         "ref": "03r6tousyoshiryou.pdf#p21",
         "refLabel": "予算資料 p.21",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=21"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=21"
       },
       {
         "kan": "衛生費",
@@ -2986,7 +2989,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健康づくりの推進",
         "ref": "03r6tousyoshiryou.pdf#p21",
         "refLabel": "予算資料 p.21",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=21"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=21"
       },
       {
         "kan": "衛生費",
@@ -3000,7 +3003,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "生活衛生の充実",
         "ref": "03r6tousyoshiryou.pdf#p21",
         "refLabel": "予算資料 p.21",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=21"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=21"
       },
       {
         "kan": "衛生費",
@@ -3014,7 +3017,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "自然環境の保全と地球温暖化対策の推進",
         "ref": "03r6tousyoshiryou.pdf#p21",
         "refLabel": "予算資料 p.21",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=21"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=21"
       },
       {
         "kan": "衛生費",
@@ -3028,7 +3031,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "循環型社会の構築",
         "ref": "03r6tousyoshiryou.pdf#p21",
         "refLabel": "予算資料 p.21",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=21"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=21"
       },
       {
         "kan": "労働費",
@@ -3042,7 +3045,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "雇用対策の推進",
         "ref": "03r6tousyoshiryou.pdf#p21",
         "refLabel": "予算資料 p.21",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=21"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=21"
       },
       {
         "kan": "労働費",
@@ -3056,7 +3059,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "雇用対策の推進",
         "ref": "03r6tousyoshiryou.pdf#p21",
         "refLabel": "予算資料 p.21",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=21"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=21"
       },
       {
         "kan": "農林水産業費",
@@ -3070,7 +3073,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "農業・林業の振興",
         "ref": "03r6tousyoshiryou.pdf#p22",
         "refLabel": "予算資料 p.22",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=22"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=22"
       },
       {
         "kan": "農林水産業費",
@@ -3084,7 +3087,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "農業・林業の振興",
         "ref": "03r6tousyoshiryou.pdf#p22",
         "refLabel": "予算資料 p.22",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=22"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=22"
       },
       {
         "kan": "農林水産業費",
@@ -3098,7 +3101,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "農業・林業の振興",
         "ref": "03r6tousyoshiryou.pdf#p22",
         "refLabel": "予算資料 p.22",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=22"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=22"
       },
       {
         "kan": "農林水産業費",
@@ -3112,7 +3115,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "農業・林業の振興",
         "ref": "03r6tousyoshiryou.pdf#p22",
         "refLabel": "予算資料 p.22",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=22"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=22"
       },
       {
         "kan": "農林水産業費",
@@ -3126,7 +3129,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "農業・林業の振興",
         "ref": "03r6tousyoshiryou.pdf#p22",
         "refLabel": "予算資料 p.22",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=22"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=22"
       },
       {
         "kan": "商工費",
@@ -3140,7 +3143,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "商業・工業の振興",
         "ref": "03r6tousyoshiryou.pdf#p22",
         "refLabel": "予算資料 p.22",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=22"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=22"
       },
       {
         "kan": "商工費",
@@ -3154,7 +3157,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "中心市街地の活性化",
         "ref": "03r6tousyoshiryou.pdf#p22",
         "refLabel": "予算資料 p.22",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=22"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=22"
       },
       {
         "kan": "商工費",
@@ -3168,7 +3171,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "商業・工業の振興",
         "ref": "03r6tousyoshiryou.pdf#p22",
         "refLabel": "予算資料 p.22",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=22"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=22"
       },
       {
         "kan": "商工費",
@@ -3182,7 +3185,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "観光の振興",
         "ref": "03r6tousyoshiryou.pdf#p22",
         "refLabel": "予算資料 p.22",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=22"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=22"
       },
       {
         "kan": "商工費",
@@ -3196,7 +3199,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "観光の振興",
         "ref": "03r6tousyoshiryou.pdf#p23",
         "refLabel": "予算資料 p.23",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=23"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=23"
       },
       {
         "kan": "商工費",
@@ -3210,7 +3213,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "観光の振興",
         "ref": "03r6tousyoshiryou.pdf#p23",
         "refLabel": "予算資料 p.23",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=23"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=23"
       },
       {
         "kan": "商工費",
@@ -3224,7 +3227,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "中心市街地の活性化",
         "ref": "03r6tousyoshiryou.pdf#p23",
         "refLabel": "予算資料 p.23",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=23"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=23"
       },
       {
         "kan": "商工費",
@@ -3238,7 +3241,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "消費者保護の推進",
         "ref": "03r6tousyoshiryou.pdf#p23",
         "refLabel": "予算資料 p.23",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=23"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=23"
       },
       {
         "kan": "土木費",
@@ -3252,7 +3255,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "スポーツの振興",
         "ref": "03r6tousyoshiryou.pdf#p23",
         "refLabel": "予算資料 p.23",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=23"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=23"
       },
       {
         "kan": "土木費",
@@ -3266,7 +3269,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "中心市街地の活性化",
         "ref": "03r6tousyoshiryou.pdf#p23",
         "refLabel": "予算資料 p.23",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=23"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=23"
       },
       {
         "kan": "土木費",
@@ -3280,7 +3283,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "中心市街地の活性化",
         "ref": "03r6tousyoshiryou.pdf#p23",
         "refLabel": "予算資料 p.23",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=23"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=23"
       },
       {
         "kan": "土木費",
@@ -3294,7 +3297,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "道路の整備",
         "ref": "03r6tousyoshiryou.pdf#p23",
         "refLabel": "予算資料 p.23",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=23"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=23"
       },
       {
         "kan": "土木費",
@@ -3308,7 +3311,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "良好な景観の形成",
         "ref": "03r6tousyoshiryou.pdf#p23",
         "refLabel": "予算資料 p.23",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=23"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=23"
       },
       {
         "kan": "土木費",
@@ -3322,7 +3325,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "住環境の向上",
         "ref": "03r6tousyoshiryou.pdf#p23",
         "refLabel": "予算資料 p.23",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=23"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=23"
       },
       {
         "kan": "土木費",
@@ -3336,7 +3339,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "住環境の向上",
         "ref": "03r6tousyoshiryou.pdf#p24",
         "refLabel": "予算資料 p.24",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=24"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=24"
       },
       {
         "kan": "土木費",
@@ -3350,7 +3353,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "道路の整備",
         "ref": "03r6tousyoshiryou.pdf#p24",
         "refLabel": "予算資料 p.24",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=24"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=24"
       },
       {
         "kan": "土木費",
@@ -3364,7 +3367,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "道路の整備",
         "ref": "03r6tousyoshiryou.pdf#p24",
         "refLabel": "予算資料 p.24",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=24"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=24"
       },
       {
         "kan": "土木費",
@@ -3378,7 +3381,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "道路の整備",
         "ref": "03r6tousyoshiryou.pdf#p24",
         "refLabel": "予算資料 p.24",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=24"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=24"
       },
       {
         "kan": "土木費",
@@ -3392,7 +3395,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "公園の整備と緑化の推進",
         "ref": "03r6tousyoshiryou.pdf#p24",
         "refLabel": "予算資料 p.24",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=24"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=24"
       },
       {
         "kan": "消防費",
@@ -3406,7 +3409,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "消防・救急体制の充実",
         "ref": "03r6tousyoshiryou.pdf#p24",
         "refLabel": "予算資料 p.24",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=24"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=24"
       },
       {
         "kan": "消防費",
@@ -3420,7 +3423,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "防災・危機管理対策の推進",
         "ref": "03r6tousyoshiryou.pdf#p24",
         "refLabel": "予算資料 p.24",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=24"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=24"
       },
       {
         "kan": "消防費",
@@ -3434,7 +3437,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "防災・危機管理対策の推進",
         "ref": "03r6tousyoshiryou.pdf#p24",
         "refLabel": "予算資料 p.24",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=24"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=24"
       },
       {
         "kan": "消防費",
@@ -3448,7 +3451,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "防災・危機管理対策の推進",
         "ref": "03r6tousyoshiryou.pdf#p24",
         "refLabel": "予算資料 p.24",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=24"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=24"
       },
       {
         "kan": "消防費",
@@ -3462,7 +3465,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "防災・危機管理対策の推進",
         "ref": "03r6tousyoshiryou.pdf#p25",
         "refLabel": "予算資料 p.25",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=25"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=25"
       },
       {
         "kan": "教育費",
@@ -3476,7 +3479,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "学校教育の充実",
         "ref": "03r6tousyoshiryou.pdf#p25",
         "refLabel": "予算資料 p.25",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=25"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=25"
       },
       {
         "kan": "教育費",
@@ -3490,7 +3493,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "学校教育の充実",
         "ref": "03r6tousyoshiryou.pdf#p25",
         "refLabel": "予算資料 p.25",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=25"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=25"
       },
       {
         "kan": "教育費",
@@ -3504,7 +3507,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "学校教育の充実",
         "ref": "03r6tousyoshiryou.pdf#p25",
         "refLabel": "予算資料 p.25",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=25"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=25"
       },
       {
         "kan": "教育費",
@@ -3518,7 +3521,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "学校教育の充実",
         "ref": "03r6tousyoshiryou.pdf#p25",
         "refLabel": "予算資料 p.25",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=25"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=25"
       },
       {
         "kan": "教育費",
@@ -3532,7 +3535,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "学校教育の充実",
         "ref": "03r6tousyoshiryou.pdf#p25",
         "refLabel": "予算資料 p.25",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=25"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=25"
       },
       {
         "kan": "教育費",
@@ -3546,7 +3549,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "生涯学習の充実",
         "ref": "03r6tousyoshiryou.pdf#p25",
         "refLabel": "予算資料 p.25",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=25"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=25"
       },
       {
         "kan": "教育費",
@@ -3560,7 +3563,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "生涯学習の充実",
         "ref": "03r6tousyoshiryou.pdf#p25",
         "refLabel": "予算資料 p.25",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=25"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=25"
       },
       {
         "kan": "教育費",
@@ -3574,12 +3577,13 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "スポーツの振興",
         "ref": "03r6tousyoshiryou.pdf#p25",
         "refLabel": "予算資料 p.25",
-        "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=25"
+        "refUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf#page=25"
       }
     ],
     "source": {
       "title": "令和6年度 甲府市当初予算資料",
-      "url": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf",
+      "url": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf",
+      "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf",
       "pagesLabel": "p.17–25"
     }
   }

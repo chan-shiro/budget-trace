@@ -157,6 +157,6 @@ export const KOFU_R6_DETAIL: {
   ]
 },
   sourceTitle: "令和6年度 市町村別決算状況調",
-  sourceUrl: "https://www.soumu.go.jp/main_content/001061671.xlsx",
+  sourceUrl: "https://web.archive.org/web/20260712083915/https://www.soumu.go.jp/main_content/001061671.xlsx",
   refLabel: "001061671.xlsx 436行目",
 };
