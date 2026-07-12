@@ -573,14 +573,15 @@ export const KOFU_R6_DETAIL: {
 // ============================================================================
 // 甲府市 予算執行状況（複数年度）→ src/client/lib/execution.gen.ts
 // R7 = 財政事情の公表（出納整理期間前の速報）。R6〜R1 = 決算状況の収入支出詳細
-// （出納整理後の確定値）。R3 は資料が市サイトから削除済みで入手不可（欠落）。
+// （出納整理後の確定値）。R3 は市サイト消失後、WARP（国立国会図書館）の保存版から回収。
 // ============================================================================
 const EXEC_YEARS = [
   { srcId: "kofu-zaisei-jokyo-r7", fy: "R7" },
   { srcId: "kofu-kessan-syousai-r6", fy: "R6" },
   { srcId: "kofu-kessan-syousai-r5", fy: "R5" },
   { srcId: "kofu-kessan-syousai-r4", fy: "R4" },
-  // R3 は欠落（決算状況ページが削除済み・Wayback にも無い）
+  // R3 は市サイトから削除済みだったが WARP（国立国会図書館）の保存版から回収
+  { srcId: "kofu-kessan-syousai-r3", fy: "R3" },
   { srcId: "kofu-kessan-syousai-r2", fy: "R2" },
   { srcId: "kofu-kessan-syousai-r1", fy: "R1" },
 ] as const;

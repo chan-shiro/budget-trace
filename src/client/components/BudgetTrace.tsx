@@ -337,7 +337,7 @@ export default function BudgetTrace() {
     { label: "歳入", pick: () => setSt({ compSide: "rev" }), bg: compSide === "rev" ? "#14181C" : "#FFFFFF", fg: compSide === "rev" ? "#F7FAFC" : "#5C6B77" },
   ];
 
-  // --- 予算執行状況（R7=財政事情の速報、R6〜R1=決算状況の確定値。R3 は資料消失で欠落） ---
+  // --- 予算執行状況（R7=財政事情の速報、R6〜R1=決算状況の確定値。R3 は WARP 保存版から回収） ---
   const execSide = s.execSide || "exp";
   // 年度の既定はヘッダの年度ドロップダウンに追従する（過去年度を見ている人が
   // 執行タブを開いたらその年度の確定執行が出る）。ピルで明示選択したらそちらが優先
@@ -409,7 +409,7 @@ export default function BudgetTrace() {
       bg: y.fy === execYear.fy ? "#14181C" : "#FFFFFF",
       fg: y.fy === execYear.fy ? "#F7FAFC" : "#5C6B77",
     })),
-    execGapNote: "令和3年度は資料（決算状況ページ）が発行元から削除済みのため未収録です",
+    execGapNote: "令和3年度は発行元サイトから削除済みのため、国立国会図書館 WARP の保存版から収録しています",
     execFyLabel: execYear.fyLabel, execAsOfNote: execYear.asOfNote,
     execSideLabel: execSide === "rev" ? "歳入" : "歳出",
     execRateLabel: execSide === "rev" ? "収入率" : "執行率",
