@@ -83,6 +83,69 @@ export default function BudgetTrace() {
     if (typeof window !== "undefined") window.scrollTo(0, 0);
   };
 
+  // --- URL 同期（ディープリンク） ---
+  // 画面・年度・ドリル位置などを URL クエリに反映し、共有・リロード・ブラウザバックに
+  // 対応する。SSR は既定 state で描画されるため、URL の復元はマウント後に行う
+  // （初回に一瞬トップが見えるのは静的 SPA の仕様）。
+  const stToQuery = (t: St): string => {
+    const p = new URLSearchParams();
+    if (t.screen !== "top") p.set("s", t.screen);
+    if (t.budgetFy) p.set("fy", t.budgetFy);
+    if (t.screen === "drill") {
+      if (t.drillSide !== "exp") p.set("side", t.drillSide);
+      if (t.drillPath.length) p.set("path", t.drillPath.join("/"));
+    }
+    if (t.screen === "themes" && t.theme) p.set("theme", t.theme);
+    if (t.screen === "execution") {
+      if (t.execFy) p.set("efy", t.execFy);
+      if (t.execSide && t.execSide !== "exp") p.set("eside", t.execSide);
+    }
+    if (t.screen === "compare" && t.compSide && t.compSide !== "exp") p.set("cside", t.compSide);
+    if (t.unit === "per") p.set("unit", "per");
+    const q = p.toString();
+    return q ? `?${q}` : location.pathname;
+  };
+  const queryToPatch = (search: string): Partial<St> => {
+    const p = new URLSearchParams(search);
+    const screen = p.get("s") ?? "top";
+    return {
+      screen,
+      pref: screen === "top" ? null : "山梨県",
+      muni: screen === "top" || screen === "muni" ? null : "甲府市",
+      budgetFy: p.get("fy") ?? undefined,
+      drillSide: p.get("side") ?? "exp",
+      drillPath: p.get("path")?.split("/").filter(Boolean) ?? [],
+      theme: p.get("theme"),
+      execFy: p.get("efy") ?? undefined,
+      execSide: p.get("eside") ?? "exp",
+      compSide: p.get("cside") ?? "exp",
+      unit: p.get("unit") === "per" ? "per" : "total",
+      viewer: null,
+      tip: null,
+    };
+  };
+  const urlReady = React.useRef(false);
+  const lastScreen = React.useRef("top");
+  React.useEffect(() => {
+    // マウント時: URL から state を復元し、以後の popstate（戻る/進む）にも追従する
+    if (location.search) setStRaw((prev) => ({ ...prev, ...queryToPatch(location.search) }));
+    urlReady.current = true;
+    const onPop = () => setStRaw((prev) => ({ ...prev, ...queryToPatch(location.search) }));
+    window.addEventListener("popstate", onPop);
+    return () => window.removeEventListener("popstate", onPop);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  React.useEffect(() => {
+    if (!urlReady.current) return;
+    const url = stToQuery(st);
+    if (`${location.pathname}${location.search}` === url || (url === location.pathname && !location.search)) return;
+    // 画面遷移は履歴に積む（戻るで前の画面へ）。同一画面内の切替は置き換え
+    if (st.screen !== lastScreen.current) history.pushState(null, "", url);
+    else history.replaceState(null, "", url);
+    lastScreen.current = st.screen;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [st.screen, st.budgetFy, st.drillSide, st.drillPath, st.theme, st.execFy, st.execSide, st.compSide, st.unit]);
+
   // --- 一次資料ドロワー ---
   // 呼び出し側は #page=N 付き URL を渡してよい（ここで分離して PDF.js ビューアへ渡す）
   const openViewer = (p: Omit<NonNullable<St["viewer"]>, "page" | "tabUrl">) => {
@@ -205,12 +268,24 @@ export default function BudgetTrace() {
   const muniList = (prefAvail ? YAMANASHI_MUNIS : []).map((m) => {
     const avail = m === "甲府市";
     return {
-      name: m, badge: avail ? `収録済 当初予算${KOFU_BUDGET_YEARS.length}年度分` : "準備中", badgeFg: avail ? accent : "#9DACB7",
+      name: m, badge: avail ? `収録済 当初予算${KOFU_BUDGET_YEARS.length}年度分` : "準備中 — 収録をリクエスト ↗", badgeFg: avail ? accent : "#9DACB7",
       bg: avail ? "#FFFFFF" : "#F0F5F8", bd: avail ? accent : "#DFE7EC",
-      fg: avail ? "#14181C" : "#8494A0", cursor: avail ? "pointer" : "default",
+      fg: avail ? "#14181C" : "#8494A0", cursor: "pointer",
       open: avail ? openMuni(m) : () => {},
+      // 準備中の自治体はリクエスト起票へ（自治体名を発行元にプリフィル）
+      requestUrl: avail ? "" : D.buildRequestUrl(
+        `${m}の予算・決算資料の収録`,
+        `自治体リクエスト: ${prefName} ${m} を収録してほしい（市区町村選択画面より）`,
+        m,
+      ),
     };
   });
+  // 収録自治体が無い都道府県・「県全体」ボタンもリクエストへ
+  const prefRequestUrl = D.buildRequestUrl(
+    `${prefName}の自治体の予算・決算資料の収録`,
+    `自治体リクエスト: ${prefName} の自治体を収録してほしい（市区町村選択画面より）`,
+    prefName,
+  );
 
   // --- dashboard panels ---
   const mkLegend = (items: any[], side: string) => {
@@ -470,11 +545,25 @@ export default function BudgetTrace() {
     prefAllBadge: "準備中",
     prefAllNote: "都道府県レベルの予算データは未収録です",
     muniList,
+    prefRequestUrl,
+    prefIsEmpty: !prefAvail,
     crumbPref: s.pref || "山梨県", crumbMuni: s.muni || "甲府市", yearLabel,
     // 年度切り替え（収録済みの当初予算年度）。切替時はドリル位置・テーマ選択をリセット
-    yearOptions: KOFU_BUDGET_YEARS.map((b) => ({ value: b.fy, label: b.fyLabel })),
+    yearOptions: [
+      ...KOFU_BUDGET_YEARS.map((b) => ({ value: b.fy, label: b.fyLabel })),
+      { value: "__request", label: "＋ 他の年度をリクエスト…" },
+    ],
     yearSel: budget.fy,
-    pickYear: (fy: string) => setSt({ budgetFy: fy, drillPath: [], theme: null, execFy: undefined }),
+    pickYear: (fy: string) => {
+      if (fy === "__request") {
+        window.open(D.buildRequestUrl(
+          "当初予算・決算資料（未収録の年度）",
+          `年度リクエスト: 現在の収録（当初予算 R2〜R8・執行 R1〜R7）に無い年度を見たい`,
+        ), "_blank", "noopener");
+        return; // 選択状態は変えない
+      }
+      setSt({ budgetFy: fy, drillPath: [], theme: null, execFy: undefined });
+    },
     navTabs,
     dashTitle: `${data.name}の予算`, totalFmt: fmtV(totalNow),
     totalFmtAnim: <CountUpNum value={totalNow} fmt={fmtV} />,

@@ -101,6 +101,14 @@ Claude Design のプロトタイプ（`project/予算トレース.dc.html`）を
   年度一致時に「当初→最終（補正後）→決算→執行率」表示になる（不在年度は従来の R6 参考）。
   原典誤り2件を検出・対処（R2ブロックの誤配置行 skipRows / R3歳出当初の前年値コピー → null化＋注記）。
   3系統クロスチェック済み（予算資料と円単位一致・収入支出詳細と万円丸め内一致）。data-sources.md §6
+- **URL ディープリンク**: 画面・年度・ドリル位置・テーマ・執行年度・表示単位を URL クエリに
+  同期（`?s=drill&fy=R6&path=民生費` 等）。共有・リロード・ブラウザバック対応。
+  実装は BudgetTrace.tsx の stToQuery/queryToPatch（SSR は既定 state で描画し、
+  マウント後に URL から復元 — 静的 SPA の仕様として初回に一瞬トップが見える）。
+  画面遷移は pushState・画面内の切替は replaceState
+- **自治体・年度のリクエスト受付**: 市区町村選択の「準備中」自治体はクリックで
+  リクエスト起票（自治体名を発行元にプリフィル）。収録の無い都道府県にも県単位の
+  リクエストボタン。年度ドロップダウン末尾に「＋他の年度をリクエスト…」
 - **エビデンスの3層コピー体制**: ①自サーバー配信の原本コピー（`data/raw` の PDF を
   dev/build 前段の `pipeline/sync-public-sources.ts` が `public/sources/` へ同期。gitignore）
   ②Wayback コピー（`bun run pipeline:archive` が登録・`data/archives.json` に台帳化・

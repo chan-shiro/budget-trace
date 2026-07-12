@@ -61,12 +61,25 @@ export default function BudgetTraceView({ v }: { v: any }) {
 
           <div style={S("display:grid; grid-template-columns:repeat(auto-fill, minmax(190px,1fr)); gap:10px;")}>
             {v.muniList.map((m: any, i: number) => (
-              <HoverBox as="button" key={i} onClick={m.open} style={S(`text-align:left; display:flex; flex-direction:column; gap:6px; background:${m.bg}; border:1px solid ${m.bd}; border-radius:12px; padding:14px 16px; cursor:${m.cursor}; color:${m.fg}; font-family:'IBM Plex Sans JP',sans-serif;`)} hoverStyle={S("border-color:#1798D0;")}>
-                <span style={S("font-size:15px; font-weight:600;")}>{m.name}</span>
-                <span style={S(`font-family:'IBM Plex Mono',monospace; font-size:11px; color:${m.badgeFg};`)}>{m.badge}</span>
-              </HoverBox>
+              m.requestUrl ? (
+                <HoverBox as="a" key={i} href={m.requestUrl} target="_blank" rel="noopener noreferrer" style={S(`text-align:left; display:flex; flex-direction:column; gap:6px; background:${m.bg}; border:1px solid ${m.bd}; border-radius:12px; padding:14px 16px; cursor:pointer; color:${m.fg}; text-decoration:none; font-family:'IBM Plex Sans JP',sans-serif;`)} hoverStyle={S("border-color:#1798D0; text-decoration:none;")}>
+                  <span style={S("font-size:15px; font-weight:600;")}>{m.name}</span>
+                  <span style={S(`font-family:'IBM Plex Mono',monospace; font-size:11px; color:${m.badgeFg};`)}>{m.badge}</span>
+                </HoverBox>
+              ) : (
+                <HoverBox as="button" key={i} onClick={m.open} style={S(`text-align:left; display:flex; flex-direction:column; gap:6px; background:${m.bg}; border:1px solid ${m.bd}; border-radius:12px; padding:14px 16px; cursor:${m.cursor}; color:${m.fg}; font-family:'IBM Plex Sans JP',sans-serif;`)} hoverStyle={S("border-color:#1798D0;")}>
+                  <span style={S("font-size:15px; font-weight:600;")}>{m.name}</span>
+                  <span style={S(`font-family:'IBM Plex Mono',monospace; font-size:11px; color:${m.badgeFg};`)}>{m.badge}</span>
+                </HoverBox>
+              )
             ))}
           </div>
+          {v.prefIsEmpty && (
+            <div style={S("margin-top:18px; background:#FFFFFF; border:1px solid #DFE7EC; border-radius:12px; padding:18px 22px; display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap;")}>
+              <span style={S("font-size:13.5px; color:#5C6B77;")}>この都道府県の自治体はまだ収録していません。リクエストが貯まった自治体から収録します。</span>
+              <a href={v.prefRequestUrl} target="_blank" rel="noopener noreferrer" style={S("font-size:12.5px; border:1px solid #1798D0; color:#0F76A3; border-radius:999px; padding:6px 16px; text-decoration:none; white-space:nowrap;")}>この県の収録をリクエスト ↗</a>
+            </div>
+          )}
         </div>
       )}
 

@@ -130,12 +130,12 @@ const REPO = 'https://github.com/chan-shiro/budget-trace';
  * フィールド（id 一致）をプリフィルできるため、「どの画面の・何が・なぜ欲しいか」の
  * 文脈を reason に埋めて、データが無い箇所からその場で起票できるようにする
  */
-export function buildRequestUrl(subject: string, reason?: string): string {
+export function buildRequestUrl(subject: string, reason?: string, publisher = '甲府市'): string {
   const params = new URLSearchParams({
     template: 'source-request.yml',
     title: `[資料リクエスト] ${subject}`,
     'source-name': subject,
-    publisher: '甲府市',
+    publisher,
     ...(reason ? { reason } : {}),
   });
   return `${REPO}/issues/new?${params.toString()}`;
