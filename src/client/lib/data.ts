@@ -80,6 +80,7 @@ export { KOFU_BUDGET } from './kofu.gen';
 export { KOFU_PROJECTS, KOFU_PROJECTS_SOURCE } from './projects.gen';
 export { KOFU_EXECUTION } from './execution.gen';
 export { KOFU_R6_DETAIL } from './detail.gen';
+export { KOFU_TREND } from './trend.gen';
 
 // データ出典・更新日一覧（数値の一次資料のみ。地図形状などの素材はトップページに記載）
 export const SOURCES = [

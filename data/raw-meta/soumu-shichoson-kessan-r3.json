@@ -1,0 +1,47 @@
+{
+  "sourceId": "soumu-shichoson-kessan-r3",
+  "files": [
+    {
+      "filename": "000871018.xlsx",
+      "sha256": "bb03a28b1aac66337f8d51d34b8593165d618af35ef5f341dca8f25a973c0acb",
+      "bytes": 324542,
+      "fetchedAt": "2026-07-12T06:23:03.456Z",
+      "fetchedFrom": "https://www.soumu.go.jp/main_content/000871018.xlsx"
+    },
+    {
+      "filename": "000871019.xlsx",
+      "sha256": "66869a6fd61be8bd9012df3d17cbc3d8414407356befb0a4a6569b0e30093dd1",
+      "bytes": 769860,
+      "fetchedAt": "2026-07-12T06:23:03.497Z",
+      "fetchedFrom": "https://www.soumu.go.jp/main_content/000871019.xlsx"
+    },
+    {
+      "filename": "000871020.xlsx",
+      "sha256": "75fb9b341570ec8928b26688aa24d23ea0a329b4c69de596da10710e9bc61c6b",
+      "bytes": 640062,
+      "fetchedAt": "2026-07-12T06:23:03.527Z",
+      "fetchedFrom": "https://www.soumu.go.jp/main_content/000871020.xlsx"
+    },
+    {
+      "filename": "000871023.xlsx",
+      "sha256": "8cc35c1e946769e00e1dc6bf0ca08e31f73bb9e1acdd1e718c54afebb18e6e7c",
+      "bytes": 351978,
+      "fetchedAt": "2026-07-12T06:23:03.558Z",
+      "fetchedFrom": "https://www.soumu.go.jp/main_content/000871023.xlsx"
+    },
+    {
+      "filename": "000871024.xlsx",
+      "sha256": "580e45fb7e938621fa8c7147f6c7f13c564f2f4dd8ba01080a1c64c208e7ed40",
+      "bytes": 790263,
+      "fetchedAt": "2026-07-12T06:23:03.590Z",
+      "fetchedFrom": "https://www.soumu.go.jp/main_content/000871024.xlsx"
+    },
+    {
+      "filename": "000871025.xlsx",
+      "sha256": "18246ccfb29afc45bda162d04211f4a84094a6c9a168fbcaeb284e75ceae196f",
+      "bytes": 666080,
+      "fetchedAt": "2026-07-12T06:23:03.620Z",
+      "fetchedFrom": "https://www.soumu.go.jp/main_content/000871025.xlsx"
+    }
+  ]
+}

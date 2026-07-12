@@ -371,6 +371,67 @@ console.log(
 );
 
 // ============================================================================
+// 甲府市 決算の推移（決算状況調 R2〜R6）→ src/client/lib/trend.gen.ts
+// ============================================================================
+{
+  const TREND_YEARS = ["R2", "R3", "R4", "R5", "R6"] as const;
+  const trendRows = TREND_YEARS.map((fy) => {
+    const srcId = `soumu-shichoson-kessan-${fy.toLowerCase()}`;
+    const v = validationResultSchema.parse(readJson(validationPath(srcId)));
+    if (v.status !== "ok") throw new Error(`${srcId}: 検証が ${v.status} のため derive しません`);
+    const src = findSource(srcId);
+    const ds = normalizedDatasetSchema.parse(readJson(normalizedPath("municipal-accounts", fy, false)));
+    const k = ds.records.find((r) => r.muniCode === SELF_CODE);
+    if (!k?.expenditureTotal || !k.revenueTotal) throw new Error(`${srcId}: 甲府市のデータがありません`);
+    return {
+      fy,
+      fyLabel: `令和${fy.slice(1)}年度`,
+      expenditureTotalOku: toOku(k.expenditureTotal),
+      revenueTotalOku: toOku(k.revenueTotal),
+      population: k.population,
+      financialIndex: k.financialIndex ?? null,
+      keijoShushiPct: k.keijoShushiPct ?? null,
+      jisshitsuKosaihiPct: k.jisshitsuKosaihiPct ?? null,
+      byPurpose: Object.fromEntries(
+        Object.entries(k.expenditureByPurpose).map(([name, v2]) => [name, toOku(v2 as number)]),
+      ),
+      landingUrl: src.landingPage ?? "",
+      ref: `${k.sourceRef.locator.file} ${k.sourceRef.locator.row}行目`,
+    };
+  });
+  const trendOut = `// このファイルは自動生成です。手で編集しないこと。
+// 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
+// 出典: 総務省「市町村別決算状況調」令和2〜6年度（普通会計決算）。金額は億円
+
+export interface KofuTrendRow {
+  fy: string;
+  fyLabel: string;
+  /** 歳出決算総額（億円） */
+  expenditureTotalOku: number;
+  /** 歳入決算総額（億円） */
+  revenueTotalOku: number;
+  /** 住民基本台帳人口 */
+  population: number | null;
+  financialIndex: number | null;
+  keijoShushiPct: number | null;
+  jisshitsuKosaihiPct: number | null;
+  /** 款別歳出（億円） */
+  byPurpose: Record<string, number>;
+  /** 年度ページ（総務省） */
+  landingUrl: string;
+  /** 来歴（概況ファイル内の位置） */
+  ref: string;
+}
+
+export const KOFU_TREND: KofuTrendRow[] = ${JSON.stringify(trendRows, null, 2)};
+`;
+  writeFileSync(join(process.cwd(), "src/client/lib/trend.gen.ts"), trendOut, "utf8");
+  console.log(
+    `✓ 決算の推移を導出 → src/client/lib/trend.gen.ts（${trendRows[0]!.fyLabel}〜${trendRows[trendRows.length - 1]!.fyLabel}）`,
+  );
+}
+
+// ============================================================================
 // 甲府市 R6 決算の項レベル内訳（決算状況調）→ src/client/lib/detail.gen.ts
 // R8 予算の項以下は原典未公開のため、款ドリルダウンには R6 決算の項内訳を
 // 「参考」として年度を明示して出す（推計はしない）。
