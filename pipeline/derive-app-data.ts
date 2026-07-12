@@ -367,9 +367,11 @@ function buildKofuBudgetYear(entry: (typeof BUDGET_YEARS)[number]) {
     // 前年度列の基準（R2 の一覧表は前年が「6月補正後予算額」であり当初でない）
     prevBasis: doc.prevBasis,
     sourceTitle: source.title,
-    // リンクは Wayback コピー（パース時点の版に固定）。発行元の元 URL は originUrl
+    // リンクは Wayback コピー（パース時点の版に固定）。発行元の元 URL は originUrl。
+    // sourceLocalUrl = 自サーバー配信のコピー（public/sources。ドロワーでその場レビュー）
     sourceUrl: wayback(url),
     originUrl: url,
+    sourceLocalUrl: `/sources/${srcId}/${file.filename}`,
     pagesLabel: `p.${pagesOpts.revenuePage}–${pagesOpts.expenditurePage}`,
     revenue,
     expenditure,
@@ -378,6 +380,7 @@ function buildKofuBudgetYear(entry: (typeof BUDGET_YEARS)[number]) {
       title: source.title + (meta.files.length > 1 ? `（${f.filename}）` : ""),
       type: "PDF",
       url: wayback(urlOf(f.filename)),
+      localUrl: `/sources/${srcId}/${f.filename}`,
       source: url ? new URL(url).hostname : "",
       thumb: `${f.filename} ・ sha256 ${f.sha256.slice(0, 16)}… ・ ${f.fetchedAt.slice(0, 10)} 取得`,
     })),
@@ -424,10 +427,12 @@ export interface KofuBudgetYear {
   sourceUrl: string;
   /** 発行元の元 URL */
   originUrl: string;
+  /** 自サーバー配信の原本コピー（/sources/...。ドロワーでのその場レビュー用） */
+  sourceLocalUrl: string;
   pagesLabel: string;
   revenue: KofuKanRow[];
   expenditure: KofuKanRow[];
-  evidence: { title: string; type: string; url: string; source: string; thumb: string }[];
+  evidence: { title: string; type: string; url: string; localUrl: string; source: string; thumb: string }[];
 }
 
 /** 収録済みの当初予算（新しい年度順） */
@@ -606,11 +611,13 @@ const kofuExecution = {
   // リンクは Wayback コピー（この資料は同一 URL 上書き型なのでコピーが特に重要）
   sourceUrl: wayback(execUrl),
   originUrl: execUrl,
+  sourceLocalUrl: `/sources/${EXEC_SOURCE_ID}/${execFile.filename}`,
   evidence: [
     {
       title: execSource.title,
       type: "PDF",
       url: wayback(execUrl),
+      localUrl: `/sources/${EXEC_SOURCE_ID}/${execFile.filename}`,
       source: execUrl ? new URL(execUrl).hostname : "",
       thumb: `${execFile.filename} ・ sha256 ${execFile.sha256.slice(0, 16)}… ・ ${execFile.fetchedAt.slice(0, 10)} 取得`,
     },
@@ -649,7 +656,9 @@ export const KOFU_EXECUTION: {
   sourceUrl: string;
   /** 発行元の元 URL */
   originUrl: string;
-  evidence: { title: string; type: string; url: string; source: string; thumb: string }[];
+  /** 自サーバー配信の原本コピー（ドロワー用） */
+  sourceLocalUrl: string;
+  evidence: { title: string; type: string; url: string; localUrl: string; source: string; thumb: string }[];
 } = ${JSON.stringify(kofuExecution, null, 2)};
 `;
 writeFileSync(join(process.cwd(), "src/client/lib/execution.gen.ts"), execOut, "utf8");
@@ -681,11 +690,14 @@ console.log(
         refLabel: `予算資料 p.${p.locator.page}`,
         // PDF のページアンカー付きリンク（Wayback コピー優先。フラグメントはコピーでも効く）
         refUrl: `${wayback(b.projUrl)}#page=${p.locator.page}`,
+        // 自サーバー配信コピーの同ページ（ドロワー用）
+        refLocalUrl: `/sources/${b.source.id}/${b.projFile.filename}#page=${p.locator.page}`,
       })),
       source: {
         title: b.source.title,
         url: wayback(b.projUrl),
         originUrl: b.projUrl,
+        localUrl: `/sources/${b.source.id}/${b.projFile.filename}`,
         pagesLabel: b.pagesOpts.projectPages
           ? `p.${b.pagesOpts.projectPages.from}–${b.pagesOpts.projectPages.to}`
           : "",
@@ -721,6 +733,8 @@ export interface KofuProject {
   refLabel: string;
   /** 原資料 PDF の該当ページへのリンク（Wayback コピー優先） */
   refUrl: string;
+  /** 自サーバー配信コピーの該当ページ（/sources/...#page=N。ドロワー用） */
+  refLocalUrl: string;
 }
 
 export interface KofuProjectYear {
@@ -728,8 +742,8 @@ export interface KofuProjectYear {
   fy: string;
   fyLabel: string;
   projects: KofuProject[];
-  /** url = Wayback コピー優先のリンク / originUrl = 発行元の元 URL */
-  source: { title: string; url: string; originUrl: string; pagesLabel: string };
+  /** url = Wayback コピー / originUrl = 発行元 / localUrl = 自サーバー配信コピー */
+  source: { title: string; url: string; originUrl: string; localUrl: string; pagesLabel: string };
 }
 
 /** 収録済みの主な事業一覧（新しい年度順） */

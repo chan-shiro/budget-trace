@@ -209,7 +209,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                   </div>
                   )}
                   <p style={S("margin:14px 2px 0; font-size:12px; color:#5C6B77;")}>
-                    <a href={v.dashSourceUrl} target="_blank" rel="noopener noreferrer" style={S("color:#5C6B77;")}>{v.dashSourceLabel} ↗</a>
+                    <a href={v.dashSourceUrl} onClick={(e) => { e.preventDefault(); v.dashSourceOpen(); }} style={S("color:#5C6B77; cursor:pointer;")}>{v.dashSourceLabel}（原本を開く）</a>
                   </p>
                 </section>
               </div>
@@ -252,7 +252,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                     <div style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:12px; padding:12px 16px; max-width:240px;")}>
                       <div style={S("font-size:11px; font-family:'IBM Plex Mono',monospace; letter-spacing:0.12em; color:#5C6B77; margin-bottom:5px;")}>EVIDENCE</div>
                       <div style={S("font-size:12.5px; line-height:1.6;")}>{v.drillEvidence}</div>
-                      <a href={v.drillPdfUrl} target="_blank" rel="noopener noreferrer" style={S("font-size:12px;")}>予算書PDFを開く ↗</a>
+                      <a href={v.drillPdfUrl} onClick={(e) => { e.preventDefault(); v.dashSourceOpen(); }} style={S("font-size:12px; cursor:pointer;")}>予算書PDFを開く</a>
                     </div>
                   </div>
 
@@ -320,14 +320,14 @@ export default function BudgetTraceView({ v }: { v: any }) {
                               <div style={S("display:flex; gap:10px; flex-wrap:wrap; margin-top:6px; font-size:11px; color:#5C6B77;")}>
                                 <span>基本目標: {rp.goal}</span>
                                 <span>施策: {rp.shisaku}</span>
-                                <a href={rp.refUrl} target="_blank" rel="noopener noreferrer" title={rp.refTitle} style={S("font-family:'IBM Plex Mono',monospace; color:#0F76A3;")}>{rp.refLabel} ↗</a>
+                                <a href={rp.refUrl} onClick={(e) => { e.preventDefault(); rp.refOpen(); }} title={rp.refTitle} style={S("font-family:'IBM Plex Mono',monospace; color:#0F76A3; cursor:pointer;")}>{rp.refLabel}</a>
                                 {rp.bookName && <span style={S("font-family:'IBM Plex Mono',monospace; color:#8494A0;")}>予算書名{rp.bookName}</span>}
                               </div>
                             </div>
                           ))}
                         </div>
                         <p style={S("margin:10px 2px 0; font-size:12px; color:#5C6B77;")}>
-                          <a href={v.realProjectsSourceUrl} target="_blank" rel="noopener noreferrer" style={S("color:#5C6B77;")}>{v.realProjectsSourceLabel} ↗</a>
+                          <a href={v.realProjectsSourceUrl} onClick={(e) => { e.preventDefault(); v.realProjectsSourceOpen(); }} style={S("color:#5C6B77; cursor:pointer;")}>{v.realProjectsSourceLabel}（原本を開く）</a>
                         </p>
                       </div>
                     )}
@@ -394,7 +394,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                   <div style={S("font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.18em; color:#0F76A3; margin-bottom:10px;")}>POLICY THEMES — 総合計画の基本目標別に見る</div>
                   <p style={S("margin:0 0 14px; font-size:15px; line-height:1.9; max-width:76ch;")}>{v.themesIntro}</p>
                   <div style={S("display:flex; gap:8px; flex-wrap:wrap;")}>
-                    <a href={v.dashSourceUrl} target="_blank" rel="noopener noreferrer" style={S("font-size:12px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:4px 12px; text-decoration:none;")}>出典：{v.dashSourceTitle} ↗</a>
+                    <a href={v.dashSourceUrl} onClick={(e) => { e.preventDefault(); v.dashSourceOpen(); }} style={S("font-size:12px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:4px 12px; text-decoration:none; cursor:pointer;")}>出典：{v.dashSourceTitle}（原本を開く）</a>
                   </div>
                 </section>
 
@@ -450,7 +450,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                           <span>
                             <span style={S("display:block; font-size:10.5px; color:#5C6B77;")}>施策</span>
                             <span style={S("display:block; font-size:11.5px; color:#14181C; line-height:1.5;")}>{tp.shisaku}</span>
-                            <a href={tp.refUrl} target="_blank" rel="noopener noreferrer" style={S("display:block; font-size:10px; color:#0F76A3; font-family:'IBM Plex Mono',monospace; margin-top:2px;")}>{tp.refLabel} ↗</a>
+                            <a href={tp.refUrl} onClick={(e) => { e.preventDefault(); tp.refOpen(); }} style={S("display:block; font-size:10px; color:#0F76A3; font-family:'IBM Plex Mono',monospace; margin-top:2px; cursor:pointer;")}>{tp.refLabel}</a>
                           </span>
                         </div>
                       ))}
@@ -544,7 +544,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                     <h3 style={S("margin:0 0 12px; font-size:14px; font-weight:700;")}>エビデンス（一次資料）</h3>
                     <div style={S("display:grid; grid-template-columns:repeat(auto-fill, minmax(240px,1fr)); gap:12px;")}>
                       {v.execEvidence.map((he: any, i: number) => (
-                        <HoverBox as="a" key={i} href={he.url} target="_blank" rel="noopener noreferrer" style={S("display:block; background:#FFFFFF; border:1px solid #DFE7EC; border-radius:13px; overflow:hidden; text-decoration:none; color:#14181C;")} hoverStyle={S("border-color:#1798D0; text-decoration:none;")}>
+                        <HoverBox as="a" key={i} href={he.localUrl} onClick={(e: any) => { e.preventDefault(); he.open(); }} style={S("display:block; background:#FFFFFF; border:1px solid #DFE7EC; border-radius:13px; overflow:hidden; text-decoration:none; color:#14181C; cursor:pointer;")} hoverStyle={S("border-color:#1798D0; text-decoration:none;")}>
                           <span style={S("display:flex; align-items:center; justify-content:center; height:96px; background:repeating-linear-gradient(45deg,#ECF2F6 0 10px,#E1EAF0 10px 20px); font-family:'IBM Plex Mono',monospace; font-size:11px; color:#5C6B77; text-align:center; padding:0 14px; line-height:1.5;")}>{he.thumb}</span>
                           <span style={S("display:block; padding:12px 15px;")}>
                             <span style={S("display:inline-block; font-size:10.5px; font-weight:600; color:#1798D0; border:1px solid #B9E0F2; border-radius:999px; padding:1px 9px; margin-bottom:6px;")}>{he.type}</span>
@@ -633,7 +633,11 @@ export default function BudgetTraceView({ v }: { v: any }) {
                   {v.sourcesRows.map((src: any, i: number) => (
                     <div key={i} data-mq="src" style={S("display:grid; grid-template-columns:minmax(200px,2fr) 70px minmax(140px,1.4fr) 100px minmax(160px,1.6fr); gap:12px; padding:11px 0; border-bottom:1px solid #ECF2F6; font-size:13px; align-items:center;")}>
                       <span style={S("display:flex; flex-direction:column; gap:2px;")}>
-                        <a href={src.url} target="_blank" rel="noopener noreferrer" style={S("font-weight:600;")}>{src.title} ↗</a>
+                        {src.open ? (
+                          <a href={src.localUrl} onClick={(e) => { e.preventDefault(); src.open(); }} style={S("font-weight:600; cursor:pointer;")}>{src.title}（原本を開く）</a>
+                        ) : (
+                          <a href={src.url} target="_blank" rel="noopener noreferrer" style={S("font-weight:600;")}>{src.title} ↗</a>
+                        )}
                         {src.originUrl && src.originUrl !== src.url && (
                           <a href={src.originUrl} target="_blank" rel="noopener noreferrer" style={S("font-size:11px; color:#5C6B77; text-decoration:none;")}>発行元の元ページ（最新版に差し替わっている可能性あり）↗</a>
                         )}
@@ -655,6 +659,28 @@ export default function BudgetTraceView({ v }: { v: any }) {
             <span>予算トレース — プロトタイプ。掲載数値はすべて一次資料由来の実データです（項以下の内訳・補正・執行率は資料収録後に追加予定）。<button onClick={v.goSources} style={S("border:none; background:none; padding:0; margin-left:8px; color:#1798D0; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")}>データ出典・更新日一覧 →</button></span>
             <span style={S("font-family:'IBM Plex Mono',monospace;")}>SOURCE: 甲府市 当初予算資料 R2–R3, R6–R8</span>
           </footer>
+        </div>
+      )}
+
+      {/* ==== 一次資料ドロワー（自サーバー配信の原本コピーをその場でレビュー） ==== */}
+      {v.viewer && (
+        <div role="dialog" aria-modal="true" aria-label={`一次資料: ${v.viewer.title}`} style={S("position:fixed; inset:0; z-index:300;")}>
+          <div onClick={v.closeViewer} style={S("position:absolute; inset:0; background:rgba(20,24,28,0.45);")} />
+          <div data-anim="drawer" style={S("position:absolute; left:0; right:0; bottom:0; height:min(78vh, 100%); background:#FFFFFF; border-top:1px solid #DFE7EC; border-radius:16px 16px 0 0; display:flex; flex-direction:column; box-shadow:0 -14px 44px rgba(20,24,28,0.22); overflow:hidden;")}>
+            <div data-mq-pad="" style={S("display:flex; align-items:center; justify-content:space-between; gap:14px; padding:12px 22px; border-bottom:1px solid #DFE7EC; flex-wrap:wrap;")}>
+              <div style={S("min-width:0;")}>
+                <div style={S("font-size:13.5px; font-weight:700; color:#14181C; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;")}>{v.viewer.title}</div>
+                <div style={S("font-size:11px; color:#5C6B77; font-family:'IBM Plex Mono',monospace;")}>{v.viewer.sub} ・ 収録時アーカイブの原本コピー</div>
+              </div>
+              <div style={S("display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:11.5px;")}>
+                <a href={v.viewer.url} target="_blank" rel="noopener noreferrer" style={S("color:#0F76A3; text-decoration:none;")}>新しいタブで開く ↗</a>
+                {v.viewer.archiveUrl && <a href={v.viewer.archiveUrl} target="_blank" rel="noopener noreferrer" style={S("color:#5C6B77; text-decoration:none;")}>魚拓（Wayback）↗</a>}
+                {v.viewer.originUrl && <a href={v.viewer.originUrl} target="_blank" rel="noopener noreferrer" style={S("color:#5C6B77; text-decoration:none;")}>発行元 ↗</a>}
+                <HoverBox as="button" onClick={v.closeViewer} aria-label="閉じる" style={S("border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; border-radius:999px; padding:5px 14px; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("border-color:#1798D0; color:#1798D0;")}>閉じる ✕</HoverBox>
+              </div>
+            </div>
+            <iframe title={v.viewer.title} src={v.viewer.url} style={S("flex:1; width:100%; border:none; background:#ECF2F6;")} />
+          </div>
         </div>
       )}
 

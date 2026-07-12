@@ -85,13 +85,16 @@ Claude Design のプロトタイプ（`project/予算トレース.dc.html`）を
   政策テーマは R8=第七次総合計画（ひと/まち/魅力）、R7・R6=第六次（基本目標1〜4・基本構想の推進）。
   **R5・R4 の資料は市サイトから削除済みで Wayback にも無く入手不可**（未収録）。
   R3・R2 は分冊形式で現存（未収録・対応可能）
-- **外部アーカイブ（魚拓）の仕組み**: `bun run pipeline:archive` が registry の直リンクと
-  ランディングページを Wayback Machine に登録し、`data/archives.json` に台帳化。
-  **画面のエビデンスリンクはすべて Wayback コピーを優先**（derive の `wayback()` が解決。
-  直リンクは中身だけ差し替えられ得るが、コピーは収録時点の版に固定される — ユーザー方針）。
-  出典タブは「コピーが主リンク・発行元の元ページが補助リンク」。
+- **エビデンスの3層コピー体制**: ①自サーバー配信の原本コピー（`data/raw` の PDF を
+  dev/build 前段の `pipeline/sync-public-sources.ts` が `public/sources/` へ同期。gitignore）
+  ②Wayback コピー（`bun run pipeline:archive` が登録・`data/archives.json` に台帳化・
+  `id_` URL で raw と sha256 突合）③発行元の元 URL。
+  **画面のエビデンスリンクは①を画面下のドロワー（iframe + 来歴ヘッダ）で開き**、
+  ②③はドロワー内の補助リンク。直リンクは中身だけ差し替えられ得るため主リンクにしない。
   背景: R4・R5 予算資料の消失（削除後は登録もできない）→ **新資料は取得後すぐ登録**。
-  上書き型 URL（財政事情）は版が変わるたび `--force`
+  上書き型 URL（財政事情）は版が変わるたび `--force`。
+  注意: `bun run build` は dev サーバーと同じ `.next` を使うため、**dev 起動中に build すると
+  dev が壊れる**（Cannot find module './NNN.js' → dev 再起動 + `.next` 削除で復旧）
 - **一次資料の取得手順は docs/data-sources.md に集約**（発見の経緯・構造のクセ・年度更新手順。
   資料を追加・更新したら必ず追記する運用）
 - サーバー層（`src/server/` ほか）は**スケルトンのみ**。Hono/Inversify/CASL/Postgres は未導入

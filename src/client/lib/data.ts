@@ -97,10 +97,10 @@ export const SOURCES = [
   ...KOFU_BUDGET_YEARS.map((b) => ({
     title: b.sourceTitle, type: 'PDF', org: '甲府市', date: '2026-07-12',
     used: `ダッシュボード／款別ドリルダウン／前年比較／主な事業（${b.fyLabel.replace(' 当初予算', '')}）` + (b.fy === 'R8' ? '／政策テーマ' : ''),
-    url: b.sourceUrl, originUrl: b.originUrl,
+    url: b.sourceUrl, originUrl: b.originUrl, localUrl: b.sourceLocalUrl,
   })),
-  { title:'令和7年度 甲府市財政事情（一般会計の状況・令和8年3月31日現在）', type:'PDF', org:'甲府市', date:'2026-07-12', used:'予算執行状況（款別の予算現額・収入/支出済額・執行率）', url: KOFU_EXECUTION.sourceUrl, originUrl: KOFU_EXECUTION.originUrl },
-  { title:'令和6年度 市町村別決算状況調', type:'Excel', org:'総務省 自治財政局', date:'2026-07-11', used:'類似自治体との比較／項別内訳（決算）／人口（1人あたり換算）', url: WAYBACK_BY_URL[SOUMU_R6_LANDING] ?? SOUMU_R6_LANDING, originUrl: SOUMU_R6_LANDING },
+  { title:'令和7年度 甲府市財政事情（一般会計の状況・令和8年3月31日現在）', type:'PDF', org:'甲府市', date:'2026-07-12', used:'予算執行状況（款別の予算現額・収入/支出済額・執行率）', url: KOFU_EXECUTION.sourceUrl, originUrl: KOFU_EXECUTION.originUrl, localUrl: KOFU_EXECUTION.sourceLocalUrl },
+  { title:'令和6年度 市町村別決算状況調', type:'Excel', org:'総務省 自治財政局', date:'2026-07-11', used:'類似自治体との比較／項別内訳（決算）／人口（1人あたり換算）', url: WAYBACK_BY_URL[SOUMU_R6_LANDING] ?? SOUMU_R6_LANDING, originUrl: SOUMU_R6_LANDING, localUrl: '' },
 ];
 
 // ---- ヘルパー --------------------------------------------------------------
