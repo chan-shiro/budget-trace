@@ -2,7 +2,8 @@
 // アプリのエビデンスリンクは自サーバーのこのコピーを開く（ドロワーでその場レビュー）。
 // - コピー元は git にコミット済みの raw（sha256 で来歴固定）なので、public 側は
 //   生成物として gitignore し、二重コミットしない
-// - PDF のみ同期する（xlsx はブラウザ内プレビュー不可のため対象外）
+// - PDF・HTML・Excel を同期する（PDF はドロワーで描画、HTML はサンドボックス iframe、
+//   Excel はコピーのダウンロード。エビデンスの主リンクは常に自サーバーのコピー）
 import { copyFileSync, existsSync, mkdirSync, readdirSync, rmSync, statSync } from "node:fs";
 import { join } from "node:path";
 
@@ -15,16 +16,16 @@ let count = 0;
 if (existsSync(RAW_DIR)) {
   for (const sourceId of readdirSync(RAW_DIR)) {
     const srcDir = join(RAW_DIR, sourceId);
-    if (!statSync(srcDir).isDirectory()) continue;
+    if (!statSync(srcDir).isDirectory() || sourceId.startsWith("fixture-")) continue;
     for (const filename of readdirSync(srcDir)) {
-      if (!filename.toLowerCase().endsWith(".pdf")) continue;
+      if (!/\.(pdf|html?|xlsx?|csv)$/i.test(filename)) continue;
       mkdirSync(join(OUT_DIR, sourceId), { recursive: true });
       copyFileSync(join(srcDir, filename), join(OUT_DIR, sourceId, filename));
       count++;
     }
   }
 }
-console.log(`✓ 一次資料 PDF を public/sources へ同期（${count} ファイル）`);
+console.log(`✓ 一次資料を public/sources へ同期（${count} ファイル）`);
 
 // PDF.js のワーカーも public へ同梱する（ドロワーの PDF ビューア用。
 // iframe のブラウザ内蔵ビューアは Safari で1ページ目しか描画されないため、

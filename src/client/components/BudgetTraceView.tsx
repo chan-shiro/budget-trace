@@ -4,6 +4,7 @@ import React from "react";
 import JapanMap from "./JapanMap";
 import { HoverBox, S } from "./ui";
 import PdfViewer from "./PdfViewer";
+import HtmlViewer from "./HtmlViewer";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
@@ -286,7 +287,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                           ))}
                         </div>
                         <p style={S("margin:8px 2px 0; font-size:12px; color:#5C6B77;")}>
-                          <a href={v.r6DetailSourceUrl} target="_blank" rel="noopener noreferrer" style={S("color:#5C6B77;")}>{v.r6DetailSourceLabel} ↗</a>
+                          <a href={v.r6DetailSourceUrl} onClick={(e) => { e.preventDefault(); v.r6DetailSourceOpen(); }} style={S("color:#5C6B77; cursor:pointer;")}>{v.r6DetailSourceLabel}（原本を開く）</a>
                         </p>
                       </div>
                     )}
@@ -555,7 +556,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                     <h3 style={S("margin:0 0 12px; font-size:14px; font-weight:700;")}>エビデンス（一次資料）</h3>
                     <div style={S("display:grid; grid-template-columns:repeat(auto-fill, minmax(240px,1fr)); gap:12px;")}>
                       {v.execEvidence.map((he: any, i: number) => (
-                        <HoverBox as="a" key={i} href={he.localUrl || he.url} target={he.open ? undefined : "_blank"} rel="noopener noreferrer" onClick={he.open ? (e: any) => { e.preventDefault(); he.open(); } : undefined} style={S("display:block; background:#FFFFFF; border:1px solid #DFE7EC; border-radius:13px; overflow:hidden; text-decoration:none; color:#14181C; cursor:pointer;")} hoverStyle={S("border-color:#1798D0; text-decoration:none;")}>
+                        <HoverBox as="a" key={i} href={he.localUrl} onClick={(e: any) => { e.preventDefault(); he.open(); }} style={S("display:block; background:#FFFFFF; border:1px solid #DFE7EC; border-radius:13px; overflow:hidden; text-decoration:none; color:#14181C; cursor:pointer;")} hoverStyle={S("border-color:#1798D0; text-decoration:none;")}>
                           <span style={S("display:flex; align-items:center; justify-content:center; height:96px; background:repeating-linear-gradient(45deg,#ECF2F6 0 10px,#E1EAF0 10px 20px); font-family:'IBM Plex Mono',monospace; font-size:11px; color:#5C6B77; text-align:center; padding:0 14px; line-height:1.5;")}>{he.thumb}</span>
                           <span style={S("display:block; padding:12px 15px;")}>
                             <span style={S("display:inline-block; font-size:10.5px; font-weight:600; color:#1798D0; border:1px solid #B9E0F2; border-radius:999px; padding:1px 9px; margin-bottom:6px;")}>{he.type}</span>
@@ -609,7 +610,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                   <h3 style={S("margin:0 0 12px; font-size:14px; font-weight:700;")}>エビデンス（一次資料）</h3>
                   <div style={S("display:grid; grid-template-columns:repeat(auto-fill, minmax(240px,1fr)); gap:12px;")}>
                     {v.similarEvidence.map((ev: any, i: number) => (
-                      <HoverBox as="a" key={i} href={ev.url} target="_blank" rel="noopener noreferrer" style={S("display:block; background:#FFFFFF; border:1px solid #DFE7EC; border-radius:13px; overflow:hidden; text-decoration:none; color:#14181C;")} hoverStyle={S("border-color:#1798D0; text-decoration:none;")}>
+                      <HoverBox as="a" key={i} href={ev.localUrl} onClick={(e: any) => { e.preventDefault(); ev.open(); }} style={S("display:block; background:#FFFFFF; border:1px solid #DFE7EC; border-radius:13px; overflow:hidden; text-decoration:none; color:#14181C;")} hoverStyle={S("border-color:#1798D0; text-decoration:none;")}>
                         <span style={S("display:flex; align-items:center; justify-content:center; height:110px; background:repeating-linear-gradient(45deg,#ECF2F6 0 10px,#E1EAF0 10px 20px); font-family:'IBM Plex Mono',monospace; font-size:11px; color:#5C6B77; text-align:center; padding:0 14px; line-height:1.5;")}>{ev.thumb}</span>
                         <span style={S("display:block; padding:12px 15px;")}>
                           <span style={S("display:inline-block; font-size:10.5px; font-weight:600; color:#1798D0; border:1px solid #B9E0F2; border-radius:999px; padding:1px 9px; margin-bottom:6px;")}>{ev.type}</span>
@@ -705,7 +706,18 @@ export default function BudgetTraceView({ v }: { v: any }) {
                 <HoverBox as="button" onClick={v.closeViewer} aria-label="閉じる" style={S("border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; border-radius:999px; padding:5px 14px; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("border-color:#1798D0; color:#1798D0;")}>閉じる ✕</HoverBox>
               </div>
             </div>
-            <PdfViewer url={v.viewer.url} page={v.viewer.page} />
+            {/\.pdf$/i.test(v.viewer.url) ? (
+              <PdfViewer url={v.viewer.url} page={v.viewer.page} />
+            ) : /\.html?$/i.test(v.viewer.url) ? (
+              /* HTML の原本コピー。スクリプト禁止のサンドボックスで素の表組みを表示し、
+                 最初の表へ自動スクロールする（HtmlViewer） */
+              <HtmlViewer url={v.viewer.url} title={v.viewer.title} />
+            ) : (
+              <div style={S("flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; background:#ECF2F6; padding:24px; text-align:center;")}>
+                <p style={S("margin:0; font-size:13.5px; color:#5C6B77; max-width:48ch; line-height:1.8;")}>この形式（Excel など）はブラウザでプレビューできません。収録時にアーカイブした原本のコピーをダウンロードして確認できます。</p>
+                <a href={v.viewer.url} download style={S("font-size:13px; border:1px solid #1798D0; color:#0F76A3; border-radius:999px; padding:8px 20px; text-decoration:none; background:#FFFFFF;")}>原本のコピーをダウンロード ↓</a>
+              </div>
+            )}
           </div>
         </div>
       )}

@@ -105,7 +105,7 @@ export const SOURCES = [
   ...KOFU_EXECUTION_YEARS.filter((y) => y.basis === '確定').map((y) => ({
     title: y.sourceTitle, type: 'Web', org: '甲府市', date: '2026-07-12',
     used: `予算執行状況（${y.fyLabel.replace('（決算・確定値）', '')}の予算現額・済額・執行率＝確定値）`,
-    url: y.sourceUrl, originUrl: y.originUrl, localUrl: '',
+    url: y.sourceUrl, originUrl: y.originUrl, localUrl: y.sourceLocalUrl,
   })),
   ...KOFU_EVALUATION_YEARS.map((y) => ({
     title: y.sourceTitle, type: y.sourceLocalUrl ? 'PDF' : 'Excel', org: '甲府市', date: '2026-07-12',

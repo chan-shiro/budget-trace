@@ -653,13 +653,13 @@ export const KOFU_EXECUTION_YEARS: KofuExecutionYear[] = [
     "sourceTitle": "令和6年度 甲府市決算状況 収入支出詳細（一般会計・確定値）",
     "sourceUrl": "https://web.archive.org/web/20260712125856/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r6kessan/r6ippansyousai.html",
     "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r6kessan/r6ippansyousai.html",
-    "sourceLocalUrl": "",
+    "sourceLocalUrl": "/sources/kofu-kessan-syousai-r6/r6ippansyousai.html",
     "evidence": [
       {
         "title": "令和6年度 甲府市決算状況 収入支出詳細（一般会計・確定値）",
         "type": "Web",
         "url": "https://web.archive.org/web/20260712125856/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r6kessan/r6ippansyousai.html",
-        "localUrl": "",
+        "localUrl": "/sources/kofu-kessan-syousai-r6/r6ippansyousai.html",
         "source": "www.city.kofu.yamanashi.jp",
         "thumb": "r6ippansyousai.html ・ sha256 4f8155ca6cb06915… ・ 2026-07-12 取得"
       }
@@ -964,13 +964,13 @@ export const KOFU_EXECUTION_YEARS: KofuExecutionYear[] = [
     "sourceTitle": "令和5年度 甲府市決算状況 収入支出詳細（一般会計・確定値）",
     "sourceUrl": "https://web.archive.org/web/20260712125134/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r5kessan/r5ippansyousai.html",
     "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r5kessan/r5ippansyousai.html",
-    "sourceLocalUrl": "",
+    "sourceLocalUrl": "/sources/kofu-kessan-syousai-r5/r5ippansyousai.html",
     "evidence": [
       {
         "title": "令和5年度 甲府市決算状況 収入支出詳細（一般会計・確定値）",
         "type": "Web",
         "url": "https://web.archive.org/web/20260712125134/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r5kessan/r5ippansyousai.html",
-        "localUrl": "",
+        "localUrl": "/sources/kofu-kessan-syousai-r5/r5ippansyousai.html",
         "source": "www.city.kofu.yamanashi.jp",
         "thumb": "r5ippansyousai.html ・ sha256 59a4a42ca20c946d… ・ 2026-07-12 取得"
       }
@@ -1275,13 +1275,13 @@ export const KOFU_EXECUTION_YEARS: KofuExecutionYear[] = [
     "sourceTitle": "令和4年度 甲府市決算状況 収入支出詳細（一般会計・確定値）",
     "sourceUrl": "https://web.archive.org/web/20260712125433/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r04kessan/r4ippannsyousai.html",
     "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r04kessan/r4ippannsyousai.html",
-    "sourceLocalUrl": "",
+    "sourceLocalUrl": "/sources/kofu-kessan-syousai-r4/r4ippannsyousai.html",
     "evidence": [
       {
         "title": "令和4年度 甲府市決算状況 収入支出詳細（一般会計・確定値）",
         "type": "Web",
         "url": "https://web.archive.org/web/20260712125433/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r04kessan/r4ippannsyousai.html",
-        "localUrl": "",
+        "localUrl": "/sources/kofu-kessan-syousai-r4/r4ippannsyousai.html",
         "source": "www.city.kofu.yamanashi.jp",
         "thumb": "r4ippannsyousai.html ・ sha256 f75fc5e696b62811… ・ 2026-07-12 取得"
       }
@@ -1586,13 +1586,13 @@ export const KOFU_EXECUTION_YEARS: KofuExecutionYear[] = [
     "sourceTitle": "令和3年度 甲府市決算状況 収入支出詳細（一般会計・確定値・WARP回収）",
     "sourceUrl": "https://warp.ndl.go.jp/20231106/20231106005608/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r3shuushishousai.html",
     "originUrl": "https://warp.ndl.go.jp/20231106/20231106005608/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r3shuushishousai.html",
-    "sourceLocalUrl": "",
+    "sourceLocalUrl": "/sources/kofu-kessan-syousai-r3/r3shuushishousai.html",
     "evidence": [
       {
         "title": "令和3年度 甲府市決算状況 収入支出詳細（一般会計・確定値・WARP回収）",
         "type": "Web",
         "url": "https://warp.ndl.go.jp/20231106/20231106005608/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r3shuushishousai.html",
-        "localUrl": "",
+        "localUrl": "/sources/kofu-kessan-syousai-r3/r3shuushishousai.html",
         "source": "warp.ndl.go.jp",
         "thumb": "r3shuushishousai.html ・ sha256 7881a7735a83b3cc… ・ 2026-07-12 取得"
       }
@@ -1897,13 +1897,13 @@ export const KOFU_EXECUTION_YEARS: KofuExecutionYear[] = [
     "sourceTitle": "令和2年度 甲府市決算状況 収入支出詳細（一般会計・確定値）",
     "sourceUrl": "https://web.archive.org/web/20260712125651/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r2shuushishousai.html",
     "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r2shuushishousai.html",
-    "sourceLocalUrl": "",
+    "sourceLocalUrl": "/sources/kofu-kessan-syousai-r2/r2shuushishousai.html",
     "evidence": [
       {
         "title": "令和2年度 甲府市決算状況 収入支出詳細（一般会計・確定値）",
         "type": "Web",
         "url": "https://web.archive.org/web/20260712125651/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r2shuushishousai.html",
-        "localUrl": "",
+        "localUrl": "/sources/kofu-kessan-syousai-r2/r2shuushishousai.html",
         "source": "www.city.kofu.yamanashi.jp",
         "thumb": "r2shuushishousai.html ・ sha256 62f0600e5f231bfb… ・ 2026-07-12 取得"
       }
@@ -2208,13 +2208,13 @@ export const KOFU_EXECUTION_YEARS: KofuExecutionYear[] = [
     "sourceTitle": "令和1年度 甲府市決算状況 収入支出詳細（一般会計・確定値）",
     "sourceUrl": "https://web.archive.org/web/20210128054004/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r1sishutu.html",
     "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r1sishutu.html",
-    "sourceLocalUrl": "",
+    "sourceLocalUrl": "/sources/kofu-kessan-syousai-r1/r1sishutu.html",
     "evidence": [
       {
         "title": "令和1年度 甲府市決算状況 収入支出詳細（一般会計・確定値）",
         "type": "Web",
         "url": "https://web.archive.org/web/20210128054004/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r1sishutu.html",
-        "localUrl": "",
+        "localUrl": "/sources/kofu-kessan-syousai-r1/r1sishutu.html",
         "source": "www.city.kofu.yamanashi.jp",
         "thumb": "r1sishutu.html ・ sha256 c175362570a90fe0… ・ 2026-07-12 取得"
       }

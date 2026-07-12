@@ -36,7 +36,7 @@ export const KOFU_EVALUATION_YEARS: KofuEvaluationYear[] = [
     "sourceTitle": "令和7年度 甲府市行政評価（事務事業評価）結果一覧",
     "sourceUrl": "https://web.archive.org/web/20260712142225/https://www.city.kofu.yamanashi.jp/zaise/documents/7kouhyouyou2.xlsx",
     "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/documents/7kouhyouyou2.xlsx",
-    "sourceLocalUrl": "",
+    "sourceLocalUrl": "/sources/kofu-gyousei-hyouka-r7/7kouhyouyou2.xlsx",
     "items": [
       {
         "name": "放課後児童クラブ事業",
@@ -1306,7 +1306,7 @@ export const KOFU_EVALUATION_YEARS: KofuEvaluationYear[] = [
     "sourceTitle": "令和6年度 甲府市行政評価（事務事業評価）結果一覧",
     "sourceUrl": "https://web.archive.org/web/20260712140404/https://www.city.kofu.yamanashi.jp/zaise/documents/6kouhyouyou6.xlsx",
     "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/documents/6kouhyouyou6.xlsx",
-    "sourceLocalUrl": "",
+    "sourceLocalUrl": "/sources/kofu-gyousei-hyouka-r6/6kouhyouyou6.xlsx",
     "items": [
       {
         "name": "放課後児童クラブ事業",
@@ -4837,7 +4837,7 @@ export const KOFU_EVALUATION_YEARS: KofuEvaluationYear[] = [
     "sourceTitle": "令和3年度 甲府市行政評価（事務事業評価）結果一覧",
     "sourceUrl": "https://web.archive.org/web/20260712140840/https://www.city.kofu.yamanashi.jp/zaise/documents/hyoukahyou2.xlsx",
     "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/documents/hyoukahyou2.xlsx",
-    "sourceLocalUrl": "",
+    "sourceLocalUrl": "/sources/kofu-gyousei-hyouka-r3/hyoukahyou2.xlsx",
     "items": [
       {
         "name": "放課後児童クラブ事業",
@@ -6026,7 +6026,7 @@ export const KOFU_EVALUATION_YEARS: KofuEvaluationYear[] = [
     "sourceTitle": "令和2年度 甲府市行政評価（事務事業評価）結果一覧",
     "sourceUrl": "https://web.archive.org/web/20260712141123/https://www.city.kofu.yamanashi.jp/zaise/documents/r02kekkaichiran.xlsx",
     "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/documents/r02kekkaichiran.xlsx",
-    "sourceLocalUrl": "",
+    "sourceLocalUrl": "/sources/kofu-gyousei-hyouka-r2/r02kekkaichiran.xlsx",
     "items": [
       {
         "name": "放課後児童クラブ事業",
@@ -7260,7 +7260,7 @@ export const KOFU_EVALUATION_YEARS: KofuEvaluationYear[] = [
     "sourceTitle": "令和1年度 甲府市行政評価（事務事業評価）結果一覧",
     "sourceUrl": "https://web.archive.org/web/20260712142843/https://www.city.kofu.yamanashi.jp/zaise/documents/r01kekkaichiran.xls",
     "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/documents/r01kekkaichiran.xls",
-    "sourceLocalUrl": "",
+    "sourceLocalUrl": "/sources/kofu-gyousei-hyouka-r1/r01kekkaichiran.xls",
     "items": [
       {
         "name": "放課後児童クラブ事業",
@@ -9646,7 +9646,7 @@ export const KOFU_EVALUATION_YEARS: KofuEvaluationYear[] = [
     "sourceTitle": "平成30年度 甲府市行政評価（事務事業評価）結果一覧",
     "sourceUrl": "https://web.archive.org/web/20260712141434/https://www.city.kofu.yamanashi.jp/zaise/documents/30kekkaitiran.xls",
     "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/documents/30kekkaitiran.xls",
-    "sourceLocalUrl": "",
+    "sourceLocalUrl": "/sources/kofu-gyousei-hyouka-h30/30kekkaitiran.xls",
     "items": [
       {
         "name": "放課後児童クラブ事業",
@@ -11843,7 +11843,7 @@ export const KOFU_EVALUATION_YEARS: KofuEvaluationYear[] = [
     "sourceTitle": "平成29年度 甲府市行政評価（事務事業評価）結果一覧",
     "sourceUrl": "https://web.archive.org/web/20260712141740/https://www.city.kofu.yamanashi.jp/zaise/documents/kekkaitiran.xls",
     "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/documents/kekkaitiran.xls",
-    "sourceLocalUrl": "",
+    "sourceLocalUrl": "/sources/kofu-gyousei-hyouka-h29/kekkaitiran.xls",
     "items": [
       {
         "name": "幼稚園就園奨励事業",

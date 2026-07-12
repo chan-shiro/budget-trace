@@ -9,6 +9,8 @@ export const KOFU_R6_DETAIL: {
   byKan: Record<string, { name: string; v: number }[]>;
   sourceTitle: string;
   sourceUrl: string;
+  /** 自サーバー配信の原本コピー */
+  sourceLocalUrl: string;
   refLabel: string;
 } = {
   fyLabel: "令和6年度 普通会計決算",
@@ -158,5 +160,6 @@ export const KOFU_R6_DETAIL: {
 },
   sourceTitle: "令和6年度 市町村別決算状況調",
   sourceUrl: "https://web.archive.org/web/20260712083915/https://www.soumu.go.jp/main_content/001061671.xlsx",
+  sourceLocalUrl: "/sources/soumu-shichoson-kessan-r6/001061671.xlsx",
   refLabel: "001061671.xlsx 436行目",
 };

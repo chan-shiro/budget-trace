@@ -103,6 +103,9 @@ Claude Design のプロトタイプ（`project/予算トレース.dc.html`）を
   `id_` URL で raw と sha256 突合）③発行元の元 URL。
   **画面のエビデンスリンクは①を画面下のドロワーで開き**、②③はドロワー内の補助リンク。
   直リンクは中身だけ差し替えられ得るため主リンクにしない。
+  同期対象は PDF・HTML・Excel の全 raw（fixture 除く）。ドロワーは種別で分岐:
+  PDF=PdfViewer / HTML=HtmlViewer（スクリプト禁止サンドボックス＋最初の表へ自動スクロール）/
+  Excel=原本コピーのダウンロードカード。
   ドロワーの PDF 描画は **PDF.js（`PdfViewer.tsx`・pdfjs-dist 同梱、worker は
   sync-public-sources が `public/vendor/` へコピー）**。iframe のブラウザ内蔵ビューアは
   Safari で1ページ目しか描画されないため使わない。遅延描画（IntersectionObserver）＋

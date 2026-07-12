@@ -132,6 +132,8 @@ export interface SimilarEvidence {
   type: string;
   /** 一次資料へのリンク（Wayback コピー優先） */
   url: string;
+  /** 自サーバー配信の原本コピー */
+  localUrl: string;
   source: string;
   /** サムネイル枠に出す来歴（ファイル名・sha256・取得日） */
   thumb: string;
@@ -142,6 +144,7 @@ export const SIMILAR_EVIDENCE: SimilarEvidence[] = [
     "title": "令和6年度 市町村別決算状況調 都市別（1）概況",
     "type": "Excel",
     "url": "https://web.archive.org/web/20260712083739/https://www.soumu.go.jp/main_content/001061669.xlsx",
+    "localUrl": "/sources/soumu-shichoson-kessan-r6/001061669.xlsx",
     "source": "www.soumu.go.jp",
     "thumb": "001061669.xlsx ・ sha256 700fc73e7547cc7b… ・ 2026-07-11 取得"
   },
@@ -149,6 +152,7 @@ export const SIMILAR_EVIDENCE: SimilarEvidence[] = [
     "title": "令和6年度 市町村別決算状況調 都市別（3）目的別歳出内訳",
     "type": "Excel",
     "url": "https://web.archive.org/web/20260712083915/https://www.soumu.go.jp/main_content/001061671.xlsx",
+    "localUrl": "/sources/soumu-shichoson-kessan-r6/001061671.xlsx",
     "source": "www.soumu.go.jp",
     "thumb": "001061671.xlsx ・ sha256 a5928ea0f8134d93… ・ 2026-07-11 取得"
   }
