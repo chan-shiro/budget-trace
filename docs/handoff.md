@@ -94,6 +94,9 @@ Claude Design のプロトタイプ（`project/予算トレース.dc.html`）を
   （確定）行あり。総務省決算とのクロスチェックで +0.6〜3.5% の系統差（一般会計単純計 vs
   普通会計純計 — 説明可能）を確認・記録（data-sources.md §4）。
   HTML ページも取得後すぐ Wayback 登録する運用
+- **事務事業評価を9年度収録（H29〜R7・約1,500件）**: 形式4系統（data-sources.md §5）。
+  主な事業に「評価 A〜F」バッジ（予算名/事業名の**完全一致のみ**で紐付け — 曖昧マッチ禁止）。
+  詳細票（事業費決算額・成果指標）は公開サンプルのみ → 全量はリクエスト制の情報公開請求対象
 - **エビデンスの3層コピー体制**: ①自サーバー配信の原本コピー（`data/raw` の PDF を
   dev/build 前段の `pipeline/sync-public-sources.ts` が `public/sources/` へ同期。gitignore）
   ②Wayback コピー（`bun run pipeline:archive` が登録・`data/archives.json` に台帳化・

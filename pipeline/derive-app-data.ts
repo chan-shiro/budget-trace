@@ -720,6 +720,82 @@ console.log(
     .join(" / ")}）`,
 );
 
+// ============================================================================
+// 行政評価（事務事業評価）→ src/client/lib/evaluations.gen.ts
+// 実施計画事業ごとの総合評価（H29〜R7 の9年度・計約1,500件）。
+// 主な事業との紐付けは「予算名 = 予算書名」または「事業名の完全一致」のみ
+// （曖昧マッチはしない — 誤った紐付けは誤エビデンスになるため）。
+// ============================================================================
+{
+  const EVAL_YEARS = ["R7", "R6", "R5", "R4", "R3", "R2", "R1", "H30", "H29"] as const;
+  const evalYears = EVAL_YEARS.map((fy) => {
+    const srcId = `kofu-gyousei-hyouka-${fy.toLowerCase()}`;
+    const v = validationResultSchema.parse(readJson(validationPath(srcId)));
+    if (v.status !== "ok") throw new Error(`${srcId}: 検証が ${v.status} のため derive しません`);
+    const doc = anyParsedDocSchema.parse(readJson(parsedPath(srcId)));
+    if (doc.docType !== "project-evaluation") throw new Error(`${srcId}: project-evaluation ではありません`);
+    const meta = readRawMeta(srcId);
+    if (!meta) throw new Error(`${srcId}: raw-meta がありません`);
+    const src = findSource(srcId);
+    const file = meta.files[0]!;
+    const url = src.urls?.[0] ?? src.landingPage ?? "";
+    return {
+      fy,
+      fyLabel: `${fy.startsWith("H") ? `平成${fy.slice(1)}` : `令和${fy.slice(1)}`}年度`,
+      sourceTitle: src.title,
+      sourceUrl: wayback(url),
+      originUrl: url,
+      sourceLocalUrl: file.filename.toLowerCase().endsWith(".pdf") ? `/sources/${srcId}/${file.filename}` : "",
+      items: doc.facts.map((f) => ({
+        name: f.name,
+        grade: f.grade,
+        prevGrade: f.prevGrade,
+        budgetName: f.budgetName,
+        bu: f.bu,
+        ka: f.ka,
+        ref: `${file.filename}#${f.locator.page != null ? `p${f.locator.page}` : `${f.locator.sheet ?? ""}!${f.locator.row}`}`,
+      })),
+    };
+  });
+  const evalOut = `// このファイルは自動生成です。手で編集しないこと。
+// 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
+// 出典: 甲府市 行政評価（事務事業評価）結果一覧 H29〜R7（形式の年度差は docs/data-sources.md）
+
+export interface KofuEvaluationItem {
+  /** 実施計画掲載事業名 / 事務事業名 */
+  name: string;
+  /** 総合評価（A〜F、完了、－=評価なし） */
+  grade: string;
+  prevGrade: string | null;
+  /** 予算名（R6・R7 のみ。主な事業の予算書名と厳密一致で突合できる） */
+  budgetName: string | null;
+  bu: string | null;
+  ka: string | null;
+  /** 来歴（原資料ファイル内の位置） */
+  ref: string;
+}
+
+export interface KofuEvaluationYear {
+  fy: string;
+  fyLabel: string;
+  sourceTitle: string;
+  /** リンク用 URL（Wayback コピー優先） */
+  sourceUrl: string;
+  originUrl: string;
+  /** 自サーバー配信コピー（PDF のみ） */
+  sourceLocalUrl: string;
+  items: KofuEvaluationItem[];
+}
+
+/** 事務事業評価（新しい年度順） */
+export const KOFU_EVALUATION_YEARS: KofuEvaluationYear[] = ${JSON.stringify(evalYears, null, 2)};
+`;
+  writeFileSync(join(process.cwd(), "src/client/lib/evaluations.gen.ts"), evalOut, "utf8");
+  console.log(
+    `✓ 事務事業評価を導出 → src/client/lib/evaluations.gen.ts（${evalYears.map((y) => `${y.fy}:${y.items.length}`).join(" / ")}）`,
+  );
+}
+
 // ---- 主な事業一覧（複数年度）→ src/client/lib/projects.gen.ts ----------------
 {
   const projectYears = budgetYears

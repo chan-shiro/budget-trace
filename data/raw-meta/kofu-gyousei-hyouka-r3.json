@@ -1,0 +1,12 @@
+{
+  "sourceId": "kofu-gyousei-hyouka-r3",
+  "files": [
+    {
+      "filename": "hyoukahyou2.xlsx",
+      "sha256": "2c4f976ea3115f0f4ee004ca84fe5980e3f8fef2bd8ac1b6b91a698ba42d5bf3",
+      "bytes": 153472,
+      "fetchedAt": "2026-07-12T13:54:20.886Z",
+      "fetchedFrom": "https://www.city.kofu.yamanashi.jp/zaise/documents/hyoukahyou2.xlsx"
+    }
+  ]
+}

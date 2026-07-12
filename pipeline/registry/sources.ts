@@ -243,6 +243,34 @@ export const SOURCES: SourceEntry[] = [
     license: "甲府市ウェブサイト掲載資料（WARP 経由の保存版。利用条件は両者のサイト参照）",
     parser: "kofu-kessan-syousai",
   },
+  // 甲府市の行政評価（事務事業評価）結果一覧。実施計画事業ごとの総合評価（A〜F）。
+  // 年度で形式・ファイル種別が大きく違う（parserOptions.format）。
+  // 詳細票（事業費決算額・成果指標つき）は公開がサンプルのみ → 全量は情報公開請求
+  // （リクエスト制: data-strategy.md）。評価年度 = 実施計画の年度。
+  ...([
+    ["r7", "R7", "7kouhyouyou2.xlsx", "r7gyoseihyouka.html", { format: "form-plus-plan" }],
+    ["r6", "R6", "6kouhyouyou6.xlsx", "r6gyoseihyouka.html", { format: "form-plus-plan" }],
+    ["r5", "R5", "kouhyouyoudeta5-4.pdf", "r5gyouseihyouka.html", { format: "form-pdf", pages: { from: 1, to: 11 } }],
+    ["r4", "R4", "kouhyouyoudeta3-4.pdf", "r4gyouseihyouka.html", { format: "form-pdf", pages: { from: 1, to: 10 } }],
+    ["r3", "R3", "hyoukahyou2.xlsx", "r3gyouseihyouka.html", { format: "hyouka-form" }],
+    ["r2", "R2", "r02kekkaichiran.xlsx", "r2gyouseihyouka.html", { format: "list-simple" }],
+    ["r1", "R1", "r01kekkaichiran.xls", "r1gyouseihyouka.html", { format: "list-simple" }],
+    ["h30", "H30", "30kekkaitiran.xls", "h30gyouseihyouka.html", { format: "list-simple" }],
+    ["h29", "H29", "kekkaitiran.xls", "keikaku.html", { format: "list-simple" }],
+  ] as const).map(([suffix, fy, file, page, options]): SourceEntry => ({
+    id: `kofu-gyousei-hyouka-${suffix}`,
+    title: `${fy.startsWith("H") ? `平成${fy.slice(1)}` : `令和${fy.slice(1)}`}年度 甲府市行政評価（事務事業評価）結果一覧`,
+    publisher: "甲府市",
+    url: null,
+    urls: [`https://www.city.kofu.yamanashi.jp/zaise/documents/${file}`],
+    landingPage: `https://www.city.kofu.yamanashi.jp/zaise/${page}`,
+    kind: file.endsWith(".pdf") ? "pdf" : "excel",
+    fiscalYear: fy,
+    scope: "甲府市（実施計画事業）",
+    license: "甲府市ウェブサイト掲載資料（利用条件は同サイト参照）",
+    parser: "kofu-gyousei-hyouka",
+    parserOptions: options as Record<string, unknown>,
+  })),
   {
     // 甲府市の財政事情の公表（地方自治法 §243の3）。年2回、款別の予算現額と
     // 収入/支出済額（＝執行状況）が出る。直リンクは公表のたびに同じパスへ

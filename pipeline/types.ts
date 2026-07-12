@@ -21,7 +21,7 @@ export const sourceEntrySchema = z.object({
   landingPage: z.url().optional(),
   kind: z.enum(["excel", "csv", "pdf", "page"]),
   /** 会計年度（例: "R6"） */
-  fiscalYear: z.string().regex(/^R\d+$/),
+  fiscalYear: z.string().regex(/^[RH]\d+$/),
   scope: z.string(),
   license: z.string(),
   /** pipeline/parsers/index.ts に登録したパーサのキー */
@@ -262,10 +262,52 @@ export const budgetExecutionDocSchema = z.object({
 });
 export type BudgetExecutionDoc = z.infer<typeof budgetExecutionDocSchema>;
 
+// ---- [2'''] parsed: 行政評価（事務事業評価） -----------------------------------
+// 実施計画事業ごとの総合評価（A〜F）。年度により形式が違う（docs/data-sources.md）。
+// 評価年度 = 実施計画の年度（例: R6 評価 = 第9次実施計画 = R6 年度事業）。
+export const projectEvaluationFactSchema = z.object({
+  /** 実施計画掲載事業名 / 事務事業名 */
+  name: z.string().min(1),
+  /** 総合評価（A〜F、完了。新規等で評価なしは "－"） */
+  grade: z.string().regex(/^([A-F－]|完了)$/),
+  /** 前回評価（無い年度・新規は null） */
+  prevGrade: z.string().nullable(),
+  /** 評価点の合計（R3 形式のみ） */
+  scoreTotal: z.number().nullable(),
+  /** 担当（部・課）。無い形式は null */
+  bu: z.string().nullable(),
+  ka: z.string().nullable(),
+  /** 施策（一覧形式のみ） */
+  shisaku: z.string().nullable(),
+  /** 区分（主要事業/一般事業など。無い形式は null） */
+  kubun: z.string().nullable(),
+  /** 事業の目的（様式形式のみ） */
+  purpose: z.string().nullable(),
+  /** 予算名（実施計画一覧シートから join。R6・R7 のみ）— 主な事業の予算書名と突合できる */
+  budgetName: z.string().nullable(),
+  locator: locatorSchema,
+});
+export type ProjectEvaluationFact = z.infer<typeof projectEvaluationFactSchema>;
+
+export const projectEvaluationDocSchema = z.object({
+  docType: z.literal("project-evaluation"),
+  sourceId: z.string(),
+  parser: z.string(),
+  parserVersion: z.string(),
+  parsedAt: z.string(),
+  /** 評価年度（= 実施計画の年度） */
+  fiscalYear: z.string(),
+  /** 資料の様式・実施計画次数などの注記 */
+  formNote: z.string(),
+  facts: z.array(projectEvaluationFactSchema),
+});
+export type ProjectEvaluationDoc = z.infer<typeof projectEvaluationDocSchema>;
+
 /** parse/validate が受け取り得る全ドキュメント型 */
 export const anyParsedDocSchema = z.union([
   budgetBookDocSchema,
   budgetExecutionDocSchema,
+  projectEvaluationDocSchema,
   parsedDocSchema,
 ]);
 export type AnyParsedDoc = z.infer<typeof anyParsedDocSchema>;

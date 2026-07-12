@@ -313,7 +313,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                               <div style={S("display:flex; align-items:baseline; justify-content:space-between; gap:14px;")}>
                                 <span style={S("display:inline-flex; align-items:center; gap:8px; min-width:0;")}>
                                   {rp.kubun && <span style={S(`font-size:10.5px; font-weight:700; border-radius:999px; padding:1px 9px; white-space:nowrap; color:${rp.kubun === "新規" ? "#0F76A3" : "#C25400"}; border:1px solid ${rp.kubun === "新規" ? "#B9E0F2" : "#EFD4BE"};`)}>{rp.kubun}</span>}
-                                  <span style={S("font-size:14px; font-weight:600;")}>{rp.name}</span>
+                                  <span style={S("font-size:14px; font-weight:600;")}>{rp.name}</span>{rp.evaluation && <span title={`事務事業評価 ${rp.evaluation.grade}（${rp.evaluation.fyLabel}・出典: ${rp.evaluation.sourceTitle} ${rp.evaluation.ref}）`} style={S("font-size:10.5px; font-weight:700; color:#5C6B77; border:1px solid #C6D2DA; border-radius:6px; padding:1px 7px; white-space:nowrap; font-family:'IBM Plex Mono',monospace;")}>評価 {rp.evaluation.grade}</span>}
                                 </span>
                                 <span style={S("font-family:'IBM Plex Mono',monospace; font-size:13px; white-space:nowrap;")}>{rp.amountFmt}</span>
                               </div>
@@ -442,7 +442,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                           <span>
                             <span style={S("display:flex; align-items:center; gap:8px;")}>
                               {tp.kubun && <span style={S(`font-size:10.5px; font-weight:700; border-radius:999px; padding:1px 9px; white-space:nowrap; color:${tp.kubun === "新規" ? "#0F76A3" : "#C25400"}; border:1px solid ${tp.kubun === "新規" ? "#B9E0F2" : "#EFD4BE"};`)}>{tp.kubun}</span>}
-                              <span style={S("font-size:14.5px; font-weight:700; color:#14181C;")}>{tp.name}</span>
+                              <span style={S("font-size:14.5px; font-weight:700; color:#14181C;")}>{tp.name}</span>{tp.evaluation && <span title={`事務事業評価 ${tp.evaluation.grade}（${tp.evaluation.fyLabel}・出典: ${tp.evaluation.sourceTitle} ${tp.evaluation.ref}）`} style={S("font-size:10.5px; font-weight:700; color:#5C6B77; border:1px solid #C6D2DA; border-radius:6px; padding:1px 7px; white-space:nowrap; font-family:'IBM Plex Mono',monospace;")}>評価 {tp.evaluation.grade}</span>}
                             </span>
                             <span style={S("display:block; font-size:11.5px; color:#5C6B77; margin-top:2px; line-height:1.6;")}>{tp.summary}</span>
                           </span>

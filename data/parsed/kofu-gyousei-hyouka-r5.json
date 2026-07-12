@@ -1,0 +1,2155 @@
+{
+  "docType": "project-evaluation",
+  "sourceId": "kofu-gyousei-hyouka-r5",
+  "parser": "kofu-gyousei-hyouka",
+  "parserVersion": "0.1.0",
+  "parsedAt": "2026-07-12T13:57:21.914Z",
+  "fiscalYear": "R5",
+  "formNote": "form-pdf",
+  "facts": [
+    {
+      "name": "放課後児童クラブ事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "子ども",
+      "ka": "子ども保育",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "放課後児童クラブは、児童が帰宅しても保護者が労働等により家庭にいない児童を対象に放課後等において、学校施設や児童館等を利用して、適切な遊び及び生活の場を与え、児童の健全な生活と豊かな心の育成を目指す。補助割合：国1/3県1/3",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "教育･保育施設等運営給付事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "子ども",
+      "ka": "子ども保育",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "保育所、認定こども園、小規模保育事業所等（以下「教育・保育施設等」）の円滑な運営を図るために、施設型給付費等を交付するほか、地域子ども・子育て支援事業に対する補助金等の交付及び幼児期の教育及び保育等を行う施設等の利用に関する施設等利用費を交付する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "幼児教育施設利用費等助成事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "子ども",
+      "ka": "子ども保育",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "子どもを私学幼稚園に就園させる施設等利用給付認定を受けた保護者に対して、入園料・保育料、預かり保育及び実費徴収となる副食費相当額の助成を行うことにより、利用者の経済的支援を行うとともに子育て支援の推進と幼児教育の振興を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "すこやか子育て医療費助成事業",
+      "grade": "B",
+      "prevGrade": "A",
+      "scoreTotal": null,
+      "bu": "子ども",
+      "ka": "子育て支援",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "少子化対策及び子育て支援策の一環として、子どもにかかる医療費の助成を行い、子どもの健やかな成長に寄与するとともに、子どもを持つ家庭の経済的な負担の軽減を目的とする。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "ひとり親家庭等医療費助成事業",
+      "grade": "B",
+      "prevGrade": "A",
+      "scoreTotal": null,
+      "bu": "子ども",
+      "ka": "子育て支援",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "ひとり親家庭等に対し、医療費助成を行うことによって、経済的かつ精神的負担を軽減し、ひとり親家庭等の保健の向上と福祉の増進を図ることを目的とする。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "多子世帯等への利用者負担額（保育料）軽減事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "子ども",
+      "ka": "子ども保育",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "本市独自の保育料軽減制度を設け、子育て世代の経済的な負担の軽減を図ることにより、安心して子どもを産み育てられる環境を目指す。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "子育て総合相談窓口運営事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "子ども",
+      "ka": "子育て支援",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "妊娠期から子育て期における相談体制及び支援体制を確立し、子育て全般においての支援を行う。また、各種相談等への助言、子育てサービスの情報提供を行う。さらに、児童虐待通告に基づく、調査・指導・援助活動など、児童相談所や民生委員児童委員協議会等の関係機関と連携して児童虐待の予防、要保護児童の早期発見、早期対応に努める。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "母子保健事業",
+      "grade": "B",
+      "prevGrade": "AB",
+      "scoreTotal": null,
+      "bu": "子ども福保",
+      "ka": "母子保健母子健康",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "母子保健法等に基づき、妊産婦及び乳幼児の健康の保持及び増進を図るため、保健指導、健康診査等を実施し、母と子の健康づくりを推進するとともに、妊娠期から子育て期までの切れ目のない支援の充実を図る。保健師等の資格を持つ専門職が女性の健康に関する相談指導を行うことで、健康の保持増進を図る。また、母子保健推進会議や母子保健研修会を実施し、母子保健に係る課題について関係機関と情報共有するとともに、連携強化を推進する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "子ども応援事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "子ども",
+      "ka": "子ども応援",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "子ども応援センターを事業拠点として、地域における支援者となりうる担い手を育成し、支援を必要とする子どもにとって効果的、かつ最も適した支援が行える仕組みづくりを行う。市内小中学校及び甲府市小中学校PTA連合会と連携し、子育て家庭の負担軽減、資源の有効・循環利用を目的に子育て支援及び環境リサイクルの両観点から、学用品等のリユース事業を展開する。次代を担う子どもたちの無限の可能性を引き出し、夢や希望をもって健やかにたくましく成長していけるよう、多くの体験機会を創出するとともに、地域ぐるみで子育ちを応援する機運の醸成や、子育ちに関する取組のPRを図るため、子ども応援者・子育ち応援団体等と連携・協力する中で、スポーツ、文化・芸術など幅広い分野での体験機会を子どもたちに提供する場を創出する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "放課後子供教室推進事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "教育",
+      "ka": "生涯学習",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "放課後や週末等に小学校の特別教室等を活用して、安全・安心な子どもの活動拠点（居場所）を設け、地域の方々の参画を得て、子どもたちに勉強やスポーツ・文化芸術活動、地域住民との交流活動等の機会を提供することにより、子どもたちが地域社会の中で、心豊かで健やかに育まれる環境づくりを推進する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "子ども運動遊び事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "子ども",
+      "ka": "子ども応援",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "子どもを取り巻く環境は変化し、日常的に体を動かす機会が少なくなっていることから、本市の子どもの運動能力は、スポーツ庁の全国体力・運動能力調査結果によると、近年、緩やかな回復傾向を示すものの、全国・県の平均値を下回っている。こうした現状を踏まえ、文部科学省の「幼児期運動指針」において、3歳から6歳までの幼児期に遊びを通じて、多様な動きを経験することが、運動能力の向上や健全な心身の発育に資するとされていることから、子どもの「丈夫な身体」と「しなやかな心」を養い、子どもの健やかな成長に繋がるよう、子どもの運動遊びを推進する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "小学校外国語活動推進事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "教育",
+      "ka": "学校教育",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "外国語を通じて、言語や文化について理解を深め、積極的にコミュニケーションを図ろうとする態度の育成を図り、外国語の音声や基本的な表現に慣れ親しませながら、コミュニケーション能力の基礎を養う。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "外国人講師による英語指導事業（中学校）",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "教育",
+      "ka": "学校教育",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "外国語を通じて、言語や文化に対する理解を深め、積極的にコミュニケーションを図ろうとする態度の育成を図り、聞くこと、話すこと、読むこと、書くことなどのコミュニケーション能力の基礎を養う。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "サポートティーチャー事業(小学校)",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "教育",
+      "ka": "学校教育",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "教育支援ボランティアや特別支援教育支援員、日本語指導員を配置することで、よりきめ細かな教育を充実し、児童の健全育成と学力の向上を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "サポートティーチャー事業(中学校)",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "教育",
+      "ka": "学校教育",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "教育支援ボランティアや特別支援教育支援員、部活動指導員を配置することで、よりきめ細かな教育を充実し、生徒の健全育成と学力の向上を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "新しい時代を担う人づくり基金事業(甲府の教育推進事業）",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "教育",
+      "ka": "学校教育",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "新しい時代を担う人づくりを目指して、「甲府の教育」の全体像を構築するとともに、創造性豊かな人づくりに資するため、調査・研究及び検討し、推進を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "学校危機管理体制整備事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "教育",
+      "ka": "学校教育",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "学校内外における危機管理体制を整備するとともに、安全確保等における組織体制の強化を図り、緊急事案に対応する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "学校給食事業（小学校）",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "教育",
+      "ka": "学事",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "学校給食を教育活動の一環として児童に提供し、子どもたちの食生活・食教育に対する指導を行い、正しい食事マナー、健康的な食習慣・食生活等を身につけさせる。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "学校給食事業（中学校）",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "教育",
+      "ka": "学事",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "学校給食を教育活動の一環として生徒に提供し、子どもたちの食生活・食教育に対する指導を行い、正しい食事マナー、健康的な食習慣・食生活等を身につけさせる。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "小学校老朽化リニューアル事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "教育",
+      "ka": "教育施設",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "財政負担の軽減を図る中で、年次的かつ効率的に老朽化した衛生設備等の更新を図ることにより、教育施設の良好なトイレ環境を整備することを目的とする。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "中学校老朽化リニューアル事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "教育",
+      "ka": "教育施設",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "財政負担の軽減を図る中で、年次的かつ効率的に老朽化した衛生設備等の更新を図ることにより、教育施設の良好なトイレ環境を整備することを目的とする。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "教材・情報環境整備事業（小学校）",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "教育",
+      "ka": "学事",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "学習指導要領に基づき、授業に必要な教材・教具の整備、充実を図るとともに、ICT機器及び教育用コンテンツ（各教科等の授業で活用できる動画、写真、音楽などのデジタル素材）の活用等による情報教育環境を整備する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "教材・情報環境整備事業（中学校）",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "教育",
+      "ka": "学事",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "学習指導要領に基づき、授業に必要な教材・教具の整備、充実を図るとともに、ICT機器及び教育用コンテンツ（各教科等の授業で活用できる動画、写真、音楽などのデジタル素材）の活用等による情報教育環境を整備する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 3
+      }
+    },
+    {
+      "name": "外国人講師による英語指導事業（高校）",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "教育",
+      "ka": "学校教育",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "外国語を通じて、言語や文化に対する理解を深め、積極的にコミュニケーションを図ろうとする態度の育成を図り、聞くこと、話すこと、読むこと、書くことなどのコミュニケーション能力の基礎を養う。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 3
+      }
+    },
+    {
+      "name": "青少年健全育成事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "子ども",
+      "ka": "子ども応援",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "青少年ジュニアリーダーの活動や子どもクラブ等の青少年育成団体の活動の促進を通じて、青少年の自主性と社会性の向上を図る。青少年の健全な育成のため、青少年非行防止活動を推進するとともに、青少年育成センターの充実・強化を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 3
+      }
+    },
+    {
+      "name": "生涯学習振興事業",
+      "grade": "B",
+      "prevGrade": "コロナ禍にて判定不可",
+      "scoreTotal": null,
+      "bu": "教育",
+      "ka": "生涯学習",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "いつでもどこでもだれもが学べる環境づくりを行うとともに、生涯学習を通じて、市民だれもが生きる喜びと希望を持ち、人と地域がつながり、未来に向かって人生の充実を感じて暮らすことのできるまちづくりを推進する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 3
+      }
+    },
+    {
+      "name": "図書館管理運営事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "教育",
+      "ka": "図書館",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "地域社会の知の砦として市民の知る自由を保障し、生涯学習、地域振興に寄与する「役に立つ図書館」を目指し、効率的な維持管理・運営を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 3
+      }
+    },
+    {
+      "name": "こうふ開府500年レガシー事業",
+      "grade": "B",
+      "prevGrade": "R4新規",
+      "scoreTotal": null,
+      "bu": "教育",
+      "ka": "生涯学習",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "こうふ開府500年記念事業を契機に生まれた「甲府ラーニング・スピーチ」「こうふドリームキャンパス」「私の地域・歴史探訪」の3つの事業を「こうふ開府500年レガシー事業」として、12月20日の「こうふ開府の日」とともに、郷土愛の醸成や夢を育む事業として継続的に実施していく。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 3
+      }
+    },
+    {
+      "name": "スポーツ振興事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "教育",
+      "ka": "スポーツ",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "市民スポーツ普及のための事業及び競技力向上を目的としたスポーツ選手の育成強化のための事業を実施する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 3
+      }
+    },
+    {
+      "name": "緑が丘スポーツ公園整備事業費",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "まち",
+      "ka": "公園緑地",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "市民の健康増進・体力づくりに寄与し、生涯スポーツ活動の拠点となるよう、老朽化の著しい緑が丘スポーツ公園の再整備を計画的に行う。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 3
+      }
+    },
+    {
+      "name": "文化芸術推進事業",
+      "grade": "B",
+      "prevGrade": "コロナ禍にて判定不可",
+      "scoreTotal": null,
+      "bu": "教育",
+      "ka": "生涯学習",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "優れた文化芸術に接する機会の提供及び創作活動の場の充実に取組むことにより、市民に豊かな感性が育成されることを目的とする。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 3
+      }
+    },
+    {
+      "name": "史跡武田氏館跡整備事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "教育",
+      "ka": "歴史文化財",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "戦国大名居館と城下町の遺構が良好な状態で残っている武田氏館跡とその周辺一帯を開発から守り、史実に基づいた景観整備を進めるとともに、その多角的な活用を通じて、市民文化の向上やふるさとに誇りをもった人材の育成、地域の賑わいの創出などに努める。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 3
+      }
+    },
+    {
+      "name": "文化財保護事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "教育",
+      "ka": "歴史文化財",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "甲府市内の埋蔵文化財・一般文化財の保護・保存を図り、未来へ継承するとともに、かけがえのない歴史的文化遺産の啓発・普及と郷土愛の醸成に努める。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 3
+      }
+    },
+    {
+      "name": "人権推進事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "市民",
+      "ka": "人権男女参画",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "お互いを理解しながら個人が尊重される社会に向けた、人権意識の向上を目的とする。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 3
+      }
+    },
+    {
+      "name": "平和都市宣言事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "市民",
+      "ka": "総務",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "市民と行政の協働により、次世代へ戦争の惨禍、平和の大切さ、命の尊さを語り継ぐとともに、人類共通の願いである核兵器廃絶を基調とした恒久平和を希求する運動を、恒常的・継続的に推進することにより、市民の「平和意識」の高揚を図ることを目的とする。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 3
+      }
+    },
+    {
+      "name": "男女共同参画推進事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "市民",
+      "ka": "人権男女参画",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "男女が社会の平等な構成員として、自らの意思によって職場・学校・地域・その他のあらゆる分野における活動に参画する機会が確保され、男女が均等に政治的、経済的、社会的及び文化的利益を享受することができ、かつ共に責任を担う生き生きとした豊かで活力ある「男女共同参画社会」を実現する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 4
+      }
+    },
+    {
+      "name": "国際交流事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "市長",
+      "ka": "国際交流",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "姉妹都市等と教育、文化や産業分野等での交流を継続的に実施するとともに、市民レベルでの交流機会を提供、またその活動を支援することにより、市民の国際的な意識を醸成する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 4
+      }
+    },
+    {
+      "name": "新しい時代を担う人づくり基金事業(姉妹・友好都市教育交流事業)",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "教育",
+      "ka": "学校教育",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "新しい時代を担う人づくりを目指して、「甲府の教育」の全体像を構築するとともに、創造性豊かな人づくりに資するため、調査・研究及び検討し、推進を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 4
+      }
+    },
+    {
+      "name": "多文化共生推進事業",
+      "grade": "B",
+      "prevGrade": "コロナ禍にて判定不可",
+      "scoreTotal": null,
+      "bu": "市民",
+      "ka": "市民",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "「甲府市多文化共生推進計画2021」に基づき、多文化共生事業の推進を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 4
+      }
+    },
+    {
+      "name": "商工業推進事業",
+      "grade": "B",
+      "prevGrade": "A",
+      "scoreTotal": null,
+      "bu": "産業",
+      "ka": "商工",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "・魅力ある商店街の形成及び商業振興のため、創意工夫をこらした商店街活動やイベント等に対する支援により、魅力と活気あふれる商店街の創出を図る。・地域雇用、地域資源の活用へ繋げるため、創業支援事業者と連携し、創業者に対する総合的な支援に取り組み、創業者を増やす。・「甲府市中小企業・小規模企業振興条例」に基づく諸施策を推進し、中小企業等の振興を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 4
+      }
+    },
+    {
+      "name": "融資対策事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "産業",
+      "ka": "商工",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "・市からの預託金・寄託金を原資に金融機関から、中小企業等に必要な事業資金の融資を行うことを通じ、中小企業の経営及び構造の改善並びに経営基盤の強化を促進し、ひいては本市商工業の健全な発展に資することを目的とする。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 4
+      }
+    },
+    {
+      "name": "産業立地等推進事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "産業",
+      "ka": "産業立地",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "地域経済の活性化や雇用機会の拡大等を図り、本市の産業を振興していくため、新規立地企業等への優遇制度の拡充、工業用地の情報提供、工場の緑地面積率の緩和、ワンストップサービス化など、立地企業への支援を行う中で産業立地を推進する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 4
+      }
+    },
+    {
+      "name": "地場産業振興対策事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "産業",
+      "ka": "商工",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "・地域産業の発展の担い手である地場産業・伝統産業を支援し、産地基盤の確立と販路拡大並びに業界の振興及び育成を図る。・地域資源等を活用した特色ある産品や商品のブランド化に取り組み、地場産業の発展と地域の活性化を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 4
+      }
+    },
+    {
+      "name": "農業経営基盤強化促進対策事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "産業",
+      "ka": "就農支援",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "・農業者及び就農希望者をソフト・ハードの両面で支援することにより、プロファーマー、認定農業者及び新規就農者の育成・確保を図る。・耕作放棄地を再生し、新規就農者や認定農業者に集積し、農地の有効活用を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 4
+      }
+    },
+    {
+      "name": "産地保全強化対策事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "産業",
+      "ka": "農政",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "・甲府市農業振興計画の実現に向け、甲府ブランド認定制度による農産物のブランド化に取り組むとともに、共選所等の共同利用施設整備への支援や中心的な担い手への農地集積を推進し、産地の保全と強化を図る。・併せて、農業振興地域の整備に関する法律に基づき、甲府農業振興地域整備計画の適正な管理を行い、農業生産の基盤である優良農地の保全と活用を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 4
+      }
+    },
+    {
+      "name": "森づくり推進事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "産業",
+      "ka": "林政",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "森林の公益的機能の高度発揮を図るため、市有林については適切な水源林整備を行い、民有林については森林環境譲与税の活用等による適切な森林整備を行うための体制整備を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 4
+      }
+    },
+    {
+      "name": "林道維持管理事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "産業",
+      "ka": "林政",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "市営林道及び作業路の適正な維持管理により、林業振興と地域住民の生活道路の確保を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 4
+      }
+    },
+    {
+      "name": "雇用促進対策事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "産業",
+      "ka": "雇用創生",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "関係機関と連携を図りながら、地域の企業及び住民のニーズに沿った就労支援事業を実施し、若年者から高年齢者に至るまでの求職者に対する就労環境の整備を行う。社会の変遷に伴い変化する地域の労働力需要や就業ニーズに対応するため、令和４年度に山梨労働局と協定を締結し、雇用対策に関する施策等を一体的に行うこととした。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 4
+      }
+    },
+    {
+      "name": "地方卸売市場運営事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "産業",
+      "ka": "市場",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "「安全で安心な生鮮食料品の安定供給」と「健全で効率的な市場運営の継続」を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 4
+      }
+    },
+    {
+      "name": "地方卸売市場施設整備事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "産業",
+      "ka": "市場",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "施設の老朽化対策や生鮮食料品の品質・衛生管理対策を行う。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 5
+      }
+    },
+    {
+      "name": "まつり推進事業",
+      "grade": "B",
+      "prevGrade": "コロナ禍にて判定不可",
+      "scoreTotal": null,
+      "bu": "産業",
+      "ka": "観光",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "祭りを通じて県内外から多くの観光客を集客し、交流人口の増加を図る。また、祭りに多くの市民が参加することにより、市民のふるさと意識の醸成や参加者の自発的意識の醸成と市民連帯感の高揚を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 5
+      }
+    },
+    {
+      "name": "観光開発事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "産業",
+      "ka": "観光",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "本市の観光ホームページをはじめ、様々な媒体を用いる中で、積極的かつ戦略的に観光プロモーションを展開することにより、本市の観光資源を広くアピールし、国内外からの誘客を促進する。また、本市の観光資源の磨き上げと、新たな視点からの発掘に努め、観光振興を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 5
+      }
+    },
+    {
+      "name": "中心市街地商業等活性化事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "産業",
+      "ka": "中心市街地振興",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "市民、商業者、行政、その他の関係機関等が連携し、中心市街地活性化基本計画及び商工業振興指針に基づく事業や、まちにとって効果的な事業を展開し、中心市街地における商業等の活性化を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 5
+      }
+    },
+    {
+      "name": "甲府城周辺地域活性化計画整備事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "まち",
+      "ka": "都市計画",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "「お城がつなぐまち甲府城周辺地域」をコンセプトとし、市街地形成の経過を踏まえ、公共施設跡地を活用する中で、甲府城がまちのシンボルとなり、甲府城を中心にまちと人、人と人がつながり、様々な交流を通じて賑わいを取り戻し、歴史・文化が感じられる空間づくりにより甲府市中心街の活性化につなげることを目指す。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 5
+      }
+    },
+    {
+      "name": "春日本通り線整備事業",
+      "grade": "B",
+      "prevGrade": "R4新規",
+      "scoreTotal": null,
+      "bu": "まち",
+      "ka": "道路河川",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "甲府駅周辺と遊亀公園・附属動物園を結ぶ、快適で高質な道路空間を整備することにより、区域内全体の賑わいの連続性を高め、かつ面的な広がりを図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 5
+      }
+    },
+    {
+      "name": "移住・定住促進事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "企画",
+      "ka": "自治体連携",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "東京圏などからの移住・定住を促進して、将来にわたり地域の活力を維持する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 5
+      }
+    },
+    {
+      "name": "南北地域振興事業",
+      "grade": "B",
+      "prevGrade": "コロナ禍にて判定不可",
+      "scoreTotal": null,
+      "bu": "産業",
+      "ka": "林政",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "・帯那地域をはじめとした本市北部地域が有する資源や魅力を活用する中で、地域の振興を図ることを目的に、「創作の森おびな」の適切な管理・運営を行う。・南北地域おこし協力隊事業の実施をすることにより、南北地域の振興に係る新たな担い手の育成を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 5
+      }
+    },
+    {
+      "name": "防災対策整備事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "市長",
+      "ka": "防災企画地域防災",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "災害に対する市民意識の高揚や自助、共助、公助の連携による地域防災力の向上を図り、災害に強いまちづくりを進める。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 5
+      }
+    },
+    {
+      "name": "一般河川改修事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "まち",
+      "ka": "道路河川",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "普通河川、生活関連水路の改修整備を行い、住民の生活環境の向上及び浸水被害の軽減を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 5
+      }
+    },
+    {
+      "name": "危機管理対策事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "市長",
+      "ka": "危機管理",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "安全で安心できる地域社会の実現のため、危機事態の未然防止、又は発生時における被害の軽減を図ることを目的とする。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 5
+      }
+    },
+    {
+      "name": "消火栓設置事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "消防",
+      "ka": "警防",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "消火栓は、火災等が発生した場合に、消防隊が使用する消防水利の中でも、最も有効な水利であるとともに、市民が行う初期消火活動においても活用できることから、市街地及び周辺地域に消火栓を設置し、災害による被害の軽減を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 5
+      }
+    },
+    {
+      "name": "消防施設等整備事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "消防",
+      "ka": "警防",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "発生が懸念されている東海地震等の大きな揺れにより、水道管が破損するなどし、消火栓からの有効な水量が見込めなくなることが考えられているため、震災時の二次的に発生する火災への備えとして、最も有効な耐震性貯水槽を消防水利整備計画に基づき、整備する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 5
+      }
+    },
+    {
+      "name": "非常備消防事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "消防",
+      "ka": "人事警防",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "消防団を中核とした地域防災力の充実強化を推進し、地域住民が安全で安心して暮らせる災害に強いまちづくりのために、消防団員の確保に向けた各種対策及び消防団に係る各種資機材・車両の更新・整備、並びに年額報酬・出動報酬等の個人支給を行う。防火水槽について、消防水利整備計画に基づき、災害時に有効活用できるよう整備するとともに、不具合の生じた防火水槽を計画的に補修する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 6
+      }
+    },
+    {
+      "name": "交通安全対策事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "市民",
+      "ka": "総務",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "正しい交通ルールと交通マナーの徹底、及び交通安全意識の高揚を図るとともに、交通安全施設の整備を推進して、交通事故等の減少を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 6
+      }
+    },
+    {
+      "name": "安全安心街づくり事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "市長",
+      "ka": "危機管理",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "安全で安心できる地域社会の実現のため、防犯ボランティア活動等の促進と犯罪が発生しにくいまちづくりを推進する。また、平常時から緊急事態に備えた対応を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 6
+      }
+    },
+    {
+      "name": "街路灯助成事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "市民",
+      "ka": "協働推進",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "防犯及び交通安全対策並びに環境への配慮のために、自治会が維持管理している街路灯に要する経費（電気料、設置費、補修費及びLED灯交換費）の補助を行い、自治会負担の軽減を図り、安全で明るい地域社会の形成を目指す。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 6
+      }
+    },
+    {
+      "name": "学校安全安心推進事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "教育",
+      "ka": "学事",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "全国的に、通学途中に見知らぬ人に声をかけられる、校内に不審者が侵入するなど、子どもたちが事件に巻き込まれそうになるケースが増えていることや、自然災害による大きな被害が発生しており、子どもたちを取り巻く環境は厳しさと危険度を増していることから、学校内外における安全確保、その他の緊急事態における体制等の強化を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 6
+      }
+    },
+    {
+      "name": "交通安全施設整備事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "まち",
+      "ka": "道路河川",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "市民の交通安全の確保及び交通事故防止を目的に、甲府市が管理する道路における交通安全施設の整備を図り、交通環境を改善する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 6
+      }
+    },
+    {
+      "name": "消費者啓発育成事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "市民",
+      "ka": "総務",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "複雑・多様化している消費者問題について、最新の消費生活情報の提供や消費者意識の啓発を図り、消費者の自立支援や利益擁護、トラブルの未然防止に努める。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 6
+      }
+    },
+    {
+      "name": "生きがい対策事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "福保",
+      "ka": "総務",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "高齢者が知識と経験を生かしながら、住み慣れた地域で、生きがいをもって生活していけるよう、社会参加を促進するため、シニアクラブ等への助成を行う。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 6
+      }
+    },
+    {
+      "name": "地域支援事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "福保",
+      "ka": "総務健康政策地域保健介護保険",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "高齢者が健やかにいきいきと暮らすことができるよう、地域包括ケア体制を確立する中で、生活支援や介護のサービスを適切に提供するとともに、介護予防や認知症対策を推進するなど、高齢者福祉の充実を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 6
+      }
+    },
+    {
+      "name": "成年後見制度普及促進事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "福保",
+      "ka": "総務",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "高齢者が、住み慣れた地域で尊厳ある生活を続けるために、成年後見制度の利用支援、市民後見人の養成等、権利擁護に取り組むための環境づくりを整備するとともに、甲府市成年後見制度利用促進基本計画の推進を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 6
+      }
+    },
+    {
+      "name": "重度心身障害者医療費助成事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "福保",
+      "ka": "障がい福祉",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "重度心身障がい者及びその保護者の精神的かつ経済的負担を軽減し、重度心身障がい者の健康の維持・増進を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 6
+      }
+    },
+    {
+      "name": "自立支援サービス事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "福保",
+      "ka": "障がい福祉",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "障害者総合支援法に基づく、障がい者等を対象とした障害福祉サービスに係る支給決定及び受給者管理を行うことで、地域社会における共生の実現を目指す。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 6
+      }
+    },
+    {
+      "name": "障害者のすみよいまちづくり事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "福保",
+      "ka": "障がい福祉",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "障がい者の社会参加の促進と生活圏の拡大を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 7
+      }
+    },
+    {
+      "name": "地域生活支援事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "福保",
+      "ka": "障がい福祉",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "障がい者等の福祉の増進を図るとともに、障がいの有無に関わらず、国民が相互に人格と個性を尊重し安心して暮らすことのできる地域社会の実現を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 7
+      }
+    },
+    {
+      "name": "生活保護扶助事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "福保",
+      "ka": "生活福祉",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "日本国憲法第25条に規定する理念に基づき、資力や能力等すべてを活用してもなお生活に困窮する世帯に対し、その困窮の程度に応じて必要な保護を行い、健康で文化的な生活水準を維持できる最低限度の生活を保障し、その自立を助長する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 7
+      }
+    },
+    {
+      "name": "生活困窮者自立支援事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "福保",
+      "ka": "生活福祉",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "生活に困窮している人に対し、生活保護に至る前の段階で、自立（日常生活自立・社会生活自立・経済的自立）の促進を図ることを目的とする。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 7
+      }
+    },
+    {
+      "name": "国民健康保険事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "福保",
+      "ka": "健康保険",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "国民健康保険制度は、都道府県及び市町村を保険者として、職域を対象とする健康保険や各種共済組合等の被用者保険の被保険者、組合員やその扶養者などの職域単位で行われている制度以外の農林漁業、自営業者などで構成されている地域保険である。病気、けが、出産及び死亡の場合に被用者保険加入者以外の方に対する保険給付を行い、医療保険制度の中核をなす制度であるとともに、医療保障のみならず保健事業活動も実施しており、地域住民の健康保持や健康増進に対しても重要な役割を果している。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 7
+      }
+    },
+    {
+      "name": "健康政策推進事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "福保",
+      "ka": "健康政策課",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "健康都市宣言に基づく取組を推進することによって、「人」、「地域」、「まち」による「健康の好循環」を創出し、健康寿命の延伸と「元気Ｃｉｔｙこうふ」の実現を目指す。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 7
+      }
+    },
+    {
+      "name": "健康づくり推進事業",
+      "grade": "B",
+      "prevGrade": "BB",
+      "scoreTotal": null,
+      "bu": "福保子ども",
+      "ka": "地域保健母子保健",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "健康増進法や保健計画、食育推進計画に基づく保健事業について、保健計画推進協議会、愛育会、食生活改善推進員等と協働して実施することにより、健康づくりの一次予防を推進し、健康寿命の延伸を図る。また、中核市事務として難病支援事業、国民健康栄養調査事業等を実施する五感を使っておいしさの発見を繰り返し、他者と食に対する異なる感覚を共有する「味覚教育」の経験は、「食を楽しむ気持ち」の醸成が期待できる。「味覚教育」により、食への興味・関心を高め、身体の成長や体調の変化にあわせた食事",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 7
+      }
+    },
+    {
+      "name": "精神保健福祉事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "福保",
+      "ka": "精神保健",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "を自ら選択できる力を身に付け、自らの身体を大切にできる力を育むことを目的とする。精神保健及び精神障害者福祉に関する法律に基づき、精神保健福祉士及び公認心理師、保健師による精神保健福祉相談の他、警察官通報の24時間体制での受理及び相談対応等の業務を実施する。また、精神保健福祉相談の一環として、ひきこもりに関する相談支援業務や自殺対策に関する業務を実施する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 7
+      }
+    },
+    {
+      "name": "健康診査事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "福保",
+      "ka": "地域保健",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "生活習慣病の早期発見及び重症化を予防し、健康寿命の延伸を図ることを目的とする。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 7
+      }
+    },
+    {
+      "name": "各種予防事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "福保",
+      "ka": "医務感染症",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "免疫の備わっていない乳幼児に予防接種を実施することにより、感染症の発生及びまん延を予防する。また、体力や免疫力が低下している高齢者等に対しても、インフルエンザ等の予防接種費用の一部を助成し接種することにより、発病や重症化を防止する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 7
+      }
+    },
+    {
+      "name": "感染症対策事業",
+      "grade": "B",
+      "prevGrade": "A",
+      "scoreTotal": null,
+      "bu": "福保",
+      "ka": "医務感染症",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "人体に影響を及ぼす様々な感染症の予防やまん延防止を図るため、感染症の発生情報の正確な把握・分析と情報の公表、エイズ及び性感染症等に関する検査・相談の実施と若年層に対する正しい知識の普及啓発、感染症の患者の医療費に対する公費負担等の各事業を実施する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "病院経営推進事業",
+      "grade": "C",
+      "prevGrade": "C",
+      "scoreTotal": null,
+      "bu": "病院",
+      "ka": "経営企画",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "市立甲府病院は、市民や住民の「命」を守り、「健康」を支える地域に密着した病院として、良質な医療を安定的かつ継続的に提供するとともに、健全な経営基盤を確立する中で自治体病院として、地域に不足する医療、不採算医療、救急医療、高度医療等における役割を果す医療を提供していく。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "地域医療連携事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "病院総合相談セン",
+      "ka": "総務ター",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "市民が安心して医療を受けることが出来るよう地域の中核病院として、急性期医療や専門医療を主に提供する中、地域の医療機関との連携と機能分担を推進するとともに、地域包括ケア病棟を活用し急性期医療を経過した患者等の受け入れや在宅復帰支援等を行う機能を整備し、さらには在宅療養後方支援病院としての機能を発揮し、当該地域の地域包括ケアシステムの構築に向けた取り組みを推進しながら、地域が一体となった切れ目のない医療支援体制の確立に努める。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "救急医療体制整備事業",
+      "grade": "B",
+      "prevGrade": "BB",
+      "scoreTotal": null,
+      "bu": "福保子ども",
+      "ka": "医務感染症母子保健",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "平日及び休日夜間の救急診療体制等を整備し、地域住民の救急医療の確保を図る。小児救急医療体制の整備に対する住民の需要が増大しているため、全県を対象とし休日及び夜間の小児初期救急医療体制を整備し、地域住民の救急医療の確保を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "地球温暖化対策事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "環境",
+      "ka": "環境政策",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "「第二次甲府市環境基本計画」及び「甲府市地球温暖化対策実行計画」に基づき、環境への負荷の少ないクリーンエネルギーの普及・促進に寄与するための助成金交付や地球温暖化対策の啓発イベントの実施など、各種事業を推進することで、市民の意識の醸成や地球温暖化の原因となる温室効果ガス排出量の削減を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "都市美化事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "環境",
+      "ka": "ごみ収集",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "多くの市民が環境問題に関心を持ち、環境美化に向けて自主的に参加・行動していけるよう、意識の醸成に努める。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "環境対策事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "環境",
+      "ka": "環境保全",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "大気汚染の常時監視、公共用水域及び地下水の水質検査、自動車騒音・一般環境騒音調査、公害苦情処理、環境学習、環境監視員の育成など、現在及び将来の市民の健康で快適な生活環境を確保する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "遊亀公園・附属動物園整備事業費",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "まち",
+      "ka": "公園緑地",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "2019年（令和元年）に開園100周年を迎え、長い歴史のある甲府市遊亀公園・附属動物園については、施設の老朽化や周辺環境の変化が進み、動物福祉の観点からも改善が必要であるため、利用者のニーズを把握する中で、親しみのある動物園・公園の整備を実施する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "ごみ減量と資源リサイクル事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "環境",
+      "ka": "ごみ減量",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "地球環境に配慮した施策の更なる推進により分別排出の一層の徹底を図るとともに、第二次甲府市環境基本計画に基づき、ごみの減量化に向けた取組を展開していく。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "景観まちづくり推進事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "まち",
+      "ka": "都市計画",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "市民と協働で、良好な景観の形成を促進することを目的としている。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "住宅管理事務",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "まち",
+      "ka": "住宅",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "計画的に修繕・改善することで居住する低所得者、高齢者、子育て世帯などが健康で文化的な生活を営むことができ、住生活の安定確保並びに向上の促進が図られることを目的とする。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "建築物耐震化支援事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "まち",
+      "ka": "建築指導",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "大規模地震による建物の倒壊から、市民の生命及び財産等を保護するため、木造住宅や避難路沿道建築物の耐震性を高めることで被害の拡大を抑制するとともに、災害時の円滑な避難や救援活動を行うための道路を確保し、地震に強い安全で安心なまちづくりを推進することを目的としている。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "空家等対策推進事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "まち",
+      "ka": "空き家対策",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "「空家等対策の推進に関する特別措置法」及び国の基本方針に即して策定した、「甲府市空家等対策計画」」に基づき、空家等に関する対策を総合的かつ計画的に実施する中で、市民の良好な生活環境の確保と地域の活力の向上を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 9
+      }
+    },
+    {
+      "name": "水源保全活動推進事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "上下",
+      "ka": "水保全",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "市民や各種団体などとの協働による水源保全活動を実施することにより、水源保全の活動推進と意識啓発を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 9
+      }
+    },
+    {
+      "name": "水源域の水質調査事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "上下",
+      "ka": "浄水",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "荒川上流域表流水及び昭和、中道系地下水の水質変動を把握するため、水源域の水質調査を実施する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 9
+      }
+    },
+    {
+      "name": "水道管路耐震化事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "上下",
+      "ka": "水道",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "管路施設の耐震性向上と、最適な水理機能、水質保持機能を維持するため、基幹管路をはじめとする全ての管路を耐震管に更新する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 9
+      }
+    },
+    {
+      "name": "汚水管きょ整備事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "上下",
+      "ka": "計画／下水道",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "下水道の整備により、都市の健全な発達、公衆衛生の向上及び公共用水域の水質保全を図ることを目的とする。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 9
+      }
+    },
+    {
+      "name": "下水道接続促進事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "上下",
+      "ka": "給排水",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "都市の健全な発達、公衆衛生の向上、公共用水域の水質保全等を実現するため、下水道への速やかな接続実施を目指す。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 9
+      }
+    },
+    {
+      "name": "下水道地震対策事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "上下",
+      "ka": "下水道課／浄化センター",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "近年の地震災害の発生状況を踏まえ、防災・減災両面からの対策を総合的かつ効率的に行い、被害の最小化を図るために策定した「甲府市下水道総合地震対策計画」により、地震に対する下水道施設の安全度を高めるとともに下水道が有する機能を確保するため施設の耐震化を進め、市民が安心した生活を継続できるように、順次耐震機能向上を推進することを目的とした事業である。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 9
+      }
+    },
+    {
+      "name": "動物愛護事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "福保",
+      "ka": "生活衛生薬務",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "市民の動物愛護と適正管理に関する意識を啓発し、人と動物との調和のとれた共生社会の実現と市民の快適な生活環境を保持する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 9
+      }
+    },
+    {
+      "name": "生活衛生事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "福保",
+      "ka": "健康政策生活衛生薬務",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "市民に広く食品・生活衛生に関する正しい知識の普及を図ると共に、関係事業者が衛生的に事業を行うよう法令に基づき指導を行うことで、市民への健康被害の発生を防止する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 9
+      }
+    },
+    {
+      "name": "公共交通体系整備推進事業",
+      "grade": "B",
+      "prevGrade": "BB",
+      "scoreTotal": null,
+      "bu": "企画",
+      "ka": "リニア政策交通政策",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "リニア中央新幹線の早期実現の促進や、リニア中央新幹線利用者の二次交通手段の確保の検討など、新たな公共交通ネットワークの構築等に取り組み、リニア開業効果を最大限享受し市域全体の活性化につなげる「リニアを活かしたまちづくり」を推進することを目的とする。既存の公共交通の維持・活性化に加え、交通空白地域をはじめとする交通不便地域においては、地域特性に適した公共交通を確保することにより、持続可能な公共交通体系の構築を目指す。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 9
+      }
+    },
+    {
+      "name": "バス利用促進対策事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "企画",
+      "ka": "交通政策",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "市民の足として重要な役割を担う路線バス等が、子どもから高齢者まで、誰もが利用しやすく便利なものとなるよう、様々な利用促進策を展開し、その維持・活性化を目指す。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 9
+      }
+    },
+    {
+      "name": "在来鉄道の利便性向上事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "企画",
+      "ka": "交通政策",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "在来鉄道であるＪＲ中央本線及び身延線の高速化や利便性の向上を図るとともに、利用促進及び定住人口の増加を目指す。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 9
+      }
+    },
+    {
+      "name": "和戸町竜王線整備事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "まち",
+      "ka": "都市整備",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "東西地域の拠点を結ぶ主要路線として、幹線道路の整備を行うことを目的とする。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 9
+      }
+    },
+    {
+      "name": "城東三丁目敷島線整備事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "まち",
+      "ka": "都市整備",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "緊急輸送道路と重要防災拠点施設とを結ぶ重要路線として、幹線道路の整備を行うことを目的とする。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 10
+      }
+    },
+    {
+      "name": "住吉四丁目善光寺線整備事業",
+      "grade": "B",
+      "prevGrade": "R4新規",
+      "scoreTotal": null,
+      "bu": "まち",
+      "ka": "都市整備",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "歩車道分離の街路整備により、通勤、通学者及び高齢者が安全・安心に利用できる道路環境の創造を目的とする。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 10
+      }
+    },
+    {
+      "name": "高畑町昇仙峡整備事業",
+      "grade": "B",
+      "prevGrade": "R4新規",
+      "scoreTotal": null,
+      "bu": "まち",
+      "ka": "都市整備",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "歩車道分離の街路整備により、通勤、通学者及び高齢者が安全・安心に利用できる道路環境の創造を目的とする。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 10
+      }
+    },
+    {
+      "name": "市道新設改良事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "まち",
+      "ka": "都市整備",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "地域住民の生活環境の改善や安全性・利便性の向上に向けて生活道路を整備することを目的とする。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 10
+      }
+    },
+    {
+      "name": "国玉通り線整備事業",
+      "grade": "完了",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "まち",
+      "ka": "都市整備",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "主要路線を結ぶアクセス道路として、幹線道路の整備を目的とする。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 10
+      }
+    },
+    {
+      "name": "橋りょう長寿命化修繕事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "まち",
+      "ka": "道路河川",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "橋梁の長寿命化修繕計画に基づき、市道橋の点検を行う中で橋梁の長寿命化を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 10
+      }
+    },
+    {
+      "name": "道路維持管理事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "まち",
+      "ka": "道路河川",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "甲府市が管理する道路の安全確保のため、適時適確な維持管理を行う。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 10
+      }
+    },
+    {
+      "name": "甲府駅周辺土地区画整理事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "まち",
+      "ka": "区画整理",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "甲府駅周辺の鉄道跡地等の大規模空閑地を活用し、都市環境の整備と新たな都市拠点形成に向けて、土地区画整理事業による市街地の整備を行うことを目的とする。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 10
+      }
+    },
+    {
+      "name": "都市基本計画推進事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "まち",
+      "ka": "都市計画",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "都市計画関連情報のさらなるオープン化の推進や都市計画基礎調査の実施を通して、健康で文化的な都市生活及び機能的な都市活動を確保すべき整備、開発その他都市計画に関する施策を策定することを目的としている。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 10
+      }
+    },
+    {
+      "name": "地籍調査事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "まち",
+      "ka": "地籍調査",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "一筆毎の土地について、その所有者、地番及び地目の調査並びに境界及び地積に関する測量を行い、その結果を地図及び簿冊に作成し、地籍の明確化を図り、土地をめぐる経済活動や行政活動などの基礎データを築くことを目的とする。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 10
+      }
+    },
+    {
+      "name": "地域デザイン推進事業",
+      "grade": "B",
+      "prevGrade": "R4新規",
+      "scoreTotal": null,
+      "bu": "企画",
+      "ka": "地域デザイン課",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "持続可能な地域社会を実現するため、住民や事業者など多様な主体が参画する官民協働のまちづくり体制を構築し、地域の資源や特性を活かしたまちなかエリアの構想の策定と、その実現に向けた取組を推進する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 10
+      }
+    },
+    {
+      "name": "まちづくり計画推進事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "市民",
+      "ka": "協働推進",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "地区２１世紀のまちづくり協議会が、地区のまちづくりの将来像実現に向け、地区住民参加によるまちづくり事業の推進を図るため、助成を行うとともに、事業への行政参加や協力に努め、地域と協働した住みよいまちづくりを目指す。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 10
+      }
+    },
+    {
+      "name": "協働づくり推進事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "市民",
+      "ka": "協働推進協働支援",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "第２期推進行動計画に位置付けた取組を実施し、市民公益活動と行政の協働づくりを進め、市民参加のまちづくりを促進する。また、協働のパートナ－となるボランティアやＮＰＯの活動支援を行い、市民公益活動の活性化を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 10
+      }
+    },
+    {
+      "name": "地域のまちづくり支援事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "市民",
+      "ka": "協働支援",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "多様な主体が協働して地域の課題解決や強みを活かした取組が主体的に行われるよう支援するとともに、地域で活躍する方の育成創出や市民活動の活性化を図ることで、協働のまちづくりを推進する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 10
+      }
+    },
+    {
+      "name": "市民組織事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "市民",
+      "ka": "協働推進",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "市民の自主的組織である甲府市自治会連合会の活動を支援し、地域コミュニティ活動の活性化を目指す。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 11
+      }
+    },
+    {
+      "name": "地域集会施設整備助成事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "市民",
+      "ka": "協働推進",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "地域住民の連帯感を醸成し、コミュニティ活動の拠点施設である自治会が設置する地域集会施設の整備充実を図るため事業費の補助を行い、自治会の負担軽減と地域住民の自主的なコミュニティ活動の活性化及び市民組織の育成・強化と地域の発展を目指す。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 11
+      }
+    },
+    {
+      "name": "広報推進事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "市長",
+      "ka": "情報発信",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "市民の市政への理解と健全な市政運営を図るため、市の施策や事業など、市民生活に必要な情報を提供する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 11
+      }
+    },
+    {
+      "name": "広聴活動事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "市民",
+      "ka": "協働推進",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "市民参画による市政推進の窓口として、市民からの意見や要望等が的確に市政に反映できるよう、市民サイドに立った広聴活動の推進に努める。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 11
+      }
+    },
+    {
+      "name": "連携推進事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "企画",
+      "ka": "自治体連携SDGs推進",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "近隣自治体と特別地方公共団体である一部事務組合の設置による事務の共同処理及び、各自治体の自主自立を基本とした柔軟な連携が可能な「やまなし県央連携中枢都市圏」の形成により、住民の安心で快適なくらしを支えるための様々な取組を展開するする。また、公民の連携を推進し、公民双方が有する強みを活かした事業の展開により、地域活力の増進等を図り、持続可能な地域社会の構築を目指す。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 11
+      }
+    },
+    {
+      "name": "職員研修事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "行政",
+      "ka": "研修厚生",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "自己実現への自主的取組や自主活動の実施などを推進することにより、職員の自主研修を支援するとともに、職場における業務の適正かつ効率的な執行や職員の意識改革及び職場の意思疎通の向上への支援を行う。併せて、職位や成長ステージに求められる役割を担い得る職員や専門的な業務に対応できる職員の育成に向けた研修を実施することにより、個人・職場・組織の各育成レベルにおける職員の能力開発と資質の向上を図り、「求められる職員像」を実現することを目的とする。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 11
+      }
+    },
+    {
+      "name": "公共施設等マネジメント推進事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "企画",
+      "ka": "財産活用",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "公共施設等（公共施設及びインフラ資産）の全体の状況を把握し、長期的な視点をもって、施設総量の適正化、施設の長寿命化及び施設運営の効率化を計画的に行うことにより、財源の確保、財政負担の軽減及び平準化を図る取組み（公共施設等マネジメント）を推進し、次世代に負担をかけず、安心して快適に利用できる施設に再配置するとともに、未利用地や公共施設等マネジメント推進の取組みで新たに生み出される公共施設の跡地などを資産と捉え、公共・公益的な目的を踏まえながら、資産経営の視点から総合的かつ戦略的に有効活用を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 11
+      }
+    },
+    {
+      "name": "ふるさと応援寄附金推進事業",
+      "grade": "A",
+      "prevGrade": "A",
+      "scoreTotal": null,
+      "bu": "産業",
+      "ka": "ふるさと納税",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "ふるさと納税制度の継続的な推進による地場産業の活性化と自主財源の確保",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 11
+      }
+    },
+    {
+      "name": "外部評価制度の実施事業",
+      "grade": "D",
+      "prevGrade": "コロナ禍にて判定不可",
+      "scoreTotal": null,
+      "bu": "行政",
+      "ka": "行政経営",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "施策及び事務事業に対し、第三者の視点からの評価及び意見を聴収し、行政評価の客観性と透明性を確保する。外部評価結果は、行政評価の際にこれを踏まえるものとする。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 11
+      }
+    },
+    {
+      "name": "ＳＤＧｓ推進事業",
+      "grade": "B",
+      "prevGrade": "R4新規",
+      "scoreTotal": null,
+      "bu": "企画",
+      "ka": "ＳＤＧｓ推進",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "市域におけるＳＤＧｓの取組を促進し、持続可能なまちづくりを推進するため、市内のＳＤＧｓに取り組む企業・団体等の登録制度や地域課題の解決に資する具体的取組等に対する助成金制度などにより、ＳＤＧｓの普及や機運の醸成につなげるとともに、多様な主体との連携の強化や経済・社会・環境の三側面の調和による統合的な取組を展開を図る。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 11
+      }
+    },
+    {
+      "name": "シティプロモーション事業",
+      "grade": "B",
+      "prevGrade": "B",
+      "scoreTotal": null,
+      "bu": "市長",
+      "ka": "情報発信",
+      "shisaku": null,
+      "kubun": null,
+      "purpose": "選ばれる都市となり、持続的に発展していけるよう、本市の強みや魅力的な地域資源を活かした都市ブランドの確立を目指すとともに、多様なメディアや人的ネットワークを最大限活用した戦略的なシティプロモーションを推進する。",
+      "budgetName": null,
+      "locator": {
+        "file": "kouhyouyoudeta5-4.pdf",
+        "page": 11
+      }
+    }
+  ]
+}

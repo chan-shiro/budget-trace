@@ -1,0 +1,27 @@
+{
+  "sourceId": "kofu-gyousei-hyouka-r2",
+  "validatedAt": "2026-07-12T13:57:22.743Z",
+  "status": "ok",
+  "issues": [
+    {
+      "level": "warning",
+      "message": "事業「健康づくり推進事業」が重複しています（再掲の可能性）"
+    },
+    {
+      "level": "warning",
+      "message": "事業「母子保健事業（再掲）」が重複しています（再掲の可能性）"
+    },
+    {
+      "level": "warning",
+      "message": "事業「母子保健事業」が重複しています（再掲の可能性）"
+    },
+    {
+      "level": "warning",
+      "message": "事業「母子保健事業（再掲）」が重複しています（再掲の可能性）"
+    },
+    {
+      "level": "warning",
+      "message": "事業「救急医療体制整備事業」が重複しています（再掲の可能性）"
+    }
+  ]
+}

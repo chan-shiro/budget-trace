@@ -1,0 +1,12 @@
+{
+  "sourceId": "kofu-gyousei-hyouka-r2",
+  "files": [
+    {
+      "filename": "r02kekkaichiran.xlsx",
+      "sha256": "943e67ba8eff70409800b2a1ad3aeb917066dd9a42e61d08d81c51d6da2bb7d0",
+      "bytes": 29562,
+      "fetchedAt": "2026-07-12T13:54:21.134Z",
+      "fetchedFrom": "https://www.city.kofu.yamanashi.jp/zaise/documents/r02kekkaichiran.xlsx"
+    }
+  ]
+}
