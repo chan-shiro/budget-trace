@@ -112,7 +112,8 @@ function parseKanPage(
 // ---- 主な事業一覧（p.14-23 想定）のレイアウト抽出 -----------------------------
 // pdftotext -tsv の単語座標で列を判別する。列のX範囲は資料の実測値
 // （No: <45 / 区分: <65 / 事業名等: <300 / 予算額: 右揃え・右端 300-330 /
-//   内容: <650 / 基本目標: <685 / 施策: それ以降）。
+//   内容: <630 / 基本目標: <685 / 施策: それ以降）。
+// 基本目標列の左端は年度で揺れる（R8: x≈652 / R7・R6: x≈641）ため境界は 630。
 // 行は No. のY中心の中点で区切り、款は見出しフォント（高さ>=12pt）の
 // 「N款 ○○費」で追跡する（款は次ページへ持ち越し）。
 
@@ -159,7 +160,8 @@ function joinWords(words: Word[]): string {
     .join("");
 }
 
-const HEADER_TOKENS = new Set(["№", "No.", "区分", "事業名等", "予算額", "（千円）", "内容", "基本", "目標", "施策"]);
+// 表ヘッダの語。R8 は「基本/目標」「施策」、R7・R6 は「基本/目標等」「施策等」と年度で揺れる
+const HEADER_TOKENS = new Set(["№", "No.", "区分", "事業名等", "予算額", "（千円）", "内容", "基本", "目標", "目標等", "施策", "施策等"]);
 
 function parseProjectPages(
   filePath: string,
@@ -245,10 +247,10 @@ function parseProjectPages(
         });
       }
       const contentWords = [
-        ...rowWords.filter((w) => w.x >= 310 && w.x < 650 && !amountSrc.has(w)),
+        ...rowWords.filter((w) => w.x >= 310 && w.x < 630 && !amountSrc.has(w)),
         ...amountCands.flatMap((c) => (c.rest ? [c.rest] : [])),
       ];
-      const goalWords = inCol(650, 685);
+      const goalWords = inCol(630, 685);
       const shisakuWords = inCol(685, 10_000);
 
       if (amountCands.length !== 1) {
@@ -256,10 +258,30 @@ function parseProjectPages(
           `${filename} p.${page} No.${anchors[i]!.text}: 予算額列を一意に特定できません（候補 ${amountCands.length} 件: ${amountCands.map((c) => c.amount).join(", ")}）`,
         );
       }
-      // 事業名等: （ ）書きの行は予算書上の事業名、それ以外が表示名
-      const nameLines = joinWords(nameWords).split(/(?=（)/); // 先頭が（ の部分で分割
-      const displayName = nameLines.filter((s) => !s.startsWith("（")).join("");
-      const bookName = nameLines.filter((s) => s.startsWith("（")).join("").replace(/^（|）$/g, "");
+      // 事業名等: 末尾の（ ）書きが予算書上の事業名、その前が表示名。
+      // 表示名が（仮称）で始まったり（R7 No.21）、予算書名が入れ子括弧を含む
+      // （例:（（仮称）〜整備事業費））ため、正規表現でなく末尾から括弧の
+      // 対応を取って切り出す
+      const fullName = joinWords(nameWords);
+      let displayName = fullName;
+      let bookName = "";
+      if (fullName.endsWith("）")) {
+        let depth = 0;
+        for (let i = fullName.length - 1; i >= 0; i--) {
+          const ch = fullName[i];
+          if (ch === "）") depth++;
+          else if (ch === "（") {
+            depth--;
+            if (depth === 0) {
+              if (i > 0) {
+                displayName = fullName.slice(0, i);
+                bookName = fullName.slice(i + 1, -1);
+              }
+              break;
+            }
+          }
+        }
+      }
       if (!displayName) {
         throw new Error(`${filename} p.${page} No.${anchors[i]!.text}: 事業名が抽出できません`);
       }
@@ -272,7 +294,9 @@ function parseProjectPages(
         budgetBookName: bookName || null,
         amount: toAmount(amountCands[0]!.amount),
         description: joinWords(contentWords),
-        basicGoal: goalWords.map((w) => w.text).join("・"),
+        // 複数目標は「・」連結（R8「ひと・まち」等）。R7・R6 の「基本構想の推進」は
+        // セル内で2行に折り返されるため、連結後に戻す（年度クセ）
+        basicGoal: goalWords.map((w) => w.text).join("・").replace("基本構想の・推進", "基本構想の推進"),
         shisaku: joinWords(shisakuWords),
         locator: { file: filename, page },
       });

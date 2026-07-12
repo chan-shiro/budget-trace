@@ -6,9 +6,9 @@ import * as D from "@/client/lib/data";
 import BudgetTraceView from "./BudgetTraceView";
 
 const {
-  KOFU, GLOSS, SIM_MIX_COLS, SIMILAR, SIMILAR_EVIDENCE, SOURCES,
-  KOFU_BUDGET, KOFU_PROJECTS, KOFU_PROJECTS_SOURCE, KOFU_EXECUTION, KOFU_R6_DETAIL, KOFU_TREND, YAMANASHI_MUNIS,
-  fmtOku, pctOf, fmtPerCap, fadeColor, donutBg, setPalette,
+  GLOSS, SIM_MIX_COLS, SIMILAR, SIMILAR_EVIDENCE, SOURCES,
+  KOFU_BUDGET_YEARS, KOFU_PROJECT_YEARS, KOFU_EXECUTION, KOFU_R6_DETAIL, KOFU_TREND, YAMANASHI_MUNIS,
+  muniFromBudget, fmtOku, pctOf, fmtPerCap, fadeColor, donutBg, setPalette,
 } = D;
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -24,6 +24,8 @@ interface St {
   unit?: string;
   compSide?: string;
   execSide?: string;
+  /** 表示中の当初予算年度（"R8" など。未指定は最新年度） */
+  budgetFy?: string;
   tip?: any;
 }
 
@@ -33,13 +35,21 @@ const DEFAULT_ST: St = {
   searchQ: "", unit: "total", compSide: "exp", tip: null,
 };
 
-// 総合計画の基本目標（= 政策テーマ）。83事業の basicGoal から集計する
-const GOALS = [
-  { name: "ひと", label: "未来に輝く『ひと』を育む" },
-  { name: "まち", label: "安全・安心で快適な『まち』を創る" },
-  { name: "魅力", label: "都市機能と自然が調和する甲府の『魅力』を磨く" },
-];
-const goalProjects = (goal: string) => KOFU_PROJECTS.filter((p) => p.basicGoal.split("・").includes(goal));
+// 総合計画の基本目標（= 政策テーマ）。各年度の主な事業の basicGoal から集計する。
+// R8〜は第七次総合計画（ひと/まち/魅力）。それ以前（第六次: 基本目標1〜4・
+// 基本構想の推進）は事業データから動的に目標一覧を作る
+const PLAN_BY_FY: Record<string, { plan: string; goals?: { name: string; label: string }[] }> = {
+  R8: {
+    plan: "第七次甲府市総合計画",
+    goals: [
+      { name: "ひと", label: "未来に輝く『ひと』を育む" },
+      { name: "まち", label: "安全・安心で快適な『まち』を創る" },
+      { name: "魅力", label: "都市機能と自然が調和する甲府の『魅力』を磨く" },
+    ],
+  },
+  R7: { plan: "第六次甲府市総合計画" },
+  R6: { plan: "第六次甲府市総合計画" },
+};
 
 export default function BudgetTrace() {
   const [st, setStRaw] = React.useState<St>(DEFAULT_ST);
@@ -87,7 +97,27 @@ export default function BudgetTrace() {
   setPalette(mapColorMode);
   const screen = s.screen;
   const isApp = ["dash", "drill", "compare", "themes", "execution", "similar", "sources"].includes(screen);
-  const data = KOFU; // 収録済み自治体は甲府市のみ
+  // 収録済み自治体は甲府市のみ。年度は当初予算の収録年度（R8〜R6）から選択
+  const budget = KOFU_BUDGET_YEARS.find((b) => b.fy === s.budgetFy) ?? KOFU_BUDGET_YEARS[0]!;
+  const projYear = KOFU_PROJECT_YEARS.find((y) => y.fy === budget.fy);
+  const KOFU_PROJECTS = React.useMemo(() => projYear?.projects ?? [], [projYear]);
+  const KOFU_PROJECTS_SOURCE = projYear?.source ?? { title: "", url: "", pagesLabel: "" };
+  const data = React.useMemo(() => muniFromBudget(budget), [budget]);
+  const goalProjects = (goal: string) => KOFU_PROJECTS.filter((p) => p.basicGoal.split("・").includes(goal));
+  // 政策テーマの目標一覧（R8 はラベル付き定義、過年度は事業データから動的に）
+  const planInfo = PLAN_BY_FY[budget.fy] ?? { plan: "甲府市総合計画" };
+  const GOALS = React.useMemo(
+    () =>
+      planInfo.goals ??
+      Array.from(new Set(KOFU_PROJECTS.flatMap((p) => p.basicGoal.split("・").filter(Boolean))))
+        // 「基本目標1〜4」を先に、「基本構想の推進」等はその後ろに
+        .sort((a, b) => {
+          const num = (g: string) => (/^基本目標/.test(g) ? 0 : 1);
+          return num(a) - num(b) || a.localeCompare(b, "ja");
+        })
+        .map((name) => ({ name, label: "" })),
+    [planInfo.goals, KOFU_PROJECTS],
+  );
   const accent = "#1798D0";
 
   // --- 表示単位（総額 / 1人あたり） ---
@@ -117,7 +147,7 @@ export default function BudgetTrace() {
   const muniList = (prefAvail ? YAMANASHI_MUNIS : []).map((m) => {
     const avail = m === "甲府市";
     return {
-      name: m, badge: avail ? "収録済 R8当初予算" : "準備中", badgeFg: avail ? accent : "#9DACB7",
+      name: m, badge: avail ? `収録済 ${KOFU_BUDGET_YEARS[KOFU_BUDGET_YEARS.length - 1]!.fy}〜${KOFU_BUDGET_YEARS[0]!.fy}当初予算` : "準備中", badgeFg: avail ? accent : "#9DACB7",
       bg: avail ? "#FFFFFF" : "#F0F5F8", bd: avail ? accent : "#DFE7EC",
       fg: avail ? "#14181C" : "#8494A0", cursor: avail ? "pointer" : "default",
       open: avail ? openMuni(m) : () => {},
@@ -198,7 +228,7 @@ export default function BudgetTrace() {
       open: clickable ? () => setSt({ drillPath: [...s.drillPath, it.name] }) : () => {},
     };
   });
-  const drillEvidence = `${KOFU_BUDGET.sourceTitle} ${KOFU_BUDGET.pagesLabel}${depth > 0 ? `「${nodeName}」` : ""}`;
+  const drillEvidence = `${budget.sourceTitle} ${budget.pagesLabel}${depth > 0 ? `「${nodeName}」` : ""}`;
   const drillSideTabs = [
     { label: "歳出", pick: () => setSt({ drillSide: "exp", drillPath: [] }), bg: side === "exp" ? "#14181C" : "#FFFFFF", fg: side === "exp" ? "#F7FAFC" : "#5C6B77" },
     { label: "歳入", pick: () => setSt({ drillSide: "rev", drillPath: [] }), bg: side === "rev" ? "#14181C" : "#FFFFFF", fg: side === "rev" ? "#F7FAFC" : "#5C6B77" },
@@ -219,8 +249,8 @@ export default function BudgetTrace() {
     const kanIdx = (nm: string) => Math.max(0, data.expenditure.findIndex((k) => k.name === nm));
     themeVals = {
       hasTheme: true,
-      themeName: `基本目標『${curGoal.name}』 — ${curGoal.label}`,
-      themeIntent: `第七次甲府市総合計画の基本目標「${curGoal.name}」に紐づく主な事業（予算資料の主な事業一覧に掲載された ${ps.length}事業）の集計です。複数の基本目標を持つ事業は各目標に計上しています。`,
+      themeName: curGoal.label ? `基本目標『${curGoal.name}』 — ${curGoal.label}` : `『${curGoal.name}』`,
+      themeIntent: `${planInfo.plan}の基本目標「${curGoal.name}」に紐づく主な事業（予算資料の主な事業一覧に掲載された ${ps.length}事業）の集計です。複数の基本目標を持つ事業は各目標に計上しています。`,
       themeTotalFmt: fmtV(total), themeSub: subV(total), themeCount: String(ps.length),
       themePer: fmtPerCap(total, data.pop),
       themeKanChips: Object.entries(kanAgg).map(([nm, v]) => ({ name: nm, amtFmt: fmtV(v), sw: D.PALETTE[kanIdx(nm) % D.PALETTE.length], open: () => nav({ screen: "drill", drillSide: "exp", drillPath: [nm] }) })),
@@ -234,9 +264,9 @@ export default function BudgetTrace() {
 
   // --- compare (前年比較・予算書の前年度当初額をそのまま使用) ---
   const compSide = s.compSide || "exp";
-  const compKans = compSide === "rev" ? KOFU_BUDGET.revenue : KOFU_BUDGET.expenditure;
-  const compCurSum = KOFU_BUDGET.totalOku;
-  const compPrevSum = KOFU_BUDGET.prevTotalOku ?? 0;
+  const compKans = compSide === "rev" ? budget.revenue : budget.expenditure;
+  const compCurSum = budget.totalOku;
+  const compPrevSum = budget.prevTotalOku ?? 0;
   const compMax = Math.max(...compKans.map((it) => it.v));
   const compRows = compKans.map((it, i) => {
     const prev = it.prevV ?? 0;
@@ -339,6 +369,10 @@ export default function BudgetTrace() {
     prefAllNote: "都道府県レベルの予算データは未収録です",
     muniList,
     crumbPref: s.pref || "山梨県", crumbMuni: s.muni || "甲府市", yearLabel,
+    // 年度切り替え（収録済みの当初予算年度）。切替時はドリル位置・テーマ選択をリセット
+    yearOptions: KOFU_BUDGET_YEARS.map((b) => ({ value: b.fy, label: b.fyLabel })),
+    yearSel: budget.fy,
+    pickYear: (fy: string) => setSt({ budgetFy: fy, drillPath: [], theme: null }),
     navTabs,
     dashTitle: `${data.name}の予算`, totalFmt: fmtV(totalNow),
     totalFmtAnim: <CountUpNum value={totalNow} fmt={fmtV} />,
@@ -391,19 +425,21 @@ export default function BudgetTrace() {
     })(),
     // 全体のエビデンス充足度（一般会計の款に属する主な事業の合計 vs 歳出総額）
     ...(() => {
-      const general = KOFU_PROJECTS.filter((p) => KOFU_BUDGET.expenditure.some((k) => k.name === p.kan));
+      const general = KOFU_PROJECTS.filter((p) => budget.expenditure.some((k) => k.name === p.kan));
       const covered = general.reduce((a, p) => a + p.amountOku, 0);
       return {
         projCoverageCoveredFmt: fmtOku(covered),
         projCoverageCount: String(general.length),
-        projCoveragePct: ((covered / KOFU_BUDGET.totalOku) * 100).toFixed(1),
-        projCoverageBarW: Math.min(100, (covered / KOFU_BUDGET.totalOku) * 100).toFixed(1),
-        projCoverageRestFmt: fmtOku(Math.max(0, KOFU_BUDGET.totalOku - covered)),
+        projCoveragePct: ((covered / budget.totalOku) * 100).toFixed(1),
+        projCoverageBarW: Math.min(100, (covered / budget.totalOku) * 100).toFixed(1),
+        projCoverageRestFmt: fmtOku(Math.max(0, budget.totalOku - covered)),
       };
     })(),
-    drillPdfUrl: KOFU_BUDGET.sourceUrl,
-    dashSourceLabel: `出典：${KOFU_BUDGET.sourceTitle} ${KOFU_BUDGET.pagesLabel}`,
-    dashSourceUrl: KOFU_BUDGET.sourceUrl,
+    drillPdfUrl: budget.sourceUrl,
+    dashSourceLabel: `出典：${budget.sourceTitle} ${budget.pagesLabel}`,
+    dashSourceUrl: budget.sourceUrl,
+    dashSourceTitle: budget.sourceTitle,
+    themesIntro: `${planInfo.plan}の基本目標（${GOALS.map((g) => `「${g.name}」`).join("")}）別に、予算資料「主な事業一覧」に掲載された${KOFU_PROJECTS.length}事業を、資料記載の基本目標・施策の紐付けどおりに集計しています。`,
     drillTipMove: mkDonutTip(donutItems, nodeTotal, data.pop, "drill"),
     drillSub: subV(nodeTotal),
     tipShow: !!(s.tip && s.tip.title), tipX: s.tip ? s.tip.x : 0, tipY: s.tip ? s.tip.y : 0,
@@ -414,7 +450,7 @@ export default function BudgetTrace() {
     gKan: mkGloss("款"),
     perCapitaLine: isPer
       ? `総額 ${fmtOku(totalNow)}`
-      : `市民1人あたり ${((totalNow * 1e8) / data.pop / 1e4).toFixed(1)}万円（${KOFU_BUDGET.populationLabel} ${data.pop.toLocaleString()}人）`,
+      : `市民1人あたり ${((totalNow * 1e8) / data.pop / 1e4).toFixed(1)}万円（${budget.populationLabel} ${data.pop.toLocaleString()}人）`,
     unitTabs,
     isSimilar: screen === "similar", isSources: screen === "sources",
     goSources: () => nav({ screen: "sources" }), goDash: () => nav({ screen: "dash" }),
@@ -434,7 +470,7 @@ export default function BudgetTrace() {
     sourcesRows: SOURCES,
     themeCards, ...themeVals,
     compTabs, compRows,
-    compPrevLabel: "令和7年度", compCurLabel: "令和8年度",
+    compPrevLabel: `令和${Number(budget.fy.slice(1)) - 1}年度`, compCurLabel: `令和${budget.fy.slice(1)}年度`,
     compPrevTotal: fmtV(compPrevSum), compCurTotal: fmtV(compCurSum), compSub: subV(compCurSum),
     compTotalDelta: (compDelta >= 0 ? "+" : "−") + fmtV(Math.abs(compDelta)),
     compTotalPct: (compDelta >= 0 ? "+" : "−") + ((Math.abs(compDelta) / compPrevSum) * 100).toFixed(1) + "%",
