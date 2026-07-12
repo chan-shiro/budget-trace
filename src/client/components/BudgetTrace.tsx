@@ -26,6 +26,18 @@ interface St {
   execSide?: string;
   /** 表示中の当初予算年度（"R8" など。未指定は最新年度） */
   budgetFy?: string;
+  /** 一次資料ドロワー（自サーバー配信の原本コピーをその場でレビュー） */
+  viewer?: {
+    /** 自サーバーのコピー URL（/sources/...。#page=N 可） */
+    url: string;
+    title: string;
+    /** 位置・来歴の補足（例: "主な事業一覧 p.17"） */
+    sub: string;
+    /** 発行元の元 URL（最新版に差し替わっている可能性あり） */
+    originUrl: string;
+    /** Wayback Machine のコピー */
+    archiveUrl: string;
+  } | null;
   tip?: any;
 }
 
@@ -62,6 +74,19 @@ export default function BudgetTrace() {
     setSt(patch);
     if (typeof window !== "undefined") window.scrollTo(0, 0);
   };
+
+  // --- 一次資料ドロワー ---
+  const openViewer = (viewer: NonNullable<St["viewer"]>) => setSt({ viewer });
+  const closeViewer = () => setSt({ viewer: null });
+  const viewerOpen = !!st.viewer;
+  React.useEffect(() => {
+    if (!viewerOpen) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setStRaw((s) => ({ ...s, viewer: null }));
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [viewerOpen]);
 
   // --- チャート近傍ツールチップ（ホバー／タップ） ---
   const showTip = (e: any, title: string, amt: string, pct: string, sw: string, desc?: string, hover?: any) => {
@@ -103,7 +128,7 @@ export default function BudgetTrace() {
   const budget = KOFU_BUDGET_YEARS.find((b) => b.fy === s.budgetFy) ?? KOFU_BUDGET_YEARS[0]!;
   const projYear = KOFU_PROJECT_YEARS.find((y) => y.fy === budget.fy);
   const KOFU_PROJECTS = React.useMemo(() => projYear?.projects ?? [], [projYear]);
-  const KOFU_PROJECTS_SOURCE = projYear?.source ?? { title: "", url: "", pagesLabel: "" };
+  const KOFU_PROJECTS_SOURCE = projYear?.source ?? { title: "", url: "", originUrl: "", localUrl: "", pagesLabel: "" };
   const data = React.useMemo(() => muniFromBudget(budget), [budget]);
   const goalProjects = (goal: string) => KOFU_PROJECTS.filter((p) => p.basicGoal.split("・").includes(goal));
   // 政策テーマの目標一覧（R8 はラベル付き定義、過年度は事業データから動的に）
@@ -267,7 +292,11 @@ export default function BudgetTrace() {
       themeProjects: ps.map((p) => ({
         name: p.name, summary: p.description, kanPath: p.kan ?? p.shisaku, kubun: p.kubun ?? "",
         budgetFmt: fmtV(p.amountOku), sub: subV(p.amountOku), shisaku: p.shisaku,
-        refLabel: p.refLabel, refUrl: p.refUrl,
+        refLabel: p.refLabel, refUrl: p.refLocalUrl,
+        refOpen: () => openViewer({
+          url: p.refLocalUrl, title: KOFU_PROJECTS_SOURCE.title, sub: `主な事業一覧 ${p.refLabel}`,
+          originUrl: KOFU_PROJECTS_SOURCE.originUrl, archiveUrl: p.refUrl,
+        }),
       })),
     };
   }
@@ -358,8 +387,18 @@ export default function BudgetTrace() {
     execOverallRate: execOverallRate.toFixed(1) + "%",
     execOverallBarW: Math.min(100, execOverallRate).toFixed(1),
     execBudgetFmt: fmtOku(execBudgetTotal), execSettledFmt: fmtOku(execSettledTotal),
-    execEvidence: KOFU_EXECUTION.evidence,
-    execSourceUrl: KOFU_EXECUTION.sourceUrl,
+    execEvidence: KOFU_EXECUTION.evidence.map((he) => ({
+      ...he,
+      open: () => openViewer({
+        url: he.localUrl, title: he.title, sub: he.thumb,
+        originUrl: KOFU_EXECUTION.originUrl, archiveUrl: he.url,
+      }),
+    })),
+    execSourceUrl: KOFU_EXECUTION.sourceLocalUrl,
+    execSourceOpen: () => openViewer({
+      url: KOFU_EXECUTION.sourceLocalUrl, title: KOFU_EXECUTION.sourceTitle, sub: KOFU_EXECUTION.fyLabel,
+      originUrl: KOFU_EXECUTION.originUrl, archiveUrl: KOFU_EXECUTION.sourceUrl,
+    }),
     trendBars, trendIndicators, trendYearLabels,
     trendSourceUrl: KOFU_TREND[KOFU_TREND.length - 1]?.landingUrl ?? "",
     showEvidence,
@@ -424,14 +463,23 @@ export default function BudgetTrace() {
           bookName: p.budgetBookName ? `（${p.budgetBookName}）` : "",
           amountFmt: fmtOku(p.amountOku), desc: p.description,
           goal: p.basicGoal, shisaku: p.shisaku,
-          refLabel: p.refLabel, refTitle: p.ref, refUrl: p.refUrl,
+          refLabel: p.refLabel, refTitle: p.ref, refUrl: p.refLocalUrl,
+          refOpen: () => openViewer({
+            url: p.refLocalUrl, title: KOFU_PROJECTS_SOURCE.title, sub: `主な事業一覧 ${p.refLabel}`,
+            originUrl: KOFU_PROJECTS_SOURCE.originUrl, archiveUrl: p.refUrl,
+          }),
         })),
         realProjectsCoveredFmt: fmtOku(covered),
         realProjectsCoveredPct: nodeTotal > 0 ? ((covered / nodeTotal) * 100).toFixed(1) : "0",
         realProjectsCoveredBarW: nodeTotal > 0 ? Math.min(100, (covered / nodeTotal) * 100).toFixed(1) : "0",
         realProjectsUncoveredFmt: fmtOku(uncovered),
-        realProjectsSourceUrl: KOFU_PROJECTS_SOURCE.url,
+        realProjectsSourceUrl: KOFU_PROJECTS_SOURCE.localUrl,
         realProjectsSourceLabel: `出典：${KOFU_PROJECTS_SOURCE.title} 主な事業一覧 ${KOFU_PROJECTS_SOURCE.pagesLabel}`,
+        realProjectsSourceOpen: () => openViewer({
+          url: KOFU_PROJECTS_SOURCE.localUrl, title: KOFU_PROJECTS_SOURCE.title,
+          sub: `主な事業一覧 ${KOFU_PROJECTS_SOURCE.pagesLabel}`,
+          originUrl: KOFU_PROJECTS_SOURCE.originUrl, archiveUrl: KOFU_PROJECTS_SOURCE.url,
+        }),
       };
     })(),
     // 全体のエビデンス充足度（一般会計の款に属する主な事業の合計 vs 歳出総額）
@@ -447,10 +495,17 @@ export default function BudgetTrace() {
         projCoverageRestFmt: fmtOku(Math.max(0, budget.totalOku - covered)),
       };
     })(),
-    drillPdfUrl: budget.sourceUrl,
+    // エビデンスは自サーバーのコピーをドロワーで開く（発行元・Wayback はドロワー内の補助リンク）
+    viewer: s.viewer ?? null,
+    closeViewer,
+    drillPdfUrl: budget.sourceLocalUrl,
     dashSourceLabel: `出典：${budget.sourceTitle} ${budget.pagesLabel}`,
-    dashSourceUrl: budget.sourceUrl,
+    dashSourceUrl: budget.sourceLocalUrl,
     dashSourceTitle: budget.sourceTitle,
+    dashSourceOpen: () => openViewer({
+      url: budget.sourceLocalUrl, title: budget.sourceTitle, sub: `款別一覧 ${budget.pagesLabel}`,
+      originUrl: budget.originUrl, archiveUrl: budget.sourceUrl,
+    }),
     themesIntro: `${planInfo.plan}の基本目標（${GOALS.map((g) => `「${g.name}」`).join("")}）別に、予算資料「主な事業一覧」に掲載された${KOFU_PROJECTS.length}事業を、資料記載の基本目標・施策の紐付けどおりに集計しています。`,
     drillTipMove: mkDonutTip(donutItems, nodeTotal, data.pop, "drill"),
     drillSub: subV(nodeTotal),
@@ -479,7 +534,12 @@ export default function BudgetTrace() {
     }),
     simLegend: SIM_MIX_COLS.map((n, i) => ({ name: n, sw: [D.PALETTE[0], D.PALETTE[1], D.PALETTE[2], D.PALETTE[4], "#C6D2DA"][i] })),
     similarEvidence: SIMILAR_EVIDENCE,
-    sourcesRows: SOURCES,
+    sourcesRows: SOURCES.map((row: any) => ({
+      ...row,
+      open: row.localUrl
+        ? () => openViewer({ url: row.localUrl, title: row.title, sub: row.type, originUrl: row.originUrl, archiveUrl: row.url })
+        : null,
+    })),
     themeCards, ...themeVals,
     compTabs, compRows,
     // 前年ラベル。R2 の前年（令和元年度）は「6月補正後予算額」との比較なので基準を明示する

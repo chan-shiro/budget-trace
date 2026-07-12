@@ -12,3 +12,6 @@ npm-debug.log*
 /data/raw/fixture-*/
 .vercel
 .env*
+
+# 一次資料 PDF の配信コピー（data/raw から bun pipeline/sync-public-sources.ts が生成）
+/public/sources/

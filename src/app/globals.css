@@ -19,7 +19,9 @@ button { font-family: 'IBM Plex Sans JP', sans-serif; }
 [data-anim="bar"] { animation: barGrow .9s cubic-bezier(.25,.72,.25,1) both; transition: width .6s ease; }
 [data-anim="vbar"] { animation: vbarGrow .9s cubic-bezier(.25,.72,.25,1) both; transition: height .6s ease; }
 [data-anim="donutcover"] { -webkit-mask: conic-gradient(transparent var(--sweep,100%), #000 0); mask: conic-gradient(transparent var(--sweep,100%), #000 0); animation: sweepIn 1s cubic-bezier(.45,.05,.35,1) both; }
-@media (prefers-reduced-motion: reduce){ [data-anim="bar"], [data-anim="vbar"], [data-anim="donutcover"]{ animation: none !important; transition: none !important; } }
+@keyframes drawerUp { from { transform: translateY(24px); opacity: 0; } to { transform: none; opacity: 1; } }
+[data-anim="drawer"] { animation: drawerUp .26s cubic-bezier(.25,.72,.25,1) both; }
+@media (prefers-reduced-motion: reduce){ [data-anim="bar"], [data-anim="vbar"], [data-anim="donutcover"], [data-anim="drawer"]{ animation: none !important; transition: none !important; } }
 
 /* ===== 地図アニメーション ===== */
 @keyframes jmFade { from { opacity: 0; } to { opacity: 1; } }
