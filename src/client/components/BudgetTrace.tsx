@@ -7,7 +7,7 @@ import BudgetTraceView from "./BudgetTraceView";
 
 const {
   GLOSS, SIM_MIX_COLS, SIMILAR, SIMILAR_EVIDENCE, SOURCES,
-  KOFU_BUDGET_YEARS, KOFU_PROJECT_YEARS, KOFU_EXECUTION_YEARS, KOFU_R6_DETAIL, KOFU_TREND, YAMANASHI_MUNIS,
+  KOFU_BUDGET_YEARS, KOFU_PROJECT_YEARS, KOFU_EXECUTION_YEARS, KOFU_EVALUATION_YEARS, KOFU_R6_DETAIL, KOFU_TREND, YAMANASHI_MUNIS,
   muniFromBudget, fmtOku, pctOf, fmtPerCap, fadeColor, donutBg, setPalette,
 } = D;
 
@@ -161,6 +161,21 @@ export default function BudgetTrace() {
         })),
     [planInfo.goals, KOFU_PROJECTS],
   );
+  // 事務事業評価（同年度の評価を予算名 or 事業名の完全一致でだけ紐付ける — 曖昧マッチしない）
+  const evalYear = KOFU_EVALUATION_YEARS.find((y) => y.fy === budget.fy);
+  const evalFor = React.useMemo(() => {
+    const byKey = new Map<string, { grade: string; ref: string; fyLabel: string; sourceTitle: string }>();
+    for (const it of evalYear?.items ?? []) {
+      const val = { grade: it.grade, ref: it.ref, fyLabel: evalYear!.fyLabel, sourceTitle: evalYear!.sourceTitle };
+      if (it.budgetName) byKey.set(`b:${it.budgetName}`, val);
+      byKey.set(`n:${it.name}`, val);
+    }
+    return (p: { name: string; budgetBookName: string | null }) =>
+      (p.budgetBookName ? byKey.get(`b:${p.budgetBookName}`) : undefined) ??
+      byKey.get(`n:${p.name}`) ??
+      (p.budgetBookName ? byKey.get(`n:${p.budgetBookName}`) : undefined) ??
+      null;
+  }, [evalYear]);
   const accent = "#1798D0";
 
   // --- 表示単位（総額 / 1人あたり） ---
@@ -302,6 +317,7 @@ export default function BudgetTrace() {
       themePer: fmtPerCap(total, data.pop),
       themeKanChips: Object.entries(kanAgg).map(([nm, v]) => ({ name: nm, amtFmt: fmtV(v), sw: D.PALETTE[kanIdx(nm) % D.PALETTE.length], open: () => nav({ screen: "drill", drillSide: "exp", drillPath: [nm] }) })),
       themeProjects: ps.map((p) => ({
+        evaluation: evalFor(p),
         name: p.name, summary: p.description, kanPath: p.kan ?? p.shisaku, kubun: p.kubun ?? "",
         budgetFmt: fmtV(p.amountOku), sub: subV(p.amountOku), shisaku: p.shisaku,
         refLabel: p.refLabel, refUrl: p.refLocalUrl,
@@ -496,6 +512,7 @@ export default function BudgetTrace() {
       return {
         hasRealProjects: rows.length > 0,
         realProjects: rows.map((p) => ({
+          evaluation: evalFor(p),
           no: p.no, kubun: p.kubun ?? "", name: p.name,
           bookName: p.budgetBookName ? `（${p.budgetBookName}）` : "",
           amountFmt: fmtOku(p.amountOku), desc: p.description,

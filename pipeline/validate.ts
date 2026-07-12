@@ -167,6 +167,29 @@ if (doc.docType === "budget-execution") {
   finish(doc.facts.length, "款");
 }
 
+// ---- 行政評価（事務事業評価） -------------------------------------------------
+if (doc.docType === "project-evaluation") {
+  const seenNames = new Set<string>();
+  for (const f of doc.facts) {
+    // 同名事業は原則ないが、部・課違いの再掲があり得るため warning に留める
+    if (seenNames.has(f.name)) {
+      issues.push({ level: "warning", message: `事業「${f.name}」が重複しています（再掲の可能性）` });
+    }
+    seenNames.add(f.name);
+    if (f.scoreTotal != null && (f.scoreTotal < 6 || f.scoreTotal > 24)) {
+      issues.push({ level: "error", message: `事業「${f.name}」: 合計点数が範囲外 (${f.scoreTotal})` });
+    }
+  }
+  if (doc.facts.length < 10) {
+    issues.push({ level: "warning", message: `事業数が少なすぎます（${doc.facts.length}件）— 取りこぼしの可能性` });
+  }
+  finish(doc.facts.length, "事業");
+}
+
+if (doc.docType !== "municipal-accounts") {
+  throw new Error(`未知の docType: ${(doc as { docType: string }).docType}`);
+}
+
 const seen = new Set<string>();
 
 for (const f of doc.facts) {

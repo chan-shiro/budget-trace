@@ -1,0 +1,3598 @@
+{
+  "docType": "project-evaluation",
+  "sourceId": "kofu-gyousei-hyouka-h29",
+  "parser": "kofu-gyousei-hyouka",
+  "parserVersion": "0.1.0",
+  "parsedAt": "2026-07-12T13:57:22.548Z",
+  "fiscalYear": "H29",
+  "formNote": "list-simple",
+  "facts": [
+    {
+      "name": "幼稚園就園奨励事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "子ども未来部",
+      "ka": "子ども保育課",
+      "shisaku": "①子ども・子育てへの支援一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 4
+      }
+    },
+    {
+      "name": "公立保育所事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "子ども未来部",
+      "ka": "子ども保育課",
+      "shisaku": "①子ども・子育てへの支援一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 5
+      }
+    },
+    {
+      "name": "教育･保育施設等運営給付事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "子ども未来部",
+      "ka": "子ども保育課",
+      "shisaku": "①子ども・子育てへの支援一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 7
+      }
+    },
+    {
+      "name": "教育･保育施設等整備事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "子ども未来部",
+      "ka": "子ども保育課",
+      "shisaku": "①子ども・子育てへの支援一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 8
+      }
+    },
+    {
+      "name": "すこやか子育て医療費助成事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "子ども未来部",
+      "ka": "子ども支援課",
+      "shisaku": "①子ども・子育てへの支援一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 10
+      }
+    },
+    {
+      "name": "ひとり親家庭等医療費助成事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "子ども未来部",
+      "ka": "子ども支援課",
+      "shisaku": "①子ども・子育てへの支援一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 11
+      }
+    },
+    {
+      "name": "多子世帯等への利用者負担額（保育料）軽減事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "子ども未来部",
+      "ka": "子ども支援課",
+      "shisaku": "①子ども・子育てへの支援一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 12
+      }
+    },
+    {
+      "name": "児童手当支給事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "子ども未来部",
+      "ka": "子ども支援課",
+      "shisaku": "①子ども・子育てへの支援一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 13
+      }
+    },
+    {
+      "name": "ひとり親等福祉事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "子ども未来部",
+      "ka": "子ども支援課",
+      "shisaku": "①子ども・子育てへの支援一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 14
+      }
+    },
+    {
+      "name": "母子生活支援施設等措置事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "子ども未来部",
+      "ka": "子ども支援課",
+      "shisaku": "①子ども・子育てへの支援一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 15
+      }
+    },
+    {
+      "name": "養育医療事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "子ども未来部",
+      "ka": "母子保健課",
+      "shisaku": "①子ども・子育てへの支援一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 16
+      }
+    },
+    {
+      "name": "子育て総合相談窓口運営事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "子ども未来部",
+      "ka": "子ども支援課",
+      "shisaku": "①子ども・子育てへの支援一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 17
+      }
+    },
+    {
+      "name": "子ども・子育て支援事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "子ども未来部",
+      "ka": "子ども保育課",
+      "shisaku": "①子ども・子育てへの支援一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 18
+      }
+    },
+    {
+      "name": "幼児教育センター事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "子ども未来部",
+      "ka": "子ども支援課",
+      "shisaku": "①子ども・子育てへの支援一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 20
+      }
+    },
+    {
+      "name": "子育て・お助け隊派遣事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "子ども未来部",
+      "ka": "子ども支援課",
+      "shisaku": "①子ども・子育てへの支援一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 23
+      }
+    },
+    {
+      "name": "小学校外国語活動推進事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "学校教育課",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 24
+      }
+    },
+    {
+      "name": "きめ細かな教育推進事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "学校教育課",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 26
+      }
+    },
+    {
+      "name": "サポートティチャー事業(小学校)",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "学校教育課",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 27
+      }
+    },
+    {
+      "name": "サポートティチャー事業(中学校)",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "学校教育課",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 28
+      }
+    },
+    {
+      "name": "教育指導事業（小学校）",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "学校教育課",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 29
+      }
+    },
+    {
+      "name": "維持管理事務（中学校）",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "学事課",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 32
+      }
+    },
+    {
+      "name": "学校行事事務（小学校）",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "学事課",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 33
+      }
+    },
+    {
+      "name": "学校行事事務（中学校）",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "学事課",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 34
+      }
+    },
+    {
+      "name": "新しい時代を担う人づくり基金事業(甲府の教育推進事業）",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "学校教育課",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 35
+      }
+    },
+    {
+      "name": "教育指導研究センター事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "学校教育課",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 39
+      }
+    },
+    {
+      "name": "教育研修所事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "学校教育課",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 40
+      }
+    },
+    {
+      "name": "学校保健事業（小学校）",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教",
+      "ka": "学事課",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 43
+      }
+    },
+    {
+      "name": "学校保健事業（中学校）",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教",
+      "ka": "学事課",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 44
+      }
+    },
+    {
+      "name": "小学校老朽化リニューアル事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "建築営繕課",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 45
+      }
+    },
+    {
+      "name": "中学校老朽化リニューアル事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "建築営繕課",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 46
+      }
+    },
+    {
+      "name": "教材・情報環境整備事業（小学校）",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "学事課",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 47
+      }
+    },
+    {
+      "name": "教材・情報環境整備事業（中学校）",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "学事課",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 48
+      }
+    },
+    {
+      "name": "小学校給食室整備事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "建築営繕課",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 49
+      }
+    },
+    {
+      "name": "学校営繕事業（小学校）",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "教育施設課",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 50
+      }
+    },
+    {
+      "name": "学校営繕事業（中学校）",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "教育施設課",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 51
+      }
+    },
+    {
+      "name": "教育振興助成事務（小学校）",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "学事課",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 54
+      }
+    },
+    {
+      "name": "教育振興助成事務（中学校）",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "学事課",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 55
+      }
+    },
+    {
+      "name": "外国人講師による英語指導事業（高校）",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "学校教育課",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 57
+      }
+    },
+    {
+      "name": "商業高等学校管理事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "商業事務局",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 60
+      }
+    },
+    {
+      "name": "商業高等学校保健厚生事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "商業事務局",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 63
+      }
+    },
+    {
+      "name": "商科専門学校事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "商科事務局",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 64
+      }
+    },
+    {
+      "name": "商科専門学校振興事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "商科事務局",
+      "shisaku": "②学校教育の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 66
+      }
+    },
+    {
+      "name": "青少年宿泊施設管理事業",
+      "grade": "F",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "子ども未来部",
+      "ka": "子ども支援課",
+      "shisaku": "③青少年の健全育成一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 67
+      }
+    },
+    {
+      "name": "チビッコ広場整備事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "子ども未来部",
+      "ka": "子ども支援課",
+      "shisaku": "③青少年の健全育成一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 68
+      }
+    },
+    {
+      "name": "青少年健全育成事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "子ども未来部",
+      "ka": "子ども支援課",
+      "shisaku": "③青少年の健全育成一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 69
+      }
+    },
+    {
+      "name": "成人式事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "生涯学習文化課",
+      "shisaku": "③青少年の健全育成一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 70
+      }
+    },
+    {
+      "name": "公民館管理運営事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "生涯学習文化課",
+      "shisaku": "①生涯学習の充実一次評価　B二次評価　C外部評価　C",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 73
+      }
+    },
+    {
+      "name": "総合市民会館管理運営事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "生涯学習文化課",
+      "shisaku": "①生涯学習の充実一次評価　B二次評価　C外部評価　C",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 74
+      }
+    },
+    {
+      "name": "開府500年・甲府の歴史を学ぶ事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "生涯学習文化課",
+      "shisaku": "③文化・芸術の振興一次評価　C二次評価　C",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 80
+      }
+    },
+    {
+      "name": "藤村記念館事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "生涯学習文化課",
+      "shisaku": "③文化・芸術の振興一次評価　C二次評価　C",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 81
+      }
+    },
+    {
+      "name": "人権推進事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市民部",
+      "ka": "人権男女参画課",
+      "shisaku": "④人権尊重・男女共同参画の推進一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 87
+      }
+    },
+    {
+      "name": "平和都市宣言事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市民部",
+      "ka": "総務課",
+      "shisaku": "④人権尊重・男女共同参画の推進一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 88
+      }
+    },
+    {
+      "name": "融資対策事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "産業部",
+      "ka": "商工課",
+      "shisaku": "①商業・工業の振興一次評価　B二次評価　B外部評価　C",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 95
+      }
+    },
+    {
+      "name": "地場産業振興対策事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "産業部",
+      "ka": "商工課",
+      "shisaku": "①商業・工業の振興一次評価　B二次評価　B外部評価　C",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 97
+      }
+    },
+    {
+      "name": "農業経営基盤強化促進対策事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "産業部",
+      "ka": "農政課",
+      "shisaku": "②農業・林業の振興一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 98
+      }
+    },
+    {
+      "name": "農業振興地域管理事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "産業部",
+      "ka": "農政課",
+      "shisaku": "②農業・林業の振興一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 101
+      }
+    },
+    {
+      "name": "中山間地域等直接支払事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "産業部",
+      "ka": "農政課",
+      "shisaku": "②農業・林業の振興一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 102
+      }
+    },
+    {
+      "name": "農業委員会事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "農業委員会",
+      "ka": "農政課",
+      "shisaku": "②農業・林業の振興一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 103
+      }
+    },
+    {
+      "name": "地域整備事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "産業部",
+      "ka": "農政課",
+      "shisaku": "②農業・林業の振興一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 105
+      }
+    },
+    {
+      "name": "森づくり推進事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "産業部",
+      "ka": "林政課",
+      "shisaku": "②農業・林業の振興一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 108
+      }
+    },
+    {
+      "name": "小規模治山事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "産業部",
+      "ka": "林政課",
+      "shisaku": "②農業・林業の振興一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 109
+      }
+    },
+    {
+      "name": "既設林道維持管理事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "産業部",
+      "ka": "林政課",
+      "shisaku": "②農業・林業の振興一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 110
+      }
+    },
+    {
+      "name": "こうふフューチャーサーチ普及促進事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "企画部",
+      "ka": "企画課",
+      "shisaku": "③雇用対策の推進一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 115
+      }
+    },
+    {
+      "name": "雇用促進対策事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "産業部",
+      "ka": "雇用創生課",
+      "shisaku": "③雇用対策の推進一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 116
+      }
+    },
+    {
+      "name": "労働福祉事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "産業部",
+      "ka": "雇用創生課",
+      "shisaku": "③雇用対策の推進一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 119
+      }
+    },
+    {
+      "name": "地方卸売市場運営事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "産業部",
+      "ka": "経営管理課",
+      "shisaku": "④卸売市場の活性化一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 120
+      }
+    },
+    {
+      "name": "地方卸売市場施設整備事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "産業部",
+      "ka": "経営管理課",
+      "shisaku": "④卸売市場の活性化一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 121
+      }
+    },
+    {
+      "name": "観光開発事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "産業部",
+      "ka": "観光課",
+      "shisaku": "①観光の振興一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 123
+      }
+    },
+    {
+      "name": "観光施設整備事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "産業部",
+      "ka": "観光課",
+      "shisaku": "①観光の振興一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 125
+      }
+    },
+    {
+      "name": "優良建築物等整備事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "都市計画課",
+      "shisaku": "②中心市街地の活性化一次評価　C二次評価　C外部評価　C",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 128
+      }
+    },
+    {
+      "name": "中心市街地定住促進事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "都市計画課",
+      "shisaku": "②中心市街地の活性化一次評価　C二次評価　C外部評価　C",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 129
+      }
+    },
+    {
+      "name": "甲府駅周辺拠点形成事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "区画整理課",
+      "shisaku": "②中心市街地の活性化一次評価　C二次評価　C外部評価　C",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 130
+      }
+    },
+    {
+      "name": "移住・定住促進事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "企画部",
+      "ka": "地域振興課",
+      "shisaku": "③移住・定住の促進一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 132
+      }
+    },
+    {
+      "name": "防災事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市長直轄組織",
+      "ka": "防災企画課",
+      "shisaku": "①防災・危機管理対策の推進一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 133
+      }
+    },
+    {
+      "name": "総合防災訓練事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市長直轄組織",
+      "ka": "防災企画課",
+      "shisaku": "①防災・危機管理対策の推進一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 134
+      }
+    },
+    {
+      "name": "防災行政用無線管理事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市長直轄組織",
+      "ka": "防災企画課",
+      "shisaku": "①防災・危機管理対策の推進一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 135
+      }
+    },
+    {
+      "name": "防災対策整備事業",
+      "grade": "A",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市長直轄組織",
+      "ka": "防災企画課",
+      "shisaku": "①防災・危機管理対策の推進一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 136
+      }
+    },
+    {
+      "name": "災害救助事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "生活福祉課",
+      "shisaku": "①防災・危機管理対策の推進一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 137
+      }
+    },
+    {
+      "name": "水防事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "道路河川課",
+      "shisaku": "①防災・危機管理対策の推進一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 138
+      }
+    },
+    {
+      "name": "危機管理対策事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市長直轄組織",
+      "ka": "危機管理課",
+      "shisaku": "①防災・危機管理対策の推進一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 140
+      }
+    },
+    {
+      "name": "常備消防事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "消防本部",
+      "ka": "警防課",
+      "shisaku": "②消防・救急体制の充実一次評価　A二次評価　A",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 141
+      }
+    },
+    {
+      "name": "消火栓設置事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "消防本部",
+      "ka": "警防課",
+      "shisaku": "②消防・救急体制の充実一次評価　A二次評価　A",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 142
+      }
+    },
+    {
+      "name": "消防施設等整備事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "消防本部",
+      "ka": "警防",
+      "shisaku": "②消防・救急体制の充実一次評価　A二次評価　A",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 143
+      }
+    },
+    {
+      "name": "非常備消防事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "消防本部",
+      "ka": "警防課人事課",
+      "shisaku": "②消防・救急体制の充実一次評価　A二次評価　A",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 144
+      }
+    },
+    {
+      "name": "交通安全対策事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市民部",
+      "ka": "消費生活課",
+      "shisaku": "③防犯・交通安全対策の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 146
+      }
+    },
+    {
+      "name": "社会を明るくする運動事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市民部",
+      "ka": "総務課",
+      "shisaku": "③防犯・交通安全対策の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 147
+      }
+    },
+    {
+      "name": "運転免許証返納高齢者支援事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市民部",
+      "ka": "消費生活課",
+      "shisaku": "③防犯・交通安全対策の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 148
+      }
+    },
+    {
+      "name": "安全安心街づくり事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市長直轄組織",
+      "ka": "危機管理課",
+      "shisaku": "③防犯・交通安全対策の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 149
+      }
+    },
+    {
+      "name": "街路灯助成事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市民部",
+      "ka": "協働推進課",
+      "shisaku": "③防犯・交通安全対策の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 150
+      }
+    },
+    {
+      "name": "学校安全安心推進事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "教育部",
+      "ka": "学事課学校教育課",
+      "shisaku": "③防犯・交通安全対策の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 151
+      }
+    },
+    {
+      "name": "交通安全施設整備事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "道路河川課",
+      "shisaku": "③防犯・交通安全対策の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 152
+      }
+    },
+    {
+      "name": "通学路交通安全対策事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "道路河川課",
+      "shisaku": "③防犯・交通安全対策の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 154
+      }
+    },
+    {
+      "name": "消費者啓発育成事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市民部",
+      "ka": "消費生活課",
+      "shisaku": "④消費者保護の推進一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 156
+      }
+    },
+    {
+      "name": "計量検査事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市民部",
+      "ka": "消費生活課",
+      "shisaku": "④消費者保護の推進一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 157
+      }
+    },
+    {
+      "name": "社会福祉総務事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "総務課",
+      "shisaku": "①地域福祉の推進一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 158
+      }
+    },
+    {
+      "name": "民生委員関係事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "総務課",
+      "shisaku": "①地域福祉の推進一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 160
+      }
+    },
+    {
+      "name": "戦没者・原水爆被爆者等援護事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "障がい福祉課",
+      "shisaku": "①地域福祉の推進一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 161
+      }
+    },
+    {
+      "name": "福祉センター建設事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "高齢者福祉課",
+      "shisaku": "②高齢者福祉の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 163
+      }
+    },
+    {
+      "name": "福祉センター事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "高齢者福祉課",
+      "shisaku": "②高齢者福祉の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 164
+      }
+    },
+    {
+      "name": "若竹ねぎらい事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "高齢者福祉課",
+      "shisaku": "②高齢者福祉の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 166
+      }
+    },
+    {
+      "name": "在日外国人高齢者等福祉給付金支給事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "高齢者福祉課",
+      "shisaku": "②高齢者福祉の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 168
+      }
+    },
+    {
+      "name": "老人保護措置事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "高齢者福祉課",
+      "shisaku": "②高齢者福祉の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 169
+      }
+    },
+    {
+      "name": "介護保険対策事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "介護保険課",
+      "shisaku": "②高齢者福祉の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 170
+      }
+    },
+    {
+      "name": "介護保険サービス事業",
+      "grade": "A",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "高齢者福祉課",
+      "shisaku": "②高齢者福祉の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 172
+      }
+    },
+    {
+      "name": "重度心身障害者医療費助成事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "障がい福祉課",
+      "shisaku": "③障がい者福祉の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 173
+      }
+    },
+    {
+      "name": "障害児通所支援事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "障がい福祉課",
+      "shisaku": "③障がい者福祉の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 174
+      }
+    },
+    {
+      "name": "自立支援サービス事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "障がい福祉課",
+      "shisaku": "③障がい者福祉の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 175
+      }
+    },
+    {
+      "name": "自立支援医療事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "障がい福祉課",
+      "shisaku": "③障がい者福祉の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 176
+      }
+    },
+    {
+      "name": "自立支援補装具事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "障がい福祉課",
+      "shisaku": "③障がい者福祉の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 177
+      }
+    },
+    {
+      "name": "自立支援給付審査会事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "障がい福祉課",
+      "shisaku": "③障がい者福祉の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 178
+      }
+    },
+    {
+      "name": "特別障害者手当等支給事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "障がい福祉課",
+      "shisaku": "③障がい者福祉の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 179
+      }
+    },
+    {
+      "name": "心身障害児童福祉手当支給事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "障がい福祉課",
+      "shisaku": "③障がい者福祉の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 180
+      }
+    },
+    {
+      "name": "障害者のすみよいまちづくり事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "障がい福祉課",
+      "shisaku": "③障がい者福祉の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 181
+      }
+    },
+    {
+      "name": "地域生活支援事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "障がい福祉課",
+      "shisaku": "③障がい者福祉の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 182
+      }
+    },
+    {
+      "name": "障害者センター事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "障がい福祉課",
+      "shisaku": "③障がい者福祉の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 183
+      }
+    },
+    {
+      "name": "身体障害者福祉事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "障がい福祉課",
+      "shisaku": "③障がい者福祉の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 184
+      }
+    },
+    {
+      "name": "行旅病人死亡人取扱事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "生活福祉課",
+      "shisaku": "④社会保障の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 185
+      }
+    },
+    {
+      "name": "生活保護総務事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "生活福祉課",
+      "shisaku": "④社会保障の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 186
+      }
+    },
+    {
+      "name": "中国残留邦人生活支援事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "生活福祉課",
+      "shisaku": "④社会保障の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 187
+      }
+    },
+    {
+      "name": "生活保護受給者就労支援事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "生活福祉課",
+      "shisaku": "④社会保障の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 188
+      }
+    },
+    {
+      "name": "生活保護適正実施推進事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "生活福祉課",
+      "shisaku": "④社会保障の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 189
+      }
+    },
+    {
+      "name": "生活保護扶助事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "生活福祉課",
+      "shisaku": "④社会保障の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 190
+      }
+    },
+    {
+      "name": "国民健康保険事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市民部",
+      "ka": "国民健康保険課",
+      "shisaku": "④社会保障の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 193
+      }
+    },
+    {
+      "name": "後期高齢者医療事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "高齢者福祉課",
+      "shisaku": "④社会保障の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 194
+      }
+    },
+    {
+      "name": "介護保険運営事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "介護保険課",
+      "shisaku": "④社会保障の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 195
+      }
+    },
+    {
+      "name": "国民年金事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市民部",
+      "ka": "市民課",
+      "shisaku": "④社会保障の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 196
+      }
+    },
+    {
+      "name": "市民いこいの里管理事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "産業部",
+      "ka": "雇用創生課",
+      "shisaku": "⑤健康づくりの推進一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 201
+      }
+    },
+    {
+      "name": "健康診査事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "健康衛生課",
+      "shisaku": "⑤健康づくりの推進一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 202
+      }
+    },
+    {
+      "name": "母子保健事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "子ども未来部",
+      "ka": "母子保健課",
+      "shisaku": "⑤健康づくりの推進一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 205
+      }
+    },
+    {
+      "name": "地域医療連携事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市立甲府病院事務局",
+      "ka": "総務課",
+      "shisaku": "⑥医療環境の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 207
+      }
+    },
+    {
+      "name": "医療機器等整備事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市立甲府病院事務局",
+      "ka": "総務課",
+      "shisaku": "⑥医療環境の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 208
+      }
+    },
+    {
+      "name": "国民健康保険事業（直営診療）",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市民部",
+      "ka": "国民健康保険課",
+      "shisaku": "⑥医療環境の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 209
+      }
+    },
+    {
+      "name": "地域医療センター管理事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "健康衛生課",
+      "shisaku": "⑥医療環境の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 212
+      }
+    },
+    {
+      "name": "都市公園等照明灯改修事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "公園緑地課",
+      "shisaku": "①自然環境の保全と地球温暖化対策の推進一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 214
+      }
+    },
+    {
+      "name": "都市美化事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "環境部",
+      "ka": "収集課",
+      "shisaku": "①自然環境の保全と地球温暖化対策の推進一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 215
+      }
+    },
+    {
+      "name": "環境対策事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "環境部",
+      "ka": "環境保全課",
+      "shisaku": "①自然環境の保全と地球温暖化対策の推進一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 216
+      }
+    },
+    {
+      "name": "森林保護事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "産業部",
+      "ka": "林政課",
+      "shisaku": "①自然環境の保全と地球温暖化対策の推進一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 217
+      }
+    },
+    {
+      "name": "動物園管理事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "公園緑地課",
+      "shisaku": "②公園の整備と緑化の推進一次評価　B二次評価　C",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 222
+      }
+    },
+    {
+      "name": "都市公園管理事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "公園緑地課",
+      "shisaku": "②公園の整備と緑化の推進一次評価　B二次評価　C",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 223
+      }
+    },
+    {
+      "name": "圃場管理事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "公園緑地課",
+      "shisaku": "②公園の整備と緑化の推進一次評価　B二次評価　C",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 224
+      }
+    },
+    {
+      "name": "明るくきれいなまちづくり基金事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "環境部",
+      "ka": "減量課",
+      "shisaku": "③循環型社会の構築一次評価　C二次評価　C",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 226
+      }
+    },
+    {
+      "name": "塵芥収集事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "環境部",
+      "ka": "収集課",
+      "shisaku": "③循環型社会の構築一次評価　C二次評価　C",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 228
+      }
+    },
+    {
+      "name": "リサイクルプラザ管理運営事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "環境部",
+      "ka": "減量課",
+      "shisaku": "③循環型社会の構築一次評価　C二次評価　C",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 229
+      }
+    },
+    {
+      "name": "最終処分場事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "環境部",
+      "ka": "処理課",
+      "shisaku": "③循環型社会の構築一次評価　C二次評価　C",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 230
+      }
+    },
+    {
+      "name": "附属破砕工場事業",
+      "grade": "F",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "環境部",
+      "ka": "処理課",
+      "shisaku": "③循環型社会の構築一次評価　C二次評価　C",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 232
+      }
+    },
+    {
+      "name": "施設運営事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "環境部",
+      "ka": "処理課",
+      "shisaku": "③循環型社会の構築一次評価　C二次評価　C",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 233
+      }
+    },
+    {
+      "name": "最終処分場建設事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "環境部",
+      "ka": "処理課",
+      "shisaku": "③循環型社会の構築一次評価　C二次評価　C",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 234
+      }
+    },
+    {
+      "name": "環境センター地域環境整備事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "環境部",
+      "ka": "総務課",
+      "shisaku": "③循環型社会の構築一次評価　C二次評価　C",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 235
+      }
+    },
+    {
+      "name": "甲府駅南口周辺地域修景計画事業",
+      "grade": "F",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "都市計画課",
+      "shisaku": "④良好な景観の形成一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 236
+      }
+    },
+    {
+      "name": "景観まちづくり推進事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "都市計画課",
+      "shisaku": "④良好な景観の形成一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 237
+      }
+    },
+    {
+      "name": "公営住宅整備事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "住宅課",
+      "shisaku": "⑤住環境の向上一次評価　B二次評価　C外部評価　C",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 239
+      }
+    },
+    {
+      "name": "水源保全事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "上下水道局工務部",
+      "ka": "水保全課",
+      "shisaku": "⑥水道水の安定供給一次評価　A二次評価　A",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 245
+      }
+    },
+    {
+      "name": "水質対策事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "上下水道局工務部",
+      "ka": "水保全課浄水課",
+      "shisaku": "⑥水道水の安定供給一次評価　A二次評価　A",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 246
+      }
+    },
+    {
+      "name": "水質検査体制事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "上下水道局工務部",
+      "ka": "浄水課",
+      "shisaku": "⑥水道水の安定供給一次評価　A二次評価　A",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 247
+      }
+    },
+    {
+      "name": "古関・梯町簡易水道事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "上下水道局工務部",
+      "ka": "水保全課",
+      "shisaku": "⑥水道水の安定供給一次評価　A二次評価　A",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 249
+      }
+    },
+    {
+      "name": "簡易水道等事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "上下水道局工務部",
+      "ka": "水保全課",
+      "shisaku": "⑥水道水の安定供給一次評価　A二次評価　A",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 250
+      }
+    },
+    {
+      "name": "浄水場等施設更新事業（管路施設を除く）",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "上下水道局工務部",
+      "ka": "浄水課",
+      "shisaku": "⑥水道水の安定供給一次評価　A二次評価　A",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 252
+      }
+    },
+    {
+      "name": "経年管路更新（耐震化）事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "上下水道局工務部",
+      "ka": "水道課",
+      "shisaku": "⑥水道水の安定供給一次評価　A二次評価　A",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 254
+      }
+    },
+    {
+      "name": "汚水管きょ整備事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "上下水道局工務部",
+      "ka": "下水道課",
+      "shisaku": "⑦生活排水の適正処理一次評価　A二次評価　A",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 255
+      }
+    },
+    {
+      "name": "下水道地震対策整備事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "上下水道局工務部",
+      "ka": "下水道課浄化センター",
+      "shisaku": "⑦生活排水の適正処理一次評価　A二次評価　A",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 257
+      }
+    },
+    {
+      "name": "甲府市浄化センター施設改築（更新）計画事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "上下水道局工務部",
+      "ka": "浄化センター",
+      "shisaku": "⑦生活排水の適正処理一次評価　A二次評価　A",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 259
+      }
+    },
+    {
+      "name": "ポンプ場施設改築（更新）計画事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "上下水道局工務部",
+      "ka": "浄化センター",
+      "shisaku": "⑦生活排水の適正処理一次評価　A二次評価　A",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 260
+      }
+    },
+    {
+      "name": "浄化槽事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "環境部",
+      "ka": "環境保全課",
+      "shisaku": "⑦生活排水の適正処理一次評価　A二次評価　A",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 261
+      }
+    },
+    {
+      "name": "生活排水対策事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "環境部",
+      "ka": "環境保全課",
+      "shisaku": "⑦生活排水の適正処理一次評価　A二次評価　A",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 262
+      }
+    },
+    {
+      "name": "農業集落排水事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "産業部",
+      "ka": "農政課",
+      "shisaku": "⑦生活排水の適正処理一次評価　A二次評価　A",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 263
+      }
+    },
+    {
+      "name": "し尿処理事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "環境部",
+      "ka": "処理課",
+      "shisaku": "⑧生活衛生の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 264
+      }
+    },
+    {
+      "name": "斎場管理事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "健康衛生課",
+      "shisaku": "⑧生活衛生の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 265
+      }
+    },
+    {
+      "name": "つつじが崎霊園管理事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "公園緑地課",
+      "shisaku": "⑧生活衛生の充実一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 266
+      }
+    },
+    {
+      "name": "公衆衛生事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "健康衛生課",
+      "shisaku": "⑧生活衛生の充実一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 269
+      }
+    },
+    {
+      "name": "在来鉄道の利便性向上事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "企画部",
+      "ka": "交通政策課",
+      "shisaku": "①公共交通の利便性の向上一次評価　B二次評価　C",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 273
+      }
+    },
+    {
+      "name": "城東三丁目敷島線整備事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "都市計画課",
+      "shisaku": "②道路の整備一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 274
+      }
+    },
+    {
+      "name": "高速交通体系整備事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "都市計画課",
+      "shisaku": "②道路の整備一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 275
+      }
+    },
+    {
+      "name": "和戸町竜王線整備事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "都市整備課",
+      "shisaku": "②道路の整備一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 277
+      }
+    },
+    {
+      "name": "都市整備事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "都市整備課",
+      "shisaku": "②道路の整備一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 279
+      }
+    },
+    {
+      "name": "市道側溝整備事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "道路河川課",
+      "shisaku": "②道路の整備一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 282
+      }
+    },
+    {
+      "name": "橋りょう整備事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "道路河川課",
+      "shisaku": "②道路の整備一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 284
+      }
+    },
+    {
+      "name": "橋りょう長寿命化修繕事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "道路河川課",
+      "shisaku": "②道路の整備一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 285
+      }
+    },
+    {
+      "name": "道路用地管理事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "道路河川課",
+      "shisaku": "②道路の整備一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 286
+      }
+    },
+    {
+      "name": "道路維持管理事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "道路河川課",
+      "shisaku": "②道路の整備一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 287
+      }
+    },
+    {
+      "name": "市道舗装（補修）事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "道路河川課",
+      "shisaku": "②道路の整備一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 288
+      }
+    },
+    {
+      "name": "落石防止柵設置事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "道路河川課",
+      "shisaku": "②道路の整備一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 289
+      }
+    },
+    {
+      "name": "濁川西地区整備事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "都市整備課",
+      "shisaku": "③市街地の整備一次評価　C二次評価　C",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 291
+      }
+    },
+    {
+      "name": "都市計画事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "都市計画課",
+      "shisaku": "④計画的な土地利用の推進一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 292
+      }
+    },
+    {
+      "name": "土地開発指導事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "都市計画課",
+      "shisaku": "④計画的な土地利用の推進一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 293
+      }
+    },
+    {
+      "name": "建築指導事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "建築指導課",
+      "shisaku": "④計画的な土地利用の推進一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 294
+      }
+    },
+    {
+      "name": "地籍調査事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "建設部",
+      "ka": "地籍調査課",
+      "shisaku": "④計画的な土地利用の推進一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 297
+      }
+    },
+    {
+      "name": "地域集会施設整備助成事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市民部",
+      "ka": "協働推進課",
+      "shisaku": "協働の推進一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 300
+      }
+    },
+    {
+      "name": "悠遊館等施設管理事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市民部",
+      "ka": "協働推進課",
+      "shisaku": "協働の推進一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 303
+      }
+    },
+    {
+      "name": "広報推進事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市民部",
+      "ka": "ｼﾃｨﾌﾟﾛﾓｰｼｮﾝ課",
+      "shisaku": "協働の推進一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 304
+      }
+    },
+    {
+      "name": "広聴活動事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市民部",
+      "ka": "協働推進課",
+      "shisaku": "協働の推進一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 305
+      }
+    },
+    {
+      "name": "広域行政推進事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "企画部",
+      "ka": "企画課",
+      "shisaku": "広域的な連携の推進一次評価　A二次評価　A",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 306
+      }
+    },
+    {
+      "name": "地域連携軸形成事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "企画部",
+      "ka": "企画課",
+      "shisaku": "広域的な連携の推進一次評価　A二次評価　A",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 307
+      }
+    },
+    {
+      "name": "庁舎管理事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "総務部",
+      "ka": "管財課",
+      "shisaku": "持続可能な行財政運営一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 310
+      }
+    },
+    {
+      "name": "財産管理事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "総務部",
+      "ka": "管財課",
+      "shisaku": "持続可能な行財政運営一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 311
+      }
+    },
+    {
+      "name": "車両管理事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "総務部",
+      "ka": "管財課",
+      "shisaku": "持続可能な行財政運営一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 312
+      }
+    },
+    {
+      "name": "こうふ開府500年記念事業",
+      "grade": "A",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "企画部",
+      "ka": "開府500年企画課開府500年事業課",
+      "shisaku": "持続可能な行財政運営一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 313
+      }
+    },
+    {
+      "name": "新事業形成事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "企画部",
+      "ka": "企画課",
+      "shisaku": "持続可能な行財政運営一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 315
+      }
+    },
+    {
+      "name": "個人番号制度管理事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市民部",
+      "ka": "市民課",
+      "shisaku": "持続可能な行財政運営一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 318
+      }
+    },
+    {
+      "name": "住居番号街区表示板整理事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市民部",
+      "ka": "市民課",
+      "shisaku": "持続可能な行財政運営一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 319
+      }
+    },
+    {
+      "name": "上九一色出張所事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市民部",
+      "ka": "上九一色窓口センター",
+      "shisaku": "持続可能な行財政運営一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 320
+      }
+    },
+    {
+      "name": "窓口センター事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市民部",
+      "ka": "総務課",
+      "shisaku": "持続可能な行財政運営一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 321
+      }
+    },
+    {
+      "name": "中道支所事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市民部",
+      "ka": "中道窓口センター",
+      "shisaku": "持続可能な行財政運営一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 322
+      }
+    },
+    {
+      "name": "企画事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "企画部",
+      "ka": "総務課",
+      "shisaku": "持続可能な行財政運営一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 323
+      }
+    },
+    {
+      "name": "市民税等滞納整理事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市民部",
+      "ka": "滞納整理課",
+      "shisaku": "持続可能な行財政運営一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 326
+      }
+    },
+    {
+      "name": "市民税等収納事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市民部",
+      "ka": "収納課",
+      "shisaku": "持続可能な行財政運営一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 327
+      }
+    },
+    {
+      "name": "市民税賦課事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市民部",
+      "ka": "市民税課",
+      "shisaku": "持続可能な行財政運営一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 328
+      }
+    },
+    {
+      "name": "固定資産税賦課事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市民部",
+      "ka": "資産税課",
+      "shisaku": "持続可能な行財政運営一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 329
+      }
+    },
+    {
+      "name": "財政管理事務",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "企画部",
+      "ka": "財政課",
+      "shisaku": "持続可能な行財政運営一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 331
+      }
+    },
+    {
+      "name": "公共施設等マネジメント推進事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "総務部",
+      "ka": "財産活用課",
+      "shisaku": "持続可能な行財政運営一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 332
+      }
+    },
+    {
+      "name": "中核市移行推進事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "市長直轄組織",
+      "ka": "中核市推進課",
+      "shisaku": "持続可能な行財政運営一次評価　B二次評価　B",
+      "kubun": "主要事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 335
+      }
+    },
+    {
+      "name": "保健所準備事業",
+      "grade": "B",
+      "prevGrade": null,
+      "scoreTotal": null,
+      "bu": "福祉保健部",
+      "ka": "保健所設置課",
+      "shisaku": "持続可能な行財政運営一次評価　B二次評価　B",
+      "kubun": "一般事業",
+      "purpose": null,
+      "budgetName": null,
+      "locator": {
+        "file": "kekkaitiran.xls",
+        "sheet": "事業一覧",
+        "row": 336
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "sourceId": "kofu-gyousei-hyouka-h30",
+  "validatedAt": "2026-07-12T13:57:22.809Z",
+  "status": "ok",
+  "issues": [
+    {
+      "level": "warning",
+      "message": "事業「健康づくり推進事業」が重複しています（再掲の可能性）"
+    },
+    {
+      "level": "warning",
+      "message": "事業「各種予防事業」が重複しています（再掲の可能性）"
+    },
+    {
+      "level": "warning",
+      "message": "事業「公共交通体系整備推進事業」が重複しています（再掲の可能性）"
+    }
+  ]
+}
