@@ -203,30 +203,22 @@ console.log(`✓ 類似自治体比較を導出 → src/client/lib/similar.gen.t
 console.log(`  自身: ${self.muniName} / 近隣: ${peers.map((p) => p.muniName).join("・")} / 帯内 ${band.length}市`);
 
 // ============================================================================
-// 甲府市 R8 予算書（款別）→ src/client/lib/kofu.gen.ts
-// アプリの KOFU 款レベル（従来は丸め値）を予算書パース値＋出典位置で置き換える。
-// 項以下のダミー内訳の按分は data.ts 側で行う（生成物は款レベルの事実のみ）。
+// 甲府市 当初予算（款別・複数年度）→ src/client/lib/kofu.gen.ts
+// アプリの款レベルを予算資料パース値＋出典位置で供給する。年度ごとに同じ形の
+// オブジェクトを作り、先頭（最新年度）を KOFU_BUDGET として互換エクスポートする。
 // ============================================================================
-const KOFU_SOURCE_ID = "kofu-yosansho-r8";
 // ダッシュボードの歳入表示グループ（款名の完全一致）。残りの款は「諸収入・その他」へ合算
 const REVENUE_GROUPS = [
   "市税", "国庫支出金", "地方交付税", "県支出金", "地方消費税交付金", "繰入金", "寄附金", "市債",
 ] as const;
 
-// 検証ゲート: needs_review の parsed を derive に通さない
-const kofuValidation = validationResultSchema.parse(readJson(validationPath(KOFU_SOURCE_ID)));
-if (kofuValidation.status !== "ok") {
-  throw new Error(`${KOFU_SOURCE_ID}: 検証が ${kofuValidation.status} のため derive しません`);
-}
-const kofuDoc = anyParsedDocSchema.parse(readJson(parsedPath(KOFU_SOURCE_ID)));
-if (kofuDoc.docType !== "budget-book") {
-  throw new Error(`${KOFU_SOURCE_ID}: budget-book ドキュメントではありません`);
-}
-const kofuMeta = readRawMeta(KOFU_SOURCE_ID);
-if (!kofuMeta) throw new Error(`${KOFU_SOURCE_ID}: raw-meta がありません（先に pipeline:fetch）`);
-const kofuSource = findSource(KOFU_SOURCE_ID);
-const kofuFile = kofuMeta.files[0]!;
-const kofuUrl = kofuSource.urls?.[0] ?? kofuSource.landingPage ?? "";
+// 収録済みの当初予算資料（新しい年度順）。popFy = 1人あたり換算に使う住基人口の
+// 決算状況調年度（決算状況調 R6 の人口 = 令7.1.1現在。予算年度の期首に最も近いものを選ぶ）
+const BUDGET_YEARS = [
+  { srcId: "kofu-yosansho-r8", fy: "R8", popFy: "R6" },
+  { srcId: "kofu-yosansho-r7", fy: "R7", popFy: "R6" },
+  { srcId: "kofu-yosansho-r6", fy: "R6", popFy: "R5" },
+] as const;
 
 const toOku = (thousandYen: number) => thousandYen / 100_000;
 const yoyPctOf = (cur: number, prev: number | null): number | null =>
@@ -242,93 +234,133 @@ interface KofuKanRowGen {
   /** 表示グループの内訳（実データの款）。「諸収入・その他」のみ持つ */
   children?: KofuKanRowGen[];
 }
-const kanRow = (
-  name: string,
-  amount: number,
-  prevAmount: number | null,
-  page: number,
-  refLabel?: string,
-): KofuKanRowGen => ({
-  name,
-  v: toOku(amount),
-  prevV: prevAmount != null ? toOku(prevAmount) : null,
-  yoy: yoyPctOf(amount, prevAmount),
-  ref: `${kofuFile.filename}#p${page}`,
-  refLabel: refLabel ?? `予算書 p.${page}`,
-});
 
-const expFacts = kofuDoc.facts.filter((f) => f.side === "expenditure");
-const revFacts = kofuDoc.facts.filter((f) => f.side === "revenue");
+const popCache = new Map<string, { population: number; populationLabel: string }>();
+function kofuPopulation(popFy: string): { population: number; populationLabel: string } {
+  const cached = popCache.get(popFy);
+  if (cached) return cached;
+  const popDs = normalizedDatasetSchema.parse(
+    readJson(normalizedPath("municipal-accounts", popFy, false)),
+  );
+  const rec = popDs.records.find((r) => r.muniCode === SELF_CODE);
+  if (!rec?.population) throw new Error(`municipal-accounts ${popFy}: 甲府市の人口がありません`);
+  const v = {
+    population: rec.population,
+    populationLabel: `住民基本台帳人口（令${Number(popFy.slice(1)) + 1}.1.1現在）`,
+  };
+  popCache.set(popFy, v);
+  return v;
+}
 
-const kofuExpenditure = expFacts
-  .map((f) => kanRow(f.kanName, f.amount, f.prevAmount, f.locator.page ?? 0))
-  .sort((a, b) => b.v - a.v);
+function buildKofuBudgetYear(entry: (typeof BUDGET_YEARS)[number]) {
+  const { srcId, fy, popFy } = entry;
+  // 検証ゲート: needs_review の parsed を derive に通さない
+  const validation = validationResultSchema.parse(readJson(validationPath(srcId)));
+  if (validation.status !== "ok") {
+    throw new Error(`${srcId}: 検証が ${validation.status} のため derive しません`);
+  }
+  const doc = anyParsedDocSchema.parse(readJson(parsedPath(srcId)));
+  if (doc.docType !== "budget-book") {
+    throw new Error(`${srcId}: budget-book ドキュメントではありません`);
+  }
+  const meta = readRawMeta(srcId);
+  if (!meta) throw new Error(`${srcId}: raw-meta がありません（先に pipeline:fetch）`);
+  const source = findSource(srcId);
+  const file = meta.files[0]!;
+  const url = source.urls?.[0] ?? source.landingPage ?? "";
 
-const groupedRevenue: KofuKanRowGen[] = REVENUE_GROUPS.map((g) => {
-  const f = revFacts.find((x) => x.kanName === g);
-  if (!f) throw new Error(`歳入款「${g}」が parsed にありません（表示グループの款名を見直してください）`);
-  return kanRow(f.kanName, f.amount, f.prevAmount, f.locator.page ?? 0);
-});
-const restFacts = revFacts.filter((f) => !(REVENUE_GROUPS as readonly string[]).includes(f.kanName));
-if (restFacts.length > 0) {
-  const restPage = restFacts[0]!.locator.page ?? 0;
-  groupedRevenue.push({
-    ...kanRow(
-      "諸収入・その他",
-      restFacts.reduce((a, f) => a + f.amount, 0),
-      restFacts.every((f) => f.prevAmount != null)
-        ? restFacts.reduce((a, f) => a + (f.prevAmount ?? 0), 0)
-        : null,
-      restPage,
-      `予算書 p.${restPage}（残り${restFacts.length}款の合算）`,
-    ),
-    // 合算グループだけは実データの款を内訳として持つ（ドリルダウン用）
-    children: restFacts
-      .map((f) => kanRow(f.kanName, f.amount, f.prevAmount, f.locator.page ?? 0))
-      .sort((a, b) => b.v - a.v),
+  const kanRow = (
+    name: string,
+    amount: number,
+    prevAmount: number | null,
+    page: number,
+    refLabel?: string,
+  ): KofuKanRowGen => ({
+    name,
+    v: toOku(amount),
+    prevV: prevAmount != null ? toOku(prevAmount) : null,
+    yoy: yoyPctOf(amount, prevAmount),
+    ref: `${file.filename}#p${page}`,
+    refLabel: refLabel ?? `予算書 p.${page}`,
   });
-}
-const kofuRevenue = [...groupedRevenue].sort((a, b) => b.v - a.v);
 
-// 合算の自己検証（グループ化でこぼしていないか）
-const revSum = kofuRevenue.reduce((a, r) => a + r.v, 0);
-if (Math.abs(revSum - toOku(kofuDoc.revenueTotal)) > 1e-6) {
-  throw new Error(`歳入グループの和 ${revSum} が歳入合計 ${toOku(kofuDoc.revenueTotal)} と一致しません`);
+  const expFacts = doc.facts.filter((f) => f.side === "expenditure");
+  const revFacts = doc.facts.filter((f) => f.side === "revenue");
+
+  const expenditure = expFacts
+    .map((f) => kanRow(f.kanName, f.amount, f.prevAmount, f.locator.page ?? 0))
+    .sort((a, b) => b.v - a.v);
+
+  const groupedRevenue: KofuKanRowGen[] = REVENUE_GROUPS.map((g) => {
+    const f = revFacts.find((x) => x.kanName === g);
+    if (!f) throw new Error(`${srcId}: 歳入款「${g}」が parsed にありません（表示グループの款名を見直してください）`);
+    return kanRow(f.kanName, f.amount, f.prevAmount, f.locator.page ?? 0);
+  });
+  const restFacts = revFacts.filter((f) => !(REVENUE_GROUPS as readonly string[]).includes(f.kanName));
+  if (restFacts.length > 0) {
+    const restPage = restFacts[0]!.locator.page ?? 0;
+    groupedRevenue.push({
+      ...kanRow(
+        "諸収入・その他",
+        restFacts.reduce((a, f) => a + f.amount, 0),
+        restFacts.every((f) => f.prevAmount != null)
+          ? restFacts.reduce((a, f) => a + (f.prevAmount ?? 0), 0)
+          : null,
+        restPage,
+        `予算書 p.${restPage}（残り${restFacts.length}款の合算）`,
+      ),
+      // 合算グループだけは実データの款を内訳として持つ（ドリルダウン用）
+      children: restFacts
+        .map((f) => kanRow(f.kanName, f.amount, f.prevAmount, f.locator.page ?? 0))
+        .sort((a, b) => b.v - a.v),
+    });
+  }
+  const revenue = [...groupedRevenue].sort((a, b) => b.v - a.v);
+
+  // 合算の自己検証（グループ化でこぼしていないか）
+  const revSum = revenue.reduce((a, r) => a + r.v, 0);
+  if (Math.abs(revSum - toOku(doc.revenueTotal)) > 1e-6) {
+    throw new Error(`${srcId}: 歳入グループの和 ${revSum} が歳入合計 ${toOku(doc.revenueTotal)} と一致しません`);
+  }
+
+  const yoyTotal = yoyPctOf(doc.expenditureTotal, doc.prevExpenditureTotal);
+  const pagesOpts = (source.parserOptions ?? {}) as {
+    revenuePage?: number;
+    expenditurePage?: number;
+    projectPages?: { from: number; to: number };
+  };
+  const pop = kofuPopulation(popFy);
+  const budget = {
+    fy,
+    fyLabel: `令和${fy.slice(1)}年度 当初予算`,
+    population: pop.population,
+    populationLabel: pop.populationLabel,
+    totalOku: toOku(doc.expenditureTotal),
+    prevTotalOku: doc.prevExpenditureTotal != null ? toOku(doc.prevExpenditureTotal) : null,
+    yoyLabel: yoyTotal != null ? `${yoyTotal >= 0 ? "+" : ""}${yoyTotal.toFixed(1)}%` : "",
+    sourceTitle: source.title,
+    sourceUrl: url,
+    pagesLabel: `p.${pagesOpts.revenuePage}–${pagesOpts.expenditurePage}`,
+    revenue,
+    expenditure,
+    evidence: [
+      {
+        title: source.title,
+        type: "PDF",
+        url,
+        source: url ? new URL(url).hostname : "",
+        thumb: `${file.filename} ・ sha256 ${file.sha256.slice(0, 16)}… ・ ${file.fetchedAt.slice(0, 10)} 取得`,
+      },
+    ],
+  };
+  return { budget, doc, file, url, source, pagesOpts };
 }
 
-const yoyTotal = yoyPctOf(kofuDoc.expenditureTotal, kofuDoc.prevExpenditureTotal);
-const pagesOpts = (kofuSource.parserOptions ?? {}) as {
-  revenuePage?: number;
-  expenditurePage?: number;
-  projectPages?: { from: number; to: number };
-};
-const kofuBudget = {
-  fyLabel: "令和8年度 当初予算",
-  // 人口は総務省 R6 決算状況調の住民基本台帳人口（令7.1.1現在）。1人あたり換算に使う
-  population: self.population,
-  populationLabel: "住民基本台帳人口（令7.1.1現在）",
-  totalOku: toOku(kofuDoc.expenditureTotal),
-  prevTotalOku: kofuDoc.prevExpenditureTotal != null ? toOku(kofuDoc.prevExpenditureTotal) : null,
-  yoyLabel: yoyTotal != null ? `${yoyTotal >= 0 ? "+" : ""}${yoyTotal.toFixed(1)}%` : "",
-  sourceTitle: kofuSource.title,
-  sourceUrl: kofuUrl,
-  pagesLabel: `p.${pagesOpts.revenuePage}–${pagesOpts.expenditurePage}`,
-  revenue: kofuRevenue,
-  expenditure: kofuExpenditure,
-  evidence: [
-    {
-      title: kofuSource.title,
-      type: "PDF",
-      url: kofuUrl,
-      source: kofuUrl ? new URL(kofuUrl).hostname : "",
-      thumb: `${kofuFile.filename} ・ sha256 ${kofuFile.sha256.slice(0, 16)}… ・ ${kofuFile.fetchedAt.slice(0, 10)} 取得`,
-    },
-  ],
-};
+const budgetYears = BUDGET_YEARS.map(buildKofuBudgetYear);
 
 const kofuOut = `// このファイルは自動生成です。手で編集しないこと。
 // 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
-// 出典: ${kofuSource.title}（${kofuFile.filename} sha256=${kofuFile.sha256.slice(0, 16)}…）
+// 出典: 甲府市 当初予算資料 ${budgetYears.map((b) => b.budget.fy).join("・")}（各年度の sha256 は evidence 参照）
 // 金額は億円（予算書の千円値を 1e5 で割った正確値）。yoy は前年度当初比%（小数1桁）
 
 export interface KofuKanRow {
@@ -347,7 +379,9 @@ export interface KofuKanRow {
   children?: KofuKanRow[];
 }
 
-export const KOFU_BUDGET: {
+export interface KofuBudgetYear {
+  /** 年度（"R8" など） */
+  fy: string;
   fyLabel: string;
   population: number;
   populationLabel: string;
@@ -360,15 +394,23 @@ export const KOFU_BUDGET: {
   revenue: KofuKanRow[];
   expenditure: KofuKanRow[];
   evidence: { title: string; type: string; url: string; source: string; thumb: string }[];
-} = ${JSON.stringify(kofuBudget, null, 2)};
+}
+
+/** 収録済みの当初予算（新しい年度順） */
+export const KOFU_BUDGET_YEARS: KofuBudgetYear[] = ${JSON.stringify(budgetYears.map((b) => b.budget), null, 2)};
+
+/** 最新年度（互換用） */
+export const KOFU_BUDGET: KofuBudgetYear = KOFU_BUDGET_YEARS[0]!;
 `;
 
 const kofuDest = join(process.cwd(), "src/client/lib/kofu.gen.ts");
 writeFileSync(kofuDest, kofuOut, "utf8");
-console.log(`✓ 甲府市 R8 款別予算を導出 → src/client/lib/kofu.gen.ts`);
-console.log(
-  `  総額 ${kofuBudget.totalOku}億円（前年比 ${kofuBudget.yoyLabel}） / 歳入 ${kofuRevenue.length}グループ・歳出 ${kofuExpenditure.length}款`,
-);
+console.log(`✓ 甲府市 款別予算を導出 → src/client/lib/kofu.gen.ts（${budgetYears.map((b) => b.budget.fy).join("・")}）`);
+for (const b of budgetYears) {
+  console.log(
+    `  ${b.budget.fy}: 総額 ${b.budget.totalOku}億円（前年比 ${b.budget.yoyLabel}） / 歳入 ${b.budget.revenue.length}グループ・歳出 ${b.budget.expenditure.length}款`,
+  );
+}
 
 // ============================================================================
 // 甲府市 決算の推移（決算状況調 R2〜R6）→ src/client/lib/trend.gen.ts
@@ -576,26 +618,40 @@ console.log(
   ).toFixed(1)}%）`,
 );
 
-// ---- 主な事業一覧 → src/client/lib/projects.gen.ts ---------------------------
-if (kofuDoc.projects && kofuDoc.projects.length > 0) {
-  const projRows = kofuDoc.projects.map((p) => ({
-    kan: p.kan,
-    no: p.no,
-    kubun: p.kubun,
-    name: p.name,
-    budgetBookName: p.budgetBookName,
-    amountOku: toOku(p.amount),
-    description: p.description,
-    basicGoal: p.basicGoal,
-    shisaku: p.shisaku,
-    ref: `${kofuFile.filename}#p${p.locator.page}`,
-    refLabel: `予算資料 p.${p.locator.page}`,
-    // PDF のページアンカー付きリンク（ブラウザの PDF ビューアが該当ページを開く）
-    refUrl: `${kofuUrl}#page=${p.locator.page}`,
-  }));
+// ---- 主な事業一覧（複数年度）→ src/client/lib/projects.gen.ts ----------------
+{
+  const projectYears = budgetYears
+    .filter((b) => b.doc.projects && b.doc.projects.length > 0)
+    .map((b) => ({
+      fy: b.budget.fy,
+      fyLabel: b.budget.fyLabel,
+      projects: b.doc.projects!.map((p) => ({
+        kan: p.kan,
+        no: p.no,
+        kubun: p.kubun,
+        name: p.name,
+        budgetBookName: p.budgetBookName,
+        amountOku: toOku(p.amount),
+        description: p.description,
+        basicGoal: p.basicGoal,
+        shisaku: p.shisaku,
+        ref: `${b.file.filename}#p${p.locator.page}`,
+        refLabel: `予算資料 p.${p.locator.page}`,
+        // PDF のページアンカー付きリンク（ブラウザの PDF ビューアが該当ページを開く）
+        refUrl: `${b.url}#page=${p.locator.page}`,
+      })),
+      source: {
+        title: b.source.title,
+        url: b.url,
+        pagesLabel: b.pagesOpts.projectPages
+          ? `p.${b.pagesOpts.projectPages.from}–${b.pagesOpts.projectPages.to}`
+          : "",
+      },
+    }));
+  if (projectYears.length === 0) throw new Error("主な事業が1年度分も導出できませんでした");
   const projOut = `// このファイルは自動生成です。手で編集しないこと。
 // 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
-// 出典: ${kofuSource.title}「主な事業一覧」（${kofuFile.filename} sha256=${kofuFile.sha256.slice(0, 16)}…）
+// 出典: 甲府市 当初予算資料「主な事業一覧」${projectYears.map((y) => y.fy).join("・")}
 // 金額は億円（資料の千円値を 1e5 で割った正確値）
 
 export interface KofuProject {
@@ -621,14 +677,24 @@ export interface KofuProject {
   refUrl: string;
 }
 
-export const KOFU_PROJECTS: KofuProject[] = ${JSON.stringify(projRows, null, 2)};
+export interface KofuProjectYear {
+  /** 年度（"R8" など） */
+  fy: string;
+  fyLabel: string;
+  projects: KofuProject[];
+  source: { title: string; url: string; pagesLabel: string };
+}
 
-export const KOFU_PROJECTS_SOURCE = {
-  title: ${JSON.stringify(kofuSource.title)},
-  url: ${JSON.stringify(kofuUrl)},
-  pagesLabel: ${JSON.stringify(pagesOpts.projectPages ? `p.${pagesOpts.projectPages.from}–${pagesOpts.projectPages.to}` : "")},
-};
+/** 収録済みの主な事業一覧（新しい年度順） */
+export const KOFU_PROJECT_YEARS: KofuProjectYear[] = ${JSON.stringify(projectYears, null, 2)};
+
+/** 最新年度（互換用） */
+export const KOFU_PROJECTS: KofuProject[] = KOFU_PROJECT_YEARS[0]!.projects;
+
+export const KOFU_PROJECTS_SOURCE = KOFU_PROJECT_YEARS[0]!.source;
 `;
   writeFileSync(join(process.cwd(), "src/client/lib/projects.gen.ts"), projOut, "utf8");
-  console.log(`✓ 主な事業一覧を導出 → src/client/lib/projects.gen.ts（${projRows.length}事業）`);
+  console.log(
+    `✓ 主な事業一覧を導出 → src/client/lib/projects.gen.ts（${projectYears.map((y) => `${y.fy}:${y.projects.length}事業`).join(" / ")}）`,
+  );
 }

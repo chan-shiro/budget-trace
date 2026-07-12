@@ -104,7 +104,9 @@ function validateBudgetBook(d: BudgetBookDoc): void {
       if (kb == null && !/会計$/.test(p.kan)) {
         issues.push({ level: "error", message: `${tag}: 款「${p.kan}」が歳出款別一覧にありません` });
       }
-      if (p.basicGoal && !/^(ひと|まち|魅力)(・(ひと|まち|魅力))*$/.test(p.basicGoal)) {
+      // R8〜: 第七次総合計画（ひと/まち/魅力）。R6・R7: 第六次総合計画（基本目標1〜4・基本構想の推進）
+      const goalToken = "(ひと|まち|魅力|基本目標[1-4１-４]|基本構想の推進)";
+      if (p.basicGoal && !new RegExp(`^${goalToken}(・${goalToken})*$`).test(p.basicGoal)) {
         issues.push({ level: "warning", message: `${tag}: 基本目標が想定外（${p.basicGoal}）` });
       }
       if (!p.shisaku) issues.push({ level: "warning", message: `${tag}: 施策が空` });

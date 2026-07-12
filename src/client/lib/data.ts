@@ -6,7 +6,7 @@
 // - 主な事業（83件）: 同資料「主な事業一覧」
 // - 人口・類似自治体比較: 総務省 令和6年度 市町村別決算状況調
 // ============================================================================
-import { KOFU_BUDGET, type KofuKanRow } from './kofu.gen';
+import { KOFU_BUDGET, KOFU_BUDGET_YEARS, type KofuBudgetYear, type KofuKanRow } from './kofu.gen';
 import { KOFU_EXECUTION } from './execution.gen';
 
 // ---- 型 --------------------------------------------------------------------
@@ -50,22 +50,27 @@ export const REGIONS = [
 
 export const YAMANASHI_MUNIS = ['甲府市','富士吉田市','都留市','山梨市','大月市','韮崎市','南アルプス市','北杜市','甲斐市','笛吹市','上野原市','甲州市','中央市','市川三郷町','身延町','富士川町','昭和町','忍野村','山中湖村','富士河口湖町'];
 
-// ---- 甲府市 R8 当初予算（すべて予算書パース値） ------------------------------
+// ---- 甲府市 当初予算（すべて予算書パース値。R8〜R6 の複数年度） ---------------
 const toNode = (r: KofuKanRow): BudgetNode => ({
   name: r.name,
   v: r.v,
   children: r.children?.map(toNode),
 });
 
-export const KOFU: Municipality = {
-  name: '甲府市',
-  total: KOFU_BUDGET.totalOku,
-  yoy: KOFU_BUDGET.yoyLabel,
-  year: KOFU_BUDGET.fyLabel,
-  pop: KOFU_BUDGET.population,
-  revenue: KOFU_BUDGET.revenue.map(toNode),
-  expenditure: KOFU_BUDGET.expenditure.map(toNode),
-};
+export function muniFromBudget(b: KofuBudgetYear): Municipality {
+  return {
+    name: '甲府市',
+    total: b.totalOku,
+    yoy: b.yoyLabel,
+    year: b.fyLabel,
+    pop: b.population,
+    revenue: b.revenue.map(toNode),
+    expenditure: b.expenditure.map(toNode),
+  };
+}
+
+/** 最新年度（互換用） */
+export const KOFU: Municipality = muniFromBudget(KOFU_BUDGET);
 
 // 用語解説（インラインヘルプ）
 export const GLOSS: Record<string, string> = {
@@ -76,15 +81,19 @@ export const GLOSS: Record<string, string> = {
 
 // 実データの生成モジュール（来歴付き）
 export { SIMILAR, SIM_MIX_COLS, SIMILAR_FY_LABEL, SIMILAR_EVIDENCE } from './similar.gen';
-export { KOFU_BUDGET } from './kofu.gen';
-export { KOFU_PROJECTS, KOFU_PROJECTS_SOURCE } from './projects.gen';
+export { KOFU_BUDGET, KOFU_BUDGET_YEARS, type KofuBudgetYear } from './kofu.gen';
+export { KOFU_PROJECTS, KOFU_PROJECTS_SOURCE, KOFU_PROJECT_YEARS } from './projects.gen';
 export { KOFU_EXECUTION } from './execution.gen';
 export { KOFU_R6_DETAIL } from './detail.gen';
 export { KOFU_TREND } from './trend.gen';
 
 // データ出典・更新日一覧（数値の一次資料のみ。地図形状などの素材はトップページに記載）
 export const SOURCES = [
-  { title:'令和8年度 甲府市当初予算（案）資料', type:'PDF', org:'甲府市', date:'2026-07-12', used:'ダッシュボード／款別ドリルダウン／前年比較／政策テーマ／主な事業', url: KOFU_BUDGET.sourceUrl },
+  ...KOFU_BUDGET_YEARS.map((b) => ({
+    title: b.sourceTitle, type: 'PDF', org: '甲府市', date: '2026-07-12',
+    used: `ダッシュボード／款別ドリルダウン／前年比較／主な事業（${b.fyLabel.replace(' 当初予算', '')}）` + (b.fy === 'R8' ? '／政策テーマ' : ''),
+    url: b.sourceUrl,
+  })),
   { title:'令和7年度 甲府市財政事情（一般会計の状況・令和8年3月31日現在）', type:'PDF', org:'甲府市', date:'2026-07-12', used:'予算執行状況（款別の予算現額・収入/支出済額・執行率）', url: KOFU_EXECUTION.sourceUrl },
   { title:'令和6年度 市町村別決算状況調', type:'Excel', org:'総務省 自治財政局', date:'2026-07-11', used:'類似自治体との比較／項別内訳（決算）／人口（1人あたり換算）', url: 'https://www.soumu.go.jp/iken/zaisei/r06_shichouson.html' },
 ];

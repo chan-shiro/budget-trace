@@ -75,6 +75,37 @@ export const SOURCES: SourceEntry[] = [
     parserOptions: { revenuePage: 12, expenditurePage: 13, projectPages: { from: 14, to: 23 } },
   },
   {
+    // 過年度の当初予算資料（R8 と同型）。ページ番号は年度ごとに異なる。
+    // R5・R4 の資料は市サイトから削除済みで Wayback にも無い（未収録）。
+    // R3・R2 は分冊形式（款別一覧表・主な事業が別PDF）のため別途対応。
+    id: "kofu-yosansho-r7",
+    title: "令和7年度 甲府市当初予算資料",
+    publisher: "甲府市",
+    url: null,
+    urls: ["https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf"],
+    landingPage: "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r7yosan.html",
+    kind: "pdf",
+    fiscalYear: "R7",
+    scope: "甲府市（一般会計）",
+    license: "甲府市ウェブサイト掲載資料（利用条件は同サイト参照）",
+    parser: "kofu-yosansho",
+    parserOptions: { revenuePage: 13, expenditurePage: 14, projectPages: { from: 15, to: 25 } },
+  },
+  {
+    id: "kofu-yosansho-r6",
+    title: "令和6年度 甲府市当初予算資料",
+    publisher: "甲府市",
+    url: null,
+    urls: ["https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf"],
+    landingPage: "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r06yosan.html",
+    kind: "pdf",
+    fiscalYear: "R6",
+    scope: "甲府市（一般会計）",
+    license: "甲府市ウェブサイト掲載資料（利用条件は同サイト参照）",
+    parser: "kofu-yosansho",
+    parserOptions: { revenuePage: 15, expenditurePage: 16, projectPages: { from: 17, to: 25 } },
+  },
+  {
     // 甲府市の財政事情の公表（地方自治法 §243の3）。年2回、款別の予算現額と
     // 収入/支出済額（＝執行状況）が出る。直リンクは公表のたびに同じパスへ
     // 上書きされるため、アーカイブ済み raw と sha256 が版を固定する。
