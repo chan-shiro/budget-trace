@@ -233,7 +233,9 @@ const BUDGET_YEARS = [
   { srcId: "kofu-yosansho-r8", fy: "R8", popFy: "R6" },
   { srcId: "kofu-yosansho-r7", fy: "R7", popFy: "R6" },
   { srcId: "kofu-yosansho-r6", fy: "R6", popFy: "R5" },
-  // R4・R5 は資料が市サイトから削除済みで入手不可（data-sources.md 参照）
+  // R5・R4 は市サイト消失後、WARP（国立国会図書館）の保存版から回収
+  { srcId: "kofu-yosansho-r5", fy: "R5", popFy: "R4" },
+  { srcId: "kofu-yosansho-r4", fy: "R4", popFy: "R3" },
   { srcId: "kofu-yosansho-r3", fy: "R3", popFy: "R2" },
   // R2 期首（令2.1.1）の人口は決算状況調 R1 が必要（未収録）。最も近い令3.1.1 を明示して使う
   { srcId: "kofu-yosansho-r2", fy: "R2", popFy: "R2" },
@@ -366,6 +368,8 @@ function buildKofuBudgetYear(entry: (typeof BUDGET_YEARS)[number]) {
     yoyLabel: yoyTotal != null ? `${yoyTotal >= 0 ? "+" : ""}${yoyTotal.toFixed(1)}%` : "",
     // 前年度列の基準（R2 の一覧表は前年が「6月補正後予算額」であり当初でない）
     prevBasis: doc.prevBasis,
+    // 前年度列の資料注記（R6:「令和5年度当初予算額は6月補正の政策的予算を含む」= R5 骨格予算）
+    prevNote: doc.prevNote ?? "",
     sourceTitle: source.title,
     // リンクは Wayback コピー（パース時点の版に固定）。発行元の元 URL は originUrl。
     // sourceLocalUrl = 自サーバー配信のコピー（public/sources。ドロワーでその場レビュー）
@@ -422,6 +426,8 @@ export interface KofuBudgetYear {
   yoyLabel: string;
   /** 前年度額の基準。"補正後" の年（R2）は前年が当初予算額でない点に注意 */
   prevBasis: "当初" | "補正後";
+  /** 前年度列の資料注記（原文。無ければ空文字） */
+  prevNote: string;
   sourceTitle: string;
   /** リンク用 URL（Wayback コピー優先。パース時点の版に固定） */
   sourceUrl: string;
@@ -573,14 +579,15 @@ export const KOFU_R6_DETAIL: {
 // ============================================================================
 // 甲府市 予算執行状況（複数年度）→ src/client/lib/execution.gen.ts
 // R7 = 財政事情の公表（出納整理期間前の速報）。R6〜R1 = 決算状況の収入支出詳細
-// （出納整理後の確定値）。R3 は資料が市サイトから削除済みで入手不可（欠落）。
+// （出納整理後の確定値）。R3 は市サイト消失後、WARP（国立国会図書館）の保存版から回収。
 // ============================================================================
 const EXEC_YEARS = [
   { srcId: "kofu-zaisei-jokyo-r7", fy: "R7" },
   { srcId: "kofu-kessan-syousai-r6", fy: "R6" },
   { srcId: "kofu-kessan-syousai-r5", fy: "R5" },
   { srcId: "kofu-kessan-syousai-r4", fy: "R4" },
-  // R3 は欠落（決算状況ページが削除済み・Wayback にも無い）
+  // R3 は市サイトから削除済みだったが WARP（国立国会図書館）の保存版から回収
+  { srcId: "kofu-kessan-syousai-r3", fy: "R3" },
   { srcId: "kofu-kessan-syousai-r2", fy: "R2" },
   { srcId: "kofu-kessan-syousai-r1", fy: "R1" },
 ] as const;

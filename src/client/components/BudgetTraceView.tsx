@@ -37,7 +37,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
           </div>
 
           <footer data-mq-pad="" style={S("padding:18px 32px; border-top:1px solid #DFE7EC; font-size:12px; color:#5C6B77; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;")}>
-            <span>本サイトはプロトタイプです。掲載数値はすべて一次資料（甲府市 当初予算資料 令和2〜3・6〜8年度・総務省 市町村別決算状況調）由来の実データです。</span>
+            <span>本サイトはプロトタイプです。掲載数値はすべて一次資料（甲府市 当初予算資料 令和2〜8年度・総務省 市町村別決算状況調）由来の実データです。</span>
             <span style={S("font-family:'IBM Plex Mono',monospace;")}>v0.1 / 2026-07</span>
           </footer>
         </div>
@@ -48,7 +48,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
         <div data-screen-label="市区町村選択" data-mq-pad="" style={S("min-height:100vh; width:min(880px,100%); margin:0 auto; padding:28px 32px 64px; animation:fadeUp .35s ease both;")}>
           <HoverBox as="button" onClick={v.goTop} style={S("border:none; background:none; color:#5C6B77; font-size:13px; cursor:pointer; padding:0; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("color:#1798D0;")}>← 日本地図へ戻る</HoverBox>
           <h1 style={S("margin:18px 0 6px; font-size:32px; font-weight:700;")}>{v.muniPrefName}</h1>
-          <p style={S("margin:0 0 28px; color:#5C6B77; font-size:14px;")}>自治体を選択してください。現在の収録は甲府市（令和2〜3・6〜8年度当初予算）のみです。</p>
+          <p style={S("margin:0 0 28px; color:#5C6B77; font-size:14px;")}>自治体を選択してください。現在の収録は甲府市（令和2〜8年度当初予算）のみです。</p>
 
           <HoverBox as="button" onClick={v.prefAllOpen} style={S(`width:100%; text-align:left; display:flex; align-items:center; justify-content:space-between; gap:12px; background:${v.prefAllBg}; color:${v.prefAllFg}; border:1px solid ${v.prefAllBd}; border-radius:12px; padding:18px 22px; cursor:pointer; margin-bottom:22px; font-family:'IBM Plex Sans JP',sans-serif;`)} hoverStyle={S("border-color:#1798D0;")}>
             <span>
@@ -343,7 +343,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                 <div style={S("display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:20px;")}>
                   <div>
                     <h1 style={S("margin:0 0 6px; font-size:24px; font-weight:700;")}>前年度との比較</h1>
-                    <p style={S("margin:0; color:#5C6B77; font-size:13.5px;")}>{v.compPrevLabel} と {v.compCurLabel} の当初予算を款ごとに比較します（甲府市は公表実データ）。</p>
+                    <p style={S("margin:0; color:#5C6B77; font-size:13.5px;")}>{v.compPrevLabel} と {v.compCurLabel} の当初予算を款ごとに比較します（甲府市は公表実データ）。{v.compPrevNote && <span style={S("display:block; font-size:11.5px; color:#9DACB7; margin-top:2px;")}>{v.compPrevNote}</span>}</p>
                   </div>
                   <div style={S("display:inline-flex; border:1px solid #DFE7EC; border-radius:999px; overflow:hidden; background:#FFFFFF;")}>
                     {v.compTabs.map((ct: any, i: number) => (
@@ -661,6 +661,21 @@ export default function BudgetTraceView({ v }: { v: any }) {
                   ))}
                   <p style={S("margin:12px 2px 0; font-size:12px; color:#5C6B77;")}>アプリが実際に使用している一次資料の一覧です。リンクは Wayback Machine のコピー（魚拓）を優先しています — 発行元の直リンクは中身だけ差し替えられる可能性があるため、収録時点の版に固定されたコピーの方が透明性が高いためです。原本はリポジトリにもアーカイブされ、取得時の SHA-256 ハッシュで来歴を検証できます。</p>
                 </section>
+
+                <section style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:20px 24px; margin-top:20px;")}>
+                  <h2 style={S("margin:0 0 6px; font-size:16px; font-weight:700;")}>未収録の資料をリクエストする</h2>
+                  <p style={S("margin:0 0 14px; font-size:12.5px; color:#5C6B77; line-height:1.8;")}>ウェブに公開されていない一次資料は、リクエストが貯まったものから情報公開請求などで取得し、検証つきで収録します。賛同は各リクエストの 👍 リアクションでお願いします。請求から収録までの経緯もすべて公開されます。</p>
+                  {v.uncollected.map((u: any, i: number) => (
+                    <div key={i} data-mq="src" style={S("display:flex; align-items:center; justify-content:space-between; gap:14px; padding:10px 0; border-bottom:1px solid #ECF2F6; font-size:13px; flex-wrap:wrap;")}>
+                      <span style={S("min-width:0;")}>
+                        <span style={S("display:block; font-weight:600;")}>{u.title}</span>
+                        <span style={S("display:block; font-size:11.5px; color:#5C6B77; margin-top:1px;")}>{u.why}</span>
+                      </span>
+                      <a href={u.requestUrl} target="_blank" rel="noopener noreferrer" style={S("font-size:12px; border:1px solid #1798D0; color:#0F76A3; border-radius:999px; padding:5px 14px; text-decoration:none; white-space:nowrap;")}>この資料をリクエスト ↗</a>
+                    </div>
+                  ))}
+                  <p style={S("margin:12px 2px 0; font-size:11.5px; color:#9DACB7;")}>リクエスト一覧は <a href={v.requestListUrl} target="_blank" rel="noopener noreferrer" style={S("color:#5C6B77;")}>GitHub の「資料リクエスト」ラベル ↗</a> で確認できます。</p>
+                </section>
               </div>
             )}
 
@@ -668,7 +683,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
 
           <footer data-mq-pad="" style={S("border-top:1px solid #DFE7EC; padding:16px 28px; font-size:12px; color:#5C6B77; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;")}>
             <span>予算トレース — プロトタイプ。掲載数値はすべて一次資料由来の実データです（項以下の内訳・補正・執行率は資料収録後に追加予定）。<button onClick={v.goSources} style={S("border:none; background:none; padding:0; margin-left:8px; color:#1798D0; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")}>データ出典・更新日一覧 →</button></span>
-            <span style={S("font-family:'IBM Plex Mono',monospace;")}>SOURCE: 甲府市 当初予算資料 R2–R3, R6–R8</span>
+            <span style={S("font-family:'IBM Plex Mono',monospace;")}>SOURCE: 甲府市 当初予算資料 R2–R8</span>
           </footer>
         </div>
       )}

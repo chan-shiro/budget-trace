@@ -203,6 +203,12 @@ export const budgetBookDocSchema = z.object({
    * 「令和元年度 6月補正後予算額」との比較（パーサが資料から自動検出）
    */
   prevBasis: z.enum(["当初", "補正後"]).default("当初"),
+  /**
+   * 前年度列に関する資料注記（あれば原文のまま）。
+   * 例: R6 資料「※令和5年度当初予算額は、6月補正における政策的予算（KOFU NEXT ACTION）を含む」
+   * — R5 は改選年の骨格予算のため、R6 の前年列は R5 資料の総額と一致しない（両者とも正）
+   */
+  prevNote: z.string().optional(),
   facts: z.array(budgetLineFactSchema),
   /** 「主な事業一覧」ページの抽出結果（ページ指定がある場合のみ） */
   projects: z.array(budgetProjectFactSchema).optional(),

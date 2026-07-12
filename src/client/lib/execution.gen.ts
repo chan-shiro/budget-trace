@@ -1288,6 +1288,317 @@ export const KOFU_EXECUTION_YEARS: KofuExecutionYear[] = [
     ]
   },
   {
+    "fy": "R3",
+    "basis": "確定",
+    "fyLabel": "令和3年度（決算・確定値）",
+    "asOf": "決算（確定値）",
+    "asOfNote": "出納整理後の決算確定値。予算現額は補正・繰越を含むため当初予算とは一致しません",
+    "population": null,
+    "revenueBudgetTotalOku": 952.8503,
+    "revenueSettledTotalOku": 900.9546,
+    "expenditureBudgetTotalOku": 952.8503,
+    "expenditureSettledTotalOku": 861.4221,
+    "revenue": [
+      {
+        "name": "市税",
+        "budgetOku": 270.7057,
+        "settledOku": 283.9655,
+        "ratePct": 104.9,
+        "ref": "r3shuushishousai.html#row2",
+        "refLabel": "決算状況 収入支出詳細 2行目",
+        "breakdownNote": "市民税 134億円・固定資産税 112億円・都市計画税 19.2億円・市たばこ税 13.0億円・軽自動車税 6.0億円・入湯税 2,453万円"
+      },
+      {
+        "name": "地方譲与税",
+        "budgetOku": 4.0629,
+        "settledOku": 4.3526,
+        "ratePct": 107.1,
+        "ref": "r3shuushishousai.html#row9",
+        "refLabel": "決算状況 収入支出詳細 9行目"
+      },
+      {
+        "name": "利子割交付金",
+        "budgetOku": 0.1589,
+        "settledOku": 0.203,
+        "ratePct": 127.8,
+        "ref": "r3shuushishousai.html#row10",
+        "refLabel": "決算状況 収入支出詳細 10行目"
+      },
+      {
+        "name": "配当割交付金",
+        "budgetOku": 0.8995,
+        "settledOku": 1.4406,
+        "ratePct": 160.2,
+        "ref": "r3shuushishousai.html#row11",
+        "refLabel": "決算状況 収入支出詳細 11行目"
+      },
+      {
+        "name": "株式等譲渡所得割交付金",
+        "budgetOku": 1.1564,
+        "settledOku": 1.869,
+        "ratePct": 161.6,
+        "ref": "r3shuushishousai.html#row12",
+        "refLabel": "決算状況 収入支出詳細 12行目"
+      },
+      {
+        "name": "法人事業税交付金",
+        "budgetOku": 4.4697,
+        "settledOku": 4.4662,
+        "ratePct": 99.9,
+        "ref": "r3shuushishousai.html#row13",
+        "refLabel": "決算状況 収入支出詳細 13行目"
+      },
+      {
+        "name": "地方消費税交付金",
+        "budgetOku": 48.3856,
+        "settledOku": 49.6518,
+        "ratePct": 102.6,
+        "ref": "r3shuushishousai.html#row14",
+        "refLabel": "決算状況 収入支出詳細 14行目"
+      },
+      {
+        "name": "環境性能割交付金",
+        "budgetOku": 0.2832,
+        "settledOku": 0.423,
+        "ratePct": 149.4,
+        "ref": "r3shuushishousai.html#row15",
+        "refLabel": "決算状況 収入支出詳細 15行目"
+      },
+      {
+        "name": "地方特例交付金",
+        "budgetOku": 5.172,
+        "settledOku": 6.0147,
+        "ratePct": 116.3,
+        "ref": "r3shuushishousai.html#row16",
+        "refLabel": "決算状況 収入支出詳細 16行目"
+      },
+      {
+        "name": "地方交付税",
+        "budgetOku": 112.1984,
+        "settledOku": 112.148,
+        "ratePct": 100,
+        "ref": "r3shuushishousai.html#row17",
+        "refLabel": "決算状況 収入支出詳細 17行目"
+      },
+      {
+        "name": "交通安全対策特別交付金",
+        "budgetOku": 0.4083,
+        "settledOku": 0.3807,
+        "ratePct": 93.2,
+        "ref": "r3shuushishousai.html#row18",
+        "refLabel": "決算状況 収入支出詳細 18行目"
+      },
+      {
+        "name": "分担金及び負担金",
+        "budgetOku": 3.6583,
+        "settledOku": 2.8487,
+        "ratePct": 77.9,
+        "ref": "r3shuushishousai.html#row19",
+        "refLabel": "決算状況 収入支出詳細 19行目"
+      },
+      {
+        "name": "使用料及び手数料",
+        "budgetOku": 9.9956,
+        "settledOku": 9.3727,
+        "ratePct": 93.8,
+        "ref": "r3shuushishousai.html#row20",
+        "refLabel": "決算状況 収入支出詳細 20行目"
+      },
+      {
+        "name": "国庫支出金",
+        "budgetOku": 267.8046,
+        "settledOku": 232.2526,
+        "ratePct": 86.7,
+        "ref": "r3shuushishousai.html#row21",
+        "refLabel": "決算状況 収入支出詳細 21行目"
+      },
+      {
+        "name": "県支出金",
+        "budgetOku": 62.2325,
+        "settledOku": 59.8913,
+        "ratePct": 96.2,
+        "ref": "r3shuushishousai.html#row22",
+        "refLabel": "決算状況 収入支出詳細 22行目"
+      },
+      {
+        "name": "財産収入",
+        "budgetOku": 0.7756,
+        "settledOku": 1.3711,
+        "ratePct": 176.8,
+        "ref": "r3shuushishousai.html#row23",
+        "refLabel": "決算状況 収入支出詳細 23行目"
+      },
+      {
+        "name": "寄付金",
+        "budgetOku": 33.0111,
+        "settledOku": 23.0799,
+        "ratePct": 69.9,
+        "ref": "r3shuushishousai.html#row24",
+        "refLabel": "決算状況 収入支出詳細 24行目"
+      },
+      {
+        "name": "繰入金",
+        "budgetOku": 6.1799,
+        "settledOku": 3.9964,
+        "ratePct": 64.7,
+        "ref": "r3shuushishousai.html#row25",
+        "refLabel": "決算状況 収入支出詳細 25行目"
+      },
+      {
+        "name": "繰越金",
+        "budgetOku": 8.2297,
+        "settledOku": 8.2297,
+        "ratePct": 100,
+        "ref": "r3shuushishousai.html#row26",
+        "refLabel": "決算状況 収入支出詳細 26行目"
+      },
+      {
+        "name": "諸収入",
+        "budgetOku": 15.7124,
+        "settledOku": 13.2243,
+        "ratePct": 84.2,
+        "ref": "r3shuushishousai.html#row27",
+        "refLabel": "決算状況 収入支出詳細 27行目"
+      },
+      {
+        "name": "市債",
+        "budgetOku": 97.35,
+        "settledOku": 81.7728,
+        "ratePct": 84,
+        "ref": "r3shuushishousai.html#row28",
+        "refLabel": "決算状況 収入支出詳細 28行目"
+      }
+    ],
+    "expenditure": [
+      {
+        "name": "議会費",
+        "budgetOku": 5.4834,
+        "settledOku": 5.2792,
+        "ratePct": 96.3,
+        "ref": "r3shuushishousai.html#row2",
+        "refLabel": "決算状況 収入支出詳細 2行目"
+      },
+      {
+        "name": "総務費",
+        "budgetOku": 121.0526,
+        "settledOku": 107.5956,
+        "ratePct": 88.9,
+        "ref": "r3shuushishousai.html#row3",
+        "refLabel": "決算状況 収入支出詳細 3行目"
+      },
+      {
+        "name": "民生費",
+        "budgetOku": 416.8583,
+        "settledOku": 382.6527,
+        "ratePct": 91.8,
+        "ref": "r3shuushishousai.html#row4",
+        "refLabel": "決算状況 収入支出詳細 4行目"
+      },
+      {
+        "name": "衛生費",
+        "budgetOku": 128.6159,
+        "settledOku": 120.8016,
+        "ratePct": 93.9,
+        "ref": "r3shuushishousai.html#row5",
+        "refLabel": "決算状況 収入支出詳細 5行目"
+      },
+      {
+        "name": "労働費",
+        "budgetOku": 2.157,
+        "settledOku": 2.0987,
+        "ratePct": 97.3,
+        "ref": "r3shuushishousai.html#row6",
+        "refLabel": "決算状況 収入支出詳細 6行目"
+      },
+      {
+        "name": "農林水産業費",
+        "budgetOku": 10.9786,
+        "settledOku": 9.9788,
+        "ratePct": 90.9,
+        "ref": "r3shuushishousai.html#row7",
+        "refLabel": "決算状況 収入支出詳細 7行目"
+      },
+      {
+        "name": "商工費",
+        "budgetOku": 15.1166,
+        "settledOku": 9.7628,
+        "ratePct": 64.6,
+        "ref": "r3shuushishousai.html#row8",
+        "refLabel": "決算状況 収入支出詳細 8行目"
+      },
+      {
+        "name": "土木費",
+        "budgetOku": 53.4631,
+        "settledOku": 37.6641,
+        "ratePct": 70.4,
+        "ref": "r3shuushishousai.html#row9",
+        "refLabel": "決算状況 収入支出詳細 9行目"
+      },
+      {
+        "name": "消防費",
+        "budgetOku": 22.5641,
+        "settledOku": 21.7641,
+        "ratePct": 96.5,
+        "ref": "r3shuushishousai.html#row10",
+        "refLabel": "決算状況 収入支出詳細 10行目"
+      },
+      {
+        "name": "教育費",
+        "budgetOku": 75.6451,
+        "settledOku": 63.1096,
+        "ratePct": 83.4,
+        "ref": "r3shuushishousai.html#row11",
+        "refLabel": "決算状況 収入支出詳細 11行目"
+      },
+      {
+        "name": "災害復旧費",
+        "budgetOku": 0.0001,
+        "settledOku": 0,
+        "ratePct": 0,
+        "ref": "r3shuushishousai.html#row12",
+        "refLabel": "決算状況 収入支出詳細 12行目"
+      },
+      {
+        "name": "公債費",
+        "budgetOku": 99.4899,
+        "settledOku": 99.3701,
+        "ratePct": 99.9,
+        "ref": "r3shuushishousai.html#row13",
+        "refLabel": "決算状況 収入支出詳細 13行目"
+      },
+      {
+        "name": "諸支出金",
+        "budgetOku": 1.3507,
+        "settledOku": 1.3448,
+        "ratePct": 99.6,
+        "ref": "r3shuushishousai.html#row14",
+        "refLabel": "決算状況 収入支出詳細 14行目"
+      },
+      {
+        "name": "予備費",
+        "budgetOku": 0.0749,
+        "settledOku": 0,
+        "ratePct": 0,
+        "ref": "r3shuushishousai.html#row15",
+        "refLabel": "決算状況 収入支出詳細 15行目"
+      }
+    ],
+    "sourceTitle": "令和3年度 甲府市決算状況 収入支出詳細（一般会計・確定値・WARP回収）",
+    "sourceUrl": "https://warp.ndl.go.jp/20231106/20231106005608/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r3shuushishousai.html",
+    "originUrl": "https://warp.ndl.go.jp/20231106/20231106005608/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r3shuushishousai.html",
+    "sourceLocalUrl": "",
+    "evidence": [
+      {
+        "title": "令和3年度 甲府市決算状況 収入支出詳細（一般会計・確定値・WARP回収）",
+        "type": "Web",
+        "url": "https://warp.ndl.go.jp/20231106/20231106005608/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r3shuushishousai.html",
+        "localUrl": "",
+        "source": "warp.ndl.go.jp",
+        "thumb": "r3shuushishousai.html ・ sha256 7881a7735a83b3cc… ・ 2026-07-12 取得"
+      }
+    ]
+  },
+  {
     "fy": "R2",
     "basis": "確定",
     "fyLabel": "令和2年度（決算・確定値）",

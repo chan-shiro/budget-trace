@@ -67,6 +67,8 @@ const PLAN_BY_FY: Record<string, { plan: string; goals?: { name: string; label: 
   },
   R7: { plan: "第六次甲府市総合計画" },
   R6: { plan: "第六次甲府市総合計画" },
+  R5: { plan: "第六次甲府市総合計画" },
+  R4: { plan: "第六次甲府市総合計画" },
   R3: { plan: "第六次甲府市総合計画" },
   R2: { plan: "第六次甲府市総合計画" },
 };
@@ -337,7 +339,7 @@ export default function BudgetTrace() {
     { label: "歳入", pick: () => setSt({ compSide: "rev" }), bg: compSide === "rev" ? "#14181C" : "#FFFFFF", fg: compSide === "rev" ? "#F7FAFC" : "#5C6B77" },
   ];
 
-  // --- 予算執行状況（R7=財政事情の速報、R6〜R1=決算状況の確定値。R3 は資料消失で欠落） ---
+  // --- 予算執行状況（R7=財政事情の速報、R6〜R1=決算状況の確定値。R3 は WARP 保存版から回収） ---
   const execSide = s.execSide || "exp";
   // 年度の既定はヘッダの年度ドロップダウンに追従する（過去年度を見ている人が
   // 執行タブを開いたらその年度の確定執行が出る）。ピルで明示選択したらそちらが優先
@@ -409,7 +411,7 @@ export default function BudgetTrace() {
       bg: y.fy === execYear.fy ? "#14181C" : "#FFFFFF",
       fg: y.fy === execYear.fy ? "#F7FAFC" : "#5C6B77",
     })),
-    execGapNote: "令和3年度は資料（決算状況ページ）が発行元から削除済みのため未収録です",
+    execGapNote: "令和3年度は発行元サイトから削除済みのため、国立国会図書館 WARP の保存版から収録しています",
     execFyLabel: execYear.fyLabel, execAsOfNote: execYear.asOfNote,
     execSideLabel: execSide === "rev" ? "歳入" : "歳出",
     execRateLabel: execSide === "rev" ? "収入率" : "執行率",
@@ -571,6 +573,8 @@ export default function BudgetTrace() {
     }),
     simLegend: SIM_MIX_COLS.map((n, i) => ({ name: n, sw: [D.PALETTE[0], D.PALETTE[1], D.PALETTE[2], D.PALETTE[4], "#C6D2DA"][i] })),
     similarEvidence: SIMILAR_EVIDENCE,
+    uncollected: D.UNCOLLECTED,
+    requestListUrl: D.REQUEST_LIST_URL,
     sourcesRows: SOURCES.map((row: any) => ({
       ...row,
       open: row.localUrl
@@ -584,6 +588,8 @@ export default function BudgetTrace() {
       `令和${Number(budget.fy.slice(1)) - 1 === 1 ? "元" : Number(budget.fy.slice(1)) - 1}年度` +
       (budget.prevBasis === "補正後" ? "（補正後予算額）" : ""),
     compCurLabel: `令和${budget.fy.slice(1)}年度`,
+    // 前年度列の資料注記（R6 選択時:「※令和5年度当初予算額は6月補正の政策的予算を含む」）
+    compPrevNote: budget.prevNote ? `※資料注記: ${budget.prevNote}` : "",
     compPrevTotal: fmtV(compPrevSum), compCurTotal: fmtV(compCurSum), compSub: subV(compCurSum),
     compTotalDelta: (compDelta >= 0 ? "+" : "−") + fmtV(Math.abs(compDelta)),
     compTotalPct: (compDelta >= 0 ? "+" : "−") + ((Math.abs(compDelta) / compPrevSum) * 100).toFixed(1) + "%",

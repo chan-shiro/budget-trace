@@ -108,6 +108,19 @@ export const SOURCES = [
   { title:'令和6年度 市町村別決算状況調', type:'Excel', org:'総務省 自治財政局', date:'2026-07-11', used:'類似自治体との比較／項別内訳（決算）／人口（1人あたり換算）', url: WAYBACK_BY_URL[SOUMU_R6_LANDING] ?? SOUMU_R6_LANDING, originUrl: SOUMU_R6_LANDING, localUrl: '' },
 ];
 
+// 未収録資料のリクエスト（リクエスト駆動の情報公開請求 — docs/data-strategy.md）。
+// 賛同が貯まったものから請求・収録する。台帳は GitHub Issues（ラベル: 資料リクエスト）
+const REPO = 'https://github.com/chan-shiro/budget-trace';
+const requestUrl = (title: string) =>
+  `${REPO}/issues/new?template=source-request.yml&title=${encodeURIComponent(`[資料リクエスト] ${title}`)}`;
+export const REQUEST_LIST_URL = `${REPO}/issues?q=${encodeURIComponent('is:issue label:資料リクエスト sort:reactions-+1-desc')}`;
+export const UNCOLLECTED = [
+  { title: '事務事業評価票（全事業分・各年度）', why: '事業単位の執行額（決算3年分・財源内訳）と成果指標。公開はサンプル数枚のみ', requestUrl: requestUrl('事務事業評価票（全事業分・各年度）') },
+  { title: '主要な施策の成果報告書（各年度）', why: '決算に添付される法定書類（自治法233条5項）。施策・事業ごとの執行実績。ウェブ未掲載', requestUrl: requestUrl('主要な施策の成果報告書（各年度）') },
+  { title: '予算書 本編（款項目節・各年度）', why: '款より深い「項・目・節」の内訳。ウェブ未公開', requestUrl: requestUrl('予算書 本編（款項目節・各年度）') },
+  { title: '補正予算書（各年度）', why: '当初予算と予算現額（補正後）の差を補正ごとに追える', requestUrl: requestUrl('補正予算書（各年度）') },
+];
+
 // ---- ヘルパー --------------------------------------------------------------
 export function fmtOku(v: number): string {
   if (v >= 10000) return (v/10000).toFixed(2) + '兆円';
