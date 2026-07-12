@@ -1,6 +1,6 @@
 // このファイルは自動生成です。手で編集しないこと。
 // 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
-// 出典: 甲府市 当初予算資料 R8・R7・R6（各年度の sha256 は evidence 参照）
+// 出典: 甲府市 当初予算資料 R8・R7・R6・R3・R2（各年度の sha256 は evidence 参照）
 // 金額は億円（予算書の千円値を 1e5 で割った正確値）。yoy は前年度当初比%（小数1桁）
 
 export interface KofuKanRow {
@@ -28,6 +28,8 @@ export interface KofuBudgetYear {
   totalOku: number;
   prevTotalOku: number | null;
   yoyLabel: string;
+  /** 前年度額の基準。"補正後" の年（R2）は前年が当初予算額でない点に注意 */
+  prevBasis: "当初" | "補正後";
   sourceTitle: string;
   /** リンク用 URL（Wayback コピー優先。パース時点の版に固定） */
   sourceUrl: string;
@@ -49,6 +51,7 @@ export const KOFU_BUDGET_YEARS: KofuBudgetYear[] = [
     "totalOku": 917.8706,
     "prevTotalOku": 880.85032,
     "yoyLabel": "+4.2%",
+    "prevBasis": "当初",
     "sourceTitle": "令和8年度 甲府市当初予算（案）資料",
     "sourceUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf",
     "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf",
@@ -365,6 +368,7 @@ export const KOFU_BUDGET_YEARS: KofuBudgetYear[] = [
     "totalOku": 880.85032,
     "prevTotalOku": 807.93965,
     "yoyLabel": "+9.0%",
+    "prevBasis": "当初",
     "sourceTitle": "令和7年度 甲府市当初予算資料",
     "sourceUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf",
     "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf",
@@ -681,6 +685,7 @@ export const KOFU_BUDGET_YEARS: KofuBudgetYear[] = [
     "totalOku": 807.93965,
     "prevTotalOku": 799.38632,
     "yoyLabel": "+1.1%",
+    "prevBasis": "当初",
     "sourceTitle": "令和6年度 甲府市当初予算資料",
     "sourceUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf",
     "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf",
@@ -986,6 +991,654 @@ export const KOFU_BUDGET_YEARS: KofuBudgetYear[] = [
         "url": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf",
         "source": "www.city.kofu.yamanashi.jp",
         "thumb": "03r6tousyoshiryou.pdf ・ sha256 1f07ed8057a696ba… ・ 2026-07-12 取得"
+      }
+    ]
+  },
+  {
+    "fy": "R3",
+    "fyLabel": "令和3年度 当初予算",
+    "population": 187048,
+    "populationLabel": "住民基本台帳人口（令3.1.1現在）",
+    "totalOku": 758.47788,
+    "prevTotalOku": 744.29982,
+    "yoyLabel": "+1.9%",
+    "prevBasis": "当初",
+    "sourceTitle": "令和3年度 甲府市当初予算資料（款別一覧表・主な事業）",
+    "sourceUrl": "https://web.archive.org/web/20260712104219/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/2r03ippankaikeisainyusaisyutu.pdf",
+    "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/2r03ippankaikeisainyusaisyutu.pdf",
+    "pagesLabel": "p.1–2",
+    "revenue": [
+      {
+        "name": "市税",
+        "v": 270.70575,
+        "prevV": 290.41162,
+        "yoy": -6.8,
+        "ref": "2r03ippankaikeisainyusaisyutu.pdf#p1",
+        "refLabel": "予算書 p.1"
+      },
+      {
+        "name": "国庫支出金",
+        "v": 134.8186,
+        "prevV": 128.35029,
+        "yoy": 5,
+        "ref": "2r03ippankaikeisainyusaisyutu.pdf#p1",
+        "refLabel": "予算書 p.1"
+      },
+      {
+        "name": "地方交付税",
+        "v": 93.45578,
+        "prevV": 89.21521,
+        "yoy": 4.8,
+        "ref": "2r03ippankaikeisainyusaisyutu.pdf#p1",
+        "refLabel": "予算書 p.1"
+      },
+      {
+        "name": "市債",
+        "v": 86.439,
+        "prevV": 62.064,
+        "yoy": 39.3,
+        "ref": "2r03ippankaikeisainyusaisyutu.pdf#p1",
+        "refLabel": "予算書 p.1"
+      },
+      {
+        "name": "県支出金",
+        "v": 59.36582,
+        "prevV": 62.48574,
+        "yoy": -5,
+        "ref": "2r03ippankaikeisainyusaisyutu.pdf#p1",
+        "refLabel": "予算書 p.1"
+      },
+      {
+        "name": "地方消費税交付金",
+        "v": 46.26147,
+        "prevV": 49.96062,
+        "yoy": -7.4,
+        "ref": "2r03ippankaikeisainyusaisyutu.pdf#p1",
+        "refLabel": "予算書 p.1"
+      },
+      {
+        "name": "諸収入・その他",
+        "v": 45.37612,
+        "prevV": 48.74678,
+        "yoy": -6.9,
+        "ref": "2r03ippankaikeisainyusaisyutu.pdf#p1",
+        "refLabel": "予算書 p.1（残り13款の合算）",
+        "children": [
+          {
+            "name": "諸収入",
+            "v": 15.63751,
+            "prevV": 21.94825,
+            "yoy": -28.8,
+            "ref": "2r03ippankaikeisainyusaisyutu.pdf#p1",
+            "refLabel": "予算書 p.1"
+          },
+          {
+            "name": "使用料及び手数料",
+            "v": 9.99555,
+            "prevV": 9.97819,
+            "yoy": 0.2,
+            "ref": "2r03ippankaikeisainyusaisyutu.pdf#p1",
+            "refLabel": "予算書 p.1"
+          },
+          {
+            "name": "地方特例交付金",
+            "v": 5.2171,
+            "prevV": 1.66361,
+            "yoy": 213.6,
+            "ref": "2r03ippankaikeisainyusaisyutu.pdf#p1",
+            "refLabel": "予算書 p.1"
+          },
+          {
+            "name": "地方譲与税",
+            "v": 4.06285,
+            "prevV": 4.67426,
+            "yoy": -13.1,
+            "ref": "2r03ippankaikeisainyusaisyutu.pdf#p1",
+            "refLabel": "予算書 p.1"
+          },
+          {
+            "name": "分担金及び負担金",
+            "v": 3.54898,
+            "prevV": 4.94591,
+            "yoy": -28.2,
+            "ref": "2r03ippankaikeisainyusaisyutu.pdf#p1",
+            "refLabel": "予算書 p.1"
+          },
+          {
+            "name": "法人事業税交付金",
+            "v": 3.23224,
+            "prevV": 1.90691,
+            "yoy": 69.5,
+            "ref": "2r03ippankaikeisainyusaisyutu.pdf#p1",
+            "refLabel": "予算書 p.1"
+          },
+          {
+            "name": "株式等譲渡所得割交付金",
+            "v": 1.15641,
+            "prevV": 0.74732,
+            "yoy": 54.7,
+            "ref": "2r03ippankaikeisainyusaisyutu.pdf#p1",
+            "refLabel": "予算書 p.1"
+          },
+          {
+            "name": "配当割交付金",
+            "v": 0.89949,
+            "prevV": 1.05494,
+            "yoy": -14.7,
+            "ref": "2r03ippankaikeisainyusaisyutu.pdf#p1",
+            "refLabel": "予算書 p.1"
+          },
+          {
+            "name": "財産収入",
+            "v": 0.77557,
+            "prevV": 0.77621,
+            "yoy": -0.1,
+            "ref": "2r03ippankaikeisainyusaisyutu.pdf#p1",
+            "refLabel": "予算書 p.1"
+          },
+          {
+            "name": "交通安全対策特別交付金",
+            "v": 0.40829,
+            "prevV": 0.42135,
+            "yoy": -3.1,
+            "ref": "2r03ippankaikeisainyusaisyutu.pdf#p1",
+            "refLabel": "予算書 p.1"
+          },
+          {
+            "name": "環境性能割交付金",
+            "v": 0.2832,
+            "prevV": 0.46542,
+            "yoy": -39.2,
+            "ref": "2r03ippankaikeisainyusaisyutu.pdf#p1",
+            "refLabel": "予算書 p.1"
+          },
+          {
+            "name": "利子割交付金",
+            "v": 0.15892,
+            "prevV": 0.1644,
+            "yoy": -3.3,
+            "ref": "2r03ippankaikeisainyusaisyutu.pdf#p1",
+            "refLabel": "予算書 p.1"
+          },
+          {
+            "name": "繰越金",
+            "v": 0.00001,
+            "prevV": 0.00001,
+            "yoy": 0,
+            "ref": "2r03ippankaikeisainyusaisyutu.pdf#p1",
+            "refLabel": "予算書 p.1"
+          }
+        ]
+      },
+      {
+        "name": "寄附金",
+        "v": 16.00001,
+        "prevV": 1.80001,
+        "yoy": 788.9,
+        "ref": "2r03ippankaikeisainyusaisyutu.pdf#p1",
+        "refLabel": "予算書 p.1"
+      },
+      {
+        "name": "繰入金",
+        "v": 6.05533,
+        "prevV": 11.26555,
+        "yoy": -46.2,
+        "ref": "2r03ippankaikeisainyusaisyutu.pdf#p1",
+        "refLabel": "予算書 p.1"
+      }
+    ],
+    "expenditure": [
+      {
+        "name": "民生費",
+        "v": 329.67737,
+        "prevV": 332.86133,
+        "yoy": -1,
+        "ref": "2r03ippankaikeisainyusaisyutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      },
+      {
+        "name": "公債費",
+        "v": 99.48993,
+        "prevV": 87.86563,
+        "yoy": 13.2,
+        "ref": "2r03ippankaikeisainyusaisyutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      },
+      {
+        "name": "衛生費",
+        "v": 96.49247,
+        "prevV": 93.41515,
+        "yoy": 3.3,
+        "ref": "2r03ippankaikeisainyusaisyutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      },
+      {
+        "name": "総務費",
+        "v": 83.9691,
+        "prevV": 70.74316,
+        "yoy": 18.7,
+        "ref": "2r03ippankaikeisainyusaisyutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      },
+      {
+        "name": "教育費",
+        "v": 55.1879,
+        "prevV": 71.24751,
+        "yoy": -22.5,
+        "ref": "2r03ippankaikeisainyusaisyutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      },
+      {
+        "name": "土木費",
+        "v": 45.93486,
+        "prevV": 38.49172,
+        "yoy": 19.3,
+        "ref": "2r03ippankaikeisainyusaisyutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      },
+      {
+        "name": "消防費",
+        "v": 22.22896,
+        "prevV": 25.00875,
+        "yoy": -11.1,
+        "ref": "2r03ippankaikeisainyusaisyutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      },
+      {
+        "name": "農林水産業費",
+        "v": 9.18946,
+        "prevV": 8.02527,
+        "yoy": 14.5,
+        "ref": "2r03ippankaikeisainyusaisyutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      },
+      {
+        "name": "商工費",
+        "v": 7.19518,
+        "prevV": 7.12955,
+        "yoy": 0.9,
+        "ref": "2r03ippankaikeisainyusaisyutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      },
+      {
+        "name": "議会費",
+        "v": 5.46668,
+        "prevV": 5.40579,
+        "yoy": 1.1,
+        "ref": "2r03ippankaikeisainyusaisyutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      },
+      {
+        "name": "労働費",
+        "v": 2.09523,
+        "prevV": 2.44998,
+        "yoy": -14.5,
+        "ref": "2r03ippankaikeisainyusaisyutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      },
+      {
+        "name": "諸支出金",
+        "v": 1.3507,
+        "prevV": 1.45594,
+        "yoy": -7.2,
+        "ref": "2r03ippankaikeisainyusaisyutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      },
+      {
+        "name": "予備費",
+        "v": 0.2,
+        "prevV": 0.2,
+        "yoy": 0,
+        "ref": "2r03ippankaikeisainyusaisyutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      },
+      {
+        "name": "災害復旧費",
+        "v": 0.00004,
+        "prevV": 0.00004,
+        "yoy": 0,
+        "ref": "2r03ippankaikeisainyusaisyutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      }
+    ],
+    "evidence": [
+      {
+        "title": "令和3年度 甲府市当初予算資料（款別一覧表・主な事業）（2r03ippankaikeisainyusaisyutu.pdf）",
+        "type": "PDF",
+        "url": "https://web.archive.org/web/20260712104219/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/2r03ippankaikeisainyusaisyutu.pdf",
+        "source": "www.city.kofu.yamanashi.jp",
+        "thumb": "2r03ippankaikeisainyusaisyutu.pdf ・ sha256 2cf18692f58b0590… ・ 2026-07-12 取得"
+      },
+      {
+        "title": "令和3年度 甲府市当初予算資料（款別一覧表・主な事業）（3r03omonajigyo_3.pdf）",
+        "type": "PDF",
+        "url": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf",
+        "source": "www.city.kofu.yamanashi.jp",
+        "thumb": "3r03omonajigyo_3.pdf ・ sha256 022cb23bd9e0ad24… ・ 2026-07-12 取得"
+      }
+    ]
+  },
+  {
+    "fy": "R2",
+    "fyLabel": "令和2年度 当初予算",
+    "population": 187048,
+    "populationLabel": "住民基本台帳人口（令3.1.1現在）",
+    "totalOku": 744.29982,
+    "prevTotalOku": 749.9907,
+    "yoyLabel": "-0.8%",
+    "prevBasis": "補正後",
+    "sourceTitle": "令和2年度 甲府市当初予算資料（款別一覧表・主な事業）",
+    "sourceUrl": "https://web.archive.org/web/20260712104422/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r02sainyuusaishutu.pdf",
+    "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r02sainyuusaishutu.pdf",
+    "pagesLabel": "p.1–2",
+    "revenue": [
+      {
+        "name": "市税",
+        "v": 290.41162,
+        "prevV": 290.36994,
+        "yoy": 0,
+        "ref": "r02sainyuusaishutu.pdf#p1",
+        "refLabel": "予算書 p.1"
+      },
+      {
+        "name": "国庫支出金",
+        "v": 128.35029,
+        "prevV": 139.65513,
+        "yoy": -8.1,
+        "ref": "r02sainyuusaishutu.pdf#p1",
+        "refLabel": "予算書 p.1"
+      },
+      {
+        "name": "地方交付税",
+        "v": 89.21521,
+        "prevV": 94.23443,
+        "yoy": -5.3,
+        "ref": "r02sainyuusaishutu.pdf#p1",
+        "refLabel": "予算書 p.1"
+      },
+      {
+        "name": "県支出金",
+        "v": 62.48574,
+        "prevV": 61.00113,
+        "yoy": 2.4,
+        "ref": "r02sainyuusaishutu.pdf#p1",
+        "refLabel": "予算書 p.1"
+      },
+      {
+        "name": "市債",
+        "v": 62.064,
+        "prevV": 67.782,
+        "yoy": -8.4,
+        "ref": "r02sainyuusaishutu.pdf#p1",
+        "refLabel": "予算書 p.1"
+      },
+      {
+        "name": "地方消費税交付金",
+        "v": 49.96062,
+        "prevV": 41.21478,
+        "yoy": 21.2,
+        "ref": "r02sainyuusaishutu.pdf#p1",
+        "refLabel": "予算書 p.1"
+      },
+      {
+        "name": "諸収入・その他",
+        "v": 48.74678,
+        "prevV": 51.24075,
+        "yoy": -4.9,
+        "ref": "r02sainyuusaishutu.pdf#p1",
+        "refLabel": "予算書 p.1（残り13款の合算）",
+        "children": [
+          {
+            "name": "諸収入",
+            "v": 21.94825,
+            "prevV": 23.49714,
+            "yoy": -6.6,
+            "ref": "r02sainyuusaishutu.pdf#p1",
+            "refLabel": "予算書 p.1"
+          },
+          {
+            "name": "使用料及び手数料",
+            "v": 9.97819,
+            "prevV": 9.75438,
+            "yoy": 2.3,
+            "ref": "r02sainyuusaishutu.pdf#p1",
+            "refLabel": "予算書 p.1"
+          },
+          {
+            "name": "分担金及び負担金",
+            "v": 4.94591,
+            "prevV": 5.21267,
+            "yoy": -5.1,
+            "ref": "r02sainyuusaishutu.pdf#p1",
+            "refLabel": "予算書 p.1"
+          },
+          {
+            "name": "地方譲与税",
+            "v": 4.67426,
+            "prevV": 4.31641,
+            "yoy": 8.3,
+            "ref": "r02sainyuusaishutu.pdf#p1",
+            "refLabel": "予算書 p.1"
+          },
+          {
+            "name": "法人事業税交付金",
+            "v": 1.90691,
+            "prevV": 1.90691,
+            "yoy": 0,
+            "ref": "r02sainyuusaishutu.pdf#p1",
+            "refLabel": "予算書 p.1"
+          },
+          {
+            "name": "地方特例交付金",
+            "v": 1.66361,
+            "prevV": 1.30746,
+            "yoy": 27.2,
+            "ref": "r02sainyuusaishutu.pdf#p1",
+            "refLabel": "予算書 p.1"
+          },
+          {
+            "name": "配当割交付金",
+            "v": 1.05494,
+            "prevV": 1.41546,
+            "yoy": -25.5,
+            "ref": "r02sainyuusaishutu.pdf#p1",
+            "refLabel": "予算書 p.1"
+          },
+          {
+            "name": "財産収入",
+            "v": 0.77621,
+            "prevV": 0.97483,
+            "yoy": -20.4,
+            "ref": "r02sainyuusaishutu.pdf#p1",
+            "refLabel": "予算書 p.1"
+          },
+          {
+            "name": "株式等譲渡所得割交付金",
+            "v": 0.74732,
+            "prevV": 1.36124,
+            "yoy": -45.1,
+            "ref": "r02sainyuusaishutu.pdf#p1",
+            "refLabel": "予算書 p.1"
+          },
+          {
+            "name": "環境性能割交付金",
+            "v": 0.46542,
+            "prevV": 0.2836,
+            "yoy": 64.1,
+            "ref": "r02sainyuusaishutu.pdf#p1",
+            "refLabel": "予算書 p.1"
+          },
+          {
+            "name": "交通安全対策特別交付金",
+            "v": 0.42135,
+            "prevV": 0.44028,
+            "yoy": -4.3,
+            "ref": "r02sainyuusaishutu.pdf#p1",
+            "refLabel": "予算書 p.1"
+          },
+          {
+            "name": "利子割交付金",
+            "v": 0.1644,
+            "prevV": 0.56169,
+            "yoy": -70.7,
+            "ref": "r02sainyuusaishutu.pdf#p1",
+            "refLabel": "予算書 p.1"
+          },
+          {
+            "name": "繰越金",
+            "v": 0.00001,
+            "prevV": 0.20868,
+            "yoy": -100,
+            "ref": "r02sainyuusaishutu.pdf#p1",
+            "refLabel": "予算書 p.1"
+          }
+        ]
+      },
+      {
+        "name": "繰入金",
+        "v": 11.26555,
+        "prevV": 4.31105,
+        "yoy": 161.3,
+        "ref": "r02sainyuusaishutu.pdf#p1",
+        "refLabel": "予算書 p.1"
+      },
+      {
+        "name": "寄附金",
+        "v": 1.80001,
+        "prevV": 1.3194,
+        "yoy": 36.4,
+        "ref": "r02sainyuusaishutu.pdf#p1",
+        "refLabel": "予算書 p.1"
+      }
+    ],
+    "expenditure": [
+      {
+        "name": "民生費",
+        "v": 332.86133,
+        "prevV": 322.75516,
+        "yoy": 3.1,
+        "ref": "r02sainyuusaishutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      },
+      {
+        "name": "衛生費",
+        "v": 93.41515,
+        "prevV": 98.50437,
+        "yoy": -5.2,
+        "ref": "r02sainyuusaishutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      },
+      {
+        "name": "公債費",
+        "v": 87.86563,
+        "prevV": 75.37688,
+        "yoy": 16.6,
+        "ref": "r02sainyuusaishutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      },
+      {
+        "name": "教育費",
+        "v": 71.24751,
+        "prevV": 63.25108,
+        "yoy": 12.6,
+        "ref": "r02sainyuusaishutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      },
+      {
+        "name": "総務費",
+        "v": 70.74316,
+        "prevV": 72.05963,
+        "yoy": -1.8,
+        "ref": "r02sainyuusaishutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      },
+      {
+        "name": "土木費",
+        "v": 38.49172,
+        "prevV": 67.49029,
+        "yoy": -43,
+        "ref": "r02sainyuusaishutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      },
+      {
+        "name": "消防費",
+        "v": 25.00875,
+        "prevV": 23.39596,
+        "yoy": 6.9,
+        "ref": "r02sainyuusaishutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      },
+      {
+        "name": "農林水産業費",
+        "v": 8.02527,
+        "prevV": 8.25509,
+        "yoy": -2.8,
+        "ref": "r02sainyuusaishutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      },
+      {
+        "name": "商工費",
+        "v": 7.12955,
+        "prevV": 9.10101,
+        "yoy": -21.7,
+        "ref": "r02sainyuusaishutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      },
+      {
+        "name": "議会費",
+        "v": 5.40579,
+        "prevV": 5.41193,
+        "yoy": -0.1,
+        "ref": "r02sainyuusaishutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      },
+      {
+        "name": "労働費",
+        "v": 2.44998,
+        "prevV": 2.71974,
+        "yoy": -9.9,
+        "ref": "r02sainyuusaishutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      },
+      {
+        "name": "諸支出金",
+        "v": 1.45594,
+        "prevV": 1.46952,
+        "yoy": -0.9,
+        "ref": "r02sainyuusaishutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      },
+      {
+        "name": "予備費",
+        "v": 0.2,
+        "prevV": 0.2,
+        "yoy": 0,
+        "ref": "r02sainyuusaishutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      },
+      {
+        "name": "災害復旧費",
+        "v": 0.00004,
+        "prevV": 0.00004,
+        "yoy": 0,
+        "ref": "r02sainyuusaishutu.pdf#p2",
+        "refLabel": "予算書 p.2"
+      }
+    ],
+    "evidence": [
+      {
+        "title": "令和2年度 甲府市当初予算資料（款別一覧表・主な事業）（r02sainyuusaishutu.pdf）",
+        "type": "PDF",
+        "url": "https://web.archive.org/web/20260712104422/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r02sainyuusaishutu.pdf",
+        "source": "www.city.kofu.yamanashi.jp",
+        "thumb": "r02sainyuusaishutu.pdf ・ sha256 3fe6f1f3e9eded91… ・ 2026-07-12 取得"
+      },
+      {
+        "title": "令和2年度 甲府市当初予算資料（款別一覧表・主な事業）（r02omonajigyou.pdf）",
+        "type": "PDF",
+        "url": "https://web.archive.org/web/20260712104609/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r02omonajigyou.pdf",
+        "source": "www.city.kofu.yamanashi.jp",
+        "thumb": "r02omonajigyou.pdf ・ sha256 e3d5753f560252b0… ・ 2026-07-12 取得"
       }
     ]
   }

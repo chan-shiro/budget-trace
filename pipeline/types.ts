@@ -156,23 +156,28 @@ export type BudgetLineFact = z.infer<typeof budgetLineFactSchema>;
 
 /** 予算資料「主な事業一覧」の1事業 */
 export const budgetProjectFactSchema = z.object({
-  /** 属するセクション: 歳出款（例: "総務費"）または特別会計名（例: "介護保険事業特別会計"） */
-  kan: z.string().min(1),
-  /** 款内の掲載番号（資料の No. 列） */
-  no: z.number().int().positive(),
-  /** 区分列（新規/拡充。無印は null） */
-  kubun: z.enum(["新規", "拡充"]).nullable(),
+  /**
+   * 属するセクション: 歳出款（例: "総務費"）または特別会計名（例: "介護保険事業特別会計"）。
+   * R2・R3 の箇条書き形式には款の記載が無く null
+   */
+  kan: z.string().min(1).nullable(),
+  /** 款内の掲載番号（資料の No. 列）。箇条書き形式には無く null */
+  no: z.number().int().positive().nullable(),
+  /** 区分列（新規/拡充）または箇条書きのマーカー（◆=繰越）。無印は null */
+  kubun: z.enum(["新規", "拡充", "繰越"]).nullable(),
   /** 事業名（【N】【連】マーカー含む、資料の表記のまま） */
   name: z.string().min(1),
   /** 下段（ ）書きの予算書上の事業名 */
   budgetBookName: z.string().nullable(),
   /** 予算額（千円） */
   amount: z.number(),
-  /** 内容列の全文 */
+  /** 内容列の全文（箇条書き形式では ★/◆ の補足行。無い事業は空文字） */
   description: z.string(),
-  /** 基本目標（ひと/まち/魅力。複数は「・」連結） */
+  /** 基本目標（ひと/まち/魅力、基本目標1〜4、基本構想の推進。複数は「・」連結） */
   basicGoal: z.string(),
-  /** 総合計画の施策 */
+  /** 基本目標の名称（箇条書き形式の見出しに記載がある場合のみ） */
+  basicGoalLabel: z.string().optional(),
+  /** 総合計画の施策（箇条書き形式では「施策の柱」） */
   shisaku: z.string(),
   locator: locatorSchema,
 });
@@ -193,6 +198,11 @@ export const budgetBookDocSchema = z.object({
   expenditureTotal: z.number(),
   prevRevenueTotal: z.number().nullable(),
   prevExpenditureTotal: z.number().nullable(),
+  /**
+   * 前年度列の基準。通常は「当初」だが、R2 の款別一覧表は
+   * 「令和元年度 6月補正後予算額」との比較（パーサが資料から自動検出）
+   */
+  prevBasis: z.enum(["当初", "補正後"]).default("当初"),
   facts: z.array(budgetLineFactSchema),
   /** 「主な事業一覧」ページの抽出結果（ページ指定がある場合のみ） */
   projects: z.array(budgetProjectFactSchema).optional(),

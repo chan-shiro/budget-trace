@@ -106,6 +106,59 @@ export const SOURCES: SourceEntry[] = [
     parserOptions: { revenuePage: 15, expenditurePage: 16, projectPages: { from: 17, to: 25 } },
   },
   {
+    // R3・R2 は分冊形式: 款別一覧表と主な事業が別 PDF。主な事業は表でなく
+    // 箇条書き形式（●事業名…金額、★新規/◆繰越、基本目標・施策の柱の章立て）で、
+    // 款・連番が無い（projectFormat: "bullets"）
+    id: "kofu-yosansho-r3",
+    title: "令和3年度 甲府市当初予算資料（款別一覧表・主な事業）",
+    publisher: "甲府市",
+    url: null,
+    urls: [
+      "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/2r03ippankaikeisainyusaisyutu.pdf",
+      "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf",
+    ],
+    landingPage: "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r03yosan.html",
+    kind: "pdf",
+    fiscalYear: "R3",
+    scope: "甲府市（一般会計）",
+    license: "甲府市ウェブサイト掲載資料（利用条件は同サイト参照）",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      kanFile: "2r03ippankaikeisainyusaisyutu.pdf",
+      revenuePage: 1,
+      expenditurePage: 2,
+      projectsFile: "3r03omonajigyo_3.pdf",
+      projectFormat: "bullets",
+      projectPages: { from: 1, to: 3 },
+    },
+  },
+  {
+    // 注意: R2 の款別一覧表の前年列は「令和元年度 6月補正後予算額」（当初でない）。
+    // パーサが prevBasis を自動検出して parsed に記録する
+    id: "kofu-yosansho-r2",
+    title: "令和2年度 甲府市当初予算資料（款別一覧表・主な事業）",
+    publisher: "甲府市",
+    url: null,
+    urls: [
+      "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r02sainyuusaishutu.pdf",
+      "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r02omonajigyou.pdf",
+    ],
+    landingPage: "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r02yosan.html",
+    kind: "pdf",
+    fiscalYear: "R2",
+    scope: "甲府市（一般会計）",
+    license: "甲府市ウェブサイト掲載資料（利用条件は同サイト参照）",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      kanFile: "r02sainyuusaishutu.pdf",
+      revenuePage: 1,
+      expenditurePage: 2,
+      projectsFile: "r02omonajigyou.pdf",
+      projectFormat: "bullets",
+      projectPages: { from: 1, to: 3 },
+    },
+  },
+  {
     // 甲府市の財政事情の公表（地方自治法 §243の3）。年2回、款別の予算現額と
     // 収入/支出済額（＝執行状況）が出る。直リンクは公表のたびに同じパスへ
     // 上書きされるため、アーカイブ済み raw と sha256 が版を固定する。

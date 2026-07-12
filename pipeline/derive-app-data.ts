@@ -233,6 +233,10 @@ const BUDGET_YEARS = [
   { srcId: "kofu-yosansho-r8", fy: "R8", popFy: "R6" },
   { srcId: "kofu-yosansho-r7", fy: "R7", popFy: "R6" },
   { srcId: "kofu-yosansho-r6", fy: "R6", popFy: "R5" },
+  // R4・R5 は資料が市サイトから削除済みで入手不可（data-sources.md 参照）
+  { srcId: "kofu-yosansho-r3", fy: "R3", popFy: "R2" },
+  // R2 期首（令2.1.1）の人口は決算状況調 R1 が必要（未収録）。最も近い令3.1.1 を明示して使う
+  { srcId: "kofu-yosansho-r2", fy: "R2", popFy: "R2" },
 ] as const;
 
 const toOku = (thousandYen: number) => thousandYen / 100_000;
@@ -281,8 +285,15 @@ function buildKofuBudgetYear(entry: (typeof BUDGET_YEARS)[number]) {
   const meta = readRawMeta(srcId);
   if (!meta) throw new Error(`${srcId}: raw-meta がありません（先に pipeline:fetch）`);
   const source = findSource(srcId);
-  const file = meta.files[0]!;
-  const url = source.urls?.[0] ?? source.landingPage ?? "";
+  const optFiles = (source.parserOptions ?? {}) as { kanFile?: string; projectsFile?: string };
+  const urlOf = (filename: string) =>
+    source.urls?.find((u) => u.endsWith(`/${filename}`)) ?? source.urls?.[0] ?? source.landingPage ?? "";
+  // 分冊形式（R2・R3）は款別一覧と主な事業が別ファイル。単一ファイル形式は同一
+  const file = (optFiles.kanFile ? meta.files.find((f) => f.filename === optFiles.kanFile) : meta.files[0])!;
+  const projFile =
+    (optFiles.projectsFile ? meta.files.find((f) => f.filename === optFiles.projectsFile) : meta.files[0])!;
+  const url = urlOf(file.filename);
+  const projUrl = urlOf(projFile.filename);
 
   const kanRow = (
     name: string,
@@ -353,6 +364,8 @@ function buildKofuBudgetYear(entry: (typeof BUDGET_YEARS)[number]) {
     totalOku: toOku(doc.expenditureTotal),
     prevTotalOku: doc.prevExpenditureTotal != null ? toOku(doc.prevExpenditureTotal) : null,
     yoyLabel: yoyTotal != null ? `${yoyTotal >= 0 ? "+" : ""}${yoyTotal.toFixed(1)}%` : "",
+    // 前年度列の基準（R2 の一覧表は前年が「6月補正後予算額」であり当初でない）
+    prevBasis: doc.prevBasis,
     sourceTitle: source.title,
     // リンクは Wayback コピー（パース時点の版に固定）。発行元の元 URL は originUrl
     sourceUrl: wayback(url),
@@ -360,17 +373,16 @@ function buildKofuBudgetYear(entry: (typeof BUDGET_YEARS)[number]) {
     pagesLabel: `p.${pagesOpts.revenuePage}–${pagesOpts.expenditurePage}`,
     revenue,
     expenditure,
-    evidence: [
-      {
-        title: source.title,
-        type: "PDF",
-        url: wayback(url),
-        source: url ? new URL(url).hostname : "",
-        thumb: `${file.filename} ・ sha256 ${file.sha256.slice(0, 16)}… ・ ${file.fetchedAt.slice(0, 10)} 取得`,
-      },
-    ],
+    // 分冊形式では款別一覧・主な事業の両ファイルをエビデンスとして列挙する
+    evidence: meta.files.map((f) => ({
+      title: source.title + (meta.files.length > 1 ? `（${f.filename}）` : ""),
+      type: "PDF",
+      url: wayback(urlOf(f.filename)),
+      source: url ? new URL(url).hostname : "",
+      thumb: `${f.filename} ・ sha256 ${f.sha256.slice(0, 16)}… ・ ${f.fetchedAt.slice(0, 10)} 取得`,
+    })),
   };
-  return { budget, doc, file, url, source, pagesOpts };
+  return { budget, doc, file, url, projFile, projUrl, source, pagesOpts };
 }
 
 const budgetYears = BUDGET_YEARS.map(buildKofuBudgetYear);
@@ -405,6 +417,8 @@ export interface KofuBudgetYear {
   totalOku: number;
   prevTotalOku: number | null;
   yoyLabel: string;
+  /** 前年度額の基準。"補正後" の年（R2）は前年が当初予算額でない点に注意 */
+  prevBasis: "当初" | "補正後";
   sourceTitle: string;
   /** リンク用 URL（Wayback コピー優先。パース時点の版に固定） */
   sourceUrl: string;
@@ -661,16 +675,17 @@ console.log(
         amountOku: toOku(p.amount),
         description: p.description,
         basicGoal: p.basicGoal,
+        ...(p.basicGoalLabel ? { basicGoalLabel: p.basicGoalLabel } : {}),
         shisaku: p.shisaku,
-        ref: `${b.file.filename}#p${p.locator.page}`,
+        ref: `${b.projFile.filename}#p${p.locator.page}`,
         refLabel: `予算資料 p.${p.locator.page}`,
         // PDF のページアンカー付きリンク（Wayback コピー優先。フラグメントはコピーでも効く）
-        refUrl: `${wayback(b.url)}#page=${p.locator.page}`,
+        refUrl: `${wayback(b.projUrl)}#page=${p.locator.page}`,
       })),
       source: {
         title: b.source.title,
-        url: wayback(b.url),
-        originUrl: b.url,
+        url: wayback(b.projUrl),
+        originUrl: b.projUrl,
         pagesLabel: b.pagesOpts.projectPages
           ? `p.${b.pagesOpts.projectPages.from}–${b.pagesOpts.projectPages.to}`
           : "",
@@ -683,11 +698,12 @@ console.log(
 // 金額は億円（資料の千円値を 1e5 で割った正確値）
 
 export interface KofuProject {
-  /** 歳出款または特別会計名 */
-  kan: string;
-  /** 資料の掲載番号（全体で連番） */
-  no: number;
-  kubun: "新規" | "拡充" | null;
+  /** 歳出款または特別会計名。箇条書き形式の年度（R2・R3）は記載が無く null */
+  kan: string | null;
+  /** 資料の掲載番号（全体で連番）。箇条書き形式は null */
+  no: number | null;
+  /** 新規/拡充（表形式の区分列）または繰越（箇条書きの◆） */
+  kubun: "新規" | "拡充" | "繰越" | null;
   /** 事業名（【N】=KOFU NEXT ACTION、【連】=県央ネットやまなし関連） */
   name: string;
   /** 予算書上の事業名（資料の下段（ ）書き） */
@@ -695,9 +711,11 @@ export interface KofuProject {
   /** 予算額（億円） */
   amountOku: number;
   description: string;
-  /** 総合計画の基本目標（ひと/まち/魅力。複数は「・」連結） */
+  /** 総合計画の基本目標（ひと/まち/魅力、基本目標1〜4、基本構想の推進。複数は「・」連結） */
   basicGoal: string;
-  /** 総合計画の施策 */
+  /** 基本目標の名称（箇条書き形式の見出しから。表形式には無い） */
+  basicGoalLabel?: string;
+  /** 総合計画の施策（箇条書き形式では「施策の柱」） */
   shisaku: string;
   ref: string;
   refLabel: string;
