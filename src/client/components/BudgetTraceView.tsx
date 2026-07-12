@@ -630,14 +630,19 @@ export default function BudgetTraceView({ v }: { v: any }) {
                   </div>
                   {v.sourcesRows.map((src: any, i: number) => (
                     <div key={i} data-mq="src" style={S("display:grid; grid-template-columns:minmax(200px,2fr) 70px minmax(140px,1.4fr) 100px minmax(160px,1.6fr); gap:12px; padding:11px 0; border-bottom:1px solid #ECF2F6; font-size:13px; align-items:center;")}>
-                      <a href={src.url} target="_blank" rel="noopener noreferrer" style={S("font-weight:600;")}>{src.title} ↗</a>
+                      <span style={S("display:flex; flex-direction:column; gap:2px;")}>
+                        <a href={src.url} target="_blank" rel="noopener noreferrer" style={S("font-weight:600;")}>{src.title} ↗</a>
+                        {src.originUrl && src.originUrl !== src.url && (
+                          <a href={src.originUrl} target="_blank" rel="noopener noreferrer" style={S("font-size:11px; color:#5C6B77; text-decoration:none;")}>発行元の元ページ（最新版に差し替わっている可能性あり）↗</a>
+                        )}
+                      </span>
                       <span><span style={S("display:inline-block; font-size:10.5px; font-weight:600; color:#0F76A3; border:1px solid #B9E0F2; border-radius:999px; padding:1px 9px;")}>{src.type}</span></span>
                       <span style={S("font-size:12.5px; color:#5C6B77;")}>{src.org}</span>
                       <span style={S("font-family:'IBM Plex Mono',monospace; font-size:12px;")}>{src.date}</span>
                       <span style={S("font-size:12px; color:#5C6B77;")}>{src.used}</span>
                     </div>
                   ))}
-                  <p style={S("margin:12px 2px 0; font-size:12px; color:#5C6B77;")}>アプリが実際に使用している一次資料の一覧です。原本はリポジトリにアーカイブされ、取得時の SHA-256 ハッシュで来歴を検証できます。</p>
+                  <p style={S("margin:12px 2px 0; font-size:12px; color:#5C6B77;")}>アプリが実際に使用している一次資料の一覧です。リンクは Wayback Machine のコピー（魚拓）を優先しています — 発行元の直リンクは中身だけ差し替えられる可能性があるため、収録時点の版に固定されたコピーの方が透明性が高いためです。原本はリポジトリにもアーカイブされ、取得時の SHA-256 ハッシュで来歴を検証できます。</p>
                 </section>
               </div>
             )}

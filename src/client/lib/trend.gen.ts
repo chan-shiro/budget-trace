@@ -46,7 +46,7 @@ export const KOFU_TREND: KofuTrendRow[] = [
       "公債費": 75.44239,
       "労働費": 2.34026
     },
-    "landingUrl": "https://www.soumu.go.jp/iken/zaisei/r02_shichouson.html",
+    "landingUrl": "https://web.archive.org/web/20260301074317/https://www.soumu.go.jp/iken/zaisei/r02_shichouson.html",
     "ref": "000800819.xlsx 436行目"
   },
   {
@@ -71,7 +71,7 @@ export const KOFU_TREND: KofuTrendRow[] = [
       "公債費": 79.89519,
       "労働費": 2.09871
     },
-    "landingUrl": "https://www.soumu.go.jp/iken/zaisei/r03_shichouson.html",
+    "landingUrl": "https://web.archive.org/web/20260227045514/https://www.soumu.go.jp/iken/zaisei/r03_shichouson.html",
     "ref": "000871018.xlsx 436行目"
   },
   {
@@ -96,7 +96,7 @@ export const KOFU_TREND: KofuTrendRow[] = [
       "公債費": 83.84582,
       "労働費": 1.92868
     },
-    "landingUrl": "https://www.soumu.go.jp/iken/zaisei/r04_shichouson.html",
+    "landingUrl": "https://web.archive.org/web/20260301074317/https://www.soumu.go.jp/iken/zaisei/r04_shichouson.html",
     "ref": "000937287.xlsx 436行目"
   },
   {
@@ -121,7 +121,7 @@ export const KOFU_TREND: KofuTrendRow[] = [
       "公債費": 82.54889,
       "労働費": 1.87043
     },
-    "landingUrl": "https://www.soumu.go.jp/iken/zaisei/r05_shichouson.html",
+    "landingUrl": "https://web.archive.org/web/20250404151416/https://www.soumu.go.jp/iken/zaisei/r05_shichouson.html",
     "ref": "000999900.xlsx 436行目"
   },
   {
@@ -146,7 +146,7 @@ export const KOFU_TREND: KofuTrendRow[] = [
       "公債費": 81.44925,
       "労働費": 1.83636
     },
-    "landingUrl": "https://www.soumu.go.jp/iken/zaisei/r06_shichouson.html",
+    "landingUrl": "https://web.archive.org/web/20260712084441/https://www.soumu.go.jp/iken/zaisei/r06_shichouson.html",
     "ref": "001061669.xlsx 436行目"
   }
 ];

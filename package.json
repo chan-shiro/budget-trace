@@ -15,7 +15,8 @@
     "pipeline:validate": "bun pipeline/validate.ts",
     "pipeline:normalize": "bun pipeline/normalize.ts",
     "pipeline:fixture": "bun pipeline/dev/make-fixture.ts",
-    "pipeline:derive": "bun pipeline/derive-app-data.ts"
+    "pipeline:derive": "bun pipeline/derive-app-data.ts",
+    "pipeline:archive": "bun pipeline/archive.ts"
   },
   "dependencies": {
     "next": "^14.2.35",

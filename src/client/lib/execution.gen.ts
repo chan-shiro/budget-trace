@@ -27,7 +27,10 @@ export const KOFU_EXECUTION: {
   revenue: KofuExecRow[];
   expenditure: KofuExecRow[];
   sourceTitle: string;
+  /** リンク用 URL（Wayback コピー優先） */
   sourceUrl: string;
+  /** 発行元の元 URL */
+  originUrl: string;
   evidence: { title: string; type: string; url: string; source: string; thumb: string }[];
 } = {
   "fyLabel": "令和7年度（令和8年3月31日現在）",
@@ -323,12 +326,13 @@ export const KOFU_EXECUTION: {
     }
   ],
   "sourceTitle": "令和7年度 甲府市財政事情（一般会計の状況・令和8年3月31日現在）",
-  "sourceUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/zaise/documents/01ipankaikei.pdf",
+  "sourceUrl": "https://web.archive.org/web/20260712091231/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/zaise/documents/01ipankaikei.pdf",
+  "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/zaise/documents/01ipankaikei.pdf",
   "evidence": [
     {
       "title": "令和7年度 甲府市財政事情（一般会計の状況・令和8年3月31日現在）",
       "type": "PDF",
-      "url": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/zaise/documents/01ipankaikei.pdf",
+      "url": "https://web.archive.org/web/20260712091231/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/zaise/documents/01ipankaikei.pdf",
       "source": "www.city.kofu.yamanashi.jp",
       "thumb": "01ipankaikei.pdf ・ sha256 92529cd6bd059b35… ・ 2026-07-11 取得"
     }

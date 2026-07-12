@@ -49,6 +49,33 @@ export const rawMetaSchema = z.object({
 });
 export type RawMeta = z.infer<typeof rawMetaSchema>;
 
+// ---- [1b] 外部アーカイブ台帳（data/archives.json） ----------------------------
+// 一次資料の Wayback Machine スナップショット。raw 層（私たちの写し）に加えて
+// 第三者が検証できる中立な写しの所在を記録する。pipeline/archive.ts が書く。
+export const archiveEntrySchema = z.object({
+  sourceId: z.string(),
+  /** アーカイブ対象の元 URL（直リンクまたはランディングページ） */
+  url: z.string().url(),
+  kind: z.enum(["file", "landing"]),
+  /** スナップショット URL（https://web.archive.org/web/<ts>/<url>） */
+  waybackUrl: z.string().url(),
+  /** スナップショットのタイムスタンプ（YYYYMMDDhhmmss） */
+  waybackTimestamp: z.string(),
+  /** この台帳エントリを最後に確認した日時（ISO 8601） */
+  checkedAt: z.string(),
+  /**
+   * コピーの sha256 が raw（私たちが parse した版）と一致するか。
+   * file のみ・検証済みの場合に入る。false = スナップショットが別版
+   * （古い版など）を指しており、--force で現行版の再登録が必要
+   */
+  sha256Match: z.boolean().optional(),
+});
+export type ArchiveEntry = z.infer<typeof archiveEntrySchema>;
+export const archivesLedgerSchema = z.object({
+  note: z.string(),
+  entries: z.array(archiveEntrySchema),
+});
+
 // ---- [2] parsed --------------------------------------------------------------
 // 抽出した事実は必ず locator（どのファイルのどの位置から来たか）を持つ。
 // UI のエビデンス表示・監査はここに依存する。
