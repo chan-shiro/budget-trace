@@ -511,7 +511,9 @@ export default function BudgetTrace() {
     dashSourceUrl: budget.sourceLocalUrl,
     dashSourceTitle: budget.sourceTitle,
     dashSourceOpen: () => openViewer({
-      url: budget.sourceLocalUrl, title: budget.sourceTitle, sub: `款別一覧 ${budget.pagesLabel}`,
+      // 表紙でなく款別一覧の先頭ページ（pagesLabel の最初の数値）から開く
+      url: `${budget.sourceLocalUrl}#page=${budget.pagesLabel.match(/\d+/)?.[0] ?? 1}`,
+      title: budget.sourceTitle, sub: `款別一覧 ${budget.pagesLabel}`,
       originUrl: budget.originUrl, archiveUrl: budget.sourceUrl,
     }),
     themesIntro: `${planInfo.plan}の基本目標（${GOALS.map((g) => `「${g.name}」`).join("")}）別に、予算資料「主な事業一覧」に掲載された${KOFU_PROJECTS.length}事業を、資料記載の基本目標・施策の紐付けどおりに集計しています。`,
