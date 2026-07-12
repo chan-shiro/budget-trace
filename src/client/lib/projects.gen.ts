@@ -22,6 +22,8 @@ export interface KofuProject {
   shisaku: string;
   ref: string;
   refLabel: string;
+  /** 原資料 PDF の該当ページへの直リンク */
+  refUrl: string;
 }
 
 export const KOFU_PROJECTS: KofuProject[] = [
@@ -36,7 +38,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "互いを尊重し共生できる社会の実現",
     "ref": "r8toushoyosansiryou.pdf#p14",
-    "refLabel": "予算資料 p.14"
+    "refLabel": "予算資料 p.14",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=14"
   },
   {
     "kan": "総務費",
@@ -49,7 +52,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "互いを尊重し共生できる社会の実現",
     "ref": "r8toushoyosansiryou.pdf#p14",
-    "refLabel": "予算資料 p.14"
+    "refLabel": "予算資料 p.14",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=14"
   },
   {
     "kan": "総務費",
@@ -62,7 +66,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "互いを尊重し共生できる社会の実現",
     "ref": "r8toushoyosansiryou.pdf#p14",
-    "refLabel": "予算資料 p.14"
+    "refLabel": "予算資料 p.14",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=14"
   },
   {
     "kan": "総務費",
@@ -75,7 +80,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "地域とのつながり・愛着の醸成",
     "ref": "r8toushoyosansiryou.pdf#p14",
-    "refLabel": "予算資料 p.14"
+    "refLabel": "予算資料 p.14",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=14"
   },
   {
     "kan": "総務費",
@@ -88,7 +94,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "まち",
     "shisaku": "生活を支えるインフラの整備・更新",
     "ref": "r8toushoyosansiryou.pdf#p14",
-    "refLabel": "予算資料 p.14"
+    "refLabel": "予算資料 p.14",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=14"
   },
   {
     "kan": "総務費",
@@ -101,7 +108,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "まち",
     "shisaku": "生活を支えるインフラの整備・更新",
     "ref": "r8toushoyosansiryou.pdf#p14",
-    "refLabel": "予算資料 p.14"
+    "refLabel": "予算資料 p.14",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=14"
   },
   {
     "kan": "総務費",
@@ -114,7 +122,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "宝飾をはじめとする地域産業を活かしたブランド力の強化",
     "ref": "r8toushoyosansiryou.pdf#p14",
-    "refLabel": "予算資料 p.14"
+    "refLabel": "予算資料 p.14",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=14"
   },
   {
     "kan": "総務費",
@@ -127,7 +136,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "宝飾をはじめとする地域産業を活かしたブランド力の強化",
     "ref": "r8toushoyosansiryou.pdf#p14",
-    "refLabel": "予算資料 p.14"
+    "refLabel": "予算資料 p.14",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=14"
   },
   {
     "kan": "総務費",
@@ -140,7 +150,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
     "ref": "r8toushoyosansiryou.pdf#p15",
-    "refLabel": "予算資料 p.15"
+    "refLabel": "予算資料 p.15",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
   },
   {
     "kan": "総務費",
@@ -153,7 +164,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "多様な主体との連携の推進",
     "ref": "r8toushoyosansiryou.pdf#p15",
-    "refLabel": "予算資料 p.15"
+    "refLabel": "予算資料 p.15",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
   },
   {
     "kan": "総務費",
@@ -166,7 +178,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
     "ref": "r8toushoyosansiryou.pdf#p15",
-    "refLabel": "予算資料 p.15"
+    "refLabel": "予算資料 p.15",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
   },
   {
     "kan": "総務費",
@@ -179,7 +192,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
     "ref": "r8toushoyosansiryou.pdf#p15",
-    "refLabel": "予算資料 p.15"
+    "refLabel": "予算資料 p.15",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
   },
   {
     "kan": "総務費",
@@ -192,7 +206,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "リニア開業を見据えたまちづくりの展開",
     "ref": "r8toushoyosansiryou.pdf#p15",
-    "refLabel": "予算資料 p.15"
+    "refLabel": "予算資料 p.15",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
   },
   {
     "kan": "総務費",
@@ -205,7 +220,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "リニア開業を見据えたまちづくりの展開",
     "ref": "r8toushoyosansiryou.pdf#p15",
-    "refLabel": "予算資料 p.15"
+    "refLabel": "予算資料 p.15",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
   },
   {
     "kan": "総務費",
@@ -218,7 +234,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "将来にわたり持続可能な行財政運営の推進",
     "ref": "r8toushoyosansiryou.pdf#p15",
-    "refLabel": "予算資料 p.15"
+    "refLabel": "予算資料 p.15",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
   },
   {
     "kan": "総務費",
@@ -231,7 +248,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "将来にわたり持続可能な行財政運営の推進",
     "ref": "r8toushoyosansiryou.pdf#p15",
-    "refLabel": "予算資料 p.15"
+    "refLabel": "予算資料 p.15",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
   },
   {
     "kan": "総務費",
@@ -244,7 +262,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "将来にわたり持続可能な行財政運営の推進",
     "ref": "r8toushoyosansiryou.pdf#p15",
-    "refLabel": "予算資料 p.15"
+    "refLabel": "予算資料 p.15",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
   },
   {
     "kan": "総務費",
@@ -257,7 +276,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "将来にわたり持続可能な行財政運営の推進",
     "ref": "r8toushoyosansiryou.pdf#p15",
-    "refLabel": "予算資料 p.15"
+    "refLabel": "予算資料 p.15",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=15"
   },
   {
     "kan": "民生費",
@@ -270,7 +290,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "自分らしく暮らせる福祉の充実",
     "ref": "r8toushoyosansiryou.pdf#p16",
-    "refLabel": "予算資料 p.16"
+    "refLabel": "予算資料 p.16",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
   },
   {
     "kan": "民生費",
@@ -283,7 +304,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "自分らしく暮らせる福祉の充実",
     "ref": "r8toushoyosansiryou.pdf#p16",
-    "refLabel": "予算資料 p.16"
+    "refLabel": "予算資料 p.16",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
   },
   {
     "kan": "民生費",
@@ -296,7 +318,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "自分らしく暮らせる福祉の充実",
     "ref": "r8toushoyosansiryou.pdf#p16",
-    "refLabel": "予算資料 p.16"
+    "refLabel": "予算資料 p.16",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
   },
   {
     "kan": "民生費",
@@ -309,7 +332,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "自分らしく暮らせる福祉の充実",
     "ref": "r8toushoyosansiryou.pdf#p16",
-    "refLabel": "予算資料 p.16"
+    "refLabel": "予算資料 p.16",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
   },
   {
     "kan": "民生費",
@@ -322,7 +346,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "自分らしく暮らせる福祉の充実",
     "ref": "r8toushoyosansiryou.pdf#p16",
-    "refLabel": "予算資料 p.16"
+    "refLabel": "予算資料 p.16",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
   },
   {
     "kan": "民生費",
@@ -335,7 +360,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "自分らしく暮らせる福祉の充実",
     "ref": "r8toushoyosansiryou.pdf#p16",
-    "refLabel": "予算資料 p.16"
+    "refLabel": "予算資料 p.16",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
   },
   {
     "kan": "民生費",
@@ -348,7 +374,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "子育て・子育ちを支える環境づくり",
     "ref": "r8toushoyosansiryou.pdf#p16",
-    "refLabel": "予算資料 p.16"
+    "refLabel": "予算資料 p.16",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
   },
   {
     "kan": "民生費",
@@ -361,7 +388,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "子育て・子育ちを支える環境づくり",
     "ref": "r8toushoyosansiryou.pdf#p16",
-    "refLabel": "予算資料 p.16"
+    "refLabel": "予算資料 p.16",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
   },
   {
     "kan": "民生費",
@@ -374,7 +402,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "子育て・子育ちを支える環境づくり",
     "ref": "r8toushoyosansiryou.pdf#p16",
-    "refLabel": "予算資料 p.16"
+    "refLabel": "予算資料 p.16",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=16"
   },
   {
     "kan": "衛生費",
@@ -387,7 +416,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "子育て・子育ちを支える環境づくり",
     "ref": "r8toushoyosansiryou.pdf#p17",
-    "refLabel": "予算資料 p.17"
+    "refLabel": "予算資料 p.17",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
   },
   {
     "kan": "衛生費",
@@ -400,7 +430,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "子育て・子育ちを支える環境づくり",
     "ref": "r8toushoyosansiryou.pdf#p17",
-    "refLabel": "予算資料 p.17"
+    "refLabel": "予算資料 p.17",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
   },
   {
     "kan": "衛生費",
@@ -413,7 +444,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "健康に生活できる環境の整備",
     "ref": "r8toushoyosansiryou.pdf#p17",
-    "refLabel": "予算資料 p.17"
+    "refLabel": "予算資料 p.17",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
   },
   {
     "kan": "衛生費",
@@ -426,7 +458,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "健康に生活できる環境の整備",
     "ref": "r8toushoyosansiryou.pdf#p17",
-    "refLabel": "予算資料 p.17"
+    "refLabel": "予算資料 p.17",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
   },
   {
     "kan": "衛生費",
@@ -439,7 +472,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "健康に生活できる環境の整備",
     "ref": "r8toushoyosansiryou.pdf#p17",
-    "refLabel": "予算資料 p.17"
+    "refLabel": "予算資料 p.17",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
   },
   {
     "kan": "衛生費",
@@ -452,7 +486,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "健康に生活できる環境の整備",
     "ref": "r8toushoyosansiryou.pdf#p17",
-    "refLabel": "予算資料 p.17"
+    "refLabel": "予算資料 p.17",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
   },
   {
     "kan": "衛生費",
@@ -465,7 +500,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "健康に生活できる環境の整備",
     "ref": "r8toushoyosansiryou.pdf#p17",
-    "refLabel": "予算資料 p.17"
+    "refLabel": "予算資料 p.17",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
   },
   {
     "kan": "衛生費",
@@ -478,7 +514,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "健康に生活できる環境の整備",
     "ref": "r8toushoyosansiryou.pdf#p17",
-    "refLabel": "予算資料 p.17"
+    "refLabel": "予算資料 p.17",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
   },
   {
     "kan": "衛生費",
@@ -491,7 +528,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "健康に生活できる環境の整備",
     "ref": "r8toushoyosansiryou.pdf#p17",
-    "refLabel": "予算資料 p.17"
+    "refLabel": "予算資料 p.17",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
   },
   {
     "kan": "衛生費",
@@ -504,7 +542,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "健康に生活できる環境の整備",
     "ref": "r8toushoyosansiryou.pdf#p17",
-    "refLabel": "予算資料 p.17"
+    "refLabel": "予算資料 p.17",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=17"
   },
   {
     "kan": "衛生費",
@@ -517,7 +556,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "まち",
     "shisaku": "心地よく暮らせる住環境の形成",
     "ref": "r8toushoyosansiryou.pdf#p18",
-    "refLabel": "予算資料 p.18"
+    "refLabel": "予算資料 p.18",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=18"
   },
   {
     "kan": "衛生費",
@@ -530,7 +570,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "まち",
     "shisaku": "心地よく暮らせる住環境の形成",
     "ref": "r8toushoyosansiryou.pdf#p18",
-    "refLabel": "予算資料 p.18"
+    "refLabel": "予算資料 p.18",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=18"
   },
   {
     "kan": "衛生費",
@@ -543,7 +584,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "まち",
     "shisaku": "心地よく暮らせる住環境の形成",
     "ref": "r8toushoyosansiryou.pdf#p18",
-    "refLabel": "予算資料 p.18"
+    "refLabel": "予算資料 p.18",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=18"
   },
   {
     "kan": "労働費",
@@ -556,7 +598,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "地域活力を支える産業の振興と雇用の創出",
     "ref": "r8toushoyosansiryou.pdf#p18",
-    "refLabel": "予算資料 p.18"
+    "refLabel": "予算資料 p.18",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=18"
   },
   {
     "kan": "労働費",
@@ -569,7 +612,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "地域活力を支える産業の振興と雇用の創出",
     "ref": "r8toushoyosansiryou.pdf#p18",
-    "refLabel": "予算資料 p.18"
+    "refLabel": "予算資料 p.18",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=18"
   },
   {
     "kan": "労働費",
@@ -582,7 +626,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "地域活力を支える産業の振興と雇用の創出",
     "ref": "r8toushoyosansiryou.pdf#p18",
-    "refLabel": "予算資料 p.18"
+    "refLabel": "予算資料 p.18",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=18"
   },
   {
     "kan": "農林水産業費",
@@ -595,7 +640,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "まち",
     "shisaku": "心地よく暮らせる住環境の形成",
     "ref": "r8toushoyosansiryou.pdf#p19",
-    "refLabel": "予算資料 p.19"
+    "refLabel": "予算資料 p.19",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=19"
   },
   {
     "kan": "農林水産業費",
@@ -608,7 +654,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "地域活力を支える産業の振興と雇用の創出",
     "ref": "r8toushoyosansiryou.pdf#p19",
-    "refLabel": "予算資料 p.19"
+    "refLabel": "予算資料 p.19",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=19"
   },
   {
     "kan": "農林水産業費",
@@ -621,7 +668,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "地域活力を支える産業の振興と雇用の創出",
     "ref": "r8toushoyosansiryou.pdf#p19",
-    "refLabel": "予算資料 p.19"
+    "refLabel": "予算資料 p.19",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=19"
   },
   {
     "kan": "農林水産業費",
@@ -634,7 +682,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "地域活力を支える産業の振興と雇用の創出",
     "ref": "r8toushoyosansiryou.pdf#p19",
-    "refLabel": "予算資料 p.19"
+    "refLabel": "予算資料 p.19",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=19"
   },
   {
     "kan": "農林水産業費",
@@ -647,7 +696,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "地域活力を支える産業の振興と雇用の創出",
     "ref": "r8toushoyosansiryou.pdf#p19",
-    "refLabel": "予算資料 p.19"
+    "refLabel": "予算資料 p.19",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=19"
   },
   {
     "kan": "商工費",
@@ -660,7 +710,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "宝飾をはじめとする地域産業を活かしたブランド力の強化",
     "ref": "r8toushoyosansiryou.pdf#p19",
-    "refLabel": "予算資料 p.19"
+    "refLabel": "予算資料 p.19",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=19"
   },
   {
     "kan": "商工費",
@@ -673,7 +724,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "宝飾をはじめとする地域産業を活かしたブランド力の強化",
     "ref": "r8toushoyosansiryou.pdf#p19",
-    "refLabel": "予算資料 p.19"
+    "refLabel": "予算資料 p.19",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=19"
   },
   {
     "kan": "商工費",
@@ -686,7 +738,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "宝飾をはじめとする地域産業を活かしたブランド力の強化",
     "ref": "r8toushoyosansiryou.pdf#p20",
-    "refLabel": "予算資料 p.20"
+    "refLabel": "予算資料 p.20",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=20"
   },
   {
     "kan": "商工費",
@@ -699,7 +752,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "地域活力を支える産業の振興と雇用の創出",
     "ref": "r8toushoyosansiryou.pdf#p20",
-    "refLabel": "予算資料 p.20"
+    "refLabel": "予算資料 p.20",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=20"
   },
   {
     "kan": "商工費",
@@ -712,7 +766,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
     "ref": "r8toushoyosansiryou.pdf#p20",
-    "refLabel": "予算資料 p.20"
+    "refLabel": "予算資料 p.20",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=20"
   },
   {
     "kan": "商工費",
@@ -725,7 +780,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
     "ref": "r8toushoyosansiryou.pdf#p20",
-    "refLabel": "予算資料 p.20"
+    "refLabel": "予算資料 p.20",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=20"
   },
   {
     "kan": "商工費",
@@ -738,7 +794,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
     "ref": "r8toushoyosansiryou.pdf#p20",
-    "refLabel": "予算資料 p.20"
+    "refLabel": "予算資料 p.20",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=20"
   },
   {
     "kan": "土木費",
@@ -751,7 +808,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "健康に生活できる環境の整備",
     "ref": "r8toushoyosansiryou.pdf#p20",
-    "refLabel": "予算資料 p.20"
+    "refLabel": "予算資料 p.20",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=20"
   },
   {
     "kan": "土木費",
@@ -764,7 +822,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "まち",
     "shisaku": "心地よく暮らせる住環境の形成",
     "ref": "r8toushoyosansiryou.pdf#p20",
-    "refLabel": "予算資料 p.20"
+    "refLabel": "予算資料 p.20",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=20"
   },
   {
     "kan": "土木費",
@@ -777,7 +836,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "まち",
     "shisaku": "心地よく暮らせる住環境の形成",
     "ref": "r8toushoyosansiryou.pdf#p20",
-    "refLabel": "予算資料 p.20"
+    "refLabel": "予算資料 p.20",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=20"
   },
   {
     "kan": "土木費",
@@ -790,7 +850,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "まち",
     "shisaku": "生活を支えるインフラの整備・更新",
     "ref": "r8toushoyosansiryou.pdf#p21",
-    "refLabel": "予算資料 p.21"
+    "refLabel": "予算資料 p.21",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
   },
   {
     "kan": "土木費",
@@ -803,7 +864,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "まち",
     "shisaku": "生活を支えるインフラの整備・更新",
     "ref": "r8toushoyosansiryou.pdf#p21",
-    "refLabel": "予算資料 p.21"
+    "refLabel": "予算資料 p.21",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
   },
   {
     "kan": "土木費",
@@ -816,7 +878,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "まち",
     "shisaku": "生活を支えるインフラの整備・更新",
     "ref": "r8toushoyosansiryou.pdf#p21",
-    "refLabel": "予算資料 p.21"
+    "refLabel": "予算資料 p.21",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
   },
   {
     "kan": "土木費",
@@ -829,7 +892,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
     "ref": "r8toushoyosansiryou.pdf#p21",
-    "refLabel": "予算資料 p.21"
+    "refLabel": "予算資料 p.21",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
   },
   {
     "kan": "土木費",
@@ -842,7 +906,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "まち",
     "shisaku": "時代に合った良好な都市空間の形成",
     "ref": "r8toushoyosansiryou.pdf#p21",
-    "refLabel": "予算資料 p.21"
+    "refLabel": "予算資料 p.21",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
   },
   {
     "kan": "土木費",
@@ -855,7 +920,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "まち",
     "shisaku": "時代に合った良好な都市空間の形成",
     "ref": "r8toushoyosansiryou.pdf#p21",
-    "refLabel": "予算資料 p.21"
+    "refLabel": "予算資料 p.21",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
   },
   {
     "kan": "土木費",
@@ -868,7 +934,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "まち",
     "shisaku": "時代に合った良好な都市空間の形成",
     "ref": "r8toushoyosansiryou.pdf#p21",
-    "refLabel": "予算資料 p.21"
+    "refLabel": "予算資料 p.21",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
   },
   {
     "kan": "土木費",
@@ -881,7 +948,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "まち",
     "shisaku": "時代に合った良好な都市空間の形成",
     "ref": "r8toushoyosansiryou.pdf#p21",
-    "refLabel": "予算資料 p.21"
+    "refLabel": "予算資料 p.21",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
   },
   {
     "kan": "土木費",
@@ -894,7 +962,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
     "ref": "r8toushoyosansiryou.pdf#p21",
-    "refLabel": "予算資料 p.21"
+    "refLabel": "予算資料 p.21",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
   },
   {
     "kan": "土木費",
@@ -907,7 +976,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "魅力",
     "shisaku": "新しい人の流れを創る交流とにぎわいの創出",
     "ref": "r8toushoyosansiryou.pdf#p21",
-    "refLabel": "予算資料 p.21"
+    "refLabel": "予算資料 p.21",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=21"
   },
   {
     "kan": "消防費",
@@ -920,7 +990,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "まち",
     "shisaku": "災害・感染症等に強い地域づくり",
     "ref": "r8toushoyosansiryou.pdf#p22",
-    "refLabel": "予算資料 p.22"
+    "refLabel": "予算資料 p.22",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=22"
   },
   {
     "kan": "消防費",
@@ -933,7 +1004,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "まち",
     "shisaku": "災害・感染症等に強い地域づくり",
     "ref": "r8toushoyosansiryou.pdf#p22",
-    "refLabel": "予算資料 p.22"
+    "refLabel": "予算資料 p.22",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=22"
   },
   {
     "kan": "消防費",
@@ -946,7 +1018,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "まち",
     "shisaku": "災害・感染症等に強い地域づくり",
     "ref": "r8toushoyosansiryou.pdf#p22",
-    "refLabel": "予算資料 p.22"
+    "refLabel": "予算資料 p.22",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=22"
   },
   {
     "kan": "消防費",
@@ -959,7 +1032,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "まち",
     "shisaku": "災害・感染症等に強い地域づくり",
     "ref": "r8toushoyosansiryou.pdf#p22",
-    "refLabel": "予算資料 p.22"
+    "refLabel": "予算資料 p.22",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=22"
   },
   {
     "kan": "教育費",
@@ -972,7 +1046,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "誰もが学び、成長できる機会の創出",
     "ref": "r8toushoyosansiryou.pdf#p22",
-    "refLabel": "予算資料 p.22"
+    "refLabel": "予算資料 p.22",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=22"
   },
   {
     "kan": "教育費",
@@ -985,7 +1060,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "誰もが学び、成長できる機会の創出",
     "ref": "r8toushoyosansiryou.pdf#p22",
-    "refLabel": "予算資料 p.22"
+    "refLabel": "予算資料 p.22",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=22"
   },
   {
     "kan": "教育費",
@@ -998,7 +1074,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "誰もが学び、成長できる機会の創出",
     "ref": "r8toushoyosansiryou.pdf#p22",
-    "refLabel": "予算資料 p.22"
+    "refLabel": "予算資料 p.22",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=22"
   },
   {
     "kan": "教育費",
@@ -1011,7 +1088,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "誰もが学び、成長できる機会の創出",
     "ref": "r8toushoyosansiryou.pdf#p22",
-    "refLabel": "予算資料 p.22"
+    "refLabel": "予算資料 p.22",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=22"
   },
   {
     "kan": "教育費",
@@ -1024,7 +1102,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "誰もが学び、成長できる機会の創出",
     "ref": "r8toushoyosansiryou.pdf#p23",
-    "refLabel": "予算資料 p.23"
+    "refLabel": "予算資料 p.23",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=23"
   },
   {
     "kan": "教育費",
@@ -1037,7 +1116,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと・まち",
     "shisaku": "誰もが学び、成長できる機会の創出災害・感染症等に強い地域づくり（再掲）",
     "ref": "r8toushoyosansiryou.pdf#p23",
-    "refLabel": "予算資料 p.23"
+    "refLabel": "予算資料 p.23",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=23"
   },
   {
     "kan": "教育費",
@@ -1050,7 +1130,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "子育て・子育ちを支える環境づくり誰もが学び、成長できる機会の創出",
     "ref": "r8toushoyosansiryou.pdf#p23",
-    "refLabel": "予算資料 p.23"
+    "refLabel": "予算資料 p.23",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=23"
   },
   {
     "kan": "教育費",
@@ -1063,7 +1144,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "子育て・子育ちを支える環境づくり",
     "ref": "r8toushoyosansiryou.pdf#p23",
-    "refLabel": "予算資料 p.23"
+    "refLabel": "予算資料 p.23",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=23"
   },
   {
     "kan": "教育費",
@@ -1076,7 +1158,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "健康に生活できる環境の整備地域とのつながり・愛着の醸成",
     "ref": "r8toushoyosansiryou.pdf#p23",
-    "refLabel": "予算資料 p.23"
+    "refLabel": "予算資料 p.23",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=23"
   },
   {
     "kan": "教育費",
@@ -1089,7 +1172,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "健康に生活できる環境の整備",
     "ref": "r8toushoyosansiryou.pdf#p23",
-    "refLabel": "予算資料 p.23"
+    "refLabel": "予算資料 p.23",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=23"
   },
   {
     "kan": "介護保険事業特別会計",
@@ -1102,7 +1186,8 @@ export const KOFU_PROJECTS: KofuProject[] = [
     "basicGoal": "ひと",
     "shisaku": "自分らしく暮らせる福祉の充実",
     "ref": "r8toushoyosansiryou.pdf#p23",
-    "refLabel": "予算資料 p.23"
+    "refLabel": "予算資料 p.23",
+    "refUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf#page=23"
   }
 ];
 

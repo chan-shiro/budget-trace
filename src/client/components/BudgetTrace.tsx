@@ -226,7 +226,8 @@ export default function BudgetTrace() {
       themeKanChips: Object.entries(kanAgg).map(([nm, v]) => ({ name: nm, amtFmt: fmtV(v), sw: D.PALETTE[kanIdx(nm) % D.PALETTE.length], open: () => nav({ screen: "drill", drillSide: "exp", drillPath: [nm] }) })),
       themeProjects: ps.map((p) => ({
         name: p.name, summary: p.description, kanPath: p.kan, kubun: p.kubun ?? "",
-        budgetFmt: fmtV(p.amountOku), sub: subV(p.amountOku), shisaku: p.shisaku, refLabel: p.refLabel,
+        budgetFmt: fmtV(p.amountOku), sub: subV(p.amountOku), shisaku: p.shisaku,
+        refLabel: p.refLabel, refUrl: p.refUrl,
       })),
     };
   }
@@ -348,16 +349,36 @@ export default function BudgetTrace() {
     // 予算資料「主な事業一覧」の実データ（款レベル・歳出のみ）
     ...(() => {
       const rows = side === "exp" && depth === 1 ? KOFU_PROJECTS.filter((p) => p.kan === nodeName) : [];
+      // 事業単位のエビデンスで説明できる額と、款のうち事業掲載が無い残額（詳細不明）
+      const covered = rows.reduce((a, p) => a + p.amountOku, 0);
+      const uncovered = Math.max(0, nodeTotal - covered);
       return {
         hasRealProjects: rows.length > 0,
         realProjects: rows.map((p) => ({
           no: p.no, kubun: p.kubun ?? "", name: p.name,
           bookName: p.budgetBookName ? `（${p.budgetBookName}）` : "",
           amountFmt: fmtOku(p.amountOku), desc: p.description,
-          goal: p.basicGoal, shisaku: p.shisaku, refLabel: p.refLabel, refTitle: p.ref,
+          goal: p.basicGoal, shisaku: p.shisaku,
+          refLabel: p.refLabel, refTitle: p.ref, refUrl: p.refUrl,
         })),
+        realProjectsCoveredFmt: fmtOku(covered),
+        realProjectsCoveredPct: nodeTotal > 0 ? ((covered / nodeTotal) * 100).toFixed(1) : "0",
+        realProjectsCoveredBarW: nodeTotal > 0 ? Math.min(100, (covered / nodeTotal) * 100).toFixed(1) : "0",
+        realProjectsUncoveredFmt: fmtOku(uncovered),
         realProjectsSourceUrl: KOFU_PROJECTS_SOURCE.url,
         realProjectsSourceLabel: `出典：${KOFU_PROJECTS_SOURCE.title} 主な事業一覧 ${KOFU_PROJECTS_SOURCE.pagesLabel}`,
+      };
+    })(),
+    // 全体のエビデンス充足度（一般会計の款に属する主な事業の合計 vs 歳出総額）
+    ...(() => {
+      const general = KOFU_PROJECTS.filter((p) => KOFU_BUDGET.expenditure.some((k) => k.name === p.kan));
+      const covered = general.reduce((a, p) => a + p.amountOku, 0);
+      return {
+        projCoverageCoveredFmt: fmtOku(covered),
+        projCoverageCount: String(general.length),
+        projCoveragePct: ((covered / KOFU_BUDGET.totalOku) * 100).toFixed(1),
+        projCoverageBarW: Math.min(100, (covered / KOFU_BUDGET.totalOku) * 100).toFixed(1),
+        projCoverageRestFmt: fmtOku(Math.max(0, KOFU_BUDGET.totalOku - covered)),
       };
     })(),
     drillPdfUrl: KOFU_BUDGET.sourceUrl,
