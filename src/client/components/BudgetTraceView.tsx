@@ -3,6 +3,7 @@
 import React from "react";
 import JapanMap from "./JapanMap";
 import { HoverBox, S } from "./ui";
+import PdfViewer from "./PdfViewer";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
@@ -673,13 +674,13 @@ export default function BudgetTraceView({ v }: { v: any }) {
                 <div style={S("font-size:11px; color:#5C6B77; font-family:'IBM Plex Mono',monospace;")}>{v.viewer.sub} ・ 収録時アーカイブの原本コピー</div>
               </div>
               <div style={S("display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:11.5px;")}>
-                <a href={v.viewer.url} target="_blank" rel="noopener noreferrer" style={S("color:#0F76A3; text-decoration:none;")}>新しいタブで開く ↗</a>
+                <a href={v.viewer.tabUrl} target="_blank" rel="noopener noreferrer" style={S("color:#0F76A3; text-decoration:none;")}>新しいタブで開く ↗</a>
                 {v.viewer.archiveUrl && <a href={v.viewer.archiveUrl} target="_blank" rel="noopener noreferrer" style={S("color:#5C6B77; text-decoration:none;")}>魚拓（Wayback）↗</a>}
                 {v.viewer.originUrl && <a href={v.viewer.originUrl} target="_blank" rel="noopener noreferrer" style={S("color:#5C6B77; text-decoration:none;")}>発行元 ↗</a>}
                 <HoverBox as="button" onClick={v.closeViewer} aria-label="閉じる" style={S("border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; border-radius:999px; padding:5px 14px; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("border-color:#1798D0; color:#1798D0;")}>閉じる ✕</HoverBox>
               </div>
             </div>
-            <iframe title={v.viewer.title} src={v.viewer.url} style={S("flex:1; width:100%; border:none; background:#ECF2F6;")} />
+            <PdfViewer url={v.viewer.url} page={v.viewer.page} />
           </div>
         </div>
       )}

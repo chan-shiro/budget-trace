@@ -89,8 +89,12 @@ Claude Design のプロトタイプ（`project/予算トレース.dc.html`）を
   dev/build 前段の `pipeline/sync-public-sources.ts` が `public/sources/` へ同期。gitignore）
   ②Wayback コピー（`bun run pipeline:archive` が登録・`data/archives.json` に台帳化・
   `id_` URL で raw と sha256 突合）③発行元の元 URL。
-  **画面のエビデンスリンクは①を画面下のドロワー（iframe + 来歴ヘッダ）で開き**、
-  ②③はドロワー内の補助リンク。直リンクは中身だけ差し替えられ得るため主リンクにしない。
+  **画面のエビデンスリンクは①を画面下のドロワーで開き**、②③はドロワー内の補助リンク。
+  直リンクは中身だけ差し替えられ得るため主リンクにしない。
+  ドロワーの PDF 描画は **PDF.js（`PdfViewer.tsx`・pdfjs-dist 同梱、worker は
+  sync-public-sources が `public/vendor/` へコピー）**。iframe のブラウザ内蔵ビューアは
+  Safari で1ページ目しか描画されないため使わない。遅延描画（IntersectionObserver）＋
+  初期ページへスクロール（#page=N は openViewer で分離）。
   背景: R4・R5 予算資料の消失（削除後は登録もできない）→ **新資料は取得後すぐ登録**。
   上書き型 URL（財政事情）は版が変わるたび `--force`。
   注意: `bun run build` は dev サーバーと同じ `.next` を使うため、**dev 起動中に build すると
