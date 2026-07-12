@@ -1,8 +1,9 @@
 {
+  "docType": "municipal-accounts",
   "sourceId": "fixture-shichoson-kessan-r6",
   "parser": "soumu-shichoson-kessan",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-07-11T13:54:57.710Z",
+  "parsedAt": "2026-07-11T17:24:08.939Z",
   "unit": "thousandYen",
   "facts": [
     {

@@ -73,6 +73,15 @@ const records: NormalizedMuniAccount[] = doc.facts.map((f) => {
     revenueTotal: f.revenueTotal,
     expenditureTotal: f.expenditureTotal,
     expenditureByPurpose: byPurpose,
+    ...(f.expenditureByPurposeDetail ? { expenditureByPurposeDetail: f.expenditureByPurposeDetail } : {}),
+    ...(f.revenueByCategory ? { revenueByCategory: f.revenueByCategory } : {}),
+    ...(f.revenueByCategoryDetail ? { revenueByCategoryDetail: f.revenueByCategoryDetail } : {}),
+    ...(f.areaKm2 != null ? { areaKm2: f.areaKm2 } : {}),
+    ...(f.industryPct ? { industryPct: f.industryPct } : {}),
+    ...(f.financialIndex != null ? { financialIndex: f.financialIndex } : {}),
+    ...(f.keijoShushiPct != null ? { keijoShushiPct: f.keijoShushiPct } : {}),
+    ...(f.jisshitsuKosaihiPct != null ? { jisshitsuKosaihiPct: f.jisshitsuKosaihiPct } : {}),
+    ...(f.shoraiFutanPct != null ? { shoraiFutanPct: f.shoraiFutanPct } : {}),
     expenditurePerCapitaYen:
       f.population && f.expenditureTotal != null
         ? Math.round((f.expenditureTotal * 1000) / f.population)

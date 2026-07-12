@@ -204,6 +204,38 @@ for (const f of doc.facts) {
     }
   }
 
+  // 歳入科目の和 = 歳入総額（どちらも決算額なので原則一致）
+  if (f.revenueByCategory && f.revenueTotal != null) {
+    const sum = Object.values(f.revenueByCategory).reduce((a, b) => a + b, 0);
+    if (sum !== f.revenueTotal) {
+      const diff = Math.abs(sum - f.revenueTotal) / f.revenueTotal;
+      issues.push({
+        level: diff > 0.005 ? "error" : "warning",
+        muniCode: f.muniCode,
+        message: `${tag}: 歳入科目の和 ${sum} が歳入総額 ${f.revenueTotal} と一致しません（差 ${sum - f.revenueTotal}）`,
+      });
+    }
+  }
+  // 歳入内訳の和 vs 科目総額。「うち〜」の部分列挙は Σ ≤ 総額のみ確認
+  for (const [cat, detail] of Object.entries(f.revenueByCategoryDetail ?? {})) {
+    const catTotal = f.revenueByCategory?.[cat];
+    if (catTotal == null) continue;
+    const names = Object.keys(detail);
+    const sum = Object.values(detail).reduce((a, b) => a + b, 0);
+    const isPartial = names.some((n) => n.startsWith("うち"));
+    if (isPartial) {
+      if (sum > catTotal) {
+        issues.push({ level: "error", muniCode: f.muniCode, message: `${tag}: ${cat} の内訳（うち〜）の和 ${sum} が総額 ${catTotal} を超過` });
+      }
+    } else if (sum !== catTotal) {
+      issues.push({
+        level: "error",
+        muniCode: f.muniCode,
+        message: `${tag}: ${cat} の内訳の和 ${sum} が総額 ${catTotal} と一致しません（差 ${sum - catTotal}）`,
+      });
+    }
+  }
+
   // 目的別の和 ≒ 歳出総額（許容 0.5% / 5% 超は error）
   const purposeSum = Object.values(f.expenditureByPurpose).reduce((a, b) => a + b, 0);
   if (f.expenditureTotal != null && f.expenditureTotal > 0 && purposeSum > 0) {
