@@ -7,6 +7,7 @@
 // - 人口・類似自治体比較: 総務省 令和6年度 市町村別決算状況調
 // ============================================================================
 import { KOFU_BUDGET, type KofuKanRow } from './kofu.gen';
+import { KOFU_EXECUTION } from './execution.gen';
 
 // ---- 型 --------------------------------------------------------------------
 export interface BudgetNode {
@@ -80,13 +81,11 @@ export { KOFU_PROJECTS, KOFU_PROJECTS_SOURCE } from './projects.gen';
 export { KOFU_EXECUTION } from './execution.gen';
 export { KOFU_R6_DETAIL } from './detail.gen';
 
-// データ出典・更新日一覧（アプリが実際に使用している一次資料のみ）
+// データ出典・更新日一覧（数値の一次資料のみ。地図形状などの素材はトップページに記載）
 export const SOURCES = [
-  { title:'令和8年度 甲府市当初予算（案）資料', type:'PDF', org:'甲府市', date:'2026-07-12', used:'ダッシュボード／款別ドリルダウン／前年比較／政策テーマ／主な事業' },
-  { title:'令和7年度 甲府市財政事情（一般会計の状況・令和8年3月31日現在）', type:'PDF', org:'甲府市', date:'2026-07-12', used:'予算執行状況（款別の予算現額・収入/支出済額・執行率）' },
-  { title:'令和6年度 市町村別決算状況調', type:'Excel', org:'総務省 自治財政局', date:'2026-07-11', used:'類似自治体との比較／人口（1人あたり換算）' },
-  { title:'都道府県形状（japanese-prefectures）', type:'SVG', org:'Geolonia（GFDL）', date:'2026-07-10', used:'トップページの地図' },
-  { title:'市区町村形状（japan-topography）', type:'GeoJSON', org:'国土数値情報（国土交通省）を加工／SMRI', date:'2026-07-10', used:'トップページの地図' },
+  { title:'令和8年度 甲府市当初予算（案）資料', type:'PDF', org:'甲府市', date:'2026-07-12', used:'ダッシュボード／款別ドリルダウン／前年比較／政策テーマ／主な事業', url: KOFU_BUDGET.sourceUrl },
+  { title:'令和7年度 甲府市財政事情（一般会計の状況・令和8年3月31日現在）', type:'PDF', org:'甲府市', date:'2026-07-12', used:'予算執行状況（款別の予算現額・収入/支出済額・執行率）', url: KOFU_EXECUTION.sourceUrl },
+  { title:'令和6年度 市町村別決算状況調', type:'Excel', org:'総務省 自治財政局', date:'2026-07-11', used:'類似自治体との比較／項別内訳（決算）／人口（1人あたり換算）', url: 'https://www.soumu.go.jp/iken/zaisei/r06_shichouson.html' },
 ];
 
 // ---- ヘルパー --------------------------------------------------------------

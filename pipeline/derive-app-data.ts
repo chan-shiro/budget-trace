@@ -529,6 +529,8 @@ if (kofuDoc.projects && kofuDoc.projects.length > 0) {
     shisaku: p.shisaku,
     ref: `${kofuFile.filename}#p${p.locator.page}`,
     refLabel: `予算資料 p.${p.locator.page}`,
+    // PDF のページアンカー付きリンク（ブラウザの PDF ビューアが該当ページを開く）
+    refUrl: `${kofuUrl}#page=${p.locator.page}`,
   }));
   const projOut = `// このファイルは自動生成です。手で編集しないこと。
 // 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
@@ -554,6 +556,8 @@ export interface KofuProject {
   shisaku: string;
   ref: string;
   refLabel: string;
+  /** 原資料 PDF の該当ページへの直リンク */
+  refUrl: string;
 }
 
 export const KOFU_PROJECTS: KofuProject[] = ${JSON.stringify(projRows, null, 2)};

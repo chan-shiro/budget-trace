@@ -187,6 +187,16 @@ export default function BudgetTraceView({ v }: { v: any }) {
                       </div>
                     ))}
                   </div>
+                  <div style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; padding:14px 20px; margin-top:14px;")}>
+                    <div style={S("display:flex; justify-content:space-between; gap:12px; font-size:12px; color:#5C6B77; margin-bottom:6px; flex-wrap:wrap;")}>
+                      <span>事業単位のエビデンスあり <span style={S("font-family:'IBM Plex Mono',monospace; color:#14181C; font-weight:600;")}>{v.projCoverageCoveredFmt}</span>（総額の {v.projCoveragePct}%・{v.projCoverageCount}事業）</span>
+                      <span>事業掲載なし（款・項レベルのみ） <span style={S("font-family:'IBM Plex Mono',monospace; color:#14181C;")}>{v.projCoverageRestFmt}</span></span>
+                    </div>
+                    <div style={S("display:flex; height:10px; border-radius:999px; overflow:hidden; background:#E3EBF0;")}>
+                      <span data-anim="bar" style={S(`width:${v.projCoverageBarW}%; background:#1798D0;`)}></span>
+                    </div>
+                    <p style={S("margin:8px 0 0; font-size:11.5px; color:#5C6B77;")}>「主な事業一覧」に掲載された事業だけが内容・施策つきで説明されています。残りの予算は款別（一部は決算の項別）までの内訳です。</p>
+                  </div>
                   <p style={S("margin:14px 2px 0; font-size:12px; color:#5C6B77;")}>
                     <a href={v.dashSourceUrl} target="_blank" rel="noopener noreferrer" style={S("color:#5C6B77;")}>{v.dashSourceLabel} ↗</a>
                   </p>
@@ -276,6 +286,15 @@ export default function BudgetTraceView({ v }: { v: any }) {
                     {v.hasRealProjects && (
                       <div style={S("margin-top:24px;")}>
                         <h3 style={S("margin:0 0 10px; font-size:14px; font-weight:700;")}>この款の主な事業（予算資料より）</h3>
+                        <div style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:11px; padding:12px 16px; margin-bottom:10px;")}>
+                          <div style={S("display:flex; justify-content:space-between; gap:12px; font-size:12px; color:#5C6B77; margin-bottom:6px; flex-wrap:wrap;")}>
+                            <span>事業単位のエビデンスあり <span style={S("font-family:'IBM Plex Mono',monospace; color:#14181C; font-weight:600;")}>{v.realProjectsCoveredFmt}</span>（款の {v.realProjectsCoveredPct}%）</span>
+                            <span>事業掲載なし（詳細不明） <span style={S("font-family:'IBM Plex Mono',monospace; color:#14181C;")}>{v.realProjectsUncoveredFmt}</span></span>
+                          </div>
+                          <div style={S("display:flex; height:10px; border-radius:999px; overflow:hidden; background:#E3EBF0;")}>
+                            <span data-anim="bar" style={S(`width:${v.realProjectsCoveredBarW}%; background:#1798D0;`)}></span>
+                          </div>
+                        </div>
                         <div style={S("display:flex; flex-direction:column; gap:8px;")}>
                           {v.realProjects.map((rp: any, i: number) => (
                             <div key={i} style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:11px; padding:12px 16px;")}>
@@ -290,7 +309,8 @@ export default function BudgetTraceView({ v }: { v: any }) {
                               <div style={S("display:flex; gap:10px; flex-wrap:wrap; margin-top:6px; font-size:11px; color:#5C6B77;")}>
                                 <span>基本目標: {rp.goal}</span>
                                 <span>施策: {rp.shisaku}</span>
-                                <span title={rp.refTitle} style={S("font-family:'IBM Plex Mono',monospace; color:#8494A0;")}>{rp.refLabel}{rp.bookName && ` ・ 予算書名${rp.bookName}`}</span>
+                                <a href={rp.refUrl} target="_blank" rel="noopener noreferrer" title={rp.refTitle} style={S("font-family:'IBM Plex Mono',monospace; color:#0F76A3;")}>{rp.refLabel} ↗</a>
+                                {rp.bookName && <span style={S("font-family:'IBM Plex Mono',monospace; color:#8494A0;")}>予算書名{rp.bookName}</span>}
                               </div>
                             </div>
                           ))}
@@ -419,7 +439,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                           <span>
                             <span style={S("display:block; font-size:10.5px; color:#5C6B77;")}>施策</span>
                             <span style={S("display:block; font-size:11.5px; color:#14181C; line-height:1.5;")}>{tp.shisaku}</span>
-                            <span style={S("display:block; font-size:10px; color:#8494A0; font-family:'IBM Plex Mono',monospace; margin-top:2px;")}>{tp.refLabel}</span>
+                            <a href={tp.refUrl} target="_blank" rel="noopener noreferrer" style={S("display:block; font-size:10px; color:#0F76A3; font-family:'IBM Plex Mono',monospace; margin-top:2px;")}>{tp.refLabel} ↗</a>
                           </span>
                         </div>
                       ))}
@@ -570,7 +590,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                   </div>
                   {v.sourcesRows.map((src: any, i: number) => (
                     <div key={i} data-mq="src" style={S("display:grid; grid-template-columns:minmax(200px,2fr) 70px minmax(140px,1.4fr) 100px minmax(160px,1.6fr); gap:12px; padding:11px 0; border-bottom:1px solid #ECF2F6; font-size:13px; align-items:center;")}>
-                      <a href="#" style={S("font-weight:600;")}>{src.title} ↗</a>
+                      <a href={src.url} target="_blank" rel="noopener noreferrer" style={S("font-weight:600;")}>{src.title} ↗</a>
                       <span><span style={S("display:inline-block; font-size:10.5px; font-weight:600; color:#0F76A3; border:1px solid #B9E0F2; border-radius:999px; padding:1px 9px;")}>{src.type}</span></span>
                       <span style={S("font-size:12.5px; color:#5C6B77;")}>{src.org}</span>
                       <span style={S("font-family:'IBM Plex Mono',monospace; font-size:12px;")}>{src.date}</span>
