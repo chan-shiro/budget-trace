@@ -235,6 +235,188 @@
       "checkedAt": "2026-07-12T12:59:25.282Z"
     },
     {
+      "sourceId": "kofu-toukei-zaisei-h30",
+      "url": "https://www.city.kofu.yamanashi.jp/somu-somu/documents/15-01.xls",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260712154331/https://www.city.kofu.yamanashi.jp/somu-somu/documents/15-01.xls",
+      "waybackTimestamp": "20260712154331",
+      "checkedAt": "2026-07-12T15:44:17.048Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kofu-toukei-zaisei-h30",
+      "url": "https://www.city.kofu.yamanashi.jp/somu-somu/documents/15-02.xls",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260712154347/https://www.city.kofu.yamanashi.jp/somu-somu/documents/15-02.xls",
+      "waybackTimestamp": "20260712154347",
+      "checkedAt": "2026-07-12T15:45:01.470Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kofu-toukei-zaisei-h30",
+      "url": "https://www.city.kofu.yamanashi.jp/somu-somu/r2toukeisho.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260219004326/https://www.city.kofu.yamanashi.jp/somu-somu/r2toukeisho.html",
+      "waybackTimestamp": "20260219004326",
+      "checkedAt": "2026-07-12T15:45:12.857Z"
+    },
+    {
+      "sourceId": "kofu-toukei-zaisei-r1",
+      "url": "https://www.city.kofu.yamanashi.jp/somu-somu/documents/15-01.xls",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260712154331/https://www.city.kofu.yamanashi.jp/somu-somu/documents/15-01.xls",
+      "waybackTimestamp": "20260712154331",
+      "checkedAt": "2026-07-12T15:43:42.593Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kofu-toukei-zaisei-r1",
+      "url": "https://www.city.kofu.yamanashi.jp/somu-somu/documents/15-02.xls",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260712154347/https://www.city.kofu.yamanashi.jp/somu-somu/documents/15-02.xls",
+      "waybackTimestamp": "20260712154347",
+      "checkedAt": "2026-07-12T15:43:59.954Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kofu-toukei-zaisei-r1",
+      "url": "https://www.city.kofu.yamanashi.jp/somu-somu/r2toukeisho.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260219004326/https://www.city.kofu.yamanashi.jp/somu-somu/r2toukeisho.html",
+      "waybackTimestamp": "20260219004326",
+      "checkedAt": "2026-07-12T15:44:08.513Z"
+    },
+    {
+      "sourceId": "kofu-toukei-zaisei-r2",
+      "url": "https://www.city.kofu.yamanashi.jp/somu-somu/r4toukeisho/documents/15-01.xls",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250313051734/https://www.city.kofu.yamanashi.jp/somu-somu/r4toukeisho/documents/15-01.xls",
+      "waybackTimestamp": "20250313051734",
+      "checkedAt": "2026-07-12T15:43:05.801Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kofu-toukei-zaisei-r2",
+      "url": "https://www.city.kofu.yamanashi.jp/somu-somu/r4toukeisho/documents/15-02.xls",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250313081153/https://www.city.kofu.yamanashi.jp/somu-somu/r4toukeisho/documents/15-02.xls",
+      "waybackTimestamp": "20250313081153",
+      "checkedAt": "2026-07-12T15:43:08.829Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kofu-toukei-zaisei-r2",
+      "url": "https://www.city.kofu.yamanashi.jp/somu-somu/r4toukeisho/r4toukeisho.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260219010833/https://www.city.kofu.yamanashi.jp/somu-somu/r4toukeisho/r4toukeisho.html",
+      "waybackTimestamp": "20260219010833",
+      "checkedAt": "2026-07-12T15:43:12.101Z"
+    },
+    {
+      "sourceId": "kofu-toukei-zaisei-r3",
+      "url": "https://www.city.kofu.yamanashi.jp/somu-somu/documents/r5-15-01.xls",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260712154125/https://www.city.kofu.yamanashi.jp/somu-somu/documents/r5-15-01.xls",
+      "waybackTimestamp": "20260712154125",
+      "checkedAt": "2026-07-12T15:41:37.774Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kofu-toukei-zaisei-r3",
+      "url": "https://www.city.kofu.yamanashi.jp/somu-somu/documents/r5-15-02.xls",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260712154155/https://www.city.kofu.yamanashi.jp/somu-somu/documents/r5-15-02.xls",
+      "waybackTimestamp": "20260712154155",
+      "checkedAt": "2026-07-12T15:42:15.804Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kofu-toukei-zaisei-r3",
+      "url": "https://www.city.kofu.yamanashi.jp/somu-somu/r5toukeisho.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260520140812/https://www.city.kofu.yamanashi.jp/somu-somu/r5toukeisho.html",
+      "waybackTimestamp": "20260520140812",
+      "checkedAt": "2026-07-12T15:42:51.009Z"
+    },
+    {
+      "sourceId": "kofu-toukei-zaisei-r4",
+      "url": "https://www.city.kofu.yamanashi.jp/somu-somu/r6toukeisyo/documents/r6-15-01.xls",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260712153917/https://www.city.kofu.yamanashi.jp/somu-somu/r6toukeisyo/documents/r6-15-01.xls",
+      "waybackTimestamp": "20260712153917",
+      "checkedAt": "2026-07-12T15:39:35.027Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kofu-toukei-zaisei-r4",
+      "url": "https://www.city.kofu.yamanashi.jp/somu-somu/r6toukeisyo/documents/r6-15-02.xls",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260712154030/https://www.city.kofu.yamanashi.jp/somu-somu/r6toukeisyo/documents/r6-15-02.xls",
+      "waybackTimestamp": "20260712154030",
+      "checkedAt": "2026-07-12T15:40:48.050Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kofu-toukei-zaisei-r4",
+      "url": "https://www.city.kofu.yamanashi.jp/somu-somu/r6toukeisyo/toukeisyo.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260219001352/https://www.city.kofu.yamanashi.jp/somu-somu/r6toukeisyo/toukeisyo.html",
+      "waybackTimestamp": "20260219001352",
+      "checkedAt": "2026-07-12T15:40:48.588Z"
+    },
+    {
+      "sourceId": "kofu-toukei-zaisei-r5",
+      "url": "https://www.city.kofu.yamanashi.jp/somu-somu/r7toukyisho/documents/r7-15-01.xls",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260712153454/https://www.city.kofu.yamanashi.jp/somu-somu/r7toukyisho/documents/r7-15-01.xls",
+      "waybackTimestamp": "20260712153454",
+      "checkedAt": "2026-07-12T15:37:07.389Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kofu-toukei-zaisei-r5",
+      "url": "https://www.city.kofu.yamanashi.jp/somu-somu/r7toukyisho/documents/r7-15-02.xls",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260712153519/https://www.city.kofu.yamanashi.jp/somu-somu/r7toukyisho/documents/r7-15-02.xls",
+      "waybackTimestamp": "20260712153519",
+      "checkedAt": "2026-07-12T15:37:55.835Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kofu-toukei-zaisei-r5",
+      "url": "https://www.city.kofu.yamanashi.jp/somu-somu/r7toukyisho/toukeisho.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260712153541/https://www.city.kofu.yamanashi.jp/somu-somu/r7toukyisho/toukeisho.html",
+      "waybackTimestamp": "20260712153541",
+      "checkedAt": "2026-07-12T15:37:56.241Z"
+    },
+    {
+      "sourceId": "kofu-toukei-zaisei-r6",
+      "url": "https://www.city.kofu.yamanashi.jp/somu-somu/r7toukyisho/documents/r7-15-01.xls",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260712153454/https://www.city.kofu.yamanashi.jp/somu-somu/r7toukyisho/documents/r7-15-01.xls",
+      "waybackTimestamp": "20260712153454",
+      "checkedAt": "2026-07-12T15:35:08.684Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kofu-toukei-zaisei-r6",
+      "url": "https://www.city.kofu.yamanashi.jp/somu-somu/r7toukyisho/documents/r7-15-02.xls",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260712153519/https://www.city.kofu.yamanashi.jp/somu-somu/r7toukyisho/documents/r7-15-02.xls",
+      "waybackTimestamp": "20260712153519",
+      "checkedAt": "2026-07-12T15:35:34.372Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kofu-toukei-zaisei-r6",
+      "url": "https://www.city.kofu.yamanashi.jp/somu-somu/r7toukyisho/toukeisho.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260712153541/https://www.city.kofu.yamanashi.jp/somu-somu/r7toukyisho/toukeisho.html",
+      "waybackTimestamp": "20260712153541",
+      "checkedAt": "2026-07-12T15:36:32.134Z"
+    },
+    {
       "sourceId": "kofu-yosansho-r2",
       "url": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r02omonajigyou.pdf",
       "kind": "file",

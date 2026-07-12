@@ -7,7 +7,7 @@ import BudgetTraceView from "./BudgetTraceView";
 
 const {
   GLOSS, SIM_MIX_COLS, SIMILAR, SIMILAR_EVIDENCE, SOURCES,
-  KOFU_BUDGET_YEARS, KOFU_PROJECT_YEARS, KOFU_EXECUTION_YEARS, KOFU_EVALUATION_YEARS, KOFU_R6_DETAIL, KOFU_TREND, YAMANASHI_MUNIS,
+  KOFU_BUDGET_YEARS, KOFU_PROJECT_YEARS, KOFU_EXECUTION_YEARS, KOFU_EVALUATION_YEARS, KOFU_OUTTURN_YEARS, KOFU_R6_DETAIL, KOFU_TREND, YAMANASHI_MUNIS,
   muniFromBudget, fmtOku, pctOf, fmtPerCap, fadeColor, donutBg, setPalette,
 } = D;
 
@@ -316,6 +316,10 @@ export default function BudgetTrace() {
       themeTotalFmt: fmtV(total), themeSub: subV(total), themeCount: String(ps.length),
       themePer: fmtPerCap(total, data.pop),
       themeKanChips: Object.entries(kanAgg).map(([nm, v]) => ({ name: nm, amtFmt: fmtV(v), sw: D.PALETTE[kanIdx(nm) % D.PALETTE.length], open: () => nav({ screen: "drill", drillSide: "exp", drillPath: [nm] }) })),
+      themeRequestUrl: D.buildRequestUrl(
+        "事務事業評価票（全事業分・各年度）",
+        `政策テーマ「${curGoal.name}」の事業について、事業費の決算額・成果指標の実績（評価詳細票）まで見たい`,
+      ),
       themeProjects: ps.map((p) => ({
         evaluation: evalFor(p),
         name: p.name, summary: p.description, kanPath: p.kan ?? p.shisaku, kubun: p.kubun ?? "",
@@ -481,6 +485,44 @@ export default function BudgetTrace() {
     drillSideTabs, drillCrumbs, drillLevelLabel: depth === 0 ? "款" : "内訳",
     drillTitle: nodeName, drillTotalFmt: fmtOku(nodeTotal), drillDonutBg: donutBg(donutItems, hoverFor("drill")),
     drillRows, drillEvidence,
+    // 款詳細の項テーブル: 表示中の予算年度と一致する統計書データ（当初→最終→決算）が
+    // あればそれを出す。無い年度（R7・R8 = 決算前）は従来どおり R6 決算の項内訳を参考表示
+    ...(() => {
+      const outturn = KOFU_OUTTURN_YEARS.find((y) => y.fy === budget.fy);
+      const oRows = side === "exp" && depth === 1 && outturn
+        ? outturn.expenditure.filter((r) => r.kan === nodeName && r.kou != null)
+        : [];
+      const oKan = outturn?.expenditure.find((r) => r.kan === nodeName && r.kou == null);
+      return {
+        hasOutturn: oRows.length > 0,
+        outturnFyLabel: outturn ? `${outturn.fyLabel}（統計書・確定）` : "",
+        outturnInitialNote: outturn?.initialNote ?? "",
+        outturnRows: oRows.map((r, i) => ({
+          name: r.kou,
+          initialFmt: r.initialOku != null ? fmtOku(r.initialOku) : "―",
+          finalFmt: fmtOku(r.finalOku),
+          settledFmt: fmtOku(r.settledOku),
+          execFmt: r.execPct != null ? r.execPct.toFixed(1) + "%" : "―",
+          sw: D.PALETTE[i % D.PALETTE.length],
+          ref: r.ref,
+        })),
+        outturnKan: oKan
+          ? {
+              initialFmt: oKan.initialOku != null ? fmtOku(oKan.initialOku) : "―",
+              finalFmt: fmtOku(oKan.finalOku),
+              settledFmt: fmtOku(oKan.settledOku),
+              execFmt: oKan.execPct != null ? oKan.execPct.toFixed(1) + "%" : "―",
+            }
+          : null,
+        outturnSourceLabel: outturn ? `出典：${outturn.sourceTitle}` : "",
+        outturnSourceOpen: outturn
+          ? () => openViewer({
+              url: outturn.sourceLocalUrl, title: outturn.sourceTitle, sub: `${outturn.fyLabel} 一般会計歳入歳出状況（歳出）`,
+              originUrl: outturn.originUrl, archiveUrl: outturn.sourceUrl,
+            })
+          : null,
+      };
+    })(),
     // R8 予算の項以下は原典未公開のため、R6 決算の項内訳を年度明示で参考表示する
     ...(() => {
       const rows = side === "exp" && depth === 1 ? KOFU_R6_DETAIL.byKan[nodeName] ?? [] : [];
@@ -494,6 +536,10 @@ export default function BudgetTrace() {
           sw: D.PALETTE[i % D.PALETTE.length],
         })),
         r6DetailKanTotalFmt: fmtOku(kanTotal),
+        r6DetailRequestUrl: D.buildRequestUrl(
+          `予算書 本編（款項目節・令和${budget.fy.slice(1)}年度）`,
+          `款別ドリルダウンの「${nodeName}」で、令和${budget.fy.slice(1)}年度予算の項別内訳を見たい（現在は直近決算の参考表示のみ）`,
+        ),
         r6DetailSourceUrl: KOFU_R6_DETAIL.sourceLocalUrl,
         r6DetailSourceOpen: () => openViewer({
           url: KOFU_R6_DETAIL.sourceLocalUrl, title: KOFU_R6_DETAIL.sourceTitle,
@@ -528,6 +574,13 @@ export default function BudgetTrace() {
         realProjectsCoveredPct: nodeTotal > 0 ? ((covered / nodeTotal) * 100).toFixed(1) : "0",
         realProjectsCoveredBarW: nodeTotal > 0 ? Math.min(100, (covered / nodeTotal) * 100).toFixed(1) : "0",
         realProjectsUncoveredFmt: fmtOku(uncovered),
+        // 詳細不明分（事業掲載なし）のその場リクエスト（文脈をプリフィル）
+        uncoveredRequestUrl: uncovered > 0.005
+          ? D.buildRequestUrl(
+              `予算書 本編（款項目節・令和${budget.fy.slice(1)}年度）`,
+              `款別ドリルダウンの「${nodeName}」で、主な事業一覧に掲載のない ${fmtOku(uncovered)} の内訳（項・目・節、事業別）を知りたい`,
+            )
+          : "",
         realProjectsSourceUrl: KOFU_PROJECTS_SOURCE.localUrl,
         realProjectsSourceLabel: `出典：${KOFU_PROJECTS_SOURCE.title} 主な事業一覧 ${KOFU_PROJECTS_SOURCE.pagesLabel}`,
         realProjectsSourceOpen: () => openViewer({

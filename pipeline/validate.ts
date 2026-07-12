@@ -167,6 +167,38 @@ if (doc.docType === "budget-execution") {
   finish(doc.facts.length, "款");
 }
 
+// ---- 統計書 財政章（款項×当初/最終/決算） --------------------------------------
+if (doc.docType === "budget-outturn") {
+  for (const side of ["revenue", "expenditure"] as const) {
+    const label = side === "revenue" ? "歳入" : "歳出";
+    const lines = doc.facts.filter((f) => f.side === side);
+    const kans = lines.filter((f) => f.kouName == null);
+    const total = side === "revenue" ? doc.revenueTotal : doc.expenditureTotal;
+    // 総額 = Σ款 / 款 = Σ項（円単位の厳密一致）
+    for (const key of ["initialBudget", "finalBudget", "settled"] as const) {
+      const kanSum = kans.reduce((a, f) => a + f[key], 0);
+      const totalVal = total[key === "initialBudget" ? "initial" : key === "finalBudget" ? "final" : "settled"];
+      if (kanSum !== totalVal) {
+        issues.push({ level: "error", message: `${label} ${key}: 款の和 ${kanSum} が総額 ${totalVal} と一致しません（差 ${kanSum - totalVal}）` });
+      }
+      for (const kan of kans) {
+        const kous = lines.filter((f) => f.kouName != null && f.kanName === kan.kanName);
+        if (kous.length === 0) continue;
+        const kouSum = kous.reduce((a, f) => a + f[key], 0);
+        if (kouSum !== kan[key]) {
+          issues.push({ level: "error", message: `${label} ${kan.kanName} ${key}: 項の和 ${kouSum} が款 ${kan[key]} と一致しません（差 ${kouSum - kan[key]}）` });
+        }
+      }
+    }
+    for (const f of lines) {
+      if (f.initialBudget < 0 || f.finalBudget < 0 || f.settled < 0) {
+        issues.push({ level: "error", message: `${label} ${f.kanName}${f.kouName ? "/" + f.kouName : ""}: 負値` });
+      }
+    }
+  }
+  finish(doc.facts.length, "款項");
+}
+
 // ---- 行政評価（事務事業評価） -------------------------------------------------
 if (doc.docType === "project-evaluation") {
   const seenNames = new Set<string>();

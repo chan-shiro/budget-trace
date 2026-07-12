@@ -1,0 +1,1556 @@
+{
+  "docType": "budget-outturn",
+  "sourceId": "kofu-toukei-zaisei-r5",
+  "parser": "kofu-toukei-zaisei",
+  "parserVersion": "0.1.0",
+  "parsedAt": "2026-07-12T15:26:13.795Z",
+  "unit": "yen",
+  "fiscalYear": "R5",
+  "account": "一般会計",
+  "revenueTotal": {
+    "initial": 79035063000,
+    "final": 91463948861,
+    "settled": 87470838031
+  },
+  "expenditureTotal": {
+    "initial": 79035063000,
+    "final": 91463948861,
+    "settled": 85286927461
+  },
+  "facts": [
+    {
+      "side": "revenue",
+      "kanName": "市税",
+      "kouName": null,
+      "initialBudget": 29185690000,
+      "finalBudget": 29425690000,
+      "settled": 29951917459,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "市税",
+      "kouName": "市民税",
+      "initialBudget": 13441865000,
+      "finalBudget": 13681865000,
+      "settled": 14074363055,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 6
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "市税",
+      "kouName": "固定資産税",
+      "initialBudget": 11764880000,
+      "finalBudget": 11764880000,
+      "settled": 11815117777,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "市税",
+      "kouName": "軽自動車税",
+      "initialBudget": 641566000,
+      "finalBudget": 641566000,
+      "settled": 640251534,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 8
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "市税",
+      "kouName": "市たばこ税",
+      "initialBudget": 1312718000,
+      "finalBudget": 1312718000,
+      "settled": 1385156933,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 9
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "市税",
+      "kouName": "入湯税",
+      "initialBudget": 30000000,
+      "finalBudget": 30000000,
+      "settled": 44076150,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 10
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "市税",
+      "kouName": "都市計画税",
+      "initialBudget": 1994661000,
+      "finalBudget": 1994661000,
+      "settled": 1992952010,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 11
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "地方譲与税",
+      "kouName": null,
+      "initialBudget": 426027000,
+      "finalBudget": 426027000,
+      "settled": 419993000,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "地方譲与税",
+      "kouName": "地方揮発油譲与税",
+      "initialBudget": 98792000,
+      "finalBudget": 98792000,
+      "settled": 96583000,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 13
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "地方譲与税",
+      "kouName": "自動車重量譲与税",
+      "initialBudget": 293899000,
+      "finalBudget": 293899000,
+      "settled": 291174000,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 14
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "地方譲与税",
+      "kouName": "地方道路譲与税",
+      "initialBudget": 1000,
+      "finalBudget": 1000,
+      "settled": 0,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 15
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "地方譲与税",
+      "kouName": "森林環境譲与税",
+      "initialBudget": 33335000,
+      "finalBudget": 33335000,
+      "settled": 32236000,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 16
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "利子割交付金",
+      "kouName": null,
+      "initialBudget": 7981000,
+      "finalBudget": 7981000,
+      "settled": 9129000,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 17
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "利子割交付金",
+      "kouName": "利子割交付金",
+      "initialBudget": 7981000,
+      "finalBudget": 7981000,
+      "settled": 9129000,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 18
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "配当割交付金",
+      "kouName": null,
+      "initialBudget": 169013000,
+      "finalBudget": 169013000,
+      "settled": 160402000,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 19
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "配当割交付金",
+      "kouName": "配当割交付金",
+      "initialBudget": 169013000,
+      "finalBudget": 169013000,
+      "settled": 160402000,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 20
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "株式等譲渡所得割交付金",
+      "kouName": null,
+      "initialBudget": 87709000,
+      "finalBudget": 87709000,
+      "settled": 184817000,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 21
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "株式等譲渡所得割交付金",
+      "kouName": "株式等譲渡所得割交付金",
+      "initialBudget": 87709000,
+      "finalBudget": 87709000,
+      "settled": 184817000,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 22
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "法人事業税交付金",
+      "kouName": null,
+      "initialBudget": 568564000,
+      "finalBudget": 579815000,
+      "settled": 602695000,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 23
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "法人事業税交付金",
+      "kouName": "法人事業税交付金",
+      "initialBudget": 568564000,
+      "finalBudget": 579815000,
+      "settled": 602695000,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 24
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "地方消費税交付金",
+      "kouName": null,
+      "initialBudget": 5185752000,
+      "finalBudget": 5185752000,
+      "settled": 5131610000,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 25
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "地方消費税交付金",
+      "kouName": "地方消費税交付金",
+      "initialBudget": 5185752000,
+      "finalBudget": 5185752000,
+      "settled": 5131610000,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 26
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "環境性能割交付金",
+      "kouName": null,
+      "initialBudget": 32902000,
+      "finalBudget": 32902000,
+      "settled": 50322000,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 27
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "環境性能割交付金",
+      "kouName": "環境性能割交付金",
+      "initialBudget": 32902000,
+      "finalBudget": 32902000,
+      "settled": 50322000,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 28
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "地方特例交付金",
+      "kouName": null,
+      "initialBudget": 164445000,
+      "finalBudget": 164445000,
+      "settled": 177010000,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 29
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "地方特例交付金",
+      "kouName": "地方特例交付金",
+      "initialBudget": 159090000,
+      "finalBudget": 159090000,
+      "settled": 165960000,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 30
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "地方特例交付金",
+      "kouName": "新型コロナウイルス感染症対策地方税減収補填特別交付金",
+      "initialBudget": 5355000,
+      "finalBudget": 5355000,
+      "settled": 11050000,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 31
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "地方交付税",
+      "kouName": null,
+      "initialBudget": 10855444000,
+      "finalBudget": 11434513000,
+      "settled": 11439251000,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 32
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "地方交付税",
+      "kouName": "地方交付税",
+      "initialBudget": 10855444000,
+      "finalBudget": 11434513000,
+      "settled": 11439251000,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 33
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "交通安全対策特別交付金",
+      "kouName": null,
+      "initialBudget": 38970000,
+      "finalBudget": 38970000,
+      "settled": 26367000,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 34
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "交通安全対策特別交付金",
+      "kouName": "交通安全対策特別交付金",
+      "initialBudget": 38970000,
+      "finalBudget": 38970000,
+      "settled": 26367000,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 35
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "分担金及び負担金",
+      "kouName": null,
+      "initialBudget": 296923000,
+      "finalBudget": 296923000,
+      "settled": 266396240,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 36
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "分担金及び負担金",
+      "kouName": "負担金",
+      "initialBudget": 296923000,
+      "finalBudget": 296923000,
+      "settled": 266396240,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 37
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "使用料及び手数料",
+      "kouName": null,
+      "initialBudget": 929798000,
+      "finalBudget": 929798000,
+      "settled": 910103548,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 38
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "使用料及び手数料",
+      "kouName": "使用料",
+      "initialBudget": 785646000,
+      "finalBudget": 785646000,
+      "settled": 761851811,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 39
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "使用料及び手数料",
+      "kouName": "手数料",
+      "initialBudget": 144152000,
+      "finalBudget": 144152000,
+      "settled": 148251737,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 40
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "国庫支出金",
+      "kouName": null,
+      "initialBudget": 14991433000,
+      "finalBudget": 21234370920,
+      "settled": 19526914359,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 41
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "国庫支出金",
+      "kouName": "国庫負担金",
+      "initialBudget": 12466322000,
+      "finalBudget": 12555920000,
+      "settled": 12553927086,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 42
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "国庫支出金",
+      "kouName": "国庫補助金",
+      "initialBudget": 2482202000,
+      "finalBudget": 8635251920,
+      "settled": 6927162377,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 43
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "国庫支出金",
+      "kouName": "国庫委託金",
+      "initialBudget": 42909000,
+      "finalBudget": 43199000,
+      "settled": 45824896,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 44
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "県支出金",
+      "kouName": null,
+      "initialBudget": 6591516000,
+      "finalBudget": 7224791757,
+      "settled": 6766012902,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 45
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "県支出金",
+      "kouName": "県負担金",
+      "initialBudget": 4350580000,
+      "finalBudget": 4454132000,
+      "settled": 4411591725,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 46
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "県支出金",
+      "kouName": "県補助金",
+      "initialBudget": 1835219000,
+      "finalBudget": 2408195757,
+      "settled": 1997638404,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 47
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "県支出金",
+      "kouName": "県委託金",
+      "initialBudget": 405717000,
+      "finalBudget": 362464000,
+      "settled": 356782773,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 48
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "財産収入",
+      "kouName": null,
+      "initialBudget": 89702000,
+      "finalBudget": 89702000,
+      "settled": 89506372,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 49
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "財産収入",
+      "kouName": "財産運用収入",
+      "initialBudget": 59721000,
+      "finalBudget": 59721000,
+      "settled": 58161980,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 50
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "財産収入",
+      "kouName": "財産売払収入",
+      "initialBudget": 29981000,
+      "finalBudget": 29981000,
+      "settled": 31344392,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 51
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "寄附金",
+      "kouName": null,
+      "initialBudget": 2200000000,
+      "finalBudget": 4533769000,
+      "settled": 4159946579,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 52
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "寄附金",
+      "kouName": "寄附金",
+      "initialBudget": 2200000000,
+      "finalBudget": 4533769000,
+      "settled": 4159946579,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 53
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "繰入金",
+      "kouName": null,
+      "initialBudget": 1784064000,
+      "finalBudget": 2205691000,
+      "settled": 1398655632,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 54
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "繰入金",
+      "kouName": "基金繰入金",
+      "initialBudget": 1777130000,
+      "finalBudget": 2198757000,
+      "settled": 1391721067,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 55
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "繰入金",
+      "kouName": "特別会計繰入金",
+      "initialBudget": 6934000,
+      "finalBudget": 6934000,
+      "settled": 6934565,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 56
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "繰越金",
+      "kouName": null,
+      "initialBudget": 1000,
+      "finalBudget": 1087255184,
+      "settled": 1087255035,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 57
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "繰越金",
+      "kouName": "繰越金",
+      "initialBudget": 1000,
+      "finalBudget": 1087255184,
+      "settled": 1087255035,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 58
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "諸収入",
+      "kouName": null,
+      "initialBudget": 1821329000,
+      "finalBudget": 1912331000,
+      "settled": 1809953905,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 59
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "諸収入",
+      "kouName": "延滞金加算金及び過料",
+      "initialBudget": 30583000,
+      "finalBudget": 30583000,
+      "settled": 23100290,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 60
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "諸収入",
+      "kouName": "市預金利子",
+      "initialBudget": 121000,
+      "finalBudget": 121000,
+      "settled": 110966,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 61
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "諸収入",
+      "kouName": "貸付金元利収入",
+      "initialBudget": 385807000,
+      "finalBudget": 399730000,
+      "settled": 324228969,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 62
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "諸収入",
+      "kouName": "受託事業収入",
+      "initialBudget": 1994000,
+      "finalBudget": 1994000,
+      "settled": 1727000,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 63
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "諸収入",
+      "kouName": "雑入",
+      "initialBudget": 1402824000,
+      "finalBudget": 1479903000,
+      "settled": 1460786680,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 64
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "市債",
+      "kouName": null,
+      "initialBudget": 3607800000,
+      "finalBudget": 4396500000,
+      "settled": 3302580000,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 65
+      }
+    },
+    {
+      "side": "revenue",
+      "kanName": "市債",
+      "kouName": "市債",
+      "initialBudget": 3607800000,
+      "finalBudget": 4396500000,
+      "settled": 3302580000,
+      "locator": {
+        "file": "r7-15-01.xls",
+        "sheet": "15-01",
+        "row": 66
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "議会費",
+      "kouName": null,
+      "initialBudget": 541594000,
+      "finalBudget": 535470000,
+      "settled": 523347508,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "議会費",
+      "kouName": "議会費",
+      "initialBudget": 541594000,
+      "finalBudget": 535470000,
+      "settled": 523347508,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "総務費",
+      "kouName": null,
+      "initialBudget": 8573097000,
+      "finalBudget": 11875564000,
+      "settled": 11248402045,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "総務費",
+      "kouName": "総務管理費",
+      "initialBudget": 7142043000,
+      "finalBudget": 10421479000,
+      "settled": 9877578056,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "総務費",
+      "kouName": "徴税費",
+      "initialBudget": 756756000,
+      "finalBudget": 790225000,
+      "settled": 773774981,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 9
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "総務費",
+      "kouName": "戸籍住民基本台帳費",
+      "initialBudget": 385663000,
+      "finalBudget": 407042000,
+      "settled": 354990439,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 10
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "総務費",
+      "kouName": "選挙費",
+      "initialBudget": 184628000,
+      "finalBudget": 146743000,
+      "settled": 138189205,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 11
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "総務費",
+      "kouName": "統計調査費",
+      "initialBudget": 34747000,
+      "finalBudget": 34856000,
+      "settled": 31574267,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "総務費",
+      "kouName": "監査委員費",
+      "initialBudget": 69260000,
+      "finalBudget": 75219000,
+      "settled": 72295097,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 13
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "民生費",
+      "kouName": null,
+      "initialBudget": 34265721000,
+      "finalBudget": 39907712000,
+      "settled": 38110039667,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 14
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "民生費",
+      "kouName": "社会福祉費",
+      "initialBudget": 16832575000,
+      "finalBudget": 17656533000,
+      "settled": 16886873969,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 15
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "民生費",
+      "kouName": "児童福祉費",
+      "initialBudget": 11978531000,
+      "finalBudget": 12889736000,
+      "settled": 12435631579,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 16
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "民生費",
+      "kouName": "生活保護費",
+      "initialBudget": 5454486000,
+      "finalBudget": 5434723000,
+      "settled": 5137001415,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 17
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "民生費",
+      "kouName": "災害救助費",
+      "initialBudget": 129000,
+      "finalBudget": 129000,
+      "settled": 0,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 18
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "民生費",
+      "kouName": "子育て世帯生活支援特別給付金給付費",
+      "initialBudget": 0,
+      "finalBudget": 514694000,
+      "settled": 462735679,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 19
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "民生費",
+      "kouName": "特定世帯等臨時特別給付金給付費",
+      "initialBudget": 0,
+      "finalBudget": 3411897000,
+      "settled": 3187797025,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 20
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "衛生費",
+      "kouName": null,
+      "initialBudget": 10748371000,
+      "finalBudget": 10679562000,
+      "settled": 10070105254,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 21
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "衛生費",
+      "kouName": "保健衛生費",
+      "initialBudget": 5225644000,
+      "finalBudget": 5227346000,
+      "settled": 4742066355,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 22
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "衛生費",
+      "kouName": "清掃費",
+      "initialBudget": 2438849000,
+      "finalBudget": 2368338000,
+      "settled": 2293726300,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 23
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "衛生費",
+      "kouName": "下水道費",
+      "initialBudget": 3072675000,
+      "finalBudget": 3072675000,
+      "settled": 3025581573,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 24
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "衛生費",
+      "kouName": "上水道費",
+      "initialBudget": 11203000,
+      "finalBudget": 11203000,
+      "settled": 8731026,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 25
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "労働費",
+      "kouName": null,
+      "initialBudget": 194505000,
+      "finalBudget": 190286000,
+      "settled": 187042721,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 26
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "労働費",
+      "kouName": "労働諸費",
+      "initialBudget": 194505000,
+      "finalBudget": 190286000,
+      "settled": 187042721,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 27
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "農林水産業費",
+      "kouName": null,
+      "initialBudget": 1027198000,
+      "finalBudget": 1070719000,
+      "settled": 954150687,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 28
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "農林水産業費",
+      "kouName": "農業費",
+      "initialBudget": 680958000,
+      "finalBudget": 714364000,
+      "settled": 623952442,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 29
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "農林水産業費",
+      "kouName": "林業費",
+      "initialBudget": 250607000,
+      "finalBudget": 260722000,
+      "settled": 242200979,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 30
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "農林水産業費",
+      "kouName": "地方卸売市場費",
+      "initialBudget": 95633000,
+      "finalBudget": 95633000,
+      "settled": 87997266,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 31
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "商工費",
+      "kouName": null,
+      "initialBudget": 890452000,
+      "finalBudget": 2222480000,
+      "settled": 1304878732,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 32
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "商工費",
+      "kouName": "商工費",
+      "initialBudget": 890452000,
+      "finalBudget": 2222480000,
+      "settled": 1304878732,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 33
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "土木費",
+      "kouName": null,
+      "initialBudget": 4970743000,
+      "finalBudget": 6571233861,
+      "settled": 5227550294,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 34
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "土木費",
+      "kouName": "道路橋りょう費",
+      "initialBudget": 1569533000,
+      "finalBudget": 1870669164,
+      "settled": 1317135685,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 35
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "土木費",
+      "kouName": "河川費",
+      "initialBudget": 170585000,
+      "finalBudget": 175159000,
+      "settled": 118809008,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 36
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "土木費",
+      "kouName": "都市計画費",
+      "initialBudget": 2932009000,
+      "finalBudget": 4221859697,
+      "settled": 3507947050,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 37
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "土木費",
+      "kouName": "住宅費",
+      "initialBudget": 298616000,
+      "finalBudget": 303546000,
+      "settled": 283658551,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 38
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "消防費",
+      "kouName": null,
+      "initialBudget": 2407683000,
+      "finalBudget": 2446059000,
+      "settled": 2368034659,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 39
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "消防費",
+      "kouName": "消防費",
+      "initialBudget": 2407683000,
+      "finalBudget": 2446059000,
+      "settled": 2368034659,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 40
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "教育費",
+      "kouName": null,
+      "initialBudget": 6424261000,
+      "finalBudget": 6988254000,
+      "settled": 6380602109,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 41
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "教育費",
+      "kouName": "教育総務費",
+      "initialBudget": 408992000,
+      "finalBudget": 421167000,
+      "settled": 398862514,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 42
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "教育費",
+      "kouName": "小学校費",
+      "initialBudget": 2437295000,
+      "finalBudget": 2832340000,
+      "settled": 2537801563,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 43
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "教育費",
+      "kouName": "中学校費",
+      "initialBudget": 1186985000,
+      "finalBudget": 1318038000,
+      "settled": 1197750917,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 44
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "教育費",
+      "kouName": "高等学校費",
+      "initialBudget": 839714000,
+      "finalBudget": 853998000,
+      "settled": 817458500,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 45
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "教育費",
+      "kouName": "専門学校費",
+      "initialBudget": 199736000,
+      "finalBudget": 201061000,
+      "settled": 194834058,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 46
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "教育費",
+      "kouName": "社会教育費",
+      "initialBudget": 1027508000,
+      "finalBudget": 1026667000,
+      "settled": 937462061,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 47
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "教育費",
+      "kouName": "社会体育費",
+      "initialBudget": 232335000,
+      "finalBudget": 240471000,
+      "settled": 234713718,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 48
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "教育費",
+      "kouName": "幼児教育振興費",
+      "initialBudget": 91696000,
+      "finalBudget": 94512000,
+      "settled": 61718778,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 49
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "災害復旧費",
+      "kouName": null,
+      "initialBudget": 4000,
+      "finalBudget": 4000,
+      "settled": 0,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 50
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "災害復旧費",
+      "kouName": "公共土木施設災害復旧費",
+      "initialBudget": 2000,
+      "finalBudget": 2000,
+      "settled": 0,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 51
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "災害復旧費",
+      "kouName": "文教施設災害復旧費",
+      "initialBudget": 1000,
+      "finalBudget": 1000,
+      "settled": 0,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 52
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "災害復旧費",
+      "kouName": "その他公共施設公用施設災害復旧費",
+      "initialBudget": 1000,
+      "finalBudget": 1000,
+      "settled": 0,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 53
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "公債費",
+      "kouName": null,
+      "initialBudget": 8957254000,
+      "finalBudget": 8957254000,
+      "settled": 8898780544,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 54
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "公債費",
+      "kouName": "公債費",
+      "initialBudget": 8957254000,
+      "finalBudget": 8957254000,
+      "settled": 8898780544,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 55
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "諸支出金",
+      "kouName": null,
+      "initialBudget": 14180000,
+      "finalBudget": 14180000,
+      "settled": 13993241,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 56
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "諸支出金",
+      "kouName": "普通財産取得費",
+      "initialBudget": 2000,
+      "finalBudget": 2000,
+      "settled": 0,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 57
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "諸支出金",
+      "kouName": "土地開発基金費",
+      "initialBudget": 14178000,
+      "finalBudget": 14178000,
+      "settled": 13993241,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 58
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "予備費",
+      "kouName": null,
+      "initialBudget": 20000000,
+      "finalBudget": 5171000,
+      "settled": 0,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 59
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanName": "予備費",
+      "kouName": "予備費",
+      "initialBudget": 20000000,
+      "finalBudget": 5171000,
+      "settled": 0,
+      "locator": {
+        "file": "r7-15-02.xls",
+        "sheet": "15-02",
+        "row": 60
+      }
+    }
+  ]
+}

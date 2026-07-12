@@ -303,11 +303,47 @@ export const projectEvaluationDocSchema = z.object({
 });
 export type ProjectEvaluationDoc = z.infer<typeof projectEvaluationDocSchema>;
 
+// ---- [2''''] parsed: 統計書 財政章（款項×当初/最終/決算） ----------------------
+// 甲府市統計書「一般会計歳入歳出状況」。款＋項レベルで当初予算額・最終予算額
+// （補正・繰越込みの予算現額）・決算額の3点が取れる唯一のウェブ公開資料。単位は円。
+export const outturnLineFactSchema = z.object({
+  side: z.enum(["revenue", "expenditure"]),
+  kanName: z.string().min(1),
+  /** 項名。null = 款の行 */
+  kouName: z.string().nullable(),
+  /** 当初予算額（円） */
+  initialBudget: z.number(),
+  /** 最終予算額（円・補正/繰越込み） */
+  finalBudget: z.number(),
+  /** 決算額（円） */
+  settled: z.number(),
+  locator: locatorSchema,
+});
+export type OutturnLineFact = z.infer<typeof outturnLineFactSchema>;
+
+export const budgetOutturnDocSchema = z.object({
+  docType: z.literal("budget-outturn"),
+  sourceId: z.string(),
+  parser: z.string(),
+  parserVersion: z.string(),
+  parsedAt: z.string(),
+  unit: z.literal("yen"),
+  /** データの会計年度（統計書の版とはズレる — 版-2年度） */
+  fiscalYear: z.string(),
+  account: z.string(),
+  /** 総額行（円） */
+  revenueTotal: z.object({ initial: z.number(), final: z.number(), settled: z.number() }),
+  expenditureTotal: z.object({ initial: z.number(), final: z.number(), settled: z.number() }),
+  facts: z.array(outturnLineFactSchema),
+});
+export type BudgetOutturnDoc = z.infer<typeof budgetOutturnDocSchema>;
+
 /** parse/validate が受け取り得る全ドキュメント型 */
 export const anyParsedDocSchema = z.union([
   budgetBookDocSchema,
   budgetExecutionDocSchema,
   projectEvaluationDocSchema,
+  budgetOutturnDocSchema,
   parsedDocSchema,
 ]);
 export type AnyParsedDoc = z.infer<typeof anyParsedDocSchema>;
