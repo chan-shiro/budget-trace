@@ -243,6 +243,39 @@ export const SOURCES: SourceEntry[] = [
     license: "甲府市ウェブサイト掲載資料（WARP 経由の保存版。利用条件は両者のサイト参照）",
     parser: "kofu-kessan-syousai",
   },
+  // 甲府市統計書「一般会計歳入歳出状況」（財政章）。款＋項 × 当初/最終/決算（円）の
+  // 3点セットが取れる唯一のウェブ公開資料（補正の規模＝最終−当初もここから分かる）。
+  // 統計書の「版」とデータ年度はズレる（R7版=R5年度…版−2年）。id・fiscalYear は
+  // **データ年度**で付け、版はコメントとタイトルに残す。パーサがヘッダの年度表記を突合する。
+  // R1 年度分（R3版）は統計書ページから消失（未収録 — WARP 走査は今後）。
+  // 各ファイルは3年度分のブロックを持つ（N-2・N-1 = 3値、N = 当初のみ）。
+  // 各データ年度は**それを含む最新の版**から取る（版の重複収録はしない）
+  ...([
+    ["r6", "R6", "令和7年版", "r7toukyisho/documents/r7-15-01.xls", "r7toukyisho/documents/r7-15-02.xls", "r7toukyisho/toukeisho.html"],
+    ["r5", "R5", "令和7年版", "r7toukyisho/documents/r7-15-01.xls", "r7toukyisho/documents/r7-15-02.xls", "r7toukyisho/toukeisho.html"],
+    ["r4", "R4", "令和6年版", "r6toukeisyo/documents/r6-15-01.xls", "r6toukeisyo/documents/r6-15-02.xls", "r6toukeisyo/toukeisyo.html"],
+    ["r3", "R3", "令和5年版", "documents/r5-15-01.xls", "documents/r5-15-02.xls", "r5toukeisho.html"],
+    // 令和4年版 15-01 の行65 は R1 年度の市債行の誤配置（原典事故）→ skipRows で除外
+    ["r2", "R2", "令和4年版", "r4toukeisho/documents/15-01.xls", "r4toukeisho/documents/15-02.xls", "r4toukeisho/r4toukeisho.html"],
+    ["r1", "R1", "令和2年版", "documents/15-01.xls", "documents/15-02.xls", "r2toukeisho.html"],
+    ["h30", "H30", "令和2年版", "documents/15-01.xls", "documents/15-02.xls", "r2toukeisho.html"],
+  ] as const).map(([suffix, fy, edition, revPath, expPath, page]): SourceEntry => ({
+    id: `kofu-toukei-zaisei-${suffix}`,
+    title: `${fy.startsWith("H") ? `平成${fy.slice(1)}` : `令和${fy.slice(1)}`}年度 一般会計歳入歳出状況（甲府市統計書 ${edition}）`,
+    publisher: "甲府市",
+    url: null,
+    urls: [
+      `https://www.city.kofu.yamanashi.jp/somu-somu/${revPath}`,
+      `https://www.city.kofu.yamanashi.jp/somu-somu/${expPath}`,
+    ],
+    landingPage: `https://www.city.kofu.yamanashi.jp/somu-somu/${page}`,
+    kind: "excel",
+    fiscalYear: fy,
+    scope: "甲府市（一般会計・款項）",
+    license: "甲府市ウェブサイト掲載資料（利用条件は同サイト参照）",
+    parser: "kofu-toukei-zaisei",
+    ...(suffix === "r2" ? { parserOptions: { skipRows: { "15-01.xls": [65] } } } : {}),
+  })),
   // 甲府市の行政評価（事務事業評価）結果一覧。実施計画事業ごとの総合評価（A〜F）。
   // 年度で形式・ファイル種別が大きく違う（parserOptions.format）。
   // 詳細票（事業費決算額・成果指標つき）は公開がサンプルのみ → 全量は情報公開請求

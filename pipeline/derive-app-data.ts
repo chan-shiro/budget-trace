@@ -802,6 +802,98 @@ export const KOFU_EVALUATION_YEARS: KofuEvaluationYear[] = ${JSON.stringify(eval
   );
 }
 
+// ============================================================================
+// 統計書 財政章（款項×当初/最終/決算）→ src/client/lib/outturn.gen.ts
+// 款別ドリルダウンの項テーブル（当初→最終→決算）の原典。単位は円 → 億円へ変換。
+// R3 歳出の「当初予算額」列は原典側の誤植（R2 の値のコピー。歳入側は正しく、
+// R5版・R4版の両方が同じ値 — 予算資料との突合で 14款中12款が R2 と一致）のため
+// 採用せず null にする。
+// ============================================================================
+{
+  const OUTTURN_YEARS = ["R6", "R5", "R4", "R3", "R2", "R1", "H30"] as const;
+  const yenToOku = (yen: number) => yen / 1e8;
+  const outturnYears = OUTTURN_YEARS.map((fy) => {
+    const srcId = `kofu-toukei-zaisei-${fy.toLowerCase()}`;
+    const v = validationResultSchema.parse(readJson(validationPath(srcId)));
+    if (v.status !== "ok") throw new Error(`${srcId}: 検証が ${v.status} のため derive しません`);
+    const doc = anyParsedDocSchema.parse(readJson(parsedPath(srcId)));
+    if (doc.docType !== "budget-outturn") throw new Error(`${srcId}: budget-outturn ではありません`);
+    const meta = readRawMeta(srcId);
+    if (!meta) throw new Error(`${srcId}: raw-meta がありません`);
+    const src = findSource(srcId);
+    const expFile = meta.files.find((f) => f.filename.includes("15-02"))!;
+    const url = src.urls?.find((u) => u.includes("15-02")) ?? src.landingPage ?? "";
+    const initialSuspect = fy === "R3"; // 歳出の当初列が原典誤植（上記コメント）
+    const row = (f: (typeof doc.facts)[number]) => ({
+      kan: f.kanName,
+      kou: f.kouName,
+      initialOku: initialSuspect && f.side === "expenditure" ? null : yenToOku(f.initialBudget),
+      finalOku: yenToOku(f.finalBudget),
+      settledOku: yenToOku(f.settled),
+      execPct: f.finalBudget > 0 ? Math.round((f.settled / f.finalBudget) * 1000) / 10 : null,
+      ref: `${f.locator.file}#${f.locator.sheet}!${f.locator.row}`,
+    });
+    return {
+      fy,
+      fyLabel: `${fy.startsWith("H") ? `平成${fy.slice(1)}` : `令和${fy.slice(1)}`}年度`,
+      initialNote: initialSuspect
+        ? "歳出の当初予算額は原典（統計書）側の誤植（前年度値の再掲）と判定したため表示していません"
+        : "",
+      sourceTitle: src.title,
+      sourceUrl: wayback(url),
+      originUrl: url,
+      sourceLocalUrl: `/sources/${srcId}/${expFile.filename}`,
+      revenue: doc.facts.filter((f) => f.side === "revenue").map(row),
+      expenditure: doc.facts.filter((f) => f.side === "expenditure").map(row),
+      totals: {
+        initialOku: initialSuspect ? null : yenToOku(doc.expenditureTotal.initial),
+        finalOku: yenToOku(doc.expenditureTotal.final),
+        settledOku: yenToOku(doc.expenditureTotal.settled),
+      },
+    };
+  });
+  const outturnOut = `// このファイルは自動生成です。手で編集しないこと。
+// 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
+// 出典: 甲府市統計書「一般会計歳入歳出状況」各版（款項 × 当初/最終/決算。単位は億円 = 円/1e8）
+
+export interface KofuOutturnRow {
+  kan: string;
+  /** 項名。null = 款の行 */
+  kou: string | null;
+  /** 当初予算額（億円）。R3 歳出は原典誤植のため null */
+  initialOku: number | null;
+  /** 最終予算額（億円・補正/繰越込み） */
+  finalOku: number;
+  /** 決算額（億円） */
+  settledOku: number;
+  /** 執行率 = 決算/最終（%・小数1桁） */
+  execPct: number | null;
+  ref: string;
+}
+
+export interface KofuOutturnYear {
+  fy: string;
+  fyLabel: string;
+  /** 当初列に関する注記（R3 のみ） */
+  initialNote: string;
+  sourceTitle: string;
+  sourceUrl: string;
+  originUrl: string;
+  sourceLocalUrl: string;
+  revenue: KofuOutturnRow[];
+  expenditure: KofuOutturnRow[];
+  totals: { initialOku: number | null; finalOku: number; settledOku: number };
+}
+
+/** 款項の当初→最終→決算（新しい年度順） */
+export const KOFU_OUTTURN_YEARS: KofuOutturnYear[] = ${JSON.stringify(outturnYears, null, 2)};
+`;
+  writeFileSync(join(process.cwd(), "src/client/lib/outturn.gen.ts"), outturnOut, "utf8");
+  console.log(
+    `✓ 統計書 款項3点を導出 → src/client/lib/outturn.gen.ts（${outturnYears.map((y) => y.fy).join("・")}）`,
+  );
+}
+
 // ---- 主な事業一覧（複数年度）→ src/client/lib/projects.gen.ts ----------------
 {
   const projectYears = budgetYears

@@ -1,0 +1,19 @@
+{
+  "sourceId": "kofu-toukei-zaisei-r4",
+  "files": [
+    {
+      "filename": "r6-15-01.xls",
+      "sha256": "f3fc53d318f6f6780ab0800d0ff8e4724b8173bc8f038a5e94c6675cc1c4fd37",
+      "bytes": 50688,
+      "fetchedAt": "2026-07-12T15:23:22.846Z",
+      "fetchedFrom": "https://www.city.kofu.yamanashi.jp/somu-somu/r6toukeisyo/documents/r6-15-01.xls"
+    },
+    {
+      "filename": "r6-15-02.xls",
+      "sha256": "8d52446785e503c669a8712703eeb6388095e982c4e6797d4db613c97d7de0a1",
+      "bytes": 46592,
+      "fetchedAt": "2026-07-12T15:23:22.875Z",
+      "fetchedFrom": "https://www.city.kofu.yamanashi.jp/somu-somu/r6toukeisyo/documents/r6-15-02.xls"
+    }
+  ]
+}

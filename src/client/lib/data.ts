@@ -10,6 +10,7 @@ import { KOFU_BUDGET, KOFU_BUDGET_YEARS, type KofuBudgetYear, type KofuKanRow } 
 import { KOFU_EXECUTION, KOFU_EXECUTION_YEARS } from './execution.gen';
 import { WAYBACK_BY_URL } from './archives.gen';
 import { KOFU_EVALUATION_YEARS } from './evaluations.gen';
+import { KOFU_OUTTURN_YEARS } from './outturn.gen';
 
 // ---- 型 --------------------------------------------------------------------
 export interface BudgetNode {
@@ -89,6 +90,7 @@ export { KOFU_EXECUTION, KOFU_EXECUTION_YEARS, type KofuExecutionYear } from './
 export { KOFU_R6_DETAIL } from './detail.gen';
 export { KOFU_TREND } from './trend.gen';
 export { KOFU_EVALUATION_YEARS, type KofuEvaluationYear } from './evaluations.gen';
+export { KOFU_OUTTURN_YEARS, type KofuOutturnYear } from './outturn.gen';
 
 // データ出典・更新日一覧（数値の一次資料のみ。地図形状などの素材はトップページに記載）
 // url = Wayback Machine のコピー（魚拓）を優先。直リンクは中身だけ差し替えられ得るが、
@@ -107,6 +109,11 @@ export const SOURCES = [
     used: `予算執行状況（${y.fyLabel.replace('（決算・確定値）', '')}の予算現額・済額・執行率＝確定値）`,
     url: y.sourceUrl, originUrl: y.originUrl, localUrl: y.sourceLocalUrl,
   })),
+  ...KOFU_OUTTURN_YEARS.map((y) => ({
+    title: y.sourceTitle, type: 'Excel', org: '甲府市', date: '2026-07-13',
+    used: `款別ドリルダウンの項テーブル（${y.fyLabel}の当初・最終・決算）`,
+    url: y.sourceUrl, originUrl: y.originUrl, localUrl: y.sourceLocalUrl,
+  })),
   ...KOFU_EVALUATION_YEARS.map((y) => ({
     title: y.sourceTitle, type: y.sourceLocalUrl ? 'PDF' : 'Excel', org: '甲府市', date: '2026-07-12',
     used: `事業の評価バッジ（${y.fyLabel}の主な事業に予算名/事業名の完全一致で表示）`,
@@ -118,8 +125,22 @@ export const SOURCES = [
 // 未収録資料のリクエスト（リクエスト駆動の情報公開請求 — docs/data-strategy.md）。
 // 賛同が貯まったものから請求・収録する。台帳は GitHub Issues（ラベル: 資料リクエスト）
 const REPO = 'https://github.com/chan-shiro/budget-trace';
-const requestUrl = (title: string) =>
-  `${REPO}/issues/new?template=source-request.yml&title=${encodeURIComponent(`[資料リクエスト] ${title}`)}`;
+/**
+ * 資料リクエスト Issue の起票 URL。GitHub の issue form は URL クエリで
+ * フィールド（id 一致）をプリフィルできるため、「どの画面の・何が・なぜ欲しいか」の
+ * 文脈を reason に埋めて、データが無い箇所からその場で起票できるようにする
+ */
+export function buildRequestUrl(subject: string, reason?: string): string {
+  const params = new URLSearchParams({
+    template: 'source-request.yml',
+    title: `[資料リクエスト] ${subject}`,
+    'source-name': subject,
+    publisher: '甲府市',
+    ...(reason ? { reason } : {}),
+  });
+  return `${REPO}/issues/new?${params.toString()}`;
+}
+const requestUrl = (title: string) => buildRequestUrl(title);
 export const REQUEST_LIST_URL = `${REPO}/issues?q=${encodeURIComponent('is:issue label:資料リクエスト sort:reactions-+1-desc')}`;
 export const UNCOLLECTED = [
   { title: '事務事業評価票（全事業分・各年度）', why: '事業単位の執行額（決算3年分・財源内訳）と成果指標。公開はサンプル数枚のみ', requestUrl: requestUrl('事務事業評価票（全事業分・各年度）') },

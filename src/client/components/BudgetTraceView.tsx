@@ -270,10 +270,44 @@ export default function BudgetTraceView({ v }: { v: any }) {
                       </HoverBox>
                     ))}
 
-                    {v.hasR6Detail && (
+                    {v.hasOutturn && (
+                      <div style={S("margin-top:8px;")}>
+                        <h3 style={S("margin:0 0 4px; font-size:14px; font-weight:700;")}>項別の当初 → 最終（補正後）→ 決算（{v.outturnFyLabel}）</h3>
+                        {v.outturnInitialNote && <p style={S("margin:0 0 8px; font-size:11.5px; color:#C25400;")}>※ {v.outturnInitialNote}</p>}
+                        <div style={S("overflow-x:auto;")}>
+                          <div style={S("min-width:560px;")}>
+                            <div style={S("display:grid; grid-template-columns:minmax(140px,1.6fr) repeat(4, minmax(84px,1fr)); gap:10px; font-size:11px; color:#5C6B77; border-bottom:1px solid #DFE7EC; padding-bottom:6px;")}>
+                              <span>項</span><span style={S("text-align:right;")}>当初予算</span><span style={S("text-align:right;")}>最終予算</span><span style={S("text-align:right;")}>決算</span><span style={S("text-align:right;")}>執行率</span>
+                            </div>
+                            {v.outturnRows.map((orw: any, i: number) => (
+                              <div key={i} title={orw.ref} style={S("display:grid; grid-template-columns:minmax(140px,1.6fr) repeat(4, minmax(84px,1fr)); gap:10px; padding:9px 0; border-bottom:1px solid #ECF2F6; font-size:12.5px; align-items:center;")}>
+                                <span style={S("font-weight:600; display:inline-flex; align-items:center; gap:7px;")}><span style={S(`width:9px; height:9px; border-radius:3px; background:${orw.sw};`)}></span>{orw.name}</span>
+                                <span style={S("font-family:'IBM Plex Mono',monospace; text-align:right;")}>{orw.initialFmt}</span>
+                                <span style={S("font-family:'IBM Plex Mono',monospace; text-align:right;")}>{orw.finalFmt}</span>
+                                <span style={S("font-family:'IBM Plex Mono',monospace; text-align:right;")}>{orw.settledFmt}</span>
+                                <span style={S("font-family:'IBM Plex Mono',monospace; text-align:right; font-weight:600;")}>{orw.execFmt}</span>
+                              </div>
+                            ))}
+                            {v.outturnKan && (
+                              <div style={S("display:grid; grid-template-columns:minmax(140px,1.6fr) repeat(4, minmax(84px,1fr)); gap:10px; padding:9px 0; font-size:12.5px; align-items:center; font-weight:700;")}>
+                                <span>款計</span>
+                                <span style={S("font-family:'IBM Plex Mono',monospace; text-align:right;")}>{v.outturnKan.initialFmt}</span>
+                                <span style={S("font-family:'IBM Plex Mono',monospace; text-align:right;")}>{v.outturnKan.finalFmt}</span>
+                                <span style={S("font-family:'IBM Plex Mono',monospace; text-align:right;")}>{v.outturnKan.settledFmt}</span>
+                                <span style={S("font-family:'IBM Plex Mono',monospace; text-align:right;")}>{v.outturnKan.execFmt}</span>
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                        <p style={S("margin:8px 2px 0; font-size:12px; color:#5C6B77;")}>
+                          <a href="#" onClick={(e) => { e.preventDefault(); v.outturnSourceOpen(); }} style={S("color:#5C6B77; cursor:pointer;")}>{v.outturnSourceLabel}（原本を開く）</a>
+                        </p>
+                      </div>
+                    )}
+                    {!v.hasOutturn && v.hasR6Detail && (
                       <div style={S("margin-top:8px;")}>
                         <h3 style={S("margin:0 0 4px; font-size:14px; font-weight:700;")}>項別の内訳（{v.r6DetailFyLabel}）</h3>
-                        <p style={S("margin:0 0 10px; font-size:12px; color:#5C6B77;")}>{v.compCurLabel}予算の項別内訳は原典未公開のため、直近の決算値を参考として表示しています。決算計 {v.r6DetailKanTotalFmt}。</p>
+                        <p style={S("margin:0 0 10px; font-size:12px; color:#5C6B77;")}>{v.compCurLabel}予算の項別内訳は原典未公開のため、直近の決算値を参考として表示しています。決算計 {v.r6DetailKanTotalFmt}。<a href={v.r6DetailRequestUrl} target="_blank" rel="noopener noreferrer" style={S("margin-left:8px; font-size:11px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:2px 10px; text-decoration:none; white-space:nowrap;")}>この年度の項別内訳をリクエスト ↗</a></p>
                         <div style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:11px; padding:6px 16px;")}>
                           {v.r6DetailRows.map((r: any, i: number) => (
                             <div key={i} data-mq="drill" style={S("display:grid; grid-template-columns:14px minmax(120px,1.4fr) 2fr 92px 56px 20px; align-items:center; gap:12px; border-bottom:1px solid #ECF2F6; padding:10px 0;")}>
@@ -302,7 +336,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                         <div style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:11px; padding:12px 16px; margin-bottom:10px;")}>
                           <div style={S("display:flex; justify-content:space-between; gap:12px; font-size:12px; color:#5C6B77; margin-bottom:6px; flex-wrap:wrap;")}>
                             <span>事業単位のエビデンスあり <span style={S("font-family:'IBM Plex Mono',monospace; color:#14181C; font-weight:600;")}>{v.realProjectsCoveredFmt}</span>（款の {v.realProjectsCoveredPct}%）</span>
-                            <span>事業掲載なし（詳細不明） <span style={S("font-family:'IBM Plex Mono',monospace; color:#14181C;")}>{v.realProjectsUncoveredFmt}</span></span>
+                            <span>事業掲載なし（詳細不明） <span style={S("font-family:'IBM Plex Mono',monospace; color:#14181C;")}>{v.realProjectsUncoveredFmt}</span>{v.uncoveredRequestUrl && <a href={v.uncoveredRequestUrl} target="_blank" rel="noopener noreferrer" style={S("margin-left:10px; font-size:11px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:2px 10px; text-decoration:none; white-space:nowrap;")}>この内訳をリクエスト ↗</a>}</span>
                           </div>
                           <div style={S("display:flex; height:10px; border-radius:999px; overflow:hidden; background:#E3EBF0;")}>
                             <span data-anim="bar" style={S(`width:${v.realProjectsCoveredBarW}%; background:#1798D0;`)}></span>
@@ -418,7 +452,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                     <div style={S("display:flex; align-items:flex-start; justify-content:space-between; gap:18px; flex-wrap:wrap; margin-bottom:6px;")}>
                       <div>
                         <h2 style={S("margin:0 0 8px; font-size:22px; font-weight:700;")}>{v.themeName}</h2>
-                        <p style={S("margin:0; color:#5C6B77; font-size:14px; max-width:64ch; line-height:1.8;")}>{v.themeIntent}</p>
+                        <p style={S("margin:0; color:#5C6B77; font-size:14px; max-width:64ch; line-height:1.8;")}>{v.themeIntent} <a href={v.themeRequestUrl} target="_blank" rel="noopener noreferrer" style={S("font-size:11px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:2px 10px; text-decoration:none; white-space:nowrap;")}>事業の執行実績・成果をリクエスト ↗</a></p>
                       </div>
                       <div style={S("text-align:right;")}>
                         <div style={S("font-family:'IBM Plex Mono',monospace; font-size:26px; font-weight:600;")}>{v.themeTotalFmt}</div>
