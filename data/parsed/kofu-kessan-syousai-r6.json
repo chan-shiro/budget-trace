@@ -1,0 +1,430 @@
+{
+  "docType": "budget-execution",
+  "sourceId": "kofu-kessan-syousai-r6",
+  "parser": "kofu-kessan-syousai",
+  "parserVersion": "0.1.0",
+  "parsedAt": "2026-07-12T12:47:46.141Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R6",
+  "account": "一般会計",
+  "asOf": "決算（確定値）",
+  "basis": "確定",
+  "population": null,
+  "revenueBudgetTotal": 96650010,
+  "revenueSettledTotal": 91644870,
+  "expenditureBudgetTotal": 96650010,
+  "expenditureSettledTotal": 90039310,
+  "facts": [
+    {
+      "side": "revenue",
+      "name": "市税",
+      "currentBudget": 29467770,
+      "settled": 29574440,
+      "ratePct": 100.4,
+      "breakdown": [
+        {
+          "name": "市民税",
+          "currentBudget": 13783240
+        },
+        {
+          "name": "固定資産税",
+          "currentBudget": 11750450
+        },
+        {
+          "name": "都市計画税",
+          "currentBudget": 1970020
+        },
+        {
+          "name": "市たばこ税",
+          "currentBudget": 1368370
+        },
+        {
+          "name": "軽自動車税",
+          "currentBudget": 655420
+        },
+        {
+          "name": "入湯税",
+          "currentBudget": 46940
+        }
+      ],
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "地方譲与税",
+      "currentBudget": 425750,
+      "settled": 424560,
+      "ratePct": 99.7,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 9
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "利子割交付金",
+      "currentBudget": 7740,
+      "settled": 12620,
+      "ratePct": 163,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 10
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "配当割交付金",
+      "currentBudget": 143600,
+      "settled": 227950,
+      "ratePct": 158.7,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 11
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "株式等譲渡所得割交付金",
+      "currentBudget": 129810,
+      "settled": 316080,
+      "ratePct": 243.5,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "法人事業税交付金",
+      "currentBudget": 603480,
+      "settled": 610070,
+      "ratePct": 101.1,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 13
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "地方消費税交付金",
+      "currentBudget": 5100250,
+      "settled": 5374490,
+      "ratePct": 105.4,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 14
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "環境性能割交付金",
+      "currentBudget": 72050,
+      "settled": 62250,
+      "ratePct": 86.4,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 15
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "地方特例交付金",
+      "currentBudget": 961980,
+      "settled": 964320,
+      "ratePct": 100.2,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 16
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "地方交付税",
+      "currentBudget": 12244180,
+      "settled": 12306520,
+      "ratePct": 100.5,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 17
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "交通安全対策特別交付金",
+      "currentBudget": 34060,
+      "settled": 24910,
+      "ratePct": 73.1,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 18
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "分担金及び負担金",
+      "currentBudget": 338920,
+      "settled": 241070,
+      "ratePct": 71.1,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 19
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "使用料及び手数料",
+      "currentBudget": 941340,
+      "settled": 888000,
+      "ratePct": 94.3,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 20
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "国庫支出金",
+      "currentBudget": 20182400,
+      "settled": 17951010,
+      "ratePct": 88.9,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 21
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "県支出金",
+      "currentBudget": 7197310,
+      "settled": 6752200,
+      "ratePct": 93.8,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 22
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "財産収入",
+      "currentBudget": 108280,
+      "settled": 218120,
+      "ratePct": 201.4,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 23
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "寄付金",
+      "currentBudget": 8013820,
+      "settled": 7433420,
+      "ratePct": 92.8,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 24
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "繰入金",
+      "currentBudget": 2666410,
+      "settled": 2296510,
+      "ratePct": 86.1,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 25
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "繰越金",
+      "currentBudget": 1283910,
+      "settled": 1283910,
+      "ratePct": 100,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 26
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "諸収入",
+      "currentBudget": 2291650,
+      "settled": 1973180,
+      "ratePct": 86.1,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 27
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "市債",
+      "currentBudget": 4435300,
+      "settled": 2709240,
+      "ratePct": 61.1,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 28
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "議会費",
+      "currentBudget": 540460,
+      "settled": 528550,
+      "ratePct": 97.8,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "総務費",
+      "currentBudget": 17351150,
+      "settled": 16637210,
+      "ratePct": 95.9,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "民生費",
+      "currentBudget": 38713140,
+      "settled": 36767820,
+      "ratePct": 95,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "衛生費",
+      "currentBudget": 10016620,
+      "settled": 9651820,
+      "ratePct": 96.4,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "労働費",
+      "currentBudget": 189690,
+      "settled": 183640,
+      "ratePct": 96.8,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "農林水産業費",
+      "currentBudget": 1134020,
+      "settled": 931740,
+      "ratePct": 82.2,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "商工費",
+      "currentBudget": 2643590,
+      "settled": 1628840,
+      "ratePct": 61.6,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "土木費",
+      "currentBudget": 6823130,
+      "settled": 5639760,
+      "ratePct": 82.7,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 9
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "消防費",
+      "currentBudget": 2440870,
+      "settled": 2311550,
+      "ratePct": 94.7,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 10
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "教育費",
+      "currentBudget": 8076880,
+      "settled": 7058630,
+      "ratePct": 87.4,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 11
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "災害復旧費",
+      "currentBudget": 0,
+      "settled": 0,
+      "ratePct": 0,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "公債費",
+      "currentBudget": 8690690,
+      "settled": 8686290,
+      "ratePct": 99.9,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 13
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "諸支出金",
+      "currentBudget": 14180,
+      "settled": 13460,
+      "ratePct": 94.9,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 14
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "予備費",
+      "currentBudget": 15590,
+      "settled": 0,
+      "ratePct": 0,
+      "locator": {
+        "file": "r6ippansyousai.html",
+        "row": 15
+      }
+    }
+  ]
+}

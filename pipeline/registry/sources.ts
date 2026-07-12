@@ -158,6 +158,29 @@ export const SOURCES: SourceEntry[] = [
       projectPages: { from: 1, to: 3 },
     },
   },
+  // 甲府市の決算状況「収入支出詳細」HTML ページ。款別の予算現額・収入/支出済額・
+  // 収入率/執行率（出納整理後の**確定値**）＋市税の内訳（予算現額のみ）。
+  // 過去の執行を確定値で辿る本命資料。R3 は年度ページ・詳細ページとも市サイトから
+  // 削除済みで Wayback にも無く入手不可（R4・R5 予算資料と同じパターン）。
+  ...([
+    ["r6", "R6", "r6kessan/r6ippansyousai.html", "r6kessan/r6kessan.html"],
+    ["r5", "R5", "r5kessan/r5ippansyousai.html", "r5kessan/r5kessan.html"],
+    ["r4", "R4", "r04kessan/r4ippannsyousai.html", "r04kessan/r04kessan.html"],
+    ["r2", "R2", "h28kessan/r2shuushishousai.html", "r02kessan.html"],
+    ["r1", "R1", "h28kessan/r1sishutu.html", "h28kessan/r1kessann.html"],
+  ] as const).map(([suffix, fy, detail, index]): SourceEntry => ({
+    id: `kofu-kessan-syousai-${suffix}`,
+    title: `令和${fy.slice(1)}年度 甲府市決算状況 収入支出詳細（一般会計・確定値）`,
+    publisher: "甲府市",
+    url: null,
+    urls: [`https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/${detail}`],
+    landingPage: `https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/${index}`,
+    kind: "page",
+    fiscalYear: fy,
+    scope: "甲府市（一般会計）",
+    license: "甲府市ウェブサイト掲載資料（利用条件は同サイト参照）",
+    parser: "kofu-kessan-syousai",
+  })),
   {
     // 甲府市の財政事情の公表（地方自治法 §243の3）。年2回、款別の予算現額と
     // 収入/支出済額（＝執行状況）が出る。直リンクは公表のたびに同じパスへ

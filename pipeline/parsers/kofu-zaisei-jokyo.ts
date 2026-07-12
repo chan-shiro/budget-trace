@@ -137,6 +137,7 @@ export function parseKofuZaiseiJokyo(
     fiscalYear: source.fiscalYear,
     account: "一般会計",
     asOf,
+    basis: "速報",
     population,
     revenueBudgetTotal: rev.budgetTotal,
     revenueSettledTotal: rev.settledTotal,

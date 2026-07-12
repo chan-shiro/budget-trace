@@ -222,6 +222,8 @@ export const executionLineFactSchema = z.object({
   settled: z.number(),
   /** 資料記載の収入率/執行率（%）。予算現額0の款は null */
   ratePct: z.number().nullable(),
+  /** 内訳行（決算状況「収入支出詳細」の市税内訳など。予算現額のみ記載） */
+  breakdown: z.array(z.object({ name: z.string().min(1), currentBudget: z.number() })).optional(),
   locator: locatorSchema,
 });
 export type ExecutionLineFact = z.infer<typeof executionLineFactSchema>;
@@ -236,8 +238,13 @@ export const budgetExecutionDocSchema = z.object({
   /** 対象会計年度（例: "R7"） */
   fiscalYear: z.string(),
   account: z.string(),
-  /** 基準日（例: "令和8年3月31日現在"）。年度末値でも出納整理期間前の速報にあたる */
+  /** 基準日（例: "令和8年3月31日現在"）または "決算（確定値）" */
   asOf: z.string(),
+  /**
+   * 済額の基準。速報 = 財政事情の公表（出納整理期間前の年度末値）、
+   * 確定 = 決算状況の収入支出詳細（出納整理後の決算値）
+   */
+  basis: z.enum(["速報", "確定"]).default("速報"),
   /** 基準日現在の人口（資料記載） */
   population: z.number().nullable(),
   /** 資料記載の合計行（千円）。内訳の和との照合は validate が行う */

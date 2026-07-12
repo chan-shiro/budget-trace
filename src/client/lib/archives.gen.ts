@@ -3,6 +3,16 @@
 // 一次資料の元 URL → Wayback Machine スナップショット URL
 
 export const WAYBACK_BY_URL: Record<string, string> = {
+  "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r1kessann.html": "https://web.archive.org/web/20210128060355/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r1kessann.html",
+  "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r1sishutu.html": "https://web.archive.org/web/20210128054004/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r1sishutu.html",
+  "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r2shuushishousai.html": "https://web.archive.org/web/20260712125651/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r2shuushishousai.html",
+  "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r02kessan.html": "https://web.archive.org/web/20220707081526/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r02kessan.html",
+  "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r04kessan/r04kessan.html": "https://web.archive.org/web/20260712125546/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r04kessan/r04kessan.html",
+  "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r04kessan/r4ippannsyousai.html": "https://web.archive.org/web/20260712125433/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r04kessan/r4ippannsyousai.html",
+  "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r5kessan/r5ippansyousai.html": "https://web.archive.org/web/20260712125134/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r5kessan/r5ippansyousai.html",
+  "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r5kessan/r5kessan.html": "https://web.archive.org/web/20260712125329/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r5kessan/r5kessan.html",
+  "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r6kessan/r6ippansyousai.html": "https://web.archive.org/web/20260712125856/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r6kessan/r6ippansyousai.html",
+  "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r6kessan/r6kessan.html": "https://web.archive.org/web/20260712125041/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r6kessan/r6kessan.html",
   "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r02omonajigyou.pdf": "https://web.archive.org/web/20260712104609/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r02omonajigyou.pdf",
   "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r02sainyuusaishutu.pdf": "https://web.archive.org/web/20260712104422/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r02sainyuusaishutu.pdf",
   "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r02yosan.html": "https://web.archive.org/web/20220515042028/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r02yosan.html",
