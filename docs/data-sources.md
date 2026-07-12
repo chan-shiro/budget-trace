@@ -34,7 +34,12 @@
      結果を台帳の `sha256Match` に記録する。`false` は別版（古いスナップショット等）の印
      （実例: 財政事情 01ipankaikei.pdf の CDX 最新が 2024 年の旧版だった → `--force` で解消）
    - 直リンクが同じパスへ上書きされる資料（財政事情）は版が変わるたび `--force` で再登録
-8. `parse → validate → normalize（全国比較データのみ）→ derive` を通し、
+8. **自サーバー配信を確認する** — `pipeline/sync-public-sources.ts`（dev/build 前段で自動）が
+   raw の PDF・HTML・Excel を `public/sources/` へ同期する。画面のエビデンスリンクは
+   **常にこのコピー**をドロワーで開く（発行元・Wayback への直リンクを主リンクにしない —
+   「エビデンス3層コピーの原則」は data-strategy.md）。新しい形式を追加したら
+   ドロワー側の表示手段（PdfViewer / HtmlViewer / ダウンロードカード）も確認する
+9. `parse → validate → normalize（全国比較データのみ）→ derive` を通し、
    本書に取得手順・ハマりどころを追記する
 
 ---
