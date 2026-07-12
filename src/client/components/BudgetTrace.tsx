@@ -49,6 +49,8 @@ const PLAN_BY_FY: Record<string, { plan: string; goals?: { name: string; label: 
   },
   R7: { plan: "第六次甲府市総合計画" },
   R6: { plan: "第六次甲府市総合計画" },
+  R3: { plan: "第六次甲府市総合計画" },
+  R2: { plan: "第六次甲府市総合計画" },
 };
 
 export default function BudgetTrace() {
@@ -97,7 +99,7 @@ export default function BudgetTrace() {
   setPalette(mapColorMode);
   const screen = s.screen;
   const isApp = ["dash", "drill", "compare", "themes", "execution", "similar", "sources"].includes(screen);
-  // 収録済み自治体は甲府市のみ。年度は当初予算の収録年度（R8〜R6）から選択
+  // 収録済み自治体は甲府市のみ。年度は当初予算の収録年度（R8〜R6・R3〜R2）から選択
   const budget = KOFU_BUDGET_YEARS.find((b) => b.fy === s.budgetFy) ?? KOFU_BUDGET_YEARS[0]!;
   const projYear = KOFU_PROJECT_YEARS.find((y) => y.fy === budget.fy);
   const KOFU_PROJECTS = React.useMemo(() => projYear?.projects ?? [], [projYear]);
@@ -115,7 +117,11 @@ export default function BudgetTrace() {
           const num = (g: string) => (/^基本目標/.test(g) ? 0 : 1);
           return num(a) - num(b) || a.localeCompare(b, "ja");
         })
-        .map((name) => ({ name, label: "" })),
+        // 見出しの名称が資料にある年度（R2・R3 の箇条書き形式）はラベルに使う
+        .map((name) => ({
+          name,
+          label: KOFU_PROJECTS.find((p) => p.basicGoal === name && p.basicGoalLabel)?.basicGoalLabel ?? "",
+        })),
     [planInfo.goals, KOFU_PROJECTS],
   );
   const accent = "#1798D0";
@@ -147,7 +153,7 @@ export default function BudgetTrace() {
   const muniList = (prefAvail ? YAMANASHI_MUNIS : []).map((m) => {
     const avail = m === "甲府市";
     return {
-      name: m, badge: avail ? `収録済 ${KOFU_BUDGET_YEARS[KOFU_BUDGET_YEARS.length - 1]!.fy}〜${KOFU_BUDGET_YEARS[0]!.fy}当初予算` : "準備中", badgeFg: avail ? accent : "#9DACB7",
+      name: m, badge: avail ? `収録済 当初予算${KOFU_BUDGET_YEARS.length}年度分` : "準備中", badgeFg: avail ? accent : "#9DACB7",
       bg: avail ? "#FFFFFF" : "#F0F5F8", bd: avail ? accent : "#DFE7EC",
       fg: avail ? "#14181C" : "#8494A0", cursor: avail ? "pointer" : "default",
       open: avail ? openMuni(m) : () => {},
@@ -186,7 +192,7 @@ export default function BudgetTrace() {
     .sort((a, b) => b.amountOku - a.amountOku)
     .slice(0, 3)
     .map((p) => ({
-      name: p.name, kanPath: p.kan, kubun: p.kubun ?? "",
+      name: p.name, kanPath: p.kan ?? p.shisaku, kubun: p.kubun ?? "",
       budgetFmt: fmtV(p.amountOku), sub: subV(p.amountOku), desc: p.description,
     }));
 
@@ -244,18 +250,22 @@ export default function BudgetTrace() {
   if (curGoal) {
     const ps = goalProjects(curGoal.name);
     const total = ps.reduce((a, p) => a + p.amountOku, 0);
+    // 款チップ（款別ドリルへのリンク）。款の記載が無い年度（R2・R3）はチップなし
     const kanAgg: Record<string, number> = {};
-    ps.forEach((p) => { kanAgg[p.kan] = (kanAgg[p.kan] || 0) + p.amountOku; });
+    ps.forEach((p) => { if (p.kan != null) kanAgg[p.kan] = (kanAgg[p.kan] || 0) + p.amountOku; });
     const kanIdx = (nm: string) => Math.max(0, data.expenditure.findIndex((k) => k.name === nm));
     themeVals = {
       hasTheme: true,
-      themeName: curGoal.label ? `基本目標『${curGoal.name}』 — ${curGoal.label}` : `『${curGoal.name}』`,
+      // 「基本目標1」のように名前自体が「基本目標」で始まる年度では接頭辞を重ねない
+      themeName: curGoal.label
+        ? `${curGoal.name.startsWith("基本") ? `『${curGoal.name}』` : `基本目標『${curGoal.name}』`} — ${curGoal.label}`
+        : `『${curGoal.name}』`,
       themeIntent: `${planInfo.plan}の基本目標「${curGoal.name}」に紐づく主な事業（予算資料の主な事業一覧に掲載された ${ps.length}事業）の集計です。複数の基本目標を持つ事業は各目標に計上しています。`,
       themeTotalFmt: fmtV(total), themeSub: subV(total), themeCount: String(ps.length),
       themePer: fmtPerCap(total, data.pop),
       themeKanChips: Object.entries(kanAgg).map(([nm, v]) => ({ name: nm, amtFmt: fmtV(v), sw: D.PALETTE[kanIdx(nm) % D.PALETTE.length], open: () => nav({ screen: "drill", drillSide: "exp", drillPath: [nm] }) })),
       themeProjects: ps.map((p) => ({
-        name: p.name, summary: p.description, kanPath: p.kan, kubun: p.kubun ?? "",
+        name: p.name, summary: p.description, kanPath: p.kan ?? p.shisaku, kubun: p.kubun ?? "",
         budgetFmt: fmtV(p.amountOku), sub: subV(p.amountOku), shisaku: p.shisaku,
         refLabel: p.refLabel, refUrl: p.refUrl,
       })),
@@ -377,6 +387,7 @@ export default function BudgetTrace() {
     dashTitle: `${data.name}の予算`, totalFmt: fmtV(totalNow),
     totalFmtAnim: <CountUpNum value={totalNow} fmt={fmtV} />,
     yoy: data.yoy,
+    yoyCaption: budget.prevBasis === "補正後" ? "対前年度（補正後予算比）" : "対前年度",
     dashPanels, themeStrip, featured,
     goThemes: () => nav({ screen: "themes" }),
     drillSideTabs, drillCrumbs, drillLevelLabel: depth === 0 ? "款" : "内訳",
@@ -428,6 +439,7 @@ export default function BudgetTrace() {
       const general = KOFU_PROJECTS.filter((p) => budget.expenditure.some((k) => k.name === p.kan));
       const covered = general.reduce((a, p) => a + p.amountOku, 0);
       return {
+        hasProjCoverage: general.length > 0,
         projCoverageCoveredFmt: fmtOku(covered),
         projCoverageCount: String(general.length),
         projCoveragePct: ((covered / budget.totalOku) * 100).toFixed(1),
@@ -470,7 +482,11 @@ export default function BudgetTrace() {
     sourcesRows: SOURCES,
     themeCards, ...themeVals,
     compTabs, compRows,
-    compPrevLabel: `令和${Number(budget.fy.slice(1)) - 1}年度`, compCurLabel: `令和${budget.fy.slice(1)}年度`,
+    // 前年ラベル。R2 の前年（令和元年度）は「6月補正後予算額」との比較なので基準を明示する
+    compPrevLabel:
+      `令和${Number(budget.fy.slice(1)) - 1 === 1 ? "元" : Number(budget.fy.slice(1)) - 1}年度` +
+      (budget.prevBasis === "補正後" ? "（補正後予算額）" : ""),
+    compCurLabel: `令和${budget.fy.slice(1)}年度`,
     compPrevTotal: fmtV(compPrevSum), compCurTotal: fmtV(compCurSum), compSub: subV(compCurSum),
     compTotalDelta: (compDelta >= 0 ? "+" : "−") + fmtV(Math.abs(compDelta)),
     compTotalPct: (compDelta >= 0 ? "+" : "−") + ((Math.abs(compDelta) / compPrevSum) * 100).toFixed(1) + "%",

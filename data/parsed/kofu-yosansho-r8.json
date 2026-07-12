@@ -3,7 +3,7 @@
   "sourceId": "kofu-yosansho-r8",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-07-12T07:36:41.854Z",
+  "parsedAt": "2026-07-12T10:44:32.024Z",
   "unit": "thousandYen",
   "fiscalYear": "R8",
   "account": "一般会計",
@@ -11,6 +11,7 @@
   "expenditureTotal": 91787060,
   "prevRevenueTotal": 88085032,
   "prevExpenditureTotal": 88085032,
+  "prevBasis": "当初",
   "facts": [
     {
       "side": "revenue",

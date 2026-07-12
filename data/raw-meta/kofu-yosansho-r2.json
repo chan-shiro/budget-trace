@@ -1,0 +1,19 @@
+{
+  "sourceId": "kofu-yosansho-r2",
+  "files": [
+    {
+      "filename": "r02sainyuusaishutu.pdf",
+      "sha256": "3fe6f1f3e9eded91f5b1405f50accba5f1fb94300a1e4fe3dc70713a6fbfc24e",
+      "bytes": 190724,
+      "fetchedAt": "2026-07-12T10:37:53.090Z",
+      "fetchedFrom": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r02sainyuusaishutu.pdf"
+    },
+    {
+      "filename": "r02omonajigyou.pdf",
+      "sha256": "e3d5753f560252b01d04ae9d28943e1225f684c02fa622660d394adc1d943f70",
+      "bytes": 169960,
+      "fetchedAt": "2026-07-12T10:37:53.121Z",
+      "fetchedFrom": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r02omonajigyou.pdf"
+    }
+  ]
+}

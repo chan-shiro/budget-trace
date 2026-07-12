@@ -88,28 +88,33 @@ function validateBudgetBook(d: BudgetBookDoc): void {
     const seenNo = new Set<number>();
     let prevNo = 0;
     for (const p of d.projects) {
-      const tag = `事業 No.${p.no}「${p.name}」`;
-      if (seenNo.has(p.no)) issues.push({ level: "error", message: `${tag}: No が重複` });
-      seenNo.add(p.no);
-      if (p.no !== prevNo + 1) {
-        issues.push({ level: "warning", message: `${tag}: No が連番ではありません（直前 ${prevNo}）` });
+      const tag = p.no != null ? `事業 No.${p.no}「${p.name}」` : `事業「${p.name}」`;
+      // No・款は表形式（R6〜）のみ。箇条書き形式（R2・R3）は null なので対象外
+      if (p.no != null) {
+        if (seenNo.has(p.no)) issues.push({ level: "error", message: `${tag}: No が重複` });
+        seenNo.add(p.no);
+        if (p.no !== prevNo + 1) {
+          issues.push({ level: "warning", message: `${tag}: No が連番ではありません（直前 ${prevNo}）` });
+        }
+        prevNo = p.no;
       }
-      prevNo = p.no;
       if (p.amount <= 0) issues.push({ level: "error", message: `${tag}: 予算額が不正 (${p.amount})` });
-      // 一般会計の款に属する事業は款予算を超えられない（特別会計セクションは対象外）
-      const kb = kanBudget.get(p.kan);
-      if (kb != null && p.amount > kb) {
-        issues.push({ level: "error", message: `${tag}: 事業額 ${p.amount} が款「${p.kan}」の予算 ${kb} を超過` });
-      }
-      if (kb == null && !/会計$/.test(p.kan)) {
-        issues.push({ level: "error", message: `${tag}: 款「${p.kan}」が歳出款別一覧にありません` });
+      if (p.kan != null) {
+        // 一般会計の款に属する事業は款予算を超えられない（特別会計セクションは対象外）
+        const kb = kanBudget.get(p.kan);
+        if (kb != null && p.amount > kb) {
+          issues.push({ level: "error", message: `${tag}: 事業額 ${p.amount} が款「${p.kan}」の予算 ${kb} を超過` });
+        }
+        if (kb == null && !/会計$/.test(p.kan)) {
+          issues.push({ level: "error", message: `${tag}: 款「${p.kan}」が歳出款別一覧にありません` });
+        }
+        if (!p.shisaku) issues.push({ level: "warning", message: `${tag}: 施策が空` });
       }
       // R8〜: 第七次総合計画（ひと/まち/魅力）。R6・R7: 第六次総合計画（基本目標1〜4・基本構想の推進）
       const goalToken = "(ひと|まち|魅力|基本目標[1-4１-４]|基本構想の推進)";
       if (p.basicGoal && !new RegExp(`^${goalToken}(・${goalToken})*$`).test(p.basicGoal)) {
         issues.push({ level: "warning", message: `${tag}: 基本目標が想定外（${p.basicGoal}）` });
       }
-      if (!p.shisaku) issues.push({ level: "warning", message: `${tag}: 施策が空` });
     }
   }
 }

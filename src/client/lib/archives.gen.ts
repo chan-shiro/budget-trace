@@ -3,6 +3,12 @@
 // 一次資料の元 URL → Wayback Machine スナップショット URL
 
 export const WAYBACK_BY_URL: Record<string, string> = {
+  "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r02omonajigyou.pdf": "https://web.archive.org/web/20260712104609/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r02omonajigyou.pdf",
+  "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r02sainyuusaishutu.pdf": "https://web.archive.org/web/20260712104422/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r02sainyuusaishutu.pdf",
+  "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r02yosan.html": "https://web.archive.org/web/20220515042028/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r02yosan.html",
+  "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/2r03ippankaikeisainyusaisyutu.pdf": "https://web.archive.org/web/20260712104219/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/2r03ippankaikeisainyusaisyutu.pdf",
+  "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf",
+  "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r03yosan.html": "https://web.archive.org/web/20260712103917/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r03yosan.html",
   "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf",
   "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r06yosan.html": "https://web.archive.org/web/20260712085545/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r06yosan.html",
   "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf",

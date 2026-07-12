@@ -19,6 +19,15 @@ interface Options {
   expenditurePage?: number;
   /** 「主な事業一覧」のページ範囲（1-origin・両端含む） */
   projectPages?: { from: number; to: number };
+  /** 分冊形式（R2・R3）: 款別一覧表のファイル名。未指定なら単一ファイル */
+  kanFile?: string;
+  /** 分冊形式: 主な事業のファイル名 */
+  projectsFile?: string;
+  /**
+   * 主な事業のレイアウト。"table"（R6〜: No/款/内容の表）または
+   * "bullets"（R2・R3: ●事業名…金額 の箇条書き。款・連番なし）
+   */
+  projectFormat?: "table" | "bullets";
 }
 
 /** "1,234" / "△1,234" → number。構成比などの小数は対象外（呼び出し側で弾く） */
@@ -48,7 +57,12 @@ interface PageResult {
   lines: BudgetLineFact[];
   total: number;
   prevTotal: number | null;
+  /** 前年度列の基準（R2 の一覧表は「6月補正後予算額」との比較） */
+  prevBasis: "当初" | "補正後";
 }
+
+// 款名の収集から除外するヘッダ・注記の語
+const KAN_HEADER_RE = /年度|予算額|一覧表|単位|構成比|増減|伸率|比較|^款$/;
 
 function parseKanPage(
   filePath: string,
@@ -57,56 +71,93 @@ function parseKanPage(
   side: "revenue" | "expenditure",
 ): PageResult {
   const text = pdfPageText(filePath, page);
-  const expectTitle = side === "revenue" ? "歳入予算款別一覧" : "歳出予算款別一覧";
-  if (!text.replace(/\s/g, "").includes(expectTitle)) {
+  if (!text.replace(/\s/g, "").includes(side === "revenue" ? "歳入予算款別一覧" : "歳出予算款別一覧")) {
+    const expectTitle = side === "revenue" ? "歳入予算款別一覧" : "歳出予算款別一覧";
     throw new Error(
       `${filename} p.${page}: 「${expectTitle}」の見出しがありません。ページ構成が変わった可能性があるので parserOptions のページ番号を確認してください。`,
     );
   }
   const totalLabel = side === "revenue" ? "歳入合計" : "歳出合計";
+  const prevBasis: "当初" | "補正後" = text.replace(/\s/g, "").includes("補正後予算額") ? "補正後" : "当初";
   const locator = { file: filename, page };
 
   const lines: BudgetLineFact[] = [];
   let total: number | null = null;
   let prevTotal: number | null = null;
+
+  // 款名が2行に折り返し、款番号が単独行になるレイアウト（R2・R3 の一覧表）に
+  // 対応するため、完結しない行の断片を空行まで持ち越して1款に組み立てる
+  let pendNo: number | null = null;
+  let pendName = "";
+  const reset = () => {
+    pendNo = null;
+    pendName = "";
+  };
+  const emit = (kanNo: number, name: string, ints: string[], raw: string) => {
+    if (!name) return;
+    if (ints.length < 2) {
+      throw new Error(`${filename} p.${page}: 款行の金額列を解釈できません: ${raw.trim()}`);
+    }
+    lines.push({
+      side,
+      kanNo,
+      kanName: name,
+      amount: toAmount(ints[0]!),
+      prevAmount: toAmount(ints[1]!),
+      locator,
+    });
+    reset();
+  };
+
   for (const raw of text.split("\n")) {
-    const tokens = raw.match(/△?[\d,]+(?:\.\d+)?/g) ?? [];
     const compact = raw.replace(/[\s　]/g, "");
-
-    const [t0, t1, t2] = tokens;
-
+    if (compact === "") {
+      reset(); // 行間の空行で断片を破棄（款は空行を挟まず連続する）
+      continue;
+    }
     if (compact.includes(totalLabel)) {
+      const tokens = raw.match(/△?[\d,]+(?:\.\d+)?/g) ?? [];
+      const [t0, t1] = tokens;
       if (t0 == null || t1 == null || t0.includes(".")) {
         throw new Error(`${filename} p.${page}: 合計行を解釈できません: ${raw.trim()}`);
       }
       total = toAmount(t0);
       prevTotal = t1.includes(".") ? null : toAmount(t1);
+      reset();
+      continue;
+    }
+    if (KAN_HEADER_RE.test(compact)) continue; // 表ヘッダ・タイトル・注記
+
+    // 款番号の単独行（折返し款の中間行）
+    const bare = compact.match(/^(\d+)$/);
+    if (bare) {
+      if (pendNo == null) pendNo = Number(bare[1]);
       continue;
     }
 
-    // 款行: 行頭が款番号で、数値トークンが [款番号, 当年度, 前年度, …]
-    if (!/^\s*\d+\s/.test(raw) || t0 == null || t1 == null || t2 == null) continue;
-    if (t1.includes(".") || t2.includes(".")) {
-      throw new Error(`${filename} p.${page}: 款行の金額列を解釈できません: ${raw.trim()}`);
+    const lead = raw.match(/^\s*(\d+)\s/); // 行頭の款番号
+    const rest = lead ? raw.slice(raw.indexOf(lead[1]!) + lead[1]!.length) : raw;
+    const tokens = rest.match(/△?[\d,]+(?:\.\d+)?/g) ?? [];
+    const ints = tokens.filter((t) => !t.includes("."));
+    const namePart = (tokens[0] != null ? rest.slice(0, rest.indexOf(tokens[0])) : rest)
+      .replace(/[\s　]/g, "");
+
+    if (lead && ints.length >= 2) {
+      // 完結した款行（従来形式）。直前の折返し断片があれば款名の先頭に足す
+      emit(Number(lead[1]), pendName + namePart, ints, raw);
+    } else if (tokens.length === 0) {
+      // 金額のない款名断片（折返しの上段/下段）
+      pendName += namePart;
+    } else if (pendNo != null && ints.length >= 2) {
+      // 折返し款の金額行（行頭に款番号がない）
+      emit(pendNo, pendName + namePart, ints, raw);
     }
-    const kanNo = Number(t0);
-    // 款名 = 款番号の直後から当年度額の手前まで（字間スペースを除去）
-    const afterNo = raw.slice(raw.indexOf(t0) + t0.length);
-    const name = afterNo.slice(0, afterNo.indexOf(t1)).replace(/[\s　]/g, "");
-    if (!name) continue; // ページ番号などの数値だけの行
-    lines.push({
-      side,
-      kanNo,
-      kanName: name,
-      amount: toAmount(t1),
-      prevAmount: toAmount(t2),
-      locator,
-    });
+    // 上記以外（ページ番号など）は無視
   }
 
   if (lines.length === 0) throw new Error(`${filename} p.${page}: 款行が1件も抽出できませんでした`);
   if (total == null) throw new Error(`${filename} p.${page}: ${totalLabel} 行が見つかりません`);
-  return { lines, total, prevTotal };
+  return { lines, total, prevTotal, prevBasis };
 }
 
 // ---- 主な事業一覧（p.14-23 想定）のレイアウト抽出 -----------------------------
@@ -308,6 +359,104 @@ function parseProjectPages(
   return projects;
 }
 
+// ---- 主な事業（箇条書き形式・R2/R3） ------------------------------------------
+// 「● 事業名 … N億M万円」の箇条書き。★（新規）・◆（繰越等）の補足行が続くことがある。
+// 「基本目標 N 見出し」「施策の柱 見出し」「基本構想の推進」で章立てされる。
+// 款・掲載番号・予算書名の記載は無い（kan / no / budgetBookName は null）。
+// 字間スペース入りのため、行は空白を全除去してから解釈する。
+function parseProjectBullets(
+  filePath: string,
+  filename: string,
+  from: number,
+  to: number,
+): BudgetProjectFact[] {
+  // 補足行はエントリより後の行に現れるため、いったん desc 配列に溜めて最後に結合する
+  const drafts: { fact: Omit<BudgetProjectFact, "description">; desc: string[] }[] = [];
+  let basicGoal = "";
+  let basicGoalLabel = "";
+  let shisaku = "";
+  // 直近のエントリ（補足行の追記先）
+  let curDesc: string[] | null = null;
+
+  // "2億9,307万円" → 千円
+  const toThousandYen = (s: string): number => {
+    const m = s.match(/^(?:([\d,]+)億)?(?:([\d,]+)万)?円$/);
+    if (!m || (m[1] == null && m[2] == null)) throw new Error(`${filename}: 金額を解釈できません: ${s}`);
+    const oku = m[1] ? Number(m[1].replace(/,/g, "")) : 0;
+    const man = m[2] ? Number(m[2].replace(/,/g, "")) : 0;
+    return oku * 100_000 + man * 10;
+  };
+
+  for (let page = from; page <= to; page++) {
+    const text = pdfPageText(filePath, page);
+    for (const raw of text.split("\n")) {
+      const compact = raw.replace(/[\s　]/g, "");
+      if (compact === "") continue;
+
+      // 章見出し
+      const goalM = compact.match(/^基本目標(\d)(.*)$/);
+      if (goalM) {
+        basicGoal = `基本目標${goalM[1]}`;
+        basicGoalLabel = goalM[2] ?? "";
+        shisaku = "";
+        curDesc = null;
+        continue;
+      }
+      if (/^基本構想の推進/.test(compact)) {
+        basicGoal = "基本構想の推進";
+        basicGoalLabel = "";
+        shisaku = "";
+        curDesc = null;
+        continue;
+      }
+      const shisakuM = compact.match(/^施策の柱(.*)$/);
+      if (shisakuM) {
+        shisaku = shisakuM[1] ?? "";
+        curDesc = null;
+        continue;
+      }
+
+      const marker = compact[0];
+      const isBullet = marker === "●" || marker === "◆" || marker === "★";
+      const body = isBullet ? compact.slice(1) : compact;
+
+      // エントリ行: 「事業名…金額円」
+      const entryM = isBullet ? body.match(/^(.+?)…((?:[\d,]+億)?(?:[\d,]+万)?円)/) : null;
+      if (entryM) {
+        if (!basicGoal) throw new Error(`${filename} p.${page}: 章見出しの前に事業行が現れました: ${compact}`);
+        const desc: string[] = [];
+        drafts.push({
+          fact: {
+            kan: null,
+            no: null,
+            kubun: marker === "◆" ? "繰越" : null,
+            name: entryM[1]!,
+            budgetBookName: null,
+            amount: toThousandYen(entryM[2]!),
+            basicGoal,
+            ...(basicGoalLabel ? { basicGoalLabel } : {}),
+            shisaku,
+            locator: { file: filename, page },
+          },
+          desc,
+        });
+        curDesc = desc;
+        continue;
+      }
+
+      // 補足行（★/◆ で始まる金額なし行）または直前行の折返し
+      if (curDesc != null) {
+        if (isBullet) curDesc.push(compact);
+        else if (curDesc.length > 0) curDesc[curDesc.length - 1] += compact;
+        // エントリ直後の無印行（見出し前の前文など）は curDesc が空なら無視
+      }
+    }
+  }
+
+  if (drafts.length === 0) throw new Error(`${filename}: 主な事業が1件も抽出できませんでした`);
+  return drafts.map(({ fact, desc }) => ({ ...fact, description: desc.join("／") }));
+}
+
 export function parseKofuYosansho(
   files: { path: string; filename: string }[],
   source: SourceEntry,
@@ -320,16 +469,32 @@ export function parseKofuYosansho(
       `${source.id}: parserOptions.revenuePage / expenditurePage（款別一覧の PDF ページ番号）が必要です`,
     );
   }
-  // 予算資料 PDF は1ファイル想定（複数登録されていたら先頭を使う前提にせずエラー）
-  if (files.length !== 1) {
-    throw new Error(`${source.id}: 予算資料 PDF は1ファイルを想定しています（現在 ${files.length} 件）`);
-  }
-  const [file] = files;
+  // 単一ファイル形式（R6〜）または分冊形式（R2・R3: kanFile / projectsFile を指定）
+  const pick = (name: string | undefined, role: string) => {
+    if (name == null) {
+      if (files.length !== 1) {
+        throw new Error(
+          `${source.id}: ファイルが ${files.length} 件あります。分冊形式なら parserOptions.kanFile / projectsFile で${role}のファイル名を指定してください`,
+        );
+      }
+      return files[0]!;
+    }
+    const f = files.find((x) => x.filename === name);
+    if (!f) throw new Error(`${source.id}: ${role}のファイル ${name} が raw にありません`);
+    return f;
+  };
+  const kanFile = pick(opts.kanFile, "款別一覧");
+  const projFile = pick(opts.projectsFile, "主な事業");
 
-  const rev = parseKanPage(file.path, file.filename, revenuePage, "revenue");
-  const exp = parseKanPage(file.path, file.filename, expenditurePage, "expenditure");
+  const rev = parseKanPage(kanFile.path, kanFile.filename, revenuePage, "revenue");
+  const exp = parseKanPage(kanFile.path, kanFile.filename, expenditurePage, "expenditure");
+  if (rev.prevBasis !== exp.prevBasis) {
+    throw new Error(`${source.id}: 歳入と歳出で前年度列の基準が違います（${rev.prevBasis} / ${exp.prevBasis}）`);
+  }
   const projects = opts.projectPages
-    ? parseProjectPages(file.path, file.filename, opts.projectPages.from, opts.projectPages.to)
+    ? (opts.projectFormat ?? "table") === "bullets"
+      ? parseProjectBullets(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
+      : parseProjectPages(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
     : undefined;
 
   return {
@@ -345,6 +510,7 @@ export function parseKofuYosansho(
     expenditureTotal: exp.total,
     prevRevenueTotal: rev.prevTotal,
     prevExpenditureTotal: exp.prevTotal,
+    prevBasis: rev.prevBasis,
     facts: [...rev.lines, ...exp.lines],
     ...(projects ? { projects } : {}),
   };

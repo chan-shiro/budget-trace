@@ -36,7 +36,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
           </div>
 
           <footer data-mq-pad="" style={S("padding:18px 32px; border-top:1px solid #DFE7EC; font-size:12px; color:#5C6B77; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;")}>
-            <span>本サイトはプロトタイプです。掲載数値はすべて一次資料（甲府市 当初予算資料 令和6〜8年度・総務省 市町村別決算状況調）由来の実データです。</span>
+            <span>本サイトはプロトタイプです。掲載数値はすべて一次資料（甲府市 当初予算資料 令和2〜3・6〜8年度・総務省 市町村別決算状況調）由来の実データです。</span>
             <span style={S("font-family:'IBM Plex Mono',monospace;")}>v0.1 / 2026-07</span>
           </footer>
         </div>
@@ -47,7 +47,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
         <div data-screen-label="市区町村選択" data-mq-pad="" style={S("min-height:100vh; width:min(880px,100%); margin:0 auto; padding:28px 32px 64px; animation:fadeUp .35s ease both;")}>
           <HoverBox as="button" onClick={v.goTop} style={S("border:none; background:none; color:#5C6B77; font-size:13px; cursor:pointer; padding:0; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("color:#1798D0;")}>← 日本地図へ戻る</HoverBox>
           <h1 style={S("margin:18px 0 6px; font-size:32px; font-weight:700;")}>{v.muniPrefName}</h1>
-          <p style={S("margin:0 0 28px; color:#5C6B77; font-size:14px;")}>自治体を選択してください。現在の収録は甲府市（令和6〜8年度当初予算）のみです。</p>
+          <p style={S("margin:0 0 28px; color:#5C6B77; font-size:14px;")}>自治体を選択してください。現在の収録は甲府市（令和2〜3・6〜8年度当初予算）のみです。</p>
 
           <HoverBox as="button" onClick={v.prefAllOpen} style={S(`width:100%; text-align:left; display:flex; align-items:center; justify-content:space-between; gap:12px; background:${v.prefAllBg}; color:${v.prefAllFg}; border:1px solid ${v.prefAllBd}; border-radius:12px; padding:18px 22px; cursor:pointer; margin-bottom:22px; font-family:'IBM Plex Sans JP',sans-serif;`)} hoverStyle={S("border-color:#1798D0;")}>
             <span>
@@ -123,7 +123,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                   </div>
                   <div data-mq="ralign" style={S("text-align:right;")}>
                     <div style={S("font-family:'IBM Plex Mono',monospace; font-size:34px; font-weight:600; line-height:1.1;")}>{v.totalFmtAnim}</div>
-                    <div style={S("font-size:12.5px; color:#5C6B77;")}>対前年度 <span style={S("color:#0F76A3; font-weight:600;")}>{v.yoy}</span></div>
+                    <div style={S("font-size:12.5px; color:#5C6B77;")}>{v.yoyCaption} <span style={S("color:#0F76A3; font-weight:600;")}>{v.yoy}</span></div>
                     <div style={S("font-size:12px; color:#5C6B77; margin-top:3px;")}>{v.perCapitaLine}</div>
                   </div>
                 </div>
@@ -196,6 +196,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                       </div>
                     ))}
                   </div>
+                  {v.hasProjCoverage && (
                   <div style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; padding:14px 20px; margin-top:14px;")}>
                     <div style={S("display:flex; justify-content:space-between; gap:12px; font-size:12px; color:#5C6B77; margin-bottom:6px; flex-wrap:wrap;")}>
                       <span>事業単位のエビデンスあり <span style={S("font-family:'IBM Plex Mono',monospace; color:#14181C; font-weight:600;")}>{v.projCoverageCoveredFmt}</span>（総額の {v.projCoveragePct}%・{v.projCoverageCount}事業）</span>
@@ -206,6 +207,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                     </div>
                     <p style={S("margin:8px 0 0; font-size:11.5px; color:#5C6B77;")}>「主な事業一覧」に掲載された事業だけが内容・施策つきで説明されています。残りの予算は款別（一部は決算の項別）までの内訳です。</p>
                   </div>
+                  )}
                   <p style={S("margin:14px 2px 0; font-size:12px; color:#5C6B77;")}>
                     <a href={v.dashSourceUrl} target="_blank" rel="noopener noreferrer" style={S("color:#5C6B77;")}>{v.dashSourceLabel} ↗</a>
                   </p>
@@ -651,7 +653,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
 
           <footer data-mq-pad="" style={S("border-top:1px solid #DFE7EC; padding:16px 28px; font-size:12px; color:#5C6B77; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;")}>
             <span>予算トレース — プロトタイプ。掲載数値はすべて一次資料由来の実データです（項以下の内訳・補正・執行率は資料収録後に追加予定）。<button onClick={v.goSources} style={S("border:none; background:none; padding:0; margin-left:8px; color:#1798D0; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")}>データ出典・更新日一覧 →</button></span>
-            <span style={S("font-family:'IBM Plex Mono',monospace;")}>SOURCE: 甲府市 当初予算資料 R6–R8</span>
+            <span style={S("font-family:'IBM Plex Mono',monospace;")}>SOURCE: 甲府市 当初予算資料 R2–R3, R6–R8</span>
           </footer>
         </div>
       )}

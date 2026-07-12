@@ -1,0 +1,1198 @@
+{
+  "docType": "budget-book",
+  "sourceId": "kofu-yosansho-r3",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-07-12T10:44:47.307Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R3",
+  "account": "一般会計",
+  "revenueTotal": 75847788,
+  "expenditureTotal": 75847788,
+  "prevRevenueTotal": 74429982,
+  "prevExpenditureTotal": 74429982,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "市税",
+      "amount": 27070575,
+      "prevAmount": 29041162,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "地方譲与税",
+      "amount": 406285,
+      "prevAmount": 467426,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "利子割交付金",
+      "amount": 15892,
+      "prevAmount": 16440,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "配当割交付金",
+      "amount": 89949,
+      "prevAmount": 105494,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 115641,
+      "prevAmount": 74732,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "法人事業税交付金",
+      "amount": 323224,
+      "prevAmount": 190691,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "地方消費税交付金",
+      "amount": 4626147,
+      "prevAmount": 4996062,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "環境性能割交付金",
+      "amount": 28320,
+      "prevAmount": 46542,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "地方特例交付金",
+      "amount": 521710,
+      "prevAmount": 166361,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "地方交付税",
+      "amount": 9345578,
+      "prevAmount": 8921521,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 40829,
+      "prevAmount": 42135,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "分担金及び負担金",
+      "amount": 354898,
+      "prevAmount": 494591,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "使用料及び手数料",
+      "amount": 999555,
+      "prevAmount": 997819,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "国庫支出金",
+      "amount": 13481860,
+      "prevAmount": 12835029,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "県支出金",
+      "amount": 5936582,
+      "prevAmount": 6248574,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "財産収入",
+      "amount": 77557,
+      "prevAmount": 77621,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 17,
+      "kanName": "寄附金",
+      "amount": 1600001,
+      "prevAmount": 180001,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 18,
+      "kanName": "繰入金",
+      "amount": 605533,
+      "prevAmount": 1126555,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 19,
+      "kanName": "繰越金",
+      "amount": 1,
+      "prevAmount": 1,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 20,
+      "kanName": "諸収入",
+      "amount": 1563751,
+      "prevAmount": 2194825,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 21,
+      "kanName": "市債",
+      "amount": 8643900,
+      "prevAmount": 6206400,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 546668,
+      "prevAmount": 540579,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 8396910,
+      "prevAmount": 7074316,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "民生費",
+      "amount": 32967737,
+      "prevAmount": 33286133,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "衛生費",
+      "amount": 9649247,
+      "prevAmount": 9341515,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "労働費",
+      "amount": 209523,
+      "prevAmount": 244998,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "農林水産業費",
+      "amount": 918946,
+      "prevAmount": 802527,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "商工費",
+      "amount": 719518,
+      "prevAmount": 712955,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "土木費",
+      "amount": 4593486,
+      "prevAmount": 3849172,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "消防費",
+      "amount": 2222896,
+      "prevAmount": 2500875,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "教育費",
+      "amount": 5518790,
+      "prevAmount": 7124751,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 11,
+      "kanName": "災害復旧費",
+      "amount": 4,
+      "prevAmount": 4,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 12,
+      "kanName": "公債費",
+      "amount": 9948993,
+      "prevAmount": 8786563,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 13,
+      "kanName": "諸支出金",
+      "amount": 135070,
+      "prevAmount": 145594,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 14,
+      "kanName": "予備費",
+      "amount": 20000,
+      "prevAmount": 20000,
+      "locator": {
+        "file": "2r03ippankaikeisainyusaisyutu.pdf",
+        "page": 2
+      }
+    }
+  ],
+  "projects": [
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "放課後児童クラブ事業",
+      "budgetBookName": null,
+      "amount": 293070,
+      "description": "",
+      "basicGoal": "基本目標1",
+      "basicGoalLabel": "いきいきと輝く人を育むまちをつくる",
+      "shisaku": "次代を担う子どもたちを育む",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 1
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "教育・保育施設等運営給付事業",
+      "budgetBookName": null,
+      "amount": 6479800,
+      "description": "◆保育所・児童館などで購入した感染症対策物品への支援に係る経費",
+      "basicGoal": "基本目標1",
+      "basicGoalLabel": "いきいきと輝く人を育むまちをつくる",
+      "shisaku": "次代を担う子どもたちを育む",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 1
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "子ども運動遊び事業",
+      "budgetBookName": null,
+      "amount": 50670,
+      "description": "★「子ども屋内運動遊び場」の運営に係る経費など",
+      "basicGoal": "基本目標1",
+      "basicGoalLabel": "いきいきと輝く人を育むまちをつくる",
+      "shisaku": "次代を担う子どもたちを育む",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 1
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "サポートティーチャー事業（小・中学校）",
+      "budgetBookName": null,
+      "amount": 216080,
+      "description": "★学習指導員及びスクール・サポート・スタッフの配置に係る経費など",
+      "basicGoal": "基本目標1",
+      "basicGoalLabel": "いきいきと輝く人を育むまちをつくる",
+      "shisaku": "次代を担う子どもたちを育む",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 1
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "維持管理事業（小・中学校）",
+      "budgetBookName": null,
+      "amount": 688490,
+      "description": "★GIGAスクール構想の推進及び教員の多忙化改善に係る経費など",
+      "basicGoal": "基本目標1",
+      "basicGoalLabel": "いきいきと輝く人を育むまちをつくる",
+      "shisaku": "次代を担う子どもたちを育む",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 1
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "小中学校老朽化リニューアル事業",
+      "budgetBookName": null,
+      "amount": 60680,
+      "description": "◆千代田小学校及び東中学校のトイレ改修に係る経費",
+      "basicGoal": "基本目標1",
+      "basicGoalLabel": "いきいきと輝く人を育むまちをつくる",
+      "shisaku": "次代を担う子どもたちを育む",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 1
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "学校営繕事業（小・中学校）",
+      "budgetBookName": null,
+      "amount": 208060,
+      "description": "★石田小学校の校舎屋上防水改修及び富竹中学校の屋内運動場屋根防水改修に係る経費など／◆善誘館小学校の校庭整備に係る経費",
+      "basicGoal": "基本目標1",
+      "basicGoalLabel": "いきいきと輝く人を育むまちをつくる",
+      "shisaku": "次代を担う子どもたちを育む",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 1
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "繰越",
+      "name": "学校保健事業（小・中学校）",
+      "budgetBookName": null,
+      "amount": 145960,
+      "description": "",
+      "basicGoal": "基本目標1",
+      "basicGoalLabel": "いきいきと輝く人を育むまちをつくる",
+      "shisaku": "次代を担う子どもたちを育む",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 1
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "緑が丘スポーツ公園整備事業",
+      "budgetBookName": null,
+      "amount": 87400,
+      "description": "★◆テニスコート、野球場の解体等に係る経費など",
+      "basicGoal": "基本目標1",
+      "basicGoalLabel": "いきいきと輝く人を育むまちをつくる",
+      "shisaku": "心豊かで輝く人を育む",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 1
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "武田氏館跡歴史館管理運営事業",
+      "budgetBookName": null,
+      "amount": 30850,
+      "description": "◆信玄公生誕500年記念特別展の開催に係る経費など",
+      "basicGoal": "基本目標1",
+      "basicGoalLabel": "いきいきと輝く人を育むまちをつくる",
+      "shisaku": "心豊かで輝く人を育む",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 1
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "男女共同参画推進事業",
+      "budgetBookName": null,
+      "amount": 18400,
+      "description": "★「日本女性会議2021in甲府」の開催に係る経費など",
+      "basicGoal": "基本目標1",
+      "basicGoalLabel": "いきいきと輝く人を育むまちをつくる",
+      "shisaku": "心豊かで輝く人を育む",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 1
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "国際交流事業",
+      "budgetBookName": null,
+      "amount": 16420,
+      "description": "",
+      "basicGoal": "基本目標1",
+      "basicGoalLabel": "いきいきと輝く人を育むまちをつくる",
+      "shisaku": "心豊かで輝く人を育む",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 1
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "商工業推進事業",
+      "budgetBookName": null,
+      "amount": 61060,
+      "description": "◆がんばろう甲府！グリーン・ゾーン応援金等に係る経費など",
+      "basicGoal": "基本目標2",
+      "basicGoalLabel": "魅力があふれ人が集う活力あるまちをつくる",
+      "shisaku": "産業を振興する",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "産業立地等推進事業",
+      "budgetBookName": null,
+      "amount": 50770,
+      "description": "◆サテライトオフィス等の活用促進に係る経費など",
+      "basicGoal": "基本目標2",
+      "basicGoalLabel": "魅力があふれ人が集う活力あるまちをつくる",
+      "shisaku": "産業を振興する",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "農業経営基盤強化促進対策事業",
+      "budgetBookName": null,
+      "amount": 27380,
+      "description": "★農業体験及び新規就農者応援隊への支援に係る経費など",
+      "basicGoal": "基本目標2",
+      "basicGoalLabel": "魅力があふれ人が集う活力あるまちをつくる",
+      "shisaku": "産業を振興する",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "農政普及事業",
+      "budgetBookName": null,
+      "amount": 7050,
+      "description": "★収入保険に加入した農家等への助成に係る経費など",
+      "basicGoal": "基本目標2",
+      "basicGoalLabel": "魅力があふれ人が集う活力あるまちをつくる",
+      "shisaku": "産業を振興する",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "雇用促進対策事業",
+      "budgetBookName": null,
+      "amount": 21330,
+      "description": "★オンラインによる地場産業紹介事業及びインターンシップ受入支援事業に係る経費など",
+      "basicGoal": "基本目標2",
+      "basicGoalLabel": "魅力があふれ人が集う活力あるまちをつくる",
+      "shisaku": "産業を振興する",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "まつり推進事業",
+      "budgetBookName": null,
+      "amount": 25800,
+      "description": "",
+      "basicGoal": "基本目標2",
+      "basicGoalLabel": "魅力があふれ人が集う活力あるまちをつくる",
+      "shisaku": "交流と賑わいを創出する",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "観光開発事業",
+      "budgetBookName": null,
+      "amount": 28460,
+      "description": "★日本遺産に認定された「甲州の匠の源流・御嶽昇仙峡」の推進に係る経費など",
+      "basicGoal": "基本目標2",
+      "basicGoalLabel": "魅力があふれ人が集う活力あるまちをつくる",
+      "shisaku": "交流と賑わいを創出する",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "中心市街地商業等活性化事業",
+      "budgetBookName": null,
+      "amount": 12510,
+      "description": "★空き店舗のオーナーと連携した空き店舗活用事業に係る経費など",
+      "basicGoal": "基本目標2",
+      "basicGoalLabel": "魅力があふれ人が集う活力あるまちをつくる",
+      "shisaku": "交流と賑わいを創出する",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "甲府城周辺地域活性化計画整備事業",
+      "budgetBookName": null,
+      "amount": 433080,
+      "description": "",
+      "basicGoal": "基本目標2",
+      "basicGoalLabel": "魅力があふれ人が集う活力あるまちをつくる",
+      "shisaku": "交流と賑わいを創出する",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "防災対策整備事業",
+      "budgetBookName": null,
+      "amount": 47530,
+      "description": "★地域の水害避難マップ・わたしの避難行動計画（マイ・タイムライン）の配布に係る経費など",
+      "basicGoal": "基本目標3",
+      "basicGoalLabel": "安全で安心して健やかに暮らせるまちをつくる",
+      "shisaku": "安全な暮らしを守る",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "非常備消防事業",
+      "budgetBookName": null,
+      "amount": 244190,
+      "description": "",
+      "basicGoal": "基本目標3",
+      "basicGoalLabel": "安全で安心して健やかに暮らせるまちをつくる",
+      "shisaku": "安全な暮らしを守る",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "消費者啓発育成事業",
+      "budgetBookName": null,
+      "amount": 18870,
+      "description": "",
+      "basicGoal": "基本目標3",
+      "basicGoalLabel": "安全で安心して健やかに暮らせるまちをつくる",
+      "shisaku": "安全な暮らしを守る",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "水防費",
+      "budgetBookName": null,
+      "amount": 18430,
+      "description": "★洪水ハザードマップの更新に係る経費など",
+      "basicGoal": "基本目標3",
+      "basicGoalLabel": "安全で安心して健やかに暮らせるまちをつくる",
+      "shisaku": "安全な暮らしを守る",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "介護保険サービス事業",
+      "budgetBookName": null,
+      "amount": 978240,
+      "description": "",
+      "basicGoal": "基本目標3",
+      "basicGoalLabel": "安全で安心して健やかに暮らせるまちをつくる",
+      "shisaku": "健やかな暮らしを支える",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "重度心身障害者医療費助成事業",
+      "budgetBookName": null,
+      "amount": 662630,
+      "description": "",
+      "basicGoal": "基本目標3",
+      "basicGoalLabel": "安全で安心して健やかに暮らせるまちをつくる",
+      "shisaku": "健やかな暮らしを支える",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "自立支援サービス事業",
+      "budgetBookName": null,
+      "amount": 3892480,
+      "description": "",
+      "basicGoal": "基本目標3",
+      "basicGoalLabel": "安全で安心して健やかに暮らせるまちをつくる",
+      "shisaku": "健やかな暮らしを支える",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "障害者のすみよいまちづくり事業",
+      "budgetBookName": null,
+      "amount": 12580,
+      "description": "★重度心身障害者タクシー利用料金助成の拡充に係る経費など",
+      "basicGoal": "基本目標3",
+      "basicGoalLabel": "安全で安心して健やかに暮らせるまちをつくる",
+      "shisaku": "健やかな暮らしを支える",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "生活保護関係事業",
+      "budgetBookName": null,
+      "amount": 5085810,
+      "description": "",
+      "basicGoal": "基本目標3",
+      "basicGoalLabel": "安全で安心して健やかに暮らせるまちをつくる",
+      "shisaku": "健やかな暮らしを支える",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "健康政策推進事業",
+      "budgetBookName": null,
+      "amount": 11990,
+      "description": "★健康ポイント事業、健康リーダー養成事業に係る経費など",
+      "basicGoal": "基本目標3",
+      "basicGoalLabel": "安全で安心して健やかに暮らせるまちをつくる",
+      "shisaku": "健やかな暮らしを支える",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "各種予防事業",
+      "budgetBookName": null,
+      "amount": 1373630,
+      "description": "◆新型コロナウイルスワクチン接種及び各種予防接種に係る経費など",
+      "basicGoal": "基本目標3",
+      "basicGoalLabel": "安全で安心して健やかに暮らせるまちをつくる",
+      "shisaku": "健やかな暮らしを支える",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "母子保健事業",
+      "budgetBookName": null,
+      "amount": 311620,
+      "description": "★◆妊婦健診費用の助成拡充及び特定不妊治療費の助成に係る経費など",
+      "basicGoal": "基本目標3",
+      "basicGoalLabel": "安全で安心して健やかに暮らせるまちをつくる",
+      "shisaku": "健やかな暮らしを支える",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "感染症対策事業",
+      "budgetBookName": null,
+      "amount": 347460,
+      "description": "",
+      "basicGoal": "基本目標3",
+      "basicGoalLabel": "安全で安心して健やかに暮らせるまちをつくる",
+      "shisaku": "健やかな暮らしを支える",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "遊亀公園・附属動物園整備事業",
+      "budgetBookName": null,
+      "amount": 227970,
+      "description": "",
+      "basicGoal": "基本目標4",
+      "basicGoalLabel": "自然と都市機能が調和する快適なまちをつくる",
+      "shisaku": "豊かな自然と良好な生活環境を確保する",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "ごみ減量と資源リサイクル事業",
+      "budgetBookName": null,
+      "amount": 384520,
+      "description": "★生ごみ処理器の普及や食品ロス削減を目的とした市内飲食業者への持ち帰り用容器の普及に係る経費など",
+      "basicGoal": "基本目標4",
+      "basicGoalLabel": "自然と都市機能が調和する快適なまちをつくる",
+      "shisaku": "豊かな自然と良好な生活環境を確保する",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "一般廃棄物処理事業",
+      "budgetBookName": null,
+      "amount": 748130,
+      "description": "★し尿等の処理に係る中巨摩地区広域事務組合への負担金など",
+      "basicGoal": "基本目標4",
+      "basicGoalLabel": "自然と都市機能が調和する快適なまちをつくる",
+      "shisaku": "豊かな自然と良好な生活環境を確保する",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "空家等対策推進事業",
+      "budgetBookName": null,
+      "amount": 33350,
+      "description": "",
+      "basicGoal": "基本目標4",
+      "basicGoalLabel": "自然と都市機能が調和する快適なまちをつくる",
+      "shisaku": "豊かな自然と良好な生活環境を確保する",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "動物愛護事業",
+      "budgetBookName": null,
+      "amount": 18680,
+      "description": "",
+      "basicGoal": "基本目標4",
+      "basicGoalLabel": "自然と都市機能が調和する快適なまちをつくる",
+      "shisaku": "豊かな自然と良好な生活環境を確保する",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "在来鉄道の利便性向上事業",
+      "budgetBookName": null,
+      "amount": 11200,
+      "description": "",
+      "basicGoal": "基本目標4",
+      "basicGoalLabel": "自然と都市機能が調和する快適なまちをつくる",
+      "shisaku": "都市基盤の利便性を高める",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "◆国玉通り線整備事業",
+      "budgetBookName": null,
+      "amount": 155000,
+      "description": "",
+      "basicGoal": "基本目標4",
+      "basicGoalLabel": "自然と都市機能が調和する快適なまちをつくる",
+      "shisaku": "都市基盤の利便性を高める",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "城東三丁目敷島線整備事業",
+      "budgetBookName": null,
+      "amount": 25000,
+      "description": "",
+      "basicGoal": "基本目標4",
+      "basicGoalLabel": "自然と都市機能が調和する快適なまちをつくる",
+      "shisaku": "都市基盤の利便性を高める",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "和戸町竜王線整備事業",
+      "budgetBookName": null,
+      "amount": 346250,
+      "description": "",
+      "basicGoal": "基本目標4",
+      "basicGoalLabel": "自然と都市機能が調和する快適なまちをつくる",
+      "shisaku": "都市基盤の利便性を高める",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "甲府駅周辺土地区画整理事業",
+      "budgetBookName": null,
+      "amount": 473590,
+      "description": "",
+      "basicGoal": "基本目標4",
+      "basicGoalLabel": "自然と都市機能が調和する快適なまちをつくる",
+      "shisaku": "都市基盤の利便性を高める",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "協働づくり推進事業",
+      "budgetBookName": null,
+      "amount": 20240,
+      "description": "",
+      "basicGoal": "基本構想の推進",
+      "shisaku": "",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "悠遊館等施設管理費",
+      "budgetBookName": null,
+      "amount": 51830,
+      "description": "★トイレの洋式化等の改修に係る経費など",
+      "basicGoal": "基本構想の推進",
+      "shisaku": "",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "広報推進事業",
+      "budgetBookName": null,
+      "amount": 60870,
+      "description": "★「甲府市の歌」普及のための収録等に係る経費など",
+      "basicGoal": "基本構想の推進",
+      "shisaku": "",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "連携推進事業",
+      "budgetBookName": null,
+      "amount": 72110,
+      "description": "★連携中枢都市圏構想の推進に係る経費など",
+      "basicGoal": "基本構想の推進",
+      "shisaku": "",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "こうふ開府500年記念事業",
+      "budgetBookName": null,
+      "amount": 40470,
+      "description": "",
+      "basicGoal": "基本構想の推進",
+      "shisaku": "",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "シティプロモーション事業",
+      "budgetBookName": null,
+      "amount": 11290,
+      "description": "★LINEを活用した市政情報の発信及びホームページでの動画配信に係る経費など",
+      "basicGoal": "基本構想の推進",
+      "shisaku": "",
+      "locator": {
+        "file": "3r03omonajigyo_3.pdf",
+        "page": 3
+      }
+    }
+  ]
+}
