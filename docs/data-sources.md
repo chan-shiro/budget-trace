@@ -100,6 +100,21 @@
 
 ---
 
+## 発見済み・未登録の候補（ウェブ検索による偵察）
+
+類似4市の予算資料の所在（2026-07-12 検索）。**公開の深さに差がある**ことが判明 —
+和泉・豊川は予算書本編（款項目節）まで公開しており、甲府（款別資料のみ）より深い。
+
+| 自治体 | 資料 | URL | 備考 |
+| --- | --- | --- | --- |
+| 和泉市 | **予算書本編**（一般会計・特別会計） | https://www.city.osaka-izumi.lg.jp/material/files/group/18/07_R8_zenpen.pdf | 款項目節の本物。概要ページ: /kakukano/soumubu/zaiseika/gyoumu/yosan.html |
+| 豊川市 | **予算書＋一般会計予算説明書** | https://www.city.toyokawa.lg.jp/material/files/group/51/r8-ippankaikei-yosansetsumeisyo.pdf | 説明書に事業レベルの記載見込み。状況ページ: /soshiki/zaimu/zaisei/2/1/1/3/28608.html |
+| 山口市 | 当初予算資料（甲府と同型） | https://www.city.yamaguchi.lg.jp/uploaded/attachment/117924.pdf | 「施策別主要事業」あり。財政課: /soshiki/15/ |
+| 沼津市 | 予算の概要（年度ページ型） | https://city.numazu.shizuoka.jp/shisei/gyozaisei/finance/yosan2025/index.htm （R7） | R8 は `yosan2026` の想定・要確認。財政事情ページも同サイトに有り |
+
+→ 次の一手: 和泉市の予算書本編で「款項目節パーサ」を設計するのが最も価値が高い
+（本編テンプレートが確立すれば、甲府にも情報公開請求等で同型データを適用できる）。
+
 ## 未収録（今後の候補）
 
 | 欲しいデータ | 想定資料 | 状況 |
