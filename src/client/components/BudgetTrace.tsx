@@ -28,8 +28,12 @@ interface St {
   budgetFy?: string;
   /** 一次資料ドロワー（自サーバー配信の原本コピーをその場でレビュー） */
   viewer?: {
-    /** 自サーバーのコピー URL（/sources/...。#page=N 可） */
+    /** 自サーバーのコピー URL（/sources/...。フラグメントなし） */
     url: string;
+    /** 初期表示ページ（1-origin） */
+    page: number;
+    /** 「新しいタブで開く」用 URL（#page=N 付き） */
+    tabUrl: string;
     title: string;
     /** 位置・来歴の補足（例: "主な事業一覧 p.17"） */
     sub: string;
@@ -76,7 +80,11 @@ export default function BudgetTrace() {
   };
 
   // --- 一次資料ドロワー ---
-  const openViewer = (viewer: NonNullable<St["viewer"]>) => setSt({ viewer });
+  // 呼び出し側は #page=N 付き URL を渡してよい（ここで分離して PDF.js ビューアへ渡す）
+  const openViewer = (p: Omit<NonNullable<St["viewer"]>, "page" | "tabUrl">) => {
+    const m = p.url.match(/^([^#]*)(?:#page=(\d+))?$/);
+    setSt({ viewer: { ...p, url: m?.[1] ?? p.url, page: m?.[2] ? Number(m[2]) : 1, tabUrl: p.url } });
+  };
   const closeViewer = () => setSt({ viewer: null });
   const viewerOpen = !!st.viewer;
   React.useEffect(() => {

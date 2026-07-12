@@ -25,3 +25,12 @@ if (existsSync(RAW_DIR)) {
   }
 }
 console.log(`✓ 一次資料 PDF を public/sources へ同期（${count} ファイル）`);
+
+// PDF.js のワーカーも public へ同梱する（ドロワーの PDF ビューア用。
+// iframe のブラウザ内蔵ビューアは Safari で1ページ目しか描画されないため、
+// PDF.js でアプリ内描画する。CDN からはフェッチしない — オフライン方針）
+const WORKER_SRC = join(process.cwd(), "node_modules", "pdfjs-dist", "build", "pdf.worker.min.mjs");
+const WORKER_OUT = join(process.cwd(), "public", "vendor", "pdf.worker.min.mjs");
+mkdirSync(join(process.cwd(), "public", "vendor"), { recursive: true });
+copyFileSync(WORKER_SRC, WORKER_OUT);
+console.log("✓ PDF.js ワーカーを public/vendor へ同期");
