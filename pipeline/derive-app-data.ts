@@ -571,61 +571,94 @@ export const KOFU_R6_DETAIL: {
 }
 
 // ============================================================================
-// 甲府市 R7 予算執行状況（財政事情の公表）→ src/client/lib/execution.gen.ts
+// 甲府市 予算執行状況（複数年度）→ src/client/lib/execution.gen.ts
+// R7 = 財政事情の公表（出納整理期間前の速報）。R6〜R1 = 決算状況の収入支出詳細
+// （出納整理後の確定値）。R3 は資料が市サイトから削除済みで入手不可（欠落）。
 // ============================================================================
-const EXEC_SOURCE_ID = "kofu-zaisei-jokyo-r7";
-const execValidation = validationResultSchema.parse(readJson(validationPath(EXEC_SOURCE_ID)));
-if (execValidation.status !== "ok") {
-  throw new Error(`${EXEC_SOURCE_ID}: 検証が ${execValidation.status} のため derive しません`);
-}
-const execDoc = anyParsedDocSchema.parse(readJson(parsedPath(EXEC_SOURCE_ID)));
-if (execDoc.docType !== "budget-execution") {
-  throw new Error(`${EXEC_SOURCE_ID}: budget-execution ドキュメントではありません`);
-}
-const execMeta = readRawMeta(EXEC_SOURCE_ID);
-if (!execMeta) throw new Error(`${EXEC_SOURCE_ID}: raw-meta がありません（先に pipeline:fetch）`);
-const execSource = findSource(EXEC_SOURCE_ID);
-const execFile = execMeta.files[0]!;
-const execUrl = execSource.urls?.[0] ?? execSource.landingPage ?? "";
+const EXEC_YEARS = [
+  { srcId: "kofu-zaisei-jokyo-r7", fy: "R7" },
+  { srcId: "kofu-kessan-syousai-r6", fy: "R6" },
+  { srcId: "kofu-kessan-syousai-r5", fy: "R5" },
+  { srcId: "kofu-kessan-syousai-r4", fy: "R4" },
+  // R3 は欠落（決算状況ページが削除済み・Wayback にも無い）
+  { srcId: "kofu-kessan-syousai-r2", fy: "R2" },
+  { srcId: "kofu-kessan-syousai-r1", fy: "R1" },
+] as const;
 
-const execRow = (f: (typeof execDoc.facts)[number]) => ({
-  name: f.name,
-  budgetOku: toOku(f.currentBudget),
-  settledOku: toOku(f.settled),
-  ratePct: f.ratePct,
-  ref: `${execFile.filename}#p${f.locator.page}`,
-  refLabel: `財政事情 p.${f.locator.page}`,
-});
-const kofuExecution = {
-  fyLabel: `令和7年度（${execDoc.asOf}）`,
-  asOf: execDoc.asOf,
-  asOfNote: "出納整理期間前の年度末速報値。予算現額は補正・繰越を含むため当初予算とは一致しません",
-  population: execDoc.population,
-  revenueBudgetTotalOku: toOku(execDoc.revenueBudgetTotal),
-  revenueSettledTotalOku: toOku(execDoc.revenueSettledTotal),
-  expenditureBudgetTotalOku: toOku(execDoc.expenditureBudgetTotal),
-  expenditureSettledTotalOku: toOku(execDoc.expenditureSettledTotal),
-  revenue: execDoc.facts.filter((f) => f.side === "revenue").map(execRow),
-  expenditure: execDoc.facts.filter((f) => f.side === "expenditure").map(execRow),
-  sourceTitle: execSource.title,
-  // リンクは Wayback コピー（この資料は同一 URL 上書き型なのでコピーが特に重要）
-  sourceUrl: wayback(execUrl),
-  originUrl: execUrl,
-  sourceLocalUrl: `/sources/${EXEC_SOURCE_ID}/${execFile.filename}`,
-  evidence: [
-    {
-      title: execSource.title,
-      type: "PDF",
-      url: wayback(execUrl),
-      localUrl: `/sources/${EXEC_SOURCE_ID}/${execFile.filename}`,
-      source: execUrl ? new URL(execUrl).hostname : "",
-      thumb: `${execFile.filename} ・ sha256 ${execFile.sha256.slice(0, 16)}… ・ ${execFile.fetchedAt.slice(0, 10)} 取得`,
-    },
-  ],
-};
+function buildExecYear(entry: (typeof EXEC_YEARS)[number]) {
+  const { srcId, fy } = entry;
+  const validation = validationResultSchema.parse(readJson(validationPath(srcId)));
+  if (validation.status !== "ok") {
+    throw new Error(`${srcId}: 検証が ${validation.status} のため derive しません`);
+  }
+  const doc = anyParsedDocSchema.parse(readJson(parsedPath(srcId)));
+  if (doc.docType !== "budget-execution") {
+    throw new Error(`${srcId}: budget-execution ドキュメントではありません`);
+  }
+  const meta = readRawMeta(srcId);
+  if (!meta) throw new Error(`${srcId}: raw-meta がありません（先に pipeline:fetch）`);
+  const source = findSource(srcId);
+  const file = meta.files[0]!;
+  const url = source.urls?.[0] ?? source.landingPage ?? "";
+  const isFinal = doc.basis === "確定";
+  const refLabelBase = isFinal ? "決算状況 収入支出詳細" : "財政事情";
+
+  const row = (f: (typeof doc.facts)[number]) => ({
+    name: f.name,
+    budgetOku: toOku(f.currentBudget),
+    settledOku: toOku(f.settled),
+    ratePct: f.ratePct,
+    ref: `${file.filename}#${f.locator.page != null ? `p${f.locator.page}` : `row${f.locator.row}`}`,
+    refLabel: f.locator.page != null ? `${refLabelBase} p.${f.locator.page}` : `${refLabelBase} ${f.locator.row}行目`,
+    // 市税などの内訳（予算現額のみの記載）
+    ...(f.breakdown
+      ? { breakdownNote: f.breakdown.map((b) => `${b.name} ${fmtBreakdownOku(b.currentBudget)}`).join("・") }
+      : {}),
+  });
+  return {
+    fy,
+    basis: doc.basis,
+    fyLabel: isFinal ? `令和${fy.slice(1)}年度（決算・確定値）` : `令和${fy.slice(1)}年度（${doc.asOf}）`,
+    asOf: doc.asOf,
+    asOfNote: isFinal
+      ? "出納整理後の決算確定値。予算現額は補正・繰越を含むため当初予算とは一致しません"
+      : "出納整理期間前の年度末速報値。予算現額は補正・繰越を含むため当初予算とは一致しません",
+    population: doc.population,
+    revenueBudgetTotalOku: toOku(doc.revenueBudgetTotal),
+    revenueSettledTotalOku: toOku(doc.revenueSettledTotal),
+    expenditureBudgetTotalOku: toOku(doc.expenditureBudgetTotal),
+    expenditureSettledTotalOku: toOku(doc.expenditureSettledTotal),
+    revenue: doc.facts.filter((f) => f.side === "revenue").map(row),
+    expenditure: doc.facts.filter((f) => f.side === "expenditure").map(row),
+    sourceTitle: source.title,
+    // リンクは Wayback コピー優先（HTML ページ・上書き型 PDF とも版の固定が要る）
+    sourceUrl: wayback(url),
+    originUrl: url,
+    // PDF のみ自サーバー配信（HTML ページはドロワー対象外 → 空文字）
+    sourceLocalUrl: file.filename.toLowerCase().endsWith(".pdf") ? `/sources/${srcId}/${file.filename}` : "",
+    evidence: [
+      {
+        title: source.title,
+        type: file.filename.toLowerCase().endsWith(".pdf") ? "PDF" : "Web",
+        url: wayback(url),
+        localUrl: file.filename.toLowerCase().endsWith(".pdf") ? `/sources/${srcId}/${file.filename}` : "",
+        source: url ? new URL(url).hostname : "",
+        thumb: `${file.filename} ・ sha256 ${file.sha256.slice(0, 16)}… ・ ${file.fetchedAt.slice(0, 10)} 取得`,
+      },
+    ],
+  };
+}
+// 内訳表示用の簡易整形（億円1桁。fmtOku 相当は gen 後の値なのでここで整形して埋め込む）
+function fmtBreakdownOku(thousandYen: number): string {
+  const oku = thousandYen / 100_000;
+  return oku >= 1 ? `${oku >= 100 ? Math.round(oku).toLocaleString() : oku.toFixed(1)}億円` : `${Math.round(oku * 10000).toLocaleString()}万円`;
+}
+
+const execYears = EXEC_YEARS.map(buildExecYear);
+
 const execOut = `// このファイルは自動生成です。手で編集しないこと。
 // 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
-// 出典: ${execSource.title}（${execFile.filename} sha256=${execFile.sha256.slice(0, 16)}…）
+// 出典: 甲府市 財政事情の公表（R7・速報）／決算状況 収入支出詳細（R6〜R1・確定。R3 は資料消失により欠落）
 // 金額は億円（資料の万円値を千円経由で変換した正確値）。率は資料記載値
 
 export interface KofuExecRow {
@@ -638,9 +671,15 @@ export interface KofuExecRow {
   ratePct: number | null;
   ref: string;
   refLabel: string;
+  /** 内訳（市税の税目別予算現額など。確定値ページのみ） */
+  breakdownNote?: string;
 }
 
-export const KOFU_EXECUTION: {
+export interface KofuExecutionYear {
+  /** 年度（"R7" など） */
+  fy: string;
+  /** 済額の基準（速報 = 出納整理前 / 確定 = 決算値） */
+  basis: "速報" | "確定";
   fyLabel: string;
   asOf: string;
   asOfNote: string;
@@ -656,16 +695,22 @@ export const KOFU_EXECUTION: {
   sourceUrl: string;
   /** 発行元の元 URL */
   originUrl: string;
-  /** 自サーバー配信の原本コピー（ドロワー用） */
+  /** 自サーバー配信の原本コピー（PDF のみ。HTML ページは空文字） */
   sourceLocalUrl: string;
   evidence: { title: string; type: string; url: string; localUrl: string; source: string; thumb: string }[];
-} = ${JSON.stringify(kofuExecution, null, 2)};
+}
+
+/** 収録済みの執行状況（新しい年度順。R3 は資料消失により欠落） */
+export const KOFU_EXECUTION_YEARS: KofuExecutionYear[] = ${JSON.stringify(execYears, null, 2)};
+
+/** 最新年度（互換用） */
+export const KOFU_EXECUTION: KofuExecutionYear = KOFU_EXECUTION_YEARS[0]!;
 `;
 writeFileSync(join(process.cwd(), "src/client/lib/execution.gen.ts"), execOut, "utf8");
 console.log(
-  `✓ R7 予算執行状況を導出 → src/client/lib/execution.gen.ts（歳出執行率 ${(
-    (execDoc.expenditureSettledTotal / execDoc.expenditureBudgetTotal) * 100
-  ).toFixed(1)}%）`,
+  `✓ 予算執行状況を導出 → src/client/lib/execution.gen.ts（${execYears
+    .map((y) => `${y.fy}:${((y.expenditureSettledTotalOku / y.expenditureBudgetTotalOku) * 100).toFixed(1)}%${y.basis === "速報" ? "*" : ""}`)
+    .join(" / ")}）`,
 );
 
 // ---- 主な事業一覧（複数年度）→ src/client/lib/projects.gen.ts ----------------

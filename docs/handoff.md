@@ -85,6 +85,12 @@ Claude Design のプロトタイプ（`project/予算トレース.dc.html`）を
   政策テーマは R8=第七次総合計画（ひと/まち/魅力）、R7・R6=第六次（基本目標1〜4・基本構想の推進）。
   **R5・R4 の資料は市サイトから削除済みで Wayback にも無く入手不可**（未収録）。
   R3・R2 は分冊形式で現存（未収録・対応可能）
+- **過去の執行は確定値で収録済み（R1〜R6・R3欠落）**: 決算状況「収入支出詳細」HTML
+  （新パーサ kofu-kessan-syousai・万円→千円・市税内訳は breakdown）。予算執行状況タブは
+  年度ピルで R7（財政事情・速報）と R1〜R6（確定）を切替。決算推移テーブルに歳出執行率
+  （確定）行あり。総務省決算とのクロスチェックで +0.6〜3.5% の系統差（一般会計単純計 vs
+  普通会計純計 — 説明可能）を確認・記録（data-sources.md §4）。
+  R3 は決算状況ページごと消失（Wayback にも無い）— HTML ページも取得後すぐ Wayback 登録する運用
 - **エビデンスの3層コピー体制**: ①自サーバー配信の原本コピー（`data/raw` の PDF を
   dev/build 前段の `pipeline/sync-public-sources.ts` が `public/sources/` へ同期。gitignore）
   ②Wayback コピー（`bun run pipeline:archive` が登録・`data/archives.json` に台帳化・

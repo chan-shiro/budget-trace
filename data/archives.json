@@ -2,6 +2,86 @@
   "note": "一次資料の Wayback Machine スナップショット台帳。再生成/追記: bun run pipeline:archive",
   "entries": [
     {
+      "sourceId": "kofu-kessan-syousai-r1",
+      "url": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r1kessann.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20210128060355/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r1kessann.html",
+      "waybackTimestamp": "20210128060355",
+      "checkedAt": "2026-07-12T12:58:00.245Z"
+    },
+    {
+      "sourceId": "kofu-kessan-syousai-r1",
+      "url": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r1sishutu.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20210128054004/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r1sishutu.html",
+      "waybackTimestamp": "20210128054004",
+      "checkedAt": "2026-07-12T12:57:56.850Z"
+    },
+    {
+      "sourceId": "kofu-kessan-syousai-r2",
+      "url": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r2shuushishousai.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260712125651/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r2shuushishousai.html",
+      "waybackTimestamp": "20260712125651",
+      "checkedAt": "2026-07-12T12:57:51.592Z"
+    },
+    {
+      "sourceId": "kofu-kessan-syousai-r2",
+      "url": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r02kessan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20220707081526/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r02kessan.html",
+      "waybackTimestamp": "20220707081526",
+      "checkedAt": "2026-07-12T12:57:55.210Z"
+    },
+    {
+      "sourceId": "kofu-kessan-syousai-r4",
+      "url": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r04kessan/r04kessan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260712125546/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r04kessan/r04kessan.html",
+      "waybackTimestamp": "20260712125546",
+      "checkedAt": "2026-07-12T12:56:46.683Z"
+    },
+    {
+      "sourceId": "kofu-kessan-syousai-r4",
+      "url": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r04kessan/r4ippannsyousai.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260712125433/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r04kessan/r4ippannsyousai.html",
+      "waybackTimestamp": "20260712125433",
+      "checkedAt": "2026-07-12T12:55:15.671Z"
+    },
+    {
+      "sourceId": "kofu-kessan-syousai-r5",
+      "url": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r5kessan/r5ippansyousai.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260712125134/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r5kessan/r5ippansyousai.html",
+      "waybackTimestamp": "20260712125134",
+      "checkedAt": "2026-07-12T12:52:02.423Z"
+    },
+    {
+      "sourceId": "kofu-kessan-syousai-r5",
+      "url": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r5kessan/r5kessan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260712125329/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r5kessan/r5kessan.html",
+      "waybackTimestamp": "20260712125329",
+      "checkedAt": "2026-07-12T12:54:20.613Z"
+    },
+    {
+      "sourceId": "kofu-kessan-syousai-r6",
+      "url": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r6kessan/r6ippansyousai.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260712125856/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r6kessan/r6ippansyousai.html",
+      "waybackTimestamp": "20260712125856",
+      "checkedAt": "2026-07-12T12:59:24.021Z"
+    },
+    {
+      "sourceId": "kofu-kessan-syousai-r6",
+      "url": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r6kessan/r6kessan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260712125041/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r6kessan/r6kessan.html",
+      "waybackTimestamp": "20260712125041",
+      "checkedAt": "2026-07-12T12:59:25.282Z"
+    },
+    {
       "sourceId": "kofu-yosansho-r2",
       "url": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r02omonajigyou.pdf",
       "kind": "file",

@@ -7,7 +7,7 @@ import BudgetTraceView from "./BudgetTraceView";
 
 const {
   GLOSS, SIM_MIX_COLS, SIMILAR, SIMILAR_EVIDENCE, SOURCES,
-  KOFU_BUDGET_YEARS, KOFU_PROJECT_YEARS, KOFU_EXECUTION, KOFU_R6_DETAIL, KOFU_TREND, YAMANASHI_MUNIS,
+  KOFU_BUDGET_YEARS, KOFU_PROJECT_YEARS, KOFU_EXECUTION_YEARS, KOFU_R6_DETAIL, KOFU_TREND, YAMANASHI_MUNIS,
   muniFromBudget, fmtOku, pctOf, fmtPerCap, fadeColor, donutBg, setPalette,
 } = D;
 
@@ -24,6 +24,8 @@ interface St {
   unit?: string;
   compSide?: string;
   execSide?: string;
+  /** 予算執行状況タブの表示年度（"R7" など。未指定は最新） */
+  execFy?: string;
   /** 表示中の当初予算年度（"R8" など。未指定は最新年度） */
   budgetFy?: string;
   /** 一次資料ドロワー（自サーバー配信の原本コピーをその場でレビュー） */
@@ -335,11 +337,12 @@ export default function BudgetTrace() {
     { label: "歳入", pick: () => setSt({ compSide: "rev" }), bg: compSide === "rev" ? "#14181C" : "#FFFFFF", fg: compSide === "rev" ? "#F7FAFC" : "#5C6B77" },
   ];
 
-  // --- 予算執行状況（R7・財政事情の公表） ---
+  // --- 予算執行状況（R7=財政事情の速報、R6〜R1=決算状況の確定値。R3 は資料消失で欠落） ---
   const execSide = s.execSide || "exp";
-  const execRows0 = execSide === "rev" ? KOFU_EXECUTION.revenue : KOFU_EXECUTION.expenditure;
-  const execBudgetTotal = execSide === "rev" ? KOFU_EXECUTION.revenueBudgetTotalOku : KOFU_EXECUTION.expenditureBudgetTotalOku;
-  const execSettledTotal = execSide === "rev" ? KOFU_EXECUTION.revenueSettledTotalOku : KOFU_EXECUTION.expenditureSettledTotalOku;
+  const execYear = KOFU_EXECUTION_YEARS.find((y) => y.fy === s.execFy) ?? KOFU_EXECUTION_YEARS[0]!;
+  const execRows0 = execSide === "rev" ? execYear.revenue : execYear.expenditure;
+  const execBudgetTotal = execSide === "rev" ? execYear.revenueBudgetTotalOku : execYear.expenditureBudgetTotalOku;
+  const execSettledTotal = execSide === "rev" ? execYear.revenueSettledTotalOku : execYear.expenditureSettledTotalOku;
   const execOverallRate = (execSettledTotal / execBudgetTotal) * 100;
   const execRows = execRows0.map((r, i) => ({
     name: r.name, sw: D.PALETTE[i % D.PALETTE.length],
@@ -348,6 +351,7 @@ export default function BudgetTrace() {
     barW: r.ratePct != null ? Math.min(100, r.ratePct).toFixed(1) : "0",
     restFmt: fmtOku(Math.max(0, r.budgetOku - r.settledOku)),
     refLabel: r.refLabel, ref: r.ref,
+    breakdownNote: r.breakdownNote ?? "",
   }));
   const execTabs = [
     { label: "歳出", pick: () => setSt({ execSide: "exp" }), bg: execSide === "exp" ? "#14181C" : "#FFFFFF", fg: execSide === "exp" ? "#F7FAFC" : "#5C6B77" },
@@ -369,6 +373,11 @@ export default function BudgetTrace() {
     { name: "財政力指数", vals: KOFU_TREND.map((r) => (r.financialIndex != null ? r.financialIndex.toFixed(2) : "—")) },
     { name: "経常収支比率", vals: KOFU_TREND.map((r) => (r.keijoShushiPct != null ? r.keijoShushiPct.toFixed(1) + "%" : "—")) },
     { name: "実質公債費比率", vals: KOFU_TREND.map((r) => (r.jisshitsuKosaihiPct != null ? r.jisshitsuKosaihiPct.toFixed(1) + "%" : "—")) },
+    // 歳出執行率 = 支出済額/予算現額（決算状況 収入支出詳細の確定値。R3 は資料消失で欠落）
+    { name: "歳出執行率（確定）", vals: KOFU_TREND.map((r) => {
+      const e = KOFU_EXECUTION_YEARS.find((y) => y.fy === r.fy && y.basis === "確定");
+      return e ? ((e.expenditureSettledTotalOku / e.expenditureBudgetTotalOku) * 100).toFixed(1) + "%" : "—";
+    }) },
   ];
   const trendYearLabels = KOFU_TREND.map((r) => r.fy);
 
@@ -388,25 +397,38 @@ export default function BudgetTrace() {
     isDash: screen === "dash", isDrill: screen === "drill", isThemes: screen === "themes", isCompare: screen === "compare",
     isExecution: screen === "execution",
     execTabs, execRows,
-    execFyLabel: KOFU_EXECUTION.fyLabel, execAsOfNote: KOFU_EXECUTION.asOfNote,
+    // 年度切替（R3 は資料消失により欠落 — execGapNote で明示）
+    execYearTabs: KOFU_EXECUTION_YEARS.map((y) => ({
+      label: `${y.fy}${y.basis === "速報" ? "（速報）" : ""}`,
+      pick: () => setSt({ execFy: y.fy }),
+      bg: y.fy === execYear.fy ? "#14181C" : "#FFFFFF",
+      fg: y.fy === execYear.fy ? "#F7FAFC" : "#5C6B77",
+    })),
+    execGapNote: "令和3年度は資料（決算状況ページ）が発行元から削除済みのため未収録です",
+    execFyLabel: execYear.fyLabel, execAsOfNote: execYear.asOfNote,
     execSideLabel: execSide === "rev" ? "歳入" : "歳出",
     execRateLabel: execSide === "rev" ? "収入率" : "執行率",
     execSettledColLabel: execSide === "rev" ? "収入済額" : "支出済額",
     execOverallRate: execOverallRate.toFixed(1) + "%",
     execOverallBarW: Math.min(100, execOverallRate).toFixed(1),
     execBudgetFmt: fmtOku(execBudgetTotal), execSettledFmt: fmtOku(execSettledTotal),
-    execEvidence: KOFU_EXECUTION.evidence.map((he) => ({
+    // 確定値ページは HTML のため自サーバーコピーが無い → Wayback コピーへ直接リンク
+    execEvidence: execYear.evidence.map((he) => ({
       ...he,
-      open: () => openViewer({
-        url: he.localUrl, title: he.title, sub: he.thumb,
-        originUrl: KOFU_EXECUTION.originUrl, archiveUrl: he.url,
-      }),
+      open: he.localUrl
+        ? () => openViewer({
+            url: he.localUrl, title: he.title, sub: he.thumb,
+            originUrl: execYear.originUrl, archiveUrl: he.url,
+          })
+        : null,
     })),
-    execSourceUrl: KOFU_EXECUTION.sourceLocalUrl,
-    execSourceOpen: () => openViewer({
-      url: KOFU_EXECUTION.sourceLocalUrl, title: KOFU_EXECUTION.sourceTitle, sub: KOFU_EXECUTION.fyLabel,
-      originUrl: KOFU_EXECUTION.originUrl, archiveUrl: KOFU_EXECUTION.sourceUrl,
-    }),
+    execSourceUrl: execYear.sourceLocalUrl || execYear.sourceUrl,
+    execSourceOpen: execYear.sourceLocalUrl
+      ? () => openViewer({
+          url: execYear.sourceLocalUrl, title: execYear.sourceTitle, sub: execYear.fyLabel,
+          originUrl: execYear.originUrl, archiveUrl: execYear.sourceUrl,
+        })
+      : null,
     trendBars, trendIndicators, trendYearLabels,
     trendSourceUrl: KOFU_TREND[KOFU_TREND.length - 1]?.landingUrl ?? "",
     showEvidence,

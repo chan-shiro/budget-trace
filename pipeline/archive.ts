@@ -60,6 +60,9 @@ async function verifySnapshot(
   const meta = readRawMeta(sourceId);
   if (!meta) return undefined;
   const filename = decodeURIComponent(new URL(url).pathname.split("/").pop() ?? "");
+  // HTML ページはテンプレート差（トークン・広告タグ等）で取得時刻によりバイト列が
+  // 揺れるため sha 突合の対象外（静的ファイルのみ検証する）
+  if (!/\.(pdf|xlsx?|csv)$/i.test(filename)) return undefined;
   const raw = meta.files.find((f) => f.filename === filename);
   if (!raw) return undefined;
   try {

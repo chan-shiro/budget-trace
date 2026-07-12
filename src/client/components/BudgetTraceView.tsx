@@ -476,6 +476,16 @@ export default function BudgetTraceView({ v }: { v: any }) {
                   </div>
                 </div>
 
+                <div style={S("display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:18px;")}>
+                  <span style={S("font-size:12px; color:#5C6B77;")}>年度</span>
+                  <div style={S("display:inline-flex; border:1px solid #DFE7EC; border-radius:999px; overflow:hidden; background:#FFFFFF;")}>
+                    {v.execYearTabs.map((yt: any, i: number) => (
+                      <button key={i} onClick={yt.pick} style={S(`border:none; background:${yt.bg}; color:${yt.fg}; padding:6px 14px; font-size:12px; font-weight:600; cursor:pointer; font-family:'IBM Plex Mono',monospace;`)}>{yt.label}</button>
+                    ))}
+                  </div>
+                  <span style={S("font-size:11.5px; color:#9DACB7;")}>{v.execGapNote}</span>
+                </div>
+
                 <div style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:20px 24px; margin-bottom:22px; display:flex; align-items:center; gap:26px; flex-wrap:wrap;")}>
                   <div>
                     <div style={S("font-size:12px; color:#5C6B77;")}>一般会計 {v.execSideLabel}の{v.execRateLabel}</div>
@@ -497,7 +507,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                     <span>款</span><span>{v.execRateLabel}</span><span style={S("text-align:right;")}>予算現額</span><span style={S("text-align:right;")}>{v.execSettledColLabel}</span><span style={S("text-align:right;")}>率</span><span style={S("text-align:right;")}>残額</span>
                   </div>
                   {v.execRows.map((hr: any, i: number) => (
-                    <div key={i} data-mq="hist" title={hr.ref} style={S("display:grid; grid-template-columns:minmax(110px,1fr) 2fr 100px 100px 64px 90px; gap:12px; padding:12px 0; border-bottom:1px solid #ECF2F6; font-size:13px; align-items:center;")}>
+                    <div key={i} data-mq="hist" title={hr.breakdownNote ? `${hr.ref}\n内訳（予算現額）: ${hr.breakdownNote}` : hr.ref} style={S("display:grid; grid-template-columns:minmax(110px,1fr) 2fr 100px 100px 64px 90px; gap:12px; padding:12px 0; border-bottom:1px solid #ECF2F6; font-size:13px; align-items:center;")}>
                       <span style={S("font-weight:600; display:inline-flex; align-items:center; gap:8px;")}><span style={S(`width:10px; height:10px; border-radius:3px; background:${hr.sw};`)}></span>{hr.name}</span>
                       <span style={S("display:block; height:8px; border-radius:999px; background:#E3EBF0; overflow:hidden;")}><span data-anim="bar" style={S(`display:block; height:100%; width:${hr.barW}%; background:${hr.sw};`)}></span></span>
                       <span style={S("font-family:'IBM Plex Mono',monospace; text-align:right;")}>{hr.budgetFmt}</span>
@@ -545,7 +555,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                     <h3 style={S("margin:0 0 12px; font-size:14px; font-weight:700;")}>エビデンス（一次資料）</h3>
                     <div style={S("display:grid; grid-template-columns:repeat(auto-fill, minmax(240px,1fr)); gap:12px;")}>
                       {v.execEvidence.map((he: any, i: number) => (
-                        <HoverBox as="a" key={i} href={he.localUrl} onClick={(e: any) => { e.preventDefault(); he.open(); }} style={S("display:block; background:#FFFFFF; border:1px solid #DFE7EC; border-radius:13px; overflow:hidden; text-decoration:none; color:#14181C; cursor:pointer;")} hoverStyle={S("border-color:#1798D0; text-decoration:none;")}>
+                        <HoverBox as="a" key={i} href={he.localUrl || he.url} target={he.open ? undefined : "_blank"} rel="noopener noreferrer" onClick={he.open ? (e: any) => { e.preventDefault(); he.open(); } : undefined} style={S("display:block; background:#FFFFFF; border:1px solid #DFE7EC; border-radius:13px; overflow:hidden; text-decoration:none; color:#14181C; cursor:pointer;")} hoverStyle={S("border-color:#1798D0; text-decoration:none;")}>
                           <span style={S("display:flex; align-items:center; justify-content:center; height:96px; background:repeating-linear-gradient(45deg,#ECF2F6 0 10px,#E1EAF0 10px 20px); font-family:'IBM Plex Mono',monospace; font-size:11px; color:#5C6B77; text-align:center; padding:0 14px; line-height:1.5;")}>{he.thumb}</span>
                           <span style={S("display:block; padding:12px 15px;")}>
                             <span style={S("display:inline-block; font-size:10.5px; font-weight:600; color:#1798D0; border:1px solid #B9E0F2; border-radius:999px; padding:1px 9px; margin-bottom:6px;")}>{he.type}</span>

@@ -7,7 +7,7 @@
 // - 人口・類似自治体比較: 総務省 令和6年度 市町村別決算状況調
 // ============================================================================
 import { KOFU_BUDGET, KOFU_BUDGET_YEARS, type KofuBudgetYear, type KofuKanRow } from './kofu.gen';
-import { KOFU_EXECUTION } from './execution.gen';
+import { KOFU_EXECUTION, KOFU_EXECUTION_YEARS } from './execution.gen';
 import { WAYBACK_BY_URL } from './archives.gen';
 
 // ---- 型 --------------------------------------------------------------------
@@ -84,7 +84,7 @@ export const GLOSS: Record<string, string> = {
 export { SIMILAR, SIM_MIX_COLS, SIMILAR_FY_LABEL, SIMILAR_EVIDENCE } from './similar.gen';
 export { KOFU_BUDGET, KOFU_BUDGET_YEARS, type KofuBudgetYear } from './kofu.gen';
 export { KOFU_PROJECTS, KOFU_PROJECTS_SOURCE, KOFU_PROJECT_YEARS } from './projects.gen';
-export { KOFU_EXECUTION } from './execution.gen';
+export { KOFU_EXECUTION, KOFU_EXECUTION_YEARS, type KofuExecutionYear } from './execution.gen';
 export { KOFU_R6_DETAIL } from './detail.gen';
 export { KOFU_TREND } from './trend.gen';
 
@@ -100,6 +100,11 @@ export const SOURCES = [
     url: b.sourceUrl, originUrl: b.originUrl, localUrl: b.sourceLocalUrl,
   })),
   { title:'令和7年度 甲府市財政事情（一般会計の状況・令和8年3月31日現在）', type:'PDF', org:'甲府市', date:'2026-07-12', used:'予算執行状況（款別の予算現額・収入/支出済額・執行率）', url: KOFU_EXECUTION.sourceUrl, originUrl: KOFU_EXECUTION.originUrl, localUrl: KOFU_EXECUTION.sourceLocalUrl },
+  ...KOFU_EXECUTION_YEARS.filter((y) => y.basis === '確定').map((y) => ({
+    title: y.sourceTitle, type: 'Web', org: '甲府市', date: '2026-07-12',
+    used: `予算執行状況（${y.fyLabel.replace('（決算・確定値）', '')}の予算現額・済額・執行率＝確定値）`,
+    url: y.sourceUrl, originUrl: y.originUrl, localUrl: '',
+  })),
   { title:'令和6年度 市町村別決算状況調', type:'Excel', org:'総務省 自治財政局', date:'2026-07-11', used:'類似自治体との比較／項別内訳（決算）／人口（1人あたり換算）', url: WAYBACK_BY_URL[SOUMU_R6_LANDING] ?? SOUMU_R6_LANDING, originUrl: SOUMU_R6_LANDING, localUrl: '' },
 ];
 
