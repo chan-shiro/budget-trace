@@ -435,23 +435,19 @@ export default function BudgetTrace() {
     execOverallRate: execOverallRate.toFixed(1) + "%",
     execOverallBarW: Math.min(100, execOverallRate).toFixed(1),
     execBudgetFmt: fmtOku(execBudgetTotal), execSettledFmt: fmtOku(execSettledTotal),
-    // 確定値ページは HTML のため自サーバーコピーが無い → Wayback コピーへ直接リンク
+    // エビデンスは常に自サーバーの原本コピーをドロワーで開く（HTML はサンドボックス表示）
     execEvidence: execYear.evidence.map((he) => ({
       ...he,
-      open: he.localUrl
-        ? () => openViewer({
-            url: he.localUrl, title: he.title, sub: he.thumb,
-            originUrl: execYear.originUrl, archiveUrl: he.url,
-          })
-        : null,
+      open: () => openViewer({
+        url: he.localUrl, title: he.title, sub: he.thumb,
+        originUrl: execYear.originUrl, archiveUrl: he.url,
+      }),
     })),
-    execSourceUrl: execYear.sourceLocalUrl || execYear.sourceUrl,
-    execSourceOpen: execYear.sourceLocalUrl
-      ? () => openViewer({
-          url: execYear.sourceLocalUrl, title: execYear.sourceTitle, sub: execYear.fyLabel,
-          originUrl: execYear.originUrl, archiveUrl: execYear.sourceUrl,
-        })
-      : null,
+    execSourceUrl: execYear.sourceLocalUrl,
+    execSourceOpen: () => openViewer({
+      url: execYear.sourceLocalUrl, title: execYear.sourceTitle, sub: execYear.fyLabel,
+      originUrl: execYear.originUrl, archiveUrl: execYear.sourceUrl,
+    }),
     trendBars, trendIndicators, trendYearLabels,
     trendSourceUrl: KOFU_TREND[KOFU_TREND.length - 1]?.landingUrl ?? "",
     showEvidence,
@@ -498,7 +494,12 @@ export default function BudgetTrace() {
           sw: D.PALETTE[i % D.PALETTE.length],
         })),
         r6DetailKanTotalFmt: fmtOku(kanTotal),
-        r6DetailSourceUrl: KOFU_R6_DETAIL.sourceUrl,
+        r6DetailSourceUrl: KOFU_R6_DETAIL.sourceLocalUrl,
+        r6DetailSourceOpen: () => openViewer({
+          url: KOFU_R6_DETAIL.sourceLocalUrl, title: KOFU_R6_DETAIL.sourceTitle,
+          sub: KOFU_R6_DETAIL.refLabel,
+          originUrl: "https://www.soumu.go.jp/iken/zaisei/r06_shichouson.html", archiveUrl: KOFU_R6_DETAIL.sourceUrl,
+        }),
         r6DetailSourceLabel: `出典：${KOFU_R6_DETAIL.sourceTitle} 目的別歳出内訳（${KOFU_R6_DETAIL.refLabel}）`,
       };
     })(),
@@ -589,7 +590,13 @@ export default function BudgetTrace() {
       };
     }),
     simLegend: SIM_MIX_COLS.map((n, i) => ({ name: n, sw: [D.PALETTE[0], D.PALETTE[1], D.PALETTE[2], D.PALETTE[4], "#C6D2DA"][i] })),
-    similarEvidence: SIMILAR_EVIDENCE,
+    similarEvidence: SIMILAR_EVIDENCE.map((ev: any) => ({
+      ...ev,
+      open: () => openViewer({
+        url: ev.localUrl, title: ev.title, sub: ev.thumb,
+        originUrl: "https://www.soumu.go.jp/iken/zaisei/r06_shichouson.html", archiveUrl: ev.url,
+      }),
+    })),
     uncollected: D.UNCOLLECTED,
     requestListUrl: D.REQUEST_LIST_URL,
     sourcesRows: SOURCES.map((row: any) => ({

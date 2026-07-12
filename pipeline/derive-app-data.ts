@@ -160,6 +160,7 @@ const evidence = rawMeta.files
     title: `${source.title} ${FILE_INFO[f.filename].label}`,
     type: "Excel",
     url: wayback(source.urls?.find((u) => u.endsWith(f.filename)) ?? source.landingPage ?? ""),
+    localUrl: `/sources/${SOURCE_ID}/${f.filename}`,
     source: new URL(source.urls?.[0] ?? source.landingPage!).hostname,
     thumb: `${f.filename} ・ sha256 ${f.sha256.slice(0, 16)}… ・ ${f.fetchedAt.slice(0, 10)} 取得`,
   }));
@@ -204,6 +205,8 @@ export interface SimilarEvidence {
   type: string;
   /** 一次資料へのリンク（Wayback コピー優先） */
   url: string;
+  /** 自サーバー配信の原本コピー */
+  localUrl: string;
   source: string;
   /** サムネイル枠に出す来歴（ファイル名・sha256・取得日） */
   thumb: string;
@@ -563,12 +566,15 @@ export const KOFU_R6_DETAIL: {
   byKan: Record<string, { name: string; v: number }[]>;
   sourceTitle: string;
   sourceUrl: string;
+  /** 自サーバー配信の原本コピー */
+  sourceLocalUrl: string;
   refLabel: string;
 } = {
   fyLabel: "令和6年度 普通会計決算",
   byKan: ${JSON.stringify(byKan, null, 2)},
   sourceTitle: ${JSON.stringify(soumuSource.title)},
   sourceUrl: ${JSON.stringify(mokutekiUrl)},
+  sourceLocalUrl: ${JSON.stringify(`/sources/${SOUMU_ID}/${mokutekiLoc.file}`)},
   refLabel: ${JSON.stringify(`${mokutekiLoc.file} ${mokutekiLoc.row}行目`)},
 };
 `;
@@ -641,14 +647,14 @@ function buildExecYear(entry: (typeof EXEC_YEARS)[number]) {
     // リンクは Wayback コピー優先（HTML ページ・上書き型 PDF とも版の固定が要る）
     sourceUrl: wayback(url),
     originUrl: url,
-    // PDF のみ自サーバー配信（HTML ページはドロワー対象外 → 空文字）
-    sourceLocalUrl: file.filename.toLowerCase().endsWith(".pdf") ? `/sources/${srcId}/${file.filename}` : "",
+    // 自サーバー配信の原本コピー（PDF/HTML/Excel すべて。ドロワーが種別ごとに表示）
+    sourceLocalUrl: `/sources/${srcId}/${file.filename}`,
     evidence: [
       {
         title: source.title,
-        type: file.filename.toLowerCase().endsWith(".pdf") ? "PDF" : "Web",
+        type: file.filename.toLowerCase().endsWith(".pdf") ? "PDF" : file.filename.toLowerCase().includes(".htm") ? "Web" : "Excel",
         url: wayback(url),
-        localUrl: file.filename.toLowerCase().endsWith(".pdf") ? `/sources/${srcId}/${file.filename}` : "",
+        localUrl: `/sources/${srcId}/${file.filename}`,
         source: url ? new URL(url).hostname : "",
         thumb: `${file.filename} ・ sha256 ${file.sha256.slice(0, 16)}… ・ ${file.fetchedAt.slice(0, 10)} 取得`,
       },
@@ -745,7 +751,7 @@ console.log(
       sourceTitle: src.title,
       sourceUrl: wayback(url),
       originUrl: url,
-      sourceLocalUrl: file.filename.toLowerCase().endsWith(".pdf") ? `/sources/${srcId}/${file.filename}` : "",
+      sourceLocalUrl: `/sources/${srcId}/${file.filename}`,
       items: doc.facts.map((f) => ({
         name: f.name,
         grade: f.grade,
