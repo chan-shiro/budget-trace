@@ -497,6 +497,37 @@ export default function BudgetTraceView({ v }: { v: any }) {
                   <p style={S("margin:12px 2px 0; font-size:12px; color:#5C6B77;")}>{v.execAsOfNote}。残額＝予算現額−{v.execSettledColLabel}。</p>
                 </section>
 
+                <section style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:20px 24px; margin-bottom:22px;")}>
+                  <h2 style={S("margin:0 0 4px; font-size:16px; font-weight:700;")}>決算の推移（普通会計・令和2〜6年度）</h2>
+                  <p style={S("margin:0 0 16px; font-size:12.5px; color:#5C6B77;")}>総務省「市町村別決算状況調」による確定決算の経年推移です。</p>
+                  <div style={S("display:flex; align-items:stretch; gap:12px; height:170px; max-width:560px;")}>
+                    {v.trendBars.map((tb: any, i: number) => (
+                      <div key={i} style={S("flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; gap:5px;")}>
+                        <span style={S("font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:#3A4750;")}>{tb.amtFmt}</span>
+                        <div style={S("width:100%; max-width:52px; height:110px; display:flex; align-items:flex-end; justify-content:center;")}>
+                          <div data-anim="vbar" title={tb.ref} style={S(`width:100%; height:${tb.h}%; background:${tb.bg}; border-radius:6px 6px 0 0;`)}></div>
+                        </div>
+                        <a href={tb.landingUrl} target="_blank" rel="noopener noreferrer" style={S("font-family:'IBM Plex Mono',monospace; font-size:11px; color:#5C6B77;")}>{tb.label}</a>
+                      </div>
+                    ))}
+                  </div>
+                  <div style={S("margin-top:18px; overflow-x:auto;")}>
+                    <div style={S("display:grid; grid-template-columns:minmax(120px,1.4fr) repeat(5, minmax(72px,1fr)); gap:10px; font-size:11px; color:#5C6B77; border-bottom:1px solid #DFE7EC; padding-bottom:7px; min-width:520px;")}>
+                      <span>指標</span>
+                      {v.trendYearLabels.map((y: string, i: number) => (<span key={i} style={S("text-align:right; font-family:'IBM Plex Mono',monospace;")}>{y}</span>))}
+                    </div>
+                    {v.trendIndicators.map((ti: any, i: number) => (
+                      <div key={i} style={S("display:grid; grid-template-columns:minmax(120px,1.4fr) repeat(5, minmax(72px,1fr)); gap:10px; padding:9px 0; border-bottom:1px solid #ECF2F6; font-size:12.5px; align-items:center; min-width:520px;")}>
+                        <span style={S("font-weight:600;")}>{ti.name}</span>
+                        {ti.vals.map((val: string, j: number) => (<span key={j} style={S("font-family:'IBM Plex Mono',monospace; text-align:right;")}>{val}</span>))}
+                      </div>
+                    ))}
+                  </div>
+                  <p style={S("margin:10px 2px 0; font-size:12px; color:#5C6B77;")}>
+                    <a href={v.trendSourceUrl} target="_blank" rel="noopener noreferrer" style={S("color:#5C6B77;")}>出典：総務省「市町村別決算状況調」各年度（年度ラベルから各年度ページへ） ↗</a>
+                  </p>
+                </section>
+
                 {v.showEvidence && (
                   <section>
                     <h3 style={S("margin:0 0 12px; font-size:14px; font-weight:700;")}>エビデンス（一次資料）</h3>

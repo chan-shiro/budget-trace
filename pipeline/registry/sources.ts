@@ -36,6 +36,26 @@ export const SOURCES: SourceEntry[] = [
     license: "公共データ利用規約（政府標準利用規約準拠）",
     parser: "soumu-shichoson-kessan",
   },
+  // 決算状況調の過去年度（経年比較用）。構成は R6 と同じ
+  // （都市別/町村別 × 概況/歳入内訳/目的別歳出内訳）。年度ページから直リンクを確認済み
+  ...([
+    ["r5", "R5", "r05", ["000999900", "000999901", "000999902", "000999905", "000999906", "000999908"]],
+    ["r4", "R4", "r04", ["000937287", "000937288", "000937289", "000937292", "000937293", "000937294"]],
+    ["r3", "R3", "r03", ["000871018", "000871019", "000871020", "000871023", "000871024", "000871025"]],
+    ["r2", "R2", "r02", ["000800819", "000800820", "000800822", "000800826", "000800828", "000800830"]],
+  ] as const).map(([suffix, fy, page, ids]): SourceEntry => ({
+    id: `soumu-shichoson-kessan-${suffix}`,
+    title: `令和${fy.slice(1)}年度 市町村別決算状況調`,
+    publisher: "総務省 自治財政局",
+    url: null,
+    urls: ids.map((n) => `https://www.soumu.go.jp/main_content/${n}.xlsx`),
+    landingPage: `https://www.soumu.go.jp/iken/zaisei/${page}_shichouson.html`,
+    kind: "excel",
+    fiscalYear: fy,
+    scope: "全市町村（普通会計）",
+    license: "公共データ利用規約（政府標準利用規約準拠）",
+    parser: "soumu-shichoson-kessan",
+  })),
   {
     // 甲府市の当初予算（案）資料。款別の歳入・歳出一覧（前年度比較つき）と
     // 主な事業一覧を収録。まず款別一覧を決定的にパースする（pdftotext / poppler が必要）。

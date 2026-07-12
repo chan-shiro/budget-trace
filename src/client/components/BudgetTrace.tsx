@@ -7,7 +7,7 @@ import BudgetTraceView from "./BudgetTraceView";
 
 const {
   KOFU, GLOSS, SIM_MIX_COLS, SIMILAR, SIMILAR_EVIDENCE, SOURCES,
-  KOFU_BUDGET, KOFU_PROJECTS, KOFU_PROJECTS_SOURCE, KOFU_EXECUTION, KOFU_R6_DETAIL, YAMANASHI_MUNIS,
+  KOFU_BUDGET, KOFU_PROJECTS, KOFU_PROJECTS_SOURCE, KOFU_EXECUTION, KOFU_R6_DETAIL, KOFU_TREND, YAMANASHI_MUNIS,
   fmtOku, pctOf, fmtPerCap, fadeColor, donutBg, setPalette,
 } = D;
 
@@ -277,6 +277,24 @@ export default function BudgetTrace() {
     { label: "歳入", pick: () => setSt({ execSide: "rev" }), bg: execSide === "rev" ? "#14181C" : "#FFFFFF", fg: execSide === "rev" ? "#F7FAFC" : "#5C6B77" },
   ];
 
+  // --- 決算の推移（決算状況調 R2〜R6・実データ） ---
+  const trendMax = Math.max(...KOFU_TREND.map((r) => r.expenditureTotalOku));
+  const trendBars = KOFU_TREND.map((r, i) => ({
+    label: r.fy, fyLabel: r.fyLabel,
+    amtFmt: fmtOku(r.expenditureTotalOku),
+    h: ((r.expenditureTotalOku / trendMax) * 100).toFixed(1),
+    bg: i === KOFU_TREND.length - 1 ? accent : "#B8D9EA",
+    landingUrl: r.landingUrl, ref: r.ref,
+  }));
+  const trendIndicators = [
+    { name: "歳入決算総額", vals: KOFU_TREND.map((r) => fmtOku(r.revenueTotalOku)) },
+    { name: "人口（住基）", vals: KOFU_TREND.map((r) => (r.population != null ? (r.population / 10000).toFixed(1) + "万人" : "—")) },
+    { name: "財政力指数", vals: KOFU_TREND.map((r) => (r.financialIndex != null ? r.financialIndex.toFixed(2) : "—")) },
+    { name: "経常収支比率", vals: KOFU_TREND.map((r) => (r.keijoShushiPct != null ? r.keijoShushiPct.toFixed(1) + "%" : "—")) },
+    { name: "実質公債費比率", vals: KOFU_TREND.map((r) => (r.jisshitsuKosaihiPct != null ? r.jisshitsuKosaihiPct.toFixed(1) + "%" : "—")) },
+  ];
+  const trendYearLabels = KOFU_TREND.map((r) => r.fy);
+
   // --- header nav ---
   const navDefs: [string, string, () => void][] = [
     ["ダッシュボード", "dash", () => nav({ screen: "dash" })],
@@ -302,6 +320,8 @@ export default function BudgetTrace() {
     execBudgetFmt: fmtOku(execBudgetTotal), execSettledFmt: fmtOku(execSettledTotal),
     execEvidence: KOFU_EXECUTION.evidence,
     execSourceUrl: KOFU_EXECUTION.sourceUrl,
+    trendBars, trendIndicators, trendYearLabels,
+    trendSourceUrl: KOFU_TREND[KOFU_TREND.length - 1]?.landingUrl ?? "",
     showEvidence,
     onPrefSelect: (name: string) => nav({ screen: "muni", pref: name }),
     mapColorMode,
