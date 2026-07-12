@@ -67,6 +67,8 @@ const PLAN_BY_FY: Record<string, { plan: string; goals?: { name: string; label: 
   },
   R7: { plan: "第六次甲府市総合計画" },
   R6: { plan: "第六次甲府市総合計画" },
+  R5: { plan: "第六次甲府市総合計画" },
+  R4: { plan: "第六次甲府市総合計画" },
   R3: { plan: "第六次甲府市総合計画" },
   R2: { plan: "第六次甲府市総合計画" },
 };
@@ -571,6 +573,8 @@ export default function BudgetTrace() {
     }),
     simLegend: SIM_MIX_COLS.map((n, i) => ({ name: n, sw: [D.PALETTE[0], D.PALETTE[1], D.PALETTE[2], D.PALETTE[4], "#C6D2DA"][i] })),
     similarEvidence: SIMILAR_EVIDENCE,
+    uncollected: D.UNCOLLECTED,
+    requestListUrl: D.REQUEST_LIST_URL,
     sourcesRows: SOURCES.map((row: any) => ({
       ...row,
       open: row.localUrl
@@ -584,6 +588,8 @@ export default function BudgetTrace() {
       `令和${Number(budget.fy.slice(1)) - 1 === 1 ? "元" : Number(budget.fy.slice(1)) - 1}年度` +
       (budget.prevBasis === "補正後" ? "（補正後予算額）" : ""),
     compCurLabel: `令和${budget.fy.slice(1)}年度`,
+    // 前年度列の資料注記（R6 選択時:「※令和5年度当初予算額は6月補正の政策的予算を含む」）
+    compPrevNote: budget.prevNote ? `※資料注記: ${budget.prevNote}` : "",
     compPrevTotal: fmtV(compPrevSum), compCurTotal: fmtV(compCurSum), compSub: subV(compCurSum),
     compTotalDelta: (compDelta >= 0 ? "+" : "−") + fmtV(Math.abs(compDelta)),
     compTotalPct: (compDelta >= 0 ? "+" : "−") + ((Math.abs(compDelta) / compPrevSum) * 100).toFixed(1) + "%",

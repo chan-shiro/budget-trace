@@ -91,6 +91,47 @@ export const SOURCES: SourceEntry[] = [
     parser: "kofu-yosansho",
     parserOptions: { revenuePage: 13, expenditurePage: 14, projectPages: { from: 15, to: 25 } },
   },
+  // R5・R4 の当初予算資料は市サイトから削除済み・Wayback にも無かったが、
+  // WARP（国立国会図書館）の 2024-05-09 収集分に PDF が完全残存していたため回収した
+  // （2026-07-12。R8〜R6 と同型の単一 PDF。原典 URL は市サイトの documents/ 配下だった）
+  {
+    id: "kofu-yosansho-r5",
+    title: "令和5年度 甲府市当初予算資料（WARP回収）",
+    publisher: "甲府市",
+    url: null,
+    urls: [
+      "https://warp.ndl.go.jp/20240509/20240508214211/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r5tousyoshiryou.pdf",
+    ],
+    landingPage: "https://warp.ndl.go.jp/20240508/20240508090506/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r05yosan.html",
+    kind: "pdf",
+    fiscalYear: "R5",
+    scope: "甲府市（一般会計）",
+    license: "甲府市ウェブサイト掲載資料（WARP 経由の保存版。利用条件は両者のサイト参照）",
+    parser: "kofu-yosansho",
+    // この PDF は座標系が右寄りのため列境界を上書き（実測: 予算額 x≈314-330・目標 x≈693）
+    parserOptions: {
+      revenuePage: 14,
+      expenditurePage: 15,
+      projectPages: { from: 16, to: 23 },
+      projectColumns: { nameEnd: 295, amountEnd: 345, contentEnd: 690, goalEnd: 742 },
+    },
+  },
+  {
+    id: "kofu-yosansho-r4",
+    title: "令和4年度 甲府市当初予算資料（WARP回収）",
+    publisher: "甲府市",
+    url: null,
+    urls: [
+      "https://warp.ndl.go.jp/20240509/20240508214215/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r4toushoyosan.pdf",
+    ],
+    landingPage: "https://warp.ndl.go.jp/20240508/20240508090506/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r04yosan.html",
+    kind: "pdf",
+    fiscalYear: "R4",
+    scope: "甲府市（一般会計）",
+    license: "甲府市ウェブサイト掲載資料（WARP 経由の保存版。利用条件は両者のサイト参照）",
+    parser: "kofu-yosansho",
+    parserOptions: { revenuePage: 14, expenditurePage: 15, projectPages: { from: 16, to: 22 } },
+  },
   {
     id: "kofu-yosansho-r6",
     title: "令和6年度 甲府市当初予算資料",

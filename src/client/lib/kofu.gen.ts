@@ -1,6 +1,6 @@
 // このファイルは自動生成です。手で編集しないこと。
 // 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
-// 出典: 甲府市 当初予算資料 R8・R7・R6・R3・R2（各年度の sha256 は evidence 参照）
+// 出典: 甲府市 当初予算資料 R8・R7・R6・R5・R4・R3・R2（各年度の sha256 は evidence 参照）
 // 金額は億円（予算書の千円値を 1e5 で割った正確値）。yoy は前年度当初比%（小数1桁）
 
 export interface KofuKanRow {
@@ -30,6 +30,8 @@ export interface KofuBudgetYear {
   yoyLabel: string;
   /** 前年度額の基準。"補正後" の年（R2）は前年が当初予算額でない点に注意 */
   prevBasis: "当初" | "補正後";
+  /** 前年度列の資料注記（原文。無ければ空文字） */
+  prevNote: string;
   sourceTitle: string;
   /** リンク用 URL（Wayback コピー優先。パース時点の版に固定） */
   sourceUrl: string;
@@ -54,6 +56,7 @@ export const KOFU_BUDGET_YEARS: KofuBudgetYear[] = [
     "prevTotalOku": 880.85032,
     "yoyLabel": "+4.2%",
     "prevBasis": "当初",
+    "prevNote": "",
     "sourceTitle": "令和8年度 甲府市当初予算（案）資料",
     "sourceUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf",
     "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf",
@@ -373,6 +376,7 @@ export const KOFU_BUDGET_YEARS: KofuBudgetYear[] = [
     "prevTotalOku": 807.93965,
     "yoyLabel": "+9.0%",
     "prevBasis": "当初",
+    "prevNote": "",
     "sourceTitle": "令和7年度 甲府市当初予算資料",
     "sourceUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf",
     "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf",
@@ -692,6 +696,7 @@ export const KOFU_BUDGET_YEARS: KofuBudgetYear[] = [
     "prevTotalOku": 799.38632,
     "yoyLabel": "+1.1%",
     "prevBasis": "当初",
+    "prevNote": "令和5年度当初予算額は、6月補正における政策的予算（KOFUNEXTACTION）を含む",
     "sourceTitle": "令和6年度 甲府市当初予算資料",
     "sourceUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf",
     "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf",
@@ -1003,6 +1008,646 @@ export const KOFU_BUDGET_YEARS: KofuBudgetYear[] = [
     ]
   },
   {
+    "fy": "R5",
+    "fyLabel": "令和5年度 当初予算",
+    "population": 186393,
+    "populationLabel": "住民基本台帳人口（令5.1.1現在）",
+    "totalOku": 790.35063,
+    "prevTotalOku": 794.82388,
+    "yoyLabel": "-0.6%",
+    "prevBasis": "当初",
+    "prevNote": "",
+    "sourceTitle": "令和5年度 甲府市当初予算資料（WARP回収）",
+    "sourceUrl": "https://warp.ndl.go.jp/20240509/20240508214211/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r5tousyoshiryou.pdf",
+    "originUrl": "https://warp.ndl.go.jp/20240509/20240508214211/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r5tousyoshiryou.pdf",
+    "sourceLocalUrl": "/sources/kofu-yosansho-r5/03r5tousyoshiryou.pdf",
+    "pagesLabel": "p.14–15",
+    "revenue": [
+      {
+        "name": "市税",
+        "v": 291.8569,
+        "prevV": 284.86961,
+        "yoy": 2.5,
+        "ref": "03r5tousyoshiryou.pdf#p14",
+        "refLabel": "予算書 p.14"
+      },
+      {
+        "name": "国庫支出金",
+        "v": 149.91433,
+        "prevV": 148.00508,
+        "yoy": 1.3,
+        "ref": "03r5tousyoshiryou.pdf#p14",
+        "refLabel": "予算書 p.14"
+      },
+      {
+        "name": "地方交付税",
+        "v": 108.55444,
+        "prevV": 98.775,
+        "yoy": 9.9,
+        "ref": "03r5tousyoshiryou.pdf#p14",
+        "refLabel": "予算書 p.14"
+      },
+      {
+        "name": "県支出金",
+        "v": 65.91516,
+        "prevV": 62.13384,
+        "yoy": 6.1,
+        "ref": "03r5tousyoshiryou.pdf#p14",
+        "refLabel": "予算書 p.14"
+      },
+      {
+        "name": "地方消費税交付金",
+        "v": 51.85752,
+        "prevV": 48.03273,
+        "yoy": 8,
+        "ref": "03r5tousyoshiryou.pdf#p14",
+        "refLabel": "予算書 p.14"
+      },
+      {
+        "name": "諸収入・その他",
+        "v": 46.33364,
+        "prevV": 47.2763,
+        "yoy": -2,
+        "ref": "03r5tousyoshiryou.pdf#p14",
+        "refLabel": "予算書 p.14（残り13款の合算）",
+        "children": [
+          {
+            "name": "諸収入",
+            "v": 18.21329,
+            "prevV": 19.28684,
+            "yoy": -5.6,
+            "ref": "03r5tousyoshiryou.pdf#p14",
+            "refLabel": "予算書 p.14"
+          },
+          {
+            "name": "使用料及び手数料",
+            "v": 9.29798,
+            "prevV": 9.89753,
+            "yoy": -6.1,
+            "ref": "03r5tousyoshiryou.pdf#p14",
+            "refLabel": "予算書 p.14"
+          },
+          {
+            "name": "法人事業税交付金",
+            "v": 5.68564,
+            "prevV": 4.82213,
+            "yoy": 17.9,
+            "ref": "03r5tousyoshiryou.pdf#p14",
+            "refLabel": "予算書 p.14"
+          },
+          {
+            "name": "地方譲与税",
+            "v": 4.26027,
+            "prevV": 4.3743,
+            "yoy": -2.6,
+            "ref": "03r5tousyoshiryou.pdf#p14",
+            "refLabel": "予算書 p.14"
+          },
+          {
+            "name": "分担金及び負担金",
+            "v": 2.96923,
+            "prevV": 3.28157,
+            "yoy": -9.5,
+            "ref": "03r5tousyoshiryou.pdf#p14",
+            "refLabel": "予算書 p.14"
+          },
+          {
+            "name": "配当割交付金",
+            "v": 1.69013,
+            "prevV": 0.98555,
+            "yoy": 71.5,
+            "ref": "03r5tousyoshiryou.pdf#p14",
+            "refLabel": "予算書 p.14"
+          },
+          {
+            "name": "地方特例交付金",
+            "v": 1.64445,
+            "prevV": 1.4768,
+            "yoy": 11.4,
+            "ref": "03r5tousyoshiryou.pdf#p14",
+            "refLabel": "予算書 p.14"
+          },
+          {
+            "name": "財産収入",
+            "v": 0.89702,
+            "prevV": 0.78613,
+            "yoy": 14.1,
+            "ref": "03r5tousyoshiryou.pdf#p14",
+            "refLabel": "予算書 p.14"
+          },
+          {
+            "name": "株式等譲渡所得割交付金",
+            "v": 0.87709,
+            "prevV": 1.20811,
+            "yoy": -27.4,
+            "ref": "03r5tousyoshiryou.pdf#p14",
+            "refLabel": "予算書 p.14"
+          },
+          {
+            "name": "交通安全対策特別交付金",
+            "v": 0.3897,
+            "prevV": 0.40443,
+            "yoy": -3.6,
+            "ref": "03r5tousyoshiryou.pdf#p14",
+            "refLabel": "予算書 p.14"
+          },
+          {
+            "name": "環境性能割交付金",
+            "v": 0.32902,
+            "prevV": 0.56538,
+            "yoy": -41.8,
+            "ref": "03r5tousyoshiryou.pdf#p14",
+            "refLabel": "予算書 p.14"
+          },
+          {
+            "name": "利子割交付金",
+            "v": 0.07981,
+            "prevV": 0.18752,
+            "yoy": -57.4,
+            "ref": "03r5tousyoshiryou.pdf#p14",
+            "refLabel": "予算書 p.14"
+          },
+          {
+            "name": "繰越金",
+            "v": 0.00001,
+            "prevV": 0.00001,
+            "yoy": 0,
+            "ref": "03r5tousyoshiryou.pdf#p14",
+            "refLabel": "予算書 p.14"
+          }
+        ]
+      },
+      {
+        "name": "市債",
+        "v": 36.078,
+        "prevV": 77.401,
+        "yoy": -53.4,
+        "ref": "03r5tousyoshiryou.pdf#p14",
+        "refLabel": "予算書 p.14"
+      },
+      {
+        "name": "寄附金",
+        "v": 22,
+        "prevV": 20,
+        "yoy": 10,
+        "ref": "03r5tousyoshiryou.pdf#p14",
+        "refLabel": "予算書 p.14"
+      },
+      {
+        "name": "繰入金",
+        "v": 17.84064,
+        "prevV": 8.33032,
+        "yoy": 114.2,
+        "ref": "03r5tousyoshiryou.pdf#p14",
+        "refLabel": "予算書 p.14"
+      }
+    ],
+    "expenditure": [
+      {
+        "name": "民生費",
+        "v": 342.65721,
+        "prevV": 336.56153,
+        "yoy": 1.8,
+        "ref": "03r5tousyoshiryou.pdf#p15",
+        "refLabel": "予算書 p.15"
+      },
+      {
+        "name": "衛生費",
+        "v": 107.48371,
+        "prevV": 102.04399,
+        "yoy": 5.3,
+        "ref": "03r5tousyoshiryou.pdf#p15",
+        "refLabel": "予算書 p.15"
+      },
+      {
+        "name": "公債費",
+        "v": 89.57254,
+        "prevV": 113.01584,
+        "yoy": -20.7,
+        "ref": "03r5tousyoshiryou.pdf#p15",
+        "refLabel": "予算書 p.15"
+      },
+      {
+        "name": "総務費",
+        "v": 85.73097,
+        "prevV": 87.70002,
+        "yoy": -2.2,
+        "ref": "03r5tousyoshiryou.pdf#p15",
+        "refLabel": "予算書 p.15"
+      },
+      {
+        "name": "教育費",
+        "v": 64.24261,
+        "prevV": 61.11437,
+        "yoy": 5.1,
+        "ref": "03r5tousyoshiryou.pdf#p15",
+        "refLabel": "予算書 p.15"
+      },
+      {
+        "name": "土木費",
+        "v": 49.70743,
+        "prevV": 43.22595,
+        "yoy": 15,
+        "ref": "03r5tousyoshiryou.pdf#p15",
+        "refLabel": "予算書 p.15"
+      },
+      {
+        "name": "消防費",
+        "v": 24.07683,
+        "prevV": 22.87509,
+        "yoy": 5.3,
+        "ref": "03r5tousyoshiryou.pdf#p15",
+        "refLabel": "予算書 p.15"
+      },
+      {
+        "name": "農林水産業費",
+        "v": 10.27198,
+        "prevV": 10.29657,
+        "yoy": -0.2,
+        "ref": "03r5tousyoshiryou.pdf#p15",
+        "refLabel": "予算書 p.15"
+      },
+      {
+        "name": "商工費",
+        "v": 8.90452,
+        "prevV": 9.18793,
+        "yoy": -3.1,
+        "ref": "03r5tousyoshiryou.pdf#p15",
+        "refLabel": "予算書 p.15"
+      },
+      {
+        "name": "議会費",
+        "v": 5.41594,
+        "prevV": 5.39091,
+        "yoy": 0.5,
+        "ref": "03r5tousyoshiryou.pdf#p15",
+        "refLabel": "予算書 p.15"
+      },
+      {
+        "name": "労働費",
+        "v": 1.94505,
+        "prevV": 1.87321,
+        "yoy": 3.8,
+        "ref": "03r5tousyoshiryou.pdf#p15",
+        "refLabel": "予算書 p.15"
+      },
+      {
+        "name": "予備費",
+        "v": 0.2,
+        "prevV": 0.2,
+        "yoy": 0,
+        "ref": "03r5tousyoshiryou.pdf#p15",
+        "refLabel": "予算書 p.15"
+      },
+      {
+        "name": "諸支出金",
+        "v": 0.1418,
+        "prevV": 1.33843,
+        "yoy": -89.4,
+        "ref": "03r5tousyoshiryou.pdf#p15",
+        "refLabel": "予算書 p.15"
+      },
+      {
+        "name": "災害復旧費",
+        "v": 0.00004,
+        "prevV": 0.00004,
+        "yoy": 0,
+        "ref": "03r5tousyoshiryou.pdf#p15",
+        "refLabel": "予算書 p.15"
+      }
+    ],
+    "evidence": [
+      {
+        "title": "令和5年度 甲府市当初予算資料（WARP回収）",
+        "type": "PDF",
+        "url": "https://warp.ndl.go.jp/20240509/20240508214211/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r5tousyoshiryou.pdf",
+        "localUrl": "/sources/kofu-yosansho-r5/03r5tousyoshiryou.pdf",
+        "source": "warp.ndl.go.jp",
+        "thumb": "03r5tousyoshiryou.pdf ・ sha256 9f6b99df2517664e… ・ 2026-07-12 取得"
+      }
+    ]
+  },
+  {
+    "fy": "R4",
+    "fyLabel": "令和4年度 当初予算",
+    "population": 186249,
+    "populationLabel": "住民基本台帳人口（令4.1.1現在）",
+    "totalOku": 794.82388,
+    "prevTotalOku": 758.47788,
+    "yoyLabel": "+4.8%",
+    "prevBasis": "当初",
+    "prevNote": "",
+    "sourceTitle": "令和4年度 甲府市当初予算資料（WARP回収）",
+    "sourceUrl": "https://warp.ndl.go.jp/20240509/20240508214215/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r4toushoyosan.pdf",
+    "originUrl": "https://warp.ndl.go.jp/20240509/20240508214215/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r4toushoyosan.pdf",
+    "sourceLocalUrl": "/sources/kofu-yosansho-r4/r4toushoyosan.pdf",
+    "pagesLabel": "p.14–15",
+    "revenue": [
+      {
+        "name": "市税",
+        "v": 284.86961,
+        "prevV": 270.70575,
+        "yoy": 5.2,
+        "ref": "r4toushoyosan.pdf#p14",
+        "refLabel": "予算書 p.14"
+      },
+      {
+        "name": "国庫支出金",
+        "v": 148.00508,
+        "prevV": 134.8186,
+        "yoy": 9.8,
+        "ref": "r4toushoyosan.pdf#p14",
+        "refLabel": "予算書 p.14"
+      },
+      {
+        "name": "地方交付税",
+        "v": 98.775,
+        "prevV": 93.45578,
+        "yoy": 5.7,
+        "ref": "r4toushoyosan.pdf#p14",
+        "refLabel": "予算書 p.14"
+      },
+      {
+        "name": "市債",
+        "v": 77.401,
+        "prevV": 86.439,
+        "yoy": -10.5,
+        "ref": "r4toushoyosan.pdf#p14",
+        "refLabel": "予算書 p.14"
+      },
+      {
+        "name": "県支出金",
+        "v": 62.13384,
+        "prevV": 59.36582,
+        "yoy": 4.7,
+        "ref": "r4toushoyosan.pdf#p14",
+        "refLabel": "予算書 p.14"
+      },
+      {
+        "name": "地方消費税交付金",
+        "v": 48.03273,
+        "prevV": 46.26147,
+        "yoy": 3.8,
+        "ref": "r4toushoyosan.pdf#p14",
+        "refLabel": "予算書 p.14"
+      },
+      {
+        "name": "諸収入・その他",
+        "v": 47.2763,
+        "prevV": 45.37612,
+        "yoy": 4.2,
+        "ref": "r4toushoyosan.pdf#p14",
+        "refLabel": "予算書 p.14（残り13款の合算）",
+        "children": [
+          {
+            "name": "諸収入",
+            "v": 19.28684,
+            "prevV": 15.63751,
+            "yoy": 23.3,
+            "ref": "r4toushoyosan.pdf#p14",
+            "refLabel": "予算書 p.14"
+          },
+          {
+            "name": "使用料及び手数料",
+            "v": 9.89753,
+            "prevV": 9.99555,
+            "yoy": -1,
+            "ref": "r4toushoyosan.pdf#p14",
+            "refLabel": "予算書 p.14"
+          },
+          {
+            "name": "法人事業税交付金",
+            "v": 4.82213,
+            "prevV": 3.23224,
+            "yoy": 49.2,
+            "ref": "r4toushoyosan.pdf#p14",
+            "refLabel": "予算書 p.14"
+          },
+          {
+            "name": "地方譲与税",
+            "v": 4.3743,
+            "prevV": 4.06285,
+            "yoy": 7.7,
+            "ref": "r4toushoyosan.pdf#p14",
+            "refLabel": "予算書 p.14"
+          },
+          {
+            "name": "分担金及び負担金",
+            "v": 3.28157,
+            "prevV": 3.54898,
+            "yoy": -7.5,
+            "ref": "r4toushoyosan.pdf#p14",
+            "refLabel": "予算書 p.14"
+          },
+          {
+            "name": "地方特例交付金",
+            "v": 1.4768,
+            "prevV": 5.2171,
+            "yoy": -71.7,
+            "ref": "r4toushoyosan.pdf#p14",
+            "refLabel": "予算書 p.14"
+          },
+          {
+            "name": "株式等譲渡所得割交付金",
+            "v": 1.20811,
+            "prevV": 1.15641,
+            "yoy": 4.5,
+            "ref": "r4toushoyosan.pdf#p14",
+            "refLabel": "予算書 p.14"
+          },
+          {
+            "name": "配当割交付金",
+            "v": 0.98555,
+            "prevV": 0.89949,
+            "yoy": 9.6,
+            "ref": "r4toushoyosan.pdf#p14",
+            "refLabel": "予算書 p.14"
+          },
+          {
+            "name": "財産収入",
+            "v": 0.78613,
+            "prevV": 0.77557,
+            "yoy": 1.4,
+            "ref": "r4toushoyosan.pdf#p14",
+            "refLabel": "予算書 p.14"
+          },
+          {
+            "name": "環境性能割交付金",
+            "v": 0.56538,
+            "prevV": 0.2832,
+            "yoy": 99.6,
+            "ref": "r4toushoyosan.pdf#p14",
+            "refLabel": "予算書 p.14"
+          },
+          {
+            "name": "交通安全対策特別交付金",
+            "v": 0.40443,
+            "prevV": 0.40829,
+            "yoy": -0.9,
+            "ref": "r4toushoyosan.pdf#p14",
+            "refLabel": "予算書 p.14"
+          },
+          {
+            "name": "利子割交付金",
+            "v": 0.18752,
+            "prevV": 0.15892,
+            "yoy": 18,
+            "ref": "r4toushoyosan.pdf#p14",
+            "refLabel": "予算書 p.14"
+          },
+          {
+            "name": "繰越金",
+            "v": 0.00001,
+            "prevV": 0.00001,
+            "yoy": 0,
+            "ref": "r4toushoyosan.pdf#p14",
+            "refLabel": "予算書 p.14"
+          }
+        ]
+      },
+      {
+        "name": "寄附金",
+        "v": 20,
+        "prevV": 16.00001,
+        "yoy": 25,
+        "ref": "r4toushoyosan.pdf#p14",
+        "refLabel": "予算書 p.14"
+      },
+      {
+        "name": "繰入金",
+        "v": 8.33032,
+        "prevV": 6.05533,
+        "yoy": 37.6,
+        "ref": "r4toushoyosan.pdf#p14",
+        "refLabel": "予算書 p.14"
+      }
+    ],
+    "expenditure": [
+      {
+        "name": "民生費",
+        "v": 336.56153,
+        "prevV": 329.67737,
+        "yoy": 2.1,
+        "ref": "r4toushoyosan.pdf#p15",
+        "refLabel": "予算書 p.15"
+      },
+      {
+        "name": "公債費",
+        "v": 113.01584,
+        "prevV": 99.48993,
+        "yoy": 13.6,
+        "ref": "r4toushoyosan.pdf#p15",
+        "refLabel": "予算書 p.15"
+      },
+      {
+        "name": "衛生費",
+        "v": 102.04399,
+        "prevV": 96.49247,
+        "yoy": 5.8,
+        "ref": "r4toushoyosan.pdf#p15",
+        "refLabel": "予算書 p.15"
+      },
+      {
+        "name": "総務費",
+        "v": 87.70002,
+        "prevV": 83.9691,
+        "yoy": 4.4,
+        "ref": "r4toushoyosan.pdf#p15",
+        "refLabel": "予算書 p.15"
+      },
+      {
+        "name": "教育費",
+        "v": 61.11437,
+        "prevV": 55.1879,
+        "yoy": 10.7,
+        "ref": "r4toushoyosan.pdf#p15",
+        "refLabel": "予算書 p.15"
+      },
+      {
+        "name": "土木費",
+        "v": 43.22595,
+        "prevV": 45.93486,
+        "yoy": -5.9,
+        "ref": "r4toushoyosan.pdf#p15",
+        "refLabel": "予算書 p.15"
+      },
+      {
+        "name": "消防費",
+        "v": 22.87509,
+        "prevV": 22.22896,
+        "yoy": 2.9,
+        "ref": "r4toushoyosan.pdf#p15",
+        "refLabel": "予算書 p.15"
+      },
+      {
+        "name": "農林水産業費",
+        "v": 10.29657,
+        "prevV": 9.18946,
+        "yoy": 12,
+        "ref": "r4toushoyosan.pdf#p15",
+        "refLabel": "予算書 p.15"
+      },
+      {
+        "name": "商工費",
+        "v": 9.18793,
+        "prevV": 7.19518,
+        "yoy": 27.7,
+        "ref": "r4toushoyosan.pdf#p15",
+        "refLabel": "予算書 p.15"
+      },
+      {
+        "name": "議会費",
+        "v": 5.39091,
+        "prevV": 5.46668,
+        "yoy": -1.4,
+        "ref": "r4toushoyosan.pdf#p15",
+        "refLabel": "予算書 p.15"
+      },
+      {
+        "name": "労働費",
+        "v": 1.87321,
+        "prevV": 2.09523,
+        "yoy": -10.6,
+        "ref": "r4toushoyosan.pdf#p15",
+        "refLabel": "予算書 p.15"
+      },
+      {
+        "name": "諸支出金",
+        "v": 1.33843,
+        "prevV": 1.3507,
+        "yoy": -0.9,
+        "ref": "r4toushoyosan.pdf#p15",
+        "refLabel": "予算書 p.15"
+      },
+      {
+        "name": "予備費",
+        "v": 0.2,
+        "prevV": 0.2,
+        "yoy": 0,
+        "ref": "r4toushoyosan.pdf#p15",
+        "refLabel": "予算書 p.15"
+      },
+      {
+        "name": "災害復旧費",
+        "v": 0.00004,
+        "prevV": 0.00004,
+        "yoy": 0,
+        "ref": "r4toushoyosan.pdf#p15",
+        "refLabel": "予算書 p.15"
+      }
+    ],
+    "evidence": [
+      {
+        "title": "令和4年度 甲府市当初予算資料（WARP回収）",
+        "type": "PDF",
+        "url": "https://warp.ndl.go.jp/20240509/20240508214215/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r4toushoyosan.pdf",
+        "localUrl": "/sources/kofu-yosansho-r4/r4toushoyosan.pdf",
+        "source": "warp.ndl.go.jp",
+        "thumb": "r4toushoyosan.pdf ・ sha256 67137914dc46c079… ・ 2026-07-12 取得"
+      }
+    ]
+  },
+  {
     "fy": "R3",
     "fyLabel": "令和3年度 当初予算",
     "population": 187048,
@@ -1011,6 +1656,7 @@ export const KOFU_BUDGET_YEARS: KofuBudgetYear[] = [
     "prevTotalOku": 744.29982,
     "yoyLabel": "+1.9%",
     "prevBasis": "当初",
+    "prevNote": "",
     "sourceTitle": "令和3年度 甲府市当初予算資料（款別一覧表・主な事業）",
     "sourceUrl": "https://web.archive.org/web/20260712104219/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/2r03ippankaikeisainyusaisyutu.pdf",
     "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/2r03ippankaikeisainyusaisyutu.pdf",
@@ -1338,6 +1984,7 @@ export const KOFU_BUDGET_YEARS: KofuBudgetYear[] = [
     "prevTotalOku": 749.9907,
     "yoyLabel": "-0.8%",
     "prevBasis": "補正後",
+    "prevNote": "",
     "sourceTitle": "令和2年度 甲府市当初予算資料（款別一覧表・主な事業）",
     "sourceUrl": "https://web.archive.org/web/20260712104422/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r02sainyuusaishutu.pdf",
     "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r02sainyuusaishutu.pdf",

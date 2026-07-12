@@ -1,0 +1,1304 @@
+{
+  "docType": "budget-book",
+  "sourceId": "kofu-yosansho-r4",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-07-12T13:41:10.346Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R4",
+  "account": "一般会計",
+  "revenueTotal": 79482388,
+  "expenditureTotal": 79482388,
+  "prevRevenueTotal": 75847788,
+  "prevExpenditureTotal": 75847788,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "市税",
+      "amount": 28486961,
+      "prevAmount": 27070575,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "地方譲与税",
+      "amount": 437430,
+      "prevAmount": 406285,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "利子割交付金",
+      "amount": 18752,
+      "prevAmount": 15892,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "配当割交付金",
+      "amount": 98555,
+      "prevAmount": 89949,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 120811,
+      "prevAmount": 115641,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "法人事業税交付金",
+      "amount": 482213,
+      "prevAmount": 323224,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "地方消費税交付金",
+      "amount": 4803273,
+      "prevAmount": 4626147,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "環境性能割交付金",
+      "amount": 56538,
+      "prevAmount": 28320,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "地方特例交付金",
+      "amount": 147680,
+      "prevAmount": 521710,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "地方交付税",
+      "amount": 9877500,
+      "prevAmount": 9345578,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 40443,
+      "prevAmount": 40829,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "分担金及び負担金",
+      "amount": 328157,
+      "prevAmount": 354898,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "使用料及び手数料",
+      "amount": 989753,
+      "prevAmount": 999555,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "国庫支出金",
+      "amount": 14800508,
+      "prevAmount": 13481860,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "県支出金",
+      "amount": 6213384,
+      "prevAmount": 5936582,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "財産収入",
+      "amount": 78613,
+      "prevAmount": 77557,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 17,
+      "kanName": "寄附金",
+      "amount": 2000000,
+      "prevAmount": 1600001,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 18,
+      "kanName": "繰入金",
+      "amount": 833032,
+      "prevAmount": 605533,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 19,
+      "kanName": "繰越金",
+      "amount": 1,
+      "prevAmount": 1,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 20,
+      "kanName": "諸収入",
+      "amount": 1928684,
+      "prevAmount": 1563751,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 21,
+      "kanName": "市債",
+      "amount": 7740100,
+      "prevAmount": 8643900,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 539091,
+      "prevAmount": 546668,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 15
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 8770002,
+      "prevAmount": 8396910,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 15
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "民生費",
+      "amount": 33656153,
+      "prevAmount": 32967737,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 15
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "衛生費",
+      "amount": 10204399,
+      "prevAmount": 9649247,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 15
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "労働費",
+      "amount": 187321,
+      "prevAmount": 209523,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 15
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "農林水産業費",
+      "amount": 1029657,
+      "prevAmount": 918946,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 15
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "商工費",
+      "amount": 918793,
+      "prevAmount": 719518,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 15
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "土木費",
+      "amount": 4322595,
+      "prevAmount": 4593486,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 15
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "消防費",
+      "amount": 2287509,
+      "prevAmount": 2222896,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 15
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "教育費",
+      "amount": 6111437,
+      "prevAmount": 5518790,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 15
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 11,
+      "kanName": "災害復旧費",
+      "amount": 4,
+      "prevAmount": 4,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 15
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 12,
+      "kanName": "公債費",
+      "amount": 11301584,
+      "prevAmount": 9948993,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 15
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 13,
+      "kanName": "諸支出金",
+      "amount": 133843,
+      "prevAmount": 135070,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 15
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 14,
+      "kanName": "予備費",
+      "amount": 20000,
+      "prevAmount": 20000,
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 15
+      }
+    }
+  ],
+  "projects": [
+    {
+      "kan": "総務費",
+      "no": 1,
+      "kubun": null,
+      "name": "ふるさと応援寄附金推進事業費",
+      "budgetBookName": null,
+      "amount": 983395,
+      "description": "ふるさと納税や企業版ふるさと納税を活用し、本市の魅力や地場産品等をPRします。",
+      "basicGoal": "基本構想の推進",
+      "shisaku": "持続可能な行財政運営",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": 2,
+      "kubun": "新規",
+      "name": "結婚新生活支援事業費補助金",
+      "budgetBookName": "移住・定住促進事業費",
+      "amount": 8400,
+      "description": "移住・定住の促進等を図るため、新婚世帯を対象に住居費や引越費用などを支援します。",
+      "basicGoal": "基本目標2",
+      "shisaku": "移住・定住の促進",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": 3,
+      "kubun": "新規",
+      "name": "こうふ開府500年レガシー事業費",
+      "budgetBookName": null,
+      "amount": 3951,
+      "description": "こうふ開府500年を契機として創出したレガシー事業を実施し、更なる郷土愛の醸成に努めます。",
+      "basicGoal": "基本目標1",
+      "shisaku": "生涯学習の充実",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": 4,
+      "kubun": "新規",
+      "name": "SDGs推進事業費",
+      "budgetBookName": null,
+      "amount": 5000,
+      "description": "持続可能な社会の実現に向け、SDGsの推進に取り組む市内の事業所等を支援します。",
+      "basicGoal": "基本構想の推進",
+      "shisaku": "持続可能な行財政運営",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": 5,
+      "kubun": "新規",
+      "name": "行政手続きオンライン化に伴うシステムの構築",
+      "budgetBookName": "情報システム事業費",
+      "amount": 21597,
+      "description": "マイナンバーカードを活用した子育てや介護関係の申請を、オンラインで手続きをすることができるシステムを構築します。",
+      "basicGoal": "基本構想の推進",
+      "shisaku": "持続可能な行財政運営",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": 6,
+      "kubun": "新規",
+      "name": "AIOCR・RPAの導入",
+      "budgetBookName": "情報システム事業費",
+      "amount": 4485,
+      "description": "業務効率の向上や業務時間の縮減を図るためのシステムの導入により、職員の働き方改革を推進し、更なる市民サービスの向上を図ります。",
+      "basicGoal": "基本構想の推進",
+      "shisaku": "持続可能な行財政運営",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": 7,
+      "kubun": "新規",
+      "name": "日本女性会議2021in甲府のレガシー事業の構築",
+      "budgetBookName": "男女共同参画推進事業費",
+      "amount": 168,
+      "description": "女性が活きいきと活躍するまちづくりの実現に向け、日本女性会議2021in甲府のレガシー事業検討委員会を立ち上げ、効果的な取組を構築します。",
+      "basicGoal": "基本目標1",
+      "shisaku": "人権尊重・男女共同参画の推進",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": 8,
+      "kubun": null,
+      "name": "個人番号制度管理事業費",
+      "budgetBookName": null,
+      "amount": 133789,
+      "description": "マイナポイント申請サポート窓口の設置やワクチン接種会場での出張申請受付などの実施により、マイナンバーカードの更なる普及啓発を図ります。",
+      "basicGoal": "基本構想の推進",
+      "shisaku": "持続可能な行財政運営",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": 9,
+      "kubun": "新規",
+      "name": "福祉センター及び上九の湯ふれあいセンターのトイレ洋便器化",
+      "budgetBookName": "福祉センター費",
+      "amount": 38218,
+      "description": "利用者の利便性の向上を図るため、山宮・貢川・相川福祉センター及び上九の湯ふれあいセンターのトイレの洋便器化改修工事を実施します。",
+      "basicGoal": "基本目標3",
+      "shisaku": "高齢者福祉の充実",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": 10,
+      "kubun": null,
+      "name": "自立支援サービス事業費",
+      "budgetBookName": null,
+      "amount": 4157824,
+      "description": "障がい者が住み慣れた地域で安心して暮らせるよう、各種福祉サービスを提供します。",
+      "basicGoal": "基本目標3",
+      "shisaku": "障がい者福祉の充実",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": 11,
+      "kubun": "新規",
+      "name": "医療的ケア児コーディネーターの配置",
+      "budgetBookName": "地域生活支援事業費",
+      "amount": 2325,
+      "description": "日常生活を営むために医療が必要な障がい児等が、適切な相談支援を受けることができる仕組みを構築するため、コーディネーターを配置します。",
+      "basicGoal": "基本目標3",
+      "shisaku": "障がい者福祉の充実",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": 12,
+      "kubun": "新規",
+      "name": "ペアレントトレーニングの実施",
+      "budgetBookName": "地域生活支援事業費",
+      "amount": 367,
+      "description": "発達障がい児の保護者が、子どもの特性を理解することや、適切に対応するための知識・方法を身につけることを支援するため、発達促進等を目的とした保護者向けのプログラムを実施します。",
+      "basicGoal": "基本目標3",
+      "shisaku": "障がい者福祉の充実",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": 13,
+      "kubun": "新規",
+      "name": "失語症者向け意思疎通支援者派遣",
+      "budgetBookName": "地域生活支援事業費",
+      "amount": 953,
+      "description": "言語機能等の障害により、意思疎通に支障のある失語症者の社会参加を支援するため、意思疎通支援者を派遣します。",
+      "basicGoal": "基本目標3",
+      "shisaku": "障がい者福祉の充実",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": 14,
+      "kubun": null,
+      "name": "障害児通所支援事業費",
+      "budgetBookName": null,
+      "amount": 1121885,
+      "description": "障がい児が住み慣れた地域で安心して暮らせるよう、日常生活に必要な療育的な訓練や生活能力の向上のためのサービスを提供します。",
+      "basicGoal": "基本目標3",
+      "shisaku": "障がい者福祉の充実",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": 15,
+      "kubun": "拡充",
+      "name": "放課後児童クラブ事業費",
+      "budgetBookName": null,
+      "amount": 309639,
+      "description": "新型コロナウイルス感染症対策のため、分散し密を避けるためのクラブ運営を継続し、児童の安心した居場所づくりの提供に努めます。",
+      "basicGoal": "基本目標1",
+      "shisaku": "子ども・子育てへの支援",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": 16,
+      "kubun": "拡充",
+      "name": "すこやか子育て医療費助成事業費",
+      "budgetBookName": null,
+      "amount": 705879,
+      "description": "現在、中学生までを対象としている子どもの医療費助成について、子育て世帯における経済的負担軽減のため、高校3年生相当までの対象拡充に向けた取組を進めます。",
+      "basicGoal": "基本目標1",
+      "shisaku": "子ども・子育てへの支援",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": 17,
+      "kubun": "拡充",
+      "name": "子育て総合相談窓口運営事業費",
+      "budgetBookName": null,
+      "amount": 12930,
+      "description": "ヤングケアラーや支援が必要な家庭への対応など、子どもに関する各種支援の充実を図ります。",
+      "basicGoal": "基本目標1",
+      "shisaku": "子ども・子育てへの支援",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": 18,
+      "kubun": "新規",
+      "name": "「（仮称）子ども応援フェスタ」の開催",
+      "budgetBookName": "子ども応援事業費",
+      "amount": 1000,
+      "description": "令和3年度実施の子ども未来フォーラムを引き継ぎ、多様な体験機会の提供等を通じて、子どもの「育ち」を応援する「(仮称)子ども応援フェスタ」を開催します。",
+      "basicGoal": "基本目標1",
+      "shisaku": "子ども・子育てへの支援",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": 19,
+      "kubun": null,
+      "name": "教育・保育施設等運営給付費",
+      "budgetBookName": null,
+      "amount": 6502304,
+      "description": "認定こども園や保育所等への施設型給付費及び地域子ども・子育て支援事業（延長保育事業等）の実施に対する補助金等の給付により、安定した教育・保育の提供に努めます。",
+      "basicGoal": "基本目標1",
+      "shisaku": "子ども・子育てへの支援",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": 20,
+      "kubun": null,
+      "name": "生活保護扶助費",
+      "budgetBookName": null,
+      "amount": 5073978,
+      "description": "生活に困窮する方に対し、その困窮の程度に応じて必要な保護を行います。",
+      "basicGoal": "基本目標3",
+      "shisaku": "社会保障の充実",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": 21,
+      "kubun": "新規",
+      "name": "アウトリーチ型産後ケア事業",
+      "budgetBookName": "母子保健事業費",
+      "amount": 3825,
+      "description": "不安を抱える産婦のもとへ助産師が訪問し、産後ケアを実施する「アウトリーチ型産後ケア事業」に取り組みます。",
+      "basicGoal": "基本目標3",
+      "shisaku": "健康づくりの推進",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": 22,
+      "kubun": null,
+      "name": "新型コロナウイルスワクチン接種の推進",
+      "budgetBookName": "各種予防費",
+      "amount": 641152,
+      "description": "新型コロナウイルス感染症のまん延防止を図るため、市民が安全・安心にワクチンを接種できる体制を整備します。",
+      "basicGoal": "基本目標3",
+      "shisaku": "健康づくりの推進",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": 23,
+      "kubun": null,
+      "name": "抗原検査キットの確保",
+      "budgetBookName": "感染症対策事業費",
+      "amount": 45614,
+      "description": "新型コロナウイルス感染症のまん延防止を図るため、抗原検査キットを確保します。",
+      "basicGoal": "基本目標3",
+      "shisaku": "健康づくりの推進",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": 24,
+      "kubun": "新規",
+      "name": "高齢者の保健事業と介護予防の一体的な実施",
+      "budgetBookName": "健康政策推進事業費",
+      "amount": 18909,
+      "description": "高齢者一人一人の状態に応じた生活習慣病予防や地域の通いの場等におけるフレイル予防などに取り組み、更なる健康寿命の延伸を図ります。",
+      "basicGoal": "基本目標3",
+      "shisaku": "健康づくりの推進",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": 25,
+      "kubun": "拡充",
+      "name": "ひきこもり対策及び自殺対策の推進",
+      "budgetBookName": "精神保健福祉事業費",
+      "amount": 9183,
+      "description": "コロナ禍で不安やストレスが高まる社会状況の中、こころの健康を守るためにひきこもりに関する正しい知識の普及・啓発を図るとともに、若年層に対する自殺対策を推進します。",
+      "basicGoal": "基本目標3",
+      "shisaku": "健康づくりの推進",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": 26,
+      "kubun": "拡充",
+      "name": "猫の不妊・去勢手術費補助金",
+      "budgetBookName": "動物愛護事業費",
+      "amount": 4500,
+      "description": "市内に生息する飼い主のいない猫に対する不妊・去勢手術費への補助額を増やし、市民の動物愛護と適正管理に関する意識啓発を図ります。",
+      "basicGoal": "基本目標4",
+      "shisaku": "生活衛生の充実",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": 27,
+      "kubun": "新規",
+      "name": "電気自動車の購入補助",
+      "budgetBookName": "地球温暖化対策事業費",
+      "amount": 2400,
+      "description": "ゼロカーボンシティに向けた取組を推進するため、電気自動車購入への支援を実施します。",
+      "basicGoal": "基本目標4",
+      "shisaku": "自然環境の保全と地球温暖化対策の推進",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": 28,
+      "kubun": null,
+      "name": "甲府タベスケの普及",
+      "budgetBookName": "ごみ減量と資源リサイクル事業費",
+      "amount": 396,
+      "description": "食品ロス削減のための取組として導入した「甲府タベスケ」の普及を図ります。",
+      "basicGoal": "基本目標4",
+      "shisaku": "循環型社会の構築",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": 29,
+      "kubun": "新規",
+      "name": "農業の担い手確保対策",
+      "budgetBookName": "農業経営基盤強化促進対策事業費",
+      "amount": 3000,
+      "description": "農業の担い手を確保するため、農家子弟の親元就農や農業経営を継承する後継者を支援します。",
+      "basicGoal": "基本目標2",
+      "shisaku": "農業・林業の振興",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": 30,
+      "kubun": null,
+      "name": "森林の整備・普及啓発に向けた取組",
+      "budgetBookName": "森づくり推進事業費、森林林業普及啓発事業費",
+      "amount": 13856,
+      "description": "森林整備の進展や木材利用の促進・普及啓発等を図るため、森林の間伐や市内児童館等への県産材を使用した木製玩具等の配布を行います。",
+      "basicGoal": "基本目標2",
+      "shisaku": "農業・林業の振興",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": 31,
+      "kubun": "新規",
+      "name": "山のぼり・まち歩き促進事業",
+      "budgetBookName": "森林林業普及啓発事業費",
+      "amount": 5000,
+      "description": "甲府名山への登山を契機とした市内周遊を促進するための取組を実施します。",
+      "basicGoal": "基本目標2",
+      "shisaku": "農業・林業の振興",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": 32,
+      "kubun": null,
+      "name": "がんばろう甲府！最大20％戻ってくるキャンペーン（第4弾）",
+      "budgetBookName": "商工業推進事業費",
+      "amount": 150002,
+      "description": "コロナ禍により落ち込んだ消費の喚起や新しい生活様式を推進するため、キャッシュレス決済で買い物をするとポイント還元が受けられるキャンペーンを実施します。",
+      "basicGoal": "基本目標2",
+      "shisaku": "商業・工業の振興",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": 33,
+      "kubun": "新規",
+      "name": "宝石のまち甲府「ジュエリーツーリズム」",
+      "budgetBookName": "地場産業振興対策事業費",
+      "amount": 3208,
+      "description": "宝飾産業の振興のため、「宝石のまち甲府」での工房体験や市内周遊を通じて産地の魅力を発信し、販路拡大やビジネスマッチングなどを行うツーリズムを実施します。",
+      "basicGoal": "基本目標2",
+      "shisaku": "商業・工業の振興",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": 34,
+      "kubun": "新規",
+      "name": "企業誘致に向けた市場調査",
+      "budgetBookName": "産業立地等推進事業費",
+      "amount": 10000,
+      "description": "地域経済の発展を目指し、新たな成長産業や未来産業等を見据えた産業立地を推進するため、企業誘致に関する市場調査を行います。",
+      "basicGoal": "基本目標2",
+      "shisaku": "商業・工業の振興",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": 35,
+      "kubun": "新規",
+      "name": "湯村山城跡烽火（のろし）台の整備",
+      "budgetBookName": "観光施設整備事業費",
+      "amount": 8000,
+      "description": "湯村温泉エリアへの誘客を促進するため、クラウドファンディングを活用して湯村山への烽火（のろし）台を整備します。",
+      "basicGoal": "基本目標2",
+      "shisaku": "観光の振興",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": 36,
+      "kubun": null,
+      "name": "日本遺産関連事業の推進",
+      "budgetBookName": "観光開発事業費",
+      "amount": 6034,
+      "description": "昇仙峡エリアへの誘客促進及び受入体制を整備するための昇仙峡地域活性化推進協議会への負担金や、日本遺産昇仙峡リバイバル推進事業への助成を行います。",
+      "basicGoal": "基本目標2",
+      "shisaku": "観光の振興",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": 37,
+      "kubun": "新規",
+      "name": "春日本通り線整備事業費",
+      "budgetBookName": null,
+      "amount": 7920,
+      "description": "甲府城周辺と遊亀公園・附属動物園を結び、賑わいの創出につながる道路空間を整備するため、春日本通り線の道路設計を実施します。",
+      "basicGoal": "基本目標2",
+      "shisaku": "中心市街地の活性化",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": 38,
+      "kubun": null,
+      "name": "甲府城周辺地域活性化計画整備事業費",
+      "budgetBookName": null,
+      "amount": 131788,
+      "description": "甲府城を活かした歴史・文化が感じられる空間づくりの実現に向けて、整備の一環としてエリア内の建物の解体などを行います。",
+      "basicGoal": "基本目標2",
+      "shisaku": "中心市街地の活性化",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": 39,
+      "kubun": "新規",
+      "name": "地域デザイン推進事業費",
+      "budgetBookName": null,
+      "amount": 9577,
+      "description": "地域の特性を活かした将来像を実現するため、未来ビジョンの策定に向けて取り組みます。",
+      "basicGoal": "基本目標4",
+      "shisaku": "計画的な土地利用の推進",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": 40,
+      "kubun": null,
+      "name": "甲府駅周辺土地区画整理事業費",
+      "budgetBookName": null,
+      "amount": 452678,
+      "description": "暮らしやすさの向上や活気ある市街地の形成を図るため、朝日町ガードの詳細設計をはじめとする整備を行います。",
+      "basicGoal": "基本目標4",
+      "shisaku": "市街地の整備",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": 41,
+      "kubun": null,
+      "name": "和戸町竜王線整備事業費",
+      "budgetBookName": null,
+      "amount": 128514,
+      "description": "東西地域を結ぶ主要な幹線道路である和戸町竜王線の整備を進め、中心市街地の交通の円滑化を図ります。",
+      "basicGoal": "基本目標4",
+      "shisaku": "道路の整備",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": 42,
+      "kubun": null,
+      "name": "城東三丁目敷島線整備事業費",
+      "budgetBookName": null,
+      "amount": 37000,
+      "description": "地域経済を支え、市民の日常生活の活動基盤として必要不可欠な都市計画道路の整備を推進するため、城東三丁目敷島線（伊勢工区）の用地測量・建物等補償調査を実施します。",
+      "basicGoal": "基本目標4",
+      "shisaku": "道路の整備",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": 43,
+      "kubun": "新規",
+      "name": "住吉四丁目善光寺線整備事業費",
+      "budgetBookName": null,
+      "amount": 12500,
+      "description": "地域経済を支え、市民の日常生活の活動基盤として必要不可欠な都市計画道路の整備を推進するため、住吉四丁目善光寺線（善光寺工区）の道路設計を実施します。",
+      "basicGoal": "基本目標4",
+      "shisaku": "道路の整備",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": 44,
+      "kubun": "新規",
+      "name": "高畑町昇仙峡線整備事業費",
+      "budgetBookName": null,
+      "amount": 10600,
+      "description": "地域経済を支え、市民の日常生活の活動基盤として必要不可欠な都市計画道路の整備を推進するため、高畑町昇仙峡線（池田工区）の道路設計を実施します。",
+      "basicGoal": "基本目標4",
+      "shisaku": "道路の整備",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": 45,
+      "kubun": null,
+      "name": "遊亀公園・附属動物園整備事業費",
+      "budgetBookName": null,
+      "amount": 185838,
+      "description": "多くの方々に愛され、人にも動物にも優しい遊亀公園・附属動物園の整備を推進するため、園内の造成工事などを実施します。",
+      "basicGoal": "基本目標4",
+      "shisaku": "公園の整備と緑化の推進",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": 46,
+      "kubun": null,
+      "name": "緑が丘スポーツ公園整備事業費",
+      "budgetBookName": null,
+      "amount": 472202,
+      "description": "県が施工する新環状・緑が丘アクセス線の整備に合わせ、緑が丘スポーツ公園の整備を推進するため、野球場やテニスコートなどの工事を実施します。",
+      "basicGoal": "基本目標1",
+      "shisaku": "スポーツの振興",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": 47,
+      "kubun": "新規",
+      "name": "北新分団本部拠点施設の建替えに向けた実施設計・地質調査などの実施",
+      "budgetBookName": "非常備消防費",
+      "amount": 4506,
+      "description": "老朽化した北新分団本部拠点施設の建替えに伴う実施設計や地質調査等を行います。",
+      "basicGoal": "基本目標3",
+      "shisaku": "消防・救急体制の充実",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": 48,
+      "kubun": "拡充",
+      "name": "消防団員の処遇改善",
+      "budgetBookName": "非常備消防費",
+      "amount": 7761,
+      "description": "消防団員の処遇改善を図るため、年額報酬の増額及び災害出動手当を創設します。",
+      "basicGoal": "基本目標3",
+      "shisaku": "消防・救急体制の充実",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": 49,
+      "kubun": "新規",
+      "name": "水害時の想定浸水深看板等の設置",
+      "budgetBookName": "一般管理費",
+      "amount": 567,
+      "description": "市民の防災意識の向上を図るため、水害時の想定浸水深を示す看板や表示テープを電柱に設置します。",
+      "basicGoal": "基本目標3",
+      "shisaku": "防災・危機管理対策の推進",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": 50,
+      "kubun": "新規",
+      "name": "「わが家の防災マニュアル」のリニューアル",
+      "budgetBookName": "防災対策整備事業費",
+      "amount": 7898,
+      "description": "警戒レベルの導入や法改正に伴う避難情報の名称変更など、「わが家の防災マニュアル」を最新の内容に更新し、全戸配布します。",
+      "basicGoal": "基本目標3",
+      "shisaku": "防災・危機管理対策の推進",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": 51,
+      "kubun": "新規",
+      "name": "改訂版洪水ハザードマップ全戸配布",
+      "budgetBookName": "水防費",
+      "amount": 6532,
+      "description": "鎌田川と貢川の想定最大規模の浸水想定区域を追加した洪水ハザードマップを全戸配布します。",
+      "basicGoal": "基本目標3",
+      "shisaku": "防災・危機管理対策の推進",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": 52,
+      "kubun": "拡充",
+      "name": "GIGAスクール構想の推進",
+      "budgetBookName": "サポートティーチャー事業費、教材・情報環境整備事業費、一般振興費",
+      "amount": 95606,
+      "description": "GIGAスクール構想を推進していくため、学習支援ソフトの導入や小学校の教室にある大型テレビを更新し、また、商業高校における学習環境を整備します。",
+      "basicGoal": "基本目標1",
+      "shisaku": "学校教育の充実",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": 53,
+      "kubun": null,
+      "name": "学習指導員の配置",
+      "budgetBookName": "サポートティーチャー事業費",
+      "amount": 67935,
+      "description": "コロナ対策として学習内容の定着が不十分な児童生徒に対してきめ細かなフォローをするため、学習指導員を継続配置します。",
+      "basicGoal": "基本目標1",
+      "shisaku": "学校教育の充実",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": 54,
+      "kubun": null,
+      "name": "スクール・サポート・スタッフの配置",
+      "budgetBookName": "サポートティーチャー事業費",
+      "amount": 60023,
+      "description": "コロナ対策として校内の消毒作業など授業以外の部分における教職員の業務を補助するため、スクール・サポート・スタッフを継続配置します。",
+      "basicGoal": "基本目標1",
+      "shisaku": "学校教育の充実",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": 55,
+      "kubun": "新規",
+      "name": "学校給食費の公会計化",
+      "budgetBookName": "学校給食費",
+      "amount": 735565,
+      "description": "学校給食費の徴収に係る業務等を、本市が担うべき業務として学校給食費の公会計化を導入し、教職員の多忙化改善を図ります。",
+      "basicGoal": "基本目標1",
+      "shisaku": "学校教育の充実",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": 56,
+      "kubun": "新規",
+      "name": "スクールロイヤーの配置",
+      "budgetBookName": "学校危機管理体制整備事業費",
+      "amount": 440,
+      "description": "教育関係の法律相談を要する事案増加に対応するため、スクールロイヤーを配置します。",
+      "basicGoal": "基本目標1",
+      "shisaku": "学校教育の充実",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": 57,
+      "kubun": "拡充",
+      "name": "スクールソーシャルワーカーの配置",
+      "budgetBookName": "学校危機管理体制整備事業費",
+      "amount": 5545,
+      "description": "ヤングケアラー問題や学校におけるいじめ、不登校等に対応するため、スクールソーシャルワーカーを増員します。",
+      "basicGoal": "基本目標1",
+      "shisaku": "学校教育の充実",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": 58,
+      "kubun": "新規",
+      "name": "信玄公没後450年カウントダウン企画展の実施",
+      "budgetBookName": "武田氏館跡歴史館管理運営事業費",
+      "amount": 2072,
+      "description": "令和5年の信玄公没後450年に向けて、その功績と生涯に関心を持ってもらえるよう、信玄ミュージアムにおいて展示会を実施します。",
+      "basicGoal": "基本目標1",
+      "shisaku": "文化・芸術の振興",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": 59,
+      "kubun": "新規",
+      "name": "電子書籍の導入",
+      "budgetBookName": "図書館管理運営費",
+      "amount": 3465,
+      "description": "コロナ禍における「新しい生活様式」に沿ったサービスとして、電子書籍を導入します。",
+      "basicGoal": "基本目標1",
+      "shisaku": "生涯学習の充実",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": 60,
+      "kubun": "新規",
+      "name": "緑が丘スポーツ公園陸上競技場二種公認の継続",
+      "budgetBookName": "各種スポーツ施設管理事業費",
+      "amount": 115432,
+      "description": "緑が丘スポーツ公園陸上競技場の二種公認を更新するための工事等を実施します。",
+      "basicGoal": "基本目標1",
+      "shisaku": "スポーツの振興",
+      "locator": {
+        "file": "r4toushoyosan.pdf",
+        "page": 22
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+name: 資料リクエスト
+description: 未収録の一次資料の収録を希望する（賛同が貯まったら情報公開請求などで取得します）
+title: "[資料リクエスト] "
+labels: ["資料リクエスト"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        未収録の一次資料（例: 事務事業評価の詳細票、主要な施策の成果報告書、予算書本編など）の
+        収録リクエストです。**賛同は 👍 リアクションでお願いします**（コメント不要）。
+        賛同が一定数貯まったものから、情報公開請求などで取得し、検証つきで収録します。
+        取得〜収録の経緯はこの Issue に記録され、収録 PR がリンクされます。
+  - type: input
+    id: source-name
+    attributes:
+      label: 資料名
+      description: 例「令和6年度 事務事業評価票（全事業分）」
+      placeholder: 資料の名前・年度
+    validations:
+      required: true
+  - type: input
+    id: publisher
+    attributes:
+      label: 発行元
+      placeholder: 例「甲府市」
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 何を知りたいか
+      description: この資料で何がトレースできるようになるか（任意）
+      placeholder: 例「◯◯事業の実際の執行額と成果指標を見たい」
+  - type: textarea
+    id: hints
+    attributes:
+      label: 所在の手がかり（任意）
+      description: 見かけた場所・過去の掲載 URL・関連ページなど

@@ -3,7 +3,7 @@
   "sourceId": "kofu-yosansho-r6",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-07-12T10:44:32.410Z",
+  "parsedAt": "2026-07-12T13:41:10.036Z",
   "unit": "thousandYen",
   "fiscalYear": "R6",
   "account": "一般会計",
@@ -12,6 +12,7 @@
   "prevRevenueTotal": 79938632,
   "prevExpenditureTotal": 79938632,
   "prevBasis": "当初",
+  "prevNote": "令和5年度当初予算額は、6月補正における政策的予算（KOFUNEXTACTION）を含む",
   "facts": [
     {
       "side": "revenue",
