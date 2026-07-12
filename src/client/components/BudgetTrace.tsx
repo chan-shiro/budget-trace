@@ -339,7 +339,12 @@ export default function BudgetTrace() {
 
   // --- 予算執行状況（R7=財政事情の速報、R6〜R1=決算状況の確定値。R3 は資料消失で欠落） ---
   const execSide = s.execSide || "exp";
-  const execYear = KOFU_EXECUTION_YEARS.find((y) => y.fy === s.execFy) ?? KOFU_EXECUTION_YEARS[0]!;
+  // 年度の既定はヘッダの年度ドロップダウンに追従する（過去年度を見ている人が
+  // 執行タブを開いたらその年度の確定執行が出る）。ピルで明示選択したらそちらが優先
+  const execYear =
+    KOFU_EXECUTION_YEARS.find((y) => y.fy === s.execFy) ??
+    KOFU_EXECUTION_YEARS.find((y) => y.fy === budget.fy) ??
+    KOFU_EXECUTION_YEARS[0]!;
   const execRows0 = execSide === "rev" ? execYear.revenue : execYear.expenditure;
   const execBudgetTotal = execSide === "rev" ? execYear.revenueBudgetTotalOku : execYear.expenditureBudgetTotalOku;
   const execSettledTotal = execSide === "rev" ? execYear.revenueSettledTotalOku : execYear.expenditureSettledTotalOku;
@@ -451,7 +456,7 @@ export default function BudgetTrace() {
     // 年度切り替え（収録済みの当初予算年度）。切替時はドリル位置・テーマ選択をリセット
     yearOptions: KOFU_BUDGET_YEARS.map((b) => ({ value: b.fy, label: b.fyLabel })),
     yearSel: budget.fy,
-    pickYear: (fy: string) => setSt({ budgetFy: fy, drillPath: [], theme: null }),
+    pickYear: (fy: string) => setSt({ budgetFy: fy, drillPath: [], theme: null, execFy: undefined }),
     navTabs,
     dashTitle: `${data.name}の予算`, totalFmt: fmtV(totalNow),
     totalFmtAnim: <CountUpNum value={totalNow} fmt={fmtV} />,
