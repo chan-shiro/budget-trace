@@ -252,6 +252,50 @@ export const SOURCES: SourceEntry[] = [
       expenditureHeading: "一般会計歳出",
     },
   },
+  {
+    // 沼津市（静岡県・団体コード 222038）。「歳入歳出予算款別前年度比較表（1）一般会計」
+    // s-1.pdf（2p）。歳入 p.1・歳出 p.2 の別ページ型。金額に「千円」「％」がインラインだが
+    // amount 正規表現が無視する。款番号は半角・負号 △。見出しは節の「歳入」「歳出」。
+    id: "numazu-yosansho-r7",
+    title: "令和7年度 沼津市予算（款別歳入歳出前年度比較表）",
+    publisher: "沼津市",
+    url: null,
+    urls: ["https://www.city.numazu.shizuoka.jp/shisei/gyozaisei/finance/yosan2025/gaiyousho/pdf/s-1.pdf"],
+    landingPage: "https://www.city.numazu.shizuoka.jp/shisei/gyozaisei/finance/yosan2025/gaiyousho/index.htm",
+    kind: "pdf",
+    fiscalYear: "R7",
+    scope: "沼津市（一般会計・団体コード222038）",
+    license: "沼津市ウェブサイト掲載資料（非営利・二次利用要許可。利用条件は同サイト参照）",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 1,
+      expenditurePage: 2,
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+    },
+  },
+  {
+    // 和泉市（大阪府・団体コード 272035）。一般会計事項別明細書「1 総括」。
+    // 歳入 p.5・歳出 p.6 の別ページ型。款名に字間スペース無し・負号 △（詰め）。
+    // 歳入列は割合(％)つき・歳出列は割合なしだが decimal フィルタで吸収。単位は千円。
+    id: "izumi-yosansho-r8",
+    title: "令和8年度 和泉市当初予算（一般会計事項別明細書 総括）",
+    publisher: "和泉市",
+    url: null,
+    urls: ["https://www.city.osaka-izumi.lg.jp/material/files/group/18/02_R8_ippan.pdf"],
+    landingPage: "https://www.city.osaka-izumi.lg.jp/kakukano/soumubu/zaiseika/gyoumu/yosan.html",
+    kind: "pdf",
+    fiscalYear: "R8",
+    scope: "和泉市（一般会計・団体コード272035）",
+    license: "和泉市ウェブサイト掲載資料（利用条件は同サイト参照）",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 5,
+      expenditurePage: 6,
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+    },
+  },
   // 甲府市の決算状況「収入支出詳細」HTML ページ。款別の予算現額・収入/支出済額・
   // 収入率/執行率（出納整理後の**確定値**）＋市税の内訳（予算現額のみ）。
   // 過去の執行を確定値で辿る本命資料。R3 は年度ページ・詳細ページとも市サイトから

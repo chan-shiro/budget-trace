@@ -160,10 +160,10 @@ function parseKanPage(
       reset(); // 行間の空行で断片を破棄（款は空行を挟まず連続する）
       continue;
     }
-    if (headingCompact && compact.includes(headingCompact)) continue; // 見出し行
+    // 合計行を先に判定する（見出しスキップより先。「歳入」等の短い見出し語は
+    // 「歳入合計」の部分文字列なので、順序を誤ると合計行を取りこぼす）。
+    // 構成比（小数）が金額の間に入る様式（豊川・山口・沼津）に対応するため小数を除く
     if (compact.includes(totalLabel)) {
-      // 合計行。構成比（小数）が金額の間に入る様式（豊川・山口）に対応するため
-      // 小数を除いた整数列 [当年度, 前年度] を採る
       const ints = (raw.match(AMOUNT_RE) ?? []).filter((t) => !t.includes("."));
       const [t0, t1] = ints;
       if (t0 == null) {
@@ -174,6 +174,7 @@ function parseKanPage(
       reset();
       continue;
     }
+    if (headingCompact && compact.includes(headingCompact)) continue; // 見出し・節ラベル行
     if (compact.startsWith("※") && compact.includes("予算")) prevNote = compact.slice(1); // 前年列の注記
     if (KAN_HEADER_RE.test(compact)) continue; // 表ヘッダ・タイトル・注記
 
