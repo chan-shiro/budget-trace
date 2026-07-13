@@ -18,6 +18,8 @@ export const SIM_MIX_COLS = ["民生費", "教育費", "土木費", "公債費",
 
 export interface SimilarRow {
   name: string;
+  /** 団体コード（この市のダッシュボードへのリンク用）。類似団体平均は null */
+  muniCode: string | null;
   self?: boolean;
   /** 表示用の人口（例: "18.4万人"） */
   pop: string;
@@ -36,6 +38,7 @@ export interface SimilarRow {
 export const SIMILAR: SimilarRow[] = [
   {
     "name": "甲府市",
+    "muniCode": "192015",
     "self": true,
     "pop": "18.4万人",
     "total": 894.8,
@@ -52,6 +55,7 @@ export const SIMILAR: SimilarRow[] = [
   },
   {
     "name": "和泉市",
+    "muniCode": "272191",
     "pop": "18.2万人",
     "total": 792.8,
     "perCap": "43.4万円",
@@ -67,6 +71,7 @@ export const SIMILAR: SimilarRow[] = [
   },
   {
     "name": "沼津市",
+    "muniCode": "222038",
     "pop": "18.6万人",
     "total": 925.6,
     "perCap": "49.8万円",
@@ -82,6 +87,7 @@ export const SIMILAR: SimilarRow[] = [
   },
   {
     "name": "豊川市",
+    "muniCode": "232076",
     "pop": "18.6万人",
     "total": 795.6,
     "perCap": "42.8万円",
@@ -97,6 +103,7 @@ export const SIMILAR: SimilarRow[] = [
   },
   {
     "name": "山口市",
+    "muniCode": "352039",
     "pop": "18.6万人",
     "total": 1072.4,
     "perCap": "57.7万円",
@@ -112,6 +119,7 @@ export const SIMILAR: SimilarRow[] = [
   },
   {
     "name": "類似団体平均",
+    "muniCode": null,
     "pop": "19.0万人",
     "total": 908,
     "perCap": "47.7万円",

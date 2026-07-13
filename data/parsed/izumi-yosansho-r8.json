@@ -3,7 +3,7 @@
   "sourceId": "izumi-yosansho-r8",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-07-13T09:39:13.097Z",
+  "parsedAt": "2026-07-13T12:51:06.227Z",
   "unit": "thousandYen",
   "fiscalYear": "R8",
   "account": "一般会計",
@@ -396,6 +396,428 @@
       "locator": {
         "file": "02_R8_ippan.pdf",
         "page": 6
+      }
+    }
+  ],
+  "projects": [
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "拡充",
+      "name": "（仮称）富秋学園整備事業",
+      "budgetBookName": null,
+      "amount": 5912885,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "拡充",
+      "name": "中学校少人数学級編制事業、学力向上推進事業",
+      "budgetBookName": null,
+      "amount": 217727,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "拡充",
+      "name": "小中学校大規模改修事業",
+      "budgetBookName": null,
+      "amount": 1053790,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "小中学校大型モニター（次世代型電子黒板）整備事業",
+      "budgetBookName": null,
+      "amount": 237000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "拡充",
+      "name": "青少年の家リニューアル事業",
+      "budgetBookName": null,
+      "amount": 714900,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "池上曽根史跡公園整備事業",
+      "budgetBookName": null,
+      "amount": 76748,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "医療的ケア機能を備えた民間保育施設への看護師配置支援事業",
+      "budgetBookName": null,
+      "amount": 34820,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "新設認定こども園整備補助事業（中部地域）",
+      "budgetBookName": null,
+      "amount": 476915,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "（仮称）いずみ国府こども園整備事業",
+      "budgetBookName": null,
+      "amount": 830087,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "小中学校給食費補助事業",
+      "budgetBookName": null,
+      "amount": 598000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "拡充",
+      "name": "こども家庭相談事業",
+      "budgetBookName": null,
+      "amount": 41354,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "５歳児健診事業",
+      "budgetBookName": null,
+      "amount": 2474,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "デイタイム救急隊の設立",
+      "budgetBookName": null,
+      "amount": 30507,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "（仮称）防災備蓄倉庫整備事業",
+      "budgetBookName": null,
+      "amount": 419500,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "拡充",
+      "name": "防犯灯電気料金の全額補助",
+      "budgetBookName": null,
+      "amount": 30449,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "電子地域ポイント事業",
+      "budgetBookName": null,
+      "amount": 160321,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "チャレンジオフィスの開設",
+      "budgetBookName": null,
+      "amount": 11344,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "お買い物割引チケット事業（国の交付金を活用）",
+      "budgetBookName": null,
+      "amount": 1218861,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "富秋中学校区等まちづくり推進事業",
+      "budgetBookName": null,
+      "amount": 309487,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "地域交通共創モデル事業",
+      "budgetBookName": null,
+      "amount": 27296,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "拡充",
+      "name": "黒鳥山公園整備事業",
+      "budgetBookName": null,
+      "amount": 214000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "７０周年記念式典事業",
+      "budgetBookName": null,
+      "amount": 7070,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "７０周年市民提案特別記念事業(ドローンショーなど)",
+      "budgetBookName": null,
+      "amount": 58400,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "だんじり曳行事業",
+      "budgetBookName": null,
+      "amount": 27163,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "美術館記念事業(ﾌﾟﾛｼﾞｪｸｼｮﾝﾏｯﾋﾟﾝｸﾞ、ﾅｲﾄﾐｭｰｼﾞｱﾑなど)",
+      "budgetBookName": null,
+      "amount": 15489,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "タイムカプセル開封事業",
+      "budgetBookName": null,
+      "amount": 5716,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "上記以外の記念事業(いずもく製「記念ものさし」、公開番組など)",
+      "budgetBookName": null,
+      "amount": 42177,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "水道料金減額による生活支援事業（国の交付金を活用）",
+      "budgetBookName": null,
+      "amount": 281489,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "00_08_gaiyou.pdf",
+        "page": 3
       }
     }
   ]

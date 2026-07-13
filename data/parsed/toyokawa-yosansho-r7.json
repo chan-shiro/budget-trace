@@ -3,7 +3,7 @@
   "sourceId": "toyokawa-yosansho-r7",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-07-13T03:32:51.928Z",
+  "parsedAt": "2026-07-13T13:02:06.705Z",
   "unit": "thousandYen",
   "fiscalYear": "R7",
   "account": "一般会計",
@@ -429,6 +429,2808 @@
       "locator": {
         "file": "R7_yosann.pdf",
         "page": 29
+      }
+    }
+  ],
+  "projects": [
+    {
+      "kan": "議会費",
+      "no": null,
+      "kubun": null,
+      "name": "市議会議員報酬等",
+      "budgetBookName": null,
+      "amount": 293683,
+      "prevAmount": 296777,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "水害ハザードマップ作成等事業",
+      "budgetBookName": null,
+      "amount": 19831,
+      "prevAmount": 0,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "市民意識調査事業",
+      "budgetBookName": null,
+      "amount": 4542,
+      "prevAmount": 0,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "平和祈念式典開催事業",
+      "budgetBookName": null,
+      "amount": 4123,
+      "prevAmount": 2541,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "第7次総合計画策定事業",
+      "budgetBookName": null,
+      "amount": 9983,
+      "prevAmount": 17803,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "シティセールス推進事業",
+      "budgetBookName": null,
+      "amount": 10021,
+      "prevAmount": 17381,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "情報技術活用推進事業",
+      "budgetBookName": null,
+      "amount": 84504,
+      "prevAmount": 135685,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "選挙費",
+      "budgetBookName": null,
+      "amount": 75997,
+      "prevAmount": 1766,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "指定統計調査",
+      "budgetBookName": null,
+      "amount": 109727,
+      "prevAmount": 16394,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "職員研修事業",
+      "budgetBookName": null,
+      "amount": 10527,
+      "prevAmount": 9793,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "障害者ワークステーション事業",
+      "budgetBookName": null,
+      "amount": 28582,
+      "prevAmount": 22838,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "入札及び契約制度改革推進事業",
+      "budgetBookName": null,
+      "amount": 345,
+      "prevAmount": 331,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "公共施設整備基金積立金",
+      "budgetBookName": null,
+      "amount": 115497,
+      "prevAmount": 50840,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "一宮地域交流会館（仮称）整備事業",
+      "budgetBookName": null,
+      "amount": 230095,
+      "prevAmount": 0,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "本庁舎等整備事業",
+      "budgetBookName": null,
+      "amount": 1200438,
+      "prevAmount": 0,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "定額減税不足額給付事業費（物価高騰対応）",
+      "budgetBookName": null,
+      "amount": 867583,
+      "prevAmount": 0,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "賦課計算事務等委託",
+      "budgetBookName": null,
+      "amount": 38850,
+      "prevAmount": 40928,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "ＯＣＲ読取機更新事業",
+      "budgetBookName": null,
+      "amount": 11900,
+      "prevAmount": 0,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "固定資産税土地評価鑑定事業",
+      "budgetBookName": null,
+      "amount": 95596,
+      "prevAmount": 29728,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "(新）戸籍の振り仮名法制化対応事業",
+      "budgetBookName": null,
+      "amount": 47266,
+      "prevAmount": 0,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "マイナンバーカード交付事業",
+      "budgetBookName": null,
+      "amount": 93069,
+      "prevAmount": 60690,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "市民協働推進事業",
+      "budgetBookName": null,
+      "amount": 4028,
+      "prevAmount": 4231,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "町内会負担軽減事業",
+      "budgetBookName": null,
+      "amount": 2197,
+      "prevAmount": 2245,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "地区集会施設建設等事業費補助",
+      "budgetBookName": null,
+      "amount": 12938,
+      "prevAmount": 11099,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "地区市民館施設整備事業",
+      "budgetBookName": null,
+      "amount": 152138,
+      "prevAmount": 400089,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "こぎつね教室事業",
+      "budgetBookName": null,
+      "amount": 16627,
+      "prevAmount": 14311,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "キュパティーノ市交流事業",
+      "budgetBookName": null,
+      "amount": 6572,
+      "prevAmount": 5616,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "交通安全対策推進事業",
+      "budgetBookName": null,
+      "amount": 21822,
+      "prevAmount": 21312,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "交通安全指導隊支援事業",
+      "budgetBookName": null,
+      "amount": 6402,
+      "prevAmount": 5345,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "防犯対策事業",
+      "budgetBookName": null,
+      "amount": 44772,
+      "prevAmount": 44563,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "文化会館等運営管理検討調査事業",
+      "budgetBookName": null,
+      "amount": 18000,
+      "prevAmount": 44000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "桜ヶ丘ミュージアム展示事業",
+      "budgetBookName": null,
+      "amount": 25745,
+      "prevAmount": 18897,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "文化ホール公演事業",
+      "budgetBookName": null,
+      "amount": 13095,
+      "prevAmount": 13655,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "庁舎管理事業",
+      "budgetBookName": null,
+      "amount": 42214,
+      "prevAmount": 30185,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "庁舎管理事業",
+      "budgetBookName": null,
+      "amount": 39655,
+      "prevAmount": 25442,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "庁舎管理事業",
+      "budgetBookName": null,
+      "amount": 28241,
+      "prevAmount": 20411,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "庁舎管理事業",
+      "budgetBookName": null,
+      "amount": 23434,
+      "prevAmount": 12029,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "交通安全施設整備事業",
+      "budgetBookName": null,
+      "amount": 108951,
+      "prevAmount": 108051,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "プリオビル管理運営事業",
+      "budgetBookName": null,
+      "amount": 447499,
+      "prevAmount": 424523,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "監査委員報酬",
+      "budgetBookName": null,
+      "amount": 3268,
+      "prevAmount": 3268,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "重層的支援体制整備事業",
+      "budgetBookName": null,
+      "amount": 53762,
+      "prevAmount": 51356,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "民生委員関係事業",
+      "budgetBookName": null,
+      "amount": 18607,
+      "prevAmount": 18283,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "生活保護扶助事業",
+      "budgetBookName": null,
+      "amount": 1918778,
+      "prevAmount": 1932911,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "障害者自立支援事業",
+      "budgetBookName": null,
+      "amount": 5019170,
+      "prevAmount": 4408012,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "障害者交通料金助成事業",
+      "budgetBookName": null,
+      "amount": 20629,
+      "prevAmount": 20111,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "合理的配慮提供支援助成事業",
+      "budgetBookName": null,
+      "amount": 1750,
+      "prevAmount": 1816,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "避難行動要支援者支援事業",
+      "budgetBookName": null,
+      "amount": 677,
+      "prevAmount": 515,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "高齢者能力活用推進事業",
+      "budgetBookName": null,
+      "amount": 47969,
+      "prevAmount": 45171,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "難聴高齢者補聴器購入費助成事業",
+      "budgetBookName": null,
+      "amount": 600,
+      "prevAmount": 0,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "一般介護予防事業",
+      "budgetBookName": null,
+      "amount": 42683,
+      "prevAmount": 41044,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "認知症総合支援事業",
+      "budgetBookName": null,
+      "amount": 21770,
+      "prevAmount": 19345,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "東三河広域連合介護保険事業費負担金",
+      "budgetBookName": null,
+      "amount": 2321692,
+      "prevAmount": 2280494,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "避難行動要支援者支援事業",
+      "budgetBookName": null,
+      "amount": 588,
+      "prevAmount": 368,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "国民健康保険特別会計繰出金",
+      "budgetBookName": null,
+      "amount": 1250069,
+      "prevAmount": 1218592,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "後期高齢者医療療養給付費負担金",
+      "budgetBookName": null,
+      "amount": 1959396,
+      "prevAmount": 1851675,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "後期高齢者医療特別会計繰出金",
+      "budgetBookName": null,
+      "amount": 689686,
+      "prevAmount": 667401,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "子ども医療費支給事業",
+      "budgetBookName": null,
+      "amount": 1033777,
+      "prevAmount": 1010492,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "児童手当支給事業",
+      "budgetBookName": null,
+      "amount": 4182000,
+      "prevAmount": 3350100,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "児童扶養・遺児手当支給事業",
+      "budgetBookName": null,
+      "amount": 631944,
+      "prevAmount": 591725,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "放課後児童健全育成事業",
+      "budgetBookName": null,
+      "amount": 768483,
+      "prevAmount": 667233,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "要保護児童対策地域協議会事業",
+      "budgetBookName": null,
+      "amount": 36405,
+      "prevAmount": 408,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "結婚支援事業",
+      "budgetBookName": null,
+      "amount": 3708,
+      "prevAmount": 2337,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "子育て応援金支給事業",
+      "budgetBookName": null,
+      "amount": 42311,
+      "prevAmount": 42239,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "児童館管理運営費",
+      "budgetBookName": null,
+      "amount": 135006,
+      "prevAmount": 121200,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "児童発達相談センター管理運営事業",
+      "budgetBookName": null,
+      "amount": 31353,
+      "prevAmount": 18386,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "特別保育事業",
+      "budgetBookName": null,
+      "amount": 6791993,
+      "prevAmount": 6263665,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "給食費無料化事業",
+      "budgetBookName": null,
+      "amount": 182492,
+      "prevAmount": 183140,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "私立幼稚園入園応援金支給事業",
+      "budgetBookName": null,
+      "amount": 12600,
+      "prevAmount": 0,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "就学前教育・保育施設整備費補助",
+      "budgetBookName": null,
+      "amount": 395874,
+      "prevAmount": 426875,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "パートタイム会計年度任用職員活用費",
+      "budgetBookName": null,
+      "amount": 691363,
+      "prevAmount": 677827,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "睦美保育園改築事業",
+      "budgetBookName": null,
+      "amount": 30158,
+      "prevAmount": 25513,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "拠点地区定住促進事業",
+      "budgetBookName": null,
+      "amount": 8600,
+      "prevAmount": 8600,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "予防接種事業",
+      "budgetBookName": null,
+      "amount": 829204,
+      "prevAmount": 680225,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "健康診査事業",
+      "budgetBookName": null,
+      "amount": 276154,
+      "prevAmount": 261876,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "母子保健事業（健康診査）",
+      "budgetBookName": null,
+      "amount": 205633,
+      "prevAmount": 208756,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "総合保健センター（仮称）整備事業",
+      "budgetBookName": null,
+      "amount": 3848573,
+      "prevAmount": 250794,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "地球温暖化対策事業",
+      "budgetBookName": null,
+      "amount": 36702,
+      "prevAmount": 34251,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "斎場会館管理運営事業",
+      "budgetBookName": null,
+      "amount": 295920,
+      "prevAmount": 312990,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "有価物回収事業費補助",
+      "budgetBookName": null,
+      "amount": 8000,
+      "prevAmount": 8000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "ごみ収集管理運営事業",
+      "budgetBookName": null,
+      "amount": 336264,
+      "prevAmount": 324013,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "清掃工場管理運営事業",
+      "budgetBookName": null,
+      "amount": 1670010,
+      "prevAmount": 1647104,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "労働費",
+      "no": null,
+      "kubun": null,
+      "name": "首都圏人材確保支援事業費補助",
+      "budgetBookName": null,
+      "amount": 3000,
+      "prevAmount": 3000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "労働費",
+      "no": null,
+      "kubun": null,
+      "name": "奨学金返還支援事業",
+      "budgetBookName": null,
+      "amount": 8811,
+      "prevAmount": 7371,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "労働費",
+      "no": null,
+      "kubun": null,
+      "name": "大型運転免許等取得支援事業費補助",
+      "budgetBookName": null,
+      "amount": 1600,
+      "prevAmount": 1600,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "豊川産農産物普及推進事業",
+      "budgetBookName": null,
+      "amount": 3030,
+      "prevAmount": 2779,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "産地パワーアップ事業費補助",
+      "budgetBookName": null,
+      "amount": 67637,
+      "prevAmount": 72392,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "就農者確保対策事業",
+      "budgetBookName": null,
+      "amount": 54292,
+      "prevAmount": 60507,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "収入保険加入支援事業費補助",
+      "budgetBookName": null,
+      "amount": 24000,
+      "prevAmount": 24000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": "新規",
+      "name": "中山間地域等直接支払交付金事業",
+      "budgetBookName": null,
+      "amount": 5366,
+      "prevAmount": 0,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "土地改良事業",
+      "budgetBookName": null,
+      "amount": 51450,
+      "prevAmount": 49000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "土地改良施設維持管理適正化事業",
+      "budgetBookName": null,
+      "amount": 21254,
+      "prevAmount": 16073,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "森林整備事業",
+      "budgetBookName": null,
+      "amount": 12100,
+      "prevAmount": 16200,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "企業誘致推進事業",
+      "budgetBookName": null,
+      "amount": 7947,
+      "prevAmount": 4616,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "企業立地促進補助",
+      "budgetBookName": null,
+      "amount": 99014,
+      "prevAmount": 96420,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "企業再投資促進補助",
+      "budgetBookName": null,
+      "amount": 107713,
+      "prevAmount": 326769,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": "新規",
+      "name": "白鳥地区工業用地整備推進事業",
+      "budgetBookName": null,
+      "amount": 5100,
+      "prevAmount": 0,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": "新規",
+      "name": "為当地区工業用地整備推進事業",
+      "budgetBookName": null,
+      "amount": 16671,
+      "prevAmount": 0,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "創業・起業支援事業",
+      "budgetBookName": null,
+      "amount": 3112,
+      "prevAmount": 3262,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "地域商業強化推進事業",
+      "budgetBookName": null,
+      "amount": 5125,
+      "prevAmount": 13500,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "スタートアップ連携事業",
+      "budgetBookName": null,
+      "amount": 6052,
+      "prevAmount": 4164,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": "新規",
+      "name": "事業承継支援事業",
+      "budgetBookName": null,
+      "amount": 200,
+      "prevAmount": 0,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "市観光協会補助",
+      "budgetBookName": null,
+      "amount": 53979,
+      "prevAmount": 50659,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "市民まつり補助",
+      "budgetBookName": null,
+      "amount": 42000,
+      "prevAmount": 38000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "スポーツ・文化活動等合宿支援事業",
+      "budgetBookName": null,
+      "amount": 7000,
+      "prevAmount": 6546,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "観光一般事業費",
+      "budgetBookName": null,
+      "amount": 8916,
+      "prevAmount": 6009,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "中心市街地活性化事業",
+      "budgetBookName": null,
+      "amount": 20411,
+      "prevAmount": 56581,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "道路等維持補修事業",
+      "budgetBookName": null,
+      "amount": 198130,
+      "prevAmount": 185146,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "橋りょう長寿命化対策事業",
+      "budgetBookName": null,
+      "amount": 131400,
+      "prevAmount": 147684,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "道路等施設管理事業",
+      "budgetBookName": null,
+      "amount": 96709,
+      "prevAmount": 12179,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "豊川駅東西自由通路等管理事業",
+      "budgetBookName": null,
+      "amount": 94759,
+      "prevAmount": 39093,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "河川維持管理事業",
+      "budgetBookName": null,
+      "amount": 111909,
+      "prevAmount": 196239,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "急傾斜地崩壊対策事業",
+      "budgetBookName": null,
+      "amount": 135000,
+      "prevAmount": 104000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "足山田大木線拡幅改良事業",
+      "budgetBookName": null,
+      "amount": 53069,
+      "prevAmount": 1997,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "市内道路整備事業",
+      "budgetBookName": null,
+      "amount": 435860,
+      "prevAmount": 471557,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "橋りょう整備事業",
+      "budgetBookName": null,
+      "amount": 172800,
+      "prevAmount": 52020,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "上宿樽井線（市田野口工区）整備事業",
+      "budgetBookName": null,
+      "amount": 196675,
+      "prevAmount": 133025,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "伊奈美和通線整備事業",
+      "budgetBookName": null,
+      "amount": 121654,
+      "prevAmount": 22200,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "地震対策事業",
+      "budgetBookName": null,
+      "amount": 27809,
+      "prevAmount": 27787,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "空家等対策推進事業",
+      "budgetBookName": null,
+      "amount": 18897,
+      "prevAmount": 17870,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "市営住宅移転事業",
+      "budgetBookName": null,
+      "amount": 5450,
+      "prevAmount": 13580,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "市営住宅長寿命化対策事業",
+      "budgetBookName": null,
+      "amount": 170400,
+      "prevAmount": 178000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "都市計画調査事業",
+      "budgetBookName": null,
+      "amount": 27284,
+      "prevAmount": 24694,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "密集市街地整備事業",
+      "budgetBookName": null,
+      "amount": 1200,
+      "prevAmount": 800,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "立地適正化計画関連事業",
+      "budgetBookName": null,
+      "amount": 33823,
+      "prevAmount": 32531,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "愛知御津駅周辺まちづくり整備事業",
+      "budgetBookName": null,
+      "amount": 458698,
+      "prevAmount": 84951,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "無電柱化推進事業",
+      "budgetBookName": null,
+      "amount": 13900,
+      "prevAmount": 21025,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "自転車駐車場管理事業",
+      "budgetBookName": null,
+      "amount": 28126,
+      "prevAmount": 14332,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "公共交通機関等利用促進事業",
+      "budgetBookName": null,
+      "amount": 197315,
+      "prevAmount": 140902,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "牛久保駅前整備事業",
+      "budgetBookName": null,
+      "amount": 30627,
+      "prevAmount": 6027,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "三河一宮駅周辺まちづくり整備事業",
+      "budgetBookName": null,
+      "amount": 11927,
+      "prevAmount": 3000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "豊川稲荷門前基盤整備事業",
+      "budgetBookName": null,
+      "amount": 137306,
+      "prevAmount": 0,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "城跡市役所線整備事業",
+      "budgetBookName": null,
+      "amount": 169260,
+      "prevAmount": 193225,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "豊川駅東土地区画整理地内公園整備事業",
+      "budgetBookName": null,
+      "amount": 49647,
+      "prevAmount": 6506,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "一宮大木土地区画整理地内公園整備事業",
+      "budgetBookName": null,
+      "amount": 33694,
+      "prevAmount": 6006,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "都市公園整備事業",
+      "budgetBookName": null,
+      "amount": 143001,
+      "prevAmount": 112777,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "稲荷公園再整備事業",
+      "budgetBookName": null,
+      "amount": 18334,
+      "prevAmount": 0,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "新規土地区画整理事業適地調査事業",
+      "budgetBookName": null,
+      "amount": 36900,
+      "prevAmount": 3784,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "豊川西部土地区画整理事業特別会計繰出金",
+      "budgetBookName": null,
+      "amount": 118000,
+      "prevAmount": 85000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "豊川駅東土地区画整理事業特別会計繰出金",
+      "budgetBookName": null,
+      "amount": 429337,
+      "prevAmount": 1297321,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "分団詰所整備事業",
+      "budgetBookName": null,
+      "amount": 54019,
+      "prevAmount": 8122,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防車両等整備事業",
+      "budgetBookName": null,
+      "amount": 275500,
+      "prevAmount": 210000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防署本署改築事業",
+      "budgetBookName": null,
+      "amount": 1105259,
+      "prevAmount": 254720,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "小中学校校舎施設営繕事業",
+      "budgetBookName": null,
+      "amount": 213000,
+      "prevAmount": 100072,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "小中学校環境対策事業",
+      "budgetBookName": null,
+      "amount": 290000,
+      "prevAmount": 302920,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "小学校校舎外壁等改修事業",
+      "budgetBookName": null,
+      "amount": 123500,
+      "prevAmount": 116300,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "中部小学校校舎改修事業",
+      "budgetBookName": null,
+      "amount": 12000,
+      "prevAmount": 0,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "小坂井中学校校舎改築等事業",
+      "budgetBookName": null,
+      "amount": 101516,
+      "prevAmount": 146190,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "学級運営支援事業",
+      "budgetBookName": null,
+      "amount": 108033,
+      "prevAmount": 91948,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "水泳指導支援事業",
+      "budgetBookName": null,
+      "amount": 97614,
+      "prevAmount": 25080,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "部活動総合支援事業",
+      "budgetBookName": null,
+      "amount": 6076,
+      "prevAmount": 4326,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "ＩＣＴ教育支援事業",
+      "budgetBookName": null,
+      "amount": 1070403,
+      "prevAmount": 50997,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "スクールソーシャルワーカー配置事業",
+      "budgetBookName": null,
+      "amount": 8976,
+      "prevAmount": 7675,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "三河国分寺跡保存整備事業",
+      "budgetBookName": null,
+      "amount": 6573,
+      "prevAmount": 12300,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "御油松並木土地買上等事業",
+      "budgetBookName": null,
+      "amount": 11160,
+      "prevAmount": 0,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "伝統芸能支援事業",
+      "budgetBookName": null,
+      "amount": 2440,
+      "prevAmount": 1999,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "三河国府跡保存整備事業",
+      "budgetBookName": null,
+      "amount": 208480,
+      "prevAmount": 256535,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "生涯学習センター管理事業",
+      "budgetBookName": null,
+      "amount": 241225,
+      "prevAmount": 286136,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "スポーツ推進員報酬",
+      "budgetBookName": null,
+      "amount": 5180,
+      "prevAmount": 4440,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "スポーツイベント開催支援事業",
+      "budgetBookName": null,
+      "amount": 3170,
+      "prevAmount": 3139,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "総合体育館改修事業",
+      "budgetBookName": null,
+      "amount": 1291059,
+      "prevAmount": 998033,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "学校給食管理運営事業",
+      "budgetBookName": null,
+      "amount": 1444116,
+      "prevAmount": 1350756,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "学校給食センター長寿命化事業",
+      "budgetBookName": null,
+      "amount": 190000,
+      "prevAmount": 129487,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "学校給食費保護者負担軽減事業",
+      "budgetBookName": null,
+      "amount": 102244,
+      "prevAmount": 76791,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "中央図書館管理運営事業",
+      "budgetBookName": null,
+      "amount": 187236,
+      "prevAmount": 270433,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "災害復旧費",
+      "no": null,
+      "kubun": null,
+      "name": "農業施設災害復旧事業",
+      "budgetBookName": null,
+      "amount": 3100,
+      "prevAmount": 3100,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "災害復旧費",
+      "no": null,
+      "kubun": null,
+      "name": "林業施設災害復旧事業",
+      "budgetBookName": null,
+      "amount": 3100,
+      "prevAmount": 3100,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "災害復旧費",
+      "no": null,
+      "kubun": null,
+      "name": "道路橋りょう災害復旧事業",
+      "budgetBookName": null,
+      "amount": 3100,
+      "prevAmount": 3100,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "災害復旧費",
+      "no": null,
+      "kubun": null,
+      "name": "河川災害復旧事業",
+      "budgetBookName": null,
+      "amount": 3100,
+      "prevAmount": 3100,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "災害復旧費",
+      "no": null,
+      "kubun": null,
+      "name": "都市計画施設災害復旧事業",
+      "budgetBookName": null,
+      "amount": 3100,
+      "prevAmount": 3100,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "公債費",
+      "no": null,
+      "kubun": null,
+      "name": "市債元金償還金",
+      "budgetBookName": null,
+      "amount": 5099772,
+      "prevAmount": 5051920,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "公債費",
+      "no": null,
+      "kubun": null,
+      "name": "市債等利子償還金",
+      "budgetBookName": null,
+      "amount": 143703,
+      "prevAmount": 104531,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "諸支出金",
+      "no": null,
+      "kubun": null,
+      "name": "水道事業会計繰出金",
+      "budgetBookName": null,
+      "amount": 3426,
+      "prevAmount": 1507,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "諸支出金",
+      "no": null,
+      "kubun": "新規",
+      "name": "水道事業会計繰出金（物価高騰対応）",
+      "budgetBookName": null,
+      "amount": 351063,
+      "prevAmount": 0,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "諸支出金",
+      "no": null,
+      "kubun": null,
+      "name": "下水道事業会計繰出金",
+      "budgetBookName": null,
+      "amount": 580390,
+      "prevAmount": 786407,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "諸支出金",
+      "no": null,
+      "kubun": null,
+      "name": "病院事業会計繰出金",
+      "budgetBookName": null,
+      "amount": 2051778,
+      "prevAmount": 1975593,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "R7_yosann.pdf",
+        "page": 20
       }
     }
   ]
