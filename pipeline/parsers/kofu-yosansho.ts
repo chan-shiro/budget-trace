@@ -31,8 +31,9 @@ interface Options {
    * - "bullets"（甲府 R2・R3: ●事業名…金額 の箇条書き。款・連番なし）
    * - "coded-sections"（豊川: N款 費目 / 【課】/ n 事業名［款項目事業コード］当年度 前年度）
    * - "marked-bullets"（和泉: 拡/新 ◎ 事業名 … 予算額 千円 の重点事業リスト。款・前年度なし）
+   * - "table-lines"（山口: 事業名 予算額 内容 担当課 の事業別表。施策見出しつき・款/前年度なし）
    */
-  projectFormat?: "table" | "bullets" | "coded-sections" | "marked-bullets";
+  projectFormat?: "table" | "bullets" | "coded-sections" | "marked-bullets" | "table-lines";
   /**
    * 表形式の列境界（X座標）。PDF の座標系が年度で違う場合に上書きする
    * （R5 の WARP 回収版は全体に右寄りのスケール）。省略時は R8 実測値
@@ -643,6 +644,52 @@ function parseProjectsMarkedBullets(
   return facts;
 }
 
+// ---- 主な事業（行ベース）: 山口「事業別」 -----------------------------------
+// 政策「N …」/ 施策「（N）…」の見出しで施策を追跡。事業行は
+// 「事業名  予算額(千円)  事業内容  担当課」で、行頭が非空白＝事業名、2つ以上の空白の後に金額。
+// 内容の折返し行は先頭が空白なので拾わない。款・前年度は無い。
+function parseProjectsTableLines(
+  filePath: string,
+  filename: string,
+  from: number,
+  to: number,
+): BudgetProjectFact[] {
+  const facts: BudgetProjectFact[] = [];
+  let currentShisaku = "";
+  for (let page = from; page <= to; page++) {
+    for (const rawOrig of pdfPageText(filePath, page).split("\n")) {
+      const raw = toHalfDigits(rawOrig);
+      // 施策見出し「（N）…」
+      const shM = raw.match(/^\s*（\s*\d+\s*）\s*(.+?)\s*$/);
+      if (shM) {
+        currentShisaku = shM[1]!.replace(/[\s　]/g, "");
+        continue;
+      }
+      // 事業行: 行頭が非空白の事業名 → 2つ以上の空白 → 予算額（千円）
+      const m = raw.match(/^(\S.+?)\s{2,}([\d,]+)(?:\s|$)/);
+      if (!m) continue;
+      const name = m[1]!.replace(/[\s　]/g, "");
+      const amount = toAmount(m[2]!);
+      // 見出し・ヘッダ・少額ノイズを除去（事業名2文字以上・10万円=100千円以上）
+      if (name.length < 2 || amount < 100 || /予算額|事業名|事業内容|担当課|単位/.test(name)) continue;
+      facts.push({
+        kan: null,
+        no: null,
+        kubun: null,
+        name,
+        budgetBookName: null,
+        amount,
+        description: "",
+        basicGoal: "",
+        shisaku: currentShisaku,
+        locator: { file: filename, page },
+      });
+    }
+  }
+  if (facts.length === 0) throw new Error(`${filename}: 主な事業（table-lines）が1件も抽出できませんでした`);
+  return facts;
+}
+
 export function parseKofuYosansho(
   files: { path: string; filename: string }[],
   source: SourceEntry,
@@ -685,7 +732,9 @@ export function parseKofuYosansho(
         ? parseProjectsCodedSections(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
         : projFmt === "marked-bullets"
           ? parseProjectsMarkedBullets(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
-          : parseProjectPages(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to, opts.projectColumns, opts.projectRowBanding ?? "midpoint")
+          : projFmt === "table-lines"
+            ? parseProjectsTableLines(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
+            : parseProjectPages(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to, opts.projectColumns, opts.projectRowBanding ?? "midpoint")
     : undefined;
 
   return {

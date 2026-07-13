@@ -1286,8 +1286,11 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
           ]
         : revAll;
 
-    // 主な事業（豊川・和泉のみ収録。他の budget 市は未収録＝空配列）。金額降順
-    const projects = (doc.projects ?? [])
+    // 主な事業（豊川・和泉・山口を収録。他の budget 市は空配列）。金額降順。
+    // 款が取れる市（豊川）は款ドリルで全件使うので全件、款のない市（和泉・山口）は
+    // ダッシュボード一覧用に上位 PROJECT_CAP 件へ絞る（山口の事業別は700超あるため）
+    const PROJECT_CAP = 60;
+    const projectsAll = (doc.projects ?? [])
       .map((p) => ({
         name: p.name,
         amountOku: toOku(p.amount),
@@ -1299,6 +1302,7 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
         refLocalUrl: `/sources/${b.srcId}/${p.locator.file}#page=${p.locator.page ?? 1}`,
       }))
       .sort((a, b2) => b2.amountOku - a.amountOku);
+    const projects = projectsAll.some((p) => p.kan) ? projectsAll : projectsAll.slice(0, PROJECT_CAP);
 
     const yoyTotal = yoyPctOf(doc.expenditureTotal, doc.prevExpenditureTotal);
     return {

@@ -3629,7 +3629,608 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
     "muniCode": "352039",
     "muniName": "山口市",
     "prefName": "山口県",
-    "projects": [],
+    "projects": [
+      {
+        "name": "障害福祉サービス給付事業",
+        "amountOku": 41.67303,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.119",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=119"
+      },
+      {
+        "name": "児童手当支給費",
+        "amountOku": 37.23126,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.114",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=114"
+      },
+      {
+        "name": "私立保育園運営費",
+        "amountOku": 31.7219,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.115",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=115"
+      },
+      {
+        "name": "介護保険特別会計繰出金",
+        "amountOku": 27.60644,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.121",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=121"
+      },
+      {
+        "name": "生活保護扶助費",
+        "amountOku": 26.158,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.121",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=121"
+      },
+      {
+        "name": "山口県後期高齢者医療広域",
+        "amountOku": 24.435,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.121",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=121"
+      },
+      {
+        "name": "認定こども園運営費",
+        "amountOku": 21.94603,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.115",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=115"
+      },
+      {
+        "name": "公共下水道会計負担金",
+        "amountOku": 19.17812,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.135",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=135"
+      },
+      {
+        "name": "新本庁舎整備事業費",
+        "amountOku": 16.28043,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.155",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=155"
+      },
+      {
+        "name": "国民健康保険特別会計繰出",
+        "amountOku": 14.69093,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.121",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=121"
+      },
+      {
+        "name": "障害児施設サービス給付事",
+        "amountOku": 13.60374,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.120",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=120"
+      },
+      {
+        "name": "清掃工場管理運営費",
+        "amountOku": 11.44752,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.137",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=137"
+      },
+      {
+        "name": "予防接種事業費",
+        "amountOku": 11.28782,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.117",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=117"
+      },
+      {
+        "name": "学校給食運営費",
+        "amountOku": 11.04549,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.123",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=123"
+      },
+      {
+        "name": "平川地域交流センター建設",
+        "amountOku": 10.53446,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.152",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=152"
+      },
+      {
+        "name": "放課後児童クラブ運営費",
+        "amountOku": 10.09233,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.114",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=114"
+      },
+      {
+        "name": "後期高齢者医療特別会計繰",
+        "amountOku": 9.75662,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.121",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=121"
+      },
+      {
+        "name": "仁保の郷整備事業費",
+        "amountOku": 9.22714,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.146",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=146"
+      },
+      {
+        "name": "こども医療費助成事業費",
+        "amountOku": 8.21539,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.114",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=114"
+      },
+      {
+        "name": "消防指令センター共同整備",
+        "amountOku": 8.10306,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.133",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=133"
+      },
+      {
+        "name": "重度心身障害者医療費助成",
+        "amountOku": 7.62394,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.120",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=120"
+      },
+      {
+        "name": "中小企業等金融対策事業費",
+        "amountOku": 7.26042,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.145",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=145"
+      },
+      {
+        "name": "生活道路改良事業費",
+        "amountOku": 7.18947,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.140",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=140"
+      },
+      {
+        "name": "児童扶養手当等支給事業費",
+        "amountOku": 7.10087,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.114",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=114"
+      },
+      {
+        "name": "市立保育園管理運営費",
+        "amountOku": 7.00427,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.115",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=115"
+      },
+      {
+        "name": "小学校施設長寿命化事業費",
+        "amountOku": 5.6949,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.123",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=123"
+      },
+      {
+        "name": "海岸保全施設整備事業費",
+        "amountOku": 5.09373,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.130",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=130"
+      },
+      {
+        "name": "立地等奨励金",
+        "amountOku": 4.9893,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.146",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=146"
+      },
+      {
+        "name": "養護老人ホーム措置費",
+        "amountOku": 4.42505,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.118",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=118"
+      },
+      {
+        "name": "乳幼児医療費助成事業費",
+        "amountOku": 4.42392,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.114",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=114"
+      },
+      {
+        "name": "山口市中心市街地周辺地区",
+        "amountOku": 4.182,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.139",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=139"
+      },
+      {
+        "name": "中学校ＩＣＴ教育推進事業費",
+        "amountOku": 3.87521,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.125",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=125"
+      },
+      {
+        "name": "小学校管理運営費",
+        "amountOku": 3.85139,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.123",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=123"
+      },
+      {
+        "name": "庁舎維持管理費",
+        "amountOku": 3.78484,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.155",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=155"
+      },
+      {
+        "name": "多面的機能支払交付金事業",
+        "amountOku": 3.70108,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.148",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=148"
+      },
+      {
+        "name": "地域型保育運営費",
+        "amountOku": 3.62061,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.115",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=115"
+      },
+      {
+        "name": "橋りょう長寿命化対策事業",
+        "amountOku": 3.57079,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.140",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=140"
+      },
+      {
+        "name": "ＷＡＮ関連事業費",
+        "amountOku": 3.55156,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.155",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=155"
+      },
+      {
+        "name": "常備消防自動車整備事業費",
+        "amountOku": 3.53237,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.133",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=133"
+      },
+      {
+        "name": "産業交流拠点施設管理運営",
+        "amountOku": 3.37802,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.145",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=145"
+      },
+      {
+        "name": "鋳銭司第二団地整備事業特",
+        "amountOku": 3.37079,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.146",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=146"
+      },
+      {
+        "name": "ごみ収集運搬費",
+        "amountOku": 3.3271,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.137",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=137"
+      },
+      {
+        "name": "電算システム開発事業費",
+        "amountOku": 3.30018,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.155",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=155"
+      },
+      {
+        "name": "中学校施設長寿命化事業費",
+        "amountOku": 3.23948,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.123",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=123"
+      },
+      {
+        "name": "地域包括支援センター運営",
+        "amountOku": 3.20311,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.118",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=118"
+      },
+      {
+        "name": "ふるさと産品営業推進事業",
+        "amountOku": 3.1231,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.145",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=145"
+      },
+      {
+        "name": "私立保育園特別保育事業費",
+        "amountOku": 2.97504,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.115",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=115"
+      },
+      {
+        "name": "山口情報芸術センター管理",
+        "amountOku": 2.89757,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.126",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=126"
+      },
+      {
+        "name": "中間処理センター管理費",
+        "amountOku": 2.89445,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.137",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=137"
+      },
+      {
+        "name": "市議会議員報酬等",
+        "amountOku": 2.7358,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.157",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=157"
+      },
+      {
+        "name": "社会福祉協議会助成事業費",
+        "amountOku": 2.69291,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.120",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=120"
+      },
+      {
+        "name": "図書館管理運営費",
+        "amountOku": 2.58986,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.125",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=125"
+      },
+      {
+        "name": "農業集落排水事業経営支援",
+        "amountOku": 2.58969,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.135",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=135"
+      },
+      {
+        "name": "湯田温泉まちなか整備事業",
+        "amountOku": 2.53987,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.138",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=138"
+      },
+      {
+        "name": "県事業負担金",
+        "amountOku": 2.5374,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.148",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=148"
+      },
+      {
+        "name": "山口情報芸術センター企画",
+        "amountOku": 2.49695,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.126",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=126"
+      },
+      {
+        "name": "中山間地域等直接支払事業",
+        "amountOku": 2.46003,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.147",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=147"
+      },
+      {
+        "name": "道路維持補修事業費",
+        "amountOku": 2.43057,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.140",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=140"
+      },
+      {
+        "name": "幹線バス確保維持事業費",
+        "amountOku": 2.40117,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.142",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=142"
+      },
+      {
+        "name": "環境センター管理運営費",
+        "amountOku": 2.39738,
+        "kan": null,
+        "kubun": null,
+        "prevAmountOku": null,
+        "description": "",
+        "refLabel": "令和7年度 山口市当初予算資料（款別歳入歳出） p.137",
+        "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=137"
+      }
+    ],
     "fy": "R7",
     "fyLabel": "令和7年度 当初予算",
     "population": 185982,
