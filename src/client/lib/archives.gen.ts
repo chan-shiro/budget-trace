@@ -3,6 +3,8 @@
 // 一次資料の元 URL → Wayback Machine スナップショット URL
 
 export const WAYBACK_BY_URL: Record<string, string> = {
+  "https://www.city.osaka-izumi.lg.jp/kakukano/soumubu/zaiseika/gyoumu/yosan.html": "https://web.archive.org/web/20260713094504/https://www.city.osaka-izumi.lg.jp/kakukano/soumubu/zaiseika/gyoumu/yosan.html",
+  "https://www.city.osaka-izumi.lg.jp/material/files/group/18/02_R8_ippan.pdf": "https://web.archive.org/web/20260713094338/https://www.city.osaka-izumi.lg.jp/material/files/group/18/02_R8_ippan.pdf",
   "https://www.city.kofu.yamanashi.jp/zaise/documents/kekkaitiran.xls": "https://web.archive.org/web/20260712141740/https://www.city.kofu.yamanashi.jp/zaise/documents/kekkaitiran.xls",
   "https://www.city.kofu.yamanashi.jp/zaise/keikaku.html": "https://web.archive.org/web/20200812055346/https://www.city.kofu.yamanashi.jp/zaise/keikaku.html",
   "https://www.city.kofu.yamanashi.jp/zaise/documents/30kekkaitiran.xls": "https://web.archive.org/web/20260712141434/https://www.city.kofu.yamanashi.jp/zaise/documents/30kekkaitiran.xls",
@@ -60,6 +62,8 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r8yosan.html": "https://web.archive.org/web/20260712083536/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r8yosan.html",
   "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/zaise/documents/01ipankaikei.pdf": "https://web.archive.org/web/20260712091231/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/zaise/documents/01ipankaikei.pdf",
   "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/zaise/r07zaiseijokyo.html": "https://web.archive.org/web/20260712085648/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/zaise/r07zaiseijokyo.html",
+  "https://www.city.numazu.shizuoka.jp/shisei/gyozaisei/finance/yosan2025/gaiyousho/index.htm": "https://web.archive.org/web/20260713094129/https://www.city.numazu.shizuoka.jp/shisei/gyozaisei/finance/yosan2025/gaiyousho/index.htm",
+  "https://www.city.numazu.shizuoka.jp/shisei/gyozaisei/finance/yosan2025/gaiyousho/pdf/s-1.pdf": "https://web.archive.org/web/20260713094056/https://www.city.numazu.shizuoka.jp/shisei/gyozaisei/finance/yosan2025/gaiyousho/pdf/s-1.pdf",
   "https://www.soumu.go.jp/iken/zaisei/r02_shichouson.html": "https://web.archive.org/web/20260301074317/https://www.soumu.go.jp/iken/zaisei/r02_shichouson.html",
   "https://www.soumu.go.jp/main_content/000800819.xlsx": "https://web.archive.org/web/20220401110434/https://www.soumu.go.jp/main_content/000800819.xlsx",
   "https://www.soumu.go.jp/main_content/000800820.xlsx": "https://web.archive.org/web/20220401110512/https://www.soumu.go.jp/main_content/000800820.xlsx",
@@ -94,5 +98,9 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.soumu.go.jp/main_content/001061671.xlsx": "https://web.archive.org/web/20260712083915/https://www.soumu.go.jp/main_content/001061671.xlsx",
   "https://www.soumu.go.jp/main_content/001061674.xlsx": "https://web.archive.org/web/20260712084033/https://www.soumu.go.jp/main_content/001061674.xlsx",
   "https://www.soumu.go.jp/main_content/001061675.xlsx": "https://web.archive.org/web/20260712084200/https://www.soumu.go.jp/main_content/001061675.xlsx",
-  "https://www.soumu.go.jp/main_content/001061676.xlsx": "https://web.archive.org/web/20260712084335/https://www.soumu.go.jp/main_content/001061676.xlsx"
+  "https://www.soumu.go.jp/main_content/001061676.xlsx": "https://web.archive.org/web/20260712084335/https://www.soumu.go.jp/main_content/001061676.xlsx",
+  "https://www.city.toyokawa.lg.jp/material/files/group/10/R7_yosann.pdf": "https://web.archive.org/web/20260208071246/https://www.city.toyokawa.lg.jp/material/files/group/10/R7_yosann.pdf",
+  "https://www.city.toyokawa.lg.jp/soshiki/zaimu/zaisei/2/1/1/3/22950.html": "https://web.archive.org/web/20260713033630/https://www.city.toyokawa.lg.jp/soshiki/zaimu/zaisei/2/1/1/3/22950.html",
+  "https://www.city.yamaguchi.lg.jp/site/shiseijoho/171302.html": "https://web.archive.org/web/20260420011714/https://www.city.yamaguchi.lg.jp/site/shiseijoho/171302.html",
+  "https://www.city.yamaguchi.lg.jp/uploaded/attachment/105329.pdf": "https://web.archive.org/web/20250815060151/https://www.city.yamaguchi.lg.jp/uploaded/attachment/105329.pdf"
 };

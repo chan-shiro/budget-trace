@@ -103,9 +103,21 @@ export {
   type DecisionNode,
 } from './decision';
 
-/** カバレッジ階層。full = 予算ベースの詳細画面あり（甲府）。decision = 総務省決算ベース */
-export function tierOf(muniCode: string | null | undefined): 'full' | 'decision' {
-  return muniCode && FULL_MUNIS.includes(muniCode) ? 'full' : 'decision';
+// budget 階層（類似4市の当初予算・款別歳入歳出＋前年比較）
+import { BUDGET_MUNIS, MUNI_BUDGETS } from './munibudgets.gen';
+export { BUDGET_MUNIS, MUNI_BUDGETS, type MuniBudget, type MuniKanRow } from './munibudgets.gen';
+
+/**
+ * カバレッジ階層。
+ * - full = 予算ベースの詳細（主な事業・執行・評価・補正・前年比較）＝甲府
+ * - budget = 当初予算の款別＋前年当初比較のみ＝類似4市
+ * - decision = 総務省決算ベース＝全1,741市町村
+ */
+export function tierOf(muniCode: string | null | undefined): 'full' | 'budget' | 'decision' {
+  if (!muniCode) return 'decision';
+  if (FULL_MUNIS.includes(muniCode)) return 'full';
+  if (BUDGET_MUNIS.includes(muniCode)) return 'budget';
+  return 'decision';
 }
 /** 都道府県名 → 県コード（2桁）。未収録（地図に無い名前）は null */
 export function prefCodeOf(prefName: string | null | undefined): string | null {

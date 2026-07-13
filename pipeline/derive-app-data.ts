@@ -1190,3 +1190,144 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
   if (expMismatch) console.log(`  ⚠ Σ款≠歳出総額で除外した muni-年度: ${expMismatch}`);
   if (revMismatch) console.log(`  ⚠ Σ歳入科目≠歳入総額（表示は科目和ベース・警告のみ）: ${revMismatch}`);
 }
+
+// ============================================================================
+// 類似市の当初予算（款別歳入歳出）→ src/client/lib/munibudgets.gen.ts
+// 甲府の類似4市（豊川・山口・沼津・和泉）の当初予算を budget 階層として収録。
+// 予算資料には主な事業・執行・評価が無いので款別歳入歳出＋前年当初比較のみ。
+// 人口は総務省 R6 決算（最も近い全国統一値）。金額は億円。
+// ============================================================================
+{
+  const BUDGET_SOURCES = [
+    { srcId: "toyokawa-yosansho-r7", muniCode: "232076", muniName: "豊川市", prefName: "愛知県" },
+    { srcId: "yamaguchi-yosansho-r7", muniCode: "352039", muniName: "山口市", prefName: "山口県" },
+    { srcId: "numazu-yosansho-r7", muniCode: "222038", muniName: "沼津市", prefName: "静岡県" },
+    { srcId: "izumi-yosansho-r8", muniCode: "272191", muniName: "和泉市", prefName: "大阪府" },
+  ] as const;
+  const popDs = normalizedDatasetSchema.parse(readJson(normalizedPath("municipal-accounts", "R6", false)));
+  const TOP_REVENUE = 8; // 歳入ドーナツの上位款数（残りは「その他」に集約し内訳を children に）
+
+  const budgets = BUDGET_SOURCES.map((b) => {
+    const validation = validationResultSchema.parse(readJson(validationPath(b.srcId)));
+    if (validation.status !== "ok") throw new Error(`${b.srcId}: 検証が ${validation.status} のため derive しません`);
+    const doc = anyParsedDocSchema.parse(readJson(parsedPath(b.srcId)));
+    if (doc.docType !== "budget-book") throw new Error(`${b.srcId}: budget-book ではありません`);
+    const meta = readRawMeta(b.srcId);
+    if (!meta) throw new Error(`${b.srcId}: raw-meta がありません`);
+    const src = findSource(b.srcId);
+    const file = meta.files[0]!;
+    const url = src.urls?.[0] ?? src.landingPage ?? "";
+    const popRec = popDs.records.find((r) => r.muniCode === b.muniCode);
+    if (!popRec?.population) throw new Error(`${b.srcId}: 総務省R6に ${b.muniName}(${b.muniCode}) の人口がありません`);
+
+    const row = (f: (typeof doc.facts)[number]) => ({
+      name: f.kanName,
+      v: toOku(f.amount),
+      prevV: f.prevAmount != null ? toOku(f.prevAmount) : null,
+      yoy: yoyPctOf(f.amount, f.prevAmount),
+    });
+    const expenditure = doc.facts.filter((f) => f.side === "expenditure").map(row).sort((a, b2) => b2.v - a.v);
+    // 歳入は款数が多い（20超）ので上位 TOP_REVENUE ＋「その他」に集約（内訳は children）
+    const revAll = doc.facts.filter((f) => f.side === "revenue").map(row).sort((a, b2) => b2.v - a.v);
+    const revenue =
+      revAll.length > TOP_REVENUE + 1
+        ? [
+            ...revAll.slice(0, TOP_REVENUE),
+            {
+              name: "その他",
+              v: revAll.slice(TOP_REVENUE).reduce((a, r) => a + r.v, 0),
+              prevV: revAll.slice(TOP_REVENUE).every((r) => r.prevV != null)
+                ? revAll.slice(TOP_REVENUE).reduce((a, r) => a + (r.prevV ?? 0), 0)
+                : null,
+              yoy: null,
+              children: revAll.slice(TOP_REVENUE),
+            },
+          ]
+        : revAll;
+
+    const yoyTotal = yoyPctOf(doc.expenditureTotal, doc.prevExpenditureTotal);
+    return {
+      muniCode: b.muniCode,
+      muniName: b.muniName,
+      prefName: b.prefName,
+      fy: doc.fiscalYear,
+      fyLabel: `令和${doc.fiscalYear.slice(1)}年度 当初予算`,
+      population: popRec.population,
+      populationLabel: "住民基本台帳人口（総務省 令和6年度決算）",
+      totalOku: toOku(doc.expenditureTotal),
+      prevTotalOku: doc.prevExpenditureTotal != null ? toOku(doc.prevExpenditureTotal) : null,
+      yoyLabel: yoyTotal != null ? `${yoyTotal >= 0 ? "+" : ""}${yoyTotal.toFixed(1)}%` : "",
+      prevBasis: doc.prevBasis,
+      revenue,
+      expenditure,
+      sourceTitle: src.title,
+      sourceUrl: wayback(url),
+      originUrl: url,
+      sourceLocalUrl: `/sources/${b.srcId}/${file.filename}`,
+      pagesLabel: "款別歳入歳出",
+      evidence: [
+        {
+          title: src.title,
+          type: "PDF",
+          url: wayback(url),
+          localUrl: `/sources/${b.srcId}/${file.filename}`,
+          source: url ? new URL(url).hostname : "",
+          thumb: `${file.filename} ・ sha256 ${file.sha256.slice(0, 16)}… ・ ${file.fetchedAt.slice(0, 10)} 取得`,
+        },
+      ],
+    };
+  });
+
+  const byCode = Object.fromEntries(budgets.map((b) => [b.muniCode, b]));
+  const muniBudgetsOut = `// このファイルは自動生成です。手で編集しないこと。
+// 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
+// 甲府の類似4市（豊川・山口・沼津・和泉）の当初予算（款別歳入歳出・前年当初比較つき）。
+// budget 階層: 予算資料に主な事業・執行・評価が無いため款別＋前年比較のみ。金額は億円
+
+export interface MuniKanRow {
+  name: string;
+  /** 当年度予算額（億円） */
+  v: number;
+  /** 前年度予算額（億円） */
+  prevV: number | null;
+  /** 対前年度（%） */
+  yoy: number | null;
+  /** 「その他」集約の内訳（実款） */
+  children?: MuniKanRow[];
+}
+
+export interface MuniBudget {
+  muniCode: string;
+  muniName: string;
+  prefName: string;
+  fy: string;
+  fyLabel: string;
+  population: number;
+  populationLabel: string;
+  totalOku: number;
+  prevTotalOku: number | null;
+  yoyLabel: string;
+  prevBasis: "当初" | "補正後";
+  revenue: MuniKanRow[];
+  expenditure: MuniKanRow[];
+  sourceTitle: string;
+  sourceUrl: string;
+  originUrl: string;
+  sourceLocalUrl: string;
+  pagesLabel: string;
+  evidence: { title: string; type: string; url: string; localUrl: string; source: string; thumb: string }[];
+}
+
+/** 団体コード → 当初予算（budget 階層の4市） */
+export const MUNI_BUDGETS: Record<string, MuniBudget> = ${JSON.stringify(byCode, null, 2)};
+
+/** budget 階層（予算ベースの款別ダッシュボードを持つ）自治体の団体コード */
+export const BUDGET_MUNIS: string[] = ${JSON.stringify(budgets.map((b) => b.muniCode))};
+`;
+  writeFileSync(join(process.cwd(), "src/client/lib/munibudgets.gen.ts"), muniBudgetsOut, "utf8");
+  console.log(
+    `✓ 類似市の当初予算を導出 → src/client/lib/munibudgets.gen.ts（${budgets
+      .map((b) => `${b.muniName}:${b.totalOku.toFixed(0)}億`)
+      .join(" / ")}）`,
+  );
+}
