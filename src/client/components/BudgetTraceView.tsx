@@ -27,8 +27,8 @@ export default function BudgetTraceView({ v }: { v: any }) {
               <p style={S("margin:0 0 30px; color:#5C6B77; max-width:44ch;")}>款別の内訳から主な事業、前年比較、類似自治体との比較までを一次資料（エビデンス）付きで確認できます。</p>
               <div style={S("display:flex; gap:28px; margin-bottom:34px; flex-wrap:wrap;")}>
                 <div><div style={S("font-family:'IBM Plex Mono',monospace; font-size:24px; font-weight:600;")}>47</div><div style={S("font-size:12px; color:#5C6B77;")}>都道府県</div></div>
-                <div><div style={S("font-family:'IBM Plex Mono',monospace; font-size:24px; font-weight:600;")}>1,741</div><div style={S("font-size:12px; color:#5C6B77;")}>市区町村</div></div>
-                <div><div style={S("font-family:'IBM Plex Mono',monospace; font-size:24px; font-weight:600;")}>1</div><div style={S("font-size:12px; color:#5C6B77;")}>サンプル収録（甲府市）</div></div>
+                <div><div style={S("font-family:'IBM Plex Mono',monospace; font-size:24px; font-weight:600;")}>1,741</div><div style={S("font-size:12px; color:#5C6B77;")}>市区町村（決算収録）</div></div>
+                <div><div style={S("font-family:'IBM Plex Mono',monospace; font-size:24px; font-weight:600;")}>1</div><div style={S("font-size:12px; color:#5C6B77;")}>予算まで収録（甲府市）</div></div>
               </div>
               <HoverBox as="button" onClick={v.openKofuLink} data-mq="cta" style={S("background:#14181C; color:#F7FAFC; border:none; border-radius:10px; padding:14px 26px; font-size:15px; font-weight:600; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("background:#1798D0;")}>甲府市のサンプルを見る →</HoverBox>
             </div>
@@ -49,7 +49,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
         <div data-screen-label="市区町村選択" data-mq-pad="" style={S("min-height:100vh; width:min(880px,100%); margin:0 auto; padding:28px 32px 64px; animation:fadeUp .35s ease both;")}>
           <HoverBox as="button" onClick={v.goTop} style={S("border:none; background:none; color:#5C6B77; font-size:13px; cursor:pointer; padding:0; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("color:#1798D0;")}>← 日本地図へ戻る</HoverBox>
           <h1 style={S("margin:18px 0 6px; font-size:32px; font-weight:700;")}>{v.muniPrefName}</h1>
-          <p style={S("margin:0 0 28px; color:#5C6B77; font-size:14px;")}>自治体を選択してください。現在の収録は甲府市（令和2〜8年度当初予算）のみです。</p>
+          <p style={S("margin:0 0 28px; color:#5C6B77; font-size:14px;")}>{v.muniIntro}</p>
 
           <HoverBox as="button" onClick={v.prefAllOpen} style={S(`width:100%; text-align:left; display:flex; align-items:center; justify-content:space-between; gap:12px; background:${v.prefAllBg}; color:${v.prefAllFg}; border:1px solid ${v.prefAllBd}; border-radius:12px; padding:18px 22px; cursor:pointer; margin-bottom:22px; font-family:'IBM Plex Sans JP',sans-serif;`)} hoverStyle={S("border-color:#1798D0;")}>
             <span>
@@ -59,6 +59,9 @@ export default function BudgetTraceView({ v }: { v: any }) {
             <span style={S("font-family:'IBM Plex Mono',monospace; font-size:12px; border:1px solid currentColor; border-radius:999px; padding:3px 10px; white-space:nowrap;")}>{v.prefAllBadge}</span>
           </HoverBox>
 
+          {v.muniLoading && (
+            <div style={S("padding:40px 0; text-align:center; color:#8494A0; font-size:13.5px;")}>市区町村の一覧を読み込んでいます…</div>
+          )}
           <div style={S("display:grid; grid-template-columns:repeat(auto-fill, minmax(190px,1fr)); gap:10px;")}>
             {v.muniList.map((m: any, i: number) => (
               m.requestUrl ? (
@@ -129,12 +132,17 @@ export default function BudgetTraceView({ v }: { v: any }) {
           <main data-mq-pad="" style={S("flex:1; width:min(1160px,100%); margin:0 auto; padding:28px 28px 72px;")}>
 
             {/* ==== ダッシュボード ==== */}
-            {v.isDash && (
+            {v.isDash && v.loading && (
+              <div data-screen-label="自治体ダッシュボード（読み込み中）" style={S("padding:80px 0; text-align:center; color:#8494A0; font-size:14px; animation:fadeUp .35s ease both;")}>
+                決算データを読み込んでいます…
+              </div>
+            )}
+            {v.isDash && !v.loading && (
               <div data-screen-label="自治体ダッシュボード" style={S("animation:fadeUp .35s ease both;")}>
                 <div style={S("display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:24px;")}>
                   <div>
                     <h1 style={S("margin:0 0 4px; font-size:28px; font-weight:700;")}>{v.dashTitle}</h1>
-                    <p style={S("margin:0; color:#5C6B77; font-size:13.5px;")}>一般会計 当初予算 ・ 歳入と歳出は同額で編成されます</p>
+                    <p style={S("margin:0; color:#5C6B77; font-size:13.5px;")}>{v.dashSubtitle}</p>
                   </div>
                   <div data-mq="ralign" style={S("text-align:right;")}>
                     <div style={S("font-family:'IBM Plex Mono',monospace; font-size:34px; font-weight:600; line-height:1.1;")}>{v.totalFmtAnim}</div>
@@ -176,6 +184,8 @@ export default function BudgetTraceView({ v }: { v: any }) {
                   ))}
                 </div>
 
+                {/* 政策テーマ・注目の事業は予算資料（主な事業一覧）が要る full 専用 */}
+                {!v.isDecision && (
                 <section style={S("margin-bottom:26px;")}>
                   <div style={S("display:flex; align-items:baseline; justify-content:space-between; margin-bottom:12px;")}>
                     <h2 style={S("margin:0; font-size:16px; font-weight:700;")}>政策テーマ別に見る</h2>
@@ -193,7 +203,9 @@ export default function BudgetTraceView({ v }: { v: any }) {
                   </div>
                   <p style={S("margin:10px 2px 0; font-size:12px; color:#5C6B77;")}>第七次甲府市総合計画の基本目標別に、予算資料「主な事業一覧」掲載事業の予算額を集計しています。</p>
                 </section>
+                )}
 
+                {!v.isDecision && (
                 <section>
                   <div style={S("display:flex; align-items:baseline; justify-content:space-between; margin-bottom:12px;")}>
                     <h2 style={S("margin:0; font-size:16px; font-weight:700;")}>注目の事業（予算額上位）</h2>
@@ -223,10 +235,24 @@ export default function BudgetTraceView({ v }: { v: any }) {
                     <p style={S("margin:8px 0 0; font-size:11.5px; color:#5C6B77;")}>「主な事業一覧」に掲載された事業だけが内容・施策つきで説明されています。残りの予算は款別（一部は決算の項別）までの内訳です。</p>
                   </div>
                   )}
-                  <p style={S("margin:14px 2px 0; font-size:12px; color:#5C6B77;")}>
-                    <a href={v.dashSourceUrl} onClick={(e) => { e.preventDefault(); v.dashSourceOpen(); }} style={S("color:#5C6B77; cursor:pointer;")}>{v.dashSourceLabel}（原本を開く）</a>
-                  </p>
                 </section>
+                )}
+
+                {/* 決算ベース（総務省・decision 階層）: 予算資料で得られる機能の案内＋リクエスト導線 */}
+                {v.isDecision && (
+                <section style={S("background:#F0F7FB; border:1px solid #CFE0EA; border-radius:14px; padding:18px 22px; margin-bottom:6px;")}>
+                  <h2 style={S("margin:0 0 8px; font-size:15px; font-weight:700;")}>この自治体は総務省の決算データで収録しています</h2>
+                  <p style={S("margin:0 0 12px; font-size:12.5px; color:#5C6B77; line-height:1.7;")}>
+                    款別歳出（→項）・歳入科目（→内訳）・1人あたり・財政指標・類似自治体比較・決算の経年（R2〜R6）を確認できます。
+                    当初予算・補正・主な事業・執行状況・事務事業評価などの<strong style={S("color:#14181C;")}>予算資料ベースの詳細は未収録</strong>です（甲府市のみ収録済み）。
+                  </p>
+                  <a href={v.decisionRequestUrl} target="_blank" rel="noopener noreferrer" style={S("display:inline-block; font-size:12.5px; border:1px solid #1798D0; color:#0F76A3; border-radius:999px; padding:6px 16px; text-decoration:none;")}>この自治体の予算資料の収録をリクエスト ↗</a>
+                </section>
+                )}
+
+                <p style={S("margin:14px 2px 0; font-size:12px; color:#5C6B77;")}>
+                  <a href={v.dashSourceUrl} onClick={(e) => { e.preventDefault(); v.dashSourceOpen(); }} style={S("color:#5C6B77; cursor:pointer;")}>{v.dashSourceLabel}（原本を開く）</a>
+                </p>
               </div>
             )}
 
@@ -267,7 +293,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                     <div style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:12px; padding:12px 16px; max-width:240px;")}>
                       <div style={S("font-size:11px; font-family:'IBM Plex Mono',monospace; letter-spacing:0.12em; color:#5C6B77; margin-bottom:5px;")}>EVIDENCE</div>
                       <div style={S("font-size:12.5px; line-height:1.6;")}>{v.drillEvidence}</div>
-                      <a href={v.drillPdfUrl} onClick={(e) => { e.preventDefault(); v.dashSourceOpen(); }} style={S("font-size:12px; cursor:pointer;")}>予算書PDFを開く</a>
+                      <a href={v.drillPdfUrl} onClick={(e) => { e.preventDefault(); v.dashSourceOpen(); }} style={S("font-size:12px; cursor:pointer;")}>{v.isDecision ? "決算資料（Excel）を開く" : "予算書PDFを開く"}</a>
                     </div>
                   </div>
 
