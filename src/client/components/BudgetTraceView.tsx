@@ -308,12 +308,9 @@ export default function BudgetTraceView({ v }: { v: any }) {
                 {/* budget 階層（類似4市）: 当初予算のみ収録。事業・執行・評価は未収録 */}
                 {v.isBudget && (
                 <section style={S("background:#F0F7FB; border:1px solid #CFE0EA; border-radius:14px; padding:18px 22px; margin-bottom:6px;")}>
-                  <h2 style={S("margin:0 0 8px; font-size:15px; font-weight:700;")}>この自治体は当初予算（款別）を収録しています</h2>
-                  <p style={S("margin:0 0 12px; font-size:12.5px; color:#5C6B77; line-height:1.7;")}>
-                    款別の歳入・歳出・前年当初比較・1人あたり・類似自治体比較・決算の経年（総務省）を確認できます。
-                    <strong style={S("color:#14181C;")}>主な事業一覧・予算執行状況・事務事業評価は未収録</strong>です（甲府市のみ収録済み）。
-                  </p>
-                  <a href={v.budgetRequestUrl} target="_blank" rel="noopener noreferrer" style={S("display:inline-block; font-size:12.5px; border:1px solid #1798D0; color:#0F76A3; border-radius:999px; padding:6px 16px; text-decoration:none;")}>この自治体の事業・執行・評価の収録をリクエスト ↗</a>
+                  <h2 style={S("margin:0 0 8px; font-size:15px; font-weight:700;")}>{v.budgetPanelTitle}</h2>
+                  <p style={S("margin:0 0 12px; font-size:12.5px; color:#5C6B77; line-height:1.7;")}>{v.budgetPanelBody}</p>
+                  <a href={v.budgetRequestUrl} target="_blank" rel="noopener noreferrer" style={S("display:inline-block; font-size:12.5px; border:1px solid #1798D0; color:#0F76A3; border-radius:999px; padding:6px 16px; text-decoration:none;")}>{v.isPref ? "決算・執行状況の収録をリクエスト ↗" : "この自治体の事業・執行・評価の収録をリクエスト ↗"}</a>
                 </section>
                 )}
 

@@ -250,9 +250,13 @@ export default function BudgetTrace() {
   // decision 自治体だがまだ表示できない（シャード取得待ち・名前解決前）
   const decisionPending = isApp && tier === "decision" && !decisionView;
 
-  // budget 階層（類似4市の当初予算・静的 gen）
+  // budget 階層（類似市の当初予算・静的 gen）
   const muniBudget = tier === "budget" && muniCode ? D.MUNI_BUDGETS[muniCode] ?? null : null;
   const isBudget = !!muniBudget;
+  // 都道府県エンティティ（県全体）か。市町村向けの機能（類似自治体比較・主な事業）は出さない
+  const isPref = !!muniBudget?.isPref;
+  // この都道府県の「県全体」エンティティ（市区町村選択の県全体ボタン用）
+  const prefEntity = Object.values(D.MUNI_BUDGETS).find((b) => b.isPref && b.prefName === prefName) ?? null;
 
   // 収録済み（full）の年度は当初予算の収録年度（R8〜R6・R3〜R2）から選択
   const budget = KOFU_BUDGET_YEARS.find((b) => b.fy === s.budgetFy) ?? KOFU_BUDGET_YEARS[0]!;
@@ -624,12 +628,13 @@ export default function BudgetTrace() {
     ["予算執行状況", "execution", () => nav({ screen: "execution" })],
     ["類似自治体", "similar", () => nav({ screen: "similar" })],
   ];
-  // budget（類似4市）は前年比較まで（主な事業・政策テーマ・執行は資料なし）
+  // budget（類似市）は前年比較まで（主な事業・政策テーマ・執行は資料なし）。
+  // 都道府県エンティティ（県全体）は市町村の類似自治体比較を出さない
   const navDefsBudget: [string, string, () => void][] = [
     ["ダッシュボード", "dash", () => nav({ screen: "dash" })],
     ["款別ドリルダウン", "drill", () => nav({ screen: "drill" })],
     ["前年比較", "compare", () => nav({ screen: "compare" })],
-    ["類似自治体", "similar", () => nav({ screen: "similar" })],
+    ...(isPref ? [] : ([["類似自治体", "similar", () => nav({ screen: "similar" })]] as [string, string, () => void][])),
   ];
   const navDefsDecision: [string, string, () => void][] = [
     ["ダッシュボード", "dash", () => nav({ screen: "dash" })],
@@ -643,7 +648,9 @@ export default function BudgetTrace() {
   // 政策テーマ・予算執行は full 専用。前年比較は full+budget（decision のみ不可）
   const gatedToDash =
     (isDecision && ["compare", "themes", "execution"].includes(screen)) ||
-    (isBudget && ["themes", "execution"].includes(screen));
+    (isBudget && ["themes", "execution"].includes(screen)) ||
+    // 都道府県は市町村の類似自治体比較を出さない
+    (isPref && screen === "similar");
 
   const v: any = {
     isTop: screen === "top", isMuni: screen === "muni", isApp,
@@ -653,10 +660,19 @@ export default function BudgetTrace() {
     isExecution: screen === "execution" && isFull,
     // 決算ベース（総務省・decision 階層）の自治体か。予算資料ベースの full 画面は出さない
     isDecision,
-    // 予算のみ収録（budget 階層・類似4市）。主な事業/執行/評価は未収録
+    // 予算のみ収録（budget 階層・類似市）。主な事業/執行/評価は未収録
     isBudget,
     // full（甲府）: 主な事業・政策テーマ・執行まで出す
     isFull,
+    // 都道府県エンティティ（県全体）か
+    isPref,
+    // budget 案内パネルの本文（都道府県は市町村向け文言を出さない）
+    budgetPanelTitle: isPref
+      ? `${data.name}（都道府県会計）の当初予算を収録しています`
+      : "この自治体は当初予算（款別）を収録しています",
+    budgetPanelBody: isPref
+      ? "款別の歳入・歳出・前年当初比較・1人あたり（県内市町村人口合計）を確認できます。決算・執行状況・主な事業は未収録です。"
+      : "款別の歳入・歳出・前年当初比較・1人あたり・類似自治体比較・決算の経年（総務省）を確認できます。主な事業一覧・予算執行状況・事務事業評価は市によって未収録です。",
     // decision 自治体のシャード取得待ち（ダッシュボードでスケルトンを出す）
     loading: decisionPending,
     // decision 自治体の未収録機能（主な事業・執行・評価・補正）のその場リクエスト
@@ -699,13 +715,19 @@ export default function BudgetTrace() {
             { name: "債務負担行為（翌年度以降）", v: decisionView!.bond.debtBurdenOku != null ? fmtOku(decisionView!.bond.debtBurdenOku) : "—", strong: false },
           ]
         : [],
-    // budget 階層（類似4市）の未収録機能（主な事業・執行状況・事務事業評価）のリクエスト
+    // budget 階層の未収録機能のリクエスト。都道府県は決算、市は主な事業/執行/評価
     budgetRequestUrl: isBudget
-      ? D.buildRequestUrl(
-          `${data.name}の主な事業・執行状況・事務事業評価の収録`,
-          `自治体リクエスト: ${prefName} ${data.name} は当初予算（款別）を収録済み。主な事業一覧・予算執行状況・事務事業評価も見たい`,
-          data.name,
-        )
+      ? isPref
+        ? D.buildRequestUrl(
+            `${data.name}（都道府県）の決算・執行状況の収録`,
+            `リクエスト: ${data.name}（都道府県会計）は当初予算（款別）を収録済み。決算・執行率も見たい`,
+            data.name,
+          )
+        : D.buildRequestUrl(
+            `${data.name}の主な事業・執行状況・事務事業評価の収録`,
+            `自治体リクエスト: ${prefName} ${data.name} は当初予算（款別）を収録済み。主な事業一覧・予算執行状況・事務事業評価も見たい`,
+            data.name,
+          )
       : "",
     execTabs, execRows,
     // 年度切替（R3 は資料消失により欠落 — execGapNote で明示）
@@ -758,10 +780,17 @@ export default function BudgetTrace() {
         : muniEntries.some((e) => D.tierOf(e.code) === "budget")
           ? `${muniEntries.filter((e) => D.tierOf(e.code) === "budget").map((e) => e.name).join("・")}は当初予算（款別・前年当初比較）まで収録。他の市町村は総務省の決算ベースで閲覧できます。`
           : `${prefName}の市区町村は総務省の決算ベース（款別歳出・歳入内訳・1人あたり・類似比較）で閲覧できます。予算資料ベースの詳細は収録リクエストできます。`,
-    prefAllOpen: () => {},
-    prefAllBg: "#F0F5F8", prefAllFg: "#8494A0", prefAllBd: "#DFE7EC",
-    prefAllBadge: "準備中",
-    prefAllNote: "都道府県（県全体）レベルの会計データは未収録です",
+    // 「県全体（都道府県レベル）」ボタン。県の当初予算エンティティがあれば飛べる
+    prefAllOpen: prefEntity
+      ? () => nav({ screen: "dash", muni: prefEntity.muniName, muniCode: prefEntity.muniCode, pref: prefName, drillPath: [], theme: null, budgetFy: undefined })
+      : () => {},
+    prefAllBg: prefEntity ? "#FFFFFF" : "#F0F5F8",
+    prefAllFg: prefEntity ? "#14181C" : "#8494A0",
+    prefAllBd: prefEntity ? accent : "#DFE7EC",
+    prefAllBadge: prefEntity ? "当初予算 収録済" : "準備中",
+    prefAllNote: prefEntity
+      ? `${prefName}（都道府県会計）の当初予算を款別で閲覧できます`
+      : "都道府県（県全体）レベルの会計データは未収録です",
     muniList,
     prefRequestUrl,
     // 全市町村が最低でも決算ベースで閲覧可能になったので、空県カードは出さない

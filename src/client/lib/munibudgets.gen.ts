@@ -35,6 +35,8 @@ export interface MuniBudget {
   muniCode: string;
   muniName: string;
   prefName: string;
+  /** 都道府県エンティティ（県全体）か。市町村比較・主な事業は出さない */
+  isPref: boolean;
   fy: string;
   fyLabel: string;
   population: number;
@@ -57,10 +59,227 @@ export interface MuniBudget {
 
 /** 団体コード → 当初予算（budget 階層の4市） */
 export const MUNI_BUDGETS: Record<string, MuniBudget> = {
+  "190004": {
+    "muniCode": "190004",
+    "muniName": "山梨県",
+    "prefName": "山梨県",
+    "isPref": true,
+    "projects": [],
+    "fy": "R8",
+    "fyLabel": "令和8年度 当初予算",
+    "population": 801056,
+    "populationLabel": "県内市町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
+    "totalOku": 5321.1735,
+    "prevTotalOku": 5115.43169,
+    "yoyLabel": "+4.0%",
+    "prevBasis": "当初",
+    "revenue": [
+      {
+        "name": "交付金地方交付税",
+        "v": 1409.44,
+        "prevV": 1369.85,
+        "yoy": 2.9
+      },
+      {
+        "name": "県税",
+        "v": 1094.63459,
+        "prevV": 1060.86256,
+        "yoy": 3.2
+      },
+      {
+        "name": "諸収入",
+        "v": 727.63231,
+        "prevV": 822.00693,
+        "yoy": -11.5
+      },
+      {
+        "name": "手数料国庫支出金",
+        "v": 541.21052,
+        "prevV": 501.27532,
+        "yoy": 8
+      },
+      {
+        "name": "地方消費税",
+        "v": 515.65652,
+        "prevV": 451.91967,
+        "yoy": 14.1
+      },
+      {
+        "name": "県債",
+        "v": 493.68,
+        "prevV": 445.36,
+        "yoy": 10.8
+      },
+      {
+        "name": "清算金地方譲与税",
+        "v": 195.84254,
+        "prevV": 179.4261,
+        "yoy": 9.1
+      },
+      {
+        "name": "繰入金",
+        "v": 173.85699,
+        "prevV": 165.61106,
+        "yoy": 5
+      },
+      {
+        "name": "その他",
+        "v": 169.22003,
+        "prevV": 119.12005,
+        "yoy": null,
+        "children": [
+          {
+            "name": "負担金使用料及び",
+            "v": 76.96147,
+            "prevV": 74.95492,
+            "yoy": 2.7
+          },
+          {
+            "name": "地方特例",
+            "v": 50.26389,
+            "prevV": 4.58001,
+            "yoy": 997.5
+          },
+          {
+            "name": "特別交付金分担金及び",
+            "v": 26.62594,
+            "prevV": 26.56239,
+            "yoy": 0.2
+          },
+          {
+            "name": "財産収入",
+            "v": 12.57252,
+            "prevV": 9.70059,
+            "yoy": 29.6
+          },
+          {
+            "name": "交通安全対策",
+            "v": 1.9,
+            "prevV": 2.06,
+            "yoy": -7.8
+          },
+          {
+            "name": "寄附金",
+            "v": 0.8962,
+            "prevV": 1.26213,
+            "yoy": -29
+          },
+          {
+            "name": "繰越金",
+            "v": 0.00001,
+            "prevV": 0.00001,
+            "yoy": 0
+          }
+        ]
+      }
+    ],
+    "expenditure": [
+      {
+        "name": "教育費",
+        "v": 1035.84677,
+        "prevV": 925.85266,
+        "yoy": 11.9
+      },
+      {
+        "name": "公債費",
+        "v": 700.58695,
+        "prevV": 700.9522,
+        "yoy": -0.1
+      },
+      {
+        "name": "土木費",
+        "v": 684.55143,
+        "prevV": 682.50082,
+        "yoy": 0.3
+      },
+      {
+        "name": "民生費",
+        "v": 679.34661,
+        "prevV": 627.90003,
+        "yoy": 8.2
+      },
+      {
+        "name": "商工費",
+        "v": 568.97801,
+        "prevV": 658.59993,
+        "yoy": -13.6
+      },
+      {
+        "name": "諸支出金",
+        "v": 502.30527,
+        "prevV": 424.37774,
+        "yoy": 18.4
+      },
+      {
+        "name": "総務費",
+        "v": 417.52979,
+        "prevV": 388.58509,
+        "yoy": 7.4
+      },
+      {
+        "name": "警察費",
+        "v": 244.44995,
+        "prevV": 240.47558,
+        "yoy": 1.7
+      },
+      {
+        "name": "農林水産業費",
+        "v": 227.887,
+        "prevV": 226.649,
+        "yoy": 0.5
+      },
+      {
+        "name": "衛生費",
+        "v": 191.15462,
+        "prevV": 171.54614,
+        "yoy": 11.4
+      },
+      {
+        "name": "災害復旧費",
+        "v": 35.05937,
+        "prevV": 34.46054,
+        "yoy": 1.7
+      },
+      {
+        "name": "労働費",
+        "v": 18.5314,
+        "prevV": 18.36225,
+        "yoy": 0.9
+      },
+      {
+        "name": "議会費",
+        "v": 9.94633,
+        "prevV": 10.16971,
+        "yoy": -2.2
+      },
+      {
+        "name": "予備費",
+        "v": 5,
+        "prevV": 5,
+        "yoy": 0
+      }
+    ],
+    "sourceTitle": "令和8年度 山梨県当初予算（規模・款別歳入歳出）",
+    "sourceUrl": "https://www.pref.yamanashi.jp/documents/6018/03_tousyoyosannkibo_1.pdf",
+    "originUrl": "https://www.pref.yamanashi.jp/documents/6018/03_tousyoyosannkibo_1.pdf",
+    "sourceLocalUrl": "/sources/yamanashi-yosansho-r8/03_tousyoyosannkibo_1.pdf",
+    "pagesLabel": "款別歳入歳出",
+    "evidence": [
+      {
+        "title": "令和8年度 山梨県当初予算（規模・款別歳入歳出）",
+        "type": "PDF",
+        "url": "https://www.pref.yamanashi.jp/documents/6018/03_tousyoyosannkibo_1.pdf",
+        "localUrl": "/sources/yamanashi-yosansho-r8/03_tousyoyosannkibo_1.pdf",
+        "source": "www.pref.yamanashi.jp",
+        "thumb": "03_tousyoyosannkibo_1.pdf ・ sha256 742025562ff7fed1… ・ 2026-07-13 取得"
+      }
+    ]
+  },
   "192023": {
     "muniCode": "192023",
     "muniName": "富士吉田市",
     "prefName": "山梨県",
+    "isPref": false,
     "projects": [],
     "fy": "R8",
     "fyLabel": "令和8年度 当初予算",
@@ -312,6 +531,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
     "muniCode": "192082",
     "muniName": "南アルプス市",
     "prefName": "山梨県",
+    "isPref": false,
     "projects": [],
     "fy": "R8",
     "fyLabel": "令和8年度 当初予算",
@@ -563,6 +783,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
     "muniCode": "192112",
     "muniName": "笛吹市",
     "prefName": "山梨県",
+    "isPref": false,
     "projects": [],
     "fy": "R8",
     "fyLabel": "令和8年度 当初予算",
@@ -820,6 +1041,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
     "muniCode": "222038",
     "muniName": "沼津市",
     "prefName": "静岡県",
+    "isPref": false,
     "projects": [],
     "fy": "R7",
     "fyLabel": "令和7年度 当初予算",
@@ -1077,6 +1299,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
     "muniCode": "232076",
     "muniName": "豊川市",
     "prefName": "愛知県",
+    "isPref": false,
     "projects": [
       {
         "name": "特別保育事業",
@@ -3097,6 +3320,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
     "muniCode": "272191",
     "muniName": "和泉市",
     "prefName": "大阪府",
+    "isPref": false,
     "projects": [
       {
         "name": "（仮称）富秋学園整備事業",
@@ -3629,6 +3853,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
     "muniCode": "352039",
     "muniName": "山口市",
     "prefName": "山口県",
+    "isPref": false,
     "projects": [
       {
         "name": "障害福祉サービス給付事業",
@@ -4486,4 +4711,4 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
 };
 
 /** budget 階層（予算ベースの款別ダッシュボードを持つ）自治体の団体コード */
-export const BUDGET_MUNIS: string[] = ["232076","352039","222038","272191","192112","192023","192082"];
+export const BUDGET_MUNIS: string[] = ["232076","352039","222038","272191","192112","192023","192082","190004"];

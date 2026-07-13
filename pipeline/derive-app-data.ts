@@ -1236,14 +1236,16 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
 // ============================================================================
 {
   const BUDGET_SOURCES = [
-    { srcId: "toyokawa-yosansho-r7", muniCode: "232076", muniName: "豊川市", prefName: "愛知県" },
-    { srcId: "yamaguchi-yosansho-r7", muniCode: "352039", muniName: "山口市", prefName: "山口県" },
-    { srcId: "numazu-yosansho-r7", muniCode: "222038", muniName: "沼津市", prefName: "静岡県" },
-    { srcId: "izumi-yosansho-r8", muniCode: "272191", muniName: "和泉市", prefName: "大阪府" },
+    { srcId: "toyokawa-yosansho-r7", muniCode: "232076", muniName: "豊川市", prefName: "愛知県", isPref: false },
+    { srcId: "yamaguchi-yosansho-r7", muniCode: "352039", muniName: "山口市", prefName: "山口県", isPref: false },
+    { srcId: "numazu-yosansho-r7", muniCode: "222038", muniName: "沼津市", prefName: "静岡県", isPref: false },
+    { srcId: "izumi-yosansho-r8", muniCode: "272191", muniName: "和泉市", prefName: "大阪府", isPref: false },
     // 山梨県内（甲府に次ぐ規模）
-    { srcId: "fuefuki-yosansho-r8", muniCode: "192112", muniName: "笛吹市", prefName: "山梨県" },
-    { srcId: "fujiyoshida-yosansho-r8", muniCode: "192023", muniName: "富士吉田市", prefName: "山梨県" },
-    { srcId: "minami-alps-yosansho-r8", muniCode: "192082", muniName: "南アルプス市", prefName: "山梨県" },
+    { srcId: "fuefuki-yosansho-r8", muniCode: "192112", muniName: "笛吹市", prefName: "山梨県", isPref: false },
+    { srcId: "fujiyoshida-yosansho-r8", muniCode: "192023", muniName: "富士吉田市", prefName: "山梨県", isPref: false },
+    { srcId: "minami-alps-yosansho-r8", muniCode: "192082", muniName: "南アルプス市", prefName: "山梨県", isPref: false },
+    // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
+    { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;
   const popDs = normalizedDatasetSchema.parse(readJson(normalizedPath("municipal-accounts", "R6", false)));
   const TOP_REVENUE = 8; // 歳入ドーナツの上位款数（残りは「その他」に集約し内訳を children に）
@@ -1258,7 +1260,15 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     const src = findSource(b.srcId);
     const file = meta.files[0]!;
     const url = src.urls?.[0] ?? src.landingPage ?? "";
-    const popRec = popDs.records.find((r) => r.muniCode === b.muniCode);
+    // 都道府県エンティティの人口は県内市町村（団体コード先頭2桁一致）の住基人口の合計
+    const prefCode = b.muniCode.slice(0, 2);
+    const popRec = b.isPref
+      ? {
+          population: popDs.records
+            .filter((r) => r.muniCode.slice(0, 2) === prefCode && r.population)
+            .reduce((a, r) => a + (r.population ?? 0), 0),
+        }
+      : popDs.records.find((r) => r.muniCode === b.muniCode);
     if (!popRec?.population) throw new Error(`${b.srcId}: 総務省R6に ${b.muniName}(${b.muniCode}) の人口がありません`);
 
     const row = (f: (typeof doc.facts)[number]) => ({
@@ -1309,11 +1319,15 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       muniCode: b.muniCode,
       muniName: b.muniName,
       prefName: b.prefName,
+      // 都道府県エンティティか（類似自治体比較を出さない・ラベルを変える）
+      isPref: b.isPref,
       projects,
       fy: doc.fiscalYear,
       fyLabel: `令和${doc.fiscalYear.slice(1)}年度 当初予算`,
       population: popRec.population,
-      populationLabel: "住民基本台帳人口（総務省 令和6年度決算）",
+      populationLabel: b.isPref
+        ? "県内市町村の住民基本台帳人口の合計（総務省 令和6年度決算）"
+        : "住民基本台帳人口（総務省 令和6年度決算）",
       totalOku: toOku(doc.expenditureTotal),
       prevTotalOku: doc.prevExpenditureTotal != null ? toOku(doc.prevExpenditureTotal) : null,
       yoyLabel: yoyTotal != null ? `${yoyTotal >= 0 ? "+" : ""}${yoyTotal.toFixed(1)}%` : "",
@@ -1376,6 +1390,8 @@ export interface MuniBudget {
   muniCode: string;
   muniName: string;
   prefName: string;
+  /** 都道府県エンティティ（県全体）か。市町村比較・主な事業は出さない */
+  isPref: boolean;
   fy: string;
   fyLabel: string;
   population: number;
