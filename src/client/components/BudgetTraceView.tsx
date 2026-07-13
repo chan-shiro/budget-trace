@@ -238,6 +238,40 @@ export default function BudgetTraceView({ v }: { v: any }) {
                 </section>
                 )}
 
+                {/* 性質別歳出（決算・総務省(4)）＋地方債現在高（(5)）。R6 のみ */}
+                {v.isDecision && v.hasNature && (
+                <section style={S("margin-bottom:26px;")}>
+                  <div style={S("display:flex; align-items:baseline; justify-content:space-between; margin-bottom:12px;")}>
+                    <h2 style={S("margin:0; font-size:16px; font-weight:700;")}>性質別の歳出（なにに使ったか・決算）</h2>
+                    <span style={S("font-size:11.5px; color:#9DACB7; font-family:'IBM Plex Mono',monospace;")}>{v.natureFyLabel}</span>
+                  </div>
+                  <div style={S("display:grid; grid-template-columns:repeat(auto-fit, minmax(320px,1fr)); gap:18px;")}>
+                    <div style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; padding:16px 20px;")}>
+                      {v.natureRows.map((r: any, i: number) => (
+                        <div key={i} style={S("display:flex; align-items:center; gap:9px; padding:4px 0;")}>
+                          <span style={S(`width:9px; height:9px; border-radius:2px; background:${r.sw}; flex-shrink:0;`)}></span>
+                          <span style={S("flex:1; font-size:12.5px; color:#14181C;")}>{r.name}</span>
+                          <span style={S("width:74px; height:6px; border-radius:999px; background:#EEF3F6; overflow:hidden;")}><span data-anim="bar" style={S(`display:block; height:100%; width:${r.barW}%; background:${r.sw};`)}></span></span>
+                          <span style={S("font-family:'IBM Plex Mono',monospace; font-size:12px; width:82px; text-align:right;")}>{r.amtFmt}</span>
+                          <span style={S("font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#5C6B77; width:44px; text-align:right;")}>{r.pctFmt}</span>
+                        </div>
+                      ))}
+                      <p style={S("margin:8px 2px 0; font-size:11px; color:#9DACB7;")}>人件費・扶助費・普通建設事業費などの性質別内訳（総務省 決算状況調(4)）。</p>
+                    </div>
+                    <div style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; padding:16px 20px; align-self:start;")}>
+                      <div style={S("font-size:13px; font-weight:700; margin-bottom:10px;")}>地方債・基金の状況（決算末）</div>
+                      {v.bondItems.map((b: any, i: number) => (
+                        <div key={i} style={S(`display:flex; justify-content:space-between; gap:12px; padding:5px 0; ${b.strong ? "border-bottom:1px solid #EEF3F6;" : ""}`)}>
+                          <span style={S(`font-size:12.5px; color:${b.strong ? "#14181C" : "#5C6B77"};`)}>{b.name}</span>
+                          <span style={S(`font-family:'IBM Plex Mono',monospace; font-size:13px; font-weight:${b.strong ? "600" : "400"};`)}>{b.v}</span>
+                        </div>
+                      ))}
+                      <p style={S("margin:8px 2px 0; font-size:11px; color:#9DACB7;")}>総務省 決算状況調(5)地方債。</p>
+                    </div>
+                  </div>
+                </section>
+                )}
+
                 {/* 決算ベース（総務省・decision 階層）: 予算資料で得られる機能の案内＋リクエスト導線 */}
                 {v.isDecision && (
                 <section style={S("background:#F0F7FB; border:1px solid #CFE0EA; border-radius:14px; padding:18px 22px; margin-bottom:6px;")}>

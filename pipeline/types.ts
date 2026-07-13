@@ -338,12 +338,50 @@ export const budgetOutturnDocSchema = z.object({
 });
 export type BudgetOutturnDoc = z.infer<typeof budgetOutturnDocSchema>;
 
+// 総務省 決算状況調(4)性質別歳出＋(5)地方債。1自治体1レコード。千円。
+export const municipalNatureFactSchema = z.object({
+  muniCode: z.string().regex(/^\d{6}$/),
+  /** 主要14性質（人件費・扶助費・普通建設事業費・公債費…）→ 千円 */
+  byNature: z.record(z.string(), z.number()),
+  /** Σ主要14性質（＝歳出総額。概況と突合できる） */
+  natureTotal: z.number(),
+  /** 地方債現在高ほか（(5)ファイル。無い自治体は null） */
+  localBond: z
+    .object({
+      balance: z.number(),
+      reserveTotal: z.number().nullable(),
+      reserveByType: z.object({
+        財政調整基金: z.number().nullable(),
+        減債基金: z.number().nullable(),
+        その他特定目的基金: z.number().nullable(),
+      }),
+      debtBurdenFuture: z.number().nullable(),
+      publicEnterpriseTransfer: z.number().nullable(),
+    })
+    .nullable(),
+  locator: locatorSchema,
+});
+export type MunicipalNatureFact = z.infer<typeof municipalNatureFactSchema>;
+
+export const municipalNatureDocSchema = z.object({
+  docType: z.literal("municipal-nature"),
+  sourceId: z.string(),
+  parser: z.string(),
+  parserVersion: z.string(),
+  parsedAt: z.string(),
+  unit: z.literal("thousandYen"),
+  fiscalYear: z.string(),
+  facts: z.array(municipalNatureFactSchema),
+});
+export type MunicipalNatureDoc = z.infer<typeof municipalNatureDocSchema>;
+
 /** parse/validate が受け取り得る全ドキュメント型 */
 export const anyParsedDocSchema = z.union([
   budgetBookDocSchema,
   budgetExecutionDocSchema,
   projectEvaluationDocSchema,
   budgetOutturnDocSchema,
+  municipalNatureDocSchema,
   parsedDocSchema,
 ]);
 export type AnyParsedDoc = z.infer<typeof anyParsedDocSchema>;
