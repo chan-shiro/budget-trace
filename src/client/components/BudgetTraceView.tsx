@@ -28,7 +28,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
               <div style={S("display:flex; gap:28px; margin-bottom:34px; flex-wrap:wrap;")}>
                 <div><div style={S("font-family:'IBM Plex Mono',monospace; font-size:24px; font-weight:600;")}>47</div><div style={S("font-size:12px; color:#5C6B77;")}>都道府県</div></div>
                 <div><div style={S("font-family:'IBM Plex Mono',monospace; font-size:24px; font-weight:600;")}>1,741</div><div style={S("font-size:12px; color:#5C6B77;")}>市区町村（決算収録）</div></div>
-                <div><div style={S("font-family:'IBM Plex Mono',monospace; font-size:24px; font-weight:600;")}>1</div><div style={S("font-size:12px; color:#5C6B77;")}>予算まで収録（甲府市）</div></div>
+                <div><div style={S("font-family:'IBM Plex Mono',monospace; font-size:24px; font-weight:600;")}>5</div><div style={S("font-size:12px; color:#5C6B77;")}>当初予算まで収録</div></div>
               </div>
               <HoverBox as="button" onClick={v.openKofuLink} data-mq="cta" style={S("background:#14181C; color:#F7FAFC; border:none; border-radius:10px; padding:14px 26px; font-size:15px; font-weight:600; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("background:#1798D0;")}>甲府市のサンプルを見る →</HoverBox>
             </div>
@@ -184,8 +184,8 @@ export default function BudgetTraceView({ v }: { v: any }) {
                   ))}
                 </div>
 
-                {/* 政策テーマ・注目の事業は予算資料（主な事業一覧）が要る full 専用 */}
-                {!v.isDecision && (
+                {/* 政策テーマ・注目の事業は予算資料（主な事業一覧）が要る full 専用（甲府） */}
+                {v.isFull && (
                 <section style={S("margin-bottom:26px;")}>
                   <div style={S("display:flex; align-items:baseline; justify-content:space-between; margin-bottom:12px;")}>
                     <h2 style={S("margin:0; font-size:16px; font-weight:700;")}>政策テーマ別に見る</h2>
@@ -205,7 +205,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                 </section>
                 )}
 
-                {!v.isDecision && (
+                {v.isFull && (
                 <section>
                   <div style={S("display:flex; align-items:baseline; justify-content:space-between; margin-bottom:12px;")}>
                     <h2 style={S("margin:0; font-size:16px; font-weight:700;")}>注目の事業（予算額上位）</h2>
@@ -247,6 +247,18 @@ export default function BudgetTraceView({ v }: { v: any }) {
                     当初予算・補正・主な事業・執行状況・事務事業評価などの<strong style={S("color:#14181C;")}>予算資料ベースの詳細は未収録</strong>です（甲府市のみ収録済み）。
                   </p>
                   <a href={v.decisionRequestUrl} target="_blank" rel="noopener noreferrer" style={S("display:inline-block; font-size:12.5px; border:1px solid #1798D0; color:#0F76A3; border-radius:999px; padding:6px 16px; text-decoration:none;")}>この自治体の予算資料の収録をリクエスト ↗</a>
+                </section>
+                )}
+
+                {/* budget 階層（類似4市）: 当初予算のみ収録。事業・執行・評価は未収録 */}
+                {v.isBudget && (
+                <section style={S("background:#F0F7FB; border:1px solid #CFE0EA; border-radius:14px; padding:18px 22px; margin-bottom:6px;")}>
+                  <h2 style={S("margin:0 0 8px; font-size:15px; font-weight:700;")}>この自治体は当初予算（款別）を収録しています</h2>
+                  <p style={S("margin:0 0 12px; font-size:12.5px; color:#5C6B77; line-height:1.7;")}>
+                    款別の歳入・歳出・前年当初比較・1人あたり・類似自治体比較・決算の経年（総務省）を確認できます。
+                    <strong style={S("color:#14181C;")}>主な事業一覧・予算執行状況・事務事業評価は未収録</strong>です（甲府市のみ収録済み）。
+                  </p>
+                  <a href={v.budgetRequestUrl} target="_blank" rel="noopener noreferrer" style={S("display:inline-block; font-size:12.5px; border:1px solid #1798D0; color:#0F76A3; border-radius:999px; padding:6px 16px; text-decoration:none;")}>この自治体の事業・執行・評価の収録をリクエスト ↗</a>
                 </section>
                 )}
 
@@ -417,7 +429,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                 <div style={S("display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:20px;")}>
                   <div>
                     <h1 style={S("margin:0 0 6px; font-size:24px; font-weight:700;")}>前年度との比較</h1>
-                    <p style={S("margin:0; color:#5C6B77; font-size:13.5px;")}>{v.compPrevLabel} と {v.compCurLabel} の当初予算を款ごとに比較します（甲府市は公表実データ）。{v.compPrevNote && <span style={S("display:block; font-size:11.5px; color:#9DACB7; margin-top:2px;")}>{v.compPrevNote}</span>}</p>
+                    <p style={S("margin:0; color:#5C6B77; font-size:13.5px;")}>{v.compPrevLabel} と {v.compCurLabel} の当初予算を款ごとに比較します（予算資料の前年度当初額を使用）。{v.compPrevNote && <span style={S("display:block; font-size:11.5px; color:#9DACB7; margin-top:2px;")}>{v.compPrevNote}</span>}</p>
                   </div>
                   <div style={S("display:inline-flex; border:1px solid #DFE7EC; border-radius:999px; overflow:hidden; background:#FFFFFF;")}>
                     {v.compTabs.map((ct: any, i: number) => (

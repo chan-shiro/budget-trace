@@ -3,6 +3,14 @@
   "entries": [
     {
       "sourceId": "izumi-yosansho-r8",
+      "url": "https://www.city.osaka-izumi.lg.jp/kakukano/soumubu/zaiseika/gyoumu/yosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260713094504/https://www.city.osaka-izumi.lg.jp/kakukano/soumubu/zaiseika/gyoumu/yosan.html",
+      "waybackTimestamp": "20260713094504",
+      "checkedAt": "2026-07-13T09:45:56.155Z"
+    },
+    {
+      "sourceId": "izumi-yosansho-r8",
       "url": "https://www.city.osaka-izumi.lg.jp/material/files/group/18/02_R8_ippan.pdf",
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260713094338/https://www.city.osaka-izumi.lg.jp/material/files/group/18/02_R8_ippan.pdf",
