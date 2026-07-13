@@ -728,7 +728,7 @@ export default function BudgetTrace() {
     muniLoading,
     muniIntro:
       prefName === "山梨県"
-        ? "甲府市は当初予算ベースの詳細（主な事業・執行・評価・前年比較）まで収録。他の市町村は総務省の決算ベースで閲覧できます。"
+        ? `甲府市は当初予算ベースの詳細（主な事業・執行・評価・前年比較）まで収録。${muniEntries.filter((e) => D.tierOf(e.code) === "budget").map((e) => e.name).join("・")}は当初予算（款別・前年当初比較）まで、他の市町村は総務省の決算ベースで閲覧できます。`
         : muniEntries.some((e) => D.tierOf(e.code) === "budget")
           ? `${muniEntries.filter((e) => D.tierOf(e.code) === "budget").map((e) => e.name).join("・")}は当初予算（款別・前年当初比較）まで収録。他の市町村は総務省の決算ベースで閲覧できます。`
           : `${prefName}の市区町村は総務省の決算ベース（款別歳出・歳入内訳・1人あたり・類似比較）で閲覧できます。予算資料ベースの詳細は収録リクエストできます。`,

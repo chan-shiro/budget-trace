@@ -332,7 +332,7 @@ export const SOURCES: SourceEntry[] = [
     landingPage: "https://www.city.osaka-izumi.lg.jp/kakukano/soumubu/zaiseika/gyoumu/yosan.html",
     kind: "pdf",
     fiscalYear: "R8",
-    scope: "和泉市（一般会計・団体コード272035）",
+    scope: "和泉市（一般会計・団体コード272191）",
     license: "和泉市ウェブサイト掲載資料（利用条件は同サイト参照）",
     parser: "kofu-yosansho",
     parserOptions: {
@@ -340,6 +340,77 @@ export const SOURCES: SourceEntry[] = [
       expenditurePage: 6,
       revenueHeading: "歳入",
       expenditureHeading: "歳出",
+    },
+  },
+  // ── budget 階層の拡大: 山梨県内の市（甲府に次ぐ規模）の当初予算 ──────────────
+  // 「予算の概要」PDF に款別歳入歳出（前年度比つき）がテキスト層で載る。負号は △。単位=千円。
+  {
+    // 笛吹市（団体コード 192112）。予算の概要 R8。歳入 PDF p.7 / 歳出 p.8（印刷5/6と2ずれ）。
+    // 見出し「歳入/歳出予算款別総括表」、合計「歳入合計/歳出合計」、款番号は半角、負号 △。
+    id: "fuefuki-yosansho-r8",
+    title: "令和8年度 笛吹市当初予算概要（款別歳入歳出）",
+    publisher: "笛吹市",
+    url: null,
+    urls: ["https://www.city.fuefuki.yamanashi.jp/documents/1033/r8toushoyosangaiyou.pdf"],
+    landingPage: "https://www.city.fuefuki.yamanashi.jp/zaise/shisejoho/zaise/yosan.html",
+    kind: "pdf",
+    fiscalYear: "R8",
+    scope: "笛吹市（一般会計・団体コード192112）",
+    license: "笛吹市ウェブサイト掲載資料（利用条件は同サイト参照）",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 7,
+      expenditurePage: 8,
+      revenueHeading: "歳入予算款別総括表",
+      expenditureHeading: "歳出予算款別総括表",
+    },
+  },
+  {
+    // 南アルプス市（団体コード 192082）。予算の概要 R8。款別は PDF p.7 の1枚に
+    // 歳入21款＋歳出14款が縦積み（**同一ページ・samePage**）。見出し「歳入/歳出」、
+    // 合計は歳入歳出とも「合計」、款番号は半角、負号 △。ファイル名はエンコード済み。
+    id: "minami-alps-yosansho-r8",
+    title: "令和8年度 南アルプス市当初予算概要（款別歳入歳出）",
+    publisher: "南アルプス市",
+    url: null,
+    urls: ["https://www.city.minami-alps.yamanashi.jp/fs/1/4/1/8/3/3/_/__8____________.pdf"],
+    landingPage: "https://www.city.minami-alps.yamanashi.jp/docs/21143.html",
+    kind: "pdf",
+    fiscalYear: "R8",
+    scope: "南アルプス市（一般会計・団体コード192082）",
+    license: "南アルプス市ウェブサイト掲載資料（二次利用は要許可。利用条件は同サイト参照）",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 7,
+      expenditurePage: 7,
+      samePage: true,
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+      revenueTotalLabel: "合計",
+      expenditureTotalLabel: "合計",
+    },
+  },
+  {
+    // 富士吉田市（団体コード 192023）。予算の概要 R8（7412.pdf）。歳入 p.6 / 歳出 p.7（別ページ）。
+    // 見出し「一般会計予算款別比較表」、合計「合計」、款番号は半角、負号 △。
+    id: "fujiyoshida-yosansho-r8",
+    title: "令和8年度 富士吉田市当初予算概要（款別歳入歳出）",
+    publisher: "富士吉田市",
+    url: null,
+    urls: ["https://www.city.fujiyoshida.yamanashi.jp/uploaded/attachment/7412.pdf"],
+    landingPage: "https://www.city.fujiyoshida.yamanashi.jp/page/1900.html",
+    kind: "pdf",
+    fiscalYear: "R8",
+    scope: "富士吉田市（一般会計・団体コード192023）",
+    license: "富士吉田市ウェブサイト掲載資料（利用条件は同サイト参照）",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 6,
+      expenditurePage: 7,
+      revenueHeading: "款別比較表",
+      expenditureHeading: "款別比較表",
+      revenueTotalLabel: "合計",
+      expenditureTotalLabel: "合計",
     },
   },
   // 甲府市の決算状況「収入支出詳細」HTML ページ。款別の予算現額・収入/支出済額・

@@ -1236,6 +1236,10 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     { srcId: "yamaguchi-yosansho-r7", muniCode: "352039", muniName: "山口市", prefName: "山口県" },
     { srcId: "numazu-yosansho-r7", muniCode: "222038", muniName: "沼津市", prefName: "静岡県" },
     { srcId: "izumi-yosansho-r8", muniCode: "272191", muniName: "和泉市", prefName: "大阪府" },
+    // 山梨県内（甲府に次ぐ規模）
+    { srcId: "fuefuki-yosansho-r8", muniCode: "192112", muniName: "笛吹市", prefName: "山梨県" },
+    { srcId: "fujiyoshida-yosansho-r8", muniCode: "192023", muniName: "富士吉田市", prefName: "山梨県" },
+    { srcId: "minami-alps-yosansho-r8", muniCode: "192082", muniName: "南アルプス市", prefName: "山梨県" },
   ] as const;
   const popDs = normalizedDatasetSchema.parse(readJson(normalizedPath("municipal-accounts", "R6", false)));
   const TOP_REVENUE = 8; // 歳入ドーナツの上位款数（残りは「その他」に集約し内訳を children に）
