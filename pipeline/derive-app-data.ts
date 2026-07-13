@@ -1074,13 +1074,16 @@ export const WAYBACK_BY_URL: Record<string, string> = ${JSON.stringify(byUrl, nu
   let expMismatch = 0;
   let revMismatch = 0;
 
-  // (4)性質別歳出・(5)地方債（R6のみ収録）を団体コードで結合し、R6 スライスに付与する。億円。
-  const NATURE_SRC = "soumu-shichoson-seishitsu-r6";
-  const seishitsuByCode = (() => {
-    const val = validationResultSchema.parse(readJson(validationPath(NATURE_SRC)));
-    if (val.status !== "ok") throw new Error(`${NATURE_SRC}: 検証が ${val.status} のため derive しません`);
-    const doc = anyParsedDocSchema.parse(readJson(parsedPath(NATURE_SRC)));
-    if (doc.docType !== "municipal-nature") throw new Error(`${NATURE_SRC}: municipal-nature ではありません`);
+  // (4)性質別歳出・(5)地方債を年度ごとに団体コードで結合し、各年度スライスに付与する。億円。
+  // R2〜R6 を収録済み。未取得の年度はスキップ（その年度はパネル非表示になる）。
+  const seishitsuByYear = new Map<string, Map<string, { nature: Record<string, number>; bond: Record<string, number | null> | null }>>();
+  for (const fy of DECISION_YEARS) {
+    const srcId = `soumu-shichoson-seishitsu-${fy.toLowerCase()}`;
+    if (!existsSync(parsedPath(srcId))) continue;
+    const val = validationResultSchema.parse(readJson(validationPath(srcId)));
+    if (val.status !== "ok") throw new Error(`${srcId}: 検証が ${val.status} のため derive しません`);
+    const doc = anyParsedDocSchema.parse(readJson(parsedPath(srcId)));
+    if (doc.docType !== "municipal-nature") throw new Error(`${srcId}: municipal-nature ではありません`);
     const m = new Map<string, { nature: Record<string, number>; bond: Record<string, number | null> | null }>();
     for (const f of doc.facts) {
       const b = f.localBond;
@@ -1097,8 +1100,8 @@ export const WAYBACK_BY_URL: Record<string, string> = ${JSON.stringify(byUrl, nu
           : null,
       });
     }
-    return m;
-  })();
+    seishitsuByYear.set(fy, m);
+  }
 
   for (const fy of DECISION_YEARS) {
     const srcId = `soumu-shichoson-kessan-${fy.toLowerCase()}`;
@@ -1147,9 +1150,9 @@ export const WAYBACK_BY_URL: Record<string, string> = ${JSON.stringify(byUrl, nu
         rev: mapOku(rev),
         revDetail: mapOku2(r.revenueByCategoryDetail ?? {}),
         ref: { file: loc.file, row: loc.row },
-        // 性質別歳出・地方債は R6 のみ収録（他年度は未収録 → undefined）
-        ...(fy === "R6" && seishitsuByCode.has(r.muniCode)
-          ? { nature: seishitsuByCode.get(r.muniCode)!.nature, bond: seishitsuByCode.get(r.muniCode)!.bond }
+        // 性質別歳出・地方債（R2〜R6 収録済み。年度ごとに結合）
+        ...(seishitsuByYear.get(fy)?.has(r.muniCode)
+          ? { nature: seishitsuByYear.get(fy)!.get(r.muniCode)!.nature, bond: seishitsuByYear.get(fy)!.get(r.muniCode)!.bond }
           : {}),
       };
     }

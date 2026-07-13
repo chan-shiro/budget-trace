@@ -77,6 +77,31 @@ export const SOURCES: SourceEntry[] = [
     license: "公共データ利用規約（政府標準利用規約準拠）",
     parser: "soumu-shichoson-seishitsu",
   },
+  // 性質別・地方債の過年度（R2〜R5）。都市別/町村別 × (4)性質別/(5)地方債 の4ファイル。
+  // 年度ページから直リンクを確認済み（2026-07-13）。R6 と同じパーサ・docType。
+  ...([
+    ["r5", "R5", "r05", "000999903", "000999904", "000999910", "000999911"],
+    ["r4", "R4", "r04", "000937290", "000937291", "000937295", "000937296"],
+    ["r3", "R3", "r03", "000871021", "000871022", "000871026", "000871027"],
+    ["r2", "R2", "r02", "000800823", "000800825", "000800832", "000800834"],
+  ] as const).map(([suffix, fy, page, c4, c5, t4, t5]): SourceEntry => ({
+    id: `soumu-shichoson-seishitsu-${suffix}`,
+    title: `令和${fy.slice(1)}年度 市町村別決算状況調（性質別歳出・地方債）`,
+    publisher: "総務省 自治財政局",
+    url: null,
+    urls: [
+      `https://www.soumu.go.jp/main_content/${c4}.xlsx`, // 都市別(4)性質別
+      `https://www.soumu.go.jp/main_content/${c5}.xlsx`, // 都市別(5)地方債
+      `https://www.soumu.go.jp/main_content/${t4}.xlsx`, // 町村別(4)性質別
+      `https://www.soumu.go.jp/main_content/${t5}.xlsx`, // 町村別(5)地方債
+    ],
+    landingPage: `https://www.soumu.go.jp/iken/zaisei/${page}_shichouson.html`,
+    kind: "excel",
+    fiscalYear: fy,
+    scope: "全市町村（普通会計・性質別/地方債）",
+    license: "公共データ利用規約（政府標準利用規約準拠）",
+    parser: "soumu-shichoson-seishitsu",
+  })),
   {
     // 甲府市の当初予算（案）資料。款別の歳入・歳出一覧（前年度比較つき）と
     // 主な事業一覧を収録。まず款別一覧を決定的にパースする（pdftotext / poppler が必要）。
