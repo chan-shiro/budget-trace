@@ -218,6 +218,32 @@ if (doc.docType === "project-evaluation") {
   finish(doc.facts.length, "事業");
 }
 
+// ---- 決算状況調(4)性質別・(5)地方債 -----------------------------------------
+if (doc.docType === "municipal-nature") {
+  const MAIN = ["人件費", "物件費", "扶助費", "普通建設事業費", "公債費"];
+  const seenNature = new Set<string>();
+  for (const f of doc.facts) {
+    if (seenNature.has(f.muniCode)) issues.push({ level: "error", message: `団体コード ${f.muniCode} が重複` });
+    seenNature.add(f.muniCode);
+    // 主要性質が揃っているか（様式変更や列ずれの検知）
+    for (const nm of MAIN) {
+      if (!(nm in f.byNature)) issues.push({ level: "error", message: `${f.muniCode}: 性質「${nm}」が欠落` });
+    }
+    // natureTotal = Σ byNature（丸めなし・厳密）。歳出総額との突合は derive で実施
+    const sum = Object.values(f.byNature).reduce((a, b) => a + b, 0);
+    if (sum !== f.natureTotal) {
+      issues.push({ level: "error", message: `${f.muniCode}: natureTotal ${f.natureTotal} ≠ Σ性質 ${sum}` });
+    }
+    if (f.byNature["公債費"]! < 0 || f.natureTotal <= 0) {
+      issues.push({ level: "error", message: `${f.muniCode}: 性質額が不正（公債費<0 または 総額≤0）` });
+    }
+  }
+  if (doc.facts.length < 700) {
+    issues.push({ level: "warning", message: `自治体数が少なすぎます（${doc.facts.length}）— 取りこぼしの可能性` });
+  }
+  finish(doc.facts.length, "自治体");
+}
+
 if (doc.docType !== "municipal-accounts") {
   throw new Error(`未知の docType: ${(doc as { docType: string }).docType}`);
 }

@@ -881,6 +881,33 @@
       "sha256Match": true
     },
     {
+      "sourceId": "soumu-shichoson-seishitsu-r6",
+      "url": "https://www.soumu.go.jp/main_content/001061673.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260713103942/https://www.soumu.go.jp/main_content/001061673.xlsx",
+      "waybackTimestamp": "20260713103942",
+      "checkedAt": "2026-07-13T10:40:58.151Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "soumu-shichoson-seishitsu-r6",
+      "url": "https://www.soumu.go.jp/main_content/001061677.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260712084458/https://www.soumu.go.jp/main_content/001061677.xlsx",
+      "waybackTimestamp": "20260712084458",
+      "checkedAt": "2026-07-13T10:41:22.726Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "soumu-shichoson-seishitsu-r6",
+      "url": "https://www.soumu.go.jp/main_content/001061678.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260713104137/https://www.soumu.go.jp/main_content/001061678.xlsx",
+      "waybackTimestamp": "20260713104137",
+      "checkedAt": "2026-07-13T10:42:57.130Z",
+      "sha256Match": true
+    },
+    {
       "sourceId": "toyokawa-yosansho-r7",
       "url": "https://www.city.toyokawa.lg.jp/material/files/group/10/R7_yosann.pdf",
       "kind": "file",

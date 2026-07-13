@@ -1074,6 +1074,32 @@ export const WAYBACK_BY_URL: Record<string, string> = ${JSON.stringify(byUrl, nu
   let expMismatch = 0;
   let revMismatch = 0;
 
+  // (4)性質別歳出・(5)地方債（R6のみ収録）を団体コードで結合し、R6 スライスに付与する。億円。
+  const NATURE_SRC = "soumu-shichoson-seishitsu-r6";
+  const seishitsuByCode = (() => {
+    const val = validationResultSchema.parse(readJson(validationPath(NATURE_SRC)));
+    if (val.status !== "ok") throw new Error(`${NATURE_SRC}: 検証が ${val.status} のため derive しません`);
+    const doc = anyParsedDocSchema.parse(readJson(parsedPath(NATURE_SRC)));
+    if (doc.docType !== "municipal-nature") throw new Error(`${NATURE_SRC}: municipal-nature ではありません`);
+    const m = new Map<string, { nature: Record<string, number>; bond: Record<string, number | null> | null }>();
+    for (const f of doc.facts) {
+      const b = f.localBond;
+      m.set(f.muniCode, {
+        nature: mapOku(f.byNature),
+        bond: b
+          ? {
+              balanceOku: okuR(b.balance),
+              reserveOku: b.reserveTotal != null ? okuR(b.reserveTotal) : null,
+              chouseiOku: b.reserveByType.財政調整基金 != null ? okuR(b.reserveByType.財政調整基金) : null,
+              gensaiOku: b.reserveByType.減債基金 != null ? okuR(b.reserveByType.減債基金) : null,
+              debtBurdenOku: b.debtBurdenFuture != null ? okuR(b.debtBurdenFuture) : null,
+            }
+          : null,
+      });
+    }
+    return m;
+  })();
+
   for (const fy of DECISION_YEARS) {
     const srcId = `soumu-shichoson-kessan-${fy.toLowerCase()}`;
     const v = validationResultSchema.parse(readJson(validationPath(srcId)));
@@ -1121,6 +1147,10 @@ export const WAYBACK_BY_URL: Record<string, string> = ${JSON.stringify(byUrl, nu
         rev: mapOku(rev),
         revDetail: mapOku2(r.revenueByCategoryDetail ?? {}),
         ref: { file: loc.file, row: loc.row },
+        // 性質別歳出・地方債は R6 のみ収録（他年度は未収録 → undefined）
+        ...(fy === "R6" && seishitsuByCode.has(r.muniCode)
+          ? { nature: seishitsuByCode.get(r.muniCode)!.nature, bond: seishitsuByCode.get(r.muniCode)!.bond }
+          : {}),
       };
     }
   }

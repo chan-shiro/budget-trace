@@ -37,6 +37,16 @@ export interface DecisionYearSlice {
   revDetail: Record<string, Record<string, number>>;
   /** 来歴（概況ファイル内の位置） */
   ref: { file: string; row: number };
+  /** 性質別歳出（性質名 → 億円）。R6 のみ（(4)性質別ファイル） */
+  nature?: Record<string, number>;
+  /** 地方債現在高ほか（億円）。R6 のみ（(5)地方債ファイル） */
+  bond?: {
+    balanceOku: number;
+    reserveOku: number | null;
+    chouseiOku: number | null;
+    gensaiOku: number | null;
+    debtBurdenOku: number | null;
+  } | null;
 }
 export interface DecisionMuni {
   name: string;
@@ -88,6 +98,10 @@ export interface DecisionView {
   primaryEvidence: DecisionEvidenceCard | null;
   /** 概況の来歴表示 */
   refLabel: string;
+  /** 性質別歳出（億円・降順）。R6 のみ、無ければ null */
+  nature: DecisionNode[] | null;
+  /** 地方債現在高ほか（億円）。R6 のみ、無ければ null */
+  bond: DecisionYearSlice["bond"] | null;
 }
 
 // 歳入科目の表示グループ（ドーナツを読みやすく。members に載らない科目は「その他」へ）。
@@ -226,5 +240,7 @@ export function buildDecisionView(
     evidence: cards,
     primaryEvidence: primary,
     refLabel: `${y.ref.file} ${y.ref.row}行目`,
+    nature: y.nature ? sortedNodes(y.nature).filter((n) => n.v > 0) : null,
+    bond: y.bond ?? null,
   };
 }

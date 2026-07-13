@@ -650,6 +650,29 @@ export default function BudgetTrace() {
           }),
         }))
       : [],
+    // 性質別歳出（決算・R6のみ・総務省(4)）。人件費/扶助費/普通建設費…をバー表示
+    hasNature: isDecision && !!decisionView!.nature,
+    natureFyLabel: isDecision ? `${decisionView!.fyLabel}（性質別）` : "",
+    natureRows:
+      isDecision && decisionView!.nature
+        ? decisionView!.nature.map((n, i) => ({
+            name: n.name,
+            amtFmt: fmtV(n.v),
+            pctFmt: pctOf(n.v, decisionView!.total),
+            barW: ((n.v / (decisionView!.nature![0]?.v || 1)) * 100).toFixed(1),
+            sw: D.PALETTE[i % D.PALETTE.length],
+          }))
+        : [],
+    // 地方債現在高ほか（決算・R6のみ・総務省(5)）
+    bondItems:
+      isDecision && decisionView!.bond
+        ? [
+            { name: "地方債現在高", v: fmtOku(decisionView!.bond.balanceOku), strong: true },
+            { name: "積立金現在高", v: decisionView!.bond.reserveOku != null ? fmtOku(decisionView!.bond.reserveOku) : "—", strong: false },
+            { name: "うち財政調整基金", v: decisionView!.bond.chouseiOku != null ? fmtOku(decisionView!.bond.chouseiOku) : "—", strong: false },
+            { name: "債務負担行為（翌年度以降）", v: decisionView!.bond.debtBurdenOku != null ? fmtOku(decisionView!.bond.debtBurdenOku) : "—", strong: false },
+          ]
+        : [],
     // budget 階層（類似4市）の未収録機能（主な事業・執行状況・事務事業評価）のリクエスト
     budgetRequestUrl: isBudget
       ? D.buildRequestUrl(

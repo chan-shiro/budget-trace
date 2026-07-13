@@ -57,6 +57,27 @@ export const SOURCES: SourceEntry[] = [
     parser: "soumu-shichoson-kessan",
   })),
   {
+    // 決算状況調(4)性質別歳出内訳・(5)地方債現在高（都市別＋町村別）。全1,741市町村。
+    // 概況/歳入内訳/目的別（soumu-shichoson-kessan）とは別ソース・別パーサに隔離し、
+    // decision シャードの derive で団体コードで結合する。Σ主要14性質＝歳出総額で自己検証。
+    id: "soumu-shichoson-seishitsu-r6",
+    title: "令和6年度 市町村別決算状況調（性質別歳出・地方債）",
+    publisher: "総務省 自治財政局",
+    url: null,
+    urls: [
+      "https://www.soumu.go.jp/main_content/001061672.xlsx", // 都市別 (4)性質別歳出内訳
+      "https://www.soumu.go.jp/main_content/001061673.xlsx", // 都市別 (5)地方債
+      "https://www.soumu.go.jp/main_content/001061677.xlsx", // 町村別 (4)性質別歳出内訳
+      "https://www.soumu.go.jp/main_content/001061678.xlsx", // 町村別 (5)地方債
+    ],
+    landingPage: "https://www.soumu.go.jp/iken/zaisei/r06_shichouson.html",
+    kind: "excel",
+    fiscalYear: "R6",
+    scope: "全市町村（普通会計・性質別/地方債）",
+    license: "公共データ利用規約（政府標準利用規約準拠）",
+    parser: "soumu-shichoson-seishitsu",
+  },
+  {
     // 甲府市の当初予算（案）資料。款別の歳入・歳出一覧（前年度比較つき）と
     // 主な事業一覧を収録。まず款別一覧を決定的にパースする（pdftotext / poppler が必要）。
     // 主な事業一覧ページ（p.14-23）の抽出は LLM 併用パーサとして今後追加。
