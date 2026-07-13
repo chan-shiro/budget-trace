@@ -92,6 +92,26 @@ export { KOFU_TREND } from './trend.gen';
 export { KOFU_EVALUATION_YEARS, type KofuEvaluationYear } from './evaluations.gen';
 export { KOFU_OUTTURN_YEARS, type KofuOutturnYear } from './outturn.gen';
 
+// 全国 決算（総務省 決算状況調・全1,741市町村）の索引・ビルダ
+import { FULL_MUNIS, PREF_CODES } from './decision-index.gen';
+export { PREF_CODES, DECISION_YEARS, DECISION_FY_LABELS, FULL_MUNIS, DECISION_SOURCES, type DecisionEvidenceCard } from './decision-index.gen';
+export {
+  buildDecisionView,
+  findMuniCodeByName,
+  type DecisionShard,
+  type DecisionView,
+  type DecisionNode,
+} from './decision';
+
+/** カバレッジ階層。full = 予算ベースの詳細画面あり（甲府）。decision = 総務省決算ベース */
+export function tierOf(muniCode: string | null | undefined): 'full' | 'decision' {
+  return muniCode && FULL_MUNIS.includes(muniCode) ? 'full' : 'decision';
+}
+/** 都道府県名 → 県コード（2桁）。未収録（地図に無い名前）は null */
+export function prefCodeOf(prefName: string | null | undefined): string | null {
+  return prefName ? PREF_CODES[prefName] ?? null : null;
+}
+
 // データ出典・更新日一覧（数値の一次資料のみ。地図形状などの素材はトップページに記載）
 // url = Wayback Machine のコピー（魚拓）を優先。直リンクは中身だけ差し替えられ得るが、
 // コピーはパース時点の版に固定されるため透明性が高い。originUrl = 発行元の元 URL。

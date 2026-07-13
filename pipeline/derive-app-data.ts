@@ -19,7 +19,7 @@ import {
   validationPath,
 } from "./lib/store";
 import { findSource } from "./registry/sources";
-import { existsSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const SOURCE_ID = "soumu-shichoson-kessan-r6";
@@ -1005,4 +1005,188 @@ export const WAYBACK_BY_URL: Record<string, string> = ${JSON.stringify(byUrl, nu
 `;
   writeFileSync(join(process.cwd(), "src/client/lib/archives.gen.ts"), archOut, "utf8");
   console.log(`✓ 外部アーカイブ台帳を導出 → src/client/lib/archives.gen.ts（${entries.length}件）`);
+}
+
+// ============================================================================
+// 全国 決算シャード（総務省 決算状況調 R2〜R6）→ public/decision/<県コード>.json
+//   ＋ 索引 src/client/lib/decision-index.gen.ts
+// 全1,741市町村に「決算ベースのダッシュボード」を出すための断面。追加取得0。
+// クライアントは県コードごとに1ファイルをフェッチ（選択時・キャッシュ）。金額は億円。
+// 甲府（192015）は full 階層（予算ベースの詳細画面）なので decision には載るが
+// アプリ側は full を優先する。
+// ============================================================================
+{
+  const DECISION_YEARS = ["R6", "R5", "R4", "R3", "R2"] as const;
+  // 千円 → 億円（万円精度に丸めてシャードを軽くする。表示は fmtOku でさらに丸める）
+  const okuR = (thousandYen: number) => Math.round((thousandYen / 1e5) * 1e4) / 1e4;
+  const mapOku = (o: Record<string, number | undefined>): Record<string, number> =>
+    Object.fromEntries(
+      Object.entries(o)
+        .filter(([, v]) => v != null)
+        .map(([k, v]) => [k, okuR(v as number)]),
+    );
+  const mapOku2 = (o: Record<string, Record<string, number>>): Record<string, Record<string, number>> =>
+    Object.fromEntries(Object.entries(o).map(([k, sub]) => [k, mapOku(sub)]));
+
+  // fy → 出典 Excel カード（都市別/町村別の3ファイルずつ）＋概況ファイル名（family 判定用）
+  const CARD_LABELS = [
+    "都市別（1）概況",
+    "都市別（2）歳入内訳",
+    "都市別（3）目的別歳出内訳",
+    "町村別（1）概況",
+    "町村別（2）歳入内訳",
+    "町村別（3）目的別歳出内訳",
+  ];
+  type Card = { title: string; type: string; url: string; localUrl: string; source: string; thumb: string };
+  const decisionSources: Record<string, { city: Card[]; town: Card[]; cityGaikyo: string; townGaikyo: string }> = {};
+  for (const fy of DECISION_YEARS) {
+    const srcId = `soumu-shichoson-kessan-${fy.toLowerCase()}`;
+    const src = findSource(srcId);
+    const meta = readRawMeta(srcId);
+    if (!meta) throw new Error(`${srcId}: raw-meta がありません（先に pipeline:fetch）`);
+    const cards = (src.urls ?? [])
+      .map((u, i) => {
+        const filename = u.split("/").pop()!;
+        const f = meta.files.find((x) => x.filename === filename);
+        if (!f) return null;
+        return {
+          idx: i,
+          title: `${src.title} ${CARD_LABELS[i]}`,
+          type: "Excel",
+          url: wayback(u),
+          localUrl: `/sources/${srcId}/${filename}`,
+          source: new URL(u).hostname,
+          thumb: `${filename} ・ sha256 ${f.sha256.slice(0, 16)}… ・ ${f.fetchedAt.slice(0, 10)} 取得`,
+        };
+      })
+      .filter((c): c is NonNullable<typeof c> => c != null);
+    decisionSources[fy] = {
+      city: cards.filter((c) => c.idx < 3).map(({ idx: _i, ...r }) => r),
+      town: cards.filter((c) => c.idx >= 3).map(({ idx: _i, ...r }) => r),
+      cityGaikyo: (src.urls?.[0] ?? "").split("/").pop() ?? "",
+      townGaikyo: (src.urls?.[3] ?? "").split("/").pop() ?? "",
+    };
+  }
+
+  // 県コード → { 県名, 団体コード → { 市町村名, 年度→断面 } }
+  const prefs = new Map<string, { prefName: string; munis: Map<string, { name: string; years: Record<string, unknown> }> }>();
+  const prefCodes: Record<string, string> = {};
+  let expMismatch = 0;
+  let revMismatch = 0;
+
+  for (const fy of DECISION_YEARS) {
+    const srcId = `soumu-shichoson-kessan-${fy.toLowerCase()}`;
+    const v = validationResultSchema.parse(readJson(validationPath(srcId)));
+    if (v.status !== "ok") throw new Error(`${srcId}: 検証が ${v.status} のため derive しません`);
+    const ds = normalizedDatasetSchema.parse(readJson(normalizedPath("municipal-accounts", fy, false)));
+    const dsrc = decisionSources[fy]!;
+    for (const r of ds.records) {
+      if (!r.population || !r.expenditureTotal) continue;
+      // 自己検証: Σ款 = 歳出総額（千円・厳密）。合わない年度は採用しない
+      const expSum = Object.values(r.expenditureByPurpose).reduce((a, b) => a + (b ?? 0), 0);
+      if (expSum !== r.expenditureTotal) {
+        expMismatch++;
+        continue;
+      }
+      const rev = r.revenueByCategory ?? {};
+      const revSum = Object.values(rev).reduce((a, b) => a + b, 0);
+      if (r.revenueTotal && revSum !== r.revenueTotal) revMismatch++; // 表示は科目和ベース。警告のみ
+
+      const prefCode = r.muniCode.slice(0, 2);
+      prefCodes[r.prefName] = prefCode;
+      let pref = prefs.get(prefCode);
+      if (!pref) {
+        pref = { prefName: r.prefName, munis: new Map() };
+        prefs.set(prefCode, pref);
+      }
+      let muni = pref.munis.get(r.muniCode);
+      if (!muni) {
+        muni = { name: r.muniName, years: {} };
+        pref.munis.set(r.muniCode, muni);
+      }
+      const loc = r.sourceRef.locator;
+      const family = loc.file === dsrc.cityGaikyo ? "city" : "town";
+      muni.years[fy] = {
+        pop: r.population,
+        expTotalOku: okuR(r.expenditureTotal),
+        revTotalOku: r.revenueTotal != null ? okuR(r.revenueTotal) : null,
+        perCapYen: r.expenditurePerCapitaYen ?? Math.round((r.expenditureTotal * 1000) / r.population),
+        finIdx: r.financialIndex ?? null,
+        keijo: r.keijoShushiPct ?? null,
+        kosai: r.jisshitsuKosaihiPct ?? null,
+        shorai: r.shoraiFutanPct ?? null,
+        family,
+        exp: mapOku(r.expenditureByPurpose),
+        expDetail: mapOku2(r.expenditureByPurposeDetail ?? {}),
+        rev: mapOku(rev),
+        revDetail: mapOku2(r.revenueByCategoryDetail ?? {}),
+        ref: { file: loc.file, row: loc.row },
+      };
+    }
+  }
+
+  // 県シャードを書き出す（決定的: 団体コード昇順）
+  const decDir = join(process.cwd(), "public", "decision");
+  mkdirSync(decDir, { recursive: true });
+  let fileCount = 0;
+  let muniCount = 0;
+  for (const [prefCode, pref] of [...prefs.entries()].sort((a, b) => a[0].localeCompare(b[0]))) {
+    const munis: Record<string, unknown> = {};
+    for (const [code, m] of [...pref.munis.entries()].sort((a, b) => a[0].localeCompare(b[0]))) {
+      munis[code] = m;
+      muniCount++;
+    }
+    const shard = { prefCode, prefName: pref.prefName, years: DECISION_YEARS, munis };
+    writeFileSync(join(decDir, `${prefCode}.json`), JSON.stringify(shard), "utf8");
+    fileCount++;
+  }
+
+  const prefCodeSorted = Object.fromEntries(
+    Object.entries(prefCodes).sort((a, b) => a[1].localeCompare(b[1])),
+  );
+  const decIndexOut = `// このファイルは自動生成です。手で編集しないこと。
+// 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
+// 全国 決算シャード（public/decision/<県コード>.json）の索引・出典メタ。
+// 出典: 総務省「市町村別決算状況調」R2〜R6（普通会計決算）
+
+export interface DecisionEvidenceCard {
+  title: string;
+  type: string;
+  /** 一次資料へのリンク（Wayback コピー優先） */
+  url: string;
+  /** 自サーバー配信の原本コピー */
+  localUrl: string;
+  source: string;
+  thumb: string;
+}
+
+/** 都道府県名 → 県コード（2桁）。決算シャードのファイル名になる */
+export const PREF_CODES: Record<string, string> = ${JSON.stringify(prefCodeSorted, null, 2)};
+
+/** 決算の収録年度（新しい順） */
+export const DECISION_YEARS = ${JSON.stringify(DECISION_YEARS)} as const;
+
+/** 年度 → 表示ラベル */
+export const DECISION_FY_LABELS: Record<string, string> = ${JSON.stringify(
+    Object.fromEntries(DECISION_YEARS.map((fy) => [fy, `令和${fy.slice(1)}年度 決算`])),
+    null,
+    2,
+  )};
+
+/** full 階層（予算ベースの詳細画面を持つ）自治体の団体コード */
+export const FULL_MUNIS: string[] = ${JSON.stringify([SELF_CODE])};
+
+/** fy → 出典 Excel（都市別/町村別の3ファイルずつ）。エビデンスドロワー用 */
+export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; town: DecisionEvidenceCard[] }> = ${JSON.stringify(
+    Object.fromEntries(DECISION_YEARS.map((fy) => [fy, { city: decisionSources[fy]!.city, town: decisionSources[fy]!.town }])),
+    null,
+    2,
+  )};
+`;
+  writeFileSync(join(process.cwd(), "src/client/lib/decision-index.gen.ts"), decIndexOut, "utf8");
+  console.log(
+    `✓ 全国 決算シャードを導出 → public/decision/（${fileCount}県・${muniCount}市町村）／ src/client/lib/decision-index.gen.ts`,
+  );
+  if (expMismatch) console.log(`  ⚠ Σ款≠歳出総額で除外した muni-年度: ${expMismatch}`);
+  if (revMismatch) console.log(`  ⚠ Σ歳入科目≠歳入総額（表示は科目和ベース・警告のみ）: ${revMismatch}`);
 }

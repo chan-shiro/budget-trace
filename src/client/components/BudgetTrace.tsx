@@ -3,11 +3,12 @@
 import React from "react";
 import { CountUpNum } from "./ui";
 import * as D from "@/client/lib/data";
+import { useDecisionData } from "@/client/hooks/useDecisionData";
 import BudgetTraceView from "./BudgetTraceView";
 
 const {
   GLOSS, SIM_MIX_COLS, SIMILAR, SIMILAR_EVIDENCE, SOURCES,
-  KOFU_BUDGET_YEARS, KOFU_PROJECT_YEARS, KOFU_EXECUTION_YEARS, KOFU_EVALUATION_YEARS, KOFU_OUTTURN_YEARS, KOFU_R6_DETAIL, KOFU_TREND, YAMANASHI_MUNIS,
+  KOFU_BUDGET_YEARS, KOFU_PROJECT_YEARS, KOFU_EXECUTION_YEARS, KOFU_EVALUATION_YEARS, KOFU_OUTTURN_YEARS, KOFU_R6_DETAIL, KOFU_TREND,
   muniFromBudget, fmtOku, pctOf, fmtPerCap, fadeColor, donutBg, setPalette,
 } = D;
 
@@ -17,6 +18,8 @@ interface St {
   screen: string;
   pref: string | null;
   muni: string | null;
+  /** 選択自治体の団体コード（6桁）。full 階層=甲府は "192015"、decision 階層は各コード */
+  muniCode?: string;
   drillSide: string;
   drillPath: string[];
   theme: string | null;
@@ -90,6 +93,15 @@ export default function BudgetTrace() {
   const stToQuery = (t: St): string => {
     const p = new URLSearchParams();
     if (t.screen !== "top") p.set("s", t.screen);
+    // 自治体の識別。甲府（full 既定）は後方互換のため省略。それ以外は pref/muni/mc を積む
+    const isKofu = t.muniCode === "192015" || (!t.muniCode && (t.muni === "甲府市" || !t.muni));
+    if (t.screen === "muni") {
+      if (t.pref) p.set("pref", t.pref);
+    } else if (t.screen !== "top" && !isKofu) {
+      if (t.pref) p.set("pref", t.pref);
+      if (t.muni) p.set("muni", t.muni);
+      if (t.muniCode) p.set("mc", t.muniCode);
+    }
     if (t.budgetFy) p.set("fy", t.budgetFy);
     if (t.screen === "drill") {
       if (t.drillSide !== "exp") p.set("side", t.drillSide);
@@ -108,10 +120,25 @@ export default function BudgetTrace() {
   const queryToPatch = (search: string): Partial<St> => {
     const p = new URLSearchParams(search);
     const screen = p.get("s") ?? "top";
+    const mc = p.get("mc");
+    // 自治体の復元。mc があれば decision 自治体、無ければ後方互換で甲府（full）
+    let pref: string | null;
+    let muni: string | null;
+    let muniCode: string | undefined;
+    if (screen === "top") {
+      pref = null; muni = null; muniCode = undefined;
+    } else if (screen === "muni") {
+      pref = p.get("pref") ?? "山梨県"; muni = null; muniCode = undefined;
+    } else if (mc) {
+      pref = p.get("pref"); muni = p.get("muni"); muniCode = mc;
+    } else {
+      pref = "山梨県"; muni = "甲府市"; muniCode = "192015";
+    }
     return {
       screen,
-      pref: screen === "top" ? null : "山梨県",
-      muni: screen === "top" || screen === "muni" ? null : "甲府市",
+      pref,
+      muni,
+      muniCode,
       budgetFy: p.get("fy") ?? undefined,
       drillSide: p.get("side") ?? "exp",
       drillPath: p.get("path")?.split("/").filter(Boolean) ?? [],
@@ -144,7 +171,7 @@ export default function BudgetTrace() {
     else history.replaceState(null, "", url);
     lastScreen.current = st.screen;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [st.screen, st.budgetFy, st.drillSide, st.drillPath, st.theme, st.execFy, st.execSide, st.compSide, st.unit]);
+  }, [st.screen, st.pref, st.muni, st.muniCode, st.budgetFy, st.drillSide, st.drillPath, st.theme, st.execFy, st.execSide, st.compSide, st.unit]);
 
   // --- 一次資料ドロワー ---
   // 呼び出し側は #page=N 付き URL を渡してよい（ここで分離して PDF.js ビューアへ渡す）
@@ -199,12 +226,46 @@ export default function BudgetTrace() {
   setPalette(mapColorMode);
   const screen = s.screen;
   const isApp = ["dash", "drill", "compare", "themes", "execution", "similar", "sources"].includes(screen);
-  // 収録済み自治体は甲府市のみ。年度は当初予算の収録年度（R8〜R6・R3〜R2）から選択
+
+  // --- カバレッジ階層 ---
+  // full = 甲府市（予算ベースの詳細画面: 主な事業・執行・評価・補正・前年当初比較）。
+  // decision = 総務省 決算状況調ベース（全1,741市町村）。県コードのシャードを選択時に取得する。
+  const prefName = s.pref || "山梨県";
+  const prefCode = D.prefCodeOf(prefName);
+  const muniCode = s.muniCode ?? null;
+  const tier = D.tierOf(muniCode);
+  // シャードを取得する場面: 市区町村選択（グリッド描画）／ decision 自治体の閲覧
+  const needShard = !!prefCode && (screen === "muni" || (isApp && tier === "decision"));
+  const { shard, loading: shardLoading } = useDecisionData(needShard ? prefCode : null);
+  const decisionView = React.useMemo(
+    () =>
+      isApp && tier === "decision" && shard && shard.prefCode === prefCode && muniCode
+        ? D.buildDecisionView(shard, muniCode, s.budgetFy ?? "")
+        : null,
+    [isApp, tier, shard, prefCode, muniCode, s.budgetFy],
+  );
+  const isDecision = !!decisionView;
+  // decision 自治体だがまだ表示できない（シャード取得待ち・名前解決前）
+  const decisionPending = isApp && tier === "decision" && !decisionView;
+
+  // 収録済み（full）の年度は当初予算の収録年度（R8〜R6・R3〜R2）から選択
   const budget = KOFU_BUDGET_YEARS.find((b) => b.fy === s.budgetFy) ?? KOFU_BUDGET_YEARS[0]!;
   const projYear = KOFU_PROJECT_YEARS.find((y) => y.fy === budget.fy);
   const KOFU_PROJECTS = React.useMemo(() => projYear?.projects ?? [], [projYear]);
   const KOFU_PROJECTS_SOURCE = projYear?.source ?? { title: "", url: "", originUrl: "", localUrl: "", pagesLabel: "" };
-  const data = React.useMemo(() => muniFromBudget(budget), [budget]);
+  const kofuData = React.useMemo(() => muniFromBudget(budget), [budget]);
+  // 表示データ: decision 自治体はビルダ出力、full（甲府）は予算パース値
+  const data: D.Municipality = decisionView
+    ? {
+        name: decisionView.name,
+        total: decisionView.total,
+        yoy: decisionView.yoy,
+        year: decisionView.fyLabel,
+        pop: decisionView.pop,
+        revenue: decisionView.revenue,
+        expenditure: decisionView.expenditure,
+      }
+    : kofuData;
   const goalProjects = (goal: string) => KOFU_PROJECTS.filter((p) => p.basicGoal.split("・").includes(goal));
   // 政策テーマの目標一覧（R8 はラベル付き定義、過年度は事業データから動的に）
   const planInfo = PLAN_BY_FY[budget.fy] ?? { plan: "甲府市総合計画" };
@@ -253,53 +314,62 @@ export default function BudgetTrace() {
 
   const revItems = data.revenue;
   const expItems = data.expenditure;
-  const totalNow = data.total;
+  const totalNow = data.total; // 歳出（決算 or 予算）総額
+  // 歳入・歳出それぞれの構成比の分母。予算（full）は均衡するので等しいが、
+  // 決算（decision）は歳入決算 ≠ 歳出決算なので側ごとに分母を分ける
+  const revSum = revItems.reduce((a: number, b: any) => a + b.v, 0);
+  const expSum = expItems.reduce((a: number, b: any) => a + b.v, 0);
   const yearLabel = data.year;
 
-  const openMuni = (muniName: string) => () => nav({ screen: "dash", muni: muniName, drillPath: [], theme: null });
+  const openMuni = (muniName: string, code: string) => () =>
+    nav({ screen: "dash", muni: muniName, muniCode: code, drillPath: [], theme: null, budgetFy: undefined });
 
   // --- ホバー強調（強調セグメント以外を淡色化） ---
   const hoverFor = (key: string) => (s.tip && s.tip.hover && s.tip.hover.key === key ? s.tip.hover.idx : null);
   const hoverOnFn = (key: string, idx: number) => () => setSt({ tip: { hover: { key, idx } } });
 
   // --- muni select ---
-  const prefName = s.pref || "山梨県";
-  const prefAvail = prefName === "山梨県";
-  const muniList = (prefAvail ? YAMANASHI_MUNIS : []).map((m) => {
-    const avail = m === "甲府市";
+  // シャード（総務省 決算・全1,741市町村）からその県の市町村一覧を作る。全県が
+  // 最低でも decision（決算ベース）で閲覧可。甲府だけ full（予算ベースの詳細）。
+  const muniEntries =
+    shard && shard.prefCode === prefCode
+      ? Object.entries(shard.munis).map(([code, m]) => ({ code, name: (m as { name: string }).name }))
+      : [];
+  const muniList = muniEntries.map(({ code, name }) => {
+    const full = D.tierOf(code) === "full";
     return {
-      name: m, badge: avail ? `収録済 当初予算${KOFU_BUDGET_YEARS.length}年度分` : "準備中 — 収録をリクエスト ↗", badgeFg: avail ? accent : "#9DACB7",
-      bg: avail ? "#FFFFFF" : "#F0F5F8", bd: avail ? accent : "#DFE7EC",
-      fg: avail ? "#14181C" : "#8494A0", cursor: "pointer",
-      open: avail ? openMuni(m) : () => {},
-      // 準備中の自治体はリクエスト起票へ（自治体名を発行元にプリフィル）
-      requestUrl: avail ? "" : D.buildRequestUrl(
-        `${m}の予算・決算資料の収録`,
-        `自治体リクエスト: ${prefName} ${m} を収録してほしい（市区町村選択画面より）`,
-        m,
-      ),
+      name,
+      badge: full ? `収録済 当初予算${KOFU_BUDGET_YEARS.length}年度分＋決算` : "決算ベース（総務省）",
+      badgeFg: full ? accent : "#4B95C4",
+      bg: "#FFFFFF",
+      bd: full ? accent : "#CFE0EA",
+      fg: "#14181C",
+      cursor: "pointer",
+      open: openMuni(name, code),
+      requestUrl: "", // 全市町村が閲覧可能なのでリクエスト不要
     };
   });
-  // 収録自治体が無い都道府県・「県全体」ボタンもリクエストへ
+  const muniLoading = needShard && screen === "muni" && shardLoading && muniEntries.length === 0;
+  // 都道府県レベルの予算（県全体）は未収録なのでリクエストへ
   const prefRequestUrl = D.buildRequestUrl(
-    `${prefName}の自治体の予算・決算資料の収録`,
-    `自治体リクエスト: ${prefName} の自治体を収録してほしい（市区町村選択画面より）`,
+    `${prefName}（都道府県）の予算・決算資料の収録`,
+    `自治体リクエスト: ${prefName} の県全体（都道府県会計）を収録してほしい（市区町村選択画面より）`,
     prefName,
   );
 
   // --- dashboard panels ---
-  const mkLegend = (items: any[], side: string) => {
+  const mkLegend = (items: any[], side: string, total: number) => {
     const hv = hoverFor(side);
     return items.map((it, i) => ({
-      name: it.name, amtFmt: fmtV(it.v), pctFmt: pctOf(it.v, totalNow),
+      name: it.name, amtFmt: fmtV(it.v), pctFmt: pctOf(it.v, total),
       sw: hv == null || hv === i ? D.PALETTE[i % D.PALETTE.length] : fadeColor(D.PALETTE[i % D.PALETTE.length]),
       hoverOn: hoverOnFn(side, i), hoverOff: hideTip,
       open: () => nav({ screen: "drill", drillSide: side, drillPath: [it.name] }),
     }));
   };
   const dashPanels = [
-    { title: "歳入（どこから来るお金か）", donutBg: donutBg(revItems, hoverFor("rev")), centerLabel: "歳入合計", centerAmt: <CountUpNum value={totalNow} fmt={fmtV} />, legend: mkLegend(revItems, "rev"), openDrill: () => nav({ screen: "drill", drillSide: "rev", drillPath: [] }), tipMove: mkDonutTip(revItems, totalNow, data.pop, "rev"), gloss: mkGloss("歳入") },
-    { title: "歳出（なにに使うお金か）", donutBg: donutBg(expItems, hoverFor("exp")), centerLabel: "歳出合計", centerAmt: <CountUpNum value={totalNow} fmt={fmtV} />, legend: mkLegend(expItems, "exp"), openDrill: () => nav({ screen: "drill", drillSide: "exp", drillPath: [] }), tipMove: mkDonutTip(expItems, totalNow, data.pop, "exp"), gloss: mkGloss("歳出") },
+    { title: "歳入（どこから来るお金か）", donutBg: donutBg(revItems, hoverFor("rev")), centerLabel: "歳入合計", centerAmt: <CountUpNum value={revSum} fmt={fmtV} />, legend: mkLegend(revItems, "rev", revSum), openDrill: () => nav({ screen: "drill", drillSide: "rev", drillPath: [] }), tipMove: mkDonutTip(revItems, revSum, data.pop, "rev"), gloss: mkGloss("歳入") },
+    { title: "歳出（なにに使うお金か）", donutBg: donutBg(expItems, hoverFor("exp")), centerLabel: "歳出合計", centerAmt: <CountUpNum value={expSum} fmt={fmtV} />, legend: mkLegend(expItems, "exp", expSum), openDrill: () => nav({ screen: "drill", drillSide: "exp", drillPath: [] }), tipMove: mkDonutTip(expItems, expSum, data.pop, "exp"), gloss: mkGloss("歳出") },
   ];
 
   // --- 政策テーマ（総合計画の基本目標 × 83事業の実データ集計） ---
@@ -326,7 +396,7 @@ export default function BudgetTrace() {
   // --- drill（款 → 内訳/主な事業） ---
   const side = s.drillSide;
   const rootItems = side === "rev" ? revItems : expItems;
-  let nodeItems: any[] = rootItems; let nodeTotal = totalNow; let nodeName = side === "rev" ? "歳入合計" : "歳出合計";
+  let nodeItems: any[] = rootItems; let nodeTotal = side === "rev" ? revSum : expSum; let nodeName = side === "rev" ? "歳入合計" : "歳出合計";
   const pathNodes: any[] = [];
   s.drillPath.forEach((nm) => {
     const found = nodeItems.find((n) => n.name === nm);
@@ -336,10 +406,13 @@ export default function BudgetTrace() {
     nodeItems = found.children ?? [];
   });
   const depth = pathNodes.length;
-  // 款は「実データの内訳・主な事業・R6決算の項内訳」のいずれかがあれば掘れる
+  // 款は「実データの内訳・主な事業・R6決算の項内訳」のいずれかがあれば掘れる。
+  // decision（総務省決算）は款→項の children を持つのでそれで判定する（full 専用の
+  // 主な事業・R6決算内訳による掘り下げは甲府のみ）
   const canDrillDeeper = (it: any) =>
     !!(it.children && it.children.length > 0) ||
-    (side === "exp" &&
+    (!isDecision &&
+      side === "exp" &&
       depth === 0 &&
       (!!KOFU_R6_DETAIL.byKan[it.name] || KOFU_PROJECTS.some((p) => p.kan === it.name)));
   const drillCrumbs: any[] = [{ label: side === "rev" ? "歳入" : "歳出", jump: () => setSt({ drillPath: [] }), bg: depth === 0 ? "#14181C" : "transparent", fg: depth === 0 ? "#F7FAFC" : "#5C6B77", fw: depth === 0 ? "700" : "500", sep: s.drillPath.length ? "inline" : "none" }];
@@ -361,7 +434,9 @@ export default function BudgetTrace() {
       open: clickable ? () => setSt({ drillPath: [...s.drillPath, it.name] }) : () => {},
     };
   });
-  const drillEvidence = `${budget.sourceTitle} ${budget.pagesLabel}${depth > 0 ? `「${nodeName}」` : ""}`;
+  const drillEvidence = isDecision
+    ? `${decisionView!.primaryEvidence?.title ?? "総務省 市町村別決算状況調"}${depth > 0 ? `「${nodeName}」` : ""}`
+    : `${budget.sourceTitle} ${budget.pagesLabel}${depth > 0 ? `「${nodeName}」` : ""}`;
   const drillSideTabs = [
     { label: "歳出", pick: () => setSt({ drillSide: "exp", drillPath: [] }), bg: side === "exp" ? "#14181C" : "#FFFFFF", fg: side === "exp" ? "#F7FAFC" : "#5C6B77" },
     { label: "歳入", pick: () => setSt({ drillSide: "rev", drillPath: [] }), bg: side === "rev" ? "#14181C" : "#FFFFFF", fg: side === "rev" ? "#F7FAFC" : "#5C6B77" },
@@ -484,7 +559,9 @@ export default function BudgetTrace() {
   const trendYearLabels = KOFU_TREND.map((r) => r.fy);
 
   // --- header nav ---
-  const navDefs: [string, string, () => void][] = [
+  // decision（総務省決算）は款別ドリルダウン・類似自治体まで。前年比較・政策テーマ・
+  // 予算執行状況は予算資料が要る full 専用（甲府）。
+  const navDefsFull: [string, string, () => void][] = [
     ["ダッシュボード", "dash", () => nav({ screen: "dash" })],
     ["款別ドリルダウン", "drill", () => nav({ screen: "drill" })],
     ["前年比較", "compare", () => nav({ screen: "compare" })],
@@ -492,12 +569,45 @@ export default function BudgetTrace() {
     ["予算執行状況", "execution", () => nav({ screen: "execution" })],
     ["類似自治体", "similar", () => nav({ screen: "similar" })],
   ];
+  const navDefsDecision: [string, string, () => void][] = [
+    ["ダッシュボード", "dash", () => nav({ screen: "dash" })],
+    ["款別ドリルダウン", "drill", () => nav({ screen: "drill" })],
+    ["類似自治体", "similar", () => nav({ screen: "similar" })],
+  ];
+  const navDefs = isDecision ? navDefsDecision : navDefsFull;
   const navTabs = navDefs.map(([label, key, open]) => ({ label, open, fg: screen === key ? "#14181C" : "#5C6B77", fw: screen === key ? "700" : "500", ul: screen === key ? accent : "transparent" }));
+
+  // decision 自治体で full 専用画面（前年比較・政策テーマ・予算執行）を指す URL に来たら
+  // ダッシュボードにフォールバックする（ディープリンク経由の直行を吸収）
+  const fullOnly = ["compare", "themes", "execution"].includes(screen);
+  const gatedToDash = isDecision && fullOnly;
 
   const v: any = {
     isTop: screen === "top", isMuni: screen === "muni", isApp,
-    isDash: screen === "dash", isDrill: screen === "drill", isThemes: screen === "themes", isCompare: screen === "compare",
-    isExecution: screen === "execution",
+    isDash: screen === "dash" || gatedToDash, isDrill: screen === "drill",
+    isThemes: screen === "themes" && !isDecision, isCompare: screen === "compare" && !isDecision,
+    isExecution: screen === "execution" && !isDecision,
+    // 決算ベース（総務省・decision 階層）の自治体か。予算資料ベースの full 画面は出さない
+    isDecision,
+    // decision 自治体のシャード取得待ち（ダッシュボードでスケルトンを出す）
+    loading: decisionPending,
+    // decision 自治体の未収録機能（主な事業・執行・評価・補正）のその場リクエスト
+    decisionRequestUrl: isDecision
+      ? D.buildRequestUrl(
+          `${data.name}の予算資料（当初予算・主な事業・執行状況）の収録`,
+          `自治体リクエスト: ${prefName} ${data.name} は決算ベース（総務省）で収録済み。当初予算・主な事業・執行状況などの予算資料も見たい`,
+          data.name,
+        )
+      : "",
+    decisionEvidence: isDecision
+      ? (decisionView!.evidence ?? []).map((ev) => ({
+          ...ev,
+          open: () => openViewer({
+            url: ev.localUrl, title: ev.title, sub: ev.thumb,
+            originUrl: "https://www.soumu.go.jp/iken/zaisei/r06_shichouson.html", archiveUrl: ev.url,
+          }),
+        }))
+      : [],
     execTabs, execRows,
     // 年度切替（R3 は資料消失により欠落 — execGapNote で明示）
     execYearTabs: KOFU_EXECUTION_YEARS.map((y) => ({
@@ -533,43 +643,70 @@ export default function BudgetTrace() {
     onPrefSelect: (name: string) => nav({ screen: "muni", pref: name }),
     mapColorMode,
     onMuniSelect: (pfName: string, muniName: string | null) => {
-      if (pfName === "山梨県" && muniName === "甲府市") nav({ screen: "dash", pref: pfName, muni: "甲府市", drillPath: [], theme: null });
+      // 甲府だけ full 経路へ直行。他は県の一覧（シャード）へ — グリッドで団体コード付き選択
+      if (pfName === "山梨県" && muniName === "甲府市") nav({ screen: "dash", pref: pfName, muni: "甲府市", muniCode: "192015", drillPath: [], theme: null, budgetFy: undefined });
       else nav({ screen: "muni", pref: pfName });
     },
     searchQ: s.searchQ,
-    openKofuLink: (e: any) => { if (e && e.preventDefault) e.preventDefault(); nav({ screen: "dash", muni: "甲府市", pref: "山梨県" }); },
-    goTop: () => nav({ screen: "top" }), goMuniSelect: () => nav({ screen: "muni" }),
+    openKofuLink: (e: any) => { if (e && e.preventDefault) e.preventDefault(); nav({ screen: "dash", muni: "甲府市", muniCode: "192015", pref: "山梨県", budgetFy: undefined }); },
+    goTop: () => nav({ screen: "top" }), goMuniSelect: () => nav({ screen: "muni", muni: null, muniCode: undefined }),
     muniPrefName: prefName,
+    // 市区町村選択画面: シャード取得中はローディング、全県が決算ベースで閲覧可
+    muniLoading,
+    muniIntro:
+      prefName === "山梨県"
+        ? "甲府市は当初予算ベースの詳細（主な事業・執行・評価・前年比較）まで収録。他の市町村は総務省の決算ベースで閲覧できます。"
+        : `${prefName}の市区町村は総務省の決算ベース（款別歳出・歳入内訳・1人あたり・類似比較）で閲覧できます。予算資料ベースの詳細は収録リクエストできます。`,
     prefAllOpen: () => {},
     prefAllBg: "#F0F5F8", prefAllFg: "#8494A0", prefAllBd: "#DFE7EC",
     prefAllBadge: "準備中",
-    prefAllNote: "都道府県レベルの予算データは未収録です",
+    prefAllNote: "都道府県（県全体）レベルの会計データは未収録です",
     muniList,
     prefRequestUrl,
-    prefIsEmpty: !prefAvail,
-    crumbPref: s.pref || "山梨県", crumbMuni: s.muni || "甲府市", yearLabel,
-    // 年度切り替え（収録済みの当初予算年度）。切替時はドリル位置・テーマ選択をリセット
-    yearOptions: [
-      ...KOFU_BUDGET_YEARS.map((b) => ({ value: b.fy, label: b.fyLabel })),
-      { value: "__request", label: "＋ 他の年度をリクエスト…" },
-    ],
-    yearSel: budget.fy,
+    // 全市町村が最低でも決算ベースで閲覧可能になったので、空県カードは出さない
+    prefIsEmpty: false,
+    crumbPref: s.pref || "山梨県", crumbMuni: data.name || s.muni || "甲府市", yearLabel,
+    // 年度切り替え。full=当初予算年度、decision=決算年度。切替時はドリル位置・テーマをリセット
+    yearOptions: isDecision
+      ? [
+          ...decisionView!.availableFys.map((fy) => ({ value: fy, label: D.DECISION_FY_LABELS[fy] ?? `令和${fy.slice(1)}年度 決算` })),
+          { value: "__request", label: "＋ 他の年度をリクエスト…" },
+        ]
+      : [
+          ...KOFU_BUDGET_YEARS.map((b) => ({ value: b.fy, label: b.fyLabel })),
+          { value: "__request", label: "＋ 他の年度をリクエスト…" },
+        ],
+    yearSel: isDecision ? decisionView!.fy : budget.fy,
     pickYear: (fy: string) => {
       if (fy === "__request") {
-        window.open(D.buildRequestUrl(
-          "当初予算・決算資料（未収録の年度）",
-          `年度リクエスト: 現在の収録（当初予算 R2〜R8・執行 R1〜R7）に無い年度を見たい`,
-        ), "_blank", "noopener");
+        window.open(
+          isDecision
+            ? D.buildRequestUrl(
+                `${data.name}の未収録年度の資料`,
+                `年度リクエスト: ${prefName} ${data.name} の、総務省決算（R2〜R6）に無い年度を見たい`,
+                data.name,
+              )
+            : D.buildRequestUrl(
+                "当初予算・決算資料（未収録の年度）",
+                `年度リクエスト: 現在の収録（当初予算 R2〜R8・執行 R1〜R7）に無い年度を見たい`,
+              ),
+          "_blank",
+          "noopener",
+        );
         return; // 選択状態は変えない
       }
       setSt({ budgetFy: fy, drillPath: [], theme: null, execFy: undefined });
     },
     navTabs,
-    dashTitle: `${data.name}の予算`, totalFmt: fmtV(totalNow),
+    dashTitle: isDecision ? `${data.name}の決算` : `${data.name}の予算`,
+    dashSubtitle: isDecision
+      ? "普通会計 決算（総務省 市町村別決算状況調） ・ 款別歳出と歳入科目の内訳"
+      : "一般会計 当初予算 ・ 歳入と歳出は同額で編成されます",
+    totalFmt: fmtV(totalNow),
     totalFmtAnim: <CountUpNum value={totalNow} fmt={fmtV} />,
     yoy: data.yoy,
-    yoyCaption: budget.prevBasis === "補正後" ? "対前年度（補正後予算比）" : "対前年度",
-    dashPanels, themeStrip, featured,
+    yoyCaption: isDecision ? "対前年度（決算比）" : budget.prevBasis === "補正後" ? "対前年度（補正後予算比）" : "対前年度",
+    dashPanels, themeStrip: isDecision ? [] : themeStrip, featured: isDecision ? [] : featured,
     goThemes: () => nav({ screen: "themes" }),
     drillSideTabs, drillCrumbs, drillLevelLabel: depth === 0 ? "款" : "内訳",
     drillTitle: nodeName, drillTotalFmt: fmtOku(nodeTotal), drillDonutBg: donutBg(donutItems, hoverFor("drill")),
@@ -577,7 +714,7 @@ export default function BudgetTrace() {
     // 款詳細の項テーブル: 表示中の予算年度と一致する統計書データ（当初→最終→決算）が
     // あればそれを出す。無い年度（R7・R8 = 決算前）は従来どおり R6 決算の項内訳を参考表示
     ...(() => {
-      const outturn = KOFU_OUTTURN_YEARS.find((y) => y.fy === budget.fy);
+      const outturn = isDecision ? undefined : KOFU_OUTTURN_YEARS.find((y) => y.fy === budget.fy);
       const oRows = side === "exp" && depth === 1 && outturn
         ? outturn.expenditure.filter((r) => r.kan === nodeName && r.kou != null)
         : [];
@@ -614,7 +751,7 @@ export default function BudgetTrace() {
     })(),
     // R8 予算の項以下は原典未公開のため、R6 決算の項内訳を年度明示で参考表示する
     ...(() => {
-      const rows = side === "exp" && depth === 1 ? KOFU_R6_DETAIL.byKan[nodeName] ?? [] : [];
+      const rows = !isDecision && side === "exp" && depth === 1 ? KOFU_R6_DETAIL.byKan[nodeName] ?? [] : [];
       const kanTotal = rows.reduce((a, r) => a + r.v, 0);
       return {
         hasR6Detail: rows.length > 0,
@@ -639,9 +776,9 @@ export default function BudgetTrace() {
       };
     })(),
     drillNoChildrenNote: depth > 0 && nodeItems.length === 0,
-    // 予算資料「主な事業一覧」の実データ（款レベル・歳出のみ）
+    // 予算資料「主な事業一覧」の実データ（款レベル・歳出のみ。full=甲府のみ）
     ...(() => {
-      const rows = side === "exp" && depth === 1 ? KOFU_PROJECTS.filter((p) => p.kan === nodeName) : [];
+      const rows = !isDecision && side === "exp" && depth === 1 ? KOFU_PROJECTS.filter((p) => p.kan === nodeName) : [];
       // 事業単位のエビデンスで説明できる額と、款のうち事業掲載が無い残額（詳細不明）
       const covered = rows.reduce((a, p) => a + p.amountOku, 0);
       const uncovered = Math.max(0, nodeTotal - covered);
@@ -681,7 +818,7 @@ export default function BudgetTrace() {
     })(),
     // 全体のエビデンス充足度（一般会計の款に属する主な事業の合計 vs 歳出総額）
     ...(() => {
-      const general = KOFU_PROJECTS.filter((p) => budget.expenditure.some((k) => k.name === p.kan));
+      const general = isDecision ? [] : KOFU_PROJECTS.filter((p) => budget.expenditure.some((k) => k.name === p.kan));
       const covered = general.reduce((a, p) => a + p.amountOku, 0);
       return {
         hasProjCoverage: general.length > 0,
@@ -695,16 +832,28 @@ export default function BudgetTrace() {
     // エビデンスは自サーバーのコピーをドロワーで開く（発行元・Wayback はドロワー内の補助リンク）
     viewer: s.viewer ?? null,
     closeViewer,
-    drillPdfUrl: budget.sourceLocalUrl,
-    dashSourceLabel: `出典：${budget.sourceTitle} ${budget.pagesLabel}`,
-    dashSourceUrl: budget.sourceLocalUrl,
-    dashSourceTitle: budget.sourceTitle,
-    dashSourceOpen: () => openViewer({
-      // 表紙でなく款別一覧の先頭ページ（pagesLabel の最初の数値）から開く
-      url: `${budget.sourceLocalUrl}#page=${budget.pagesLabel.match(/\d+/)?.[0] ?? 1}`,
-      title: budget.sourceTitle, sub: `款別一覧 ${budget.pagesLabel}`,
-      originUrl: budget.originUrl, archiveUrl: budget.sourceUrl,
-    }),
+    drillPdfUrl: isDecision ? "" : budget.sourceLocalUrl,
+    dashSourceLabel: isDecision
+      ? `出典：${decisionView!.primaryEvidence?.title ?? "総務省 市町村別決算状況調"}（${decisionView!.refLabel}）`
+      : `出典：${budget.sourceTitle} ${budget.pagesLabel}`,
+    dashSourceUrl: isDecision ? decisionView!.primaryEvidence?.localUrl ?? "" : budget.sourceLocalUrl,
+    dashSourceTitle: isDecision ? decisionView!.primaryEvidence?.title ?? "総務省 市町村別決算状況調" : budget.sourceTitle,
+    dashSourceOpen: isDecision
+      ? (decisionView!.primaryEvidence
+          ? () => openViewer({
+              url: decisionView!.primaryEvidence!.localUrl,
+              title: decisionView!.primaryEvidence!.title,
+              sub: `${decisionView!.fyLabel} ・ ${decisionView!.refLabel}`,
+              originUrl: "https://www.soumu.go.jp/iken/zaisei/r06_shichouson.html",
+              archiveUrl: decisionView!.primaryEvidence!.url,
+            })
+          : () => {})
+      : () => openViewer({
+          // 表紙でなく款別一覧の先頭ページ（pagesLabel の最初の数値）から開く
+          url: `${budget.sourceLocalUrl}#page=${budget.pagesLabel.match(/\d+/)?.[0] ?? 1}`,
+          title: budget.sourceTitle, sub: `款別一覧 ${budget.pagesLabel}`,
+          originUrl: budget.originUrl, archiveUrl: budget.sourceUrl,
+        }),
     themesIntro: `${planInfo.plan}の基本目標（${GOALS.map((g) => `「${g.name}」`).join("")}）別に、予算資料「主な事業一覧」に掲載された${KOFU_PROJECTS.length}事業を、資料記載の基本目標・施策の紐付けどおりに集計しています。`,
     drillTipMove: mkDonutTip(donutItems, nodeTotal, data.pop, "drill"),
     drillSub: subV(nodeTotal),
@@ -716,7 +865,7 @@ export default function BudgetTrace() {
     gKan: mkGloss("款"),
     perCapitaLine: isPer
       ? `総額 ${fmtOku(totalNow)}`
-      : `市民1人あたり ${((totalNow * 1e8) / data.pop / 1e4).toFixed(1)}万円（${budget.populationLabel} ${data.pop.toLocaleString()}人）`,
+      : `市民1人あたり ${((totalNow * 1e8) / data.pop / 1e4).toFixed(1)}万円（${isDecision ? "住民基本台帳人口" : budget.populationLabel} ${data.pop.toLocaleString()}人）`,
     unitTabs,
     isSimilar: screen === "similar", isSources: screen === "sources",
     goSources: () => nav({ screen: "sources" }), goDash: () => nav({ screen: "dash" }),
