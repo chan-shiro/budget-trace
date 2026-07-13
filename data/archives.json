@@ -2,6 +2,40 @@
   "note": "一次資料の Wayback Machine スナップショット台帳。再生成/追記: bun run pipeline:archive",
   "entries": [
     {
+      "sourceId": "fuefuki-yosansho-r8",
+      "url": "https://www.city.fuefuki.yamanashi.jp/documents/1033/r8toushoyosangaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260713113932/https://www.city.fuefuki.yamanashi.jp/documents/1033/r8toushoyosangaiyou.pdf",
+      "waybackTimestamp": "20260713113932",
+      "checkedAt": "2026-07-13T11:39:50.883Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "fuefuki-yosansho-r8",
+      "url": "https://www.city.fuefuki.yamanashi.jp/zaise/shisejoho/zaise/yosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260202182232/https://www.city.fuefuki.yamanashi.jp/zaise/shisejoho/zaise/yosan.html",
+      "waybackTimestamp": "20260202182232",
+      "checkedAt": "2026-07-13T11:40:28.507Z"
+    },
+    {
+      "sourceId": "fujiyoshida-yosansho-r8",
+      "url": "https://www.city.fujiyoshida.yamanashi.jp/page/1900.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260216054649/https://www.city.fujiyoshida.yamanashi.jp/page/1900.html",
+      "waybackTimestamp": "20260216054649",
+      "checkedAt": "2026-07-13T11:41:34.460Z"
+    },
+    {
+      "sourceId": "fujiyoshida-yosansho-r8",
+      "url": "https://www.city.fujiyoshida.yamanashi.jp/uploaded/attachment/7412.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260713114033/https://www.city.fujiyoshida.yamanashi.jp/uploaded/attachment/7412.pdf",
+      "waybackTimestamp": "20260713114033",
+      "checkedAt": "2026-07-13T11:41:15.503Z",
+      "sha256Match": true
+    },
+    {
       "sourceId": "izumi-yosansho-r8",
       "url": "https://www.city.osaka-izumi.lg.jp/kakukano/soumubu/zaiseika/gyoumu/yosan.html",
       "kind": "landing",
@@ -552,6 +586,15 @@
       "waybackUrl": "https://web.archive.org/web/20260712085648/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/zaise/r07zaiseijokyo.html",
       "waybackTimestamp": "20260712085648",
       "checkedAt": "2026-07-12T09:27:45.771Z"
+    },
+    {
+      "sourceId": "minami-alps-yosansho-r8",
+      "url": "https://www.city.minami-alps.yamanashi.jp/fs/1/4/1/8/3/3/_/__8____________.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260713114137/https://www.city.minami-alps.yamanashi.jp/fs/1/4/1/8/3/3/_/__8____________.pdf",
+      "waybackTimestamp": "20260713114137",
+      "checkedAt": "2026-07-13T11:41:58.503Z",
+      "sha256Match": true
     },
     {
       "sourceId": "numazu-yosansho-r7",

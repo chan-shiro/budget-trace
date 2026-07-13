@@ -50,6 +50,8 @@ interface Options {
   /** 合計行のラベル。既定「歳入合計」「歳出合計」。豊川は歳入歳出とも「合計」 */
   revenueTotalLabel?: string;
   expenditureTotalLabel?: string;
+  /** 歳入と歳出が同一ページに縦積み（南アルプス等）。revenuePage=expenditurePage で指定 */
+  samePage?: boolean;
 }
 
 /** 全角数字 → 半角（豊川の款番号が全角） */
@@ -102,7 +104,7 @@ function parseKanPage(
   side: "revenue" | "expenditure",
   opts: Options = {},
 ): PageResult {
-  const text = pdfPageText(filePath, page);
+  let text = pdfPageText(filePath, page);
   const heading =
     side === "revenue"
       ? opts.revenueHeading ?? "歳入予算款別一覧"
@@ -117,6 +119,21 @@ function parseKanPage(
     side === "revenue"
       ? opts.revenueTotalLabel ?? "歳入合計"
       : opts.expenditureTotalLabel ?? "歳出合計";
+  // samePage: 歳入と歳出が同一ページに縦積み（南アルプス等）。合計行で2区画に割り、
+  // revenue=1つ目の合計まで / expenditure=1つ目の合計の次〜2つ目の合計 を処理する。
+  // 両区画の合計ラベルが同じ（「合計」）様式に対応するため、totalLabel 出現位置で切る。
+  if (opts.samePage) {
+    const all = text.split("\n");
+    const totalIdxs = all
+      .map((l, i) => ({ c: l.replace(/[\s　]/g, ""), i }))
+      .filter((x) => x.c.includes(totalLabel))
+      .map((x) => x.i);
+    if (totalIdxs.length < 2) {
+      throw new Error(`${filename} p.${page}: samePage 指定だが「${totalLabel}」行が2つ見つかりません（${totalIdxs.length}件）`);
+    }
+    const [t1, t2] = totalIdxs;
+    text = (side === "revenue" ? all.slice(0, t1! + 1) : all.slice(t1! + 1, t2! + 1)).join("\n");
+  }
   const prevBasis: "当初" | "補正後" = text.replace(/\s/g, "").includes("補正後予算額") ? "補正後" : "当初";
   const locator = { file: filename, page };
 
@@ -185,8 +202,10 @@ function parseKanPage(
       continue;
     }
 
-    // 行頭の款番号（○ 2 のような付番マーカー接頭辞を許容）
-    const lead = raw.match(/^\s*[○◎●]*\s*(\d+)\s/);
+    // 行頭の款番号（○ 2 のような付番マーカー接頭辞を許容）。款名が両端揃えで
+    // 款番号と名前が密着する様式（富士吉田「1議会費」）に対応するため、番号直後の
+    // 空白は必須にせず「次が数字・カンマでない（＝金額の一部でない）」ことだけ要求する
+    const lead = raw.match(/^\s*[○◎●]*\s*(\d+)(?![\d,])/);
     const rest = lead ? raw.slice(raw.indexOf(lead[1]!) + lead[1]!.length) : raw;
     const tokens = rest.match(AMOUNT_RE) ?? [];
     const ints = tokens.filter((t) => !t.includes("."));
@@ -197,8 +216,9 @@ function parseKanPage(
       // 完結した款行（従来形式）。直前の折返し断片があれば款名の先頭に足す
       emit(Number(lead[1]), pendName + namePart, ints, raw);
     } else if (tokens.length === 0) {
-      // 金額のない款名断片（折返しの上段/下段）。日本語断片のみ採る
-      if (hasCJK(namePart)) pendName += namePart;
+      // 金額のない款名断片（折返しの上段/下段）。日本語断片のみ採る。
+      // 「款名 （A）（%）…」等の列見出し行（括弧・％・全角ABC を含む）は款名に混ぜない
+      if (hasCJK(namePart) && !/[（）()%％ＡＢＣ]/.test(namePart)) pendName += namePart;
     } else if (pendNo != null && ints.length >= 2) {
       // 折返し款の金額行（行頭に款番号がない）
       emit(pendNo, pendName + namePart, ints, raw);
