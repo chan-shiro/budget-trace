@@ -881,6 +881,182 @@
       "sha256Match": true
     },
     {
+      "sourceId": "soumu-shichoson-seishitsu-r2",
+      "url": "https://www.soumu.go.jp/main_content/000800823.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20220401110452/https://www.soumu.go.jp/main_content/000800823.xlsx",
+      "waybackTimestamp": "20220401110452",
+      "checkedAt": "2026-07-13T11:02:31.628Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "soumu-shichoson-seishitsu-r2",
+      "url": "https://www.soumu.go.jp/main_content/000800825.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20220401110722/https://www.soumu.go.jp/main_content/000800825.xlsx",
+      "waybackTimestamp": "20220401110722",
+      "checkedAt": "2026-07-13T11:02:39.048Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "soumu-shichoson-seishitsu-r2",
+      "url": "https://www.soumu.go.jp/main_content/000800832.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20220401111642/https://www.soumu.go.jp/main_content/000800832.xlsx",
+      "waybackTimestamp": "20220401111642",
+      "checkedAt": "2026-07-13T11:02:46.691Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "soumu-shichoson-seishitsu-r2",
+      "url": "https://www.soumu.go.jp/main_content/000800834.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20220401110633/https://www.soumu.go.jp/main_content/000800834.xlsx",
+      "waybackTimestamp": "20220401110633",
+      "checkedAt": "2026-07-13T11:03:44.226Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "soumu-shichoson-seishitsu-r3",
+      "url": "https://www.soumu.go.jp/iken/zaisei/r03_shichouson.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260227045514/https://www.soumu.go.jp/iken/zaisei/r03_shichouson.html",
+      "waybackTimestamp": "20260227045514",
+      "checkedAt": "2026-07-13T11:02:07.666Z"
+    },
+    {
+      "sourceId": "soumu-shichoson-seishitsu-r3",
+      "url": "https://www.soumu.go.jp/main_content/000871021.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20230329160753/https://www.soumu.go.jp/main_content/000871021.xlsx",
+      "waybackTimestamp": "20230329160753",
+      "checkedAt": "2026-07-13T11:00:51.276Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "soumu-shichoson-seishitsu-r3",
+      "url": "https://www.soumu.go.jp/main_content/000871022.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20230329152214/https://www.soumu.go.jp/main_content/000871022.xlsx",
+      "waybackTimestamp": "20230329152214",
+      "checkedAt": "2026-07-13T11:01:03.832Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "soumu-shichoson-seishitsu-r3",
+      "url": "https://www.soumu.go.jp/main_content/000871026.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20230329152859/https://www.soumu.go.jp/main_content/000871026.xlsx",
+      "waybackTimestamp": "20230329152859",
+      "checkedAt": "2026-07-13T11:01:43.769Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "soumu-shichoson-seishitsu-r3",
+      "url": "https://www.soumu.go.jp/main_content/000871027.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20230329151226/https://www.soumu.go.jp/main_content/000871027.xlsx",
+      "waybackTimestamp": "20230329151226",
+      "checkedAt": "2026-07-13T11:02:07.322Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "soumu-shichoson-seishitsu-r4",
+      "url": "https://www.soumu.go.jp/iken/zaisei/r04_shichouson.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260301074317/https://www.soumu.go.jp/iken/zaisei/r04_shichouson.html",
+      "waybackTimestamp": "20260301074317",
+      "checkedAt": "2026-07-13T11:00:22.069Z"
+    },
+    {
+      "sourceId": "soumu-shichoson-seishitsu-r4",
+      "url": "https://www.soumu.go.jp/main_content/000937290.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20240522174306/https://www.soumu.go.jp/main_content/000937290.xlsx",
+      "waybackTimestamp": "20240522174306",
+      "checkedAt": "2026-07-13T10:59:06.458Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "soumu-shichoson-seishitsu-r4",
+      "url": "https://www.soumu.go.jp/main_content/000937291.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20240602152216/https://www.soumu.go.jp/main_content/000937291.xlsx",
+      "waybackTimestamp": "20240602152216",
+      "checkedAt": "2026-07-13T10:59:21.485Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "soumu-shichoson-seishitsu-r4",
+      "url": "https://www.soumu.go.jp/main_content/000937295.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20240522155542/https://www.soumu.go.jp/main_content/000937295.xlsx",
+      "waybackTimestamp": "20240522155542",
+      "checkedAt": "2026-07-13T10:59:47.514Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "soumu-shichoson-seishitsu-r4",
+      "url": "https://www.soumu.go.jp/main_content/000937296.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20240522135401/https://www.soumu.go.jp/main_content/000937296.xlsx",
+      "waybackTimestamp": "20240522135401",
+      "checkedAt": "2026-07-13T10:59:58.926Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "soumu-shichoson-seishitsu-r5",
+      "url": "https://www.soumu.go.jp/iken/zaisei/r05_shichouson.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250404151416/https://www.soumu.go.jp/iken/zaisei/r05_shichouson.html",
+      "waybackTimestamp": "20250404151416",
+      "checkedAt": "2026-07-13T10:58:57.822Z"
+    },
+    {
+      "sourceId": "soumu-shichoson-seishitsu-r5",
+      "url": "https://www.soumu.go.jp/main_content/000999903.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260713105445/https://www.soumu.go.jp/main_content/000999903.xlsx",
+      "waybackTimestamp": "20260713105445",
+      "checkedAt": "2026-07-13T10:56:28.888Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "soumu-shichoson-seishitsu-r5",
+      "url": "https://www.soumu.go.jp/main_content/000999904.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260713105552/https://www.soumu.go.jp/main_content/000999904.xlsx",
+      "waybackTimestamp": "20260713105552",
+      "checkedAt": "2026-07-13T10:56:47.157Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "soumu-shichoson-seishitsu-r5",
+      "url": "https://www.soumu.go.jp/main_content/000999910.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260713105708/https://www.soumu.go.jp/main_content/000999910.xlsx",
+      "waybackTimestamp": "20260713105708",
+      "checkedAt": "2026-07-13T10:57:51.033Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "soumu-shichoson-seishitsu-r5",
+      "url": "https://www.soumu.go.jp/main_content/000999911.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260713105812/https://www.soumu.go.jp/main_content/000999911.xlsx",
+      "waybackTimestamp": "20260713105812",
+      "checkedAt": "2026-07-13T10:58:43.169Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "soumu-shichoson-seishitsu-r6",
+      "url": "https://www.soumu.go.jp/iken/zaisei/r06_shichouson.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260712084441/https://www.soumu.go.jp/iken/zaisei/r06_shichouson.html",
+      "waybackTimestamp": "20260712084441",
+      "checkedAt": "2026-07-13T10:43:13.348Z"
+    },
+    {
       "sourceId": "soumu-shichoson-seishitsu-r6",
       "url": "https://www.soumu.go.jp/main_content/001061673.xlsx",
       "kind": "file",

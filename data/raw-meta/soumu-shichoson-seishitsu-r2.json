@@ -1,0 +1,33 @@
+{
+  "sourceId": "soumu-shichoson-seishitsu-r2",
+  "files": [
+    {
+      "filename": "000800823.xlsx",
+      "sha256": "c74d7ddc9fafc6f2358868e6cfc7ad3ac2369541cb6850bac20b6e8b3200024d",
+      "bytes": 988160,
+      "fetchedAt": "2026-07-13T10:52:25.565Z",
+      "fetchedFrom": "https://www.soumu.go.jp/main_content/000800823.xlsx"
+    },
+    {
+      "filename": "000800825.xlsx",
+      "sha256": "fcbb6dd4790580efd3ff22a862ab5b56d08cb8179288c6842158e51760f88d65",
+      "bytes": 120199,
+      "fetchedAt": "2026-07-13T10:52:25.593Z",
+      "fetchedFrom": "https://www.soumu.go.jp/main_content/000800825.xlsx"
+    },
+    {
+      "filename": "000800832.xlsx",
+      "sha256": "e98c7271446ee82f6cb3509f11ccd183af2ab838a156a47cd667d792d3147ff1",
+      "bytes": 1012839,
+      "fetchedAt": "2026-07-13T10:52:25.629Z",
+      "fetchedFrom": "https://www.soumu.go.jp/main_content/000800832.xlsx"
+    },
+    {
+      "filename": "000800834.xlsx",
+      "sha256": "a3db5cf73b85775781b5104bf6fc67e79497a647b4ee412a6fff1fdf6f929000",
+      "bytes": 126866,
+      "fetchedAt": "2026-07-13T10:52:25.653Z",
+      "fetchedFrom": "https://www.soumu.go.jp/main_content/000800834.xlsx"
+    }
+  ]
+}
