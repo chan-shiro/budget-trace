@@ -3,6 +3,10 @@
 // 一次資料の元 URL → Wayback Machine スナップショット URL
 
 export const WAYBACK_BY_URL: Record<string, string> = {
+  "https://www.city.fuefuki.yamanashi.jp/documents/1033/r8toushoyosangaiyou.pdf": "https://web.archive.org/web/20260713113932/https://www.city.fuefuki.yamanashi.jp/documents/1033/r8toushoyosangaiyou.pdf",
+  "https://www.city.fuefuki.yamanashi.jp/zaise/shisejoho/zaise/yosan.html": "https://web.archive.org/web/20260202182232/https://www.city.fuefuki.yamanashi.jp/zaise/shisejoho/zaise/yosan.html",
+  "https://www.city.fujiyoshida.yamanashi.jp/page/1900.html": "https://web.archive.org/web/20260216054649/https://www.city.fujiyoshida.yamanashi.jp/page/1900.html",
+  "https://www.city.fujiyoshida.yamanashi.jp/uploaded/attachment/7412.pdf": "https://web.archive.org/web/20260713114033/https://www.city.fujiyoshida.yamanashi.jp/uploaded/attachment/7412.pdf",
   "https://www.city.osaka-izumi.lg.jp/kakukano/soumubu/zaiseika/gyoumu/yosan.html": "https://web.archive.org/web/20260713094504/https://www.city.osaka-izumi.lg.jp/kakukano/soumubu/zaiseika/gyoumu/yosan.html",
   "https://www.city.osaka-izumi.lg.jp/material/files/group/18/02_R8_ippan.pdf": "https://web.archive.org/web/20260713094338/https://www.city.osaka-izumi.lg.jp/material/files/group/18/02_R8_ippan.pdf",
   "https://www.city.kofu.yamanashi.jp/zaise/documents/kekkaitiran.xls": "https://web.archive.org/web/20260712141740/https://www.city.kofu.yamanashi.jp/zaise/documents/kekkaitiran.xls",
@@ -62,6 +66,7 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r8yosan.html": "https://web.archive.org/web/20260712083536/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r8yosan.html",
   "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/zaise/documents/01ipankaikei.pdf": "https://web.archive.org/web/20260712091231/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/zaise/documents/01ipankaikei.pdf",
   "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/zaise/r07zaiseijokyo.html": "https://web.archive.org/web/20260712085648/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/zaise/r07zaiseijokyo.html",
+  "https://www.city.minami-alps.yamanashi.jp/fs/1/4/1/8/3/3/_/__8____________.pdf": "https://web.archive.org/web/20260713114137/https://www.city.minami-alps.yamanashi.jp/fs/1/4/1/8/3/3/_/__8____________.pdf",
   "https://www.city.numazu.shizuoka.jp/shisei/gyozaisei/finance/yosan2025/gaiyousho/index.htm": "https://web.archive.org/web/20260713094129/https://www.city.numazu.shizuoka.jp/shisei/gyozaisei/finance/yosan2025/gaiyousho/index.htm",
   "https://www.city.numazu.shizuoka.jp/shisei/gyozaisei/finance/yosan2025/gaiyousho/pdf/s-1.pdf": "https://web.archive.org/web/20260713094056/https://www.city.numazu.shizuoka.jp/shisei/gyozaisei/finance/yosan2025/gaiyousho/pdf/s-1.pdf",
   "https://www.soumu.go.jp/iken/zaisei/r02_shichouson.html": "https://web.archive.org/web/20260301074317/https://www.soumu.go.jp/iken/zaisei/r02_shichouson.html",

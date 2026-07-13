@@ -409,14 +409,40 @@ export default function BudgetTrace() {
     totalFmt: fmtV(total), sub: subV(total), count: String(ps.length), open: openTheme(goal.name),
   }));
 
-  // --- 注目の事業（予算額上位・実データ） ---
-  const featured = [...KOFU_PROJECTS]
+  // --- 注目の事業（予算額上位・実データ）。full=甲府 / budget=類似市（muniBudget.projects）---
+  const projectsForDisplay: {
+    name: string; kan: string | null; kubun: string | null;
+    amountOku: number; prevAmountOku?: number | null; description: string;
+    shisaku?: string; refLabel?: string; refLocalUrl?: string;
+  }[] = isBudget ? (muniBudget!.projects ?? []) : isFull ? KOFU_PROJECTS : [];
+  const featured = [...projectsForDisplay]
     .sort((a, b) => b.amountOku - a.amountOku)
     .slice(0, 3)
     .map((p) => ({
-      name: p.name, kanPath: p.kan ?? p.shisaku, kubun: p.kubun ?? "",
+      name: p.name, kanPath: p.kan ?? p.shisaku ?? "", kubun: p.kubun ?? "",
       budgetFmt: fmtV(p.amountOku), sub: subV(p.amountOku), desc: p.description,
     }));
+  // budget 階層の「主な事業一覧」（款のない和泉も含め上位を一覧。full は既存の款ドリル/テーマで見せる）
+  const budgetProjectRows = isBudget
+    ? [...projectsForDisplay]
+        .sort((a, b) => b.amountOku - a.amountOku)
+        .slice(0, 20)
+        .map((p) => ({
+          name: p.name,
+          kan: p.kan ?? "",
+          kubun: p.kubun ?? "",
+          amountFmt: fmtV(p.amountOku),
+          sub: p.prevAmountOku != null ? `前年 ${fmtOku(p.prevAmountOku)}` : subV(p.amountOku),
+          desc: p.description,
+          refLabel: p.refLabel ?? "",
+          refOpen: p.refLocalUrl
+            ? () => openViewer({
+                url: p.refLocalUrl!, title: muniBudget!.sourceTitle, sub: p.refLabel ?? "主な事業",
+                originUrl: muniBudget!.originUrl, archiveUrl: muniBudget!.sourceUrl,
+              })
+            : () => {},
+        }))
+    : [];
 
   // --- drill（款 → 内訳/主な事業） ---
   const side = s.drillSide;
@@ -799,7 +825,18 @@ export default function BudgetTrace() {
           ? "対前年度（補正後予算比）"
           : "対前年度",
     // 政策テーマ・注目の事業は主な事業一覧が要る full 専用
-    dashPanels, themeStrip: isFull ? themeStrip : [], featured: isFull ? featured : [],
+    // 注目の事業は full（甲府）＋budget（豊川・和泉）で出す。政策テーマは full 専用
+    dashPanels, themeStrip: isFull ? themeStrip : [], featured: isFull || isBudget ? featured : [],
+    // budget 階層の主な事業一覧（款のない和泉も含む）。full は款ドリル/テーマで見せる
+    hasBudgetProjects: isBudget && budgetProjectRows.length > 0,
+    budgetProjectRows,
+    budgetProjectsSourceLabel: isBudget ? `出典：${muniBudget!.sourceTitle}` : "",
+    budgetProjectsSourceOpen: isBudget
+      ? () => openViewer({
+          url: muniBudget!.sourceLocalUrl, title: muniBudget!.sourceTitle,
+          sub: "主な事業", originUrl: muniBudget!.originUrl, archiveUrl: muniBudget!.sourceUrl,
+        })
+      : () => {},
     goThemes: () => nav({ screen: "themes" }),
     drillSideTabs, drillCrumbs, drillLevelLabel: depth === 0 ? "款" : "内訳",
     drillTitle: nodeName, drillTotalFmt: fmtOku(nodeTotal), drillDonutBg: donutBg(donutItems, hoverFor("drill")),
@@ -807,7 +844,7 @@ export default function BudgetTrace() {
     // 款詳細の項テーブル: 表示中の予算年度と一致する統計書データ（当初→最終→決算）が
     // あればそれを出す。無い年度（R7・R8 = 決算前）は従来どおり R6 決算の項内訳を参考表示
     ...(() => {
-      const outturn = isDecision ? undefined : KOFU_OUTTURN_YEARS.find((y) => y.fy === budget.fy);
+      const outturn = isFull ? KOFU_OUTTURN_YEARS.find((y) => y.fy === budget.fy) : undefined;
       const oRows = side === "exp" && depth === 1 && outturn
         ? outturn.expenditure.filter((r) => r.kan === nodeName && r.kou != null)
         : [];
@@ -844,7 +881,7 @@ export default function BudgetTrace() {
     })(),
     // R8 予算の項以下は原典未公開のため、R6 決算の項内訳を年度明示で参考表示する
     ...(() => {
-      const rows = !isDecision && side === "exp" && depth === 1 ? KOFU_R6_DETAIL.byKan[nodeName] ?? [] : [];
+      const rows = isFull && side === "exp" && depth === 1 ? KOFU_R6_DETAIL.byKan[nodeName] ?? [] : [];
       const kanTotal = rows.reduce((a, r) => a + r.v, 0);
       return {
         hasR6Detail: rows.length > 0,
@@ -869,49 +906,60 @@ export default function BudgetTrace() {
       };
     })(),
     drillNoChildrenNote: depth > 0 && nodeItems.length === 0,
-    // 予算資料「主な事業一覧」の実データ（款レベル・歳出のみ。full=甲府のみ）
+    // 款ドリルの「この款の主な事業」（歳出・款レベル）。full=甲府 / budget=豊川（款あり）。
+    // 和泉は款が取れない様式なので款ドリルには出さず、ダッシュボードの主な事業一覧で見せる
     ...(() => {
-      const rows = isFull && side === "exp" && depth === 1 ? KOFU_PROJECTS.filter((p) => p.kan === nodeName) : [];
-      // 事業単位のエビデンスで説明できる額と、款のうち事業掲載が無い残額（詳細不明）
+      const rows: any[] =
+        side === "exp" && depth === 1
+          ? isFull
+            ? KOFU_PROJECTS.filter((p) => p.kan === nodeName)
+            : isBudget
+              ? muniBudget!.projects.filter((p) => p.kan === nodeName)
+              : []
+          : [];
       const covered = rows.reduce((a, p) => a + p.amountOku, 0);
       const uncovered = Math.max(0, nodeTotal - covered);
+      const projTitle = isBudget ? muniBudget!.sourceTitle : KOFU_PROJECTS_SOURCE.title;
       return {
         hasRealProjects: rows.length > 0,
         realProjects: rows.map((p) => ({
-          evaluation: evalFor(p),
-          no: p.no, kubun: p.kubun ?? "", name: p.name,
+          evaluation: isFull ? evalFor(p) : null,
+          no: p.no ?? null, kubun: p.kubun ?? "", name: p.name,
           bookName: p.budgetBookName ? `（${p.budgetBookName}）` : "",
-          amountFmt: fmtOku(p.amountOku), desc: p.description,
-          goal: p.basicGoal, shisaku: p.shisaku,
-          refLabel: p.refLabel, refTitle: p.ref, refUrl: p.refLocalUrl,
+          amountFmt: fmtOku(p.amountOku),
+          desc: p.description ?? "",
+          goal: p.basicGoal ?? "", shisaku: p.shisaku ?? "",
+          refLabel: p.refLabel, refTitle: p.ref ?? "", refUrl: p.refLocalUrl,
           refOpen: () => openViewer({
-            url: p.refLocalUrl, title: KOFU_PROJECTS_SOURCE.title, sub: `主な事業一覧 ${p.refLabel}`,
-            originUrl: KOFU_PROJECTS_SOURCE.originUrl, archiveUrl: p.refUrl,
+            url: p.refLocalUrl, title: projTitle, sub: `主な事業 ${p.refLabel}`,
+            originUrl: isBudget ? muniBudget!.originUrl : KOFU_PROJECTS_SOURCE.originUrl,
+            archiveUrl: isBudget ? muniBudget!.sourceUrl : p.refUrl,
           }),
         })),
         realProjectsCoveredFmt: fmtOku(covered),
         realProjectsCoveredPct: nodeTotal > 0 ? ((covered / nodeTotal) * 100).toFixed(1) : "0",
         realProjectsCoveredBarW: nodeTotal > 0 ? Math.min(100, (covered / nodeTotal) * 100).toFixed(1) : "0",
         realProjectsUncoveredFmt: fmtOku(uncovered),
-        // 詳細不明分（事業掲載なし）のその場リクエスト（文脈をプリフィル）
-        uncoveredRequestUrl: uncovered > 0.005
-          ? D.buildRequestUrl(
-              `予算書 本編（款項目節・令和${budget.fy.slice(1)}年度）`,
-              `款別ドリルダウンの「${nodeName}」で、主な事業一覧に掲載のない ${fmtOku(uncovered)} の内訳（項・目・節、事業別）を知りたい`,
-            )
-          : "",
-        realProjectsSourceUrl: KOFU_PROJECTS_SOURCE.localUrl,
-        realProjectsSourceLabel: `出典：${KOFU_PROJECTS_SOURCE.title} 主な事業一覧 ${KOFU_PROJECTS_SOURCE.pagesLabel}`,
+        uncoveredRequestUrl:
+          isFull && uncovered > 0.005
+            ? D.buildRequestUrl(
+                `予算書 本編（款項目節・令和${budget.fy.slice(1)}年度）`,
+                `款別ドリルダウンの「${nodeName}」で、主な事業一覧に掲載のない ${fmtOku(uncovered)} の内訳（項・目・節、事業別）を知りたい`,
+              )
+            : "",
+        realProjectsSourceUrl: isBudget ? muniBudget!.sourceLocalUrl : KOFU_PROJECTS_SOURCE.localUrl,
+        realProjectsSourceLabel: `出典：${projTitle} 主な事業`,
         realProjectsSourceOpen: () => openViewer({
-          url: KOFU_PROJECTS_SOURCE.localUrl, title: KOFU_PROJECTS_SOURCE.title,
-          sub: `主な事業一覧 ${KOFU_PROJECTS_SOURCE.pagesLabel}`,
-          originUrl: KOFU_PROJECTS_SOURCE.originUrl, archiveUrl: KOFU_PROJECTS_SOURCE.url,
+          url: isBudget ? muniBudget!.sourceLocalUrl : KOFU_PROJECTS_SOURCE.localUrl,
+          title: projTitle, sub: "主な事業",
+          originUrl: isBudget ? muniBudget!.originUrl : KOFU_PROJECTS_SOURCE.originUrl,
+          archiveUrl: isBudget ? muniBudget!.sourceUrl : KOFU_PROJECTS_SOURCE.url,
         }),
       };
     })(),
     // 全体のエビデンス充足度（一般会計の款に属する主な事業の合計 vs 歳出総額）
     ...(() => {
-      const general = isDecision ? [] : KOFU_PROJECTS.filter((p) => budget.expenditure.some((k) => k.name === p.kan));
+      const general = isFull ? KOFU_PROJECTS.filter((p) => budget.expenditure.some((k) => k.name === p.kan)) : [];
       const covered = general.reduce((a, p) => a + p.amountOku, 0);
       return {
         hasProjCoverage: general.length > 0,
@@ -973,11 +1021,17 @@ export default function BudgetTrace() {
     similarRows: SIMILAR.map((r) => {
       const cols = [D.PALETTE[0], D.PALETTE[1], D.PALETTE[2], D.PALETTE[4], "#C6D2DA"];
       const sHover = hoverFor("sim-" + r.name);
+      // 各市の団体コードがあればその市のダッシュボードへ飛べる（甲府=full／4市=budget）
+      const prefOf = r.muniCode === "192015" ? "山梨県" : D.MUNI_BUDGETS[r.muniCode ?? ""]?.prefName ?? "";
       return {
         name: r.name, pop: r.pop, totalFmt: fmtOku(r.total), perCap: r.perCap,
         ref: r.ref, refLabel: r.refLabel,
         bg: r.self ? "#E3F4FC" : "transparent", fw: r.self ? "700" : "500",
         badge: r.self ? "このまち" : "",
+        clickable: !!r.muniCode && !r.self,
+        open: r.muniCode && !r.self
+          ? () => nav({ screen: "dash", muni: r.name, muniCode: r.muniCode!, pref: prefOf, drillPath: [], theme: null, budgetFy: undefined })
+          : () => {},
         segs: r.mix.map((p, i) => ({ w: String(p), sw: sHover == null || sHover === i ? cols[i] : fadeColor(cols[i]), tipMove: mkSegTip(`${r.name}・${SIM_MIX_COLS[i]}`, p + "%", "歳出構成比", cols[i], { key: "sim-" + r.name, idx: i }) })),
       };
     }),

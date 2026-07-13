@@ -171,6 +171,8 @@ export const budgetProjectFactSchema = z.object({
   budgetBookName: z.string().nullable(),
   /** 予算額（千円） */
   amount: z.number(),
+  /** 前年度予算額（千円）。豊川の事業別表など事業単位で前年度が載る様式のみ */
+  prevAmount: z.number().optional(),
   /** 内容列の全文（箇条書き形式では ★/◆ の補足行。無い事業は空文字） */
   description: z.string(),
   /** 基本目標（ひと/まち/魅力、基本目標1〜4、基本構想の推進。複数は「・」連結） */

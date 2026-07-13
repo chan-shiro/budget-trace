@@ -5,8 +5,15 @@
       "filename": "02_R8_ippan.pdf",
       "sha256": "9131903e5be481cc1c54d6cfd5d1702a37aeb9d719011bfdf247821f8c37933e",
       "bytes": 1954711,
-      "fetchedAt": "2026-07-13T09:34:44.990Z",
+      "fetchedAt": "2026-07-13T12:51:05.120Z",
       "fetchedFrom": "https://www.city.osaka-izumi.lg.jp/material/files/group/18/02_R8_ippan.pdf"
+    },
+    {
+      "filename": "00_08_gaiyou.pdf",
+      "sha256": "98114b82b309a131d465f3c7f639ff83d2c3aaf58444bfa99ab02aac0183df7d",
+      "bytes": 2928898,
+      "fetchedAt": "2026-07-13T12:51:06.090Z",
+      "fetchedFrom": "https://www.city.osaka-izumi.lg.jp/material/files/group/18/00_08_gaiyou.pdf"
     }
   ]
 }

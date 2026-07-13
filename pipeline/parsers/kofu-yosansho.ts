@@ -26,10 +26,13 @@ interface Options {
   /** 分冊形式: 主な事業のファイル名 */
   projectsFile?: string;
   /**
-   * 主な事業のレイアウト。"table"（R6〜: No/款/内容の表）または
-   * "bullets"（R2・R3: ●事業名…金額 の箇条書き。款・連番なし）
+   * 主な事業のレイアウト。
+   * - "table"（甲府 R6〜: No/款/内容の座標ベース表）
+   * - "bullets"（甲府 R2・R3: ●事業名…金額 の箇条書き。款・連番なし）
+   * - "coded-sections"（豊川: N款 費目 / 【課】/ n 事業名［款項目事業コード］当年度 前年度）
+   * - "marked-bullets"（和泉: 拡/新 ◎ 事業名 … 予算額 千円 の重点事業リスト。款・前年度なし）
    */
-  projectFormat?: "table" | "bullets";
+  projectFormat?: "table" | "bullets" | "coded-sections" | "marked-bullets";
   /**
    * 表形式の列境界（X座標）。PDF の座標系が年度で違う場合に上書きする
    * （R5 の WARP 回収版は全体に右寄りのスケール）。省略時は R8 実測値
@@ -548,6 +551,98 @@ function parseProjectBullets(
   return drafts.map(({ fact, desc }) => ({ ...fact, description: desc.join("／") }));
 }
 
+// ---- 主な事業（行ベース）: 豊川「事業別・コード付」 ---------------------------
+// N款 費目 当年度 前年度 → 款を追跡。【課名】は課見出し。
+// n （新）事業名［款項目事業コード］ 当年度(千円) 前年度(千円) → 事業。以降の無印行は説明。
+function parseProjectsCodedSections(
+  filePath: string,
+  filename: string,
+  from: number,
+  to: number,
+): BudgetProjectFact[] {
+  const facts: BudgetProjectFact[] = [];
+  let currentKan = "";
+  let last: BudgetProjectFact | null = null;
+  for (let page = from; page <= to; page++) {
+    for (const rawOrig of pdfPageText(filePath, page).split("\n")) {
+      const raw = toHalfDigits(rawOrig);
+      const compact = raw.replace(/[\s　]/g, "");
+      if (compact === "") continue;
+      // 款見出し「N款 費目 当年度 前年度」
+      const kanM = raw.match(/^\s*(\d+)款\s+(.+?)\s+[\d,]+\s+[\d,]+\s*$/);
+      if (kanM) {
+        currentKan = kanM[2]!.replace(/[\s　]/g, "");
+        last = null;
+        continue;
+      }
+      // 課見出し【…】
+      if (/^\s*【.+】/.test(raw)) {
+        last = null;
+        continue;
+      }
+      // 事業「n （新）事業名［code］（［code2］…） 当年度 前年度」。複合事業は［…］が複数続く
+      const projM = raw.match(/^\s*(\d+)\s+(（新）|（拡）)?\s*(.+?)(?:［[^］]*］)+\s+([\d,]+)\s+([\d,]+)/);
+      if (projM) {
+        const [, _no, mark, nameRaw, amt, prev] = projM;
+        const kubun = mark?.includes("新") ? "新規" : mark?.includes("拡") ? "拡充" : null;
+        last = {
+          kan: currentKan || null,
+          // 豊川の番号は課内連番（全体の掲載番号ではない）ので掲載番号としては持たない
+          no: null,
+          kubun,
+          name: nameRaw!.replace(/[\s　]/g, ""),
+          budgetBookName: null,
+          amount: toAmount(amt!),
+          ...(prev ? { prevAmount: toAmount(prev) } : {}),
+          description: "",
+          basicGoal: "",
+          shisaku: "",
+          locator: { file: filename, page },
+        };
+        facts.push(last);
+        continue;
+      }
+      // 説明列は多段組で -layout が列を潰して重複・内数混入するため採らない（事業名・
+      // 款・当年度・前年度の確実な値だけを収録する）。last は継続チェック用に保持
+      void last;
+    }
+  }
+  if (facts.length === 0) throw new Error(`${filename}: 主な事業（coded-sections）が1件も抽出できませんでした`);
+  return facts;
+}
+
+// ---- 主な事業（行ベース）: 和泉「拡/新 ◎ 事業名 … 予算額 千円」 -----------------
+// 款・前年度・連番なしの重点事業リスト。◎ 行だけを拾う。
+function parseProjectsMarkedBullets(
+  filePath: string,
+  filename: string,
+  from: number,
+  to: number,
+): BudgetProjectFact[] {
+  const facts: BudgetProjectFact[] = [];
+  for (let page = from; page <= to; page++) {
+    for (const raw of pdfPageText(filePath, page).split("\n")) {
+      const m = raw.match(/^\s*(拡|新)?\s*◎\s*(.+?)\s+([\d,]+)\s*千円/);
+      if (!m) continue;
+      const [, mark, nameRaw, amt] = m;
+      facts.push({
+        kan: null,
+        no: null,
+        kubun: mark === "新" ? "新規" : mark === "拡" ? "拡充" : null,
+        name: nameRaw!.replace(/[\s　]/g, ""),
+        budgetBookName: null,
+        amount: toAmount(amt!),
+        description: "",
+        basicGoal: "",
+        shisaku: "",
+        locator: { file: filename, page },
+      });
+    }
+  }
+  if (facts.length === 0) throw new Error(`${filename}: 主な事業（marked-bullets）が1件も抽出できませんでした`);
+  return facts;
+}
+
 export function parseKofuYosansho(
   files: { path: string; filename: string }[],
   source: SourceEntry,
@@ -582,10 +677,15 @@ export function parseKofuYosansho(
   if (rev.prevBasis !== exp.prevBasis) {
     throw new Error(`${source.id}: 歳入と歳出で前年度列の基準が違います（${rev.prevBasis} / ${exp.prevBasis}）`);
   }
+  const projFmt = opts.projectFormat ?? "table";
   const projects = opts.projectPages
-    ? (opts.projectFormat ?? "table") === "bullets"
+    ? projFmt === "bullets"
       ? parseProjectBullets(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
-      : parseProjectPages(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to, opts.projectColumns, opts.projectRowBanding ?? "midpoint")
+      : projFmt === "coded-sections"
+        ? parseProjectsCodedSections(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
+        : projFmt === "marked-bullets"
+          ? parseProjectsMarkedBullets(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
+          : parseProjectPages(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to, opts.projectColumns, opts.projectRowBanding ?? "midpoint")
     : undefined;
 
   return {

@@ -265,7 +265,8 @@ export const SOURCES: SourceEntry[] = [
     scope: "豊川市（一般会計・団体コード232076）",
     license: "豊川市ウェブサイト掲載資料（利用条件は同サイト参照）",
     parser: "kofu-yosansho",
-    // 見出し・合計ラベルが甲府と違う（見出し「歳入予算」、合計行「合計」）。款番号は全角
+    // 見出し・合計ラベルが甲府と違う（見出し「歳入予算」、合計行「合計」）。款番号は全角。
+    // 主な事業は同一PDFの p.11-20（款見出し＋【課】＋事業［款項目事業コード］＋当年度/前年度）
     parserOptions: {
       revenuePage: 26,
       expenditurePage: 29,
@@ -273,6 +274,8 @@ export const SOURCES: SourceEntry[] = [
       expenditureHeading: "歳出予算",
       revenueTotalLabel: "合計",
       expenditureTotalLabel: "合計",
+      projectPages: { from: 11, to: 20 },
+      projectFormat: "coded-sections",
     },
   },
   {
@@ -328,7 +331,11 @@ export const SOURCES: SourceEntry[] = [
     title: "令和8年度 和泉市当初予算（一般会計事項別明細書 総括）",
     publisher: "和泉市",
     url: null,
-    urls: ["https://www.city.osaka-izumi.lg.jp/material/files/group/18/02_R8_ippan.pdf"],
+    // 款別＝事項別明細書、主な事業＝予算の概要（別ファイル）の分冊
+    urls: [
+      "https://www.city.osaka-izumi.lg.jp/material/files/group/18/02_R8_ippan.pdf",
+      "https://www.city.osaka-izumi.lg.jp/material/files/group/18/00_08_gaiyou.pdf",
+    ],
     landingPage: "https://www.city.osaka-izumi.lg.jp/kakukano/soumubu/zaiseika/gyoumu/yosan.html",
     kind: "pdf",
     fiscalYear: "R8",
@@ -336,10 +343,15 @@ export const SOURCES: SourceEntry[] = [
     license: "和泉市ウェブサイト掲載資料（利用条件は同サイト参照）",
     parser: "kofu-yosansho",
     parserOptions: {
+      kanFile: "02_R8_ippan.pdf",
       revenuePage: 5,
       expenditurePage: 6,
       revenueHeading: "歳入",
       expenditureHeading: "歳出",
+      // 主な事業＝概要 p.2-3 の重点事業（拡/新 ◎ 事業名 … 金額 千円）
+      projectsFile: "00_08_gaiyou.pdf",
+      projectPages: { from: 2, to: 3 },
+      projectFormat: "marked-bullets",
     },
   },
   // ── budget 階層の拡大: 山梨県内の市（甲府に次ぐ規模）の当初予算 ──────────────

@@ -85,6 +85,8 @@ function validateBudgetBook(d: BudgetBookDoc): void {
     const kanBudget = new Map(
       d.facts.filter((f) => f.side === "expenditure").map((f) => [f.kanName, f.amount]),
     );
+    // 施策・基本目標は甲府の様式のみ持つ。1件も無い様式（豊川・和泉）では欠落を警告しない
+    const usesStrategy = d.projects.some((p) => p.shisaku || p.basicGoal);
     const seenNo = new Set<number>();
     let prevNo = 0;
     for (const p of d.projects) {
@@ -108,7 +110,7 @@ function validateBudgetBook(d: BudgetBookDoc): void {
         if (kb == null && !/会計$/.test(p.kan)) {
           issues.push({ level: "error", message: `${tag}: 款「${p.kan}」が歳出款別一覧にありません` });
         }
-        if (!p.shisaku) issues.push({ level: "warning", message: `${tag}: 施策が空` });
+        if (usesStrategy && !p.shisaku) issues.push({ level: "warning", message: `${tag}: 施策が空` });
       }
       // R8〜: 第七次総合計画（ひと/まち/魅力）。R6・R7: 第六次総合計画（基本目標1〜4・基本構想の推進）
       const goalToken = "(ひと|まち|魅力|基本目標[1-4１-４]|基本構想の推進)";
