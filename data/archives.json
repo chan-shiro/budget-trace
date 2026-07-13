@@ -845,6 +845,40 @@
       "waybackTimestamp": "20260712084335",
       "checkedAt": "2026-07-12T09:19:07.976Z",
       "sha256Match": true
+    },
+    {
+      "sourceId": "toyokawa-yosansho-r7",
+      "url": "https://www.city.toyokawa.lg.jp/material/files/group/10/R7_yosann.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260208071246/https://www.city.toyokawa.lg.jp/material/files/group/10/R7_yosann.pdf",
+      "waybackTimestamp": "20260208071246",
+      "checkedAt": "2026-07-13T03:36:18.099Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "toyokawa-yosansho-r7",
+      "url": "https://www.city.toyokawa.lg.jp/soshiki/zaimu/zaisei/2/1/1/3/22950.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260713033630/https://www.city.toyokawa.lg.jp/soshiki/zaimu/zaisei/2/1/1/3/22950.html",
+      "waybackTimestamp": "20260713033630",
+      "checkedAt": "2026-07-13T03:37:09.585Z"
+    },
+    {
+      "sourceId": "yamaguchi-yosansho-r7",
+      "url": "https://www.city.yamaguchi.lg.jp/site/shiseijoho/171302.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260420011714/https://www.city.yamaguchi.lg.jp/site/shiseijoho/171302.html",
+      "waybackTimestamp": "20260420011714",
+      "checkedAt": "2026-07-13T03:37:50.570Z"
+    },
+    {
+      "sourceId": "yamaguchi-yosansho-r7",
+      "url": "https://www.city.yamaguchi.lg.jp/uploaded/attachment/105329.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250815060151/https://www.city.yamaguchi.lg.jp/uploaded/attachment/105329.pdf",
+      "waybackTimestamp": "20250815060151",
+      "checkedAt": "2026-07-13T03:37:47.550Z",
+      "sha256Match": false
     }
   ]
 }

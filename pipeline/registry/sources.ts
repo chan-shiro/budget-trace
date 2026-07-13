@@ -199,6 +199,59 @@ export const SOURCES: SourceEntry[] = [
       projectPages: { from: 1, to: 3 },
     },
   },
+  // ── 縦掘りパイロット: 甲府の類似4市の当初予算資料（款別歳入歳出）──────────────
+  // 全4市ともテキスト層つき PDF で、款別歳入歳出（前年度比つき）が pdftotext -layout で
+  // 決定的にパースできることを発見時に確認済み（docs/data-sources.md §7）。
+  // パーサは kofu-yosansho を多自治体対応に一般化して共用する（見出し・合計ラベル・
+  // 負号・款番号有無を parserOptions で吸収）。まず様式が甲府に最も近い豊川・山口から収録。
+  {
+    // 豊川市（愛知県・団体コード 232076）。予算冊子「令和7年度 豊川市予算」1冊に
+    // 第2表=一般会計歳入予算（科目別・p.26）・第5表=歳出予算（目的別・p.29）が
+    // 前年度比つきで載る（Excel→PDF 出力・テキスト層）。負号は △。単位は千円。
+    id: "toyokawa-yosansho-r7",
+    title: "令和7年度 豊川市予算（款別歳入歳出）",
+    publisher: "豊川市",
+    url: null,
+    urls: ["https://www.city.toyokawa.lg.jp/material/files/group/10/R7_yosann.pdf"],
+    landingPage: "https://www.city.toyokawa.lg.jp/soshiki/zaimu/zaisei/2/1/1/3/22950.html",
+    kind: "pdf",
+    fiscalYear: "R7",
+    scope: "豊川市（一般会計・団体コード232076）",
+    license: "豊川市ウェブサイト掲載資料（利用条件は同サイト参照）",
+    parser: "kofu-yosansho",
+    // 見出し・合計ラベルが甲府と違う（見出し「歳入予算」、合計行「合計」）。款番号は全角
+    parserOptions: {
+      revenuePage: 26,
+      expenditurePage: 29,
+      revenueHeading: "歳入予算",
+      expenditureHeading: "歳出予算",
+      revenueTotalLabel: "合計",
+      expenditureTotalLabel: "合計",
+    },
+  },
+  {
+    // 山口市（山口県・団体コード 352012）。「令和7年度 当初予算資料（全体版）」巻末の
+    // 資料節に (1)一般会計歳入（款別・p.158）・(2)歳出（目的別・p.159）が前年度比つきで載る。
+    // テキスト層つき PDF（179p・pdftotext -layout でパース可）。単位は千円。
+    id: "yamaguchi-yosansho-r7",
+    title: "令和7年度 山口市当初予算資料（款別歳入歳出）",
+    publisher: "山口市",
+    url: null,
+    urls: ["https://www.city.yamaguchi.lg.jp/uploaded/attachment/105329.pdf"],
+    landingPage: "https://www.city.yamaguchi.lg.jp/site/shiseijoho/171302.html",
+    kind: "pdf",
+    fiscalYear: "R7",
+    scope: "山口市（一般会計・団体コード352012）",
+    license: "山口市ウェブサイト掲載資料（利用条件は同サイト参照）",
+    parser: "kofu-yosansho",
+    // 印字ページ番号(158/159)と PDF 物理ページ(160/161)がずれる。○接頭辞・負号▲
+    parserOptions: {
+      revenuePage: 160,
+      expenditurePage: 161,
+      revenueHeading: "一般会計歳入",
+      expenditureHeading: "一般会計歳出",
+    },
+  },
   // 甲府市の決算状況「収入支出詳細」HTML ページ。款別の予算現額・収入/支出済額・
   // 収入率/執行率（出納整理後の**確定値**）＋市税の内訳（予算現額のみ）。
   // 過去の執行を確定値で辿る本命資料。R3 は年度ページ・詳細ページとも市サイトから

@@ -1,13 +1,15 @@
-// 甲府市「当初予算（案）資料」PDF パーサ — 款別一覧（歳入・歳出）
+// 当初予算資料 PDF パーサ — 款別一覧（歳入・歳出）
 //
-// 対象は「一般会計歳入予算款別一覧」「一般会計歳出予算款別一覧」のページ。
+// 甲府市の「歳入予算款別一覧」「歳出予算款別一覧」を起点に、類似市（豊川・山口ほか）の
+// 「歳入予算（科目別）」「一般会計歳入（款別）」等にも対応する多自治体パーサ。
 // PDF にテキスト層があるため pdftotext -layout（poppler）で決定的に抽出する。
-// LLM 併用が要る「主な事業一覧」ページは別パーサとして今後追加する。
 //
 // 行の形式（-layout 出力）:
 //   "  3   民           生           費   38,933,883   37,479,942   1,453,941   42.42   3.88"
-// 款名は字間スペース入り。数値トークンは [款番号, 当年度, 前年度, 増減額, 構成比, 増減率] の順で、
-// 増減額が空欄の行（災害復旧費・予備費など）もある。先頭3トークンだけを使う。
+// 款名は字間スペース入り。数値トークンは自治体で並びが違うが、**小数（構成比・増減率）を
+// 除いた整数列は必ず [当年度, 前年度, 増減額] の順**になるため、先頭2整数（当年度・前年度）を使う。
+// 自治体差は parserOptions で吸収する: 見出し語・合計ラベル（甲府=「歳入合計」/豊川=「合計」）、
+// 款番号の全角（豊川）・○接頭辞（山口）・負号 △/▲。
 import { execFileSync } from "node:child_process";
 import type { BudgetBookDoc, BudgetLineFact, BudgetProjectFact, SourceEntry } from "../types";
 
@@ -38,12 +40,29 @@ interface Options {
    * "anchorTop"（アンカーが行上端寄りにある R5 の WARP 回収版）
    */
   projectRowBanding?: "midpoint" | "anchorTop";
+  /**
+   * 款別一覧ページの見出し語（空白除去で includes 判定するページ確認用）。
+   * 既定は甲府の「歳入予算款別一覧」「歳出予算款別一覧」。
+   * 豊川=「歳入予算」「歳出予算」、山口=「一般会計歳入」「一般会計歳出」など。
+   */
+  revenueHeading?: string;
+  expenditureHeading?: string;
+  /** 合計行のラベル。既定「歳入合計」「歳出合計」。豊川は歳入歳出とも「合計」 */
+  revenueTotalLabel?: string;
+  expenditureTotalLabel?: string;
 }
 
-/** "1,234" / "△1,234" → number。構成比などの小数は対象外（呼び出し側で弾く） */
+/** 全角数字 → 半角（豊川の款番号が全角） */
+const toHalfDigits = (s: string): string =>
+  s.replace(/[０-９]/g, (d) => String.fromCharCode(d.charCodeAt(0) - 0xfee0));
+
+/** 金額トークンの正規表現（負号 △/▲ を許容） */
+const AMOUNT_RE = /[△▲]?[\d,]+(?:\.\d+)?/g;
+
+/** "1,234" / "△1,234" / "▲1,234" → number。構成比などの小数は対象外（呼び出し側で弾く） */
 function toAmount(token: string): number {
-  const neg = token.startsWith("△") || token.startsWith("-");
-  const n = Number(token.replace(/[△\-,]/g, ""));
+  const neg = /^[△▲-]/.test(token);
+  const n = Number(token.replace(/[△▲\-,]/g, ""));
   if (!Number.isFinite(n)) throw new Error(`金額を解釈できません: ${token}`);
   return neg ? -n : n;
 }
@@ -81,15 +100,23 @@ function parseKanPage(
   filename: string,
   page: number,
   side: "revenue" | "expenditure",
+  opts: Options = {},
 ): PageResult {
   const text = pdfPageText(filePath, page);
-  if (!text.replace(/\s/g, "").includes(side === "revenue" ? "歳入予算款別一覧" : "歳出予算款別一覧")) {
-    const expectTitle = side === "revenue" ? "歳入予算款別一覧" : "歳出予算款別一覧";
+  const heading =
+    side === "revenue"
+      ? opts.revenueHeading ?? "歳入予算款別一覧"
+      : opts.expenditureHeading ?? "歳出予算款別一覧";
+  const headingCompact = heading.replace(/\s/g, "");
+  if (!text.replace(/\s/g, "").includes(headingCompact)) {
     throw new Error(
-      `${filename} p.${page}: 「${expectTitle}」の見出しがありません。ページ構成が変わった可能性があるので parserOptions のページ番号を確認してください。`,
+      `${filename} p.${page}: 「${heading}」の見出しがありません。ページ構成が変わった可能性があるので parserOptions のページ番号・見出し語を確認してください。`,
     );
   }
-  const totalLabel = side === "revenue" ? "歳入合計" : "歳出合計";
+  const totalLabel =
+    side === "revenue"
+      ? opts.revenueTotalLabel ?? "歳入合計"
+      : opts.expenditureTotalLabel ?? "歳出合計";
   const prevBasis: "当初" | "補正後" = text.replace(/\s/g, "").includes("補正後予算額") ? "補正後" : "当初";
   const locator = { file: filename, page };
 
@@ -122,36 +149,45 @@ function parseKanPage(
     reset();
   };
 
-  for (const raw of text.split("\n")) {
+  // 款名の断片（折返し）に日本語（漢字・かな）が含まれるか。列見出し「Ａ ％ Ｂ」等の
+  // 非日本語ノイズを款名に混ぜないためのガード
+  const hasCJK = (s: string) => /[぀-ヿ㐀-鿿々〆ヶ]/.test(s);
+
+  for (const rawOrig of text.split("\n")) {
+    const raw = toHalfDigits(rawOrig); // 全角款番号（豊川）を半角化
     const compact = raw.replace(/[\s　]/g, "");
     if (compact === "") {
       reset(); // 行間の空行で断片を破棄（款は空行を挟まず連続する）
       continue;
     }
+    if (headingCompact && compact.includes(headingCompact)) continue; // 見出し行
     if (compact.includes(totalLabel)) {
-      const tokens = raw.match(/△?[\d,]+(?:\.\d+)?/g) ?? [];
-      const [t0, t1] = tokens;
-      if (t0 == null || t1 == null || t0.includes(".")) {
+      // 合計行。構成比（小数）が金額の間に入る様式（豊川・山口）に対応するため
+      // 小数を除いた整数列 [当年度, 前年度] を採る
+      const ints = (raw.match(AMOUNT_RE) ?? []).filter((t) => !t.includes("."));
+      const [t0, t1] = ints;
+      if (t0 == null) {
         throw new Error(`${filename} p.${page}: 合計行を解釈できません: ${raw.trim()}`);
       }
       total = toAmount(t0);
-      prevTotal = t1.includes(".") ? null : toAmount(t1);
+      prevTotal = t1 != null ? toAmount(t1) : null;
       reset();
       continue;
     }
     if (compact.startsWith("※") && compact.includes("予算")) prevNote = compact.slice(1); // 前年列の注記
     if (KAN_HEADER_RE.test(compact)) continue; // 表ヘッダ・タイトル・注記
 
-    // 款番号の単独行（折返し款の中間行）
-    const bare = compact.match(/^(\d+)$/);
+    // 款番号の単独行（折返し款の中間行）。○◎●の付番マーカーを許容
+    const bare = compact.match(/^[○◎●]*(\d+)$/);
     if (bare) {
       if (pendNo == null) pendNo = Number(bare[1]);
       continue;
     }
 
-    const lead = raw.match(/^\s*(\d+)\s/); // 行頭の款番号
+    // 行頭の款番号（○ 2 のような付番マーカー接頭辞を許容）
+    const lead = raw.match(/^\s*[○◎●]*\s*(\d+)\s/);
     const rest = lead ? raw.slice(raw.indexOf(lead[1]!) + lead[1]!.length) : raw;
-    const tokens = rest.match(/△?[\d,]+(?:\.\d+)?/g) ?? [];
+    const tokens = rest.match(AMOUNT_RE) ?? [];
     const ints = tokens.filter((t) => !t.includes("."));
     const namePart = (tokens[0] != null ? rest.slice(0, rest.indexOf(tokens[0])) : rest)
       .replace(/[\s　]/g, "");
@@ -160,8 +196,8 @@ function parseKanPage(
       // 完結した款行（従来形式）。直前の折返し断片があれば款名の先頭に足す
       emit(Number(lead[1]), pendName + namePart, ints, raw);
     } else if (tokens.length === 0) {
-      // 金額のない款名断片（折返しの上段/下段）
-      pendName += namePart;
+      // 金額のない款名断片（折返しの上段/下段）。日本語断片のみ採る
+      if (hasCJK(namePart)) pendName += namePart;
     } else if (pendNo != null && ints.length >= 2) {
       // 折返し款の金額行（行頭に款番号がない）
       emit(pendNo, pendName + namePart, ints, raw);
@@ -520,8 +556,8 @@ export function parseKofuYosansho(
   const kanFile = pick(opts.kanFile, "款別一覧");
   const projFile = pick(opts.projectsFile, "主な事業");
 
-  const rev = parseKanPage(kanFile.path, kanFile.filename, revenuePage, "revenue");
-  const exp = parseKanPage(kanFile.path, kanFile.filename, expenditurePage, "expenditure");
+  const rev = parseKanPage(kanFile.path, kanFile.filename, revenuePage, "revenue", opts);
+  const exp = parseKanPage(kanFile.path, kanFile.filename, expenditurePage, "expenditure", opts);
   if (rev.prevBasis !== exp.prevBasis) {
     throw new Error(`${source.id}: 歳入と歳出で前年度列の基準が違います（${rev.prevBasis} / ${exp.prevBasis}）`);
   }
