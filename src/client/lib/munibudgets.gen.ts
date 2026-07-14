@@ -31,6 +31,42 @@ export interface MuniProject {
   refLocalUrl: string;
 }
 
+/** 決算＋執行率の1行（款別）。KofuExecRow と同形 */
+export interface MuniExecRow {
+  name: string;
+  /** 予算現額（億円・補正/繰越込み） */
+  budgetOku: number;
+  /** 収入済額（歳入）/ 支出済額（歳出）（億円） */
+  settledOku: number;
+  /** 資料記載の収入率/執行率（%）。予算現額0の款は null */
+  ratePct: number | null;
+  ref: string;
+  refLabel: string;
+  /** 内訳（甲府の市税内訳など。山梨県決算にはないので通常 undefined） */
+  breakdownNote?: string;
+}
+
+/** 決算＋執行率の1年度分（款別歳入歳出・KofuExecutionYear と同形） */
+export interface MuniExecutionYear {
+  fy: string;
+  basis: "速報" | "確定";
+  fyLabel: string;
+  asOf: string;
+  asOfNote: string;
+  population: number | null;
+  revenueBudgetTotalOku: number;
+  revenueSettledTotalOku: number;
+  expenditureBudgetTotalOku: number;
+  expenditureSettledTotalOku: number;
+  revenue: MuniExecRow[];
+  expenditure: MuniExecRow[];
+  sourceTitle: string;
+  sourceUrl: string;
+  originUrl: string;
+  sourceLocalUrl: string;
+  evidence: { title: string; type: string; url: string; localUrl: string; source: string; thumb: string }[];
+}
+
 export interface MuniBudget {
   muniCode: string;
   muniName: string;
@@ -49,6 +85,8 @@ export interface MuniBudget {
   expenditure: MuniKanRow[];
   /** 主な事業（豊川・和泉のみ。他市は空配列） */
   projects: MuniProject[];
+  /** 決算＋執行率（山梨県のみ。当初予算とは別年度。他は空配列） */
+  execution: MuniExecutionYear[];
   sourceTitle: string;
   sourceUrl: string;
   originUrl: string;
@@ -65,6 +103,270 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
     "prefName": "山梨県",
     "isPref": true,
     "projects": [],
+    "execution": [
+      {
+        "fy": "R6",
+        "basis": "確定",
+        "fyLabel": "令和6年度（決算・確定値）",
+        "asOf": "令和6年度決算（確定値）",
+        "asOfNote": "出納整理後の決算確定値。予算現額は補正・繰越を含むため当初予算とは一致しません",
+        "population": null,
+        "revenueBudgetTotalOku": 6700.46789557,
+        "revenueSettledTotalOku": 5713.05119222,
+        "expenditureBudgetTotalOku": 6700.46789557,
+        "expenditureSettledTotalOku": 5530.30730401,
+        "revenue": [
+          {
+            "name": "県税",
+            "budgetOku": 1061.03382,
+            "settledOku": 1073.21812008,
+            "ratePct": 101.1,
+            "ref": "r6kessannjokyou.pdf#p4",
+            "refLabel": "決算の状況 p.4"
+          },
+          {
+            "name": "地方消費税清算金",
+            "budgetOku": 440.5438,
+            "settledOku": 440.56323589,
+            "ratePct": 100,
+            "ref": "r6kessannjokyou.pdf#p4",
+            "refLabel": "決算の状況 p.4"
+          },
+          {
+            "name": "地方譲与税",
+            "budgetOku": 189.41008,
+            "settledOku": 189.52736,
+            "ratePct": 100.1,
+            "ref": "r6kessannjokyou.pdf#p4",
+            "refLabel": "決算の状況 p.4"
+          },
+          {
+            "name": "地方特例交付金",
+            "budgetOku": 28.46814,
+            "settledOku": 28.46813,
+            "ratePct": 99.9,
+            "ref": "r6kessannjokyou.pdf#p4",
+            "refLabel": "決算の状況 p.4"
+          },
+          {
+            "name": "地方交付税",
+            "budgetOku": 1471.88767,
+            "settledOku": 1472.5426,
+            "ratePct": 100,
+            "ref": "r6kessannjokyou.pdf#p4",
+            "refLabel": "決算の状況 p.4"
+          },
+          {
+            "name": "交通安全対策特別交付金",
+            "budgetOku": 2.16,
+            "settledOku": 1.70584,
+            "ratePct": 79,
+            "ref": "r6kessannjokyou.pdf#p4",
+            "refLabel": "決算の状況 p.4"
+          },
+          {
+            "name": "分担金及び負担金",
+            "budgetOku": 42.74621429,
+            "settledOku": 25.8410692,
+            "ratePct": 60.5,
+            "ref": "r6kessannjokyou.pdf#p4",
+            "refLabel": "決算の状況 p.4"
+          },
+          {
+            "name": "使用料及び手数料",
+            "budgetOku": 72.23847,
+            "settledOku": 71.16983566,
+            "ratePct": 98.5,
+            "ref": "r6kessannjokyou.pdf#p4",
+            "refLabel": "決算の状況 p.4"
+          },
+          {
+            "name": "国庫支出金",
+            "budgetOku": 1149.72274716,
+            "settledOku": 762.50156468,
+            "ratePct": 66.3,
+            "ref": "r6kessannjokyou.pdf#p4",
+            "refLabel": "決算の状況 p.4"
+          },
+          {
+            "name": "財産収入",
+            "budgetOku": 7.97582,
+            "settledOku": 9.01988036,
+            "ratePct": 113.1,
+            "ref": "r6kessannjokyou.pdf#p4",
+            "refLabel": "決算の状況 p.4"
+          },
+          {
+            "name": "寄附金",
+            "budgetOku": 8.75826,
+            "settledOku": 9.20931521,
+            "ratePct": 105.2,
+            "ref": "r6kessannjokyou.pdf#p4",
+            "refLabel": "決算の状況 p.4"
+          },
+          {
+            "name": "繰入金",
+            "budgetOku": 120.26522,
+            "settledOku": 118.1177781,
+            "ratePct": 98.2,
+            "ref": "r6kessannjokyou.pdf#p4",
+            "refLabel": "決算の状況 p.4"
+          },
+          {
+            "name": "繰越金",
+            "budgetOku": 193.50488595,
+            "settledOku": 193.50488185,
+            "ratePct": 100,
+            "ref": "r6kessannjokyou.pdf#p4",
+            "refLabel": "決算の状況 p.4"
+          },
+          {
+            "name": "諸収入",
+            "budgetOku": 912.03276817,
+            "settledOku": 750.55158119,
+            "ratePct": 82.3,
+            "ref": "r6kessannjokyou.pdf#p4",
+            "refLabel": "決算の状況 p.4"
+          },
+          {
+            "name": "県債",
+            "budgetOku": 999.72,
+            "settledOku": 567.11,
+            "ratePct": 56.7,
+            "ref": "r6kessannjokyou.pdf#p4",
+            "refLabel": "決算の状況 p.4"
+          }
+        ],
+        "expenditure": [
+          {
+            "name": "議会費",
+            "budgetOku": 10.51474,
+            "settledOku": 10.04204889,
+            "ratePct": 95.5,
+            "ref": "r6kessannjokyou.pdf#p5",
+            "refLabel": "決算の状況 p.5"
+          },
+          {
+            "name": "総務費",
+            "budgetOku": 478.09288597,
+            "settledOku": 386.25792386,
+            "ratePct": 80.8,
+            "ref": "r6kessannjokyou.pdf#p5",
+            "refLabel": "決算の状況 p.5"
+          },
+          {
+            "name": "民生費",
+            "budgetOku": 728.82241547,
+            "settledOku": 648.6440245,
+            "ratePct": 89,
+            "ref": "r6kessannjokyou.pdf#p5",
+            "refLabel": "決算の状況 p.5"
+          },
+          {
+            "name": "衛生費",
+            "budgetOku": 201.6026776,
+            "settledOku": 177.56964626,
+            "ratePct": 88.1,
+            "ref": "r6kessannjokyou.pdf#p5",
+            "refLabel": "決算の状況 p.5"
+          },
+          {
+            "name": "労働費",
+            "budgetOku": 28.84357,
+            "settledOku": 17.62693118,
+            "ratePct": 61.1,
+            "ref": "r6kessannjokyou.pdf#p5",
+            "refLabel": "決算の状況 p.5"
+          },
+          {
+            "name": "農林水産業費",
+            "budgetOku": 484.25977012,
+            "settledOku": 325.45169947,
+            "ratePct": 67.2,
+            "ref": "r6kessannjokyou.pdf#p5",
+            "refLabel": "決算の状況 p.5"
+          },
+          {
+            "name": "商工費",
+            "budgetOku": 806.43396618,
+            "settledOku": 609.61342937,
+            "ratePct": 75.6,
+            "ref": "r6kessannjokyou.pdf#p5",
+            "refLabel": "決算の状況 p.5"
+          },
+          {
+            "name": "土木費",
+            "budgetOku": 1548.57820205,
+            "settledOku": 999.39769794,
+            "ratePct": 64.5,
+            "ref": "r6kessannjokyou.pdf#p5",
+            "refLabel": "決算の状況 p.5"
+          },
+          {
+            "name": "警察費",
+            "budgetOku": 260.7290054,
+            "settledOku": 257.26142281,
+            "ratePct": 98.7,
+            "ref": "r6kessannjokyou.pdf#p5",
+            "refLabel": "決算の状況 p.5"
+          },
+          {
+            "name": "教育費",
+            "budgetOku": 931.039223,
+            "settledOku": 892.24643739,
+            "ratePct": 95.8,
+            "ref": "r6kessannjokyou.pdf#p5",
+            "refLabel": "決算の状況 p.5"
+          },
+          {
+            "name": "災害復旧費",
+            "budgetOku": 24.86436978,
+            "settledOku": 14.75310287,
+            "ratePct": 59.3,
+            "ref": "r6kessannjokyou.pdf#p5",
+            "refLabel": "決算の状況 p.5"
+          },
+          {
+            "name": "公債費",
+            "budgetOku": 741.39881,
+            "settledOku": 740.89441505,
+            "ratePct": 99.9,
+            "ref": "r6kessannjokyou.pdf#p5",
+            "refLabel": "決算の状況 p.5"
+          },
+          {
+            "name": "諸支出金",
+            "budgetOku": 453.78629,
+            "settledOku": 450.54852442,
+            "ratePct": 99.3,
+            "ref": "r6kessannjokyou.pdf#p5",
+            "refLabel": "決算の状況 p.5"
+          },
+          {
+            "name": "予備費",
+            "budgetOku": 1.50197,
+            "settledOku": 0,
+            "ratePct": 0,
+            "ref": "r6kessannjokyou.pdf#p5",
+            "refLabel": "決算の状況 p.5"
+          }
+        ],
+        "sourceTitle": "令和6年度 山梨県一般会計決算の状況（款別・執行率）",
+        "sourceUrl": "https://web.archive.org/web/20251119051228/https://www.pref.yamanashi.jp/documents/5948/r6kessannjokyou.pdf",
+        "originUrl": "https://www.pref.yamanashi.jp/documents/5948/r6kessannjokyou.pdf",
+        "sourceLocalUrl": "/sources/yamanashi-kessan-r6/r6kessannjokyou.pdf",
+        "evidence": [
+          {
+            "title": "令和6年度 山梨県一般会計決算の状況（款別・執行率）",
+            "type": "PDF",
+            "url": "https://web.archive.org/web/20251119051228/https://www.pref.yamanashi.jp/documents/5948/r6kessannjokyou.pdf",
+            "localUrl": "/sources/yamanashi-kessan-r6/r6kessannjokyou.pdf",
+            "source": "www.pref.yamanashi.jp",
+            "thumb": "r6kessannjokyou.pdf ・ sha256 4ac0b9855c4a8e1c… ・ 2026-07-14 取得"
+          }
+        ]
+      }
+    ],
     "fy": "R8",
     "fyLabel": "令和8年度 当初予算",
     "population": 801056,
@@ -281,6 +583,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
     "prefName": "山梨県",
     "isPref": false,
     "projects": [],
+    "execution": [],
     "fy": "R8",
     "fyLabel": "令和8年度 当初予算",
     "population": 46364,
@@ -533,6 +836,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
     "prefName": "山梨県",
     "isPref": false,
     "projects": [],
+    "execution": [],
     "fy": "R8",
     "fyLabel": "令和8年度 当初予算",
     "population": 71726,
@@ -785,6 +1089,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
     "prefName": "山梨県",
     "isPref": false,
     "projects": [],
+    "execution": [],
     "fy": "R8",
     "fyLabel": "令和8年度 当初予算",
     "population": 66857,
@@ -1043,6 +1348,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
     "prefName": "静岡県",
     "isPref": false,
     "projects": [],
+    "execution": [],
     "fy": "R7",
     "fyLabel": "令和7年度 当初予算",
     "population": 185758,
@@ -3052,6 +3358,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "refLocalUrl": "/sources/toyokawa-yosansho-r7/R7_yosann.pdf#page=16"
       }
     ],
+    "execution": [],
     "fy": "R7",
     "fyLabel": "令和7年度 当初予算",
     "population": 185900,
@@ -3603,6 +3910,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "refLocalUrl": "/sources/izumi-yosansho-r8/00_08_gaiyou.pdf#page=2"
       }
     ],
+    "execution": [],
     "fy": "R8",
     "fyLabel": "令和8年度 当初予算",
     "population": 182481,
@@ -4456,6 +4764,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "refLocalUrl": "/sources/yamaguchi-yosansho-r7/105329.pdf#page=137"
       }
     ],
+    "execution": [],
     "fy": "R7",
     "fyLabel": "令和7年度 当初予算",
     "population": 185982,

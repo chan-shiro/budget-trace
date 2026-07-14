@@ -126,5 +126,7 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.city.toyokawa.lg.jp/material/files/group/10/R7_yosann.pdf": "https://web.archive.org/web/20260208071246/https://www.city.toyokawa.lg.jp/material/files/group/10/R7_yosann.pdf",
   "https://www.city.toyokawa.lg.jp/soshiki/zaimu/zaisei/2/1/1/3/22950.html": "https://web.archive.org/web/20260713033630/https://www.city.toyokawa.lg.jp/soshiki/zaimu/zaisei/2/1/1/3/22950.html",
   "https://www.city.yamaguchi.lg.jp/site/shiseijoho/171302.html": "https://web.archive.org/web/20260420011714/https://www.city.yamaguchi.lg.jp/site/shiseijoho/171302.html",
-  "https://www.city.yamaguchi.lg.jp/uploaded/attachment/105329.pdf": "https://web.archive.org/web/20250815060151/https://www.city.yamaguchi.lg.jp/uploaded/attachment/105329.pdf"
+  "https://www.city.yamaguchi.lg.jp/uploaded/attachment/105329.pdf": "https://web.archive.org/web/20250815060151/https://www.city.yamaguchi.lg.jp/uploaded/attachment/105329.pdf",
+  "https://www.pref.yamanashi.jp/documents/5948/r6kessannjokyou.pdf": "https://web.archive.org/web/20251119051228/https://www.pref.yamanashi.jp/documents/5948/r6kessannjokyou.pdf",
+  "https://www.pref.yamanashi.jp/sui-kai/163_003.html": "https://web.archive.org/web/20260313143003/https://www.pref.yamanashi.jp/sui-kai/163_003.html"
 };

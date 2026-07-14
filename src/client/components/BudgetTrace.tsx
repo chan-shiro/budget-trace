@@ -568,14 +568,29 @@ export default function BudgetTrace() {
     { label: "歳入", pick: () => setSt({ compSide: "rev" }), bg: compSide === "rev" ? "#14181C" : "#FFFFFF", fg: compSide === "rev" ? "#F7FAFC" : "#5C6B77" },
   ];
 
-  // --- 予算執行状況（R7=財政事情の速報、R6〜R1=決算状況の確定値。R3 は WARP 保存版から回収） ---
+  // --- 予算執行状況（full=甲府 R7速報〜R1確定。budget=山梨県 R6決算・確定） ---
   const execSide = s.execSide || "exp";
-  // 年度の既定はヘッダの年度ドロップダウンに追従する（過去年度を見ている人が
-  // 執行タブを開いたらその年度の確定執行が出る）。ピルで明示選択したらそちらが優先
+  // 執行データ源: full=甲府（KOFU_EXECUTION_YEARS・複数年度）、budget=その自治体の
+  // 決算（現状は山梨県のみ・当初予算とは別年度）。持たない階層は空 → 執行画面を出さない。
+  const execSource: D.MuniExecutionYear[] = isFull
+    ? (KOFU_EXECUTION_YEARS as unknown as D.MuniExecutionYear[])
+    : muniBudget?.execution ?? [];
+  const hasExec = execSource.length > 0;
+  // 執行データを持たない階層向けの空スタブ（isExecution=false なので描画されない）
+  const EMPTY_EXEC_YEAR: D.MuniExecutionYear = {
+    fy: "", basis: "確定", fyLabel: "", asOf: "", asOfNote: "", population: null,
+    revenueBudgetTotalOku: 0, revenueSettledTotalOku: 0,
+    expenditureBudgetTotalOku: 0, expenditureSettledTotalOku: 0,
+    revenue: [], expenditure: [],
+    sourceTitle: "", sourceUrl: "", originUrl: "", sourceLocalUrl: "", evidence: [],
+  };
+  // 年度の既定はヘッダの年度ドロップダウンに追従する（full の過去年度閲覧時）。
+  // ピルで明示選択したらそちらが優先。budget は単一年度。
   const execYear =
-    KOFU_EXECUTION_YEARS.find((y) => y.fy === s.execFy) ??
-    KOFU_EXECUTION_YEARS.find((y) => y.fy === budget.fy) ??
-    KOFU_EXECUTION_YEARS[0]!;
+    execSource.find((y) => y.fy === s.execFy) ??
+    execSource.find((y) => y.fy === budget.fy) ??
+    execSource[0] ??
+    EMPTY_EXEC_YEAR;
   const execRows0 = execSide === "rev" ? execYear.revenue : execYear.expenditure;
   const execBudgetTotal = execSide === "rev" ? execYear.revenueBudgetTotalOku : execYear.expenditureBudgetTotalOku;
   const execSettledTotal = execSide === "rev" ? execYear.revenueSettledTotalOku : execYear.expenditureSettledTotalOku;
@@ -634,6 +649,8 @@ export default function BudgetTrace() {
     ["ダッシュボード", "dash", () => nav({ screen: "dash" })],
     ["款別ドリルダウン", "drill", () => nav({ screen: "drill" })],
     ["前年比較", "compare", () => nav({ screen: "compare" })],
+    // 決算＋執行率を収録した budget 自治体（山梨県）のみ執行タブを出す
+    ...(hasExec ? ([["予算執行状況", "execution", () => nav({ screen: "execution" })]] as [string, string, () => void][]) : []),
     ...(isPref ? [] : ([["類似自治体", "similar", () => nav({ screen: "similar" })]] as [string, string, () => void][])),
   ];
   const navDefsDecision: [string, string, () => void][] = [
@@ -648,7 +665,8 @@ export default function BudgetTrace() {
   // 政策テーマ・予算執行は full 専用。前年比較は full+budget（decision のみ不可）
   const gatedToDash =
     (isDecision && ["compare", "themes", "execution"].includes(screen)) ||
-    (isBudget && ["themes", "execution"].includes(screen)) ||
+    // budget は政策テーマ不可。執行は決算を収録した自治体（hasExec）のみ許可
+    (isBudget && (screen === "themes" || (screen === "execution" && !hasExec))) ||
     // 都道府県は市町村の類似自治体比較を出さない
     (isPref && screen === "similar");
 
@@ -657,7 +675,8 @@ export default function BudgetTrace() {
     isDash: screen === "dash" || gatedToDash, isDrill: screen === "drill",
     // 政策テーマ・執行は full 専用。前年比較は full+budget（decision 不可）
     isThemes: screen === "themes" && isFull, isCompare: screen === "compare" && !isDecision,
-    isExecution: screen === "execution" && isFull,
+    // 執行画面は full（甲府）＋ 決算を収録した budget（山梨県）
+    isExecution: screen === "execution" && (isFull || (isBudget && hasExec)),
     // 決算ベース（総務省・decision 階層）の自治体か。予算資料ベースの full 画面は出さない
     isDecision,
     // 予算のみ収録（budget 階層・類似市）。主な事業/執行/評価は未収録
@@ -671,7 +690,9 @@ export default function BudgetTrace() {
       ? `${data.name}（都道府県会計）の当初予算を収録しています`
       : "この自治体は当初予算（款別）を収録しています",
     budgetPanelBody: isPref
-      ? "款別の歳入・歳出・前年当初比較・1人あたり（県内市町村人口合計）を確認できます。決算・執行状況・主な事業は未収録です。"
+      ? hasExec
+        ? `款別の歳入・歳出・前年当初比較・1人あたり（県内市町村人口合計）に加え、${execYear.fyLabel}の款別決算・執行率も確認できます。主な事業一覧は未収録です。`
+        : "款別の歳入・歳出・前年当初比較・1人あたり（県内市町村人口合計）を確認できます。決算・執行状況・主な事業は未収録です。"
       : "款別の歳入・歳出・前年当初比較・1人あたり・類似自治体比較・決算の経年（総務省）を確認できます。主な事業一覧・予算執行状況・事務事業評価は市によって未収録です。",
     // decision 自治体のシャード取得待ち（ダッシュボードでスケルトンを出す）
     loading: decisionPending,
@@ -718,26 +739,41 @@ export default function BudgetTrace() {
     // budget 階層の未収録機能のリクエスト。都道府県は決算、市は主な事業/執行/評価
     budgetRequestUrl: isBudget
       ? isPref
-        ? D.buildRequestUrl(
-            `${data.name}（都道府県）の決算・執行状況の収録`,
-            `リクエスト: ${data.name}（都道府県会計）は当初予算（款別）を収録済み。決算・執行率も見たい`,
-            data.name,
-          )
+        ? hasExec
+          ? D.buildRequestUrl(
+              `${data.name}（都道府県）の主な事業の収録`,
+              `リクエスト: ${data.name}（都道府県会計）は当初予算（款別）＋決算・執行率を収録済み。主な事業（施策別）も見たい`,
+              data.name,
+            )
+          : D.buildRequestUrl(
+              `${data.name}（都道府県）の決算・執行状況の収録`,
+              `リクエスト: ${data.name}（都道府県会計）は当初予算（款別）を収録済み。決算・執行率も見たい`,
+              data.name,
+            )
         : D.buildRequestUrl(
             `${data.name}の主な事業・執行状況・事務事業評価の収録`,
             `自治体リクエスト: ${prefName} ${data.name} は当初予算（款別）を収録済み。主な事業一覧・予算執行状況・事務事業評価も見たい`,
             data.name,
           )
       : "",
+    // リクエストチップのラベル（都道府県は決算収録済みなら主な事業、未収録なら決算）
+    budgetRequestLabel: isPref
+      ? hasExec
+        ? "主な事業の収録をリクエスト ↗"
+        : "決算・執行状況の収録をリクエスト ↗"
+      : "この自治体の事業・執行・評価の収録をリクエスト ↗",
     execTabs, execRows,
-    // 年度切替（R3 は資料消失により欠落 — execGapNote で明示）
-    execYearTabs: KOFU_EXECUTION_YEARS.map((y) => ({
+    // 年度切替（full=甲府は複数年度。budget=山梨県は単一年度なので1ピル）
+    execYearTabs: execSource.map((y) => ({
       label: `${y.fy}${y.basis === "速報" ? "（速報）" : ""}`,
       pick: () => setSt({ execFy: y.fy }),
       bg: y.fy === execYear.fy ? "#14181C" : "#FFFFFF",
       fg: y.fy === execYear.fy ? "#F7FAFC" : "#5C6B77",
     })),
-    execGapNote: "令和3年度は発行元サイトから削除済みのため、国立国会図書館 WARP の保存版から収録しています",
+    // full（甲府）は R3 が資料消失で WARP 回収の注記。budget は当初予算と別年度の注記
+    execGapNote: isFull
+      ? "令和3年度は発行元サイトから削除済みのため、国立国会図書館 WARP の保存版から収録しています"
+      : `決算は最新の${execYear.fyLabel}を収録しています（当初予算とは年度が異なります）`,
     execFyLabel: execYear.fyLabel, execAsOfNote: execYear.asOfNote,
     execSideLabel: execSide === "rev" ? "歳入" : "歳出",
     execRateLabel: execSide === "rev" ? "収入率" : "執行率",
@@ -760,6 +796,8 @@ export default function BudgetTrace() {
     }),
     trendBars, trendIndicators, trendYearLabels,
     trendSourceUrl: KOFU_TREND[KOFU_TREND.length - 1]?.landingUrl ?? "",
+    // 決算の推移は KOFU_TREND（甲府の総務省決算）ベース。full（甲府）だけで出す
+    showTrend: isFull,
     showEvidence,
     onPrefSelect: (name: string) => nav({ screen: "muni", pref: name }),
     mapColorMode,

@@ -242,7 +242,9 @@ export const budgetExecutionDocSchema = z.object({
   parser: z.string(),
   parserVersion: z.string(),
   parsedAt: z.string(),
-  unit: z.literal("thousandYen"),
+  // 甲府（財政事情・収入支出詳細）は万円→千円で thousandYen、
+  // 山梨県（決算の状況）は原典が円のため yen（整数で厳密一致を保つ）
+  unit: z.enum(["thousandYen", "yen"]),
   /** 対象会計年度（例: "R7"） */
   fiscalYear: z.string(),
   account: z.string(),
