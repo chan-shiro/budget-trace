@@ -58,9 +58,9 @@ interface Options {
   samePage?: boolean;
 }
 
-/** 全角数字 → 半角（豊川の款番号が全角） */
+/** 全角数字・全角カンマ → 半角（豊川の款番号・北杜の小計見出しが全角） */
 const toHalfDigits = (s: string): string =>
-  s.replace(/[０-９]/g, (d) => String.fromCharCode(d.charCodeAt(0) - 0xfee0));
+  s.replace(/[０-９]/g, (d) => String.fromCharCode(d.charCodeAt(0) - 0xfee0)).replace(/，/g, ",");
 
 /** CJK（かな・漢字）を含むか。事業名判定に使う */
 const hasCJKChars = (s: string): boolean => /[぀-ヿ㐀-鿿々〆ヶ]/.test(s);
@@ -105,8 +105,8 @@ interface PageResult {
   prevNote?: string;
 }
 
-// 款名の収集から除外するヘッダ・注記の語
-const KAN_HEADER_RE = /年度|予算額|一覧表|単位|構成比|増減|伸率|比較|^款$/;
+// 款名の収集から除外するヘッダ・注記の語（「区分」は款の列見出し語で款名ではない）
+const KAN_HEADER_RE = /年度|予算額|一覧表|単位|構成比|増減|伸率|比較|区分|^款$/;
 
 function parseKanPage(
   filePath: string,
@@ -181,8 +181,29 @@ function parseKanPage(
   // 非日本語ノイズを款名に混ぜないためのガード
   const hasCJK = (s: string) => /[぀-ヿ㐀-鿿々〆ヶ]/.test(s);
 
-  for (const rawOrig of text.split("\n")) {
-    const raw = toHalfDigits(rawOrig); // 全角款番号（豊川）を半角化
+  // 本物の合計行を先に特定する。合計ラベルを含む行のうち**整数金額が最も多い**行が本物
+  // （北杜の見出し「歳入合計 34,786,332千円」＝1個、大月の注記「合計が100%…」＝1個は除外され、
+  // 本体の合計行＝当年度/前年度/増減の3個以上が選ばれる）。以降のドーナツ凡例・注記を款に
+  // 誤認しないよう、款のパースは合計行の手前で打ち切る。
+  const allLines = text.split("\n").map((l) => toHalfDigits(l));
+  let totalIdx = allLines.length;
+  {
+    let bestInts = 1; // 最低2個の整数金額（当年度＋前年度）を要求
+    allLines.forEach((raw, i) => {
+      if (!raw.replace(/[\s　]/g, "").includes(totalLabel)) return;
+      const ints = (raw.match(AMOUNT_RE) ?? []).filter((t) => !t.includes("."));
+      if (ints.length > bestInts) {
+        bestInts = ints.length;
+        totalIdx = i;
+        total = toAmount(ints[0]!);
+        prevTotal = ints[1] != null ? toAmount(ints[1]!) : null;
+      }
+    });
+  }
+
+  for (let li = 0; li < allLines.length; li++) {
+    if (li >= totalIdx) break; // 合計行以降（凡例・注記）は款ではない
+    const raw = allLines[li]!; // 全角款番号（豊川）を半角化済み
     const compact = raw.replace(/[\s　]/g, "");
     if (compact === "") {
       reset(); // 行間の空行で断片を破棄（款は空行を挟まず連続する）
@@ -192,13 +213,8 @@ function parseKanPage(
     // 「歳入合計」の部分文字列なので、順序を誤ると合計行を取りこぼす）。
     // 構成比（小数）が金額の間に入る様式（豊川・山口・沼津）に対応するため小数を除く
     if (compact.includes(totalLabel)) {
-      const ints = (raw.match(AMOUNT_RE) ?? []).filter((t) => !t.includes("."));
-      const [t0, t1] = ints;
-      if (t0 == null) {
-        throw new Error(`${filename} p.${page}: 合計行を解釈できません: ${raw.trim()}`);
-      }
-      total = toAmount(t0);
-      prevTotal = t1 != null ? toAmount(t1) : null;
+      // 本物の合計は pre-scan で確定済み。ここに来るのは合計行より前にある
+      // 見出し（北杜「歳入合計 34,786,332千円」）等なので、款にせず読み飛ばすだけ。
       reset();
       continue;
     }

@@ -1246,6 +1246,10 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     { srcId: "fuefuki-yosansho-r8", muniCode: "192112", muniName: "笛吹市", prefName: "山梨県", isPref: false },
     { srcId: "fujiyoshida-yosansho-r8", muniCode: "192023", muniName: "富士吉田市", prefName: "山梨県", isPref: false },
     { srcId: "minami-alps-yosansho-r8", muniCode: "192082", muniName: "南アルプス市", prefName: "山梨県", isPref: false },
+    { srcId: "hokuto-yosansho-r8", muniCode: "192104", muniName: "北杜市", prefName: "山梨県", isPref: false },
+    { srcId: "otsuki-yosansho-r8", muniCode: "192066", muniName: "大月市", prefName: "山梨県", isPref: false },
+    { srcId: "tsuru-yosansho-r8", muniCode: "192040", muniName: "都留市", prefName: "山梨県", isPref: false },
+    { srcId: "koshu-yosansho-r8", muniCode: "192139", muniName: "甲州市", prefName: "山梨県", isPref: false },
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;
