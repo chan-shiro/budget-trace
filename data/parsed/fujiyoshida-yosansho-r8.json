@@ -3,7 +3,7 @@
   "sourceId": "fujiyoshida-yosansho-r8",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-07-13T11:35:44.545Z",
+  "parsedAt": "2026-07-14T06:31:25.383Z",
   "unit": "thousandYen",
   "fiscalYear": "R8",
   "account": "一般会計",
@@ -396,6 +396,833 @@
       "locator": {
         "file": "7412.pdf",
         "page": 7
+      }
+    }
+  ],
+  "projects": [
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "企画・調整事業",
+      "budgetBookName": null,
+      "amount": 170431,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "企画部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "人口ビジョン・地域創生推進事業",
+      "budgetBookName": null,
+      "amount": 17292,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "企画部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "コミュニティセンター等管理運営事業",
+      "budgetBookName": null,
+      "amount": 69545,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "企画部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "コミュニティセンター等大規模改修事業",
+      "budgetBookName": null,
+      "amount": 255413,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "企画部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "まちづくりパートナーシップ事業",
+      "budgetBookName": null,
+      "amount": 40629,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "企画部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "防災対策事業",
+      "budgetBookName": null,
+      "amount": 90832,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "企画部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "非常備消防事業",
+      "budgetBookName": null,
+      "amount": 102143,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "企画部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "富士山火山対策事業",
+      "budgetBookName": null,
+      "amount": 5407,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "企画部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "人事管理事務事業",
+      "budgetBookName": null,
+      "amount": 40399,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "総務部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 23
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "自治体ＤＸ推進事業",
+      "budgetBookName": null,
+      "amount": 25418,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "総務部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 24
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "行政ネットワーク運用管理事業",
+      "budgetBookName": null,
+      "amount": 319763,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "総務部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 24
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "財産管理事業",
+      "budgetBookName": null,
+      "amount": 257125,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "総務部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 24
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "徴収事業",
+      "budgetBookName": null,
+      "amount": 7523,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "総務部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 24
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "生活困窮者自立促進支援事業",
+      "budgetBookName": null,
+      "amount": 9379,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "市民生活部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 25
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "子育て支援センター管理運営事業",
+      "budgetBookName": null,
+      "amount": 18708,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "市民生活部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 25
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "こども子育て支援事業",
+      "budgetBookName": null,
+      "amount": 116949,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "市民生活部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 26
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "放課後児童対策事業",
+      "budgetBookName": null,
+      "amount": 55715,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "市民生活部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 26
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "こども福祉事業",
+      "budgetBookName": null,
+      "amount": 30500,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "市民生活部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 26
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "子育て見守り事業",
+      "budgetBookName": null,
+      "amount": 28801,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "市民生活部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 26
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "不妊治療費助成事業",
+      "budgetBookName": null,
+      "amount": 15000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "市民生活部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 27
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "地域支え合い事業",
+      "budgetBookName": null,
+      "amount": 29543,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "市民生活部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 27
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "健康総務事業",
+      "budgetBookName": null,
+      "amount": 54128,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "市民生活部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 27
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "介護保険特別会計包括的支援事業･任意事業",
+      "budgetBookName": null,
+      "amount": 46014,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "市民生活部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 27
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "中小企業等への融資斡旋・利子補給事業",
+      "budgetBookName": null,
+      "amount": 66534,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "経済環境部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 29
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "商業活性化対策事業",
+      "budgetBookName": null,
+      "amount": 45205,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "経済環境部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 29
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "雇用促進支援事業",
+      "budgetBookName": null,
+      "amount": 12627,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "経済環境部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 29
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "富士山安全対策・環境保全推進事業",
+      "budgetBookName": null,
+      "amount": 24526,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "経済環境部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 29
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "観光宣伝・観光客誘致推進事業",
+      "budgetBookName": null,
+      "amount": 216266,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "経済環境部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 30
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "富士吉田市観光施設管理運営事業",
+      "budgetBookName": null,
+      "amount": 98230,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "経済環境部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 30
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "道の駅富士吉田リニューアル事業",
+      "budgetBookName": null,
+      "amount": 868006,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "経済環境部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 30
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "農業振興事業",
+      "budgetBookName": null,
+      "amount": 4298,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "経済環境部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 31
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "鳥獣対策事業",
+      "budgetBookName": null,
+      "amount": 31424,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "経済環境部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 31
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "森林環境整備事業",
+      "budgetBookName": null,
+      "amount": 10397,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "経済環境部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 31
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "自然エネルギー設置事業",
+      "budgetBookName": null,
+      "amount": 22211,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "経済環境部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 31
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "リサイクル推進事業",
+      "budgetBookName": null,
+      "amount": 50823,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "経済環境部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 32
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "ごみ収集事業",
+      "budgetBookName": null,
+      "amount": 214197,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "経済環境部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 32
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "市営住宅管理事業",
+      "budgetBookName": null,
+      "amount": 200129,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "都市基盤部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 33
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "木造住宅耐震改修等事業",
+      "budgetBookName": null,
+      "amount": 76186,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "都市基盤部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 33
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "国道138号対策事業",
+      "budgetBookName": null,
+      "amount": 21485,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "都市基盤部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 34
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "区画整理事業",
+      "budgetBookName": null,
+      "amount": 72327,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "都市基盤部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 34
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "市道等建設事業",
+      "budgetBookName": null,
+      "amount": 392134,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "都市基盤部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 34
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "特定防衛施設周辺公共用施設整備事業",
+      "budgetBookName": null,
+      "amount": 166400,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "都市基盤部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 34
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "横町熊穴線外２路線整備事業",
+      "budgetBookName": null,
+      "amount": 239897,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "都市基盤部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 34
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "公園管理運営事業",
+      "budgetBookName": null,
+      "amount": 246273,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "都市基盤部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 35
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "建築営繕事業",
+      "budgetBookName": null,
+      "amount": 5846,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "都市基盤部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 35
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "水道事業",
+      "budgetBookName": null,
+      "amount": 846237,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "都市基盤部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 35
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "下水道事業",
+      "budgetBookName": null,
+      "amount": 1040200,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "都市基盤部",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 35
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "ふるさと寄附推進事業",
+      "budgetBookName": null,
+      "amount": 118619,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "ふるさと創生室",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 36
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "定住促進関連事業",
+      "budgetBookName": null,
+      "amount": 126163,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "ふるさと創生室",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 36
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "教育委員会管理事業",
+      "budgetBookName": null,
+      "amount": 26572,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "教育委員会",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 37
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "小中学校情報教育推進事業",
+      "budgetBookName": null,
+      "amount": 293639,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "教育委員会",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 38
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "小学校校舎等維持管理事業",
+      "budgetBookName": null,
+      "amount": 172928,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "教育委員会",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 38
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "中学校校舎等維持管理事業",
+      "budgetBookName": null,
+      "amount": 307449,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "教育委員会",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 38
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "学校給食センター運営事業",
+      "budgetBookName": null,
+      "amount": 752850,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "教育委員会",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 38
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "市民会館管理運営事業",
+      "budgetBookName": null,
+      "amount": 139584,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "教育委員会",
+      "locator": {
+        "file": "7412.pdf",
+        "page": 38
       }
     }
   ]
