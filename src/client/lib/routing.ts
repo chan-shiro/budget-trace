@@ -1,14 +1,16 @@
-// パスベースのURLルーティング（各画面に共有可能な実URLを割り当てる）。
+// パスベースのURLルーティング（各画面に共有可能な ASCII の実URLを割り当てる）。
 //
-//   /                       トップ（全国マップ）
-//   /山梨県                  市区町村選択（screen=muni）
-//   /山梨県/甲府市           ダッシュボード（screen=dash）
-//   /山梨県/甲府市/compare   前年比較（画面スラグを1つ足す）
-//   /sources                データ出典（自治体スコープ外のときのみ）
+//   /                          トップ（全国マップ）
+//   /yamanashi                 市区町村選択（screen=muni）
+//   /yamanashi/kofu            ダッシュボード（screen=dash）
+//   /yamanashi/kofu/compare    前年比較（画面スラグを1つ足す）
+//   /nagano/202011             decision 自治体（ローマ字未整備なので団体コード）
+//   /sources                   データ出典（自治体スコープ外のときのみ）
 //
-// 画面内の細かな状態（表示年度・ドリル位置・単位など）はクエリに載せてパスを短く保つ。
-// full/budget 自治体は団体コードを静的に解決できるため即時描画（チラつき無し）。
-// decision 自治体は名前だけをパスに載せ、県シャード取得後にコードを後解決する。
+// マルチバイト（日本語）のパスは共有時に %XX へエンコードされ視認性が悪いため、
+// 都道府県は定型ローマ字、収録済み自治体（full/budget）は手当てしたローマ字スラグ、
+// 残りの decision 自治体は団体コード（読みデータが無いため）を使う。
+// 画面内の細かな状態（表示年度・ドリル位置・単位）はクエリに載せてパスを短く保つ。
 import { PREF_CODES } from "./decision-index.gen";
 import { MUNI_BUDGETS, BUDGET_MUNIS } from "./munibudgets.gen";
 
@@ -27,28 +29,56 @@ export interface RouteState {
   unit?: string;
 }
 
-const PREF_NAMES = new Set(Object.keys(PREF_CODES));
-// パスに使う画面スラグ（ダッシュボードはスラグ無し＝自治体ルート）
-const APP_SLUGS = new Set(["drill", "compare", "themes", "execution", "similar", "sources"]);
+// 都道府県名 → ローマ字スラグ（47・ヘボン式・長音記号なし）
+const PREF_ROMAJI: Record<string, string> = {
+  北海道: "hokkaido", 青森県: "aomori", 岩手県: "iwate", 宮城県: "miyagi", 秋田県: "akita",
+  山形県: "yamagata", 福島県: "fukushima", 茨城県: "ibaraki", 栃木県: "tochigi", 群馬県: "gunma",
+  埼玉県: "saitama", 千葉県: "chiba", 東京都: "tokyo", 神奈川県: "kanagawa", 新潟県: "niigata",
+  富山県: "toyama", 石川県: "ishikawa", 福井県: "fukui", 山梨県: "yamanashi", 長野県: "nagano",
+  岐阜県: "gifu", 静岡県: "shizuoka", 愛知県: "aichi", 三重県: "mie", 滋賀県: "shiga",
+  京都府: "kyoto", 大阪府: "osaka", 兵庫県: "hyogo", 奈良県: "nara", 和歌山県: "wakayama",
+  鳥取県: "tottori", 島根県: "shimane", 岡山県: "okayama", 広島県: "hiroshima", 山口県: "yamaguchi",
+  徳島県: "tokushima", 香川県: "kagawa", 愛媛県: "ehime", 高知県: "kochi", 福岡県: "fukuoka",
+  佐賀県: "saga", 長崎県: "nagasaki", 熊本県: "kumamoto", 大分県: "oita", 宮崎県: "miyazaki",
+  鹿児島県: "kagoshima", 沖縄県: "okinawa",
+};
+const PREF_BY_SLUG: Record<string, string> = Object.fromEntries(
+  Object.entries(PREF_ROMAJI).map(([name, slug]) => [slug, name]),
+);
 
-// 静的に団体コードを解決できる自治体（full=甲府 + budget 12市/県）。pref→(muni名→code)
-const KNOWN: Record<string, Record<string, string>> = (() => {
-  const m: Record<string, Record<string, string>> = {};
-  const add = (pref: string, name: string, code: string) => {
-    (m[pref] ??= {})[name] = code;
-  };
-  add("山梨県", "甲府市", "192015"); // full
+// 収録済み自治体（full=甲府 + budget 12）の団体コード → ローマ字スラグ。
+// 県エンティティ（山梨県の当初予算・190004）は市区町村選択 /yamanashi と衝突しないよう ken。
+const MUNI_SLUGS: Record<string, string> = {
+  "192015": "kofu", "192112": "fuefuki", "192023": "fujiyoshida", "192082": "minami-alps",
+  "192104": "hokuto", "192066": "otsuki", "192040": "tsuru", "192139": "koshu",
+  "232076": "toyokawa", "352039": "yamaguchi", "222038": "numazu", "272191": "izumi",
+  "190004": "ken",
+};
+
+interface KnownMuni { code: string; name: string; pref: string; slug: string; }
+const KNOWN_MUNIS: KnownMuni[] = (() => {
+  const list: KnownMuni[] = [{ code: "192015", name: "甲府市", pref: "山梨県", slug: "kofu" }];
   for (const c of BUDGET_MUNIS) {
     const b = MUNI_BUDGETS[c];
-    if (b) add(b.prefName, b.muniName, b.muniCode);
+    if (b && MUNI_SLUGS[c]) list.push({ code: c, name: b.muniName, pref: b.prefName, slug: MUNI_SLUGS[c]! });
   }
-  return m;
+  return list;
 })();
 
-/** full/budget は静的に code 解決（即時）。decision はシャードから後解決するため undefined */
-export function knownMuniCode(pref: string | null, muni: string | null): string | undefined {
-  if (!pref || !muni) return undefined;
-  return KNOWN[pref]?.[muni];
+const PREF_NAMES = new Set(Object.keys(PREF_CODES));
+const APP_SLUGS = new Set(["drill", "compare", "themes", "execution", "similar", "sources"]);
+
+/** 自治体の URL セグメント（収録済み＝ローマ字スラグ、それ以外＝団体コード） */
+function muniSegment(code: string | undefined, muni: string | null): string | null {
+  if (code && MUNI_SLUGS[code]) return MUNI_SLUGS[code]!;
+  if (code) return code; // decision 自治体は団体コード
+  return muni; // コード未解決時は名前（decision 冷リンクの一時状態。通常は起きない）
+}
+
+/** pref 名 + muni セグメント → 収録済み自治体（full/budget）。無ければ null */
+function knownByMuniSegment(prefName: string | null, seg: string): KnownMuni | undefined {
+  if (!prefName) return undefined;
+  return KNOWN_MUNIS.find((k) => k.pref === prefName && k.slug === seg);
 }
 
 const first = (v: string | string[] | undefined): string | undefined =>
@@ -58,16 +88,18 @@ const first = (v: string | string[] | undefined): string | undefined =>
 export function stateToPath(t: RouteState): string {
   const seg: string[] = [];
   const q = new URLSearchParams();
+  const prefSlug = t.pref ? PREF_ROMAJI[t.pref] : undefined;
   if (t.screen === "top") {
     // ルート
   } else if (t.screen === "muni") {
-    if (t.pref) seg.push(t.pref);
+    if (prefSlug) seg.push(prefSlug);
   } else if (t.screen === "sources" && !t.muni) {
     seg.push("sources");
   } else {
     // 自治体スコープの画面（dash はスラグ無し）
-    if (t.pref) seg.push(t.pref);
-    if (t.muni) seg.push(t.muni);
+    if (prefSlug) seg.push(prefSlug);
+    const ms = muniSegment(t.muniCode, t.muni);
+    if (ms) seg.push(ms);
     if (t.screen !== "dash") seg.push(t.screen);
   }
   if (t.budgetFy) q.set("fy", t.budgetFy);
@@ -82,6 +114,7 @@ export function stateToPath(t: RouteState): string {
   }
   if (t.screen === "compare" && t.compSide && t.compSide !== "exp") q.set("cside", t.compSide);
   if (t.unit === "per") q.set("unit", "per");
+  // ドリルパス（日本語）はクエリなので encodeURIComponent される。パスセグメントは ASCII。
   const path = "/" + seg.map(encodeURIComponent).join("/");
   const qs = q.toString();
   return qs ? `${path}?${qs}` : path;
@@ -106,17 +139,43 @@ export function pathToState(
   let screen = "top";
   let pref: string | null = null;
   let muni: string | null = null;
+  let muniCode: string | undefined;
 
   if (segments.length === 0) {
     screen = "top";
   } else if (segments.length === 1 && segments[0] === "sources") {
     screen = "sources";
+  } else if (PREF_BY_SLUG[segments[0]!]) {
+    pref = PREF_BY_SLUG[segments[0]!]!;
+    if (segments.length === 1) {
+      screen = "muni";
+    } else {
+      const seg1 = segments[1]!;
+      const known = knownByMuniSegment(pref, seg1);
+      if (known) {
+        muni = known.name;
+        muniCode = known.code;
+      } else if (/^\d{6}$/.test(seg1)) {
+        // decision 自治体は団体コード。名前は県シャード取得後に解決する
+        muniCode = seg1;
+      } else {
+        // 未知の自治体セグメント → 市区町村選択に丸める
+        screen = "muni";
+      }
+      if (muni !== null || muniCode) {
+        const slug = segments[2];
+        screen = slug && APP_SLUGS.has(slug) ? slug : "dash";
+      }
+    }
   } else if (PREF_NAMES.has(segments[0]!)) {
+    // 後方互換: 旧・日本語パス（/山梨県/甲府市…）も受ける
     pref = segments[0]!;
     if (segments.length === 1) {
       screen = "muni";
     } else {
       muni = segments[1]!;
+      const k = KNOWN_MUNIS.find((x) => x.pref === pref && x.name === muni);
+      muniCode = k?.code;
       const slug = segments[2];
       screen = slug && APP_SLUGS.has(slug) ? slug : "dash";
     }
@@ -128,7 +187,7 @@ export function pathToState(
     screen,
     pref,
     muni,
-    muniCode: knownMuniCode(pref, muni),
+    muniCode,
     budgetFy: g("fy") ?? undefined,
     drillSide: g("side") ?? "exp",
     drillPath: g("path")?.split("/").filter(Boolean) ?? [],
