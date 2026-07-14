@@ -25,8 +25,9 @@ const files = meta.files.map((f) => ({
 }));
 const doc = anyParsedDocSchema.parse(parser(files, source));
 writeJson(parsedPath(sourceId), doc);
-const what = doc.docType === "municipal-accounts" ? "自治体" : "款";
+const what = doc.docType === "municipal-accounts" ? "自治体" : doc.docType === "council-composition" ? "会派" : "款";
+const count = doc.docType === "council-composition" ? doc.factions.length : doc.facts.length;
 console.log(
-  `✓ ${sourceId}: ${files.length} ファイルから ${doc.facts.length} ${what}を抽出 → data/parsed/${sourceId}.json`,
+  `✓ ${sourceId}: ${files.length} ファイルから ${count} ${what}を抽出 → data/parsed/${sourceId}.json`,
 );
 console.log(`  次: bun run pipeline:validate ${sourceId}`);

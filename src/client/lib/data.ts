@@ -90,6 +90,7 @@ export { KOFU_EXECUTION, KOFU_EXECUTION_YEARS, type KofuExecutionYear } from './
 export { KOFU_R6_DETAIL } from './detail.gen';
 export { KOFU_TREND } from './trend.gen';
 export { KOFU_EVALUATION_YEARS, type KofuEvaluationYear } from './evaluations.gen';
+export { KOFU_COUNCIL, type KofuCouncil, type CouncilFaction } from './council.gen';
 export { KOFU_OUTTURN_YEARS, type KofuOutturnYear } from './outturn.gen';
 
 // 全国 決算（総務省 決算状況調・全1,741市町村）の索引・ビルダ

@@ -41,7 +41,7 @@ button { font-family: 'IBM Plex Sans JP', sans-serif; }
   [data-mq="ralign"]{ text-align:left !important; }
   [data-mq="arrow"]{ display:none !important; }
   [data-mq="statcard"]{ width:100% !important; justify-content:space-between !important; gap:14px !important; padding:14px 16px !important; flex-wrap:wrap !important; }
-  [data-mq="council"]{ grid-template-columns:12px 1fr 58px 84px !important; gap:8px !important; }
+  [data-mq="council"]{ grid-template-columns:12px 1fr 58px !important; gap:8px !important; }
   [data-mq="drill"]{ grid-template-columns:12px 1fr 80px 16px !important; gap:8px !important; }
   [data-mq="drill"] > :nth-child(3), [data-mq="drill"] > :nth-child(5){ display:none !important; }
   [data-mq="comp"]{ grid-template-columns:12px 1fr 80px 84px !important; gap:8px !important; }

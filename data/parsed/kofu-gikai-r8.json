@@ -1,0 +1,106 @@
+{
+  "docType": "council-composition",
+  "sourceId": "kofu-gikai-r8",
+  "parser": "kofu-gikai",
+  "parserVersion": "0.1.0",
+  "parsedAt": "2026-07-14T12:31:50.744Z",
+  "fiscalYear": "R8",
+  "body": "甲府市議会",
+  "seats": 32,
+  "asOf": "2025-05-01",
+  "factions": [
+    {
+      "name": "政和こうふ",
+      "seats": 10,
+      "isIndependent": false,
+      "locator": {
+        "file": "h270512kaihabetu.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "こうふ明水会",
+      "seats": 5,
+      "isIndependent": false,
+      "locator": {
+        "file": "h270512kaihabetu.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 4,
+      "isIndependent": false,
+      "locator": {
+        "file": "h270512kaihabetu.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "こうふ未来",
+      "seats": 4,
+      "isIndependent": false,
+      "locator": {
+        "file": "h270512kaihabetu.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 3,
+      "isIndependent": false,
+      "locator": {
+        "file": "h270512kaihabetu.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "政友クラブ",
+      "seats": 2,
+      "isIndependent": false,
+      "locator": {
+        "file": "h270512kaihabetu.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "市民クラブ",
+      "seats": 2,
+      "isIndependent": false,
+      "locator": {
+        "file": "h270512kaihabetu.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "無所属（山田弘之）",
+      "seats": 1,
+      "isIndependent": true,
+      "locator": {
+        "file": "h270512kaihabetu.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "無所属（村松裕美）",
+      "seats": 1,
+      "isIndependent": true,
+      "locator": {
+        "file": "h270512kaihabetu.html",
+        "row": 9
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第5号",
+    "billName": "令和8年度甲府市一般会計予算",
+    "sessionLabel": "令和8年3月定例会",
+    "decidedDate": "2026-03-25",
+    "decidedDateLabel": "令和8年3月25日",
+    "result": "可決",
+    "locator": {
+      "file": "shingikekka.html",
+      "row": 1
+    }
+  }
+}
