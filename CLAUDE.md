@@ -17,6 +17,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 パッケージマネージャは **bun**（lockfile は `bun.lock`）。npm / yarn / pnpm を使わず、`package-lock.json` を生成しないこと。
 
+**依存の約束事**（2026-07-14 に Next 16 + React 19 へ更新。`bun audit` は 0 件を維持する）:
+- **Excel を読むパーサは `import * as XLSX from "../lib/xlsx"`**（`"xlsx"` を直接 import しない）。SheetJS は
+  0.18.5 を最後に npm 公開を停止しており、脆弱性修正済みの版を**公式 CDN から devDependency として**入れている。
+  その ESM ビルドは `readFile`/`writeFile` が fs を自動で掴まないため、`pipeline/lib/xlsx.ts` で一度だけ
+  `set_fs` して re-export している。直接 import すると "Cannot access file …" で落ちる。
+- `postcss` は Next が 8.4.31 を固定するが脆弱性があるため package.json の `overrides` で 8.x 最新へ上げている。
+- React 19 でグローバル `JSX` 名前空間が廃止 → `React.JSX.IntrinsicElements` を使う。
+- Next 15 以降 **`params` / `searchParams` は Promise** → catch-all ルートでは `await` してから使う。
+
 ```bash
 bun install        # 依存インストール
 bun run dev        # 開発サーバ (http://localhost:3000)

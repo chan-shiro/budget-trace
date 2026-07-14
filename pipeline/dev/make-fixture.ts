@@ -1,7 +1,7 @@
 // 開発用フィクスチャ Excel を生成して raw 層に登録する。
 // 実データが投入できない環境でもパイプライン全体を end-to-end で検証するためのもの。
 // 使い方: bun run pipeline:fixture
-import * as XLSX from "xlsx";
+import * as XLSX from "../lib/xlsx";
 import { join } from "node:path";
 import { tmpdir } from "node:os";
 import { registerRawFile } from "../lib/store";

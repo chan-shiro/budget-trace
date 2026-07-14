@@ -19,17 +19,21 @@
     "pipeline:archive": "bun pipeline/archive.ts"
   },
   "dependencies": {
-    "next": "^14.2.35",
+    "next": "^16.2.10",
     "pdfjs-dist": "^6.1.200",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "xlsx": "^0.18.5",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
     "zod": "^4.4.3"
   },
   "devDependencies": {
     "@types/node": "20.14.10",
-    "@types/react": "18.3.3",
-    "@types/react-dom": "18.3.0",
-    "typescript": "5.5.3"
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "5.5.3",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  },
+  "overrides": {
+    "//": "next が postcss 8.4.31 を固定するが GHSA-qx2v-qp2m-jg93（CSS stringify の XSS）があるため 8.x 内で最新へ上げる",
+    "postcss": "^8.5.19"
   }
 }

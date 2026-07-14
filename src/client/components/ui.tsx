@@ -68,7 +68,8 @@ export function CountUpNum({
 
 // style-hover 相当：ホバー時に hoverStyle をマージする汎用要素
 type HoverBoxProps = {
-  as?: keyof JSX.IntrinsicElements;
+  // React 19 でグローバル JSX 名前空間が廃止されたため React.JSX を使う
+  as?: keyof React.JSX.IntrinsicElements;
   hoverStyle?: React.CSSProperties;
 } & React.HTMLAttributes<HTMLElement> &
   Record<string, unknown>;
@@ -80,17 +81,23 @@ export const HoverBox = React.forwardRef<HTMLElement, HoverBoxProps>(
   ) {
     const [h, setH] = React.useState(false);
     const El = as as React.ElementType;
+    // 任意 props（href・data-* など）を許す Record<string, unknown> との交差で、既知の
+    // props が unknown / {} に落ちるため、使う分だけ絞り込む（any は使わない）
+    type MouseHandler = ((e: React.MouseEvent<HTMLElement>) => void) | undefined;
+    const baseStyle = style as React.CSSProperties | undefined;
+    const enter = onMouseEnter as MouseHandler;
+    const leave = onMouseLeave as MouseHandler;
     return (
       <El
         ref={ref}
-        style={hoverStyle && h ? { ...style, ...hoverStyle } : style}
+        style={hoverStyle && h ? { ...baseStyle, ...hoverStyle } : baseStyle}
         onMouseEnter={(e: React.MouseEvent<HTMLElement>) => {
           if (hoverStyle) setH(true);
-          onMouseEnter?.(e);
+          enter?.(e);
         }}
         onMouseLeave={(e: React.MouseEvent<HTMLElement>) => {
           if (hoverStyle) setH(false);
-          onMouseLeave?.(e);
+          leave?.(e);
         }}
         {...rest}
       >

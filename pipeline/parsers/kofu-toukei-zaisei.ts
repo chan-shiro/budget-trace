@@ -6,7 +6,7 @@
 //   款行: col0=款名（字間スペース入り）, col2-4 = 3値
 //   項行: col0=null, col1=項名, col2-4 = 3値
 //   総額行: col0="総　額"。col5 以降の注記列は無視する
-import * as XLSX from "xlsx";
+import * as XLSX from "../lib/xlsx";
 import type { BudgetOutturnDoc, OutturnLineFact, SourceEntry } from "../types";
 
 export const PARSER_VERSION = "0.1.0";

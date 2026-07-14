@@ -13,7 +13,7 @@
 //   末尾の「（参考）一般行政経費」ブロックは款の名前を再掲するため列解決から除外する
 // - フィクスチャ（dev/make-fixture.ts）は1ファイル・1行ヘッダに全列が載る形式。
 //   同じ列解決ロジック（ヘッダ行に科目名が直接ある場合）で通る
-import * as XLSX from "xlsx";
+import * as XLSX from "../lib/xlsx";
 import type { Locator, MuniAccountFact, ParsedDoc, SourceEntry } from "../types";
 
 export const PARSER_VERSION = "0.2.0";

@@ -8,7 +8,7 @@
 //   - 目標達成状況: 活動指標・成果指標ごとに 目標値（〜5年）／実績値（決算年度分）
 // 予算→執行→成果を1事業で通して見られる唯一の一次資料。公表は各年サンプル数件のみ。
 import { readFileSync } from "node:fs";
-import * as XLSX from "xlsx";
+import * as XLSX from "../lib/xlsx";
 import type { ProjectReportDoc, ProjectReportFact, SourceEntry } from "../types";
 
 export const PARSER_VERSION = "0.1.0";

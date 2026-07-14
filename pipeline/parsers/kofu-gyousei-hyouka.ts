@@ -6,7 +6,7 @@
 //   list-simple (R1・R2・H29・H30 xls(x)): 施策/小施策/事務事業名/区分/部/室/課/評価結果
 //   form-pdf (R4・R5 pdf): form-plus-plan の評価票と同じ列構成の PDF 表
 import { execFileSync } from "node:child_process";
-import * as XLSX from "xlsx";
+import * as XLSX from "../lib/xlsx";
 import type { ProjectEvaluationDoc, ProjectEvaluationFact, SourceEntry } from "../types";
 
 export const PARSER_VERSION = "0.1.0";
