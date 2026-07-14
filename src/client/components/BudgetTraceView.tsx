@@ -310,7 +310,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                 <section style={S("background:#F0F7FB; border:1px solid #CFE0EA; border-radius:14px; padding:18px 22px; margin-bottom:6px;")}>
                   <h2 style={S("margin:0 0 8px; font-size:15px; font-weight:700;")}>{v.budgetPanelTitle}</h2>
                   <p style={S("margin:0 0 12px; font-size:12.5px; color:#5C6B77; line-height:1.7;")}>{v.budgetPanelBody}</p>
-                  <a href={v.budgetRequestUrl} target="_blank" rel="noopener noreferrer" style={S("display:inline-block; font-size:12.5px; border:1px solid #1798D0; color:#0F76A3; border-radius:999px; padding:6px 16px; text-decoration:none;")}>{v.isPref ? "決算・執行状況の収録をリクエスト ↗" : "この自治体の事業・執行・評価の収録をリクエスト ↗"}</a>
+                  <a href={v.budgetRequestUrl} target="_blank" rel="noopener noreferrer" style={S("display:inline-block; font-size:12.5px; border:1px solid #1798D0; color:#0F76A3; border-radius:999px; padding:6px 16px; text-decoration:none;")}>{v.budgetRequestLabel}</a>
                 </section>
                 )}
 
@@ -657,6 +657,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                   <p style={S("margin:12px 2px 0; font-size:12px; color:#5C6B77;")}>{v.execAsOfNote}。残額＝予算現額−{v.execSettledColLabel}。</p>
                 </section>
 
+                {v.showTrend && (
                 <section style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:20px 24px; margin-bottom:22px;")}>
                   <h2 style={S("margin:0 0 4px; font-size:16px; font-weight:700;")}>決算の推移（普通会計・令和2〜6年度）</h2>
                   <p style={S("margin:0 0 16px; font-size:12.5px; color:#5C6B77;")}>総務省「市町村別決算状況調」による確定決算の経年推移です。</p>
@@ -687,6 +688,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                     <a href={v.trendSourceUrl} target="_blank" rel="noopener noreferrer" style={S("color:#5C6B77;")}>出典：総務省「市町村別決算状況調」各年度（年度ラベルから各年度ページへ） ↗</a>
                   </p>
                 </section>
+                )}
 
                 {v.showEvidence && (
                   <section>

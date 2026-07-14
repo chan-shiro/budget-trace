@@ -1,0 +1,338 @@
+{
+  "docType": "budget-execution",
+  "sourceId": "yamanashi-kessan-r6",
+  "parser": "yamanashi-kessan",
+  "parserVersion": "0.1.0",
+  "parsedAt": "2026-07-14T02:53:22.654Z",
+  "unit": "yen",
+  "fiscalYear": "R6",
+  "account": "一般会計",
+  "asOf": "令和6年度決算（確定値）",
+  "basis": "確定",
+  "population": null,
+  "revenueBudgetTotal": 670046789557,
+  "revenueSettledTotal": 571305119222,
+  "expenditureBudgetTotal": 670046789557,
+  "expenditureSettledTotal": 553030730401,
+  "facts": [
+    {
+      "side": "revenue",
+      "name": "県税",
+      "currentBudget": 106103382000,
+      "settled": 107321812008,
+      "ratePct": 101.1,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "地方消費税清算金",
+      "currentBudget": 44054380000,
+      "settled": 44056323589,
+      "ratePct": 100,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "地方譲与税",
+      "currentBudget": 18941008000,
+      "settled": 18952736000,
+      "ratePct": 100.1,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "地方特例交付金",
+      "currentBudget": 2846814000,
+      "settled": 2846813000,
+      "ratePct": 99.9,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "地方交付税",
+      "currentBudget": 147188767000,
+      "settled": 147254260000,
+      "ratePct": 100,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "交通安全対策特別交付金",
+      "currentBudget": 216000000,
+      "settled": 170584000,
+      "ratePct": 79,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "分担金及び負担金",
+      "currentBudget": 4274621429,
+      "settled": 2584106920,
+      "ratePct": 60.5,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "使用料及び手数料",
+      "currentBudget": 7223847000,
+      "settled": 7116983566,
+      "ratePct": 98.5,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "国庫支出金",
+      "currentBudget": 114972274716,
+      "settled": 76250156468,
+      "ratePct": 66.3,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "財産収入",
+      "currentBudget": 797582000,
+      "settled": 901988036,
+      "ratePct": 113.1,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "寄附金",
+      "currentBudget": 875826000,
+      "settled": 920931521,
+      "ratePct": 105.2,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "繰入金",
+      "currentBudget": 12026522000,
+      "settled": 11811777810,
+      "ratePct": 98.2,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "繰越金",
+      "currentBudget": 19350488595,
+      "settled": 19350488185,
+      "ratePct": 100,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "諸収入",
+      "currentBudget": 91203276817,
+      "settled": 75055158119,
+      "ratePct": 82.3,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "県債",
+      "currentBudget": 99972000000,
+      "settled": 56711000000,
+      "ratePct": 56.7,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "議会費",
+      "currentBudget": 1051474000,
+      "settled": 1004204889,
+      "ratePct": 95.5,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "総務費",
+      "currentBudget": 47809288597,
+      "settled": 38625792386,
+      "ratePct": 80.8,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "民生費",
+      "currentBudget": 72882241547,
+      "settled": 64864402450,
+      "ratePct": 89,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "衛生費",
+      "currentBudget": 20160267760,
+      "settled": 17756964626,
+      "ratePct": 88.1,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "労働費",
+      "currentBudget": 2884357000,
+      "settled": 1762693118,
+      "ratePct": 61.1,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "農林水産業費",
+      "currentBudget": 48425977012,
+      "settled": 32545169947,
+      "ratePct": 67.2,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "商工費",
+      "currentBudget": 80643396618,
+      "settled": 60961342937,
+      "ratePct": 75.6,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "土木費",
+      "currentBudget": 154857820205,
+      "settled": 99939769794,
+      "ratePct": 64.5,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "警察費",
+      "currentBudget": 26072900540,
+      "settled": 25726142281,
+      "ratePct": 98.7,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "教育費",
+      "currentBudget": 93103922300,
+      "settled": 89224643739,
+      "ratePct": 95.8,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "災害復旧費",
+      "currentBudget": 2486436978,
+      "settled": 1475310287,
+      "ratePct": 59.3,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "公債費",
+      "currentBudget": 74139881000,
+      "settled": 74089441505,
+      "ratePct": 99.9,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "諸支出金",
+      "currentBudget": 45378629000,
+      "settled": 45054852442,
+      "ratePct": 99.3,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "予備費",
+      "currentBudget": 150197000,
+      "settled": 0,
+      "ratePct": 0,
+      "locator": {
+        "file": "r6kessannjokyou.pdf",
+        "page": 5
+      }
+    }
+  ]
+}

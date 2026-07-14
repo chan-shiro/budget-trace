@@ -1,0 +1,11 @@
+{
+  "sourceId": "yamanashi-kessan-r6",
+  "validatedAt": "2026-07-14T02:53:22.686Z",
+  "status": "ok",
+  "issues": [
+    {
+      "level": "warning",
+      "message": "歳入 地方特例交付金: 記載率 99.9% と再計算 100.00% が乖離（列の取り違えの可能性）"
+    }
+  ]
+}

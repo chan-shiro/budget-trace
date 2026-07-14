@@ -452,6 +452,22 @@ export const SOURCES: SourceEntry[] = [
       expenditureTotalLabel: "合計",
     },
   },
+  {
+    // 山梨県（都道府県・団体コード 190004）R6 一般会計決算「決算の状況」PDF。
+    // 款別の予算現額・決算額・執行率（歳出）／収入率（歳入）。単位=円（円→億は /1e8）。
+    // 当初予算（yamanashi-yosansho-r8）と対で、budget→full へ寄せる決算・執行率の原典。
+    id: "yamanashi-kessan-r6",
+    title: "令和6年度 山梨県一般会計決算の状況（款別・執行率）",
+    publisher: "山梨県",
+    url: null,
+    urls: ["https://www.pref.yamanashi.jp/documents/5948/r6kessannjokyou.pdf"],
+    landingPage: "https://www.pref.yamanashi.jp/sui-kai/163_003.html",
+    kind: "pdf",
+    fiscalYear: "R6",
+    scope: "山梨県（一般会計・都道府県・団体コード190004）",
+    license: "山梨県ウェブサイト掲載資料（利用条件は同サイト参照）",
+    parser: "yamanashi-kessan",
+  },
   // 甲府市の決算状況「収入支出詳細」HTML ページ。款別の予算現額・収入/支出済額・
   // 収入率/執行率（出納整理後の**確定値**）＋市税の内訳（予算現額のみ）。
   // 過去の執行を確定値で辿る本命資料。R3 は年度ページ・詳細ページとも市サイトから

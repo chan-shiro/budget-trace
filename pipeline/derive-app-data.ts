@@ -602,7 +602,7 @@ const EXEC_YEARS = [
   { srcId: "kofu-kessan-syousai-r1", fy: "R1" },
 ] as const;
 
-function buildExecYear(entry: (typeof EXEC_YEARS)[number]) {
+function buildExecYear(entry: { srcId: string; fy: string; refLabelBase?: string }) {
   const { srcId, fy } = entry;
   const validation = validationResultSchema.parse(readJson(validationPath(srcId)));
   if (validation.status !== "ok") {
@@ -618,12 +618,14 @@ function buildExecYear(entry: (typeof EXEC_YEARS)[number]) {
   const file = meta.files[0]!;
   const url = source.urls?.[0] ?? source.landingPage ?? "";
   const isFinal = doc.basis === "確定";
-  const refLabelBase = isFinal ? "決算状況 収入支出詳細" : "財政事情";
+  // 甲府（万円→千円）は toOku(/1e5)、山梨県（円）は yenToOku(/1e8）
+  const okuOf = (n: number) => (doc.unit === "yen" ? n / 1e8 : n / 100_000);
+  const refLabelBase = entry.refLabelBase ?? (isFinal ? "決算状況 収入支出詳細" : "財政事情");
 
   const row = (f: (typeof doc.facts)[number]) => ({
     name: f.name,
-    budgetOku: toOku(f.currentBudget),
-    settledOku: toOku(f.settled),
+    budgetOku: okuOf(f.currentBudget),
+    settledOku: okuOf(f.settled),
     ratePct: f.ratePct,
     ref: `${file.filename}#${f.locator.page != null ? `p${f.locator.page}` : `row${f.locator.row}`}`,
     refLabel: f.locator.page != null ? `${refLabelBase} p.${f.locator.page}` : `${refLabelBase} ${f.locator.row}行目`,
@@ -641,10 +643,10 @@ function buildExecYear(entry: (typeof EXEC_YEARS)[number]) {
       ? "出納整理後の決算確定値。予算現額は補正・繰越を含むため当初予算とは一致しません"
       : "出納整理期間前の年度末速報値。予算現額は補正・繰越を含むため当初予算とは一致しません",
     population: doc.population,
-    revenueBudgetTotalOku: toOku(doc.revenueBudgetTotal),
-    revenueSettledTotalOku: toOku(doc.revenueSettledTotal),
-    expenditureBudgetTotalOku: toOku(doc.expenditureBudgetTotal),
-    expenditureSettledTotalOku: toOku(doc.expenditureSettledTotal),
+    revenueBudgetTotalOku: okuOf(doc.revenueBudgetTotal),
+    revenueSettledTotalOku: okuOf(doc.revenueSettledTotal),
+    expenditureBudgetTotalOku: okuOf(doc.expenditureBudgetTotal),
+    expenditureSettledTotalOku: okuOf(doc.expenditureSettledTotal),
     revenue: doc.facts.filter((f) => f.side === "revenue").map(row),
     expenditure: doc.facts.filter((f) => f.side === "expenditure").map(row),
     sourceTitle: source.title,
@@ -1247,6 +1249,11 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;
+  // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
+  // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。
+  const MUNI_EXEC_SOURCES: Record<string, { srcId: string; fy: string; refLabelBase: string }> = {
+    "190004": { srcId: "yamanashi-kessan-r6", fy: "R6", refLabelBase: "決算の状況" },
+  };
   const popDs = normalizedDatasetSchema.parse(readJson(normalizedPath("municipal-accounts", "R6", false)));
   const TOP_REVENUE = 8; // 歳入ドーナツの上位款数（残りは「その他」に集約し内訳を children に）
 
@@ -1322,6 +1329,8 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       // 都道府県エンティティか（類似自治体比較を出さない・ラベルを変える）
       isPref: b.isPref,
       projects,
+      // 決算＋執行率（収録できた自治体のみ。当初予算とは別年度でよい）
+      execution: MUNI_EXEC_SOURCES[b.muniCode] ? [buildExecYear(MUNI_EXEC_SOURCES[b.muniCode]!)] : [],
       fy: doc.fiscalYear,
       fyLabel: `令和${doc.fiscalYear.slice(1)}年度 当初予算`,
       population: popRec.population,
@@ -1386,6 +1395,42 @@ export interface MuniProject {
   refLocalUrl: string;
 }
 
+/** 決算＋執行率の1行（款別）。KofuExecRow と同形 */
+export interface MuniExecRow {
+  name: string;
+  /** 予算現額（億円・補正/繰越込み） */
+  budgetOku: number;
+  /** 収入済額（歳入）/ 支出済額（歳出）（億円） */
+  settledOku: number;
+  /** 資料記載の収入率/執行率（%）。予算現額0の款は null */
+  ratePct: number | null;
+  ref: string;
+  refLabel: string;
+  /** 内訳（甲府の市税内訳など。山梨県決算にはないので通常 undefined） */
+  breakdownNote?: string;
+}
+
+/** 決算＋執行率の1年度分（款別歳入歳出・KofuExecutionYear と同形） */
+export interface MuniExecutionYear {
+  fy: string;
+  basis: "速報" | "確定";
+  fyLabel: string;
+  asOf: string;
+  asOfNote: string;
+  population: number | null;
+  revenueBudgetTotalOku: number;
+  revenueSettledTotalOku: number;
+  expenditureBudgetTotalOku: number;
+  expenditureSettledTotalOku: number;
+  revenue: MuniExecRow[];
+  expenditure: MuniExecRow[];
+  sourceTitle: string;
+  sourceUrl: string;
+  originUrl: string;
+  sourceLocalUrl: string;
+  evidence: { title: string; type: string; url: string; localUrl: string; source: string; thumb: string }[];
+}
+
 export interface MuniBudget {
   muniCode: string;
   muniName: string;
@@ -1404,6 +1449,8 @@ export interface MuniBudget {
   expenditure: MuniKanRow[];
   /** 主な事業（豊川・和泉のみ。他市は空配列） */
   projects: MuniProject[];
+  /** 決算＋執行率（山梨県のみ。当初予算とは別年度。他は空配列） */
+  execution: MuniExecutionYear[];
   sourceTitle: string;
   sourceUrl: string;
   originUrl: string;

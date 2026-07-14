@@ -1,0 +1,12 @@
+{
+  "sourceId": "yamanashi-kessan-r6",
+  "files": [
+    {
+      "filename": "r6kessannjokyou.pdf",
+      "sha256": "4ac0b9855c4a8e1c6f7d1875b25dd5cce4dadff852628203547959ac132b870c",
+      "bytes": 1339880,
+      "fetchedAt": "2026-07-14T02:48:25.401Z",
+      "fetchedFrom": "https://www.pref.yamanashi.jp/documents/5948/r6kessannjokyou.pdf"
+    }
+  ]
+}

@@ -105,7 +105,7 @@ export {
 
 // budget 階層（類似4市の当初予算・款別歳入歳出＋前年比較）
 import { BUDGET_MUNIS, MUNI_BUDGETS } from './munibudgets.gen';
-export { BUDGET_MUNIS, MUNI_BUDGETS, type MuniBudget, type MuniKanRow, type MuniProject } from './munibudgets.gen';
+export { BUDGET_MUNIS, MUNI_BUDGETS, type MuniBudget, type MuniKanRow, type MuniProject, type MuniExecutionYear, type MuniExecRow } from './munibudgets.gen';
 
 /**
  * カバレッジ階層。
