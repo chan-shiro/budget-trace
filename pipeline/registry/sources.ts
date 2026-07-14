@@ -705,6 +705,27 @@ export const SOURCES: SourceEntry[] = [
     parserOptions: { revenuePage: 1, expenditurePage: 2 },
   },
   {
+    // 甲府市議会の構成（予算議決時）。2ページを束ねる:
+    //   [0] 所属会派別議員名簿（会派ごとに1テーブル・各行=議員1名 → 会派別議席数）
+    //   [1] 令和8年3月定例会 審議結果（議案第5号 = 令和8年度一般会計予算の議決日・結果）
+    // いずれも HTML テーブル。定数32・現員32（会派の和＝32で確認）。
+    // 賛否内訳・会派別賛否は非公表（起立採決で「可決」のみ）なので収録しない。
+    id: "kofu-gikai-r8",
+    title: "令和8年度 甲府市議会の構成（会派別議席数）と当初予算の議決",
+    publisher: "甲府市議会",
+    url: null,
+    urls: [
+      "https://www.city.kofu.yamanashi.jp/gikai-somu/shise/gikai/mebo/h270512kaihabetu.html",
+      "https://www.city.kofu.yamanashi.jp/gijichosa/r0803/shingikekka.html",
+    ],
+    landingPage: "https://www.city.kofu.yamanashi.jp/gikai-somu/shise/gikai/mebo/giinmeibo.html",
+    kind: "page",
+    fiscalYear: "R8",
+    scope: "甲府市議会（定数32・団体コード192015）",
+    license: "甲府市議会ウェブサイト掲載資料（利用条件は同サイト参照）",
+    parser: "kofu-gikai",
+  },
+  {
     // 開発用フィクスチャ: 上記と同じ構造の小さな Excel を dev/make-fixture.ts が
     // 生成する。パイプラインの end-to-end 検証専用。normalized 出力は
     // data/normalized/_fixtures/ に隔離され、アプリからは import しない。

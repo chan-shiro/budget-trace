@@ -379,6 +379,56 @@ export const municipalNatureDocSchema = z.object({
 });
 export type MunicipalNatureDoc = z.infer<typeof municipalNatureDocSchema>;
 
+// ---- 議会の構成（予算議決時）: 会派別議席数＋当初予算の議決 -------------------
+// 甲府市議会の所属会派別議員名簿（会派→議席数）と、令和8年3月定例会 審議結果
+// （一般会計当初予算の議案番号・議決日・結果）。賛否内訳・会派別賛否は非公表
+// （起立採決で「可決」のみ）なので保持しない — 推測で埋めない。
+export const councilFactionFactSchema = z.object({
+  /** 会派名（無所属は議員名で一意化） */
+  name: z.string().min(1),
+  /** 議席数（名簿の実員数を数えた値） */
+  seats: z.number().int().positive(),
+  /** 無所属（会派に属さない議員）か */
+  isIndependent: z.boolean(),
+  locator: locatorSchema,
+});
+export type CouncilFactionFact = z.infer<typeof councilFactionFactSchema>;
+
+export const councilResolutionSchema = z.object({
+  /** 議案番号（例: 議案第5号） */
+  billNo: z.string().min(1),
+  /** 件名（例: 令和8年度甲府市一般会計予算） */
+  billName: z.string().min(1),
+  /** 会期（例: 令和8年3月定例会） */
+  sessionLabel: z.string().min(1),
+  /** 議決日 ISO（例: 2026-03-25） */
+  decidedDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  /** 議決日 和暦表記（例: 令和8年3月25日） */
+  decidedDateLabel: z.string().min(1),
+  /** 結果（例: 可決） */
+  result: z.string().min(1),
+  locator: locatorSchema,
+});
+
+export const councilCompositionDocSchema = z.object({
+  docType: z.literal("council-composition"),
+  sourceId: z.string(),
+  parser: z.string(),
+  parserVersion: z.string(),
+  parsedAt: z.string(),
+  /** 予算年度（議決対象の当初予算の年度） */
+  fiscalYear: z.string(),
+  /** 議会名（例: 甲府市議会） */
+  body: z.string().min(1),
+  /** 定数（＝会派の議席合計。当市は現員=定数=32） */
+  seats: z.number().int().positive(),
+  /** 会派構成の基準日 ISO（名簿の更新日） */
+  asOf: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  factions: z.array(councilFactionFactSchema),
+  resolution: councilResolutionSchema,
+});
+export type CouncilCompositionDoc = z.infer<typeof councilCompositionDocSchema>;
+
 /** parse/validate が受け取り得る全ドキュメント型 */
 export const anyParsedDocSchema = z.union([
   budgetBookDocSchema,
@@ -386,6 +436,7 @@ export const anyParsedDocSchema = z.union([
   projectEvaluationDocSchema,
   budgetOutturnDocSchema,
   municipalNatureDocSchema,
+  councilCompositionDocSchema,
   parsedDocSchema,
 ]);
 export type AnyParsedDoc = z.infer<typeof anyParsedDocSchema>;

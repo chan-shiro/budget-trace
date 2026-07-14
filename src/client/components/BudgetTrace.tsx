@@ -8,7 +8,7 @@ import BudgetTraceView from "./BudgetTraceView";
 
 const {
   GLOSS, SIM_MIX_COLS, SIMILAR, SIMILAR_EVIDENCE, SOURCES,
-  KOFU_BUDGET_YEARS, KOFU_PROJECT_YEARS, KOFU_EXECUTION_YEARS, KOFU_EVALUATION_YEARS, KOFU_OUTTURN_YEARS, KOFU_R6_DETAIL, KOFU_TREND,
+  KOFU_BUDGET_YEARS, KOFU_PROJECT_YEARS, KOFU_EXECUTION_YEARS, KOFU_EVALUATION_YEARS, KOFU_OUTTURN_YEARS, KOFU_R6_DETAIL, KOFU_TREND, KOFU_COUNCIL,
   muniFromBudget, fmtOku, pctOf, fmtPerCap, fadeColor, donutBg, setPalette,
 } = D;
 
@@ -820,6 +820,43 @@ export default function BudgetTrace() {
     trendSourceUrl: KOFU_TREND[KOFU_TREND.length - 1]?.landingUrl ?? "",
     // 決算の推移は KOFU_TREND（甲府の総務省決算）ベース。full（甲府）だけで出す
     showTrend: isFull,
+    // 議会の構成（予算議決時）。full（甲府）だけ。会派別議席数の横バー＋一覧＋議決チップ。
+    // 賛否内訳は非公表なので出さない（会派ごとの stance 列も持たない）。
+    council: isFull
+      ? {
+          body: KOFU_COUNCIL.body,
+          seats: KOFU_COUNCIL.seats,
+          asOfLabel: KOFU_COUNCIL.asOfLabel,
+          fyLabel: KOFU_COUNCIL.fyLabel,
+          factions: KOFU_COUNCIL.factions.map((f, i) => {
+            const sw = D.PALETTE[i % D.PALETTE.length];
+            const pct = ((f.seats / KOFU_COUNCIL.seats) * 100).toFixed(1);
+            return {
+              name: f.name,
+              seatsLabel: `${f.seats}議席`,
+              w: pct,
+              sw,
+              tipMove: mkSegTip(f.name, `${f.seats}議席`, `${pct}%`, sw, { key: "council", idx: i }),
+            };
+          }),
+          resolution: KOFU_COUNCIL.resolution,
+          sourceTitle: KOFU_COUNCIL.sourceTitle,
+          rosterOpen: () =>
+            openViewer({
+              url: KOFU_COUNCIL.roster.localUrl, title: KOFU_COUNCIL.roster.title,
+              sub: `${KOFU_COUNCIL.asOfLabel}現在`, originUrl: KOFU_COUNCIL.roster.originUrl,
+              archiveUrl: KOFU_COUNCIL.roster.archiveUrl,
+            }),
+          resultOpen: () =>
+            openViewer({
+              url: KOFU_COUNCIL.result.localUrl, title: KOFU_COUNCIL.result.title,
+              sub: KOFU_COUNCIL.resolution.decidedDateLabel, originUrl: KOFU_COUNCIL.result.originUrl,
+              archiveUrl: KOFU_COUNCIL.result.archiveUrl,
+            }),
+          minutesUrl: KOFU_COUNCIL.minutesUrl,
+          newsletterUrl: KOFU_COUNCIL.newsletterUrl,
+        }
+      : null,
     showEvidence,
     onPrefSelect: (name: string) => nav({ screen: "muni", pref: name }),
     mapColorMode,

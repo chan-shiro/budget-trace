@@ -248,6 +248,29 @@ if (doc.docType === "municipal-nature") {
   finish(doc.facts.length, "自治体");
 }
 
+// ---- 議会の構成（会派別議席数）＋当初予算の議決 -------------------------------
+if (doc.docType === "council-composition") {
+  const seenFaction = new Set<string>();
+  for (const f of doc.factions) {
+    if (seenFaction.has(f.name)) issues.push({ level: "error", message: `会派「${f.name}」が重複` });
+    seenFaction.add(f.name);
+    if (f.seats <= 0) issues.push({ level: "error", message: `会派「${f.name}」の議席数が不正 (${f.seats})` });
+  }
+  // 会派の議席合計 = 定数（当市は現員=定数）。ズレは名簿とりこぼしの兆候
+  const sum = doc.factions.reduce((s, f) => s + f.seats, 0);
+  if (sum !== doc.seats) {
+    issues.push({ level: "error", message: `会派議席の和 ${sum} が定数 ${doc.seats} と一致しません` });
+  }
+  if (doc.factions.length < 2) {
+    issues.push({ level: "warning", message: `会派数が少なすぎます（${doc.factions.length}）— 取りこぼしの可能性` });
+  }
+  // 議決の必須項目
+  const r = doc.resolution;
+  if (!r.billName.includes("予算")) issues.push({ level: "error", message: `議決の件名が予算ではありません: ${r.billName}` });
+  if (!/可決|否決|修正/.test(r.result)) issues.push({ level: "warning", message: `議決結果が想定外: ${r.result}` });
+  finish(doc.factions.length, "会派");
+}
+
 if (doc.docType !== "municipal-accounts") {
   throw new Error(`未知の docType: ${(doc as { docType: string }).docType}`);
 }

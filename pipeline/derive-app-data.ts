@@ -809,6 +809,113 @@ export const KOFU_EVALUATION_YEARS: KofuEvaluationYear[] = ${JSON.stringify(eval
 }
 
 // ============================================================================
+// 議会の構成（予算議決時）→ src/client/lib/council.gen.ts
+// 甲府市議会の会派別議席数＋当初予算の議決（会派名簿・審議結果の2 HTML）。
+// 賛否内訳・会派別賛否は非公表なので持たない。エビデンスは名簿と審議結果の2件
+// （各 ①発行元 ②Wayback ③自サーバー配信）＋参考の会議録検索・議会だより。
+// ============================================================================
+{
+  const srcId = "kofu-gikai-r8";
+  const v = validationResultSchema.parse(readJson(validationPath(srcId)));
+  if (v.status !== "ok") throw new Error(`${srcId}: 検証が ${v.status} のため derive しません`);
+  const doc = anyParsedDocSchema.parse(readJson(parsedPath(srcId)));
+  if (doc.docType !== "council-composition") throw new Error(`${srcId}: council-composition ではありません`);
+  const meta = readRawMeta(srcId);
+  if (!meta) throw new Error(`${srcId}: raw-meta がありません`);
+  const src = findSource(srcId);
+  const rosterFile = meta.files.find((f) => /kaiha/i.test(f.filename)) ?? meta.files[0]!;
+  const resultFile = meta.files.find((f) => /kekka|shingi/i.test(f.filename)) ?? meta.files[1]!;
+  const rosterOrigin = src.urls![0]!;
+  const resultOrigin = src.urls![1]!;
+  const asOfLabel = doc.asOf.replace(/^(\d{4})-(\d{2})-(\d{2})$/, (_m, y, mo, d) => `${y}年${Number(mo)}月${Number(d)}日`);
+  const council = {
+    body: doc.body,
+    seats: doc.seats,
+    asOf: doc.asOf,
+    asOfLabel,
+    fyLabel: "令和8年度 当初予算",
+    factions: doc.factions.map((f) => ({ name: f.name, seats: f.seats, isIndependent: f.isIndependent })),
+    resolution: {
+      billNo: doc.resolution.billNo,
+      billName: doc.resolution.billName,
+      sessionLabel: doc.resolution.sessionLabel,
+      decidedDate: doc.resolution.decidedDate,
+      decidedDateLabel: doc.resolution.decidedDateLabel,
+      result: doc.resolution.result,
+    },
+    sourceTitle: src.title,
+    // ①発行元 ②Wayback ③自サーバー配信（HTML はサンドボックス iframe で開く）
+    roster: {
+      title: "所属会派別議員名簿",
+      localUrl: `/sources/${srcId}/${rosterFile.filename}`,
+      originUrl: rosterOrigin,
+      archiveUrl: wayback(rosterOrigin),
+    },
+    result: {
+      title: `${doc.resolution.sessionLabel} 審議結果`,
+      localUrl: `/sources/${srcId}/${resultFile.filename}`,
+      originUrl: resultOrigin,
+      archiveUrl: wayback(resultOrigin),
+    },
+    // 参考（二次エビデンス・パイプライン外の外部リンク）
+    minutesUrl: "https://www.city.kofu.yamanashi.dbsr.jp/",
+    newsletterUrl: "https://www.city.kofu.yamanashi.jp/gijichosa/shise/gikai/koho/r08.html",
+  };
+  const councilOut = `// このファイルは自動生成です。手で編集しないこと。
+// 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
+// 出典: 甲府市議会 所属会派別議員名簿（${asOfLabel}現在）＋令和8年3月定例会 審議結果。
+// 賛否内訳・会派別賛否は非公表（起立採決で「可決」のみ）のため持たない。
+
+export interface CouncilFaction {
+  name: string;
+  seats: number;
+  isIndependent: boolean;
+}
+export interface CouncilEvidence {
+  title: string;
+  /** 自サーバー配信の原本コピー（③・サンドボックス iframe で開く） */
+  localUrl: string;
+  /** 発行元（①） */
+  originUrl: string;
+  /** Wayback 魚拓（②） */
+  archiveUrl: string;
+}
+export interface KofuCouncil {
+  /** 議会名 */
+  body: string;
+  /** 定数（＝現員＝会派議席合計） */
+  seats: number;
+  /** 会派構成の基準日 ISO */
+  asOf: string;
+  asOfLabel: string;
+  /** 議決対象の予算 */
+  fyLabel: string;
+  factions: CouncilFaction[];
+  resolution: {
+    billNo: string;
+    billName: string;
+    sessionLabel: string;
+    decidedDate: string;
+    decidedDateLabel: string;
+    result: string;
+  };
+  sourceTitle: string;
+  roster: CouncilEvidence;
+  result: CouncilEvidence;
+  minutesUrl: string;
+  newsletterUrl: string;
+}
+
+/** 甲府市議会の構成（予算議決時） */
+export const KOFU_COUNCIL: KofuCouncil = ${JSON.stringify(council, null, 2)};
+`;
+  writeFileSync(join(process.cwd(), "src/client/lib/council.gen.ts"), councilOut, "utf8");
+  console.log(
+    `✓ 議会の構成を導出 → src/client/lib/council.gen.ts（${council.factions.length}会派・定数${council.seats}・${council.resolution.result}）`,
+  );
+}
+
+// ============================================================================
 // 統計書 財政章（款項×当初/最終/決算）→ src/client/lib/outturn.gen.ts
 // 款別ドリルダウンの項テーブル（当初→最終→決算）の原典。単位は円 → 億円へ変換。
 // R3 歳出の「当初予算額」列は原典側の誤植（R2 の値のコピー。歳入側は正しく、
