@@ -110,13 +110,13 @@ export const KOFU_COUNCIL: KofuCouncil = {
     "title": "所属会派別議員名簿",
     "localUrl": "/sources/kofu-gikai-r8/h270512kaihabetu.html",
     "originUrl": "https://www.city.kofu.yamanashi.jp/gikai-somu/shise/gikai/mebo/h270512kaihabetu.html",
-    "archiveUrl": "https://web.archive.org/web/20240910021519/https://www.city.kofu.yamanashi.jp/gikai-somu/shise/gikai/mebo/h270512kaihabetu.html"
+    "archiveUrl": "https://web.archive.org/web/20260714124525/https://www.city.kofu.yamanashi.jp/gikai-somu/shise/gikai/mebo/h270512kaihabetu.html"
   },
   "result": {
     "title": "令和8年3月定例会 審議結果",
     "localUrl": "/sources/kofu-gikai-r8/shingikekka.html",
     "originUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/r0803/shingikekka.html",
-    "archiveUrl": "https://web.archive.org/web/20260521083518/https://www.city.kofu.yamanashi.jp/gijichosa/r0803/shingikekka.html"
+    "archiveUrl": "https://web.archive.org/web/20260714124615/https://www.city.kofu.yamanashi.jp/gijichosa/r0803/shingikekka.html"
   },
   "minutesUrl": "https://www.city.kofu.yamanashi.dbsr.jp/",
   "newsletterUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/shise/gikai/koho/r08.html"
