@@ -94,6 +94,70 @@
       "checkedAt": "2026-07-14T13:33:24.955Z"
     },
     {
+      "sourceId": "kofu-gikai-r4",
+      "url": "https://www.city.kofu.yamanashi.jp/gijichosa/r0403/shingikekka.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260215161610/https://www.city.kofu.yamanashi.jp/gijichosa/r0403/shingikekka.html",
+      "waybackTimestamp": "20260215161610",
+      "checkedAt": "2026-07-14T13:34:06.404Z"
+    },
+    {
+      "sourceId": "kofu-gikai-r4",
+      "url": "https://www.city.kofu.yamanashi.jp/gikai-somu/shise/gikai/mebo/giinmeibo.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260714124907/https://www.city.kofu.yamanashi.jp/gikai-somu/shise/gikai/mebo/giinmeibo.html",
+      "waybackTimestamp": "20260714124907",
+      "checkedAt": "2026-07-14T13:34:14.978Z"
+    },
+    {
+      "sourceId": "kofu-gikai-r5",
+      "url": "https://www.city.kofu.yamanashi.jp/gijichosa/r0503/shingikekka.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260116054107/https://www.city.kofu.yamanashi.jp/gijichosa/r0503/shingikekka.html",
+      "waybackTimestamp": "20260116054107",
+      "checkedAt": "2026-07-14T13:35:11.063Z"
+    },
+    {
+      "sourceId": "kofu-gikai-r5",
+      "url": "https://www.city.kofu.yamanashi.jp/gikai-somu/shise/gikai/mebo/giinmeibo.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260714124907/https://www.city.kofu.yamanashi.jp/gikai-somu/shise/gikai/mebo/giinmeibo.html",
+      "waybackTimestamp": "20260714124907",
+      "checkedAt": "2026-07-14T13:35:52.825Z"
+    },
+    {
+      "sourceId": "kofu-gikai-r6",
+      "url": "https://www.city.kofu.yamanashi.jp/gijichosa/r0603/shingikekka.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260513161136/https://www.city.kofu.yamanashi.jp/gijichosa/r0603/shingikekka.html",
+      "waybackTimestamp": "20260513161136",
+      "checkedAt": "2026-07-14T13:36:21.027Z"
+    },
+    {
+      "sourceId": "kofu-gikai-r6",
+      "url": "https://www.city.kofu.yamanashi.jp/gikai-somu/shise/gikai/mebo/giinmeibo.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260714124907/https://www.city.kofu.yamanashi.jp/gikai-somu/shise/gikai/mebo/giinmeibo.html",
+      "waybackTimestamp": "20260714124907",
+      "checkedAt": "2026-07-14T13:36:41.151Z"
+    },
+    {
+      "sourceId": "kofu-gikai-r7",
+      "url": "https://www.city.kofu.yamanashi.jp/gijichosa/r0703/shingikekka.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260714133655/https://www.city.kofu.yamanashi.jp/gijichosa/r0703/shingikekka.html",
+      "waybackTimestamp": "20260714133655",
+      "checkedAt": "2026-07-14T13:37:53.128Z"
+    },
+    {
+      "sourceId": "kofu-gikai-r7",
+      "url": "https://www.city.kofu.yamanashi.jp/gikai-somu/shise/gikai/mebo/giinmeibo.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260714124907/https://www.city.kofu.yamanashi.jp/gikai-somu/shise/gikai/mebo/giinmeibo.html",
+      "waybackTimestamp": "20260714124907",
+      "checkedAt": "2026-07-14T13:38:20.319Z"
+    },
+    {
       "sourceId": "kofu-gikai-r8",
       "url": "https://www.city.kofu.yamanashi.jp/gijichosa/r0803/shingikekka.html",
       "kind": "file",

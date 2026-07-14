@@ -193,7 +193,7 @@ export const KOFU_COUNCIL_YEARS: KofuCouncil[] = [
       "title": "令和7年3月定例会 審議結果",
       "localUrl": "/sources/kofu-gikai-r7/shingikekka.html",
       "originUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/r0703/shingikekka.html",
-      "archiveUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/r0703/shingikekka.html"
+      "archiveUrl": "https://web.archive.org/web/20260714133655/https://www.city.kofu.yamanashi.jp/gijichosa/r0703/shingikekka.html"
     },
     "minutesUrl": "https://www.city.kofu.yamanashi.dbsr.jp/",
     "newsletterUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/shise/gikai/koho/r08.html"
@@ -266,7 +266,7 @@ export const KOFU_COUNCIL_YEARS: KofuCouncil[] = [
       "title": "令和6年3月定例会 審議結果",
       "localUrl": "/sources/kofu-gikai-r6/shingikekka.html",
       "originUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/r0603/shingikekka.html",
-      "archiveUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/r0603/shingikekka.html"
+      "archiveUrl": "https://web.archive.org/web/20260513161136/https://www.city.kofu.yamanashi.jp/gijichosa/r0603/shingikekka.html"
     },
     "minutesUrl": "https://www.city.kofu.yamanashi.dbsr.jp/",
     "newsletterUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/shise/gikai/koho/r08.html"
@@ -334,7 +334,7 @@ export const KOFU_COUNCIL_YEARS: KofuCouncil[] = [
       "title": "令和5年3月定例会 審議結果",
       "localUrl": "/sources/kofu-gikai-r5/shingikekka.html",
       "originUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/r0503/shingikekka.html",
-      "archiveUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/r0503/shingikekka.html"
+      "archiveUrl": "https://web.archive.org/web/20260116054107/https://www.city.kofu.yamanashi.jp/gijichosa/r0503/shingikekka.html"
     },
     "minutesUrl": "https://www.city.kofu.yamanashi.dbsr.jp/",
     "newsletterUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/shise/gikai/koho/r08.html"
@@ -397,7 +397,7 @@ export const KOFU_COUNCIL_YEARS: KofuCouncil[] = [
       "title": "令和4年3月定例会 審議結果",
       "localUrl": "/sources/kofu-gikai-r4/shingikekka.html",
       "originUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/r0403/shingikekka.html",
-      "archiveUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/r0403/shingikekka.html"
+      "archiveUrl": "https://web.archive.org/web/20260215161610/https://www.city.kofu.yamanashi.jp/gijichosa/r0403/shingikekka.html"
     },
     "minutesUrl": "https://www.city.kofu.yamanashi.dbsr.jp/",
     "newsletterUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/shise/gikai/koho/r08.html"
@@ -460,7 +460,7 @@ export const KOFU_COUNCIL_YEARS: KofuCouncil[] = [
       "title": "令和3年3月定例会 審議結果",
       "localUrl": "/sources/kofu-gikai-r3/shingikekka.html",
       "originUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/r0303/shingikekka.html",
-      "archiveUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/r0303/shingikekka.html"
+      "archiveUrl": "https://web.archive.org/web/20240227080640/https://www.city.kofu.yamanashi.jp/gijichosa/r0303/shingikekka.html"
     },
     "minutesUrl": "https://www.city.kofu.yamanashi.dbsr.jp/",
     "newsletterUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/shise/gikai/koho/r08.html"
