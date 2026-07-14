@@ -128,5 +128,8 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.city.yamaguchi.lg.jp/site/shiseijoho/171302.html": "https://web.archive.org/web/20260420011714/https://www.city.yamaguchi.lg.jp/site/shiseijoho/171302.html",
   "https://www.city.yamaguchi.lg.jp/uploaded/attachment/105329.pdf": "https://web.archive.org/web/20250815060151/https://www.city.yamaguchi.lg.jp/uploaded/attachment/105329.pdf",
   "https://www.pref.yamanashi.jp/documents/5948/r6kessannjokyou.pdf": "https://web.archive.org/web/20251119051228/https://www.pref.yamanashi.jp/documents/5948/r6kessannjokyou.pdf",
-  "https://www.pref.yamanashi.jp/sui-kai/163_003.html": "https://web.archive.org/web/20260313143003/https://www.pref.yamanashi.jp/sui-kai/163_003.html"
+  "https://www.pref.yamanashi.jp/sui-kai/163_003.html": "https://web.archive.org/web/20260313143003/https://www.pref.yamanashi.jp/sui-kai/163_003.html",
+  "https://www.pref.yamanashi.jp/documents/6018/02_tousyonogaiyou_1.pdf": "https://web.archive.org/web/20260508112720/https://www.pref.yamanashi.jp/documents/6018/02_tousyonogaiyou_1.pdf",
+  "https://www.pref.yamanashi.jp/documents/6018/03_tousyoyosannkibo_1.pdf": "https://web.archive.org/web/20260520040653/https://www.pref.yamanashi.jp/documents/6018/03_tousyoyosannkibo_1.pdf",
+  "https://www.pref.yamanashi.jp/zaisei/43539671890.html": "https://web.archive.org/web/20251206161316/https://www.pref.yamanashi.jp/zaisei/43539671890.html"
 };

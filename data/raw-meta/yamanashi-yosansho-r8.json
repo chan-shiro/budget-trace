@@ -5,8 +5,15 @@
       "filename": "03_tousyoyosannkibo_1.pdf",
       "sha256": "742025562ff7fed1b55ff0ee777faedf7791d4547915a50e41b16bdbb3f8d82a",
       "bytes": 319791,
-      "fetchedAt": "2026-07-13T13:42:19.568Z",
+      "fetchedAt": "2026-07-14T04:29:16.600Z",
       "fetchedFrom": "https://www.pref.yamanashi.jp/documents/6018/03_tousyoyosannkibo_1.pdf"
+    },
+    {
+      "filename": "02_tousyonogaiyou_1.pdf",
+      "sha256": "1cd670c5dd7a7fc14e88c4413008038663b3eee323fc0373420af308356d41b0",
+      "bytes": 354240,
+      "fetchedAt": "2026-07-14T04:29:16.952Z",
+      "fetchedFrom": "https://www.pref.yamanashi.jp/documents/6018/02_tousyonogaiyou_1.pdf"
     }
   ]
 }

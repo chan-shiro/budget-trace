@@ -3,7 +3,7 @@
   "sourceId": "yamanashi-yosansho-r8",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-07-13T13:42:19.689Z",
+  "parsedAt": "2026-07-14T04:30:44.083Z",
   "unit": "thousandYen",
   "fiscalYear": "R8",
   "account": "一般会計",
@@ -330,6 +330,1118 @@
       "locator": {
         "file": "03_tousyoyosannkibo_1.pdf",
         "page": 3
+      }
+    }
+  ],
+  "projects": [
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "富士山降灰対策ガイドライン策定事業費",
+      "budgetBookName": null,
+      "amount": 12078,
+      "description": "富士山周辺の住民等が適切な避難行動を取れるよう、噴火による降灰の建物への影響",
+      "basicGoal": "",
+      "shisaku": "防災・減災、県土の強靱化",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 1
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "消防防災ヘリコプター整備事業費",
+      "budgetBookName": null,
+      "amount": 1473844,
+      "description": "山岳遭難救助や林野火災消火などの活動時における安定的な運航体制を確保するため、",
+      "basicGoal": "",
+      "shisaku": "防災・減災、県土の強靱化",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 1
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "木造住宅居住安心支援事業費",
+      "budgetBookName": null,
+      "amount": 70959,
+      "description": "地震に強い安全で安心なまちづくりを目指し、木造住宅の耐震診断・改修事業への助",
+      "basicGoal": "",
+      "shisaku": "防災・減災、県土の強靱化",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "ワーク・ライフ・ケアバランス推進事業費",
+      "budgetBookName": null,
+      "amount": 12232,
+      "description": "就業者の仕事、生活、育児・介護の調和を図るため、県内企業が行う業務改善や柔軟",
+      "basicGoal": "",
+      "shisaku": "地域経済基盤の強靱化",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "成長産業総合支援センター設置事業費補助金",
+      "budgetBookName": null,
+      "amount": 77952,
+      "description": "県内企業の成長分野(医療機器、水素・燃料電池、航空宇宙防衛)進出を一体的に促進",
+      "basicGoal": "",
+      "shisaku": "地域経済基盤の強靱化",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "メディカル・デバイス・コリドー創生事業費",
+      "budgetBookName": null,
+      "amount": 62049,
+      "description": "医療機器関連産業の集積を加速化させるため、県内企業が行う機器開発や部材供給に",
+      "basicGoal": "",
+      "shisaku": "地域経済基盤の強靱化",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "水素・燃料電池分野基幹産業化推進事業費",
+      "budgetBookName": null,
+      "amount": 49491,
+      "description": "水素・燃料電池関連産業の基幹産業化を図るため、県内企業が行う機器開発や部材供",
+      "basicGoal": "",
+      "shisaku": "地域経済基盤の強靱化",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "航空宇宙防衛関連産業参入支援事業費",
+      "budgetBookName": null,
+      "amount": 7230,
+      "description": "県内企業の収益拡大を図るため、市場の拡大が見込まれる航空・宇宙・防衛関連産業",
+      "basicGoal": "",
+      "shisaku": "地域経済基盤の強靱化",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "商工業振興資金貸付金",
+      "budgetBookName": null,
+      "amount": 45162207,
+      "description": "中小企業の金融の円滑化を促進し、経営の安定化を図るため、金融機関の協調を得て",
+      "basicGoal": "",
+      "shisaku": "地域経済基盤の強靱化",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "南山梨エリア周遊観光推進事業費",
+      "budgetBookName": null,
+      "amount": 4800,
+      "description": "南山梨エリアの地域資源の高付加価値化を図るため、地元自治体と連携した取り組み",
+      "basicGoal": "",
+      "shisaku": "地域経済基盤の強靱化",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "山梨緑化100年構想検討事業費",
+      "budgetBookName": null,
+      "amount": 884,
+      "description": "自然と共生する持続可能なまちづくりの実現に向け、100年先を見据えた都市環境の",
+      "basicGoal": "",
+      "shisaku": "安全・安心、快適なまちづくり",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "ワークサポートケアマネジャー養成事業費補助金",
+      "budgetBookName": null,
+      "amount": 1080,
+      "description": "介護離職を防ぐため、仕事と介護の両立に関する専門人材の養成に向けた取り組みに",
+      "basicGoal": "",
+      "shisaku": "安全・安心、快適なまちづくり",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "孤独・孤立対策推進事業費",
+      "budgetBookName": null,
+      "amount": 4737,
+      "description": "孤独・孤立がもたらす健康問題等のリスクを低減するため、ひきこもり状態にある者",
+      "basicGoal": "",
+      "shisaku": "安全・安心、快適なまちづくり",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "国際保育推進事業費",
+      "budgetBookName": null,
+      "amount": 26135,
+      "description": "外国人が地域社会で安心して子育てを行い、子どもが言語や文化の違いにかかわらず",
+      "basicGoal": "",
+      "shisaku": "子育て支援の充実",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "縁結び支援事業費",
+      "budgetBookName": null,
+      "amount": 50806,
+      "description": "若者が抱く結婚へのネガティブなイメージや不安を払拭し、前向きな価値観を醸成す",
+      "basicGoal": "",
+      "shisaku": "子育て支援の充実",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "保育士養成施設就職等促進支援事業費補助金",
+      "budgetBookName": null,
+      "amount": 5600,
+      "description": "保育人材の確保を図るため、保育士養成施設が実施する保育所等への就職促進や保育",
+      "basicGoal": "",
+      "shisaku": "子育て支援の充実",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "プレコンセプションケア推進事業費",
+      "budgetBookName": null,
+      "amount": 46149,
+      "description": "子どもを望む誰もが安心して妊娠・出産できるよう、将来の妊娠・出産に備えた健康",
+      "basicGoal": "",
+      "shisaku": "子育て支援の充実",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "妊産婦等生活援助事業費",
+      "budgetBookName": null,
+      "amount": 41135,
+      "description": "家庭生活に困難な問題を抱える妊産婦等の生活の安定と自立の促進を図るため、就労",
+      "basicGoal": "",
+      "shisaku": "子育て支援の充実",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "外国人材確保・定着支援事業費",
+      "budgetBookName": null,
+      "amount": 25733,
+      "description": "県内企業等において深刻化する人手不足に対応するため、外国人材の確保や定着に向",
+      "basicGoal": "",
+      "shisaku": "共生社会化の推進",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "ひとり親家庭養育費確保支援事業費補助金",
+      "budgetBookName": null,
+      "amount": 1730,
+      "description": "ひとり親家庭の生活の安定と子どもの健やかな育成を図るため、養育費確保の手続き",
+      "basicGoal": "",
+      "shisaku": "共生社会化の推進",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "やまふくプラス推進事業費",
+      "budgetBookName": null,
+      "amount": 51184,
+      "description": "障害者の社会参加の促進と工賃向上を図るための取り組みを行う。",
+      "basicGoal": "",
+      "shisaku": "共生社会化の推進",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "帰国・外国人児童生徒等教育推進支援事業費",
+      "budgetBookName": null,
+      "amount": 2485,
+      "description": "日本語指導の充実を図るため、日本語指導教員の資質向上研修会等を開催する。",
+      "basicGoal": "",
+      "shisaku": "共生社会化の推進",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "介護福祉士修学資金等貸付事業費",
+      "budgetBookName": null,
+      "amount": 18842,
+      "description": "介護福祉士及び社会福祉士の資格取得や潜在介護職員の復職を推進するため、修学資",
+      "basicGoal": "",
+      "shisaku": "生活基盤の保障",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "外国人介護人材資格取得等支援事業費",
+      "budgetBookName": null,
+      "amount": 5424,
+      "description": "技能実習生等に対し、日常生活や介護福祉士国家資格の取得を支援する取り組みを行",
+      "basicGoal": "",
+      "shisaku": "生活基盤の保障",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "介護職員宿舎施設整備事業費補助金",
+      "budgetBookName": null,
+      "amount": 11800,
+      "description": "介護人材の確保・定着を促進するため、介護事業者等が行う良好な住環境を備えた職",
+      "basicGoal": "",
+      "shisaku": "生活基盤の保障",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "外国人介護人材獲得強化事業費補助金",
+      "budgetBookName": null,
+      "amount": 5000,
+      "description": "介護分野において深刻化する人手不足に対応するため、介護事業者や介護福祉士養成",
+      "basicGoal": "",
+      "shisaku": "生活基盤の保障",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "地域医療構想推進事業費",
+      "budgetBookName": null,
+      "amount": 39286,
+      "description": "峡南南部地域の医療提供体制を確保するため、病院等の再編に向けた取り組みに対し",
+      "basicGoal": "",
+      "shisaku": "生活基盤の保障",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "熱中症予防対策事業費",
+      "budgetBookName": null,
+      "amount": 9936,
+      "description": "熱中症による健康被害を防止するため、公民館や集会所を開放する市町村の取り組み",
+      "basicGoal": "",
+      "shisaku": "生活基盤の保障",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "子ども未来進学支援事業費",
+      "budgetBookName": null,
+      "amount": 14832,
+      "description": "大学等への進学を希望する生活保護世帯の子どもを支援するため、学習塾等において",
+      "basicGoal": "",
+      "shisaku": "困難からの脱却・再挑戦に開かれた社会づくり",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "高校生世代学習支援事業費",
+      "budgetBookName": null,
+      "amount": 5081,
+      "description": "大学等への進学を希望する経済的に余裕のない世帯の高校生を支援するため、安心し",
+      "basicGoal": "",
+      "shisaku": "困難からの脱却・再挑戦に開かれた社会づくり",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "私立高等学校等入学金サポート事業費",
+      "budgetBookName": null,
+      "amount": 26050,
+      "description": "経済的に余裕のない世帯の私立高等学校等入学に要する費用負担の軽減を図るため、",
+      "basicGoal": "",
+      "shisaku": "困難からの脱却・再挑戦に開かれた社会づくり",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "夜間中学・学びの多様化学校設置事業費",
+      "budgetBookName": null,
+      "amount": 7309,
+      "description": "義務教育未修了者や不登校児童生徒等の教育機会を確保するため、夜間中学・学びの",
+      "basicGoal": "",
+      "shisaku": "困難からの脱却・再挑戦に開かれた社会づくり",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "市町村職員人材確保支援事業費",
+      "budgetBookName": null,
+      "amount": 2119,
+      "description": "市町村の行政サービスを安定的に提供できる体制を維持するため、広域連携による採",
+      "basicGoal": "",
+      "shisaku": "地域を担う人財づくり",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "やまなし地域おこし協力隊サポート事業費",
+      "budgetBookName": null,
+      "amount": 2453,
+      "description": "地域おこし協力隊員が活動しやすい環境整備を促進し、安定的な隊員の確保につなげ",
+      "basicGoal": "",
+      "shisaku": "地域を担う人財づくり",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "キャリアアップ・ユニバーシティ運営事業費補助金",
+      "budgetBookName": null,
+      "amount": 77230,
+      "description": "働き手のスキルアップを図るため、教育機関や研修企業等と連携してリスキリングを",
+      "basicGoal": "",
+      "shisaku": "地域を担う人財づくり",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "もも未来担い手育成プロジェクト事業費",
+      "budgetBookName": null,
+      "amount": 8230,
+      "description": "本県の主要農産物であるももの生産量維持を図るため、新規就農者を確保・育成する",
+      "basicGoal": "",
+      "shisaku": "地域を担う人財づくり",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "二次交通高度化推進事業費",
+      "budgetBookName": null,
+      "amount": 74071,
+      "description": "観光地や地域の移動手段の確保に向け、既存の交通資源を有効活用し、利便性向上を",
+      "basicGoal": "",
+      "shisaku": "海と空に開かれた「開の国」交通ネットワークの充実",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "空飛ぶクルマ社会実装加速化事業費",
+      "budgetBookName": null,
+      "amount": 29986,
+      "description": "利便性の高い新たな交通ネットワークを構築するため、本県における次世代空モビリ",
+      "basicGoal": "",
+      "shisaku": "海と空に開かれた「開の国」交通ネットワークの充実",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "富士トラム推進事業費",
+      "budgetBookName": null,
+      "amount": 75868,
+      "description": "富士山における諸課題の解決による高付加価値化を図るため、富士トラムの導入を通",
+      "basicGoal": "",
+      "shisaku": "「自然首都圏」創出のための基盤整備",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "富士五湖自然首都圏フォーラム運営事業費",
+      "budgetBookName": null,
+      "amount": 47235,
+      "description": "域内外の民間との連携により地域の高付加価値化を図るため、観光リゾート地と首都",
+      "basicGoal": "",
+      "shisaku": "「自然首都圏」創出のための基盤整備",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "水素コンソーシアム情報発信事業費",
+      "budgetBookName": null,
+      "amount": 25182,
+      "description": "グリーン水素技術の社会実装を推進するため、本県の知見・データの集積、議論を行",
+      "basicGoal": "",
+      "shisaku": "「自然首都圏」創出のための基盤整備",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "空き家活用住宅整備モデル事業費補助金",
+      "budgetBookName": null,
+      "amount": 76650,
+      "description": "空き家の活用を促進するとともに、移住者の受け入れに向けた良好な住環境の形成を",
+      "basicGoal": "",
+      "shisaku": "「自然首都圏」創出のための基盤整備",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "ツキノワグマ被害防止対策強化事業費",
+      "budgetBookName": null,
+      "amount": 95149,
+      "description": "県民の安全・安心を確保するため、クマによる被害を防止する取り組みを強化する。",
+      "basicGoal": "",
+      "shisaku": "「上質な空間」づくり",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "富士山いにしえの登山道再興事業費",
+      "budgetBookName": null,
+      "amount": 16894,
+      "description": "富士山の文化的価値への理解を深めるとともに、登山者の分散化を図るため、麓から",
+      "basicGoal": "",
+      "shisaku": "「上質な空間」づくり",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "富士山世界遺産センター機能強化事業費",
+      "budgetBookName": null,
+      "amount": 44825,
+      "description": "開館10周年を契機に、富士山世界遺産センターの機能強化に向けた取り組みを行う。",
+      "basicGoal": "",
+      "shisaku": "「上質な空間」づくり",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "高等学校等就学支援金交付事業費",
+      "budgetBookName": null,
+      "amount": 6964030,
+      "description": "全ての意志ある生徒が安心して勉学に打ち込めるよう、高校生等に対し、所得の状況",
+      "basicGoal": "",
+      "shisaku": "教育の充実",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "ふるさと山梨甲州財閥学習推進事業費",
+      "budgetBookName": null,
+      "amount": 4552,
+      "description": "児童生徒の郷土への関心を深め、自主性や公益的な視点を育むため、本県発展の礎を",
+      "basicGoal": "",
+      "shisaku": "教育の充実",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "少人数教育推進事業費",
+      "budgetBookName": null,
+      "amount": 1956395,
+      "description": "児童一人ひとりに向き合ったきめ細かな質の高い教育を実現するため、公立小学校に",
+      "basicGoal": "",
+      "shisaku": "教育の充実",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "高校入試システム構築事業費",
+      "budgetBookName": null,
+      "amount": 66541,
+      "description": "高校入試におけるＷｅｂ出願を実施するため、入試システムを再構築する。",
+      "basicGoal": "",
+      "shisaku": "教育の充実",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "校内教育支援センター支援員配置事業費補助金",
+      "budgetBookName": null,
+      "amount": 58112,
+      "description": "不登校児童生徒の登校復帰の支援等を行う者を配置する市町村等に対し助成する。",
+      "basicGoal": "",
+      "shisaku": "教育の充実",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "特別支援学校冷房設備設置費",
+      "budgetBookName": null,
+      "amount": 19651,
+      "description": "児童生徒に快適な学習環境を提供するため、特別支援学校の屋内運動場へ冷房設備を",
+      "basicGoal": "",
+      "shisaku": "教育の充実",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "少人数教育効果検証事業費",
+      "budgetBookName": null,
+      "amount": 754,
+      "description": "児童生徒一人ひとりに向き合ったきめ細かな質の高い教育を実現するため、25人学級",
+      "basicGoal": "",
+      "shisaku": "教育の充実",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "少人数教育の質の向上プラン推進事業費",
+      "budgetBookName": null,
+      "amount": 2292,
+      "description": "教育の質の更なる向上を図るため、少人数教育の環境を生かした探究的な学びを推進",
+      "basicGoal": "",
+      "shisaku": "教育の充実",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "やまなし探究シンポジウム開催費",
+      "budgetBookName": null,
+      "amount": 4324,
+      "description": "県立高校における探究的な学びの質の向上を支援するとともに、中学生に対して県立",
+      "basicGoal": "",
+      "shisaku": "教育の充実",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "図書館を活用した探究活動等支援事業費",
+      "budgetBookName": null,
+      "amount": 14126,
+      "description": "若者の探究活動や誰もが利用しやすい読書環境の充実を図るため、知の拠点である図",
+      "basicGoal": "",
+      "shisaku": "教育の充実",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "小学校給食費負担軽減事業費補助金",
+      "budgetBookName": null,
+      "amount": 2030530,
+      "description": "公立小学校に通う児童が安心して学校給食の提供を受けられるよう、給食費の負担を",
+      "basicGoal": "",
+      "shisaku": "教育の充実",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "山梨魅力再発見事業費",
+      "budgetBookName": null,
+      "amount": 9837,
+      "description": "地域への愛着の醸成と地域ブランド価値の向上を図るための取り組みを行う。",
+      "basicGoal": "",
+      "shisaku": "地域経済の収益力向上",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "コーポレートブランド「やまなし」推進事業費",
+      "budgetBookName": null,
+      "amount": 60848,
+      "description": "地域経済の活性化を図るため、本県のブランド価値向上に向けた取り組みを行う。",
+      "basicGoal": "",
+      "shisaku": "地域経済の収益力向上",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "スタートアップ支援センター事業費",
+      "budgetBookName": null,
+      "amount": 141870,
+      "description": "県内企業との共創による新たなビジネス創出や雇用の促進を図るため、スタートアッ",
+      "basicGoal": "",
+      "shisaku": "地域経済の収益力向上",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "ジュエリー産地やまなし技能五輪プロモーション等事業費補助金",
+      "budgetBookName": null,
+      "amount": 1500,
+      "description": "技能五輪全国大会貴金属装身具部門の開催を好機に、協同組合県ジュエリー協会が行",
+      "basicGoal": "",
+      "shisaku": "地域経済の収益力向上",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "郡内織物国際価値創出推進事業費",
+      "budgetBookName": null,
+      "amount": 25771,
+      "description": "郡内織物の新たな価値創出に向け、先進的な感性を持つ若手デザイナーの理解促進を",
+      "basicGoal": "",
+      "shisaku": "地域経済の収益力向上",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "県産農畜水産物等小ロット流通体制調査研究事業費",
+      "budgetBookName": null,
+      "amount": 6820,
+      "description": "特色はあるが生産量の少ない県産農畜水産物等の県内での消費拡大を図るため、効率",
+      "basicGoal": "",
+      "shisaku": "地域経済の収益力向上",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "やまなし「にじきら」アンバサダー情報発信事業費",
+      "budgetBookName": null,
+      "amount": 6487,
+      "description": "県内米農家の所得向上を図るため、高温耐性に優れた高品質米である「にじのきらめ",
+      "basicGoal": "",
+      "shisaku": "地域経済の収益力向上",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "フィッシングツーリズム推進事業費",
+      "budgetBookName": null,
+      "amount": 4499,
+      "description": "県内漁業の活性化と水産資源を活用した観光振興を図るため、漁協や市町村等と連携",
+      "basicGoal": "",
+      "shisaku": "地域経済の収益力向上",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "情報発信拠点設置検討事業費",
+      "budgetBookName": null,
+      "amount": 424,
+      "description": "ジャパンワインの魅力を発信する新たな情報発信拠点の県内設置に向けた検討を行う。",
+      "basicGoal": "",
+      "shisaku": "文化芸術の振興",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "料理人技術力向上支援事業費補助金",
+      "budgetBookName": null,
+      "amount": 3750,
+      "description": "技術研鑽に励む料理人の活躍を支援する。",
+      "basicGoal": "",
+      "shisaku": "文化芸術の振興",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "フィールドシアター推進モデル事業費補助金",
+      "budgetBookName": null,
+      "amount": 10000,
+      "description": "本県の魅力的な自然景観や文化財等と調和した文化芸術イベントを創出するため、自",
+      "basicGoal": "",
+      "shisaku": "文化芸術の振興",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "ふるさと山梨郷土人物発信事業費",
+      "budgetBookName": null,
+      "amount": 409,
+      "description": "地域の歴史や文化についての理解と関心を深めるため、博物館に先人の功績を紹介す",
+      "basicGoal": "",
+      "shisaku": "文化芸術の振興",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "第81回国民スポーツ大会冬季大会開催費",
+      "budgetBookName": null,
+      "amount": 43043,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "スポーツの振興",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "部活動地域展開推進事業費",
+      "budgetBookName": null,
+      "amount": 120753,
+      "description": "将来にわたり子どもたちがスポーツ・文化芸術活動に親しむことができる機会を確保",
+      "basicGoal": "",
+      "shisaku": "スポーツの振興",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "パラスポーツ教育活動支援事業費",
+      "budgetBookName": null,
+      "amount": 4341,
+      "description": "障害のある子どもたちがスポーツに親しむことができる機会を確保するため、パラス",
+      "basicGoal": "",
+      "shisaku": "スポーツの振興",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "人口減少危機対策支援事業費",
+      "budgetBookName": null,
+      "amount": 22702,
+      "description": "県と市町村が連携して人口減少危機に対応するため、地域の実情に応じた市町村の取",
+      "basicGoal": "",
+      "shisaku": "全ての県民・あらゆる主体との連帯に基づく県政の推進",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "日本創生のための将来世代応援知事同盟サミット開催費",
+      "budgetBookName": null,
+      "amount": 4295,
+      "description": "将来を担う世代を社会全体で応援する気運を高めるため、子育て支援をはじめとした",
+      "basicGoal": "",
+      "shisaku": "全ての県民・あらゆる主体との連帯に基づく県政の推進",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "富士北麓県有地高度活用事業費",
+      "budgetBookName": null,
+      "amount": 38346,
+      "description": "地域のブランド力向上と自主財源の確保を図るため、県有地の活用により生み出され",
+      "basicGoal": "",
+      "shisaku": "県有資産や地域資源の可能性の発揮",
+      "locator": {
+        "file": "02_tousyonogaiyou_1.pdf",
+        "page": 21
       }
     }
   ]
