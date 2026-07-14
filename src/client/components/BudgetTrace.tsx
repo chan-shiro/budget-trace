@@ -303,12 +303,17 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     shard && shard.prefCode === prefCode
       ? Object.entries(shard.munis).map(([code, m]) => ({ code, name: (m as { name: string }).name }))
       : [];
-  // decision 自治体へパスで直接来た場合（例 /長野県/松本市）は team code が未解決。
-  // 県シャード取得後に自治体名から団体コードを引き当てて state に補う。
+  // decision 自治体へパスで直接来た場合、団体コード（/nagano/202011）か名前（旧・日本語パス）の
+  // 片方しか無い。県シャード取得後にもう片方を引き当てて state に補い、名前を画面に出せるようにする。
   React.useEffect(() => {
-    if (!isApp || s.muniCode || !s.muni || muniEntries.length === 0) return;
-    const hit = muniEntries.find((e) => e.name === s.muni);
-    if (hit) setSt({ muniCode: hit.code });
+    if (!isApp || muniEntries.length === 0) return;
+    if (!s.muniCode && s.muni) {
+      const hit = muniEntries.find((e) => e.name === s.muni);
+      if (hit) setSt({ muniCode: hit.code });
+    } else if (s.muniCode && !s.muni) {
+      const hit = muniEntries.find((e) => e.code === s.muniCode);
+      if (hit) setSt({ muni: hit.name });
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isApp, s.muniCode, s.muni, muniEntries.length]);
   const muniList = muniEntries.map(({ code, name }) => {
