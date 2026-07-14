@@ -725,6 +725,35 @@ export const SOURCES: SourceEntry[] = [
     license: "甲府市議会ウェブサイト掲載資料（利用条件は同サイト参照）",
     parser: "kofu-gikai",
   },
+  // 過去年度の議会構成（R2〜R7）。会派名簿は同一URLを上書き更新するため、各予算の
+  // 議決時点のバージョンを Wayback スナップショット（id_ = pywb 書換えなしの原本）で固定する。
+  // 会派構成は 2019 選挙（R2〜R5）と 2023 選挙（R6〜R7）の2エラで、更新日の窓が各予算日を
+  // 含むスナップショットを採用（詳細は docs/data-sources.md §6）。審議結果は発行元 live、
+  // ただし R2 は発行元から削除済みのため Wayback（旧綴り shinngikekka.html）から回収。
+  ...([
+    // [fy, 名簿スナップTS(更新日), 審議結果URL]
+    ["R7", "20240910021519", "https://www.city.kofu.yamanashi.jp/gijichosa/r0703/shingikekka.html"],
+    ["R6", "20231202080331", "https://www.city.kofu.yamanashi.jp/gijichosa/r0603/shingikekka.html"],
+    ["R5", "20221129001525", "https://www.city.kofu.yamanashi.jp/gijichosa/r0503/shingikekka.html"],
+    ["R4", "20211130030844", "https://www.city.kofu.yamanashi.jp/gijichosa/r0403/shingikekka.html"],
+    ["R3", "20191114183718", "https://www.city.kofu.yamanashi.jp/gijichosa/r0303/shingikekka.html"],
+    ["R2", "20191114183718", "https://web.archive.org/web/20200813113035id_/https://www.city.kofu.yamanashi.jp/gijichosa/r0203/shinngikekka.html"],
+  ] as const).map(([fy, rosterTs, kekkaUrl]): SourceEntry => ({
+    id: `kofu-gikai-${fy.toLowerCase()}`,
+    title: `令和${fy.slice(1)}年度 甲府市議会の構成（会派別議席数）と当初予算の議決`,
+    publisher: "甲府市議会",
+    url: null,
+    urls: [
+      `https://web.archive.org/web/${rosterTs}id_/https://www.city.kofu.yamanashi.jp/gikai-somu/shise/gikai/mebo/h270512kaihabetu.html`,
+      kekkaUrl,
+    ],
+    landingPage: "https://www.city.kofu.yamanashi.jp/gikai-somu/shise/gikai/mebo/giinmeibo.html",
+    kind: "page",
+    fiscalYear: fy,
+    scope: "甲府市議会（定数32・団体コード192015）",
+    license: "甲府市議会ウェブサイト掲載資料（利用条件は同サイト参照）",
+    parser: "kofu-gikai",
+  })),
   {
     // 開発用フィクスチャ: 上記と同じ構造の小さな Excel を dev/make-fixture.ts が
     // 生成する。パイプラインの end-to-end 検証専用。normalized 出力は

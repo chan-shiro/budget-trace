@@ -1,0 +1,97 @@
+{
+  "docType": "council-composition",
+  "sourceId": "kofu-gikai-r6",
+  "parser": "kofu-gikai",
+  "parserVersion": "0.1.0",
+  "parsedAt": "2026-07-14T13:24:05.270Z",
+  "fiscalYear": "R6",
+  "body": "甲府市議会",
+  "seats": 32,
+  "asOf": "2023-11-28",
+  "factions": [
+    {
+      "name": "政和こうふ",
+      "seats": 10,
+      "isIndependent": false,
+      "locator": {
+        "file": "h270512kaihabetu.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "政友クラブ",
+      "seats": 7,
+      "isIndependent": false,
+      "locator": {
+        "file": "h270512kaihabetu.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 4,
+      "isIndependent": false,
+      "locator": {
+        "file": "h270512kaihabetu.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "こうふ未来",
+      "seats": 4,
+      "isIndependent": false,
+      "locator": {
+        "file": "h270512kaihabetu.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 3,
+      "isIndependent": false,
+      "locator": {
+        "file": "h270512kaihabetu.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "市民クラブ",
+      "seats": 2,
+      "isIndependent": false,
+      "locator": {
+        "file": "h270512kaihabetu.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "無所属（山田弘之）",
+      "seats": 1,
+      "isIndependent": true,
+      "locator": {
+        "file": "h270512kaihabetu.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "無所属（村松裕美）",
+      "seats": 1,
+      "isIndependent": true,
+      "locator": {
+        "file": "h270512kaihabetu.html",
+        "row": 8
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第2号",
+    "billName": "令和6年度甲府市一般会計予算",
+    "sessionLabel": "令和6年3月定例会",
+    "decidedDate": "2024-03-25",
+    "decidedDateLabel": "令和6年3月25日",
+    "result": "可決",
+    "locator": {
+      "file": "shingikekka.html",
+      "row": 1
+    }
+  }
+}

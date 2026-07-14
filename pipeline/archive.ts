@@ -133,8 +133,8 @@ for (const source of targets) {
     ...(source.landingPage ? [{ url: source.landingPage, kind: "landing" as const }] : []),
   ];
   for (const { url, kind } of urls) {
-    // WARP（国立国会図書館）由来の URL はそれ自体が恒久アーカイブなので登録しない
-    if (url.includes("warp.ndl.go.jp")) continue;
+    // WARP（国立国会図書館）／Wayback 由来の URL はそれ自体が恒久アーカイブなので登録しない
+    if (url.includes("warp.ndl.go.jp") || url.includes("web.archive.org")) continue;
     // 同じスナップショットを検証済みなら再ダウンロードしない
     const prior = ledger.find((x) => x.sourceId === source.id && x.url === url);
     const verify = async (timestamp: string, waybackUrl: string) =>
