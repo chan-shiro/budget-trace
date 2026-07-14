@@ -4,6 +4,7 @@ import React from "react";
 import { CountUpNum } from "./ui";
 import * as D from "@/client/lib/data";
 import { useDecisionData } from "@/client/hooks/useDecisionData";
+import { stateToPath, locationToState, type RouteState } from "@/client/lib/routing";
 import BudgetTraceView from "./BudgetTraceView";
 
 const {
@@ -76,8 +77,9 @@ const PLAN_BY_FY: Record<string, { plan: string; goals?: { name: string; label: 
   R2: { plan: "第六次甲府市総合計画" },
 };
 
-export default function BudgetTrace() {
-  const [st, setStRaw] = React.useState<St>(DEFAULT_ST);
+export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {}) {
+  // 初期 state はサーバ側でパスから解決済み（初回描画から正しい画面＝チラつき無し）
+  const [st, setStRaw] = React.useState<St>({ ...DEFAULT_ST, ...(initial ?? {}) });
   const tipTimer = React.useRef<any>(null);
 
   const setSt = (patch: Partial<St>) => setStRaw((s) => ({ ...s, ...patch }));
@@ -87,85 +89,27 @@ export default function BudgetTrace() {
   };
 
   // --- URL 同期（ディープリンク） ---
-  // 画面・年度・ドリル位置などを URL クエリに反映し、共有・リロード・ブラウザバックに
-  // 対応する。SSR は既定 state で描画されるため、URL の復元はマウント後に行う
-  // （初回に一瞬トップが見えるのは静的 SPA の仕様）。
-  const stToQuery = (t: St): string => {
-    const p = new URLSearchParams();
-    if (t.screen !== "top") p.set("s", t.screen);
-    // 自治体の識別。甲府（full 既定）は後方互換のため省略。それ以外は pref/muni/mc を積む
-    const isKofu = t.muniCode === "192015" || (!t.muniCode && (t.muni === "甲府市" || !t.muni));
-    if (t.screen === "muni") {
-      if (t.pref) p.set("pref", t.pref);
-    } else if (t.screen !== "top" && !isKofu) {
-      if (t.pref) p.set("pref", t.pref);
-      if (t.muni) p.set("muni", t.muni);
-      if (t.muniCode) p.set("mc", t.muniCode);
-    }
-    if (t.budgetFy) p.set("fy", t.budgetFy);
-    if (t.screen === "drill") {
-      if (t.drillSide !== "exp") p.set("side", t.drillSide);
-      if (t.drillPath.length) p.set("path", t.drillPath.join("/"));
-    }
-    if (t.screen === "themes" && t.theme) p.set("theme", t.theme);
-    if (t.screen === "execution") {
-      if (t.execFy) p.set("efy", t.execFy);
-      if (t.execSide && t.execSide !== "exp") p.set("eside", t.execSide);
-    }
-    if (t.screen === "compare" && t.compSide && t.compSide !== "exp") p.set("cside", t.compSide);
-    if (t.unit === "per") p.set("unit", "per");
-    const q = p.toString();
-    return q ? `?${q}` : location.pathname;
-  };
-  const queryToPatch = (search: string): Partial<St> => {
-    const p = new URLSearchParams(search);
-    const screen = p.get("s") ?? "top";
-    const mc = p.get("mc");
-    // 自治体の復元。mc があれば decision 自治体、無ければ後方互換で甲府（full）
-    let pref: string | null;
-    let muni: string | null;
-    let muniCode: string | undefined;
-    if (screen === "top") {
-      pref = null; muni = null; muniCode = undefined;
-    } else if (screen === "muni") {
-      pref = p.get("pref") ?? "山梨県"; muni = null; muniCode = undefined;
-    } else if (mc) {
-      pref = p.get("pref"); muni = p.get("muni"); muniCode = mc;
-    } else {
-      pref = "山梨県"; muni = "甲府市"; muniCode = "192015";
-    }
-    return {
-      screen,
-      pref,
-      muni,
-      muniCode,
-      budgetFy: p.get("fy") ?? undefined,
-      drillSide: p.get("side") ?? "exp",
-      drillPath: p.get("path")?.split("/").filter(Boolean) ?? [],
-      theme: p.get("theme"),
-      execFy: p.get("efy") ?? undefined,
-      execSide: p.get("eside") ?? "exp",
-      compSide: p.get("cside") ?? "exp",
-      unit: p.get("unit") === "per" ? "per" : "total",
-      viewer: null,
-      tip: null,
-    };
+  // 各画面をパスに反映し、共有・リロード・ブラウザバックに対応する。初期 state は
+  // サーバ側（catch-all ルート）でパスから解決済みなので、マウント時の復元は不要
+  // （＝共有リンクを開いても初回からその画面が出る／トップのチラつきが無い）。
+  const patchFromLocation = (): Partial<St> => {
+    const r = locationToState(location.pathname, location.search) as Partial<St>;
+    return { ...r, viewer: null, tip: null };
   };
   const urlReady = React.useRef(false);
-  const lastScreen = React.useRef("top");
+  const lastScreen = React.useRef(st.screen);
   React.useEffect(() => {
-    // マウント時: URL から state を復元し、以後の popstate（戻る/進む）にも追従する
-    if (location.search) setStRaw((prev) => ({ ...prev, ...queryToPatch(location.search) }));
+    // popstate（戻る/進む）でパスから state を復元する
     urlReady.current = true;
-    const onPop = () => setStRaw((prev) => ({ ...prev, ...queryToPatch(location.search) }));
+    const onPop = () => setStRaw((prev) => ({ ...prev, ...patchFromLocation() }));
     window.addEventListener("popstate", onPop);
     return () => window.removeEventListener("popstate", onPop);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   React.useEffect(() => {
     if (!urlReady.current) return;
-    const url = stToQuery(st);
-    if (`${location.pathname}${location.search}` === url || (url === location.pathname && !location.search)) return;
+    const url = stateToPath(st as RouteState);
+    if (`${location.pathname}${location.search}` === url) return;
     // 画面遷移は履歴に積む（戻るで前の画面へ）。同一画面内の切替は置き換え
     if (st.screen !== lastScreen.current) history.pushState(null, "", url);
     else history.replaceState(null, "", url);
@@ -357,6 +301,14 @@ export default function BudgetTrace() {
     shard && shard.prefCode === prefCode
       ? Object.entries(shard.munis).map(([code, m]) => ({ code, name: (m as { name: string }).name }))
       : [];
+  // decision 自治体へパスで直接来た場合（例 /長野県/松本市）は team code が未解決。
+  // 県シャード取得後に自治体名から団体コードを引き当てて state に補う。
+  React.useEffect(() => {
+    if (!isApp || s.muniCode || !s.muni || muniEntries.length === 0) return;
+    const hit = muniEntries.find((e) => e.name === s.muni);
+    if (hit) setSt({ muniCode: hit.code });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isApp, s.muniCode, s.muni, muniEntries.length]);
   const muniList = muniEntries.map(({ code, name }) => {
     const t = D.tierOf(code);
     const badge =
