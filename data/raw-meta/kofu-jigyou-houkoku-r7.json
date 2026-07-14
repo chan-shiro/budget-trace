@@ -1,0 +1,12 @@
+{
+  "sourceId": "kofu-jigyou-houkoku-r7",
+  "files": [
+    {
+      "filename": "7kouhyouyou2.xlsx",
+      "sha256": "2aa6a6906c4bda03de652f4f72c7868c1711ad22084c259c1279551da0aadb71",
+      "bytes": 230816,
+      "fetchedAt": "2026-07-14T14:09:47.665Z",
+      "fetchedFrom": "https://www.city.kofu.yamanashi.jp/zaise/documents/7kouhyouyou2.xlsx"
+    }
+  ]
+}

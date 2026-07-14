@@ -36,7 +36,7 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.city.kofu.yamanashi.jp/zaise/documents/6kouhyouyou6.xlsx": "https://web.archive.org/web/20260712140404/https://www.city.kofu.yamanashi.jp/zaise/documents/6kouhyouyou6.xlsx",
   "https://www.city.kofu.yamanashi.jp/zaise/r6gyoseihyouka.html": "https://web.archive.org/web/20260712142433/https://www.city.kofu.yamanashi.jp/zaise/r6gyoseihyouka.html",
   "https://www.city.kofu.yamanashi.jp/zaise/documents/7kouhyouyou2.xlsx": "https://web.archive.org/web/20260712142225/https://www.city.kofu.yamanashi.jp/zaise/documents/7kouhyouyou2.xlsx",
-  "https://www.city.kofu.yamanashi.jp/zaise/r7gyoseihyouka.html": "https://web.archive.org/web/20260712140146/https://www.city.kofu.yamanashi.jp/zaise/r7gyoseihyouka.html",
+  "https://www.city.kofu.yamanashi.jp/zaise/r7gyoseihyouka.html": "https://web.archive.org/web/20260712140614/https://www.city.kofu.yamanashi.jp/zaise/r7gyoseihyouka.html",
   "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r1kessann.html": "https://web.archive.org/web/20210128060355/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r1kessann.html",
   "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r1sishutu.html": "https://web.archive.org/web/20210128054004/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r1sishutu.html",
   "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r2shuushishousai.html": "https://web.archive.org/web/20260712125651/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r2shuushishousai.html",

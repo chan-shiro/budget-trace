@@ -754,6 +754,25 @@ export const SOURCES: SourceEntry[] = [
     license: "甲府市議会ウェブサイト掲載資料（利用条件は同サイト参照）",
     parser: "kofu-gikai",
   })),
+  // 事業報告（成果）＝事務事業評価 詳細票（第2号様式）。行政評価の公表用 XLSX に
+  // 個別事業の詳細票が数枚だけ埋め込まれている（事業番号がシート名）。事業費（決算＋当初＋計画）・
+  // トータルコスト・成果指標の目標/実績・総合評価を1事業で通して見られる。公表は各年サンプルのみ。
+  ...([
+    ["r6", "R6", "6kouhyouyou6.xlsx"],
+    ["r7", "R7", "7kouhyouyou2.xlsx"],
+  ] as const).map(([suffix, fy, fname]): SourceEntry => ({
+    id: `kofu-jigyou-houkoku-${suffix}`,
+    title: `${fy === "R6" ? "令和6" : "令和7"}年度 甲府市 事務事業評価 詳細票（事業報告・成果）`,
+    publisher: "甲府市",
+    url: null,
+    urls: [`https://www.city.kofu.yamanashi.jp/zaise/documents/${fname}`],
+    landingPage: `https://www.city.kofu.yamanashi.jp/zaise/${suffix}gyoseihyouka.html`,
+    kind: "excel",
+    fiscalYear: fy,
+    scope: "甲府市（事務事業評価 詳細票・公表サンプル）",
+    license: "甲府市ウェブサイト掲載資料（利用条件は同サイト参照）",
+    parser: "kofu-jigyou-houkoku",
+  })),
   {
     // 開発用フィクスチャ: 上記と同じ構造の小さな Excel を dev/make-fixture.ts が
     // 生成する。パイプラインの end-to-end 検証専用。normalized 出力は

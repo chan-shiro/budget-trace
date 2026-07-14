@@ -271,6 +271,27 @@ if (doc.docType === "council-composition") {
   finish(doc.factions.length, "会派");
 }
 
+// ---- 事業報告（成果）＝事務事業評価 詳細票 -----------------------------------
+if (doc.docType === "project-report") {
+  const seenNo = new Set<string>();
+  for (const f of doc.facts) {
+    if (seenNo.has(f.no)) issues.push({ level: "error", message: `詳細票 No.${f.no} が重複` });
+    seenNo.add(f.no);
+    if (!f.cost.length) issues.push({ level: "error", message: `${f.name}: コスト経年が空` });
+    // 事業費がどの年度も取れていない＝列ずれの疑い
+    if (f.cost.every((c) => c.jigyohi == null)) {
+      issues.push({ level: "error", message: `${f.name}: 事業費が全年度 null（列ずれの可能性）` });
+    }
+    // 実績値のある成果/活動指標が1つも無い＝目標達成状況の取りこぼし
+    const hasActual = f.indicators.some((i) => i.actuals.some((v) => v != null));
+    if (f.indicators.length > 0 && !hasActual) {
+      issues.push({ level: "warning", message: `${f.name}: 指標の実績値が全て null` });
+    }
+  }
+  if (doc.facts.length === 0) issues.push({ level: "error", message: `詳細票が0件` });
+  finish(doc.facts.length, "詳細票");
+}
+
 if (doc.docType !== "municipal-accounts") {
   throw new Error(`未知の docType: ${(doc as { docType: string }).docType}`);
 }

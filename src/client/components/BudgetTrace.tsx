@@ -9,7 +9,7 @@ import BudgetTraceView from "./BudgetTraceView";
 
 const {
   GLOSS, SIM_MIX_COLS, SIMILAR, SIMILAR_EVIDENCE, SOURCES,
-  KOFU_BUDGET_YEARS, KOFU_PROJECT_YEARS, KOFU_EXECUTION_YEARS, KOFU_EVALUATION_YEARS, KOFU_OUTTURN_YEARS, KOFU_R6_DETAIL, KOFU_TREND, KOFU_COUNCIL, KOFU_COUNCIL_YEARS,
+  KOFU_BUDGET_YEARS, KOFU_PROJECT_YEARS, KOFU_EXECUTION_YEARS, KOFU_EVALUATION_YEARS, KOFU_OUTTURN_YEARS, KOFU_R6_DETAIL, KOFU_TREND, KOFU_COUNCIL, KOFU_COUNCIL_YEARS, KOFU_REPORT_YEARS,
   muniFromBudget, fmtOku, pctOf, fmtPerCap, fadeColor, donutBg, setPalette,
 } = D;
 
@@ -815,6 +815,53 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
           minutesUrl: councilForFy.minutesUrl,
           newsletterUrl: councilForFy.newsletterUrl,
         }
+      : null,
+    // 事業報告（成果）＝事務事業評価 詳細票。full（甲府）のみ。予算→執行→成果を1事業で通す。
+    // 公表は各年サンプル数件なので、予算年度連動ではなく公表済みの詳細票をそのまま並べる。
+    reports: isFull
+      ? KOFU_REPORT_YEARS.map((y) => ({
+          fy: y.fy,
+          fyLabel: y.fyLabel,
+          targetFyLabel: y.targetFyLabel,
+          sourceOpen: () =>
+            openViewer({
+              url: y.sourceLocalUrl, title: y.sourceTitle, sub: `${y.fyLabel}（対象 ${y.targetFyLabel}）`,
+              originUrl: y.originUrl, archiveUrl: y.sourceUrl,
+            }),
+          items: y.reports.map((r) => ({
+            no: r.no,
+            name: r.name,
+            buka: r.buka,
+            kubun: r.kubun,
+            grade: r.grade,
+            score: r.score,
+            impl: r.implementation,
+            cost: r.cost.map((c) => ({
+              fy: c.fy,
+              kindLabel: c.kind,
+              jigyohiFmt: c.jigyohi != null ? fmtOku(c.jigyohi / 100000) : "—",
+              totalFmt: c.totalCost != null ? fmtOku(c.totalCost / 100000) : "—",
+            })),
+            indicators: r.indicators.map((ind) => {
+              // 実績値の末尾（最新の対象年度実績）と、それに対応する目標値を並べる
+              const actualVals = ind.actuals.filter((v) => v != null) as number[];
+              const latestActual = actualVals.length ? actualVals[actualVals.length - 1]! : null;
+              const target = ind.targets[actualVals.length - 1] ?? null;
+              const pct = target != null && target !== 0 && latestActual != null
+                ? Math.min(150, Math.round((latestActual / target) * 100))
+                : null;
+              return {
+                category: ind.category,
+                name: ind.name,
+                targetFmt: target != null ? target.toLocaleString() : "—",
+                actualFmt: latestActual != null ? latestActual.toLocaleString() : "—",
+                pct,
+                barW: pct != null ? Math.min(100, pct) : 0,
+                over: pct != null && pct >= 100,
+              };
+            }),
+          })),
+        }))
       : null,
     showEvidence,
     onPrefSelect: (name: string) => nav({ screen: "muni", pref: name }),

@@ -429,6 +429,65 @@ export const councilCompositionDocSchema = z.object({
 });
 export type CouncilCompositionDoc = z.infer<typeof councilCompositionDocSchema>;
 
+// ---- 事業報告（成果）: 事務事業評価 詳細票（第2号様式） -----------------------
+// 甲府市が公表した個別事業の詳細票。事業費（決算3年＋当初＋計画）・トータルコスト
+// （人件費込み）・成果指標の目標値/実績値・総合評価・実施内容/成果説明を持つ。
+// 予算→執行→成果を1事業で通して見られる唯一の一次資料（公表は各年数件のサンプルのみ）。
+export const projectReportCostYearSchema = z.object({
+  fy: z.string(), // "R3" など
+  kind: z.enum(["決算", "当初", "計画"]),
+  /** 事業費（千円） */
+  jigyohi: z.number().nullable(),
+  /** 一般財源（千円） */
+  ippanZaigen: z.number().nullable(),
+  /** トータルコスト＝事業費＋概算人件費（千円） */
+  totalCost: z.number().nullable(),
+});
+export const projectReportIndicatorSchema = z.object({
+  /** 活動指標 / 成果指標 */
+  category: z.enum(["活動指標", "成果指標"]),
+  name: z.string().min(1),
+  /** 目標値（年度順・最大5）。数値化できない指標は null */
+  targets: z.array(z.number().nullable()),
+  /** 実績値（決算年度分・目標より少ない）。 */
+  actuals: z.array(z.number().nullable()),
+});
+export const projectReportFactSchema = z.object({
+  /** 評価票の通し番号（シート名） */
+  no: z.string(),
+  /** 事務事業名 */
+  name: z.string().min(1),
+  /** 担当（部室課の原文） */
+  buka: z.string(),
+  /** 区分（継続/主要/総合戦略 など） */
+  kubun: z.string().nullable(),
+  /** 事業実施結果（評価対象年度の実施内容） */
+  implementation: z.string().nullable(),
+  /** 総合評価（A〜F。完了は F 扱い） */
+  grade: z.string().regex(/^[A-F]$/),
+  /** 評価点（24点満点） */
+  score: z.number().nullable(),
+  /** コスト経年（年度順） */
+  cost: z.array(projectReportCostYearSchema),
+  /** 成果・活動指標 */
+  indicators: z.array(projectReportIndicatorSchema),
+  locator: locatorSchema,
+});
+export type ProjectReportFact = z.infer<typeof projectReportFactSchema>;
+export const projectReportDocSchema = z.object({
+  docType: z.literal("project-report"),
+  sourceId: z.string(),
+  parser: z.string(),
+  parserVersion: z.string(),
+  parsedAt: z.string(),
+  /** 評価年度（評価票の作成年度） */
+  fiscalYear: z.string(),
+  /** 対象（実績）年度 */
+  targetFy: z.string(),
+  facts: z.array(projectReportFactSchema),
+});
+export type ProjectReportDoc = z.infer<typeof projectReportDocSchema>;
+
 /** parse/validate が受け取り得る全ドキュメント型 */
 export const anyParsedDocSchema = z.union([
   budgetBookDocSchema,
@@ -437,6 +496,7 @@ export const anyParsedDocSchema = z.union([
   budgetOutturnDocSchema,
   municipalNatureDocSchema,
   councilCompositionDocSchema,
+  projectReportDocSchema,
   parsedDocSchema,
 ]);
 export type AnyParsedDoc = z.infer<typeof anyParsedDocSchema>;
