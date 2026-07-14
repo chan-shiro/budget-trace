@@ -815,55 +815,60 @@ export const KOFU_EVALUATION_YEARS: KofuEvaluationYear[] = ${JSON.stringify(eval
 // （各 ①発行元 ②Wayback ③自サーバー配信）＋参考の会議録検索・議会だより。
 // ============================================================================
 {
-  const srcId = "kofu-gikai-r8";
-  const v = validationResultSchema.parse(readJson(validationPath(srcId)));
-  if (v.status !== "ok") throw new Error(`${srcId}: 検証が ${v.status} のため derive しません`);
-  const doc = anyParsedDocSchema.parse(readJson(parsedPath(srcId)));
-  if (doc.docType !== "council-composition") throw new Error(`${srcId}: council-composition ではありません`);
-  const meta = readRawMeta(srcId);
-  if (!meta) throw new Error(`${srcId}: raw-meta がありません`);
-  const src = findSource(srcId);
-  const rosterFile = meta.files.find((f) => /kaiha/i.test(f.filename)) ?? meta.files[0]!;
-  const resultFile = meta.files.find((f) => /kekka|shingi/i.test(f.filename)) ?? meta.files[1]!;
-  const rosterOrigin = src.urls![0]!;
-  const resultOrigin = src.urls![1]!;
-  const asOfLabel = doc.asOf.replace(/^(\d{4})-(\d{2})-(\d{2})$/, (_m, y, mo, d) => `${y}年${Number(mo)}月${Number(d)}日`);
-  const council = {
-    body: doc.body,
-    seats: doc.seats,
-    asOf: doc.asOf,
-    asOfLabel,
-    fyLabel: "令和8年度 当初予算",
-    factions: doc.factions.map((f) => ({ name: f.name, seats: f.seats, isIndependent: f.isIndependent })),
-    resolution: {
-      billNo: doc.resolution.billNo,
-      billName: doc.resolution.billName,
-      sessionLabel: doc.resolution.sessionLabel,
-      decidedDate: doc.resolution.decidedDate,
-      decidedDateLabel: doc.resolution.decidedDateLabel,
-      result: doc.resolution.result,
-    },
-    sourceTitle: src.title,
-    // ①発行元 ②Wayback ③自サーバー配信（HTML はサンドボックス iframe で開く）
-    roster: {
-      title: "所属会派別議員名簿",
-      localUrl: `/sources/${srcId}/${rosterFile.filename}`,
-      originUrl: rosterOrigin,
-      archiveUrl: wayback(rosterOrigin),
-    },
-    result: {
-      title: `${doc.resolution.sessionLabel} 審議結果`,
-      localUrl: `/sources/${srcId}/${resultFile.filename}`,
-      originUrl: resultOrigin,
-      archiveUrl: wayback(resultOrigin),
-    },
-    // 参考（二次エビデンス・パイプライン外の外部リンク）
-    minutesUrl: "https://www.city.kofu.yamanashi.dbsr.jp/",
-    newsletterUrl: "https://www.city.kofu.yamanashi.jp/gijichosa/shise/gikai/koho/r08.html",
-  };
+  const COUNCIL_FYS = ["R8", "R7", "R6", "R5", "R4", "R3", "R2"] as const;
+  const councils = COUNCIL_FYS.map((fy) => {
+    const srcId = `kofu-gikai-${fy.toLowerCase()}`;
+    const v = validationResultSchema.parse(readJson(validationPath(srcId)));
+    if (v.status !== "ok") throw new Error(`${srcId}: 検証が ${v.status} のため derive しません`);
+    const doc = anyParsedDocSchema.parse(readJson(parsedPath(srcId)));
+    if (doc.docType !== "council-composition") throw new Error(`${srcId}: council-composition ではありません`);
+    const meta = readRawMeta(srcId);
+    if (!meta) throw new Error(`${srcId}: raw-meta がありません`);
+    const src = findSource(srcId);
+    const rosterFile = meta.files.find((f) => /kaiha/i.test(f.filename)) ?? meta.files[0]!;
+    const resultFile = meta.files.find((f) => /kekka|shingi/i.test(f.filename)) ?? meta.files[1]!;
+    const rosterOrigin = src.urls![0]!;
+    const resultOrigin = src.urls![1]!;
+    const asOfLabel = doc.asOf.replace(/^(\d{4})-(\d{2})-(\d{2})$/, (_m, y, mo, d) => `${y}年${Number(mo)}月${Number(d)}日`);
+    return {
+      fy,
+      fyLabel: `令和${fy.slice(1)}年度 当初予算`,
+      body: doc.body,
+      seats: doc.seats,
+      asOf: doc.asOf,
+      asOfLabel,
+      factions: doc.factions.map((f) => ({ name: f.name, seats: f.seats, isIndependent: f.isIndependent })),
+      resolution: {
+        billNo: doc.resolution.billNo,
+        billName: doc.resolution.billName,
+        sessionLabel: doc.resolution.sessionLabel,
+        decidedDate: doc.resolution.decidedDate,
+        decidedDateLabel: doc.resolution.decidedDateLabel,
+        result: doc.resolution.result,
+      },
+      sourceTitle: src.title,
+      // ①発行元 ②Wayback ③自サーバー配信（HTML はサンドボックス iframe で開く）
+      roster: {
+        title: "所属会派別議員名簿",
+        localUrl: `/sources/${srcId}/${rosterFile.filename}`,
+        originUrl: rosterOrigin,
+        archiveUrl: wayback(rosterOrigin),
+      },
+      result: {
+        title: `${doc.resolution.sessionLabel} 審議結果`,
+        localUrl: `/sources/${srcId}/${resultFile.filename}`,
+        originUrl: resultOrigin,
+        archiveUrl: wayback(resultOrigin),
+      },
+      // 参考（二次エビデンス・パイプライン外の外部リンク）
+      minutesUrl: "https://www.city.kofu.yamanashi.dbsr.jp/",
+      newsletterUrl: "https://www.city.kofu.yamanashi.jp/gijichosa/shise/gikai/koho/r08.html",
+    };
+  });
   const councilOut = `// このファイルは自動生成です。手で編集しないこと。
 // 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
-// 出典: 甲府市議会 所属会派別議員名簿（${asOfLabel}現在）＋令和8年3月定例会 審議結果。
+// 出典: 甲府市議会 所属会派別議員名簿（各予算の議決時点のバージョン）＋各年3月定例会 審議結果。
+// 会派構成は名簿の更新日でバージョンを固定（過去分は Wayback スナップショット）。
 // 賛否内訳・会派別賛否は非公表（起立採決で「可決」のみ）のため持たない。
 
 export interface CouncilFaction {
@@ -881,15 +886,16 @@ export interface CouncilEvidence {
   archiveUrl: string;
 }
 export interface KofuCouncil {
+  /** 予算年度（この議会が議決した当初予算の年度。"R8" など） */
+  fy: string;
+  fyLabel: string;
   /** 議会名 */
   body: string;
   /** 定数（＝現員＝会派議席合計） */
   seats: number;
-  /** 会派構成の基準日 ISO */
+  /** 会派構成の基準日 ISO（名簿の更新日） */
   asOf: string;
   asOfLabel: string;
-  /** 議決対象の予算 */
-  fyLabel: string;
   factions: CouncilFaction[];
   resolution: {
     billNo: string;
@@ -906,12 +912,15 @@ export interface KofuCouncil {
   newsletterUrl: string;
 }
 
-/** 甲府市議会の構成（予算議決時） */
-export const KOFU_COUNCIL: KofuCouncil = ${JSON.stringify(council, null, 2)};
+/** 甲府市議会の構成（予算議決時）。新しい年度順（R8→R2）。 */
+export const KOFU_COUNCIL_YEARS: KofuCouncil[] = ${JSON.stringify(councils, null, 2)};
+
+/** 最新（R8）。年度未指定時のフォールバック。 */
+export const KOFU_COUNCIL: KofuCouncil = KOFU_COUNCIL_YEARS[0]!;
 `;
   writeFileSync(join(process.cwd(), "src/client/lib/council.gen.ts"), councilOut, "utf8");
   console.log(
-    `✓ 議会の構成を導出 → src/client/lib/council.gen.ts（${council.factions.length}会派・定数${council.seats}・${council.resolution.result}）`,
+    `✓ 議会の構成を導出 → src/client/lib/council.gen.ts（${councils.length}年度 ${councils.map((c) => `${c.fy}:${c.factions.length}会派`).join(" ")}）`,
   );
 }
 

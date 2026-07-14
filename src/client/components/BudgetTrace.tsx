@@ -9,7 +9,7 @@ import BudgetTraceView from "./BudgetTraceView";
 
 const {
   GLOSS, SIM_MIX_COLS, SIMILAR, SIMILAR_EVIDENCE, SOURCES,
-  KOFU_BUDGET_YEARS, KOFU_PROJECT_YEARS, KOFU_EXECUTION_YEARS, KOFU_EVALUATION_YEARS, KOFU_OUTTURN_YEARS, KOFU_R6_DETAIL, KOFU_TREND, KOFU_COUNCIL,
+  KOFU_BUDGET_YEARS, KOFU_PROJECT_YEARS, KOFU_EXECUTION_YEARS, KOFU_EVALUATION_YEARS, KOFU_OUTTURN_YEARS, KOFU_R6_DETAIL, KOFU_TREND, KOFU_COUNCIL, KOFU_COUNCIL_YEARS,
   muniFromBudget, fmtOku, pctOf, fmtPerCap, fadeColor, donutBg, setPalette,
 } = D;
 
@@ -204,6 +204,8 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
 
   // 収録済み（full）の年度は当初予算の収録年度（R8〜R6・R3〜R2）から選択
   const budget = KOFU_BUDGET_YEARS.find((b) => b.fy === s.budgetFy) ?? KOFU_BUDGET_YEARS[0]!;
+  // 議会の構成は「その予算を議決した議会」を表示年度に連動させる（無ければ最新へフォールバック）
+  const councilForFy = KOFU_COUNCIL_YEARS.find((c) => c.fy === budget.fy) ?? KOFU_COUNCIL;
   const projYear = KOFU_PROJECT_YEARS.find((y) => y.fy === budget.fy);
   const KOFU_PROJECTS = React.useMemo(() => projYear?.projects ?? [], [projYear]);
   const KOFU_PROJECTS_SOURCE = projYear?.source ?? { title: "", url: "", originUrl: "", localUrl: "", pagesLabel: "" };
@@ -776,13 +778,13 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     // 賛否内訳は非公表なので出さない（会派ごとの stance 列も持たない）。
     council: isFull
       ? {
-          body: KOFU_COUNCIL.body,
-          seats: KOFU_COUNCIL.seats,
-          asOfLabel: KOFU_COUNCIL.asOfLabel,
-          fyLabel: KOFU_COUNCIL.fyLabel,
-          factions: KOFU_COUNCIL.factions.map((f, i) => {
+          body: councilForFy.body,
+          seats: councilForFy.seats,
+          asOfLabel: councilForFy.asOfLabel,
+          fyLabel: councilForFy.fyLabel,
+          factions: councilForFy.factions.map((f, i) => {
             const sw = D.PALETTE[i % D.PALETTE.length];
-            const pct = ((f.seats / KOFU_COUNCIL.seats) * 100).toFixed(1);
+            const pct = ((f.seats / councilForFy.seats) * 100).toFixed(1);
             return {
               name: f.name,
               seatsLabel: `${f.seats}議席`,
@@ -791,22 +793,22 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
               tipMove: mkSegTip(f.name, `${f.seats}議席`, `${pct}%`, sw, { key: "council", idx: i }),
             };
           }),
-          resolution: KOFU_COUNCIL.resolution,
-          sourceTitle: KOFU_COUNCIL.sourceTitle,
+          resolution: councilForFy.resolution,
+          sourceTitle: councilForFy.sourceTitle,
           rosterOpen: () =>
             openViewer({
-              url: KOFU_COUNCIL.roster.localUrl, title: KOFU_COUNCIL.roster.title,
-              sub: `${KOFU_COUNCIL.asOfLabel}現在`, originUrl: KOFU_COUNCIL.roster.originUrl,
-              archiveUrl: KOFU_COUNCIL.roster.archiveUrl,
+              url: councilForFy.roster.localUrl, title: councilForFy.roster.title,
+              sub: `${councilForFy.asOfLabel}現在`, originUrl: councilForFy.roster.originUrl,
+              archiveUrl: councilForFy.roster.archiveUrl,
             }),
           resultOpen: () =>
             openViewer({
-              url: KOFU_COUNCIL.result.localUrl, title: KOFU_COUNCIL.result.title,
-              sub: KOFU_COUNCIL.resolution.decidedDateLabel, originUrl: KOFU_COUNCIL.result.originUrl,
-              archiveUrl: KOFU_COUNCIL.result.archiveUrl,
+              url: councilForFy.result.localUrl, title: councilForFy.result.title,
+              sub: councilForFy.resolution.decidedDateLabel, originUrl: councilForFy.result.originUrl,
+              archiveUrl: councilForFy.result.archiveUrl,
             }),
-          minutesUrl: KOFU_COUNCIL.minutesUrl,
-          newsletterUrl: KOFU_COUNCIL.newsletterUrl,
+          minutesUrl: councilForFy.minutesUrl,
+          newsletterUrl: councilForFy.newsletterUrl,
         }
       : null,
     showEvidence,

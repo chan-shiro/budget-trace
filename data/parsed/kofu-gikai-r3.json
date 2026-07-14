@@ -1,0 +1,79 @@
+{
+  "docType": "council-composition",
+  "sourceId": "kofu-gikai-r3",
+  "parser": "kofu-gikai",
+  "parserVersion": "0.1.0",
+  "parsedAt": "2026-07-14T13:23:58.743Z",
+  "fiscalYear": "R3",
+  "body": "甲府市議会",
+  "seats": 32,
+  "asOf": "2019-08-02",
+  "factions": [
+    {
+      "name": "政友クラブ",
+      "seats": 11,
+      "isIndependent": false,
+      "locator": {
+        "file": "h270512kaihabetu.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "創政こうふ",
+      "seats": 8,
+      "isIndependent": false,
+      "locator": {
+        "file": "h270512kaihabetu.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 5,
+      "isIndependent": false,
+      "locator": {
+        "file": "h270512kaihabetu.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "こうふ未来",
+      "seats": 4,
+      "isIndependent": false,
+      "locator": {
+        "file": "h270512kaihabetu.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 2,
+      "isIndependent": false,
+      "locator": {
+        "file": "h270512kaihabetu.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "こうふクラブ",
+      "seats": 2,
+      "isIndependent": false,
+      "locator": {
+        "file": "h270512kaihabetu.html",
+        "row": 6
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第1号",
+    "billName": "令和3年度甲府市一般会計予算",
+    "sessionLabel": "令和3年3月定例会",
+    "decidedDate": "2021-03-23",
+    "decidedDateLabel": "令和3年3月23日",
+    "result": "可決",
+    "locator": {
+      "file": "shingikekka.html",
+      "row": 1
+    }
+  }
+}

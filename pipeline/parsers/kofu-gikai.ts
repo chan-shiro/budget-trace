@@ -136,7 +136,15 @@ export function parseKofuGikai(
   const iDate = col("議決");
   const iResult = col("結果");
   if (iName < 0 || iDate < 0 || iResult < 0) throw new Error(`${kekkaFile.filename}: 審議結果の列（件名/議決月日/結果）が特定できません`);
-  const bill = decisionTable.slice(1).find((r) => (r[iName] ?? "").includes("一般会計予算"));
+  // 一般会計予算の議決行。「…に対する附帯決議」（件名に一般会計予算を含むが別議案）は除く
+  const bill = decisionTable
+    .slice(1)
+    .find(
+      (r) =>
+        (r[iName] ?? "").includes("一般会計予算") &&
+        !(r[iName] ?? "").includes("附帯決議") &&
+        !(r[iName] ?? "").includes("に対する"),
+    );
   if (!bill) throw new Error(`${kekkaFile.filename}: 「一般会計予算」の議決行が見つかりません`);
   const billName = bill[iName]!;
   const billNo = iNo >= 0 ? bill[iNo]! : "";

@@ -1,0 +1,19 @@
+{
+  "sourceId": "kofu-gikai-r7",
+  "files": [
+    {
+      "filename": "h270512kaihabetu.html",
+      "sha256": "aee200f26722b634f3d3bc83a2f4edfe0295257f8dbbbbf83848a53e5f3b1d24",
+      "bytes": 26677,
+      "fetchedAt": "2026-07-14T13:24:09.026Z",
+      "fetchedFrom": "https://web.archive.org/web/20240910021519id_/https://www.city.kofu.yamanashi.jp/gikai-somu/shise/gikai/mebo/h270512kaihabetu.html"
+    },
+    {
+      "filename": "shingikekka.html",
+      "sha256": "9974f7f72edd40feb3b6aaa82c5ad95560d70f5841751422612d13ab1dab6dbf",
+      "bytes": 46058,
+      "fetchedAt": "2026-07-14T13:24:09.258Z",
+      "fetchedFrom": "https://www.city.kofu.yamanashi.jp/gijichosa/r0703/shingikekka.html"
+    }
+  ]
+}
