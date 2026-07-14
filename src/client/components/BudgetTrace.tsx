@@ -5,6 +5,7 @@ import { CountUpNum } from "./ui";
 import * as D from "@/client/lib/data";
 import { useDecisionData } from "@/client/hooks/useDecisionData";
 import { stateToPath, locationToState, type RouteState } from "@/client/lib/routing";
+import { COVERAGE_ENTITIES, COVERAGE_PREFS, COVERAGE_NATIONAL, COVERAGE_UNCLASSIFIED, COVERAGE_SUMMARY } from "@/client/lib/coverage.gen";
 import BudgetTraceView from "./BudgetTraceView";
 
 const {
@@ -170,6 +171,8 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
   setPalette(mapColorMode);
   const screen = s.screen;
   const isApp = ["dash", "drill", "compare", "themes", "execution", "similar", "sources"].includes(screen);
+  // データ整備状況は自治体スコープを持たない全体ページ（シャード取得も不要）
+  const isCoverage = screen === "coverage";
 
   // --- カバレッジ階層 ---
   // full = 甲府市（予算ベースの詳細: 主な事業・執行・評価・補正・前年当初比較）。
@@ -1157,6 +1160,22 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     unitTabs,
     unitLabel: isPer ? "1人あたり" : "総額",
     isSimilar: screen === "similar", isSources: screen === "sources",
+    isCoverage,
+    goCoverage: () => nav({ screen: "coverage", pref: null, muni: null, muniCode: undefined }),
+    cov: {
+      summary: COVERAGE_SUMMARY,
+      entities: COVERAGE_ENTITIES,
+      prefs: COVERAGE_PREFS,
+      national: COVERAGE_NATIONAL,
+      unclassified: COVERAGE_UNCLASSIFIED,
+      // ライセンス上の懸念がある資料（③自サーバー配信の再配布に許諾が要る／未確認）
+      permissionSources: [...COVERAGE_ENTITIES.flatMap((e) => e.sources), ...COVERAGE_NATIONAL]
+        .filter((s2) => s2.licenseClass === "permission-required"),
+      // データセット列の見出し（マトリクスの列順）
+      datasetCols: (COVERAGE_ENTITIES[0]?.datasets ?? []).map((d) => d.label),
+      openSource: (localUrl: string, title: string, sub: string, originUrl: string, archiveUrl: string | null) => () =>
+        openViewer({ url: localUrl, title, sub, originUrl, archiveUrl: archiveUrl ?? originUrl }),
+    },
     goSources: () => nav({ screen: "sources" }), goDash: () => nav({ screen: "dash" }),
     similarRows: SIMILAR.map((r) => {
       const cols = [D.PALETTE[0], D.PALETTE[1], D.PALETTE[2], D.PALETTE[4], "#C6D2DA"];

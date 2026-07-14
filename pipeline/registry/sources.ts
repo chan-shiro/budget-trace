@@ -290,7 +290,7 @@ export const SOURCES: SourceEntry[] = [
     landingPage: "https://www.city.yamaguchi.lg.jp/site/shiseijoho/171302.html",
     kind: "pdf",
     fiscalYear: "R7",
-    scope: "山口市（一般会計・団体コード352012）",
+    scope: "山口市（一般会計・団体コード352039）",
     license: "山口市ウェブサイト掲載資料（利用条件は同サイト参照）",
     parser: "kofu-yosansho",
     // 印字ページ番号(158/159)と PDF 物理ページ(160/161)がずれる。○接頭辞・負号▲。
