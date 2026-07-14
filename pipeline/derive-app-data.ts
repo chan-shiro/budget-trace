@@ -925,6 +925,111 @@ export const KOFU_COUNCIL: KofuCouncil = KOFU_COUNCIL_YEARS[0]!;
 }
 
 // ============================================================================
+// 事業報告（成果）＝事務事業評価 詳細票（第2号様式）→ src/client/lib/report.gen.ts
+// 予算→執行→成果を1事業で通して見られる詳細票。公表は各年サンプル数件のみ。
+// 事業費（決算＋当初＋計画）・トータルコスト・成果指標の目標/実績・総合評価を持つ。
+// ============================================================================
+{
+  const REPORT_FYS = ["R7", "R6"] as const;
+  const reportYears = REPORT_FYS.map((fy) => {
+    const srcId = `kofu-jigyou-houkoku-${fy.toLowerCase()}`;
+    const v = validationResultSchema.parse(readJson(validationPath(srcId)));
+    if (v.status !== "ok") throw new Error(`${srcId}: 検証が ${v.status} のため derive しません`);
+    const doc = anyParsedDocSchema.parse(readJson(parsedPath(srcId)));
+    if (doc.docType !== "project-report") throw new Error(`${srcId}: project-report ではありません`);
+    const meta = readRawMeta(srcId);
+    if (!meta) throw new Error(`${srcId}: raw-meta がありません`);
+    const src = findSource(srcId);
+    const file = meta.files[0]!;
+    const url = src.urls?.[0] ?? src.landingPage ?? "";
+    const eraLabel = (c: string) => (c.startsWith("H") ? `平成${c.slice(1)}` : `令和${c.slice(1)}`) + "年度";
+    return {
+      fy,
+      fyLabel: eraLabel(fy),
+      targetFy: doc.targetFy,
+      targetFyLabel: doc.targetFy ? eraLabel(doc.targetFy) : "",
+      sourceTitle: src.title,
+      sourceUrl: wayback(url),
+      originUrl: url,
+      sourceLocalUrl: `/sources/${srcId}/${file.filename}`,
+      reports: doc.facts.map((f) => ({
+        no: f.no,
+        name: f.name,
+        buka: f.buka,
+        kubun: f.kubun,
+        implementation: f.implementation,
+        grade: f.grade,
+        score: f.score,
+        cost: f.cost,
+        indicators: f.indicators,
+        ref: `${file.filename}#${f.locator.sheet ?? ""}`,
+      })),
+    };
+  });
+  const reportOut = `// このファイルは自動生成です。手で編集しないこと。
+// 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
+// 出典: 甲府市 事務事業評価 詳細票（第2号様式）。公表は各年サンプル数件のみ。
+// 全事業分の詳細票は情報公開請求（未収録＝リクエスト）。
+
+export interface ReportCostYear {
+  fy: string;
+  kind: "決算" | "当初" | "計画";
+  jigyohi: number | null;
+  ippanZaigen: number | null;
+  totalCost: number | null;
+}
+export interface ReportIndicator {
+  category: "活動指標" | "成果指標";
+  name: string;
+  /** 目標値（年度順・最大5）。定性指標は null */
+  targets: (number | null)[];
+  /** 実績値（決算年度分） */
+  actuals: (number | null)[];
+}
+export interface KofuReport {
+  no: string;
+  /** 事務事業名 */
+  name: string;
+  /** 担当（部室課） */
+  buka: string;
+  kubun: string | null;
+  /** 事業実施結果（実施内容） */
+  implementation: string | null;
+  /** 総合評価（A〜F） */
+  grade: string;
+  /** 評価点（24点満点） */
+  score: number | null;
+  cost: ReportCostYear[];
+  indicators: ReportIndicator[];
+  /** 来歴（原資料内の位置） */
+  ref: string;
+}
+export interface KofuReportYear {
+  /** 評価年度 */
+  fy: string;
+  fyLabel: string;
+  /** 対象（実績）年度 */
+  targetFy: string;
+  targetFyLabel: string;
+  sourceTitle: string;
+  /** リンク用 URL（Wayback コピー優先） */
+  sourceUrl: string;
+  originUrl: string;
+  /** 自サーバー配信コピー（Excel はダウンロードカード） */
+  sourceLocalUrl: string;
+  reports: KofuReport[];
+}
+
+/** 事業報告（成果）＝事務事業評価 詳細票（新しい年度順） */
+export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears, null, 2)};
+`;
+  writeFileSync(join(process.cwd(), "src/client/lib/report.gen.ts"), reportOut, "utf8");
+  console.log(
+    `✓ 事業報告（成果）を導出 → src/client/lib/report.gen.ts（${reportYears.map((y) => `${y.fy}:${y.reports.length}件`).join(" / ")}）`,
+  );
+}
+
+// ============================================================================
 // 統計書 財政章（款項×当初/最終/決算）→ src/client/lib/outturn.gen.ts
 // 款別ドリルダウンの項テーブル（当初→最終→決算）の原典。単位は円 → 億円へ変換。
 // R3 歳出の「当初予算額」列は原典側の誤植（R2 の値のコピー。歳入側は正しく、

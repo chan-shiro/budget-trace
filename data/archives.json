@@ -335,6 +335,40 @@
       "checkedAt": "2026-07-12T14:23:44.761Z"
     },
     {
+      "sourceId": "kofu-jigyou-houkoku-r6",
+      "url": "https://www.city.kofu.yamanashi.jp/zaise/documents/6kouhyouyou6.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260712140404/https://www.city.kofu.yamanashi.jp/zaise/documents/6kouhyouyou6.xlsx",
+      "waybackTimestamp": "20260712140404",
+      "checkedAt": "2026-07-14T14:17:38.946Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kofu-jigyou-houkoku-r6",
+      "url": "https://www.city.kofu.yamanashi.jp/zaise/r6gyoseihyouka.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260712142433/https://www.city.kofu.yamanashi.jp/zaise/r6gyoseihyouka.html",
+      "waybackTimestamp": "20260712142433",
+      "checkedAt": "2026-07-14T14:17:44.357Z"
+    },
+    {
+      "sourceId": "kofu-jigyou-houkoku-r7",
+      "url": "https://www.city.kofu.yamanashi.jp/zaise/documents/7kouhyouyou2.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260712142225/https://www.city.kofu.yamanashi.jp/zaise/documents/7kouhyouyou2.xlsx",
+      "waybackTimestamp": "20260712142225",
+      "checkedAt": "2026-07-14T14:17:51.219Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kofu-jigyou-houkoku-r7",
+      "url": "https://www.city.kofu.yamanashi.jp/zaise/r7gyoseihyouka.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260712140614/https://www.city.kofu.yamanashi.jp/zaise/r7gyoseihyouka.html",
+      "waybackTimestamp": "20260712140614",
+      "checkedAt": "2026-07-14T14:18:11.878Z"
+    },
+    {
       "sourceId": "kofu-kessan-syousai-r1",
       "url": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/h28kessan/r1kessann.html",
       "kind": "landing",

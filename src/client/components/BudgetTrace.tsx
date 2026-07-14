@@ -9,7 +9,7 @@ import BudgetTraceView from "./BudgetTraceView";
 
 const {
   GLOSS, SIM_MIX_COLS, SIMILAR, SIMILAR_EVIDENCE, SOURCES,
-  KOFU_BUDGET_YEARS, KOFU_PROJECT_YEARS, KOFU_EXECUTION_YEARS, KOFU_EVALUATION_YEARS, KOFU_OUTTURN_YEARS, KOFU_R6_DETAIL, KOFU_TREND, KOFU_COUNCIL, KOFU_COUNCIL_YEARS,
+  KOFU_BUDGET_YEARS, KOFU_PROJECT_YEARS, KOFU_EXECUTION_YEARS, KOFU_EVALUATION_YEARS, KOFU_OUTTURN_YEARS, KOFU_R6_DETAIL, KOFU_TREND, KOFU_COUNCIL, KOFU_COUNCIL_YEARS, KOFU_REPORT_YEARS,
   muniFromBudget, fmtOku, pctOf, fmtPerCap, fadeColor, donutBg, setPalette,
 } = D;
 
@@ -816,6 +816,56 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
           newsletterUrl: councilForFy.newsletterUrl,
         }
       : null,
+    // 事業報告（成果）＝事務事業評価 詳細票。full（甲府）のみ。予算→執行→成果を1事業で通す。
+    // 公表は各年サンプル数件なので、予算年度連動ではなく公表済みの詳細票をそのまま並べる。
+    reports: isFull
+      ? KOFU_REPORT_YEARS.map((y) => ({
+          fy: y.fy,
+          fyLabel: y.fyLabel,
+          targetFyLabel: y.targetFyLabel,
+          sourceOpen: () =>
+            openViewer({
+              url: y.sourceLocalUrl, title: y.sourceTitle, sub: `${y.fyLabel}（対象 ${y.targetFyLabel}）`,
+              originUrl: y.originUrl, archiveUrl: y.sourceUrl,
+            }),
+          items: y.reports.map((r) => ({
+            no: r.no,
+            name: r.name,
+            buka: r.buka,
+            kubun: r.kubun,
+            grade: r.grade,
+            score: r.score,
+            impl: r.implementation,
+            // 事業費・トータルコスト（千円）は総額/1人あたりトグルに追従（÷10万で億へ）。
+            // 表示中の予算年度に一致する列を強調し、予算↔成果の年度対応を分かるようにする。
+            cost: r.cost.map((c) => ({
+              fy: c.fy,
+              kindLabel: c.kind,
+              current: c.fy === budget.fy,
+              jigyohiFmt: c.jigyohi != null ? fmtV(c.jigyohi / 100000) : "—",
+              totalFmt: c.totalCost != null ? fmtV(c.totalCost / 100000) : "—",
+            })),
+            indicators: r.indicators.map((ind) => {
+              // 実績値の末尾（最新の対象年度実績）と、それに対応する目標値を並べる
+              const actualVals = ind.actuals.filter((v) => v != null) as number[];
+              const latestActual = actualVals.length ? actualVals[actualVals.length - 1]! : null;
+              const target = ind.targets[actualVals.length - 1] ?? null;
+              const pct = target != null && target !== 0 && latestActual != null
+                ? Math.min(150, Math.round((latestActual / target) * 100))
+                : null;
+              return {
+                category: ind.category,
+                name: ind.name,
+                targetFmt: target != null ? target.toLocaleString() : "—",
+                actualFmt: latestActual != null ? latestActual.toLocaleString() : "—",
+                pct,
+                barW: pct != null ? Math.min(100, pct) : 0,
+                over: pct != null && pct >= 100,
+              };
+            }),
+          })),
+        }))
+      : null,
     showEvidence,
     onPrefSelect: (name: string) => nav({ screen: "muni", pref: name }),
     mapColorMode,
@@ -1105,6 +1155,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
       ? `総額 ${fmtOku(totalNow)}`
       : `市民1人あたり ${((totalNow * 1e8) / data.pop / 1e4).toFixed(1)}万円（${isDecision ? "住民基本台帳人口" : isBudget ? muniBudget!.populationLabel : budget.populationLabel} ${data.pop.toLocaleString()}人）`,
     unitTabs,
+    unitLabel: isPer ? "1人あたり" : "総額",
     isSimilar: screen === "similar", isSources: screen === "sources",
     goSources: () => nav({ screen: "sources" }), goDash: () => nav({ screen: "dash" }),
     similarRows: SIMILAR.map((r) => {

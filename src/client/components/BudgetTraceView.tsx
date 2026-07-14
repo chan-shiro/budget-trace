@@ -296,6 +296,66 @@ export default function BudgetTraceView({ v }: { v: any }) {
                 </section>
                 )}
 
+                {/* 事業報告（成果）＝事務事業評価 詳細票。full 専用（甲府）。予算→執行→成果を1事業で通す。 */}
+                {v.reports && v.reports.some((y: any) => y.items.length > 0) && (
+                <section style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:22px 24px; margin:26px 0;")}>
+                  <div style={S("display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:6px;")}>
+                    <h2 style={S("margin:0; font-size:16px; font-weight:700;")}>事業報告（成果）</h2>
+                    <span style={S("font-size:12px; color:#5C6B77;")}>事務事業評価 詳細票 — 予算→執行→成果を1事業で追える</span>
+                  </div>
+                  <p style={S("margin:0 0 16px; font-size:12px; color:#8494A0; line-height:1.7;")}>甲府市が詳細票を公表した事業のみ（各年数件）。事業費（決算→当初→計画）・トータルコスト（人件費込み）・成果指標の目標／実績・総合評価が載っています。全事業分は情報公開請求（未収録＝リクエスト）。</p>
+                  {v.reports.map((yr: any, yi: number) => yr.items.length > 0 && (
+                    <div key={yi} style={S("margin-bottom:18px;")}>
+                      <div style={S("display:flex; align-items:baseline; gap:10px; margin-bottom:10px; flex-wrap:wrap;")}>
+                        <h3 style={S("margin:0; font-size:13.5px; font-weight:700; color:#14181C;")}>{yr.fyLabel}評価<span style={S("font-weight:400; color:#5C6B77;")}>（対象 {yr.targetFyLabel}実績）</span></h3>
+                        <a href={yr.sourceLocalUrl} onClick={(e) => { e.preventDefault(); yr.sourceOpen(); }} style={S("font-size:11.5px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:2px 11px; text-decoration:none; cursor:pointer;")}>出典：詳細票（原本を開く）</a>
+                      </div>
+                      <div style={S("display:grid; grid-template-columns:repeat(auto-fill, minmax(340px,1fr)); gap:12px;")}>
+                        {yr.items.map((r: any, ri: number) => (
+                          <div key={ri} style={S("background:#FBFDFE; border:1px solid #E3EBF0; border-radius:14px; padding:16px 18px;")}>
+                            <div style={S("display:flex; align-items:flex-start; justify-content:space-between; gap:10px; margin-bottom:4px;")}>
+                              <span style={S("font-size:14.5px; font-weight:700; color:#14181C; line-height:1.4;")}>{r.name}</span>
+                              <span style={S(`flex-shrink:0; font-size:11px; font-weight:700; border-radius:8px; padding:2px 9px; color:#0F76A3; border:1px solid #B9E0F2; font-family:'IBM Plex Mono',monospace;`)}>評価 {r.grade}{r.score != null ? `・${r.score}/24` : ""}</span>
+                            </div>
+                            <div style={S("font-size:11px; color:#8494A0; margin-bottom:12px;")}>{r.buka}</div>
+
+                            {/* コスト経年（上=事業費／下=トータルコスト・人件費込み）。表示中の予算年度の列を強調 */}
+                            <div style={S("display:flex; justify-content:space-between; font-size:9.5px; color:#8494A0; margin-bottom:3px;")}>
+                              <span>事業費 <span style={S("color:#B0BCC6;")}>／ トータル（人件費込）</span></span>
+                              <span>{v.unitLabel}</span>
+                            </div>
+                            <div style={S("display:flex; gap:4px; margin-bottom:12px; overflow-x:auto;")}>
+                              {r.cost.map((c: any, ci: number) => (
+                                <div key={ci} style={S(`flex:1 0 auto; min-width:64px; text-align:center; padding:6px 4px; border-radius:8px; background:${c.kindLabel === "決算" ? "#EEF5F9" : c.kindLabel === "当初" ? "#FFF6EC" : "#F4F6F8"}; border:${c.current ? "1.5px solid #1798D0" : "1.5px solid transparent"};`)}>
+                                  <div style={S(`font-size:9.5px; color:${c.current ? "#0F76A3" : "#8494A0"}; font-weight:${c.current ? "700" : "400"};`)}>{c.fy}・{c.kindLabel}</div>
+                                  <div style={S("font-size:12px; font-weight:600; color:#14181C; font-family:'IBM Plex Mono',monospace;")}>{c.jigyohiFmt}</div>
+                                  <div style={S("font-size:10px; color:#8494A0; font-family:'IBM Plex Mono',monospace;")}>{c.totalFmt}</div>
+                                </div>
+                              ))}
+                            </div>
+
+                            {/* 成果指標: 目標→実績 */}
+                            {r.indicators.map((ind: any, ii: number) => (
+                              <div key={ii} style={S("margin-bottom:9px;")}>
+                                <div style={S("display:flex; justify-content:space-between; gap:8px; font-size:11.5px; margin-bottom:3px;")}>
+                                  <span style={S("color:#5C6B77;")}><span style={S(`font-size:9.5px; font-weight:700; border-radius:5px; padding:0 5px; margin-right:5px; color:${ind.category === "成果指標" ? "#0F76A3" : "#5C6B77"}; border:1px solid ${ind.category === "成果指標" ? "#B9E0F2" : "#DFE7EC"};`)}>{ind.category === "成果指標" ? "成果" : "活動"}</span>{ind.name}</span>
+                                </div>
+                                <div style={S("display:flex; align-items:center; gap:8px;")}>
+                                  <div style={S("flex:1; height:8px; border-radius:999px; background:#E3EBF0; overflow:hidden;")}>
+                                    <span data-anim="bar" style={S(`display:block; height:100%; width:${ind.barW}%; background:${ind.over ? "#1798D0" : "#84A0B0"};`)}></span>
+                                  </div>
+                                  <span style={S("font-size:11.5px; font-family:'IBM Plex Mono',monospace; color:#14181C; white-space:nowrap;")}>{ind.actualFmt} <span style={S("color:#8494A0;")}>/ 目標{ind.targetFmt}</span>{ind.pct != null && <span style={S(`margin-left:5px; font-weight:700; color:${ind.over ? "#0F76A3" : "#5C6B77"};`)}>{ind.pct}%</span>}</span>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </section>
+                )}
+
                 {/* budget 階層の主な事業。山梨県は施策別グループ、款のない市は上位一覧 */}
                 {v.isBudget && v.hasBudgetProjects && (
                 <section style={S("margin-top:26px;")}>
