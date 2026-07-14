@@ -100,7 +100,9 @@ function validateBudgetBook(d: BudgetBookDoc): void {
         }
         prevNo = p.no;
       }
-      if (p.amount <= 0) issues.push({ level: "error", message: `${tag}: 予算額が不正 (${p.amount})` });
+      // 負値はパース誤り。0 は原典どおり（笛吹の一般財源0の重点事業など）なので warning
+      if (p.amount < 0) issues.push({ level: "error", message: `${tag}: 予算額が不正 (${p.amount})` });
+      else if (p.amount === 0) issues.push({ level: "warning", message: `${tag}: 予算額が0（原典どおりか確認）` });
       if (p.kan != null) {
         // 一般会計の款に属する事業は款予算を超えられない（特別会計セクションは対象外）
         const kb = kanBudget.get(p.kan);

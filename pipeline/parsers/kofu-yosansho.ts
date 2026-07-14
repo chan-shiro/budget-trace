@@ -33,7 +33,7 @@ interface Options {
    * - "marked-bullets"（和泉: 拡/新 ◎ 事業名 … 予算額 千円 の重点事業リスト。款・前年度なし）
    * - "table-lines"（山口: 事業名 予算額 内容 担当課 の事業別表。施策見出しつき・款/前年度なし）
    */
-  projectFormat?: "table" | "bullets" | "coded-sections" | "marked-bullets" | "table-lines" | "pref-bullets";
+  projectFormat?: "table" | "bullets" | "coded-sections" | "marked-bullets" | "table-lines" | "pref-bullets" | "dept-bullets";
   /**
    * 表形式の列境界（X座標）。PDF の座標系が年度で違う場合に上書きする
    * （R5 の WARP 回収版は全体に右寄りのスケール）。省略時は R8 実測値
@@ -779,6 +779,71 @@ function parseProjectsPrefBullets(
   return facts;
 }
 
+// ---- 主な事業（行ベース）: 笛吹「重点事業」 ------------------------------------
+// 部（総務部・建設部・教育委員会…）でグループ。事業は「■事業名【担当課】」→次行
+// 「予算額 NN,NNN 千円」→「事業内容」＋説明。■ 行で名前を保留し 予算額 行で確定する。
+function parseProjectsDeptBullets(
+  filePath: string,
+  filename: string,
+  from: number,
+  to: number,
+): BudgetProjectFact[] {
+  const facts: BudgetProjectFact[] = [];
+  let currentDept = "";
+  let pendingName = "";
+  let descTarget: BudgetProjectFact | null = null;
+  for (let page = from; page <= to; page++) {
+    for (const raw of pdfPageText(filePath, page).split("\n")) {
+      const line = raw.replace(/\s+$/, "");
+      if (!line.trim()) continue;
+      // 部見出し（総務部・教育委員会・消防本部…）＝行全体が短い「…部/委員会/本部」
+      const deptM = line.match(/^[\s　]*(\S{2,10}(?:部|委員会|本部))[\s　]*$/);
+      if (deptM && !/■|予算|事業/.test(line)) {
+        currentDept = deptM[1]!;
+        pendingName = ""; descTarget = null;
+        continue;
+      }
+      // ■事業名【担当課】 → 名前を保留（金額は次の「予算額」行）
+      const evM = line.match(/^[\s　]*■\s*(.+?)(?:[\s　]*【(.+?)】)?[\s　]*$/);
+      if (evM) {
+        pendingName = evM[1]!.replace(/[\s　]/g, "");
+        descTarget = null;
+        continue;
+      }
+      // 予算額 NN,NNN 千円（末尾に「(…総額)」等の注記が付くことがある）
+      const amtM = line.match(/予算額\s+([\d,]+)\s*千円/);
+      if (amtM && pendingName) {
+        const fact: BudgetProjectFact = {
+          kan: null,
+          no: null,
+          kubun: null,
+          name: pendingName,
+          budgetBookName: null,
+          amount: toAmount(amtM[1]!),
+          description: "",
+          basicGoal: "",
+          shisaku: currentDept,
+          locator: { file: filename, page },
+        };
+        facts.push(fact);
+        pendingName = "";
+        descTarget = fact;
+        continue;
+      }
+      // 「事業内容」の次以降、最初の散文行を説明として拾う
+      if (descTarget && !descTarget.description && !/^[\s　]*事業内容/.test(line)) {
+        const t = line.replace(/[\s　]+/g, " ").trim();
+        if (hasCJKChars(t) && t.length >= 8 && !/^[（(]/.test(t)) {
+          descTarget.description = t;
+          descTarget = null;
+        }
+      }
+    }
+  }
+  if (facts.length === 0) throw new Error(`${filename}: 主な事業（dept-bullets）が1件も抽出できませんでした`);
+  return facts;
+}
+
 export function parseKofuYosansho(
   files: { path: string; filename: string }[],
   source: SourceEntry,
@@ -825,7 +890,9 @@ export function parseKofuYosansho(
             ? parseProjectsTableLines(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
             : projFmt === "pref-bullets"
               ? parseProjectsPrefBullets(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
-              : parseProjectPages(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to, opts.projectColumns, opts.projectRowBanding ?? "midpoint")
+              : projFmt === "dept-bullets"
+                ? parseProjectsDeptBullets(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
+                : parseProjectPages(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to, opts.projectColumns, opts.projectRowBanding ?? "midpoint")
     : undefined;
 
   return {
