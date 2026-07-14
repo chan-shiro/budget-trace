@@ -2491,7 +2491,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       }
     ],
     "sourceTitle": "令和8年度 都留市当初予算（款別歳入歳出）",
-    "sourceUrl": "https://www.city.tsuru.yamanashi.jp/material/files/group/4/R8-0.pdf",
+    "sourceUrl": "https://web.archive.org/web/20260714071801/https://www.city.tsuru.yamanashi.jp/material/files/group/4/R8-0.pdf",
     "originUrl": "https://www.city.tsuru.yamanashi.jp/material/files/group/4/R8-0.pdf",
     "sourceLocalUrl": "/sources/tsuru-yosansho-r8/R8-0.pdf",
     "pagesLabel": "款別歳入歳出",
@@ -2499,7 +2499,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       {
         "title": "令和8年度 都留市当初予算（款別歳入歳出）",
         "type": "PDF",
-        "url": "https://www.city.tsuru.yamanashi.jp/material/files/group/4/R8-0.pdf",
+        "url": "https://web.archive.org/web/20260714071801/https://www.city.tsuru.yamanashi.jp/material/files/group/4/R8-0.pdf",
         "localUrl": "/sources/tsuru-yosansho-r8/R8-0.pdf",
         "source": "www.city.tsuru.yamanashi.jp",
         "thumb": "R8-0.pdf ・ sha256 f11b50887ab13c8f… ・ 2026-07-14 取得"
@@ -2744,7 +2744,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       }
     ],
     "sourceTitle": "令和8年度 大月市当初予算概要（款別歳入歳出）",
-    "sourceUrl": "https://www.city.otsuki.yamanashi.jp/shisei/jyohokokai/images/R08_yosangaiyou.pdf",
+    "sourceUrl": "https://web.archive.org/web/20260714071536/https://www.city.otsuki.yamanashi.jp/shisei/jyohokokai/images/R08_yosangaiyou.pdf",
     "originUrl": "https://www.city.otsuki.yamanashi.jp/shisei/jyohokokai/images/R08_yosangaiyou.pdf",
     "sourceLocalUrl": "/sources/otsuki-yosansho-r8/R08_yosangaiyou.pdf",
     "pagesLabel": "款別歳入歳出",
@@ -2752,7 +2752,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       {
         "title": "令和8年度 大月市当初予算概要（款別歳入歳出）",
         "type": "PDF",
-        "url": "https://www.city.otsuki.yamanashi.jp/shisei/jyohokokai/images/R08_yosangaiyou.pdf",
+        "url": "https://web.archive.org/web/20260714071536/https://www.city.otsuki.yamanashi.jp/shisei/jyohokokai/images/R08_yosangaiyou.pdf",
         "localUrl": "/sources/otsuki-yosansho-r8/R08_yosangaiyou.pdf",
         "source": "www.city.otsuki.yamanashi.jp",
         "thumb": "R08_yosangaiyou.pdf ・ sha256 a2dd179b68d6a341… ・ 2026-07-14 取得"
@@ -4192,7 +4192,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       }
     ],
     "sourceTitle": "令和8年度 甲州市当初予算（款別歳入歳出）",
-    "sourceUrl": "https://www.city.koshu.yamanashi.jp/docs/2021011200621/file_contents/R8tousyoyosan.pdf",
+    "sourceUrl": "https://web.archive.org/web/20260714072236/https://www.city.koshu.yamanashi.jp/docs/2021011200621/file_contents/R8tousyoyosan.pdf",
     "originUrl": "https://www.city.koshu.yamanashi.jp/docs/2021011200621/file_contents/R8tousyoyosan.pdf",
     "sourceLocalUrl": "/sources/koshu-yosansho-r8/R8tousyoyosan.pdf",
     "pagesLabel": "款別歳入歳出",
@@ -4200,7 +4200,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       {
         "title": "令和8年度 甲州市当初予算（款別歳入歳出）",
         "type": "PDF",
-        "url": "https://www.city.koshu.yamanashi.jp/docs/2021011200621/file_contents/R8tousyoyosan.pdf",
+        "url": "https://web.archive.org/web/20260714072236/https://www.city.koshu.yamanashi.jp/docs/2021011200621/file_contents/R8tousyoyosan.pdf",
         "localUrl": "/sources/koshu-yosansho-r8/R8tousyoyosan.pdf",
         "source": "www.city.koshu.yamanashi.jp",
         "thumb": "R8tousyoyosan.pdf ・ sha256 108e376a89df693a… ・ 2026-07-14 取得"

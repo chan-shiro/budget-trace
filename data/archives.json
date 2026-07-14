@@ -605,6 +605,23 @@
       "checkedAt": "2026-07-12T09:27:45.771Z"
     },
     {
+      "sourceId": "koshu-yosansho-r8",
+      "url": "https://www.city.koshu.yamanashi.jp/docs/2021011200621/",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260714072602/https://www.city.koshu.yamanashi.jp/docs/2021011200621/",
+      "waybackTimestamp": "20260714072602",
+      "checkedAt": "2026-07-14T07:26:44.928Z"
+    },
+    {
+      "sourceId": "koshu-yosansho-r8",
+      "url": "https://www.city.koshu.yamanashi.jp/docs/2021011200621/file_contents/R8tousyoyosan.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260714072236/https://www.city.koshu.yamanashi.jp/docs/2021011200621/file_contents/R8tousyoyosan.pdf",
+      "waybackTimestamp": "20260714072236",
+      "checkedAt": "2026-07-14T07:24:20.264Z",
+      "sha256Match": true
+    },
+    {
       "sourceId": "minami-alps-yosansho-r8",
       "url": "https://www.city.minami-alps.yamanashi.jp/fs/1/4/1/8/3/3/_/__8____________.pdf",
       "kind": "file",
@@ -629,6 +646,23 @@
       "waybackTimestamp": "20260713094056",
       "checkedAt": "2026-07-13T09:41:21.093Z",
       "sha256Match": true
+    },
+    {
+      "sourceId": "otsuki-yosansho-r8",
+      "url": "https://www.city.otsuki.yamanashi.jp/shisei/jyohokokai/images/R08_yosangaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260714071536/https://www.city.otsuki.yamanashi.jp/shisei/jyohokokai/images/R08_yosangaiyou.pdf",
+      "waybackTimestamp": "20260714071536",
+      "checkedAt": "2026-07-14T07:16:13.613Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "otsuki-yosansho-r8",
+      "url": "https://www.city.otsuki.yamanashi.jp/shisei/jyohokokai/yosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260411172410/https://www.city.otsuki.yamanashi.jp/shisei/jyohokokai/yosan.html",
+      "waybackTimestamp": "20260411172410",
+      "checkedAt": "2026-07-14T07:17:01.632Z"
     },
     {
       "sourceId": "soumu-shichoson-kessan-r2",
@@ -1159,6 +1193,23 @@
       "waybackUrl": "https://web.archive.org/web/20260713033630/https://www.city.toyokawa.lg.jp/soshiki/zaimu/zaisei/2/1/1/3/22950.html",
       "waybackTimestamp": "20260713033630",
       "checkedAt": "2026-07-13T03:37:09.585Z"
+    },
+    {
+      "sourceId": "tsuru-yosansho-r8",
+      "url": "https://www.city.tsuru.yamanashi.jp/material/files/group/4/R8-0.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260714071801/https://www.city.tsuru.yamanashi.jp/material/files/group/4/R8-0.pdf",
+      "waybackTimestamp": "20260714071801",
+      "checkedAt": "2026-07-14T07:19:26.189Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "tsuru-yosansho-r8",
+      "url": "https://www.city.tsuru.yamanashi.jp/soshiki/zaimu/zaisei_t/1/1657.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260714072030/https://www.city.tsuru.yamanashi.jp/soshiki/zaimu/zaisei_t/1/1657.html",
+      "waybackTimestamp": "20260714072030",
+      "checkedAt": "2026-07-14T07:21:40.510Z"
     },
     {
       "sourceId": "yamaguchi-yosansho-r7",
