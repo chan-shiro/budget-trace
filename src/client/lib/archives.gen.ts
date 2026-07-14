@@ -7,6 +7,8 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.city.fuefuki.yamanashi.jp/zaise/shisejoho/zaise/yosan.html": "https://web.archive.org/web/20260202182232/https://www.city.fuefuki.yamanashi.jp/zaise/shisejoho/zaise/yosan.html",
   "https://www.city.fujiyoshida.yamanashi.jp/page/1900.html": "https://web.archive.org/web/20260216054649/https://www.city.fujiyoshida.yamanashi.jp/page/1900.html",
   "https://www.city.fujiyoshida.yamanashi.jp/uploaded/attachment/7412.pdf": "https://web.archive.org/web/20260713114033/https://www.city.fujiyoshida.yamanashi.jp/uploaded/attachment/7412.pdf",
+  "https://www.city.hokuto.yamanashi.jp/docs/1664.html": "https://web.archive.org/web/20260418225034/https://www.city.hokuto.yamanashi.jp/docs/1664.html",
+  "https://www.city.hokuto.yamanashi.jp/fs/4/9/9/0/3/0/_/__8__________.pdf": "https://web.archive.org/web/20260714071224/https://www.city.hokuto.yamanashi.jp/fs/4/9/9/0/3/0/_/__8__________.pdf",
   "https://www.city.osaka-izumi.lg.jp/kakukano/soumubu/zaiseika/gyoumu/yosan.html": "https://web.archive.org/web/20260713094504/https://www.city.osaka-izumi.lg.jp/kakukano/soumubu/zaiseika/gyoumu/yosan.html",
   "https://www.city.osaka-izumi.lg.jp/material/files/group/18/02_R8_ippan.pdf": "https://web.archive.org/web/20260713094338/https://www.city.osaka-izumi.lg.jp/material/files/group/18/02_R8_ippan.pdf",
   "https://www.city.kofu.yamanashi.jp/zaise/documents/kekkaitiran.xls": "https://web.archive.org/web/20260712141740/https://www.city.kofu.yamanashi.jp/zaise/documents/kekkaitiran.xls",

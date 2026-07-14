@@ -409,6 +409,103 @@ export const SOURCES: SourceEntry[] = [
     },
   },
   {
+    // 大月市（団体コード 192066）。当初予算概要 R8（60p）。歳入 p.4「（歳入）」/ 歳出 p.5「（歳出）」。
+    // 合計「合計」、款番号半角、負号 △。合計行の後にドーナツ凡例の数値ノイズあり（合計で打切り）。
+    id: "otsuki-yosansho-r8",
+    title: "令和8年度 大月市当初予算概要（款別歳入歳出）",
+    publisher: "大月市",
+    url: null,
+    urls: ["https://www.city.otsuki.yamanashi.jp/shisei/jyohokokai/images/R08_yosangaiyou.pdf"],
+    landingPage: "https://www.city.otsuki.yamanashi.jp/shisei/jyohokokai/yosan.html",
+    kind: "pdf",
+    fiscalYear: "R8",
+    scope: "大月市（一般会計・団体コード192066）",
+    license: "大月市ウェブサイト掲載資料（利用条件は同サイト参照）",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 4,
+      expenditurePage: 5,
+      // p.4 冒頭のタイトル行「一般会計当初予算概要」を見出しとして読み飛ばす（款1に混ざるのを防ぐ）
+      revenueHeading: "一般会計当初予算概要",
+      expenditureHeading: "（歳出）",
+      revenueTotalLabel: "合計",
+      expenditureTotalLabel: "合計",
+    },
+  },
+  {
+    // 都留市（団体コード 192040）。当初予算資料 R8（R8-0.pdf・37p）。歳入 p.4「（１）歳入」/
+    // 歳出 p.5「（２）歳出」（目的別。p.6 は性質別なので見出しで区別）。合計「歳入合計/歳出合計」。
+    // 款番号は 1-9 全角・10-22 半角（toHalfDigits で吸収）、負号 △。歳入合計の直後に「自主財源」行あり。
+    id: "tsuru-yosansho-r8",
+    title: "令和8年度 都留市当初予算（款別歳入歳出）",
+    publisher: "都留市",
+    url: null,
+    urls: ["https://www.city.tsuru.yamanashi.jp/material/files/group/4/R8-0.pdf"],
+    landingPage: "https://www.city.tsuru.yamanashi.jp/soshiki/zaimu/zaisei_t/1/1657.html",
+    kind: "pdf",
+    fiscalYear: "R8",
+    scope: "都留市（一般会計・団体コード192040）",
+    license: "都留市ウェブサイト掲載資料（利用条件は同サイト参照）",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 4,
+      expenditurePage: 5,
+      // p.4 冒頭のタイトル行「一般会計予算」を見出しとして読み飛ばす（款1に混ざるのを防ぐ）
+      revenueHeading: "一般会計予算",
+      expenditureHeading: "（２）歳出",
+      revenueTotalLabel: "歳入合計",
+      expenditureTotalLabel: "歳出合計",
+    },
+  },
+  {
+    // 甲州市（団体コード 192139）。当初予算 R8（R8tousyoyosan.pdf・4p）。歳入 p.2 / 歳出 p.3（目的別。
+    // p.1 は会計別総括表、p.4 は性質別分析表なのでページ指定で回避）。合計「歳入合計/歳出合計」。
+    // 款番号半角、負号 △。ヘッダが2行（当初予算/(A)）に折返す。
+    id: "koshu-yosansho-r8",
+    title: "令和8年度 甲州市当初予算（款別歳入歳出）",
+    publisher: "甲州市",
+    url: null,
+    urls: ["https://www.city.koshu.yamanashi.jp/docs/2021011200621/file_contents/R8tousyoyosan.pdf"],
+    landingPage: "https://www.city.koshu.yamanashi.jp/docs/2021011200621/",
+    kind: "pdf",
+    fiscalYear: "R8",
+    scope: "甲州市（一般会計・団体コード192139）",
+    license: "甲州市ウェブサイト掲載資料（利用条件は同サイト参照）",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 2,
+      expenditurePage: 3,
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+      revenueTotalLabel: "歳入合計",
+      expenditureTotalLabel: "歳出合計",
+    },
+  },
+  {
+    // 北杜市（団体コード 192104）。当初予算概要 R8（11p）。歳入 p.4「歳入合計」/ 歳出 p.5「歳出（目的別）」
+    // （p.6 は性質別なので見出しで区別）。合計「歳入合計/歳出合計」。款番号半角、負号 △、款名に
+    // 内部スペース（市 税）。表の上にドーナツ凡例（款番号なしなので款行にはならない）。
+    id: "hokuto-yosansho-r8",
+    title: "令和8年度 北杜市当初予算概要（款別歳入歳出）",
+    publisher: "北杜市",
+    url: null,
+    urls: ["https://www.city.hokuto.yamanashi.jp/fs/4/9/9/0/3/0/_/__8__________.pdf"],
+    landingPage: "https://www.city.hokuto.yamanashi.jp/docs/1664.html",
+    kind: "pdf",
+    fiscalYear: "R8",
+    scope: "北杜市（一般会計・団体コード192104）",
+    license: "北杜市ウェブサイト掲載資料（利用条件は同サイト参照）",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 4,
+      expenditurePage: 5,
+      revenueHeading: "歳入合計",
+      expenditureHeading: "歳出（目的別）",
+      revenueTotalLabel: "歳入合計",
+      expenditureTotalLabel: "歳出合計",
+    },
+  },
+  {
     // 富士吉田市（団体コード 192023）。予算の概要 R8（7412.pdf）。歳入 p.6 / 歳出 p.7（別ページ）。
     // 見出し「一般会計予算款別比較表」、合計「合計」、款番号は半角、負号 △。
     id: "fujiyoshida-yosansho-r8",

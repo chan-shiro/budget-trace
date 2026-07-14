@@ -36,6 +36,23 @@
       "sha256Match": true
     },
     {
+      "sourceId": "hokuto-yosansho-r8",
+      "url": "https://www.city.hokuto.yamanashi.jp/docs/1664.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260418225034/https://www.city.hokuto.yamanashi.jp/docs/1664.html",
+      "waybackTimestamp": "20260418225034",
+      "checkedAt": "2026-07-14T07:13:40.287Z"
+    },
+    {
+      "sourceId": "hokuto-yosansho-r8",
+      "url": "https://www.city.hokuto.yamanashi.jp/fs/4/9/9/0/3/0/_/__8__________.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260714071224/https://www.city.hokuto.yamanashi.jp/fs/4/9/9/0/3/0/_/__8__________.pdf",
+      "waybackTimestamp": "20260714071224",
+      "checkedAt": "2026-07-14T07:13:35.384Z",
+      "sha256Match": true
+    },
+    {
       "sourceId": "izumi-yosansho-r8",
       "url": "https://www.city.osaka-izumi.lg.jp/kakukano/soumubu/zaiseika/gyoumu/yosan.html",
       "kind": "landing",
