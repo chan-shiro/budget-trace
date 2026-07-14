@@ -836,11 +836,14 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
             grade: r.grade,
             score: r.score,
             impl: r.implementation,
+            // 事業費・トータルコスト（千円）は総額/1人あたりトグルに追従（÷10万で億へ）。
+            // 表示中の予算年度に一致する列を強調し、予算↔成果の年度対応を分かるようにする。
             cost: r.cost.map((c) => ({
               fy: c.fy,
               kindLabel: c.kind,
-              jigyohiFmt: c.jigyohi != null ? fmtOku(c.jigyohi / 100000) : "—",
-              totalFmt: c.totalCost != null ? fmtOku(c.totalCost / 100000) : "—",
+              current: c.fy === budget.fy,
+              jigyohiFmt: c.jigyohi != null ? fmtV(c.jigyohi / 100000) : "—",
+              totalFmt: c.totalCost != null ? fmtV(c.totalCost / 100000) : "—",
             })),
             indicators: r.indicators.map((ind) => {
               // 実績値の末尾（最新の対象年度実績）と、それに対応する目標値を並べる
@@ -1152,6 +1155,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
       ? `総額 ${fmtOku(totalNow)}`
       : `市民1人あたり ${((totalNow * 1e8) / data.pop / 1e4).toFixed(1)}万円（${isDecision ? "住民基本台帳人口" : isBudget ? muniBudget!.populationLabel : budget.populationLabel} ${data.pop.toLocaleString()}人）`,
     unitTabs,
+    unitLabel: isPer ? "1人あたり" : "総額",
     isSimilar: screen === "similar", isSources: screen === "sources",
     goSources: () => nav({ screen: "sources" }), goDash: () => nav({ screen: "dash" }),
     similarRows: SIMILAR.map((r) => {

@@ -319,12 +319,17 @@ export default function BudgetTraceView({ v }: { v: any }) {
                             </div>
                             <div style={S("font-size:11px; color:#8494A0; margin-bottom:12px;")}>{r.buka}</div>
 
-                            {/* コスト経年 */}
+                            {/* コスト経年（上=事業費／下=トータルコスト・人件費込み）。表示中の予算年度の列を強調 */}
+                            <div style={S("display:flex; justify-content:space-between; font-size:9.5px; color:#8494A0; margin-bottom:3px;")}>
+                              <span>事業費 <span style={S("color:#B0BCC6;")}>／ トータル（人件費込）</span></span>
+                              <span>{v.unitLabel}</span>
+                            </div>
                             <div style={S("display:flex; gap:4px; margin-bottom:12px; overflow-x:auto;")}>
                               {r.cost.map((c: any, ci: number) => (
-                                <div key={ci} style={S(`flex:1 0 auto; min-width:58px; text-align:center; padding:6px 4px; border-radius:8px; background:${c.kindLabel === "決算" ? "#EEF5F9" : c.kindLabel === "当初" ? "#FFF6EC" : "#F4F6F8"};`)}>
-                                  <div style={S("font-size:9.5px; color:#8494A0;")}>{c.fy}・{c.kindLabel}</div>
+                                <div key={ci} style={S(`flex:1 0 auto; min-width:64px; text-align:center; padding:6px 4px; border-radius:8px; background:${c.kindLabel === "決算" ? "#EEF5F9" : c.kindLabel === "当初" ? "#FFF6EC" : "#F4F6F8"}; border:${c.current ? "1.5px solid #1798D0" : "1.5px solid transparent"};`)}>
+                                  <div style={S(`font-size:9.5px; color:${c.current ? "#0F76A3" : "#8494A0"}; font-weight:${c.current ? "700" : "400"};`)}>{c.fy}・{c.kindLabel}</div>
                                   <div style={S("font-size:12px; font-weight:600; color:#14181C; font-family:'IBM Plex Mono',monospace;")}>{c.jigyohiFmt}</div>
+                                  <div style={S("font-size:10px; color:#8494A0; font-family:'IBM Plex Mono',monospace;")}>{c.totalFmt}</div>
                                 </div>
                               ))}
                             </div>
