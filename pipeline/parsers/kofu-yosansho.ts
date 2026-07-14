@@ -33,7 +33,7 @@ interface Options {
    * - "marked-bullets"（和泉: 拡/新 ◎ 事業名 … 予算額 千円 の重点事業リスト。款・前年度なし）
    * - "table-lines"（山口: 事業名 予算額 内容 担当課 の事業別表。施策見出しつき・款/前年度なし）
    */
-  projectFormat?: "table" | "bullets" | "coded-sections" | "marked-bullets" | "table-lines" | "pref-bullets" | "dept-bullets";
+  projectFormat?: "table" | "bullets" | "coded-sections" | "marked-bullets" | "table-lines" | "pref-bullets" | "dept-bullets" | "coord-table";
   /**
    * 表形式の列境界（X座標）。PDF の座標系が年度で違う場合に上書きする
    * （R5 の WARP 回収版は全体に右寄りのスケール）。省略時は R8 実測値
@@ -90,6 +90,10 @@ function pdfPageText(filePath: string, page: number): string {
     throw e;
   }
 }
+
+/** 全角数字・全角カンマ → 半角 */
+const toHalfNum = (s: string): string =>
+  s.replace(/[０-９]/g, (d) => String.fromCharCode(d.charCodeAt(0) - 0xfee0)).replace(/，/g, ",");
 
 interface PageResult {
   lines: BudgetLineFact[];
@@ -844,6 +848,75 @@ function parseProjectsDeptBullets(
   return facts;
 }
 
+// ---- 主な事業（座標ベース）: 富士吉田「基本方針及び主要事業」------------------
+// 部ごとに「事業名（主管課）| 款項目＋予算額 | 事業概要」の狭い3列テーブル。予算額列が
+// 細く、款項目と金額（全角 NN，NNN千円）が縦積みになるため -layout では崩れる。-tsv の
+// 単語座標で列を分ける: 事業名列 = left<nameEnd、金額 = 全角 NN千円（列不問で一意）。
+// 各金額を1事業の確定点とし、その上（前の金額〜当該金額の top 範囲）の事業名列の語を
+// (top,left) 順で連結して事業名にする（折返し名の文字順ズレを left で正す）。
+// 部（…部/委員会/創生室）を施策グループにする。
+function parseProjectsCoordTable(
+  filePath: string,
+  filename: string,
+  from: number,
+  to: number,
+  nameEnd = 175,
+): BudgetProjectFact[] {
+  const facts: BudgetProjectFact[] = [];
+  const isAmt = (t: string) => /^[０-９，]+千円$/.test(t);
+  let dept = "";
+  for (let page = from; page <= to; page++) {
+    const ws = pdfPageWords(filePath, page).filter((w) => !w.text.startsWith("###"));
+    if (ws.length === 0) continue;
+    // 部（施策）: 「基本方針及び主要事業<部>」から。ページをまたいで持ち越す
+    const joined = ws.map((w) => w.text).join("").replace(/[\s　]/g, "");
+    const dm = joined.match(/基本方針及び主要事業(.{2,8}?(?:部|委員会|創生室|会計管理者))/);
+    if (dm) {
+      let d = dm[1]!;
+      // 見出しと標題で部名が二重になることがあるので畳む
+      if (d.length % 2 === 0 && d.slice(0, d.length / 2) === d.slice(d.length / 2)) d = d.slice(0, d.length / 2);
+      dept = d;
+    }
+    // 「事業名（事業主管課）」ヘッダより下だけが事業（上は基本方針・目標の散文）
+    const hdrs = ws.filter((w) => w.text.includes("事業名") && w.text.includes("主管課")).map((w) => w.y);
+    let prev = hdrs.length ? Math.min(...hdrs) : 0;
+    const amts = ws.filter((w) => isAmt(w.text)).sort((a, b) => a.y - b.y);
+    for (const a of amts) {
+      const names = ws
+        .filter(
+          (w) =>
+            w.x < nameEnd && w.y > prev && w.y <= a.y &&
+            !w.text.includes("事業名") && !w.text.includes("主要事業") &&
+            // 予算額列の款項目マーカー（全角数字・款/項/目 単字）が事業名列にはみ出す事業を除く。
+            // 款項目番号は全角（６）、事業名中の番号は半角（国道138号）なので全角のみ弾く
+            !/^[０-９]+$/.test(w.text) && !/^[款項目]$/.test(w.text),
+        )
+        .sort((x, y) => x.y - y.y || x.x - y.x);
+      let name = names.map((w) => w.text).join("");
+      // 末尾の（主管課）を除去
+      name = name.replace(/（[^）]*(?:課|室|局|会計管理者|事務局)）?$/, "").replace(/（.*$/, "").trim();
+      const amount = toAmount(toHalfNum(a.text).replace(/千円|,/g, ""));
+      prev = a.y;
+      if (name.length >= 3 && amount > 0) {
+        facts.push({
+          kan: null,
+          no: null,
+          kubun: null,
+          name,
+          budgetBookName: null,
+          amount,
+          description: "",
+          basicGoal: "",
+          shisaku: dept,
+          locator: { file: filename, page },
+        });
+      }
+    }
+  }
+  if (facts.length === 0) throw new Error(`${filename}: 主な事業（coord-table）が1件も抽出できませんでした`);
+  return facts;
+}
+
 export function parseKofuYosansho(
   files: { path: string; filename: string }[],
   source: SourceEntry,
@@ -892,7 +965,9 @@ export function parseKofuYosansho(
               ? parseProjectsPrefBullets(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
               : projFmt === "dept-bullets"
                 ? parseProjectsDeptBullets(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
-                : parseProjectPages(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to, opts.projectColumns, opts.projectRowBanding ?? "midpoint")
+                : projFmt === "coord-table"
+                  ? parseProjectsCoordTable(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
+                  : parseProjectPages(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to, opts.projectColumns, opts.projectRowBanding ?? "midpoint")
     : undefined;
 
   return {

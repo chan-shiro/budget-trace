@@ -412,7 +412,7 @@ export const SOURCES: SourceEntry[] = [
     // 富士吉田市（団体コード 192023）。予算の概要 R8（7412.pdf）。歳入 p.6 / 歳出 p.7（別ページ）。
     // 見出し「一般会計予算款別比較表」、合計「合計」、款番号は半角、負号 △。
     id: "fujiyoshida-yosansho-r8",
-    title: "令和8年度 富士吉田市当初予算概要（款別歳入歳出）",
+    title: "令和8年度 富士吉田市当初予算概要（款別歳入歳出＋主要事業）",
     publisher: "富士吉田市",
     url: null,
     urls: ["https://www.city.fujiyoshida.yamanashi.jp/uploaded/attachment/7412.pdf"],
@@ -429,6 +429,9 @@ export const SOURCES: SourceEntry[] = [
       expenditureHeading: "款別比較表",
       revenueTotalLabel: "合計",
       expenditureTotalLabel: "合計",
+      // 「基本方針及び主要事業」p.21-38（部別・狭い3列テーブル）を座標ベースで抽出
+      projectPages: { from: 21, to: 38 },
+      projectFormat: "coord-table",
     },
   },
   {
