@@ -1176,6 +1176,32 @@
       "waybackUrl": "https://web.archive.org/web/20260313143003/https://www.pref.yamanashi.jp/sui-kai/163_003.html",
       "waybackTimestamp": "20260313143003",
       "checkedAt": "2026-07-14T03:05:54.383Z"
+    },
+    {
+      "sourceId": "yamanashi-yosansho-r8",
+      "url": "https://www.pref.yamanashi.jp/documents/6018/02_tousyonogaiyou_1.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260508112720/https://www.pref.yamanashi.jp/documents/6018/02_tousyonogaiyou_1.pdf",
+      "waybackTimestamp": "20260508112720",
+      "checkedAt": "2026-07-14T04:38:55.861Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "yamanashi-yosansho-r8",
+      "url": "https://www.pref.yamanashi.jp/documents/6018/03_tousyoyosannkibo_1.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260520040653/https://www.pref.yamanashi.jp/documents/6018/03_tousyoyosannkibo_1.pdf",
+      "waybackTimestamp": "20260520040653",
+      "checkedAt": "2026-07-14T04:38:31.877Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "yamanashi-yosansho-r8",
+      "url": "https://www.pref.yamanashi.jp/zaisei/43539671890.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251206161316/https://www.pref.yamanashi.jp/zaisei/43539671890.html",
+      "waybackTimestamp": "20251206161316",
+      "checkedAt": "2026-07-14T04:39:09.783Z"
     }
   ]
 }

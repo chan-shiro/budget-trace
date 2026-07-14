@@ -433,10 +433,14 @@ export const SOURCES: SourceEntry[] = [
     // p.3 歳出(14款・警察費など都道府県特有款あり)、前年度当初比つき。見出し「一般会計歳入/歳出」、
     // 合計「合計」、款番号半角・款名は全角スペース分かち書き、負号 △。単位=千円。
     id: "yamanashi-yosansho-r8",
-    title: "令和8年度 山梨県当初予算（規模・款別歳入歳出）",
+    title: "令和8年度 山梨県当初予算（規模・款別歳入歳出＋主要事業）",
     publisher: "山梨県",
     url: null,
-    urls: ["https://www.pref.yamanashi.jp/documents/6018/03_tousyoyosannkibo_1.pdf"],
+    // 款別＝「当初予算規模」、主な事業＝「当初予算の概要」主要事業（別ファイル）の分冊
+    urls: [
+      "https://www.pref.yamanashi.jp/documents/6018/03_tousyoyosannkibo_1.pdf",
+      "https://www.pref.yamanashi.jp/documents/6018/02_tousyonogaiyou_1.pdf",
+    ],
     landingPage: "https://www.pref.yamanashi.jp/zaisei/43539671890.html",
     kind: "pdf",
     fiscalYear: "R8",
@@ -444,12 +448,18 @@ export const SOURCES: SourceEntry[] = [
     license: "山梨県ウェブサイト掲載資料（利用条件は同サイト参照）",
     parser: "kofu-yosansho",
     parserOptions: {
+      kanFile: "03_tousyoyosannkibo_1.pdf",
       revenuePage: 2,
       expenditurePage: 3,
       revenueHeading: "一般会計歳入",
       expenditureHeading: "一般会計歳出",
       revenueTotalLabel: "合計",
       expenditureTotalLabel: "合計",
+      // 主要事業: 概要 p.1-22 の ○（新/拡）事業名 …金額千円（中項目《…》で施策）。
+      // p.1 は冒頭に総括表（単位ヘッダ・行末に千円無し→誤検出しない）＋主要事業の開始
+      projectsFile: "02_tousyonogaiyou_1.pdf",
+      projectPages: { from: 1, to: 22 },
+      projectFormat: "pref-bullets",
     },
   },
   {

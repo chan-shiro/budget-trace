@@ -426,27 +426,49 @@ export default function BudgetTrace() {
       name: p.name, kanPath: p.kan ?? p.shisaku ?? "", kubun: p.kubun ?? "",
       budgetFmt: fmtV(p.amountOku), sub: subV(p.amountOku), desc: p.description,
     }));
-  // budget 階層の「主な事業一覧」（款のない和泉も含め上位を一覧。full は既存の款ドリル/テーマで見せる）
+  // 主な事業1行の描画用オブジェクト（一覧・施策グループで共用）
+  const toProjRow = (p: (typeof projectsForDisplay)[number]) => ({
+    name: p.name,
+    kan: p.kan ?? "",
+    kubun: p.kubun ?? "",
+    amountFmt: fmtV(p.amountOku),
+    sub: p.prevAmountOku != null ? `前年 ${fmtOku(p.prevAmountOku)}` : subV(p.amountOku),
+    desc: p.description,
+    refLabel: p.refLabel ?? "",
+    refOpen: p.refLocalUrl
+      ? () => openViewer({
+          url: p.refLocalUrl!, title: muniBudget!.sourceTitle, sub: p.refLabel ?? "主な事業",
+          originUrl: muniBudget!.originUrl, archiveUrl: muniBudget!.sourceUrl,
+        })
+      : () => {},
+  });
+  // budget 階層の「主な事業一覧」（款のない和泉も含め上位を一覧。full は款ドリル/テーマで見せる）
   const budgetProjectRows = isBudget
-    ? [...projectsForDisplay]
-        .sort((a, b) => b.amountOku - a.amountOku)
-        .slice(0, 20)
-        .map((p) => ({
-          name: p.name,
-          kan: p.kan ?? "",
-          kubun: p.kubun ?? "",
-          amountFmt: fmtV(p.amountOku),
-          sub: p.prevAmountOku != null ? `前年 ${fmtOku(p.prevAmountOku)}` : subV(p.amountOku),
-          desc: p.description,
-          refLabel: p.refLabel ?? "",
-          refOpen: p.refLocalUrl
-            ? () => openViewer({
-                url: p.refLocalUrl!, title: muniBudget!.sourceTitle, sub: p.refLabel ?? "主な事業",
-                originUrl: muniBudget!.originUrl, archiveUrl: muniBudget!.sourceUrl,
-              })
-            : () => {},
-        }))
+    ? [...projectsForDisplay].sort((a, b) => b.amountOku - a.amountOku).slice(0, 20).map(toProjRow)
     : [];
+  // 施策別グループ（山梨県＝中項目《…》別に全件）。資料の施策順を保ち、グループ内は金額降順。
+  // 施策の無い市（和泉・山口）は空 → View は従来の一覧を出す
+  const budgetProjectGroups =
+    isBudget && projectsForDisplay.some((p) => p.shisaku)
+      ? (() => {
+          const order: string[] = [];
+          const map = new Map<string, typeof projectsForDisplay>();
+          for (const p of projectsForDisplay) {
+            const key = p.shisaku || "その他";
+            if (!map.has(key)) { map.set(key, []); order.push(key); }
+            map.get(key)!.push(p);
+          }
+          return order.map((key) => {
+            const rows = map.get(key)!;
+            return {
+              shisaku: key,
+              count: rows.length,
+              totalFmt: fmtV(rows.reduce((a, p) => a + p.amountOku, 0)),
+              rows: [...rows].sort((a, b) => b.amountOku - a.amountOku).map(toProjRow),
+            };
+          });
+        })()
+      : [];
 
   // --- drill（款 → 内訳/主な事業） ---
   const side = s.drillSide;
@@ -897,6 +919,10 @@ export default function BudgetTrace() {
     // budget 階層の主な事業一覧（款のない和泉も含む）。full は款ドリル/テーマで見せる
     hasBudgetProjects: isBudget && budgetProjectRows.length > 0,
     budgetProjectRows,
+    // 施策別グループ（山梨県）。空なら View は従来の一覧を出す
+    budgetProjectGroups,
+    hasBudgetProjectGroups: budgetProjectGroups.length > 0,
+    budgetProjectsCountLabel: isBudget ? `全${projectsForDisplay.length}事業` : "",
     budgetProjectsSourceLabel: isBudget ? `出典：${muniBudget!.sourceTitle}` : "",
     budgetProjectsSourceOpen: isBudget
       ? () => openViewer({

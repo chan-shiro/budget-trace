@@ -33,7 +33,7 @@ interface Options {
    * - "marked-bullets"（和泉: 拡/新 ◎ 事業名 … 予算額 千円 の重点事業リスト。款・前年度なし）
    * - "table-lines"（山口: 事業名 予算額 内容 担当課 の事業別表。施策見出しつき・款/前年度なし）
    */
-  projectFormat?: "table" | "bullets" | "coded-sections" | "marked-bullets" | "table-lines";
+  projectFormat?: "table" | "bullets" | "coded-sections" | "marked-bullets" | "table-lines" | "pref-bullets";
   /**
    * 表形式の列境界（X座標）。PDF の座標系が年度で違う場合に上書きする
    * （R5 の WARP 回収版は全体に右寄りのスケール）。省略時は R8 実測値
@@ -61,6 +61,9 @@ interface Options {
 /** 全角数字 → 半角（豊川の款番号が全角） */
 const toHalfDigits = (s: string): string =>
   s.replace(/[０-９]/g, (d) => String.fromCharCode(d.charCodeAt(0) - 0xfee0));
+
+/** CJK（かな・漢字）を含むか。事業名判定に使う */
+const hasCJKChars = (s: string): boolean => /[぀-ヿ㐀-鿿々〆ヶ]/.test(s);
 
 /** 金額トークンの正規表現（負号 △/▲ を許容） */
 const AMOUNT_RE = /[△▲]?[\d,]+(?:\.\d+)?/g;
@@ -690,6 +693,92 @@ function parseProjectsTableLines(
   return facts;
 }
 
+// ---- 主な事業（行ベース）: 山梨県「当初予算の概要」主要事業 --------------------
+// 単一カラム。中項目《…》で施策を追跡。事業は ○ 印 ＋（任意で 新/拡 印）＋事業名 ＋
+// 右寄せ金額（NN,NNN千円）。名前と金額は同一行のことも、名前が ○ 行・金額が次行のことも
+// あるため、○ 行で名前を保留し、千円 行で確定する（pending 方式）。内訳（「N 事業名 2,915」＝
+// 千円サフィックス無し）はトップレベル事業ではないので拾わない。
+// 新/拡 印は行頭（○ の後）で「新␣」「拡␣」の形のみ（"新たな""更新"等の語中 新 は誤検出しない）。
+function parseProjectsPrefBullets(
+  filePath: string,
+  filename: string,
+  from: number,
+  to: number,
+): BudgetProjectFact[] {
+  const facts: BudgetProjectFact[] = [];
+  let currentShisaku = "";
+  let pendingName = "";
+  let pendingMark: "新" | "拡" | null = null;
+  let descTarget: BudgetProjectFact | null = null; // 直近に確定した事業（次の説明行を拾う）
+  const stripName = (s: string) =>
+    s.replace(/[○◯]/g, "").replace(/^[\s　]*(新|拡)[\s　]/, "").replace(/[\s　]/g, "");
+  // 行頭（○ 群の後）の 新/拡 印。語中の 新（新たな・更新）は空白が続かないので当たらない
+  const markOf = (s: string): "新" | "拡" | null => {
+    const m = s.match(/^[\s　]*(?:○[\s　]*)*(新|拡)(?:[\s　]|$)/);
+    return m ? (m[1] as "新" | "拡") : null;
+  };
+  for (let page = from; page <= to; page++) {
+    for (const rawOrig of pdfPageText(filePath, page).split("\n")) {
+      const raw = toHalfDigits(rawOrig);
+      if (!raw.trim()) continue;
+      // 中項目《…》＝施策のまとまり
+      const shM = raw.match(/《(.+?)》/);
+      if (shM) {
+        currentShisaku = shM[1]!.replace(/[\s　]/g, "");
+        pendingName = ""; pendingMark = null; descTarget = null;
+        continue;
+      }
+      const amtM = raw.match(/([\d,]+)\s*千円/);
+      if (amtM) {
+        // トップレベル事業を確定。名前は当該行にあればそれ、無ければ ○ 行の保留名
+        const beforeAmt = raw.slice(0, amtM.index);
+        const nameHere = stripName(beforeAmt);
+        const mark = markOf(beforeAmt) ?? pendingMark;
+        const name = hasCJKChars(nameHere) && nameHere.length >= 3 ? nameHere : pendingName;
+        pendingName = ""; pendingMark = null; descTarget = null;
+        if (!name || name.length < 3) continue;
+        const fact: BudgetProjectFact = {
+          kan: null,
+          no: null,
+          kubun: mark === "新" ? "新規" : mark === "拡" ? "拡充" : null,
+          name,
+          budgetBookName: null,
+          amount: toAmount(amtM[1]!),
+          description: "",
+          basicGoal: "",
+          shisaku: currentShisaku,
+          locator: { file: filename, page },
+        };
+        facts.push(fact);
+        descTarget = fact;
+        continue;
+      }
+      // ○ で始まる事業名行（金額は次行）→ 名前を保留
+      if (/^[\s　]*○/.test(raw)) {
+        const nameCand = stripName(raw);
+        pendingName = hasCJKChars(nameCand) && nameCand.length >= 3 ? nameCand : "";
+        pendingMark = markOf(raw);
+        descTarget = null;
+        continue;
+      }
+      // 直近事業の説明文（インデントされた散文の1行目のみ）。財源・内訳・補助条件行は除く
+      if (descTarget && !descTarget.description && /^[\s　]+\S/.test(raw)) {
+        const t = raw.replace(/[\s　]+/g, " ").trim();
+        if (
+          hasCJKChars(t) && t.length >= 8 &&
+          !/^\d/.test(t) &&
+          !/^[（(]財源|^補\s*助|^対象|^限\s*度|^事業内容|^負担|^委託|^交付|^債務/.test(t)
+        ) {
+          descTarget.description = t;
+        }
+        descTarget = null;
+      }
+    }
+  }
+  if (facts.length === 0) throw new Error(`${filename}: 主な事業（pref-bullets）が1件も抽出できませんでした`);
+  return facts;
+}
+
 export function parseKofuYosansho(
   files: { path: string; filename: string }[],
   source: SourceEntry,
@@ -734,7 +823,9 @@ export function parseKofuYosansho(
           ? parseProjectsMarkedBullets(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
           : projFmt === "table-lines"
             ? parseProjectsTableLines(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
-            : parseProjectPages(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to, opts.projectColumns, opts.projectRowBanding ?? "midpoint")
+            : projFmt === "pref-bullets"
+              ? parseProjectsPrefBullets(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
+              : parseProjectPages(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to, opts.projectColumns, opts.projectRowBanding ?? "midpoint")
     : undefined;
 
   return {

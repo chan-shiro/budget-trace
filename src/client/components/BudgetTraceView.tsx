@@ -9,6 +9,19 @@ import HtmlViewer from "./HtmlViewer";
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 export default function BudgetTraceView({ v }: { v: any }) {
+  // 主な事業1行（一覧・施策グループ共用）。説明があれば事業名の下に淡色で1行
+  const projRow = (p: any, i: number) => (
+    <button key={i} onClick={p.refOpen} style={S("width:100%; text-align:left; display:grid; grid-template-columns:auto auto 1fr auto auto; align-items:baseline; gap:10px; padding:9px 14px; border:none; background:none; cursor:pointer; border-top:1px solid #F0F4F7; font-family:'IBM Plex Sans JP',sans-serif;")}>
+      {p.kan ? <span style={S("font-size:11px; color:#5C6B77; font-family:'IBM Plex Mono',monospace; align-self:center; white-space:nowrap;")}>{p.kan}</span> : <span></span>}
+      {p.kubun ? <span style={S(`font-size:10px; font-weight:700; border-radius:999px; padding:1px 8px; align-self:center; color:${p.kubun === "新規" ? "#0F76A3" : "#C25400"}; border:1px solid ${p.kubun === "新規" ? "#B9E0F2" : "#EFD4BE"};`)}>{p.kubun}</span> : <span></span>}
+      <span style={S("min-width:0;")}>
+        <span style={S("display:block; font-size:13px; color:#14181C;")}>{p.name}</span>
+        {p.desc && <span style={S("display:block; font-size:11.5px; color:#7C8B96; line-height:1.5; margin-top:2px;")}>{p.desc}</span>}
+      </span>
+      <span style={S("font-family:'IBM Plex Mono',monospace; font-size:13px; font-weight:600; align-self:center;")}>{p.amountFmt}</span>
+      <span style={S("font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#5C6B77; width:96px; text-align:right; align-self:center;")}>{p.sub}</span>
+    </button>
+  );
   return (
     <div style={S("min-height:100vh; background:#F7FAFC; color:#14181C; font-family:'IBM Plex Sans JP',sans-serif; font-size:15px; line-height:1.65;")}>
 
@@ -238,21 +251,30 @@ export default function BudgetTraceView({ v }: { v: any }) {
                 </section>
                 )}
 
-                {/* budget 階層の主な事業一覧（款のない和泉も含め上位を一覧） */}
+                {/* budget 階層の主な事業。山梨県は施策別グループ、款のない市は上位一覧 */}
                 {v.isBudget && v.hasBudgetProjects && (
                 <section style={S("margin-top:26px;")}>
-                  <h2 style={S("margin:0 0 12px; font-size:16px; font-weight:700;")}>主な事業（予算額上位）</h2>
-                  <div style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; padding:8px 6px;")}>
-                    {v.budgetProjectRows.map((p: any, i: number) => (
-                      <button key={i} onClick={p.refOpen} style={S("width:100%; text-align:left; display:flex; align-items:baseline; gap:10px; padding:8px 14px; border:none; background:none; cursor:pointer; border-top:1px solid #F0F4F7; font-family:'IBM Plex Sans JP',sans-serif;")}>
-                        {p.kan && <span style={S("font-size:11px; color:#5C6B77; font-family:'IBM Plex Mono',monospace; width:60px; flex-shrink:0;")}>{p.kan}</span>}
-                        {p.kubun && <span style={S(`font-size:10px; font-weight:700; border-radius:999px; padding:1px 8px; flex-shrink:0; color:${p.kubun === "新規" ? "#0F76A3" : "#C25400"}; border:1px solid ${p.kubun === "新規" ? "#B9E0F2" : "#EFD4BE"};`)}>{p.kubun}</span>}
-                        <span style={S("flex:1; font-size:13px; color:#14181C;")}>{p.name}</span>
-                        <span style={S("font-family:'IBM Plex Mono',monospace; font-size:13px; font-weight:600; flex-shrink:0;")}>{p.amountFmt}</span>
-                        <span style={S("font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#5C6B77; width:96px; text-align:right; flex-shrink:0;")}>{p.sub}</span>
-                      </button>
-                    ))}
+                  <div style={S("display:flex; align-items:baseline; justify-content:space-between; margin-bottom:12px; gap:12px;")}>
+                    <h2 style={S("margin:0; font-size:16px; font-weight:700;")}>{v.hasBudgetProjectGroups ? "主な事業（施策別）" : "主な事業（予算額上位）"}</h2>
+                    <span style={S("font-size:11.5px; color:#9DACB7; font-family:'IBM Plex Mono',monospace;")}>{v.budgetProjectsCountLabel}</span>
                   </div>
+                  {v.hasBudgetProjectGroups ? (
+                    v.budgetProjectGroups.map((g: any, gi: number) => (
+                      <div key={gi} style={S("margin-bottom:16px;")}>
+                        <div style={S("display:flex; align-items:baseline; justify-content:space-between; gap:10px; padding:0 4px 6px;")}>
+                          <span style={S("font-size:13.5px; font-weight:700; color:#1798D0;")}>《{g.shisaku}》</span>
+                          <span style={S("font-size:11px; color:#9DACB7; font-family:'IBM Plex Mono',monospace; white-space:nowrap;")}>{g.count}事業 ・ {g.totalFmt}</span>
+                        </div>
+                        <div style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; padding:2px 6px;")}>
+                          {g.rows.map((p: any, i: number) => projRow(p, i))}
+                        </div>
+                      </div>
+                    ))
+                  ) : (
+                    <div style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; padding:2px 6px;")}>
+                      {v.budgetProjectRows.map((p: any, i: number) => projRow(p, i))}
+                    </div>
+                  )}
                   <p style={S("margin:10px 2px 0; font-size:12px; color:#5C6B77;")}>
                     <a href="#" onClick={(e) => { e.preventDefault(); v.budgetProjectsSourceOpen(); }} style={S("color:#5C6B77; cursor:pointer;")}>{v.budgetProjectsSourceLabel}（原本を開く）</a>
                   </p>

@@ -1312,6 +1312,8 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
         name: p.name,
         amountOku: toOku(p.amount),
         kan: p.kan,
+        // 施策（山梨県の中項目《…》など）。無い様式は空文字
+        shisaku: p.shisaku || "",
         kubun: p.kubun,
         prevAmountOku: p.prevAmount != null ? toOku(p.prevAmount) : null,
         description: p.description || "",
@@ -1319,7 +1321,10 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
         refLocalUrl: `/sources/${b.srcId}/${p.locator.file}#page=${p.locator.page ?? 1}`,
       }))
       .sort((a, b2) => b2.amountOku - a.amountOku);
-    const projects = projectsAll.some((p) => p.kan) ? projectsAll : projectsAll.slice(0, PROJECT_CAP);
+    // 款が取れる市（豊川）は款ドリルで全件、都道府県（施策別に全件見せる）も全件、
+    // 款のない市（和泉・山口・700超）はダッシュボード一覧用に上位 PROJECT_CAP 件へ
+    const projects =
+      projectsAll.some((p) => p.kan) || b.isPref ? projectsAll : projectsAll.slice(0, PROJECT_CAP);
 
     const yoyTotal = yoyPctOf(doc.expenditureTotal, doc.prevExpenditureTotal);
     return {
@@ -1385,6 +1390,8 @@ export interface MuniProject {
   amountOku: number;
   /** 属する款（豊川など款が取れる様式のみ。和泉の重点事業は null） */
   kan: string | null;
+  /** 施策（山梨県の中項目《…》など施策別グルーピング。無い様式は空文字） */
+  shisaku: string;
   /** 新規/拡充/繰越 */
   kubun: "新規" | "拡充" | "繰越" | null;
   /** 前年度予算額（億円。事業単位の前年度がある豊川のみ、他は null） */
