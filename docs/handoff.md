@@ -182,6 +182,25 @@ Claude Design のプロトタイプ（`project/予算トレース.dc.html`）を
 
 ## 4. 横断的な暗黙知（ハマりどころ）
 
+- **依存は Next 16 + React 19（2026-07-14 更新）／`bun audit` 0 件を維持する**。更新前は Next 14 系で
+  **17件（high 7）** の既知脆弱性があった（Server Components の DoS・WebSocket SSRF 等。next ≥15.5.16 で修正）。
+  Next はおおむね直近2メジャーしか修正が出ないので、**メジャー遅れを放置しない**。ハマりどころ:
+  - **xlsx は `pipeline/lib/xlsx.ts` 経由でのみ使う**（`"xlsx"` を直接 import しない）。SheetJS は 0.18.5 で
+    npm 公開を停止 → 公式 CDN 版を devDependency で導入（`https://cdn.sheetjs.com/xlsx-0.20.3/...tgz`）。
+    ESM ビルドは `readFile` が fs を掴まず "Cannot access file …" で落ちるため、ラッパで `set_fs` 済み。
+    **アプリ本体は xlsx を使わない（パイプライン専用）**ので devDependencies が正しい
+  - `postcss` は Next が 8.4.31 固定 → `overrides` で 8.x 最新へ（GHSA-qx2v-qp2m-jg93）
+  - React 19: グローバル `JSX` 名前空間が廃止 → `React.JSX`。`Record<string, unknown>` と交差した props は
+    既知プロパティが `unknown`/`{}` に落ちるので使う分だけ絞り込む（`ui.tsx` の HoverBox）
+  - Next 15+: `params`/`searchParams` は Promise → catch-all ルートで `await`
+  - TypeScript は 5.5 のまま（7 系は Go 実装で飛躍が大きく、脆弱性指摘も無いため別途）
+- **ブラウザ検証ツールの限界**: プレビュー用ヘッドレスブラウザは**コンポジットしない**ため
+  (a) スクリーンショットが body 背景だけの空画像になる (b) viewport が 0×0 になることがある
+  (c) **IntersectionObserver のコールバックが一切発火しない**（自明に可視な要素でも）。
+  → **PdfViewer の遅延描画（IO でページを描く）はこのツールでは検証できない**（PDF.js の読込・
+  ページ数・ビューポート計算・初期スクロールまでは確認可能）。DOM 検証（`get_page_text` /
+  `getBoundingClientRect` / computed style）は信頼できるので、そちらで確認する
+
 - **GitHub 運用**: このリポジトリは **squash マージが使われる**。マージ後は必ず
   `git fetch origin main && git checkout -B implement-budget-trace origin/main` でブランチを作り直す
   （古いコミットを積み直すと重複する）

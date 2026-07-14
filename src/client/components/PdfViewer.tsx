@@ -90,7 +90,9 @@ export default function PdfViewer({ url, page }: Props) {
           io.disconnect();
           void task.destroy();
         };
-      } catch {
+      } catch (e) {
+        // 握りつぶすと原因不明の「表示されない」になるため、開発時は理由を出す
+        if (process.env.NODE_ENV !== "production") console.error("PdfViewer:", e);
         if (!cancelled) setStatus("error");
       }
     })();

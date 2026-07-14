@@ -10,7 +10,7 @@
 //   Σ主要14性質 = 歳出総額（概況）で自己検証できる（derive で突合）。
 // - 地方債ファイル: 地方債現在高 / 積立金現在高（＋財政調整基金・減債基金・その他特定目的基金）/
 //   債務負担行為額翌年度以降支出予定額 / 公営企業等に対する繰出金。
-import * as XLSX from "xlsx";
+import * as XLSX from "../lib/xlsx";
 import type { MunicipalNatureDoc, MunicipalNatureFact, SourceEntry } from "../types";
 
 export const PARSER_VERSION = "0.1.0";
