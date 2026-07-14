@@ -3,7 +3,7 @@
   "sourceId": "fuefuki-yosansho-r8",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-07-13T11:35:44.427Z",
+  "parsedAt": "2026-07-14T05:21:09.278Z",
   "unit": "thousandYen",
   "fiscalYear": "R8",
   "account": "一般会計",
@@ -407,6 +407,593 @@
       "locator": {
         "file": "r8toushoyosangaiyou.pdf",
         "page": 8
+      }
+    }
+  ],
+  "projects": [
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "ハザードマップ更新事業",
+      "budgetBookName": null,
+      "amount": 27649,
+      "description": "自然災害に対する防災対策及び被害の軽減に使用することを目的に、笛吹市ハザー",
+      "basicGoal": "",
+      "shisaku": "総務部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "衛星回線導入事業",
+      "budgetBookName": null,
+      "amount": 5294,
+      "description": "激甚災害が発生した際、現状の通信ネットワークが使用できなくなることに備え、",
+      "basicGoal": "",
+      "shisaku": "総務部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "拠点備蓄倉庫整備事業",
+      "budgetBookName": null,
+      "amount": 37199,
+      "description": "旧御坂保健センターを、地域防災計画に各地区の拠点となり、中長期の避難に必要",
+      "basicGoal": "",
+      "shisaku": "総務部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "入札業務電子化事業",
+      "budgetBookName": null,
+      "amount": 2310,
+      "description": "入札事務の効率化、事業者の利便性の向上及び透明性の向上などを目的に、従来紙",
+      "basicGoal": "",
+      "shisaku": "総務部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "契約業務電子化事業",
+      "budgetBookName": null,
+      "amount": 4,
+      "description": "契約行為に係る手続きの迅速化や省力化を図るため、従来紙によって行っている契",
+      "basicGoal": "",
+      "shisaku": "総務部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "社会体育施設整備検討事業",
+      "budgetBookName": null,
+      "amount": 7601,
+      "description": "競技レベルの向上に資する施設の整備が求められている現状を踏まえ、市全体を一",
+      "basicGoal": "",
+      "shisaku": "総合政策部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "文化施設整備検討事業",
+      "budgetBookName": null,
+      "amount": 0,
+      "description": "既存の文化施設である青楓美術館、八代郷土館、春日居郷土館・小川正子記念館、",
+      "basicGoal": "",
+      "shisaku": "総合政策部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "ふるさと納税事業",
+      "budgetBookName": null,
+      "amount": 2731138,
+      "description": "自主財源の確保とシティプロモーションにつなげるため、ふるさと納税寄附金の寄",
+      "basicGoal": "",
+      "shisaku": "総合政策部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "子育て世帯住宅取得補助事業",
+      "budgetBookName": null,
+      "amount": 41700,
+      "description": "子育て世帯の住宅取得に係る経済的負担を軽減するため、18歳以下の子を養育して",
+      "basicGoal": "",
+      "shisaku": "総合政策部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "奨学金返還支援事業",
+      "budgetBookName": null,
+      "amount": 29527,
+      "description": "奨学金を返還する若者の就労初期における経済的負担を軽減し、市内への移住定住",
+      "basicGoal": "",
+      "shisaku": "総合政策部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "結婚新生活支援事業",
+      "budgetBookName": null,
+      "amount": 13500,
+      "description": "新婚世帯の新生活を支援し、少子化対策及び子育てしやすいまちづくりを推進する",
+      "basicGoal": "",
+      "shisaku": "総合政策部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "子育て世帯住宅取得支援事業",
+      "budgetBookName": null,
+      "amount": 57300,
+      "description": "子育て世帯の住宅取得に係る経済的負担を軽減し、若者や子育て世帯の移住定住の",
+      "basicGoal": "",
+      "shisaku": "総合政策部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "やまなしKAITEKI住宅普及促進事業",
+      "budgetBookName": null,
+      "amount": 12400,
+      "description": "山梨県の「やまなしKAITEKI住宅普及促進事業」を活用し、本市の人口減少対策を",
+      "basicGoal": "",
+      "shisaku": "総合政策部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "AIデマンド交通事業",
+      "budgetBookName": null,
+      "amount": 100227,
+      "description": "公共交通空白地帯を解消するとともに、高齢者や交通弱者の外出支援及び市民の公",
+      "basicGoal": "",
+      "shisaku": "総合政策部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "みさかの湯改修事業",
+      "budgetBookName": null,
+      "amount": 785496,
+      "description": "みさかふれあい交流センター（みさかの湯）について、市民の憩いの場としてだけ",
+      "basicGoal": "",
+      "shisaku": "市民生活部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "個別避難計画作成事業",
+      "budgetBookName": null,
+      "amount": 6315,
+      "description": "要介護者等の避難行動要支援者について、発災時又は発災のおそれがある場合に円",
+      "basicGoal": "",
+      "shisaku": "保健福祉部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "春日居福祉会館改修事業",
+      "budgetBookName": null,
+      "amount": 343615,
+      "description": "春日居福祉会館（やまゆりの湯）について、今後も高齢者の健全な憩いの場と心身",
+      "basicGoal": "",
+      "shisaku": "保健福祉部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "笛吹市こどもの居場所づくり支援事業",
+      "budgetBookName": null,
+      "amount": 3500,
+      "description": "子どもが健やかに成長できるよう、孤立や孤独の防止、学びや成長機会の確保を目",
+      "basicGoal": "",
+      "shisaku": "子供すこやか部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "電子母子手帳活用促進事業",
+      "budgetBookName": null,
+      "amount": 1677,
+      "description": "子育て支援の向上を図るため、母子健康手帳の記録機能やプッシュ通知型によるお",
+      "basicGoal": "",
+      "shisaku": "子供すこやか部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "私立保育所等施設整備事業",
+      "budgetBookName": null,
+      "amount": 51424,
+      "description": "市内の私立保育所等（令和8年度は、相興保育園、御所保育園、木の花保育園の3",
+      "basicGoal": "",
+      "shisaku": "子供すこやか部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "石和第一保育所改築事業",
+      "budgetBookName": null,
+      "amount": 595737,
+      "description": "石和第一保育所について、安全安心な保育環境の整備を図るため、個別施設計画に",
+      "basicGoal": "",
+      "shisaku": "子供すこやか部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "かすがい西保育所改築事業",
+      "budgetBookName": null,
+      "amount": 143709,
+      "description": "かすがい西保育所について、安全安心な保育環境の整備を図るため、個別施設計画",
+      "basicGoal": "",
+      "shisaku": "子供すこやか部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "収入保険加入補助事業",
+      "budgetBookName": null,
+      "amount": 9398,
+      "description": "農業者の経営安定を図り、市の基幹産業である農業振興の推進を目的に、農産物の",
+      "basicGoal": "",
+      "shisaku": "産業観光部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "笛吹市農業塾推進事業",
+      "budgetBookName": null,
+      "amount": 8400,
+      "description": "担い手の確保や安定した農業経営に寄与し、市の基幹産業である農業の発展につな",
+      "basicGoal": "",
+      "shisaku": "産業観光部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "石橋工業団地基盤整備事業",
+      "budgetBookName": null,
+      "amount": 0,
+      "description": "地元雇用の創出や市税の税収確保のため、積極的な企業誘致を進めており、今後既",
+      "basicGoal": "",
+      "shisaku": "産業観光部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "空き店舗活用促進補助事業",
+      "budgetBookName": null,
+      "amount": 7200,
+      "description": "空き店舗を利用した新規出店を促進し、地域のにぎわいの創出及び本市のイメージ",
+      "basicGoal": "",
+      "shisaku": "産業観光部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "芦川グリーンロッジ改修事業",
+      "budgetBookName": null,
+      "amount": 148153,
+      "description": "芦川グリーンロッジについて、周辺の豊かな自然環境を生かした里山遊びなど、子",
+      "basicGoal": "",
+      "shisaku": "産業観光部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "新山梨環状道路関連道路整備事業",
+      "budgetBookName": null,
+      "amount": 138767,
+      "description": "山梨県が実施している新山梨環状道路の建設ルートに合わせ、周辺地域の利便性の",
+      "basicGoal": "",
+      "shisaku": "建設部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "石和北小通り・石和郵便局通り道路改良事業",
+      "budgetBookName": null,
+      "amount": 128302,
+      "description": "通勤・通学等の日常生活の利便性の向上、物流や観光面での活用による地域活性化",
+      "basicGoal": "",
+      "shisaku": "建設部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "さくら温泉通り歩道整備事業",
+      "budgetBookName": null,
+      "amount": 99000,
+      "description": "整備から20年が経過し老朽化しているさくら温泉通りのウッドデッキの歩道につい",
+      "basicGoal": "",
+      "shisaku": "建設部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "砂原配水場改築事業",
+      "budgetBookName": null,
+      "amount": 896222,
+      "description": "砂原配水場については、新山梨環状道路工事の支障となり移転する必要があるた",
+      "basicGoal": "",
+      "shisaku": "公営企業部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "小中学校・保育所等給食費及び保育料無償化",
+      "budgetBookName": null,
+      "amount": 607835,
+      "description": "子育て世帯の負担を軽減し、未来を拓く子供たちを健やかに育むため、小中学校や",
+      "basicGoal": "",
+      "shisaku": "教育委員会",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "学校体育館等空調設備整備事業",
+      "budgetBookName": null,
+      "amount": 24288,
+      "description": "学校体育館等は、教育活動としての利用だけではなく、災害時には地域住民の避難",
+      "basicGoal": "",
+      "shisaku": "教育委員会",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "笛吹市南部学校給食センター建設事業",
+      "budgetBookName": null,
+      "amount": 63927,
+      "description": "御坂学校給食共同調理場、八代学校給食センター、境川小学校調理場、芦川小学校",
+      "basicGoal": "",
+      "shisaku": "教育委員会",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "英語力向上推進事業",
+      "budgetBookName": null,
+      "amount": 159048,
+      "description": "将来にわたり国際社会を舞台に活躍し、市の未来を拓く人材を育成することを目的",
+      "basicGoal": "",
+      "shisaku": "教育委員会",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "フリースクール利用支援事業",
+      "budgetBookName": null,
+      "amount": 2880,
+      "description": "不登校児童生徒の学びの場の一つであるフリースクールについて、不登校児童の学",
+      "basicGoal": "",
+      "shisaku": "教育委員会",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "山盧施設管理運営事業",
+      "budgetBookName": null,
+      "amount": 28345,
+      "description": "日本を代表する俳人「飯田蛇笏」と現代俳句の第一人者「飯田龍太」の生家であ",
+      "basicGoal": "",
+      "shisaku": "教育委員会",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "スポーツツーリズム拠点整備事業",
+      "budgetBookName": null,
+      "amount": 480160,
+      "description": "石和清流館を拠点に、市のスポーツ振興と地域交流の活性化、防災力強化を図るた",
+      "basicGoal": "",
+      "shisaku": "教育委員会",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "消防本部庁舎改修事業",
+      "budgetBookName": null,
+      "amount": 323960,
+      "description": "消防本部庁舎及び訓練棟3棟について、建物や設備の長寿命化を図るため、個別施",
+      "basicGoal": "",
+      "shisaku": "消防本部",
+      "locator": {
+        "file": "r8toushoyosangaiyou.pdf",
+        "page": 19
       }
     }
   ]

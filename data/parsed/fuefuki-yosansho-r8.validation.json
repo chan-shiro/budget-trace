@@ -1,6 +1,15 @@
 {
   "sourceId": "fuefuki-yosansho-r8",
-  "validatedAt": "2026-07-13T11:35:44.458Z",
+  "validatedAt": "2026-07-14T05:21:51.427Z",
   "status": "ok",
-  "issues": []
+  "issues": [
+    {
+      "level": "warning",
+      "message": "事業「文化施設整備検討事業」: 予算額が0（原典どおりか確認）"
+    },
+    {
+      "level": "warning",
+      "message": "事業「石橋工業団地基盤整備事業」: 予算額が0（原典どおりか確認）"
+    }
+  ]
 }

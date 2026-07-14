@@ -378,6 +378,9 @@ export const SOURCES: SourceEntry[] = [
       expenditurePage: 8,
       revenueHeading: "歳入予算款別総括表",
       expenditureHeading: "歳出予算款別総括表",
+      // 重点事業（同一PDF p.10-19）: 部別に ■事業名【課】/ 予算額 千円 / 事業内容
+      projectPages: { from: 10, to: 19 },
+      projectFormat: "dept-bullets",
     },
   },
   {
