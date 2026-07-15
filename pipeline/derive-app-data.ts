@@ -20,7 +20,7 @@ import {
 } from "./lib/store";
 import { findSource, SOURCES } from "./registry/sources";
 import { ROADMAP } from "./registry/roadmap";
-import { existsSync, mkdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const SOURCE_ID = "soumu-shichoson-kessan-r6";
@@ -2257,5 +2257,82 @@ export const ROADMAP_PLAN: RoadmapItem[] = ${JSON.stringify(ROADMAP, null, 2)};
   console.log(
     `✓ 進捗と計画を導出 → src/client/lib/roadmap.gen.ts（進捗は実データから算出 / 計画 ${ROADMAP.length}件: ` +
       `now ${ROADMAP.filter((r) => r.status === "now").length} / next ${ROADMAP.filter((r) => r.status === "next").length} / later ${ROADMAP.filter((r) => r.status === "later").length}）`,
+  );
+}
+
+// ============================================================================
+// 生成物どうしの整合チェック（derive の出口）
+// ============================================================================
+// **なぜ要るか**: `validate` は parsed の自己整合（Σ・算術）を守るが、**gen 同士の食い違いは
+// 誰も見ていない**。2026-07-15 の1セッションで「収録済みなのに実態とズレる」型を**4回**踏んだ:
+//   1. フッターの出典が「甲府市 当初予算資料 R2–R8」固定 → 全1,741自治体で甲府と表示（#62）
+//   2. /coverage の予算列が最新年度のみ → 7年度あるのに「令和8年度」と過少申告（#65）
+//   3. /coverage が横浜の成果を「×」→ REPORT_PARSERS への足し忘れ（#75）
+//   4. /coverage が 2,535・画面が 2,313 で食い違う → 特別会計を数えていた（#75）
+// いずれも**画面を見るまで気づけなかった**。ここで機械的に落とす。
+// **error は throw する** — 黙って壊れた gen を出すくらいなら derive を失敗させる。
+{
+  const problems: string[] = [];
+  const cov = readJson(join(process.cwd(), "public/coverage.json")) as {
+    entities: Record<string, { name: string; detail: Record<string, string> }>;
+  };
+  const { REPORT_MUNIS } = await import("../src/client/lib/reports-index.gen");
+  const { MUNI_BUDGET_YEARS, BUDGET_MUNIS } = await import("../src/client/lib/munibudgets.gen");
+  const { FULL_MUNIS } = await import("../src/client/lib/decision-index.gen");
+
+  // ① /coverage の「成果」の件数 = 実際に配信しているシャードの件数
+  //    （生の parsed 件数を出して画面と食い違った実例がある）
+  for (const [code, idx] of Object.entries(REPORT_MUNIS)) {
+    const shard = readJson(join(process.cwd(), `public/reports/${code}.json`)) as { reports: unknown[] };
+    if (shard.reports.length !== idx.count) {
+      problems.push(
+        `${idx.name}: 索引の件数 ${idx.count} とシャード public/reports/${code}.json の件数 ${shard.reports.length} が違います`,
+      );
+    }
+    const detail = cov.entities[code]?.detail?.report ?? "";
+    if (!detail.includes(String(idx.count))) {
+      problems.push(
+        `${idx.name}: /coverage の成果「${detail || "（無し）"}」に配信件数 ${idx.count} が出ていません` +
+          `（収録済みを未収録と偽る／件数が食い違う）`,
+      );
+    }
+  }
+
+  // ② 事業報告を収録した自治体は、必ず /coverage の「成果」に出る
+  //    （REPORT_PARSERS への足し忘れで静かに「×」になる）
+  for (const s of SOURCES.filter((x) => !x.fixture)) {
+    const m = /団体コード(\d{6})/.exec(s.scope ?? "");
+    if (!m) continue;
+    let docType: string | undefined;
+    try {
+      docType = (readJson(parsedPath(s.id)) as { docType?: string }).docType;
+    } catch {
+      continue; // 未 parse のソースは対象外
+    }
+    if (docType !== "project-report") continue;
+    if (!cov.entities[m[1]!]?.detail?.report) {
+      problems.push(
+        `${s.id}: 事業報告を収録しているのに /coverage の ${cov.entities[m[1]!]?.name ?? m[1]} に「成果」が出ていません` +
+          `（derive の REPORT_PARSERS に足し忘れていませんか）`,
+      );
+    }
+  }
+
+  // ③ 画面に出る自治体は必ず URL スラグを持つ（無いと共有リンクが壊れる）
+  const slugs = readFileSync(join(process.cwd(), "src/client/lib/routing.ts"), "utf8");
+  for (const code of [...BUDGET_MUNIS, ...FULL_MUNIS]) {
+    if (!slugs.includes(`"${code}"`)) {
+      const name = MUNI_BUDGET_YEARS[code]?.[0]?.muniName ?? code;
+      problems.push(`${name}（${code}）: routing.ts の MUNI_SLUGS にローマ字スラグがありません（URL が団体コードになります）`);
+    }
+  }
+
+  if (problems.length > 0) {
+    console.error("✗ 生成物どうしの整合チェックで問題が見つかりました:");
+    for (const p of problems) console.error(`  - ${p}`);
+    throw new Error(`生成物の整合チェックに失敗（${problems.length}件）`);
+  }
+  console.log(
+    `✓ 生成物どうしの整合チェック（/coverage の件数 = 配信シャードの件数 / 事業報告の収録漏れ / URL スラグ）`,
   );
 }
