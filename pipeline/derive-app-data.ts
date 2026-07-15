@@ -1777,6 +1777,21 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
     const hit = KNOWN.find((k) => k.name === nm);
     return hit ? { scopeKind: "entity", code: hit.code } : { scopeKind: "unknown" };
   };
+  // 「この資料が画面のどこで使われているか」。/sources（データ出典）に出す。
+  // **パーサ（＝資料の種別）から導く** — 資料は増え続けるので、資料ごとに手で書くと必ず実態とズレる
+  // （旧 SOURCES は甲府市＋総務省だけを手で並べた配列で、政令市18団体97資料が載っていなかった）。
+  const USED_BY_PARSER: Record<string, string> = {
+    "kofu-yosansho": "ダッシュボード／款別ドリルダウン／前年比較",
+    "soumu-shichoson-kessan": "全市町村の決算ダッシュボード／款別・歳入内訳／1人あたり／類似自治体比較",
+    "soumu-shichoson-seishitsu": "財政指標／性質別歳出",
+    "kofu-kessan-syousai": "予算執行状況（決算・確定値）",
+    "kofu-zaisei-jokyo": "予算執行状況（速報）",
+    "kofu-toukei-zaisei": "款別ドリルダウンの項テーブル（当初→最終→決算→執行率）",
+    "kofu-gikai": "議会の構成（会派別議席・議決）",
+    "kofu-gyousei-hyouka": "主な事業の評価バッジ",
+    "kofu-jigyou-houkoku": "事業報告（成果）",
+    "yamanashi-kessan": "予算執行状況（款別 執行率）",
+  };
   const sourceCard = (s: (typeof srcs)[number]) => {
     const meta = readRawMeta(s.id);
     const files = (meta?.files ?? []).map((f) => ({
@@ -1789,8 +1804,16 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
     const arch = archiveEntries.filter((a) => a.sourceId === s.id && a.kind === "file");
     const originUrl = s.urls?.[0] ?? s.url ?? s.landingPage ?? "";
     const isArchiveOrigin = /web\.archive\.org|warp\.ndl\.go\.jp/.test(originUrl);
+    const used = USED_BY_PARSER[s.parser];
+    if (!used) {
+      throw new Error(
+        `${s.id}: パーサ "${s.parser}" が USED_BY_PARSER に未登録です。` +
+          `/sources に「何に使っているか」を出せません（derive-app-data.ts の USED_BY_PARSER に追加してください）`,
+      );
+    }
     return {
       sourceId: s.id, title: s.title, publisher: s.publisher, fiscalYear: s.fiscalYear, kind: s.kind,
+      used,
       license: s.license, licenseClass: licenseClassOf(s.license),
       originUrl, landingPage: s.landingPage ?? null, files,
       archived: arch.length > 0 || isArchiveOrigin,
