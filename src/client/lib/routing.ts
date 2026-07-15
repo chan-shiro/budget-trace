@@ -21,6 +21,7 @@ export interface RouteState {
   muni: string | null;
   muniCode?: string;
   budgetFy?: string;
+  reportNo?: string;
   drillSide: string;
   drillPath: string[];
   theme: string | null;
@@ -109,6 +110,7 @@ export function stateToPath(t: RouteState): string {
     if (t.screen !== "dash") seg.push(t.screen);
   }
   if (t.budgetFy) q.set("fy", t.budgetFy);
+  if (t.screen === "dash" && t.reportNo) q.set("rno", t.reportNo);
   if (t.screen === "drill") {
     if (t.drillSide && t.drillSide !== "exp") q.set("side", t.drillSide);
     if (t.drillPath.length) q.set("path", t.drillPath.join("/"));
@@ -195,6 +197,7 @@ export function pathToState(
     muni,
     muniCode,
     budgetFy: g("fy") ?? undefined,
+    reportNo: g("rno") ?? undefined,
     drillSide: g("side") ?? "exp",
     drillPath: g("path")?.split("/").filter(Boolean) ?? [],
     theme: g("theme") ?? null,
