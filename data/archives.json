@@ -163,6 +163,23 @@
       "sha256Match": true
     },
     {
+      "sourceId": "hiroshima-yosansho-r8",
+      "url": "https://www.city.hiroshima.lg.jp/_res/projects/default_project/_page_/001/047/851/2610.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260715152157/https://www.city.hiroshima.lg.jp/_res/projects/default_project/_page_/001/047/851/2610.pdf",
+      "waybackTimestamp": "20260715152157",
+      "checkedAt": "2026-07-15T15:22:16.615Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "hiroshima-yosansho-r8",
+      "url": "https://www.city.hiroshima.lg.jp/shisei/zaisei/1003079/1043845/1047851.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260715152343/https://www.city.hiroshima.lg.jp/shisei/zaisei/1003079/1043845/1047851.html",
+      "waybackTimestamp": "20260715152343",
+      "checkedAt": "2026-07-15T15:24:26.722Z"
+    },
+    {
       "sourceId": "hokuto-yosansho-r8",
       "url": "https://www.city.hokuto.yamanashi.jp/docs/1664.html",
       "kind": "landing",

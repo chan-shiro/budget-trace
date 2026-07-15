@@ -1611,6 +1611,8 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7"] as const).map((fy) => ({
       srcId: `saitama-yosansho-${fy}`, muniCode: "111007", muniName: "さいたま市", prefName: "埼玉県", isPref: false,
     })),
+    // 広島市は予算書本体がスキャンOCR で使えず、財政局の記者発表資料「資料1」を使う → 専用パーサ
+    { srcId: "hiroshima-yosansho-r8", muniCode: "341002", muniName: "広島市", prefName: "広島県", isPref: false },
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;
@@ -1958,6 +1960,7 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
   const USED_BY_PARSER: Record<string, string> = {
     "kofu-yosansho": "ダッシュボード／款別ドリルダウン／前年比較",
     "osaka-yosansho": "ダッシュボード／款別ドリルダウン／前年比較",
+    "hiroshima-yosansho": "ダッシュボード／款別ドリルダウン／前年比較",
     "soumu-shichoson-kessan": "全市町村の決算ダッシュボード／款別・歳入内訳／1人あたり／類似自治体比較",
     "soumu-shichoson-seishitsu": "財政指標／性質別歳出",
     "kofu-kessan-syousai": "予算執行状況（決算・確定値）",
