@@ -1,0 +1,12 @@
+{
+  "sourceId": "kyoto-yosansho-r7",
+  "files": [
+    {
+      "filename": "01_tousyoippan.pdf",
+      "sha256": "03115ca96c5f904017df1c14171a9f1785422cda45ad58ba23317d267998ca89",
+      "bytes": 3669136,
+      "fetchedAt": "2026-07-15T16:08:41.939Z",
+      "fetchedFrom": "https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000335/335933/01_tousyoippan.pdf"
+    }
+  ]
+}

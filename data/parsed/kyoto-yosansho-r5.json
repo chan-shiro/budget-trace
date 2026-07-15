@@ -1,0 +1,358 @@
+{
+  "docType": "budget-book",
+  "sourceId": "kyoto-yosansho-r5",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-07-15T16:08:51.841Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R5",
+  "account": "一般会計",
+  "revenueTotal": 931520000,
+  "expenditureTotal": 931520000,
+  "prevRevenueTotal": 920365000,
+  "prevExpenditureTotal": 920365000,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "市税",
+      "amount": 312822000,
+      "prevAmount": 302928000,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "地方譲与税",
+      "amount": 3377000,
+      "prevAmount": 3491000,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "府税交付金",
+      "amount": 50827000,
+      "prevAmount": 46864000,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "地方特例交付金",
+      "amount": 1392000,
+      "prevAmount": 1388000,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "地方交付税",
+      "amount": 64093000,
+      "prevAmount": 53415000,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 500000,
+      "prevAmount": 500000,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "分担金及び負担金",
+      "amount": 4886736,
+      "prevAmount": 4421254,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "使用料及び手数料",
+      "amount": 21096793,
+      "prevAmount": 20474308,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "国庫支出金",
+      "amount": 167700275,
+      "prevAmount": 164447251,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "府支出金",
+      "amount": 49934338,
+      "prevAmount": 44195465,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "財産収入",
+      "amount": 3925472,
+      "prevAmount": 5047776,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "寄附金",
+      "amount": 8844356,
+      "prevAmount": 6358541,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "繰入金",
+      "amount": 16655340,
+      "prevAmount": 20098433,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "繰越金",
+      "amount": 1,
+      "prevAmount": 1,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "諸収入",
+      "amount": 166210689,
+      "prevAmount": 168125971,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "市債",
+      "amount": 59255000,
+      "prevAmount": 78610000,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 2245000,
+      "prevAmount": 2145000,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 50784000,
+      "prevAmount": 59612000,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "文化市民費",
+      "amount": 37329000,
+      "prevAmount": 21766000,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "保健福祉費",
+      "amount": 261806000,
+      "prevAmount": 251156000,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "子ども若者はぐくみ費",
+      "amount": 111246000,
+      "prevAmount": 111551000,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "環境費",
+      "amount": 21540000,
+      "prevAmount": 19958000,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "産業観光費",
+      "amount": 160656000,
+      "prevAmount": 162553000,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "計画費",
+      "amount": 16131000,
+      "prevAmount": 14136000,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "土木費",
+      "amount": 24266000,
+      "prevAmount": 24504000,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "消防費",
+      "amount": 19091000,
+      "prevAmount": 19815000,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 11,
+      "kanName": "教育費",
+      "amount": 105212000,
+      "prevAmount": 111040000,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 12,
+      "kanName": "災害対策費",
+      "amount": 1384000,
+      "prevAmount": 1460000,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 13,
+      "kanName": "公債費",
+      "amount": 90410000,
+      "prevAmount": 89028000,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 14,
+      "kanName": "諸支出金",
+      "amount": 28420000,
+      "prevAmount": 30641000,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 15,
+      "kanName": "予備費",
+      "amount": 1000000,
+      "prevAmount": 1000000,
+      "locator": {
+        "file": "04-1_ippann_jikoubetu.pdf",
+        "page": 7
+      }
+    }
+  ]
+}
