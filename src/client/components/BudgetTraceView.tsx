@@ -50,8 +50,13 @@ export default function BudgetTraceView({ v }: { v: any }) {
             </div>
           </div>
 
+          {/* 収録資料は増えていくので、フッターで個別に列挙しない（すぐ実態とズレる）。
+              網羅的な収録状況は /coverage が実データから自動生成する — そちらへ誘導する。 */}
           <footer data-mq-pad="" style={S("padding:18px 32px; border-top:1px solid #DFE7EC; font-size:12px; color:#5C6B77; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;")}>
-            <span>本サイトはプロトタイプです。掲載数値はすべて一次資料（甲府市 当初予算資料 令和2〜8年度・総務省 市町村別決算状況調）由来の実データです。</span>
+            <span>本サイトはプロトタイプです。掲載数値はすべて一次資料由来の実データで、画面のどの数値も原本まで遡れます。
+              <button onClick={v.goSources} style={S("border:none; background:none; padding:0; margin-left:8px; color:#1798D0; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")}>データ出典・更新日 →</button>
+              <button onClick={v.goCoverage} style={S("border:none; background:none; padding:0; margin-left:12px; color:#1798D0; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")}>データ整備状況・ライセンス →</button>
+            </span>
             <span style={S("font-family:'IBM Plex Mono',monospace;")}>v0.1 / 2026-07</span>
           </footer>
         </div>
@@ -108,7 +113,11 @@ export default function BudgetTraceView({ v }: { v: any }) {
           <HoverBox as="button" onClick={v.goTop} style={S("border:none; background:none; color:#5C6B77; font-size:13px; cursor:pointer; padding:0; margin-bottom:14px; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("color:#1798D0;")}>← トップへ戻る</HoverBox>
           <div style={S("margin-bottom:18px;")}>
             <h1 style={S("margin:0 0 6px; font-size:24px; font-weight:700;")}>データ整備状況</h1>
-            <p style={S("margin:0; color:#5C6B77; font-size:13.5px; line-height:1.8; max-width:78ch;")}>全国{v.cov.ready ? v.cov.summary.muniCount.toLocaleString() : "1,741"}市町村を都道府県別に網羅した一覧です。手付かずの自治体も載せています（空欄＝これからのToDo）。レジストリと魚拓台帳から自動生成しているため、常に実際の収録内容と一致します。</p>
+            <p style={S("margin:0 0 8px; color:#5C6B77; font-size:13.5px; line-height:1.8; max-width:78ch;")}>全国{v.cov.ready ? v.cov.summary.muniCount.toLocaleString() : "1,741"}市町村を都道府県別に網羅した一覧です。手付かずの自治体も載せています（×＝これからのToDo）。レジストリと魚拓台帳から自動生成しているため、常に実際の収録内容と一致します。</p>
+            <p style={S("margin:0; color:#5C6B77; font-size:12.5px; line-height:1.8; max-width:78ch;")}>
+              <strong style={S("color:#14181C;")}>未収録（×）はその場でリクエストできます</strong> — 各行の「＋リクエスト」から、その自治体・その資料の収録リクエストを起票できます（GitHub Issue・👍 の多い順に着手します）。
+              <a href={v.requestListUrl} target="_blank" rel="noopener noreferrer" style={S("color:#1798D0; text-decoration:none; margin-left:6px;")}>リクエスト一覧 ↗</a>
+            </p>
           </div>
 
           {!v.cov.ready ? (
@@ -232,11 +241,23 @@ export default function BudgetTraceView({ v }: { v: any }) {
                                     </td>
                                   ))}
                                   <td style={S("padding:7px 14px; border-bottom:1px solid #F4F8FA; text-align:right; white-space:nowrap;")}>
-                                    {m.sourceCount > 0 ? (
-                                      <HoverBox as="button" onClick={m.toggleSources} style={S("border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; border-radius:999px; padding:1px 9px; font-size:10.5px; cursor:pointer; font-family:'IBM Plex Mono',monospace;")} hoverStyle={S("border-color:#1798D0; color:#1798D0;")}>{m.sourceCount}{m.sourcesOpen ? " ▲" : " ▼"}</HoverBox>
-                                    ) : (
-                                      <span style={S("color:#DFE7EC; font-size:11px;")}>—</span>
-                                    )}
+                                    <span style={S("display:inline-flex; gap:6px; align-items:center; justify-content:flex-end;")}>
+                                      {m.sourceCount > 0 && (
+                                        <HoverBox as="button" onClick={m.toggleSources} style={S("border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; border-radius:999px; padding:1px 9px; font-size:10.5px; cursor:pointer; font-family:'IBM Plex Mono',monospace;")} hoverStyle={S("border-color:#1798D0; color:#1798D0;")}>{m.sourceCount}{m.sourcesOpen ? " ▲" : " ▼"}</HoverBox>
+                                      )}
+                                      {/* 未収録があればその場でリクエスト（この表がそのまま参加導線になる） */}
+                                      {m.requestUrl && (
+                                        <HoverBox
+                                          as="a"
+                                          href={m.requestUrl}
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                          title={`${m.name}の未収録（${m.missLabel}）の収録をリクエストする`}
+                                          style={S("border:1px solid #DFE7EC; color:#8494A0; border-radius:999px; padding:1px 9px; font-size:10.5px; text-decoration:none; white-space:nowrap;")}
+                                          hoverStyle={S("border-color:#1798D0; color:#1798D0;")}
+                                        >＋リクエスト</HoverBox>
+                                      )}
+                                    </span>
                                   </td>
                                 </tr>
                                 {/* 資料（エビデンスの保管情報）— この自治体の行の中に畳む */}
