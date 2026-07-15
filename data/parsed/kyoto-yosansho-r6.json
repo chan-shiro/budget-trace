@@ -1,0 +1,358 @@
+{
+  "docType": "budget-book",
+  "sourceId": "kyoto-yosansho-r6",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-07-15T16:08:51.728Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R6",
+  "account": "一般会計",
+  "revenueTotal": 951393000,
+  "expenditureTotal": 951393000,
+  "prevRevenueTotal": 931520000,
+  "prevExpenditureTotal": 931520000,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "市税",
+      "amount": 317816000,
+      "prevAmount": 312822000,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "地方譲与税",
+      "amount": 3532000,
+      "prevAmount": 3377000,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "府税交付金",
+      "amount": 48688000,
+      "prevAmount": 50827000,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "地方特例交付金",
+      "amount": 7666000,
+      "prevAmount": 1392000,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "地方交付税",
+      "amount": 66312000,
+      "prevAmount": 64093000,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 500000,
+      "prevAmount": 500000,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "分担金及び負担金",
+      "amount": 4756102,
+      "prevAmount": 4886736,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "使用料及び手数料",
+      "amount": 22245094,
+      "prevAmount": 21096793,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "国庫支出金",
+      "amount": 182559324,
+      "prevAmount": 167700275,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "府支出金",
+      "amount": 47220893,
+      "prevAmount": 49934338,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "財産収入",
+      "amount": 7170233,
+      "prevAmount": 3925472,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "寄附金",
+      "amount": 10640150,
+      "prevAmount": 8844356,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "繰入金",
+      "amount": 23784571,
+      "prevAmount": 16655340,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "繰越金",
+      "amount": 1,
+      "prevAmount": 1,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "諸収入",
+      "amount": 162783632,
+      "prevAmount": 166210689,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "市債",
+      "amount": 45719000,
+      "prevAmount": 59255000,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 2126000,
+      "prevAmount": 2245000,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 62320000,
+      "prevAmount": 50784000,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "文化市民費",
+      "amount": 25366000,
+      "prevAmount": 37329000,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "保健福祉費",
+      "amount": 265292000,
+      "prevAmount": 261806000,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "子ども若者はぐくみ費",
+      "amount": 117150000,
+      "prevAmount": 111246000,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "環境費",
+      "amount": 23218000,
+      "prevAmount": 21540000,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "産業観光費",
+      "amount": 154859000,
+      "prevAmount": 160656000,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "計画費",
+      "amount": 20124000,
+      "prevAmount": 16131000,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "土木費",
+      "amount": 24596000,
+      "prevAmount": 24266000,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "消防費",
+      "amount": 21920000,
+      "prevAmount": 19091000,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 11,
+      "kanName": "教育費",
+      "amount": 115921000,
+      "prevAmount": 105212000,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 12,
+      "kanName": "災害対策費",
+      "amount": 1409000,
+      "prevAmount": 1384000,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 13,
+      "kanName": "公債費",
+      "amount": 90193000,
+      "prevAmount": 90410000,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 14,
+      "kanName": "諸支出金",
+      "amount": 25899000,
+      "prevAmount": 28420000,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 15,
+      "kanName": "予備費",
+      "amount": 1000000,
+      "prevAmount": 1000000,
+      "locator": {
+        "file": "01_tousyoippan.pdf",
+        "page": 7
+      }
+    }
+  ]
+}

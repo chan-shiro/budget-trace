@@ -1,0 +1,12 @@
+{
+  "sourceId": "kyoto-yosansho-r2",
+  "files": [
+    {
+      "filename": "01ippan.pdf",
+      "sha256": "45047ee88e75bd9ff3b91762cc8c01fd2eb6bebe2e97b266e98ce73c7010ad7e",
+      "bytes": 5111128,
+      "fetchedAt": "2026-07-15T16:08:43.754Z",
+      "fetchedFrom": "https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000259/259833/01ippan.pdf"
+    }
+  ]
+}

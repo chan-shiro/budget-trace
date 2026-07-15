@@ -1131,6 +1131,192 @@ export const SOURCES: SourceEntry[] = [
       expenditureHeaderExtra: "一般財源|特定財源|財源内訳|国庫支出金|県支出金|地方債|その他",
     },
   },
+  {
+    // 京都市（団体コード 261009・人口137万）。予算に関する説明書（議第1号・274p・5.4MB）。
+    // **横浜型**（事項別明細書の冒頭に「(1) 総括」が単独ページ）で kofu-yosansho に乗る。
+    // 歳入16款 / 歳出15款。**款体系は R2〜R8 で完全不変**（款番号も款名も同一）＝経年で款が繋がる。
+    // 名古屋（職員費新設）・横浜（局再編）・福岡（款番号繰下げ）のような断層が無い数少ない政令市。
+    // 款は局ベースの独自体系（民生費・衛生費が無く 文化市民費・子ども若者はぐくみ費・産業観光費・
+    // 計画費・災害対策費）なので、decision 階層（総務省決算＝目的別）とは款名が食い違う。
+    //
+    // ⚠ **ページ位置が年度で動く**（R8=7-8/9-10・R7〜R5=5-6/7-8・R4〜R2=4-5/6-7）。
+    // R8 だけ表紙が2回入るため2ページ後ろ。**外挿せず年度ごとに実確認すること**。
+    // ⚠ **ファイル名に規則性が無い**（01_ippantousyo / 01_tousyoippan / 04-1_ippann_jikoubetu /
+    // 01_ippannjikoubetuR4 / ippan / 01ippan）。年度追加は年度インデックス
+    // （/menu5/category/69-2-2-0-0-0-0-0-0-0.html）の実リンクから辿る。
+    //
+    // 罠:
+    //   - ヘッダの `千分比`（歳入）/ `一般財源`（歳出）が KAN_HEADER_RE に当たらず、
+    //     各ページ先頭の款名を汚す（`千分比市税` / `一般財源議会費`）。**金額とΣは正しいので
+    //     validate を素通りする**（横浜「千円千円千円市税」・神戸「一般財源…議会費」と同型）
+    //     → revenueHeaderExtra / expenditureHeaderExtra で弾く。
+    //   - 歳出 款5「子ども若者はぐくみ費」が中央寄せ3行折返し（款行の名前欄が空）。既存の下段折返し対応で復元。
+    //   - 歳入 款14 繰越金が本年度・前年度とも **1千円の象徴計上**（大阪 §8e と同型）。
+    //   - 皆増・皆減・廃止款の括弧書きは**無し**（7年度とも実測）。
+    //
+    // **「予算資料」（01_2_yosangaiyou…）を款別として使ってはいけない** — p.19 歳入は款ではなく
+    // 一般財源/国府支出金等の**区分**、p.22 歳出「行政目的別予算額」は**行政目的×款のクロス表**で
+    // 諸支出金・総務費・文化市民費が複数の目的に分割再掲される（大阪の「目的別＝再分類表」と同じ罠）。
+    // ただし前年度基準の裏取りには有用（R7列を「当初予算額(Ｂ)」と明記・推移表に
+    // 「予算額は、各年度とも当初予算額」の注記）。
+    //
+    // R6 は市長選（2024年2月）の年だが**札幌型の骨格予算問題は起きない**: R7 の前年度列
+    // 951,393,000 は R6 の**第一次編成（＝当初・議第1号）**の本年度額と一致し、第二次編成後
+    // （961,618,000＝補正込み）ではない。**収録するのは第一次編成の page/0000323068**。
+    // 次の市長選は2028年2月（R10）なので R10 で再確認する。
+    id: "kyoto-yosansho-r8",
+    title: "令和8年度 京都市一般会計予算 予算に関する説明書（事項別明細書 総括・款別歳入歳出）",
+    publisher: "京都市",
+    url: null,
+    urls: ["https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000347/347934/01_ippantousyo.pdf"],
+    landingPage: "https://www.city.kyoto.lg.jp/gyozai/page/0000347934.html",
+    kind: "pdf",
+    fiscalYear: "R8",
+    scope: "京都市（一般会計・団体コード261009）",
+    license:
+      "京都市のホームページ「京都市情報館」に掲載している内容（文章、写真、イラストなど）に関する著作権は、原則として京都市に帰属します。また、一部の画像等の著作権は、京都市以外の原著作者が所有しています。当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePages: { from: 7, to: 8 },
+      expenditurePages: { from: 9, to: 10 },
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+      revenueHeaderExtra: "千分比",
+      expenditureHeaderExtra: "一般財源",
+    },
+  },
+  {
+    id: "kyoto-yosansho-r7",
+    title: "令和7年度 京都市一般会計予算 予算に関する説明書（事項別明細書 総括・款別歳入歳出）",
+    publisher: "京都市",
+    url: null,
+    urls: ["https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000335/335933/01_tousyoippan.pdf"],
+    landingPage: "https://www.city.kyoto.lg.jp/gyozai/page/0000335933.html",
+    kind: "pdf",
+    fiscalYear: "R7",
+    scope: "京都市（一般会計・団体コード261009）",
+    license:
+      "京都市のホームページ「京都市情報館」に掲載している内容（文章、写真、イラストなど）に関する著作権は、原則として京都市に帰属します。また、一部の画像等の著作権は、京都市以外の原著作者が所有しています。当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePages: { from: 5, to: 6 },
+      expenditurePages: { from: 7, to: 8 },
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+      revenueHeaderExtra: "千分比",
+      expenditureHeaderExtra: "一般財源",
+    },
+  },
+  {
+    id: "kyoto-yosansho-r6",
+    title: "令和6年度 京都市一般会計予算 予算に関する説明書（事項別明細書 総括・款別歳入歳出）",
+    publisher: "京都市",
+    url: null,
+    urls: ["https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000323/323068/01_tousyoippan.pdf"],
+    landingPage: "https://www.city.kyoto.lg.jp/gyozai/page/0000323068.html",
+    kind: "pdf",
+    fiscalYear: "R6",
+    scope: "京都市（一般会計・団体コード261009）",
+    license:
+      "京都市のホームページ「京都市情報館」に掲載している内容（文章、写真、イラストなど）に関する著作権は、原則として京都市に帰属します。また、一部の画像等の著作権は、京都市以外の原著作者が所有しています。当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePages: { from: 5, to: 6 },
+      expenditurePages: { from: 7, to: 8 },
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+      revenueHeaderExtra: "千分比",
+      expenditureHeaderExtra: "一般財源",
+    },
+  },
+  {
+    id: "kyoto-yosansho-r5",
+    title: "令和5年度 京都市一般会計予算 予算に関する説明書（事項別明細書 総括・款別歳入歳出）",
+    publisher: "京都市",
+    url: null,
+    urls: ["https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000304/304545/04-1_ippann_jikoubetu.pdf"],
+    landingPage: "https://www.city.kyoto.lg.jp/gyozai/page/0000304545.html",
+    kind: "pdf",
+    fiscalYear: "R5",
+    scope: "京都市（一般会計・団体コード261009）",
+    license:
+      "京都市のホームページ「京都市情報館」に掲載している内容（文章、写真、イラストなど）に関する著作権は、原則として京都市に帰属します。また、一部の画像等の著作権は、京都市以外の原著作者が所有しています。当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePages: { from: 5, to: 6 },
+      expenditurePages: { from: 7, to: 8 },
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+      revenueHeaderExtra: "千分比",
+      expenditureHeaderExtra: "一般財源",
+    },
+  },
+  {
+    id: "kyoto-yosansho-r4",
+    title: "令和4年度 京都市一般会計予算 予算に関する説明書（事項別明細書 総括・款別歳入歳出）",
+    publisher: "京都市",
+    url: null,
+    urls: ["https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000290/290208/01_ippannjikoubetuR4.pdf"],
+    landingPage: "https://www.city.kyoto.lg.jp/gyozai/page/0000290208.html",
+    kind: "pdf",
+    fiscalYear: "R4",
+    scope: "京都市（一般会計・団体コード261009）",
+    license:
+      "京都市のホームページ「京都市情報館」に掲載している内容（文章、写真、イラストなど）に関する著作権は、原則として京都市に帰属します。また、一部の画像等の著作権は、京都市以外の原著作者が所有しています。当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePages: { from: 4, to: 5 },
+      expenditurePages: { from: 6, to: 7 },
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+      revenueHeaderExtra: "千分比",
+      expenditureHeaderExtra: "一般財源",
+    },
+  },
+  {
+    id: "kyoto-yosansho-r3",
+    title: "令和3年度 京都市一般会計予算 予算に関する説明書（事項別明細書 総括・款別歳入歳出）",
+    publisher: "京都市",
+    url: null,
+    urls: ["https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000293/293622/ippan.pdf"],
+    landingPage: "https://www.city.kyoto.lg.jp/gyozai/page/0000293622.html",
+    kind: "pdf",
+    fiscalYear: "R3",
+    scope: "京都市（一般会計・団体コード261009）",
+    license:
+      "京都市のホームページ「京都市情報館」に掲載している内容（文章、写真、イラストなど）に関する著作権は、原則として京都市に帰属します。また、一部の画像等の著作権は、京都市以外の原著作者が所有しています。当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePages: { from: 4, to: 5 },
+      expenditurePages: { from: 6, to: 7 },
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+      revenueHeaderExtra: "千分比",
+      expenditureHeaderExtra: "一般財源",
+    },
+  },
+  {
+    id: "kyoto-yosansho-r2",
+    title: "令和2年度 京都市一般会計予算 予算に関する説明書（事項別明細書 総括・款別歳入歳出）",
+    publisher: "京都市",
+    url: null,
+    urls: ["https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000259/259833/01ippan.pdf"],
+    landingPage: "https://www.city.kyoto.lg.jp/gyozai/page/0000259833.html",
+    kind: "pdf",
+    fiscalYear: "R2",
+    scope: "京都市（一般会計・団体コード261009）",
+    license:
+      "京都市のホームページ「京都市情報館」に掲載している内容（文章、写真、イラストなど）に関する著作権は、原則として京都市に帰属します。また、一部の画像等の著作権は、京都市以外の原著作者が所有しています。当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePages: { from: 4, to: 5 },
+      expenditurePages: { from: 6, to: 7 },
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+      revenueHeaderExtra: "千分比",
+      expenditureHeaderExtra: "一般財源",
+    },
+  },
   // ---- 政令市の過年度（2026-07-15）。ページ位置は年度で動くので必ず物理ページを実確認する。
   //      年度 URL の規則も破れる（福岡 R3/R2 の命名・川崎の分冊番号）。docs §8b 参照 ----
   {

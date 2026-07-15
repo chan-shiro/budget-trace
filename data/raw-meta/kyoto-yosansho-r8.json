@@ -1,0 +1,12 @@
+{
+  "sourceId": "kyoto-yosansho-r8",
+  "files": [
+    {
+      "filename": "01_ippantousyo.pdf",
+      "sha256": "5da37ed0dfd0df636332dfc1393326ca9b0f7e8d17c984a0ca428f29100f7671",
+      "bytes": 5428436,
+      "fetchedAt": "2026-07-15T16:08:41.627Z",
+      "fetchedFrom": "https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000347/347934/01_ippantousyo.pdf"
+    }
+  ]
+}

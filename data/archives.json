@@ -1272,6 +1272,127 @@
       "sha256Match": true
     },
     {
+      "sourceId": "kyoto-yosansho-r2",
+      "url": "https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000259/259833/01ippan.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260715161449/https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000259/259833/01ippan.pdf",
+      "waybackTimestamp": "20260715161449",
+      "checkedAt": "2026-07-15T16:17:10.458Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kyoto-yosansho-r2",
+      "url": "https://www.city.kyoto.lg.jp/gyozai/page/0000259833.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260121030020/https://www.city.kyoto.lg.jp/gyozai/page/0000259833.html",
+      "waybackTimestamp": "20260121030020",
+      "checkedAt": "2026-07-15T16:17:16.280Z"
+    },
+    {
+      "sourceId": "kyoto-yosansho-r3",
+      "url": "https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000293/293622/ippan.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260715161415/https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000293/293622/ippan.pdf",
+      "waybackTimestamp": "20260715161415",
+      "checkedAt": "2026-07-15T16:14:37.741Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kyoto-yosansho-r3",
+      "url": "https://www.city.kyoto.lg.jp/gyozai/page/0000293622.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260416172227/https://www.city.kyoto.lg.jp/gyozai/page/0000293622.html",
+      "waybackTimestamp": "20260416172227",
+      "checkedAt": "2026-07-15T16:14:42.708Z"
+    },
+    {
+      "sourceId": "kyoto-yosansho-r4",
+      "url": "https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000290/290208/01_ippannjikoubetuR4.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260313083115/https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000290/290208/01_ippannjikoubetuR4.pdf",
+      "waybackTimestamp": "20260313083115",
+      "checkedAt": "2026-07-15T16:13:08.056Z",
+      "sha256Match": false,
+      "waybackTruncated": true
+    },
+    {
+      "sourceId": "kyoto-yosansho-r4",
+      "url": "https://www.city.kyoto.lg.jp/gyozai/page/0000290208.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260216171941/https://www.city.kyoto.lg.jp/gyozai/page/0000290208.html",
+      "waybackTimestamp": "20260216171941",
+      "checkedAt": "2026-07-15T16:13:10.177Z"
+    },
+    {
+      "sourceId": "kyoto-yosansho-r5",
+      "url": "https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000304/304545/04-1_ippann_jikoubetu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250815184837/https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000304/304545/04-1_ippann_jikoubetu.pdf",
+      "waybackTimestamp": "20250815184837",
+      "checkedAt": "2026-07-15T16:12:13.416Z",
+      "sha256Match": false,
+      "waybackTruncated": true
+    },
+    {
+      "sourceId": "kyoto-yosansho-r5",
+      "url": "https://www.city.kyoto.lg.jp/gyozai/page/0000304545.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251212102525/https://www.city.kyoto.lg.jp/gyozai/page/0000304545.html",
+      "waybackTimestamp": "20251212102525",
+      "checkedAt": "2026-07-15T16:12:18.539Z"
+    },
+    {
+      "sourceId": "kyoto-yosansho-r6",
+      "url": "https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000323/323068/01_tousyoippan.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20251008161057/https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000323/323068/01_tousyoippan.pdf",
+      "waybackTimestamp": "20251008161057",
+      "checkedAt": "2026-07-15T16:11:54.656Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kyoto-yosansho-r6",
+      "url": "https://www.city.kyoto.lg.jp/gyozai/page/0000323068.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260414084907/https://www.city.kyoto.lg.jp/gyozai/page/0000323068.html",
+      "waybackTimestamp": "20260414084907",
+      "checkedAt": "2026-07-15T16:12:07.944Z"
+    },
+    {
+      "sourceId": "kyoto-yosansho-r7",
+      "url": "https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000335/335933/01_tousyoippan.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250324220023/https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000335/335933/01_tousyoippan.pdf",
+      "waybackTimestamp": "20250324220023",
+      "checkedAt": "2026-07-15T16:11:23.644Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kyoto-yosansho-r7",
+      "url": "https://www.city.kyoto.lg.jp/gyozai/page/0000335933.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260305120016/https://www.city.kyoto.lg.jp/gyozai/page/0000335933.html",
+      "waybackTimestamp": "20260305120016",
+      "checkedAt": "2026-07-15T16:11:27.743Z"
+    },
+    {
+      "sourceId": "kyoto-yosansho-r8",
+      "url": "https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000347/347934/01_ippantousyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260715161041/https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000347/347934/01_ippantousyo.pdf",
+      "waybackTimestamp": "20260715161041",
+      "checkedAt": "2026-07-15T16:10:54.385Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kyoto-yosansho-r8",
+      "url": "https://www.city.kyoto.lg.jp/gyozai/page/0000347934.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260210234236/https://www.city.kyoto.lg.jp/gyozai/page/0000347934.html",
+      "waybackTimestamp": "20260210234236",
+      "checkedAt": "2026-07-15T16:11:01.683Z"
+    },
+    {
       "sourceId": "minami-alps-yosansho-r8",
       "url": "https://www.city.minami-alps.yamanashi.jp/fs/1/4/1/8/3/3/_/__8____________.pdf",
       "kind": "file",

@@ -1617,6 +1617,10 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6"] as const).map((fy) => ({
       srcId: `kobe-yosansho-${fy}`, muniCode: "281000", muniName: "神戸市", prefName: "兵庫県", isPref: false,
     })),
+    // 京都市は**款体系が R2〜R8 で完全不変**（款番号も款名も同一）＝政令市では珍しく経年で款が繋がる
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `kyoto-yosansho-${fy}`, muniCode: "261009", muniName: "京都市", prefName: "京都府", isPref: false,
+    })),
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;
