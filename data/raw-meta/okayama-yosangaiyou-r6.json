@@ -1,0 +1,12 @@
+{
+  "sourceId": "okayama-yosangaiyou-r6",
+  "files": [
+    {
+      "filename": "gaiyou.pdf",
+      "sha256": "2a2e75051153aaf10af8319bd275dc66db2fbcf3cde6d39b5a847da30eda4d60",
+      "bytes": 4309524,
+      "fetchedAt": "2026-07-15T19:29:19.805Z",
+      "fetchedFrom": "https://www.city.okayama.jp/shisei/cmsfiles/contents/0000053/53555/gaiyou.pdf"
+    }
+  ]
+}

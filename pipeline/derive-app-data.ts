@@ -1643,7 +1643,7 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     })),
     // 浜松市。**印字 = 物理（オフセット0）**という政令市では珍しい様式。歳出13款が総務省の目的別と一致
     ...(["r8", "r7", "r6", "r5", "r4"] as const).map((fy) => ({
-      srcId: `hamamatsu-yosansho-${fy}`, muniCode: "221007", muniName: "浜松市", prefName: "静岡県", isPref: false,
+      srcId: `hamamatsu-yosansho-${fy}`, muniCode: "221309", muniName: "浜松市", prefName: "静岡県", isPref: false,
     })),
     // 相模原市は予算書本体が面付けで表が2回描かれるため、主要施策説明書の款項別に逃げる。docs §8p
     { srcId: "sagamihara-yosansho-r8", muniCode: "141500", muniName: "相模原市", prefName: "神奈川県", isPref: false },
@@ -1680,6 +1680,21 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
         }
       : popDs.records.find((r) => r.muniCode === b.muniCode);
     if (!popRec?.population) throw new Error(`${b.srcId}: 総務省R6に ${b.muniName}(${b.muniCode}) の人口がありません`);
+    // **団体コードと自治体名が総務省の実データと一致するか**（2026-07-16 追加）。
+    // 浜松市を **221007（＝静岡市のコード）** で登録していた事故を受けて足した。
+    // コードが「実在する別の自治体」だと **人口だけが黙って別人のものになる**（浜松の1人あたりが
+    // 静岡の人口で割られて約16.5%過大になっていた）。Σ は款別の話なので通り、
+    // 画面にも「浜松市 … 672,775人」と**それらしく**出るため、目視でも見落とした。
+    // 名前で突合すれば一撃で落ちる。
+    if (!b.isPref) {
+      const rec = popDs.records.find((r) => r.muniCode === b.muniCode);
+      if (rec && rec.muniName !== b.muniName) {
+        throw new Error(
+          `${b.srcId}: 団体コード ${b.muniCode} は総務省R6では「${rec.muniName}」です（registry は「${b.muniName}」）。` +
+            `コードの取り違えです — 人口が別の自治体のものになり、1人あたりが静かに狂います`,
+        );
+      }
+    }
 
     const row = (f: (typeof doc.facts)[number]) => ({
       name: f.kanName,
