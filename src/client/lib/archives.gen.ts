@@ -26,6 +26,7 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.city.hokuto.yamanashi.jp/fs/4/9/9/0/3/0/_/__8__________.pdf": "https://web.archive.org/web/20260714071224/https://www.city.hokuto.yamanashi.jp/fs/4/9/9/0/3/0/_/__8__________.pdf",
   "https://www.city.osaka-izumi.lg.jp/kakukano/soumubu/zaiseika/gyoumu/yosan.html": "https://web.archive.org/web/20260713094504/https://www.city.osaka-izumi.lg.jp/kakukano/soumubu/zaiseika/gyoumu/yosan.html",
   "https://www.city.osaka-izumi.lg.jp/material/files/group/18/02_R8_ippan.pdf": "https://web.archive.org/web/20260713094338/https://www.city.osaka-izumi.lg.jp/material/files/group/18/02_R8_ippan.pdf",
+  "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/gaiyou.pdf": "https://web.archive.org/web/20250913143716/https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/gaiyou.pdf",
   "https://www.city.kawasaki.jp/230/cmsfiles/contents/0000114/114574/20bunkatuban7.pdf": "https://web.archive.org/web/20200527013400/http://www.city.kawasaki.jp/230/cmsfiles/contents/0000114/114574/20bunkatuban7.pdf",
   "https://www.city.kawasaki.jp/230/page/0000114574.html": "https://web.archive.org/web/20260210063216/https://www.city.kawasaki.jp/230/page/0000114574.html",
   "https://www.city.kawasaki.jp/230/page/0000125926.html": "https://web.archive.org/web/20260521164352/https://www.city.kawasaki.jp/230/page/0000125926.html",
