@@ -1834,6 +1834,24 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
     detail: Record<string, string>;
     sources: ReturnType<typeof sourceCard>[];
   }> = {};
+  // 事業報告（成果）を収録している自治体 → 中身の説明。**full 以外にも付く**。
+  // 以前は full（甲府）だけが d.report を持ち、川崎の572事業を収録しても /coverage が
+  // 「成果 ×」と出た（＝収録済みを未収録と偽る）。/coverage は「実際の収録内容」を示すページなので、
+  // **レジストリ＋parsed（＝実際に収録したもの）から導く**（2026-07-15）。
+  const REPORT_PARSERS = new Set(["kofu-jigyou-houkoku", "kawasaki-jigyou-hyouka"]);
+  const reportDetailByCode: Record<string, string> = {};
+  for (const s of srcs) {
+    if (!REPORT_PARSERS.has(s.parser)) continue;
+    const code = entityOf(s).code;
+    if (!code) continue;
+    const parsed = readJson(parsedPath(s.id)) as { docType?: string; facts?: unknown[] };
+    if (parsed.docType !== "project-report") continue;
+    const n = parsed.facts?.length ?? 0;
+    const prev = reportDetailByCode[code];
+    const one = `${s.fiscalYear}:${n}件`;
+    reportDetailByCode[code] = prev ? `${prev} / ${one}` : one;
+  }
+
   for (const k of KNOWN) {
     const isFull = k.code === "192015";
     const mb = MUNI_BUDGETS[k.code] ?? null;
@@ -1852,6 +1870,8 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
       // full と同じく収録年度の範囲を出す
       const ys = MUNI_BUDGET_YEARS[k.code] ?? [mb];
       d.budget = `${range(ys.map((y) => y.fy))}・前年当初比つき`;
+      // 事業報告（成果）は budget 階層でも収録し得る（川崎 R6・572事業）
+      if (reportDetailByCode[k.code]) d.report = reportDetailByCode[k.code]!;
       if (mb.projects.length > 0) d.projects = `${mb.projects.length}件`;
       if ((mb.execution?.length ?? 0) > 0) d.execution = mb.execution!.map((e) => e.fyLabel).join("・");
     }
