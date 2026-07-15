@@ -1,11 +1,6 @@
 {
   "sourceId": "fujikawaguchiko-yosansho-r8",
-  "validatedAt": "2026-07-15T15:20:45.076Z",
+  "validatedAt": "2026-07-15T18:59:31.501Z",
   "status": "ok",
-  "issues": [
-    {
-      "level": "warning",
-      "message": "歳出: 款番号が連番ではありません（1,2,3,4,5,6,7,8,9,10,12）"
-    }
-  ]
+  "issues": []
 }

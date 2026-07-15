@@ -198,6 +198,8 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.city.osaka.lg.jp/zaisei/page/0000671888.html": "https://web.archive.org/web/20260525082451/https://www.city.osaka.lg.jp/zaisei/page/0000671888.html",
   "https://www.city.otsuki.yamanashi.jp/shisei/jyohokokai/images/R08_yosangaiyou.pdf": "https://web.archive.org/web/20260714071536/https://www.city.otsuki.yamanashi.jp/shisei/jyohokokai/images/R08_yosangaiyou.pdf",
   "https://www.city.otsuki.yamanashi.jp/shisei/jyohokokai/yosan.html": "https://web.archive.org/web/20260411172410/https://www.city.otsuki.yamanashi.jp/shisei/jyohokokai/yosan.html",
+  "https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/003/978/r08nend/20260216_shuyou_setumei.pdf": "https://web.archive.org/web/20260715190007/https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/003/978/r08nend/20260216_shuyou_setumei.pdf",
+  "https://www.city.sagamihara.kanagawa.jp/shisei/1026803/1003966/1003978.html": "https://web.archive.org/web/20260412130744/https://www.city.sagamihara.kanagawa.jp/shisei/1026803/1003966/1003978.html",
   "https://www.city.saitama.lg.jp/006/007/011/001/020/p119990_d/fil/reiwa7nendotousyoyosan.pdf": "https://web.archive.org/web/20260715151305/https://www.city.saitama.lg.jp/006/007/011/001/020/p119990_d/fil/reiwa7nendotousyoyosan.pdf",
   "https://www.city.saitama.lg.jp/006/007/011/001/020/p119990.html": "https://web.archive.org/web/20250427002845/https://www.city.saitama.lg.jp/006/007/011/001/020/p119990.html",
   "https://www.city.saitama.lg.jp/006/007/011/001/021/p129189_d/fil/reiwa8nendotousyoyosan.pdf": "https://web.archive.org/web/20260509164516/https://www.city.saitama.lg.jp/006/007/011/001/021/p129189_d/fil/reiwa8nendotousyoyosan.pdf",

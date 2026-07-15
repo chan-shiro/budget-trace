@@ -5060,6 +5060,286 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
       ]
     }
   ],
+  "141500": [
+    {
+      "muniCode": "141500",
+      "muniName": "相模原市",
+      "prefName": "神奈川県",
+      "isPref": false,
+      "projects": [],
+      "execution": [],
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "population": 716494,
+      "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+      "totalOku": 4055,
+      "prevTotalOku": 3750,
+      "yoyLabel": "+8.1%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "市税",
+          "v": 1493,
+          "prevV": 1438,
+          "yoy": 3.8
+        },
+        {
+          "name": "国庫支出金",
+          "v": 837.6444,
+          "prevV": 834.21505,
+          "yoy": 0.4
+        },
+        {
+          "name": "市債",
+          "v": 400.22,
+          "prevV": 261.421,
+          "yoy": 53.1
+        },
+        {
+          "name": "地方交付税",
+          "v": 326,
+          "prevV": 292,
+          "yoy": 11.6
+        },
+        {
+          "name": "県支出金",
+          "v": 263.88614,
+          "prevV": 252.0053,
+          "yoy": 4.7
+        },
+        {
+          "name": "地方消費税交付金",
+          "v": 197,
+          "prevV": 173,
+          "yoy": 13.9
+        },
+        {
+          "name": "諸収入",
+          "v": 178.50126,
+          "prevV": 192.32976,
+          "yoy": -7.2
+        },
+        {
+          "name": "繰入金",
+          "v": 133.54217,
+          "prevV": 113.07589,
+          "yoy": 18.1
+        },
+        {
+          "name": "その他",
+          "v": 225.20603000000003,
+          "prevV": 193.95300000000003,
+          "yoy": null,
+          "children": [
+            {
+              "name": "使用料及び手数料",
+              "v": 49.36118,
+              "prevV": 50.76385,
+              "yoy": -2.8
+            },
+            {
+              "name": "地方特例交付金",
+              "v": 32.31015,
+              "prevV": 8.8,
+              "yoy": 267.2
+            },
+            {
+              "name": "株式等譲渡所得割交付金",
+              "v": 20.57,
+              "prevV": 8,
+              "yoy": 157.1
+            },
+            {
+              "name": "法人事業税交付金",
+              "v": 17.78,
+              "prevV": 13.6,
+              "yoy": 30.7
+            },
+            {
+              "name": "地方譲与税",
+              "v": 17.02,
+              "prevV": 17.2,
+              "yoy": -1
+            },
+            {
+              "name": "軽油引取税交付金",
+              "v": 16.6,
+              "prevV": 30,
+              "yoy": -44.7
+            },
+            {
+              "name": "配当割交付金",
+              "v": 14.96,
+              "prevV": 8,
+              "yoy": 87
+            },
+            {
+              "name": "国有提供施設等所在市町村助成交付金",
+              "v": 13.91,
+              "prevV": 13.35,
+              "yoy": 4.2
+            },
+            {
+              "name": "寄附金",
+              "v": 12.125,
+              "prevV": 11.969,
+              "yoy": 1.3
+            },
+            {
+              "name": "繰越金",
+              "v": 10,
+              "prevV": 10,
+              "yoy": 0
+            },
+            {
+              "name": "分担金及び負担金",
+              "v": 8.02584,
+              "prevV": 7.82256,
+              "yoy": 2.6
+            },
+            {
+              "name": "財産収入",
+              "v": 5.40386,
+              "prevV": 3.04759,
+              "yoy": 77.3
+            },
+            {
+              "name": "利子割交付金",
+              "v": 2.37,
+              "prevV": 0.4,
+              "yoy": 492.5
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 1.8,
+              "prevV": 1.8,
+              "yoy": 0
+            },
+            {
+              "name": "ゴルフ場利用税交付金",
+              "v": 1.67,
+              "prevV": 1.5,
+              "yoy": 11.3
+            },
+            {
+              "name": "分離課税所得割交付金",
+              "v": 1.3,
+              "prevV": 1.2,
+              "yoy": 8.3
+            },
+            {
+              "name": "（環境性能割交付金）",
+              "v": 0,
+              "prevV": 6.5,
+              "yoy": -100
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "民生費",
+          "v": 1683.6546,
+          "prevV": 1629.16077,
+          "yoy": 3.3
+        },
+        {
+          "name": "教育費",
+          "v": 718.39974,
+          "prevV": 610.03826,
+          "yoy": 17.8
+        },
+        {
+          "name": "総務費",
+          "v": 455.13014,
+          "prevV": 372.2414,
+          "yoy": 22.3
+        },
+        {
+          "name": "衛生費",
+          "v": 345.15079,
+          "prevV": 321.06124,
+          "yoy": 7.5
+        },
+        {
+          "name": "土木費",
+          "v": 314.68786,
+          "prevV": 283.15044,
+          "yoy": 11.1
+        },
+        {
+          "name": "公債費",
+          "v": 237.82424,
+          "prevV": 232.32938,
+          "yoy": 2.4
+        },
+        {
+          "name": "商工費",
+          "v": 150.03296,
+          "prevV": 159.54373,
+          "yoy": -6
+        },
+        {
+          "name": "消防費",
+          "v": 108.33761,
+          "prevV": 100.43057,
+          "yoy": 7.9
+        },
+        {
+          "name": "議会費",
+          "v": 11.79867,
+          "prevV": 11.93316,
+          "yoy": -1.1
+        },
+        {
+          "name": "農林水産業費",
+          "v": 10.98279,
+          "prevV": 11.23526,
+          "yoy": -2.2
+        },
+        {
+          "name": "災害復旧費",
+          "v": 10,
+          "prevV": 10,
+          "yoy": 0
+        },
+        {
+          "name": "労働費",
+          "v": 6.9816,
+          "prevV": 6.83417,
+          "yoy": 2.2
+        },
+        {
+          "name": "予備費",
+          "v": 2,
+          "prevV": 2,
+          "yoy": 0
+        },
+        {
+          "name": "諸支出金",
+          "v": 0.019,
+          "prevV": 0.04162,
+          "yoy": -54.3
+        }
+      ],
+      "sourceTitle": "令和8年度 相模原市予算主要施策説明書（一般会計歳入歳出予算の内訳・款項別）",
+      "sourceUrl": "https://web.archive.org/web/20260715190007/https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/003/978/r08nend/20260216_shuyou_setumei.pdf",
+      "originUrl": "https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/003/978/r08nend/20260216_shuyou_setumei.pdf",
+      "sourceLocalUrl": "/sources/sagamihara-yosansho-r8/20260216_shuyou_setumei.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "令和8年度 相模原市予算主要施策説明書（一般会計歳入歳出予算の内訳・款項別）",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20260715190007/https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/003/978/r08nend/20260216_shuyou_setumei.pdf",
+          "localUrl": "/sources/sagamihara-yosansho-r8/20260216_shuyou_setumei.pdf",
+          "source": "www.city.sagamihara.kanagawa.jp",
+          "thumb": "20260216_shuyou_setumei.pdf ・ sha256 ed72b45e89208ccb… ・ 2026-07-15 取得"
+        }
+      ]
+    }
+  ],
   "151009": [
     {
       "muniCode": "151009",
@@ -28819,6 +29099,284 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       }
     ]
   },
+  "141500": {
+    "muniCode": "141500",
+    "muniName": "相模原市",
+    "prefName": "神奈川県",
+    "isPref": false,
+    "projects": [],
+    "execution": [],
+    "fy": "R8",
+    "fyLabel": "令和8年度 当初予算",
+    "population": 716494,
+    "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+    "totalOku": 4055,
+    "prevTotalOku": 3750,
+    "yoyLabel": "+8.1%",
+    "prevBasis": "当初",
+    "prevNote": "",
+    "revenue": [
+      {
+        "name": "市税",
+        "v": 1493,
+        "prevV": 1438,
+        "yoy": 3.8
+      },
+      {
+        "name": "国庫支出金",
+        "v": 837.6444,
+        "prevV": 834.21505,
+        "yoy": 0.4
+      },
+      {
+        "name": "市債",
+        "v": 400.22,
+        "prevV": 261.421,
+        "yoy": 53.1
+      },
+      {
+        "name": "地方交付税",
+        "v": 326,
+        "prevV": 292,
+        "yoy": 11.6
+      },
+      {
+        "name": "県支出金",
+        "v": 263.88614,
+        "prevV": 252.0053,
+        "yoy": 4.7
+      },
+      {
+        "name": "地方消費税交付金",
+        "v": 197,
+        "prevV": 173,
+        "yoy": 13.9
+      },
+      {
+        "name": "諸収入",
+        "v": 178.50126,
+        "prevV": 192.32976,
+        "yoy": -7.2
+      },
+      {
+        "name": "繰入金",
+        "v": 133.54217,
+        "prevV": 113.07589,
+        "yoy": 18.1
+      },
+      {
+        "name": "その他",
+        "v": 225.20603000000003,
+        "prevV": 193.95300000000003,
+        "yoy": null,
+        "children": [
+          {
+            "name": "使用料及び手数料",
+            "v": 49.36118,
+            "prevV": 50.76385,
+            "yoy": -2.8
+          },
+          {
+            "name": "地方特例交付金",
+            "v": 32.31015,
+            "prevV": 8.8,
+            "yoy": 267.2
+          },
+          {
+            "name": "株式等譲渡所得割交付金",
+            "v": 20.57,
+            "prevV": 8,
+            "yoy": 157.1
+          },
+          {
+            "name": "法人事業税交付金",
+            "v": 17.78,
+            "prevV": 13.6,
+            "yoy": 30.7
+          },
+          {
+            "name": "地方譲与税",
+            "v": 17.02,
+            "prevV": 17.2,
+            "yoy": -1
+          },
+          {
+            "name": "軽油引取税交付金",
+            "v": 16.6,
+            "prevV": 30,
+            "yoy": -44.7
+          },
+          {
+            "name": "配当割交付金",
+            "v": 14.96,
+            "prevV": 8,
+            "yoy": 87
+          },
+          {
+            "name": "国有提供施設等所在市町村助成交付金",
+            "v": 13.91,
+            "prevV": 13.35,
+            "yoy": 4.2
+          },
+          {
+            "name": "寄附金",
+            "v": 12.125,
+            "prevV": 11.969,
+            "yoy": 1.3
+          },
+          {
+            "name": "繰越金",
+            "v": 10,
+            "prevV": 10,
+            "yoy": 0
+          },
+          {
+            "name": "分担金及び負担金",
+            "v": 8.02584,
+            "prevV": 7.82256,
+            "yoy": 2.6
+          },
+          {
+            "name": "財産収入",
+            "v": 5.40386,
+            "prevV": 3.04759,
+            "yoy": 77.3
+          },
+          {
+            "name": "利子割交付金",
+            "v": 2.37,
+            "prevV": 0.4,
+            "yoy": 492.5
+          },
+          {
+            "name": "交通安全対策特別交付金",
+            "v": 1.8,
+            "prevV": 1.8,
+            "yoy": 0
+          },
+          {
+            "name": "ゴルフ場利用税交付金",
+            "v": 1.67,
+            "prevV": 1.5,
+            "yoy": 11.3
+          },
+          {
+            "name": "分離課税所得割交付金",
+            "v": 1.3,
+            "prevV": 1.2,
+            "yoy": 8.3
+          },
+          {
+            "name": "（環境性能割交付金）",
+            "v": 0,
+            "prevV": 6.5,
+            "yoy": -100
+          }
+        ]
+      }
+    ],
+    "expenditure": [
+      {
+        "name": "民生費",
+        "v": 1683.6546,
+        "prevV": 1629.16077,
+        "yoy": 3.3
+      },
+      {
+        "name": "教育費",
+        "v": 718.39974,
+        "prevV": 610.03826,
+        "yoy": 17.8
+      },
+      {
+        "name": "総務費",
+        "v": 455.13014,
+        "prevV": 372.2414,
+        "yoy": 22.3
+      },
+      {
+        "name": "衛生費",
+        "v": 345.15079,
+        "prevV": 321.06124,
+        "yoy": 7.5
+      },
+      {
+        "name": "土木費",
+        "v": 314.68786,
+        "prevV": 283.15044,
+        "yoy": 11.1
+      },
+      {
+        "name": "公債費",
+        "v": 237.82424,
+        "prevV": 232.32938,
+        "yoy": 2.4
+      },
+      {
+        "name": "商工費",
+        "v": 150.03296,
+        "prevV": 159.54373,
+        "yoy": -6
+      },
+      {
+        "name": "消防費",
+        "v": 108.33761,
+        "prevV": 100.43057,
+        "yoy": 7.9
+      },
+      {
+        "name": "議会費",
+        "v": 11.79867,
+        "prevV": 11.93316,
+        "yoy": -1.1
+      },
+      {
+        "name": "農林水産業費",
+        "v": 10.98279,
+        "prevV": 11.23526,
+        "yoy": -2.2
+      },
+      {
+        "name": "災害復旧費",
+        "v": 10,
+        "prevV": 10,
+        "yoy": 0
+      },
+      {
+        "name": "労働費",
+        "v": 6.9816,
+        "prevV": 6.83417,
+        "yoy": 2.2
+      },
+      {
+        "name": "予備費",
+        "v": 2,
+        "prevV": 2,
+        "yoy": 0
+      },
+      {
+        "name": "諸支出金",
+        "v": 0.019,
+        "prevV": 0.04162,
+        "yoy": -54.3
+      }
+    ],
+    "sourceTitle": "令和8年度 相模原市予算主要施策説明書（一般会計歳入歳出予算の内訳・款項別）",
+    "sourceUrl": "https://web.archive.org/web/20260715190007/https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/003/978/r08nend/20260216_shuyou_setumei.pdf",
+    "originUrl": "https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/003/978/r08nend/20260216_shuyou_setumei.pdf",
+    "sourceLocalUrl": "/sources/sagamihara-yosansho-r8/20260216_shuyou_setumei.pdf",
+    "pagesLabel": "款別歳入歳出",
+    "evidence": [
+      {
+        "title": "令和8年度 相模原市予算主要施策説明書（一般会計歳入歳出予算の内訳・款項別）",
+        "type": "PDF",
+        "url": "https://web.archive.org/web/20260715190007/https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/003/978/r08nend/20260216_shuyou_setumei.pdf",
+        "localUrl": "/sources/sagamihara-yosansho-r8/20260216_shuyou_setumei.pdf",
+        "source": "www.city.sagamihara.kanagawa.jp",
+        "thumb": "20260216_shuyou_setumei.pdf ・ sha256 ed72b45e89208ccb… ・ 2026-07-15 取得"
+      }
+    ]
+  },
   "151009": {
     "muniCode": "151009",
     "muniName": "新潟市",
@@ -40398,4 +40956,4 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
 };
 
 /** budget 階層（予算ベースの款別ダッシュボードを持つ）自治体の団体コード */
-export const BUDGET_MUNIS: string[] = ["111007","121002","141003","141305","151009","190004","192023","192040","192066","192082","192091","192112","192139","194301","221007","222038","231002","232076","261009","271004","271403","272191","281000","341002","352039","401005","401307","011002","041009"];
+export const BUDGET_MUNIS: string[] = ["111007","121002","141003","141305","141500","151009","190004","192023","192040","192066","192082","192091","192112","192139","194301","221007","222038","231002","232076","261009","271004","271403","272191","281000","341002","352039","401005","401307","011002","041009"];

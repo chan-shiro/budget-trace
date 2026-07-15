@@ -69,6 +69,18 @@ interface Options {
    */
   revenueSpread?: { namePage: number; amountPage: number };
   expenditureSpread?: { namePage: number; amountPage: number };
+  /**
+   * **款と項が同一表に混在する様式**（大阪 §8e・相模原 §8p）で、**款行の字下げの上限**。
+   * 指定するとこれより深く字下げされた行は款のパースから外れる（＝項・目の行を款と誤認しない）。
+   *
+   * 相模原の款項別は 款が字下げ1・項が字下げ19 ではっきり分かれる:
+   * ```
+   *  5 市税                149,300,000  36.8  143,800,000  38.4  5,500,000  3.8
+   *                     5 市民税         75,698,121  18.6   72,435,672  19.3  3,262,449  4.5
+   * ```
+   * 指定しないと**項がすべて款として拾われ、Σ が2倍以上に膨らむ**（＝Σ ゲートが止める）。
+   */
+  kanIndentMax?: number;
   /** 「主な事業一覧」のページ範囲（1-origin・両端含む） */
   projectPages?: { from: number; to: number };
   /** 分冊形式（R2・R3）: 款別一覧表のファイル名。未指定なら単一ファイル */
@@ -370,6 +382,11 @@ function parseKanPage(
     if (li >= totalIdx) break; // 合計行以降（凡例・注記）は款ではない
     const raw = allLines[li]!; // 全角款番号（豊川）を半角化済み
     const compact = raw.replace(/[\s　]/g, "");
+    // 款項が同一表に混在する様式（Options.kanIndentMax 参照）: 深く字下げされた項・目を外す
+    if (opts.kanIndentMax != null && compact !== "") {
+      const indent = raw.length - raw.trimStart().length;
+      if (indent > opts.kanIndentMax) continue;
+    }
     if (compact === "") {
       reset(); // 行間の空行で断片を破棄（款は空行を挟まず連続する）
       openLine = null; // 下段折返しは款行の直後に来る。空行を挟んだら別物

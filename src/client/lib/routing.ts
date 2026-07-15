@@ -71,6 +71,7 @@ const MUNI_SLUGS: Record<string, string> = {
   "271403": "sakai",
   "151009": "niigata",
   "221007": "hamamatsu",
+  "141500": "sagamihara",
   "190004": "ken",
 };
 
