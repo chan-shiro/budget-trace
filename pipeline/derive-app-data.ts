@@ -1976,15 +1976,24 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
   // 以前は full（甲府）だけが d.report を持ち、川崎の572事業を収録しても /coverage が
   // 「成果 ×」と出た（＝収録済みを未収録と偽る）。/coverage は「実際の収録内容」を示すページなので、
   // **レジストリ＋parsed（＝実際に収録したもの）から導く**（2026-07-15）。
-  const REPORT_PARSERS = new Set(["kofu-jigyou-houkoku", "kawasaki-jigyou-hyouka"]);
+  // **新しい事業報告パーサを足したらここにも足す** — 忘れると /coverage が「収録済みを未収録」と
+  // 偽る（実際に横浜で踏んだ。2,313事業を収録したのに「成果 ×」と出た）。
+  const REPORT_PARSERS = new Set(["kofu-jigyou-houkoku", "kawasaki-jigyou-hyouka", "yokohama-jigyo-hyoka"]);
   const reportDetailByCode: Record<string, string> = {};
   for (const s of srcs) {
     if (!REPORT_PARSERS.has(s.parser)) continue;
     const code = entityOf(s).code;
     if (!code) continue;
-    const parsed = readJson(parsedPath(s.id)) as { docType?: string; facts?: unknown[] };
+    const parsed = readJson(parsedPath(s.id)) as {
+      docType?: string;
+      facts?: { policy?: string | null }[];
+    };
     if (parsed.docType !== "project-report") continue;
-    const n = parsed.facts?.length ?? 0;
+    // **画面に出している数と揃える** — scope は一般会計なので、特別会計の事業は数えない
+    // （横浜は 2,535 中222件が特別会計。生の件数を出すと /coverage が 2,535、画面が 2,313 で食い違う）。
+    // 会計名を持たない資料（甲府・川崎）は素通り＝全件が一般会計の前提で収録している
+    const facts = (parsed.facts ?? []).filter((f) => !/会計$/.test(f.policy ?? "") || f.policy === "一般会計");
+    const n = facts.length;
     const prev = reportDetailByCode[code];
     const one = `${s.fiscalYear}:${n}件`;
     reportDetailByCode[code] = prev ? `${prev} / ${one}` : one;
