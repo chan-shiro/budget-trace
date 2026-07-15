@@ -3,6 +3,10 @@
 // 一次資料の元 URL → Wayback Machine スナップショット URL
 
 export const WAYBACK_BY_URL: Record<string, string> = {
+  "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/documents/r4ippan.pdf": "https://web.archive.org/web/20260715172447/https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/documents/r4ippan.pdf",
+  "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/r4yosan.html": "https://web.archive.org/web/20260520134435/https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/r4yosan.html",
+  "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/documents/r8yosansho_ippan.pdf": "https://web.archive.org/web/20260715172224/https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/documents/r8yosansho_ippan.pdf",
+  "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/r8yosan.html": "https://web.archive.org/web/20260510165342/https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/r8yosan.html",
   "https://www.city.fuefuki.yamanashi.jp/documents/1033/r8toushoyosangaiyou.pdf": "https://web.archive.org/web/20260713113932/https://www.city.fuefuki.yamanashi.jp/documents/1033/r8toushoyosangaiyou.pdf",
   "https://www.city.fuefuki.yamanashi.jp/zaise/shisejoho/zaise/yosan.html": "https://web.archive.org/web/20260202182232/https://www.city.fuefuki.yamanashi.jp/zaise/shisejoho/zaise/yosan.html",
   "https://www.town.fujikawaguchiko.lg.jp/ka/info.php?if_id=7737": "https://web.archive.org/web/20260715062634/https://www.town.fujikawaguchiko.lg.jp/ka/info.php?if_id=7737",

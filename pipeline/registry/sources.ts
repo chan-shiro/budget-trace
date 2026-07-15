@@ -1481,6 +1481,71 @@ export const SOURCES: SourceEntry[] = [
       expenditureHeading: "歳出",
     },
   },
+  {
+    // 千葉市（団体コード 121002・人口98万）。一般会計予算書 附 予算に関する説明書（369p・4.6MB）。
+    // **横浜型**（事項別明細書の冒頭に「1 総括」が単独ページ群）で kofu-yosansho に無改修で乗る。
+    // 歳入26款 / 歳出13款。1側が複数ページに跨り**合計行は最終ページにしかない**。
+    // 印字ページとは **+3** ずれる（物理 p.31 = 印字 28）。
+    //
+    // **歳出は総務省の目的別13款と一致**（さいたま §8f に次ぐ2例目）＝decision 階層と款名が揃う。
+    //
+    // ⚠ **過年度は R8 の次が R4 まで飛ぶ**（原典が壊れている。docs §8k）:
+    //   R7=別様式（款名行と金額行が2行に割れる。パーサは「款行が1件も抽出できませんでした」で throw
+    //      ＝静かには壊れない）／R6・R2=無OCRのスキャン（pdftotext が完全に空）／
+    //   R3=**広島型OCR**（`県支出今`・カンマが小数点に化ける）／R5=款名がテキスト層に存在しない
+    // ⚠ **R4 は歳出14款**（款11 災害復旧費）で、R5 以降は13款＝**款番号が繰り上がる**。款名で突合する。
+    // ⚠ **R7 は骨格予算**（市長選 2025年3月）。ただし**札幌型の罠は起きない** — R8 の前年度列
+    //    551,200,000 は R7 当初（骨格）と一致し、肉付後 553,464百万円 ではない（発行元自身が
+    //    `1-4_r8kaikeibetsu_giketsugo.pdf` p.1 の推移表に「（）内数字は肉付け補正後」と明記）。
+    //    **比較対象の R7 当初そのものが骨格予算**である点は残る。次の市長選は2029年3月（R11）。
+    // ⚠ **`1-4_r8kaikeibetsu_giketsugo.pdf`（会計別・款別予算額）を款別として使ってはいけない** —
+    //    一見「款別＋前年当初」に見えるが**残りが「その他」に丸められ**（歳入11行＋その他）、
+    //    単位が百万円。さいたま §8f の編成過程 PDF と同種の罠。前年度基準の裏取りには有用。
+    // ⚠ **URL に規則性が無い**（`r8yosansho_ippan` / `01_r7yosansho_ippan` / `ippannkaikei` / `r4ippan`）。
+    //    年度ページも `r8yosan`〜`r4yosan` / **`r03yosan`**（ゼロ埋め）/ **`r2yosan2`** と破れる。
+    //    年度追加は年度インデックス（`/zaiseikyoku/zaisei/zaisei/yosan.html`）の実リンクから辿る。
+    // 罠: 象徴計上が3件（款10 自動車取得税交付金 `1/1`・款11 環境性能割交付金 `1/705,000`・
+    //     款24 繰越金 `1/1`）。財源内訳ヘッダ（`一般財源` 等）はあるが**款1 の直前に空行が2行入り
+    //     reset される**ため神戸 §8h の汚染は起きない（＝空行に救われているだけ。様式が変わったら疑う）。
+    id: "chiba-yosansho-r8",
+    title: "令和8年度 千葉市一般会計予算書 附 予算に関する説明書（歳入歳出予算事項別明細書 総括・款別歳入歳出）",
+    publisher: "千葉市",
+    url: null,
+    urls: ["https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/documents/r8yosansho_ippan.pdf"],
+    landingPage: "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/r8yosan.html",
+    kind: "pdf",
+    fiscalYear: "R8",
+    scope: "千葉市（一般会計・団体コード121002）",
+    license:
+      "千葉市ホームページに掲載している個々の情報（文章、写真、イラストなど）に関する著作権は、原則として千葉市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。千葉市ホームページは利用目的を問わず自由に閲覧していただくことが可能ですが、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、千葉市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePages: { from: 31, to: 33 },
+      expenditurePages: { from: 34, to: 35 },
+      revenueHeading: "(歳入)",
+      expenditureHeading: "(歳出)",
+    },
+  },
+  {
+    id: "chiba-yosansho-r4",
+    title: "令和4年度 千葉市一般会計予算書 附 予算に関する説明書（歳入歳出予算事項別明細書 総括・款別歳入歳出）",
+    publisher: "千葉市",
+    url: null,
+    urls: ["https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/documents/r4ippan.pdf"],
+    landingPage: "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/r4yosan.html",
+    kind: "pdf",
+    fiscalYear: "R4",
+    scope: "千葉市（一般会計・団体コード121002）",
+    license:
+      "千葉市ホームページに掲載している個々の情報（文章、写真、イラストなど）に関する著作権は、原則として千葉市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。千葉市ホームページは利用目的を問わず自由に閲覧していただくことが可能ですが、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、千葉市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePages: { from: 27, to: 29 },
+      expenditurePages: { from: 30, to: 31 },
+      revenueHeading: "(歳入)",
+      expenditureHeading: "(歳出)",
+    },
+  },
   // ---- 政令市の過年度（2026-07-15）。ページ位置は年度で動くので必ず物理ページを実確認する。
   //      年度 URL の規則も破れる（福岡 R3/R2 の命名・川崎の分冊番号）。docs §8b 参照 ----
   {

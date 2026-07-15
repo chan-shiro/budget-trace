@@ -2,6 +2,40 @@
   "note": "一次資料の Wayback Machine スナップショット台帳。再生成/追記: bun run pipeline:archive",
   "entries": [
     {
+      "sourceId": "chiba-yosansho-r4",
+      "url": "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/documents/r4ippan.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260715172447/https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/documents/r4ippan.pdf",
+      "waybackTimestamp": "20260715172447",
+      "checkedAt": "2026-07-15T17:25:09.779Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "chiba-yosansho-r4",
+      "url": "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/r4yosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260520134435/https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/r4yosan.html",
+      "waybackTimestamp": "20260520134435",
+      "checkedAt": "2026-07-15T17:25:32.948Z"
+    },
+    {
+      "sourceId": "chiba-yosansho-r8",
+      "url": "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/documents/r8yosansho_ippan.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260715172224/https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/documents/r8yosansho_ippan.pdf",
+      "waybackTimestamp": "20260715172224",
+      "checkedAt": "2026-07-15T17:23:49.139Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "chiba-yosansho-r8",
+      "url": "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/r8yosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260510165342/https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/r8yosan.html",
+      "waybackTimestamp": "20260510165342",
+      "checkedAt": "2026-07-15T17:24:22.598Z"
+    },
+    {
       "sourceId": "fuefuki-yosansho-r8",
       "url": "https://www.city.fuefuki.yamanashi.jp/documents/1033/r8toushoyosangaiyou.pdf",
       "kind": "file",
