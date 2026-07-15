@@ -3,7 +3,7 @@
   "sourceId": "kofu-yosansho-r2",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-07-15T08:22:34.669Z",
+  "parsedAt": "2026-07-15T09:38:55.738Z",
   "unit": "thousandYen",
   "fiscalYear": "R2",
   "account": "一般会計",
@@ -73,7 +73,7 @@
       "kanNo": 6,
       "kanName": "法人事業税交付金",
       "amount": 190691,
-      "prevAmount": 190691,
+      "prevAmount": 0,
       "locator": {
         "file": "r02sainyuusaishutu.pdf",
         "page": 1

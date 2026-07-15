@@ -9491,7 +9491,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       }
     ],
     "sourceTitle": "令和8年度 福岡市当初予算案計数資料（款別歳入歳出）",
-    "sourceUrl": "https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/documents/04_R8_keisuusiryou.pdf",
+    "sourceUrl": "https://web.archive.org/web/20260715084154/https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/documents/04_R8_keisuusiryou.pdf",
     "originUrl": "https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/documents/04_R8_keisuusiryou.pdf",
     "sourceLocalUrl": "/sources/fukuoka-yosansho-r8/04_R8_keisuusiryou.pdf",
     "pagesLabel": "款別歳入歳出",
@@ -9499,7 +9499,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       {
         "title": "令和8年度 福岡市当初予算案計数資料（款別歳入歳出）",
         "type": "PDF",
-        "url": "https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/documents/04_R8_keisuusiryou.pdf",
+        "url": "https://web.archive.org/web/20260715084154/https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/documents/04_R8_keisuusiryou.pdf",
         "localUrl": "/sources/fukuoka-yosansho-r8/04_R8_keisuusiryou.pdf",
         "source": "www.city.fukuoka.lg.jp",
         "thumb": "04_R8_keisuusiryou.pdf ・ sha256 ca0865888b352040… ・ 2026-07-15 取得"
@@ -9750,7 +9750,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       }
     ],
     "sourceTitle": "令和8年度 札幌市各会計予算説明書（一般会計・総括表）",
-    "sourceUrl": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r8/documents/02_r8_yosansetsumeisho_ippan.pdf",
+    "sourceUrl": "https://web.archive.org/web/20260715083207/https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r8/documents/02_r8_yosansetsumeisho_ippan.pdf",
     "originUrl": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r8/documents/02_r8_yosansetsumeisho_ippan.pdf",
     "sourceLocalUrl": "/sources/sapporo-yosansetsumeisho-r8/02_r8_yosansetsumeisho_ippan.pdf",
     "pagesLabel": "款別歳入歳出",
@@ -9758,7 +9758,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       {
         "title": "令和8年度 札幌市各会計予算説明書（一般会計・総括表）",
         "type": "PDF",
-        "url": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r8/documents/02_r8_yosansetsumeisho_ippan.pdf",
+        "url": "https://web.archive.org/web/20260715083207/https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r8/documents/02_r8_yosansetsumeisho_ippan.pdf",
         "localUrl": "/sources/sapporo-yosansetsumeisho-r8/02_r8_yosansetsumeisho_ippan.pdf",
         "source": "www.city.sapporo.jp",
         "thumb": "02_r8_yosansetsumeisho_ippan.pdf ・ sha256 897c2bb58c50b009… ・ 2026-07-15 取得"
