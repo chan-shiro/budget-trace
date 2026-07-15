@@ -862,6 +862,23 @@
       "checkedAt": "2026-07-14T07:17:01.632Z"
     },
     {
+      "sourceId": "sapporo-yosansetsumeisho-r7",
+      "url": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r7/documents/02_r7_yosansetsumeisho_ippan.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20251120171848/https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r7/documents/02_r7_yosansetsumeisho_ippan.pdf",
+      "waybackTimestamp": "20251120171848",
+      "checkedAt": "2026-07-15T10:08:09.846Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "sapporo-yosansetsumeisho-r7",
+      "url": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r7/reiwa7nendo_yosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260308105751/https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r7/reiwa7nendo_yosan.html",
+      "waybackTimestamp": "20260308105751",
+      "checkedAt": "2026-07-15T10:08:17.336Z"
+    },
+    {
       "sourceId": "sapporo-yosansetsumeisho-r8",
       "url": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r8/documents/02_r8_yosansetsumeisho_ippan.pdf",
       "kind": "file",

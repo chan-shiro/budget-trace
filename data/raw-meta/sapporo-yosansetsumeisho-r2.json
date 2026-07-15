@@ -1,0 +1,12 @@
+{
+  "sourceId": "sapporo-yosansetsumeisho-r2",
+  "files": [
+    {
+      "filename": "reiwa2nenndoyosannsetsumeisyoippankaikeitokubetukaikei.pdf",
+      "sha256": "829da4d042b74e4b98ac69fc648d17a65ad80e5b11aa57621e61e5a5092f4a1e",
+      "bytes": 2376072,
+      "fetchedAt": "2026-07-15T10:00:48.827Z",
+      "fetchedFrom": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r2/documents/reiwa2nenndoyosannsetsumeisyoippankaikeitokubetukaikei.pdf"
+    }
+  ]
+}

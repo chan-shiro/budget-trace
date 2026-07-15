@@ -64,6 +64,22 @@ interface Options {
   expenditureTotalLabel?: string;
   /** 歳入と歳出が同一ページに縦積み（南アルプス等）。revenuePage=expenditurePage で指定 */
   samePage?: boolean;
+  /**
+   * 前年度列の基準を明示的に上書きする。既定は資料本文の「補正後予算額」の有無で自動判定するが、
+   * **資料に何も書いていないのに前年度列が当初でない**ことがあり、その場合は自動判定が
+   * 「当初」と誤り、画面に「前年当初比」と偽って出る（＝黙って嘘をつく）。
+   * 実例: 札幌 R6・R2。市長選の年（R5・R1）の当初予算は**骨格予算**で、翌年度の説明書は
+   * 前年度の**肉付後**予算額を前年度列に置くが、資料には骨格/肉付の記載が一切ない。
+   * 裏取りは補正予算資料（R5 補正の概要「補正後予算額は…1兆2,442億円」= R6 の前年度列 1,244,185,321千円）。
+   * **次は R10（R9=2027年4月が選挙年）で再発する。**
+   * 上書きするときは必ず prevNote で根拠を書き、画面に基準を明示すること。
+   */
+  prevBasis?: "当初" | "補正後";
+  /**
+   * 前年度列に関する注記を明示的に与える。既定は本文の `※〜` 行から拾うが、
+   * **資料に注記が無いが事実として注記が要る**場合（上記の骨格予算）に使う。
+   */
+  prevNote?: string;
 }
 
 /** 全角数字・全角カンマ → 半角（豊川の款番号・北杜の小計見出しが全角） */
@@ -158,7 +174,11 @@ function parseKanPage(
     const [t1, t2] = totalIdxs;
     text = (side === "revenue" ? all.slice(0, t1! + 1) : all.slice(t1! + 1, t2! + 1)).join("\n");
   }
-  const prevBasis: "当初" | "補正後" = text.replace(/\s/g, "").includes("補正後予算額") ? "補正後" : "当初";
+  // 前年度列の基準。既定は本文の「補正後予算額」の有無で判定するが、資料が基準を書いていない
+  // ことがある（札幌 R6・R2 の骨格予算 → 肉付後）ので parserOptions で上書きできる。
+  // 上書きは「資料に書いていない事実」を入れる操作なので、registry 側に根拠を必ず書く。
+  const prevBasis: "当初" | "補正後" =
+    opts.prevBasis ?? (text.replace(/\s/g, "").includes("補正後予算額") ? "補正後" : "当初");
   const locator = { file: filename, page };
 
   const lines: BudgetLineFact[] = [];
@@ -311,7 +331,8 @@ function parseKanPage(
 
   if (lines.length === 0) throw new Error(`${filename} ${pageLabel}: 款行が1件も抽出できませんでした`);
   if (total == null) throw new Error(`${filename} ${pageLabel}: ${totalLabel} 行が見つかりません`);
-  return { lines, total, prevTotal, prevBasis, ...(prevNote ? { prevNote } : {}) };
+  const note = opts.prevNote ?? prevNote; // 明示指定 > 本文の ※ 注記
+  return { lines, total, prevTotal, prevBasis, ...(note ? { prevNote: note } : {}) };
 }
 
 // ---- 主な事業一覧（p.14-23 想定）のレイアウト抽出 -----------------------------

@@ -884,7 +884,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                 <div style={S("display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:20px;")}>
                   <div>
                     <h1 style={S("margin:0 0 6px; font-size:24px; font-weight:700;")}>前年度との比較</h1>
-                    <p style={S("margin:0; color:#5C6B77; font-size:13.5px;")}>{v.compPrevLabel} と {v.compCurLabel} の当初予算を款ごとに比較します（予算資料の前年度当初額を使用）。{v.compPrevNote && <span style={S("display:block; font-size:11.5px; color:#9DACB7; margin-top:2px;")}>{v.compPrevNote}</span>}</p>
+                    <p style={S("margin:0; color:#5C6B77; font-size:13.5px;")}>{v.compPrevLabel} と {v.compCurLabel} の当初予算を款ごとに比較します（{v.compBasisNote}）。{v.compPrevNote &&<span style={S("display:block; font-size:11.5px; color:#9DACB7; margin-top:2px;")}>{v.compPrevNote}</span>}</p>
                   </div>
                   <div style={S("display:inline-flex; border:1px solid #DFE7EC; border-radius:999px; overflow:hidden; background:#FFFFFF;")}>
                     {v.compTabs.map((ct: any, i: number) => (

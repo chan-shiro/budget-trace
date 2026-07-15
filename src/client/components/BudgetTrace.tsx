@@ -215,8 +215,12 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
   // decision 自治体だがまだ表示できない（シャード取得待ち・名前解決前）
   const decisionPending = isApp && tier === "decision" && !decisionView;
 
-  // budget 階層（類似市の当初予算・静的 gen）
-  const muniBudget = tier === "budget" && muniCode ? D.MUNI_BUDGETS[muniCode] ?? null : null;
+  // budget 階層（当初予算・静的 gen）。政令市は R2〜R8 の7年前後を収録しているので、
+  // full（甲府）と同じく**年度ドロップダウンで切り替える**。1年度しか無い自治体は要素1つの配列。
+  const muniBudgetYears = tier === "budget" && muniCode ? D.MUNI_BUDGET_YEARS[muniCode] ?? null : null;
+  const muniBudget = muniBudgetYears
+    ? muniBudgetYears.find((b) => b.fy === s.budgetFy) ?? muniBudgetYears[0]!
+    : null;
   const isBudget = !!muniBudget;
   // 都道府県エンティティ（県全体）か。市町村向けの機能（類似自治体比較・主な事業）は出さない
   const isPref = !!muniBudget?.isPref;
@@ -1156,7 +1160,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
         ]
       : isBudget
         ? [
-            { value: muniBudget!.fy, label: muniBudget!.fyLabel },
+            ...muniBudgetYears!.map((b) => ({ value: b.fy, label: b.fyLabel })),
             { value: "__request", label: "＋ 他の年度をリクエスト…" },
           ]
         : [
@@ -1525,6 +1529,13 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
       `令和${Number(compSrc.fy.slice(1)) - 1 === 1 ? "元" : Number(compSrc.fy.slice(1)) - 1}年度` +
       (compSrc.prevBasis === "補正後" ? "（補正後予算額）" : ""),
     compCurLabel: `令和${compSrc.fy.slice(1)}年度`,
+    // 比較の基準を文章でも言う。**「前年度当初額を使用」と決め打ちしない** — 前年度列が当初でない
+    // 資料がある（甲府 R2 の6月補正後・札幌 R6/R2 の骨格予算→肉付後）。基準と文章が食い違うと
+    // 「補正後予算額」ラベルの隣で「当初額を使用」と書く自己矛盾になる（2026-07-15 修正）
+    compBasisNote:
+      compSrc.prevBasis === "補正後"
+        ? "前年度は当初額ではなく補正後予算額"
+        : "予算資料の前年度当初額を使用",
     // 前年度列の資料注記（甲府 R6:「※令和5年度当初予算額は6月補正の政策的予算を含む」）
     compPrevNote: (compSrc as { prevNote?: string }).prevNote ? `※資料注記: ${(compSrc as { prevNote?: string }).prevNote}` : "",
     compPrevTotal: fmtV(compPrevSum), compCurTotal: fmtV(compCurSum), compSub: subV(compCurSum),

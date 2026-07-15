@@ -1,0 +1,12 @@
+{
+  "sourceId": "yokohama-yosansho-r5",
+  "files": [
+    {
+      "filename": "r5ippan.pdf",
+      "sha256": "87e0c5107e2719383bfaad06660069dbba03e9ce5340f265c4c308ae5df7dcfc",
+      "bytes": 2405221,
+      "fetchedAt": "2026-07-15T10:00:54.152Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r5/r5.files/r5ippan.pdf"
+    }
+  ]
+}
