@@ -63,6 +63,7 @@ const MUNI_SLUGS: Record<string, string> = {
   "401307": "fukuoka", "141305": "kawasaki", "271004": "osaka",
   "111007": "saitama",
   "341002": "hiroshima",
+  "281000": "kobe",
   "190004": "ken",
 };
 

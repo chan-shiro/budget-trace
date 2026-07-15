@@ -65,10 +65,21 @@ export const archiveEntrySchema = z.object({
   checkedAt: z.string(),
   /**
    * コピーの sha256 が raw（私たちが parse した版）と一致するか。
-   * file のみ・検証済みの場合に入る。false = スナップショットが別版
-   * （古い版など）を指しており、--force で現行版の再登録が必要
+   * file のみ・検証済みの場合に入る。false の意味は2つあり、`waybackTruncated` で区別する。
    */
   sha256Match: z.boolean().optional(),
+  /**
+   * **スナップショットが Wayback 側で切り詰められている**（＝発行元の差し替えではない）。
+   * 一部のクローラは大きなファイルを**ちょうど 5 MiB（5,242,880 bytes）で打ち切る**。
+   * 2026-07-16 に神戸 R8（24MB→5MiB）・山口 R7（5.3MB→5MiB）で実際に踏んだ。
+   *
+   * **`sha256Match: false` の意味は2つあって正反対**なので、混ぜてはいけない:
+   *   - `waybackTruncated: true` … Wayback 側が壊れている。**私たちの raw は正しい**。
+   *     --force で再登録しても同じ上限で切られる可能性が高い（②層が張れない資料）。
+   *   - それ以外 … スナップショットが**別版**（発行元が差し替えた等）を指している。
+   *     --force で現行版の再登録が要る。
+   */
+  waybackTruncated: z.boolean().optional(),
 });
 export type ArchiveEntry = z.infer<typeof archiveEntrySchema>;
 export const archivesLedgerSchema = z.object({
