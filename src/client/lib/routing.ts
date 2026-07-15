@@ -51,7 +51,8 @@ const PREF_BY_SLUG: Record<string, string> = Object.fromEntries(
 // 県エンティティ（山梨県の当初予算・190004）は市区町村選択 /yamanashi と衝突しないよう ken。
 const MUNI_SLUGS: Record<string, string> = {
   "192015": "kofu", "192112": "fuefuki", "192023": "fujiyoshida", "192082": "minami-alps",
-  "192104": "hokuto", "192066": "otsuki", "192040": "tsuru", "192139": "koshu",
+  "192091": "hokuto", "192066": "otsuki", "192040": "tsuru", "192139": "koshu",
+  "194301": "fujikawaguchiko",
   "232076": "toyokawa", "352039": "yamaguchi", "222038": "numazu", "272191": "izumi",
   "190004": "ken",
 };

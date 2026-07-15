@@ -105,8 +105,9 @@ interface PageResult {
   prevNote?: string;
 }
 
-// 款名の収集から除外するヘッダ・注記の語（「区分」は款の列見出し語で款名ではない）
-const KAN_HEADER_RE = /年度|予算額|一覧表|単位|構成比|増減|伸率|比較|区分|^款$/;
+// 款名の収集から除外するヘッダ・注記の語（「区分」「款名称」は款の列見出し語で款名ではない）。
+// 「款名称」は単独行に置かれ、`^款$` は完全一致なので当たらず款1に連結される（富士河口湖町）。
+const KAN_HEADER_RE = /年度|予算額|一覧表|単位|構成比|増減|伸率|比較|区分|款名称|^款$/;
 
 function parseKanPage(
   filePath: string,
@@ -201,6 +202,14 @@ function parseKanPage(
     });
   }
 
+  // 前年列の注記（※〜）は**合計行の後**に置かれる（甲府 R6 は合計行の直下）。款パースは
+  // 合計行の手前で打ち切るので、注記はその打切りとは独立に全行から拾う。
+  // （fd3a500 で打切りを入れた際、この注記ごと切り落としていた — 2026-07-15 修正）
+  for (const l of allLines) {
+    const c = l.replace(/[\s　]/g, "");
+    if (c.startsWith("※") && c.includes("予算")) { prevNote = c.slice(1); break; }
+  }
+
   for (let li = 0; li < allLines.length; li++) {
     if (li >= totalIdx) break; // 合計行以降（凡例・注記）は款ではない
     const raw = allLines[li]!; // 全角款番号（豊川）を半角化済み
@@ -219,7 +228,6 @@ function parseKanPage(
       continue;
     }
     if (headingCompact && compact.includes(headingCompact)) continue; // 見出し・節ラベル行
-    if (compact.startsWith("※") && compact.includes("予算")) prevNote = compact.slice(1); // 前年列の注記
     if (KAN_HEADER_RE.test(compact)) continue; // 表ヘッダ・タイトル・注記
 
     // 款番号の単独行（折返し款の中間行）。○◎●の付番マーカーを許容
