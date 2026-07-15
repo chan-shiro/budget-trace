@@ -527,7 +527,13 @@ bun run pipeline:derive                         # normalized → アプリ用生
 
 サーバー層ができるまでの normalized → アプリの接続は `pipeline:derive` で行う:
 巨大な normalized JSON をクライアントに import せず、必要な断面だけを決定的に
-`src/client/lib/*.gen.ts` へ生成してコミットする（例: 類似自治体比較の `similar.gen.ts`）。
+`src/client/lib/*.gen.ts` へ生成してコミットする（例: 甲府の当初予算の `kofu.gen.ts`）。
+
+断面が全国規模（数百KB〜）になるものは `.gen.ts` にせず **`public/` の静的 JSON** として
+書き出し、**その画面でだけフェッチする**（静的 import は全ページのバンドルに載るため）。
+現状の3つ: 決算シャード `public/decision/<県コード>.json`（県ごと）、データ整備状況
+`public/coverage.json`、類似自治体比較の全国索引 `public/decision/similar-index.json`。
+取得は `src/client/hooks/use*.ts`（モジュールキャッシュ＋in-flight 共有）に閉じる。
 
 DB（Postgres）導入時は `data/parsed` `data/normalized` の中身がテーブルへ移り、
 pipeline の各ステージはそのまま Repository 経由の書き込みに置き換わる。
