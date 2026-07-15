@@ -1861,6 +1861,14 @@
       "checkedAt": "2026-07-15T08:35:36.946Z"
     },
     {
+      "sourceId": "sendai-yosansho-r8",
+      "url": "https://www.city.sendai.jp/yosandaichi/shise/zaise/zaimu/zaise/sendaishi/yosan/r8terekai/r8-1/index/index/yosansetumei.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260715173114/https://www.city.sendai.jp/yosandaichi/shise/zaise/zaimu/zaise/sendaishi/yosan/r8terekai/r8-1/index/index/yosansetumei.html",
+      "waybackTimestamp": "20260715173114",
+      "checkedAt": "2026-07-15T17:32:05.253Z"
+    },
+    {
       "sourceId": "soumu-shichoson-kessan-r2",
       "url": "https://www.soumu.go.jp/iken/zaisei/r02_shichouson.html",
       "kind": "landing",

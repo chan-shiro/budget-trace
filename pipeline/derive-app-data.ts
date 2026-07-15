@@ -1630,6 +1630,8 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r4"] as const).map((fy) => ({
       srcId: `chiba-yosansho-${fy}`, muniCode: "121002", muniName: "千葉市", prefName: "千葉県", isPref: false,
     })),
+    // 仙台市は born-digital が R8 が初年度（R2〜R7 の説明書は総括ページがスキャン）＝単年
+    { srcId: "sendai-yosansho-r8", muniCode: "041009", muniName: "仙台市", prefName: "宮城県", isPref: false },
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;

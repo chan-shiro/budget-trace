@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 25,
+  "budgetCount": 26,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 122,
-  "fileCount": 247,
+  "sourceCount": 123,
+  "fileCount": 248,
   "archivedCount": 114,
   "licenseOpen": 13,
-  "licensePermission": 52,
+  "licensePermission": 53,
   "licenseUnverified": 57,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",

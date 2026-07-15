@@ -67,6 +67,7 @@ const MUNI_SLUGS: Record<string, string> = {
   "261009": "kyoto",
   "401005": "kitakyushu",
   "121002": "chiba",
+  "041009": "sendai",
   "190004": "ken",
 };
 
