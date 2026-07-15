@@ -197,6 +197,56 @@
       "sha256Match": true
     },
     {
+      "sourceId": "kawasaki-yosansho-r2",
+      "url": "https://www.city.kawasaki.jp/230/cmsfiles/contents/0000114/114574/20bunkatuban7.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20200527013400/http://www.city.kawasaki.jp/230/cmsfiles/contents/0000114/114574/20bunkatuban7.pdf",
+      "waybackTimestamp": "20200527013400",
+      "checkedAt": "2026-07-15T10:36:43.802Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kawasaki-yosansho-r2",
+      "url": "https://www.city.kawasaki.jp/230/page/0000114574.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260210063216/https://www.city.kawasaki.jp/230/page/0000114574.html",
+      "waybackTimestamp": "20260210063216",
+      "checkedAt": "2026-07-15T10:36:45.261Z"
+    },
+    {
+      "sourceId": "kawasaki-yosansho-r3",
+      "url": "https://www.city.kawasaki.jp/230/page/0000125926.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260521164352/https://www.city.kawasaki.jp/230/page/0000125926.html",
+      "waybackTimestamp": "20260521164352",
+      "checkedAt": "2026-07-15T10:36:35.976Z"
+    },
+    {
+      "sourceId": "kawasaki-yosansho-r4",
+      "url": "https://www.city.kawasaki.jp/230/page/0000136966.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260311191353/https://www.city.kawasaki.jp/230/page/0000136966.html",
+      "waybackTimestamp": "20260311191353",
+      "checkedAt": "2026-07-15T10:36:19.022Z"
+    },
+    {
+      "sourceId": "kawasaki-yosansho-r5",
+      "url": "https://www.city.kawasaki.jp/230/cmsfiles/contents/0000147/147869/23bunkatuban7.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250711080725/https://www.city.kawasaki.jp/230/cmsfiles/contents/0000147/147869/23bunkatuban7.pdf",
+      "waybackTimestamp": "20250711080725",
+      "checkedAt": "2026-07-15T10:35:16.158Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kawasaki-yosansho-r5",
+      "url": "https://www.city.kawasaki.jp/230/page/0000147869.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260419023054/https://www.city.kawasaki.jp/230/page/0000147869.html",
+      "waybackTimestamp": "20260419023054",
+      "checkedAt": "2026-07-15T10:35:22.459Z"
+    },
+    {
       "sourceId": "kawasaki-yosansho-r6",
       "url": "https://www.city.kawasaki.jp/230/cmsfiles/contents/0000158/158395/24bunkatuban6.pdf",
       "kind": "file",
@@ -1103,18 +1153,18 @@
       "sourceId": "sapporo-yosansetsumeisho-r3",
       "url": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r3/documents/r3yosan_kakukaikeiyosansetsumeisyo_ippantokubetsu.pdf",
       "kind": "file",
-      "waybackUrl": "https://web.archive.org/web/20240719055429/https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r3/documents/r3yosan_kakukaikeiyosansetsumeisyo_ippantokubetsu.pdf",
-      "waybackTimestamp": "20240719055429",
-      "checkedAt": "2026-07-15T10:11:11.393Z",
-      "sha256Match": false
+      "waybackUrl": "https://web.archive.org/web/20260715104030/https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r3/documents/r3yosan_kakukaikeiyosansetsumeisyo_ippantokubetsu.pdf",
+      "waybackTimestamp": "20260715104030",
+      "checkedAt": "2026-07-15T10:40:48.071Z",
+      "sha256Match": true
     },
     {
       "sourceId": "sapporo-yosansetsumeisho-r3",
       "url": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r3/reiwa3nendo_yosan.html",
       "kind": "landing",
-      "waybackUrl": "https://web.archive.org/web/20260214142938/https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r3/reiwa3nendo_yosan.html",
-      "waybackTimestamp": "20260214142938",
-      "checkedAt": "2026-07-15T10:11:22.767Z"
+      "waybackUrl": "https://web.archive.org/web/20260715104138/https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r3/reiwa3nendo_yosan.html",
+      "waybackTimestamp": "20260715104138",
+      "checkedAt": "2026-07-15T10:42:29.277Z"
     },
     {
       "sourceId": "sapporo-yosansetsumeisho-r4",

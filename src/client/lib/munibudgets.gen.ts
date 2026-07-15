@@ -3076,7 +3076,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和5年度 川崎市予算案について 計数資料編（一般会計歳入歳出予算 款別）",
-      "sourceUrl": "https://www.city.kawasaki.jp/230/cmsfiles/contents/0000147/147869/23bunkatuban7.pdf",
+      "sourceUrl": "https://web.archive.org/web/20250711080725/https://www.city.kawasaki.jp/230/cmsfiles/contents/0000147/147869/23bunkatuban7.pdf",
       "originUrl": "https://www.city.kawasaki.jp/230/cmsfiles/contents/0000147/147869/23bunkatuban7.pdf",
       "sourceLocalUrl": "/sources/kawasaki-yosansho-r5/23bunkatuban7.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -3084,7 +3084,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和5年度 川崎市予算案について 計数資料編（一般会計歳入歳出予算 款別）",
           "type": "PDF",
-          "url": "https://www.city.kawasaki.jp/230/cmsfiles/contents/0000147/147869/23bunkatuban7.pdf",
+          "url": "https://web.archive.org/web/20250711080725/https://www.city.kawasaki.jp/230/cmsfiles/contents/0000147/147869/23bunkatuban7.pdf",
           "localUrl": "/sources/kawasaki-yosansho-r5/23bunkatuban7.pdf",
           "source": "www.city.kawasaki.jp",
           "thumb": "23bunkatuban7.pdf ・ sha256 66450e429cb96596… ・ 2026-07-15 取得"
@@ -3928,7 +3928,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和2年度 川崎市予算案について 計数資料編（一般会計歳入歳出予算 款別）",
-      "sourceUrl": "https://www.city.kawasaki.jp/230/cmsfiles/contents/0000114/114574/20bunkatuban7.pdf",
+      "sourceUrl": "https://web.archive.org/web/20200527013400/http://www.city.kawasaki.jp/230/cmsfiles/contents/0000114/114574/20bunkatuban7.pdf",
       "originUrl": "https://www.city.kawasaki.jp/230/cmsfiles/contents/0000114/114574/20bunkatuban7.pdf",
       "sourceLocalUrl": "/sources/kawasaki-yosansho-r2/20bunkatuban7.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -3936,7 +3936,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和2年度 川崎市予算案について 計数資料編（一般会計歳入歳出予算 款別）",
           "type": "PDF",
-          "url": "https://www.city.kawasaki.jp/230/cmsfiles/contents/0000114/114574/20bunkatuban7.pdf",
+          "url": "https://web.archive.org/web/20200527013400/http://www.city.kawasaki.jp/230/cmsfiles/contents/0000114/114574/20bunkatuban7.pdf",
           "localUrl": "/sources/kawasaki-yosansho-r2/20bunkatuban7.pdf",
           "source": "www.city.kawasaki.jp",
           "thumb": "20bunkatuban7.pdf ・ sha256 5decb1f8e48c573f… ・ 2026-07-15 取得"
@@ -17568,7 +17568,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和3年度 札幌市各会計予算説明書（一般会計・総括表）",
-      "sourceUrl": "https://web.archive.org/web/20240719055429/https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r3/documents/r3yosan_kakukaikeiyosansetsumeisyo_ippantokubetsu.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260715104030/https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r3/documents/r3yosan_kakukaikeiyosansetsumeisyo_ippantokubetsu.pdf",
       "originUrl": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r3/documents/r3yosan_kakukaikeiyosansetsumeisyo_ippantokubetsu.pdf",
       "sourceLocalUrl": "/sources/sapporo-yosansetsumeisho-r3/r3yosan_kakukaikeiyosansetsumeisyo_ippantokubetsu.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -17576,7 +17576,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和3年度 札幌市各会計予算説明書（一般会計・総括表）",
           "type": "PDF",
-          "url": "https://web.archive.org/web/20240719055429/https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r3/documents/r3yosan_kakukaikeiyosansetsumeisyo_ippantokubetsu.pdf",
+          "url": "https://web.archive.org/web/20260715104030/https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r3/documents/r3yosan_kakukaikeiyosansetsumeisyo_ippantokubetsu.pdf",
           "localUrl": "/sources/sapporo-yosansetsumeisho-r3/r3yosan_kakukaikeiyosansetsumeisyo_ippantokubetsu.pdf",
           "source": "www.city.sapporo.jp",
           "thumb": "r3yosan_kakukaikeiyosansetsumeisyo_ippantokubetsu.pdf ・ sha256 d423fa2014d9916e… ・ 2026-07-15 取得"
