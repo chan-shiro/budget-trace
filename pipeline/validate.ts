@@ -48,18 +48,27 @@ function validateBudgetBook(d: BudgetBookDoc): void {
     const lines = d.facts.filter((f) => f.side === side);
     const total = side === "revenue" ? d.revenueTotal : d.expenditureTotal;
 
-    // 款番号の重複・欠番
-    // 款番号なし（廃止款の括弧書き等）は連番チェックの対象外
-    const nos = lines
-      .map((f) => f.kanNo)
-      .filter((n): n is number => n != null)
-      .sort((a, b) => a - b);
-    for (let i = 0; i < nos.length; i++) {
-      if (i > 0 && nos[i] === nos[i - 1]) {
-        issues.push({ level: "error", message: `${label}: 款番号 ${nos[i]} が重複` });
-      }
-      if (nos[i] !== i + 1) {
-        issues.push({ level: "warning", message: `${label}: 款番号が連番ではありません（${nos.join(",")}）` });
+    // 款番号の重複・順序。**款番号なし（廃止款）は対象外**。
+    //
+    // かつては「1,2,3,… でなければ warning」だったが、**偽陽性しか生んでいなかった**
+    // （2026-07-16 に全ソースを洗って確認）:
+    //   - 富士河口湖 歳出 `1..10,12` … 款11（災害復旧費）が**実在しない**だけ
+    //   - 相模原 歳入 `5,10,13,16,…,90` … 原典が**5刻み前後で独自採番**している
+    // どちらも原典どおりで、warning は「データの注意」として市民の画面に出てしまう。
+    // **欠番なら Σ が合わない**（金額ごと落ちる）ので Σ ゲートが本命であり、番号の連番性は要らない。
+    // 一方**重複と順序の逆転は抽出の壊れ**なので、そこだけ見る。
+    const nos = lines.map((f) => f.kanNo).filter((n): n is number => n != null);
+    const seen = new Map<number, number>();
+    for (const n of nos) seen.set(n, (seen.get(n) ?? 0) + 1);
+    for (const [n, c] of seen) {
+      if (c > 1) issues.push({ level: "error", message: `${label}: 款番号 ${n} が重複` });
+    }
+    for (let i = 1; i < nos.length; i++) {
+      if (nos[i]! <= nos[i - 1]!) {
+        issues.push({
+          level: "warning",
+          message: `${label}: 款番号が昇順ではありません（${nos.join(",")}）。行の取り違えの可能性`,
+        });
         break;
       }
     }

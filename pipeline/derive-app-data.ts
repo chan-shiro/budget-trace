@@ -1645,6 +1645,8 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4"] as const).map((fy) => ({
       srcId: `hamamatsu-yosansho-${fy}`, muniCode: "221007", muniName: "浜松市", prefName: "静岡県", isPref: false,
     })),
+    // 相模原市は予算書本体が面付けで表が2回描かれるため、主要施策説明書の款項別に逃げる。docs §8p
+    { srcId: "sagamihara-yosansho-r8", muniCode: "141500", muniName: "相模原市", prefName: "神奈川県", isPref: false },
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;
