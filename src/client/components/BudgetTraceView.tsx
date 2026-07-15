@@ -652,6 +652,44 @@ export default function BudgetTraceView({ v }: { v: any }) {
                 </section>
                 )}
 
+                {/* データの注意 — 「この数値のここが不確か」を隠さず出す。
+                    **手で書いていない**: validate の warning（検証ゲートが検出し、原典側の事情と
+                    説明できるもの）を derive がそのまま自治体へ割り当てている。
+                    初期は閉じる（本題を押し下げないため）が、**件数はサマリ行に出したまま**にする
+                    ——隠すのが目的ではなく「不確かさは開示しつつ、読みたい人が開く」形にするのが目的。
+                    /coverage のライセンス懸念と同じ扱い。 */}
+                {v.caveats && (
+                <details style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; padding:0; margin:26px 0;")}>
+                  <summary style={S("cursor:pointer; padding:13px 20px; list-style:none; display:flex; align-items:center; gap:10px; flex-wrap:wrap;")}>
+                    <span style={S("font-size:14px; font-weight:700; color:#14181C;")}>データの注意</span>
+                    <span style={S("font-size:11.5px; border:1px solid #DFE7EC; color:#5C6B77; border-radius:999px; padding:2px 10px; background:#F7FAFC; white-space:nowrap;")}>
+                      <strong style={S("font-family:'IBM Plex Mono',monospace;")}>{v.caveats.count}</strong>件
+                    </span>
+                    <span style={S("font-size:11.5px; color:#8494A0;")}>この自治体の数値で、原典と完全には突き合わないところ</span>
+                    <span style={S("font-size:11.5px; color:#5C6B77; margin-left:auto; white-space:nowrap;")}>詳しく ▾</span>
+                  </summary>
+                  <div style={S("padding:0 20px 16px;")}>
+                    <p style={S("margin:0 0 10px; font-size:12px; color:#5C6B77; line-height:1.85; max-width:80ch;")}>
+                      収録した数値は「合計＝内訳の和」などで自動検証しています。<strong style={S("color:#14181C;")}>一致しなかったものは隠さずここに出します</strong>。多くは原典側の丸めや、資料の書き方によって私たちが拾えていない行です。検証が通らなかった資料はそもそも収録していません（この一覧に出るのは、内容を確認して許容したものだけです）。
+                    </p>
+                    {v.caveats.items.map((c: any, i: number) => (
+                      <div key={i} style={S("background:#F7FAFC; border:1px solid #ECF2F6; border-radius:8px; padding:9px 12px; margin-top:6px;")}>
+                        <div style={S("font-size:11px; color:#8494A0; margin-bottom:3px;")}>
+                          <span style={S("font-family:'IBM Plex Mono',monospace;")}>{c.fyLabel}</span> ・ {c.title}
+                        </div>
+                        {c.plain
+                          ? <>
+                              <div style={S("font-size:12.5px; color:#14181C; line-height:1.8;")}>{c.plain}</div>
+                              {/* 検証の原文も併記する（丸めた説明だけにしない — 数字を確かめたい人のため） */}
+                              <div style={S("font-size:10.5px; color:#8494A0; line-height:1.7; margin-top:4px; font-family:'IBM Plex Mono',monospace;")}>{c.message}</div>
+                            </>
+                          : <div style={S("font-size:12px; color:#3A4750; line-height:1.75;")}>{c.message}</div>}
+                      </div>
+                    ))}
+                  </div>
+                </details>
+                )}
+
                 {/* 事業報告（成果）— **全量公開**の自治体（川崎 572件）。
                     甲府の詳細票セクション（下）とは**別にする** — 評価体系が違い、
                     川崎の達成度は**数字が小さいほど良い**（甲府の A〜F と向きが逆）。

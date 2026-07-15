@@ -2038,6 +2038,93 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
     `✓ データ整備状況を導出 → public/coverage.json（${summary.muniCount}市町村・${summary.sourceCount}資料・要許可${summary.licensePermission}・未確認${summary.licenseUnverified}・${kb}KB）`,
   );
 
+  // ---- データの注意（自治体ごと）→ src/client/lib/caveats.gen.ts ----------------
+  // **「この数値のここが不確か」を画面に出す。** 手で書かない —
+  // `validate` の warning が既に「我々が把握している不確かさ」を機械可読で持っているので、
+  // それをそのまま自治体へ割り当てる（手書きの注意書きは必ず実態とズレる。今日それを何度も見た）。
+  // 原文をそのまま出す（メダリオンの原則: 発行元が報告したもの・我々が検出したものを丸めない）。
+  // error は derive に来ない（検証ゲートで止まる）ので、ここに出るのは warning だけ。
+  {
+    // validate の原文は開発者向け（「款の前年度の和 1112829999 が…」）で市民には読めない。
+    // **原文は残したまま**、パターンから一行の言い換えを付ける。
+    // 「報告したものをそのまま尊重する」のは**数値を丸めない**という意味であって、
+    // 説明を不親切にする理由ではない。**個別の文面を手で持たない**（分類だけをコードで持つので
+    // warning が増えても実態とズレない）。未知のパターンは null＝原文だけ出す。
+    const plainOf = (m: string): string | null => {
+      if (m.includes("款の前年度の和")) {
+        return "廃止された税目の行が、款の番号を持たないため前年度の合計に含められていません。表示している前年度の各款の額と、資料に載っている前年度の合計がわずかに合いません（当年度は一致しています）。";
+      }
+      if (m.includes("総コスト")) {
+        return "人件費が「職員1人あたり人件費 × 人工」で計算されているため、事業費＋人件費と資料の総コストが1千円ずれています（原典の丸め）。";
+      }
+      if (m.includes("款番号が連番ではありません")) {
+        return "款の番号に欠番があります。資料どおりで、取りこぼしではありません。";
+      }
+      if (m.includes("予算額が0")) {
+        return "予算額が0の事業が載っています。資料どおりです。";
+      }
+      if (m.includes("重複しています")) {
+        return "同じ事業名が複数回出てきます。資料が別の分類で再掲している可能性があります。";
+      }
+      if (m.includes("歳入科目の和")) {
+        return "発行元（総務省）の資料上で、歳入科目の合計が1千円合いません。原典どおりに載せています。";
+      }
+      if (m.includes("記載率")) {
+        return "資料に載っている率と、金額から計算し直した率がわずかに違います。";
+      }
+      return null;
+    };
+    const byCode: Record<string, { source: string; title: string; fy: string; plain: string | null; message: string }[]> = {};
+    let n = 0;
+    for (const s of srcs) {
+      const code = entityOf(s).code;
+      if (!code) continue; // 全国資料（総務省）は自治体に紐付かない
+      // 未検証のソース（parse 前）はまだ注意を出せない
+      let issues: { level: string; message: string }[];
+      try {
+        issues = validationResultSchema.parse(readJson(validationPath(s.id))).issues;
+      } catch {
+        continue;
+      }
+      for (const i of issues) {
+        if (i.level !== "warning") continue;
+        (byCode[code] ??= []).push({
+          source: s.id, title: s.title, fy: s.fiscalYear,
+          plain: plainOf(i.message), // 市民向けの一行（原文は message に残す）
+          message: i.message,
+        });
+        n++;
+      }
+    }
+    const out = `// このファイルは自動生成です。手で編集しないこと。
+// 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
+//
+// **データの注意** — 自治体ごとの「ここが不確か」。ダッシュボードに出す。
+// **手で書かない**: \`validate\` の warning（＝検証ゲートが検出した不整合のうち、
+// 原典側の事情と説明できるもの）をそのまま割り当てている。error は検証ゲートで止まり
+// derive に来ないので、ここに出るのは warning だけ。
+// 文面は validate の原文のまま（発行元が報告したもの・我々が検出したものを丸めない）。
+
+export interface Caveat {
+  /** レジストリの sourceId（どの資料の話か） */
+  source: string;
+  title: string;
+  fy: string;
+  /** 市民向けの一行。パターンから導出（未知のパターンは null → 原文だけ出す） */
+  plain: string | null;
+  /** validate が出した原文。**丸めずそのまま残す** */
+  message: string;
+}
+
+/** 団体コード → データの注意。注意の無い自治体はキーごと存在しない */
+export const CAVEATS: Record<string, Caveat[]> = ${JSON.stringify(byCode, null, 2)};
+`;
+    writeFileSync(join(process.cwd(), "src/client/lib/caveats.gen.ts"), out, "utf8");
+    console.log(
+      `✓ データの注意を導出 → src/client/lib/caveats.gen.ts（${Object.keys(byCode).length}自治体・計${n}件。validate の warning から）`,
+    );
+  }
+
   // ---- /roadmap（進捗と計画）→ src/client/lib/roadmap.gen.ts ------------------
   // **進捗の数字は1つも手で書かない** — coverage と同じ実データ（上の summary・gen 各種）から出す。
   // 手書きなのは計画（pipeline/registry/roadmap.ts）だけ。roadmap は数KBなので静的 import でよい
