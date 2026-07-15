@@ -1,0 +1,11 @@
+{
+  "sourceId": "yokohama-jigyo-hyoka-r7",
+  "validatedAt": "2026-07-15T14:11:58.923Z",
+  "status": "ok",
+  "issues": [
+    {
+      "level": "warning",
+      "message": "区庁舎管理費: 資料の差引 7609 が R6 263659 − R5 255960 = 7699 と一致しません（差 90）。ズレが小さいので原典側の誤植と判断し、資料どおり収録しています"
+    }
+  ]
+}
