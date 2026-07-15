@@ -1,0 +1,320 @@
+{
+  "sourceId": "yokohama-jigyo-hyoka-r7",
+  "files": [
+    {
+      "filename": "0236_20240903.pdf",
+      "sha256": "57c1a677a75b2e8013c35f6f534dacaea37e0a8204ceb3cab45705ba94a86c43",
+      "bytes": 138861,
+      "fetchedAt": "2026-07-15T13:56:35.888Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/0236_20240903.pdf"
+    },
+    {
+      "filename": "01_R7datsutanso.pdf",
+      "sha256": "37e4299d67b62fff81c699c3f112213e9a1d4557a00a0eaa60d81d338ffe2fb9",
+      "bytes": 545536,
+      "fetchedAt": "2026-07-15T13:56:36.022Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/01_R7datsutanso.pdf"
+    },
+    {
+      "filename": "02_R7digital.pdf",
+      "sha256": "1601afec18a70c10ed436fe99408ac0a795bf44108437e87fdd1944db25dca5d",
+      "bytes": 338934,
+      "fetchedAt": "2026-07-15T13:56:36.114Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/02_R7digital.pdf"
+    },
+    {
+      "filename": "03_R7seisaku_2.pdf",
+      "sha256": "4884db0bb7eb1bd3cfa8e8d7fa874a15b1effef47aefdeac1a1bb3a5e5e04a4b",
+      "bytes": 633259,
+      "fetchedAt": "2026-07-15T13:56:36.266Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/03_R7seisaku_2.pdf"
+    },
+    {
+      "filename": "04_R7soumu.pdf",
+      "sha256": "9c0539d24d7e937cd3430271fa2dd54cd29ebc4cd3f3087c764b9539b4d78db4",
+      "bytes": 742095,
+      "fetchedAt": "2026-07-15T13:56:36.425Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/04_R7soumu.pdf"
+    },
+    {
+      "filename": "05_R7zaisei_2.pdf",
+      "sha256": "1b460fd15228515c012e03355cb316dead7e9dd7b13b6343f57f4b77ec2ae9bf",
+      "bytes": 769123,
+      "fetchedAt": "2026-07-15T13:56:36.605Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/05_R7zaisei_2.pdf"
+    },
+    {
+      "filename": "06_R7kokusai_2.pdf",
+      "sha256": "cc478c29dfaa3c88aebf581dccbd06389e7e6836e2afe66807eb3b1a85edb079",
+      "bytes": 336977,
+      "fetchedAt": "2026-07-15T13:56:36.689Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/06_R7kokusai_2.pdf"
+    },
+    {
+      "filename": "07_R7shimin.pdf",
+      "sha256": "f32165338e54f229c15bf43b58cdb3771621b7c81fefe2e159e0307df4ab47a9",
+      "bytes": 717614,
+      "fetchedAt": "2026-07-15T13:56:36.840Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/07_R7shimin.pdf"
+    },
+    {
+      "filename": "08_R7nigiwai.pdf",
+      "sha256": "cf89b9df9097ecd882b1bde0e275d081864777c8e0e84d3c71ff8b8a77641b69",
+      "bytes": 698754,
+      "fetchedAt": "2026-07-15T13:56:36.994Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/08_R7nigiwai.pdf"
+    },
+    {
+      "filename": "09_R7keizai_2.pdf",
+      "sha256": "d066063fa8643e04e27a33b9beeb1fc615fc84f23b801b900dcefd87faf76823",
+      "bytes": 993678,
+      "fetchedAt": "2026-07-15T13:56:37.199Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/09_R7keizai_2.pdf"
+    },
+    {
+      "filename": "10_R7kodomo.pdf",
+      "sha256": "9a777c1fcd8190c1c99f49e578967c640e764bde6dda14744f91d5ace3e16376",
+      "bytes": 1718429,
+      "fetchedAt": "2026-07-15T13:56:37.536Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/10_R7kodomo.pdf"
+    },
+    {
+      "filename": "11_R7kenkoufukushi.pdf",
+      "sha256": "44b8a8876b72a13dd6a81e3c502664efbb74d4bf67080a8dc7b8929cb9f38e4e",
+      "bytes": 2522231,
+      "fetchedAt": "2026-07-15T13:56:38.044Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/11_R7kenkoufukushi.pdf"
+    },
+    {
+      "filename": "12_R7iryo.pdf",
+      "sha256": "856f502fa78b4a7c60ee45d1d836e3d2e47105e12a728e38a888b2384b5fceaf",
+      "bytes": 1077747,
+      "fetchedAt": "2026-07-15T13:56:38.273Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/12_R7iryo.pdf"
+    },
+    {
+      "filename": "13_R7midorikankyo_2.pdf",
+      "sha256": "27e4896e1890e90cfb04daf1524a7c1a186c4d6eea10192ca1eecb030d85c7fb",
+      "bytes": 896700,
+      "fetchedAt": "2026-07-15T13:56:38.443Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/13_R7midorikankyo_2.pdf"
+    },
+    {
+      "filename": "14_R7gesui.pdf",
+      "sha256": "b9989cd53bc3eadef0502e0e00ed69eaf103ff5b6ae7ae4b7d61ac2602cd1203",
+      "bytes": 297332,
+      "fetchedAt": "2026-07-15T13:56:38.521Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/14_R7gesui.pdf"
+    },
+    {
+      "filename": "15_R7shigen.pdf",
+      "sha256": "da600f8d1978a682e402386e1698f1adc5d61e032175b0444843e6cc49455c9e",
+      "bytes": 718502,
+      "fetchedAt": "2026-07-15T13:56:38.660Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/15_R7shigen.pdf"
+    },
+    {
+      "filename": "16_R7kentiku.pdf",
+      "sha256": "a4d308a9179e0470e396ca61579524d7063aae975952a935231b202d160729a3",
+      "bytes": 781357,
+      "fetchedAt": "2026-07-15T13:56:38.813Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/16_R7kentiku.pdf"
+    },
+    {
+      "filename": "17_R7toshiseibi.pdf",
+      "sha256": "ff8921814346669e9075d07ad6bd928ac40fef2c3c7c08611190bb69420500b1",
+      "bytes": 812708,
+      "fetchedAt": "2026-07-15T13:56:38.976Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/17_R7toshiseibi.pdf"
+    },
+    {
+      "filename": "18_R7douro.pdf",
+      "sha256": "deff1598bd50647f39094b0ed5d542700ea4bad416b6430e69cc950777a4a02a",
+      "bytes": 705533,
+      "fetchedAt": "2026-07-15T13:56:39.118Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/18_R7douro.pdf"
+    },
+    {
+      "filename": "19_R7kouwan_2.pdf",
+      "sha256": "ec602b90e00d30bf7c6f9e3c4f5385221d2bbfab11c48393d70f037ce2781808",
+      "bytes": 1009152,
+      "fetchedAt": "2026-07-15T13:56:39.323Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/19_R7kouwan_2.pdf"
+    },
+    {
+      "filename": "20_R7syoubou.pdf",
+      "sha256": "2369dfe83622a9801823209510bec73a14bb845ce33b204359d932d2d0b6b2d9",
+      "bytes": 677996,
+      "fetchedAt": "2026-07-15T13:56:39.478Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/20_R7syoubou.pdf"
+    },
+    {
+      "filename": "21_R7kaikei.pdf",
+      "sha256": "eedf569ec460d9fc5717fe98e3a62d5e2b06dd2743744f1cbdcb245b630c3d38",
+      "bytes": 221366,
+      "fetchedAt": "2026-07-15T13:56:39.546Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/21_R7kaikei.pdf"
+    },
+    {
+      "filename": "22_R7kyouiku_2.pdf",
+      "sha256": "f52028084c8f352cbf5598bc9e33db38b653f4d6c6cdf0b5690aa6a729a1a4ed",
+      "bytes": 2452255,
+      "fetchedAt": "2026-07-15T13:56:39.999Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/22_R7kyouiku_2.pdf"
+    },
+    {
+      "filename": "23_R7senkyo.pdf",
+      "sha256": "5aba1d095d574d4afd46a3ea47acf518576b12392ae5e029ba6757058666b950",
+      "bytes": 243437,
+      "fetchedAt": "2026-07-15T13:56:40.067Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/23_R7senkyo.pdf"
+    },
+    {
+      "filename": "24_R7jinji.pdf",
+      "sha256": "612e1a0c3bd7c3dcb3d47d4a7d07a6cb73ce84d390e49c553219ef35217fca73",
+      "bytes": 205954,
+      "fetchedAt": "2026-07-15T13:56:40.148Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/24_R7jinji.pdf"
+    },
+    {
+      "filename": "25_R7kansa.pdf",
+      "sha256": "985c099a3f77effb709a9e9904c3fc6f0ecbd4782e0fad04153286242d8d13de",
+      "bytes": 158211,
+      "fetchedAt": "2026-07-15T13:56:40.202Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/25_R7kansa.pdf"
+    },
+    {
+      "filename": "26_R7gikai.pdf",
+      "sha256": "073872bd46c30af95d7f7a3d8e96d765948636a530493188f42edaf0755a04c4",
+      "bytes": 265348,
+      "fetchedAt": "2026-07-15T13:56:40.266Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/26_R7gikai.pdf"
+    },
+    {
+      "filename": "01_R7tsurumi_2.pdf",
+      "sha256": "eb94136fc9df696e0c65915a7eabd0ef68ffa1b1f72d0f31da3daee60e26f169",
+      "bytes": 627422,
+      "fetchedAt": "2026-07-15T13:56:40.394Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/01_R7tsurumi_2.pdf"
+    },
+    {
+      "filename": "02_R7kanagawa.pdf",
+      "sha256": "b257218f4ac8306f200b485a5d072e00dc38b4a7644dcecf6e151d76ca78ec49",
+      "bytes": 685453,
+      "fetchedAt": "2026-07-15T13:56:40.541Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/02_R7kanagawa.pdf"
+    },
+    {
+      "filename": "03_R7nishi_2.pdf",
+      "sha256": "8214220fadb8a021fb2795f2ea5939b234c18f600a53a6b5c74fda921af437d8",
+      "bytes": 658259,
+      "fetchedAt": "2026-07-15T13:56:40.670Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/03_R7nishi_2.pdf"
+    },
+    {
+      "filename": "04_R7naka_2.pdf",
+      "sha256": "ec685ff57d06d9663a6ca3d04a5e68e95b0faca794873ddc283272185f56d1c7",
+      "bytes": 720173,
+      "fetchedAt": "2026-07-15T13:56:40.815Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/04_R7naka_2.pdf"
+    },
+    {
+      "filename": "05_R7minami_2.pdf",
+      "sha256": "0e25da9babda32194a1c3b66f2768501c9b724407aca8e0341d41dd92c63738c",
+      "bytes": 892780,
+      "fetchedAt": "2026-07-15T13:56:40.997Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/05_R7minami_2.pdf"
+    },
+    {
+      "filename": "06_R7konan_2.pdf",
+      "sha256": "4aaaeee14f28d97da6a7f3f8a7542e341babffa34b24f40f0108c4e2ddeb89d7",
+      "bytes": 710857,
+      "fetchedAt": "2026-07-15T13:56:41.142Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/06_R7konan_2.pdf"
+    },
+    {
+      "filename": "07_R7hodogaya.pdf",
+      "sha256": "db766c641005999eddc8d3e1b15a535b44bc45d877637076747578fd644f01aa",
+      "bytes": 762761,
+      "fetchedAt": "2026-07-15T13:56:41.305Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/07_R7hodogaya.pdf"
+    },
+    {
+      "filename": "08_R7asahi_2.pdf",
+      "sha256": "cb429f96b065bfd8d7f1aa08e54e3603e00f42cecc48ff2edf8bc2a5dc5b0cf6",
+      "bytes": 670196,
+      "fetchedAt": "2026-07-15T13:56:41.448Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/08_R7asahi_2.pdf"
+    },
+    {
+      "filename": "09_R7isogo_2.pdf",
+      "sha256": "7c0fbfcd36919c6323c6efad2ab991393a00fe9eab70613647cd05d82e2388dd",
+      "bytes": 770136,
+      "fetchedAt": "2026-07-15T13:56:41.618Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/09_R7isogo_2.pdf"
+    },
+    {
+      "filename": "10_R7kanazawa_2.pdf",
+      "sha256": "93daa658a95b36ef1e56c4b96a2117b1298d5a8a53c7f7ff6544a29ea3bafbcd",
+      "bytes": 729288,
+      "fetchedAt": "2026-07-15T13:56:41.768Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/10_R7kanazawa_2.pdf"
+    },
+    {
+      "filename": "11_R7kohoku_2.pdf",
+      "sha256": "085ad32d847fa53c47c2b3bf8dcfe8ae334c672632d23c6d9af39ace864d0e6d",
+      "bytes": 968876,
+      "fetchedAt": "2026-07-15T13:56:41.960Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/11_R7kohoku_2.pdf"
+    },
+    {
+      "filename": "12_R7midori.pdf",
+      "sha256": "3fd4649608fd45d8b795e13032156c691a0690d7fc2019f59d4baf7e49819ad9",
+      "bytes": 721631,
+      "fetchedAt": "2026-07-15T13:56:42.119Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/12_R7midori.pdf"
+    },
+    {
+      "filename": "13_R7aoba.pdf",
+      "sha256": "00c83a1fa1ca62673bcd8b57a755ec202235d101a12f303b25aaa71acd1ffc35",
+      "bytes": 753479,
+      "fetchedAt": "2026-07-15T13:56:42.275Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/13_R7aoba.pdf"
+    },
+    {
+      "filename": "14_R7tuzuki.pdf",
+      "sha256": "abeaafc36f46aa11ff37f1cf0a4fdb55d37f6c1fc2a8c618b1565eb10fd5b155",
+      "bytes": 675821,
+      "fetchedAt": "2026-07-15T13:56:42.474Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/14_R7tuzuki.pdf"
+    },
+    {
+      "filename": "15_R7totsuka.pdf",
+      "sha256": "36d8cc75b938528733b99b67eb2beb2d8c060df794d75d5378516f198378ba7d",
+      "bytes": 701823,
+      "fetchedAt": "2026-07-15T13:56:42.621Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/15_R7totsuka.pdf"
+    },
+    {
+      "filename": "16_R7sakae_2.pdf",
+      "sha256": "e8e2b89fd0ff82b0ea2d2861d56d99be574c8fb137720f4ab4e4f861982e672c",
+      "bytes": 721704,
+      "fetchedAt": "2026-07-15T13:56:42.785Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/16_R7sakae_2.pdf"
+    },
+    {
+      "filename": "17_R7izumi.pdf",
+      "sha256": "7a47e7874fdf78ff20a5369c1f47a2760d4105eed1aa95dd736eb993d0c12c56",
+      "bytes": 810254,
+      "fetchedAt": "2026-07-15T13:56:43.059Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/17_R7izumi.pdf"
+    },
+    {
+      "filename": "18_R7seya_2.pdf",
+      "sha256": "1ca1dffcfb3d52035247ea7b14e0c3ad282bcf7b33275481e3968e49b0f9d00d",
+      "bytes": 670042,
+      "fetchedAt": "2026-07-15T13:56:43.278Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/innovation/jigyohyoka/r07/reiwa06jigyo.files/18_R7seya_2.pdf"
+    }
+  ]
+}
