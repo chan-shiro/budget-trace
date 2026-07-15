@@ -12706,7 +12706,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和8年度 大阪市一般会計予算書（議案第60号・款別歳入歳出）",
-      "sourceUrl": "https://www.city.osaka.lg.jp/contents/wdu260/result/pdf/2026gian60.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260715144902/https://www.city.osaka.lg.jp/contents/wdu260/result/pdf/2026gian60.pdf",
       "originUrl": "https://www.city.osaka.lg.jp/contents/wdu260/result/pdf/2026gian60.pdf",
       "sourceLocalUrl": "/sources/osaka-yosansho-r8/2026gian60.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -12714,7 +12714,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和8年度 大阪市一般会計予算書（議案第60号・款別歳入歳出）",
           "type": "PDF",
-          "url": "https://www.city.osaka.lg.jp/contents/wdu260/result/pdf/2026gian60.pdf",
+          "url": "https://web.archive.org/web/20260715144902/https://www.city.osaka.lg.jp/contents/wdu260/result/pdf/2026gian60.pdf",
           "localUrl": "/sources/osaka-yosansho-r8/2026gian60.pdf",
           "source": "www.city.osaka.lg.jp",
           "thumb": "2026gian60.pdf ・ sha256 56c244de872c623d… ・ 2026-07-15 取得"
@@ -26080,7 +26080,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       }
     ],
     "sourceTitle": "令和8年度 大阪市一般会計予算書（議案第60号・款別歳入歳出）",
-    "sourceUrl": "https://www.city.osaka.lg.jp/contents/wdu260/result/pdf/2026gian60.pdf",
+    "sourceUrl": "https://web.archive.org/web/20260715144902/https://www.city.osaka.lg.jp/contents/wdu260/result/pdf/2026gian60.pdf",
     "originUrl": "https://www.city.osaka.lg.jp/contents/wdu260/result/pdf/2026gian60.pdf",
     "sourceLocalUrl": "/sources/osaka-yosansho-r8/2026gian60.pdf",
     "pagesLabel": "款別歳入歳出",
@@ -26088,7 +26088,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       {
         "title": "令和8年度 大阪市一般会計予算書（議案第60号・款別歳入歳出）",
         "type": "PDF",
-        "url": "https://www.city.osaka.lg.jp/contents/wdu260/result/pdf/2026gian60.pdf",
+        "url": "https://web.archive.org/web/20260715144902/https://www.city.osaka.lg.jp/contents/wdu260/result/pdf/2026gian60.pdf",
         "localUrl": "/sources/osaka-yosansho-r8/2026gian60.pdf",
         "source": "www.city.osaka.lg.jp",
         "thumb": "2026gian60.pdf ・ sha256 56c244de872c623d… ・ 2026-07-15 取得"
