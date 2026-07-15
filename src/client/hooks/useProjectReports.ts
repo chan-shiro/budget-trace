@@ -29,6 +29,11 @@ export interface ReportItem {
   achievement: number | null;
   /** 方向性区分 Ⅰ〜Ⅴ */
   direction: string;
+  /**
+   * 款名（歳出予算科目の款番号を**対象年度の予算**で解決したもの）。
+   * **横浜だけが持つ** — これがあると款ドリルから事業→成果へ降りられる。解決できなければ null
+   */
+  kanName: string | null;
   cost: ReportCost[];
   /** 自サーバーの原本コピー（該当ページ） */
   ref: string;

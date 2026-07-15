@@ -987,11 +987,22 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
 // 札幌（R7=666件）・横浜（R3〜R7）を足すときも同じ形に乗る。
 // ============================================================================
 {
-  const REPORT_MUNI_SOURCES: { srcId: string; muniCode: string; muniName: string }[] = [
+  const REPORT_MUNI_SOURCES: {
+    srcId: string;
+    muniCode: string;
+    muniName: string;
+    /**
+     * 事業報告の「歳出予算科目 07款…」の款番号を**どの年度の予算で款名に解決するか**。
+     * 事業評価は**対象年度（実績年度）の款**を指すので、評価年度ではなく**対象年度の予算**を使う
+     * （横浜の R7 評価＝令和6年度事業なので R6）。**推測しない** — 実データで
+     * R6 と R8 の款番号→款名が完全一致することは確認済みだが、年度で変わり得る（R5 以前は18款）。
+     */
+    kanFromSrc?: string;
+  }[] = [
     { srcId: "kawasaki-jigyou-hyouka-r6", muniCode: "141305", muniName: "川崎市" },
     // **横浜は特別会計の事業を含む**（2,535事業中222件が16の特別会計）。scope が一般会計なので
     // 会計名（policy）で除外する。**会計名を持つのは横浜だけ**（川崎は全件が一般会計の想定）
-    { srcId: "yokohama-jigyo-hyoka-r7", muniCode: "141003", muniName: "横浜市" },
+    { srcId: "yokohama-jigyo-hyoka-r7", muniCode: "141003", muniName: "横浜市", kanFromSrc: "yokohama-yosansho-r6" },
   ];
   const byMuni: Record<string, unknown> = {};
   for (const r of REPORT_MUNI_SOURCES) {
@@ -1003,6 +1014,14 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
     if (!meta) throw new Error(`${r.srcId}: raw-meta がありません`);
     const src = findSource(r.srcId);
     const eraLabel = (c: string) => (c.startsWith("H") ? `平成${c.slice(1)}` : `令和${c.slice(1)}`) + "年度";
+    // 款番号 → 款名。**対象年度の予算から引く**（画面側で推測させない）。
+    // これがあると「款ドリル → その款の事業 → 成果」が繋がる。**款項目を持つのは横浜だけ**
+    const kanNames: Record<string, string> = {};
+    if (r.kanFromSrc) {
+      const kd = anyParsedDocSchema.parse(readJson(parsedPath(r.kanFromSrc)));
+      if (kd.docType !== "budget-book") throw new Error(`${r.kanFromSrc}: budget-book ではありません`);
+      for (const f of kd.facts) if (f.side === "expenditure") kanNames[String(f.kanNo)] = f.kanName;
+    }
     // 画面に出す断面だけに絞る（parsed をそのまま配ると 2.1MB）。金額は千円のまま持ち、
     // 表示側で fmtOku/fmtYen に通す
     // **一般会計に絞る**（横浜は policy に会計名が入る。2,535 → 2,313）。
@@ -1020,6 +1039,11 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
         // **達成度は数字が小さいほど良い**（甲府の A〜F とは向きが逆）。丸めず素の値を配る
         achievement: f.achievement ?? null,
         direction: f.direction ?? "",
+        // 款名（歳出予算科目の款番号を対象年度の予算で解決したもの）。解決できなければ null
+        kanName: (() => {
+          const m = /^(\d+)款/.exec(f.measure ?? "");
+          return m ? kanNames[String(Number(m[1]))] ?? null : null;
+        })(),
         cost: f.cost.map((c) => ({
           fy: c.fy,
           kind: c.kind,
