@@ -1422,6 +1422,13 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     { srcId: "koshu-yosansho-r8", muniCode: "192139", muniName: "甲州市", prefName: "山梨県", isPref: false },
     // 県内初の「町」（2026-07-15）。町村は資料が薄い想定だったが市と同型の様式だった
     { srcId: "fujikawaguchiko-yosansho-r8", muniCode: "194301", muniName: "富士河口湖町", prefName: "山梨県", isPref: false },
+    // 政令指定都市（人口の多い順に整備。2026-07-15）。款は局ベースの独自体系で、
+    // 同じ市の decision 階層（総務省決算の目的別）とは款名が一致しない — registry のコメント参照
+    { srcId: "yokohama-yosansho-r8", muniCode: "141003", muniName: "横浜市", prefName: "神奈川県", isPref: false },
+    { srcId: "nagoya-yosansho-r8", muniCode: "231002", muniName: "名古屋市", prefName: "愛知県", isPref: false },
+    { srcId: "sapporo-yosansetsumeisho-r8", muniCode: "011002", muniName: "札幌市", prefName: "北海道", isPref: false },
+    { srcId: "fukuoka-yosansho-r8", muniCode: "401307", muniName: "福岡市", prefName: "福岡県", isPref: false },
+    { srcId: "kawasaki-yosansho-r8", muniCode: "141305", muniName: "川崎市", prefName: "神奈川県", isPref: false },
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;
