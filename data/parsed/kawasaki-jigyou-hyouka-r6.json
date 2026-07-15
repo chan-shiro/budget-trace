@@ -3,7 +3,7 @@
   "sourceId": "kawasaki-jigyou-hyouka-r6",
   "parser": "kawasaki-jigyou-hyouka",
   "parserVersion": "0.1.0",
-  "parsedAt": "2026-07-15T11:31:11.516Z",
+  "parsedAt": "2026-07-15T11:37:39.963Z",
   "fiscalYear": "R6",
   "targetFy": "R6",
   "facts": [
@@ -52222,7 +52222,7 @@
       "grade": null,
       "score": null,
       "code": "30302040",
-      "achievement": null,
+      "achievement": 3,
       "direction": "Ⅱ",
       "policy": "体系",
       "measure": null,

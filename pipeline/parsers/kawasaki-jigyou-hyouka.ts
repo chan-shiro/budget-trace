@@ -253,9 +253,31 @@ function parseSheet(
     ...(col.isEstimate ? { isEstimate: true } : {}),
   }));
 
-  // 達成度（1〜5）。「達成度」ラベルの右にある単独の数字
+  // 達成度（1〜5）。**テキストの前後関係で取ってはいけない** — 選択値のセルは
+  // 「達成度」ラベルの上に来ることがあり（選択肢の並び順が資料内で一定しない）、
+  // `/達成度\s*([1-5])/` では取りこぼす（実測: 3-3.pdf の「魅力的な公園整備事業」で
+  // 値 `3` がラベルの13ポイント上にある）。**座標で取る**:
+  // 選択値は半角の単独数字で、達成度ラベルより右・選択肢（全角「１．…」）の列より左、
+  // ラベルとほぼ同じ高さのブロック内にある。
   let achievement: number | null = null;
-  {
+  for (let pg = from; pg <= Math.min(to, from + 2) && achievement == null; pg++) {
+    const pw = pg === from ? words : pageWords(filePath, pg);
+    const label = pw.find((w) => compact(w.text) === "達成度");
+    if (!label) continue;
+    const opts = pw.filter((w) => /^[１-５]．/.test(w.text.trim()) && Math.abs(w.y - label.y) < 40);
+    if (opts.length === 0) continue;
+    const optX = Math.min(...opts.map((o) => o.x));
+    const cand = pw.filter(
+      (w) => /^[1-5]$/.test(w.text.trim()) && w.x > label.x && w.x < optX - 5 && Math.abs(w.y - label.y) <= 25,
+    );
+    if (cand.length === 1) achievement = Number(cand[0]!.text.trim());
+    else if (cand.length > 1) {
+      throw new Error(`${filename} p.${pg}: 達成度の候補が ${cand.length} 個あります（${cand.map((c) => c.text).join(",")}）`);
+    }
+  }
+  // 区の「地域課題対応事業用」様式は選択値がラベル直後に読み順で来る（座標条件に当たらない）。
+  // 座標で取れなかったときだけ読み順で拾う（順序は逆にしない — 座標の方が誤りにくい）
+  if (achievement == null) {
     const m = /達成度\s*([1-5])(?![\d.])/.exec(compact(flat));
     if (m) achievement = Number(m[1]);
   }

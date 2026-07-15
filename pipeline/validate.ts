@@ -309,6 +309,43 @@ if (doc.docType === "project-report") {
     if (f.indicators.length > 0 && !hasActual) {
       issues.push({ level: "warning", message: `${f.name}: 指標の実績値が全て null` });
     }
+
+    // ---- 算術の自己検証（川崎の事務事業評価シート。持たない資料は該当列が null で素通り）----
+    // **列の取り違えを算術で検出する**のが狙い。実装中にこの2本が年度ずれ・人件費の欠落・
+    // ヘッダの読み違いを実際に捕まえた（docs §8c）。
+    for (const c of f.cost) {
+      const at = `${f.name} ${c.fy}${c.kind}`;
+      // ①総コスト = 事業費A + 人件費B
+      if (c.jigyohi != null && c.jinkenhi != null && c.totalCost != null) {
+        const d = c.jigyohi + c.jinkenhi - c.totalCost;
+        if (d !== 0) {
+          // 人件費Bは「職員1人当たり人件費 × 人工」の計算値なので**原典側に±1千円の丸め**が出る
+          // （川崎 R6 の「明るい町づくり対策」3列が該当）。それを超える差はパースの誤り。
+          issues.push({
+            level: Math.abs(d) <= 1 ? "warning" : "error",
+            message:
+              `${at}: 総コスト ${c.totalCost} が 事業費A ${c.jigyohi} + 人件費B ${c.jinkenhi} = ${c.jigyohi + c.jinkenhi} と一致しません（差 ${d}）` +
+              (Math.abs(d) <= 1 ? "。人件費は人工との積なので原典側の丸めの範囲" : "。列の対応が誤っている可能性"),
+          });
+        }
+      }
+      // ②財源内訳（国庫支出金＋市債＋その他特財＋一般財源）の和 = 事業費A
+      const zaigen = [c.kokkoShishutsukin, c.shisai, c.sonotaTokuzai, c.ippanZaigen];
+      if (c.jigyohi != null && zaigen.every((v) => v != null)) {
+        const sum = zaigen.reduce((a: number, v) => a + (v as number), 0);
+        if (sum !== c.jigyohi) {
+          issues.push({
+            level: "error",
+            message: `${at}: 財源内訳の和 ${sum} が 事業費A ${c.jigyohi} と一致しません（差 ${sum - c.jigyohi}）`,
+          });
+        }
+      }
+    }
+    // 達成度は「取れなかった」と「資料に無い」を区別する — 川崎は全事業が持つはずで、
+    // 分布が概要 PDF の記載と一致することを下でまとめて確認する
+    if (f.achievement == null && f.direction != null) {
+      issues.push({ level: "warning", message: `${f.name}: 方向性区分はあるのに達成度が取れていません` });
+    }
   }
   if (doc.facts.length === 0) issues.push({ level: "error", message: `詳細票が0件` });
   finish(doc.facts.length, "詳細票");
