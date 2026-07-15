@@ -1809,6 +1809,136 @@ export const SOURCES: SourceEntry[] = [
       expenditureHeading: "(歳出)",
     },
   },
+  {
+    // 浜松市（団体コード 221007・人口78万）。予算に関する説明書（一般会計・484p・1.4MB）。
+    // **横浜型**。歳入 物理 p.6（25款）/ 歳出 p.7（13款）。**印字 = 物理（オフセット0）**で、
+    // 表紙・目次を含めて採番しているため一致する（政令市では珍しい）。
+    // **歳出13款が総務省の目的別と一致**（さいたま §8f・千葉 §8k・堺 §8m・新潟 §8n に次ぐ5例目）。
+    //
+    // 罠は**款名汚染が1件だけ・ただし必発**（神戸 §8h と同型・R4〜R8 の全5年で再現）:
+    //   歳出 p.7 の `一 般 財 源` と `国県支出金 地 方 債 そ の 他` が KAN_HEADER_RE のどれにも
+    //   当たらず、**款1 の直前に空行が無い**ため断片が溜まり
+    //   款1 が「一般財源国県支出金地方債その他議会費」になる。
+    //   **金額は全件正しく Σ も4系統一致し、款名重複ゲートも効かない**（重複しないため）
+    //   ＝目視しないと気づけない型。**歳入 p.6 は空行に救われて汚染しない**。
+    //   `国県支出金` は歳入の款18 国庫支出金・款19 県支出金と別語だが、側で分けるのが安全。
+    // 折返し・皆増皆減・象徴計上・廃止款・三点リーダは**すべて無し**（実測）。
+    // 他市で必ず折れる款12「国有提供施設等所在市町村助成交付金」すら1行に収まる。
+    //
+    // **R5 は市長選（2023年4月）の年だが骨格予算問題は起きない** — R5 当初は R4比 +7.0%、
+    // 概要に「骨格」「肉付」の語が0件、R6 の前年度列が R5 当初と完全一致。
+    // **次の市長選は2027年4月（R9）なので R9 収録時に再確認する。**
+    // ⚠ **R3・R2 は説明書がそもそも非掲載**（「説明書」の語が0件＝リンク切れではない。さいたま §8f と同型）。
+    //    参考資料「一般会計予算款別構成比調」で回収できる見込みだが別 parserOptions が要る（未収録）。
+    // ⚠ **URL に規則性が無い**（`22_setumeisho08` / `l_yosansetsumeisho` / `l-setumeishoippan`(ハイフン) /
+    //    `yosansetumeisyo_ippan` / `r4_yosansetumeisyo_ippan`。documents id も不規則）。
+    //    **年度ページ自体は budget08〜budget18 と規則的**なのが救い。年度追加はそこの実リンクから辿る。
+    // ⚠ **PDF の生成系が年度でバラバラ**（R8/R7=DocuWorks・R6=Microsoft Print To PDF・R5/R4=eDocument
+    //    Library）。R4〜R8 は全年度テキスト層 OK を実測したが、今後の年度は必ず pdffonts から確認する。
+    id: "hamamatsu-yosansho-r8",
+    title: "令和8年度 浜松市予算に関する説明書（一般会計・歳入歳出予算事項別明細書 総括・款別歳入歳出）",
+    publisher: "浜松市",
+    url: null,
+    urls: ["https://www.city.hamamatsu.shizuoka.jp/documents/171794/22_setumeisho08.pdf"],
+    landingPage: "https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget08/index.html",
+    kind: "pdf",
+    fiscalYear: "R8",
+    scope: "浜松市（一般会計・団体コード221007）",
+    license:
+      "本Webサイトで掲載している、情報・文章・画像などの全てのコンテンツデータについては、「私的使用のための複製」や「引用」といった、著作権法上認められた場合を除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 6,
+      expenditurePage: 7,
+      revenueHeading: "（歳入）",
+      expenditureHeading: "（歳出）",
+      expenditureHeaderExtra: "一般財源|特定財源|財源内訳|国県支出金|地方債|その他",
+    },
+  },
+  {
+    id: "hamamatsu-yosansho-r7",
+    title: "令和7年度 浜松市予算に関する説明書（一般会計・歳入歳出予算事項別明細書 総括・款別歳入歳出）",
+    publisher: "浜松市",
+    url: null,
+    urls: ["https://www.city.hamamatsu.shizuoka.jp/documents/164874/l_yosansetsumeisho.pdf"],
+    landingPage: "https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget07/index.html",
+    kind: "pdf",
+    fiscalYear: "R7",
+    scope: "浜松市（一般会計・団体コード221007）",
+    license:
+      "本Webサイトで掲載している、情報・文章・画像などの全てのコンテンツデータについては、「私的使用のための複製」や「引用」といった、著作権法上認められた場合を除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 6,
+      expenditurePage: 7,
+      revenueHeading: "（歳入）",
+      expenditureHeading: "（歳出）",
+      expenditureHeaderExtra: "一般財源|特定財源|財源内訳|国県支出金|地方債|その他",
+    },
+  },
+  {
+    id: "hamamatsu-yosansho-r6",
+    title: "令和6年度 浜松市予算に関する説明書（一般会計・歳入歳出予算事項別明細書 総括・款別歳入歳出）",
+    publisher: "浜松市",
+    url: null,
+    urls: ["https://www.city.hamamatsu.shizuoka.jp/documents/157760/l-setumeishoippan.pdf"],
+    landingPage: "https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget06/index.html",
+    kind: "pdf",
+    fiscalYear: "R6",
+    scope: "浜松市（一般会計・団体コード221007）",
+    license:
+      "本Webサイトで掲載している、情報・文章・画像などの全てのコンテンツデータについては、「私的使用のための複製」や「引用」といった、著作権法上認められた場合を除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 6,
+      expenditurePage: 7,
+      revenueHeading: "（歳入）",
+      expenditureHeading: "（歳出）",
+      expenditureHeaderExtra: "一般財源|特定財源|財源内訳|国県支出金|地方債|その他",
+    },
+  },
+  {
+    id: "hamamatsu-yosansho-r5",
+    title: "令和5年度 浜松市予算に関する説明書（一般会計・歳入歳出予算事項別明細書 総括・款別歳入歳出）",
+    publisher: "浜松市",
+    url: null,
+    urls: ["https://www.city.hamamatsu.shizuoka.jp/documents/148959/yosansetumeisyo_ippan.pdf"],
+    landingPage: "https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget05/index.html",
+    kind: "pdf",
+    fiscalYear: "R5",
+    scope: "浜松市（一般会計・団体コード221007）",
+    license:
+      "本Webサイトで掲載している、情報・文章・画像などの全てのコンテンツデータについては、「私的使用のための複製」や「引用」といった、著作権法上認められた場合を除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 6,
+      expenditurePage: 7,
+      revenueHeading: "（歳入）",
+      expenditureHeading: "（歳出）",
+      expenditureHeaderExtra: "一般財源|特定財源|財源内訳|国県支出金|地方債|その他",
+    },
+  },
+  {
+    id: "hamamatsu-yosansho-r4",
+    title: "令和4年度 浜松市予算に関する説明書（一般会計・歳入歳出予算事項別明細書 総括・款別歳入歳出）",
+    publisher: "浜松市",
+    url: null,
+    urls: ["https://www.city.hamamatsu.shizuoka.jp/documents/133296/r4_yosansetumeisyo_ippan.pdf"],
+    landingPage: "https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget04/index.html",
+    kind: "pdf",
+    fiscalYear: "R4",
+    scope: "浜松市（一般会計・団体コード221007）",
+    license:
+      "本Webサイトで掲載している、情報・文章・画像などの全てのコンテンツデータについては、「私的使用のための複製」や「引用」といった、著作権法上認められた場合を除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 6,
+      expenditurePage: 7,
+      revenueHeading: "（歳入）",
+      expenditureHeading: "（歳出）",
+      expenditureHeaderExtra: "一般財源|特定財源|財源内訳|国県支出金|地方債|その他",
+    },
+  },
   // ---- 政令市の過年度（2026-07-15）。ページ位置は年度で動くので必ず物理ページを実確認する。
   //      年度 URL の規則も破れる（福岡 R3/R2 の命名・川崎の分冊番号）。docs §8b 参照 ----
   {

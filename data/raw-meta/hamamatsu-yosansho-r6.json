@@ -1,0 +1,12 @@
+{
+  "sourceId": "hamamatsu-yosansho-r6",
+  "files": [
+    {
+      "filename": "l-setumeishoippan.pdf",
+      "sha256": "4bb71e521aaef3bf325543ee394b9e6c9f14cdf6df1c4c15dbcdbd47885add09",
+      "bytes": 1719538,
+      "fetchedAt": "2026-07-15T18:15:16.001Z",
+      "fetchedFrom": "https://www.city.hamamatsu.shizuoka.jp/documents/157760/l-setumeishoippan.pdf"
+    }
+  ]
+}
