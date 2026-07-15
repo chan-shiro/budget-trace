@@ -1319,7 +1319,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
 
           <footer data-mq-pad="" style={S("border-top:1px solid #DFE7EC; padding:16px 28px; font-size:12px; color:#5C6B77; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;")}>
             <span>予算トレース — プロトタイプ。掲載数値はすべて一次資料由来の実データです（項以下の内訳・補正・執行率は資料収録後に追加予定）。<button onClick={v.goSources} style={S("border:none; background:none; padding:0; margin-left:8px; color:#1798D0; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")}>データ出典・更新日一覧 →</button><button onClick={v.goCoverage} style={S("border:none; background:none; padding:0; margin-left:12px; color:#1798D0; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")}>データ整備状況・ライセンス →</button></span>
-            <span style={S("font-family:'IBM Plex Mono',monospace;")}>SOURCE: 甲府市 当初予算資料 R2–R8</span>
+            <span style={S("font-family:'IBM Plex Mono',monospace;")}>{v.sourceLabel ? `SOURCE: ${v.sourceLabel}` : "v0.1 / 2026-07"}</span>
           </footer>
         </div>
       )}
