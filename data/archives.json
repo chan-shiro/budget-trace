@@ -1811,6 +1811,122 @@
       "sha256Match": true
     },
     {
+      "sourceId": "okayama-yosangaiyou-r2",
+      "url": "https://www.city.okayama.jp/shisei/0000020277.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260119140536/https://www.city.okayama.jp/shisei/0000020277.html",
+      "waybackTimestamp": "20260119140536",
+      "checkedAt": "2026-07-15T19:42:06.077Z"
+    },
+    {
+      "sourceId": "okayama-yosangaiyou-r2",
+      "url": "https://www.city.okayama.jp/shisei/cmsfiles/contents/0000020/20277/000400556.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250421160411/https://www.city.okayama.jp/shisei/cmsfiles/contents/0000020/20277/000400556.pdf",
+      "waybackTimestamp": "20250421160411",
+      "checkedAt": "2026-07-15T19:41:55.389Z"
+    },
+    {
+      "sourceId": "okayama-yosangaiyou-r3",
+      "url": "https://www.city.okayama.jp/shisei/0000025283.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250814053448/https://www.city.okayama.jp/shisei/0000025283.html",
+      "waybackTimestamp": "20250814053448",
+      "checkedAt": "2026-07-15T19:41:20.597Z"
+    },
+    {
+      "sourceId": "okayama-yosangaiyou-r3",
+      "url": "https://www.city.okayama.jp/shisei/cmsfiles/contents/0000025/25283/R3gaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250421160400/https://www.city.okayama.jp/shisei/cmsfiles/contents/0000025/25283/R3gaiyou.pdf",
+      "waybackTimestamp": "20250421160400",
+      "checkedAt": "2026-07-15T19:41:16.857Z"
+    },
+    {
+      "sourceId": "okayama-yosangaiyou-r4",
+      "url": "https://www.city.okayama.jp/shisei/0000032749.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260317054344/https://www.city.okayama.jp/shisei/0000032749.html",
+      "waybackTimestamp": "20260317054344",
+      "checkedAt": "2026-07-15T19:41:14.566Z"
+    },
+    {
+      "sourceId": "okayama-yosangaiyou-r4",
+      "url": "https://www.city.okayama.jp/shisei/cmsfiles/contents/0000032/32749/R4tousho.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250421160449/https://www.city.okayama.jp/shisei/cmsfiles/contents/0000032/32749/R4tousho.pdf",
+      "waybackTimestamp": "20250421160449",
+      "checkedAt": "2026-07-15T19:41:10.766Z"
+    },
+    {
+      "sourceId": "okayama-yosangaiyou-r5",
+      "url": "https://www.city.okayama.jp/shisei/0000042016.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251215173657/https://www.city.okayama.jp/shisei/0000042016.html",
+      "waybackTimestamp": "20251215173657",
+      "checkedAt": "2026-07-15T19:37:40.395Z"
+    },
+    {
+      "sourceId": "okayama-yosangaiyou-r5",
+      "url": "https://www.city.okayama.jp/shisei/cmsfiles/contents/0000042/42016/R5tousyoyosan.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250421160354/https://www.city.okayama.jp/shisei/cmsfiles/contents/0000042/42016/R5tousyoyosan.pdf",
+      "waybackTimestamp": "20250421160354",
+      "checkedAt": "2026-07-15T19:37:17.097Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "okayama-yosangaiyou-r6",
+      "url": "https://www.city.okayama.jp/shisei/0000053555.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251116182114/https://www.city.okayama.jp/shisei/0000053555.html",
+      "waybackTimestamp": "20251116182114",
+      "checkedAt": "2026-07-15T19:37:12.175Z"
+    },
+    {
+      "sourceId": "okayama-yosangaiyou-r6",
+      "url": "https://www.city.okayama.jp/shisei/cmsfiles/contents/0000053/53555/gaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20251116191309/https://www.city.okayama.jp/shisei/cmsfiles/contents/0000053/53555/gaiyou.pdf",
+      "waybackTimestamp": "20251116191309",
+      "checkedAt": "2026-07-15T19:36:59.131Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "okayama-yosangaiyou-r7",
+      "url": "https://www.city.okayama.jp/shisei/0000065008.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250806002604/https://www.city.okayama.jp/shisei/0000065008.html",
+      "waybackTimestamp": "20250806002604",
+      "checkedAt": "2026-07-15T19:36:46.932Z"
+    },
+    {
+      "sourceId": "okayama-yosangaiyou-r7",
+      "url": "https://www.city.okayama.jp/shisei/cmsfiles/contents/0000065/65008/01yosangaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260715193546/https://www.city.okayama.jp/shisei/cmsfiles/contents/0000065/65008/01yosangaiyou.pdf",
+      "waybackTimestamp": "20260715193546",
+      "checkedAt": "2026-07-15T19:36:15.675Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "okayama-yosangaiyou-r8",
+      "url": "https://www.city.okayama.jp/shisei/0000075851.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260715193356/https://www.city.okayama.jp/shisei/0000075851.html",
+      "waybackTimestamp": "20260715193356",
+      "checkedAt": "2026-07-15T19:34:40.469Z"
+    },
+    {
+      "sourceId": "okayama-yosangaiyou-r8",
+      "url": "https://www.city.okayama.jp/shisei/cmsfiles/contents/0000075/75851/R8tousyogaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260715193051/https://www.city.okayama.jp/shisei/cmsfiles/contents/0000075/75851/R8tousyogaiyou.pdf",
+      "waybackTimestamp": "20260715193051",
+      "checkedAt": "2026-07-15T19:32:36.344Z",
+      "sha256Match": true
+    },
+    {
       "sourceId": "osaka-yosansho-r8",
       "url": "https://www.city.osaka.lg.jp/contents/wdu260/result/pdf/2026gian60.pdf",
       "kind": "file",

@@ -1649,6 +1649,10 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     { srcId: "sagamihara-yosansho-r8", muniCode: "141500", muniName: "相模原市", prefName: "神奈川県", isPref: false },
     // 熊本市は説明書（10.3MB・ヘッダ汚染あり）ではなく概要（1.8MB）を採る。docs §8q
     { srcId: "kumamoto-yosansho-r8", muniCode: "431001", muniName: "熊本市", prefName: "熊本県", isPref: false },
+    // 岡山市は事項別明細書の総括が歳出にしか無く概要に逃げる。**款番号が1つも無い表**。docs §8r
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `okayama-yosangaiyou-${fy}`, muniCode: "331007", muniName: "岡山市", prefName: "岡山県", isPref: false,
+    })),
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;

@@ -81,6 +81,24 @@ interface Options {
    * 指定しないと**項がすべて款として拾われ、Σ が2倍以上に膨らむ**（＝Σ ゲートが止める）。
    */
   kanIndentMax?: number;
+  /**
+   * **款番号を持たない様式**（2026-07-16・岡山 R8 で発見）。指定すると、款番号が無くても
+   * 「日本語の款名＋整数金額2つ以上」の行を款として拾う（`kanNo: null`）。
+   * ```
+   *  市税              143,589,274   140,001,610      3,587,664   2.6   33.4   34.2
+   *  地方譲与税           2,579,000     2,696,000      △ 117,000  △4.3   0.6    0.7
+   * ```
+   * 対応しないと**款が1件も取れず throw する**（＝静かには壊れない）。
+   * **緩めると注記行を拾う**ので、款名に日本語があることと合計行の手前であることで絞っている。
+   */
+  kanNoless?: boolean;
+  /**
+   * **款名の先頭から落とす1文字**（正規表現の文字クラスの中身）。
+   * 表の左端に**縦書きの表側ラベル**が置かれ、`-layout` で**款名の頭に1文字だけ紛れ込む**様式のため
+   * （岡山: `歳 ゴルフ場利用税交付金` `入 使用料及び手数料` `出 教育費` — 毎年同じ4行で必発）。
+   * **金額は全件正しく Σ も4系統一致するので validate を素通りする**＝目視しないと気づけない型。
+   */
+  kanNamePrefixStrip?: string;
   /** 「主な事業一覧」のページ範囲（1-origin・両端含む） */
   projectPages?: { from: number; to: number };
   /** 分冊形式（R2・R3）: 款別一覧表のファイル名。未指定なら単一ファイル */
@@ -424,7 +442,9 @@ function parseKanPage(
     // 款名に三点リーダが入る自治体は無いので一律で落とす。
     const namePart = (tokens[0] != null ? rest.slice(0, rest.indexOf(tokens[0])) : rest)
       .replace(/[\s　]/g, "")
-      .replace(/[…‥]/g, "");
+      .replace(/[…‥]/g, "")
+      // 縦書きの表側ラベルが1文字だけ紛れ込む様式（Options.kanNamePrefixStrip 参照）
+      .replace(opts.kanNamePrefixStrip ? new RegExp(`^[${opts.kanNamePrefixStrip}]`) : /(?!)/, "");
 
     // **廃止款**（当年度に廃止された税目）。原典は款番号の代わりに記号を置くか、何も置かない:
     //   甲府 R2   `廃款 （自動車取得税交付金）        76,900  △ 76,900   皆減`
@@ -455,6 +475,10 @@ function parseKanPage(
       // 名前欄が空なら款名は上下の断片にある → 下段を待つ（awaitTail）
       const kanNo = Number(lead[1]);
       emit(kanNo, pendName + namePart, ints, raw, namePart === "" || tailKans.has(kanNo));
+    } else if (opts.kanNoless && ints.length >= 2 && hasCJK(pendName + namePart)) {
+      // 款番号を持たない様式（Options.kanNoless 参照）。原典が振っていないので kanNo は null。
+      // 断片（`入 使用料及び手数料` のように款名だけが別行に出る）も pendName 経由で拾う
+      emit(null, pendName + namePart, ints, raw);
     } else if (tokens.length === 0) {
       // 金額のない款名断片（折返しの上段/下段）。日本語断片のみ採る。
       // 「款名 （A）（%）…」等の列見出し行は款名に混ぜない。

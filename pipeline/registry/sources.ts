@@ -2049,6 +2049,210 @@ export const SOURCES: SourceEntry[] = [
       expenditureTotalLabel: "歳出合計",
     },
   },
+  {
+    // 岡山市（団体コード 331007・人口70万）。**予算書本体が使えず概要に逃げる**（広島 §8g・堺 §8m・
+    // 相模原 §8p 型）。ただし**逃げる理由が3市と違う** — テキスト層は健全で、
+    // **事項別明細書の「総括」が歳出にしか無い**（歳入は総括ゼロ）。
+    //   歳入は大阪型（款項目混在）が**偶数ページのみ**に載り（奇数ページは節/説明）、範囲指定が
+    //   原理的に使えない（奇数ページの `1 現年課税分 …` を款1 として拾う）。さらに款の継続ページで
+    //   **項番号が列0に来る**（`23 都市計画税` は款1 市税の項23）ので kanIndentMax でも切れない。
+    // → **概要 p.55「一般会計歳入・歳出」に逃げる**。**予算書本体は R7 までしか無く**、
+    //   概要は R2〜R8 の7年すべてにあるので**概要が唯一の経路**でもある。
+    //
+    // 罠:
+    //   - ⚠ **款番号が1つも無い**（→ kanNoless）。§9h。
+    //   - ⚠ **縦書きの表側ラベルが款名の頭に1文字だけ紛れ込む**（`歳 ゴルフ場利用税交付金`・
+    //     `入 使用料及び手数料`・`出 教育費`）。毎年同じ4行で必発。**金額もΣも通るので目視しないと
+    //     気づけない**（→ kanNamePrefixStrip）。§9h。
+    //   - **R8 だけ「使用料及び手数料」の款名と金額が別行に割れる**（版面の都合。R7〜R2 では1行）。
+    //     断片機構（pendName）で拾える。**来年再発しうる**。
+    //   - **皆増・皆減は R2 のみ**で、どちらも当年度/前年度セルが `−`（空欄型）＝§9c の prevIdx で通る。
+    //     **R2 だけ歳入25款・R3〜R8 は24款**（自動車取得税交付金が R2 で廃止）。
+    //   - **廃止款の記号が資料間で食い違う**: R8 の環境性能割交付金は概要では `0 457,000 △457,000 △100.0`
+    //     と**0 が印字され記号も皆減も無い**ので通常行。予算書では `11 （環境性能割交付金）` と括弧書き。
+    //   - **款名が略称**（概要 `国有提供施設交付金` ← 予算書 `国有提供施設等所在市町村助成交付金`）。
+    //     原典どおりに持つ（他市と款名が揃わない）。折返しは1件も無い。
+    // ⚠ **ページ位置が毎年動く**（55/53/47/48/48/44/36）。印字とのズレも年度で違う。**外挿しない**。
+    // ⚠ **ファイル名も年度ページの記事IDも規則性ゼロ**。カテゴリページ
+    //    /shisei/category/4-13-12-0-0-0-0-0-0-0.html から辿る。
+    // ライセンス経緯（§9g に従い license 欄には書かない）: 岡山市はオープンデータで CC BY 4.0 を採るが
+    // **適用対象はカタログ掲載データのみ**で、市が公表する「岡山市オープンデータ一覧」（492項目）に
+    // 予算・決算・財政の項目は0件＝本 PDF はカタログに無い（大阪・福岡・熊本と同じ罠）。
+    // 資料 PDF 自身の制限表記も0件。効くのはサイト全体の著作権ページだけ。
+    id: "okayama-yosangaiyou-r8",
+    title: "令和8年度 岡山市当初予算（案）の概要（一般会計歳入・歳出 款別・前年度当初比較）",
+    publisher: "岡山市",
+    url: null,
+    urls: ["https://www.city.okayama.jp/shisei/cmsfiles/contents/0000075/75851/R8tousyogaiyou.pdf"],
+    landingPage: "https://www.city.okayama.jp/shisei/0000075851.html",
+    kind: "pdf",
+    fiscalYear: "R8",
+    scope: "岡山市（一般会計・団体コード331007）",
+    license:
+      "岡山市公式ホームページに掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として岡山市の帰属とする。また、一部の画像等の著作権は、岡山市以外の原著作者の所有とする。岡山市公式ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできない。使用許諾は、各ページ内に記載されたウェブサイト各局区室課へ、事前に相談するものとする。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 55,
+      expenditurePage: 55,
+      samePage: true,
+      revenueHeading: "一般会計歳入・歳出",
+      expenditureHeading: "一般会計歳入・歳出",
+      revenueTotalLabel: "合計",
+      expenditureTotalLabel: "合計",
+      kanNoless: true,
+      kanNamePrefixStrip: "歳入出",
+    },
+  },
+  {
+    id: "okayama-yosangaiyou-r7",
+    title: "令和7年度 岡山市当初予算（案）の概要（一般会計歳入・歳出 款別・前年度当初比較）",
+    publisher: "岡山市",
+    url: null,
+    urls: ["https://www.city.okayama.jp/shisei/cmsfiles/contents/0000065/65008/01yosangaiyou.pdf"],
+    landingPage: "https://www.city.okayama.jp/shisei/0000065008.html",
+    kind: "pdf",
+    fiscalYear: "R7",
+    scope: "岡山市（一般会計・団体コード331007）",
+    license:
+      "岡山市公式ホームページに掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として岡山市の帰属とする。また、一部の画像等の著作権は、岡山市以外の原著作者の所有とする。岡山市公式ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできない。使用許諾は、各ページ内に記載されたウェブサイト各局区室課へ、事前に相談するものとする。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 53,
+      expenditurePage: 53,
+      samePage: true,
+      revenueHeading: "一般会計歳入・歳出",
+      expenditureHeading: "一般会計歳入・歳出",
+      revenueTotalLabel: "合計",
+      expenditureTotalLabel: "合計",
+      kanNoless: true,
+      kanNamePrefixStrip: "歳入出",
+    },
+  },
+  {
+    id: "okayama-yosangaiyou-r6",
+    title: "令和6年度 岡山市当初予算（案）の概要（一般会計歳入・歳出 款別・前年度当初比較）",
+    publisher: "岡山市",
+    url: null,
+    urls: ["https://www.city.okayama.jp/shisei/cmsfiles/contents/0000053/53555/gaiyou.pdf"],
+    landingPage: "https://www.city.okayama.jp/shisei/0000053555.html",
+    kind: "pdf",
+    fiscalYear: "R6",
+    scope: "岡山市（一般会計・団体コード331007）",
+    license:
+      "岡山市公式ホームページに掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として岡山市の帰属とする。また、一部の画像等の著作権は、岡山市以外の原著作者の所有とする。岡山市公式ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできない。使用許諾は、各ページ内に記載されたウェブサイト各局区室課へ、事前に相談するものとする。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 47,
+      expenditurePage: 47,
+      samePage: true,
+      revenueHeading: "一般会計歳入・歳出",
+      expenditureHeading: "一般会計歳入・歳出",
+      revenueTotalLabel: "合計",
+      expenditureTotalLabel: "合計",
+      kanNoless: true,
+      kanNamePrefixStrip: "歳入出",
+    },
+  },
+  {
+    id: "okayama-yosangaiyou-r5",
+    title: "令和5年度 岡山市当初予算（案）の概要（一般会計歳入・歳出 款別・前年度当初比較）",
+    publisher: "岡山市",
+    url: null,
+    urls: ["https://www.city.okayama.jp/shisei/cmsfiles/contents/0000042/42016/R5tousyoyosan.pdf"],
+    landingPage: "https://www.city.okayama.jp/shisei/0000042016.html",
+    kind: "pdf",
+    fiscalYear: "R5",
+    scope: "岡山市（一般会計・団体コード331007）",
+    license:
+      "岡山市公式ホームページに掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として岡山市の帰属とする。また、一部の画像等の著作権は、岡山市以外の原著作者の所有とする。岡山市公式ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできない。使用許諾は、各ページ内に記載されたウェブサイト各局区室課へ、事前に相談するものとする。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 48,
+      expenditurePage: 48,
+      samePage: true,
+      revenueHeading: "一般会計歳入・歳出",
+      expenditureHeading: "一般会計歳入・歳出",
+      revenueTotalLabel: "合計",
+      expenditureTotalLabel: "合計",
+      kanNoless: true,
+      kanNamePrefixStrip: "歳入出",
+    },
+  },
+  {
+    id: "okayama-yosangaiyou-r4",
+    title: "令和4年度 岡山市当初予算（案）の概要（一般会計歳入・歳出 款別・前年度当初比較）",
+    publisher: "岡山市",
+    url: null,
+    urls: ["https://www.city.okayama.jp/shisei/cmsfiles/contents/0000032/32749/R4tousho.pdf"],
+    landingPage: "https://www.city.okayama.jp/shisei/0000032749.html",
+    kind: "pdf",
+    fiscalYear: "R4",
+    scope: "岡山市（一般会計・団体コード331007）",
+    license:
+      "岡山市公式ホームページに掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として岡山市の帰属とする。また、一部の画像等の著作権は、岡山市以外の原著作者の所有とする。岡山市公式ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできない。使用許諾は、各ページ内に記載されたウェブサイト各局区室課へ、事前に相談するものとする。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 48,
+      expenditurePage: 48,
+      samePage: true,
+      revenueHeading: "一般会計歳入・歳出",
+      expenditureHeading: "一般会計歳入・歳出",
+      revenueTotalLabel: "合計",
+      expenditureTotalLabel: "合計",
+      kanNoless: true,
+      kanNamePrefixStrip: "歳入出",
+    },
+  },
+  {
+    id: "okayama-yosangaiyou-r3",
+    title: "令和3年度 岡山市当初予算（案）の概要（一般会計歳入・歳出 款別・前年度当初比較）",
+    publisher: "岡山市",
+    url: null,
+    urls: ["https://www.city.okayama.jp/shisei/cmsfiles/contents/0000025/25283/R3gaiyou.pdf"],
+    landingPage: "https://www.city.okayama.jp/shisei/0000025283.html",
+    kind: "pdf",
+    fiscalYear: "R3",
+    scope: "岡山市（一般会計・団体コード331007）",
+    license:
+      "岡山市公式ホームページに掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として岡山市の帰属とする。また、一部の画像等の著作権は、岡山市以外の原著作者の所有とする。岡山市公式ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできない。使用許諾は、各ページ内に記載されたウェブサイト各局区室課へ、事前に相談するものとする。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 44,
+      expenditurePage: 44,
+      samePage: true,
+      revenueHeading: "一般会計歳入・歳出",
+      expenditureHeading: "一般会計歳入・歳出",
+      revenueTotalLabel: "合計",
+      expenditureTotalLabel: "合計",
+      kanNoless: true,
+      kanNamePrefixStrip: "歳入出",
+    },
+  },
+  {
+    id: "okayama-yosangaiyou-r2",
+    title: "令和2年度 岡山市当初予算（案）の概要（一般会計歳入・歳出 款別・前年度当初比較）",
+    publisher: "岡山市",
+    url: null,
+    urls: ["https://www.city.okayama.jp/shisei/cmsfiles/contents/0000020/20277/000400556.pdf"],
+    landingPage: "https://www.city.okayama.jp/shisei/0000020277.html",
+    kind: "pdf",
+    fiscalYear: "R2",
+    scope: "岡山市（一般会計・団体コード331007）",
+    license:
+      "岡山市公式ホームページに掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として岡山市の帰属とする。また、一部の画像等の著作権は、岡山市以外の原著作者の所有とする。岡山市公式ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできない。使用許諾は、各ページ内に記載されたウェブサイト各局区室課へ、事前に相談するものとする。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 36,
+      expenditurePage: 36,
+      samePage: true,
+      revenueHeading: "一般会計歳入・歳出",
+      expenditureHeading: "一般会計歳入・歳出",
+      revenueTotalLabel: "合計",
+      expenditureTotalLabel: "合計",
+      kanNoless: true,
+      kanNamePrefixStrip: "歳入出",
+    },
+  },
   // ---- 政令市の過年度（2026-07-15）。ページ位置は年度で動くので必ず物理ページを実確認する。
   //      年度 URL の規則も破れる（福岡 R3/R2 の命名・川崎の分冊番号）。docs §8b 参照 ----
   {
