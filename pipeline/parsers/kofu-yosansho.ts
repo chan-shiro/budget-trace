@@ -40,6 +40,23 @@ interface Options {
    */
   revenueHeaderExtra?: string;
   expenditureHeaderExtra?: string;
+  /**
+   * **款名が次行へ続く款の番号**（側ごと）。**第4の折返し型**（2026-07-16・仙台 R8 で発見）。
+   *
+   * 既存の3型はどれも幾何で見分けられた:
+   *   - 上段折返し（豊川・和泉）    断片が款行の**前**            → pendName を前置
+   *   - 中央寄せ3行（名古屋・札幌・京都款5） 上段＋**款行(名前欄が空)**＋下段 → awaitTail
+   *   - 款番号が単独行（甲府 R2/R3） 款番号だけの行                → pendNo
+   * これは**款行の名前欄が非空のまま下段へ続く**型で、上段折返しと**幾何が完全に同じ**:
+   *   仙台 `13 国有提供施設等所在市助成 286,000 …` / `   交付金` / `14 地方特例交付金 …`
+   *   豊川 `   国有提供施設等所在`      / `4  市町村助成交付金 3,000 …`
+   * どちらも「款行・日本語だけの断片行・款行」で、**断片が前後どちらの款を完成させるかは
+   * 版面から決められない**（＝推測すると必ずどちらかを壊す）。だから明示する。
+   *
+   * 放置すると**その款が切れ、次の款の頭が汚れる**（仙台なら款13「国有提供施設等所在市助成」・
+   * 款14「交付金地方特例交付金」）。**金額は全件正しく Σ も4系統一致するので validate を素通りする。**
+   */
+  kanNameContinues?: { revenue?: number[]; expenditure?: number[] };
   /** 「主な事業一覧」のページ範囲（1-origin・両端含む） */
   projectPages?: { from: number; to: number };
   /** 分冊形式（R2・R3）: 款別一覧表のファイル名。未指定なら単一ファイル */
@@ -159,6 +176,10 @@ function parseKanPage(
   const pageLabel = pages.length > 1 ? `p.${pages[0]}-${pages[pages.length - 1]}` : `p.${page}`;
   // 側ごとの表ヘッダ語彙の追加（Options.revenueHeaderExtra / expenditureHeaderExtra 参照）
   const extraHeader = side === "revenue" ? opts.revenueHeaderExtra : opts.expenditureHeaderExtra;
+  // 款名が次行へ続く款（Options.kanNameContinues 参照）
+  const tailKans = new Set(
+    (side === "revenue" ? opts.kanNameContinues?.revenue : opts.kanNameContinues?.expenditure) ?? [],
+  );
   const headerRe = extraHeader ? new RegExp(`${KAN_HEADER_RE.source}|${extraHeader}`) : KAN_HEADER_RE;
   let text = pages.map((p) => pdfPageText(filePath, p)).join("\n");
   const heading =
@@ -356,7 +377,8 @@ function parseKanPage(
     } else if (lead && ints.length >= 2) {
       // 完結した款行（従来形式）。直前の折返し断片があれば款名の先頭に足す。
       // 名前欄が空なら款名は上下の断片にある → 下段を待つ（awaitTail）
-      emit(Number(lead[1]), pendName + namePart, ints, raw, namePart === "");
+      const kanNo = Number(lead[1]);
+      emit(kanNo, pendName + namePart, ints, raw, namePart === "" || tailKans.has(kanNo));
     } else if (tokens.length === 0) {
       // 金額のない款名断片（折返しの上段/下段）。日本語断片のみ採る。
       // 「款名 （A）（%）…」等の列見出し行（括弧・％・全角ABC を含む）は款名に混ぜない

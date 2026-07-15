@@ -203,6 +203,7 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r7/reiwa7nendo_yosan.html": "https://web.archive.org/web/20260308105751/https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r7/reiwa7nendo_yosan.html",
   "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r8/documents/02_r8_yosansetsumeisho_ippan.pdf": "https://web.archive.org/web/20260715083207/https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r8/documents/02_r8_yosansetsumeisho_ippan.pdf",
   "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r8/reiwa8nendo_yosan.html": "https://web.archive.org/web/20260515143115/https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r8/reiwa8nendo_yosan.html",
+  "https://www.city.sendai.jp/yosandaichi/shise/zaise/zaimu/zaise/sendaishi/yosan/r8terekai/r8-1/index/index/yosansetumei.html": "https://web.archive.org/web/20260715173114/https://www.city.sendai.jp/yosandaichi/shise/zaise/zaimu/zaise/sendaishi/yosan/r8terekai/r8-1/index/index/yosansetumei.html",
   "https://www.soumu.go.jp/iken/zaisei/r02_shichouson.html": "https://web.archive.org/web/20260301074317/https://www.soumu.go.jp/iken/zaisei/r02_shichouson.html",
   "https://www.soumu.go.jp/main_content/000800819.xlsx": "https://web.archive.org/web/20220401110434/https://www.soumu.go.jp/main_content/000800819.xlsx",
   "https://www.soumu.go.jp/main_content/000800820.xlsx": "https://web.archive.org/web/20220401110512/https://www.soumu.go.jp/main_content/000800820.xlsx",
