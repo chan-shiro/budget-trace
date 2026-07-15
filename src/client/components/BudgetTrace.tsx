@@ -1207,6 +1207,9 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
             rows: open
               ? g.rows.map((m) => {
                   const e = ents[m.c];
+                  // 未収録の列 → その場でリクエスト（＝この表がそのまま参加導線になる）
+                  const missing = d.datasets.filter((ds, i) => m.f[i] !== "1");
+                  const missLabel = missing.map((x) => x.label).join("・");
                   return {
                     code: m.c,
                     name: m.n,
@@ -1217,6 +1220,15 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
                       ok: m.f[i] === "1",
                       detail: e?.detail[ds.key] ?? "",
                     })),
+                    missingCount: missing.length,
+                    missLabel,
+                    requestUrl: missing.length
+                      ? D.buildRequestUrl(
+                          `${m.n}の${missLabel}の収録`,
+                          `データ整備状況より: ${g.pref.name} ${m.n}（団体コード ${m.c}）の「${missing.map((x) => x.full).join("」「")}」が未収録。収録してほしい`,
+                          m.n.replace(/（県全体）$/, ""),
+                        )
+                      : "",
                     sourceCount: e?.sources.length ?? 0,
                     sourcesOpen: s.covMuni === m.c,
                     toggleSources: () => setSt({ covMuni: s.covMuni === m.c ? null : m.c }),
