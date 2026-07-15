@@ -49,7 +49,11 @@ function validateBudgetBook(d: BudgetBookDoc): void {
     const total = side === "revenue" ? d.revenueTotal : d.expenditureTotal;
 
     // 款番号の重複・欠番
-    const nos = lines.map((f) => f.kanNo).sort((a, b) => a - b);
+    // 款番号なし（廃止款の括弧書き等）は連番チェックの対象外
+    const nos = lines
+      .map((f) => f.kanNo)
+      .filter((n): n is number => n != null)
+      .sort((a, b) => a - b);
     for (let i = 0; i < nos.length; i++) {
       if (i > 0 && nos[i] === nos[i - 1]) {
         issues.push({ level: "error", message: `${label}: 款番号 ${nos[i]} が重複` });

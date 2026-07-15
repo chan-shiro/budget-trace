@@ -1340,6 +1340,23 @@
       "sha256Match": true
     },
     {
+      "sourceId": "osaka-yosansho-r8",
+      "url": "https://www.city.osaka.lg.jp/contents/wdu260/result/pdf/2026gian60.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260715144902/https://www.city.osaka.lg.jp/contents/wdu260/result/pdf/2026gian60.pdf",
+      "waybackTimestamp": "20260715144902",
+      "checkedAt": "2026-07-15T14:50:50.787Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "osaka-yosansho-r8",
+      "url": "https://www.city.osaka.lg.jp/zaisei/page/0000671888.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260525082451/https://www.city.osaka.lg.jp/zaisei/page/0000671888.html",
+      "waybackTimestamp": "20260525082451",
+      "checkedAt": "2026-07-15T14:51:03.106Z"
+    },
+    {
       "sourceId": "otsuki-yosansho-r8",
       "url": "https://www.city.otsuki.yamanashi.jp/shisei/jyohokokai/images/R08_yosangaiyou.pdf",
       "kind": "file",
