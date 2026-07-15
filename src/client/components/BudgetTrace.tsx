@@ -7,6 +7,8 @@ import { useDecisionData } from "@/client/hooks/useDecisionData";
 import { useCoverage } from "@/client/hooks/useCoverage";
 import { useProjectReports } from "@/client/hooks/useProjectReports";
 import { REPORT_MUNIS } from "@/client/lib/reports-index.gen";
+// データの注意（validate の warning から derive が生成。手書きしない）
+import { CAVEATS } from "@/client/lib/caveats.gen";
 import { useSimilarIndex } from "@/client/hooks/useSimilarIndex";
 import { stateToPath, locationToState, type RouteState } from "@/client/lib/routing";
 // 進捗（実データから derive が算出）と計画（pipeline/registry/roadmap.ts が唯一の手書き）。
@@ -1537,6 +1539,23 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     uncollected: D.UNCOLLECTED,
     requestListUrl: D.REQUEST_LIST_URL,
     sourceLabel,
+    // --- データの注意 -------------------------------------------------------
+    // 「この数値のここが不確か」を隠さずダッシュボードに出す。**手で書かない** —
+    // validate の warning（＝検証ゲートが検出し、原典側の事情と説明できるもの）をそのまま出す。
+    // 表示年度に関わらずその自治体の全資料ぶんを出す（年度を切り替えて初めて効く注意もあるため）。
+    caveats: (() => {
+      const list = muniCode ? CAVEATS[muniCode] ?? [] : [];
+      if (list.length === 0) return null;
+      return {
+        count: list.length,
+        items: list.map((c) => ({
+          fyLabel: c.fy.startsWith("H") ? `平成${c.fy.slice(1)}年度` : `令和${c.fy.slice(1)}年度`,
+          title: c.title,
+          plain: c.plain, // 市民向けの一行（未知のパターンは null）
+          message: c.message, // 検証の原文。丸めず併記する
+        })),
+      };
+    })(),
     // --- 事業報告（成果）の全量公開（川崎 572件）------------------------------
     // 甲府の `report`（公表サンプル5件・A〜F の総合評価）とは**別のセクション**にする。
     // 評価体系が違う（川崎は達成度1〜5＋方向性Ⅰ〜Ⅴ で、**達成度は数字が小さいほど良い**＝
