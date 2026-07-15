@@ -3,7 +3,7 @@
   "sourceId": "kawasaki-yosansho-r2",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-07-15T10:02:51.618Z",
+  "parsedAt": "2026-07-15T16:51:10.676Z",
   "unit": "thousandYen",
   "fiscalYear": "R2",
   "account": "一般会計",
@@ -272,6 +272,17 @@
       "kanName": "市債",
       "amount": 65419000,
       "prevAmount": 54684000,
+      "locator": {
+        "file": "20bunkatuban7.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "自動車取得税交付金",
+      "amount": 0,
+      "prevAmount": 861318,
       "locator": {
         "file": "20bunkatuban7.pdf",
         "page": 4

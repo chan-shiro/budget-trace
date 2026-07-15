@@ -3,7 +3,7 @@
   "sourceId": "sapporo-yosansetsumeisho-r8",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-07-15T09:38:58.713Z",
+  "parsedAt": "2026-07-15T16:51:10.765Z",
   "unit": "thousandYen",
   "fiscalYear": "R8",
   "account": "一般会計",
@@ -272,6 +272,17 @@
       "kanName": "市債",
       "amount": 92846000,
       "prevAmount": 85479000,
+      "locator": {
+        "file": "02_r8_yosansetsumeisho_ippan.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "自動車税環境性能割交付金",
+      "amount": 0,
+      "prevAmount": 694000,
       "locator": {
         "file": "02_r8_yosansetsumeisho_ippan.pdf",
         "page": 8

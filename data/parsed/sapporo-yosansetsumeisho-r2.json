@@ -3,7 +3,7 @@
   "sourceId": "sapporo-yosansetsumeisho-r2",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-07-15T10:02:49.116Z",
+  "parsedAt": "2026-07-15T16:51:10.858Z",
   "unit": "thousandYen",
   "fiscalYear": "R2",
   "account": "一般会計",
@@ -284,6 +284,17 @@
       "kanName": "市債",
       "amount": 98581000,
       "prevAmount": 103169000,
+      "locator": {
+        "file": "reiwa2nenndoyosannsetsumeisyoippankaikeitokubetukaikei.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "自動車取得税交付金",
+      "amount": 0,
+      "prevAmount": 566000,
       "locator": {
         "file": "reiwa2nenndoyosannsetsumeisyoippankaikeitokubetukaikei.pdf",
         "page": 8
