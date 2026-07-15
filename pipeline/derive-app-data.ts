@@ -1613,6 +1613,10 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     })),
     // 広島市は予算書本体がスキャンOCR で使えず、財政局の記者発表資料「資料1」を使う → 専用パーサ
     { srcId: "hiroshima-yosansho-r8", muniCode: "341002", muniName: "広島市", prefName: "広島県", isPref: false },
+    // 神戸市は**アプリ内で初のオープンライセンス自治体**（政府標準利用規約2.0準拠・CC BY 互換・商用可）
+    ...(["r8", "r7", "r6"] as const).map((fy) => ({
+      srcId: `kobe-yosansho-${fy}`, muniCode: "281000", muniName: "神戸市", prefName: "兵庫県", isPref: false,
+    })),
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;

@@ -27,6 +27,19 @@ interface Options {
    */
   revenuePages?: { from: number; to: number };
   expenditurePages?: { from: number; to: number };
+  /**
+   * 表ヘッダ語彙の**側ごとの**追加（`KAN_HEADER_RE` に `|` で足す正規表現ソース）。
+   *
+   * ヘッダが多段になり、`年度|予算額|…` のどれにも当たらない行が残る様式のためのもの。
+   * 放置すると**款名の断片として溜まり、そのページ先頭の款名の頭に付く**。
+   * 金額と Σ は正しいままなので**検証ゲートを素通りする**（横浜「千円千円千円市税」型）。
+   *
+   * **側で分けているのは語彙が款名と衝突するから**。神戸の歳出は財源内訳のヘッダに
+   * `国庫支出金 県支出金 地方債 その他` が並ぶが、これらは**歳入では実在する款名**なので、
+   * 共通の `KAN_HEADER_RE` に足すと歳入の款18・款19 が消える。
+   */
+  revenueHeaderExtra?: string;
+  expenditureHeaderExtra?: string;
   /** 「主な事業一覧」のページ範囲（1-origin・両端含む） */
   projectPages?: { from: number; to: number };
   /** 分冊形式（R2・R3）: 款別一覧表のファイル名。未指定なら単一ファイル */
@@ -144,6 +157,9 @@ function parseKanPage(
   // locator は先頭ページ（エビデンスはその表の始まりを指す）
   const page = pages[0]!;
   const pageLabel = pages.length > 1 ? `p.${pages[0]}-${pages[pages.length - 1]}` : `p.${page}`;
+  // 側ごとの表ヘッダ語彙の追加（Options.revenueHeaderExtra / expenditureHeaderExtra 参照）
+  const extraHeader = side === "revenue" ? opts.revenueHeaderExtra : opts.expenditureHeaderExtra;
+  const headerRe = extraHeader ? new RegExp(`${KAN_HEADER_RE.source}|${extraHeader}`) : KAN_HEADER_RE;
   let text = pages.map((p) => pdfPageText(filePath, p)).join("\n");
   const heading =
     side === "revenue"
@@ -287,7 +303,7 @@ function parseKanPage(
       continue;
     }
     if (headingCompact && compact.includes(headingCompact)) continue; // 見出し・節ラベル行
-    if (KAN_HEADER_RE.test(compact)) continue; // 表ヘッダ・タイトル・注記
+    if (headerRe.test(compact)) continue; // 表ヘッダ・タイトル・注記
 
     // 款番号の単独行（折返し款の中間行）。○◎●の付番マーカーを許容
     const bare = compact.match(/^[○◎●]*(\d+)$/);

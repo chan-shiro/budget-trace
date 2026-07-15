@@ -522,6 +522,58 @@
       "checkedAt": "2026-07-15T10:33:47.658Z"
     },
     {
+      "sourceId": "kobe-yosansho-r6",
+      "url": "https://www.city.kobe.lg.jp/a61436/shise/financial/yosankessan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260715155918/https://www.city.kobe.lg.jp/a61436/shise/financial/yosankessan.html",
+      "waybackTimestamp": "20260715155918",
+      "checkedAt": "2026-07-15T16:00:01.362Z"
+    },
+    {
+      "sourceId": "kobe-yosansho-r6",
+      "url": "https://www.city.kobe.lg.jp/documents/48584/2024yosannsetumeisyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250724104058/https://www.city.kobe.lg.jp/documents/48584/2024yosannsetumeisyo.pdf",
+      "waybackTimestamp": "20250724104058",
+      "checkedAt": "2026-07-15T15:59:58.450Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kobe-yosansho-r7",
+      "url": "https://www.city.kobe.lg.jp/a61436/shise/financial/yosankessan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260715155918/https://www.city.kobe.lg.jp/a61436/shise/financial/yosankessan.html",
+      "waybackTimestamp": "20260715155918",
+      "checkedAt": "2026-07-15T15:59:47.632Z"
+    },
+    {
+      "sourceId": "kobe-yosansho-r7",
+      "url": "https://www.city.kobe.lg.jp/documents/48584/2025yosannsetsumeisho.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250724104058/https://www.city.kobe.lg.jp/documents/48584/2025yosannsetsumeisho.pdf",
+      "waybackTimestamp": "20250724104058",
+      "checkedAt": "2026-07-15T15:59:41.813Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kobe-yosansho-r8",
+      "url": "https://www.city.kobe.lg.jp/a61436/shise/financial/yosankessan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260715155918/https://www.city.kobe.lg.jp/a61436/shise/financial/yosankessan.html",
+      "waybackTimestamp": "20260715155918",
+      "checkedAt": "2026-07-15T16:02:42.238Z"
+    },
+    {
+      "sourceId": "kobe-yosansho-r8",
+      "url": "https://www.city.kobe.lg.jp/documents/48584/2026yosansetumeisyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260313113534/https://www.city.kobe.lg.jp/documents/48584/2026yosansetumeisyo.pdf",
+      "waybackTimestamp": "20260313113534",
+      "checkedAt": "2026-07-15T16:02:37.370Z",
+      "sha256Match": false,
+      "waybackTruncated": true
+    },
+    {
       "sourceId": "kofu-gikai-r2",
       "url": "https://www.city.kofu.yamanashi.jp/gikai-somu/shise/gikai/mebo/giinmeibo.html",
       "kind": "landing",
@@ -2087,7 +2139,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260420011714/https://www.city.yamaguchi.lg.jp/site/shiseijoho/171302.html",
       "waybackTimestamp": "20260420011714",
-      "checkedAt": "2026-07-13T03:37:50.570Z"
+      "checkedAt": "2026-07-15T16:03:34.282Z"
     },
     {
       "sourceId": "yamaguchi-yosansho-r7",
@@ -2095,8 +2147,9 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20250815060151/https://www.city.yamaguchi.lg.jp/uploaded/attachment/105329.pdf",
       "waybackTimestamp": "20250815060151",
-      "checkedAt": "2026-07-13T03:37:47.550Z",
-      "sha256Match": false
+      "checkedAt": "2026-07-15T16:03:26.383Z",
+      "sha256Match": false,
+      "waybackTruncated": true
     },
     {
       "sourceId": "yamanashi-kessan-r6",

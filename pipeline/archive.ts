@@ -52,11 +52,20 @@ async function latestSnapshot(url: string): Promise<{ timestamp: string; wayback
  * （実例: 財政事情 01ipankaikei.pdf の 2024 年版スナップショット）。
  * raw に該当ファイルが無い・取得失敗は undefined（判定不能）
  */
+/** Wayback の一部クローラが大きなファイルを打ち切る上限（実測: 神戸R8 24MB・山口R7 5.3MB とも同値） */
+const WAYBACK_TRUNCATE_BYTES = 5 * 1024 * 1024;
+
+interface VerifyResult {
+  match: boolean;
+  /** Wayback 側が切り詰めている（＝発行元の差し替えではない。私たちの raw が正しい） */
+  truncated: boolean;
+}
+
 async function verifySnapshot(
   sourceId: string,
   url: string,
   timestamp: string,
-): Promise<boolean | undefined> {
+): Promise<VerifyResult | undefined> {
   const meta = readRawMeta(sourceId);
   if (!meta) return undefined;
   const filename = decodeURIComponent(new URL(url).pathname.split("/").pop() ?? "");
@@ -71,7 +80,12 @@ async function verifySnapshot(
     });
     if (!res.ok) return undefined;
     const buf = Buffer.from(await res.arrayBuffer());
-    return createHash("sha256").update(buf).digest("hex") === raw.sha256;
+    const match = createHash("sha256").update(buf).digest("hex") === raw.sha256;
+    // **ちょうど 5 MiB で、かつ raw の方が大きい** = Wayback 側の打ち切り。
+    // 「発行元が差し替えた」と意味が正反対なので、不一致をひとまとめにしない。
+    const truncated =
+      !match && buf.length === WAYBACK_TRUNCATE_BYTES && raw.bytes > WAYBACK_TRUNCATE_BYTES;
+    return { match, truncated };
   } catch {
     return undefined;
   }
@@ -137,12 +151,14 @@ for (const source of targets) {
     if (url.includes("warp.ndl.go.jp") || url.includes("web.archive.org")) continue;
     // 同じスナップショットを検証済みなら再ダウンロードしない
     const prior = ledger.find((x) => x.sourceId === source.id && x.url === url);
-    const verify = async (timestamp: string, waybackUrl: string) =>
+    const verify = async (timestamp: string, waybackUrl: string): Promise<VerifyResult | undefined> =>
       kind !== "file"
         ? undefined
         : prior?.waybackUrl === waybackUrl && prior.sha256Match !== undefined
-          ? prior.sha256Match
+          ? { match: prior.sha256Match, truncated: prior.waybackTruncated === true }
           : await verifySnapshot(source.id, url, timestamp);
+    const verdict = (v: VerifyResult | undefined) =>
+      v === undefined ? {} : { sha256Match: v.match, ...(v.truncated ? { waybackTruncated: true } : {}) };
 
     const existing = await latestSnapshot(url);
     if (existing && !force) {
@@ -151,10 +167,12 @@ for (const source of targets) {
         sourceId: source.id, url, kind,
         waybackUrl: existing.waybackUrl, waybackTimestamp: existing.timestamp,
         checkedAt: new Date().toISOString(),
-        ...(match !== undefined ? { sha256Match: match } : {}),
+        ...verdict(match),
       });
       console.log(`✓ 登録済み ${source.id} ${kind}: ${existing.waybackUrl}`);
-      if (match === false) {
+      if (match?.truncated) {
+        console.log(`  ⚠ Wayback 側が 5MiB で打ち切っている（私たちの raw が正しい）。--force で再登録しても同じ上限で切られる見込み`);
+      } else if (match?.match === false) {
         console.log(`  ⚠ コピーが raw と不一致（別版の可能性）。--force で現行版を再登録してください`);
       }
       already++;
@@ -174,10 +192,12 @@ for (const source of targets) {
         sourceId: source.id, url, kind,
         waybackUrl: snap.waybackUrl, waybackTimestamp: snap.timestamp,
         checkedAt: new Date().toISOString(),
-        ...(match !== undefined ? { sha256Match: match } : {}),
+        ...verdict(match),
       });
       console.log(`✓ 登録完了 ${source.id} ${kind}: ${snap.waybackUrl}`);
-      if (match === false) {
+      if (match?.truncated) {
+        console.log(`  ⚠ Wayback 側が 5MiB で打ち切っている（私たちの raw が正しい）`);
+      } else if (match?.match === false) {
         console.log(`  ⚠ コピーが raw と不一致（SPN 反映待ちで古い版を拾った可能性。時間を置いて再実行）`);
       }
       saved++;
