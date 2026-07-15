@@ -197,6 +197,23 @@
       "sha256Match": true
     },
     {
+      "sourceId": "kawasaki-yosansho-r6",
+      "url": "https://www.city.kawasaki.jp/230/cmsfiles/contents/0000158/158395/24bunkatuban6.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20241119102107/https://www.city.kawasaki.jp/230/cmsfiles/contents/0000158/158395/24bunkatuban6.pdf",
+      "waybackTimestamp": "20241119102107",
+      "checkedAt": "2026-07-15T10:34:07.042Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kawasaki-yosansho-r6",
+      "url": "https://www.city.kawasaki.jp/230/page/0000158395.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260121195351/https://www.city.kawasaki.jp/230/page/0000158395.html",
+      "waybackTimestamp": "20260121195351",
+      "checkedAt": "2026-07-15T10:34:32.938Z"
+    },
+    {
       "sourceId": "kawasaki-yosansho-r7",
       "url": "https://www.city.kawasaki.jp/230/cmsfiles/contents/0000173/173806/25bunkatuban6.pdf",
       "kind": "file",

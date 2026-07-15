@@ -2508,7 +2508,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和7年度 川崎市予算案について 計数資料編（一般会計歳入歳出予算 款別）",
-      "sourceUrl": "https://www.city.kawasaki.jp/230/cmsfiles/contents/0000173/173806/25bunkatuban6.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260514103709/https://www.city.kawasaki.jp/230/cmsfiles/contents/0000173/173806/25bunkatuban6.pdf",
       "originUrl": "https://www.city.kawasaki.jp/230/cmsfiles/contents/0000173/173806/25bunkatuban6.pdf",
       "sourceLocalUrl": "/sources/kawasaki-yosansho-r7/25bunkatuban6.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -2516,7 +2516,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和7年度 川崎市予算案について 計数資料編（一般会計歳入歳出予算 款別）",
           "type": "PDF",
-          "url": "https://www.city.kawasaki.jp/230/cmsfiles/contents/0000173/173806/25bunkatuban6.pdf",
+          "url": "https://web.archive.org/web/20260514103709/https://www.city.kawasaki.jp/230/cmsfiles/contents/0000173/173806/25bunkatuban6.pdf",
           "localUrl": "/sources/kawasaki-yosansho-r7/25bunkatuban6.pdf",
           "source": "www.city.kawasaki.jp",
           "thumb": "25bunkatuban6.pdf ・ sha256 e6d1dce21053b47b… ・ 2026-07-15 取得"
@@ -2792,7 +2792,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和6年度 川崎市予算案について 計数資料編（一般会計歳入歳出予算 款別）",
-      "sourceUrl": "https://www.city.kawasaki.jp/230/cmsfiles/contents/0000158/158395/24bunkatuban6.pdf",
+      "sourceUrl": "https://web.archive.org/web/20241119102107/https://www.city.kawasaki.jp/230/cmsfiles/contents/0000158/158395/24bunkatuban6.pdf",
       "originUrl": "https://www.city.kawasaki.jp/230/cmsfiles/contents/0000158/158395/24bunkatuban6.pdf",
       "sourceLocalUrl": "/sources/kawasaki-yosansho-r6/24bunkatuban6.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -2800,7 +2800,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和6年度 川崎市予算案について 計数資料編（一般会計歳入歳出予算 款別）",
           "type": "PDF",
-          "url": "https://www.city.kawasaki.jp/230/cmsfiles/contents/0000158/158395/24bunkatuban6.pdf",
+          "url": "https://web.archive.org/web/20241119102107/https://www.city.kawasaki.jp/230/cmsfiles/contents/0000158/158395/24bunkatuban6.pdf",
           "localUrl": "/sources/kawasaki-yosansho-r6/24bunkatuban6.pdf",
           "source": "www.city.kawasaki.jp",
           "thumb": "24bunkatuban6.pdf ・ sha256 f30526260b1e9f2f… ・ 2026-07-15 取得"
