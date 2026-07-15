@@ -2253,6 +2253,99 @@ export const SOURCES: SourceEntry[] = [
       kanNamePrefixStrip: "歳入出",
     },
   },
+  {
+    // 静岡市（団体コード 221007・人口67万）。予算事項別明細書（一般会計・280p・4.6MB）。
+    // **左右2側が同一ページ（横並び）**＝第6の型。総括 物理 p.5 に歳入（左）と歳出（右）が並ぶ。
+    // `-layout` は2表を1行に融合するので、**歳入だけ偶然正しく出て歳出が1件も取れない**
+    // （＝throw する。静かには壊れない）。→ revenueCropX / expenditureCropX でページを横に切る。
+    // **切り出しは pdftotext 自身の -x/-W に任せる**（座標を自前で組み直さない）。
+    // A4 横（842pt）で歳入の右端が約400pt・歳出の左端が約425pt＝**ガター24〜26pt**。閾値 412 が安全。
+    // **印字 = 物理（オフセット0）**。歳入24款 / 歳出14款（**総務省の目的別と一致**・8例目）。
+    //
+    // ⚠ **浜松市は 221309**。静岡市が 221007 で、**かつて浜松を 221007 で登録して1人あたりを
+    //    16.5%狂わせた**（§9h）。derive にコードと名前の突合ゲートを入れてある。
+    //
+    // 罠:
+    //   - 歳出の財源内訳ヘッダ（`一般財源` / `国庫支出金 県支出金 市債 その他`）が款名を汚す
+    //     （神戸 §8h・浜松 §8o と同型）→ **歳出側だけ**に語彙を足す。
+    //     `国庫支出金`・`県支出金`・`市債` は**歳入の款17/18/24 の実名**なので共通語彙に足すと歳入が消える。
+    //   - 中央寄せ3行折返しが歳出に2件（款6 農林水産業費・款11 災害復旧費）＝既存の awaitTail で復元。
+    //   - **皆増・皆減は無い**（0 が明示的に印字される）。象徴計上・廃止款・三点リーダも無し。
+    //   - 款12「国有提供施設等所在市町村助成交付金」は**静岡には存在しない**（折返しの心配が無い）。
+    // ⚠ **R5 は別型**（縦向き・歳入 p.8 / 歳出 p.9 の従来型）だが、**△ が text layer から丸ごと欠落する**
+    //    （版面には印字されているのに pdftotext が返さない）。本年度・前年度は正なので我々の用途では
+    //    無害だが、**比較列を使うと全減少が符号反転して「もっともらしく」通る**。
+    //    さらに款11 が「上段折返し＋款番号単独行」のハイブリッド。**未収録**。
+    // ⚠ **R4 はスキャン**（Type3・uni=no・150dpi JPEG）。OCR されていないので空で落ちる（安全側）。R3 以前は非掲載。
+    // ⚠ **URL に規則性なし**（ディレクトリ番号もファイル名も毎年別）。年度ページも s012583/s012576/s012571 と不規則。
+    id: "shizuoka-yosansho-r8",
+    title: "令和8年度 静岡市予算事項別明細書（一般会計・総括・款別歳入歳出）",
+    publisher: "静岡市",
+    url: null,
+    urls: ["https://www.city.shizuoka.lg.jp/documents/56762/06_r8jikoubetumeisaisyo_ippankaikei.pdf"],
+    landingPage: "https://www.city.shizuoka.lg.jp/s3627/s012583.html",
+    kind: "pdf",
+    fiscalYear: "R8",
+    scope: "静岡市（一般会計・団体コード221007）",
+    license:
+      "「静岡市ホームページ」に掲載されている文章、写真、イラスト、画像等の著作権は、静岡市またはコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ホームページに記載されている課等へお問い合わせください。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 5,
+      expenditurePage: 5,
+      revenueCropX: { from: 0, to: 412 },
+      expenditureCropX: { from: 412, to: 842 },
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+      expenditureHeaderExtra: "一般財源|特定財源|財源内訳|国庫支出金|県支出金|市債|その他",
+    },
+  },
+  {
+    id: "shizuoka-yosansho-r7",
+    title: "令和7年度 静岡市予算事項別明細書（一般会計・総括・款別歳入歳出）",
+    publisher: "静岡市",
+    url: null,
+    urls: ["https://www.city.shizuoka.lg.jp/documents/53981/01jikoubetumeisaisyoippannkaikei.pdf"],
+    landingPage: "https://www.city.shizuoka.lg.jp/s3627/s012576.html",
+    kind: "pdf",
+    fiscalYear: "R7",
+    scope: "静岡市（一般会計・団体コード221007）",
+    license:
+      "「静岡市ホームページ」に掲載されている文章、写真、イラスト、画像等の著作権は、静岡市またはコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ホームページに記載されている課等へお問い合わせください。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 5,
+      expenditurePage: 5,
+      revenueCropX: { from: 0, to: 412 },
+      expenditureCropX: { from: 412, to: 842 },
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+      expenditureHeaderExtra: "一般財源|特定財源|財源内訳|国庫支出金|県支出金|市債|その他",
+    },
+  },
+  {
+    id: "shizuoka-yosansho-r6",
+    title: "令和6年度 静岡市予算事項別明細書（一般会計・総括・款別歳入歳出）",
+    publisher: "静岡市",
+    url: null,
+    urls: ["https://www.city.shizuoka.lg.jp/documents/10691/r6ippannkaikeiyosannsetsumeisyo.pdf"],
+    landingPage: "https://www.city.shizuoka.lg.jp/s3627/s012571.html",
+    kind: "pdf",
+    fiscalYear: "R6",
+    scope: "静岡市（一般会計・団体コード221007）",
+    license:
+      "「静岡市ホームページ」に掲載されている文章、写真、イラスト、画像等の著作権は、静岡市またはコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ホームページに記載されている課等へお問い合わせください。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 5,
+      expenditurePage: 5,
+      revenueCropX: { from: 0, to: 412 },
+      expenditureCropX: { from: 412, to: 842 },
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+      expenditureHeaderExtra: "一般財源|特定財源|財源内訳|国庫支出金|県支出金|市債|その他",
+    },
+  },
   // ---- 政令市の過年度（2026-07-15）。ページ位置は年度で動くので必ず物理ページを実確認する。
   //      年度 URL の規則も破れる（福岡 R3/R2 の命名・川崎の分冊番号）。docs §8b 参照 ----
   {

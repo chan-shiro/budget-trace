@@ -2217,6 +2217,58 @@
       "checkedAt": "2026-07-15T17:32:05.253Z"
     },
     {
+      "sourceId": "shizuoka-yosansho-r6",
+      "url": "https://www.city.shizuoka.lg.jp/documents/10691/r6ippannkaikeiyosannsetsumeisyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20241209071134/https://www.city.shizuoka.lg.jp/documents/10691/r6ippannkaikeiyosannsetsumeisyo.pdf",
+      "waybackTimestamp": "20241209071134",
+      "checkedAt": "2026-07-15T20:19:52.063Z",
+      "sha256Match": false,
+      "waybackTruncated": true
+    },
+    {
+      "sourceId": "shizuoka-yosansho-r6",
+      "url": "https://www.city.shizuoka.lg.jp/s3627/s012571.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251113165056/https://www.city.shizuoka.lg.jp/s3627/s012571.html",
+      "waybackTimestamp": "20251113165056",
+      "checkedAt": "2026-07-15T20:19:56.316Z"
+    },
+    {
+      "sourceId": "shizuoka-yosansho-r7",
+      "url": "https://www.city.shizuoka.lg.jp/documents/53981/01jikoubetumeisaisyoippannkaikei.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20251206063813/https://www.city.shizuoka.lg.jp/documents/53981/01jikoubetumeisaisyoippannkaikei.pdf",
+      "waybackTimestamp": "20251206063813",
+      "checkedAt": "2026-07-15T20:19:29.147Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "shizuoka-yosansho-r7",
+      "url": "https://www.city.shizuoka.lg.jp/s3627/s012576.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260308130506/https://www.city.shizuoka.lg.jp/s3627/s012576.html",
+      "waybackTimestamp": "20260308130506",
+      "checkedAt": "2026-07-15T20:19:34.522Z"
+    },
+    {
+      "sourceId": "shizuoka-yosansho-r8",
+      "url": "https://www.city.shizuoka.lg.jp/documents/56762/06_r8jikoubetumeisaisyo_ippankaikei.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260715201844/https://www.city.shizuoka.lg.jp/documents/56762/06_r8jikoubetumeisaisyo_ippankaikei.pdf",
+      "waybackTimestamp": "20260715201844",
+      "checkedAt": "2026-07-15T20:19:09.609Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "shizuoka-yosansho-r8",
+      "url": "https://www.city.shizuoka.lg.jp/s3627/s012583.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260305102429/https://www.city.shizuoka.lg.jp/s3627/s012583.html",
+      "waybackTimestamp": "20260305102429",
+      "checkedAt": "2026-07-15T20:19:18.225Z"
+    },
+    {
       "sourceId": "soumu-shichoson-kessan-r2",
       "url": "https://www.soumu.go.jp/iken/zaisei/r02_shichouson.html",
       "kind": "landing",

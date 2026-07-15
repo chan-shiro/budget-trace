@@ -70,6 +70,24 @@ interface Options {
   revenueSpread?: { namePage: number; amountPage: number };
   expenditureSpread?: { namePage: number; amountPage: number };
   /**
+   * **左右2側が同一ページ（横並び）**（2026-07-16・静岡 R8 で発見）。ページの**横方向を pt で切り出す**。
+   * `revenuePage` と `expenditurePage` に**同じページ番号**を入れ、側ごとに範囲を与える。
+   * ```
+   * １ 市 税  148,938,000  145,700,000  3,238,000  │  １ 議 会 費  1,021,222  1,026,482  △5,260
+   * ```
+   * 既存の3つとも別方向:
+   *   - `revenuePages`  複数ページを**縦に**連結（横浜・神戸・北九州）
+   *   - `samePage`      **1ページに2側が縦積み**（南アルプス・岡山）
+   *   - `revenueSpread` **2ページを行順で1:1**（新潟）
+   * 対応しないと `-layout` が2表を1行に融合し、**歳入だけ偶然正しく出て歳出が1件も取れない**
+   * （＝「款行が1件も抽出できませんでした」で throw する。静かには壊れない）。
+   *
+   * **切り出しは pdftotext 自身の -x/-W に任せる**（座標を自前で組み直さない）。
+   * 静岡は A4 横（842pt）で、歳入の右端が約400pt・歳出の左端が約425pt＝**ガター幅24〜26pt**。
+   */
+  revenueCropX?: CropX;
+  expenditureCropX?: CropX;
+  /**
    * **款と項が同一表に混在する様式**（大阪 §8e・相模原 §8p）で、**款行の字下げの上限**。
    * 指定するとこれより深く字下げされた行は款のパースから外れる（＝項・目の行を款と誤認しない）。
    *
@@ -172,11 +190,23 @@ function toAmount(token: string): number {
   return neg ? -n : n;
 }
 
-function pdfPageText(filePath: string, page: number): string {
+/** ページの横方向の切り出し（Options.revenueCropX 参照）。pt 単位・PDF 座標系 */
+interface CropX {
+  from: number;
+  to: number;
+}
+
+function pdfPageText(filePath: string, page: number, crop?: CropX): string {
   try {
     return execFileSync(
       "pdftotext",
-      ["-f", String(page), "-l", String(page), "-layout", filePath, "-"],
+      [
+        "-f", String(page), "-l", String(page), "-layout",
+        // 横並び2側の切り出しは **pdftotext 自身の -x/-W** に任せる（座標計算を自前でやらない）。
+        // -H は用紙高より十分大きい値でよい（縦は切らない）。
+        ...(crop ? ["-x", String(crop.from), "-y", "0", "-W", String(crop.to - crop.from), "-H", "2000"] : []),
+        filePath, "-",
+      ],
       { encoding: "utf8" },
     );
   } catch (e: unknown) {
@@ -224,9 +254,10 @@ function parseKanPage(
   );
   const headerRe = extraHeader ? new RegExp(`${KAN_HEADER_RE.source}|${extraHeader}`) : KAN_HEADER_RE;
   const spread = side === "revenue" ? opts.revenueSpread : opts.expenditureSpread;
+  const cropX = side === "revenue" ? opts.revenueCropX : opts.expenditureCropX;
   let text = spread
     ? pdfPageText(filePath, spread.namePage) + "\n" + pdfPageText(filePath, spread.amountPage)
-    : pages.map((p) => pdfPageText(filePath, p)).join("\n");
+    : pages.map((p) => pdfPageText(filePath, p, cropX)).join("\n");
   const heading =
     side === "revenue"
       ? opts.revenueHeading ?? "歳入予算款別一覧"
@@ -245,8 +276,8 @@ function parseKanPage(
   // 以降は通常の1ページ表と同じ経路で読む（皆減・折返し・ヘッダ除外・合計検出をそのまま使えるため）。
   if (spread) {
     const [nameText, amountText] = [
-      pdfPageText(filePath, spread.namePage),
-      pdfPageText(filePath, spread.amountPage),
+      pdfPageText(filePath, spread.namePage, cropX),
+      pdfPageText(filePath, spread.amountPage, cropX),
     ];
     // 款名ページ: 見出し（（歳入）等）より後ろの「款番号で始まる行」＋合計ラベル行だけを採る。
     // 見出しより前を捨てるのは `１ 総 括` を款1 と取り違えないため（全角1が半角化される）。
@@ -324,6 +355,10 @@ function parseKanPage(
   // 名前欄が非空の款（＝行内で名前が完結）は下段待ちにしないので、上段折返し
   // （"国有提供施設等所在" + "4 市町村助成交付金 3,000"）の既存挙動は変わらない。
   let openLine: BudgetLineFact | null = null;
+  // 「金額はあるが款番号が無く、どの款にも結び付かない行」＝孤児。直後に款番号の単独行が来たら
+  // その款の上段だったと分かる（Options 参照なしの構造判定。静岡 R8 の第5の折返し型）
+  let orphan: { namePart: string; ints: string[]; raw: string } | null = null;
+  let orphanLi = -1;
   const emit = (kanNo: number | null, name: string, ints: string[], raw: string, awaitTail = false) => {
     if (!name) return;
     if (ints.length < 2) {
@@ -425,6 +460,19 @@ function parseKanPage(
     // 款番号の単独行（折返し款の中間行）。○◎●の付番マーカーを許容
     const bare = compact.match(/^[○◎●]*(\d+)$/);
     if (bare) {
+      // **金額が款番号より前（上段）に来る第5の折返し型**（2026-07-16・静岡 R8）:
+      //   `     農    林     5,152,466   4,616,851   535,615 …`  ← 上段に款名前半＋金額
+      //   `６`                                                    ← 款番号が単独行
+      //   `     水 産 業費`                                        ← 下段に款名後半
+      // 既存の pendNo は「款番号 → 金額行」の順（甲府 R2/R3）を前提にしており、この順では
+      // **上段が孤児として黙って捨てられ、款が丸ごと落ちる**（静岡 R8 は款6・款11 が消えて
+      // Σ が 10,976,396 千円不足し、さらに下段「復旧費」が次の款へ漏れて「復旧費公債費」になった）。
+      // Σ ゲートが止めるので静かには壊れないが、款名の汚染は Σ を素通りする。
+      if (orphan && orphanLi === li - 1) {
+        emit(Number(bare[1]), orphan.namePart, orphan.ints, orphan.raw, true);
+        orphan = null;
+        continue;
+      }
       if (pendNo == null) pendNo = Number(bare[1]);
       continue;
     }
@@ -499,6 +547,11 @@ function parseKanPage(
     } else if (pendNo != null && ints.length >= 2) {
       // 折返し款の金額行（行頭に款番号がない）
       emit(pendNo, pendName + namePart, ints, raw);
+    } else if (ints.length >= 2 && hasCJK(namePart)) {
+      // 款番号が無く、どの款にも結び付かない金額行。**直後に款番号の単独行が来れば**
+      // その款の上段（bare の分岐で拾う）。来なければ従来どおり無視される。
+      orphan = { namePart: pendName + namePart, ints, raw };
+      orphanLi = li;
     }
     // 上記以外（ページ番号など）は無視
   }
