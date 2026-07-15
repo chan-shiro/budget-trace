@@ -8,6 +8,17 @@ import HtmlViewer from "./HtmlViewer";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+// 事業報告カード内の年度ストリップ（コスト経年・各指標）は同じ列割りで縦に揃えている。
+// 狭い画面では各ストリップが個別に横スクロールして列がズレるので、位置を揃える。
+// React の onScroll はバブルしない（17+）ので、親ではなく各ストリップに付けること。
+// scrollLeft は React の管理外なので直接代入してよい。値が一致したら止まるので往復しない。
+const syncYearStrips = (el: HTMLElement) => {
+  el.closest("[data-reportcard]")?.querySelectorAll("[data-yearstrip]").forEach((o) => {
+    const other = o as HTMLElement;
+    if (other !== el && other.scrollLeft !== el.scrollLeft) other.scrollLeft = el.scrollLeft;
+  });
+};
+
 export default function BudgetTraceView({ v }: { v: any }) {
   // 主な事業1行（一覧・施策グループ共用）。説明があれば事業名の下に淡色で1行
   const projRow = (p: any, i: number) => (
@@ -510,63 +521,114 @@ export default function BudgetTraceView({ v }: { v: any }) {
                 </section>
                 )}
 
-                {/* 事業報告（成果）＝事務事業評価 詳細票。full 専用（甲府）。予算→執行→成果を1事業で通す。 */}
-                {v.reports && v.reports.some((y: any) => y.items.length > 0) && (
+                {/* 事業報告（成果）＝事務事業評価 詳細票。full 専用（甲府）。予算→執行→成果を1事業で通す。
+                    ヘッダの年度ドロップダウンに連動して1年度分だけ出し、事務事業はタブで切り替える。 */}
+                {v.report && (
                 <section style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:22px 24px; margin:26px 0;")}>
                   <div style={S("display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:6px;")}>
                     <h2 style={S("margin:0; font-size:16px; font-weight:700;")}>事業報告（成果）</h2>
                     <span style={S("font-size:12px; color:#5C6B77;")}>事務事業評価 詳細票 — 予算→執行→成果を1事業で追える</span>
                   </div>
-                  <p style={S("margin:0 0 16px; font-size:12px; color:#8494A0; line-height:1.7;")}>甲府市が詳細票を公表した事業のみ（各年数件）。事業費（決算→当初→計画）・トータルコスト（人件費込み）・成果指標の目標／実績・総合評価が載っています。全事業分は情報公開請求（未収録＝リクエスト）。</p>
-                  {v.reports.map((yr: any, yi: number) => yr.items.length > 0 && (
-                    <div key={yi} style={S("margin-bottom:18px;")}>
-                      <div style={S("display:flex; align-items:baseline; gap:10px; margin-bottom:10px; flex-wrap:wrap;")}>
-                        <h3 style={S("margin:0; font-size:13.5px; font-weight:700; color:#14181C;")}>{yr.fyLabel}評価<span style={S("font-weight:400; color:#5C6B77;")}>（対象 {yr.targetFyLabel}実績）</span></h3>
-                        <a href={yr.sourceLocalUrl} onClick={(e) => { e.preventDefault(); yr.sourceOpen(); }} style={S("font-size:11.5px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:2px 11px; text-decoration:none; cursor:pointer;")}>出典：詳細票（原本を開く）</a>
+                  <p style={S("margin:0 0 14px; font-size:12px; color:#8494A0; line-height:1.7;")}>甲府市が詳細票を公表した事業のみ（各年数件）。事業費（決算→当初→計画）・トータルコスト（人件費込み）・成果指標の目標／実績・総合評価が載っています。全事業分は情報公開請求（未収録＝リクエスト）。</p>
+
+                  <div style={S("display:flex; align-items:baseline; gap:10px; margin-bottom:10px; flex-wrap:wrap;")}>
+                    <h3 style={S("margin:0; font-size:13.5px; font-weight:700; color:#14181C;")}>{v.report.fyLabel}評価<span style={S("font-weight:400; color:#5C6B77;")}>（対象 {v.report.targetFyLabel}実績）</span></h3>
+                    <HoverBox as="button" onClick={v.report.sourceOpen} style={S("font-size:11.5px; border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; border-radius:999px; padding:2px 11px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("border-color:#1798D0; color:#1798D0;")}>出典：詳細票（原本を開く）</HoverBox>
+                  </div>
+                  {/* 選択中の予算年度に評価が無く、最新の詳細票へフォールバックしたときだけ理由を出す */}
+                  {v.report.fallbackNote && (
+                    <p style={S("margin:0 0 12px; font-size:11.5px; color:#5C6B77; background:#F4F8FB; border:1px solid #DFE7EC; border-radius:8px; padding:7px 11px; line-height:1.7;")}>{v.report.fallbackNote}</p>
+                  )}
+
+                  {/* 事務事業タブ（1事業ずつ評価・実績を通して読ませる） */}
+                  <div style={S("display:flex; gap:6px; flex-wrap:wrap; margin-bottom:14px;")}>
+                    {v.report.tabs.map((t: any, ti: number) => (
+                      <HoverBox key={ti} as="button" onClick={t.pick} style={S(`display:inline-flex; align-items:center; gap:7px; border:1px solid ${t.active ? "#14181C" : "#DFE7EC"}; background:${t.active ? "#14181C" : "#FFFFFF"}; color:${t.active ? "#F7FAFC" : "#5C6B77"}; border-radius:999px; padding:6px 14px; font-size:12.5px; font-weight:${t.active ? "700" : "500"}; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;`)} hoverStyle={t.active ? S("") : S("border-color:#1798D0; color:#1798D0;")}>
+                        {t.label}
+                        <span style={S(`font-size:10px; font-weight:700; font-family:'IBM Plex Mono',monospace; border-radius:5px; padding:0 5px; color:${t.active ? "#F7FAFC" : "#0F76A3"}; border:1px solid ${t.active ? "#5C6B77" : "#B9E0F2"};`)}>{t.grade}</span>
+                      </HoverBox>
+                    ))}
+                  </div>
+
+                  <div data-reportcard style={S("background:#FBFDFE; border:1px solid #E3EBF0; border-radius:14px; padding:18px 20px;")}>
+                    <div style={S("display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap; margin-bottom:4px;")}>
+                      <div>
+                        <div style={S("font-size:15.5px; font-weight:700; color:#14181C; line-height:1.4;")}>{v.report.item.name}</div>
+                        <div style={S("font-size:11px; color:#8494A0; margin-top:3px;")}>{v.report.item.buka}{v.report.item.kubun ? ` ・ ${v.report.item.kubun}` : ""}</div>
                       </div>
-                      <div style={S("display:grid; grid-template-columns:repeat(auto-fill, minmax(340px,1fr)); gap:12px;")}>
-                        {yr.items.map((r: any, ri: number) => (
-                          <div key={ri} style={S("background:#FBFDFE; border:1px solid #E3EBF0; border-radius:14px; padding:16px 18px;")}>
-                            <div style={S("display:flex; align-items:flex-start; justify-content:space-between; gap:10px; margin-bottom:4px;")}>
-                              <span style={S("font-size:14.5px; font-weight:700; color:#14181C; line-height:1.4;")}>{r.name}</span>
-                              <span style={S(`flex-shrink:0; font-size:11px; font-weight:700; border-radius:8px; padding:2px 9px; color:#0F76A3; border:1px solid #B9E0F2; font-family:'IBM Plex Mono',monospace;`)}>評価 {r.grade}{r.score != null ? `・${r.score}/24` : ""}</span>
+                      {/* 総合評価: 記号だけでは伝わらないので 24点満点の点数とバーを併記する */}
+                      <div style={S("flex-shrink:0; min-width:132px; border:1px solid #B9E0F2; background:#F4FAFD; border-radius:10px; padding:7px 11px;")}>
+                        <div style={S("display:flex; align-items:baseline; justify-content:space-between; gap:8px;")}>
+                          <span style={S("font-size:10px; color:#5C6B77;")}>総合評価</span>
+                          <span style={S("font-size:16px; font-weight:700; color:#0F76A3; font-family:'IBM Plex Mono',monospace; line-height:1;")}>{v.report.item.grade}</span>
+                        </div>
+                        {v.report.item.score != null && (
+                          <>
+                            <div style={S("height:5px; border-radius:999px; background:#DDEBF3; overflow:hidden; margin:6px 0 3px;")}>
+                              <span data-anim="bar" style={S(`display:block; height:100%; width:${v.report.item.scorePct}%; background:#1798D0;`)}></span>
                             </div>
-                            <div style={S("font-size:11px; color:#8494A0; margin-bottom:12px;")}>{r.buka}</div>
-
-                            {/* コスト経年（上=事業費／下=トータルコスト・人件費込み）。表示中の予算年度の列を強調 */}
-                            <div style={S("display:flex; justify-content:space-between; font-size:9.5px; color:#8494A0; margin-bottom:3px;")}>
-                              <span>事業費 <span style={S("color:#B0BCC6;")}>／ トータル（人件費込）</span></span>
-                              <span>{v.unitLabel}</span>
-                            </div>
-                            <div style={S("display:flex; gap:4px; margin-bottom:12px; overflow-x:auto;")}>
-                              {r.cost.map((c: any, ci: number) => (
-                                <div key={ci} style={S(`flex:1 0 auto; min-width:64px; text-align:center; padding:6px 4px; border-radius:8px; background:${c.kindLabel === "決算" ? "#EEF5F9" : c.kindLabel === "当初" ? "#FFF6EC" : "#F4F6F8"}; border:${c.current ? "1.5px solid #1798D0" : "1.5px solid transparent"};`)}>
-                                  <div style={S(`font-size:9.5px; color:${c.current ? "#0F76A3" : "#8494A0"}; font-weight:${c.current ? "700" : "400"};`)}>{c.fy}・{c.kindLabel}</div>
-                                  <div style={S("font-size:12px; font-weight:600; color:#14181C; font-family:'IBM Plex Mono',monospace;")}>{c.jigyohiFmt}</div>
-                                  <div style={S("font-size:10px; color:#8494A0; font-family:'IBM Plex Mono',monospace;")}>{c.totalFmt}</div>
-                                </div>
-                              ))}
-                            </div>
-
-                            {/* 成果指標: 目標→実績 */}
-                            {r.indicators.map((ind: any, ii: number) => (
-                              <div key={ii} style={S("margin-bottom:9px;")}>
-                                <div style={S("display:flex; justify-content:space-between; gap:8px; font-size:11.5px; margin-bottom:3px;")}>
-                                  <span style={S("color:#5C6B77;")}><span style={S(`font-size:9.5px; font-weight:700; border-radius:5px; padding:0 5px; margin-right:5px; color:${ind.category === "成果指標" ? "#0F76A3" : "#5C6B77"}; border:1px solid ${ind.category === "成果指標" ? "#B9E0F2" : "#DFE7EC"};`)}>{ind.category === "成果指標" ? "成果" : "活動"}</span>{ind.name}</span>
-                                </div>
-                                <div style={S("display:flex; align-items:center; gap:8px;")}>
-                                  <div style={S("flex:1; height:8px; border-radius:999px; background:#E3EBF0; overflow:hidden;")}>
-                                    <span data-anim="bar" style={S(`display:block; height:100%; width:${ind.barW}%; background:${ind.over ? "#1798D0" : "#84A0B0"};`)}></span>
-                                  </div>
-                                  <span style={S("font-size:11.5px; font-family:'IBM Plex Mono',monospace; color:#14181C; white-space:nowrap;")}>{ind.actualFmt} <span style={S("color:#8494A0;")}>/ 目標{ind.targetFmt}</span>{ind.pct != null && <span style={S(`margin-left:5px; font-weight:700; color:${ind.over ? "#0F76A3" : "#5C6B77"};`)}>{ind.pct}%</span>}</span>
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        ))}
+                            <div style={S("font-size:10px; color:#5C6B77; font-family:'IBM Plex Mono',monospace; text-align:right;")}>{v.report.item.score} / 24点</div>
+                          </>
+                        )}
                       </div>
                     </div>
-                  ))}
+
+                    {/* 事業実施結果（市がその年度に何をしたかの記述） */}
+                    {v.report.item.impl && (
+                      <div style={S("margin:12px 0 14px;")}>
+                        <div style={S("font-size:10px; font-family:'IBM Plex Mono',monospace; letter-spacing:0.1em; color:#8494A0; margin-bottom:4px;")}>事業実施結果（{v.report.targetFyLabel}）</div>
+                        <p style={S("margin:0; font-size:12.5px; color:#14181C; line-height:1.9;")}>{v.report.item.impl}</p>
+                      </div>
+                    )}
+
+                    {/* コスト経年（上=事業費／下=トータルコスト・人件費込み）。表示中の予算年度の列を強調 */}
+                    <div style={S("display:flex; justify-content:space-between; font-size:9.5px; color:#8494A0; margin-bottom:3px;")}>
+                      <span>事業費 <span style={S("color:#B0BCC6;")}>／ トータル（人件費込）</span></span>
+                      <span>{v.unitLabel}</span>
+                    </div>
+                    <div data-yearstrip onScroll={(e) => syncYearStrips(e.currentTarget)} style={S("display:flex; gap:4px; margin-bottom:16px; overflow-x:auto;")}>
+                      {v.report.item.cost.map((c: any, ci: number) => (
+                        <div key={ci} style={S(`flex:1 0 64px; text-align:center; padding:6px 4px; border-radius:8px; background:${c.kindLabel === "決算" ? "#EEF5F9" : c.kindLabel === "当初" ? "#FFF6EC" : "#F4F6F8"}; border:${c.current ? "1.5px solid #1798D0" : "1.5px solid transparent"};`)}>
+                          <div style={S(`font-size:9.5px; color:${c.current ? "#0F76A3" : "#8494A0"}; font-weight:${c.current ? "700" : "400"};`)}>{c.fy}・{c.kindLabel}</div>
+                          <div style={S("font-size:12px; font-weight:600; color:#14181C; font-family:'IBM Plex Mono',monospace;")}>{c.jigyohiFmt}</div>
+                          <div style={S("font-size:10px; color:#8494A0; font-family:'IBM Plex Mono',monospace;")}>{c.totalFmt}</div>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* 指標: コスト経年と同じ列割りで年度ごとの 実績／目標 を出す（どの年に届いたかが読める） */}
+                    <div style={S("font-size:10px; font-family:'IBM Plex Mono',monospace; letter-spacing:0.1em; color:#8494A0; margin-bottom:6px;")}>指標の目標と実績</div>
+                    {v.report.item.indicators.map((ind: any, ii: number) => (
+                      <div key={ii} style={S("margin-bottom:12px;")}>
+                        <div style={S("font-size:11.5px; color:#5C6B77; margin-bottom:4px; line-height:1.6;")}>
+                          <span style={S(`font-size:9.5px; font-weight:700; border-radius:5px; padding:0 5px; margin-right:5px; color:${ind.category === "成果指標" ? "#0F76A3" : "#5C6B77"}; border:1px solid ${ind.category === "成果指標" ? "#B9E0F2" : "#DFE7EC"};`)}>{ind.category === "成果指標" ? "成果" : "活動"}</span>{ind.name}
+                        </div>
+                        <div data-yearstrip onScroll={(e) => syncYearStrips(e.currentTarget)} style={S("display:flex; gap:4px; overflow-x:auto;")}>
+                          {ind.years.map((y: any, yi: number) => (
+                            <div key={yi} style={S(`flex:1 0 64px; text-align:center; padding:5px 4px; border-radius:8px; background:${y.pending ? "#F7F9FA" : "#FFFFFF"}; border:${y.current ? "1.5px solid #1798D0" : "1.5px solid #EEF3F6"};`)}>
+                              <div style={S(`font-size:9.5px; color:${y.current ? "#0F76A3" : "#8494A0"}; font-weight:${y.current ? "700" : "400"};`)}>{y.fy}・{y.kindLabel}</div>
+                              <div style={S(`font-size:12.5px; font-weight:600; font-family:'IBM Plex Mono',monospace; color:${y.pending ? "#B0BCC6" : y.over ? "#0F76A3" : "#14181C"};`)}>{y.actualFmt}</div>
+                              <div style={S("height:4px; border-radius:999px; background:#EEF3F6; overflow:hidden; margin:3px 2px;")}>
+                                {!y.pending && <span data-anim="bar" style={S(`display:block; height:100%; width:${y.barW}%; background:${y.over ? "#1798D0" : "#84A0B0"};`)}></span>}
+                              </div>
+                              <div style={S("font-size:9.5px; color:#8494A0; font-family:'IBM Plex Mono',monospace;")}>目標{y.targetFmt}</div>
+                              <div style={S(`font-size:9.5px; font-weight:700; font-family:'IBM Plex Mono',monospace; color:${y.pending ? "transparent" : y.over ? "#0F76A3" : "#5C6B77"};`)}>{y.pct != null ? `${y.pct}%` : "—"}</div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                    <p style={S("margin:10px 0 0; font-size:10.5px; color:#9DACB7; line-height:1.7;")}>実績は決算年度分のみ（当初・計画の年度は目標のみ）。{v.report.item.ref}</p>
+                  </div>
+                </section>
+                )}
+
+                {/* 表示年度に触れている詳細票が1件も無い年度。黙って消さずリクエスト導線にする */}
+                {v.reportMissing && (
+                <section style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:20px 24px; margin:26px 0;")}>
+                  <h2 style={S("margin:0 0 8px; font-size:16px; font-weight:700;")}>事業報告（成果）</h2>
+                  <p style={S("margin:0 0 12px; font-size:12.5px; color:#5C6B77; line-height:1.7;")}>{v.reportMissing.note}</p>
+                  <a href={v.reportMissing.requestUrl} target="_blank" rel="noopener noreferrer" style={S("display:inline-block; font-size:12.5px; border:1px solid #1798D0; color:#0F76A3; border-radius:999px; padding:6px 16px; text-decoration:none;")}>この年度の詳細票の収録をリクエスト ↗</a>
                 </section>
                 )}
 

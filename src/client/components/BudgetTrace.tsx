@@ -33,6 +33,8 @@ interface St {
   execFy?: string;
   /** 表示中の当初予算年度（"R8" など。未指定は最新年度） */
   budgetFy?: string;
+  /** 事業報告（成果）で開いている事務事業の番号（詳細票の No。未指定は先頭） */
+  reportNo?: string;
   /** データ整備状況の検索語 */
   covQ?: string;
   /** データ整備状況で展開中の都道府県 */
@@ -123,7 +125,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     else history.replaceState(null, "", url);
     lastScreen.current = st.screen;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [st.screen, st.pref, st.muni, st.muniCode, st.budgetFy, st.drillSide, st.drillPath, st.theme, st.execFy, st.execSide, st.compSide, st.unit]);
+  }, [st.screen, st.pref, st.muni, st.muniCode, st.budgetFy, st.reportNo, st.drillSide, st.drillPath, st.theme, st.execFy, st.execSide, st.compSide, st.unit]);
 
   // --- 一次資料ドロワー ---
   // 呼び出し側は #page=N 付き URL を渡してよい（ここで分離して PDF.js ビューアへ渡す）
@@ -601,6 +603,41 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     { label: "歳入", pick: () => setSt({ execSide: "rev" }), bg: execSide === "rev" ? "#14181C" : "#FFFFFF", fg: execSide === "rev" ? "#F7FAFC" : "#5C6B77" },
   ];
 
+  // --- 事業報告（成果）＝事務事業評価 詳細票。full（甲府）のみ ---
+  // ヘッダの年度ドロップダウンに連動する。公表は各年サンプル数件なので全年度分は揃わない:
+  //   ① 同じ評価年度の詳細票があればそれ（R7予算 → R7評価）
+  //   ② 無ければ、その予算年度をコスト経年に含む最新の詳細票へフォールバック
+  //      （R8予算 → R8計画 列を持つ R7評価。R8 の評価は R8 中に行われるためまだ存在しない）
+  //   ③ どちらも無ければ未収録 → リクエスト導線
+  const reportYear = React.useMemo(() => {
+    if (!isFull) return null;
+    const withItems = KOFU_REPORT_YEARS.filter((y) => y.reports.length > 0);
+    return (
+      withItems.find((y) => y.fy === budget.fy) ??
+      // KOFU_REPORT_YEARS は新しい年度順なので、先頭一致＝その年度に触れている最新の詳細票
+      withItems.find((y) => y.reports.some((r) => r.cost.some((c) => c.fy === budget.fy))) ??
+      null
+    );
+  }, [isFull, budget.fy]);
+  // タブ（事務事業）の選択。年度をまたぐと No が変わるので、無ければ先頭へ落とす
+  const reportItem =
+    reportYear?.reports.find((r) => r.no === s.reportNo) ?? reportYear?.reports[0] ?? null;
+  // フォールバック時（②）の注記。ズレの理由は年度の前後で別物なので言い分ける:
+  //   予算年度 > 評価年度 → その年度の評価はまだ行われていない（評価は年度終了後）
+  //   予算年度 < 評価年度 → 評価自体はあったが詳細票が未収録（公表は各年サンプル数件）
+  // どちらも「表示中の詳細票がその年度をどの列で載せているか」を添えて対応を明示する。
+  const reportFallbackNote = (() => {
+    if (!reportYear || reportYear.fy === budget.fy) return "";
+    const fyNum = (fy: string) => Number(fy.replace(/^R/, "")) || 0;
+    const shortFy = budget.fyLabel.replace(" 当初予算", "");
+    const col = reportYear.reports[0]?.cost.find((c) => c.fy === budget.fy)?.kind ?? null;
+    const shown = `${reportYear.fyLabel}評価（対象 ${reportYear.targetFyLabel}実績）`;
+    const where = col ? `${shortFy}を「${col}」の列に載せている` : "";
+    return fyNum(budget.fy) > fyNum(reportYear.fy)
+      ? `${shortFy}の評価はまだ行われていません（事務事業評価は年度終了後）。${where}最新の${shown}を表示しています。`
+      : `${shortFy}の詳細票は未収録です（甲府市が詳細票を公表するのは各年サンプル数件のみ）。${where}${shown}を表示しています。`;
+  })();
+
   // --- 決算の推移（決算状況調 R2〜R6・実データ） ---
   const trendMax = Math.max(...KOFU_TREND.map((r) => r.expenditureTotalOku));
   const trendBars = KOFU_TREND.map((r, i) => ({
@@ -828,55 +865,85 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
         }
       : null,
     // 事業報告（成果）＝事務事業評価 詳細票。full（甲府）のみ。予算→執行→成果を1事業で通す。
-    // 公表は各年サンプル数件なので、予算年度連動ではなく公表済みの詳細票をそのまま並べる。
-    reports: isFull
-      ? KOFU_REPORT_YEARS.map((y) => ({
-          fy: y.fy,
-          fyLabel: y.fyLabel,
-          targetFyLabel: y.targetFyLabel,
-          sourceOpen: () =>
-            openViewer({
-              url: y.sourceLocalUrl, title: y.sourceTitle, sub: `${y.fyLabel}（対象 ${y.targetFyLabel}）`,
-              originUrl: y.originUrl, archiveUrl: y.sourceUrl,
-            }),
-          items: y.reports.map((r) => ({
-            no: r.no,
-            name: r.name,
-            buka: r.buka,
-            kubun: r.kubun,
-            grade: r.grade,
-            score: r.score,
-            impl: r.implementation,
-            // 事業費・トータルコスト（千円）は総額/1人あたりトグルに追従（÷10万で億へ）。
-            // 表示中の予算年度に一致する列を強調し、予算↔成果の年度対応を分かるようにする。
-            cost: r.cost.map((c) => ({
-              fy: c.fy,
-              kindLabel: c.kind,
-              current: c.fy === budget.fy,
-              jigyohiFmt: c.jigyohi != null ? fmtV(c.jigyohi / 100000) : "—",
-              totalFmt: c.totalCost != null ? fmtV(c.totalCost / 100000) : "—",
+    // 表示年度に連動して1年度分だけ出し、事務事業はタブで切り替える（全事業を並べると
+    // 1事業あたりの評価・実績が読めないため）。年度の解決は reportYear を参照。
+    report:
+      reportYear && reportItem
+        ? {
+            fyLabel: reportYear.fyLabel,
+            targetFyLabel: reportYear.targetFyLabel,
+            // 予算年度と評価年度がズレたとき（②のフォールバック）だけ理由を明示する
+            fallbackNote: reportFallbackNote,
+            sourceOpen: () =>
+              openViewer({
+                url: reportYear.sourceLocalUrl, title: reportYear.sourceTitle,
+                sub: `${reportYear.fyLabel}（対象 ${reportYear.targetFyLabel}）`,
+                originUrl: reportYear.originUrl, archiveUrl: reportYear.sourceUrl,
+              }),
+            tabs: reportYear.reports.map((r) => ({
+              label: r.name,
+              grade: r.grade,
+              active: r.no === reportItem.no,
+              pick: () => setSt({ reportNo: r.no }),
             })),
-            indicators: r.indicators.map((ind) => {
-              // 実績値の末尾（最新の対象年度実績）と、それに対応する目標値を並べる
-              const actualVals = ind.actuals.filter((v) => v != null) as number[];
-              const latestActual = actualVals.length ? actualVals[actualVals.length - 1]! : null;
-              const target = ind.targets[actualVals.length - 1] ?? null;
-              const pct = target != null && target !== 0 && latestActual != null
-                ? Math.min(150, Math.round((latestActual / target) * 100))
-                : null;
-              return {
+            item: {
+              no: reportItem.no,
+              name: reportItem.name,
+              buka: reportItem.buka,
+              kubun: reportItem.kubun,
+              grade: reportItem.grade,
+              score: reportItem.score,
+              scorePct: reportItem.score != null ? Math.round((reportItem.score / 24) * 100) : null,
+              impl: reportItem.implementation,
+              ref: reportItem.ref,
+              // 事業費・トータルコスト（千円）は総額/1人あたりトグルに追従（÷10万で億へ）。
+              // 表示中の予算年度に一致する列を強調し、予算↔成果の年度対応を分かるようにする。
+              cost: reportItem.cost.map((c) => ({
+                fy: c.fy,
+                kindLabel: c.kind,
+                current: c.fy === budget.fy,
+                jigyohiFmt: c.jigyohi != null ? fmtV(c.jigyohi / 100000) : "—",
+                totalFmt: c.totalCost != null ? fmtV(c.totalCost / 100000) : "—",
+              })),
+              // 指標は targets/actuals がコスト経年（cost）と 1:1 で並ぶ。年度ごとに
+              // 目標→実績を出して、どの年に届いた／届かなかったかを読めるようにする。
+              indicators: reportItem.indicators.map((ind) => ({
                 category: ind.category,
                 name: ind.name,
-                targetFmt: target != null ? target.toLocaleString() : "—",
-                actualFmt: latestActual != null ? latestActual.toLocaleString() : "—",
-                pct,
-                barW: pct != null ? Math.min(100, pct) : 0,
-                over: pct != null && pct >= 100,
-              };
-            }),
-          })),
-        }))
-      : null,
+                years: reportItem.cost.map((c, i) => {
+                  const target = ind.targets[i] ?? null;
+                  const actual = ind.actuals[i] ?? null;
+                  const pct = target != null && target !== 0 && actual != null
+                    ? Math.round((actual / target) * 100)
+                    : null;
+                  return {
+                    fy: c.fy,
+                    kindLabel: c.kind,
+                    current: c.fy === budget.fy,
+                    targetFmt: target != null ? target.toLocaleString() : "—",
+                    actualFmt: actual != null ? actual.toLocaleString() : "—",
+                    // 実績が未到来の年度（当初・計画）は目標だけ。バーは出さない
+                    pending: actual == null,
+                    pct,
+                    barW: pct != null ? Math.min(100, pct) : 0,
+                    over: pct != null && pct >= 100,
+                  };
+                }),
+              })),
+            },
+          }
+        : null,
+    // 詳細票がまったく無い年度（R2 など）。黙って消さずリクエスト導線に変える
+    reportMissing:
+      isFull && !reportYear
+        ? {
+            note: `${budget.fyLabel.replace(" 当初予算", "")}の事業費・成果を載せた事務事業評価 詳細票は未収録です。甲府市が詳細票を公表するのは各年サンプル数件のみで、収録済みの詳細票（${KOFU_REPORT_YEARS.filter((y) => y.reports.length > 0).map((y) => `${y.fyLabel}評価`).join("・")}）はいずれもこの年度に触れていません。`,
+            requestUrl: D.buildRequestUrl(
+              "事務事業評価 詳細票（事業報告・成果）",
+              `年度リクエスト: 甲府市 ${budget.fyLabel} の事業について、事業費の決算額・成果指標の目標／実績・総合評価（詳細票）を見たい`,
+            ),
+          }
+        : null,
     showEvidence,
     onPrefSelect: (name: string) => nav({ screen: "muni", pref: name }),
     mapColorMode,
@@ -953,7 +1020,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
         );
         return; // 選択状態は変えない
       }
-      setSt({ budgetFy: fy, drillPath: [], theme: null, execFy: undefined });
+      setSt({ budgetFy: fy, drillPath: [], theme: null, execFy: undefined, reportNo: undefined });
     },
     navTabs,
     dashTitle: isDecision ? `${data.name}の決算` : `${data.name}の予算`,
