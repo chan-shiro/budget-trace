@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 27,
+  "budgetCount": 28,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 128,
-  "fileCount": 253,
-  "archivedCount": 119,
+  "sourceCount": 130,
+  "fileCount": 255,
+  "archivedCount": 121,
   "licenseOpen": 13,
-  "licensePermission": 58,
+  "licensePermission": 60,
   "licenseUnverified": 57,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -91,6 +91,12 @@ export const ROADMAP_PROGRESS = {
       "code": "121002",
       "years": 2,
       "range": "R4〜R8（2年度）"
+    },
+    {
+      "name": "新潟市",
+      "code": "151009",
+      "years": 2,
+      "range": "R7〜R8（2年度）"
     }
   ],
   "kofuDetail": {

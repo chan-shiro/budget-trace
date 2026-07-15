@@ -1739,6 +1739,76 @@ export const SOURCES: SourceEntry[] = [
       expenditureHeaderExtra: "^款別$",
     },
   },
+  {
+    // 新潟市（団体コード 151009・人口77万）。予算説明書（一般会計・233p・1.5MB）。
+    // **横浜型**（事項別明細書の冒頭に「1 総括」）だが、**歳入が見開き2ページ型**（docs §9e）:
+    //   物理 p.8 =「款番号＋款名」だけ / 物理 p.9 =「本年度・前年度・比較」だけ
+    // revenuePages（縦連結）では組めないので revenueSpread で行順に1:1で組む。
+    // 歳出 p.10 は款名＋金額が同一行なので通常指定。**物理 = 印字 +2**。
+    // ⚠ **p.11 は歳出の財源内訳**（款列なし）。expenditurePages に含めない。
+    //
+    // **歳出14款が総務省の目的別と一致**（さいたま §8f・千葉 §8k・堺 §8m に次ぐ4例目）。
+    // **折返しは1件も無い**（款12「国有提供施設等所在市町村助成交付金」すら1行に収まる）。
+    // 廃止款・三点リーダ・ヘッダ断片汚染もなし。
+    //
+    // 罠:
+    //   - **見出しの全角/半角が同一文書内で不統一**（歳入 `（歳入）`＝全角 / 歳出 `(歳出)`＝**半角**）
+    //   - 款名ページの2行目 `１ 総 括` は全角1 が半角化されると款1 に見える → 見出しより後ろだけを採る
+    //   - 象徴計上 款24 繰越金 `1 / 1`。**見開きの組み立てで1桁の行を取りこぼすと以降が丸ごと1つずれ、
+    //     Σ も款名も「それらしく」合ってしまう** → 件数一致の assert が唯一の網
+    //   - 款5・款24 は比較欄が空欄（差0）。先頭2列運用なので無害
+    // **R6 は収録しない** — 歳出 款11 災害復旧費の前年度欄が空欄なのに `皆増` の表記が無く、
+    // パーサが比較列を前年度と誤読して前年度Σが +5,543,080 ずれる（皆増/皆減は原典の記号に
+    // 依存する設計なので、記号が無いと救えない）。docs §8n。
+    // ⚠ **ファイル名に規則性がほぼ無い**（R8=`shinen` / R7・R6=`-ippan` / R5=`_ippan_shinnen` /
+    //    R3=`shinnensyosansyo`（誤植））。年度追加は年度インデックスの実リンクから辿る。
+    // ⚠ **R4=74MB・R2=25MB・H31=48MB はスキャン疑い**。遡るならテキスト層の判定を先にやる。
+    // **却下した代替**: 記者会見 資料3 は款名＋金額が同一行で乗るが、**款26 の名前が
+    // `市債（臨時財政対` に壊れる**（§9d の第4折返し型・重複しないので validate も素通り）。
+    // 独立検証には優秀（金額は予算説明書と完全一致することを確認済み）。
+    id: "niigata-yosansho-r8",
+    title: "令和8年度 新潟市予算説明書（一般会計・歳入歳出予算事項別明細書 総括・款別歳入歳出）",
+    publisher: "新潟市",
+    url: null,
+    urls: [
+      "https://www.city.niigata.lg.jp/shisei/zaimu/zaisei/yosankessan/yosankessanjokyo.files/R8-2yosansyo_shinen-ippan.pdf",
+    ],
+    landingPage: "https://www.city.niigata.lg.jp/shisei/zaimu/zaisei/yosankessan/yosankessanjokyo.html",
+    kind: "pdf",
+    fiscalYear: "R8",
+    scope: "新潟市（一般会計・団体コード151009）",
+    license:
+      "市公式ホームページに掲載している文書、画像等のファイルやその内容（以下「内容等」という）については、原則として新潟市に帰属します。ただし、一部の内容等の著作権は、原著作者が所有しています。市公式ホームページ内の内容等については、著作権法上認められた「私的使用のための複製」や「引用」等の場合を除き、新潟市及び内容等の提供者に無断で転載、複製、改変、販売、貸与等の利用をすることはできません。ただし、新潟市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenueSpread: { namePage: 8, amountPage: 9 },
+      revenueHeading: "（歳入）",
+      expenditurePage: 10,
+      expenditureHeading: "(歳出)",
+    },
+  },
+  {
+    id: "niigata-yosansho-r7",
+    title: "令和7年度 新潟市予算説明書（一般会計・歳入歳出予算事項別明細書 総括・款別歳入歳出）",
+    publisher: "新潟市",
+    url: null,
+    urls: [
+      "https://www.city.niigata.lg.jp/shisei/zaimu/zaisei/yosankessan/yosankessanjokyo.files/r7-2yosansyo-ippan.pdf",
+    ],
+    landingPage: "https://www.city.niigata.lg.jp/shisei/zaimu/zaisei/yosankessan/yosankessanjokyo.html",
+    kind: "pdf",
+    fiscalYear: "R7",
+    scope: "新潟市（一般会計・団体コード151009）",
+    license:
+      "市公式ホームページに掲載している文書、画像等のファイルやその内容（以下「内容等」という）については、原則として新潟市に帰属します。ただし、一部の内容等の著作権は、原著作者が所有しています。市公式ホームページ内の内容等については、著作権法上認められた「私的使用のための複製」や「引用」等の場合を除き、新潟市及び内容等の提供者に無断で転載、複製、改変、販売、貸与等の利用をすることはできません。ただし、新潟市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenueSpread: { namePage: 8, amountPage: 9 },
+      revenueHeading: "（歳入）",
+      expenditurePage: 10,
+      expenditureHeading: "(歳出)",
+    },
+  },
   // ---- 政令市の過年度（2026-07-15）。ページ位置は年度で動くので必ず物理ページを実確認する。
   //      年度 URL の規則も破れる（福岡 R3/R2 の命名・川崎の分冊番号）。docs §8b 参照 ----
   {
