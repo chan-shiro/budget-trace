@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 28,
+  "budgetCount": 29,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 130,
-  "fileCount": 255,
-  "archivedCount": 121,
+  "sourceCount": 135,
+  "fileCount": 260,
+  "archivedCount": 125,
   "licenseOpen": 13,
-  "licensePermission": 60,
+  "licensePermission": 65,
   "licenseUnverified": 57,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -67,6 +67,12 @@ export const ROADMAP_PROGRESS = {
       "code": "141003",
       "years": 6,
       "range": "R3〜R8（6年度）"
+    },
+    {
+      "name": "浜松市",
+      "code": "221007",
+      "years": 5,
+      "range": "R4〜R8（5年度）"
     },
     {
       "name": "堺市",

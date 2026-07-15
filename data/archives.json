@@ -197,6 +197,83 @@
       "sha256Match": true
     },
     {
+      "sourceId": "hamamatsu-yosansho-r4",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/documents/133296/r4_yosansetumeisyo_ippan.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20230307094910/https://www.city.hamamatsu.shizuoka.jp/documents/133296/r4_yosansetumeisyo_ippan.pdf",
+      "waybackTimestamp": "20230307094910",
+      "checkedAt": "2026-07-15T18:24:21.335Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "hamamatsu-yosansho-r4",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget04/index.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20241214135248/https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget04/index.html",
+      "waybackTimestamp": "20241214135248",
+      "checkedAt": "2026-07-15T18:24:24.886Z"
+    },
+    {
+      "sourceId": "hamamatsu-yosansho-r5",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/documents/148959/yosansetumeisyo_ippan.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20240525042204/https://www.city.hamamatsu.shizuoka.jp/documents/148959/yosansetumeisyo_ippan.pdf",
+      "waybackTimestamp": "20240525042204",
+      "checkedAt": "2026-07-15T18:25:50.701Z",
+      "sha256Match": false,
+      "waybackTruncated": true
+    },
+    {
+      "sourceId": "hamamatsu-yosansho-r5",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget05/index.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20240910140055/https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget05/index.html",
+      "waybackTimestamp": "20240910140055",
+      "checkedAt": "2026-07-15T18:25:53.412Z"
+    },
+    {
+      "sourceId": "hamamatsu-yosansho-r6",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/documents/157760/l-setumeishoippan.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260715182144/https://www.city.hamamatsu.shizuoka.jp/documents/157760/l-setumeishoippan.pdf",
+      "waybackTimestamp": "20260715182144",
+      "checkedAt": "2026-07-15T18:22:59.842Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "hamamatsu-yosansho-r6",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget06/index.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250512173834/https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget06/index.html",
+      "waybackTimestamp": "20250512173834",
+      "checkedAt": "2026-07-15T18:23:04.055Z"
+    },
+    {
+      "sourceId": "hamamatsu-yosansho-r7",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/documents/164874/l_yosansetsumeisho.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260715181952/https://www.city.hamamatsu.shizuoka.jp/documents/164874/l_yosansetsumeisho.pdf",
+      "waybackTimestamp": "20260715181952",
+      "checkedAt": "2026-07-15T18:20:13.197Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "hamamatsu-yosansho-r7",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget07/index.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250714190837/https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget07/index.html",
+      "waybackTimestamp": "20250714190837",
+      "checkedAt": "2026-07-15T18:20:32.305Z"
+    },
+    {
+      "sourceId": "hamamatsu-yosansho-r8",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget08/index.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260715181736/https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget08/index.html",
+      "waybackTimestamp": "20260715181736",
+      "checkedAt": "2026-07-15T18:18:39.151Z"
+    },
+    {
       "sourceId": "hiroshima-yosansho-r8",
       "url": "https://www.city.hiroshima.lg.jp/_res/projects/default_project/_page_/001/047/851/2610.pdf",
       "kind": "file",

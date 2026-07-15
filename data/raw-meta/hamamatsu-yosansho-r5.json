@@ -1,0 +1,12 @@
+{
+  "sourceId": "hamamatsu-yosansho-r5",
+  "files": [
+    {
+      "filename": "yosansetumeisyo_ippan.pdf",
+      "sha256": "2f9a4e28fc695b66bfee0d04a4b3fd64592edbd1409a89747f82cd4f63648762",
+      "bytes": 3885492,
+      "fetchedAt": "2026-07-15T18:15:16.245Z",
+      "fetchedFrom": "https://www.city.hamamatsu.shizuoka.jp/documents/148959/yosansetumeisyo_ippan.pdf"
+    }
+  ]
+}

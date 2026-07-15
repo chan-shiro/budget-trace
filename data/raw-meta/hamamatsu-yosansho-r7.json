@@ -1,0 +1,12 @@
+{
+  "sourceId": "hamamatsu-yosansho-r7",
+  "files": [
+    {
+      "filename": "l_yosansetsumeisho.pdf",
+      "sha256": "f6ee12b22aefb775274aed90a07e8692f833f59aace7d73fa06b70fc6d289132",
+      "bytes": 1337810,
+      "fetchedAt": "2026-07-15T18:15:15.781Z",
+      "fetchedFrom": "https://www.city.hamamatsu.shizuoka.jp/documents/164874/l_yosansetsumeisho.pdf"
+    }
+  ]
+}

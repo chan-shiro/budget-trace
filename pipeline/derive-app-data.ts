@@ -1641,6 +1641,10 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7"] as const).map((fy) => ({
       srcId: `niigata-yosansho-${fy}`, muniCode: "151009", muniName: "新潟市", prefName: "新潟県", isPref: false,
     })),
+    // 浜松市。**印字 = 物理（オフセット0）**という政令市では珍しい様式。歳出13款が総務省の目的別と一致
+    ...(["r8", "r7", "r6", "r5", "r4"] as const).map((fy) => ({
+      srcId: `hamamatsu-yosansho-${fy}`, muniCode: "221007", muniName: "浜松市", prefName: "静岡県", isPref: false,
+    })),
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;
