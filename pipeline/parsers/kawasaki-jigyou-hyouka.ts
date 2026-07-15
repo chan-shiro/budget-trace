@@ -207,13 +207,33 @@ function parseSheet(
     );
   }
 
-  // 所属名
-  const bukaM = /所属名([^\n]{2,40}?)(?:実施形態|実施期間|事業の)/.exec(c);
-  const buka = bukaM?.[1]?.trim() ?? "";
-
-  // 政策・施策
-  const policyM = /政\s*策\s*([^\n]{2,40}?)施\s*策/.exec(flat.replace(/\n/g, " "));
-  const measureM = /施\s*策\s*([^\n]{2,40}?)直接目標/.exec(flat.replace(/\n/g, " "));
+  // 所属名・政策・施策は **-layout の行から取る**。`compact(flat)` は**改行も消す**ので
+  // `[^\n]` で区切る正規表現は効かず、572件すべてで所属名が空になっていた。
+  // これらは検証ゲート（Σ・算術）の対象外＝表示専用なので、**画面を見るまで気づけない**類の欠落。
+  const sheetLines = pageText(filePath, from, from).split("\n");
+  /** ラベルを含む行の、ラベル（＋任意の中間パターン）より右の最初のセルを返す。セルは空白2つ以上で区切られる */
+  const cell = (label: RegExp, after?: RegExp): string => {
+    for (const line of sheetLines) {
+      const m = label.exec(line);
+      if (!m) continue;
+      let rest = line.slice(m.index + m[0].length);
+      if (after) {
+        const a = after.exec(rest);
+        if (!a) continue;
+        rest = rest.slice(a.index + a[0].length);
+      }
+      const v = rest.trim().split(/\s{2,}/)[0]?.trim() ?? "";
+      if (v) return v;
+    }
+    return "";
+  };
+  // 所属名は「担当」行の 組織コード（6桁）の右
+  const buka = cell(/担\s*当/, /\s+\d{6}\s+/);
+  // 政策体系。ラベルは字間スペース入り（`政       策`）＝ `政策` の2文字では当たらない。
+  // **区の「地域課題対応事業用」様式は層番号つき**（`政策(2層)` / `施策(3層)`）で字間スペースが無く、
+  // 字間スペース版だけだと7件が空になる（実測）
+  const policy = cell(/政\s{2,}策/) || cell(/政策\(2層\)/);
+  const measure = cell(/施\s{2,}策/) || cell(/施策\(3層\)/);
 
   // 予決算表
   const cols = costColumns(words, filename, from);
@@ -307,8 +327,8 @@ function parseSheet(
     code,
     achievement,
     direction,
-    policy: policyM?.[1]?.trim() ?? null,
-    measure: measureM?.[1]?.trim() ?? null,
+    policy: policy || null,
+    measure: measure || null,
     cost,
     indicators: [],
     locator: { file: filename, page: from },

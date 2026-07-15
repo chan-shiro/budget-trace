@@ -78,3 +78,10 @@ button { font-family: 'IBM Plex Sans JP', sans-serif; }
 /* details/summary の既定マーカー（▶）を消す。list-style:none だけでは WebKit で残る */
 summary::-webkit-details-marker { display: none; }
 summary::marker { content: ""; }
+
+/* 事業報告（成果）の一覧はモバイルでは 事業名 / 達成度 の2列に畳む（方向性・総コストは行を折る） */
+@media (max-width:640px){
+  [data-mq="rep"]{ grid-template-columns:1fr 88px !important; gap:8px !important; }
+  [data-mq="rep"] > :nth-child(3){ grid-column:1 / -1 !important; }
+  [data-mq="rep"] > :nth-child(4){ grid-column:1 / -1 !important; text-align:left !important; }
+}

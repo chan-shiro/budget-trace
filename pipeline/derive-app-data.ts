@@ -980,6 +980,115 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
 }
 
 // ============================================================================
+// 事業報告（成果）— 全量公開の自治体 → public/reports/<団体コード>.json
+// 甲府は公表サンプル5件なので静的 gen（上）でよいが、**川崎は572事業**（parsed 2.1MB）で、
+// 静的 import すると gen の合計（既に2.1MB）が倍になる。決算シャード・similar-index・
+// coverage.json と同じく**その画面でだけフェッチする**（CLAUDE.md の配信方針）。
+// 札幌（R7=666件）・横浜（R3〜R7）を足すときも同じ形に乗る。
+// ============================================================================
+{
+  const REPORT_MUNI_SOURCES: { srcId: string; muniCode: string; muniName: string }[] = [
+    { srcId: "kawasaki-jigyou-hyouka-r6", muniCode: "141305", muniName: "川崎市" },
+  ];
+  const byMuni: Record<string, unknown> = {};
+  for (const r of REPORT_MUNI_SOURCES) {
+    const v = validationResultSchema.parse(readJson(validationPath(r.srcId)));
+    if (v.status !== "ok") throw new Error(`${r.srcId}: 検証が ${v.status} のため derive しません`);
+    const doc = anyParsedDocSchema.parse(readJson(parsedPath(r.srcId)));
+    if (doc.docType !== "project-report") throw new Error(`${r.srcId}: project-report ではありません`);
+    const meta = readRawMeta(r.srcId);
+    if (!meta) throw new Error(`${r.srcId}: raw-meta がありません`);
+    const src = findSource(r.srcId);
+    const eraLabel = (c: string) => (c.startsWith("H") ? `平成${c.slice(1)}` : `令和${c.slice(1)}`) + "年度";
+    // 画面に出す断面だけに絞る（parsed をそのまま配ると 2.1MB）。金額は千円のまま持ち、
+    // 表示側で fmtOku/fmtYen に通す
+    const reports = doc.facts.map((f) => {
+      const file = meta.files.find((x) => x.filename === f.locator.file) ?? meta.files[0]!;
+      return {
+        code: f.code ?? f.no,
+        name: f.name,
+        buka: f.buka,
+        policy: f.policy ?? "",
+        measure: f.measure ?? "",
+        // **達成度は数字が小さいほど良い**（甲府の A〜F とは向きが逆）。丸めず素の値を配る
+        achievement: f.achievement ?? null,
+        direction: f.direction ?? "",
+        cost: f.cost.map((c) => ({
+          fy: c.fy,
+          kind: c.kind,
+          jigyohi: c.jigyohi,
+          jinkenhi: c.jinkenhi ?? null,
+          totalCost: c.totalCost,
+          ippanZaigen: c.ippanZaigen,
+          ...(c.isEstimate ? { est: 1 } : {}),
+        })),
+        // エビデンス: 自サーバーの原本コピーを該当ページで開く（3層の③）
+        ref: `/sources/${r.srcId}/${f.locator.file}#page=${f.locator.page}`,
+        refLabel: `${f.locator.file} p.${f.locator.page}`,
+      };
+    });
+    const achievementCounts: Record<string, number> = {};
+    for (const x of reports) if (x.achievement != null) achievementCounts[String(x.achievement)] = (achievementCounts[String(x.achievement)] ?? 0) + 1;
+    byMuni[r.muniCode] = {
+      muniCode: r.muniCode,
+      muniName: r.muniName,
+      fy: doc.fiscalYear,
+      fyLabel: eraLabel(doc.fiscalYear),
+      sourceTitle: src.title,
+      originUrl: src.urls?.[0] ?? src.landingPage ?? "",
+      landingPage: src.landingPage ?? "",
+      /** 達成度の凡例。**1が最良で5が最悪**（A〜F と向きが逆なので画面で必ず明示する） */
+      achievementLabels: {
+        "1": "目標を大きく上回って達成",
+        "2": "目標を上回って達成",
+        "3": "ほぼ目標どおり達成",
+        "4": "目標を下回った",
+        "5": "目標を大きく下回った",
+      },
+      directionLabels: {
+        "Ⅰ": "現状のまま継続",
+        "Ⅱ": "改善しながら継続",
+        "Ⅲ": "事業規模拡大",
+        "Ⅳ": "事業規模縮小",
+        "Ⅴ": "事業廃止",
+      },
+      achievementCounts,
+      reports,
+    };
+  }
+  const dir = join(process.cwd(), "public/reports");
+  if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
+  const sizes: string[] = [];
+  for (const [code, data] of Object.entries(byMuni)) {
+    const json = JSON.stringify(data);
+    writeFileSync(join(dir, `${code}.json`), json, "utf8");
+    sizes.push(`${(data as { muniName: string }).muniName}:${(json.length / 1024).toFixed(0)}KB`);
+  }
+  // 索引だけは静的に持つ（数十バイト）。**シャードが無い自治体でフェッチしない**ために要る
+  const idxOut = `// このファイルは自動生成です。手で編集しないこと。
+// 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
+// 事業報告（成果）を**全量公開**している自治体の団体コード → 件数。
+// 実体は public/reports/<団体コード>.json（その画面でだけフェッチする。useProjectReports）。
+// 甲府（公表サンプル5件）は静的 gen の report.gen.ts 側なのでここには入らない。
+
+export const REPORT_MUNIS: Record<string, { name: string; fy: string; fyLabel: string; count: number }> = ${JSON.stringify(
+    Object.fromEntries(
+      Object.entries(byMuni).map(([code, d]) => {
+        const x = d as { muniName: string; fy: string; fyLabel: string; reports: unknown[] };
+        return [code, { name: x.muniName, fy: x.fy, fyLabel: x.fyLabel, count: x.reports.length }];
+      }),
+    ),
+    null,
+    2,
+  )};
+`;
+  writeFileSync(join(process.cwd(), "src/client/lib/reports-index.gen.ts"), idxOut, "utf8");
+  console.log(
+    `✓ 事業報告（全量公開の自治体）を導出 → public/reports/（${REPORT_MUNI_SOURCES.map((r) => `${r.muniName} ${(byMuni[r.muniCode] as { reports: unknown[] }).reports.length}件`).join(" / ")}・${sizes.join(" / ")}）`,
+  );
+}
+
+// ============================================================================
 // 統計書 財政章（款項×当初/最終/決算）→ src/client/lib/outturn.gen.ts
 // 款別ドリルダウンの項テーブル（当初→最終→決算）の原典。単位は円 → 億円へ変換。
 // R3 歳出の「当初予算額」列は原典側の誤植（R2 の値のコピー。歳入側は正しく、

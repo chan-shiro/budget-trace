@@ -5,6 +5,8 @@ import { CountUpNum } from "./ui";
 import * as D from "@/client/lib/data";
 import { useDecisionData } from "@/client/hooks/useDecisionData";
 import { useCoverage } from "@/client/hooks/useCoverage";
+import { useProjectReports } from "@/client/hooks/useProjectReports";
+import { REPORT_MUNIS } from "@/client/lib/reports-index.gen";
 import { useSimilarIndex } from "@/client/hooks/useSimilarIndex";
 import { stateToPath, locationToState, type RouteState } from "@/client/lib/routing";
 // 進捗（実データから derive が算出）と計画（pipeline/registry/roadmap.ts が唯一の手書き）。
@@ -50,6 +52,8 @@ interface St {
   covQ?: string;
   srcQ?: string;
   srcPage?: number;
+  repQ?: string;
+  repPage?: number;
   /** データ整備状況で展開中の都道府県 */
   covOpen?: string[];
   /** データ整備状況で資料を開いている自治体（団体コード） */
@@ -77,7 +81,7 @@ const DEFAULT_ST: St = {
   screen: "top", pref: null, muni: null,
   drillSide: "exp", drillPath: [], theme: null,
   searchQ: "", unit: "total", compSide: "exp", tip: null,
-  simQ: "", covQ: "", covOpen: [], covMuni: null, srcQ: "", srcPage: 1,
+  simQ: "", covQ: "", covOpen: [], covMuni: null, srcQ: "", srcPage: 1, repQ: "", repPage: 1,
 };
 
 // 総合計画の基本目標（= 政策テーマ）。各年度の主な事業の basicGoal から集計する。
@@ -226,6 +230,11 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
 
   // budget 階層（当初予算・静的 gen）。政令市は R2〜R8 の7年前後を収録しているので、
   // full（甲府）と同じく**年度ドロップダウンで切り替える**。1年度しか無い自治体は要素1つの配列。
+  // 事業報告（成果）の全量公開シャード。**索引にある自治体をダッシュボードで見ているときだけ**取得する
+  // （696KB。決算シャード・coverage.json と同じ方針）
+  const reportMuni = isApp && muniCode && REPORT_MUNIS[muniCode] ? muniCode : null;
+  const { data: repData, loading: repLoading, error: repError } = useProjectReports(reportMuni);
+
   const muniBudgetYears = tier === "budget" && muniCode ? D.MUNI_BUDGET_YEARS[muniCode] ?? null : null;
   const muniBudget = muniBudgetYears
     ? muniBudgetYears.find((b) => b.fy === s.budgetFy) ?? muniBudgetYears[0]!
@@ -1528,6 +1537,88 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     uncollected: D.UNCOLLECTED,
     requestListUrl: D.REQUEST_LIST_URL,
     sourceLabel,
+    // --- 事業報告（成果）の全量公開（川崎 572件）------------------------------
+    // 甲府の `report`（公表サンプル5件・A〜F の総合評価）とは**別のセクション**にする。
+    // 評価体系が違う（川崎は達成度1〜5＋方向性Ⅰ〜Ⅴ で、**達成度は数字が小さいほど良い**＝
+    // A〜F と向きが逆）ので、既存のバッジへ丸めると意味が反転する。
+    repAll: (() => {
+      if (!reportMuni) return null;
+      if (!repData) return { ready: false as const, loading: repLoading, error: repError };
+      const q = (s.repQ ?? "").trim();
+      const rows = repData.reports.filter(
+        (r) => !q || r.name.includes(q) || r.buka.includes(q) || r.policy.includes(q) || r.measure.includes(q) || r.code.startsWith(q),
+      );
+      const PER = 20;
+      const pages = Math.max(1, Math.ceil(rows.length / PER));
+      const page = Math.min(Math.max(1, s.repPage ?? 1), pages);
+      const start = (page - 1) * PER;
+      // 表示年度の決算（見込み含む）を代表値にする。無ければ予算
+      const pick = (r: (typeof repData.reports)[number]) => {
+        const fy = repData.fy;
+        return r.cost.find((c) => c.fy === fy && c.kind === "決算") ?? r.cost.find((c) => c.fy === fy && c.kind === "予算") ?? null;
+      };
+      return {
+        ready: true as const,
+        loading: false,
+        error: null,
+        muniName: repData.muniName,
+        fyLabel: repData.fyLabel,
+        sourceTitle: repData.sourceTitle,
+        total: repData.reports.length,
+        hits: rows.length,
+        page,
+        pages,
+        from: rows.length === 0 ? 0 : start + 1,
+        to: Math.min(start + PER, rows.length),
+        q,
+        setQ: (val: string) => setSt({ repQ: val, repPage: 1 }),
+        setPage: (n: number) => setSt({ repPage: Math.min(Math.max(1, n), pages) }),
+        achievementLabels: repData.achievementLabels,
+        directionLabels: repData.directionLabels,
+        // 金額は総額/1人あたりトグルに追従させる（成果指標は金額でないので per capita 化しない）。
+        // シャードは千円なので億円へ直してから既存の整形に通す
+        fmt: (thousandYen: number) => fmtV(thousandYen / 1e5),
+        // 達成度の分布（発行元の集計と一致することを確認済み）。1が最良
+        dist: Object.entries(repData.achievementCounts)
+          .sort((a, b) => Number(a[0]) - Number(b[0]))
+          .map(([k, n]) => ({
+            k,
+            n,
+            label: repData.achievementLabels[k] ?? k,
+            pct: ((n / repData.reports.length) * 100).toFixed(1),
+          })),
+        rows: rows.slice(start, start + PER).map((r) => {
+          const c = pick(r);
+          return {
+            code: r.code,
+            name: r.name,
+            buka: r.buka,
+            policy: r.policy,
+            measure: r.measure,
+            achievement: r.achievement,
+            achievementLabel: r.achievement != null ? repData.achievementLabels[String(r.achievement)] ?? "" : "",
+            direction: r.direction,
+            directionLabel: r.direction ? repData.directionLabels[r.direction] ?? "" : "",
+            // 総コスト（人件費込み）。単位トグルに追従させる（金額なので per capita 化してよい）
+            totalCost: c?.totalCost ?? null,
+            jigyohi: c?.jigyohi ?? null,
+            jinkenhi: c?.jinkenhi ?? null,
+            costLabel: c ? `${repData.fyLabel}${c.kind}${c.est ? "（見込）" : ""}` : "",
+            // href にも入れる（onClick だけだと中クリック・キーボードでリンクとして扱えない）
+            ref: r.ref,
+            refLabel: r.refLabel,
+            open: () =>
+              openViewer({
+                url: r.ref,
+                title: repData.sourceTitle,
+                sub: `${r.name}（${r.refLabel}）`,
+                originUrl: repData.originUrl,
+                archiveUrl: repData.originUrl,
+              }),
+          };
+        }),
+      };
+    })(),
     // --- /roadmap（進捗と計画）---------------------------------------------
     // 進捗の数字は **roadmap.gen.ts が実データから算出したもの**（手書きの数字は無い）。
     // 計画だけが手書き（pipeline/registry/roadmap.ts）。ここでは並べ替えと表示整形のみ行う
