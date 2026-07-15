@@ -1621,6 +1621,10 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `kyoto-yosansho-${fy}`, muniCode: "261009", muniName: "京都市", prefName: "京都府", isPref: false,
     })),
+    // 北九州市。R2 だけ歳入26款で R3 以降は款番号が1つ繰下がる（福岡と同型）＝経年は款名で突合する
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `kitakyushu-yosansho-${fy}`, muniCode: "401005", muniName: "北九州市", prefName: "福岡県", isPref: false,
+    })),
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;

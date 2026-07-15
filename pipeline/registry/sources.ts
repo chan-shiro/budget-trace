@@ -1317,6 +1317,170 @@ export const SOURCES: SourceEntry[] = [
       expenditureHeaderExtra: "一般財源",
     },
   },
+  {
+    // 北九州市（団体コード 401005・人口91万）。一般会計当初予算に関する説明書（332p・2.2MB）。
+    // **横浜型**（事項別明細書の冒頭に「1 総括」が単独ページ）で kofu-yosansho に無改修で乗る。
+    // 歳入25款 / 歳出16款。1側が2ページに跨り**合計行は最終ページにしかない**。
+    //
+    // ⚠ **ページ位置が年度で動く**（R8〜R4=6-7/8-9・R3=7-8/9-10・R2=11-12/13-14。R2 は表紙・目次に
+    // 空白ページが挟まる）。印字とのオフセットも年度で違う（R8〜R4=+3 / R3=+2 / R2=+6）。**外挿しない**。
+    // ⚠ **物理 p.3-4 は会計別歳出集計表（特別会計・企業会計を含む）**なので、ページ指定を誤ると特会が混入する。
+    // ⚠ **年度インデックスの URL にもファイル名にも規則性が無い**（連番 ID）。年度追加は必ず
+    // 当初予算インデックス（/shisei/menu05_0165.html）の実リンクから辿る。
+    //
+    // 神戸 §8h・京都 §8i と同じ財源内訳ヘッダ（`一般財源` / `国県支出金 地方債 その他`）を持つが、
+    // **北九州はヘッダブロックと款1 の間に空行がある**ため断片が reset され汚染しない（実測）
+    // → expenditureHeaderExtra は不要。
+    //
+    // 罠:
+    //   - **R2 は歳入26款**（款10 に自動車取得税交付金）で、R3 以降は25款＝**款番号が1つ繰下がる**
+    //     （福岡と同型）。経年比較を款番号でやると R2/R3 の境界で壊れるので款名で突合する。
+    //     歳出は R2〜R8 で16款・款名とも完全不変。
+    //   - **R3 歳入に款番号が `〇`（U+3007）の廃止款**（自動車取得税交付金 0 / 10）がある。
+    //     パーサが許容するのは `○`（U+25CB）なので**取れず、前年度Σが 10千円 不足する**
+    //     （合計の 0.0000018%）。docs §8j 参照。
+    //   - **R5 は市長選（2023年2月）の年だが骨格予算問題は起きない** — R5 当初予算案は5月臨時会に
+    //     出された肉付済みの当初で、`骨格` の語は資料に0件。R6 の前年度列が R5 当初と完全一致する。
+    //     **次の市長選は2027年2月（R9）なので R9 収録時に再確認する。**
+    id: "kitakyushu-yosansho-r8",
+    title: "令和8年度 北九州市一般会計当初予算に関する説明書（歳入歳出予算事項別明細書 総括・款別歳入歳出）",
+    publisher: "北九州市",
+    url: null,
+    urls: ["https://www.city.kitakyushu.lg.jp/files/001192254.pdf"],
+    landingPage: "https://www.city.kitakyushu.lg.jp/contents/09000366_00004.html",
+    kind: "pdf",
+    fiscalYear: "R8",
+    scope: "北九州市（一般会計・団体コード401005）",
+    license:
+      "北九州市ホームページに掲載している内容（文章、写真、図、イラスト、音声・動画等）に関する著作権は、原則として北九州市に帰属します。また、一部の画像等の著作権は、北九州市以外の原著作者が所有しています。北九州市ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内にあります「このページの作成者」に記載されています部署へ、事前にご相談ください。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePages: { from: 6, to: 7 },
+      expenditurePages: { from: 8, to: 9 },
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+    },
+  },
+  {
+    id: "kitakyushu-yosansho-r7",
+    title: "令和7年度 北九州市一般会計当初予算に関する説明書（歳入歳出予算事項別明細書 総括・款別歳入歳出）",
+    publisher: "北九州市",
+    url: null,
+    urls: ["https://www.city.kitakyushu.lg.jp/files/001129574.pdf"],
+    landingPage: "https://www.city.kitakyushu.lg.jp/contents/09000366_00002.html",
+    kind: "pdf",
+    fiscalYear: "R7",
+    scope: "北九州市（一般会計・団体コード401005）",
+    license:
+      "北九州市ホームページに掲載している内容（文章、写真、図、イラスト、音声・動画等）に関する著作権は、原則として北九州市に帰属します。また、一部の画像等の著作権は、北九州市以外の原著作者が所有しています。北九州市ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内にあります「このページの作成者」に記載されています部署へ、事前にご相談ください。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePages: { from: 6, to: 7 },
+      expenditurePages: { from: 8, to: 9 },
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+    },
+  },
+  {
+    id: "kitakyushu-yosansho-r6",
+    title: "令和6年度 北九州市一般会計当初予算に関する説明書（歳入歳出予算事項別明細書 総括・款別歳入歳出）",
+    publisher: "北九州市",
+    url: null,
+    urls: ["https://www.city.kitakyushu.lg.jp/files/001074934.pdf"],
+    landingPage: "https://www.city.kitakyushu.lg.jp/contents/09000366.html",
+    kind: "pdf",
+    fiscalYear: "R6",
+    scope: "北九州市（一般会計・団体コード401005）",
+    license:
+      "北九州市ホームページに掲載している内容（文章、写真、図、イラスト、音声・動画等）に関する著作権は、原則として北九州市に帰属します。また、一部の画像等の著作権は、北九州市以外の原著作者が所有しています。北九州市ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内にあります「このページの作成者」に記載されています部署へ、事前にご相談ください。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePages: { from: 6, to: 7 },
+      expenditurePages: { from: 8, to: 9 },
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+    },
+  },
+  {
+    id: "kitakyushu-yosansho-r5",
+    title: "令和5年度 北九州市一般会計当初予算に関する説明書（歳入歳出予算事項別明細書 総括・款別歳入歳出）",
+    publisher: "北九州市",
+    url: null,
+    urls: ["https://www.city.kitakyushu.lg.jp/files/001034900.pdf"],
+    landingPage: "https://www.city.kitakyushu.lg.jp/contents/09000339.html",
+    kind: "pdf",
+    fiscalYear: "R5",
+    scope: "北九州市（一般会計・団体コード401005）",
+    license:
+      "北九州市ホームページに掲載している内容（文章、写真、図、イラスト、音声・動画等）に関する著作権は、原則として北九州市に帰属します。また、一部の画像等の著作権は、北九州市以外の原著作者が所有しています。北九州市ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内にあります「このページの作成者」に記載されています部署へ、事前にご相談ください。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePages: { from: 6, to: 7 },
+      expenditurePages: { from: 8, to: 9 },
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+    },
+  },
+  {
+    id: "kitakyushu-yosansho-r4",
+    title: "令和4年度 北九州市一般会計当初予算に関する説明書（歳入歳出予算事項別明細書 総括・款別歳入歳出）",
+    publisher: "北九州市",
+    url: null,
+    urls: ["https://www.city.kitakyushu.lg.jp/files/000966725.pdf"],
+    landingPage: "https://www.city.kitakyushu.lg.jp/contents/09000323.html",
+    kind: "pdf",
+    fiscalYear: "R4",
+    scope: "北九州市（一般会計・団体コード401005）",
+    license:
+      "北九州市ホームページに掲載している内容（文章、写真、図、イラスト、音声・動画等）に関する著作権は、原則として北九州市に帰属します。また、一部の画像等の著作権は、北九州市以外の原著作者が所有しています。北九州市ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内にあります「このページの作成者」に記載されています部署へ、事前にご相談ください。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePages: { from: 6, to: 7 },
+      expenditurePages: { from: 8, to: 9 },
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+    },
+  },
+  {
+    id: "kitakyushu-yosansho-r3",
+    title: "令和3年度 北九州市一般会計当初予算に関する説明書（歳入歳出予算事項別明細書 総括・款別歳入歳出）",
+    publisher: "北九州市",
+    url: null,
+    urls: ["https://www.city.kitakyushu.lg.jp/files/000917954.pdf"],
+    landingPage: "https://www.city.kitakyushu.lg.jp/contents/09000288.html",
+    kind: "pdf",
+    fiscalYear: "R3",
+    scope: "北九州市（一般会計・団体コード401005）",
+    license:
+      "北九州市ホームページに掲載している内容（文章、写真、図、イラスト、音声・動画等）に関する著作権は、原則として北九州市に帰属します。また、一部の画像等の著作権は、北九州市以外の原著作者が所有しています。北九州市ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内にあります「このページの作成者」に記載されています部署へ、事前にご相談ください。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePages: { from: 7, to: 8 },
+      expenditurePages: { from: 9, to: 10 },
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+    },
+  },
+  {
+    id: "kitakyushu-yosansho-r2",
+    title: "令和2年度 北九州市一般会計当初予算に関する説明書（歳入歳出予算事項別明細書 総括・款別歳入歳出）",
+    publisher: "北九州市",
+    url: null,
+    urls: ["https://www.city.kitakyushu.lg.jp/files/000840516.pdf"],
+    landingPage: "https://www.city.kitakyushu.lg.jp/contents/09000262.html",
+    kind: "pdf",
+    fiscalYear: "R2",
+    scope: "北九州市（一般会計・団体コード401005）",
+    license:
+      "北九州市ホームページに掲載している内容（文章、写真、図、イラスト、音声・動画等）に関する著作権は、原則として北九州市に帰属します。また、一部の画像等の著作権は、北九州市以外の原著作者が所有しています。北九州市ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内にあります「このページの作成者」に記載されています部署へ、事前にご相談ください。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePages: { from: 11, to: 12 },
+      expenditurePages: { from: 13, to: 14 },
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+    },
+  },
   // ---- 政令市の過年度（2026-07-15）。ページ位置は年度で動くので必ず物理ページを実確認する。
   //      年度 URL の規則も破れる（福岡 R3/R2 の命名・川崎の分冊番号）。docs §8b 参照 ----
   {
