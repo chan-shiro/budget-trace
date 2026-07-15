@@ -4,8 +4,8 @@ import React from "react";
 import { CountUpNum } from "./ui";
 import * as D from "@/client/lib/data";
 import { useDecisionData } from "@/client/hooks/useDecisionData";
+import { useCoverage } from "@/client/hooks/useCoverage";
 import { stateToPath, locationToState, type RouteState } from "@/client/lib/routing";
-import { COVERAGE_ENTITIES, COVERAGE_PREFS, COVERAGE_NATIONAL, COVERAGE_UNCLASSIFIED, COVERAGE_SUMMARY } from "@/client/lib/coverage.gen";
 import BudgetTraceView from "./BudgetTraceView";
 
 const {
@@ -33,6 +33,12 @@ interface St {
   execFy?: string;
   /** 表示中の当初予算年度（"R8" など。未指定は最新年度） */
   budgetFy?: string;
+  /** データ整備状況の検索語 */
+  covQ?: string;
+  /** データ整備状況で展開中の都道府県 */
+  covOpen?: string[];
+  /** データ整備状況で資料を開いている自治体（団体コード） */
+  covMuni?: string | null;
   /** 一次資料ドロワー（自サーバー配信の原本コピーをその場でレビュー） */
   viewer?: {
     /** 自サーバーのコピー URL（/sources/...。フラグメントなし） */
@@ -56,6 +62,7 @@ const DEFAULT_ST: St = {
   screen: "top", pref: null, muni: null,
   drillSide: "exp", drillPath: [], theme: null,
   searchQ: "", unit: "total", compSide: "exp", tip: null,
+  covQ: "", covOpen: [], covMuni: null,
 };
 
 // 総合計画の基本目標（= 政策テーマ）。各年度の主な事業の basicGoal から集計する。
@@ -173,6 +180,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
   const isApp = ["dash", "drill", "compare", "themes", "execution", "similar", "sources"].includes(screen);
   // データ整備状況は自治体スコープを持たない全体ページ（シャード取得も不要）
   const isCoverage = screen === "coverage";
+  const { data: covData, loading: covLoading, error: covError } = useCoverage(isCoverage);
 
   // --- カバレッジ階層 ---
   // full = 甲府市（予算ベースの詳細: 主な事業・執行・評価・補正・前年当初比較）。
@@ -1162,20 +1170,94 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     isSimilar: screen === "similar", isSources: screen === "sources",
     isCoverage,
     goCoverage: () => nav({ screen: "coverage", pref: null, muni: null, muniCode: undefined }),
-    cov: {
-      summary: COVERAGE_SUMMARY,
-      entities: COVERAGE_ENTITIES,
-      prefs: COVERAGE_PREFS,
-      national: COVERAGE_NATIONAL,
-      unclassified: COVERAGE_UNCLASSIFIED,
-      // ライセンス上の懸念がある資料（③自サーバー配信の再配布に許諾が要る／未確認）
-      permissionSources: [...COVERAGE_ENTITIES.flatMap((e) => e.sources), ...COVERAGE_NATIONAL]
-        .filter((s2) => s2.licenseClass === "permission-required"),
-      // データセット列の見出し（マトリクスの列順）
-      datasetCols: (COVERAGE_ENTITIES[0]?.datasets ?? []).map((d) => d.label),
-      openSource: (localUrl: string, title: string, sub: string, originUrl: string, archiveUrl: string | null) => () =>
-        openViewer({ url: localUrl, title, sub, originUrl, archiveUrl: archiveUrl ?? originUrl }),
-    },
+    // データ整備状況: 全1,741市町村を都道府県ごとに ○× で網羅する単一の表。
+    // 手付かずの自治体も必ず載せる（空欄＝ToDo が見えることがこのページの価値）。
+    cov: (() => {
+      const q = (s.covQ ?? "").trim();
+      const openPrefs = s.covOpen ?? [];
+      const d = covData;
+      if (!d) return { loading: covLoading, error: covError, ready: false as const };
+      const ents = d.entities;
+      // 検索は自治体名・都道府県名・団体コードに前方/部分一致（入力即時フィルタ）
+      const hit = (name: string, code: string, pref: string) =>
+        !q || name.includes(q) || pref.includes(q) || code.startsWith(q);
+      const groups = d.prefs
+        .map((p) => {
+          const prefMatched = !q || p.name.includes(q);
+          const rows = p.munis.filter((m) => prefMatched || hit(m.n, m.c, p.name));
+          return { pref: p, rows, prefMatched };
+        })
+        .filter((g) => g.rows.length > 0)
+        .map((g) => {
+          // 検索中はヒットした県を自動で開く（探して即見えるように）
+          const open = q ? true : openPrefs.includes(g.pref.name);
+          const deep = g.rows.filter((m) => ents[m.c]).length;
+          return {
+            name: g.pref.name,
+            code: g.pref.code,
+            count: g.rows.length,
+            deep,
+            open,
+            toggle: () =>
+              setSt({
+                covOpen: openPrefs.includes(g.pref.name)
+                  ? openPrefs.filter((x) => x !== g.pref.name)
+                  : [...openPrefs, g.pref.name],
+              }),
+            rows: open
+              ? g.rows.map((m) => {
+                  const e = ents[m.c];
+                  return {
+                    code: m.c,
+                    name: m.n,
+                    tier: e?.tier ?? null,
+                    // 列ごとの ○×（true=収録済み）と、収録済みなら中身の説明
+                    marks: d.datasets.map((ds, i) => ({
+                      key: ds.key,
+                      ok: m.f[i] === "1",
+                      detail: e?.detail[ds.key] ?? "",
+                    })),
+                    sourceCount: e?.sources.length ?? 0,
+                    sourcesOpen: s.covMuni === m.c,
+                    toggleSources: () => setSt({ covMuni: s.covMuni === m.c ? null : m.c }),
+                    sources: (e?.sources ?? []).map((src) => ({
+                      ...src,
+                      files: src.files.map((f) => ({
+                        ...f,
+                        open: () =>
+                          openViewer({
+                            url: f.localUrl, title: src.title, sub: `${f.filename} ・ ${f.fetchedAt} 取得`,
+                            originUrl: src.originUrl, archiveUrl: src.archiveUrl ?? src.originUrl,
+                          }),
+                      })),
+                    })),
+                  };
+                })
+              : [],
+          };
+        });
+      const matched = groups.reduce((a, g) => a + g.count, 0);
+      return {
+        ready: true as const,
+        loading: false,
+        error: null,
+        summary: d.summary,
+        datasets: d.datasets,
+        q,
+        setQ: (val: string) => setSt({ covQ: val }),
+        groups,
+        matched,
+        allOpen: openPrefs.length > 0 && !q,
+        expandAll: () => setSt({ covOpen: d.prefs.map((p) => p.name) }),
+        collapseAll: () => setSt({ covOpen: [] }),
+        // ライセンス上の懸念（③の再配布に許諾が要る資料）
+        permissionSources: [...Object.values(d.entities).flatMap((e) => e.sources), ...d.national].filter(
+          (x) => x.licenseClass === "permission-required",
+        ),
+        national: d.national,
+        unclassified: d.unclassified,
+      };
+    })(),
     goSources: () => nav({ screen: "sources" }), goDash: () => nav({ screen: "dash" }),
     similarRows: SIMILAR.map((r) => {
       const cols = [D.PALETTE[0], D.PALETTE[1], D.PALETTE[2], D.PALETTE[4], "#C6D2DA"];

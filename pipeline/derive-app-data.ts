@@ -1705,17 +1705,20 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(budgets.map((b) => b.muni
   );
 }
 
+
 // ============================================================================
-// データ整備状況（進捗・エビデンス保管・ライセンス）→ src/client/lib/coverage.gen.ts
-// 「どの自治体をどこまで収録できたか」「その原本をどう保管しているか」「再配布に
-// ライセンス上の懸念があるか」を**レジストリと魚拓台帳から導出**し常に実態と一致させる。
-// ToDo（未収録の可視化）と情報公開（我々が何を保管しているかの開示）を兼ねる。
+// データ整備状況 → public/coverage.json（/coverage ページが取得する）
 //
-// ライセンス区分は license 原文から推定する（表記が揺れたら unverified に落ちる安全側）:
-//   open                = 政府標準利用規約準拠（再配布可）
-//   permission-required = 「要許可」「非営利」明記（③自サーバー配信は許諾が要る）
-//   unverified          = 「利用条件は同サイト参照」等（未確認）
-// このブロックは他ブロックが書いた gen を読むので**必ず最後に置く**。
+// 「全1,741市町村を網羅した ○× 一覧（手付かずも含む）」＋「原本の保管情報」＋
+// 「③再配布のライセンス区分」を1つの JSON にまとめる。ToDo（空欄＝未収録）と
+// 情報公開（何を保管しているか）とリスク開示（要許可なのに配信中か）を兼ねる。
+//
+// **バンドルに入れず public/ に置く**理由: 全市町村を載せると 130KB 級になり、
+// 静的 import すると全ページのバンドルに乗ってしまう。このページでだけ取得する。
+//
+// ライセンス区分は license 原文から推定（表記が揺れたら安全側の unverified に落ちる）:
+//   open / permission-required / unverified
+// このブロックは他ブロックが書いた gen とシャードを読むので**必ず最後に置く**。
 // ============================================================================
 {
   const { KOFU_BUDGET_YEARS } = await import("../src/client/lib/kofu.gen");
@@ -1727,6 +1730,19 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(budgets.map((b) => b.muni
   const { KOFU_OUTTURN_YEARS } = await import("../src/client/lib/outturn.gen");
   const { MUNI_BUDGETS, BUDGET_MUNIS } = await import("../src/client/lib/munibudgets.gen");
   const { PREF_CODES } = await import("../src/client/lib/decision-index.gen");
+  const { DECISION_YEARS } = await import("../src/client/lib/decision-index.gen");
+
+  // 列（この順で ○× を並べる）。kessan は全市町村が持つ
+  const DATASETS = [
+    { key: "kessan", label: "決算", full: "決算（総務省・決算状況調）" },
+    { key: "budget", label: "予算", full: "当初予算（款別・前年当初比）" },
+    { key: "projects", label: "事業", full: "事業単位（主な事業）" },
+    { key: "report", label: "成果", full: "事業報告（成果指標・コスト）" },
+    { key: "council", label: "議会", full: "議会の構成（予算議決時）" },
+    { key: "execution", label: "執行", full: "執行・決算（自治体の確定値）" },
+    { key: "evaluation", label: "評価", full: "事務事業評価" },
+    { key: "outturn", label: "統計", full: "統計書（款項×当初/最終/決算）" },
+  ] as const;
 
   const srcs = SOURCES.filter((s) => !s.fixture);
   const archiveEntries = (() => {
@@ -1734,7 +1750,6 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(budgets.map((b) => b.muni
     if (!existsSync(p)) return [];
     return archivesLedgerSchema.parse(readJson(p)).entries;
   })();
-
   const licenseClassOf = (lic: string): "open" | "permission-required" | "unverified" =>
     /政府標準利用規約|公共データ利用規約/.test(lic) ? "open"
     : /要許可|非営利/.test(lic) ? "permission-required"
@@ -1747,20 +1762,14 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(budgets.map((b) => b.muni
       return { code: c, name: b.muniName, pref: b.prefName };
     }),
   ];
-
-  // scope から対象を解決する。団体コードがあればそれを使い、無ければ先頭の団体名
-  // （「甲府市議会（…」→ 甲府市）で引く。解決できない物は未分類として可視化する。
   const entityOf = (s: (typeof srcs)[number]): { scopeKind: "national" | "entity" | "unknown"; code?: string } => {
     if (/^全市町村/.test(s.scope)) return { scopeKind: "national" };
-    // 団体コードがあってもそれが収録エンティティに無ければ「未分類」に落とす。
-    // （scope の誤記で資料がどこにも出ず消える事故を防ぐ。実際 山口市の 団体コード 誤記を検出した）
     const byCode = s.scope.match(/団体コード(\d{6})/)?.[1];
     if (byCode && KNOWN.some((k) => k.code === byCode)) return { scopeKind: "entity", code: byCode };
     const nm = (s.scope.split("（")[0] ?? "").replace(/議会$/, "").trim();
     const hit = KNOWN.find((k) => k.name === nm);
     return hit ? { scopeKind: "entity", code: hit.code } : { scopeKind: "unknown" };
   };
-
   const sourceCard = (s: (typeof srcs)[number]) => {
     const meta = readRawMeta(s.id);
     const files = (meta?.files ?? []).map((f) => ({
@@ -1774,16 +1783,9 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(budgets.map((b) => b.muni
     const originUrl = s.urls?.[0] ?? s.url ?? s.landingPage ?? "";
     const isArchiveOrigin = /web\.archive\.org|warp\.ndl\.go\.jp/.test(originUrl);
     return {
-      sourceId: s.id,
-      title: s.title,
-      publisher: s.publisher,
-      fiscalYear: s.fiscalYear,
-      kind: s.kind,
-      license: s.license,
-      licenseClass: licenseClassOf(s.license),
-      originUrl,
-      landingPage: s.landingPage ?? null,
-      files,
+      sourceId: s.id, title: s.title, publisher: s.publisher, fiscalYear: s.fiscalYear, kind: s.kind,
+      license: s.license, licenseClass: licenseClassOf(s.license),
+      originUrl, landingPage: s.landingPage ?? null, files,
       archived: arch.length > 0 || isArchiveOrigin,
       archiveOrigin: isArchiveOrigin,
       archiveUrl: arch[0]?.waybackUrl ?? (isArchiveOrigin ? originUrl : null),
@@ -1793,64 +1795,61 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(budgets.map((b) => b.muni
 
   const range = (fys: string[]) =>
     fys.length === 0 ? "—" : fys.length === 1 ? fys[0]! : `${fys[fys.length - 1]}〜${fys[0]}（${fys.length}年度）`;
+  const kessanRange = range([...DECISION_YEARS]);
 
-  const entities = KNOWN.map((k) => {
+  // 収録済み13団体の詳細（データセットごとの中身＋その団体の資料）
+  const entityDetail: Record<string, {
+    name: string; pref: string; tier: string; isPref: boolean;
+    detail: Record<string, string>;
+    sources: ReturnType<typeof sourceCard>[];
+  }> = {};
+  for (const k of KNOWN) {
     const isFull = k.code === "192015";
     const mb = MUNI_BUDGETS[k.code] ?? null;
-    const mySources = srcs.filter((s) => entityOf(s).code === k.code);
-    const ds: { key: string; label: string; ok: boolean; detail: string }[] = [];
-
+    const d: Record<string, string> = { kessan: kessanRange };
     if (isFull) {
-      ds.push({ key: "budget", label: "予算（款別）", ok: true, detail: range(KOFU_BUDGET_YEARS.map((b) => b.fy)) });
-      const projTotal = KOFU_PROJECT_YEARS.reduce((a, y) => a + y.projects.length, 0);
-      ds.push({ key: "projects", label: "事業単位（主な事業）", ok: true, detail: `${range(KOFU_PROJECT_YEARS.map((y) => y.fy))}・計${projTotal}件` });
-      ds.push({ key: "report", label: "事業報告（成果）", ok: true, detail: `${KOFU_REPORT_YEARS.map((y) => `${y.fyLabel}${y.reports.length}件`).join(" / ")}（公表サンプルのみ）` });
-      ds.push({ key: "council", label: "議会の構成", ok: true, detail: `${range(KOFU_COUNCIL_YEARS.map((c) => c.fy))}・議決つき` });
-      ds.push({ key: "execution", label: "執行・決算（確定値）", ok: true, detail: range(KOFU_EXECUTION_YEARS.map((e) => e.fy)) });
-      ds.push({ key: "evaluation", label: "事務事業評価", ok: true, detail: `${range(KOFU_EVALUATION_YEARS.map((y) => y.fy))}・約1,500件` });
-      ds.push({ key: "outturn", label: "統計書（款項×当初/最終/決算）", ok: true, detail: range(KOFU_OUTTURN_YEARS.map((y) => y.fy)) });
+      d.budget = range(KOFU_BUDGET_YEARS.map((b) => b.fy));
+      d.projects = `${range(KOFU_PROJECT_YEARS.map((y) => y.fy))}・計${KOFU_PROJECT_YEARS.reduce((a, y) => a + y.projects.length, 0)}件`;
+      d.report = `${KOFU_REPORT_YEARS.map((y) => `${y.fyLabel}${y.reports.length}件`).join(" / ")}（公表サンプルのみ）`;
+      d.council = `${range(KOFU_COUNCIL_YEARS.map((c) => c.fy))}・議決つき`;
+      d.execution = range(KOFU_EXECUTION_YEARS.map((e) => e.fy));
+      d.evaluation = `${range(KOFU_EVALUATION_YEARS.map((y) => y.fy))}・約1,500件`;
+      d.outturn = range(KOFU_OUTTURN_YEARS.map((y) => y.fy));
     } else if (mb) {
-      const execN = mb.execution?.length ?? 0;
-      ds.push({ key: "budget", label: "予算（款別）", ok: true, detail: `${mb.fyLabel}・前年当初比つき` });
-      ds.push({ key: "projects", label: "事業単位（主な事業）", ok: mb.projects.length > 0, detail: mb.projects.length > 0 ? `${mb.projects.length}件` : "未収録（curated な一覧が非公開）" });
-      ds.push({ key: "report", label: "事業報告（成果）", ok: false, detail: "未収録" });
-      ds.push({ key: "council", label: "議会の構成", ok: false, detail: "未収録" });
-      ds.push({ key: "execution", label: "執行・決算（確定値）", ok: execN > 0, detail: execN > 0 ? mb.execution!.map((e) => e.fyLabel).join("・") : "未収録（決算は総務省ベースで閲覧可）" });
-      ds.push({ key: "evaluation", label: "事務事業評価", ok: false, detail: "未収録" });
-      ds.push({ key: "outturn", label: "統計書（款項×当初/最終/決算）", ok: false, detail: "未収録" });
+      d.budget = `${mb.fyLabel}・前年当初比つき`;
+      if (mb.projects.length > 0) d.projects = `${mb.projects.length}件`;
+      if ((mb.execution?.length ?? 0) > 0) d.execution = mb.execution!.map((e) => e.fyLabel).join("・");
     }
-    return {
-      muniCode: k.code,
-      name: k.name,
-      pref: k.pref,
-      tier: isFull ? "full" : "budget",
-      isPref: !!mb?.isPref,
-      datasets: ds,
-      sources: mySources.map(sourceCard),
+    entityDetail[k.code] = {
+      name: k.name, pref: k.pref, tier: isFull ? "full" : "budget", isPref: !!mb?.isPref,
+      detail: d,
+      sources: srcs.filter((s) => entityOf(s).code === k.code).map(sourceCard),
     };
-  });
+  }
 
-  const prefRows = Object.entries(PREF_CODES).map(([name, code]) => {
+  // 全1,741市町村を都道府県ごとに。f = 各データセットの 1/0（DATASETS の順）
+  const prefs = Object.entries(PREF_CODES).map(([name, code]) => {
     const shardPath = join(process.cwd(), "public/decision", `${code}.json`);
-    // readJson は unknown を返すので、必要な形だけに絞り込んでから数える
-    const muniCount = existsSync(shardPath)
-      ? Object.keys((readJson(shardPath) as { munis?: Record<string, unknown> }).munis ?? {}).length
-      : 0;
-    const deep = entities.filter((e) => e.pref === name);
-    return {
-      name,
-      code,
-      muniCount,
-      fullCount: deep.filter((e) => e.tier === "full").length,
-      budgetCount: deep.filter((e) => e.tier === "budget").length,
-      deepNames: deep.map((e) => e.name),
-    };
+    const munis = existsSync(shardPath)
+      ? Object.entries((readJson(shardPath) as { munis?: Record<string, { name: string }> }).munis ?? {})
+      : [];
+    const rows = munis.map(([c, m]) => {
+      const e = entityDetail[c];
+      const f = DATASETS.map((ds) => (ds.key === "kessan" ? 1 : e && e.detail[ds.key] ? 1 : 0)).join("");
+      return { c, n: m.name, f };
+    });
+    // 県エンティティ（山梨県の当初予算など。市町村シャードには居ない）を先頭に足す
+    const prefEntities = KNOWN.filter((k) => entityDetail[k.code]?.isPref && k.pref === name).map((k) => {
+      const e = entityDetail[k.code]!;
+      const f = DATASETS.map((ds) => (ds.key === "kessan" ? 0 : e.detail[ds.key] ? 1 : 0)).join("");
+      return { c: k.code, n: `${k.name}（県全体）`, f };
+    });
+    return { name, code, munis: [...prefEntities, ...rows] };
   });
 
   const national = srcs.filter((s) => entityOf(s).scopeKind === "national").map(sourceCard);
   const unclassified = srcs.filter((s) => entityOf(s).scopeKind === "unknown").map(sourceCard);
-
-  const allCards = [...entities.flatMap((e) => e.sources), ...national, ...unclassified];
+  const allCards = [...Object.values(entityDetail).flatMap((e) => e.sources), ...national, ...unclassified];
   const summary = {
     sourceCount: allCards.length,
     fileCount: allCards.reduce((a, c) => a + c.files.length, 0),
@@ -1859,84 +1858,19 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(budgets.map((b) => b.muni
     licenseOpen: allCards.filter((c) => c.licenseClass === "open").length,
     licensePermission: allCards.filter((c) => c.licenseClass === "permission-required").length,
     licenseUnverified: allCards.filter((c) => c.licenseClass === "unverified").length,
-    fullCount: entities.filter((e) => e.tier === "full").length,
-    budgetCount: entities.filter((e) => e.tier === "budget").length,
-    decisionCount: prefRows.reduce((a, p) => a + p.muniCount, 0),
-    prefCount: prefRows.filter((p) => p.muniCount > 0).length,
+    fullCount: Object.values(entityDetail).filter((e) => e.tier === "full").length,
+    budgetCount: Object.values(entityDetail).filter((e) => e.tier === "budget").length,
+    muniCount: prefs.reduce((a, p) => a + p.munis.filter((m) => !m.n.includes("（県全体）")).length, 0),
+    prefCount: prefs.filter((p) => p.munis.length > 0).length,
+    kessanRange,
   };
 
-  const coverageOut = `// このファイルは自動生成です。手で編集しないこと。
-// 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
-// データ整備状況ページの元データ。レジストリ（pipeline/registry/sources.ts）と
-// 魚拓台帳（data/archives.json）・raw-meta から導出する。
-
-export interface CoverageFile {
-  filename: string;
-  /** 原本の来歴ハッシュ（短縮） */
-  sha256: string;
-  bytes: number;
-  fetchedAt: string;
-  /** ③自サーバー配信のコピー */
-  localUrl: string;
-}
-export interface CoverageSource {
-  sourceId: string;
-  title: string;
-  publisher: string;
-  fiscalYear: string;
-  kind: string;
-  /** 発行元が示す利用条件（原文） */
-  license: string;
-  /** open=政府標準利用規約 / permission-required=要許可 / unverified=未確認 */
-  licenseClass: "open" | "permission-required" | "unverified";
-  originUrl: string;
-  landingPage: string | null;
-  files: CoverageFile[];
-  /** ②Wayback に保存済み */
-  archived: boolean;
-  /** 原本自体が恒久アーカイブ（Wayback/WARP）由来 */
-  archiveOrigin: boolean;
-  archiveUrl: string | null;
-  /** 魚拓と raw の sha256 一致を検証済み */
-  shaVerified: boolean;
-}
-export interface CoverageDataset {
-  key: string;
-  label: string;
-  ok: boolean;
-  detail: string;
-}
-export interface CoverageEntity {
-  muniCode: string;
-  name: string;
-  pref: string;
-  tier: string;
-  isPref: boolean;
-  datasets: CoverageDataset[];
-  sources: CoverageSource[];
-}
-export interface CoveragePref {
-  name: string;
-  code: string;
-  /** 総務省決算で閲覧できる市区町村数 */
-  muniCount: number;
-  fullCount: number;
-  budgetCount: number;
-  deepNames: string[];
-}
-
-/** 収録済み（予算資料ベース）のエンティティ */
-export const COVERAGE_ENTITIES: CoverageEntity[] = ${JSON.stringify(entities, null, 2)};
-/** 都道府県別の網羅状況 */
-export const COVERAGE_PREFS: CoveragePref[] = ${JSON.stringify(prefRows, null, 2)};
-/** 全国共通の資料（総務省の決算状況調など） */
-export const COVERAGE_NATIONAL: CoverageSource[] = ${JSON.stringify(national, null, 2)};
-/** scope から対象を解決できなかった資料（要メンテ・黙って隠さない） */
-export const COVERAGE_UNCLASSIFIED: CoverageSource[] = ${JSON.stringify(unclassified, null, 2)};
-export const COVERAGE_SUMMARY = ${JSON.stringify(summary, null, 2)};
-`;
-  writeFileSync(join(process.cwd(), "src/client/lib/coverage.gen.ts"), coverageOut, "utf8");
+  const out = { datasets: DATASETS, summary, prefs, entities: entityDetail, national, unclassified };
+  const dir = join(process.cwd(), "public");
+  if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
+  writeFileSync(join(dir, "coverage.json"), JSON.stringify(out), "utf8");
+  const kb = (JSON.stringify(out).length / 1024).toFixed(0);
   console.log(
-    `✓ データ整備状況を導出 → src/client/lib/coverage.gen.ts（${summary.sourceCount}資料・魚拓${summary.archivedCount}・要許可${summary.licensePermission}・未確認${summary.licenseUnverified}）`,
+    `✓ データ整備状況を導出 → public/coverage.json（${summary.muniCount}市町村・${summary.sourceCount}資料・要許可${summary.licensePermission}・未確認${summary.licenseUnverified}・${kb}KB）`,
   );
 }
