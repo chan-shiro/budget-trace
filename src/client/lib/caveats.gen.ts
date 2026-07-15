@@ -20,6 +20,15 @@ export interface Caveat {
 
 /** 団体コード → データの注意。注意の無い自治体はキーごと存在しない */
 export const CAVEATS: Record<string, Caveat[]> = {
+  "141003": [
+    {
+      "source": "yokohama-jigyo-hyoka-r7",
+      "title": "令和7年度 横浜市事業評価書（令和6年度事業）",
+      "fy": "R7",
+      "plain": null,
+      "message": "区庁舎管理費: 資料の差引 7609 が R6 263659 − R5 255960 = 7699 と一致しません（差 90）。ズレが小さいので原典側の誤植と判断し、資料どおり収録しています"
+    }
+  ],
   "141305": [
     {
       "source": "kawasaki-jigyou-hyouka-r6",
