@@ -1,0 +1,12 @@
+{
+  "sourceId": "nagoya-yosansho-r4",
+  "files": [
+    {
+      "filename": "r4.ippan.pdf",
+      "sha256": "c2e1c88c4dc97d78db312096bb010412609aeae4a3678155a5895218cb1ee3a9",
+      "bytes": 3054376,
+      "fetchedAt": "2026-07-15T10:01:20.669Z",
+      "fetchedFrom": "https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/002/742/r4.ippan.pdf"
+    }
+  ]
+}

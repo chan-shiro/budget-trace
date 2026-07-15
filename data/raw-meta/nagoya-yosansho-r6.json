@@ -1,0 +1,12 @@
+{
+  "sourceId": "nagoya-yosansho-r6",
+  "files": [
+    {
+      "filename": "ippanmeisai.pdf",
+      "sha256": "55819a73b4f3862952835a980511b17740601b51d500342e195644cc18cb2d1b",
+      "bytes": 2294414,
+      "fetchedAt": "2026-07-15T10:01:15.639Z",
+      "fetchedFrom": "https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/002/667/ippanmeisai.pdf"
+    }
+  ]
+}

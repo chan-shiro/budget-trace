@@ -1,0 +1,12 @@
+{
+  "sourceId": "yokohama-yosansho-r4",
+  "files": [
+    {
+      "filename": "r4ippan.pdf",
+      "sha256": "8f4966e197780a8af70a0d47b73663393a0f0ef7cb87c518a863c0e3a832899c",
+      "bytes": 3327386,
+      "fetchedAt": "2026-07-15T10:00:58.542Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r4/r4.files/r4ippan.pdf"
+    }
+  ]
+}

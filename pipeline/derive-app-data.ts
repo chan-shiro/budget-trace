@@ -1423,12 +1423,23 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     // 県内初の「町」（2026-07-15）。町村は資料が薄い想定だったが市と同型の様式だった
     { srcId: "fujikawaguchiko-yosansho-r8", muniCode: "194301", muniName: "富士河口湖町", prefName: "山梨県", isPref: false },
     // 政令指定都市（人口の多い順に整備。2026-07-15）。款は局ベースの独自体系で、
-    // 同じ市の decision 階層（総務省決算の目的別）とは款名が一致しない — registry のコメント参照
-    { srcId: "yokohama-yosansho-r8", muniCode: "141003", muniName: "横浜市", prefName: "神奈川県", isPref: false },
-    { srcId: "nagoya-yosansho-r8", muniCode: "231002", muniName: "名古屋市", prefName: "愛知県", isPref: false },
-    { srcId: "sapporo-yosansetsumeisho-r8", muniCode: "011002", muniName: "札幌市", prefName: "北海道", isPref: false },
-    { srcId: "fukuoka-yosansho-r8", muniCode: "401307", muniName: "福岡市", prefName: "福岡県", isPref: false },
-    { srcId: "kawasaki-yosansho-r8", muniCode: "141305", muniName: "川崎市", prefName: "神奈川県", isPref: false },
+    // 同じ市の decision 階層（総務省決算の目的別）とは款名が一致しない — registry のコメント参照。
+    // **同じ muniCode を複数年度ぶん並べる**（新しい順に整列されて MUNI_BUDGET_YEARS になる）。
+    ...(["r8", "r7", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
+      srcId: `yokohama-yosansho-${fy}`, muniCode: "141003", muniName: "横浜市", prefName: "神奈川県", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `nagoya-yosansho-${fy}`, muniCode: "231002", muniName: "名古屋市", prefName: "愛知県", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `sapporo-yosansetsumeisho-${fy}`, muniCode: "011002", muniName: "札幌市", prefName: "北海道", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `fukuoka-yosansho-${fy}`, muniCode: "401307", muniName: "福岡市", prefName: "福岡県", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `kawasaki-yosansho-${fy}`, muniCode: "141305", muniName: "川崎市", prefName: "神奈川県", isPref: false,
+    })),
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;
@@ -1529,6 +1540,9 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       prevTotalOku: doc.prevExpenditureTotal != null ? toOku(doc.prevExpenditureTotal) : null,
       yoyLabel: yoyTotal != null ? `${yoyTotal >= 0 ? "+" : ""}${yoyTotal.toFixed(1)}%` : "",
       prevBasis: doc.prevBasis,
+      // 前年度列の基準が当初でないときの根拠（札幌 R6・R2 の骨格予算 → 肉付後）。
+      // 資料に注記が無いケースは registry の parserOptions.prevNote で与えている
+      prevNote: doc.prevNote ?? "",
       revenue,
       expenditure,
       sourceTitle: src.title,
@@ -1549,7 +1563,26 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     };
   });
 
-  const byCode = Object.fromEntries(budgets.map((b) => [b.muniCode, b]));
+  // budget 階層は1自治体＝複数年度になり得る（政令市は R2〜R8 の7年前後さかのぼれる）。
+  // 年度は**新しい順**に並べる（画面の年度ドロップダウンの並び・既定の選択がこの順に依存する）。
+  // FY_ORDER は R8 > R7 > … の降順。令和以外（H31 等）が来たら比較関数を見直すこと。
+  const fyRank = (fy: string): number => {
+    const m = /^R(\d+)$/.exec(fy);
+    if (m) return 1000 + Number(m[1]);
+    const h = /^H(\d+)$/.exec(fy);
+    if (h) return Number(h[1]); // 平成は令和より必ず古い
+    throw new Error(`年度の表記を解釈できません: ${fy}（R8 / H31 形式のみ）`);
+  };
+  const byCodeYears: Record<string, typeof budgets> = {};
+  for (const b of budgets) (byCodeYears[b.muniCode] ??= []).push(b);
+  for (const [code, ys] of Object.entries(byCodeYears)) {
+    ys.sort((a, z) => fyRank(z.fy) - fyRank(a.fy));
+    const dup = ys.map((y) => y.fy).filter((fy, i, all) => all.indexOf(fy) !== i);
+    if (dup.length) throw new Error(`${code}: 同じ年度が重複しています（${dup.join(",")}）`);
+  }
+  // 最新年度だけの索引。市区町村選択・類似比較・coverage・routing は「その自治体の代表値」しか
+  // 要らないのでこちらを使う（複数年度化しても既存の消費側を壊さないための互換レイヤ）
+  const byCode = Object.fromEntries(Object.entries(byCodeYears).map(([code, ys]) => [code, ys[0]!]));
   const muniBudgetsOut = `// このファイルは自動生成です。手で編集しないこと。
 // 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
 // 甲府の類似4市（豊川・山口・沼津・和泉）の当初予算（款別歳入歳出・前年当初比較つき）。
@@ -1635,6 +1668,8 @@ export interface MuniBudget {
   prevTotalOku: number | null;
   yoyLabel: string;
   prevBasis: "当初" | "補正後";
+  /** 前年度列に関する資料注記。基準が「当初」でないときの根拠を画面に出す。無ければ空文字 */
+  prevNote: string;
   revenue: MuniKanRow[];
   expenditure: MuniKanRow[];
   /** 主な事業（豊川・和泉のみ。他市は空配列） */
@@ -1649,16 +1684,25 @@ export interface MuniBudget {
   evidence: { title: string; type: string; url: string; localUrl: string; source: string; thumb: string }[];
 }
 
-/** 団体コード → 当初予算（budget 階層の4市） */
+/**
+ * 団体コード → 当初予算の**全収録年度**（新しい順）。年度ドロップダウンはこれで作る。
+ * 1年度しか収録していない自治体は要素1つの配列になる。
+ */
+export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = ${JSON.stringify(byCodeYears, null, 2)};
+
+/**
+ * 団体コード → 当初予算（**最新年度のみ**）。市区町村選択・類似比較・coverage・routing など
+ * 「その自治体の代表値」だけが要る場面で使う。年度を切り替える画面は MUNI_BUDGET_YEARS を見ること。
+ */
 export const MUNI_BUDGETS: Record<string, MuniBudget> = ${JSON.stringify(byCode, null, 2)};
 
 /** budget 階層（予算ベースの款別ダッシュボードを持つ）自治体の団体コード */
-export const BUDGET_MUNIS: string[] = ${JSON.stringify(budgets.map((b) => b.muniCode))};
+export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))};
 `;
   writeFileSync(join(process.cwd(), "src/client/lib/munibudgets.gen.ts"), muniBudgetsOut, "utf8");
   console.log(
-    `✓ 類似市の当初予算を導出 → src/client/lib/munibudgets.gen.ts（${budgets
-      .map((b) => `${b.muniName}:${b.totalOku.toFixed(0)}億`)
+    `✓ 類似市の当初予算を導出 → src/client/lib/munibudgets.gen.ts（${Object.values(byCodeYears)
+      .map((ys) => `${ys[0]!.muniName}:${ys[0]!.totalOku.toFixed(0)}億${ys.length > 1 ? `(${ys.length}年度)` : ""}`)
       .join(" / ")}）`,
   );
 }

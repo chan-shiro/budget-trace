@@ -606,6 +606,697 @@ export const SOURCES: SourceEntry[] = [
   //   （札幌 694,000千円・福岡 1千円）。validate は当年度 Σ しか見ないので error にはならない。
   //   docs/data-sources.md §8 に記録。
   {
+    // 札幌市 R7。総括表は**全年度 p.8/p.9・印字+6 で不動**（頁数が 305→346 と変わっても巻頭固定）。
+    // **PDF のファイル名に規則が一切ない**ので年度追加は必ず年度インデックス（/yosan-kessan/index.html）から辿る。
+    // 「予算の概要」は表が画像で決定的パース不可 → 説明書を採る（R8 と同じ判断）。
+    id: "sapporo-yosansetsumeisho-r7",
+    title: "令和7年度 札幌市各会計予算説明書（一般会計・総括表）",
+    publisher: "札幌市",
+    url: null,
+    urls: ["https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r7/documents/02_r7_yosansetsumeisho_ippan.pdf"],
+    landingPage: "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r7/reiwa7nendo_yosan.html",
+    kind: "pdf",
+    fiscalYear: "R7",
+    scope: "札幌市（一般会計・団体コード011002）",
+    license:
+      "札幌市公式ホームページに掲載されている文章、写真等に関する諸権利は原則として札幌市に帰属しています。ただし、一部の写真の著作権などについては原著作者が所有しています。私的使用のための複製や、引用など著作権法上認められた場合を除き、当ホームページの掲載コンテンツを複製・転用する際は、必ず事前にそれぞれのページを所管する各担当課にご相談ください。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 8,
+      expenditurePage: 9,
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+    },
+  },
+  {
+    // 札幌市 R6。総括表は**全年度 p.8/p.9・印字+6 で不動**（頁数が 305→346 と変わっても巻頭固定）。
+    // **PDF のファイル名に規則が一切ない**ので年度追加は必ず年度インデックス（/yosan-kessan/index.html）から辿る。
+    // 「予算の概要」は表が画像で決定的パース不可 → 説明書を採る（R8 と同じ判断）。
+    // **⚠ 前年度列が「当初」でない**。R5 は市長選の年で当初予算が骨格予算のため、
+    // 本資料の前年度列は**肉付後**の額。**資料に骨格/肉付の記載が一切ない**ので自動判定は
+    // 「当初」と誤る → prevBasis を明示的に上書きし、根拠を prevNote で画面に出す。
+    // 次は R10（R9=2027年4月が選挙年）で再発する。docs §8b 参照。
+    id: "sapporo-yosansetsumeisho-r6",
+    title: "令和6年度 札幌市各会計予算説明書（一般会計・総括表）",
+    publisher: "札幌市",
+    url: null,
+    urls: ["https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r6/documents/r6_yosansetsumeisyoippann.pdf"],
+    landingPage: "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r6/reiwa6nendo_yosan.html",
+    kind: "pdf",
+    fiscalYear: "R6",
+    scope: "札幌市（一般会計・団体コード011002）",
+    license:
+      "札幌市公式ホームページに掲載されている文章、写真等に関する諸権利は原則として札幌市に帰属しています。ただし、一部の写真の著作権などについては原著作者が所有しています。私的使用のための複製や、引用など著作権法上認められた場合を除き、当ホームページの掲載コンテンツを複製・転用する際は、必ず事前にそれぞれのページを所管する各担当課にご相談ください。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 8,
+      expenditurePage: 9,
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+      prevBasis: "補正後",
+      prevNote: 
+        "令和5年度当初予算は市長選挙に伴う骨格予算のため、前年度予算額は肉付予算（第1回臨時会・第2回定例会の補正）後の額（裏取り: 令和5年度第2回定例会 補正予算の概要「補正後予算額は対前年度比7.1％増の1兆2,442億円」）",
+    },
+  },
+  {
+    // 札幌市 R5。総括表は**全年度 p.8/p.9・印字+6 で不動**（頁数が 305→346 と変わっても巻頭固定）。
+    // **PDF のファイル名に規則が一切ない**ので年度追加は必ず年度インデックス（/yosan-kessan/index.html）から辿る。
+    // 「予算の概要」は表が画像で決定的パース不可 → 説明書を採る（R8 と同じ判断）。
+    id: "sapporo-yosansetsumeisho-r5",
+    title: "令和5年度 札幌市各会計予算説明書（一般会計・総括表）",
+    publisher: "札幌市",
+    url: null,
+    urls: ["https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r5/documents/r5kakukaikeiyosansetumeisyo.pdf"],
+    landingPage: "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r5/reiwa5nendo_yosan.html",
+    kind: "pdf",
+    fiscalYear: "R5",
+    scope: "札幌市（一般会計・団体コード011002）",
+    license:
+      "札幌市公式ホームページに掲載されている文章、写真等に関する諸権利は原則として札幌市に帰属しています。ただし、一部の写真の著作権などについては原著作者が所有しています。私的使用のための複製や、引用など著作権法上認められた場合を除き、当ホームページの掲載コンテンツを複製・転用する際は、必ず事前にそれぞれのページを所管する各担当課にご相談ください。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 8,
+      expenditurePage: 9,
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+    },
+  },
+  {
+    // 札幌市 R4。総括表は**全年度 p.8/p.9・印字+6 で不動**（頁数が 305→346 と変わっても巻頭固定）。
+    // **PDF のファイル名に規則が一切ない**ので年度追加は必ず年度インデックス（/yosan-kessan/index.html）から辿る。
+    // 「予算の概要」は表が画像で決定的パース不可 → 説明書を採る（R8 と同じ判断）。
+    id: "sapporo-yosansetsumeisho-r4",
+    title: "令和4年度 札幌市各会計予算説明書（一般会計・総括表）",
+    publisher: "札幌市",
+    url: null,
+    urls: ["https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r4/documents/r4_yosansetsumeisho.pdf"],
+    landingPage: "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r4/reiwa4nendo_yosan.html",
+    kind: "pdf",
+    fiscalYear: "R4",
+    scope: "札幌市（一般会計・団体コード011002）",
+    license:
+      "札幌市公式ホームページに掲載されている文章、写真等に関する諸権利は原則として札幌市に帰属しています。ただし、一部の写真の著作権などについては原著作者が所有しています。私的使用のための複製や、引用など著作権法上認められた場合を除き、当ホームページの掲載コンテンツを複製・転用する際は、必ず事前にそれぞれのページを所管する各担当課にご相談ください。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 8,
+      expenditurePage: 9,
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+    },
+  },
+  {
+    // 札幌市 R3。総括表は**全年度 p.8/p.9・印字+6 で不動**（頁数が 305→346 と変わっても巻頭固定）。
+    // **PDF のファイル名に規則が一切ない**ので年度追加は必ず年度インデックス（/yosan-kessan/index.html）から辿る。
+    // 「予算の概要」は表が画像で決定的パース不可 → 説明書を採る（R8 と同じ判断）。
+    // R3 の歳出は13款（R4 以降は12款）→ 連番の warning が出るのが正常。
+    id: "sapporo-yosansetsumeisho-r3",
+    title: "令和3年度 札幌市各会計予算説明書（一般会計・総括表）",
+    publisher: "札幌市",
+    url: null,
+    urls: ["https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r3/documents/r3yosan_kakukaikeiyosansetsumeisyo_ippantokubetsu.pdf"],
+    landingPage: "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r3/reiwa3nendo_yosan.html",
+    kind: "pdf",
+    fiscalYear: "R3",
+    scope: "札幌市（一般会計・団体コード011002）",
+    license:
+      "札幌市公式ホームページに掲載されている文章、写真等に関する諸権利は原則として札幌市に帰属しています。ただし、一部の写真の著作権などについては原著作者が所有しています。私的使用のための複製や、引用など著作権法上認められた場合を除き、当ホームページの掲載コンテンツを複製・転用する際は、必ず事前にそれぞれのページを所管する各担当課にご相談ください。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 8,
+      expenditurePage: 9,
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+    },
+  },
+  {
+    // 札幌市 R2。総括表は**全年度 p.8/p.9・印字+6 で不動**（頁数が 305→346 と変わっても巻頭固定）。
+    // **PDF のファイル名に規則が一切ない**ので年度追加は必ず年度インデックス（/yosan-kessan/index.html）から辿る。
+    // 「予算の概要」は表が画像で決定的パース不可 → 説明書を採る（R8 と同じ判断）。
+    // **⚠ 前年度列が「当初」でない**。R1 は市長選の年で当初予算が骨格予算のため、
+    // 本資料の前年度列は**肉付後**の額。**資料に骨格/肉付の記載が一切ない**ので自動判定は
+    // 「当初」と誤る → prevBasis を明示的に上書きし、根拠を prevNote で画面に出す。
+    // 次は R10（R9=2027年4月が選挙年）で再発する。docs §8b 参照。
+    id: "sapporo-yosansetsumeisho-r2",
+    title: "令和2年度 札幌市各会計予算説明書（一般会計・総括表）",
+    publisher: "札幌市",
+    url: null,
+    urls: ["https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r2/documents/reiwa2nenndoyosannsetsumeisyoippankaikeitokubetukaikei.pdf"],
+    landingPage: "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r2/reiwa2nenndoyosann.html",
+    kind: "pdf",
+    fiscalYear: "R2",
+    scope: "札幌市（一般会計・団体コード011002）",
+    license:
+      "札幌市公式ホームページに掲載されている文章、写真等に関する諸権利は原則として札幌市に帰属しています。ただし、一部の写真の著作権などについては原著作者が所有しています。私的使用のための複製や、引用など著作権法上認められた場合を除き、当ホームページの掲載コンテンツを複製・転用する際は、必ず事前にそれぞれのページを所管する各担当課にご相談ください。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 8,
+      expenditurePage: 9,
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+      prevBasis: "補正後",
+      prevNote: 
+        "令和元年度当初予算は市長選挙に伴う骨格予算のため、前年度予算額は肉付予算（第1回臨時会・第2回定例会の補正）後の額（裏取り: 令和元年度 補正予算のポイント「一般会計 1,022,701＝当初 1,019,300＋第1回臨時 42＋第2回定例 3,359」百万円）",
+    },
+  },
+  // ---- 政令市の過年度（2026-07-15）。ページ位置は年度で動くので必ず物理ページを実確認する。
+  //      年度 URL の規則も破れる（福岡 R3/R2 の命名・川崎の分冊番号）。docs §8b 参照 ----
+  {
+    // 横浜市 R7。歳入 p.3-4 / 歳出 p.5-6（**年度で位置が動く**: R6-R8=3-4/5-6・R4-R5=7-8/9-10・R3=6-7/8-9）。
+    // 年度ページ名も揺れる（R8 だけ r8yosan.html・R7 以降は r7.html）。歳出款は R5 以前が18款・R6 以降が20款
+    // （局再編で 文化観光費→にぎわいスポーツ文化費・環境創造費→みどり環境費+河川費・医療費 新設）＝**経年で款が繋がらない**。
+    id: "yokohama-yosansho-r7",
+    title: "令和7年度 横浜市一般会計予算（事項別明細書 総括・款別歳入歳出）",
+    publisher: "横浜市",
+    url: null,
+    urls: ["https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r7/r7.files/r7ippan.pdf"],
+    landingPage: "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r7/r7.html",
+    kind: "pdf",
+    fiscalYear: "R7",
+    scope: "横浜市（一般会計・団体コード141003）",
+    license:
+      "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePages: { from: 3, to: 4 },
+      expenditurePages: { from: 5, to: 6 },
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+    },
+  },
+  {
+    // 横浜市 R6。歳入 p.3-4 / 歳出 p.5-6（**年度で位置が動く**: R6-R8=3-4/5-6・R4-R5=7-8/9-10・R3=6-7/8-9）。
+    // 年度ページ名も揺れる（R8 だけ r8yosan.html・R7 以降は r6.html）。歳出款は R5 以前が18款・R6 以降が20款
+    // （局再編で 文化観光費→にぎわいスポーツ文化費・環境創造費→みどり環境費+河川費・医療費 新設）＝**経年で款が繋がらない**。
+    id: "yokohama-yosansho-r6",
+    title: "令和6年度 横浜市一般会計予算（事項別明細書 総括・款別歳入歳出）",
+    publisher: "横浜市",
+    url: null,
+    urls: ["https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r6/r6.files/r6ippan.pdf"],
+    landingPage: "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r6/r6.html",
+    kind: "pdf",
+    fiscalYear: "R6",
+    scope: "横浜市（一般会計・団体コード141003）",
+    license:
+      "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePages: { from: 3, to: 4 },
+      expenditurePages: { from: 5, to: 6 },
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+    },
+  },
+  {
+    // 横浜市 R5。歳入 p.7-8 / 歳出 p.9-10（**年度で位置が動く**: R6-R8=3-4/5-6・R4-R5=7-8/9-10・R3=6-7/8-9）。
+    // 年度ページ名も揺れる（R8 だけ r8yosan.html・R7 以降は r5.html）。歳出款は R5 以前が18款・R6 以降が20款
+    // （局再編で 文化観光費→にぎわいスポーツ文化費・環境創造費→みどり環境費+河川費・医療費 新設）＝**経年で款が繋がらない**。
+    id: "yokohama-yosansho-r5",
+    title: "令和5年度 横浜市一般会計予算（事項別明細書 総括・款別歳入歳出）",
+    publisher: "横浜市",
+    url: null,
+    urls: ["https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r5/r5.files/r5ippan.pdf"],
+    landingPage: "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r5/r5.html",
+    kind: "pdf",
+    fiscalYear: "R5",
+    scope: "横浜市（一般会計・団体コード141003）",
+    license:
+      "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePages: { from: 7, to: 8 },
+      expenditurePages: { from: 9, to: 10 },
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+    },
+  },
+  {
+    // 横浜市 R4。歳入 p.7-8 / 歳出 p.9-10（**年度で位置が動く**: R6-R8=3-4/5-6・R4-R5=7-8/9-10・R3=6-7/8-9）。
+    // 年度ページ名も揺れる（R8 だけ r8yosan.html・R7 以降は r4.html）。歳出款は R5 以前が18款・R6 以降が20款
+    // （局再編で 文化観光費→にぎわいスポーツ文化費・環境創造費→みどり環境費+河川費・医療費 新設）＝**経年で款が繋がらない**。
+    id: "yokohama-yosansho-r4",
+    title: "令和4年度 横浜市一般会計予算（事項別明細書 総括・款別歳入歳出）",
+    publisher: "横浜市",
+    url: null,
+    urls: ["https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r4/r4.files/r4ippan.pdf"],
+    landingPage: "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r4/r4.html",
+    kind: "pdf",
+    fiscalYear: "R4",
+    scope: "横浜市（一般会計・団体コード141003）",
+    license:
+      "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePages: { from: 7, to: 8 },
+      expenditurePages: { from: 9, to: 10 },
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+    },
+  },
+  {
+    // 横浜市 R3。歳入 p.6-7 / 歳出 p.8-9（**年度で位置が動く**: R6-R8=3-4/5-6・R4-R5=7-8/9-10・R3=6-7/8-9）。
+    // 年度ページ名も揺れる（R8 だけ r8yosan.html・R7 以降は r3.html）。歳出款は R5 以前が18款・R6 以降が20款
+    // （局再編で 文化観光費→にぎわいスポーツ文化費・環境創造費→みどり環境費+河川費・医療費 新設）＝**経年で款が繋がらない**。
+    id: "yokohama-yosansho-r3",
+    title: "令和3年度 横浜市一般会計予算（事項別明細書 総括・款別歳入歳出）",
+    publisher: "横浜市",
+    url: null,
+    urls: ["https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r3/r3.files/r3ippan.pdf"],
+    landingPage: "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r3/r3.html",
+    kind: "pdf",
+    fiscalYear: "R3",
+    scope: "横浜市（一般会計・団体コード141003）",
+    license:
+      "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePages: { from: 6, to: 7 },
+      expenditurePages: { from: 8, to: 9 },
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+    },
+  },
+  {
+    // 名古屋市 R7。R8 と完全同型（歳入 p.5 / 歳出 p.6・印字+4 で全年度不変）。修正可決は R8 のみで、
+    // R7 以前は発行元が原案しか出していない＝取り違えの余地なし。
+    id: "nagoya-yosansho-r7",
+    title: "令和7年度 名古屋市一般会計予算に関する説明書（歳入歳出予算事項別明細書 総括）",
+    publisher: "名古屋市",
+    url: null,
+    urls: ["https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/032/007/r7ippannmeisai.pdf"],
+    landingPage: "https://www.city.nagoya.jp/shisei/zaisei/1002655/1002657/1002658/1032005/1032006/index.html",
+    kind: "pdf",
+    fiscalYear: "R7",
+    scope: "名古屋市（一般会計・団体コード231002）",
+    license:
+      "原則として名古屋市公式ウェブサイト内のコンテンツについては、別添の免責事項に同意して利用されているものだと見なしますので、閲覧及び利用に制限はありません。ただし、名古屋市公式ウェブサイト内のコンテンツを再利用する場合については、以下のような取り扱いとしておりますのでご留意ください。コンテンツ内に特に記載のない場合は、内容の改変を一切行わないこと／著作権者が名古屋市であることを明記すること の2つの条件を満たした上であれば、以下の特例利用を認めます。組織内部において、名古屋市公式ウェブサイトのコンテンツを複製して利用する場合は、その利用が組織内に限られるという前提であれば特に制限無く複製してご利用いただけます。ただし、組織外に向けて発行するもの(パンフレット、チラシ、小冊子)への利用はこの特例の適用外とします。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 5,
+      expenditurePage: 6,
+      revenueHeading: "総括",
+      expenditureHeading: "（歳出）",
+    },
+  },
+  {
+    // 名古屋市 R6。R8 と完全同型（歳入 p.5 / 歳出 p.6・印字+4 で全年度不変）。修正可決は R8 のみで、
+    // R7 以前は発行元が原案しか出していない＝取り違えの余地なし。
+    id: "nagoya-yosansho-r6",
+    title: "令和6年度 名古屋市一般会計予算に関する説明書（歳入歳出予算事項別明細書 総括）",
+    publisher: "名古屋市",
+    url: null,
+    urls: ["https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/002/667/ippanmeisai.pdf"],
+    landingPage: "https://www.city.nagoya.jp/zaisei/page/0000172292.html",
+    kind: "pdf",
+    fiscalYear: "R6",
+    scope: "名古屋市（一般会計・団体コード231002）",
+    license:
+      "原則として名古屋市公式ウェブサイト内のコンテンツについては、別添の免責事項に同意して利用されているものだと見なしますので、閲覧及び利用に制限はありません。ただし、名古屋市公式ウェブサイト内のコンテンツを再利用する場合については、以下のような取り扱いとしておりますのでご留意ください。コンテンツ内に特に記載のない場合は、内容の改変を一切行わないこと／著作権者が名古屋市であることを明記すること の2つの条件を満たした上であれば、以下の特例利用を認めます。組織内部において、名古屋市公式ウェブサイトのコンテンツを複製して利用する場合は、その利用が組織内に限られるという前提であれば特に制限無く複製してご利用いただけます。ただし、組織外に向けて発行するもの(パンフレット、チラシ、小冊子)への利用はこの特例の適用外とします。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 5,
+      expenditurePage: 6,
+      revenueHeading: "総括",
+      expenditureHeading: "（歳出）",
+    },
+  },
+  {
+    // 名古屋市 R5。R8 と完全同型（歳入 p.5 / 歳出 p.6・印字+4 で全年度不変）。修正可決は R8 のみで、
+    // R7 以前は発行元が原案しか出していない＝取り違えの余地なし。
+    id: "nagoya-yosansho-r5",
+    title: "令和5年度 名古屋市一般会計予算に関する説明書（歳入歳出予算事項別明細書 総括）",
+    publisher: "名古屋市",
+    url: null,
+    urls: ["https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/002/706/r5.ippanmeisai.pdf"],
+    landingPage: "https://www.city.nagoya.jp/zaisei/page/0000161170.html",
+    kind: "pdf",
+    fiscalYear: "R5",
+    scope: "名古屋市（一般会計・団体コード231002）",
+    license:
+      "原則として名古屋市公式ウェブサイト内のコンテンツについては、別添の免責事項に同意して利用されているものだと見なしますので、閲覧及び利用に制限はありません。ただし、名古屋市公式ウェブサイト内のコンテンツを再利用する場合については、以下のような取り扱いとしておりますのでご留意ください。コンテンツ内に特に記載のない場合は、内容の改変を一切行わないこと／著作権者が名古屋市であることを明記すること の2つの条件を満たした上であれば、以下の特例利用を認めます。組織内部において、名古屋市公式ウェブサイトのコンテンツを複製して利用する場合は、その利用が組織内に限られるという前提であれば特に制限無く複製してご利用いただけます。ただし、組織外に向けて発行するもの(パンフレット、チラシ、小冊子)への利用はこの特例の適用外とします。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 5,
+      expenditurePage: 6,
+      revenueHeading: "総括",
+      expenditureHeading: "（歳出）",
+    },
+  },
+  {
+    // 名古屋市 R4。R8 と完全同型（歳入 p.5 / 歳出 p.6・印字+4 で全年度不変）。修正可決は R8 のみで、
+    // R7 以前は発行元が原案しか出していない＝取り違えの余地なし。
+    id: "nagoya-yosansho-r4",
+    title: "令和4年度 名古屋市一般会計予算に関する説明書（歳入歳出予算事項別明細書 総括）",
+    publisher: "名古屋市",
+    url: null,
+    urls: ["https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/002/742/r4.ippan.pdf"],
+    landingPage: "https://www.city.nagoya.jp/zaisei/page/0000149788.html",
+    kind: "pdf",
+    fiscalYear: "R4",
+    scope: "名古屋市（一般会計・団体コード231002）",
+    license:
+      "原則として名古屋市公式ウェブサイト内のコンテンツについては、別添の免責事項に同意して利用されているものだと見なしますので、閲覧及び利用に制限はありません。ただし、名古屋市公式ウェブサイト内のコンテンツを再利用する場合については、以下のような取り扱いとしておりますのでご留意ください。コンテンツ内に特に記載のない場合は、内容の改変を一切行わないこと／著作権者が名古屋市であることを明記すること の2つの条件を満たした上であれば、以下の特例利用を認めます。組織内部において、名古屋市公式ウェブサイトのコンテンツを複製して利用する場合は、その利用が組織内に限られるという前提であれば特に制限無く複製してご利用いただけます。ただし、組織外に向けて発行するもの(パンフレット、チラシ、小冊子)への利用はこの特例の適用外とします。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 5,
+      expenditurePage: 6,
+      revenueHeading: "総括",
+      expenditureHeading: "（歳出）",
+    },
+  },
+  {
+    // 名古屋市 R3。R8 と完全同型（歳入 p.5 / 歳出 p.6・印字+4 で全年度不変）。修正可決は R8 のみで、
+    // R7 以前は発行元が原案しか出していない＝取り違えの余地なし。
+    id: "nagoya-yosansho-r3",
+    title: "令和3年度 名古屋市一般会計予算に関する説明書（歳入歳出予算事項別明細書 総括）",
+    publisher: "名古屋市",
+    url: null,
+    urls: ["https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/002/783/3ippanmeisai.pdf"],
+    landingPage: "https://www.city.nagoya.jp/zaisei/page/0000137945.html",
+    kind: "pdf",
+    fiscalYear: "R3",
+    scope: "名古屋市（一般会計・団体コード231002）",
+    license:
+      "原則として名古屋市公式ウェブサイト内のコンテンツについては、別添の免責事項に同意して利用されているものだと見なしますので、閲覧及び利用に制限はありません。ただし、名古屋市公式ウェブサイト内のコンテンツを再利用する場合については、以下のような取り扱いとしておりますのでご留意ください。コンテンツ内に特に記載のない場合は、内容の改変を一切行わないこと／著作権者が名古屋市であることを明記すること の2つの条件を満たした上であれば、以下の特例利用を認めます。組織内部において、名古屋市公式ウェブサイトのコンテンツを複製して利用する場合は、その利用が組織内に限られるという前提であれば特に制限無く複製してご利用いただけます。ただし、組織外に向けて発行するもの(パンフレット、チラシ、小冊子)への利用はこの特例の適用外とします。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 5,
+      expenditurePage: 6,
+      revenueHeading: "総括",
+      expenditureHeading: "（歳出）",
+    },
+  },
+  {
+    // 名古屋市 R2。R8 と完全同型（歳入 p.5 / 歳出 p.6・印字+4 で全年度不変）。修正可決は R8 のみで、
+    // R7 以前は発行元が原案しか出していない＝取り違えの余地なし。
+    // **R2 は歳出15款で「職員費」が無い**（R3 で新設され全款から人件費が抜かれた）。R3 以降と
+    // 同一系列で款別を並べると誤読を生む（教育費 R2 1,852億 → R8 1,287億）。歳入は R2-R8 とも16款で安定。
+    id: "nagoya-yosansho-r2",
+    title: "令和2年度 名古屋市一般会計予算に関する説明書（歳入歳出予算事項別明細書 総括）",
+    publisher: "名古屋市",
+    url: null,
+    urls: ["https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/002/830/2ippanmeisai.pdf"],
+    landingPage: "https://www.city.nagoya.jp/shisei/zaisei/1002655/1034927/1002826/1002827/1002828/1002829/index.html",
+    kind: "pdf",
+    fiscalYear: "R2",
+    scope: "名古屋市（一般会計・団体コード231002）",
+    license:
+      "原則として名古屋市公式ウェブサイト内のコンテンツについては、別添の免責事項に同意して利用されているものだと見なしますので、閲覧及び利用に制限はありません。ただし、名古屋市公式ウェブサイト内のコンテンツを再利用する場合については、以下のような取り扱いとしておりますのでご留意ください。コンテンツ内に特に記載のない場合は、内容の改変を一切行わないこと／著作権者が名古屋市であることを明記すること の2つの条件を満たした上であれば、以下の特例利用を認めます。組織内部において、名古屋市公式ウェブサイトのコンテンツを複製して利用する場合は、その利用が組織内に限られるという前提であれば特に制限無く複製してご利用いただけます。ただし、組織外に向けて発行するもの(パンフレット、チラシ、小冊子)への利用はこの特例の適用外とします。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 5,
+      expenditurePage: 6,
+      revenueHeading: "総括",
+      expenditureHeading: "（歳出）",
+    },
+  },
+  {
+    // 福岡市 R7。歳入 p.4 / 歳出 p.5。**R7・R8 は p.4/p.5・R2〜R6 は p.3/p.4**（R7 で注記ページが
+    // 1枚入り全体が +1 ずれた）。印字は全年度 2/3 なので**印字から外挿すると必ず外れる**。
+    // 年度ページの `_2` は R6〜R8 のみ。
+    id: "fukuoka-yosansho-r7",
+    title: "令和7年度 福岡市当初予算案計数資料（款別歳入歳出）",
+    publisher: "福岡市",
+    url: null,
+    urls: ["https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/documents/04_R7_keisuusiryou.pdf"],
+    landingPage: "https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/7Ntoushoyosanan_2.html",
+    kind: "pdf",
+    fiscalYear: "R7",
+    scope: "福岡市（一般会計・団体コード401307）",
+    license:
+      "福岡市ホームページに掲載している個々の情報（文章、写真、イラストなど）に関する著作権は、原則として福岡市に帰属します。（一部の画像等の著作権は、福岡市以外の原著作者が所有しています。）当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 4,
+      expenditurePage: 5,
+      revenueHeading: "【当初】",
+      expenditureHeading: "【当初】",
+    },
+  },
+  {
+    // 福岡市 R6。歳入 p.3 / 歳出 p.4。**R7・R8 は p.4/p.5・R2〜R6 は p.3/p.4**（R7 で注記ページが
+    // 1枚入り全体が +1 ずれた）。印字は全年度 2/3 なので**印字から外挿すると必ず外れる**。
+    // 年度ページの `_2` は R6〜R8 のみ。
+    id: "fukuoka-yosansho-r6",
+    title: "令和6年度 福岡市当初予算案計数資料（款別歳入歳出）",
+    publisher: "福岡市",
+    url: null,
+    urls: ["https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/documents/04_R6_keisuusiryou.pdf"],
+    landingPage: "https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/6Ntoushoyosanan_2.html",
+    kind: "pdf",
+    fiscalYear: "R6",
+    scope: "福岡市（一般会計・団体コード401307）",
+    license:
+      "福岡市ホームページに掲載している個々の情報（文章、写真、イラストなど）に関する著作権は、原則として福岡市に帰属します。（一部の画像等の著作権は、福岡市以外の原著作者が所有しています。）当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 3,
+      expenditurePage: 4,
+      revenueHeading: "【当初】",
+      expenditureHeading: "【当初】",
+    },
+  },
+  {
+    // 福岡市 R5。歳入 p.3 / 歳出 p.4。**R7・R8 は p.4/p.5・R2〜R6 は p.3/p.4**（R7 で注記ページが
+    // 1枚入り全体が +1 ずれた）。印字は全年度 2/3 なので**印字から外挿すると必ず外れる**。
+    // 年度ページの `_2` は R6〜R8 のみ。
+    id: "fukuoka-yosansho-r5",
+    title: "令和5年度 福岡市当初予算案計数資料（款別歳入歳出）",
+    publisher: "福岡市",
+    url: null,
+    urls: ["https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/documents/04_R5_keisuusiryou.pdf"],
+    landingPage: "https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/5Ntoushoyosanan.html",
+    kind: "pdf",
+    fiscalYear: "R5",
+    scope: "福岡市（一般会計・団体コード401307）",
+    license:
+      "福岡市ホームページに掲載している個々の情報（文章、写真、イラストなど）に関する著作権は、原則として福岡市に帰属します。（一部の画像等の著作権は、福岡市以外の原著作者が所有しています。）当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 3,
+      expenditurePage: 4,
+      revenueHeading: "【当初】",
+      expenditureHeading: "【当初】",
+    },
+  },
+  {
+    // 福岡市 R4。歳入 p.3 / 歳出 p.4。**R7・R8 は p.4/p.5・R2〜R6 は p.3/p.4**（R7 で注記ページが
+    // 1枚入り全体が +1 ずれた）。印字は全年度 2/3 なので**印字から外挿すると必ず外れる**。
+    // 年度ページの `_2` は R6〜R8 のみ。
+    id: "fukuoka-yosansho-r4",
+    title: "令和4年度 福岡市当初予算案計数資料（款別歳入歳出）",
+    publisher: "福岡市",
+    url: null,
+    urls: ["https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/documents/04_R4_keisuusiryou.pdf"],
+    landingPage: "https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/4Ntoushoyosanan.html",
+    kind: "pdf",
+    fiscalYear: "R4",
+    scope: "福岡市（一般会計・団体コード401307）",
+    license:
+      "福岡市ホームページに掲載している個々の情報（文章、写真、イラストなど）に関する著作権は、原則として福岡市に帰属します。（一部の画像等の著作権は、福岡市以外の原著作者が所有しています。）当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 3,
+      expenditurePage: 4,
+      revenueHeading: "【当初】",
+      expenditureHeading: "【当初】",
+    },
+  },
+  {
+    // 福岡市 R3。歳入 p.3 / 歳出 p.4。**R7・R8 は p.4/p.5・R2〜R6 は p.3/p.4**（R7 で注記ページが
+    // 1枚入り全体が +1 ずれた）。印字は全年度 2/3 なので**印字から外挿すると必ず外れる**。
+    // 年度ページの `_2` は R6〜R8 のみ。
+    // **ファイル名の規則が破れる**: R3 は `04.R3…`（区切りがドット）・R2 はさらに `keisuu`+`shi`ryou。
+    id: "fukuoka-yosansho-r3",
+    title: "令和3年度 福岡市当初予算案計数資料（款別歳入歳出）",
+    publisher: "福岡市",
+    url: null,
+    urls: ["https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/documents/04.R3keisuusiryou.pdf"],
+    landingPage: "https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/3Ntoushoyosanan.html",
+    kind: "pdf",
+    fiscalYear: "R3",
+    scope: "福岡市（一般会計・団体コード401307）",
+    license:
+      "福岡市ホームページに掲載している個々の情報（文章、写真、イラストなど）に関する著作権は、原則として福岡市に帰属します。（一部の画像等の著作権は、福岡市以外の原著作者が所有しています。）当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 3,
+      expenditurePage: 4,
+      revenueHeading: "【当初】",
+      expenditureHeading: "【当初】",
+    },
+  },
+  {
+    // 福岡市 R2。歳入 p.3 / 歳出 p.4。**R7・R8 は p.4/p.5・R2〜R6 は p.3/p.4**（R7 で注記ページが
+    // 1枚入り全体が +1 ずれた）。印字は全年度 2/3 なので**印字から外挿すると必ず外れる**。
+    // 年度ページの `_2` は R6〜R8 のみ。
+    // **ファイル名の規則が破れる**: R3 は `04.R3…`（区切りがドット）・R2 はさらに `keisuu`+`shi`ryou。
+    // R2 は款7「法人事業税交付金」が新設で前年度欄が空＋伸率「皆増」。パーサの皆増対応（#63）が前提。
+    // 款番号は年度間で安定しない（R2 でこの款が入り以降が繰り下がる）→ **年度比較を款番号で突合しない**。
+    id: "fukuoka-yosansho-r2",
+    title: "令和2年度 福岡市当初予算案計数資料（款別歳入歳出）",
+    publisher: "福岡市",
+    url: null,
+    urls: ["https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/documents/04.R2keisuushiryou.pdf"],
+    landingPage: "https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/2Ntoushoyosanan.html",
+    kind: "pdf",
+    fiscalYear: "R2",
+    scope: "福岡市（一般会計・団体コード401307）",
+    license:
+      "福岡市ホームページに掲載している個々の情報（文章、写真、イラストなど）に関する著作権は、原則として福岡市に帰属します。（一部の画像等の著作権は、福岡市以外の原著作者が所有しています。）当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 3,
+      expenditurePage: 4,
+      revenueHeading: "【当初】",
+      expenditureHeading: "【当初】",
+    },
+  },
+  {
+    // 川崎市 R7。**R7 以前は「予算案について」しかない**（確定版は R8 が初）。R8 で案版と確定版の
+    // 款別数値が完全一致することを確認済み＝無修正可決なので過年度は案版で正しい。
+    // **分冊番号が年度で変わる**（R6=bunkatuban6 / R5以前=bunkatuban7。23bunkatuban6.pdf は実在するが中身は別物）。
+    // 印字とのズレは年度ごとに +35〜+140 と乱高下する（分冊は大冊子の抜粋）＝**物理ページ必須**。
+    id: "kawasaki-yosansho-r7",
+    title: "令和7年度 川崎市予算案について 計数資料編（一般会計歳入歳出予算 款別）",
+    publisher: "川崎市",
+    url: null,
+    urls: ["https://www.city.kawasaki.jp/230/cmsfiles/contents/0000173/173806/25bunkatuban6.pdf"],
+    landingPage: "https://www.city.kawasaki.jp/230/page/0000173806.html",
+    kind: "pdf",
+    fiscalYear: "R7",
+    scope: "川崎市（一般会計・団体コード141305）",
+    license:
+      "川崎市ホームページの掲載コンテンツ（文書・画像等、及びその内容）に関する諸権利は、原則として川崎市に帰属します。一部の画像等の著作権は、原著作者が所有しています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、川崎市ホームページの掲載コンテンツについて無断で複製・転用することを禁止します。コンテンツの転載などを行いたい場合は、各コンテンツのお問い合わせ先まで事前にご連絡ください。（内容を改変しないことが条件となります。）",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePages: { from: 5, to: 6 },
+      expenditurePage: 7,
+      revenueHeading: "一般会計歳入予算（款別）",
+      expenditureHeading: "一般会計歳出予算（款別）",
+    },
+  },
+  {
+    // 川崎市 R6。**R7 以前は「予算案について」しかない**（確定版は R8 が初）。R8 で案版と確定版の
+    // 款別数値が完全一致することを確認済み＝無修正可決なので過年度は案版で正しい。
+    // **分冊番号が年度で変わる**（R6=bunkatuban6 / R5以前=bunkatuban7。23bunkatuban6.pdf は実在するが中身は別物）。
+    // 印字とのズレは年度ごとに +35〜+140 と乱高下する（分冊は大冊子の抜粋）＝**物理ページ必須**。
+    id: "kawasaki-yosansho-r6",
+    title: "令和6年度 川崎市予算案について 計数資料編（一般会計歳入歳出予算 款別）",
+    publisher: "川崎市",
+    url: null,
+    urls: ["https://www.city.kawasaki.jp/230/cmsfiles/contents/0000158/158395/24bunkatuban6.pdf"],
+    landingPage: "https://www.city.kawasaki.jp/230/page/0000158395.html",
+    kind: "pdf",
+    fiscalYear: "R6",
+    scope: "川崎市（一般会計・団体コード141305）",
+    license:
+      "川崎市ホームページの掲載コンテンツ（文書・画像等、及びその内容）に関する諸権利は、原則として川崎市に帰属します。一部の画像等の著作権は、原著作者が所有しています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、川崎市ホームページの掲載コンテンツについて無断で複製・転用することを禁止します。コンテンツの転載などを行いたい場合は、各コンテンツのお問い合わせ先まで事前にご連絡ください。（内容を改変しないことが条件となります。）",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 4,
+      expenditurePage: 5,
+      revenueHeading: "一般会計歳入予算（款別）",
+      expenditureHeading: "一般会計歳出予算（款別）",
+    },
+  },
+  {
+    // 川崎市 R5。**R7 以前は「予算案について」しかない**（確定版は R8 が初）。R8 で案版と確定版の
+    // 款別数値が完全一致することを確認済み＝無修正可決なので過年度は案版で正しい。
+    // **分冊番号が年度で変わる**（R6=bunkatuban6 / R5以前=bunkatuban7。23bunkatuban6.pdf は実在するが中身は別物）。
+    // 印字とのズレは年度ごとに +35〜+140 と乱高下する（分冊は大冊子の抜粋）＝**物理ページ必須**。
+    id: "kawasaki-yosansho-r5",
+    title: "令和5年度 川崎市予算案について 計数資料編（一般会計歳入歳出予算 款別）",
+    publisher: "川崎市",
+    url: null,
+    urls: ["https://www.city.kawasaki.jp/230/cmsfiles/contents/0000147/147869/23bunkatuban7.pdf"],
+    landingPage: "https://www.city.kawasaki.jp/230/page/0000147869.html",
+    kind: "pdf",
+    fiscalYear: "R5",
+    scope: "川崎市（一般会計・団体コード141305）",
+    license:
+      "川崎市ホームページの掲載コンテンツ（文書・画像等、及びその内容）に関する諸権利は、原則として川崎市に帰属します。一部の画像等の著作権は、原著作者が所有しています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、川崎市ホームページの掲載コンテンツについて無断で複製・転用することを禁止します。コンテンツの転載などを行いたい場合は、各コンテンツのお問い合わせ先まで事前にご連絡ください。（内容を改変しないことが条件となります。）",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 4,
+      expenditurePage: 5,
+      revenueHeading: "一般会計歳入予算（款別）",
+      expenditureHeading: "一般会計歳出予算（款別）",
+    },
+  },
+  {
+    // 川崎市 R4。**R7 以前は「予算案について」しかない**（確定版は R8 が初）。R8 で案版と確定版の
+    // 款別数値が完全一致することを確認済み＝無修正可決なので過年度は案版で正しい。
+    // **分冊番号が年度で変わる**（R6=bunkatuban6 / R5以前=bunkatuban7。23bunkatuban6.pdf は実在するが中身は別物）。
+    // 印字とのズレは年度ごとに +35〜+140 と乱高下する（分冊は大冊子の抜粋）＝**物理ページ必須**。
+    id: "kawasaki-yosansho-r4",
+    title: "令和4年度 川崎市予算案について 計数資料編（一般会計歳入歳出予算 款別）",
+    publisher: "川崎市",
+    url: null,
+    urls: ["https://www.city.kawasaki.jp/230/cmsfiles/contents/0000136/136966/22bunkatuban7.pdf"],
+    landingPage: "https://www.city.kawasaki.jp/230/page/0000136966.html",
+    kind: "pdf",
+    fiscalYear: "R4",
+    scope: "川崎市（一般会計・団体コード141305）",
+    license:
+      "川崎市ホームページの掲載コンテンツ（文書・画像等、及びその内容）に関する諸権利は、原則として川崎市に帰属します。一部の画像等の著作権は、原著作者が所有しています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、川崎市ホームページの掲載コンテンツについて無断で複製・転用することを禁止します。コンテンツの転載などを行いたい場合は、各コンテンツのお問い合わせ先まで事前にご連絡ください。（内容を改変しないことが条件となります。）",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 4,
+      expenditurePage: 5,
+      revenueHeading: "一般会計歳入予算（款別）",
+      expenditureHeading: "一般会計歳出予算（款別）",
+    },
+  },
+  {
+    // 川崎市 R3。**R7 以前は「予算案について」しかない**（確定版は R8 が初）。R8 で案版と確定版の
+    // 款別数値が完全一致することを確認済み＝無修正可決なので過年度は案版で正しい。
+    // **分冊番号が年度で変わる**（R6=bunkatuban6 / R5以前=bunkatuban7。23bunkatuban6.pdf は実在するが中身は別物）。
+    // 印字とのズレは年度ごとに +35〜+140 と乱高下する（分冊は大冊子の抜粋）＝**物理ページ必須**。
+    id: "kawasaki-yosansho-r3",
+    title: "令和3年度 川崎市予算案について 計数資料編（一般会計歳入歳出予算 款別）",
+    publisher: "川崎市",
+    url: null,
+    urls: ["https://www.city.kawasaki.jp/230/cmsfiles/contents/0000125/125926/21bunkatuban7.pdf"],
+    landingPage: "https://www.city.kawasaki.jp/230/page/0000125926.html",
+    kind: "pdf",
+    fiscalYear: "R3",
+    scope: "川崎市（一般会計・団体コード141305）",
+    license:
+      "川崎市ホームページの掲載コンテンツ（文書・画像等、及びその内容）に関する諸権利は、原則として川崎市に帰属します。一部の画像等の著作権は、原著作者が所有しています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、川崎市ホームページの掲載コンテンツについて無断で複製・転用することを禁止します。コンテンツの転載などを行いたい場合は、各コンテンツのお問い合わせ先まで事前にご連絡ください。（内容を改変しないことが条件となります。）",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 4,
+      expenditurePage: 5,
+      revenueHeading: "一般会計歳入予算（款別）",
+      expenditureHeading: "一般会計歳出予算（款別）",
+    },
+  },
+  {
+    // 川崎市 R2。**R7 以前は「予算案について」しかない**（確定版は R8 が初）。R8 で案版と確定版の
+    // 款別数値が完全一致することを確認済み＝無修正可決なので過年度は案版で正しい。
+    // **分冊番号が年度で変わる**（R6=bunkatuban6 / R5以前=bunkatuban7。23bunkatuban6.pdf は実在するが中身は別物）。
+    // 印字とのズレは年度ごとに +35〜+140 と乱高下する（分冊は大冊子の抜粋）＝**物理ページ必須**。
+    // R2 は款7「法人事業税交付金」が新設で前年度欄が `-`＋「皆増」。パーサの皆増対応（#63）が前提。
+    id: "kawasaki-yosansho-r2",
+    title: "令和2年度 川崎市予算案について 計数資料編（一般会計歳入歳出予算 款別）",
+    publisher: "川崎市",
+    url: null,
+    urls: ["https://www.city.kawasaki.jp/230/cmsfiles/contents/0000114/114574/20bunkatuban7.pdf"],
+    landingPage: "https://www.city.kawasaki.jp/230/page/0000114574.html",
+    kind: "pdf",
+    fiscalYear: "R2",
+    scope: "川崎市（一般会計・団体コード141305）",
+    license:
+      "川崎市ホームページの掲載コンテンツ（文書・画像等、及びその内容）に関する諸権利は、原則として川崎市に帰属します。一部の画像等の著作権は、原著作者が所有しています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、川崎市ホームページの掲載コンテンツについて無断で複製・転用することを禁止します。コンテンツの転載などを行いたい場合は、各コンテンツのお問い合わせ先まで事前にご連絡ください。（内容を改変しないことが条件となります。）",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 4,
+      expenditurePage: 5,
+      revenueHeading: "一般会計歳入予算（款別）",
+      expenditureHeading: "一般会計歳出予算（款別）",
+    },
+  },
+  {
     // 横浜市（団体コード 141003・人口 375万＝全国最大）。一般会計予算 R8（r8ippan.pdf・282p）。
     // 款別＋前年当初比較は「事項別明細書 1 総括」。**歳入・歳出とも2ページにまたがる**
     // （款数が多い）→ revenuePages/expenditurePages（範囲）を使う初の資料。

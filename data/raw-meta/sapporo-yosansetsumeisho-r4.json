@@ -1,0 +1,12 @@
+{
+  "sourceId": "sapporo-yosansetsumeisho-r4",
+  "files": [
+    {
+      "filename": "r4_yosansetsumeisho.pdf",
+      "sha256": "1bec144a4700a08219ae8ab950c4fc59d224763b4c01929ff4c529094545fd0c",
+      "bytes": 2331328,
+      "fetchedAt": "2026-07-15T10:00:43.778Z",
+      "fetchedFrom": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r4/documents/r4_yosansetsumeisho.pdf"
+    }
+  ]
+}
