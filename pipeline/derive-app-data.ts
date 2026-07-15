@@ -989,6 +989,9 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
 {
   const REPORT_MUNI_SOURCES: { srcId: string; muniCode: string; muniName: string }[] = [
     { srcId: "kawasaki-jigyou-hyouka-r6", muniCode: "141305", muniName: "川崎市" },
+    // **横浜は特別会計の事業を含む**（2,535事業中222件が16の特別会計）。scope が一般会計なので
+    // 会計名（policy）で除外する。**会計名を持つのは横浜だけ**（川崎は全件が一般会計の想定）
+    { srcId: "yokohama-jigyo-hyoka-r7", muniCode: "141003", muniName: "横浜市" },
   ];
   const byMuni: Record<string, unknown> = {};
   for (const r of REPORT_MUNI_SOURCES) {
@@ -1002,7 +1005,11 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
     const eraLabel = (c: string) => (c.startsWith("H") ? `平成${c.slice(1)}` : `令和${c.slice(1)}`) + "年度";
     // 画面に出す断面だけに絞る（parsed をそのまま配ると 2.1MB）。金額は千円のまま持ち、
     // 表示側で fmtOku/fmtYen に通す
-    const reports = doc.facts.map((f) => {
+    // **一般会計に絞る**（横浜は policy に会計名が入る。2,535 → 2,313）。
+    // 会計名を持たない資料（川崎）は素通りさせる — 全件が一般会計の前提で収録している
+    const inScope = doc.facts.filter((f) => !/会計$/.test(f.policy ?? "") || f.policy === "一般会計");
+    const excluded = doc.facts.length - inScope.length;
+    const reports = inScope.map((f) => {
       const file = meta.files.find((x) => x.filename === f.locator.file) ?? meta.files[0]!;
       return {
         code: f.code ?? f.no,
@@ -1032,6 +1039,27 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
     byMuni[r.muniCode] = {
       muniCode: r.muniCode,
       muniName: r.muniName,
+      /** 一般会計以外（特別会計）で除外した事業数。0 なら会計の区別が無い資料 */
+      excluded,
+      /**
+       * 資料の呼び名。**市ごとに違う**（川崎=事務事業評価シート / 横浜=事業評価書）。
+       * 画面に決め打ちしない（#72 のメダリオン: 報告どおり尊重し丸めない）
+       */
+      docLabel: r.srcId.startsWith("kawasaki") ? "事務事業評価シート" : "事業評価書",
+      /**
+       * **その資料が実際に持つ項目**。画面の説明文をこれで組み立てる。
+       * 川崎と横浜で持ち物が違うのに川崎の文面を使い回すと**嘘になる**
+       * （横浜は人件費・総コスト・達成度・方向性のいずれも持たない）。
+       */
+      has: {
+        jinkenhi: reports.some((x) => x.cost.some((c) => c.jinkenhi != null)),
+        totalCost: reports.some((x) => x.cost.some((c) => c.totalCost != null)),
+        achievement: reports.some((x) => x.achievement != null),
+        direction: reports.some((x) => x.direction),
+        /** 歳出予算科目（款項目）。**横浜だけが持つ** — 事業を款ドリルへ紐付けられる */
+        kanKoumoku: reports.some((x) => /\d+款/.test(x.measure ?? "")),
+        estimate: reports.some((x) => x.cost.some((c) => (c as { est?: number }).est === 1)),
+      },
       fy: doc.fiscalYear,
       fyLabel: eraLabel(doc.fiscalYear),
       sourceTitle: src.title,
@@ -1948,15 +1976,24 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
   // 以前は full（甲府）だけが d.report を持ち、川崎の572事業を収録しても /coverage が
   // 「成果 ×」と出た（＝収録済みを未収録と偽る）。/coverage は「実際の収録内容」を示すページなので、
   // **レジストリ＋parsed（＝実際に収録したもの）から導く**（2026-07-15）。
-  const REPORT_PARSERS = new Set(["kofu-jigyou-houkoku", "kawasaki-jigyou-hyouka"]);
+  // **新しい事業報告パーサを足したらここにも足す** — 忘れると /coverage が「収録済みを未収録」と
+  // 偽る（実際に横浜で踏んだ。2,313事業を収録したのに「成果 ×」と出た）。
+  const REPORT_PARSERS = new Set(["kofu-jigyou-houkoku", "kawasaki-jigyou-hyouka", "yokohama-jigyo-hyoka"]);
   const reportDetailByCode: Record<string, string> = {};
   for (const s of srcs) {
     if (!REPORT_PARSERS.has(s.parser)) continue;
     const code = entityOf(s).code;
     if (!code) continue;
-    const parsed = readJson(parsedPath(s.id)) as { docType?: string; facts?: unknown[] };
+    const parsed = readJson(parsedPath(s.id)) as {
+      docType?: string;
+      facts?: { policy?: string | null }[];
+    };
     if (parsed.docType !== "project-report") continue;
-    const n = parsed.facts?.length ?? 0;
+    // **画面に出している数と揃える** — scope は一般会計なので、特別会計の事業は数えない
+    // （横浜は 2,535 中222件が特別会計。生の件数を出すと /coverage が 2,535、画面が 2,313 で食い違う）。
+    // 会計名を持たない資料（甲府・川崎）は素通り＝全件が一般会計の前提で収録している
+    const facts = (parsed.facts ?? []).filter((f) => !/会計$/.test(f.policy ?? "") || f.policy === "一般会計");
+    const n = facts.length;
     const prev = reportDetailByCode[code];
     const one = `${s.fiscalYear}:${n}件`;
     reportDetailByCode[code] = prev ? `${prev} / ${one}` : one;

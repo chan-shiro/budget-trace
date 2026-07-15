@@ -699,7 +699,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                 <section style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:22px 24px; margin:26px 0;")}>
                   <div style={S("display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:6px;")}>
                     <h2 style={S("margin:0; font-size:16px; font-weight:700;")}>事業報告（成果）</h2>
-                    <span style={S("font-size:12px; color:#5C6B77;")}>事務事業評価シート — 予算→執行→成果を1事業で追える</span>
+                    <span style={S("font-size:12px; color:#5C6B77;")}>{v.repAll.ready ? v.repAll.docLabel : "評価シート"} — 予算→執行→成果を1事業で追える</span>
                   </div>
                   {!v.repAll.ready ? (
                     <div style={S("padding:40px 0; text-align:center; color:#8494A0; font-size:13px;")}>
@@ -708,10 +708,15 @@ export default function BudgetTraceView({ v }: { v: any }) {
                   ) : (
                   <>
                     <p style={S("margin:0 0 14px; font-size:12px; color:#8494A0; line-height:1.7;")}>
-                      <strong style={S("color:#14181C;")}>{v.repAll.fyLabel}の全{v.repAll.total}事業</strong>が公表されています（サンプルではなく全量）。事業ごとに 事業費・人件費・総コスト（人件費込み）・達成度・今後の方向性が載っています。決算額は評価年度のため<strong style={S("color:#14181C;")}>見込み</strong>です。
+                      <strong style={S("color:#14181C;")}>{v.repAll.fyLabel}の全{v.repAll.total}事業</strong>が公表されています（サンプルではなく全量）。事業ごとに {v.repAll.holds} が載っています。
+                      {v.repAll.has.estimate && <>決算額は評価年度のため<strong style={S("color:#14181C;")}>見込み</strong>です。</>}
+                      {v.repAll.excluded > 0 && <>一般会計の事業のみを載せています（特別会計の{v.repAll.excluded}事業は除いています）。</>}
+                      {!v.repAll.has.achievement && <>この資料は総合評価や達成度の数値を持たず、7つの軸それぞれのカテゴリ値で自己分析しています。</>}
                     </p>
 
-                    {/* 達成度の分布。**1が最良で5が最悪**＝甲府の A〜F と向きが逆なので必ず明示する */}
+                    {/* 達成度の分布。**1が最良で5が最悪**＝甲府の A〜F と向きが逆なので必ず明示する。
+                        **達成度を持たない資料（横浜）では出さない** — 見出しだけ残ると中身ゼロの箱になる */}
+                    {v.repAll.has.achievement && (
                     <div style={S("background:#F7FAFC; border:1px solid #DFE7EC; border-radius:12px; padding:12px 14px; margin-bottom:14px;")}>
                       <div style={S("font-size:11.5px; color:#5C6B77; margin-bottom:8px;")}>達成度の内訳（<strong style={S("color:#14181C;")}>1 が最も良く、5 が最も悪い</strong>）</div>
                       <div style={S("display:flex; gap:8px; flex-wrap:wrap;")}>
@@ -725,6 +730,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                         ))}
                       </div>
                     </div>
+                    )}
 
                     <div style={S("display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:10px;")}>
                       <input

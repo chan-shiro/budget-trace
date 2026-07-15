@@ -37,6 +37,23 @@ export interface ReportItem {
 export interface ProjectReportShard {
   muniCode: string;
   muniName: string;
+  /** 資料の呼び名。市ごとに違う（川崎=事務事業評価シート / 横浜=事業評価書） */
+  docLabel: string;
+  /** 一般会計以外（特別会計）で除外した事業数 */
+  excluded: number;
+  /**
+   * **その資料が実際に持つ項目**。画面の説明文をこれで組み立てる。
+   * 川崎と横浜は持ち物が違う（横浜は人件費・総コスト・達成度・方向性のいずれも持たず、
+   * 代わりに**款項目を持つ唯一の資料**）。決め打ちすると嘘になる。
+   */
+  has: {
+    jinkenhi: boolean;
+    totalCost: boolean;
+    achievement: boolean;
+    direction: boolean;
+    kanKoumoku: boolean;
+    estimate: boolean;
+  };
   fy: string;
   fyLabel: string;
   sourceTitle: string;

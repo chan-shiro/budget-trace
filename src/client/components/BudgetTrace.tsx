@@ -1583,6 +1583,18 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
         muniName: repData.muniName,
         fyLabel: repData.fyLabel,
         sourceTitle: repData.sourceTitle,
+        docLabel: repData.docLabel,
+        excluded: repData.excluded,
+        has: repData.has,
+        // **その資料が持つ項目だけを並べる**（川崎の文面を横浜に使い回すと嘘になる）
+        holds: [
+          "事業費",
+          ...(repData.has.jinkenhi ? ["人件費"] : []),
+          ...(repData.has.totalCost ? ["総コスト（人件費込み）"] : []),
+          ...(repData.has.achievement ? ["達成度"] : []),
+          ...(repData.has.direction ? ["今後の方向性"] : []),
+          ...(repData.has.kanKoumoku ? ["歳出予算科目（款・項・目）"] : []),
+        ].join("・"),
         total: repData.reports.length,
         hits: rows.length,
         page,
