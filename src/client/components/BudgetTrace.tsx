@@ -253,6 +253,20 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
           expenditure: muniBudget.expenditure,
         }
       : kofuData;
+  // フッター右の SOURCE 表示。**表示中の自治体・階層の出典**を出す。
+  // 以前は「甲府市 当初予算資料 R2–R8」を固定表示しており、横浜市を見ていても decision 階層の
+  // 全1,741市町村を見ていても甲府の資料を出典として示していた（2026-07-15 修正）。
+  // 資料は増えるので個別に列挙しない（トップのフッターと同じ方針）— 発行元と年度だけを出し、
+  // 網羅的な収録状況は /coverage（実データから自動生成）へ誘導する。
+  // 自治体スコープを持たない画面（/sources・/coverage）では出典が定まらないので出さない。
+  const sourceLabel: string | null = isDecision
+    ? `総務省 市町村別決算状況調 ${D.DECISION_YEARS[D.DECISION_YEARS.length - 1]}–${D.DECISION_YEARS[0]}`
+    : isBudget
+      ? `${muniBudget!.muniName} ${muniBudget!.fyLabel}`
+      : isFull
+        ? `甲府市 当初予算資料 ${KOFU_BUDGET_YEARS[KOFU_BUDGET_YEARS.length - 1]!.fy}–${KOFU_BUDGET_YEARS[0]!.fy}`
+        : null;
+
   // 当初予算ベース（full＝甲府 or budget＝類似4市）。決算（decision）と対比
   const isPredose = isFull || isBudget;
   const goalProjects = (goal: string) => KOFU_PROJECTS.filter((p) => p.basicGoal.split("・").includes(goal));
@@ -1496,6 +1510,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     ...simVals,
     uncollected: D.UNCOLLECTED,
     requestListUrl: D.REQUEST_LIST_URL,
+    sourceLabel,
     sourcesRows: SOURCES.map((row: any) => ({
       ...row,
       open: row.localUrl
