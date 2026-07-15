@@ -161,6 +161,8 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/zaise/r07zaiseijokyo.html": "https://web.archive.org/web/20260712085648/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/zaise/r07zaiseijokyo.html",
   "https://www.city.koshu.yamanashi.jp/docs/2021011200621/": "https://web.archive.org/web/20260714072602/https://www.city.koshu.yamanashi.jp/docs/2021011200621/",
   "https://www.city.koshu.yamanashi.jp/docs/2021011200621/file_contents/R8tousyoyosan.pdf": "https://web.archive.org/web/20260714072236/https://www.city.koshu.yamanashi.jp/docs/2021011200621/file_contents/R8tousyoyosan.pdf",
+  "https://www.city.kumamoto.jp/kiji00369192/3_69192_489156_up_mwyrop86.pdf": "https://web.archive.org/web/20260715190504/https://www.city.kumamoto.jp/kiji00369192/3_69192_489156_up_mwyrop86.pdf",
+  "https://www.city.kumamoto.jp/kiji00369192/index.html": "https://web.archive.org/web/20260313133808/https://www.city.kumamoto.jp/kiji00369192/index.html",
   "https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000259/259833/01ippan.pdf": "https://web.archive.org/web/20260715161449/https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000259/259833/01ippan.pdf",
   "https://www.city.kyoto.lg.jp/gyozai/page/0000259833.html": "https://web.archive.org/web/20260121030020/https://www.city.kyoto.lg.jp/gyozai/page/0000259833.html",
   "https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000293/293622/ippan.pdf": "https://web.archive.org/web/20260715161415/https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000293/293622/ippan.pdf",
