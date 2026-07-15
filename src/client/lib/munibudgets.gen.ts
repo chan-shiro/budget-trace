@@ -650,6 +650,570 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
       ]
     }
   ],
+  "121002": [
+    {
+      "muniCode": "121002",
+      "muniName": "千葉市",
+      "prefName": "千葉県",
+      "isPref": false,
+      "projects": [],
+      "execution": [],
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "population": 983896,
+      "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+      "totalOku": 5417,
+      "prevTotalOku": 5512,
+      "yoyLabel": "-1.7%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "市税",
+          "v": 2321,
+          "prevV": 2212,
+          "yoy": 4.9
+        },
+        {
+          "name": "国庫支出金",
+          "v": 1191.60326,
+          "prevV": 1202.76397,
+          "yoy": -0.9
+        },
+        {
+          "name": "市債",
+          "v": 374.56,
+          "prevV": 592.99,
+          "yoy": -36.8
+        },
+        {
+          "name": "県支出金",
+          "v": 311.97764,
+          "prevV": 293.11602,
+          "yoy": 6.4
+        },
+        {
+          "name": "地方消費税交付金",
+          "v": 295.09,
+          "prevV": 266.98,
+          "yoy": 10.5
+        },
+        {
+          "name": "地方交付税",
+          "v": 279,
+          "prevV": 286,
+          "yoy": -2.4
+        },
+        {
+          "name": "諸収入",
+          "v": 220.72348,
+          "prevV": 232.70405,
+          "yoy": -5.1
+        },
+        {
+          "name": "使用料及び手数料",
+          "v": 110.33307,
+          "prevV": 108.80815,
+          "yoy": 1.4
+        },
+        {
+          "name": "その他",
+          "v": 312.7125499999999,
+          "prevV": 316.6378099999999,
+          "yoy": null,
+          "children": [
+            {
+              "name": "繰入金",
+              "v": 71.41237,
+              "prevV": 94.95465,
+              "yoy": -24.8
+            },
+            {
+              "name": "地方特例交付金",
+              "v": 41.08,
+              "prevV": 11.08,
+              "yoy": 270.8
+            },
+            {
+              "name": "軽油引取税交付金",
+              "v": 29.91,
+              "prevV": 53.68,
+              "yoy": -44.3
+            },
+            {
+              "name": "法人事業税交付金",
+              "v": 28.89,
+              "prevV": 26.66,
+              "yoy": 8.4
+            },
+            {
+              "name": "株式等譲渡所得割交付金",
+              "v": 26.91,
+              "prevV": 16.96,
+              "yoy": 58.7
+            },
+            {
+              "name": "財産収入",
+              "v": 26.35706,
+              "prevV": 26.79501,
+              "yoy": -1.6
+            },
+            {
+              "name": "地方譲与税",
+              "v": 25.61,
+              "prevV": 25.97,
+              "yoy": -1.4
+            },
+            {
+              "name": "分担金及び負担金",
+              "v": 17.71099,
+              "prevV": 20.90432,
+              "yoy": -15.3
+            },
+            {
+              "name": "配当割交付金",
+              "v": 17.66,
+              "prevV": 12.83,
+              "yoy": 37.6
+            },
+            {
+              "name": "寄附金",
+              "v": 12.5221,
+              "prevV": 11.46381,
+              "yoy": 9.2
+            },
+            {
+              "name": "利子割交付金",
+              "v": 7.07,
+              "prevV": 0.92,
+              "yoy": 668.5
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 3.03,
+              "prevV": 3.03,
+              "yoy": 0
+            },
+            {
+              "name": "分離課税所得割交付金",
+              "v": 2.33,
+              "prevV": 2.19,
+              "yoy": 6.4
+            },
+            {
+              "name": "ゴルフ場利用税交付金",
+              "v": 1.87,
+              "prevV": 1.81,
+              "yoy": 3.3
+            },
+            {
+              "name": "国有提供施設等所在市町村助成交付金",
+              "v": 0.35,
+              "prevV": 0.34,
+              "yoy": 2.9
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 0.00001,
+              "prevV": 0.00001,
+              "yoy": 0
+            },
+            {
+              "name": "環境性能割交付金",
+              "v": 0.00001,
+              "prevV": 7.05,
+              "yoy": -100
+            },
+            {
+              "name": "繰越金",
+              "v": 0.00001,
+              "prevV": 0.00001,
+              "yoy": 0
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "民生費",
+          "v": 2235.87741,
+          "prevV": 2143.21181,
+          "yoy": 4.3
+        },
+        {
+          "name": "教育費",
+          "v": 785.92773,
+          "prevV": 797.32914,
+          "yoy": -1.4
+        },
+        {
+          "name": "土木費",
+          "v": 608.18057,
+          "prevV": 581.41271,
+          "yoy": 4.6
+        },
+        {
+          "name": "公債費",
+          "v": 543.52875,
+          "prevV": 526.34041,
+          "yoy": 3.3
+        },
+        {
+          "name": "総務費",
+          "v": 466.6739,
+          "prevV": 400.65279,
+          "yoy": 16.5
+        },
+        {
+          "name": "衛生費",
+          "v": 456.23301,
+          "prevV": 731.10042,
+          "yoy": -37.6
+        },
+        {
+          "name": "商工費",
+          "v": 145.92065,
+          "prevV": 134.08366,
+          "yoy": 8.8
+        },
+        {
+          "name": "消防費",
+          "v": 129.90812,
+          "prevV": 154.21742,
+          "yoy": -15.8
+        },
+        {
+          "name": "農林水産業費",
+          "v": 19.54399,
+          "prevV": 19.45371,
+          "yoy": 0.5
+        },
+        {
+          "name": "議会費",
+          "v": 13.3493,
+          "prevV": 13.27721,
+          "yoy": 0.5
+        },
+        {
+          "name": "諸支出金",
+          "v": 5.6998,
+          "prevV": 5.25754,
+          "yoy": 8.4
+        },
+        {
+          "name": "労働費",
+          "v": 3.15677,
+          "prevV": 2.66318,
+          "yoy": 18.5
+        },
+        {
+          "name": "予備費",
+          "v": 3,
+          "prevV": 3,
+          "yoy": 0
+        }
+      ],
+      "sourceTitle": "令和8年度 千葉市一般会計予算書 附 予算に関する説明書（歳入歳出予算事項別明細書 総括・款別歳入歳出）",
+      "sourceUrl": "https://web.archive.org/web/20260715172224/https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/documents/r8yosansho_ippan.pdf",
+      "originUrl": "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/documents/r8yosansho_ippan.pdf",
+      "sourceLocalUrl": "/sources/chiba-yosansho-r8/r8yosansho_ippan.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "令和8年度 千葉市一般会計予算書 附 予算に関する説明書（歳入歳出予算事項別明細書 総括・款別歳入歳出）",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20260715172224/https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/documents/r8yosansho_ippan.pdf",
+          "localUrl": "/sources/chiba-yosansho-r8/r8yosansho_ippan.pdf",
+          "source": "www.city.chiba.jp",
+          "thumb": "r8yosansho_ippan.pdf ・ sha256 9f58ef95a2891830… ・ 2026-07-15 取得"
+        }
+      ]
+    },
+    {
+      "muniCode": "121002",
+      "muniName": "千葉市",
+      "prefName": "千葉県",
+      "isPref": false,
+      "projects": [],
+      "execution": [],
+      "fy": "R4",
+      "fyLabel": "令和4年度 当初予算",
+      "population": 983896,
+      "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+      "totalOku": 4884,
+      "prevTotalOku": 4664,
+      "yoyLabel": "+4.7%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "市税",
+          "v": 2029,
+          "prevV": 1900,
+          "yoy": 6.8
+        },
+        {
+          "name": "国庫支出金",
+          "v": 898.74184,
+          "prevV": 841.1244,
+          "yoy": 6.9
+        },
+        {
+          "name": "市債",
+          "v": 632.56133,
+          "prevV": 664.45133,
+          "yoy": -4.8
+        },
+        {
+          "name": "県支出金",
+          "v": 257.8463,
+          "prevV": 248.86734,
+          "yoy": 3.6
+        },
+        {
+          "name": "地方消費税交付金",
+          "v": 251,
+          "prevV": 213.58,
+          "yoy": 17.5
+        },
+        {
+          "name": "諸収入",
+          "v": 239.96244,
+          "prevV": 281.73687,
+          "yoy": -14.8
+        },
+        {
+          "name": "地方交付税",
+          "v": 157,
+          "prevV": 146,
+          "yoy": 7.5
+        },
+        {
+          "name": "繰入金",
+          "v": 110.55543,
+          "prevV": 59.69813,
+          "yoy": 85.2
+        },
+        {
+          "name": "その他",
+          "v": 307.3326599999999,
+          "prevV": 308.54192999999987,
+          "yoy": null,
+          "children": [
+            {
+              "name": "使用料及び手数料",
+              "v": 107.26633,
+              "prevV": 105.87487,
+              "yoy": 1.3
+            },
+            {
+              "name": "軽油引取税交付金",
+              "v": 49.89,
+              "prevV": 48.68,
+              "yoy": 2.5
+            },
+            {
+              "name": "財産収入",
+              "v": 27.75929,
+              "prevV": 37.12095,
+              "yoy": -25.2
+            },
+            {
+              "name": "法人事業税交付金",
+              "v": 26.81,
+              "prevV": 23.7,
+              "yoy": 13.1
+            },
+            {
+              "name": "地方譲与税",
+              "v": 26.77001,
+              "prevV": 24.64001,
+              "yoy": 8.6
+            },
+            {
+              "name": "分担金及び負担金",
+              "v": 19.74546,
+              "prevV": 18.68606,
+              "yoy": 5.7
+            },
+            {
+              "name": "地方特例交付金",
+              "v": 12.64,
+              "prevV": 23.97,
+              "yoy": -47.3
+            },
+            {
+              "name": "株式等譲渡所得割交付金",
+              "v": 10.36,
+              "prevV": 6.97,
+              "yoy": 48.6
+            },
+            {
+              "name": "配当割交付金",
+              "v": 8.52,
+              "prevV": 7.7,
+              "yoy": 10.6
+            },
+            {
+              "name": "環境性能割交付金",
+              "v": 4.72,
+              "prevV": 2.6,
+              "yoy": 81.5
+            },
+            {
+              "name": "寄附金",
+              "v": 4.71155,
+              "prevV": 0.78002,
+              "yoy": 504
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 3.03,
+              "prevV": 3.03,
+              "yoy": 0
+            },
+            {
+              "name": "分離課税所得割交付金",
+              "v": 1.98,
+              "prevV": 2,
+              "yoy": -1
+            },
+            {
+              "name": "ゴルフ場利用税交付金",
+              "v": 1.66,
+              "prevV": 1.34,
+              "yoy": 23.9
+            },
+            {
+              "name": "利子割交付金",
+              "v": 1.21,
+              "prevV": 1.19,
+              "yoy": 1.7
+            },
+            {
+              "name": "国有提供施設等所在市町村助成交付金",
+              "v": 0.26,
+              "prevV": 0.26,
+              "yoy": 0
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 0.00001,
+              "prevV": 0.00001,
+              "yoy": 0
+            },
+            {
+              "name": "繰越金",
+              "v": 0.00001,
+              "prevV": 0.00001,
+              "yoy": 0
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "民生費",
+          "v": 1777.25038,
+          "prevV": 1735.2859,
+          "yoy": 2.4
+        },
+        {
+          "name": "教育費",
+          "v": 713.61808,
+          "prevV": 687.69819,
+          "yoy": 3.8
+        },
+        {
+          "name": "土木費",
+          "v": 570.51602,
+          "prevV": 519.38492,
+          "yoy": 9.8
+        },
+        {
+          "name": "公債費",
+          "v": 511.69376,
+          "prevV": 516.45058,
+          "yoy": -0.9
+        },
+        {
+          "name": "衛生費",
+          "v": 495.18309,
+          "prevV": 413.74683,
+          "yoy": 19.7
+        },
+        {
+          "name": "総務費",
+          "v": 463.13902,
+          "prevV": 405.45568,
+          "yoy": 14.2
+        },
+        {
+          "name": "商工費",
+          "v": 176.41865,
+          "prevV": 206.14643,
+          "yoy": -14.4
+        },
+        {
+          "name": "消防費",
+          "v": 114.28742,
+          "prevV": 115.53058,
+          "yoy": -1.1
+        },
+        {
+          "name": "諸支出金",
+          "v": 20.15365,
+          "prevV": 10.27055,
+          "yoy": 96.2
+        },
+        {
+          "name": "農林水産業費",
+          "v": 18.3116,
+          "prevV": 26.7501,
+          "yoy": -31.5
+        },
+        {
+          "name": "議会費",
+          "v": 13.897,
+          "prevV": 13.1474,
+          "yoy": 5.7
+        },
+        {
+          "name": "予備費",
+          "v": 5,
+          "prevV": 5,
+          "yoy": 0
+        },
+        {
+          "name": "労働費",
+          "v": 2.53556,
+          "prevV": 2.41284,
+          "yoy": 5.1
+        },
+        {
+          "name": "災害復旧費",
+          "v": 1.99577,
+          "prevV": 6.72,
+          "yoy": -70.3
+        }
+      ],
+      "sourceTitle": "令和4年度 千葉市一般会計予算書 附 予算に関する説明書（歳入歳出予算事項別明細書 総括・款別歳入歳出）",
+      "sourceUrl": "https://web.archive.org/web/20260715172447/https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/documents/r4ippan.pdf",
+      "originUrl": "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/documents/r4ippan.pdf",
+      "sourceLocalUrl": "/sources/chiba-yosansho-r4/r4ippan.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "令和4年度 千葉市一般会計予算書 附 予算に関する説明書（歳入歳出予算事項別明細書 総括・款別歳入歳出）",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20260715172447/https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/documents/r4ippan.pdf",
+          "localUrl": "/sources/chiba-yosansho-r4/r4ippan.pdf",
+          "source": "www.city.chiba.jp",
+          "thumb": "r4ippan.pdf ・ sha256 d74b41765c3f2d09… ・ 2026-07-15 取得"
+        }
+      ]
+    }
+  ],
   "141003": [
     {
       "muniCode": "141003",
@@ -23799,6 +24363,284 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       }
     ]
   },
+  "121002": {
+    "muniCode": "121002",
+    "muniName": "千葉市",
+    "prefName": "千葉県",
+    "isPref": false,
+    "projects": [],
+    "execution": [],
+    "fy": "R8",
+    "fyLabel": "令和8年度 当初予算",
+    "population": 983896,
+    "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+    "totalOku": 5417,
+    "prevTotalOku": 5512,
+    "yoyLabel": "-1.7%",
+    "prevBasis": "当初",
+    "prevNote": "",
+    "revenue": [
+      {
+        "name": "市税",
+        "v": 2321,
+        "prevV": 2212,
+        "yoy": 4.9
+      },
+      {
+        "name": "国庫支出金",
+        "v": 1191.60326,
+        "prevV": 1202.76397,
+        "yoy": -0.9
+      },
+      {
+        "name": "市債",
+        "v": 374.56,
+        "prevV": 592.99,
+        "yoy": -36.8
+      },
+      {
+        "name": "県支出金",
+        "v": 311.97764,
+        "prevV": 293.11602,
+        "yoy": 6.4
+      },
+      {
+        "name": "地方消費税交付金",
+        "v": 295.09,
+        "prevV": 266.98,
+        "yoy": 10.5
+      },
+      {
+        "name": "地方交付税",
+        "v": 279,
+        "prevV": 286,
+        "yoy": -2.4
+      },
+      {
+        "name": "諸収入",
+        "v": 220.72348,
+        "prevV": 232.70405,
+        "yoy": -5.1
+      },
+      {
+        "name": "使用料及び手数料",
+        "v": 110.33307,
+        "prevV": 108.80815,
+        "yoy": 1.4
+      },
+      {
+        "name": "その他",
+        "v": 312.7125499999999,
+        "prevV": 316.6378099999999,
+        "yoy": null,
+        "children": [
+          {
+            "name": "繰入金",
+            "v": 71.41237,
+            "prevV": 94.95465,
+            "yoy": -24.8
+          },
+          {
+            "name": "地方特例交付金",
+            "v": 41.08,
+            "prevV": 11.08,
+            "yoy": 270.8
+          },
+          {
+            "name": "軽油引取税交付金",
+            "v": 29.91,
+            "prevV": 53.68,
+            "yoy": -44.3
+          },
+          {
+            "name": "法人事業税交付金",
+            "v": 28.89,
+            "prevV": 26.66,
+            "yoy": 8.4
+          },
+          {
+            "name": "株式等譲渡所得割交付金",
+            "v": 26.91,
+            "prevV": 16.96,
+            "yoy": 58.7
+          },
+          {
+            "name": "財産収入",
+            "v": 26.35706,
+            "prevV": 26.79501,
+            "yoy": -1.6
+          },
+          {
+            "name": "地方譲与税",
+            "v": 25.61,
+            "prevV": 25.97,
+            "yoy": -1.4
+          },
+          {
+            "name": "分担金及び負担金",
+            "v": 17.71099,
+            "prevV": 20.90432,
+            "yoy": -15.3
+          },
+          {
+            "name": "配当割交付金",
+            "v": 17.66,
+            "prevV": 12.83,
+            "yoy": 37.6
+          },
+          {
+            "name": "寄附金",
+            "v": 12.5221,
+            "prevV": 11.46381,
+            "yoy": 9.2
+          },
+          {
+            "name": "利子割交付金",
+            "v": 7.07,
+            "prevV": 0.92,
+            "yoy": 668.5
+          },
+          {
+            "name": "交通安全対策特別交付金",
+            "v": 3.03,
+            "prevV": 3.03,
+            "yoy": 0
+          },
+          {
+            "name": "分離課税所得割交付金",
+            "v": 2.33,
+            "prevV": 2.19,
+            "yoy": 6.4
+          },
+          {
+            "name": "ゴルフ場利用税交付金",
+            "v": 1.87,
+            "prevV": 1.81,
+            "yoy": 3.3
+          },
+          {
+            "name": "国有提供施設等所在市町村助成交付金",
+            "v": 0.35,
+            "prevV": 0.34,
+            "yoy": 2.9
+          },
+          {
+            "name": "自動車取得税交付金",
+            "v": 0.00001,
+            "prevV": 0.00001,
+            "yoy": 0
+          },
+          {
+            "name": "環境性能割交付金",
+            "v": 0.00001,
+            "prevV": 7.05,
+            "yoy": -100
+          },
+          {
+            "name": "繰越金",
+            "v": 0.00001,
+            "prevV": 0.00001,
+            "yoy": 0
+          }
+        ]
+      }
+    ],
+    "expenditure": [
+      {
+        "name": "民生費",
+        "v": 2235.87741,
+        "prevV": 2143.21181,
+        "yoy": 4.3
+      },
+      {
+        "name": "教育費",
+        "v": 785.92773,
+        "prevV": 797.32914,
+        "yoy": -1.4
+      },
+      {
+        "name": "土木費",
+        "v": 608.18057,
+        "prevV": 581.41271,
+        "yoy": 4.6
+      },
+      {
+        "name": "公債費",
+        "v": 543.52875,
+        "prevV": 526.34041,
+        "yoy": 3.3
+      },
+      {
+        "name": "総務費",
+        "v": 466.6739,
+        "prevV": 400.65279,
+        "yoy": 16.5
+      },
+      {
+        "name": "衛生費",
+        "v": 456.23301,
+        "prevV": 731.10042,
+        "yoy": -37.6
+      },
+      {
+        "name": "商工費",
+        "v": 145.92065,
+        "prevV": 134.08366,
+        "yoy": 8.8
+      },
+      {
+        "name": "消防費",
+        "v": 129.90812,
+        "prevV": 154.21742,
+        "yoy": -15.8
+      },
+      {
+        "name": "農林水産業費",
+        "v": 19.54399,
+        "prevV": 19.45371,
+        "yoy": 0.5
+      },
+      {
+        "name": "議会費",
+        "v": 13.3493,
+        "prevV": 13.27721,
+        "yoy": 0.5
+      },
+      {
+        "name": "諸支出金",
+        "v": 5.6998,
+        "prevV": 5.25754,
+        "yoy": 8.4
+      },
+      {
+        "name": "労働費",
+        "v": 3.15677,
+        "prevV": 2.66318,
+        "yoy": 18.5
+      },
+      {
+        "name": "予備費",
+        "v": 3,
+        "prevV": 3,
+        "yoy": 0
+      }
+    ],
+    "sourceTitle": "令和8年度 千葉市一般会計予算書 附 予算に関する説明書（歳入歳出予算事項別明細書 総括・款別歳入歳出）",
+    "sourceUrl": "https://web.archive.org/web/20260715172224/https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/documents/r8yosansho_ippan.pdf",
+    "originUrl": "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/documents/r8yosansho_ippan.pdf",
+    "sourceLocalUrl": "/sources/chiba-yosansho-r8/r8yosansho_ippan.pdf",
+    "pagesLabel": "款別歳入歳出",
+    "evidence": [
+      {
+        "title": "令和8年度 千葉市一般会計予算書 附 予算に関する説明書（歳入歳出予算事項別明細書 総括・款別歳入歳出）",
+        "type": "PDF",
+        "url": "https://web.archive.org/web/20260715172224/https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/documents/r8yosansho_ippan.pdf",
+        "localUrl": "/sources/chiba-yosansho-r8/r8yosansho_ippan.pdf",
+        "source": "www.city.chiba.jp",
+        "thumb": "r8yosansho_ippan.pdf ・ sha256 9f58ef95a2891830… ・ 2026-07-15 取得"
+      }
+    ]
+  },
   "141003": {
     "muniCode": "141003",
     "muniName": "横浜市",
@@ -34870,4 +35712,4 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
 };
 
 /** budget 階層（予算ベースの款別ダッシュボードを持つ）自治体の団体コード */
-export const BUDGET_MUNIS: string[] = ["111007","141003","141305","190004","192023","192040","192066","192082","192091","192112","192139","194301","222038","231002","232076","261009","271004","272191","281000","341002","352039","401005","401307","011002"];
+export const BUDGET_MUNIS: string[] = ["111007","121002","141003","141305","190004","192023","192040","192066","192082","192091","192112","192139","194301","222038","231002","232076","261009","271004","272191","281000","341002","352039","401005","401307","011002"];

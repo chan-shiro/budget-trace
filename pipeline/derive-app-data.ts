@@ -1625,6 +1625,11 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `kitakyushu-yosansho-${fy}`, muniCode: "401005", muniName: "北九州市", prefName: "福岡県", isPref: false,
     })),
+    // 千葉市。**歳出が総務省の目的別13款と一致**（さいたまに次ぐ2例目）。
+    // 過年度は R8 の次が R4 まで飛ぶ（間の年度は原典がスキャン/OCR/款名欠落。docs §8k）
+    ...(["r8", "r4"] as const).map((fy) => ({
+      srcId: `chiba-yosansho-${fy}`, muniCode: "121002", muniName: "千葉市", prefName: "千葉県", isPref: false,
+    })),
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;

@@ -1,0 +1,12 @@
+{
+  "sourceId": "chiba-yosansho-r8",
+  "files": [
+    {
+      "filename": "r8yosansho_ippan.pdf",
+      "sha256": "9f58ef95a2891830fe359f878ddc15e278b3f066ca93cc6713e93bc07d5d1b1e",
+      "bytes": 4629578,
+      "fetchedAt": "2026-07-15T17:21:12.312Z",
+      "fetchedFrom": "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/documents/r8yosansho_ippan.pdf"
+    }
+  ]
+}
