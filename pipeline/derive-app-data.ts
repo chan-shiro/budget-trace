@@ -1653,6 +1653,10 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `okayama-yosangaiyou-${fy}`, muniCode: "331007", muniName: "岡山市", prefName: "岡山県", isPref: false,
     })),
+    // 静岡市は**左右2側が同一ページ（横並び）**＝第6の型。docs §9j。これで全20政令市が揃う
+    ...(["r8", "r7", "r6"] as const).map((fy) => ({
+      srcId: `shizuoka-yosansho-${fy}`, muniCode: "221007", muniName: "静岡市", prefName: "静岡県", isPref: false,
+    })),
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;
