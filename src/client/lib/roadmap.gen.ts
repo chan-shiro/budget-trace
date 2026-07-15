@@ -70,7 +70,7 @@ export const ROADMAP_PROGRESS = {
     },
     {
       "name": "浜松市",
-      "code": "221007",
+      "code": "221309",
       "years": 5,
       "range": "R4〜R8（5年度）"
     },

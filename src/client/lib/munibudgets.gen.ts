@@ -10286,9 +10286,9 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
       ]
     }
   ],
-  "221007": [
+  "221309": [
     {
-      "muniCode": "221007",
+      "muniCode": "221309",
       "muniName": "浜松市",
       "prefName": "静岡県",
       "isPref": false,
@@ -10296,7 +10296,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
       "execution": [],
       "fy": "R8",
       "fyLabel": "令和8年度 当初予算",
-      "population": 672775,
+      "population": 783924,
       "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
       "totalOku": 4401,
       "prevTotalOku": 4160,
@@ -10560,7 +10560,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
       ]
     },
     {
-      "muniCode": "221007",
+      "muniCode": "221309",
       "muniName": "浜松市",
       "prefName": "静岡県",
       "isPref": false,
@@ -10568,7 +10568,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
       "execution": [],
       "fy": "R7",
       "fyLabel": "令和7年度 当初予算",
-      "population": 672775,
+      "population": 783924,
       "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
       "totalOku": 4160,
       "prevTotalOku": 3963,
@@ -10832,7 +10832,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
       ]
     },
     {
-      "muniCode": "221007",
+      "muniCode": "221309",
       "muniName": "浜松市",
       "prefName": "静岡県",
       "isPref": false,
@@ -10840,7 +10840,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
       "execution": [],
       "fy": "R6",
       "fyLabel": "令和6年度 当初予算",
-      "population": 672775,
+      "population": 783924,
       "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
       "totalOku": 3963,
       "prevTotalOku": 3895,
@@ -11104,7 +11104,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
       ]
     },
     {
-      "muniCode": "221007",
+      "muniCode": "221309",
       "muniName": "浜松市",
       "prefName": "静岡県",
       "isPref": false,
@@ -11112,7 +11112,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
       "execution": [],
       "fy": "R5",
       "fyLabel": "令和5年度 当初予算",
-      "population": 672775,
+      "population": 783924,
       "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
       "totalOku": 3895,
       "prevTotalOku": 3640,
@@ -11376,7 +11376,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
       ]
     },
     {
-      "muniCode": "221007",
+      "muniCode": "221309",
       "muniName": "浜松市",
       "prefName": "静岡県",
       "isPref": false,
@@ -11384,7 +11384,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
       "execution": [],
       "fy": "R4",
       "fyLabel": "令和4年度 当初予算",
-      "population": 672775,
+      "population": 783924,
       "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
       "totalOku": 3640,
       "prevTotalOku": 3501,
@@ -34287,8 +34287,8 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       }
     ]
   },
-  "221007": {
-    "muniCode": "221007",
+  "221309": {
+    "muniCode": "221309",
     "muniName": "浜松市",
     "prefName": "静岡県",
     "isPref": false,
@@ -34296,7 +34296,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
     "execution": [],
     "fy": "R8",
     "fyLabel": "令和8年度 当初予算",
-    "population": 672775,
+    "population": 783924,
     "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
     "totalOku": 4401,
     "prevTotalOku": 4160,
@@ -41490,4 +41490,4 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
 };
 
 /** budget 階層（予算ベースの款別ダッシュボードを持つ）自治体の団体コード */
-export const BUDGET_MUNIS: string[] = ["111007","121002","141003","141305","141500","151009","190004","192023","192040","192066","192082","192091","192112","192139","194301","221007","222038","231002","232076","261009","271004","271403","272191","281000","341002","352039","401005","401307","431001","011002","041009"];
+export const BUDGET_MUNIS: string[] = ["111007","121002","141003","141305","141500","151009","190004","192023","192040","192066","192082","192091","192112","192139","194301","221309","222038","231002","232076","261009","271004","271403","272191","281000","341002","352039","401005","401307","431001","011002","041009"];

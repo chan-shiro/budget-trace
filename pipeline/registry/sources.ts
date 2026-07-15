@@ -1810,7 +1810,7 @@ export const SOURCES: SourceEntry[] = [
     },
   },
   {
-    // 浜松市（団体コード 221007・人口78万）。予算に関する説明書（一般会計・484p・1.4MB）。
+    // 浜松市（団体コード 221309・人口78万）。予算に関する説明書（一般会計・484p・1.4MB）。
     // **横浜型**。歳入 物理 p.6（25款）/ 歳出 p.7（13款）。**印字 = 物理（オフセット0）**で、
     // 表紙・目次を含めて採番しているため一致する（政令市では珍しい）。
     // **歳出13款が総務省の目的別と一致**（さいたま §8f・千葉 §8k・堺 §8m・新潟 §8n に次ぐ5例目）。
@@ -1843,7 +1843,7 @@ export const SOURCES: SourceEntry[] = [
     landingPage: "https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget08/index.html",
     kind: "pdf",
     fiscalYear: "R8",
-    scope: "浜松市（一般会計・団体コード221007）",
+    scope: "浜松市（一般会計・団体コード221309）",
     license:
       "本Webサイトで掲載している、情報・文章・画像などの全てのコンテンツデータについては、「私的使用のための複製」や「引用」といった、著作権法上認められた場合を除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。",
     parser: "kofu-yosansho",
@@ -1864,7 +1864,7 @@ export const SOURCES: SourceEntry[] = [
     landingPage: "https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget07/index.html",
     kind: "pdf",
     fiscalYear: "R7",
-    scope: "浜松市（一般会計・団体コード221007）",
+    scope: "浜松市（一般会計・団体コード221309）",
     license:
       "本Webサイトで掲載している、情報・文章・画像などの全てのコンテンツデータについては、「私的使用のための複製」や「引用」といった、著作権法上認められた場合を除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。",
     parser: "kofu-yosansho",
@@ -1885,7 +1885,7 @@ export const SOURCES: SourceEntry[] = [
     landingPage: "https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget06/index.html",
     kind: "pdf",
     fiscalYear: "R6",
-    scope: "浜松市（一般会計・団体コード221007）",
+    scope: "浜松市（一般会計・団体コード221309）",
     license:
       "本Webサイトで掲載している、情報・文章・画像などの全てのコンテンツデータについては、「私的使用のための複製」や「引用」といった、著作権法上認められた場合を除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。",
     parser: "kofu-yosansho",
@@ -1906,7 +1906,7 @@ export const SOURCES: SourceEntry[] = [
     landingPage: "https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget05/index.html",
     kind: "pdf",
     fiscalYear: "R5",
-    scope: "浜松市（一般会計・団体コード221007）",
+    scope: "浜松市（一般会計・団体コード221309）",
     license:
       "本Webサイトで掲載している、情報・文章・画像などの全てのコンテンツデータについては、「私的使用のための複製」や「引用」といった、著作権法上認められた場合を除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。",
     parser: "kofu-yosansho",
@@ -1927,7 +1927,7 @@ export const SOURCES: SourceEntry[] = [
     landingPage: "https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget04/index.html",
     kind: "pdf",
     fiscalYear: "R4",
-    scope: "浜松市（一般会計・団体コード221007）",
+    scope: "浜松市（一般会計・団体コード221309）",
     license:
       "本Webサイトで掲載している、情報・文章・画像などの全てのコンテンツデータについては、「私的使用のための複製」や「引用」といった、著作権法上認められた場合を除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。",
     parser: "kofu-yosansho",
