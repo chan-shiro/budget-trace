@@ -347,8 +347,13 @@ function parseKanPage(
     const rest = lead ? raw.slice(raw.indexOf(lead[1]!) + lead[1]!.length) : raw;
     const tokens = rest.match(AMOUNT_RE) ?? [];
     const ints = tokens.filter((t) => !t.includes("."));
+    // 款名の三点リーダを落とす（2026-07-16）。堺 R2 は折返しの上段末尾に `…` が入る
+    // （`ゴ ル フ 場 利 用 税…` / `国有提供施設等所在…` / `交 通 安 全 対 策…`）が、
+    // **同じ款・同じ折返しの R3 には無い**ので款名の一部ではなく R2 の組版の体裁記号。
+    // 款名に三点リーダが入る自治体は無いので一律で落とす。
     const namePart = (tokens[0] != null ? rest.slice(0, rest.indexOf(tokens[0])) : rest)
-      .replace(/[\s　]/g, "");
+      .replace(/[\s　]/g, "")
+      .replace(/[…‥]/g, "");
 
     // **廃止款**（当年度に廃止された税目）。原典は款番号の代わりに記号を置くか、何も置かない:
     //   甲府 R2   `廃款 （自動車取得税交付金）        76,900  △ 76,900   皆減`
@@ -381,8 +386,13 @@ function parseKanPage(
       emit(kanNo, pendName + namePart, ints, raw, namePart === "" || tailKans.has(kanNo));
     } else if (tokens.length === 0) {
       // 金額のない款名断片（折返しの上段/下段）。日本語断片のみ採る。
-      // 「款名 （A）（%）…」等の列見出し行（括弧・％・全角ABC を含む）は款名に混ぜない
-      if (hasCJK(namePart) && !/[（）()%％ＡＢＣ]/.test(namePart) && !isUnitOnly(namePart)) {
+      // 「款名 （A）（%）…」等の列見出し行は款名に混ぜない。
+      // **弾くのは英字と％であって、全角括弧そのものではない**（2026-07-16 に修正）。
+      // 括弧ごと弾いていたため、**括弧書きの廃止款が3行に折返す様式**（堺 R8 の
+      // `（環境性能割` / `861,000 … 皆減` / `交付金）`）で上下段が両方とも捨てられ、
+      // 款名が空になって**行ごと落ちていた**（前年度Σが 861,000 = 合計の0.18% 不足）。
+      // 列見出しは `（A）`・`（%）` のように**中身が英字か％**なので、そちらで弾けば足りる。
+      if (hasCJK(namePart) && !/[()%％ＡＢＣA-Za-z]/.test(namePart) && !isUnitOnly(namePart)) {
         if (openLine) {
           // 直前の款（名前欄が空だった）の下段折返し。次の款へ漏らさずその款名の末尾に足す
           openLine.kanName += namePart;

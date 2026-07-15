@@ -1595,6 +1595,150 @@ export const SOURCES: SourceEntry[] = [
       kanNameContinues: { revenue: [13] },
     },
   },
+  {
+    // 堺市（団体コード 271403・人口81万）。**広島型**（予算書本体が使えず別資料に逃げる）。
+    // ただし広島とは壊れ方が違う: 予算説明書 `R8-2ippannkaikeiyosannsetsumeisyo.pdf`（330p）は
+    // InDesign 製の born-digital でありながら**本文が全てベジエ曲線のアウトライン**で描かれており、
+    // **テキスト層が無い**（p.9 のコンテンツストリームに Tj/TJ が0個・c=10,019・l=4,466。画像も0個）。
+    // 330ページ全部で pdftotext が返すのは印字ページ番号だけ。
+    // **広島（スキャン＋OCR＝もっともらしい誤数字）と違い堺は「空」を返す**ので静かには壊れない。
+    //
+    // 逃げ先は市議会の議案書に付く**予算案説明資料**（434p・born-digital）の
+    // 「第2 一般会計歳入款別分類表」（物理 p.8）/「第3 一般会計歳出目的別分類表」（物理 p.9）。
+    // **1ページ＝1側の単独表＝横浜型の構造**なので kofu-yosansho に乗る。**オフセット +6**。
+    // ⚠ **目次（物理 p.3）にも同じ見出し語が出る**ので、ページ指定を誤ると目次を読む。
+    // ⚠ **大阪の「目的別歳出予算＝再分類表」ではない**（明細書 p.12 と全款一致することを実測確認）。
+    // 広島 §8g の「目的別分類表＝款そのもの」と同じ側。
+    //
+    // **歳出13款が総務省の目的別と一致**（さいたま §8f・千葉 §8k に次ぐ3例目）＝decision と款名が揃う。
+    // **災害復旧費は存在せず** 11=公債費（欠番ではない）。款体系は R2〜R8 で不変。
+    //
+    // ⚠ **過年度は R5・R4 が収録不可**（鎖が R8–R6 と R3–R2 に分断される）:
+    //   R5 = **歳入だけ**が MS-Mincho Identity-H・uni=no で数字が丸ごと脱落（歳出 p.9 は無傷）。
+    //        Σ が立たず落ちるが、**「歳出だけ通ったから R5 は OK」と早合点しないこと**
+    //   R4 = 全面文字化け（`➨ࠉ㈈ᨻつᶍẚ㍑⾲`）。数字も脱落
+    // ⚠ **URL に規則性がゼロ**（年度ページ・議案ページ・ファイル名すべて）。
+    //    年度追加は議案書インデックス（/shigikai/kaigi/giansyo/index.html）の実リンクから辿る。
+    // ⚠ **物理 p.8/p.9 が R8〜R3 で一致するのは偶然**（**R2 だけ p.6/p.7**）。外挿しない。
+    //
+    // 罠:
+    //   - 列見出しの `款  別` 単独行が KAN_HEADER_RE のどれにも当たらず款1 を「款別市税」に汚す
+    //     （`^款$` は完全一致なので当たらない）。金額とΣは正しく素通りする → HeaderExtra で弾く
+    //   - **廃止款「（環境性能割交付金）」が3行折返し・款番号なし・皆減**（前年 861,000＝合計の0.18%）。
+    //     §9c の対応で拾える
+    //   - 象徴計上 款22 繰越金 `1 / 1`
+    //   - 中央寄せ3行折返しが歳入に4件（款5・9・11・14）。既存の awaitTail でカバー済み
+    //   - 堺市長選は6月（2019・2023）で次は2027年6月＝R9。ただし**列見出しに `当初` と明記する様式**
+    //     なので札幌型の無注記問題は起きない見込み（R10 で再確認）
+    id: "sakai-yosansho-r8",
+    title: "令和8年度 堺市予算案説明資料（第2 一般会計歳入款別分類表・第3 一般会計歳出目的別分類表）",
+    publisher: "堺市",
+    url: null,
+    urls: ["https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/R8-1giannsyo.files/R8-2yosannannsetsumeisiryou.pdf"],
+    landingPage: "https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/R8-1giannsyo.html",
+    kind: "pdf",
+    fiscalYear: "R8",
+    scope: "堺市（一般会計・団体コード271403）",
+    license:
+      "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として堺市に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。本サイト上の文書・画像等について、私的利用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 8,
+      expenditurePage: 9,
+      revenueHeading: "一般会計歳入款別分類表",
+      expenditureHeading: "一般会計歳出目的別分類表",
+      revenueHeaderExtra: "^款別$",
+      expenditureHeaderExtra: "^款別$",
+    },
+  },
+  {
+    id: "sakai-yosansho-r7",
+    title: "令和7年度 堺市予算案説明資料（第2 一般会計歳入款別分類表・第3 一般会計歳出目的別分類表）",
+    publisher: "堺市",
+    url: null,
+    urls: ["https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/giannsyo_R7-1.files/R7-1_yosannnannsetumei.pdf"],
+    landingPage: "https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/giannsyo_R7-1.html",
+    kind: "pdf",
+    fiscalYear: "R7",
+    scope: "堺市（一般会計・団体コード271403）",
+    license:
+      "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として堺市に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。本サイト上の文書・画像等について、私的利用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 8,
+      expenditurePage: 9,
+      revenueHeading: "一般会計歳入款別分類表",
+      expenditureHeading: "一般会計歳出目的別分類表",
+      revenueHeaderExtra: "^款別$",
+      expenditureHeaderExtra: "^款別$",
+    },
+  },
+  {
+    id: "sakai-yosansho-r6",
+    title: "令和6年度 堺市予算案説明資料（第2 一般会計歳入款別分類表・第3 一般会計歳出目的別分類表）",
+    publisher: "堺市",
+    url: null,
+    urls: ["https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/75920720240209111619595.files/R6-1yosannannsetumeisyo.pdf"],
+    landingPage: "https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/75920720240209111619595.html",
+    kind: "pdf",
+    fiscalYear: "R6",
+    scope: "堺市（一般会計・団体コード271403）",
+    license:
+      "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として堺市に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。本サイト上の文書・画像等について、私的利用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 8,
+      expenditurePage: 9,
+      revenueHeading: "一般会計歳入款別分類表",
+      expenditureHeading: "一般会計歳出目的別分類表",
+      revenueHeaderExtra: "^款別$",
+      expenditureHeaderExtra: "^款別$",
+    },
+  },
+  {
+    id: "sakai-yosansho-r3",
+    title: "令和3年度 堺市予算案説明資料（第2 一般会計歳入款別分類表・第3 一般会計歳出目的別分類表）",
+    publisher: "堺市",
+    url: null,
+    urls: ["https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/0301gian.files/0301-yosannan.pdf"],
+    landingPage: "https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/0301gian.html",
+    kind: "pdf",
+    fiscalYear: "R3",
+    scope: "堺市（一般会計・団体コード271403）",
+    license:
+      "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として堺市に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。本サイト上の文書・画像等について、私的利用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 8,
+      expenditurePage: 9,
+      revenueHeading: "一般会計歳入款別分類表",
+      expenditureHeading: "一般会計歳出目的別分類表",
+      revenueHeaderExtra: "^款別$",
+      expenditureHeaderExtra: "^款別$",
+    },
+  },
+  {
+    id: "sakai-yosansho-r2",
+    title: "令和2年度 堺市予算案説明資料（第2 一般会計歳入款別分類表・第3 一般会計歳出目的別分類表）",
+    publisher: "堺市",
+    url: null,
+    urls: ["https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/0207giansho.files/0201yosanansetumeishiryo.pdf"],
+    landingPage: "https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/0207giansho.html",
+    kind: "pdf",
+    fiscalYear: "R2",
+    scope: "堺市（一般会計・団体コード271403）",
+    license:
+      "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として堺市に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。本サイト上の文書・画像等について、私的利用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 6,
+      expenditurePage: 7,
+      revenueHeading: "一般会計歳入款別分類表",
+      expenditureHeading: "一般会計歳出目的別分類表",
+      revenueHeaderExtra: "^款別$",
+      expenditureHeaderExtra: "^款別$",
+    },
+  },
   // ---- 政令市の過年度（2026-07-15）。ページ位置は年度で動くので必ず物理ページを実確認する。
   //      年度 URL の規則も破れる（福岡 R3/R2 の命名・川崎の分冊番号）。docs §8b 参照 ----
   {
