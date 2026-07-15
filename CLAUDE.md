@@ -102,3 +102,7 @@ onKeyDown={(e) => {
 # デプロイ
 
 **Vercel（構築済み）**。チーム `philosophyhouse` のプロジェクト `budget-trace`。GitHub 連携済みで、`main` への push で本番へ自動デプロイされる（PR は Preview デプロイ）。本番 URL: https://budget-trace-tawny.vercel.app 。ビルド設定はデフォルトの Next.js プリセット + bun（`bun.lock` 自動検出）。環境変数は現状不要。CLI 操作は `bunx vercel`（`.vercel/` と `.env*` は gitignore）。
+
+## `main` へ直接 push しない（non-negotiable）
+
+`main` への push は**そのまま本番デプロイ**になる。変更は必ず作業ブランチ → PR（Preview デプロイで確認）→ squash マージの順で入れる。ユーザーが「マージしよう」と言った場合も、`main` への直接 push ではなく **PR を作る**の意味に解釈する。`git push origin main` / `main` 上での直接コミットは、ユーザーがその都度明示的に指示しない限り実行しない。

@@ -232,7 +232,8 @@ Claude Design のプロトタイプ（`project/予算トレース.dc.html`）を
   ページ数・ビューポート計算・初期スクロールまでは確認可能）。DOM 検証（`get_page_text` /
   `getBoundingClientRect` / computed style）は信頼できるので、そちらで確認する
 
-- **GitHub 運用**: このリポジトリは **squash マージが使われる**。マージ後は必ず
+- **GitHub 運用**: **`main` へ直接 push しない**（main push = 本番デプロイ。必ず作業ブランチ → PR →
+  squash マージ。「マージしよう」は PR を作れの意）。このリポジトリは **squash マージが使われる**。マージ後は必ず
   `git fetch origin main && git checkout -B implement-budget-trace origin/main` でブランチを作り直す
   （古いコミットを積み直すと重複する）
 - **データ来歴**: 画面の「ダミー」「推計」注記は仕様。データを触るとき整合を崩さない。
