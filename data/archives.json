@@ -197,6 +197,15 @@
       "sha256Match": true
     },
     {
+      "sourceId": "kawasaki-jigyou-hyouka-r6",
+      "url": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/gaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250913143716/https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/gaiyou.pdf",
+      "waybackTimestamp": "20250913143716",
+      "checkedAt": "2026-07-15T11:42:09.931Z",
+      "sha256Match": true
+    },
+    {
       "sourceId": "kawasaki-yosansho-r2",
       "url": "https://www.city.kawasaki.jp/230/cmsfiles/contents/0000114/114574/20bunkatuban7.pdf",
       "kind": "file",
