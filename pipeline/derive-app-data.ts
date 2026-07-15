@@ -1647,6 +1647,8 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     })),
     // 相模原市は予算書本体が面付けで表が2回描かれるため、主要施策説明書の款項別に逃げる。docs §8p
     { srcId: "sagamihara-yosansho-r8", muniCode: "141500", muniName: "相模原市", prefName: "神奈川県", isPref: false },
+    // 熊本市は説明書（10.3MB・ヘッダ汚染あり）ではなく概要（1.8MB）を採る。docs §8q
+    { srcId: "kumamoto-yosansho-r8", muniCode: "431001", muniName: "熊本市", prefName: "熊本県", isPref: false },
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;
@@ -1963,6 +1965,12 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
   // （2026-07-15 追加）。それまでの語彙は「要許可|非営利」だけで、この型の明示的な禁止が
   // unverified（＝可否未確認・要確認）に落ちていた — 実態より緩い区分で、未確認の山に紛れる。
   // unverified が「安全側」なのは open に対してだけで、禁止文言に対しては安全側ではない。
+  //
+  // ⚠ **この分類器は文脈を読まない**。license 欄に**適用されない規約の名前**を説明として書くと
+  // 語で拾って**逆の区分に落ちる**（2026-07-16 に実際に踏んだ: 熊本の license に
+  // 「公共データ利用規約は適用範囲外」と書いたら **open に分類された** ＝ 発行元が許諾していないのに
+  // 「自由に使える」と画面に出すところだった）。**license 欄には適用される条件だけを書き、
+  // 経緯は registry のコメントに置く**こと。
   //
   // **この分類器は「語彙を1つ足す」たびに同じ穴を再生産する**（2026-07-16・さいたまで再発）。
   // さいたまの「無断使用・転載を禁止します」は、上の語彙（複製・転用）のどれにも当たらず

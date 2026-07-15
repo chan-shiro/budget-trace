@@ -1502,6 +1502,23 @@
       "sha256Match": true
     },
     {
+      "sourceId": "kumamoto-yosansho-r8",
+      "url": "https://www.city.kumamoto.jp/kiji00369192/3_69192_489156_up_mwyrop86.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260715190504/https://www.city.kumamoto.jp/kiji00369192/3_69192_489156_up_mwyrop86.pdf",
+      "waybackTimestamp": "20260715190504",
+      "checkedAt": "2026-07-15T19:05:35.110Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "kumamoto-yosansho-r8",
+      "url": "https://www.city.kumamoto.jp/kiji00369192/index.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260313133808/https://www.city.kumamoto.jp/kiji00369192/index.html",
+      "waybackTimestamp": "20260313133808",
+      "checkedAt": "2026-07-15T19:05:43.480Z"
+    },
+    {
       "sourceId": "kyoto-yosansho-r2",
       "url": "https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000259/259833/01ippan.pdf",
       "kind": "file",
