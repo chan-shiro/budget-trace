@@ -19,6 +19,7 @@ import {
   validationPath,
 } from "./lib/store";
 import { findSource, SOURCES } from "./registry/sources";
+import { ROADMAP } from "./registry/roadmap";
 import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
@@ -1730,7 +1731,7 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
   const { KOFU_EXECUTION_YEARS } = await import("../src/client/lib/execution.gen");
   const { KOFU_EVALUATION_YEARS } = await import("../src/client/lib/evaluations.gen");
   const { KOFU_OUTTURN_YEARS } = await import("../src/client/lib/outturn.gen");
-  const { MUNI_BUDGETS, BUDGET_MUNIS } = await import("../src/client/lib/munibudgets.gen");
+  const { MUNI_BUDGETS, MUNI_BUDGET_YEARS, BUDGET_MUNIS } = await import("../src/client/lib/munibudgets.gen");
   const { PREF_CODES } = await import("../src/client/lib/decision-index.gen");
   const { DECISION_YEARS } = await import("../src/client/lib/decision-index.gen");
 
@@ -1822,7 +1823,11 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
       d.evaluation = `${range(KOFU_EVALUATION_YEARS.map((y) => y.fy))}・約1,500件`;
       d.outturn = range(KOFU_OUTTURN_YEARS.map((y) => y.fy));
     } else if (mb) {
-      d.budget = `${mb.fyLabel}・前年当初比つき`;
+      // **最新年度だけを書かない** — 政令市は R2〜R8 の7年前後を収録しており、`mb.fyLabel` を
+      // 使うと /coverage が「令和8年度」としか言わず実態を過少申告する（2026-07-15 修正）。
+      // full と同じく収録年度の範囲を出す
+      const ys = MUNI_BUDGET_YEARS[k.code] ?? [mb];
+      d.budget = `${range(ys.map((y) => y.fy))}・前年当初比つき`;
       if (mb.projects.length > 0) d.projects = `${mb.projects.length}件`;
       if ((mb.execution?.length ?? 0) > 0) d.execution = mb.execution!.map((e) => e.fyLabel).join("・");
     }
@@ -1878,5 +1883,77 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
   const kb = (JSON.stringify(out).length / 1024).toFixed(0);
   console.log(
     `✓ データ整備状況を導出 → public/coverage.json（${summary.muniCount}市町村・${summary.sourceCount}資料・要許可${summary.licensePermission}・未確認${summary.licenseUnverified}・${kb}KB）`,
+  );
+
+  // ---- /roadmap（進捗と計画）→ src/client/lib/roadmap.gen.ts ------------------
+  // **進捗の数字は1つも手で書かない** — coverage と同じ実データ（上の summary・gen 各種）から出す。
+  // 手書きなのは計画（pipeline/registry/roadmap.ts）だけ。roadmap は数KBなので静的 import でよい
+  // （coverage.json は130KB級なのでフェッチしているが、こちらはその必要がない）。
+  const budgetDepth = Object.entries(MUNI_BUDGET_YEARS)
+    .filter(([, ys]) => ys.length > 1)
+    .map(([code, ys]) => ({ name: ys[0]!.muniName, code, years: ys.length, range: range(ys.map((y) => y.fy)) }))
+    .sort((a, z) => z.years - a.years);
+  const progress = {
+    // 3階層のカバレッジ
+    fullCount: summary.fullCount,
+    budgetCount: summary.budgetCount,
+    muniCount: summary.muniCount,
+    prefCount: summary.prefCount,
+    // 資料とエビデンス
+    sourceCount: summary.sourceCount,
+    fileCount: summary.fileCount,
+    archivedCount: summary.archivedCount,
+    // ライセンス区分（隠さず出す）
+    licenseOpen: summary.licenseOpen,
+    licensePermission: summary.licensePermission,
+    licenseUnverified: summary.licenseUnverified,
+    // 年度の深さ
+    kessanRange,
+    kofuBudgetRange: range(KOFU_BUDGET_YEARS.map((b) => b.fy)),
+    kofuBudgetYears: KOFU_BUDGET_YEARS.length,
+    /** 当初予算を複数年度収録している自治体（年度の多い順） */
+    budgetDepth,
+    /** full 甲府で収録済みのデータ種別（種別名 → 中身の説明） */
+    kofuDetail: entityDetail["192015"]?.detail ?? {},
+  };
+  // 計画は画面に**プレーンテキストとして**描画される（Markdown を解釈しない）。
+  // registry に `**強調**` を書くとアスタリスクごと表示される（実際に踏んだ）。
+  // 同様に「時期を約束しない」ルールも機械的に守らせる — 公開ページなので後から効いてくる。
+  for (const r of ROADMAP) {
+    for (const [k, text] of Object.entries({ title: r.title, why: r.why, needs: r.needs })) {
+      if (text.includes("**") || /\[.+\]\(.+\)/.test(text)) {
+        throw new Error(
+          `roadmap「${r.title}」の ${k}: Markdown 記法（** や リンク）は画面にそのまま出ます。プレーンテキストで書いてください`,
+        );
+      }
+      if (/令和\d+年(度)?(まで|中|内)に|\d+月までに|今年度中に|来年度中に/.test(text)) {
+        throw new Error(
+          `roadmap「${r.title}」の ${k}: 時期を約束する表現が入っています。一次資料の入手可否は発行元次第なので、` +
+            `「何を・なぜ・何が要るか」だけを書いてください（pipeline/registry/roadmap.ts 冒頭のルール）`,
+        );
+      }
+    }
+  }
+  const roadmapOut = `// このファイルは自動生成です。手で編集しないこと。
+// 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
+// 進捗（progress）は coverage.json と同じ実データから算出する。**手書きの数字は1つも無い。**
+// 計画（plan）は pipeline/registry/roadmap.ts の内容をそのまま載せる（唯一の手書き）。
+
+export interface RoadmapItem {
+  title: string;
+  status: "now" | "next" | "later";
+  why: string;
+  needs: string;
+  ref?: string;
+}
+
+export const ROADMAP_PROGRESS = ${JSON.stringify(progress, null, 2)} as const;
+
+export const ROADMAP_PLAN: RoadmapItem[] = ${JSON.stringify(ROADMAP, null, 2)};
+`;
+  writeFileSync(join(process.cwd(), "src/client/lib/roadmap.gen.ts"), roadmapOut, "utf8");
+  console.log(
+    `✓ 進捗と計画を導出 → src/client/lib/roadmap.gen.ts（進捗は実データから算出 / 計画 ${ROADMAP.length}件: ` +
+      `now ${ROADMAP.filter((r) => r.status === "now").length} / next ${ROADMAP.filter((r) => r.status === "next").length} / later ${ROADMAP.filter((r) => r.status === "later").length}）`,
   );
 }

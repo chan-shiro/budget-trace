@@ -6,7 +6,8 @@
 //   /yamanashi/kofu/compare    前年比較（画面スラグを1つ足す）
 //   /nagano/202011             decision 自治体（ローマ字未整備なので団体コード）
 //   /sources                   データ出典（自治体スコープ外のときのみ）
-//   /coverage                  データ整備状況（進捗・エビデンス保管・ライセンス）
+//   /coverage                  データ整備状況（自治体×データセットの ○×・エビデンス保管・ライセンス）
+//   /roadmap                   進捗と計画（プロジェクト全体の現在地とロードマップ）
 //
 // マルチバイト（日本語）のパスは共有時に %XX へエンコードされ視認性が悪いため、
 // 都道府県は定型ローマ字、収録済み自治体（full/budget）は手当てしたローマ字スラグ、
@@ -75,8 +76,8 @@ const KNOWN_MUNIS: KnownMuni[] = (() => {
 
 const PREF_NAMES = new Set(Object.keys(PREF_CODES));
 const APP_SLUGS = new Set(["drill", "compare", "themes", "execution", "similar", "sources"]);
-// 自治体スコープを持たない全体ページ（/coverage /sources）
-const GLOBAL_SLUGS = new Set(["sources", "coverage"]);
+// 自治体スコープを持たない全体ページ（/sources /coverage /roadmap）
+const GLOBAL_SLUGS = new Set(["sources", "coverage", "roadmap"]);
 
 /** 自治体の URL セグメント（収録済み＝ローマ字スラグ、それ以外＝団体コード） */
 function muniSegment(code: string | undefined, muni: string | null): string | null {
@@ -103,8 +104,8 @@ export function stateToPath(t: RouteState): string {
     // ルート
   } else if (t.screen === "muni") {
     if (prefSlug) seg.push(prefSlug);
-  } else if (t.screen === "coverage") {
-    seg.push("coverage"); // 常に全体ページ（自治体スコープを持たない）
+  } else if (t.screen === "coverage" || t.screen === "roadmap") {
+    seg.push(t.screen); // 常に全体ページ（自治体スコープを持たない）
   } else if (t.screen === "sources" && !t.muni) {
     seg.push("sources");
   } else {
@@ -238,6 +239,7 @@ const SCREEN_LABELS: Record<string, string> = {
   similar: "類似自治体との比較",
   sources: "データ出典・更新日",
   coverage: "データ整備状況",
+  roadmap: "進捗と計画",
 };
 
 /** 共有時のページタイトル（link preview 用） */
