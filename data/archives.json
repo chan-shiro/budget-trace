@@ -1374,6 +1374,40 @@
       "checkedAt": "2026-07-14T07:17:01.632Z"
     },
     {
+      "sourceId": "saitama-yosansho-r7",
+      "url": "https://www.city.saitama.lg.jp/006/007/011/001/020/p119990_d/fil/reiwa7nendotousyoyosan.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260715151305/https://www.city.saitama.lg.jp/006/007/011/001/020/p119990_d/fil/reiwa7nendotousyoyosan.pdf",
+      "waybackTimestamp": "20260715151305",
+      "checkedAt": "2026-07-15T15:15:05.137Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "saitama-yosansho-r7",
+      "url": "https://www.city.saitama.lg.jp/006/007/011/001/020/p119990.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250427002845/https://www.city.saitama.lg.jp/006/007/011/001/020/p119990.html",
+      "waybackTimestamp": "20250427002845",
+      "checkedAt": "2026-07-15T15:15:20.942Z"
+    },
+    {
+      "sourceId": "saitama-yosansho-r8",
+      "url": "https://www.city.saitama.lg.jp/006/007/011/001/021/p129189_d/fil/reiwa8nendotousyoyosan.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260509164516/https://www.city.saitama.lg.jp/006/007/011/001/021/p129189_d/fil/reiwa8nendotousyoyosan.pdf",
+      "waybackTimestamp": "20260509164516",
+      "checkedAt": "2026-07-15T15:12:48.821Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "saitama-yosansho-r8",
+      "url": "https://www.city.saitama.lg.jp/006/007/011/001/021/p129189.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260412190801/https://www.city.saitama.lg.jp/006/007/011/001/021/p129189.html",
+      "waybackTimestamp": "20260412190801",
+      "checkedAt": "2026-07-15T15:12:52.753Z"
+    },
+    {
       "sourceId": "sapporo-yosansetsumeisho-r2",
       "url": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r2/documents/reiwa2nenndoyosannsetsumeisyoippankaikeitokubetukaikei.pdf",
       "kind": "file",
