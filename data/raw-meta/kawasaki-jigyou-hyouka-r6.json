@@ -1,0 +1,173 @@
+{
+  "sourceId": "kawasaki-jigyou-hyouka-r6",
+  "files": [
+    {
+      "filename": "gaiyou.pdf",
+      "sha256": "3945cc0e135a9323c632bc7eb8a2031f707870ee1f5516fdbb38d9ebe973eee8",
+      "bytes": 803103,
+      "fetchedAt": "2026-07-15T11:20:57.064Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/gaiyou.pdf"
+    },
+    {
+      "filename": "1-1.pdf",
+      "sha256": "9d1215d030fe2d722eced9c8e8fa0d8ead1ee3eb3393c901649e9716e2da4d96",
+      "bytes": 1437789,
+      "fetchedAt": "2026-07-15T11:20:57.126Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/1-1.pdf"
+    },
+    {
+      "filename": "1-2.pdf",
+      "sha256": "27a9105f43f4415a1dea7b00361df55725b2e953481c6904704d3abe0b90ad9c",
+      "bytes": 1018784,
+      "fetchedAt": "2026-07-15T11:20:57.162Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/1-2.pdf"
+    },
+    {
+      "filename": "1-3.pdf",
+      "sha256": "fc2565ea6314bdfe6e84e8a880f3f2b0dec5c0e2b994366eaa1e0202e3e4da74",
+      "bytes": 741322,
+      "fetchedAt": "2026-07-15T11:20:57.190Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/1-3.pdf"
+    },
+    {
+      "filename": "1-4.pdf",
+      "sha256": "45627a5186f61e813d0fc3bb5a0b198644534cc9dbc886e1702da9518ce8fd5c",
+      "bytes": 2005752,
+      "fetchedAt": "2026-07-15T11:20:57.240Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/1-4.pdf"
+    },
+    {
+      "filename": "1-5.pdf",
+      "sha256": "ab3969094c88448fb8e411f954c21b6f1cc7240539b3c5d36154a8fc8a771ee1",
+      "bytes": 710933,
+      "fetchedAt": "2026-07-15T11:20:57.263Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/1-5.pdf"
+    },
+    {
+      "filename": "1-6.pdf",
+      "sha256": "2e14f1d7ed48d94bf73915c7ce9610e8a0017edfe1fde625e1caa5c390487614",
+      "bytes": 1157012,
+      "fetchedAt": "2026-07-15T11:20:57.297Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/1-6.pdf"
+    },
+    {
+      "filename": "2-1.pdf",
+      "sha256": "50a78694a3e1c7ac77334d7dcdb2766978c1f168e614c6fd69387a72eeb9cf1f",
+      "bytes": 1093036,
+      "fetchedAt": "2026-07-15T11:20:57.329Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/2-1.pdf"
+    },
+    {
+      "filename": "2-2.pdf",
+      "sha256": "1ac16ed651bbb0197e08d1709df93c6a270678b3442e9e4295492d78dfd1d76f",
+      "bytes": 1199426,
+      "fetchedAt": "2026-07-15T11:20:57.360Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/2-2.pdf"
+    },
+    {
+      "filename": "2-3.pdf",
+      "sha256": "e918acb6d0cf5522041bec0c85935cdc923c76d16a82231ce4bcce50516c0834",
+      "bytes": 567129,
+      "fetchedAt": "2026-07-15T11:20:57.385Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/2-3.pdf"
+    },
+    {
+      "filename": "3-1.pdf",
+      "sha256": "fb51b2179b86bf1cd12153ca80cef4ca2b5123e20dd46d568603e376fcac0f84",
+      "bytes": 721615,
+      "fetchedAt": "2026-07-15T11:20:57.412Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/3-1.pdf"
+    },
+    {
+      "filename": "3-2.pdf",
+      "sha256": "31bd36c193440860ca4e909b5b21f5deb61344e41ae06f56f49dec4bb505cda6",
+      "bytes": 1065713,
+      "fetchedAt": "2026-07-15T11:20:57.442Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/3-2.pdf"
+    },
+    {
+      "filename": "3-3.pdf",
+      "sha256": "a24551a19592d4ce495957217b8dc0a0786544908c9de455f9cd0e48a802f53e",
+      "bytes": 1036161,
+      "fetchedAt": "2026-07-15T11:20:57.472Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/3-3.pdf"
+    },
+    {
+      "filename": "4-1.pdf",
+      "sha256": "143be198cfec2949321d82b941ed6e0827ae2f1cde037556e4dfb8c4f0358653",
+      "bytes": 935643,
+      "fetchedAt": "2026-07-15T11:20:57.502Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/4-1.pdf"
+    },
+    {
+      "filename": "4-2.pdf",
+      "sha256": "09aa6d07e016c688bef78ae1c36a054b9e91df0370210027df93e113e002a318",
+      "bytes": 858076,
+      "fetchedAt": "2026-07-15T11:20:57.529Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/4-2.pdf"
+    },
+    {
+      "filename": "4-3.pdf",
+      "sha256": "f047f503b910dedbe6d3d10b24b707033061fe4a23992248eeb4f5221c728289",
+      "bytes": 590573,
+      "fetchedAt": "2026-07-15T11:20:57.555Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/4-3.pdf"
+    },
+    {
+      "filename": "4-4.pdf",
+      "sha256": "2934a9c38b507b1736087f34a1e329d8992da7d00ee02650279d88dd411b2a6b",
+      "bytes": 1139731,
+      "fetchedAt": "2026-07-15T11:20:57.587Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/4-4.pdf"
+    },
+    {
+      "filename": "4-5.pdf",
+      "sha256": "4bcd848bd8a79ab6d093ff705b4a41ce278bab058534ef216bcb2d49f98a2165",
+      "bytes": 600778,
+      "fetchedAt": "2026-07-15T11:20:57.613Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/4-5.pdf"
+    },
+    {
+      "filename": "4-6.pdf",
+      "sha256": "8ca8d9d1f3c9dae21b48e91ea7e6c9fcc9889c531dacd9d172bc50ab3d61a071",
+      "bytes": 800691,
+      "fetchedAt": "2026-07-15T11:20:57.642Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/4-6.pdf"
+    },
+    {
+      "filename": "4-7.pdf",
+      "sha256": "f2b9264596642224b380d7e0c31c6fbf1a585116d4fbbf3a20c86ca53bd3f352",
+      "bytes": 944759,
+      "fetchedAt": "2026-07-15T11:20:57.670Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/4-7.pdf"
+    },
+    {
+      "filename": "4-8.pdf",
+      "sha256": "e8edd398684d612e234fb46b6cdb55b4ece905fb95bfa67d47dc5eee916750b4",
+      "bytes": 1116581,
+      "fetchedAt": "2026-07-15T11:20:57.702Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/4-8.pdf"
+    },
+    {
+      "filename": "4-9.pdf",
+      "sha256": "89fcccc8f8d62450f975aca96938edb94a3db0e5cdf439295e1777005ce9664c",
+      "bytes": 720427,
+      "fetchedAt": "2026-07-15T11:20:57.728Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/4-9.pdf"
+    },
+    {
+      "filename": "5-1.pdf",
+      "sha256": "60152ff2af59124d58613c76d60cfc9c349197d6c3d522608803e020785ef37f",
+      "bytes": 1157811,
+      "fetchedAt": "2026-07-15T11:20:57.756Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/5-1.pdf"
+    },
+    {
+      "filename": "5-2.pdf",
+      "sha256": "24319d5b9e61c5b363fb1c42dd16eca1ec96ddc5088cb7052d4fc718813bf228",
+      "bytes": 659332,
+      "fetchedAt": "2026-07-15T11:20:57.779Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/5-2.pdf"
+    }
+  ]
+}

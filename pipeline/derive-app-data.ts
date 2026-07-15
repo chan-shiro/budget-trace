@@ -1790,6 +1790,7 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
     "kofu-gikai": "議会の構成（会派別議席・議決）",
     "kofu-gyousei-hyouka": "主な事業の評価バッジ",
     "kofu-jigyou-houkoku": "事業報告（成果）",
+    "kawasaki-jigyou-hyouka": "事業報告（成果）",
     "yamanashi-kessan": "予算執行状況（款別 執行率）",
   };
   const sourceCard = (s: (typeof srcs)[number]) => {

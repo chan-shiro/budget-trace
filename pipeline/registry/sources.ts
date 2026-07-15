@@ -758,6 +758,61 @@ export const SOURCES: SourceEntry[] = [
         "令和元年度当初予算は市長選挙に伴う骨格予算のため、前年度予算額は肉付予算（第1回臨時会・第2回定例会の補正）後の額（裏取り: 令和元年度 補正予算のポイント「一般会計 1,022,701＝当初 1,019,300＋第1回臨時 42＋第2回定例 3,359」百万円）",
     },
   },
+  {
+    // 川崎市（団体コード 141305）R6 事務事業評価シート。**予算→執行→成果 の鎖の「成果」**。
+    // 甲府は詳細票が公表サンプル5枚のみ（全134事業は情報公開請求）だったが、**川崎は572事業の
+    // 全量がウェブ公開**されている（請求不要）。docs §8c。
+    // 構成: 政策別に23 PDF（1-1〜5-2）。各ファイルは先頭が政策体系図で、以降は**1事業1シート**。
+    // gaiyou.pdf は全体概要で、**事業数572と達成度の内訳（2=17/3=462/4=93）**を持つ＝検証に使う。
+    // 検証ゲート（実データで成立を確認済み）:
+    //   ①総コスト(A+B) = 事業費A + 人件費B（全列で厳密一致。**列の取り違えを算術で検出できる**）
+    //   ②財源内訳（国庫支出金+市債+その他特財+一般財源）の和 = 事業費A
+    //   ③Σ事業数 = gaiyou.pdf の 572
+    // **予決算表は -tsv の座標が必須**。R7決算額が 事業費A では空欄・人件費B では 0 のため
+    // 行ごとにトークン数が変わる（A=10/B=11/総コスト=11）＝トークン数で列を対応させると静かにずれる。
+    // 列境界はヘッダ（予算額/決算額/計画事業費）の x から導く（決め打ちしない）。空セルは `-`。
+    // ⚠ R6 の決算額は「決算額(見込)」（評価年度のため確定値でない）。R4・R5 は確定決算額。
+    // ⚠ 評価体系が甲府と違う（達成度1〜5＋方向性区分Ⅰ〜Ⅴ。A〜F も点数も無い）。丸めないこと。
+    // R3〜R6 の4年度が公開されているが、24ファイルで約21MB/年（data/raw は既に168MB）のため
+    // **まず R6 のみ収録**し、経年に広げるかは別途判断する。R7 は第4期実施計画で未公表。
+    id: "kawasaki-jigyou-hyouka-r6",
+    title: "川崎市総合計画 第3期実施計画 令和6年度 事務事業評価結果（事務事業評価シート）",
+    publisher: "川崎市",
+    url: null,
+    urls: [
+      "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/gaiyou.pdf",
+      "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/1-1.pdf",
+      "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/1-2.pdf",
+      "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/1-3.pdf",
+      "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/1-4.pdf",
+      "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/1-5.pdf",
+      "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/1-6.pdf",
+      "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/2-1.pdf",
+      "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/2-2.pdf",
+      "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/2-3.pdf",
+      "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/3-1.pdf",
+      "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/3-2.pdf",
+      "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/3-3.pdf",
+      "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/4-1.pdf",
+      "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/4-2.pdf",
+      "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/4-3.pdf",
+      "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/4-4.pdf",
+      "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/4-5.pdf",
+      "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/4-6.pdf",
+      "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/4-7.pdf",
+      "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/4-8.pdf",
+      "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/4-9.pdf",
+      "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/5-1.pdf",
+      "https://www.city.kawasaki.jp/170/cmsfiles/contents/0000178/178614/5-2.pdf",
+    ],
+    landingPage: "https://www.city.kawasaki.jp/170/page/0000178614.html",
+    kind: "pdf",
+    fiscalYear: "R6",
+    scope: "川崎市（一般会計・団体コード141305）",
+    license:
+      "川崎市ホームページの掲載コンテンツ（文書・画像等、及びその内容）に関する諸権利は、原則として川崎市に帰属します。一部の画像等の著作権は、原著作者が所有しています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、川崎市ホームページの掲載コンテンツについて無断で複製・転用することを禁止します。コンテンツの転載などを行いたい場合は、各コンテンツのお問い合わせ先まで事前にご連絡ください。（内容を改変しないことが条件となります。）",
+    parser: "kawasaki-jigyou-hyouka",
+  },
   // ---- 政令市の過年度（2026-07-15）。ページ位置は年度で動くので必ず物理ページを実確認する。
   //      年度 URL の規則も破れる（福岡 R3/R2 の命名・川崎の分冊番号）。docs §8b 参照 ----
   {

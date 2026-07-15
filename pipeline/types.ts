@@ -435,13 +435,27 @@ export type CouncilCompositionDoc = z.infer<typeof councilCompositionDocSchema>;
 // 予算→執行→成果を1事業で通して見られる唯一の一次資料（公表は各年数件のサンプルのみ）。
 export const projectReportCostYearSchema = z.object({
   fy: z.string(), // "R3" など
-  kind: z.enum(["決算", "当初", "計画"]),
-  /** 事業費（千円） */
+  /**
+   * 甲府は「決算/当初/計画」。川崎は「予算額/決算額/計画事業費」で、**予算額が当初とは限らない**
+   * （資料には「予算額」としか書かれていない）ため "当初" に丸めず "予算" を別に持つ。
+   */
+  kind: z.enum(["決算", "当初", "計画", "予算"]),
+  /** 事業費（千円）。川崎の「事業費 A」 */
   jigyohi: z.number().nullable(),
   /** 一般財源（千円） */
   ippanZaigen: z.number().nullable(),
-  /** トータルコスト＝事業費＋概算人件費（千円） */
+  /** トータルコスト＝事業費＋概算人件費（千円）。川崎の「総コスト (A+B)」 */
   totalCost: z.number().nullable(),
+  /** 人件費（千円）。川崎の「人件費 B」＝ 職員1人当たり人件費 × 人工。甲府は総額に含み内訳を出さない */
+  jinkenhi: z.number().nullable().optional(),
+  /** 人工（人）。川崎のみ */
+  ninku: z.number().nullable().optional(),
+  /** 財源内訳（千円）。川崎のみ。国庫支出金＋市債＋その他特財＋一般財源 = 事業費A が検証ゲート */
+  kokkoShishutsukin: z.number().nullable().optional(),
+  shisai: z.number().nullable().optional(),
+  sonotaTokuzai: z.number().nullable().optional(),
+  /** 決算額が見込み（評価年度のため確定値でない）か。川崎 R6 の決算額が該当 */
+  isEstimate: z.boolean().optional(),
 });
 export const projectReportIndicatorSchema = z.object({
   /** 活動指標 / 成果指標 */
@@ -463,10 +477,26 @@ export const projectReportFactSchema = z.object({
   kubun: z.string().nullable(),
   /** 事業実施結果（評価対象年度の実施内容） */
   implementation: z.string().nullable(),
-  /** 総合評価（A〜F。完了は F 扱い） */
-  grade: z.string().regex(/^[A-F]$/),
-  /** 評価点（24点満点） */
+  /**
+   * 総合評価（甲府の第2号様式: A〜F。完了は F 扱い）。
+   * **評価体系は自治体で違う** — 川崎は達成度1〜5＋方向性区分Ⅰ〜Ⅴで A〜F も点数も無いため null。
+   * 他市の評価を A〜F へ丸めない（評価の意味が変わる）。
+   */
+  grade: z.string().regex(/^[A-F]$/).nullable(),
+  /** 評価点（甲府: 24点満点）。持たない自治体は null */
   score: z.number().nullable(),
+  /** 事務事業コード（川崎: 8桁・**年度をまたいで安定**するので経年追跡に使える）。甲府は持たない */
+  code: z.string().nullable().optional(),
+  /**
+   * 達成度（川崎: 1〜5。1=目標を大きく上回って達成 … 5=大きく下回った）。甲府は持たない。
+   * 数字が小さいほど良い＝A〜F と向きが違う点に注意
+   */
+  achievement: z.number().int().min(1).max(5).nullable().optional(),
+  /** 今後の事業の方向性（川崎: Ⅰ現状のまま継続 / Ⅱ改善しながら継続 / Ⅲ事業規模拡大 / Ⅳ事業規模縮小 / Ⅴ終了） */
+  direction: z.string().nullable().optional(),
+  /** 政策・施策（川崎の政策体系。款とは別軸） */
+  policy: z.string().nullable().optional(),
+  measure: z.string().nullable().optional(),
   /** コスト経年（年度順） */
   cost: z.array(projectReportCostYearSchema),
   /** 成果・活動指標 */
