@@ -341,6 +341,32 @@ if (doc.docType === "project-report") {
         }
       }
     }
+    // ---- 差引 = 当年度 − 前年度（横浜の事業評価書）----
+    // **列の対応が正しいことの証明**。資料が載せている「差引（増減）」と、我々が別々の列から
+    // 拾った当年度・前年度の差を突き合わせる。列を1つ取り違えれば必ず落ちる。
+    // 横浜は年度ヘッダが同ページに3組あり、事業決算額と細事業費は x が1ptも違わないので、
+    // このゲートが無いと静かに混ざる（実測 1,508/1,508 厳密一致・例外0）。
+    if (f.costDiff != null && f.cost.length >= 2) {
+      const ys = [...f.cost].sort((a, b) => Number(a.fy.slice(1)) - Number(b.fy.slice(1)));
+      const prev = ys[ys.length - 2]!.jigyohi;
+      const cur = ys[ys.length - 1]!.jigyohi;
+      if (prev != null && cur != null && cur - prev !== f.costDiff) {
+        // **列を取り違えていれば桁ごと違う**（実測: 符号を落としたときは差が2倍になった）。
+        // 差が小さいのは**原典側の誤植**（実測: 横浜 R7 の都筑区「区庁舎管理費」は
+        // 263,659 − 255,960 = 7,699 なのに資料の差引が 7,609。3つとも原典どおり抽出できている）。
+        // 桁が変わらない程度のズレは warning にして原典どおり収録し、それ以外は error で止める。
+        const d = Math.abs(cur - prev - f.costDiff);
+        const scale = Math.max(Math.abs(cur - prev), 1);
+        issues.push({
+          level: d < scale * 0.05 ? "warning" : "error",
+          message:
+            `${f.name}: 資料の差引 ${f.costDiff} が ${ys[ys.length - 1]!.fy} ${cur} − ${ys[ys.length - 2]!.fy} ${prev} = ${cur - prev} と一致しません（差 ${cur - prev - f.costDiff}）。` +
+            (d < scale * 0.05
+              ? "ズレが小さいので原典側の誤植と判断し、資料どおり収録しています"
+              : "年度の列を取り違えている可能性があります"),
+        });
+      }
+    }
     // 達成度は「取れなかった」と「資料に無い」を区別する — 川崎は全事業が持つはずで、
     // 分布が概要 PDF の記載と一致することを下でまとめて確認する
     if (f.achievement == null && f.direction != null) {

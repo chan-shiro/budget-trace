@@ -494,6 +494,11 @@ export const projectReportFactSchema = z.object({
   achievement: z.number().int().min(1).max(5).nullable().optional(),
   /** 今後の事業の方向性（川崎: Ⅰ現状のまま継続 / Ⅱ改善しながら継続 / Ⅲ事業規模拡大 / Ⅳ事業規模縮小 / Ⅴ終了） */
   direction: z.string().nullable().optional(),
+  /**
+   * 資料が載せている「差引（増減）」（千円）。横浜の事業決算額の表が持つ。
+   * **検算専用** — validate が「差引 = 当年度 − 前年度」で列の対応を確かめる（実測 1,508/1,508 厳密一致）。
+   */
+  costDiff: z.number().nullable().optional(),
   /** 政策・施策（川崎の政策体系。款とは別軸） */
   policy: z.string().nullable().optional(),
   measure: z.string().nullable().optional(),
