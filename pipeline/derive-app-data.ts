@@ -1020,7 +1020,10 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
     if (r.kanFromSrc) {
       const kd = anyParsedDocSchema.parse(readJson(parsedPath(r.kanFromSrc)));
       if (kd.docType !== "budget-book") throw new Error(`${r.kanFromSrc}: budget-book ではありません`);
-      for (const f of kd.facts) if (f.side === "expenditure") kanNames[String(f.kanNo)] = f.kanName;
+      // 款番号なしの款（廃止款の括弧書き）は款番号→款名の索引に載せられないので飛ばす
+      for (const f of kd.facts) {
+        if (f.side === "expenditure" && f.kanNo != null) kanNames[String(f.kanNo)] = f.kanName;
+      }
     }
     // 画面に出す断面だけに絞る（parsed をそのまま配ると 2.1MB）。金額は千円のまま持ち、
     // 表示側で fmtOku/fmtYen に通す
@@ -1602,6 +1605,8 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `kawasaki-yosansho-${fy}`, muniCode: "141305", muniName: "川崎市", prefName: "神奈川県", isPref: false,
     })),
+    // 大阪市は事項別明細書（款項目が同一表・182p）で他市と様式が違う → 専用パーサ osaka-yosansho
+    { srcId: "osaka-yosansho-r8", muniCode: "271004", muniName: "大阪市", prefName: "大阪府", isPref: false },
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;
@@ -1943,6 +1948,7 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
   // （旧 SOURCES は甲府市＋総務省だけを手で並べた配列で、政令市18団体97資料が載っていなかった）。
   const USED_BY_PARSER: Record<string, string> = {
     "kofu-yosansho": "ダッシュボード／款別ドリルダウン／前年比較",
+    "osaka-yosansho": "ダッシュボード／款別ドリルダウン／前年比較",
     "soumu-shichoson-kessan": "全市町村の決算ダッシュボード／款別・歳入内訳／1人あたり／類似自治体比較",
     "soumu-shichoson-seishitsu": "財政指標／性質別歳出",
     "kofu-kessan-syousai": "予算執行状況（決算・確定値）",

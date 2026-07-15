@@ -144,7 +144,12 @@ export type ParsedDoc = z.infer<typeof parsedDocSchema>;
 // 自治体の当初予算書・予算資料から抽出した款別の歳入・歳出。単位は千円。
 export const budgetLineFactSchema = z.object({
   side: z.enum(["revenue", "expenditure"]),
-  kanNo: z.number().int().positive(),
+  /**
+   * 款番号。**null は「原典が款番号を振っていない」**（捏造しない）。
+   * 例: 大阪市 R8 歳入末尾の廃止款 `（自動車取得税交付金）` は括弧書きで番号を持たないが、
+   * 前年度額 1 千円が歳入合計に含まれるので、落とすと Σ が合わない。
+   */
+  kanNo: z.number().int().positive().nullable(),
   kanName: z.string().min(1),
   /** 当年度当初予算額（千円） */
   amount: z.number(),
