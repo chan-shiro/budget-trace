@@ -63,6 +63,22 @@ function validateBudgetBook(d: BudgetBookDoc): void {
         break;
       }
     }
+    // **款名の重複**（2026-07-16 追加）。同じ側に同じ款名は立たないので、重複＝抽出の壊れ。
+    // 狙いは**款名の折返しの取りこぼし**を捕まえること — 金額は正しいまま款名だけが化けるので
+    // Σ のゲートを素通りする（横浜「千円千円千円市税」・広島「交付金」型）。折返しに失敗すると
+    // 頭の断片が落ちて後半だけが残るため、**衝突して重複になる**（広島 R8 なら
+    // 法人事業税/地方消費税/ゴルフ場利用税 が揃って「交付金」になる）。
+    // 款番号を持たない資料（広島の資料1）では款番号の重複チェックが効かないので、ここが唯一の網。
+    const names = new Map<string, number>();
+    for (const f of lines) names.set(f.kanName, (names.get(f.kanName) ?? 0) + 1);
+    for (const [name, n] of names) {
+      if (n > 1) {
+        issues.push({
+          level: "error",
+          message: `${label}: 款名「${name}」が ${n} 件重複（款名の折返しを取りこぼしている可能性）`,
+        });
+      }
+    }
     // 負値（当初予算に負は原則ない）
     for (const f of lines) {
       if (f.amount < 0) issues.push({ level: "error", message: `${label} ${f.kanName}: 負値 (${f.amount})` });

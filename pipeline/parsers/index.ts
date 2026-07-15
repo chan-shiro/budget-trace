@@ -13,6 +13,7 @@ import { parseKofuJigyouHoukoku } from "./kofu-jigyou-houkoku";
 import { parseKawasakiJigyouHyouka } from "./kawasaki-jigyou-hyouka";
 import { parseYokohamaJigyoHyoka } from "./yokohama-jigyo-hyoka";
 import { parseOsakaYosansho } from "./osaka-yosansho";
+import { parseHiroshimaYosansho } from "./hiroshima-yosansho";
 
 /** 1ソースの raw ファイル群をまとめて受け取り、マージ済みの facts を返す */
 type ParserFn = (files: { path: string; filename: string }[], source: SourceEntry) => AnyParsedDoc;
@@ -21,6 +22,7 @@ const PARSERS: Record<string, ParserFn> = {
   "soumu-shichoson-kessan": parseShichosonKessan,
   "kofu-yosansho": parseKofuYosansho,
   "osaka-yosansho": parseOsakaYosansho, // 事項別明細書（款項目が同一表・182p・折返し款あり）
+  "hiroshima-yosansho": parseHiroshimaYosansho, // 当初予算の概要「資料1」（款番号列が無い・10列）
   "kofu-zaisei-jokyo": parseKofuZaiseiJokyo, // 財政事情の公表（予算執行状況・速報）
   "kofu-kessan-syousai": parseKofuKessanSyousai, // 決算状況 収入支出詳細（執行の確定値）
   "kofu-gyousei-hyouka": parseKofuGyouseiHyouka, // 行政評価（事務事業評価）結果一覧

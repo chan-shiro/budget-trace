@@ -22,6 +22,8 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/documents/04_R7_keisuusiryou.pdf": "https://web.archive.org/web/20260311021942/https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/documents/04_R7_keisuusiryou.pdf",
   "https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/8Ntoushoyosanan_2.html": "https://web.archive.org/web/20260312010141/https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/8Ntoushoyosanan_2.html",
   "https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/documents/04_R8_keisuusiryou.pdf": "https://web.archive.org/web/20260715084154/https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/documents/04_R8_keisuusiryou.pdf",
+  "https://www.city.hiroshima.lg.jp/_res/projects/default_project/_page_/001/047/851/2610.pdf": "https://web.archive.org/web/20260715152157/https://www.city.hiroshima.lg.jp/_res/projects/default_project/_page_/001/047/851/2610.pdf",
+  "https://www.city.hiroshima.lg.jp/shisei/zaisei/1003079/1043845/1047851.html": "https://web.archive.org/web/20260715152343/https://www.city.hiroshima.lg.jp/shisei/zaisei/1003079/1043845/1047851.html",
   "https://www.city.hokuto.yamanashi.jp/docs/1664.html": "https://web.archive.org/web/20260418225034/https://www.city.hokuto.yamanashi.jp/docs/1664.html",
   "https://www.city.hokuto.yamanashi.jp/fs/4/9/9/0/3/0/_/__8__________.pdf": "https://web.archive.org/web/20260714071224/https://www.city.hokuto.yamanashi.jp/fs/4/9/9/0/3/0/_/__8__________.pdf",
   "https://www.city.osaka-izumi.lg.jp/kakukano/soumubu/zaiseika/gyoumu/yosan.html": "https://web.archive.org/web/20260713094504/https://www.city.osaka-izumi.lg.jp/kakukano/soumubu/zaiseika/gyoumu/yosan.html",
