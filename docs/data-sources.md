@@ -15,15 +15,22 @@
    直リンクではなくランディングページを `landingPage` に記録する — 直リンクは構成変更で切れる
 2. **直リンクを確認する**: `curl -sL <url> | file -` などで実体（PDF/Excel）を確認。
    政府系はブラウザ相当の User-Agent が要ることがある（fetch.ts は対応済み）
-3. **registry に登録**（id は `発行元-資料名-年度` の kebab-case）。ライセンス・スコープも記入
-4. `bun run pipeline:fetch <id>` — raw 取得と同時に sha256・取得日時が raw-meta に固定される。
+3. **利用条件（ライセンス）を調べる** — 資料と同じ調査で必ず押さえる。フッターの「利用規約」
+   「著作権・リンクについて」→ オープンデータページ（政府標準利用規約準拠 / CC BY 表記）→
+   資料の奥付、の順で探す。**発行元の表記を原文のまま** `license` に書く（区分 open /
+   permission-required / unverified は `/coverage` の derive が原文から**自動判定**するので
+   要約・意訳しない）。**利用条件ページの URL と確認日は本書の当該資料メモに残す**。
+   迷ったら `unverified` のまま（安全側）。詳細は [data-strategy.md](data-strategy.md) の
+   「資料と一緒に『利用条件』も必ず調べる」と「③の再配布ライセンスは『区分して開示する』」
+4. **registry に登録**（id は `発行元-資料名-年度` の kebab-case）。ライセンス・スコープも記入
+5. `bun run pipeline:fetch <id>` — raw 取得と同時に sha256・取得日時が raw-meta に固定される。
    **raw はコミットする**（原本アーカイブ。発行元の差し替え・削除に備える）
-5. **パーサを書く前に構造を調べる**: Excel は `sheet_to_json(header:1)` で行列を目視、
+6. **パーサを書く前に構造を調べる**: Excel は `sheet_to_json(header:1)` で行列を目視、
    PDF は `pdftotext -layout`（表が崩れる場合は `-tsv` で単語座標）。
    **テキスト層のある PDF は決定的パースを最優先**し、LLM 抽出は最後の手段にする
-6. **検証ルールを先に決める**: 予算・決算データは「合計 = 内訳の和」「歳入 = 歳出（予算）」
+7. **検証ルールを先に決める**: 予算・決算データは「合計 = 内訳の和」「歳入 = 歳出（予算）」
    「記載率 = 再計算率」など自己検証できる。error 1件でも normalize/derive に進まない
-7. `bun run pipeline:archive <id>` — **Wayback Machine にも登録する**。
+8. `bun run pipeline:archive <id>` — **Wayback Machine にも登録する**。
    raw の git アーカイブは「私たちの写し」でしかないので、第三者が検証できる中立な写し
    （魚拓）を残す。スナップショット URL は `data/archives.json`（台帳）に記録され、
    derive の `wayback()` が**画面のエビデンスリンクをコピー優先に差し替える**
@@ -34,12 +41,12 @@
      結果を台帳の `sha256Match` に記録する。`false` は別版（古いスナップショット等）の印
      （実例: 財政事情 01ipankaikei.pdf の CDX 最新が 2024 年の旧版だった → `--force` で解消）
    - 直リンクが同じパスへ上書きされる資料（財政事情）は版が変わるたび `--force` で再登録
-8. **自サーバー配信を確認する** — `pipeline/sync-public-sources.ts`（dev/build 前段で自動）が
+9. **自サーバー配信を確認する** — `pipeline/sync-public-sources.ts`（dev/build 前段で自動）が
    raw の PDF・HTML・Excel を `public/sources/` へ同期する。画面のエビデンスリンクは
    **常にこのコピー**をドロワーで開く（発行元・Wayback への直リンクを主リンクにしない —
    「エビデンス3層コピーの原則」は data-strategy.md）。新しい形式を追加したら
    ドロワー側の表示手段（PdfViewer / HtmlViewer / ダウンロードカード）も確認する
-9. `parse → validate → normalize（全国比較データのみ）→ derive` を通し、
+10. `parse → validate → normalize（全国比較データのみ）→ derive` を通し、
    本書に取得手順・ハマりどころを追記する
 
 ---
