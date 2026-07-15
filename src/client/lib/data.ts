@@ -83,7 +83,14 @@ export const GLOSS: Record<string, string> = {
 };
 
 // 実データの生成モジュール（来歴付き）
-export { SIMILAR, SIM_MIX_COLS, SIMILAR_FY_LABEL, SIMILAR_EVIDENCE } from './similar.gen';
+export { SIMILAR_FY_LABEL, SIMILAR_INDEX_URL, SIMILAR_EVIDENCE, type SimilarEvidence } from './similar.gen';
+// 類似自治体比較（軸で選ぶ）。比較行そのものは全国索引を取得して組み立てる
+export {
+  SIMILAR_AXES, DEFAULT_SIMILAR_AXIS, DEFAULT_PEER_COUNT, SUGGEST_COUNT, BAND_SIZE,
+  isSimilarAxis, axisOf, axisDistance, rankPeers, bandAverage, searchMunis, familyLabel,
+  refOf, refLabelOf, type SimilarAxis, type SimilarAxisKey,
+} from './similar';
+export type { SimilarIndex, SimilarIndexRow } from '../hooks/useSimilarIndex';
 export { KOFU_BUDGET, KOFU_BUDGET_YEARS, type KofuBudgetYear } from './kofu.gen';
 export { KOFU_PROJECTS, KOFU_PROJECTS_SOURCE, KOFU_PROJECT_YEARS } from './projects.gen';
 export { KOFU_EXECUTION, KOFU_EXECUTION_YEARS, type KofuExecutionYear } from './execution.gen';
@@ -190,10 +197,17 @@ export function fmtOku(v: number): string {
   return Math.round(v*10000).toLocaleString() + '万円';
 }
 export function pctOf(v: number, total: number): string { return (v/total*100).toFixed(1) + '%'; }
+// 円 → 万円（1万円未満は円のまま。町村の1人あたり・小さな金額で桁を潰さない）
+export function fmtYen(yen: number): string {
+  return yen >= 10000 ? (yen/1e4).toFixed(1) + '万円' : Math.round(yen).toLocaleString() + '円';
+}
 // 億円 → 1人あたり金額
 export function fmtPerCap(oku: number, pop: number): string {
-  const yen = oku * 1e8 / pop;
-  return yen >= 10000 ? (yen/1e4).toFixed(1) + '万円' : Math.round(yen).toLocaleString() + '円';
+  return fmtYen(oku * 1e8 / pop);
+}
+// 人口（1万人未満の町村は「人」のまま。0.1万人 では実態が読めない）
+export function fmtPop(pop: number): string {
+  return pop >= 10000 ? (pop/1e4).toFixed(1) + '万人' : Math.round(pop).toLocaleString() + '人';
 }
 export function hash(s: string): number { let h = 0; for (let i=0;i<s.length;i++) { h = (h*31 + s.charCodeAt(i)) >>> 0; } return h; }
 export function fadeColor(c: string): string { return `color-mix(in srgb, ${c} 26%, #F2F6F9)`; }

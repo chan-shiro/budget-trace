@@ -28,6 +28,8 @@ export interface RouteState {
   execFy?: string;
   execSide?: string;
   compSide?: string;
+  simAxis?: string;
+  simVs?: string[];
   unit?: string;
 }
 
@@ -121,6 +123,11 @@ export function stateToPath(t: RouteState): string {
     if (t.execSide && t.execSide !== "exp") q.set("eside", t.execSide);
   }
   if (t.screen === "compare" && t.compSide && t.compSide !== "exp") q.set("cside", t.compSide);
+  if (t.screen === "similar") {
+    // 比較軸と比較相手（団体コード）。共有すると同じ比較表が開く
+    if (t.simAxis && t.simAxis !== "pop") q.set("axis", t.simAxis);
+    if (t.simVs?.length) q.set("vs", t.simVs.join(","));
+  }
   if (t.unit === "per") q.set("unit", "per");
   // ドリルパス（日本語）はクエリなので encodeURIComponent される。パスセグメントは ASCII。
   const path = "/" + seg.map(encodeURIComponent).join("/");
@@ -204,6 +211,9 @@ export function pathToState(
     execFy: g("efy") ?? undefined,
     execSide: g("eside") ?? "exp",
     compSide: g("cside") ?? "exp",
+    simAxis: g("axis") ?? undefined,
+    // 団体コード（6桁）以外は捨てる。未指定なら軸のサジェストが既定で載る
+    simVs: g("vs")?.split(",").filter((c) => /^\d{6}$/.test(c)) ?? undefined,
     unit: g("unit") === "per" ? "per" : "total",
   };
 }

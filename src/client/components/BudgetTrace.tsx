@@ -5,14 +5,16 @@ import { CountUpNum } from "./ui";
 import * as D from "@/client/lib/data";
 import { useDecisionData } from "@/client/hooks/useDecisionData";
 import { useCoverage } from "@/client/hooks/useCoverage";
+import { useSimilarIndex } from "@/client/hooks/useSimilarIndex";
 import { stateToPath, locationToState, type RouteState } from "@/client/lib/routing";
 import BudgetTraceView from "./BudgetTraceView";
 
 const {
-  GLOSS, SIM_MIX_COLS, SIMILAR, SIMILAR_EVIDENCE, SOURCES,
+  GLOSS, SIMILAR_EVIDENCE, SOURCES,
   KOFU_BUDGET_YEARS, KOFU_PROJECT_YEARS, KOFU_EXECUTION_YEARS, KOFU_EVALUATION_YEARS, KOFU_OUTTURN_YEARS, KOFU_R6_DETAIL, KOFU_TREND, KOFU_COUNCIL, KOFU_COUNCIL_YEARS, KOFU_REPORT_YEARS,
-  muniFromBudget, fmtOku, pctOf, fmtPerCap, fadeColor, donutBg, setPalette,
+  muniFromBudget, fmtOku, pctOf, fmtPerCap, fmtPop, fmtYen, fadeColor, donutBg, setPalette,
 } = D;
+type SimilarAxisKey = D.SimilarAxisKey;
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
@@ -35,6 +37,12 @@ interface St {
   budgetFy?: string;
   /** 事業報告（成果）で開いている事務事業の番号（詳細票の No。未指定は先頭） */
   reportNo?: string;
+  /** 類似自治体比較の比較軸（"pop" など。未指定は人口） */
+  simAxis?: string;
+  /** 類似自治体比較で表に載せている比較相手（団体コード）。未指定は軸のサジェスト上位 */
+  simVs?: string[];
+  /** 類似自治体比較の検索語（任意の自治体を比較相手に足す） */
+  simQ?: string;
   /** データ整備状況の検索語 */
   covQ?: string;
   /** データ整備状況で展開中の都道府県 */
@@ -64,7 +72,7 @@ const DEFAULT_ST: St = {
   screen: "top", pref: null, muni: null,
   drillSide: "exp", drillPath: [], theme: null,
   searchQ: "", unit: "total", compSide: "exp", tip: null,
-  covQ: "", covOpen: [], covMuni: null,
+  simQ: "", covQ: "", covOpen: [], covMuni: null,
 };
 
 // 総合計画の基本目標（= 政策テーマ）。各年度の主な事業の basicGoal から集計する。
@@ -125,7 +133,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     else history.replaceState(null, "", url);
     lastScreen.current = st.screen;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [st.screen, st.pref, st.muni, st.muniCode, st.budgetFy, st.reportNo, st.drillSide, st.drillPath, st.theme, st.execFy, st.execSide, st.compSide, st.unit]);
+  }, [st.screen, st.pref, st.muni, st.muniCode, st.budgetFy, st.reportNo, st.drillSide, st.drillPath, st.theme, st.execFy, st.execSide, st.compSide, st.simAxis, st.simVs, st.unit]);
 
   // --- 一次資料ドロワー ---
   // 呼び出し側は #page=N 付き URL を渡してよい（ここで分離して PDF.js ビューアへ渡す）
@@ -698,6 +706,152 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     (isBudget && (screen === "themes" || (screen === "execution" && !hasExec))) ||
     // 都道府県は市町村の類似自治体比較を出さない
     (isPref && screen === "similar");
+
+  // ========================================================================
+  // 類似自治体との比較 — 「何で比べるか（軸）」を選んでから比較相手を選ぶ。
+  // 行は表示中の自治体を基準に組み立てる（以前は導出時に決め打ちした甲府市＋4市の
+  // 静的リストを全自治体で使い回していたため、どの自治体を見ても甲府市が「このまち」
+  // として出ていた）。全国索引はこの画面でだけ取得する（260KB・全1,741市町村）。
+  // 軸ごとの距離計算・帯平均は lib/similar.ts。
+  // ========================================================================
+  const simOn = screen === "similar" && !gatedToDash;
+  const { data: simIndex, loading: simLoading, error: simError } = useSimilarIndex(simOn);
+  const simAxisKey: SimilarAxisKey = D.isSimilarAxis(s.simAxis) ? s.simAxis : D.DEFAULT_SIMILAR_AXIS;
+  const simSelf = simIndex && muniCode ? simIndex.munis.find((m) => m.c === muniCode) ?? null : null;
+  // 軸で近い順の全国母集団（同じ種別のみ）。サジェスト・帯平均の両方がここから出る
+  const simRanked = React.useMemo(
+    () => (simIndex && simSelf ? D.rankPeers(simIndex, simSelf, simAxisKey) : []),
+    [simIndex, simSelf, simAxisKey],
+  );
+  const simVals = (() => {
+    const axis = D.axisOf(simAxisKey);
+    const base = {
+      simAxes: D.SIMILAR_AXES.map((a) => ({
+        key: a.key, label: a.label, desc: a.desc, active: a.key === simAxisKey,
+        // 軸を変えると既定のサジェストも変わるので、手動で選んだ相手はリセットする
+        select: () => setSt({ simAxis: a.key, simVs: undefined, simQ: "" }),
+      })),
+      simAxisDesc: axis.desc,
+      simLoading, simError,
+      simQ: s.simQ ?? "",
+      setSimQ: (val: string) => setSt({ simQ: val }),
+      simResults: [] as any[],
+      simSuggest: [] as any[],
+      simPoolLabel: "",
+      simCustom: !!s.simVs,
+      simReset: () => setSt({ simVs: undefined, simQ: "" }),
+      similarRows: [] as any[],
+      simLegend: [] as any[],
+      similarEvidence: [] as any[],
+      simFyLabel: simIndex?.fyLabel ?? D.SIMILAR_FY_LABEL,
+      simReady: false,
+      // 索引に無い自治体（Σ款≠歳出総額で決算シャードにも載らない団体）
+      simMissing: !!simIndex && !simSelf,
+    };
+    if (!simIndex || !simSelf) return base;
+
+    const cols = [D.PALETTE[0], D.PALETTE[1], D.PALETTE[2], D.PALETTE[4], "#C6D2DA"];
+    // 人口・財政規模・1人あたり歳出は比較表に列があるので、行内で軸の値を繰り返さない。
+    // 財政力指数・歳出構成は表に出ない値で並んでいるので、行にも根拠として出す
+    const axisInTable = simAxisKey === "pop" || simAxisKey === "exp" || simAxisKey === "perCap";
+    /** 軸の値そのもの（サジェストの並びが腑に落ちるよう、行にも同じ値を出す） */
+    const axisLabel = (m: D.SimilarIndexRow): string => {
+      switch (simAxisKey) {
+        case "pop": return fmtPop(m.pop);
+        case "exp": return fmtOku(m.exp);
+        case "perCap": return fmtYen(m.pc);
+        case "finIdx": return m.fi != null ? m.fi.toFixed(2) : "—";
+        case "mix": {
+          const d = D.axisDistance(simSelf, m, "mix");
+          return d == null ? "—" : `差 ${d.toFixed(1)}pt`;
+        }
+      }
+    };
+    const vsCodes = s.simVs ?? simRanked.slice(0, D.DEFAULT_PEER_COUNT).map((m) => m.c);
+    const selected = new Set(vsCodes);
+    const toggle = (code: string) => {
+      const next = selected.has(code) ? vsCodes.filter((c) => c !== code) : [...vsCodes, code];
+      setSt({ simVs: next });
+    };
+    const band = simRanked.slice(0, D.BAND_SIZE);
+    const avg = D.bandAverage(simIndex, simSelf, simAxisKey, band);
+    const vsRows = vsCodes.flatMap((c) => {
+      const m = simIndex.munis.find((x) => x.c === c);
+      return m ? [m] : []; // 未知のコード（手で URL を書き換えた等）は黙って落とす
+    });
+
+    /** 索引の1行 → 表示行 */
+    const toRow = (m: D.SimilarIndexRow, self: boolean) => {
+      const sHover = hoverFor("sim-" + m.c);
+      return {
+        key: m.c, name: m.n, sub: m.p, self,
+        pop: fmtPop(m.pop), totalFmt: fmtOku(m.exp), perCap: fmtYen(m.pc),
+        // 歳出構成軸の基準行は「差 0.0pt」にしかならないので出さない（構成は帯グラフが示す）
+        axisVal: axisInTable || (self && simAxisKey === "mix") ? "" : `${axis.label} ${axisLabel(m)}`,
+        ref: D.refOf(simIndex, m), refLabel: D.refLabelOf(simIndex, m),
+        bg: self ? "#E3F4FC" : "transparent", fw: self ? "700" : "500",
+        badge: self ? "このまち" : "",
+        clickable: !self,
+        open: self ? () => {} : () => nav({
+          screen: "dash", muni: m.n, muniCode: m.c, pref: m.p,
+          drillPath: [], theme: null, budgetFy: undefined,
+        }),
+        // 比較相手は表からも外せる（サジェストのチップと同じ選択状態を共有する）
+        remove: self ? null : () => toggle(m.c),
+        segs: m.mix.map((p, i) => ({
+          w: String(p), sw: sHover == null || sHover === i ? cols[i] : fadeColor(cols[i]),
+          tipMove: mkSegTip(`${m.n}・${simIndex.mixCols[i]}`, p + "%", "歳出構成比", cols[i]!, { key: "sim-" + m.c, idx: i }),
+        })),
+      };
+    };
+    /** 帯平均の行（実在の自治体ではないので導出値と明示し、リンクも張らない） */
+    const avgRow = avg
+      ? (() => {
+          const sHover = hoverFor("sim-avg");
+          return {
+            key: "__avg", name: avg.name, sub: "", self: false, avg: true,
+            pop: fmtPop(avg.pop), totalFmt: fmtOku(avg.exp), perCap: fmtYen(avg.pc),
+            axisVal: "",
+            ref: avg.note, refLabel: `帯内${avg.count}団体から算出（導出値）`,
+            bg: "transparent", fw: "500", badge: "", clickable: false, open: () => {}, remove: null,
+            segs: avg.mix.map((p, i) => ({
+              w: String(p), sw: sHover == null || sHover === i ? cols[i] : fadeColor(cols[i]),
+              tipMove: mkSegTip(`${avg.name}・${simIndex.mixCols[i]}`, p + "%", "歳出構成比", cols[i]!, { key: "sim-avg", idx: i }),
+            })),
+          };
+        })()
+      : null;
+
+    const rows = [toRow(simSelf, true), ...vsRows.map((m) => toRow(m, false)), ...(avgRow ? [avgRow] : [])];
+    // エビデンスは「表示中の行が実際に使ったファイル」だけに絞る（市だけなら町村別は出さない）
+    const families = new Set([simSelf.f, ...vsRows.map((m) => m.f), ...(avgRow ? [simSelf.f] : [])]);
+    const poolCount = simIndex.munis.filter((m) => m.f === simSelf.f).length;
+
+    return {
+      ...base,
+      simReady: true,
+      simPoolLabel: `全国の${poolCount.toLocaleString("ja-JP")}${D.familyLabel(simSelf.f)}から`,
+      simSuggest: simRanked.slice(0, D.SUGGEST_COUNT).map((m) => ({
+        code: m.c, name: m.n, pref: m.p, axisVal: axisLabel(m),
+        selected: selected.has(m.c), toggle: () => toggle(m.c),
+      })),
+      simResults: D.searchMunis(simIndex, s.simQ ?? "", new Set([simSelf.c, ...selected])).map((m) => ({
+        code: m.c, name: m.n, pref: m.p, axisVal: axisLabel(m),
+        // 種別が違う相手は財政構造が違うので、選べるが注意書きを添える
+        crossFamily: m.f !== simSelf.f ? `${D.familyLabel(m.f)}（種別が違います）` : "",
+        add: () => setSt({ simVs: [...vsCodes, m.c], simQ: "" }),
+      })),
+      similarRows: rows,
+      simLegend: simIndex.mixCols.map((n, i) => ({ name: n, sw: cols[i] })),
+      similarEvidence: SIMILAR_EVIDENCE.filter((ev) => families.has(ev.family)).map((ev) => ({
+        ...ev,
+        open: () => openViewer({
+          url: ev.localUrl, title: ev.title, sub: ev.thumb,
+          originUrl: "https://www.soumu.go.jp/iken/zaisei/r06_shichouson.html", archiveUrl: ev.url,
+        }),
+      })),
+    };
+  })();
 
   const v: any = {
     isTop: screen === "top", isMuni: screen === "muni", isApp,
@@ -1338,31 +1492,8 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
       };
     })(),
     goSources: () => nav({ screen: "sources" }), goDash: () => nav({ screen: "dash" }),
-    similarRows: SIMILAR.map((r) => {
-      const cols = [D.PALETTE[0], D.PALETTE[1], D.PALETTE[2], D.PALETTE[4], "#C6D2DA"];
-      const sHover = hoverFor("sim-" + r.name);
-      // 各市の団体コードがあればその市のダッシュボードへ飛べる（甲府=full／4市=budget）
-      const prefOf = r.muniCode === "192015" ? "山梨県" : D.MUNI_BUDGETS[r.muniCode ?? ""]?.prefName ?? "";
-      return {
-        name: r.name, pop: r.pop, totalFmt: fmtOku(r.total), perCap: r.perCap,
-        ref: r.ref, refLabel: r.refLabel,
-        bg: r.self ? "#E3F4FC" : "transparent", fw: r.self ? "700" : "500",
-        badge: r.self ? "このまち" : "",
-        clickable: !!r.muniCode && !r.self,
-        open: r.muniCode && !r.self
-          ? () => nav({ screen: "dash", muni: r.name, muniCode: r.muniCode!, pref: prefOf, drillPath: [], theme: null, budgetFy: undefined })
-          : () => {},
-        segs: r.mix.map((p, i) => ({ w: String(p), sw: sHover == null || sHover === i ? cols[i] : fadeColor(cols[i]), tipMove: mkSegTip(`${r.name}・${SIM_MIX_COLS[i]}`, p + "%", "歳出構成比", cols[i], { key: "sim-" + r.name, idx: i }) })),
-      };
-    }),
-    simLegend: SIM_MIX_COLS.map((n, i) => ({ name: n, sw: [D.PALETTE[0], D.PALETTE[1], D.PALETTE[2], D.PALETTE[4], "#C6D2DA"][i] })),
-    similarEvidence: SIMILAR_EVIDENCE.map((ev: any) => ({
-      ...ev,
-      open: () => openViewer({
-        url: ev.localUrl, title: ev.title, sub: ev.thumb,
-        originUrl: "https://www.soumu.go.jp/iken/zaisei/r06_shichouson.html", archiveUrl: ev.url,
-      }),
-    })),
+    // 類似自治体との比較（軸で選ぶ）は simVals にまとめてある
+    ...simVals,
     uncollected: D.UNCOLLECTED,
     requestListUrl: D.REQUEST_LIST_URL,
     sourcesRows: SOURCES.map((row: any) => ({

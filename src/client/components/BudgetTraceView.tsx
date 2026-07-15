@@ -1118,35 +1118,128 @@ export default function BudgetTraceView({ v }: { v: any }) {
               <div data-screen-label="類似自治体との比較" style={S("animation:fadeUp .35s ease both;")}>
                 <div style={S("margin-bottom:20px;")}>
                   <h1 style={S("margin:0 0 6px; font-size:24px; font-weight:700;")}>類似自治体との比較</h1>
-                  <p style={S("margin:0; color:#5C6B77; font-size:13.5px;")}>人口15〜25万人の類似規模の市と、規模・1人あたり歳出・歳出構成を比べます（令和6年度 普通会計決算の実データ）。</p>
+                  <p style={S("margin:0; color:#5C6B77; font-size:13.5px;")}>まず「何で比べるか」を選ぶと、その軸で近い自治体を全国から提案します。比較相手は検索して自由に足し引きできます（{v.simFyLabel}の実データ）。</p>
                 </div>
 
-                <section style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:20px 24px; margin-bottom:16px;")}>
-                  <div data-mq="sim-h" style={S("display:grid; grid-template-columns:minmax(120px,1.2fr) 80px 100px 110px 2fr; gap:12px; font-size:11px; color:#5C6B77; border-bottom:1px solid #DFE7EC; padding-bottom:8px;")}>
-                    <span>自治体</span><span style={S("text-align:right;")}>人口</span><span style={S("text-align:right;")}>一般会計</span><span style={S("text-align:right;")}>1人あたり歳出</span><span>歳出構成（ホバー／タップで内訳）</span>
-                  </div>
-                  {v.similarRows.map((sr: any, i: number) => (
-                    <div key={i} data-mq="sim" onClick={sr.clickable ? sr.open : undefined} style={S(`display:grid; grid-template-columns:minmax(120px,1.2fr) 80px 100px 110px 2fr; gap:12px; padding:12px 8px; border-bottom:1px solid #ECF2F6; font-size:13px; align-items:center; background:${sr.bg}; border-radius:8px; ${sr.clickable ? "cursor:pointer;" : ""}`)}>
-                      <span style={S("display:flex; flex-direction:column; gap:2px;")}>
-                        <span style={S(`font-weight:${sr.fw}; display:inline-flex; align-items:center; gap:8px;`)}>{sr.name}<span style={S("font-size:10.5px; color:#0F76A3; font-weight:700;")}>{sr.badge}</span>{sr.clickable && <span style={S("font-size:10.5px; color:#1798D0; font-weight:600;")}>この市を見る →</span>}</span>
-                        <span title={sr.ref} style={S("font-family:'IBM Plex Mono',monospace; font-size:10px; color:#8494A0; font-weight:400;")}>{sr.refLabel}</span>
-                      </span>
-                      <span style={S("font-family:'IBM Plex Mono',monospace; text-align:right;")}>{sr.pop}</span>
-                      <span style={S("font-family:'IBM Plex Mono',monospace; text-align:right;")}>{sr.totalFmt}</span>
-                      <span style={S("font-family:'IBM Plex Mono',monospace; text-align:right; font-weight:600;")}>{sr.perCap}</span>
-                      <span style={S("display:flex; height:16px; border-radius:999px; overflow:hidden; background:#ECF2F6;")}>
-                        {sr.segs.map((sg: any, j: number) => (
-                          <span key={j} data-anim="bar" onMouseMove={sg.tipMove} onClick={sg.tipMove} onMouseLeave={v.hideTip} style={S(`width:${sg.w}%; background:${sg.sw}; cursor:pointer;`)}></span>
+                {v.simLoading && (
+                  <section style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:20px 24px; margin-bottom:16px; font-size:13px; color:#5C6B77;")}>全国の決算データを読み込んでいます…</section>
+                )}
+                {v.simError && (
+                  <section style={S("background:#FFF7F0; border:1px solid #F0C9A6; border-radius:16px; padding:20px 24px; margin-bottom:16px; font-size:13px; color:#8A4B00;")}>{v.simError}</section>
+                )}
+                {v.simMissing && (
+                  <section style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:20px 24px; margin-bottom:16px; font-size:13px; color:#5C6B77;")}>この自治体は決算資料の款別歳出が総額と一致せず、比較できる断面を作れていないため未収録です。</section>
+                )}
+
+                {v.simReady && (
+                  <>
+                    {/* 比較軸 → 比較相手 の順で選ぶ */}
+                    <section style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:18px 24px 20px; margin-bottom:12px;")}>
+                      <div style={S("font-size:11px; color:#5C6B77; margin-bottom:9px;")}>① 何で比べるか（比較軸）</div>
+                      <div style={S("display:flex; gap:8px; flex-wrap:wrap;")}>
+                        {v.simAxes.map((a: any) => (
+                          <HoverBox
+                            as="button"
+                            key={a.key}
+                            onClick={a.select}
+                            aria-pressed={a.active}
+                            style={S(`border:1.5px solid ${a.active ? "#1798D0" : "#C6D2DA"}; background:${a.active ? "#E3F4FC" : "#FFFFFF"}; color:${a.active ? "#0F76A3" : "#5C6B77"}; font-weight:${a.active ? "700" : "500"}; border-radius:999px; padding:6px 15px; font-size:12.5px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;`)}
+                            hoverStyle={S("border-color:#1798D0; color:#0F76A3;")}
+                          >{a.label}</HoverBox>
                         ))}
-                      </span>
-                    </div>
-                  ))}
-                  <div style={S("display:flex; gap:14px; flex-wrap:wrap; margin-top:12px; font-size:11.5px; color:#5C6B77;")}>
-                    {v.simLegend.map((sl: any, i: number) => (
-                      <span key={i} style={S("display:inline-flex; align-items:center; gap:5px;")}><span style={S(`width:10px; height:10px; border-radius:3px; background:${sl.sw};`)}></span>{sl.name}</span>
-                    ))}
-                  </div>
-                </section>
+                      </div>
+                      <p style={S("margin:10px 2px 0; font-size:12px; color:#5C6B77;")}>{v.simPoolLabel}{v.simAxisDesc}に提案しています。</p>
+                    </section>
+
+                    <section style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:18px 24px 20px; margin-bottom:16px;")}>
+                      <div style={S("display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:9px;")}>
+                        <div style={S("font-size:11px; color:#5C6B77;")}>② 誰と比べるか（クリックで表に出し入れ）</div>
+                        {v.simCustom && (
+                          <HoverBox as="button" onClick={v.simReset} style={S("border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; border-radius:999px; padding:4px 12px; font-size:11.5px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("border-color:#1798D0; color:#1798D0;")}>提案の4団体に戻す</HoverBox>
+                        )}
+                      </div>
+                      <div style={S("display:flex; gap:8px; flex-wrap:wrap;")}>
+                        {v.simSuggest.map((sg: any) => (
+                          <HoverBox
+                            as="button"
+                            key={sg.code}
+                            onClick={sg.toggle}
+                            aria-pressed={sg.selected}
+                            style={S(`display:inline-flex; align-items:center; gap:7px; border:1.5px solid ${sg.selected ? "#1798D0" : "#C6D2DA"}; background:${sg.selected ? "#E3F4FC" : "#FFFFFF"}; color:#14181C; border-radius:999px; padding:5px 13px; font-size:12.5px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;`)}
+                            hoverStyle={S("border-color:#1798D0;")}
+                          >
+                            <span style={S(`color:${sg.selected ? "#0F76A3" : "#9DACB7"}; font-weight:700;`)}>{sg.selected ? "✓" : "＋"}</span>
+                            {/* 同名の市区町村（府中市・北区…）があるので県名まで出す */}
+                            <span style={S("font-size:11px; color:#5C6B77;")}>{sg.pref}</span>
+                            <span style={S(`font-weight:${sg.selected ? "700" : "500"};`)}>{sg.name}</span>
+                            <span style={S("font-family:'IBM Plex Mono',monospace; font-size:11px; color:#5C6B77;")}>{sg.axisVal}</span>
+                          </HoverBox>
+                        ))}
+                      </div>
+                      <div style={S("margin-top:14px;")}>
+                        <input
+                          value={v.simQ}
+                          onChange={(e) => v.setSimQ(e.target.value)}
+                          placeholder="全国の市区町村を名前で検索して足す"
+                          aria-label="比較相手を検索"
+                          style={S("border:1px solid #C6D2DA; border-radius:999px; padding:7px 15px; font-size:13px; width:min(320px, 70vw); font-family:'IBM Plex Sans JP',sans-serif; color:#14181C; background:#FFFFFF;")}
+                        />
+                        {v.simQ && (
+                          <div style={S("display:flex; gap:8px; flex-wrap:wrap; margin-top:10px;")}>
+                            {v.simResults.length === 0 && <span style={S("font-size:12px; color:#5C6B77;")}>該当する自治体がありません。</span>}
+                            {v.simResults.map((r: any) => (
+                              <HoverBox as="button" key={r.code} onClick={r.add} style={S("display:inline-flex; align-items:center; gap:7px; border:1px solid #C6D2DA; background:#FFFFFF; color:#14181C; border-radius:999px; padding:5px 13px; font-size:12.5px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("border-color:#1798D0;")}>
+                                <span style={S("color:#9DACB7; font-weight:700;")}>＋</span>
+                                <span>{r.pref}{r.name}</span>
+                                <span style={S("font-family:'IBM Plex Mono',monospace; font-size:11px; color:#5C6B77;")}>{r.axisVal}</span>
+                                {r.crossFamily && <span style={S("font-size:10.5px; color:#8A4B00; background:#FFF3E6; border-radius:999px; padding:1px 7px;")}>{r.crossFamily}</span>}
+                              </HoverBox>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    </section>
+
+                    <section style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:20px 24px; margin-bottom:16px;")}>
+                      <div data-mq="sim-h" style={S("display:grid; grid-template-columns:minmax(120px,1.2fr) 80px 100px 110px 2fr; gap:12px; font-size:11px; color:#5C6B77; border-bottom:1px solid #DFE7EC; padding-bottom:8px;")}>
+                        <span>自治体</span><span style={S("text-align:right;")}>人口</span><span style={S("text-align:right;")}>一般会計</span><span style={S("text-align:right;")}>1人あたり歳出</span><span>歳出構成（ホバー／タップで内訳）</span>
+                      </div>
+                      {v.similarRows.map((sr: any) => (
+                        <div key={sr.key} data-mq="sim" style={S(`display:grid; grid-template-columns:minmax(120px,1.2fr) 80px 100px 110px 2fr; gap:12px; padding:12px 8px; border-bottom:1px solid #ECF2F6; font-size:13px; align-items:center; background:${sr.bg}; border-radius:8px;`)}>
+                          <span style={S("display:flex; flex-direction:column; gap:2px; min-width:0;")}>
+                            <span style={S("display:inline-flex; align-items:center; gap:8px; flex-wrap:wrap;")}>
+                              {sr.sub && <span style={S("font-size:11px; color:#5C6B77;")}>{sr.sub}</span>}
+                              {sr.clickable ? (
+                                <HoverBox as="button" onClick={sr.open} style={S(`border:none; background:none; padding:0; font-size:13px; font-weight:${sr.fw}; color:#14181C; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif; text-align:left;`)} hoverStyle={S("color:#1798D0;")}>{sr.name} →</HoverBox>
+                              ) : (
+                                <span style={S(`font-weight:${sr.fw};`)}>{sr.name}</span>
+                              )}
+                              {sr.badge && <span style={S("font-size:10.5px; color:#0F76A3; font-weight:700;")}>{sr.badge}</span>}
+                              {sr.remove && (
+                                <HoverBox as="button" onClick={sr.remove} aria-label={`${sr.name}を比較から外す`} style={S("border:1px solid #DFE7EC; background:#FFFFFF; color:#9DACB7; border-radius:999px; width:18px; height:18px; line-height:1; padding:0; font-size:11px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("border-color:#C25400; color:#C25400;")}>×</HoverBox>
+                              )}
+                            </span>
+                            {sr.axisVal && <span style={S("font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#5C6B77;")}>{sr.axisVal}</span>}
+                            <span title={sr.ref} style={S("font-family:'IBM Plex Mono',monospace; font-size:10px; color:#8494A0; font-weight:400;")}>{sr.refLabel}</span>
+                          </span>
+                          <span style={S("font-family:'IBM Plex Mono',monospace; text-align:right;")}>{sr.pop}</span>
+                          <span style={S("font-family:'IBM Plex Mono',monospace; text-align:right;")}>{sr.totalFmt}</span>
+                          <span style={S("font-family:'IBM Plex Mono',monospace; text-align:right; font-weight:600;")}>{sr.perCap}</span>
+                          <span style={S("display:flex; height:16px; border-radius:999px; overflow:hidden; background:#ECF2F6;")}>
+                            {sr.segs.map((sg: any, j: number) => (
+                              <span key={j} data-anim="bar" onMouseMove={sg.tipMove} onClick={sg.tipMove} onMouseLeave={v.hideTip} style={S(`width:${sg.w}%; background:${sg.sw}; cursor:pointer;`)}></span>
+                            ))}
+                          </span>
+                        </div>
+                      ))}
+                      <div style={S("display:flex; gap:14px; flex-wrap:wrap; margin-top:12px; font-size:11.5px; color:#5C6B77;")}>
+                        {v.simLegend.map((sl: any, i: number) => (
+                          <span key={i} style={S("display:inline-flex; align-items:center; gap:5px;")}><span style={S(`width:10px; height:10px; border-radius:3px; background:${sl.sw};`)}></span>{sl.name}</span>
+                        ))}
+                      </div>
+                    </section>
+                  </>
+                )}
 
                 <section style={S("margin-bottom:16px;")}>
                   <h3 style={S("margin:0 0 12px; font-size:14px; font-weight:700;")}>エビデンス（一次資料）</h3>
@@ -1168,7 +1261,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                   <span style={S("font-size:11.5px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:3px 11px;")}>出典：令和6年度 市町村別決算状況調（総務省）</span>
                   <span style={S("font-size:11.5px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:3px 11px;")}>地方財政状況調査（決算統計）</span>
                 </div>
-                <p style={S("margin:12px 2px 0; font-size:12px; color:#5C6B77;")}>1人あたり歳出が高い＝非効率とは限りません。面積・高齢化率・保有施設などの条件が異なります。</p>
+                <p style={S("margin:12px 2px 0; font-size:12px; color:#5C6B77;")}>1人あたり歳出が高い＝非効率とは限りません。面積・高齢化率・保有施設などの条件が異なります。軸はこの資料で公表されている値だけを使っており、産業構造や地理条件は含みません。</p>
               </div>
             )}
 
