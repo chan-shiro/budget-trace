@@ -1607,6 +1607,10 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     })),
     // 大阪市は事項別明細書（款項目が同一表・182p）で他市と様式が違う → 専用パーサ osaka-yosansho
     { srcId: "osaka-yosansho-r8", muniCode: "271004", muniName: "大阪市", prefName: "大阪府", isPref: false },
+    // さいたま市は横浜型（総括が単独ページ）で共通パーサに乗る。**款が総務省の目的別13款と一致**する初の政令市
+    ...(["r8", "r7"] as const).map((fy) => ({
+      srcId: `saitama-yosansho-${fy}`, muniCode: "111007", muniName: "さいたま市", prefName: "埼玉県", isPref: false,
+    })),
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;
@@ -1923,9 +1927,14 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
   // （2026-07-15 追加）。それまでの語彙は「要許可|非営利」だけで、この型の明示的な禁止が
   // unverified（＝可否未確認・要確認）に落ちていた — 実態より緩い区分で、未確認の山に紛れる。
   // unverified が「安全側」なのは open に対してだけで、禁止文言に対しては安全側ではない。
+  //
+  // **この分類器は「語彙を1つ足す」たびに同じ穴を再生産する**（2026-07-16・さいたまで再発）。
+  // さいたまの「無断使用・転載を禁止します」は、上の語彙（複製・転用）のどれにも当たらず
+  // unverified へ落ちた。発行元は市ごとに違う動詞を使う（使用／複製／転用／転載／改変／販売／
+  // 印刷配布）ので、**動詞を列挙するのではなく「無断」＋禁止の言い回しで捕まえる**。
   const licenseClassOf = (lic: string): "open" | "permission-required" | "unverified" =>
     /政府標準利用規約|公共データ利用規約/.test(lic) ? "open"
-    : /要許可|非営利|無断[で]?複製|無断[で]?転用|複製・転用/.test(lic) ? "permission-required"
+    : /要許可|非営利|無断|複製・転用|転載を禁止|使用を禁止/.test(lic) ? "permission-required"
     : "unverified";
 
   const KNOWN = [

@@ -61,6 +61,7 @@ const MUNI_SLUGS: Record<string, string> = {
   // 政令指定都市（2026-07-15）
   "141003": "yokohama", "231002": "nagoya", "011002": "sapporo",
   "401307": "fukuoka", "141305": "kawasaki", "271004": "osaka",
+  "111007": "saitama",
   "190004": "ken",
 };
 
