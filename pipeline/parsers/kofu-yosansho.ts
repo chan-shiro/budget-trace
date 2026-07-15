@@ -57,6 +57,18 @@ interface Options {
    * 款14「交付金地方特例交付金」）。**金額は全件正しく Σ も4系統一致するので validate を素通りする。**
    */
   kanNameContinues?: { revenue?: number[]; expenditure?: number[] };
+  /**
+   * **見開き2ページ型**（2026-07-16・新潟 R8 で発見）。**款名と金額が別ページに載る**様式:
+   *   p.8 =「款番号＋款名」だけ（金額なし）  /  p.9 =「本年度・前年度・比較」だけ（款名なし）
+   * `revenuePages`（複数ページを**縦に**連結）とも `samePage`（1ページに2側）とも別方向で、
+   * **2ページを行順で1:1に組む**必要がある。指定すると `revenuePage(s)` の代わりに使われる。
+   *
+   * 対応しないと**款が1件も取れず throw する**（＝静かには壊れない）。
+   * **件数の一致を必ず assert する**こと — 象徴計上（`1` 千円）のような1桁の行を取りこぼすと
+   * **以降が丸ごと1つずれ、Σ も款名も「それらしく」合ってしまう**。
+   */
+  revenueSpread?: { namePage: number; amountPage: number };
+  expenditureSpread?: { namePage: number; amountPage: number };
   /** 「主な事業一覧」のページ範囲（1-origin・両端含む） */
   projectPages?: { from: number; to: number };
   /** 分冊形式（R2・R3）: 款別一覧表のファイル名。未指定なら単一ファイル */
@@ -181,7 +193,10 @@ function parseKanPage(
     (side === "revenue" ? opts.kanNameContinues?.revenue : opts.kanNameContinues?.expenditure) ?? [],
   );
   const headerRe = extraHeader ? new RegExp(`${KAN_HEADER_RE.source}|${extraHeader}`) : KAN_HEADER_RE;
-  let text = pages.map((p) => pdfPageText(filePath, p)).join("\n");
+  const spread = side === "revenue" ? opts.revenueSpread : opts.expenditureSpread;
+  let text = spread
+    ? pdfPageText(filePath, spread.namePage) + "\n" + pdfPageText(filePath, spread.amountPage)
+    : pages.map((p) => pdfPageText(filePath, p)).join("\n");
   const heading =
     side === "revenue"
       ? opts.revenueHeading ?? "歳入予算款別一覧"
@@ -196,6 +211,45 @@ function parseKanPage(
     side === "revenue"
       ? opts.revenueTotalLabel ?? "歳入合計"
       : opts.expenditureTotalLabel ?? "歳出合計";
+  // 見開き2ページ型（Options.revenueSpread 参照）: 款名ページと金額ページを**行順で1:1に組み**、
+  // 以降は通常の1ページ表と同じ経路で読む（皆減・折返し・ヘッダ除外・合計検出をそのまま使えるため）。
+  if (spread) {
+    const [nameText, amountText] = [
+      pdfPageText(filePath, spread.namePage),
+      pdfPageText(filePath, spread.amountPage),
+    ];
+    // 款名ページ: 見出し（（歳入）等）より後ろの「款番号で始まる行」＋合計ラベル行だけを採る。
+    // 見出しより前を捨てるのは `１ 総 括` を款1 と取り違えないため（全角1が半角化される）。
+    const nameLines: string[] = [];
+    let started = false;
+    for (const l of nameText.split("\n")) {
+      const c = l.replace(/[\s　]/g, "");
+      if (!started) {
+        if (c.includes(headingCompact)) started = true;
+        continue;
+      }
+      if (headerRe.test(c)) continue; // 列見出し `款` 等
+      if (c.includes(totalLabel)) {
+        nameLines.push(l);
+        break; // 合計行が最後
+      }
+      if (/^\s*[○◎●]*\s*\d+(?![\d,])/.test(toHalfDigits(l))) nameLines.push(l);
+    }
+    // 金額ページ: 整数金額を2つ以上持つ行だけ（ページ番号は1つなので落ちる）
+    const amountLines = amountText.split("\n").filter((l) => {
+      const ints = (l.match(AMOUNT_RE) ?? []).filter((t) => !t.includes("."));
+      return ints.length >= 2;
+    });
+    // **件数の一致は必須**。ずれたまま組むと Σ も款名も「それらしく」合ってしまう
+    if (nameLines.length !== amountLines.length || nameLines.length === 0) {
+      throw new Error(
+        `${filename} p.${spread.namePage}+${spread.amountPage}: 見開きの行数が合いません` +
+          `（款名 ${nameLines.length} 行 / 金額 ${amountLines.length} 行）。` +
+          `どちらかの行を取りこぼすと以降が丸ごと1つずれるので組みません。`,
+      );
+    }
+    text = nameLines.map((n, i) => `${n.trimEnd()}   ${amountLines[i]!.trim()}`).join("\n");
+  }
   // samePage: 歳入と歳出が同一ページに縦積み（南アルプス等）。合計行で2区画に割り、
   // revenue=1つ目の合計まで / expenditure=1つ目の合計の次〜2つ目の合計 を処理する。
   // 両区画の合計ラベルが同じ（「合計」）様式に対応するため、totalLabel 出現位置で切る。
@@ -1099,7 +1153,15 @@ export function parseKofuYosansho(
     single: number | undefined,
     range: { from: number; to: number } | undefined,
     key: string,
+    spread?: { namePage: number; amountPage: number },
   ): number[] => {
+    // 見開き2ページ型は spread がページ指定を兼ねる（locator は款名ページを指す）
+    if (spread) {
+      if (single || range) {
+        throw new Error(`${source.id}: parserOptions.${key}Spread と ${key}/${key}s は併用できません`);
+      }
+      return [spread.namePage];
+    }
     if (single && range) {
       throw new Error(`${source.id}: parserOptions.${key} と ${key}s は併用できません（どちらか一方）`);
     }
@@ -1114,8 +1176,10 @@ export function parseKofuYosansho(
       `${source.id}: parserOptions.${key} または ${key}s（款別一覧の PDF ページ番号）が必要です`,
     );
   };
-  const revenuePages = sidePages(opts.revenuePage, opts.revenuePages, "revenuePage");
-  const expenditurePages = sidePages(opts.expenditurePage, opts.expenditurePages, "expenditurePage");
+  const revenuePages = sidePages(opts.revenuePage, opts.revenuePages, "revenuePage", opts.revenueSpread);
+  const expenditurePages = sidePages(
+    opts.expenditurePage, opts.expenditurePages, "expenditurePage", opts.expenditureSpread,
+  );
   // 単一ファイル形式（R6〜）または分冊形式（R2・R3: kanFile / projectsFile を指定）
   const pick = (name: string | undefined, role: string) => {
     if (name == null) {

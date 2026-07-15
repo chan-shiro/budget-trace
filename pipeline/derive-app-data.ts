@@ -1637,6 +1637,10 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r3", "r2"] as const).map((fy) => ({
       srcId: `sakai-yosansho-${fy}`, muniCode: "271403", muniName: "堺市", prefName: "大阪府", isPref: false,
     })),
+    // 新潟市は**歳入が見開き2ページ型**（款名 p.8 / 金額 p.9）＝第5の型。docs §9e
+    ...(["r8", "r7"] as const).map((fy) => ({
+      srcId: `niigata-yosansho-${fy}`, muniCode: "151009", muniName: "新潟市", prefName: "新潟県", isPref: false,
+    })),
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;

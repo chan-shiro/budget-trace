@@ -1666,6 +1666,40 @@
       "checkedAt": "2026-07-15T08:41:11.312Z"
     },
     {
+      "sourceId": "niigata-yosansho-r7",
+      "url": "https://www.city.niigata.lg.jp/shisei/zaimu/zaisei/yosankessan/yosankessanjokyo.files/r7-2yosansyo-ippan.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260715181018/https://www.city.niigata.lg.jp/shisei/zaimu/zaisei/yosankessan/yosankessanjokyo.files/r7-2yosansyo-ippan.pdf",
+      "waybackTimestamp": "20260715181018",
+      "checkedAt": "2026-07-15T18:10:49.903Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "niigata-yosansho-r7",
+      "url": "https://www.city.niigata.lg.jp/shisei/zaimu/zaisei/yosankessan/yosankessanjokyo.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260715181156/https://www.city.niigata.lg.jp/shisei/zaimu/zaisei/yosankessan/yosankessanjokyo.html",
+      "waybackTimestamp": "20260715181156",
+      "checkedAt": "2026-07-15T18:12:28.696Z"
+    },
+    {
+      "sourceId": "niigata-yosansho-r8",
+      "url": "https://www.city.niigata.lg.jp/shisei/zaimu/zaisei/yosankessan/yosankessanjokyo.files/R8-2yosansyo_shinen-ippan.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260715180850/https://www.city.niigata.lg.jp/shisei/zaimu/zaisei/yosankessan/yosankessanjokyo.files/R8-2yosansyo_shinen-ippan.pdf",
+      "waybackTimestamp": "20260715180850",
+      "checkedAt": "2026-07-15T18:09:19.942Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "niigata-yosansho-r8",
+      "url": "https://www.city.niigata.lg.jp/shisei/zaimu/zaisei/yosankessan/yosankessanjokyo.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251211052804/https://www.city.niigata.lg.jp/shisei/zaimu/zaisei/yosankessan/yosankessanjokyo.html",
+      "waybackTimestamp": "20251211052804",
+      "checkedAt": "2026-07-15T18:09:25.401Z"
+    },
+    {
       "sourceId": "numazu-yosansho-r7",
       "url": "https://www.city.numazu.shizuoka.jp/shisei/gyozaisei/finance/yosan2025/gaiyousho/index.htm",
       "kind": "landing",
