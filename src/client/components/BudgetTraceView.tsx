@@ -1111,6 +1111,35 @@ export default function BudgetTraceView({ v }: { v: any }) {
                       <p style={S("margin:8px 2px 0; font-size:12.5px; color:#5C6B77;")}>この款の項・目・節の内訳は未収録です（予算書本編の収録後に追加予定）。</p>
                     )}
 
+                    {/* 款ドリル →「この款の事業報告（成果）」。**款項目を持つ資料だけ**（横浜のみ）。
+                        予算の款 → 事業 → 成果 が一本で繋がる唯一の場所。他市は局＝組織であって
+                        款ではないので紐付けを諦めており、ダッシュボードの一覧で見せている。 */}
+                    {v.drillReports && (
+                      <div style={S("margin-top:24px;")}>
+                        <div style={S("display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:8px;")}>
+                          <h3 style={S("margin:0; font-size:14px; font-weight:700;")}>この款の事業と成果（{v.drillReports.fyLabel}・決算）</h3>
+                          <span style={S("font-size:11.5px; color:#8494A0;")}>{v.drillReports.docLabel}より・この款に <strong style={S("font-family:'IBM Plex Mono',monospace; color:#5C6B77;")}>{v.drillReports.total}</strong>事業（決算額の大きい順に{v.drillReports.shown}件）</span>
+                        </div>
+                        {v.drillReports.rows.map((r: any, i: number) => (
+                          <div key={i} data-mq="rep" style={S("display:grid; grid-template-columns:1fr 110px; gap:12px; padding:9px 0; border-bottom:1px solid #ECF2F6; align-items:center;")}>
+                            <span style={S("min-width:0;")}>
+                              <a href={r.ref} onClick={(e) => { e.preventDefault(); r.open(); }} style={S("font-size:13px; font-weight:600; cursor:pointer;")}>{r.name}</a>
+                              <span style={S("display:block; font-size:10.5px; color:#8494A0; margin-top:2px;")}>
+                                <span style={S("font-family:'IBM Plex Mono',monospace;")}>{r.measure}</span> ・ {r.buka}
+                              </span>
+                            </span>
+                            <span style={S("text-align:right;")}>
+                              <span style={S("display:block; font-family:'IBM Plex Mono',monospace; font-size:13px; font-weight:700; color:#14181C;")}>{r.amtFmt}</span>
+                              <span style={S("display:block; font-size:10px; color:#9DACB7;")}>{r.fyLabel}</span>
+                            </span>
+                          </div>
+                        ))}
+                        <p style={S("margin:9px 2px 0; font-size:11.5px; color:#8494A0; line-height:1.7;")}>
+                          事業名をクリックすると原本の該当ページを開きます。この款の全事業はダッシュボードの「事業報告（成果）」で検索できます。
+                        </p>
+                      </div>
+                    )}
+
                     {v.hasRealProjects && (
                       <div style={S("margin-top:24px;")}>
                         <h3 style={S("margin:0 0 10px; font-size:14px; font-weight:700;")}>この款の主な事業（予算資料より）</h3>

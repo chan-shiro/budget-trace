@@ -1319,6 +1319,48 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
       };
     })(),
     drillNoChildrenNote: depth > 0 && nodeItems.length === 0,
+    // 款ドリル →「この款の事業報告（成果）」。**款項目を持つ資料だけ**（横浜のみ）。
+    // 予算の款 → 事業 → 成果 を一本で繋ぐ。事業報告の款番号は**対象年度の予算**で
+    // 款名に解決済み（derive 側。画面では推測しない）
+    drillReports: (() => {
+      if (side !== "exp" || depth !== 1 || !repData?.has.kanKoumoku) return null;
+      const rows = repData.reports.filter((r) => r.kanName === nodeName);
+      if (rows.length === 0) return null;
+      const SHOW = 8;
+      return {
+        fyLabel: repData.fyLabel,
+        docLabel: repData.docLabel,
+        total: rows.length,
+        shown: Math.min(SHOW, rows.length),
+        // 決算額の大きい順（この款で何にいちばん使われたかが先に見える）
+        rows: [...rows]
+          .sort((a, b) => {
+            const av = a.cost[a.cost.length - 1]?.jigyohi ?? 0;
+            const bv = b.cost[b.cost.length - 1]?.jigyohi ?? 0;
+            return bv - av;
+          })
+          .slice(0, SHOW)
+          .map((r) => {
+            const last = r.cost[r.cost.length - 1];
+            return {
+              name: r.name,
+              buka: r.buka,
+              measure: r.measure,
+              amtFmt: last?.jigyohi != null ? fmtV(last.jigyohi / 1e5) : "",
+              fyLabel: last ? `${last.fy === repData.fy ? repData.fyLabel : `令和${last.fy.slice(1)}年度`}決算` : "",
+              ref: r.ref,
+              open: () =>
+                openViewer({
+                  url: r.ref,
+                  title: repData.sourceTitle,
+                  sub: `${r.name}（${r.refLabel}）`,
+                  originUrl: repData.originUrl,
+                  archiveUrl: repData.originUrl,
+                }),
+            };
+          }),
+      };
+    })(),
     // 款ドリルの「この款の主な事業」（歳出・款レベル）。full=甲府 / budget=豊川（款あり）。
     // 和泉は款が取れない様式なので款ドリルには出さず、ダッシュボードの主な事業一覧で見せる
     ...(() => {
