@@ -1,0 +1,12 @@
+{
+  "sourceId": "kitakyushu-yosansho-r2",
+  "files": [
+    {
+      "filename": "000840516.pdf",
+      "sha256": "33840d1c33182f84ed25e1afb80896eb47088bd14ba0fb528d3567d0677c61a4",
+      "bytes": 1903209,
+      "fetchedAt": "2026-07-15T16:36:51.678Z",
+      "fetchedFrom": "https://www.city.kitakyushu.lg.jp/files/000840516.pdf"
+    }
+  ]
+}
