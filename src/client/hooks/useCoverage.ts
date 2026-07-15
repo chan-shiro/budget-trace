@@ -25,6 +25,8 @@ export interface CoverageSource {
   publisher: string;
   fiscalYear: string;
   kind: string;
+  /** この資料が画面のどこで使われているか（/sources に出す）。derive がパーサ種別から導く */
+  used: string;
   license: string;
   licenseClass: "open" | "permission-required" | "unverified";
   originUrl: string;

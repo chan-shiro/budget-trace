@@ -34,8 +34,10 @@ const REGION_DEFS = [
 ];
 const MUNI_FILLS_VIVID = ["#F5CE8E","#97D8BF","#9FC2E8","#F0BFDA","#EFE699","#F5B894","#C9BCE6","#9CCEF0"];
 const MUNI_FILLS_BLUE = ["#D7E9F3","#C5DDEE","#E2EFF6","#CBE2F0","#DEEBF4","#D2E6F2"];
-const AVAILABLE_PREF: Record<string, boolean> = { "山梨県": true };
-const AVAILABLE_MUNI: Record<string, boolean> = { "山梨県:甲府市": true };
+// かつては「甲府市だけが閲覧可能」だったため、山梨県と甲府市をアクセント色で強調し、
+// 他はクリックしても一覧止まりだった。decision 階層で**全1,741市町村が決算ベースで
+// 閲覧可能**になった今、特定の県・市を特別扱いする理由はない（強調すると「ここしか
+// 見られない」という誤ったメッセージになる）。収録の濃淡は /coverage が実データから示す。
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
@@ -169,7 +171,6 @@ function buildMunis(geo: any, prefName: string) {
   const areasByName: Record<string, any> = {};
   munis.forEach((m: any, i: number) => {
     m.area = mainAreaOf(m.code);
-    m.avail = !!AVAILABLE_MUNI[prefName + ":" + m.name];
     m.idx = i;
     m.fs = Math.max(9.5, Math.min(15, Math.sqrt(m.maxA) / 8));
     if (m.area) {
@@ -184,7 +185,13 @@ function buildMunis(geo: any, prefName: string) {
 
 export interface JapanMapProps {
   onSelect?: (prefName: string) => void;
-  onSelectMuni?: (prefName: string, muniName: string | null) => void;
+  /**
+   * 市区町村を選択したとき。muniName=null は「県全体」。
+   * code5 は GeoJSON の**5桁**団体コード（`19201`）。名前で引き当てさせると同名の自治体
+   * （府中市が東京都と広島県にある等）で誤りうるので、コードを渡して呼び出し側で
+   * 6桁へ変換させる（D.muniCode6）。
+   */
+  onSelectMuni?: (prefName: string, muniName: string | null, code5?: string) => void;
   colorMode?: string;
   maxWidth?: number;
 }
@@ -209,23 +216,20 @@ export default function JapanMap({ onSelect, onSelectMuni, colorMode, maxWidth }
   const [muniAnim, setMuniAnim] = React.useState<"in" | "out">("in");
   const outTimerRef = React.useRef<any>(null);
 
-  const selMuni = (prefName: string, muniName: string | null) => {
-    if (onSelectMuni) onSelectMuni(prefName, muniName);
+  const selMuni = (prefName: string, muniName: string | null, code5?: string) => {
+    if (onSelectMuni) onSelectMuni(prefName, muniName, code5);
     else if (onSelect) onSelect(prefName);
   };
 
   const paint = React.useCallback((reg: string | null, hov: any) => {
     nodesRef.current.forEach((n) => {
-      const avail = AVAILABLE_PREF[n.name];
       const color = vivid ? n.vivid : n.blue;
       let fill, stroke = "#FFFFFF", sw = "0.8", op = 1;
       if (!reg) {
         fill = hov && hov.type === "region" && hov.name === n.region ? shade(color, 0.88) : color;
-        if (avail) fill = ACCENT;
       } else if (n.region === reg) {
-        fill = avail ? ACCENT : hov && hov.type === "pref" && hov.code === n.code ? shade(color, 0.85) : shade(color, 1.06);
+        fill = hov && hov.type === "pref" && hov.code === n.code ? shade(color, 0.85) : shade(color, 1.06);
         stroke = "#8899A5"; sw = "1";
-        if (avail && hov && hov.type === "pref" && hov.code === n.code) fill = "#0F76A3";
       } else {
         fill = "#E9EEF2"; op = 0.45;
       }
@@ -402,17 +406,14 @@ export default function JapanMap({ onSelect, onSelectMuni, colorMode, maxWidth }
   const q = query.trim();
   let results: any[] = [];
   if (q) {
-    Object.keys(AVAILABLE_MUNI).forEach((k) => {
-      const [pn, mn] = k.split(":");
-      if (mn.includes(q) || pn.includes(q)) results.push({ type: "muni", pref: pn, name: mn, avail: true });
-    });
     nodesRef.current.forEach((n) => {
-      if (n.name.includes(q)) results.push({ type: "pref", name: n.name, node: n, avail: !!AVAILABLE_PREF[n.name] });
+      if (n.name.includes(q)) results.push({ type: "pref", name: n.name, node: n });
     });
+    // 市区町村は「その県の形状を一度でも読み込んだ」ぶんだけ検索できる（全国分を先読みしない）
     Object.entries(muniCache.current).forEach(([code, b]: [string, any]) => {
       const pn = PREFS[parseInt(code, 10)];
       b.munis.forEach((m: any) => {
-        if (m.name.includes(q) && !AVAILABLE_MUNI[pn + ":" + m.name]) results.push({ type: "muni", pref: pn, name: m.name, avail: false });
+        if (m.name.includes(q)) results.push({ type: "muni", pref: pn, name: m.name, code: m.code });
       });
     });
     const seen: Record<string, number> = {};
@@ -421,7 +422,7 @@ export default function JapanMap({ onSelect, onSelectMuni, colorMode, maxWidth }
   const pickResult = (r: any) => {
     setQuery("");
     if (r.type === "pref") { if (r.node) enterPref(r.node); }
-    else selMuni(r.pref, r.name);
+    else selMuni(r.pref, r.name, r.code);
   };
 
   const showMunis = pref && muniView && typeof muniView === "object";
@@ -481,22 +482,22 @@ export default function JapanMap({ onSelect, onSelectMuni, colorMode, maxWidth }
   let chips: any;
   if (pref) {
     chips = [
-      <button key="all" style={AVAILABLE_PREF[pref.name] ? accentChip : chipBase} onClick={() => selMuni(pref.name, null)}>{pref.name}全体（都道府県レベル）</button>,
+      <button key="all" style={chipBase} onClick={() => selMuni(pref.name, null)}>{pref.name}全体（都道府県レベル）</button>,
       ...(showMunis ? muniView.munis.map((m: any) => (
-        <button key={m.code} style={m.avail ? accentChip : chipBase}
-          onClick={() => selMuni(pref.name, m.name)}
+        <button key={m.code} style={chipBase}
+          onClick={() => selMuni(pref.name, m.name, m.code)}
           onMouseEnter={() => setHover({ type: "muni", name: m.name, code: m.code })}
           onMouseLeave={() => setHover(null)}>
-          {m.name}{m.avail ? " ●" : ""}
+          {m.name}
         </button>)) : []),
     ];
   } else if (region) {
     chips = nodesRef.current.filter((n) => n.region === region).sort((a, b) => a.code - b.code).map((n) => (
-      <button key={n.code} style={AVAILABLE_PREF[n.name] ? accentChip : chipBase}
+      <button key={n.code} style={chipBase}
         onClick={() => enterPref(n)}
         onMouseEnter={() => setHover({ type: "pref", name: n.name, code: n.code })}
         onMouseLeave={() => setHover(null)}>
-        {n.name}{AVAILABLE_PREF[n.name] ? " ●" : ""}
+        {n.name}
       </button>));
   } else {
     chips = REGION_DEFS.map((r) => (
@@ -518,7 +519,7 @@ export default function JapanMap({ onSelect, onSelectMuni, colorMode, maxWidth }
               <div style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 11, letterSpacing: "0.14em", color: "#5C6B77", marginBottom: 6 }}>{r.name}</div>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
                 {Object.entries(PREFS).filter(([c]) => Number(c) >= r.from && Number(c) <= r.to).map(([c, nm]) => (
-                  <button key={c} style={AVAILABLE_PREF[nm] ? accentChip : chipBase} onClick={() => onSelect && onSelect(nm)}>{nm}</button>
+                  <button key={c} style={chipBase} onClick={() => onSelect && onSelect(nm)}>{nm}</button>
                 ))}
               </div>
             </div>
@@ -531,7 +532,10 @@ export default function JapanMap({ onSelect, onSelectMuni, colorMode, maxWidth }
   return (
     <div style={{ width: "100%", maxWidth: maxWidth || 820, margin: "0 auto" }}>
       <div style={{ position: "relative", zIndex: 5, marginBottom: 10 }}>
-        <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="自治体名で検索（例：甲府、山梨）"
+        {/* 市区町村は「その県の形状を一度でも読み込んだ」ぶんだけ検索できる（全国分＝47ファイルを
+            先読みしない）。以前は甲府市だけをハードコードして常にヒットさせていたが、特定の市を
+            特別扱いする理由が無くなったので外した。プレースホルダは実際にできることに合わせる。 */}
+        <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="都道府県で検索（例：山梨）・市区町村は県を開いてから"
           style={{ width: "100%", boxSizing: "border-box", padding: "10px 16px", fontSize: isTouch ? 16 : 14, border: "1.5px solid #C6D2DA", borderRadius: 10, background: "#FFFFFF", color: "#14181C" }} />
         {q && (
           <div style={{ position: "absolute", top: "calc(100% + 4px)", left: 0, right: 0, background: "#FFFFFF", border: "1px solid #DFE7EC", borderRadius: 12, boxShadow: "0 8px 24px rgba(20,24,28,0.12)", overflow: "hidden" }}>
@@ -543,7 +547,6 @@ export default function JapanMap({ onSelect, onSelectMuni, colorMode, maxWidth }
                 onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "#F1F6F9"; }}
                 onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = "none"; }}>
                 <span style={{ fontWeight: 600 }}>{r.name}<span style={{ fontWeight: 400, color: "#5C6B77", fontSize: 12, marginLeft: 8 }}>{r.type === "pref" ? "都道府県" : r.pref}</span></span>
-                {r.avail && <span style={{ fontSize: 11, color: ACCENT, fontWeight: 700, whiteSpace: "nowrap" }}>● 収録済</span>}
               </button>))}
           </div>)}
       </div>
@@ -559,14 +562,14 @@ export default function JapanMap({ onSelect, onSelectMuni, colorMode, maxWidth }
               <g style={{ transform: muniZoom ? `translate(${muniZoom.tx}px, ${muniZoom.ty}px) scale(${muniZoom.s})` : "none", transformOrigin: "0 0", transition: "transform .7s cubic-bezier(.22,1,.36,1)" }}>
                 {muniView.munis.map((m: any) => (
                   <path key={m.code} d={m.d} vectorEffect="non-scaling-stroke"
-                    fill={m.avail ? ACCENT : hover && ((hover.type === "muni" && hover.code === m.code) || (hover.type === "area" && hover.name === m.area)) ? shade(muniFills[m.idx % muniFills.length], 0.85) : muniFills[m.idx % muniFills.length]}
+                    fill={hover && ((hover.type === "muni" && hover.code === m.code) || (hover.type === "area" && hover.name === m.area)) ? shade(muniFills[m.idx % muniFills.length], 0.85) : muniFills[m.idx % muniFills.length]}
                     stroke="#FFFFFF" strokeWidth="1.4"
                     style={{ cursor: "pointer" }}
-                    onClick={() => { if (needsAreaZoom(m)) zoomMuniArea(m.area); else selMuni(pref.name, m.name); }}
+                    onClick={() => { if (needsAreaZoom(m)) zoomMuniArea(m.area); else selMuni(pref.name, m.name, m.code); }}
                     onTouchEnd={(e) => {
                       e.preventDefault();
                       if (needsAreaZoom(m)) { zoomMuniArea(m.area); return; }
-                      if (armedRef.current === m.code) { armedRef.current = null; selMuni(pref.name, m.name); }
+                      if (armedRef.current === m.code) { armedRef.current = null; selMuni(pref.name, m.name, m.code); }
                       else { armedRef.current = m.code; setHover({ type: "muni", name: m.name, code: m.code }); }
                     }}
                     onMouseEnter={() => setHover(needsAreaZoom(m) ? { type: "area", name: m.area } : { type: "muni", name: m.name, code: m.code })}
@@ -590,10 +593,10 @@ export default function JapanMap({ onSelect, onSelectMuni, colorMode, maxWidth }
                     <text key={"t" + m.code} x={m.lx} y={m.ly} textAnchor="middle" dominantBaseline="middle"
                       style={{
                         fontSize: (hov ? Math.max(base * 1.8, 20) : base) / zs, fontFamily: "'IBM Plex Sans JP', sans-serif",
-                        fontWeight: hov || m.avail ? 700 : 600, letterSpacing: "0.02em",
-                        fill: hov ? "#14181C" : m.avail ? "#FFFFFF" : "#3A4750",
+                        fontWeight: hov ? 700 : 600, letterSpacing: "0.02em",
+                        fill: hov ? "#14181C" : "#3A4750",
                         paintOrder: "stroke",
-                        stroke: m.avail && !hov ? "rgba(12,94,132,0.7)" : "rgba(255,255,255,0.92)", strokeWidth: (hov ? 3.5 : 2.5) / zs, strokeLinejoin: "round",
+                        stroke: "rgba(255,255,255,0.92)", strokeWidth: (hov ? 3.5 : 2.5) / zs, strokeLinejoin: "round",
                         pointerEvents: "none", userSelect: "none",
                         transition: "font-size .18s ease, stroke-width .18s ease",
                       }}>{m.short || m.name}</text>
@@ -638,8 +641,6 @@ export default function JapanMap({ onSelect, onSelectMuni, colorMode, maxWidth }
             <span style={{ background: "#14181C", color: "#F7FAFC", borderRadius: 999, padding: "6px 15px", fontSize: 12.5, fontWeight: 600 }}>
               {hover ? hover.name : pref ? pref.name + (muniZoom ? " — " + muniZoom.name : "") + " — 市区町村を選択" : region}
               {hover && (hover.type === "region" || hover.type === "area") ? " — クリックでズーム" : ""}
-              {hover && hover.type === "pref" && AVAILABLE_PREF[hover.name] ? " — 収録済" : ""}
-              {hover && hover.type === "muni" && pref && AVAILABLE_MUNI[pref.name + ":" + hover.name] ? " — 収録済" : ""}
               {isTouch && hover && hover.type === "muni" ? " — もう一度タップで選択" : ""}
             </span>)}
         </div>
@@ -648,7 +649,7 @@ export default function JapanMap({ onSelect, onSelectMuni, colorMode, maxWidth }
         {status === "ready" ? chips : null}
       </div>
       <p style={{ textAlign: "center", fontSize: 11.5, color: "#9DACB7", margin: "12px 0 0" }}>
-        都道府県形状：geolonia/japanese-prefectures（GFDL）・市区町村形状：国土数値情報（国土交通省）を加工した smartnews-smri/japan-topography ・ <span style={{ color: ACCENT, fontWeight: 600 }}>●</span> データ収録済
+        都道府県形状：geolonia/japanese-prefectures（GFDL）・市区町村形状：国土数値情報（国土交通省）を加工した smartnews-smri/japan-topography
       </p>
     </div>
   );

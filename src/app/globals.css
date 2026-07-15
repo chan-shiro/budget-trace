@@ -74,3 +74,7 @@ button { font-family: 'IBM Plex Sans JP', sans-serif; }
   [data-mq="bleader"]{ gap:8px 12px !important; flex-wrap:wrap !important; }
   [data-mq="bleader"] > :first-child{ width:102px !important; font-size:11px !important; }
 }
+
+/* details/summary の既定マーカー（▶）を消す。list-style:none だけでは WebKit で残る */
+summary::-webkit-details-marker { display: none; }
+summary::marker { content: ""; }

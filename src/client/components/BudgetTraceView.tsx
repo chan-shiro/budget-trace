@@ -274,28 +274,38 @@ export default function BudgetTraceView({ v }: { v: any }) {
                 ))}
               </div>
 
-              {/* ライセンス上の注意 */}
-              <section style={S("background:#FFF8F2; border:1px solid #EFD4BE; border-radius:14px; padding:16px 18px; margin-bottom:18px;")}>
-                <h2 style={S("margin:0 0 6px; font-size:14px; font-weight:700; color:#8A4B1F;")}>⚠ エビデンス・コピーのライセンス上の懸念</h2>
-                <p style={S("margin:0 0 10px; font-size:12px; color:#5C6B77; line-height:1.85; max-width:80ch;")}>
-                  資料の消失・差し替えに備え、原本のコピーを自サーバーから配信しています（エビデンス3層の③）。総務省資料は政府標準利用規約で再配布できますが、<strong style={S("color:#14181C;")}>自治体資料は多くが「利用条件は同サイト参照」で再配布可否が未確認</strong>です。次の資料は<strong style={S("color:#8A4B1F;")}>二次利用に許諾が必要と明記</strong>されており、現在のコピー配信は許諾を得ていません。発行元からの申し出があれば速やかに③を停止し、①発行元と②Wayback のみに切り替えます。
-                </p>
-                <div style={S("display:flex; gap:8px; flex-wrap:wrap; margin-bottom:10px;")}>
-                  {[
-                    { n: v.cov.summary.licensePermission, l: "要許可", c: "#8A4B1F", b: "#EFD4BE" },
-                    { n: v.cov.summary.licenseUnverified, l: "未確認", c: "#5C6B77", b: "#DFE7EC" },
-                    { n: v.cov.summary.licenseOpen, l: "政府標準利用規約（再配布可）", c: "#0F76A3", b: "#B9E0F2" },
-                  ].map((x: any, i: number) => (
-                    <span key={i} style={S(`font-size:11.5px; border:1px solid ${x.b}; color:${x.c}; border-radius:999px; padding:3px 12px; background:#FFFFFF;`)}>{x.l} <strong style={S("font-family:'IBM Plex Mono',monospace;")}>{x.n}</strong>件</span>
+              {/* ライセンス上の注意。**初期は閉じる** — 要許可の資料が増えて一覧が長くなり、
+                  本題（自治体×データセットの網羅一覧）を押し下げていたため。
+                  ネイティブの details/summary を使う（キーボード操作・スクリーンリーダー・
+                  ブラウザ内検索が素で効く。自前の開閉 state を持つとこれらを作り直すことになる）。
+                  **畳んでも件数はサマリ行に出したままにする** — 隠すのが目的ではなく、
+                  「リスクは開示しつつ、読みたい人が開く」形にするのが目的。 */}
+              <details style={S("background:#FFF8F2; border:1px solid #EFD4BE; border-radius:14px; padding:0; margin-bottom:18px;")}>
+                <summary style={S("cursor:pointer; padding:13px 18px; list-style:none; display:flex; align-items:center; gap:10px; flex-wrap:wrap;")}>
+                  <span style={S("font-size:14px; font-weight:700; color:#8A4B1F;")}>⚠ エビデンス・コピーのライセンス上の懸念</span>
+                  <span style={S("display:flex; gap:6px; flex-wrap:wrap;")}>
+                    {[
+                      { n: v.cov.summary.licensePermission, l: "要許可", c: "#8A4B1F", b: "#EFD4BE" },
+                      { n: v.cov.summary.licenseUnverified, l: "未確認", c: "#5C6B77", b: "#DFE7EC" },
+                      { n: v.cov.summary.licenseOpen, l: "再配布可", c: "#0F76A3", b: "#B9E0F2" },
+                    ].map((x: any, i: number) => (
+                      <span key={i} style={S(`font-size:11px; border:1px solid ${x.b}; color:${x.c}; border-radius:999px; padding:2px 10px; background:#FFFFFF; white-space:nowrap;`)}>{x.l} <strong style={S("font-family:'IBM Plex Mono',monospace;")}>{x.n}</strong>件</span>
+                    ))}
+                  </span>
+                  <span style={S("font-size:11.5px; color:#8A4B1F; margin-left:auto; white-space:nowrap;")}>詳しく ▾</span>
+                </summary>
+                <div style={S("padding:0 18px 16px;")}>
+                  <p style={S("margin:0 0 10px; font-size:12px; color:#5C6B77; line-height:1.85; max-width:80ch;")}>
+                    資料の消失・差し替えに備え、原本のコピーを自サーバーから配信しています（エビデンス3層の③）。総務省資料は政府標準利用規約で再配布できますが、<strong style={S("color:#14181C;")}>自治体資料は多くが「利用条件は同サイト参照」で再配布可否が未確認</strong>です。次の資料は<strong style={S("color:#8A4B1F;")}>二次利用に許諾が必要と明記</strong>されており、現在のコピー配信は許諾を得ていません。発行元からの申し出があれば速やかに③を停止し、①発行元と②Wayback のみに切り替えます。
+                  </p>
+                  {v.cov.permissionSources.map((s2: any, i: number) => (
+                    <div key={i} style={S("display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; background:#FFFFFF; border:1px solid #EFD4BE; border-radius:8px; padding:7px 11px; margin-top:5px;")}>
+                      <span style={S("font-size:12px; font-weight:600; color:#14181C;")}>{s2.publisher}｜{s2.title}</span>
+                      <span style={S("font-size:10.5px; color:#8A4B1F;")}>{s2.license}</span>
+                    </div>
                   ))}
                 </div>
-                {v.cov.permissionSources.map((s2: any, i: number) => (
-                  <div key={i} style={S("display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; background:#FFFFFF; border:1px solid #EFD4BE; border-radius:8px; padding:7px 11px; margin-top:5px;")}>
-                    <span style={S("font-size:12px; font-weight:600; color:#14181C;")}>{s2.publisher}｜{s2.title}</span>
-                    <span style={S("font-size:10.5px; color:#8A4B1F;")}>{s2.license}</span>
-                  </div>
-                ))}
-              </section>
+              </details>
 
               {/* ==== 網羅一覧（1つの表） ==== */}
               <div style={S("display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:10px;")}>
@@ -1390,34 +1400,75 @@ export default function BudgetTraceView({ v }: { v: any }) {
             {v.isSources && (
               <div data-screen-label="データ出典・更新日" style={S("animation:fadeUp .35s ease both;")}>
                 <HoverBox as="button" onClick={v.goDash} style={S("border:none; background:none; color:#5C6B77; font-size:13px; cursor:pointer; padding:0; margin-bottom:14px; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("color:#1798D0;")}>← ダッシュボードへ戻る</HoverBox>
-                <div style={S("margin-bottom:20px;")}>
+                <div style={S("margin-bottom:14px;")}>
                   <h1 style={S("margin:0 0 6px; font-size:24px; font-weight:700;")}>データ出典・更新日</h1>
-                  <p style={S("margin:0; color:#5C6B77; font-size:13.5px;")}>このサイトで使用している一次資料と最終確認日の一覧です。すべての数値はこれらの資料まで遡れます。</p>
+                  <p style={S("margin:0; color:#5C6B77; font-size:13.5px; line-height:1.8; max-width:78ch;")}>このサイトで使用している<strong style={S("color:#14181C;")}>一次資料の全件</strong>と最終確認日の一覧です。すべての数値はこれらの資料まで遡れます。レジストリと魚拓台帳から自動生成しているため、資料を追加すればここにも必ず現れます。</p>
                 </div>
+                {!v.src.ready ? (
+                  <div style={S("padding:60px 0; text-align:center; color:#8494A0; font-size:13px;")}>
+                    {v.src.error ? `読み込みに失敗しました: ${v.src.error}` : "読み込み中…"}
+                  </div>
+                ) : (
                 <section style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:20px 24px;")}>
+                  {/* 検索。97件（今後も増える）を1画面に流し込まず、絞ってから読ませる */}
+                  <div style={S("display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:12px;")}>
+                    <input
+                      value={v.src.q}
+                      onChange={(e) => v.src.setQ(e.target.value)}
+                      placeholder="資料名・発行元・年度・使用箇所で検索"
+                      aria-label="一次資料を検索"
+                      style={S("border:1px solid #C6D2DA; border-radius:999px; padding:7px 15px; font-size:13px; width:min(340px, 70vw); font-family:'IBM Plex Sans JP',sans-serif; color:#14181C; background:#FFFFFF;")}
+                    />
+                    <span style={S("font-size:12px; color:#5C6B77; font-family:'IBM Plex Mono',monospace;")}>
+                      {v.src.hits === v.src.total ? `${v.src.total}件` : `${v.src.hits} / ${v.src.total}件`}
+                      {v.src.hits > 0 && <span style={S("color:#8494A0;")}>（{v.src.from}–{v.src.to} を表示）</span>}
+                    </span>
+                  </div>
                   <div data-mq="src" style={S("display:grid; grid-template-columns:minmax(200px,2fr) 70px minmax(140px,1.4fr) 100px minmax(160px,1.6fr); gap:12px; font-size:11px; color:#5C6B77; border-bottom:1px solid #DFE7EC; padding-bottom:8px;")}>
                     <span>資料名</span><span>種別</span><span>発行元</span><span>最終確認日</span><span>使用箇所</span>
                   </div>
-                  {v.sourcesRows.map((src: any, i: number) => (
-                    <div key={i} data-mq="src" style={S("display:grid; grid-template-columns:minmax(200px,2fr) 70px minmax(140px,1.4fr) 100px minmax(160px,1.6fr); gap:12px; padding:11px 0; border-bottom:1px solid #ECF2F6; font-size:13px; align-items:center;")}>
+                  {v.src.hits === 0 && (
+                    <p style={S("padding:28px 0; text-align:center; color:#8494A0; font-size:13px;")}>「{v.src.q}」に一致する資料はありません。</p>
+                  )}
+                  {v.src.rows.map((src: any) => (
+                    <div key={src.sourceId} data-mq="src" style={S("display:grid; grid-template-columns:minmax(200px,2fr) 70px minmax(140px,1.4fr) 100px minmax(160px,1.6fr); gap:12px; padding:11px 0; border-bottom:1px solid #ECF2F6; font-size:13px; align-items:center;")}>
                       <span style={S("display:flex; flex-direction:column; gap:2px;")}>
                         {src.open ? (
                           <a href={src.localUrl} onClick={(e) => { e.preventDefault(); src.open(); }} style={S("font-weight:600; cursor:pointer;")}>{src.title}（原本を開く）</a>
                         ) : (
-                          <a href={src.url} target="_blank" rel="noopener noreferrer" style={S("font-weight:600;")}>{src.title} ↗</a>
+                          <a href={src.originUrl} target="_blank" rel="noopener noreferrer" style={S("font-weight:600;")}>{src.title} ↗</a>
                         )}
-                        {src.originUrl && src.originUrl !== src.url && (
-                          <a href={src.originUrl} target="_blank" rel="noopener noreferrer" style={S("font-size:11px; color:#5C6B77; text-decoration:none;")}>発行元の元ページ（最新版に差し替わっている可能性あり）↗</a>
-                        )}
+                        <span style={S("display:flex; gap:8px; flex-wrap:wrap; align-items:center;")}>
+                          {src.originUrl && (
+                            <a href={src.originUrl} target="_blank" rel="noopener noreferrer" style={S("font-size:11px; color:#5C6B77; text-decoration:none;")}>発行元 ↗</a>
+                          )}
+                          {src.archiveUrl && (
+                            <a href={src.archiveUrl} target="_blank" rel="noopener noreferrer" style={S("font-size:11px; color:#5C6B77; text-decoration:none;")}>魚拓 ↗</a>
+                          )}
+                          {src.licenseClass === "permission-required" && (
+                            <span style={S("font-size:10px; color:#8A4B1F; border:1px solid #EFD4BE; border-radius:999px; padding:0 7px;")}>要許可</span>
+                          )}
+                        </span>
                       </span>
                       <span><span style={S("display:inline-block; font-size:10.5px; font-weight:600; color:#0F76A3; border:1px solid #B9E0F2; border-radius:999px; padding:1px 9px;")}>{src.type}</span></span>
-                      <span style={S("font-size:12.5px; color:#5C6B77;")}>{src.org}</span>
+                      <span style={S("font-size:12.5px; color:#5C6B77;")}>{src.org}<span style={S("color:#9DACB7; font-family:'IBM Plex Mono',monospace; font-size:11px; margin-left:5px;")}>{src.fy}</span></span>
                       <span style={S("font-family:'IBM Plex Mono',monospace; font-size:12px;")}>{src.date}</span>
                       <span style={S("font-size:12px; color:#5C6B77;")}>{src.used}</span>
                     </div>
                   ))}
-                  <p style={S("margin:12px 2px 0; font-size:12px; color:#5C6B77;")}>アプリが実際に使用している一次資料の一覧です。リンクは Wayback Machine のコピー（魚拓）を優先しています — 発行元の直リンクは中身だけ差し替えられる可能性があるため、収録時点の版に固定されたコピーの方が透明性が高いためです。原本はリポジトリにもアーカイブされ、取得時の SHA-256 ハッシュで来歴を検証できます。</p>
+                  {/* ページング */}
+                  {v.src.pages > 1 && (
+                    <div style={S("display:flex; align-items:center; justify-content:center; gap:8px; margin-top:14px; flex-wrap:wrap;")}>
+                      <button onClick={() => v.src.setPage(v.src.page - 1)} disabled={v.src.page <= 1}
+                        style={S(`border:1px solid #C6D2DA; background:#FFFFFF; border-radius:999px; padding:5px 14px; font-size:12.5px; font-family:'IBM Plex Sans JP',sans-serif; ${v.src.page <= 1 ? "color:#C6D2DA; cursor:default;" : "color:#3A4750; cursor:pointer;"}`)}>← 前へ</button>
+                      <span style={S("font-size:12.5px; color:#5C6B77; font-family:'IBM Plex Mono',monospace;")}>{v.src.page} / {v.src.pages}</span>
+                      <button onClick={() => v.src.setPage(v.src.page + 1)} disabled={v.src.page >= v.src.pages}
+                        style={S(`border:1px solid #C6D2DA; background:#FFFFFF; border-radius:999px; padding:5px 14px; font-size:12.5px; font-family:'IBM Plex Sans JP',sans-serif; ${v.src.page >= v.src.pages ? "color:#C6D2DA; cursor:default;" : "color:#3A4750; cursor:pointer;"}`)}>次へ →</button>
+                    </div>
+                  )}
+                  <p style={S("margin:12px 2px 0; font-size:12px; color:#5C6B77; line-height:1.8;")}>資料名をクリックすると<strong style={S("color:#14181C;")}>収録時点の原本コピー</strong>をその場で開きます（発行元の直リンクは中身だけ差し替えられ得るため、主リンクにしていません）。発行元の元ページと Wayback Machine の魚拓は補助リンクです。原本はリポジトリにもアーカイブされ、取得時の SHA-256 ハッシュで来歴を検証できます。利用条件の区分は<button onClick={v.goCoverage} style={S("border:none; background:none; padding:0; color:#1798D0; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")}>データ整備状況</button>で全件公開しています。</p>
                 </section>
+                )}
 
                 <section style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:20px 24px; margin-top:20px;")}>
                   <h2 style={S("margin:0 0 6px; font-size:16px; font-weight:700;")}>未収録の資料をリクエストする</h2>

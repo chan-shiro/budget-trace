@@ -128,40 +128,29 @@ export function tierOf(muniCode: string | null | undefined): 'full' | 'budget' |
   if (BUDGET_MUNIS.includes(muniCode)) return 'budget';
   return 'decision';
 }
+/**
+ * 地図の GeoJSON は**5桁**の団体コード（`19201`）、我々のデータは**6桁**（`192015`）を使う。
+ * 6桁目は検査数字で、JIS X 0402 の定義は「11 から『Σ(各桁×重み6,5,4,3,2) を 11 で割った余り』を
+ * 引いた数の**1の位**」（余り0→11→1・余り1→10→0）。
+ * **全1,741市町村の実データ（総務省 R6 決算）で検算して一致0件・5桁の重複なしを確認済み**
+ * （2026-07-15。丸め方を「10以上は0」と誤ると164件外れる）。
+ */
+export function muniCode6(code5: string | number): string {
+  const c = String(code5).padStart(5, "0");
+  if (!/^\d{5}$/.test(c)) throw new Error(`団体コード（5桁）として解釈できません: ${code5}`);
+  const sum = [6, 5, 4, 3, 2].reduce((a, w, i) => a + Number(c[i]) * w, 0);
+  return c + String((11 - (sum % 11)) % 10);
+}
+
 /** 都道府県名 → 県コード（2桁）。未収録（地図に無い名前）は null */
 export function prefCodeOf(prefName: string | null | undefined): string | null {
   return prefName ? PREF_CODES[prefName] ?? null : null;
 }
 
-// データ出典・更新日一覧（数値の一次資料のみ。地図形状などの素材はトップページに記載）
-// url = Wayback Machine のコピー（魚拓）を優先。直リンクは中身だけ差し替えられ得るが、
-// コピーはパース時点の版に固定されるため透明性が高い。originUrl = 発行元の元 URL。
-// 台帳は data/archives.json、登録は bun run pipeline:archive
-const SOUMU_R6_LANDING = 'https://www.soumu.go.jp/iken/zaisei/r06_shichouson.html';
-export const SOURCES = [
-  ...KOFU_BUDGET_YEARS.map((b) => ({
-    title: b.sourceTitle, type: 'PDF', org: '甲府市', date: '2026-07-12',
-    used: `ダッシュボード／款別ドリルダウン／前年比較／主な事業（${b.fyLabel.replace(' 当初予算', '')}）` + (b.fy === 'R8' ? '／政策テーマ' : ''),
-    url: b.sourceUrl, originUrl: b.originUrl, localUrl: b.sourceLocalUrl,
-  })),
-  { title:'令和7年度 甲府市財政事情（一般会計の状況・令和8年3月31日現在）', type:'PDF', org:'甲府市', date:'2026-07-12', used:'予算執行状況（款別の予算現額・収入/支出済額・執行率）', url: KOFU_EXECUTION.sourceUrl, originUrl: KOFU_EXECUTION.originUrl, localUrl: KOFU_EXECUTION.sourceLocalUrl },
-  ...KOFU_EXECUTION_YEARS.filter((y) => y.basis === '確定').map((y) => ({
-    title: y.sourceTitle, type: 'Web', org: '甲府市', date: '2026-07-12',
-    used: `予算執行状況（${y.fyLabel.replace('（決算・確定値）', '')}の予算現額・済額・執行率＝確定値）`,
-    url: y.sourceUrl, originUrl: y.originUrl, localUrl: y.sourceLocalUrl,
-  })),
-  ...KOFU_OUTTURN_YEARS.map((y) => ({
-    title: y.sourceTitle, type: 'Excel', org: '甲府市', date: '2026-07-13',
-    used: `款別ドリルダウンの項テーブル（${y.fyLabel}の当初・最終・決算）`,
-    url: y.sourceUrl, originUrl: y.originUrl, localUrl: y.sourceLocalUrl,
-  })),
-  ...KOFU_EVALUATION_YEARS.map((y) => ({
-    title: y.sourceTitle, type: y.sourceLocalUrl ? 'PDF' : 'Excel', org: '甲府市', date: '2026-07-12',
-    used: `事業の評価バッジ（${y.fyLabel}の主な事業に予算名/事業名の完全一致で表示）`,
-    url: y.sourceUrl, originUrl: y.originUrl, localUrl: y.sourceLocalUrl,
-  })),
-  { title:'令和6年度 市町村別決算状況調', type:'Excel', org:'総務省 自治財政局', date:'2026-07-11', used:'類似自治体との比較／項別内訳（決算）／人口（1人あたり換算）', url: WAYBACK_BY_URL[SOUMU_R6_LANDING] ?? SOUMU_R6_LANDING, originUrl: SOUMU_R6_LANDING, localUrl: '' },
-];
+// データ出典（/sources）の一覧は **coverage.json から作る**（レジストリ＋魚拓台帳の自動生成）。
+// かつてここに SOURCES という手書きの配列があったが、甲府市＋総務省だけを並べたもので、
+// budget 階層18団体・97資料のうち大半が載っていなかった（2026-07-15 に撤去）。
+// 資料は増え続けるので、画面に出す一覧を手で保守しない。
 
 // 未収録資料のリクエスト（リクエスト駆動の情報公開請求 — docs/data-strategy.md）。
 // 賛同が貯まったものから請求・収録する。台帳は GitHub Issues（ラベル: 資料リクエスト）

@@ -13,7 +13,7 @@ import { ROADMAP_PROGRESS, ROADMAP_PLAN } from "@/client/lib/roadmap.gen";
 import BudgetTraceView from "./BudgetTraceView";
 
 const {
-  GLOSS, SIMILAR_EVIDENCE, SOURCES,
+  GLOSS, SIMILAR_EVIDENCE,
   KOFU_BUDGET_YEARS, KOFU_PROJECT_YEARS, KOFU_EXECUTION_YEARS, KOFU_EVALUATION_YEARS, KOFU_OUTTURN_YEARS, KOFU_R6_DETAIL, KOFU_TREND, KOFU_COUNCIL, KOFU_COUNCIL_YEARS, KOFU_REPORT_YEARS,
   muniFromBudget, fmtOku, pctOf, fmtPerCap, fmtPop, fmtYen, fadeColor, donutBg, setPalette,
 } = D;
@@ -48,6 +48,8 @@ interface St {
   simQ?: string;
   /** データ整備状況の検索語 */
   covQ?: string;
+  srcQ?: string;
+  srcPage?: number;
   /** データ整備状況で展開中の都道府県 */
   covOpen?: string[];
   /** データ整備状況で資料を開いている自治体（団体コード） */
@@ -75,7 +77,7 @@ const DEFAULT_ST: St = {
   screen: "top", pref: null, muni: null,
   drillSide: "exp", drillPath: [], theme: null,
   searchQ: "", unit: "total", compSide: "exp", tip: null,
-  simQ: "", covQ: "", covOpen: [], covMuni: null,
+  simQ: "", covQ: "", covOpen: [], covMuni: null, srcQ: "", srcPage: 1,
 };
 
 // 総合計画の基本目標（= 政策テーマ）。各年度の主な事業の basicGoal から集計する。
@@ -194,7 +196,10 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
   // データ整備状況は自治体スコープを持たない全体ページ（シャード取得も不要）
   const isCoverage = screen === "coverage";
   const isRoadmap = screen === "roadmap";
-  const { data: covData, loading: covLoading, error: covError } = useCoverage(isCoverage);
+  const isSources = screen === "sources";
+  // /coverage と /sources はどちらも「全資料の台帳」が要る。同じ coverage.json を共有する
+  // （useCoverage はモジュールキャッシュを持つので、両方を見ても取得は1回）
+  const { data: covData, loading: covLoading, error: covError } = useCoverage(isCoverage || isSources);
 
   // --- カバレッジ階層 ---
   // full = 甲府市（予算ベースの詳細: 主な事業・執行・評価・補正・前年当初比較）。
@@ -1123,10 +1128,14 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     showEvidence,
     onPrefSelect: (name: string) => nav({ screen: "muni", pref: name }),
     mapColorMode,
-    onMuniSelect: (pfName: string, muniName: string | null) => {
-      // 甲府だけ full 経路へ直行。他は県の一覧（シャード）へ — グリッドで団体コード付き選択
-      if (pfName === "山梨県" && muniName === "甲府市") nav({ screen: "dash", pref: pfName, muni: "甲府市", muniCode: "192015", drillPath: [], theme: null, budgetFy: undefined });
-      else nav({ screen: "muni", pref: pfName });
+    onMuniSelect: (pfName: string, muniName: string | null, code5?: string) => {
+      // 地図で市区町村をクリックしたら、その自治体のダッシュボードへ直行する。
+      // 以前は**甲府だけ**を名指しでダッシュボードへ送り、他は全部「市区町村選択」の一覧へ
+      // 落としていた（全1,741市町村が決算ベースで見られるようになった後も残っていた）。
+      // 地図は GeoJSON の5桁コードを持っているので、6桁へ変換すればどの自治体にも直行できる。
+      if (!muniName) { nav({ screen: "muni", pref: pfName }); return; } // 「県全体」チップ
+      const code = code5 ? D.muniCode6(code5) : undefined;
+      nav({ screen: "dash", pref: pfName, muni: muniName, muniCode: code, drillPath: [], theme: null, budgetFy: undefined });
     },
     searchQ: s.searchQ,
     openKofuLink: (e: any) => { if (e && e.preventDefault) e.preventDefault(); nav({ screen: "dash", muni: "甲府市", muniCode: "192015", pref: "山梨県", budgetFy: undefined }); },
@@ -1410,7 +1419,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
       : `市民1人あたり ${((totalNow * 1e8) / data.pop / 1e4).toFixed(1)}万円（${isDecision ? "住民基本台帳人口" : isBudget ? muniBudget!.populationLabel : budget.populationLabel} ${data.pop.toLocaleString()}人）`,
     unitTabs,
     unitLabel: isPer ? "1人あたり" : "総額",
-    isSimilar: screen === "similar", isSources: screen === "sources",
+    isSimilar: screen === "similar", isSources,
     isCoverage,
     goCoverage: () => nav({ screen: "coverage", pref: null, muni: null, muniCode: undefined }),
     // データ整備状況: 全1,741市町村を都道府県ごとに ○× で網羅する単一の表。
@@ -1548,12 +1557,70 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
         })),
       };
     })(),
-    sourcesRows: SOURCES.map((row: any) => ({
-      ...row,
-      open: row.localUrl
-        ? () => openViewer({ url: row.localUrl, title: row.title, sub: row.type, originUrl: row.originUrl, archiveUrl: row.url })
-        : null,
-    })),
+    // データ出典: **収録している全資料**を出す。以前は data.ts の SOURCES（甲府市＋総務省だけを
+    // 手で並べた配列）を使っており、budget 階層18団体の資料が1件も載っていなかった
+    // （2026-07-15 修正）。coverage.json はレジストリと魚拓台帳から自動生成されるので、
+    // 資料を足せば黙って増える＝実態とズレない。
+    src: (() => {
+      const d = covData;
+      if (!d) return { loading: covLoading, error: covError, ready: false as const };
+      const all = [
+        ...Object.values(d.entities).flatMap((e) => e.sources),
+        ...d.national,
+        ...d.unclassified,
+      ];
+      const q = (s.srcQ ?? "").trim();
+      // 資料名・発行元・年度・使用箇所に部分一致（入力即時フィルタ）
+      const rows = all.filter(
+        (c) => !q || c.title.includes(q) || c.publisher.includes(q) || c.fiscalYear.includes(q) || c.used.includes(q),
+      );
+      const PER = 25;
+      const pages = Math.max(1, Math.ceil(rows.length / PER));
+      const page = Math.min(Math.max(1, s.srcPage ?? 1), pages); // 検索で件数が減ったら範囲内へ丸める
+      const start = (page - 1) * PER;
+      const view = rows.slice(start, start + PER);
+      return {
+        ready: true as const,
+        loading: false,
+        error: null,
+        total: all.length,
+        hits: rows.length,
+        page,
+        pages,
+        from: rows.length === 0 ? 0 : start + 1,
+        to: Math.min(start + PER, rows.length),
+        q,
+        setQ: (val: string) => setSt({ srcQ: val, srcPage: 1 }), // 検索したら1ページ目へ
+        setPage: (n: number) => setSt({ srcPage: Math.min(Math.max(1, n), pages) }),
+        rows: view.map((c) => {
+          const f = c.files[0];
+          return {
+            sourceId: c.sourceId,
+            title: c.title,
+            type: c.kind === "pdf" ? "PDF" : c.kind === "html" ? "Web" : c.kind === "excel" ? "Excel" : c.kind,
+            org: c.publisher,
+            fy: c.fiscalYear,
+            date: f?.fetchedAt ?? "",
+            used: c.used,
+            licenseClass: c.licenseClass,
+            localUrl: f?.localUrl ?? null,
+            originUrl: c.originUrl,
+            archiveUrl: c.archiveUrl,
+            // ドロワーで自サーバーの原本コピーを開く（エビデンス3層の③。発行元・魚拓は補助リンク）
+            open: f?.localUrl
+              ? () =>
+                  openViewer({
+                    url: f.localUrl,
+                    title: c.title,
+                    sub: `${c.publisher}・${c.fiscalYear}`,
+                    originUrl: c.originUrl,
+                    archiveUrl: c.archiveUrl ?? c.originUrl,
+                  })
+              : null,
+          };
+        }),
+      };
+    })(),
     themeCards, ...themeVals,
     compTabs, compRows,
     // 前年ラベル。full=甲府 or budget=類似4市（compSrc）の年度・基準を使う。
