@@ -652,6 +652,106 @@ export default function BudgetTraceView({ v }: { v: any }) {
                 </section>
                 )}
 
+                {/* 事業報告（成果）— **全量公開**の自治体（川崎 572件）。
+                    甲府の詳細票セクション（下）とは**別にする** — 評価体系が違い、
+                    川崎の達成度は**数字が小さいほど良い**（甲府の A〜F と向きが逆）。
+                    既存のバッジへ丸めると意味が反転するので、凡例を必ず添えて素の値を出す。
+                    572件あるので一覧＋検索＋ページング（/sources と同じ形）。 */}
+                {v.repAll && (
+                <section style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:22px 24px; margin:26px 0;")}>
+                  <div style={S("display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:6px;")}>
+                    <h2 style={S("margin:0; font-size:16px; font-weight:700;")}>事業報告（成果）</h2>
+                    <span style={S("font-size:12px; color:#5C6B77;")}>事務事業評価シート — 予算→執行→成果を1事業で追える</span>
+                  </div>
+                  {!v.repAll.ready ? (
+                    <div style={S("padding:40px 0; text-align:center; color:#8494A0; font-size:13px;")}>
+                      {v.repAll.error ? `読み込みに失敗しました: ${v.repAll.error}` : "読み込み中…"}
+                    </div>
+                  ) : (
+                  <>
+                    <p style={S("margin:0 0 14px; font-size:12px; color:#8494A0; line-height:1.7;")}>
+                      <strong style={S("color:#14181C;")}>{v.repAll.fyLabel}の全{v.repAll.total}事業</strong>が公表されています（サンプルではなく全量）。事業ごとに 事業費・人件費・総コスト（人件費込み）・達成度・今後の方向性が載っています。決算額は評価年度のため<strong style={S("color:#14181C;")}>見込み</strong>です。
+                    </p>
+
+                    {/* 達成度の分布。**1が最良で5が最悪**＝甲府の A〜F と向きが逆なので必ず明示する */}
+                    <div style={S("background:#F7FAFC; border:1px solid #DFE7EC; border-radius:12px; padding:12px 14px; margin-bottom:14px;")}>
+                      <div style={S("font-size:11.5px; color:#5C6B77; margin-bottom:8px;")}>達成度の内訳（<strong style={S("color:#14181C;")}>1 が最も良く、5 が最も悪い</strong>）</div>
+                      <div style={S("display:flex; gap:8px; flex-wrap:wrap;")}>
+                        {v.repAll.dist.map((d: any) => (
+                          <span key={d.k} style={S("display:inline-flex; align-items:baseline; gap:6px; background:#FFFFFF; border:1px solid #DFE7EC; border-radius:999px; padding:4px 12px;")}>
+                            <strong style={S("font-family:'IBM Plex Mono',monospace; font-size:12.5px; color:#0F76A3;")}>{d.k}</strong>
+                            <span style={S("font-size:11.5px; color:#5C6B77;")}>{d.label}</span>
+                            <strong style={S("font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14181C;")}>{d.n}</strong>
+                            <span style={S("font-size:10.5px; color:#9DACB7;")}>{d.pct}%</span>
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div style={S("display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:10px;")}>
+                      <input
+                        value={v.repAll.q}
+                        onChange={(e) => v.repAll.setQ(e.target.value)}
+                        placeholder="事業名・所属・政策・施策・事務事業コードで検索"
+                        aria-label="事業を検索"
+                        style={S("border:1px solid #C6D2DA; border-radius:999px; padding:7px 15px; font-size:13px; width:min(340px, 70vw); font-family:'IBM Plex Sans JP',sans-serif; color:#14181C; background:#FFFFFF;")}
+                      />
+                      <span style={S("font-size:12px; color:#5C6B77; font-family:'IBM Plex Mono',monospace;")}>
+                        {v.repAll.hits === v.repAll.total ? `${v.repAll.total}件` : `${v.repAll.hits} / ${v.repAll.total}件`}
+                        {v.repAll.hits > 0 && <span style={S("color:#8494A0;")}>（{v.repAll.from}–{v.repAll.to}）</span>}
+                      </span>
+                    </div>
+
+                    {v.repAll.hits === 0 && (
+                      <p style={S("padding:28px 0; text-align:center; color:#8494A0; font-size:13px;")}>「{v.repAll.q}」に一致する事業はありません。</p>
+                    )}
+                    {v.repAll.rows.map((r: any) => (
+                      <div key={r.code} data-mq="rep" style={S("display:grid; grid-template-columns:1fr 92px 150px 110px; gap:12px; padding:11px 0; border-bottom:1px solid #ECF2F6; align-items:center;")}>
+                        <span style={S("min-width:0;")}>
+                          <a href={r.ref} onClick={(e) => { e.preventDefault(); r.open(); }} style={S("font-size:13px; font-weight:600; cursor:pointer;")}>{r.name}</a>
+                          <span style={S("display:block; font-size:10.5px; color:#8494A0; margin-top:2px;")}>
+                            <span style={S("font-family:'IBM Plex Mono',monospace;")}>{r.code}</span> ・ {r.buka}{r.measure && ` ・ ${r.measure}`}
+                          </span>
+                        </span>
+                        <span>
+                          {r.achievement != null && (
+                            <span title={r.achievementLabel} style={S(
+                              "display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:700; border-radius:999px; padding:2px 10px; " +
+                              (r.achievement <= 2 ? "background:#E7F5EE; color:#0F7B4F; border:1px solid #BFE3D0;"
+                                : r.achievement === 3 ? "background:#E8F4FA; color:#0F76A3; border:1px solid #BFE0EF;"
+                                : "background:#FFF8F2; color:#8A4B1F; border:1px solid #EFD4BE;"),
+                            )}>達成度 {r.achievement}</span>
+                          )}
+                        </span>
+                        <span style={S("font-size:11.5px; color:#5C6B77;")} title={r.directionLabel}>
+                          {r.direction && <><strong style={S("font-family:'IBM Plex Mono',monospace; color:#14181C;")}>{r.direction}</strong> {r.directionLabel}</>}
+                        </span>
+                        <span style={S("text-align:right;")}>
+                          {r.totalCost != null && (
+                            <>
+                              <span style={S("display:block; font-family:'IBM Plex Mono',monospace; font-size:13px; font-weight:700; color:#14181C;")}>{v.repAll.fmt(r.totalCost)}</span>
+                              <span style={S("display:block; font-size:10px; color:#9DACB7;")}>総コスト・{r.costLabel}</span>
+                            </>
+                          )}
+                        </span>
+                      </div>
+                    ))}
+
+                    {v.repAll.pages > 1 && (
+                      <div style={S("display:flex; align-items:center; justify-content:center; gap:8px; margin-top:14px; flex-wrap:wrap;")}>
+                        <button onClick={() => v.repAll.setPage(v.repAll.page - 1)} disabled={v.repAll.page <= 1}
+                          style={S(`border:1px solid #C6D2DA; background:#FFFFFF; border-radius:999px; padding:5px 14px; font-size:12.5px; font-family:'IBM Plex Sans JP',sans-serif; ${v.repAll.page <= 1 ? "color:#C6D2DA; cursor:default;" : "color:#3A4750; cursor:pointer;"}`)}>← 前へ</button>
+                        <span style={S("font-size:12.5px; color:#5C6B77; font-family:'IBM Plex Mono',monospace;")}>{v.repAll.page} / {v.repAll.pages}</span>
+                        <button onClick={() => v.repAll.setPage(v.repAll.page + 1)} disabled={v.repAll.page >= v.repAll.pages}
+                          style={S(`border:1px solid #C6D2DA; background:#FFFFFF; border-radius:999px; padding:5px 14px; font-size:12.5px; font-family:'IBM Plex Sans JP',sans-serif; ${v.repAll.page >= v.repAll.pages ? "color:#C6D2DA; cursor:default;" : "color:#3A4750; cursor:pointer;"}`)}>次へ →</button>
+                      </div>
+                    )}
+                    <p style={S("margin:12px 2px 0; font-size:11.5px; color:#8494A0; line-height:1.7;")}>事業名をクリックすると原本（{v.repAll.sourceTitle}）の該当ページを開きます。総コストは事業費＋人件費（職員1人当たり人件費 × 人工）です。</p>
+                  </>
+                  )}
+                </section>
+                )}
+
                 {/* 事業報告（成果）＝事務事業評価 詳細票。full 専用（甲府）。予算→執行→成果を1事業で通す。
                     ヘッダの年度ドロップダウンに連動して1年度分だけ出し、事務事業はタブで切り替える。 */}
                 {v.report && (
