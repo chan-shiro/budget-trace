@@ -3,7 +3,7 @@
   "sourceId": "fujiyoshida-yosansho-r8",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-07-15T06:32:00.864Z",
+  "parsedAt": "2026-07-15T08:22:36.968Z",
   "unit": "thousandYen",
   "fiscalYear": "R8",
   "account": "一般会計",
@@ -115,7 +115,7 @@
     {
       "side": "revenue",
       "kanNo": 10,
-      "kanName": "国有提供施設等所在市町",
+      "kanName": "国有提供施設等所在市町村助成交付金",
       "amount": 166617,
       "prevAmount": 166072,
       "locator": {

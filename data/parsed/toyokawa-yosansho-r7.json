@@ -3,7 +3,7 @@
   "sourceId": "toyokawa-yosansho-r7",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-07-15T06:31:58.756Z",
+  "parsedAt": "2026-07-15T08:22:34.934Z",
   "unit": "thousandYen",
   "fiscalYear": "R7",
   "account": "一般会計",
@@ -126,7 +126,7 @@
     {
       "side": "revenue",
       "kanNo": 11,
-      "kanName": "国有提供施設等",
+      "kanName": "国有提供施設等所在市町村助成交付金",
       "amount": 15641,
       "prevAmount": 15772,
       "locator": {
