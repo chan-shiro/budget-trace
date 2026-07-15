@@ -61,6 +61,8 @@ button { font-family: 'IBM Plex Sans JP', sans-serif; }
   [data-mq="sim"] > :nth-child(5){ grid-column:1 / -1 !important; margin-top:4px !important; }
   [data-mq="src"]{ grid-template-columns:1fr 58px 84px !important; gap:8px !important; }
   [data-mq="src"] > :nth-child(3), [data-mq="src"] > :nth-child(5){ display:none !important; }
+  /* /roadmap の2カラム（甲府の深さ / 年度の深さ）はモバイルでは縦に積む */
+  [data-mq="rmcols"]{ grid-template-columns:1fr !important; }
   [data-mq-pad] h1{ font-size:22px !important; }
   [data-mq="ralign"] > div:first-child{ font-size:28px !important; }
   [data-mq="bsum-card"]{ padding:14px 16px !important; gap:12px !important; }

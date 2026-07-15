@@ -7,6 +7,9 @@ import { useDecisionData } from "@/client/hooks/useDecisionData";
 import { useCoverage } from "@/client/hooks/useCoverage";
 import { useSimilarIndex } from "@/client/hooks/useSimilarIndex";
 import { stateToPath, locationToState, type RouteState } from "@/client/lib/routing";
+// 進捗（実データから derive が算出）と計画（pipeline/registry/roadmap.ts が唯一の手書き）。
+// 数KBなので静的 import でよい（130KB級の coverage.json はフェッチしている）
+import { ROADMAP_PROGRESS, ROADMAP_PLAN } from "@/client/lib/roadmap.gen";
 import BudgetTraceView from "./BudgetTraceView";
 
 const {
@@ -190,6 +193,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
   const isApp = ["dash", "drill", "compare", "themes", "execution", "similar", "sources"].includes(screen);
   // データ整備状況は自治体スコープを持たない全体ページ（シャード取得も不要）
   const isCoverage = screen === "coverage";
+  const isRoadmap = screen === "roadmap";
   const { data: covData, loading: covLoading, error: covError } = useCoverage(isCoverage);
 
   // --- カバレッジ階層 ---
@@ -1515,6 +1519,35 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     uncollected: D.UNCOLLECTED,
     requestListUrl: D.REQUEST_LIST_URL,
     sourceLabel,
+    // --- /roadmap（進捗と計画）---------------------------------------------
+    // 進捗の数字は **roadmap.gen.ts が実データから算出したもの**（手書きの数字は無い）。
+    // 計画だけが手書き（pipeline/registry/roadmap.ts）。ここでは並べ替えと表示整形のみ行う
+    isRoadmap,
+    goRoadmap: () => nav({ screen: "roadmap", pref: null, muni: null, muniCode: undefined }),
+    rm: (() => {
+      const p = ROADMAP_PROGRESS;
+      const label: Record<string, string> = {
+        kessan: "決算", budget: "当初予算", projects: "主な事業", report: "事業報告（成果）",
+        council: "議会の構成", execution: "予算執行", evaluation: "事務事業評価", outturn: "統計書 款項",
+      };
+      return {
+        progress: p,
+        // 甲府（full）で何がどこまで収録できているか＝「1自治体を深く掘るとどうなるか」の見本
+        kofuRows: Object.entries(p.kofuDetail).map(([k, v]) => ({ label: label[k] ?? k, detail: v as string })),
+        // 当初予算を複数年度収録している自治体（年度の多い順）
+        depth: p.budgetDepth,
+        groups: (["now", "next", "later"] as const).map((st) => ({
+          status: st,
+          title: { now: "着手している", next: "次にやる", later: "その先" }[st],
+          note: {
+            now: "いま手を動かしているもの",
+            next: "前提が揃っていて、次に着手するもの",
+            later: "やりたいが、前提が未確定 or 発行元の判断待ちのもの",
+          }[st],
+          items: ROADMAP_PLAN.filter((r) => r.status === st),
+        })),
+      };
+    })(),
     sourcesRows: SOURCES.map((row: any) => ({
       ...row,
       open: row.localUrl

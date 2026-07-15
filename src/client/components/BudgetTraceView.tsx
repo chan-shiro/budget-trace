@@ -67,6 +67,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
             <span>本サイトはプロトタイプです。掲載数値はすべて一次資料由来の実データで、画面のどの数値も原本まで遡れます。
               <button onClick={v.goSources} style={S("border:none; background:none; padding:0; margin-left:8px; color:#1798D0; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")}>データ出典・更新日 →</button>
               <button onClick={v.goCoverage} style={S("border:none; background:none; padding:0; margin-left:12px; color:#1798D0; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")}>データ整備状況・ライセンス →</button>
+              <button onClick={v.goRoadmap} style={S("border:none; background:none; padding:0; margin-left:12px; color:#1798D0; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")}>進捗と計画 →</button>
             </span>
             <span style={S("font-family:'IBM Plex Mono',monospace;")}>v0.1 / 2026-07</span>
           </footer>
@@ -119,6 +120,126 @@ export default function BudgetTraceView({ v }: { v: any }) {
       {/* ==== データ整備状況（進捗・エビデンス保管・ライセンス） ====
            「どこまで収録できたか（ToDo）」「何を保管しているか（情報公開）」
            「再配布にライセンス上の懸念があるか」を実データから出す全体ページ。 */}
+      {/* ==== 進捗と計画（/roadmap）====
+          進捗の数字は roadmap.gen.ts が実データから算出したもの。**ここに数字をベタ書きしない** —
+          手書きの数字は必ず実態とズレる（フッターの「SOURCE: 甲府市 当初予算資料 R2–R8」固定表示、
+          /coverage の予算列が最新年度のみ、で2回踏んだ）。計画も registry の1か所だけが手書き。 */}
+      {v.isRoadmap && (
+        <div data-screen-label="進捗と計画" data-mq-pad="" style={S("min-height:100vh; width:min(1160px,100%); margin:0 auto; padding:28px 28px 64px; animation:fadeUp .35s ease both;")}>
+          <HoverBox as="button" onClick={v.goTop} style={S("border:none; background:none; color:#5C6B77; font-size:13px; cursor:pointer; padding:0; margin-bottom:14px; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("color:#1798D0;")}>← トップへ戻る</HoverBox>
+          <div style={S("margin-bottom:18px;")}>
+            <h1 style={S("margin:0 0 6px; font-size:24px; font-weight:700;")}>進捗と計画</h1>
+            <p style={S("margin:0 0 8px; color:#5C6B77; font-size:13.5px; line-height:1.8; max-width:78ch;")}>
+              このサイトが「いまどこまで来ていて、次に何をするか」を公開しています。<strong style={S("color:#14181C;")}>下の進捗の数字はすべて実際の収録データから自動生成</strong>しているので、実態とズレません。
+            </p>
+            <p style={S("margin:0; color:#5C6B77; font-size:12.5px; line-height:1.8; max-width:78ch;")}>
+              計画に<strong style={S("color:#14181C;")}>時期は書きません</strong> — 一次資料が手に入るかは発行元次第で（情報公開請求が要る資料や、消えてしまった資料があります）、私たちの側で約束できないためです。
+              <button onClick={v.goCoverage} style={S("border:none; background:none; padding:0; margin-left:6px; color:#1798D0; font-size:12.5px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")}>自治体ごとの ○× はデータ整備状況へ →</button>
+            </p>
+          </div>
+
+          {/* 進捗: 3階層のカバレッジ */}
+          <h2 style={S("margin:0 0 8px; font-size:15px; font-weight:700;")}>いまどこまで来ているか</h2>
+          <div style={S("display:grid; grid-template-columns:repeat(auto-fit, minmax(148px,1fr)); gap:10px; margin-bottom:14px;")}>
+            {[
+              { k: "詳細まで収録", v: `${v.rm.progress.fullCount}団体`, s: "予算→事業→成果→議会（甲府市）" },
+              { k: "予算（款別）収録", v: `${v.rm.progress.budgetCount}団体`, s: "当初予算＋前年当初比" },
+              { k: "決算で閲覧可", v: `${v.rm.progress.muniCount.toLocaleString()}市町村`, s: `${v.rm.progress.prefCount}都道府県・${v.rm.progress.kessanRange}` },
+              { k: "一次資料", v: `${v.rm.progress.sourceCount}件`, s: `原本${v.rm.progress.fileCount}ファイル・魚拓${v.rm.progress.archivedCount}` },
+            ].map((c: any, i: number) => (
+              <div key={i} style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:12px; padding:12px 14px;")}>
+                <div style={S("font-size:11px; color:#5C6B77; margin-bottom:3px;")}>{c.k}</div>
+                <div style={S("font-size:18px; font-weight:700; font-family:'IBM Plex Mono',monospace; color:#14181C;")}>{c.v}</div>
+                <div style={S("font-size:10.5px; color:#8494A0; margin-top:2px; line-height:1.5;")}>{c.s}</div>
+              </div>
+            ))}
+          </div>
+
+          <div data-mq="rmcols" style={S("display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:18px;")}>
+            {/* 甲府＝1自治体を深く掘るとどうなるか */}
+            <section style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; padding:16px 18px;")}>
+              <h3 style={S("margin:0 0 4px; font-size:13.5px; font-weight:700;")}>1自治体を深く掘るとこうなる（甲府市）</h3>
+              <p style={S("margin:0 0 10px; font-size:11.5px; color:#8494A0; line-height:1.7;")}>予算から成果までを1つの自治体で通した見本です。他の自治体もこの深さを目指します。</p>
+              {v.rm.kofuRows.map((r: any, i: number) => (
+                <div key={i} style={S("display:flex; justify-content:space-between; gap:12px; padding:6px 0; border-bottom:1px solid #ECF2F6; font-size:12px;")}>
+                  <span style={S("color:#14181C; font-weight:600; white-space:nowrap;")}>{r.label}</span>
+                  <span style={S("color:#5C6B77; font-family:'IBM Plex Mono',monospace; font-size:11px; text-align:right;")}>{r.detail}</span>
+                </div>
+              ))}
+            </section>
+
+            {/* 予算の年度の深さ */}
+            <section style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; padding:16px 18px;")}>
+              <h3 style={S("margin:0 0 4px; font-size:13.5px; font-weight:700;")}>当初予算を複数年度そろえた自治体</h3>
+              <p style={S("margin:0 0 10px; font-size:11.5px; color:#8494A0; line-height:1.7;")}>年度を切り替えて経年で追えます。1年度のみの自治体は載せていません。</p>
+              {v.rm.depth.map((d: any, i: number) => (
+                <div key={i} style={S("display:flex; justify-content:space-between; gap:12px; padding:6px 0; border-bottom:1px solid #ECF2F6; font-size:12px;")}>
+                  <span style={S("color:#14181C; font-weight:600;")}>{d.name}</span>
+                  <span style={S("color:#5C6B77; font-family:'IBM Plex Mono',monospace; font-size:11px;")}>{d.range}</span>
+                </div>
+              ))}
+              <div style={S("display:flex; justify-content:space-between; gap:12px; padding:6px 0; font-size:12px;")}>
+                <span style={S("color:#14181C; font-weight:600;")}>甲府市</span>
+                <span style={S("color:#5C6B77; font-family:'IBM Plex Mono',monospace; font-size:11px;")}>{v.rm.progress.kofuBudgetRange}</span>
+              </div>
+            </section>
+          </div>
+
+          {/* 計画 */}
+          <h2 style={S("margin:0 0 4px; font-size:15px; font-weight:700;")}>次に何をするか</h2>
+          <p style={S("margin:0 0 10px; color:#5C6B77; font-size:12.5px; line-height:1.8; max-width:78ch;")}>
+            「何を・なぜ・何が要るか」を書いています。<strong style={S("color:#14181C;")}>欲しい資料はリクエストできます</strong> — 👍 の多いものから着手します。
+            <a href={v.requestListUrl} target="_blank" rel="noopener noreferrer" style={S("color:#1798D0; text-decoration:none; margin-left:6px;")}>リクエスト一覧 ↗</a>
+          </p>
+          {v.rm.groups.map((g: any) => (
+            <section key={g.status} style={S("margin-bottom:16px;")}>
+              <div style={S("display:flex; align-items:baseline; gap:10px; margin-bottom:8px; flex-wrap:wrap;")}>
+                <span style={S(
+                  "font-size:11.5px; font-weight:700; border-radius:999px; padding:3px 12px; " +
+                  (g.status === "now"
+                    ? "background:#1798D0; color:#FFFFFF;"
+                    : g.status === "next"
+                      ? "background:#E8F4FA; color:#0F76A3; border:1px solid #BFE0EF;"
+                      : "background:#F1F5F8; color:#5C6B77; border:1px solid #DFE7EC;"),
+                )}>{g.title}</span>
+                <span style={S("font-size:11.5px; color:#8494A0;")}>{g.note}</span>
+              </div>
+              {g.items.map((it: any, i: number) => (
+                <div key={i} style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:12px; padding:13px 16px; margin-bottom:8px;")}>
+                  <div style={S("font-size:13.5px; font-weight:700; color:#14181C; margin-bottom:5px;")}>{it.title}</div>
+                  <p style={S("margin:0 0 6px; font-size:12px; color:#5C6B77; line-height:1.85; max-width:82ch;")}>{it.why}</p>
+                  <p style={S("margin:0; font-size:11.5px; color:#8494A0; line-height:1.8; max-width:82ch;")}>
+                    <span style={S("color:#5C6B77; font-weight:600;")}>要るもの: </span>{it.needs}
+                    {it.ref && <span style={S("font-family:'IBM Plex Mono',monospace; font-size:10.5px; margin-left:6px; color:#9DACB7;")}>（{it.ref}）</span>}
+                  </p>
+                </div>
+              ))}
+            </section>
+          ))}
+
+          {/* ライセンスの現在地（隠さない） */}
+          <section style={S("background:#F7FAFC; border:1px solid #DFE7EC; border-radius:14px; padding:16px 18px;")}>
+            <h3 style={S("margin:0 0 6px; font-size:13.5px; font-weight:700;")}>一次資料の利用条件（{v.rm.progress.sourceCount}件）</h3>
+            <p style={S("margin:0 0 10px; font-size:12px; color:#5C6B77; line-height:1.85; max-width:82ch;")}>
+              資料の消失・差し替えに備えて原本のコピーを自サーバーから配信しているため、利用条件の確認は避けて通れません。区分は隠さず全件公開しています。
+            </p>
+            <div style={S("display:flex; gap:8px; flex-wrap:wrap;")}>
+              {[
+                { k: "再配布可", n: v.rm.progress.licenseOpen, c: "#0F7B4F", b: "#E7F5EE", d: "政府標準利用規約など" },
+                { k: "要許可", n: v.rm.progress.licensePermission, c: "#8A4B1F", b: "#FFF8F2", d: "許諾未取得のまま配信中＝リスクを開示" },
+                { k: "未確認", n: v.rm.progress.licenseUnverified, c: "#5C6B77", b: "#F1F5F8", d: "原文を調べれば区分が動く（棚卸しは計画にあり）" },
+              ].map((x: any, i: number) => (
+                <div key={i} style={S(`background:${x.b}; border:1px solid #DFE7EC; border-radius:10px; padding:9px 13px; min-width:150px;`)}>
+                  <div style={S(`font-size:11px; color:${x.c}; font-weight:700;`)}>{x.k} {x.n}件</div>
+                  <div style={S("font-size:10.5px; color:#8494A0; margin-top:2px; line-height:1.5;")}>{x.d}</div>
+                </div>
+              ))}
+            </div>
+            <button onClick={v.goCoverage} style={S("border:none; background:none; padding:0; margin-top:10px; color:#1798D0; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")}>資料ごとの区分・原文はデータ整備状況へ →</button>
+          </section>
+        </div>
+      )}
+
       {v.isCoverage && (
         <div data-screen-label="データ整備状況" data-mq-pad="" style={S("min-height:100vh; width:min(1160px,100%); margin:0 auto; padding:28px 28px 64px; animation:fadeUp .35s ease both;")}>
           <HoverBox as="button" onClick={v.goTop} style={S("border:none; background:none; color:#5C6B77; font-size:13px; cursor:pointer; padding:0; margin-bottom:14px; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("color:#1798D0;")}>← トップへ戻る</HoverBox>
@@ -1318,7 +1439,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
           </main>
 
           <footer data-mq-pad="" style={S("border-top:1px solid #DFE7EC; padding:16px 28px; font-size:12px; color:#5C6B77; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;")}>
-            <span>予算トレース — プロトタイプ。掲載数値はすべて一次資料由来の実データです（項以下の内訳・補正・執行率は資料収録後に追加予定）。<button onClick={v.goSources} style={S("border:none; background:none; padding:0; margin-left:8px; color:#1798D0; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")}>データ出典・更新日一覧 →</button><button onClick={v.goCoverage} style={S("border:none; background:none; padding:0; margin-left:12px; color:#1798D0; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")}>データ整備状況・ライセンス →</button></span>
+            <span>予算トレース — プロトタイプ。掲載数値はすべて一次資料由来の実データです（項以下の内訳・補正・執行率は資料収録後に追加予定）。<button onClick={v.goSources} style={S("border:none; background:none; padding:0; margin-left:8px; color:#1798D0; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")}>データ出典・更新日一覧 →</button><button onClick={v.goCoverage} style={S("border:none; background:none; padding:0; margin-left:12px; color:#1798D0; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")}>データ整備状況・ライセンス →</button><button onClick={v.goRoadmap} style={S("border:none; background:none; padding:0; margin-left:12px; color:#1798D0; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")}>進捗と計画 →</button></span>
             <span style={S("font-family:'IBM Plex Mono',monospace;")}>{v.sourceLabel ? `SOURCE: ${v.sourceLabel}` : "v0.1 / 2026-07"}</span>
           </footer>
         </div>
