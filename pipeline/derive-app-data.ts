@@ -1632,6 +1632,11 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     })),
     // 仙台市は born-digital が R8 が初年度（R2〜R7 の説明書は総括ページがスキャン）＝単年
     { srcId: "sendai-yosansho-r8", muniCode: "041009", muniName: "仙台市", prefName: "宮城県", isPref: false },
+    // 堺市は予算書本体が全文アウトライン化でテキスト層が無く、議案書の予算案説明資料に逃げる（広島型）。
+    // **歳出13款が総務省の目的別と一致**（さいたま・千葉に次ぐ3例目）。R5・R4 は原典が壊れていて飛ぶ
+    ...(["r8", "r7", "r6", "r3", "r2"] as const).map((fy) => ({
+      srcId: `sakai-yosansho-${fy}`, muniCode: "271403", muniName: "堺市", prefName: "大阪府", isPref: false,
+    })),
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;

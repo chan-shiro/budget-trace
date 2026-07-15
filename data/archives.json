@@ -1751,6 +1751,93 @@
       "checkedAt": "2026-07-15T15:12:52.753Z"
     },
     {
+      "sourceId": "sakai-yosansho-r2",
+      "url": "https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/0207giansho.files/0201yosanansetumeishiryo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250518234544/https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/0207giansho.files/0201yosanansetumeishiryo.pdf",
+      "waybackTimestamp": "20250518234544",
+      "checkedAt": "2026-07-15T17:43:19.432Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "sakai-yosansho-r2",
+      "url": "https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/0207giansho.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250427230809/https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/0207giansho.html",
+      "waybackTimestamp": "20250427230809",
+      "checkedAt": "2026-07-15T17:43:29.644Z"
+    },
+    {
+      "sourceId": "sakai-yosansho-r3",
+      "url": "https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/0301gian.files/0301-yosannan.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250803020720/https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/0301gian.files/0301-yosannan.pdf",
+      "waybackTimestamp": "20250803020720",
+      "checkedAt": "2026-07-15T17:42:35.896Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "sakai-yosansho-r3",
+      "url": "https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/0301gian.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260217141527/https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/0301gian.html",
+      "waybackTimestamp": "20260217141527",
+      "checkedAt": "2026-07-15T17:42:41.984Z"
+    },
+    {
+      "sourceId": "sakai-yosansho-r6",
+      "url": "https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/75920720240209111619595.files/R6-1yosannannsetumeisyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260208025956/https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/75920720240209111619595.files/R6-1yosannannsetumeisyo.pdf",
+      "waybackTimestamp": "20260208025956",
+      "checkedAt": "2026-07-15T17:41:54.776Z",
+      "sha256Match": false,
+      "waybackTruncated": true
+    },
+    {
+      "sourceId": "sakai-yosansho-r6",
+      "url": "https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/75920720240209111619595.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260118003754/https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/75920720240209111619595.html",
+      "waybackTimestamp": "20260118003754",
+      "checkedAt": "2026-07-15T17:42:02.087Z"
+    },
+    {
+      "sourceId": "sakai-yosansho-r7",
+      "url": "https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/giannsyo_R7-1.files/R7-1_yosannnannsetumei.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250525052620/https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/giannsyo_R7-1.files/R7-1_yosannnannsetumei.pdf",
+      "waybackTimestamp": "20250525052620",
+      "checkedAt": "2026-07-15T17:41:26.205Z",
+      "sha256Match": false,
+      "waybackTruncated": true
+    },
+    {
+      "sourceId": "sakai-yosansho-r7",
+      "url": "https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/giannsyo_R7-1.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260211210909/https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/giannsyo_R7-1.html",
+      "waybackTimestamp": "20260211210909",
+      "checkedAt": "2026-07-15T17:41:31.620Z"
+    },
+    {
+      "sourceId": "sakai-yosansho-r8",
+      "url": "https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/R8-1giannsyo.files/R8-2yosannannsetsumeisiryou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260715173942/https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/R8-1giannsyo.files/R8-2yosannannsetsumeisiryou.pdf",
+      "waybackTimestamp": "20260715173942",
+      "checkedAt": "2026-07-15T17:40:29.316Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "sakai-yosansho-r8",
+      "url": "https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/R8-1giannsyo.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260118024113/https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/R8-1giannsyo.html",
+      "waybackTimestamp": "20260118024113",
+      "checkedAt": "2026-07-15T17:40:58.352Z"
+    },
+    {
       "sourceId": "sapporo-yosansetsumeisho-r2",
       "url": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r2/documents/reiwa2nenndoyosannsetsumeisyoippankaikeitokubetukaikei.pdf",
       "kind": "file",
