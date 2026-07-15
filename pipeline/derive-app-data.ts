@@ -1467,10 +1467,12 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     { srcId: "fuefuki-yosansho-r8", muniCode: "192112", muniName: "笛吹市", prefName: "山梨県", isPref: false },
     { srcId: "fujiyoshida-yosansho-r8", muniCode: "192023", muniName: "富士吉田市", prefName: "山梨県", isPref: false },
     { srcId: "minami-alps-yosansho-r8", muniCode: "192082", muniName: "南アルプス市", prefName: "山梨県", isPref: false },
-    { srcId: "hokuto-yosansho-r8", muniCode: "192104", muniName: "北杜市", prefName: "山梨県", isPref: false },
+    { srcId: "hokuto-yosansho-r8", muniCode: "192091", muniName: "北杜市", prefName: "山梨県", isPref: false },
     { srcId: "otsuki-yosansho-r8", muniCode: "192066", muniName: "大月市", prefName: "山梨県", isPref: false },
     { srcId: "tsuru-yosansho-r8", muniCode: "192040", muniName: "都留市", prefName: "山梨県", isPref: false },
     { srcId: "koshu-yosansho-r8", muniCode: "192139", muniName: "甲州市", prefName: "山梨県", isPref: false },
+    // 県内初の「町」（2026-07-15）。町村は資料が薄い想定だったが市と同型の様式だった
+    { srcId: "fujikawaguchiko-yosansho-r8", muniCode: "194301", muniName: "富士河口湖町", prefName: "山梨県", isPref: false },
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;
@@ -1750,9 +1752,13 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(budgets.map((b) => b.muni
     if (!existsSync(p)) return [];
     return archivesLedgerSchema.parse(readJson(p)).entries;
   })();
+  // 「無断で複製・転用することはできません」型の禁止文言も permission-required に落とす
+  // （2026-07-15 追加）。それまでの語彙は「要許可|非営利」だけで、この型の明示的な禁止が
+  // unverified（＝可否未確認・要確認）に落ちていた — 実態より緩い区分で、未確認の山に紛れる。
+  // unverified が「安全側」なのは open に対してだけで、禁止文言に対しては安全側ではない。
   const licenseClassOf = (lic: string): "open" | "permission-required" | "unverified" =>
     /政府標準利用規約|公共データ利用規約/.test(lic) ? "open"
-    : /要許可|非営利/.test(lic) ? "permission-required"
+    : /要許可|非営利|無断[で]?複製|無断[で]?転用|複製・転用/.test(lic) ? "permission-required"
     : "unverified";
 
   const KNOWN = [

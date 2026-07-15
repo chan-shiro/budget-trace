@@ -5,6 +5,8 @@
 export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.city.fuefuki.yamanashi.jp/documents/1033/r8toushoyosangaiyou.pdf": "https://web.archive.org/web/20260713113932/https://www.city.fuefuki.yamanashi.jp/documents/1033/r8toushoyosangaiyou.pdf",
   "https://www.city.fuefuki.yamanashi.jp/zaise/shisejoho/zaise/yosan.html": "https://web.archive.org/web/20260202182232/https://www.city.fuefuki.yamanashi.jp/zaise/shisejoho/zaise/yosan.html",
+  "https://www.town.fujikawaguchiko.lg.jp/ka/info.php?if_id=7737": "https://web.archive.org/web/20260715062634/https://www.town.fujikawaguchiko.lg.jp/ka/info.php?if_id=7737",
+  "https://www.town.fujikawaguchiko.lg.jp/upload/file/soumu/zaisei/yosan/R8yosan%20ga.pdf": "https://web.archive.org/web/20260715062541/https://www.town.fujikawaguchiko.lg.jp/upload/file/soumu/zaisei/yosan/R8yosan%20ga.pdf",
   "https://www.city.fujiyoshida.yamanashi.jp/page/1900.html": "https://web.archive.org/web/20260216054649/https://www.city.fujiyoshida.yamanashi.jp/page/1900.html",
   "https://www.city.fujiyoshida.yamanashi.jp/uploaded/attachment/7412.pdf": "https://web.archive.org/web/20260713114033/https://www.city.fujiyoshida.yamanashi.jp/uploaded/attachment/7412.pdf",
   "https://www.city.hokuto.yamanashi.jp/docs/1664.html": "https://web.archive.org/web/20260418225034/https://www.city.hokuto.yamanashi.jp/docs/1664.html",

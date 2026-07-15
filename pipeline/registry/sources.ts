@@ -482,7 +482,8 @@ export const SOURCES: SourceEntry[] = [
     },
   },
   {
-    // 北杜市（団体コード 192104）。当初予算概要 R8（11p）。歳入 p.4「歳入合計」/ 歳出 p.5「歳出（目的別）」
+    // 北杜市（団体コード 192091 — 192104 は甲斐市。2026-07-15 に取り違えを修正）。
+    // 当初予算概要 R8（11p）。歳入 p.4「歳入合計」/ 歳出 p.5「歳出（目的別）」
     // （p.6 は性質別なので見出しで区別）。合計「歳入合計/歳出合計」。款番号半角、負号 △、款名に
     // 内部スペース（市 税）。表の上にドーナツ凡例（款番号なしなので款行にはならない）。
     id: "hokuto-yosansho-r8",
@@ -493,7 +494,7 @@ export const SOURCES: SourceEntry[] = [
     landingPage: "https://www.city.hokuto.yamanashi.jp/docs/1664.html",
     kind: "pdf",
     fiscalYear: "R8",
-    scope: "北杜市（一般会計・団体コード192104）",
+    scope: "北杜市（一般会計・団体コード192091）",
     license: "北杜市ウェブサイト掲載資料（利用条件は同サイト参照）",
     parser: "kofu-yosansho",
     parserOptions: {
@@ -503,6 +504,36 @@ export const SOURCES: SourceEntry[] = [
       expenditureHeading: "歳出（目的別）",
       revenueTotalLabel: "歳入合計",
       expenditureTotalLabel: "歳出合計",
+    },
+  },
+  {
+    // 富士河口湖町（団体コード 194301）。当初予算の概要 R8（全48p・URL に %20 空白あり）。
+    // 山梨県内で最初の「町」。町村は資料が薄いという予想に反し、市と同型の理想的な様式だった。
+    // 歳入 p.3「歳入総括表」/ 歳出 p.4「歳出総括表」（別ページ）。合計ラベルは両側とも「合計」。
+    // 款番号は半角、負号 △（空白入り `△ 3,556`）、単位=千円、前年度列は当初ベース。
+    // 歳出は款11（災害復旧費）が欠番で 10→12（予備費）へ飛ぶ → validate は連番の warning が1件
+    // 出るのが正常（error ではない）。列見出し「款名称」が単独行にあり KAN_HEADER_RE の拡張が要った。
+    // ライセンスは「無断で複製・転用することはできません」明記 → permission-required（③配信のリスクを
+    // /coverage で開示。沼津・南アルプスと同じ扱い。2026-07-15 ユーザー判断）。
+    id: "fujikawaguchiko-yosansho-r8",
+    title: "令和8年度 富士河口湖町当初予算の概要（款別歳入歳出）",
+    publisher: "富士河口湖町",
+    url: null,
+    urls: ["https://www.town.fujikawaguchiko.lg.jp/upload/file/soumu/zaisei/yosan/R8yosan%20ga.pdf"],
+    landingPage: "https://www.town.fujikawaguchiko.lg.jp/ka/info.php?if_id=7737",
+    kind: "pdf",
+    fiscalYear: "R8",
+    scope: "富士河口湖町（一般会計・団体コード194301）",
+    license:
+      "富士河口湖町公式ホームページに掲載している個々の情報（文章，写真，イラストなど）は，著作権の対象となっています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 3,
+      expenditurePage: 4,
+      revenueHeading: "歳入総括表",
+      expenditureHeading: "歳出総括表",
+      revenueTotalLabel: "合計",
+      expenditureTotalLabel: "合計",
     },
   },
   {

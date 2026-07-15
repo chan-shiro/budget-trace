@@ -19,6 +19,23 @@
       "checkedAt": "2026-07-13T11:40:28.507Z"
     },
     {
+      "sourceId": "fujikawaguchiko-yosansho-r8",
+      "url": "https://www.town.fujikawaguchiko.lg.jp/ka/info.php?if_id=7737",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260715062634/https://www.town.fujikawaguchiko.lg.jp/ka/info.php?if_id=7737",
+      "waybackTimestamp": "20260715062634",
+      "checkedAt": "2026-07-15T06:26:56.692Z"
+    },
+    {
+      "sourceId": "fujikawaguchiko-yosansho-r8",
+      "url": "https://www.town.fujikawaguchiko.lg.jp/upload/file/soumu/zaisei/yosan/R8yosan%20ga.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260715062541/https://www.town.fujikawaguchiko.lg.jp/upload/file/soumu/zaisei/yosan/R8yosan%20ga.pdf",
+      "waybackTimestamp": "20260715062541",
+      "checkedAt": "2026-07-15T06:26:14.363Z",
+      "sha256Match": true
+    },
+    {
       "sourceId": "fujiyoshida-yosansho-r8",
       "url": "https://www.city.fujiyoshida.yamanashi.jp/page/1900.html",
       "kind": "landing",

@@ -3012,8 +3012,8 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       }
     ]
   },
-  "192104": {
-    "muniCode": "192104",
+  "192091": {
+    "muniCode": "192091",
     "muniName": "北杜市",
     "prefName": "山梨県",
     "isPref": false,
@@ -3021,7 +3021,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
     "execution": [],
     "fy": "R8",
     "fyLabel": "令和8年度 当初予算",
-    "population": 76370,
+    "population": 45380,
     "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
     "totalOku": 347.86332,
     "prevTotalOku": 339.17716,
@@ -4204,6 +4204,247 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "localUrl": "/sources/koshu-yosansho-r8/R8tousyoyosan.pdf",
         "source": "www.city.koshu.yamanashi.jp",
         "thumb": "R8tousyoyosan.pdf ・ sha256 108e376a89df693a… ・ 2026-07-14 取得"
+      }
+    ]
+  },
+  "194301": {
+    "muniCode": "194301",
+    "muniName": "富士河口湖町",
+    "prefName": "山梨県",
+    "isPref": false,
+    "projects": [],
+    "execution": [],
+    "fy": "R8",
+    "fyLabel": "令和8年度 当初予算",
+    "population": 27115,
+    "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+    "totalOku": 157.7,
+    "prevTotalOku": 147.53,
+    "yoyLabel": "+6.9%",
+    "prevBasis": "当初",
+    "revenue": [
+      {
+        "name": "町税",
+        "v": 49.59744,
+        "prevV": 48.36017,
+        "yoy": 2.6
+      },
+      {
+        "name": "地方交付税",
+        "v": 30,
+        "prevV": 31,
+        "yoy": -3.2
+      },
+      {
+        "name": "繰入金",
+        "v": 21.46669,
+        "prevV": 17.86853,
+        "yoy": 20.1
+      },
+      {
+        "name": "国庫支出金",
+        "v": 13.30948,
+        "prevV": 11.33578,
+        "yoy": 17.4
+      },
+      {
+        "name": "寄附金",
+        "v": 10.47003,
+        "prevV": 10.35003,
+        "yoy": 1.2
+      },
+      {
+        "name": "県支出金",
+        "v": 7.80487,
+        "prevV": 7.29547,
+        "yoy": 7
+      },
+      {
+        "name": "地方消費税交付金",
+        "v": 7.5,
+        "prevV": 6.8,
+        "yoy": 10.3
+      },
+      {
+        "name": "町債",
+        "v": 6.367,
+        "prevV": 4.015,
+        "yoy": 58.6
+      },
+      {
+        "name": "その他",
+        "v": 11.18449,
+        "prevV": 10.505019999999996,
+        "yoy": null,
+        "children": [
+          {
+            "name": "繰越金",
+            "v": 4.1,
+            "prevV": 4,
+            "yoy": 2.5
+          },
+          {
+            "name": "諸収入",
+            "v": 1.53879,
+            "prevV": 1.69586,
+            "yoy": -9.3
+          },
+          {
+            "name": "使用料及び手数料",
+            "v": 1.051,
+            "prevV": 1.03659,
+            "yoy": 1.4
+          },
+          {
+            "name": "地方譲与税",
+            "v": 1.01224,
+            "prevV": 1.0478,
+            "yoy": -3.4
+          },
+          {
+            "name": "財産収入",
+            "v": 0.90147,
+            "prevV": 0.72852,
+            "yoy": 23.7
+          },
+          {
+            "name": "法人事業税交付金",
+            "v": 0.8,
+            "prevV": 0.7,
+            "yoy": 14.3
+          },
+          {
+            "name": "ゴルフ場利用税交付金",
+            "v": 0.45,
+            "prevV": 0.45,
+            "yoy": 0
+          },
+          {
+            "name": "株式等譲渡所得割交付金",
+            "v": 0.35,
+            "prevV": 0.11,
+            "yoy": 218.2
+          },
+          {
+            "name": "地方特例交付金",
+            "v": 0.34,
+            "prevV": 0.2,
+            "yoy": 70
+          },
+          {
+            "name": "分担金及び負担金",
+            "v": 0.26599,
+            "prevV": 0.27625,
+            "yoy": -3.7
+          },
+          {
+            "name": "配当割交付金",
+            "v": 0.25,
+            "prevV": 0.16,
+            "yoy": 56.3
+          },
+          {
+            "name": "利子割交付金",
+            "v": 0.1,
+            "prevV": 0.01,
+            "yoy": 900
+          },
+          {
+            "name": "交通安全対策特別交付金",
+            "v": 0.02,
+            "prevV": 0.02,
+            "yoy": 0
+          },
+          {
+            "name": "環境性能割交付金",
+            "v": 0.005,
+            "prevV": 0.07,
+            "yoy": -92.9
+          }
+        ]
+      }
+    ],
+    "expenditure": [
+      {
+        "name": "民生費",
+        "v": 48.31944,
+        "prevV": 41.18204,
+        "yoy": 17.3
+      },
+      {
+        "name": "総務費",
+        "v": 26.22004,
+        "prevV": 27.0206,
+        "yoy": -3
+      },
+      {
+        "name": "教育費",
+        "v": 19.30958,
+        "prevV": 18.1143,
+        "yoy": 6.6
+      },
+      {
+        "name": "公債費",
+        "v": 17.68039,
+        "prevV": 18.33456,
+        "yoy": -3.6
+      },
+      {
+        "name": "衛生費",
+        "v": 16.868,
+        "prevV": 16.05451,
+        "yoy": 5.1
+      },
+      {
+        "name": "土木費",
+        "v": 11.33118,
+        "prevV": 11.28603,
+        "yoy": 0.4
+      },
+      {
+        "name": "商工費",
+        "v": 7.87669,
+        "prevV": 5.66963,
+        "yoy": 38.9
+      },
+      {
+        "name": "消防費",
+        "v": 7.0564,
+        "prevV": 6.81792,
+        "yoy": 3.5
+      },
+      {
+        "name": "農林水産業費",
+        "v": 1.60036,
+        "prevV": 1.61354,
+        "yoy": -0.8
+      },
+      {
+        "name": "議会費",
+        "v": 1.23792,
+        "prevV": 1.23687,
+        "yoy": 0.1
+      },
+      {
+        "name": "予備費",
+        "v": 0.2,
+        "prevV": 0.2,
+        "yoy": 0
+      }
+    ],
+    "sourceTitle": "令和8年度 富士河口湖町当初予算の概要（款別歳入歳出）",
+    "sourceUrl": "https://web.archive.org/web/20260715062541/https://www.town.fujikawaguchiko.lg.jp/upload/file/soumu/zaisei/yosan/R8yosan%20ga.pdf",
+    "originUrl": "https://www.town.fujikawaguchiko.lg.jp/upload/file/soumu/zaisei/yosan/R8yosan%20ga.pdf",
+    "sourceLocalUrl": "/sources/fujikawaguchiko-yosansho-r8/R8yosan ga.pdf",
+    "pagesLabel": "款別歳入歳出",
+    "evidence": [
+      {
+        "title": "令和8年度 富士河口湖町当初予算の概要（款別歳入歳出）",
+        "type": "PDF",
+        "url": "https://web.archive.org/web/20260715062541/https://www.town.fujikawaguchiko.lg.jp/upload/file/soumu/zaisei/yosan/R8yosan%20ga.pdf",
+        "localUrl": "/sources/fujikawaguchiko-yosansho-r8/R8yosan ga.pdf",
+        "source": "www.town.fujikawaguchiko.lg.jp",
+        "thumb": "R8yosan ga.pdf ・ sha256 fe5c31f78067c6c7… ・ 2026-07-15 取得"
       }
     ]
   },
@@ -8148,4 +8389,4 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
 };
 
 /** budget 階層（予算ベースの款別ダッシュボードを持つ）自治体の団体コード */
-export const BUDGET_MUNIS: string[] = ["232076","352039","222038","272191","192112","192023","192082","192104","192066","192040","192139","190004"];
+export const BUDGET_MUNIS: string[] = ["232076","352039","222038","272191","192112","192023","192082","192091","192066","192040","192139","194301","190004"];
