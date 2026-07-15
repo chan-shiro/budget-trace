@@ -9,6 +9,8 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.town.fujikawaguchiko.lg.jp/upload/file/soumu/zaisei/yosan/R8yosan%20ga.pdf": "https://web.archive.org/web/20260715062541/https://www.town.fujikawaguchiko.lg.jp/upload/file/soumu/zaisei/yosan/R8yosan%20ga.pdf",
   "https://www.city.fujiyoshida.yamanashi.jp/page/1900.html": "https://web.archive.org/web/20260216054649/https://www.city.fujiyoshida.yamanashi.jp/page/1900.html",
   "https://www.city.fujiyoshida.yamanashi.jp/uploaded/attachment/7412.pdf": "https://web.archive.org/web/20260713114033/https://www.city.fujiyoshida.yamanashi.jp/uploaded/attachment/7412.pdf",
+  "https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/8Ntoushoyosanan_2.html": "https://web.archive.org/web/20260312010141/https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/8Ntoushoyosanan_2.html",
+  "https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/documents/04_R8_keisuusiryou.pdf": "https://web.archive.org/web/20260715084154/https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/documents/04_R8_keisuusiryou.pdf",
   "https://www.city.hokuto.yamanashi.jp/docs/1664.html": "https://web.archive.org/web/20260418225034/https://www.city.hokuto.yamanashi.jp/docs/1664.html",
   "https://www.city.hokuto.yamanashi.jp/fs/4/9/9/0/3/0/_/__8__________.pdf": "https://web.archive.org/web/20260714071224/https://www.city.hokuto.yamanashi.jp/fs/4/9/9/0/3/0/_/__8__________.pdf",
   "https://www.city.osaka-izumi.lg.jp/kakukano/soumubu/zaiseika/gyoumu/yosan.html": "https://web.archive.org/web/20260713094504/https://www.city.osaka-izumi.lg.jp/kakukano/soumubu/zaiseika/gyoumu/yosan.html",
@@ -82,10 +84,13 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.city.koshu.yamanashi.jp/docs/2021011200621/file_contents/R8tousyoyosan.pdf": "https://web.archive.org/web/20260714072236/https://www.city.koshu.yamanashi.jp/docs/2021011200621/file_contents/R8tousyoyosan.pdf",
   "https://www.city.minami-alps.yamanashi.jp/fs/1/4/1/8/3/3/_/__8____________.pdf": "https://web.archive.org/web/20260713114137/https://www.city.minami-alps.yamanashi.jp/fs/1/4/1/8/3/3/_/__8____________.pdf",
   "https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/046/332/ippannmeisaisyuusei.pdf": "https://web.archive.org/web/20260715082734/https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/046/332/ippannmeisaisyuusei.pdf",
+  "https://www.city.nagoya.jp/shisei/zaisei/1002655/1042582/1042583/1046227/1046325/index.html": "https://web.archive.org/web/20260715084010/https://www.city.nagoya.jp/shisei/zaisei/1002655/1042582/1042583/1046227/1046325/index.html",
   "https://www.city.numazu.shizuoka.jp/shisei/gyozaisei/finance/yosan2025/gaiyousho/index.htm": "https://web.archive.org/web/20260713094129/https://www.city.numazu.shizuoka.jp/shisei/gyozaisei/finance/yosan2025/gaiyousho/index.htm",
   "https://www.city.numazu.shizuoka.jp/shisei/gyozaisei/finance/yosan2025/gaiyousho/pdf/s-1.pdf": "https://web.archive.org/web/20260713094056/https://www.city.numazu.shizuoka.jp/shisei/gyozaisei/finance/yosan2025/gaiyousho/pdf/s-1.pdf",
   "https://www.city.otsuki.yamanashi.jp/shisei/jyohokokai/images/R08_yosangaiyou.pdf": "https://web.archive.org/web/20260714071536/https://www.city.otsuki.yamanashi.jp/shisei/jyohokokai/images/R08_yosangaiyou.pdf",
   "https://www.city.otsuki.yamanashi.jp/shisei/jyohokokai/yosan.html": "https://web.archive.org/web/20260411172410/https://www.city.otsuki.yamanashi.jp/shisei/jyohokokai/yosan.html",
+  "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r8/documents/02_r8_yosansetsumeisho_ippan.pdf": "https://web.archive.org/web/20260715083207/https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r8/documents/02_r8_yosansetsumeisho_ippan.pdf",
+  "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r8/reiwa8nendo_yosan.html": "https://web.archive.org/web/20260515143115/https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r8/reiwa8nendo_yosan.html",
   "https://www.soumu.go.jp/iken/zaisei/r02_shichouson.html": "https://web.archive.org/web/20260301074317/https://www.soumu.go.jp/iken/zaisei/r02_shichouson.html",
   "https://www.soumu.go.jp/main_content/000800819.xlsx": "https://web.archive.org/web/20220401110434/https://www.soumu.go.jp/main_content/000800819.xlsx",
   "https://www.soumu.go.jp/main_content/000800820.xlsx": "https://web.archive.org/web/20220401110512/https://www.soumu.go.jp/main_content/000800820.xlsx",
@@ -150,5 +155,6 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.pref.yamanashi.jp/sui-kai/163_003.html": "https://web.archive.org/web/20260313143003/https://www.pref.yamanashi.jp/sui-kai/163_003.html",
   "https://www.pref.yamanashi.jp/documents/6018/02_tousyonogaiyou_1.pdf": "https://web.archive.org/web/20260508112720/https://www.pref.yamanashi.jp/documents/6018/02_tousyonogaiyou_1.pdf",
   "https://www.pref.yamanashi.jp/documents/6018/03_tousyoyosannkibo_1.pdf": "https://web.archive.org/web/20260520040653/https://www.pref.yamanashi.jp/documents/6018/03_tousyoyosannkibo_1.pdf",
-  "https://www.pref.yamanashi.jp/zaisei/43539671890.html": "https://web.archive.org/web/20251206161316/https://www.pref.yamanashi.jp/zaisei/43539671890.html"
+  "https://www.pref.yamanashi.jp/zaisei/43539671890.html": "https://web.archive.org/web/20251206161316/https://www.pref.yamanashi.jp/zaisei/43539671890.html",
+  "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r8/r8yosan.html": "https://web.archive.org/web/20260215050834/https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r8/r8yosan.html"
 };

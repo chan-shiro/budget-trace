@@ -71,6 +71,28 @@ function validateBudgetBook(d: BudgetBookDoc): void {
         message: `${label}: 款の和 ${sum} が${label}合計 ${total} と一致しません（差 ${sum - total}）`,
       });
     }
+
+    // **前年度も同じゲートに掛ける**（2026-07-15 追加）。ここを検査していなかったため、
+    // 前年度列だけが静かに壊れる事故を長く見逃していた:
+    //   - 甲府 R2 の款6「法人事業税交付金」は前年度欄が空（皆増＝当年度に新設）で、
+    //     パーサが「比較」列を前年度として読み +190,691 ずれていた（画面に増減0と表示）
+    //   - 同 R2 の「廃款（自動車取得税交付金）」は款番号欄が数字でないため行ごと落ち −76,900
+    // 当年度 Σ は両方の誤りが相殺して一致していたので、当年度だけの検査では捕まらない。
+    // 廃止税目の行（款番号が △/▲/廃款）は款として表現できず prevAmount に載らないため、
+    // error ではなく warning にして「既知の欠落」と「新しいバグ」を人が判別できるようにする。
+    const prevTotal = side === "revenue" ? d.prevRevenueTotal : d.prevExpenditureTotal;
+    const prevs = lines.map((f) => f.prevAmount).filter((v): v is number => v != null);
+    if (prevTotal != null && prevs.length === lines.length) {
+      const prevSum = prevs.reduce((a, v) => a + v, 0);
+      if (prevSum !== prevTotal) {
+        issues.push({
+          level: "warning",
+          message:
+            `${label}: 款の前年度の和 ${prevSum} が${label}前年度合計 ${prevTotal} と一致しません（差 ${prevSum - prevTotal}）。` +
+            `廃止税目の行（款番号が △/▲/廃款）が款として拾えない既知の欠落か、前年度欄が空の款で「比較」列を誤読している可能性があります`,
+        });
+      }
+    }
   }
   // 当初予算は歳入と歳出が同額で編成される
   if (d.revenueTotal !== d.expenditureTotal) {

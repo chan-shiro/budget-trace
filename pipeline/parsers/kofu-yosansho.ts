@@ -188,12 +188,22 @@ function parseKanPage(
     if (ints.length < 2) {
       throw new Error(`${filename} ${pageLabel}: 款行の金額列を解釈できません: ${raw.trim()}`);
     }
+    // 「整数列は必ず [当年度, 前年度, 比較] の順」という前提は、**セルが空**だと崩れる。
+    // 当年度に新設された款は前年度欄が空欄のまま伸率欄に「皆増」と書かれ、ints が
+    // [当年度, 比較] の2個になるため、ints[1]（＝比較）を前年度として読んでしまう。
+    //   甲府 R2 款6: `6 法人事業税交付金  190,691          190,691  0.26  皆増`
+    //   → prevAmount=190,691（正: 0）。当年度は正しいので validate も素通りしていた。
+    // 皆増/皆減は「相手側のセルが 0」を意味する原典の記号なので、列位置を推測せずこれを使う。
+    // （札幌 R8 の `0 0.0 694,000 0.1 △694,000 皆減` のように 0 が明記されている様式とも矛盾しない）
+    const compactRaw = raw.replace(/[\s　]/g, "");
+    const zeroPrev = compactRaw.includes("皆増"); // 前年度は 0（当年度に新設）
+    const zeroAmount = compactRaw.includes("皆減"); // 当年度は 0（廃止）
     const line: BudgetLineFact = {
       side,
       kanNo,
       kanName: name,
-      amount: toAmount(ints[0]!),
-      prevAmount: toAmount(ints[1]!),
+      amount: zeroAmount ? 0 : toAmount(ints[0]!),
+      prevAmount: zeroPrev ? 0 : toAmount(ints[1]!),
       locator,
     };
     lines.push(line);

@@ -2042,8 +2042,8 @@ export const KOFU_BUDGET_YEARS: KofuBudgetYear[] = [
       {
         "name": "諸収入・その他",
         "v": 48.74678,
-        "prevV": 51.24075,
-        "yoy": -4.9,
+        "prevV": 49.33384,
+        "yoy": -1.2,
         "ref": "r02sainyuusaishutu.pdf#p1",
         "refLabel": "予算書 p.1（残り13款の合算）",
         "children": [
@@ -2082,8 +2082,8 @@ export const KOFU_BUDGET_YEARS: KofuBudgetYear[] = [
           {
             "name": "法人事業税交付金",
             "v": 1.90691,
-            "prevV": 1.90691,
-            "yoy": 0,
+            "prevV": 0,
+            "yoy": null,
             "ref": "r02sainyuusaishutu.pdf#p1",
             "refLabel": "予算書 p.1"
           },
