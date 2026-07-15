@@ -4273,7 +4273,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "name": "その他",
           "v": 321.7051199999999,
-          "prevV": 327.27459999999996,
+          "prevV": 335.88777999999996,
           "yoy": null,
           "children": [
             {
@@ -4371,6 +4371,12 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
               "v": 0.34425,
               "prevV": 0.34351,
               "yoy": 0.2
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 0,
+              "prevV": 8.61318,
+              "yoy": -100
             }
           ]
         }
@@ -19033,7 +19039,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "name": "その他",
           "v": 435.79217,
-          "prevV": 404.90860999999995,
+          "prevV": 404.9087099999999,
           "yoy": null,
           "children": [
             {
@@ -19137,6 +19143,12 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
               "v": 0.0001,
               "prevV": 0.0001,
               "yoy": 0
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 0,
+              "prevV": 0.0001,
+              "yoy": -100
             }
           ]
         }
@@ -19621,7 +19633,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "name": "その他",
           "v": 611.15754,
-          "prevV": 554.7802299999998,
+          "prevV": 554.7802399999998,
           "yoy": null,
           "children": [
             {
@@ -19725,6 +19737,12 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
               "v": 0.02,
               "prevV": 9.96,
               "yoy": -99.8
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 0,
+              "prevV": 0.00001,
+              "yoy": -100
             }
           ]
         }
@@ -21689,7 +21707,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "name": "その他",
           "v": 641.7908700000002,
-          "prevV": 661.47935,
+          "prevV": 668.41935,
           "yoy": null,
           "children": [
             {
@@ -21787,6 +21805,12 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
               "v": 0.0001,
               "prevV": 0.0001,
               "yoy": 0
+            },
+            {
+              "name": "自動車税環境性能割交付金",
+              "v": 0,
+              "prevV": 6.94,
+              "yoy": -100
             }
           ]
         }
@@ -23285,7 +23309,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "name": "その他",
           "v": 349.40338000000014,
-          "prevV": 347.6736699999999,
+          "prevV": 353.3336699999999,
           "yoy": null,
           "children": [
             {
@@ -23388,6 +23412,12 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
               "name": "繰越金",
               "v": 0.0001,
               "prevV": 0.88942,
+              "yoy": -100
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 0,
+              "prevV": 5.66,
               "yoy": -100
             }
           ]
@@ -34343,7 +34373,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       {
         "name": "その他",
         "v": 611.15754,
-        "prevV": 554.7802299999998,
+        "prevV": 554.7802399999998,
         "yoy": null,
         "children": [
           {
@@ -34447,6 +34477,12 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
             "v": 0.02,
             "prevV": 9.96,
             "yoy": -99.8
+          },
+          {
+            "name": "自動車取得税交付金",
+            "v": 0,
+            "prevV": 0.00001,
+            "yoy": -100
           }
         ]
       }
@@ -34633,7 +34669,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       {
         "name": "その他",
         "v": 641.7908700000002,
-        "prevV": 661.47935,
+        "prevV": 668.41935,
         "yoy": null,
         "children": [
           {
@@ -34731,6 +34767,12 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
             "v": 0.0001,
             "prevV": 0.0001,
             "yoy": 0
+          },
+          {
+            "name": "自動車税環境性能割交付金",
+            "v": 0,
+            "prevV": 6.94,
+            "yoy": -100
           }
         ]
       }

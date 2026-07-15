@@ -219,7 +219,7 @@ function parseKanPage(
   // 名前欄が非空の款（＝行内で名前が完結）は下段待ちにしないので、上段折返し
   // （"国有提供施設等所在" + "4 市町村助成交付金 3,000"）の既存挙動は変わらない。
   let openLine: BudgetLineFact | null = null;
-  const emit = (kanNo: number, name: string, ints: string[], raw: string, awaitTail = false) => {
+  const emit = (kanNo: number | null, name: string, ints: string[], raw: string, awaitTail = false) => {
     if (!name) return;
     if (ints.length < 2) {
       throw new Error(`${filename} ${pageLabel}: 款行の金額列を解釈できません: ${raw.trim()}`);
@@ -234,12 +234,19 @@ function parseKanPage(
     const compactRaw = raw.replace(/[\s　]/g, "");
     const zeroPrev = compactRaw.includes("皆増"); // 前年度は 0（当年度に新設）
     const zeroAmount = compactRaw.includes("皆減"); // 当年度は 0（廃止）
+    // 皆減の行では**前年度が ints のどこに来るかが様式で変わる**（2026-07-16）:
+    //   - 当年度セルに 0 が印字される様式 → ints = [0, 前年度, 比較]（札幌・北九州）
+    //   - 当年度セルが空欄／`-`／`−` の様式 → ints = [前年度, 比較]（福岡・川崎・甲府）
+    // 皆減は「当年度＝0」を意味するので、**ints[0] が 0 なら 0 が印字されている**と判る。
+    // これを見ずに常に ints[1] を前年度にすると、福岡 R8（`▲ 自動車取得税交付金 - - 1 0.0 △1 皆減`）で
+    // 前年度が **△1 → −1** になる（正: 1）。
+    const prevIdx = zeroAmount && toAmount(ints[0]!) !== 0 ? 0 : 1;
     const line: BudgetLineFact = {
       side,
       kanNo,
       kanName: name,
       amount: zeroAmount ? 0 : toAmount(ints[0]!),
-      prevAmount: zeroPrev ? 0 : toAmount(ints[1]!),
+      prevAmount: zeroPrev ? 0 : toAmount(ints[prevIdx]!),
       locator,
     };
     lines.push(line);
@@ -322,7 +329,31 @@ function parseKanPage(
     const namePart = (tokens[0] != null ? rest.slice(0, rest.indexOf(tokens[0])) : rest)
       .replace(/[\s　]/g, "");
 
-    if (lead && ints.length >= 2) {
+    // **廃止款**（当年度に廃止された税目）。原典は款番号の代わりに記号を置くか、何も置かない:
+    //   甲府 R2   `廃款 （自動車取得税交付金）        76,900  △ 76,900   皆減`
+    //   福岡 R8   `▲ 自動車取得税交付金   -   -   1  0.0  △1  皆減`
+    //   北九州 R3 `〇 自動車取得税交付金        0        10  △   10`     ← U+3007。皆減の語が無い
+    //   札幌 R8   `△ 〈款名は上下段に折返し〉  0  0.0  694,000  0.1  △694,000  皆減`
+    //   川崎 R2   `   自動車取得税交付金   −   −   861,318  0.1  △861,318  皆減`  ← 記号すら無い
+    // 款番号（正の整数）を款行の判定に使っていたため**行ごと落ち、前年度Σだけが静かに不足**していた
+    // （川崎 R2 で 861,318 千円＝8.6億）。docs §9c。大阪 §8e で kanNo を nullable にしたので、
+    // **原典が番号を振っていないことをそのまま持って**拾えるようになった。
+    //
+    // 判定は「款番号が無い」かつ「廃止の印がある」の2条件に絞る（緩めると注記行を拾う）:
+    //   印 = 行頭の廃止マーカー（廃款/△/▲/〇。〇 は U+3007 で ○ U+25CB とは別字）
+    //        または 皆減（＝当年度0。原典自身の記号）
+    const abolished =
+      !lead &&
+      ints.length >= 2 &&
+      (/^\s*(?:廃款|[△▲〇])/.test(raw) || compact.includes("皆減"));
+    if (abolished) {
+      // 款名から**廃止マーカーと空セルのダッシュ**を落とす（`▲自動車取得税交付金--` `自動車税環境△`）。
+      // 表示専用なので Σ も款名重複ゲートも守ってくれない領域＝出力を目視して確かめること。
+      // マーカーを落として名前欄が空になる様式（札幌の中央寄せ3行折返し）では、
+      // **落としてから awaitTail を判定しないと下段（`性能割交付金`）が次の款へ漏れる**。
+      const cleaned = namePart.replace(/^(?:廃款|[△▲〇])/, "").replace(/[-−–—]/g, "");
+      emit(null, pendName + cleaned, ints, raw, cleaned === "");
+    } else if (lead && ints.length >= 2) {
       // 完結した款行（従来形式）。直前の折返し断片があれば款名の先頭に足す。
       // 名前欄が空なら款名は上下の断片にある → 下段を待つ（awaitTail）
       emit(Number(lead[1]), pendName + namePart, ints, raw, namePart === "");

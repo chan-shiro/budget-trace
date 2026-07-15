@@ -3,7 +3,7 @@
   "sourceId": "kofu-yosansho-r2",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-07-15T09:38:55.738Z",
+  "parsedAt": "2026-07-15T16:51:10.482Z",
   "unit": "thousandYen",
   "fiscalYear": "R2",
   "account": "一般会計",
@@ -239,6 +239,17 @@
       "kanName": "市債",
       "amount": 6206400,
       "prevAmount": 6778200,
+      "locator": {
+        "file": "r02sainyuusaishutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "（自動車取得税交付金）",
+      "amount": 0,
+      "prevAmount": 76900,
       "locator": {
         "file": "r02sainyuusaishutu.pdf",
         "page": 1

@@ -3,7 +3,7 @@
   "sourceId": "fukuoka-yosansho-r8",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-07-15T09:38:58.818Z",
+  "parsedAt": "2026-07-15T16:51:10.585Z",
   "unit": "thousandYen",
   "fiscalYear": "R8",
   "account": "一般会計",
@@ -283,6 +283,17 @@
       "kanName": "市債",
       "amount": 53102333,
       "prevAmount": 54517333,
+      "locator": {
+        "file": "04_R8_keisuusiryou.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "自動車取得税交付金",
+      "amount": 0,
+      "prevAmount": 1,
       "locator": {
         "file": "04_R8_keisuusiryou.pdf",
         "page": 4

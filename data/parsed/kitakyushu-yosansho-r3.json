@@ -3,7 +3,7 @@
   "sourceId": "kitakyushu-yosansho-r3",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-07-15T16:36:59.030Z",
+  "parsedAt": "2026-07-15T16:51:10.972Z",
   "unit": "thousandYen",
   "fiscalYear": "R3",
   "account": "一般会計",
@@ -283,6 +283,17 @@
       "kanName": "市債",
       "amount": 71195100,
       "prevAmount": 56594900,
+      "locator": {
+        "file": "000917954.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "自動車取得税交付金",
+      "amount": 0,
+      "prevAmount": 10,
       "locator": {
         "file": "000917954.pdf",
         "page": 7
