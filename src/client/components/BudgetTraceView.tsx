@@ -106,155 +106,190 @@ export default function BudgetTraceView({ v }: { v: any }) {
       {v.isCoverage && (
         <div data-screen-label="データ整備状況" data-mq-pad="" style={S("min-height:100vh; width:min(1160px,100%); margin:0 auto; padding:28px 28px 64px; animation:fadeUp .35s ease both;")}>
           <HoverBox as="button" onClick={v.goTop} style={S("border:none; background:none; color:#5C6B77; font-size:13px; cursor:pointer; padding:0; margin-bottom:14px; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("color:#1798D0;")}>← トップへ戻る</HoverBox>
-          <div style={S("margin-bottom:20px;")}>
+          <div style={S("margin-bottom:18px;")}>
             <h1 style={S("margin:0 0 6px; font-size:24px; font-weight:700;")}>データ整備状況</h1>
-            <p style={S("margin:0; color:#5C6B77; font-size:13.5px; line-height:1.8; max-width:76ch;")}>どの自治体をどこまで収録できたか（＝残りのToDo）、その原本をどう保管しているか、再配布にライセンス上の懸念がある資料はどれか、を公開しています。この表はレジストリと魚拓台帳から自動生成しており、常に実際の収録内容と一致します。</p>
+            <p style={S("margin:0; color:#5C6B77; font-size:13.5px; line-height:1.8; max-width:78ch;")}>全国{v.cov.ready ? v.cov.summary.muniCount.toLocaleString() : "1,741"}市町村を都道府県別に網羅した一覧です。手付かずの自治体も載せています（空欄＝これからのToDo）。レジストリと魚拓台帳から自動生成しているため、常に実際の収録内容と一致します。</p>
           </div>
 
-          {/* サマリ */}
-          <div style={S("display:grid; grid-template-columns:repeat(auto-fit, minmax(150px,1fr)); gap:10px; margin-bottom:22px;")}>
-            {[
-              { k: "予算資料ベース（詳細）", v: `${v.cov.summary.fullCount}自治体`, s: "主な事業・執行・評価・議会・成果まで" },
-              { k: "予算資料ベース（款別）", v: `${v.cov.summary.budgetCount}自治体`, s: "当初予算の款別＋前年当初比" },
-              { k: "決算ベース（全国）", v: `${v.cov.summary.decisionCount.toLocaleString()}市町村`, s: `${v.cov.summary.prefCount}都道府県・総務省決算` },
-              { k: "一次資料", v: `${v.cov.summary.sourceCount}件`, s: `原本${v.cov.summary.fileCount}ファイル` },
-              { k: "魚拓（Wayback）", v: `${v.cov.summary.archivedCount}/${v.cov.summary.sourceCount}`, s: `うちsha256照合済 ${v.cov.summary.shaVerifiedCount}` },
-            ].map((c, i) => (
-              <div key={i} style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:12px; padding:13px 15px;")}>
-                <div style={S("font-size:11px; color:#5C6B77; margin-bottom:3px;")}>{c.k}</div>
-                <div style={S("font-size:18px; font-weight:700; font-family:'IBM Plex Mono',monospace; color:#14181C;")}>{c.v}</div>
-                <div style={S("font-size:10.5px; color:#8494A0; margin-top:2px; line-height:1.5;")}>{c.s}</div>
-              </div>
-            ))}
-          </div>
-
-          {/* ライセンス上の注意（最重要・先頭に置く） */}
-          <section style={S("background:#FFF8F2; border:1px solid #EFD4BE; border-radius:16px; padding:20px 22px; margin-bottom:24px;")}>
-            <h2 style={S("margin:0 0 8px; font-size:15px; font-weight:700; color:#8A4B1F;")}>⚠ エビデンス・コピーのライセンス上の懸念</h2>
-            <p style={S("margin:0 0 14px; font-size:12.5px; color:#5C6B77; line-height:1.85; max-width:78ch;")}>
-              本サイトは資料の消失・差し替えに備え、原本のコピーを自サーバーから配信しています（エビデンス3層の③）。総務省資料は政府標準利用規約で再配布できますが、<strong style={S("color:#14181C;")}>自治体サイトの資料は多くが「利用条件は同サイト参照」で再配布可否が未確認</strong>です。とくに次の資料は<strong style={S("color:#8A4B1F;")}>二次利用に発行元の許諾が必要と明記</strong>されており、現在のコピー配信は許諾を得ていません。発行元からの申し出があれば速やかに③の配信を停止し、①発行元リンクと②Wayback のみに切り替えます。
-            </p>
-            <div style={S("display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px;")}>
-              {[
-                { n: v.cov.summary.licensePermission, l: "要許可", c: "#8A4B1F", b: "#EFD4BE" },
-                { n: v.cov.summary.licenseUnverified, l: "未確認（同サイト参照）", c: "#5C6B77", b: "#DFE7EC" },
-                { n: v.cov.summary.licenseOpen, l: "政府標準利用規約（再配布可）", c: "#0F76A3", b: "#B9E0F2" },
-              ].map((x, i) => (
-                <span key={i} style={S(`font-size:11.5px; border:1px solid ${x.b}; color:${x.c}; border-radius:999px; padding:3px 12px; background:#FFFFFF;`)}>{x.l} <strong style={S("font-family:'IBM Plex Mono',monospace;")}>{x.n}</strong>件</span>
-              ))}
+          {!v.cov.ready ? (
+            <div style={S("padding:60px 0; text-align:center; color:#8494A0; font-size:13px;")}>
+              {v.cov.error ? `読み込みに失敗しました: ${v.cov.error}` : "読み込み中…"}
             </div>
-            {v.cov.permissionSources.length > 0 && (
-              <div style={S("background:#FFFFFF; border:1px solid #EFD4BE; border-radius:10px; padding:12px 14px;")}>
-                {v.cov.permissionSources.map((s: any, i: number) => (
-                  <div key={i} style={S(`display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; padding:6px 0; ${i > 0 ? "border-top:1px solid #F6E7DA;" : ""}`)}>
-                    <span style={S("font-size:12.5px; font-weight:600; color:#14181C;")}>{s.publisher}｜{s.title}</span>
-                    <span style={S("font-size:11px; color:#8A4B1F;")}>{s.license}</span>
+          ) : (
+            <>
+              {/* サマリ */}
+              <div style={S("display:grid; grid-template-columns:repeat(auto-fit, minmax(148px,1fr)); gap:10px; margin-bottom:18px;")}>
+                {[
+                  { k: "詳細まで収録", v: `${v.cov.summary.fullCount}団体`, s: "予算→事業→成果→議会" },
+                  { k: "予算（款別）収録", v: `${v.cov.summary.budgetCount}団体`, s: "当初予算＋前年当初比" },
+                  { k: "決算で閲覧可", v: `${v.cov.summary.muniCount.toLocaleString()}市町村`, s: `${v.cov.summary.prefCount}都道府県・${v.cov.summary.kessanRange}` },
+                  { k: "一次資料", v: `${v.cov.summary.sourceCount}件`, s: `原本${v.cov.summary.fileCount}ファイル・魚拓${v.cov.summary.archivedCount}` },
+                ].map((c: any, i: number) => (
+                  <div key={i} style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:12px; padding:12px 14px;")}>
+                    <div style={S("font-size:11px; color:#5C6B77; margin-bottom:3px;")}>{c.k}</div>
+                    <div style={S("font-size:18px; font-weight:700; font-family:'IBM Plex Mono',monospace; color:#14181C;")}>{c.v}</div>
+                    <div style={S("font-size:10.5px; color:#8494A0; margin-top:2px; line-height:1.5;")}>{c.s}</div>
                   </div>
                 ))}
               </div>
-            )}
-          </section>
 
-          {/* 収録自治体のマトリクス */}
-          <section style={S("margin-bottom:24px;")}>
-            <h2 style={S("margin:0 0 4px; font-size:16px; font-weight:700;")}>収録自治体ごとの整備状況</h2>
-            <p style={S("margin:0 0 12px; font-size:12px; color:#5C6B77;")}>予算資料ベースで収録した{v.cov.entities.length}団体。空欄が残りのToDoです（決算は全国{v.cov.summary.decisionCount.toLocaleString()}市町村で閲覧可）。</p>
-            <div style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; overflow-x:auto;")}>
-              <table style={S("width:100%; border-collapse:collapse; font-size:12px; min-width:840px;")}>
-                <thead>
-                  <tr>
-                    <th style={S("text-align:left; padding:10px 12px; border-bottom:1px solid #DFE7EC; font-weight:700; white-space:nowrap; position:sticky; left:0; background:#FFFFFF;")}>自治体</th>
-                    {v.cov.datasetCols.map((c: string, i: number) => (
-                      <th key={i} style={S("text-align:left; padding:10px 8px; border-bottom:1px solid #DFE7EC; font-weight:600; color:#5C6B77; font-size:11px; white-space:nowrap;")}>{c}</th>
-                    ))}
-                    <th style={S("text-align:right; padding:10px 12px; border-bottom:1px solid #DFE7EC; font-weight:600; color:#5C6B77; font-size:11px; white-space:nowrap;")}>資料</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {v.cov.entities.map((e: any, i: number) => (
-                    <tr key={i}>
-                      <td style={S("padding:9px 12px; border-bottom:1px solid #ECF2F6; white-space:nowrap; position:sticky; left:0; background:#FFFFFF;")}>
-                        <span style={S("font-weight:600; color:#14181C;")}>{e.name}</span>
-                        <span style={S("font-size:10px; color:#8494A0; margin-left:6px;")}>{e.pref}</span>
-                        <span style={S(`font-size:9.5px; font-weight:700; margin-left:6px; border-radius:5px; padding:1px 5px; color:${e.tier === "full" ? "#0F76A3" : "#5C6B77"}; border:1px solid ${e.tier === "full" ? "#B9E0F2" : "#DFE7EC"};`)}>{e.tier === "full" ? "詳細" : "款別"}</span>
-                      </td>
-                      {e.datasets.map((d: any, j: number) => (
-                        <td key={j} title={d.detail} style={S("padding:9px 8px; border-bottom:1px solid #ECF2F6; vertical-align:top;")}>
-                          {d.ok ? (
-                            <>
-                              <span style={S("color:#0F76A3; font-weight:700;")}>✓</span>
-                              <span style={S("display:block; font-size:10px; color:#5C6B77; margin-top:1px; line-height:1.4; max-width:150px;")}>{d.detail}</span>
-                            </>
-                          ) : (
-                            <>
-                              <span style={S("color:#C6D2DA;")}>—</span>
-                              <span style={S("display:block; font-size:10px; color:#B0BCC6; margin-top:1px; line-height:1.4; max-width:150px;")}>{d.detail}</span>
-                            </>
-                          )}
-                        </td>
-                      ))}
-                      <td style={S("padding:9px 12px; border-bottom:1px solid #ECF2F6; text-align:right; font-family:'IBM Plex Mono',monospace; color:#14181C;")}>{e.sources.length}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </section>
-
-          {/* エビデンス保管情報 */}
-          <section style={S("margin-bottom:24px;")}>
-            <h2 style={S("margin:0 0 4px; font-size:16px; font-weight:700;")}>エビデンスの保管情報</h2>
-            <p style={S("margin:0 0 12px; font-size:12px; color:#5C6B77; line-height:1.7; max-width:78ch;")}>各資料は①発行元 ②Wayback の魚拓 ③自サーバー配信のコピー、の3層で保全しています。取得時の sha256 を記録し、魚拓と一致するかを照合しています（照合済 {v.cov.summary.shaVerifiedCount}件。原本自体が Wayback/WARP 由来の資料はそれ自身が②）。</p>
-            {[...v.cov.entities.map((e: any) => ({ label: `${e.name}（${e.pref}）`, sources: e.sources })), { label: "全国共通（総務省）", sources: v.cov.national }, ...(v.cov.unclassified.length ? [{ label: "未分類（要メンテ）", sources: v.cov.unclassified }] : [])]
-              .filter((g: any) => g.sources.length > 0)
-              .map((g: any, gi: number) => (
-                <div key={gi} style={S("margin-bottom:10px; background:#FFFFFF; border:1px solid #DFE7EC; border-radius:12px; padding:12px 14px;")}>
-                  <div style={S("font-size:12.5px; font-weight:700; color:#14181C; margin-bottom:8px;")}>{g.label} <span style={S("font-weight:400; color:#8494A0;")}>{g.sources.length}件</span></div>
-                  {g.sources.map((s: any, si: number) => (
-                    <div key={si} style={S(`padding:7px 0; ${si > 0 ? "border-top:1px solid #ECF2F6;" : ""}`)}>
-                      <div style={S("display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; align-items:baseline;")}>
-                        <span style={S("font-size:12px; color:#14181C;")}>{s.title}</span>
-                        <span style={S("display:flex; gap:5px; flex-wrap:wrap; align-items:center;")}>
-                          <span style={S(`font-size:9.5px; font-weight:700; border-radius:5px; padding:1px 6px; white-space:nowrap; color:${s.licenseClass === "permission-required" ? "#8A4B1F" : s.licenseClass === "open" ? "#0F76A3" : "#5C6B77"}; border:1px solid ${s.licenseClass === "permission-required" ? "#EFD4BE" : s.licenseClass === "open" ? "#B9E0F2" : "#DFE7EC"};`)}>
-                            {s.licenseClass === "permission-required" ? "要許可" : s.licenseClass === "open" ? "再配布可" : "条件未確認"}
-                          </span>
-                          {s.archived && <span style={S("font-size:9.5px; color:#5C6B77; border:1px solid #DFE7EC; border-radius:5px; padding:1px 6px; white-space:nowrap;")}>{s.archiveOrigin ? "原本が魚拓" : "魚拓済"}{s.shaVerified ? "・照合✓" : ""}</span>}
-                        </span>
-                      </div>
-                      {s.files.map((f: any, fi: number) => (
-                        <div key={fi} style={S("display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-top:3px; font-size:10.5px; color:#8494A0; font-family:'IBM Plex Mono',monospace;")}>
-                          <a href={f.localUrl} onClick={(ev) => { ev.preventDefault(); v.cov.openSource(f.localUrl, s.title, `${f.filename} ・ ${f.fetchedAt} 取得`, s.originUrl, s.archiveUrl)(); }} style={S("color:#0F76A3; text-decoration:none; cursor:pointer;")}>{f.filename}</a>
-                          <span>sha256 {f.sha256}</span>
-                          <span>{(f.bytes / 1024).toFixed(0)}KB</span>
-                          <span>{f.fetchedAt} 取得</span>
-                        </div>
-                      ))}
-                    </div>
+              {/* ライセンス上の注意 */}
+              <section style={S("background:#FFF8F2; border:1px solid #EFD4BE; border-radius:14px; padding:16px 18px; margin-bottom:18px;")}>
+                <h2 style={S("margin:0 0 6px; font-size:14px; font-weight:700; color:#8A4B1F;")}>⚠ エビデンス・コピーのライセンス上の懸念</h2>
+                <p style={S("margin:0 0 10px; font-size:12px; color:#5C6B77; line-height:1.85; max-width:80ch;")}>
+                  資料の消失・差し替えに備え、原本のコピーを自サーバーから配信しています（エビデンス3層の③）。総務省資料は政府標準利用規約で再配布できますが、<strong style={S("color:#14181C;")}>自治体資料は多くが「利用条件は同サイト参照」で再配布可否が未確認</strong>です。次の資料は<strong style={S("color:#8A4B1F;")}>二次利用に許諾が必要と明記</strong>されており、現在のコピー配信は許諾を得ていません。発行元からの申し出があれば速やかに③を停止し、①発行元と②Wayback のみに切り替えます。
+                </p>
+                <div style={S("display:flex; gap:8px; flex-wrap:wrap; margin-bottom:10px;")}>
+                  {[
+                    { n: v.cov.summary.licensePermission, l: "要許可", c: "#8A4B1F", b: "#EFD4BE" },
+                    { n: v.cov.summary.licenseUnverified, l: "未確認", c: "#5C6B77", b: "#DFE7EC" },
+                    { n: v.cov.summary.licenseOpen, l: "政府標準利用規約（再配布可）", c: "#0F76A3", b: "#B9E0F2" },
+                  ].map((x: any, i: number) => (
+                    <span key={i} style={S(`font-size:11.5px; border:1px solid ${x.b}; color:${x.c}; border-radius:999px; padding:3px 12px; background:#FFFFFF;`)}>{x.l} <strong style={S("font-family:'IBM Plex Mono',monospace;")}>{x.n}</strong>件</span>
                   ))}
                 </div>
-              ))}
-          </section>
+                {v.cov.permissionSources.map((s2: any, i: number) => (
+                  <div key={i} style={S("display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; background:#FFFFFF; border:1px solid #EFD4BE; border-radius:8px; padding:7px 11px; margin-top:5px;")}>
+                    <span style={S("font-size:12px; font-weight:600; color:#14181C;")}>{s2.publisher}｜{s2.title}</span>
+                    <span style={S("font-size:10.5px; color:#8A4B1F;")}>{s2.license}</span>
+                  </div>
+                ))}
+              </section>
 
-          {/* 都道府県別 */}
-          <section style={S("margin-bottom:10px;")}>
-            <h2 style={S("margin:0 0 4px; font-size:16px; font-weight:700;")}>都道府県別</h2>
-            <p style={S("margin:0 0 12px; font-size:12px; color:#5C6B77;")}>全{v.cov.summary.prefCount}都道府県の全市区町村を総務省決算ベースで収録済み。「深掘り」は予算資料ベースで収録した団体です。</p>
-            <div style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; padding:6px 4px;")}>
-              <div style={S("display:grid; grid-template-columns:repeat(auto-fill, minmax(230px,1fr)); gap:2px;")}>
-                {v.cov.prefs.map((p: any, i: number) => (
-                  <div key={i} style={S("display:flex; justify-content:space-between; align-items:baseline; gap:8px; padding:6px 10px; border-radius:8px; font-size:12px;")}>
-                    <span style={S("color:#14181C;")}>{p.name}</span>
-                    <span style={S("display:flex; gap:8px; align-items:baseline;")}>
-                      {p.deepNames.length > 0 && (
-                        <span style={S("font-size:10px; color:#0F76A3; text-align:right;")}>深掘り {p.deepNames.join("・")}</span>
-                      )}
-                      <span style={S("font-family:'IBM Plex Mono',monospace; color:#5C6B77; font-size:11px; white-space:nowrap;")}>{p.muniCount}市町村</span>
-                    </span>
+              {/* ==== 網羅一覧（1つの表） ==== */}
+              <div style={S("display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:10px;")}>
+                <div style={S("display:flex; align-items:center; gap:8px; flex-wrap:wrap;")}>
+                  <input
+                    value={v.cov.q}
+                    onChange={(e) => v.cov.setQ(e.target.value)}
+                    placeholder="自治体名・都道府県・団体コードで検索"
+                    aria-label="自治体を検索"
+                    style={S("border:1px solid #C6D2DA; border-radius:999px; padding:7px 15px; font-size:13px; width:min(320px, 70vw); font-family:'IBM Plex Sans JP',sans-serif; color:#14181C; background:#FFFFFF;")}
+                  />
+                  {v.cov.q && <span style={S("font-size:12px; color:#5C6B77;")}><strong style={S("font-family:'IBM Plex Mono',monospace; color:#14181C;")}>{v.cov.matched.toLocaleString()}</strong>件</span>}
+                </div>
+                <div style={S("display:flex; gap:6px;")}>
+                  <HoverBox as="button" onClick={v.cov.expandAll} style={S("border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; border-radius:999px; padding:5px 12px; font-size:11.5px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("border-color:#1798D0; color:#1798D0;")}>すべて展開</HoverBox>
+                  <HoverBox as="button" onClick={v.cov.collapseAll} style={S("border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; border-radius:999px; padding:5px 12px; font-size:11.5px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("border-color:#1798D0; color:#1798D0;")}>すべて閉じる</HoverBox>
+                </div>
+              </div>
+
+              {/* 列の凡例 */}
+              <div style={S("display:flex; gap:10px; flex-wrap:wrap; font-size:10.5px; color:#8494A0; margin-bottom:8px;")}>
+                {v.cov.datasets.map((d: any, i: number) => (
+                  <span key={i}><strong style={S("color:#5C6B77;")}>{d.label}</strong> = {d.full}</span>
+                ))}
+              </div>
+
+              <div style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; overflow:hidden;")}>
+                {v.cov.groups.length === 0 && (
+                  <div style={S("padding:40px; text-align:center; color:#8494A0; font-size:13px;")}>該当する自治体がありません</div>
+                )}
+                {v.cov.groups.map((g: any, gi: number) => (
+                  <div key={gi} style={S(`${gi > 0 ? "border-top:1px solid #ECF2F6;" : ""}`)}>
+                    {/* 都道府県の行（クリックで開閉） */}
+                    <HoverBox
+                      as="button"
+                      onClick={g.toggle}
+                      style={S("width:100%; display:flex; align-items:center; justify-content:space-between; gap:12px; padding:11px 14px; background:#FBFDFE; border:none; cursor:pointer; text-align:left; font-family:'IBM Plex Sans JP',sans-serif;")}
+                      hoverStyle={S("background:#F1F6F9;")}
+                    >
+                      <span style={S("display:flex; align-items:center; gap:8px;")}>
+                        <span style={S(`color:#8494A0; font-size:10px; transform:rotate(${g.open ? "90deg" : "0deg"}); display:inline-block; transition:transform .15s;`)}>▶</span>
+                        <span style={S("font-size:13.5px; font-weight:700; color:#14181C;")}>{g.name}</span>
+                        <span style={S("font-size:11px; color:#8494A0; font-family:'IBM Plex Mono',monospace;")}>{g.count}</span>
+                      </span>
+                      {g.deep > 0 && <span style={S("font-size:10.5px; color:#0F76A3; border:1px solid #B9E0F2; border-radius:999px; padding:1px 9px; white-space:nowrap;")}>予算資料 {g.deep}団体</span>}
+                    </HoverBox>
+
+                    {/* 市町村の行（○×） */}
+                    {g.open && (
+                      <div style={S("overflow-x:auto;")}>
+                        <table style={S("width:100%; border-collapse:collapse; font-size:12px; min-width:560px;")}>
+                          <thead>
+                            <tr>
+                              <th style={S("text-align:left; padding:6px 14px; border-bottom:1px solid #ECF2F6; font-size:10.5px; font-weight:600; color:#8494A0; white-space:nowrap;")}>自治体</th>
+                              {v.cov.datasets.map((d: any, i: number) => (
+                                <th key={i} title={d.full} style={S("padding:6px 4px; border-bottom:1px solid #ECF2F6; font-size:10.5px; font-weight:600; color:#8494A0; width:44px; text-align:center;")}>{d.label}</th>
+                              ))}
+                              <th style={S("padding:6px 14px; border-bottom:1px solid #ECF2F6; font-size:10.5px; font-weight:600; color:#8494A0; text-align:right; white-space:nowrap;")}>資料</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {g.rows.map((m: any, mi: number) => (
+                              <React.Fragment key={mi}>
+                                <tr>
+                                  <td style={S("padding:7px 14px; border-bottom:1px solid #F4F8FA; white-space:nowrap;")}>
+                                    <span style={S(`color:#14181C; ${m.tier ? "font-weight:600;" : ""}`)}>{m.name}</span>
+                                    <span style={S("font-size:9.5px; color:#C6D2DA; margin-left:6px; font-family:'IBM Plex Mono',monospace;")}>{m.code}</span>
+                                    {m.tier && <span style={S(`font-size:9px; font-weight:700; margin-left:6px; border-radius:4px; padding:0 5px; color:${m.tier === "full" ? "#0F76A3" : "#5C6B77"}; border:1px solid ${m.tier === "full" ? "#B9E0F2" : "#DFE7EC"};`)}>{m.tier === "full" ? "詳細" : "款別"}</span>}
+                                  </td>
+                                  {m.marks.map((mk: any, ki: number) => (
+                                    <td key={ki} title={mk.ok ? mk.detail || "収録済み" : "未収録"} style={S("padding:7px 4px; border-bottom:1px solid #F4F8FA; text-align:center;")}>
+                                      {mk.ok
+                                        ? <span style={S("color:#1798D0; font-weight:700; font-size:13px;")}>○</span>
+                                        : <span style={S("color:#DFE7EC; font-size:12px;")}>×</span>}
+                                    </td>
+                                  ))}
+                                  <td style={S("padding:7px 14px; border-bottom:1px solid #F4F8FA; text-align:right; white-space:nowrap;")}>
+                                    {m.sourceCount > 0 ? (
+                                      <HoverBox as="button" onClick={m.toggleSources} style={S("border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; border-radius:999px; padding:1px 9px; font-size:10.5px; cursor:pointer; font-family:'IBM Plex Mono',monospace;")} hoverStyle={S("border-color:#1798D0; color:#1798D0;")}>{m.sourceCount}{m.sourcesOpen ? " ▲" : " ▼"}</HoverBox>
+                                    ) : (
+                                      <span style={S("color:#DFE7EC; font-size:11px;")}>—</span>
+                                    )}
+                                  </td>
+                                </tr>
+                                {/* 資料（エビデンスの保管情報）— この自治体の行の中に畳む */}
+                                {m.sourcesOpen && m.sources.length > 0 && (
+                                  <tr>
+                                    <td colSpan={v.cov.datasets.length + 2} style={S("padding:0 14px 10px; background:#FBFDFE; border-bottom:1px solid #F4F8FA;")}>
+                                      {m.sources.map((src: any, si: number) => (
+                                        <div key={si} style={S(`padding:7px 0; ${si > 0 ? "border-top:1px solid #ECF2F6;" : ""}`)}>
+                                          <div style={S("display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; align-items:baseline;")}>
+                                            <span style={S("font-size:11.5px; color:#14181C;")}>{src.title}</span>
+                                            <span style={S("display:flex; gap:5px; flex-wrap:wrap;")}>
+                                              <span style={S(`font-size:9.5px; font-weight:700; border-radius:5px; padding:1px 6px; white-space:nowrap; color:${src.licenseClass === "permission-required" ? "#8A4B1F" : src.licenseClass === "open" ? "#0F76A3" : "#5C6B77"}; border:1px solid ${src.licenseClass === "permission-required" ? "#EFD4BE" : src.licenseClass === "open" ? "#B9E0F2" : "#DFE7EC"};`)}>
+                                                {src.licenseClass === "permission-required" ? "要許可" : src.licenseClass === "open" ? "再配布可" : "条件未確認"}
+                                              </span>
+                                              {src.archived && <span style={S("font-size:9.5px; color:#5C6B77; border:1px solid #DFE7EC; border-radius:5px; padding:1px 6px; white-space:nowrap;")}>{src.archiveOrigin ? "原本が魚拓" : "魚拓済"}{src.shaVerified ? "・照合✓" : ""}</span>}
+                                            </span>
+                                          </div>
+                                          {src.files.map((f: any, fi: number) => (
+                                            <div key={fi} style={S("display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-top:2px; font-size:10px; color:#8494A0; font-family:'IBM Plex Mono',monospace;")}>
+                                              <a href={f.localUrl} onClick={(ev) => { ev.preventDefault(); f.open(); }} style={S("color:#0F76A3; text-decoration:none; cursor:pointer;")}>{f.filename}</a>
+                                              <span>sha256 {f.sha256}</span>
+                                              <span>{(f.bytes / 1024).toFixed(0)}KB</span>
+                                              <span>{f.fetchedAt} 取得</span>
+                                            </div>
+                                          ))}
+                                        </div>
+                                      ))}
+                                    </td>
+                                  </tr>
+                                )}
+                              </React.Fragment>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>
-            </div>
-          </section>
+
+              {/* 全国共通の資料（総務省）— 自治体に紐づかないのでここだけ別枠 */}
+              <div style={S("margin-top:14px; background:#FFFFFF; border:1px solid #DFE7EC; border-radius:12px; padding:12px 14px;")}>
+                <div style={S("font-size:12.5px; font-weight:700; color:#14181C; margin-bottom:4px;")}>全国共通の資料（総務省）<span style={S("font-weight:400; color:#8494A0;")}> {v.cov.national.length}件</span></div>
+                <p style={S("margin:0; font-size:11px; color:#8494A0; line-height:1.7;")}>上の表の「決算」列（全{v.cov.summary.muniCount.toLocaleString()}市町村・{v.cov.summary.kessanRange}）はこれらの資料が根拠です。政府標準利用規約準拠で再配布可。</p>
+              </div>
+              {v.cov.unclassified.length > 0 && (
+                <div style={S("margin-top:10px; background:#FFF8F2; border:1px solid #EFD4BE; border-radius:12px; padding:12px 14px;")}>
+                  <div style={S("font-size:12.5px; font-weight:700; color:#8A4B1F;")}>未分類の資料 {v.cov.unclassified.length}件（要メンテ）</div>
+                  <p style={S("margin:4px 0 0; font-size:11px; color:#5C6B77;")}>{v.cov.unclassified.map((u: any) => u.sourceId).join(" / ")}</p>
+                </div>
+              )}
+            </>
+          )}
         </div>
       )}
 
