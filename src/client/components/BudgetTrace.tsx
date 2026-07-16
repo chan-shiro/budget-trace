@@ -907,6 +907,26 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     };
   })();
 
+  // 予算資料ベースの機能のうち、この団体で収録済みのもの。budget 階層の案内パネルと
+  // リクエストチップは**この実態から組み立てる**。固定文言だと、横浜・川崎の事務事業評価
+  // （572件・2,313件を表示している真下で「事務事業評価は未収録」）や山梨県の主な事業
+  // （施策別74事業を表示しながら「主な事業一覧は未収録」）のように、**収録済みの機能を
+  // 「未収録・リクエスト」と案内する**矛盾が起きる（2026-07-16 修正）。
+  // 「〇民1人あたり」の〇を自治体種別で出し分ける。「市民」決め打ちだと山梨県（県民）・
+  // 千代田区など特別区（区民）・富士河口湖町（町民）で誤る（2026-07-16 修正）
+  const capitaWho = (() => {
+    const last = data.name.slice(-1);
+    return ({ 都: "都民", 道: "道民", 府: "府民", 県: "県民", 区: "区民", 町: "町民", 村: "村民" } as Record<string, string>)[last] ?? "市民";
+  })();
+
+  const hasBudgetProjectsData = isBudget && (muniBudget!.projects?.length ?? 0) > 0;
+  const budgetMissing = [
+    ...(hasBudgetProjectsData ? [] : [isPref ? "主な事業（施策別）" : "主な事業一覧"]),
+    ...(hasExec ? [] : ["決算・執行状況"]),
+    // 事務事業評価は市町村の制度なので、都道府県では未収録リストに載せない
+    ...(reportMuni || isPref ? [] : ["事務事業評価"]),
+  ];
+
   const v: any = {
     isTop: screen === "top", isMuni: screen === "muni", isApp,
     isDash: screen === "dash" || gatedToDash, isDrill: screen === "drill",
@@ -922,15 +942,31 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     isFull,
     // 都道府県エンティティ（県全体）か
     isPref,
-    // budget 案内パネルの本文（都道府県は市町村向け文言を出さない）
+    // budget 案内パネルの本文（都道府県は市町村向け文言を出さない）。
+    // 確認できるもの・未収録のものは**この団体の収録実態（budgetMissing）から組み立てる**
     budgetPanelTitle: isPref
       ? `${data.name}（都道府県会計）の当初予算を収録しています`
       : "この自治体は当初予算（款別）を収録しています",
-    budgetPanelBody: isPref
-      ? hasExec
-        ? `款別の歳入・歳出・前年当初比較・1人あたり（県内市町村人口合計）に加え、${execYear.fyLabel}の款別決算・執行率も確認できます。主な事業一覧は未収録です。`
-        : "款別の歳入・歳出・前年当初比較・1人あたり（県内市町村人口合計）を確認できます。決算・執行状況・主な事業は未収録です。"
-      : "款別の歳入・歳出・前年当初比較・1人あたり・類似自治体比較・決算の経年（総務省）を確認できます。主な事業一覧・予算執行状況・事務事業評価は市によって未収録です。",
+    budgetPanelBody: (() => {
+      const can = isPref
+        ? [
+            "款別の歳入・歳出",
+            "前年当初比較",
+            "1人あたり（県内市町村人口合計）",
+            ...(hasExec ? [`${execYear.fyLabel}の款別決算・執行率`] : []),
+            ...(hasBudgetProjectsData ? ["主な事業（施策別）"] : []),
+          ]
+        : [
+            "款別の歳入・歳出",
+            "前年当初比較",
+            "1人あたり",
+            "類似自治体比較",
+            "決算の経年（総務省）",
+            ...(hasBudgetProjectsData ? ["主な事業一覧"] : []),
+            ...(reportMuni ? ["事務事業評価（事業報告）"] : []),
+          ];
+      return `${can.join("・")}を確認できます。${budgetMissing.length > 0 ? `${budgetMissing.join("・")}は未収録です。` : ""}`;
+    })(),
     // decision 自治体のシャード取得待ち（ダッシュボードでスケルトンを出す）
     loading: decisionPending,
     // decision 自治体の未収録機能（主な事業・執行・評価・補正）のその場リクエスト
@@ -973,32 +1009,17 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
             { name: "債務負担行為（翌年度以降）", v: decisionView!.bond.debtBurdenOku != null ? fmtOku(decisionView!.bond.debtBurdenOku) : "—", strong: false },
           ]
         : [],
-    // budget 階層の未収録機能のリクエスト。都道府県は決算、市は主な事業/執行/評価
-    budgetRequestUrl: isBudget
-      ? isPref
-        ? hasExec
-          ? D.buildRequestUrl(
-              `${data.name}（都道府県）の主な事業の収録`,
-              `リクエスト: ${data.name}（都道府県会計）は当初予算（款別）＋決算・執行率を収録済み。主な事業（施策別）も見たい`,
-              data.name,
-            )
-          : D.buildRequestUrl(
-              `${data.name}（都道府県）の決算・執行状況の収録`,
-              `リクエスト: ${data.name}（都道府県会計）は当初予算（款別）を収録済み。決算・執行率も見たい`,
-              data.name,
-            )
-        : D.buildRequestUrl(
-            `${data.name}の主な事業・執行状況・事務事業評価の収録`,
-            `自治体リクエスト: ${prefName} ${data.name} は当初予算（款別）を収録済み。主な事業一覧・予算執行状況・事務事業評価も見たい`,
+    // budget 階層の未収録機能のリクエスト。**未収録のもの（budgetMissing）だけ**を頼む
+    // （全部収録済みならチップ自体を出さない — View 側で budgetRequestUrl の有無を見る）
+    budgetRequestUrl:
+      isBudget && budgetMissing.length > 0
+        ? D.buildRequestUrl(
+            `${data.name}${isPref ? "（都道府県）" : ""}の${budgetMissing.join("・")}の収録`,
+            `自治体リクエスト: ${isPref ? "" : `${prefName} `}${data.name} は当初予算（款別）ほかを収録済み。${budgetMissing.join("・")}も見たい`,
             data.name,
           )
-      : "",
-    // リクエストチップのラベル（都道府県は決算収録済みなら主な事業、未収録なら決算）
-    budgetRequestLabel: isPref
-      ? hasExec
-        ? "主な事業の収録をリクエスト ↗"
-        : "決算・執行状況の収録をリクエスト ↗"
-      : "この自治体の事業・執行・評価の収録をリクエスト ↗",
+        : "",
+    budgetRequestLabel: budgetMissing.length > 0 ? `${budgetMissing.join("・")}の収録をリクエスト ↗` : "",
     execTabs, execRows,
     // 年度切替（full=甲府は複数年度。budget=山梨県は単一年度なので1ピル）
     execYearTabs: execSource.map((y) => ({
@@ -1514,7 +1535,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     gKan: mkGloss("款"),
     perCapitaLine: isPer
       ? `総額 ${fmtOku(totalNow)}`
-      : `市民1人あたり ${((totalNow * 1e8) / data.pop / 1e4).toFixed(1)}万円（${isDecision ? "住民基本台帳人口" : isBudget ? muniBudget!.populationLabel : budget.populationLabel} ${data.pop.toLocaleString()}人）`,
+      : `${capitaWho}1人あたり ${((totalNow * 1e8) / data.pop / 1e4).toFixed(1)}万円（${isDecision ? "住民基本台帳人口" : isBudget ? muniBudget!.populationLabel : budget.populationLabel} ${data.pop.toLocaleString()}人）`,
     unitTabs,
     unitLabel: isPer ? "1人あたり" : "総額",
     isSimilar: screen === "similar", isSources,
@@ -1661,10 +1682,18 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
       const pages = Math.max(1, Math.ceil(rows.length / PER));
       const page = Math.min(Math.max(1, s.repPage ?? 1), pages);
       const start = (page - 1) * PER;
-      // 表示年度の決算（見込み含む）を代表値にする。無ければ予算
+      // 評価年度の決算（見込み含む）を代表値にする。無ければ同年度の予算。
+      // それも無い資料（横浜の R7 評価はコストが R5・R6 決算のみ）は**最新年度の決算**へ
+      // フォールバックする — 評価年度決め打ちだと横浜の全行で金額が出ない（2026-07-16 修正）
       const pick = (r: (typeof repData.reports)[number]) => {
         const fy = repData.fy;
-        return r.cost.find((c) => c.fy === fy && c.kind === "決算") ?? r.cost.find((c) => c.fy === fy && c.kind === "予算") ?? null;
+        return (
+          r.cost.find((c) => c.fy === fy && c.kind === "決算") ??
+          r.cost.find((c) => c.fy === fy && c.kind === "予算") ??
+          [...r.cost].reverse().find((c) => c.kind === "決算") ??
+          r.cost[r.cost.length - 1] ??
+          null
+        );
       };
       return {
         ready: true as const,
@@ -1720,11 +1749,13 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
             achievementLabel: r.achievement != null ? repData.achievementLabels[String(r.achievement)] ?? "" : "",
             direction: r.direction,
             directionLabel: r.direction ? repData.directionLabels[r.direction] ?? "" : "",
-            // 総コスト（人件費込み）。単位トグルに追従させる（金額なので per capita 化してよい）
-            totalCost: c?.totalCost ?? null,
-            jigyohi: c?.jigyohi ?? null,
-            jinkenhi: c?.jinkenhi ?? null,
-            costLabel: c ? `${repData.fyLabel}${c.kind}${c.est ? "（見込）" : ""}` : "",
+            // 表示金額。単位トグルに追従させる（金額なので per capita 化してよい）。
+            // 総コスト（人件費込み）を持たない資料（横浜は事業費のみ）では事業費へフォールバック
+            // する — totalCost 決め打ちだと横浜の全2,313行で金額列が空になる（2026-07-16 修正）
+            amount: c?.totalCost ?? c?.jigyohi ?? null,
+            amountKind: c?.totalCost != null ? "総コスト" : "事業費",
+            // 年度はフォールバック先の行自身のもので表示する（評価年度と一致するとは限らない）
+            costLabel: c ? `${c.fy === repData.fy ? repData.fyLabel : `令和${c.fy.slice(1)}年度`}${c.kind}${c.est ? "（見込）" : ""}` : "",
             // href にも入れる（onClick だけだと中クリック・キーボードでリンクとして扱えない）。
             // 要許可の資料は発行元のディープリンクへ振り替わる
             ref: evHref(r.ref),
