@@ -1783,6 +1783,36 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r2"] as const).map((fy) => ({
       srcId: `chiyoda-yosansho-${fy}`, muniCode: "131016", muniName: "千代田区", prefName: "東京都", isPref: false,
     })),
+    // 大田区は**特別区で最も素直**（7年度が同一 parserOptions・款体系も7年間不変）。registry のコメント参照。
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `ota-yosansho-${fy}`, muniCode: "131113", muniName: "大田区", prefName: "東京都", isPref: false,
+    })),
+    // 中央区は**款別専用の6ページ PDF**（歳入歳出が同一ページ＝samePage）。**見出しを強くすると
+    // 款名が静かに壊れる**という逆説がある（registry のコメント参照）。H31〜H29 も現存するが
+    // 年度ラベルが「令和30年度」になるため未収録。
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `chuo-sokatsuhyo-${fy}`, muniCode: "131024", muniName: "中央区", prefName: "東京都", isPref: false,
+    })),
+    // 目黒区はプレス発表資料の資料編。**R2 の廃止税目行に kanNoless が必須**（無いと前年度 Σ が
+    // 137,800千円 静かに欠ける＝validate は当年度しか見ない）。registry のコメント参照。
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `meguro-yosanan-${fy}`, muniCode: "131105", muniName: "目黒区", prefName: "東京都", isPref: false,
+    })),
+    // 江東区は歳出見出しが特会と区別できず**誤ページでも Σ差0 で静かに通る**（守るのは validate の
+    // 歳入合計=歳出合計 のみ）。歳入は強い見出しの代償で款1 が汚染されるため HeaderExtra が要る。
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `koto-yosangaiyou-${fy}`, muniCode: "131083", muniName: "江東区", prefName: "東京都", isPref: false,
+    })),
+    // 渋谷区は**R4 以前が収録不可**（PDF が無く HTML は前年度列を持たない）。特別区債の款が全年度で
+    // 存在しない起債ゼロ型で、特別区交付金 1.6% は23区最低クラス。
+    ...(["r8", "r7", "r6", "r5"] as const).map((fy) => ({
+      srcId: `shibuya-yosansho-${fy}`, muniCode: "131130", muniName: "渋谷区", prefName: "東京都", isPref: false,
+    })),
+    // 葛飾区は**職員費の款を持つ**（全款から人件費を抜く名古屋・札幌型）ので他自治体と款別を
+    // 直接比較すると民生費等が過小に見える。R8 は第6の折返し型で kanNoless が要る。
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `katsushika-yosangaiyou-${fy}`, muniCode: "131229", muniName: "葛飾区", prefName: "東京都", isPref: false,
+    })),
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;

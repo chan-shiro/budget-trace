@@ -574,6 +574,201 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/003/978/r08nend/20260216_shuyou_setumei.pdf",
     "license": "相模原市のホームページに掲載されている文書や画像等の各ファイル、及びその内容に関する権利は、原則として相模原市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、許可なく無断で複製や転用することはできません。"
   },
+  "/sources/ota-yosansho-r8/02r8_kihontekikangae.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/r08yosan/r08-yosan.files/02r8_kihontekikangae.pdf",
+    "license": "大田区ホームページ上の文書や画像などの各ファイル、及びその内容に関する諸権利は、原則として大田区に帰属しています。また、一部の画像などの著作権は、原著作権者が所有しています。／大田区ホームページ上の文書や画像などについては、「私的使用のための複製」や「引用」など著作権法上認められた場合や大田区がオープンデータとして公開しているものを除き、無断での使用・転載、二次利用はできません。／大田区がオープンデータとして公開しているもの以外の文書などについて転用等を希望される場合は、各ページのお問い合わせ先の所属に、ご相談ください。"
+  },
+  "/sources/ota-yosansho-r7/02r7_kihontekikangae.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/r07yosan/r07-yosan.files/02r7_kihontekikangae.pdf",
+    "license": "大田区ホームページ上の文書や画像などの各ファイル、及びその内容に関する諸権利は、原則として大田区に帰属しています。また、一部の画像などの著作権は、原著作権者が所有しています。／大田区ホームページ上の文書や画像などについては、「私的使用のための複製」や「引用」など著作権法上認められた場合や大田区がオープンデータとして公開しているものを除き、無断での使用・転載、二次利用はできません。／大田区がオープンデータとして公開しているもの以外の文書などについて転用等を希望される場合は、各ページのお問い合わせ先の所属に、ご相談ください。"
+  },
+  "/sources/ota-yosansho-r6/02r6_kihontekikangae.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/r06yosan/r06-yosan.files/02r6_kihontekikangae.pdf",
+    "license": "大田区ホームページ上の文書や画像などの各ファイル、及びその内容に関する諸権利は、原則として大田区に帰属しています。また、一部の画像などの著作権は、原著作権者が所有しています。／大田区ホームページ上の文書や画像などについては、「私的使用のための複製」や「引用」など著作権法上認められた場合や大田区がオープンデータとして公開しているものを除き、無断での使用・転載、二次利用はできません。／大田区がオープンデータとして公開しているもの以外の文書などについて転用等を希望される場合は、各ページのお問い合わせ先の所属に、ご相談ください。"
+  },
+  "/sources/ota-yosansho-r5/02r5_kihontekikangae.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/r05yosan/r05-yosan.files/02r5_kihontekikangae.pdf",
+    "license": "大田区ホームページ上の文書や画像などの各ファイル、及びその内容に関する諸権利は、原則として大田区に帰属しています。また、一部の画像などの著作権は、原著作権者が所有しています。／大田区ホームページ上の文書や画像などについては、「私的使用のための複製」や「引用」など著作権法上認められた場合や大田区がオープンデータとして公開しているものを除き、無断での使用・転載、二次利用はできません。／大田区がオープンデータとして公開しているもの以外の文書などについて転用等を希望される場合は、各ページのお問い合わせ先の所属に、ご相談ください。"
+  },
+  "/sources/ota-yosansho-r4/02kihontekikanngae.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/r04yosan/r04-yosann.files/02kihontekikanngae.pdf",
+    "license": "大田区ホームページ上の文書や画像などの各ファイル、及びその内容に関する諸権利は、原則として大田区に帰属しています。また、一部の画像などの著作権は、原著作権者が所有しています。／大田区ホームページ上の文書や画像などについては、「私的使用のための複製」や「引用」など著作権法上認められた場合や大田区がオープンデータとして公開しているものを除き、無断での使用・転載、二次利用はできません。／大田区がオープンデータとして公開しているもの以外の文書などについて転用等を希望される場合は、各ページのお問い合わせ先の所属に、ご相談ください。"
+  },
+  "/sources/ota-yosansho-r3/03.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/r03yosan/r03-yosann.files/03.pdf",
+    "license": "大田区ホームページ上の文書や画像などの各ファイル、及びその内容に関する諸権利は、原則として大田区に帰属しています。また、一部の画像などの著作権は、原著作権者が所有しています。／大田区ホームページ上の文書や画像などについては、「私的使用のための複製」や「引用」など著作権法上認められた場合や大田区がオープンデータとして公開しているものを除き、無断での使用・転載、二次利用はできません。／大田区がオープンデータとして公開しているもの以外の文書などについて転用等を希望される場合は、各ページのお問い合わせ先の所属に、ご相談ください。"
+  },
+  "/sources/ota-yosansho-r2/3.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/r02yosan/r02-yosanann.files/3.pdf",
+    "license": "大田区ホームページ上の文書や画像などの各ファイル、及びその内容に関する諸権利は、原則として大田区に帰属しています。また、一部の画像などの著作権は、原著作権者が所有しています。／大田区ホームページ上の文書や画像などについては、「私的使用のための複製」や「引用」など著作権法上認められた場合や大田区がオープンデータとして公開しているものを除き、無断での使用・転載、二次利用はできません。／大田区がオープンデータとして公開しているもの以外の文書などについて転用等を希望される場合は、各ページのお問い合わせ先の所属に、ご相談ください。"
+  },
+  "/sources/chuo-sokatsuhyo-r8/r8_sokatsuhyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.chuo.lg.jp/documents/17921/r8_sokatsuhyo.pdf",
+    "license": "区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は中央区に帰属します。また、一部の画像などの著作権は、原著作者が所有しています。著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/chuo-sokatsuhyo-r7/r7_sokatsuhyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.chuo.lg.jp/documents/16917/r7_sokatsuhyo.pdf",
+    "license": "区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は中央区に帰属します。また、一部の画像などの著作権は、原著作者が所有しています。著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/chuo-sokatsuhyo-r6/r6_sokatsuhyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.chuo.lg.jp/documents/15419/r6_sokatsuhyo.pdf",
+    "license": "区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は中央区に帰属します。また、一部の画像などの著作権は、原著作者が所有しています。著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/chuo-sokatsuhyo-r5/r5soukatuhyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.chuo.lg.jp/documents/13525/r5soukatuhyou.pdf",
+    "license": "区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は中央区に帰属します。また、一部の画像などの著作権は、原著作者が所有しています。著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/chuo-sokatsuhyo-r4/r4soukatuhyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.chuo.lg.jp/documents/2801/r4soukatuhyou.pdf",
+    "license": "区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は中央区に帰属します。また、一部の画像などの著作権は、原著作者が所有しています。著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/chuo-sokatsuhyo-r3/r3tousyo_soukatuhyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.chuo.lg.jp/documents/2791/r3tousyo_soukatuhyou.pdf",
+    "license": "区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は中央区に帰属します。また、一部の画像などの著作権は、原著作者が所有しています。著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/chuo-sokatsuhyo-r2/r2tousyo_soukatuhyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.chuo.lg.jp/documents/2786/r2tousyo_soukatuhyou.pdf",
+    "license": "区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は中央区に帰属します。また、一部の画像などの著作権は、原著作者が所有しています。著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/meguro-yosanan-r8/r08_yosan_siryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.meguro.tokyo.jp/documents/19579/r08_yosan_siryou.pdf",
+    "license": "目黒区公式ウェブサイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として目黒区に帰属します。なお、一部の画像等の著作権は、原著作者が所有しています。／目黒区公式ウェブサイト上の文書・画像等の無断使用・転載を禁止します。"
+  },
+  "/sources/meguro-yosanan-r7/r07_yosan_siryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.meguro.tokyo.jp/documents/17203/r07_yosan_siryou.pdf",
+    "license": "目黒区公式ウェブサイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として目黒区に帰属します。なお、一部の画像等の著作権は、原著作者が所有しています。／目黒区公式ウェブサイト上の文書・画像等の無断使用・転載を禁止します。"
+  },
+  "/sources/meguro-yosanan-r6/r06_yosan_siryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.meguro.tokyo.jp/documents/14537/r06_yosan_siryou.pdf",
+    "license": "目黒区公式ウェブサイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として目黒区に帰属します。なお、一部の画像等の著作権は、原著作者が所有しています。／目黒区公式ウェブサイト上の文書・画像等の無断使用・転載を禁止します。"
+  },
+  "/sources/meguro-yosanan-r5/r05_yosan_siryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.meguro.tokyo.jp/documents/2254/r05_yosan_siryou.pdf",
+    "license": "目黒区公式ウェブサイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として目黒区に帰属します。なお、一部の画像等の著作権は、原著作者が所有しています。／目黒区公式ウェブサイト上の文書・画像等の無断使用・転載を禁止します。"
+  },
+  "/sources/meguro-yosanan-r4/r04_yosan_siryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.meguro.tokyo.jp/documents/2259/r04_yosan_siryou.pdf",
+    "license": "目黒区公式ウェブサイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として目黒区に帰属します。なお、一部の画像等の著作権は、原著作者が所有しています。／目黒区公式ウェブサイト上の文書・画像等の無断使用・転載を禁止します。"
+  },
+  "/sources/meguro-yosanan-r3/r03_yosan_siryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.meguro.tokyo.jp/documents/2258/r03_yosan_siryou.pdf",
+    "license": "目黒区公式ウェブサイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として目黒区に帰属します。なお、一部の画像等の著作権は、原著作者が所有しています。／目黒区公式ウェブサイト上の文書・画像等の無断使用・転載を禁止します。"
+  },
+  "/sources/meguro-yosanan-r2/r02yosan_s01.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.meguro.tokyo.jp/documents/2257/r02yosan_s01.pdf",
+    "license": "目黒区公式ウェブサイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として目黒区に帰属します。なお、一部の画像等の著作権は、原著作者が所有しています。／目黒区公式ウェブサイト上の文書・画像等の無断使用・転載を禁止します。"
+  },
+  "/sources/koto-yosangaiyou-r8/8tousyoyosanangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koto.lg.jp/011102/documents/8tousyoyosanangaiyou.pdf",
+    "license": "江東区公式サイトから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は江東区に帰属します。また一部の画像などの著作権は原著作権者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの情報の利用などをご希望の場合は、コンテンツの所管係までお問い合わせください。"
+  },
+  "/sources/koto-yosangaiyou-r7/7tousyoyosanangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koto.lg.jp/011102/documents/7tousyoyosanangaiyou.pdf",
+    "license": "江東区公式サイトから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は江東区に帰属します。また一部の画像などの著作権は原著作権者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの情報の利用などをご希望の場合は、コンテンツの所管係までお問い合わせください。"
+  },
+  "/sources/koto-yosangaiyou-r6/6tousyoyosanangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koto.lg.jp/011102/documents/6tousyoyosanangaiyou.pdf",
+    "license": "江東区公式サイトから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は江東区に帰属します。また一部の画像などの著作権は原著作権者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの情報の利用などをご希望の場合は、コンテンツの所管係までお問い合わせください。"
+  },
+  "/sources/koto-yosangaiyou-r5/5tousyoyosanangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koto.lg.jp/011102/documents/5tousyoyosanangaiyou.pdf",
+    "license": "江東区公式サイトから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は江東区に帰属します。また一部の画像などの著作権は原著作権者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの情報の利用などをご希望の場合は、コンテンツの所管係までお問い合わせください。"
+  },
+  "/sources/koto-yosangaiyou-r4/4tousyoyosanangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koto.lg.jp/011102/documents/4tousyoyosanangaiyou.pdf",
+    "license": "江東区公式サイトから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は江東区に帰属します。また一部の画像などの著作権は原著作権者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの情報の利用などをご希望の場合は、コンテンツの所管係までお問い合わせください。"
+  },
+  "/sources/koto-yosangaiyou-r3/3yosanangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koto.lg.jp/011102/documents/3yosanangaiyou.pdf",
+    "license": "江東区公式サイトから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は江東区に帰属します。また一部の画像などの著作権は原著作権者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの情報の利用などをご希望の場合は、コンテンツの所管係までお問い合わせください。"
+  },
+  "/sources/koto-yosangaiyou-r2/2yosanangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koto.lg.jp/011102/documents/2yosanangaiyou.pdf",
+    "license": "江東区公式サイトから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は江東区に帰属します。また一部の画像などの著作権は原著作権者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの情報の利用などをご希望の場合は、コンテンツの所管係までお問い合わせください。"
+  },
+  "/sources/shibuya-yosansho-r8/yosan08_yosansho08.pdf": {
+    "mode": "origin",
+    "href": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/c85b01cbe55648f3b5ca9e2a24f1acdc/yosan08_yosansho08.pdf",
+    "license": "本サイト上の情報・画像・図表などは、特に明示がない限り、その著作権を渋谷区が保有します。引用・転載・複製を希望される場合は、広報コミュニケーション課まで、ご連絡ください。転載・複製はこれを禁じます。"
+  },
+  "/sources/shibuya-yosansho-r7/yosan07_yosansho07.pdf": {
+    "mode": "origin",
+    "href": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/adb12cdac1e243b08bf17586deb3b4e6/yosan07_yosansho07.pdf",
+    "license": "本サイト上の情報・画像・図表などは、特に明示がない限り、その著作権を渋谷区が保有します。引用・転載・複製を希望される場合は、広報コミュニケーション課まで、ご連絡ください。転載・複製はこれを禁じます。"
+  },
+  "/sources/shibuya-yosansho-r6/yosan06_yosansho06.pdf": {
+    "mode": "origin",
+    "href": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/015bac93f649407c8b1b77e74679a5d0/yosan06_yosansho06.pdf",
+    "license": "本サイト上の情報・画像・図表などは、特に明示がない限り、その著作権を渋谷区が保有します。引用・転載・複製を希望される場合は、広報コミュニケーション課まで、ご連絡ください。転載・複製はこれを禁じます。"
+  },
+  "/sources/shibuya-yosansho-r5/yosan05_yosansho05.pdf": {
+    "mode": "origin",
+    "href": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/e0b774174e384a5da3a056344280fea2/yosan05_yosansho05.pdf",
+    "license": "本サイト上の情報・画像・図表などは、特に明示がない限り、その著作権を渋谷区が保有します。引用・転載・複製を希望される場合は、広報コミュニケーション課まで、ご連絡ください。転載・複製はこれを禁じます。"
+  },
+  "/sources/katsushika-yosangaiyou-r8/8yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/041/034/8yosangaiyou.pdf",
+    "license": "葛飾区公式サイト上の文書や画像等のコンテンツ、及び内容に関する諸権利は葛飾区に帰属します。一部の画像等の著作権は原著作者が所有しています。本サイト上の文書・画像等の各ファイルは、「私的使用のための複製」や「引用」など著作権法上認められている場合を除き、無断で転載・改変することを禁じます。"
+  },
+  "/sources/katsushika-yosangaiyou-r7/r7yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/037/487/r7yosangaiyou.pdf",
+    "license": "葛飾区公式サイト上の文書や画像等のコンテンツ、及び内容に関する諸権利は葛飾区に帰属します。一部の画像等の著作権は原著作者が所有しています。本サイト上の文書・画像等の各ファイルは、「私的使用のための複製」や「引用」など著作権法上認められている場合を除き、無断で転載・改変することを禁じます。"
+  },
+  "/sources/katsushika-yosangaiyou-r6/r6yosangaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/034/308/r6yosangaiyo.pdf",
+    "license": "葛飾区公式サイト上の文書や画像等のコンテンツ、及び内容に関する諸権利は葛飾区に帰属します。一部の画像等の著作権は原著作者が所有しています。本サイト上の文書・画像等の各ファイルは、「私的使用のための複製」や「引用」など著作権法上認められている場合を除き、無断で転載・改変することを禁じます。"
+  },
+  "/sources/katsushika-yosangaiyou-r5/r5_katsu_yosan2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/030/965/r5_katsu_yosan2.pdf",
+    "license": "葛飾区公式サイト上の文書や画像等のコンテンツ、及び内容に関する諸権利は葛飾区に帰属します。一部の画像等の著作権は原著作者が所有しています。本サイト上の文書・画像等の各ファイルは、「私的使用のための複製」や「引用」など著作権法上認められている場合を除き、無断で転載・改変することを禁じます。"
+  },
+  "/sources/katsushika-yosangaiyou-r4/r4yosanngaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/027/976/r4yosanngaiyou.pdf",
+    "license": "葛飾区公式サイト上の文書や画像等のコンテンツ、及び内容に関する諸権利は葛飾区に帰属します。一部の画像等の著作権は原著作者が所有しています。本サイト上の文書・画像等の各ファイルは、「私的使用のための複製」や「引用」など著作権法上認められている場合を除き、無断で転載・改変することを禁じます。"
+  },
+  "/sources/katsushika-yosangaiyou-r3/reiwa3yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/025/473/reiwa3yosangaiyou.pdf",
+    "license": "葛飾区公式サイト上の文書や画像等のコンテンツ、及び内容に関する諸権利は葛飾区に帰属します。一部の画像等の著作権は原著作者が所有しています。本サイト上の文書・画像等の各ファイルは、「私的使用のための複製」や「引用」など著作権法上認められている場合を除き、無断で転載・改変することを禁じます。"
+  },
+  "/sources/katsushika-yosangaiyou-r2/yosanngaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/022/573/yosanngaiyou.pdf",
+    "license": "葛飾区公式サイト上の文書や画像等のコンテンツ、及び内容に関する諸権利は葛飾区に帰属します。一部の画像等の著作権は原著作者が所有しています。本サイト上の文書・画像等の各ファイルは、「私的使用のための複製」や「引用」など著作権法上認められている場合を除き、無断で転載・改変することを禁じます。"
+  },
   "/sources/okayama-yosangaiyou-r8/R8tousyogaiyou.pdf": {
     "mode": "origin",
     "href": "https://www.city.okayama.jp/shisei/cmsfiles/contents/0000075/75851/R8tousyogaiyou.pdf",
