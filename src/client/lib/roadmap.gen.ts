@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 36,
+  "budgetCount": 40,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 167,
-  "fileCount": 292,
-  "archivedCount": 150,
+  "sourceCount": 192,
+  "fileCount": 317,
+  "archivedCount": 161,
   "licenseOpen": 19,
-  "licensePermission": 90,
+  "licensePermission": 115,
   "licenseUnverified": 58,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -33,8 +33,26 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "江東区",
+      "code": "131083",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "目黒区",
+      "code": "131105",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "大田区",
       "code": "131113",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "葛飾区",
+      "code": "131229",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },
@@ -103,6 +121,12 @@ export const ROADMAP_PROGRESS = {
       "code": "271403",
       "years": 5,
       "range": "R2〜R8（5年度）"
+    },
+    {
+      "name": "渋谷区",
+      "code": "131130",
+      "years": 4,
+      "range": "R5〜R8（4年度）"
     },
     {
       "name": "静岡市",

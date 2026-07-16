@@ -78,7 +78,11 @@ const MUNI_SLUGS: Record<string, string> = {
   // 東京特別区（2026-07-16）
   "131016": "chiyoda",
   "131024": "chuo",
+  "131083": "koto",
+  "131105": "meguro",
   "131113": "ota",
+  "131130": "shibuya",
+  "131229": "katsushika",
   "190004": "ken",
 };
 
