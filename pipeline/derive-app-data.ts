@@ -1823,6 +1823,12 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `adachi-yosansho-${fy}`, muniCode: "131211", muniName: "足立区", prefName: "東京都", isPref: false,
     })),
+    // 中野区。当初予算の概要。**表の直前の散文段落が款1 を汚す**ので HeaderExtra "[、。]" で
+    // 句読点を含む行を落としている（R2 で実測・Σ差0 で素通りする型。registry のコメント参照）。
+    // R2〜R8 の当初チェーンは6リンク×33款で全件一致（列順は標準・足立型の反転なし）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `nakano-yosangaiyou-${fy}`, muniCode: "131148", muniName: "中野区", prefName: "東京都", isPref: false,
+    })),
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;
