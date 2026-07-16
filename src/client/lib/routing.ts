@@ -100,6 +100,16 @@ function muniSegment(code: string | undefined, muni: string | null): string | nu
   return muni; // コード未解決時は名前（decision 冷リンクの一時状態。通常は起きない）
 }
 
+/**
+ * 県名 + 自治体名 → 団体コード（収録済み＝full/budget のみ）。無ければ undefined。
+ * **県内でしか引かない**ので、コードを渡す原則（同名の府中市が東京と広島にある等）は崩れない。
+ * 地図の政令市はここで解決する — 地図データには区の図形しか無く市のコードが取れないため。
+ */
+export function codeByPrefAndName(prefName: string | null, muniName: string | null): string | undefined {
+  if (!prefName || !muniName) return undefined;
+  return KNOWN_MUNIS.find((k) => k.pref === prefName && k.name === muniName)?.code;
+}
+
 /** pref 名 + muni セグメント → 収録済み自治体（full/budget）。無ければ null */
 function knownByMuniSegment(prefName: string | null, seg: string): KnownMuni | undefined {
   if (!prefName) return undefined;

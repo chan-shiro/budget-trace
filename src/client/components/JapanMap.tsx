@@ -95,11 +95,19 @@ function buildMunis(geo: any, prefName: string) {
     }
     return null;
   };
-  const mainAreaOf = (code: any) => {
+  /**
+   * 「区」は2種類あり、**選べる単位かどうかが逆**なので区別する。
+   * - **特別区（東京23区）は市町村そのもの**。団体コード（131016 等）を持ち決算も収録済み
+   *   → 従来どおりズームして区を個別に選ばせる（kind:"group"）。振興局も中身は市町村なので同じ。
+   * - **政令市の行政区（横浜市中区 等）は市町村ではない**。団体コードも決算も無く、予算は
+   *   市の単位でしか存在しない。地図データにも「横浜市」の図形は無く**区の図形しか入っていない**
+   *   → 行政区を選ばせると行き止まりになるので、区をクリックしたら**市**を選ばせる（kind:"city"）。
+   */
+  const mainAreaOf = (code: any): { name: string; kind: "city" | "group" } | null => {
     const mm = meta[code];
-    if (prefName === "東京都" && /区$/.test(mm.name)) return "特別区（23区）";
-    if (mm.city && /市$/.test(mm.city) && /区$/.test(mm.name)) return mm.city;
-    if (prefName === "北海道" && mm.sub) return mm.sub.replace(/総合振興局$|振興局$/, "");
+    if (prefName === "東京都" && /区$/.test(mm.name)) return { name: "特別区（23区）", kind: "group" };
+    if (mm.city && /市$/.test(mm.city) && /区$/.test(mm.name)) return { name: mm.city, kind: "city" };
+    if (prefName === "北海道" && mm.sub) return { name: mm.sub.replace(/総合振興局$|振興局$/, ""), kind: "group" };
     return null;
   };
   const islandRecs: any[] = [], mainRecs: any[] = [];
@@ -169,18 +177,36 @@ function buildMunis(geo: any, prefName: string) {
 
   const munis = Object.values(byCode).sort((a: any, b: any) => String(a.code).localeCompare(String(b.code)));
   const areasByName: Record<string, any> = {};
-  munis.forEach((m: any, i: number) => {
-    m.area = mainAreaOf(m.code);
-    m.idx = i;
+  munis.forEach((m: any) => {
+    const a = mainAreaOf(m.code);
+    m.area = a ? a.name : null;
+    m.areaKind = a ? a.kind : null;
+    // **選べる単位**（＝クリックしたら何のダッシュボードへ行くか）。政令市の行政区は市を指す。
+    // 政令市の団体コードは**地図データに入っていない**（区の図形しか無い）ので名前だけ渡し、
+    // 呼び出し側に県内で引き当てさせる（県を跨がないので同名衝突は起きない）。
+    const isWard = a?.kind === "city";
+    m.selName = isWard ? a!.name : m.name;
+    m.selCode = isWard ? undefined : m.code;
+    m.selKey = isWard ? "city:" + a!.name : m.code;
     m.fs = Math.max(9.5, Math.min(15, Math.sqrt(m.maxA) / 8));
     if (m.area) {
-      const a = (areasByName[m.area] = areasByName[m.area] || { name: m.area, x0: 1e9, y0: 1e9, x1: -1e9, y1: -1e9, isInset: insetAreaNames.indexOf(m.area) >= 0 });
-      a.x0 = Math.min(a.x0, m.bx0); a.y0 = Math.min(a.y0, m.by0);
-      a.x1 = Math.max(a.x1, m.bx1); a.y1 = Math.max(a.y1, m.by1);
+      const g = (areasByName[m.area] = areasByName[m.area] || { name: m.area, kind: a!.kind, x0: 1e9, y0: 1e9, x1: -1e9, y1: -1e9, isInset: insetAreaNames.indexOf(m.area) >= 0 });
+      g.x0 = Math.min(g.x0, m.bx0); g.y0 = Math.min(g.y0, m.by0);
+      g.x1 = Math.max(g.x1, m.bx1); g.y1 = Math.max(g.y1, m.by1);
     }
   });
-  const areas = Object.values(areasByName).map((a: any) => ({ name: a.name, x: a.x0, y: a.y0, w: a.x1 - a.x0, h: a.y1 - a.y0, isInset: a.isInset }));
+  // 塗り分けは**選べる単位ごと**。政令市の区を別色にすると別々の市に見えてしまう。
+  const selKeys: string[] = [];
+  munis.forEach((m: any) => { if (selKeys.indexOf(m.selKey) < 0) selKeys.push(m.selKey); });
+  munis.forEach((m: any) => { m.idx = selKeys.indexOf(m.selKey); });
+  const areas = Object.values(areasByName).map((a: any) => ({ name: a.name, kind: a.kind, x: a.x0, y: a.y0, w: a.x1 - a.x0, h: a.y1 - a.y0, isInset: a.isInset }));
   return { munis, vw: W, vh: H, inset, areas };
+}
+
+/** 図形の一覧 → **選べる単位**の一覧（政令市は18区が「横浜市」1件に畳まれる） */
+function selUnitsOf(munis: any[]): any[] {
+  const seen: Record<string, boolean> = {};
+  return munis.filter((m) => (seen[m.selKey] ? false : (seen[m.selKey] = true)));
 }
 
 export interface JapanMapProps {
@@ -190,6 +216,9 @@ export interface JapanMapProps {
    * code5 は GeoJSON の**5桁**団体コード（`19201`）。名前で引き当てさせると同名の自治体
    * （府中市が東京都と広島県にある等）で誤りうるので、コードを渡して呼び出し側で
    * 6桁へ変換させる（D.muniCode6）。
+   * **例外は政令市**（横浜市など）。地図データには行政区の図形しか無く市の図形＝コードが
+   * 無いため code5 は undefined で、muniName（市名）だけが渡る。呼び出し側で prefName と
+   * 組にして**県内で**引き当てること（県を跨がないので上の同名衝突は起きない）。
    */
   onSelectMuni?: (prefName: string, muniName: string | null, code5?: string) => void;
   colorMode?: string;
@@ -412,8 +441,10 @@ export default function JapanMap({ onSelect, onSelectMuni, colorMode, maxWidth }
     // 市区町村は「その県の形状を一度でも読み込んだ」ぶんだけ検索できる（全国分を先読みしない）
     Object.entries(muniCache.current).forEach(([code, b]: [string, any]) => {
       const pn = PREFS[parseInt(code, 10)];
+      // 検索も**選べる単位**で引く。「横浜」で横浜市が出る（区の図形しか無いので、
+      // 区名で引くと「横浜市」が永久に見つからなかった）。同じ市の18区は下で1件に畳まれる。
       b.munis.forEach((m: any) => {
-        if (m.name.includes(q)) results.push({ type: "muni", pref: pn, name: m.name, code: m.code });
+        if (m.selName.includes(q)) results.push({ type: "muni", pref: pn, name: m.selName, code: m.selCode });
       });
     });
     const seen: Record<string, number> = {};
@@ -437,7 +468,10 @@ export default function JapanMap({ onSelect, onSelectMuni, colorMode, maxWidth }
     setMuniZoom({ name, s, tx: muniView.vw / 2 - s * (a.x + a.w / 2), ty: muniView.vh / 2 - s * (a.y + a.h / 2) });
     setHover(null); armedRef.current = null;
   };
-  const needsAreaZoom = (m: any) => m.area && (!muniZoom || muniZoom.name !== m.area);
+  // ズームするのは中身が市町村のまとまり（特別区・振興局）だけ。政令市は市そのものが
+  // 選べる単位なので、ズームせずクリックで市を開く（区へズームしても選べるものが無い）。
+  const needsAreaZoom = (m: any) => m.area && m.areaKind === "group" && (!muniZoom || muniZoom.name !== m.area);
+  const hoverOf = (m: any) => (m.areaKind === "city" || needsAreaZoom(m) ? { type: "area", name: m.area, kind: m.areaKind } : { type: "muni", name: m.name, code: m.code });
 
   let mapLabels: any = null;
   if (status === "ready" && (!pref || muniLeaving) && svgRef.current) {
@@ -483,12 +517,13 @@ export default function JapanMap({ onSelect, onSelectMuni, colorMode, maxWidth }
   if (pref) {
     chips = [
       <button key="all" style={chipBase} onClick={() => selMuni(pref.name, null)}>{pref.name}全体（都道府県レベル）</button>,
-      ...(showMunis ? muniView.munis.map((m: any) => (
-        <button key={m.code} style={chipBase}
-          onClick={() => selMuni(pref.name, m.name, m.code)}
-          onMouseEnter={() => setHover({ type: "muni", name: m.name, code: m.code })}
+      // 選べる単位ごとに1つ。政令市は「横浜市」1個で、18区ぶんのチップは出さない。
+      ...(showMunis ? selUnitsOf(muniView.munis).map((m: any) => (
+        <button key={m.selKey} style={chipBase}
+          onClick={() => selMuni(pref.name, m.selName, m.selCode)}
+          onMouseEnter={() => setHover(hoverOf(m))}
           onMouseLeave={() => setHover(null)}>
-          {m.name}
+          {m.selName}
         </button>)) : []),
     ];
   } else if (region) {
@@ -565,14 +600,14 @@ export default function JapanMap({ onSelect, onSelectMuni, colorMode, maxWidth }
                     fill={hover && ((hover.type === "muni" && hover.code === m.code) || (hover.type === "area" && hover.name === m.area)) ? shade(muniFills[m.idx % muniFills.length], 0.85) : muniFills[m.idx % muniFills.length]}
                     stroke="#FFFFFF" strokeWidth="1.4"
                     style={{ cursor: "pointer" }}
-                    onClick={() => { if (needsAreaZoom(m)) zoomMuniArea(m.area); else selMuni(pref.name, m.name, m.code); }}
+                    onClick={() => { if (needsAreaZoom(m)) zoomMuniArea(m.area); else selMuni(pref.name, m.selName, m.selCode); }}
                     onTouchEnd={(e) => {
                       e.preventDefault();
                       if (needsAreaZoom(m)) { zoomMuniArea(m.area); return; }
-                      if (armedRef.current === m.code) { armedRef.current = null; selMuni(pref.name, m.name, m.code); }
-                      else { armedRef.current = m.code; setHover({ type: "muni", name: m.name, code: m.code }); }
+                      if (armedRef.current === m.selKey) { armedRef.current = null; selMuni(pref.name, m.selName, m.selCode); }
+                      else { armedRef.current = m.selKey; setHover(hoverOf(m)); }
                     }}
-                    onMouseEnter={() => setHover(needsAreaZoom(m) ? { type: "area", name: m.area } : { type: "muni", name: m.name, code: m.code })}
+                    onMouseEnter={() => setHover(hoverOf(m))}
                     onMouseLeave={() => setHover(null)} />
                 ))}
                 {muniView.inset && !muniZoom && (
@@ -640,8 +675,8 @@ export default function JapanMap({ onSelect, onSelectMuni, colorMode, maxWidth }
           {(pref || region || hover) && (
             <span style={{ background: "#14181C", color: "#F7FAFC", borderRadius: 999, padding: "6px 15px", fontSize: 12.5, fontWeight: 600 }}>
               {hover ? hover.name : pref ? pref.name + (muniZoom ? " — " + muniZoom.name : "") + " — 市区町村を選択" : region}
-              {hover && (hover.type === "region" || hover.type === "area") ? " — クリックでズーム" : ""}
-              {isTouch && hover && hover.type === "muni" ? " — もう一度タップで選択" : ""}
+              {hover && (hover.type === "region" || (hover.type === "area" && hover.kind !== "city")) ? " — クリックでズーム" : ""}
+              {isTouch && hover && (hover.type === "muni" || (hover.type === "area" && hover.kind === "city")) ? " — もう一度タップで選択" : ""}
             </span>)}
         </div>
       </div>
