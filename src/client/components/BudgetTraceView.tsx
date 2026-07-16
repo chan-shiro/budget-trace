@@ -50,9 +50,12 @@ export default function BudgetTraceView({ v }: { v: any }) {
               <h1 style={S("margin:0 0 18px; font-size:clamp(32px,4vw,48px); font-weight:700; line-height:1.28;")}>税金のゆくえを、<br />執行まで。</h1>
               <p style={S("margin:0 0 30px; color:#5C6B77; max-width:44ch;")}>款別の内訳から主な事業、前年比較、類似自治体との比較までを一次資料（エビデンス）付きで確認できます。</p>
               <div style={S("display:flex; gap:28px; margin-bottom:34px; flex-wrap:wrap;")}>
-                <div><div style={S("font-family:'IBM Plex Mono',monospace; font-size:24px; font-weight:600;")}>47</div><div style={S("font-size:12px; color:#5C6B77;")}>都道府県</div></div>
-                <div><div style={S("font-family:'IBM Plex Mono',monospace; font-size:24px; font-weight:600;")}>1,741</div><div style={S("font-size:12px; color:#5C6B77;")}>市区町村（決算収録）</div></div>
-                <div><div style={S("font-family:'IBM Plex Mono',monospace; font-size:24px; font-weight:600;")}>5</div><div style={S("font-size:12px; color:#5C6B77;")}>当初予算まで収録</div></div>
+                {v.heroStats.map((h: any, i: number) => (
+                  <div key={i}>
+                    <div style={S("font-family:'IBM Plex Mono',monospace; font-size:24px; font-weight:600;")}>{h.num}</div>
+                    <div style={S("font-size:12px; color:#5C6B77;")}>{h.label}</div>
+                  </div>
+                ))}
               </div>
               <HoverBox as="button" onClick={v.openKofuLink} data-mq="cta" style={S("background:#14181C; color:#F7FAFC; border:none; border-radius:10px; padding:14px 26px; font-size:15px; font-weight:600; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("background:#1798D0;")}>甲府市のサンプルを見る →</HoverBox>
             </div>
