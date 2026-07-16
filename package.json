@@ -11,6 +11,7 @@
     "typecheck": "tsc --noEmit",
     "pipeline:fetch": "bun pipeline/fetch.ts",
     "pipeline:ingest": "bun pipeline/ingest-local.ts",
+    "pipeline:try-parse": "bun pipeline/try-parse.ts",
     "pipeline:parse": "bun pipeline/parse.ts",
     "pipeline:validate": "bun pipeline/validate.ts",
     "pipeline:normalize": "bun pipeline/normalize.ts",
