@@ -148,10 +148,25 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
 
   // --- 一次資料ドロワー ---
   // 呼び出し側は #page=N 付き URL を渡してよい（ここで分離して PDF.js ビューアへ渡す）
+  //
+  // **発行元が二次利用を許諾していない資料（要許可）はドロワーで開かない** — 私たちの写しを
+  // そのまま読ませることが再配布に当たるため、発行元（消えていて魚拓にしかない資料は魚拓）の
+  // ディープリンクを新しいタブで開く。写し自体は来歴のために残してあり、/coverage で
+  // 「何を持っているか」と利用条件は開示し続ける（ユーザー方針 2026-07-16）。
+  // エビデンスを開く経路はすべてこの関数を通るので、判定はここ1か所に置く。
   const openViewer = (p: Omit<NonNullable<St["viewer"]>, "page" | "tabUrl">) => {
+    const restricted = D.restrictedEvidence(p.url);
+    if (restricted) {
+      window.open(restricted.href, "_blank", "noopener,noreferrer");
+      return;
+    }
     const m = p.url.match(/^([^#]*)(?:#page=(\d+))?$/);
     setSt({ viewer: { ...p, url: m?.[1] ?? p.url, page: m?.[2] ? Number(m[2]) : 1, tabUrl: p.url } });
   };
+  /** エビデンスの href（要許可なら発行元・魚拓の直リンク、それ以外は自サーバーのコピー） */
+  const evHref = (localUrl: string) => D.evidenceHref(localUrl);
+  /** エビデンスのリンク文言。要許可の資料に「原本を開く」と書かない */
+  const evAction = (localUrl: string | null | undefined) => D.evidenceAction(localUrl);
   const closeViewer = () => setSt({ viewer: null });
   const viewerOpen = !!st.viewer;
   React.useEffect(() => {
@@ -571,7 +586,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
         evaluation: evalFor(p),
         name: p.name, summary: p.description, kanPath: p.kan ?? p.shisaku, kubun: p.kubun ?? "",
         budgetFmt: fmtV(p.amountOku), sub: subV(p.amountOku), shisaku: p.shisaku,
-        refLabel: p.refLabel, refUrl: p.refLocalUrl,
+        refLabel: p.refLabel, refUrl: evHref(p.refLocalUrl),
         refOpen: () => openViewer({
           url: p.refLocalUrl, title: KOFU_PROJECTS_SOURCE.title, sub: `主な事業一覧 ${p.refLabel}`,
           originUrl: KOFU_PROJECTS_SOURCE.originUrl, archiveUrl: p.refUrl,
@@ -883,6 +898,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
       simLegend: simIndex.mixCols.map((n, i) => ({ name: n, sw: cols[i] })),
       similarEvidence: SIMILAR_EVIDENCE.filter((ev) => families.has(ev.family)).map((ev) => ({
         ...ev,
+        href: evHref(ev.localUrl),
         open: () => openViewer({
           url: ev.localUrl, title: ev.title, sub: ev.thumb,
           originUrl: "https://www.soumu.go.jp/iken/zaisei/r06_shichouson.html", archiveUrl: ev.url,
@@ -1002,15 +1018,17 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     execOverallRate: execOverallRate.toFixed(1) + "%",
     execOverallBarW: Math.min(100, execOverallRate).toFixed(1),
     execBudgetFmt: fmtOku(execBudgetTotal), execSettledFmt: fmtOku(execSettledTotal),
-    // エビデンスは常に自サーバーの原本コピーをドロワーで開く（HTML はサンドボックス表示）
+    // エビデンスは自サーバーの原本コピーをドロワーで開く（HTML はサンドボックス表示）。
+    // 要許可の資料だけは発行元へのディープリンクになる（openViewer / evHref）
     execEvidence: execYear.evidence.map((he) => ({
       ...he,
+      href: evHref(he.localUrl),
       open: () => openViewer({
         url: he.localUrl, title: he.title, sub: he.thumb,
         originUrl: execYear.originUrl, archiveUrl: he.url,
       }),
     })),
-    execSourceUrl: execYear.sourceLocalUrl,
+    execSourceUrl: evHref(execYear.sourceLocalUrl),
     execSourceOpen: () => openViewer({
       url: execYear.sourceLocalUrl, title: execYear.sourceTitle, sub: execYear.fyLabel,
       originUrl: execYear.originUrl, archiveUrl: execYear.sourceUrl,
@@ -1040,6 +1058,8 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
           }),
           resolution: councilForFy.resolution,
           sourceTitle: councilForFy.sourceTitle,
+          rosterAction: evAction(councilForFy.roster.localUrl),
+          resultAction: evAction(councilForFy.result.localUrl),
           rosterOpen: () =>
             openViewer({
               url: councilForFy.roster.localUrl, title: councilForFy.roster.title,
@@ -1066,6 +1086,8 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
             targetFyLabel: reportYear.targetFyLabel,
             // 予算年度と評価年度がズレたとき（②のフォールバック）だけ理由を明示する
             fallbackNote: reportFallbackNote,
+            sourceUrl: evHref(reportYear.sourceLocalUrl),
+            sourceAction: evAction(reportYear.sourceLocalUrl),
             sourceOpen: () =>
               openViewer({
                 url: reportYear.sourceLocalUrl, title: reportYear.sourceTitle,
@@ -1255,6 +1277,8 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     hasBudgetProjectGroups: budgetProjectGroups.length > 0,
     budgetProjectsCountLabel: isBudget ? `全${projectsForDisplay.length}事業` : "",
     budgetProjectsSourceLabel: isBudget ? `出典：${muniBudget!.sourceTitle}` : "",
+    budgetProjectsSourceUrl: isBudget ? evHref(muniBudget!.sourceLocalUrl) : "",
+    budgetProjectsSourceAction: isBudget ? evAction(muniBudget!.sourceLocalUrl) : "",
     budgetProjectsSourceOpen: isBudget
       ? () => openViewer({
           url: muniBudget!.sourceLocalUrl, title: muniBudget!.sourceTitle,
@@ -1295,6 +1319,8 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
             }
           : null,
         outturnSourceLabel: outturn ? `出典：${outturn.sourceTitle}` : "",
+        outturnSourceUrl: outturn ? evHref(outturn.sourceLocalUrl) : "",
+        outturnSourceAction: evAction(outturn?.sourceLocalUrl),
         outturnSourceOpen: outturn
           ? () => openViewer({
               url: outturn.sourceLocalUrl, title: outturn.sourceTitle, sub: `${outturn.fyLabel} 一般会計歳入歳出状況（歳出）`,
@@ -1320,7 +1346,8 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
           `予算書 本編（款項目節・令和${budget.fy.slice(1)}年度）`,
           `款別ドリルダウンの「${nodeName}」で、令和${budget.fy.slice(1)}年度予算の項別内訳を見たい（現在は直近決算の参考表示のみ）`,
         ),
-        r6DetailSourceUrl: KOFU_R6_DETAIL.sourceLocalUrl,
+        r6DetailSourceUrl: evHref(KOFU_R6_DETAIL.sourceLocalUrl),
+        r6DetailSourceAction: evAction(KOFU_R6_DETAIL.sourceLocalUrl),
         r6DetailSourceOpen: () => openViewer({
           url: KOFU_R6_DETAIL.sourceLocalUrl, title: KOFU_R6_DETAIL.sourceTitle,
           sub: KOFU_R6_DETAIL.refLabel,
@@ -1359,7 +1386,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
               measure: r.measure,
               amtFmt: last?.jigyohi != null ? fmtV(last.jigyohi / 1e5) : "",
               fyLabel: last ? `${last.fy === repData.fy ? repData.fyLabel : `令和${last.fy.slice(1)}年度`}決算` : "",
-              ref: r.ref,
+              ref: evHref(r.ref),
               open: () =>
                 openViewer({
                   url: r.ref,
@@ -1395,7 +1422,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
           amountFmt: fmtOku(p.amountOku),
           desc: p.description ?? "",
           goal: p.basicGoal ?? "", shisaku: p.shisaku ?? "",
-          refLabel: p.refLabel, refTitle: p.ref ?? "", refUrl: p.refLocalUrl,
+          refLabel: p.refLabel, refTitle: p.ref ?? "", refUrl: evHref(p.refLocalUrl),
           refOpen: () => openViewer({
             url: p.refLocalUrl, title: projTitle, sub: `主な事業 ${p.refLabel}`,
             originUrl: isBudget ? muniBudget!.originUrl : KOFU_PROJECTS_SOURCE.originUrl,
@@ -1413,7 +1440,8 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
                 `款別ドリルダウンの「${nodeName}」で、主な事業一覧に掲載のない ${fmtOku(uncovered)} の内訳（項・目・節、事業別）を知りたい`,
               )
             : "",
-        realProjectsSourceUrl: isBudget ? muniBudget!.sourceLocalUrl : KOFU_PROJECTS_SOURCE.localUrl,
+        realProjectsSourceUrl: evHref(isBudget ? muniBudget!.sourceLocalUrl : KOFU_PROJECTS_SOURCE.localUrl),
+        realProjectsSourceAction: evAction(isBudget ? muniBudget!.sourceLocalUrl : KOFU_PROJECTS_SOURCE.localUrl),
         realProjectsSourceLabel: `出典：${projTitle} 主な事業`,
         realProjectsSourceOpen: () => openViewer({
           url: isBudget ? muniBudget!.sourceLocalUrl : KOFU_PROJECTS_SOURCE.localUrl,
@@ -1439,13 +1467,19 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     // エビデンスは自サーバーのコピーをドロワーで開く（発行元・Wayback はドロワー内の補助リンク）
     viewer: s.viewer ?? null,
     closeViewer,
-    drillPdfUrl: isDecision ? "" : isBudget ? muniBudget!.sourceLocalUrl : budget.sourceLocalUrl,
+    drillPdfUrl: isDecision ? "" : isBudget ? evHref(muniBudget!.sourceLocalUrl) : evHref(budget.sourceLocalUrl),
     dashSourceLabel: isDecision
       ? `出典：${decisionView!.primaryEvidence?.title ?? "総務省 市町村別決算状況調"}（${decisionView!.refLabel}）`
       : isBudget
         ? `出典：${muniBudget!.sourceTitle}`
         : `出典：${budget.sourceTitle} ${budget.pagesLabel}`,
-    dashSourceUrl: isDecision ? decisionView!.primaryEvidence?.localUrl ?? "" : isBudget ? muniBudget!.sourceLocalUrl : budget.sourceLocalUrl,
+    dashSourceUrl: evHref(
+      isDecision ? decisionView!.primaryEvidence?.localUrl ?? "" : isBudget ? muniBudget!.sourceLocalUrl : budget.sourceLocalUrl,
+    ),
+    // リンク文言（要許可の資料は「原本を開く」ではなく「発行元で開く」）
+    dashSourceAction: evAction(
+      isDecision ? decisionView!.primaryEvidence?.localUrl : isBudget ? muniBudget!.sourceLocalUrl : budget.sourceLocalUrl,
+    ),
     dashSourceTitle: isDecision ? decisionView!.primaryEvidence?.title ?? "総務省 市町村別決算状況調" : isBudget ? muniBudget!.sourceTitle : budget.sourceTitle,
     dashSourceOpen: isDecision
       ? (decisionView!.primaryEvidence
@@ -1552,6 +1586,9 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
                       ...src,
                       files: src.files.map((f) => ({
                         ...f,
+                        // 要許可の資料は写しを開かず発行元へ出る（写しは残っているので
+                        // ファイル名・ハッシュ・取得日はこれまでどおり開示する）
+                        href: evHref(f.localUrl),
                         open: () =>
                           openViewer({
                             url: f.localUrl, title: src.title, sub: `${f.filename} ・ ${f.fetchedAt} 取得`,
@@ -1688,8 +1725,9 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
             jigyohi: c?.jigyohi ?? null,
             jinkenhi: c?.jinkenhi ?? null,
             costLabel: c ? `${repData.fyLabel}${c.kind}${c.est ? "（見込）" : ""}` : "",
-            // href にも入れる（onClick だけだと中クリック・キーボードでリンクとして扱えない）
-            ref: r.ref,
+            // href にも入れる（onClick だけだと中クリック・キーボードでリンクとして扱えない）。
+            // 要許可の資料は発行元のディープリンクへ振り替わる
+            ref: evHref(r.ref),
             refLabel: r.refLabel,
             open: () =>
               openViewer({
@@ -1779,9 +1817,12 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
             used: c.used,
             licenseClass: c.licenseClass,
             localUrl: f?.localUrl ?? null,
+            href: f?.localUrl ? evHref(f.localUrl) : null,
+            action: evAction(f?.localUrl),
             originUrl: c.originUrl,
             archiveUrl: c.archiveUrl,
-            // ドロワーで自サーバーの原本コピーを開く（エビデンス3層の③。発行元・魚拓は補助リンク）
+            // ドロワーで自サーバーの原本コピーを開く（エビデンス3層の③。発行元・魚拓は補助リンク）。
+            // 要許可の資料だけは openViewer が発行元（魚拓）へのディープリンクに振り替える
             open: f?.localUrl
               ? () =>
                   openViewer({

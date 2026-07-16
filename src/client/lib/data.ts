@@ -9,6 +9,7 @@
 import { KOFU_BUDGET, KOFU_BUDGET_YEARS, type KofuBudgetYear, type KofuKanRow } from './kofu.gen';
 import { KOFU_EXECUTION, KOFU_EXECUTION_YEARS } from './execution.gen';
 import { WAYBACK_BY_URL } from './archives.gen';
+import { RESTRICTED_EVIDENCE } from './evidence-policy.gen';
 import { KOFU_EVALUATION_YEARS } from './evaluations.gen';
 import { KOFU_OUTTURN_YEARS } from './outturn.gen';
 
@@ -178,6 +179,47 @@ export const UNCOLLECTED = [
   { title: '予算書 本編（款項目節・各年度）', why: '款より深い「項・目・節」の内訳。ウェブ未公開', requestUrl: requestUrl('予算書 本編（款項目節・各年度）') },
   { title: '補正予算書（各年度）', why: '当初予算と予算現額（補正後）の差を補正ごとに追える', requestUrl: requestUrl('補正予算書（各年度）') },
 ];
+
+// ---- エビデンスのリンク方針 -------------------------------------------------
+// 原則: 画面のリンクは自サーバー配信の原本コピー（③）をドロワーで開く。
+// 例外: 発行元が二次利用を許諾していない資料（/coverage の「要許可」）は、コピーは
+// 来歴のために残したまま**リンクだけ発行元へディープリンク**する。発行元から消えていて
+// 魚拓にしかない資料は魚拓へ繋ぐ（どちらかは derive が取得元から判定済み）。
+export interface RestrictedEvidence {
+  mode: 'origin' | 'archive';
+  /** 発行元（または魚拓）のディープリンク。PDF は #page=N を引き継ぐ */
+  href: string;
+  /** 発行元が示している利用条件の原文 */
+  license: string;
+  /** リンクの文言（「原本を開く」と言い切れないので、どこへ出るかを書く） */
+  actionLabel: string;
+}
+
+/**
+ * 自サーバー配信コピーの URL（`/sources/...`。`#page=N` 付き可）→ 外部リンクの宛先。
+ * null = 許諾の問題が無い資料なので、これまでどおりコピーをドロワーで開いてよい。
+ */
+export function restrictedEvidence(localUrl: string | null | undefined): RestrictedEvidence | null {
+  if (!localUrl) return null;
+  const m = localUrl.match(/^([^#]*)(?:#page=(\d+))?$/);
+  const path = m?.[1] ?? localUrl;
+  const e = RESTRICTED_EVIDENCE[path];
+  if (!e) return null;
+  // ページ指定はブラウザの PDF ビューアが解釈する。PDF 以外に付けても意味が無いので付けない
+  const page = m?.[2];
+  const href = page && /\.pdf$/i.test(e.href) ? `${e.href}#page=${page}` : e.href;
+  return { mode: e.mode, href, license: e.license, actionLabel: e.mode === 'archive' ? '魚拓で開く ↗' : '発行元で開く ↗' };
+}
+
+/** エビデンスのリンク先（要許可なら発行元・魚拓、それ以外はコピー） */
+export function evidenceHref(localUrl: string): string {
+  return restrictedEvidence(localUrl)?.href ?? localUrl;
+}
+
+/** エビデンスのリンク文言。「（原本を開く）」と書けるのは③を開く資料だけ */
+export function evidenceAction(localUrl: string | null | undefined): string {
+  return restrictedEvidence(localUrl)?.actionLabel ?? '原本を開く';
+}
 
 // ---- ヘルパー --------------------------------------------------------------
 export function fmtOku(v: number): string {
