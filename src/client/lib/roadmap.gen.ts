@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 41,
+  "budgetCount": 42,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 199,
-  "fileCount": 324,
-  "archivedCount": 189,
+  "sourceCount": 203,
+  "fileCount": 328,
+  "archivedCount": 193,
   "licenseOpen": 19,
-  "licensePermission": 122,
+  "licensePermission": 126,
   "licenseUnverified": 58,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -133,6 +133,12 @@ export const ROADMAP_PROGRESS = {
       "code": "131130",
       "years": 4,
       "range": "R5〜R8（4年度）"
+    },
+    {
+      "name": "豊島区",
+      "code": "131164",
+      "years": 4,
+      "range": "R3〜R8（4年度）"
     },
     {
       "name": "静岡市",

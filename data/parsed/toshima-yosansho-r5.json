@@ -1,0 +1,380 @@
+{
+  "docType": "budget-book",
+  "sourceId": "toshima-yosansho-r5",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-07-16T10:35:08.181Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R5",
+  "account": "一般会計",
+  "revenueTotal": 136150789,
+  "expenditureTotal": 136150789,
+  "prevRevenueTotal": 135791696,
+  "prevExpenditureTotal": 135791696,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "特別区税",
+      "amount": 36782383,
+      "prevAmount": 33441251,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 39
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "地方譲与税",
+      "amount": 440000,
+      "prevAmount": 447000,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 39
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "利子割交付金",
+      "amount": 100000,
+      "prevAmount": 78000,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 39
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "配当割交付金",
+      "amount": 590000,
+      "prevAmount": 513000,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 39
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 400000,
+      "prevAmount": 400000,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 39
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "地方消費税交付金",
+      "amount": 8300000,
+      "prevAmount": 7661000,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 39
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "環境性能割交付金",
+      "amount": 100000,
+      "prevAmount": 79000,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 39
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "地方特例交付金",
+      "amount": 113000,
+      "prevAmount": 131000,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 39
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "特別区交付金",
+      "amount": 33600000,
+      "prevAmount": 31700000,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 39
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 26000,
+      "prevAmount": 26000,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 39
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "分担金及び負担金",
+      "amount": 1134678,
+      "prevAmount": 1162694,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 39
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "使用料及び手数料",
+      "amount": 3260488,
+      "prevAmount": 3235236,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 39
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "国庫支出金",
+      "amount": 27094628,
+      "prevAmount": 27305234,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 39
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "都支出金",
+      "amount": 10909921,
+      "prevAmount": 11180915,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 39
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "財産収入",
+      "amount": 572011,
+      "prevAmount": 492007,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 39
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "寄附金",
+      "amount": 32064,
+      "prevAmount": 32914,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 39
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 17,
+      "kanName": "繰入金",
+      "amount": 6120526,
+      "prevAmount": 9132700,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 39
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 18,
+      "kanName": "繰越金",
+      "amount": 1,
+      "prevAmount": 1,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 39
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 19,
+      "kanName": "諸収入",
+      "amount": 4382089,
+      "prevAmount": 4186744,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 39
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 20,
+      "kanName": "特別区債",
+      "amount": 2193000,
+      "prevAmount": 4587000,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 39
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 646571,
+      "prevAmount": 651207,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "政策経営費",
+      "amount": 6369432,
+      "prevAmount": 6679094,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "総務費",
+      "amount": 7051196,
+      "prevAmount": 7979303,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "区民費",
+      "amount": 13210110,
+      "prevAmount": 11719302,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "文化商工費",
+      "amount": 6001974,
+      "prevAmount": 5735014,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "環境清掃費",
+      "amount": 5249203,
+      "prevAmount": 4748279,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "福祉費",
+      "amount": 32351319,
+      "prevAmount": 31709328,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "衛生費",
+      "amount": 5050552,
+      "prevAmount": 8388415,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "子ども家庭費",
+      "amount": 30113017,
+      "prevAmount": 28612109,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "都市整備費",
+      "amount": 17650098,
+      "prevAmount": 14292562,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 11,
+      "kanName": "教育費",
+      "amount": 10206371,
+      "prevAmount": 12545608,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 12,
+      "kanName": "公債費",
+      "amount": 1850946,
+      "prevAmount": 2331475,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 13,
+      "kanName": "予備費",
+      "amount": 400000,
+      "prevAmount": 400000,
+      "locator": {
+        "file": "r5_toshimaku_yosannsho.pdf",
+        "page": 41
+      }
+    }
+  ]
+}

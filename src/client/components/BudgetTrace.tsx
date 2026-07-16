@@ -1406,7 +1406,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
               buka: r.buka,
               measure: r.measure,
               amtFmt: last?.jigyohi != null ? fmtV(last.jigyohi / 1e5) : "",
-              fyLabel: last ? `${last.fy === repData.fy ? repData.fyLabel : `令和${last.fy.slice(1)}年度`}決算` : "",
+              fyLabel: last ? `${last.fy === repData.fy ? repData.fyLabel : D.fyEraLabel(last.fy)}決算` : "",
               ref: evHref(r.ref),
               open: () =>
                 openViewer({
@@ -1660,7 +1660,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
       return {
         count: list.length,
         items: list.map((c) => ({
-          fyLabel: c.fy.startsWith("H") ? `平成${c.fy.slice(1)}年度` : `令和${c.fy.slice(1)}年度`,
+          fyLabel: D.fyEraLabel(c.fy),
           title: c.title,
           plain: c.plain, // 市民向けの一行（未知のパターンは null）
           message: c.message, // 検証の原文。丸めず併記する
@@ -1871,11 +1871,12 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     themeCards, ...themeVals,
     compTabs, compRows,
     // 前年ラベル。full=甲府 or budget=類似4市（compSrc）の年度・基準を使う。
-    // R2 の前年（令和元年度）は「6月補正後予算額」との比較なので基準を明示する
+    // R2 の前年（令和元年度）は「6月補正後予算額」との比較なので基準を明示する。
+    // 年号またぎ（R2→令和元・H31 等）は D.prevFyEraLabel が吸収する
     compPrevLabel:
-      `令和${Number(compSrc.fy.slice(1)) - 1 === 1 ? "元" : Number(compSrc.fy.slice(1)) - 1}年度` +
+      D.prevFyEraLabel(compSrc.fy) +
       (compSrc.prevBasis === "補正後" ? "（補正後予算額）" : ""),
-    compCurLabel: `令和${compSrc.fy.slice(1)}年度`,
+    compCurLabel: D.fyEraLabel(compSrc.fy),
     // 比較の基準を文章でも言う。**「前年度当初額を使用」と決め打ちしない** — 前年度列が当初でない
     // 資料がある（甲府 R2 の6月補正後・札幌 R6/R2 の骨格予算→肉付後）。基準と文章が食い違うと
     // 「補正後予算額」ラベルの隣で「当初額を使用」と書く自己矛盾になる（2026-07-15 修正）

@@ -18,6 +18,7 @@ import {
   readRawMeta,
   validationPath,
 } from "./lib/store";
+import { eraYear, fyRank } from "./lib/fy";
 import { findSource, SOURCES } from "./registry/sources";
 import { ROADMAP } from "./registry/roadmap";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -356,7 +357,7 @@ function buildKofuBudgetYear(entry: (typeof BUDGET_YEARS)[number]) {
   const pop = kofuPopulation(popFy);
   const budget = {
     fy,
-    fyLabel: `令和${fy.slice(1)}年度 当初予算`,
+    fyLabel: `${eraYear(fy)}年度 当初予算`,
     population: pop.population,
     populationLabel: pop.populationLabel,
     totalOku: toOku(doc.expenditureTotal),
@@ -468,7 +469,7 @@ for (const b of budgetYears) {
     if (!k?.expenditureTotal || !k.revenueTotal) throw new Error(`${srcId}: 甲府市のデータがありません`);
     return {
       fy,
-      fyLabel: `令和${fy.slice(1)}年度`,
+      fyLabel: `${eraYear(fy)}年度`,
       expenditureTotalOku: toOku(k.expenditureTotal),
       revenueTotalOku: toOku(k.revenueTotal),
       population: k.population,
@@ -626,7 +627,7 @@ function buildExecYear(entry: { srcId: string; fy: string; refLabelBase?: string
   return {
     fy,
     basis: doc.basis,
-    fyLabel: isFinal ? `令和${fy.slice(1)}年度（決算・確定値）` : `令和${fy.slice(1)}年度（${doc.asOf}）`,
+    fyLabel: isFinal ? `${eraYear(fy)}年度（決算・確定値）` : `${eraYear(fy)}年度（${doc.asOf}）`,
     asOf: doc.asOf,
     asOfNote: isFinal
       ? "出納整理後の決算確定値。予算現額は補正・繰越を含むため当初予算とは一致しません"
@@ -742,7 +743,7 @@ console.log(
     const url = src.urls?.[0] ?? src.landingPage ?? "";
     return {
       fy,
-      fyLabel: `${fy.startsWith("H") ? `平成${fy.slice(1)}` : `令和${fy.slice(1)}`}年度`,
+      fyLabel: `${eraYear(fy)}年度`,
       sourceTitle: src.title,
       sourceUrl: wayback(url),
       originUrl: url,
@@ -821,7 +822,7 @@ export const KOFU_EVALUATION_YEARS: KofuEvaluationYear[] = ${JSON.stringify(eval
     const asOfLabel = doc.asOf.replace(/^(\d{4})-(\d{2})-(\d{2})$/, (_m, y, mo, d) => `${y}年${Number(mo)}月${Number(d)}日`);
     return {
       fy,
-      fyLabel: `令和${fy.slice(1)}年度 当初予算`,
+      fyLabel: `${eraYear(fy)}年度 当初予算`,
       body: doc.body,
       seats: doc.seats,
       asOf: doc.asOf,
@@ -931,12 +932,11 @@ export const KOFU_COUNCIL: KofuCouncil = KOFU_COUNCIL_YEARS[0]!;
     const src = findSource(srcId);
     const file = meta.files[0]!;
     const url = src.urls?.[0] ?? src.landingPage ?? "";
-    const eraLabel = (c: string) => (c.startsWith("H") ? `平成${c.slice(1)}` : `令和${c.slice(1)}`) + "年度";
     return {
       fy,
-      fyLabel: eraLabel(fy),
+      fyLabel: `${eraYear(fy)}年度`,
       targetFy: doc.targetFy,
-      targetFyLabel: doc.targetFy ? eraLabel(doc.targetFy) : "",
+      targetFyLabel: doc.targetFy ? `${eraYear(doc.targetFy)}年度` : "",
       sourceTitle: src.title,
       sourceUrl: wayback(url),
       originUrl: url,
@@ -1052,7 +1052,7 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
     const meta = readRawMeta(r.srcId);
     if (!meta) throw new Error(`${r.srcId}: raw-meta がありません`);
     const src = findSource(r.srcId);
-    const eraLabel = (c: string) => (c.startsWith("H") ? `平成${c.slice(1)}` : `令和${c.slice(1)}`) + "年度";
+    const eraLabel = (c: string) => `${eraYear(c)}年度`;
     // 款番号 → 款名。**対象年度の予算から引く**（画面側で推測させない）。
     // これがあると「款ドリル → その款の事業 → 成果」が繋がる。**款項目を持つのは横浜だけ**
     const kanNames: Record<string, string> = {};
@@ -1215,7 +1215,7 @@ export const REPORT_MUNIS: Record<string, { name: string; fy: string; fyLabel: s
     });
     return {
       fy,
-      fyLabel: `${fy.startsWith("H") ? `平成${fy.slice(1)}` : `令和${fy.slice(1)}`}年度`,
+      fyLabel: `${eraYear(fy)}年度`,
       initialNote: initialSuspect
         ? "歳出の当初予算額は原典（統計書）側の誤植（前年度値の再掲）と判定したため表示していません"
         : "",
@@ -1661,7 +1661,7 @@ export const DECISION_YEARS = ${JSON.stringify(DECISION_YEARS)} as const;
 
 /** 年度 → 表示ラベル */
 export const DECISION_FY_LABELS: Record<string, string> = ${JSON.stringify(
-    Object.fromEntries(DECISION_YEARS.map((fy) => [fy, `令和${fy.slice(1)}年度 決算`])),
+    Object.fromEntries(DECISION_YEARS.map((fy) => [fy, `${eraYear(fy)}年度 決算`])),
     null,
     2,
   )};
@@ -1788,8 +1788,8 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       srcId: `ota-yosansho-${fy}`, muniCode: "131113", muniName: "大田区", prefName: "東京都", isPref: false,
     })),
     // 中央区は**款別専用の6ページ PDF**（歳入歳出が同一ページ＝samePage）。**見出しを強くすると
-    // 款名が静かに壊れる**という逆説がある（registry のコメント参照）。H31〜H29 も現存するが
-    // 年度ラベルが「令和30年度」になるため未収録。
+    // 款名が静かに壊れる**という逆説がある（registry のコメント参照）。H31〜H29 も現存するが未収録
+    //（年号ラベルは eraYear で H 対応済み＝収録の障害は解消）。
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `chuo-sokatsuhyo-${fy}`, muniCode: "131024", muniName: "中央区", prefName: "東京都", isPref: false,
     })),
@@ -1812,6 +1812,11 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     // 直接比較すると民生費等が過小に見える。R8 は第6の折返し型で kanNoless が要る。
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `katsushika-yosangaiyou-${fy}`, muniCode: "131229", muniName: "葛飾区", prefName: "東京都", isPref: false,
+    })),
+    // 豊島区は**R7・R4・R2 が欠番**（R4・R2 は ToUnicode 全面欠落、R7 は OCR レイヤの重なりで
+    // 数字が壊れる＝修復不可。registry のコメント参照）。R3 は Wayback から回収。
+    ...(["r8", "r6", "r5", "r3"] as const).map((fy) => ({
+      srcId: `toshima-yosansho-${fy}`, muniCode: "131164", muniName: "豊島区", prefName: "東京都", isPref: false,
     })),
     // 足立区。あらまし総括表。**R5〜R8 は列順が [前年度, 当年度] に反転**（prevColumnFirst・
     // registry のコメント参照）。R2〜R8 の当初チェーンは款単位で全件一致を確認済み
@@ -1924,7 +1929,7 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       // 決算＋執行率（収録できた自治体のみ。当初予算とは別年度でよい）
       execution: MUNI_EXEC_SOURCES[b.muniCode] ? [buildExecYear(MUNI_EXEC_SOURCES[b.muniCode]!)] : [],
       fy: doc.fiscalYear,
-      fyLabel: `令和${doc.fiscalYear.slice(1)}年度 当初予算`,
+      fyLabel: `${eraYear(doc.fiscalYear)}年度 当初予算`,
       population: popRec.population,
       populationLabel: b.isPref
         ? "県内市町村の住民基本台帳人口の合計（総務省 令和6年度決算）"
@@ -1958,14 +1963,7 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
 
   // budget 階層は1自治体＝複数年度になり得る（政令市は R2〜R8 の7年前後さかのぼれる）。
   // 年度は**新しい順**に並べる（画面の年度ドロップダウンの並び・既定の選択がこの順に依存する）。
-  // FY_ORDER は R8 > R7 > … の降順。令和以外（H31 等）が来たら比較関数を見直すこと。
-  const fyRank = (fy: string): number => {
-    const m = /^R(\d+)$/.exec(fy);
-    if (m) return 1000 + Number(m[1]);
-    const h = /^H(\d+)$/.exec(fy);
-    if (h) return Number(h[1]); // 平成は令和より必ず古い
-    throw new Error(`年度の表記を解釈できません: ${fy}（R8 / H31 形式のみ）`);
-  };
+  // 比較は fyRank（pipeline/lib/fy.ts・R > H）。
   const byCodeYears: Record<string, typeof budgets> = {};
   for (const b of budgets) (byCodeYears[b.muniCode] ??= []).push(b);
   for (const [code, ys] of Object.entries(byCodeYears)) {
