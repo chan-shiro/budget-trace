@@ -97,6 +97,23 @@
       "sha256Match": true
     },
     {
+      "sourceId": "chuo-sokatsuhyo-r2",
+      "url": "https://www.city.chuo.lg.jp/a0002/kusei/zaisei/yosan/r2nendo/zaisei_20200207.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260716071634/https://www.city.chuo.lg.jp/a0002/kusei/zaisei/yosan/r2nendo/zaisei_20200207.html",
+      "waybackTimestamp": "20260716071634",
+      "checkedAt": "2026-07-16T07:47:01.930Z"
+    },
+    {
+      "sourceId": "chuo-sokatsuhyo-r2",
+      "url": "https://www.city.chuo.lg.jp/documents/2786/r2tousyo_soukatuhyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260716071606/https://www.city.chuo.lg.jp/documents/2786/r2tousyo_soukatuhyou.pdf",
+      "waybackTimestamp": "20260716071606",
+      "checkedAt": "2026-07-16T07:46:40.011Z",
+      "sha256Match": true
+    },
+    {
       "sourceId": "chuo-sokatsuhyo-r3",
       "url": "https://www.city.chuo.lg.jp/a0002/kusei/zaisei/yosan/r3nendo/r3_tousyoyosanan.html",
       "kind": "landing",
@@ -187,7 +204,16 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260313013100/https://www.city.chuo.lg.jp/a0002/kusei/zaisei/yosan/r8/r8tousyo_press.html",
       "waybackTimestamp": "20260313013100",
-      "checkedAt": "2026-07-16T07:11:03.227Z"
+      "checkedAt": "2026-07-16T07:46:26.309Z"
+    },
+    {
+      "sourceId": "chuo-sokatsuhyo-r8",
+      "url": "https://www.city.chuo.lg.jp/documents/17921/r8_sokatsuhyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260313021918/https://www.city.chuo.lg.jp/documents/17921/r8_sokatsuhyo.pdf",
+      "waybackTimestamp": "20260313021918",
+      "checkedAt": "2026-07-16T07:46:21.683Z",
+      "sha256Match": true
     },
     {
       "sourceId": "fuefuki-yosansho-r8",
@@ -477,6 +503,125 @@
       "waybackTimestamp": "20260713094338",
       "checkedAt": "2026-07-13T13:09:05.827Z",
       "sha256Match": true
+    },
+    {
+      "sourceId": "katsushika-yosangaiyou-r2",
+      "url": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/022/573/yosanngaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250624111921/https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/022/573/yosanngaiyou.pdf",
+      "waybackTimestamp": "20250624111921",
+      "checkedAt": "2026-07-16T07:45:02.326Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "katsushika-yosangaiyou-r2",
+      "url": "https://www.city.katsushika.lg.jp/information/1000085/1006293/1022573.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250624112028/https://www.city.katsushika.lg.jp/information/1000085/1006293/1022573.html",
+      "waybackTimestamp": "20250624112028",
+      "checkedAt": "2026-07-16T07:45:16.949Z"
+    },
+    {
+      "sourceId": "katsushika-yosangaiyou-r3",
+      "url": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/025/473/reiwa3yosangaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250624112155/https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/025/473/reiwa3yosangaiyou.pdf",
+      "waybackTimestamp": "20250624112155",
+      "checkedAt": "2026-07-16T07:43:53.689Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "katsushika-yosangaiyou-r3",
+      "url": "https://www.city.katsushika.lg.jp/information/1000085/1006293/1025473.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251119013437/https://www.city.katsushika.lg.jp/information/1000085/1006293/1025473.html",
+      "waybackTimestamp": "20251119013437",
+      "checkedAt": "2026-07-16T07:44:04.061Z"
+    },
+    {
+      "sourceId": "katsushika-yosangaiyou-r4",
+      "url": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/027/976/r4yosanngaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250624111742/https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/027/976/r4yosanngaiyou.pdf",
+      "waybackTimestamp": "20250624111742",
+      "checkedAt": "2026-07-16T07:43:32.053Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "katsushika-yosangaiyou-r4",
+      "url": "https://www.city.katsushika.lg.jp/information/1000085/1006293/1027976.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250624112028/https://www.city.katsushika.lg.jp/information/1000085/1006293/1027976.html",
+      "waybackTimestamp": "20250624112028",
+      "checkedAt": "2026-07-16T07:43:41.302Z"
+    },
+    {
+      "sourceId": "katsushika-yosangaiyou-r5",
+      "url": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/030/965/r5_katsu_yosan2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260418105250/https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/030/965/r5_katsu_yosan2.pdf",
+      "waybackTimestamp": "20260418105250",
+      "checkedAt": "2026-07-16T07:42:24.206Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "katsushika-yosangaiyou-r5",
+      "url": "https://www.city.katsushika.lg.jp/information/1000085/1006293/1030965.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260307085405/https://www.city.katsushika.lg.jp/information/1000085/1006293/1030965.html",
+      "waybackTimestamp": "20260307085405",
+      "checkedAt": "2026-07-16T07:42:54.678Z"
+    },
+    {
+      "sourceId": "katsushika-yosangaiyou-r6",
+      "url": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/034/308/r6yosangaiyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260417190406/https://www2.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/034/308/r6yosangaiyo.pdf",
+      "waybackTimestamp": "20260417190406",
+      "checkedAt": "2026-07-16T07:40:16.548Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "katsushika-yosangaiyou-r6",
+      "url": "https://www.city.katsushika.lg.jp/information/1000085/1006293/1034308.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260306211018/https://www2.city.katsushika.lg.jp/information/1000085/1006293/1034308.html",
+      "waybackTimestamp": "20260306211018",
+      "checkedAt": "2026-07-16T07:40:22.081Z"
+    },
+    {
+      "sourceId": "katsushika-yosangaiyou-r7",
+      "url": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/037/487/r7yosangaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260716073542/https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/037/487/r7yosangaiyou.pdf",
+      "waybackTimestamp": "20260716073542",
+      "checkedAt": "2026-07-16T07:37:18.586Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "katsushika-yosangaiyou-r7",
+      "url": "https://www.city.katsushika.lg.jp/information/1000085/1006293/1037487.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260418094747/https://www.city.katsushika.lg.jp/information/1000085/1006293/1037487.html",
+      "waybackTimestamp": "20260418094747",
+      "checkedAt": "2026-07-16T07:37:25.704Z"
+    },
+    {
+      "sourceId": "katsushika-yosangaiyou-r8",
+      "url": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/041/034/8yosangaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260716072948/https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/041/034/8yosangaiyou.pdf",
+      "waybackTimestamp": "20260716072948",
+      "checkedAt": "2026-07-16T07:31:09.617Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "katsushika-yosangaiyou-r8",
+      "url": "https://www.city.katsushika.lg.jp/information/1000085/1006293/1041034.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260716073323/https://www.city.katsushika.lg.jp/information/1000085/1006293/1041034.html",
+      "waybackTimestamp": "20260716073323",
+      "checkedAt": "2026-07-16T07:34:07.050Z"
     },
     {
       "sourceId": "kawasaki-jigyou-hyouka-r6",
@@ -1656,12 +1801,46 @@
       "sha256Match": true
     },
     {
+      "sourceId": "koto-yosangaiyou-r2",
+      "url": "https://www.city.koto.lg.jp/011102/2tousyoyosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20230605161820/https://www.city.koto.lg.jp/011102/2tousyoyosan.html",
+      "waybackTimestamp": "20230605161820",
+      "checkedAt": "2026-07-16T07:52:28.187Z"
+    },
+    {
+      "sourceId": "koto-yosangaiyou-r2",
+      "url": "https://www.city.koto.lg.jp/011102/documents/2yosanangaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260716073352/https://www.city.koto.lg.jp/011102/documents/2yosanangaiyou.pdf",
+      "waybackTimestamp": "20260716073352",
+      "checkedAt": "2026-07-16T07:52:03.506Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "koto-yosangaiyou-r3",
+      "url": "https://www.city.koto.lg.jp/011102/3tousyoyosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20210330094543/https://www.city.koto.lg.jp/011102/3tousyoyosan.html",
+      "waybackTimestamp": "20210330094543",
+      "checkedAt": "2026-07-16T07:51:26.531Z"
+    },
+    {
+      "sourceId": "koto-yosangaiyou-r3",
+      "url": "https://www.city.koto.lg.jp/011102/documents/3yosanangaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260716073052/https://www.city.koto.lg.jp/011102/documents/3yosanangaiyou.pdf",
+      "waybackTimestamp": "20260716073052",
+      "checkedAt": "2026-07-16T07:50:59.299Z",
+      "sha256Match": true
+    },
+    {
       "sourceId": "koto-yosangaiyou-r4",
       "url": "https://www.city.koto.lg.jp/011102/4tousyoyosan.html",
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260308231806/https://www.city.koto.lg.jp/011102/4tousyoyosan.html",
       "waybackTimestamp": "20260308231806",
-      "checkedAt": "2026-07-16T07:29:39.381Z"
+      "checkedAt": "2026-07-16T07:50:26.206Z"
     },
     {
       "sourceId": "koto-yosangaiyou-r4",
@@ -1669,7 +1848,7 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20230205201405/https://www.city.koto.lg.jp/011102/documents/4tousyoyosanangaiyou.pdf",
       "waybackTimestamp": "20230205201405",
-      "checkedAt": "2026-07-16T07:29:28.264Z",
+      "checkedAt": "2026-07-16T07:49:52.644Z",
       "sha256Match": false,
       "waybackTruncated": true
     },
@@ -1682,14 +1861,6 @@
       "checkedAt": "2026-07-16T07:25:49.073Z",
       "sha256Match": false,
       "waybackTruncated": true
-    },
-    {
-      "sourceId": "koto-yosangaiyou-r5",
-      "url": "https://www.city.koto.lg.jp/011102/r5nendotousyoyosan.html",
-      "kind": "landing",
-      "waybackUrl": "https://web.archive.org/web/20260113120926/https://www.city.koto.lg.jp/011102/r5nendotousyoyosan.html",
-      "waybackTimestamp": "20260113120926",
-      "checkedAt": "2026-07-16T07:25:59.474Z"
     },
     {
       "sourceId": "koto-yosangaiyou-r6",
@@ -1881,12 +2052,29 @@
       "checkedAt": "2026-07-15T16:11:01.683Z"
     },
     {
+      "sourceId": "meguro-yosanan-r2",
+      "url": "https://www.city.meguro.tokyo.jp/documents/2257/r02yosan_s01.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20241120192322/https://www.city.meguro.tokyo.jp/documents/2257/r02yosan_s01.pdf",
+      "waybackTimestamp": "20241120192322",
+      "checkedAt": "2026-07-16T07:49:03.700Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "meguro-yosanan-r2",
+      "url": "https://www.city.meguro.tokyo.jp/zaisei/kusei/yosan/gaiyo02.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20240615005711/https://www.city.meguro.tokyo.jp/zaisei/kusei/yosan/gaiyo02.html",
+      "waybackTimestamp": "20240615005711",
+      "checkedAt": "2026-07-16T07:49:12.385Z"
+    },
+    {
       "sourceId": "meguro-yosanan-r3",
       "url": "https://www.city.meguro.tokyo.jp/documents/2258/r03_yosan_siryou.pdf",
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20240831191825/https://www.city.meguro.tokyo.jp/documents/2258/r03_yosan_siryou.pdf",
       "waybackTimestamp": "20240831191825",
-      "checkedAt": "2026-07-16T07:29:48.102Z",
+      "checkedAt": "2026-07-16T07:48:28.112Z",
       "sha256Match": true
     },
     {
@@ -1895,7 +2083,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260214111323/https://www.city.meguro.tokyo.jp/zaisei/kusei/yosan/beforegaiyo03.html",
       "waybackTimestamp": "20260214111323",
-      "checkedAt": "2026-07-16T07:29:49.667Z"
+      "checkedAt": "2026-07-16T07:48:48.013Z"
     },
     {
       "sourceId": "meguro-yosanan-r4",
@@ -1903,7 +2091,7 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260716072706/https://www.city.meguro.tokyo.jp/documents/2259/r04_yosan_siryou.pdf",
       "waybackTimestamp": "20260716072706",
-      "checkedAt": "2026-07-16T07:28:09.533Z",
+      "checkedAt": "2026-07-16T07:47:09.577Z",
       "sha256Match": true
     },
     {
@@ -1912,7 +2100,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20240616044600/https://www.city.meguro.tokyo.jp/zaisei/kusei/yosan/beforegaiyo04.html",
       "waybackTimestamp": "20240616044600",
-      "checkedAt": "2026-07-16T07:28:34.484Z"
+      "checkedAt": "2026-07-16T07:47:50.824Z"
     },
     {
       "sourceId": "meguro-yosanan-r5",
@@ -2670,6 +2858,74 @@
       "waybackUrl": "https://web.archive.org/web/20260715173114/https://www.city.sendai.jp/yosandaichi/shise/zaise/zaimu/zaise/sendaishi/yosan/r8terekai/r8-1/index/index/yosansetumei.html",
       "waybackTimestamp": "20260715173114",
       "checkedAt": "2026-07-15T17:32:05.253Z"
+    },
+    {
+      "sourceId": "shibuya-yosansho-r5",
+      "url": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/e0b774174e384a5da3a056344280fea2/yosan05_yosansho05.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260716074123/https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/e0b774174e384a5da3a056344280fea2/yosan05_yosansho05.pdf",
+      "waybackTimestamp": "20260716074123",
+      "checkedAt": "2026-07-16T07:41:49.447Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "shibuya-yosansho-r5",
+      "url": "https://www.city.shibuya.tokyo.jp/kusei/zaisei/yosan-aramashi/yosan05.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260412224521/https://www.city.shibuya.tokyo.jp/kusei/zaisei/yosan-aramashi/yosan05.html",
+      "waybackTimestamp": "20260412224521",
+      "checkedAt": "2026-07-16T07:42:06.053Z"
+    },
+    {
+      "sourceId": "shibuya-yosansho-r6",
+      "url": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/015bac93f649407c8b1b77e74679a5d0/yosan06_yosansho06.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20251103090436/https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/015bac93f649407c8b1b77e74679a5d0/yosan06_yosansho06.pdf",
+      "waybackTimestamp": "20251103090436",
+      "checkedAt": "2026-07-16T07:37:33.818Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "shibuya-yosansho-r6",
+      "url": "https://www.city.shibuya.tokyo.jp/kusei/zaisei/yosan-aramashi/yosan06.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260716073838/https://www.city.shibuya.tokyo.jp/kusei/zaisei/yosan-aramashi/yosan06.html",
+      "waybackTimestamp": "20260716073838",
+      "checkedAt": "2026-07-16T07:39:35.300Z"
+    },
+    {
+      "sourceId": "shibuya-yosansho-r7",
+      "url": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/adb12cdac1e243b08bf17586deb3b4e6/yosan07_yosansho07.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20251103085548/https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/adb12cdac1e243b08bf17586deb3b4e6/yosan07_yosansho07.pdf",
+      "waybackTimestamp": "20251103085548",
+      "checkedAt": "2026-07-16T07:34:35.143Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "shibuya-yosansho-r7",
+      "url": "https://www.city.shibuya.tokyo.jp/kusei/zaisei/yosan-aramashi/yosan07.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260412223144/https://www.city.shibuya.tokyo.jp/kusei/zaisei/yosan-aramashi/yosan07.html",
+      "waybackTimestamp": "20260412223144",
+      "checkedAt": "2026-07-16T07:34:40.299Z"
+    },
+    {
+      "sourceId": "shibuya-yosansho-r8",
+      "url": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/c85b01cbe55648f3b5ca9e2a24f1acdc/yosan08_yosansho08.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260716072603/https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/c85b01cbe55648f3b5ca9e2a24f1acdc/yosan08_yosansho08.pdf",
+      "waybackTimestamp": "20260716072603",
+      "checkedAt": "2026-07-16T07:27:47.603Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "shibuya-yosansho-r8",
+      "url": "https://www.city.shibuya.tokyo.jp/kusei/zaisei/yosan-aramashi/yosan08.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260716072904/https://www.city.shibuya.tokyo.jp/kusei/zaisei/yosan-aramashi/yosan08.html",
+      "waybackTimestamp": "20260716072904",
+      "checkedAt": "2026-07-16T07:29:40.260Z"
     },
     {
       "sourceId": "shizuoka-yosansho-r6",
