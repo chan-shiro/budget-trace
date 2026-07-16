@@ -2782,7 +2782,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和8年度 中央区各会計予算計上額総括表",
-      "sourceUrl": "https://www.city.chuo.lg.jp/documents/17921/r8_sokatsuhyo.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260313021918/https://www.city.chuo.lg.jp/documents/17921/r8_sokatsuhyo.pdf",
       "originUrl": "https://www.city.chuo.lg.jp/documents/17921/r8_sokatsuhyo.pdf",
       "sourceLocalUrl": "/sources/chuo-sokatsuhyo-r8/r8_sokatsuhyo.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -2790,7 +2790,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和8年度 中央区各会計予算計上額総括表",
           "type": "PDF",
-          "url": "https://www.city.chuo.lg.jp/documents/17921/r8_sokatsuhyo.pdf",
+          "url": "https://web.archive.org/web/20260313021918/https://www.city.chuo.lg.jp/documents/17921/r8_sokatsuhyo.pdf",
           "localUrl": "/sources/chuo-sokatsuhyo-r8/r8_sokatsuhyo.pdf",
           "source": "www.city.chuo.lg.jp",
           "thumb": "r8_sokatsuhyo.pdf ・ sha256 ce98ece87ab15e91… ・ 2026-07-16 取得"
@@ -4198,7 +4198,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和2年度 中央区各会計予算計上額総括表",
-      "sourceUrl": "https://www.city.chuo.lg.jp/documents/2786/r2tousyo_soukatuhyou.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260716071606/https://www.city.chuo.lg.jp/documents/2786/r2tousyo_soukatuhyou.pdf",
       "originUrl": "https://www.city.chuo.lg.jp/documents/2786/r2tousyo_soukatuhyou.pdf",
       "sourceLocalUrl": "/sources/chuo-sokatsuhyo-r2/r2tousyo_soukatuhyou.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -4206,7 +4206,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和2年度 中央区各会計予算計上額総括表",
           "type": "PDF",
-          "url": "https://www.city.chuo.lg.jp/documents/2786/r2tousyo_soukatuhyou.pdf",
+          "url": "https://web.archive.org/web/20260716071606/https://www.city.chuo.lg.jp/documents/2786/r2tousyo_soukatuhyou.pdf",
           "localUrl": "/sources/chuo-sokatsuhyo-r2/r2tousyo_soukatuhyou.pdf",
           "source": "www.city.chuo.lg.jp",
           "thumb": "r2tousyo_soukatuhyou.pdf ・ sha256 76e4f964e022a8b8… ・ 2026-07-16 取得"
@@ -5350,7 +5350,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和4年度 江東区予算（案）概要（一般会計当初予算対前年度比較）",
-      "sourceUrl": "https://www.city.koto.lg.jp/011102/documents/4tousyoyosanangaiyou.pdf",
+      "sourceUrl": "https://web.archive.org/web/20230205201405/https://www.city.koto.lg.jp/011102/documents/4tousyoyosanangaiyou.pdf",
       "originUrl": "https://www.city.koto.lg.jp/011102/documents/4tousyoyosanangaiyou.pdf",
       "sourceLocalUrl": "/sources/koto-yosangaiyou-r4/4tousyoyosanangaiyou.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -5358,7 +5358,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和4年度 江東区予算（案）概要（一般会計当初予算対前年度比較）",
           "type": "PDF",
-          "url": "https://www.city.koto.lg.jp/011102/documents/4tousyoyosanangaiyou.pdf",
+          "url": "https://web.archive.org/web/20230205201405/https://www.city.koto.lg.jp/011102/documents/4tousyoyosanangaiyou.pdf",
           "localUrl": "/sources/koto-yosangaiyou-r4/4tousyoyosanangaiyou.pdf",
           "source": "www.city.koto.lg.jp",
           "thumb": "4tousyoyosanangaiyou.pdf ・ sha256 31dd6b833cad8f65… ・ 2026-07-16 取得"
@@ -5580,7 +5580,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和3年度 江東区予算（案）概要（一般会計当初予算対前年度比較）",
-      "sourceUrl": "https://www.city.koto.lg.jp/011102/documents/3yosanangaiyou.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260716073052/https://www.city.koto.lg.jp/011102/documents/3yosanangaiyou.pdf",
       "originUrl": "https://www.city.koto.lg.jp/011102/documents/3yosanangaiyou.pdf",
       "sourceLocalUrl": "/sources/koto-yosangaiyou-r3/3yosanangaiyou.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -5588,7 +5588,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和3年度 江東区予算（案）概要（一般会計当初予算対前年度比較）",
           "type": "PDF",
-          "url": "https://www.city.koto.lg.jp/011102/documents/3yosanangaiyou.pdf",
+          "url": "https://web.archive.org/web/20260716073052/https://www.city.koto.lg.jp/011102/documents/3yosanangaiyou.pdf",
           "localUrl": "/sources/koto-yosangaiyou-r3/3yosanangaiyou.pdf",
           "source": "www.city.koto.lg.jp",
           "thumb": "3yosanangaiyou.pdf ・ sha256 e6ab7a25a229a031… ・ 2026-07-16 取得"
@@ -5816,7 +5816,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和2年度 江東区予算（案）概要（一般会計当初予算対前年度比較）",
-      "sourceUrl": "https://www.city.koto.lg.jp/011102/documents/2yosanangaiyou.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260716073352/https://www.city.koto.lg.jp/011102/documents/2yosanangaiyou.pdf",
       "originUrl": "https://www.city.koto.lg.jp/011102/documents/2yosanangaiyou.pdf",
       "sourceLocalUrl": "/sources/koto-yosangaiyou-r2/2yosanangaiyou.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -5824,7 +5824,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和2年度 江東区予算（案）概要（一般会計当初予算対前年度比較）",
           "type": "PDF",
-          "url": "https://www.city.koto.lg.jp/011102/documents/2yosanangaiyou.pdf",
+          "url": "https://web.archive.org/web/20260716073352/https://www.city.koto.lg.jp/011102/documents/2yosanangaiyou.pdf",
           "localUrl": "/sources/koto-yosangaiyou-r2/2yosanangaiyou.pdf",
           "source": "www.city.koto.lg.jp",
           "thumb": "2yosanangaiyou.pdf ・ sha256 531982d3e0d55ebf… ・ 2026-07-16 取得"
@@ -7198,7 +7198,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和3年度 目黒区当初予算案プレス発表資料（資料編・各会計歳入歳出予算）",
-      "sourceUrl": "https://www.city.meguro.tokyo.jp/documents/2258/r03_yosan_siryou.pdf",
+      "sourceUrl": "https://web.archive.org/web/20240831191825/https://www.city.meguro.tokyo.jp/documents/2258/r03_yosan_siryou.pdf",
       "originUrl": "https://www.city.meguro.tokyo.jp/documents/2258/r03_yosan_siryou.pdf",
       "sourceLocalUrl": "/sources/meguro-yosanan-r3/r03_yosan_siryou.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -7206,7 +7206,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和3年度 目黒区当初予算案プレス発表資料（資料編・各会計歳入歳出予算）",
           "type": "PDF",
-          "url": "https://www.city.meguro.tokyo.jp/documents/2258/r03_yosan_siryou.pdf",
+          "url": "https://web.archive.org/web/20240831191825/https://www.city.meguro.tokyo.jp/documents/2258/r03_yosan_siryou.pdf",
           "localUrl": "/sources/meguro-yosanan-r3/r03_yosan_siryou.pdf",
           "source": "www.city.meguro.tokyo.jp",
           "thumb": "r03_yosan_siryou.pdf ・ sha256 4d725370066be020… ・ 2026-07-16 取得"
@@ -7434,7 +7434,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和2年度 目黒区当初予算案プレス発表資料（資料編・各会計歳入歳出予算）",
-      "sourceUrl": "https://www.city.meguro.tokyo.jp/documents/2257/r02yosan_s01.pdf",
+      "sourceUrl": "https://web.archive.org/web/20241120192322/https://www.city.meguro.tokyo.jp/documents/2257/r02yosan_s01.pdf",
       "originUrl": "https://www.city.meguro.tokyo.jp/documents/2257/r02yosan_s01.pdf",
       "sourceLocalUrl": "/sources/meguro-yosanan-r2/r02yosan_s01.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -7442,7 +7442,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和2年度 目黒区当初予算案プレス発表資料（資料編・各会計歳入歳出予算）",
           "type": "PDF",
-          "url": "https://www.city.meguro.tokyo.jp/documents/2257/r02yosan_s01.pdf",
+          "url": "https://web.archive.org/web/20241120192322/https://www.city.meguro.tokyo.jp/documents/2257/r02yosan_s01.pdf",
           "localUrl": "/sources/meguro-yosanan-r2/r02yosan_s01.pdf",
           "source": "www.city.meguro.tokyo.jp",
           "thumb": "r02yosan_s01.pdf ・ sha256 4aa9aafc17995273… ・ 2026-07-16 取得"
@@ -9356,7 +9356,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和8年度 渋谷区各会計予算・渋谷区各会計予算説明書（歳入歳出予算事項別明細書 総括）",
-      "sourceUrl": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/c85b01cbe55648f3b5ca9e2a24f1acdc/yosan08_yosansho08.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260716072603/https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/c85b01cbe55648f3b5ca9e2a24f1acdc/yosan08_yosansho08.pdf",
       "originUrl": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/c85b01cbe55648f3b5ca9e2a24f1acdc/yosan08_yosansho08.pdf",
       "sourceLocalUrl": "/sources/shibuya-yosansho-r8/yosan08_yosansho08.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -9364,7 +9364,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和8年度 渋谷区各会計予算・渋谷区各会計予算説明書（歳入歳出予算事項別明細書 総括）",
           "type": "PDF",
-          "url": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/c85b01cbe55648f3b5ca9e2a24f1acdc/yosan08_yosansho08.pdf",
+          "url": "https://web.archive.org/web/20260716072603/https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/c85b01cbe55648f3b5ca9e2a24f1acdc/yosan08_yosansho08.pdf",
           "localUrl": "/sources/shibuya-yosansho-r8/yosan08_yosansho08.pdf",
           "source": "files.city.shibuya.tokyo.jp",
           "thumb": "yosan08_yosansho08.pdf ・ sha256 352d9ee92f149e49… ・ 2026-07-16 取得"
@@ -9580,7 +9580,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和7年度 渋谷区各会計予算・渋谷区各会計予算説明書（歳入歳出予算事項別明細書 総括）",
-      "sourceUrl": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/adb12cdac1e243b08bf17586deb3b4e6/yosan07_yosansho07.pdf",
+      "sourceUrl": "https://web.archive.org/web/20251103085548/https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/adb12cdac1e243b08bf17586deb3b4e6/yosan07_yosansho07.pdf",
       "originUrl": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/adb12cdac1e243b08bf17586deb3b4e6/yosan07_yosansho07.pdf",
       "sourceLocalUrl": "/sources/shibuya-yosansho-r7/yosan07_yosansho07.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -9588,7 +9588,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和7年度 渋谷区各会計予算・渋谷区各会計予算説明書（歳入歳出予算事項別明細書 総括）",
           "type": "PDF",
-          "url": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/adb12cdac1e243b08bf17586deb3b4e6/yosan07_yosansho07.pdf",
+          "url": "https://web.archive.org/web/20251103085548/https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/adb12cdac1e243b08bf17586deb3b4e6/yosan07_yosansho07.pdf",
           "localUrl": "/sources/shibuya-yosansho-r7/yosan07_yosansho07.pdf",
           "source": "files.city.shibuya.tokyo.jp",
           "thumb": "yosan07_yosansho07.pdf ・ sha256 3e2efbe4d6e69588… ・ 2026-07-16 取得"
@@ -9804,7 +9804,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和6年度 渋谷区各会計予算・渋谷区各会計予算説明書（歳入歳出予算事項別明細書 総括）",
-      "sourceUrl": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/015bac93f649407c8b1b77e74679a5d0/yosan06_yosansho06.pdf",
+      "sourceUrl": "https://web.archive.org/web/20251103090436/https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/015bac93f649407c8b1b77e74679a5d0/yosan06_yosansho06.pdf",
       "originUrl": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/015bac93f649407c8b1b77e74679a5d0/yosan06_yosansho06.pdf",
       "sourceLocalUrl": "/sources/shibuya-yosansho-r6/yosan06_yosansho06.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -9812,7 +9812,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和6年度 渋谷区各会計予算・渋谷区各会計予算説明書（歳入歳出予算事項別明細書 総括）",
           "type": "PDF",
-          "url": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/015bac93f649407c8b1b77e74679a5d0/yosan06_yosansho06.pdf",
+          "url": "https://web.archive.org/web/20251103090436/https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/015bac93f649407c8b1b77e74679a5d0/yosan06_yosansho06.pdf",
           "localUrl": "/sources/shibuya-yosansho-r6/yosan06_yosansho06.pdf",
           "source": "files.city.shibuya.tokyo.jp",
           "thumb": "yosan06_yosansho06.pdf ・ sha256 7695fb66a9374a9e… ・ 2026-07-16 取得"
@@ -10028,7 +10028,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和5年度 渋谷区各会計予算・渋谷区各会計予算説明書（歳入歳出予算事項別明細書 総括）",
-      "sourceUrl": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/e0b774174e384a5da3a056344280fea2/yosan05_yosansho05.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260716074123/https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/e0b774174e384a5da3a056344280fea2/yosan05_yosansho05.pdf",
       "originUrl": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/e0b774174e384a5da3a056344280fea2/yosan05_yosansho05.pdf",
       "sourceLocalUrl": "/sources/shibuya-yosansho-r5/yosan05_yosansho05.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -10036,7 +10036,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和5年度 渋谷区各会計予算・渋谷区各会計予算説明書（歳入歳出予算事項別明細書 総括）",
           "type": "PDF",
-          "url": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/e0b774174e384a5da3a056344280fea2/yosan05_yosansho05.pdf",
+          "url": "https://web.archive.org/web/20260716074123/https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/e0b774174e384a5da3a056344280fea2/yosan05_yosansho05.pdf",
           "localUrl": "/sources/shibuya-yosansho-r5/yosan05_yosansho05.pdf",
           "source": "files.city.shibuya.tokyo.jp",
           "thumb": "yosan05_yosansho05.pdf ・ sha256 a8ae22986c9e5d85… ・ 2026-07-16 取得"
@@ -10266,7 +10266,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和8年度 葛飾区予算概要（各会計款別表）",
-      "sourceUrl": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/041/034/8yosangaiyou.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260716072948/https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/041/034/8yosangaiyou.pdf",
       "originUrl": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/041/034/8yosangaiyou.pdf",
       "sourceLocalUrl": "/sources/katsushika-yosangaiyou-r8/8yosangaiyou.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -10274,7 +10274,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和8年度 葛飾区予算概要（各会計款別表）",
           "type": "PDF",
-          "url": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/041/034/8yosangaiyou.pdf",
+          "url": "https://web.archive.org/web/20260716072948/https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/041/034/8yosangaiyou.pdf",
           "localUrl": "/sources/katsushika-yosangaiyou-r8/8yosangaiyou.pdf",
           "source": "www.city.katsushika.lg.jp",
           "thumb": "8yosangaiyou.pdf ・ sha256 b3f9f394ff56fba0… ・ 2026-07-16 取得"
@@ -10496,7 +10496,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和7年度 葛飾区予算概要（各会計款別表）",
-      "sourceUrl": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/037/487/r7yosangaiyou.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260716073542/https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/037/487/r7yosangaiyou.pdf",
       "originUrl": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/037/487/r7yosangaiyou.pdf",
       "sourceLocalUrl": "/sources/katsushika-yosangaiyou-r7/r7yosangaiyou.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -10504,7 +10504,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和7年度 葛飾区予算概要（各会計款別表）",
           "type": "PDF",
-          "url": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/037/487/r7yosangaiyou.pdf",
+          "url": "https://web.archive.org/web/20260716073542/https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/037/487/r7yosangaiyou.pdf",
           "localUrl": "/sources/katsushika-yosangaiyou-r7/r7yosangaiyou.pdf",
           "source": "www.city.katsushika.lg.jp",
           "thumb": "r7yosangaiyou.pdf ・ sha256 2720ce5de0137e77… ・ 2026-07-16 取得"
@@ -10726,7 +10726,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和6年度 葛飾区予算概要（各会計款別表）",
-      "sourceUrl": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/034/308/r6yosangaiyo.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260417190406/https://www2.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/034/308/r6yosangaiyo.pdf",
       "originUrl": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/034/308/r6yosangaiyo.pdf",
       "sourceLocalUrl": "/sources/katsushika-yosangaiyou-r6/r6yosangaiyo.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -10734,7 +10734,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和6年度 葛飾区予算概要（各会計款別表）",
           "type": "PDF",
-          "url": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/034/308/r6yosangaiyo.pdf",
+          "url": "https://web.archive.org/web/20260417190406/https://www2.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/034/308/r6yosangaiyo.pdf",
           "localUrl": "/sources/katsushika-yosangaiyou-r6/r6yosangaiyo.pdf",
           "source": "www.city.katsushika.lg.jp",
           "thumb": "r6yosangaiyo.pdf ・ sha256 c308b8392384b234… ・ 2026-07-16 取得"
@@ -10956,7 +10956,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和5年度 葛飾区予算概要（各会計款別表）",
-      "sourceUrl": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/030/965/r5_katsu_yosan2.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260418105250/https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/030/965/r5_katsu_yosan2.pdf",
       "originUrl": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/030/965/r5_katsu_yosan2.pdf",
       "sourceLocalUrl": "/sources/katsushika-yosangaiyou-r5/r5_katsu_yosan2.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -10964,7 +10964,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和5年度 葛飾区予算概要（各会計款別表）",
           "type": "PDF",
-          "url": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/030/965/r5_katsu_yosan2.pdf",
+          "url": "https://web.archive.org/web/20260418105250/https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/030/965/r5_katsu_yosan2.pdf",
           "localUrl": "/sources/katsushika-yosangaiyou-r5/r5_katsu_yosan2.pdf",
           "source": "www.city.katsushika.lg.jp",
           "thumb": "r5_katsu_yosan2.pdf ・ sha256 ce630598991e7b89… ・ 2026-07-16 取得"
@@ -11192,7 +11192,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和4年度 葛飾区予算概要（各会計款別表）",
-      "sourceUrl": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/027/976/r4yosanngaiyou.pdf",
+      "sourceUrl": "https://web.archive.org/web/20250624111742/https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/027/976/r4yosanngaiyou.pdf",
       "originUrl": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/027/976/r4yosanngaiyou.pdf",
       "sourceLocalUrl": "/sources/katsushika-yosangaiyou-r4/r4yosanngaiyou.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -11200,7 +11200,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和4年度 葛飾区予算概要（各会計款別表）",
           "type": "PDF",
-          "url": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/027/976/r4yosanngaiyou.pdf",
+          "url": "https://web.archive.org/web/20250624111742/https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/027/976/r4yosanngaiyou.pdf",
           "localUrl": "/sources/katsushika-yosangaiyou-r4/r4yosanngaiyou.pdf",
           "source": "www.city.katsushika.lg.jp",
           "thumb": "r4yosanngaiyou.pdf ・ sha256 1ab2f9fa9c30f3cd… ・ 2026-07-16 取得"
@@ -11428,7 +11428,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和3年度 葛飾区予算概要（各会計款別表）",
-      "sourceUrl": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/025/473/reiwa3yosangaiyou.pdf",
+      "sourceUrl": "https://web.archive.org/web/20250624112155/https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/025/473/reiwa3yosangaiyou.pdf",
       "originUrl": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/025/473/reiwa3yosangaiyou.pdf",
       "sourceLocalUrl": "/sources/katsushika-yosangaiyou-r3/reiwa3yosangaiyou.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -11436,7 +11436,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和3年度 葛飾区予算概要（各会計款別表）",
           "type": "PDF",
-          "url": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/025/473/reiwa3yosangaiyou.pdf",
+          "url": "https://web.archive.org/web/20250624112155/https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/025/473/reiwa3yosangaiyou.pdf",
           "localUrl": "/sources/katsushika-yosangaiyou-r3/reiwa3yosangaiyou.pdf",
           "source": "www.city.katsushika.lg.jp",
           "thumb": "reiwa3yosangaiyou.pdf ・ sha256 ab14ea9d18218301… ・ 2026-07-16 取得"
@@ -11670,7 +11670,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和2年度 葛飾区予算概要（各会計款別表）",
-      "sourceUrl": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/022/573/yosanngaiyou.pdf",
+      "sourceUrl": "https://web.archive.org/web/20250624111921/https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/022/573/yosanngaiyou.pdf",
       "originUrl": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/022/573/yosanngaiyou.pdf",
       "sourceLocalUrl": "/sources/katsushika-yosangaiyou-r2/yosanngaiyou.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -11678,7 +11678,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和2年度 葛飾区予算概要（各会計款別表）",
           "type": "PDF",
-          "url": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/022/573/yosanngaiyou.pdf",
+          "url": "https://web.archive.org/web/20250624111921/https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/022/573/yosanngaiyou.pdf",
           "localUrl": "/sources/katsushika-yosangaiyou-r2/yosanngaiyou.pdf",
           "source": "www.city.katsushika.lg.jp",
           "thumb": "yosanngaiyou.pdf ・ sha256 14885dbd448fa53b… ・ 2026-07-16 取得"
@@ -46225,7 +46225,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       }
     ],
     "sourceTitle": "令和8年度 中央区各会計予算計上額総括表",
-    "sourceUrl": "https://www.city.chuo.lg.jp/documents/17921/r8_sokatsuhyo.pdf",
+    "sourceUrl": "https://web.archive.org/web/20260313021918/https://www.city.chuo.lg.jp/documents/17921/r8_sokatsuhyo.pdf",
     "originUrl": "https://www.city.chuo.lg.jp/documents/17921/r8_sokatsuhyo.pdf",
     "sourceLocalUrl": "/sources/chuo-sokatsuhyo-r8/r8_sokatsuhyo.pdf",
     "pagesLabel": "款別歳入歳出",
@@ -46233,7 +46233,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       {
         "title": "令和8年度 中央区各会計予算計上額総括表",
         "type": "PDF",
-        "url": "https://www.city.chuo.lg.jp/documents/17921/r8_sokatsuhyo.pdf",
+        "url": "https://web.archive.org/web/20260313021918/https://www.city.chuo.lg.jp/documents/17921/r8_sokatsuhyo.pdf",
         "localUrl": "/sources/chuo-sokatsuhyo-r8/r8_sokatsuhyo.pdf",
         "source": "www.city.chuo.lg.jp",
         "thumb": "r8_sokatsuhyo.pdf ・ sha256 ce98ece87ab15e91… ・ 2026-07-16 取得"
@@ -47151,7 +47151,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       }
     ],
     "sourceTitle": "令和8年度 渋谷区各会計予算・渋谷区各会計予算説明書（歳入歳出予算事項別明細書 総括）",
-    "sourceUrl": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/c85b01cbe55648f3b5ca9e2a24f1acdc/yosan08_yosansho08.pdf",
+    "sourceUrl": "https://web.archive.org/web/20260716072603/https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/c85b01cbe55648f3b5ca9e2a24f1acdc/yosan08_yosansho08.pdf",
     "originUrl": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/c85b01cbe55648f3b5ca9e2a24f1acdc/yosan08_yosansho08.pdf",
     "sourceLocalUrl": "/sources/shibuya-yosansho-r8/yosan08_yosansho08.pdf",
     "pagesLabel": "款別歳入歳出",
@@ -47159,7 +47159,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       {
         "title": "令和8年度 渋谷区各会計予算・渋谷区各会計予算説明書（歳入歳出予算事項別明細書 総括）",
         "type": "PDF",
-        "url": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/c85b01cbe55648f3b5ca9e2a24f1acdc/yosan08_yosansho08.pdf",
+        "url": "https://web.archive.org/web/20260716072603/https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/c85b01cbe55648f3b5ca9e2a24f1acdc/yosan08_yosansho08.pdf",
         "localUrl": "/sources/shibuya-yosansho-r8/yosan08_yosansho08.pdf",
         "source": "files.city.shibuya.tokyo.jp",
         "thumb": "yosan08_yosansho08.pdf ・ sha256 352d9ee92f149e49… ・ 2026-07-16 取得"
@@ -47387,7 +47387,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       }
     ],
     "sourceTitle": "令和8年度 葛飾区予算概要（各会計款別表）",
-    "sourceUrl": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/041/034/8yosangaiyou.pdf",
+    "sourceUrl": "https://web.archive.org/web/20260716072948/https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/041/034/8yosangaiyou.pdf",
     "originUrl": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/041/034/8yosangaiyou.pdf",
     "sourceLocalUrl": "/sources/katsushika-yosangaiyou-r8/8yosangaiyou.pdf",
     "pagesLabel": "款別歳入歳出",
@@ -47395,7 +47395,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       {
         "title": "令和8年度 葛飾区予算概要（各会計款別表）",
         "type": "PDF",
-        "url": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/041/034/8yosangaiyou.pdf",
+        "url": "https://web.archive.org/web/20260716072948/https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/041/034/8yosangaiyou.pdf",
         "localUrl": "/sources/katsushika-yosangaiyou-r8/8yosangaiyou.pdf",
         "source": "www.city.katsushika.lg.jp",
         "thumb": "8yosangaiyou.pdf ・ sha256 b3f9f394ff56fba0… ・ 2026-07-16 取得"
