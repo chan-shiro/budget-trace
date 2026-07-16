@@ -351,6 +351,10 @@ export const SOURCES: SourceEntry[] = [
       expenditurePage: 6,
       revenueHeading: "歳入",
       expenditureHeading: "歳出",
+      // 歳入の款10 国有提供施設等所在市町村/助成交付金 が2行折返し（名前欄非空のまま下段へ続く型）。
+      // 指定しないと「助成交付金」が款11 の頭に付き「助成交付金地方特例交付金」に化ける
+      // （2026-07-16 にダッシュボード目視で発覚）。歳出は折返し無し。
+      kanNameContinues: { revenue: [10] },
       // 主な事業＝概要 p.2-3 の重点事業（拡/新 ◎ 事業名 … 金額 千円）
       projectsFile: "00_08_gaiyou.pdf",
       projectPages: { from: 2, to: 3 },
@@ -589,6 +593,12 @@ export const SOURCES: SourceEntry[] = [
       expenditureHeading: "一般会計歳出",
       revenueTotalLabel: "合計",
       expenditureTotalLabel: "合計",
+      // 歳入は款名が2行に折り返す（名前欄が非空のまま下段へ続く「第4の折返し型」）:
+      // 款2 地方消費税/清算金・款4 地方特例/交付金・款6 交通安全対策/特別交付金・
+      // 款7 分担金及び/負担金・款8 使用料及び/手数料。指定しないと下段が**次の款の頭に付き**、
+      // 「清算金地方譲与税」「交付金地方交付税」等に化ける（金額と Σ は正しいまま素通りする。
+      // 2026-07-16 にダッシュボード目視で発覚）。歳出は折返し無し。
+      kanNameContinues: { revenue: [2, 4, 6, 7, 8] },
       // 主要事業: 概要 p.1-22 の ○（新/拡）事業名 …金額千円（中項目《…》で施策）。
       // p.1 は冒頭に総括表（単位ヘッダ・行末に千円無し→誤検出しない）＋主要事業の開始
       projectsFile: "02_tousyonogaiyou_1.pdf",

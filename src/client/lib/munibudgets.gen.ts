@@ -21330,7 +21330,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
       "prevNote": "",
       "revenue": [
         {
-          "name": "交付金地方交付税",
+          "name": "地方交付税",
           "v": 1409.44,
           "prevV": 1369.85,
           "yoy": 2.9
@@ -21348,13 +21348,13 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "yoy": -11.5
         },
         {
-          "name": "手数料国庫支出金",
+          "name": "国庫支出金",
           "v": 541.21052,
           "prevV": 501.27532,
           "yoy": 8
         },
         {
-          "name": "地方消費税",
+          "name": "地方消費税清算金",
           "v": 515.65652,
           "prevV": 451.91967,
           "yoy": 14.1
@@ -21366,7 +21366,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "yoy": 10.8
         },
         {
-          "name": "清算金地方譲与税",
+          "name": "地方譲与税",
           "v": 195.84254,
           "prevV": 179.4261,
           "yoy": 9.1
@@ -21384,19 +21384,19 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "yoy": null,
           "children": [
             {
-              "name": "負担金使用料及び",
+              "name": "使用料及び手数料",
               "v": 76.96147,
               "prevV": 74.95492,
               "yoy": 2.7
             },
             {
-              "name": "地方特例",
+              "name": "地方特例交付金",
               "v": 50.26389,
               "prevV": 4.58001,
               "yoy": 997.5
             },
             {
-              "name": "特別交付金分担金及び",
+              "name": "分担金及び負担金",
               "v": 26.62594,
               "prevV": 26.56239,
               "yoy": 0.2
@@ -21408,7 +21408,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
               "yoy": 29.6
             },
             {
-              "name": "交通安全対策",
+              "name": "交通安全対策特別交付金",
               "v": 1.9,
               "prevV": 2.06,
               "yoy": -7.8
@@ -34589,7 +34589,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
               "yoy": 34.6
             },
             {
-              "name": "助成交付金地方特例交付金",
+              "name": "地方特例交付金",
               "v": 2.82305,
               "prevV": 2.10012,
               "yoy": 34.4
@@ -34607,7 +34607,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
               "yoy": 11.6
             },
             {
-              "name": "国有提供施設等所在市町村",
+              "name": "国有提供施設等所在市町村助成交付金",
               "v": 2.22282,
               "prevV": 2.16082,
               "yoy": 2.9
@@ -53509,7 +53509,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
     "prevNote": "",
     "revenue": [
       {
-        "name": "交付金地方交付税",
+        "name": "地方交付税",
         "v": 1409.44,
         "prevV": 1369.85,
         "yoy": 2.9
@@ -53527,13 +53527,13 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "yoy": -11.5
       },
       {
-        "name": "手数料国庫支出金",
+        "name": "国庫支出金",
         "v": 541.21052,
         "prevV": 501.27532,
         "yoy": 8
       },
       {
-        "name": "地方消費税",
+        "name": "地方消費税清算金",
         "v": 515.65652,
         "prevV": 451.91967,
         "yoy": 14.1
@@ -53545,7 +53545,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "yoy": 10.8
       },
       {
-        "name": "清算金地方譲与税",
+        "name": "地方譲与税",
         "v": 195.84254,
         "prevV": 179.4261,
         "yoy": 9.1
@@ -53563,19 +53563,19 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "yoy": null,
         "children": [
           {
-            "name": "負担金使用料及び",
+            "name": "使用料及び手数料",
             "v": 76.96147,
             "prevV": 74.95492,
             "yoy": 2.7
           },
           {
-            "name": "地方特例",
+            "name": "地方特例交付金",
             "v": 50.26389,
             "prevV": 4.58001,
             "yoy": 997.5
           },
           {
-            "name": "特別交付金分担金及び",
+            "name": "分担金及び負担金",
             "v": 26.62594,
             "prevV": 26.56239,
             "yoy": 0.2
@@ -53587,7 +53587,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
             "yoy": 29.6
           },
           {
-            "name": "交通安全対策",
+            "name": "交通安全対策特別交付金",
             "v": 1.9,
             "prevV": 2.06,
             "yoy": -7.8
@@ -61218,7 +61218,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
             "yoy": 34.6
           },
           {
-            "name": "助成交付金地方特例交付金",
+            "name": "地方特例交付金",
             "v": 2.82305,
             "prevV": 2.10012,
             "yoy": 34.4
@@ -61236,7 +61236,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
             "yoy": 11.6
           },
           {
-            "name": "国有提供施設等所在市町村",
+            "name": "国有提供施設等所在市町村助成交付金",
             "v": 2.22282,
             "prevV": 2.16082,
             "yoy": 2.9

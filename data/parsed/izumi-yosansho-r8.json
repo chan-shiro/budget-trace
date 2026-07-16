@@ -3,7 +3,7 @@
   "sourceId": "izumi-yosansho-r8",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-07-16T07:24:02.089Z",
+  "parsedAt": "2026-07-16T08:21:40.785Z",
   "unit": "thousandYen",
   "fiscalYear": "R8",
   "account": "一般会計",
@@ -115,7 +115,7 @@
     {
       "side": "revenue",
       "kanNo": 10,
-      "kanName": "国有提供施設等所在市町村",
+      "kanName": "国有提供施設等所在市町村助成交付金",
       "amount": 222282,
       "prevAmount": 216082,
       "locator": {
@@ -126,7 +126,7 @@
     {
       "side": "revenue",
       "kanNo": 11,
-      "kanName": "助成交付金地方特例交付金",
+      "kanName": "地方特例交付金",
       "amount": 282305,
       "prevAmount": 210012,
       "locator": {
