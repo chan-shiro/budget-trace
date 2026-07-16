@@ -18,7 +18,7 @@ export const ROADMAP_PROGRESS = {
   "prefCount": 47,
   "sourceCount": 242,
   "fileCount": 367,
-  "archivedCount": 212,
+  "archivedCount": 219,
   "licenseOpen": 19,
   "licensePermission": 165,
   "licenseUnverified": 58,

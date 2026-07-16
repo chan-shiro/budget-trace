@@ -14534,7 +14534,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和8年度 杉並区予算書（歳入歳出予算事項別明細書 総括）",
-      "sourceUrl": "https://www.city.suginami.tokyo.jp/documents/22830/r8yosansho.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260716153439/https://www.city.suginami.tokyo.jp/documents/22830/r8yosansho.pdf",
       "originUrl": "https://www.city.suginami.tokyo.jp/documents/22830/r8yosansho.pdf",
       "sourceLocalUrl": "/sources/suginami-yosansho-r8/r8yosansho.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -14542,7 +14542,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和8年度 杉並区予算書（歳入歳出予算事項別明細書 総括）",
           "type": "PDF",
-          "url": "https://www.city.suginami.tokyo.jp/documents/22830/r8yosansho.pdf",
+          "url": "https://web.archive.org/web/20260716153439/https://www.city.suginami.tokyo.jp/documents/22830/r8yosansho.pdf",
           "localUrl": "/sources/suginami-yosansho-r8/r8yosansho.pdf",
           "source": "www.city.suginami.tokyo.jp",
           "thumb": "r8yosansho.pdf ・ sha256 3211fb2530e28fff… ・ 2026-07-16 取得"
@@ -14764,7 +14764,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和7年度 杉並区予算書（歳入歳出予算事項別明細書 総括）",
-      "sourceUrl": "https://www.city.suginami.tokyo.jp/documents/12499/r7yosansho.pdf",
+      "sourceUrl": "https://web.archive.org/web/20250223105336/https://www.city.suginami.tokyo.jp/documents/12499/r7yosansho.pdf",
       "originUrl": "https://www.city.suginami.tokyo.jp/documents/12499/r7yosansho.pdf",
       "sourceLocalUrl": "/sources/suginami-yosansho-r7/r7yosansho.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -14772,7 +14772,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和7年度 杉並区予算書（歳入歳出予算事項別明細書 総括）",
           "type": "PDF",
-          "url": "https://www.city.suginami.tokyo.jp/documents/12499/r7yosansho.pdf",
+          "url": "https://web.archive.org/web/20250223105336/https://www.city.suginami.tokyo.jp/documents/12499/r7yosansho.pdf",
           "localUrl": "/sources/suginami-yosansho-r7/r7yosansho.pdf",
           "source": "www.city.suginami.tokyo.jp",
           "thumb": "r7yosansho.pdf ・ sha256 74ea3825c7e5a851… ・ 2026-07-16 取得"
@@ -14994,7 +14994,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和6年度 杉並区予算書（歳入歳出予算事項別明細書 総括）",
-      "sourceUrl": "https://www.city.suginami.tokyo.jp/documents/7159/r6yosan0209.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260716153711/https://www.city.suginami.tokyo.jp/documents/7159/r6yosan0209.pdf",
       "originUrl": "https://www.city.suginami.tokyo.jp/documents/7159/r6yosan0209.pdf",
       "sourceLocalUrl": "/sources/suginami-yosansho-r6/r6yosan0209.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -15002,7 +15002,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和6年度 杉並区予算書（歳入歳出予算事項別明細書 総括）",
           "type": "PDF",
-          "url": "https://www.city.suginami.tokyo.jp/documents/7159/r6yosan0209.pdf",
+          "url": "https://web.archive.org/web/20260716153711/https://www.city.suginami.tokyo.jp/documents/7159/r6yosan0209.pdf",
           "localUrl": "/sources/suginami-yosansho-r6/r6yosan0209.pdf",
           "source": "www.city.suginami.tokyo.jp",
           "thumb": "r6yosan0209.pdf ・ sha256 fe2d374f3f31f7a9… ・ 2026-07-16 取得"
@@ -15224,7 +15224,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和5年度 杉並区予算書（歳入歳出予算事項別明細書 総括）",
-      "sourceUrl": "https://www.city.suginami.tokyo.jp/documents/7158/r5yosannsyo.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260716153947/https://www.city.suginami.tokyo.jp/documents/7158/r5yosannsyo.pdf",
       "originUrl": "https://www.city.suginami.tokyo.jp/documents/7158/r5yosannsyo.pdf",
       "sourceLocalUrl": "/sources/suginami-yosansho-r5/r5yosannsyo.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -15232,7 +15232,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和5年度 杉並区予算書（歳入歳出予算事項別明細書 総括）",
           "type": "PDF",
-          "url": "https://www.city.suginami.tokyo.jp/documents/7158/r5yosannsyo.pdf",
+          "url": "https://web.archive.org/web/20260716153947/https://www.city.suginami.tokyo.jp/documents/7158/r5yosannsyo.pdf",
           "localUrl": "/sources/suginami-yosansho-r5/r5yosannsyo.pdf",
           "source": "www.city.suginami.tokyo.jp",
           "thumb": "r5yosannsyo.pdf ・ sha256 82dd78be50991fe1… ・ 2026-07-16 取得"
@@ -15454,7 +15454,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和4年度 杉並区予算書（歳入歳出予算事項別明細書 総括）",
-      "sourceUrl": "https://www.city.suginami.tokyo.jp/documents/7157/r04-tousyo.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260716154155/https://www.city.suginami.tokyo.jp/documents/7157/r04-tousyo.pdf",
       "originUrl": "https://www.city.suginami.tokyo.jp/documents/7157/r04-tousyo.pdf",
       "sourceLocalUrl": "/sources/suginami-yosansho-r4/r04-tousyo.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -15462,7 +15462,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和4年度 杉並区予算書（歳入歳出予算事項別明細書 総括）",
           "type": "PDF",
-          "url": "https://www.city.suginami.tokyo.jp/documents/7157/r04-tousyo.pdf",
+          "url": "https://web.archive.org/web/20260716154155/https://www.city.suginami.tokyo.jp/documents/7157/r04-tousyo.pdf",
           "localUrl": "/sources/suginami-yosansho-r4/r04-tousyo.pdf",
           "source": "www.city.suginami.tokyo.jp",
           "thumb": "r04-tousyo.pdf ・ sha256 4a31b158220ca8f7… ・ 2026-07-16 取得"
@@ -15684,7 +15684,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和3年度 杉並区区政経営計画書（一般会計予算総括表）",
-      "sourceUrl": "https://www.city.suginami.tokyo.jp/documents/7156/4ippannkaikei.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260716154234/https://www.city.suginami.tokyo.jp/documents/7156/4ippannkaikei.pdf",
       "originUrl": "https://www.city.suginami.tokyo.jp/documents/7156/4ippannkaikei.pdf",
       "sourceLocalUrl": "/sources/suginami-keikakusho-r3/4ippannkaikei.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -15692,7 +15692,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和3年度 杉並区区政経営計画書（一般会計予算総括表）",
           "type": "PDF",
-          "url": "https://www.city.suginami.tokyo.jp/documents/7156/4ippannkaikei.pdf",
+          "url": "https://web.archive.org/web/20260716154234/https://www.city.suginami.tokyo.jp/documents/7156/4ippannkaikei.pdf",
           "localUrl": "/sources/suginami-keikakusho-r3/4ippannkaikei.pdf",
           "source": "www.city.suginami.tokyo.jp",
           "thumb": "4ippannkaikei.pdf ・ sha256 54d6fa26b2d3e10d… ・ 2026-07-16 取得"
@@ -15920,7 +15920,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和2年度 杉並区区政経営計画書（一般会計予算総括表）",
-      "sourceUrl": "https://www.city.suginami.tokyo.jp/documents/7155/r2kuseikeieikeikakusho.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260716154423/https://www.city.suginami.tokyo.jp/documents/7155/r2kuseikeieikeikakusho.pdf",
       "originUrl": "https://www.city.suginami.tokyo.jp/documents/7155/r2kuseikeieikeikakusho.pdf",
       "sourceLocalUrl": "/sources/suginami-keikakusho-r2/r2kuseikeieikeikakusho.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -15928,7 +15928,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和2年度 杉並区区政経営計画書（一般会計予算総括表）",
           "type": "PDF",
-          "url": "https://www.city.suginami.tokyo.jp/documents/7155/r2kuseikeieikeikakusho.pdf",
+          "url": "https://web.archive.org/web/20260716154423/https://www.city.suginami.tokyo.jp/documents/7155/r2kuseikeieikeikakusho.pdf",
           "localUrl": "/sources/suginami-keikakusho-r2/r2kuseikeieikeikakusho.pdf",
           "source": "www.city.suginami.tokyo.jp",
           "thumb": "r2kuseikeieikeikakusho.pdf ・ sha256 ec194f3a208f288e… ・ 2026-07-16 取得"
@@ -45491,7 +45491,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和7年度 堺市予算案説明資料（第2 一般会計歳入款別分類表・第3 一般会計歳出目的別分類表）",
-      "sourceUrl": "https://web.archive.org/web/20250525052620/https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/giannsyo_R7-1.files/R7-1_yosannnannsetumei.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260716152713/https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/giannsyo_R7-1.files/R7-1_yosannnannsetumei.pdf",
       "originUrl": "https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/giannsyo_R7-1.files/R7-1_yosannnannsetumei.pdf",
       "sourceLocalUrl": "/sources/sakai-yosansho-r7/R7-1_yosannnannsetumei.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -45499,7 +45499,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和7年度 堺市予算案説明資料（第2 一般会計歳入款別分類表・第3 一般会計歳出目的別分類表）",
           "type": "PDF",
-          "url": "https://web.archive.org/web/20250525052620/https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/giannsyo_R7-1.files/R7-1_yosannnannsetumei.pdf",
+          "url": "https://web.archive.org/web/20260716152713/https://www.city.sakai.lg.jp/shigikai/kaigi/giansyo/giannsyo_R7-1.files/R7-1_yosannnannsetumei.pdf",
           "localUrl": "/sources/sakai-yosansho-r7/R7-1_yosannnannsetumei.pdf",
           "source": "www.city.sakai.lg.jp",
           "thumb": "R7-1_yosannnannsetumei.pdf ・ sha256 6b7e458b86cd42ee… ・ 2026-07-15 取得"
@@ -59781,7 +59781,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       }
     ],
     "sourceTitle": "令和8年度 杉並区予算書（歳入歳出予算事項別明細書 総括）",
-    "sourceUrl": "https://www.city.suginami.tokyo.jp/documents/22830/r8yosansho.pdf",
+    "sourceUrl": "https://web.archive.org/web/20260716153439/https://www.city.suginami.tokyo.jp/documents/22830/r8yosansho.pdf",
     "originUrl": "https://www.city.suginami.tokyo.jp/documents/22830/r8yosansho.pdf",
     "sourceLocalUrl": "/sources/suginami-yosansho-r8/r8yosansho.pdf",
     "pagesLabel": "款別歳入歳出",
@@ -59789,7 +59789,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       {
         "title": "令和8年度 杉並区予算書（歳入歳出予算事項別明細書 総括）",
         "type": "PDF",
-        "url": "https://www.city.suginami.tokyo.jp/documents/22830/r8yosansho.pdf",
+        "url": "https://web.archive.org/web/20260716153439/https://www.city.suginami.tokyo.jp/documents/22830/r8yosansho.pdf",
         "localUrl": "/sources/suginami-yosansho-r8/r8yosansho.pdf",
         "source": "www.city.suginami.tokyo.jp",
         "thumb": "r8yosansho.pdf ・ sha256 3211fb2530e28fff… ・ 2026-07-16 取得"
