@@ -10,7 +10,7 @@ import { REPORT_MUNIS } from "@/client/lib/reports-index.gen";
 // データの注意（validate の warning から derive が生成。手書きしない）
 import { CAVEATS } from "@/client/lib/caveats.gen";
 import { useSimilarIndex } from "@/client/hooks/useSimilarIndex";
-import { stateToPath, locationToState, type RouteState } from "@/client/lib/routing";
+import { stateToPath, locationToState, codeByPrefAndName, type RouteState } from "@/client/lib/routing";
 // 進捗（実データから derive が算出）と計画（pipeline/registry/roadmap.ts が唯一の手書き）。
 // 数KBなので静的 import でよい（130KB級の coverage.json はフェッチしている）
 import { ROADMAP_PROGRESS, ROADMAP_PLAN } from "@/client/lib/roadmap.gen";
@@ -1153,7 +1153,10 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
       // 落としていた（全1,741市町村が決算ベースで見られるようになった後も残っていた）。
       // 地図は GeoJSON の5桁コードを持っているので、6桁へ変換すればどの自治体にも直行できる。
       if (!muniName) { nav({ screen: "muni", pref: pfName }); return; } // 「県全体」チップ
-      const code = code5 ? D.muniCode6(code5) : undefined;
+      // 政令市だけはコードが来ない（地図データに区の図形しか無く、市の図形＝コードが無い）。
+      // 県内で名前から引く。ここで引けなくても muni 名で遷移し、県シャード取得後に
+      // コード↔名前の相互解決が拾う（decision 冷リンクと同じ経路）。
+      const code = code5 ? D.muniCode6(code5) : codeByPrefAndName(pfName, muniName);
       nav({ screen: "dash", pref: pfName, muni: muniName, muniCode: code, drillPath: [], theme: null, budgetFy: undefined });
     },
     searchQ: s.searchQ,
