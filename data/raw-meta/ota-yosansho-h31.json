@@ -1,0 +1,12 @@
+{
+  "sourceId": "ota-yosansho-h31",
+  "files": [
+    {
+      "filename": "3.pdf",
+      "sha256": "512ba46c1ae1e293e088e9fae91b6aa2854827113babcbdc962614da03170d62",
+      "bytes": 2799505,
+      "fetchedAt": "2026-07-16T13:19:27.357Z",
+      "fetchedFrom": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/31yosan/31yosanann.files/3.pdf"
+    }
+  ]
+}

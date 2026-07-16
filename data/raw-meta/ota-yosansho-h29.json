@@ -1,0 +1,12 @@
+{
+  "sourceId": "ota-yosansho-h29",
+  "files": [
+    {
+      "filename": "gaiyo.pdf",
+      "sha256": "990e806724c3958f4293580d2c1fd219969e4403891660617b9b57e797142f9f",
+      "bytes": 2608967,
+      "fetchedAt": "2026-07-16T13:19:29.123Z",
+      "fetchedFrom": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/29yosan/29yosan.files/gaiyo.pdf"
+    }
+  ]
+}

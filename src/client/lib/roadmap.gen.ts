@@ -16,37 +16,43 @@ export const ROADMAP_PROGRESS = {
   "budgetCount": 43,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 210,
-  "fileCount": 335,
-  "archivedCount": 198,
+  "sourceCount": 223,
+  "fileCount": 348,
+  "archivedCount": 213,
   "licenseOpen": 19,
-  "licensePermission": 133,
+  "licensePermission": 146,
   "licenseUnverified": 58,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
   "kofuBudgetYears": 7,
   "budgetDepth": [
     {
-      "name": "中央区",
-      "code": "131024",
-      "years": 7,
-      "range": "R2〜R8（7年度）"
-    },
-    {
       "name": "江東区",
       "code": "131083",
-      "years": 7,
-      "range": "R2〜R8（7年度）"
-    },
-    {
-      "name": "目黒区",
-      "code": "131105",
-      "years": 7,
-      "range": "R2〜R8（7年度）"
+      "years": 11,
+      "range": "H28〜R8（11年度）"
     },
     {
       "name": "大田区",
       "code": "131113",
+      "years": 11,
+      "range": "H28〜R8（11年度）"
+    },
+    {
+      "name": "中央区",
+      "code": "131024",
+      "years": 10,
+      "range": "H29〜R8（10年度）"
+    },
+    {
+      "name": "葛飾区",
+      "code": "131229",
+      "years": 9,
+      "range": "H30〜R8（9年度）"
+    },
+    {
+      "name": "目黒区",
+      "code": "131105",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },
@@ -59,12 +65,6 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "足立区",
       "code": "131211",
-      "years": 7,
-      "range": "R2〜R8（7年度）"
-    },
-    {
-      "name": "葛飾区",
-      "code": "131229",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },

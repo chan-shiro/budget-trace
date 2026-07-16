@@ -6,6 +6,7 @@
 // シャードの生成は pipeline/derive-app-data.ts（bun run pipeline:derive）。
 // ============================================================================
 import { DECISION_FY_LABELS, DECISION_SOURCES, type DecisionEvidenceCard } from "./decision-index.gen";
+import { fyEraLabel } from "./fy";
 
 // ---- シャードの型（derive-app-data.ts が書き出す構造）------------------------
 export interface DecisionYearSlice {
@@ -223,7 +224,7 @@ export function buildDecisionView(
     name: muni.name,
     prefName: shard.prefName,
     fy: useFy,
-    fyLabel: DECISION_FY_LABELS[useFy] ?? `令和${useFy.slice(1)}年度 決算`,
+    fyLabel: DECISION_FY_LABELS[useFy] ?? `${fyEraLabel(useFy)} 決算`,
     pop: y.pop,
     perCapYen: y.perCapYen,
     total: y.expTotalOku,
