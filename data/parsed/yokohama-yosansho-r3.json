@@ -3,7 +3,7 @@
   "sourceId": "yokohama-yosansho-r3",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-07-16T13:54:28.043Z",
+  "parsedAt": "2026-07-16T14:25:29.390Z",
   "unit": "thousandYen",
   "fiscalYear": "R3",
   "account": "一般会計",
@@ -291,7 +291,7 @@
     {
       "side": "expenditure",
       "kanNo": 1,
-      "kanName": "一般財源国県支出金市債その他議会費",
+      "kanName": "議会費",
       "amount": 3095987,
       "prevAmount": 3118043,
       "locator": {
@@ -412,7 +412,7 @@
     {
       "side": "expenditure",
       "kanNo": 12,
-      "kanName": "一般財源国県支出金市債その他道路費",
+      "kanName": "道路費",
       "amount": 135705651,
       "prevAmount": 81774943,
       "locator": {

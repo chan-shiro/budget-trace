@@ -20823,7 +20823,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "yoy": 3.1
         },
         {
-          "name": "一般財源国県支出金市債その他道路費",
+          "name": "道路費",
           "v": 1357.05651,
           "prevV": 817.74943,
           "yoy": 66
@@ -20883,7 +20883,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "yoy": -31
         },
         {
-          "name": "一般財源国県支出金市債その他議会費",
+          "name": "議会費",
           "v": 30.95987,
           "prevV": 31.18043,
           "yoy": -0.7
