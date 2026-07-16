@@ -1657,6 +1657,13 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6"] as const).map((fy) => ({
       srcId: `shizuoka-yosansho-${fy}`, muniCode: "221007", muniName: "静岡市", prefName: "静岡県", isPref: false,
     })),
+    // 東京特別区（2026-07-16）。**23区に統一様式は無く款体系が区ごとに全部違う** — registry の
+    // 特別区の節を参照。制度由来の共通点（消防費なし・地方交付税なし・特別区交付金・特別区税/債）
+    // だけが揃い、それ以外の款は各区が独自に立てている。
+    // **R3 は欠番**（pdftotext -layout が款を静かに落とす。registry のコメント参照）。
+    ...(["r8", "r7", "r6", "r5", "r4", "r2"] as const).map((fy) => ({
+      srcId: `chiyoda-yosansho-${fy}`, muniCode: "131016", muniName: "千代田区", prefName: "東京都", isPref: false,
+    })),
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;

@@ -1,0 +1,347 @@
+{
+  "docType": "budget-book",
+  "sourceId": "chiyoda-yosansho-r7",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-07-16T06:01:13.014Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R7",
+  "account": "一般会計",
+  "revenueTotal": 75353052,
+  "expenditureTotal": 75353052,
+  "prevRevenueTotal": 69575616,
+  "prevExpenditureTotal": 69575616,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "特別区税",
+      "amount": 23753248,
+      "prevAmount": 24931738,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "地方譲与税",
+      "amount": 311850,
+      "prevAmount": 301850,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "利子割交付金",
+      "amount": 150000,
+      "prevAmount": 70000,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "配当割交付金",
+      "amount": 410000,
+      "prevAmount": 400000,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 350000,
+      "prevAmount": 300000,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "地方消費税交付金",
+      "amount": 11600000,
+      "prevAmount": 10400000,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "自動車取得税交付金",
+      "amount": 1,
+      "prevAmount": 1,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "環境性能割交付金",
+      "amount": 85000,
+      "prevAmount": 80000,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "地方特例交付金",
+      "amount": 15000,
+      "prevAmount": 15000,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "特別区交付金",
+      "amount": 5118788,
+      "prevAmount": 5063375,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 17000,
+      "prevAmount": 17000,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "分担金及び負担金",
+      "amount": 287899,
+      "prevAmount": 1135166,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "使用料及び手数料",
+      "amount": 8677282,
+      "prevAmount": 7837443,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "国庫支出金",
+      "amount": 6178149,
+      "prevAmount": 4734870,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "都支出金",
+      "amount": 5266114,
+      "prevAmount": 3984583,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "財産収入",
+      "amount": 1227128,
+      "prevAmount": 377902,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 17,
+      "kanName": "寄附金",
+      "amount": 1680890,
+      "prevAmount": 27155,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 18,
+      "kanName": "繰入金",
+      "amount": 7566569,
+      "prevAmount": 7704615,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 19,
+      "kanName": "繰越金",
+      "amount": 100000,
+      "prevAmount": 100000,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 20,
+      "kanName": "諸収入",
+      "amount": 2558134,
+      "prevAmount": 2094918,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 567513,
+      "prevAmount": 471244,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "子ども費",
+      "amount": 19621625,
+      "prevAmount": 18202815,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "保健福祉費",
+      "amount": 9496298,
+      "prevAmount": 8647292,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "地域振興費",
+      "amount": 8475267,
+      "prevAmount": 6694544,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "環境まちづくり費",
+      "amount": 10434945,
+      "prevAmount": 11933266,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "総務費",
+      "amount": 8518821,
+      "prevAmount": 7120636,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "職員費",
+      "amount": 14461702,
+      "prevAmount": 13747092,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "公債費",
+      "amount": 7672,
+      "prevAmount": 165,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "諸支出金",
+      "amount": 3319209,
+      "prevAmount": 2308562,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "予備費",
+      "amount": 450000,
+      "prevAmount": 450000,
+      "locator": {
+        "file": "r7aramashi01-gaikyo_2.pdf",
+        "page": 9
+      }
+    }
+  ]
+}
