@@ -2188,6 +2188,20 @@ export const SOURCES: SourceEntry[] = [
     ["R4", 11, 12, "r04yosan/r04-yosann", "r04yosan/r04-yosann.files/02kihontekikanngae"],
     ["R3", 15, 16, "r03yosan/r03-yosann", "r03yosan/r03-yosann.files/03"],
     ["R2", 13, 14, "r02yosan/r02-yosanann", "r02yosan/r02-yosanann.files/3"],
+    // H31〜H28（2026-07-16 追加）。**parserOptions は R2〜R8 と完全同一で通る**（Σ 4年度×2側×2列の
+    // 16系統すべて差0・款名は収録時に全件目視）。⚠ **綴りの破れは H 年度でも続く**（外挿禁止）:
+    //    年度ページ H31 `31yosanann`（**ann**）/ H30 `30_yosan`（**アンダースコア**）/ H29 `29yosan` /
+    //               H28 `28yosangaiyo`（**gaiyo**）
+    //    PDF        H31 `3`（連番のみ・R2 と同型）/ H30 `3_yosangaiyo` / H29・H28 `gaiyo`
+    // ⚠ **H30 と H29 でファイル名の意味が入れ替わる** — H29 の `yosangaiyo.pdf` は**款別表を持たない
+    //    別資料**で、款別は `gaiyo.pdf` の側にある。**名前で選ぶと静かに別資料を掴む**。
+    // ⚠ **H30 以前は歳入20款**（環境性能割交付金が H31 で新設＝2019年10月の税制改正・前年度 0 の皆増）。
+    //    これで **H30 以前は款8=地方特例交付金・款9=特別区交付金**、H31 以降は1つずつ繰り下がる
+    //    ＝**款番号で年度をまたいで結合すると壊れる**（款名で結合すること）。
+    ["H31", 13, 14, "31yosan/31yosanann", "31yosan/31yosanann.files/3"],
+    ["H30", 14, 15, "30yosan/30_yosan", "30yosan/30_yosan.files/3_yosangaiyo"],
+    ["H29", 14, 15, "29yosan/29yosan", "29yosan/29yosan.files/gaiyo"],
+    ["H28", 13, 14, "28yosan/28yosangaiyo", "28yosan/28yosangaiyo.files/gaiyo"],
   ] as const).map(([fy, rev, exp, page, path]) => ({
     // 大田区（団体コード 131113・人口 740,519＝R6 決算状況調から実引き。23区で世田谷・練馬に次ぐ3位）。
     // 「予算（案）概要」の巻頭にある款別集計表。**特別区で最も素直な部類** — R8〜R2 の7年度が
@@ -2263,6 +2277,24 @@ export const SOURCES: SourceEntry[] = [
     ["R4", "2801/r4soukatuhyou.pdf", "a0002/kusei/zaisei/yosan/r4nendo/zaisei_time_20220208"],
     ["R3", "2791/r3tousyo_soukatuhyou.pdf", "a0002/kusei/zaisei/yosan/r3nendo/r3_tousyoyosanan"],
     ["R2", "2786/r2tousyo_soukatuhyou.pdf", "a0002/kusei/zaisei/yosan/r2nendo/zaisei_20200207"],
+    // H31〜H29（2026-07-16 追加）。**parserOptions は R2〜R8 と完全同一で通る**（Σ 3年度×2側×
+    // 2列の12系統すべて差0・款名は収録時に全件目視）。弱い見出しの区なので**3年度とも「予算（案）
+    // の概要」PDF（総括表とは別ファイル）と総額を突合済み**（H31=1,031億3,274万9千・H30=897億
+    // 9,121万9千・H29=953億2,171万3千）。原典が自ら「前年度当初予算」と書いており prevBasis も裏取れる。
+    // ⚠ **H31 の年度ディレクトリは `r1nendo`**（`h31nendo` ではない）。サイトは「令和元年度（平成31
+    //    年度）」と併記するが、**PDF の表題は「平成３１年度」**なので fiscalYear は H31。
+    //    ファイル名の転写も 31/29 は `tousyoyosansoukatuhyou`・**30 だけ `tousyosoukatuhyou`**（`yosan`
+    //    が無い）と揺れる。**外挿できない**。
+    // ⚠ **H29 が現行サイトの最古**（これで H29〜R8 の10年度が打ち止め）。H29 の廃止款
+    //    `（特別区債）` の空セルが **U+FF0D（全角ハイフンマイナス）** で、パーサのダッシュ落としに
+    //    その字が無く款名が `（特別区債）－` になっていた（**Σ は差0 で validate も素通り**する表示
+    //    専用の破損＝§2-4）。→ kofu-yosansho.ts の文字クラスへ `－` を足して対処済み。
+    // ⚠ **H29 歳出の前年度列見出しだけ `前年度予算相当額`**（歳入側は `前年度予算額`）＝H28 を H29 の
+    //    款体系へ組み替えた restated 値の可能性が高い。H29 を収録する分には影響しないが、**H28 を
+    //    足すときは H29前年 ≠ H28当年 になりうる**（今回の鎖は H30前年=H29当年 までしか見ていない）。
+    ["H31", "2772/31tousyoyosansoukatuhyou.pdf", "a0002/kusei/zaisei/yosan/r1nendo/20190204081418393"],
+    ["H30", "2763/30tousyosoukatuhyou.pdf", "a0002/kusei/zaisei/yosan/h30nendo/20180202142459098"],
+    ["H29", "2756/29tousyoyosansoukatuhyou.pdf", "a0002/kusei/zaisei/yosan/h29nendo/20170523093229437"],
   ] as const).map(([fy, path, page]) => ({
     // 中央区（団体コード 131024・人口 187,404＝R6 決算状況調から実引き）。
     // **款別専用の小さな PDF**（6ページ・「各会計予算計上額総括表」）。数百ページの予算書に
@@ -2396,17 +2428,34 @@ export const SOURCES: SourceEntry[] = [
   })),
 
   ...([
-    // [年度, 歳入ページ(物理), 歳出ページ(物理), ファイル名, 年度ページ名]
+    // [年度, 歳入ページ(物理), 歳出ページ(物理), ファイル名, 年度ページ名, パス基底]
     // ⚠ **ページ位置が毎年動く**（50/56/50/48/30/12/6）。R7 だけ前付けが6ページ膨らむ。**外挿しない**。
+    //    （H31〜H28 は4年度とも 6/7 で不動だが、これも4年度すべて実測で確認している）
     // ⚠ ファイル名も R4〜R8 は `{N}tousyoyosanangaiyou` / R2・R3 は `{N}yosanangaiyou` と揺れる。
-    ["R8", 50, 51, "8tousyoyosanangaiyou.pdf", "8nendotosyoyosangiketu"],
-    ["R7", 56, 57, "7tousyoyosanangaiyou.pdf", "7nendotosyoyosangiketu"],
-    ["R6", 50, 51, "6tousyoyosanangaiyou.pdf", "6nendotousyoyosangiketu"],
-    ["R5", 48, 49, "5tousyoyosanangaiyou.pdf", "r5nendotousyoyosan"],
-    ["R4", 30, 31, "4tousyoyosanangaiyou.pdf", "4tousyoyosan"],
-    ["R3", 12, 13, "3yosanangaiyou.pdf", "3tousyoyosan"],
-    ["R2", 6, 7, "2yosanangaiyou.pdf", "2tousyoyosan"],
-  ] as const).map(([fy, rev, exp, file, page]) => ({
+    // ⚠ **H29・H28 はパス基底ごと変わる** — R8〜H30 は `/011102/…` の平坦な配置だが、H29・H28 は
+    //    年度ディレクトリ配下（`/011102/kuse/yosanzaise/yosan/h29/…`）にある。**外挿できない**ので
+    //    基底を列に持つ。さらに **H29 のファイル名は年度接頭辞を持たない**（`yosanangaiyou.pdf`）。
+    ["R8", 50, 51, "8tousyoyosanangaiyou.pdf", "8nendotosyoyosangiketu", "011102"],
+    ["R7", 56, 57, "7tousyoyosanangaiyou.pdf", "7nendotosyoyosangiketu", "011102"],
+    ["R6", 50, 51, "6tousyoyosanangaiyou.pdf", "6nendotousyoyosangiketu", "011102"],
+    ["R5", 48, 49, "5tousyoyosanangaiyou.pdf", "r5nendotousyoyosan", "011102"],
+    ["R4", 30, 31, "4tousyoyosanangaiyou.pdf", "4tousyoyosan", "011102"],
+    ["R3", 12, 13, "3yosanangaiyou.pdf", "3tousyoyosan", "011102"],
+    ["R2", 6, 7, "2yosanangaiyou.pdf", "2tousyoyosan", "011102"],
+    // H31〜H28（2026-07-16 追加）。**4年度とも parserOptions は R2〜R8 と完全同一で通る**
+    // （Σ 4年度×2側×2列の16系統すべて差0・款名は収録時に全件目視）。この区は誤ページでも Σ差0 で
+    // 通るため、**4年度とも区の発表額と総額を突合済み**（H31=2,054億700万・H30=1,929億5,200万・
+    // H29=1,996億4,200万・H28=1,886億3,800万）。
+    // ⚠ **H31 のファイル名は `ananngaiyou`（n が3つ）** — 原典の綴りどおり。
+    // ⚠ **H28 だけ概要が2分割**。款別比較表は `28yosanan1.pdf`（14p）にあり、`28yosanngaiyou2.pdf`
+    //    は「新たな取組み（主な事業）」＝別資料。**主な事業を後で収録するなら H28 は別ファイル**。
+    // 歳入は H30〜H28 が21款 → **H31 で環境性能割交付金が新設され22款**（前年度 0＝皆増）。
+    // 歳出10款は H28〜R8 で不変。
+    ["H31", 6, 7, "31yosananngaiyou.pdf", "31tousyoyosann", "011102"],
+    ["H30", 6, 7, "30yosanangaiyou.pdf", "30tousyoyosann", "011102"],
+    ["H29", 6, 7, "yosanangaiyou.pdf", "29tousyoyosannann", "011102/kuse/yosanzaise/yosan/h29"],
+    ["H28", 6, 7, "28yosanan1.pdf", "28tousyoyosan", "011102/kuse/yosanzaise/yosan/h28"],
+  ] as const).map(([fy, rev, exp, file, page, base]) => ({
     // 江東区（団体コード 131083・人口 541,685＝R6 決算状況調から実引き）。「予算（案）概要」の
     // 「一般会計当初予算対前年度比較」。Σ款=合計は 7年度×2側×2年度の**28系統すべて差0**、
     // 年度間クロスチェックも6リンク全款一致。**H28 まで11年度が現行サイトに現存**するが未収録
@@ -2439,8 +2488,8 @@ export const SOURCES: SourceEntry[] = [
     title: `${eraYear(fy)}年度 江東区予算（案）概要（一般会計当初予算対前年度比較）`,
     publisher: "江東区",
     url: null,
-    urls: [`https://www.city.koto.lg.jp/011102/documents/${file}`],
-    landingPage: `https://www.city.koto.lg.jp/011102/${page}.html`,
+    urls: [`https://www.city.koto.lg.jp/${base}/documents/${file}`],
+    landingPage: `https://www.city.koto.lg.jp/${base}/${page}.html`,
     kind: "pdf" as const,
     fiscalYear: fy,
     scope: "江東区（一般会計・団体コード131083）",
@@ -2529,6 +2578,17 @@ export const SOURCES: SourceEntry[] = [
     ["R4", 14, 16, "001/027/976/r4yosanngaiyou.pdf", "1027976"],
     ["R3", 12, 14, "001/025/473/reiwa3yosangaiyou.pdf", "1025473"],
     ["R2", 12, 14, "001/022/573/yosanngaiyou.pdf", "1022573"],
+    // H31・H30（2026-07-16 追加）。R3・R2 と同じ 12/14。**parserOptions は7年度と完全同一で通る**
+    // （Σ 2年度×2側×2列の8系統すべて差0・款名は収録時に全件目視してクリーンを確認）。
+    // ⚠ **`kanNoless` は H31・H30 では no-op**（有無で出力が1文字も変わらないことを実測）。
+    //    R8 の「第6の折返し型」は H 年度には無く、折返し行でも款番号と金額が同じ行に並ぶ。
+    //    → **H 年度の款は原典どおり kanNo を持つ**（R8 のように null に落ちない）。
+    // ⚠ **廃止マーカー（R2 `○`/R4 `〇`）は H31・H30 には出ない** — 自動車取得税交付金は
+    //    H31 款7（182,000）・H30 款7（383,000）と**款番号を持ったまま現存**する（皆減は R2 で起きる）。
+    //    H31 で環境性能割交付金が款8 として新設（前年度 0＝皆増）→ 歳入は H30 20款 → H31 21款。
+    // ⚠ **ファイル名が年度で全く違う**（H31 `31katsugaiyou` / H30 `yosangaiyou2`＝年度名を含まない）。
+    ["H31", 12, 14, "001/020/311/31katsugaiyou.pdf", "1020311"],
+    ["H30", 12, 14, "001/017/523/yosangaiyou2.pdf", "1017523"],
   ] as const).map(([fy, rev, exp, file, page]) => ({
     // 葛飾区（団体コード 131229・人口 469,916＝R6 決算状況調から実引き）。「予算概要」の「各会計款別表」。
     // Σ款=合計は 7年度×2側×2年度の**28系統すべて差0**、年度間クロスチェックも6リンク一致。

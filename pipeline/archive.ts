@@ -137,12 +137,29 @@ if (targets.length === 0) {
 }
 
 const ledger = loadLedger();
-// 逐次保存: 対象が多いと実行に時間がかかるため、1件ごとに台帳へ書く（中断しても進捗が残る）
+// 逐次保存: 対象が多いと実行に時間がかかるため、1件ごとに台帳へ書く（中断しても進捗が残る）。
+//
+// ⚠ **書き込みのたびにディスクから読み直して併合する**（2026-07-16）。以前は起動時の
+// `loadLedger()` のスナップショットをメモリで持ち回り、丸ごと上書きしていたため、
+// **2つの archive を並行実行すると後勝ちで相手の登録が全部消えた**（実害: 特別区の平成年度を
+// 収録中、大田4件の登録が江東・中央側のプロセスに消された）。しかも**各プロセスは「新規登録 2」と
+// 成功を報告する**ので、台帳を見に行くまで気づけない＝§2-4 の「静かに壊れる」型。
+// これは真のロックではない（read→write の間に別プロセスが書けば取りこぼす）が、
+// **ファイル丸ごとの消失は防ぐ**。Wayback 待ちが数分あるので実用上はこれで足りる。
 const upsert = (e: ArchiveEntry) => {
-  const i = ledger.findIndex((x) => x.sourceId === e.sourceId && x.url === e.url);
-  if (i >= 0) ledger[i] = e;
+  const merged = loadLedger();
+  for (const local of ledger) {
+    const j = merged.findIndex((x) => x.sourceId === local.sourceId && x.url === local.url);
+    if (j >= 0) merged[j] = local;
+    else merged.push(local);
+  }
+  const i = merged.findIndex((x) => x.sourceId === e.sourceId && x.url === e.url);
+  if (i >= 0) merged[i] = e;
+  else merged.push(e);
+  const k = ledger.findIndex((x) => x.sourceId === e.sourceId && x.url === e.url);
+  if (k >= 0) ledger[k] = e;
   else ledger.push(e);
-  saveLedger(ledger);
+  saveLedger(merged);
 };
 
 let saved = 0;
@@ -216,7 +233,14 @@ for (const source of targets) {
   }
 }
 
-saveLedger(ledger);
+// 最後の一括保存も併合で行う（上の upsert と同じ理由 — 丸ごと上書きすると並行実行で相手を消す）
+const final = loadLedger();
+for (const local of ledger) {
+  const j = final.findIndex((x) => x.sourceId === local.sourceId && x.url === local.url);
+  if (j >= 0) final[j] = local;
+  else final.push(local);
+}
+saveLedger(final);
 console.log(`\n台帳: ${ARCHIVES_PATH}`);
-console.log(`新規登録 ${saved} / 登録済み ${already} / 未確認 ${failed}（計 ${ledger.length} 件）`);
+console.log(`新規登録 ${saved} / 登録済み ${already} / 未確認 ${failed}（計 ${final.length} 件）`);
 if (failed > 0) process.exitCode = 1;
