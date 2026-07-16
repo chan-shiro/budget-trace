@@ -774,10 +774,10 @@ export default function BudgetTraceView({ v }: { v: any }) {
                           {r.direction && <><strong style={S("font-family:'IBM Plex Mono',monospace; color:#14181C;")}>{r.direction}</strong> {r.directionLabel}</>}
                         </span>
                         <span style={S("text-align:right;")}>
-                          {r.totalCost != null && (
+                          {r.amount != null && (
                             <>
-                              <span style={S("display:block; font-family:'IBM Plex Mono',monospace; font-size:13px; font-weight:700; color:#14181C;")}>{v.repAll.fmt(r.totalCost)}</span>
-                              <span style={S("display:block; font-size:10px; color:#9DACB7;")}>総コスト・{r.costLabel}</span>
+                              <span style={S("display:block; font-family:'IBM Plex Mono',monospace; font-size:13px; font-weight:700; color:#14181C;")}>{v.repAll.fmt(r.amount)}</span>
+                              <span style={S("display:block; font-size:10px; color:#9DACB7;")}>{r.amountKind}・{r.costLabel}</span>
                             </>
                           )}
                         </span>
@@ -793,7 +793,8 @@ export default function BudgetTraceView({ v }: { v: any }) {
                           style={S(`border:1px solid #C6D2DA; background:#FFFFFF; border-radius:999px; padding:5px 14px; font-size:12.5px; font-family:'IBM Plex Sans JP',sans-serif; ${v.repAll.page >= v.repAll.pages ? "color:#C6D2DA; cursor:default;" : "color:#3A4750; cursor:pointer;"}`)}>次へ →</button>
                       </div>
                     )}
-                    <p style={S("margin:12px 2px 0; font-size:11.5px; color:#8494A0; line-height:1.7;")}>事業名をクリックすると原本（{v.repAll.sourceTitle}）の該当ページを開きます。総コストは事業費＋人件費（職員1人当たり人件費 × 人工）です。</p>
+                    {/* 総コストの説明は**総コストを持つ資料（川崎）だけ**。横浜（事業費のみ）に出すと嘘になる */}
+                    <p style={S("margin:12px 2px 0; font-size:11.5px; color:#8494A0; line-height:1.7;")}>事業名をクリックすると原本（{v.repAll.sourceTitle}）の該当ページを開きます。{v.repAll.has.totalCost && "総コストは事業費＋人件費（職員1人当たり人件費 × 人工）です。"}</p>
                   </>
                   )}
                 </section>
@@ -980,7 +981,9 @@ export default function BudgetTraceView({ v }: { v: any }) {
                   <h2 style={S("margin:0 0 8px; font-size:15px; font-weight:700;")}>この自治体は総務省の決算データで収録しています</h2>
                   <p style={S("margin:0 0 12px; font-size:12.5px; color:#5C6B77; line-height:1.7;")}>
                     款別歳出（→項）・歳入科目（→内訳）・1人あたり・財政指標・類似自治体比較・決算の経年（R2〜R6）を確認できます。
-                    当初予算・補正・主な事業・執行状況・事務事業評価などの<strong style={S("color:#14181C;")}>予算資料ベースの詳細は未収録</strong>です（甲府市のみ収録済み）。
+                    当初予算・補正・主な事業・執行状況・事務事業評価などの<strong style={S("color:#14181C;")}>予算資料ベースの詳細は未収録</strong>です
+                    {/* 収録済み自治体を並べ書きしない — 手書きの列挙は増えるたびにズレる。/coverage が実データから出す一覧へ誘導する */}
+                    （収録済みの自治体は<a href="/coverage" onClick={(e) => { e.preventDefault(); v.goCoverage(); }} style={S("color:#0F76A3; cursor:pointer;")}>データ整備状況</a>を参照）。
                   </p>
                   <a href={v.decisionRequestUrl} target="_blank" rel="noopener noreferrer" style={S("display:inline-block; font-size:12.5px; border:1px solid #1798D0; color:#0F76A3; border-radius:999px; padding:6px 16px; text-decoration:none;")}>この自治体の予算資料の収録をリクエスト ↗</a>
                 </section>
@@ -991,7 +994,10 @@ export default function BudgetTraceView({ v }: { v: any }) {
                 <section style={S("background:#F0F7FB; border:1px solid #CFE0EA; border-radius:14px; padding:18px 22px; margin-bottom:6px;")}>
                   <h2 style={S("margin:0 0 8px; font-size:15px; font-weight:700;")}>{v.budgetPanelTitle}</h2>
                   <p style={S("margin:0 0 12px; font-size:12.5px; color:#5C6B77; line-height:1.7;")}>{v.budgetPanelBody}</p>
+                  {/* 全機能収録済みならリクエストするものが無いのでチップを出さない */}
+                  {v.budgetRequestUrl && (
                   <a href={v.budgetRequestUrl} target="_blank" rel="noopener noreferrer" style={S("display:inline-block; font-size:12.5px; border:1px solid #1798D0; color:#0F76A3; border-radius:999px; padding:6px 16px; text-decoration:none;")}>{v.budgetRequestLabel}</a>
+                  )}
                 </section>
                 )}
 

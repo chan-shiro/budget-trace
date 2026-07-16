@@ -281,7 +281,10 @@ export function pageTitle(t: RouteState): string {
   const label = SCREEN_LABELS[t.screen] ?? "";
   if (t.screen === "muni" && t.pref) return `${t.pref}の市区町村 — ${base}`;
   if (t.muni) {
-    const sub = t.screen === "dash" ? "予算" : label;
+    // decision 自治体（ローマ字スラグを持たない＝総務省決算ベース）のダッシュボードは
+    // 画面見出しと同じ「決算」。予算収録済み（full/budget）は「予算」
+    const isDecision = !!t.muniCode && !MUNI_SLUGS[t.muniCode];
+    const sub = t.screen === "dash" ? (isDecision ? "決算" : "予算") : label;
     return `${t.muni}の${sub} — ${base}`;
   }
   return label ? `${label} — ${base}` : base;
