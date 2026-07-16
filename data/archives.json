@@ -2737,25 +2737,26 @@
       "sourceId": "okayama-yosangaiyou-r2",
       "url": "https://www.city.okayama.jp/shisei/0000020277.html",
       "kind": "landing",
-      "waybackUrl": "https://web.archive.org/web/20260119140536/https://www.city.okayama.jp/shisei/0000020277.html",
-      "waybackTimestamp": "20260119140536",
-      "checkedAt": "2026-07-15T19:42:06.077Z"
+      "waybackUrl": "https://web.archive.org/web/20260716144828/https://www.city.okayama.jp/shisei/0000020277.html",
+      "waybackTimestamp": "20260716144828",
+      "checkedAt": "2026-07-16T14:49:47.138Z"
     },
     {
       "sourceId": "okayama-yosangaiyou-r2",
       "url": "https://www.city.okayama.jp/shisei/cmsfiles/contents/0000020/20277/000400556.pdf",
       "kind": "file",
-      "waybackUrl": "https://web.archive.org/web/20250421160411/https://www.city.okayama.jp/shisei/cmsfiles/contents/0000020/20277/000400556.pdf",
-      "waybackTimestamp": "20250421160411",
-      "checkedAt": "2026-07-15T19:41:55.389Z"
+      "waybackUrl": "https://web.archive.org/web/20260716144641/https://www.city.okayama.jp/shisei/cmsfiles/contents/0000020/20277/000400556.pdf",
+      "waybackTimestamp": "20260716144641",
+      "checkedAt": "2026-07-16T14:48:00.040Z",
+      "sha256Match": true
     },
     {
       "sourceId": "okayama-yosangaiyou-r3",
       "url": "https://www.city.okayama.jp/shisei/0000025283.html",
       "kind": "landing",
-      "waybackUrl": "https://web.archive.org/web/20250814053448/https://www.city.okayama.jp/shisei/0000025283.html",
-      "waybackTimestamp": "20250814053448",
-      "checkedAt": "2026-07-15T19:41:20.597Z"
+      "waybackUrl": "https://web.archive.org/web/20260716145025/https://www.city.okayama.jp/shisei/0000025283.html",
+      "waybackTimestamp": "20260716145025",
+      "checkedAt": "2026-07-16T14:50:59.741Z"
     },
     {
       "sourceId": "okayama-yosangaiyou-r3",
@@ -2763,7 +2764,8 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20250421160400/https://www.city.okayama.jp/shisei/cmsfiles/contents/0000025/25283/R3gaiyou.pdf",
       "waybackTimestamp": "20250421160400",
-      "checkedAt": "2026-07-15T19:41:16.857Z"
+      "checkedAt": "2026-07-16T14:50:10.281Z",
+      "sha256Match": true
     },
     {
       "sourceId": "okayama-yosangaiyou-r4",
@@ -2771,15 +2773,16 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260317054344/https://www.city.okayama.jp/shisei/0000032749.html",
       "waybackTimestamp": "20260317054344",
-      "checkedAt": "2026-07-15T19:41:14.566Z"
+      "checkedAt": "2026-07-16T14:54:05.418Z"
     },
     {
       "sourceId": "okayama-yosangaiyou-r4",
       "url": "https://www.city.okayama.jp/shisei/cmsfiles/contents/0000032/32749/R4tousho.pdf",
       "kind": "file",
-      "waybackUrl": "https://web.archive.org/web/20250421160449/https://www.city.okayama.jp/shisei/cmsfiles/contents/0000032/32749/R4tousho.pdf",
-      "waybackTimestamp": "20250421160449",
-      "checkedAt": "2026-07-15T19:41:10.766Z"
+      "waybackUrl": "https://web.archive.org/web/20260716145244/https://www.city.okayama.jp/shisei/cmsfiles/contents/0000032/32749/R4tousho.pdf",
+      "waybackTimestamp": "20260716145244",
+      "checkedAt": "2026-07-16T14:53:32.918Z",
+      "sha256Match": true
     },
     {
       "sourceId": "okayama-yosangaiyou-r5",
@@ -2838,7 +2841,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260715193356/https://www.city.okayama.jp/shisei/0000075851.html",
       "waybackTimestamp": "20260715193356",
-      "checkedAt": "2026-07-15T19:34:40.469Z"
+      "checkedAt": "2026-07-16T14:58:55.654Z"
     },
     {
       "sourceId": "okayama-yosangaiyou-r8",
@@ -2846,7 +2849,7 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260715193051/https://www.city.okayama.jp/shisei/cmsfiles/contents/0000075/75851/R8tousyogaiyou.pdf",
       "waybackTimestamp": "20260715193051",
-      "checkedAt": "2026-07-15T19:32:36.344Z",
+      "checkedAt": "2026-07-16T14:58:32.736Z",
       "sha256Match": true
     },
     {
