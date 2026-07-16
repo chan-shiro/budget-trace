@@ -1137,6 +1137,14 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
           }
         : null,
     showEvidence,
+    // トップの3つの数字は **roadmap.gen.ts が実データから算出したもの**（/roadmap・/coverage と同じ源）。
+    // 手書きにすると必ず実態とズレる — 「当初予算まで収録」は 甲府＋4市だった頃の 5 が
+    // 政令市20市を収録し終えた後も残っていた。当初予算が見られるのは full + budget の全団体。
+    heroStats: [
+      { num: ROADMAP_PROGRESS.prefCount.toLocaleString(), label: "都道府県" },
+      { num: ROADMAP_PROGRESS.muniCount.toLocaleString(), label: "市区町村（決算収録）" },
+      { num: (ROADMAP_PROGRESS.fullCount + ROADMAP_PROGRESS.budgetCount).toLocaleString(), label: "当初予算まで収録" },
+    ],
     onPrefSelect: (name: string) => nav({ screen: "muni", pref: name }),
     mapColorMode,
     onMuniSelect: (pfName: string, muniName: string | null, code5?: string) => {
