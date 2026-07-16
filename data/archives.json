@@ -3493,6 +3493,57 @@
       "sha256Match": true
     },
     {
+      "sourceId": "toshima-yosansho-r5",
+      "url": "https://www.city.toshima.lg.jp/004/kuse/shisaku/yosan/1601131047.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260716101436/https://www.city.toshima.lg.jp/004/kuse/shisaku/yosan/1601131047.html",
+      "waybackTimestamp": "20260716101436",
+      "checkedAt": "2026-07-16T10:21:44.805Z"
+    },
+    {
+      "sourceId": "toshima-yosansho-r5",
+      "url": "https://www.city.toshima.lg.jp/documents/12068/r5_toshimaku_yosannsho.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260716101944/https://www.city.toshima.lg.jp/documents/12068/r5_toshimaku_yosannsho.pdf",
+      "waybackTimestamp": "20260716101944",
+      "checkedAt": "2026-07-16T10:21:14.197Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "toshima-yosansho-r6",
+      "url": "https://www.city.toshima.lg.jp/004/kuse/shisaku/yosan/1601131047.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260716101436/https://www.city.toshima.lg.jp/004/kuse/shisaku/yosan/1601131047.html",
+      "waybackTimestamp": "20260716101436",
+      "checkedAt": "2026-07-16T10:16:08.102Z"
+    },
+    {
+      "sourceId": "toshima-yosansho-r6",
+      "url": "https://www.city.toshima.lg.jp/documents/12068/r6_toshimaku_yosannsho.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260213033612/https://www.city.toshima.lg.jp/documents/12068/r6_toshimaku_yosannsho.pdf",
+      "waybackTimestamp": "20260213033612",
+      "checkedAt": "2026-07-16T10:15:43.626Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "toshima-yosansho-r8",
+      "url": "https://www.city.toshima.lg.jp/004/kuse/shisaku/yosan/1601131047.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260716101436/https://www.city.toshima.lg.jp/004/kuse/shisaku/yosan/1601131047.html",
+      "waybackTimestamp": "20260716101436",
+      "checkedAt": "2026-07-16T10:15:26.438Z"
+    },
+    {
+      "sourceId": "toshima-yosansho-r8",
+      "url": "https://www.city.toshima.lg.jp/documents/12068/20260205141545.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260716101226/https://www.city.toshima.lg.jp/documents/12068/20260205141545.pdf",
+      "waybackTimestamp": "20260716101226",
+      "checkedAt": "2026-07-16T10:13:08.572Z",
+      "sha256Match": true
+    },
+    {
       "sourceId": "toyokawa-yosansho-r7",
       "url": "https://www.city.toyokawa.lg.jp/material/files/group/10/R7_yosann.pdf",
       "kind": "file",

@@ -9,6 +9,7 @@
 //   `bun run pipeline:ingest <sourceId> <ファイルパス>` で手動投入する
 // ============================================================================
 import { sourceEntrySchema, type SourceEntry } from "../types";
+import { eraYear } from "../lib/fy";
 
 export const SOURCES: SourceEntry[] = [
   {
@@ -2218,7 +2219,7 @@ export const SOURCES: SourceEntry[] = [
     //   budget 階層の要件を満たさない＝代替経路にならない。§10 の「CC BY だが別ファイル経路のみ」
     //   （港・台東型）。→ **CC BY を license 欄に書かない**（書くと open へ誤判定される）。
     id: `ota-yosansho-${fy.toLowerCase()}`,
-    title: `令和${fy.slice(1)}年度 大田区予算（案）概要（予算編成の基本的な考え方・款別集計表）`,
+    title: `${eraYear(fy)}年度 大田区予算（案）概要（予算編成の基本的な考え方・款別集計表）`,
     publisher: "大田区",
     url: null,
     urls: [`https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/${path}.pdf`],
@@ -2279,11 +2280,10 @@ export const SOURCES: SourceEntry[] = [
     //
     // **廃止款（§9c）は正しく拾えている** — 皆減の年は原典が款番号を外し括弧書きにする
     //   （R6 `（ 特 別 区 債 ）  0  11,079,000  皆減`）。kanNo=null で拾われ**前年度 Σ も差0**。
-    // ⚠ **H31〜H29 も現行サイトに現存する**（計10年度）が**未収録** — derive の `fyLabel` が
-    //    `令和${fy.slice(1)}年度` を組み立てるため、H 年度を足すと画面に「令和30年度」と出る。
-    //    足すなら**先に年号のラベル付けを直すこと**（大田も H20 まで19年度分が現存し同じ状況）。
+    // ⚠ **H31〜H29 も現行サイトに現存する**（計10年度）が**未収録**（年号ラベルは
+    //    pipeline/lib/fy.ts の eraYear で H 対応済み＝収録の障害は解消。大田も H20 まで19年度分が現存）。
     id: `chuo-sokatsuhyo-${fy.toLowerCase()}`,
-    title: `令和${fy.slice(1)}年度 中央区各会計予算計上額総括表`,
+    title: `${eraYear(fy)}年度 中央区各会計予算計上額総括表`,
     publisher: "中央区",
     url: null,
     urls: [`https://www.city.chuo.lg.jp/documents/${path}`],
@@ -2397,9 +2397,8 @@ export const SOURCES: SourceEntry[] = [
   ] as const).map(([fy, rev, exp, file, page]) => ({
     // 江東区（団体コード 131083・人口 541,685＝R6 決算状況調から実引き）。「予算（案）概要」の
     // 「一般会計当初予算対前年度比較」。Σ款=合計は 7年度×2側×2年度の**28系統すべて差0**、
-    // 年度間クロスチェックも6リンク全款一致。**H28 まで11年度が現行サイトに現存**するが、
-    // H 年度は derive の `fyLabel`（`令和${fy.slice(1)}年度`）が「令和30年度」と出すため未収録
-    // （足すなら先に年号のラベル付けを直す。大田・中央も同じ状況）。
+    // 年度間クロスチェックも6リンク全款一致。**H28 まで11年度が現行サイトに現存**するが未収録
+    // （年号ラベルは pipeline/lib/fy.ts の eraYear で H 対応済み＝収録の障害は解消。大田・中央も同じ）。
     //
     // ⚠ **歳出ページの見出しは `歳 出` しかなく、特別会計の歳出ページと区別できない**（実測）。
     //    国保の p.55 を当てても **Σ は差0 で静かに通る**（8款・46,896,000）。守っているのは
@@ -2425,7 +2424,7 @@ export const SOURCES: SourceEntry[] = [
     //   `awaitTail` が既に吸収済み（`株式等譲渡所得割交付金` 等8款が全年度でこの型・実測でクリーン）。
     //   廃止款の記号は `△`（R2 の自動車取得税交付金・§9c で拾える）。象徴計上 1千円あり（R8 環境性能割）。
     id: `koto-yosangaiyou-${fy.toLowerCase()}`,
-    title: `令和${fy.slice(1)}年度 江東区予算（案）概要（一般会計当初予算対前年度比較）`,
+    title: `${eraYear(fy)}年度 江東区予算（案）概要（一般会計当初予算対前年度比較）`,
     publisher: "江東区",
     url: null,
     urls: [`https://www.city.koto.lg.jp/011102/documents/${file}`],
@@ -2550,7 +2549,7 @@ export const SOURCES: SourceEntry[] = [
     //    同一自治体の年度内で起きる）。R2 は直後の金額 `0` を款番号として読むため **kanNo が 0 になる**
     //    （正しくは null）。金額は 0 / 182,000 で正しく、`皆減` 判定も効いている。
     id: `katsushika-yosangaiyou-${fy.toLowerCase()}`,
-    title: `令和${fy.slice(1)}年度 葛飾区予算概要（各会計款別表）`,
+    title: `${eraYear(fy)}年度 葛飾区予算概要（各会計款別表）`,
     publisher: "葛飾区",
     url: null,
     urls: [`https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/${file}`],
@@ -2572,6 +2571,78 @@ export const SOURCES: SourceEntry[] = [
       revenueHeaderExtra: "^款名$|各会計款別表",
       expenditureHeaderExtra: "^款名$|各会計款別表",
       kanNoless: true,
+    },
+  })),
+
+  ...([
+    // [年度, 歳入ページ(物理), 歳出ページ(物理), 直リンクURL]
+    // ⚠ ファイル名に規則が無い: R8 はタイムスタンプ名 / R7 `yosannsyo`（syo）/ R6・R5
+    //    `yosannsho`（sho）とローマ字転写が揺れ、R4 以前は旧パス
+    //    /004/kuse/shisaku/yosan/documents/0Ntoushoyosan.pdf。**外挿できない**。
+    ["R8", 34, 35, "https://www.city.toshima.lg.jp/documents/12068/20260205141545.pdf"],
+    ["R6", 39, 41, "https://www.city.toshima.lg.jp/documents/12068/r6_toshimaku_yosannsho.pdf"],
+    ["R5", 39, 41, "https://www.city.toshima.lg.jp/documents/12068/r5_toshimaku_yosannsho.pdf"],
+    // R3 は現行サイトから消滅 → Wayback（20211114090748 の捕捉が健全・3,234,716 bytes・パース可を実測）
+    ["R3", 42, 44, "https://web.archive.org/web/20211114090748id_/https://www.city.toshima.lg.jp/004/kuse/shisaku/yosan/documents/03toushoyosan.pdf"],
+  ] as const).map(([fy, rev, exp, url]) => ({
+    // 豊島区（団体コード 131164・人口 294,644＝R6 決算状況調から実引き）。
+    // 「当初予算書」（議案書・全300〜570ページ）の「(1) 歳入歳出予算総括表」（一般会計）。
+    // 印字ページとのズレが年度で違う: R8 ±0 / R6・R5 +3 / R3 +4。
+    //
+    // 表のレイアウトが年度で違うが parserOptions は同一で通る（4年度とも try-parse 実測）:
+    //   - R8: 1ページに全列（款・本年度・前年度・比較・財源内訳）が収まる
+    //   - R6・R5・R3: **見開き型**（款・本年度・前年度が左ページ、比較・財源内訳が右ページ）。
+    //     左ページ単独で「款+本年度+前年度+合計」が完結するので revenuePages/spread は不要
+    // ⚠ **見出しは弱い語（歳入/歳出）**。歳出側ページには節ラベル `歳 出` しか無いので
+    //    強い見出しが選べない（中央区と同じ作法）。代償として**ページ誤指定が throw せず
+    //    特別会計の総括表（R8 なら p.188 国保・p.232 後期高齢・p.264 介護）を静かに読む**。
+    //    ページを動かしたら必ず総額（R8 = 168,986,053千円）を概要・あらまし等と突合すること。
+    // 合計行 `歳 入 合 計`/`歳 出 合 計` は空白除去で既定ラベルに一致（totalLabel 指定不要）。
+    //
+    // 款体系: 歳入20款は R3〜R8 で款名まで不変。歳出は R6 以前13款 → **R7 に款再編**
+    //   （文化商工費 → 文化スポーツ費＋産業観光費）で R8 は14款。**職員費の款は無い**
+    //   （人件費配賦型）。民生費でなく福祉費＋子ども家庭費、土木費でなく都市整備費。消防費なし（制度由来）。
+    // 前年度列の基準は「当初」— 年度間クロスチェックで確定:
+    //   R6 前年度列 = R5 当年度列（歳入20款＋歳出13款の33リンク全一致・実測）。
+    //   R8 前年度列 = R7 当初（R7 当初予算（案）概要 documents/50408/r7_tousyoyosanan_gaiyou.pdf と
+    //   歳出14款すべて一致・歳入も直接13款＋合算2グループが厳密一致・実測）。
+    //   R5 前年度列 135,791,696 = R4 当初（R5 プレス「対前年度比 3億5千9百万円 0.3％増」と整合）。
+    //   R3 前年度列 128,293,228 = R2 当初（R3 プレス「対前年度比 19億3千4百万円 1.5％増」と整合）。
+    // ⚠ 本資料は**議案（予算案）**。R8 は議決後の「財政状況のあらまし」（zaise/documents/2606111531.html）の
+    //   当初予算 1,689億8,605万円と一致＝原案どおり成立を確認済み。年度を足すときは毎回突合すること。
+    // ⚠ **R7・R4・R2 は収録不可**（欠番の理由）: R4・R2 はフォントの ToUnicode 全面欠落
+    //   （pdftotext が `ṓධṓฟண⟬⥲ᣓ⾲`＝歳入歳出予算総括表 を返す・R2 は実測再確認）。
+    //   R7 は原本レイヤに OCR レイヤが重なり数字が壊れる（`(ー)`＝(1)・`干円`＝千円・
+    //   `38,784,`+`326` の行割れ・実測再確認）。修復不可。なお R7 概要 PDF は歳出だけ款別＋
+    //   前年比較が読めるが**歳入が款別でない**（国・都支出金合算等）ため代替にならない。
+    id: `toshima-yosansho-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 豊島区当初予算書（歳入歳出予算総括表）`,
+    publisher: "豊島区",
+    url: null,
+    urls: [url],
+    landingPage:
+      fy === "R3"
+        ? "https://web.archive.org/web/20210927192231/https://www.city.toshima.lg.jp/004/kuse/shisaku/yosan/1601131047.html"
+        : "https://www.city.toshima.lg.jp/004/kuse/shisaku/yosan/1601131047.html",
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "豊島区（一般会計・団体コード131164）",
+    // 「豊島区公式ホームページについて」＞著作権について（確認日 2026-07-16）。同ページは
+    // 著作権法32条2項を【参考】として全文引用するが、その直前に一般的な禁止文がある
+    // （§10 の訂正どおり「32条2項に対する禁止の指定が無い」≠「禁止表示が無い」）。
+    // 区オープンデータページ（/020/kuse/electronic/open-data/1511041608.html）の CC BY 2.1 JP は
+    // 「当ライセンスは、下記対象データのみに適用されますので、それ以外のデータについては、
+    // 『豊島区公式ホームページについて』の取り扱いに準じてください」と自ら範囲を限り、
+    // 対象データ一覧（13件）に予算・決算・財政は0件（実検索）→ 本資料には及ばない（§9g）。
+    license:
+      "当サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として豊島区に帰属しています。また、一部の画像等の著作権は、原著作者が所有しています。／当サイト上の文書や画像等は、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      revenuePage: rev,
+      expenditurePage: exp,
+      // ⚠ 強い見出しに変えないこと（歳出側に弱い節ラベルしか無い。上記コメント参照）
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
     },
   })),
 
@@ -3637,7 +3708,7 @@ export const SOURCES: SourceEntry[] = [
     ["h30", "H30", "令和2年版", "documents/15-01.xls", "documents/15-02.xls", "r2toukeisho.html"],
   ] as const).map(([suffix, fy, edition, revPath, expPath, page]): SourceEntry => ({
     id: `kofu-toukei-zaisei-${suffix}`,
-    title: `${fy.startsWith("H") ? `平成${fy.slice(1)}` : `令和${fy.slice(1)}`}年度 一般会計歳入歳出状況（甲府市統計書 ${edition}）`,
+    title: `${eraYear(fy)}年度 一般会計歳入歳出状況（甲府市統計書 ${edition}）`,
     publisher: "甲府市",
     url: null,
     urls: [
@@ -3668,7 +3739,7 @@ export const SOURCES: SourceEntry[] = [
     ["h29", "H29", "kekkaitiran.xls", "keikaku.html", { format: "list-simple" }],
   ] as const).map(([suffix, fy, file, page, options]): SourceEntry => ({
     id: `kofu-gyousei-hyouka-${suffix}`,
-    title: `${fy.startsWith("H") ? `平成${fy.slice(1)}` : `令和${fy.slice(1)}`}年度 甲府市行政評価（事務事業評価）結果一覧`,
+    title: `${eraYear(fy)}年度 甲府市行政評価（事務事業評価）結果一覧`,
     publisher: "甲府市",
     url: null,
     urls: [`https://www.city.kofu.yamanashi.jp/zaise/documents/${file}`],
