@@ -8,6 +8,7 @@
 //   "  3   民           生           費   38,933,883   37,479,942   1,453,941   42.42   3.88"
 // 款名は字間スペース入り。数値トークンは自治体で並びが違うが、**小数（構成比・増減率）を
 // 除いた整数列は必ず [当年度, 前年度, 増減額] の順**になるため、先頭2整数（当年度・前年度）を使う。
+// **この前提が逆順の様式がある**（足立 R5〜R8 = [前年度, 当年度, 増減額]）— Options.prevColumnFirst 参照。
 // 自治体差は parserOptions で吸収する: 見出し語・合計ラベル（甲府=「歳入合計」/豊川=「合計」）、
 // 款番号の全角（豊川）・○接頭辞（山口）・負号 △/▲。
 import { execFileSync } from "node:child_process";
@@ -171,6 +172,21 @@ interface Options {
    * **資料に注記が無いが事実として注記が要る**場合（上記の骨格予算）に使う。
    */
   prevNote?: string;
+  /**
+   * **列順が [前年度, 当年度, 比較] の様式**（2026-07-16・足立 R5〜R8 で発見）。
+   * ファイル冒頭の前提「整数列は [当年度, 前年度, 増減額] の順」が丸ごと逆になる。
+   *
+   * 指定せずに読むと**当年度と前年度が入れ替わったまま完走する** — 合計行も同じ順で
+   * 反転するため **Σ照合は両側とも差0で素通りする**＝「静かに通ってしまうが中身が違う」
+   * 最危険型。**年度間クロスチェック**（当年度資料の前年度列 = 前年度資料の当年度列）
+   * だけが検出する。皆増・皆減の行は例外で正しい向きに置かれるため、皆減行があると
+   * その行だけ逆になり Σ がずれる（足立 R6 歳入の特別区債 ±1,535,000 で発覚する型）。
+   *
+   * 足立は **R2〜R4 が標準順・R5〜R8 が前年先行**で、同じ自治体の中で反転した。
+   * ヘッダの原文（`７年度当初予算 ８年度当初予算 比較増減`）を年度ごとに確認して指定する
+   * （**年度を外挿しない**）。
+   */
+  prevColumnFirst?: boolean;
 }
 
 /** 全角数字・全角カンマ → 半角（豊川の款番号・北杜の小計見出しが全角） */
@@ -399,15 +415,23 @@ function parseKanPage(
     // 皆減は「当年度＝0」を意味するので、**ints[0] が 0 なら 0 が印字されている**と判る。
     // これを見ずに常に ints[1] を前年度にすると、福岡 R8（`▲ 自動車取得税交付金 - - 1 0.0 △1 皆減`）で
     // 前年度が **△1 → −1** になる（正: 1）。
-    const prevIdx = zeroAmount && toAmount(ints[0]!) !== 0 ? 0 : 1;
-    const line: BudgetLineFact = {
-      side,
-      kanNo,
-      kanName: name,
-      amount: zeroAmount ? 0 : toAmount(ints[0]!),
-      prevAmount: zeroPrev ? 0 : toAmount(ints[prevIdx]!),
-      locator,
-    };
+    let amount: number;
+    let prevAmount: number;
+    if (opts.prevColumnFirst) {
+      // 逆順様式（Options.prevColumnFirst 参照）: ints = [前年度, 当年度, 比較]。
+      // 添字ロジックは正順の**鏡像**になる — 前年度は常に ints[0]。当年度は ints[1] だが、
+      // **皆増で前年度セルが空欄**の様式では ints が [当年度, 比較] に詰まるので ints[0]
+      // （正順の「皆減で当年度セルが空欄」と対称。足立 R6 の皆減
+      // `22 特別区債 1,535,000 0.5 0 0.0 △1,535,000 皆減` は 0 が印字される様式で ints[1]=0）。
+      const amountIdx = zeroPrev && toAmount(ints[0]!) !== 0 ? 0 : 1;
+      amount = zeroAmount ? 0 : toAmount(ints[amountIdx]!);
+      prevAmount = zeroPrev ? 0 : toAmount(ints[0]!);
+    } else {
+      const prevIdx = zeroAmount && toAmount(ints[0]!) !== 0 ? 0 : 1;
+      amount = zeroAmount ? 0 : toAmount(ints[0]!);
+      prevAmount = zeroPrev ? 0 : toAmount(ints[prevIdx]!);
+    }
+    const line: BudgetLineFact = { side, kanNo, kanName: name, amount, prevAmount, locator };
     lines.push(line);
     reset();
     openLine = awaitTail ? line : null;
@@ -437,8 +461,15 @@ function parseKanPage(
       if (ints.length > bestInts) {
         bestInts = ints.length;
         totalIdx = i;
-        total = toAmount(ints[0]!);
-        prevTotal = ints[1] != null ? toAmount(ints[1]!) : null;
+        // 逆順様式では合計行も [前年度, 当年度] の順（Options.prevColumnFirst 参照）。
+        // bestInts > 1 が保証するとおりここは常に整数2個以上なので ints[1] は存在する。
+        if (opts.prevColumnFirst) {
+          total = toAmount(ints[1]!);
+          prevTotal = toAmount(ints[0]!);
+        } else {
+          total = toAmount(ints[0]!);
+          prevTotal = ints[1] != null ? toAmount(ints[1]!) : null;
+        }
       }
     });
   }
