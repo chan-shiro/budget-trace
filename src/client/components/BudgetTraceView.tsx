@@ -64,6 +64,31 @@ export default function BudgetTraceView({ v }: { v: any }) {
             </div>
           </div>
 
+          {/* 収録の深さから選ぶ。段の割り当て・件数は**収録データから自動生成**（手書きの列挙をしない —
+              coverageLevels 参照）。自治体名は変わらないので、深い順に全部並べてそのまま入口にする。 */}
+          <section data-mq-pad="" style={S("width:min(1160px,100%); margin:0 auto; padding:0 32px 44px; animation:fadeUp .4s ease both;")}>
+            <h2 style={S("margin:0 0 4px; font-size:16px; font-weight:700;")}>収録の深さから選ぶ</h2>
+            <p style={S("margin:0 0 14px; font-size:12.5px; color:#5C6B77;")}>どこまで深く収録できているかは自治体ごとに違います。深い順に並べています（この一覧は収録データから自動生成）。</p>
+            {v.coverageLevels.map((g: any, i: number) => (
+              <div key={i} style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; padding:14px 18px; margin-bottom:10px;")}>
+                <div style={S("display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:9px;")}>
+                  <h3 style={S("margin:0; font-size:13.5px; font-weight:700;")}>{g.title}</h3>
+                  <span style={S("font-family:'IBM Plex Mono',monospace; font-size:11px; color:#0F76A3; border:1px solid #B9E0F2; border-radius:999px; padding:1px 9px;")}>{g.munis.length}団体</span>
+                  <span style={S("font-size:11.5px; color:#8494A0;")}>{g.note}</span>
+                </div>
+                <div style={S("display:flex; gap:6px; flex-wrap:wrap;")}>
+                  {g.munis.map((m: any, j: number) => (
+                    <HoverBox as="button" key={j} onClick={m.open} style={S("display:inline-flex; align-items:baseline; gap:6px; border:1px solid #DFE7EC; background:#FFFFFF; border-radius:999px; padding:5px 13px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("border-color:#1798D0;")}>
+                      <span style={S("font-size:13px; font-weight:600; color:#14181C;")}>{m.name}</span>
+                      <span style={S("font-size:10.5px; color:#8494A0;")}>{m.pref}</span>
+                    </HoverBox>
+                  ))}
+                </div>
+              </div>
+            ))}
+            <p style={S("margin:6px 2px 0; font-size:12px; color:#5C6B77;")}>そのほかの全{v.coverageDecisionCount}市区町村も、総務省の決算ベース（款別歳出・歳入内訳・1人あたり・類似自治体比較）で閲覧できます — 上の日本地図か検索から選んでください。</p>
+          </section>
+
           {/* 収録資料は増えていくので、フッターで個別に列挙しない（すぐ実態とズレる）。
               網羅的な収録状況は /coverage が実データから自動生成する — そちらへ誘導する。 */}
           <footer data-mq-pad="" style={S("padding:18px 32px; border-top:1px solid #DFE7EC; font-size:12px; color:#5C6B77; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;")}>
