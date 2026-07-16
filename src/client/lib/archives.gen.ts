@@ -3,6 +3,20 @@
 // 一次資料の元 URL → Wayback Machine スナップショット URL
 
 export const WAYBACK_BY_URL: Record<string, string> = {
+  "https://www.city.adachi.tokyo.jp/documents/46120/02aramashi_1.pdf": "https://web.archive.org/web/20260716075722/https://www.city.adachi.tokyo.jp/documents/46120/02aramashi_1.pdf",
+  "https://www.city.adachi.tokyo.jp/zaise/ku/kuse/zaise-y-r2tosyo.html": "https://web.archive.org/web/20241005032602/https://www.city.adachi.tokyo.jp/zaise/ku/kuse/zaise-y-r2tosyo.html",
+  "https://www.city.adachi.tokyo.jp/documents/50963/03aramashi_1.pdf": "https://web.archive.org/web/20260716075651/https://www.city.adachi.tokyo.jp/documents/50963/03aramashi_1.pdf",
+  "https://www.city.adachi.tokyo.jp/zaise/ku/kuse/zaise-y-r3tosyo.html": "https://web.archive.org/web/20251016004216/https://www.city.adachi.tokyo.jp/zaise/ku/kuse/zaise-y-r3tosyo.html",
+  "https://www.city.adachi.tokyo.jp/documents/55535/r4yosanaramashi.pdf": "https://web.archive.org/web/20220131104508/https://www.city.adachi.tokyo.jp/documents/55535/r4yosanaramashi.pdf",
+  "https://www.city.adachi.tokyo.jp/zaise/ku/kuse/zaise-y-r4tosyo.html": "https://web.archive.org/web/20250914061837/https://www.city.adachi.tokyo.jp/zaise/ku/kuse/zaise-y-r4tosyo.html",
+  "https://www.city.adachi.tokyo.jp/documents/60270/r5aramashi.pdf": "https://web.archive.org/web/20250810153925/https://www.city.adachi.tokyo.jp/documents/60270/r5aramashi.pdf",
+  "https://www.city.adachi.tokyo.jp/zaise/ku/kuse/zaise-y-r5tosyo.html": "https://web.archive.org/web/20250718205043/https://www.city.adachi.tokyo.jp/zaise/ku/kuse/zaise-y-r5tosyo.html",
+  "https://www.city.adachi.tokyo.jp/documents/64031/1-r6aramashi.pdf": "https://web.archive.org/web/20260311131715/https://www.city.adachi.tokyo.jp/documents/64031/1-r6aramashi.pdf",
+  "https://www.city.adachi.tokyo.jp/zaise/ku/kuse/zaise-y-r6tosyo.html": "https://web.archive.org/web/20250515120319/https://www.city.adachi.tokyo.jp/zaise/ku/kuse/zaise-y-r6tosyo.html",
+  "https://www.city.adachi.tokyo.jp/documents/71328/r7_yosan_aramashi_link.pdf": "https://web.archive.org/web/20260716075859/https://www.city.adachi.tokyo.jp/documents/71328/r7_yosan_aramashi_link.pdf",
+  "https://www.city.adachi.tokyo.jp/zaise/ku/kuse/zaise-y-r7tosyo.html": "https://web.archive.org/web/20250131112112/https://www.city.adachi.tokyo.jp/zaise/ku/kuse/zaise-y-r7tosyo.html",
+  "https://www.city.adachi.tokyo.jp/documents/74956/r8_yosan_aramashi_link.pdf": "https://web.archive.org/web/20260130080125/https://www.city.adachi.tokyo.jp/documents/74956/r8_yosan_aramashi_link.pdf",
+  "https://www.city.adachi.tokyo.jp/zaise/ku/kuse/zaise-y-r8tosyo.html": "https://web.archive.org/web/20260419050638/https://www.city.adachi.tokyo.jp/zaise/ku/kuse/zaise-y-r8tosyo.html",
   "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/documents/r4ippan.pdf": "https://web.archive.org/web/20260715172447/https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/documents/r4ippan.pdf",
   "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/r4yosan.html": "https://web.archive.org/web/20260520134435/https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/r4yosan.html",
   "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/documents/r8yosansho_ippan.pdf": "https://web.archive.org/web/20260715172224/https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/documents/r8yosansho_ippan.pdf",

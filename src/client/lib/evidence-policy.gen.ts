@@ -789,6 +789,41 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://web.archive.org/web/20211114090748id_/https://www.city.toshima.lg.jp/004/kuse/shisaku/yosan/documents/03toushoyosan.pdf",
     "license": "当サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として豊島区に帰属しています。また、一部の画像等の著作権は、原著作者が所有しています。／当サイト上の文書や画像等は、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
   },
+  "/sources/adachi-yosansho-r8/r8_yosan_aramashi_link.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.adachi.tokyo.jp/documents/74956/r8_yosan_aramashi_link.pdf",
+    "license": "ホームページに掲載しているコンテンツ（文章、イラスト、ロゴ、写真、動画、その他のすべての情報）は著作権の対象となっています。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/adachi-yosansho-r7/r7_yosan_aramashi_link.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.adachi.tokyo.jp/documents/71328/r7_yosan_aramashi_link.pdf",
+    "license": "ホームページに掲載しているコンテンツ（文章、イラスト、ロゴ、写真、動画、その他のすべての情報）は著作権の対象となっています。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/adachi-yosansho-r6/1-r6aramashi.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.adachi.tokyo.jp/documents/64031/1-r6aramashi.pdf",
+    "license": "ホームページに掲載しているコンテンツ（文章、イラスト、ロゴ、写真、動画、その他のすべての情報）は著作権の対象となっています。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/adachi-yosansho-r5/r5aramashi.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.adachi.tokyo.jp/documents/60270/r5aramashi.pdf",
+    "license": "ホームページに掲載しているコンテンツ（文章、イラスト、ロゴ、写真、動画、その他のすべての情報）は著作権の対象となっています。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/adachi-yosansho-r4/r4yosanaramashi.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.adachi.tokyo.jp/documents/55535/r4yosanaramashi.pdf",
+    "license": "ホームページに掲載しているコンテンツ（文章、イラスト、ロゴ、写真、動画、その他のすべての情報）は著作権の対象となっています。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/adachi-yosansho-r3/03aramashi_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.adachi.tokyo.jp/documents/50963/03aramashi_1.pdf",
+    "license": "ホームページに掲載しているコンテンツ（文章、イラスト、ロゴ、写真、動画、その他のすべての情報）は著作権の対象となっています。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/adachi-yosansho-r2/02aramashi_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.adachi.tokyo.jp/documents/46120/02aramashi_1.pdf",
+    "license": "ホームページに掲載しているコンテンツ（文章、イラスト、ロゴ、写真、動画、その他のすべての情報）は著作権の対象となっています。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
   "/sources/okayama-yosangaiyou-r8/R8tousyogaiyou.pdf": {
     "mode": "origin",
     "href": "https://www.city.okayama.jp/shisei/cmsfiles/contents/0000075/75851/R8tousyogaiyou.pdf",

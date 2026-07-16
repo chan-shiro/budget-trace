@@ -1818,6 +1818,11 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r6", "r5", "r3"] as const).map((fy) => ({
       srcId: `toshima-yosansho-${fy}`, muniCode: "131164", muniName: "豊島区", prefName: "東京都", isPref: false,
     })),
+    // 足立区。あらまし総括表。**R5〜R8 は列順が [前年度, 当年度] に反転**（prevColumnFirst・
+    // registry のコメント参照）。R2〜R8 の当初チェーンは款単位で全件一致を確認済み
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `adachi-yosansho-${fy}`, muniCode: "131211", muniName: "足立区", prefName: "東京都", isPref: false,
+    })),
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;
