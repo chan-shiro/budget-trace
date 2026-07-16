@@ -5120,7 +5120,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和5年度 江東区予算（案）概要（一般会計当初予算対前年度比較）",
-      "sourceUrl": "https://www.city.koto.lg.jp/011102/documents/5tousyoyosanangaiyou.pdf",
+      "sourceUrl": "https://web.archive.org/web/20230326193254/https://www.city.koto.lg.jp/011102/documents/5tousyoyosanangaiyou.pdf",
       "originUrl": "https://www.city.koto.lg.jp/011102/documents/5tousyoyosanangaiyou.pdf",
       "sourceLocalUrl": "/sources/koto-yosangaiyou-r5/5tousyoyosanangaiyou.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -5128,7 +5128,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和5年度 江東区予算（案）概要（一般会計当初予算対前年度比較）",
           "type": "PDF",
-          "url": "https://www.city.koto.lg.jp/011102/documents/5tousyoyosanangaiyou.pdf",
+          "url": "https://web.archive.org/web/20230326193254/https://www.city.koto.lg.jp/011102/documents/5tousyoyosanangaiyou.pdf",
           "localUrl": "/sources/koto-yosangaiyou-r5/5tousyoyosanangaiyou.pdf",
           "source": "www.city.koto.lg.jp",
           "thumb": "5tousyoyosanangaiyou.pdf ・ sha256 0bf621eced5f87fa… ・ 2026-07-16 取得"
@@ -6738,7 +6738,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和5年度 目黒区当初予算案プレス発表資料（資料編・各会計歳入歳出予算）",
-      "sourceUrl": "https://www.city.meguro.tokyo.jp/documents/2254/r05_yosan_siryou.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260716072451/https://www.city.meguro.tokyo.jp/documents/2254/r05_yosan_siryou.pdf",
       "originUrl": "https://www.city.meguro.tokyo.jp/documents/2254/r05_yosan_siryou.pdf",
       "sourceLocalUrl": "/sources/meguro-yosanan-r5/r05_yosan_siryou.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -6746,7 +6746,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和5年度 目黒区当初予算案プレス発表資料（資料編・各会計歳入歳出予算）",
           "type": "PDF",
-          "url": "https://www.city.meguro.tokyo.jp/documents/2254/r05_yosan_siryou.pdf",
+          "url": "https://web.archive.org/web/20260716072451/https://www.city.meguro.tokyo.jp/documents/2254/r05_yosan_siryou.pdf",
           "localUrl": "/sources/meguro-yosanan-r5/r05_yosan_siryou.pdf",
           "source": "www.city.meguro.tokyo.jp",
           "thumb": "r05_yosan_siryou.pdf ・ sha256 d2bcd5360a86a496… ・ 2026-07-16 取得"
@@ -6968,7 +6968,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和4年度 目黒区当初予算案プレス発表資料（資料編・各会計歳入歳出予算）",
-      "sourceUrl": "https://www.city.meguro.tokyo.jp/documents/2259/r04_yosan_siryou.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260716072706/https://www.city.meguro.tokyo.jp/documents/2259/r04_yosan_siryou.pdf",
       "originUrl": "https://www.city.meguro.tokyo.jp/documents/2259/r04_yosan_siryou.pdf",
       "sourceLocalUrl": "/sources/meguro-yosanan-r4/r04_yosan_siryou.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -6976,7 +6976,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和4年度 目黒区当初予算案プレス発表資料（資料編・各会計歳入歳出予算）",
           "type": "PDF",
-          "url": "https://www.city.meguro.tokyo.jp/documents/2259/r04_yosan_siryou.pdf",
+          "url": "https://web.archive.org/web/20260716072706/https://www.city.meguro.tokyo.jp/documents/2259/r04_yosan_siryou.pdf",
           "localUrl": "/sources/meguro-yosanan-r4/r04_yosan_siryou.pdf",
           "source": "www.city.meguro.tokyo.jp",
           "thumb": "r04_yosan_siryou.pdf ・ sha256 0bc54202605088a0… ・ 2026-07-16 取得"
