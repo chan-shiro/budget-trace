@@ -37,6 +37,7 @@ bun run typecheck  # tsc --noEmit
 bun run pipeline:fetch [sourceId]               # レジストリのURLから raw を取得
 bun run pipeline:ingest <sourceId> <file>       # 手動取得ファイルの投入
 bun run pipeline:parse <sourceId>               # raw → parsed（locator 付き抽出）
+bun run pipeline:try-parse <parser> <file...> --opts '<JSON>'  # registry を触らずパーサを試す（偵察用ドライラン）
 bun run pipeline:validate <sourceId>            # 整合チェック（検証ゲート）
 bun run pipeline:normalize <sourceId> [--force] # parsed → normalized（比較可能化）
 bun run pipeline:fixture                        # e2e 検証用フィクスチャ生成

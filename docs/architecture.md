@@ -515,6 +515,7 @@ parsed → gen に直行する。
 bun run pipeline:fetch [sourceId]               # URL から raw へ取得（ハッシュ記録）
 bun run pipeline:ingest <sourceId> <file>       # 手動取得ファイルの投入
 bun run pipeline:parse <sourceId>               # raw → parsed（Zod 検証込み）
+bun run pipeline:try-parse <parser> <file...> --opts '<JSON>'  # ドライラン（下記）
 bun run pipeline:validate <sourceId>            # 整合チェック → ok / needs_review
 bun run pipeline:normalize <sourceId> [--force] # parsed → normalized
 bun run pipeline:fixture                        # 開発用フィクスチャ生成（e2e 検証用）
@@ -524,6 +525,13 @@ bun run pipeline:derive                         # normalized → アプリ用生
 予算書 PDF（テキスト層あり）のパースは poppler の `pdftotext` を使う（`brew install poppler`）。
 スキャン画像 PDF や複雑な表（主な事業一覧など）は LLM 併用パーサ（抽出 → Zod 検証 →
 整合チェック）で扱う。
+
+**`pipeline:try-parse` は registry を触らないドライラン**（2026-07-16 追加）。手元のファイルに
+パーサを直接当て、抽出できた款の全件と Σ照合を出す。`source-scout` は registry を書き換えない
+制約があるため「この資料は既存パーサに乗るか」を**読解と推論だけ**で答えており、実際に外していた
+（特別区24団体で3種類の誤報。docs/data-sources.md §10）。**推論を実測に変えるための道具**で、
+収録前の当たりをつけるのにも使える。**これは検証ゲートではない** — registry に入れたら
+`pipeline:validate` を必ず通す。
 
 サーバー層ができるまでの normalized → アプリの接続は `pipeline:derive` で行う:
 巨大な normalized JSON をクライアントに import せず、必要な断面だけを決定的に

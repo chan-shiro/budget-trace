@@ -183,6 +183,24 @@ const hasCJKChars = (s: string): boolean => /[぀-ヿ㐀-鿿々〆ヶ]/.test(s);
 /** 金額トークンの正規表現（負号 △/▲ を許容） */
 const AMOUNT_RE = /[△▲]?[\d,]+(?:\.\d+)?/g;
 
+/**
+ * **百分率トークンを金額から除く**（2026-07-16・新宿 R8）。
+ *
+ * 構成比・増減率は小数（`32.4`）なので呼び出し側の小数フィルタが落としてきた。が、
+ * **合計行の構成比は「ちょうど 100%」＝整数**でフィルタを素通りする:
+ *
+ *   `歳入合計   187,835,560   100%   188,460,229   100%   △ 624,669   △0.3%`
+ *   → ints = [187835560, **100**, 188460229, 100, 624669] → `prevTotal = ints[1]` が **100**
+ *
+ * 既存自治体は構成比に必ず小数点が付いていたため露出していなかった。前年度Σ検査は
+ * **error ではなく warning** なので**パイプラインは止まらず derive まで流れ**、
+ * 「前年度合計 100」という無意味な注意書きが画面に載る＝§9 の「静かに壊れる」型の第3。
+ *
+ * `％` が数字から離れて単独で並ぶ単位行（`千円 ％ 千円 ％`）には当たらない（数字が無いため）ので、
+ * 既存の `isUnitOnly` / ヘッダ判定は影響を受けない。小数の百分率に対しては no-op。
+ */
+const stripPercents = (s: string): string => s.replace(/[\d,]+(?:\.\d+)?\s*[%％]/g, " ");
+
 /** "1,234" / "△1,234" / "▲1,234" → number。構成比などの小数は対象外（呼び出し側で弾く） */
 function toAmount(token: string): number {
   const neg = /^[△▲-]/.test(token);
@@ -414,7 +432,8 @@ function parseKanPage(
     let bestInts = 1; // 最低2個の整数金額（当年度＋前年度）を要求
     allLines.forEach((raw, i) => {
       if (!raw.replace(/[\s　]/g, "").includes(totalLabel)) return;
-      const ints = (raw.match(AMOUNT_RE) ?? []).filter((t) => !t.includes("."));
+      // 構成比 100%（＝整数）が前年度合計に化けるのを防ぐ（stripPercents 参照）
+      const ints = (stripPercents(raw).match(AMOUNT_RE) ?? []).filter((t) => !t.includes("."));
       if (ints.length > bestInts) {
         bestInts = ints.length;
         totalIdx = i;
@@ -482,7 +501,9 @@ function parseKanPage(
     // 款番号と名前が密着する様式（富士吉田「1議会費」）に対応するため、番号直後の
     // 空白は必須にせず「次が数字・カンマでない（＝金額の一部でない）」ことだけ要求する
     const lead = raw.match(/^\s*[○◎●]*\s*(\d+)(?![\d,])/);
-    const rest = lead ? raw.slice(raw.indexOf(lead[1]!) + lead[1]!.length) : raw;
+    // 款行でも整数の百分率（`0%`・`100%`）が金額に紛れうるので合計行と同じ扱いにする。
+    // **lead の判定より後**に置くこと（款番号は百分率ではないので剥がしてはいけない）。
+    const rest = stripPercents(lead ? raw.slice(raw.indexOf(lead[1]!) + lead[1]!.length) : raw);
     const tokens = rest.match(AMOUNT_RE) ?? [];
     const ints = tokens.filter((t) => !t.includes("."));
     // 款名の三点リーダを落とす（2026-07-16）。堺 R2 は折返しの上段末尾に `…` が入る
@@ -526,8 +547,18 @@ function parseKanPage(
       emit(kanNo, pendName + namePart, ints, raw, namePart === "" || tailKans.has(kanNo));
     } else if (opts.kanNoless && ints.length >= 2 && hasCJK(pendName + namePart)) {
       // 款番号を持たない様式（Options.kanNoless 参照）。原典が振っていないので kanNo は null。
-      // 断片（`入 使用料及び手数料` のように款名だけが別行に出る）も pendName 経由で拾う
-      emit(null, pendName + namePart, ints, raw);
+      // 断片（`入 使用料及び手数料` のように款名だけが別行に出る）も pendName 経由で拾う。
+      //
+      // **awaitTail を渡す**（2026-07-16 修正・杉並で発覚）。上の abolished 分岐・lead 分岐は
+      // どちらも「名前欄が空なら下段を待つ」を渡しているのに、**この分岐だけ渡していなかった**。
+      // 款番号なし＋中央寄せ3行折返しの様式では**下段が次の款へ漏れる**:
+      //   `株 式 等 譲 渡`                                  ← 上段（pendName）
+      //   `            4,140,000  2,520,000  1,620,000`   ← 款行・名前欄が空
+      //   `所 得 割 交 付 金`                                ← 下段。**待たないと次の款名に化ける**
+      //   → `株式等譲渡` / `所得割交付金地方消費税交付金`（実測）
+      // **金額は全件正しく Σ も4系統すべて差0 で通る＝検証ゲートを完全に素通りする**。
+      // 既存の唯一の kanNoless ソース（岡山）は款行に折返しが無く、この穴は潜在していた。
+      emit(null, pendName + namePart, ints, raw, namePart === "");
     } else if (tokens.length === 0) {
       // 金額のない款名断片（折返しの上段/下段）。日本語断片のみ採る。
       // 「款名 （A）（%）…」等の列見出し行は款名に混ぜない。

@@ -1657,6 +1657,13 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6"] as const).map((fy) => ({
       srcId: `shizuoka-yosansho-${fy}`, muniCode: "221007", muniName: "静岡市", prefName: "静岡県", isPref: false,
     })),
+    // 東京特別区（2026-07-16）。**23区に統一様式は無く款体系が区ごとに全部違う** — registry の
+    // 特別区の節を参照。制度由来の共通点（消防費なし・地方交付税なし・特別区交付金・特別区税/債）
+    // だけが揃い、それ以外の款は各区が独自に立てている。
+    // **R3 は欠番**（pdftotext -layout が款を静かに落とす。registry のコメント参照）。
+    ...(["r8", "r7", "r6", "r5", "r4", "r2"] as const).map((fy) => ({
+      srcId: `chiyoda-yosansho-${fy}`, muniCode: "131016", muniName: "千代田区", prefName: "東京都", isPref: false,
+    })),
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;
@@ -1999,9 +2006,19 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
   // さいたまの「無断使用・転載を禁止します」は、上の語彙（複製・転用）のどれにも当たらず
   // unverified へ落ちた。発行元は市ごとに違う動詞を使う（使用／複製／転用／転載／改変／販売／
   // 印刷配布）ので、**動詞を列挙するのではなく「無断」＋禁止の言い回しで捕まえる**。
+  // **禁止を先に判定する**（2026-07-16・特別区）。オープンデータ規約は「ポータル掲載データのみに
+  // 適用」と自ら範囲を限る書き方が定番で、その規約文を非 open な資料の license に取り違えて
+  // 書くと open へ誤判定される（§9g の実害）。**明示的な禁止文言は CC BY の言及に勝たせる**＝
+  // 取り違えたときに厳しい側へ落ちる。既存の open 13件は禁止文言を1つも含まないことを実測確認済み。
+  //
+  // CC BY を open に足した（2026-07-16・特別区）。特別区は**予算データそのものを CC BY の
+  // オープンデータとして出す区**が実在し（世田谷 CSV・練馬 XLSX・千代田はサイト全体・
+  // 東京都の決算 XLSX）、政令市20市の「ポータルの CC BY は予算書に及ばない」とは事情が違う。
+  // 語彙が無いままだと**初の真正 open が unverified として画面に出る**。
   const licenseClassOf = (lic: string): "open" | "permission-required" | "unverified" =>
-    /政府標準利用規約|公共データ利用規約/.test(lic) ? "open"
-    : /要許可|非営利|無断|複製・転用|転載を禁止|使用を禁止/.test(lic) ? "permission-required"
+    /要許可|非営利|無断|複製・転用|転載を禁止|使用を禁止|(?:転載|複製|二次利用|引用)[^。]{0,10}(?:禁じ|禁止)/.test(lic)
+      ? "permission-required"
+    : /政府標準利用規約|公共データ利用規約|クリエイティブ・コモンズ|CC[ -]?BY/i.test(lic) ? "open"
     : "unverified";
 
   const KNOWN = [

@@ -13,13 +13,13 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 33,
+  "budgetCount": 34,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 147,
-  "fileCount": 272,
-  "archivedCount": 137,
-  "licenseOpen": 13,
+  "sourceCount": 153,
+  "fileCount": 278,
+  "archivedCount": 143,
+  "licenseOpen": 19,
   "licensePermission": 76,
   "licenseUnverified": 58,
   "kessanRange": "R2〜R6（5年度）",
@@ -67,6 +67,12 @@ export const ROADMAP_PROGRESS = {
       "code": "011002",
       "years": 7,
       "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "千代田区",
+      "code": "131016",
+      "years": 6,
+      "range": "R2〜R8（6年度）"
     },
     {
       "name": "横浜市",
@@ -146,9 +152,10 @@ export const ROADMAP_PLAN: RoadmapItem[] = [
   },
   {
     "title": "東京特別区",
-    "status": "next",
-    "why": "未収録の人口上位に多数残っている（世田谷92万・練馬・大田・足立・江戸川…）。",
-    "needs": "特別区は都区財政調整があり市とも政令市とも会計制度が違う。資料の様式を含めて別途の偵察が要る。"
+    "status": "now",
+    "why": "未収録の人口上位に多数残っている（世田谷92万・練馬・大田・足立・江戸川…）。東京都と23区の全24団体を偵察し、いずれも当初予算の款別と前年当初比較が取れることを確認した。千代田から順に収録している。",
+    "needs": "23区に統一様式は無く、款体系が区ごとに全部違う（消防費が無い・地方交付税が無い・特別区交付金がある、といった都区財政調整に由来する部分だけが共通）。様式ごとにパーサの手当てが要り、資料の形も PDF・CSV・Excel に分かれる。ライセンスも区ごとに違い、予算データ自体をオープンデータで出す区と、二次利用を明示的に禁じる区が混在する。",
+    "ref": "docs/data-sources.md §10"
   },
   {
     "title": "款より下（項・目・節）の内訳",
