@@ -1783,14 +1783,16 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r2"] as const).map((fy) => ({
       srcId: `chiyoda-yosansho-${fy}`, muniCode: "131016", muniName: "千代田区", prefName: "東京都", isPref: false,
     })),
-    // 大田区は**特別区で最も素直**（7年度が同一 parserOptions・款体系も7年間不変）。registry のコメント参照。
-    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+    // 大田区は**特別区で最も素直**（同一 parserOptions・款体系も不変）。registry のコメント参照。
+    // **H27・H26・H25 は欠番**（H27 は ToUnicode 全面欠落、H26・H25 は `-layout` が款9 特別区交付金を
+    // 静かに落とす＝千代田 R3 と同じ型で原典は健全。§10a）。**H24〜H20 も現存**するが未収録。
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28"] as const).map((fy) => ({
       srcId: `ota-yosansho-${fy}`, muniCode: "131113", muniName: "大田区", prefName: "東京都", isPref: false,
     })),
     // 中央区は**款別専用の6ページ PDF**（歳入歳出が同一ページ＝samePage）。**見出しを強くすると
-    // 款名が静かに壊れる**という逆説がある（registry のコメント参照）。H31〜H29 も現存するが未収録
-    //（年号ラベルは eraYear で H 対応済み＝収録の障害は解消）。
-    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+    // 款名が静かに壊れる**という逆説がある（registry のコメント参照）。
+    // **H29 が現行サイトの最古**＝これで10年度が打ち止め。
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29"] as const).map((fy) => ({
       srcId: `chuo-sokatsuhyo-${fy}`, muniCode: "131024", muniName: "中央区", prefName: "東京都", isPref: false,
     })),
     // 目黒区はプレス発表資料の資料編。**R2 の廃止税目行に kanNoless が必須**（無いと前年度 Σ が
@@ -1800,7 +1802,8 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     })),
     // 江東区は歳出見出しが特会と区別できず**誤ページでも Σ差0 で静かに通る**（守るのは validate の
     // 歳入合計=歳出合計 のみ）。歳入は強い見出しの代償で款1 が汚染されるため HeaderExtra が要る。
-    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+    // **H28 が現行サイトの最古**＝これで11年度が打ち止め（H29・H28 はパス基底ごと違う）。
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28"] as const).map((fy) => ({
       srcId: `koto-yosangaiyou-${fy}`, muniCode: "131083", muniName: "江東区", prefName: "東京都", isPref: false,
     })),
     // 渋谷区は**R4 以前が収録不可**（PDF が無く HTML は前年度列を持たない）。特別区債の款が全年度で
@@ -1809,8 +1812,9 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       srcId: `shibuya-yosansho-${fy}`, muniCode: "131130", muniName: "渋谷区", prefName: "東京都", isPref: false,
     })),
     // 葛飾区は**職員費の款を持つ**（全款から人件費を抜く名古屋・札幌型）ので他自治体と款別を
-    // 直接比較すると民生費等が過小に見える。R8 は第6の折返し型で kanNoless が要る。
-    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+    // 直接比較すると民生費等が過小に見える。R8 は第6の折返し型で kanNoless が要る
+    // （**H31・H30 では kanNoless は no-op**＝R8 の折返し型が無い）。H29 以前は未着手。
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30"] as const).map((fy) => ({
       srcId: `katsushika-yosangaiyou-${fy}`, muniCode: "131229", muniName: "葛飾区", prefName: "東京都", isPref: false,
     })),
     // 豊島区は**R7・R4・R2 が欠番**（R4・R2 は ToUnicode 全面欠落、R7 は OCR レイヤの重なりで

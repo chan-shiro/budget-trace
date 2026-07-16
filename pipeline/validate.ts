@@ -9,6 +9,7 @@ import {
   type ValidationResult,
 } from "./types";
 import { parsedPath, readJson, validationPath, writeJson } from "./lib/store";
+import { fyRank } from "./lib/fy";
 
 const sourceId = process.argv[2];
 if (!sourceId) {
@@ -376,7 +377,10 @@ if (doc.docType === "project-report") {
     // 横浜は年度ヘッダが同ページに3組あり、事業決算額と細事業費は x が1ptも違わないので、
     // このゲートが無いと静かに混ざる（実測 1,508/1,508 厳密一致・例外0）。
     if (f.costDiff != null && f.cost.length >= 2) {
-      const ys = [...f.cost].sort((a, b) => Number(a.fy.slice(1)) - Number(b.fy.slice(1)));
+      // 並べ替えは fyRank（pipeline/lib/fy.ts・R > H）。`Number(fy.slice(1))` だと **H31 が R2 より
+      // 後ろに来て**、年号をまたぐ資料（札幌の事業報告は H24〜R7）で「最後の2年」を取り違える。
+      // ここは差引の突合ゲートなので、取り違えると**誤った対で照合して静かに通る**。
+      const ys = [...f.cost].sort((a, b) => fyRank(a.fy) - fyRank(b.fy));
       const prev = ys[ys.length - 2]!.jigyohi;
       const cur = ys[ys.length - 1]!.jigyohi;
       if (prev != null && cur != null && cur - prev !== f.costDiff) {

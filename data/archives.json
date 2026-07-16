@@ -341,16 +341,16 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260716140428/https://www.city.edogawa.tokyo.jp/documents/261/h30yoko_1.pdf",
       "waybackTimestamp": "20260716140428",
-      "checkedAt": "2026-07-16T14:04:50.790Z",
+      "checkedAt": "2026-07-16T14:37:16.920Z",
       "sha256Match": true
     },
     {
       "sourceId": "edogawa-yoko-h30",
       "url": "https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/h30nendo.html",
       "kind": "landing",
-      "waybackUrl": "https://web.archive.org/web/20260310065348/https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/h30nendo.html",
-      "waybackTimestamp": "20260310065348",
-      "checkedAt": "2026-07-16T14:05:23.268Z"
+      "waybackUrl": "https://web.archive.org/web/20260716141949/https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/h30nendo.html",
+      "waybackTimestamp": "20260716141949",
+      "checkedAt": "2026-07-16T14:37:51.549Z"
     },
     {
       "sourceId": "edogawa-yoko-r2",
@@ -358,16 +358,16 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260716140145/https://www.city.edogawa.tokyo.jp/documents/17473/r2yoko.pdf",
       "waybackTimestamp": "20260716140145",
-      "checkedAt": "2026-07-16T14:02:45.456Z",
+      "checkedAt": "2026-07-16T14:33:40.926Z",
       "sha256Match": true
     },
     {
       "sourceId": "edogawa-yoko-r2",
       "url": "https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/r2nenndo.html",
       "kind": "landing",
-      "waybackUrl": "https://web.archive.org/web/20251017133309/https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/r2nenndo.html",
-      "waybackTimestamp": "20251017133309",
-      "checkedAt": "2026-07-16T14:03:10.072Z"
+      "waybackUrl": "https://web.archive.org/web/20260716141448/https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/r2nenndo.html",
+      "waybackTimestamp": "20260716141448",
+      "checkedAt": "2026-07-16T14:33:47.792Z"
     },
     {
       "sourceId": "edogawa-yoko-r3",
@@ -375,24 +375,24 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20250613041510/https://www.city.edogawa.tokyo.jp/documents/23048/r3yoko.pdf",
       "waybackTimestamp": "20250613041510",
-      "checkedAt": "2026-07-16T14:00:54.736Z",
+      "checkedAt": "2026-07-16T14:30:06.212Z",
       "sha256Match": true
     },
     {
       "sourceId": "edogawa-yoko-r3",
       "url": "https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/r3nenndo.html",
       "kind": "landing",
-      "waybackUrl": "https://web.archive.org/web/20260207130254/https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/r3nenndo.html",
-      "waybackTimestamp": "20260207130254",
-      "checkedAt": "2026-07-16T14:01:36.576Z"
+      "waybackUrl": "https://web.archive.org/web/20260716143109/https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/r3nenndo.html",
+      "waybackTimestamp": "20260716143109",
+      "checkedAt": "2026-07-16T14:33:06.390Z"
     },
     {
       "sourceId": "edogawa-yosansho-h27",
       "url": "https://www.city.edogawa.tokyo.jp/documents/259/27tousho.pdf",
       "kind": "file",
-      "waybackUrl": "https://web.archive.org/web/20250613041606/https://www.city.edogawa.tokyo.jp/documents/259/27tousho.pdf",
-      "waybackTimestamp": "20250613041606",
-      "checkedAt": "2026-07-16T14:12:10.537Z",
+      "waybackUrl": "https://web.archive.org/web/20260716144644/https://www.city.edogawa.tokyo.jp/documents/259/27tousho.pdf",
+      "waybackTimestamp": "20260716144644",
+      "checkedAt": "2026-07-16T14:47:17.235Z",
       "sha256Match": true
     },
     {
@@ -401,7 +401,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260716141308/https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/h27nendo.html",
       "waybackTimestamp": "20260716141308",
-      "checkedAt": "2026-07-16T14:14:19.182Z"
+      "checkedAt": "2026-07-16T14:49:22.816Z"
     },
     {
       "sourceId": "edogawa-yosansho-h28",
@@ -409,7 +409,7 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20240809174928/https://www.city.edogawa.tokyo.jp/documents/260/28tousho.pdf",
       "waybackTimestamp": "20240809174928",
-      "checkedAt": "2026-07-16T14:09:18.812Z",
+      "checkedAt": "2026-07-16T14:42:29.707Z",
       "sha256Match": true
     },
     {
@@ -418,7 +418,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260716141051/https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/h28nendo.html",
       "waybackTimestamp": "20260716141051",
-      "checkedAt": "2026-07-16T14:11:46.833Z"
+      "checkedAt": "2026-07-16T14:21:46.917Z"
     },
     {
       "sourceId": "edogawa-yosansho-h29",
@@ -426,7 +426,7 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260716140538/https://www.city.edogawa.tokyo.jp/documents/262/29tousho.pdf",
       "waybackTimestamp": "20260716140538",
-      "checkedAt": "2026-07-16T14:16:30.970Z",
+      "checkedAt": "2026-07-16T14:39:23.581Z",
       "sha256Match": true
     },
     {
@@ -435,43 +435,41 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260716140905/https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/h29_yosan.html",
       "waybackTimestamp": "20260716140905",
-      "checkedAt": "2026-07-16T14:16:41.711Z"
+      "checkedAt": "2026-07-16T14:41:57.425Z"
     },
     {
       "sourceId": "edogawa-yosansho-h31",
       "url": "https://www.city.edogawa.tokyo.jp/documents/12531/h31tosyo.pdf",
       "kind": "file",
-      "waybackUrl": "https://web.archive.org/web/20241109230735/https://www.city.edogawa.tokyo.jp/documents/12531/h31tosyo.pdf",
-      "waybackTimestamp": "20241109230735",
-      "checkedAt": "2026-07-16T14:03:21.430Z",
-      "sha256Match": false,
-      "waybackTruncated": true
+      "waybackUrl": "https://web.archive.org/web/20260716141821/https://www.city.edogawa.tokyo.jp/documents/12531/h31tosyo.pdf",
+      "waybackTimestamp": "20260716141821",
+      "checkedAt": "2026-07-16T14:33:54.785Z",
+      "sha256Match": true
     },
     {
       "sourceId": "edogawa-yosansho-h31",
       "url": "https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/h31nendo.html",
       "kind": "landing",
-      "waybackUrl": "https://web.archive.org/web/20260117231556/https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/h31nendo.html",
-      "waybackTimestamp": "20260117231556",
-      "checkedAt": "2026-07-16T14:04:19.632Z"
+      "waybackUrl": "https://web.archive.org/web/20260716143612/https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/h31nendo.html",
+      "waybackTimestamp": "20260716143612",
+      "checkedAt": "2026-07-16T14:36:45.274Z"
     },
     {
       "sourceId": "edogawa-yosansho-r4",
       "url": "https://www.city.edogawa.tokyo.jp/documents/31190/r4tosyo.pdf",
       "kind": "file",
-      "waybackUrl": "https://web.archive.org/web/20251110192825/https://www.city.edogawa.tokyo.jp/documents/31190/r4tosyo.pdf",
-      "waybackTimestamp": "20251110192825",
-      "checkedAt": "2026-07-16T14:00:09.000Z",
-      "sha256Match": false,
-      "waybackTruncated": true
+      "waybackUrl": "https://web.archive.org/web/20260716140845/https://www.city.edogawa.tokyo.jp/documents/31190/r4tosyo.pdf",
+      "waybackTimestamp": "20260716140845",
+      "checkedAt": "2026-07-16T14:28:46.285Z",
+      "sha256Match": true
     },
     {
       "sourceId": "edogawa-yosansho-r4",
       "url": "https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/r4nendo.html",
       "kind": "landing",
-      "waybackUrl": "https://web.archive.org/web/20260306062131/https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/r4nendo.html",
-      "waybackTimestamp": "20260306062131",
-      "checkedAt": "2026-07-16T14:00:41.214Z"
+      "waybackUrl": "https://web.archive.org/web/20260716141129/https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/r4nendo.html",
+      "waybackTimestamp": "20260716141129",
+      "checkedAt": "2026-07-16T14:29:18.188Z"
     },
     {
       "sourceId": "edogawa-yosansho-r5",
@@ -479,7 +477,7 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260716135655/https://www.city.edogawa.tokyo.jp/documents/40224/r5tosyo.pdf",
       "waybackTimestamp": "20260716135655",
-      "checkedAt": "2026-07-16T13:57:42.508Z",
+      "checkedAt": "2026-07-16T14:28:32.509Z",
       "sha256Match": true
     },
     {
@@ -488,7 +486,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260716135806/https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/r5nendo.html",
       "waybackTimestamp": "20260716135806",
-      "checkedAt": "2026-07-16T13:59:22.342Z"
+      "checkedAt": "2026-07-16T14:28:37.954Z"
     },
     {
       "sourceId": "edogawa-yosansho-r6",
@@ -496,7 +494,7 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260716135434/https://www.city.edogawa.tokyo.jp/documents/49549/r6tosyo.pdf",
       "waybackTimestamp": "20260716135434",
-      "checkedAt": "2026-07-16T13:55:05.616Z",
+      "checkedAt": "2026-07-16T14:04:54.882Z",
       "sha256Match": true
     },
     {
@@ -505,25 +503,24 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260716135608/https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/r6nendo.html",
       "waybackTimestamp": "20260716135608",
-      "checkedAt": "2026-07-16T13:56:44.112Z"
+      "checkedAt": "2026-07-16T14:06:55.652Z"
     },
     {
       "sourceId": "edogawa-yosansho-r7",
       "url": "https://www.city.edogawa.tokyo.jp/documents/58935/r7tosyo.pdf",
       "kind": "file",
-      "waybackUrl": "https://web.archive.org/web/20251110194042/https://www.city.edogawa.tokyo.jp/documents/58935/r7tosyo.pdf",
-      "waybackTimestamp": "20251110194042",
-      "checkedAt": "2026-07-16T13:54:13.988Z",
-      "sha256Match": false,
-      "waybackTruncated": true
+      "waybackUrl": "https://web.archive.org/web/20260716140107/https://www.city.edogawa.tokyo.jp/documents/58935/r7tosyo.pdf",
+      "waybackTimestamp": "20260716140107",
+      "checkedAt": "2026-07-16T14:27:18.925Z",
+      "sha256Match": true
     },
     {
       "sourceId": "edogawa-yosansho-r7",
       "url": "https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/r7nendo.html",
       "kind": "landing",
-      "waybackUrl": "https://web.archive.org/web/20260117165922/https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/r7nendo.html",
-      "waybackTimestamp": "20260117165922",
-      "checkedAt": "2026-07-16T13:54:21.869Z"
+      "waybackUrl": "https://web.archive.org/web/20260716140324/https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/r7nendo.html",
+      "waybackTimestamp": "20260716140324",
+      "checkedAt": "2026-07-16T14:04:47.820Z"
     },
     {
       "sourceId": "edogawa-yosansho-r8",
@@ -531,7 +528,7 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260716135940/https://www.city.edogawa.tokyo.jp/documents/66965/r8toshoyosan.pdf",
       "waybackTimestamp": "20260716135940",
-      "checkedAt": "2026-07-16T14:15:00.685Z"
+      "checkedAt": "2026-07-16T15:07:20.999Z"
     },
     {
       "sourceId": "edogawa-yosansho-r8",
@@ -539,7 +536,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260716135228/https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/r8nendo.html",
       "waybackTimestamp": "20260716135228",
-      "checkedAt": "2026-07-16T14:15:13.221Z"
+      "checkedAt": "2026-07-16T14:53:57.727Z"
     },
     {
       "sourceId": "fuefuki-yosansho-r8",

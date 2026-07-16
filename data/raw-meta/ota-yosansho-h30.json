@@ -1,0 +1,12 @@
+{
+  "sourceId": "ota-yosansho-h30",
+  "files": [
+    {
+      "filename": "3_yosangaiyo.pdf",
+      "sha256": "7fbc6986fdcf8841a4e2b66781052fd99df4fe2658952edee139ca00c48dee60",
+      "bytes": 902200,
+      "fetchedAt": "2026-07-16T13:19:27.951Z",
+      "fetchedFrom": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/30yosan/30_yosan.files/3_yosangaiyo.pdf"
+    }
+  ]
+}
