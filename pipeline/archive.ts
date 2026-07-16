@@ -243,4 +243,32 @@ for (const local of ledger) {
 saveLedger(final);
 console.log(`\n台帳: ${ARCHIVES_PATH}`);
 console.log(`新規登録 ${saved} / 登録済み ${already} / 未確認 ${failed}（計 ${final.length} 件）`);
+
+// **台帳全体の健康診断**（2026-07-16）。件数の報告だけでは「魚拓はあるが中身を照合していない」
+// エントリが見えない — 実際に**岡山 R2・R3・R4 が `waybackUrl` を持ちながら `sha256Match` が
+// 一度も付いていなかった**（登録時に照合が走らず、以後「登録済み」として素通りしていた）。
+// **魚拓は消えた資料の最後の砦**なので、「あるつもりで中身が違う」を放置しない。
+// ここは対象を絞った実行でも**台帳全体**を見る（1件ずつ流しても全体の穴に気づけるように）。
+{
+  // ⚠ **対象は `verifySnapshot` が実際に照合する種別だけ**に揃える（pdf/xlsx/xls/csv）。
+  // **HTML は設計として照合しない**（テンプレート差で取得時刻によりバイト列が揺れるため。
+  // verifySnapshot の同じ正規表現を参照）。ここを揃えないと、甲府の議会・決算詳細の HTML 12件が
+  // **毎回「未照合」として出続けて恒久的なノイズになる**（実際に一度そうなった）。
+  const VERIFIABLE_RE = /\.(pdf|xlsx?|csv)$/i;
+  const files = final.filter(
+    (e) => e.kind === "file" && VERIFIABLE_RE.test(decodeURIComponent(new URL(e.url).pathname.split("/").pop() ?? "")),
+  );
+  const unverified = files.filter((e) => e.waybackUrl && e.sha256Match == null && !e.waybackTruncated);
+  const mismatched = files.filter((e) => e.sha256Match === false && !e.waybackTruncated);
+  if (unverified.length) {
+    console.log(`\n⚠ 魚拓はあるが sha256 を照合していない原本: ${unverified.length} 件`);
+    for (const e of unverified.slice(0, 10)) console.log(`    ${e.sourceId} — ${e.url.split("/").pop()}`);
+    if (unverified.length > 10) console.log(`    …他 ${unverified.length - 10} 件`);
+    console.log(`  → 対象を指定して再実行すると照合されます（例: bun run pipeline:archive ${unverified[0]!.sourceId}）`);
+  }
+  if (mismatched.length) {
+    console.log(`\n⚠ 魚拓が raw と不一致（打ち切りでない＝別版の疑い・§9b）: ${mismatched.length} 件`);
+    for (const e of mismatched.slice(0, 10)) console.log(`    ${e.sourceId} — ${e.url.split("/").pop()}`);
+  }
+}
 if (failed > 0) process.exitCode = 1;

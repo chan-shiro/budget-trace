@@ -19314,7 +19314,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和8年度 江戸川区予算書・予算説明書（歳入歳出予算事項別明細書 総括）",
-      "sourceUrl": "https://www.city.edogawa.tokyo.jp/documents/66965/r8toshoyosan.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260716135940/https://www.city.edogawa.tokyo.jp/documents/66965/r8toshoyosan.pdf",
       "originUrl": "https://www.city.edogawa.tokyo.jp/documents/66965/r8toshoyosan.pdf",
       "sourceLocalUrl": "/sources/edogawa-yosansho-r8/r8toshoyosan.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -19322,7 +19322,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和8年度 江戸川区予算書・予算説明書（歳入歳出予算事項別明細書 総括）",
           "type": "PDF",
-          "url": "https://www.city.edogawa.tokyo.jp/documents/66965/r8toshoyosan.pdf",
+          "url": "https://web.archive.org/web/20260716135940/https://www.city.edogawa.tokyo.jp/documents/66965/r8toshoyosan.pdf",
           "localUrl": "/sources/edogawa-yosansho-r8/r8toshoyosan.pdf",
           "source": "www.city.edogawa.tokyo.jp",
           "thumb": "r8toshoyosan.pdf ・ sha256 639759a32434ed9f… ・ 2026-07-16 取得"
@@ -22210,7 +22210,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "平成27年度 江戸川区予算書・予算説明書（歳入歳出予算事項別明細書 総括）",
-      "sourceUrl": "https://web.archive.org/web/20250613041606/https://www.city.edogawa.tokyo.jp/documents/259/27tousho.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260716144644/https://www.city.edogawa.tokyo.jp/documents/259/27tousho.pdf",
       "originUrl": "https://www.city.edogawa.tokyo.jp/documents/259/27tousho.pdf",
       "sourceLocalUrl": "/sources/edogawa-yosansho-h27/27tousho.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -22218,7 +22218,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "平成27年度 江戸川区予算書・予算説明書（歳入歳出予算事項別明細書 総括）",
           "type": "PDF",
-          "url": "https://web.archive.org/web/20250613041606/https://www.city.edogawa.tokyo.jp/documents/259/27tousho.pdf",
+          "url": "https://web.archive.org/web/20260716144644/https://www.city.edogawa.tokyo.jp/documents/259/27tousho.pdf",
           "localUrl": "/sources/edogawa-yosansho-h27/27tousho.pdf",
           "source": "www.city.edogawa.tokyo.jp",
           "thumb": "27tousho.pdf ・ sha256 5d44834df3b5f1d1… ・ 2026-07-16 取得"
@@ -23987,7 +23987,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "yoy": 3.1
         },
         {
-          "name": "一般財源国県支出金市債その他道路費",
+          "name": "道路費",
           "v": 1357.05651,
           "prevV": 817.74943,
           "yoy": 66
@@ -24047,7 +24047,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "yoy": -31
         },
         {
-          "name": "一般財源国県支出金市債その他議会費",
+          "name": "議会費",
           "v": 30.95987,
           "prevV": 31.18043,
           "yoy": -0.7
@@ -47464,7 +47464,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和4年度 岡山市当初予算（案）の概要（一般会計歳入・歳出 款別・前年度当初比較）",
-      "sourceUrl": "https://web.archive.org/web/20250421160449/https://www.city.okayama.jp/shisei/cmsfiles/contents/0000032/32749/R4tousho.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260716145244/https://www.city.okayama.jp/shisei/cmsfiles/contents/0000032/32749/R4tousho.pdf",
       "originUrl": "https://www.city.okayama.jp/shisei/cmsfiles/contents/0000032/32749/R4tousho.pdf",
       "sourceLocalUrl": "/sources/okayama-yosangaiyou-r4/R4tousho.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -47472,7 +47472,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和4年度 岡山市当初予算（案）の概要（一般会計歳入・歳出 款別・前年度当初比較）",
           "type": "PDF",
-          "url": "https://web.archive.org/web/20250421160449/https://www.city.okayama.jp/shisei/cmsfiles/contents/0000032/32749/R4tousho.pdf",
+          "url": "https://web.archive.org/web/20260716145244/https://www.city.okayama.jp/shisei/cmsfiles/contents/0000032/32749/R4tousho.pdf",
           "localUrl": "/sources/okayama-yosangaiyou-r4/R4tousho.pdf",
           "source": "www.city.okayama.jp",
           "thumb": "R4tousho.pdf ・ sha256 82db1e274cbe3533… ・ 2026-07-15 取得"
@@ -48002,7 +48002,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和2年度 岡山市当初予算（案）の概要（一般会計歳入・歳出 款別・前年度当初比較）",
-      "sourceUrl": "https://web.archive.org/web/20250421160411/https://www.city.okayama.jp/shisei/cmsfiles/contents/0000020/20277/000400556.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260716144641/https://www.city.okayama.jp/shisei/cmsfiles/contents/0000020/20277/000400556.pdf",
       "originUrl": "https://www.city.okayama.jp/shisei/cmsfiles/contents/0000020/20277/000400556.pdf",
       "sourceLocalUrl": "/sources/okayama-yosangaiyou-r2/000400556.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -48010,7 +48010,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和2年度 岡山市当初予算（案）の概要（一般会計歳入・歳出 款別・前年度当初比較）",
           "type": "PDF",
-          "url": "https://web.archive.org/web/20250421160411/https://www.city.okayama.jp/shisei/cmsfiles/contents/0000020/20277/000400556.pdf",
+          "url": "https://web.archive.org/web/20260716144641/https://www.city.okayama.jp/shisei/cmsfiles/contents/0000020/20277/000400556.pdf",
           "localUrl": "/sources/okayama-yosangaiyou-r2/000400556.pdf",
           "source": "www.city.okayama.jp",
           "thumb": "000400556.pdf ・ sha256 666e19f315df09ee… ・ 2026-07-15 取得"
@@ -58913,7 +58913,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       }
     ],
     "sourceTitle": "令和8年度 江戸川区予算書・予算説明書（歳入歳出予算事項別明細書 総括）",
-    "sourceUrl": "https://www.city.edogawa.tokyo.jp/documents/66965/r8toshoyosan.pdf",
+    "sourceUrl": "https://web.archive.org/web/20260716135940/https://www.city.edogawa.tokyo.jp/documents/66965/r8toshoyosan.pdf",
     "originUrl": "https://www.city.edogawa.tokyo.jp/documents/66965/r8toshoyosan.pdf",
     "sourceLocalUrl": "/sources/edogawa-yosansho-r8/r8toshoyosan.pdf",
     "pagesLabel": "款別歳入歳出",
@@ -58921,7 +58921,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       {
         "title": "令和8年度 江戸川区予算書・予算説明書（歳入歳出予算事項別明細書 総括）",
         "type": "PDF",
-        "url": "https://www.city.edogawa.tokyo.jp/documents/66965/r8toshoyosan.pdf",
+        "url": "https://web.archive.org/web/20260716135940/https://www.city.edogawa.tokyo.jp/documents/66965/r8toshoyosan.pdf",
         "localUrl": "/sources/edogawa-yosansho-r8/r8toshoyosan.pdf",
         "source": "www.city.edogawa.tokyo.jp",
         "thumb": "r8toshoyosan.pdf ・ sha256 639759a32434ed9f… ・ 2026-07-16 取得"

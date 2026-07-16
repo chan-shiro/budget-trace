@@ -18,7 +18,7 @@ export const ROADMAP_PROGRESS = {
   "prefCount": 47,
   "sourceCount": 235,
   "fileCount": 360,
-  "archivedCount": 211,
+  "archivedCount": 212,
   "licenseOpen": 19,
   "licensePermission": 158,
   "licenseUnverified": 58,
@@ -246,7 +246,7 @@ export const ROADMAP_PLAN: RoadmapItem[] = [
   {
     "title": "自治体を全国へ広げる",
     "status": "later",
-    "why": "決算ベース（総務省）では既に全1,741市町村が見られる。予算ベースは人口の多い順に整備しており、山梨県内は町村まで降りている。",
+    "why": "決算ベース（総務省）なら全国どの市区町村でも見られる。予算ベースは人口の多い順に整備しており、山梨県内は町村まで降りている。",
     "needs": "予算資料は自治体ごとに様式が割れる。1自治体ずつ偵察 → 収録の手続き（source-scout / ingest-source）に乗せて進める。スキャン画像 PDF の自治体は決定的にパースできず収録できない。",
     "ref": "docs/data-strategy.md"
   }
