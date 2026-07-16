@@ -1887,6 +1887,16 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["h29", "h28", "h27"] as const).map((fy) => ({
       srcId: `edogawa-yosansho-${fy}`, muniCode: "131237", muniName: "江戸川区", prefName: "東京都", isPref: false,
     })),
+    // 杉並区。**職員費の款を持つ**（歳出の18.5%）＝他自治体と款別を直接比較すると民生費等が
+    // 過小に見える（千代田・世田谷・葛飾と同じ。§10）。R3・R2 だけ資料が別
+    // （予算書がスキャンのため区政経営計画書へ迂回・registry のコメント参照）。
+    // R2〜R8 の当初チェーンは6リンク×31款で全件一致（経路をまたぐ R4→R3 も含む）
+    ...(["r8", "r7", "r6", "r5", "r4"] as const).map((fy) => ({
+      srcId: `suginami-yosansho-${fy}`, muniCode: "131156", muniName: "杉並区", prefName: "東京都", isPref: false,
+    })),
+    ...(["r3", "r2"] as const).map((fy) => ({
+      srcId: `suginami-keikakusho-${fy}`, muniCode: "131156", muniName: "杉並区", prefName: "東京都", isPref: false,
+    })),
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;

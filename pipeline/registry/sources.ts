@@ -2886,6 +2886,94 @@ export const SOURCES: SourceEntry[] = [
   })),
 
   ...([
+    // [年度, documentsID/ファイル名, 歳入 from, 歳入 to, 歳出ページ, 年度ページID]（物理ページ）
+    // ⚠ ファイル名の転写規則が無い（`r5yosannsyo` は n が二重・`r04-tousyo` だけハイフンと0埋め）。
+    //   年度ページ ID も H13〜R6 は 7135〜7159 の連番だが **R7=12499・R8=22830 で破れる**。外挿禁止。
+    // ⚠ 予算書の総括ページは**テキスト層に印字ページ番号が無い**（目次上は 38 相当で物理46＝+8）。
+    ["R8", "22830/r8yosansho.pdf", 46, 47, 48, "22830"],
+    ["R7", "12499/r7yosansho.pdf", 46, 47, 48, "12499"],
+    ["R6", "7159/r6yosan0209.pdf", 44, 45, 46, "7159"],
+    ["R5", "7158/r5yosannsyo.pdf", 42, 43, 44, "7158"],
+    ["R4", "7157/r04-tousyo.pdf", 44, 45, 46, "7157"],
+  ] as const).map(([fy, path, rFrom, rTo, ePage, pageId]) => ({
+    // 杉並区（団体コード 131156・人口 570,494＝R6 決算状況調）。「予算書」（議案書・全320〜329p）の
+    // 一般会計歳入歳出予算事項別明細書「１ 総括」。**歳入20款が2物理ページにまたがる**
+    // （合計行は2枚目にしか無いので revenuePages で連結する）・歳出11款は1ページ。
+    // 款番号は全角・千円・負号 △・列順は標準 [本年度, 前年度, 比較増(△)減]（足立型の反転なし）。
+    //
+    // **職員費の款を持つ区**（歳出款8・R8 は歳出の18.5%）。§10 の千代田・世田谷・葛飾と同じで、
+    // **他自治体と款別を直接比較すると民生費等が過小に見える**（名古屋・札幌型）。
+    //
+    // 歳出総括の財源内訳ヘッダ（一般財源/国都支出金/特別区債/その他）は**直後の空行の reset に
+    // 救われて**款名を汚さない（千葉 §8k と同じ「空行に救われているだけ」型なので、
+    // 様式が変わると壊れる。HeaderExtra を足す前提でページを疑うこと）。
+    // ⚠ 同一 PDF の後方（物理283以降）に特別会計の同型総括があり**見出しも同じ**なので、
+    //   ページ誤指定は throw せず静かに特会を読む（§10b 罠2）。ページを動かしたら
+    //   validate の歳入合計=歳出合計と総額突合を必ず通すこと。
+    id: `suginami-yosansho-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 杉並区予算書（歳入歳出予算事項別明細書 総括）`,
+    publisher: "杉並区",
+    url: null,
+    urls: [`https://www.city.suginami.tokyo.jp/documents/${path}`],
+    landingPage: `https://www.city.suginami.tokyo.jp/s004/${pageId}.html`,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "杉並区（一般会計・団体コード131156）",
+    // 「杉並区公式ホームページの利用について」（/about/17.html・確認日 2026-07-16）。
+    // サイト全体規定で同ドメイン配信の予算 PDF に及ぶ。東京都オープンデータカタログ（t131156）に
+    // 予算 CSV 4件（CC BY）が実在するが**億円丸めの別ファイル**で本 PDF は登載されていない
+    // ＝CC BY は及ばない（§9g・大田 §10a と同型。CSV は精度不足で budget 階層の代替にもならない）。
+    license:
+      "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      revenuePages: { from: rFrom, to: rTo },
+      expenditurePage: ePage,
+      revenueHeading: "（歳入）",
+      expenditureHeading: "（歳出）",
+    },
+  })),
+
+  ...([
+    // R3・R2 は**予算書がスキャン画像**（101ページで総テキスト約240字＝印字ページ番号のみ・
+    // 決定的パース不可）なので、区政経営計画書の「1 一般会計予算総括表」へ迂回する。
+    // 款体系は予算書経路と同一（歳入20款・歳出11款）。
+    // ⚠ **款番号が無い様式**（→ kanNoless）。`kanNo` は null になるが原典も振っていない。
+    // ⚠ **この様式は kanNoless × 象徴計上の1桁金額で壊れる**（R8 で実測: 自動車税環境性能割交付金の
+    //   `1` を lead 正規表現が款番号と誤読し `款1 …300,000/299,999` に化ける。Σ が
+    //   当年度+299,999・前年度−1 でずれて捕まるので静かには通らない）。**R3・R2 には
+    //   そのような行が無いことを実測済み**。年度を足すときは必ず try-parse で当てること。
+    // 中央寄せ3行の折返し（株式等譲渡所得割交付金・自動車税環境性能割交付金・
+    // 交通安全対策特別交付金）は kanNoless の awaitTail（2026-07-16 修正）が正しく結合する。
+    // R2 歳入は21款（廃止の自動車取得税交付金が名目 0/210,000 で残る＝欠落しない）。
+    ["R3", "7156/4ippannkaikei.pdf", 6, 4, "7156"],
+    ["R2", "7155/r2kuseikeieikeikakusho.pdf", 146, 144, "7155"],
+  ] as const).map(([fy, path, rPage, ePage, pageId]) => ({
+    id: `suginami-keikakusho-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 杉並区区政経営計画書（一般会計予算総括表）`,
+    publisher: "杉並区",
+    url: null,
+    urls: [`https://www.city.suginami.tokyo.jp/documents/${path}`],
+    landingPage: `https://www.city.suginami.tokyo.jp/s004/${pageId}.html`,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "杉並区（一般会計・団体コード131156）",
+    license:
+      "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      revenuePage: rPage,
+      expenditurePage: ePage,
+      kanNoless: true,
+      // 弱い見出し（ページ誤指定が throw しない — 同一 PDF に特会の同型表あり）
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+      revenueTotalLabel: "合計",
+      expenditureTotalLabel: "合計",
+    },
+  })),
+
+  ...([
     // [年度, ファイル名, 歳入ページ, 歳出ページ]（物理ページ）
     // ⚠ **ファイル名の規則が破れるので外挿しない**。R8 だけ `R08_2026gaiyo`（0埋め・アンダースコア・
     //   `gaiyou` でなく `gaiyo`）、R5 だけ小文字 `r5-`、R7 は `syuusei2`（公表 PDF の正誤修正版。

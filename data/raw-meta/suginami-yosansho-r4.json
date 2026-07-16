@@ -1,0 +1,12 @@
+{
+  "sourceId": "suginami-yosansho-r4",
+  "files": [
+    {
+      "filename": "r04-tousyo.pdf",
+      "sha256": "4a31b158220ca8f7ced1327bbe3e6bb1f36f71bdda19681434bbe3f80d67308a",
+      "bytes": 3588564,
+      "fetchedAt": "2026-07-16T15:32:04.541Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/7157/r04-tousyo.pdf"
+    }
+  ]
+}

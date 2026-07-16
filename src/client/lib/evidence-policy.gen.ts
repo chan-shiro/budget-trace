@@ -949,6 +949,41 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.edogawa.tokyo.jp/documents/261/h30yoko_1.pdf",
     "license": "江戸川区公式ホームページ上の一部コンテンツ（テキスト、画像、PDFなどのデータ）の著作権は江戸川区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
   },
+  "/sources/suginami-yosansho-r8/r8yosansho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/22830/r8yosansho.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/suginami-yosansho-r7/r7yosansho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/12499/r7yosansho.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/suginami-yosansho-r6/r6yosan0209.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/7159/r6yosan0209.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/suginami-yosansho-r5/r5yosannsyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/7158/r5yosannsyo.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/suginami-yosansho-r4/r04-tousyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/7157/r04-tousyo.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/suginami-keikakusho-r3/4ippannkaikei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/7156/4ippannkaikei.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/suginami-keikakusho-r2/r2kuseikeieikeikakusho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/7155/r2kuseikeieikeikakusho.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
   "/sources/nakano-yosangaiyou-r8/R08_2026gaiyo.pdf": {
     "mode": "origin",
     "href": "https://www.city.tokyo-nakano.lg.jp/kusei/zaisei/yosan/tosho.files/R08_2026gaiyo.pdf",

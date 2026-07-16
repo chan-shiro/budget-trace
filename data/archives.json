@@ -3938,6 +3938,125 @@
       "sha256Match": true
     },
     {
+      "sourceId": "suginami-keikakusho-r2",
+      "url": "https://www.city.suginami.tokyo.jp/documents/7155/r2kuseikeieikeikakusho.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260716154423/https://www.city.suginami.tokyo.jp/documents/7155/r2kuseikeieikeikakusho.pdf",
+      "waybackTimestamp": "20260716154423",
+      "checkedAt": "2026-07-16T15:44:42.683Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "suginami-keikakusho-r2",
+      "url": "https://www.city.suginami.tokyo.jp/s004/7155.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260716154554/https://www.city.suginami.tokyo.jp/s004/7155.html",
+      "waybackTimestamp": "20260716154554",
+      "checkedAt": "2026-07-16T15:46:59.949Z"
+    },
+    {
+      "sourceId": "suginami-keikakusho-r3",
+      "url": "https://www.city.suginami.tokyo.jp/documents/7156/4ippannkaikei.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260716154234/https://www.city.suginami.tokyo.jp/documents/7156/4ippannkaikei.pdf",
+      "waybackTimestamp": "20260716154234",
+      "checkedAt": "2026-07-16T15:42:50.404Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "suginami-keikakusho-r3",
+      "url": "https://www.city.suginami.tokyo.jp/s004/7156.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260117092323/https://www.city.suginami.tokyo.jp/s004/7156.html",
+      "waybackTimestamp": "20260117092323",
+      "checkedAt": "2026-07-16T15:42:54.392Z"
+    },
+    {
+      "sourceId": "suginami-yosansho-r4",
+      "url": "https://www.city.suginami.tokyo.jp/documents/7157/r04-tousyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260716154155/https://www.city.suginami.tokyo.jp/documents/7157/r04-tousyo.pdf",
+      "waybackTimestamp": "20260716154155",
+      "checkedAt": "2026-07-16T15:42:16.033Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "suginami-yosansho-r4",
+      "url": "https://www.city.suginami.tokyo.jp/s004/7157.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260117105923/https://www.city.suginami.tokyo.jp/s004/7157.html",
+      "waybackTimestamp": "20260117105923",
+      "checkedAt": "2026-07-16T15:42:25.549Z"
+    },
+    {
+      "sourceId": "suginami-yosansho-r5",
+      "url": "https://www.city.suginami.tokyo.jp/documents/7158/r5yosannsyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260716153947/https://www.city.suginami.tokyo.jp/documents/7158/r5yosannsyo.pdf",
+      "waybackTimestamp": "20260716153947",
+      "checkedAt": "2026-07-16T15:40:14.053Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "suginami-yosansho-r5",
+      "url": "https://www.city.suginami.tokyo.jp/s004/7158.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260117103921/https://www.city.suginami.tokyo.jp/s004/7158.html",
+      "waybackTimestamp": "20260117103921",
+      "checkedAt": "2026-07-16T15:40:41.222Z"
+    },
+    {
+      "sourceId": "suginami-yosansho-r6",
+      "url": "https://www.city.suginami.tokyo.jp/documents/7159/r6yosan0209.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260716153711/https://www.city.suginami.tokyo.jp/documents/7159/r6yosan0209.pdf",
+      "waybackTimestamp": "20260716153711",
+      "checkedAt": "2026-07-16T15:38:15.753Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "suginami-yosansho-r6",
+      "url": "https://www.city.suginami.tokyo.jp/s004/7159.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260117100857/https://www.city.suginami.tokyo.jp/s004/7159.html",
+      "waybackTimestamp": "20260117100857",
+      "checkedAt": "2026-07-16T15:38:24.347Z"
+    },
+    {
+      "sourceId": "suginami-yosansho-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/12499/r7yosansho.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250223105336/https://www.city.suginami.tokyo.jp/documents/12499/r7yosansho.pdf",
+      "waybackTimestamp": "20250223105336",
+      "checkedAt": "2026-07-16T15:36:10.005Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "suginami-yosansho-r7",
+      "url": "https://www.city.suginami.tokyo.jp/s004/12499.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250223105239/https://www.city.suginami.tokyo.jp/s004/12499.html",
+      "waybackTimestamp": "20250223105239",
+      "checkedAt": "2026-07-16T15:36:24.350Z"
+    },
+    {
+      "sourceId": "suginami-yosansho-r8",
+      "url": "https://www.city.suginami.tokyo.jp/documents/22830/r8yosansho.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260716153439/https://www.city.suginami.tokyo.jp/documents/22830/r8yosansho.pdf",
+      "waybackTimestamp": "20260716153439",
+      "checkedAt": "2026-07-16T15:34:59.345Z",
+      "sha256Match": true
+    },
+    {
+      "sourceId": "suginami-yosansho-r8",
+      "url": "https://www.city.suginami.tokyo.jp/s004/22830.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260411141735/https://www.city.suginami.tokyo.jp/s004/22830.html",
+      "waybackTimestamp": "20260411141735",
+      "checkedAt": "2026-07-16T15:35:25.438Z"
+    },
+    {
       "sourceId": "toshima-yosansho-r5",
       "url": "https://www.city.toshima.lg.jp/004/kuse/shisaku/yosan/1601131047.html",
       "kind": "landing",

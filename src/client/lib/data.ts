@@ -228,6 +228,12 @@ export { fyEraLabel, prevFyEraLabel } from './fy';
 export function fmtOku(v: number): string {
   if (v >= 10000) return (v/10000).toFixed(2) + '兆円';
   if (v >= 1) return (v >= 100 ? Math.round(v).toLocaleString() : v.toFixed(1)) + '億円';
+  // **0 でない額を「0万円」と出さない**（2026-07-17）。原典の**象徴計上**（款を残すために
+  // 1〜4千円だけ計上する行。杉並の諸支出金 2,000円・神戸の災害復旧費 1,000円・山梨県内5市の
+  // 災害復旧費 3,000円 など7件）は 万円へ丸めると 0 になり、**画面上「計上なし」と読める**。
+  // 原典は 0 と象徴計上を区別しているので、こちらで潰してはいけない（CLAUDE.md「数値を丸めない」）。
+  // 真の 0（皆減で当年度が 0 の款）は「0万円」のままにする — こちらは丸めでなく事実。
+  if (v > 0 && Math.round(v * 10000) === 0) return Math.round(v * 1e8).toLocaleString() + '円';
   return Math.round(v*10000).toLocaleString() + '万円';
 }
 export function pctOf(v: number, total: number): string { return (v/total*100).toFixed(1) + '%'; }
