@@ -2470,6 +2470,28 @@ export const CAVEATS: Record<string, Caveat[]> = ${JSON.stringify(byCode, null, 
             `「何を・なぜ・何が要るか」だけを書いてください（pipeline/registry/roadmap.ts 冒頭のルール）`,
         );
       }
+      // 3つ目のルール「**進捗の数字をここに書かない**」も機械的に守らせる（2026-07-16）。
+      // 宣言だけで検査が無く、実際に **`why` に「全1,741市町村」と手書きされていた**
+      // （＝下の progress.muniCount と同じ値。市町村合併で片方だけ古くなる）。
+      //
+      // **数字一般を禁じない** — 「札幌は R7 だけで666件」のような**外部の事実**（未収録資料の規模）は
+      // 計画の判断材料として要る。禁じるべきは**進捗タイルと同じ数字の二重管理**だけ。
+      // → **derive が今まさに算出した値と一致する数字**だけを落とす。自己調整するので偽陽性が出ず、
+      //   実態が動けば手書きのほうが自動的に検出される。
+      for (const [n, unit] of [
+        [progress.muniCount, "市町村"],
+        [progress.budgetCount, "団体"],
+        [progress.sourceCount, "件"],
+      ] as const) {
+        for (const form of [`${n}${unit}`, `${n.toLocaleString()}${unit}`]) {
+          if (text.includes(form)) {
+            throw new Error(
+              `roadmap「${r.title}」の ${k}: 「${form}」は derive が実データから算出している進捗の数字です。` +
+                `手書きすると必ず実態とズレます（roadmap.ts 冒頭のルール2）。数字を書かずに表現してください`,
+            );
+          }
+        }
+      }
     }
   }
   const roadmapOut = `// このファイルは自動生成です。手で編集しないこと。
