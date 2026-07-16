@@ -907,6 +907,45 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     };
   })();
 
+  // --- トップの「収録の深さから選ぶ」 -----------------------------------------
+  // 進捗を手書きしない原則（/roadmap・heroStats と同じ）: 段の割り当ては収録済み gen
+  // （MUNI_BUDGETS・MUNI_BUDGET_YEARS・REPORT_MUNIS）から毎回組み立てるので、
+  // 自治体を収録すれば黙って正しい段に載る。
+  // 各自治体は**最も深い到達点の段にだけ**載せる。「事業報告 ⊃ 主な事業 ⊃ 款別」の
+  // 入れ子ではない（横浜・川崎は主な事業一覧を持たずに事業報告を持つ）ので、
+  // 階段ではなく到達点で束ねる。
+  const coverageLevels = (() => {
+    const entries = Object.entries(D.MUNI_BUDGETS)
+      .map(([code, b]) => {
+        const years = D.MUNI_BUDGET_YEARS[code] ?? [];
+        const hasProj = years.some((y) => (y.projects?.length ?? 0) > 0);
+        return {
+          code,
+          name: b.muniName,
+          pref: b.prefName,
+          isPref: !!b.isPref,
+          level: REPORT_MUNIS[code] ? 2 : hasProj ? 1 : 0,
+        };
+      })
+      .sort((a, b) => a.code.localeCompare(b.code));
+    // 甲府（full）は事業報告に加えて執行・評価・議会まで＝最深段の先頭に置く
+    const all = [{ code: "192015", name: "甲府市", pref: "山梨県", isPref: false, level: 2 }, ...entries];
+    const mk = (level: number) =>
+      all
+        .filter((e) => e.level === level)
+        .map((e) => ({
+          name: e.name,
+          // 県エンティティは名前自体が県名なので、添え書きは県名の繰り返しでなく種別にする
+          pref: e.isPref ? "都道府県" : e.pref,
+          open: () => nav({ screen: "dash", pref: e.pref, muni: e.name, muniCode: e.code, drillPath: [], theme: null, budgetFy: undefined }),
+        }));
+    return [
+      { title: "事業報告（成果）まで", note: "予算 → 事業 → 成果を1事業ずつたどれる（甲府市は執行・評価・議会の構成まで）", munis: mk(2) },
+      { title: "主な事業まで", note: "款別の内訳に加えて、主な事業の一覧と説明つき", munis: mk(1) },
+      { title: "当初予算（款別）まで", note: "歳入・歳出の款別内訳と前年当初比較", munis: mk(0) },
+    ];
+  })();
+
   // 予算資料ベースの機能のうち、この団体で収録済みのもの。budget 階層の案内パネルと
   // リクエストチップは**この実態から組み立てる**。固定文言だと、横浜・川崎の事務事業評価
   // （572件・2,313件を表示している真下で「事務事業評価は未収録」）や山梨県の主な事業
@@ -1189,6 +1228,9 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
       { num: (ROADMAP_PROGRESS.fullCount + ROADMAP_PROGRESS.budgetCount).toLocaleString(), label: "当初予算まで収録" },
     ],
     onPrefSelect: (name: string) => nav({ screen: "muni", pref: name }),
+    // 「収録の深さから選ぶ」（トップ）。段の割り当ては収録データから自動（coverageLevels 参照）
+    coverageLevels,
+    coverageDecisionCount: ROADMAP_PROGRESS.muniCount.toLocaleString(),
     mapColorMode,
     onMuniSelect: (pfName: string, muniName: string | null, code5?: string) => {
       // 地図で市区町村をクリックしたら、その自治体のダッシュボードへ直行する。
