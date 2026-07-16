@@ -1,0 +1,12 @@
+{
+  "sourceId": "ota-yosansho-r5",
+  "files": [
+    {
+      "filename": "02r5_kihontekikangae.pdf",
+      "sha256": "660cac650853d125013c1e4694d81861a9c9017ff91d8c6a95b11693ec1ea5a6",
+      "bytes": 1711326,
+      "fetchedAt": "2026-07-16T06:58:52.074Z",
+      "fetchedFrom": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/r05yosan/r05-yosan.files/02r5_kihontekikangae.pdf"
+    }
+  ]
+}

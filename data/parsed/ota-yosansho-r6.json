@@ -1,0 +1,380 @@
+{
+  "docType": "budget-book",
+  "sourceId": "ota-yosansho-r6",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-07-16T06:59:04.451Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R6",
+  "account": "一般会計",
+  "revenueTotal": 341209981,
+  "expenditureTotal": 341209981,
+  "prevRevenueTotal": 314768636,
+  "prevExpenditureTotal": 314768636,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "特別区税",
+      "amount": 81856585,
+      "prevAmount": 78437446,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "地方譲与税",
+      "amount": 1934001,
+      "prevAmount": 1571001,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "利子割交付金",
+      "amount": 337000,
+      "prevAmount": 270000,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "配当割交付金",
+      "amount": 2010000,
+      "prevAmount": 1549000,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 2334000,
+      "prevAmount": 1467000,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "地方消費税交付金",
+      "amount": 18593000,
+      "prevAmount": 18820000,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "自動車取得税交付金",
+      "amount": 1,
+      "prevAmount": 1,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "環境性能割交付金",
+      "amount": 292000,
+      "prevAmount": 276000,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "地方特例交付金",
+      "amount": 468000,
+      "prevAmount": 522000,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "特別区交付金",
+      "amount": 83222000,
+      "prevAmount": 79692000,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 70000,
+      "prevAmount": 69000,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "分担金及び負担金",
+      "amount": 1996221,
+      "prevAmount": 2305157,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "使用料及び手数料",
+      "amount": 8698794,
+      "prevAmount": 8367427,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "国庫支出金",
+      "amount": 57764209,
+      "prevAmount": 56076875,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "都支出金",
+      "amount": 28779877,
+      "prevAmount": 24609071,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "財産収入",
+      "amount": 1634062,
+      "prevAmount": 1550098,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 17,
+      "kanName": "寄附金",
+      "amount": 415437,
+      "prevAmount": 382332,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 18,
+      "kanName": "繰入金",
+      "amount": 25593706,
+      "prevAmount": 17208275,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 19,
+      "kanName": "繰越金",
+      "amount": 2000000,
+      "prevAmount": 2000000,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 20,
+      "kanName": "諸収入",
+      "amount": 9311088,
+      "prevAmount": 9995953,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 21,
+      "kanName": "特別区債",
+      "amount": 13900000,
+      "prevAmount": 9600000,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 1150739,
+      "prevAmount": 1127343,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 13
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 52394597,
+      "prevAmount": 46035136,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 13
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "福祉費",
+      "amount": 172351567,
+      "prevAmount": 163357359,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 13
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "衛生費",
+      "amount": 10325775,
+      "prevAmount": 11854268,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 13
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "産業経済費",
+      "amount": 6848082,
+      "prevAmount": 6707755,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 13
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "土木費",
+      "amount": 21721480,
+      "prevAmount": 20727839,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 13
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "都市整備費",
+      "amount": 9378169,
+      "prevAmount": 9682485,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 13
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "環境清掃費",
+      "amount": 12670519,
+      "prevAmount": 11838406,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 13
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "教育費",
+      "amount": 52176687,
+      "prevAmount": 41052652,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 13
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "公債費",
+      "amount": 1635585,
+      "prevAmount": 1845095,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 13
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 11,
+      "kanName": "諸支出金",
+      "amount": 56781,
+      "prevAmount": 40298,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 13
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 12,
+      "kanName": "予備費",
+      "amount": 500000,
+      "prevAmount": 500000,
+      "locator": {
+        "file": "02r6_kihontekikangae.pdf",
+        "page": 13
+      }
+    }
+  ]
+}

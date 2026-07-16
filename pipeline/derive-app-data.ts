@@ -1664,6 +1664,16 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r2"] as const).map((fy) => ({
       srcId: `chiyoda-yosansho-${fy}`, muniCode: "131016", muniName: "千代田区", prefName: "東京都", isPref: false,
     })),
+    // 大田区は**特別区で最も素直**（7年度が同一 parserOptions・款体系も7年間不変）。registry のコメント参照。
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `ota-yosansho-${fy}`, muniCode: "131113", muniName: "大田区", prefName: "東京都", isPref: false,
+    })),
+    // 中央区は**款別専用の6ページ PDF**（歳入歳出が同一ページ＝samePage）。**見出しを強くすると
+    // 款名が静かに壊れる**という逆説がある（registry のコメント参照）。H31〜H29 も現存するが
+    // 年度ラベルが「令和30年度」になるため未収録。
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `chuo-sokatsuhyo-${fy}`, muniCode: "131024", muniName: "中央区", prefName: "東京都", isPref: false,
+    })),
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;
