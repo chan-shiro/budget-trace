@@ -1871,6 +1871,22 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `nakano-yosangaiyou-${fy}`, muniCode: "131148", muniName: "中野区", prefName: "東京都", isPref: false,
     })),
+    // 江戸川区。**特別区で最長の12年**（H27〜R8）。R3・R2・H30 だけ資料が別（予算書が
+    // ToUnicode 欠落で読めず「主要施策の概要」へ迂回・registry のコメント参照）。
+    // 歳出18款で特別区最多。R3 で15款→18款に再編（ＳＤＧｓ推進費・産業経済費が皆増、
+    // 新庁舎・大型施設建設推進費→新庁舎・施設整備費に改称＝前年列 95,297 が一致）。
+    // H27→R8 の11リンクは総額・款単位とも全件一致
+    ...(["r8", "r7", "r6", "r5", "r4"] as const).map((fy) => ({
+      srcId: `edogawa-yosansho-${fy}`, muniCode: "131237", muniName: "江戸川区", prefName: "東京都", isPref: false,
+    })),
+    ...(["r3", "r2"] as const).map((fy) => ({
+      srcId: `edogawa-yoko-${fy}`, muniCode: "131237", muniName: "江戸川区", prefName: "東京都", isPref: false,
+    })),
+    { srcId: "edogawa-yosansho-h31", muniCode: "131237", muniName: "江戸川区", prefName: "東京都", isPref: false },
+    { srcId: "edogawa-yoko-h30", muniCode: "131237", muniName: "江戸川区", prefName: "東京都", isPref: false },
+    ...(["h29", "h28", "h27"] as const).map((fy) => ({
+      srcId: `edogawa-yosansho-${fy}`, muniCode: "131237", muniName: "江戸川区", prefName: "東京都", isPref: false,
+    })),
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;

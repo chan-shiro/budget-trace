@@ -1,0 +1,12 @@
+{
+  "sourceId": "edogawa-yosansho-h29",
+  "files": [
+    {
+      "filename": "29tousho.pdf",
+      "sha256": "104f1b0d91cf1763ee1b6f2d6270a9d7af9366f471bf6b9392a1ea3c978bd320",
+      "bytes": 9067723,
+      "fetchedAt": "2026-07-16T13:50:31.628Z",
+      "fetchedFrom": "https://www.city.edogawa.tokyo.jp/documents/262/29tousho.pdf"
+    }
+  ]
+}

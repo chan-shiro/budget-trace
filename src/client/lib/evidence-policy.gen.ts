@@ -889,6 +889,66 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.adachi.tokyo.jp/documents/46120/02aramashi_1.pdf",
     "license": "ホームページに掲載しているコンテンツ（文章、イラスト、ロゴ、写真、動画、その他のすべての情報）は著作権の対象となっています。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
   },
+  "/sources/edogawa-yosansho-r8/r8toshoyosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.edogawa.tokyo.jp/documents/66965/r8toshoyosan.pdf",
+    "license": "江戸川区公式ホームページ上の一部コンテンツ（テキスト、画像、PDFなどのデータ）の著作権は江戸川区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/edogawa-yosansho-r7/r7tosyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.edogawa.tokyo.jp/documents/58935/r7tosyo.pdf",
+    "license": "江戸川区公式ホームページ上の一部コンテンツ（テキスト、画像、PDFなどのデータ）の著作権は江戸川区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/edogawa-yosansho-r6/r6tosyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.edogawa.tokyo.jp/documents/49549/r6tosyo.pdf",
+    "license": "江戸川区公式ホームページ上の一部コンテンツ（テキスト、画像、PDFなどのデータ）の著作権は江戸川区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/edogawa-yosansho-r5/r5tosyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.edogawa.tokyo.jp/documents/40224/r5tosyo.pdf",
+    "license": "江戸川区公式ホームページ上の一部コンテンツ（テキスト、画像、PDFなどのデータ）の著作権は江戸川区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/edogawa-yosansho-r4/r4tosyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.edogawa.tokyo.jp/documents/31190/r4tosyo.pdf",
+    "license": "江戸川区公式ホームページ上の一部コンテンツ（テキスト、画像、PDFなどのデータ）の著作権は江戸川区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/edogawa-yosansho-h31/h31tosyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.edogawa.tokyo.jp/documents/12531/h31tosyo.pdf",
+    "license": "江戸川区公式ホームページ上の一部コンテンツ（テキスト、画像、PDFなどのデータ）の著作権は江戸川区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/edogawa-yosansho-h29/29tousho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.edogawa.tokyo.jp/documents/262/29tousho.pdf",
+    "license": "江戸川区公式ホームページ上の一部コンテンツ（テキスト、画像、PDFなどのデータ）の著作権は江戸川区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/edogawa-yosansho-h28/28tousho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.edogawa.tokyo.jp/documents/260/28tousho.pdf",
+    "license": "江戸川区公式ホームページ上の一部コンテンツ（テキスト、画像、PDFなどのデータ）の著作権は江戸川区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/edogawa-yosansho-h27/27tousho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.edogawa.tokyo.jp/documents/259/27tousho.pdf",
+    "license": "江戸川区公式ホームページ上の一部コンテンツ（テキスト、画像、PDFなどのデータ）の著作権は江戸川区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/edogawa-yoko-r3/r3yoko.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.edogawa.tokyo.jp/documents/23048/r3yoko.pdf",
+    "license": "江戸川区公式ホームページ上の一部コンテンツ（テキスト、画像、PDFなどのデータ）の著作権は江戸川区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/edogawa-yoko-r2/r2yoko.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.edogawa.tokyo.jp/documents/17473/r2yoko.pdf",
+    "license": "江戸川区公式ホームページ上の一部コンテンツ（テキスト、画像、PDFなどのデータ）の著作権は江戸川区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/edogawa-yoko-h30/h30yoko_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.edogawa.tokyo.jp/documents/261/h30yoko_1.pdf",
+    "license": "江戸川区公式ホームページ上の一部コンテンツ（テキスト、画像、PDFなどのデータ）の著作権は江戸川区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
   "/sources/nakano-yosangaiyou-r8/R08_2026gaiyo.pdf": {
     "mode": "origin",
     "href": "https://www.city.tokyo-nakano.lg.jp/kusei/zaisei/yosan/tosho.files/R08_2026gaiyo.pdf",

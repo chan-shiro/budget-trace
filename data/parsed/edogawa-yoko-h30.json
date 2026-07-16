@@ -1,0 +1,402 @@
+{
+  "docType": "budget-book",
+  "sourceId": "edogawa-yoko-h30",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-07-16T13:50:41.530Z",
+  "unit": "thousandYen",
+  "fiscalYear": "H30",
+  "account": "一般会計",
+  "revenueTotal": 244142834,
+  "expenditureTotal": 244142834,
+  "prevRevenueTotal": 240331640,
+  "prevExpenditureTotal": 240331640,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "特別区税",
+      "amount": 52804506,
+      "prevAmount": 51554784,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "地方譲与税",
+      "amount": 1000000,
+      "prevAmount": 1000000,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "利子割交付金",
+      "amount": 150000,
+      "prevAmount": 70000,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "配当割交付金",
+      "amount": 600000,
+      "prevAmount": 400000,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 500000,
+      "prevAmount": 500000,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "地方消費税交付金",
+      "amount": 11000000,
+      "prevAmount": 12000000,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "自動車取得税交付金",
+      "amount": 400000,
+      "prevAmount": 300000,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "地方特例交付金",
+      "amount": 400000,
+      "prevAmount": 400000,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "特別区交付金",
+      "amount": 87800000,
+      "prevAmount": 84300000,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 60000,
+      "prevAmount": 60000,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "分担金及び負担金",
+      "amount": 3195698,
+      "prevAmount": 3136224,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "使用料及び手数料",
+      "amount": 4261635,
+      "prevAmount": 4224605,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "国庫支出金",
+      "amount": 53102679,
+      "prevAmount": 52821391,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "都支出金",
+      "amount": 18300373,
+      "prevAmount": 15952791,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "財産収入",
+      "amount": 368274,
+      "prevAmount": 404980,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "寄付金",
+      "amount": 57800,
+      "prevAmount": 59800,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "繰入金",
+      "amount": 2643853,
+      "prevAmount": 3839817,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "繰越金",
+      "amount": 2219185,
+      "prevAmount": 2636537,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "諸収入",
+      "amount": 4022831,
+      "prevAmount": 4227711,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "特別区債",
+      "amount": 1256000,
+      "prevAmount": 2443000,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "議会費",
+      "amount": 911350,
+      "prevAmount": 919154,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "経営企画費",
+      "amount": 7195796,
+      "prevAmount": 6685073,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "危機管理費",
+      "amount": 910342,
+      "prevAmount": 1002318,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "総務費",
+      "amount": 7530189,
+      "prevAmount": 7054477,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "都市開発費",
+      "amount": 4589096,
+      "prevAmount": 4980634,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "環境費",
+      "amount": 9316305,
+      "prevAmount": 9060299,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "文化共育費",
+      "amount": 7998709,
+      "prevAmount": 6909790,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "生活振興費",
+      "amount": 8660473,
+      "prevAmount": 9399865,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "福祉費",
+      "amount": 73285702,
+      "prevAmount": 71311297,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "子ども家庭費",
+      "amount": 58958230,
+      "prevAmount": 52181198,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "健康費",
+      "amount": 22351464,
+      "prevAmount": 24887379,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "土木費",
+      "amount": 17289748,
+      "prevAmount": 18206902,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "教育費",
+      "amount": 22790281,
+      "prevAmount": 25279947,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "公債費",
+      "amount": 2055149,
+      "prevAmount": 2153307,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "予備費",
+      "amount": 300000,
+      "prevAmount": 300000,
+      "locator": {
+        "file": "h30yoko_1.pdf",
+        "page": 5
+      }
+    }
+  ]
+}

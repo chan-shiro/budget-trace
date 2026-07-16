@@ -2790,6 +2790,102 @@ export const SOURCES: SourceEntry[] = [
   })),
 
   ...([
+    // [年度, documentsID, ファイル名, 歳入ページ, 歳出ページ, kanNoless]（物理ページ・印字は−16）
+    ["R8", 66965, "r8toshoyosan.pdf", 45, 46, false],
+    ["R7", 58935, "r7tosyo.pdf", 47, 48, false],
+    ["R6", 49549, "r6tosyo.pdf", 47, 48, false],
+    ["R5", 40224, "r5tosyo.pdf", 47, 48, true],
+    ["R4", 31190, "r4tosyo.pdf", 55, 56, false],
+    ["H31", 12531, "h31tosyo.pdf", 45, 46, false],
+    ["H29", 262, "29tousho.pdf", 40, 41, false],
+    ["H28", 260, "28tousho.pdf", 41, 42, false],
+    ["H27", 259, "27tousho.pdf", 39, 40, true],
+  ] as const).map(([fy, doc, file, rev, exp, noless]) => ({
+    // 江戸川区（団体コード 131237・人口 693,570＝R6 決算状況調）。「予算書・予算説明書」
+    // （第1号議案）巻頭の「Ⅰ 歳入歳出予算事項別明細書 １ 総括」。千円・前年当初比較つき・
+    // 列順は標準（[本年度, 前年度, 比較]。H27→R8 の11リンクの総額チェーンが全部つながる）。
+    //
+    // **歳出18款で特別区最多**（ＳＤＧｓ推進費・新庁舎・施設整備費・文化共育費など独自款）。
+    // R3 で15款→18款に再編（ＳＤＧｓ推進費・産業経済費が皆増）。**職員費の款は無い**＝配賦型。
+    //
+    // ⚠ **R5・H27 は kanNoless が要る**（この資料の一番の罠）。原典に**款番号なし・皆減の語なし・
+    //   マーカーなしの廃止行**がある（R5 `特別区債 0 92,700 △92,700` / H27 `諸支出金 0 1 △1`）。
+    //   無いと**前年度Σだけが静かに不足する**（validate は当年度Σしか見ないので通ってしまう）。
+    // ⚠ **R3・R2・H30 は予算書が使えない**（ToUnicode 欠落・豊島 R4/R2 型で `-tsv` でも救えない）
+    //   → 下の yoko（主要施策の概要）へ迂回する。**項以下を将来深掘りする場合、この3年度だけ
+    //   原典が読めない**ことになる。
+    // ⚠ ファイル名の転写規則が無い（toshoyosan / tosyo / tousho …）。年度ページ URL も
+    //   R3・R2 だけ `nenndo`（n二重）・H29 は `h29_yosan.html` と破れる。**外挿しない**。
+    id: `edogawa-yosansho-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 江戸川区予算書・予算説明書（歳入歳出予算事項別明細書 総括）`,
+    publisher: "江戸川区",
+    url: null,
+    urls: [`https://www.city.edogawa.tokyo.jp/documents/${doc}/${file}`],
+    landingPage:
+      fy === "H29"
+        ? "https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/h29_yosan.html"
+        : `https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/${fy.toLowerCase()}nendo.html`,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "江戸川区（一般会計・団体コード131237）",
+    // 「江戸川区ホームページの著作権・リンク」（/e004/aboutweb/riyo.html・確認日 2026-07-16）。
+    // 「PDFなどのデータ」を明示的に含むサイト全体規定で本資料に及ぶ。区オープンデータ
+    // （CC-BY 2.1 JP）は対象8データセット（統計・世論調査・広報誌・人口・刊行物・ごみ・
+    // 環境衛生施設）に予算・決算・財政が0件（実検索）＝及ばない（§9g）。→ permission-required。
+    license:
+      "江戸川区公式ホームページ上の一部コンテンツ（テキスト、画像、PDFなどのデータ）の著作権は江戸川区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      revenuePage: rev,
+      expenditurePage: exp,
+      revenueHeading: "歳入歳出予算事項別明細書",
+      // 歳出ページには単独の「歳 出」ラベルしか無い（弱い見出し）。強い語に変えないこと
+      expenditureHeading: "歳出",
+      ...(noless ? { kanNoless: true } : {}),
+    },
+  })),
+
+  ...([
+    // R3・R2・H30 は予算書が ToUnicode 欠落で読めないため「主要施策の概要」（yoko）巻頭の
+    // 一般会計歳入歳出予算表へ迂回する。**款構成は予算書と同一**（R4 予算書の前年度列と
+    // R3 yoko の当年度列が歳入20款・歳出18款とも全一致を実測）。
+    // ⚠ 款番号が `01`〜`20` のゼロ埋めで lead 正規表現（[1-9]\d*）に乗らず、AMOUNT_RE が
+    //   `01` を金額と誤認する → cropX{from:112} で区分（縦書き）と款番号の列ごと落とす。
+    //   その結果 kanNo は null になる（原典は振っているが、読めないので kanNoless で拾う）。
+    // ⚠ 同一 PDF の後続ページに特別会計の同型表（国保 p.6 等）が並ぶ＝ページ誤指定は
+    //   静かに特会を読む（中央 §10b 罠2 と同型）。ページを動かしたら総額を突合すること。
+    ["R3", 23048, "r3yoko.pdf", "r3nenndo"],
+    ["R2", 17473, "r2yoko.pdf", "r2nenndo"],
+    ["H30", 261, "h30yoko_1.pdf", "h30nendo"],
+  ] as const).map(([fy, doc, file, landing]) => ({
+    id: `edogawa-yoko-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 江戸川区主要施策の概要（一般会計歳入歳出予算）`,
+    publisher: "江戸川区",
+    url: null,
+    urls: [`https://www.city.edogawa.tokyo.jp/documents/${doc}/${file}`],
+    landingPage: `https://www.city.edogawa.tokyo.jp/e002/kuseijoho/zaisei/toshoyosan/${landing}.html`,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "江戸川区（一般会計・団体コード131237）",
+    license:
+      "江戸川区公式ホームページ上の一部コンテンツ（テキスト、画像、PDFなどのデータ）の著作権は江戸川区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      revenuePage: 5,
+      expenditurePage: 5,
+      samePage: true,
+      revenueHeading: "歳入歳出予算",
+      expenditureHeading: "歳入歳出予算",
+      // 「歳入合計」を指定すると samePage の2出現分割が立たず throw する
+      revenueTotalLabel: "合計",
+      expenditureTotalLabel: "合計",
+      kanNoless: true,
+      revenueCropX: { from: 112, to: 842 },
+      expenditureCropX: { from: 112, to: 842 },
+    },
+  })),
+
+  ...([
     // [年度, ファイル名, 歳入ページ, 歳出ページ]（物理ページ）
     // ⚠ **ファイル名の規則が破れるので外挿しない**。R8 だけ `R08_2026gaiyo`（0埋め・アンダースコア・
     //   `gaiyou` でなく `gaiyo`）、R5 だけ小文字 `r5-`、R7 は `syuusei2`（公表 PDF の正誤修正版。
