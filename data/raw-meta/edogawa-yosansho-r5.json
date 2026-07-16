@@ -1,0 +1,12 @@
+{
+  "sourceId": "edogawa-yosansho-r5",
+  "files": [
+    {
+      "filename": "r5tosyo.pdf",
+      "sha256": "2b0da61ed24d2fd2b510cf8796834e60a21fae31bfae942f2afa0f58e7adc0f8",
+      "bytes": 5873471,
+      "fetchedAt": "2026-07-16T13:50:30.813Z",
+      "fetchedFrom": "https://www.city.edogawa.tokyo.jp/documents/40224/r5tosyo.pdf"
+    }
+  ]
+}
