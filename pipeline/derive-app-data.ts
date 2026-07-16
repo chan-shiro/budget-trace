@@ -38,6 +38,45 @@ const ARCHIVES = (() => {
 })();
 /** URL → Wayback コピー（未登録なら元 URL のまま） */
 const wayback = (url: string): string => ARCHIVES[url] ?? url;
+/** 魚拓サービスの URL か（＝この URL 自体が保存版で、発行元の生 URL ではない） */
+const isArchiveUrl = (url: string): boolean => /^https?:\/\/(web\.archive\.org|warp\.ndl\.go\.jp)\//.test(url);
+
+// ---- ライセンス区分 --------------------------------------------------------
+// license 原文から推定する（表記が揺れたら安全側の unverified に落ちる）:
+//   open / permission-required / unverified
+// permission-required は /coverage の区分表示だけでなく、**画面のエビデンスリンクを
+// 自サーバーのコピーから発行元のディープリンクへ切り替える**（evidence-policy.gen.ts）
+// 判定でもあるため、ここが緩むと許諾のない資料を配信リンクで見せることになる。
+//
+// 「無断で複製・転用することはできません」型の禁止文言も permission-required に落とす
+// （2026-07-15 追加）。それまでの語彙は「要許可|非営利」だけで、この型の明示的な禁止が
+// unverified（＝可否未確認・要確認）に落ちていた — 実態より緩い区分で、未確認の山に紛れる。
+// unverified が「安全側」なのは open に対してだけで、禁止文言に対しては安全側ではない。
+//
+// ⚠ **この分類器は文脈を読まない**。license 欄に**適用されない規約の名前**を説明として書くと
+// 語で拾って**逆の区分に落ちる**（2026-07-16 に実際に踏んだ: 熊本の license に
+// 「公共データ利用規約は適用範囲外」と書いたら **open に分類された** ＝ 発行元が許諾していないのに
+// 「自由に使える」と画面に出すところだった）。**license 欄には適用される条件だけを書き、
+// 経緯は registry のコメントに置く**こと。
+//
+// **この分類器は「語彙を1つ足す」たびに同じ穴を再生産する**（2026-07-16・さいたまで再発）。
+// さいたまの「無断使用・転載を禁止します」は、上の語彙（複製・転用）のどれにも当たらず
+// unverified へ落ちた。発行元は市ごとに違う動詞を使う（使用／複製／転用／転載／改変／販売／
+// 印刷配布）ので、**動詞を列挙するのではなく「無断」＋禁止の言い回しで捕まえる**。
+// **禁止を先に判定する**（2026-07-16・特別区）。オープンデータ規約は「ポータル掲載データのみに
+// 適用」と自ら範囲を限る書き方が定番で、その規約文を非 open な資料の license に取り違えて
+// 書くと open へ誤判定される（§9g の実害）。**明示的な禁止文言は CC BY の言及に勝たせる**＝
+// 取り違えたときに厳しい側へ落ちる。既存の open 13件は禁止文言を1つも含まないことを実測確認済み。
+//
+// CC BY を open に足した（2026-07-16・特別区）。特別区は**予算データそのものを CC BY の
+// オープンデータとして出す区**が実在し（世田谷 CSV・練馬 XLSX・千代田はサイト全体・
+// 東京都の決算 XLSX）、政令市20市の「ポータルの CC BY は予算書に及ばない」とは事情が違う。
+// 語彙が無いままだと**初の真正 open が unverified として画面に出る**。
+const licenseClassOf = (lic: string): "open" | "permission-required" | "unverified" =>
+  /要許可|非営利|無断|複製・転用|転載を禁止|使用を禁止|(?:転載|複製|二次利用|引用)[^。]{0,10}(?:禁じ|禁止)/.test(lic)
+    ? "permission-required"
+  : /政府標準利用規約|公共データ利用規約|クリエイティブ・コモンズ|CC[ -]?BY/i.test(lic) ? "open"
+  : "unverified";
 // 歳出構成の表示科目（この順で構成比を出し、残りは「その他」）
 const MIX_COLS = ["民生費", "教育費", "土木費", "公債費"] as const;
 
@@ -1349,6 +1388,86 @@ export const WAYBACK_BY_URL: Record<string, string> = ${JSON.stringify(byUrl, nu
 }
 
 // ============================================================================
+// 再利用が許諾されていない一次資料 → src/client/lib/evidence-policy.gen.ts
+//
+// エビデンス3層コピー（①git raw ②Wayback ③自サーバー配信）の**例外**を書き出す。
+// 原則は「画面のリンクは常に③をドロワーで開く」（発行元の直リンクは中身だけ差し替えられ
+// 得るため主リンクにしない）だが、**発行元が二次利用を許諾していない資料（要許可）は
+// ③へのリンクを主リンクにしない** — 私たちの写しをそのまま読ませることが再配布に当たる。
+// **写し自体は消さない**（来歴・SHA-256 照合・「何を持っているか」の開示は /coverage で続ける）。
+// 変えるのは**リンクの向き先だけ**で、要許可の資料は発行元のディープリンクを開く
+// （ユーザー方針 2026-07-16）。
+//
+// 向き先の決め方は「**実際にどこから取得したか**（raw-meta の fetchedFrom）」を第一の根拠に
+// する。registry の url は最新版へ差し替わり得るが、fetchedFrom はその写しの出所そのもの。
+//   - fetchedFrom が発行元の生 URL      → origin（発行元のその資料へ直リンク）
+//   - fetchedFrom が魚拓（Wayback/WARP） → archive（**発行元から消えていて魚拓にしかない**
+//                                          資料。取得時点で既に消えていた証拠なので魚拓へ繋ぐ）
+//   - fetchedFrom が manual:（手動投入）  → 台帳の魚拓 → registry の URL の順で外部の宛先を探す
+// **外部の宛先が1つも無い要許可資料は throw する**（＝リンクの持って行き先が無いまま
+// 「発行元で開く」と表示するくらいなら derive を失敗させる。gen 同士の食い違いを止める
+// 出口の整合チェックと同じ考え方）。
+// ============================================================================
+{
+  type Link = { mode: "origin" | "archive"; href: string; license: string };
+  const links: Record<string, Link> = {};
+  const missing: string[] = [];
+  let sourceCount = 0;
+  for (const s of SOURCES) {
+    if (s.fixture) continue;
+    if (licenseClassOf(s.license) !== "permission-required") continue;
+    sourceCount++;
+    const meta = readRawMeta(s.id);
+    // registry 側の宛先（ファイル直リンク → ランディングページ）。fetchedFrom が使えないときの控え
+    const registryUrl = s.urls?.[0] ?? s.url ?? s.landingPage ?? null;
+    for (const f of meta?.files ?? []) {
+      const from = f.fetchedFrom;
+      const link: Link | null = /^https?:/.test(from)
+        ? { mode: isArchiveUrl(from) ? "archive" : "origin", href: from, license: s.license }
+        : ARCHIVES[registryUrl ?? ""]
+          ? { mode: "archive", href: ARCHIVES[registryUrl!]!, license: s.license }
+          : registryUrl
+            ? { mode: isArchiveUrl(registryUrl) ? "archive" : "origin", href: registryUrl, license: s.license }
+            : null;
+      if (!link) {
+        missing.push(`${s.id}/${f.filename}`);
+        continue;
+      }
+      links[`/sources/${s.id}/${f.filename}`] = link;
+    }
+  }
+  if (missing.length > 0) {
+    throw new Error(
+      `要許可の資料に外部リンクの宛先がありません（発行元 URL も魚拓も無い）: ${missing.join(", ")}\n` +
+        `再利用が許諾されていない資料は自サーバーのコピーを主リンクにできません。` +
+        `registry に url / landingPage を書くか、bun run pipeline:archive で魚拓を取ってください`,
+    );
+  }
+  const archiveOnly = Object.values(links).filter((l) => l.mode === "archive").length;
+  const policyOut = `// このファイルは自動生成です。手で編集しないこと。
+// 再生成: bun run pipeline:derive
+// 発行元が二次利用を許諾していない一次資料（/coverage の「要許可」）の
+// 自サーバー配信コピー → 発行元（消えている資料は魚拓）のディープリンク。
+// 画面はこのキーに載っている資料だけ、ドロワーではなく外部リンクで開く。
+
+export interface RestrictedEvidenceLink {
+  /** origin = 発行元へ直リンク / archive = 発行元から消えており魚拓にしかない */
+  mode: "origin" | "archive";
+  href: string;
+  /** 発行元が示している利用条件の原文（なぜ外部リンクなのかの根拠） */
+  license: string;
+}
+
+/** キー: 自サーバー配信コピーのパス（/sources/<sourceId>/<filename>。フラグメント無し） */
+export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = ${JSON.stringify(links, null, 2)};
+`;
+  writeFileSync(join(process.cwd(), "src/client/lib/evidence-policy.gen.ts"), policyOut, "utf8");
+  console.log(
+    `✓ 要許可資料のリンク方針を導出 → src/client/lib/evidence-policy.gen.ts（${sourceCount}資料・${Object.keys(links).length}ファイル・うち魚拓へ${archiveOnly}）`,
+  );
+}
+
+// ============================================================================
 // 全国 決算シャード（総務省 決算状況調 R2〜R6）→ public/decision/<県コード>.json
 //   ＋ 索引 src/client/lib/decision-index.gen.ts
 // 全1,741市町村に「決算ベースのダッシュボード」を出すための断面。追加取得0。
@@ -1991,35 +2110,9 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
     if (!existsSync(p)) return [];
     return archivesLedgerSchema.parse(readJson(p)).entries;
   })();
-  // 「無断で複製・転用することはできません」型の禁止文言も permission-required に落とす
-  // （2026-07-15 追加）。それまでの語彙は「要許可|非営利」だけで、この型の明示的な禁止が
-  // unverified（＝可否未確認・要確認）に落ちていた — 実態より緩い区分で、未確認の山に紛れる。
-  // unverified が「安全側」なのは open に対してだけで、禁止文言に対しては安全側ではない。
-  //
-  // ⚠ **この分類器は文脈を読まない**。license 欄に**適用されない規約の名前**を説明として書くと
-  // 語で拾って**逆の区分に落ちる**（2026-07-16 に実際に踏んだ: 熊本の license に
-  // 「公共データ利用規約は適用範囲外」と書いたら **open に分類された** ＝ 発行元が許諾していないのに
-  // 「自由に使える」と画面に出すところだった）。**license 欄には適用される条件だけを書き、
-  // 経緯は registry のコメントに置く**こと。
-  //
-  // **この分類器は「語彙を1つ足す」たびに同じ穴を再生産する**（2026-07-16・さいたまで再発）。
-  // さいたまの「無断使用・転載を禁止します」は、上の語彙（複製・転用）のどれにも当たらず
-  // unverified へ落ちた。発行元は市ごとに違う動詞を使う（使用／複製／転用／転載／改変／販売／
-  // 印刷配布）ので、**動詞を列挙するのではなく「無断」＋禁止の言い回しで捕まえる**。
-  // **禁止を先に判定する**（2026-07-16・特別区）。オープンデータ規約は「ポータル掲載データのみに
-  // 適用」と自ら範囲を限る書き方が定番で、その規約文を非 open な資料の license に取り違えて
-  // 書くと open へ誤判定される（§9g の実害）。**明示的な禁止文言は CC BY の言及に勝たせる**＝
-  // 取り違えたときに厳しい側へ落ちる。既存の open 13件は禁止文言を1つも含まないことを実測確認済み。
-  //
-  // CC BY を open に足した（2026-07-16・特別区）。特別区は**予算データそのものを CC BY の
-  // オープンデータとして出す区**が実在し（世田谷 CSV・練馬 XLSX・千代田はサイト全体・
-  // 東京都の決算 XLSX）、政令市20市の「ポータルの CC BY は予算書に及ばない」とは事情が違う。
-  // 語彙が無いままだと**初の真正 open が unverified として画面に出る**。
-  const licenseClassOf = (lic: string): "open" | "permission-required" | "unverified" =>
-    /要許可|非営利|無断|複製・転用|転載を禁止|使用を禁止|(?:転載|複製|二次利用|引用)[^。]{0,10}(?:禁じ|禁止)/.test(lic)
-      ? "permission-required"
-    : /政府標準利用規約|公共データ利用規約|クリエイティブ・コモンズ|CC[ -]?BY/i.test(lic) ? "open"
-    : "unverified";
+  // ライセンス区分（licenseClassOf）はファイル冒頭に置いてある — この区分は /coverage の
+  // 表示だけでなく、画面のエビデンスリンクを自サーバーのコピーから発行元へ切り替える
+  // 判定（evidence-policy.gen.ts）でもあるため、両方から使う。
 
   const KNOWN = [
     { code: "192015", name: "甲府市", pref: "山梨県" },
