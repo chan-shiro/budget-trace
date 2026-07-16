@@ -22,6 +22,7 @@ import { join } from "node:path";
 import { createHash } from "node:crypto";
 import { SOURCES } from "./registry/sources";
 import { DATA_DIR, readJson, readRawMeta, writeJson } from "./lib/store";
+import { MIB, VERIFIABLE_RE, classifyVerify } from "./lib/wayback";
 import { archivesLedgerSchema, type ArchiveEntry } from "./types";
 
 const ARCHIVES_PATH = join(DATA_DIR, "archives.json");
@@ -46,56 +47,97 @@ async function latestSnapshot(url: string): Promise<{ timestamp: string; wayback
 }
 
 /**
+ * 照合の結果は3通りある。**「対象外」と「できなかった」を undefined でひとまとめにしない**
+ * （2026-07-16）— 台帳で両者が区別できず、江戸川 R8 が「検証できなかった」まま
+ * 「魚拓が揃った」と報告されかけた。
+ *   - `skipped`  … 照合対象外（HTML・設計どおり）。台帳にフィールドを置かない
+ *   - `failed`   … 照合すべきなのにできなかった。`sha256Verified: false` を残す
+ *   - `verified` … 照合が走った。`sha256Match` と診断用のバイト数を残す
+ */
+type VerifyResult =
+  | { status: "skipped" }
+  | { status: "failed"; reason: string }
+  | {
+      status: "verified";
+      match: boolean;
+      /**
+       * コピーのバイト数（打ち切りの上限・不足量を出すため。台帳にも残して後から診断できるようにする）。
+       * **一致した台帳エントリを再利用したときだけ undefined**（バイト数を残す前に登録された
+       * 古いエントリ。一致の報告にバイト数は要らないので、これを埋めるためだけに
+       * 数百件を再ダウンロードしない）。不一致はバイト数が無ければ必ず再照合する。
+       */
+      bytes?: number;
+      /** raw のバイト数（不一致の原因診断はコピー単独では付かず、原本との差で見る） */
+      rawBytes?: number;
+      /**
+       * 不一致の型。`match: true` なら "match"。
+       *   - `truncated` … MiB 境界ちょうど＝**確実な打ち切り**。私たちの raw が正しい
+       *   - `partial`   … raw より小さいが境界ではない＝**不完全な捕捉が濃厚**（ただし断定しない）
+       *   - `other`     … 小さくもない＝**別版**の疑い。--force で再登録
+       */
+      kind: "match" | "truncated" | "partial" | "other";
+    };
+
+const filenameOf = (url: string) => decodeURIComponent(new URL(url).pathname.split("/").pop() ?? "");
+/** raw 側のバイト数（台帳のコピーと突き合わせて不一致の型を診断するため） */
+const rawBytesOf = (sourceId: string, url: string) =>
+  readRawMeta(sourceId)?.files.find((f) => f.filename === filenameOf(url))?.bytes;
+
+/**
  * コピーが raw（私たちが parse した版）と同一バイト列かを sha256 で突合する（file のみ）。
  * Wayback の `id_` 付き URL は原本のバイト列をそのまま返す。
  * 上書き型 URL の古いスナップショットを現行版と誤認する事故を検出できる
  * （実例: 財政事情 01ipankaikei.pdf の 2024 年版スナップショット）。
- * raw に該当ファイルが無い・取得失敗は undefined（判定不能）
+ *
+ * **「照合できなかった」を黙って握り潰さない** — raw が無い・取得に失敗したときは
+ * `failed` を返して台帳に `sha256Verified: false` を残す（照合対象外の HTML＝`skipped` とは別物）。
  */
-/**
- * Wayback の一部クローラは大きなファイルを **MiB 境界ちょうど**で打ち切る。
- * **上限は1つではない**（2026-07-16 実測）: 神戸R8 24MB→**5 MiB** / 山口R7 5.3MB→5 MiB /
- * 京都R5・R4→5 MiB / **浜松R5 3.9MB→1 MiB**。
- * 最初は「5 MiB ちょうど」を定数にしていたが、1 MiB の実例が出て反証された。
- * **境界そのもの（1MiB の倍数）で判定する** — 実ファイルが 1MiB の倍数ちょうどになる確率は
- * 100万分の1程度で、かつ「raw より小さい」「sha が不一致」も同時に満たす必要があるので誤検出はしない。
- */
-const MIB = 1024 * 1024;
-
-interface VerifyResult {
-  match: boolean;
-  /** Wayback 側が切り詰めている（＝発行元の差し替えではない。私たちの raw が正しい） */
-  truncated: boolean;
-  /** 切り詰められたコピーのバイト数（打ち切りの上限がいくつだったかを出すため） */
-  bytes: number;
-}
-
-async function verifySnapshot(
-  sourceId: string,
-  url: string,
-  timestamp: string,
-): Promise<VerifyResult | undefined> {
-  const meta = readRawMeta(sourceId);
-  if (!meta) return undefined;
-  const filename = decodeURIComponent(new URL(url).pathname.split("/").pop() ?? "");
+async function verifySnapshot(sourceId: string, url: string, timestamp: string): Promise<VerifyResult> {
+  const filename = filenameOf(url);
   // HTML ページはテンプレート差（トークン・広告タグ等）で取得時刻によりバイト列が
-  // 揺れるため sha 突合の対象外（静的ファイルのみ検証する）
-  if (!/\.(pdf|xlsx?|csv)$/i.test(filename)) return undefined;
+  // 揺れるため sha 突合の対象外（静的ファイルのみ検証する）＝設計どおりの skipped
+  if (!VERIFIABLE_RE.test(filename)) return { status: "skipped" };
+  const meta = readRawMeta(sourceId);
+  if (!meta) return { status: "failed", reason: "raw-meta が無い（未 fetch）" };
   const raw = meta.files.find((f) => f.filename === filename);
-  if (!raw) return undefined;
+  if (!raw) return { status: "failed", reason: `raw に ${filename} が無い` };
   try {
     const res = await fetch(`https://web.archive.org/web/${timestamp}id_/${url}`, {
       headers: { "User-Agent": UA },
     });
-    if (!res.ok) return undefined;
+    if (!res.ok) return { status: "failed", reason: `コピーの取得が ${res.status}` };
     const buf = Buffer.from(await res.arrayBuffer());
     const match = createHash("sha256").update(buf).digest("hex") === raw.sha256;
-    // **MiB 境界ちょうど、かつ raw の方が大きい** = Wayback 側の打ち切り。
-    // 「発行元が差し替えた」と意味が正反対なので、不一致をひとまとめにしない。
-    const truncated = !match && buf.length > 0 && buf.length % MIB === 0 && raw.bytes > buf.length;
-    return { match, truncated, bytes: buf.length };
-  } catch {
-    return undefined;
+    return {
+      status: "verified",
+      match,
+      bytes: buf.length,
+      rawBytes: raw.bytes,
+      kind: classifyVerify(match, buf.length, raw.bytes),
+    };
+  } catch (e) {
+    return { status: "failed", reason: `コピーの取得に失敗（${e instanceof Error ? e.message : String(e)}）` };
+  }
+}
+
+// バイト数は**分かっているときだけ数字を出す**。undefined を 0 に潰すと
+// 「0MiB で打ち切り」のような、それ自体が嘘の診断が出る（実際に一度出した）。
+const fmtBytes = (n: number | undefined) => (n === undefined ? "不明" : `${n.toLocaleString("en-US")} bytes`);
+
+/** 照合結果を人向けの1行にする（登録済み／登録完了の両方から呼ぶので文面を1か所に置く） */
+function verifyNote(v: VerifyResult): string | null {
+  if (v.status === "skipped") return null;
+  if (v.status === "failed") return `⚠ sha256 を照合できなかった: ${v.reason}（台帳に sha256Verified: false を記録）`;
+  const sizes = `コピー ${fmtBytes(v.bytes)}・原本 ${fmtBytes(v.rawBytes)}`;
+  switch (v.kind) {
+    case "match":
+      return null;
+    case "truncated":
+      return `⚠ Wayback 側が MiB 境界（${v.bytes !== undefined ? `${v.bytes / MIB}MiB・` : ""}${sizes}）で打ち切っている。私たちの raw が正しい。--force で再登録しても同じ上限で切られる見込み`;
+    case "partial":
+      return `⚠ コピーが原本より小さい（${sizes}）。Wayback が最後まで返していない（MiB 境界ではないので打ち切りとは断定できない）。→ **まず時間を置いて再照合**（保存直後は取り込み中で途中までしか返らず、同じスナップショットが後で完全に取れることがある）。それでも変わらなければ古い版か不完全な捕捉なので --force を試す`;
+    case "other":
+      return `⚠ コピーが raw と不一致（${sizes}）。別版の可能性。--force で現行版を再登録してください`;
   }
 }
 
@@ -176,14 +218,48 @@ for (const source of targets) {
     if (url.includes("warp.ndl.go.jp") || url.includes("web.archive.org")) continue;
     // 同じスナップショットを検証済みなら再ダウンロードしない
     const prior = ledger.find((x) => x.sourceId === source.id && x.url === url);
-    const verify = async (timestamp: string, waybackUrl: string): Promise<VerifyResult | undefined> =>
-      kind !== "file"
-        ? undefined
-        : prior?.waybackUrl === waybackUrl && prior.sha256Match !== undefined
-          ? { match: prior.sha256Match, truncated: prior.waybackTruncated === true, bytes: 0 }
-          : await verifySnapshot(source.id, url, timestamp);
-    const verdict = (v: VerifyResult | undefined) =>
-      v === undefined ? {} : { sha256Match: v.match, ...(v.truncated ? { waybackTruncated: true } : {}) };
+    const verify = async (timestamp: string, waybackUrl: string): Promise<VerifyResult> => {
+      if (kind !== "file") return { status: "skipped" };
+      // 同じスナップショットを照合済みなら台帳の記録を再利用する（再ダウンロードしない）。
+      // ただし **不一致でバイト数が無いエントリは再照合する** — 診断（打ち切り／不完全／別版）が
+      // バイト数に依存するため。一致しているエントリはバイト数が無くても再利用でよい
+      // （一致の報告に要らない）。ここを分けないと、waybackBytes を足した初回の全実行で
+      // **数百件の PDF を Wayback から再ダウンロード**することになる。
+      const cacheable =
+        prior?.waybackUrl === waybackUrl &&
+        prior.sha256Match !== undefined &&
+        (prior.sha256Match === true || prior.waybackBytes !== undefined);
+      if (prior && cacheable) {
+        const cachedKind = prior.sha256Match
+          ? ("match" as const)
+          : prior.waybackTruncated
+            ? ("truncated" as const)
+            : prior.waybackPartial
+              ? ("partial" as const)
+              : ("other" as const);
+        return {
+          status: "verified",
+          match: prior.sha256Match!,
+          bytes: prior.waybackBytes,
+          rawBytes: rawBytesOf(source.id, url),
+          kind: cachedKind,
+        };
+      }
+      return await verifySnapshot(source.id, url, timestamp);
+    };
+    // 台帳へ書く判定。**「対象外（フィールド無し）」「照合できなかった（sha256Verified: false）」
+    // 「照合した（sha256Match）」の3状態を潰さない**のがこの関数の仕事。
+    const verdict = (v: VerifyResult) =>
+      v.status === "skipped"
+        ? {}
+        : v.status === "failed"
+          ? { sha256Verified: false }
+          : {
+              sha256Match: v.match,
+              ...(v.bytes !== undefined ? { waybackBytes: v.bytes } : {}),
+              ...(v.kind === "truncated" ? { waybackTruncated: true } : {}),
+              ...(v.kind === "partial" ? { waybackPartial: true } : {}),
+            };
 
     const existing = await latestSnapshot(url);
     if (existing && !force) {
@@ -195,11 +271,8 @@ for (const source of targets) {
         ...verdict(match),
       });
       console.log(`✓ 登録済み ${source.id} ${kind}: ${existing.waybackUrl}`);
-      if (match?.truncated) {
-        console.log(`  ⚠ Wayback 側が ${match.bytes / MIB}MiB で打ち切っている（私たちの raw が正しい）。--force で再登録しても同じ上限で切られる見込み`);
-      } else if (match?.match === false) {
-        console.log(`  ⚠ コピーが raw と不一致（別版の可能性）。--force で現行版を再登録してください`);
-      }
+      const note = verifyNote(match);
+      if (note) console.log(`  ${note}`);
       already++;
       continue;
     }
@@ -220,10 +293,11 @@ for (const source of targets) {
         ...verdict(match),
       });
       console.log(`✓ 登録完了 ${source.id} ${kind}: ${snap.waybackUrl}`);
-      if (match?.truncated) {
-        console.log(`  ⚠ Wayback 側が ${match.bytes / MIB}MiB で打ち切っている（私たちの raw が正しい）`);
-      } else if (match?.match === false) {
-        console.log(`  ⚠ コピーが raw と不一致（SPN 反映待ちで古い版を拾った可能性。時間を置いて再実行）`);
+      // 登録直後の不一致は SPN 反映待ちで古い版を拾っただけのこともあるので、その線を添える
+      const note = verifyNote(match);
+      if (note) console.log(`  ${note}`);
+      if (match.status === "verified" && !match.match && match.kind !== "truncated") {
+        console.log(`  （登録直後なので SPN 反映待ちで古い版を拾った可能性もある。時間を置いて再実行）`);
       }
       saved++;
     } else {
@@ -250,24 +324,34 @@ console.log(`新規登録 ${saved} / 登録済み ${already} / 未確認 ${faile
 // **魚拓は消えた資料の最後の砦**なので、「あるつもりで中身が違う」を放置しない。
 // ここは対象を絞った実行でも**台帳全体**を見る（1件ずつ流しても全体の穴に気づけるように）。
 {
-  // ⚠ **対象は `verifySnapshot` が実際に照合する種別だけ**に揃える（pdf/xlsx/xls/csv）。
-  // **HTML は設計として照合しない**（テンプレート差で取得時刻によりバイト列が揺れるため。
-  // verifySnapshot の同じ正規表現を参照）。ここを揃えないと、甲府の議会・決算詳細の HTML 12件が
-  // **毎回「未照合」として出続けて恒久的なノイズになる**（実際に一度そうなった）。
-  const VERIFIABLE_RE = /\.(pdf|xlsx?|csv)$/i;
-  const files = final.filter(
-    (e) => e.kind === "file" && VERIFIABLE_RE.test(decodeURIComponent(new URL(e.url).pathname.split("/").pop() ?? "")),
-  );
-  const unverified = files.filter((e) => e.waybackUrl && e.sha256Match == null && !e.waybackTruncated);
-  const mismatched = files.filter((e) => e.sha256Match === false && !e.waybackTruncated);
+  // ⚠ 対象は `verifySnapshot` が実際に照合する種別だけ（VERIFIABLE_RE を共有している理由は
+  // 定数側のコメントを参照）。
+  const files = final.filter((e) => e.kind === "file" && VERIFIABLE_RE.test(filenameOf(e.url)));
+  // 未照合＝「照合できなかった（sha256Verified: false）」＋「一度も照合が走っていない
+  // （フィールドごと無い）」。**どちらも「魚拓の中身を誰も見ていない」ことに変わりはない**ので
+  // 同じ穴として出す（区別は台帳のフィールドが持つ）。
+  const unverified = files.filter((e) => e.waybackUrl && e.sha256Match == null);
+  const partial = files.filter((e) => e.waybackPartial);
+  const mismatched = files.filter((e) => e.sha256Match === false && !e.waybackTruncated && !e.waybackPartial);
   if (unverified.length) {
     console.log(`\n⚠ 魚拓はあるが sha256 を照合していない原本: ${unverified.length} 件`);
-    for (const e of unverified.slice(0, 10)) console.log(`    ${e.sourceId} — ${e.url.split("/").pop()}`);
+    for (const e of unverified.slice(0, 10)) {
+      const why = e.sha256Verified === false ? "照合を試みて失敗" : "照合が走っていない";
+      console.log(`    ${e.sourceId} — ${e.url.split("/").pop()}（${why}）`);
+    }
     if (unverified.length > 10) console.log(`    …他 ${unverified.length - 10} 件`);
     console.log(`  → 対象を指定して再実行すると照合されます（例: bun run pipeline:archive ${unverified[0]!.sourceId}）`);
   }
+  if (partial.length) {
+    console.log(`\n⚠ 魚拓が原本より小さい（打ち切りとは断定できない・§9b）: ${partial.length} 件`);
+    for (const e of partial.slice(0, 10)) {
+      console.log(`    ${e.sourceId} — ${e.url.split("/").pop()}（コピー ${fmtBytes(e.waybackBytes)}）`);
+    }
+    console.log(`  → まず時間を置いて再照合してください（保存直後は取り込み中で途中までしか返らず、`);
+    console.log(`     同じスナップショットが後で完全に取れることがある — 江戸川 R8 の実例）`);
+  }
   if (mismatched.length) {
-    console.log(`\n⚠ 魚拓が raw と不一致（打ち切りでない＝別版の疑い・§9b）: ${mismatched.length} 件`);
+    console.log(`\n⚠ 魚拓が raw と不一致（小さくもない＝別版の疑い・§9b）: ${mismatched.length} 件`);
     for (const e of mismatched.slice(0, 10)) console.log(`    ${e.sourceId} — ${e.url.split("/").pop()}`);
   }
 }

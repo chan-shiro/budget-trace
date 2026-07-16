@@ -65,21 +65,46 @@ export const archiveEntrySchema = z.object({
   checkedAt: z.string(),
   /**
    * コピーの sha256 が raw（私たちが parse した版）と一致するか。
-   * file のみ・検証済みの場合に入る。false の意味は2つあり、`waybackTruncated` で区別する。
+   * file のみ・**照合が実際に走った場合だけ**入る。false の意味は3つあり、
+   * `waybackTruncated` / `waybackPartial` で区別する。
    */
   sha256Match: z.boolean().optional(),
   /**
-   * **スナップショットが Wayback 側で切り詰められている**（＝発行元の差し替えではない）。
-   * 一部のクローラは大きなファイルを**ちょうど 5 MiB（5,242,880 bytes）で打ち切る**。
-   * 2026-07-16 に神戸 R8（24MB→5MiB）・山口 R7（5.3MB→5MiB）で実際に踏んだ。
+   * **照合を試みたが実行できなかった**（コピーの取得に失敗・raw に対応ファイルが無い等）。
+   * これが `true` になることはない — **`false` だけが意味を持つ**明示フィールドで、
+   * 「照合して一致した」と「照合できていない」が**どちらもフィールド無しで区別できない**
+   * 状態を消すために置く（2026-07-16。江戸川 R8 が実際にこの状態になり、件数だけ見て
+   * 「魚拓が揃った」と誤って報告しかけた）。
    *
-   * **`sha256Match: false` の意味は2つあって正反対**なので、混ぜてはいけない:
+   * **HTML ページは対象外＝設計どおり**なので、こちらは付けない（フィールドごと無い）。
+   * 区別: フィールド無し＝照合対象外 / `false`＝照合すべきなのにできなかった。
+   */
+  sha256Verified: z.boolean().optional(),
+  /** コピーの実バイト数。不一致の原因を後から診断するために残す（照合が走った file のみ） */
+  waybackBytes: z.number().int().nonnegative().optional(),
+  /**
+   * **スナップショットが Wayback 側で MiB 境界ちょうどで切り詰められている**
+   * （＝発行元の差し替えではない）。上限は1つではない（神戸 R8 24MB→5MiB /
+   * 浜松 R5 3.9MB→1MiB）ため、境界そのもの（1 MiB の倍数）で判定する。
+   *
+   * **`sha256Match: false` の意味は3つあって助言が食い違う**ので、混ぜてはいけない:
    *   - `waybackTruncated: true` … Wayback 側が壊れている。**私たちの raw は正しい**。
    *     --force で再登録しても同じ上限で切られる可能性が高い（②層が張れない資料）。
-   *   - それ以外 … スナップショットが**別版**（発行元が差し替えた等）を指している。
+   *   - `waybackPartial: true` … コピーが raw より小さいが MiB 境界ではない。
+   *     不完全な捕捉が濃厚だが、**古い版が単に小さいだけの可能性**も残る（断定しない）。
+   *   - どちらも無い … スナップショットが**別版**（発行元が差し替えた等）を指している。
    *     --force で現行版の再登録が要る。
    */
   waybackTruncated: z.boolean().optional(),
+  /**
+   * **コピーが raw より小さいが MiB 境界ではない**（2026-07-16。江戸川 R8 の魚拓が
+   * 142,235 bytes / 原本 4,820,529 bytes）。`waybackTruncated` の MiB 境界判定は
+   * **確実な打ち切りしか捕まえない**ため、これに漏れた不完全な捕捉が
+   * 「別版の可能性。--force で再登録を」＝**原因が正反対の助言**に落ちていた。
+   * 打ち切りと違って断定はできない（古い版が小さいだけのこともある）ので、
+   * `waybackTruncated` とは別のフィールドにして可能性の提示に留める。
+   */
+  waybackPartial: z.boolean().optional(),
 });
 export type ArchiveEntry = z.infer<typeof archiveEntrySchema>;
 export const archivesLedgerSchema = z.object({
