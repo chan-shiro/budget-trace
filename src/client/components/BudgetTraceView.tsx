@@ -299,7 +299,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                 </summary>
                 <div style={S("padding:0 18px 16px;")}>
                   <p style={S("margin:0 0 10px; font-size:12px; color:#5C6B77; line-height:1.85; max-width:80ch;")}>
-                    資料の消失・差し替えに備え、原本のコピーを自サーバーから配信しています（エビデンス3層の③）。総務省資料は政府標準利用規約で再配布できますが、<strong style={S("color:#14181C;")}>自治体資料は多くが「利用条件は同サイト参照」で再配布可否が未確認</strong>です。次の資料は<strong style={S("color:#8A4B1F;")}>二次利用に許諾が必要と明記</strong>されており、現在のコピー配信は許諾を得ていません。発行元からの申し出があれば速やかに③を停止し、①発行元と②Wayback のみに切り替えます。
+                    資料の消失・差し替えに備え、原本のコピーを自サーバーから配信しています（エビデンス3層の③）。総務省資料は政府標準利用規約で再配布できますが、<strong style={S("color:#14181C;")}>自治体資料は多くが「利用条件は同サイト参照」で再配布可否が未確認</strong>です。次の資料は<strong style={S("color:#8A4B1F;")}>二次利用に許諾が必要と明記</strong>されているため、<strong style={S("color:#14181C;")}>画面のリンクはコピーではなく発行元（発行元から消えている資料は Wayback の魚拓）へ直接つないでいます</strong>。コピーは来歴の検証（下のファイル名・SHA-256・取得日）のために保管を続けており、発行元からの申し出があれば速やかに③の配信を停止します。
                   </p>
                   {v.cov.permissionSources.map((s2: any, i: number) => (
                     <div key={i} style={S("display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; background:#FFFFFF; border:1px solid #EFD4BE; border-radius:8px; padding:7px 11px; margin-top:5px;")}>
@@ -422,7 +422,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                                           </div>
                                           {src.files.map((f: any, fi: number) => (
                                             <div key={fi} style={S("display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-top:2px; font-size:10px; color:#8494A0; font-family:'IBM Plex Mono',monospace;")}>
-                                              <a href={f.localUrl} onClick={(ev) => { ev.preventDefault(); f.open(); }} style={S("color:#0F76A3; text-decoration:none; cursor:pointer;")}>{f.filename}</a>
+                                              <a href={f.href} onClick={(ev) => { ev.preventDefault(); f.open(); }} style={S("color:#0F76A3; text-decoration:none; cursor:pointer;")}>{f.filename}</a>
                                               <span>sha256 {f.sha256}</span>
                                               <span>{(f.bytes / 1024).toFixed(0)}KB</span>
                                               <span>{f.fetchedAt} 取得</span>
@@ -645,8 +645,8 @@ export default function BudgetTraceView({ v }: { v: any }) {
                         <p style={S("margin:10px 0 0; font-size:11px; color:#8494A0; line-height:1.7;")}>会派ごとの賛否・票数は起立採決のため公表されていません（記録は「可決」のみ）。</p>
                       </div>
                       <div style={S("display:flex; gap:6px; flex-wrap:wrap; font-size:11.5px;")}>
-                        <HoverBox as="button" onClick={v.council.rosterOpen} style={S("border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; border-radius:999px; padding:3px 11px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif; font-size:11.5px;")} hoverStyle={S("border-color:#1798D0; color:#1798D0;")}>出典：会派別議員名簿（原本を開く）</HoverBox>
-                        <HoverBox as="button" onClick={v.council.resultOpen} style={S("border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; border-radius:999px; padding:3px 11px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif; font-size:11.5px;")} hoverStyle={S("border-color:#1798D0; color:#1798D0;")}>出典：{v.council.resolution.sessionLabel} 審議結果（原本を開く）</HoverBox>
+                        <HoverBox as="button" onClick={v.council.rosterOpen} style={S("border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; border-radius:999px; padding:3px 11px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif; font-size:11.5px;")} hoverStyle={S("border-color:#1798D0; color:#1798D0;")}>出典：会派別議員名簿（{v.council.rosterAction}）</HoverBox>
+                        <HoverBox as="button" onClick={v.council.resultOpen} style={S("border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; border-radius:999px; padding:3px 11px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif; font-size:11.5px;")} hoverStyle={S("border-color:#1798D0; color:#1798D0;")}>出典：{v.council.resolution.sessionLabel} 審議結果（{v.council.resultAction}）</HoverBox>
                         <a href={v.council.newsletterUrl} target="_blank" rel="noopener noreferrer" style={S("border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:3px 11px; text-decoration:none;")}>議会だより ↗</a>
                         <a href={v.council.minutesUrl} target="_blank" rel="noopener noreferrer" style={S("border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:3px 11px; text-decoration:none;")}>会議録検索 ↗</a>
                       </div>
@@ -811,7 +811,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
 
                   <div style={S("display:flex; align-items:baseline; gap:10px; margin-bottom:10px; flex-wrap:wrap;")}>
                     <h3 style={S("margin:0; font-size:13.5px; font-weight:700; color:#14181C;")}>{v.report.fyLabel}評価<span style={S("font-weight:400; color:#5C6B77;")}>（対象 {v.report.targetFyLabel}実績）</span></h3>
-                    <HoverBox as="button" onClick={v.report.sourceOpen} style={S("font-size:11.5px; border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; border-radius:999px; padding:2px 11px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("border-color:#1798D0; color:#1798D0;")}>出典：詳細票（原本を開く）</HoverBox>
+                    <HoverBox as="button" onClick={v.report.sourceOpen} style={S("font-size:11.5px; border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; border-radius:999px; padding:2px 11px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("border-color:#1798D0; color:#1798D0;")}>出典：詳細票（{v.report.sourceAction}）</HoverBox>
                   </div>
                   {/* 選択中の予算年度に評価が無く、最新の詳細票へフォールバックしたときだけ理由を出す */}
                   {v.report.fallbackNote && (
@@ -935,7 +935,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                     </div>
                   )}
                   <p style={S("margin:10px 2px 0; font-size:12px; color:#5C6B77;")}>
-                    <a href="#" onClick={(e) => { e.preventDefault(); v.budgetProjectsSourceOpen(); }} style={S("color:#5C6B77; cursor:pointer;")}>{v.budgetProjectsSourceLabel}（原本を開く）</a>
+                    <a href={v.budgetProjectsSourceUrl} onClick={(e) => { e.preventDefault(); v.budgetProjectsSourceOpen(); }} style={S("color:#5C6B77; cursor:pointer;")}>{v.budgetProjectsSourceLabel}（{v.budgetProjectsSourceAction}）</a>
                   </p>
                 </section>
                 )}
@@ -996,7 +996,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                 )}
 
                 <p style={S("margin:14px 2px 0; font-size:12px; color:#5C6B77;")}>
-                  <a href={v.dashSourceUrl} onClick={(e) => { e.preventDefault(); v.dashSourceOpen(); }} style={S("color:#5C6B77; cursor:pointer;")}>{v.dashSourceLabel}（原本を開く）</a>
+                  <a href={v.dashSourceUrl} onClick={(e) => { e.preventDefault(); v.dashSourceOpen(); }} style={S("color:#5C6B77; cursor:pointer;")}>{v.dashSourceLabel}（{v.dashSourceAction}）</a>
                 </p>
               </div>
             )}
@@ -1084,7 +1084,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                           </div>
                         </div>
                         <p style={S("margin:8px 2px 0; font-size:12px; color:#5C6B77;")}>
-                          <a href="#" onClick={(e) => { e.preventDefault(); v.outturnSourceOpen(); }} style={S("color:#5C6B77; cursor:pointer;")}>{v.outturnSourceLabel}（原本を開く）</a>
+                          <a href={v.outturnSourceUrl} onClick={(e) => { e.preventDefault(); v.outturnSourceOpen(); }} style={S("color:#5C6B77; cursor:pointer;")}>{v.outturnSourceLabel}（{v.outturnSourceAction}）</a>
                         </p>
                       </div>
                     )}
@@ -1105,7 +1105,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                           ))}
                         </div>
                         <p style={S("margin:8px 2px 0; font-size:12px; color:#5C6B77;")}>
-                          <a href={v.r6DetailSourceUrl} onClick={(e) => { e.preventDefault(); v.r6DetailSourceOpen(); }} style={S("color:#5C6B77; cursor:pointer;")}>{v.r6DetailSourceLabel}（原本を開く）</a>
+                          <a href={v.r6DetailSourceUrl} onClick={(e) => { e.preventDefault(); v.r6DetailSourceOpen(); }} style={S("color:#5C6B77; cursor:pointer;")}>{v.r6DetailSourceLabel}（{v.r6DetailSourceAction}）</a>
                         </p>
                       </div>
                     )}
@@ -1176,7 +1176,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                           ))}
                         </div>
                         <p style={S("margin:10px 2px 0; font-size:12px; color:#5C6B77;")}>
-                          <a href={v.realProjectsSourceUrl} onClick={(e) => { e.preventDefault(); v.realProjectsSourceOpen(); }} style={S("color:#5C6B77; cursor:pointer;")}>{v.realProjectsSourceLabel}（原本を開く）</a>
+                          <a href={v.realProjectsSourceUrl} onClick={(e) => { e.preventDefault(); v.realProjectsSourceOpen(); }} style={S("color:#5C6B77; cursor:pointer;")}>{v.realProjectsSourceLabel}（{v.realProjectsSourceAction}）</a>
                         </p>
                       </div>
                     )}
@@ -1243,7 +1243,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                   <div style={S("font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.18em; color:#0F76A3; margin-bottom:10px;")}>POLICY THEMES — 総合計画の基本目標別に見る</div>
                   <p style={S("margin:0 0 14px; font-size:15px; line-height:1.9; max-width:76ch;")}>{v.themesIntro}</p>
                   <div style={S("display:flex; gap:8px; flex-wrap:wrap;")}>
-                    <a href={v.dashSourceUrl} onClick={(e) => { e.preventDefault(); v.dashSourceOpen(); }} style={S("font-size:12px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:4px 12px; text-decoration:none; cursor:pointer;")}>出典：{v.dashSourceTitle}（原本を開く）</a>
+                    <a href={v.dashSourceUrl} onClick={(e) => { e.preventDefault(); v.dashSourceOpen(); }} style={S("font-size:12px; border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:4px 12px; text-decoration:none; cursor:pointer;")}>出典：{v.dashSourceTitle}（{v.dashSourceAction}）</a>
                   </div>
                 </section>
 
@@ -1405,7 +1405,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                     <h3 style={S("margin:0 0 12px; font-size:14px; font-weight:700;")}>エビデンス（一次資料）</h3>
                     <div style={S("display:grid; grid-template-columns:repeat(auto-fill, minmax(240px,1fr)); gap:12px;")}>
                       {v.execEvidence.map((he: any, i: number) => (
-                        <HoverBox as="a" key={i} href={he.localUrl} onClick={(e: any) => { e.preventDefault(); he.open(); }} style={S("display:block; background:#FFFFFF; border:1px solid #DFE7EC; border-radius:13px; overflow:hidden; text-decoration:none; color:#14181C; cursor:pointer;")} hoverStyle={S("border-color:#1798D0; text-decoration:none;")}>
+                        <HoverBox as="a" key={i} href={he.href} onClick={(e: any) => { e.preventDefault(); he.open(); }} style={S("display:block; background:#FFFFFF; border:1px solid #DFE7EC; border-radius:13px; overflow:hidden; text-decoration:none; color:#14181C; cursor:pointer;")} hoverStyle={S("border-color:#1798D0; text-decoration:none;")}>
                           <span style={S("display:flex; align-items:center; justify-content:center; height:96px; background:repeating-linear-gradient(45deg,#ECF2F6 0 10px,#E1EAF0 10px 20px); font-family:'IBM Plex Mono',monospace; font-size:11px; color:#5C6B77; text-align:center; padding:0 14px; line-height:1.5;")}>{he.thumb}</span>
                           <span style={S("display:block; padding:12px 15px;")}>
                             <span style={S("display:inline-block; font-size:10.5px; font-weight:600; color:#1798D0; border:1px solid #B9E0F2; border-radius:999px; padding:1px 9px; margin-bottom:6px;")}>{he.type}</span>
@@ -1552,7 +1552,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                   <h3 style={S("margin:0 0 12px; font-size:14px; font-weight:700;")}>エビデンス（一次資料）</h3>
                   <div style={S("display:grid; grid-template-columns:repeat(auto-fill, minmax(240px,1fr)); gap:12px;")}>
                     {v.similarEvidence.map((ev: any, i: number) => (
-                      <HoverBox as="a" key={i} href={ev.localUrl} onClick={(e: any) => { e.preventDefault(); ev.open(); }} style={S("display:block; background:#FFFFFF; border:1px solid #DFE7EC; border-radius:13px; overflow:hidden; text-decoration:none; color:#14181C;")} hoverStyle={S("border-color:#1798D0; text-decoration:none;")}>
+                      <HoverBox as="a" key={i} href={ev.href} onClick={(e: any) => { e.preventDefault(); ev.open(); }} style={S("display:block; background:#FFFFFF; border:1px solid #DFE7EC; border-radius:13px; overflow:hidden; text-decoration:none; color:#14181C;")} hoverStyle={S("border-color:#1798D0; text-decoration:none;")}>
                         <span style={S("display:flex; align-items:center; justify-content:center; height:110px; background:repeating-linear-gradient(45deg,#ECF2F6 0 10px,#E1EAF0 10px 20px); font-family:'IBM Plex Mono',monospace; font-size:11px; color:#5C6B77; text-align:center; padding:0 14px; line-height:1.5;")}>{ev.thumb}</span>
                         <span style={S("display:block; padding:12px 15px;")}>
                           <span style={S("display:inline-block; font-size:10.5px; font-weight:600; color:#1798D0; border:1px solid #B9E0F2; border-radius:999px; padding:1px 9px; margin-bottom:6px;")}>{ev.type}</span>
@@ -1610,7 +1610,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                     <div key={src.sourceId} data-mq="src" style={S("display:grid; grid-template-columns:minmax(200px,2fr) 70px minmax(140px,1.4fr) 100px minmax(160px,1.6fr); gap:12px; padding:11px 0; border-bottom:1px solid #ECF2F6; font-size:13px; align-items:center;")}>
                       <span style={S("display:flex; flex-direction:column; gap:2px;")}>
                         {src.open ? (
-                          <a href={src.localUrl} onClick={(e) => { e.preventDefault(); src.open(); }} style={S("font-weight:600; cursor:pointer;")}>{src.title}（原本を開く）</a>
+                          <a href={src.href} onClick={(e) => { e.preventDefault(); src.open(); }} style={S("font-weight:600; cursor:pointer;")}>{src.title}（{src.action}）</a>
                         ) : (
                           <a href={src.originUrl} target="_blank" rel="noopener noreferrer" style={S("font-weight:600;")}>{src.title} ↗</a>
                         )}
@@ -1642,7 +1642,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                         style={S(`border:1px solid #C6D2DA; background:#FFFFFF; border-radius:999px; padding:5px 14px; font-size:12.5px; font-family:'IBM Plex Sans JP',sans-serif; ${v.src.page >= v.src.pages ? "color:#C6D2DA; cursor:default;" : "color:#3A4750; cursor:pointer;"}`)}>次へ →</button>
                     </div>
                   )}
-                  <p style={S("margin:12px 2px 0; font-size:12px; color:#5C6B77; line-height:1.8;")}>資料名をクリックすると<strong style={S("color:#14181C;")}>収録時点の原本コピー</strong>をその場で開きます（発行元の直リンクは中身だけ差し替えられ得るため、主リンクにしていません）。発行元の元ページと Wayback Machine の魚拓は補助リンクです。原本はリポジトリにもアーカイブされ、取得時の SHA-256 ハッシュで来歴を検証できます。利用条件の区分は<button onClick={v.goCoverage} style={S("border:none; background:none; padding:0; color:#1798D0; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")}>データ整備状況</button>で全件公開しています。</p>
+                  <p style={S("margin:12px 2px 0; font-size:12px; color:#5C6B77; line-height:1.8;")}>資料名をクリックすると<strong style={S("color:#14181C;")}>収録時点の原本コピー</strong>をその場で開きます（発行元の直リンクは中身だけ差し替えられ得るため、主リンクにしていません）。発行元の元ページと Wayback Machine の魚拓は補助リンクです。ただし<strong style={S("color:#8A4B1F;")}>「要許可」の資料はコピーを開かず、発行元（消えている資料は魚拓）へ直接つなぎます</strong>。原本はリポジトリにもアーカイブされ、取得時の SHA-256 ハッシュで来歴を検証できます。利用条件の区分は<button onClick={v.goCoverage} style={S("border:none; background:none; padding:0; color:#1798D0; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")}>データ整備状況</button>で全件公開しています。</p>
                 </section>
                 )}
 
