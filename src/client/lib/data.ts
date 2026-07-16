@@ -222,19 +222,9 @@ export function evidenceAction(localUrl: string | null | undefined): string {
 }
 
 // ---- ヘルパー --------------------------------------------------------------
-// 年度コード（"R8" / "H31"）→ 画面の年度ラベル。前年比較のラベルはここで年号をまたぐ
-// （R2 の前年＝令和元年度・R1 の前年＝平成30年度）。パイプライン側の対応物は
-// pipeline/lib/fy.ts の eraYear（そちらは gen 互換のため「元」に変換しない）。
-export function fyEraLabel(fy: string): string {
-  const m = /^([HR])(\d+)$/.exec(fy);
-  if (!m) return fy;
-  return `${m[1] === 'H' ? '平成' : '令和'}${m[2] === '1' ? '元' : m[2]}年度`;
-}
-export function prevFyEraLabel(fy: string): string {
-  const m = /^([HR])(\d+)$/.exec(fy);
-  if (!m) return fy;
-  return fyEraLabel(m[1] === 'R' && m[2] === '1' ? 'H30' : `${m[1]}${Number(m[2]) - 1}`);
-}
+// 年度ラベル（fyEraLabel / prevFyEraLabel）は ./fy に置いて re-export する。
+// decision.ts からも使うが、data.ts → decision.ts の import があるため直接引くと循環する。
+export { fyEraLabel, prevFyEraLabel } from './fy';
 export function fmtOku(v: number): string {
   if (v >= 10000) return (v/10000).toFixed(2) + '兆円';
   if (v >= 1) return (v >= 100 ? Math.round(v).toLocaleString() : v.toFixed(1)) + '億円';

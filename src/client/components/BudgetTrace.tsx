@@ -1233,7 +1233,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     // 年度切り替え。full=当初予算(複数年)、budget=当初予算(1年)、decision=決算年度
     yearOptions: isDecision
       ? [
-          ...decisionView!.availableFys.map((fy) => ({ value: fy, label: D.DECISION_FY_LABELS[fy] ?? `令和${fy.slice(1)}年度 決算` })),
+          ...decisionView!.availableFys.map((fy) => ({ value: fy, label: D.DECISION_FY_LABELS[fy] ?? `${D.fyEraLabel(fy)} 決算` })),
           { value: "__request", label: "＋ 他の年度をリクエスト…" },
         ]
       : isBudget
@@ -1364,8 +1364,8 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
         })),
         r6DetailKanTotalFmt: fmtOku(kanTotal),
         r6DetailRequestUrl: D.buildRequestUrl(
-          `予算書 本編（款項目節・令和${budget.fy.slice(1)}年度）`,
-          `款別ドリルダウンの「${nodeName}」で、令和${budget.fy.slice(1)}年度予算の項別内訳を見たい（現在は直近決算の参考表示のみ）`,
+          `予算書 本編（款項目節・${D.fyEraLabel(budget.fy)}）`,
+          `款別ドリルダウンの「${nodeName}」で、${D.fyEraLabel(budget.fy)}予算の項別内訳を見たい（現在は直近決算の参考表示のみ）`,
         ),
         r6DetailSourceUrl: evHref(KOFU_R6_DETAIL.sourceLocalUrl),
         r6DetailSourceAction: evAction(KOFU_R6_DETAIL.sourceLocalUrl),
@@ -1457,7 +1457,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
         uncoveredRequestUrl:
           isFull && uncovered > 0.005
             ? D.buildRequestUrl(
-                `予算書 本編（款項目節・令和${budget.fy.slice(1)}年度）`,
+                `予算書 本編（款項目節・${D.fyEraLabel(budget.fy)}）`,
                 `款別ドリルダウンの「${nodeName}」で、主な事業一覧に掲載のない ${fmtOku(uncovered)} の内訳（項・目・節、事業別）を知りたい`,
               )
             : "",
@@ -1755,7 +1755,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
             amount: c?.totalCost ?? c?.jigyohi ?? null,
             amountKind: c?.totalCost != null ? "総コスト" : "事業費",
             // 年度はフォールバック先の行自身のもので表示する（評価年度と一致するとは限らない）
-            costLabel: c ? `${c.fy === repData.fy ? repData.fyLabel : `令和${c.fy.slice(1)}年度`}${c.kind}${c.est ? "（見込）" : ""}` : "",
+            costLabel: c ? `${c.fy === repData.fy ? repData.fyLabel : D.fyEraLabel(c.fy)}${c.kind}${c.est ? "（見込）" : ""}` : "",
             // href にも入れる（onClick だけだと中クリック・キーボードでリンクとして扱えない）。
             // 要許可の資料は発行元のディープリンクへ振り替わる
             ref: evHref(r.ref),

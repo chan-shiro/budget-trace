@@ -2131,7 +2131,7 @@ export const SOURCES: SourceEntry[] = [
     //    毎回「予算案（2月発行）と あらまし（議決後）の款別が一致するか」を突合すること
     //    （R8 は原案どおり可決＝916億1,057万で款別も完全一致することを確認済み）。
     id: `chiyoda-yosansho-${fy.toLowerCase()}`,
-    title: `令和${fy.slice(1)}年度 千代田区の仕事のあらまし（予算編成の概況）`,
+    title: `${eraYear(fy)}年度 千代田区の仕事のあらまし（予算編成の概況）`,
     publisher: "千代田区",
     url: null,
     urls: [
@@ -2369,7 +2369,7 @@ export const SOURCES: SourceEntry[] = [
     // ⚠ **予算編成概要は年度によってテキスト層が死んでいる**（R7 版は ToUnicode 欠落で全文が空白）。
     //    プレス資料編を主資料に採る理由の1つ。乗り換えるなら年度ごとに再判定すること。
     id: `meguro-yosanan-${fy.toLowerCase()}`,
-    title: `令和${fy.slice(1)}年度 目黒区当初予算案プレス発表資料（資料編・各会計歳入歳出予算）`,
+    title: `${eraYear(fy)}年度 目黒区当初予算案プレス発表資料（資料編・各会計歳入歳出予算）`,
     publisher: "目黒区",
     url: null,
     urls: [`https://www.city.meguro.tokyo.jp/documents/${path}`],
@@ -2490,7 +2490,7 @@ export const SOURCES: SourceEntry[] = [
     //   → **特別区交付金は R8 で 1.6%**（2,500,000/152,541,000）＝§10 の港 0.7% に次ぐ23区最低クラス。
     //     「特別区交付金は5〜30%」という見当がいかに通じないかの実例（§10）。
     id: `shibuya-yosansho-${fy.toLowerCase()}`,
-    title: `令和${fy.slice(1)}年度 渋谷区各会計予算・渋谷区各会計予算説明書（歳入歳出予算事項別明細書 総括）`,
+    title: `${eraYear(fy)}年度 渋谷区各会計予算・渋谷区各会計予算説明書（歳入歳出予算事項別明細書 総括）`,
     publisher: "渋谷区",
     url: null,
     urls: [
