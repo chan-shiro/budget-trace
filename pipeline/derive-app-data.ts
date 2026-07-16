@@ -1531,8 +1531,11 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = ${JSO
   // 県コード → { 県名, 団体コード → { 市町村名, 年度→断面 } }
   const prefs = new Map<string, { prefName: string; munis: Map<string, { name: string; years: Record<string, unknown> }> }>();
   const prefCodes: Record<string, string> = {};
-  let expMismatch = 0;
-  let revMismatch = 0;
+  // 不一致は**件数だけでなく中身を残す**（2026-07-16）。以前は数を数えるだけだったので、
+  // **新しい不一致が出ても「2 → 3」に増えるだけで、どの自治体か分からなかった**。
+  // 数だけの報告は「静かに壊れる」を招く（§2-4 と同じ轍。archive の「新規登録 2」も同型だった）。
+  const expMismatches: string[] = [];
+  const revMismatches: { label: string; diff: number; total: number }[] = [];
 
   // (4)性質別歳出・(5)地方債を年度ごとに団体コードで結合し、各年度スライスに付与する。億円。
   // R2〜R6 を収録済み。未取得の年度はスキップ（その年度はパネル非表示になる）。
@@ -1574,12 +1577,23 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = ${JSO
       // 自己検証: Σ款 = 歳出総額（千円・厳密）。合わない年度は採用しない
       const expSum = Object.values(r.expenditureByPurpose).reduce((a, b) => a + (b ?? 0), 0);
       if (expSum !== r.expenditureTotal) {
-        expMismatch++;
+        expMismatches.push(`${fy} ${r.prefName} ${r.muniName}（${r.muniCode}）`);
         continue;
       }
       const rev = r.revenueByCategory ?? {};
       const revSum = Object.values(rev).reduce((a, b) => a + b, 0);
-      if (r.revenueTotal && revSum !== r.revenueTotal) revMismatch++; // 表示は科目和ベース。警告のみ
+      // **歳入は歳出と違って除外しない** — 画面は科目和ベースで描くので、原典の合計欄と
+      // 食い違っても内訳そのものは自己整合している（歳出は Σ が合わない＝内訳が壊れているので除外する）。
+      // ただし**丸め（±数千円）と抽出の壊れ（桁が違う）は別物**なので分ける。
+      // 以前は**どんなに大きくズレても警告のみで表示し続けていた** — 総務省の様式が変わって
+      // 科目を1つ取り違えても、件数が1つ増えるだけで画面には出続ける穴だった。
+      if (r.revenueTotal && revSum !== r.revenueTotal) {
+        revMismatches.push({
+          label: `${fy} ${r.prefName} ${r.muniName}（${r.muniCode}）`,
+          diff: revSum - r.revenueTotal,
+          total: r.revenueTotal,
+        });
+      }
 
       const prefCode = r.muniCode.slice(0, 2);
       prefCodes[r.prefName] = prefCode;
@@ -1680,8 +1694,32 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
   console.log(
     `✓ 全国 決算シャードを導出 → public/decision/（${fileCount}県・${muniCount}市町村）／ src/client/lib/decision-index.gen.ts`,
   );
-  if (expMismatch) console.log(`  ⚠ Σ款≠歳出総額で除外した muni-年度: ${expMismatch}`);
-  if (revMismatch) console.log(`  ⚠ Σ歳入科目≠歳入総額（表示は科目和ベース・警告のみ）: ${revMismatch}`);
+  if (expMismatches.length) {
+    console.log(`  ⚠ Σ款≠歳出総額で除外した muni-年度: ${expMismatches.length}`);
+    for (const l of expMismatches.slice(0, 10)) console.log(`      ${l}`);
+    if (expMismatches.length > 10) console.log(`      …他 ${expMismatches.length - 10} 件`);
+  }
+  // **丸めと抽出の壊れを分ける**（2026-07-16）。原典側の丸めは実測で**全部 1千円**
+  // （R5・R6 の伊賀市だけ。歳入総額 約500億に対して 0.000002%）。一方、科目を1つ取り違えれば
+  // **百万〜億単位**でズレる。→ **1千円以内は原典の丸めとして warning、それを超えたら error で
+  // derive を止める**（総務省の様式が変わったときに黙って画面へ出さない）。
+  // §9c の「2サンプルから定数を決めて反証された」轍を踏まないよう、**根拠は分布の実測**に置く:
+  // 全1,741市町村×5年度で不一致は2件、どちらも1千円ちょうど。
+  const ROUNDING_LIMIT = 1; // 千円
+  const material = revMismatches.filter((m) => Math.abs(m.diff) > ROUNDING_LIMIT);
+  if (revMismatches.length) {
+    console.log(`  ⚠ Σ歳入科目≠歳入総額（表示は科目和ベース）: ${revMismatches.length}`);
+    for (const m of revMismatches) {
+      console.log(`      ${m.label}: 差 ${m.diff > 0 ? "+" : ""}${m.diff.toLocaleString()}千円（総額 ${m.total.toLocaleString()}）`);
+    }
+  }
+  if (material.length) {
+    console.error("✗ 歳入科目の和が歳入総額と大きく食い違っています（原典の丸めでは説明できない差）:");
+    for (const m of material) {
+      console.error(`  - ${m.label}: 差 ${m.diff.toLocaleString()}千円。科目の取り違え・列ズレを疑うこと`);
+    }
+    throw new Error(`Σ歳入科目≠歳入総額（丸めで説明できない差）が ${material.length} 件`);
+  }
 }
 
 // ============================================================================
