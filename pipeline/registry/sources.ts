@@ -1987,6 +1987,11 @@ export const SOURCES: SourceEntry[] = [
       revenueHeading: "歳入（款項別）",
       expenditureHeading: "歳出（款項別）",
       kanIndentMax: 2,
+      // 主な事業（同じ資料の p.13-73）。**款が付く**数少ない政令市（docs §8b・§8p-2）。
+      // p.74 は債務保証・p.77 以降が特別会計なので**ページ範囲だけで除外できる**
+      // （p.13-73 に「特別会計」の語が0件であることを実測）。
+      projectPages: { from: 13, to: 73 },
+      projectFormat: "kan-tree",
     },
   },
   {
