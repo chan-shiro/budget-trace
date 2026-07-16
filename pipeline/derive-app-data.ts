@@ -2470,6 +2470,28 @@ export const CAVEATS: Record<string, Caveat[]> = ${JSON.stringify(byCode, null, 
             `「何を・なぜ・何が要るか」だけを書いてください（pipeline/registry/roadmap.ts 冒頭のルール）`,
         );
       }
+      // 3つ目のルール「**進捗の数字をここに書かない**」も機械的に守らせる（2026-07-16）。
+      // 宣言だけで検査が無く、実際に **`why` に「全1,741市町村」と手書きされていた**
+      // （＝下の progress.muniCount と同じ値。市町村合併で片方だけ古くなる）。
+      //
+      // **数字一般を禁じない** — 「札幌は R7 だけで666件」のような**外部の事実**（未収録資料の規模）は
+      // 計画の判断材料として要る。禁じるべきは**進捗タイルと同じ数字の二重管理**だけ。
+      // → **derive が今まさに算出した値と一致する数字**だけを落とす。自己調整するので偽陽性が出ず、
+      //   実態が動けば手書きのほうが自動的に検出される。
+      for (const [n, unit] of [
+        [progress.muniCount, "市町村"],
+        [progress.budgetCount, "団体"],
+        [progress.sourceCount, "件"],
+      ] as const) {
+        for (const form of [`${n}${unit}`, `${n.toLocaleString()}${unit}`]) {
+          if (text.includes(form)) {
+            throw new Error(
+              `roadmap「${r.title}」の ${k}: 「${form}」は derive が実データから算出している進捗の数字です。` +
+                `手書きすると必ず実態とズレます（roadmap.ts 冒頭のルール2）。数字を書かずに表現してください`,
+            );
+          }
+        }
+      }
     }
   }
   const roadmapOut = `// このファイルは自動生成です。手で編集しないこと。
@@ -2563,12 +2585,72 @@ export const ROADMAP_PLAN: RoadmapItem[] = ${JSON.stringify(ROADMAP, null, 2)};
     }
   }
 
+  // ④ 年度間クロスチェーン: 連続する年度の「前年度列の合計」= 前年の「当年度の合計」
+  //
+  // **これが唯一、列の取り違えを捕まえる網**（2026-07-16 にゲート化）。validate は
+  // parsed の自己整合しか見ないので、**歳入と歳出の列を丸ごと取り違えても Σ は両側とも差0 で
+  // 素通りする**（足立で実際に起きた。あらまし R5〜R8 だけ列順が [前年度, 当年度] に反転して
+  // いたのを、収録時の手作業のクロスチェックだけが見つけた）。同じ穴は**大田 H22〜H20 の
+  // 「歳入と歳出の（1）（2）が逆」**にもあり、そこでは Σ ですら守れない
+  // （**歳入合計 = 歳出合計 は定義上いつも成立する**）。
+  //
+  // **款ごとの差は見ない** — 原典が前年度列を新体系へ組み替える（restated）のは正常で、
+  // 実測すると 44系列 125リンク中 15リンクが款レベルで動く（名古屋 R3 の職員費新設 274億・
+  // 横浜 R6 の局再編・札幌 R4 の労働費→経済費 統合・福岡 R4 の2款付け替え等）。
+  // **いずれも総額は一致する**ので、総額だけを見ればノイズ0で列の取り違えだけが落ちる。
+  //
+  // **総額が違ってよいのは、原典が別基準だと明示している場合だけ**（骨格予算＝市長選の年）。
+  // その2件は `prevBasis`（札幌 R6・R2 = 補正後）か `prevNote`（甲府 R6 = 原典の注記
+  // 「6月補正における政策的予算を含む」）を持つので、**説明が無い総額不一致だけ**を error にする。
+  {
+    // 同じ資料系列（= srcId から年度サフィックスを落としたもの）ごとに年度順で鎖を張る。
+    // registry から組む（BUDGET_SOURCES は別ブロックのスコープ）。fixture は除く。
+    const chains = new Map<string, { fy: string; srcId: string }[]>();
+    for (const s of SOURCES) {
+      if (s.fixture || !existsSync(parsedPath(s.id))) continue;
+      const m = /^(.*)-(r\d+|h\d+)$/.exec(s.id);
+      if (!m) continue;
+      const arr = chains.get(m[1]!) ?? [];
+      arr.push({ fy: m[2]!.toUpperCase(), srcId: s.id });
+      chains.set(m[1]!, arr);
+    }
+    let links = 0;
+    for (const [, years] of chains) {
+      years.sort((a, z) => fyRank(a.fy) - fyRank(z.fy));
+      for (let i = 1; i < years.length; i++) {
+        const nw = years[i]!;
+        const od = years[i - 1]!;
+        // 欠番（収録できなかった年度）はまたがない — 鎖が張れるのは連続年度だけ
+        if (fyRank(nw.fy) - fyRank(od.fy) !== 1) continue;
+        const n = anyParsedDocSchema.parse(readJson(parsedPath(nw.srcId)));
+        const o = anyParsedDocSchema.parse(readJson(parsedPath(od.srcId)));
+        if (n.docType !== "budget-book" || o.docType !== "budget-book") continue;
+        links++;
+        const explained = n.prevBasis !== "当初" || !!n.prevNote;
+        for (const [label, got, want] of [
+          ["歳入", n.prevRevenueTotal, o.revenueTotal],
+          ["歳出", n.prevExpenditureTotal, o.expenditureTotal],
+        ] as const) {
+          if (got == null || got === want) continue;
+          if (explained) continue;
+          problems.push(
+            `${nw.srcId}: ${label}の前年度列の合計 ${got.toLocaleString()} が ` +
+              `${od.srcId} の当年度合計 ${want.toLocaleString()} と違います（差 ${(got - want).toLocaleString()}）。` +
+              `列の取り違え（足立型の列順反転・大田型の歳入歳出逆）を疑うこと。` +
+              `原典が別基準（骨格予算等）なら parserOptions の prevBasis / prevNote で明示する`,
+          );
+        }
+      }
+    }
+    if (problems.length === 0) console.log(`  年度間クロスチェーン: ${links} リンク（列の取り違えなし）`);
+  }
+
   if (problems.length > 0) {
     console.error("✗ 生成物どうしの整合チェックで問題が見つかりました:");
     for (const p of problems) console.error(`  - ${p}`);
     throw new Error(`生成物の整合チェックに失敗（${problems.length}件）`);
   }
   console.log(
-    `✓ 生成物どうしの整合チェック（/coverage の件数 = 配信シャードの件数 / 事業報告の収録漏れ / URL スラグ）`,
+    `✓ 生成物どうしの整合チェック（/coverage の件数 = 配信シャードの件数 / 事業報告の収録漏れ / URL スラグ / 年度間クロスチェーン）`,
   );
 }
