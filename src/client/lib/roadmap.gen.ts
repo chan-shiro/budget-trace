@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 42,
+  "budgetCount": 43,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 216,
-  "fileCount": 341,
-  "archivedCount": 206,
+  "sourceCount": 223,
+  "fileCount": 348,
+  "archivedCount": 213,
   "licenseOpen": 19,
-  "licensePermission": 139,
+  "licensePermission": 146,
   "licenseUnverified": 58,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -53,6 +53,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "目黒区",
       "code": "131105",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "中野区",
+      "code": "131148",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },

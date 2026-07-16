@@ -889,6 +889,41 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.adachi.tokyo.jp/documents/46120/02aramashi_1.pdf",
     "license": "ホームページに掲載しているコンテンツ（文章、イラスト、ロゴ、写真、動画、その他のすべての情報）は著作権の対象となっています。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
   },
+  "/sources/nakano-yosangaiyou-r8/R08_2026gaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tokyo-nakano.lg.jp/kusei/zaisei/yosan/tosho.files/R08_2026gaiyo.pdf",
+    "license": "中野区ホームページ上の文書や画像等のファイルおよび、その内容に関する著作権は、原則として中野区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、当ホームページ上の文書や画像等を無断で二次利用することを禁じます。当ホームページの内容の利用を希望する場合は、事前に広報係にご相談ください。"
+  },
+  "/sources/nakano-yosangaiyou-r7/R7-2025gaiyousyuusei2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tokyo-nakano.lg.jp/kusei/zaisei/yosan/tosho.files/R7-2025gaiyousyuusei2.pdf",
+    "license": "中野区ホームページ上の文書や画像等のファイルおよび、その内容に関する著作権は、原則として中野区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、当ホームページ上の文書や画像等を無断で二次利用することを禁じます。当ホームページの内容の利用を希望する場合は、事前に広報係にご相談ください。"
+  },
+  "/sources/nakano-yosangaiyou-r6/R6-2024gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tokyo-nakano.lg.jp/kusei/zaisei/yosan/tosho.files/R6-2024gaiyou.pdf",
+    "license": "中野区ホームページ上の文書や画像等のファイルおよび、その内容に関する著作権は、原則として中野区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、当ホームページ上の文書や画像等を無断で二次利用することを禁じます。当ホームページの内容の利用を希望する場合は、事前に広報係にご相談ください。"
+  },
+  "/sources/nakano-yosangaiyou-r5/r5-2023gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tokyo-nakano.lg.jp/kusei/zaisei/yosan/tosho.files/r5-2023gaiyou.pdf",
+    "license": "中野区ホームページ上の文書や画像等のファイルおよび、その内容に関する著作権は、原則として中野区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、当ホームページ上の文書や画像等を無断で二次利用することを禁じます。当ホームページの内容の利用を希望する場合は、事前に広報係にご相談ください。"
+  },
+  "/sources/nakano-yosangaiyou-r4/R4-2022gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tokyo-nakano.lg.jp/kusei/zaisei/yosan/tosho.files/R4-2022gaiyou.pdf",
+    "license": "中野区ホームページ上の文書や画像等のファイルおよび、その内容に関する著作権は、原則として中野区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、当ホームページ上の文書や画像等を無断で二次利用することを禁じます。当ホームページの内容の利用を希望する場合は、事前に広報係にご相談ください。"
+  },
+  "/sources/nakano-yosangaiyou-r3/R3-2021gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tokyo-nakano.lg.jp/kusei/zaisei/yosan/tosho.files/R3-2021gaiyou.pdf",
+    "license": "中野区ホームページ上の文書や画像等のファイルおよび、その内容に関する著作権は、原則として中野区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、当ホームページ上の文書や画像等を無断で二次利用することを禁じます。当ホームページの内容の利用を希望する場合は、事前に広報係にご相談ください。"
+  },
+  "/sources/nakano-yosangaiyou-r2/R2-2020gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tokyo-nakano.lg.jp/kusei/zaisei/yosan/tosho.files/R2-2020gaiyou.pdf",
+    "license": "中野区ホームページ上の文書や画像等のファイルおよび、その内容に関する著作権は、原則として中野区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、当ホームページ上の文書や画像等を無断で二次利用することを禁じます。当ホームページの内容の利用を希望する場合は、事前に広報係にご相談ください。"
+  },
   "/sources/okayama-yosangaiyou-r8/R8tousyogaiyou.pdf": {
     "mode": "origin",
     "href": "https://www.city.okayama.jp/shisei/cmsfiles/contents/0000075/75851/R8tousyogaiyou.pdf",
