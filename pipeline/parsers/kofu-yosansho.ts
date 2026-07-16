@@ -129,9 +129,10 @@ interface Options {
    * - "bullets"（甲府 R2・R3: ●事業名…金額 の箇条書き。款・連番なし）
    * - "coded-sections"（豊川: N款 費目 / 【課】/ n 事業名［款項目事業コード］当年度 前年度）
    * - "marked-bullets"（和泉: 拡/新 ◎ 事業名 … 予算額 千円 の重点事業リスト。款・前年度なし）
+   * - "kan-tree"（相模原: 款→項→目 の木に `○ 事業名 事業費 財源内訳 説明`。**款が付く**・座標で親と内訳を分ける）
    * - "table-lines"（山口: 事業名 予算額 内容 担当課 の事業別表。施策見出しつき・款/前年度なし）
    */
-  projectFormat?: "table" | "bullets" | "coded-sections" | "marked-bullets" | "table-lines" | "pref-bullets" | "dept-bullets" | "coord-table";
+  projectFormat?: "table" | "bullets" | "coded-sections" | "marked-bullets" | "table-lines" | "pref-bullets" | "dept-bullets" | "coord-table" | "kan-tree";
   /**
    * 表形式の列境界（X座標）。PDF の座標系が年度で違う場合に上書きする
    * （R5 の WARP 回収版は全体に右寄りのスケール）。省略時は R8 実測値
@@ -1237,6 +1238,135 @@ function parseProjectsCoordTable(
   return facts;
 }
 
+// ---- 主な事業「kan-tree」（相模原 R8）--------------------------------------
+// 款→項→目 の木の中に事業が並ぶ様式。**政令市で款が付く数少ない主な事業**
+// （§8b の「政令市はどの市も款が紐付かない」が覆る）。
+//
+// **`-layout` の文字列では親と内訳を区別できない** — 款項目の文字が前に詰まるので
+// 同じ階層の行が別の列に見える（親の `○` が表示列27、内訳の `○` が22 に来るなど逆転する）。
+// **列の x（pt）を実測して使う**（-tsv。全ページで安定）:
+//   款     番号 47.8 / 名前 56.4      親事業  マーカー 172.6 / 名前 187.1
+//   項     65.1 / 73.7               内訳    マーカー 187.1 / 名前 201.6
+//   目     82.3 / 91.0               事業費  右揃え xMax 398
+//
+// **新規は `㊟新`（丸囲みの新）で、`○`/`・` を置き換える**。`-tsv` では ○+●+新 の3語に割れる
+// ので、マーカーではなく**事業名の x** で階層を決める。
+//
+// **債務負担行為は歳入歳出予算とは別ではなく、事業費の内訳**（2026-07-16 実測）:
+//   `○   総合計画策定経費              60,449`   ← 親（名前 x=187.1）
+//   `㊟新 総合計画策定経費（債務負担行為） 50,204`  ← 内訳（名前 x=201.6）
+//   説明欄に「限度額 71,082千円 / 令和8年度の支出見込額 50,204 / 令和9年度の支出予定額 20,878」
+//   ＝ **R8 ぶんの 50,204 は親の 60,449 に含まれる**。`・`（細事業）も同じく親の内訳
+//   （p.19 の文化施設改修事業費は親 1,004,475 / 内訳 863,103 で**一般財源 95,267 が親子で同一**）。
+// → **親だけを採る**。債務負担行為ぶんは親の事業費に自動的に含まれ、二重計上にならない。
+//   翌年度ぶん（上の例なら 20,878）は R8 の歳入歳出予算に無い＝別物だが、説明欄の自由文なので未収録。
+function parseProjectsKanTree(
+  filePath: string,
+  filename: string,
+  from: number,
+  to: number,
+): BudgetProjectFact[] {
+  const KAN_NAME_X = [55, 62] as const; // 款名（ページで 56.4〜59.7 と動く）
+  const OWN_NAME_X = [184, 192] as const; // 親事業の事業名
+  const SUB_NAME_X = [198, 206] as const; // 内訳の事業名（親に含まれるので採らない）
+  const OWN_MARK_X = [168, 178] as const; // 親事業のマーカー（○ / ㊟新 の丸）
+  const AMOUNT_XMAX = [390, 402] as const; // 事業費（右揃え）
+  // **`○`(U+25CB) と `〇`(U+3007) が混在する**（親のマーカー列に 342件 と 7件・実測）。
+  // 北九州 §8j の廃止款と同じ罠で、片方だけ数えると件数が合わない。
+  const MARKS = new Set(["○", "〇", "・", "●", "新", "◎"]);
+  const inX = (v: number, r: readonly [number, number]) => v >= r[0] && v <= r[1];
+
+  const out: BudgetProjectFact[] = [];
+  let kan: string | null = null;
+  let expected = 0;
+  for (let page = from; page <= to; page++) {
+    const ws = pdfPageWords(filePath, page);
+    if (ws.length === 0) continue;
+    // 行にまとめる（y が 4pt 以内）
+    const rows: Word[][] = [];
+    for (const w of [...ws].sort((a, b) => a.y - b.y || a.x - b.x)) {
+      const last = rows[rows.length - 1];
+      if (last && Math.abs(last[0]!.y - w.y) <= 4) last.push(w);
+      else rows.push([w]);
+    }
+    let open: BudgetProjectFact | null = null; // 名前が次行へ続く親事業
+    for (const row of rows) {
+      expected += row.filter((w) => (w.text === "○" || w.text === "〇") && inX(w.x, OWN_MARK_X)).length;
+      // 表ヘッダ（`款 項 目 / 事 業 名 / 事業費 / 財源内訳`）は毎ページ繰り返される。
+      // ヘッダの「事」は x=194.2 で親（187）とも内訳（201）とも違うため、除外しないと
+      // 下の階層チェックが必ず throw する（＝ゲートが先に教えてくれた）。
+      // **ヘッダの x はページで微妙に動く**（款が 56.5 のページと 59.7 のページがある）ので
+      // 位置ではなく「款・項・目 が同じ行に揃う」ことで判定する。
+      const t = new Set(row.map((w) => w.text));
+      if (t.has("款") && t.has("項") && t.has("目")) continue;
+      const kanW = row.find((w) => inX(w.x, KAN_NAME_X) && hasCJKChars(w.text));
+      if (kanW) {
+        kan = kanW.text;
+        open = null;
+        continue;
+      }
+      // 事業名の語（マーカーは除く）。x で親（187）と内訳（201）を分ける
+      const nameW = row.filter((w) => !MARKS.has(w.text) && w.x >= 180 && w.x <= 210);
+      if (nameW.length === 0) {
+        open = null;
+        continue;
+      }
+      // **中黒が名前に密着する行がある**（`・上溝学校給食センター` が1語・実測3件）。
+      // その語は内訳のマーカー位置（x=187）から始まるので、x だけ見ると親に見える。
+      if (/^[・○〇]/.test(nameW[0]!.text)) {
+        open = null; // 内訳
+        continue;
+      }
+      const x = nameW[0]!.x;
+      if (inX(x, SUB_NAME_X)) {
+        open = null; // 内訳は親の事業費に含まれるので採らない
+        continue;
+      }
+      if (!inX(x, OWN_NAME_X)) {
+        throw new Error(
+          `${filename} p.${page}: 事業名の x=${x.toFixed(1)} が親（${OWN_NAME_X.join("-")}）にも` +
+            `内訳（${SUB_NAME_X.join("-")}）にも当たりません: 「${nameW.map((w) => w.text).join("")}」。` +
+            `階層を推測すると二重計上か取りこぼしになるので組みません`,
+        );
+      }
+      const name = nameW.map((w) => w.text).join("");
+      const amtW = row.find((w) => /^[\d,]+$/.test(w.text) && inX(w.x + w.w, AMOUNT_XMAX));
+      if (!amtW) {
+        // 事業名が次行へ折返す（`スポーツ施設維持管理計画策定` / `経費`・`（債務負担行為）`）
+        if (open) open.name += name;
+        continue;
+      }
+      if (!kan) continue;
+      const line: BudgetProjectFact = {
+        kan,
+        no: null,
+        // ㊟新 は ○+●+新 に割れる。親レベルの `新` があれば新規
+        kubun: row.some((w) => w.text === "新" && w.x < 180) ? "新規" : null,
+        name,
+        budgetBookName: null,
+        amount: toAmount(amtW.text),
+        description: "",
+        basicGoal: "",
+        shisaku: "",
+        locator: { file: filename, page },
+      };
+      out.push(line);
+      open = line;
+    }
+  }
+  // **親のマーカー（○）の数と、拾えた事業の数が一致すること**。
+  // 一致を要求しないと、様式の変種を**黙って落とす**（座標で切る前は新規の親事業を
+  // 36件まるごと落としていた）。
+  if (out.length !== expected) {
+    throw new Error(
+      `${filename} p.${from}-${to}: 親事業のマーカーが ${expected} 件あるのに ${out.length} 件しか` +
+        `組めませんでした（差 ${expected - out.length}）`,
+    );
+  }
+  if (out.length === 0) throw new Error(`${filename} p.${from}-${to}: 事業が1件も抽出できませんでした`);
+  return out;
+}
+
 export function parseKofuYosansho(
   files: { path: string; filename: string }[],
   source: SourceEntry,
@@ -1310,6 +1440,8 @@ export function parseKofuYosansho(
               ? parseProjectsPrefBullets(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
               : projFmt === "dept-bullets"
                 ? parseProjectsDeptBullets(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
+                : projFmt === "kan-tree"
+                  ? parseProjectsKanTree(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
                 : projFmt === "coord-table"
                   ? parseProjectsCoordTable(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
                   : parseProjectPages(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to, opts.projectColumns, opts.projectRowBanding ?? "midpoint")

@@ -3,7 +3,7 @@
   "sourceId": "sagamihara-yosansho-r8",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-07-15T18:58:29.520Z",
+  "parsedAt": "2026-07-16T01:09:44.745Z",
   "unit": "thousandYen",
   "fiscalYear": "R8",
   "account": "一般会計",
@@ -440,6 +440,5258 @@
       "locator": {
         "file": "20260216_shuyou_setumei.pdf",
         "page": 7
+      }
+    }
+  ],
+  "projects": [
+    {
+      "kan": "議会費",
+      "no": null,
+      "kubun": null,
+      "name": "さがみはら市議会だより発行費",
+      "budgetBookName": null,
+      "amount": 17280,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "議会費",
+      "no": null,
+      "kubun": null,
+      "name": "議会事務運営費",
+      "budgetBookName": null,
+      "amount": 123263,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "議会費",
+      "no": null,
+      "kubun": null,
+      "name": "本会議場等改修事業（継続費）",
+      "budgetBookName": null,
+      "amount": 134717,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "防災対策事業",
+      "budgetBookName": null,
+      "amount": 3199,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "総務事務センター運営経費",
+      "budgetBookName": null,
+      "amount": 175745,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "人材育成事業費",
+      "budgetBookName": null,
+      "amount": 36186,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "情報公開・個人情報保護制度等運営費",
+      "budgetBookName": null,
+      "amount": 9440,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "公文書館運営費",
+      "budgetBookName": null,
+      "amount": 825,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "デジタルアーカイブ推進経費",
+      "budgetBookName": null,
+      "amount": 4215,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "広報紙等発行費",
+      "budgetBookName": null,
+      "amount": 162420,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "視聴覚広報費",
+      "budgetBookName": null,
+      "amount": 35542,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "シティプロモーション推進事業",
+      "budgetBookName": null,
+      "amount": 33232,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "ふるさと納税運営事業",
+      "budgetBookName": null,
+      "amount": 547167,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "シビックプライド向上事業",
+      "budgetBookName": null,
+      "amount": 5660,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "銀河連邦・宇宙のまち推進事業",
+      "budgetBookName": null,
+      "amount": 18037,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "本庁舎等整備事業費",
+      "budgetBookName": null,
+      "amount": 79076,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "総合計画推進経費",
+      "budgetBookName": null,
+      "amount": 13926,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "総合計画策定経費",
+      "budgetBookName": null,
+      "amount": 60449,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "総合戦略推進経費（債務負担行為）",
+      "budgetBookName": null,
+      "amount": 22470,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "ＳＤＧｓ推進事業",
+      "budgetBookName": null,
+      "amount": 21557,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "公共施設マネジメント推進経費",
+      "budgetBookName": null,
+      "amount": 18797,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "男女共同参画政策経費",
+      "budgetBookName": null,
+      "amount": 7882,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "男女共同参画啓発経費",
+      "budgetBookName": null,
+      "amount": 2647,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "男女共同参画推進センター施設管理運営費",
+      "budgetBookName": null,
+      "amount": 38326,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "人権啓発経費",
+      "budgetBookName": null,
+      "amount": 13445,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "各種スポーツ大会等実施事業",
+      "budgetBookName": null,
+      "amount": 93365,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "ホームタウンチーム等連携・支援事業",
+      "budgetBookName": null,
+      "amount": 2401,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "障害者スポーツ理解促進事業",
+      "budgetBookName": null,
+      "amount": 1500,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "サイクルイベント推進事業",
+      "budgetBookName": null,
+      "amount": 49336,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "スポーツ推進在り方検討事業",
+      "budgetBookName": null,
+      "amount": 31880,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "スポーツ施設等改修事業",
+      "budgetBookName": null,
+      "amount": 3708750,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "総合水泳場改修事業（継続費）",
+      "budgetBookName": null,
+      "amount": 1397880,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "スポーツ施設等整備事業",
+      "budgetBookName": null,
+      "amount": 12208,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "スポーツ施設維持管理計画策定経費",
+      "budgetBookName": null,
+      "amount": 265,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "市民文化創造事業",
+      "budgetBookName": null,
+      "amount": 32014,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "文化鑑賞推進事業",
+      "budgetBookName": null,
+      "amount": 39702,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "文化施設改修事業費",
+      "budgetBookName": null,
+      "amount": 1004475,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "アートラボはしもと再整備事業",
+      "budgetBookName": null,
+      "amount": 840785,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "文化会館改修事業（継続費）",
+      "budgetBookName": null,
+      "amount": 667764,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "国際交流事業",
+      "budgetBookName": null,
+      "amount": 49911,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "国際交流ラウンジ事業",
+      "budgetBookName": null,
+      "amount": 16147,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "平和思想普及啓発事業",
+      "budgetBookName": null,
+      "amount": 2335,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "基地対策事業",
+      "budgetBookName": null,
+      "amount": 15329,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "情報システム業務費",
+      "budgetBookName": null,
+      "amount": 6089118,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "防災対策推進事業",
+      "budgetBookName": null,
+      "amount": 111901,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "自主防災組織等活動支援事業",
+      "budgetBookName": null,
+      "amount": 109195,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "防災設備等整備事業",
+      "budgetBookName": null,
+      "amount": 762693,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "自治会活動助成事業",
+      "budgetBookName": null,
+      "amount": 170882,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "自治会集会所建設等助成事業",
+      "budgetBookName": null,
+      "amount": 25188,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "市民健康文化センター施設管理運営費",
+      "budgetBookName": null,
+      "amount": 480864,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "市民協働推進事業",
+      "budgetBookName": null,
+      "amount": 34923,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "まちづくりセンター等改修事業",
+      "budgetBookName": null,
+      "amount": 736423,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "城山総合事務所周辺公共施設再編整備事業",
+      "budgetBookName": null,
+      "amount": 72205,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "津久井総合事務所周辺公共施設再編整備事業",
+      "budgetBookName": null,
+      "amount": 47577,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "南区合同庁舎改修事業",
+      "budgetBookName": null,
+      "amount": 8189,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "区政推進事業",
+      "budgetBookName": null,
+      "amount": 423599,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 23
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "協働まちづくり推進費",
+      "budgetBookName": null,
+      "amount": 5400,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 23
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "世論調査等広聴費",
+      "budgetBookName": null,
+      "amount": 3126,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 23
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "市民の声等広聴費",
+      "budgetBookName": null,
+      "amount": 19850,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 23
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "コールセンター運営経費",
+      "budgetBookName": null,
+      "amount": 274418,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 24
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "消費者啓発事業",
+      "budgetBookName": null,
+      "amount": 1249,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 24
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "消費生活推進事業",
+      "budgetBookName": null,
+      "amount": 1130,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 24
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "消費者行政強化事業",
+      "budgetBookName": null,
+      "amount": 6724,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 24
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "戸籍住民事務運営費",
+      "budgetBookName": null,
+      "amount": 493698,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 24
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "安全・安心まちづくり推進協議会補助金",
+      "budgetBookName": null,
+      "amount": 15075,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 24
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "ＬＥＤ防犯灯・街区表示板整備管理事業",
+      "budgetBookName": null,
+      "amount": 139488,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 24
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "防犯交通安全対策事業",
+      "budgetBookName": null,
+      "amount": 3472,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 24
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "地域防犯活動支援事業",
+      "budgetBookName": null,
+      "amount": 12283,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 24
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "犯罪被害者等支援事業",
+      "budgetBookName": null,
+      "amount": 4987,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 24
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "統一地方選挙経費",
+      "budgetBookName": null,
+      "amount": 108274,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 25
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "人事委員会運営費",
+      "budgetBookName": null,
+      "amount": 49475,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 25
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "外部監査経費",
+      "budgetBookName": null,
+      "amount": 15299,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 25
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "民生（児童）委員活動費",
+      "budgetBookName": null,
+      "amount": 105628,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 26
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "社会福祉協議会補助金",
+      "budgetBookName": null,
+      "amount": 423060,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 26
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "地域福祉推進事業",
+      "budgetBookName": null,
+      "amount": 190935,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 26
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "成年後見制度利用促進事業",
+      "budgetBookName": null,
+      "amount": 8584,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 26
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "災害援護事業",
+      "budgetBookName": null,
+      "amount": 6685,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 26
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "慰霊祭開催費",
+      "budgetBookName": null,
+      "amount": 903,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 26
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "戦争犠牲者援護費",
+      "budgetBookName": null,
+      "amount": 81137,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 26
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "国民年金事務運営費",
+      "budgetBookName": null,
+      "amount": 55892,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 26
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "障害児者自立支援給付",
+      "budgetBookName": null,
+      "amount": 25679195,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 27
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "共生社会推進事業",
+      "budgetBookName": null,
+      "amount": 28130,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 27
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "地域生活支援事業",
+      "budgetBookName": null,
+      "amount": 1318938,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 27
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "障害児者援護等事業",
+      "budgetBookName": null,
+      "amount": 3507132,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 28
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "障害福祉人材確保定着育成事業",
+      "budgetBookName": null,
+      "amount": 4600,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 28
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "障害者福祉手当等支給事業",
+      "budgetBookName": null,
+      "amount": 595407,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 28
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "障害者施設設置運営等対策事業",
+      "budgetBookName": null,
+      "amount": 167524,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 28
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "障害者更生相談所運営費",
+      "budgetBookName": null,
+      "amount": 4299,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 28
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "後期高齢者医療広域連合負担金",
+      "budgetBookName": null,
+      "amount": 7423270,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 28
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "介護人材確保定着育成事業",
+      "budgetBookName": null,
+      "amount": 28863,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 28
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "高齢者等移動支援事業",
+      "budgetBookName": null,
+      "amount": 42808,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 29
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "シルバー人材センター運営支援事業",
+      "budgetBookName": null,
+      "amount": 83656,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 29
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "老人クラブ連合会運営支援事業",
+      "budgetBookName": null,
+      "amount": 22647,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 29
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "敬老事業",
+      "budgetBookName": null,
+      "amount": 54738,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 29
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "認知症総合対策事業",
+      "budgetBookName": null,
+      "amount": 31580,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 29
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "地域支援事業補完事業",
+      "budgetBookName": null,
+      "amount": 148416,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 29
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "地域支援事業費",
+      "budgetBookName": null,
+      "amount": 1104140,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 29
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "高齢者訪問指導事業",
+      "budgetBookName": null,
+      "amount": 423,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 30
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "陽光園運営費",
+      "budgetBookName": null,
+      "amount": 81457,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 30
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "障害者支援センター松が丘園整備事業（継続費）",
+      "budgetBookName": null,
+      "amount": 38959,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 30
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "子育て応援推進事業",
+      "budgetBookName": null,
+      "amount": 10291,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 30
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "こども・若者業務センター運営費",
+      "budgetBookName": null,
+      "amount": 292310,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 30
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "子育て広場事業",
+      "budgetBookName": null,
+      "amount": 230534,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 31
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "地域子育て支援活動促進事業",
+      "budgetBookName": null,
+      "amount": 14359,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 31
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "児童手当",
+      "budgetBookName": null,
+      "amount": 13123030,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 31
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "認定保育室補助金",
+      "budgetBookName": null,
+      "amount": 177502,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 31
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "こども医療費助成事業",
+      "budgetBookName": null,
+      "amount": 3019770,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 31
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "ファミリー・サポート・センター事業",
+      "budgetBookName": null,
+      "amount": 28766,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 31
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "子育て世帯訪問支援事業",
+      "budgetBookName": null,
+      "amount": 14929,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 31
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "児童福祉事務運営費",
+      "budgetBookName": null,
+      "amount": 151974,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 31
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "里親制度推進事業",
+      "budgetBookName": null,
+      "amount": 58692,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 32
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "児童相談所運営費",
+      "budgetBookName": null,
+      "amount": 308923,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 32
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "児童相談所整備事業",
+      "budgetBookName": null,
+      "amount": 44080,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 32
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "障害児施設措置費・給付費",
+      "budgetBookName": null,
+      "amount": 7513501,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 32
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "光が丘地区複合施設整備事業",
+      "budgetBookName": null,
+      "amount": 121123,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 32
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "児童扶養手当",
+      "budgetBookName": null,
+      "amount": 2077802,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 33
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "ひとり親家庭等自立支援事業",
+      "budgetBookName": null,
+      "amount": 107843,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 33
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "ひとり親家庭等生活向上事業",
+      "budgetBookName": null,
+      "amount": 43479,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 33
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "ひとり親家庭等医療費助成事業",
+      "budgetBookName": null,
+      "amount": 339926,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 33
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "教育・保育施設等給付費",
+      "budgetBookName": null,
+      "amount": 26318915,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 33
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "教育・保育施設等助成費",
+      "budgetBookName": null,
+      "amount": 5672876,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 34
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "施設運営費",
+      "budgetBookName": null,
+      "amount": 278491,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 35
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "相原保育園整備事業（継続費）",
+      "budgetBookName": null,
+      "amount": 171901,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 35
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "保育所園舎改修等事業",
+      "budgetBookName": null,
+      "amount": 54380,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 35
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "児童館管理運営費",
+      "budgetBookName": null,
+      "amount": 45629,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 35
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "朝の居場所づくり事業",
+      "budgetBookName": null,
+      "amount": 4885,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 35
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "放課後子ども教室事業",
+      "budgetBookName": null,
+      "amount": 3572,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 35
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "放課後児童健全育成事業",
+      "budgetBookName": null,
+      "amount": 1276944,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 35
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "児童厚生施設整備改修事業",
+      "budgetBookName": null,
+      "amount": 476533,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 35
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "鹿島台こどもセンター改修事業（継続費）",
+      "budgetBookName": null,
+      "amount": 25401,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 35
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "青少年健全育成環境づくり事業",
+      "budgetBookName": null,
+      "amount": 3150,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 36
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "青少年応援推進事業",
+      "budgetBookName": null,
+      "amount": 1064,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 36
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "青少年指導委員活動推進費",
+      "budgetBookName": null,
+      "amount": 13829,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 36
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "青少年関係団体補助金",
+      "budgetBookName": null,
+      "amount": 4064,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 36
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "子どもの遊び場事業",
+      "budgetBookName": null,
+      "amount": 4072,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 36
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "青少年学習センター活動費",
+      "budgetBookName": null,
+      "amount": 13876,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 36
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "子ども若者育成支援推進事業",
+      "budgetBookName": null,
+      "amount": 16282,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 36
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "生活保護法施行事務費",
+      "budgetBookName": null,
+      "amount": 350270,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 36
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "生活困窮者自立支援事業",
+      "budgetBookName": null,
+      "amount": 79433,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 36
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "生活保護費",
+      "budgetBookName": null,
+      "amount": 25913934,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 37
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "防災対策事業",
+      "budgetBookName": null,
+      "amount": 21771,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 38
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "急病診療事業",
+      "budgetBookName": null,
+      "amount": 2550099,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 38
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "地域医療事業",
+      "budgetBookName": null,
+      "amount": 334248,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 38
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "相模原赤十字病院建設費借入償還金補助金（債務負担行為）",
+      "budgetBookName": null,
+      "amount": 80960,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 39
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "看護職員確保対策事業",
+      "budgetBookName": null,
+      "amount": 165743,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 39
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "総合診療医確保対策事業",
+      "budgetBookName": null,
+      "amount": 104401,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 39
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "市民健康づくり運動推進事業",
+      "budgetBookName": null,
+      "amount": 8114,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 39
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "健康づくり対策事業",
+      "budgetBookName": null,
+      "amount": 5089,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 40
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "献血等推進事業",
+      "budgetBookName": null,
+      "amount": 1568,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 40
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "口腔衛生事業費",
+      "budgetBookName": null,
+      "amount": 4112,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 40
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "食育・栄養改善推進事業費",
+      "budgetBookName": null,
+      "amount": 2761,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 40
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "医事・薬事等指導費",
+      "budgetBookName": null,
+      "amount": 850,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 40
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "健康教育事業",
+      "budgetBookName": null,
+      "amount": 284,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 40
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "運動習慣支援事業",
+      "budgetBookName": null,
+      "amount": 2500,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 40
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "成人健康診査事業",
+      "budgetBookName": null,
+      "amount": 1986659,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 40
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "がん患者サポート事業",
+      "budgetBookName": null,
+      "amount": 9175,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 41
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "生活習慣病対策事業",
+      "budgetBookName": null,
+      "amount": 10530,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 41
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "後期高齢者保健事業",
+      "budgetBookName": null,
+      "amount": 477944,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 41
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "母子健康手帳交付事業",
+      "budgetBookName": null,
+      "amount": 6543,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 41
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "妊婦健康診査事業",
+      "budgetBookName": null,
+      "amount": 371985,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 41
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "産前・産後支援事業",
+      "budgetBookName": null,
+      "amount": 531313,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 41
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "乳幼児健康診査事業",
+      "budgetBookName": null,
+      "amount": 231321,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 41
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "結核対策事業",
+      "budgetBookName": null,
+      "amount": 33491,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 42
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "感染症予防対策事業",
+      "budgetBookName": null,
+      "amount": 15501,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 42
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "感染症発生動向調査事業",
+      "budgetBookName": null,
+      "amount": 8419,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 42
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "性感染症対策事業",
+      "budgetBookName": null,
+      "amount": 10951,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 42
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "予防接種事業",
+      "budgetBookName": null,
+      "amount": 3163157,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 42
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "難病対策事業",
+      "budgetBookName": null,
+      "amount": 1814693,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 42
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "精神保健相談指導等事業",
+      "budgetBookName": null,
+      "amount": 34549,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 42
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "精神障害者医療援護事業",
+      "budgetBookName": null,
+      "amount": 2255237,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 43
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "地域児童精神科医療寄附講座開設事業（債務負担行為）",
+      "budgetBookName": null,
+      "amount": 28000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 43
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "食の安全・安心確保対策事業",
+      "budgetBookName": null,
+      "amount": 5135,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 43
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "環境衛生事業",
+      "budgetBookName": null,
+      "amount": 1427,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 43
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "動物愛護事業",
+      "budgetBookName": null,
+      "amount": 56931,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 43
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "衛生検査研究費",
+      "budgetBookName": null,
+      "amount": 116322,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 44
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "衛生研究所再整備事業",
+      "budgetBookName": null,
+      "amount": 16940,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 44
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "施設改修事業費",
+      "budgetBookName": null,
+      "amount": 14372,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 44
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "施設改修事業費（継続費）",
+      "budgetBookName": null,
+      "amount": 33163,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 44
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "新斎場整備事業",
+      "budgetBookName": null,
+      "amount": 84004,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 44
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "循環型社会普及事業",
+      "budgetBookName": null,
+      "amount": 104832,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 44
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "資源回収事業",
+      "budgetBookName": null,
+      "amount": 4368903,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 44
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "不法投棄対策事業",
+      "budgetBookName": null,
+      "amount": 11448,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 45
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "ごみ収集業務経費",
+      "budgetBookName": null,
+      "amount": 1080920,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 45
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "浄化槽清掃助成事業",
+      "budgetBookName": null,
+      "amount": 95574,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 45
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "旧東清掃事業所解体事業（継続費）",
+      "budgetBookName": null,
+      "amount": 244000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 45
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "北清掃工場建替整備事業",
+      "budgetBookName": null,
+      "amount": 16520,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 45
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "地球温暖化対策推進事業",
+      "budgetBookName": null,
+      "amount": 36985,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 46
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "再生可能エネルギー利用設備等設置促進事業",
+      "budgetBookName": null,
+      "amount": 316411,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 46
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "次世代クリーンエネルギー自動車等普及促進事業",
+      "budgetBookName": null,
+      "amount": 3506,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 46
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "中小規模事業者省エネルギー対策等推進事業",
+      "budgetBookName": null,
+      "amount": 64343,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 46
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "環境保全啓発費",
+      "budgetBookName": null,
+      "amount": 1721,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 46
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "協働事業提案制度事業",
+      "budgetBookName": null,
+      "amount": 2200,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 46
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "環境監視測定費",
+      "budgetBookName": null,
+      "amount": 66647,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 46
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "常時監視測定局管理運営費",
+      "budgetBookName": null,
+      "amount": 31913,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 47
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "合併処理浄化槽設置補助事業",
+      "budgetBookName": null,
+      "amount": 4291,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 47
+      }
+    },
+    {
+      "kan": "労働費",
+      "no": null,
+      "kubun": null,
+      "name": "雇用対策事業",
+      "budgetBookName": null,
+      "amount": 78957,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 48
+      }
+    },
+    {
+      "kan": "労働費",
+      "no": null,
+      "kubun": null,
+      "name": "勤労者福祉事業",
+      "budgetBookName": null,
+      "amount": 134057,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 48
+      }
+    },
+    {
+      "kan": "労働費",
+      "no": null,
+      "kubun": null,
+      "name": "勤労者総合福祉センター改修事業（継続費）",
+      "budgetBookName": null,
+      "amount": 270384,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 48
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "認定農業者育成事業",
+      "budgetBookName": null,
+      "amount": 22550,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 49
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "営農対策事業",
+      "budgetBookName": null,
+      "amount": 46039,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 49
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "農業後継者・担い手確保対策事業",
+      "budgetBookName": null,
+      "amount": 55930,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 49
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "地場農産物ブランド化促進事業",
+      "budgetBookName": null,
+      "amount": 2280,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 49
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "環境保全型農業推進事業",
+      "budgetBookName": null,
+      "amount": 6072,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 49
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "畜産振興対策事業",
+      "budgetBookName": null,
+      "amount": 39119,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 49
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "農道等整備事業",
+      "budgetBookName": null,
+      "amount": 48179,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 49
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "水源の森林づくり事業",
+      "budgetBookName": null,
+      "amount": 16768,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 50
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "さがみはら森林ビジョン推進事業",
+      "budgetBookName": null,
+      "amount": 16398,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 50
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "市有林施業管理事業",
+      "budgetBookName": null,
+      "amount": 67055,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 50
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "中山間地域対策事業",
+      "budgetBookName": null,
+      "amount": 2250,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 50
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "林道復旧事業",
+      "budgetBookName": null,
+      "amount": 124938,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 50
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "中心市街地活性化事業",
+      "budgetBookName": null,
+      "amount": 2867,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 51
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "商店街振興支援事業",
+      "budgetBookName": null,
+      "amount": 52348,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 51
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "新事業創出促進事業",
+      "budgetBookName": null,
+      "amount": 139343,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 51
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "工業集積促進事業",
+      "budgetBookName": null,
+      "amount": 397219,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 51
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "中小企業経営安定対策事業",
+      "budgetBookName": null,
+      "amount": 12318751,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 51
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "中小企業経営革新支援事業",
+      "budgetBookName": null,
+      "amount": 126653,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 51
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "市民まつり開催経費",
+      "budgetBookName": null,
+      "amount": 35540,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 52
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "観光宣伝事業費",
+      "budgetBookName": null,
+      "amount": 13371,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 52
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "魅力創出・発信事業",
+      "budgetBookName": null,
+      "amount": 55484,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 52
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "観光施設整備事業",
+      "budgetBookName": null,
+      "amount": 99572,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 52
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "木質バイオマスボイラー設備導入事業（継続費）",
+      "budgetBookName": null,
+      "amount": 298950,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 52
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "観光事業補助金",
+      "budgetBookName": null,
+      "amount": 41504,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 52
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "地域活性化イベント事業補助金",
+      "budgetBookName": null,
+      "amount": 9253,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 52
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "観光協会助成事業",
+      "budgetBookName": null,
+      "amount": 73998,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 52
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "新相模原市観光振興計画推進事業",
+      "budgetBookName": null,
+      "amount": 5599,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 52
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "道路境界確定事業",
+      "budgetBookName": null,
+      "amount": 77302,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 53
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "地籍調査事業",
+      "budgetBookName": null,
+      "amount": 21512,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 53
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "道路維持管理経費",
+      "budgetBookName": null,
+      "amount": 5340460,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 53
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "交通安全施設整備事業",
+      "budgetBookName": null,
+      "amount": 451097,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 54
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "既設道路照明灯ＬＥＤ化事業",
+      "budgetBookName": null,
+      "amount": 62004,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 54
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "相模大野駅北口ペデストリアンデッキ改修事業（継続費）",
+      "budgetBookName": null,
+      "amount": 31713,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 54
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "道路改良事業",
+      "budgetBookName": null,
+      "amount": 878672,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 54
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "市道新戸相武台道路改良事業（継続費）",
+      "budgetBookName": null,
+      "amount": 102606,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 54
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "市道新戸相武台道路改良事業（継続費・令和８年度設定分）",
+      "budgetBookName": null,
+      "amount": 191384,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 55
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "狭あい道路等整備事業",
+      "budgetBookName": null,
+      "amount": 304823,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 55
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "新斎場関連道路整備事業（継続費）",
+      "budgetBookName": null,
+      "amount": 3293,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 55
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "橋りょう長寿命化事業",
+      "budgetBookName": null,
+      "amount": 1169994,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 55
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "淵野辺こ線橋整備事業(債務負担行為）",
+      "budgetBookName": null,
+      "amount": 244938,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 55
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "河川維持補修費",
+      "budgetBookName": null,
+      "amount": 80545,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 55
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "緊急浚渫推進事業",
+      "budgetBookName": null,
+      "amount": 83100,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 55
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "一級河川鳩川・道保川改修事業",
+      "budgetBookName": null,
+      "amount": 45156,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 56
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "準用河川鳩川改修事業",
+      "budgetBookName": null,
+      "amount": 8030,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 56
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "準用河川姥川改修事業",
+      "budgetBookName": null,
+      "amount": 9757,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 56
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "準用河川姥川改修事業（河床整備・継続費・令和７年度設定分）",
+      "budgetBookName": null,
+      "amount": 17600,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 56
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "準用河川姥川改修事業（河床整備・継続費・令和８年度設定分）",
+      "budgetBookName": null,
+      "amount": 68900,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 56
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "防災対策事業",
+      "budgetBookName": null,
+      "amount": 61852,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 56
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "麻溝台・新磯野地区整備推進事業",
+      "budgetBookName": null,
+      "amount": 296569,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 56
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "鵜野森地区整備促進事業",
+      "budgetBookName": null,
+      "amount": 9735,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 56
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "民間住宅施策推進事業",
+      "budgetBookName": null,
+      "amount": 109137,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 56
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "区域区分界等調査測量委託",
+      "budgetBookName": null,
+      "amount": 19338,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 57
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "街づくり活動推進事業",
+      "budgetBookName": null,
+      "amount": 126,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 57
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "都市計画策定関連事業",
+      "budgetBookName": null,
+      "amount": 12133,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 57
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "景観形成推進事業",
+      "budgetBookName": null,
+      "amount": 3127,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 57
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "広域交流拠点推進事業",
+      "budgetBookName": null,
+      "amount": 915737,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 57
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "鉄道対策事業",
+      "budgetBookName": null,
+      "amount": 41988,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 58
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "バス路線維持確保対策事業",
+      "budgetBookName": null,
+      "amount": 161966,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 58
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "コミュニティ交通対策事業",
+      "budgetBookName": null,
+      "amount": 262329,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 58
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "総合交通計画関連事業",
+      "budgetBookName": null,
+      "amount": 86601,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 58
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "淵野辺駅南口周辺まちづくり事業",
+      "budgetBookName": null,
+      "amount": 51363,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 59
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "淵野辺駅南口周辺まちづくり事業（継続費）",
+      "budgetBookName": null,
+      "amount": 2486,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 59
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "既存建築物等総合防災対策事業",
+      "budgetBookName": null,
+      "amount": 92568,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 59
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "マンション管理対策推進事業",
+      "budgetBookName": null,
+      "amount": 282,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 59
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "生物多様性さがみはら戦略推進事業",
+      "budgetBookName": null,
+      "amount": 320,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 59
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "緑地保全活用事業",
+      "budgetBookName": null,
+      "amount": 19338,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 59
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "みどりのまちづくり事業",
+      "budgetBookName": null,
+      "amount": 170743,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 60
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "緑地等整備事業",
+      "budgetBookName": null,
+      "amount": 230000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 60
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "里地里山保全等促進事業",
+      "budgetBookName": null,
+      "amount": 1010,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 60
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "地域水源林保全・再生事業",
+      "budgetBookName": null,
+      "amount": 5000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 60
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "野生鳥獣保護管理事業",
+      "budgetBookName": null,
+      "amount": 29056,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 60
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "放置自転車対策事業",
+      "budgetBookName": null,
+      "amount": 28549,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 60
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "有料自転車駐車場維持補修費",
+      "budgetBookName": null,
+      "amount": 19416,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 60
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "都市計画道路等整備事業",
+      "budgetBookName": null,
+      "amount": 907792,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 61
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "県道５２号（相模原町田）道路改良事業（債務負担行為・令和５年度設定分）",
+      "budgetBookName": null,
+      "amount": 1172000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 61
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "県道５２号（相模原町田）道路改良事業（継続費・令和７年度設定分）",
+      "budgetBookName": null,
+      "amount": 32000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 61
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "県道５２号（相模原町田）道路改良事業（継続費・令和８年度設定分）",
+      "budgetBookName": null,
+      "amount": 195500,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 61
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "県道５２号（相模原町田）道路改良事業（北里工区）（継続費）",
+      "budgetBookName": null,
+      "amount": 78300,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 61
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "県道５２号（相模原町田）道路改良事業（北里工区）（継続費・令和８年度設定分）",
+      "budgetBookName": null,
+      "amount": 209650,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 61
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "都市計画道路淵野辺駅山王線道路改良事業（継続費）",
+      "budgetBookName": null,
+      "amount": 288499,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 61
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "都市計画道路相原大沢線道路改良事業（第４工区）（継続費）",
+      "budgetBookName": null,
+      "amount": 332600,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 61
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "県道５２号（相模原町田）道路改良事業（北里第３工区）（継続費）",
+      "budgetBookName": null,
+      "amount": 61000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 62
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "パークマネジメントプラン推進事業",
+      "budgetBookName": null,
+      "amount": 360907,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 62
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "子育て応援公園改修事業（継続費）",
+      "budgetBookName": null,
+      "amount": 434357,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 62
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "街区公園等整備事業",
+      "budgetBookName": null,
+      "amount": 82984,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 62
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "市営住宅ストック総合改善事業",
+      "budgetBookName": null,
+      "amount": 944977,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 62
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "常備消防活動費",
+      "budgetBookName": null,
+      "amount": 105367,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 63
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "通信施設維持管理費",
+      "budgetBookName": null,
+      "amount": 347807,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 63
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防車両購入費",
+      "budgetBookName": null,
+      "amount": 1060830,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 63
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "応急手当普及啓発費",
+      "budgetBookName": null,
+      "amount": 8438,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 63
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "火災予防事業費",
+      "budgetBookName": null,
+      "amount": 17846,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 63
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "危険物保安事業費",
+      "budgetBookName": null,
+      "amount": 754,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 63
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "救急高度化推進事業",
+      "budgetBookName": null,
+      "amount": 23348,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 63
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防救急デジタル無線整備事業",
+      "budgetBookName": null,
+      "amount": 156794,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 63
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防団活動費",
+      "budgetBookName": null,
+      "amount": 12869,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 64
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防団車両購入費",
+      "budgetBookName": null,
+      "amount": 385973,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 64
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防団通信機器維持管理費",
+      "budgetBookName": null,
+      "amount": 17326,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 64
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防庁舎整備事業",
+      "budgetBookName": null,
+      "amount": 280262,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 64
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防庁舎改修事業",
+      "budgetBookName": null,
+      "amount": 102815,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 64
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防団詰所・車庫整備費",
+      "budgetBookName": null,
+      "amount": 154467,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 64
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防水利整備費",
+      "budgetBookName": null,
+      "amount": 155694,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 64
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "職員給与費",
+      "budgetBookName": null,
+      "amount": 6920819,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 65
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "教職員任用経費",
+      "budgetBookName": null,
+      "amount": 12120,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 65
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "スクールバス運行等事業",
+      "budgetBookName": null,
+      "amount": 89290,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 65
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "給付型奨学金",
+      "budgetBookName": null,
+      "amount": 94840,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 65
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "学校給食費管理事業",
+      "budgetBookName": null,
+      "amount": 2391318,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 65
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "スタディクーポン事業",
+      "budgetBookName": null,
+      "amount": 226450,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 65
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "創意ある教育活動事業",
+      "budgetBookName": null,
+      "amount": 33358,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 65
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "学校教育研究事業",
+      "budgetBookName": null,
+      "amount": 23060,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 66
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "国際教育事業",
+      "budgetBookName": null,
+      "amount": 336594,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 66
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "特別支援教育事業",
+      "budgetBookName": null,
+      "amount": 90785,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 66
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "ふれあい教育事業",
+      "budgetBookName": null,
+      "amount": 29169,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 67
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "部活動指導支援事業",
+      "budgetBookName": null,
+      "amount": 23752,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 67
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "ＧＩＧＡスクール推進事業",
+      "budgetBookName": null,
+      "amount": 97813,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 67
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "教育メタバース活用事業",
+      "budgetBookName": null,
+      "amount": 51590,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 67
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "施設運営費",
+      "budgetBookName": null,
+      "amount": 404649,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 67
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "学校給食センター整備・運営事業",
+      "budgetBookName": null,
+      "amount": 219608,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 68
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "青少年・教育相談事業",
+      "budgetBookName": null,
+      "amount": 32053,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 68
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "ヤングテレホン事業",
+      "budgetBookName": null,
+      "amount": 367,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 68
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "教育支援センター事業",
+      "budgetBookName": null,
+      "amount": 1295,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 68
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "協働事業提案制度事業",
+      "budgetBookName": null,
+      "amount": 1199,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 68
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "フリースクール等利用児童・生徒支援事業",
+      "budgetBookName": null,
+      "amount": 17280,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 68
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "野外体験教室活動費",
+      "budgetBookName": null,
+      "amount": 50164,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 69
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "職員給与費",
+      "budgetBookName": null,
+      "amount": 19522529,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 69
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "学童通学安全経費",
+      "budgetBookName": null,
+      "amount": 35962,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 69
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "学校情報教育推進事業",
+      "budgetBookName": null,
+      "amount": 755170,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 69
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "児童健康診断経費",
+      "budgetBookName": null,
+      "amount": 43891,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 69
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "小学校校舎改造事業",
+      "budgetBookName": null,
+      "amount": 3581273,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 69
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "小学校校舎等整備事業",
+      "budgetBookName": null,
+      "amount": 3420235,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 69
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "淵野辺小学校校舎増改築事業（継続費）",
+      "budgetBookName": null,
+      "amount": 1655288,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 70
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "小山小学校校舎改修事業（継続費）",
+      "budgetBookName": null,
+      "amount": 163200,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 70
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "谷口台小学校給食室改築事業（継続費）",
+      "budgetBookName": null,
+      "amount": 775578,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 70
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "陽光台小学校給食室改築事業（継続費）",
+      "budgetBookName": null,
+      "amount": 162195,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 70
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "学びの多様化学校整備事業",
+      "budgetBookName": null,
+      "amount": 83012,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 70
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "職員給与費",
+      "budgetBookName": null,
+      "amount": 11208166,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 71
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "学校情報教育推進事業",
+      "budgetBookName": null,
+      "amount": 386008,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 71
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "生徒健康診断経費",
+      "budgetBookName": null,
+      "amount": 32639,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 71
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "中学校完全給食推進事業",
+      "budgetBookName": null,
+      "amount": 556983,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 71
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "中学校校舎改造事業",
+      "budgetBookName": null,
+      "amount": 2791295,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 71
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "中学校空調設備整備事業（継続費）",
+      "budgetBookName": null,
+      "amount": 742286,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 71
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "中学校校舎等整備事業",
+      "budgetBookName": null,
+      "amount": 2195729,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 72
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "私立幼稚園運営助成事業",
+      "budgetBookName": null,
+      "amount": 346588,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 72
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "家庭教育啓発費",
+      "budgetBookName": null,
+      "amount": 3533,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 72
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "地域学校協働活動推進事業",
+      "budgetBookName": null,
+      "amount": 8118,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 72
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "生涯学習センター費",
+      "budgetBookName": null,
+      "amount": 64928,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 72
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "文化財普及事業",
+      "budgetBookName": null,
+      "amount": 10517,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 73
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "公民館活動費",
+      "budgetBookName": null,
+      "amount": 38220,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 73
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "図書資料充実経費",
+      "budgetBookName": null,
+      "amount": 79234,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 73
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "読書活動推進事業",
+      "budgetBookName": null,
+      "amount": 19148,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 73
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "図書館授乳室整備事業",
+      "budgetBookName": null,
+      "amount": 4131,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 73
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "施設運営費",
+      "budgetBookName": null,
+      "amount": 67363,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 73
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "博物館施設整備事業費",
+      "budgetBookName": null,
+      "amount": 63184,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260216_shuyou_setumei.pdf",
+        "page": 73
       }
     }
   ]
