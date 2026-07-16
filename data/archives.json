@@ -2416,7 +2416,7 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260716133014/https://www.city.tokyo-nakano.lg.jp/kusei/zaisei/yosan/tosho.files/R4-2022gaiyou.pdf",
       "waybackTimestamp": "20260716133014",
-      "checkedAt": "2026-07-16T13:30:56.164Z",
+      "checkedAt": "2026-07-16T13:40:01.543Z",
       "sha256Match": true
     },
     {
@@ -2431,9 +2431,9 @@
       "sourceId": "nakano-yosangaiyou-r5",
       "url": "https://www.city.tokyo-nakano.lg.jp/kusei/zaisei/yosan/tosho.files/r5-2023gaiyou.pdf",
       "kind": "file",
-      "waybackUrl": "https://web.archive.org/web/20250726003559/https://www.city.tokyo-nakano.lg.jp/kusei/zaisei/yosan/tosho.files/r5-2023gaiyou.pdf",
-      "waybackTimestamp": "20250726003559",
-      "checkedAt": "2026-07-16T13:29:14.716Z",
+      "waybackUrl": "https://web.archive.org/web/20260716133807/https://www.city.tokyo-nakano.lg.jp/kusei/zaisei/yosan/tosho.files/r5-2023gaiyou.pdf",
+      "waybackTimestamp": "20260716133807",
+      "checkedAt": "2026-07-16T13:38:51.496Z",
       "sha256Match": true
     },
     {
@@ -2442,7 +2442,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260716132550/https://www.city.tokyo-nakano.lg.jp/kusei/zaisei/yosan/tosho.html",
       "waybackTimestamp": "20260716132550",
-      "checkedAt": "2026-07-16T13:30:00.871Z"
+      "checkedAt": "2026-07-16T13:39:25.002Z"
     },
     {
       "sourceId": "nakano-yosangaiyou-r6",
