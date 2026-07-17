@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 46,
+  "budgetCount": 47,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 271,
-  "fileCount": 396,
-  "archivedCount": 248,
+  "sourceCount": 285,
+  "fileCount": 410,
+  "archivedCount": 262,
   "licenseOpen": 19,
-  "licensePermission": 194,
+  "licensePermission": 208,
   "licenseUnverified": 58,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -37,6 +37,12 @@ export const ROADMAP_PROGRESS = {
       "code": "131113",
       "years": 18,
       "range": "H20〜R8（18年度）"
+    },
+    {
+      "name": "北区",
+      "code": "131172",
+      "years": 14,
+      "range": "H24〜R8（14年度）"
     },
     {
       "name": "江戸川区",

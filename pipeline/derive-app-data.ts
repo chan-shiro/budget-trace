@@ -1864,6 +1864,19 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30"] as const).map((fy) => ({
       srcId: `katsushika-yosangaiyou-${fy}`, muniCode: "131229", muniName: "葛飾区", prefName: "東京都", isPref: false,
     })),
+    // 北区（2026-07-17 追加）。「予算の概要」。**H24〜R8 の15年度が現存し 14年度を収録**
+    // （**H25 のみ収録不可** — `-layout` は款15 を2行に割り `-raw` は合計行で throw する＝
+    // どちらも大声で落ちる。大田 H26 と違い `textSource` では救えない。registry のコメント参照）。
+    // **H24〜H28 は現行サイトから消滅し Wayback から回収**。
+    // ⚠ **CropX が要るのは R6〜R8 だけ**（R5 以前は縦書き章タブが無く、付けると表を切り落とす）。
+    // ⚠ **款名の脚注マーカー `(ｱ)`** を落とすためパーサに1行足した（H24・H26〜R5 の12年度で汚れ、
+    //   **R6〜R8 はクリーン**＝新しい年度ほど汚れるわけではない）。放置すると **Σ も validate も
+    //   止めないまま画面に `特別区債(ｱ)` と出て、年度間の款名結合が R5↔R6 で切れる**。
+    // 歳出11款は H24〜R8 で完全不変・**職員費の款は無い**（大田・文京と同じ人件費配賦型）。
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28", "h27", "h26",
+      "h24"] as const).map((fy) => ({
+      srcId: `kita-yosangaiyou-${fy}`, muniCode: "131172", muniName: "北区", prefName: "東京都", isPref: false,
+    })),
     // 豊島区は**R7・R4・R2 が欠番**（R4・R2 は ToUnicode 全面欠落、R7 は OCR レイヤの重なりで
     // 数字が壊れる＝修復不可。registry のコメント参照）。R3 は Wayback から回収。
     ...(["r8", "r6", "r5", "r3"] as const).map((fy) => ({
