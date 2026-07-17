@@ -1902,6 +1902,24 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       "h24"] as const).map((fy) => ({
       srcId: `kita-yosangaiyou-${fy}`, muniCode: "131172", muniName: "北区", prefName: "東京都", isPref: false,
     })),
+    // 台東区（2026-07-18 追加）。「予算案のポイント」【資料3】款別予算額。**H27〜R8 の12年度が
+    // 現存**するが、**歳入歳出が別ファイルの R2・H31・H27 は revenueFile/expenditureFile が未実装で
+    // 後回し**（このブロックは9年度）。**職員費・公債費の款が無い**（公債費は諸支出金に内包）。
+    // 収録に 2026-07-17 の3改修（款番号と款名下段の同一行折返し／象徴計上の1千円の款番号誤読／
+    // `ほぼ皆増`）が要る＝registry のコメント参照。
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "h30", "h29", "h28"] as const).map((fy) => ({
+      srcId: `taito-kanbetsu-${fy}`, muniCode: "131067", muniName: "台東区", prefName: "東京都", isPref: false,
+    })),
+    // 港区（2026-07-18 追加）。「予算概要」歳入予算内訳表・目的別歳出予算内訳表。**R8〜H19 の20年度が
+    // 現存し 18年度を収録**（**H29・H24 は震災復興基金の括弧2段組で合計行が割れ収録不可**）。
+    // ⚠ **R2・R4・H31 の款名が部首の異体字（Kangxi）で壊れる**＝このリポジトリ初の「文字レベルで
+    //   静かに壊れる」型。パーサの `fixRadicals` で正規化し、validate に部首レンジのゲートも追加した。
+    // ⚠ 概要 PDF の歳入は特別区債=0 を行ごと省略するので歳入19款（区の CC BY CSV は20款）。
+    // **職員費の款は無い**（配賦型）。特別区交付金 0.7%・公債費 R8 で1千円の実質不交付区（§10）。
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h28", "h27", "h26", "h25",
+      "h23", "h22", "h21", "h20", "h19"] as const).map((fy) => ({
+      srcId: `minato-yosangaiyou-${fy}`, muniCode: "131032", muniName: "港区", prefName: "東京都", isPref: false,
+    })),
     // 豊島区は**R7・R4・R2 が欠番**（R4・R2 は ToUnicode 全面欠落、R7 は OCR レイヤの重なりで
     // 数字が壊れる＝修復不可。registry のコメント参照）。R3 は Wayback から回収。
     ...(["r8", "r6", "r5", "r3"] as const).map((fy) => ({

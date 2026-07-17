@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 48,
+  "budgetCount": 50,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 311,
-  "fileCount": 436,
-  "archivedCount": 288,
+  "sourceCount": 338,
+  "fileCount": 463,
+  "archivedCount": 315,
   "licenseOpen": 19,
-  "licensePermission": 234,
+  "licensePermission": 261,
   "licenseUnverified": 58,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -37,6 +37,12 @@ export const ROADMAP_PROGRESS = {
       "code": "131059",
       "years": 22,
       "range": "H16〜R8（22年度）"
+    },
+    {
+      "name": "港区",
+      "code": "131032",
+      "years": 18,
+      "range": "H19〜R8（18年度）"
     },
     {
       "name": "大田区",
@@ -67,6 +73,12 @@ export const ROADMAP_PROGRESS = {
       "code": "131024",
       "years": 10,
       "range": "H29〜R8（10年度）"
+    },
+    {
+      "name": "台東区",
+      "code": "131067",
+      "years": 9,
+      "range": "H28〜R8（9年度）"
     },
     {
       "name": "葛飾区",

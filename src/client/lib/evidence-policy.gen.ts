@@ -734,6 +734,51 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://web.archive.org/web/20211130091510id_/http://www.city.kita.tokyo.jp/zaisei/kuse/zaise/documents/24gaiyo.pdf",
     "license": "東京都北区公式ウェブサイト(https://www.city.kita.lg.jp/ 又は東京都北区の各組織が左記以外のドメインで運営するサイト)(以下「当区サイト」という。)に掲載されている文字、写真、イラストなどの個々の情報に関する著作権は、原則として北区に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。また、総体としての当区サイトについては、北区に編集著作権があります。／当区サイトの内容の全部又は一部は、「私的使用」または「引用」など著作権法上認められた行為として適切な方法で利用する場合を除き、北区に無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。"
   },
+  "/sources/taito-kanbetsu-r8/R8yosan3.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R8yosanannopoint.files/R8yosan3.pdf",
+    "license": "台東区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/taito-kanbetsu-r7/R7yosan3.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R7yosanannopoint.files/R7yosan3.pdf",
+    "license": "台東区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/taito-kanbetsu-r6/R6yosan3.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R6yosanannopoint.files/R6yosan3.pdf",
+    "license": "台東区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/taito-kanbetsu-r5/5gaisansho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R5yosanannopoint.files/5gaisansho.pdf",
+    "license": "台東区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/taito-kanbetsu-r4/s3-kanbetuyosangaku.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R4yosanannopoint.files/s3-kanbetuyosangaku.pdf",
+    "license": "台東区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/taito-kanbetsu-r3/3gaisannsho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/3point.files/3gaisannsho.pdf",
+    "license": "台東区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/taito-kanbetsu-h30/sainyuusaishutu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/30yosanpoint.files/sainyuusaishutu.pdf",
+    "license": "台東区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/taito-kanbetsu-h29/29-4.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/29point.files/29-4.pdf",
+    "license": "台東区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
+  "/sources/taito-kanbetsu-h28/30gaisansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/28point.files/30gaisansyo.pdf",
+    "license": "台東区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
+  },
   "/sources/shinjuku-yosan-gaiyou-r8/000451451.pdf": {
     "mode": "origin",
     "href": "https://www.city.shinjuku.lg.jp/kusei/file06_02_0101.html",
@@ -863,6 +908,96 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "mode": "origin",
     "href": "https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html",
     "license": "新宿区公式ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は新宿区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に問合せ担当課または区政情報課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。"
+  },
+  "/sources/minato-yosangaiyou-r8/20260202131316.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minato.tokyo.jp/documents/4694/20260202131316.pdf",
+    "license": "港区ホームページ上の文書や画像等の各ファイル、およびその内容に関する諸権利は、原則として港区に帰属します。記載内容の無断での転載は禁じます。もし、記載内容について転載を希望される場合は、その旨下記までご連絡ください。"
+  },
+  "/sources/minato-yosangaiyou-r7/r7nishou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minato.tokyo.jp/documents/4694/r7nishou.pdf",
+    "license": "港区ホームページ上の文書や画像等の各ファイル、およびその内容に関する諸権利は、原則として港区に帰属します。記載内容の無断での転載は禁じます。もし、記載内容について転載を希望される場合は、その旨下記までご連絡ください。"
+  },
+  "/sources/minato-yosangaiyou-r6/nishou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minato.tokyo.jp/documents/4694/nishou.pdf",
+    "license": "港区ホームページ上の文書や画像等の各ファイル、およびその内容に関する諸権利は、原則として港区に帰属します。記載内容の無断での転載は禁じます。もし、記載内容について転載を希望される場合は、その旨下記までご連絡ください。"
+  },
+  "/sources/minato-yosangaiyou-r5/2sho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minato.tokyo.jp/documents/4694/2sho.pdf",
+    "license": "港区ホームページ上の文書や画像等の各ファイル、およびその内容に関する諸権利は、原則として港区に帰属します。記載内容の無断での転載は禁じます。もし、記載内容について転載を希望される場合は、その旨下記までご連絡ください。"
+  },
+  "/sources/minato-yosangaiyou-r4/02_section2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minato.tokyo.jp/documents/4694/02_section2.pdf",
+    "license": "港区ホームページ上の文書や画像等の各ファイル、およびその内容に関する諸権利は、原則として港区に帰属します。記載内容の無断での転載は禁じます。もし、記載内容について転載を希望される場合は、その旨下記までご連絡ください。"
+  },
+  "/sources/minato-yosangaiyou-r3/04sainyusaisyutu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minato.tokyo.jp/documents/4694/04sainyusaisyutu.pdf",
+    "license": "港区ホームページ上の文書や画像等の各ファイル、およびその内容に関する諸権利は、原則として港区に帰属します。記載内容の無断での転載は禁じます。もし、記載内容について転載を希望される場合は、その旨下記までご連絡ください。"
+  },
+  "/sources/minato-yosangaiyou-r2/section2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minato.tokyo.jp/documents/4694/section2.pdf",
+    "license": "港区ホームページ上の文書や画像等の各ファイル、およびその内容に関する諸権利は、原則として港区に帰属します。記載内容の無断での転載は禁じます。もし、記載内容について転載を希望される場合は、その旨下記までご連絡ください。"
+  },
+  "/sources/minato-yosangaiyou-h31/15-24.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minato.tokyo.jp/documents/4694/15-24.pdf",
+    "license": "港区ホームページ上の文書や画像等の各ファイル、およびその内容に関する諸権利は、原則として港区に帰属します。記載内容の無断での転載は禁じます。もし、記載内容について転載を希望される場合は、その旨下記までご連絡ください。"
+  },
+  "/sources/minato-yosangaiyou-h30/05kibo_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minato.tokyo.jp/documents/4694/05kibo_1.pdf",
+    "license": "港区ホームページ上の文書や画像等の各ファイル、およびその内容に関する諸権利は、原則として港区に帰属します。記載内容の無断での転載は禁じます。もし、記載内容について転載を希望される場合は、その旨下記までご連絡ください。"
+  },
+  "/sources/minato-yosangaiyou-h28/03.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minato.tokyo.jp/documents/4694/03.pdf",
+    "license": "港区ホームページ上の文書や画像等の各ファイル、およびその内容に関する諸権利は、原則として港区に帰属します。記載内容の無断での転載は禁じます。もし、記載内容について転載を希望される場合は、その旨下記までご連絡ください。"
+  },
+  "/sources/minato-yosangaiyou-h27/h27yosangaiyou03.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minato.tokyo.jp/documents/4694/h27yosangaiyou03.pdf",
+    "license": "港区ホームページ上の文書や画像等の各ファイル、およびその内容に関する諸権利は、原則として港区に帰属します。記載内容の無断での転載は禁じます。もし、記載内容について転載を希望される場合は、その旨下記までご連絡ください。"
+  },
+  "/sources/minato-yosangaiyou-h26/h26_yosangaiyo_03.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minato.tokyo.jp/documents/4694/h26_yosangaiyo_03.pdf",
+    "license": "港区ホームページ上の文書や画像等の各ファイル、およびその内容に関する諸権利は、原則として港区に帰属します。記載内容の無断での転載は禁じます。もし、記載内容について転載を希望される場合は、その旨下記までご連絡ください。"
+  },
+  "/sources/minato-yosangaiyou-h25/h25_yosangaiyo_02pdf.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minato.tokyo.jp/documents/4694/h25_yosangaiyo_02pdf.pdf",
+    "license": "港区ホームページ上の文書や画像等の各ファイル、およびその内容に関する諸権利は、原則として港区に帰属します。記載内容の無断での転載は禁じます。もし、記載内容について転載を希望される場合は、その旨下記までご連絡ください。"
+  },
+  "/sources/minato-yosangaiyou-h23/h23_yosangaiyo_02.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minato.tokyo.jp/documents/4694/h23_yosangaiyo_02.pdf",
+    "license": "港区ホームページ上の文書や画像等の各ファイル、およびその内容に関する諸権利は、原則として港区に帰属します。記載内容の無断での転載は禁じます。もし、記載内容について転載を希望される場合は、その旨下記までご連絡ください。"
+  },
+  "/sources/minato-yosangaiyou-h22/h22_yosangaiyo_03.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minato.tokyo.jp/documents/4694/h22_yosangaiyo_03.pdf",
+    "license": "港区ホームページ上の文書や画像等の各ファイル、およびその内容に関する諸権利は、原則として港区に帰属します。記載内容の無断での転載は禁じます。もし、記載内容について転載を希望される場合は、その旨下記までご連絡ください。"
+  },
+  "/sources/minato-yosangaiyou-h21/h21_yosangaiyo_03.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minato.tokyo.jp/documents/4694/h21_yosangaiyo_03.pdf",
+    "license": "港区ホームページ上の文書や画像等の各ファイル、およびその内容に関する諸権利は、原則として港区に帰属します。記載内容の無断での転載は禁じます。もし、記載内容について転載を希望される場合は、その旨下記までご連絡ください。"
+  },
+  "/sources/minato-yosangaiyou-h20/h20_yosangaiyo_03.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minato.tokyo.jp/documents/4694/h20_yosangaiyo_03.pdf",
+    "license": "港区ホームページ上の文書や画像等の各ファイル、およびその内容に関する諸権利は、原則として港区に帰属します。記載内容の無断での転載は禁じます。もし、記載内容について転載を希望される場合は、その旨下記までご連絡ください。"
+  },
+  "/sources/minato-yosangaiyou-h19/h19_yosangaiyo_03.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minato.tokyo.jp/documents/4694/h19_yosangaiyo_03.pdf",
+    "license": "港区ホームページ上の文書や画像等の各ファイル、およびその内容に関する諸権利は、原則として港区に帰属します。記載内容の無断での転載は禁じます。もし、記載内容について転載を希望される場合は、その旨下記までご連絡ください。"
   },
   "/sources/chuo-sokatsuhyo-r8/r8_sokatsuhyo.pdf": {
     "mode": "origin",

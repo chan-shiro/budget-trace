@@ -1,0 +1,12 @@
+{
+  "sourceId": "taito-kanbetsu-r3",
+  "files": [
+    {
+      "filename": "3gaisannsho.pdf",
+      "sha256": "e13071a80d3c92ac241518d207ff68a9b29f6c4b7e0bd8678603a6fba0a0af24",
+      "bytes": 319451,
+      "fetchedAt": "2026-07-17T22:15:10.384Z",
+      "fetchedFrom": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/3point.files/3gaisannsho.pdf"
+    }
+  ]
+}

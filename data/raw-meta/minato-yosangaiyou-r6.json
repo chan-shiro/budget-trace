@@ -1,0 +1,12 @@
+{
+  "sourceId": "minato-yosangaiyou-r6",
+  "files": [
+    {
+      "filename": "nishou.pdf",
+      "sha256": "a508dd036905aba1b34f8f664791ef5fcd450e6c10aec00dd64d385797ae6f42",
+      "bytes": 843759,
+      "fetchedAt": "2026-07-17T22:17:37.286Z",
+      "fetchedFrom": "https://www.city.minato.tokyo.jp/documents/4694/nishou.pdf"
+    }
+  ]
+}

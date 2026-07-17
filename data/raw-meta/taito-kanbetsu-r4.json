@@ -1,0 +1,12 @@
+{
+  "sourceId": "taito-kanbetsu-r4",
+  "files": [
+    {
+      "filename": "s3-kanbetuyosangaku.pdf",
+      "sha256": "b294d321a58d72aad1ae565f95479853040e27f5d6b6edd743ff261287f9ac2a",
+      "bytes": 372808,
+      "fetchedAt": "2026-07-17T22:15:10.116Z",
+      "fetchedFrom": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R4yosanannopoint.files/s3-kanbetuyosangaku.pdf"
+    }
+  ]
+}

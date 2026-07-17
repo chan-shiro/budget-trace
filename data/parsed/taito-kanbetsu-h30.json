@@ -1,0 +1,347 @@
+{
+  "docType": "budget-book",
+  "sourceId": "taito-kanbetsu-h30",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-07-17T22:15:24.701Z",
+  "unit": "thousandYen",
+  "fiscalYear": "H30",
+  "account": "一般会計",
+  "revenueTotal": 100600000,
+  "expenditureTotal": 100600000,
+  "prevRevenueTotal": 98800000,
+  "prevExpenditureTotal": 98800000,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "特別区税",
+      "amount": 21445866,
+      "prevAmount": 21043335,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "地方譲与税",
+      "amount": 339588,
+      "prevAmount": 348374,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "利子割交付金",
+      "amount": 66257,
+      "prevAmount": 79018,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "配当割交付金",
+      "amount": 212306,
+      "prevAmount": 194839,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 146725,
+      "prevAmount": 133353,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "地方消費税交付金",
+      "amount": 4746282,
+      "prevAmount": 5426361,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "自動車取得税交付金",
+      "amount": 211811,
+      "prevAmount": 160016,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "地方特例交付金",
+      "amount": 89216,
+      "prevAmount": 87763,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "特別区交付金",
+      "amount": 28700000,
+      "prevAmount": 28400000,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 27039,
+      "prevAmount": 28307,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "分担金及び負担金",
+      "amount": 830697,
+      "prevAmount": 746588,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "使用料及び手数料",
+      "amount": 3735492,
+      "prevAmount": 3738223,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "国庫支出金",
+      "amount": 22167918,
+      "prevAmount": 22119381,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "都支出金",
+      "amount": 7750846,
+      "prevAmount": 7429587,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "財産収入",
+      "amount": 426192,
+      "prevAmount": 424247,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "寄附金",
+      "amount": 67831,
+      "prevAmount": 68711,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 17,
+      "kanName": "繰入金",
+      "amount": 3038814,
+      "prevAmount": 2032448,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 18,
+      "kanName": "繰越金",
+      "amount": 1000000,
+      "prevAmount": 1000000,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 19,
+      "kanName": "諸収入",
+      "amount": 3147120,
+      "prevAmount": 3069449,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 20,
+      "kanName": "特別区債",
+      "amount": 2450000,
+      "prevAmount": 2270000,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 643924,
+      "prevAmount": 636103,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 10371731,
+      "prevAmount": 10866271,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "民生費",
+      "amount": 36616999,
+      "prevAmount": 36302438,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "衛生費",
+      "amount": 8738348,
+      "prevAmount": 8071406,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "文化観光費",
+      "amount": 2022706,
+      "prevAmount": 1810250,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "産業経済費",
+      "amount": 3477611,
+      "prevAmount": 3359444,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "土木費",
+      "amount": 6972863,
+      "prevAmount": 6545443,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "教育費",
+      "amount": 23424692,
+      "prevAmount": 21920840,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "諸支出金",
+      "amount": 8181126,
+      "prevAmount": 9137805,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "予備費",
+      "amount": 150000,
+      "prevAmount": 150000,
+      "locator": {
+        "file": "sainyuusaishutu.pdf",
+        "page": 2
+      }
+    }
+  ]
+}
