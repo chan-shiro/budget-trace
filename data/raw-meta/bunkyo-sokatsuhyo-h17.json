@@ -1,0 +1,12 @@
+{
+  "sourceId": "bunkyo-sokatsuhyo-h17",
+  "files": [
+    {
+      "filename": "soukatu.pdf",
+      "sha256": "2bea33e6f9f8e94757a745c692e0638782438da1f0263db6ad4683748e4cd31f",
+      "bytes": 60445,
+      "fetchedAt": "2026-07-17T03:21:44.753Z",
+      "fetchedFrom": "https://www.city.bunkyo.lg.jp/documents/5585/soukatu.pdf"
+    }
+  ]
+}

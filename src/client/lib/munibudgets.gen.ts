@@ -4910,6 +4910,5236 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
       ]
     }
   ],
+  "131059": [
+    {
+      "muniCode": "131059",
+      "muniName": "文京区",
+      "prefName": "東京都",
+      "isPref": false,
+      "projects": [],
+      "execution": [],
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "population": 235345,
+      "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+      "totalOku": 1604.82,
+      "prevTotalOku": 1470,
+      "yoyLabel": "+9.2%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "特別区税",
+          "v": 457.15195,
+          "prevV": 434.06937,
+          "yoy": 5.3
+        },
+        {
+          "name": "特別区交付金",
+          "v": 306,
+          "prevV": 277,
+          "yoy": 10.5
+        },
+        {
+          "name": "繰入金",
+          "v": 201.26502,
+          "prevV": 189.59538,
+          "yoy": 6.2
+        },
+        {
+          "name": "国庫支出金",
+          "v": 190.08765,
+          "prevV": 190.2166,
+          "yoy": -0.1
+        },
+        {
+          "name": "都支出金",
+          "v": 153.0502,
+          "prevV": 135.86688,
+          "yoy": 12.6
+        },
+        {
+          "name": "地方消費税交付金",
+          "v": 84,
+          "prevV": 71,
+          "yoy": 18.3
+        },
+        {
+          "name": "特別区債",
+          "v": 70,
+          "prevV": 55,
+          "yoy": 27.3
+        },
+        {
+          "name": "諸収入",
+          "v": 33.06717,
+          "prevV": 37.80503,
+          "yoy": -12.5
+        },
+        {
+          "name": "その他",
+          "v": 110.19801000000002,
+          "prevV": 79.44673999999999,
+          "yoy": null,
+          "children": [
+            {
+              "name": "株式等譲渡所得割交付金",
+              "v": 24,
+              "prevV": 8,
+              "yoy": 200
+            },
+            {
+              "name": "使用料及び手数料",
+              "v": 21.12361,
+              "prevV": 21.00598,
+              "yoy": 0.6
+            },
+            {
+              "name": "繰越金",
+              "v": 20,
+              "prevV": 17,
+              "yoy": 17.6
+            },
+            {
+              "name": "配当割交付金",
+              "v": 14,
+              "prevV": 8.2,
+              "yoy": 70.7
+            },
+            {
+              "name": "財産収入",
+              "v": 11.64574,
+              "prevV": 3.80269,
+              "yoy": 206.3
+            },
+            {
+              "name": "分担金及び負担金",
+              "v": 7.13382,
+              "prevV": 11.69367,
+              "yoy": -39
+            },
+            {
+              "name": "寄付金",
+              "v": 4.03483,
+              "prevV": 3.21439,
+              "yoy": 25.5
+            },
+            {
+              "name": "利子割交付金",
+              "v": 4,
+              "prevV": 2,
+              "yoy": 100
+            },
+            {
+              "name": "地方譲与税",
+              "v": 2.92,
+              "prevV": 2.85,
+              "yoy": 2.5
+            },
+            {
+              "name": "地方特例交付金",
+              "v": 0.65,
+              "prevV": 0.73,
+              "yoy": -11
+            },
+            {
+              "name": "環境性能割交付金",
+              "v": 0.54,
+              "prevV": 0.78,
+              "yoy": -30.8
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 0.15,
+              "prevV": 0.17,
+              "yoy": -11.8
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 0.00001,
+              "prevV": 0.00001,
+              "yoy": 0
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "民生費",
+          "v": 723.27087,
+          "prevV": 653.45417,
+          "yoy": 10.7
+        },
+        {
+          "name": "教育費",
+          "v": 344.18897,
+          "prevV": 292.16166,
+          "yoy": 17.8
+        },
+        {
+          "name": "総務費",
+          "v": 221.46997,
+          "prevV": 228.40478,
+          "yoy": -3
+        },
+        {
+          "name": "衛生費",
+          "v": 74.24365,
+          "prevV": 70.93584,
+          "yoy": 4.7
+        },
+        {
+          "name": "土木費",
+          "v": 67.84917,
+          "prevV": 64.38113,
+          "yoy": 5.4
+        },
+        {
+          "name": "資源環境費",
+          "v": 55.07509,
+          "prevV": 52.57615,
+          "yoy": 4.8
+        },
+        {
+          "name": "区民費",
+          "v": 49.38289,
+          "prevV": 51.35644,
+          "yoy": -3.8
+        },
+        {
+          "name": "諸支出金",
+          "v": 29.12353,
+          "prevV": 14.60924,
+          "yoy": 99.4
+        },
+        {
+          "name": "都市整備費",
+          "v": 16.97547,
+          "prevV": 14.31432,
+          "yoy": 18.6
+        },
+        {
+          "name": "産業経済費",
+          "v": 14.77145,
+          "prevV": 19.74531,
+          "yoy": -25.2
+        },
+        {
+          "name": "議会費",
+          "v": 7.46894,
+          "prevV": 7.06096,
+          "yoy": 5.8
+        },
+        {
+          "name": "予備費",
+          "v": 1,
+          "prevV": 1,
+          "yoy": 0
+        }
+      ],
+      "sourceTitle": "令和8年度 文京区当初予算総括表",
+      "sourceUrl": "https://web.archive.org/web/20260717034120/https://www.city.bunkyo.lg.jp/documents/12708/r08_tosyoyosan_sokatsuhyo.pdf",
+      "originUrl": "https://www.city.bunkyo.lg.jp/documents/12708/r08_tosyoyosan_sokatsuhyo.pdf",
+      "sourceLocalUrl": "/sources/bunkyo-sokatsuhyo-r8/r08_tosyoyosan_sokatsuhyo.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "令和8年度 文京区当初予算総括表",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20260717034120/https://www.city.bunkyo.lg.jp/documents/12708/r08_tosyoyosan_sokatsuhyo.pdf",
+          "localUrl": "/sources/bunkyo-sokatsuhyo-r8/r08_tosyoyosan_sokatsuhyo.pdf",
+          "source": "www.city.bunkyo.lg.jp",
+          "thumb": "r08_tosyoyosan_sokatsuhyo.pdf ・ sha256 5d08aaed6d0e7dbf… ・ 2026-07-17 取得"
+        }
+      ]
+    },
+    {
+      "muniCode": "131059",
+      "muniName": "文京区",
+      "prefName": "東京都",
+      "isPref": false,
+      "projects": [],
+      "execution": [],
+      "fy": "R7",
+      "fyLabel": "令和7年度 当初予算",
+      "population": 235345,
+      "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+      "totalOku": 1470,
+      "prevTotalOku": 1275.28,
+      "yoyLabel": "+15.3%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "特別区税",
+          "v": 434.06937,
+          "prevV": 395.05033,
+          "yoy": 9.9
+        },
+        {
+          "name": "特別区交付金",
+          "v": 277,
+          "prevV": 230,
+          "yoy": 20.4
+        },
+        {
+          "name": "国庫支出金",
+          "v": 190.2166,
+          "prevV": 144.13647,
+          "yoy": 32
+        },
+        {
+          "name": "繰入金",
+          "v": 189.59538,
+          "prevV": 176.18353,
+          "yoy": 7.6
+        },
+        {
+          "name": "都支出金",
+          "v": 135.86688,
+          "prevV": 103.27329,
+          "yoy": 31.6
+        },
+        {
+          "name": "地方消費税交付金",
+          "v": 71,
+          "prevV": 68,
+          "yoy": 4.4
+        },
+        {
+          "name": "特別区債",
+          "v": 55,
+          "prevV": 45,
+          "yoy": 22.2
+        },
+        {
+          "name": "諸収入",
+          "v": 37.80503,
+          "prevV": 26.15008,
+          "yoy": 44.6
+        },
+        {
+          "name": "その他",
+          "v": 79.44673999999999,
+          "prevV": 87.48630000000001,
+          "yoy": null,
+          "children": [
+            {
+              "name": "使用料及び手数料",
+              "v": 21.00598,
+              "prevV": 19.63788,
+              "yoy": 7
+            },
+            {
+              "name": "繰越金",
+              "v": 17,
+              "prevV": 16,
+              "yoy": 6.3
+            },
+            {
+              "name": "分担金及び負担金",
+              "v": 11.69367,
+              "prevV": 15.63249,
+              "yoy": -25.2
+            },
+            {
+              "name": "配当割交付金",
+              "v": 8.2,
+              "prevV": 7.5,
+              "yoy": 9.3
+            },
+            {
+              "name": "株式等譲渡所得割交付金",
+              "v": 8,
+              "prevV": 7,
+              "yoy": 14.3
+            },
+            {
+              "name": "財産収入",
+              "v": 3.80269,
+              "prevV": 3.06917,
+              "yoy": 23.9
+            },
+            {
+              "name": "寄付金",
+              "v": 3.21439,
+              "prevV": 1.95675,
+              "yoy": 64.3
+            },
+            {
+              "name": "地方譲与税",
+              "v": 2.85,
+              "prevV": 2.87,
+              "yoy": -0.7
+            },
+            {
+              "name": "利子割交付金",
+              "v": 2,
+              "prevV": 1.3,
+              "yoy": 53.8
+            },
+            {
+              "name": "環境性能割交付金",
+              "v": 0.78,
+              "prevV": 0.78,
+              "yoy": 0
+            },
+            {
+              "name": "地方特例交付金",
+              "v": 0.73,
+              "prevV": 11.57,
+              "yoy": -93.7
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 0.17,
+              "prevV": 0.17,
+              "yoy": 0
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 0.00001,
+              "prevV": 0.00001,
+              "yoy": 0
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "民生費",
+          "v": 653.45417,
+          "prevV": 590.55018,
+          "yoy": 10.7
+        },
+        {
+          "name": "教育費",
+          "v": 292.16166,
+          "prevV": 219.89496,
+          "yoy": 32.9
+        },
+        {
+          "name": "総務費",
+          "v": 228.40478,
+          "prevV": 205.85263,
+          "yoy": 11
+        },
+        {
+          "name": "衛生費",
+          "v": 70.93584,
+          "prevV": 62.09324,
+          "yoy": 14.2
+        },
+        {
+          "name": "土木費",
+          "v": 64.38113,
+          "prevV": 68.14427,
+          "yoy": -5.5
+        },
+        {
+          "name": "資源環境費",
+          "v": 52.57615,
+          "prevV": 43.58308,
+          "yoy": 20.6
+        },
+        {
+          "name": "区民費",
+          "v": 51.35644,
+          "prevV": 40.13423,
+          "yoy": 28
+        },
+        {
+          "name": "産業経済費",
+          "v": 19.74531,
+          "prevV": 13.7992,
+          "yoy": 43.1
+        },
+        {
+          "name": "諸支出金",
+          "v": 14.60924,
+          "prevV": 8.45514,
+          "yoy": 72.8
+        },
+        {
+          "name": "都市整備費",
+          "v": 14.31432,
+          "prevV": 14.94598,
+          "yoy": -4.2
+        },
+        {
+          "name": "議会費",
+          "v": 7.06096,
+          "prevV": 6.82709,
+          "yoy": 3.4
+        },
+        {
+          "name": "予備費",
+          "v": 1,
+          "prevV": 1,
+          "yoy": 0
+        }
+      ],
+      "sourceTitle": "令和7年度 文京区当初予算総括表",
+      "sourceUrl": "https://web.archive.org/web/20250713083848/https://www.city.bunkyo.lg.jp/documents/10873/r07_tosyoyosansoukatsuhyo.pdf",
+      "originUrl": "https://www.city.bunkyo.lg.jp/documents/10873/r07_tosyoyosansoukatsuhyo.pdf",
+      "sourceLocalUrl": "/sources/bunkyo-sokatsuhyo-r7/r07_tosyoyosansoukatsuhyo.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "令和7年度 文京区当初予算総括表",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20250713083848/https://www.city.bunkyo.lg.jp/documents/10873/r07_tosyoyosansoukatsuhyo.pdf",
+          "localUrl": "/sources/bunkyo-sokatsuhyo-r7/r07_tosyoyosansoukatsuhyo.pdf",
+          "source": "www.city.bunkyo.lg.jp",
+          "thumb": "r07_tosyoyosansoukatsuhyo.pdf ・ sha256 d8a04f3ad0d57e55… ・ 2026-07-17 取得"
+        }
+      ]
+    },
+    {
+      "muniCode": "131059",
+      "muniName": "文京区",
+      "prefName": "東京都",
+      "isPref": false,
+      "projects": [],
+      "execution": [],
+      "fy": "R6",
+      "fyLabel": "令和6年度 当初予算",
+      "population": 235345,
+      "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+      "totalOku": 1275.28,
+      "prevTotalOku": 1162.08,
+      "yoyLabel": "+9.7%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "特別区税",
+          "v": 395.05033,
+          "prevV": 385.71677,
+          "yoy": 2.4
+        },
+        {
+          "name": "特別区交付金",
+          "v": 230,
+          "prevV": 228,
+          "yoy": 0.9
+        },
+        {
+          "name": "繰入金",
+          "v": 176.18353,
+          "prevV": 112.79189,
+          "yoy": 56.2
+        },
+        {
+          "name": "国庫支出金",
+          "v": 144.13647,
+          "prevV": 163.12094,
+          "yoy": -11.6
+        },
+        {
+          "name": "都支出金",
+          "v": 103.27329,
+          "prevV": 87.51825,
+          "yoy": 18
+        },
+        {
+          "name": "地方消費税交付金",
+          "v": 68,
+          "prevV": 67,
+          "yoy": 1.5
+        },
+        {
+          "name": "特別区債",
+          "v": 45,
+          "prevV": 30,
+          "yoy": 50
+        },
+        {
+          "name": "諸収入",
+          "v": 26.15008,
+          "prevV": 25.02381,
+          "yoy": 4.5
+        },
+        {
+          "name": "その他",
+          "v": 87.48630000000001,
+          "prevV": 62.90834000000001,
+          "yoy": null,
+          "children": [
+            {
+              "name": "使用料及び手数料",
+              "v": 19.63788,
+              "prevV": 19.74907,
+              "yoy": -0.6
+            },
+            {
+              "name": "繰越金",
+              "v": 16,
+              "prevV": 2,
+              "yoy": 700
+            },
+            {
+              "name": "分担金及び負担金",
+              "v": 15.63249,
+              "prevV": 18.45139,
+              "yoy": -15.3
+            },
+            {
+              "name": "地方特例交付金",
+              "v": 11.57,
+              "prevV": 0.67,
+              "yoy": 1626.9
+            },
+            {
+              "name": "配当割交付金",
+              "v": 7.5,
+              "prevV": 6,
+              "yoy": 25
+            },
+            {
+              "name": "株式等譲渡所得割交付金",
+              "v": 7,
+              "prevV": 6.8,
+              "yoy": 2.9
+            },
+            {
+              "name": "財産収入",
+              "v": 3.06917,
+              "prevV": 2.95911,
+              "yoy": 3.7
+            },
+            {
+              "name": "地方譲与税",
+              "v": 2.87,
+              "prevV": 2.81,
+              "yoy": 2.1
+            },
+            {
+              "name": "寄付金",
+              "v": 1.95675,
+              "prevV": 1.51876,
+              "yoy": 28.8
+            },
+            {
+              "name": "利子割交付金",
+              "v": 1.3,
+              "prevV": 1.2,
+              "yoy": 8.3
+            },
+            {
+              "name": "環境性能割交付金",
+              "v": 0.78,
+              "prevV": 0.57,
+              "yoy": 36.8
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 0.17,
+              "prevV": 0.18,
+              "yoy": -5.6
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 0.00001,
+              "prevV": 0.00001,
+              "yoy": 0
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "民生費",
+          "v": 590.55018,
+          "prevV": 527.70879,
+          "yoy": 11.9
+        },
+        {
+          "name": "教育費",
+          "v": 219.89496,
+          "prevV": 203.84356,
+          "yoy": 7.9
+        },
+        {
+          "name": "総務費",
+          "v": 205.85263,
+          "prevV": 140.86298,
+          "yoy": 46.1
+        },
+        {
+          "name": "土木費",
+          "v": 68.14427,
+          "prevV": 63.29717,
+          "yoy": 7.7
+        },
+        {
+          "name": "衛生費",
+          "v": 62.09324,
+          "prevV": 101.80242,
+          "yoy": -39
+        },
+        {
+          "name": "資源環境費",
+          "v": 43.58308,
+          "prevV": 41.0877,
+          "yoy": 6.1
+        },
+        {
+          "name": "区民費",
+          "v": 40.13423,
+          "prevV": 39.7326,
+          "yoy": 1
+        },
+        {
+          "name": "都市整備費",
+          "v": 14.94598,
+          "prevV": 13.95714,
+          "yoy": 7.1
+        },
+        {
+          "name": "産業経済費",
+          "v": 13.7992,
+          "prevV": 13.5127,
+          "yoy": 2.1
+        },
+        {
+          "name": "諸支出金",
+          "v": 8.45514,
+          "prevV": 6.77026,
+          "yoy": 24.9
+        },
+        {
+          "name": "議会費",
+          "v": 6.82709,
+          "prevV": 6.50468,
+          "yoy": 5
+        },
+        {
+          "name": "予備費",
+          "v": 1,
+          "prevV": 3,
+          "yoy": -66.7
+        }
+      ],
+      "sourceTitle": "令和6年度 文京区当初予算総括表",
+      "sourceUrl": "https://web.archive.org/web/20241208072244/http://www.city.bunkyo.lg.jp/documents/8579/202437164616.pdf",
+      "originUrl": "https://www.city.bunkyo.lg.jp/documents/8579/202437164616.pdf",
+      "sourceLocalUrl": "/sources/bunkyo-sokatsuhyo-r6/202437164616.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "令和6年度 文京区当初予算総括表",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20241208072244/http://www.city.bunkyo.lg.jp/documents/8579/202437164616.pdf",
+          "localUrl": "/sources/bunkyo-sokatsuhyo-r6/202437164616.pdf",
+          "source": "www.city.bunkyo.lg.jp",
+          "thumb": "202437164616.pdf ・ sha256 52580cb3082347db… ・ 2026-07-17 取得"
+        }
+      ]
+    },
+    {
+      "muniCode": "131059",
+      "muniName": "文京区",
+      "prefName": "東京都",
+      "isPref": false,
+      "projects": [],
+      "execution": [],
+      "fy": "R5",
+      "fyLabel": "令和5年度 当初予算",
+      "population": 235345,
+      "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+      "totalOku": 1162.08,
+      "prevTotalOku": 1123.69,
+      "yoyLabel": "+3.4%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "特別区税",
+          "v": 385.71677,
+          "prevV": 359.89665,
+          "yoy": 7.2
+        },
+        {
+          "name": "特別区交付金",
+          "v": 228,
+          "prevV": 214,
+          "yoy": 6.5
+        },
+        {
+          "name": "国庫支出金",
+          "v": 163.12094,
+          "prevV": 159.67405,
+          "yoy": 2.2
+        },
+        {
+          "name": "繰入金",
+          "v": 112.79189,
+          "prevV": 134.80045,
+          "yoy": -16.3
+        },
+        {
+          "name": "都支出金",
+          "v": 87.51825,
+          "prevV": 88.77377,
+          "yoy": -1.4
+        },
+        {
+          "name": "地方消費税交付金",
+          "v": 67,
+          "prevV": 56,
+          "yoy": 19.6
+        },
+        {
+          "name": "特別区債",
+          "v": 30,
+          "prevV": 25,
+          "yoy": 20
+        },
+        {
+          "name": "諸収入",
+          "v": 25.02381,
+          "prevV": 25.28553,
+          "yoy": -1
+        },
+        {
+          "name": "その他",
+          "v": 62.90834000000001,
+          "prevV": 60.259550000000004,
+          "yoy": null,
+          "children": [
+            {
+              "name": "使用料及び手数料",
+              "v": 19.74907,
+              "prevV": 19.66737,
+              "yoy": 0.4
+            },
+            {
+              "name": "分担金及び負担金",
+              "v": 18.45139,
+              "prevV": 17.55275,
+              "yoy": 5.1
+            },
+            {
+              "name": "株式等譲渡所得割交付金",
+              "v": 6.8,
+              "prevV": 6.6,
+              "yoy": 3
+            },
+            {
+              "name": "配当割交付金",
+              "v": 6,
+              "prevV": 5.7,
+              "yoy": 5.3
+            },
+            {
+              "name": "財産収入",
+              "v": 2.95911,
+              "prevV": 2.18067,
+              "yoy": 35.7
+            },
+            {
+              "name": "地方譲与税",
+              "v": 2.81,
+              "prevV": 2.77,
+              "yoy": 1.4
+            },
+            {
+              "name": "繰越金",
+              "v": 2,
+              "prevV": 2,
+              "yoy": 0
+            },
+            {
+              "name": "寄付金",
+              "v": 1.51876,
+              "prevV": 1.32875,
+              "yoy": 14.3
+            },
+            {
+              "name": "利子割交付金",
+              "v": 1.2,
+              "prevV": 0.9,
+              "yoy": 33.3
+            },
+            {
+              "name": "地方特例交付金",
+              "v": 0.67,
+              "prevV": 0.74,
+              "yoy": -9.5
+            },
+            {
+              "name": "環境性能割交付金",
+              "v": 0.57,
+              "prevV": 0.64,
+              "yoy": -10.9
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 0.18,
+              "prevV": 0.18,
+              "yoy": 0
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 0.00001,
+              "prevV": 0.00001,
+              "yoy": 0
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "民生費",
+          "v": 527.70879,
+          "prevV": 508.1028,
+          "yoy": 3.9
+        },
+        {
+          "name": "教育費",
+          "v": 203.84356,
+          "prevV": 184.41767,
+          "yoy": 10.5
+        },
+        {
+          "name": "総務費",
+          "v": 140.86298,
+          "prevV": 174.24899,
+          "yoy": -19.2
+        },
+        {
+          "name": "衛生費",
+          "v": 101.80242,
+          "prevV": 83.65024,
+          "yoy": 21.7
+        },
+        {
+          "name": "土木費",
+          "v": 63.29717,
+          "prevV": 56.86959,
+          "yoy": 11.3
+        },
+        {
+          "name": "資源環境費",
+          "v": 41.0877,
+          "prevV": 39.42897,
+          "yoy": 4.2
+        },
+        {
+          "name": "区民費",
+          "v": 39.7326,
+          "prevV": 35.38216,
+          "yoy": 12.3
+        },
+        {
+          "name": "都市整備費",
+          "v": 13.95714,
+          "prevV": 17.11622,
+          "yoy": -18.5
+        },
+        {
+          "name": "産業経済費",
+          "v": 13.5127,
+          "prevV": 9.12368,
+          "yoy": 48.1
+        },
+        {
+          "name": "諸支出金",
+          "v": 6.77026,
+          "prevV": 5.93119,
+          "yoy": 14.1
+        },
+        {
+          "name": "議会費",
+          "v": 6.50468,
+          "prevV": 6.41849,
+          "yoy": 1.3
+        },
+        {
+          "name": "予備費",
+          "v": 3,
+          "prevV": 3,
+          "yoy": 0
+        }
+      ],
+      "sourceTitle": "令和5年度 文京区当初予算総括表",
+      "sourceUrl": "https://web.archive.org/web/20260717032646/https://www.city.bunkyo.lg.jp/documents/5568/20233614280_1.pdf",
+      "originUrl": "https://www.city.bunkyo.lg.jp/documents/5568/20233614280_1.pdf",
+      "sourceLocalUrl": "/sources/bunkyo-sokatsuhyo-r5/20233614280_1.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "令和5年度 文京区当初予算総括表",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20260717032646/https://www.city.bunkyo.lg.jp/documents/5568/20233614280_1.pdf",
+          "localUrl": "/sources/bunkyo-sokatsuhyo-r5/20233614280_1.pdf",
+          "source": "www.city.bunkyo.lg.jp",
+          "thumb": "20233614280_1.pdf ・ sha256 9b5dbfb18e4368b2… ・ 2026-07-17 取得"
+        }
+      ]
+    },
+    {
+      "muniCode": "131059",
+      "muniName": "文京区",
+      "prefName": "東京都",
+      "isPref": false,
+      "projects": [],
+      "execution": [],
+      "fy": "R4",
+      "fyLabel": "令和4年度 当初予算",
+      "population": 235345,
+      "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+      "totalOku": 1123.69,
+      "prevTotalOku": 1079.91,
+      "yoyLabel": "+4.1%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "特別区税",
+          "v": 359.89665,
+          "prevV": 350.86278,
+          "yoy": 2.6
+        },
+        {
+          "name": "特別区交付金",
+          "v": 214,
+          "prevV": 189,
+          "yoy": 13.2
+        },
+        {
+          "name": "国庫支出金",
+          "v": 159.67405,
+          "prevV": 136.22988,
+          "yoy": 17.2
+        },
+        {
+          "name": "繰入金",
+          "v": 134.80045,
+          "prevV": 168.45859,
+          "yoy": -20
+        },
+        {
+          "name": "都支出金",
+          "v": 88.77377,
+          "prevV": 92.42407,
+          "yoy": -3.9
+        },
+        {
+          "name": "地方消費税交付金",
+          "v": 56,
+          "prevV": 52,
+          "yoy": 7.7
+        },
+        {
+          "name": "諸収入",
+          "v": 25.28553,
+          "prevV": 23.13371,
+          "yoy": 9.3
+        },
+        {
+          "name": "特別区債",
+          "v": 25,
+          "prevV": 13,
+          "yoy": 92.3
+        },
+        {
+          "name": "その他",
+          "v": 60.259550000000004,
+          "prevV": 54.80097,
+          "yoy": null,
+          "children": [
+            {
+              "name": "使用料及び手数料",
+              "v": 19.66737,
+              "prevV": 18.53928,
+              "yoy": 6.1
+            },
+            {
+              "name": "分担金及び負担金",
+              "v": 17.55275,
+              "prevV": 16.80866,
+              "yoy": 4.4
+            },
+            {
+              "name": "株式等譲渡所得割交付金",
+              "v": 6.6,
+              "prevV": 3.5,
+              "yoy": 88.6
+            },
+            {
+              "name": "配当割交付金",
+              "v": 5.7,
+              "prevV": 5.1,
+              "yoy": 11.8
+            },
+            {
+              "name": "地方譲与税",
+              "v": 2.77,
+              "prevV": 2.72,
+              "yoy": 1.8
+            },
+            {
+              "name": "財産収入",
+              "v": 2.18067,
+              "prevV": 2.37197,
+              "yoy": -8.1
+            },
+            {
+              "name": "繰越金",
+              "v": 2,
+              "prevV": 2,
+              "yoy": 0
+            },
+            {
+              "name": "寄付金",
+              "v": 1.32875,
+              "prevV": 1.26105,
+              "yoy": 5.4
+            },
+            {
+              "name": "利子割交付金",
+              "v": 0.9,
+              "prevV": 1,
+              "yoy": -10
+            },
+            {
+              "name": "地方特例交付金",
+              "v": 0.74,
+              "prevV": 0.9,
+              "yoy": -17.8
+            },
+            {
+              "name": "環境性能割交付金",
+              "v": 0.64,
+              "prevV": 0.45,
+              "yoy": 42.2
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 0.18,
+              "prevV": 0.15,
+              "yoy": 20
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 0.00001,
+              "prevV": 0.00001,
+              "yoy": 0
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "民生費",
+          "v": 508.1028,
+          "prevV": 502.56881,
+          "yoy": 1.1
+        },
+        {
+          "name": "教育費",
+          "v": 184.41767,
+          "prevV": 188.25006,
+          "yoy": -2
+        },
+        {
+          "name": "総務費",
+          "v": 174.24899,
+          "prevV": 153.68531,
+          "yoy": 13.4
+        },
+        {
+          "name": "衛生費",
+          "v": 83.65024,
+          "prevV": 56.60427,
+          "yoy": 47.8
+        },
+        {
+          "name": "土木費",
+          "v": 56.86959,
+          "prevV": 55.90535,
+          "yoy": 1.7
+        },
+        {
+          "name": "資源環境費",
+          "v": 39.42897,
+          "prevV": 38.60234,
+          "yoy": 2.1
+        },
+        {
+          "name": "区民費",
+          "v": 35.38216,
+          "prevV": 38.31356,
+          "yoy": -7.7
+        },
+        {
+          "name": "都市整備費",
+          "v": 17.11622,
+          "prevV": 18.66623,
+          "yoy": -8.3
+        },
+        {
+          "name": "産業経済費",
+          "v": 9.12368,
+          "prevV": 11.29245,
+          "yoy": -19.2
+        },
+        {
+          "name": "議会費",
+          "v": 6.41849,
+          "prevV": 6.45645,
+          "yoy": -0.6
+        },
+        {
+          "name": "諸支出金",
+          "v": 5.93119,
+          "prevV": 6.56517,
+          "yoy": -9.7
+        },
+        {
+          "name": "予備費",
+          "v": 3,
+          "prevV": 3,
+          "yoy": 0
+        }
+      ],
+      "sourceTitle": "令和4年度 文京区当初予算総括表",
+      "sourceUrl": "https://web.archive.org/web/20241208070119/http://www.city.bunkyo.lg.jp/documents/5569/2022324164654.pdf",
+      "originUrl": "https://www.city.bunkyo.lg.jp/documents/5569/2022324164654.pdf",
+      "sourceLocalUrl": "/sources/bunkyo-sokatsuhyo-r4/2022324164654.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "令和4年度 文京区当初予算総括表",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20241208070119/http://www.city.bunkyo.lg.jp/documents/5569/2022324164654.pdf",
+          "localUrl": "/sources/bunkyo-sokatsuhyo-r4/2022324164654.pdf",
+          "source": "www.city.bunkyo.lg.jp",
+          "thumb": "2022324164654.pdf ・ sha256 69507651c3dc70e7… ・ 2026-07-17 取得"
+        }
+      ]
+    },
+    {
+      "muniCode": "131059",
+      "muniName": "文京区",
+      "prefName": "東京都",
+      "isPref": false,
+      "projects": [],
+      "execution": [],
+      "fy": "R3",
+      "fyLabel": "令和3年度 当初予算",
+      "population": 235345,
+      "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+      "totalOku": 1079.91,
+      "prevTotalOku": 1112.7,
+      "yoyLabel": "-2.9%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "特別区税",
+          "v": 350.86278,
+          "prevV": 351.47875,
+          "yoy": -0.2
+        },
+        {
+          "name": "特別区交付金",
+          "v": 189,
+          "prevV": 202,
+          "yoy": -6.4
+        },
+        {
+          "name": "繰入金",
+          "v": 168.45859,
+          "prevV": 152.1629,
+          "yoy": 10.7
+        },
+        {
+          "name": "国庫支出金",
+          "v": 136.22988,
+          "prevV": 166.8702,
+          "yoy": -18.4
+        },
+        {
+          "name": "都支出金",
+          "v": 92.42407,
+          "prevV": 96.89407,
+          "yoy": -4.6
+        },
+        {
+          "name": "地方消費税交付金",
+          "v": 52,
+          "prevV": 58,
+          "yoy": -10.3
+        },
+        {
+          "name": "諸収入",
+          "v": 23.13371,
+          "prevV": 22.39,
+          "yoy": 3.3
+        },
+        {
+          "name": "使用料及び手数料",
+          "v": 18.53928,
+          "prevV": 19.08133,
+          "yoy": -2.8
+        },
+        {
+          "name": "その他",
+          "v": 49.261689999999994,
+          "prevV": 43.822750000000006,
+          "yoy": null,
+          "children": [
+            {
+              "name": "分担金及び負担金",
+              "v": 16.80866,
+              "prevV": 14.81562,
+              "yoy": 13.5
+            },
+            {
+              "name": "特別区債",
+              "v": 13,
+              "prevV": 10,
+              "yoy": 30
+            },
+            {
+              "name": "配当割交付金",
+              "v": 5.1,
+              "prevV": 5.4,
+              "yoy": -5.6
+            },
+            {
+              "name": "株式等譲渡所得割交付金",
+              "v": 3.5,
+              "prevV": 3.1,
+              "yoy": 12.9
+            },
+            {
+              "name": "地方譲与税",
+              "v": 2.72,
+              "prevV": 2.78,
+              "yoy": -2.2
+            },
+            {
+              "name": "財産収入",
+              "v": 2.37197,
+              "prevV": 2.18024,
+              "yoy": 8.8
+            },
+            {
+              "name": "繰越金",
+              "v": 2,
+              "prevV": 2,
+              "yoy": 0
+            },
+            {
+              "name": "寄付金",
+              "v": 1.26105,
+              "prevV": 1.32688,
+              "yoy": -5
+            },
+            {
+              "name": "利子割交付金",
+              "v": 1,
+              "prevV": 0.9,
+              "yoy": 11.1
+            },
+            {
+              "name": "地方特例交付金",
+              "v": 0.9,
+              "prevV": 0.8,
+              "yoy": 12.5
+            },
+            {
+              "name": "環境性能割交付金",
+              "v": 0.45,
+              "prevV": 0.38,
+              "yoy": 18.4
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 0.15,
+              "prevV": 0.14,
+              "yoy": 7.1
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 0.00001,
+              "prevV": 0.00001,
+              "yoy": 0
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "民生費",
+          "v": 502.56881,
+          "prevV": 488.31643,
+          "yoy": 2.9
+        },
+        {
+          "name": "教育費",
+          "v": 188.25006,
+          "prevV": 194.71359,
+          "yoy": -3.3
+        },
+        {
+          "name": "総務費",
+          "v": 153.68531,
+          "prevV": 148.99735,
+          "yoy": 3.1
+        },
+        {
+          "name": "衛生費",
+          "v": 56.60427,
+          "prevV": 51.76278,
+          "yoy": 9.4
+        },
+        {
+          "name": "土木費",
+          "v": 55.90535,
+          "prevV": 54.5647,
+          "yoy": 2.5
+        },
+        {
+          "name": "資源環境費",
+          "v": 38.60234,
+          "prevV": 38.11541,
+          "yoy": 1.3
+        },
+        {
+          "name": "区民費",
+          "v": 38.31356,
+          "prevV": 36.07722,
+          "yoy": 6.2
+        },
+        {
+          "name": "都市整備費",
+          "v": 18.66623,
+          "prevV": 77.8942,
+          "yoy": -76
+        },
+        {
+          "name": "産業経済費",
+          "v": 11.29245,
+          "prevV": 6.30625,
+          "yoy": 79.1
+        },
+        {
+          "name": "諸支出金",
+          "v": 6.56517,
+          "prevV": 8.44312,
+          "yoy": -22.2
+        },
+        {
+          "name": "議会費",
+          "v": 6.45645,
+          "prevV": 6.50895,
+          "yoy": -0.8
+        },
+        {
+          "name": "予備費",
+          "v": 3,
+          "prevV": 1,
+          "yoy": 200
+        }
+      ],
+      "sourceTitle": "令和3年度 文京区当初予算総括表",
+      "sourceUrl": "https://web.archive.org/web/20241208050200/http://www.city.bunkyo.lg.jp/documents/5570/2021soukatuhyo.pdf",
+      "originUrl": "https://www.city.bunkyo.lg.jp/documents/5570/2021soukatuhyo.pdf",
+      "sourceLocalUrl": "/sources/bunkyo-sokatsuhyo-r3/2021soukatuhyo.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "令和3年度 文京区当初予算総括表",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20241208050200/http://www.city.bunkyo.lg.jp/documents/5570/2021soukatuhyo.pdf",
+          "localUrl": "/sources/bunkyo-sokatsuhyo-r3/2021soukatuhyo.pdf",
+          "source": "www.city.bunkyo.lg.jp",
+          "thumb": "2021soukatuhyo.pdf ・ sha256 faa5d9928e837cfe… ・ 2026-07-17 取得"
+        }
+      ]
+    },
+    {
+      "muniCode": "131059",
+      "muniName": "文京区",
+      "prefName": "東京都",
+      "isPref": false,
+      "projects": [],
+      "execution": [],
+      "fy": "R2",
+      "fyLabel": "令和2年度 当初予算",
+      "population": 235345,
+      "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+      "totalOku": 1112.7,
+      "prevTotalOku": 1022.76,
+      "yoyLabel": "+8.8%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "特別区税",
+          "v": 351.47875,
+          "prevV": 337.01268,
+          "yoy": 4.3
+        },
+        {
+          "name": "特別区交付金",
+          "v": 202,
+          "prevV": 180,
+          "yoy": 12.2
+        },
+        {
+          "name": "国庫支出金",
+          "v": 166.8702,
+          "prevV": 161.73925,
+          "yoy": 3.2
+        },
+        {
+          "name": "繰入金",
+          "v": 152.1629,
+          "prevV": 115.7441,
+          "yoy": 31.5
+        },
+        {
+          "name": "都支出金",
+          "v": 96.89407,
+          "prevV": 84.11668,
+          "yoy": 15.2
+        },
+        {
+          "name": "地方消費税交付金",
+          "v": 58,
+          "prevV": 49,
+          "yoy": 18.4
+        },
+        {
+          "name": "諸収入",
+          "v": 22.39,
+          "prevV": 20.44485,
+          "yoy": 9.5
+        },
+        {
+          "name": "使用料及び手数料",
+          "v": 19.08133,
+          "prevV": 19.99818,
+          "yoy": -4.6
+        },
+        {
+          "name": "その他",
+          "v": 43.822750000000006,
+          "prevV": 54.70426,
+          "yoy": null,
+          "children": [
+            {
+              "name": "分担金及び負担金",
+              "v": 14.81562,
+              "prevV": 16.16841,
+              "yoy": -8.4
+            },
+            {
+              "name": "特別区債",
+              "v": 10,
+              "prevV": 12,
+              "yoy": -16.7
+            },
+            {
+              "name": "配当割交付金",
+              "v": 5.4,
+              "prevV": 5.4,
+              "yoy": 0
+            },
+            {
+              "name": "株式等譲渡所得割交付金",
+              "v": 3.1,
+              "prevV": 5.3,
+              "yoy": -41.5
+            },
+            {
+              "name": "地方譲与税",
+              "v": 2.78,
+              "prevV": 2.58,
+              "yoy": 7.8
+            },
+            {
+              "name": "財産収入",
+              "v": 2.18024,
+              "prevV": 6.64708,
+              "yoy": -67.2
+            },
+            {
+              "name": "繰越金",
+              "v": 2,
+              "prevV": 2,
+              "yoy": 0
+            },
+            {
+              "name": "寄付金",
+              "v": 1.32688,
+              "prevV": 1.41877,
+              "yoy": -6.5
+            },
+            {
+              "name": "利子割交付金",
+              "v": 0.9,
+              "prevV": 1.4,
+              "yoy": -35.7
+            },
+            {
+              "name": "地方特例交付金",
+              "v": 0.8,
+              "prevV": 0.5,
+              "yoy": 60
+            },
+            {
+              "name": "環境性能割交付金",
+              "v": 0.38,
+              "prevV": 0.38,
+              "yoy": 0
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 0.14,
+              "prevV": 0.16,
+              "yoy": -12.5
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 0.00001,
+              "prevV": 0.75,
+              "yoy": -100
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "民生費",
+          "v": 488.31643,
+          "prevV": 454.43775,
+          "yoy": 7.5
+        },
+        {
+          "name": "教育費",
+          "v": 194.71359,
+          "prevV": 152.85749,
+          "yoy": 27.4
+        },
+        {
+          "name": "総務費",
+          "v": 148.99735,
+          "prevV": 127.27223,
+          "yoy": 17.1
+        },
+        {
+          "name": "都市整備費",
+          "v": 77.8942,
+          "prevV": 88.72489,
+          "yoy": -12.2
+        },
+        {
+          "name": "土木費",
+          "v": 54.5647,
+          "prevV": 53.174,
+          "yoy": 2.6
+        },
+        {
+          "name": "衛生費",
+          "v": 51.76278,
+          "prevV": 51.50893,
+          "yoy": 0.5
+        },
+        {
+          "name": "資源環境費",
+          "v": 38.11541,
+          "prevV": 35.61252,
+          "yoy": 7
+        },
+        {
+          "name": "区民費",
+          "v": 36.07722,
+          "prevV": 31.55262,
+          "yoy": 14.3
+        },
+        {
+          "name": "諸支出金",
+          "v": 8.44312,
+          "prevV": 13.99164,
+          "yoy": -39.7
+        },
+        {
+          "name": "議会費",
+          "v": 6.50895,
+          "prevV": 6.55233,
+          "yoy": -0.7
+        },
+        {
+          "name": "産業経済費",
+          "v": 6.30625,
+          "prevV": 6.0756,
+          "yoy": 3.8
+        },
+        {
+          "name": "予備費",
+          "v": 1,
+          "prevV": 1,
+          "yoy": 0
+        }
+      ],
+      "sourceTitle": "令和2年度 文京区当初予算総括表",
+      "sourceUrl": "https://web.archive.org/web/20241207231735/http://www.city.bunkyo.lg.jp/documents/5571/2020soukatsuhyou.pdf",
+      "originUrl": "https://www.city.bunkyo.lg.jp/documents/5571/2020soukatsuhyou.pdf",
+      "sourceLocalUrl": "/sources/bunkyo-sokatsuhyo-r2/2020soukatsuhyou.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "令和2年度 文京区当初予算総括表",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20241207231735/http://www.city.bunkyo.lg.jp/documents/5571/2020soukatsuhyou.pdf",
+          "localUrl": "/sources/bunkyo-sokatsuhyo-r2/2020soukatsuhyou.pdf",
+          "source": "www.city.bunkyo.lg.jp",
+          "thumb": "2020soukatsuhyou.pdf ・ sha256 d1b314721e0e5fa6… ・ 2026-07-17 取得"
+        }
+      ]
+    },
+    {
+      "muniCode": "131059",
+      "muniName": "文京区",
+      "prefName": "東京都",
+      "isPref": false,
+      "projects": [],
+      "execution": [],
+      "fy": "H31",
+      "fyLabel": "平成31年度 当初予算",
+      "population": 235345,
+      "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+      "totalOku": 1022.76,
+      "prevTotalOku": 966.47,
+      "yoyLabel": "+5.8%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "特別区税",
+          "v": 337.01268,
+          "prevV": 328.59329,
+          "yoy": 2.6
+        },
+        {
+          "name": "特別区交付金",
+          "v": 180,
+          "prevV": 171,
+          "yoy": 5.3
+        },
+        {
+          "name": "国庫支出金",
+          "v": 161.73925,
+          "prevV": 148.19448,
+          "yoy": 9.1
+        },
+        {
+          "name": "繰入金",
+          "v": 115.7441,
+          "prevV": 115.9066,
+          "yoy": -0.1
+        },
+        {
+          "name": "都支出金",
+          "v": 84.11668,
+          "prevV": 65.77544,
+          "yoy": 27.9
+        },
+        {
+          "name": "地方消費税交付金",
+          "v": 49,
+          "prevV": 50,
+          "yoy": -2
+        },
+        {
+          "name": "諸収入",
+          "v": 20.44485,
+          "prevV": 19.68914,
+          "yoy": 3.8
+        },
+        {
+          "name": "使用料及び手数料",
+          "v": 19.99818,
+          "prevV": 19.23761,
+          "yoy": 4
+        },
+        {
+          "name": "その他",
+          "v": 54.70426,
+          "prevV": 48.07344,
+          "yoy": null,
+          "children": [
+            {
+              "name": "分担金及び負担金",
+              "v": 16.16841,
+              "prevV": 19.3554,
+              "yoy": -16.5
+            },
+            {
+              "name": "特別区債",
+              "v": 12,
+              "prevV": 12,
+              "yoy": 0
+            },
+            {
+              "name": "財産収入",
+              "v": 6.64708,
+              "prevV": 2.7311,
+              "yoy": 143.4
+            },
+            {
+              "name": "配当割交付金",
+              "v": 5.4,
+              "prevV": 3.5,
+              "yoy": 54.3
+            },
+            {
+              "name": "株式等譲渡所得割交付金",
+              "v": 5.3,
+              "prevV": 2.2,
+              "yoy": 140.9
+            },
+            {
+              "name": "地方譲与税",
+              "v": 2.58,
+              "prevV": 2.4,
+              "yoy": 7.5
+            },
+            {
+              "name": "繰越金",
+              "v": 2,
+              "prevV": 2,
+              "yoy": 0
+            },
+            {
+              "name": "寄付金",
+              "v": 1.41877,
+              "prevV": 1.22694,
+              "yoy": 15.6
+            },
+            {
+              "name": "利子割交付金",
+              "v": 1.4,
+              "prevV": 0.9,
+              "yoy": 55.6
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 0.75,
+              "prevV": 1.1,
+              "yoy": -31.8
+            },
+            {
+              "name": "地方特例交付金",
+              "v": 0.5,
+              "prevV": 0.5,
+              "yoy": 0
+            },
+            {
+              "name": "環境性能割交付金",
+              "v": 0.38,
+              "prevV": 0,
+              "yoy": null
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 0.16,
+              "prevV": 0.16,
+              "yoy": 0
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "民生費",
+          "v": 454.31183,
+          "prevV": 404.13074,
+          "yoy": 12.4
+        },
+        {
+          "name": "教育費",
+          "v": 152.85749,
+          "prevV": 137.57371,
+          "yoy": 11.1
+        },
+        {
+          "name": "総務費",
+          "v": 127.27223,
+          "prevV": 134.64286,
+          "yoy": -5.5
+        },
+        {
+          "name": "都市整備費",
+          "v": 88.72489,
+          "prevV": 84.33435,
+          "yoy": 5.2
+        },
+        {
+          "name": "土木費",
+          "v": 53.174,
+          "prevV": 65.84412,
+          "yoy": -19.2
+        },
+        {
+          "name": "衛生費",
+          "v": 51.63485,
+          "prevV": 46.13683,
+          "yoy": 11.9
+        },
+        {
+          "name": "資源環境費",
+          "v": 35.61252,
+          "prevV": 35.54265,
+          "yoy": 0.2
+        },
+        {
+          "name": "区民費",
+          "v": 31.55262,
+          "prevV": 32.45025,
+          "yoy": -2.8
+        },
+        {
+          "name": "諸支出金",
+          "v": 13.99164,
+          "prevV": 12.28843,
+          "yoy": 13.9
+        },
+        {
+          "name": "議会費",
+          "v": 6.55233,
+          "prevV": 6.42084,
+          "yoy": 2
+        },
+        {
+          "name": "産業経済費",
+          "v": 6.0756,
+          "prevV": 6.10522,
+          "yoy": -0.5
+        },
+        {
+          "name": "予備費",
+          "v": 1,
+          "prevV": 1,
+          "yoy": 0
+        }
+      ],
+      "sourceTitle": "平成31年度 文京区当初予算総括表",
+      "sourceUrl": "https://web.archive.org/web/20241208065015/http://www.city.bunkyo.lg.jp/documents/5572/310208_gian_31tousyo_shiryo1_soukatsuhyou.pdf",
+      "originUrl": "https://www.city.bunkyo.lg.jp/documents/5572/310208_gian_31tousyo_shiryo1_soukatsuhyou.pdf",
+      "sourceLocalUrl": "/sources/bunkyo-sokatsuhyo-h31/310208_gian_31tousyo_shiryo1_soukatsuhyou.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "平成31年度 文京区当初予算総括表",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20241208065015/http://www.city.bunkyo.lg.jp/documents/5572/310208_gian_31tousyo_shiryo1_soukatsuhyou.pdf",
+          "localUrl": "/sources/bunkyo-sokatsuhyo-h31/310208_gian_31tousyo_shiryo1_soukatsuhyou.pdf",
+          "source": "www.city.bunkyo.lg.jp",
+          "thumb": "310208_gian_31tousyo_shiryo1_soukatsuhyou.pdf ・ sha256 9743159ac3c67cf6… ・ 2026-07-17 取得"
+        }
+      ]
+    },
+    {
+      "muniCode": "131059",
+      "muniName": "文京区",
+      "prefName": "東京都",
+      "isPref": false,
+      "projects": [],
+      "execution": [],
+      "fy": "H30",
+      "fyLabel": "平成30年度 当初予算",
+      "population": 235345,
+      "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+      "totalOku": 966.47,
+      "prevTotalOku": 895.34,
+      "yoyLabel": "+7.9%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "特別区税",
+          "v": 328.59329,
+          "prevV": 320.40162,
+          "yoy": 2.6
+        },
+        {
+          "name": "特別区交付金",
+          "v": 171,
+          "prevV": 164,
+          "yoy": 4.3
+        },
+        {
+          "name": "国庫支出金",
+          "v": 148.19448,
+          "prevV": 133.08589,
+          "yoy": 11.4
+        },
+        {
+          "name": "繰入金",
+          "v": 115.9066,
+          "prevV": 79.60798,
+          "yoy": 45.6
+        },
+        {
+          "name": "都支出金",
+          "v": 65.77544,
+          "prevV": 62.21356,
+          "yoy": 5.7
+        },
+        {
+          "name": "地方消費税交付金",
+          "v": 50,
+          "prevV": 53,
+          "yoy": -5.7
+        },
+        {
+          "name": "諸収入",
+          "v": 19.68914,
+          "prevV": 19.12262,
+          "yoy": 3
+        },
+        {
+          "name": "分担金及び負担金",
+          "v": 19.3554,
+          "prevV": 18.83157,
+          "yoy": 2.8
+        },
+        {
+          "name": "その他",
+          "v": 47.95565,
+          "prevV": 45.07676000000001,
+          "yoy": null,
+          "children": [
+            {
+              "name": "使用料及び手数料",
+              "v": 19.23761,
+              "prevV": 19.50709,
+              "yoy": -1.4
+            },
+            {
+              "name": "特別区債",
+              "v": 12,
+              "prevV": 8,
+              "yoy": 50
+            },
+            {
+              "name": "配当割交付金",
+              "v": 3.5,
+              "prevV": 2,
+              "yoy": 75
+            },
+            {
+              "name": "財産収入",
+              "v": 2.7311,
+              "prevV": 5.48332,
+              "yoy": -50.2
+            },
+            {
+              "name": "地方譲与税",
+              "v": 2.4,
+              "prevV": 2.4,
+              "yoy": 0
+            },
+            {
+              "name": "株式等譲渡所得割交付金",
+              "v": 2.2,
+              "prevV": 2.2,
+              "yoy": 0
+            },
+            {
+              "name": "繰越金",
+              "v": 2,
+              "prevV": 2,
+              "yoy": 0
+            },
+            {
+              "name": "寄付金",
+              "v": 1.22694,
+              "prevV": 1.12635,
+              "yoy": 8.9
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 1.1,
+              "prevV": 1,
+              "yoy": 10
+            },
+            {
+              "name": "利子割交付金",
+              "v": 0.9,
+              "prevV": 0.7,
+              "yoy": 28.6
+            },
+            {
+              "name": "地方特例交付金",
+              "v": 0.5,
+              "prevV": 0.5,
+              "yoy": 0
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 0.16,
+              "prevV": 0.16,
+              "yoy": 0
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "民生費",
+          "v": 404.13074,
+          "prevV": 396.55228,
+          "yoy": 1.9
+        },
+        {
+          "name": "教育費",
+          "v": 137.57371,
+          "prevV": 113.4259,
+          "yoy": 21.3
+        },
+        {
+          "name": "総務費",
+          "v": 134.24067,
+          "prevV": 109.03032,
+          "yoy": 23.1
+        },
+        {
+          "name": "都市整備費",
+          "v": 84.33435,
+          "prevV": 70.99829,
+          "yoy": 18.8
+        },
+        {
+          "name": "土木費",
+          "v": 65.84412,
+          "prevV": 54.05212,
+          "yoy": 21.8
+        },
+        {
+          "name": "衛生費",
+          "v": 46.13683,
+          "prevV": 42.76557,
+          "yoy": 7.9
+        },
+        {
+          "name": "資源環境費",
+          "v": 35.54265,
+          "prevV": 35.40512,
+          "yoy": 0.4
+        },
+        {
+          "name": "区民費",
+          "v": 32.85244,
+          "prevV": 33.46266,
+          "yoy": -1.8
+        },
+        {
+          "name": "諸支出金",
+          "v": 12.28843,
+          "prevV": 25.47086,
+          "yoy": -51.8
+        },
+        {
+          "name": "議会費",
+          "v": 6.42084,
+          "prevV": 6.65045,
+          "yoy": -3.5
+        },
+        {
+          "name": "産業経済費",
+          "v": 6.10522,
+          "prevV": 6.52643,
+          "yoy": -6.5
+        },
+        {
+          "name": "予備費",
+          "v": 1,
+          "prevV": 1,
+          "yoy": 0
+        }
+      ],
+      "sourceTitle": "平成30年度 文京区当初予算総括表",
+      "sourceUrl": "https://web.archive.org/web/20241208055114/http://www.city.bunkyo.lg.jp/documents/49/300208_gian_tousyo_shiryo1_soukatsuhyou.pdf",
+      "originUrl": "https://www.city.bunkyo.lg.jp/documents/49/300208_gian_tousyo_shiryo1_soukatsuhyou.pdf",
+      "sourceLocalUrl": "/sources/bunkyo-sokatsuhyo-h30/300208_gian_tousyo_shiryo1_soukatsuhyou.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "平成30年度 文京区当初予算総括表",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20241208055114/http://www.city.bunkyo.lg.jp/documents/49/300208_gian_tousyo_shiryo1_soukatsuhyou.pdf",
+          "localUrl": "/sources/bunkyo-sokatsuhyo-h30/300208_gian_tousyo_shiryo1_soukatsuhyou.pdf",
+          "source": "www.city.bunkyo.lg.jp",
+          "thumb": "300208_gian_tousyo_shiryo1_soukatsuhyou.pdf ・ sha256 4da2cec99c2ac321… ・ 2026-07-17 取得"
+        }
+      ]
+    },
+    {
+      "muniCode": "131059",
+      "muniName": "文京区",
+      "prefName": "東京都",
+      "isPref": false,
+      "projects": [],
+      "execution": [],
+      "fy": "H29",
+      "fyLabel": "平成29年度 当初予算",
+      "population": 235345,
+      "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+      "totalOku": 895.34,
+      "prevTotalOku": 824.88,
+      "yoyLabel": "+8.5%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "特別区税",
+          "v": 320.40162,
+          "prevV": 305.60549,
+          "yoy": 4.8
+        },
+        {
+          "name": "特別区交付金",
+          "v": 164,
+          "prevV": 167,
+          "yoy": -1.8
+        },
+        {
+          "name": "国庫支出金",
+          "v": 133.08589,
+          "prevV": 100.81706,
+          "yoy": 32
+        },
+        {
+          "name": "繰入金",
+          "v": 79.60798,
+          "prevV": 72.40101,
+          "yoy": 10
+        },
+        {
+          "name": "都支出金",
+          "v": 62.21356,
+          "prevV": 45.06311,
+          "yoy": 38.1
+        },
+        {
+          "name": "地方消費税交付金",
+          "v": 53,
+          "prevV": 55,
+          "yoy": -3.6
+        },
+        {
+          "name": "使用料及び手数料",
+          "v": 19.50709,
+          "prevV": 19.63094,
+          "yoy": -0.6
+        },
+        {
+          "name": "諸収入",
+          "v": 19.12262,
+          "prevV": 18.80363,
+          "yoy": 1.7
+        },
+        {
+          "name": "その他",
+          "v": 44.40124,
+          "prevV": 40.55876,
+          "yoy": null,
+          "children": [
+            {
+              "name": "分担金及び負担金",
+              "v": 18.83157,
+              "prevV": 17.59518,
+              "yoy": 7
+            },
+            {
+              "name": "特別区債",
+              "v": 8,
+              "prevV": 0,
+              "yoy": null
+            },
+            {
+              "name": "財産収入",
+              "v": 5.48332,
+              "prevV": 2.79691,
+              "yoy": 96
+            },
+            {
+              "name": "地方譲与税",
+              "v": 2.4,
+              "prevV": 2.4,
+              "yoy": 0
+            },
+            {
+              "name": "株式等譲渡所得割交付金",
+              "v": 2.2,
+              "prevV": 4.5,
+              "yoy": -51.1
+            },
+            {
+              "name": "配当割交付金",
+              "v": 2,
+              "prevV": 6,
+              "yoy": -66.7
+            },
+            {
+              "name": "繰越金",
+              "v": 2,
+              "prevV": 2,
+              "yoy": 0
+            },
+            {
+              "name": "寄付金",
+              "v": 1.12635,
+              "prevV": 0.94667,
+              "yoy": 19
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 1,
+              "prevV": 1.15,
+              "yoy": -13
+            },
+            {
+              "name": "利子割交付金",
+              "v": 0.7,
+              "prevV": 2.5,
+              "yoy": -72
+            },
+            {
+              "name": "地方特例交付金",
+              "v": 0.5,
+              "prevV": 0.5,
+              "yoy": 0
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 0.16,
+              "prevV": 0.17,
+              "yoy": -5.9
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "民生費",
+          "v": 396.97538,
+          "prevV": 373.43035,
+          "yoy": 6.3
+        },
+        {
+          "name": "教育費",
+          "v": 113.4259,
+          "prevV": 121.74425,
+          "yoy": -6.8
+        },
+        {
+          "name": "総務費",
+          "v": 109.03032,
+          "prevV": 119.49836,
+          "yoy": -8.8
+        },
+        {
+          "name": "都市整備費",
+          "v": 70.99829,
+          "prevV": 28.26015,
+          "yoy": 151.2
+        },
+        {
+          "name": "土木費",
+          "v": 54.05212,
+          "prevV": 42.90961,
+          "yoy": 26
+        },
+        {
+          "name": "衛生費",
+          "v": 42.34247,
+          "prevV": 40.01934,
+          "yoy": 5.8
+        },
+        {
+          "name": "資源環境費",
+          "v": 35.40512,
+          "prevV": 34.57677,
+          "yoy": 2.4
+        },
+        {
+          "name": "区民費",
+          "v": 33.46266,
+          "prevV": 29.82015,
+          "yoy": 12.2
+        },
+        {
+          "name": "諸支出金",
+          "v": 25.47086,
+          "prevV": 19.95356,
+          "yoy": 27.7
+        },
+        {
+          "name": "議会費",
+          "v": 6.65045,
+          "prevV": 6.64586,
+          "yoy": 0.1
+        },
+        {
+          "name": "産業経済費",
+          "v": 6.52643,
+          "prevV": 7.0216,
+          "yoy": -7.1
+        },
+        {
+          "name": "予備費",
+          "v": 1,
+          "prevV": 1,
+          "yoy": 0
+        }
+      ],
+      "sourceTitle": "平成29年度 文京区当初予算総括表",
+      "sourceUrl": "https://web.archive.org/web/20260717033048/https://www.city.bunkyo.lg.jp/documents/5573/29soukatsuhyou.pdf",
+      "originUrl": "https://www.city.bunkyo.lg.jp/documents/5573/29soukatsuhyou.pdf",
+      "sourceLocalUrl": "/sources/bunkyo-sokatsuhyo-h29/29soukatsuhyou.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "平成29年度 文京区当初予算総括表",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20260717033048/https://www.city.bunkyo.lg.jp/documents/5573/29soukatsuhyou.pdf",
+          "localUrl": "/sources/bunkyo-sokatsuhyo-h29/29soukatsuhyou.pdf",
+          "source": "www.city.bunkyo.lg.jp",
+          "thumb": "29soukatsuhyou.pdf ・ sha256 72a0759016ce7de8… ・ 2026-07-17 取得"
+        }
+      ]
+    },
+    {
+      "muniCode": "131059",
+      "muniName": "文京区",
+      "prefName": "東京都",
+      "isPref": false,
+      "projects": [],
+      "execution": [],
+      "fy": "H28",
+      "fyLabel": "平成28年度 当初予算",
+      "population": 235345,
+      "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+      "totalOku": 824.88,
+      "prevTotalOku": 817.78,
+      "yoyLabel": "+0.9%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "特別区税",
+          "v": 305.60549,
+          "prevV": 302.04692,
+          "yoy": 1.2
+        },
+        {
+          "name": "特別区交付金",
+          "v": 167,
+          "prevV": 158,
+          "yoy": 5.7
+        },
+        {
+          "name": "国庫支出金",
+          "v": 100.81706,
+          "prevV": 117.27973,
+          "yoy": -14
+        },
+        {
+          "name": "繰入金",
+          "v": 72.40101,
+          "prevV": 70.62753,
+          "yoy": 2.5
+        },
+        {
+          "name": "地方消費税交付金",
+          "v": 55,
+          "prevV": 52,
+          "yoy": 5.8
+        },
+        {
+          "name": "都支出金",
+          "v": 45.06311,
+          "prevV": 45.79503,
+          "yoy": -1.6
+        },
+        {
+          "name": "使用料及び手数料",
+          "v": 19.63094,
+          "prevV": 18.11227,
+          "yoy": 8.4
+        },
+        {
+          "name": "諸収入",
+          "v": 18.80363,
+          "prevV": 18.62049,
+          "yoy": 1
+        },
+        {
+          "name": "その他",
+          "v": 40.55875999999999,
+          "prevV": 35.29803,
+          "yoy": null,
+          "children": [
+            {
+              "name": "分担金及び負担金",
+              "v": 17.59518,
+              "prevV": 15.46928,
+              "yoy": 13.7
+            },
+            {
+              "name": "配当割交付金",
+              "v": 6,
+              "prevV": 3.5,
+              "yoy": 71.4
+            },
+            {
+              "name": "株式等譲渡所得割交付金",
+              "v": 4.5,
+              "prevV": 3,
+              "yoy": 50
+            },
+            {
+              "name": "財産収入",
+              "v": 2.79691,
+              "prevV": 3.09771,
+              "yoy": -9.7
+            },
+            {
+              "name": "利子割交付金",
+              "v": 2.5,
+              "prevV": 3.5,
+              "yoy": -28.6
+            },
+            {
+              "name": "地方譲与税",
+              "v": 2.4,
+              "prevV": 2.4,
+              "yoy": 0
+            },
+            {
+              "name": "繰越金",
+              "v": 2,
+              "prevV": 2,
+              "yoy": 0
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 1.15,
+              "prevV": 0.7,
+              "yoy": 64.3
+            },
+            {
+              "name": "寄付金",
+              "v": 0.94667,
+              "prevV": 0.94104,
+              "yoy": 0.6
+            },
+            {
+              "name": "地方特例交付金",
+              "v": 0.5,
+              "prevV": 0.5,
+              "yoy": 0
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 0.17,
+              "prevV": 0.19,
+              "yoy": -10.5
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "民生費",
+          "v": 373.43035,
+          "prevV": 342.86272,
+          "yoy": 8.9
+        },
+        {
+          "name": "教育費",
+          "v": 121.74425,
+          "prevV": 108.14435,
+          "yoy": 12.6
+        },
+        {
+          "name": "総務費",
+          "v": 119.69794,
+          "prevV": 129.41223,
+          "yoy": -7.5
+        },
+        {
+          "name": "土木費",
+          "v": 42.90961,
+          "prevV": 39.67091,
+          "yoy": 8.2
+        },
+        {
+          "name": "衛生費",
+          "v": 40.01934,
+          "prevV": 37.02526,
+          "yoy": 8.1
+        },
+        {
+          "name": "資源環境費",
+          "v": 34.57677,
+          "prevV": 34.49488,
+          "yoy": 0.2
+        },
+        {
+          "name": "区民費",
+          "v": 29.82015,
+          "prevV": 30.36411,
+          "yoy": -1.8
+        },
+        {
+          "name": "都市整備費",
+          "v": 28.06057,
+          "prevV": 62.0528,
+          "yoy": -54.8
+        },
+        {
+          "name": "諸支出金",
+          "v": 19.95356,
+          "prevV": 18.73648,
+          "yoy": 6.5
+        },
+        {
+          "name": "産業経済費",
+          "v": 7.0216,
+          "prevV": 6.91363,
+          "yoy": 1.6
+        },
+        {
+          "name": "議会費",
+          "v": 6.64586,
+          "prevV": 7.10263,
+          "yoy": -6.4
+        },
+        {
+          "name": "予備費",
+          "v": 1,
+          "prevV": 1,
+          "yoy": 0
+        }
+      ],
+      "sourceTitle": "平成28年度 文京区当初予算総括表",
+      "sourceUrl": "https://web.archive.org/web/20241208002855/http://www.city.bunkyo.lg.jp/documents/5574/28soukatsuhyou.pdf",
+      "originUrl": "https://www.city.bunkyo.lg.jp/documents/5574/28soukatsuhyou.pdf",
+      "sourceLocalUrl": "/sources/bunkyo-sokatsuhyo-h28/28soukatsuhyou.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "平成28年度 文京区当初予算総括表",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20241208002855/http://www.city.bunkyo.lg.jp/documents/5574/28soukatsuhyou.pdf",
+          "localUrl": "/sources/bunkyo-sokatsuhyo-h28/28soukatsuhyou.pdf",
+          "source": "www.city.bunkyo.lg.jp",
+          "thumb": "28soukatsuhyou.pdf ・ sha256 cba14f69ba78b21c… ・ 2026-07-17 取得"
+        }
+      ]
+    },
+    {
+      "muniCode": "131059",
+      "muniName": "文京区",
+      "prefName": "東京都",
+      "isPref": false,
+      "projects": [],
+      "execution": [],
+      "fy": "H27",
+      "fyLabel": "平成27年度 当初予算",
+      "population": 235345,
+      "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+      "totalOku": 817.78,
+      "prevTotalOku": 761.55,
+      "yoyLabel": "+7.4%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "特別区税",
+          "v": 302.04692,
+          "prevV": 283.46057,
+          "yoy": 6.6
+        },
+        {
+          "name": "特別区交付金",
+          "v": 158,
+          "prevV": 160,
+          "yoy": -1.2
+        },
+        {
+          "name": "国庫支出金",
+          "v": 117.27973,
+          "prevV": 91.06457,
+          "yoy": 28.8
+        },
+        {
+          "name": "繰入金",
+          "v": 70.62753,
+          "prevV": 69.05243,
+          "yoy": 2.3
+        },
+        {
+          "name": "地方消費税交付金",
+          "v": 52,
+          "prevV": 39,
+          "yoy": 33.3
+        },
+        {
+          "name": "都支出金",
+          "v": 45.79503,
+          "prevV": 40.89596,
+          "yoy": 12
+        },
+        {
+          "name": "諸収入",
+          "v": 18.62049,
+          "prevV": 18.20485,
+          "yoy": 2.3
+        },
+        {
+          "name": "使用料及び手数料",
+          "v": 18.11227,
+          "prevV": 17.74702,
+          "yoy": 2.1
+        },
+        {
+          "name": "その他",
+          "v": 35.29803,
+          "prevV": 42.1246,
+          "yoy": null,
+          "children": [
+            {
+              "name": "分担金及び負担金",
+              "v": 15.46928,
+              "prevV": 13.93303,
+              "yoy": 11
+            },
+            {
+              "name": "利子割交付金",
+              "v": 3.5,
+              "prevV": 3,
+              "yoy": 16.7
+            },
+            {
+              "name": "配当割交付金",
+              "v": 3.5,
+              "prevV": 3,
+              "yoy": 16.7
+            },
+            {
+              "name": "財産収入",
+              "v": 3.09771,
+              "prevV": 2.57154,
+              "yoy": 20.5
+            },
+            {
+              "name": "株式等譲渡所得割交付金",
+              "v": 3,
+              "prevV": 2.8,
+              "yoy": 7.1
+            },
+            {
+              "name": "地方譲与税",
+              "v": 2.4,
+              "prevV": 2.5,
+              "yoy": -4
+            },
+            {
+              "name": "繰越金",
+              "v": 2,
+              "prevV": 2,
+              "yoy": 0
+            },
+            {
+              "name": "寄付金",
+              "v": 0.94104,
+              "prevV": 0.90003,
+              "yoy": 4.6
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 0.7,
+              "prevV": 0.7,
+              "yoy": 0
+            },
+            {
+              "name": "地方特例交付金",
+              "v": 0.5,
+              "prevV": 0.5,
+              "yoy": 0
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 0.19,
+              "prevV": 0.22,
+              "yoy": -13.6
+            },
+            {
+              "name": "（特別区債）",
+              "v": 0,
+              "prevV": 10,
+              "yoy": -100
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "民生費",
+          "v": 339.76718,
+          "prevV": 310.54197,
+          "yoy": 9.4
+        },
+        {
+          "name": "総務費",
+          "v": 132.09429,
+          "prevV": 132.60537,
+          "yoy": -0.4
+        },
+        {
+          "name": "教育費",
+          "v": 108.40889,
+          "prevV": 104.24082,
+          "yoy": 4
+        },
+        {
+          "name": "都市整備費",
+          "v": 62.0528,
+          "prevV": 43.07921,
+          "yoy": 44
+        },
+        {
+          "name": "土木費",
+          "v": 39.67091,
+          "prevV": 34.09271,
+          "yoy": 16.4
+        },
+        {
+          "name": "衛生費",
+          "v": 37.02526,
+          "prevV": 35.67563,
+          "yoy": 3.8
+        },
+        {
+          "name": "資源環境費",
+          "v": 34.49488,
+          "prevV": 35.95326,
+          "yoy": -4.1
+        },
+        {
+          "name": "区民費",
+          "v": 30.51305,
+          "prevV": 29.61319,
+          "yoy": 3
+        },
+        {
+          "name": "諸支出金",
+          "v": 18.73648,
+          "prevV": 20.5089,
+          "yoy": -8.6
+        },
+        {
+          "name": "議会費",
+          "v": 7.10263,
+          "prevV": 6.53151,
+          "yoy": 8.7
+        },
+        {
+          "name": "産業経済費",
+          "v": 6.91363,
+          "prevV": 7.70743,
+          "yoy": -10.3
+        },
+        {
+          "name": "予備費",
+          "v": 1,
+          "prevV": 1,
+          "yoy": 0
+        }
+      ],
+      "sourceTitle": "平成27年度 文京区当初予算総括表",
+      "sourceUrl": "https://web.archive.org/web/20241207230104/http://www.city.bunkyo.lg.jp/documents/5575/26soukatsuhyo.pdf",
+      "originUrl": "https://www.city.bunkyo.lg.jp/documents/5575/26soukatsuhyo.pdf",
+      "sourceLocalUrl": "/sources/bunkyo-sokatsuhyo-h27/26soukatsuhyo.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "平成27年度 文京区当初予算総括表",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20241207230104/http://www.city.bunkyo.lg.jp/documents/5575/26soukatsuhyo.pdf",
+          "localUrl": "/sources/bunkyo-sokatsuhyo-h27/26soukatsuhyo.pdf",
+          "source": "www.city.bunkyo.lg.jp",
+          "thumb": "26soukatsuhyo.pdf ・ sha256 1af0b3417edb690c… ・ 2026-07-17 取得"
+        }
+      ]
+    },
+    {
+      "muniCode": "131059",
+      "muniName": "文京区",
+      "prefName": "東京都",
+      "isPref": false,
+      "projects": [],
+      "execution": [],
+      "fy": "H26",
+      "fyLabel": "平成26年度 当初予算",
+      "population": 235345,
+      "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+      "totalOku": 761.55,
+      "prevTotalOku": 710.44,
+      "yoyLabel": "+7.2%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "特別区税",
+          "v": 283.46057,
+          "prevV": 273.5166,
+          "yoy": 3.6
+        },
+        {
+          "name": "特別区交付金",
+          "v": 160,
+          "prevV": 141,
+          "yoy": 13.5
+        },
+        {
+          "name": "国庫支出金",
+          "v": 91.06457,
+          "prevV": 82.36075,
+          "yoy": 10.6
+        },
+        {
+          "name": "繰入金",
+          "v": 69.05243,
+          "prevV": 77.08273,
+          "yoy": -10.4
+        },
+        {
+          "name": "都支出金",
+          "v": 40.89596,
+          "prevV": 36.64716,
+          "yoy": 11.6
+        },
+        {
+          "name": "地方消費税交付金",
+          "v": 39,
+          "prevV": 33,
+          "yoy": 18.2
+        },
+        {
+          "name": "諸収入",
+          "v": 18.20485,
+          "prevV": 15.31832,
+          "yoy": 18.8
+        },
+        {
+          "name": "使用料及び手数料",
+          "v": 17.74702,
+          "prevV": 16.90561,
+          "yoy": 5
+        },
+        {
+          "name": "その他",
+          "v": 42.1246,
+          "prevV": 34.60883,
+          "yoy": null,
+          "children": [
+            {
+              "name": "分担金及び負担金",
+              "v": 13.93303,
+              "prevV": 13.25938,
+              "yoy": 5.1
+            },
+            {
+              "name": "特別区債",
+              "v": 10,
+              "prevV": 7,
+              "yoy": 42.9
+            },
+            {
+              "name": "利子割交付金",
+              "v": 3,
+              "prevV": 2.5,
+              "yoy": 20
+            },
+            {
+              "name": "配当割交付金",
+              "v": 3,
+              "prevV": 1.5,
+              "yoy": 100
+            },
+            {
+              "name": "株式等譲渡所得割交付金",
+              "v": 2.8,
+              "prevV": 0.2,
+              "yoy": 1300
+            },
+            {
+              "name": "財産収入",
+              "v": 2.57154,
+              "prevV": 2.56655,
+              "yoy": 0.2
+            },
+            {
+              "name": "地方譲与税",
+              "v": 2.5,
+              "prevV": 2.7,
+              "yoy": -7.4
+            },
+            {
+              "name": "繰越金",
+              "v": 2,
+              "prevV": 2,
+              "yoy": 0
+            },
+            {
+              "name": "寄付金",
+              "v": 0.90003,
+              "prevV": 0.8629,
+              "yoy": 4.3
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 0.7,
+              "prevV": 1.3,
+              "yoy": -46.2
+            },
+            {
+              "name": "地方特例交付金",
+              "v": 0.5,
+              "prevV": 0.5,
+              "yoy": 0
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 0.22,
+              "prevV": 0.22,
+              "yoy": 0
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "民生費",
+          "v": 313.30864,
+          "prevV": 301.47162,
+          "yoy": 3.9
+        },
+        {
+          "name": "総務費",
+          "v": 132.60537,
+          "prevV": 108.46619,
+          "yoy": 22.3
+        },
+        {
+          "name": "教育費",
+          "v": 101.47415,
+          "prevV": 106.49623,
+          "yoy": -4.7
+        },
+        {
+          "name": "都市整備費",
+          "v": 43.07921,
+          "prevV": 25.93042,
+          "yoy": 66.1
+        },
+        {
+          "name": "資源環境費",
+          "v": 35.95326,
+          "prevV": 36.05461,
+          "yoy": -0.3
+        },
+        {
+          "name": "衛生費",
+          "v": 35.67563,
+          "prevV": 33.87778,
+          "yoy": 5.3
+        },
+        {
+          "name": "土木費",
+          "v": 34.09271,
+          "prevV": 28.65922,
+          "yoy": 19
+        },
+        {
+          "name": "区民費",
+          "v": 29.61319,
+          "prevV": 28.66882,
+          "yoy": 3.3
+        },
+        {
+          "name": "諸支出金",
+          "v": 20.5089,
+          "prevV": 25.34946,
+          "yoy": -19.1
+        },
+        {
+          "name": "産業経済費",
+          "v": 7.70743,
+          "prevV": 7.53333,
+          "yoy": 2.3
+        },
+        {
+          "name": "議会費",
+          "v": 6.53151,
+          "prevV": 6.93232,
+          "yoy": -5.8
+        },
+        {
+          "name": "予備費",
+          "v": 1,
+          "prevV": 1,
+          "yoy": 0
+        }
+      ],
+      "sourceTitle": "平成26年度 文京区当初予算総括表",
+      "sourceUrl": "https://web.archive.org/web/20241208003445/http://www.city.bunkyo.lg.jp/documents/5576/26soukatsuhyo_1.pdf",
+      "originUrl": "https://www.city.bunkyo.lg.jp/documents/5576/26soukatsuhyo_1.pdf",
+      "sourceLocalUrl": "/sources/bunkyo-sokatsuhyo-h26/26soukatsuhyo_1.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "平成26年度 文京区当初予算総括表",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20241208003445/http://www.city.bunkyo.lg.jp/documents/5576/26soukatsuhyo_1.pdf",
+          "localUrl": "/sources/bunkyo-sokatsuhyo-h26/26soukatsuhyo_1.pdf",
+          "source": "www.city.bunkyo.lg.jp",
+          "thumb": "26soukatsuhyo_1.pdf ・ sha256 438987774d9aaafc… ・ 2026-07-17 取得"
+        }
+      ]
+    },
+    {
+      "muniCode": "131059",
+      "muniName": "文京区",
+      "prefName": "東京都",
+      "isPref": false,
+      "projects": [],
+      "execution": [],
+      "fy": "H24",
+      "fyLabel": "平成24年度 当初予算",
+      "population": 235345,
+      "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+      "totalOku": 694.97,
+      "prevTotalOku": 703.93,
+      "yoyLabel": "-1.3%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "特別区税",
+          "v": 266.49852,
+          "prevV": 262.15058,
+          "yoy": 1.7
+        },
+        {
+          "name": "特別区交付金",
+          "v": 143,
+          "prevV": 147,
+          "yoy": -2.7
+        },
+        {
+          "name": "国庫支出金",
+          "v": 78.48241,
+          "prevV": 85.28254,
+          "yoy": -8
+        },
+        {
+          "name": "繰入金",
+          "v": 75.47846,
+          "prevV": 83.59834,
+          "yoy": -9.7
+        },
+        {
+          "name": "都支出金",
+          "v": 35.13026,
+          "prevV": 34.33788,
+          "yoy": 2.3
+        },
+        {
+          "name": "地方消費税交付金",
+          "v": 28,
+          "prevV": 28,
+          "yoy": 0
+        },
+        {
+          "name": "諸収入",
+          "v": 16.89246,
+          "prevV": 16.38228,
+          "yoy": 3.1
+        },
+        {
+          "name": "使用料及び手数料",
+          "v": 16.70103,
+          "prevV": 16.76182,
+          "yoy": -0.4
+        },
+        {
+          "name": "その他",
+          "v": 34.78686,
+          "prevV": 30.416560000000004,
+          "yoy": null,
+          "children": [
+            {
+              "name": "分担金及び負担金",
+              "v": 13.07434,
+              "prevV": 12.85449,
+              "yoy": 1.7
+            },
+            {
+              "name": "特別区債",
+              "v": 7,
+              "prevV": 2,
+              "yoy": 250
+            },
+            {
+              "name": "財産収入",
+              "v": 2.88761,
+              "prevV": 2.91867,
+              "yoy": -1.1
+            },
+            {
+              "name": "地方譲与税",
+              "v": 2.8,
+              "prevV": 2.8,
+              "yoy": 0
+            },
+            {
+              "name": "利子割交付金",
+              "v": 2.5,
+              "prevV": 2.5,
+              "yoy": 0
+            },
+            {
+              "name": "繰越金",
+              "v": 2,
+              "prevV": 2,
+              "yoy": 0
+            },
+            {
+              "name": "配当割交付金",
+              "v": 1.5,
+              "prevV": 0.8,
+              "yoy": 87.5
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 1.3,
+              "prevV": 1,
+              "yoy": 30
+            },
+            {
+              "name": "寄付金",
+              "v": 0.90491,
+              "prevV": 0.9934,
+              "yoy": -8.9
+            },
+            {
+              "name": "地方特例交付金",
+              "v": 0.4,
+              "prevV": 2.1,
+              "yoy": -81
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 0.22,
+              "prevV": 0.25,
+              "yoy": -12
+            },
+            {
+              "name": "株式等譲渡所得割交付金",
+              "v": 0.2,
+              "prevV": 0.2,
+              "yoy": 0
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "民生費",
+          "v": 284.84671,
+          "prevV": 295.42588,
+          "yoy": -3.6
+        },
+        {
+          "name": "総務費",
+          "v": 124.99189,
+          "prevV": 115.38502,
+          "yoy": 8.3
+        },
+        {
+          "name": "教育費",
+          "v": 83.80273,
+          "prevV": 85.91141,
+          "yoy": -2.5
+        },
+        {
+          "name": "資源環境費",
+          "v": 36.77524,
+          "prevV": 37.53271,
+          "yoy": -2
+        },
+        {
+          "name": "衛生費",
+          "v": 33.15796,
+          "prevV": 33.48194,
+          "yoy": -1
+        },
+        {
+          "name": "区民費",
+          "v": 31.28684,
+          "prevV": 35.65011,
+          "yoy": -12.2
+        },
+        {
+          "name": "土木費",
+          "v": 30.23549,
+          "prevV": 29.99919,
+          "yoy": 0.8
+        },
+        {
+          "name": "都市整備費",
+          "v": 28.70383,
+          "prevV": 18.82004,
+          "yoy": 52.5
+        },
+        {
+          "name": "諸支出金",
+          "v": 24.9887,
+          "prevV": 34.67394,
+          "yoy": -27.9
+        },
+        {
+          "name": "産業経済費",
+          "v": 8.23015,
+          "prevV": 8.30394,
+          "yoy": -0.9
+        },
+        {
+          "name": "議会費",
+          "v": 6.95046,
+          "prevV": 7.74582,
+          "yoy": -10.3
+        },
+        {
+          "name": "予備費",
+          "v": 1,
+          "prevV": 1,
+          "yoy": 0
+        }
+      ],
+      "sourceTitle": "平成24年度 文京区当初予算総括表",
+      "sourceUrl": "https://web.archive.org/web/20241207235016/http://www.city.bunkyo.lg.jp/documents/5578/24yosansoukatsuhyou.pdf",
+      "originUrl": "https://www.city.bunkyo.lg.jp/documents/5578/24yosansoukatsuhyou.pdf",
+      "sourceLocalUrl": "/sources/bunkyo-sokatsuhyo-h24/24yosansoukatsuhyou.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "平成24年度 文京区当初予算総括表",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20241207235016/http://www.city.bunkyo.lg.jp/documents/5578/24yosansoukatsuhyou.pdf",
+          "localUrl": "/sources/bunkyo-sokatsuhyo-h24/24yosansoukatsuhyou.pdf",
+          "source": "www.city.bunkyo.lg.jp",
+          "thumb": "24yosansoukatsuhyou.pdf ・ sha256 45ff2c2c65423e56… ・ 2026-07-17 取得"
+        }
+      ]
+    },
+    {
+      "muniCode": "131059",
+      "muniName": "文京区",
+      "prefName": "東京都",
+      "isPref": false,
+      "projects": [],
+      "execution": [],
+      "fy": "H23",
+      "fyLabel": "平成23年度 当初予算",
+      "population": 235345,
+      "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+      "totalOku": 703.93,
+      "prevTotalOku": 625.71,
+      "yoyLabel": "+12.5%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "特別区税",
+          "v": 262.15058,
+          "prevV": 272.05059,
+          "yoy": -3.6
+        },
+        {
+          "name": "特別区交付金",
+          "v": 147,
+          "prevV": 138,
+          "yoy": 6.5
+        },
+        {
+          "name": "国庫支出金",
+          "v": 85.28254,
+          "prevV": 57.11352,
+          "yoy": 49.3
+        },
+        {
+          "name": "繰入金",
+          "v": 83.59834,
+          "prevV": 41.36024,
+          "yoy": 102.1
+        },
+        {
+          "name": "都支出金",
+          "v": 34.33788,
+          "prevV": 29.56727,
+          "yoy": 16.1
+        },
+        {
+          "name": "地方消費税交付金",
+          "v": 28,
+          "prevV": 28,
+          "yoy": 0
+        },
+        {
+          "name": "使用料及び手数料",
+          "v": 16.76182,
+          "prevV": 16.69166,
+          "yoy": 0.4
+        },
+        {
+          "name": "諸収入",
+          "v": 16.38228,
+          "prevV": 15.21844,
+          "yoy": 7.6
+        },
+        {
+          "name": "その他",
+          "v": 30.416560000000004,
+          "prevV": 27.70828,
+          "yoy": null,
+          "children": [
+            {
+              "name": "分担金及び負担金",
+              "v": 12.85449,
+              "prevV": 12.50097,
+              "yoy": 2.8
+            },
+            {
+              "name": "財産収入",
+              "v": 2.91867,
+              "prevV": 3.14397,
+              "yoy": -7.2
+            },
+            {
+              "name": "地方譲与税",
+              "v": 2.8,
+              "prevV": 3,
+              "yoy": -6.7
+            },
+            {
+              "name": "利子割交付金",
+              "v": 2.5,
+              "prevV": 2.5,
+              "yoy": 0
+            },
+            {
+              "name": "地方特例交付金",
+              "v": 2.1,
+              "prevV": 1.2,
+              "yoy": 75
+            },
+            {
+              "name": "繰越金",
+              "v": 2,
+              "prevV": 2,
+              "yoy": 0
+            },
+            {
+              "name": "特別区債",
+              "v": 2,
+              "prevV": 0,
+              "yoy": null
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 1,
+              "prevV": 1,
+              "yoy": 0
+            },
+            {
+              "name": "寄付金",
+              "v": 0.9934,
+              "prevV": 1.10334,
+              "yoy": -10
+            },
+            {
+              "name": "配当割交付金",
+              "v": 0.8,
+              "prevV": 0.8,
+              "yoy": 0
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 0.25,
+              "prevV": 0.26,
+              "yoy": -3.8
+            },
+            {
+              "name": "株式等譲渡所得割交付金",
+              "v": 0.2,
+              "prevV": 0.2,
+              "yoy": 0
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "民生費",
+          "v": 295.42588,
+          "prevV": 241.7988,
+          "yoy": 22.2
+        },
+        {
+          "name": "総務費",
+          "v": 115.38502,
+          "prevV": 96.45397,
+          "yoy": 19.6
+        },
+        {
+          "name": "教育費",
+          "v": 85.91141,
+          "prevV": 80.22831,
+          "yoy": 7.1
+        },
+        {
+          "name": "資源環境費",
+          "v": 37.53271,
+          "prevV": 38.00508,
+          "yoy": -1.2
+        },
+        {
+          "name": "区民費",
+          "v": 35.65011,
+          "prevV": 33.59783,
+          "yoy": 6.1
+        },
+        {
+          "name": "諸支出金",
+          "v": 34.67394,
+          "prevV": 33.85619,
+          "yoy": 2.4
+        },
+        {
+          "name": "衛生費",
+          "v": 33.48194,
+          "prevV": 31.16285,
+          "yoy": 7.4
+        },
+        {
+          "name": "土木費",
+          "v": 29.99919,
+          "prevV": 29.94369,
+          "yoy": 0.2
+        },
+        {
+          "name": "都市整備費",
+          "v": 18.82004,
+          "prevV": 24.37454,
+          "yoy": -22.8
+        },
+        {
+          "name": "産業経済費",
+          "v": 8.30394,
+          "prevV": 9.32415,
+          "yoy": -10.9
+        },
+        {
+          "name": "議会費",
+          "v": 7.74582,
+          "prevV": 5.96459,
+          "yoy": 29.9
+        },
+        {
+          "name": "予備費",
+          "v": 1,
+          "prevV": 1,
+          "yoy": 0
+        }
+      ],
+      "sourceTitle": "平成23年度 文京区当初予算総括表",
+      "sourceUrl": "https://web.archive.org/web/20250802233238/https://www.city.bunkyo.lg.jp/documents/5579/23soukatuhyo.pdf",
+      "originUrl": "https://www.city.bunkyo.lg.jp/documents/5579/23soukatuhyo.pdf",
+      "sourceLocalUrl": "/sources/bunkyo-sokatsuhyo-h23/23soukatuhyo.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "平成23年度 文京区当初予算総括表",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20250802233238/https://www.city.bunkyo.lg.jp/documents/5579/23soukatuhyo.pdf",
+          "localUrl": "/sources/bunkyo-sokatsuhyo-h23/23soukatuhyo.pdf",
+          "source": "www.city.bunkyo.lg.jp",
+          "thumb": "23soukatuhyo.pdf ・ sha256 0d76c6f172c5a1c5… ・ 2026-07-17 取得"
+        }
+      ]
+    },
+    {
+      "muniCode": "131059",
+      "muniName": "文京区",
+      "prefName": "東京都",
+      "isPref": false,
+      "projects": [],
+      "execution": [],
+      "fy": "H22",
+      "fyLabel": "平成22年度 当初予算",
+      "population": 235345,
+      "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+      "totalOku": 625.71,
+      "prevTotalOku": 630.23,
+      "yoyLabel": "-0.7%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "特別区税",
+          "v": 272.05059,
+          "prevV": 289.7784,
+          "yoy": -6.1
+        },
+        {
+          "name": "特別区交付金",
+          "v": 138,
+          "prevV": 145,
+          "yoy": -4.8
+        },
+        {
+          "name": "国庫支出金",
+          "v": 57.11352,
+          "prevV": 51.55522,
+          "yoy": 10.8
+        },
+        {
+          "name": "繰入金",
+          "v": 41.36024,
+          "prevV": 25.55578,
+          "yoy": 61.8
+        },
+        {
+          "name": "都支出金",
+          "v": 29.56727,
+          "prevV": 24.68957,
+          "yoy": 19.8
+        },
+        {
+          "name": "地方消費税交付金",
+          "v": 28,
+          "prevV": 28,
+          "yoy": 0
+        },
+        {
+          "name": "使用料及び手数料",
+          "v": 16.69166,
+          "prevV": 16.2351,
+          "yoy": 2.8
+        },
+        {
+          "name": "諸収入",
+          "v": 15.21844,
+          "prevV": 15.51606,
+          "yoy": -1.9
+        },
+        {
+          "name": "その他",
+          "v": 27.70828,
+          "prevV": 33.89987,
+          "yoy": null,
+          "children": [
+            {
+              "name": "分担金及び負担金",
+              "v": 12.50097,
+              "prevV": 12.65917,
+              "yoy": -1.2
+            },
+            {
+              "name": "財産収入",
+              "v": 3.14397,
+              "prevV": 3.41737,
+              "yoy": -8
+            },
+            {
+              "name": "地方譲与税",
+              "v": 3,
+              "prevV": 3.2,
+              "yoy": -6.2
+            },
+            {
+              "name": "利子割交付金",
+              "v": 2.5,
+              "prevV": 3,
+              "yoy": -16.7
+            },
+            {
+              "name": "繰越金",
+              "v": 2,
+              "prevV": 2,
+              "yoy": 0
+            },
+            {
+              "name": "地方特例交付金",
+              "v": 1.2,
+              "prevV": 4.7,
+              "yoy": -74.5
+            },
+            {
+              "name": "寄付金",
+              "v": 1.10334,
+              "prevV": 1.15333,
+              "yoy": -4.3
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 1,
+              "prevV": 2,
+              "yoy": -50
+            },
+            {
+              "name": "配当割交付金",
+              "v": 0.8,
+              "prevV": 1,
+              "yoy": -20
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 0.26,
+              "prevV": 0.27,
+              "yoy": -3.7
+            },
+            {
+              "name": "株式等譲渡所得割交付金",
+              "v": 0.2,
+              "prevV": 0.5,
+              "yoy": -60
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "民生費",
+          "v": 241.7988,
+          "prevV": 225.05926,
+          "yoy": 7.4
+        },
+        {
+          "name": "総務費",
+          "v": 96.45397,
+          "prevV": 98.33771,
+          "yoy": -1.9
+        },
+        {
+          "name": "教育費",
+          "v": 80.22831,
+          "prevV": 88.4756,
+          "yoy": -9.3
+        },
+        {
+          "name": "資源環境費",
+          "v": 38.00508,
+          "prevV": 38.23128,
+          "yoy": -0.6
+        },
+        {
+          "name": "諸支出金",
+          "v": 33.85619,
+          "prevV": 37.1592,
+          "yoy": -8.9
+        },
+        {
+          "name": "区民費",
+          "v": 33.59783,
+          "prevV": 29.72588,
+          "yoy": 13
+        },
+        {
+          "name": "衛生費",
+          "v": 31.16285,
+          "prevV": 31.8125,
+          "yoy": -2
+        },
+        {
+          "name": "土木費",
+          "v": 29.94369,
+          "prevV": 30.36373,
+          "yoy": -1.4
+        },
+        {
+          "name": "都市整備費",
+          "v": 24.37454,
+          "prevV": 33.88485,
+          "yoy": -28.1
+        },
+        {
+          "name": "産業経済費",
+          "v": 9.32415,
+          "prevV": 10.07535,
+          "yoy": -7.5
+        },
+        {
+          "name": "議会費",
+          "v": 5.96459,
+          "prevV": 6.10464,
+          "yoy": -2.3
+        },
+        {
+          "name": "予備費",
+          "v": 1,
+          "prevV": 1,
+          "yoy": 0
+        }
+      ],
+      "sourceTitle": "平成22年度 文京区当初予算総括表",
+      "sourceUrl": "https://web.archive.org/web/20241209024831/http://www.city.bunkyo.lg.jp/documents/5580/22soukatsu.pdf",
+      "originUrl": "https://www.city.bunkyo.lg.jp/documents/5580/22soukatsu.pdf",
+      "sourceLocalUrl": "/sources/bunkyo-sokatsuhyo-h22/22soukatsu.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "平成22年度 文京区当初予算総括表",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20241209024831/http://www.city.bunkyo.lg.jp/documents/5580/22soukatsu.pdf",
+          "localUrl": "/sources/bunkyo-sokatsuhyo-h22/22soukatsu.pdf",
+          "source": "www.city.bunkyo.lg.jp",
+          "thumb": "22soukatsu.pdf ・ sha256 7390e4ae23d45377… ・ 2026-07-17 取得"
+        }
+      ]
+    },
+    {
+      "muniCode": "131059",
+      "muniName": "文京区",
+      "prefName": "東京都",
+      "isPref": false,
+      "projects": [],
+      "execution": [],
+      "fy": "H21",
+      "fyLabel": "平成21年度 当初予算",
+      "population": 235345,
+      "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+      "totalOku": 630.23,
+      "prevTotalOku": 638.28,
+      "yoyLabel": "-1.3%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "特別区税",
+          "v": 289.7784,
+          "prevV": 281.78671,
+          "yoy": 2.8
+        },
+        {
+          "name": "特別区交付金",
+          "v": 145,
+          "prevV": 156,
+          "yoy": -7.1
+        },
+        {
+          "name": "国庫支出金",
+          "v": 51.55522,
+          "prevV": 47.63801,
+          "yoy": 8.2
+        },
+        {
+          "name": "地方消費税交付金",
+          "v": 28,
+          "prevV": 29,
+          "yoy": -3.4
+        },
+        {
+          "name": "繰入金",
+          "v": 25.55578,
+          "prevV": 22.50653,
+          "yoy": 13.5
+        },
+        {
+          "name": "都支出金",
+          "v": 24.68957,
+          "prevV": 24.5582,
+          "yoy": 0.5
+        },
+        {
+          "name": "使用料及び手数料",
+          "v": 16.2351,
+          "prevV": 20.10123,
+          "yoy": -19.2
+        },
+        {
+          "name": "諸収入",
+          "v": 15.51606,
+          "prevV": 15.75781,
+          "yoy": -1.5
+        },
+        {
+          "name": "その他",
+          "v": 33.89987,
+          "prevV": 40.93151,
+          "yoy": null,
+          "children": [
+            {
+              "name": "分担金及び負担金",
+              "v": 12.65917,
+              "prevV": 12.9677,
+              "yoy": -2.4
+            },
+            {
+              "name": "地方特例交付金",
+              "v": 4.7,
+              "prevV": 2.8,
+              "yoy": 67.9
+            },
+            {
+              "name": "財産収入",
+              "v": 3.41737,
+              "prevV": 2.24006,
+              "yoy": 52.6
+            },
+            {
+              "name": "地方譲与税",
+              "v": 3.2,
+              "prevV": 3.5,
+              "yoy": -8.6
+            },
+            {
+              "name": "利子割交付金",
+              "v": 3,
+              "prevV": 4,
+              "yoy": -25
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 2,
+              "prevV": 3,
+              "yoy": -33.3
+            },
+            {
+              "name": "繰越金",
+              "v": 2,
+              "prevV": 2,
+              "yoy": 0
+            },
+            {
+              "name": "寄付金",
+              "v": 1.15333,
+              "prevV": 1.15375,
+              "yoy": 0
+            },
+            {
+              "name": "配当割交付金",
+              "v": 1,
+              "prevV": 3,
+              "yoy": -66.7
+            },
+            {
+              "name": "株式等譲渡所得割交付金",
+              "v": 0.5,
+              "prevV": 2,
+              "yoy": -75
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 0.27,
+              "prevV": 0.27,
+              "yoy": 0
+            },
+            {
+              "name": "（特別区債）",
+              "v": 0,
+              "prevV": 4,
+              "yoy": -100
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "民生費",
+          "v": 225.05926,
+          "prevV": 230.07634,
+          "yoy": -2.2
+        },
+        {
+          "name": "総務費",
+          "v": 98.33771,
+          "prevV": 94.60841,
+          "yoy": 3.9
+        },
+        {
+          "name": "教育費",
+          "v": 89.85368,
+          "prevV": 90.11869,
+          "yoy": -0.3
+        },
+        {
+          "name": "資源環境費",
+          "v": 38.23128,
+          "prevV": 38.56025,
+          "yoy": -0.9
+        },
+        {
+          "name": "諸支出金",
+          "v": 37.1592,
+          "prevV": 38.35826,
+          "yoy": -3.1
+        },
+        {
+          "name": "都市整備費",
+          "v": 33.88485,
+          "prevV": 32.38004,
+          "yoy": 4.6
+        },
+        {
+          "name": "衛生費",
+          "v": 31.8125,
+          "prevV": 30.61747,
+          "yoy": 3.9
+        },
+        {
+          "name": "土木費",
+          "v": 30.36373,
+          "prevV": 35.28162,
+          "yoy": -13.9
+        },
+        {
+          "name": "区民費",
+          "v": 28.3478,
+          "prevV": 32.65731,
+          "yoy": -13.2
+        },
+        {
+          "name": "産業経済費",
+          "v": 10.07535,
+          "prevV": 8.38916,
+          "yoy": 20.1
+        },
+        {
+          "name": "議会費",
+          "v": 6.10464,
+          "prevV": 6.23245,
+          "yoy": -2.1
+        },
+        {
+          "name": "予備費",
+          "v": 1,
+          "prevV": 1,
+          "yoy": 0
+        }
+      ],
+      "sourceTitle": "平成21年度 文京区当初予算総括表",
+      "sourceUrl": "https://web.archive.org/web/20250621012618/https://www.city.bunkyo.lg.jp/documents/5581/21sokatuhyo.pdf",
+      "originUrl": "https://www.city.bunkyo.lg.jp/documents/5581/21sokatuhyo.pdf",
+      "sourceLocalUrl": "/sources/bunkyo-sokatsuhyo-h21/21sokatuhyo.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "平成21年度 文京区当初予算総括表",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20250621012618/https://www.city.bunkyo.lg.jp/documents/5581/21sokatuhyo.pdf",
+          "localUrl": "/sources/bunkyo-sokatsuhyo-h21/21sokatuhyo.pdf",
+          "source": "www.city.bunkyo.lg.jp",
+          "thumb": "21sokatuhyo.pdf ・ sha256 d46451b6369d0024… ・ 2026-07-17 取得"
+        }
+      ]
+    },
+    {
+      "muniCode": "131059",
+      "muniName": "文京区",
+      "prefName": "東京都",
+      "isPref": false,
+      "projects": [],
+      "execution": [],
+      "fy": "H20",
+      "fyLabel": "平成20年度 当初予算",
+      "population": 235345,
+      "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+      "totalOku": 638.28,
+      "prevTotalOku": 616.22,
+      "yoyLabel": "+3.6%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "特別区税",
+          "v": 281.78671,
+          "prevV": 277.29905,
+          "yoy": 1.6
+        },
+        {
+          "name": "特別区交付金",
+          "v": 156,
+          "prevV": 150,
+          "yoy": 4
+        },
+        {
+          "name": "国庫支出金",
+          "v": 47.63801,
+          "prevV": 45.28575,
+          "yoy": 5.2
+        },
+        {
+          "name": "地方消費税交付金",
+          "v": 29,
+          "prevV": 29,
+          "yoy": 0
+        },
+        {
+          "name": "都支出金",
+          "v": 24.5582,
+          "prevV": 23.4777,
+          "yoy": 4.6
+        },
+        {
+          "name": "繰入金",
+          "v": 22.50653,
+          "prevV": 17.26915,
+          "yoy": 30.3
+        },
+        {
+          "name": "使用料及び手数料",
+          "v": 20.10123,
+          "prevV": 19.67488,
+          "yoy": 2.2
+        },
+        {
+          "name": "諸収入",
+          "v": 15.75781,
+          "prevV": 16.5713,
+          "yoy": -4.9
+        },
+        {
+          "name": "その他",
+          "v": 40.93151,
+          "prevV": 37.64217000000001,
+          "yoy": null,
+          "children": [
+            {
+              "name": "分担金及び負担金",
+              "v": 12.9677,
+              "prevV": 12.92328,
+              "yoy": 0.3
+            },
+            {
+              "name": "利子割交付金",
+              "v": 4,
+              "prevV": 2.5,
+              "yoy": 60
+            },
+            {
+              "name": "特別区債",
+              "v": 4,
+              "prevV": 0,
+              "yoy": null
+            },
+            {
+              "name": "地方譲与税",
+              "v": 3.5,
+              "prevV": 3.6,
+              "yoy": -2.8
+            },
+            {
+              "name": "配当割交付金",
+              "v": 3,
+              "prevV": 2.5,
+              "yoy": 20
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 3,
+              "prevV": 3.6,
+              "yoy": -16.7
+            },
+            {
+              "name": "地方特例交付金",
+              "v": 2.8,
+              "prevV": 5.25,
+              "yoy": -46.7
+            },
+            {
+              "name": "財産収入",
+              "v": 2.24006,
+              "prevV": 0.79889,
+              "yoy": 180.4
+            },
+            {
+              "name": "株式等譲渡所得割交付金",
+              "v": 2,
+              "prevV": 3,
+              "yoy": -33.3
+            },
+            {
+              "name": "繰越金",
+              "v": 2,
+              "prevV": 2,
+              "yoy": 0
+            },
+            {
+              "name": "寄付金",
+              "v": 1.15375,
+              "prevV": 1.2,
+              "yoy": -3.9
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 0.27,
+              "prevV": 0.27,
+              "yoy": 0
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "民生費",
+          "v": 230.07634,
+          "prevV": 216.40445,
+          "yoy": 6.3
+        },
+        {
+          "name": "総務費",
+          "v": 94.60841,
+          "prevV": 94.82701,
+          "yoy": -0.2
+        },
+        {
+          "name": "教育費",
+          "v": 90.11869,
+          "prevV": 82.45863,
+          "yoy": 9.3
+        },
+        {
+          "name": "資源環境費",
+          "v": 38.56025,
+          "prevV": 36.72114,
+          "yoy": 5
+        },
+        {
+          "name": "諸支出金",
+          "v": 38.35826,
+          "prevV": 44.43572,
+          "yoy": -13.7
+        },
+        {
+          "name": "土木費",
+          "v": 35.28162,
+          "prevV": 34.19754,
+          "yoy": 3.2
+        },
+        {
+          "name": "区民費",
+          "v": 32.65731,
+          "prevV": 31.49471,
+          "yoy": 3.7
+        },
+        {
+          "name": "都市整備費",
+          "v": 32.38004,
+          "prevV": 28.23928,
+          "yoy": 14.7
+        },
+        {
+          "name": "衛生費",
+          "v": 30.61747,
+          "prevV": 32.26607,
+          "yoy": -5.1
+        },
+        {
+          "name": "産業経済費",
+          "v": 8.38916,
+          "prevV": 7.99934,
+          "yoy": 4.9
+        },
+        {
+          "name": "議会費",
+          "v": 6.23245,
+          "prevV": 6.17611,
+          "yoy": 0.9
+        },
+        {
+          "name": "予備費",
+          "v": 1,
+          "prevV": 1,
+          "yoy": 0
+        }
+      ],
+      "sourceTitle": "平成20年度 文京区当初予算総括表",
+      "sourceUrl": "https://web.archive.org/web/20250806141509/https://www.city.bunkyo.lg.jp/documents/5582/20soukatupdf.pdf",
+      "originUrl": "https://www.city.bunkyo.lg.jp/documents/5582/20soukatupdf.pdf",
+      "sourceLocalUrl": "/sources/bunkyo-sokatsuhyo-h20/20soukatupdf.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "平成20年度 文京区当初予算総括表",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20250806141509/https://www.city.bunkyo.lg.jp/documents/5582/20soukatupdf.pdf",
+          "localUrl": "/sources/bunkyo-sokatsuhyo-h20/20soukatupdf.pdf",
+          "source": "www.city.bunkyo.lg.jp",
+          "thumb": "20soukatupdf.pdf ・ sha256 d7fd78eba0e15330… ・ 2026-07-17 取得"
+        }
+      ]
+    },
+    {
+      "muniCode": "131059",
+      "muniName": "文京区",
+      "prefName": "東京都",
+      "isPref": false,
+      "projects": [],
+      "execution": [],
+      "fy": "H19",
+      "fyLabel": "平成19年度 当初予算",
+      "population": 235345,
+      "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+      "totalOku": 616.22,
+      "prevTotalOku": 733.64,
+      "yoyLabel": "-16.0%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "特別区税",
+          "v": 277.29905,
+          "prevV": 270.68239,
+          "yoy": 2.4
+        },
+        {
+          "name": "特別区交付金",
+          "v": 150,
+          "prevV": 136,
+          "yoy": 10.3
+        },
+        {
+          "name": "国庫支出金",
+          "v": 45.28575,
+          "prevV": 66.11134,
+          "yoy": -31.5
+        },
+        {
+          "name": "地方消費税交付金",
+          "v": 29,
+          "prevV": 29,
+          "yoy": 0
+        },
+        {
+          "name": "都支出金",
+          "v": 23.4777,
+          "prevV": 42.92039,
+          "yoy": -45.3
+        },
+        {
+          "name": "使用料及び手数料",
+          "v": 19.67488,
+          "prevV": 18.69152,
+          "yoy": 5.3
+        },
+        {
+          "name": "繰入金",
+          "v": 17.26915,
+          "prevV": 87.15319,
+          "yoy": -80.2
+        },
+        {
+          "name": "諸収入",
+          "v": 16.5713,
+          "prevV": 16.33102,
+          "yoy": 1.5
+        },
+        {
+          "name": "その他",
+          "v": 37.64217000000001,
+          "prevV": 66.75015,
+          "yoy": null,
+          "children": [
+            {
+              "name": "分担金及び負担金",
+              "v": 12.92328,
+              "prevV": 12.21669,
+              "yoy": 5.8
+            },
+            {
+              "name": "地方特例交付金",
+              "v": 5.25,
+              "prevV": 17,
+              "yoy": -69.1
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 3.6,
+              "prevV": 3.6,
+              "yoy": 0
+            },
+            {
+              "name": "地方譲与税",
+              "v": 3.6,
+              "prevV": 9.8,
+              "yoy": -63.3
+            },
+            {
+              "name": "株式等譲渡所得割交付金",
+              "v": 3,
+              "prevV": 0.3,
+              "yoy": 900
+            },
+            {
+              "name": "利子割交付金",
+              "v": 2.5,
+              "prevV": 2.5,
+              "yoy": 0
+            },
+            {
+              "name": "配当割交付金",
+              "v": 2.5,
+              "prevV": 0.58,
+              "yoy": 331
+            },
+            {
+              "name": "繰越金",
+              "v": 2,
+              "prevV": 2,
+              "yoy": 0
+            },
+            {
+              "name": "寄付金",
+              "v": 1.2,
+              "prevV": 1.2,
+              "yoy": 0
+            },
+            {
+              "name": "財産収入",
+              "v": 0.79889,
+              "prevV": 0.91346,
+              "yoy": -12.5
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 0.27,
+              "prevV": 0.27,
+              "yoy": 0
+            },
+            {
+              "name": "(特別区債)",
+              "v": 0,
+              "prevV": 16.37,
+              "yoy": -100
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "民生費",
+          "v": 216.40445,
+          "prevV": 214.86357,
+          "yoy": 0.7
+        },
+        {
+          "name": "総務費",
+          "v": 94.82701,
+          "prevV": 94.61182,
+          "yoy": 0.2
+        },
+        {
+          "name": "教育費",
+          "v": 82.45863,
+          "prevV": 71.03395,
+          "yoy": 16.1
+        },
+        {
+          "name": "諸支出金",
+          "v": 44.43572,
+          "prevV": 58.613,
+          "yoy": -24.2
+        },
+        {
+          "name": "資源環境費",
+          "v": 36.72114,
+          "prevV": 36.17388,
+          "yoy": 1.5
+        },
+        {
+          "name": "土木費",
+          "v": 34.19754,
+          "prevV": 154.32491,
+          "yoy": -77.8
+        },
+        {
+          "name": "衛生費",
+          "v": 32.26607,
+          "prevV": 32.24527,
+          "yoy": 0.1
+        },
+        {
+          "name": "区民費",
+          "v": 31.49471,
+          "prevV": 29.45208,
+          "yoy": 6.9
+        },
+        {
+          "name": "都市整備費",
+          "v": 28.23928,
+          "prevV": 27.20454,
+          "yoy": 3.8
+        },
+        {
+          "name": "産業経済費",
+          "v": 7.99934,
+          "prevV": 8.72362,
+          "yoy": -8.3
+        },
+        {
+          "name": "議会費",
+          "v": 6.17611,
+          "prevV": 5.89336,
+          "yoy": 4.8
+        },
+        {
+          "name": "予備費",
+          "v": 1,
+          "prevV": 0.5,
+          "yoy": 100
+        }
+      ],
+      "sourceTitle": "平成19年度 文京区当初予算総括表",
+      "sourceUrl": "https://web.archive.org/web/20260717034240/https://www.city.bunkyo.lg.jp/documents/5583/19soukatu.pdf",
+      "originUrl": "https://www.city.bunkyo.lg.jp/documents/5583/19soukatu.pdf",
+      "sourceLocalUrl": "/sources/bunkyo-sokatsuhyo-h19/19soukatu.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "平成19年度 文京区当初予算総括表",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20260717034240/https://www.city.bunkyo.lg.jp/documents/5583/19soukatu.pdf",
+          "localUrl": "/sources/bunkyo-sokatsuhyo-h19/19soukatu.pdf",
+          "source": "www.city.bunkyo.lg.jp",
+          "thumb": "19soukatu.pdf ・ sha256 7848c6230371e16c… ・ 2026-07-17 取得"
+        }
+      ]
+    },
+    {
+      "muniCode": "131059",
+      "muniName": "文京区",
+      "prefName": "東京都",
+      "isPref": false,
+      "projects": [],
+      "execution": [],
+      "fy": "H18",
+      "fyLabel": "平成18年度 当初予算",
+      "population": 235345,
+      "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+      "totalOku": 733.64,
+      "prevTotalOku": 604.74,
+      "yoyLabel": "+21.3%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "特別区税",
+          "v": 270.68239,
+          "prevV": 242.67631,
+          "yoy": 11.5
+        },
+        {
+          "name": "特別区交付金",
+          "v": 136,
+          "prevV": 126,
+          "yoy": 7.9
+        },
+        {
+          "name": "繰入金",
+          "v": 87.15319,
+          "prevV": 32.51913,
+          "yoy": 168
+        },
+        {
+          "name": "国庫支出金",
+          "v": 66.11134,
+          "prevV": 49.88715,
+          "yoy": 32.5
+        },
+        {
+          "name": "都支出金",
+          "v": 42.92039,
+          "prevV": 23.12033,
+          "yoy": 85.6
+        },
+        {
+          "name": "地方消費税交付金",
+          "v": 29,
+          "prevV": 29,
+          "yoy": 0
+        },
+        {
+          "name": "使用料及び手数料",
+          "v": 18.69152,
+          "prevV": 18.79242,
+          "yoy": -0.5
+        },
+        {
+          "name": "地方特例交付金",
+          "v": 17,
+          "prevV": 22.21,
+          "yoy": -23.5
+        },
+        {
+          "name": "その他",
+          "v": 66.08116999999999,
+          "prevV": 60.53466,
+          "yoy": null,
+          "children": [
+            {
+              "name": "特別区債",
+              "v": 16.37,
+              "prevV": 11.45,
+              "yoy": 43
+            },
+            {
+              "name": "諸収入",
+              "v": 16.33102,
+              "prevV": 15.21586,
+              "yoy": 7.3
+            },
+            {
+              "name": "分担金及び負担金",
+              "v": 12.21669,
+              "prevV": 12.55271,
+              "yoy": -2.7
+            },
+            {
+              "name": "地方譲与税",
+              "v": 9.8,
+              "prevV": 6.6,
+              "yoy": 48.5
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 3.6,
+              "prevV": 3.6,
+              "yoy": 0
+            },
+            {
+              "name": "利子割交付金",
+              "v": 2.5,
+              "prevV": 2.5,
+              "yoy": 0
+            },
+            {
+              "name": "繰越金",
+              "v": 2,
+              "prevV": 2,
+              "yoy": 0
+            },
+            {
+              "name": "寄付金",
+              "v": 1.2,
+              "prevV": 1.26802,
+              "yoy": -5.4
+            },
+            {
+              "name": "財産収入",
+              "v": 0.91346,
+              "prevV": 4.19807,
+              "yoy": -78.2
+            },
+            {
+              "name": "配当割交付金",
+              "v": 0.58,
+              "prevV": 0.58,
+              "yoy": 0
+            },
+            {
+              "name": "株式等譲渡所得割交付金",
+              "v": 0.3,
+              "prevV": 0.3,
+              "yoy": 0
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 0.27,
+              "prevV": 0.27,
+              "yoy": 0
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "民生費",
+          "v": 214.86357,
+          "prevV": 202.0154,
+          "yoy": 6.4
+        },
+        {
+          "name": "土木費",
+          "v": 154.32491,
+          "prevV": 34.06081,
+          "yoy": 353.1
+        },
+        {
+          "name": "総務費",
+          "v": 94.61182,
+          "prevV": 90.55568,
+          "yoy": 4.5
+        },
+        {
+          "name": "教育費",
+          "v": 71.03395,
+          "prevV": 82.94809,
+          "yoy": -14.4
+        },
+        {
+          "name": "諸支出金",
+          "v": 58.613,
+          "prevV": 48.07709,
+          "yoy": 21.9
+        },
+        {
+          "name": "資源環境費",
+          "v": 36.17388,
+          "prevV": 37.70237,
+          "yoy": -4.1
+        },
+        {
+          "name": "衛生費",
+          "v": 32.24527,
+          "prevV": 32.15512,
+          "yoy": 0.3
+        },
+        {
+          "name": "区民費",
+          "v": 29.45208,
+          "prevV": 33.4136,
+          "yoy": -11.9
+        },
+        {
+          "name": "都市整備費",
+          "v": 27.20454,
+          "prevV": 28.66827,
+          "yoy": -5.1
+        },
+        {
+          "name": "産業経済費",
+          "v": 8.72362,
+          "prevV": 8.66315,
+          "yoy": 0.7
+        },
+        {
+          "name": "議会費",
+          "v": 5.89336,
+          "prevV": 5.98042,
+          "yoy": -1.5
+        },
+        {
+          "name": "予備費",
+          "v": 0.5,
+          "prevV": 0.5,
+          "yoy": 0
+        }
+      ],
+      "sourceTitle": "平成18年度 文京区当初予算総括表",
+      "sourceUrl": "https://web.archive.org/web/20241209040949/http://www.city.bunkyo.lg.jp/documents/5584/soukatu.pdf",
+      "originUrl": "https://www.city.bunkyo.lg.jp/documents/5584/soukatu.pdf",
+      "sourceLocalUrl": "/sources/bunkyo-sokatsuhyo-h18/soukatu.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "平成18年度 文京区当初予算総括表",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20241209040949/http://www.city.bunkyo.lg.jp/documents/5584/soukatu.pdf",
+          "localUrl": "/sources/bunkyo-sokatsuhyo-h18/soukatu.pdf",
+          "source": "www.city.bunkyo.lg.jp",
+          "thumb": "soukatu.pdf ・ sha256 615d39de9788a4c9… ・ 2026-07-17 取得"
+        }
+      ]
+    },
+    {
+      "muniCode": "131059",
+      "muniName": "文京区",
+      "prefName": "東京都",
+      "isPref": false,
+      "projects": [],
+      "execution": [],
+      "fy": "H17",
+      "fyLabel": "平成17年度 当初予算",
+      "population": 235345,
+      "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+      "totalOku": 604.74,
+      "prevTotalOku": 635.47,
+      "yoyLabel": "-4.8%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "特別区税",
+          "v": 242.67631,
+          "prevV": 242.2075,
+          "yoy": 0.2
+        },
+        {
+          "name": "特別区交付金",
+          "v": 126,
+          "prevV": 114,
+          "yoy": 10.5
+        },
+        {
+          "name": "国庫支出金",
+          "v": 49.88715,
+          "prevV": 48.87424,
+          "yoy": 2.1
+        },
+        {
+          "name": "繰入金",
+          "v": 32.51913,
+          "prevV": 54.16114,
+          "yoy": -40
+        },
+        {
+          "name": "地方消費税交付金",
+          "v": 29,
+          "prevV": 28.24,
+          "yoy": 2.7
+        },
+        {
+          "name": "都支出金",
+          "v": 23.12033,
+          "prevV": 24.41739,
+          "yoy": -5.3
+        },
+        {
+          "name": "地方特例交付金",
+          "v": 22.21,
+          "prevV": 23.8,
+          "yoy": -6.7
+        },
+        {
+          "name": "使用料及び手数料",
+          "v": 18.79242,
+          "prevV": 19.383,
+          "yoy": -3
+        },
+        {
+          "name": "その他",
+          "v": 60.53466,
+          "prevV": 80.38672999999997,
+          "yoy": null,
+          "children": [
+            {
+              "name": "諸収入",
+              "v": 15.21586,
+              "prevV": 20.80944,
+              "yoy": -26.9
+            },
+            {
+              "name": "分担金及び負担金",
+              "v": 12.55271,
+              "prevV": 13.15086,
+              "yoy": -4.5
+            },
+            {
+              "name": "特別区債",
+              "v": 11.45,
+              "prevV": 29.212,
+              "yoy": -60.8
+            },
+            {
+              "name": "地方譲与税",
+              "v": 6.6,
+              "prevV": 3.43001,
+              "yoy": 92.4
+            },
+            {
+              "name": "財産収入",
+              "v": 4.19807,
+              "prevV": 0.54552,
+              "yoy": 669.6
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 3.6,
+              "prevV": 3.6,
+              "yoy": 0
+            },
+            {
+              "name": "利子割交付金",
+              "v": 2.5,
+              "prevV": 5,
+              "yoy": -50
+            },
+            {
+              "name": "繰越金",
+              "v": 2,
+              "prevV": 2,
+              "yoy": 0
+            },
+            {
+              "name": "寄付金",
+              "v": 1.26802,
+              "prevV": 1.3689,
+              "yoy": -7.4
+            },
+            {
+              "name": "配当割交付金",
+              "v": 0.58,
+              "prevV": 0.7,
+              "yoy": -17.1
+            },
+            {
+              "name": "株式等譲渡所得割交付金",
+              "v": 0.3,
+              "prevV": 0.3,
+              "yoy": 0
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 0.27,
+              "prevV": 0.27,
+              "yoy": 0
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "民生費",
+          "v": 200.45767,
+          "prevV": 190.93006,
+          "yoy": 5
+        },
+        {
+          "name": "総務費",
+          "v": 91.09842,
+          "prevV": 80.11181,
+          "yoy": 13.7
+        },
+        {
+          "name": "教育費",
+          "v": 88.89619,
+          "prevV": 81.11341,
+          "yoy": 9.6
+        },
+        {
+          "name": "諸支出金",
+          "v": 48.07709,
+          "prevV": 102.67235,
+          "yoy": -53.2
+        },
+        {
+          "name": "資源環境費",
+          "v": 37.70237,
+          "prevV": 37.8446,
+          "yoy": -0.4
+        },
+        {
+          "name": "土木費",
+          "v": 34.06081,
+          "prevV": 36.40589,
+          "yoy": -6.4
+        },
+        {
+          "name": "衛生費",
+          "v": 32.15512,
+          "prevV": 32.93772,
+          "yoy": -2.4
+        },
+        {
+          "name": "都市整備費",
+          "v": 28.66827,
+          "prevV": 29.12328,
+          "yoy": -1.6
+        },
+        {
+          "name": "区民費",
+          "v": 28.02122,
+          "prevV": 28.72411,
+          "yoy": -2.4
+        },
+        {
+          "name": "産業経済費",
+          "v": 9.12242,
+          "prevV": 9.07033,
+          "yoy": 0.6
+        },
+        {
+          "name": "議会費",
+          "v": 5.98042,
+          "prevV": 6.03644,
+          "yoy": -0.9
+        },
+        {
+          "name": "予備費",
+          "v": 0.5,
+          "prevV": 0.5,
+          "yoy": 0
+        }
+      ],
+      "sourceTitle": "平成17年度 文京区当初予算総括表",
+      "sourceUrl": "https://web.archive.org/web/20241208091940/http://www.city.bunkyo.lg.jp/documents/5585/soukatu.pdf",
+      "originUrl": "https://www.city.bunkyo.lg.jp/documents/5585/soukatu.pdf",
+      "sourceLocalUrl": "/sources/bunkyo-sokatsuhyo-h17/soukatu.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "平成17年度 文京区当初予算総括表",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20241208091940/http://www.city.bunkyo.lg.jp/documents/5585/soukatu.pdf",
+          "localUrl": "/sources/bunkyo-sokatsuhyo-h17/soukatu.pdf",
+          "source": "www.city.bunkyo.lg.jp",
+          "thumb": "soukatu.pdf ・ sha256 2bea33e6f9f8e947… ・ 2026-07-17 取得"
+        }
+      ]
+    },
+    {
+      "muniCode": "131059",
+      "muniName": "文京区",
+      "prefName": "東京都",
+      "isPref": false,
+      "projects": [],
+      "execution": [],
+      "fy": "H16",
+      "fyLabel": "平成16年度 当初予算",
+      "population": 235345,
+      "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+      "totalOku": 635.47,
+      "prevTotalOku": 612.57,
+      "yoyLabel": "+3.7%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "特別区税",
+          "v": 242.2075,
+          "prevV": 241.14112,
+          "yoy": 0.4
+        },
+        {
+          "name": "特別区交付金",
+          "v": 114,
+          "prevV": 125,
+          "yoy": -8.8
+        },
+        {
+          "name": "繰入金",
+          "v": 54.16114,
+          "prevV": 42.16082,
+          "yoy": 28.5
+        },
+        {
+          "name": "国庫支出金",
+          "v": 48.87424,
+          "prevV": 44.73355,
+          "yoy": 9.3
+        },
+        {
+          "name": "特別区債",
+          "v": 29.212,
+          "prevV": 10.46,
+          "yoy": 179.3
+        },
+        {
+          "name": "地方消費税交付金",
+          "v": 28.24,
+          "prevV": 30.5,
+          "yoy": -7.4
+        },
+        {
+          "name": "都支出金",
+          "v": 24.41739,
+          "prevV": 27.5949,
+          "yoy": -11.5
+        },
+        {
+          "name": "地方特例交付金",
+          "v": 23.8,
+          "prevV": 23.15,
+          "yoy": 2.8
+        },
+        {
+          "name": "その他",
+          "v": 70.55772999999999,
+          "prevV": 67.82961,
+          "yoy": null,
+          "children": [
+            {
+              "name": "諸収入",
+              "v": 20.80944,
+              "prevV": 18.80818,
+              "yoy": 10.6
+            },
+            {
+              "name": "使用料及び手数料",
+              "v": 19.383,
+              "prevV": 18.76454,
+              "yoy": 3.3
+            },
+            {
+              "name": "分担金及び負担金",
+              "v": 13.15086,
+              "prevV": 13.47834,
+              "yoy": -2.4
+            },
+            {
+              "name": "利子割交付金",
+              "v": 5,
+              "prevV": 5,
+              "yoy": 0
+            },
+            {
+              "name": "自動車取得税交付金",
+              "v": 3.6,
+              "prevV": 3.6,
+              "yoy": 0
+            },
+            {
+              "name": "地方譲与税",
+              "v": 3.43001,
+              "prevV": 3.8,
+              "yoy": -9.7
+            },
+            {
+              "name": "繰越金",
+              "v": 2,
+              "prevV": 2,
+              "yoy": 0
+            },
+            {
+              "name": "寄付金",
+              "v": 1.3689,
+              "prevV": 1.36755,
+              "yoy": 0.1
+            },
+            {
+              "name": "配当割交付金",
+              "v": 0.7,
+              "prevV": 0,
+              "yoy": null
+            },
+            {
+              "name": "財産収入",
+              "v": 0.54552,
+              "prevV": 0.741,
+              "yoy": -26.4
+            },
+            {
+              "name": "株式等譲渡所得割交付金",
+              "v": 0.3,
+              "prevV": 0,
+              "yoy": null
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 0.27,
+              "prevV": 0.27,
+              "yoy": 0
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "民生費",
+          "v": 190.93006,
+          "prevV": 196.42297,
+          "yoy": -2.8
+        },
+        {
+          "name": "諸支出金",
+          "v": 102.67235,
+          "prevV": 47.83915,
+          "yoy": 114.6
+        },
+        {
+          "name": "教育費",
+          "v": 81.11341,
+          "prevV": 93.16333,
+          "yoy": -12.9
+        },
+        {
+          "name": "総務費",
+          "v": 80.11181,
+          "prevV": 92.14531,
+          "yoy": -13.1
+        },
+        {
+          "name": "資源環境費",
+          "v": 37.8446,
+          "prevV": 40.27893,
+          "yoy": -6
+        },
+        {
+          "name": "土木費",
+          "v": 36.40589,
+          "prevV": 37.6204,
+          "yoy": -3.2
+        },
+        {
+          "name": "衛生費",
+          "v": 32.93772,
+          "prevV": 33.14092,
+          "yoy": -0.6
+        },
+        {
+          "name": "都市整備費",
+          "v": 29.12328,
+          "prevV": 25.60277,
+          "yoy": 13.8
+        },
+        {
+          "name": "区民費",
+          "v": 28.72411,
+          "prevV": 30.29588,
+          "yoy": -5.2
+        },
+        {
+          "name": "産業経済費",
+          "v": 9.07033,
+          "prevV": 9.32813,
+          "yoy": -2.8
+        },
+        {
+          "name": "議会費",
+          "v": 6.03644,
+          "prevV": 6.23221,
+          "yoy": -3.1
+        },
+        {
+          "name": "予備費",
+          "v": 0.5,
+          "prevV": 0.5,
+          "yoy": 0
+        }
+      ],
+      "sourceTitle": "平成16年度 文京区当初予算総括表",
+      "sourceUrl": "https://web.archive.org/web/20241209034846/http://www.city.bunkyo.lg.jp/documents/5586/soukatu.pdf",
+      "originUrl": "https://www.city.bunkyo.lg.jp/documents/5586/soukatu.pdf",
+      "sourceLocalUrl": "/sources/bunkyo-sokatsuhyo-h16/soukatu.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "平成16年度 文京区当初予算総括表",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20241209034846/http://www.city.bunkyo.lg.jp/documents/5586/soukatu.pdf",
+          "localUrl": "/sources/bunkyo-sokatsuhyo-h16/soukatu.pdf",
+          "source": "www.city.bunkyo.lg.jp",
+          "thumb": "soukatu.pdf ・ sha256 53c037eb5be5cb6a… ・ 2026-07-17 取得"
+        }
+      ]
+    }
+  ],
   "131083": [
     {
       "muniCode": "131083",
@@ -58398,6 +63628,248 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
       }
     ]
   },
+  "131059": {
+    "muniCode": "131059",
+    "muniName": "文京区",
+    "prefName": "東京都",
+    "isPref": false,
+    "projects": [],
+    "execution": [],
+    "fy": "R8",
+    "fyLabel": "令和8年度 当初予算",
+    "population": 235345,
+    "populationLabel": "住民基本台帳人口（総務省 令和6年度決算）",
+    "totalOku": 1604.82,
+    "prevTotalOku": 1470,
+    "yoyLabel": "+9.2%",
+    "prevBasis": "当初",
+    "prevNote": "",
+    "revenue": [
+      {
+        "name": "特別区税",
+        "v": 457.15195,
+        "prevV": 434.06937,
+        "yoy": 5.3
+      },
+      {
+        "name": "特別区交付金",
+        "v": 306,
+        "prevV": 277,
+        "yoy": 10.5
+      },
+      {
+        "name": "繰入金",
+        "v": 201.26502,
+        "prevV": 189.59538,
+        "yoy": 6.2
+      },
+      {
+        "name": "国庫支出金",
+        "v": 190.08765,
+        "prevV": 190.2166,
+        "yoy": -0.1
+      },
+      {
+        "name": "都支出金",
+        "v": 153.0502,
+        "prevV": 135.86688,
+        "yoy": 12.6
+      },
+      {
+        "name": "地方消費税交付金",
+        "v": 84,
+        "prevV": 71,
+        "yoy": 18.3
+      },
+      {
+        "name": "特別区債",
+        "v": 70,
+        "prevV": 55,
+        "yoy": 27.3
+      },
+      {
+        "name": "諸収入",
+        "v": 33.06717,
+        "prevV": 37.80503,
+        "yoy": -12.5
+      },
+      {
+        "name": "その他",
+        "v": 110.19801000000002,
+        "prevV": 79.44673999999999,
+        "yoy": null,
+        "children": [
+          {
+            "name": "株式等譲渡所得割交付金",
+            "v": 24,
+            "prevV": 8,
+            "yoy": 200
+          },
+          {
+            "name": "使用料及び手数料",
+            "v": 21.12361,
+            "prevV": 21.00598,
+            "yoy": 0.6
+          },
+          {
+            "name": "繰越金",
+            "v": 20,
+            "prevV": 17,
+            "yoy": 17.6
+          },
+          {
+            "name": "配当割交付金",
+            "v": 14,
+            "prevV": 8.2,
+            "yoy": 70.7
+          },
+          {
+            "name": "財産収入",
+            "v": 11.64574,
+            "prevV": 3.80269,
+            "yoy": 206.3
+          },
+          {
+            "name": "分担金及び負担金",
+            "v": 7.13382,
+            "prevV": 11.69367,
+            "yoy": -39
+          },
+          {
+            "name": "寄付金",
+            "v": 4.03483,
+            "prevV": 3.21439,
+            "yoy": 25.5
+          },
+          {
+            "name": "利子割交付金",
+            "v": 4,
+            "prevV": 2,
+            "yoy": 100
+          },
+          {
+            "name": "地方譲与税",
+            "v": 2.92,
+            "prevV": 2.85,
+            "yoy": 2.5
+          },
+          {
+            "name": "地方特例交付金",
+            "v": 0.65,
+            "prevV": 0.73,
+            "yoy": -11
+          },
+          {
+            "name": "環境性能割交付金",
+            "v": 0.54,
+            "prevV": 0.78,
+            "yoy": -30.8
+          },
+          {
+            "name": "交通安全対策特別交付金",
+            "v": 0.15,
+            "prevV": 0.17,
+            "yoy": -11.8
+          },
+          {
+            "name": "自動車取得税交付金",
+            "v": 0.00001,
+            "prevV": 0.00001,
+            "yoy": 0
+          }
+        ]
+      }
+    ],
+    "expenditure": [
+      {
+        "name": "民生費",
+        "v": 723.27087,
+        "prevV": 653.45417,
+        "yoy": 10.7
+      },
+      {
+        "name": "教育費",
+        "v": 344.18897,
+        "prevV": 292.16166,
+        "yoy": 17.8
+      },
+      {
+        "name": "総務費",
+        "v": 221.46997,
+        "prevV": 228.40478,
+        "yoy": -3
+      },
+      {
+        "name": "衛生費",
+        "v": 74.24365,
+        "prevV": 70.93584,
+        "yoy": 4.7
+      },
+      {
+        "name": "土木費",
+        "v": 67.84917,
+        "prevV": 64.38113,
+        "yoy": 5.4
+      },
+      {
+        "name": "資源環境費",
+        "v": 55.07509,
+        "prevV": 52.57615,
+        "yoy": 4.8
+      },
+      {
+        "name": "区民費",
+        "v": 49.38289,
+        "prevV": 51.35644,
+        "yoy": -3.8
+      },
+      {
+        "name": "諸支出金",
+        "v": 29.12353,
+        "prevV": 14.60924,
+        "yoy": 99.4
+      },
+      {
+        "name": "都市整備費",
+        "v": 16.97547,
+        "prevV": 14.31432,
+        "yoy": 18.6
+      },
+      {
+        "name": "産業経済費",
+        "v": 14.77145,
+        "prevV": 19.74531,
+        "yoy": -25.2
+      },
+      {
+        "name": "議会費",
+        "v": 7.46894,
+        "prevV": 7.06096,
+        "yoy": 5.8
+      },
+      {
+        "name": "予備費",
+        "v": 1,
+        "prevV": 1,
+        "yoy": 0
+      }
+    ],
+    "sourceTitle": "令和8年度 文京区当初予算総括表",
+    "sourceUrl": "https://web.archive.org/web/20260717034120/https://www.city.bunkyo.lg.jp/documents/12708/r08_tosyoyosan_sokatsuhyo.pdf",
+    "originUrl": "https://www.city.bunkyo.lg.jp/documents/12708/r08_tosyoyosan_sokatsuhyo.pdf",
+    "sourceLocalUrl": "/sources/bunkyo-sokatsuhyo-r8/r08_tosyoyosan_sokatsuhyo.pdf",
+    "pagesLabel": "款別歳入歳出",
+    "evidence": [
+      {
+        "title": "令和8年度 文京区当初予算総括表",
+        "type": "PDF",
+        "url": "https://web.archive.org/web/20260717034120/https://www.city.bunkyo.lg.jp/documents/12708/r08_tosyoyosan_sokatsuhyo.pdf",
+        "localUrl": "/sources/bunkyo-sokatsuhyo-r8/r08_tosyoyosan_sokatsuhyo.pdf",
+        "source": "www.city.bunkyo.lg.jp",
+        "thumb": "r08_tosyoyosan_sokatsuhyo.pdf ・ sha256 5d08aaed6d0e7dbf… ・ 2026-07-17 取得"
+      }
+    ]
+  },
   "131083": {
     "muniCode": "131083",
     "muniName": "江東区",
@@ -77886,4 +83358,4 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
 };
 
 /** budget 階層（予算ベースの款別ダッシュボードを持つ）自治体の団体コード */
-export const BUDGET_MUNIS: string[] = ["111007","121002","131016","131024","131083","131105","131113","131130","131148","131156","131164","131211","131229","131237","141003","141305","141500","151009","190004","192023","192040","192066","192082","192091","192112","192139","194301","221007","221309","222038","231002","232076","261009","271004","271403","272191","281000","331007","341002","352039","401005","401307","431001","011002","041009"];
+export const BUDGET_MUNIS: string[] = ["111007","121002","131016","131024","131059","131083","131105","131113","131130","131148","131156","131164","131211","131229","131237","141003","141305","141500","151009","190004","192023","192040","192066","192082","192091","192112","192139","194301","221007","221309","222038","231002","232076","261009","271004","271403","272191","281000","331007","341002","352039","401005","401307","431001","011002","041009"];

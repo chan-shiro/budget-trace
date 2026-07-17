@@ -984,6 +984,116 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.suginami.tokyo.jp/documents/7155/r2kuseikeieikeikakusho.pdf",
     "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
   },
+  "/sources/bunkyo-sokatsuhyo-r8/r08_tosyoyosan_sokatsuhyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.bunkyo.lg.jp/documents/12708/r08_tosyoyosan_sokatsuhyo.pdf",
+    "license": "文京区ホームページから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は文京区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの文書などについて転用などを希望する場合は、各ページのお問い合わせ先にご相談ください。"
+  },
+  "/sources/bunkyo-sokatsuhyo-r7/r07_tosyoyosansoukatsuhyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.bunkyo.lg.jp/documents/10873/r07_tosyoyosansoukatsuhyo.pdf",
+    "license": "文京区ホームページから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は文京区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの文書などについて転用などを希望する場合は、各ページのお問い合わせ先にご相談ください。"
+  },
+  "/sources/bunkyo-sokatsuhyo-r6/202437164616.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.bunkyo.lg.jp/documents/8579/202437164616.pdf",
+    "license": "文京区ホームページから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は文京区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの文書などについて転用などを希望する場合は、各ページのお問い合わせ先にご相談ください。"
+  },
+  "/sources/bunkyo-sokatsuhyo-r5/20233614280_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.bunkyo.lg.jp/documents/5568/20233614280_1.pdf",
+    "license": "文京区ホームページから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は文京区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの文書などについて転用などを希望する場合は、各ページのお問い合わせ先にご相談ください。"
+  },
+  "/sources/bunkyo-sokatsuhyo-r4/2022324164654.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.bunkyo.lg.jp/documents/5569/2022324164654.pdf",
+    "license": "文京区ホームページから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は文京区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの文書などについて転用などを希望する場合は、各ページのお問い合わせ先にご相談ください。"
+  },
+  "/sources/bunkyo-sokatsuhyo-r3/2021soukatuhyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.bunkyo.lg.jp/documents/5570/2021soukatuhyo.pdf",
+    "license": "文京区ホームページから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は文京区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの文書などについて転用などを希望する場合は、各ページのお問い合わせ先にご相談ください。"
+  },
+  "/sources/bunkyo-sokatsuhyo-r2/2020soukatsuhyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.bunkyo.lg.jp/documents/5571/2020soukatsuhyou.pdf",
+    "license": "文京区ホームページから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は文京区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの文書などについて転用などを希望する場合は、各ページのお問い合わせ先にご相談ください。"
+  },
+  "/sources/bunkyo-sokatsuhyo-h31/310208_gian_31tousyo_shiryo1_soukatsuhyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.bunkyo.lg.jp/documents/5572/310208_gian_31tousyo_shiryo1_soukatsuhyou.pdf",
+    "license": "文京区ホームページから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は文京区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの文書などについて転用などを希望する場合は、各ページのお問い合わせ先にご相談ください。"
+  },
+  "/sources/bunkyo-sokatsuhyo-h30/300208_gian_tousyo_shiryo1_soukatsuhyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.bunkyo.lg.jp/documents/49/300208_gian_tousyo_shiryo1_soukatsuhyou.pdf",
+    "license": "文京区ホームページから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は文京区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの文書などについて転用などを希望する場合は、各ページのお問い合わせ先にご相談ください。"
+  },
+  "/sources/bunkyo-sokatsuhyo-h29/29soukatsuhyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.bunkyo.lg.jp/documents/5573/29soukatsuhyou.pdf",
+    "license": "文京区ホームページから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は文京区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの文書などについて転用などを希望する場合は、各ページのお問い合わせ先にご相談ください。"
+  },
+  "/sources/bunkyo-sokatsuhyo-h28/28soukatsuhyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.bunkyo.lg.jp/documents/5574/28soukatsuhyou.pdf",
+    "license": "文京区ホームページから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は文京区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの文書などについて転用などを希望する場合は、各ページのお問い合わせ先にご相談ください。"
+  },
+  "/sources/bunkyo-sokatsuhyo-h27/26soukatsuhyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.bunkyo.lg.jp/documents/5575/26soukatsuhyo.pdf",
+    "license": "文京区ホームページから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は文京区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの文書などについて転用などを希望する場合は、各ページのお問い合わせ先にご相談ください。"
+  },
+  "/sources/bunkyo-sokatsuhyo-h26/26soukatsuhyo_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.bunkyo.lg.jp/documents/5576/26soukatsuhyo_1.pdf",
+    "license": "文京区ホームページから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は文京区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの文書などについて転用などを希望する場合は、各ページのお問い合わせ先にご相談ください。"
+  },
+  "/sources/bunkyo-sokatsuhyo-h24/24yosansoukatsuhyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.bunkyo.lg.jp/documents/5578/24yosansoukatsuhyou.pdf",
+    "license": "文京区ホームページから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は文京区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの文書などについて転用などを希望する場合は、各ページのお問い合わせ先にご相談ください。"
+  },
+  "/sources/bunkyo-sokatsuhyo-h23/23soukatuhyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.bunkyo.lg.jp/documents/5579/23soukatuhyo.pdf",
+    "license": "文京区ホームページから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は文京区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの文書などについて転用などを希望する場合は、各ページのお問い合わせ先にご相談ください。"
+  },
+  "/sources/bunkyo-sokatsuhyo-h22/22soukatsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.bunkyo.lg.jp/documents/5580/22soukatsu.pdf",
+    "license": "文京区ホームページから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は文京区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの文書などについて転用などを希望する場合は、各ページのお問い合わせ先にご相談ください。"
+  },
+  "/sources/bunkyo-sokatsuhyo-h21/21sokatuhyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.bunkyo.lg.jp/documents/5581/21sokatuhyo.pdf",
+    "license": "文京区ホームページから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は文京区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの文書などについて転用などを希望する場合は、各ページのお問い合わせ先にご相談ください。"
+  },
+  "/sources/bunkyo-sokatsuhyo-h20/20soukatupdf.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.bunkyo.lg.jp/documents/5582/20soukatupdf.pdf",
+    "license": "文京区ホームページから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は文京区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの文書などについて転用などを希望する場合は、各ページのお問い合わせ先にご相談ください。"
+  },
+  "/sources/bunkyo-sokatsuhyo-h19/19soukatu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.bunkyo.lg.jp/documents/5583/19soukatu.pdf",
+    "license": "文京区ホームページから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は文京区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの文書などについて転用などを希望する場合は、各ページのお問い合わせ先にご相談ください。"
+  },
+  "/sources/bunkyo-sokatsuhyo-h18/soukatu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.bunkyo.lg.jp/documents/5584/soukatu.pdf",
+    "license": "文京区ホームページから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は文京区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの文書などについて転用などを希望する場合は、各ページのお問い合わせ先にご相談ください。"
+  },
+  "/sources/bunkyo-sokatsuhyo-h17/soukatu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.bunkyo.lg.jp/documents/5585/soukatu.pdf",
+    "license": "文京区ホームページから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は文京区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの文書などについて転用などを希望する場合は、各ページのお問い合わせ先にご相談ください。"
+  },
+  "/sources/bunkyo-sokatsuhyo-h16/soukatu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.bunkyo.lg.jp/documents/5586/soukatu.pdf",
+    "license": "文京区ホームページから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は文京区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの文書などについて転用などを希望する場合は、各ページのお問い合わせ先にご相談ください。"
+  },
   "/sources/nakano-yosangaiyou-r8/R08_2026gaiyo.pdf": {
     "mode": "origin",
     "href": "https://www.city.tokyo-nakano.lg.jp/kusei/zaisei/yosan/tosho.files/R08_2026gaiyo.pdf",
