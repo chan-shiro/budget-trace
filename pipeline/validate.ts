@@ -62,6 +62,25 @@ function finish(count: number, unitLabel: string): never {
 const KANNAME_JUNK_RE =
   /千円|百万円|単位|一般財源|特定財源|国県支出金|予算額|前年度|比較増減|構成比|総括|一覧|款名/;
 
+// 款名に紛れ込む**部首の異体字**（2026-07-17 追加・港区で発覚）。
+//
+// **上の語彙ゲートと違い、これは「語」ではなく「文字」で守る。** 原典の PDF が
+// **Kangxi Radicals（U+2F00–U+2FDF）/ CJK Radicals Supplement（U+2E80–U+2EFF）**の
+// 文字を混ぜて組版していることがある。港区 R2・R4・H31 の実測:
+//   `⺠⽣費`（U+2EA0 + U+2F63）・`⼟⽊費`・`諸⽀出⾦`・`利⼦割交付⾦`・`使⽤料及び⼿数料`
+// **見た目が正字とほぼ同じ**（`⺠生費` と `民生費`）ので目視でも見落としうる。しかも:
+//   - **Σ は4系統すべて差0**（金額は正しい）
+//   - **上の語彙ゲートも素通り**（部首の語彙を持たないため）
+//   - **同一 PDF の中で混在する**（港 R2 は `土木費` がクリーンなのに `⺠⽣費` が壊れる）
+//   - **年度の新旧と無関係**（R3 クリーン → R4 は歳出だけ汚染 → R2 は両側汚染）
+// ＝**このリポジトリで初めての「文字レベルで静かに壊れる」型**。§2-4 の一覧に入る。
+//
+// **款名に部首文字が正当に現れることはない**（部首は辞書の見出し用の文字で、地方自治法の
+// 款名は常用漢字で書かれる）ので、1文字でも出たら抽出か原典の組版の異常＝error にしてよい。
+// ⚠ **NFKC 正規化だけでは足りない** — `⼊⽣⾦⼟⽊⽀⽐⽬` 等（U+2F00 台）は NFKC で正字に落ちるが、
+//   **`⺠`（U+2EA0・CJK部首補助）は NFKC で変化しない**（実測）。パーサ側で明示的に対応する。
+const KANNAME_RADICAL_RE = /[⺀-⻿⼀-⿟]/;
+
 function validateBudgetBook(d: BudgetBookDoc): void {
   for (const side of ["revenue", "expenditure"] as const) {
     const label = side === "revenue" ? "歳入" : "歳出";
@@ -77,6 +96,18 @@ function validateBudgetBook(d: BudgetBookDoc): void {
           message:
             `${label} 款${f.kanNo ?? "-"}「${f.kanName}」に表ヘッダ/単位の断片「${m[0]}」が混入しています。` +
             `**金額は正しく Σ も通る**型の壊れ（§2-4）。該当側の HeaderExtra でヘッダ行を落とすこと`,
+        });
+      }
+      // 款名の破損（部首の異体字）。KANNAME_RADICAL_RE のコメント参照
+      const r = KANNAME_RADICAL_RE.exec(f.kanName);
+      if (r) {
+        const cp = `U+${r[0]!.codePointAt(0)!.toString(16).toUpperCase().padStart(4, "0")}`;
+        issues.push({
+          level: "error",
+          message:
+            `${label} 款${f.kanNo ?? "-"}「${f.kanName}」に部首の異体字「${r[0]}」（${cp}）が混入しています。` +
+            `**見た目は正字とほぼ同じで、金額も Σ も正しい**型の壊れ（§2-4）。原典の組版が Kangxi 部首を` +
+            `混ぜているので、パーサ側で正規化すること（NFKC だけでは U+2EA0 ⺠ が残る）`,
         });
       }
     }

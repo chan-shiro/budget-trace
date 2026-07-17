@@ -1,0 +1,12 @@
+{
+  "sourceId": "minato-yosangaiyou-r5",
+  "files": [
+    {
+      "filename": "2sho.pdf",
+      "sha256": "cd2e5207c53db8948376be62590a1a160773866a1510cc39f367c42a36d97475",
+      "bytes": 926870,
+      "fetchedAt": "2026-07-17T22:17:37.740Z",
+      "fetchedFrom": "https://www.city.minato.tokyo.jp/documents/4694/2sho.pdf"
+    }
+  ]
+}

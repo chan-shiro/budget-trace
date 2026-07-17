@@ -3096,6 +3096,328 @@
       "sha256Match": true
     },
     {
+      "sourceId": "minato-yosangaiyou-h19",
+      "url": "https://www.city.minato.tokyo.jp/documents/4694/h19_yosangaiyo_03.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717225100/https://www.city.minato.tokyo.jp/documents/4694/h19_yosangaiyo_03.pdf",
+      "waybackTimestamp": "20260717225100",
+      "checkedAt": "2026-07-17T22:53:08.524Z",
+      "sha256Match": true,
+      "waybackBytes": 220081
+    },
+    {
+      "sourceId": "minato-yosangaiyou-h19",
+      "url": "https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260516044517/https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "waybackTimestamp": "20260516044517",
+      "checkedAt": "2026-07-17T22:53:43.104Z"
+    },
+    {
+      "sourceId": "minato-yosangaiyou-h20",
+      "url": "https://www.city.minato.tokyo.jp/documents/4694/h20_yosangaiyo_03.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717224919/https://www.city.minato.tokyo.jp/documents/4694/h20_yosangaiyo_03.pdf",
+      "waybackTimestamp": "20260717224919",
+      "checkedAt": "2026-07-17T22:50:27.376Z",
+      "sha256Match": true,
+      "waybackBytes": 399577
+    },
+    {
+      "sourceId": "minato-yosangaiyou-h20",
+      "url": "https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260516044517/https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "waybackTimestamp": "20260516044517",
+      "checkedAt": "2026-07-17T22:50:29.898Z"
+    },
+    {
+      "sourceId": "minato-yosangaiyou-h21",
+      "url": "https://www.city.minato.tokyo.jp/documents/4694/h21_yosangaiyo_03.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717224713/https://www.city.minato.tokyo.jp/documents/4694/h21_yosangaiyo_03.pdf",
+      "waybackTimestamp": "20260717224713",
+      "checkedAt": "2026-07-17T22:47:59.779Z",
+      "sha256Match": true,
+      "waybackBytes": 224315
+    },
+    {
+      "sourceId": "minato-yosangaiyou-h21",
+      "url": "https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260516044517/https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "waybackTimestamp": "20260516044517",
+      "checkedAt": "2026-07-17T22:48:23.845Z"
+    },
+    {
+      "sourceId": "minato-yosangaiyou-h22",
+      "url": "https://www.city.minato.tokyo.jp/documents/4694/h22_yosangaiyo_03.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717224617/https://www.city.minato.tokyo.jp/documents/4694/h22_yosangaiyo_03.pdf",
+      "waybackTimestamp": "20260717224617",
+      "checkedAt": "2026-07-17T22:46:35.226Z",
+      "sha256Match": true,
+      "waybackBytes": 792371
+    },
+    {
+      "sourceId": "minato-yosangaiyou-h22",
+      "url": "https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260516044517/https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "waybackTimestamp": "20260516044517",
+      "checkedAt": "2026-07-17T22:46:56.706Z"
+    },
+    {
+      "sourceId": "minato-yosangaiyou-h23",
+      "url": "https://www.city.minato.tokyo.jp/documents/4694/h23_yosangaiyo_02.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717224548/https://www.city.minato.tokyo.jp/documents/4694/h23_yosangaiyo_02.pdf",
+      "waybackTimestamp": "20260717224548",
+      "checkedAt": "2026-07-17T22:52:13.983Z",
+      "sha256Verified": false
+    },
+    {
+      "sourceId": "minato-yosangaiyou-h23",
+      "url": "https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260516044517/https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "waybackTimestamp": "20260516044517",
+      "checkedAt": "2026-07-17T22:52:47.628Z"
+    },
+    {
+      "sourceId": "minato-yosangaiyou-h25",
+      "url": "https://www.city.minato.tokyo.jp/documents/4694/h25_yosangaiyo_02pdf.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717224450/https://www.city.minato.tokyo.jp/documents/4694/h25_yosangaiyo_02pdf.pdf",
+      "waybackTimestamp": "20260717224450",
+      "checkedAt": "2026-07-17T22:45:11.411Z",
+      "sha256Match": true,
+      "waybackBytes": 1207254
+    },
+    {
+      "sourceId": "minato-yosangaiyou-h25",
+      "url": "https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260516044517/https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "waybackTimestamp": "20260516044517",
+      "checkedAt": "2026-07-17T22:45:34.530Z"
+    },
+    {
+      "sourceId": "minato-yosangaiyou-h26",
+      "url": "https://www.city.minato.tokyo.jp/documents/4694/h26_yosangaiyo_03.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717224411/https://www.city.minato.tokyo.jp/documents/4694/h26_yosangaiyo_03.pdf",
+      "waybackTimestamp": "20260717224411",
+      "checkedAt": "2026-07-17T22:44:43.086Z",
+      "sha256Match": true,
+      "waybackBytes": 240638
+    },
+    {
+      "sourceId": "minato-yosangaiyou-h26",
+      "url": "https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260516044517/https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "waybackTimestamp": "20260516044517",
+      "checkedAt": "2026-07-17T22:44:47.049Z"
+    },
+    {
+      "sourceId": "minato-yosangaiyou-h27",
+      "url": "https://www.city.minato.tokyo.jp/documents/4694/h27yosangaiyou03.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717224351/https://www.city.minato.tokyo.jp/documents/4694/h27yosangaiyou03.pdf",
+      "waybackTimestamp": "20260717224351",
+      "checkedAt": "2026-07-17T22:44:08.025Z",
+      "sha256Match": true,
+      "waybackBytes": 2561069
+    },
+    {
+      "sourceId": "minato-yosangaiyou-h27",
+      "url": "https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260516044517/https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "waybackTimestamp": "20260516044517",
+      "checkedAt": "2026-07-17T22:44:08.696Z"
+    },
+    {
+      "sourceId": "minato-yosangaiyou-h28",
+      "url": "https://www.city.minato.tokyo.jp/documents/4694/03.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717223231/https://www.city.minato.tokyo.jp/documents/4694/03.pdf",
+      "waybackTimestamp": "20260717223231",
+      "checkedAt": "2026-07-17T22:55:43.844Z",
+      "sha256Match": true,
+      "waybackBytes": 493003
+    },
+    {
+      "sourceId": "minato-yosangaiyou-h28",
+      "url": "https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260516044517/https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "waybackTimestamp": "20260516044517",
+      "checkedAt": "2026-07-17T22:55:49.242Z"
+    },
+    {
+      "sourceId": "minato-yosangaiyou-h30",
+      "url": "https://www.city.minato.tokyo.jp/documents/4694/05kibo_1.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717224001/https://www.city.minato.tokyo.jp/documents/4694/05kibo_1.pdf",
+      "waybackTimestamp": "20260717224001",
+      "checkedAt": "2026-07-17T22:43:01.544Z",
+      "sha256Match": true,
+      "waybackBytes": 527903
+    },
+    {
+      "sourceId": "minato-yosangaiyou-h30",
+      "url": "https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260516044517/https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "waybackTimestamp": "20260516044517",
+      "checkedAt": "2026-07-17T22:43:12.820Z"
+    },
+    {
+      "sourceId": "minato-yosangaiyou-h31",
+      "url": "https://www.city.minato.tokyo.jp/documents/4694/15-24.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717223849/https://www.city.minato.tokyo.jp/documents/4694/15-24.pdf",
+      "waybackTimestamp": "20260717223849",
+      "checkedAt": "2026-07-17T22:55:34.393Z",
+      "sha256Verified": false
+    },
+    {
+      "sourceId": "minato-yosangaiyou-h31",
+      "url": "https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260516044517/https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "waybackTimestamp": "20260516044517",
+      "checkedAt": "2026-07-17T22:55:35.317Z"
+    },
+    {
+      "sourceId": "minato-yosangaiyou-r2",
+      "url": "https://www.city.minato.tokyo.jp/documents/4694/section2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717223717/https://www.city.minato.tokyo.jp/documents/4694/section2.pdf",
+      "waybackTimestamp": "20260717223717",
+      "checkedAt": "2026-07-17T22:42:40.692Z",
+      "sha256Match": true,
+      "waybackBytes": 1087640
+    },
+    {
+      "sourceId": "minato-yosangaiyou-r2",
+      "url": "https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260516044517/https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "waybackTimestamp": "20260516044517",
+      "checkedAt": "2026-07-17T22:42:42.446Z"
+    },
+    {
+      "sourceId": "minato-yosangaiyou-r3",
+      "url": "https://www.city.minato.tokyo.jp/documents/4694/04sainyusaisyutu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717223603/https://www.city.minato.tokyo.jp/documents/4694/04sainyusaisyutu.pdf",
+      "waybackTimestamp": "20260717223603",
+      "checkedAt": "2026-07-17T22:42:15.015Z",
+      "sha256Match": true,
+      "waybackBytes": 811202
+    },
+    {
+      "sourceId": "minato-yosangaiyou-r3",
+      "url": "https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260516044517/https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "waybackTimestamp": "20260516044517",
+      "checkedAt": "2026-07-17T22:42:18.413Z"
+    },
+    {
+      "sourceId": "minato-yosangaiyou-r4",
+      "url": "https://www.city.minato.tokyo.jp/documents/4694/02_section2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717223501/https://www.city.minato.tokyo.jp/documents/4694/02_section2.pdf",
+      "waybackTimestamp": "20260717223501",
+      "checkedAt": "2026-07-17T22:35:15.791Z",
+      "sha256Match": true,
+      "waybackBytes": 679944
+    },
+    {
+      "sourceId": "minato-yosangaiyou-r4",
+      "url": "https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260516044517/https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "waybackTimestamp": "20260516044517",
+      "checkedAt": "2026-07-17T22:35:45.921Z"
+    },
+    {
+      "sourceId": "minato-yosangaiyou-r5",
+      "url": "https://www.city.minato.tokyo.jp/documents/4694/2sho.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717223444/https://www.city.minato.tokyo.jp/documents/4694/2sho.pdf",
+      "waybackTimestamp": "20260717223444",
+      "checkedAt": "2026-07-17T22:41:57.059Z",
+      "sha256Match": true,
+      "waybackBytes": 926870
+    },
+    {
+      "sourceId": "minato-yosangaiyou-r5",
+      "url": "https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260516044517/https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "waybackTimestamp": "20260516044517",
+      "checkedAt": "2026-07-17T22:41:58.975Z"
+    },
+    {
+      "sourceId": "minato-yosangaiyou-r6",
+      "url": "https://www.city.minato.tokyo.jp/documents/4694/nishou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717223356/https://www.city.minato.tokyo.jp/documents/4694/nishou.pdf",
+      "waybackTimestamp": "20260717223356",
+      "checkedAt": "2026-07-17T22:53:49.617Z",
+      "sha256Match": true,
+      "waybackBytes": 843759
+    },
+    {
+      "sourceId": "minato-yosangaiyou-r6",
+      "url": "https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260516044517/https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "waybackTimestamp": "20260516044517",
+      "checkedAt": "2026-07-17T22:34:28.998Z"
+    },
+    {
+      "sourceId": "minato-yosangaiyou-r7",
+      "url": "https://www.city.minato.tokyo.jp/documents/4694/r7nishou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717224121/https://www.city.minato.tokyo.jp/documents/4694/r7nishou.pdf",
+      "waybackTimestamp": "20260717224121",
+      "checkedAt": "2026-07-17T22:41:36.104Z",
+      "sha256Match": true,
+      "waybackBytes": 1738647
+    },
+    {
+      "sourceId": "minato-yosangaiyou-r7",
+      "url": "https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260516044517/https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "waybackTimestamp": "20260516044517",
+      "checkedAt": "2026-07-17T22:41:44.204Z"
+    },
+    {
+      "sourceId": "minato-yosangaiyou-r8",
+      "url": "https://www.city.minato.tokyo.jp/documents/4694/20260202131316.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717223231/https://www.city.minato.tokyo.jp/documents/4694/20260202131316.pdf",
+      "waybackTimestamp": "20260717223231",
+      "checkedAt": "2026-07-17T22:52:03.761Z",
+      "sha256Match": true,
+      "waybackBytes": 2242522
+    },
+    {
+      "sourceId": "minato-yosangaiyou-r8",
+      "url": "https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260516044517/https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
+      "waybackTimestamp": "20260516044517",
+      "checkedAt": "2026-07-17T22:52:10.970Z"
+    },
+    {
       "sourceId": "nagoya-yosansho-r2",
       "url": "https://www.city.nagoya.jp/_res/projects/default_project/_page_/001/002/830/2ippanmeisai.pdf",
       "kind": "file",
@@ -5247,6 +5569,165 @@
       "waybackUrl": "https://web.archive.org/web/20260411141735/https://www.city.suginami.tokyo.jp/s004/22830.html",
       "waybackTimestamp": "20260411141735",
       "checkedAt": "2026-07-16T15:35:25.438Z"
+    },
+    {
+      "sourceId": "taito-kanbetsu-h28",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/28point.files/30gaisansyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250804215610/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/28point.files/30gaisansyo.pdf",
+      "waybackTimestamp": "20250804215610",
+      "checkedAt": "2026-07-17T22:32:11.591Z",
+      "sha256Match": true,
+      "waybackBytes": 326281
+    },
+    {
+      "sourceId": "taito-kanbetsu-h28",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/28point.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260119211309/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/28point.html",
+      "waybackTimestamp": "20260119211309",
+      "checkedAt": "2026-07-17T22:32:12.345Z"
+    },
+    {
+      "sourceId": "taito-kanbetsu-h29",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/29point.files/29-4.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250727225407/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/29point.files/29-4.pdf",
+      "waybackTimestamp": "20250727225407",
+      "checkedAt": "2026-07-17T22:32:18.659Z",
+      "sha256Match": true,
+      "waybackBytes": 192919
+    },
+    {
+      "sourceId": "taito-kanbetsu-h29",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/29point.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260113062643/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/29point.html",
+      "waybackTimestamp": "20260113062643",
+      "checkedAt": "2026-07-17T22:32:21.125Z"
+    },
+    {
+      "sourceId": "taito-kanbetsu-h30",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/30yosanpoint.files/sainyuusaishutu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250805220729/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/30yosanpoint.files/sainyuusaishutu.pdf",
+      "waybackTimestamp": "20250805220729",
+      "checkedAt": "2026-07-17T22:31:47.067Z",
+      "sha256Verified": false
+    },
+    {
+      "sourceId": "taito-kanbetsu-h30",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/30yosanpoint.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250814021105/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/30yosanpoint.html",
+      "waybackTimestamp": "20250814021105",
+      "checkedAt": "2026-07-17T22:32:13.511Z"
+    },
+    {
+      "sourceId": "taito-kanbetsu-r3",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/3point.files/3gaisannsho.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250805213354/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/3point.files/3gaisannsho.pdf",
+      "waybackTimestamp": "20250805213354",
+      "checkedAt": "2026-07-17T22:31:32.662Z",
+      "sha256Match": true,
+      "waybackBytes": 319451
+    },
+    {
+      "sourceId": "taito-kanbetsu-r3",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/3point.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250909050530/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/3point.html",
+      "waybackTimestamp": "20250909050530",
+      "checkedAt": "2026-07-17T22:31:45.162Z"
+    },
+    {
+      "sourceId": "taito-kanbetsu-r4",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R4yosanannopoint.files/s3-kanbetuyosangaku.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250809224013/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R4yosanannopoint.files/s3-kanbetuyosangaku.pdf",
+      "waybackTimestamp": "20250809224013",
+      "checkedAt": "2026-07-17T22:30:39.904Z",
+      "sha256Match": true,
+      "waybackBytes": 372808
+    },
+    {
+      "sourceId": "taito-kanbetsu-r4",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R4yosanannopoint.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250805233536/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R4yosanannopoint.html",
+      "waybackTimestamp": "20250805233536",
+      "checkedAt": "2026-07-17T22:30:56.236Z"
+    },
+    {
+      "sourceId": "taito-kanbetsu-r5",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R5yosanannopoint.files/5gaisansho.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250805210655/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R5yosanannopoint.files/5gaisansho.pdf",
+      "waybackTimestamp": "20250805210655",
+      "checkedAt": "2026-07-17T22:30:09.788Z",
+      "sha256Match": true,
+      "waybackBytes": 362088
+    },
+    {
+      "sourceId": "taito-kanbetsu-r5",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R5yosanannopoint.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250814205244/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R5yosanannopoint.html",
+      "waybackTimestamp": "20250814205244",
+      "checkedAt": "2026-07-17T22:30:12.011Z"
+    },
+    {
+      "sourceId": "taito-kanbetsu-r6",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R6yosanannopoint.files/R6yosan3.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20241204021404/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R6yosanannopoint.files/R6yosan3.pdf",
+      "waybackTimestamp": "20241204021404",
+      "checkedAt": "2026-07-17T22:29:30.116Z",
+      "sha256Verified": false
+    },
+    {
+      "sourceId": "taito-kanbetsu-r6",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R6yosanannopoint.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250716020633/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R6yosanannopoint.html",
+      "waybackTimestamp": "20250716020633",
+      "checkedAt": "2026-07-17T22:29:56.333Z"
+    },
+    {
+      "sourceId": "taito-kanbetsu-r7",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R7yosanannopoint.files/R7yosan3.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250219074230/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R7yosanannopoint.files/R7yosan3.pdf",
+      "waybackTimestamp": "20250219074230",
+      "checkedAt": "2026-07-17T22:29:13.838Z",
+      "sha256Verified": false
+    },
+    {
+      "sourceId": "taito-kanbetsu-r7",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R7yosanannopoint.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251005191112/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R7yosanannopoint.html",
+      "waybackTimestamp": "20251005191112",
+      "checkedAt": "2026-07-17T22:29:20.688Z"
+    },
+    {
+      "sourceId": "taito-kanbetsu-r8",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R8yosanannopoint.files/R8yosan3.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717222749/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R8yosanannopoint.files/R8yosan3.pdf",
+      "waybackTimestamp": "20260717222749",
+      "checkedAt": "2026-07-17T22:28:04.424Z",
+      "sha256Match": true,
+      "waybackBytes": 304979
+    },
+    {
+      "sourceId": "taito-kanbetsu-r8",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R8yosanannopoint.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260717222821/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R8yosanannopoint.html",
+      "waybackTimestamp": "20260717222821",
+      "checkedAt": "2026-07-17T22:29:08.709Z"
     },
     {
       "sourceId": "toshima-yosansho-r5",
