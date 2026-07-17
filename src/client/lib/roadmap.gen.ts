@@ -13,19 +13,25 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 47,
+  "budgetCount": 48,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 285,
-  "fileCount": 410,
-  "archivedCount": 262,
+  "sourceCount": 311,
+  "fileCount": 436,
+  "archivedCount": 288,
   "licenseOpen": 19,
-  "licensePermission": 208,
+  "licensePermission": 234,
   "licenseUnverified": 58,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
   "kofuBudgetYears": 7,
   "budgetDepth": [
+    {
+      "name": "新宿区",
+      "code": "131041",
+      "years": 26,
+      "range": "H13〜R8（26年度）"
+    },
     {
       "name": "文京区",
       "code": "131059",

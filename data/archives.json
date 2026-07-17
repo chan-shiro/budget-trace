@@ -4094,6 +4094,476 @@
       "checkedAt": "2026-07-16T07:29:40.260Z"
     },
     {
+      "sourceId": "shinjuku-yosan-gaiyou-h13",
+      "url": "https://www.city.shinjuku.lg.jp/content/000050588.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20190609105058/https://www.city.shinjuku.lg.jp/content/000050588.pdf",
+      "waybackTimestamp": "20190609105058",
+      "checkedAt": "2026-07-17T12:18:08.713Z",
+      "sha256Match": true,
+      "waybackBytes": 495263
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h13",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251213135946/https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html",
+      "waybackTimestamp": "20251213135946",
+      "checkedAt": "2026-07-17T12:18:09.313Z"
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h14",
+      "url": "https://www.city.shinjuku.lg.jp/content/000050587.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20190609105116/https://www.city.shinjuku.lg.jp/content/000050587.pdf",
+      "waybackTimestamp": "20190609105116",
+      "checkedAt": "2026-07-17T12:17:25.433Z",
+      "sha256Match": true,
+      "waybackBytes": 385319
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h14",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251213135946/https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html",
+      "waybackTimestamp": "20251213135946",
+      "checkedAt": "2026-07-17T12:17:40.811Z"
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h15",
+      "url": "https://www.city.shinjuku.lg.jp/content/000050586.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20190609105101/https://www.city.shinjuku.lg.jp/content/000050586.pdf",
+      "waybackTimestamp": "20190609105101",
+      "checkedAt": "2026-07-17T12:16:46.036Z",
+      "sha256Match": true,
+      "waybackBytes": 857676
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h15",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251213135946/https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html",
+      "waybackTimestamp": "20251213135946",
+      "checkedAt": "2026-07-17T12:17:22.163Z"
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h16",
+      "url": "https://www.city.shinjuku.lg.jp/content/000050585.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20190609105119/https://www.city.shinjuku.lg.jp/content/000050585.pdf",
+      "waybackTimestamp": "20190609105119",
+      "checkedAt": "2026-07-17T12:16:29.157Z",
+      "sha256Match": true,
+      "waybackBytes": 882659
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h16",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251213135946/https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html",
+      "waybackTimestamp": "20251213135946",
+      "checkedAt": "2026-07-17T12:16:40.232Z"
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h17",
+      "url": "https://www.city.shinjuku.lg.jp/content/000050582.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20241217051611/https://www.city.shinjuku.lg.jp/content/000050582.pdf",
+      "waybackTimestamp": "20241217051611",
+      "checkedAt": "2026-07-17T12:15:48.080Z",
+      "sha256Match": true,
+      "waybackBytes": 814270
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h17",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251213135946/https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html",
+      "waybackTimestamp": "20251213135946",
+      "checkedAt": "2026-07-17T12:16:06.832Z"
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h18",
+      "url": "https://www.city.shinjuku.lg.jp/content/000050581.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20190609105121/https://www.city.shinjuku.lg.jp/content/000050581.pdf",
+      "waybackTimestamp": "20190609105121",
+      "checkedAt": "2026-07-17T12:15:06.874Z",
+      "sha256Match": true,
+      "waybackBytes": 814972
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h18",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251213135946/https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html",
+      "waybackTimestamp": "20251213135946",
+      "checkedAt": "2026-07-17T12:15:18.640Z"
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h19",
+      "url": "https://www.city.shinjuku.lg.jp/content/000050580.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20190609105107/https://www.city.shinjuku.lg.jp/content/000050580.pdf",
+      "waybackTimestamp": "20190609105107",
+      "checkedAt": "2026-07-17T12:14:50.728Z",
+      "sha256Match": true,
+      "waybackBytes": 869753
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h19",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251213135946/https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html",
+      "waybackTimestamp": "20251213135946",
+      "checkedAt": "2026-07-17T12:14:56.979Z"
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h20",
+      "url": "https://www.city.shinjuku.lg.jp/content/000050579.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20190609105124/https://www.city.shinjuku.lg.jp/content/000050579.pdf",
+      "waybackTimestamp": "20190609105124",
+      "checkedAt": "2026-07-17T12:14:40.399Z",
+      "sha256Match": true,
+      "waybackBytes": 977392
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h20",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251213135946/https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html",
+      "waybackTimestamp": "20251213135946",
+      "checkedAt": "2026-07-17T12:14:47.897Z"
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h21",
+      "url": "https://www.city.shinjuku.lg.jp/content/000059941.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20190609105110/https://www.city.shinjuku.lg.jp/content/000059941.pdf",
+      "waybackTimestamp": "20190609105110",
+      "checkedAt": "2026-07-17T12:14:28.318Z",
+      "sha256Match": true,
+      "waybackBytes": 614444
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h21",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251213135946/https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html",
+      "waybackTimestamp": "20251213135946",
+      "checkedAt": "2026-07-17T12:14:34.273Z"
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h22",
+      "url": "https://www.city.shinjuku.lg.jp/content/000062569.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20190609105126/https://www.city.shinjuku.lg.jp/content/000062569.pdf",
+      "waybackTimestamp": "20190609105126",
+      "checkedAt": "2026-07-17T12:13:56.517Z",
+      "sha256Match": true,
+      "waybackBytes": 674176
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h22",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251213135946/https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html",
+      "waybackTimestamp": "20251213135946",
+      "checkedAt": "2026-07-17T12:13:59.568Z"
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h23",
+      "url": "https://www.city.shinjuku.lg.jp/content/000103085.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20190609105113/https://www.city.shinjuku.lg.jp/content/000103085.pdf",
+      "waybackTimestamp": "20190609105113",
+      "checkedAt": "2026-07-17T12:13:30.334Z",
+      "sha256Match": true,
+      "waybackBytes": 1598454
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h23",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251213135946/https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html",
+      "waybackTimestamp": "20251213135946",
+      "checkedAt": "2026-07-17T12:13:35.583Z"
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h24",
+      "url": "https://www.city.shinjuku.lg.jp/content/000121180.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717121143/https://www.city.shinjuku.lg.jp/content/000121180.pdf",
+      "waybackTimestamp": "20260717121143",
+      "checkedAt": "2026-07-17T12:12:44.530Z",
+      "sha256Match": true,
+      "waybackBytes": 3010620
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h24",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251213135946/https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html",
+      "waybackTimestamp": "20251213135946",
+      "checkedAt": "2026-07-17T12:13:22.695Z"
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h25",
+      "url": "https://www.city.shinjuku.lg.jp/content/000139123.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20190609105224/https://www.city.shinjuku.lg.jp/content/000139123.pdf",
+      "waybackTimestamp": "20190609105224",
+      "checkedAt": "2026-07-17T12:09:11.732Z",
+      "sha256Match": true,
+      "waybackBytes": 1667179
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h25",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/zaisei01_001014.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251115130211/https://www.city.shinjuku.lg.jp/kusei/zaisei01_001014.html",
+      "waybackTimestamp": "20251115130211",
+      "checkedAt": "2026-07-17T12:09:38.372Z"
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h26",
+      "url": "https://www.city.shinjuku.lg.jp/content/000168755.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20190609105227/https://www.city.shinjuku.lg.jp/content/000168755.pdf",
+      "waybackTimestamp": "20190609105227",
+      "checkedAt": "2026-07-17T12:08:53.537Z",
+      "sha256Match": true,
+      "waybackBytes": 1638116
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h26",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/zaisei01_001014.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251115130211/https://www.city.shinjuku.lg.jp/kusei/zaisei01_001014.html",
+      "waybackTimestamp": "20251115130211",
+      "checkedAt": "2026-07-17T12:09:03.464Z"
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h27",
+      "url": "https://www.city.shinjuku.lg.jp/content/000189437.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20190609105229/https://www.city.shinjuku.lg.jp/content/000189437.pdf",
+      "waybackTimestamp": "20190609105229",
+      "checkedAt": "2026-07-17T12:08:41.708Z",
+      "sha256Match": true,
+      "waybackBytes": 6857852
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h27",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/zaisei01_001014.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251115130211/https://www.city.shinjuku.lg.jp/kusei/zaisei01_001014.html",
+      "waybackTimestamp": "20251115130211",
+      "checkedAt": "2026-07-17T12:08:44.884Z"
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h28",
+      "url": "https://www.city.shinjuku.lg.jp/content/000192291.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20190609105232/https://www.city.shinjuku.lg.jp/content/000192291.pdf",
+      "waybackTimestamp": "20190609105232",
+      "checkedAt": "2026-07-17T12:08:26.112Z",
+      "sha256Match": true,
+      "waybackBytes": 4240138
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h28",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/zaisei01_001014.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251115130211/https://www.city.shinjuku.lg.jp/kusei/zaisei01_001014.html",
+      "waybackTimestamp": "20251115130211",
+      "checkedAt": "2026-07-17T12:08:34.182Z"
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h29",
+      "url": "https://www.city.shinjuku.lg.jp/content/000233794.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20210924190314/https://www.city.shinjuku.lg.jp/content/000233794.pdf",
+      "waybackTimestamp": "20210924190314",
+      "checkedAt": "2026-07-17T12:07:57.871Z",
+      "sha256Match": false,
+      "waybackBytes": 1048576,
+      "waybackTruncated": true
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h29",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/zaisei01_001014.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251115130211/https://www.city.shinjuku.lg.jp/kusei/zaisei01_001014.html",
+      "waybackTimestamp": "20251115130211",
+      "checkedAt": "2026-07-17T12:08:23.166Z"
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h30",
+      "url": "https://www.city.shinjuku.lg.jp/content/000254899.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20190609105239/https://www.city.shinjuku.lg.jp/content/000254899.pdf",
+      "waybackTimestamp": "20190609105239",
+      "checkedAt": "2026-07-17T12:07:38.419Z",
+      "sha256Match": true,
+      "waybackBytes": 2654968
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-h30",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/zaisei01_001014.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251115130211/https://www.city.shinjuku.lg.jp/kusei/zaisei01_001014.html",
+      "waybackTimestamp": "20251115130211",
+      "checkedAt": "2026-07-17T12:07:42.341Z"
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-r1",
+      "url": "https://www.city.shinjuku.lg.jp/content/000283543.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20221128055737/https://www.city.shinjuku.lg.jp/content/000283543.pdf",
+      "waybackTimestamp": "20221128055737",
+      "checkedAt": "2026-07-17T12:06:48.786Z",
+      "sha256Match": true,
+      "waybackBytes": 2547121
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-r1",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/zaisei01_001014.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251115130211/https://www.city.shinjuku.lg.jp/kusei/zaisei01_001014.html",
+      "waybackTimestamp": "20251115130211",
+      "checkedAt": "2026-07-17T12:07:26.940Z"
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-r2",
+      "url": "https://www.city.shinjuku.lg.jp/content/000304338.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717120551/https://www.city.shinjuku.lg.jp/content/000304338.pdf",
+      "waybackTimestamp": "20260717120551",
+      "checkedAt": "2026-07-17T12:06:22.485Z",
+      "sha256Match": true,
+      "waybackBytes": 2640285
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-r2",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/zaisei01_001014.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251115130211/https://www.city.shinjuku.lg.jp/kusei/zaisei01_001014.html",
+      "waybackTimestamp": "20251115130211",
+      "checkedAt": "2026-07-17T12:06:44.036Z"
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-r3",
+      "url": "https://www.city.shinjuku.lg.jp/content/000331346.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717120403/https://www.city.shinjuku.lg.jp/content/000331346.pdf",
+      "waybackTimestamp": "20260717120403",
+      "checkedAt": "2026-07-17T12:19:33.102Z",
+      "sha256Match": true,
+      "waybackBytes": 2712694
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-r3",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/zaisei01_001014.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251115130211/https://www.city.shinjuku.lg.jp/kusei/zaisei01_001014.html",
+      "waybackTimestamp": "20251115130211",
+      "checkedAt": "2026-07-17T12:19:36.901Z"
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-r4",
+      "url": "https://www.city.shinjuku.lg.jp/content/000359947.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20241107095957/https://www.city.shinjuku.lg.jp/content/000359947.pdf",
+      "waybackTimestamp": "20241107095957",
+      "checkedAt": "2026-07-17T12:03:24.595Z",
+      "sha256Match": true,
+      "waybackBytes": 2716390
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-r4",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/zaisei01_001014.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251115130211/https://www.city.shinjuku.lg.jp/kusei/zaisei01_001014.html",
+      "waybackTimestamp": "20251115130211",
+      "checkedAt": "2026-07-17T12:03:58.838Z"
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-r5",
+      "url": "https://www.city.shinjuku.lg.jp/content/000359952.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260418131154/https://www.city.shinjuku.lg.jp/content/000359952.pdf",
+      "waybackTimestamp": "20260418131154",
+      "checkedAt": "2026-07-17T12:03:07.436Z",
+      "sha256Match": false,
+      "waybackBytes": 5242880,
+      "waybackTruncated": true
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-r5",
+      "url": "https://www.city.shinjuku.lg.jp/kucho/message/20230213-01-1.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250320054113/https://www.city.shinjuku.lg.jp/kucho/message/20230213-01-1.html",
+      "waybackTimestamp": "20250320054113",
+      "checkedAt": "2026-07-17T12:03:20.341Z"
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-r6",
+      "url": "https://www.city.shinjuku.lg.jp/content/000418377.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717120216/https://www.city.shinjuku.lg.jp/content/000418377.pdf",
+      "waybackTimestamp": "20260717120216",
+      "checkedAt": "2026-07-17T12:02:49.544Z",
+      "sha256Match": true,
+      "waybackBytes": 2566772
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-r6",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/zaisei01_001014.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251115130211/https://www.city.shinjuku.lg.jp/kusei/zaisei01_001014.html",
+      "waybackTimestamp": "20251115130211",
+      "checkedAt": "2026-07-17T12:02:55.577Z"
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-r7",
+      "url": "https://www.city.shinjuku.lg.jp/content/000448143.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717120137/https://www.city.shinjuku.lg.jp/content/000448143.pdf",
+      "waybackTimestamp": "20260717120137",
+      "checkedAt": "2026-07-17T12:01:59.558Z",
+      "sha256Match": true,
+      "waybackBytes": 9918242
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-r7",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/zaisei01_001014.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251115130211/https://www.city.shinjuku.lg.jp/kusei/zaisei01_001014.html",
+      "waybackTimestamp": "20251115130211",
+      "checkedAt": "2026-07-17T12:02:13.442Z"
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-r8",
+      "url": "https://www.city.shinjuku.lg.jp/content/000451451.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717120046/https://www.city.shinjuku.lg.jp/content/000451451.pdf",
+      "waybackTimestamp": "20260717120046",
+      "checkedAt": "2026-07-17T12:01:08.216Z",
+      "sha256Match": true,
+      "waybackBytes": 10248837
+    },
+    {
+      "sourceId": "shinjuku-yosan-gaiyou-r8",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/file06_02_0101.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250512222053/https://www.city.shinjuku.lg.jp/kusei/file06_02_0101.html",
+      "waybackTimestamp": "20250512222053",
+      "checkedAt": "2026-07-17T12:01:17.696Z"
+    },
+    {
       "sourceId": "shizuoka-yosansho-r6",
       "url": "https://www.city.shizuoka.lg.jp/documents/10691/r6ippannkaikeiyosannsetsumeisyo.pdf",
       "kind": "file",
