@@ -123,6 +123,402 @@
       "checkedAt": "2026-07-16T07:53:45.900Z"
     },
     {
+      "sourceId": "bunkyo-sokatsuhyo-h16",
+      "url": "https://www.city.bunkyo.lg.jp/b002/p005792.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260717034027/https://www.city.bunkyo.lg.jp/b002/p005792.html",
+      "waybackTimestamp": "20260717034027",
+      "checkedAt": "2026-07-17T03:42:05.991Z"
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h16",
+      "url": "https://www.city.bunkyo.lg.jp/documents/5586/soukatu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20241209034846/http://www.city.bunkyo.lg.jp/documents/5586/soukatu.pdf",
+      "waybackTimestamp": "20241209034846",
+      "checkedAt": "2026-07-17T03:42:03.817Z",
+      "sha256Match": true,
+      "waybackBytes": 56671
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h17",
+      "url": "https://www.city.bunkyo.lg.jp/b002/p005791.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20240810132250/https://www.city.bunkyo.lg.jp/b002/p005791.html",
+      "waybackTimestamp": "20240810132250",
+      "checkedAt": "2026-07-17T03:37:54.554Z"
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h17",
+      "url": "https://www.city.bunkyo.lg.jp/documents/5585/soukatu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20241208091940/http://www.city.bunkyo.lg.jp/documents/5585/soukatu.pdf",
+      "waybackTimestamp": "20241208091940",
+      "checkedAt": "2026-07-17T03:37:44.790Z",
+      "sha256Match": true,
+      "waybackBytes": 60445
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h18",
+      "url": "https://www.city.bunkyo.lg.jp/b002/p005790.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20241207181106/https://www.city.bunkyo.lg.jp/b002/p005790.html",
+      "waybackTimestamp": "20241207181106",
+      "checkedAt": "2026-07-17T03:36:49.666Z"
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h18",
+      "url": "https://www.city.bunkyo.lg.jp/documents/5584/soukatu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20241209040949/http://www.city.bunkyo.lg.jp/documents/5584/soukatu.pdf",
+      "waybackTimestamp": "20241209040949",
+      "checkedAt": "2026-07-17T03:36:48.809Z",
+      "sha256Match": true,
+      "waybackBytes": 195499
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h19",
+      "url": "https://www.city.bunkyo.lg.jp/b002/p005789.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20241110050438/http://www.city.bunkyo.lg.jp/b002/p005789.html",
+      "waybackTimestamp": "20241110050438",
+      "checkedAt": "2026-07-17T03:42:58.323Z"
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h19",
+      "url": "https://www.city.bunkyo.lg.jp/documents/5583/19soukatu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717034240/https://www.city.bunkyo.lg.jp/documents/5583/19soukatu.pdf",
+      "waybackTimestamp": "20260717034240",
+      "checkedAt": "2026-07-17T03:42:50.183Z",
+      "sha256Match": true,
+      "waybackBytes": 184206
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h20",
+      "url": "https://www.city.bunkyo.lg.jp/b002/p005788.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20241110061206/http://www.city.bunkyo.lg.jp/b002/p005788.html",
+      "waybackTimestamp": "20241110061206",
+      "checkedAt": "2026-07-17T03:34:36.446Z"
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h20",
+      "url": "https://www.city.bunkyo.lg.jp/documents/5582/20soukatupdf.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250806141509/https://www.city.bunkyo.lg.jp/documents/5582/20soukatupdf.pdf",
+      "waybackTimestamp": "20250806141509",
+      "checkedAt": "2026-07-17T03:34:31.880Z",
+      "sha256Match": true,
+      "waybackBytes": 1140487
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h21",
+      "url": "https://www.city.bunkyo.lg.jp/b002/p005787.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251206191658/https://www.city.bunkyo.lg.jp/b002/p005787.html",
+      "waybackTimestamp": "20251206191658",
+      "checkedAt": "2026-07-17T03:34:11.871Z"
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h21",
+      "url": "https://www.city.bunkyo.lg.jp/documents/5581/21sokatuhyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250621012618/https://www.city.bunkyo.lg.jp/documents/5581/21sokatuhyo.pdf",
+      "waybackTimestamp": "20250621012618",
+      "checkedAt": "2026-07-17T03:34:06.484Z",
+      "sha256Match": true,
+      "waybackBytes": 50566
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h22",
+      "url": "https://www.city.bunkyo.lg.jp/b002/p005786.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20240917062937/https://www.city.bunkyo.lg.jp/b002/p005786.html",
+      "waybackTimestamp": "20240917062937",
+      "checkedAt": "2026-07-17T03:34:02.508Z"
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h22",
+      "url": "https://www.city.bunkyo.lg.jp/documents/5580/22soukatsu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20241209024831/http://www.city.bunkyo.lg.jp/documents/5580/22soukatsu.pdf",
+      "waybackTimestamp": "20241209024831",
+      "checkedAt": "2026-07-17T03:33:57.622Z",
+      "sha256Match": true,
+      "waybackBytes": 197779
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h23",
+      "url": "https://www.city.bunkyo.lg.jp/b002/p005785.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20240530162434/https://www.city.bunkyo.lg.jp/b002/p005785.html",
+      "waybackTimestamp": "20240530162434",
+      "checkedAt": "2026-07-17T03:33:12.007Z"
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h23",
+      "url": "https://www.city.bunkyo.lg.jp/documents/5579/23soukatuhyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250802233238/https://www.city.bunkyo.lg.jp/documents/5579/23soukatuhyo.pdf",
+      "waybackTimestamp": "20250802233238",
+      "checkedAt": "2026-07-17T03:33:11.623Z",
+      "sha256Match": true,
+      "waybackBytes": 457413
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h24",
+      "url": "https://www.city.bunkyo.lg.jp/b002/p005784.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20241110053233/http://www.city.bunkyo.lg.jp/b002/p005784.html",
+      "waybackTimestamp": "20241110053233",
+      "checkedAt": "2026-07-17T03:32:21.466Z"
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h24",
+      "url": "https://www.city.bunkyo.lg.jp/documents/5578/24yosansoukatsuhyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20241207235016/http://www.city.bunkyo.lg.jp/documents/5578/24yosansoukatsuhyou.pdf",
+      "waybackTimestamp": "20241207235016",
+      "checkedAt": "2026-07-17T03:32:20.249Z",
+      "sha256Match": true,
+      "waybackBytes": 524649
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h26",
+      "url": "https://www.city.bunkyo.lg.jp/b002/p005782.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20241110052608/http://www.city.bunkyo.lg.jp/b002/p005782.html",
+      "waybackTimestamp": "20241110052608",
+      "checkedAt": "2026-07-17T03:32:16.659Z"
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h26",
+      "url": "https://www.city.bunkyo.lg.jp/documents/5576/26soukatsuhyo_1.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20241208003445/http://www.city.bunkyo.lg.jp/documents/5576/26soukatsuhyo_1.pdf",
+      "waybackTimestamp": "20241208003445",
+      "checkedAt": "2026-07-17T03:32:14.973Z",
+      "sha256Match": true,
+      "waybackBytes": 529850
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h27",
+      "url": "https://www.city.bunkyo.lg.jp/b002/p005781.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20241207203723/https://www.city.bunkyo.lg.jp/b002/p005781.html",
+      "waybackTimestamp": "20241207203723",
+      "checkedAt": "2026-07-17T03:32:06.109Z"
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h27",
+      "url": "https://www.city.bunkyo.lg.jp/documents/5575/26soukatsuhyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20241207230104/http://www.city.bunkyo.lg.jp/documents/5575/26soukatsuhyo.pdf",
+      "waybackTimestamp": "20241207230104",
+      "checkedAt": "2026-07-17T03:32:02.998Z",
+      "sha256Match": true,
+      "waybackBytes": 538147
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h28",
+      "url": "https://www.city.bunkyo.lg.jp/b002/p005780.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20241007104034/https://www.city.bunkyo.lg.jp/b002/p005780.html",
+      "waybackTimestamp": "20241007104034",
+      "checkedAt": "2026-07-17T03:31:44.560Z"
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h28",
+      "url": "https://www.city.bunkyo.lg.jp/documents/5574/28soukatsuhyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20241208002855/http://www.city.bunkyo.lg.jp/documents/5574/28soukatsuhyou.pdf",
+      "waybackTimestamp": "20241208002855",
+      "checkedAt": "2026-07-17T03:31:35.189Z",
+      "sha256Match": true,
+      "waybackBytes": 527848
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h29",
+      "url": "https://www.city.bunkyo.lg.jp/b002/p005779.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20240525204419/https://www.city.bunkyo.lg.jp/b002/p005779.html",
+      "waybackTimestamp": "20240525204419",
+      "checkedAt": "2026-07-17T03:31:31.120Z"
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h29",
+      "url": "https://www.city.bunkyo.lg.jp/documents/5573/29soukatsuhyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717033048/https://www.city.bunkyo.lg.jp/documents/5573/29soukatsuhyou.pdf",
+      "waybackTimestamp": "20260717033048",
+      "checkedAt": "2026-07-17T03:31:24.394Z",
+      "sha256Match": true,
+      "waybackBytes": 533169
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h30",
+      "url": "https://www.city.bunkyo.lg.jp/b002/p005778.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20241110052127/http://www.city.bunkyo.lg.jp/b002/p005778.html",
+      "waybackTimestamp": "20241110052127",
+      "checkedAt": "2026-07-17T03:29:48.506Z"
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h30",
+      "url": "https://www.city.bunkyo.lg.jp/documents/49/300208_gian_tousyo_shiryo1_soukatsuhyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20241208055114/http://www.city.bunkyo.lg.jp/documents/49/300208_gian_tousyo_shiryo1_soukatsuhyou.pdf",
+      "waybackTimestamp": "20241208055114",
+      "checkedAt": "2026-07-17T03:29:23.912Z",
+      "sha256Match": true,
+      "waybackBytes": 534711
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h31",
+      "url": "https://www.city.bunkyo.lg.jp/b002/p005777.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20240529151418/https://www.city.bunkyo.lg.jp/b002/p005777.html",
+      "waybackTimestamp": "20240529151418",
+      "checkedAt": "2026-07-17T03:29:10.329Z"
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-h31",
+      "url": "https://www.city.bunkyo.lg.jp/documents/5572/310208_gian_31tousyo_shiryo1_soukatsuhyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20241208065015/http://www.city.bunkyo.lg.jp/documents/5572/310208_gian_31tousyo_shiryo1_soukatsuhyou.pdf",
+      "waybackTimestamp": "20241208065015",
+      "checkedAt": "2026-07-17T03:29:06.357Z",
+      "sha256Match": true,
+      "waybackBytes": 508358
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-r2",
+      "url": "https://www.city.bunkyo.lg.jp/b002/p005776.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20240525230513/https://www.city.bunkyo.lg.jp/b002/p005776.html",
+      "waybackTimestamp": "20240525230513",
+      "checkedAt": "2026-07-17T03:28:52.733Z"
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-r2",
+      "url": "https://www.city.bunkyo.lg.jp/documents/5571/2020soukatsuhyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20241207231735/http://www.city.bunkyo.lg.jp/documents/5571/2020soukatsuhyou.pdf",
+      "waybackTimestamp": "20241207231735",
+      "checkedAt": "2026-07-17T03:28:51.705Z",
+      "sha256Match": true,
+      "waybackBytes": 711135
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-r3",
+      "url": "https://www.city.bunkyo.lg.jp/b002/p005775.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20240917050017/https://www.city.bunkyo.lg.jp/b002/p005775.html",
+      "waybackTimestamp": "20240917050017",
+      "checkedAt": "2026-07-17T03:28:36.995Z"
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-r3",
+      "url": "https://www.city.bunkyo.lg.jp/documents/5570/2021soukatuhyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20241208050200/http://www.city.bunkyo.lg.jp/documents/5570/2021soukatuhyo.pdf",
+      "waybackTimestamp": "20241208050200",
+      "checkedAt": "2026-07-17T03:28:22.304Z",
+      "sha256Match": true,
+      "waybackBytes": 553231
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-r4",
+      "url": "https://www.city.bunkyo.lg.jp/b002/p005774.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20240917045817/https://www.city.bunkyo.lg.jp/b002/p005774.html",
+      "waybackTimestamp": "20240917045817",
+      "checkedAt": "2026-07-17T03:28:16.272Z"
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-r4",
+      "url": "https://www.city.bunkyo.lg.jp/documents/5569/2022324164654.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20241208070119/http://www.city.bunkyo.lg.jp/documents/5569/2022324164654.pdf",
+      "waybackTimestamp": "20241208070119",
+      "checkedAt": "2026-07-17T03:27:52.976Z",
+      "sha256Match": true,
+      "waybackBytes": 520629
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-r5",
+      "url": "https://www.city.bunkyo.lg.jp/b002/p005773.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20240530154627/https://www.city.bunkyo.lg.jp/b002/p005773.html",
+      "waybackTimestamp": "20240530154627",
+      "checkedAt": "2026-07-17T03:27:38.386Z"
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-r5",
+      "url": "https://www.city.bunkyo.lg.jp/documents/5568/20233614280_1.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717032646/https://www.city.bunkyo.lg.jp/documents/5568/20233614280_1.pdf",
+      "waybackTimestamp": "20260717032646",
+      "checkedAt": "2026-07-17T03:27:10.412Z",
+      "sha256Match": true,
+      "waybackBytes": 375881
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-r6",
+      "url": "https://www.city.bunkyo.lg.jp/b002/p007676.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20240917054828/https://www.city.bunkyo.lg.jp/b002/p007676.html",
+      "waybackTimestamp": "20240917054828",
+      "checkedAt": "2026-07-17T03:26:37.713Z"
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-r6",
+      "url": "https://www.city.bunkyo.lg.jp/documents/8579/202437164616.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20241208072244/http://www.city.bunkyo.lg.jp/documents/8579/202437164616.pdf",
+      "waybackTimestamp": "20241208072244",
+      "checkedAt": "2026-07-17T03:26:26.750Z",
+      "sha256Match": true,
+      "waybackBytes": 431365
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-r7",
+      "url": "https://www.city.bunkyo.lg.jp/b002/p007690.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260516113333/https://www.city.bunkyo.lg.jp/b002/p007690.html",
+      "waybackTimestamp": "20260516113333",
+      "checkedAt": "2026-07-17T03:26:23.769Z"
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-r7",
+      "url": "https://www.city.bunkyo.lg.jp/documents/10873/r07_tosyoyosansoukatsuhyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250713083848/https://www.city.bunkyo.lg.jp/documents/10873/r07_tosyoyosansoukatsuhyo.pdf",
+      "waybackTimestamp": "20250713083848",
+      "checkedAt": "2026-07-17T03:25:53.548Z",
+      "sha256Match": true,
+      "waybackBytes": 523519
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-r8",
+      "url": "https://www.city.bunkyo.lg.jp/b002/p007692.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260717032516/https://www.city.bunkyo.lg.jp/b002/p007692.html",
+      "waybackTimestamp": "20260717032516",
+      "checkedAt": "2026-07-17T03:41:37.149Z"
+    },
+    {
+      "sourceId": "bunkyo-sokatsuhyo-r8",
+      "url": "https://www.city.bunkyo.lg.jp/documents/12708/r08_tosyoyosan_sokatsuhyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717034120/https://www.city.bunkyo.lg.jp/documents/12708/r08_tosyoyosan_sokatsuhyo.pdf",
+      "waybackTimestamp": "20260717034120",
+      "checkedAt": "2026-07-17T03:41:34.519Z",
+      "sha256Match": true,
+      "waybackBytes": 387621
+    },
+    {
       "sourceId": "chiba-yosansho-r4",
       "url": "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/documents/r4ippan.pdf",
       "kind": "file",

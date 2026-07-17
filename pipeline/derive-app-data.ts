@@ -1897,6 +1897,17 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r3", "r2"] as const).map((fy) => ({
       srcId: `suginami-keikakusho-${fy}`, muniCode: "131156", muniName: "杉並区", prefName: "東京都", isPref: false,
     })),
+    // 文京区。**収録中で最長の22年（H16〜R8）**＝江戸川の12年を超えて年度の深さが全自治体トップ。
+    // 当初予算総括表。**歳出12款は23年間まったく不変**・**職員費の款は無い**（人件費配賦型なので
+    // 他自治体と款別を直接比較できる）。H25 のみスキャン＋OCR で parse が throw するため**欠番**
+    // （§9l の年度チェーンは連続年度のみなので H26→H24 は自動で飛ぶ）。
+    // ⚠ **前年度列は歳出だけ「組み替え後」**（発行元が前年を当年度の款体系へ restate する）。
+    //   21リンク中8リンクの歳出が款レベルで動くが**Σ差は必ず0**＝款間の付替え。歳入は21リンク
+    //   すべて款単位で一致。年度チェーンは総額しか見ないので素通りする（registry のコメント参照）。
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28", "h27", "h26",
+      "h24", "h23", "h22", "h21", "h20", "h19", "h18", "h17", "h16"] as const).map((fy) => ({
+      srcId: `bunkyo-sokatsuhyo-${fy}`, muniCode: "131059", muniName: "文京区", prefName: "東京都", isPref: false,
+    })),
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
   ] as const;
