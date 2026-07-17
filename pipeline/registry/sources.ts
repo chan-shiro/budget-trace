@@ -2267,6 +2267,55 @@ export const SOURCES: SourceEntry[] = [
   })),
 
   ...([
+    // [年度, 歳入ページ(物理), 歳出ページ(物理), 年度ページ, PDF パス, 側の順序]
+    //
+    // 大田区 H24〜H20（2026-07-17 追加）。**上の H28〜R8 とは資料の単位が違う** — こちらは
+    // 「予算（案）概要」の**冊子まるごと**（84〜87p）で、款別集計表はその中の1見開き。
+    // 既存パーサに乗ることは §10f の時点で try-parse 実測済み（Σ 各年度4系統すべて差0・款名クリーン）。
+    //
+    // ⚠ **H22・H21・H20 は款別表の側の順序が逆**（**歳出が（1）・歳入が（2）**）。
+    //    **この誤りは Σ では絶対に捕まらない** — 歳入合計 = 歳出合計 は予算では定義上いつも成立し、
+    //    左右を取り違えても両側とも差0 で通る。**款名の目視だけが唯一の網**（§10f）。
+    //    → 側は `revenueHeading`/`expenditureHeading` の (1)/(2) で決まるので鏡像にする。
+    // ⚠ **H20 だけ合計ラベルが既定**（`歳入合計`/`歳出合計`）。H28〜H21 の `合計` を渡すと落ちる。
+    // ⚠ **H20 の歳出款8 は `清掃費`**（H21 以降の `環境清掃費` への改称前。金額一致で確認済み）。
+    //    款名で年度をまたいで結合するときに効くので、改称であって別款ではないことを明記しておく。
+    // ⚠ **H20 の歳入ページには性質別歳出の表が同居する**ため **`kanNoless` を有効にしてはいけない**
+    //    （有効にすると款番号を持たない性質別の行を拾って二重計上になる）。上のブロックと同じ理由。
+    // ⚠ **H22 は拡張子が二重**（`22yosan-gaiyou.pdf.pdf`）。url テンプレートが `.pdf` を足すので
+    //    path 側に `.pdf` まで書く。**綴りの破れは H 年度でも続く**（§10f・外挿禁止）:
+    //    年度ページ H20 だけ `20yosan_gaiyou`／PDF 名 `24yosan_gaiyou`（_）・`22yosan-gaiyou`（-）・`20gaiyou`
+    ["H24", 19, 20, "24yosan", "24yosan.files/24yosan_gaiyou", "normal"],
+    ["H23", 19, 20, "23yosan", "23yosan.files/23yosan_gaiyou", "normal"],
+    ["H22", 20, 19, "22yosan", "22yosan.files/22yosan-gaiyou.pdf", "swapped"],
+    ["H21", 18, 17, "21yosan", "21yosan.files/21yosan-gaiyou", "swapped"],
+    ["H20", 29, 28, "20yosan_gaiyou", "20yosan_gaiyou.files/20gaiyou", "swapped"],
+  ] as const).map(([fy, rev, exp, page, path, side]) => ({
+    id: `ota-yosansho-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 大田区予算（案）概要（款別集計表）`,
+    publisher: "大田区",
+    url: null,
+    urls: [`https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/${path}.pdf`],
+    landingPage: `https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/${page}.html`,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "大田区（一般会計・団体コード131113）",
+    // ライセンスの経緯は上のブロックのコメント参照（CC BY は本 PDF に及ばない＝§9g）。
+    license:
+      "大田区ホームページ上の文書や画像などの各ファイル、及びその内容に関する諸権利は、原則として大田区に帰属しています。また、一部の画像などの著作権は、原著作権者が所有しています。／大田区ホームページ上の文書や画像などについては、「私的使用のための複製」や「引用」など著作権法上認められた場合や大田区がオープンデータとして公開しているものを除き、無断での使用・転載、二次利用はできません。／大田区がオープンデータとして公開しているもの以外の文書などについて転用等を希望される場合は、各ページのお問い合わせ先の所属に、ご相談ください。",
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      revenuePage: rev,
+      expenditurePage: exp,
+      // 側の順序（上記）。H22 以前は歳出が（1）。
+      revenueHeading: side === "swapped" ? "（2） 歳入" : "（1） 歳入",
+      expenditureHeading: side === "swapped" ? "（1） 歳出" : "（2） 歳出",
+      // H20 だけ既定ラベル（上記）
+      ...(fy === "H20" ? {} : { revenueTotalLabel: "合計", expenditureTotalLabel: "合計" }),
+    },
+  })),
+
+  ...([
     // [年度, ドキュメントID/ファイル名, 年度ページのパス]
     ["R8", "17921/r8_sokatsuhyo.pdf", "a0002/kusei/zaisei/yosan/r8/r8tousyo_press"],
     ["R7", "16917/r7_sokatsuhyo.pdf", "a0002/kusei/zaisei/yosan/r7/r7tousyo_press"],

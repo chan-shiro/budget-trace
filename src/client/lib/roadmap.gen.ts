@@ -16,11 +16,11 @@ export const ROADMAP_PROGRESS = {
   "budgetCount": 46,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 264,
-  "fileCount": 389,
-  "archivedCount": 241,
+  "sourceCount": 269,
+  "fileCount": 394,
+  "archivedCount": 246,
   "licenseOpen": 19,
-  "licensePermission": 187,
+  "licensePermission": 192,
   "licenseUnverified": 58,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -33,6 +33,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H16〜R8（22年度）"
     },
     {
+      "name": "大田区",
+      "code": "131113",
+      "years": 16,
+      "range": "H20〜R8（16年度）"
+    },
+    {
       "name": "江戸川区",
       "code": "131237",
       "years": 12,
@@ -41,12 +47,6 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "江東区",
       "code": "131083",
-      "years": 11,
-      "range": "H28〜R8（11年度）"
-    },
-    {
-      "name": "大田区",
-      "code": "131113",
       "years": 11,
       "range": "H28〜R8（11年度）"
     },
