@@ -2267,9 +2267,9 @@ export const SOURCES: SourceEntry[] = [
   })),
 
   ...([
-    // [年度, 歳入ページ(物理), 歳出ページ(物理), 年度ページ, PDF パス, 側の順序]
+    // [年度, 歳入ページ(物理), 歳出ページ(物理), 年度ページ, PDF パス, 側の順序, 抽出モード]
     //
-    // 大田区 H24〜H20（2026-07-17 追加）。**上の H28〜R8 とは資料の単位が違う** — こちらは
+    // 大田区 H26〜H20（2026-07-17 追加）。**上の H28〜R8 とは資料の単位が違う** — こちらは
     // 「予算（案）概要」の**冊子まるごと**（84〜87p）で、款別集計表はその中の1見開き。
     // 既存パーサに乗ることは §10f の時点で try-parse 実測済み（Σ 各年度4系統すべて差0・款名クリーン）。
     //
@@ -2285,12 +2285,24 @@ export const SOURCES: SourceEntry[] = [
     // ⚠ **H22 は拡張子が二重**（`22yosan-gaiyou.pdf.pdf`）。url テンプレートが `.pdf` を足すので
     //    path 側に `.pdf` まで書く。**綴りの破れは H 年度でも続く**（§10f・外挿禁止）:
     //    年度ページ H20 だけ `20yosan_gaiyou`／PDF 名 `24yosan_gaiyou`（_）・`22yosan-gaiyou`（-）・`20gaiyou`
-    ["H24", 19, 20, "24yosan", "24yosan.files/24yosan_gaiyou", "normal"],
-    ["H23", 19, 20, "23yosan", "23yosan.files/23yosan_gaiyou", "normal"],
-    ["H22", 20, 19, "22yosan", "22yosan.files/22yosan-gaiyou.pdf", "swapped"],
-    ["H21", 18, 17, "21yosan", "21yosan.files/21yosan-gaiyou", "swapped"],
-    ["H20", 29, 28, "20yosan_gaiyou", "20yosan_gaiyou.files/20gaiyou", "swapped"],
-  ] as const).map(([fy, rev, exp, page, path, side]) => ({
+    //
+    // ⚠ **H26・H25 だけ `textSource: "raw"`**（2026-07-17）。この2年度は**款9 特別区交付金の行が
+    //    PDF 上で二重に描かれて**おり、`-layout` が重なりを解こうとして**3行に割り、カンマを別行へ
+    //    剥離する**（`9 特 区  64,100,000` ／ 次行に `,  26.5  59,606,000`）。Σ が巨大にずれるので
+    //    **error で必ず止まる**＝静かには壊れない。`-raw` は同じ行を正しく1行で返す（パーサの
+    //    `textSource` のコメントに実測を残した）。**座標ベース（-tsv）では救えない**（残骸も拾う）。
+    //    → **モードは「Σ が合うまで試す」のではなく、原典と突き合わせて人が決める**。
+    //    裏付け: **H26 の前年度列 = H25 の当年度列**・**H25 の前年度列 = H24 の当年度列**が
+    //    款9 を含めて全款一致する（独立した3資料が噛み合う）。
+    // ⚠ **H27 だけは救えない**（ToUnicode 全面欠落＝`-raw` でも文字が化ける。§10a）。大田で唯一の穴。
+    ["H26", 19, 20, "26yosan", "26yosan.files/26yosan_gaiyou", "normal", "raw"],
+    ["H25", 19, 20, "25yosan", "25yosan.files/25yosan_gaiyou", "normal", "raw"],
+    ["H24", 19, 20, "24yosan", "24yosan.files/24yosan_gaiyou", "normal", "layout"],
+    ["H23", 19, 20, "23yosan", "23yosan.files/23yosan_gaiyou", "normal", "layout"],
+    ["H22", 20, 19, "22yosan", "22yosan.files/22yosan-gaiyou.pdf", "swapped", "layout"],
+    ["H21", 18, 17, "21yosan", "21yosan.files/21yosan-gaiyou", "swapped", "layout"],
+    ["H20", 29, 28, "20yosan_gaiyou", "20yosan_gaiyou.files/20gaiyou", "swapped", "layout"],
+  ] as const).map(([fy, rev, exp, page, path, side, src]) => ({
     id: `ota-yosansho-${fy.toLowerCase()}`,
     title: `${eraYear(fy)}年度 大田区予算（案）概要（款別集計表）`,
     publisher: "大田区",
@@ -2312,6 +2324,8 @@ export const SOURCES: SourceEntry[] = [
       expenditureHeading: side === "swapped" ? "（1） 歳出" : "（2） 歳出",
       // H20 だけ既定ラベル（上記）
       ...(fy === "H20" ? {} : { revenueTotalLabel: "合計", expenditureTotalLabel: "合計" }),
+      // H26・H25 だけ -raw（上記）。他年度は既定の -layout で読む
+      ...(src === "raw" ? { textSource: "raw" as const } : {}),
     },
   })),
 

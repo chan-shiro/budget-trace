@@ -3423,6 +3423,42 @@
       "checkedAt": "2026-07-17T09:12:30.033Z"
     },
     {
+      "sourceId": "ota-yosansho-h25",
+      "url": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/25yosan.files/25yosan_gaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20130417223708/http://www.city.ota.tokyo.jp:80/kuseijoho/suuji/yosan_kessan/yosan/25yosan.files/25yosan_gaiyou.pdf",
+      "waybackTimestamp": "20130417223708",
+      "checkedAt": "2026-07-17T09:52:42.321Z",
+      "sha256Match": true,
+      "waybackBytes": 3662536
+    },
+    {
+      "sourceId": "ota-yosansho-h25",
+      "url": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/25yosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260311135923/https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/25yosan.html",
+      "waybackTimestamp": "20260311135923",
+      "checkedAt": "2026-07-17T09:53:33.968Z"
+    },
+    {
+      "sourceId": "ota-yosansho-h26",
+      "url": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/26yosan.files/26yosan_gaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20240331065920/http://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/26yosan.files/26yosan_gaiyou.pdf",
+      "waybackTimestamp": "20240331065920",
+      "checkedAt": "2026-07-17T09:51:44.622Z",
+      "sha256Match": true,
+      "waybackBytes": 5002070
+    },
+    {
+      "sourceId": "ota-yosansho-h26",
+      "url": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/26yosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260308075559/https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/26yosan.html",
+      "waybackTimestamp": "20260308075559",
+      "checkedAt": "2026-07-17T09:51:46.573Z"
+    },
+    {
       "sourceId": "ota-yosansho-r2",
       "url": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/r02yosan/r02-yosanann.files/3.pdf",
       "kind": "file",
