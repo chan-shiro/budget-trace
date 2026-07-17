@@ -1420,15 +1420,26 @@ export const WAYBACK_BY_URL: Record<string, string> = ${JSON.stringify(byUrl, nu
     const meta = readRawMeta(s.id);
     // registry 側の宛先（ファイル直リンク → ランディングページ）。fetchedFrom が使えないときの控え
     const registryUrl = s.urls?.[0] ?? s.url ?? s.landingPage ?? null;
+    // **発行元がファイルへの直リンクを断っている資料**（SourceEntry.noDeepLink 参照・新宿）は
+    // ランディングページへ向ける。**ここで landingPage が無いまま素通りさせない** — 静かに
+    // 直リンクへ落ちると、発行元が断っている行為をこちらから行うことになる。
+    if (s.noDeepLink && !s.landingPage) {
+      throw new Error(
+        `${s.id}: noDeepLink を立てているのに landingPage がありません。` +
+          `発行元がファイルへの直リンクを断っている資料は、振替先のランディングページが必須です。`,
+      );
+    }
     for (const f of meta?.files ?? []) {
       const from = f.fetchedFrom;
-      const link: Link | null = /^https?:/.test(from)
-        ? { mode: isArchiveUrl(from) ? "archive" : "origin", href: from, license: s.license }
-        : ARCHIVES[registryUrl ?? ""]
-          ? { mode: "archive", href: ARCHIVES[registryUrl!]!, license: s.license }
-          : registryUrl
-            ? { mode: isArchiveUrl(registryUrl) ? "archive" : "origin", href: registryUrl, license: s.license }
-            : null;
+      const link: Link | null = s.noDeepLink
+        ? { mode: "origin", href: s.landingPage!, license: s.license }
+        : /^https?:/.test(from)
+          ? { mode: isArchiveUrl(from) ? "archive" : "origin", href: from, license: s.license }
+          : ARCHIVES[registryUrl ?? ""]
+            ? { mode: "archive", href: ARCHIVES[registryUrl!]!, license: s.license }
+            : registryUrl
+              ? { mode: isArchiveUrl(registryUrl) ? "archive" : "origin", href: registryUrl, license: s.license }
+              : null;
       if (!link) {
         missing.push(`${s.id}/${f.filename}`);
         continue;
@@ -1863,6 +1874,20 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     // （**H31・H30 では kanNoless は no-op**＝R8 の折返し型が無い）。H29 以前は未着手。
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30"] as const).map((fy) => ({
       srcId: `katsushika-yosangaiyou-${fy}`, muniCode: "131229", muniName: "葛飾区", prefName: "東京都", isPref: false,
+    })),
+    // 新宿区（2026-07-17 追加）。「予算の概要」巻末の款別総括表。**H13〜R8 の26年度＝収録中で最長**
+    // （文京の22年を抜いた）。年度間クロスチェーンは H13→R8 の25リンクすべて一致。
+    // ⚠ **同一 PDF の「補正後予算比較」表を誤読しても Σ・validate・前年度基準のどれも捕まえない**
+    //   （款名までクリーンに通る）。**年度間クロスチェーンだけが検出する**＝ページを動かしたら必ず見る。
+    // ⚠ **R5 は「予算(案)の概要」を採っている**（年度一覧のファイルはスキャン＋OCR で値が壊れる）。
+    //   registry 初の(案)版。**R5案 当年度 = R6 前年度**で議会修正が無いことを確認済み。
+    // ⚠ **発行元がファイルへの直リンクを断っている**（`noDeepLink`）ので、エビデンスの振替先は
+    //   ランディングページ。registry 初のケース。
+    // 歳出は R1〜R8 で13款不変・**職員費の款は無い**（人件費配賦型）。
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "r1", "h30", "h29", "h28", "h27", "h26", "h25",
+      "h24", "h23", "h22", "h21", "h20", "h19", "h18", "h17", "h16", "h15", "h14",
+      "h13"] as const).map((fy) => ({
+      srcId: `shinjuku-yosan-gaiyou-${fy}`, muniCode: "131041", muniName: "新宿区", prefName: "東京都", isPref: false,
     })),
     // 北区（2026-07-17 追加）。「予算の概要」。**H24〜R8 の15年度が現存し 14年度を収録**
     // （**H25 のみ収録不可** — `-layout` は款15 を2行に割り `-raw` は合計行で throw する＝
