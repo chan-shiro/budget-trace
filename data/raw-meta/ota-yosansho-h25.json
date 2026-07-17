@@ -1,0 +1,12 @@
+{
+  "sourceId": "ota-yosansho-h25",
+  "files": [
+    {
+      "filename": "25yosan_gaiyou.pdf",
+      "sha256": "e2cb337680b9b479515d6f6b398250d2d4e15033c32ab7b24fb4333f70502ca8",
+      "bytes": 3662536,
+      "fetchedAt": "2026-07-17T09:51:02.910Z",
+      "fetchedFrom": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/25yosan.files/25yosan_gaiyou.pdf"
+    }
+  ]
+}

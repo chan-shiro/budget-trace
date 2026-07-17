@@ -89,6 +89,37 @@ interface Options {
   revenueCropX?: CropX;
   expenditureCropX?: CropX;
   /**
+   * **`pdftotext` のテキスト抽出モード**。既定は `-layout`（列がスペースで揃うので行パーサが素直）。
+   *
+   * `"raw"` を指定すると **`-raw`**（内容ストリーム順）で読む。**原典が健全なのに `-layout` が
+   * 行を壊す資料**のための逃げ道で、**資料ごとに実測して明示的に指定する**（2026-07-17・大田 H26/H25）。
+   *
+   * ⚠ **「Σ が合うまでモードを変えて試す」ことは絶対にしない**。それは検証ゲートに合わせて
+   *   データの読み方を選ぶ＝ゲートを無意味にする行為。**人が原典と突き合わせて「この資料は
+   *   -raw が正しい」と確かめてから**ここに書く。
+   *
+   * 大田 H26/H25 の実測: 款9 特別区交付金の行が PDF 上で**二重に描かれて**おり、`-layout` は
+   * 重なりを解こうとして**3行に割り、カンマを別行へ剥離する**:
+   * ```
+   *    別区交付金
+   * 9 特 区                    64,100,000
+   *                            ,           26.5    59,606,000
+   * ```
+   * → Σ が巨大にずれて **error で必ず止まる**（静かには壊れない）。`-raw` は同じ行を
+   * `9 特別区交付金 64,100,000 26.5 59,606,000 25.7 4,494,000 7.5` と**正しく1行で返し**、
+   * 重なりの残骸は `特 区 , , , , , ,` という別行に落ちる（`HeaderExtra` で捨てる）。
+   *
+   * **座標ベース（`-tsv`）ではこの資料は救えない**（実測）。視覚順には戻るが、重なった
+   * 残骸も同じ行に拾うため款9 が `9特別区交付金区64,100,000,26.5…` と汚染される。
+   * ＝**`-layout` が壊す資料の逃げ道は1つではない**。千代田 R3 は逆に `-tsv` 側が要る（§10a）。
+   *
+   * ⚠ `-raw` は**視覚順を保証しない** — 表題や列見出しが表の途中に紛れ込む（大田 H26 では
+   *   款9 と款10 の間に出る）。**見出し・`HeaderExtra` で確実に捨てること**。
+   *   合計行はラベルが数字の後ろに来る（`242,022,354 … 4.2 合 計`）が、合計検出は空白を
+   *   畳んでから `includes` するので当たる。
+   */
+  textSource?: "layout" | "raw";
+  /**
    * **款と項が同一表に混在する様式**（大阪 §8e・相模原 §8p）で、**款行の字下げの上限**。
    * 指定するとこれより深く字下げされた行は款のパースから外れる（＝項・目の行を款と誤認しない）。
    *
@@ -231,12 +262,17 @@ interface CropX {
   to: number;
 }
 
-function pdfPageText(filePath: string, page: number, crop?: CropX): string {
+function pdfPageText(
+  filePath: string,
+  page: number,
+  crop?: CropX,
+  source: "layout" | "raw" = "layout",
+): string {
   try {
     return execFileSync(
       "pdftotext",
       [
-        "-f", String(page), "-l", String(page), "-layout",
+        "-f", String(page), "-l", String(page), source === "raw" ? "-raw" : "-layout",
         // 横並び2側の切り出しは **pdftotext 自身の -x/-W** に任せる（座標計算を自前でやらない）。
         // -H は用紙高より十分大きい値でよい（縦は切らない）。
         ...(crop ? ["-x", String(crop.from), "-y", "0", "-W", String(crop.to - crop.from), "-H", "2000"] : []),
@@ -290,9 +326,13 @@ function parseKanPage(
   const headerRe = extraHeader ? new RegExp(`${KAN_HEADER_RE.source}|${extraHeader}`) : KAN_HEADER_RE;
   const spread = side === "revenue" ? opts.revenueSpread : opts.expenditureSpread;
   const cropX = side === "revenue" ? opts.revenueCropX : opts.expenditureCropX;
+  // テキスト抽出モード（Options.textSource 参照）。既定 -layout。
+  const src = opts.textSource ?? "layout";
   let text = spread
-    ? pdfPageText(filePath, spread.namePage) + "\n" + pdfPageText(filePath, spread.amountPage)
-    : pages.map((p) => pdfPageText(filePath, p, cropX)).join("\n");
+    ? pdfPageText(filePath, spread.namePage, undefined, src) +
+      "\n" +
+      pdfPageText(filePath, spread.amountPage, undefined, src)
+    : pages.map((p) => pdfPageText(filePath, p, cropX, src)).join("\n");
   const heading =
     side === "revenue"
       ? opts.revenueHeading ?? "歳入予算款別一覧"
@@ -311,8 +351,8 @@ function parseKanPage(
   // 以降は通常の1ページ表と同じ経路で読む（皆減・折返し・ヘッダ除外・合計検出をそのまま使えるため）。
   if (spread) {
     const [nameText, amountText] = [
-      pdfPageText(filePath, spread.namePage, cropX),
-      pdfPageText(filePath, spread.amountPage, cropX),
+      pdfPageText(filePath, spread.namePage, cropX, src),
+      pdfPageText(filePath, spread.amountPage, cropX, src),
     ];
     // 款名ページ: 見出し（（歳入）等）より後ろの「款番号で始まる行」＋合計ラベル行だけを採る。
     // 見出しより前を捨てるのは `１ 総 括` を款1 と取り違えないため（全角1が半角化される）。

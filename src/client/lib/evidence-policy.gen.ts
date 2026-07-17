@@ -629,6 +629,41 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/28yosan/28yosangaiyo.files/gaiyo.pdf",
     "license": "大田区ホームページ上の文書や画像などの各ファイル、及びその内容に関する諸権利は、原則として大田区に帰属しています。また、一部の画像などの著作権は、原著作権者が所有しています。／大田区ホームページ上の文書や画像などについては、「私的使用のための複製」や「引用」など著作権法上認められた場合や大田区がオープンデータとして公開しているものを除き、無断での使用・転載、二次利用はできません。／大田区がオープンデータとして公開しているもの以外の文書などについて転用等を希望される場合は、各ページのお問い合わせ先の所属に、ご相談ください。"
   },
+  "/sources/ota-yosansho-h26/26yosan_gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/26yosan.files/26yosan_gaiyou.pdf",
+    "license": "大田区ホームページ上の文書や画像などの各ファイル、及びその内容に関する諸権利は、原則として大田区に帰属しています。また、一部の画像などの著作権は、原著作権者が所有しています。／大田区ホームページ上の文書や画像などについては、「私的使用のための複製」や「引用」など著作権法上認められた場合や大田区がオープンデータとして公開しているものを除き、無断での使用・転載、二次利用はできません。／大田区がオープンデータとして公開しているもの以外の文書などについて転用等を希望される場合は、各ページのお問い合わせ先の所属に、ご相談ください。"
+  },
+  "/sources/ota-yosansho-h25/25yosan_gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/25yosan.files/25yosan_gaiyou.pdf",
+    "license": "大田区ホームページ上の文書や画像などの各ファイル、及びその内容に関する諸権利は、原則として大田区に帰属しています。また、一部の画像などの著作権は、原著作権者が所有しています。／大田区ホームページ上の文書や画像などについては、「私的使用のための複製」や「引用」など著作権法上認められた場合や大田区がオープンデータとして公開しているものを除き、無断での使用・転載、二次利用はできません。／大田区がオープンデータとして公開しているもの以外の文書などについて転用等を希望される場合は、各ページのお問い合わせ先の所属に、ご相談ください。"
+  },
+  "/sources/ota-yosansho-h24/24yosan_gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/24yosan.files/24yosan_gaiyou.pdf",
+    "license": "大田区ホームページ上の文書や画像などの各ファイル、及びその内容に関する諸権利は、原則として大田区に帰属しています。また、一部の画像などの著作権は、原著作権者が所有しています。／大田区ホームページ上の文書や画像などについては、「私的使用のための複製」や「引用」など著作権法上認められた場合や大田区がオープンデータとして公開しているものを除き、無断での使用・転載、二次利用はできません。／大田区がオープンデータとして公開しているもの以外の文書などについて転用等を希望される場合は、各ページのお問い合わせ先の所属に、ご相談ください。"
+  },
+  "/sources/ota-yosansho-h23/23yosan_gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/23yosan.files/23yosan_gaiyou.pdf",
+    "license": "大田区ホームページ上の文書や画像などの各ファイル、及びその内容に関する諸権利は、原則として大田区に帰属しています。また、一部の画像などの著作権は、原著作権者が所有しています。／大田区ホームページ上の文書や画像などについては、「私的使用のための複製」や「引用」など著作権法上認められた場合や大田区がオープンデータとして公開しているものを除き、無断での使用・転載、二次利用はできません。／大田区がオープンデータとして公開しているもの以外の文書などについて転用等を希望される場合は、各ページのお問い合わせ先の所属に、ご相談ください。"
+  },
+  "/sources/ota-yosansho-h22/22yosan-gaiyou.pdf.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/22yosan.files/22yosan-gaiyou.pdf.pdf",
+    "license": "大田区ホームページ上の文書や画像などの各ファイル、及びその内容に関する諸権利は、原則として大田区に帰属しています。また、一部の画像などの著作権は、原著作権者が所有しています。／大田区ホームページ上の文書や画像などについては、「私的使用のための複製」や「引用」など著作権法上認められた場合や大田区がオープンデータとして公開しているものを除き、無断での使用・転載、二次利用はできません。／大田区がオープンデータとして公開しているもの以外の文書などについて転用等を希望される場合は、各ページのお問い合わせ先の所属に、ご相談ください。"
+  },
+  "/sources/ota-yosansho-h21/21yosan-gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/21yosan.files/21yosan-gaiyou.pdf",
+    "license": "大田区ホームページ上の文書や画像などの各ファイル、及びその内容に関する諸権利は、原則として大田区に帰属しています。また、一部の画像などの著作権は、原著作権者が所有しています。／大田区ホームページ上の文書や画像などについては、「私的使用のための複製」や「引用」など著作権法上認められた場合や大田区がオープンデータとして公開しているものを除き、無断での使用・転載、二次利用はできません。／大田区がオープンデータとして公開しているもの以外の文書などについて転用等を希望される場合は、各ページのお問い合わせ先の所属に、ご相談ください。"
+  },
+  "/sources/ota-yosansho-h20/20gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/20yosan_gaiyou.files/20gaiyou.pdf",
+    "license": "大田区ホームページ上の文書や画像などの各ファイル、及びその内容に関する諸権利は、原則として大田区に帰属しています。また、一部の画像などの著作権は、原著作権者が所有しています。／大田区ホームページ上の文書や画像などについては、「私的使用のための複製」や「引用」など著作権法上認められた場合や大田区がオープンデータとして公開しているものを除き、無断での使用・転載、二次利用はできません。／大田区がオープンデータとして公開しているもの以外の文書などについて転用等を希望される場合は、各ページのお問い合わせ先の所属に、ご相談ください。"
+  },
   "/sources/chuo-sokatsuhyo-r8/r8_sokatsuhyo.pdf": {
     "mode": "origin",
     "href": "https://www.city.chuo.lg.jp/documents/17921/r8_sokatsuhyo.pdf",
