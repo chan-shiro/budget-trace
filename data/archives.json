@@ -1153,11 +1153,21 @@
     },
     {
       "sourceId": "hamamatsu-yosansho-r7",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/documents/164874/02_bunyabetsu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250217125337/https://www.city.hamamatsu.shizuoka.jp/documents/164874/02_bunyabetsu.pdf",
+      "waybackTimestamp": "20250217125337",
+      "checkedAt": "2026-07-22T23:55:37.156Z",
+      "sha256Match": true,
+      "waybackBytes": 1037585
+    },
+    {
+      "sourceId": "hamamatsu-yosansho-r7",
       "url": "https://www.city.hamamatsu.shizuoka.jp/documents/164874/l_yosansetsumeisho.pdf",
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260715181952/https://www.city.hamamatsu.shizuoka.jp/documents/164874/l_yosansetsumeisho.pdf",
       "waybackTimestamp": "20260715181952",
-      "checkedAt": "2026-07-15T18:20:13.197Z",
+      "checkedAt": "2026-07-22T23:55:18.140Z",
       "sha256Match": true
     },
     {
@@ -1166,7 +1176,27 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20250714190837/https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget07/index.html",
       "waybackTimestamp": "20250714190837",
-      "checkedAt": "2026-07-15T18:20:32.305Z"
+      "checkedAt": "2026-07-22T23:55:41.288Z"
+    },
+    {
+      "sourceId": "hamamatsu-yosansho-r8",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/documents/171794/02_syuyojigyo08.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260722235350/https://www.city.hamamatsu.shizuoka.jp/documents/171794/02_syuyojigyo08.pdf",
+      "waybackTimestamp": "20260722235350",
+      "checkedAt": "2026-07-22T23:55:00.954Z",
+      "sha256Match": true,
+      "waybackBytes": 5418274
+    },
+    {
+      "sourceId": "hamamatsu-yosansho-r8",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/documents/171794/22_setumeisho08.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260715181609/https://www.city.hamamatsu.shizuoka.jp/documents/171794/22_setumeisho08.pdf",
+      "waybackTimestamp": "20260715181609",
+      "checkedAt": "2026-07-22T23:52:49.002Z",
+      "sha256Match": true,
+      "waybackBytes": 1360421
     },
     {
       "sourceId": "hamamatsu-yosansho-r8",
@@ -1174,7 +1204,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260715181736/https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget08/index.html",
       "waybackTimestamp": "20260715181736",
-      "checkedAt": "2026-07-15T18:18:39.151Z"
+      "checkedAt": "2026-07-22T23:55:08.723Z"
     },
     {
       "sourceId": "hiroshima-yosansho-r8",
