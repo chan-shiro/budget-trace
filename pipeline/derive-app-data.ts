@@ -1921,6 +1921,14 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       "h23", "h22", "h21", "h20", "h19"] as const).map((fy) => ({
       srcId: `minato-yosangaiyou-${fy}`, muniCode: "131032", muniName: "港区", prefName: "東京都", isPref: false,
     })),
+    // 墨田区（2026-07-22 追加・#124）。「予算概要」一般会計歳入歳出予算（案）款別表。
+    // **H17〜R8 の22年が現行サイトに全year現存＝全year収録**（新宿26年に次ぐ2位タイ規模）。
+    // **職員費の款は無い**（配賦型）。⚠ 歳出款7 は H19 以前「産業経済費」→ H20 から「産業観光費」
+    // （H20 に旧名の括弧行 `(産業経済費)` が前年度額つきで残る＝年度をまたぐ款名結合の断層）。
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28", "h27", "h26",
+      "h25", "h24", "h23", "h22", "h21", "h20", "h19", "h18", "h17"] as const).map((fy) => ({
+      srcId: `sumida-yosangaiyou-${fy}`, muniCode: "131075", muniName: "墨田区", prefName: "東京都", isPref: false,
+    })),
     // 豊島区は**R7・R4・R2 が欠番**（R4・R2 は ToUnicode 全面欠落、R7 は OCR レイヤの重なりで
     // 数字が壊れる＝修復不可。registry のコメント参照）。R3 は Wayback から回収。
     ...(["r8", "r6", "r5", "r3"] as const).map((fy) => ({

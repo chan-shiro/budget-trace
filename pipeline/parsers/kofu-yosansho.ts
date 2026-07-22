@@ -496,7 +496,15 @@ function parseKanPage(
     } else {
       const prevIdx = zeroAmount && toAmount(ints[0]!) !== 0 ? 0 : 1;
       amount = zeroAmount ? 0 : toAmount(ints[0]!);
-      prevAmount = zeroPrev ? 0 : toAmount(ints[prevIdx]!);
+      // **「皆増」なのに前年度セルに非0が印字されている行は、印字値を採る**（2026-07-22・墨田 H18）:
+      //   `5 株式等譲渡所得割交付金  202,000  0.2  1,000  0.0  201,000  皆増`  ← 前年度 1,000 を印字
+      // 台東の「ほぼ皆増」（前年度1千円・語で区別）とは別の型で、**原典自身が印字値とラベルで
+      // 矛盾している**。皆増を優先して 0 に潰すと前年度Σが -1,000 割れる（増減 201,000 =
+      // 202,000 − 1,000 とも整合するので印字値が正）。ints が3つ以上（当年度・前年度・増減が
+      // すべて印字されている）ときだけ印字を信じる — 前年度セルが空欄で ints=[当年度, 増減] の
+      // 2つに詰まる通常の皆増（甲府 R2 款6）は従来どおり 0。
+      const printedPrev = ints.length >= 3 ? toAmount(ints[1]!) : 0;
+      prevAmount = zeroPrev ? printedPrev : toAmount(ints[prevIdx]!);
     }
     const line: BudgetLineFact = { side, kanNo, kanName: name, amount, prevAmount, locator };
     lines.push(line);
@@ -755,6 +763,16 @@ function parseKanPage(
 
   if (lines.length === 0) throw new Error(`${filename} ${pageLabel}: 款行が1件も抽出できませんでした`);
   if (total == null) throw new Error(`${filename} ${pageLabel}: ${totalLabel} 行が見つかりません`);
+  // **閉じ括弧を伴わない行頭の開き括弧を落とす**（2026-07-22・墨田 R8）。墨田の廃止款括弧行は
+  //   `(環境性能割交付金        0   185,000 …`  ← -layout 経路で閉じ括弧が別トークンに割れる
+  // ため、款名が `(環境性能割交付金` になる（Σ は差0 のまま＝目視でしか気づけない。同じ行を
+  // R2 の -raw 経路で読むと括弧が分離されてクリーン＝抽出経路依存の滲み）。
+  // ⚠ **バランスした括弧は落とさない** — `（特別区債）`（文京・中央の廃止款表記）や
+  //   `環境清掃費（⑲環境費）`（新宿 H20 の原典注記）は原典が意味を持たせた款名の一部。
+  // ⚠ **折返しの組み立てが終わった款名に対して判定する**こと。namePart（断片）の段階で掃除すると、
+  //   `（環境性能割` ＋ `交付金）` のような**折返しの上段だけを見て「閉じが無い」と誤判定**し、
+  //   既存の `（環境性能割交付金）` を `環境性能割交付金）` に壊す（全293ソースの再 parse で実測）。
+  for (const l of lines) l.kanName = l.kanName.replace(/^[（(](?=[^）)]*$)/, "");
   const note = opts.prevNote ?? prevNote; // 明示指定 > 本文の ※ 注記
   return { lines, total, prevTotal, prevBasis, ...(note ? { prevNote: note } : {}) };
 }

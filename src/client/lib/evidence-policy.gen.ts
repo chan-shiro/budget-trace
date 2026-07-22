@@ -1214,6 +1214,116 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/010/536/28yosangaiyou.pdf",
     "license": "葛飾区公式サイト上の文書や画像等のコンテンツ、及び内容に関する諸権利は葛飾区に帰属します。一部の画像等の著作権は原著作者が所有しています。本サイト上の文書・画像等の各ファイルは、「私的使用のための複製」や「引用」など著作権法上認められている場合を除き、無断で転載・改変することを禁じます。"
   },
+  "/sources/sumida-yosangaiyou-r8/r8-yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r8yosangaiyou.files/r8-yosangaiyou.pdf",
+    "license": "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。"
+  },
+  "/sources/sumida-yosangaiyou-r7/r7gaiyouan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r7yosangaiyou.files/r7gaiyouan.pdf",
+    "license": "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。"
+  },
+  "/sources/sumida-yosangaiyou-r6/r6yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r6yosangaiyou.files/r6yosangaiyou.pdf",
+    "license": "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。"
+  },
+  "/sources/sumida-yosangaiyou-r5/r5yosanngaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r5yosangaiyou.files/r5yosanngaiyou.pdf",
+    "license": "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。"
+  },
+  "/sources/sumida-yosangaiyou-r4/r4yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r4yosangaiyou.files/r4yosangaiyou.pdf",
+    "license": "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。"
+  },
+  "/sources/sumida-yosangaiyou-r3/3yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/R3nendoyosangaiyou.files/3yosangaiyou.pdf",
+    "license": "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。"
+  },
+  "/sources/sumida-yosangaiyou-r2/R2_yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r2_yosangaiyou.files/R2_yosangaiyou.pdf",
+    "license": "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。"
+  },
+  "/sources/sumida-yosangaiyou-h31/31yosangaiyou_s.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/31yosangaiyou.files/31yosangaiyou_s.pdf",
+    "license": "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。"
+  },
+  "/sources/sumida-yosangaiyou-h30/h30yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/h30yosangaiyou.files/h30yosangaiyou.pdf",
+    "license": "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。"
+  },
+  "/sources/sumida-yosangaiyou-h29/h29_yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/h29yosangaiyou.files/h29_yosangaiyou.pdf",
+    "license": "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。"
+  },
+  "/sources/sumida-yosangaiyou-h28/28yosan-gaiyou..pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/28yosan-gaiyou.files/28yosan-gaiyou..pdf",
+    "license": "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。"
+  },
+  "/sources/sumida-yosangaiyou-h27/27yosann2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/yosangaiyo.files/27yosann2.pdf",
+    "license": "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。"
+  },
+  "/sources/sumida-yosangaiyou-h26/26gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/26yosangaiyou.files/26gaiyou.pdf",
+    "license": "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。"
+  },
+  "/sources/sumida-yosangaiyou-h25/25gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/ta104346037.files/25gaiyou.pdf",
+    "license": "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。"
+  },
+  "/sources/sumida-yosangaiyou-h24/gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/ta10300020.files/gaiyou.pdf",
+    "license": "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。"
+  },
+  "/sources/sumida-yosangaiyou-h23/23yosan-gaiyou.pdf.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/H23yosanngaiyou.files/23yosan-gaiyou.pdf.pdf",
+    "license": "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。"
+  },
+  "/sources/sumida-yosangaiyou-h22/22yosan-gaiyou.pdf.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/22yosangaiyou.files/22yosan-gaiyou.pdf.pdf",
+    "license": "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。"
+  },
+  "/sources/sumida-yosangaiyou-h21/21yosan-gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/21yosangaiyou.files/21yosan-gaiyou.pdf",
+    "license": "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。"
+  },
+  "/sources/sumida-yosangaiyou-h20/20yosan-gaiyou.pdf.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/20yosangaiyo.files/20yosan-gaiyou.pdf.pdf",
+    "license": "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。"
+  },
+  "/sources/sumida-yosangaiyou-h19/19yosan-gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/19yosangaiyou.files/19yosan-gaiyou.pdf",
+    "license": "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。"
+  },
+  "/sources/sumida-yosangaiyou-h18/heisei18nendoyosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/heisei18nendoyosangaiyou.files/heisei18nendoyosangaiyou.pdf",
+    "license": "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。"
+  },
+  "/sources/sumida-yosangaiyou-h17/yosangaiyou_h17.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/h17_yosangaiyou.files/yosangaiyou_h17.pdf",
+    "license": "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。"
+  },
   "/sources/toshima-yosansho-r8/20260205141545.pdf": {
     "mode": "origin",
     "href": "https://www.city.toshima.lg.jp/documents/12068/20260205141545.pdf",
