@@ -99,6 +99,14 @@ export const archiveEntrySchema = z.object({
    * 区別: フィールド無し＝照合対象外 / `false`＝照合すべきなのにできなかった。
    */
   sha256Verified: z.boolean().optional(),
+  /**
+   * 照合できなかった理由（`sha256Verified: false` のときだけ）。**理由なしの false は
+   * 「発行元が差し替えた」と誤診される**（#137 — 実際は Wayback の転送がランダムに途中で
+   * 切れただけの一時的失敗が、理由なしの false として5件残っていた）。一時的な失敗
+   * （転送切れ・HTTP エラー）と構造的な問題（raw に対応ファイルが無い）を台帳だけで
+   * 区別できるようにする。
+   */
+  sha256FailReason: z.string().optional(),
   /** コピーの実バイト数。不一致の原因を後から診断するために残す（照合が走った file のみ） */
   waybackBytes: z.number().int().nonnegative().optional(),
   /**

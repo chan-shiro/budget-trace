@@ -30,6 +30,11 @@ const UA = "budget-trace archive step (github.com/chan-shiro/budget-trace)";
 const SAVE_INTERVAL_MS = 6_000; // SPN への連続要求の間隔
 const POLL_TRIES = 10;
 const POLL_INTERVAL_MS = 6_000;
+// sha256 照合のダウンロードは**一時的な失敗が多い**（#137: Wayback は同じスナップショットでも
+// 転送がランダムに途中で切れる — 港 H31 は 142KB で切れた5日後に同じ URL から全量 1.4MB が
+// 取れて完全一致した）。1回の失敗を台帳に固定しない。
+const VERIFY_TRIES = 3;
+const VERIFY_RETRY_MS = 5_000;
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
@@ -101,22 +106,80 @@ async function verifySnapshot(sourceId: string, url: string, timestamp: string):
   if (!meta) return { status: "failed", reason: "raw-meta が無い（未 fetch）" };
   const raw = meta.files.find((f) => f.filename === filename);
   if (!raw) return { status: "failed", reason: `raw に ${filename} が無い` };
+
+  // ダウンロードの失敗は**一時的なことが多い**（#137）ので、1回で諦めて台帳に固定しない。
+  // タイムスタンプはリダイレクトで更新され得るためループ内で持ち回る。
+  let ts = timestamp;
+  let lastReason = "";
+  for (let attempt = 1; attempt <= VERIFY_TRIES; attempt++) {
+    if (attempt > 1) await sleep(VERIFY_RETRY_MS);
+    try {
+      const res = await fetch(`https://web.archive.org/web/${ts}id_/${url}`, {
+        headers: { "User-Agent": UA },
+      });
+      if (!res.ok) {
+        lastReason = `コピーの取得が ${res.status}`;
+        continue;
+      }
+      // **`id_` ガード**（#137 の穴①）: 要求したタイムスタンプに実体が無いと Wayback は
+      // 最寄りのスナップショットへリダイレクトするが、その Location が `id_` を落とすことがある。
+      // `id_` なし＝ビューア経由のバイト列は**書き換え済み**（リンク書換・ツールバー注入）なので、
+      // raw と比較すると**必ず不一致＝「別版」と誤診**する。照合せず、リダイレクト先の
+      // タイムスタンプに `id_` を付けて取り直す。
+      const finalTs = res.url.match(/\/web\/(\d{14})(id_)?\//);
+      if (finalTs && !finalTs[2]) {
+        res.body?.cancel();
+        lastReason = `Wayback が id_ なし（ビューア）URL へリダイレクト（${res.url}）— 書き換えが入るので照合しない`;
+        if (finalTs[1] !== ts) {
+          ts = finalTs[1]!; // 取り直しはリダイレクト先のスナップショットで
+          continue;
+        }
+        continue;
+      }
+      // 本文はストリームで読む。途中で切れても**受信済みバイト数を診断に残す**
+      // （arrayBuffer() は切断で全損し「何 bytes まで来ていたか」が分からない）。
+      const body = await readBodyTolerant(res);
+      if (!body.complete) {
+        lastReason = `転送が途中で切れた（${body.buf.length.toLocaleString("en-US")}/${raw.bytes.toLocaleString("en-US")} bytes 受信・${body.error}）`;
+        continue;
+      }
+      const buf = body.buf;
+      const match = createHash("sha256").update(buf).digest("hex") === raw.sha256;
+      return {
+        status: "verified",
+        match,
+        bytes: buf.length,
+        rawBytes: raw.bytes,
+        kind: classifyVerify(match, buf.length, raw.bytes),
+      };
+    } catch (e) {
+      lastReason = `コピーの取得に失敗（${e instanceof Error ? e.message : String(e)}）`;
+    }
+  }
+  return { status: "failed", reason: `${lastReason}（${VERIFY_TRIES}回試行）` };
+}
+
+/**
+ * 本文をストリームで読み、途中で切れたら**そこまでの受信分を持って**返す。
+ * Wayback は健全なスナップショットでも転送がランダムに切れる（#137: 港 H31 が
+ * 142KB → 1.3MB → 全量 1.4MB と試行ごとに揺れた実測）。`res.arrayBuffer()` だと
+ * 切断が例外で全損し、「どこまで来ていたか」という唯一の診断材料が消える。
+ */
+async function readBodyTolerant(
+  res: Response,
+): Promise<{ buf: Buffer; complete: true } | { buf: Buffer; complete: false; error: string }> {
+  const chunks: Uint8Array[] = [];
+  const reader = res.body?.getReader();
+  if (!reader) return { buf: Buffer.alloc(0), complete: false, error: "本文なし" };
   try {
-    const res = await fetch(`https://web.archive.org/web/${timestamp}id_/${url}`, {
-      headers: { "User-Agent": UA },
-    });
-    if (!res.ok) return { status: "failed", reason: `コピーの取得が ${res.status}` };
-    const buf = Buffer.from(await res.arrayBuffer());
-    const match = createHash("sha256").update(buf).digest("hex") === raw.sha256;
-    return {
-      status: "verified",
-      match,
-      bytes: buf.length,
-      rawBytes: raw.bytes,
-      kind: classifyVerify(match, buf.length, raw.bytes),
-    };
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      if (value) chunks.push(value);
+    }
+    return { buf: Buffer.concat(chunks), complete: true };
   } catch (e) {
-    return { status: "failed", reason: `コピーの取得に失敗（${e instanceof Error ? e.message : String(e)}）` };
+    return { buf: Buffer.concat(chunks), complete: false, error: e instanceof Error ? e.message : String(e) };
   }
 }
 
@@ -253,7 +316,10 @@ for (const source of targets) {
       v.status === "skipped"
         ? {}
         : v.status === "failed"
-          ? { sha256Verified: false }
+          ? // 理由も台帳に残す（#137）— 理由なしの false は「発行元が差し替えた」と
+            // 誤診される（実際に一度誤診しかけた）。一時的な転送切れと構造的な問題を
+            // 台帳だけで区別できるようにする。
+            { sha256Verified: false, sha256FailReason: v.reason }
           : {
               sha256Match: v.match,
               ...(v.bytes !== undefined ? { waybackBytes: v.bytes } : {}),
@@ -336,7 +402,10 @@ console.log(`新規登録 ${saved} / 登録済み ${already} / 未確認 ${faile
   if (unverified.length) {
     console.log(`\n⚠ 魚拓はあるが sha256 を照合していない原本: ${unverified.length} 件`);
     for (const e of unverified.slice(0, 10)) {
-      const why = e.sha256Verified === false ? "照合を試みて失敗" : "照合が走っていない";
+      const why =
+        e.sha256Verified === false
+          ? `照合を試みて失敗${e.sha256FailReason ? `: ${e.sha256FailReason}` : ""}`
+          : "照合が走っていない";
       console.log(`    ${e.sourceId} — ${e.url.split("/").pop()}（${why}）`);
     }
     if (unverified.length > 10) console.log(`    …他 ${unverified.length - 10} 件`);

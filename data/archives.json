@@ -3173,8 +3173,9 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260717224548/https://www.city.minato.tokyo.jp/documents/4694/h23_yosangaiyo_02.pdf",
       "waybackTimestamp": "20260717224548",
-      "checkedAt": "2026-07-17T22:52:13.983Z",
-      "sha256Verified": false
+      "checkedAt": "2026-07-22T05:23:48.471Z",
+      "sha256Match": true,
+      "waybackBytes": 271490
     },
     {
       "sourceId": "minato-yosangaiyou-h23",
@@ -3182,7 +3183,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260516044517/https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
       "waybackTimestamp": "20260516044517",
-      "checkedAt": "2026-07-17T22:52:47.628Z"
+      "checkedAt": "2026-07-22T05:23:48.968Z"
     },
     {
       "sourceId": "minato-yosangaiyou-h25",
@@ -3280,8 +3281,9 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260717223849/https://www.city.minato.tokyo.jp/documents/4694/15-24.pdf",
       "waybackTimestamp": "20260717223849",
-      "checkedAt": "2026-07-17T22:55:34.393Z",
-      "sha256Verified": false
+      "checkedAt": "2026-07-22T05:18:41.967Z",
+      "sha256Match": true,
+      "waybackBytes": 1407655
     },
     {
       "sourceId": "minato-yosangaiyou-h31",
@@ -3289,7 +3291,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260516044517/https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
       "waybackTimestamp": "20260516044517",
-      "checkedAt": "2026-07-17T22:55:35.317Z"
+      "checkedAt": "2026-07-22T05:19:14.438Z"
     },
     {
       "sourceId": "minato-yosangaiyou-r2",
@@ -5612,8 +5614,9 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20250805220729/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/30yosanpoint.files/sainyuusaishutu.pdf",
       "waybackTimestamp": "20250805220729",
-      "checkedAt": "2026-07-17T22:31:47.067Z",
-      "sha256Verified": false
+      "checkedAt": "2026-07-22T05:24:00.950Z",
+      "sha256Match": true,
+      "waybackBytes": 192704
     },
     {
       "sourceId": "taito-kanbetsu-h30",
@@ -5621,7 +5624,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20250814021105/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/30yosanpoint.html",
       "waybackTimestamp": "20250814021105",
-      "checkedAt": "2026-07-17T22:32:13.511Z"
+      "checkedAt": "2026-07-22T05:24:01.184Z"
     },
     {
       "sourceId": "taito-kanbetsu-r3",
@@ -5683,8 +5686,9 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20241204021404/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R6yosanannopoint.files/R6yosan3.pdf",
       "waybackTimestamp": "20241204021404",
-      "checkedAt": "2026-07-17T22:29:30.116Z",
-      "sha256Verified": false
+      "checkedAt": "2026-07-22T05:17:42.593Z",
+      "sha256Match": true,
+      "waybackBytes": 369308
     },
     {
       "sourceId": "taito-kanbetsu-r6",
@@ -5692,16 +5696,17 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20250716020633/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R6yosanannopoint.html",
       "waybackTimestamp": "20250716020633",
-      "checkedAt": "2026-07-17T22:29:56.333Z"
+      "checkedAt": "2026-07-22T05:17:55.639Z"
     },
     {
       "sourceId": "taito-kanbetsu-r7",
       "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R7yosanannopoint.files/R7yosan3.pdf",
       "kind": "file",
-      "waybackUrl": "https://web.archive.org/web/20250219074230/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R7yosanannopoint.files/R7yosan3.pdf",
-      "waybackTimestamp": "20250219074230",
-      "checkedAt": "2026-07-17T22:29:13.838Z",
-      "sha256Verified": false
+      "waybackUrl": "https://web.archive.org/web/20260717222956/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R7yosanannopoint.files/R7yosan3.pdf",
+      "waybackTimestamp": "20260717222956",
+      "checkedAt": "2026-07-22T05:24:05.199Z",
+      "sha256Match": true,
+      "waybackBytes": 324796
     },
     {
       "sourceId": "taito-kanbetsu-r7",
@@ -5709,7 +5714,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20251005191112/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R7yosanannopoint.html",
       "waybackTimestamp": "20251005191112",
-      "checkedAt": "2026-07-17T22:29:20.688Z"
+      "checkedAt": "2026-07-22T05:24:11.088Z"
     },
     {
       "sourceId": "taito-kanbetsu-r8",

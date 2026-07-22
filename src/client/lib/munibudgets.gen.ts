@@ -20902,7 +20902,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和7年度 台東区予算案のポイント【資料3】一般会計予算款別予算額",
-      "sourceUrl": "https://web.archive.org/web/20250219074230/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R7yosanannopoint.files/R7yosan3.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260717222956/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R7yosanannopoint.files/R7yosan3.pdf",
       "originUrl": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R7yosanannopoint.files/R7yosan3.pdf",
       "sourceLocalUrl": "/sources/taito-kanbetsu-r7/R7yosan3.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -20910,7 +20910,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和7年度 台東区予算案のポイント【資料3】一般会計予算款別予算額",
           "type": "PDF",
-          "url": "https://web.archive.org/web/20250219074230/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R7yosanannopoint.files/R7yosan3.pdf",
+          "url": "https://web.archive.org/web/20260717222956/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R7yosanannopoint.files/R7yosan3.pdf",
           "localUrl": "/sources/taito-kanbetsu-r7/R7yosan3.pdf",
           "source": "www.city.taito.lg.jp",
           "thumb": "R7yosan3.pdf ・ sha256 3ad38c7d7742f0fd… ・ 2026-07-17 取得"
