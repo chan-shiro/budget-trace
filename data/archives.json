@@ -1228,6 +1228,42 @@
       "sha256Match": true
     },
     {
+      "sourceId": "katsushika-yosangaiyou-h28",
+      "url": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/010/536/28yosangaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250624111945/https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/010/536/28yosangaiyou.pdf",
+      "waybackTimestamp": "20250624111945",
+      "checkedAt": "2026-07-22T05:56:06.960Z",
+      "sha256Match": true,
+      "waybackBytes": 2401032
+    },
+    {
+      "sourceId": "katsushika-yosangaiyou-h28",
+      "url": "https://www.city.katsushika.lg.jp/information/1000085/1006293/1010536.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250624111930/https://www.city.katsushika.lg.jp/information/1000085/1006293/1010536.html",
+      "waybackTimestamp": "20250624111930",
+      "checkedAt": "2026-07-22T05:56:10.386Z"
+    },
+    {
+      "sourceId": "katsushika-yosangaiyou-h29",
+      "url": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/013/830/29angaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250624111730/https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/013/830/29angaiyou.pdf",
+      "waybackTimestamp": "20250624111730",
+      "checkedAt": "2026-07-22T05:54:13.087Z",
+      "sha256Match": true,
+      "waybackBytes": 2742487
+    },
+    {
+      "sourceId": "katsushika-yosangaiyou-h29",
+      "url": "https://www.city.katsushika.lg.jp/information/1000085/1006293/1013830.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250624111718/https://www.city.katsushika.lg.jp/information/1000085/1006293/1013830.html",
+      "waybackTimestamp": "20250624111718",
+      "checkedAt": "2026-07-22T05:54:33.654Z"
+    },
+    {
       "sourceId": "katsushika-yosangaiyou-r2",
       "url": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/022/573/yosanngaiyou.pdf",
       "kind": "file",

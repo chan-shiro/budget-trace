@@ -1871,8 +1871,9 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     })),
     // 葛飾区は**職員費の款を持つ**（全款から人件費を抜く名古屋・札幌型）ので他自治体と款別を
     // 直接比較すると民生費等が過小に見える。R8 は第6の折返し型で kanNoless が要る
-    // （**H31・H30 では kanNoless は no-op**＝R8 の折返し型が無い）。H29 以前は未着手。
-    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30"] as const).map((fy) => ({
+    // （**H 年度では kanNoless は no-op**＝R8 の折返し型が無い）。H29・H28 は 2026-07-22 追加（#136）。
+    // H28 の前年度列（H27）まで到達。H27 以前は年度インデックスに記事が無い＝現存最古で打ち止め。
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28"] as const).map((fy) => ({
       srcId: `katsushika-yosangaiyou-${fy}`, muniCode: "131229", muniName: "葛飾区", prefName: "東京都", isPref: false,
     })),
     // 新宿区（2026-07-17 追加）。「予算の概要」巻末の款別総括表。**H13〜R8 の26年度＝収録中で最長**

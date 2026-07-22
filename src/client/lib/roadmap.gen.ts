@@ -16,11 +16,11 @@ export const ROADMAP_PROGRESS = {
   "budgetCount": 50,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 338,
-  "fileCount": 463,
-  "archivedCount": 315,
+  "sourceCount": 340,
+  "fileCount": 465,
+  "archivedCount": 317,
   "licenseOpen": 19,
-  "licensePermission": 261,
+  "licensePermission": 263,
   "licenseUnverified": 58,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -69,6 +69,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H28〜R8（11年度）"
     },
     {
+      "name": "葛飾区",
+      "code": "131229",
+      "years": 11,
+      "range": "H28〜R8（11年度）"
+    },
+    {
       "name": "中央区",
       "code": "131024",
       "years": 10,
@@ -79,12 +85,6 @@ export const ROADMAP_PROGRESS = {
       "code": "131067",
       "years": 9,
       "range": "H28〜R8（9年度）"
-    },
-    {
-      "name": "葛飾区",
-      "code": "131229",
-      "years": 9,
-      "range": "H30〜R8（9年度）"
     },
     {
       "name": "目黒区",
