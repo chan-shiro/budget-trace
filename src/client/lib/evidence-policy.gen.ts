@@ -1204,6 +1204,16 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/017/523/yosangaiyou2.pdf",
     "license": "葛飾区公式サイト上の文書や画像等のコンテンツ、及び内容に関する諸権利は葛飾区に帰属します。一部の画像等の著作権は原著作者が所有しています。本サイト上の文書・画像等の各ファイルは、「私的使用のための複製」や「引用」など著作権法上認められている場合を除き、無断で転載・改変することを禁じます。"
   },
+  "/sources/katsushika-yosangaiyou-h29/29angaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/013/830/29angaiyou.pdf",
+    "license": "葛飾区公式サイト上の文書や画像等のコンテンツ、及び内容に関する諸権利は葛飾区に帰属します。一部の画像等の著作権は原著作者が所有しています。本サイト上の文書・画像等の各ファイルは、「私的使用のための複製」や「引用」など著作権法上認められている場合を除き、無断で転載・改変することを禁じます。"
+  },
+  "/sources/katsushika-yosangaiyou-h28/28yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/010/536/28yosangaiyou.pdf",
+    "license": "葛飾区公式サイト上の文書や画像等のコンテンツ、及び内容に関する諸権利は葛飾区に帰属します。一部の画像等の著作権は原著作者が所有しています。本サイト上の文書・画像等の各ファイルは、「私的使用のための複製」や「引用」など著作権法上認められている場合を除き、無断で転載・改変することを禁じます。"
+  },
   "/sources/toshima-yosansho-r8/20260205141545.pdf": {
     "mode": "origin",
     "href": "https://www.city.toshima.lg.jp/documents/12068/20260205141545.pdf",
