@@ -3,8 +3,9 @@
 税金のゆくえを、執行まで。地方公共団体の予算（歳入・歳出）から執行率・支出先・
 事業報告までを一次資料（エビデンス）付きでたどれる、クリック可能なプロトタイプです。
 
-甲府市の令和8年度当初予算（款レベルは公表実データ、項以下・補正・執行率などは推計・
-ダミー）をサンプルとして収録しています。
+掲載数値は**すべて一次資料由来の実データ**です（ダミー・推計値は置かない — 2026-07-12 に全廃）。
+決算は全1,741市町村（総務省）、当初予算（款別）は50団体、甲府市は予算→事業→成果→議会まで収録しています。
+一次資料が無い機能は「未収録」と表示し、資料を収録してから追加します。
 
 このリポジトリは、Claude Design で作成された HTML/CSS/JS プロトタイプ
 （`project/予算トレース.dc.html`）を **Next.js + React + TypeScript** で本実装した
@@ -29,9 +30,9 @@
 
 ## 技術構成
 
-- Next.js 14（App Router）/ React 18 / TypeScript
-- 状態駆動の SPA（画面遷移は URL ではなくコンポーネント内 state で管理し、
-  プロトタイプの挙動を忠実に再現）
+- Next.js 16（App Router）/ React 19 / TypeScript
+- 状態駆動の SPA（画面遷移はコンポーネント内 state で管理しつつ、パスベースの
+  ASCII 実 URL に同期 — ディープリンク・共有・戻る/進む対応）
 - 地図：`geolonia/japanese-prefectures`（都道府県 SVG・GFDL）＋
   `smartnews-smri/japan-topography`（市区町村 GeoJSON・国土数値情報を加工）を
   `public/mapdata/` に同梱
@@ -60,6 +61,7 @@ project/               元となった Claude Design のプロトタイプ（参
 ## 開発
 
 パッケージマネージャは [bun](https://bun.sh)（Next.js の実行ランタイムには Node.js 18.17+ も必要）。
+**コントリビューションの入口は [CONTRIBUTING.md](CONTRIBUTING.md)**（読み順・タスクの拾い方・破ってはいけないルール）。
 
 ```bash
 bun install
