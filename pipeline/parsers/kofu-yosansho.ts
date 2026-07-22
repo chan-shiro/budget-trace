@@ -164,7 +164,7 @@ interface Options {
    * - "kan-tree"（相模原: 款→項→目 の木に `○ 事業名 事業費 財源内訳 説明`。**款が付く**・座標で親と内訳を分ける）
    * - "table-lines"（山口: 事業名 予算額 内容 担当課 の事業別表。施策見出しつき・款/前年度なし）
    */
-  projectFormat?: "table" | "bullets" | "coded-sections" | "marked-bullets" | "table-lines" | "pref-bullets" | "dept-bullets" | "coord-table" | "kan-tree";
+  projectFormat?: "table" | "bullets" | "coded-sections" | "marked-bullets" | "table-lines" | "pref-bullets" | "dept-bullets" | "coord-table" | "kan-tree" | "meisai-tree";
   /**
    * 表形式の列境界（X座標）。PDF の座標系が年度で違う場合に上書きする
    * （R5 の WARP 回収版は全体に右寄りのスケール）。省略時は R8 実測値
@@ -1581,6 +1581,154 @@ function parseProjectsKanTree(
   return out;
 }
 
+// 北九州「一般会計予算に関する説明書」歳出事項別明細書の説明欄（2026-07-23・#126）。
+// 款別（kitakyushu-yosansho-*）と**同一ファイル**の p.123-258（R8）に、〇マーカーの親事業が
+// 款項目つきで並ぶ。相模原 kan-tree の変種だが座標体系が違う（横置き・x が全て別）ので別実装:
+//   款見出し   `1 款 議会費`（番号28.5 / 「款」34.5 / 款名43.5・独立行）
+//   概要行     x=580.3（金額なし・「議会及び事務局運営に要する経費」等）→ 無視
+//   親事業     **〇が事業名に1語密着**（`〇市民体育…` x=587.2-587.3）・金額 右揃え xMax≈820.8
+//   内訳       x=594.2・**マーカーなし**・金額 xMax≈779.0 → 親に含まれるので採らない
+//   親名の折返し継続行は親と同じ x=587.3 に来る（〇の有無で判別）。金額は継続行か単独行に載る。
+// **債務負担行為の行は歳出明細に存在しない**（巻末の233条調書に分離・R4〜R8 で語の出現0を実測）
+// ＝相模原型の親子重複問題は起きない。**Σ親=目・Σ内訳=親の完全分解**が成り立つ資料
+// （R8 で機械検証済み。目161件中158一致・残差3件は折返し金額の取りこぼしと特定）。
+// 廃止項/目マーカー ○(U+25CB) は x=16.6/45.1 に出るが、親の x 窓（585-590）で自動排除される。
+function parseProjectsMeisaiTree(
+  filePath: string,
+  filename: string,
+  from: number,
+  to: number,
+): BudgetProjectFact[] {
+  const OWN_X = [584, 591] as const; // 親事業（〇密着の事業名・折返し継続行も同じ列）
+  const SUB_X = [592, 599] as const; // 内訳（マーカーなし・親に含まれるので採らない）
+  const OWN_AMOUNT_XMAX = [814, 826] as const; // 親の事業費（右揃え）
+  const inX = (v: number, r: readonly [number, number]) => v >= r[0] && v <= r[1];
+
+  const out: BudgetProjectFact[] = [];
+  let kan: string | null = null;
+  let expected = 0;
+  // 金額待ちの親（〇行に金額が無く、継続行・単独行に載る型）
+  let pending: { fact: BudgetProjectFact; page: number } | null = null;
+  const flush = () => {
+    if (!pending) return;
+    throw new Error(
+      `${filename} p.${pending.page}: 親事業「${pending.fact.name}」の事業費が見つからないまま` +
+        `次の構造が始まりました（折返しの金額行を取りこぼすと Σ親=目 が割れるので組みません）`,
+    );
+  };
+  for (let page = from; page <= to; page++) {
+    const ws = pdfPageWords(filePath, page);
+    if (ws.length === 0) continue;
+    const rows: Word[][] = [];
+    for (const w of [...ws].sort((a, b) => a.y - b.y || a.x - b.x)) {
+      const last = rows[rows.length - 1];
+      if (last && Math.abs(last[0]!.y - w.y) <= 4) last.push(w);
+      else rows.push([w]);
+    }
+    for (const row of rows) {
+      expected += row.filter((w) => /^[〇○]./.test(w.text) && inX(w.x, OWN_X)).length;
+      // 款見出し `1 款 議会費`。「款」が独立の語で x≈34.5 に来る（表ヘッダは範囲内に無い様式）
+      const kanMark = row.find((w) => w.text === "款" && w.x >= 28 && w.x <= 42);
+      if (kanMark) {
+        const nameW = row.filter((w) => w.x > kanMark.x && w.x <= 60 && hasCJKChars(w.text));
+        if (nameW.length > 0) {
+          flush();
+          kan = nameW.map((w) => w.text).join("");
+        }
+        continue;
+      }
+      const ownW = row.filter((w) => inX(w.x, OWN_X));
+      const amtW = row.find((w) => /^[\d,]+$/.test(w.text) && inX(w.x + w.w, OWN_AMOUNT_XMAX));
+      if (ownW.length === 0) {
+        // 親名ゾーンに語が無い行: 金額の単独行なら金額待ちの親に与える。それ以外（内訳・概要・
+        // 目行・節金額など）は無視。⚠ 内訳の金額は xMax≈779 なので OWN_AMOUNT_XMAX に当たらない
+        if (amtW && pending) {
+          pending.fact.amount = toAmount(amtW.text);
+          out.push(pending.fact);
+          pending = null;
+        }
+        continue;
+      }
+      const joined = ownW.map((w) => w.text).join("");
+      if (/^[〇○]/.test(joined)) {
+        // 新しい親事業の開始
+        flush();
+        if (kan == null) throw new Error(`${filename} p.${page}: 款見出しの前に事業が現れました: 「${joined}」`);
+        const kanNow: string = kan;
+        const fact: BudgetProjectFact = {
+          kan: kanNow,
+          no: null,
+          kubun: null,
+          name: joined.replace(/^[〇○]/, ""),
+          budgetBookName: null,
+          amount: 0,
+          description: "",
+          basicGoal: "",
+          shisaku: "",
+          locator: { file: filename, page },
+        };
+        if (amtW) {
+          fact.amount = toAmount(amtW.text);
+          out.push(fact);
+        } else {
+          pending = { fact, page };
+        }
+      } else if (pending) {
+        // 親名の折返し継続行（〇なし・同じ x 窓）。金額が同じ行に載ることもある
+        pending.fact.name += joined;
+        if (amtW) {
+          pending.fact.amount = toAmount(amtW.text);
+          out.push(pending.fact);
+          pending = null;
+        }
+      }
+      // pending が無いのに継続行らしき語が来るのは、直前の親が金額確定済みで名前だけ折返した型。
+      // 名前の後半が落ちる（表示専用の欠け）が、金額と件数は正しいまま。件数 assert で検出できないため
+      // ここは黙って捨てず、直前の親に追記する
+      else if (out.length > 0 && !/^[\d,]+$/.test(joined)) {
+        out[out.length - 1]!.name += joined;
+      }
+    }
+  }
+  flush();
+  if (out.length !== expected) {
+    throw new Error(
+      `${filename} p.${from}-${to}: 親事業のマーカー（〇）が ${expected} 件あるのに ${out.length} 件しか` +
+        `組めませんでした（差 ${expected - out.length}）`,
+    );
+  }
+  if (out.length === 0) throw new Error(`${filename} p.${from}-${to}: 事業が1件も抽出できませんでした`);
+  return out;
+}
+
+// meisai-tree（北九州）は**Σ事業 = 款の完全分解**が成り立つ資料（説明欄が歳出予算を漏れなく
+// 分解している。R8 で16款すべて厳密一致を実測）。「主な事業の Σ ≤ 款」（抜粋・§2-4）より強い
+// **等式**で張れる、収録中では唯一の網。折返し金額の取り違え・事業の取り落としを款単位で捕まえる。
+function assertMeisaiTreeDecomposition(
+  projects: BudgetProjectFact[],
+  expLines: BudgetLineFact[],
+  sourceId: string,
+): BudgetProjectFact[] {
+  const kanAmount = new Map(expLines.map((l) => [l.kanName, l.amount]));
+  const sums = new Map<string, number>();
+  // meisai-tree は全事業に款が付く（付かない行はパース時に throw 済み）。型上の null だけ弾く
+  for (const p of projects) {
+    if (p.kan == null) continue;
+    sums.set(p.kan, (sums.get(p.kan) ?? 0) + p.amount);
+  }
+  for (const [kan, sum] of sums) {
+    const want = kanAmount.get(kan);
+    if (want == null) throw new Error(`${sourceId}: 事業の款「${kan}」が歳出の款別一覧にありません`);
+    if (sum !== want) {
+      throw new Error(
+        `${sourceId}: 款「${kan}」の Σ事業 ${sum.toLocaleString()} が款予算 ${want.toLocaleString()} と` +
+          `一致しません（差 ${(sum - want).toLocaleString()}。この資料は完全分解なので等式で張る）`,
+      );
+    }
+  }
+  return projects;
+}
+
 export function parseKofuYosansho(
   files: { path: string; filename: string }[],
   source: SourceEntry,
@@ -1656,6 +1804,10 @@ export function parseKofuYosansho(
                 ? parseProjectsDeptBullets(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
                 : projFmt === "kan-tree"
                   ? parseProjectsKanTree(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
+                : projFmt === "meisai-tree"
+                  ? assertMeisaiTreeDecomposition(
+                      parseProjectsMeisaiTree(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to),
+                      exp.lines, source.id)
                 : projFmt === "coord-table"
                   ? parseProjectsCoordTable(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
                   : parseProjectPages(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to, opts.projectColumns, opts.projectRowBanding ?? "midpoint")

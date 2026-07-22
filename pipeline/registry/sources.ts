@@ -1370,6 +1370,11 @@ export const SOURCES: SourceEntry[] = [
       expenditurePages: { from: 8, to: 9 },
       revenueHeading: "歳入",
       expenditureHeading: "歳出",
+      // 主な事業（同じ資料の歳出事項別明細書・説明欄・2026-07-23 #126）。〇の親事業に款項目が
+      // 付き、Σ親=目・Σ内訳=親の完全分解が成り立つ（§8j-2）。ページは物理・年度ごとに実測。
+      // R2・R3 は旧版面（R3 はマーカーがテキスト層に無い）のため対象外。
+      projectPages: { from: 123, to: 258 },
+      projectFormat: "meisai-tree",
     },
   },
   {
@@ -1390,6 +1395,8 @@ export const SOURCES: SourceEntry[] = [
       expenditurePages: { from: 8, to: 9 },
       revenueHeading: "歳入",
       expenditureHeading: "歳出",
+      projectPages: { from: 122, to: 263 },
+      projectFormat: "meisai-tree",
     },
   },
   {
@@ -1410,6 +1417,8 @@ export const SOURCES: SourceEntry[] = [
       expenditurePages: { from: 8, to: 9 },
       revenueHeading: "歳入",
       expenditureHeading: "歳出",
+      projectPages: { from: 118, to: 259 },
+      projectFormat: "meisai-tree",
     },
   },
   {
@@ -1430,6 +1439,8 @@ export const SOURCES: SourceEntry[] = [
       expenditurePages: { from: 8, to: 9 },
       revenueHeading: "歳入",
       expenditureHeading: "歳出",
+      projectPages: { from: 121, to: 267 },
+      projectFormat: "meisai-tree",
     },
   },
   {
@@ -1450,6 +1461,8 @@ export const SOURCES: SourceEntry[] = [
       expenditurePages: { from: 8, to: 9 },
       revenueHeading: "歳入",
       expenditureHeading: "歳出",
+      projectPages: { from: 118, to: 263 },
+      projectFormat: "meisai-tree",
     },
   },
   {
