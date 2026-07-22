@@ -1,0 +1,19 @@
+{
+  "sourceId": "tokyo-yosangaiyou-r7",
+  "files": [
+    {
+      "filename": "07-03sainyukanbetsu",
+      "sha256": "bc1f0535491ad3d60fe18dc4da5fb5262de8bfcd07b2a21b57a1cfac6168ed2a",
+      "bytes": 610,
+      "fetchedAt": "2026-07-22T08:53:49.175Z",
+      "fetchedFrom": "https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/07-03sainyukanbetsu"
+    },
+    {
+      "filename": "07-04saishutsukanbetsu",
+      "sha256": "b27c2887b95dd8d26fff7150cbbc5df0ae1a9cba1f8623b5987a10f22ac35936",
+      "bytes": 777,
+      "fetchedAt": "2026-07-22T08:53:49.245Z",
+      "fetchedFrom": "https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/07-04saishutsukanbetsu"
+    }
+  ]
+}
