@@ -3138,6 +3138,97 @@ export const SOURCES: SourceEntry[] = [
   })),
 
   ...([
+    // 墨田区（2026-07-22 追加・#124）。[年度, 年度ページ名, PDFパス, 歳入p(物理), 歳出p(物理), 追加opts]
+    // **H17〜R8 の22年が現行サイトに全year現存**（年度一覧 /yosan_gaiyou/index.html を全件辿って実測・
+    // 欠番なし）。全22年度を try-parse で実測してから登録した（Σ 22年度×2側×2列の88系統すべて差0）。
+    // ⚠ **CropX・textSource・ページが年度でバラバラ＝外挿禁止**。余白の印字ページ番号が款行に
+    //    食い込む x 座標が年度で違い、CropX from が 30/45/95/100 の4通りに割れる。
+    //    R2 は rot:270 で CropX 不可（回転前座標で切れて throw）→ textSource:"raw"。
+    //    H31 も raw（-layout は余白番号の食い込みでΣ割れ）。H18・H17 は素で通る。
+    // ⚠ **CropX 無しは静かに款が落ちる**（R7 は特別区交付金468億が消えΣ差 -46,816,000 等・
+    //    Σゲートが捕まえるが大声では落ちない）。
+    // ⚠ **年度ページ名も PDF 名も規則が毎年破れる**（H28 は拡張子前にドット2つ `28yosan-gaiyou..pdf`・
+    //    H23/H22/H20 は `.pdf.pdf`・H25/H24 は `ta10…` の記事ID名）。
+    // ⚠ **同一 PDF の直後ページに特会（国保・介護・後期高齢）の同型表**が同じ弱い見出しで並ぶ。
+    //    **特会も歳入合計=歳出合計が成立する**（R8 国保 26,615,000 で実測）ため、ページ誤指定は
+    //    validate の均衡チェックでも捕まらない。年度間クロスチェーン（22年連続）が実質の網。
+    // ⚠ **H18 款5 株式等譲渡所得割交付金は「前年度 1,000 を印字しながら増減率欄に『皆増』」**
+    //    — 原典自身が矛盾する新型（台東の「ほぼ皆増」＝語で区別とは別）。パーサ側で
+    //    「皆増でも前年度セルに非0が印字されていれば印字値を採る」対応済み（増減 201,000 =
+    //    202,000 − 1,000 とも整合するので印字値が正）。
+    // 款体系: 歳出11款（議会/総務/区民生活/資源環境/民生/衛生/産業観光/土木/教育/諸支出金/予備費）。
+    //   **職員費の款なし**（人件費配賦型）。⚠ H24 以前の款7 は「産業経済費」（H24〜H27 の間に
+    //   産業観光費へ改称・年度をまたぐ結合は款名で行うので断層に注意）。歳入は 19〜21款
+    //   （環境性能割交付金の新設・自動車取得税交付金の廃止で増減）。
+    // 廃止款は款番号なしの括弧行で前年度額だけ残る（R8「(環境性能割交付金 0/185,000」・
+    //   R2「自動車取得税交付金 0/93,000」）→ kanNoless で拾う（無しだと前年度Σが割れる）。
+    ["R8", "r8yosangaiyou", "r8yosangaiyou.files/r8-yosangaiyou.pdf", 7, 8, { cropFrom: 30 }],
+    ["R7", "r7yosangaiyou", "r7yosangaiyou.files/r7gaiyouan.pdf", 7, 8, { cropFrom: 95 }],
+    ["R6", "r6yosangaiyou", "r6yosangaiyou.files/r6yosangaiyou.pdf", 7, 8, { cropFrom: 95 }],
+    ["R5", "r5yosangaiyou", "r5yosangaiyou.files/r5yosanngaiyou.pdf", 7, 8, { cropFrom: 30 }],
+    ["R4", "r4yosangaiyou", "r4yosangaiyou.files/r4yosangaiyou.pdf", 7, 8, { cropFrom: 100 }],
+    ["R3", "R3nendoyosangaiyou", "R3nendoyosangaiyou.files/3yosangaiyou.pdf", 7, 8, { cropFrom: 30 }],
+    ["R2", "r2_yosangaiyou", "r2_yosangaiyou.files/R2_yosangaiyou.pdf", 7, 8, { raw: true }],
+    ["H31", "31yosangaiyou", "31yosangaiyou.files/31yosangaiyou_s.pdf", 6, 7, { raw: true }],
+    ["H30", "h30yosangaiyou", "h30yosangaiyou.files/h30yosangaiyou.pdf", 8, 9, { cropFrom: 45 }],
+    ["H29", "h29yosangaiyou", "h29yosangaiyou.files/h29_yosangaiyou.pdf", 12, 13, { cropFrom: 30 }],
+    ["H28", "28yosan-gaiyou", "28yosan-gaiyou.files/28yosan-gaiyou..pdf", 10, 11, { cropFrom: 45 }],
+    ["H27", "yosangaiyo", "yosangaiyo.files/27yosann2.pdf", 8, 9, { cropFrom: 30 }],
+    // ⚠ H26 は cropFrom の帯が狭い: 95 だと**款番号列ごと切れて全款 kanNo:null**（kanNoless が
+    //    款名は救うのでΣは差0のまま＝番号の消失は目視でしか気づけない）。60 なら番号を残して差0。
+    ["H26", "26yosangaiyou", "26yosangaiyou.files/26gaiyou.pdf", 8, 9, { cropFrom: 60 }],
+    ["H25", "ta104346037", "ta104346037.files/25gaiyou.pdf", 8, 9, { cropFrom: 45 }],
+    ["H24", "ta10300020", "ta10300020.files/gaiyou.pdf", 6, 7, { cropFrom: 45 }],
+    ["H23", "H23yosanngaiyou", "H23yosanngaiyou.files/23yosan-gaiyou.pdf.pdf", 6, 7, { cropFrom: 45 }],
+    ["H22", "22yosangaiyou", "22yosangaiyou.files/22yosan-gaiyou.pdf.pdf", 7, 8, { cropFrom: 30 }],
+    ["H21", "21yosangaiyou", "21yosangaiyou.files/21yosan-gaiyou.pdf", 8, 9, { cropFrom: 30 }],
+    ["H20", "20yosangaiyo", "20yosangaiyo.files/20yosan-gaiyou.pdf.pdf", 8, 9, { cropFrom: 30 }],
+    ["H19", "19yosangaiyou", "19yosangaiyou.files/19yosan-gaiyou.pdf", 7, 8, { cropFrom: 30 }],
+    ["H18", "heisei18nendoyosangaiyou", "heisei18nendoyosangaiyou.files/heisei18nendoyosangaiyou.pdf", 6, 7, {}],
+    ["H17", "h17_yosangaiyou", "h17_yosangaiyou.files/yosangaiyou_h17.pdf", 6, 7, {}],
+  ] as const).map(([fy, page, file, rp, ep, extra]) => ({
+    // 墨田区（団体コード 131075・人口 287,302＝R6 決算状況調から実引き）。「予算概要」巻頭の
+    // 一般会計歳入歳出予算（案）款別表。単位千円・前年当初比較つき（列順は全年度 [当年度, 前年度, 増減]）。
+    // ⚠ 本資料は**全年度「(案）」**（「計数未整理につき変動ある見込み」注記あり）。R8 は議決後の
+    //   予算書 R8yosansyo.files/R8_tousyo.pdf 第1条 155,926,000千円と一致を実測（原案どおり成立）。
+    //   予算書のウェブ公開は R3〜R8 のみ＝R2 以前の案=議決の突合は未実施。
+    id: `sumida-yosangaiyou-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 墨田区予算概要 一般会計歳入歳出予算（案）`,
+    publisher: "墨田区",
+    url: null,
+    urls: [`https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/${file}`],
+    landingPage: `https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/${page}.html`,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "墨田区（一般会計・団体コード131075）",
+    // 「著作権等について」/thissite/tyosakuken.html（確認日 2026-07-22）。原文のまま。
+    // 都オープンデータカタログの墨田区（t131075・199データセット）に当初予算款別は無い
+    // （「財政」ヒットの行政基礎資料集は決算・財調・区税の推移のみ＝実ファイルで確認）＝CC BY は及ばない。
+    // リンクは自由（/thissite/about_link.html）＝noDeepLink 不要。
+    license:
+      "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。",
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      revenuePage: rp,
+      expenditurePage: ep,
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+      revenueTotalLabel: "合計",
+      expenditureTotalLabel: "合計",
+      revenueHeaderExtra: "^科目$",
+      expenditureHeaderExtra: "^科目$",
+      kanNoless: true,
+      ...("cropFrom" in extra
+        ? {
+            revenueCropX: { from: extra.cropFrom, to: 842 },
+            expenditureCropX: { from: extra.cropFrom, to: 842 },
+          }
+        : {}),
+      ...("raw" in extra ? { textSource: "raw" as const } : {}),
+    },
+  })),
+
+  ...([
     // [年度, 歳入ページ(物理), 歳出ページ(物理), 直リンクURL]
     // ⚠ ファイル名に規則が無い: R8 はタイムスタンプ名 / R7 `yosannsyo`（syo）/ R6・R5
     //    `yosannsho`（sho）とローマ字転写が揺れ、R4 以前は旧パス

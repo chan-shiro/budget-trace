@@ -5609,6 +5609,405 @@
       "checkedAt": "2026-07-16T15:35:25.438Z"
     },
     {
+      "sourceId": "sumida-yosangaiyou-h17",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/h17_yosangaiyou.files/yosangaiyou_h17.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20230922023130/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/h17_yosangaiyou.files/yosangaiyou_h17.pdf",
+      "waybackTimestamp": "20230922023130",
+      "checkedAt": "2026-07-22T07:43:44.720Z",
+      "sha256Match": true,
+      "waybackBytes": 96799
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h17",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/h17_yosangaiyou.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251016222818/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/h17_yosangaiyou.html",
+      "waybackTimestamp": "20251016222818",
+      "checkedAt": "2026-07-22T07:44:29.799Z"
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h18",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/heisei18nendoyosangaiyou.files/heisei18nendoyosangaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20251007221731/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/heisei18nendoyosangaiyou.files/heisei18nendoyosangaiyou.pdf",
+      "waybackTimestamp": "20251007221731",
+      "checkedAt": "2026-07-22T07:43:38.802Z",
+      "sha256Match": true,
+      "waybackBytes": 61123
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h18",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/heisei18nendoyosangaiyou.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251211061930/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/heisei18nendoyosangaiyou.html",
+      "waybackTimestamp": "20251211061930",
+      "checkedAt": "2026-07-22T07:43:41.083Z"
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h19",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/19yosangaiyou.files/19yosan-gaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20240414232457/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/19yosangaiyou.files/19yosan-gaiyou.pdf",
+      "waybackTimestamp": "20240414232457",
+      "checkedAt": "2026-07-22T07:43:22.768Z",
+      "sha256Match": true,
+      "waybackBytes": 234967
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h19",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/19yosangaiyou.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251210205443/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/19yosangaiyou.html",
+      "waybackTimestamp": "20251210205443",
+      "checkedAt": "2026-07-22T07:43:32.633Z"
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h20",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/20yosangaiyo.files/20yosan-gaiyou.pdf.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20240614161234/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/20yosangaiyo.files/20yosan-gaiyou.pdf.pdf",
+      "waybackTimestamp": "20240614161234",
+      "checkedAt": "2026-07-22T07:43:18.311Z",
+      "sha256Match": true,
+      "waybackBytes": 518968
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h20",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/20yosangaiyo.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250614224612/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/20yosangaiyo.html",
+      "waybackTimestamp": "20250614224612",
+      "checkedAt": "2026-07-22T07:43:19.998Z"
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h21",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/21yosangaiyou.files/21yosan-gaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250623005530/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/21yosangaiyou.files/21yosan-gaiyou.pdf",
+      "waybackTimestamp": "20250623005530",
+      "checkedAt": "2026-07-22T07:42:42.129Z",
+      "sha256Match": true,
+      "waybackBytes": 1104835
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h21",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/21yosangaiyou.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251113172751/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/21yosangaiyou.html",
+      "waybackTimestamp": "20251113172751",
+      "checkedAt": "2026-07-22T07:42:46.550Z"
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h22",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/22yosangaiyou.files/22yosan-gaiyou.pdf.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260722074201/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/22yosangaiyou.files/22yosan-gaiyou.pdf.pdf",
+      "waybackTimestamp": "20260722074201",
+      "checkedAt": "2026-07-22T07:42:21.258Z",
+      "sha256Match": true,
+      "waybackBytes": 595542
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h22",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/22yosangaiyou.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251015171334/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/22yosangaiyou.html",
+      "waybackTimestamp": "20251015171334",
+      "checkedAt": "2026-07-22T07:42:27.005Z"
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h23",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/H23yosanngaiyou.files/23yosan-gaiyou.pdf.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20230530043224/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/H23yosanngaiyou.files/23yosan-gaiyou.pdf.pdf",
+      "waybackTimestamp": "20230530043224",
+      "checkedAt": "2026-07-22T07:39:41.154Z",
+      "sha256Match": true,
+      "waybackBytes": 638988
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h23",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/H23yosanngaiyou.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251015182650/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/H23yosanngaiyou.html",
+      "waybackTimestamp": "20251015182650",
+      "checkedAt": "2026-07-22T07:39:48.278Z"
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h24",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/ta10300020.files/gaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20230130101532/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/ta10300020.files/gaiyou.pdf",
+      "waybackTimestamp": "20230130101532",
+      "checkedAt": "2026-07-22T07:39:27.800Z",
+      "sha256Match": true,
+      "waybackBytes": 671786
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h24",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/ta10300020.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250422154657/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/ta10300020.html",
+      "waybackTimestamp": "20250422154657",
+      "checkedAt": "2026-07-22T07:39:33.208Z"
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h25",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/ta104346037.files/25gaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20231211070946/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/ta104346037.files/25gaiyou.pdf",
+      "waybackTimestamp": "20231211070946",
+      "checkedAt": "2026-07-22T07:38:56.150Z",
+      "sha256Match": true,
+      "waybackBytes": 746101
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h25",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/ta104346037.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260517060449/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/ta104346037.html",
+      "waybackTimestamp": "20260517060449",
+      "checkedAt": "2026-07-22T07:38:58.769Z"
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h26",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/26yosangaiyou.files/26gaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20240614160337/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/26yosangaiyou.files/26gaiyou.pdf",
+      "waybackTimestamp": "20240614160337",
+      "checkedAt": "2026-07-22T07:38:39.113Z",
+      "sha256Match": true,
+      "waybackBytes": 746709
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h26",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/26yosangaiyou.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250426145744/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/26yosangaiyou.html",
+      "waybackTimestamp": "20250426145744",
+      "checkedAt": "2026-07-22T07:38:52.729Z"
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h27",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/yosangaiyo.files/27yosann2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20230130101650/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/yosangaiyo.files/27yosann2.pdf",
+      "waybackTimestamp": "20230130101650",
+      "checkedAt": "2026-07-22T07:38:10.314Z",
+      "sha256Match": true,
+      "waybackBytes": 237419
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h27",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/yosangaiyo.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251118230715/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/yosangaiyo.html",
+      "waybackTimestamp": "20251118230715",
+      "checkedAt": "2026-07-22T07:38:20.033Z"
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h28",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/28yosan-gaiyou.files/28yosan-gaiyou..pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20230530050313/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/28yosan-gaiyou.files/28yosan-gaiyou..pdf",
+      "waybackTimestamp": "20230530050313",
+      "checkedAt": "2026-07-22T07:37:08.064Z",
+      "sha256Match": true,
+      "waybackBytes": 343269
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h28",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/28yosan-gaiyou.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20240419061604/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/28yosan-gaiyou.html",
+      "waybackTimestamp": "20240419061604",
+      "checkedAt": "2026-07-22T07:37:38.649Z"
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h29",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/h29yosangaiyou.files/h29_yosangaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20240224191133/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/h29yosangaiyou.files/h29_yosangaiyou.pdf",
+      "waybackTimestamp": "20240224191133",
+      "checkedAt": "2026-07-22T07:37:00.681Z",
+      "sha256Match": false,
+      "waybackBytes": 1048576,
+      "waybackTruncated": true
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h29",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/h29yosangaiyou.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20241109034704/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/h29yosangaiyou.html",
+      "waybackTimestamp": "20241109034704",
+      "checkedAt": "2026-07-22T07:37:04.994Z"
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h30",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/h30yosangaiyou.files/h30yosangaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20230130101550/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/h30yosangaiyou.files/h30yosangaiyou.pdf",
+      "waybackTimestamp": "20230130101550",
+      "checkedAt": "2026-07-22T07:36:30.483Z",
+      "sha256Match": true,
+      "waybackBytes": 1825628
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h30",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/h30yosangaiyou.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251118164729/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/h30yosangaiyou.html",
+      "waybackTimestamp": "20251118164729",
+      "checkedAt": "2026-07-22T07:36:34.288Z"
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h31",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/31yosangaiyou.files/31yosangaiyou_s.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20251111013514/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/31yosangaiyou.files/31yosangaiyou_s.pdf",
+      "waybackTimestamp": "20251111013514",
+      "checkedAt": "2026-07-22T07:36:16.046Z",
+      "sha256Match": true,
+      "waybackBytes": 1702139
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-h31",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/31yosangaiyou.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251012114300/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/31yosangaiyou.html",
+      "waybackTimestamp": "20251012114300",
+      "checkedAt": "2026-07-22T07:36:17.556Z"
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-r2",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r2_yosangaiyou.files/R2_yosangaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250622234233/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r2_yosangaiyou.files/R2_yosangaiyou.pdf",
+      "waybackTimestamp": "20250622234233",
+      "checkedAt": "2026-07-22T07:36:03.700Z",
+      "sha256Match": true,
+      "waybackBytes": 2005843
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-r2",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r2_yosangaiyou.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251015171255/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r2_yosangaiyou.html",
+      "waybackTimestamp": "20251015171255",
+      "checkedAt": "2026-07-22T07:36:05.747Z"
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-r3",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/R3nendoyosangaiyou.files/3yosangaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20240530103109/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/R3nendoyosangaiyou.files/3yosangaiyou.pdf",
+      "waybackTimestamp": "20240530103109",
+      "checkedAt": "2026-07-22T07:34:58.719Z",
+      "sha256Match": true,
+      "waybackBytes": 673748
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-r3",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/R3nendoyosangaiyou.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260513041223/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/R3nendoyosangaiyou.html",
+      "waybackTimestamp": "20260513041223",
+      "checkedAt": "2026-07-22T07:35:35.515Z"
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-r4",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r4yosangaiyou.files/r4yosangaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20251212002734/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r4yosangaiyou.files/r4yosangaiyou.pdf",
+      "waybackTimestamp": "20251212002734",
+      "checkedAt": "2026-07-22T07:34:25.239Z",
+      "sha256Match": true,
+      "waybackBytes": 1358100
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-r4",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r4yosangaiyou.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251113075526/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r4yosangaiyou.html",
+      "waybackTimestamp": "20251113075526",
+      "checkedAt": "2026-07-22T07:34:53.664Z"
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-r5",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r5yosangaiyou.files/r5yosanngaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20231211191117/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r5yosangaiyou.files/r5yosanngaiyou.pdf",
+      "waybackTimestamp": "20231211191117",
+      "checkedAt": "2026-07-22T07:33:32.992Z",
+      "sha256Match": false,
+      "waybackBytes": 1048576,
+      "waybackTruncated": true
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-r5",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r5yosangaiyou.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251118230000/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r5yosangaiyou.html",
+      "waybackTimestamp": "20251118230000",
+      "checkedAt": "2026-07-22T07:34:22.387Z"
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-r6",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r6yosangaiyou.files/r6yosangaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20240530092255/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r6yosangaiyou.files/r6yosangaiyou.pdf",
+      "waybackTimestamp": "20240530092255",
+      "checkedAt": "2026-07-22T07:33:17.790Z",
+      "sha256Match": false,
+      "waybackBytes": 1048576,
+      "waybackTruncated": true
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-r6",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r6yosangaiyou.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260415003740/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r6yosangaiyou.html",
+      "waybackTimestamp": "20260415003740",
+      "checkedAt": "2026-07-22T07:33:26.466Z"
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-r7",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r7yosangaiyou.files/r7gaiyouan.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250130115120/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r7yosangaiyou.files/r7gaiyouan.pdf",
+      "waybackTimestamp": "20250130115120",
+      "checkedAt": "2026-07-22T07:32:55.677Z",
+      "sha256Match": true,
+      "waybackBytes": 5549441
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-r7",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r7yosangaiyou.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250424090713/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r7yosangaiyou.html",
+      "waybackTimestamp": "20250424090713",
+      "checkedAt": "2026-07-22T07:33:00.376Z"
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-r8",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r8yosangaiyou.files/r8-yosangaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260722073111/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r8yosangaiyou.files/r8-yosangaiyou.pdf",
+      "waybackTimestamp": "20260722073111",
+      "checkedAt": "2026-07-22T07:31:31.727Z",
+      "sha256Match": true,
+      "waybackBytes": 1131578
+    },
+    {
+      "sourceId": "sumida-yosangaiyou-r8",
+      "url": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r8yosangaiyou.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260515202812/https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/r8yosangaiyou.html",
+      "waybackTimestamp": "20260515202812",
+      "checkedAt": "2026-07-22T07:32:26.920Z"
+    },
+    {
       "sourceId": "taito-kanbetsu-h28",
       "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/28point.files/30gaisansyo.pdf",
       "kind": "file",
