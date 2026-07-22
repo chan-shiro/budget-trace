@@ -18,7 +18,7 @@ import {
   readRawMeta,
   validationPath,
 } from "./lib/store";
-import { eraYear, fyRank } from "./lib/fy";
+import { eraYear, fyRank, fySeq } from "./lib/fy";
 import { findSource, SOURCES } from "./registry/sources";
 import { ROADMAP } from "./registry/roadmap";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -2775,8 +2775,10 @@ export const ROADMAP_PLAN: RoadmapItem[] = ${JSON.stringify(ROADMAP, null, 2)};
       for (let i = 1; i < years.length; i++) {
         const nw = years[i]!;
         const od = years[i - 1]!;
-        // 欠番（収録できなかった年度）はまたがない — 鎖が張れるのは連続年度だけ
-        if (fyRank(nw.fy) - fyRank(od.fy) !== 1) continue;
+        // 欠番（収録できなかった年度）はまたがない — 鎖が張れるのは連続年度だけ。
+        // 判定は fySeq（連番）。fyRank だと H31→R2 の差が 971 になり**改元の境界だけ
+        // リンクが張れない**（#145 — 東京都・特別区9系列で実際に欠けていた）。
+        if (fySeq(nw.fy) - fySeq(od.fy) !== 1) continue;
         const n = anyParsedDocSchema.parse(readJson(parsedPath(nw.srcId)));
         const o = anyParsedDocSchema.parse(readJson(parsedPath(od.srcId)));
         if (n.docType !== "budget-book" || o.docType !== "budget-book") continue;
