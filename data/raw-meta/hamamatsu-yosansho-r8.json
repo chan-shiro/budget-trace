@@ -5,8 +5,15 @@
       "filename": "22_setumeisho08.pdf",
       "sha256": "347f068edfb2aad3e1b489318a6d9ac12dd91ff53e4b65cd3edfc8a6b7d7136a",
       "bytes": 1360421,
-      "fetchedAt": "2026-07-15T18:15:15.570Z",
+      "fetchedAt": "2026-07-22T17:44:05.377Z",
       "fetchedFrom": "https://www.city.hamamatsu.shizuoka.jp/documents/171794/22_setumeisho08.pdf"
+    },
+    {
+      "filename": "02_syuyojigyo08.pdf",
+      "sha256": "9595075c5f2e40e5d8df7bc9a615d254cfb8aa010a9075c063d93244e68ee72f",
+      "bytes": 5418274,
+      "fetchedAt": "2026-07-22T17:44:05.499Z",
+      "fetchedFrom": "https://www.city.hamamatsu.shizuoka.jp/documents/171794/02_syuyojigyo08.pdf"
     }
   ]
 }

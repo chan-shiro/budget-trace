@@ -1863,7 +1863,13 @@ export const SOURCES: SourceEntry[] = [
     title: "令和8年度 浜松市予算に関する説明書（一般会計・歳入歳出予算事項別明細書 総括・款別歳入歳出）",
     publisher: "浜松市",
     url: null,
-    urls: ["https://www.city.hamamatsu.shizuoka.jp/documents/171794/22_setumeisho08.pdf"],
+    urls: [
+      "https://www.city.hamamatsu.shizuoka.jp/documents/171794/22_setumeisho08.pdf",
+      // 主な事業（資料02「2026年度市政運営の基本方針の主要事業」・2026-07-23 #126・§8o-2）。
+      // 詳細版の資料03は5分割中2分割が画像のみでパース不可のため、全行に款+金額+所管課が付く
+      // 資料02を採る（金額は純粋な当年度事業費。債務負担行為の加算は資料03側だけの性質と実測）。
+      "https://www.city.hamamatsu.shizuoka.jp/documents/171794/02_syuyojigyo08.pdf",
+    ],
     landingPage: "https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget08/index.html",
     kind: "pdf",
     fiscalYear: "R8",
@@ -1877,6 +1883,10 @@ export const SOURCES: SourceEntry[] = [
       revenueHeading: "（歳入）",
       expenditureHeading: "（歳出）",
       expenditureHeaderExtra: "一般財源|特定財源|財源内訳|国県支出金|地方債|その他",
+      kanFile: "22_setumeisho08.pdf",
+      projectsFile: "02_syuyojigyo08.pdf",
+      projectPages: { from: 1, to: 97 },
+      projectFormat: "numbered-rows",
     },
   },
   {
@@ -1884,7 +1894,11 @@ export const SOURCES: SourceEntry[] = [
     title: "令和7年度 浜松市予算に関する説明書（一般会計・歳入歳出予算事項別明細書 総括・款別歳入歳出）",
     publisher: "浜松市",
     url: null,
-    urls: ["https://www.city.hamamatsu.shizuoka.jp/documents/164874/l_yosansetsumeisho.pdf"],
+    urls: [
+      "https://www.city.hamamatsu.shizuoka.jp/documents/164874/l_yosansetsumeisho.pdf",
+      // 主な事業（資料02「2025年度市政運営の基本方針の主要事業」・R8 と同型・§8o-2）
+      "https://www.city.hamamatsu.shizuoka.jp/documents/164874/02_bunyabetsu.pdf",
+    ],
     landingPage: "https://www.city.hamamatsu.shizuoka.jp/zaisek/budget/budget07/index.html",
     kind: "pdf",
     fiscalYear: "R7",
@@ -1898,6 +1912,13 @@ export const SOURCES: SourceEntry[] = [
       revenueHeading: "（歳入）",
       expenditureHeading: "（歳出）",
       expenditureHeaderExtra: "一般財源|特定財源|財源内訳|国県支出金|地方債|その他",
+      kanFile: "l_yosansetsumeisho.pdf",
+      projectsFile: "02_bunyabetsu.pdf",
+      projectPages: { from: 1, to: 95 },
+      projectFormat: "numbered-rows",
+      // ⚠ p.65「重度障害者等就労・大学修学支援事業」だけ**原本に款セルが無い**（±180pt を実測して
+      //    欠落を確認・偵察 2026-07-23）。この1件だけ明示的に許す
+      projectKanlessAllowed: 1,
     },
   },
   {

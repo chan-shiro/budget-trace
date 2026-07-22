@@ -3,7 +3,7 @@
   "sourceId": "hamamatsu-yosansho-r8",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-07-17T11:26:08.975Z",
+  "parsedAt": "2026-07-22T17:46:20.892Z",
   "unit": "thousandYen",
   "fiscalYear": "R8",
   "account": "一般会計",
@@ -429,6 +429,6053 @@
       "locator": {
         "file": "22_setumeisho08.pdf",
         "page": 7
+      }
+    }
+  ],
+  "projects": [
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "インターナショナルスクール誘致推進事業",
+      "budgetBookName": null,
+      "amount": 29705,
+      "description": "※インターナショナルスクール管理事業529千円インターナショナルスクール整備事業29,176千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "経営基盤・競争力強化支援パッケージ2026",
+      "budgetBookName": null,
+      "amount": 494343,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "中小企業融資支援事業",
+      "budgetBookName": null,
+      "amount": 25839,
+      "description": "※中小企業向け融資制度利用促進事業7,302千円中小企業向け融資制度利用者助成事業(補助金)18,537千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 2
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "産業イノベーション支援事業",
+      "budgetBookName": null,
+      "amount": 266062,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "先端技術活用促進事業（負担金）",
+      "budgetBookName": null,
+      "amount": 59150,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "成長産業創出支援事業",
+      "budgetBookName": null,
+      "amount": 103073,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "ＥＶシフト対応支援事業（負担金）",
+      "budgetBookName": null,
+      "amount": 68000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": "新規",
+      "name": "サービスロボット導入支援事業",
+      "budgetBookName": null,
+      "amount": 200000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": "新規",
+      "name": "AIエージェント導入支援事業（補助金）",
+      "budgetBookName": null,
+      "amount": 100000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 4
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "起業家育成支援事業",
+      "budgetBookName": null,
+      "amount": 50529,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 4
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": "新規",
+      "name": "投資受入推進事業",
+      "budgetBookName": null,
+      "amount": 13753,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 4
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "浜松・インド経済交流推進事業",
+      "budgetBookName": null,
+      "amount": 173074,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 4
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "まちなか賑わい創出事業",
+      "budgetBookName": null,
+      "amount": 33592,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "都心業務機能集積促進助成事業",
+      "budgetBookName": null,
+      "amount": 18409,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "リノベーション推進事業",
+      "budgetBookName": null,
+      "amount": 22150,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "都心施設整備事業",
+      "budgetBookName": null,
+      "amount": 713,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": "新規",
+      "name": "都心賃貸オフィス建設促進事業（債務負担行為）",
+      "budgetBookName": null,
+      "amount": 1000000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "企業立地促進助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 4024421,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "阿蔵山産業用地整備事業",
+      "budgetBookName": null,
+      "amount": 270000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "労働費",
+      "no": null,
+      "kubun": null,
+      "name": "大学生等就職支援事業",
+      "budgetBookName": null,
+      "amount": 93081,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "労働費",
+      "no": null,
+      "kubun": null,
+      "name": "女性就労支援事業",
+      "budgetBookName": null,
+      "amount": 11518,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": "労働費",
+      "no": null,
+      "kubun": "新規",
+      "name": "外国人材受入支援事業",
+      "budgetBookName": null,
+      "amount": 28178,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": "労働費",
+      "no": null,
+      "kubun": "新規",
+      "name": "雇用就労環境実態調査事業",
+      "budgetBookName": null,
+      "amount": 12180,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": "労働費",
+      "no": null,
+      "kubun": null,
+      "name": "勤労者福祉施設整備事業",
+      "budgetBookName": null,
+      "amount": 336950,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "スタートアップ育成・成長支援事業",
+      "budgetBookName": null,
+      "amount": 255963,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": "新規",
+      "name": "スタートアップ創出支援事業",
+      "budgetBookName": null,
+      "amount": 45000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "スタートアップ地域連携事業",
+      "budgetBookName": null,
+      "amount": 85359,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "スタートアップ・エコシステム構築事業",
+      "budgetBookName": null,
+      "amount": 22428,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "スタートアップ誘致事業",
+      "budgetBookName": null,
+      "amount": 11007,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "首都圏ビジネス情報センター事業",
+      "budgetBookName": null,
+      "amount": 14455,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "浜松まつり事業（負担金）",
+      "budgetBookName": null,
+      "amount": 106995,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": "新規",
+      "name": "家康公ゆかりの地浜松誘客イベント開催事業",
+      "budgetBookName": null,
+      "amount": 76433,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "観光誘客促進事業",
+      "budgetBookName": null,
+      "amount": 51200,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": "新規",
+      "name": "ナイトタイムエコノミー促進事業",
+      "budgetBookName": null,
+      "amount": 15000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": "新規",
+      "name": "観光地域周遊促進事業",
+      "budgetBookName": null,
+      "amount": 3996,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "浜松・浜名湖ＤＭＯ機能強化等支援事業（負担金）",
+      "budgetBookName": null,
+      "amount": 120546,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "インバウンド推進事業",
+      "budgetBookName": null,
+      "amount": 62880,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "高付加価値旅行者受入環境整備促進事業（負担金）",
+      "budgetBookName": null,
+      "amount": 5000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "ＭＩＣＥ推進事業",
+      "budgetBookName": null,
+      "amount": 37620,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "シティプロモーション事業",
+      "budgetBookName": null,
+      "amount": 60868,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "ふるさと納税事業",
+      "budgetBookName": null,
+      "amount": 1406520,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "観光・シティプロモーション運営経費",
+      "budgetBookName": null,
+      "amount": 5342,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "農業経営塾開催事業",
+      "budgetBookName": null,
+      "amount": 2007,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "多様な担い手育成支援事業",
+      "budgetBookName": null,
+      "amount": 851,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "付加価値向上推進事業",
+      "budgetBookName": null,
+      "amount": 21282,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "海外販路拡大事業",
+      "budgetBookName": null,
+      "amount": 9984,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "食と農の地域ブランド推進事業",
+      "budgetBookName": null,
+      "amount": 18468,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": "新規",
+      "name": "地産地消給食促進事業",
+      "budgetBookName": null,
+      "amount": 19309,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "スマート農業推進事業",
+      "budgetBookName": null,
+      "amount": 13997,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "フルーツパーク施設整備事業",
+      "budgetBookName": null,
+      "amount": 37649,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "農作物被害対策支援事業",
+      "budgetBookName": null,
+      "amount": 82335,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "農業次世代人材投資事業",
+      "budgetBookName": null,
+      "amount": 103465,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "経営体育成助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 107610,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "地域農業パワーアップ支援事業",
+      "budgetBookName": null,
+      "amount": 182260,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "生産振興活動支援事業",
+      "budgetBookName": null,
+      "amount": 7439,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "山間地域農業生産活動助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 9000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "耕作放棄地対策事業（交付金）",
+      "budgetBookName": null,
+      "amount": 20112,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": "新規",
+      "name": "多様な担い手確保育成事業",
+      "budgetBookName": null,
+      "amount": 5724,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": "新規",
+      "name": "畜産業環境対策支援事業（補助金）",
+      "budgetBookName": null,
+      "amount": 5000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "棚田サミット事業",
+      "budgetBookName": null,
+      "amount": 20744,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "県単独農業農村整備調査事業",
+      "budgetBookName": null,
+      "amount": 19042,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "県営土地改良事業（負担金）",
+      "budgetBookName": null,
+      "amount": 81725,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "かんがい排水整備市単独事業",
+      "budgetBookName": null,
+      "amount": 248310,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "農業農村施設整備事業",
+      "budgetBookName": null,
+      "amount": 67848,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "基幹水利施設維持管理事業",
+      "budgetBookName": null,
+      "amount": 860109,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "森林・林業施設整備事業",
+      "budgetBookName": null,
+      "amount": 8257,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": "新規",
+      "name": "市有林経営事業",
+      "budgetBookName": null,
+      "amount": 8185,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "市単独治山事業",
+      "budgetBookName": null,
+      "amount": 55414,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "森林経営管理推進事業",
+      "budgetBookName": null,
+      "amount": 30863,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "天竜材の家百年住居る助成事業",
+      "budgetBookName": null,
+      "amount": 70500,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "天竜材ぬくもり空間創出事業（補助金）",
+      "budgetBookName": null,
+      "amount": 25000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "森林整備・林業振興事業（補助金）",
+      "budgetBookName": null,
+      "amount": 127463,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "森林環境教育推進事業",
+      "budgetBookName": null,
+      "amount": 996,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "FSC認証材利用拡大推進事業",
+      "budgetBookName": null,
+      "amount": 10391,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "天竜林業イノベーション推進事業",
+      "budgetBookName": null,
+      "amount": 2550,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": "新規",
+      "name": "森の高齢化・森林資源循環可能性調査事業",
+      "budgetBookName": null,
+      "amount": 6224,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "林業成長産業化推進事業（補助金）",
+      "budgetBookName": null,
+      "amount": 15710,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "漁港整備事業",
+      "budgetBookName": null,
+      "amount": 92309,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 18
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "水産業持続化促進事業（負担金）",
+      "budgetBookName": null,
+      "amount": 6840,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": "新規",
+      "name": "沿岸漁業整備開発事業（負担金）",
+      "budgetBookName": null,
+      "amount": 568,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": "新規",
+      "name": "水産業物価高騰対策支援事業",
+      "budgetBookName": null,
+      "amount": 15011,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "農地利用最適化推進事業",
+      "budgetBookName": null,
+      "amount": 1239,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "こども計画推進事業",
+      "budgetBookName": null,
+      "amount": 1904,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "こどもの権利保障推進事業",
+      "budgetBookName": null,
+      "amount": 13580,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "浜松こども館運営事業",
+      "budgetBookName": null,
+      "amount": 120443,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "地域少子化対策強化事業",
+      "budgetBookName": null,
+      "amount": 79690,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "こども若者総合相談センター運営事業",
+      "budgetBookName": null,
+      "amount": 36859,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "児童育成支援拠点事業",
+      "budgetBookName": null,
+      "amount": 26625,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "親子関係形成支援事業",
+      "budgetBookName": null,
+      "amount": 2891,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "社会的養護体制整備事業",
+      "budgetBookName": null,
+      "amount": 18621,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "こどもの権利擁護環境整備事業",
+      "budgetBookName": null,
+      "amount": 7496,
+      "description": "※児童権利擁護部会委員報酬273千円の合計こどもの権利擁護環境整備事業7,223千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "社会的養護自立支援拠点事業",
+      "budgetBookName": null,
+      "amount": 22347,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 23
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "地域子育て支援拠点事業",
+      "budgetBookName": null,
+      "amount": 268326,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 23
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "発達障害者支援センター運営事業",
+      "budgetBookName": null,
+      "amount": 96906,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 23
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "学習支援事業",
+      "budgetBookName": null,
+      "amount": 28106,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 23
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "生活支援居場所事業",
+      "budgetBookName": null,
+      "amount": 50659,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 23
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "こどもの貧困対策総合支援事業",
+      "budgetBookName": null,
+      "amount": 41526,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 23
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "生活困窮世帯への習い事等支援事業",
+      "budgetBookName": null,
+      "amount": 77121,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 24
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "児童扶養手当支給事業",
+      "budgetBookName": null,
+      "amount": 2040747,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 24
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "こども医療費助成事業",
+      "budgetBookName": null,
+      "amount": 4434255,
+      "description": "※ひとり親家庭等医療費助成事業315,626千円の合計こども医療費助成事業4,118,629千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 24
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "児童手当支給事業",
+      "budgetBookName": null,
+      "amount": 16246581,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 24
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "児童保護事業",
+      "budgetBookName": null,
+      "amount": 1828717,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 24
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "病児・病後児保育事業",
+      "budgetBookName": null,
+      "amount": 105509,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 25
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "保育ママ事業",
+      "budgetBookName": null,
+      "amount": 7629,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 25
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "特定教育・保育施設運営事業",
+      "budgetBookName": null,
+      "amount": 22087403,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 25
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "特定地域型保育事業所運営事業",
+      "budgetBookName": null,
+      "amount": 3101731,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 25
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "特定乳児等通園支援事業所運営事業",
+      "budgetBookName": null,
+      "amount": 5442,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 25
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "保育士等確保対策事業",
+      "budgetBookName": null,
+      "amount": 349081,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 26
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "児童福祉施設等における物価高騰対策助成事業",
+      "budgetBookName": null,
+      "amount": 180274,
+      "description": "※社会的養護体制整備事業18,621千円の一部5,236千円の合計里親支援事業6,656千円の一部2,016千円の合計私立保育所等事業費助成事業（補助金）私立幼稚園教育振興助成事業",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 26
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "私立保育所等事業費助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 1388252,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 26
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "私立保育所等入所児童処遇向上費助成事業私立保育所等入所児童処遇向上費助成事業補助事業（補助金）私立保育所等入所児童処遇向上費助成事業単独事業（補助金）",
+      "budgetBookName": null,
+      "amount": 1988460,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 27
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "保育支援デジタル運営経費",
+      "budgetBookName": null,
+      "amount": 69300,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 27
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "保育材料及び児童給食賄料事業",
+      "budgetBookName": null,
+      "amount": 231850,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 27
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "市立保育所等施設整備事業",
+      "budgetBookName": null,
+      "amount": 56910,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 28
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "私立幼稚園教育振興助成事業",
+      "budgetBookName": null,
+      "amount": 302336,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 28
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "私立幼稚園等無償化関連事業",
+      "budgetBookName": null,
+      "amount": 882912,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 28
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "教育総合計画推進事業",
+      "budgetBookName": null,
+      "amount": 2010,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 29
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "スクールロイヤー活用事業",
+      "budgetBookName": null,
+      "amount": 506,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 29
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "学校情報技術環境構築事業",
+      "budgetBookName": null,
+      "amount": 319829,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 29
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "小中学校学習者情報環境構築事業",
+      "budgetBookName": null,
+      "amount": 172913,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 29
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "コミュニティ・スクール推進事業",
+      "budgetBookName": null,
+      "amount": 111166,
+      "description": "※（学校・地域連携費）附属機関の委員等学校運営協議会委員報酬8,174千円コミュニティ・スクール推進事業102,992千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 29
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "部活動地域展開推進事業",
+      "budgetBookName": null,
+      "amount": 125484,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 30
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "放課後児童会運営支援事業",
+      "budgetBookName": null,
+      "amount": 2253716,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 30
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "教職員管理運営経費",
+      "budgetBookName": null,
+      "amount": 15815,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 30
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "教育研究・指導事業",
+      "budgetBookName": null,
+      "amount": 57169,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 30
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "学校外プール施設等活用事業（債務負担行為）",
+      "budgetBookName": null,
+      "amount": 182929,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 30
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "指導員・支援員の配置",
+      "budgetBookName": null,
+      "amount": 1091859,
+      "description": "※（教育指導費）会計年度任用職員（教育支援費）会計年度任用職員（小学校教職員管理費）会計年度任用職員（中学校教職員管理費）会計年度任用職員（市立高校管理費）会計年度任用職員",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 31
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "不登校児童生徒に対する支援（教育指導費）会計年度任用職員不登校児支援推進事業84,888千円の合計教育指導デジタル運営経費6,554千円の合計",
+      "budgetBookName": null,
+      "amount": 163873,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 32
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "生徒指導推進事業",
+      "budgetBookName": null,
+      "amount": 20619,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 32
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "かわな野外活動センター管理運営事業施設整備事業",
+      "budgetBookName": null,
+      "amount": 127919,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 32
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "中学生初期日本語指導拠点校増設",
+      "budgetBookName": null,
+      "amount": 3666,
+      "description": "※（教育支援費）会計年度任用職員外国人子供教育支援推進事業40,113千円の一部213千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 33
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "私立学校教育振興助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 14604,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 33
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "校務アシスタント配置事業",
+      "budgetBookName": null,
+      "amount": 141387,
+      "description": "※（小学校教職員管理費）会計年度任用職員（中学校教職員管理費）会計年度任用職員",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 33
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "学校電話非通知拒否機能追加・自動採点システム導入事業",
+      "budgetBookName": null,
+      "amount": 10602,
+      "description": "※小学校運営事業1,247,172千円の一部2,788千円の合計中学校運営事業766,718千円の一部7,814千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 33
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "学校施設長寿命化事業",
+      "budgetBookName": null,
+      "amount": 1442855,
+      "description": "※小学校建設事業1,286,736千円の一部709,047千円の合計小学校施設整備事業4,675,691千円の一部160,709千円の合計中学校建設事業601,283千円の一部369,283千円の合計中学校施設整備事業2,505,231千円の一部203,816千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 34
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "学校改築・大規模改修事業",
+      "budgetBookName": null,
+      "amount": 806796,
+      "description": "※小学校建設事業1,286,736千円の一部574,830千円の合計中学校建設事業601,283千円の一部231,966千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 34
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "佐鳴台地区施設複合化事業",
+      "budgetBookName": null,
+      "amount": 39668,
+      "description": "※小学校建設事業1,286,736千円の一部19,834千円の合計中学校建設事業601,283千円の一部19,834千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 35
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "水窪小中一貫校整備事業",
+      "budgetBookName": null,
+      "amount": 7764,
+      "description": "※小学校建設事業1,286,736千円の一部7,764千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 35
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "小中学校特別教室空調設備整備事業",
+      "budgetBookName": null,
+      "amount": 5815337,
+      "description": "※小学校施設整備事業4,675,691千円の一部3,864,942千円の合計中学校施設整備事業2,505,231千円の一部1,950,395千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 35
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "小中学校配膳室等空調設備整備事業",
+      "budgetBookName": null,
+      "amount": 36694,
+      "description": "※小学校施設整備事業4,675,691千円の一部25,106千円の合計中学校施設整備事業2,505,231千円の一部11,588千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 35
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "小中学校体育館空調設備整備事業",
+      "budgetBookName": null,
+      "amount": 15543,
+      "description": "※中学校施設整備事業2,505,231千円の一部15,543千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 36
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "市立高校施設整備事業",
+      "budgetBookName": null,
+      "amount": 159993,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 36
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "学校給食費の無償化及び保護者負担軽減",
+      "budgetBookName": null,
+      "amount": 3177370,
+      "description": "※保育材料及び児童給食賄料事業幼稚園事業運営経費5,331千円の一部4,515千円の合計学校給食食材購入事業637,780千円の一部397,415千円の合計学校給食費管理事業4,439,346千円の一部2,746,438千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 36
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "学校給食費管理事業",
+      "budgetBookName": null,
+      "amount": 4439346,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 36
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "災害対策本部事業",
+      "budgetBookName": null,
+      "amount": 6232,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 37
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": "新規",
+      "name": "ファーストミッションボックス用防災資機材の購入",
+      "budgetBookName": null,
+      "amount": 3201,
+      "description": "※地域防災計画整備事業7,860千円の一部3,201千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 37
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "津波対策維持管理事業",
+      "budgetBookName": null,
+      "amount": 12760,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 37
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": "新規",
+      "name": "津波避難タワー・マウンド日除け対策事業",
+      "budgetBookName": null,
+      "amount": 135600,
+      "description": "※津波対策整備事業141,759千円の一部135,600千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 37
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "停電対策予防伐採事業（負担金）",
+      "budgetBookName": null,
+      "amount": 18883,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 37
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "市民防災意識啓発事業",
+      "budgetBookName": null,
+      "amount": 4527,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 38
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": "新規",
+      "name": "感震ブレーカー設置費助成事業",
+      "budgetBookName": null,
+      "amount": 12769,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 38
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "防災施設・資機材維持管理事業",
+      "budgetBookName": null,
+      "amount": 177010,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 38
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "防災施設・資機材整備事業",
+      "budgetBookName": null,
+      "amount": 56775,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 38
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "情報通信維持管理事業",
+      "budgetBookName": null,
+      "amount": 173679,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 38
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "情報通信整備事業",
+      "budgetBookName": null,
+      "amount": 137562,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 38
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "自主防災組織支援事業",
+      "budgetBookName": null,
+      "amount": 69677,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 38
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "危機管理デジタル運営経費",
+      "budgetBookName": null,
+      "amount": 34363,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 38
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "地震対策推進事業",
+      "budgetBookName": null,
+      "amount": 349067,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 39
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "都市計画図書等管理事業",
+      "budgetBookName": null,
+      "amount": 166300,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 39
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "都市計画区域マスタープラン調査検討事業",
+      "budgetBookName": null,
+      "amount": 28300,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 39
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "都市計画道路見直し計画調査検討事業",
+      "budgetBookName": null,
+      "amount": 5451,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 39
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "土地利用適正化事業",
+      "budgetBookName": null,
+      "amount": 1022,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 39
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "宅地耐震化推進事業",
+      "budgetBookName": null,
+      "amount": 64735,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 39
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "総合交通計画推進事業",
+      "budgetBookName": null,
+      "amount": 31032,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 40
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "バス交通等対策助成事業",
+      "budgetBookName": null,
+      "amount": 352070,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 40
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "公共交通網維持支援事業（負担金）",
+      "budgetBookName": null,
+      "amount": 100000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 40
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "共助型地域交通等推進事業",
+      "budgetBookName": null,
+      "amount": 13018,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 40
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "鉄道施設老朽化・耐震対策助成事業",
+      "budgetBookName": null,
+      "amount": 37000,
+      "description": "※（新規）鉄道施設老朽化対策助成事業（補助金）10,000千円鉄道施設耐震対策助成事業（補助金）27,000千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 40
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "鉄道駅バリアフリー化設備整備費助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 43333,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 41
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "交通施設再整備事業",
+      "budgetBookName": null,
+      "amount": 77606,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 41
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "天竜浜名湖鉄道経営支援事業",
+      "budgetBookName": null,
+      "amount": 147772,
+      "description": "※経営助成事業（補助金）93,009千円車両更新助成事業（補助金）24,763千円自然災害等復旧助成事業（補助金）30,000千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 41
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "高塚駅北第二公共団体区画整理事業及び関連事業",
+      "budgetBookName": null,
+      "amount": 1827582,
+      "description": "※高塚駅北第二土地区画整理審議会委員報酬329千円人件費会計年度任用職員35,428千円の一部2,547千円高塚駅北第二公共団体区画整理事業1,803,993千円高塚駅北第二区画整理関連整備事業20,713千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 41
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "浜北中央北地区公共施設整備事業及び組合支援事業",
+      "budgetBookName": null,
+      "amount": 2337013,
+      "description": "※浜北中央北地区公共施設整備事業930,038千円浜北中央北土地区画整理組合支援事業1,406,975千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 42
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "土地区画整理等調査事業",
+      "budgetBookName": null,
+      "amount": 59818,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 42
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "市営住宅維持・保全事業",
+      "budgetBookName": null,
+      "amount": 29179,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 42
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "市営住宅ストック総合改善事業",
+      "budgetBookName": null,
+      "amount": 657837,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 42
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "舘山寺総合公園運営事業",
+      "budgetBookName": null,
+      "amount": 326497,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 43
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "緑の基本計画推進事業",
+      "budgetBookName": null,
+      "amount": 3295,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 43
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "国際園芸博覧会出展事業",
+      "budgetBookName": null,
+      "amount": 23946,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 43
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "公園整備事業国交付金事業",
+      "budgetBookName": null,
+      "amount": 98384,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 43
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "公園整備事業単独事業",
+      "budgetBookName": null,
+      "amount": 75446,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 43
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "浜松城公園整備事業及び整備関連事業",
+      "budgetBookName": null,
+      "amount": 130341,
+      "description": "※浜松城公園整備事業101,841千円浜松城公園整備関連事業28,500千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 44
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "遠州灘海浜公園篠原地区東関連事業",
+      "budgetBookName": null,
+      "amount": 627,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 44
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "公園緑地帯維持管理事業",
+      "budgetBookName": null,
+      "amount": 889166,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 44
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "公園緑地帯等緊急管理事業",
+      "budgetBookName": null,
+      "amount": 51110,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 44
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "公園施設改良事業",
+      "budgetBookName": null,
+      "amount": 538012,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 44
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "動物園施設維持管理事業及び一般整備事業",
+      "budgetBookName": null,
+      "amount": 513338,
+      "description": "※動物園施設維持管理事業187,959千円動物園施設整備事業一般整備事業325,379千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 45
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "道路・街路・河川事業",
+      "budgetBookName": null,
+      "amount": 31784301,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 46
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "交通事故データ活用事業",
+      "budgetBookName": null,
+      "amount": 13200,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 46
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "交通安全施設等整備・修繕事業",
+      "budgetBookName": null,
+      "amount": 4031461,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 46
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "交通安全推進事業",
+      "budgetBookName": null,
+      "amount": 139448,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 46
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "三遠南信自動車道関連整備事業",
+      "budgetBookName": null,
+      "amount": 2073600,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 46
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "浜松環状線立体交差化事業",
+      "budgetBookName": null,
+      "amount": 361100,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 46
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "国直轄道路事業（負担金）",
+      "budgetBookName": null,
+      "amount": 2000000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 47
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "道路企画デジタル運営経費",
+      "budgetBookName": null,
+      "amount": 3217,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 47
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "道路維持修繕事業",
+      "budgetBookName": null,
+      "amount": 10343345,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 47
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "橋りょう耐震補強事業",
+      "budgetBookName": null,
+      "amount": 1975296,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 47
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "無電柱化推進事業",
+      "budgetBookName": null,
+      "amount": 38000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 47
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "自転車等対策事業",
+      "budgetBookName": null,
+      "amount": 268899,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 47
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "浜松駅周辺自転車等駐車場指定管理導入事業（債務負担行為）",
+      "budgetBookName": null,
+      "amount": 213000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 48
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "河川管理対策事業",
+      "budgetBookName": null,
+      "amount": 267347,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 48
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "河川改良事業",
+      "budgetBookName": null,
+      "amount": 2775530,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 48
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "雨水流出抑制施設整備事業",
+      "budgetBookName": null,
+      "amount": 60000,
+      "description": "※河川改良事業2,775,530千円の一部50,000千円小学校施設整備事業4,675,691千円の一部10,000千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 48
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "河川維持修繕事業",
+      "budgetBookName": null,
+      "amount": 1252033,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 48
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "都市計画道路整備事業",
+      "budgetBookName": null,
+      "amount": 890060,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 48
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "水防施設等整備事業",
+      "budgetBookName": null,
+      "amount": 181497,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 49
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防庁舎整備事業",
+      "budgetBookName": null,
+      "amount": 197360,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 50
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "中消防署高台出張所建設事業",
+      "budgetBookName": null,
+      "amount": 44888,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 50
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "南消防署・浜松第41分団・可美市民サービスセンター複合施設建設事業",
+      "budgetBookName": null,
+      "amount": 103570,
+      "description": "※南消防署・浜松第41分団等複合施設建設事業891千円サービスセンター施設整備事業102,679千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 50
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "北消防署引佐出張所・引佐第3分団伊平建設事業",
+      "budgetBookName": null,
+      "amount": 157100,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 50
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "立入検査等指導事業",
+      "budgetBookName": null,
+      "amount": 4141,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 50
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "火災予防思想普及啓発事業",
+      "budgetBookName": null,
+      "amount": 4074,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 50
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防車両維持管理事業",
+      "budgetBookName": null,
+      "amount": 125718,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 50
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防車両大規模点検整備事業",
+      "budgetBookName": null,
+      "amount": 38361,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 51
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防車両購入事業",
+      "budgetBookName": null,
+      "amount": 338378,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 51
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "地震対策消防水利整備事業",
+      "budgetBookName": null,
+      "amount": 69755,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 51
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "高規格救急自動車への電動ストレッチャー導入事業",
+      "budgetBookName": null,
+      "amount": 191445,
+      "description": "※救急車両購入事業144,765千円の合計基地周辺整備事業160,543千円の一部46,680千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 51
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "救急普及啓発事業",
+      "budgetBookName": null,
+      "amount": 13421,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 51
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防ヘリコプター機体維持管理事業",
+      "budgetBookName": null,
+      "amount": 128903,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 51
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防航空隊安全運航事業",
+      "budgetBookName": null,
+      "amount": 11490,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 51
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防ヘリコプター整備事業",
+      "budgetBookName": null,
+      "amount": 84,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 51
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防救急デジタル無線システム再整備事業",
+      "budgetBookName": null,
+      "amount": 124,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 52
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防団運営経費",
+      "budgetBookName": null,
+      "amount": 11022,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 52
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "浄化槽助成事業",
+      "budgetBookName": null,
+      "amount": 180030,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 53
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "飲料水供給施設整備事業",
+      "budgetBookName": null,
+      "amount": 32197,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 53
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "生活用水応援事業",
+      "budgetBookName": null,
+      "amount": 7938,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 53
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "水道事業会計負担金（水道料金の減免）",
+      "budgetBookName": null,
+      "amount": 280000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 53
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "脱炭素経営推進事業",
+      "budgetBookName": null,
+      "amount": 362678,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 55
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "中小企業次世代自動車導入支援事業（補助金）",
+      "budgetBookName": null,
+      "amount": 62500,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 55
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "脱炭素型ライフスタイル推進事業",
+      "budgetBookName": null,
+      "amount": 196657,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 56
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "市有施設脱炭素化整備事業",
+      "budgetBookName": null,
+      "amount": 371654,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 56
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "西部清掃工場更新事業",
+      "budgetBookName": null,
+      "amount": 4672706,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 57
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "西部清掃工場運営事業",
+      "budgetBookName": null,
+      "amount": 2931672,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 57
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "衛生工場整備事業",
+      "budgetBookName": null,
+      "amount": 115192,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 57
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "旧施設整備除却事業",
+      "budgetBookName": null,
+      "amount": 129326,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 57
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "生ごみ減量推進事業",
+      "budgetBookName": null,
+      "amount": 12234,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 57
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "ごみ減量教育推進事業",
+      "budgetBookName": null,
+      "amount": 13401,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 58
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "ごみ収集事業",
+      "budgetBookName": null,
+      "amount": 2728175,
+      "description": "※一般廃棄物対策費1,207,000千円平和清掃事業所費1,055,745千円天竜清掃事業所費465,430千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 58
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "天竜清掃工場管理運営事業",
+      "budgetBookName": null,
+      "amount": 2061775,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 58
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "生物多様性保全推進事業",
+      "budgetBookName": null,
+      "amount": 36356,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 58
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "水質保全事業",
+      "budgetBookName": null,
+      "amount": 15599,
+      "description": "※公共用水域水質保全事業739千円地下水保全事業1,994千円佐鳴湖水質浄化事業4,514千円PFAS浄化対策事業7,500千円PFASモニタリング事業852千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 59
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "ユニバーサルデザイン推進事業",
+      "budgetBookName": null,
+      "amount": 7047,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 60
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "男女共同参画推進事業",
+      "budgetBookName": null,
+      "amount": 17933,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 60
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "協働センター等施設整備事業",
+      "budgetBookName": null,
+      "amount": 162732,
+      "description": "※協働センター等施設維持管理事業47,398千円協働センター等施設整備事業115,334千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 60
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "コミュニティ振興事業",
+      "budgetBookName": null,
+      "amount": 5631,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 60
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "自治会集会所省エネ設備導入事業（補助金）",
+      "budgetBookName": null,
+      "amount": 450000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 61
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "地域づくり推進事業",
+      "budgetBookName": null,
+      "amount": 1889,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 61
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "ハマライフ住宅取得費等助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 190000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 61
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "市内間交流事業",
+      "budgetBookName": null,
+      "amount": 16619,
+      "description": "※子ども中山間地域交流事業8,035千円中山間地域プロモーション事業6,000千円交流促進事業2,584千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 61
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "居住促進事業",
+      "budgetBookName": null,
+      "amount": 7123,
+      "description": "※ＷＥＬＣＯＭＥ集落事業4,100千円田舎暮らしお試し住宅事業1,023千円移住促進空き家活用事業2,000千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 61
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "生活支援事業",
+      "budgetBookName": null,
+      "amount": 74396,
+      "description": "※山里いきいき応援隊活動事業71,010千円中山間地域新たな仕事づくり研究事業1,986千円乗用モノレール整備等助成事業（補助金）1,400千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 62
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "中山間地域まちづくり事業",
+      "budgetBookName": null,
+      "amount": 100228,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 62
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "みんなの中山間地域応援事業",
+      "budgetBookName": null,
+      "amount": 22000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 62
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "中山間地域コミュニティビジネス等起業資金貸与事業",
+      "budgetBookName": null,
+      "amount": 4000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 62
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "地区コミュニティ協議会事業（補助金）",
+      "budgetBookName": null,
+      "amount": 750,
+      "description": "※中央区役所費450千円浜名区役所費250千円天竜区役所費50千円の合計所管課：中央区区振興課（457-2210）、東行政センター（424-0115）、",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 63
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "地域力向上事業",
+      "budgetBookName": null,
+      "amount": 101619,
+      "description": "※中央区役所費46,630千円浜名区役所費23,624千円天竜区役所費31,365千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 63
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "自治会振興事業",
+      "budgetBookName": null,
+      "amount": 271639,
+      "description": "※中央区役所費198,482千円浜名区役所費50,799千円天竜区役所費22,358千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 64
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "みんなで応援地域活性化事業",
+      "budgetBookName": null,
+      "amount": 6840,
+      "description": "※中央区役所費2,280千円浜名区役所費2,280千円天竜区役所費2,280千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 64
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "ローカルコープ構想推進事業",
+      "budgetBookName": null,
+      "amount": 29075,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 64
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "県立浜松湖北高等学校佐久間分校生徒支援事業",
+      "budgetBookName": null,
+      "amount": 10952,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 64
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "空家対策事業",
+      "budgetBookName": null,
+      "amount": 23387,
+      "description": "※空家対策事業20,387千円空家解体工事事業3,000千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 65
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "安全で安心なまちづくり支援事業",
+      "budgetBookName": null,
+      "amount": 4788,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 65
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "犯罪被害者等支援事業",
+      "budgetBookName": null,
+      "amount": 3127,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 65
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "基地周辺整備事業",
+      "budgetBookName": null,
+      "amount": 160543,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 65
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "浜松・雄踏斎場再整備事業",
+      "budgetBookName": null,
+      "amount": 1461109,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 66
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "民生委員児童委員協議会サポーター事業",
+      "budgetBookName": null,
+      "amount": 1299,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 67
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "社会福祉協議会地域福祉活動助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 340113,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 67
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "コミュニティソーシャルワーカー事業",
+      "budgetBookName": null,
+      "amount": 169168,
+      "description": "※コミュニティソーシャルワーカー事業137,758千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 67
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "地域福祉人材奨学金返済支援事業",
+      "budgetBookName": null,
+      "amount": 6605,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 67
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "在宅医療・介護連携拠点運営事業",
+      "budgetBookName": null,
+      "amount": 1242,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 68
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "戦没者慰霊碑除却事業",
+      "budgetBookName": null,
+      "amount": 3400,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 68
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "相談支援事業",
+      "budgetBookName": null,
+      "amount": 263710,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 68
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "地域支援事業",
+      "budgetBookName": null,
+      "amount": 51604,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 68
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "子どものこころの医学講座事業",
+      "budgetBookName": null,
+      "amount": 33000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 68
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "社会福祉施設整備費助成事業（改築・大規模修繕）",
+      "budgetBookName": null,
+      "amount": 1051101,
+      "description": "※障害者施設整備費助成事業（補助金）",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 69
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "社会福祉施設整備費助成事業（防災・減災対策等）",
+      "budgetBookName": null,
+      "amount": 398636,
+      "description": "※障害者施設整備費助成事業（補助金）",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 69
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "社会福祉施設等における物価高騰対策助成事業",
+      "budgetBookName": null,
+      "amount": 365663,
+      "description": "※障害福祉施設等物価高騰対策費助成事業（補助金）",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 70
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "障害者政策デジタル運営経費",
+      "budgetBookName": null,
+      "amount": 24350,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 70
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "障害者（児）自立支援給付事業",
+      "budgetBookName": null,
+      "amount": 29973523,
+      "description": "※（者）介護給付等事業19,886,858千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 70
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "障害者（児）日常生活用具費助成事業",
+      "budgetBookName": null,
+      "amount": 193415,
+      "description": "※障害者日常生活用具費助成事業169,895千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 71
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "重度障害者医療費助成事業",
+      "budgetBookName": null,
+      "amount": 1632375,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 71
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "PMH導入対応改修事業",
+      "budgetBookName": null,
+      "amount": 16720,
+      "description": "※障害者支援デジタル運営経費",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 71
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "はままつ友愛の高齢者プラン策定事業",
+      "budgetBookName": null,
+      "amount": 3246,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 71
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "高齢者緊急通報システム事業",
+      "budgetBookName": null,
+      "amount": 27943,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 72
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "高齢者補聴器装用検証事業",
+      "budgetBookName": null,
+      "amount": 3102,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 72
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "ロコモーショントレーニング事業",
+      "budgetBookName": null,
+      "amount": 103398,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 72
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "保育所等巡回支援事業",
+      "budgetBookName": null,
+      "amount": 59252,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 72
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "障害児施設経営改善事業費助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 16947,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 72
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "重度障害児医療費助成事業",
+      "budgetBookName": null,
+      "amount": 215847,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 73
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "後期高齢者健診事業",
+      "budgetBookName": null,
+      "amount": 505414,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 73
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "中山間地域介護サービス利用支援事業",
+      "budgetBookName": null,
+      "amount": 48879,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 73
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "介護人材確保対策事業",
+      "budgetBookName": null,
+      "amount": 28212,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 73
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "成育医療寄附講座事業（負担金）",
+      "budgetBookName": null,
+      "amount": 33000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 75
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "救急医療推進事業",
+      "budgetBookName": null,
+      "amount": 144516,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 75
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "休日救急医療事業",
+      "budgetBookName": null,
+      "amount": 67972,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 75
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "二次救急病院物価高騰対策支援事業",
+      "budgetBookName": null,
+      "amount": 260000,
+      "description": "※（新規）二次救急病院物価高騰対策支援事業（補助金）",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 75
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "在宅医療ＩＣＴ推進事業",
+      "budgetBookName": null,
+      "amount": 7500,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 76
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "中山間地域医療支援事業",
+      "budgetBookName": null,
+      "amount": 17710,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 76
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "自殺対策推進事業",
+      "budgetBookName": null,
+      "amount": 37683,
+      "description": "※自殺対策推進事業（健康医療総務費）702千円自殺対策推進事業（精神保健福祉センター費）36,981千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 76
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "ひきこもり対策推進事業",
+      "budgetBookName": null,
+      "amount": 31486,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 76
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "学校管理運営事業",
+      "budgetBookName": null,
+      "amount": 80437,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 76
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "食中毒、感染症検査事業",
+      "budgetBookName": null,
+      "amount": 19708,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 76
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "妊産婦乳幼児健康診査事業",
+      "budgetBookName": null,
+      "amount": 763440,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 77
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "妊娠期健康講座事業",
+      "budgetBookName": null,
+      "amount": 4474,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 77
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "産後ケア事業",
+      "budgetBookName": null,
+      "amount": 60840,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 77
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "妊婦支援給付事業",
+      "budgetBookName": null,
+      "amount": 580366,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 77
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "不妊治療先進医療費等支援事業",
+      "budgetBookName": null,
+      "amount": 31713,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 77
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "小児慢性特定疾病対策事業",
+      "budgetBookName": null,
+      "amount": 253562,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 77
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "難病患者等支援事業",
+      "budgetBookName": null,
+      "amount": 1657154,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 78
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "がん検診等事業",
+      "budgetBookName": null,
+      "amount": 1604057,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 78
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "医療体制充実事業",
+      "budgetBookName": null,
+      "amount": 5153,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 78
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "母子予防接種事業",
+      "budgetBookName": null,
+      "amount": 1763189,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 78
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "成人予防接種事業",
+      "budgetBookName": null,
+      "amount": 1397611,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 78
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "感染症対策事業",
+      "budgetBookName": null,
+      "amount": 9401,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 79
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "特定感染症対策事業",
+      "budgetBookName": null,
+      "amount": 2622,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 79
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "動物愛護推進事業",
+      "budgetBookName": null,
+      "amount": 30219,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 79
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "浜松ウエルネスプロジェクト事業",
+      "budgetBookName": null,
+      "amount": 25747,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 80
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "浜松国際ピアノコンクール事業",
+      "budgetBookName": null,
+      "amount": 14014,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 81
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "静岡国際オペラコンクール共催事業（負担金）",
+      "budgetBookName": null,
+      "amount": 16460,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 81
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "浜松版アーツカウンシル事業",
+      "budgetBookName": null,
+      "amount": 42932,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 81
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "企業と共催する音楽事業（負担金）",
+      "budgetBookName": null,
+      "amount": 10000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 81
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "文化芸術振興事業",
+      "budgetBookName": null,
+      "amount": 51292,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 81
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "アクトシティ音楽院事業",
+      "budgetBookName": null,
+      "amount": 46862,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 82
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "こども音楽鑑賞教室開催事業（負担金）",
+      "budgetBookName": null,
+      "amount": 44582,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 82
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "音楽のあふれるまちづくり発信事業",
+      "budgetBookName": null,
+      "amount": 10476,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 82
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "アクトシティ浜松施設整備事業",
+      "budgetBookName": null,
+      "amount": 1754347,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 82
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "文化施設整備事業",
+      "budgetBookName": null,
+      "amount": 86005,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 82
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "講座等開催事業",
+      "budgetBookName": null,
+      "amount": 52434,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 82
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "子どもの才能を伸ばす課外講座開催事業（負担金）",
+      "budgetBookName": null,
+      "amount": 13351,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 83
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "生涯学習施設整備事業",
+      "budgetBookName": null,
+      "amount": 870466,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 83
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "文化財環境保全・施設整備事業",
+      "budgetBookName": null,
+      "amount": 33678,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 83
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "無形民俗文化財活性化事業",
+      "budgetBookName": null,
+      "amount": 3800,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 83
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "史跡等整備活用事業",
+      "budgetBookName": null,
+      "amount": 26432,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 83
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "図書館管理運営事業",
+      "budgetBookName": null,
+      "amount": 122906,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 83
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "遺跡公園運営事業施設整備事業",
+      "budgetBookName": null,
+      "amount": 61346,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 84
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "博物館所蔵重要文化財等保存活用事業",
+      "budgetBookName": null,
+      "amount": 4803,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 84
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "新美術館整備事業",
+      "budgetBookName": null,
+      "amount": 18939,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 84
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "美術館及び秋野不矩美術館展覧会",
+      "budgetBookName": null,
+      "amount": 145267,
+      "description": "※平常展開催事業3,424千円の一部3,274千円企画展開催事業46,715千円の一部45,766千円特別展開催事業（負担金）22,937千円秋野不矩美術館管理運営事業73,304千円の一部73,290千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 84
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "スポーツイベント等誘致事業",
+      "budgetBookName": null,
+      "amount": 15053,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 85
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "アジア競技大会交流発信事業",
+      "budgetBookName": null,
+      "amount": 7604,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 85
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "小中学校スポーツ施設開放支援事業",
+      "budgetBookName": null,
+      "amount": 36939,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 85
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "総合水泳場管理運営事業",
+      "budgetBookName": null,
+      "amount": 604775,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 85
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "江之島ビーチコート等管理運営事業",
+      "budgetBookName": null,
+      "amount": 1359416,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 85
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "スポーツ施設整備事業",
+      "budgetBookName": null,
+      "amount": 1594121,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 86
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "広聴事業",
+      "budgetBookName": null,
+      "amount": 9803,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 87
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "市政広報事業",
+      "budgetBookName": null,
+      "amount": 179633,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 87
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "総合計画推進事業",
+      "budgetBookName": null,
+      "amount": 40576,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 87
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "総合戦略推進事業",
+      "budgetBookName": null,
+      "amount": 422,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 87
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "企業版ふるさと納税推進事業",
+      "budgetBookName": null,
+      "amount": 4730,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 88
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "地方創生SDGsパートナーシップ推進事業",
+      "budgetBookName": null,
+      "amount": 3375,
+      "description": "※ＳＤＧｓ推進事業8,046千円の一部3,375千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 88
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "徳川家ゆかりの資料展示収蔵施設整備事業",
+      "budgetBookName": null,
+      "amount": 116,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 88
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "遠州灘海浜公園篠原地区道の駅整備事業",
+      "budgetBookName": null,
+      "amount": 70301,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 88
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "大都市制度調査研究事業",
+      "budgetBookName": null,
+      "amount": 7383,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 88
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "広域行政推進事業",
+      "budgetBookName": null,
+      "amount": 4081,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 88
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "教育・若者連携推進事業",
+      "budgetBookName": null,
+      "amount": 10320,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 89
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "多文化共生センター運営事業",
+      "budgetBookName": null,
+      "amount": 85787,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 89
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "外国人集住都市会議事業",
+      "budgetBookName": null,
+      "amount": 1960,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 89
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "外国人学校支援事業",
+      "budgetBookName": null,
+      "amount": 10727,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 89
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "定住外国人の子供の就学促進事業",
+      "budgetBookName": null,
+      "amount": 45120,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 89
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "多文化共生都市ビジョン策定事業",
+      "budgetBookName": null,
+      "amount": 4296,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 90
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "外国人材活躍促進事業",
+      "budgetBookName": null,
+      "amount": 15741,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 90
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "国際機関への参加と都市間連携事業",
+      "budgetBookName": null,
+      "amount": 17769,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 90
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "国際交流推進助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 7000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 90
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "姉妹都市等連携記念事業",
+      "budgetBookName": null,
+      "amount": 4648,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 90
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "首都圏情報収集発信事業",
+      "budgetBookName": null,
+      "amount": 13463,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 90
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "政策調整事業",
+      "budgetBookName": null,
+      "amount": 10000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 91
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "人材開発推進事業",
+      "budgetBookName": null,
+      "amount": 93442,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 91
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "職員の健康、安全衛生管理事業",
+      "budgetBookName": null,
+      "amount": 136069,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 91
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "職員の被服貸与、福利厚生事業",
+      "budgetBookName": null,
+      "amount": 23133,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 91
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "公文書管理事業",
+      "budgetBookName": null,
+      "amount": 37916,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 91
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "経営改革推進事業",
+      "budgetBookName": null,
+      "amount": 1026,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 91
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "外部監査委託事業",
+      "budgetBookName": null,
+      "amount": 14636,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 91
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "県債償還金負担金",
+      "budgetBookName": null,
+      "amount": 1650736,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 92
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "アセットマネジメント推進事業",
+      "budgetBookName": null,
+      "amount": 5000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 92
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "公有財産維持管理事業",
+      "budgetBookName": null,
+      "amount": 362021,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 92
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "庁舎等整備事業",
+      "budgetBookName": null,
+      "amount": 922081,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 92
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "調達デジタル運営経費",
+      "budgetBookName": null,
+      "amount": 1563,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 92
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "職員技術研修事業",
+      "budgetBookName": null,
+      "amount": 2198,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 92
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "技術監理運営経費",
+      "budgetBookName": null,
+      "amount": 7324,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 92
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "公共建築物長寿命化推進事業",
+      "budgetBookName": null,
+      "amount": 2485084,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 93
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "南陽図書館大規模改修事業",
+      "budgetBookName": null,
+      "amount": 39236,
+      "description": "※公共建築物長寿命化推進事業2,485,084千円の一部図書館運営事業図書館管理運営事業122,906千円の一部図書館運営事業施設整備事業199,350千円の一部6,348千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 93
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "公共建築物耐震化推進事業",
+      "budgetBookName": null,
+      "amount": 590870,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 93
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "公共建築物ユニバーサルデザイン推進事業",
+      "budgetBookName": null,
+      "amount": 56169,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 93
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "市税収納事業",
+      "budgetBookName": null,
+      "amount": 25142,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 94
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "市民税等課税事業",
+      "budgetBookName": null,
+      "amount": 222389,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 94
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "地方税滞納整理機構負担金（負担金）",
+      "budgetBookName": null,
+      "amount": 13091,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 94
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "固定資産税等課税事業",
+      "budgetBookName": null,
+      "amount": 91992,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 94
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "固定資産税等評価替事業",
+      "budgetBookName": null,
+      "amount": 253188,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 94
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "固定資産税等デジタル運営経費",
+      "budgetBookName": null,
+      "amount": 223065,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 94
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "滞納整理事業",
+      "budgetBookName": null,
+      "amount": 34575,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 94
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "住民情報系システム維持管理事業",
+      "budgetBookName": null,
+      "amount": 1925271,
+      "description": "※住民情報系システム維持管理事業1,901,181千円住民情報系システム整備事業24,090千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 95
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "庁内事務系システム維持管理事業",
+      "budgetBookName": null,
+      "amount": 336385,
+      "description": "※庁内事務系システム維持管理事業331,792千円庁内事務系システム整備事業4,593千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 95
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "ネットワーク等維持管理事業",
+      "budgetBookName": null,
+      "amount": 2333756,
+      "description": "※ネットワーク等維持管理事業906,253千円ネットワーク等整備事業1,427,503千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 95
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "デジタル・スマートシティ推進事業",
+      "budgetBookName": null,
+      "amount": 22314,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 95
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "浜松版ＭａａＳ推進事業",
+      "budgetBookName": null,
+      "amount": 5705,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 96
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "デジタル・ガバメント推進事業",
+      "budgetBookName": null,
+      "amount": 90664,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 96
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "デジタル業務改革推進事業",
+      "budgetBookName": null,
+      "amount": 10202,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 96
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "電話交換システム更新事業",
+      "budgetBookName": null,
+      "amount": 3980,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 96
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "指定金融機関等事務取扱手数料",
+      "budgetBookName": null,
+      "amount": 143928,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 97
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "地方税共同機構負担金（負担金）",
+      "budgetBookName": null,
+      "amount": 5998,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 97
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "統一地方選挙",
+      "budgetBookName": null,
+      "amount": 316760,
+      "description": "※（選挙費）職員人件費37,141千円（選挙費）投票管理者、選挙長、立会人報酬1,123千円（選挙費）会計年度任用職員3,544千円（選挙費）投票及び開票事業257,037千円（選挙費）投票及び開票事業デジタル運営経費17,915千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 97
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "人事委員会事業",
+      "budgetBookName": null,
+      "amount": 25508,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 97
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "監査執行事業",
+      "budgetBookName": null,
+      "amount": 4878,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_syuyojigyo08.pdf",
+        "page": 97
       }
     }
   ]

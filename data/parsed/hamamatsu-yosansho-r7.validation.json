@@ -1,6 +1,11 @@
 {
   "sourceId": "hamamatsu-yosansho-r7",
-  "validatedAt": "2026-07-15T18:59:31.910Z",
+  "validatedAt": "2026-07-22T17:46:33.726Z",
   "status": "ok",
-  "issues": []
+  "issues": [
+    {
+      "level": "warning",
+      "message": "事業「市立幼稚園中山間地域満3歳児受入の試行事業」: 予算額が0（原典どおりか確認）"
+    }
+  ]
 }

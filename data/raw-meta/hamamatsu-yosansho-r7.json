@@ -5,8 +5,15 @@
       "filename": "l_yosansetsumeisho.pdf",
       "sha256": "f6ee12b22aefb775274aed90a07e8692f833f59aace7d73fa06b70fc6d289132",
       "bytes": 1337810,
-      "fetchedAt": "2026-07-15T18:15:15.781Z",
+      "fetchedAt": "2026-07-22T17:45:14.968Z",
       "fetchedFrom": "https://www.city.hamamatsu.shizuoka.jp/documents/164874/l_yosansetsumeisho.pdf"
+    },
+    {
+      "filename": "02_bunyabetsu.pdf",
+      "sha256": "7ba7bd38ba4fd45fc09c07c59b99d9895e6a8d40e97bf3de9005837e3f6095ac",
+      "bytes": 1037585,
+      "fetchedAt": "2026-07-22T17:45:15.014Z",
+      "fetchedFrom": "https://www.city.hamamatsu.shizuoka.jp/documents/164874/02_bunyabetsu.pdf"
     }
   ]
 }

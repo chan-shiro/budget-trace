@@ -549,9 +549,19 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.hamamatsu.shizuoka.jp/documents/171794/22_setumeisho08.pdf",
     "license": "本Webサイトで掲載している、情報・文章・画像などの全てのコンテンツデータについては、「私的使用のための複製」や「引用」といった、著作権法上認められた場合を除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。"
   },
+  "/sources/hamamatsu-yosansho-r8/02_syuyojigyo08.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hamamatsu.shizuoka.jp/documents/171794/02_syuyojigyo08.pdf",
+    "license": "本Webサイトで掲載している、情報・文章・画像などの全てのコンテンツデータについては、「私的使用のための複製」や「引用」といった、著作権法上認められた場合を除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。"
+  },
   "/sources/hamamatsu-yosansho-r7/l_yosansetsumeisho.pdf": {
     "mode": "origin",
     "href": "https://www.city.hamamatsu.shizuoka.jp/documents/164874/l_yosansetsumeisho.pdf",
+    "license": "本Webサイトで掲載している、情報・文章・画像などの全てのコンテンツデータについては、「私的使用のための複製」や「引用」といった、著作権法上認められた場合を除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。"
+  },
+  "/sources/hamamatsu-yosansho-r7/02_bunyabetsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hamamatsu.shizuoka.jp/documents/164874/02_bunyabetsu.pdf",
     "license": "本Webサイトで掲載している、情報・文章・画像などの全てのコンテンツデータについては、「私的使用のための複製」や「引用」といった、著作権法上認められた場合を除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。"
   },
   "/sources/hamamatsu-yosansho-r6/l-setumeishoippan.pdf": {
