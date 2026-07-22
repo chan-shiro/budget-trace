@@ -8,7 +8,7 @@
 
 このリポジトリは、Claude Design で作成された HTML/CSS/JS プロトタイプ
 （`project/予算トレース.dc.html`）を **Next.js + React + TypeScript** で本実装した
-ものです。デザインの元データと会話ログは `project/` と `chats/` に残しています。
+ものです。デザインの元データは `project/` に残しています（会話ログは git 履歴にのみ残る）。
 
 ## 主な機能
 
@@ -54,7 +54,7 @@ src/
   test/                  Testcontainers ヘルパ / fixtures（現状スケルトン）
 docs/                  アーキテクチャ規約
 public/mapdata/        同梱した地図形状データ（SVG + 47都道府県の市区町村 GeoJSON）
-project/, chats/       元となった Claude Design のプロトタイプと会話ログ（参考）
+project/               元となった Claude Design のプロトタイプ（参考）
 ```
 
 ## 開発
