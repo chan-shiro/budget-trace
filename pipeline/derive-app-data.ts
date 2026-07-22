@@ -1984,6 +1984,11 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     })),
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
+    // 東京都（2026-07-22 追加・#124）。予算概要CSV（H29〜R8 の10年）。PDF は全経路パース不可のため
+    // CSV が唯一の経路（registry のコメント参照）。歳出は款再編が2回（R5・R6）あり款名結合が切れる。
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29"] as const).map((fy) => ({
+      srcId: `tokyo-yosangaiyou-${fy}`, muniCode: "130001", muniName: "東京都", prefName: "東京都", isPref: true,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。
@@ -2328,6 +2333,7 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
     "kofu-yosansho": "ダッシュボード／款別ドリルダウン／前年比較",
     "osaka-yosansho": "ダッシュボード／款別ドリルダウン／前年比較",
     "hiroshima-yosansho": "ダッシュボード／款別ドリルダウン／前年比較",
+    "tokyo-yosangaiyou-csv": "ダッシュボード／款別ドリルダウン／前年比較",
     "soumu-shichoson-kessan": "全市町村の決算ダッシュボード／款別・歳入内訳／1人あたり／類似自治体比較",
     "soumu-shichoson-seishitsu": "財政指標／性質別歳出",
     "kofu-kessan-syousai": "予算執行状況（決算・確定値）",

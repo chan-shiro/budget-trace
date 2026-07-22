@@ -89,6 +89,24 @@ const rawBytesOf = (sourceId: string, url: string) =>
   readRawMeta(sourceId)?.files.find((f) => f.filename === filenameOf(url))?.bytes;
 
 /**
+ * sha256 照合の対象か。**registry の `kind` を正とする**（2026-07-23・#124 東京都で発見）。
+ * 以前は URL の拡張子（VERIFIABLE_RE）だけで判定していたため、**拡張子の無い静的ファイル URL**
+ * （東京都の Liferay 配信 `documents/d/zaimu/08-03sainyukanbetsu` ＝中身は CSV）が HTML 扱いで
+ * **照合ごとスキップ**されていた。しかも健康診断も同じ正規表現を使うので、**「魚拓はあるが未照合」の
+ * 7件が診断にも映らない**＝§9o の穴が判定の内側に空いていた型。
+ * - `page`（HTML）は設計どおり照合しない（テンプレート差で揺れる）
+ * - `pdf`/`csv`/`excel` は**拡張子に関係なく**照合する
+ * - registry から消えたソースが台帳に残っている場合は従来どおり拡張子で判定（フォールバック）
+ * ⚠ §9o: **verifySnapshot と末尾の健康診断は必ずこの同じ関数を使う**こと（別々に持つと恒久ノイズ）。
+ */
+const SRC_KIND = new Map(SOURCES.map((s) => [s.id, s.kind]));
+const isVerifiable = (sourceId: string, url: string): boolean => {
+  const kind = SRC_KIND.get(sourceId);
+  if (kind == null) return VERIFIABLE_RE.test(filenameOf(url));
+  return kind !== "page";
+};
+
+/**
  * コピーが raw（私たちが parse した版）と同一バイト列かを sha256 で突合する（file のみ）。
  * Wayback の `id_` 付き URL は原本のバイト列をそのまま返す。
  * 上書き型 URL の古いスナップショットを現行版と誤認する事故を検出できる
@@ -100,8 +118,9 @@ const rawBytesOf = (sourceId: string, url: string) =>
 async function verifySnapshot(sourceId: string, url: string, timestamp: string): Promise<VerifyResult> {
   const filename = filenameOf(url);
   // HTML ページはテンプレート差（トークン・広告タグ等）で取得時刻によりバイト列が
-  // 揺れるため sha 突合の対象外（静的ファイルのみ検証する）＝設計どおりの skipped
-  if (!VERIFIABLE_RE.test(filename)) return { status: "skipped" };
+  // 揺れるため sha 突合の対象外（静的ファイルのみ検証する）＝設計どおりの skipped。
+  // 判定は registry の kind（isVerifiable）— 拡張子の無い静的ファイル URL を取りこぼさない
+  if (!isVerifiable(sourceId, url)) return { status: "skipped" };
   const meta = readRawMeta(sourceId);
   if (!meta) return { status: "failed", reason: "raw-meta が無い（未 fetch）" };
   const raw = meta.files.find((f) => f.filename === filename);
@@ -392,7 +411,7 @@ console.log(`新規登録 ${saved} / 登録済み ${already} / 未確認 ${faile
 {
   // ⚠ 対象は `verifySnapshot` が実際に照合する種別だけ（VERIFIABLE_RE を共有している理由は
   // 定数側のコメントを参照）。
-  const files = final.filter((e) => e.kind === "file" && VERIFIABLE_RE.test(filenameOf(e.url)));
+  const files = final.filter((e) => e.kind === "file" && isVerifiable(e.sourceId, e.url));
   // 未照合＝「照合できなかった（sha256Verified: false）」＋「一度も照合が走っていない
   // （フィールドごと無い）」。**どちらも「魚拓の中身を誰も見ていない」ことに変わりはない**ので
   // 同じ穴として出す（区別は台帳のフィールドが持つ）。

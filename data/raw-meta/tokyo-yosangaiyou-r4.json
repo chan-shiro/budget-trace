@@ -1,0 +1,19 @@
+{
+  "sourceId": "tokyo-yosangaiyou-r4",
+  "files": [
+    {
+      "filename": "03sainyukanbetsu.csv",
+      "sha256": "249923611836cd57d0a12b3cf10ce972df8f47b8ae665f9dedbdcdbbe1cc830c",
+      "bytes": 626,
+      "fetchedAt": "2026-07-22T08:53:50.354Z",
+      "fetchedFrom": "https://www.zaimu1.metro.tokyo.lg.jp/zaisei/dashboard/yosangaiyou04/03sainyukanbetsu.csv"
+    },
+    {
+      "filename": "04saishutsukanbetsu.csv",
+      "sha256": "37befe01793e579614b87e68eb626cc3a79d6eb40b65c6db3b30c34a76844087",
+      "bytes": 760,
+      "fetchedAt": "2026-07-22T08:53:50.429Z",
+      "fetchedFrom": "https://www.zaimu1.metro.tokyo.lg.jp/zaisei/dashboard/yosangaiyou04/04saishutsukanbetsu.csv"
+    }
+  ]
+}

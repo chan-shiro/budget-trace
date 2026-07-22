@@ -3229,6 +3229,94 @@ export const SOURCES: SourceEntry[] = [
   })),
 
   ...([
+    // 東京都（2026-07-22 追加・#124）。[年度, 歳入URL, 歳出URL, ランディング]
+    // **当初予算の PDF は3経路とも決定的パース不可**（説明書=スキャン+OCR の数字化け・
+    // 概要(案)=金額フォントの ToUnicode 欠落・成立後概要=全文字ベクターアウトライン。2026-07-22 実測）。
+    // **唯一の機械可読経路が「東京都予算概要CSVファイル集」**（Power BI ダッシュボード）の素の CSV。
+    // URL は**ダッシュボードの公開埋め込み API（querydata）からデータセットの URL 列を直接取得**した
+    // （UI の年度スライサーが指す全年度分。H30 はダッシュボード未掲載だが命名パターンから発見）。
+    // ⚠ **URL の体系がサイト改修のたびに変わっている**（syukei1/…/31opendata → 2opendata →
+    //    zaisei/dashboard/yosangaiyouNN → documents/d/zaimu/NN-…）。**外挿できない**。
+    // ⚠ 2019〜2022（H31〜R4）の**歳出だけ合計行のラベルが空**（`,7461000000,…`）— パーサが対応済み。
+    // 款体系: 歳入14款は全year不変（地方交付税なし=不交付団体・繰越金は名目1千円）。
+    //   **歳出は款再編が2回**（R5: 生活文化スポーツ費→生活文化費+α で17款 / R6: 福祉保健費→
+    //   福祉費+保健医療費で18款）＝年度をまたぐ款名結合はここで切れる。款番号列が無いので
+    //   kanNo は全件 null（広島 §8 と同じ「捏造しない」）。
+    ["R8", "https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/08-03sainyukanbetsu",
+      "https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/08-04saishutsukanbetsu",
+      "https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/r8"],
+    ["R7", "https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/07-03sainyukanbetsu",
+      "https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/07-04saishutsukanbetsu",
+      "https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/r7"],
+    ["R6", "https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/06-03sainyukanbetsu",
+      "https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/06-04saishutsukanbetsu",
+      "https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/r6"],
+    ["R5", "https://www.zaimu1.metro.tokyo.lg.jp/zaisei/dashboard/yosangaiyou05/03sainyukanbetsu.csv",
+      "https://www.zaimu1.metro.tokyo.lg.jp/zaisei/dashboard/yosangaiyou05/04saishutsukanbetsu.csv",
+      "https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/r5"],
+    ["R4", "https://www.zaimu1.metro.tokyo.lg.jp/zaisei/dashboard/yosangaiyou04/03sainyukanbetsu.csv",
+      "https://www.zaimu1.metro.tokyo.lg.jp/zaisei/dashboard/yosangaiyou04/04saishutsukanbetsu.csv",
+      "https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/r4"],
+    ["R3", "https://www.zaimu1.metro.tokyo.lg.jp/syukei1/zaisei/3opendata/03sainyukanbetsu.csv",
+      "https://www.zaimu1.metro.tokyo.lg.jp/syukei1/zaisei/3opendata/04saishutsukanbetsu.csv",
+      "https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/r3"],
+    ["R2", "https://www.zaimu1.metro.tokyo.lg.jp/syukei1/zaisei/2opendata/03sainyukanbetsu.csv",
+      "https://www.zaimu1.metro.tokyo.lg.jp/syukei1/zaisei/2opendata/04saishutsukanbetsu.csv",
+      "https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/r2"],
+    ["H31", "https://www.zaimu1.metro.tokyo.lg.jp/syukei1/zaisei/31opendata/03sainyukanbetsu.csv",
+      "https://www.zaimu1.metro.tokyo.lg.jp/syukei1/zaisei/31opendata/04saishutsukanbetsu.csv",
+      "https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/h31"],
+    // H30 はダッシュボード未掲載（年度スライサーは 2019〜）だが、H31 と同じ命名の 30opendata が
+    // 現存する（2026-07-22 実測・200）。ランディングは CSVファイル集を配るページ（/zaisei/yosan/h30 は 404）。
+    ["H30", "https://www.zaimu1.metro.tokyo.lg.jp/syukei1/zaisei/30opendata/03sainyukanbetsu.csv",
+      "https://www.zaimu1.metro.tokyo.lg.jp/syukei1/zaisei/30opendata/04saishutsukanbetsu.csv",
+      "https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/r8/8yosangaiyounituite/"],
+  ] as const).map(([fy, revUrl, expUrl, landing]) => ({
+    // 東京都（都道府県・団体コード 130001）。「予算概要」付表3・4 の款別CSV（cp932・千円・
+    // 前年当初比較つき）。パーサ側で当年度列の見出しと fiscalYear を突合する（URL 改編で
+    // 別年度を静かに掴む事故を止める）。Σ款=合計行は 10年×2側×2列の40系統すべて差0（収録時実測）。
+    id: `tokyo-yosangaiyou-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 東京都予算概要 一般会計歳入・歳出予算款別内訳（CSV）`,
+    publisher: "東京都財務局",
+    url: null,
+    urls: [revUrl, expUrl],
+    landingPage: landing,
+    kind: "csv" as const,
+    fiscalYear: fy,
+    scope: "東京都（一般会計・都道府県・団体コード130001）",
+    // 財務局サイトポリシー /policy/「第１ 著作権について」（確認日 2026-07-22）。原文のまま。
+    // 都オープンデータカタログの財務局（t000004）に H30〜R8 の款別CSVは非登載（実検索）＝
+    // カタログの CC BY は及ばない（登載済みは H29 予算概要系と見える化ボードCSVのみ・§9g）。
+    license:
+      "当サイトに掲載されている著作物の著作権は、東京都及びその他の第三者が所有しています。「私的使用のための複製」や「引用」など著作権法上で著作権者の許諾が不要とされている場合を除き、著作物の無断複製・転用することはできません。なお、引用する場合には引用元として「東京都財務局出典」と明記してください。",
+    parser: "tokyo-yosangaiyou-csv" as const,
+    parserOptions: {},
+  })),
+
+  {
+    // 東京都 H29（2026-07-22 追加・#124）。オープンデータカタログ「平成29年度予算概要①」
+    // （t000004d1700000001・**CC BY 4.0**＝registry で数少ない真正 open）。上の CSVファイル集とは
+    // **列形式が違う**（番号,区分,２９予算額(千円),構成比,２８予算額(千円),構成比,増減額,増減率＝
+    // 款番号列があるので kanNo を持てる。合計行は番号列に「合計」が入る変則）。パーサが両形式対応。
+    // ⚠ H28 以前は CSV が無い（29opendata は 404・カタログにも款別なし）＝**H29 が現存最古**。
+    id: "tokyo-yosangaiyou-h29",
+    title: "平成29年度 東京都予算概要 一般会計歳入・歳出予算款別内訳（CSV）",
+    publisher: "東京都財務局",
+    url: null,
+    urls: [
+      "https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/29yosangaiyou5_3-1",
+      "https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/29yosangaiyou5_4-1",
+    ],
+    landingPage: "https://catalog.data.metro.tokyo.lg.jp/dataset/t000004d1700000001",
+    kind: "csv" as const,
+    fiscalYear: "H29",
+    scope: "東京都（一般会計・都道府県・団体コード130001）",
+    license: "クリエイティブ・コモンズ 表示（CC BY） https://creativecommons.org/licenses/by/4.0/deed.ja",
+    parser: "tokyo-yosangaiyou-csv" as const,
+    parserOptions: {},
+  },
+
+  ...([
     // [年度, 歳入ページ(物理), 歳出ページ(物理), 直リンクURL]
     // ⚠ ファイル名に規則が無い: R8 はタイムスタンプ名 / R7 `yosannsyo`（syo）/ R6・R5
     //    `yosannsho`（sho）とローマ字転写が揺れ、R4 以前は旧パス

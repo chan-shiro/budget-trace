@@ -6170,6 +6170,276 @@
       "checkedAt": "2026-07-17T22:29:08.709Z"
     },
     {
+      "sourceId": "tokyo-yosangaiyou-h29",
+      "url": "https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/29yosangaiyou5_3-1",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260722094504/https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/29yosangaiyou5_3-1",
+      "waybackTimestamp": "20260722094504",
+      "checkedAt": "2026-07-22T16:06:27.645Z",
+      "sha256Match": true,
+      "waybackBytes": 887
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-h29",
+      "url": "https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/29yosangaiyou5_4-1",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260722094536/https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/29yosangaiyou5_4-1",
+      "waybackTimestamp": "20260722094536",
+      "checkedAt": "2026-07-22T09:46:16.200Z"
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-h30",
+      "url": "https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/r8/8yosangaiyounituite/",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260518130653/https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/r8/8yosangaiyounituite",
+      "waybackTimestamp": "20260518130653",
+      "checkedAt": "2026-07-22T09:44:53.587Z"
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-h30",
+      "url": "https://www.zaimu1.metro.tokyo.lg.jp/syukei1/zaisei/30opendata/03sainyukanbetsu.csv",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260722094356/https://www.zaimu1.metro.tokyo.lg.jp/syukei1/zaisei/30opendata/03sainyukanbetsu.csv",
+      "waybackTimestamp": "20260722094356",
+      "checkedAt": "2026-07-22T09:44:13.419Z",
+      "sha256Match": true,
+      "waybackBytes": 627
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-h30",
+      "url": "https://www.zaimu1.metro.tokyo.lg.jp/syukei1/zaisei/30opendata/04saishutsukanbetsu.csv",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260722094421/https://www.zaimu1.metro.tokyo.lg.jp/syukei1/zaisei/30opendata/04saishutsukanbetsu.csv",
+      "waybackTimestamp": "20260722094421",
+      "checkedAt": "2026-07-22T09:44:42.306Z",
+      "sha256Match": true,
+      "waybackBytes": 798
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-h31",
+      "url": "https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/h31",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260314201214/https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/h31",
+      "waybackTimestamp": "20260314201214",
+      "checkedAt": "2026-07-22T09:43:52.982Z"
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-h31",
+      "url": "https://www.zaimu1.metro.tokyo.lg.jp/syukei1/zaisei/31opendata/03sainyukanbetsu.csv",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260722094210/https://www.zaimu1.metro.tokyo.lg.jp/syukei1/zaisei/31opendata/03sainyukanbetsu.csv",
+      "waybackTimestamp": "20260722094210",
+      "checkedAt": "2026-07-22T09:42:54.407Z",
+      "sha256Match": true,
+      "waybackBytes": 628
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-h31",
+      "url": "https://www.zaimu1.metro.tokyo.lg.jp/syukei1/zaisei/31opendata/04saishutsukanbetsu.csv",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260722094306/https://www.zaimu1.metro.tokyo.lg.jp/syukei1/zaisei/31opendata/04saishutsukanbetsu.csv",
+      "waybackTimestamp": "20260722094306",
+      "checkedAt": "2026-07-22T09:43:24.626Z",
+      "sha256Match": true,
+      "waybackBytes": 795
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-r2",
+      "url": "https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/r2",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260421073945/https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/r2",
+      "waybackTimestamp": "20260421073945",
+      "checkedAt": "2026-07-22T09:41:19.897Z"
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-r2",
+      "url": "https://www.zaimu1.metro.tokyo.lg.jp/syukei1/zaisei/2opendata/03sainyukanbetsu.csv",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260722093928/https://www.zaimu1.metro.tokyo.lg.jp/syukei1/zaisei/2opendata/03sainyukanbetsu.csv",
+      "waybackTimestamp": "20260722093928",
+      "checkedAt": "2026-07-22T09:40:00.515Z",
+      "sha256Match": true,
+      "waybackBytes": 627
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-r2",
+      "url": "https://www.zaimu1.metro.tokyo.lg.jp/syukei1/zaisei/2opendata/04saishutsukanbetsu.csv",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260722094006/https://www.zaimu1.metro.tokyo.lg.jp/syukei1/zaisei/2opendata/04saishutsukanbetsu.csv",
+      "waybackTimestamp": "20260722094006",
+      "checkedAt": "2026-07-22T09:41:06.079Z",
+      "sha256Match": true,
+      "waybackBytes": 795
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-r3",
+      "url": "https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/r3",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260421074444/https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/r3/",
+      "waybackTimestamp": "20260421074444",
+      "checkedAt": "2026-07-22T16:03:49.440Z"
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-r3",
+      "url": "https://www.zaimu1.metro.tokyo.lg.jp/syukei1/zaisei/3opendata/03sainyukanbetsu.csv",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260722160252/https://www.zaimu1.metro.tokyo.lg.jp/syukei1/zaisei/3opendata/03sainyukanbetsu.csv",
+      "waybackTimestamp": "20260722160252",
+      "checkedAt": "2026-07-22T16:03:03.536Z",
+      "sha256Match": true,
+      "waybackBytes": 626
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-r3",
+      "url": "https://www.zaimu1.metro.tokyo.lg.jp/syukei1/zaisei/3opendata/04saishutsukanbetsu.csv",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260722160304/https://www.zaimu1.metro.tokyo.lg.jp/syukei1/zaisei/3opendata/04saishutsukanbetsu.csv",
+      "waybackTimestamp": "20260722160304",
+      "checkedAt": "2026-07-22T16:03:31.034Z",
+      "sha256Match": true,
+      "waybackBytes": 795
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-r4",
+      "url": "https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/r4",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260314193311/https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/r4",
+      "waybackTimestamp": "20260314193311",
+      "checkedAt": "2026-07-22T09:09:43.126Z"
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-r4",
+      "url": "https://www.zaimu1.metro.tokyo.lg.jp/zaisei/dashboard/yosangaiyou04/03sainyukanbetsu.csv",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260722090842/https://www.zaimu1.metro.tokyo.lg.jp/zaisei/dashboard/yosangaiyou04/03sainyukanbetsu.csv",
+      "waybackTimestamp": "20260722090842",
+      "checkedAt": "2026-07-22T09:09:05.365Z",
+      "sha256Match": true,
+      "waybackBytes": 626
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-r4",
+      "url": "https://www.zaimu1.metro.tokyo.lg.jp/zaisei/dashboard/yosangaiyou04/04saishutsukanbetsu.csv",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260722090910/https://www.zaimu1.metro.tokyo.lg.jp/zaisei/dashboard/yosangaiyou04/04saishutsukanbetsu.csv",
+      "waybackTimestamp": "20260722090910",
+      "checkedAt": "2026-07-22T09:09:41.157Z",
+      "sha256Match": true,
+      "waybackBytes": 760
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-r5",
+      "url": "https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/r5",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260314195712/https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/r5",
+      "waybackTimestamp": "20260314195712",
+      "checkedAt": "2026-07-22T09:08:12.492Z"
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-r5",
+      "url": "https://www.zaimu1.metro.tokyo.lg.jp/zaisei/dashboard/yosangaiyou05/03sainyukanbetsu.csv",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260722090626/https://www.zaimu1.metro.tokyo.lg.jp/zaisei/dashboard/yosangaiyou05/03sainyukanbetsu.csv",
+      "waybackTimestamp": "20260722090626",
+      "checkedAt": "2026-07-22T09:07:12.191Z",
+      "sha256Match": true,
+      "waybackBytes": 625
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-r5",
+      "url": "https://www.zaimu1.metro.tokyo.lg.jp/zaisei/dashboard/yosangaiyou05/04saishutsukanbetsu.csv",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260722090750/https://www.zaimu1.metro.tokyo.lg.jp/zaisei/dashboard/yosangaiyou05/04saishutsukanbetsu.csv",
+      "waybackTimestamp": "20260722090750",
+      "checkedAt": "2026-07-22T09:08:06.867Z",
+      "sha256Match": true,
+      "waybackBytes": 772
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-r6",
+      "url": "https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/06-03sainyukanbetsu",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260722090053/https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/06-03sainyukanbetsu",
+      "waybackTimestamp": "20260722090053",
+      "checkedAt": "2026-07-22T16:04:26.424Z",
+      "sha256Match": true,
+      "waybackBytes": 626
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-r6",
+      "url": "https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/06-04saishutsukanbetsu",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260722090437/https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/06-04saishutsukanbetsu",
+      "waybackTimestamp": "20260722090437",
+      "checkedAt": "2026-07-22T16:04:53.002Z",
+      "sha256Match": true,
+      "waybackBytes": 803
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-r6",
+      "url": "https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/r6",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260421074507/https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/r6",
+      "waybackTimestamp": "20260421074507",
+      "checkedAt": "2026-07-22T16:04:53.709Z"
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-r7",
+      "url": "https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/07-03sainyukanbetsu",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260722085847/https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/07-03sainyukanbetsu",
+      "waybackTimestamp": "20260722085847",
+      "checkedAt": "2026-07-22T16:04:57.227Z",
+      "sha256Match": true,
+      "waybackBytes": 610
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-r7",
+      "url": "https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/07-04saishutsukanbetsu",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260722090034/https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/07-04saishutsukanbetsu",
+      "waybackTimestamp": "20260722090034",
+      "checkedAt": "2026-07-22T16:04:59.387Z",
+      "sha256Match": true,
+      "waybackBytes": 777
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-r7",
+      "url": "https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/r7",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260516025856/https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/r7",
+      "waybackTimestamp": "20260516025856",
+      "checkedAt": "2026-07-22T16:05:26.594Z"
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-r8",
+      "url": "https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/08-03sainyukanbetsu",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260722085631/https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/08-03sainyukanbetsu",
+      "waybackTimestamp": "20260722085631",
+      "checkedAt": "2026-07-22T16:05:29.564Z",
+      "sha256Match": true,
+      "waybackBytes": 610
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-r8",
+      "url": "https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/08-04saishutsukanbetsu",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260722085712/https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/08-04saishutsukanbetsu",
+      "waybackTimestamp": "20260722085712",
+      "checkedAt": "2026-07-22T16:05:32.267Z",
+      "sha256Match": true,
+      "waybackBytes": 778
+    },
+    {
+      "sourceId": "tokyo-yosangaiyou-r8",
+      "url": "https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/r8",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260314193626/https://www.zaimu.metro.tokyo.lg.jp/zaisei/yosan/r8",
+      "waybackTimestamp": "20260314193626",
+      "checkedAt": "2026-07-22T16:05:49.827Z"
+    },
+    {
       "sourceId": "toshima-yosansho-r5",
       "url": "https://www.city.toshima.lg.jp/004/kuse/shisaku/yosan/1601131047.html",
       "kind": "landing",

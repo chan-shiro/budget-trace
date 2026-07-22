@@ -1,0 +1,19 @@
+{
+  "sourceId": "tokyo-yosangaiyou-h29",
+  "files": [
+    {
+      "filename": "29yosangaiyou5_3-1",
+      "sha256": "6d0c887396ec5bbda755ea18249f411864f068724e097b6fb95f8426856d6d8b",
+      "bytes": 887,
+      "fetchedAt": "2026-07-22T08:53:52.049Z",
+      "fetchedFrom": "https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/29yosangaiyou5_3-1"
+    },
+    {
+      "filename": "29yosangaiyou5_4-1",
+      "sha256": "a3bc89ecf60d45da8a09963c5476a1e0b013a6213ce40fed7d9747bd3d16ce51",
+      "bytes": 1124,
+      "fetchedAt": "2026-07-22T08:53:52.128Z",
+      "fetchedFrom": "https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/29yosangaiyou5_4-1"
+    }
+  ]
+}
