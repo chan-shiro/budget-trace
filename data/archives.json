@@ -6494,6 +6494,34 @@
       "checkedAt": "2026-07-22T07:32:26.920Z"
     },
     {
+      "sourceId": "taito-kanbetsu-h27",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/27yosananpoint.files/sainyuu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250805152940/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/27yosananpoint.files/sainyuu.pdf",
+      "waybackTimestamp": "20250805152940",
+      "checkedAt": "2026-07-23T00:49:54.654Z",
+      "sha256Match": true,
+      "waybackBytes": 124892
+    },
+    {
+      "sourceId": "taito-kanbetsu-h27",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/27yosananpoint.files/saishutu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20241108043610/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/27yosananpoint.files/saishutu.pdf",
+      "waybackTimestamp": "20241108043610",
+      "checkedAt": "2026-07-23T00:50:10.835Z",
+      "sha256Match": true,
+      "waybackBytes": 109634
+    },
+    {
+      "sourceId": "taito-kanbetsu-h27",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/27yosananpoint.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250909044303/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/27yosananpoint.html",
+      "waybackTimestamp": "20250909044303",
+      "checkedAt": "2026-07-23T00:51:08.845Z"
+    },
+    {
       "sourceId": "taito-kanbetsu-h28",
       "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/28point.files/30gaisansyo.pdf",
       "kind": "file",
@@ -6546,6 +6574,62 @@
       "waybackUrl": "https://web.archive.org/web/20250814021105/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/30yosanpoint.html",
       "waybackTimestamp": "20250814021105",
       "checkedAt": "2026-07-22T05:24:01.184Z"
+    },
+    {
+      "sourceId": "taito-kanbetsu-h31",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/31yosanannopointo.files/31gaisannshosainyuu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250802183613/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/31yosanannopointo.files/31gaisannshosainyuu.pdf",
+      "waybackTimestamp": "20250802183613",
+      "checkedAt": "2026-07-23T00:48:32.686Z",
+      "sha256Match": true,
+      "waybackBytes": 133919
+    },
+    {
+      "sourceId": "taito-kanbetsu-h31",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/31yosanannopointo.files/31gaisannshosaishutu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250727112846/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/31yosanannopointo.files/31gaisannshosaishutu.pdf",
+      "waybackTimestamp": "20250727112846",
+      "checkedAt": "2026-07-23T00:49:04.474Z",
+      "sha256Match": true,
+      "waybackBytes": 78353
+    },
+    {
+      "sourceId": "taito-kanbetsu-h31",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/31yosanannopointo.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260717222839/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/31yosanannopointo.html",
+      "waybackTimestamp": "20260717222839",
+      "checkedAt": "2026-07-23T00:49:15.201Z"
+    },
+    {
+      "sourceId": "taito-kanbetsu-r2",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/2yosanannopointo.files/2gaisansho_sainyuu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250807045550/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/2yosanannopointo.files/2gaisansho_sainyuu.pdf",
+      "waybackTimestamp": "20250807045550",
+      "checkedAt": "2026-07-23T00:47:31.845Z",
+      "sha256Match": true,
+      "waybackBytes": 138710
+    },
+    {
+      "sourceId": "taito-kanbetsu-r2",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/2yosanannopointo.files/2gaisansho_saishutu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250805073549/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/2yosanannopointo.files/2gaisansho_saishutu.pdf",
+      "waybackTimestamp": "20250805073549",
+      "checkedAt": "2026-07-23T00:47:45.393Z",
+      "sha256Match": true,
+      "waybackBytes": 82327
+    },
+    {
+      "sourceId": "taito-kanbetsu-r2",
+      "url": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/2yosanannopointo.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260717222839/https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/2yosanannopointo.html",
+      "waybackTimestamp": "20260717222839",
+      "checkedAt": "2026-07-23T00:47:49.960Z"
     },
     {
       "sourceId": "taito-kanbetsu-r3",

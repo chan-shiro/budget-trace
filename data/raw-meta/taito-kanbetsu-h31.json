@@ -1,0 +1,19 @@
+{
+  "sourceId": "taito-kanbetsu-h31",
+  "files": [
+    {
+      "filename": "31gaisannshosainyuu.pdf",
+      "sha256": "6b161500831a5650affcc3a5cb2aabd6660d2bb35fc3e4d829e71741a24a5967",
+      "bytes": 133919,
+      "fetchedAt": "2026-07-23T00:46:03.531Z",
+      "fetchedFrom": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/31yosanannopointo.files/31gaisannshosainyuu.pdf"
+    },
+    {
+      "filename": "31gaisannshosaishutu.pdf",
+      "sha256": "919d3d9a1259e928d3f5869c5065301ce3c93b481abfb13b1156b0ec8497617d",
+      "bytes": 78353,
+      "fetchedAt": "2026-07-23T00:46:03.659Z",
+      "fetchedFrom": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/31yosanannopointo.files/31gaisannshosaishutu.pdf"
+    }
+  ]
+}
