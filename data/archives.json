@@ -3716,6 +3716,16 @@
       "checkedAt": "2026-07-16T13:32:23.471Z"
     },
     {
+      "sourceId": "nerima-kanbetsu-r8",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r8sainyu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723005707/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r8sainyu.xlsx",
+      "waybackTimestamp": "20260723005707",
+      "checkedAt": "2026-07-23T00:57:32.835Z",
+      "sha256Match": true,
+      "waybackBytes": 13145
+    },
+    {
       "sourceId": "niigata-yosansho-r7",
       "url": "https://www.city.niigata.lg.jp/shisei/zaimu/zaisei/yosankessan/yosankessanjokyo.files/r7-2yosansyo-ippan.pdf",
       "kind": "file",

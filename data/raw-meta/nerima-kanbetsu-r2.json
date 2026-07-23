@@ -1,0 +1,19 @@
+{
+  "sourceId": "nerima-kanbetsu-r2",
+  "files": [
+    {
+      "filename": "r2sainyu.xlsx",
+      "sha256": "9737ceec43fdb88c97e03da51dbe1e84853098c02648a36ef5178a17f7404f9c",
+      "bytes": 12719,
+      "fetchedAt": "2026-07-23T00:55:18.808Z",
+      "fetchedFrom": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r2sainyu.xlsx"
+    },
+    {
+      "filename": "r2saishutu.xlsx",
+      "sha256": "4556e649d028f7555fe769d6e4b08faddb291697eef0d75c9e6452b8190b7926",
+      "bytes": 12172,
+      "fetchedAt": "2026-07-23T00:55:18.849Z",
+      "fetchedFrom": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r2saishutu.xlsx"
+    }
+  ]
+}

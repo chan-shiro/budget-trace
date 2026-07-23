@@ -1,0 +1,425 @@
+{
+  "docType": "budget-book",
+  "sourceId": "nerima-kanbetsu-r6",
+  "parser": "nerima-kanbetsu-xlsx",
+  "parserVersion": "0.1.0",
+  "parsedAt": "2026-07-23T00:55:17.691Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R6",
+  "account": "一般会計",
+  "revenueTotal": 323088364,
+  "expenditureTotal": 323088364,
+  "prevRevenueTotal": 298705425,
+  "prevExpenditureTotal": 298705425,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "特別区税",
+      "amount": 69536671,
+      "prevAmount": 69846592,
+      "locator": {
+        "file": "r6sainyu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "地方譲与税",
+      "amount": 1066675,
+      "prevAmount": 1058000,
+      "locator": {
+        "file": "r6sainyu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "利子割交付金",
+      "amount": 228000,
+      "prevAmount": 190000,
+      "locator": {
+        "file": "r6sainyu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "配当割交付金",
+      "amount": 1340000,
+      "prevAmount": 1100000,
+      "locator": {
+        "file": "r6sainyu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 1000000,
+      "prevAmount": 1000000,
+      "locator": {
+        "file": "r6sainyu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 6
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "地方消費税交付金",
+      "amount": 17220000,
+      "prevAmount": 16000000,
+      "locator": {
+        "file": "r6sainyu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "環境性能割交付金",
+      "amount": 270000,
+      "prevAmount": 320000,
+      "locator": {
+        "file": "r6sainyu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 8
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "地方特例交付金",
+      "amount": 3866159,
+      "prevAmount": 540000,
+      "locator": {
+        "file": "r6sainyu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 9
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "特別区交付金",
+      "amount": 98561712,
+      "prevAmount": 92840138,
+      "locator": {
+        "file": "r6sainyu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 10
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 63000,
+      "prevAmount": 64000,
+      "locator": {
+        "file": "r6sainyu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 11
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "分担金及び負担金",
+      "amount": 1011829,
+      "prevAmount": 1274854,
+      "locator": {
+        "file": "r6sainyu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "使用料及び手数料",
+      "amount": 4915081,
+      "prevAmount": 5196060,
+      "locator": {
+        "file": "r6sainyu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 13
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "国庫支出金",
+      "amount": 58761254,
+      "prevAmount": 57792362,
+      "locator": {
+        "file": "r6sainyu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 14
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "都支出金",
+      "amount": 32431636,
+      "prevAmount": 28367532,
+      "locator": {
+        "file": "r6sainyu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 15
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "財産収入",
+      "amount": 560477,
+      "prevAmount": 685264,
+      "locator": {
+        "file": "r6sainyu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 16
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "寄付金",
+      "amount": 5001,
+      "prevAmount": 6301,
+      "locator": {
+        "file": "r6sainyu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 17
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 17,
+      "kanName": "繰入金",
+      "amount": 15907259,
+      "prevAmount": 6631344,
+      "locator": {
+        "file": "r6sainyu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 18
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 18,
+      "kanName": "繰越金",
+      "amount": 2000000,
+      "prevAmount": 2000000,
+      "locator": {
+        "file": "r6sainyu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 19
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 19,
+      "kanName": "諸収入",
+      "amount": 7997610,
+      "prevAmount": 7399978,
+      "locator": {
+        "file": "r6sainyu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 20
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 20,
+      "kanName": "特別区債",
+      "amount": 6346000,
+      "prevAmount": 6393000,
+      "locator": {
+        "file": "r6sainyu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 21
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 1045739,
+      "prevAmount": 1024481,
+      "locator": {
+        "file": "r6saishutu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 27977741,
+      "prevAmount": 21657397,
+      "locator": {
+        "file": "r6saishutu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "区民費",
+      "amount": 20697153,
+      "prevAmount": 19481370,
+      "locator": {
+        "file": "r6saishutu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "産業経済費",
+      "amount": 3294338,
+      "prevAmount": 5509155,
+      "locator": {
+        "file": "r6saishutu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "地域文化費",
+      "amount": 7009385,
+      "prevAmount": 9455130,
+      "locator": {
+        "file": "r6saishutu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "保健福祉費",
+      "amount": 92905800,
+      "prevAmount": 87240351,
+      "locator": {
+        "file": "r6saishutu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "環境費",
+      "amount": 13536584,
+      "prevAmount": 13325591,
+      "locator": {
+        "file": "r6saishutu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "都市整備費",
+      "amount": 9412029,
+      "prevAmount": 7851939,
+      "locator": {
+        "file": "r6saishutu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 9
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "土木費",
+      "amount": 17055877,
+      "prevAmount": 14335294,
+      "locator": {
+        "file": "r6saishutu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 10
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "教育費",
+      "amount": 41466004,
+      "prevAmount": 34273659,
+      "locator": {
+        "file": "r6saishutu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 11
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 11,
+      "kanName": "こども家庭費",
+      "amount": 79388804,
+      "prevAmount": 75087747,
+      "locator": {
+        "file": "r6saishutu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 12,
+      "kanName": "公債費",
+      "amount": 4941125,
+      "prevAmount": 4643944,
+      "locator": {
+        "file": "r6saishutu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 13
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 13,
+      "kanName": "諸支出金",
+      "amount": 4257785,
+      "prevAmount": 4719367,
+      "locator": {
+        "file": "r6saishutu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 14
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 14,
+      "kanName": "予備費",
+      "amount": 100000,
+      "prevAmount": 100000,
+      "locator": {
+        "file": "r6saishutu.xlsx",
+        "sheet": "Sheet1 ",
+        "row": 15
+      }
+    }
+  ]
+}

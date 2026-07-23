@@ -1921,6 +1921,12 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       "h23", "h22", "h21", "h20", "h19"] as const).map((fy) => ({
       srcId: `minato-yosangaiyou-${fy}`, muniCode: "131032", muniName: "港区", prefName: "東京都", isPref: false,
     })),
+    // 練馬区（2026-07-23 追加・#125）。款別一覧表 XLSX（オープンデータ・CC BY）。H23〜R8 の16年。
+    // 歳出は H23 が13款 → H24 の組織改正で現行14款（民生費・衛生費が無い独自体系）。
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "r1", "h30", "h29", "h28", "h27", "h26",
+      "h25", "h24", "h23"] as const).map((fy) => ({
+      srcId: `nerima-kanbetsu-${fy}`, muniCode: "131202", muniName: "練馬区", prefName: "東京都", isPref: false,
+    })),
     // 墨田区（2026-07-22 追加・#124）。「予算概要」一般会計歳入歳出予算（案）款別表。
     // **H17〜R8 の22年が現行サイトに全year現存＝全year収録**（新宿26年に次ぐ2位タイ規模）。
     // **職員費の款は無い**（配賦型）。⚠ 歳出款7 は H19 以前「産業経済費」→ H20 から「産業観光費」
@@ -2336,6 +2342,7 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
     "osaka-yosansho": "ダッシュボード／款別ドリルダウン／前年比較",
     "hiroshima-yosansho": "ダッシュボード／款別ドリルダウン／前年比較",
     "tokyo-yosangaiyou-csv": "ダッシュボード／款別ドリルダウン／前年比較",
+    "nerima-kanbetsu-xlsx": "ダッシュボード／款別ドリルダウン／前年比較",
     "soumu-shichoson-kessan": "全市町村の決算ダッシュボード／款別・歳入内訳／1人あたり／類似自治体比較",
     "soumu-shichoson-seishitsu": "財政指標／性質別歳出",
     "kofu-kessan-syousai": "予算執行状況（決算・確定値）",
