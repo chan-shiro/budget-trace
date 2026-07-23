@@ -1,0 +1,19 @@
+{
+  "sourceId": "nerima-kanbetsu-h28",
+  "files": [
+    {
+      "filename": "h28sainyu.xlsx",
+      "sha256": "883f50b558230a386d26a84a9d68f2636c391a34cca5ad097a12f1d267b206dc",
+      "bytes": 11280,
+      "fetchedAt": "2026-07-23T00:55:19.990Z",
+      "fetchedFrom": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h28sainyu.xlsx"
+    },
+    {
+      "filename": "h28saishutu.xlsx",
+      "sha256": "1c7f898d4fd41be7524e7673e7960d82d2cdd326bb2f12eb1cb5c77f9a6f127b",
+      "bytes": 10947,
+      "fetchedAt": "2026-07-23T00:55:20.034Z",
+      "fetchedFrom": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h28saishutu.xlsx"
+    }
+  ]
+}

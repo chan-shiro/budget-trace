@@ -3326,6 +3326,45 @@ export const SOURCES: SourceEntry[] = [
   })),
 
   ...([
+    // 練馬区（2026-07-23 追加・#125）。[年度, 単位]
+    // 区オープンデータサイトの「一般会計歳入歳出予算款別一覧表」XLSX（歳入・歳出の2ファイル/年度・
+    // H23〜R8 の16年・URL は {fy}sainyu/{fy}saishutu.xlsx で**完全に規則的**＝32本すべて実在を偵察で確認）。
+    // 都カタログ t131202d0000000008 に同一実体が登載＝**データ自体が CC BY 4.0**（世田谷・千代田と同組）。
+    // ⚠ **単位が年度で違う**: H23〜H29=円 / H30〜R8=千円。**発行元の注記はどちらも当てにならない**
+    //   （都カタログ「円単位」・区ページ「千円単位」と一律表記で半分ずつ誤り。H29→H30 の年度間
+    //   クロスチェックが factor=1000 で全款一致することから確定・2026-07-23 実測）。
+    //   パーサが円年度を ÷1000 で正規化（端数が出たら throw — 実測で全値が1000の倍数）。
+    // ⚠ シート名が揺れる（Sheet1 / "Sheet1 "（末尾スペース）/ R7 / R8）→ パーサは先頭シート固定。
+    // ⚠ H24 歳出は組織改正年（新設3款=皆増・廃止2款=款番号なし行・A列空の継続行に（　）書きの
+    //   修正後前年度額）— A列空行はパーサが読み飛ばす。R2〜R4 歳入の無番号廃止款行は kanNo=null で保持。
+    ["R8", "thousandYen"], ["R7", "thousandYen"], ["R6", "thousandYen"], ["R5", "thousandYen"],
+    ["R4", "thousandYen"], ["R3", "thousandYen"], ["R2", "thousandYen"], ["R1", "thousandYen"],
+    ["H30", "thousandYen"],
+    ["H29", "yen"], ["H28", "yen"], ["H27", "yen"], ["H26", "yen"],
+    ["H25", "yen"], ["H24", "yen"], ["H23", "yen"],
+  ] as const).map(([fy, unit]) => ({
+    id: `nerima-kanbetsu-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 練馬区 一般会計歳入歳出予算款別一覧表（XLSX）`,
+    publisher: "練馬区",
+    url: null,
+    urls: [
+      `https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/${fy.toLowerCase()}sainyu.xlsx`,
+      `https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/${fy.toLowerCase()}saishutu.xlsx`,
+    ],
+    landingPage: "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+    kind: "excel" as const,
+    fiscalYear: fy,
+    scope: "練馬区（一般会計・団体コード131202）",
+    // 区オープンデータサイトの表示（kanbetu.html・確認日 2026-07-23）。原文のまま。XLSX は同サイト
+    // 内の配布＝「サイト内のコンテンツにのみ適用」の内側で、都カタログのデータセット自体も
+    // CC-BY-4.0 を宣言（§9g: 適用される条件だけを書く）。
+    license:
+      "本サイトで公開しているコンテンツは、クリエイティブ・コモンズ・ライセンス表示4.0国際の下に提供されています。（注釈）当ライセンスは、練馬区オープンデータサイト内のコンテンツにのみ適用されます。",
+    parser: "nerima-kanbetsu-xlsx" as const,
+    parserOptions: { unit },
+  })),
+
+  ...([
     // 東京都（2026-07-22 追加・#124）。[年度, 歳入URL, 歳出URL, ランディング]
     // **当初予算の PDF は3経路とも決定的パース不可**（説明書=スキャン+OCR の数字化け・
     // 概要(案)=金額フォントの ToUnicode 欠落・成立後概要=全文字ベクターアウトライン。2026-07-22 実測）。

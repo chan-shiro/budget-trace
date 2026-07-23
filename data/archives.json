@@ -3716,6 +3716,444 @@
       "checkedAt": "2026-07-16T13:32:23.471Z"
     },
     {
+      "sourceId": "nerima-kanbetsu-h23",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h23sainyu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723015733/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h23sainyu.xlsx",
+      "waybackTimestamp": "20260723015733",
+      "checkedAt": "2026-07-23T01:58:13.510Z",
+      "sha256Match": true,
+      "waybackBytes": 11243
+    },
+    {
+      "sourceId": "nerima-kanbetsu-h23",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h23saishutu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723015838/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h23saishutu.xlsx",
+      "waybackTimestamp": "20260723015838",
+      "checkedAt": "2026-07-23T01:59:22.333Z",
+      "sha256Match": true,
+      "waybackBytes": 11075
+    },
+    {
+      "sourceId": "nerima-kanbetsu-h23",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260723011343/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "waybackTimestamp": "20260723011343",
+      "checkedAt": "2026-07-23T01:59:31.096Z"
+    },
+    {
+      "sourceId": "nerima-kanbetsu-h24",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h24sainyu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723013955/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h24sainyu.xlsx",
+      "waybackTimestamp": "20260723013955",
+      "checkedAt": "2026-07-23T01:56:02.143Z",
+      "sha256Match": true,
+      "waybackBytes": 11326
+    },
+    {
+      "sourceId": "nerima-kanbetsu-h24",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h24saishutu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723014124/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h24saishutu.xlsx",
+      "waybackTimestamp": "20260723014124",
+      "checkedAt": "2026-07-23T01:56:34.725Z",
+      "sha256Match": true,
+      "waybackBytes": 11580
+    },
+    {
+      "sourceId": "nerima-kanbetsu-h24",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260723011343/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "waybackTimestamp": "20260723011343",
+      "checkedAt": "2026-07-23T01:57:24.615Z"
+    },
+    {
+      "sourceId": "nerima-kanbetsu-h25",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h25sainyu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723013633/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h25sainyu.xlsx",
+      "waybackTimestamp": "20260723013633",
+      "checkedAt": "2026-07-23T01:37:00.598Z",
+      "sha256Match": true,
+      "waybackBytes": 11552
+    },
+    {
+      "sourceId": "nerima-kanbetsu-h25",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h25saishutu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723013736/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h25saishutu.xlsx",
+      "waybackTimestamp": "20260723013736",
+      "checkedAt": "2026-07-23T01:38:18.522Z",
+      "sha256Match": true,
+      "waybackBytes": 11112
+    },
+    {
+      "sourceId": "nerima-kanbetsu-h25",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260723011343/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "waybackTimestamp": "20260723011343",
+      "checkedAt": "2026-07-23T01:39:08.074Z"
+    },
+    {
+      "sourceId": "nerima-kanbetsu-h26",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h26sainyu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723013353/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h26sainyu.xlsx",
+      "waybackTimestamp": "20260723013353",
+      "checkedAt": "2026-07-23T01:34:34.965Z",
+      "sha256Match": true,
+      "waybackBytes": 11593
+    },
+    {
+      "sourceId": "nerima-kanbetsu-h26",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h26saishutu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723013449/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h26saishutu.xlsx",
+      "waybackTimestamp": "20260723013449",
+      "checkedAt": "2026-07-23T01:35:22.553Z",
+      "sha256Match": true,
+      "waybackBytes": 11146
+    },
+    {
+      "sourceId": "nerima-kanbetsu-h26",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260723011343/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "waybackTimestamp": "20260723011343",
+      "checkedAt": "2026-07-23T01:35:46.670Z"
+    },
+    {
+      "sourceId": "nerima-kanbetsu-h27",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h27sainyu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723013208/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h27sainyu.xlsx",
+      "waybackTimestamp": "20260723013208",
+      "checkedAt": "2026-07-23T01:32:40.122Z",
+      "sha256Match": true,
+      "waybackBytes": 11603
+    },
+    {
+      "sourceId": "nerima-kanbetsu-h27",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h27saishutu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723013247/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h27saishutu.xlsx",
+      "waybackTimestamp": "20260723013247",
+      "checkedAt": "2026-07-23T01:33:16.438Z",
+      "sha256Match": true,
+      "waybackBytes": 11157
+    },
+    {
+      "sourceId": "nerima-kanbetsu-h27",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260723011343/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "waybackTimestamp": "20260723011343",
+      "checkedAt": "2026-07-23T01:33:31.663Z"
+    },
+    {
+      "sourceId": "nerima-kanbetsu-h28",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h28sainyu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723013013/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h28sainyu.xlsx",
+      "waybackTimestamp": "20260723013013",
+      "checkedAt": "2026-07-23T01:30:52.991Z",
+      "sha256Match": true,
+      "waybackBytes": 11280
+    },
+    {
+      "sourceId": "nerima-kanbetsu-h28",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h28saishutu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723013108/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h28saishutu.xlsx",
+      "waybackTimestamp": "20260723013108",
+      "checkedAt": "2026-07-23T01:31:40.042Z",
+      "sha256Match": true,
+      "waybackBytes": 10947
+    },
+    {
+      "sourceId": "nerima-kanbetsu-h28",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260723011343/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "waybackTimestamp": "20260723011343",
+      "checkedAt": "2026-07-23T01:31:49.221Z"
+    },
+    {
+      "sourceId": "nerima-kanbetsu-h29",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h29sainyu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723012702/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h29sainyu.xlsx",
+      "waybackTimestamp": "20260723012702",
+      "checkedAt": "2026-07-23T01:27:45.613Z",
+      "sha256Match": true,
+      "waybackBytes": 10290
+    },
+    {
+      "sourceId": "nerima-kanbetsu-h29",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h29saishutu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723012829/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h29saishutu.xlsx",
+      "waybackTimestamp": "20260723012829",
+      "checkedAt": "2026-07-23T01:29:00.932Z",
+      "sha256Match": true,
+      "waybackBytes": 9946
+    },
+    {
+      "sourceId": "nerima-kanbetsu-h29",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260723011343/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "waybackTimestamp": "20260723011343",
+      "checkedAt": "2026-07-23T01:29:25.293Z"
+    },
+    {
+      "sourceId": "nerima-kanbetsu-h30",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h30sainyu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723015252/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h30sainyu.xlsx",
+      "waybackTimestamp": "20260723015252",
+      "checkedAt": "2026-07-23T01:53:34.082Z",
+      "sha256Match": true,
+      "waybackBytes": 12182
+    },
+    {
+      "sourceId": "nerima-kanbetsu-h30",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h30saishutu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723015348/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/h30saishutu.xlsx",
+      "waybackTimestamp": "20260723015348",
+      "checkedAt": "2026-07-23T01:54:58.846Z",
+      "sha256Match": true,
+      "waybackBytes": 11766
+    },
+    {
+      "sourceId": "nerima-kanbetsu-h30",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260723011343/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "waybackTimestamp": "20260723011343",
+      "checkedAt": "2026-07-23T01:55:25.398Z"
+    },
+    {
+      "sourceId": "nerima-kanbetsu-r1",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r1sainyu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723012402/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r1sainyu.xlsx",
+      "waybackTimestamp": "20260723012402",
+      "checkedAt": "2026-07-23T01:25:11.589Z",
+      "sha256Match": true,
+      "waybackBytes": 12739
+    },
+    {
+      "sourceId": "nerima-kanbetsu-r1",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r1saishutu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723012540/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r1saishutu.xlsx",
+      "waybackTimestamp": "20260723012540",
+      "checkedAt": "2026-07-23T01:26:09.809Z",
+      "sha256Match": true,
+      "waybackBytes": 12627
+    },
+    {
+      "sourceId": "nerima-kanbetsu-r1",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260723011343/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "waybackTimestamp": "20260723011343",
+      "checkedAt": "2026-07-23T01:26:31.942Z"
+    },
+    {
+      "sourceId": "nerima-kanbetsu-r2",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r2sainyu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723011919/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r2sainyu.xlsx",
+      "waybackTimestamp": "20260723011919",
+      "checkedAt": "2026-07-23T01:20:28.646Z",
+      "sha256Match": true,
+      "waybackBytes": 12719
+    },
+    {
+      "sourceId": "nerima-kanbetsu-r2",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r2saishutu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723012036/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r2saishutu.xlsx",
+      "waybackTimestamp": "20260723012036",
+      "checkedAt": "2026-07-23T01:21:25.964Z",
+      "sha256Match": true,
+      "waybackBytes": 12172
+    },
+    {
+      "sourceId": "nerima-kanbetsu-r2",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260723011343/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "waybackTimestamp": "20260723011343",
+      "checkedAt": "2026-07-23T01:22:07.637Z"
+    },
+    {
+      "sourceId": "nerima-kanbetsu-r3",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r3sainyu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723011526/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r3sainyu.xlsx",
+      "waybackTimestamp": "20260723011526",
+      "checkedAt": "2026-07-23T01:16:43.781Z",
+      "sha256Match": true,
+      "waybackBytes": 12379
+    },
+    {
+      "sourceId": "nerima-kanbetsu-r3",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r3saishutu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723011655/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r3saishutu.xlsx",
+      "waybackTimestamp": "20260723011655",
+      "checkedAt": "2026-07-23T01:18:00.372Z",
+      "sha256Match": true,
+      "waybackBytes": 12510
+    },
+    {
+      "sourceId": "nerima-kanbetsu-r3",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260723011343/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "waybackTimestamp": "20260723011343",
+      "checkedAt": "2026-07-23T01:18:08.976Z"
+    },
+    {
+      "sourceId": "nerima-kanbetsu-r4",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r4saishutu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723011139/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r4saishutu.xlsx",
+      "waybackTimestamp": "20260723011139",
+      "checkedAt": "2026-07-23T02:00:32.192Z",
+      "sha256Match": true,
+      "waybackBytes": 12481
+    },
+    {
+      "sourceId": "nerima-kanbetsu-r4",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260723011343/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "waybackTimestamp": "20260723011343",
+      "checkedAt": "2026-07-23T02:00:41.624Z"
+    },
+    {
+      "sourceId": "nerima-kanbetsu-r5",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r5sainyu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723010450/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r5sainyu.xlsx",
+      "waybackTimestamp": "20260723010450",
+      "checkedAt": "2026-07-23T01:49:07.599Z",
+      "sha256Match": true,
+      "waybackBytes": 17868
+    },
+    {
+      "sourceId": "nerima-kanbetsu-r5",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r5saishutu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723010623/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r5saishutu.xlsx",
+      "waybackTimestamp": "20260723010623",
+      "checkedAt": "2026-07-23T01:50:50.766Z",
+      "sha256Match": true,
+      "waybackBytes": 17453
+    },
+    {
+      "sourceId": "nerima-kanbetsu-r5",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260723011343/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "waybackTimestamp": "20260723011343",
+      "checkedAt": "2026-07-23T01:51:01.309Z"
+    },
+    {
+      "sourceId": "nerima-kanbetsu-r6",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r6sainyu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723010113/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r6sainyu.xlsx",
+      "waybackTimestamp": "20260723010113",
+      "checkedAt": "2026-07-23T01:02:02.307Z",
+      "sha256Match": true,
+      "waybackBytes": 13872
+    },
+    {
+      "sourceId": "nerima-kanbetsu-r6",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r6saishutu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723010237/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r6saishutu.xlsx",
+      "waybackTimestamp": "20260723010237",
+      "checkedAt": "2026-07-23T01:03:32.105Z",
+      "sha256Match": true,
+      "waybackBytes": 13858
+    },
+    {
+      "sourceId": "nerima-kanbetsu-r6",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260410162345/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "waybackTimestamp": "20260410162345",
+      "checkedAt": "2026-07-23T01:04:01.843Z"
+    },
+    {
+      "sourceId": "nerima-kanbetsu-r7",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r7sainyu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723005851/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r7sainyu.xlsx",
+      "waybackTimestamp": "20260723005851",
+      "checkedAt": "2026-07-23T00:59:21.078Z",
+      "sha256Match": true,
+      "waybackBytes": 14378
+    },
+    {
+      "sourceId": "nerima-kanbetsu-r7",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r7saishutu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723005940/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r7saishutu.xlsx",
+      "waybackTimestamp": "20260723005940",
+      "checkedAt": "2026-07-23T01:00:08.237Z",
+      "sha256Match": true,
+      "waybackBytes": 13196
+    },
+    {
+      "sourceId": "nerima-kanbetsu-r7",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260410162345/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "waybackTimestamp": "20260410162345",
+      "checkedAt": "2026-07-23T01:00:30.222Z"
+    },
+    {
+      "sourceId": "nerima-kanbetsu-r8",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r8sainyu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723005707/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r8sainyu.xlsx",
+      "waybackTimestamp": "20260723005707",
+      "checkedAt": "2026-07-23T00:57:32.835Z",
+      "sha256Match": true,
+      "waybackBytes": 13145
+    },
+    {
+      "sourceId": "nerima-kanbetsu-r8",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r8saishutu.xlsx",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723005744/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.files/r8saishutu.xlsx",
+      "waybackTimestamp": "20260723005744",
+      "checkedAt": "2026-07-23T00:58:38.078Z",
+      "sha256Match": true,
+      "waybackBytes": 12762
+    },
+    {
+      "sourceId": "nerima-kanbetsu-r8",
+      "url": "https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260410162345/https://www.city.nerima.tokyo.jp/kusei/tokei/opendata/opendatasite/tokei_kusei/kanbetu.html",
+      "waybackTimestamp": "20260410162345",
+      "checkedAt": "2026-07-23T00:58:43.949Z"
+    },
+    {
       "sourceId": "niigata-yosansho-r7",
       "url": "https://www.city.niigata.lg.jp/shisei/zaimu/zaisei/yosankessan/yosankessanjokyo.files/r7-2yosansyo-ippan.pdf",
       "kind": "file",
