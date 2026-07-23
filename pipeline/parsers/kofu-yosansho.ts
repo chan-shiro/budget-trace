@@ -164,7 +164,13 @@ interface Options {
    * - "kan-tree"（相模原: 款→項→目 の木に `○ 事業名 事業費 財源内訳 説明`。**款が付く**・座標で親と内訳を分ける）
    * - "table-lines"（山口: 事業名 予算額 内容 担当課 の事業別表。施策見出しつき・款/前年度なし）
    */
-  projectFormat?: "table" | "bullets" | "coded-sections" | "marked-bullets" | "table-lines" | "pref-bullets" | "dept-bullets" | "coord-table" | "kan-tree" | "meisai-tree";
+  projectFormat?: "table" | "bullets" | "coded-sections" | "marked-bullets" | "table-lines" | "pref-bullets" | "dept-bullets" | "coord-table" | "kan-tree" | "meisai-tree" | "numbered-rows";
+  /**
+   * numbered-rows（浜松）: 款セルを持てない事業を何件まで許容するか（既定0）。
+   * R7 は p.65「重度障害者等就労・大学修学支援事業」の1件だけ**原本に款セルが無い**（±180pt を
+   * 実測して欠落を確認）。無条件に許すと括弧の変種を静かに落とすので、明示した件数だけ許す。
+   */
+  projectKanlessAllowed?: number;
   /**
    * 表形式の列境界（X座標）。PDF の座標系が年度で違う場合に上書きする
    * （R5 の WARP 回収版は全体に右寄りのスケール）。省略時は R8 実測値
@@ -1701,6 +1707,151 @@ function parseProjectsMeisaiTree(
   return out;
 }
 
+// 浜松 資料02「市政運営の基本方針の主要事業」（2026-07-23・#126）。R8: 414事業・97p 全域が
+// 番号つきの行表（節ごとに1から振り直す27節・全行に款セルと金額と所管課）。座標（実測）:
+//   事業番号 x=64.4-70.1（1〜2桁・半角）/ 事業名 x=79.4（折返し継続行・（新規）タグも同x）/
+//   説明・細目 x≥99.5（金額なし・名前と x で分かれる）/ 款セル x=268-368 で変動（固定xで切れない）/
+//   金額 右端 xMax≈465（左端418-442）/ 所管課 x=470.1
+// **行が y 1pt ずれて割れる**（R7 で款が番号行の1pt上に来る実測例）→ ブロック＝番号行＋続く2行で組む。
+// ⚠ **款セルの括弧が3種混在**（半角390・全角/混合24・R8実測）。ASCII 括弧だけの正規表現だと
+//   24件（衛生費の大半を含む）を**静かに落とす**ので、開き・閉じとも両方の字を受ける。
+// ⚠ **特別会計・企業会計の事業が11件、ページで切れずに混在**（款セルが「…会計」）。一般会計の
+//   款ドリルに載せられないので**除外し、件数 assert は「番号行数 = 採用 + 特会除外」**で張る。
+// ⚠ **複合款7件**（「民生費、教育費」等・内訳金額なし＝按分不可）は kan を null で保持
+//   （款別一覧に無い款名は validate の error になるため。事業自体は実データなので落とさない）。
+// ⚠ 「※…の一部」の再掲（59行）があるため **Σ事業と款予算の照合ゲートは張れない**（北九州
+//   meisai-tree の等式とは資料の性質が違う）。番号の節内連番チェックをパーサ内で行う
+//   （validate の No 連番・重複チェックは節ごとリセットと相性が悪いので no は null にする）。
+function parseProjectsNumberedRows(
+  filePath: string,
+  filename: string,
+  from: number,
+  to: number,
+  kanlessAllowed: number,
+): BudgetProjectFact[] {
+  const NO_X = [55, 76] as const;
+  const NAME_X = [77, 96] as const; // 名前の開始 x（説明 99.5 と分ける）
+  const KAN_X = [250, 430] as const;
+  const AMOUNT_XMAX = [455, 475] as const;
+  const KAN_RE = /^[（(][^0-9０-９（）()]+[）)]$/;
+  const inX = (v: number, r: readonly [number, number]) => v >= r[0] && v <= r[1];
+
+  interface Block { no: number; page: number; rows: Word[][]; isNew: boolean }
+  // まずページごとに行へまとめ、番号行でブロックに割る。
+  // ⚠ **（新規）タグは番号行の1行前**（独立行・x=79.4）に来る（R7 p.28 で実測）。素直に割ると
+  //   前のブロックの末尾に付いて**新規が1つ前の事業へずれる**（実際にそうなった）ので、
+  //   タグ行はブロックへ入れず「次のブロックの新規フラグ」として持ち越す。
+  const NEW_TAG_RE = /^[（(〈]新規[）)〉]$/;
+  const blocks: Block[] = [];
+  let numberRows = 0;
+  let pendingNew = false;
+  for (let page = from; page <= to; page++) {
+    const ws = pdfPageWords(filePath, page);
+    if (ws.length === 0) continue;
+    const rows: Word[][] = [];
+    for (const w of [...ws].sort((a, b) => a.y - b.y || a.x - b.x)) {
+      const last = rows[rows.length - 1];
+      if (last && Math.abs(last[0]!.y - w.y) <= 2) last.push(w);
+      else rows.push([w]);
+    }
+    for (const row of rows) {
+      if (row.length === 1 && NEW_TAG_RE.test(row[0]!.text)) {
+        pendingNew = true;
+        continue;
+      }
+      const noW = row.find((w) => /^\d{1,3}$/.test(w.text) && inX(w.x, NO_X));
+      if (noW) {
+        blocks.push({ no: Number(noW.text), page, rows: [row], isNew: pendingNew });
+        pendingNew = false;
+        numberRows++;
+      } else if (blocks.length > 0 && blocks[blocks.length - 1]!.page === page) {
+        blocks[blocks.length - 1]!.rows.push(row);
+      }
+    }
+  }
+
+  const out: BudgetProjectFact[] = [];
+  let excludedTokkai = 0;
+  const kanless: string[] = [];
+  let prevNo = 0;
+  for (const b of blocks) {
+    // 節内連番（次番号 = 前+1 か、節の切り替わりで 1）。R8・R7 で成立を実測済み —
+    // 破れたら番号行の取り違え（説明中の数字を番号と誤認等）なので throw
+    if (b.no !== prevNo + 1 && b.no !== 1) {
+      throw new Error(`${filename} p.${b.page}: 事業番号が連番でありません（直前 ${prevNo} → ${b.no}）`);
+    }
+    prevNo = b.no;
+    let name = "";
+    let kan: string | null = null;
+    let amount: number | null = null;
+    let isNew = b.isNew;
+    for (const [i, row] of b.rows.entries()) {
+      for (const w of row) {
+        if (i === 0 && inX(w.x, NO_X) && /^\d{1,3}$/.test(w.text)) continue; // 番号
+        if (KAN_RE.test(w.text) && inX(w.x, KAN_X) && kan == null) {
+          kan = w.text.replace(/^[（(]/, "").replace(/[）)]$/, "");
+          continue;
+        }
+        if (/^[\d,]+$/.test(w.text) && inX(w.x + w.w, AMOUNT_XMAX) && amount == null) {
+          amount = toAmount(w.text);
+          continue;
+        }
+        if (w.x >= 468) continue; // 所管課
+        // 名前: 番号行では x77 以降（款・金額は上で消費済み）。継続行は行頭 x が NAME_X の行だけ
+        //（説明・細目 x≥99.5 の行は名前に混ぜない）
+        const rowStart = row.find((r2) => r2.x >= NAME_X[0])?.x ?? 999;
+        if (i === 0 ? w.x >= NAME_X[0] && w.x < 450 : inX(rowStart, NAME_X) && w.x < 450) {
+          if (/^[（(〈]新規[）)〉]$/.test(w.text)) { isNew = true; continue; }
+          name += w.text;
+        }
+      }
+    }
+    if (kan != null && /会計/.test(kan)) { excludedTokkai++; continue; } // 特会・企業会計は対象外
+    // 複合款（「民生費、教育費」等・内訳金額なし＝按分不可）は kan を null にして事業は保持
+    //（款別一覧に無い款名は validate の error になる）。**款セル自体は拾えている**ので
+    // kanless（＝括弧の変種の取りこぼし検知）には数えない
+    let compoundKan = false;
+    if (kan != null && /[、，]/.test(kan)) { kan = null; compoundKan = true; }
+    if (kan == null && !compoundKan) kanless.push(`p.${b.page} No.${b.no}「${name.slice(0, 20)}」`);
+    if (amount == null) {
+      throw new Error(`${filename} p.${b.page} No.${b.no}「${name.slice(0, 20)}」: 金額が見つかりません`);
+    }
+    // 「※…の一部」「※…の合計」の注記行は名前と同じ x=79.4 に来る（説明 x≥99.5 とは別）。
+    // 名前に混ぜず description へ分ける — **別事業の金額の一部を切り出した再掲**（R8 で59行）で
+    // あることが画面で読めるように、原典の注記をそのまま残す
+    let description = "";
+    const starIdx = name.indexOf("※");
+    if (starIdx >= 0) {
+      description = name.slice(starIdx);
+      name = name.slice(0, starIdx);
+    }
+    if (!name) throw new Error(`${filename} p.${b.page} No.${b.no}: 事業名が空です`);
+    out.push({
+      kan, no: null, kubun: isNew ? "新規" : null, name, budgetBookName: null,
+      amount, description, basicGoal: "", shisaku: "",
+      locator: { file: filename, page: b.page },
+    });
+  }
+  // 件数の網: 番号行の数 = 採用した事業 + 特会除外。どちらかを静かに落とすと合わなくなる
+  if (out.length + excludedTokkai !== numberRows) {
+    throw new Error(
+      `${filename}: 番号行 ${numberRows} 件に対し 採用 ${out.length} + 特会除外 ${excludedTokkai} で` +
+        `一致しません（差 ${numberRows - out.length - excludedTokkai}）`,
+    );
+  }
+  // kanless は「款セルそのものが拾えなかった」件数（括弧の変種の取りこぼし検知）。
+  const trulyKanless = kanless.length;
+  if (trulyKanless > kanlessAllowed) {
+    throw new Error(
+      `${filename}: 款セルを持てない事業が ${trulyKanless} 件あります（許容 ${kanlessAllowed}）:\n  ` +
+        kanless.join("\n  ") +
+        `\n  括弧の変種（全角/混合）の取りこぼしを疑うこと`,
+    );
+  }
+  if (out.length === 0) throw new Error(`${filename} p.${from}-${to}: 事業が1件も抽出できませんでした`);
+  return out;
+}
+
 // meisai-tree（北九州）は**Σ事業 = 款の完全分解**が成り立つ資料（説明欄が歳出予算を漏れなく
 // 分解している。R8 で16款すべて厳密一致を実測）。「主な事業の Σ ≤ 款」（抜粋・§2-4）より強い
 // **等式**で張れる、収録中では唯一の網。折返し金額の取り違え・事業の取り落としを款単位で捕まえる。
@@ -1804,6 +1955,8 @@ export function parseKofuYosansho(
                 ? parseProjectsDeptBullets(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
                 : projFmt === "kan-tree"
                   ? parseProjectsKanTree(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
+                : projFmt === "numbered-rows"
+                  ? parseProjectsNumberedRows(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to, opts.projectKanlessAllowed ?? 0)
                 : projFmt === "meisai-tree"
                   ? assertMeisaiTreeDecomposition(
                       parseProjectsMeisaiTree(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to),

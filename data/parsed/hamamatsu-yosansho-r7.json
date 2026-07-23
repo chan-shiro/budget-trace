@@ -3,7 +3,7 @@
   "sourceId": "hamamatsu-yosansho-r7",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-07-17T11:26:08.889Z",
+  "parsedAt": "2026-07-22T17:46:21.663Z",
   "unit": "thousandYen",
   "fiscalYear": "R7",
   "account": "一般会計",
@@ -429,6 +429,6233 @@
       "locator": {
         "file": "l_yosansetsumeisho.pdf",
         "page": 7
+      }
+    }
+  ],
+  "projects": [
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "インターナショナルスクール誘致推進事業",
+      "budgetBookName": null,
+      "amount": 28198,
+      "description": "※インターナショナルスクール誘致推進事業15,433千円庁舎等維持管理事業361,000千円の一部3,540千円庁舎等整備事業652,027千円の一部9,225千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "中小企業向け融資支援事業",
+      "budgetBookName": null,
+      "amount": 20743,
+      "description": "※中小企業向け融資制度利用促進事業6,821千円中小企業向け融資制度利用者助成事業（補助金）13,922千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "商業者支援事業費助成事業",
+      "budgetBookName": null,
+      "amount": 20900,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 3
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "中心市街地活性化施策調査研究事業",
+      "budgetBookName": null,
+      "amount": 15381,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 4
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "まちなか賑わい創出事業",
+      "budgetBookName": null,
+      "amount": 17069,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 4
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "都心施設整備事業",
+      "budgetBookName": null,
+      "amount": 25832,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 4
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "産業イノベーション支援事業",
+      "budgetBookName": null,
+      "amount": 247191,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 4
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "先端技術活用促進事業（負担金）",
+      "budgetBookName": null,
+      "amount": 54650,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 4
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "成長産業創出支援事業",
+      "budgetBookName": null,
+      "amount": 113073,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "ＥＶシフト対応支援事業（負担金）",
+      "budgetBookName": null,
+      "amount": 70000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "中小企業脱炭素経営支援事業",
+      "budgetBookName": null,
+      "amount": 12205,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "はままつ起業家カフェ運営事業",
+      "budgetBookName": null,
+      "amount": 22698,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "地域産業振興支援事業",
+      "budgetBookName": null,
+      "amount": 48246,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "浜松・インド経済交流推進事業",
+      "budgetBookName": null,
+      "amount": 98008,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "企業誘致関連事業",
+      "budgetBookName": null,
+      "amount": 9990,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "企業立地促進助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 2817164,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "阿蔵山産業用地整備事業",
+      "budgetBookName": null,
+      "amount": 210000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "労働費",
+      "no": null,
+      "kubun": null,
+      "name": "大学生等就職支援事業",
+      "budgetBookName": null,
+      "amount": 63079,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "労働費",
+      "no": null,
+      "kubun": null,
+      "name": "女性就労支援事業",
+      "budgetBookName": null,
+      "amount": 10844,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "労働費",
+      "no": null,
+      "kubun": null,
+      "name": "働き方改革推進事業",
+      "budgetBookName": null,
+      "amount": 4821,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "勤労福祉センター大規模改修事業",
+      "budgetBookName": null,
+      "amount": 1477405,
+      "description": "※勤労者福祉施設整備事業562,207千円の一部498,549千円公共建築物長寿命化推進事業公共建築物ユニバーサルデザイン推進事業",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "スタートアップ育成・成長支援事業",
+      "budgetBookName": null,
+      "amount": 311501,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "スタートアップ地域連携事業",
+      "budgetBookName": null,
+      "amount": 75595,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "スタートアップ・エコシステム構築事業",
+      "budgetBookName": null,
+      "amount": 21928,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "スタートアップ誘致事業",
+      "budgetBookName": null,
+      "amount": 12076,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "首都圏ビジネス情報センター事業",
+      "budgetBookName": null,
+      "amount": 12539,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "弁天島海浜公園維持管理事業",
+      "budgetBookName": null,
+      "amount": 43305,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "浜松まつり事業（負担金）",
+      "budgetBookName": null,
+      "amount": 106972,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "家康公ゆかりの地浜松推進事業",
+      "budgetBookName": null,
+      "amount": 17010,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": "新規",
+      "name": "宿泊施設誘致可能性調査事業",
+      "budgetBookName": null,
+      "amount": 1000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "浜松・浜名湖ＤＭＯ機能強化等支援事業（負担金）",
+      "budgetBookName": null,
+      "amount": 116324,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "インバウンド推進事業",
+      "budgetBookName": null,
+      "amount": 118521,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "グローバル人材活用事業",
+      "budgetBookName": null,
+      "amount": 7974,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "ＭＩＣＥ推進事業",
+      "budgetBookName": null,
+      "amount": 25915,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "シティプロモーション事業",
+      "budgetBookName": null,
+      "amount": 65799,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "商工費",
+      "no": null,
+      "kubun": null,
+      "name": "ふるさと納税事業",
+      "budgetBookName": null,
+      "amount": 1647400,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "農業経営塾開催事業",
+      "budgetBookName": null,
+      "amount": 3300,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "多様な担い手育成支援事業",
+      "budgetBookName": null,
+      "amount": 851,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": "新規",
+      "name": "付加価値向上推進事業",
+      "budgetBookName": null,
+      "amount": 21222,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "海外販路拡大事業",
+      "budgetBookName": null,
+      "amount": 13676,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "食と農の地域ブランド推進事業",
+      "budgetBookName": null,
+      "amount": 15277,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "スマート農業推進事業",
+      "budgetBookName": null,
+      "amount": 25904,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "フルーツパーク管理運営事業",
+      "budgetBookName": null,
+      "amount": 256988,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "農作物被害対策支援事業",
+      "budgetBookName": null,
+      "amount": 84980,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "農業次世代人材投資事業",
+      "budgetBookName": null,
+      "amount": 147863,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "担い手育成総合支援事業",
+      "budgetBookName": null,
+      "amount": 20418,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "経営体育成助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 18258,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "地域農業パワーアップ支援事業（補助金）",
+      "budgetBookName": null,
+      "amount": 13500,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "生産振興活動支援事業",
+      "budgetBookName": null,
+      "amount": 7752,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "山間地域農業生産活動助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 9000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "農業振興地域制度管理事業",
+      "budgetBookName": null,
+      "amount": 9047,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "耕作放棄地対策事業（交付金）",
+      "budgetBookName": null,
+      "amount": 18925,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "担い手への農地集積推進事業",
+      "budgetBookName": null,
+      "amount": 852,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "畜産環境・衛生対策支援事業",
+      "budgetBookName": null,
+      "amount": 7785,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": "新規",
+      "name": "棚田サミット事業",
+      "budgetBookName": null,
+      "amount": 3803,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "県単独農業農村整備調査事業",
+      "budgetBookName": null,
+      "amount": 19042,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "県営土地改良事業（負担金）",
+      "budgetBookName": null,
+      "amount": 110400,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "かんがい排水整備市単独事業",
+      "budgetBookName": null,
+      "amount": 238197,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "揚排水施設・樋門維持管理事業",
+      "budgetBookName": null,
+      "amount": 147422,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "農業農村振興デジタル運営経費",
+      "budgetBookName": null,
+      "amount": 4339,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "農業農村振興運営経費",
+      "budgetBookName": null,
+      "amount": 13224,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "天竜美林カーボンクレジット創出モデル事業",
+      "budgetBookName": null,
+      "amount": 8154,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "市単独治山事業",
+      "budgetBookName": null,
+      "amount": 30800,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "森林経営管理推進事業",
+      "budgetBookName": null,
+      "amount": 30872,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "天竜材の家百年住居る助成事業",
+      "budgetBookName": null,
+      "amount": 78330,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "天竜材ぬくもり空間創出事業（補助金）",
+      "budgetBookName": null,
+      "amount": 25000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "森林整備・林業振興事業（補助金）",
+      "budgetBookName": null,
+      "amount": 132244,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": "新規",
+      "name": "森林環境教育推進事業",
+      "budgetBookName": null,
+      "amount": 1100,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "FSC認証材利用拡大推進事業",
+      "budgetBookName": null,
+      "amount": 7460,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "天竜材人材育成・担い手確保事業（補助金）",
+      "budgetBookName": null,
+      "amount": 10750,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "天竜林業イノベーション推進事業",
+      "budgetBookName": null,
+      "amount": 4850,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "スマート林業推進事業",
+      "budgetBookName": null,
+      "amount": 20125,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "林業成長産業化推進事業（補助金）",
+      "budgetBookName": null,
+      "amount": 2584,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "漁港整備事業",
+      "budgetBookName": null,
+      "amount": 26264,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "水産振興協議会等支援事業",
+      "budgetBookName": null,
+      "amount": 118739,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "水産業持続化促進事業（負担金）",
+      "budgetBookName": null,
+      "amount": 8097,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "農林水産業費",
+      "no": null,
+      "kubun": null,
+      "name": "農地利用最適化推進事業",
+      "budgetBookName": null,
+      "amount": 893,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 19
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "こども計画推進事業",
+      "budgetBookName": null,
+      "amount": 2057,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "浜松こども館管理運営事業",
+      "budgetBookName": null,
+      "amount": 122003,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "地域少子化対策強化事業",
+      "budgetBookName": null,
+      "amount": 79634,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "こども若者総合相談センター運営事業",
+      "budgetBookName": null,
+      "amount": 29245,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 20
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "こども家庭ソーシャルワーカー資格取得促進事業",
+      "budgetBookName": null,
+      "amount": 6808,
+      "description": "※こども家庭センター運営事業13,884千円の一部1,134千円の合計児童養護施設等業務改善費助成事業（補助金）児童相談所運営経費43,254千円の一部1,134千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "中山間地域における訪問支援サービスの拡充",
+      "budgetBookName": null,
+      "amount": 777,
+      "description": "※養育支援訪問事業3,597千円の一部070千円の合計子育て世帯訪問支援事業16,871千円の一部707千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "児童育成支援拠点事業",
+      "budgetBookName": null,
+      "amount": 12348,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 21
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "親子関係形成支援事業",
+      "budgetBookName": null,
+      "amount": 1422,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "社会的養護体制整備事業",
+      "budgetBookName": null,
+      "amount": 12931,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "こどもの権利擁護環境整備事業",
+      "budgetBookName": null,
+      "amount": 5191,
+      "description": "※児童権利擁護部会委員報酬273千円の合計こどもの権利擁護環境整備事業4,918千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "社会的養護自立支援拠点事業",
+      "budgetBookName": null,
+      "amount": 22347,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "地域子育て支援拠点事業",
+      "budgetBookName": null,
+      "amount": 270997,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 22
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "地域子育て相談機関の整備",
+      "budgetBookName": null,
+      "amount": 2569,
+      "description": "※地域子育て支援拠点事業270,997千円の一部1,969千円の合計市立保育所等運営事業152,050千円の一部300千円の合計市立幼稚園運営事業77,186千円の一部300千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 23
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "児童遊園等整備支援事業",
+      "budgetBookName": null,
+      "amount": 18623,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 23
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "発達障害者支援センター運営事業",
+      "budgetBookName": null,
+      "amount": 96914,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 23
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "学習支援事業の拡充",
+      "budgetBookName": null,
+      "amount": 74167,
+      "description": "※学習支援事業28,105千円の一部23,508千円の合計生活支援居場所事業50,659千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 23
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "ひとり親家庭等自立支援給付金事業",
+      "budgetBookName": null,
+      "amount": 43142,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 23
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "ひとり親家庭等医療費助成事業",
+      "budgetBookName": null,
+      "amount": 328613,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 24
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "児童扶養手当支給事業",
+      "budgetBookName": null,
+      "amount": 2009638,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 24
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "こども医療費助成事業",
+      "budgetBookName": null,
+      "amount": 4424060,
+      "description": "※ひとり親家庭等医療費助成事業328,613千円の合計こども医療費助成事業3,879,764千円の合計重度障害児医療費助成事業215,683千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 24
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "児童手当支給事業",
+      "budgetBookName": null,
+      "amount": 16139721,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 24
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "児童保護事業",
+      "budgetBookName": null,
+      "amount": 1638536,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 24
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "里親支援事業",
+      "budgetBookName": null,
+      "amount": 4656,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 24
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "病児・病後児保育事業",
+      "budgetBookName": null,
+      "amount": 96456,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 24
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "保育ママ事業",
+      "budgetBookName": null,
+      "amount": 7602,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 25
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "特定教育・保育施設運営事業",
+      "budgetBookName": null,
+      "amount": 19783713,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 25
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "特定地域型保育事業所運営事業",
+      "budgetBookName": null,
+      "amount": 2786449,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 25
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "保育士等確保対策費助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 321903,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 25
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "幼稚園教諭・保育士等への住居費支援事業",
+      "budgetBookName": null,
+      "amount": 154600,
+      "description": "※保育士等確保対策費助成事業（補助金）私立幼稚園教育振興助成事業（補助金）",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 26
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "私立保育所等事業費助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 1152820,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 26
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "私立保育所等入所児童処遇向上費助成事業",
+      "budgetBookName": null,
+      "amount": 2093180,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 26
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "私立保育所等施設整備費助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 141075,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 26
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "新規",
+      "name": "市立幼稚園・保育園における基幹園モデル事業",
+      "budgetBookName": null,
+      "amount": 2609,
+      "description": "※市立保育所等運営事業152,050千円の一部0,340千円の合計市立幼稚園運営事業77,186千円の一部0,300千円の合計市立幼稚園施設整備事業80,490千円の一部1,969千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 27
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "市立保育所等運営事業",
+      "budgetBookName": null,
+      "amount": 152050,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 27
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "市立保育所等施設整備事業",
+      "budgetBookName": null,
+      "amount": 12792,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 27
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "医療的ケア児保育事業",
+      "budgetBookName": null,
+      "amount": 38568,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 27
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "私立幼稚園教育振興助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 256489,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 27
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "私立幼稚園等無償化関連事業",
+      "budgetBookName": null,
+      "amount": 1050779,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 28
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "市立幼稚園中山間地域満3歳児受入の試行事業",
+      "budgetBookName": null,
+      "amount": 0,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 28
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "いじめ問題第三者委員会の設置",
+      "budgetBookName": null,
+      "amount": 3108,
+      "description": "※（教育総務費）附属機関の委員等（いじめ問題第三者委員会委員報酬）",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 29
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "スクールロイヤー活用事業",
+      "budgetBookName": null,
+      "amount": 737,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 29
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "学校情報技術環境整備事業",
+      "budgetBookName": null,
+      "amount": 1574717,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 29
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "小中学校学習者情報環境整備事業",
+      "budgetBookName": null,
+      "amount": 912737,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 29
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "コミュニティ・スクール推進事業",
+      "budgetBookName": null,
+      "amount": 113825,
+      "description": "※（教育総務費）附属機関の委員等（学校運営協議会委員報酬）8,619千円コミュニティ・スクール推進事業105,206千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 29
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "放課後児童会運営支援事業",
+      "budgetBookName": null,
+      "amount": 2225043,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 30
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "放課後児童会施設整備事業",
+      "budgetBookName": null,
+      "amount": 41190,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 30
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "教育総務運営経費",
+      "budgetBookName": null,
+      "amount": 12336,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 30
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "教職員住宅管理事業",
+      "budgetBookName": null,
+      "amount": 7346,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 30
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "教職員管理運営経費",
+      "budgetBookName": null,
+      "amount": 13528,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 30
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "教育研究・指導事業",
+      "budgetBookName": null,
+      "amount": 74482,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 30
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "生きた英語力育成事業",
+      "budgetBookName": null,
+      "amount": 254423,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 31
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "理科・ものづくり教育支援事業（負担金）",
+      "budgetBookName": null,
+      "amount": 3000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 31
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "音楽等発表会開催事業",
+      "budgetBookName": null,
+      "amount": 16046,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 31
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "指導員・支援員の配置",
+      "budgetBookName": null,
+      "amount": 978261,
+      "description": "※（教育指導費）会計年度任用職員（教育支援費）会計年度任用職員（小学校教職員管理費）会計年度任用職員（中学校教職員管理費）会計年度任用職員（市立高校管理費）会計年度任用職員",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 31
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "生徒指導推進事業",
+      "budgetBookName": null,
+      "amount": 20293,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 32
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "かわな野外活動センター施設整備事業",
+      "budgetBookName": null,
+      "amount": 120305,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 32
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "教育相談支援事業",
+      "budgetBookName": null,
+      "amount": 11843,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 32
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "不登校児童生徒に対する支援",
+      "budgetBookName": null,
+      "amount": 160064,
+      "description": "※（教育支援費）会計年度任用職員不登校児支援推進事業90,148千円の合計教育支援デジタル運営経費",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 33
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "私立学校教育振興助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 15026,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 33
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "校務アシスタント配置事業",
+      "budgetBookName": null,
+      "amount": 132852,
+      "description": "※（小学校教職員管理費）会計年度任用職員（中学校教職員管理費）会計年度任用職員",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 33
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "学校施設長寿命化事業",
+      "budgetBookName": null,
+      "amount": 3745403,
+      "description": "※小学校建設事業740,822千円の一部618,998千円の合計小学校施設整備事業3,544,235千円の一部1,397,012千円の合計中学校建設事業1,327,398千円の一部1,224,321千円の合計中学校施設整備事業2,860,051千円の一部505,072千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 34
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "学校改築・大規模改修事業",
+      "budgetBookName": null,
+      "amount": 1313743,
+      "description": "※小学校建設事業740,822千円の一部240,372千円の合計中学校建設事業1,327,398千円の一部1,073,371千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 34
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "学校施設バリアフリー化推進事業",
+      "budgetBookName": null,
+      "amount": 508629,
+      "description": "※小学校施設整備事業3,544,235千円の一部369,185千円の合計中学校施設整備事業2,860,051千円の一部139,444千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 34
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "小中学校特別教室空調設備整備事業",
+      "budgetBookName": null,
+      "amount": 2030134,
+      "description": "※小学校施設整備事業3,544,235千円の一部465,941千円の合計中学校施設整備事業2,860,051千円の一部1,564,193千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 35
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "学校体育館スポットクーラー整備事業",
+      "budgetBookName": null,
+      "amount": 671482,
+      "description": "※小学校施設整備事業3,544,235千円の一部438,792千円の合計中学校施設整備事業2,860,051千円の一部224,064千円の合計市立高校施設整備事業160,195千円の一部8,626千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 35
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "市立高校施設整備事業",
+      "budgetBookName": null,
+      "amount": 160195,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 35
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "学校安全事業",
+      "budgetBookName": null,
+      "amount": 32588,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 35
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "学校給食費管理事業",
+      "budgetBookName": null,
+      "amount": 4002752,
+      "description": "※学校給食費管理事業3,508,480千円学校給食食材購入事業484,901千円健康安全デジタル運営経費13,803千円の一部9,371千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 35
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "災害対策本部事業",
+      "budgetBookName": null,
+      "amount": 23924,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 36
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "地域防災計画整備事業",
+      "budgetBookName": null,
+      "amount": 1865,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 36
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "津波対策事業",
+      "budgetBookName": null,
+      "amount": 7149,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 36
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": "新規",
+      "name": "停電対策予防伐採事業",
+      "budgetBookName": null,
+      "amount": 35720,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 36
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "市民防災意識啓発事業",
+      "budgetBookName": null,
+      "amount": 2880,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 36
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "防災施設・資機材維持管理事業",
+      "budgetBookName": null,
+      "amount": 174760,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 37
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "情報通信事業",
+      "budgetBookName": null,
+      "amount": 347042,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 37
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "防災学習センター管理運営事業",
+      "budgetBookName": null,
+      "amount": 44528,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 37
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "自主防災組織支援事業",
+      "budgetBookName": null,
+      "amount": 107986,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 37
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "危機管理デジタル運営経費",
+      "budgetBookName": null,
+      "amount": 15100,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 37
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "地震対策推進事業",
+      "budgetBookName": null,
+      "amount": 308212,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 38
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "都市計画区域マスタープラン調査検討事業",
+      "budgetBookName": null,
+      "amount": 9869,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 38
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "都市計画道路見直し計画調査検討事業",
+      "budgetBookName": null,
+      "amount": 8479,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 38
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "都市防災推進事業",
+      "budgetBookName": null,
+      "amount": 6010,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 38
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "土地利用適正化事業",
+      "budgetBookName": null,
+      "amount": 1203,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 38
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "宅地耐震化推進事業",
+      "budgetBookName": null,
+      "amount": 17457,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 38
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "盛土規制区域基礎調査等事業",
+      "budgetBookName": null,
+      "amount": 51537,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 39
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "総合交通計画推進事業",
+      "budgetBookName": null,
+      "amount": 5037,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 39
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "バス交通等対策助成事業",
+      "budgetBookName": null,
+      "amount": 314550,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 39
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "公共交通網維持支援事業（負担金）",
+      "budgetBookName": null,
+      "amount": 100000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 39
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "共助型地域交通等推進事業",
+      "budgetBookName": null,
+      "amount": 3109,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 39
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "鉄道駅バリアフリー化設備整備費助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 155000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 39
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "鉄道施設耐震対策助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 38000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 40
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "天竜浜名湖鉄道経営支援事業",
+      "budgetBookName": null,
+      "amount": 149956,
+      "description": "※経営助成事業（補助金）95,192千円車両更新助成事業（補助金）24,764千円自然災害等復旧助成事業（補助金）30,000千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 40
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "高塚駅北第二公共団体区画整理事業及び関連事業",
+      "budgetBookName": null,
+      "amount": 410064,
+      "description": "※高塚駅北第二土地区画整理審議会委員報酬329千円人件費会計年度任用職員27,598千円の一部422千円高塚駅北第二公共団体区画整理事業279,901千円高塚駅北第二区画整理関連整備事業129,412千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 40
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "浜北中央北地区公共施設整備事業及び組合支援事業",
+      "budgetBookName": null,
+      "amount": 1283060,
+      "description": "※浜北中央北地区公共施設整備事業683,060千円浜北中央北土地区画整理組合支援事業600,000千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 40
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "土地区画整理等調査事業",
+      "budgetBookName": null,
+      "amount": 86098,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 40
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "市営住宅ストック総合改善事業",
+      "budgetBookName": null,
+      "amount": 576147,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 41
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "住まいづくり推進事業",
+      "budgetBookName": null,
+      "amount": 28851,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 41
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "舘山寺総合公園運営事業",
+      "budgetBookName": null,
+      "amount": 255759,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 42
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "緑の基本計画推進事業",
+      "budgetBookName": null,
+      "amount": 4020,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 42
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "浜松城公園長期整備構想推進事業",
+      "budgetBookName": null,
+      "amount": 12740,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 42
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "国際園芸博覧会出展事業",
+      "budgetBookName": null,
+      "amount": 6875,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 42
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "公園整備事業国交付金事業",
+      "budgetBookName": null,
+      "amount": 79431,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 42
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "公園整備事業単独事業",
+      "budgetBookName": null,
+      "amount": 191393,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 43
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "浜松城公園整備事業",
+      "budgetBookName": null,
+      "amount": 100258,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 43
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "遠州灘海浜公園篠原地区東関連事業",
+      "budgetBookName": null,
+      "amount": 729,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 43
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "公園緑地帯維持管理事業",
+      "budgetBookName": null,
+      "amount": 854278,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 43
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "公園施設改良事業",
+      "budgetBookName": null,
+      "amount": 400420,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 43
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "動物園施設維持管理事業",
+      "budgetBookName": null,
+      "amount": 182769,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 44
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "施設整備事業一般整備事業",
+      "budgetBookName": null,
+      "amount": 649958,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 44
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "道路・街路・河川事業",
+      "budgetBookName": null,
+      "amount": 28792692,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 45
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "交通事故データ活用事業",
+      "budgetBookName": null,
+      "amount": 13200,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 45
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "交通安全施設等整備・修繕事業",
+      "budgetBookName": null,
+      "amount": 3666339,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 45
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "交通安全推進事業",
+      "budgetBookName": null,
+      "amount": 139448,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 45
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "三遠南信自動車道関連整備事業",
+      "budgetBookName": null,
+      "amount": 2254250,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 45
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "（主）浜松環状線整備等総合安全対策事業",
+      "budgetBookName": null,
+      "amount": 451000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 45
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "国直轄道路事業（負担金）",
+      "budgetBookName": null,
+      "amount": 2000000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 46
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "道路維持修繕事業",
+      "budgetBookName": null,
+      "amount": 9116979,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 46
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "橋りょう耐震補強事業",
+      "budgetBookName": null,
+      "amount": 1830500,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 46
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "無電柱化推進事業",
+      "budgetBookName": null,
+      "amount": 34000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 46
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "自転車等対策事業",
+      "budgetBookName": null,
+      "amount": 230570,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 46
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "河川管理対策事業",
+      "budgetBookName": null,
+      "amount": 238035,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 46
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "河川改良事業",
+      "budgetBookName": null,
+      "amount": 2310850,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 47
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "雨水流出抑制施設整備事業",
+      "budgetBookName": null,
+      "amount": 50000,
+      "description": "※河川改良事業2,310,850千円の一部30,000千円公園施設改良事業400,420千円の一部10,000千円小学校施設整備事業3,544,235千円の一部10,000千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 47
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "河川維持修繕事業",
+      "budgetBookName": null,
+      "amount": 1082044,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 47
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "浸水対策支援事業",
+      "budgetBookName": null,
+      "amount": 12888,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 47
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "都市計画道路整備事業",
+      "budgetBookName": null,
+      "amount": 710320,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 47
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "都市下水路整備事業",
+      "budgetBookName": null,
+      "amount": 120000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 47
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "水防施設等整備事業",
+      "budgetBookName": null,
+      "amount": 132039,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 47
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防庁舎運営維持管理事業",
+      "budgetBookName": null,
+      "amount": 208577,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 48
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "中消防署高台出張所建設事業",
+      "budgetBookName": null,
+      "amount": 456493,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 48
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "南消防署・浜松第41分団・可美市民サービスセンター複合施設建設事業",
+      "budgetBookName": null,
+      "amount": 76389,
+      "description": "※南消防署・浜松第41分団等複合施設建設事業71,114千円サービスセンター施設整備事業5,275千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 48
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "北消防署引佐出張所・引佐第3分団伊平建設事業",
+      "budgetBookName": null,
+      "amount": 25000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 48
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "立入検査等指導事業",
+      "budgetBookName": null,
+      "amount": 3570,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 48
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "火災予防思想普及啓発事業",
+      "budgetBookName": null,
+      "amount": 1621,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 48
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防訓練事業",
+      "budgetBookName": null,
+      "amount": 4490,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 48
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防車両維持管理事業",
+      "budgetBookName": null,
+      "amount": 178197,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 49
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "消防車両・救急自動車・消防団車両更新事業",
+      "budgetBookName": null,
+      "amount": 416844,
+      "description": "※消防車両購入事業229,652千円基地周辺整備事業155,030千円の一部72,107千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 49
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "地震対策消防水利整備事業",
+      "budgetBookName": null,
+      "amount": 95779,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 49
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "救急普及啓発事業",
+      "budgetBookName": null,
+      "amount": 13057,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 49
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防航空隊運営維持管理事業",
+      "budgetBookName": null,
+      "amount": 158395,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 49
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防航空隊安全運航事業",
+      "budgetBookName": null,
+      "amount": 10686,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 49
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防ヘリコプター整備事業",
+      "budgetBookName": null,
+      "amount": 167,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 49
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防指令センター機能維持管理事業",
+      "budgetBookName": null,
+      "amount": 283512,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 50
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防救急デジタル無線システム再整備事業",
+      "budgetBookName": null,
+      "amount": 39399,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 50
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防団員被服整備事業",
+      "budgetBookName": null,
+      "amount": 58345,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 50
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防団資機材整備事業",
+      "budgetBookName": null,
+      "amount": 25861,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 50
+      }
+    },
+    {
+      "kan": "消防費",
+      "no": null,
+      "kubun": null,
+      "name": "消防団運営経費",
+      "budgetBookName": null,
+      "amount": 11654,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 50
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "浄化槽助成事業",
+      "budgetBookName": null,
+      "amount": 175055,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 51
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "飲料水供給施設維持管理事業",
+      "budgetBookName": null,
+      "amount": 28383,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 51
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "飲料水供給施設整備事業",
+      "budgetBookName": null,
+      "amount": 5166,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 51
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "生活用水応援事業",
+      "budgetBookName": null,
+      "amount": 7702,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 51
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "水道事業会計負担金（水道料金の減免）",
+      "budgetBookName": null,
+      "amount": 600000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 52
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "カーボンニュートラル政策調整事業",
+      "budgetBookName": null,
+      "amount": 5799,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 54
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "脱炭素経営推進事業",
+      "budgetBookName": null,
+      "amount": 345248,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 54
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "脱炭素型ライフスタイル推進事業",
+      "budgetBookName": null,
+      "amount": 193496,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 54
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "市有施設脱炭素化推進事業",
+      "budgetBookName": null,
+      "amount": 493474,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 54
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "西部清掃工場更新事業",
+      "budgetBookName": null,
+      "amount": 43159,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 55
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "西部清掃工場運営事業",
+      "budgetBookName": null,
+      "amount": 3109495,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 55
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "衛生工場整備事業",
+      "budgetBookName": null,
+      "amount": 59186,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 55
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "旧施設管理事業",
+      "budgetBookName": null,
+      "amount": 50078,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 55
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "ごみ減量教育推進事業",
+      "budgetBookName": null,
+      "amount": 12235,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 55
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "資源物処理事業",
+      "budgetBookName": null,
+      "amount": 135908,
+      "description": "※一般廃棄物対策費42,839千円平和清掃事業所費50,644千円天竜清掃事業所費42,425千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 56
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "天竜清掃工場運営事業",
+      "budgetBookName": null,
+      "amount": 2013125,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 56
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "生物多様性保全事業",
+      "budgetBookName": null,
+      "amount": 35888,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 56
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "水質保全事業",
+      "budgetBookName": null,
+      "amount": 18473,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 56
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "男女共同参画推進事業",
+      "budgetBookName": null,
+      "amount": 18527,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 57
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "活動拠点施設事業",
+      "budgetBookName": null,
+      "amount": 50899,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 57
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "市民協働推進事業",
+      "budgetBookName": null,
+      "amount": 1806,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 57
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "協働センター等施設整備事業",
+      "budgetBookName": null,
+      "amount": 157821,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 57
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "コミュニティ振興事業",
+      "budgetBookName": null,
+      "amount": 3790,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 57
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "自治会連合会75周年記念事業",
+      "budgetBookName": null,
+      "amount": 725,
+      "description": "※コミュニティ振興事業3,790千円の一部225千円行政連絡調整事業3,773千円の一部500千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 58
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "地域づくり推進事業",
+      "budgetBookName": null,
+      "amount": 2356,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 58
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "ハマライフ住宅取得費等助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 206385,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 58
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "市内間交流事業",
+      "budgetBookName": null,
+      "amount": 19874,
+      "description": "※子ども中山間地域交流事業7,623千円中山間地域プロモーション事業7,903千円交流促進事業4,348千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 58
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "居住促進事業",
+      "budgetBookName": null,
+      "amount": 6922,
+      "description": "※ＷＥＬＣＯＭＥ集落事業4,000千円田舎暮らしお試し住宅事業922千円移住促進空き家活用事業2,000千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 58
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "生活支援事業",
+      "budgetBookName": null,
+      "amount": 66353,
+      "description": "※山里いきいき応援隊活動事業62,949千円中山間地域新たな仕事づくり研究事業2,004千円乗用モノレール整備等助成事業（補助金）1,400千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 59
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "中山間地域まちづくり事業",
+      "budgetBookName": null,
+      "amount": 100228,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 59
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "みんなの中山間地域応援事業",
+      "budgetBookName": null,
+      "amount": 20000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 59
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "中山間地域コミュニティビジネス等起業資金貸与事業",
+      "budgetBookName": null,
+      "amount": 4000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 59
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "地域力向上事業",
+      "budgetBookName": null,
+      "amount": 105913,
+      "description": "※中央・浜名・天竜区役所費の合計所管課：中央区区振興課（457-2210）・まちづくり推進課（457-2778）、",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 60
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "自治会振興事業",
+      "budgetBookName": null,
+      "amount": 228018,
+      "description": "※中央・浜名・天竜区役所費の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 60
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "森林のまち童話大賞事業",
+      "budgetBookName": null,
+      "amount": 8815,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 60
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "水窪地域ローカルコープ構想推進事業",
+      "budgetBookName": null,
+      "amount": 33114,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 60
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "空家対策事業",
+      "budgetBookName": null,
+      "amount": 34160,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 61
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "安全で安心なまちづくり支援事業",
+      "budgetBookName": null,
+      "amount": 4453,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 61
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "犯罪被害者等支援事業",
+      "budgetBookName": null,
+      "amount": 3046,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 61
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "基地周辺整備事業",
+      "budgetBookName": null,
+      "amount": 155030,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 61
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "戸籍の振り仮名追加事業",
+      "budgetBookName": null,
+      "amount": 159451,
+      "description": "※サービスセンター事業18,421千円の一部42千円（市民窓口費）会計年度任用職員戸籍・住民基本台帳・印鑑登録等事業市民窓口デジタル運営経費",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 61
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "浜松・雄踏斎場再整備事業",
+      "budgetBookName": null,
+      "amount": 2766626,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 62
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "民生委員・児童委員事業",
+      "budgetBookName": null,
+      "amount": 170656,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 63
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "社会福祉協議会地域福祉活動助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 207645,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 63
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "日常生活自立支援助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 39979,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 63
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "コミュニティソーシャルワーカー事業",
+      "budgetBookName": null,
+      "amount": 161359,
+      "description": "※コミュニティソーシャルワーカー事業131,381千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 63
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "成年後見制度利用促進事業",
+      "budgetBookName": null,
+      "amount": 19562,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 64
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "生活困窮者自立支援事業",
+      "budgetBookName": null,
+      "amount": 135799,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 64
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "障害者（児）自立支援給付事業",
+      "budgetBookName": null,
+      "amount": 27126439,
+      "description": "※（者）介護給付等事業17,875,350千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 64
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "障害者地域生活支援事業（相談支援事業）",
+      "budgetBookName": null,
+      "amount": 263765,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 64
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "地域コミュニケーション促進事業",
+      "budgetBookName": null,
+      "amount": 18041,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 65
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "障害者（児）日常生活用具費助成事業",
+      "budgetBookName": null,
+      "amount": 191880,
+      "description": "※障害者日常生活用具費助成事業171,399千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 65
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "障害者（児）生活支援・社会支援事業",
+      "budgetBookName": null,
+      "amount": 330068,
+      "description": "※障害者生活支援・社会支援事業271,274千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 65
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "医療的ケア児等支援事業",
+      "budgetBookName": null,
+      "amount": 17337,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 65
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "重度障害者等就労・大学修学支援事業",
+      "budgetBookName": null,
+      "amount": 21510,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 65
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "重度障害者（児）医療費助成事業",
+      "budgetBookName": null,
+      "amount": 1840666,
+      "description": "※重度障害者医療費助成事業1,624,983千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 65
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "外出支援事業",
+      "budgetBookName": null,
+      "amount": 94107,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 66
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "障害者施設通所支援事業",
+      "budgetBookName": null,
+      "amount": 902,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 66
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "こころの健康づくり推進事業",
+      "budgetBookName": null,
+      "amount": 4018,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 66
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "障害者就労支援事業",
+      "budgetBookName": null,
+      "amount": 4486,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 66
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "障害者施設運営事業（施設整備事業）",
+      "budgetBookName": null,
+      "amount": 493930,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 66
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "障害者施設整備費助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 196700,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 66
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "障害者施設経営改善事業費助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 36647,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 66
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "障害者福祉デジタル運営経費",
+      "budgetBookName": null,
+      "amount": 522675,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 67
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "はままつ友愛の高齢者プラン策定事業",
+      "budgetBookName": null,
+      "amount": 7237,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 67
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "高齢者施設等運営事業（施設整備事業）",
+      "budgetBookName": null,
+      "amount": 127852,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 67
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "地域高齢者見守り・支援事業",
+      "budgetBookName": null,
+      "amount": 19313,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 67
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "敬老支援事業",
+      "budgetBookName": null,
+      "amount": 303083,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 67
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "高齢者緊急通報システム事業",
+      "budgetBookName": null,
+      "amount": 28018,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 68
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "ロコモーショントレーニング事業",
+      "budgetBookName": null,
+      "amount": 104955,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 68
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "ささえあいポイント事業",
+      "budgetBookName": null,
+      "amount": 32617,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 68
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "地域包括支援センター運営事業",
+      "budgetBookName": null,
+      "amount": 813179,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 68
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "特別養護老人ホーム改築補助金（債務負担行為）",
+      "budgetBookName": null,
+      "amount": 82120,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 68
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "保育所等巡回支援事業",
+      "budgetBookName": null,
+      "amount": 53664,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 69
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "障害児施設経営改善事業費助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 24562,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 69
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "後期高齢者健診事業",
+      "budgetBookName": null,
+      "amount": 479628,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 69
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "地域介護・福祉空間整備等施設整備事業",
+      "budgetBookName": null,
+      "amount": 206804,
+      "description": "※老人福祉施設等整備費助成事業（補助金）",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 69
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "介護人材確保対策事業",
+      "budgetBookName": null,
+      "amount": 27746,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 69
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "がん対策推進事業",
+      "budgetBookName": null,
+      "amount": 7940,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 71
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "浜松循環器疾患地域支援講座事業（負担金）",
+      "budgetBookName": null,
+      "amount": 33000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 71
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "救急医療推進事業（補助金）",
+      "budgetBookName": null,
+      "amount": 8557,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 71
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "在宅医療ＩＣＴ推進事業",
+      "budgetBookName": null,
+      "amount": 8000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 71
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "中山間地域医療支援事業",
+      "budgetBookName": null,
+      "amount": 9725,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 71
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "精神保健福祉推進事業",
+      "budgetBookName": null,
+      "amount": 7274,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 71
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "自殺対策推進事業",
+      "budgetBookName": null,
+      "amount": 31815,
+      "description": "※自殺対策推進事業（健康医療総務費）762千円自殺対策推進事業（精神保健福祉センター費）31,053千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 72
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "ひきこもり対策推進事業",
+      "budgetBookName": null,
+      "amount": 30433,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 72
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "学校管理運営事業",
+      "budgetBookName": null,
+      "amount": 81780,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 72
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "食中毒、感染症検査事業",
+      "budgetBookName": null,
+      "amount": 21554,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 72
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "妊産婦乳幼児健康診査事業",
+      "budgetBookName": null,
+      "amount": 728163,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 72
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "妊娠期健康講座事業",
+      "budgetBookName": null,
+      "amount": 9706,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 73
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "産後ケア事業",
+      "budgetBookName": null,
+      "amount": 65140,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 73
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "妊婦支援給付事業",
+      "budgetBookName": null,
+      "amount": 682174,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 73
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "母子予防接種事業",
+      "budgetBookName": null,
+      "amount": 1746759,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 73
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "不妊治療先進医療費等支援事業",
+      "budgetBookName": null,
+      "amount": 40203,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 73
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "小児慢性特定疾病対策事業",
+      "budgetBookName": null,
+      "amount": 226768,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 74
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "難病患者等支援事業",
+      "budgetBookName": null,
+      "amount": 1621791,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 74
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "がん検診等事業",
+      "budgetBookName": null,
+      "amount": 1546956,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 74
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "成人予防接種事業",
+      "budgetBookName": null,
+      "amount": 1210111,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 74
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "骨髄ドナー等助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 1200,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 74
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "感染症対策事業",
+      "budgetBookName": null,
+      "amount": 11343,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 74
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "動物愛護推進事業",
+      "budgetBookName": null,
+      "amount": 27081,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 75
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "浜松ウエルネスプロジェクト事業",
+      "budgetBookName": null,
+      "amount": 26126,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 76
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "浜松国際ピアノコンクール事業",
+      "budgetBookName": null,
+      "amount": 18722,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 77
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "浜松版アーツカウンシル事業",
+      "budgetBookName": null,
+      "amount": 43015,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 77
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "クリエイティブシティブースター事業",
+      "budgetBookName": null,
+      "amount": 26808,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 77
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "企業と共催する音楽事業（負担金）",
+      "budgetBookName": null,
+      "amount": 9400,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 77
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "アクトシティオルガンミニコンサート開催事業（負担金）",
+      "budgetBookName": null,
+      "amount": 2750,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 77
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "文化芸術振興事業",
+      "budgetBookName": null,
+      "amount": 53125,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 78
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "アクトシティ音楽院事業",
+      "budgetBookName": null,
+      "amount": 42215,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 78
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "こども音楽鑑賞教室開催事業（負担金）",
+      "budgetBookName": null,
+      "amount": 22067,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 78
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "音楽のあふれるまちづくり発信事業",
+      "budgetBookName": null,
+      "amount": 15356,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 78
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "アクトシティ浜松施設整備事業",
+      "budgetBookName": null,
+      "amount": 1506747,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 78
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "講座等開催事業",
+      "budgetBookName": null,
+      "amount": 52835,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 79
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "子どもの才能を伸ばす課外講座開催事業（負担金）",
+      "budgetBookName": null,
+      "amount": 13351,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 79
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "生涯学習施設整備事業",
+      "budgetBookName": null,
+      "amount": 2356963,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 79
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "中村家住宅維持管理事業",
+      "budgetBookName": null,
+      "amount": 34724,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 79
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "無形民俗文化財活性化事業",
+      "budgetBookName": null,
+      "amount": 16413,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 79
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "史跡等整備活用事業",
+      "budgetBookName": null,
+      "amount": 42707,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 79
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "西図書館移転事業",
+      "budgetBookName": null,
+      "amount": 87334,
+      "description": "※図書館管理運営事業192,521千円の一部59,856千円図書館サービスシステム維持管理事業172,196千円の一部資料収集事業147,403千円の一部10,542千円施設整備事業78,099千円の一部14,857千円図書館デジタル運営経費886千円の一部121千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 80
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "図書館管理運営事業",
+      "budgetBookName": null,
+      "amount": 192521,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 80
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "図書館サービスシステム維持管理事業",
+      "budgetBookName": null,
+      "amount": 172196,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 80
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "遺跡公園運営事業施設整備事業",
+      "budgetBookName": null,
+      "amount": 68001,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 80
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "資料調査収集事業",
+      "budgetBookName": null,
+      "amount": 11609,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 80
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "美術館及び秋野不矩美術館展覧会",
+      "budgetBookName": null,
+      "amount": 141212,
+      "description": "※平常展開催事業5,552千円の一部5,402千円企画展開催事業53,118千円の一部47,331千円特別展開催事業（負担金）15,189千円秋野不矩美術館管理運営事業73,290千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 81
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "大型スポーツイベント等誘致事業",
+      "budgetBookName": null,
+      "amount": 69704,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 82
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "パラスポーツ推進事業",
+      "budgetBookName": null,
+      "amount": 24982,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 82
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "ビーチ・マリンスポーツ推進事業",
+      "budgetBookName": null,
+      "amount": 42001,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 82
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "小中学校スポーツ施設開放事業",
+      "budgetBookName": null,
+      "amount": 974057,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 82
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "総合水泳場管理運営事業",
+      "budgetBookName": null,
+      "amount": 2565451,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 82
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "スポーツ施設整備事業",
+      "budgetBookName": null,
+      "amount": 1881449,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 83
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "広聴事業",
+      "budgetBookName": null,
+      "amount": 9214,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 84
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "市政広報事業",
+      "budgetBookName": null,
+      "amount": 184378,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 84
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "総合計画推進事業",
+      "budgetBookName": null,
+      "amount": 37270,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 84
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "総合戦略推進事業",
+      "budgetBookName": null,
+      "amount": 2971,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 84
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "徳川家ゆかりの資料展示収蔵施設整備事業",
+      "budgetBookName": null,
+      "amount": 6641,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 84
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "遠州灘海浜公園篠原地区道の駅整備事業",
+      "budgetBookName": null,
+      "amount": 30881,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 84
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "大都市制度調査研究事業",
+      "budgetBookName": null,
+      "amount": 7411,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 85
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "広域行政推進事業",
+      "budgetBookName": null,
+      "amount": 7363,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 85
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "天竜川・浜名湖地域合併20周年記念事業",
+      "budgetBookName": null,
+      "amount": 24366,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 85
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "大阪・関西万博出展事業",
+      "budgetBookName": null,
+      "amount": 35389,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 85
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "多文化共生センター運営事業",
+      "budgetBookName": null,
+      "amount": 77656,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 85
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "外国人学習支援センター運営事業",
+      "budgetBookName": null,
+      "amount": 122348,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 85
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "地域共生推進事業",
+      "budgetBookName": null,
+      "amount": 1055,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 86
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "外国人学校支援事業",
+      "budgetBookName": null,
+      "amount": 12527,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 86
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "定住外国人の子供の就学促進事業",
+      "budgetBookName": null,
+      "amount": 44712,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 86
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "外国人材活躍促進事業",
+      "budgetBookName": null,
+      "amount": 3758,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 86
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "外国人材雇用事業所支援事業（補助金）",
+      "budgetBookName": null,
+      "amount": 20000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 86
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "多文化創造活動促進事業（負担金）",
+      "budgetBookName": null,
+      "amount": 6200,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 86
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "国際機関への参加と都市間連携事業",
+      "budgetBookName": null,
+      "amount": 23179,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 86
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "外国青年招致事業",
+      "budgetBookName": null,
+      "amount": 5105,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 86
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "国際交流推進助成事業（補助金）",
+      "budgetBookName": null,
+      "amount": 7000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 87
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "首都圏情報収集発信事業",
+      "budgetBookName": null,
+      "amount": 13126,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 87
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "政策調整事業",
+      "budgetBookName": null,
+      "amount": 10000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 88
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "人材開発推進事業",
+      "budgetBookName": null,
+      "amount": 84113,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 88
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "人事管理デジタル運営経費",
+      "budgetBookName": null,
+      "amount": 64643,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 88
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "職員の健康、安全衛生管理事業",
+      "budgetBookName": null,
+      "amount": 146694,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 88
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "公文書管理事業",
+      "budgetBookName": null,
+      "amount": 35302,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 88
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "経営改革推進事業",
+      "budgetBookName": null,
+      "amount": 1062,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 88
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "外部監査委託事業",
+      "budgetBookName": null,
+      "amount": 14636,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 88
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "県債償還金負担金",
+      "budgetBookName": null,
+      "amount": 1372722,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 89
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "財政調整基金積立金",
+      "budgetBookName": null,
+      "amount": 2513361,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 89
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "アセットマネジメント推進事業",
+      "budgetBookName": null,
+      "amount": 21433,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 89
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "公有財産維持管理事業",
+      "budgetBookName": null,
+      "amount": 343302,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 89
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "借地解消事業",
+      "budgetBookName": null,
+      "amount": 300000,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 89
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "庁舎等整備事業",
+      "budgetBookName": null,
+      "amount": 652027,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 89
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "調達デジタル運営経費",
+      "budgetBookName": null,
+      "amount": 1587,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 89
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "職員技術研修事業",
+      "budgetBookName": null,
+      "amount": 4150,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 90
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "技術監理デジタル運営経費",
+      "budgetBookName": null,
+      "amount": 35683,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 90
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": null,
+      "name": "公共建築物長寿命化推進事業",
+      "budgetBookName": null,
+      "amount": 2495159,
+      "description": "※公共建築物長寿命化推進事業2,483,433千円アセットマネジメント推進事業公共建築物長寿命化推進事業",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 90
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "公共建築物耐震化推進事業",
+      "budgetBookName": null,
+      "amount": 437185,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 90
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "公共建築物ユニバーサルデザイン推進事業",
+      "budgetBookName": null,
+      "amount": 49573,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 90
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "税務総務デジタル運営経費",
+      "budgetBookName": null,
+      "amount": 152080,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 91
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "市民税等課税事業",
+      "budgetBookName": null,
+      "amount": 172500,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 91
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "市民税等デジタル運営経費",
+      "budgetBookName": null,
+      "amount": 433859,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 91
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "固定資産税等課税事業",
+      "budgetBookName": null,
+      "amount": 190216,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 91
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "固定資産税等デジタル運営経費",
+      "budgetBookName": null,
+      "amount": 312286,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 91
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "滞納整理事業",
+      "budgetBookName": null,
+      "amount": 27715,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 91
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "収納対策デジタル運営経費",
+      "budgetBookName": null,
+      "amount": 416219,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 91
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "定額減税調整給付重点支援給付金支給事業",
+      "budgetBookName": null,
+      "amount": 4115749,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 92
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "住民情報系システム維持管理事業",
+      "budgetBookName": null,
+      "amount": 1781332,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 93
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "庁内事務系システム維持管理事業",
+      "budgetBookName": null,
+      "amount": 345118,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 93
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "ネットワーク等維持管理事業",
+      "budgetBookName": null,
+      "amount": 1230593,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 93
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "社会情報基盤整備充実事業",
+      "budgetBookName": null,
+      "amount": 33290,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 93
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "情報化推進拠点施設運営事業",
+      "budgetBookName": null,
+      "amount": 75757,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 93
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "デジタル・スマートシティ推進事業",
+      "budgetBookName": null,
+      "amount": 27186,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 93
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "浜松版ＭａａＳ推進事業",
+      "budgetBookName": null,
+      "amount": 5430,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 94
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "デジタル・ガバメント推進事業",
+      "budgetBookName": null,
+      "amount": 88975,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 94
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "デジタル業務改革推進事業",
+      "budgetBookName": null,
+      "amount": 10155,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 94
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "指定金融機関等事務取扱手数料",
+      "budgetBookName": null,
+      "amount": 169263,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 95
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "参議院議員選挙",
+      "budgetBookName": null,
+      "amount": 347338,
+      "description": "※（選挙費）職員人件費97,476千円（選挙費）投票・開票管理者、立会人報酬25,299千円（選挙費）会計年度任用職員9,414千円（選挙費）投票及び開票事業187,779千円（選挙費）投票及び開票事業デジタル運営経費27,370千円の合計",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 95
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "人事委員会事業",
+      "budgetBookName": null,
+      "amount": 27232,
+      "description": "",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "02_bunyabetsu.pdf",
+        "page": 95
       }
     }
   ]
