@@ -3325,6 +3325,107 @@ export const SOURCES: SourceEntry[] = [
     },
   })),
 
+  {
+    // 世田谷区 R8（2026-07-23 追加・#125）。「予算の見える化ボード」の CSV（歳入・歳出の2ファイル・
+    // cp932・千円）。**款項目節細節の明細が 2018〜2026 の9年分入った単一ファイル（毎年上書き更新）**で、
+    // 年度別にソースを増やすと 9.2MB×年数の raw 重複になるため**最新年度だけ**これを使い、
+    // 過年度は下の tousyoyosan.xls（135KB・17年）で持つ。ID 系列は setagaya-kanbetsu-* で統一
+    // （資料またぎでもクロスチェーンが張れる・江戸川の前例）。
+    // 当年度額=「予算見積額」（Σ が R8 概要 PDF の記載合計 431,353,010 千円と差0・偵察実測）。
+    // ⚠ 「現計予算額」は 2018〜2023 の歳入で全行0＝使わない。前年度額=「予算前額」（当初基準は
+    // 年度間クロスチェック 8ペア×2側×款別まで全一致で確定・偵察実測）。合計行は無い（明細）。
+    // ⚠ 単一 URL が毎年上書きされる型（財政事情と同じ）— R9 が出たら --force で魚拓の版を残すこと。
+    id: "setagaya-kanbetsu-r8",
+    title: "令和8年度 世田谷区一般会計当初予算 歳入・歳出（予算の見える化ボードCSV）",
+    publisher: "世田谷区",
+    url: null,
+    urls: [
+      "https://www.city.setagaya.lg.jp/documents/6208/ippansainyu.csv",
+      "https://www.city.setagaya.lg.jp/documents/6208/ippansaisyutu.csv",
+    ],
+    landingPage: "https://www.city.setagaya.lg.jp/02022/6208.html",
+    kind: "csv" as const,
+    fiscalYear: "R8",
+    scope: "世田谷区（一般会計・団体コード131121）",
+    // 掲載ページ 6208.html のオープンデータ表示（確認日 2026-07-23）。原文のまま。区オープンデータ
+    // カタログに「一般会計歳入予算」「一般会計歳出予算」として本 CSV の直リンクが登載済み（偵察実測）。
+    // ⚠ サイト一般の著作権ページ（「無断での使用・転載、二次利用を禁じます」）は**このページには
+    // 適用されない**ので license 欄に書かない（§9g）。
+    license:
+      "このページに掲載している添付ファイルは、オープンデータとして使用可能です。本サイトで公開しているオープンデータは、クリエイティブ・コモンズ表示4.0国際ライセンスの下に提供されています。",
+    parser: "setagaya-mieruka-csv" as const,
+    parserOptions: {},
+  },
+
+  ...([
+    "R7", "R6", "R5", "R4", "R3", "R2", "R1", "H30", "H29", "H28", "H27", "H26", "H25", "H24", "H23", "H22", "H21",
+  ] as const).map((fy) => ({
+    // 世田谷区 H21〜R7（2026-07-23 追加・#125）。「年度別当初予算データ」XLS（tousyoyosan.xls・
+    // 135KB）に**17年分の款別総括**（歳入（款別）/歳出（款別）シート・年度の列グループ・合計行あり）。
+    // 17ソースが同一ファイルを指す（git は同一 blob を1つで持つ・raw 重複は 135KB×17=2.3MB）。
+    // 前年度額は前年の列グループの予算額（最古 H21 のみ 予算額−増減額 で復元）。パーサに
+    // **款ごとの等式ゲート**（当年−前年=印字の増減額）あり。⚠ R8 は未収載（CSV 側で持つ）・
+    // ファイルは毎年3月頃に上書き更新される見込み → R8 が載ったら魚拓は --force で版を残す。
+    id: `setagaya-kanbetsu-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 世田谷区一般会計当初予算 歳入・歳出款別（年度別当初予算データ）`,
+    publisher: "世田谷区",
+    url: null,
+    urls: ["https://www.city.setagaya.lg.jp/documents/6187/tousyoyosan.xls"],
+    landingPage: "https://www.city.setagaya.lg.jp/02022/6187.html",
+    kind: "excel" as const,
+    fiscalYear: fy,
+    scope: "世田谷区（一般会計・団体コード131121）",
+    // 掲載ページ 6187.html にも 6208 と同一のオープンデータ表示あり（確認日 2026-07-23）。
+    license:
+      "このページに掲載している添付ファイルは、オープンデータとして使用可能です。本サイトで公開しているオープンデータは、クリエイティブ・コモンズ表示4.0国際ライセンスの下に提供されています。",
+    parser: "setagaya-tousho-xls" as const,
+    parserOptions: {},
+  })),
+
+  ...([
+    // 品川区（2026-07-23 追加・#125）。[年度, PDF群, landing, 歳入p, 歳出p, 追加opts]
+    // 各会計予算・事項別明細書の「総括（歳入）/（歳出）」。歳入20款・歳出9款（特別区最少・
+    // 議会/総務/民生/衛生/産業経済/土木/教育/公債/予備）。印字2頁=物理1頁の見開き結合（印字≠物理）。
+    // 歳出総括は比較列の右に財源内訳4列が続くが先頭2金額（本年度・前年度）で正しく取れる（実測）。
+    // ⚠ **R7 のみ歳入・歳出が別ファイル**（revenueFile/expenditureFile・#152 の機構の3例目）。
+    // ⚠ **R8 は歳入の特別区債が科目存置**（当年度0・款番号なし）→ kanNoless 必須（無いと前年度Σが
+    //    -6,450,000 でゲート停止＝静かには壊れない・実測）。
+    // ⚠ **R3 以前は収録不可**: R3/H31/H30=スキャン+OCR崩れ・R2歳出=ToUnicode破損（豊島型）・
+    //    H29=OCR無しスキャン・H28以前=明細書未掲載（款別の主な施策のみ・前年比較なし）。
+    //    発行元が近年までスキャン入稿のため WARP を掘っても同じスキャンしか出ない見込み。
+    // ⚠ URL 規則なし（R7/R8 は `2025tousyoyosan` 型・R2〜R6 はタイムスタンプ型・R5 だけ `_9`）。
+    ["R8", ["2026tousyoyosan_3.pdf"], "2026tousyoyosan.html", 26, 92, {}],
+    ["R7", ["2025tousyoyosan_4.pdf", "2025tousyoyosan_5.pdf"], "2025tousyoyosan.html", 25, 1,
+      { revenueFile: "2025tousyoyosan_4.pdf", expenditureFile: "2025tousyoyosan_5.pdf" }],
+    ["R6", ["20240208145918_8.pdf"], "20240208145918.html", 26, 87, {}],
+    ["R5", ["20230208174032_9.pdf"], "20230208174032.html", 25, 82, {}],
+    ["R4", ["20220210190000_8.pdf"], "20220210190000.html", 25, 81, {}],
+  ] as const).map(([fy, pdfs, landing, rp, ep, extra]) => ({
+    id: `shinagawa-kanbetsu-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 品川区各会計予算・事項別明細書（総括・款別歳入歳出）`,
+    publisher: "品川区",
+    url: null,
+    urls: pdfs.map((f) => `https://www.city.shinagawa.tokyo.jp/ct/pdf/${f}`),
+    landingPage: `https://www.city.shinagawa.tokyo.jp/PC/kuseizyoho/yosan/tousyo/${landing}`,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "品川区（一般会計・団体コード131091）",
+    // 「このホームページについて」＞著作権について（確認日 2026-07-23）。原文のまま。
+    // 「引用」まで禁じる型（荒川と2例目）。リンク禁止の記述は無し＝noDeepLink 不要。
+    // 都カタログ t131091 は139件中 予算・財政・決算 0件（実検索）＝CC BY は及ばない。
+    license:
+      "品川区ホームページ（https://www.city.shinagawa.tokyo.jp/）上の情報・画像・図表等は、特に明示がない限り、その著作権を品川区が保有します。無断引用・転載・複製は、これを禁じます。",
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      revenuePage: rp,
+      expenditurePage: ep,
+      revenueHeading: "（歳入）",
+      expenditureHeading: "（歳出）",
+      kanNoless: true,
+      ...extra,
+    },
+  })),
+
   ...([
     // 板橋区（2026-07-23 追加・#125）。[年度, ページID, PDF名, 歳入p, 歳出p, 歳出見出し, 追加opts]
     // 「予算の概要」の一般会計当初予算総括表（歳入21款・歳出目的別11款・**百万円**・前年当初比較つき）。
