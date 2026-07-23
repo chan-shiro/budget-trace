@@ -123,6 +123,123 @@
       "checkedAt": "2026-07-16T07:53:45.900Z"
     },
     {
+      "sourceId": "arakawa-setsumei-r2",
+      "url": "https://www.city.arakawa.tokyo.jp/a002/zaisei/yosan/2yosansyo.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250713180302/https://www.city.arakawa.tokyo.jp/a002/zaisei/yosan/2yosansyo.html",
+      "waybackTimestamp": "20250713180302",
+      "checkedAt": "2026-07-23T04:44:43.651Z"
+    },
+    {
+      "sourceId": "arakawa-setsumei-r2",
+      "url": "https://www.city.arakawa.tokyo.jp/documents/27655/r2_yosan-setumeisyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723044339/https://www.city.arakawa.tokyo.jp/documents/27655/r2_yosan-setumeisyo.pdf",
+      "waybackTimestamp": "20260723044339",
+      "checkedAt": "2026-07-23T04:44:23.708Z",
+      "sha256Match": true,
+      "waybackBytes": 4233145
+    },
+    {
+      "sourceId": "arakawa-setsumei-r3",
+      "url": "https://www.city.arakawa.tokyo.jp/a002/zaisei/yosan/3yosannsyo.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260314173025/https://www.city.arakawa.tokyo.jp/a002/zaisei/yosan/3yosannsyo.html",
+      "waybackTimestamp": "20260314173025",
+      "checkedAt": "2026-07-23T04:43:09.063Z"
+    },
+    {
+      "sourceId": "arakawa-setsumei-r3",
+      "url": "https://www.city.arakawa.tokyo.jp/documents/21692/r3_yosan-setumeisyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20240731120251/https://www.city.arakawa.tokyo.jp/documents/21692/r3_yosan-setumeisyo.pdf",
+      "waybackTimestamp": "20240731120251",
+      "checkedAt": "2026-07-23T04:42:34.398Z",
+      "sha256Match": true,
+      "waybackBytes": 2211828
+    },
+    {
+      "sourceId": "arakawa-setsumei-r4",
+      "url": "https://www.city.arakawa.tokyo.jp/a002/zaisei/yosan/4yosansyo.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250319070829/https://www.city.arakawa.tokyo.jp/a002/zaisei/yosan/4yosansyo.html",
+      "waybackTimestamp": "20250319070829",
+      "checkedAt": "2026-07-23T04:41:46.423Z"
+    },
+    {
+      "sourceId": "arakawa-setsumei-r4",
+      "url": "https://www.city.arakawa.tokyo.jp/documents/26185/r4_yosan-setumeisyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20230205230008/https://www.city.arakawa.tokyo.jp/documents/26185/r4_yosan-setumeisyo.pdf",
+      "waybackTimestamp": "20230205230008",
+      "checkedAt": "2026-07-23T04:41:44.481Z",
+      "sha256Match": false,
+      "waybackBytes": 1048576,
+      "waybackTruncated": true
+    },
+    {
+      "sourceId": "arakawa-setsumei-r5",
+      "url": "https://www.city.arakawa.tokyo.jp/a002/zaisei/yosan/5yosansyo.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260121064642/https://www.city.arakawa.tokyo.jp/a002/zaisei/yosan/5yosansyo.html",
+      "waybackTimestamp": "20260121064642",
+      "checkedAt": "2026-07-23T04:40:45.298Z"
+    },
+    {
+      "sourceId": "arakawa-setsumei-r5",
+      "url": "https://www.city.arakawa.tokyo.jp/documents/30279/r5_yosan-setumeisyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723043951/https://www.city.arakawa.tokyo.jp/documents/30279/r5_yosan-setumeisyo.pdf",
+      "waybackTimestamp": "20260723043951",
+      "checkedAt": "2026-07-23T04:40:39.187Z",
+      "sha256Match": true,
+      "waybackBytes": 3983564
+    },
+    {
+      "sourceId": "arakawa-setsumei-r6",
+      "url": "https://www.city.arakawa.tokyo.jp/a002/zaisei/yosan/6yosansyo.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250623101815/https://www.city.arakawa.tokyo.jp/a002/zaisei/yosan/6yosansyo.html",
+      "waybackTimestamp": "20250623101815",
+      "checkedAt": "2026-07-23T04:39:47.824Z"
+    },
+    {
+      "sourceId": "arakawa-setsumei-r6",
+      "url": "https://www.city.arakawa.tokyo.jp/documents/35959/r6_yosan-setumeisyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250718163458/https://www.city.arakawa.tokyo.jp/documents/35959/r6_yosan-setumeisyo.pdf",
+      "waybackTimestamp": "20250718163458",
+      "checkedAt": "2026-07-23T04:39:43.736Z",
+      "sha256Match": true,
+      "waybackBytes": 3014054
+    },
+    {
+      "sourceId": "arakawa-setsumei-r7",
+      "url": "https://www.city.arakawa.tokyo.jp/a002/zaisei/yosan/7yosansyo/yoannsetu.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260520201341/https://www.city.arakawa.tokyo.jp/a002/zaisei/yosan/7yosansyo/yoannsetu.html",
+      "waybackTimestamp": "20260520201341",
+      "checkedAt": "2026-07-23T04:38:41.657Z"
+    },
+    {
+      "sourceId": "arakawa-setsumei-r7",
+      "url": "https://www.city.arakawa.tokyo.jp/documents/39324/yosansetsumeisyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260116032106/https://www.city.arakawa.tokyo.jp/documents/39324/yosansetsumeisyo.pdf",
+      "waybackTimestamp": "20260116032106",
+      "checkedAt": "2026-07-23T04:38:31.014Z",
+      "sha256Match": true,
+      "waybackBytes": 4111215
+    },
+    {
+      "sourceId": "arakawa-setsumei-r8",
+      "url": "https://www.city.arakawa.tokyo.jp/a002/zaisei/yosan/yosanangaiyo99.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260723043633/https://www.city.arakawa.tokyo.jp/a002/zaisei/yosan/yosanangaiyo99.html",
+      "waybackTimestamp": "20260723043633",
+      "checkedAt": "2026-07-23T04:37:56.993Z"
+    },
+    {
       "sourceId": "arakawa-setsumei-r8",
       "url": "https://www.city.arakawa.tokyo.jp/documents/43359/8yosansetumeisyo.pdf",
       "kind": "file",
