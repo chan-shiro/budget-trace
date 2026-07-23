@@ -1,0 +1,19 @@
+{
+  "sourceId": "shinagawa-kanbetsu-r7",
+  "files": [
+    {
+      "filename": "2025tousyoyosan_4.pdf",
+      "sha256": "9794b3b5a280217136b0e887f38960fd6d518e7886540a2ea8cb7d85e4c1d99f",
+      "bytes": 10493086,
+      "fetchedAt": "2026-07-23T03:59:29.989Z",
+      "fetchedFrom": "https://www.city.shinagawa.tokyo.jp/ct/pdf/2025tousyoyosan_4.pdf"
+    },
+    {
+      "filename": "2025tousyoyosan_5.pdf",
+      "sha256": "02dbdaf563e38896957b6d879561df9143ea1060661257c9bb99755baf32922a",
+      "bytes": 13651410,
+      "fetchedAt": "2026-07-23T03:59:31.255Z",
+      "fetchedFrom": "https://www.city.shinagawa.tokyo.jp/ct/pdf/2025tousyoyosan_5.pdf"
+    }
+  ]
+}

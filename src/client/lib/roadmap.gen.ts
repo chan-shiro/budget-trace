@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 54,
+  "budgetCount": 57,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 399,
-  "fileCount": 555,
-  "archivedCount": 370,
-  "licenseOpen": 36,
-  "licensePermission": 305,
+  "sourceCount": 426,
+  "fileCount": 584,
+  "archivedCount": 399,
+  "licenseOpen": 54,
+  "licensePermission": 314,
   "licenseUnverified": 58,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -55,6 +55,12 @@ export const ROADMAP_PROGRESS = {
       "code": "131113",
       "years": 18,
       "range": "H20〜R8（18年度）"
+    },
+    {
+      "name": "世田谷区",
+      "code": "131121",
+      "years": 18,
+      "range": "H21〜R8（18年度）"
     },
     {
       "name": "練馬区",
@@ -189,6 +195,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R3〜R8（6年度）"
     },
     {
+      "name": "品川区",
+      "code": "131091",
+      "years": 5,
+      "range": "R4〜R8（5年度）"
+    },
+    {
       "name": "浜松市",
       "code": "221309",
       "years": 5,
@@ -211,6 +223,12 @@ export const ROADMAP_PROGRESS = {
       "code": "131164",
       "years": 4,
       "range": "R3〜R8（4年度）"
+    },
+    {
+      "name": "板橋区",
+      "code": "131199",
+      "years": 4,
+      "range": "R5〜R8（4年度）"
     },
     {
       "name": "静岡市",

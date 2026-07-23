@@ -1924,6 +1924,22 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `arakawa-setsumei-${fy}`, muniCode: "131181", muniName: "荒川区", prefName: "東京都", isPref: false,
     })),
+    // 板橋区（2026-07-23 追加・#125）。予算の概要の総括表（百万円→千円へ ×1000 等価変換・
+    // 他区より丸め粒度が粗い）。R4 以前はスキャン/ToUnicode 破損で収録不可。
+    ...(["r8", "r7", "r6", "r5"] as const).map((fy) => ({
+      srcId: `itabashi-yosan-gaiyou-${fy}`, muniCode: "131199", muniName: "板橋区", prefName: "東京都", isPref: false,
+    })),
+    // 世田谷区（2026-07-23 追加・#125）。R8=見える化ボード CSV / H21〜R7=年度別当初予算データ XLS
+    // （ID は setagaya-kanbetsu-* で統一＝資料またぎでもクロスチェーンが張れる・江戸川の前例）。
+    // 23区で人口最大（92万）。職員費の款あり（歳出款9）。
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "r1", "h30", "h29", "h28", "h27", "h26",
+      "h25", "h24", "h23", "h22", "h21"] as const).map((fy) => ({
+      srcId: `setagaya-kanbetsu-${fy}`, muniCode: "131121", muniName: "世田谷区", prefName: "東京都", isPref: false,
+    })),
+    // 品川区（2026-07-23 追加・#125）。事項別明細書の総括。R3 以前はスキャン/ToUnicode破損で不可。
+    ...(["r8", "r7", "r6", "r5", "r4"] as const).map((fy) => ({
+      srcId: `shinagawa-kanbetsu-${fy}`, muniCode: "131091", muniName: "品川区", prefName: "東京都", isPref: false,
+    })),
     // 練馬区（2026-07-23 追加・#125）。款別一覧表 XLSX（オープンデータ・CC BY）。H23〜R8 の16年。
     // 歳出は H23 が13款 → H24 の組織改正で現行14款（民生費・衛生費が無い独自体系）。
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "r1", "h30", "h29", "h28", "h27", "h26",
@@ -2347,6 +2363,8 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
     "tokyo-yosangaiyou-csv": "ダッシュボード／款別ドリルダウン／前年比較",
     "nerima-kanbetsu-xlsx": "ダッシュボード／款別ドリルダウン／前年比較",
     "arakawa-setsumei": "ダッシュボード／款別ドリルダウン／前年比較",
+    "setagaya-mieruka-csv": "ダッシュボード／款別ドリルダウン／前年比較",
+    "setagaya-tousho-xls": "ダッシュボード／款別ドリルダウン／前年比較",
     "soumu-shichoson-kessan": "全市町村の決算ダッシュボード／款別・歳入内訳／1人あたり／類似自治体比較",
     "soumu-shichoson-seishitsu": "財政指標／性質別歳出",
     "kofu-kessan-syousai": "予算執行状況（決算・確定値）",

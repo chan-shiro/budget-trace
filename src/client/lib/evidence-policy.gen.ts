@@ -1369,6 +1369,56 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.sumida.lg.jp/kuseijoho/gyoseikaikaku_zaisei/zaisei/yosan_gaiyou/h17_yosangaiyou.files/yosangaiyou_h17.pdf",
     "license": "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。"
   },
+  "/sources/shinagawa-kanbetsu-r8/2026tousyoyosan_3.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.shinagawa.tokyo.jp/ct/pdf/2026tousyoyosan_3.pdf",
+    "license": "品川区ホームページ（https://www.city.shinagawa.tokyo.jp/）上の情報・画像・図表等は、特に明示がない限り、その著作権を品川区が保有します。無断引用・転載・複製は、これを禁じます。"
+  },
+  "/sources/shinagawa-kanbetsu-r7/2025tousyoyosan_4.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.shinagawa.tokyo.jp/ct/pdf/2025tousyoyosan_4.pdf",
+    "license": "品川区ホームページ（https://www.city.shinagawa.tokyo.jp/）上の情報・画像・図表等は、特に明示がない限り、その著作権を品川区が保有します。無断引用・転載・複製は、これを禁じます。"
+  },
+  "/sources/shinagawa-kanbetsu-r7/2025tousyoyosan_5.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.shinagawa.tokyo.jp/ct/pdf/2025tousyoyosan_5.pdf",
+    "license": "品川区ホームページ（https://www.city.shinagawa.tokyo.jp/）上の情報・画像・図表等は、特に明示がない限り、その著作権を品川区が保有します。無断引用・転載・複製は、これを禁じます。"
+  },
+  "/sources/shinagawa-kanbetsu-r6/20240208145918_8.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.shinagawa.tokyo.jp/ct/pdf/20240208145918_8.pdf",
+    "license": "品川区ホームページ（https://www.city.shinagawa.tokyo.jp/）上の情報・画像・図表等は、特に明示がない限り、その著作権を品川区が保有します。無断引用・転載・複製は、これを禁じます。"
+  },
+  "/sources/shinagawa-kanbetsu-r5/20230208174032_9.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.shinagawa.tokyo.jp/ct/pdf/20230208174032_9.pdf",
+    "license": "品川区ホームページ（https://www.city.shinagawa.tokyo.jp/）上の情報・画像・図表等は、特に明示がない限り、その著作権を品川区が保有します。無断引用・転載・複製は、これを禁じます。"
+  },
+  "/sources/shinagawa-kanbetsu-r4/20220210190000_8.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.shinagawa.tokyo.jp/ct/pdf/20220210190000_8.pdf",
+    "license": "品川区ホームページ（https://www.city.shinagawa.tokyo.jp/）上の情報・画像・図表等は、特に明示がない限り、その著作権を品川区が保有します。無断引用・転載・複製は、これを禁じます。"
+  },
+  "/sources/itabashi-yosan-gaiyou-r8/r8yosangaiyouhonpen.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/059/985/r8yosangaiyouhonpen.pdf",
+    "license": "本サイトに掲載する写真・画像などの各ファイル及びその内容に関する諸権利は板橋区役所に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+  },
+  "/sources/itabashi-yosan-gaiyou-r7/r7yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/054/671/r7yosannogaiyou.pdf",
+    "license": "本サイトに掲載する写真・画像などの各ファイル及びその内容に関する諸権利は板橋区役所に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+  },
+  "/sources/itabashi-yosan-gaiyou-r6/r6yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/049/183/r6yosannogaiyou.pdf",
+    "license": "本サイトに掲載する写真・画像などの各ファイル及びその内容に関する諸権利は板橋区役所に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+  },
+  "/sources/itabashi-yosan-gaiyou-r5/r5_yosannogaiyou_2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/041/624/r5_yosannogaiyou_2.pdf",
+    "license": "本サイトに掲載する写真・画像などの各ファイル及びその内容に関する諸権利は板橋区役所に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+  },
   "/sources/arakawa-setsumei-r8/8yosansetumeisyo.pdf": {
     "mode": "origin",
     "href": "https://www.city.arakawa.tokyo.jp/documents/43359/8yosansetumeisyo.pdf",
