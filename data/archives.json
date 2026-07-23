@@ -4484,6 +4484,24 @@
       "checkedAt": "2026-07-16T07:29:40.260Z"
     },
     {
+      "sourceId": "shinjuku-kessan-taisho-r6",
+      "url": "https://www.city.shinjuku.lg.jp/content/000434904.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250912092934/https://www.city.shinjuku.lg.jp/content/000434904.pdf",
+      "waybackTimestamp": "20250912092934",
+      "checkedAt": "2026-07-23T00:29:57.367Z",
+      "sha256Match": true,
+      "waybackBytes": 7807
+    },
+    {
+      "sourceId": "shinjuku-kessan-taisho-r6",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/kaikei01_001000_00006.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250912104735/https://www.city.shinjuku.lg.jp/kusei/kaikei01_001000_00006.html",
+      "waybackTimestamp": "20250912104735",
+      "checkedAt": "2026-07-23T00:30:12.660Z"
+    },
+    {
       "sourceId": "shinjuku-yosan-gaiyou-h13",
       "url": "https://www.city.shinjuku.lg.jp/content/000050588.pdf",
       "kind": "file",

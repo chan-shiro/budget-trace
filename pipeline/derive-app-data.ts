@@ -1994,6 +1994,8 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。
   const MUNI_EXEC_SOURCES: Record<string, { srcId: string; fy: string; refLabelBase: string }> = {
     "190004": { srcId: "yamanashi-kessan-r6", fy: "R6", refLabelBase: "決算の状況" },
+    // 新宿区（2026-07-23 追加・#138）。当初予算26年 + 執行 R6 で「執行」の2例目（区で初）
+    "131041": { srcId: "shinjuku-kessan-taisho-r6", fy: "R6", refLabelBase: "款別予算決算対照表" },
   };
   const popDs = normalizedDatasetSchema.parse(readJson(normalizedPath("municipal-accounts", "R6", false)));
   const TOP_REVENUE = 8; // 歳入ドーナツの上位款数（残りは「その他」に集約し内訳を children に）
@@ -2345,6 +2347,7 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
     "kawasaki-jigyou-hyouka": "事業報告（成果）",
     "yokohama-jigyo-hyoka": "事業報告（成果）",
     "yamanashi-kessan": "予算執行状況（款別 執行率）",
+    "shinjuku-kessan-taisho": "予算執行状況（款別 執行率）",
   };
   const sourceCard = (s: (typeof srcs)[number]) => {
     const meta = readRawMeta(s.id);
