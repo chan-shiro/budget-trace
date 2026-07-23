@@ -469,6 +469,8 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.city.shibuya.tokyo.jp/kusei/zaisei/yosan-aramashi/yosan07.html": "https://web.archive.org/web/20260412223144/https://www.city.shibuya.tokyo.jp/kusei/zaisei/yosan-aramashi/yosan07.html",
   "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/c85b01cbe55648f3b5ca9e2a24f1acdc/yosan08_yosansho08.pdf": "https://web.archive.org/web/20260716072603/https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/c85b01cbe55648f3b5ca9e2a24f1acdc/yosan08_yosansho08.pdf",
   "https://www.city.shibuya.tokyo.jp/kusei/zaisei/yosan-aramashi/yosan08.html": "https://web.archive.org/web/20260716072904/https://www.city.shibuya.tokyo.jp/kusei/zaisei/yosan-aramashi/yosan08.html",
+  "https://www.city.shinjuku.lg.jp/content/000434904.pdf": "https://web.archive.org/web/20250912092934/https://www.city.shinjuku.lg.jp/content/000434904.pdf",
+  "https://www.city.shinjuku.lg.jp/kusei/kaikei01_001000_00006.html": "https://web.archive.org/web/20250912104735/https://www.city.shinjuku.lg.jp/kusei/kaikei01_001000_00006.html",
   "https://www.city.shinjuku.lg.jp/content/000050588.pdf": "https://web.archive.org/web/20190609105058/https://www.city.shinjuku.lg.jp/content/000050588.pdf",
   "https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html": "https://web.archive.org/web/20251213135946/https://www.city.shinjuku.lg.jp/kusei/gaiyou_kako.html",
   "https://www.city.shinjuku.lg.jp/content/000050587.pdf": "https://web.archive.org/web/20190609105116/https://www.city.shinjuku.lg.jp/content/000050587.pdf",

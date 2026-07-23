@@ -1,0 +1,393 @@
+{
+  "docType": "budget-execution",
+  "sourceId": "shinjuku-kessan-taisho-r6",
+  "parser": "shinjuku-kessan-taisho",
+  "parserVersion": "0.1.0",
+  "parsedAt": "2026-07-23T00:29:24.120Z",
+  "unit": "yen",
+  "fiscalYear": "R6",
+  "account": "一般会計",
+  "asOf": "令和6年度決算（確定値）",
+  "basis": "確定",
+  "population": null,
+  "revenueBudgetTotal": 195175696000,
+  "revenueSettledTotal": 190137549271,
+  "expenditureBudgetTotal": 195175696000,
+  "expenditureSettledTotal": 184195725502,
+  "facts": [
+    {
+      "side": "revenue",
+      "name": "特別区税",
+      "currentBudget": 55294972000,
+      "settled": 55140168230,
+      "ratePct": 99.7,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "地方譲与税",
+      "currentBudget": 521996000,
+      "settled": 517090000,
+      "ratePct": 99.1,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "利子割交付金",
+      "currentBudget": 182180000,
+      "settled": 273156000,
+      "ratePct": 149.9,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "配当割交付金",
+      "currentBudget": 1077426000,
+      "settled": 1409440000,
+      "ratePct": 130.8,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "株式等譲渡所得割交付金",
+      "currentBudget": 1114294000,
+      "settled": 2060351000,
+      "ratePct": 184.9,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "地方消費税交付金",
+      "currentBudget": 13398403000,
+      "settled": 13789103000,
+      "ratePct": 102.9,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "自動車取得税交付金",
+      "currentBudget": 1000,
+      "settled": 1745391,
+      "ratePct": 174539.1,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "環境性能割交付金",
+      "currentBudget": 151825000,
+      "settled": 188217797,
+      "ratePct": 124,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "地方特例交付金",
+      "currentBudget": 1530541000,
+      "settled": 1530541000,
+      "ratePct": 100,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "特別区交付金",
+      "currentBudget": 30823751000,
+      "settled": 33224027000,
+      "ratePct": 107.8,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "交通安全対策特別交付金",
+      "currentBudget": 34006000,
+      "settled": 33918000,
+      "ratePct": 99.7,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "分担金及び負担金",
+      "currentBudget": 1732240000,
+      "settled": 1641174622,
+      "ratePct": 94.7,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "使用料及び手数料",
+      "currentBudget": 4650111000,
+      "settled": 4645503663,
+      "ratePct": 99.9,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "国庫支出金",
+      "currentBudget": 30351581000,
+      "settled": 29735784338,
+      "ratePct": 98,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "都支出金",
+      "currentBudget": 21140389000,
+      "settled": 19970753608,
+      "ratePct": 94.5,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "財産収入",
+      "currentBudget": 1985778000,
+      "settled": 1983371999,
+      "ratePct": 99.9,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "寄附金",
+      "currentBudget": 1133764000,
+      "settled": 1109265851,
+      "ratePct": 97.8,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "繰入金",
+      "currentBudget": 16359926000,
+      "settled": 9438726726,
+      "ratePct": 57.7,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "繰越金",
+      "currentBudget": 4695533000,
+      "settled": 4695532803,
+      "ratePct": 100,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "諸収入",
+      "currentBudget": 3397979000,
+      "settled": 3549678243,
+      "ratePct": 104.5,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "name": "特別区債",
+      "currentBudget": 5599000000,
+      "settled": 5200000000,
+      "ratePct": 92.9,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "議会費",
+      "currentBudget": 777127000,
+      "settled": 752472467,
+      "ratePct": 96.8,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "総務費",
+      "currentBudget": 22818586000,
+      "settled": 20350913876,
+      "ratePct": 89.2,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "地域振興費",
+      "currentBudget": 8701927000,
+      "settled": 8334545151,
+      "ratePct": 95.8,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "文化観光産業費",
+      "currentBudget": 11188055000,
+      "settled": 8780453835,
+      "ratePct": 78.5,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "福祉費",
+      "currentBudget": 46573458000,
+      "settled": 45019413131,
+      "ratePct": 96.7,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "子ども家庭費",
+      "currentBudget": 35703491000,
+      "settled": 34465235625,
+      "ratePct": 96.5,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "健康費",
+      "currentBudget": 19195507000,
+      "settled": 18204282024,
+      "ratePct": 94.8,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "環境清掃費",
+      "currentBudget": 9622836000,
+      "settled": 9435875779,
+      "ratePct": 98.1,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "土木費",
+      "currentBudget": 11937967000,
+      "settled": 11114807263,
+      "ratePct": 93.1,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "教育費",
+      "currentBudget": 21037001000,
+      "settled": 20397520175,
+      "ratePct": 97,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "公債費",
+      "currentBudget": 2708190000,
+      "settled": 2697343176,
+      "ratePct": 99.6,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "諸支出金",
+      "currentBudget": 4644576000,
+      "settled": 4642863000,
+      "ratePct": 100,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "name": "予備費",
+      "currentBudget": 266975000,
+      "settled": 0,
+      "ratePct": 0,
+      "locator": {
+        "file": "000434904.pdf",
+        "page": 2
+      }
+    }
+  ]
+}
