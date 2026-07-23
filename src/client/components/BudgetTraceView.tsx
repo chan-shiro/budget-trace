@@ -739,7 +739,8 @@ export default function BudgetTraceView({ v }: { v: any }) {
                       <strong style={S("color:#14181C;")}>{v.repAll.fyLabel}の全{v.repAll.total}事業</strong>が公表されています（サンプルではなく全量）。事業ごとに {v.repAll.holds} が載っています。
                       {v.repAll.has.estimate && <>決算額は評価年度のため<strong style={S("color:#14181C;")}>見込み</strong>です。</>}
                       {v.repAll.excluded > 0 && <>一般会計の事業のみを載せています（特別会計の{v.repAll.excluded}事業は除いています）。</>}
-                      {!v.repAll.has.achievement && <>この資料は総合評価や達成度の数値を持たず、7つの軸それぞれのカテゴリ値で自己分析しています。</>}
+                      {/* 評価様式の説明は derive が資料ごとに書く（横浜の7軸の文面を他市へ使い回さない） */}
+                      {v.repAll.evalNote && <>{v.repAll.evalNote}</>}
                     </p>
 
                     {/* 達成度の分布。**1が最良で5が最悪**＝甲府の A〜F と向きが逆なので必ず明示する。

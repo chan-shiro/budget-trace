@@ -16,5 +16,11 @@ export const REPORT_MUNIS: Record<string, { name: string; fy: string; fyLabel: s
     "fy": "R6",
     "fyLabel": "令和6年度",
     "count": 572
+  },
+  "011002": {
+    "name": "札幌市",
+    "fy": "R7",
+    "fyLabel": "令和7年度",
+    "count": 634
   }
 };

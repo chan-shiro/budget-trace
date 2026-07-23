@@ -4925,6 +4925,36 @@
       "checkedAt": "2026-07-15T17:40:58.352Z"
     },
     {
+      "sourceId": "sapporo-jigyou-hyouka-r7",
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020058.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723054505/https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020058.pdf",
+      "waybackTimestamp": "20260723054505",
+      "checkedAt": "2026-07-23T05:45:37.242Z",
+      "sha256Match": true,
+      "waybackBytes": 205104
+    },
+    {
+      "sourceId": "sapporo-jigyou-hyouka-r7",
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020064.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723054550/https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020064.pdf",
+      "waybackTimestamp": "20260723054550",
+      "checkedAt": "2026-07-23T05:46:46.400Z",
+      "sha256Match": true,
+      "waybackBytes": 207261
+    },
+    {
+      "sourceId": "sapporo-jigyou-hyouka-r7",
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020067.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723054650/https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020067.pdf",
+      "waybackTimestamp": "20260723054650",
+      "checkedAt": "2026-07-23T05:47:35.207Z",
+      "sha256Match": true,
+      "waybackBytes": 177001
+    },
+    {
       "sourceId": "sapporo-yosansetsumeisho-r2",
       "url": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r2/documents/reiwa2nenndoyosannsetsumeisyoippankaikeitokubetukaikei.pdf",
       "kind": "file",
