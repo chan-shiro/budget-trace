@@ -3326,6 +3326,49 @@ export const SOURCES: SourceEntry[] = [
   })),
 
   ...([
+    // 板橋区（2026-07-23 追加・#125）。[年度, ページID, PDF名, 歳入p, 歳出p, 歳出見出し, 追加opts]
+    // 「予算の概要」の一般会計当初予算総括表（歳入21款・歳出目的別11款・**百万円**・前年当初比較つき）。
+    // ⚠ **単位が百万円** — 原典自身が「千円単位の表を百万円単位に簡略化したため、増減率等が合わない
+    //    場合がある」と注記する資料（R7 p.11）。parserOptions.unit="millionYen" で ×1000 の等価変換を
+    //    かけて千円で保存する（財政事情の万円→千円と同じ型）。**他区（千円）比で丸め粒度が粗い**。
+    // ⚠ 2026-07-16 偵察の「glyph 復号が要る」の正体は **R4 の別資料（板橋区の予算）の ToUnicode
+    //    欠落**で、本命の概要 R5〜R8 は健全（uni=yes）。**R4・R3・R2 は概要含め全資料がスキャン or
+    //    ToUnicode 欠落で収録不可**（Wayback 捕捉でも実測）。H31 以前は実ファイル未検査。
+    // ⚠ R5 は歳出の議会費だけラベル行と金額行が割れ、CropX 後の金額のみ行をパーサの款番号単独行
+    //    判定が食っていた → bare 判定の1〜2桁制限（2026-07-23 のパーサ改修）とセットで通る。
+    // ⚠ 年度ページ ID に規則なし（実引き）。
+    ["R8", "001/059/985", "r8yosangaiyouhonpen.pdf", 4, 6, "歳出（目的別）", {}],
+    ["R7", "001/054/671", "r7yosannogaiyou.pdf", 10, 11, "歳出", { expenditureCropX: { from: 0, to: 445 } }],
+    ["R6", "001/049/183", "r6yosannogaiyou.pdf", 10, 11, "歳出", {}],
+    ["R5", "001/041/624", "r5_yosannogaiyou_2.pdf", 9, 10, "歳出", { expenditureCropX: { from: 0, to: 445 } }],
+  ] as const).map(([fy, pageId, file, rp, ep, expHeading, extra]) => ({
+    id: `itabashi-yosan-gaiyou-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 板橋区予算の概要（一般会計当初予算総括表）`,
+    publisher: "板橋区",
+    url: null,
+    urls: [`https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/${pageId}/${file}`],
+    landingPage: `https://www.city.itabashi.tokyo.jp/kusei/zaisei/yosan/${pageId.replace(/\//g, "").replace(/^0+/, "")}/index.html`,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "板橋区（一般会計・団体コード131199）",
+    // 「このサイトについて」（/kusei/kouhou/about/index.html・確認日 2026-07-23）。原文のまま。
+    // 都カタログ t131199 は211件中 予算・財政 0件（実検索）＝CC BY は及ばない。
+    license:
+      "本サイトに掲載する写真・画像などの各ファイル及びその内容に関する諸権利は板橋区役所に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      revenuePage: rp,
+      expenditurePage: ep,
+      revenueHeading: "歳入",
+      expenditureHeading: expHeading,
+      revenueTotalLabel: "計",
+      expenditureTotalLabel: "計",
+      unit: "millionYen" as const,
+      ...extra,
+    },
+  })),
+
+  ...([
     // 練馬区（2026-07-23 追加・#125）。[年度, 単位]
     // 区オープンデータサイトの「一般会計歳入歳出予算款別一覧表」XLSX（歳入・歳出の2ファイル/年度・
     // H23〜R8 の16年・URL は {fy}sainyu/{fy}saishutu.xlsx で**完全に規則的**＝32本すべて実在を偵察で確認）。

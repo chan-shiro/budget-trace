@@ -4922,6 +4922,16 @@
       "checkedAt": "2026-07-16T07:29:40.260Z"
     },
     {
+      "sourceId": "shinagawa-kanbetsu-r8",
+      "url": "https://www.city.shinagawa.tokyo.jp/ct/pdf/2026tousyoyosan_3.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723040146/https://www.city.shinagawa.tokyo.jp/ct/pdf/2026tousyoyosan_3.pdf",
+      "waybackTimestamp": "20260723040146",
+      "checkedAt": "2026-07-23T04:05:33.872Z",
+      "sha256Match": true,
+      "waybackBytes": 3294045
+    },
+    {
       "sourceId": "shinjuku-kessan-taisho-r6",
       "url": "https://www.city.shinjuku.lg.jp/content/000434904.pdf",
       "kind": "file",

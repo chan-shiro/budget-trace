@@ -1920,6 +1920,11 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       "h23", "h22", "h21", "h20", "h19"] as const).map((fy) => ({
       srcId: `minato-yosangaiyou-${fy}`, muniCode: "131032", muniName: "港区", prefName: "東京都", isPref: false,
     })),
+    // 板橋区（2026-07-23 追加・#125）。予算の概要の総括表（百万円→千円へ ×1000 等価変換・
+    // 他区より丸め粒度が粗い）。R4 以前はスキャン/ToUnicode 破損で収録不可。
+    ...(["r8", "r7", "r6", "r5"] as const).map((fy) => ({
+      srcId: `itabashi-yosan-gaiyou-${fy}`, muniCode: "131199", muniName: "板橋区", prefName: "東京都", isPref: false,
+    })),
     // 練馬区（2026-07-23 追加・#125）。款別一覧表 XLSX（オープンデータ・CC BY）。H23〜R8 の16年。
     // 歳出は H23 が13款 → H24 の組織改正で現行14款（民生費・衛生費が無い独自体系）。
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "r1", "h30", "h29", "h28", "h27", "h26",
