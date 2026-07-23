@@ -13,13 +13,13 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 53,
+  "budgetCount": 54,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 392,
-  "fileCount": 548,
+  "sourceCount": 410,
+  "fileCount": 567,
   "archivedCount": 370,
-  "licenseOpen": 36,
+  "licenseOpen": 54,
   "licensePermission": 298,
   "licenseUnverified": 58,
   "kessanRange": "R2〜R6（5年度）",
@@ -55,6 +55,12 @@ export const ROADMAP_PROGRESS = {
       "code": "131113",
       "years": 18,
       "range": "H20〜R8（18年度）"
+    },
+    {
+      "name": "世田谷区",
+      "code": "131121",
+      "years": 18,
+      "range": "H21〜R8（18年度）"
     },
     {
       "name": "練馬区",

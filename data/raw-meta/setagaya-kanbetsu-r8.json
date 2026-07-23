@@ -1,0 +1,19 @@
+{
+  "sourceId": "setagaya-kanbetsu-r8",
+  "files": [
+    {
+      "filename": "ippansainyu.csv",
+      "sha256": "e13bceb14ffe232a184e853843e424a6c0dd27a41bbea85c6fce66f2509b8cc1",
+      "bytes": 5586802,
+      "fetchedAt": "2026-07-23T03:21:57.681Z",
+      "fetchedFrom": "https://www.city.setagaya.lg.jp/documents/6208/ippansainyu.csv"
+    },
+    {
+      "filename": "ippansaisyutu.csv",
+      "sha256": "c9aa48b12232671e1ee18e2ee2f808f1fd5e7e3731bf1ba0a4edb6f008c5e34d",
+      "bytes": 3654521,
+      "fetchedAt": "2026-07-23T03:21:57.756Z",
+      "fetchedFrom": "https://www.city.setagaya.lg.jp/documents/6208/ippansaisyutu.csv"
+    }
+  ]
+}
