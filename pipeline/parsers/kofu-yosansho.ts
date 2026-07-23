@@ -154,6 +154,13 @@ interface Options {
   /** 分冊形式（R2・R3）: 款別一覧表のファイル名。未指定なら単一ファイル */
   kanFile?: string;
   /**
+   * 原典の金額単位（既定 thousandYen）。**millionYen は ×1000 で千円へ正規化**して保存する
+   * （2026-07-23・板橋 #125。原典自身が「千円単位の表を百万円単位に簡略化した」と注記する資料。
+   * 財政事情の万円→千円変換と同じ「印字値の等価変換」であり推計ではない）。
+   * doc.unit は常に thousandYen（変換済み）。
+   */
+  unit?: "thousandYen" | "millionYen";
+  /**
    * 歳入と歳出が**別ファイル**の資料（品川 R7・台東 R2/H31/H27・熊本の過年度 — 2026-07-23 #125）。
    * 指定するときは**両方**を指定する（片方だけだと「残りは kanFile」という暗黙が生まれ、
    * ファイルの取り違えが静かに通るため throw する）。kanFile とは併用しない。
@@ -606,7 +613,11 @@ function parseKanPage(
     if (headerRe.test(compact)) continue; // 表ヘッダ・タイトル・注記
 
     // 款番号の単独行（折返し款の中間行）。○◎●の付番マーカーを許容
-    const bare = compact.match(/^[○◎●]*(\d+)$/);
+    // ⚠ 桁数を1〜2桁に制限する（2026-07-23・板橋 R5）。CropX で増減率を切った後に「金額のみの行」
+    // が残る資料では、無制限だと `931 909 22` の連結 `93190922` を款番号として食い、直後の款が
+    // 丸ごと落ちる（Σ ゲートは捕まえるが原因が見えにくい）。款番号は全収録ソースで2桁以内
+    // （最大は相模原の 90）。
+    const bare = compact.match(/^[○◎●]*(\d{1,2})$/);
     if (bare) {
       // **金額が款番号より前（上段）に来る第5の折返し型**（2026-07-16・静岡 R8）:
       //   `     農    林     5,152,466   4,616,851   535,615 …`  ← 上段に款名前半＋金額
@@ -1955,6 +1966,17 @@ export function parseKofuYosansho(
 
   const rev = parseKanPage(revFile.path, revFile.filename, revenuePages, "revenue", opts);
   const exp = parseKanPage(expFile.path, expFile.filename, expenditurePages, "expenditure", opts);
+  if (opts.unit === "millionYen") {
+    // 百万円 → 千円（×1000・印字値の等価変換）。facts と合計の両方
+    for (const side of [rev, exp]) {
+      for (const l of side.lines) {
+        l.amount *= 1000;
+        if (l.prevAmount != null) l.prevAmount *= 1000;
+      }
+      side.total *= 1000;
+      if (side.prevTotal != null) side.prevTotal *= 1000;
+    }
+  }
   if (rev.prevBasis !== exp.prevBasis) {
     throw new Error(`${source.id}: 歳入と歳出で前年度列の基準が違います（${rev.prevBasis} / ${exp.prevBasis}）`);
   }

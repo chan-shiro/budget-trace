@@ -1920,6 +1920,11 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       "h23", "h22", "h21", "h20", "h19"] as const).map((fy) => ({
       srcId: `minato-yosangaiyou-${fy}`, muniCode: "131032", muniName: "港区", prefName: "東京都", isPref: false,
     })),
+    // 板橋区（2026-07-23 追加・#125）。予算の概要の総括表（百万円→千円へ ×1000 等価変換・
+    // 他区より丸め粒度が粗い）。R4 以前はスキャン/ToUnicode 破損で収録不可。
+    ...(["r8", "r7", "r6", "r5"] as const).map((fy) => ({
+      srcId: `itabashi-yosan-gaiyou-${fy}`, muniCode: "131199", muniName: "板橋区", prefName: "東京都", isPref: false,
+    })),
     // 世田谷区（2026-07-23 追加・#125）。R8=見える化ボード CSV / H21〜R7=年度別当初予算データ XLS
     // （ID は setagaya-kanbetsu-* で統一＝資料またぎでもクロスチェーンが張れる・江戸川の前例）。
     // 23区で人口最大（92万）。職員費の款あり（歳出款9）。
