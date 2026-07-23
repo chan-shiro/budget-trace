@@ -1,0 +1,401 @@
+{
+  "docType": "budget-book",
+  "sourceId": "setagaya-kanbetsu-h23",
+  "parser": "setagaya-tousho-xls",
+  "parserVersion": "0.1.0",
+  "parsedAt": "2026-07-23T03:22:48.272Z",
+  "unit": "thousandYen",
+  "fiscalYear": "H23",
+  "account": "一般会計",
+  "revenueTotal": 248943713,
+  "expenditureTotal": 248943713,
+  "prevRevenueTotal": 249093606,
+  "prevExpenditureTotal": 249093606,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "特別区税",
+      "amount": 107256000,
+      "prevAmount": 110576000,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳入（款別）",
+        "row": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "地方譲与税",
+      "amount": 1345000,
+      "prevAmount": 1385000,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳入（款別）",
+        "row": 6
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "利子割交付金",
+      "amount": 1434000,
+      "prevAmount": 1320000,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳入（款別）",
+        "row": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "配当割交付金",
+      "amount": 621000,
+      "prevAmount": 615000,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳入（款別）",
+        "row": 8
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 363000,
+      "prevAmount": 240000,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳入（款別）",
+        "row": 9
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "地方消費税交付金",
+      "amount": 8258000,
+      "prevAmount": 8209000,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳入（款別）",
+        "row": 10
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "自動車取得税交付金",
+      "amount": 747000,
+      "prevAmount": 736000,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳入（款別）",
+        "row": 11
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "地方特例交付金",
+      "amount": 1449000,
+      "prevAmount": 2065000,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳入（款別）",
+        "row": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "特別区交付金",
+      "amount": 37400000,
+      "prevAmount": 31900000,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳入（款別）",
+        "row": 13
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 132000,
+      "prevAmount": 140000,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳入（款別）",
+        "row": 14
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "分担金及負担金",
+      "amount": 2569177,
+      "prevAmount": 2316484,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳入（款別）",
+        "row": 15
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "使用料及手数料",
+      "amount": 5641271,
+      "prevAmount": 5731619,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳入（款別）",
+        "row": 16
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "国庫支出金",
+      "amount": 36230089,
+      "prevAmount": 35852040,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳入（款別）",
+        "row": 17
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "都支出金",
+      "amount": 16136824,
+      "prevAmount": 16655552,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳入（款別）",
+        "row": 18
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "財産収入",
+      "amount": 784118,
+      "prevAmount": 948973,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳入（款別）",
+        "row": 19
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "寄附金",
+      "amount": 1,
+      "prevAmount": 1,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳入（款別）",
+        "row": 20
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 17,
+      "kanName": "繰入金",
+      "amount": 13255831,
+      "prevAmount": 16701361,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳入（款別）",
+        "row": 21
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 18,
+      "kanName": "繰越金",
+      "amount": 1,
+      "prevAmount": 1,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳入（款別）",
+        "row": 22
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 19,
+      "kanName": "諸収入",
+      "amount": 5825401,
+      "prevAmount": 5146575,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳入（款別）",
+        "row": 23
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 20,
+      "kanName": "特別区債",
+      "amount": 9496000,
+      "prevAmount": 8555000,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳入（款別）",
+        "row": 24
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 956701,
+      "prevAmount": 709197,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳出（款別）",
+        "row": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 21483870,
+      "prevAmount": 21845251,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳出（款別）",
+        "row": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "民生費",
+      "amount": 99465039,
+      "prevAmount": 92928320,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳出（款別）",
+        "row": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "環境費",
+      "amount": 9115289,
+      "prevAmount": 8817686,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳出（款別）",
+        "row": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "衛生費",
+      "amount": 5689868,
+      "prevAmount": 4742030,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳出（款別）",
+        "row": 9
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "産業経済費",
+      "amount": 2647076,
+      "prevAmount": 2646870,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳出（款別）",
+        "row": 10
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "土木費",
+      "amount": 23547321,
+      "prevAmount": 31840092,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳出（款別）",
+        "row": 11
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "教育費",
+      "amount": 27162437,
+      "prevAmount": 27216629,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳出（款別）",
+        "row": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "職員費",
+      "amount": 47523781,
+      "prevAmount": 46937823,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳出（款別）",
+        "row": 13
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "公債費",
+      "amount": 10975053,
+      "prevAmount": 10994030,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳出（款別）",
+        "row": 14
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 11,
+      "kanName": "諸支出金",
+      "amount": 77278,
+      "prevAmount": 115678,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳出（款別）",
+        "row": 15
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 12,
+      "kanName": "予備費",
+      "amount": 300000,
+      "prevAmount": 300000,
+      "locator": {
+        "file": "tousyoyosan.xls",
+        "sheet": "歳出（款別）",
+        "row": 16
+      }
+    }
+  ]
+}
