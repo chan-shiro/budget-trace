@@ -1,0 +1,19 @@
+{
+  "sourceId": "taito-kanbetsu-r2",
+  "files": [
+    {
+      "filename": "2gaisansho_sainyuu.pdf",
+      "sha256": "c6cb1fdb5489dd962826040e169c99c4fe5bc06ca6e9212a5e9aa0a23b3599bb",
+      "bytes": 138710,
+      "fetchedAt": "2026-07-23T00:46:03.192Z",
+      "fetchedFrom": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/2yosanannopointo.files/2gaisansho_sainyuu.pdf"
+    },
+    {
+      "filename": "2gaisansho_saishutu.pdf",
+      "sha256": "a98403fe79f6f283ca4530a4d08340d81c5e2d3c39d119037150ffeb06315a34",
+      "bytes": 82327,
+      "fetchedAt": "2026-07-23T00:46:03.239Z",
+      "fetchedFrom": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/2yosanannopointo.files/2gaisansho_saishutu.pdf"
+    }
+  ]
+}

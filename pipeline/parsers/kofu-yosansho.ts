@@ -153,6 +153,13 @@ interface Options {
   projectPages?: { from: number; to: number };
   /** 分冊形式（R2・R3）: 款別一覧表のファイル名。未指定なら単一ファイル */
   kanFile?: string;
+  /**
+   * 歳入と歳出が**別ファイル**の資料（品川 R7・台東 R2/H31/H27・熊本の過年度 — 2026-07-23 #125）。
+   * 指定するときは**両方**を指定する（片方だけだと「残りは kanFile」という暗黙が生まれ、
+   * ファイルの取り違えが静かに通るため throw する）。kanFile とは併用しない。
+   */
+  revenueFile?: string;
+  expenditureFile?: string;
   /** 分冊形式: 主な事業のファイル名 */
   projectsFile?: string;
   /**
@@ -1931,11 +1938,23 @@ export function parseKofuYosansho(
     if (!f) throw new Error(`${source.id}: ${role}のファイル ${name} が raw にありません`);
     return f;
   };
-  const kanFile = pick(opts.kanFile, "款別一覧");
-  const projFile = pick(opts.projectsFile, "主な事業");
+  // 歳入・歳出が別ファイルの分冊形式（revenueFile/expenditureFile）。片方だけの指定は
+  // ファイル取り違えの温床なので認めない（両方指定 or 両方なし）
+  if ((opts.revenueFile == null) !== (opts.expenditureFile == null)) {
+    throw new Error(`${source.id}: revenueFile / expenditureFile は両方指定してください（片方だけは不可）`);
+  }
+  if (opts.revenueFile != null && opts.kanFile != null) {
+    throw new Error(`${source.id}: kanFile と revenueFile/expenditureFile は併用できません`);
+  }
+  const sideFiles = opts.revenueFile != null;
+  const revFile = sideFiles ? pick(opts.revenueFile, "歳入の款別一覧") : pick(opts.kanFile, "款別一覧");
+  const expFile = sideFiles ? pick(opts.expenditureFile, "歳出の款別一覧") : revFile;
+  // 主な事業ファイルは projectPages を使うときだけ解決する（分冊2ファイル構成で projectsFile
+  // 未指定のとき、pick の「1ファイル前提」チェックが誤って throw するため）
+  const projFile = opts.projectPages ? pick(opts.projectsFile, "主な事業") : revFile;
 
-  const rev = parseKanPage(kanFile.path, kanFile.filename, revenuePages, "revenue", opts);
-  const exp = parseKanPage(kanFile.path, kanFile.filename, expenditurePages, "expenditure", opts);
+  const rev = parseKanPage(revFile.path, revFile.filename, revenuePages, "revenue", opts);
+  const exp = parseKanPage(expFile.path, expFile.filename, expenditurePages, "expenditure", opts);
   if (rev.prevBasis !== exp.prevBasis) {
     throw new Error(`${source.id}: 歳入と歳出で前年度列の基準が違います（${rev.prevBasis} / ${exp.prevBasis}）`);
   }
