@@ -2426,7 +2426,12 @@ export const SOURCES: SourceEntry[] = [
     //    → **モードは「Σ が合うまで試す」のではなく、原典と突き合わせて人が決める**。
     //    裏付け: **H26 の前年度列 = H25 の当年度列**・**H25 の前年度列 = H24 の当年度列**が
     //    款9 を含めて全款一致する（独立した3資料が噛み合う）。
-    // ⚠ **H27 だけは救えない**（ToUnicode 全面欠落＝`-raw` でも文字が化ける。§10a）。大田で唯一の穴。
+    // ~~H27 だけは救えない~~ → **#159 の decodeGarble で復号収録**（下の H27 行コメント参照）。大田は全year。
+    // ⚠ H27 は ToUnicode 全面欠落 → decodeGarble で復号（#159・従来「大田で唯一の穴」判定を覆した）。
+    //    款別表は「予算編成の概要」（yosanhenseinogaiyou.pdf・12p）の p.11/p.12。数字は素の ASCII で
+    //    化けておらず、款名・記号だけが化ける（ᇞ=△ 等）。見出しは（1）が第2ガーブル族（䠄㻝䠅型・
+    //    CJK拡張A域=マップ外でも throw しない）のため弱い語（歳入/歳出）で引く
+    ["H27", 11, 12, "27yosan/27yosangaiyo", "27yosan/27yosangaiyo.files/yosanhenseinogaiyou", "h27", "layout"],
     ["H26", 19, 20, "26yosan", "26yosan.files/26yosan_gaiyou", "normal", "raw"],
     ["H25", 19, 20, "25yosan", "25yosan.files/25yosan_gaiyou", "normal", "raw"],
     ["H24", 19, 20, "24yosan", "24yosan.files/24yosan_gaiyou", "normal", "layout"],
@@ -2451,13 +2456,15 @@ export const SOURCES: SourceEntry[] = [
     parserOptions: {
       revenuePage: rev,
       expenditurePage: exp,
-      // 側の順序（上記）。H22 以前は歳出が（1）。
-      revenueHeading: side === "swapped" ? "（2） 歳入" : "（1） 歳入",
-      expenditureHeading: side === "swapped" ? "（1） 歳出" : "（2） 歳出",
+      // 側の順序（上記）。H22 以前は歳出が（1）。H27 は（1）が化けるので弱い語（上記）
+      revenueHeading: side === "h27" ? "歳入" : side === "swapped" ? "（2） 歳入" : "（1） 歳入",
+      expenditureHeading: side === "h27" ? "歳出" : side === "swapped" ? "（1） 歳出" : "（2） 歳出",
       // H20 だけ既定ラベル（上記）
       ...(fy === "H20" ? {} : { revenueTotalLabel: "合計", expenditureTotalLabel: "合計" }),
       // H26・H25 だけ -raw（上記）。他年度は既定の -layout で読む
       ...(src === "raw" ? { textSource: "raw" as const } : {}),
+      // H27 は ToUnicode 欠落 → 復号（#159）
+      ...(fy === "H27" ? { decodeGarble: true } : {}),
     },
   })),
 
@@ -3665,8 +3672,18 @@ export const SOURCES: SourceEntry[] = [
     ["R8", 34, 35, "https://www.city.toshima.lg.jp/documents/12068/20260205141545.pdf"],
     ["R6", 39, 41, "https://www.city.toshima.lg.jp/documents/12068/r6_toshimaku_yosannsho.pdf"],
     ["R5", 39, 41, "https://www.city.toshima.lg.jp/documents/12068/r5_toshimaku_yosannsho.pdf"],
+    // R4・R2 は **ToUnicode 欠落 → decodeGarble で復号**（#159・従来「修復不可」判定を覆した）。
+    // 現行サイトから消滅 → Wayback（2023-02-02 の捕捉が完全・2025 捕捉は再圧縮で小さく別物）。
+    // R4 は見開き型で歳入 p.42/歳出 p.44・R2 は歳入 p.41/歳出 p.43（いずれも左ページで完結・実測）
+    ["R4", 42, 44, "https://web.archive.org/web/20230202015242id_/https://www.city.toshima.lg.jp/004/kuse/shisaku/yosan/documents/04toushoyosan.pdf"],
     // R3 は現行サイトから消滅 → Wayback（20211114090748 の捕捉が健全・3,234,716 bytes・パース可を実測）
     ["R3", 42, 44, "https://web.archive.org/web/20211114090748id_/https://www.city.toshima.lg.jp/004/kuse/shisaku/yosan/documents/03toushoyosan.pdf"],
+    ["R2", 41, 43, "https://web.archive.org/web/20230202031059id_/https://www.city.toshima.lg.jp/004/kuse/shisaku/yosan/documents/02toushoyosan.pdf"],
+    // H31〜H29 も ToUnicode 欠落 → decodeGarble（#159）。Wayback 2023-02-02 の捕捉
+    // （H31 の 2025 捕捉は 1MiB ちょうどの打ち切り＝§9b なので使わない）。3年度とも歳入 p.41/歳出 p.43
+    ["H31", 41, 43, "https://web.archive.org/web/20230202021859id_/https://www.city.toshima.lg.jp/004/kuse/shisaku/yosan/documents/31toushoyosan.pdf"],
+    ["H30", 41, 43, "https://web.archive.org/web/20230202023230id_/https://www.city.toshima.lg.jp/004/kuse/shisaku/yosan/documents/30tousyoyosan.pdf"],
+    ["H29", 41, 43, "https://web.archive.org/web/20230202031608id_/https://www.city.toshima.lg.jp/004/kuse/shisaku/yosan/documents/29yosansho.pdf"],
   ] as const).map(([fy, rev, exp, url]) => ({
     // 豊島区（団体コード 131164・人口 294,644＝R6 決算状況調から実引き）。
     // 「当初予算書」（議案書・全300〜570ページ）の「(1) 歳入歳出予算総括表」（一般会計）。
@@ -3693,11 +3710,11 @@ export const SOURCES: SourceEntry[] = [
     //   R3 前年度列 128,293,228 = R2 当初（R3 プレス「対前年度比 19億3千4百万円 1.5％増」と整合）。
     // ⚠ 本資料は**議案（予算案）**。R8 は議決後の「財政状況のあらまし」（zaise/documents/2606111531.html）の
     //   当初予算 1,689億8,605万円と一致＝原案どおり成立を確認済み。年度を足すときは毎回突合すること。
-    // ⚠ **R7・R4・R2 は収録不可**（欠番の理由）: R4・R2 はフォントの ToUnicode 全面欠落
-    //   （pdftotext が `ṓධṓฟண⟬⥲ᣓ⾲`＝歳入歳出予算総括表 を返す・R2 は実測再確認）。
-    //   R7 は原本レイヤに OCR レイヤが重なり数字が壊れる（`(ー)`＝(1)・`干円`＝千円・
-    //   `38,784,`+`326` の行割れ・実測再確認）。修復不可。なお R7 概要 PDF は歳出だけ款別＋
-    //   前年比較が読めるが**歳入が款別でない**（国・都支出金合算等）ため代替にならない。
+    // ⚠ **R7 のみ収録不可**: 原本レイヤに OCR レイヤが重なり数字が壊れる（`(ー)`＝(1)・
+    //   `干円`＝千円・`38,784,`+`326` の行割れ・実測再確認）。**置換が一貫しない＝非決定論的**
+    //   なので #159 の復号でも救えない。R7 概要 PDF は歳入が款別でないため代替にならない。
+    //   R4・R2・H31〜H29 の ToUnicode 欠落は #159 の decodeGarble で復号収録済み（§10d）。
+    //   H28 は分冊総括表がテキスト層ゼロ（画像）＝ H29 が下限。
     id: `toshima-yosansho-${fy.toLowerCase()}`,
     title: `${eraYear(fy)}年度 豊島区当初予算書（歳入歳出予算総括表）`,
     publisher: "豊島区",
@@ -3726,6 +3743,12 @@ export const SOURCES: SourceEntry[] = [
       // ⚠ 強い見出しに変えないこと（歳出側に弱い節ラベルしか無い。上記コメント参照）
       revenueHeading: "歳入",
       expenditureHeading: "歳出",
+      // R4・R2・H31〜H29 は ToUnicode 欠落 → 復号してからパース（#159・garble-decode.ts）。
+      // dashAsZero: この様式は皆増を前年度セルの － で表す（H31 款8 環境性能割交付金で実測）
+      ...(["R4", "R2", "H31", "H30", "H29"].includes(fy) ? { decodeGarble: true, dashAsZero: true } : {}),
+      // R2 歳入に廃止款の無番号行（自動車取得税交付金・本年度－・前年度125,000）→ kanNoless で拾う
+      // （拾わないと前年度Σが -125,000 割れる。dashAsZero とセットで [0, 125000] の2整数になる）
+      ...(fy === "R2" ? { kanNoless: true } : {}),
     },
   })),
 

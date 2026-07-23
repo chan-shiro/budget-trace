@@ -12,6 +12,7 @@
 // 自治体差は parserOptions で吸収する: 見出し語・合計ラベル（甲府=「歳入合計」/豊川=「合計」）、
 // 款番号の全角（豊川）・○接頭辞（山口）・負号 △/▲。
 import { execFileSync } from "node:child_process";
+import { decodeGarbleText } from "../lib/garble-decode";
 import type { BudgetBookDoc, BudgetLineFact, BudgetProjectFact, SourceEntry } from "../types";
 
 export const PARSER_VERSION = "0.2.0";
@@ -119,6 +120,22 @@ interface Options {
    *   畳んでから `includes` するので当たる。
    */
   textSource?: "layout" | "raw";
+  /**
+   * **ToUnicode 欠落 PDF の決定論的復号**（#159・pipeline/lib/garble-decode.ts）。
+   * 豊島 R4/R2/H31〜H29・大田 H27・品川 R2 は荒川（#125）と同一の化けマップで、
+   * 数字が制御文字（真の字 − 0x1D）・漢字が固定ガーブルになる。true にすると抽出テキストを
+   * 復号してから通常のパースに入る。**マップ外の化け字は throw**（静かな誤読を許さない）。
+   */
+  decodeGarble?: boolean;
+  /**
+   * **空セルを「－」で印字する様式**（豊島の総括表・#159）。単独トークンの － を 0 として読む。
+   * 豊島 H31 歳入款8 環境性能割交付金は前年度セルが `－`（新設＝皆増）だが、この様式には
+   * 「皆増」のラベル列が無いので既存の皆増機構に乗らず、**整数が1つの行として静かに落ちて
+   * Σ が -37,000 割れた**（実測・Σゲートが検出）。
+   * ⚠ 全ソース既定にしない — 様式によっては － が「データ無し」（練馬の廃止款等）を意味し、
+   *   0 と読むと嘘になる。総括表のように「セル＝金額欄のみ」の様式でだけ使う。
+   */
+  dashAsZero?: boolean;
   /**
    * **款と項が同一表に混在する様式**（大阪 §8e・相模原 §8p）で、**款行の字下げの上限**。
    * 指定するとこれより深く字下げされた行は款のパースから外れる（＝項・目の行を款と誤認しない）。
@@ -373,6 +390,10 @@ function parseKanPage(
       "\n" +
       pdfPageText(filePath, spread.amountPage, undefined, src)
     : pages.map((p) => pdfPageText(filePath, p, cropX, src)).join("\n");
+  // ToUnicode 欠落の復号（Options.decodeGarble 参照）。パース前にページ全文を復元する
+  if (opts.decodeGarble) text = decodeGarbleText(text, `${filename} ${pageLabel}`);
+  // 空セルの － を 0 に（Options.dashAsZero 参照）。単独トークンだけ・款名中のハイフンには当たらない
+  if (opts.dashAsZero) text = text.replace(/(?<=[\s　]|^)[－−](?=[\s　]|$)/gm, "0");
   const heading =
     side === "revenue"
       ? opts.revenueHeading ?? "歳入予算款別一覧"

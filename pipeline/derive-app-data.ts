@@ -1857,7 +1857,8 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     //   **款名を全件目視して確認済み**（5年度×32款＝160件・§10f／registry のコメント）。
     // ⚠ **H20 の歳出款8 は `清掃費`**（H21 以降の `環境清掃費` への改称前。金額一致で確認済み）。
     //   款名で年度をまたいで結合すると H20 だけ繋がらないが、**別款ではなく改称**。
-    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28",
+    // H27 は #159 の decodeGarble で復号収録（別冊「予算編成の概要」）＝ H20〜R8 の全year
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28", "h27",
       "h26", "h25", "h24", "h23", "h22", "h21", "h20"] as const).map((fy) => ({
       srcId: `ota-yosansho-${fy}`, muniCode: "131113", muniName: "大田区", prefName: "東京都", isPref: false,
     })),
@@ -1968,9 +1969,9 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       "h25", "h24", "h23", "h22", "h21", "h20", "h19", "h18", "h17"] as const).map((fy) => ({
       srcId: `sumida-yosangaiyou-${fy}`, muniCode: "131075", muniName: "墨田区", prefName: "東京都", isPref: false,
     })),
-    // 豊島区は**R7・R4・R2 が欠番**（R4・R2 は ToUnicode 全面欠落、R7 は OCR レイヤの重なりで
-    // 数字が壊れる＝修復不可。registry のコメント参照）。R3 は Wayback から回収。
-    ...(["r8", "r6", "r5", "r3"] as const).map((fy) => ({
+    // 豊島区は **R7 のみ欠番**（OCR レイヤの重なりで数字が壊れる＝非決定論的で修復不可）。
+    // R4・R2・H31〜H29 は #159 の decodeGarble で復号収録。R2 以前は Wayback から回収。
+    ...(["r8", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29"] as const).map((fy) => ({
       srcId: `toshima-yosansho-${fy}`, muniCode: "131164", muniName: "豊島区", prefName: "東京都", isPref: false,
     })),
     // 足立区。あらまし総括表。**R5〜R8 は列順が [前年度, 当年度] に反転**（prevColumnFirst・

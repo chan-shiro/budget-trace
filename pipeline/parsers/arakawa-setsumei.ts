@@ -18,6 +18,7 @@
 //      復号の取り違え（数字のシフト誤り等）はここで大声で落ちる
 //   3. 年度間クロスチェーン（derive）・概要 PDF（テキスト健全・百万円）との突合は収録時に実施
 import { execFileSync } from "node:child_process";
+import { GARBLE_CHAR_MAP, decodeGarbleBase, decodeGarbleName } from "../lib/garble-decode";
 import type { BudgetBookDoc, BudgetLineFact, SourceEntry } from "../types";
 
 export const PARSER_VERSION = "0.1.0";
@@ -27,146 +28,14 @@ interface Options {
   expenditurePage: number;
 }
 
-// 漢字ガーブル → 真の文字（R2/R7/R8 の款名・合計行から機械構築・矛盾0を確認済み）
-const CHAR_MAP: Record<string, string> = {
-  "Ύ": "清",
-  "Ύ": "清",
-  "Ώ": "渡",
-  "⮬": "自",
-  "ື": "動",
-  "㌴": "車",
-  "\u0F76": "取",
-  "Ώ": "渡",
-  "ࡧ": "び",
-  "୚": "与",
-  "ண": "予",
-  "஺": "交",
-  "௜": "付",
-  "఍": "会",
-  "౑": "使",
-  "౛": "例",
-  "ഛ": "備",
-  "മ": "債",
-  "ධ": "入",
-  "඲": "全",
-  "බ": "公",
-  "ฟ": "出",
-  "ศ": "分",
-  "ู": "別",
-  "฼": "利",
-  "๭": "割",
-  "ົ": "務",
-  "༊": "区",
-  "ཬ": "及",
-  "཰": "収",
-  "ྜ": "合",
-  "ᅜ": "国",
-  "ᅵ": "土",
-  "ᆅ": "地",
-  "ቃ": "境",
-  "Ꮚ": "子",
-  "Ᏻ": "安",
-  "ᐤ": "寄",
-  "ᑐ": "対",
-  "ᗜ": "庫",
-  "ᘧ": "式",
-  "ᙜ": "当",
-  "ᚓ": "得",
-  "ᛶ": "性",
-  "ᡤ": "所",
-  "ᡭ": "手",
-  "ᢸ": "担",
-  "ᤲ": "掃",
-  "ᨭ": "支",
-  "ᩍ": "教",
-  "ᩘ": "数",
-  "ᩱ": "料",
-  "᪉": "方",
-  "ᮌ": "木",
-  "ᰴ": "株",
-  "ᴗ": "業",
-  "ṓ": "歳",
-  "Ẹ": "民",
-  "ᾘ": "消",
-  "῭": "済",
-  "≉": "特",
-  "⎔": "環",
-  "⏕": "生",
-  "⏘": "産",
-  "⏝": "用",
-  "⛯": "税",
-  "➼": "等",
-  "⟇": "策",
-  "⤒": "経",
-  "⥲": "総",
-  "⧞": "繰",
-  "⫱": "育",
-  "⬟": "能",
-  "⾨": "衛",
-  "ィ": "計",
-  "ㅖ": "諸",
-  "㆟": "議",
-  "ㆡ": "譲",
-  "㈇": "負",
-  "㈈": "財",
-  "㈝": "費",
-  "㉺": "越",
-  "㏻": "通",
-  "㒔": "都",
-  "㓄": "配",
-  "㔠": "金",
-  "㝃": "附"
-};
+// 漢字ガーブル・数字シフト・bidi の復号は pipeline/lib/garble-decode.ts に共通化（#159）。
+// 豊島 R4/R2/H31〜H29・大田 H27・品川 R2 が同一マップであることが確認され、資料別ではなくなった。
 
 function pdfPageText(filePath: string, page: number): string {
   return execFileSync("pdftotext", ["-layout", "-f", String(page), "-l", String(page), filePath, "-"], {
     encoding: "utf8",
     maxBuffer: 32 * 1024 * 1024,
   });
-}
-
-/**
- * 数字シフト（+0x1D）・△・bidi 処理。漢字マップは**款名ゾーンだけ**に適用する（呼び出し側）。
- * ⚠ **RLE(U+202B)〜PDF(U+202C) で囲まれた負数は視覚順＝逆順で出てくる**（`△4,006` が
- * `600,4△` に化ける・実測）。区間の中身を反転して論理順に戻す。比較列の等式ゲートが
- * この処理の正しさを全款で検算する（反転を忘れると即・等式が割れる）。
- */
-function decodeBase(s: string): string {
-  let out = "";
-  let rtl: string[] | null = null;
-  for (const ch of s) {
-    const o = ch.codePointAt(0)!;
-    let mapped: string | null = null;
-    if (o >= 0x03 && o <= 0x1c) mapped = String.fromCharCode(o + 0x1d);
-    else if (o === 0x06b9) mapped = "△";
-    else if (o === 0x202b) { rtl = []; continue; } // RLE: 逆順区間の開始
-    else if (o === 0x202c) { // PDF: 区間の終わり → 反転して吐く
-      if (rtl) { out += rtl.reverse().join(""); rtl = null; }
-      continue;
-    } else if ((o >= 0x202a && o <= 0x202e) || (o >= 0x2066 && o <= 0x2069)) continue;
-    else mapped = ch;
-    if (rtl) rtl.push(mapped);
-    else out += mapped;
-  }
-  if (rtl) out += rtl.reverse().join(""); // 閉じ忘れ（行末で切れた区間）
-  return out;
-}
-
-function decodeName(garbled: string, where: string): string {
-  let out = "";
-  const unknown: string[] = [];
-  for (const ch of garbled) {
-    if (CHAR_MAP[ch] != null) out += CHAR_MAP[ch];
-    else if (/[\u3040-\u30ff\u4e00-\u9fff]/.test(ch)) out += ch; // 素の日本語（化けていない字）
-    else unknown.push(`${ch}(U+${ch.codePointAt(0)!.toString(16).toUpperCase()})`);
-  }
-  if (unknown.length > 0) {
-    throw new Error(
-      `${where}: 款名に文字マップ外の化け字があります: ${unknown.join(" ")}。` +
-        `CHAR_MAP に追加する前に、必ず健全な資料（概要 PDF 等）と突合して真の字を確定すること`,
-    );
-  }
-  return out;
 }
 
 const toAmount = (t: string): number => {
@@ -189,13 +58,13 @@ function parsePage(
   let total: number | null = null;
   let prevTotal: number | null = null;
   for (const line of raw.split("\n")) {
-    const d = decodeBase(line);
+    const d = decodeGarbleBase(line);
     // 款行: `1 <ガーブル款名> 本年度 前年度 比較`
     // ⚠ 比較列の負号 △ は bidi の論理順で**数字の後ろ**に来ることがある（`977,271△`）。
     //   前後どちらも受ける（toAmount は位置を問わず △ を負と読む）
     const m = d.match(/^\s*(\d{1,2})\s+(\S+)\s+([\d,]+)\s+([\d,]+)\s+(△?\s*[\d,]+\s*△?)\s*$/);
     if (m) {
-      const kanName = decodeName(m[2]!, `${filename} p.${page}`);
+      const kanName = decodeGarbleName(m[2]!, `${filename} p.${page}`);
       const amount = toAmount(m[3]!);
       const prevAmount = toAmount(m[4]!);
       const cmp = toAmount(m[5]!.replace(/\s/g, ""));
@@ -214,7 +83,7 @@ function parsePage(
     //（=Σゲートが実際に検出した）。款番号なし・マーカーつき・数値3つの行だけを拾う
     const ab = d.match(/^\s*[ۑ○〇]?\s*(\S+)\s+([\d,]+)\s+([\d,]+)\s+(△?\s*[\d,]+\s*△?)\s*$/);
     if (!m && ab && /[ۑ○〇]/.test(d.slice(0, 8))) {
-      const kanName = decodeName(ab[1]!.replace(/[ۑ○〇]/g, ""), `${filename} p.${page}`);
+      const kanName = decodeGarbleName(ab[1]!.replace(/[ۑ○〇]/g, ""), `${filename} p.${page}`);
       const amount = toAmount(ab[2]!);
       const prevAmount = toAmount(ab[3]!);
       const cmp = toAmount(ab[4]!.replace(/\s/g, ""));
@@ -226,7 +95,7 @@ function parsePage(
     }
     // 合計行: `歳 入 合 計 <本年度> <前年度> <比較>`（ガーブル → 復号して判定）
     const dn = d.replace(/[\s　ࠉ]/g, "");
-    const decodedLabel = [...dn.slice(0, 8)].map((c) => CHAR_MAP[c] ?? c).join("");
+    const decodedLabel = [...dn.slice(0, 8)].map((c) => GARBLE_CHAR_MAP[c] ?? c).join("");
     if (decodedLabel.startsWith(`${sideLabel}合計`)) {
       const nums = d.match(/(△?\s*[\d,]+)/g)?.filter((t) => /\d/.test(t)) ?? [];
       if (nums.length < 3) throw new Error(`${filename} p.${page}: 合計行を解釈できません: ${d.trim()}`);
