@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 53,
+  "budgetCount": 54,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 392,
-  "fileCount": 548,
+  "sourceCount": 399,
+  "fileCount": 555,
   "archivedCount": 370,
   "licenseOpen": 36,
-  "licensePermission": 298,
+  "licensePermission": 305,
   "licenseUnverified": 58,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -119,6 +119,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "杉並区",
       "code": "131156",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "荒川区",
+      "code": "131181",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },

@@ -3326,6 +3326,41 @@ export const SOURCES: SourceEntry[] = [
   })),
 
   ...([
+    // 荒川区（2026-07-23 追加・#125）。[年度, 文書ID/ファイル名, ランディング, 歳入p, 歳出p]
+    // 「予算説明書」の歳入歳出予算事項別明細書「１．総括」（歳入20〜21款・歳出11款・千円・
+    // 前年当初比較つき）。**全 CID フォントが ToUnicode 欠落**だが化け方が決定論的（数字=−0x1D
+    // シフト・漢字=固定ガーブル・R2〜R8 で同一マップ）で、専用パーサ arakawa-setsumei が復号する
+    // （港=部首異体字/豊島=修復不可に次ぐ**第4の型**。詳細は §10u とパーサのコメント）。
+    // ⚠ 復号の網: 未知の化け字は throw・比較列の等式ゲート（本年度−前年度=記載の比較）を全款で要求。
+    // ⚠ R3 歳入に款番号なしの廃止款行（○ 自動車取得税交付金 0/1/△1・○は ۑ に化ける）。
+    // ⚠ 説明書は R2 が現存最古（H31 以前は説明書ページ自体が無い）。URL の文書 ID・ランディング名は
+    //    年度ごとに不規則（実引き）。
+    ["R8", "43359/8yosansetumeisyo.pdf", "yosanangaiyo99.html", 13, 14],
+    ["R7", "39324/yosansetsumeisyo.pdf", "7yosansyo/yoannsetu.html", 11, 12],
+    ["R6", "35959/r6_yosan-setumeisyo.pdf", "6yosansyo.html", 11, 12],
+    ["R5", "30279/r5_yosan-setumeisyo.pdf", "5yosansyo.html", 11, 12],
+    ["R4", "26185/r4_yosan-setumeisyo.pdf", "4yosansyo.html", 11, 12],
+    ["R3", "21692/r3_yosan-setumeisyo.pdf", "3yosannsyo.html", 9, 10],
+    ["R2", "27655/r2_yosan-setumeisyo.pdf", "2yosansyo.html", 9, 10],
+  ] as const).map(([fy, doc, landing, rp, ep]) => ({
+    id: `arakawa-setsumei-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 荒川区予算説明書（歳入歳出予算事項別明細書 総括・款別歳入歳出）`,
+    publisher: "荒川区",
+    url: null,
+    urls: [`https://www.city.arakawa.tokyo.jp/documents/${doc}`],
+    landingPage: `https://www.city.arakawa.tokyo.jp/a002/zaisei/yosan/${landing}`,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "荒川区（一般会計・団体コード131181）",
+    // 「著作権について」（/a004/aboutwebsite/tyosakuken.html・確認日 2026-07-23）。原文のまま。
+    // **「引用」まで禁じる型**（品川と2例）。都カタログ t131181 は33件中 予算・決算・財政 0件（実検索）。
+    license:
+      "荒川区公式サイト上（各SNSも含む）の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として荒川区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。本サイト上の文書・画像等の各ファイルの無断使用・転載・引用は禁じます。なお、文書・画像等の各ファイルについて転用等を希望される場合は、お問い合わせください。",
+    parser: "arakawa-setsumei" as const,
+    parserOptions: { revenuePage: rp, expenditurePage: ep },
+  })),
+
+  ...([
     // 練馬区（2026-07-23 追加・#125）。[年度, 単位]
     // 区オープンデータサイトの「一般会計歳入歳出予算款別一覧表」XLSX（歳入・歳出の2ファイル/年度・
     // H23〜R8 の16年・URL は {fy}sainyu/{fy}saishutu.xlsx で**完全に規則的**＝32本すべて実在を偵察で確認）。

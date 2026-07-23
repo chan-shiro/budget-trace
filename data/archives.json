@@ -123,6 +123,16 @@
       "checkedAt": "2026-07-16T07:53:45.900Z"
     },
     {
+      "sourceId": "arakawa-setsumei-r8",
+      "url": "https://www.city.arakawa.tokyo.jp/documents/43359/8yosansetumeisyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260723043551/https://www.city.arakawa.tokyo.jp/documents/43359/8yosansetumeisyo.pdf",
+      "waybackTimestamp": "20260723043551",
+      "checkedAt": "2026-07-23T04:36:25.904Z",
+      "sha256Match": true,
+      "waybackBytes": 2185021
+    },
+    {
       "sourceId": "bunkyo-sokatsuhyo-h16",
       "url": "https://www.city.bunkyo.lg.jp/b002/p005792.html",
       "kind": "landing",

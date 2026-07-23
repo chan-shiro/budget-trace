@@ -17,6 +17,7 @@ import { parseHiroshimaYosansho } from "./hiroshima-yosansho";
 import { parseTokyoYosangaiyouCsv } from "./tokyo-yosangaiyou-csv";
 import { parseShinjukuKessanTaisho } from "./shinjuku-kessan-taisho";
 import { parseNerimaKanbetsuXlsx } from "./nerima-kanbetsu-xlsx";
+import { parseArakawaSetsumei } from "./arakawa-setsumei";
 
 /** 1ソースの raw ファイル群をまとめて受け取り、マージ済みの facts を返す */
 type ParserFn = (files: { path: string; filename: string }[], source: SourceEntry) => AnyParsedDoc;
@@ -37,6 +38,7 @@ const PARSERS: Record<string, ParserFn> = {
   "yamanashi-kessan": parseYamanashiKessan, // 山梨県 決算の状況（款別・執行率／収入率）
   "shinjuku-kessan-taisho": parseShinjukuKessanTaisho, // 新宿区 款別予算決算対照表（款別・執行率／収入率）
   "nerima-kanbetsu-xlsx": parseNerimaKanbetsuXlsx, // 練馬区 款別一覧表 XLSX（データ自体が CC BY）
+  "arakawa-setsumei": parseArakawaSetsumei, // 荒川区 予算説明書（ToUnicode 欠落の決定論的復号）
   "kofu-gikai": parseKofuGikai, // 議会の構成（会派別議席数）＋当初予算の議決
   "kofu-jigyou-houkoku": parseKofuJigyouHoukoku, // 事業報告（成果）＝事務事業評価 詳細票
 };
