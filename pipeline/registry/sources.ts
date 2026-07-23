@@ -3383,6 +3383,50 @@ export const SOURCES: SourceEntry[] = [
   })),
 
   ...([
+    // 品川区（2026-07-23 追加・#125）。[年度, PDF群, landing, 歳入p, 歳出p, 追加opts]
+    // 各会計予算・事項別明細書の「総括（歳入）/（歳出）」。歳入20款・歳出9款（特別区最少・
+    // 議会/総務/民生/衛生/産業経済/土木/教育/公債/予備）。印字2頁=物理1頁の見開き結合（印字≠物理）。
+    // 歳出総括は比較列の右に財源内訳4列が続くが先頭2金額（本年度・前年度）で正しく取れる（実測）。
+    // ⚠ **R7 のみ歳入・歳出が別ファイル**（revenueFile/expenditureFile・#152 の機構の3例目）。
+    // ⚠ **R8 は歳入の特別区債が科目存置**（当年度0・款番号なし）→ kanNoless 必須（無いと前年度Σが
+    //    -6,450,000 でゲート停止＝静かには壊れない・実測）。
+    // ⚠ **R3 以前は収録不可**: R3/H31/H30=スキャン+OCR崩れ・R2歳出=ToUnicode破損（豊島型）・
+    //    H29=OCR無しスキャン・H28以前=明細書未掲載（款別の主な施策のみ・前年比較なし）。
+    //    発行元が近年までスキャン入稿のため WARP を掘っても同じスキャンしか出ない見込み。
+    // ⚠ URL 規則なし（R7/R8 は `2025tousyoyosan` 型・R2〜R6 はタイムスタンプ型・R5 だけ `_9`）。
+    ["R8", ["2026tousyoyosan_3.pdf"], "2026tousyoyosan.html", 26, 92, {}],
+    ["R7", ["2025tousyoyosan_4.pdf", "2025tousyoyosan_5.pdf"], "2025tousyoyosan.html", 25, 1,
+      { revenueFile: "2025tousyoyosan_4.pdf", expenditureFile: "2025tousyoyosan_5.pdf" }],
+    ["R6", ["20240208145918_8.pdf"], "20240208145918.html", 26, 87, {}],
+    ["R5", ["20230208174032_9.pdf"], "20230208174032.html", 25, 82, {}],
+    ["R4", ["20220210190000_8.pdf"], "20220210190000.html", 25, 81, {}],
+  ] as const).map(([fy, pdfs, landing, rp, ep, extra]) => ({
+    id: `shinagawa-kanbetsu-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 品川区各会計予算・事項別明細書（総括・款別歳入歳出）`,
+    publisher: "品川区",
+    url: null,
+    urls: pdfs.map((f) => `https://www.city.shinagawa.tokyo.jp/ct/pdf/${f}`),
+    landingPage: `https://www.city.shinagawa.tokyo.jp/PC/kuseizyoho/yosan/tousyo/${landing}`,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "品川区（一般会計・団体コード131091）",
+    // 「このホームページについて」＞著作権について（確認日 2026-07-23）。原文のまま。
+    // 「引用」まで禁じる型（荒川と2例目）。リンク禁止の記述は無し＝noDeepLink 不要。
+    // 都カタログ t131091 は139件中 予算・財政・決算 0件（実検索）＝CC BY は及ばない。
+    license:
+      "品川区ホームページ（https://www.city.shinagawa.tokyo.jp/）上の情報・画像・図表等は、特に明示がない限り、その著作権を品川区が保有します。無断引用・転載・複製は、これを禁じます。",
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      revenuePage: rp,
+      expenditurePage: ep,
+      revenueHeading: "（歳入）",
+      expenditureHeading: "（歳出）",
+      kanNoless: true,
+      ...extra,
+    },
+  })),
+
+  ...([
     // 練馬区（2026-07-23 追加・#125）。[年度, 単位]
     // 区オープンデータサイトの「一般会計歳入歳出予算款別一覧表」XLSX（歳入・歳出の2ファイル/年度・
     // H23〜R8 の16年・URL は {fy}sainyu/{fy}saishutu.xlsx で**完全に規則的**＝32本すべて実在を偵察で確認）。
