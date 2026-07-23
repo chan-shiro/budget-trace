@@ -1920,6 +1920,10 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       "h23", "h22", "h21", "h20", "h19"] as const).map((fy) => ({
       srcId: `minato-yosangaiyou-${fy}`, muniCode: "131032", muniName: "港区", prefName: "東京都", isPref: false,
     })),
+    // 品川区（2026-07-23 追加・#125）。事項別明細書の総括。R3 以前はスキャン/ToUnicode破損で不可。
+    ...(["r8", "r7", "r6", "r5", "r4"] as const).map((fy) => ({
+      srcId: `shinagawa-kanbetsu-${fy}`, muniCode: "131091", muniName: "品川区", prefName: "東京都", isPref: false,
+    })),
     // 練馬区（2026-07-23 追加・#125）。款別一覧表 XLSX（オープンデータ・CC BY）。H23〜R8 の16年。
     // 歳出は H23 が13款 → H24 の組織改正で現行14款（民生費・衛生費が無い独自体系）。
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "r1", "h30", "h29", "h28", "h27", "h26",

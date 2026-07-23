@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 53,
+  "budgetCount": 54,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 392,
-  "fileCount": 548,
+  "sourceCount": 397,
+  "fileCount": 554,
   "archivedCount": 370,
   "licenseOpen": 36,
-  "licensePermission": 298,
+  "licensePermission": 303,
   "licenseUnverified": 58,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -181,6 +181,12 @@ export const ROADMAP_PROGRESS = {
       "code": "141003",
       "years": 6,
       "range": "R3〜R8（6年度）"
+    },
+    {
+      "name": "品川区",
+      "code": "131091",
+      "years": 5,
+      "range": "R4〜R8（5年度）"
     },
     {
       "name": "浜松市",
