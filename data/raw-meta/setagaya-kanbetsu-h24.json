@@ -1,0 +1,12 @@
+{
+  "sourceId": "setagaya-kanbetsu-h24",
+  "files": [
+    {
+      "filename": "tousyoyosan.xls",
+      "sha256": "95285d5445911dbacd2606500b976748759661c00faad17cc0ed776d9696713a",
+      "bytes": 135680,
+      "fetchedAt": "2026-07-23T03:22:17.821Z",
+      "fetchedFrom": "https://www.city.setagaya.lg.jp/documents/6187/tousyoyosan.xls"
+    }
+  ]
+}
