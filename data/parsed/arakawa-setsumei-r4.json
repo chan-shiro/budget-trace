@@ -1,0 +1,358 @@
+{
+  "docType": "budget-book",
+  "sourceId": "arakawa-setsumei-r4",
+  "parser": "arakawa-setsumei",
+  "parserVersion": "0.1.0",
+  "parsedAt": "2026-07-23T04:35:00.841Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R4",
+  "account": "一般会計",
+  "revenueTotal": 107160000,
+  "expenditureTotal": 107160000,
+  "prevRevenueTotal": 106010000,
+  "prevExpenditureTotal": 106010000,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "特別区税",
+      "amount": 18337166,
+      "prevAmount": 17772246,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 11
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "地方譲与税",
+      "amount": 298614,
+      "prevAmount": 273082,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 11
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "利子割交付金",
+      "amount": 42415,
+      "prevAmount": 48779,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 11
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "配当割交付金",
+      "amount": 317922,
+      "prevAmount": 232146,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 11
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 246566,
+      "prevAmount": 194606,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 11
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "地方消費税交付金",
+      "amount": 4752773,
+      "prevAmount": 4681319,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 11
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "環境性能割交付金",
+      "amount": 68860,
+      "prevAmount": 76498,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 11
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "地方特例交付金",
+      "amount": 195973,
+      "prevAmount": 214514,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 11
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "特別区交付金",
+      "amount": 40610000,
+      "prevAmount": 37670000,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 11
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 20279,
+      "prevAmount": 19342,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 11
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "分担金及び負担金",
+      "amount": 1186288,
+      "prevAmount": 1096034,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 11
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "使用料及び手数料",
+      "amount": 2306875,
+      "prevAmount": 1679352,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 11
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "国庫支出金",
+      "amount": 21625122,
+      "prevAmount": 20599639,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 11
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "都支出金",
+      "amount": 8138279,
+      "prevAmount": 8631490,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 11
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "財産収入",
+      "amount": 239277,
+      "prevAmount": 220652,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 11
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "寄附金",
+      "amount": 32359,
+      "prevAmount": 13701,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 11
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 17,
+      "kanName": "繰入金",
+      "amount": 5045599,
+      "prevAmount": 8141618,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 11
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 18,
+      "kanName": "繰越金",
+      "amount": 1,
+      "prevAmount": 1,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 11
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 19,
+      "kanName": "諸収入",
+      "amount": 2601632,
+      "prevAmount": 2343981,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 11
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 20,
+      "kanName": "特別区債",
+      "amount": 1094000,
+      "prevAmount": 2101000,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 11
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 616000,
+      "prevAmount": 621000,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 13879000,
+      "prevAmount": 16055000,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "民生費",
+      "amount": 59342000,
+      "prevAmount": 59199000,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "衛生費",
+      "amount": 8266000,
+      "prevAmount": 5875000,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "環境清掃費",
+      "amount": 3989000,
+      "prevAmount": 3776000,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "産業経済費",
+      "amount": 2568000,
+      "prevAmount": 2467000,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "土木費",
+      "amount": 6838000,
+      "prevAmount": 6522000,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "教育費",
+      "amount": 9189000,
+      "prevAmount": 9307000,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "公債費",
+      "amount": 1824000,
+      "prevAmount": 1776000,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "諸支出金",
+      "amount": 149000,
+      "prevAmount": 112000,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 11,
+      "kanName": "予備費",
+      "amount": 500000,
+      "prevAmount": 300000,
+      "locator": {
+        "file": "r4_yosan-setumeisyo.pdf",
+        "page": 12
+      }
+    }
+  ]
+}

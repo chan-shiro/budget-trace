@@ -1419,6 +1419,41 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/041/624/r5_yosannogaiyou_2.pdf",
     "license": "本サイトに掲載する写真・画像などの各ファイル及びその内容に関する諸権利は板橋区役所に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
   },
+  "/sources/arakawa-setsumei-r8/8yosansetumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.arakawa.tokyo.jp/documents/43359/8yosansetumeisyo.pdf",
+    "license": "荒川区公式サイト上（各SNSも含む）の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として荒川区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。本サイト上の文書・画像等の各ファイルの無断使用・転載・引用は禁じます。なお、文書・画像等の各ファイルについて転用等を希望される場合は、お問い合わせください。"
+  },
+  "/sources/arakawa-setsumei-r7/yosansetsumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.arakawa.tokyo.jp/documents/39324/yosansetsumeisyo.pdf",
+    "license": "荒川区公式サイト上（各SNSも含む）の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として荒川区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。本サイト上の文書・画像等の各ファイルの無断使用・転載・引用は禁じます。なお、文書・画像等の各ファイルについて転用等を希望される場合は、お問い合わせください。"
+  },
+  "/sources/arakawa-setsumei-r6/r6_yosan-setumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.arakawa.tokyo.jp/documents/35959/r6_yosan-setumeisyo.pdf",
+    "license": "荒川区公式サイト上（各SNSも含む）の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として荒川区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。本サイト上の文書・画像等の各ファイルの無断使用・転載・引用は禁じます。なお、文書・画像等の各ファイルについて転用等を希望される場合は、お問い合わせください。"
+  },
+  "/sources/arakawa-setsumei-r5/r5_yosan-setumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.arakawa.tokyo.jp/documents/30279/r5_yosan-setumeisyo.pdf",
+    "license": "荒川区公式サイト上（各SNSも含む）の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として荒川区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。本サイト上の文書・画像等の各ファイルの無断使用・転載・引用は禁じます。なお、文書・画像等の各ファイルについて転用等を希望される場合は、お問い合わせください。"
+  },
+  "/sources/arakawa-setsumei-r4/r4_yosan-setumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.arakawa.tokyo.jp/documents/26185/r4_yosan-setumeisyo.pdf",
+    "license": "荒川区公式サイト上（各SNSも含む）の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として荒川区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。本サイト上の文書・画像等の各ファイルの無断使用・転載・引用は禁じます。なお、文書・画像等の各ファイルについて転用等を希望される場合は、お問い合わせください。"
+  },
+  "/sources/arakawa-setsumei-r3/r3_yosan-setumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.arakawa.tokyo.jp/documents/21692/r3_yosan-setumeisyo.pdf",
+    "license": "荒川区公式サイト上（各SNSも含む）の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として荒川区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。本サイト上の文書・画像等の各ファイルの無断使用・転載・引用は禁じます。なお、文書・画像等の各ファイルについて転用等を希望される場合は、お問い合わせください。"
+  },
+  "/sources/arakawa-setsumei-r2/r2_yosan-setumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.arakawa.tokyo.jp/documents/27655/r2_yosan-setumeisyo.pdf",
+    "license": "荒川区公式サイト上（各SNSも含む）の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として荒川区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。本サイト上の文書・画像等の各ファイルの無断使用・転載・引用は禁じます。なお、文書・画像等の各ファイルについて転用等を希望される場合は、お問い合わせください。"
+  },
   "/sources/tokyo-yosangaiyou-r8/08-03sainyukanbetsu": {
     "mode": "origin",
     "href": "https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/08-03sainyukanbetsu",

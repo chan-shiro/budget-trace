@@ -1920,6 +1920,10 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       "h23", "h22", "h21", "h20", "h19"] as const).map((fy) => ({
       srcId: `minato-yosangaiyou-${fy}`, muniCode: "131032", muniName: "港区", prefName: "東京都", isPref: false,
     })),
+    // 荒川区（2026-07-23 追加・#125）。予算説明書の総括（ToUnicode 欠落を決定論的に復号・§10u）。
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `arakawa-setsumei-${fy}`, muniCode: "131181", muniName: "荒川区", prefName: "東京都", isPref: false,
+    })),
     // 板橋区（2026-07-23 追加・#125）。予算の概要の総括表（百万円→千円へ ×1000 等価変換・
     // 他区より丸め粒度が粗い）。R4 以前はスキャン/ToUnicode 破損で収録不可。
     ...(["r8", "r7", "r6", "r5"] as const).map((fy) => ({
@@ -2358,6 +2362,7 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
     "hiroshima-yosansho": "ダッシュボード／款別ドリルダウン／前年比較",
     "tokyo-yosangaiyou-csv": "ダッシュボード／款別ドリルダウン／前年比較",
     "nerima-kanbetsu-xlsx": "ダッシュボード／款別ドリルダウン／前年比較",
+    "arakawa-setsumei": "ダッシュボード／款別ドリルダウン／前年比較",
     "setagaya-mieruka-csv": "ダッシュボード／款別ドリルダウン／前年比較",
     "setagaya-tousho-xls": "ダッシュボード／款別ドリルダウン／前年比較",
     "soumu-shichoson-kessan": "全市町村の決算ダッシュボード／款別・歳入内訳／1人あたり／類似自治体比較",
