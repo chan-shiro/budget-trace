@@ -42,8 +42,10 @@ export interface ReportItem {
 export interface ProjectReportShard {
   muniCode: string;
   muniName: string;
-  /** 資料の呼び名。市ごとに違う（川崎=事務事業評価シート / 横浜=事業評価書） */
+  /** 資料の呼び名。市ごとに違う（川崎=事務事業評価シート / 横浜=事業評価書 / 札幌=事業評価調書） */
   docLabel: string;
+  /** 評価様式の説明文（カテゴリ評価を持たない資料のみ・derive が資料ごとに書く）。無ければ null */
+  evalNote: string | null;
   /** 一般会計以外（特別会計）で除外した事業数 */
   excluded: number;
   /**

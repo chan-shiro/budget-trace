@@ -1,0 +1,5370 @@
+{
+  "collectedAt": "2026-07-23T05:24:40.297Z",
+  "indexUrl": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7.html",
+  "bureauPages": 21,
+  "totalLinks": 666,
+  "files": [
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020058.pdf",
+      "filename": "20251020058.pdf",
+      "bureau": "総務局",
+      "linkText": "広報誌等発行費",
+      "accountCode": "10",
+      "projectCode": "20058"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020064.pdf",
+      "filename": "20251020064.pdf",
+      "bureau": "総務局",
+      "linkText": "広報一般事務費",
+      "accountCode": "10",
+      "projectCode": "20064"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020067.pdf",
+      "filename": "20251020067.pdf",
+      "bureau": "総務局",
+      "linkText": "特別相談業務費",
+      "accountCode": "10",
+      "projectCode": "20067"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020074.pdf",
+      "filename": "20251020074.pdf",
+      "bureau": "総務局",
+      "linkText": "札幌国際プラザ運営補助金",
+      "accountCode": "10",
+      "projectCode": "20074"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020150.pdf",
+      "filename": "20251020150.pdf",
+      "bureau": "市民文化局",
+      "linkText": "未来へつなぐ笑顔のまちづくり活動推進費",
+      "accountCode": "10",
+      "projectCode": "20150"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020159.pdf",
+      "filename": "20251020159.pdf",
+      "bureau": "市民文化局",
+      "linkText": "文化芸術振興費",
+      "accountCode": "10",
+      "projectCode": "20159"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020183.pdf",
+      "filename": "20251020183.pdf",
+      "bureau": "市民文化局",
+      "linkText": "消費者センター運営費",
+      "accountCode": "10",
+      "projectCode": "20183"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020250.pdf",
+      "filename": "20251020250.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "民生委員費",
+      "accountCode": "10",
+      "projectCode": "20250"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020260.pdf",
+      "filename": "20251020260.pdf",
+      "bureau": "市民文化局",
+      "linkText": "アイヌ住宅建築費貸付金",
+      "accountCode": "10",
+      "projectCode": "20260"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020276.pdf",
+      "filename": "20251020276.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "障がい者福祉活動助成費",
+      "accountCode": "10",
+      "projectCode": "20276"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020280.pdf",
+      "filename": "20251020280.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "意思疎通支援費",
+      "accountCode": "10",
+      "projectCode": "20280"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020313.pdf",
+      "filename": "20251020313.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "心身障害者扶養共済費",
+      "accountCode": "10",
+      "projectCode": "20313"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020314.pdf",
+      "filename": "20251020314.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "障がい者交通費助成費",
+      "accountCode": "10",
+      "projectCode": "20314"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020317.pdf",
+      "filename": "20251020317.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "障がい者地域共同作業所運営補助金",
+      "accountCode": "10",
+      "projectCode": "20317"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020322.pdf",
+      "filename": "20251020322.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "在宅重度心身障がい者（児）紙おむつ支給費",
+      "accountCode": "10",
+      "projectCode": "20322"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020343.pdf",
+      "filename": "20251020343.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "特別奨学金支給費",
+      "accountCode": "10",
+      "projectCode": "20343"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020344.pdf",
+      "filename": "20251020344.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "公立保育所等運営費",
+      "accountCode": "10",
+      "projectCode": "20344"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020347.pdf",
+      "filename": "20251020347.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "私立保育所等補助金",
+      "accountCode": "10",
+      "projectCode": "20347"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020360.pdf",
+      "filename": "20251020360.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "里親制度促進費",
+      "accountCode": "10",
+      "projectCode": "20360"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020364.pdf",
+      "filename": "20251020364.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "児童自立支援施設運営費負担金",
+      "accountCode": "10",
+      "projectCode": "20364"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020367.pdf",
+      "filename": "20251020367.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "児童福祉施設措置費",
+      "accountCode": "10",
+      "projectCode": "20367"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020385.pdf",
+      "filename": "20251020385.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "敬老優待乗車証交付費",
+      "accountCode": "10",
+      "projectCode": "20385"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020388.pdf",
+      "filename": "20251020388.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "老人クラブ連合会補助金",
+      "accountCode": "10",
+      "projectCode": "20388"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020392.pdf",
+      "filename": "20251020392.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "老人クラブ活動補助金",
+      "accountCode": "10",
+      "projectCode": "20392"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020407.pdf",
+      "filename": "20251020407.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "おとしより憩の家運営補助金",
+      "accountCode": "10",
+      "projectCode": "20407"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020451.pdf",
+      "filename": "20251020451.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "重度心身障がい者医療助成費",
+      "accountCode": "10",
+      "projectCode": "20451"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020452.pdf",
+      "filename": "20251020452.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "子ども医療助成費",
+      "accountCode": "10",
+      "projectCode": "20452"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020454.pdf",
+      "filename": "20251020454.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "ひとり親家庭等医療助成費",
+      "accountCode": "10",
+      "projectCode": "20454"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020476.pdf",
+      "filename": "20251020476.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "肝炎ウイルス検診費",
+      "accountCode": "10",
+      "projectCode": "20476"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020477.pdf",
+      "filename": "20251020477.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "胃がん検診費",
+      "accountCode": "10",
+      "projectCode": "20477"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020478.pdf",
+      "filename": "20251020478.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "子宮がん検診費",
+      "accountCode": "10",
+      "projectCode": "20478"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020479.pdf",
+      "filename": "20251020479.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "肺がん検診費",
+      "accountCode": "10",
+      "projectCode": "20479"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020480.pdf",
+      "filename": "20251020480.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "乳がん検診費",
+      "accountCode": "10",
+      "projectCode": "20480"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020559.pdf",
+      "filename": "20251020559.pdf",
+      "bureau": "環境局",
+      "linkText": "普及啓発費",
+      "accountCode": "10",
+      "projectCode": "20559"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020567.pdf",
+      "filename": "20251020567.pdf",
+      "bureau": "環境局",
+      "linkText": "清掃車両等購入費",
+      "accountCode": "10",
+      "projectCode": "20567"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020568.pdf",
+      "filename": "20251020568.pdf",
+      "bureau": "環境局",
+      "linkText": "家庭ごみ収集費",
+      "accountCode": "10",
+      "projectCode": "20568"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020571.pdf",
+      "filename": "20251020571.pdf",
+      "bureau": "環境局",
+      "linkText": "動物死体処理費",
+      "accountCode": "10",
+      "projectCode": "20571"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020574.pdf",
+      "filename": "20251020574.pdf",
+      "bureau": "環境局",
+      "linkText": "埋立処理場運営管理費",
+      "accountCode": "10",
+      "projectCode": "20574"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020578.pdf",
+      "filename": "20251020578.pdf",
+      "bureau": "環境局",
+      "linkText": "ごみ資源化工場運営管理費",
+      "accountCode": "10",
+      "projectCode": "20578"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020597.pdf",
+      "filename": "20251020597.pdf",
+      "bureau": "環境局",
+      "linkText": "し尿管理費",
+      "accountCode": "10",
+      "projectCode": "20597"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020600.pdf",
+      "filename": "20251020600.pdf",
+      "bureau": "環境局",
+      "linkText": "クリーンセンター運営管理費",
+      "accountCode": "10",
+      "projectCode": "20600"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020606.pdf",
+      "filename": "20251020606.pdf",
+      "bureau": "経済観光局",
+      "linkText": "地域総合整備資金貸付金",
+      "accountCode": "10",
+      "projectCode": "20606"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020642.pdf",
+      "filename": "20251020642.pdf",
+      "bureau": "経済観光局",
+      "linkText": "中小企業金融対策資金貸付金",
+      "accountCode": "10",
+      "projectCode": "20642"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020656.pdf",
+      "filename": "20251020656.pdf",
+      "bureau": "経済観光局",
+      "linkText": "観光施設運営管理費",
+      "accountCode": "10",
+      "projectCode": "20656"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020658.pdf",
+      "filename": "20251020658.pdf",
+      "bureau": "経済観光局",
+      "linkText": "観光行事助成費",
+      "accountCode": "10",
+      "projectCode": "20658"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020685_1.pdf",
+      "filename": "20251020685_1.pdf",
+      "bureau": "経済観光局",
+      "linkText": "札幌市農業基盤整備補助金",
+      "accountCode": "10",
+      "projectCode": "20685"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020703.pdf",
+      "filename": "20251020703.pdf",
+      "bureau": "建設局",
+      "linkText": "地図整備費",
+      "accountCode": "10",
+      "projectCode": "20703"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020704.pdf",
+      "filename": "20251020704.pdf",
+      "bureau": "建設局",
+      "linkText": "駐輪場維持関係費",
+      "accountCode": "10",
+      "projectCode": "20704"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020713.pdf",
+      "filename": "20251020713.pdf",
+      "bureau": "建設局",
+      "linkText": "残地等取得管理費",
+      "accountCode": "10",
+      "projectCode": "20713"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020718.pdf",
+      "filename": "20251020718.pdf",
+      "bureau": "建設局",
+      "linkText": "一般道路管理費",
+      "accountCode": "10",
+      "projectCode": "20718"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020720.pdf",
+      "filename": "20251020720.pdf",
+      "bureau": "建設局",
+      "linkText": "屋外広告物指導費",
+      "accountCode": "10",
+      "projectCode": "20720"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020723.pdf",
+      "filename": "20251020723.pdf",
+      "bureau": "建設局",
+      "linkText": "道路認定推進費",
+      "accountCode": "10",
+      "projectCode": "20723"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020724.pdf",
+      "filename": "20251020724.pdf",
+      "bureau": "建設局",
+      "linkText": "道路用地処理費",
+      "accountCode": "10",
+      "projectCode": "20724"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020726.pdf",
+      "filename": "20251020726.pdf",
+      "bureau": "建設局",
+      "linkText": "道路台帳維持管理費",
+      "accountCode": "10",
+      "projectCode": "20726"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020730.pdf",
+      "filename": "20251020730.pdf",
+      "bureau": "建設局",
+      "linkText": "市設街路灯整備費",
+      "accountCode": "10",
+      "projectCode": "20730"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020732.pdf",
+      "filename": "20251020732.pdf",
+      "bureau": "建設局",
+      "linkText": "私設街路灯助成費",
+      "accountCode": "10",
+      "projectCode": "20732"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020735.pdf",
+      "filename": "20251020735.pdf",
+      "bureau": "建設局",
+      "linkText": "道路等維持費",
+      "accountCode": "10",
+      "projectCode": "20735"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020745.pdf",
+      "filename": "20251020745.pdf",
+      "bureau": "建設局",
+      "linkText": "道路等清掃費",
+      "accountCode": "10",
+      "projectCode": "20745"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020756.pdf",
+      "filename": "20251020756.pdf",
+      "bureau": "建設局",
+      "linkText": "道路橋りょう等補修費",
+      "accountCode": "10",
+      "projectCode": "20756"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020761.pdf",
+      "filename": "20251020761.pdf",
+      "bureau": "建設局",
+      "linkText": "雪堆積場管理費",
+      "accountCode": "10",
+      "projectCode": "20761"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020811.pdf",
+      "filename": "20251020811.pdf",
+      "bureau": "下水道河川局",
+      "linkText": "河川維持管理費",
+      "accountCode": "10",
+      "projectCode": "20811"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020852.pdf",
+      "filename": "20251020852.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "市街地整備の初動期支援費",
+      "accountCode": "10",
+      "projectCode": "20852"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020887.pdf",
+      "filename": "20251020887.pdf",
+      "bureau": "建設局",
+      "linkText": "既設公園整備費",
+      "accountCode": "10",
+      "projectCode": "20887"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020894.pdf",
+      "filename": "20251020894.pdf",
+      "bureau": "建設局",
+      "linkText": "街路樹・緑地帯管理費",
+      "accountCode": "10",
+      "projectCode": "20894"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020895.pdf",
+      "filename": "20251020895.pdf",
+      "bureau": "建設局",
+      "linkText": "都市林等管理費",
+      "accountCode": "10",
+      "projectCode": "20895"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020899.pdf",
+      "filename": "20251020899.pdf",
+      "bureau": "建設局",
+      "linkText": "公園造成費",
+      "accountCode": "10",
+      "projectCode": "20899"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020952.pdf",
+      "filename": "20251020952.pdf",
+      "bureau": "都市局",
+      "linkText": "市営住宅管理費",
+      "accountCode": "10",
+      "projectCode": "20952"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020989.pdf",
+      "filename": "20251020989.pdf",
+      "bureau": "消防局",
+      "linkText": "消防活動費",
+      "accountCode": "10",
+      "projectCode": "20989"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020990.pdf",
+      "filename": "20251020990.pdf",
+      "bureau": "消防局",
+      "linkText": "救急活動費",
+      "accountCode": "10",
+      "projectCode": "20990"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020992.pdf",
+      "filename": "20251020992.pdf",
+      "bureau": "消防局",
+      "linkText": "航空活動費",
+      "accountCode": "10",
+      "projectCode": "20992"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020997.pdf",
+      "filename": "20251020997.pdf",
+      "bureau": "消防局",
+      "linkText": "消防団活動費",
+      "accountCode": "10",
+      "projectCode": "20997"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021014.pdf",
+      "filename": "20251021014.pdf",
+      "bureau": "消防局",
+      "linkText": "消防車両整備費",
+      "accountCode": "10",
+      "projectCode": "21014"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021042.pdf",
+      "filename": "20251021042.pdf",
+      "bureau": "教育委員会",
+      "linkText": "補助金",
+      "accountCode": "10",
+      "projectCode": "21042"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021047.pdf",
+      "filename": "20251021047.pdf",
+      "bureau": "教育委員会",
+      "linkText": "奨学金支給費",
+      "accountCode": "10",
+      "projectCode": "21047"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021135.pdf",
+      "filename": "20251021135.pdf",
+      "bureau": "教育委員会",
+      "linkText": "中央図書館運営管理費",
+      "accountCode": "10",
+      "projectCode": "21135"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021138.pdf",
+      "filename": "20251021138.pdf",
+      "bureau": "教育委員会",
+      "linkText": "地区図書館運営管理費",
+      "accountCode": "10",
+      "projectCode": "21138"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021139.pdf",
+      "filename": "20251021139.pdf",
+      "bureau": "教育委員会",
+      "linkText": "図書室・図書コーナー等運営費",
+      "accountCode": "10",
+      "projectCode": "21139"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021144.pdf",
+      "filename": "20251021144.pdf",
+      "bureau": "教育委員会",
+      "linkText": "中央図書館センター機能整備費",
+      "accountCode": "10",
+      "projectCode": "21144"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021147.pdf",
+      "filename": "20251021147.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "スポーツ推進委員費",
+      "accountCode": "10",
+      "projectCode": "21147"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021160.pdf",
+      "filename": "20251021160.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "スポーツ事業助成費",
+      "accountCode": "10",
+      "projectCode": "21160"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021161.pdf",
+      "filename": "20251021161.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "学校施設等開放事業費",
+      "accountCode": "10",
+      "projectCode": "21161"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021192.pdf",
+      "filename": "20251021192.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "その他体育施設運営管理費",
+      "accountCode": "10",
+      "projectCode": "21192"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021231.pdf",
+      "filename": "20251021231.pdf",
+      "bureau": "財政局",
+      "linkText": "病棟建築費元利償還費分等",
+      "accountCode": "10",
+      "projectCode": "21231"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021233.pdf",
+      "filename": "20251021233.pdf",
+      "bureau": "財政局",
+      "linkText": "救急医療運営費分",
+      "accountCode": "10",
+      "projectCode": "21233"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021234.pdf",
+      "filename": "20251021234.pdf",
+      "bureau": "財政局",
+      "linkText": "高度・特殊医療費分等",
+      "accountCode": "10",
+      "projectCode": "21234"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021235.pdf",
+      "filename": "20251021235.pdf",
+      "bureau": "財政局",
+      "linkText": "院内保育所運営費分等",
+      "accountCode": "10",
+      "projectCode": "21235"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021249.pdf",
+      "filename": "20251021249.pdf",
+      "bureau": "財政局",
+      "linkText": "精神科病棟収支不足分",
+      "accountCode": "10",
+      "projectCode": "21249"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021253.pdf",
+      "filename": "20251021253.pdf",
+      "bureau": "財政局",
+      "linkText": "軌道舗装補修費分",
+      "accountCode": "10",
+      "projectCode": "21253"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021262.pdf",
+      "filename": "20251021262.pdf",
+      "bureau": "財政局",
+      "linkText": "地下鉄建設費分",
+      "accountCode": "10",
+      "projectCode": "21262"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021263.pdf",
+      "filename": "20251021263.pdf",
+      "bureau": "財政局",
+      "linkText": "地下鉄特例債元利償還費分",
+      "accountCode": "10",
+      "projectCode": "21263"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021268.pdf",
+      "filename": "20251021268.pdf",
+      "bureau": "財政局",
+      "linkText": "地下鉄建設費分",
+      "accountCode": "10",
+      "projectCode": "21268"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021270.pdf",
+      "filename": "20251021270.pdf",
+      "bureau": "財政局",
+      "linkText": "消火栓設置費分",
+      "accountCode": "10",
+      "projectCode": "21270"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021281.pdf",
+      "filename": "20251021281.pdf",
+      "bureau": "財政局",
+      "linkText": "維持管理費等のうち雨水相当分",
+      "accountCode": "10",
+      "projectCode": "21281"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021282.pdf",
+      "filename": "20251021282.pdf",
+      "bureau": "財政局",
+      "linkText": "維持管理費等のうち汚水相当分",
+      "accountCode": "10",
+      "projectCode": "21282"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021284.pdf",
+      "filename": "20251021284.pdf",
+      "bureau": "財政局",
+      "linkText": "使用料減免分",
+      "accountCode": "10",
+      "projectCode": "21284"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021287.pdf",
+      "filename": "20251021287.pdf",
+      "bureau": "財政局",
+      "linkText": "水質指導経費分等",
+      "accountCode": "10",
+      "projectCode": "21287"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021461.pdf",
+      "filename": "20251021461.pdf",
+      "bureau": "環境局",
+      "linkText": "駒岡清掃工場運営管理費",
+      "accountCode": "10",
+      "projectCode": "21461"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021462.pdf",
+      "filename": "20251021462.pdf",
+      "bureau": "環境局",
+      "linkText": "発寒清掃工場運営管理費",
+      "accountCode": "10",
+      "projectCode": "21462"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021463.pdf",
+      "filename": "20251021463.pdf",
+      "bureau": "環境局",
+      "linkText": "篠路破砕工場等付帯設備維持管理費",
+      "accountCode": "10",
+      "projectCode": "21463"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021464.pdf",
+      "filename": "20251021464.pdf",
+      "bureau": "環境局",
+      "linkText": "駒岡破砕工場運営管理費",
+      "accountCode": "10",
+      "projectCode": "21464"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021505.pdf",
+      "filename": "20251021505.pdf",
+      "bureau": "経済観光局",
+      "linkText": "（一財）札幌勤労者職業福祉センター事業貸付金",
+      "accountCode": "10",
+      "projectCode": "21505"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021535.pdf",
+      "filename": "20251021535.pdf",
+      "bureau": "建設局",
+      "linkText": "道路不用地処分費",
+      "accountCode": "10",
+      "projectCode": "21535"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021553.pdf",
+      "filename": "20251021553.pdf",
+      "bureau": "環境局",
+      "linkText": "集団資源回収奨励費",
+      "accountCode": "10",
+      "projectCode": "21553"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021587.pdf",
+      "filename": "20251021587.pdf",
+      "bureau": "経済観光局",
+      "linkText": "（一財）札幌勤労者職業福祉センター事業補助金",
+      "accountCode": "10",
+      "projectCode": "21587"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021599.pdf",
+      "filename": "20251021599.pdf",
+      "bureau": "市民文化局",
+      "linkText": "パシフィック・ミュージック・フェスティバル事業費",
+      "accountCode": "10",
+      "projectCode": "21599"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021615.pdf",
+      "filename": "20251021615.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "軽費老人ホーム運営費補助金",
+      "accountCode": "10",
+      "projectCode": "21615"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021626.pdf",
+      "filename": "20251021626.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "大腸がん検診費",
+      "accountCode": "10",
+      "projectCode": "21626"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021631.pdf",
+      "filename": "20251021631.pdf",
+      "bureau": "経済観光局",
+      "linkText": "（公社）札幌市シルバー人材センター運営補助金",
+      "accountCode": "10",
+      "projectCode": "21631"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021660.pdf",
+      "filename": "20251021660.pdf",
+      "bureau": "経済観光局",
+      "linkText": "国際観光誘致費",
+      "accountCode": "10",
+      "projectCode": "21660"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021663.pdf",
+      "filename": "20251021663.pdf",
+      "bureau": "経済観光局",
+      "linkText": "国内観光振興費",
+      "accountCode": "10",
+      "projectCode": "21663"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021668.pdf",
+      "filename": "20251021668.pdf",
+      "bureau": "財政局",
+      "linkText": "石狩西部広域水道企業団出資金",
+      "accountCode": "10",
+      "projectCode": "21668"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021762.pdf",
+      "filename": "20251021762.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "高齢者福祉バス運営補助金",
+      "accountCode": "10",
+      "projectCode": "21762"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021768.pdf",
+      "filename": "20251021768.pdf",
+      "bureau": "環境局",
+      "linkText": "合併処理浄化槽普及促進費",
+      "accountCode": "10",
+      "projectCode": "21768"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021865.pdf",
+      "filename": "20251021865.pdf",
+      "bureau": "建設局",
+      "linkText": "放置自転車対策推進費",
+      "accountCode": "10",
+      "projectCode": "21865"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021908.pdf",
+      "filename": "20251021908.pdf",
+      "bureau": "教育委員会",
+      "linkText": "義務教育児童生徒遠距離通学助成費",
+      "accountCode": "10",
+      "projectCode": "21908"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021911.pdf",
+      "filename": "20251021911.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "社会福祉協議会運営等補助金",
+      "accountCode": "10",
+      "projectCode": "21911"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021933.pdf",
+      "filename": "20251021933.pdf",
+      "bureau": "市民文化局",
+      "linkText": "市民集会施設建築等補助金",
+      "accountCode": "10",
+      "projectCode": "21933"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021938.pdf",
+      "filename": "20251021938.pdf",
+      "bureau": "市民文化局",
+      "linkText": "住民組織助成金",
+      "accountCode": "10",
+      "projectCode": "21938"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021947.pdf",
+      "filename": "20251021947.pdf",
+      "bureau": "市民文化局",
+      "linkText": "札幌交響楽団運営補助金",
+      "accountCode": "10",
+      "projectCode": "21947"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021957.pdf",
+      "filename": "20251021957.pdf",
+      "bureau": "市民文化局",
+      "linkText": "文化芸術振興補助費",
+      "accountCode": "10",
+      "projectCode": "21957"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251021965_1.pdf",
+      "filename": "20251021965_1.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "エイズ等予防対策費",
+      "accountCode": "10",
+      "projectCode": "21965"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251022184.pdf",
+      "filename": "20251022184.pdf",
+      "bureau": "環境局",
+      "linkText": "不法投棄防止事業費",
+      "accountCode": "10",
+      "projectCode": "22184"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251022392.pdf",
+      "filename": "20251022392.pdf",
+      "bureau": "市民文化局",
+      "linkText": "市民集会施設建築資金等貸付金",
+      "accountCode": "10",
+      "projectCode": "22392"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251022469.pdf",
+      "filename": "20251022469.pdf",
+      "bureau": "建設局",
+      "linkText": "道路防災対策費",
+      "accountCode": "10",
+      "projectCode": "22469"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251022494.pdf",
+      "filename": "20251022494.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "日常生活用具給付費",
+      "accountCode": "10",
+      "projectCode": "22494"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251022498.pdf",
+      "filename": "20251022498.pdf",
+      "bureau": "環境局",
+      "linkText": "仮称）北部事業予定地用地取得費",
+      "accountCode": "10",
+      "projectCode": "22498"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251022499.pdf",
+      "filename": "20251022499.pdf",
+      "bureau": "環境局",
+      "linkText": "東米里西処理場造成費",
+      "accountCode": "10",
+      "projectCode": "22499"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251022704.pdf",
+      "filename": "20251022704.pdf",
+      "bureau": "財政局",
+      "linkText": "病院整備費分等",
+      "accountCode": "10",
+      "projectCode": "22704"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251022713.pdf",
+      "filename": "20251022713.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "難病患者支援対策費",
+      "accountCode": "10",
+      "projectCode": "22713"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251022721.pdf",
+      "filename": "20251022721.pdf",
+      "bureau": "都市局",
+      "linkText": "融資住宅建設資金貸付金等",
+      "accountCode": "10",
+      "projectCode": "22721"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251022745.pdf",
+      "filename": "20251022745.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "さっぽろ連携中枢都市圏推進費",
+      "accountCode": "10",
+      "projectCode": "22745"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251022755.pdf",
+      "filename": "20251022755.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "療育支援費",
+      "accountCode": "10",
+      "projectCode": "22755"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251022898_1.pdf",
+      "filename": "20251022898_1.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "子育て短期支援費",
+      "accountCode": "10",
+      "projectCode": "22898"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/dennkijidoushatyousho.pdf",
+      "filename": "dennkijidoushatyousho.pdf",
+      "bureau": "環境局",
+      "linkText": "電気自動車普及促進費",
+      "accountCode": "10",
+      "projectCode": "22947"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251022985.pdf",
+      "filename": "20251022985.pdf",
+      "bureau": "環境局",
+      "linkText": "リサイクルプラザ・リユースプラザ運営管理費",
+      "accountCode": "10",
+      "projectCode": "22985"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251022986.pdf",
+      "filename": "20251022986.pdf",
+      "bureau": "環境局",
+      "linkText": "資源物リサイクル事業費",
+      "accountCode": "10",
+      "projectCode": "22986"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023021.pdf",
+      "filename": "20251023021.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "（株）コンサドーレ貸付金",
+      "accountCode": "10",
+      "projectCode": "23021"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023023.pdf",
+      "filename": "20251023023.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "少年団体活動促進費",
+      "accountCode": "10",
+      "projectCode": "23023"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023024.pdf",
+      "filename": "20251023024.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "少年健全育成推進費",
+      "accountCode": "10",
+      "projectCode": "23024"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023040.pdf",
+      "filename": "20251023040.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "札幌市児童育成会運営補助金",
+      "accountCode": "10",
+      "projectCode": "23040"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023043.pdf",
+      "filename": "20251023043.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "児童会館運営管理費",
+      "accountCode": "10",
+      "projectCode": "23043"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023045.pdf",
+      "filename": "20251023045.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "ミニ児童会館等運営管理費",
+      "accountCode": "10",
+      "projectCode": "23045"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023046.pdf",
+      "filename": "20251023046.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "児童会館整備費",
+      "accountCode": "10",
+      "projectCode": "23046"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023048.pdf",
+      "filename": "20251023048.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "ミニ児童会館整備費",
+      "accountCode": "10",
+      "projectCode": "23048"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023050.pdf",
+      "filename": "20251023050.pdf",
+      "bureau": "市民文化局",
+      "linkText": "補助金（成人の日行事）",
+      "accountCode": "10",
+      "projectCode": "23050"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023084.pdf",
+      "filename": "20251023084.pdf",
+      "bureau": "環境局",
+      "linkText": "発寒破砕工場運営管理費",
+      "accountCode": "10",
+      "projectCode": "23084"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023110.pdf",
+      "filename": "20251023110.pdf",
+      "bureau": "教育委員会",
+      "linkText": "外国語指導助手関係費",
+      "accountCode": "10",
+      "projectCode": "23110"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023191.pdf",
+      "filename": "20251023191.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "病後児デイサービス事業費",
+      "accountCode": "10",
+      "projectCode": "23191"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023195.pdf",
+      "filename": "20251023195.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "時間外保育事業費",
+      "accountCode": "10",
+      "projectCode": "23195"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023220.pdf",
+      "filename": "20251023220.pdf",
+      "bureau": "経済観光局",
+      "linkText": "さっぽろ雪まつり事業費",
+      "accountCode": "10",
+      "projectCode": "23220"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023315.pdf",
+      "filename": "20251023315.pdf",
+      "bureau": "環境局",
+      "linkText": "ごみ収集計画費",
+      "accountCode": "10",
+      "projectCode": "23315"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023320.pdf",
+      "filename": "20251023320.pdf",
+      "bureau": "市民文化局",
+      "linkText": "交通安全対策費",
+      "accountCode": "10",
+      "projectCode": "23320"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023326.pdf",
+      "filename": "20251023326.pdf",
+      "bureau": "環境局",
+      "linkText": "プラスチック選別施設運営管理費",
+      "accountCode": "10",
+      "projectCode": "23326"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023333.pdf",
+      "filename": "20251023333.pdf",
+      "bureau": "環境局",
+      "linkText": "産業廃棄物処理指導計画推進費",
+      "accountCode": "10",
+      "projectCode": "23333"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023389.pdf",
+      "filename": "20251023389.pdf",
+      "bureau": "総務局",
+      "linkText": "首都圏シティプロモート推進費",
+      "accountCode": "10",
+      "projectCode": "23389"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023428.pdf",
+      "filename": "20251023428.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "精神科救急医療体制整備費",
+      "accountCode": "10",
+      "projectCode": "23428"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023443.pdf",
+      "filename": "20251023443.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "（株）コンサドーレ補助金",
+      "accountCode": "10",
+      "projectCode": "23443"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023447.pdf",
+      "filename": "20251023447.pdf",
+      "bureau": "消防局",
+      "linkText": "消防施設庁舎監視システム機器更新整備費",
+      "accountCode": "10",
+      "projectCode": "23447"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023468.pdf",
+      "filename": "20251023468.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "生活支援ハウス運営費",
+      "accountCode": "10",
+      "projectCode": "23468"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023484.pdf",
+      "filename": "20251023484.pdf",
+      "bureau": "建設局",
+      "linkText": "地籍調査費",
+      "accountCode": "10",
+      "projectCode": "23484"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023512.pdf",
+      "filename": "20251023512.pdf",
+      "bureau": "環境局",
+      "linkText": "市有施設の省エネ化等推進費",
+      "accountCode": "10",
+      "projectCode": "23512"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023526.pdf",
+      "filename": "20251023526.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "子育て援助活動支援費",
+      "accountCode": "10",
+      "projectCode": "23526"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023531.pdf",
+      "filename": "20251023531.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "福祉のまち推進費",
+      "accountCode": "10",
+      "projectCode": "23531"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023536.pdf",
+      "filename": "20251023536.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "福祉除雪費",
+      "accountCode": "10",
+      "projectCode": "23536"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023550.pdf",
+      "filename": "20251023550.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "介護サービス利用対策費",
+      "accountCode": "10",
+      "projectCode": "23550"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023595.pdf",
+      "filename": "20251023595.pdf",
+      "bureau": "教育委員会",
+      "linkText": "スクールカウンセラー活用費",
+      "accountCode": "10",
+      "projectCode": "23595"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023619.pdf",
+      "filename": "20251023619.pdf",
+      "bureau": "環境局",
+      "linkText": "２Ｒ推進費",
+      "accountCode": "10",
+      "projectCode": "23619"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023645.pdf",
+      "filename": "20251023645.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "札幌ドーム利用料金減免補填補助金",
+      "accountCode": "10",
+      "projectCode": "23645"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023664.pdf",
+      "filename": "20251023664.pdf",
+      "bureau": "建設局",
+      "linkText": "道路構造物点検調査費",
+      "accountCode": "10",
+      "projectCode": "23664"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023695.pdf",
+      "filename": "20251023695.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "児童虐待防止対策費",
+      "accountCode": "10",
+      "projectCode": "23695"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023730.pdf",
+      "filename": "20251023730.pdf",
+      "bureau": "経済観光局",
+      "linkText": "定山渓地区魅力アップ費",
+      "accountCode": "10",
+      "projectCode": "23730"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023875.pdf",
+      "filename": "20251023875.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "福祉のまちづくり推進費",
+      "accountCode": "10",
+      "projectCode": "23875"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023877.pdf",
+      "filename": "20251023877.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "民間公共的施設バリアフリー化推進費",
+      "accountCode": "10",
+      "projectCode": "23877"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023882.pdf",
+      "filename": "20251023882.pdf",
+      "bureau": "都市局",
+      "linkText": "高齢者向け住宅支援費",
+      "accountCode": "10",
+      "projectCode": "23882"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023909.pdf",
+      "filename": "20251023909.pdf",
+      "bureau": "建設局",
+      "linkText": "道路環境対策費",
+      "accountCode": "10",
+      "projectCode": "23909"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023946.pdf",
+      "filename": "20251023946.pdf",
+      "bureau": "経済観光局",
+      "linkText": "海外展開支援費",
+      "accountCode": "10",
+      "projectCode": "23946"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251023947.pdf",
+      "filename": "20251023947.pdf",
+      "bureau": "経済観光局",
+      "linkText": "食の輸出拡大支援費",
+      "accountCode": "10",
+      "projectCode": "23947"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251024003.pdf",
+      "filename": "20251024003.pdf",
+      "bureau": "環境局",
+      "linkText": "白石清掃工場運営管理費",
+      "accountCode": "10",
+      "projectCode": "24003"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251024017.pdf",
+      "filename": "20251024017.pdf",
+      "bureau": "総務局",
+      "linkText": "コールセンター運営管理費",
+      "accountCode": "10",
+      "projectCode": "24017"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251024040.pdf",
+      "filename": "20251024040.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "地域公共交通利用環境改善費",
+      "accountCode": "10",
+      "projectCode": "24040"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251024056.pdf",
+      "filename": "20251024056.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "都心エリアマネジメント推進費",
+      "accountCode": "10",
+      "projectCode": "24056"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251024059.pdf",
+      "filename": "20251024059.pdf",
+      "bureau": "財政局",
+      "linkText": "指導監督費分等",
+      "accountCode": "10",
+      "projectCode": "24059"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251024112.pdf",
+      "filename": "20251024112.pdf",
+      "bureau": "経済観光局",
+      "linkText": "観光案内所運営費",
+      "accountCode": "10",
+      "projectCode": "24112"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251024131.pdf",
+      "filename": "20251024131.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "歯周疾患検診費",
+      "accountCode": "10",
+      "projectCode": "24131"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251024147.pdf",
+      "filename": "20251024147.pdf",
+      "bureau": "総務局",
+      "linkText": "多文化共生推進費",
+      "accountCode": "10",
+      "projectCode": "24147"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251024160.pdf",
+      "filename": "20251024160.pdf",
+      "bureau": "経済観光局",
+      "linkText": "観光統計調査費",
+      "accountCode": "10",
+      "projectCode": "24160"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251024162.pdf",
+      "filename": "20251024162.pdf",
+      "bureau": "経済観光局",
+      "linkText": "おもてなし推進費",
+      "accountCode": "10",
+      "projectCode": "24162"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251024167.pdf",
+      "filename": "20251024167.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "ひとり親家庭自立支援給付金",
+      "accountCode": "10",
+      "projectCode": "24167"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251024224.pdf",
+      "filename": "20251024224.pdf",
+      "bureau": "教育委員会",
+      "linkText": "高校改革費",
+      "accountCode": "10",
+      "projectCode": "24224"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251024230.pdf",
+      "filename": "20251024230.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "道路交通調査費",
+      "accountCode": "10",
+      "projectCode": "24230"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251024231.pdf",
+      "filename": "20251024231.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "公共交通ネットワーク確保対策費",
+      "accountCode": "10",
+      "projectCode": "24231"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251024241.pdf",
+      "filename": "20251024241.pdf",
+      "bureau": "経済観光局",
+      "linkText": "企業立地促進費",
+      "accountCode": "10",
+      "projectCode": "24241"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251024318.pdf",
+      "filename": "20251024318.pdf",
+      "bureau": "経済観光局",
+      "linkText": "就業サポートセンター等事業費",
+      "accountCode": "10",
+      "projectCode": "24318"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251024349.pdf",
+      "filename": "20251024349.pdf",
+      "bureau": "環境局",
+      "linkText": "蛍光管・乾電池リサイクル事業費",
+      "accountCode": "10",
+      "projectCode": "24349"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251024563.pdf",
+      "filename": "20251024563.pdf",
+      "bureau": "市民文化局",
+      "linkText": "DV対策推進費",
+      "accountCode": "10",
+      "projectCode": "24563"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251024573.pdf",
+      "filename": "20251024573.pdf",
+      "bureau": "環境局",
+      "linkText": "特別管理産業廃棄物適正処理監視強化対策費",
+      "accountCode": "10",
+      "projectCode": "24573"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251024605.pdf",
+      "filename": "20251024605.pdf",
+      "bureau": "建設局",
+      "linkText": "道路情報管理室運営費",
+      "accountCode": "10",
+      "projectCode": "24605"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251024621.pdf",
+      "filename": "20251024621.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "発達障がい者支援体制整備費",
+      "accountCode": "10",
+      "projectCode": "24621"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251024654.pdf",
+      "filename": "20251024654.pdf",
+      "bureau": "市民文化局",
+      "linkText": "さっぽろアートステージ事業費",
+      "accountCode": "10",
+      "projectCode": "24654"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251024680.pdf",
+      "filename": "20251024680.pdf",
+      "bureau": "環境局",
+      "linkText": "ポイ捨て等防止啓発・指導費",
+      "accountCode": "10",
+      "projectCode": "24680"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251025029.pdf",
+      "filename": "20251025029.pdf",
+      "bureau": "建設局",
+      "linkText": "骨格道路網等整備費",
+      "accountCode": "10",
+      "projectCode": "25029"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251025165.pdf",
+      "filename": "20251025165.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "子育てサロン事業費",
+      "accountCode": "10",
+      "projectCode": "25165"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251025185.pdf",
+      "filename": "20251025185.pdf",
+      "bureau": "環境局",
+      "linkText": "総合的環境教育推進費",
+      "accountCode": "10",
+      "projectCode": "25185"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251025240.pdf",
+      "filename": "20251025240.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "北海道新幹線推進費",
+      "accountCode": "10",
+      "projectCode": "25240"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251025260.pdf",
+      "filename": "20251025260.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "障がい者「元気ショップ」運営費",
+      "accountCode": "10",
+      "projectCode": "25260"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251025274.pdf",
+      "filename": "20251025274.pdf",
+      "bureau": "環境局",
+      "linkText": "園内施設維持管理費",
+      "accountCode": "10",
+      "projectCode": "25274"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251025281.pdf",
+      "filename": "20251025281.pdf",
+      "bureau": "経済観光局",
+      "linkText": "ワークトライアル事業費",
+      "accountCode": "10",
+      "projectCode": "25281"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251025353.pdf",
+      "filename": "20251025353.pdf",
+      "bureau": "教育委員会",
+      "linkText": "中央図書館大通カウンター運営費",
+      "accountCode": "10",
+      "projectCode": "25353"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035012.pdf",
+      "filename": "20251035012.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "地域活動支援センター運営補助金",
+      "accountCode": "10",
+      "projectCode": "35012"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035014.pdf",
+      "filename": "20251035014.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "身体障がい者入浴サービス費",
+      "accountCode": "10",
+      "projectCode": "35014"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035083.pdf",
+      "filename": "20251035083.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "児童福祉施設給付費",
+      "accountCode": "10",
+      "projectCode": "35083"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035117.pdf",
+      "filename": "20251035117.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "日中一時支援事業運営補助金",
+      "accountCode": "10",
+      "projectCode": "35117"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035135.pdf",
+      "filename": "20251035135.pdf",
+      "bureau": "消防局",
+      "linkText": "火災予防推進費",
+      "accountCode": "10",
+      "projectCode": "35135"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035147.pdf",
+      "filename": "20251035147.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "障がい者協働事業運営補助金",
+      "accountCode": "10",
+      "projectCode": "35147"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035164.pdf",
+      "filename": "20251035164.pdf",
+      "bureau": "市民文化局",
+      "linkText": "アイヌ伝統文化振興費",
+      "accountCode": "10",
+      "projectCode": "35164"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035168_1.pdf",
+      "filename": "20251035168_1.pdf",
+      "bureau": "環境局",
+      "linkText": "住宅・建築物の光熱費等の見える化推進費",
+      "accountCode": "10",
+      "projectCode": "35168"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035170.pdf",
+      "filename": "20251035170.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "障がい者相談支援費",
+      "accountCode": "10",
+      "projectCode": "35170"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035187.pdf",
+      "filename": "20251035187.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "生活訓練等事業費",
+      "accountCode": "10",
+      "projectCode": "35187"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035231.pdf",
+      "filename": "20251035231.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "感染症指定医療機関運営費",
+      "accountCode": "10",
+      "projectCode": "35231"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035233.pdf",
+      "filename": "20251035233.pdf",
+      "bureau": "市民文化局",
+      "linkText": "サッポロ・シティ・ジャズ事業費",
+      "accountCode": "10",
+      "projectCode": "35233"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035264.pdf",
+      "filename": "20251035264.pdf",
+      "bureau": "都市局",
+      "linkText": "民間建築物耐震化促進費",
+      "accountCode": "10",
+      "projectCode": "35264"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035291.pdf",
+      "filename": "20251035291.pdf",
+      "bureau": "経済観光局",
+      "linkText": "さっぽろオータムフェスト事業費",
+      "accountCode": "10",
+      "projectCode": "35291"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035312.pdf",
+      "filename": "20251035312.pdf",
+      "bureau": "建設局",
+      "linkText": "道路維持管理計画策定費",
+      "accountCode": "10",
+      "projectCode": "35312"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035316.pdf",
+      "filename": "20251035316.pdf",
+      "bureau": "市民文化局",
+      "linkText": "アイヌ施策費",
+      "accountCode": "10",
+      "projectCode": "35316"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035366.pdf",
+      "filename": "20251035366.pdf",
+      "bureau": "財政局",
+      "linkText": "市場再整備等利子償還分",
+      "accountCode": "10",
+      "projectCode": "35366"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035402.pdf",
+      "filename": "20251035402.pdf",
+      "bureau": "市民文化局",
+      "linkText": "まちづくりセンター地域自主運営化推進費",
+      "accountCode": "10",
+      "projectCode": "35402"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035429.pdf",
+      "filename": "20251035429.pdf",
+      "bureau": "教育委員会",
+      "linkText": "学びのサポーター活用費",
+      "accountCode": "10",
+      "projectCode": "35429"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035453.pdf",
+      "filename": "20251035453.pdf",
+      "bureau": "都市局",
+      "linkText": "団地関連費",
+      "accountCode": "10",
+      "projectCode": "35453"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035481.pdf",
+      "filename": "20251035481.pdf",
+      "bureau": "都市局",
+      "linkText": "保全推進費",
+      "accountCode": "10",
+      "projectCode": "35481"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035485.pdf",
+      "filename": "20251035485.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "障がい者就労支援推進費",
+      "accountCode": "10",
+      "projectCode": "35485"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035500.pdf",
+      "filename": "20251035500.pdf",
+      "bureau": "市民文化局",
+      "linkText": "子どもの文化芸術体験事業費",
+      "accountCode": "10",
+      "projectCode": "35500"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035553.pdf",
+      "filename": "20251035553.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "創成東地区まちづくり推進費",
+      "accountCode": "10",
+      "projectCode": "35553"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035554.pdf",
+      "filename": "20251035554.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "札幌駅交流拠点まちづくり推進費",
+      "accountCode": "10",
+      "projectCode": "35554"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035581.pdf",
+      "filename": "20251035581.pdf",
+      "bureau": "市民文化局",
+      "linkText": "市民まちづくり活動促進費",
+      "accountCode": "10",
+      "projectCode": "35581"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035621.pdf",
+      "filename": "20251035621.pdf",
+      "bureau": "市民文化局",
+      "linkText": "創造都市ネットワーク活用費",
+      "accountCode": "10",
+      "projectCode": "35621"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035639.pdf",
+      "filename": "20251035639.pdf",
+      "bureau": "経済観光局",
+      "linkText": "大学連携型施設等運営費",
+      "accountCode": "10",
+      "projectCode": "35639"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035672.pdf",
+      "filename": "20251035672.pdf",
+      "bureau": "環境局",
+      "linkText": "ごみステーション管理器材等助成費",
+      "accountCode": "10",
+      "projectCode": "35672"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035674.pdf",
+      "filename": "20251035674.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "後期高齢者健康診査費",
+      "accountCode": "10",
+      "projectCode": "35674"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035696.pdf",
+      "filename": "20251035696.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "安全・安心な食のまち・さっぽろ推進費",
+      "accountCode": "10",
+      "projectCode": "35696"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035720.pdf",
+      "filename": "20251035720.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "子どもの権利救済機関運営管理費",
+      "accountCode": "10",
+      "projectCode": "35720"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035778_1.pdf",
+      "filename": "20251035778_1.pdf",
+      "bureau": "環境局",
+      "linkText": "雑がみリサイクル事業費",
+      "accountCode": "10",
+      "projectCode": "35778"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035783.pdf",
+      "filename": "20251035783.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "パーソナルアシスタンス事業費",
+      "accountCode": "10",
+      "projectCode": "35783"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035787.pdf",
+      "filename": "20251035787.pdf",
+      "bureau": "教育委員会",
+      "linkText": "スクールソーシャルワーカー活用費",
+      "accountCode": "10",
+      "projectCode": "35787"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035794.pdf",
+      "filename": "20251035794.pdf",
+      "bureau": "環境局",
+      "linkText": "雑がみ選別施設運営管理費",
+      "accountCode": "10",
+      "projectCode": "35794"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035838.pdf",
+      "filename": "20251035838.pdf",
+      "bureau": "教育委員会",
+      "linkText": "部活動外部人材活用費",
+      "accountCode": "10",
+      "projectCode": "35838"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035856.pdf",
+      "filename": "20251035856.pdf",
+      "bureau": "都市局",
+      "linkText": "市営住宅維持更新費",
+      "accountCode": "10",
+      "projectCode": "35856"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251035907.pdf",
+      "filename": "20251035907.pdf",
+      "bureau": "環境局",
+      "linkText": "枝・葉・草リサイクル事業費",
+      "accountCode": "10",
+      "projectCode": "35907"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036002.pdf",
+      "filename": "20251036002.pdf",
+      "bureau": "市民文化局",
+      "linkText": "消費者行政活性化事業費",
+      "accountCode": "10",
+      "projectCode": "36002"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036041.pdf",
+      "filename": "20251036041.pdf",
+      "bureau": "経済観光局",
+      "linkText": "広域連携観光振興費",
+      "accountCode": "10",
+      "projectCode": "36041"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036051.pdf",
+      "filename": "20251036051.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "元気ジョブアウトソーシングセンター運営費",
+      "accountCode": "10",
+      "projectCode": "36051"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036080.pdf",
+      "filename": "20251036080.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "自殺総合対策推進費",
+      "accountCode": "10",
+      "projectCode": "36080"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036116.pdf",
+      "filename": "20251036116.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "広域型特別養護老人ホーム新築等補助金",
+      "accountCode": "10",
+      "projectCode": "36116"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036135.pdf",
+      "filename": "20251036135.pdf",
+      "bureau": "環境局",
+      "linkText": "焼却灰リサイクル事業費",
+      "accountCode": "10",
+      "projectCode": "36135"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036211.pdf",
+      "filename": "20251036211.pdf",
+      "bureau": "環境局",
+      "linkText": "家庭ごみ処理手数料管理費",
+      "accountCode": "10",
+      "projectCode": "36211"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036213.pdf",
+      "filename": "20251036213.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "交通施設計画推進費",
+      "accountCode": "10",
+      "projectCode": "36213"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036235.pdf",
+      "filename": "20251036235.pdf",
+      "bureau": "環境局",
+      "linkText": "家庭の生ごみ減量・リサイクル推進費",
+      "accountCode": "10",
+      "projectCode": "36235"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036246.pdf",
+      "filename": "20251036246.pdf",
+      "bureau": "市民文化局",
+      "linkText": "国際芸術祭事業費",
+      "accountCode": "10",
+      "projectCode": "36246"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036260.pdf",
+      "filename": "20251036260.pdf",
+      "bureau": "経済観光局",
+      "linkText": "農業担い手育成・支援費",
+      "accountCode": "10",
+      "projectCode": "36260"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036276.pdf",
+      "filename": "20251036276.pdf",
+      "bureau": "市民文化局",
+      "linkText": "５００ｍ美術館運営費",
+      "accountCode": "10",
+      "projectCode": "36276"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036285.pdf",
+      "filename": "20251036285.pdf",
+      "bureau": "都市局",
+      "linkText": "エコリフォーム促進費",
+      "accountCode": "10",
+      "projectCode": "36285"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036287.pdf",
+      "filename": "20251036287.pdf",
+      "bureau": "経済観光局",
+      "linkText": "ＭＩＣＥ推進費",
+      "accountCode": "10",
+      "projectCode": "36287"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036301.pdf",
+      "filename": "20251036301.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "札幌ドームアマチュア大会利用料金減免補助金",
+      "accountCode": "10",
+      "projectCode": "36301"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036351.pdf",
+      "filename": "20251036351.pdf",
+      "bureau": "市民文化局",
+      "linkText": "消費者被害防止ネットワーク事業費",
+      "accountCode": "10",
+      "projectCode": "36351"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036388_1.pdf",
+      "filename": "20251036388_1.pdf",
+      "bureau": "市民文化局",
+      "linkText": "地域のための遊休スペース等活用支援費",
+      "accountCode": "10",
+      "projectCode": "36388"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036444.pdf",
+      "filename": "20251036444.pdf",
+      "bureau": "建設局",
+      "linkText": "地域と創る公園機能再編・再整備推進費",
+      "accountCode": "10",
+      "projectCode": "36444"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036446.pdf",
+      "filename": "20251036446.pdf",
+      "bureau": "建設局",
+      "linkText": "安全・安心な公園再整備費",
+      "accountCode": "10",
+      "projectCode": "36446"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036449.pdf",
+      "filename": "20251036449.pdf",
+      "bureau": "建設局",
+      "linkText": "みどり豊かなまちづくり推進費",
+      "accountCode": "10",
+      "projectCode": "36449"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036480.pdf",
+      "filename": "20251036480.pdf",
+      "bureau": "環境局",
+      "linkText": "さっぽろサスティナブルライフ推進費",
+      "accountCode": "10",
+      "projectCode": "36480"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036495.pdf",
+      "filename": "20251036495.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "土地利用計画策定費",
+      "accountCode": "10",
+      "projectCode": "36495"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036537.pdf",
+      "filename": "20251036537.pdf",
+      "bureau": "環境局",
+      "linkText": "生物多様性推進費",
+      "accountCode": "10",
+      "projectCode": "36537"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036567.pdf",
+      "filename": "20251036567.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "路面電車活用推進費",
+      "accountCode": "10",
+      "projectCode": "36567"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036602.pdf",
+      "filename": "20251036602.pdf",
+      "bureau": "教育委員会",
+      "linkText": "相談支援パートナー事業費",
+      "accountCode": "10",
+      "projectCode": "36602"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036618.pdf",
+      "filename": "20251036618.pdf",
+      "bureau": "経済観光局",
+      "linkText": "新製品・新技術開発支援費",
+      "accountCode": "10",
+      "projectCode": "36618"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036619.pdf",
+      "filename": "20251036619.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "子どもの学びの環境づくり補助金",
+      "accountCode": "10",
+      "projectCode": "36619"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036640.pdf",
+      "filename": "20251036640.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "就労ボランティア体験事業費",
+      "accountCode": "10",
+      "projectCode": "36640"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036693.pdf",
+      "filename": "20251036693.pdf",
+      "bureau": "危機管理局",
+      "linkText": "避難場所環境整備費",
+      "accountCode": "10",
+      "projectCode": "36693"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036694.pdf",
+      "filename": "20251036694.pdf",
+      "bureau": "危機管理局",
+      "linkText": "地域防災計画策定・修正関連費",
+      "accountCode": "10",
+      "projectCode": "36694"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036735.pdf",
+      "filename": "20251036735.pdf",
+      "bureau": "経済観光局",
+      "linkText": "コンテンツ産業振興費",
+      "accountCode": "10",
+      "projectCode": "36735"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036738.pdf",
+      "filename": "20251036738.pdf",
+      "bureau": "都市局",
+      "linkText": "高断熱・高気密住宅普及促進費",
+      "accountCode": "10",
+      "projectCode": "36738"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036747.pdf",
+      "filename": "20251036747.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "重症心身障がい児者等受入促進費",
+      "accountCode": "10",
+      "projectCode": "36747"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036767.pdf",
+      "filename": "20251036767.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "歯科口腔保健推進費",
+      "accountCode": "10",
+      "projectCode": "36767"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036774.pdf",
+      "filename": "20251036774.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "スクリーニング検査費",
+      "accountCode": "10",
+      "projectCode": "36774"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036780.pdf",
+      "filename": "20251036780.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "地域ぬくもりサポート事業費",
+      "accountCode": "10",
+      "projectCode": "36780"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036789.pdf",
+      "filename": "20251036789.pdf",
+      "bureau": "市民文化局",
+      "linkText": "まちづくりセンター・地区会館保全リニューアル費",
+      "accountCode": "10",
+      "projectCode": "36789"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036819.pdf",
+      "filename": "20251036819.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "生活困窮者等福祉対策費",
+      "accountCode": "10",
+      "projectCode": "36819"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036832.pdf",
+      "filename": "20251036832.pdf",
+      "bureau": "教育委員会",
+      "linkText": "地域活動推進費",
+      "accountCode": "10",
+      "projectCode": "36832"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036836.pdf",
+      "filename": "20251036836.pdf",
+      "bureau": "市民文化局",
+      "linkText": "仮称）札幌自然史博物館整備推進費",
+      "accountCode": "10",
+      "projectCode": "36836"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036837.pdf",
+      "filename": "20251036837.pdf",
+      "bureau": "教育委員会",
+      "linkText": "社会教育関係団体補助金",
+      "accountCode": "10",
+      "projectCode": "36837"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036846.pdf",
+      "filename": "20251036846.pdf",
+      "bureau": "教育委員会",
+      "linkText": "学校新築費",
+      "accountCode": "10",
+      "projectCode": "36846"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036878.pdf",
+      "filename": "20251036878.pdf",
+      "bureau": "市民文化局",
+      "linkText": "演劇公演支援費",
+      "accountCode": "10",
+      "projectCode": "36878"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036884.pdf",
+      "filename": "20251036884.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "私立保育所整備等補助金",
+      "accountCode": "10",
+      "projectCode": "36884"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036900.pdf",
+      "filename": "20251036900.pdf",
+      "bureau": "教育委員会",
+      "linkText": "学校増築費",
+      "accountCode": "10",
+      "projectCode": "36900"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036903.pdf",
+      "filename": "20251036903.pdf",
+      "bureau": "教育委員会",
+      "linkText": "学校施設解体費",
+      "accountCode": "10",
+      "projectCode": "36903"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036910.pdf",
+      "filename": "20251036910.pdf",
+      "bureau": "教育委員会",
+      "linkText": "施設改修等整備費",
+      "accountCode": "10",
+      "projectCode": "36910"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036919.pdf",
+      "filename": "20251036919.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "子ども安心ネットワーク強化費",
+      "accountCode": "10",
+      "projectCode": "36919"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036927.pdf",
+      "filename": "20251036927.pdf",
+      "bureau": "総務局",
+      "linkText": "姉妹・友好都市交流関連費",
+      "accountCode": "10",
+      "projectCode": "36927"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036956.pdf",
+      "filename": "20251036956.pdf",
+      "bureau": "財政局",
+      "linkText": "市場再整備等元金償還分",
+      "accountCode": "10",
+      "projectCode": "36956"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036959.pdf",
+      "filename": "20251036959.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "区福祉の相談窓口運営費",
+      "accountCode": "10",
+      "projectCode": "36959"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251036975.pdf",
+      "filename": "20251036975.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "私立学校教材教具等整備補助金",
+      "accountCode": "10",
+      "projectCode": "36975"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037048.pdf",
+      "filename": "20251037048.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "都心エネルギープラン推進費",
+      "accountCode": "10",
+      "projectCode": "37048"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037095.pdf",
+      "filename": "20251037095.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "認知症高齢者グループホーム等開設準備経費補助金",
+      "accountCode": "10",
+      "projectCode": "37095"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037132.pdf",
+      "filename": "20251037132.pdf",
+      "bureau": "市民文化局",
+      "linkText": "地域課題解決のためのネットワーク構築費",
+      "accountCode": "10",
+      "projectCode": "37132"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037133.pdf",
+      "filename": "20251037133.pdf",
+      "bureau": "環境局",
+      "linkText": "駒岡清掃工場更新費",
+      "accountCode": "10",
+      "projectCode": "37133"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037135.pdf",
+      "filename": "20251037135.pdf",
+      "bureau": "市民文化局",
+      "linkText": "さっぽろ天神山アートスタジオ運営管理費",
+      "accountCode": "10",
+      "projectCode": "37135"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037137.pdf",
+      "filename": "20251037137.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "子どもの体験活動の場支援費",
+      "accountCode": "10",
+      "projectCode": "37137"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037140.pdf",
+      "filename": "20251037140.pdf",
+      "bureau": "教育委員会",
+      "linkText": "観察・実験アシスタント事業費",
+      "accountCode": "10",
+      "projectCode": "37140"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037146.pdf",
+      "filename": "20251037146.pdf",
+      "bureau": "教育委員会",
+      "linkText": "進路探究オリエンテーリング事業費",
+      "accountCode": "10",
+      "projectCode": "37146"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037152.pdf",
+      "filename": "20251037152.pdf",
+      "bureau": "危機管理局",
+      "linkText": "避難所開設・運営能力向上費",
+      "accountCode": "10",
+      "projectCode": "37152"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037164.pdf",
+      "filename": "20251037164.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "札幌ドーム保全費",
+      "accountCode": "10",
+      "projectCode": "37164"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037192.pdf",
+      "filename": "20251037192.pdf",
+      "bureau": "教育委員会",
+      "linkText": "いじめ対策・自殺予防費",
+      "accountCode": "10",
+      "projectCode": "37192"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037223.pdf",
+      "filename": "20251037223.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "地域支え合い有償ボランティア事業補助金",
+      "accountCode": "10",
+      "projectCode": "37223"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037259.pdf",
+      "filename": "20251037259.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "篠路駅周辺地区まちづくり推進費",
+      "accountCode": "10",
+      "projectCode": "37259"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037285.pdf",
+      "filename": "20251037285.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "障がい児地域支援マネジメント費",
+      "accountCode": "10",
+      "projectCode": "37285"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037317.pdf",
+      "filename": "20251037317.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "要配慮者避難支援対策費",
+      "accountCode": "10",
+      "projectCode": "37317"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037333.pdf",
+      "filename": "20251037333.pdf",
+      "bureau": "市民文化局",
+      "linkText": "旧札幌控訴院庁舎保存修理費",
+      "accountCode": "10",
+      "projectCode": "37333"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037356.pdf",
+      "filename": "20251037356.pdf",
+      "bureau": "市民文化局",
+      "linkText": "町内会活動総合支援費",
+      "accountCode": "10",
+      "projectCode": "37356"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037384.pdf",
+      "filename": "20251037384.pdf",
+      "bureau": "経済観光局",
+      "linkText": "付加価値の高い観光コンテンツ創出費",
+      "accountCode": "10",
+      "projectCode": "37384"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037390.pdf",
+      "filename": "20251037390.pdf",
+      "bureau": "経済観光局",
+      "linkText": "ＭＩＣＥ施設整備費",
+      "accountCode": "10",
+      "projectCode": "37390"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037400.pdf",
+      "filename": "20251037400.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "市民運動広場用地整備費",
+      "accountCode": "10",
+      "projectCode": "37400"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037410.pdf",
+      "filename": "20251037410.pdf",
+      "bureau": "経済観光局",
+      "linkText": "デザイン産業振興費",
+      "accountCode": "10",
+      "projectCode": "37410"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037413.pdf",
+      "filename": "20251037413.pdf",
+      "bureau": "議会事務局",
+      "linkText": "札幌・ポートランド姉妹都市提携６５周年記念事業費",
+      "accountCode": "10",
+      "projectCode": "37413"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037428.pdf",
+      "filename": "20251037428.pdf",
+      "bureau": "都市局",
+      "linkText": "空き家対策費",
+      "accountCode": "10",
+      "projectCode": "37428"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037471.pdf",
+      "filename": "20251037471.pdf",
+      "bureau": "市民文化局",
+      "linkText": "中央区複合庁舎整備費",
+      "accountCode": "10",
+      "projectCode": "37471"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037486.pdf",
+      "filename": "20251037486.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "スポーツ施設リフレッシュ費",
+      "accountCode": "10",
+      "projectCode": "37486"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037503.pdf",
+      "filename": "20251037503.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "子どもの心の診療ネットワーク事業費",
+      "accountCode": "10",
+      "projectCode": "37503"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037507.pdf",
+      "filename": "20251037507.pdf",
+      "bureau": "市民文化局",
+      "linkText": "歴史文化のまちづくり推進費",
+      "accountCode": "10",
+      "projectCode": "37507"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037509.pdf",
+      "filename": "20251037509.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "市立認定こども園運営費",
+      "accountCode": "10",
+      "projectCode": "37509"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037535.pdf",
+      "filename": "20251037535.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "私立幼稚園等補助金",
+      "accountCode": "10",
+      "projectCode": "37535"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037540.pdf",
+      "filename": "20251037540.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "生活困窮者自立支援費",
+      "accountCode": "10",
+      "projectCode": "37540"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037549.pdf",
+      "filename": "20251037549.pdf",
+      "bureau": "環境局",
+      "linkText": "自立分散型エネルギー普及推進費",
+      "accountCode": "10",
+      "projectCode": "37549"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037552.pdf",
+      "filename": "20251037552.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "まちづくり基礎調査・研究費",
+      "accountCode": "10",
+      "projectCode": "37552"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037553.pdf",
+      "filename": "20251037553.pdf",
+      "bureau": "市民文化局",
+      "linkText": "文化芸術施設リフレッシュ事業費",
+      "accountCode": "10",
+      "projectCode": "37553"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037557.pdf",
+      "filename": "20251037557.pdf",
+      "bureau": "危機管理局",
+      "linkText": "災害対策本部機能強化費",
+      "accountCode": "10",
+      "projectCode": "37557"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037559.pdf",
+      "filename": "20251037559.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "保育ニーズコーディネート費",
+      "accountCode": "10",
+      "projectCode": "37559"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037560.pdf",
+      "filename": "20251037560.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "一時預かり事業費",
+      "accountCode": "10",
+      "projectCode": "37560"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037567.pdf",
+      "filename": "20251037567.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "ひきこもり対策推進費",
+      "accountCode": "10",
+      "projectCode": "37567"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037572_1.pdf",
+      "filename": "20251037572_1.pdf",
+      "bureau": "環境局",
+      "linkText": "さっぽろヒグマ基本計画推進費",
+      "accountCode": "10",
+      "projectCode": "37572"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037593.pdf",
+      "filename": "20251037593.pdf",
+      "bureau": "経済観光局",
+      "linkText": "さっぽろホワイトイルミネーション事業費",
+      "accountCode": "10",
+      "projectCode": "37593"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037612.pdf",
+      "filename": "20251037612.pdf",
+      "bureau": "経済観光局",
+      "linkText": "国際ビジネス人材育成費",
+      "accountCode": "10",
+      "projectCode": "37612"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037624.pdf",
+      "filename": "20251037624.pdf",
+      "bureau": "消防局",
+      "linkText": "震災対策用消防水利整備促進費",
+      "accountCode": "10",
+      "projectCode": "37624"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037635.pdf",
+      "filename": "20251037635.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "介護人材確保促進費",
+      "accountCode": "10",
+      "projectCode": "37635"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037641.pdf",
+      "filename": "20251037641.pdf",
+      "bureau": "建設局",
+      "linkText": "建設産業活性化推進費",
+      "accountCode": "10",
+      "projectCode": "37641"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037664.pdf",
+      "filename": "20251037664.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "がん患者の社会活動支援費",
+      "accountCode": "10",
+      "projectCode": "37664"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037666.pdf",
+      "filename": "20251037666.pdf",
+      "bureau": "経済観光局",
+      "linkText": "観光客受入環境整備費",
+      "accountCode": "10",
+      "projectCode": "37666"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037711.pdf",
+      "filename": "20251037711.pdf",
+      "bureau": "経済観光局",
+      "linkText": "女性の多様な働き方支援窓口運営費",
+      "accountCode": "10",
+      "projectCode": "37711"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037717.pdf",
+      "filename": "20251037717.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "真駒内駅前地区まちづくり推進費",
+      "accountCode": "10",
+      "projectCode": "37717"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037718.pdf",
+      "filename": "20251037718.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "もみじ台地域再構築推進費",
+      "accountCode": "10",
+      "projectCode": "37718"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037739.pdf",
+      "filename": "20251037739.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "実費徴収に係る補足給付費",
+      "accountCode": "10",
+      "projectCode": "37739"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037741.pdf",
+      "filename": "20251037741.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "将来交通体系の調査・検討費",
+      "accountCode": "10",
+      "projectCode": "37741"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037742.pdf",
+      "filename": "20251037742.pdf",
+      "bureau": "建設局",
+      "linkText": "ふれあい緑花推進費",
+      "accountCode": "10",
+      "projectCode": "37742"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037743.pdf",
+      "filename": "20251037743.pdf",
+      "bureau": "環境局",
+      "linkText": "市有施設・未利用地への太陽光発電設備導入費",
+      "accountCode": "10",
+      "projectCode": "37743"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037755.pdf",
+      "filename": "20251037755.pdf",
+      "bureau": "建設局",
+      "linkText": "健やかな道路緑化推進費",
+      "accountCode": "10",
+      "projectCode": "37755"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037765.pdf",
+      "filename": "20251037765.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "交通施設バリアフリー化等推進費",
+      "accountCode": "10",
+      "projectCode": "37765"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037778.pdf",
+      "filename": "20251037778.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "育児休業等取得助成費",
+      "accountCode": "10",
+      "projectCode": "37778"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037780.pdf",
+      "filename": "20251037780.pdf",
+      "bureau": "経済観光局",
+      "linkText": "働き方改革推進費",
+      "accountCode": "10",
+      "projectCode": "37780"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037782.pdf",
+      "filename": "20251037782.pdf",
+      "bureau": "環境局",
+      "linkText": "廃スプレー缶類回収・処理費",
+      "accountCode": "10",
+      "projectCode": "37782"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037785.pdf",
+      "filename": "20251037785.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "がん対策推進費",
+      "accountCode": "10",
+      "projectCode": "37785"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037789.pdf",
+      "filename": "20251037789.pdf",
+      "bureau": "建設局",
+      "linkText": "みどりのボランティア活動促進費",
+      "accountCode": "10",
+      "projectCode": "37789"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037802.pdf",
+      "filename": "20251037802.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "藤野野外スポーツ交流施設リニューアル費",
+      "accountCode": "10",
+      "projectCode": "37802"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037811.pdf",
+      "filename": "20251037811.pdf",
+      "bureau": "環境局",
+      "linkText": "仮称）北部事業予定地調査・対策費",
+      "accountCode": "10",
+      "projectCode": "37811"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037818.pdf",
+      "filename": "20251037818.pdf",
+      "bureau": "経済観光局",
+      "linkText": "観光情報発信費",
+      "accountCode": "10",
+      "projectCode": "37818"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037829.pdf",
+      "filename": "20251037829.pdf",
+      "bureau": "デジタル戦略推進局",
+      "linkText": "札幌市ＩＣＴ活用戦略推進費",
+      "accountCode": "10",
+      "projectCode": "37829"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037835.pdf",
+      "filename": "20251037835.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "児童相談体制強化費",
+      "accountCode": "10",
+      "projectCode": "37835"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037857.pdf",
+      "filename": "20251037857.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "保育士等支援費",
+      "accountCode": "10",
+      "projectCode": "37857"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037858.pdf",
+      "filename": "20251037858.pdf",
+      "bureau": "総務局",
+      "linkText": "ふるさと納税活用費",
+      "accountCode": "10",
+      "projectCode": "37858"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037859.pdf",
+      "filename": "20251037859.pdf",
+      "bureau": "都市局",
+      "linkText": "大規模盛土造成地変動予測調査費",
+      "accountCode": "10",
+      "projectCode": "37859"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037864.pdf",
+      "filename": "20251037864.pdf",
+      "bureau": "教育委員会",
+      "linkText": "教育の情報化推進費",
+      "accountCode": "10",
+      "projectCode": "37864"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037865_1.pdf",
+      "filename": "20251037865_1.pdf",
+      "bureau": "教育委員会",
+      "linkText": "算数学び「ｂｅｙｏｎｄ」プロジェクト推進費",
+      "accountCode": "10",
+      "projectCode": "37865"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037866.pdf",
+      "filename": "20251037866.pdf",
+      "bureau": "教育委員会",
+      "linkText": "学校図書館活用促進費",
+      "accountCode": "10",
+      "projectCode": "37866"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037869.pdf",
+      "filename": "20251037869.pdf",
+      "bureau": "教育委員会",
+      "linkText": "学校給食施設整備費",
+      "accountCode": "10",
+      "projectCode": "37869"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037871_1.pdf",
+      "filename": "20251037871_1.pdf",
+      "bureau": "教育委員会",
+      "linkText": "学校施設長寿命化改修費",
+      "accountCode": "10",
+      "projectCode": "37871"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037901.pdf",
+      "filename": "20251037901.pdf",
+      "bureau": "教育委員会",
+      "linkText": "えほん図書館運営管理費",
+      "accountCode": "10",
+      "projectCode": "37901"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037907.pdf",
+      "filename": "20251037907.pdf",
+      "bureau": "都市局",
+      "linkText": "市有建築物特定天井対策費",
+      "accountCode": "10",
+      "projectCode": "37907"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037910.pdf",
+      "filename": "20251037910.pdf",
+      "bureau": "経済観光局",
+      "linkText": "ＵＩＪターン就職移住支援費",
+      "accountCode": "10",
+      "projectCode": "37910"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037911.pdf",
+      "filename": "20251037911.pdf",
+      "bureau": "経済観光局",
+      "linkText": "ローカルマッチプロジェクト事業費",
+      "accountCode": "10",
+      "projectCode": "37911"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037925.pdf",
+      "filename": "20251037925.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "ひとり親家庭高等職業訓練促進資金貸付事業費",
+      "accountCode": "10",
+      "projectCode": "37925"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251037977.pdf",
+      "filename": "20251037977.pdf",
+      "bureau": "市民文化局",
+      "linkText": "時計台保存修理費",
+      "accountCode": "10",
+      "projectCode": "37977"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038008.pdf",
+      "filename": "20251038008.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "ウインタースポーツ・オフシーズン練習施設整備費補助金",
+      "accountCode": "10",
+      "projectCode": "38008"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038011.pdf",
+      "filename": "20251038011.pdf",
+      "bureau": "教育委員会",
+      "linkText": "高等学校等生徒通学交通費助成費",
+      "accountCode": "10",
+      "projectCode": "38011"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038015.pdf",
+      "filename": "20251038015.pdf",
+      "bureau": "経済観光局",
+      "linkText": "ＩＴイノベーション推進費",
+      "accountCode": "10",
+      "projectCode": "38015"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038020.pdf",
+      "filename": "20251038020.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "さっぽろジュニアアスリート発掘・育成費",
+      "accountCode": "10",
+      "projectCode": "38020"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038021.pdf",
+      "filename": "20251038021.pdf",
+      "bureau": "経済観光局",
+      "linkText": "バイオ産業成長促進費",
+      "accountCode": "10",
+      "projectCode": "38021"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038022.pdf",
+      "filename": "20251038022.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "障がい者スポーツ普及促進費",
+      "accountCode": "10",
+      "projectCode": "38022"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038044.pdf",
+      "filename": "20251038044.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "若者出会い創出費",
+      "accountCode": "10",
+      "projectCode": "38044"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038045.pdf",
+      "filename": "20251038045.pdf",
+      "bureau": "経済観光局",
+      "linkText": "シニアワーキングさっぽろ開催費",
+      "accountCode": "10",
+      "projectCode": "38045"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038078.pdf",
+      "filename": "20251038078.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "社会的養護自立支援費",
+      "accountCode": "10",
+      "projectCode": "38078"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038082.pdf",
+      "filename": "20251038082.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "後期高齢者歯科健康診査費",
+      "accountCode": "10",
+      "projectCode": "38082"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038110.pdf",
+      "filename": "20251038110.pdf",
+      "bureau": "経済観光局",
+      "linkText": "バイオ企業等育成支援費",
+      "accountCode": "10",
+      "projectCode": "38110"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038113.pdf",
+      "filename": "20251038113.pdf",
+      "bureau": "危機管理局",
+      "linkText": "地域防災活動推進費",
+      "accountCode": "10",
+      "projectCode": "38113"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038117.pdf",
+      "filename": "20251038117.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "介護保険施設開設準備経費補助金",
+      "accountCode": "10",
+      "projectCode": "38117"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038124.pdf",
+      "filename": "20251038124.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "スポーツ普及振興費",
+      "accountCode": "10",
+      "projectCode": "38124"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038128.pdf",
+      "filename": "20251038128.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "はり・きゅう・マッサージ施術料助成費",
+      "accountCode": "10",
+      "projectCode": "38128"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038133.pdf",
+      "filename": "20251038133.pdf",
+      "bureau": "教育委員会",
+      "linkText": "図書・情報館運営管理費",
+      "accountCode": "10",
+      "projectCode": "38133"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038136.pdf",
+      "filename": "20251038136.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "子どもの貧困対策推進費",
+      "accountCode": "10",
+      "projectCode": "38136"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038150.pdf",
+      "filename": "20251038150.pdf",
+      "bureau": "市民文化局",
+      "linkText": "安全で安心な公共空間整備促進費",
+      "accountCode": "10",
+      "projectCode": "38150"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038160.pdf",
+      "filename": "20251038160.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "既存小規模福祉施設等スプリンクラー設備等整備補助金",
+      "accountCode": "10",
+      "projectCode": "38160"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038174.pdf",
+      "filename": "20251038174.pdf",
+      "bureau": "経済観光局",
+      "linkText": "食の輸出力強化支援費",
+      "accountCode": "10",
+      "projectCode": "38174"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038181.pdf",
+      "filename": "20251038181.pdf",
+      "bureau": "経済観光局",
+      "linkText": "中小企業経営支援費",
+      "accountCode": "10",
+      "projectCode": "38181"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038184.pdf",
+      "filename": "20251038184.pdf",
+      "bureau": "経済観光局",
+      "linkText": "創業促進支援費",
+      "accountCode": "10",
+      "projectCode": "38184"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038195.pdf",
+      "filename": "20251038195.pdf",
+      "bureau": "経済観光局",
+      "linkText": "中小企業融資促進費",
+      "accountCode": "10",
+      "projectCode": "38195"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038218.pdf",
+      "filename": "20251038218.pdf",
+      "bureau": "総務局",
+      "linkText": "業務改革推進費",
+      "accountCode": "10",
+      "projectCode": "38218"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038255.pdf",
+      "filename": "20251038255.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "成年後見制度利用促進費",
+      "accountCode": "10",
+      "projectCode": "38255"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038257.pdf",
+      "filename": "20251038257.pdf",
+      "bureau": "経済観光局",
+      "linkText": "スタートアップ集積促進費",
+      "accountCode": "10",
+      "projectCode": "38257"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038258.pdf",
+      "filename": "20251038258.pdf",
+      "bureau": "市民文化局",
+      "linkText": "野外彫刻作品保全推進費",
+      "accountCode": "10",
+      "projectCode": "38258"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038265.pdf",
+      "filename": "20251038265.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "仮称）動物愛護センター整備費",
+      "accountCode": "10",
+      "projectCode": "38265"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038268.pdf",
+      "filename": "20251038268.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "大通・創世交流拠点まちづくり推進費",
+      "accountCode": "10",
+      "projectCode": "38268"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038303.pdf",
+      "filename": "20251038303.pdf",
+      "bureau": "経済観光局",
+      "linkText": "観光関連施設の災害対策支援費",
+      "accountCode": "10",
+      "projectCode": "38303"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038306.pdf",
+      "filename": "20251038306.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "さっぽろアスリートサポート事業助成費",
+      "accountCode": "10",
+      "projectCode": "38306"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038307.pdf",
+      "filename": "20251038307.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "障がい者等災害対策用品購入助成費",
+      "accountCode": "10",
+      "projectCode": "38307"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038321.pdf",
+      "filename": "20251038321.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "介護保険施設等非常用自家発電設備整備補助金",
+      "accountCode": "10",
+      "projectCode": "38321"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038332.pdf",
+      "filename": "20251038332.pdf",
+      "bureau": "経済観光局",
+      "linkText": "スノーリゾート推進費",
+      "accountCode": "10",
+      "projectCode": "38332"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038334.pdf",
+      "filename": "20251038334.pdf",
+      "bureau": "経済観光局",
+      "linkText": "ＩＴ人材確保育成費",
+      "accountCode": "10",
+      "projectCode": "38334"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038343.pdf",
+      "filename": "20251038343.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "ウインタースポーツ普及振興費",
+      "accountCode": "10",
+      "projectCode": "38343"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038344.pdf",
+      "filename": "20251038344.pdf",
+      "bureau": "教育委員会",
+      "linkText": "公立夜間中学関係費",
+      "accountCode": "10",
+      "projectCode": "38344"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038349.pdf",
+      "filename": "20251038349.pdf",
+      "bureau": "経済観光局",
+      "linkText": "アドベンチャーツーリズム推進費",
+      "accountCode": "10",
+      "projectCode": "38349"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038350.pdf",
+      "filename": "20251038350.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "保育人材確保緊急対策費",
+      "accountCode": "10",
+      "projectCode": "38350"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038397.pdf",
+      "filename": "20251038397.pdf",
+      "bureau": "消防局",
+      "linkText": "札幌圏共同消防通信指令システム更新整備費",
+      "accountCode": "10",
+      "projectCode": "38397"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038400.pdf",
+      "filename": "20251038400.pdf",
+      "bureau": "消防局",
+      "linkText": "救急安心都市さっぽろ推進費",
+      "accountCode": "10",
+      "projectCode": "38400"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038402.pdf",
+      "filename": "20251038402.pdf",
+      "bureau": "経済観光局",
+      "linkText": "都心における冬のアクティビティ創出費",
+      "accountCode": "10",
+      "projectCode": "38402"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038413.pdf",
+      "filename": "20251038413.pdf",
+      "bureau": "経済観光局",
+      "linkText": "商店街地域力向上支援費",
+      "accountCode": "10",
+      "projectCode": "38413"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038415.pdf",
+      "filename": "20251038415.pdf",
+      "bureau": "都市局",
+      "linkText": "住宅確保要配慮者居住支援費",
+      "accountCode": "10",
+      "projectCode": "38415"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038417.pdf",
+      "filename": "20251038417.pdf",
+      "bureau": "環境局",
+      "linkText": "篠路清掃工場解体費",
+      "accountCode": "10",
+      "projectCode": "38417"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038420.pdf",
+      "filename": "20251038420.pdf",
+      "bureau": "環境局",
+      "linkText": "白石破砕工場更新費",
+      "accountCode": "10",
+      "projectCode": "38420"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038421.pdf",
+      "filename": "20251038421.pdf",
+      "bureau": "環境局",
+      "linkText": "篠路新資源化施設調査・建設費",
+      "accountCode": "10",
+      "projectCode": "38421"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038424.pdf",
+      "filename": "20251038424.pdf",
+      "bureau": "環境局",
+      "linkText": "発寒清掃工場更新費",
+      "accountCode": "10",
+      "projectCode": "38424"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038426.pdf",
+      "filename": "20251038426.pdf",
+      "bureau": "経済観光局",
+      "linkText": "サッポロさとらんどリフレッシュ費",
+      "accountCode": "10",
+      "projectCode": "38426"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038435.pdf",
+      "filename": "20251038435.pdf",
+      "bureau": "経済観光局",
+      "linkText": "奨学金返還支援費",
+      "accountCode": "10",
+      "projectCode": "38435"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038441.pdf",
+      "filename": "20251038441.pdf",
+      "bureau": "市民文化局",
+      "linkText": "札幌芸術の森魅力向上費",
+      "accountCode": "10",
+      "projectCode": "38441"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038442.pdf",
+      "filename": "20251038442.pdf",
+      "bureau": "経済観光局",
+      "linkText": "商店街商業機能向上支援費",
+      "accountCode": "10",
+      "projectCode": "38442"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038449.pdf",
+      "filename": "20251038449.pdf",
+      "bureau": "市民文化局",
+      "linkText": "区施設バリアフリー環境整備推進費",
+      "accountCode": "10",
+      "projectCode": "38449"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038451.pdf",
+      "filename": "20251038451.pdf",
+      "bureau": "市民文化局",
+      "linkText": "文化財施設等保全費",
+      "accountCode": "10",
+      "projectCode": "38451"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038454.pdf",
+      "filename": "20251038454.pdf",
+      "bureau": "建設局",
+      "linkText": "公園ユニバーサル化推進費",
+      "accountCode": "10",
+      "projectCode": "38454"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038457.pdf",
+      "filename": "20251038457.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "父親による子育て推進費",
+      "accountCode": "10",
+      "projectCode": "38457"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038460.pdf",
+      "filename": "20251038460.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "公立保育所等医療的ケア児保育費",
+      "accountCode": "10",
+      "projectCode": "38460"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038462.pdf",
+      "filename": "20251038462.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "母子保健歯科推進費",
+      "accountCode": "10",
+      "projectCode": "38462"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038463.pdf",
+      "filename": "20251038463.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "仮称）第二児童相談所整備費",
+      "accountCode": "10",
+      "projectCode": "38463"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038468.pdf",
+      "filename": "20251038468.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "子ども・子育て支援事務センター運営費",
+      "accountCode": "10",
+      "projectCode": "38468"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038470.pdf",
+      "filename": "20251038470.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "札幌ドーム周辺活用推進費",
+      "accountCode": "10",
+      "projectCode": "38470"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038478.pdf",
+      "filename": "20251038478.pdf",
+      "bureau": "建設局",
+      "linkText": "道路等設備維持更新費",
+      "accountCode": "10",
+      "projectCode": "38478"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038488.pdf",
+      "filename": "20251038488.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "硬式野球場整備費",
+      "accountCode": "10",
+      "projectCode": "38488"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038505.pdf",
+      "filename": "20251038505.pdf",
+      "bureau": "市民文化局",
+      "linkText": "犯罪被害者等支援費",
+      "accountCode": "10",
+      "projectCode": "38505"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038507.pdf",
+      "filename": "20251038507.pdf",
+      "bureau": "市民文化局",
+      "linkText": "東１丁目劇場施設活用費",
+      "accountCode": "10",
+      "projectCode": "38507"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038512.pdf",
+      "filename": "20251038512.pdf",
+      "bureau": "建設局",
+      "linkText": "道路等災害復旧費（都市防災推進）",
+      "accountCode": "10",
+      "projectCode": "38512"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038533.pdf",
+      "filename": "20251038533.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "障害福祉サービス事業所等感染症対策費",
+      "accountCode": "10",
+      "projectCode": "38533"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038566.pdf",
+      "filename": "20251038566.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "介護サービス事業所等感染症対策費",
+      "accountCode": "10",
+      "projectCode": "38566"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038579.pdf",
+      "filename": "20251038579.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "公共交通確保緊急支援事業",
+      "accountCode": "10",
+      "projectCode": "38579"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038610.pdf",
+      "filename": "20251038610.pdf",
+      "bureau": "環境局",
+      "linkText": "小型家電リサイクル事業費",
+      "accountCode": "10",
+      "projectCode": "38610"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038613.pdf",
+      "filename": "20251038613.pdf",
+      "bureau": "経済観光局",
+      "linkText": "中小企業ＤＸ推進費",
+      "accountCode": "10",
+      "projectCode": "38613"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038616.pdf",
+      "filename": "20251038616.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "介護サービス提供体制整備促進補助金",
+      "accountCode": "10",
+      "projectCode": "38616"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038618.pdf",
+      "filename": "20251038618.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "特定施設開設準備経費補助金",
+      "accountCode": "10",
+      "projectCode": "38618"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038628.pdf",
+      "filename": "20251038628.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "障がい者スポーツセンター検討調査費",
+      "accountCode": "10",
+      "projectCode": "38628"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038636.pdf",
+      "filename": "20251038636.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "困難を抱える若年女性支援費",
+      "accountCode": "10",
+      "projectCode": "38636"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038642.pdf",
+      "filename": "20251038642.pdf",
+      "bureau": "市民文化局",
+      "linkText": "区役所における総合案内・おくやみ窓口運営費",
+      "accountCode": "10",
+      "projectCode": "38642"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038652.pdf",
+      "filename": "20251038652.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "スポーツ施設再整備推進費",
+      "accountCode": "10",
+      "projectCode": "38652"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038654.pdf",
+      "filename": "20251038654.pdf",
+      "bureau": "総務局",
+      "linkText": "行政事務センター運営費",
+      "accountCode": "10",
+      "projectCode": "38654"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038682.pdf",
+      "filename": "20251038682.pdf",
+      "bureau": "教育委員会",
+      "linkText": "ＧＩＧＡスクール構想推進費",
+      "accountCode": "10",
+      "projectCode": "38682"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038687.pdf",
+      "filename": "20251038687.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "医療的ケア児保育支援補助金",
+      "accountCode": "10",
+      "projectCode": "38687"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038693.pdf",
+      "filename": "20251038693.pdf",
+      "bureau": "経済観光局",
+      "linkText": "事業再構築サポート費",
+      "accountCode": "10",
+      "projectCode": "38693"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038735.pdf",
+      "filename": "20251038735.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "老人福祉施設長寿命化補助金",
+      "accountCode": "10",
+      "projectCode": "38735"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038737.pdf",
+      "filename": "20251038737.pdf",
+      "bureau": "環境局",
+      "linkText": "ＲＥ１００モデル等再エネ電力利用促進費",
+      "accountCode": "10",
+      "projectCode": "38737"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038739.pdf",
+      "filename": "20251038739.pdf",
+      "bureau": "都市局",
+      "linkText": "借上市営住宅返還業務",
+      "accountCode": "10",
+      "projectCode": "38739"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038740.pdf",
+      "filename": "20251038740.pdf",
+      "bureau": "環境局",
+      "linkText": "駒岡清掃工場解体費",
+      "accountCode": "10",
+      "projectCode": "38740"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038744.pdf",
+      "filename": "20251038744.pdf",
+      "bureau": "市民文化局",
+      "linkText": "町内会デジタル活用促進費",
+      "accountCode": "10",
+      "projectCode": "38744"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038749.pdf",
+      "filename": "20251038749.pdf",
+      "bureau": "都市局",
+      "linkText": "滑動崩落対策施設維持管理費",
+      "accountCode": "10",
+      "projectCode": "38749"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038756.pdf",
+      "filename": "20251038756.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "重度障がい者等就労支援費",
+      "accountCode": "10",
+      "projectCode": "38756"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038762.pdf",
+      "filename": "20251038762.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "児童クラブ昼食提供費",
+      "accountCode": "10",
+      "projectCode": "38762"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038767.pdf",
+      "filename": "20251038767.pdf",
+      "bureau": "環境局",
+      "linkText": "清掃事務所更新費",
+      "accountCode": "10",
+      "projectCode": "38767"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038771.pdf",
+      "filename": "20251038771.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "ヤングケアラー支援推進費",
+      "accountCode": "10",
+      "projectCode": "38771"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038778.pdf",
+      "filename": "20251038778.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "複合的福祉課題等を抱える市民への支援促進費",
+      "accountCode": "10",
+      "projectCode": "38778"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038779.pdf",
+      "filename": "20251038779.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "新幹線札幌駅関連整備費",
+      "accountCode": "10",
+      "projectCode": "38779"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038785.pdf",
+      "filename": "20251038785.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "大学連携強化推進費",
+      "accountCode": "10",
+      "projectCode": "38785"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038788.pdf",
+      "filename": "20251038788.pdf",
+      "bureau": "総務局",
+      "linkText": "クロスメディア広報費",
+      "accountCode": "10",
+      "projectCode": "38788"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038790.pdf",
+      "filename": "20251038790.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "児童養護施設等体制強化費",
+      "accountCode": "10",
+      "projectCode": "38790"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038797.pdf",
+      "filename": "20251038797.pdf",
+      "bureau": "経済観光局",
+      "linkText": "海外投資誘致戦略検討費",
+      "accountCode": "10",
+      "projectCode": "38797"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038798.pdf",
+      "filename": "20251038798.pdf",
+      "bureau": "経済観光局",
+      "linkText": "観光人材育成支援費",
+      "accountCode": "10",
+      "projectCode": "38798"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038799.pdf",
+      "filename": "20251038799.pdf",
+      "bureau": "市民文化局",
+      "linkText": "文化芸術基本計画推進費",
+      "accountCode": "10",
+      "projectCode": "38799"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038801.pdf",
+      "filename": "20251038801.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "冬季における子どもの運動機会増進費",
+      "accountCode": "10",
+      "projectCode": "38801"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038802.pdf",
+      "filename": "20251038802.pdf",
+      "bureau": "建設局",
+      "linkText": "多面的機能を発揮する森林づくり推進費",
+      "accountCode": "10",
+      "projectCode": "38802"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038812.pdf",
+      "filename": "20251038812.pdf",
+      "bureau": "財政局",
+      "linkText": "経営健全化対策分",
+      "accountCode": "10",
+      "projectCode": "38812"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038813.pdf",
+      "filename": "20251038813.pdf",
+      "bureau": "市民文化局",
+      "linkText": "文化芸術鑑賞促進費",
+      "accountCode": "10",
+      "projectCode": "38813"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038814.pdf",
+      "filename": "20251038814.pdf",
+      "bureau": "デジタル戦略推進局",
+      "linkText": "スマートシティ推進費",
+      "accountCode": "10",
+      "projectCode": "38814"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038827_1.pdf",
+      "filename": "20251038827_1.pdf",
+      "bureau": "環境局",
+      "linkText": "事業者向け自家消費型太陽光発電導入支援費",
+      "accountCode": "10",
+      "projectCode": "38827"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038829.pdf",
+      "filename": "20251038829.pdf",
+      "bureau": "環境局",
+      "linkText": "住宅のエネルギー源転換実証費",
+      "accountCode": "10",
+      "projectCode": "38829"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251038845.pdf",
+      "filename": "20251038845.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "保育施設設備等導入補助金",
+      "accountCode": "10",
+      "projectCode": "38845"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070021.pdf",
+      "filename": "20251070021.pdf",
+      "bureau": "教育委員会",
+      "linkText": "医療的ケア児への支援体制推進費",
+      "accountCode": "10",
+      "projectCode": "70021"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070027.pdf",
+      "filename": "20251070027.pdf",
+      "bureau": "経済観光局",
+      "linkText": "美食のまち・さっぽろブランド推進費",
+      "accountCode": "10",
+      "projectCode": "70027"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070029.pdf",
+      "filename": "20251070029.pdf",
+      "bureau": "経済観光局",
+      "linkText": "製造業省エネ・カーボンニュートラル促進支援費",
+      "accountCode": "10",
+      "projectCode": "70029"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070030.pdf",
+      "filename": "20251070030.pdf",
+      "bureau": "経済観光局",
+      "linkText": "鳥獣被害防止対策推進費",
+      "accountCode": "10",
+      "projectCode": "70030"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070034.pdf",
+      "filename": "20251070034.pdf",
+      "bureau": "デジタル戦略推進局",
+      "linkText": "官民連携ＤＸ推進費",
+      "accountCode": "10",
+      "projectCode": "70034"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070035.pdf",
+      "filename": "20251070035.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "おたふくかぜワクチン予防接種費",
+      "accountCode": "10",
+      "projectCode": "70035"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070046.pdf",
+      "filename": "20251070046.pdf",
+      "bureau": "経済観光局",
+      "linkText": "札幌企業ＳＤＧｓ推進費",
+      "accountCode": "10",
+      "projectCode": "70046"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070047.pdf",
+      "filename": "20251070047.pdf",
+      "bureau": "経済観光局",
+      "linkText": "札幌未来牽引企業創出費",
+      "accountCode": "10",
+      "projectCode": "70047"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070049.pdf",
+      "filename": "20251070049.pdf",
+      "bureau": "教育委員会",
+      "linkText": "特別支援教育地域相談推進費",
+      "accountCode": "10",
+      "projectCode": "70049"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070051.pdf",
+      "filename": "20251070051.pdf",
+      "bureau": "経済観光局",
+      "linkText": "商店街基盤強化費",
+      "accountCode": "10",
+      "projectCode": "70051"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070052.pdf",
+      "filename": "20251070052.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "ホームレス自立支援費",
+      "accountCode": "10",
+      "projectCode": "70052"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070053.pdf",
+      "filename": "20251070053.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "まなびのサポート費",
+      "accountCode": "10",
+      "projectCode": "70053"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070061.pdf",
+      "filename": "20251070061.pdf",
+      "bureau": "環境局",
+      "linkText": "札幌市気候変動対策行動計画推進費",
+      "accountCode": "10",
+      "projectCode": "70061"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070063.pdf",
+      "filename": "20251070063.pdf",
+      "bureau": "教育委員会",
+      "linkText": "市立幼稚園預かり保育費",
+      "accountCode": "10",
+      "projectCode": "70063"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070064.pdf",
+      "filename": "20251070064.pdf",
+      "bureau": "教育委員会",
+      "linkText": "幼児教育相談・支援体制推進費",
+      "accountCode": "10",
+      "projectCode": "70064"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070067.pdf",
+      "filename": "20251070067.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "個別避難計画推進費",
+      "accountCode": "10",
+      "projectCode": "70067"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070074.pdf",
+      "filename": "20251070074.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "救急医療体制整備・強化費",
+      "accountCode": "10",
+      "projectCode": "70074"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070075.pdf",
+      "filename": "20251070075.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "地域共生医療推進費",
+      "accountCode": "10",
+      "projectCode": "70075"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070076.pdf",
+      "filename": "20251070076.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "感染症に強いまちづくり推進費",
+      "accountCode": "10",
+      "projectCode": "70076"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070080.pdf",
+      "filename": "20251070080.pdf",
+      "bureau": "経済観光局",
+      "linkText": "さっぽろ都市農業振興基本計画策定費",
+      "accountCode": "10",
+      "projectCode": "70080"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070081.pdf",
+      "filename": "20251070081.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "北５西１・西２地区再開発事業費",
+      "accountCode": "10",
+      "projectCode": "70081"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070082.pdf",
+      "filename": "20251070082.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "北４西３地区再開発事業費",
+      "accountCode": "10",
+      "projectCode": "70082"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070091.pdf",
+      "filename": "20251070091.pdf",
+      "bureau": "教育委員会",
+      "linkText": "帰国・外国人児童生徒教育支援推進費",
+      "accountCode": "10",
+      "projectCode": "70091"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070097.pdf",
+      "filename": "20251070097.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "運動習慣等推進費",
+      "accountCode": "10",
+      "projectCode": "70097"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070104.pdf",
+      "filename": "20251070104.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "スノーベースタウンＳＡＰＰＯＲＯ促進費",
+      "accountCode": "10",
+      "projectCode": "70104"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070105.pdf",
+      "filename": "20251070105.pdf",
+      "bureau": "消防局",
+      "linkText": "消防署改築費",
+      "accountCode": "10",
+      "projectCode": "70105"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070106.pdf",
+      "filename": "20251070106.pdf",
+      "bureau": "消防局",
+      "linkText": "消防施設感染防止対策費",
+      "accountCode": "10",
+      "projectCode": "70106"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070118.pdf",
+      "filename": "20251070118.pdf",
+      "bureau": "教育委員会",
+      "linkText": "学校施設バリアフリー化整備費",
+      "accountCode": "10",
+      "projectCode": "70118"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070119.pdf",
+      "filename": "20251070119.pdf",
+      "bureau": "教育委員会",
+      "linkText": "学校施設照明器具ＬＥＤ化改修費",
+      "accountCode": "10",
+      "projectCode": "70119"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070122.pdf",
+      "filename": "20251070122.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "女性特有のがん予防推進費",
+      "accountCode": "10",
+      "projectCode": "70122"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070123.pdf",
+      "filename": "20251070123.pdf",
+      "bureau": "市民文化局",
+      "linkText": "客引き行為等防止推進費",
+      "accountCode": "10",
+      "projectCode": "70123"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070125.pdf",
+      "filename": "20251070125.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "居心地が良く歩きたくなる都心まちづくり推進費",
+      "accountCode": "10",
+      "projectCode": "70125"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070126.pdf",
+      "filename": "20251070126.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "都心機能強化検討費",
+      "accountCode": "10",
+      "projectCode": "70126"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070137.pdf",
+      "filename": "20251070137.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "健康寿命延伸のための食育推進費",
+      "accountCode": "10",
+      "projectCode": "70137"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070138.pdf",
+      "filename": "20251070138.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "北５西２地区バスターミナル整備費",
+      "accountCode": "10",
+      "projectCode": "70138"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070139.pdf",
+      "filename": "20251070139.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "公共交通システム検討費",
+      "accountCode": "10",
+      "projectCode": "70139"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070140.pdf",
+      "filename": "20251070140.pdf",
+      "bureau": "建設局",
+      "linkText": "生活道路等整備費",
+      "accountCode": "10",
+      "projectCode": "70140"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070144.pdf",
+      "filename": "20251070144.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "児童会館等環境改善費",
+      "accountCode": "10",
+      "projectCode": "70144"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070145.pdf",
+      "filename": "20251070145.pdf",
+      "bureau": "建設局",
+      "linkText": "安全・安心な道路環境の整備費",
+      "accountCode": "10",
+      "projectCode": "70145"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070147.pdf",
+      "filename": "20251070147.pdf",
+      "bureau": "建設局",
+      "linkText": "橋りょう長寿命化修繕費",
+      "accountCode": "10",
+      "projectCode": "70147"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070149.pdf",
+      "filename": "20251070149.pdf",
+      "bureau": "建設局",
+      "linkText": "橋りょう耐震補強費",
+      "accountCode": "10",
+      "projectCode": "70149"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070152.pdf",
+      "filename": "20251070152.pdf",
+      "bureau": "建設局",
+      "linkText": "篠路駅周辺連続立体交差等整備費",
+      "accountCode": "10",
+      "projectCode": "70152"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070154.pdf",
+      "filename": "20251070154.pdf",
+      "bureau": "総務局",
+      "linkText": "組織活性化推進費",
+      "accountCode": "10",
+      "projectCode": "70154"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070155.pdf",
+      "filename": "20251070155.pdf",
+      "bureau": "市民文化局",
+      "linkText": "清田区民センター移転検討費",
+      "accountCode": "10",
+      "projectCode": "70155"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070156.pdf",
+      "filename": "20251070156.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "札幌駅周辺交通施設調査検討費",
+      "accountCode": "10",
+      "projectCode": "70156"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070158.pdf",
+      "filename": "20251070158.pdf",
+      "bureau": "建設局",
+      "linkText": "道路除雪費",
+      "accountCode": "10",
+      "projectCode": "70158"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070159.pdf",
+      "filename": "20251070159.pdf",
+      "bureau": "建設局",
+      "linkText": "雪対策施設整備費",
+      "accountCode": "10",
+      "projectCode": "70159"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070160.pdf",
+      "filename": "20251070160.pdf",
+      "bureau": "建設局",
+      "linkText": "持続可能な雪対策推進費",
+      "accountCode": "10",
+      "projectCode": "70160"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070161.pdf",
+      "filename": "20251070161.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "交通施設耐震化等推進費",
+      "accountCode": "10",
+      "projectCode": "70161"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070163.pdf",
+      "filename": "20251070163.pdf",
+      "bureau": "建設局",
+      "linkText": "自転車の通行空間整備費",
+      "accountCode": "10",
+      "projectCode": "70163"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070171.pdf",
+      "filename": "20251070171.pdf",
+      "bureau": "市民文化局",
+      "linkText": "アイヌ文化交流センターリフレッシュ事業費",
+      "accountCode": "10",
+      "projectCode": "70171"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070180.pdf",
+      "filename": "20251070180.pdf",
+      "bureau": "危機管理局",
+      "linkText": "避難場所整備費",
+      "accountCode": "10",
+      "projectCode": "70180"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070181.pdf",
+      "filename": "20251070181.pdf",
+      "bureau": "危機管理局",
+      "linkText": "防災拠点倉庫整備費",
+      "accountCode": "10",
+      "projectCode": "70181"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070182.pdf",
+      "filename": "20251070182.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "藻岩山スキー場在り方検討調査費",
+      "accountCode": "10",
+      "projectCode": "70182"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070192.pdf",
+      "filename": "20251070192.pdf",
+      "bureau": "デジタル戦略推進局",
+      "linkText": "窓口改善推進費",
+      "accountCode": "10",
+      "projectCode": "70192"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070193.pdf",
+      "filename": "20251070193.pdf",
+      "bureau": "市民文化局",
+      "linkText": "障がい者向け文化芸術体験事業費",
+      "accountCode": "10",
+      "projectCode": "70193"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070210.pdf",
+      "filename": "20251070210.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "丘珠空港関連事業推進費",
+      "accountCode": "10",
+      "projectCode": "70210"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070211.pdf",
+      "filename": "20251070211.pdf",
+      "bureau": "都市局",
+      "linkText": "市営住宅設備更新費",
+      "accountCode": "10",
+      "projectCode": "70211"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070220.pdf",
+      "filename": "20251070220.pdf",
+      "bureau": "環境局",
+      "linkText": "大型ごみ収集インターネット受付費",
+      "accountCode": "10",
+      "projectCode": "70220"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070224.pdf",
+      "filename": "20251070224.pdf",
+      "bureau": "都市局",
+      "linkText": "市営住宅空き住戸修繕費",
+      "accountCode": "10",
+      "projectCode": "70224"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070229.pdf",
+      "filename": "20251070229.pdf",
+      "bureau": "経済観光局",
+      "linkText": "ものづくり企業人手不足対策費",
+      "accountCode": "10",
+      "projectCode": "70229"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070232_1.pdf",
+      "filename": "20251070232_1.pdf",
+      "bureau": "経済観光局",
+      "linkText": "観光閑散期のにぎわい創出補助金",
+      "accountCode": "10",
+      "projectCode": "70232"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070234.pdf",
+      "filename": "20251070234.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "高齢者健康寿命延伸調査費",
+      "accountCode": "10",
+      "projectCode": "70234"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070235.pdf",
+      "filename": "20251070235.pdf",
+      "bureau": "建設局",
+      "linkText": "都心部公園機能向上費",
+      "accountCode": "10",
+      "projectCode": "70235"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070236.pdf",
+      "filename": "20251070236.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "マンガ等を活用したまちづくり推進費",
+      "accountCode": "10",
+      "projectCode": "70236"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070238.pdf",
+      "filename": "20251070238.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "ウェルネス推進費",
+      "accountCode": "10",
+      "projectCode": "70238"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070242.pdf",
+      "filename": "20251070242.pdf",
+      "bureau": "教育委員会",
+      "linkText": "学校給食等食材費高騰対策費",
+      "accountCode": "10",
+      "projectCode": "70242"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070245.pdf",
+      "filename": "20251070245.pdf",
+      "bureau": "教育委員会",
+      "linkText": "学校施設冷房設備整備費",
+      "accountCode": "10",
+      "projectCode": "70245"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070248.pdf",
+      "filename": "20251070248.pdf",
+      "bureau": "環境局",
+      "linkText": "中小水力発電導入推進費",
+      "accountCode": "10",
+      "projectCode": "70248"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070251.pdf",
+      "filename": "20251070251.pdf",
+      "bureau": "市民文化局",
+      "linkText": "再犯防止推進費",
+      "accountCode": "10",
+      "projectCode": "70251"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070253.pdf",
+      "filename": "20251070253.pdf",
+      "bureau": "教育委員会",
+      "linkText": "不登校児童生徒のための新たな学びの場整備費",
+      "accountCode": "10",
+      "projectCode": "70253"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070254.pdf",
+      "filename": "20251070254.pdf",
+      "bureau": "教育委員会",
+      "linkText": "図書館ＤＸ検討事業費",
+      "accountCode": "10",
+      "projectCode": "70254"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070257.pdf",
+      "filename": "20251070257.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "障がい者冬期移動円滑化推進費",
+      "accountCode": "10",
+      "projectCode": "70257"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070259.pdf",
+      "filename": "20251070259.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "児童精神科医療体制整備費",
+      "accountCode": "10",
+      "projectCode": "70259"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070265.pdf",
+      "filename": "20251070265.pdf",
+      "bureau": "環境局",
+      "linkText": "公用車ゼロエミッション化推進費",
+      "accountCode": "10",
+      "projectCode": "70265"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070266.pdf",
+      "filename": "20251070266.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "感染症危機に備えた体制整備推進費",
+      "accountCode": "10",
+      "projectCode": "70266"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070271.pdf",
+      "filename": "20251070271.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "大通西４南地区再開発事業費",
+      "accountCode": "10",
+      "projectCode": "70271"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070272.pdf",
+      "filename": "20251070272.pdf",
+      "bureau": "経済観光局",
+      "linkText": "半導体関連産業集積促進費",
+      "accountCode": "10",
+      "projectCode": "70272"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070274.pdf",
+      "filename": "20251070274.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "障がい福祉施設等施設整備補助金",
+      "accountCode": "10",
+      "projectCode": "70274"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070275.pdf",
+      "filename": "20251070275.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "障がい福祉施設等スプリンクラー整備補助金",
+      "accountCode": "10",
+      "projectCode": "70275"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070278.pdf",
+      "filename": "20251070278.pdf",
+      "bureau": "経済観光局",
+      "linkText": "宿泊施設バリアフリー化推進費",
+      "accountCode": "10",
+      "projectCode": "70278"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070279.pdf",
+      "filename": "20251070279.pdf",
+      "bureau": "環境局",
+      "linkText": "北海道ゾーン整備費",
+      "accountCode": "10",
+      "projectCode": "70279"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070285.pdf",
+      "filename": "20251070285.pdf",
+      "bureau": "総務局",
+      "linkText": "市公式ホームページ再構築費",
+      "accountCode": "10",
+      "projectCode": "70285"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070286.pdf",
+      "filename": "20251070286.pdf",
+      "bureau": "総務局",
+      "linkText": "まちづ&nbsp;く&nbsp;り総合プロモーション等事業費",
+      "accountCode": "10",
+      "projectCode": "70286"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070287.pdf",
+      "filename": "20251070287.pdf",
+      "bureau": "総務局",
+      "linkText": "企業家等との集団広聴費",
+      "accountCode": "10",
+      "projectCode": "70287"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070291.pdf",
+      "filename": "20251070291.pdf",
+      "bureau": "市民文化局",
+      "linkText": "仮称）南区複合庁舎整備費",
+      "accountCode": "10",
+      "projectCode": "70291"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070292.pdf",
+      "filename": "20251070292.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "がん検診受診体制整備費",
+      "accountCode": "10",
+      "projectCode": "70292"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070294.pdf",
+      "filename": "20251070294.pdf",
+      "bureau": "環境局",
+      "linkText": "動物福祉向上推進費",
+      "accountCode": "10",
+      "projectCode": "70294"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070295.pdf",
+      "filename": "20251070295.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "子どもの職業体験活動推進費",
+      "accountCode": "10",
+      "projectCode": "70295"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070296.pdf",
+      "filename": "20251070296.pdf",
+      "bureau": "人事委員会事務局",
+      "linkText": "有為かつ多様な人材確保事業費",
+      "accountCode": "10",
+      "projectCode": "70296"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070297.pdf",
+      "filename": "20251070297.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "子育て世帯訪問支援費",
+      "accountCode": "10",
+      "projectCode": "70297"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070298.pdf",
+      "filename": "20251070298.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "小児慢性特定疾病児童等自立支援費",
+      "accountCode": "10",
+      "projectCode": "70298"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070299.pdf",
+      "filename": "20251070299.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "官民連携推進費",
+      "accountCode": "10",
+      "projectCode": "70299"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070300.pdf",
+      "filename": "20251070300.pdf",
+      "bureau": "市民文化局",
+      "linkText": "地域コミュニティ施設Ｗｉ&minus;Ｆｉ機器導入費",
+      "accountCode": "10",
+      "projectCode": "70300"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070301.pdf",
+      "filename": "20251070301.pdf",
+      "bureau": "総務局",
+      "linkText": "世界冬の都市市長会議開催費",
+      "accountCode": "10",
+      "projectCode": "70301"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070303.pdf",
+      "filename": "20251070303.pdf",
+      "bureau": "教育委員会",
+      "linkText": "こども本の森開設準備費",
+      "accountCode": "10",
+      "projectCode": "70303"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070304.pdf",
+      "filename": "20251070304.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "障がい者ＤＸリスキリング事業費",
+      "accountCode": "10",
+      "projectCode": "70304"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070306.pdf",
+      "filename": "20251070306.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "指導委託促進費",
+      "accountCode": "10",
+      "projectCode": "70306"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070308.pdf",
+      "filename": "20251070308.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "子どもの意見形成・表明支援事業費",
+      "accountCode": "10",
+      "projectCode": "70308"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070312.pdf",
+      "filename": "20251070312.pdf",
+      "bureau": "市民文化局",
+      "linkText": "共同利用館後継施設整備費",
+      "accountCode": "10",
+      "projectCode": "70312"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070314.pdf",
+      "filename": "20251070314.pdf",
+      "bureau": "教育委員会",
+      "linkText": "地域ぐるみの学校安全体制整備推進費",
+      "accountCode": "10",
+      "projectCode": "70314"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070315.pdf",
+      "filename": "20251070315.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "厚別公園競技場保全費",
+      "accountCode": "10",
+      "projectCode": "70315"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070319.pdf",
+      "filename": "20251070319.pdf",
+      "bureau": "市民文化局",
+      "linkText": "市民参加手法の構築費",
+      "accountCode": "10",
+      "projectCode": "70319"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070320.pdf",
+      "filename": "20251070320.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "生活保護業務デジタル化費",
+      "accountCode": "10",
+      "projectCode": "70320"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070326.pdf",
+      "filename": "20251070326.pdf",
+      "bureau": "消防局",
+      "linkText": "消防検査オンライン化費",
+      "accountCode": "10",
+      "projectCode": "70326"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070328.pdf",
+      "filename": "20251070328.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "オリンピックミュージアム魅力アップ調査費",
+      "accountCode": "10",
+      "projectCode": "70328"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070334.pdf",
+      "filename": "20251070334.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "こどもホスピスづくり活動支援費",
+      "accountCode": "10",
+      "projectCode": "70334"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070336.pdf",
+      "filename": "20251070336.pdf",
+      "bureau": "危機管理局",
+      "linkText": "防災・減災ＤＸ推進費",
+      "accountCode": "10",
+      "projectCode": "70336"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070345.pdf",
+      "filename": "20251070345.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "認知症疾患医療センター運営費",
+      "accountCode": "10",
+      "projectCode": "70345"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070346.pdf",
+      "filename": "20251070346.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "ＧＸ投資推進費",
+      "accountCode": "10",
+      "projectCode": "70346"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070349.pdf",
+      "filename": "20251070349.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "本庁舎調査費",
+      "accountCode": "10",
+      "projectCode": "70349"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070350.pdf",
+      "filename": "20251070350.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "物価高騰対応臨時給付金",
+      "accountCode": "10",
+      "projectCode": "70350"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070351.pdf",
+      "filename": "20251070351.pdf",
+      "bureau": "経済観光局",
+      "linkText": "札幌生活応援プレミアム商品券事業",
+      "accountCode": "10",
+      "projectCode": "70351"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070352.pdf",
+      "filename": "20251070352.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "札幌ドーム活用促進費",
+      "accountCode": "10",
+      "projectCode": "70352"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070354.pdf",
+      "filename": "20251070354.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "こども誰でも通園制度試行実施事業費",
+      "accountCode": "10",
+      "projectCode": "70354"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070355.pdf",
+      "filename": "20251070355.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "障害児通所事業所等性被害防止対策設備等補助金",
+      "accountCode": "10",
+      "projectCode": "70355"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070362.pdf",
+      "filename": "20251070362.pdf",
+      "bureau": "経済観光局",
+      "linkText": "施設園芸生産基盤緊急支援費",
+      "accountCode": "10",
+      "projectCode": "70362"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070369.pdf",
+      "filename": "20251070369.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "スポーツイベント調査費",
+      "accountCode": "10",
+      "projectCode": "70369"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070376_1.pdf",
+      "filename": "20251070376_1.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "低所得者支援及び定額減税補足給付金",
+      "accountCode": "10",
+      "projectCode": "70376"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070427.pdf",
+      "filename": "20251070427.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "住民税非課税世帯支援給付金",
+      "accountCode": "10",
+      "projectCode": "70427"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070434.pdf",
+      "filename": "20251070434.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "訪問介護等サービス提供体制確保支援費",
+      "accountCode": "10",
+      "projectCode": "70434"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070435.pdf",
+      "filename": "20251070435.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "介護施設等冷房設備設置補助金",
+      "accountCode": "10",
+      "projectCode": "70435"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251070436.pdf",
+      "filename": "20251070436.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "不足額給付金",
+      "accountCode": "10",
+      "projectCode": "70436"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251091739.pdf",
+      "filename": "20251091739.pdf",
+      "bureau": "環境局",
+      "linkText": "円山動物園経営基盤安定化調査事業",
+      "accountCode": "10",
+      "projectCode": "91739"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251091740.pdf",
+      "filename": "20251091740.pdf",
+      "bureau": "環境局",
+      "linkText": "円山動物園施設整備保全事業",
+      "accountCode": "10",
+      "projectCode": "91740"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251091769.pdf",
+      "filename": "20251091769.pdf",
+      "bureau": "消防局",
+      "linkText": "土砂災害及び雪害対策費",
+      "accountCode": "10",
+      "projectCode": "91769"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251091807.pdf",
+      "filename": "20251091807.pdf",
+      "bureau": "下水道河川局",
+      "linkText": "総合的な治水整備事業",
+      "accountCode": "10",
+      "projectCode": "91807"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251091808.pdf",
+      "filename": "20251091808.pdf",
+      "bureau": "下水道河川局",
+      "linkText": "河川施設等保全・更新事業",
+      "accountCode": "10",
+      "projectCode": "91808"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251091810.pdf",
+      "filename": "20251091810.pdf",
+      "bureau": "下水道河川局",
+      "linkText": "くらしと自然を豊かにする河川環境整備事業",
+      "accountCode": "10",
+      "projectCode": "91810"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251091872.pdf",
+      "filename": "20251091872.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "景観計画推進費",
+      "accountCode": "10",
+      "projectCode": "91872"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251091880.pdf",
+      "filename": "20251091880.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "シティクロスカントリースキー大会実証実験費",
+      "accountCode": "10",
+      "projectCode": "91880"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251091883.pdf",
+      "filename": "20251091883.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "オリンピック・パラリンピック教育推進費",
+      "accountCode": "10",
+      "projectCode": "91883"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251091905.pdf",
+      "filename": "20251091905.pdf",
+      "bureau": "経済観光局",
+      "linkText": "流通機能強化・販路拡大支援費",
+      "accountCode": "10",
+      "projectCode": "91905"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251091932.pdf",
+      "filename": "20251091932.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "ユニバーサル推進費",
+      "accountCode": "10",
+      "projectCode": "91932"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251091933.pdf",
+      "filename": "20251091933.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "公共施設バリアフリー化促進費",
+      "accountCode": "10",
+      "projectCode": "91933"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251091938.pdf",
+      "filename": "20251091938.pdf",
+      "bureau": "スポーツ局",
+      "linkText": "国際スポーツ大会等誘致促進費",
+      "accountCode": "10",
+      "projectCode": "91938"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251091945.pdf",
+      "filename": "20251091945.pdf",
+      "bureau": "危機管理局",
+      "linkText": "災害対策本部機能強化費",
+      "accountCode": "10",
+      "projectCode": "91945"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251092006.pdf",
+      "filename": "20251092006.pdf",
+      "bureau": "まちづくり政策局",
+      "linkText": "水素利活用促進費",
+      "accountCode": "10",
+      "projectCode": "92006"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251092050.pdf",
+      "filename": "20251092050.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "終活ネットワーク構築推進費",
+      "accountCode": "10",
+      "projectCode": "92050"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251092051.pdf",
+      "filename": "20251092051.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "市営霊園運営改善費",
+      "accountCode": "10",
+      "projectCode": "92051"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251092052.pdf",
+      "filename": "20251092052.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "斎場運営体制構築費",
+      "accountCode": "10",
+      "projectCode": "92052"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251092082.pdf",
+      "filename": "20251092082.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "妊娠・出産包括支援費",
+      "accountCode": "10",
+      "projectCode": "92082"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251092083.pdf",
+      "filename": "20251092083.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "児童虐待予防強化費",
+      "accountCode": "10",
+      "projectCode": "92083"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251092084.pdf",
+      "filename": "20251092084.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "不妊治療等支援費",
+      "accountCode": "10",
+      "projectCode": "92084"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251092085.pdf",
+      "filename": "20251092085.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "赤ちゃんの耳のきこえ支援費",
+      "accountCode": "10",
+      "projectCode": "92085"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251092086_1.pdf",
+      "filename": "20251092086_1.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "不妊治療助成費",
+      "accountCode": "10",
+      "projectCode": "92086"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251092087.pdf",
+      "filename": "20251092087.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "産婦健康診査費",
+      "accountCode": "10",
+      "projectCode": "92087"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251092091.pdf",
+      "filename": "20251092091.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "出産・子育て応援推進費",
+      "accountCode": "10",
+      "projectCode": "92091"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251092092.pdf",
+      "filename": "20251092092.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "母子保健対策費",
+      "accountCode": "10",
+      "projectCode": "92092"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251092094.pdf",
+      "filename": "20251092094.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "育成・養育医療等対策費",
+      "accountCode": "10",
+      "projectCode": "92094"
+    }
+  ],
+  "excluded": [
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20241070010.pdf",
+      "filename": "20241070010.pdf",
+      "bureau": "経済観光局",
+      "linkText": "スタートアップ成長支援費",
+      "accountCode": "10",
+      "projectCode": "70010",
+      "reason": "西暦2024=前年度（令和5年度）の調書。R6 で3事業統合された旧事業（スタートアップ成長支援費）の参考リンク"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20252238109.pdf",
+      "filename": "20252238109.pdf",
+      "bureau": "都市局",
+      "linkText": "篠路駅東口地区土地区画整理費",
+      "accountCode": "22",
+      "projectCode": "38109",
+      "reason": "会計コード 22（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20252521360.pdf",
+      "filename": "20252521360.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "保健事業費",
+      "accountCode": "25",
+      "projectCode": "21360",
+      "reason": "会計コード 25（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20252535677_1.pdf",
+      "filename": "20252535677_1.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "特定健診・重症化予防費",
+      "accountCode": "25",
+      "projectCode": "35677",
+      "reason": "会計コード 25（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20252535678.pdf",
+      "filename": "20252535678.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "特定保健指導費",
+      "accountCode": "25",
+      "projectCode": "35678",
+      "reason": "会計コード 25（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20253222205.pdf",
+      "filename": "20253222205.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "母子福祉資金貸付金",
+      "accountCode": "32",
+      "projectCode": "22205",
+      "reason": "会計コード 32（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20253238159.pdf",
+      "filename": "20253238159.pdf",
+      "bureau": "子ども未来局",
+      "linkText": "公債償還費",
+      "accountCode": "32",
+      "projectCode": "38159",
+      "reason": "会計コード 32（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20253322212.pdf",
+      "filename": "20253322212.pdf",
+      "bureau": "環境局",
+      "linkText": "駐車場管理費",
+      "accountCode": "33",
+      "projectCode": "22212",
+      "reason": "会計コード 33（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20253525235.pdf",
+      "filename": "20253525235.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "２０４０年を見据えた地域包括支援センター機能強化費",
+      "accountCode": "35",
+      "projectCode": "25235",
+      "reason": "会計コード 35（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20253525339.pdf",
+      "filename": "20253525339.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "介護予防センター等運営費",
+      "accountCode": "35",
+      "projectCode": "25339",
+      "reason": "会計コード 35（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20253525358.pdf",
+      "filename": "20253525358.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "認知症地域支援推進費",
+      "accountCode": "35",
+      "projectCode": "25358",
+      "reason": "会計コード 35（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20253525362.pdf",
+      "filename": "20253525362.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "高齢者配食サービス事業費",
+      "accountCode": "35",
+      "projectCode": "25362",
+      "reason": "会計コード 35（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20253525363.pdf",
+      "filename": "20253525363.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "成年後見制度利用支援費",
+      "accountCode": "35",
+      "projectCode": "25363",
+      "reason": "会計コード 35（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20253525368.pdf",
+      "filename": "20253525368.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "短期集中予防型サービス費",
+      "accountCode": "35",
+      "projectCode": "25368",
+      "reason": "会計コード 35（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20253535865.pdf",
+      "filename": "20253535865.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "介護給付適正化事業費",
+      "accountCode": "35",
+      "projectCode": "35865",
+      "reason": "会計コード 35（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20253537125.pdf",
+      "filename": "20253537125.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "介護サポートポイント費",
+      "accountCode": "35",
+      "projectCode": "37125",
+      "reason": "会計コード 35（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20253537149.pdf",
+      "filename": "20253537149.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "高齢者あんしんコール費",
+      "accountCode": "35",
+      "projectCode": "37149",
+      "reason": "会計コード 35（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20253537511.pdf",
+      "filename": "20253537511.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "生活支援体制整備事業費",
+      "accountCode": "35",
+      "projectCode": "37511",
+      "reason": "会計コード 35（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20253537513.pdf",
+      "filename": "20253537513.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "地域ケア会議推進費",
+      "accountCode": "35",
+      "projectCode": "37513",
+      "reason": "会計コード 35（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20253537523.pdf",
+      "filename": "20253537523.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "認知症施策推進費",
+      "accountCode": "35",
+      "projectCode": "37523",
+      "reason": "会計コード 35（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20253537531.pdf",
+      "filename": "20253537531.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "在宅医療・介護連携推進費",
+      "accountCode": "35",
+      "projectCode": "37531",
+      "reason": "会計コード 35（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20253537991.pdf",
+      "filename": "20253537991.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "高齢者配食サービス事業費",
+      "accountCode": "35",
+      "projectCode": "37991",
+      "reason": "会計コード 35（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20253537992.pdf",
+      "filename": "20253537992.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "地域リハビリテーション活動支援費",
+      "accountCode": "35",
+      "projectCode": "37992",
+      "reason": "会計コード 35（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20253538700.pdf",
+      "filename": "20253538700.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "高齢者等おむつサービス費",
+      "accountCode": "35",
+      "projectCode": "38700",
+      "reason": "会計コード 35（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20253570084.pdf",
+      "filename": "20253570084.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "コンビニ収納導入費",
+      "accountCode": "35",
+      "projectCode": "70084",
+      "reason": "会計コード 35（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20253570194.pdf",
+      "filename": "20253570194.pdf",
+      "bureau": "保健福祉局",
+      "linkText": "高齢者介護推進費",
+      "accountCode": "35",
+      "projectCode": "70194",
+      "reason": "会計コード 35（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20256035029.pdf",
+      "filename": "20256035029.pdf",
+      "bureau": "病院局",
+      "linkText": "病院事業の運営",
+      "accountCode": "60",
+      "projectCode": "35029",
+      "reason": "会計コード 60（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20256091786.pdf",
+      "filename": "20256091786.pdf",
+      "bureau": "病院局",
+      "linkText": "市立札幌病院の機能強化推進費",
+      "accountCode": "60",
+      "projectCode": "91786",
+      "reason": "会計コード 60（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20258035420.pdf",
+      "filename": "20258035420.pdf",
+      "bureau": "交通局",
+      "linkText": "軌道整備事業会計",
+      "accountCode": "80",
+      "projectCode": "35420",
+      "reason": "会計コード 80（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20258535419.pdf",
+      "filename": "20258535419.pdf",
+      "bureau": "交通局",
+      "linkText": "高速電車事業会計",
+      "accountCode": "85",
+      "projectCode": "35419",
+      "reason": "会計コード 85（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20259038725.pdf",
+      "filename": "20259038725.pdf",
+      "bureau": "水道局",
+      "linkText": "水道事業会計",
+      "accountCode": "90",
+      "projectCode": "38725",
+      "reason": "会計コード 90（一般会計でない）"
+    },
+    {
+      "url": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20259537018.pdf",
+      "filename": "20259537018.pdf",
+      "bureau": "下水道河川局",
+      "linkText": "下水道事業会計",
+      "accountCode": "95",
+      "projectCode": "37018",
+      "reason": "会計コード 95（一般会計でない）"
+    }
+  ]
+}

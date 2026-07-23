@@ -1745,6 +1745,8 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
         fyLabel: repData.fyLabel,
         sourceTitle: repData.sourceTitle,
         docLabel: repData.docLabel,
+        // 評価様式の説明（カテゴリ評価を持たない資料のみ・derive が資料ごとに書く）
+        evalNote: repData.evalNote ?? null,
         excluded: repData.excluded,
         has: repData.has,
         // **その資料が持つ項目だけを並べる**（川崎の文面を横浜に使い回すと嘘になる）

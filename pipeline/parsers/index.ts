@@ -18,6 +18,7 @@ import { parseTokyoYosangaiyouCsv } from "./tokyo-yosangaiyou-csv";
 import { parseShinjukuKessanTaisho } from "./shinjuku-kessan-taisho";
 import { parseNerimaKanbetsuXlsx } from "./nerima-kanbetsu-xlsx";
 import { parseArakawaSetsumei } from "./arakawa-setsumei";
+import { parseSapporoJigyouHyouka } from "./sapporo-jigyou-hyouka";
 import { parseSetagayaMierukaCsv, parseSetagayaToushoXls } from "./setagaya-kanbetsu";
 
 /** 1ソースの raw ファイル群をまとめて受け取り、マージ済みの facts を返す */
@@ -35,6 +36,7 @@ const PARSERS: Record<string, ParserFn> = {
   "kofu-toukei-zaisei": parseKofuToukeiZaisei, // 統計書 財政章（款項×当初/最終/決算）
   "soumu-shichoson-seishitsu": parseShichosonSeishitsu, // 決算状況調(4)性質別・(5)地方債
   "kawasaki-jigyou-hyouka": parseKawasakiJigyouHyouka, // 事務事業評価シート（事業報告＝成果・572事業）
+  "sapporo-jigyou-hyouka": parseSapporoJigyouHyouka, // 事業評価調書（事業報告＝成果・1事業1PDF×634本）
   "yokohama-jigyo-hyoka": parseYokohamaJigyoHyoka, // 事業評価書（事業報告＝成果・2,535事業・款項目つき）
   "yamanashi-kessan": parseYamanashiKessan, // 山梨県 決算の状況（款別・執行率／収入率）
   "shinjuku-kessan-taisho": parseShinjukuKessanTaisho, // 新宿区 款別予算決算対照表（款別・執行率／収入率）

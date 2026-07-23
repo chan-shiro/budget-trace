@@ -46,6 +46,8 @@ async function fetchSource(id: string): Promise<void> {
   }
   for (const url of urls) {
     await fetchOne(id, url);
+    // 多ファイル資料（札幌の事業評価調書は634本）で発行元へ連続アクセスしない
+    if (urls.length > 1) await new Promise((r) => setTimeout(r, 300));
   }
 }
 

@@ -522,6 +522,13 @@ export const projectReportCostYearSchema = z.object({
   kokkoShishutsukin: z.number().nullable().optional(),
   shisai: z.number().nullable().optional(),
   sonotaTokuzai: z.number().nullable().optional(),
+  /**
+   * 特定財源の総額（千円）。札幌の「うち特定財源」（内訳なしの1値）。
+   * ⚠ **一般財源 = 事業費 − 特定財源 を導出してはならない** — 札幌は人件費を職員費の款に
+   * 配賦する体系のため、国庫負担金等の特定財源が（物件費ベースの）事業費を**超える調書が実在**する
+   * （公立保育所等運営費: 事業費 1,212,230 / 特定財源 1,894,054・R5 決算）。原文のまま持つ。
+   */
+  tokuteiZaigen: z.number().nullable().optional(),
   /** 決算額が見込み（評価年度のため確定値でない）か。川崎 R6 の決算額が該当 */
   isEstimate: z.boolean().optional(),
 });

@@ -1037,11 +1037,27 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
      * R6 と R8 の款番号→款名が完全一致することは確認済みだが、年度で変わり得る（R5 以前は18款）。
      */
     kanFromSrc?: string;
+    /** 資料の呼び名。**市ごとに違う**ので決め打ちしない（#72 のメダリオン: 報告どおり尊重し丸めない） */
+    docLabel: string;
+    /**
+     * 評価様式の説明文（カテゴリ評価を持たない資料のみ）。画面がそのまま出す。
+     * **資料ごとに書く** — 横浜の「7軸のカテゴリ値」を札幌に使い回すと嘘になる（実害が出かけた）
+     */
+    evalNote?: string;
   }[] = [
-    { srcId: "kawasaki-jigyou-hyouka-r6", muniCode: "141305", muniName: "川崎市" },
+    { srcId: "kawasaki-jigyou-hyouka-r6", muniCode: "141305", muniName: "川崎市", docLabel: "事務事業評価シート" },
+    // 札幌（#127・2026-07-23）。1事業1PDF×634本（一般会計）。款項目は持たない（kanFromSrc なし）
+    {
+      srcId: "sapporo-jigyou-hyouka-r7", muniCode: "011002", muniName: "札幌市", docLabel: "事業評価調書",
+      evalNote: "この資料は総合評価や達成度の数値を持たず、見直し内容と今後の方向性を自由記述で自己評価しています。",
+    },
     // **横浜は特別会計の事業を含む**（2,535事業中222件が16の特別会計）。scope が一般会計なので
     // 会計名（policy）で除外する。**会計名を持つのは横浜だけ**（川崎は全件が一般会計の想定）
-    { srcId: "yokohama-jigyo-hyoka-r7", muniCode: "141003", muniName: "横浜市", kanFromSrc: "yokohama-yosansho-r6" },
+    {
+      srcId: "yokohama-jigyo-hyoka-r7", muniCode: "141003", muniName: "横浜市", kanFromSrc: "yokohama-yosansho-r6",
+      docLabel: "事業評価書",
+      evalNote: "この資料は総合評価や達成度の数値を持たず、7つの軸それぞれのカテゴリ値で自己分析しています。",
+    },
   ];
   const byMuni: Record<string, unknown> = {};
   for (const r of REPORT_MUNI_SOURCES) {
@@ -1107,11 +1123,9 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
       muniName: r.muniName,
       /** 一般会計以外（特別会計）で除外した事業数。0 なら会計の区別が無い資料 */
       excluded,
-      /**
-       * 資料の呼び名。**市ごとに違う**（川崎=事務事業評価シート / 横浜=事業評価書）。
-       * 画面に決め打ちしない（#72 のメダリオン: 報告どおり尊重し丸めない）
-       */
-      docLabel: r.srcId.startsWith("kawasaki") ? "事務事業評価シート" : "事業評価書",
+      docLabel: r.docLabel,
+      /** 評価様式の説明（カテゴリ評価を持たない資料のみ）。無い資料は null */
+      evalNote: r.evalNote ?? null,
       /**
        * **その資料が実際に持つ項目**。画面の説明文をこれで組み立てる。
        * 川崎と横浜で持ち物が違うのに川崎の文面を使い回すと**嘘になる**
@@ -2374,6 +2388,7 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
     "kofu-gyousei-hyouka": "主な事業の評価バッジ",
     "kofu-jigyou-houkoku": "事業報告（成果）",
     "kawasaki-jigyou-hyouka": "事業報告（成果）",
+    "sapporo-jigyou-hyouka": "事業報告（成果）",
     "yokohama-jigyo-hyoka": "事業報告（成果）",
     "yamanashi-kessan": "予算執行状況（款別 執行率）",
     "shinjuku-kessan-taisho": "予算執行状況（款別 執行率）",
@@ -2425,7 +2440,9 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
   // **レジストリ＋parsed（＝実際に収録したもの）から導く**（2026-07-15）。
   // **新しい事業報告パーサを足したらここにも足す** — 忘れると /coverage が「収録済みを未収録」と
   // 偽る（実際に横浜で踏んだ。2,313事業を収録したのに「成果 ×」と出た）。
-  const REPORT_PARSERS = new Set(["kofu-jigyou-houkoku", "kawasaki-jigyou-hyouka", "yokohama-jigyo-hyoka"]);
+  const REPORT_PARSERS = new Set([
+    "kofu-jigyou-houkoku", "kawasaki-jigyou-hyouka", "yokohama-jigyo-hyoka", "sapporo-jigyou-hyouka",
+  ]);
   const reportDetailByCode: Record<string, string> = {};
   for (const s of srcs) {
     if (!REPORT_PARSERS.has(s.parser)) continue;
