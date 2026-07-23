@@ -2335,6 +2335,44 @@ export const SOURCES: SourceEntry[] = [
   })),
 
   ...([
+    // 台東区の歳入歳出**別ファイル**の3年度（2026-07-23 追加・#125）。#134 で「revenueFile/
+    // expenditureFile 未実装のため後回し」としていたぶん。両側とも1ページの款別専用 PDF で、
+    // 表の様式は単一ファイルの9年度と同一（弱い見出し 歳入/歳出・合計 `合計`）。
+    // [年度, 年度ページ, 歳入PDF, 歳出PDF]
+    ["R2", "2yosanannopointo", "2gaisansho_sainyuu.pdf", "2gaisansho_saishutu.pdf"],
+    ["H31", "31yosanannopointo", "31gaisannshosainyuu.pdf", "31gaisannshosaishutu.pdf"],
+    ["H27", "27yosananpoint", "sainyuu.pdf", "saishutu.pdf"],
+  ] as const).map(([fy, page, revPdf, expPdf]) => ({
+    // 台東区（131067）。単一ファイル年度と同じ「予算案のポイント」の概算書（款別）。
+    // ⚠ PDF に「台東」の字が無い（単一ファイル年度と同じ）— 取り違え検出は URL とメタ。
+    id: `taito-kanbetsu-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 台東区予算案のポイント 一般会計予算款別予算額（歳入・歳出）`,
+    publisher: "台東区",
+    url: null,
+    urls: [
+      `https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/${page}.files/${revPdf}`,
+      `https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/${page}.files/${expPdf}`,
+    ],
+    landingPage: `https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/${page}.html`,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "台東区（一般会計・団体コード131067）",
+    license:
+      "台東区公式ホームページ内の文章・写真・イラストなどの著作権は、区または正当な権利を有している第三者にあります。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      revenueFile: revPdf,
+      expenditureFile: expPdf,
+      revenuePage: 1,
+      expenditurePage: 1,
+      revenueHeading: "歳入",
+      expenditureHeading: "歳出",
+      revenueTotalLabel: "合計",
+      expenditureTotalLabel: "合計",
+    },
+  })),
+
+  ...([
     // [年度, 歳入ページ(物理), 歳出ページ(物理), 年度ページ, PDF パス, 側の順序, 抽出モード]
     //
     // 大田区 H26〜H20（2026-07-17 追加）。**上の H28〜R8 とは資料の単位が違う** — こちらは
@@ -2554,7 +2592,7 @@ export const SOURCES: SourceEntry[] = [
     // 「サイトポリシー」＞著作権について（/aboutweb/policy.html・確認日 2026-07-17）。
     // **コンテンツに「PDF」を明示列挙**しているので本資料に直接適用される。
     license:
-      "台東区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+      "台東区公式ホームページ内の文章・写真・イラストなどの著作権は、区または正当な権利を有している第三者にあります。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
     parser: "kofu-yosansho" as const,
     parserOptions: {
       revenuePage: 1,

@@ -1903,12 +1903,11 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       "h24"] as const).map((fy) => ({
       srcId: `kita-yosangaiyou-${fy}`, muniCode: "131172", muniName: "北区", prefName: "東京都", isPref: false,
     })),
-    // 台東区（2026-07-18 追加）。「予算案のポイント」【資料3】款別予算額。**H27〜R8 の12年度が
-    // 現存**するが、**歳入歳出が別ファイルの R2・H31・H27 は revenueFile/expenditureFile が未実装で
-    // 後回し**（このブロックは9年度）。**職員費・公債費の款が無い**（公債費は諸支出金に内包）。
+    // 台東区（2026-07-18 追加）。「予算案のポイント」【資料3】款別予算額。**H27〜R8 の12年度**。
+    // R2・H31・H27 は歳入歳出が別ファイル＝revenueFile/expenditureFile（2026-07-23 #125）で収録。**職員費・公債費の款が無い**（公債費は諸支出金に内包）。
     // 収録に 2026-07-17 の3改修（款番号と款名下段の同一行折返し／象徴計上の1千円の款番号誤読／
     // `ほぼ皆増`）が要る＝registry のコメント参照。
-    ...(["r8", "r7", "r6", "r5", "r4", "r3", "h30", "h29", "h28"] as const).map((fy) => ({
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28", "h27"] as const).map((fy) => ({
       srcId: `taito-kanbetsu-${fy}`, muniCode: "131067", muniName: "台東区", prefName: "東京都", isPref: false,
     })),
     // 港区（2026-07-18 追加）。「予算概要」歳入予算内訳表・目的別歳出予算内訳表。**R8〜H19 の20年度が

@@ -1,0 +1,19 @@
+{
+  "sourceId": "taito-kanbetsu-h27",
+  "files": [
+    {
+      "filename": "sainyuu.pdf",
+      "sha256": "6e15328f0cbdb837c278d8d9008c71131df16264b68b11d9f9d97564459ba514",
+      "bytes": 124892,
+      "fetchedAt": "2026-07-23T00:46:04.024Z",
+      "fetchedFrom": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/27yosananpoint.files/sainyuu.pdf"
+    },
+    {
+      "filename": "saishutu.pdf",
+      "sha256": "0fa54b1d6ad2a6d7dd9325d8db0b8976404854b8d75782f9f9dfb6b6224fa923",
+      "bytes": 109634,
+      "fetchedAt": "2026-07-23T00:46:04.098Z",
+      "fetchedFrom": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/27yosananpoint.files/saishutu.pdf"
+    }
+  ]
+}

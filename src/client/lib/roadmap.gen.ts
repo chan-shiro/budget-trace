@@ -16,11 +16,11 @@ export const ROADMAP_PROGRESS = {
   "budgetCount": 52,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 373,
-  "fileCount": 510,
+  "sourceCount": 376,
+  "fileCount": 516,
   "archivedCount": 351,
   "licenseOpen": 20,
-  "licensePermission": 295,
+  "licensePermission": 298,
   "licenseUnverified": 58,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -63,6 +63,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H24〜R8（14年度）"
     },
     {
+      "name": "台東区",
+      "code": "131067",
+      "years": 12,
+      "range": "H27〜R8（12年度）"
+    },
+    {
       "name": "江戸川区",
       "code": "131237",
       "years": 12,
@@ -91,12 +97,6 @@ export const ROADMAP_PROGRESS = {
       "code": "131024",
       "years": 10,
       "range": "H29〜R8（10年度）"
-    },
-    {
-      "name": "台東区",
-      "code": "131067",
-      "years": 9,
-      "range": "H28〜R8（9年度）"
     },
     {
       "name": "目黒区",
