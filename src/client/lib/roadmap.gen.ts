@@ -16,11 +16,11 @@ export const ROADMAP_PROGRESS = {
   "budgetCount": 57,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 427,
-  "fileCount": 1218,
-  "archivedCount": 400,
+  "sourceCount": 433,
+  "fileCount": 1224,
+  "archivedCount": 405,
   "licenseOpen": 54,
-  "licensePermission": 315,
+  "licensePermission": 321,
   "licenseUnverified": 58,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -45,16 +45,16 @@ export const ROADMAP_PROGRESS = {
       "range": "H17〜R8（22年度）"
     },
     {
+      "name": "大田区",
+      "code": "131113",
+      "years": 19,
+      "range": "H20〜R8（19年度）"
+    },
+    {
       "name": "港区",
       "code": "131032",
       "years": 18,
       "range": "H19〜R8（18年度）"
-    },
-    {
-      "name": "大田区",
-      "code": "131113",
-      "years": 18,
-      "range": "H20〜R8（18年度）"
     },
     {
       "name": "世田谷区",
@@ -109,6 +109,12 @@ export const ROADMAP_PROGRESS = {
       "code": "131024",
       "years": 10,
       "range": "H29〜R8（10年度）"
+    },
+    {
+      "name": "豊島区",
+      "code": "131164",
+      "years": 9,
+      "range": "H29〜R8（9年度）"
     },
     {
       "name": "目黒区",
@@ -217,12 +223,6 @@ export const ROADMAP_PROGRESS = {
       "code": "131130",
       "years": 4,
       "range": "R5〜R8（4年度）"
-    },
-    {
-      "name": "豊島区",
-      "code": "131164",
-      "years": 4,
-      "range": "R3〜R8（4年度）"
     },
     {
       "name": "板橋区",

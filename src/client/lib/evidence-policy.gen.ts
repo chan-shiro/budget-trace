@@ -3839,6 +3839,11 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/27yosananpoint.files/saishutu.pdf",
     "license": "台東区公式ホームページ内の文章・写真・イラストなどの著作権は、区または正当な権利を有している第三者にあります。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
   },
+  "/sources/ota-yosansho-h27/yosanhenseinogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/27yosan/27yosangaiyo.files/yosanhenseinogaiyou.pdf",
+    "license": "大田区ホームページ上の文書や画像などの各ファイル、及びその内容に関する諸権利は、原則として大田区に帰属しています。また、一部の画像などの著作権は、原著作権者が所有しています。／大田区ホームページ上の文書や画像などについては、「私的使用のための複製」や「引用」など著作権法上認められた場合や大田区がオープンデータとして公開しているものを除き、無断での使用・転載、二次利用はできません。／大田区がオープンデータとして公開しているもの以外の文書などについて転用等を希望される場合は、各ページのお問い合わせ先の所属に、ご相談ください。"
+  },
   "/sources/ota-yosansho-h26/26yosan_gaiyou.pdf": {
     "mode": "origin",
     "href": "https://www.city.ota.tokyo.jp/kuseijoho/suuji/yosan_kessan/yosan/26yosan.files/26yosan_gaiyou.pdf",
@@ -4729,9 +4734,34 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.toshima.lg.jp/documents/12068/r5_toshimaku_yosannsho.pdf",
     "license": "当サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として豊島区に帰属しています。また、一部の画像等の著作権は、原著作者が所有しています。／当サイト上の文書や画像等は、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
   },
+  "/sources/toshima-yosansho-r4/04toushoyosan.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20230202015242id_/https://www.city.toshima.lg.jp/004/kuse/shisaku/yosan/documents/04toushoyosan.pdf",
+    "license": "当サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として豊島区に帰属しています。また、一部の画像等の著作権は、原著作者が所有しています。／当サイト上の文書や画像等は、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+  },
   "/sources/toshima-yosansho-r3/03toushoyosan.pdf": {
     "mode": "archive",
     "href": "https://web.archive.org/web/20211114090748id_/https://www.city.toshima.lg.jp/004/kuse/shisaku/yosan/documents/03toushoyosan.pdf",
+    "license": "当サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として豊島区に帰属しています。また、一部の画像等の著作権は、原著作者が所有しています。／当サイト上の文書や画像等は、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+  },
+  "/sources/toshima-yosansho-r2/02toushoyosan.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20230202031059id_/https://www.city.toshima.lg.jp/004/kuse/shisaku/yosan/documents/02toushoyosan.pdf",
+    "license": "当サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として豊島区に帰属しています。また、一部の画像等の著作権は、原著作者が所有しています。／当サイト上の文書や画像等は、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+  },
+  "/sources/toshima-yosansho-h31/31toushoyosan.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20230202021859id_/https://www.city.toshima.lg.jp/004/kuse/shisaku/yosan/documents/31toushoyosan.pdf",
+    "license": "当サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として豊島区に帰属しています。また、一部の画像等の著作権は、原著作者が所有しています。／当サイト上の文書や画像等は、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+  },
+  "/sources/toshima-yosansho-h30/30tousyoyosan.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20230202023230id_/https://www.city.toshima.lg.jp/004/kuse/shisaku/yosan/documents/30tousyoyosan.pdf",
+    "license": "当サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として豊島区に帰属しています。また、一部の画像等の著作権は、原著作者が所有しています。／当サイト上の文書や画像等は、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+  },
+  "/sources/toshima-yosansho-h29/29yosansho.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20230202031608id_/https://www.city.toshima.lg.jp/004/kuse/shisaku/yosan/documents/29yosansho.pdf",
     "license": "当サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として豊島区に帰属しています。また、一部の画像等の著作権は、原著作者が所有しています。／当サイト上の文書や画像等は、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
   },
   "/sources/adachi-yosansho-r8/r8_yosan_aramashi_link.pdf": {
