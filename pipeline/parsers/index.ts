@@ -20,6 +20,7 @@ import { parseNerimaKanbetsuXlsx } from "./nerima-kanbetsu-xlsx";
 import { parseArakawaSetsumei } from "./arakawa-setsumei";
 import { parseSapporoJigyouHyouka } from "./sapporo-jigyou-hyouka";
 import { parseSetagayaMierukaCsv, parseSetagayaToushoXls } from "./setagaya-kanbetsu";
+import { parseSaitamaJigyouHoukoku } from "./saitama-jigyou-houkoku";
 
 /** 1ソースの raw ファイル群をまとめて受け取り、マージ済みの facts を返す */
 type ParserFn = (files: { path: string; filename: string }[], source: SourceEntry) => AnyParsedDoc;
@@ -46,6 +47,7 @@ const PARSERS: Record<string, ParserFn> = {
   "setagaya-tousho-xls": parseSetagayaToushoXls, // 世田谷区 年度別当初予算データ XLS（H21〜R7 の17年）
   "kofu-gikai": parseKofuGikai, // 議会の構成（会派別議席数）＋当初予算の議決
   "kofu-jigyou-houkoku": parseKofuJigyouHoukoku, // 事業報告（成果）＝事務事業評価 詳細票
+  "saitama-jigyou-houkoku": parseSaitamaJigyouHoukoku, // 行政報告書（事業報告＝成果・676事業・款項目に款名まで内包）
 };
 
 export function getParser(key: string): ParserFn {

@@ -4803,6 +4803,24 @@
       "checkedAt": "2026-07-15T19:01:20.729Z"
     },
     {
+      "sourceId": "saitama-jigyou-houkoku-r6",
+      "url": "https://www.city.saitama.lg.jp/006/007/011/002/p124022_d/fil/gyouseihoukokusyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260724132011/https://www.city.saitama.lg.jp/006/007/011/002/p124022_d/fil/gyouseihoukokusyo.pdf",
+      "waybackTimestamp": "20260724132011",
+      "checkedAt": "2026-07-24T13:22:09.669Z",
+      "sha256Match": true,
+      "waybackBytes": 7753253
+    },
+    {
+      "sourceId": "saitama-jigyou-houkoku-r6",
+      "url": "https://www.city.saitama.lg.jp/006/007/011/002/p124022.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251016113850/https://www.city.saitama.lg.jp/006/007/011/002/p124022.html",
+      "waybackTimestamp": "20251016113850",
+      "checkedAt": "2026-07-24T13:22:49.936Z"
+    },
+    {
       "sourceId": "saitama-yosansho-r7",
       "url": "https://www.city.saitama.lg.jp/006/007/011/001/020/p119990_d/fil/reiwa7nendotousyoyosan.pdf",
       "kind": "file",
