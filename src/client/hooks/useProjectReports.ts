@@ -29,6 +29,8 @@ export interface ReportItem {
   achievement: number | null;
   /** 方向性区分 Ⅰ〜Ⅴ */
   direction: string;
+  /** 進捗の自己評価（北九州の「順調/概ね順調/やや遅れ/遅れ」。achievement/grade とは別語彙） */
+  progress: string;
   /**
    * 款名（歳出予算科目の款番号を**対象年度の予算**で解決したもの）。
    * **横浜だけが持つ** — これがあると款ドリルから事業→成果へ降りられる。解決できなければ null
@@ -58,6 +60,7 @@ export interface ProjectReportShard {
     totalCost: boolean;
     achievement: boolean;
     direction: boolean;
+    progress: boolean;
     kanKoumoku: boolean;
     estimate: boolean;
   };

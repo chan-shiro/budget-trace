@@ -389,6 +389,11 @@ if (doc.docType === "council-composition") {
 // ---- 事業報告（成果）＝事務事業評価 詳細票 -----------------------------------
 if (doc.docType === "project-report") {
   const seenNo = new Set<string>();
+  // 達成度（1〜5の数値）を資料が採用しているか（川崎は全事業が持つ想定）。
+  // **北九州の「順調/概ね順調/やや遅れ/遅れ」は achievement ではなく progress**（別の語彙・§後述）
+  // なので、achievement を1件も使わない資料で「方向性はあるのに達成度が無い」と毎回警告すると
+  // 206/198件が偽陽性になる。資料単位で achievement を使っているかどうかで判定する。
+  const docUsesAchievement = doc.facts.some((f) => f.achievement != null);
   for (const f of doc.facts) {
     if (seenNo.has(f.no)) issues.push({ level: "error", message: `詳細票 No.${f.no} が重複` });
     seenNo.add(f.no);
@@ -465,7 +470,7 @@ if (doc.docType === "project-report") {
     }
     // 達成度は「取れなかった」と「資料に無い」を区別する — 川崎は全事業が持つはずで、
     // 分布が概要 PDF の記載と一致することを下でまとめて確認する
-    if (f.achievement == null && f.direction != null) {
+    if (docUsesAchievement && f.achievement == null && f.direction != null) {
       issues.push({ level: "warning", message: `${f.name}: 方向性区分はあるのに達成度が取れていません` });
     }
   }

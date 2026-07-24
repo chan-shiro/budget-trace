@@ -1,0 +1,35 @@
+{
+  "sourceId": "kitakyushu-jigyou-hyoka-r6",
+  "validatedAt": "2026-07-24T15:42:19.267Z",
+  "status": "ok",
+  "issues": [
+    {
+      "level": "warning",
+      "message": "メガリージョン推進事業: 指標の実績値が全て null"
+    },
+    {
+      "level": "warning",
+      "message": "女性の視点を生かした都市課題解決推進事業: 指標の実績値が全て null"
+    },
+    {
+      "level": "warning",
+      "message": "各種健診（検診）の実施: 指標の実績値が全て null"
+    },
+    {
+      "level": "warning",
+      "message": "地域介護予防活動実践者支援事業: 指標の実績値が全て null"
+    },
+    {
+      "level": "warning",
+      "message": "海外作品等誘致・支援事業: 指標の実績値が全て null"
+    },
+    {
+      "level": "warning",
+      "message": "民間建築物耐震改修費等補助事業: 指標の実績値が全て null"
+    },
+    {
+      "level": "warning",
+      "message": "自動車専用道路ネットワークの整備: 指標の実績値が全て null"
+    }
+  ]
+}

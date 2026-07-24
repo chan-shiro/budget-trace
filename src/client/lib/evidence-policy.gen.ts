@@ -3639,6 +3639,11 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.kitakyushu.lg.jp/files/001192254.pdf",
     "license": "北九州市ホームページに掲載している内容（文章、写真、図、イラスト、音声・動画等）に関する著作権は、原則として北九州市に帰属します。また、一部の画像等の著作権は、北九州市以外の原著作者が所有しています。北九州市ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内にあります「このページの作成者」に記載されています部署へ、事前にご相談ください。"
   },
+  "/sources/kitakyushu-jigyou-hyoka-r6/001158940.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kitakyushu.lg.jp/files/001158940.pdf",
+    "license": "北九州市ホームページに掲載している内容（文章、写真、図、イラスト、音声・動画等）に関する著作権は、原則として北九州市に帰属します。また、一部の画像等の著作権は、北九州市以外の原著作者が所有しています。北九州市ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内にあります「このページの作成者」に記載されています部署へ、事前にご相談ください。"
+  },
   "/sources/kitakyushu-yosansho-r7/001129574.pdf": {
     "mode": "origin",
     "href": "https://www.city.kitakyushu.lg.jp/files/001129574.pdf",
