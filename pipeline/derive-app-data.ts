@@ -1044,6 +1044,13 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
      * **資料ごとに書く** — 横浜の「7軸のカテゴリ値」を札幌に使い回すと嘘になる（実害が出かけた）
      */
     evalNote?: string;
+    /**
+     * 原典の金額単位。**未指定＝千円**（既存3市はすべて千円）。「円」を指定すると
+     * 千円へ換算してから配る（画面側の fmtOku/jigyohiFmt が「千円」を前提に固定係数
+     * （/1e5 等）で億円化するため。§ derive の統一ルール）。
+     * **換算は表示専用**（parsed の値・validate のゲートは原典の円のまま。二重に丸めない）。
+     */
+    unit?: "円";
   }[] = [
     { srcId: "kawasaki-jigyou-hyouka-r6", muniCode: "141305", muniName: "川崎市", docLabel: "事務事業評価シート" },
     // 札幌（#127・2026-07-23）。1事業1PDF×634本（一般会計）。款項目は持たない（kanFromSrc なし）
@@ -1057,6 +1064,15 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
       srcId: "yokohama-jigyo-hyoka-r7", muniCode: "141003", muniName: "横浜市", kanFromSrc: "yokohama-yosansho-r6",
       docLabel: "事業評価書",
       evalNote: "この資料は総合評価や達成度の数値を持たず、7つの軸それぞれのカテゴリ値で自己分析しています。",
+    },
+    // さいたま（#161・2026-07-24）。行政報告書（決算に係る主要な施策の成果）R6・689事業
+    // （一般会計676＋特別会計13。特別会計は policy="特別会計" で下記 inScope フィルタが除外する）。
+    // **款名を報告書自身が内包する**ため kanFromSrc 不要（横浜と違い外部の予算解決に依存しない・
+    // R6予算が罫線様式で未収録でも款ドリルへ紐付けられる）。原典の金額単位は円。
+    {
+      srcId: "saitama-jigyou-houkoku-r6", muniCode: "111007", muniName: "さいたま市", docLabel: "行政報告書",
+      unit: "円",
+      evalNote: "この資料は総合評価や達成度の数値を持たず、決算額の増減とあわせて成果を自由記述で自己評価しています。",
     },
   ];
   const byMuni: Record<string, unknown> = {};
@@ -1099,18 +1115,27 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
         direction: f.direction ?? "",
         // 款名（歳出予算科目の款番号を対象年度の予算で解決したもの）。解決できなければ null
         kanName: (() => {
+          // 款名が measure 自身に内包される資料（さいたま。`2款総務費/1項…`）はそこから直接取る
+          // → kanFromSrc（外部の予算解決）が無くても款ドリルへ紐付けられる
+          const embedded = /^(\d+)款([^/]+)\//.exec(f.measure ?? "");
+          if (embedded) return embedded[2]!.trim();
           const m = /^(\d+)款/.exec(f.measure ?? "");
           return m ? kanNames[String(Number(m[1]))] ?? null : null;
         })(),
-        cost: f.cost.map((c) => ({
-          fy: c.fy,
-          kind: c.kind,
-          jigyohi: c.jigyohi,
-          jinkenhi: c.jinkenhi ?? null,
-          totalCost: c.totalCost,
-          ippanZaigen: c.ippanZaigen,
-          ...(c.isEstimate ? { est: 1 } : {}),
-        })),
+        // 原典が円建ての資料は千円へ換算する（他市と単位を揃えて表示するため。r.unit 参照）
+        cost: f.cost.map((c) => {
+          const scale = r.unit === "円" ? 1000 : 1;
+          const conv = (v: number | null | undefined) => (v == null ? null : v / scale);
+          return {
+            fy: c.fy,
+            kind: c.kind,
+            jigyohi: conv(c.jigyohi),
+            jinkenhi: conv(c.jinkenhi),
+            totalCost: conv(c.totalCost),
+            ippanZaigen: conv(c.ippanZaigen),
+            ...(c.isEstimate ? { est: 1 } : {}),
+          };
+        }),
         // エビデンス: 自サーバーの原本コピーを該当ページで開く（3層の③）
         ref: `/sources/${r.srcId}/${f.locator.file}#page=${f.locator.page}`,
         refLabel: `${f.locator.file} p.${f.locator.page}`,
@@ -2391,6 +2416,7 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
     "kawasaki-jigyou-hyouka": "事業報告（成果）",
     "sapporo-jigyou-hyouka": "事業報告（成果）",
     "yokohama-jigyo-hyoka": "事業報告（成果）",
+    "saitama-jigyou-houkoku": "事業報告（成果）",
     "yamanashi-kessan": "予算執行状況（款別 執行率）",
     "shinjuku-kessan-taisho": "予算執行状況（款別 執行率）",
   };
@@ -2443,6 +2469,7 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
   // 偽る（実際に横浜で踏んだ。2,313事業を収録したのに「成果 ×」と出た）。
   const REPORT_PARSERS = new Set([
     "kofu-jigyou-houkoku", "kawasaki-jigyou-hyouka", "yokohama-jigyo-hyoka", "sapporo-jigyou-hyouka",
+    "saitama-jigyou-houkoku",
   ]);
   const reportDetailByCode: Record<string, string> = {};
   for (const s of srcs) {

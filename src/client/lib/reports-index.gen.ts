@@ -5,6 +5,12 @@
 // 甲府（公表サンプル5件）は静的 gen の report.gen.ts 側なのでここには入らない。
 
 export const REPORT_MUNIS: Record<string, { name: string; fy: string; fyLabel: string; count: number }> = {
+  "111007": {
+    "name": "さいたま市",
+    "fy": "R6",
+    "fyLabel": "令和6年度",
+    "count": 676
+  },
   "141003": {
     "name": "横浜市",
     "fy": "R7",
