@@ -2090,6 +2090,24 @@
       "checkedAt": "2026-07-17T11:27:22.755Z"
     },
     {
+      "sourceId": "kitakyushu-jigyou-hyoka-r6",
+      "url": "https://www.city.kitakyushu.lg.jp/contents/092_00028.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260724150950/https://www.city.kitakyushu.lg.jp/contents/092_00028.html",
+      "waybackTimestamp": "20260724150950",
+      "checkedAt": "2026-07-24T15:10:24.774Z"
+    },
+    {
+      "sourceId": "kitakyushu-jigyou-hyoka-r6",
+      "url": "https://www.city.kitakyushu.lg.jp/files/001158940.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260724150850/https://www.city.kitakyushu.lg.jp/files/001158940.pdf",
+      "waybackTimestamp": "20260724150850",
+      "checkedAt": "2026-07-24T15:09:04.102Z",
+      "sha256Match": true,
+      "waybackBytes": 648637
+    },
+    {
       "sourceId": "kitakyushu-yosansho-r2",
       "url": "https://www.city.kitakyushu.lg.jp/contents/09000262.html",
       "kind": "landing",

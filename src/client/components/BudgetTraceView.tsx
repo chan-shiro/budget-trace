@@ -795,6 +795,16 @@ export default function BudgetTraceView({ v }: { v: any }) {
                                 : "background:#FFF8F2; color:#8A4B1F; border:1px solid #EFD4BE;"),
                             )}>達成度 {r.achievement}</span>
                           )}
+                          {/* 進捗の自己評価（北九州の4段階: 順調/概ね順調/やや遅れ/遅れ）。
+                              achievement を持たない資料でのみ出す（同じ枠を使い回す） */}
+                          {r.achievement == null && r.progress && (
+                            <span style={S(
+                              "display:inline-block; font-family:'IBM Plex Sans JP',sans-serif; font-size:12px; font-weight:700; border-radius:999px; padding:2px 10px; " +
+                              (r.progress === "順調" ? "background:#E7F5EE; color:#0F7B4F; border:1px solid #BFE3D0;"
+                                : r.progress === "概ね順調" ? "background:#E8F4FA; color:#0F76A3; border:1px solid #BFE0EF;"
+                                : "background:#FFF8F2; color:#8A4B1F; border:1px solid #EFD4BE;"),
+                            )}>{r.progress}</span>
+                          )}
                         </span>
                         <span style={S("font-size:11.5px; color:#5C6B77;")} title={r.directionLabel}>
                           {r.direction && <><strong style={S("font-family:'IBM Plex Mono',monospace; color:#14181C;")}>{r.direction}</strong> {r.directionLabel}</>}

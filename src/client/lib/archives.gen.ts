@@ -232,6 +232,8 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.city.kita.lg.jp/_res/projects/default_project/_page_/001/014/485/r6gaiyou.pdf": "https://web.archive.org/web/20260417062744/https://www.city.kita.lg.jp/_res/projects/default_project/_page_/001/014/485/r6gaiyou.pdf",
   "https://www.city.kita.lg.jp/_res/projects/default_project/_page_/001/014/485/r7gaiyou.pdf": "https://web.archive.org/web/20260417063045/https://www.city.kita.lg.jp/_res/projects/default_project/_page_/001/014/485/r7gaiyou.pdf",
   "https://www.city.kita.lg.jp/_res/projects/default_project/_page_/001/014/485/r8gaiyou.pdf": "https://web.archive.org/web/20260419120236/https://www.city.kita.lg.jp/_res/projects/default_project/_page_/001/014/485/r8gaiyou.pdf",
+  "https://www.city.kitakyushu.lg.jp/contents/092_00028.html": "https://web.archive.org/web/20260724150950/https://www.city.kitakyushu.lg.jp/contents/092_00028.html",
+  "https://www.city.kitakyushu.lg.jp/files/001158940.pdf": "https://web.archive.org/web/20260724150850/https://www.city.kitakyushu.lg.jp/files/001158940.pdf",
   "https://www.city.kitakyushu.lg.jp/contents/09000262.html": "https://web.archive.org/web/20251113031147/https://www.city.kitakyushu.lg.jp/contents/09000262.html",
   "https://www.city.kitakyushu.lg.jp/files/000840516.pdf": "https://web.archive.org/web/20260715164331/https://www.city.kitakyushu.lg.jp/files/000840516.pdf",
   "https://www.city.kitakyushu.lg.jp/contents/09000288.html": "https://web.archive.org/web/20260212053130/https://www.city.kitakyushu.lg.jp/contents/09000288.html",

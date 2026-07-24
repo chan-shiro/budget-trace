@@ -1074,6 +1074,15 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
       unit: "円",
       evalNote: "この資料は総合評価や達成度の数値を持たず、決算額の増減とあわせて成果を自由記述で自己評価しています。",
     },
+    // 北九州（#161・2026-07-24）。行政評価の取組結果（事業評価）R6・198事業。
+    // **款/項/目はこの資料に無い**（別資料の執行実績説明書にのみ款があり、決算額±事業名の
+    // 近似一致で機械結合できる見込みだが未実装＝kanFromSrc なし）。評価は「順調/概ね順調/
+    // やや遅れ/遅れ」の4段階（achievement/grade どちらの語彙にも当てはまらないため progress
+    // フィールドに丸めず収める）。
+    {
+      srcId: "kitakyushu-jigyou-hyoka-r6", muniCode: "401005", muniName: "北九州市", docLabel: "行政評価の取組結果（事業評価）",
+      evalNote: "この資料は達成度の数値の代わりに「順調」「概ね順調」「やや遅れ」「遅れ」の4段階で自己評価し、KPI（成果指標）の目標・実績もあわせて持ちます。",
+    },
   ];
   const byMuni: Record<string, unknown> = {};
   for (const r of REPORT_MUNI_SOURCES) {
@@ -1113,6 +1122,9 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
         // **達成度は数字が小さいほど良い**（甲府の A〜F とは向きが逆）。丸めず素の値を配る
         achievement: f.achievement ?? null,
         direction: f.direction ?? "",
+        // 進捗の自己評価（北九州の「順調/概ね順調/やや遅れ/遅れ」）。achievement/grade の
+        // どちらとも語彙が違うため別枠で持つ（§ pipeline/types.ts の progress コメント参照）
+        progress: f.progress ?? "",
         // 款名（歳出予算科目の款番号を対象年度の予算で解決したもの）。解決できなければ null
         kanName: (() => {
           // 款名が measure 自身に内包される資料（さいたま。`2款総務費/1項…`）はそこから直接取る
@@ -1161,6 +1173,7 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
         totalCost: reports.some((x) => x.cost.some((c) => c.totalCost != null)),
         achievement: reports.some((x) => x.achievement != null),
         direction: reports.some((x) => x.direction),
+        progress: reports.some((x) => x.progress),
         /** 歳出予算科目（款項目）。**横浜だけが持つ** — 事業を款ドリルへ紐付けられる */
         kanKoumoku: reports.some((x) => /\d+款/.test(x.measure ?? "")),
         estimate: reports.some((x) => x.cost.some((c) => (c as { est?: number }).est === 1)),
@@ -2417,6 +2430,7 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
     "sapporo-jigyou-hyouka": "事業報告（成果）",
     "yokohama-jigyo-hyoka": "事業報告（成果）",
     "saitama-jigyou-houkoku": "事業報告（成果）",
+    "kitakyushu-jigyou-hyoka": "事業報告（成果）",
     "yamanashi-kessan": "予算執行状況（款別 執行率）",
     "shinjuku-kessan-taisho": "予算執行状況（款別 執行率）",
   };
@@ -2469,7 +2483,7 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
   // 偽る（実際に横浜で踏んだ。2,313事業を収録したのに「成果 ×」と出た）。
   const REPORT_PARSERS = new Set([
     "kofu-jigyou-houkoku", "kawasaki-jigyou-hyouka", "yokohama-jigyo-hyoka", "sapporo-jigyou-hyouka",
-    "saitama-jigyou-houkoku",
+    "saitama-jigyou-houkoku", "kitakyushu-jigyou-hyoka",
   ]);
   const reportDetailByCode: Record<string, string> = {};
   for (const s of srcs) {
@@ -2601,6 +2615,9 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
       }
       if (m.includes("記載率")) {
         return "資料に載っている率と、金額から計算し直した率がわずかに違います。";
+      }
+      if (m.includes("指標の実績値が全て null")) {
+        return "成果指標の実績値が資料にまだ記載されていません（新規事業などで集計中の可能性）。目標値のみ載せています。";
       }
       return null;
     };

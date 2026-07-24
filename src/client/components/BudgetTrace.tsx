@@ -1755,6 +1755,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
           ...(repData.has.jinkenhi ? ["人件費"] : []),
           ...(repData.has.totalCost ? ["総コスト（人件費込み）"] : []),
           ...(repData.has.achievement ? ["達成度"] : []),
+          ...(repData.has.progress ? ["進捗評価"] : []),
           ...(repData.has.direction ? ["今後の方向性"] : []),
           ...(repData.has.kanKoumoku ? ["歳出予算科目（款・項・目）"] : []),
         ].join("・"),
@@ -1791,6 +1792,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
             measure: r.measure,
             achievement: r.achievement,
             achievementLabel: r.achievement != null ? repData.achievementLabels[String(r.achievement)] ?? "" : "",
+            progress: r.progress,
             direction: r.direction,
             directionLabel: r.direction ? repData.directionLabels[r.direction] ?? "" : "",
             // 表示金額。単位トグルに追従させる（金額なので per capita 化してよい）。
