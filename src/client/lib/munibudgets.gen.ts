@@ -78058,7 +78058,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         }
       ],
       "sourceTitle": "令和3年度 横浜市一般会計予算（事項別明細書 総括・款別歳入歳出）",
-      "sourceUrl": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r3/r3.files/r3ippan.pdf",
+      "sourceUrl": "https://web.archive.org/web/20251126044940/https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r3/r3.files/r3ippan.pdf",
       "originUrl": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r3/r3.files/r3ippan.pdf",
       "sourceLocalUrl": "/sources/yokohama-yosansho-r3/r3ippan.pdf",
       "pagesLabel": "款別歳入歳出",
@@ -78066,7 +78066,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
         {
           "title": "令和3年度 横浜市一般会計予算（事項別明細書 総括・款別歳入歳出）",
           "type": "PDF",
-          "url": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r3/r3.files/r3ippan.pdf",
+          "url": "https://web.archive.org/web/20251126044940/https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r3/r3.files/r3ippan.pdf",
           "localUrl": "/sources/yokohama-yosansho-r3/r3ippan.pdf",
           "source": "www.city.yokohama.lg.jp",
           "thumb": "r3ippan.pdf ・ sha256 2f9c21fb2abb3d3b… ・ 2026-07-15 取得"
