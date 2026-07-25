@@ -646,6 +646,24 @@
       "waybackBytes": 387621
     },
     {
+      "sourceId": "chiba-ken-yosansho-r8",
+      "url": "https://www.pref.chiba.lg.jp/zaisei/gian/202602.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260725033148/https://www.pref.chiba.lg.jp/zaisei/gian/202602.html",
+      "waybackTimestamp": "20260725033148",
+      "checkedAt": "2026-07-25T03:32:15.086Z"
+    },
+    {
+      "sourceId": "chiba-ken-yosansho-r8",
+      "url": "https://www.pref.chiba.lg.jp/zaisei/gian/documents/202602-5-y-i-yosan.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260725033004/https://www.pref.chiba.lg.jp/zaisei/gian/documents/202602-5-y-i-yosan.pdf",
+      "waybackTimestamp": "20260725033004",
+      "checkedAt": "2026-07-25T03:30:55.833Z",
+      "sha256Match": true,
+      "waybackBytes": 3352735
+    },
+    {
       "sourceId": "chiba-yosansho-r4",
       "url": "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/documents/r4ippan.pdf",
       "kind": "file",
@@ -1445,6 +1463,24 @@
       "waybackTimestamp": "20260713094338",
       "checkedAt": "2026-07-13T13:09:05.827Z",
       "sha256Match": true
+    },
+    {
+      "sourceId": "kanagawa-yosansho-r8",
+      "url": "https://www.pref.kanagawa.jp/docs/v6g/cnt/f4872/0801teireikai.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260217044042/https://www.pref.kanagawa.jp/docs/v6g/cnt/f4872/0801teireikai.html",
+      "waybackTimestamp": "20260217044042",
+      "checkedAt": "2026-07-25T03:29:01.947Z"
+    },
+    {
+      "sourceId": "kanagawa-yosansho-r8",
+      "url": "https://www.pref.kanagawa.jp/documents/132115/2026_001_aobon.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260725032838/https://www.pref.kanagawa.jp/documents/132115/2026_001_aobon.pdf",
+      "waybackTimestamp": "20260725032838",
+      "checkedAt": "2026-07-25T03:28:56.373Z",
+      "sha256Match": true,
+      "waybackBytes": 6370187
     },
     {
       "sourceId": "katsushika-yosangaiyou-h28",
@@ -4837,6 +4873,24 @@
       "waybackUrl": "https://web.archive.org/web/20251016113850/https://www.city.saitama.lg.jp/006/007/011/002/p124022.html",
       "waybackTimestamp": "20251016113850",
       "checkedAt": "2026-07-24T13:22:49.936Z"
+    },
+    {
+      "sourceId": "saitama-ken-yosangaiyou-r8",
+      "url": "https://www.pref.saitama.lg.jp/a0103/20251015reiwa8yosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260513031705/https://www.pref.saitama.lg.jp/a0103/20251015reiwa8yosan.html",
+      "waybackTimestamp": "20260513031705",
+      "checkedAt": "2026-07-25T03:29:52.269Z"
+    },
+    {
+      "sourceId": "saitama-ken-yosangaiyou-r8",
+      "url": "https://www.pref.saitama.lg.jp/documents/274057/03-r8-02-siryou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260725032924/https://www.pref.saitama.lg.jp/documents/274057/03-r8-02-siryou2.pdf",
+      "waybackTimestamp": "20260725032924",
+      "checkedAt": "2026-07-25T03:29:43.830Z",
+      "sha256Match": true,
+      "waybackBytes": 2402761
     },
     {
       "sourceId": "saitama-yosansho-r7",

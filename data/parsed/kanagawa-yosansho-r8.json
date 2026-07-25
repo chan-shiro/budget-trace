@@ -1,0 +1,347 @@
+{
+  "docType": "budget-book",
+  "sourceId": "kanagawa-yosansho-r8",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-07-25T03:26:13.493Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R8",
+  "account": "一般会計",
+  "revenueTotal": 2375969000,
+  "expenditureTotal": 2375969000,
+  "prevRevenueTotal": 2215824000,
+  "prevExpenditureTotal": 2215824000,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "県税",
+      "amount": 1525483133,
+      "prevAmount": 1453401820,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "利子割清算金",
+      "amount": 6635922,
+      "prevAmount": 0,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "地方譲与税",
+      "amount": 215375779,
+      "prevAmount": 201443490,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "地方特例交付金",
+      "amount": 20200000,
+      "prevAmount": 3700000,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "地方交付税",
+      "amount": 96000000,
+      "prevAmount": 100000000,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 1000000,
+      "prevAmount": 1100000,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "分担金及び負担金",
+      "amount": 423640,
+      "prevAmount": 357691,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "使用料及び手数料",
+      "amount": 28538227,
+      "prevAmount": 28918414,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "国庫支出金",
+      "amount": 175528519,
+      "prevAmount": 140134453,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "財産収入",
+      "amount": 5975548,
+      "prevAmount": 3830326,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "寄附金",
+      "amount": 580464,
+      "prevAmount": 260954,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "繰入金",
+      "amount": 182890850,
+      "prevAmount": 167896732,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "繰越金",
+      "amount": 10118,
+      "prevAmount": 10139,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "諸収入",
+      "amount": 24898800,
+      "prevAmount": 24045981,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "県債",
+      "amount": 92428000,
+      "prevAmount": 90724000,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 3801844,
+      "prevAmount": 3834601,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 510700212,
+      "prevAmount": 479616019,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "環境費",
+      "amount": 19104135,
+      "prevAmount": 18134961,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "民生費",
+      "amount": 405672282,
+      "prevAmount": 373295956,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "衛生費",
+      "amount": 263389012,
+      "prevAmount": 237303124,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "労働費",
+      "amount": 8251752,
+      "prevAmount": 7885889,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "農林水産業費",
+      "amount": 21767911,
+      "prevAmount": 20258868,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "商工費",
+      "amount": 22161507,
+      "prevAmount": 19798311,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "土木費",
+      "amount": 128528819,
+      "prevAmount": 130852912,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "警察費",
+      "amount": 230060568,
+      "prevAmount": 215570716,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 11,
+      "kanName": "教育費",
+      "amount": 492421718,
+      "prevAmount": 416353097,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 12,
+      "kanName": "災害復旧費",
+      "amount": 1540000,
+      "prevAmount": 1567447,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 13,
+      "kanName": "公債費",
+      "amount": 266496716,
+      "prevAmount": 289345271,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 14,
+      "kanName": "諸支出金",
+      "amount": 72524,
+      "prevAmount": 6828,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 15,
+      "kanName": "予備費",
+      "amount": 2000000,
+      "prevAmount": 2000000,
+      "locator": {
+        "file": "2026_001_aobon.pdf",
+        "page": 8
+      }
+    }
+  ]
+}
