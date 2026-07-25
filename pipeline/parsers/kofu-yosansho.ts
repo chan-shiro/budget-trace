@@ -134,8 +134,37 @@ interface Options {
    * Σ が -37,000 割れた**（実測・Σゲートが検出）。
    * ⚠ 全ソース既定にしない — 様式によっては － が「データ無し」（練馬の廃止款等）を意味し、
    *   0 と読むと嘘になる。総括表のように「セル＝金額欄のみ」の様式でだけ使う。
+   *
+   * ⚠ **ダッシュは文字クラスごと広げてある**（2026-07-25・岡山で U+2015 を踏んだ）。
+   *   発行元がどのダッシュを使うかは様式ごとに違い（豊島=U+FF0D/U+2212・岡山=U+2015
+   *   HORIZONTAL BAR・静岡=U+002D ASCII ハイフン）、**1文字ずつ足すと同じ穴を何度も踏む**。
+   *   **廃止款の款名クリーンアップ（`cleaned` の `.replace(/[-‐‑‒–—―−－]/g, "")`）と同じクラスに
+   *   揃えてある** — 以前はここだけ `[－−]` と狭く、同一パーサ内で不整合だった。
+   *   **片方だけ足さないこと**（次に別のダッシュを踏んだら両方を同時に広げる）。
    */
   dashAsZero?: boolean;
+  /**
+   * **金額を「整数トークンの何番目か」で直接指定する**（2026-07-25・京都府）。
+   * 既定は 当年度=0 / 前年度=1（`prevColumnFirst` なら鏡像で 当年度=1 / 前年度=0）だが、
+   * **数値ブロックが3組以上並ぶ様式**はこの前提から外れる。京都府の款別表は
+   *
+   *   款 ｜ 7年度2月 ｜ **8年度当初** ｜ 合計 ｜ 構成比 ｜ 6年度2月 ｜ **7年度当初** ｜ 合計 ｜ …
+   *
+   * で、当年度＝整数トークンの **1番目**・前年度＝**4番目**。指定せずに当てると
+   * **Σ が4系統とも差0・款名も全件クリーンなまま「当年度＝前年度の2月補正額」を収録する**
+   * （実測。検証ゲートが原理的に検出できない型）。
+   *
+   * ⚠ `revenueCropX` では救えない — 必要な列が x 方向に離れた3つの帯（款名・当年度・前年度）に
+   *   分かれており、`pdftotext -x/-W` は**単一の連続区間**しか切り出せない。
+   * ⚠ **列位置が全行で一定の様式にだけ使う**。指定すると皆増/皆減による添字の推測を通さない
+   *   （空セルで ints が詰まる様式では位置がずれるため）。範囲外なら throw する（静かに壊れない）。
+   * ⚠ 合計行にも同じ添字を使う。京都府は合計行も同じ列構成であることを実測で確認済み。
+   * ⚠ **必ず2つセットで指定する**。片方だけだと既定（または `prevColumnFirst`）の推測へ静かに
+   *   落ちてしまい、このオプションを入れた意味（Σ差0 のまま別の列を読む事故を殺す）が失われるので、
+   *   片方だけの指定は throw する。
+   */
+  amountIntIndex?: number;
+  prevIntIndex?: number;
   /**
    * **款と項が同一表に混在する様式**（大阪 §8e・相模原 §8p）で、**款行の字下げの上限**。
    * 指定するとこれより深く字下げされた行は款のパースから外れる（＝項・目の行を款と誤認しない）。
@@ -392,8 +421,10 @@ function parseKanPage(
     : pages.map((p) => pdfPageText(filePath, p, cropX, src)).join("\n");
   // ToUnicode 欠落の復号（Options.decodeGarble 参照）。パース前にページ全文を復元する
   if (opts.decodeGarble) text = decodeGarbleText(text, `${filename} ${pageLabel}`);
-  // 空セルの － を 0 に（Options.dashAsZero 参照）。単独トークンだけ・款名中のハイフンには当たらない
-  if (opts.dashAsZero) text = text.replace(/(?<=[\s　]|^)[－−](?=[\s　]|$)/gm, "0");
+  // 空セルの － を 0 に（Options.dashAsZero 参照）。単独トークンだけ・款名中のハイフンには当たらない。
+  // ⚠ 文字クラスはまとめて広い（U+002D ASCII / U+2010-2015 / U+2212 / U+FF0D）。1文字ずつ足すと
+  //   同じ穴を何度も踏む（豊島=－ で作り、岡山で ― を、静岡で - を踏んだ）。
+  if (opts.dashAsZero) text = text.replace(/(?<=[\s　]|^)[-‐‑‒–—―−－](?=[\s　]|$)/gm, "0");
   const heading =
     side === "revenue"
       ? opts.revenueHeading ?? "歳入予算款別一覧"
@@ -525,7 +556,23 @@ function parseKanPage(
     // 前年度が **△1 → −1** になる（正: 1）。
     let amount: number;
     let prevAmount: number;
-    if (opts.prevColumnFirst) {
+    if (opts.amountIntIndex != null && opts.prevIntIndex != null) {
+      // 列位置を直接指定する様式（Options.amountIntIndex 参照）。**皆増/皆減の推測は通さない** —
+      // 位置が固定である様式にだけ使うオプションなので、推測を混ぜると逆に壊れる。
+      // 範囲外は throw（静かに別の列を読ませない）。
+      const pick = (idx: number, what: string): number => {
+        const t = ints[idx];
+        if (t == null) {
+          throw new Error(
+            `${filename} ${pageLabel}: ${what}に指定した整数トークン[${idx}]がありません` +
+              `（この行の整数は ${ints.length} 個）: ${raw.trim()}`,
+          );
+        }
+        return toAmount(t);
+      };
+      amount = pick(opts.amountIntIndex, "当年度");
+      prevAmount = pick(opts.prevIntIndex, "前年度");
+    } else if (opts.prevColumnFirst) {
       // 逆順様式（Options.prevColumnFirst 参照）: ints = [前年度, 当年度, 比較]。
       // 添字ロジックは正順の**鏡像**になる — 前年度は常に ints[0]。当年度は ints[1] だが、
       // **皆増で前年度セルが空欄**の様式では ints が [当年度, 比較] に詰まるので ints[0]
@@ -569,7 +616,13 @@ function parseKanPage(
   const allLines = text.split("\n").map((l) => toHalfDigits(l));
   let totalIdx = allLines.length;
   {
+    // ⚠ **合計行の「選定」と「金額の取り出し」を分ける**（2026-07-25）。ここは候補を全行走査して
+    //   整数最多の行を選ぶ場所なので、**走査の途中で throw してはいけない** — 列見出し行
+    //   （京都府の `7年度 合計 構成比 6年度 合計 構成比`）のように合計ラベルを含むだけの候補が
+    //   先に来ると、本物の合計行に辿り着く前に落ちる。選び終えてから取り出す。
     let bestInts = 1; // 最低2個の整数金額（当年度＋前年度）を要求
+    let bestTokens: string[] | null = null;
+    let bestRaw = "";
     allLines.forEach((raw, i) => {
       if (!raw.replace(/[\s　]/g, "").includes(totalLabel)) return;
       // 構成比 100%（＝整数）が前年度合計に化けるのを防ぐ（stripPercents 参照）
@@ -577,17 +630,37 @@ function parseKanPage(
       if (ints.length > bestInts) {
         bestInts = ints.length;
         totalIdx = i;
-        // 逆順様式では合計行も [前年度, 当年度] の順（Options.prevColumnFirst 参照）。
-        // bestInts > 1 が保証するとおりここは常に整数2個以上なので ints[1] は存在する。
-        if (opts.prevColumnFirst) {
-          total = toAmount(ints[1]!);
-          prevTotal = toAmount(ints[0]!);
-        } else {
-          total = toAmount(ints[0]!);
-          prevTotal = ints[1] != null ? toAmount(ints[1]!) : null;
-        }
+        bestTokens = ints;
+        bestRaw = raw;
       }
     });
+    if (bestTokens) {
+      const ints: string[] = bestTokens;
+      // 逆順様式では合計行も [前年度, 当年度] の順（Options.prevColumnFirst 参照）。
+      // bestInts > 1 が保証するとおりここは常に整数2個以上なので ints[1] は存在する。
+      if (opts.amountIntIndex != null && opts.prevIntIndex != null) {
+        // 列指定の様式は**合計行も同じ列構成**（Options.amountIntIndex 参照）。
+        // 款行と同じ添字を使い、範囲外なら throw する（＝静かに別の列を読ませない）。
+        const pick = (idx: number, what: string): number => {
+          const t = ints[idx];
+          if (t == null) {
+            throw new Error(
+              `${filename} ${pageLabel}: 合計行の${what}に指定した整数トークン[${idx}]が` +
+                `ありません（この行の整数は ${ints.length} 個）: ${bestRaw.trim()}`,
+            );
+          }
+          return toAmount(t);
+        };
+        total = pick(opts.amountIntIndex, "当年度");
+        prevTotal = pick(opts.prevIntIndex, "前年度");
+      } else if (opts.prevColumnFirst) {
+        total = toAmount(ints[1]!);
+        prevTotal = toAmount(ints[0]!);
+      } else {
+        total = toAmount(ints[0]!);
+        prevTotal = ints[1] != null ? toAmount(ints[1]!) : null;
+      }
+    }
   }
 
   // 前年列の注記（※〜）は**合計行の後**に置かれる（甲府 R6 は合計行の直下）。款パースは
@@ -730,7 +803,9 @@ function parseKanPage(
       // **隣のコードポイントを取りこぼしていた** — ダッシュ類は「1つ踏んだら周辺も来る」と考えて
       // 文字クラスごと広げる。文京は同じ廃止行が H27/H21 は `―`・H19 は無印と、**同一自治体の
       // 年度間でも揺れる**（中央 R6/H29 と同じ）。
-      const cleaned = namePart.replace(/^(?:廃款|[△▲〇○])/, "").replace(/[○〇]$/, "").replace(/[-−–—－―]/g, "");
+      // ⚠ ダッシュのクラスは `dashAsZero`（Options 参照）と**同じものに揃える**。
+      //    片方だけ広げると、次に別のダッシュを踏んだとき款名にだけ残って Σ 差0 のまま画面に出る。
+      const cleaned = namePart.replace(/^(?:廃款|[△▲〇○])/, "").replace(/[○〇]$/, "").replace(/[-‐‑‒–—―−－]/g, "");
       emit(null, pendName + cleaned, ints, raw, cleaned === "");
     } else if (pendNo != null && lead && namePart === "" && ints.length >= 1) {
       // **折返し款の金額行なのに、当年度額そのものが lead に食われる**（2026-07-17・台東 R8 の
@@ -1924,6 +1999,14 @@ export function parseKofuYosansho(
   source: SourceEntry,
 ): BudgetBookDoc {
   const opts = (source.parserOptions ?? {}) as Options;
+  // 列指定は**2つセット**が必須（Options.amountIntIndex 参照）。片方だけだと既定の推測へ
+  // 静かに落ちて、このオプションを入れた意味（Σ差0 のまま別の列を読む事故を殺す）が失われる。
+  if ((opts.amountIntIndex == null) !== (opts.prevIntIndex == null)) {
+    throw new Error(
+      `${source.id}: amountIntIndex と prevIntIndex は2つセットで指定してください` +
+        `（現在 amountIntIndex=${opts.amountIntIndex} / prevIntIndex=${opts.prevIntIndex}）`,
+    );
+  }
   // 単数 revenuePage と複数 revenuePages のどちらか一方。内部は常にページ配列で扱う
   const sidePages = (
     single: number | undefined,
