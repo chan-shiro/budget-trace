@@ -128,6 +128,12 @@ const MUNI_SLUGS: Record<string, string> = {
   "200000": "ken",
   "210005": "ken",
   "350001": "ken",
+  // 2026-07-26 第6弾。⚠ 群馬県 100005 ≠ 前橋市 102016 / 福島県 070009 ≠ 福島市 072010 /
+  //    三重県 240001 ≠ 津市 242012 / 鹿児島県 460001 ≠ 鹿児島市 462012
+  "070009": "ken",
+  "100005": "ken",
+  "240001": "ken",
+  "460001": "ken",
 };
 
 interface KnownMuni { code: string; name: string; pref: string; slug: string; }

@@ -89,6 +89,26 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.pref.tochigi.lg.jp/b01/7gian.html",
     "license": "栃木県ホームページに掲載されている文章、画像等の著作権は、栃木県または文章、画像等の提供者に帰属します。これらの著作物は、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載・引用することはできません。"
   },
+  "/sources/kagoshima-ken-yosan-setsumeisho-r8/127227_20260319114612-1.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.kagoshima.jp/ab05/documents/127227_20260319114612-1.pdf",
+    "license": "鹿児島県ホームページに掲載されている個々の情報及び鹿児島県ホームページ全体については著作権の対象となっており，ともに著作権法により保護されています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き，無断転載・改変等をすることはできません。"
+  },
+  "/sources/gunma-ken-yosansetsumeisho-r8/690172.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.gunma.jp/uploaded/attachment/690172.pdf",
+    "license": "群馬県ホームページに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、群馬県ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+  },
+  "/sources/fukushimaken-yosansho-r8/734665.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.fukushima.lg.jp/uploaded/attachment/734665.pdf",
+    "license": "「福島県ホームページ」に掲載されている個々の情報(文章、写真、イラストなど)は、著作権の対象となっています。また、「福島県ホームページ」全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転用・引用することはできません。また、当ページの内容を改変することもできません。ただし、「福島県ホームページ」の各ページに特段の定めがある場合には、その取り扱いが優先されます。"
+  },
+  "/sources/mieken-yosan-gaiyou-r7/001178138.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.mie.lg.jp/common/content/001178138.pdf",
+    "license": "「三重県ウェブサイト」に掲載されている情報（文章、写真、画像、プログラムなど）は、著作権の対象であり、法律によって保護されています。これらの情報について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、三重県の許可なく複製、転用等する事は法律で禁止されています。／各ページの記載記事、写真の無断転載を禁じます。"
+  },
   "/sources/sapporo-yosansetsumeisho-r7/02_r7_yosansetsumeisho_ippan.pdf": {
     "mode": "origin",
     "href": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r7/documents/02_r7_yosansetsumeisho_ippan.pdf",
