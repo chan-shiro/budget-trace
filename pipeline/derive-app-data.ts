@@ -2084,6 +2084,13 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     //    岡山県 330001 ≠ 岡山市 331007。
     { srcId: "kyotofu-tosho-gaiyou-r8", muniCode: "260002", muniName: "京都府", prefName: "京都府", isPref: true },
     { srcId: "okayamaken-yosan-setsumei-r8", muniCode: "330001", muniName: "岡山県", prefName: "岡山県", isPref: true },
+    // 2026-07-25 第5弾。⚠ 県と県内市を取り違えない（栃木県 090000 ≠ 宇都宮市 092011 /
+    //    岐阜県 210005 ≠ 岐阜市 212016 / 長野県 200000 ≠ 長野市 202011 / 山口県 350001 ≠ 山口市 352039）。
+    { srcId: "ibaraki-ken-yosan-kankeisiryou-r8", muniCode: "080004", muniName: "茨城県", prefName: "茨城県", isPref: true },
+    { srcId: "tochigiken-yosansho-r8", muniCode: "090000", muniName: "栃木県", prefName: "栃木県", isPref: true },
+    { srcId: "naganoken-yosansho-r8", muniCode: "200000", muniName: "長野県", prefName: "長野県", isPref: true },
+    { srcId: "gifuken-yosan-keisu-r8", muniCode: "210005", muniName: "岐阜県", prefName: "岐阜県", isPref: true },
+    { srcId: "yamaguchiken-yosan-setsumeisho-r8", muniCode: "350001", muniName: "山口県", prefName: "山口県", isPref: true },
     // 東京都（2026-07-22 追加・#124）。予算概要CSV（H29〜R8 の10年）。PDF は全経路パース不可のため
     // CSV が唯一の経路（registry のコメント参照）。歳出は款再編が2回（R5・R6）あり款名結合が切れる。
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29"] as const).map((fy) => ({

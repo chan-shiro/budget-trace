@@ -69,6 +69,26 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.pref.kyoto.jp/yosan/documents/r8_p5_mokuteki.pdf",
     "license": "京都府ホームページに掲載されている個々の情報(文章、写真、イラストなど)について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
   },
+  "/sources/naganoken-yosansho-r8/r0802_yosetsu_sokatsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.nagano.lg.jp/zaisei/kensei/soshiki/yosan/r08/r8yosanan.html",
+    "license": "長野県公式ホームページに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、長野県公式ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+  },
+  "/sources/ibaraki-ken-yosan-kankeisiryou-r8/r08_tousyo_yosankankeisiryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.ibaraki.jp/somu/zaisei/kanri/documents/r08_tousyo_yosankankeisiryou.pdf",
+    "license": "茨城県ホームページに掲載されている文章、画像等の著作権は、茨城県または文章、画像等の提供者の方にあります。これらの著作物は、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転用・引用することはできません。"
+  },
+  "/sources/gifuken-yosan-keisu-r8/485785.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.gifu.lg.jp/uploaded/attachment/485785.pdf",
+    "license": "本ホームページに掲載されている情報（文章、写真、画像、プログラムなど）は著作権の対象であり、法律によって保護されています。また本ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。これらの情報については、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、岐阜県の許可なく無断で複製・転用することはできません。"
+  },
+  "/sources/tochigiken-yosansho-r8/412yosannann1.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.tochigi.lg.jp/b01/7gian.html",
+    "license": "栃木県ホームページに掲載されている文章、画像等の著作権は、栃木県または文章、画像等の提供者に帰属します。これらの著作物は、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載・引用することはできません。"
+  },
   "/sources/sapporo-yosansetsumeisho-r7/02_r7_yosansetsumeisho_ippan.pdf": {
     "mode": "origin",
     "href": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r7/documents/02_r7_yosansetsumeisho_ippan.pdf",
