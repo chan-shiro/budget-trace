@@ -991,7 +991,9 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
         ? [
             "款別の歳入・歳出",
             "前年当初比較",
-            "1人あたり（県内市町村人口合計）",
+            // 「県内」で決め打ちしない（北海道・大阪府・東京都でちぐはぐになる）。
+            // 団体名の末字から 都/道/府/県 を取る（gen の populationLabel と同じ考え方）
+            `1人あたり（${data.name.slice(-1)}内市区町村人口合計）`,
             ...(hasExec ? [`${execYear.fyLabel}の款別決算・執行率`] : []),
             ...(hasBudgetProjectsData ? ["主な事業（施策別）"] : []),
           ]

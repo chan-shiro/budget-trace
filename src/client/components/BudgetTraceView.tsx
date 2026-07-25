@@ -1726,7 +1726,12 @@ export default function BudgetTraceView({ v }: { v: any }) {
               </div>
               <div style={S("display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:11.5px;")}>
                 <a href={v.viewer.tabUrl} target="_blank" rel="noopener noreferrer" style={S("color:#0F76A3; text-decoration:none;")}>新しいタブで開く ↗</a>
-                {v.viewer.archiveUrl && <a href={v.viewer.archiveUrl} target="_blank" rel="noopener noreferrer" style={S("color:#5C6B77; text-decoration:none;")}>魚拓（Wayback）↗</a>}
+                {/* ⚠ `archiveUrl` は「魚拓があればそれ・無ければ発行元 URL」というフォールバック値
+                    （derive の `wayback()` が `ARCHIVES[url] ?? url` を返す）。**魚拓が無い資料では
+                    発行元 URL がそのまま入る**ので、素で出すと「魚拓（Wayback）」というラベルの
+                    リンクが発行元を指す（2026-07-25・北海道 R8 で発覚）。実際に魚拓の URL の
+                    ときだけ出す。 */}
+                {/(?:web\.archive\.org|warp\.ndl\.go\.jp)/.test(v.viewer.archiveUrl ?? "") && <a href={v.viewer.archiveUrl} target="_blank" rel="noopener noreferrer" style={S("color:#5C6B77; text-decoration:none;")}>魚拓（Wayback）↗</a>}
                 {v.viewer.originUrl && <a href={v.viewer.originUrl} target="_blank" rel="noopener noreferrer" style={S("color:#5C6B77; text-decoration:none;")}>発行元 ↗</a>}
                 <HoverBox as="button" onClick={v.closeViewer} aria-label="閉じる" style={S("border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; border-radius:999px; padding:5px 14px; font-size:12px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("border-color:#1798D0; color:#1798D0;")}>閉じる ✕</HoverBox>
               </div>

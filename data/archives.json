@@ -1134,6 +1134,24 @@
       "sha256Match": true
     },
     {
+      "sourceId": "fukuoka-ken-yosangaiyou-r8",
+      "url": "https://www.pref.fukuoka.lg.jp/contents/hennseigaiyou.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260314195355/https://www.pref.fukuoka.lg.jp/contents/hennseigaiyou.html",
+      "waybackTimestamp": "20260314195355",
+      "checkedAt": "2026-07-25T05:50:54.323Z"
+    },
+    {
+      "sourceId": "fukuoka-ken-yosangaiyou-r8",
+      "url": "https://www.pref.fukuoka.lg.jp/uploaded/attachment/278132.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260725054940/https://www.pref.fukuoka.lg.jp/uploaded/attachment/278132.pdf",
+      "waybackTimestamp": "20260725054940",
+      "checkedAt": "2026-07-25T05:50:45.117Z",
+      "sha256Match": true,
+      "waybackBytes": 4487715
+    },
+    {
       "sourceId": "fukuoka-yosansho-r2",
       "url": "https://www.city.fukuoka.lg.jp/zaisei/zaisei/shisei/2Ntoushoyosanan.html",
       "kind": "landing",
@@ -1367,6 +1385,32 @@
       "waybackUrl": "https://web.archive.org/web/20260715152343/https://www.city.hiroshima.lg.jp/shisei/zaisei/1003079/1043845/1047851.html",
       "waybackTimestamp": "20260715152343",
       "checkedAt": "2026-07-15T15:24:26.722Z"
+    },
+    {
+      "sourceId": "hiroshimaken-yosansho-r8",
+      "url": "https://www.pref.hiroshima.lg.jp/site/zaiseiyosann/r08tosyo-giansyo.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260415161830/https://www.pref.hiroshima.lg.jp/site/zaiseiyosann/r08tosyo-giansyo.html",
+      "waybackTimestamp": "20260415161830",
+      "checkedAt": "2026-07-25T05:51:49.677Z"
+    },
+    {
+      "sourceId": "hiroshimaken-yosansho-r8",
+      "url": "https://www.pref.hiroshima.lg.jp/uploaded/life/1113482_9615229_misc.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260725055101/https://www.pref.hiroshima.lg.jp/uploaded/life/1113482_9615229_misc.pdf",
+      "waybackTimestamp": "20260725055101",
+      "checkedAt": "2026-07-25T05:51:28.749Z",
+      "sha256Match": true,
+      "waybackBytes": 1159650
+    },
+    {
+      "sourceId": "hokkaido-yosan-gaiyou-r8",
+      "url": "https://www.pref.hokkaido.lg.jp/sm/zsi/239242.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260514063737/https://www.pref.hokkaido.lg.jp/sm/zsi/239242.html",
+      "waybackTimestamp": "20260514063737",
+      "checkedAt": "2026-07-25T06:14:31.728Z"
     },
     {
       "sourceId": "hokuto-yosansho-r8",
