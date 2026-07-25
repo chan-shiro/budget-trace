@@ -108,6 +108,11 @@ const MUNI_SLUGS: Record<string, string> = {
   "120006": "ken",
   "140007": "ken",
   "270008": "ken",
+  // 2026-07-25 第2弾。⚠ 北海道 010006 ≠ 札幌市 011002 / 広島県 340006 ≠ 広島市 341002 /
+  //    福岡県 400009 ≠ 福岡市 401307 ≠ 北九州市 401005
+  "010006": "ken",
+  "340006": "ken",
+  "400009": "ken",
 };
 
 interface KnownMuni { code: string; name: string; pref: string; slug: string; }
