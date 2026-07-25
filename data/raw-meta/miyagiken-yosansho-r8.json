@@ -1,0 +1,12 @@
+{
+  "sourceId": "miyagiken-yosansho-r8",
+  "files": [
+    {
+      "filename": "aohon_ippannkaikei.pdf",
+      "sha256": "1e1e9acff013e95e0570aba80f0df9d968bacd55bd9044371c43669000832b0e",
+      "bytes": 10556999,
+      "fetchedAt": "2026-07-25T08:04:19.538Z",
+      "fetchedFrom": "https://www.pref.miyagi.jp/documents/63498/aohon_ippannkaikei.pdf"
+    }
+  ]
+}

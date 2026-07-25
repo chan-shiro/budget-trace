@@ -44,6 +44,21 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.pref.hiroshima.lg.jp/site/zaiseiyosann/r08tosyo-giansyo.html",
     "license": "広島県ホームページに掲載されている個々の情報（文章、写真、イラストなど）は、著作権の対象になっています。また、広島県ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法によって保護されています。広島県ホームページの情報を許可なく複製・無断使用・転載・販売・改変・印刷・配布する行為等は、私的利用の範囲や引用など、著作権法上認められる場合を除き、禁止します。"
   },
+  "/sources/miyagiken-yosansho-r8/aohon_ippannkaikei.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.miyagi.jp/soshiki/zaisei/zei-r08-yosan.html",
+    "license": "「宮城県ホームページ」に掲載されている個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、「宮城県ホームページ」全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+  },
+  "/sources/niigataken-yosan-keisu-r8/486523.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.niigata.lg.jp/sec/zaisei/r8tousho.html",
+    "license": "新潟県ホームページ(https://www.pref.niigata.lg.jp/，又は新潟県の各組織が左記以外のドメインで運営するサイト)(以下「当県サイト」という。）に掲載されている文字、写真、イラストなどの個々の情報に関する著作権は、原則として新潟県に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。また、総体としての当県サイトについては、新潟県に編集著作権があります。当県サイトの内容の全部又は一部は、「私的使用」または「引用」など著作権法上認められた行為として適切な方法で利用する場合を除き、新潟県に無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。ただし、当県サイトの各ページに特段の定めがある場合には、その取り扱いが優先されます。"
+  },
+  "/sources/kumamoto-ken-setsumeisho-r8/302703.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.kumamoto.jp/uploaded/attachment/302703.pdf",
+    "license": "当サイトに掲載されている情報（写真・イラスト・音声・動画及び記事など）は、熊本県または第三者が有する著作権により保護されています。「私的使用のための複製」や「引用」など著作権法上認められている適切な方法で利用する場合を除き、無断で複製・変更・使用等をすることはできません。"
+  },
   "/sources/sapporo-yosansetsumeisho-r7/02_r7_yosansetsumeisho_ippan.pdf": {
     "mode": "origin",
     "href": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r7/documents/02_r7_yosansetsumeisho_ippan.pdf",

@@ -113,6 +113,11 @@ const MUNI_SLUGS: Record<string, string> = {
   "010006": "ken",
   "340006": "ken",
   "400009": "ken",
+  // 2026-07-25 第3弾。⚠ 宮城県 040002 ≠ 仙台市 041009 / 新潟県 150002 ≠ 新潟市 151009 /
+  //    熊本県 430005 ≠ 熊本市 431001
+  "040002": "ken",
+  "150002": "ken",
+  "430005": "ken",
 };
 
 interface KnownMuni { code: string; name: string; pref: string; slug: string; }
