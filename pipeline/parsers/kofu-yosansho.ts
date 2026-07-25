@@ -594,7 +594,17 @@ function parseKanPage(
       const printedPrev = ints.length >= 3 ? toAmount(ints[1]!) : 0;
       prevAmount = zeroPrev ? printedPrev : toAmount(ints[prevIdx]!);
     }
-    const line: BudgetLineFact = { side, kanNo, kanName: name, amount, prevAmount, locator };
+    // 款名の**前後に付いた空セルのダッシュ**を落とす（2026-07-25・茨城 R8）。
+    // これまで剥がしていたのは廃止款（皆減・廃款・△▲○）のブランチだけで、**皆増行では素通り**
+    // していた。茨城の歳入款2「利子割清算金」は R8 新設で前年度セルと構成比セルが半角ハイフン
+    // 2つなので、款名が **`利子割清算金--`** になる。**Σ は4系統とも差0**、`validate` の
+    // `KANNAME_JUNK_RE` にも部首チェックにも当たらないので**目視でしか気づけない**。
+    // 皆増・皆減で対称に起きる以上、剥がすのも対称にする。
+    // ⚠ **前後だけ**にして内部は触らない。款名に単独ダッシュは出ないが、`防災・危機管理費`（茨城）の
+    //   ような中黒（U+30FB）は文字クラス外なので無関係。ダッシュ類は `dashAsZero` と同じクラス。
+    const DASHES = "-‐‑‒–—―−－";
+    const trimmed = name.replace(new RegExp(`^[${DASHES}]+|[${DASHES}]+$`, "g"), "");
+    const line: BudgetLineFact = { side, kanNo, kanName: trimmed, amount, prevAmount, locator };
     lines.push(line);
     reset();
     openLine = awaitTail ? line : null;
