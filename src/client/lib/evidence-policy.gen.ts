@@ -3822,32 +3822,32 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
   "/sources/taito-kanbetsu-r2/2gaisansho_sainyuu.pdf": {
     "mode": "origin",
     "href": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/2yosanannopointo.files/2gaisansho_sainyuu.pdf",
-    "license": "台東区公式ホームページ内の文章・写真・イラストなどの著作権は、区または正当な権利を有している第三者にあります。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+    "license": "台東区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
   },
   "/sources/taito-kanbetsu-r2/2gaisansho_saishutu.pdf": {
     "mode": "origin",
     "href": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/2yosanannopointo.files/2gaisansho_saishutu.pdf",
-    "license": "台東区公式ホームページ内の文章・写真・イラストなどの著作権は、区または正当な権利を有している第三者にあります。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+    "license": "台東区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
   },
   "/sources/taito-kanbetsu-h31/31gaisannshosainyuu.pdf": {
     "mode": "origin",
     "href": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/31yosanannopointo.files/31gaisannshosainyuu.pdf",
-    "license": "台東区公式ホームページ内の文章・写真・イラストなどの著作権は、区または正当な権利を有している第三者にあります。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+    "license": "台東区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
   },
   "/sources/taito-kanbetsu-h31/31gaisannshosaishutu.pdf": {
     "mode": "origin",
     "href": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/31yosanannopointo.files/31gaisannshosaishutu.pdf",
-    "license": "台東区公式ホームページ内の文章・写真・イラストなどの著作権は、区または正当な権利を有している第三者にあります。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+    "license": "台東区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
   },
   "/sources/taito-kanbetsu-h27/sainyuu.pdf": {
     "mode": "origin",
     "href": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/27yosananpoint.files/sainyuu.pdf",
-    "license": "台東区公式ホームページ内の文章・写真・イラストなどの著作権は、区または正当な権利を有している第三者にあります。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+    "license": "台東区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
   },
   "/sources/taito-kanbetsu-h27/saishutu.pdf": {
     "mode": "origin",
     "href": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/27yosananpoint.files/saishutu.pdf",
-    "license": "台東区公式ホームページ内の文章・写真・イラストなどの著作権は、区または正当な権利を有している第三者にあります。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+    "license": "台東区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
   },
   "/sources/ota-yosansho-h27/yosanhenseinogaiyou.pdf": {
     "mode": "origin",
@@ -3962,47 +3962,47 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
   "/sources/taito-kanbetsu-r8/R8yosan3.pdf": {
     "mode": "origin",
     "href": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R8yosanannopoint.files/R8yosan3.pdf",
-    "license": "台東区公式ホームページ内の文章・写真・イラストなどの著作権は、区または正当な権利を有している第三者にあります。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+    "license": "台東区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
   },
   "/sources/taito-kanbetsu-r7/R7yosan3.pdf": {
     "mode": "origin",
     "href": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R7yosanannopoint.files/R7yosan3.pdf",
-    "license": "台東区公式ホームページ内の文章・写真・イラストなどの著作権は、区または正当な権利を有している第三者にあります。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+    "license": "台東区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
   },
   "/sources/taito-kanbetsu-r6/R6yosan3.pdf": {
     "mode": "origin",
     "href": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R6yosanannopoint.files/R6yosan3.pdf",
-    "license": "台東区公式ホームページ内の文章・写真・イラストなどの著作権は、区または正当な権利を有している第三者にあります。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+    "license": "台東区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
   },
   "/sources/taito-kanbetsu-r5/5gaisansho.pdf": {
     "mode": "origin",
     "href": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R5yosanannopoint.files/5gaisansho.pdf",
-    "license": "台東区公式ホームページ内の文章・写真・イラストなどの著作権は、区または正当な権利を有している第三者にあります。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+    "license": "台東区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
   },
   "/sources/taito-kanbetsu-r4/s3-kanbetuyosangaku.pdf": {
     "mode": "origin",
     "href": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/R4yosanannopoint.files/s3-kanbetuyosangaku.pdf",
-    "license": "台東区公式ホームページ内の文章・写真・イラストなどの著作権は、区または正当な権利を有している第三者にあります。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+    "license": "台東区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
   },
   "/sources/taito-kanbetsu-r3/3gaisannsho.pdf": {
     "mode": "origin",
     "href": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/3point.files/3gaisannsho.pdf",
-    "license": "台東区公式ホームページ内の文章・写真・イラストなどの著作権は、区または正当な権利を有している第三者にあります。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+    "license": "台東区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
   },
   "/sources/taito-kanbetsu-h30/sainyuusaishutu.pdf": {
     "mode": "origin",
     "href": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/30yosanpoint.files/sainyuusaishutu.pdf",
-    "license": "台東区公式ホームページ内の文章・写真・イラストなどの著作権は、区または正当な権利を有している第三者にあります。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+    "license": "台東区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
   },
   "/sources/taito-kanbetsu-h29/29-4.pdf": {
     "mode": "origin",
     "href": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/29point.files/29-4.pdf",
-    "license": "台東区公式ホームページ内の文章・写真・イラストなどの著作権は、区または正当な権利を有している第三者にあります。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+    "license": "台東区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
   },
   "/sources/taito-kanbetsu-h28/30gaisansyo.pdf": {
     "mode": "origin",
     "href": "https://www.city.taito.lg.jp/kusei/zaisei/yosan/tousyo/point/28point.files/30gaisansyo.pdf",
-    "license": "台東区公式ホームページ内の文章・写真・イラストなどの著作権は、区または正当な権利を有している第三者にあります。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+    "license": "台東区ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。"
   },
   "/sources/shinjuku-yosan-gaiyou-r8/000451451.pdf": {
     "mode": "origin",
@@ -5117,11 +5117,6 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
   "/sources/yokohama-yosansho-r4/r4ippan.pdf": {
     "mode": "origin",
     "href": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r4/r4.files/r4ippan.pdf",
-    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。"
-  },
-  "/sources/yokohama-yosansho-r3/r3ippan.pdf": {
-    "mode": "origin",
-    "href": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r3/r3.files/r3ippan.pdf",
     "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。"
   },
   "/sources/fukuoka-yosansho-r7/04_R7_keisuusiryou.pdf": {

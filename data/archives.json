@@ -8467,11 +8467,21 @@
     },
     {
       "sourceId": "yokohama-yosansho-r3",
+      "url": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r3/r3.files/r3ippan.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20251126044940/https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r3/r3.files/r3ippan.pdf",
+      "waybackTimestamp": "20251126044940",
+      "checkedAt": "2026-07-25T02:05:29.094Z",
+      "sha256Match": true,
+      "waybackBytes": 3965018
+    },
+    {
+      "sourceId": "yokohama-yosansho-r3",
       "url": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r3/r3.html",
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260215182128/https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r3/r3.html",
       "waybackTimestamp": "20260215182128",
-      "checkedAt": "2026-07-15T10:15:21.631Z"
+      "checkedAt": "2026-07-25T02:05:38.254Z"
     },
     {
       "sourceId": "yokohama-yosansho-r4",
