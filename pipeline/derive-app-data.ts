@@ -2075,6 +2075,11 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     { srcId: "hokkaido-yosan-gaiyou-r8", muniCode: "010006", muniName: "北海道", prefName: "北海道", isPref: true },
     { srcId: "hiroshimaken-yosansho-r8", muniCode: "340006", muniName: "広島県", prefName: "広島県", isPref: true },
     { srcId: "fukuoka-ken-yosangaiyou-r8", muniCode: "400009", muniName: "福岡県", prefName: "福岡県", isPref: true },
+    // 2026-07-25 の第3弾。⚠ 県と県庁所在市を取り違えない
+    //（宮城県 040002 ≠ 仙台市 041009 / 新潟県 150002 ≠ 新潟市 151009 / 熊本県 430005 ≠ 熊本市 431001）。
+    { srcId: "miyagiken-yosansho-r8", muniCode: "040002", muniName: "宮城県", prefName: "宮城県", isPref: true },
+    { srcId: "niigataken-yosan-keisu-r8", muniCode: "150002", muniName: "新潟県", prefName: "新潟県", isPref: true },
+    { srcId: "kumamoto-ken-setsumeisho-r8", muniCode: "430005", muniName: "熊本県", prefName: "熊本県", isPref: true },
     // 東京都（2026-07-22 追加・#124）。予算概要CSV（H29〜R8 の10年）。PDF は全経路パース不可のため
     // CSV が唯一の経路（registry のコメント参照）。歳出は款再編が2回（R5・R6）あり款名結合が切れる。
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29"] as const).map((fy) => ({
