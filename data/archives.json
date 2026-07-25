@@ -3339,6 +3339,34 @@
       "checkedAt": "2026-07-15T16:11:01.683Z"
     },
     {
+      "sourceId": "kyotofu-tosho-gaiyou-r8",
+      "url": "https://www.pref.kyoto.jp/yosan/08tousho.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260412093649/https://www.pref.kyoto.jp/yosan/08tousho.html",
+      "waybackTimestamp": "20260412093649",
+      "checkedAt": "2026-07-25T08:56:08.602Z"
+    },
+    {
+      "sourceId": "kyotofu-tosho-gaiyou-r8",
+      "url": "https://www.pref.kyoto.jp/yosan/documents/r8_p1_sainyu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260411084014/https://www.pref.kyoto.jp/yosan/documents/r8_p1_sainyu.pdf",
+      "waybackTimestamp": "20260411084014",
+      "checkedAt": "2026-07-25T08:55:41.979Z",
+      "sha256Match": true,
+      "waybackBytes": 119755
+    },
+    {
+      "sourceId": "kyotofu-tosho-gaiyou-r8",
+      "url": "https://www.pref.kyoto.jp/yosan/documents/r8_p5_mokuteki.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260411074459/https://www.pref.kyoto.jp/yosan/documents/r8_p5_mokuteki.pdf",
+      "waybackTimestamp": "20260411074459",
+      "checkedAt": "2026-07-25T08:56:01.132Z",
+      "sha256Match": true,
+      "waybackBytes": 103602
+    },
+    {
       "sourceId": "meguro-yosanan-r2",
       "url": "https://www.city.meguro.tokyo.jp/documents/2257/r02yosan_s01.pdf",
       "kind": "file",
@@ -4663,6 +4691,24 @@
       "waybackTimestamp": "20260715193051",
       "checkedAt": "2026-07-16T14:58:32.736Z",
       "sha256Match": true
+    },
+    {
+      "sourceId": "okayamaken-yosan-setsumei-r8",
+      "url": "https://www.pref.okayama.jp/page/1007377.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260725085658/https://www.pref.okayama.jp/page/1007377.html",
+      "waybackTimestamp": "20260725085658",
+      "checkedAt": "2026-07-25T08:57:33.607Z"
+    },
+    {
+      "sourceId": "okayamaken-yosan-setsumei-r8",
+      "url": "https://www.pref.okayama.jp/uploaded/life/1041340_10076962_misc.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260725085622/https://www.pref.okayama.jp/uploaded/life/1041340_10076962_misc.pdf",
+      "waybackTimestamp": "20260725085622",
+      "checkedAt": "2026-07-25T08:56:44.130Z",
+      "sha256Match": true,
+      "waybackBytes": 1978417
     },
     {
       "sourceId": "osaka-yosansho-r8",

@@ -59,6 +59,16 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.pref.kumamoto.jp/uploaded/attachment/302703.pdf",
     "license": "当サイトに掲載されている情報（写真・イラスト・音声・動画及び記事など）は、熊本県または第三者が有する著作権により保護されています。「私的使用のための複製」や「引用」など著作権法上認められている適切な方法で利用する場合を除き、無断で複製・変更・使用等をすることはできません。"
   },
+  "/sources/kyotofu-tosho-gaiyou-r8/r8_p1_sainyu.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.kyoto.jp/yosan/documents/r8_p1_sainyu.pdf",
+    "license": "京都府ホームページに掲載されている個々の情報(文章、写真、イラストなど)について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+  },
+  "/sources/kyotofu-tosho-gaiyou-r8/r8_p5_mokuteki.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.kyoto.jp/yosan/documents/r8_p5_mokuteki.pdf",
+    "license": "京都府ホームページに掲載されている個々の情報(文章、写真、イラストなど)について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+  },
   "/sources/sapporo-yosansetsumeisho-r7/02_r7_yosansetsumeisho_ippan.pdf": {
     "mode": "origin",
     "href": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r7/documents/02_r7_yosansetsumeisho_ippan.pdf",
