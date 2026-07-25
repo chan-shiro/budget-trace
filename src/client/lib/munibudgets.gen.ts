@@ -104,6 +104,232 @@ export interface MuniBudget {
  * 1年度しか収録していない自治体は要素1つの配列になる。
  */
 export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
+  "110001": [
+    {
+      "muniCode": "110001",
+      "muniName": "埼玉県",
+      "prefName": "埼玉県",
+      "isPref": true,
+      "projects": [],
+      "execution": [],
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "population": 7374294,
+      "populationLabel": "県内市区町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
+      "totalOku": 24348.65,
+      "prevTotalOku": 22308.9,
+      "yoyLabel": "+9.1%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "県税",
+          "v": 9052,
+          "prevV": 8794,
+          "yoy": 2.9
+        },
+        {
+          "name": "地方消費税清算金",
+          "v": 3745.78,
+          "prevV": 3466.72,
+          "yoy": 8
+        },
+        {
+          "name": "地方交付税",
+          "v": 3114.04,
+          "prevV": 2819.96,
+          "yoy": 10.4
+        },
+        {
+          "name": "国庫支出金",
+          "v": 1949.96056,
+          "prevV": 1773.29082,
+          "yoy": 10
+        },
+        {
+          "name": "県債",
+          "v": 1867.75,
+          "prevV": 1687.32,
+          "yoy": 10.7
+        },
+        {
+          "name": "繰入金",
+          "v": 1740.13411,
+          "prevV": 1408.69086,
+          "yoy": 23.5
+        },
+        {
+          "name": "地方譲与税",
+          "v": 1694.79,
+          "prevV": 1594.15,
+          "yoy": 6.3
+        },
+        {
+          "name": "地方特例交付金",
+          "v": 332.12,
+          "prevV": 46.72,
+          "yoy": 610.9
+        },
+        {
+          "name": "その他",
+          "v": 852.0753300000001,
+          "prevV": 718.04832,
+          "yoy": null,
+          "children": [
+            {
+              "name": "諸収入",
+              "v": 305.54471,
+              "prevV": 289.91267,
+              "yoy": 5.4
+            },
+            {
+              "name": "使用料及び手数料",
+              "v": 262.47741,
+              "prevV": 266.82714,
+              "yoy": -1.6
+            },
+            {
+              "name": "財産収入",
+              "v": 179.08041,
+              "prevV": 110.6944,
+              "yoy": 61.8
+            },
+            {
+              "name": "利子割清算金",
+              "v": 57.26,
+              "prevV": 0,
+              "yoy": null
+            },
+            {
+              "name": "分担金及び負担金",
+              "v": 29.79318,
+              "prevV": 31.99788,
+              "yoy": -6.9
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 11.08,
+              "prevV": 12.05,
+              "yoy": -8
+            },
+            {
+              "name": "繰越金",
+              "v": 5,
+              "prevV": 5,
+              "yoy": 0
+            },
+            {
+              "name": "寄附金",
+              "v": 1.83962,
+              "prevV": 1.56623,
+              "yoy": 17.5
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "教育費",
+          "v": 5989.36606,
+          "prevV": 5345.34932,
+          "yoy": 12
+        },
+        {
+          "name": "民生費",
+          "v": 5009.23965,
+          "prevV": 4620.7556,
+          "yoy": 8.4
+        },
+        {
+          "name": "諸支出金",
+          "v": 4319.42987,
+          "prevV": 3954.47843,
+          "yoy": 9.2
+        },
+        {
+          "name": "公債費",
+          "v": 2776.7325,
+          "prevV": 2795.40932,
+          "yoy": -0.7
+        },
+        {
+          "name": "警察費",
+          "v": 1792.24414,
+          "prevV": 1673.33242,
+          "yoy": 7.1
+        },
+        {
+          "name": "土木費",
+          "v": 1602.87008,
+          "prevV": 1423.79193,
+          "yoy": 12.6
+        },
+        {
+          "name": "総務費",
+          "v": 1317.91727,
+          "prevV": 1136.95243,
+          "yoy": 15.9
+        },
+        {
+          "name": "衛生費",
+          "v": 787.88512,
+          "prevV": 776.97953,
+          "yoy": 1.4
+        },
+        {
+          "name": "商工費",
+          "v": 357.05588,
+          "prevV": 190.003,
+          "yoy": 87.9
+        },
+        {
+          "name": "農林水産業費",
+          "v": 265.80551,
+          "prevV": 259.79202,
+          "yoy": 2.3
+        },
+        {
+          "name": "労働費",
+          "v": 55.6972,
+          "prevV": 56.23203,
+          "yoy": -1
+        },
+        {
+          "name": "議会費",
+          "v": 32.10622,
+          "prevV": 32.02347,
+          "yoy": 0.3
+        },
+        {
+          "name": "災害復旧費",
+          "v": 22.3005,
+          "prevV": 23.8005,
+          "yoy": -6.3
+        },
+        {
+          "name": "予備費",
+          "v": 20,
+          "prevV": 20,
+          "yoy": 0
+        }
+      ],
+      "sourceTitle": "令和8年度 埼玉県当初予算案の概要（計数表・款別歳入歳出）",
+      "sourceUrl": "https://web.archive.org/web/20260725032924/https://www.pref.saitama.lg.jp/documents/274057/03-r8-02-siryou2.pdf",
+      "originUrl": "https://www.pref.saitama.lg.jp/documents/274057/03-r8-02-siryou2.pdf",
+      "sourceLocalUrl": "/sources/saitama-ken-yosangaiyou-r8/03-r8-02-siryou2.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "令和8年度 埼玉県当初予算案の概要（計数表・款別歳入歳出）",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20260725032924/https://www.pref.saitama.lg.jp/documents/274057/03-r8-02-siryou2.pdf",
+          "localUrl": "/sources/saitama-ken-yosangaiyou-r8/03-r8-02-siryou2.pdf",
+          "source": "www.pref.saitama.lg.jp",
+          "thumb": "03-r8-02-siryou2.pdf ・ sha256 b286f59541c77d09… ・ 2026-07-25 取得"
+        }
+      ]
+    }
+  ],
   "111007": [
     {
       "muniCode": "111007",
@@ -646,6 +872,220 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "localUrl": "/sources/saitama-yosansho-r7/reiwa7nendotousyoyosan.pdf",
           "source": "www.city.saitama.lg.jp",
           "thumb": "reiwa7nendotousyoyosan.pdf ・ sha256 d375aaf74b19eb5f… ・ 2026-07-15 取得"
+        }
+      ]
+    }
+  ],
+  "120006": [
+    {
+      "muniCode": "120006",
+      "muniName": "千葉県",
+      "prefName": "千葉県",
+      "isPref": true,
+      "projects": [],
+      "execution": [],
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "population": 6311579,
+      "populationLabel": "県内市区町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
+      "totalOku": 22534.87205,
+      "prevTotalOku": 21041.50471,
+      "yoyLabel": "+7.1%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "県税",
+          "v": 10283.24,
+          "prevV": 9991.27,
+          "yoy": 2.9
+        },
+        {
+          "name": "諸収入",
+          "v": 2677.9913,
+          "prevV": 3279.30221,
+          "yoy": -18.3
+        },
+        {
+          "name": "地方交付税",
+          "v": 2240,
+          "prevV": 2290,
+          "yoy": -2.2
+        },
+        {
+          "name": "国庫支出金",
+          "v": 2134.01773,
+          "prevV": 1777.80569,
+          "yoy": 20
+        },
+        {
+          "name": "繰入金",
+          "v": 1574.29387,
+          "prevV": 928.75302,
+          "yoy": 69.5
+        },
+        {
+          "name": "県債",
+          "v": 1550.63433,
+          "prevV": 980.47933,
+          "yoy": 58.2
+        },
+        {
+          "name": "地方譲与税",
+          "v": 1420.68,
+          "prevV": 1386.1,
+          "yoy": 2.5
+        },
+        {
+          "name": "使用料及び手数料",
+          "v": 269.09402,
+          "prevV": 275.34801,
+          "yoy": -2.3
+        },
+        {
+          "name": "その他",
+          "v": 384.9208,
+          "prevV": 132.44645,
+          "yoy": null,
+          "children": [
+            {
+              "name": "地方特例交付金",
+              "v": 245,
+              "prevV": 37,
+              "yoy": 562.2
+            },
+            {
+              "name": "分担金及び負担金",
+              "v": 92.29161,
+              "prevV": 58.03493,
+              "yoy": 59
+            },
+            {
+              "name": "財産収入",
+              "v": 34.37524,
+              "prevV": 24.14839,
+              "yoy": 42.4
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 13,
+              "prevV": 13,
+              "yoy": 0
+            },
+            {
+              "name": "寄附金",
+              "v": 0.25395,
+              "prevV": 0.26313,
+              "yoy": -3.5
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "教育費",
+          "v": 4385.71283,
+          "prevV": 3943.75874,
+          "yoy": 11.2
+        },
+        {
+          "name": "民生費",
+          "v": 4167.09254,
+          "prevV": 3896.29976,
+          "yoy": 6.9
+        },
+        {
+          "name": "商工費",
+          "v": 2599.0981,
+          "prevV": 3153.58536,
+          "yoy": -17.6
+        },
+        {
+          "name": "公債費",
+          "v": 2331.67669,
+          "prevV": 2341.91346,
+          "yoy": -0.4
+        },
+        {
+          "name": "諸支出金",
+          "v": 2322.43646,
+          "prevV": 2198.3039,
+          "yoy": 5.6
+        },
+        {
+          "name": "総務費",
+          "v": 1684.9885,
+          "prevV": 1162.14626,
+          "yoy": 45
+        },
+        {
+          "name": "土木費",
+          "v": 1663.13423,
+          "prevV": 1152.96273,
+          "yoy": 44.2
+        },
+        {
+          "name": "警察費",
+          "v": 1635.94516,
+          "prevV": 1531.6648,
+          "yoy": 6.8
+        },
+        {
+          "name": "衛生費",
+          "v": 899.15587,
+          "prevV": 922.75852,
+          "yoy": -2.6
+        },
+        {
+          "name": "農林水産業費",
+          "v": 642.47203,
+          "prevV": 533.28578,
+          "yoy": 20.5
+        },
+        {
+          "name": "環境費",
+          "v": 92.6541,
+          "prevV": 91.59872,
+          "yoy": 1.2
+        },
+        {
+          "name": "労働費",
+          "v": 48.07396,
+          "prevV": 50.82876,
+          "yoy": -5.4
+        },
+        {
+          "name": "議会費",
+          "v": 28.50066,
+          "prevV": 28.467,
+          "yoy": 0.1
+        },
+        {
+          "name": "災害復旧費",
+          "v": 23.93092,
+          "prevV": 23.93092,
+          "yoy": 0
+        },
+        {
+          "name": "予備費",
+          "v": 10,
+          "prevV": 10,
+          "yoy": 0
+        }
+      ],
+      "sourceTitle": "令和8年度 千葉県一般会計予算に関する説明書（歳入歳出予算事項別明細書・総括）",
+      "sourceUrl": "https://web.archive.org/web/20260725033004/https://www.pref.chiba.lg.jp/zaisei/gian/documents/202602-5-y-i-yosan.pdf",
+      "originUrl": "https://www.pref.chiba.lg.jp/zaisei/gian/documents/202602-5-y-i-yosan.pdf",
+      "sourceLocalUrl": "/sources/chiba-ken-yosansho-r8/202602-5-y-i-yosan.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "令和8年度 千葉県一般会計予算に関する説明書（歳入歳出予算事項別明細書・総括）",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20260725033004/https://www.pref.chiba.lg.jp/zaisei/gian/documents/202602-5-y-i-yosan.pdf",
+          "localUrl": "/sources/chiba-ken-yosansho-r8/202602-5-y-i-yosan.pdf",
+          "source": "www.pref.chiba.lg.jp",
+          "thumb": "202602-5-y-i-yosan.pdf ・ sha256 87175e0911ca8655… ・ 2026-07-25 取得"
         }
       ]
     }
@@ -1225,7 +1665,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
       "fy": "R8",
       "fyLabel": "令和8年度 当初予算",
       "population": 14002534,
-      "populationLabel": "県内市町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
+      "populationLabel": "都内市区町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
       "totalOku": 96530,
       "prevTotalOku": 91580,
       "yoyLabel": "+5.4%",
@@ -1461,7 +1901,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
       "fy": "R7",
       "fyLabel": "令和7年度 当初予算",
       "population": 14002534,
-      "populationLabel": "県内市町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
+      "populationLabel": "都内市区町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
       "totalOku": 91580,
       "prevTotalOku": 84530,
       "yoyLabel": "+8.3%",
@@ -1697,7 +2137,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
       "fy": "R6",
       "fyLabel": "令和6年度 当初予算",
       "population": 14002534,
-      "populationLabel": "県内市町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
+      "populationLabel": "都内市区町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
       "totalOku": 84530,
       "prevTotalOku": 80410,
       "yoyLabel": "+5.1%",
@@ -1933,7 +2373,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
       "fy": "R5",
       "fyLabel": "令和5年度 当初予算",
       "population": 14002534,
-      "populationLabel": "県内市町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
+      "populationLabel": "都内市区町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
       "totalOku": 80410,
       "prevTotalOku": 78010,
       "yoyLabel": "+3.1%",
@@ -2163,7 +2603,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
       "fy": "R4",
       "fyLabel": "令和4年度 当初予算",
       "population": 14002534,
-      "populationLabel": "県内市町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
+      "populationLabel": "都内市区町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
       "totalOku": 78010,
       "prevTotalOku": 74250,
       "yoyLabel": "+5.1%",
@@ -2393,7 +2833,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
       "fy": "R3",
       "fyLabel": "令和3年度 当初予算",
       "population": 14002534,
-      "populationLabel": "県内市町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
+      "populationLabel": "都内市区町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
       "totalOku": 74250,
       "prevTotalOku": 73540,
       "yoyLabel": "+1.0%",
@@ -2629,7 +3069,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
       "fy": "R2",
       "fyLabel": "令和2年度 当初予算",
       "population": 14002534,
-      "populationLabel": "県内市町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
+      "populationLabel": "都内市区町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
       "totalOku": 73540,
       "prevTotalOku": 74610,
       "yoyLabel": "-1.4%",
@@ -2865,7 +3305,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
       "fy": "H31",
       "fyLabel": "平成31年度 当初予算",
       "population": 14002534,
-      "populationLabel": "県内市町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
+      "populationLabel": "都内市区町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
       "totalOku": 74610,
       "prevTotalOku": 70460,
       "yoyLabel": "+5.9%",
@@ -3101,7 +3541,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
       "fy": "H30",
       "fyLabel": "平成30年度 当初予算",
       "population": 14002534,
-      "populationLabel": "県内市町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
+      "populationLabel": "都内市区町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
       "totalOku": 70460,
       "prevTotalOku": 69540,
       "yoyLabel": "+1.3%",
@@ -3337,7 +3777,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
       "fy": "H29",
       "fyLabel": "平成29年度 当初予算",
       "population": 14002534,
-      "populationLabel": "県内市町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
+      "populationLabel": "都内市区町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
       "totalOku": 69540,
       "prevTotalOku": 70110,
       "yoyLabel": "-0.8%",
@@ -76224,6 +76664,232 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
       ]
     }
   ],
+  "140007": [
+    {
+      "muniCode": "140007",
+      "muniName": "神奈川県",
+      "prefName": "神奈川県",
+      "isPref": true,
+      "projects": [],
+      "execution": [],
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "population": 9202559,
+      "populationLabel": "県内市区町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
+      "totalOku": 23759.69,
+      "prevTotalOku": 22158.24,
+      "yoyLabel": "+7.2%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "県税",
+          "v": 15254.83133,
+          "prevV": 14534.0182,
+          "yoy": 5
+        },
+        {
+          "name": "地方譲与税",
+          "v": 2153.75779,
+          "prevV": 2014.4349,
+          "yoy": 6.9
+        },
+        {
+          "name": "繰入金",
+          "v": 1828.9085,
+          "prevV": 1678.96732,
+          "yoy": 8.9
+        },
+        {
+          "name": "国庫支出金",
+          "v": 1755.28519,
+          "prevV": 1401.34453,
+          "yoy": 25.3
+        },
+        {
+          "name": "地方交付税",
+          "v": 960,
+          "prevV": 1000,
+          "yoy": -4
+        },
+        {
+          "name": "県債",
+          "v": 924.28,
+          "prevV": 907.24,
+          "yoy": 1.9
+        },
+        {
+          "name": "使用料及び手数料",
+          "v": 285.38227,
+          "prevV": 289.18414,
+          "yoy": -1.3
+        },
+        {
+          "name": "諸収入",
+          "v": 248.988,
+          "prevV": 240.45981,
+          "yoy": 3.5
+        },
+        {
+          "name": "その他",
+          "v": 348.25692,
+          "prevV": 92.59109999999998,
+          "yoy": null,
+          "children": [
+            {
+              "name": "地方特例交付金",
+              "v": 202,
+              "prevV": 37,
+              "yoy": 445.9
+            },
+            {
+              "name": "利子割清算金",
+              "v": 66.35922,
+              "prevV": 0,
+              "yoy": null
+            },
+            {
+              "name": "財産収入",
+              "v": 59.75548,
+              "prevV": 38.30326,
+              "yoy": 56
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 10,
+              "prevV": 11,
+              "yoy": -9.1
+            },
+            {
+              "name": "寄附金",
+              "v": 5.80464,
+              "prevV": 2.60954,
+              "yoy": 122.4
+            },
+            {
+              "name": "分担金及び負担金",
+              "v": 4.2364,
+              "prevV": 3.57691,
+              "yoy": 18.4
+            },
+            {
+              "name": "繰越金",
+              "v": 0.10118,
+              "prevV": 0.10139,
+              "yoy": -0.2
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "総務費",
+          "v": 5107.00212,
+          "prevV": 4796.16019,
+          "yoy": 6.5
+        },
+        {
+          "name": "教育費",
+          "v": 4924.21718,
+          "prevV": 4163.53097,
+          "yoy": 18.3
+        },
+        {
+          "name": "民生費",
+          "v": 4056.72282,
+          "prevV": 3732.95956,
+          "yoy": 8.7
+        },
+        {
+          "name": "公債費",
+          "v": 2664.96716,
+          "prevV": 2893.45271,
+          "yoy": -7.9
+        },
+        {
+          "name": "衛生費",
+          "v": 2633.89012,
+          "prevV": 2373.03124,
+          "yoy": 11
+        },
+        {
+          "name": "警察費",
+          "v": 2300.60568,
+          "prevV": 2155.70716,
+          "yoy": 6.7
+        },
+        {
+          "name": "土木費",
+          "v": 1285.28819,
+          "prevV": 1308.52912,
+          "yoy": -1.8
+        },
+        {
+          "name": "商工費",
+          "v": 221.61507,
+          "prevV": 197.98311,
+          "yoy": 11.9
+        },
+        {
+          "name": "農林水産業費",
+          "v": 217.67911,
+          "prevV": 202.58868,
+          "yoy": 7.4
+        },
+        {
+          "name": "環境費",
+          "v": 191.04135,
+          "prevV": 181.34961,
+          "yoy": 5.3
+        },
+        {
+          "name": "労働費",
+          "v": 82.51752,
+          "prevV": 78.85889,
+          "yoy": 4.6
+        },
+        {
+          "name": "議会費",
+          "v": 38.01844,
+          "prevV": 38.34601,
+          "yoy": -0.9
+        },
+        {
+          "name": "予備費",
+          "v": 20,
+          "prevV": 20,
+          "yoy": 0
+        },
+        {
+          "name": "災害復旧費",
+          "v": 15.4,
+          "prevV": 15.67447,
+          "yoy": -1.8
+        },
+        {
+          "name": "諸支出金",
+          "v": 0.72524,
+          "prevV": 0.06828,
+          "yoy": 962.2
+        }
+      ],
+      "sourceTitle": "令和8年度 神奈川県一般会計当初予算（歳入歳出予算事項別明細書 総括）",
+      "sourceUrl": "https://web.archive.org/web/20260725032838/https://www.pref.kanagawa.jp/documents/132115/2026_001_aobon.pdf",
+      "originUrl": "https://www.pref.kanagawa.jp/documents/132115/2026_001_aobon.pdf",
+      "sourceLocalUrl": "/sources/kanagawa-yosansho-r8/2026_001_aobon.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "令和8年度 神奈川県一般会計当初予算（歳入歳出予算事項別明細書 総括）",
+          "type": "PDF",
+          "url": "https://web.archive.org/web/20260725032838/https://www.pref.kanagawa.jp/documents/132115/2026_001_aobon.pdf",
+          "localUrl": "/sources/kanagawa-yosansho-r8/2026_001_aobon.pdf",
+          "source": "www.pref.kanagawa.jp",
+          "thumb": "2026_001_aobon.pdf ・ sha256 d3013f0efc308a16… ・ 2026-07-25 取得"
+        }
+      ]
+    }
+  ],
   "141003": [
     {
       "muniCode": "141003",
@@ -85860,7 +86526,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
       "fy": "R8",
       "fyLabel": "令和8年度 当初予算",
       "population": 801056,
-      "populationLabel": "県内市町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
+      "populationLabel": "県内市区町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
       "totalOku": 5321.1735,
       "prevTotalOku": 5115.43169,
       "yoyLabel": "+4.0%",
@@ -106045,6 +106711,214 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "localUrl": "/sources/kyoto-yosansho-r2/01ippan.pdf",
           "source": "www.city.kyoto.lg.jp",
           "thumb": "01ippan.pdf ・ sha256 45047ee88e75bd9f… ・ 2026-07-15 取得"
+        }
+      ]
+    }
+  ],
+  "270008": [
+    {
+      "muniCode": "270008",
+      "muniName": "大阪府",
+      "prefName": "大阪府",
+      "isPref": true,
+      "projects": [],
+      "execution": [],
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "population": 8771961,
+      "populationLabel": "府内市区町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
+      "totalOku": 39216.06338,
+      "prevTotalOku": 32713.62614,
+      "yoyLabel": "+19.9%",
+      "prevBasis": "当初",
+      "prevNote": "",
+      "revenue": [
+        {
+          "name": "府税",
+          "v": 17000.82,
+          "prevV": 16282.62,
+          "yoy": 4.4
+        },
+        {
+          "name": "諸収入",
+          "v": 10249.14311,
+          "prevV": 5641.34566,
+          "yoy": 81.7
+        },
+        {
+          "name": "地方交付税",
+          "v": 3677,
+          "prevV": 3367,
+          "yoy": 9.2
+        },
+        {
+          "name": "国庫支出金",
+          "v": 2830.06548,
+          "prevV": 2569.49117,
+          "yoy": 10.1
+        },
+        {
+          "name": "地方譲与税",
+          "v": 2074.3,
+          "prevV": 1826.9,
+          "yoy": 13.5
+        },
+        {
+          "name": "繰入金",
+          "v": 1340.1712,
+          "prevV": 1471.89918,
+          "yoy": -8.9
+        },
+        {
+          "name": "府債",
+          "v": 1332.97,
+          "prevV": 1100.9,
+          "yoy": 21.1
+        },
+        {
+          "name": "使用料及び手数料",
+          "v": 292.64334,
+          "prevV": 299.68352,
+          "yoy": -2.3
+        },
+        {
+          "name": "その他",
+          "v": 418.95025,
+          "prevV": 153.78661,
+          "yoy": null,
+          "children": [
+            {
+              "name": "地方特例交付金",
+              "v": 238,
+              "prevV": 40,
+              "yoy": 495
+            },
+            {
+              "name": "分担金及び負担金",
+              "v": 57.78684,
+              "prevV": 52.20104,
+              "yoy": 10.7
+            },
+            {
+              "name": "利子割清算金",
+              "v": 49.5,
+              "prevV": 0,
+              "yoy": null
+            },
+            {
+              "name": "財産収入",
+              "v": 45.40955,
+              "prevV": 37.61951,
+              "yoy": 20.7
+            },
+            {
+              "name": "寄附金",
+              "v": 15.55386,
+              "prevV": 9.46606,
+              "yoy": 64.3
+            },
+            {
+              "name": "交通安全対策特別交付金",
+              "v": 12.7,
+              "prevV": 14.5,
+              "yoy": -12.4
+            }
+          ]
+        }
+      ],
+      "expenditure": [
+        {
+          "name": "商工労働費",
+          "v": 10237.54266,
+          "prevV": 5583.69928,
+          "yoy": 83.3
+        },
+        {
+          "name": "諸支出金",
+          "v": 7139.40245,
+          "prevV": 6835.82696,
+          "yoy": 4.4
+        },
+        {
+          "name": "教育費",
+          "v": 7114.87207,
+          "prevV": 6330.78123,
+          "yoy": 12.4
+        },
+        {
+          "name": "福祉費",
+          "v": 4651.3418,
+          "prevV": 4388.75313,
+          "yoy": 6
+        },
+        {
+          "name": "健康医療費",
+          "v": 3559.02614,
+          "prevV": 3474.89022,
+          "yoy": 2.4
+        },
+        {
+          "name": "警察費",
+          "v": 3162.72655,
+          "prevV": 3034.88132,
+          "yoy": 4.2
+        },
+        {
+          "name": "都市整備費",
+          "v": 1704.7556,
+          "prevV": 1563.70915,
+          "yoy": 9
+        },
+        {
+          "name": "総務費",
+          "v": 1160.94652,
+          "prevV": 1209.40517,
+          "yoy": -4
+        },
+        {
+          "name": "環境農林水産費",
+          "v": 241.87431,
+          "prevV": 210.0094,
+          "yoy": 15.2
+        },
+        {
+          "name": "都市計画費",
+          "v": 193.85533,
+          "prevV": 31.98209,
+          "yoy": 506.1
+        },
+        {
+          "name": "議会費",
+          "v": 24.3722,
+          "prevV": 24.13154,
+          "yoy": 1
+        },
+        {
+          "name": "予備費",
+          "v": 20,
+          "prevV": 20,
+          "yoy": 0
+        },
+        {
+          "name": "災害復旧費",
+          "v": 5.34775,
+          "prevV": 5.55665,
+          "yoy": -3.8
+        }
+      ],
+      "sourceTitle": "令和8年度 大阪府当初予算の概要（財政のあらまし 令和8年6月号・一般会計歳入歳出款別）",
+      "sourceUrl": "https://www.pref.osaka.lg.jp/documents/133484/08-06_03_yosan.pdf",
+      "originUrl": "https://www.pref.osaka.lg.jp/documents/133484/08-06_03_yosan.pdf",
+      "sourceLocalUrl": "/sources/osakafu-aramashi-yosan-r8/08-06_03_yosan.pdf",
+      "pagesLabel": "款別歳入歳出",
+      "evidence": [
+        {
+          "title": "令和8年度 大阪府当初予算の概要（財政のあらまし 令和8年6月号・一般会計歳入歳出款別）",
+          "type": "PDF",
+          "url": "https://www.pref.osaka.lg.jp/documents/133484/08-06_03_yosan.pdf",
+          "localUrl": "/sources/osakafu-aramashi-yosan-r8/08-06_03_yosan.pdf",
+          "source": "www.pref.osaka.lg.jp",
+          "thumb": "08-06_03_yosan.pdf ・ sha256 74fa531e26a65562… ・ 2026-07-25 取得"
         }
       ]
     }
@@ -177227,6 +178101,230 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
  * 「その自治体の代表値」だけが要る場面で使う。年度を切り替える画面は MUNI_BUDGET_YEARS を見ること。
  */
 export const MUNI_BUDGETS: Record<string, MuniBudget> = {
+  "110001": {
+    "muniCode": "110001",
+    "muniName": "埼玉県",
+    "prefName": "埼玉県",
+    "isPref": true,
+    "projects": [],
+    "execution": [],
+    "fy": "R8",
+    "fyLabel": "令和8年度 当初予算",
+    "population": 7374294,
+    "populationLabel": "県内市区町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
+    "totalOku": 24348.65,
+    "prevTotalOku": 22308.9,
+    "yoyLabel": "+9.1%",
+    "prevBasis": "当初",
+    "prevNote": "",
+    "revenue": [
+      {
+        "name": "県税",
+        "v": 9052,
+        "prevV": 8794,
+        "yoy": 2.9
+      },
+      {
+        "name": "地方消費税清算金",
+        "v": 3745.78,
+        "prevV": 3466.72,
+        "yoy": 8
+      },
+      {
+        "name": "地方交付税",
+        "v": 3114.04,
+        "prevV": 2819.96,
+        "yoy": 10.4
+      },
+      {
+        "name": "国庫支出金",
+        "v": 1949.96056,
+        "prevV": 1773.29082,
+        "yoy": 10
+      },
+      {
+        "name": "県債",
+        "v": 1867.75,
+        "prevV": 1687.32,
+        "yoy": 10.7
+      },
+      {
+        "name": "繰入金",
+        "v": 1740.13411,
+        "prevV": 1408.69086,
+        "yoy": 23.5
+      },
+      {
+        "name": "地方譲与税",
+        "v": 1694.79,
+        "prevV": 1594.15,
+        "yoy": 6.3
+      },
+      {
+        "name": "地方特例交付金",
+        "v": 332.12,
+        "prevV": 46.72,
+        "yoy": 610.9
+      },
+      {
+        "name": "その他",
+        "v": 852.0753300000001,
+        "prevV": 718.04832,
+        "yoy": null,
+        "children": [
+          {
+            "name": "諸収入",
+            "v": 305.54471,
+            "prevV": 289.91267,
+            "yoy": 5.4
+          },
+          {
+            "name": "使用料及び手数料",
+            "v": 262.47741,
+            "prevV": 266.82714,
+            "yoy": -1.6
+          },
+          {
+            "name": "財産収入",
+            "v": 179.08041,
+            "prevV": 110.6944,
+            "yoy": 61.8
+          },
+          {
+            "name": "利子割清算金",
+            "v": 57.26,
+            "prevV": 0,
+            "yoy": null
+          },
+          {
+            "name": "分担金及び負担金",
+            "v": 29.79318,
+            "prevV": 31.99788,
+            "yoy": -6.9
+          },
+          {
+            "name": "交通安全対策特別交付金",
+            "v": 11.08,
+            "prevV": 12.05,
+            "yoy": -8
+          },
+          {
+            "name": "繰越金",
+            "v": 5,
+            "prevV": 5,
+            "yoy": 0
+          },
+          {
+            "name": "寄附金",
+            "v": 1.83962,
+            "prevV": 1.56623,
+            "yoy": 17.5
+          }
+        ]
+      }
+    ],
+    "expenditure": [
+      {
+        "name": "教育費",
+        "v": 5989.36606,
+        "prevV": 5345.34932,
+        "yoy": 12
+      },
+      {
+        "name": "民生費",
+        "v": 5009.23965,
+        "prevV": 4620.7556,
+        "yoy": 8.4
+      },
+      {
+        "name": "諸支出金",
+        "v": 4319.42987,
+        "prevV": 3954.47843,
+        "yoy": 9.2
+      },
+      {
+        "name": "公債費",
+        "v": 2776.7325,
+        "prevV": 2795.40932,
+        "yoy": -0.7
+      },
+      {
+        "name": "警察費",
+        "v": 1792.24414,
+        "prevV": 1673.33242,
+        "yoy": 7.1
+      },
+      {
+        "name": "土木費",
+        "v": 1602.87008,
+        "prevV": 1423.79193,
+        "yoy": 12.6
+      },
+      {
+        "name": "総務費",
+        "v": 1317.91727,
+        "prevV": 1136.95243,
+        "yoy": 15.9
+      },
+      {
+        "name": "衛生費",
+        "v": 787.88512,
+        "prevV": 776.97953,
+        "yoy": 1.4
+      },
+      {
+        "name": "商工費",
+        "v": 357.05588,
+        "prevV": 190.003,
+        "yoy": 87.9
+      },
+      {
+        "name": "農林水産業費",
+        "v": 265.80551,
+        "prevV": 259.79202,
+        "yoy": 2.3
+      },
+      {
+        "name": "労働費",
+        "v": 55.6972,
+        "prevV": 56.23203,
+        "yoy": -1
+      },
+      {
+        "name": "議会費",
+        "v": 32.10622,
+        "prevV": 32.02347,
+        "yoy": 0.3
+      },
+      {
+        "name": "災害復旧費",
+        "v": 22.3005,
+        "prevV": 23.8005,
+        "yoy": -6.3
+      },
+      {
+        "name": "予備費",
+        "v": 20,
+        "prevV": 20,
+        "yoy": 0
+      }
+    ],
+    "sourceTitle": "令和8年度 埼玉県当初予算案の概要（計数表・款別歳入歳出）",
+    "sourceUrl": "https://web.archive.org/web/20260725032924/https://www.pref.saitama.lg.jp/documents/274057/03-r8-02-siryou2.pdf",
+    "originUrl": "https://www.pref.saitama.lg.jp/documents/274057/03-r8-02-siryou2.pdf",
+    "sourceLocalUrl": "/sources/saitama-ken-yosangaiyou-r8/03-r8-02-siryou2.pdf",
+    "pagesLabel": "款別歳入歳出",
+    "evidence": [
+      {
+        "title": "令和8年度 埼玉県当初予算案の概要（計数表・款別歳入歳出）",
+        "type": "PDF",
+        "url": "https://web.archive.org/web/20260725032924/https://www.pref.saitama.lg.jp/documents/274057/03-r8-02-siryou2.pdf",
+        "localUrl": "/sources/saitama-ken-yosangaiyou-r8/03-r8-02-siryou2.pdf",
+        "source": "www.pref.saitama.lg.jp",
+        "thumb": "03-r8-02-siryou2.pdf ・ sha256 b286f59541c77d09… ・ 2026-07-25 取得"
+      }
+    ]
+  },
   "111007": {
     "muniCode": "111007",
     "muniName": "さいたま市",
@@ -177496,6 +178594,218 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "localUrl": "/sources/saitama-yosansho-r8/reiwa8nendotousyoyosan.pdf",
         "source": "www.city.saitama.lg.jp",
         "thumb": "reiwa8nendotousyoyosan.pdf ・ sha256 8509236e27fced49… ・ 2026-07-15 取得"
+      }
+    ]
+  },
+  "120006": {
+    "muniCode": "120006",
+    "muniName": "千葉県",
+    "prefName": "千葉県",
+    "isPref": true,
+    "projects": [],
+    "execution": [],
+    "fy": "R8",
+    "fyLabel": "令和8年度 当初予算",
+    "population": 6311579,
+    "populationLabel": "県内市区町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
+    "totalOku": 22534.87205,
+    "prevTotalOku": 21041.50471,
+    "yoyLabel": "+7.1%",
+    "prevBasis": "当初",
+    "prevNote": "",
+    "revenue": [
+      {
+        "name": "県税",
+        "v": 10283.24,
+        "prevV": 9991.27,
+        "yoy": 2.9
+      },
+      {
+        "name": "諸収入",
+        "v": 2677.9913,
+        "prevV": 3279.30221,
+        "yoy": -18.3
+      },
+      {
+        "name": "地方交付税",
+        "v": 2240,
+        "prevV": 2290,
+        "yoy": -2.2
+      },
+      {
+        "name": "国庫支出金",
+        "v": 2134.01773,
+        "prevV": 1777.80569,
+        "yoy": 20
+      },
+      {
+        "name": "繰入金",
+        "v": 1574.29387,
+        "prevV": 928.75302,
+        "yoy": 69.5
+      },
+      {
+        "name": "県債",
+        "v": 1550.63433,
+        "prevV": 980.47933,
+        "yoy": 58.2
+      },
+      {
+        "name": "地方譲与税",
+        "v": 1420.68,
+        "prevV": 1386.1,
+        "yoy": 2.5
+      },
+      {
+        "name": "使用料及び手数料",
+        "v": 269.09402,
+        "prevV": 275.34801,
+        "yoy": -2.3
+      },
+      {
+        "name": "その他",
+        "v": 384.9208,
+        "prevV": 132.44645,
+        "yoy": null,
+        "children": [
+          {
+            "name": "地方特例交付金",
+            "v": 245,
+            "prevV": 37,
+            "yoy": 562.2
+          },
+          {
+            "name": "分担金及び負担金",
+            "v": 92.29161,
+            "prevV": 58.03493,
+            "yoy": 59
+          },
+          {
+            "name": "財産収入",
+            "v": 34.37524,
+            "prevV": 24.14839,
+            "yoy": 42.4
+          },
+          {
+            "name": "交通安全対策特別交付金",
+            "v": 13,
+            "prevV": 13,
+            "yoy": 0
+          },
+          {
+            "name": "寄附金",
+            "v": 0.25395,
+            "prevV": 0.26313,
+            "yoy": -3.5
+          }
+        ]
+      }
+    ],
+    "expenditure": [
+      {
+        "name": "教育費",
+        "v": 4385.71283,
+        "prevV": 3943.75874,
+        "yoy": 11.2
+      },
+      {
+        "name": "民生費",
+        "v": 4167.09254,
+        "prevV": 3896.29976,
+        "yoy": 6.9
+      },
+      {
+        "name": "商工費",
+        "v": 2599.0981,
+        "prevV": 3153.58536,
+        "yoy": -17.6
+      },
+      {
+        "name": "公債費",
+        "v": 2331.67669,
+        "prevV": 2341.91346,
+        "yoy": -0.4
+      },
+      {
+        "name": "諸支出金",
+        "v": 2322.43646,
+        "prevV": 2198.3039,
+        "yoy": 5.6
+      },
+      {
+        "name": "総務費",
+        "v": 1684.9885,
+        "prevV": 1162.14626,
+        "yoy": 45
+      },
+      {
+        "name": "土木費",
+        "v": 1663.13423,
+        "prevV": 1152.96273,
+        "yoy": 44.2
+      },
+      {
+        "name": "警察費",
+        "v": 1635.94516,
+        "prevV": 1531.6648,
+        "yoy": 6.8
+      },
+      {
+        "name": "衛生費",
+        "v": 899.15587,
+        "prevV": 922.75852,
+        "yoy": -2.6
+      },
+      {
+        "name": "農林水産業費",
+        "v": 642.47203,
+        "prevV": 533.28578,
+        "yoy": 20.5
+      },
+      {
+        "name": "環境費",
+        "v": 92.6541,
+        "prevV": 91.59872,
+        "yoy": 1.2
+      },
+      {
+        "name": "労働費",
+        "v": 48.07396,
+        "prevV": 50.82876,
+        "yoy": -5.4
+      },
+      {
+        "name": "議会費",
+        "v": 28.50066,
+        "prevV": 28.467,
+        "yoy": 0.1
+      },
+      {
+        "name": "災害復旧費",
+        "v": 23.93092,
+        "prevV": 23.93092,
+        "yoy": 0
+      },
+      {
+        "name": "予備費",
+        "v": 10,
+        "prevV": 10,
+        "yoy": 0
+      }
+    ],
+    "sourceTitle": "令和8年度 千葉県一般会計予算に関する説明書（歳入歳出予算事項別明細書・総括）",
+    "sourceUrl": "https://web.archive.org/web/20260725033004/https://www.pref.chiba.lg.jp/zaisei/gian/documents/202602-5-y-i-yosan.pdf",
+    "originUrl": "https://www.pref.chiba.lg.jp/zaisei/gian/documents/202602-5-y-i-yosan.pdf",
+    "sourceLocalUrl": "/sources/chiba-ken-yosansho-r8/202602-5-y-i-yosan.pdf",
+    "pagesLabel": "款別歳入歳出",
+    "evidence": [
+      {
+        "title": "令和8年度 千葉県一般会計予算に関する説明書（歳入歳出予算事項別明細書・総括）",
+        "type": "PDF",
+        "url": "https://web.archive.org/web/20260725033004/https://www.pref.chiba.lg.jp/zaisei/gian/documents/202602-5-y-i-yosan.pdf",
+        "localUrl": "/sources/chiba-ken-yosansho-r8/202602-5-y-i-yosan.pdf",
+        "source": "www.pref.chiba.lg.jp",
+        "thumb": "202602-5-y-i-yosan.pdf ・ sha256 87175e0911ca8655… ・ 2026-07-25 取得"
       }
     ]
   },
@@ -177787,7 +179097,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
     "fy": "R8",
     "fyLabel": "令和8年度 当初予算",
     "population": 14002534,
-    "populationLabel": "県内市町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
+    "populationLabel": "都内市区町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
     "totalOku": 96530,
     "prevTotalOku": 91580,
     "yoyLabel": "+5.4%",
@@ -183723,6 +185033,230 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "localUrl": "/sources/edogawa-yosansho-r8/r8toshoyosan.pdf",
         "source": "www.city.edogawa.tokyo.jp",
         "thumb": "r8toshoyosan.pdf ・ sha256 639759a32434ed9f… ・ 2026-07-16 取得"
+      }
+    ]
+  },
+  "140007": {
+    "muniCode": "140007",
+    "muniName": "神奈川県",
+    "prefName": "神奈川県",
+    "isPref": true,
+    "projects": [],
+    "execution": [],
+    "fy": "R8",
+    "fyLabel": "令和8年度 当初予算",
+    "population": 9202559,
+    "populationLabel": "県内市区町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
+    "totalOku": 23759.69,
+    "prevTotalOku": 22158.24,
+    "yoyLabel": "+7.2%",
+    "prevBasis": "当初",
+    "prevNote": "",
+    "revenue": [
+      {
+        "name": "県税",
+        "v": 15254.83133,
+        "prevV": 14534.0182,
+        "yoy": 5
+      },
+      {
+        "name": "地方譲与税",
+        "v": 2153.75779,
+        "prevV": 2014.4349,
+        "yoy": 6.9
+      },
+      {
+        "name": "繰入金",
+        "v": 1828.9085,
+        "prevV": 1678.96732,
+        "yoy": 8.9
+      },
+      {
+        "name": "国庫支出金",
+        "v": 1755.28519,
+        "prevV": 1401.34453,
+        "yoy": 25.3
+      },
+      {
+        "name": "地方交付税",
+        "v": 960,
+        "prevV": 1000,
+        "yoy": -4
+      },
+      {
+        "name": "県債",
+        "v": 924.28,
+        "prevV": 907.24,
+        "yoy": 1.9
+      },
+      {
+        "name": "使用料及び手数料",
+        "v": 285.38227,
+        "prevV": 289.18414,
+        "yoy": -1.3
+      },
+      {
+        "name": "諸収入",
+        "v": 248.988,
+        "prevV": 240.45981,
+        "yoy": 3.5
+      },
+      {
+        "name": "その他",
+        "v": 348.25692,
+        "prevV": 92.59109999999998,
+        "yoy": null,
+        "children": [
+          {
+            "name": "地方特例交付金",
+            "v": 202,
+            "prevV": 37,
+            "yoy": 445.9
+          },
+          {
+            "name": "利子割清算金",
+            "v": 66.35922,
+            "prevV": 0,
+            "yoy": null
+          },
+          {
+            "name": "財産収入",
+            "v": 59.75548,
+            "prevV": 38.30326,
+            "yoy": 56
+          },
+          {
+            "name": "交通安全対策特別交付金",
+            "v": 10,
+            "prevV": 11,
+            "yoy": -9.1
+          },
+          {
+            "name": "寄附金",
+            "v": 5.80464,
+            "prevV": 2.60954,
+            "yoy": 122.4
+          },
+          {
+            "name": "分担金及び負担金",
+            "v": 4.2364,
+            "prevV": 3.57691,
+            "yoy": 18.4
+          },
+          {
+            "name": "繰越金",
+            "v": 0.10118,
+            "prevV": 0.10139,
+            "yoy": -0.2
+          }
+        ]
+      }
+    ],
+    "expenditure": [
+      {
+        "name": "総務費",
+        "v": 5107.00212,
+        "prevV": 4796.16019,
+        "yoy": 6.5
+      },
+      {
+        "name": "教育費",
+        "v": 4924.21718,
+        "prevV": 4163.53097,
+        "yoy": 18.3
+      },
+      {
+        "name": "民生費",
+        "v": 4056.72282,
+        "prevV": 3732.95956,
+        "yoy": 8.7
+      },
+      {
+        "name": "公債費",
+        "v": 2664.96716,
+        "prevV": 2893.45271,
+        "yoy": -7.9
+      },
+      {
+        "name": "衛生費",
+        "v": 2633.89012,
+        "prevV": 2373.03124,
+        "yoy": 11
+      },
+      {
+        "name": "警察費",
+        "v": 2300.60568,
+        "prevV": 2155.70716,
+        "yoy": 6.7
+      },
+      {
+        "name": "土木費",
+        "v": 1285.28819,
+        "prevV": 1308.52912,
+        "yoy": -1.8
+      },
+      {
+        "name": "商工費",
+        "v": 221.61507,
+        "prevV": 197.98311,
+        "yoy": 11.9
+      },
+      {
+        "name": "農林水産業費",
+        "v": 217.67911,
+        "prevV": 202.58868,
+        "yoy": 7.4
+      },
+      {
+        "name": "環境費",
+        "v": 191.04135,
+        "prevV": 181.34961,
+        "yoy": 5.3
+      },
+      {
+        "name": "労働費",
+        "v": 82.51752,
+        "prevV": 78.85889,
+        "yoy": 4.6
+      },
+      {
+        "name": "議会費",
+        "v": 38.01844,
+        "prevV": 38.34601,
+        "yoy": -0.9
+      },
+      {
+        "name": "予備費",
+        "v": 20,
+        "prevV": 20,
+        "yoy": 0
+      },
+      {
+        "name": "災害復旧費",
+        "v": 15.4,
+        "prevV": 15.67447,
+        "yoy": -1.8
+      },
+      {
+        "name": "諸支出金",
+        "v": 0.72524,
+        "prevV": 0.06828,
+        "yoy": 962.2
+      }
+    ],
+    "sourceTitle": "令和8年度 神奈川県一般会計当初予算（歳入歳出予算事項別明細書 総括）",
+    "sourceUrl": "https://web.archive.org/web/20260725032838/https://www.pref.kanagawa.jp/documents/132115/2026_001_aobon.pdf",
+    "originUrl": "https://www.pref.kanagawa.jp/documents/132115/2026_001_aobon.pdf",
+    "sourceLocalUrl": "/sources/kanagawa-yosansho-r8/2026_001_aobon.pdf",
+    "pagesLabel": "款別歳入歳出",
+    "evidence": [
+      {
+        "title": "令和8年度 神奈川県一般会計当初予算（歳入歳出予算事項別明細書 総括）",
+        "type": "PDF",
+        "url": "https://web.archive.org/web/20260725032838/https://www.pref.kanagawa.jp/documents/132115/2026_001_aobon.pdf",
+        "localUrl": "/sources/kanagawa-yosansho-r8/2026_001_aobon.pdf",
+        "source": "www.pref.kanagawa.jp",
+        "thumb": "2026_001_aobon.pdf ・ sha256 d3013f0efc308a16… ・ 2026-07-25 取得"
       }
     ]
   },
@@ -189825,7 +191359,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
     "fy": "R8",
     "fyLabel": "令和8年度 当初予算",
     "population": 801056,
-    "populationLabel": "県内市町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
+    "populationLabel": "県内市区町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
     "totalOku": 5321.1735,
     "prevTotalOku": 5115.43169,
     "yoyLabel": "+4.0%",
@@ -200994,6 +202528,212 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "localUrl": "/sources/kyoto-yosansho-r8/01_ippantousyo.pdf",
         "source": "www.city.kyoto.lg.jp",
         "thumb": "01_ippantousyo.pdf ・ sha256 5da37ed0dfd0df63… ・ 2026-07-15 取得"
+      }
+    ]
+  },
+  "270008": {
+    "muniCode": "270008",
+    "muniName": "大阪府",
+    "prefName": "大阪府",
+    "isPref": true,
+    "projects": [],
+    "execution": [],
+    "fy": "R8",
+    "fyLabel": "令和8年度 当初予算",
+    "population": 8771961,
+    "populationLabel": "府内市区町村の住民基本台帳人口の合計（総務省 令和6年度決算）",
+    "totalOku": 39216.06338,
+    "prevTotalOku": 32713.62614,
+    "yoyLabel": "+19.9%",
+    "prevBasis": "当初",
+    "prevNote": "",
+    "revenue": [
+      {
+        "name": "府税",
+        "v": 17000.82,
+        "prevV": 16282.62,
+        "yoy": 4.4
+      },
+      {
+        "name": "諸収入",
+        "v": 10249.14311,
+        "prevV": 5641.34566,
+        "yoy": 81.7
+      },
+      {
+        "name": "地方交付税",
+        "v": 3677,
+        "prevV": 3367,
+        "yoy": 9.2
+      },
+      {
+        "name": "国庫支出金",
+        "v": 2830.06548,
+        "prevV": 2569.49117,
+        "yoy": 10.1
+      },
+      {
+        "name": "地方譲与税",
+        "v": 2074.3,
+        "prevV": 1826.9,
+        "yoy": 13.5
+      },
+      {
+        "name": "繰入金",
+        "v": 1340.1712,
+        "prevV": 1471.89918,
+        "yoy": -8.9
+      },
+      {
+        "name": "府債",
+        "v": 1332.97,
+        "prevV": 1100.9,
+        "yoy": 21.1
+      },
+      {
+        "name": "使用料及び手数料",
+        "v": 292.64334,
+        "prevV": 299.68352,
+        "yoy": -2.3
+      },
+      {
+        "name": "その他",
+        "v": 418.95025,
+        "prevV": 153.78661,
+        "yoy": null,
+        "children": [
+          {
+            "name": "地方特例交付金",
+            "v": 238,
+            "prevV": 40,
+            "yoy": 495
+          },
+          {
+            "name": "分担金及び負担金",
+            "v": 57.78684,
+            "prevV": 52.20104,
+            "yoy": 10.7
+          },
+          {
+            "name": "利子割清算金",
+            "v": 49.5,
+            "prevV": 0,
+            "yoy": null
+          },
+          {
+            "name": "財産収入",
+            "v": 45.40955,
+            "prevV": 37.61951,
+            "yoy": 20.7
+          },
+          {
+            "name": "寄附金",
+            "v": 15.55386,
+            "prevV": 9.46606,
+            "yoy": 64.3
+          },
+          {
+            "name": "交通安全対策特別交付金",
+            "v": 12.7,
+            "prevV": 14.5,
+            "yoy": -12.4
+          }
+        ]
+      }
+    ],
+    "expenditure": [
+      {
+        "name": "商工労働費",
+        "v": 10237.54266,
+        "prevV": 5583.69928,
+        "yoy": 83.3
+      },
+      {
+        "name": "諸支出金",
+        "v": 7139.40245,
+        "prevV": 6835.82696,
+        "yoy": 4.4
+      },
+      {
+        "name": "教育費",
+        "v": 7114.87207,
+        "prevV": 6330.78123,
+        "yoy": 12.4
+      },
+      {
+        "name": "福祉費",
+        "v": 4651.3418,
+        "prevV": 4388.75313,
+        "yoy": 6
+      },
+      {
+        "name": "健康医療費",
+        "v": 3559.02614,
+        "prevV": 3474.89022,
+        "yoy": 2.4
+      },
+      {
+        "name": "警察費",
+        "v": 3162.72655,
+        "prevV": 3034.88132,
+        "yoy": 4.2
+      },
+      {
+        "name": "都市整備費",
+        "v": 1704.7556,
+        "prevV": 1563.70915,
+        "yoy": 9
+      },
+      {
+        "name": "総務費",
+        "v": 1160.94652,
+        "prevV": 1209.40517,
+        "yoy": -4
+      },
+      {
+        "name": "環境農林水産費",
+        "v": 241.87431,
+        "prevV": 210.0094,
+        "yoy": 15.2
+      },
+      {
+        "name": "都市計画費",
+        "v": 193.85533,
+        "prevV": 31.98209,
+        "yoy": 506.1
+      },
+      {
+        "name": "議会費",
+        "v": 24.3722,
+        "prevV": 24.13154,
+        "yoy": 1
+      },
+      {
+        "name": "予備費",
+        "v": 20,
+        "prevV": 20,
+        "yoy": 0
+      },
+      {
+        "name": "災害復旧費",
+        "v": 5.34775,
+        "prevV": 5.55665,
+        "yoy": -3.8
+      }
+    ],
+    "sourceTitle": "令和8年度 大阪府当初予算の概要（財政のあらまし 令和8年6月号・一般会計歳入歳出款別）",
+    "sourceUrl": "https://www.pref.osaka.lg.jp/documents/133484/08-06_03_yosan.pdf",
+    "originUrl": "https://www.pref.osaka.lg.jp/documents/133484/08-06_03_yosan.pdf",
+    "sourceLocalUrl": "/sources/osakafu-aramashi-yosan-r8/08-06_03_yosan.pdf",
+    "pagesLabel": "款別歳入歳出",
+    "evidence": [
+      {
+        "title": "令和8年度 大阪府当初予算の概要（財政のあらまし 令和8年6月号・一般会計歳入歳出款別）",
+        "type": "PDF",
+        "url": "https://www.pref.osaka.lg.jp/documents/133484/08-06_03_yosan.pdf",
+        "localUrl": "/sources/osakafu-aramashi-yosan-r8/08-06_03_yosan.pdf",
+        "source": "www.pref.osaka.lg.jp",
+        "thumb": "08-06_03_yosan.pdf ・ sha256 74fa531e26a65562… ・ 2026-07-25 取得"
       }
     ]
   },
@@ -216601,4 +218341,4 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
 };
 
 /** budget 階層（予算ベースの款別ダッシュボードを持つ）自治体の団体コード */
-export const BUDGET_MUNIS: string[] = ["111007","121002","130001","131016","131024","131032","131041","131059","131067","131075","131083","131091","131105","131113","131121","131130","131148","131156","131164","131172","131181","131199","131202","131211","131229","131237","141003","141305","141500","151009","190004","192023","192040","192066","192082","192091","192112","192139","194301","221007","221309","222038","231002","232076","261009","271004","271403","272191","281000","331007","341002","352039","401005","401307","431001","011002","041009"];
+export const BUDGET_MUNIS: string[] = ["110001","111007","120006","121002","130001","131016","131024","131032","131041","131059","131067","131075","131083","131091","131105","131113","131121","131130","131148","131156","131164","131172","131181","131199","131202","131211","131229","131237","140007","141003","141305","141500","151009","190004","192023","192040","192066","192082","192091","192112","192139","194301","221007","221309","222038","231002","232076","261009","270008","271004","271403","272191","281000","331007","341002","352039","401005","401307","431001","011002","041009"];

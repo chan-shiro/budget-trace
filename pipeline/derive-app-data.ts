@@ -2062,6 +2062,13 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     })),
     // 都道府県エンティティ（県全体）。人口は県内市町村の合計から算出
     { srcId: "yamanashi-yosansho-r8", muniCode: "190004", muniName: "山梨県", prefName: "山梨県", isPref: true },
+    // 2026-07-25 追加の4府県。団体コードは総務省「全国地方公共団体コード」の原本 Excel から引いた。
+    // ⚠ 県庁所在市と取り違えない（埼玉県 110001 ≠ さいたま市 111007 / 千葉県 120006 ≠ 千葉市 121002 /
+    //   神奈川県 140007 ≠ 横浜市 141003 / 大阪府 270008 ≠ 大阪市 271004）。
+    { srcId: "saitama-ken-yosangaiyou-r8", muniCode: "110001", muniName: "埼玉県", prefName: "埼玉県", isPref: true },
+    { srcId: "chiba-ken-yosansho-r8", muniCode: "120006", muniName: "千葉県", prefName: "千葉県", isPref: true },
+    { srcId: "kanagawa-yosansho-r8", muniCode: "140007", muniName: "神奈川県", prefName: "神奈川県", isPref: true },
+    { srcId: "osakafu-aramashi-yosan-r8", muniCode: "270008", muniName: "大阪府", prefName: "大阪府", isPref: true },
     // 東京都（2026-07-22 追加・#124）。予算概要CSV（H29〜R8 の10年）。PDF は全経路パース不可のため
     // CSV が唯一の経路（registry のコメント参照）。歳出は款再編が2回（R5・R6）あり款名結合が切れる。
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29"] as const).map((fy) => ({
@@ -2175,8 +2182,10 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       fy: doc.fiscalYear,
       fyLabel: `${eraYear(doc.fiscalYear)}年度 当初予算`,
       population: popRec.population,
+      // 都道府県は「県内」で決め打ちにしない（大阪府・東京都で「府民1人あたり…県内市町村」と
+      // ちぐはぐになる）。団体名の末字から 都/道/府/県 を取って言い換える（2026-07-25）
       populationLabel: b.isPref
-        ? "県内市町村の住民基本台帳人口の合計（総務省 令和6年度決算）"
+        ? `${b.muniName.slice(-1)}内市区町村の住民基本台帳人口の合計（総務省 令和6年度決算）`
         : "住民基本台帳人口（総務省 令和6年度決算）",
       totalOku: toOku(doc.expenditureTotal),
       prevTotalOku: doc.prevExpenditureTotal != null ? toOku(doc.prevExpenditureTotal) : null,

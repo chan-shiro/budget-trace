@@ -101,6 +101,13 @@ const MUNI_SLUGS: Record<string, string> = {
   "131091": "shinagawa",
   "130001": "ken",
   "190004": "ken",
+  // 都道府県エンティティ（2026-07-25）。⚠ 県庁所在市と取り違えない —
+  // 埼玉県 110001 / さいたま市 111007、千葉県 120006 / 千葉市 121002 は別団体で
+  // スラグも `/saitama/ken` と `/saitama/saitama` に分かれる。
+  "110001": "ken",
+  "120006": "ken",
+  "140007": "ken",
+  "270008": "ken",
 };
 
 interface KnownMuni { code: string; name: string; pref: string; slug: string; }
