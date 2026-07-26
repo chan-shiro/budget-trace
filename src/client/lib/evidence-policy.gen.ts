@@ -114,6 +114,11 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.pref.aichi.jp/uploaded/attachment/600028.pdf",
     "license": "ネットあいちに掲載されている個々の情報（文章，写真，イラストなど）は、著作権の対象となっています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
   },
+  "/sources/shizuokaken-zaisei-aramashi-157/aramashi157.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.shizuoka.jp/kensei/zaiseisuito/zaisei/1011521.html",
+    "license": "「静岡県ホームページ」に掲載されている情報（文章、写真、イラスト、画像など）は、著作権の対象となっています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。"
+  },
   "/sources/sapporo-yosansetsumeisho-r7/02_r7_yosansetsumeisho_ippan.pdf": {
     "mode": "origin",
     "href": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r7/documents/02_r7_yosansetsumeisho_ippan.pdf",

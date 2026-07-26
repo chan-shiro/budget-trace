@@ -136,6 +136,7 @@ const MUNI_SLUGS: Record<string, string> = {
   "460001": "ken",
   // 2026-07-26 第7弾。⚠ 愛知県 230006 ≠ 名古屋市 231002
   "230006": "ken",
+  "220001": "ken", // ⚠ 静岡県 220001 ≠ 静岡市 221007 ≠ 浜松市 221309
 };
 
 interface KnownMuni { code: string; name: string; pref: string; slug: string; }

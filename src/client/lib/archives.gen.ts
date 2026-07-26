@@ -682,6 +682,8 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.city.shizuoka.lg.jp/s3627/s012576.html": "https://web.archive.org/web/20260308130506/https://www.city.shizuoka.lg.jp/s3627/s012576.html",
   "https://www.city.shizuoka.lg.jp/documents/56762/06_r8jikoubetumeisaisyo_ippankaikei.pdf": "https://web.archive.org/web/20260715201844/https://www.city.shizuoka.lg.jp/documents/56762/06_r8jikoubetumeisaisyo_ippankaikei.pdf",
   "https://www.city.shizuoka.lg.jp/s3627/s012583.html": "https://web.archive.org/web/20260305102429/https://www.city.shizuoka.lg.jp/s3627/s012583.html",
+  "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/521/aramashi157.pdf": "https://web.archive.org/web/20260726074747/https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/521/aramashi157.pdf",
+  "https://www.pref.shizuoka.jp/kensei/zaiseisuito/zaisei/1011521.html": "https://web.archive.org/web/20260316051448/https://www.pref.shizuoka.jp/kensei/zaiseisuito/zaisei/1011521.html",
   "https://www.soumu.go.jp/iken/zaisei/r02_shichouson.html": "https://web.archive.org/web/20260301074317/https://www.soumu.go.jp/iken/zaisei/r02_shichouson.html",
   "https://www.soumu.go.jp/main_content/000800819.xlsx": "https://web.archive.org/web/20220401110434/https://www.soumu.go.jp/main_content/000800819.xlsx",
   "https://www.soumu.go.jp/main_content/000800820.xlsx": "https://web.archive.org/web/20220401110512/https://www.soumu.go.jp/main_content/000800820.xlsx",

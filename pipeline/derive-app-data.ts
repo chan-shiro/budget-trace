@@ -2100,6 +2100,7 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     { srcId: "kagoshima-ken-yosan-setsumeisho-r8", muniCode: "460001", muniName: "鹿児島県", prefName: "鹿児島県", isPref: true },
     // 2026-07-26 第7弾（パーサ改修で開いた県）。⚠ **愛知県 230006 ≠ 名古屋市 231002**。
     { srcId: "aichi-yosan-setsumeisho-r8", muniCode: "230006", muniName: "愛知県", prefName: "愛知県", isPref: true },
+    { srcId: "shizuokaken-zaisei-aramashi-157", muniCode: "220001", muniName: "静岡県", prefName: "静岡県", isPref: true },
     // 東京都（2026-07-22 追加・#124）。予算概要CSV（H29〜R8 の10年）。PDF は全経路パース不可のため
     // CSV が唯一の経路（registry のコメント参照）。歳出は款再編が2回（R5・R6）あり款名結合が切れる。
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29"] as const).map((fy) => ({

@@ -196,6 +196,47 @@ interface Options {
    */
   kanIndentMax?: number;
   /**
+   * **款名の断片（折返し）が項と同じ字下げ帯に来る様式**（2026-07-26・静岡県）。`kanIndentMax` と
+   * セットでのみ使う（単独指定は throw）。
+   *
+   * 静岡の第3表/第5表は款と項が同一表にあり、款は字下げ0〜1・項は4以上で分かれる（＝`kanIndentMax` が
+   * 効く）が、**款名の折返しが字下げ5〜17 の帯に落ちる**ため、素の `kanIndentMax` は款の断片まで
+   * 消してしまう:
+   * ```
+   *      交 通 安 全 対 策            ← 款7 の上段（字下げ5）
+   * 7    特  別  交  付  金   800 …   ← 款行（字下げ0）
+   *      分   担   金  及  び         ← 款8 の上段
+   * 8                      5,098 …   ← 款行（名前欄が空）
+   *      負       担     金           ← 款8 の下段
+   * 9    使  用  料  及  び            ← 款9 は款行に金額が無く
+   *      手      数      料  14,958 … ←   金額が次行（字下げ5）に来る
+   * ```
+   * 消すと**款7 が `特別交付金` に化け、款8・款9 が丸ごと落ちる**（Σ ゲートは止めるが収録できない）。
+   *
+   * 指定すると、字下げ超過の行のうち**行頭に数字が無い行だけ**を通す（＝款番号列にも項番号列にも
+   * 数字が無い行＝表の「名前だけの行」）。数字で始まる字下げ超過の行（＝項行）は**通さないうえに
+   * 溜まっている断片を破棄する**。
+   *
+   * ⚠ **破棄が対になっていないと静かに壊れる**。款の断片は款行と連続するが、項にも折返しがあり
+   *   （静岡の歳入 `及 び 過 料 等`＝款15 項1 の下段、歳出 `株 式 等 譲 渡` `性 能 割 交 付 金`）、
+   *   これらは行頭に数字が無いので**同じ規則で通ってしまう**。項行を1つでも挟んだら
+   *   その断片は款のものではない、という不変条件で捨てる。捨てないと `及び過料等県債`（款16）に
+   *   なる — **Σ は4系統とも差0 のままなので目視でしか気づけない**。
+   */
+  kanFragmentsIndented?: boolean;
+  /**
+   * **原典の誤植をピンポイントで直す**（2026-07-26・静岡県）。側ごとに「印字されているトークン →
+   * 正しいトークン」を与える。静岡の第5表は款15 諸支出金の R7 額の桁区切りが**ピリオド**で、
+   * `277,212  263.401  13,811` と印字される（**R7 号の同じ箇所も同じ誤植＝毎年必発**）。
+   * 小数は構成比として捨てられるので、放置すると前年度額が比較増減 13,811 にずれる。
+   *
+   * ⚠ **一括の正規表現にしない**（`\d+\.\d{3}` を桁区切りとみなす等）。同じ表に構成比の小数が
+   *   並んでおり、規則にすると**正当な小数まで金額に化ける**。
+   * ⚠ **ちょうど1回だけ現れることを要求し、0回でも2回以上でも throw する**。発行元が誤植を直した
+   *   ときに黙って素通りさせない（＝次に来る人が「まだ誤植がある」と誤解しない）ため。
+   */
+  amountTypos?: { revenue?: Record<string, string>; expenditure?: Record<string, string> };
+  /**
    * **款番号を持たない様式**（2026-07-16・岡山 R8 で発見）。指定すると、款番号が無くても
    * 「日本語の款名＋整数金額2つ以上」の行を款として拾う（`kanNo: null`）。
    * ```
@@ -475,6 +516,20 @@ function parseKanPage(
     : pages.map((p) => pdfPageText(filePath, p, cropX, src)).join("\n");
   // ToUnicode 欠落の復号（Options.decodeGarble 参照）。パース前にページ全文を復元する
   if (opts.decodeGarble) text = decodeGarbleText(text, `${filename} ${pageLabel}`);
+  // 原典の誤植をピンポイントで直す（Options.amountTypos 参照）。**dashAsZero・折返し復元より先** —
+  // 誤植は原典の印字そのものなので、以降の全処理が「正しい印字」を前提に動けるようにする
+  const typos = side === "revenue" ? opts.amountTypos?.revenue : opts.amountTypos?.expenditure;
+  for (const [from, to] of Object.entries(typos ?? {})) {
+    const re = new RegExp(`(?<![\\d,.])${from.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?![\\d,.])`, "g");
+    const n = (text.match(re) ?? []).length;
+    if (n !== 1) {
+      throw new Error(
+        `${filename} ${pageLabel}: amountTypos の「${from}」が ${n} 回見つかりました（1回であるべき）。` +
+          `発行元が誤植を直したか版面が変わった可能性があるので、原典を見て指定を外すか直してください。`,
+      );
+    }
+    text = text.replace(re, to);
+  }
   // セル幅で折り返した金額を戻す（Options.joinWrappedAmounts 参照）。dashAsZero より先に置く
   // — ダッシュの 0 化は「単独トークン」を見るので、折返しを戻す前後で結果は変わらないが、
   // 「原典の欠けを埋めてから読む」順のほうが以降の全処理が同じ前提で動く
@@ -755,7 +810,19 @@ function parseKanPage(
     // 款項が同一表に混在する様式（Options.kanIndentMax 参照）: 深く字下げされた項・目を外す
     if (opts.kanIndentMax != null && compact !== "") {
       const indent = raw.length - raw.trimStart().length;
-      if (indent > opts.kanIndentMax) continue;
+      if (indent > opts.kanIndentMax) {
+        // 款名の断片が項と同じ帯に来る様式（Options.kanFragmentsIndented 参照）。
+        // 行頭に数字がある＝項行なので通さず、**溜まっている断片も破棄する**
+        // （款の断片は款行と連続する。項行を挟んだ断片は款のものではない）。
+        if (!opts.kanFragmentsIndented || /^\s*[○◎●]*\s*\d/.test(raw)) {
+          if (opts.kanFragmentsIndented) {
+            reset();
+            openLine = null;
+          }
+          continue;
+        }
+        // 行頭に数字が無い字下げ超過の行は款名の断片／折返しの金額行として通す
+      }
     }
     if (compact === "") {
       reset(); // 行間の空行で断片を破棄（款は空行を挟まず連続する）
@@ -2074,6 +2141,10 @@ export function parseKofuYosansho(
       `${source.id}: amountIntIndex と prevIntIndex は2つセットで指定してください` +
         `（現在 amountIntIndex=${opts.amountIntIndex} / prevIntIndex=${opts.prevIntIndex}）`,
     );
+  }
+  // 断片の通し方は `kanIndentMax` の例外規則なので、単独では意味を持たない（Options 参照）
+  if (opts.kanFragmentsIndented && opts.kanIndentMax == null) {
+    throw new Error(`${source.id}: kanFragmentsIndented は kanIndentMax とセットで指定してください`);
   }
   // 単数 revenuePage と複数 revenuePages のどちらか一方。内部は常にページ配列で扱う
   const sidePages = (

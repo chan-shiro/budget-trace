@@ -7114,6 +7114,24 @@
       "checkedAt": "2026-07-15T20:19:18.225Z"
     },
     {
+      "sourceId": "shizuokaken-zaisei-aramashi-157",
+      "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/521/aramashi157.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260726074747/https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/521/aramashi157.pdf",
+      "waybackTimestamp": "20260726074747",
+      "checkedAt": "2026-07-26T07:48:34.083Z",
+      "sha256Match": true,
+      "waybackBytes": 7645470
+    },
+    {
+      "sourceId": "shizuokaken-zaisei-aramashi-157",
+      "url": "https://www.pref.shizuoka.jp/kensei/zaiseisuito/zaisei/1011521.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260316051448/https://www.pref.shizuoka.jp/kensei/zaiseisuito/zaisei/1011521.html",
+      "waybackTimestamp": "20260316051448",
+      "checkedAt": "2026-07-26T07:48:37.281Z"
+    },
+    {
       "sourceId": "soumu-shichoson-kessan-r2",
       "url": "https://www.soumu.go.jp/iken/zaisei/r02_shichouson.html",
       "kind": "landing",
