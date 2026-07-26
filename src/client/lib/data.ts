@@ -191,8 +191,12 @@ export interface RestrictedEvidence {
   href: string;
   /** 発行元が示している利用条件の原文 */
   license: string;
+  /** 振替先に何があるか。page = 掲載ページ（HTML）と判っているもの / file = それ以外 */
+  target: 'file' | 'page';
   /** リンクの文言（「原本を開く」と言い切れないので、どこへ出るかを書く） */
   actionLabel: string;
+  /** 単独で立つリンクの文言（「（…）」の中に入れない用。どこへ出るかを言い切る） */
+  openLabel: string;
 }
 
 /**
@@ -208,7 +212,20 @@ export function restrictedEvidence(localUrl: string | null | undefined): Restric
   // ページ指定はブラウザの PDF ビューアが解釈する。PDF 以外に付けても意味が無いので付けない
   const page = m?.[2];
   const href = page && /\.pdf$/i.test(e.href) ? `${e.href}#page=${page}` : e.href;
-  return { mode: e.mode, href, license: e.license, actionLabel: e.mode === 'archive' ? '魚拓で開く ↗' : '発行元で開く ↗' };
+  return {
+    mode: e.mode,
+    href,
+    license: e.license,
+    target: e.target,
+    actionLabel: e.mode === 'archive' ? '魚拓で開く ↗' : '発行元で開く ↗',
+    // 掲載ページ（HTML）へ振り替える資料は「掲載ページ」と言う — 資料そのものが開くと読ませない
+    openLabel:
+      e.mode === 'archive'
+        ? '魚拓で開く ↗'
+        : e.target === 'page'
+          ? '発行元の掲載ページを開く ↗'
+          : '発行元で開く ↗',
+  };
 }
 
 /** エビデンスのリンク先（要許可なら発行元・魚拓、それ以外はコピー） */
@@ -219,6 +236,32 @@ export function evidenceHref(localUrl: string): string {
 /** エビデンスのリンク文言。「（原本を開く）」と書けるのは③を開く資料だけ */
 export function evidenceAction(localUrl: string | null | undefined): string {
   return restrictedEvidence(localUrl)?.actionLabel ?? '原本を開く';
+}
+
+/**
+ * 単独で立つエビデンスリンクの文言（「予算書PDFを開く」のように資料の種類を名乗るもの）。
+ * **自サーバーのコピーをドロワーで開くときだけ** copyLabel（資料の種類）を名乗ってよい。
+ * 要許可で発行元へ振り替える資料は、出典チップと同じ語彙で「どこが開くか」を書く
+ * （`noDeepLink` の資料は掲載ページ＝HTML が開くので「予算書PDFを開く」は嘘になる）。
+ */
+export function evidenceOpenLabel(localUrl: string | null | undefined, copyLabel: string): string {
+  return restrictedEvidence(localUrl)?.openLabel ?? copyLabel;
+}
+
+/**
+ * 自サーバーのコピーがドロワーで何として開くか（PDF ビューア / HTML / ダウンロードカード）。
+ * ドロワーの分岐（BudgetTraceView の `viewer`）と同じ拡張子判定にしてある。判らない形式は
+ * null を返し、呼び出し側は形式を名乗らない（款別の資料は PDF が460件・Excel/CSV が42件あり、
+ * 「予算書PDFを開く」と決め打つと Excel の資料で文言と実態がズレる）。
+ */
+export function evidenceFormatLabel(localUrl: string | null | undefined): string | null {
+  if (!localUrl) return null;
+  const path = localUrl.split('#')[0]!;
+  if (/\.pdf$/i.test(path)) return 'PDF';
+  if (/\.html?$/i.test(path)) return 'HTML';
+  if (/\.xlsx?$|\.xlsm$/i.test(path)) return 'Excel';
+  if (/\.csv$/i.test(path)) return 'CSV';
+  return null;
 }
 
 // ---- ヘルパー --------------------------------------------------------------

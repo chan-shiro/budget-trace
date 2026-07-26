@@ -1461,8 +1461,17 @@ export const WAYBACK_BY_URL: Record<string, string> = ${JSON.stringify(byUrl, nu
 // 出口の整合チェックと同じ考え方）。
 // ============================================================================
 {
-  type Link = { mode: "origin" | "archive"; href: string; license: string };
+  type Link = { mode: "origin" | "archive"; target: "file" | "page"; href: string; license: string };
   const links: Record<string, Link> = {};
+  // 振替先が「資料そのもの（PDF/Excel）」か「掲載ページ（HTML）」かを derive で決める。
+  // 画面のリンク文言はこれに従う — `noDeepLink` の資料で「予算書PDFを開く」と書いてあるのに
+  // HTML の掲載ページが開く、という**文言と実態のズレ**を1か所で潰すため（2026-07-26）。
+  // noDeepLink は発行元がファイル直リンクを断っている＝振替先は必ず掲載ページ。それ以外は
+  // 宛先が HTML のときだけページ扱いにする。**判らないものは file に寄せる** — 東京都のように
+  // 拡張子の無い直ダウンロード URL（/documents/d/zaimu/08-03sainyukanbetsu）があり、これを
+  // ページ扱いにすると今度は「掲載ページを開く」と書いてファイルが落ちてくる。file 側の文言は
+  // 「発行元で開く ↗」＝何が開くかを主張しないので、判らないときの受け皿として安全。
+  const isPageHref = (href: string) => /\.html?(?=$|[?#])/i.test(href);
   const missing: string[] = [];
   let sourceCount = 0;
   for (const s of SOURCES) {
@@ -1483,7 +1492,7 @@ export const WAYBACK_BY_URL: Record<string, string> = ${JSON.stringify(byUrl, nu
     }
     for (const f of meta?.files ?? []) {
       const from = f.fetchedFrom;
-      const link: Link | null = s.noDeepLink
+      const link: Omit<Link, "target"> | null = s.noDeepLink
         ? { mode: "origin", href: s.landingPage!, license: s.license }
         : /^https?:/.test(from)
           ? { mode: isArchiveUrl(from) ? "archive" : "origin", href: from, license: s.license }
@@ -1496,7 +1505,10 @@ export const WAYBACK_BY_URL: Record<string, string> = ${JSON.stringify(byUrl, nu
         missing.push(`${s.id}/${f.filename}`);
         continue;
       }
-      links[`/sources/${s.id}/${f.filename}`] = link;
+      links[`/sources/${s.id}/${f.filename}`] = {
+        ...link,
+        target: s.noDeepLink || isPageHref(link.href) ? "page" : "file",
+      };
     }
   }
   if (missing.length > 0) {
@@ -1516,6 +1528,11 @@ export const WAYBACK_BY_URL: Record<string, string> = ${JSON.stringify(byUrl, nu
 export interface RestrictedEvidenceLink {
   /** origin = 発行元へ直リンク / archive = 発行元から消えており魚拓にしかない */
   mode: "origin" | "archive";
+  /**
+   * 振替先に何があるか。page = 掲載ページ（HTML）と判っているもの / file = それ以外。
+   * 画面のリンク文言はこれに従う（「予算書PDFを開く」と書いて HTML が開くのを防ぐ）。
+   */
+  target: "file" | "page";
   href: string;
   /** 発行元が示している利用条件の原文（なぜ外部リンクなのかの根拠） */
   license: string;

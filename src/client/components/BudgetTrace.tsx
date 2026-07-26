@@ -167,6 +167,13 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
   const evHref = (localUrl: string) => D.evidenceHref(localUrl);
   /** エビデンスのリンク文言。要許可の資料に「原本を開く」と書かない */
   const evAction = (localUrl: string | null | undefined) => D.evidenceAction(localUrl);
+  /**
+   * 単独で立つエビデンスリンクの文言。**開くものと文言を一致させる**ための1か所。
+   * コピーをドロワーで開くときだけ資料の種類（PDF/Excel…）を名乗り、要許可で発行元へ
+   * 振り替える資料は「発行元の掲載ページを開く ↗」等に振り替える（2026-07-26）。
+   */
+  const evOpenLabel = (localUrl: string | null | undefined, noun: string) =>
+    D.evidenceOpenLabel(localUrl, `${noun}${D.evidenceFormatLabel(localUrl) ? `（${D.evidenceFormatLabel(localUrl)}）` : ""}を開く`);
   const closeViewer = () => setSt({ viewer: null });
   const viewerOpen = !!st.viewer;
   React.useEffect(() => {
@@ -966,6 +973,14 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     ...(reportMuni || isPref ? [] : ["事務事業評価"]),
   ];
 
+  // ドリル画面とダッシュボード末尾の出典が指す一次資料（自サーバー配信コピーのパス）。
+  // href・文言・開く動作を同じ1つの URL から作る（別々に組むとリンク先と文言がズレる）
+  const drillEvidenceLocalUrl = isDecision
+    ? decisionView!.primaryEvidence?.localUrl ?? ""
+    : isBudget
+      ? muniBudget!.sourceLocalUrl
+      : budget.sourceLocalUrl;
+
   const v: any = {
     isTop: screen === "top", isMuni: screen === "muni", isApp,
     isDash: screen === "dash" || gatedToDash, isDrill: screen === "drill",
@@ -1532,19 +1547,18 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     // エビデンスは自サーバーのコピーをドロワーで開く（発行元・Wayback はドロワー内の補助リンク）
     viewer: s.viewer ?? null,
     closeViewer,
-    drillPdfUrl: isDecision ? "" : isBudget ? evHref(muniBudget!.sourceLocalUrl) : evHref(budget.sourceLocalUrl),
+    drillPdfUrl: evHref(drillEvidenceLocalUrl),
+    // ドリル画面の EVIDENCE リンク文言。**「予算書PDFを開く」で固定しない** — 要許可の資料は
+    // 発行元の掲載ページ（HTML）へ振り替わり、コピー自体も Excel/CSV のことがある（2026-07-26）
+    drillEvidenceAction: evOpenLabel(drillEvidenceLocalUrl, isDecision ? "決算資料" : "予算書"),
     dashSourceLabel: isDecision
       ? `出典：${decisionView!.primaryEvidence?.title ?? "総務省 市町村別決算状況調"}（${decisionView!.refLabel}）`
       : isBudget
         ? `出典：${muniBudget!.sourceTitle}`
         : `出典：${budget.sourceTitle} ${budget.pagesLabel}`,
-    dashSourceUrl: evHref(
-      isDecision ? decisionView!.primaryEvidence?.localUrl ?? "" : isBudget ? muniBudget!.sourceLocalUrl : budget.sourceLocalUrl,
-    ),
+    dashSourceUrl: evHref(drillEvidenceLocalUrl),
     // リンク文言（要許可の資料は「原本を開く」ではなく「発行元で開く」）
-    dashSourceAction: evAction(
-      isDecision ? decisionView!.primaryEvidence?.localUrl : isBudget ? muniBudget!.sourceLocalUrl : budget.sourceLocalUrl,
-    ),
+    dashSourceAction: evAction(drillEvidenceLocalUrl),
     dashSourceTitle: isDecision ? decisionView!.primaryEvidence?.title ?? "総務省 市町村別決算状況調" : isBudget ? muniBudget!.sourceTitle : budget.sourceTitle,
     dashSourceOpen: isDecision
       ? (decisionView!.primaryEvidence

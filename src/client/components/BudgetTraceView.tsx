@@ -1080,7 +1080,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                     <div style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:12px; padding:12px 16px; max-width:240px;")}>
                       <div style={S("font-size:11px; font-family:'IBM Plex Mono',monospace; letter-spacing:0.12em; color:#5C6B77; margin-bottom:5px;")}>EVIDENCE</div>
                       <div style={S("font-size:12.5px; line-height:1.6;")}>{v.drillEvidence}</div>
-                      <a href={v.drillPdfUrl} onClick={(e) => { e.preventDefault(); v.dashSourceOpen(); }} style={S("font-size:12px; cursor:pointer;")}>{v.isDecision ? "決算資料（Excel）を開く" : "予算書PDFを開く"}</a>
+                      <a href={v.drillPdfUrl} onClick={(e) => { e.preventDefault(); v.dashSourceOpen(); }} style={S("font-size:12px; cursor:pointer;")}>{v.drillEvidenceAction}</a>
                     </div>
                   </div>
 
