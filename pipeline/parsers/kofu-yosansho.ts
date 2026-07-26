@@ -128,6 +128,18 @@ interface Options {
    */
   decodeGarble?: boolean;
   /**
+   * **ASCII 帯が既定（真の字 − 0x1D）と違う位置にあるページの帯オフセット**（2026-07-26・三重 R8）。
+   * `decodeGarble` とセットでのみ使う（単独指定は throw）。**側ごとに指定する** — 三重 R8 の概要は
+   * **1つの PDF に化けの系統が2つ**あり、歳出 p.6 は既定の −0x1D・歳入 p.3 は **+0x3EAC** で化ける。
+   *
+   * ⚠ **既定にできない** — +0x3EAC の帯は **CJK 拡張A の範囲**（U+3ECC–U+3F2A）に落ちるので、
+   *   無条件に適用すると正当な拡張A の漢字を数字に化けさせる。**ページごとに実測して明示する**。
+   * ⚠ 指定しないと**この帯の数字は「漢字」として素通りし、金額が1つも取れずに款行が0件**になる
+   *   （＝大声で落ちるが、拡張A を疑わない実装のままだと原因が見えない。garble-decode.ts の
+   *   `isSuspectGarble` を拡張A まで疑うようにしたのはこのため）。
+   */
+  decodeGarbleBand?: { revenue?: number; expenditure?: number };
+  /**
    * **空セルを「－」で印字する様式**（豊島の総括表・#159）。単独トークンの － を 0 として読む。
    * 豊島 H31 歳入款8 環境性能割交付金は前年度セルが `－`（新設＝皆増）だが、この様式には
    * 「皆増」のラベル列が無いので既存の皆増機構に乗らず、**整数が1つの行として静かに落ちて
@@ -515,7 +527,10 @@ function parseKanPage(
       pdfPageText(filePath, spread.amountPage, undefined, src)
     : pages.map((p) => pdfPageText(filePath, p, cropX, src)).join("\n");
   // ToUnicode 欠落の復号（Options.decodeGarble 参照）。パース前にページ全文を復元する
-  if (opts.decodeGarble) text = decodeGarbleText(text, `${filename} ${pageLabel}`);
+  if (opts.decodeGarble) {
+    const band = side === "revenue" ? opts.decodeGarbleBand?.revenue : opts.decodeGarbleBand?.expenditure;
+    text = decodeGarbleText(text, `${filename} ${pageLabel}`, band);
+  }
   // 原典の誤植をピンポイントで直す（Options.amountTypos 参照）。**dashAsZero・折返し復元より先** —
   // 誤植は原典の印字そのものなので、以降の全処理が「正しい印字」を前提に動けるようにする
   const typos = side === "revenue" ? opts.amountTypos?.revenue : opts.amountTypos?.expenditure;
@@ -2141,6 +2156,10 @@ export function parseKofuYosansho(
       `${source.id}: amountIntIndex と prevIntIndex は2つセットで指定してください` +
         `（現在 amountIntIndex=${opts.amountIntIndex} / prevIntIndex=${opts.prevIntIndex}）`,
     );
+  }
+  // 帯の指定は復号の一部なので、復号しないなら意味を持たない（Options.decodeGarbleBand 参照）
+  if (opts.decodeGarbleBand && !opts.decodeGarble) {
+    throw new Error(`${source.id}: decodeGarbleBand は decodeGarble とセットで指定してください`);
   }
   // 断片の通し方は `kanIndentMax` の例外規則なので、単独では意味を持たない（Options 参照）
   if (opts.kanFragmentsIndented && opts.kanIndentMax == null) {

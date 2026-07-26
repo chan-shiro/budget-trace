@@ -3612,6 +3612,24 @@
       "checkedAt": "2026-07-25T16:54:05.097Z"
     },
     {
+      "sourceId": "mieken-yosan-gaiyou-r8",
+      "url": "https://www.pref.mie.lg.jp/common/content/001238210.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260726080221/https://www.pref.mie.lg.jp/common/content/001238210.pdf",
+      "waybackTimestamp": "20260726080221",
+      "checkedAt": "2026-07-26T08:03:02.779Z",
+      "sha256Match": true,
+      "waybackBytes": 753943
+    },
+    {
+      "sourceId": "mieken-yosan-gaiyou-r8",
+      "url": "https://www.pref.mie.lg.jp/ZAISEI/HP/m0036300317.htm",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260513062848/https://www.pref.mie.lg.jp/ZAISEI/HP/m0036300317.htm",
+      "waybackTimestamp": "20260513062848",
+      "checkedAt": "2026-07-26T08:03:20.685Z"
+    },
+    {
       "sourceId": "minami-alps-yosansho-r8",
       "url": "https://www.city.minami-alps.yamanashi.jp/fs/1/4/1/8/3/3/_/__8____________.pdf",
       "kind": "file",

@@ -391,6 +391,8 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.city.meguro.tokyo.jp/zaisei/kusei/yosan/gaiyo08.html": "https://web.archive.org/web/20260307093119/https://www.city.meguro.tokyo.jp/zaisei/kusei/yosan/gaiyo08.html",
   "https://www.pref.mie.lg.jp/common/content/001178138.pdf": "https://web.archive.org/web/20250501083946/https://www.pref.mie.lg.jp/common/content/001178138.pdf",
   "https://www.pref.mie.lg.jp/ZAISEI/HP/m0036300272.htm": "https://web.archive.org/web/20260207021005/https://www.pref.mie.lg.jp/ZAISEI/HP/m0036300272.htm",
+  "https://www.pref.mie.lg.jp/common/content/001238210.pdf": "https://web.archive.org/web/20260726080221/https://www.pref.mie.lg.jp/common/content/001238210.pdf",
+  "https://www.pref.mie.lg.jp/ZAISEI/HP/m0036300317.htm": "https://web.archive.org/web/20260513062848/https://www.pref.mie.lg.jp/ZAISEI/HP/m0036300317.htm",
   "https://www.city.minami-alps.yamanashi.jp/fs/1/4/1/8/3/3/_/__8____________.pdf": "https://web.archive.org/web/20260713114137/https://www.city.minami-alps.yamanashi.jp/fs/1/4/1/8/3/3/_/__8____________.pdf",
   "https://www.city.minato.tokyo.jp/documents/4694/h19_yosangaiyo_03.pdf": "https://web.archive.org/web/20260717225100/https://www.city.minato.tokyo.jp/documents/4694/h19_yosangaiyo_03.pdf",
   "https://www.city.minato.tokyo.jp/kuse/zaise/yosan/": "https://web.archive.org/web/20260516044517/https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
