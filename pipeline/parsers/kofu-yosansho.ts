@@ -128,6 +128,18 @@ interface Options {
    */
   decodeGarble?: boolean;
   /**
+   * **ASCII 帯が既定（真の字 − 0x1D）と違う位置にあるページの帯オフセット**（2026-07-26・三重 R8）。
+   * `decodeGarble` とセットでのみ使う（単独指定は throw）。**側ごとに指定する** — 三重 R8 の概要は
+   * **1つの PDF に化けの系統が2つ**あり、歳出 p.6 は既定の −0x1D・歳入 p.3 は **+0x3EAC** で化ける。
+   *
+   * ⚠ **既定にできない** — +0x3EAC の帯は **CJK 拡張A の範囲**（U+3ECC–U+3F2A）に落ちるので、
+   *   無条件に適用すると正当な拡張A の漢字を数字に化けさせる。**ページごとに実測して明示する**。
+   * ⚠ 指定しないと**この帯の数字は「漢字」として素通りし、金額が1つも取れずに款行が0件**になる
+   *   （＝大声で落ちるが、拡張A を疑わない実装のままだと原因が見えない。garble-decode.ts の
+   *   `isSuspectGarble` を拡張A まで疑うようにしたのはこのため）。
+   */
+  decodeGarbleBand?: { revenue?: number; expenditure?: number };
+  /**
    * **空セルを「－」で印字する様式**（豊島の総括表・#159）。単独トークンの － を 0 として読む。
    * 豊島 H31 歳入款8 環境性能割交付金は前年度セルが `－`（新設＝皆増）だが、この様式には
    * 「皆増」のラベル列が無いので既存の皆増機構に乗らず、**整数が1つの行として静かに落ちて
@@ -166,6 +178,24 @@ interface Options {
   amountIntIndex?: number;
   prevIntIndex?: number;
   /**
+   * **金額が原典のセル幅で改行され、桁区切りの途中で次行へ折り返す様式**（2026-07-26・愛知 R8/R7）。
+   * 愛知の説明書は歳出の合計行だけ列幅が足りず、**カンマで切れた頭が上段・残りの3桁が下段**に落ちる:
+   * ```
+   * 歳 出 合 計   3,222,441, 2,941,301, 281,140,000 … 2,263,558,
+   *                   000        000                       947
+   * ```
+   * → 合計が **3,222**（末尾カンマが落ちて `3,222,441` の先頭だけが読まれるのではなく、
+   * `AMOUNT_RE` が `3,222,441,` を拾って `toAmount` が `3222441` を返す）になり、**Σ 不一致で
+   * validate が止まる**（＝静かには壊れない。Σ款の積み上げ自体は正しい）。
+   *
+   * 指定すると、**末尾がカンマの数値トークン**を持つ行を、次行の断片と**順番どおりに**連結する。
+   * ⚠ **連結できない形なら throw する**（静かに別の値を作らない）。次行が
+   *   「末尾カンマの個数と同数・すべて1〜3桁の数字だけ」でなければ落とす。
+   * ⚠ 既定にしない — 末尾カンマ自体はまず起きないが、**「次行の先頭を数字として食う」規則**は
+   *   様式次第で本物の行を壊しうるので、様式を確認した資料でだけ立てる。
+   */
+  joinWrappedAmounts?: boolean;
+  /**
    * **款と項が同一表に混在する様式**（大阪 §8e・相模原 §8p）で、**款行の字下げの上限**。
    * 指定するとこれより深く字下げされた行は款のパースから外れる（＝項・目の行を款と誤認しない）。
    *
@@ -177,6 +207,47 @@ interface Options {
    * 指定しないと**項がすべて款として拾われ、Σ が2倍以上に膨らむ**（＝Σ ゲートが止める）。
    */
   kanIndentMax?: number;
+  /**
+   * **款名の断片（折返し）が項と同じ字下げ帯に来る様式**（2026-07-26・静岡県）。`kanIndentMax` と
+   * セットでのみ使う（単独指定は throw）。
+   *
+   * 静岡の第3表/第5表は款と項が同一表にあり、款は字下げ0〜1・項は4以上で分かれる（＝`kanIndentMax` が
+   * 効く）が、**款名の折返しが字下げ5〜17 の帯に落ちる**ため、素の `kanIndentMax` は款の断片まで
+   * 消してしまう:
+   * ```
+   *      交 通 安 全 対 策            ← 款7 の上段（字下げ5）
+   * 7    特  別  交  付  金   800 …   ← 款行（字下げ0）
+   *      分   担   金  及  び         ← 款8 の上段
+   * 8                      5,098 …   ← 款行（名前欄が空）
+   *      負       担     金           ← 款8 の下段
+   * 9    使  用  料  及  び            ← 款9 は款行に金額が無く
+   *      手      数      料  14,958 … ←   金額が次行（字下げ5）に来る
+   * ```
+   * 消すと**款7 が `特別交付金` に化け、款8・款9 が丸ごと落ちる**（Σ ゲートは止めるが収録できない）。
+   *
+   * 指定すると、字下げ超過の行のうち**行頭に数字が無い行だけ**を通す（＝款番号列にも項番号列にも
+   * 数字が無い行＝表の「名前だけの行」）。数字で始まる字下げ超過の行（＝項行）は**通さないうえに
+   * 溜まっている断片を破棄する**。
+   *
+   * ⚠ **破棄が対になっていないと静かに壊れる**。款の断片は款行と連続するが、項にも折返しがあり
+   *   （静岡の歳入 `及 び 過 料 等`＝款15 項1 の下段、歳出 `株 式 等 譲 渡` `性 能 割 交 付 金`）、
+   *   これらは行頭に数字が無いので**同じ規則で通ってしまう**。項行を1つでも挟んだら
+   *   その断片は款のものではない、という不変条件で捨てる。捨てないと `及び過料等県債`（款16）に
+   *   なる — **Σ は4系統とも差0 のままなので目視でしか気づけない**。
+   */
+  kanFragmentsIndented?: boolean;
+  /**
+   * **原典の誤植をピンポイントで直す**（2026-07-26・静岡県）。側ごとに「印字されているトークン →
+   * 正しいトークン」を与える。静岡の第5表は款15 諸支出金の R7 額の桁区切りが**ピリオド**で、
+   * `277,212  263.401  13,811` と印字される（**R7 号の同じ箇所も同じ誤植＝毎年必発**）。
+   * 小数は構成比として捨てられるので、放置すると前年度額が比較増減 13,811 にずれる。
+   *
+   * ⚠ **一括の正規表現にしない**（`\d+\.\d{3}` を桁区切りとみなす等）。同じ表に構成比の小数が
+   *   並んでおり、規則にすると**正当な小数まで金額に化ける**。
+   * ⚠ **ちょうど1回だけ現れることを要求し、0回でも2回以上でも throw する**。発行元が誤植を直した
+   *   ときに黙って素通りさせない（＝次に来る人が「まだ誤植がある」と誤解しない）ため。
+   */
+  amountTypos?: { revenue?: Record<string, string>; expenditure?: Record<string, string> };
   /**
    * **款番号を持たない様式**（2026-07-16・岡山 R8 で発見）。指定すると、款番号が無くても
    * 「日本語の款名＋整数金額2つ以上」の行を款として拾う（`kanNo: null`）。
@@ -314,6 +385,42 @@ const AMOUNT_RE = /[△▲]?[\d,]+(?:\.\d+)?/g;
  */
 const stripPercents = (s: string): string => s.replace(/[\d,]+(?:\.\d+)?\s*[%％]/g, " ");
 
+/**
+ * **桁区切りの途中で次行へ折り返した金額を戻す**（Options.joinWrappedAmounts 参照）。
+ *
+ * 「末尾がカンマの数値トークン」は正しい表記としては存在しないので、**その存在自体が折返しの印**。
+ * 次行の断片と**出現順で1:1に**組む（`-layout` の桁位置は上下段で揃っていないため x 座標では組めない
+ * — 愛知の下段は上段のセル左端ではなく**桁の続き**の位置に来る）。
+ * 順で組む以上、件数が合わないまま組むと**静かに別の値**になるので、合わなければ throw する。
+ */
+function joinWrappedAmountLines(text: string, where: string): string {
+  const out: string[] = [];
+  const lines = text.split("\n");
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i]!;
+    // 末尾がカンマの数値トークン（`3,222,441,`）。前後がカンマ・数字でないことを要求して
+    // 正常な金額（`1,314,000,000`）の途中に当たらないようにする
+    const re = /(?<![\d,])[\d,]*\d,(?![\d,])/g;
+    const heads = line.match(re);
+    if (!heads) {
+      out.push(line);
+      continue;
+    }
+    const tails = (lines[i + 1] ?? "").trim().split(/\s+/).filter(Boolean);
+    if (tails.length !== heads.length || !tails.every((t) => /^\d{1,3}$/.test(t))) {
+      throw new Error(
+        `${where}: 折り返した金額を戻せません（末尾カンマ ${heads.length} 個 / 次行の断片 ` +
+          `${tails.length} 個: ${tails.join(" ")}）。順番で組む規則なので、数が合わないまま` +
+          `組むと静かに別の金額になります: ${line.trim()}`,
+      );
+    }
+    let j = 0;
+    out.push(line.replace(/(?<![\d,])[\d,]*\d,(?![\d,])/g, (m) => m + tails[j++]!));
+    i++; // 断片の行は消費した
+  }
+  return out.join("\n");
+}
+
 /** "1,234" / "△1,234" / "▲1,234" → number。構成比などの小数は対象外（呼び出し側で弾く） */
 function toAmount(token: string): number {
   const neg = /^[△▲-]/.test(token);
@@ -420,7 +527,28 @@ function parseKanPage(
       pdfPageText(filePath, spread.amountPage, undefined, src)
     : pages.map((p) => pdfPageText(filePath, p, cropX, src)).join("\n");
   // ToUnicode 欠落の復号（Options.decodeGarble 参照）。パース前にページ全文を復元する
-  if (opts.decodeGarble) text = decodeGarbleText(text, `${filename} ${pageLabel}`);
+  if (opts.decodeGarble) {
+    const band = side === "revenue" ? opts.decodeGarbleBand?.revenue : opts.decodeGarbleBand?.expenditure;
+    text = decodeGarbleText(text, `${filename} ${pageLabel}`, band);
+  }
+  // 原典の誤植をピンポイントで直す（Options.amountTypos 参照）。**dashAsZero・折返し復元より先** —
+  // 誤植は原典の印字そのものなので、以降の全処理が「正しい印字」を前提に動けるようにする
+  const typos = side === "revenue" ? opts.amountTypos?.revenue : opts.amountTypos?.expenditure;
+  for (const [from, to] of Object.entries(typos ?? {})) {
+    const re = new RegExp(`(?<![\\d,.])${from.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?![\\d,.])`, "g");
+    const n = (text.match(re) ?? []).length;
+    if (n !== 1) {
+      throw new Error(
+        `${filename} ${pageLabel}: amountTypos の「${from}」が ${n} 回見つかりました（1回であるべき）。` +
+          `発行元が誤植を直したか版面が変わった可能性があるので、原典を見て指定を外すか直してください。`,
+      );
+    }
+    text = text.replace(re, to);
+  }
+  // セル幅で折り返した金額を戻す（Options.joinWrappedAmounts 参照）。dashAsZero より先に置く
+  // — ダッシュの 0 化は「単独トークン」を見るので、折返しを戻す前後で結果は変わらないが、
+  // 「原典の欠けを埋めてから読む」順のほうが以降の全処理が同じ前提で動く
+  if (opts.joinWrappedAmounts) text = joinWrappedAmountLines(text, `${filename} ${pageLabel}`);
   // 空セルの － を 0 に（Options.dashAsZero 参照）。単独トークンだけ・款名中のハイフンには当たらない。
   // ⚠ 文字クラスはまとめて広い（U+002D ASCII / U+2010-2015 / U+2212 / U+FF0D）。1文字ずつ足すと
   //   同じ穴を何度も踏む（豊島=－ で作り、岡山で ― を、静岡で - を踏んだ）。
@@ -697,7 +825,19 @@ function parseKanPage(
     // 款項が同一表に混在する様式（Options.kanIndentMax 参照）: 深く字下げされた項・目を外す
     if (opts.kanIndentMax != null && compact !== "") {
       const indent = raw.length - raw.trimStart().length;
-      if (indent > opts.kanIndentMax) continue;
+      if (indent > opts.kanIndentMax) {
+        // 款名の断片が項と同じ帯に来る様式（Options.kanFragmentsIndented 参照）。
+        // 行頭に数字がある＝項行なので通さず、**溜まっている断片も破棄する**
+        // （款の断片は款行と連続する。項行を挟んだ断片は款のものではない）。
+        if (!opts.kanFragmentsIndented || /^\s*[○◎●]*\s*\d/.test(raw)) {
+          if (opts.kanFragmentsIndented) {
+            reset();
+            openLine = null;
+          }
+          continue;
+        }
+        // 行頭に数字が無い字下げ超過の行は款名の断片／折返しの金額行として通す
+      }
     }
     if (compact === "") {
       reset(); // 行間の空行で断片を破棄（款は空行を挟まず連続する）
@@ -2016,6 +2156,14 @@ export function parseKofuYosansho(
       `${source.id}: amountIntIndex と prevIntIndex は2つセットで指定してください` +
         `（現在 amountIntIndex=${opts.amountIntIndex} / prevIntIndex=${opts.prevIntIndex}）`,
     );
+  }
+  // 帯の指定は復号の一部なので、復号しないなら意味を持たない（Options.decodeGarbleBand 参照）
+  if (opts.decodeGarbleBand && !opts.decodeGarble) {
+    throw new Error(`${source.id}: decodeGarbleBand は decodeGarble とセットで指定してください`);
+  }
+  // 断片の通し方は `kanIndentMax` の例外規則なので、単独では意味を持たない（Options 参照）
+  if (opts.kanFragmentsIndented && opts.kanIndentMax == null) {
+    throw new Error(`${source.id}: kanFragmentsIndented は kanIndentMax とセットで指定してください`);
   }
   // 単数 revenuePage と複数 revenuePages のどちらか一方。内部は常にページ配列で扱う
   const sidePages = (

@@ -2093,11 +2093,16 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     { srcId: "yamaguchiken-yosan-setsumeisho-r8", muniCode: "350001", muniName: "山口県", prefName: "山口県", isPref: true },
     // 2026-07-26 第6弾。⚠ 県と県内市を取り違えない（群馬県 100005 ≠ 前橋市 102016 /
     //    福島県 070009 ≠ 福島市 072010 / 三重県 240001 ≠ 津市 242012 / 鹿児島県 460001 ≠ 鹿児島市 462012）。
-    //    ⚠ **三重だけ R7**（R8 は ToUnicode 欠落で読めない。registry のコメント参照）。
+    //    ⚠ 三重は当初 R7 だけだった（R8 が ToUnicode 欠落で読めなかったため）が、2026-07-26 に
+    //      復号を直して **R8 を追加した**（＝三重だけ2年度。年度切替が効く。registry のコメント参照）。
     { srcId: "fukushimaken-yosansho-r8", muniCode: "070009", muniName: "福島県", prefName: "福島県", isPref: true },
     { srcId: "gunma-ken-yosansetsumeisho-r8", muniCode: "100005", muniName: "群馬県", prefName: "群馬県", isPref: true },
+    { srcId: "mieken-yosan-gaiyou-r8", muniCode: "240001", muniName: "三重県", prefName: "三重県", isPref: true },
     { srcId: "mieken-yosan-gaiyou-r7", muniCode: "240001", muniName: "三重県", prefName: "三重県", isPref: true },
     { srcId: "kagoshima-ken-yosan-setsumeisho-r8", muniCode: "460001", muniName: "鹿児島県", prefName: "鹿児島県", isPref: true },
+    // 2026-07-26 第7弾（パーサ改修で開いた県）。⚠ **愛知県 230006 ≠ 名古屋市 231002**。
+    { srcId: "aichi-yosan-setsumeisho-r8", muniCode: "230006", muniName: "愛知県", prefName: "愛知県", isPref: true },
+    { srcId: "shizuokaken-zaisei-aramashi-157", muniCode: "220001", muniName: "静岡県", prefName: "静岡県", isPref: true },
     // 東京都（2026-07-22 追加・#124）。予算概要CSV（H29〜R8 の10年）。PDF は全経路パース不可のため
     // CSV が唯一の経路（registry のコメント参照）。歳出は款再編が2回（R5・R6）あり款名結合が切れる。
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29"] as const).map((fy) => ({
