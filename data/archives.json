@@ -1262,6 +1262,24 @@
       "sha256Match": true
     },
     {
+      "sourceId": "fukushimaken-yosansho-r8",
+      "url": "https://www.pref.fukushima.lg.jp/sec/01115b/08tousyoyosangaiyou.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260725165101/https://www.pref.fukushima.lg.jp/sec/01115b/08tousyoyosangaiyou.html",
+      "waybackTimestamp": "20260725165101",
+      "checkedAt": "2026-07-25T16:53:01.113Z"
+    },
+    {
+      "sourceId": "fukushimaken-yosansho-r8",
+      "url": "https://www.pref.fukushima.lg.jp/uploaded/attachment/734665.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260725164833/https://www.pref.fukushima.lg.jp/uploaded/attachment/734665.pdf",
+      "waybackTimestamp": "20260725164833",
+      "checkedAt": "2026-07-25T16:50:52.810Z",
+      "sha256Match": true,
+      "waybackBytes": 1911642
+    },
+    {
       "sourceId": "gifuken-yosan-keisu-r8",
       "url": "https://www.pref.gifu.lg.jp/page/482100.html",
       "kind": "landing",
@@ -1278,6 +1296,24 @@
       "checkedAt": "2026-07-25T10:00:44.403Z",
       "sha256Match": true,
       "waybackBytes": 767487
+    },
+    {
+      "sourceId": "gunma-ken-yosansetsumeisho-r8",
+      "url": "https://www.pref.gunma.jp/site/gunmazaisei/743220.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260725163837/https://www.pref.gunma.jp/site/gunmazaisei/743220.html",
+      "waybackTimestamp": "20260725163837",
+      "checkedAt": "2026-07-25T16:55:27.117Z"
+    },
+    {
+      "sourceId": "gunma-ken-yosansetsumeisho-r8",
+      "url": "https://www.pref.gunma.jp/uploaded/attachment/690172.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260725163519/https://www.pref.gunma.jp/uploaded/attachment/690172.pdf",
+      "waybackTimestamp": "20260725163519",
+      "checkedAt": "2026-07-25T16:54:57.998Z",
+      "sha256Match": true,
+      "waybackBytes": 14052701
     },
     {
       "sourceId": "hamamatsu-yosansho-r4",
@@ -1543,6 +1579,24 @@
       "waybackTimestamp": "20260713094338",
       "checkedAt": "2026-07-13T13:09:05.827Z",
       "sha256Match": true
+    },
+    {
+      "sourceId": "kagoshima-ken-yosan-setsumeisho-r8",
+      "url": "https://www.pref.kagoshima.jp/ab05/documents/127227_20260319114612-1.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260725164554/https://www.pref.kagoshima.jp/ab05/documents/127227_20260319114612-1.pdf",
+      "waybackTimestamp": "20260725164554",
+      "checkedAt": "2026-07-25T16:46:23.248Z",
+      "sha256Match": true,
+      "waybackBytes": 4652563
+    },
+    {
+      "sourceId": "kagoshima-ken-yosan-setsumeisho-r8",
+      "url": "https://www.pref.kagoshima.jp/ab05/r8_tousyo.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260725164704/https://www.pref.kagoshima.jp/ab05/r8_tousyo.html",
+      "waybackTimestamp": "20260725164704",
+      "checkedAt": "2026-07-25T16:48:01.730Z"
     },
     {
       "sourceId": "kanagawa-yosansho-r8",
@@ -3520,6 +3574,24 @@
       "waybackUrl": "https://web.archive.org/web/20260307093119/https://www.city.meguro.tokyo.jp/zaisei/kusei/yosan/gaiyo08.html",
       "waybackTimestamp": "20260307093119",
       "checkedAt": "2026-07-16T07:16:22.041Z"
+    },
+    {
+      "sourceId": "mieken-yosan-gaiyou-r7",
+      "url": "https://www.pref.mie.lg.jp/common/content/001178138.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250501083946/https://www.pref.mie.lg.jp/common/content/001178138.pdf",
+      "waybackTimestamp": "20250501083946",
+      "checkedAt": "2026-07-25T16:53:42.044Z",
+      "sha256Match": true,
+      "waybackBytes": 1903345
+    },
+    {
+      "sourceId": "mieken-yosan-gaiyou-r7",
+      "url": "https://www.pref.mie.lg.jp/ZAISEI/HP/m0036300272.htm",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260207021005/https://www.pref.mie.lg.jp/ZAISEI/HP/m0036300272.htm",
+      "waybackTimestamp": "20260207021005",
+      "checkedAt": "2026-07-25T16:54:05.097Z"
     },
     {
       "sourceId": "minami-alps-yosansho-r8",
