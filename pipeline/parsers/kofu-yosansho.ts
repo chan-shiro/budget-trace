@@ -166,6 +166,24 @@ interface Options {
   amountIntIndex?: number;
   prevIntIndex?: number;
   /**
+   * **金額が原典のセル幅で改行され、桁区切りの途中で次行へ折り返す様式**（2026-07-26・愛知 R8/R7）。
+   * 愛知の説明書は歳出の合計行だけ列幅が足りず、**カンマで切れた頭が上段・残りの3桁が下段**に落ちる:
+   * ```
+   * 歳 出 合 計   3,222,441, 2,941,301, 281,140,000 … 2,263,558,
+   *                   000        000                       947
+   * ```
+   * → 合計が **3,222**（末尾カンマが落ちて `3,222,441` の先頭だけが読まれるのではなく、
+   * `AMOUNT_RE` が `3,222,441,` を拾って `toAmount` が `3222441` を返す）になり、**Σ 不一致で
+   * validate が止まる**（＝静かには壊れない。Σ款の積み上げ自体は正しい）。
+   *
+   * 指定すると、**末尾がカンマの数値トークン**を持つ行を、次行の断片と**順番どおりに**連結する。
+   * ⚠ **連結できない形なら throw する**（静かに別の値を作らない）。次行が
+   *   「末尾カンマの個数と同数・すべて1〜3桁の数字だけ」でなければ落とす。
+   * ⚠ 既定にしない — 末尾カンマ自体はまず起きないが、**「次行の先頭を数字として食う」規則**は
+   *   様式次第で本物の行を壊しうるので、様式を確認した資料でだけ立てる。
+   */
+  joinWrappedAmounts?: boolean;
+  /**
    * **款と項が同一表に混在する様式**（大阪 §8e・相模原 §8p）で、**款行の字下げの上限**。
    * 指定するとこれより深く字下げされた行は款のパースから外れる（＝項・目の行を款と誤認しない）。
    *
@@ -314,6 +332,42 @@ const AMOUNT_RE = /[△▲]?[\d,]+(?:\.\d+)?/g;
  */
 const stripPercents = (s: string): string => s.replace(/[\d,]+(?:\.\d+)?\s*[%％]/g, " ");
 
+/**
+ * **桁区切りの途中で次行へ折り返した金額を戻す**（Options.joinWrappedAmounts 参照）。
+ *
+ * 「末尾がカンマの数値トークン」は正しい表記としては存在しないので、**その存在自体が折返しの印**。
+ * 次行の断片と**出現順で1:1に**組む（`-layout` の桁位置は上下段で揃っていないため x 座標では組めない
+ * — 愛知の下段は上段のセル左端ではなく**桁の続き**の位置に来る）。
+ * 順で組む以上、件数が合わないまま組むと**静かに別の値**になるので、合わなければ throw する。
+ */
+function joinWrappedAmountLines(text: string, where: string): string {
+  const out: string[] = [];
+  const lines = text.split("\n");
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i]!;
+    // 末尾がカンマの数値トークン（`3,222,441,`）。前後がカンマ・数字でないことを要求して
+    // 正常な金額（`1,314,000,000`）の途中に当たらないようにする
+    const re = /(?<![\d,])[\d,]*\d,(?![\d,])/g;
+    const heads = line.match(re);
+    if (!heads) {
+      out.push(line);
+      continue;
+    }
+    const tails = (lines[i + 1] ?? "").trim().split(/\s+/).filter(Boolean);
+    if (tails.length !== heads.length || !tails.every((t) => /^\d{1,3}$/.test(t))) {
+      throw new Error(
+        `${where}: 折り返した金額を戻せません（末尾カンマ ${heads.length} 個 / 次行の断片 ` +
+          `${tails.length} 個: ${tails.join(" ")}）。順番で組む規則なので、数が合わないまま` +
+          `組むと静かに別の金額になります: ${line.trim()}`,
+      );
+    }
+    let j = 0;
+    out.push(line.replace(/(?<![\d,])[\d,]*\d,(?![\d,])/g, (m) => m + tails[j++]!));
+    i++; // 断片の行は消費した
+  }
+  return out.join("\n");
+}
+
 /** "1,234" / "△1,234" / "▲1,234" → number。構成比などの小数は対象外（呼び出し側で弾く） */
 function toAmount(token: string): number {
   const neg = /^[△▲-]/.test(token);
@@ -421,6 +475,10 @@ function parseKanPage(
     : pages.map((p) => pdfPageText(filePath, p, cropX, src)).join("\n");
   // ToUnicode 欠落の復号（Options.decodeGarble 参照）。パース前にページ全文を復元する
   if (opts.decodeGarble) text = decodeGarbleText(text, `${filename} ${pageLabel}`);
+  // セル幅で折り返した金額を戻す（Options.joinWrappedAmounts 参照）。dashAsZero より先に置く
+  // — ダッシュの 0 化は「単独トークン」を見るので、折返しを戻す前後で結果は変わらないが、
+  // 「原典の欠けを埋めてから読む」順のほうが以降の全処理が同じ前提で動く
+  if (opts.joinWrappedAmounts) text = joinWrappedAmountLines(text, `${filename} ${pageLabel}`);
   // 空セルの － を 0 に（Options.dashAsZero 参照）。単独トークンだけ・款名中のハイフンには当たらない。
   // ⚠ 文字クラスはまとめて広い（U+002D ASCII / U+2010-2015 / U+2212 / U+FF0D）。1文字ずつ足すと
   //   同じ穴を何度も踏む（豊島=－ で作り、岡山で ― を、静岡で - を踏んだ）。

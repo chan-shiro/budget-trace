@@ -123,6 +123,24 @@
       "checkedAt": "2026-07-16T07:53:45.900Z"
     },
     {
+      "sourceId": "aichi-yosan-setsumeisho-r8",
+      "url": "https://www.pref.aichi.jp/soshiki/zaisei/r8-gian-kansuru.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260308175820/https://www.pref.aichi.jp/soshiki/zaisei/r8-gian-kansuru.html",
+      "waybackTimestamp": "20260308175820",
+      "checkedAt": "2026-07-26T07:37:01.771Z"
+    },
+    {
+      "sourceId": "aichi-yosan-setsumeisho-r8",
+      "url": "https://www.pref.aichi.jp/uploaded/attachment/600028.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260726073610/https://www.pref.aichi.jp/uploaded/attachment/600028.pdf",
+      "waybackTimestamp": "20260726073610",
+      "checkedAt": "2026-07-26T07:36:45.957Z",
+      "sha256Match": true,
+      "waybackBytes": 3988467
+    },
+    {
       "sourceId": "arakawa-setsumei-r2",
       "url": "https://www.city.arakawa.tokyo.jp/a002/zaisei/yosan/2yosansyo.html",
       "kind": "landing",

@@ -17,6 +17,8 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.city.adachi.tokyo.jp/zaise/ku/kuse/zaise-y-r7tosyo.html": "https://web.archive.org/web/20250131112112/https://www.city.adachi.tokyo.jp/zaise/ku/kuse/zaise-y-r7tosyo.html",
   "https://www.city.adachi.tokyo.jp/documents/74956/r8_yosan_aramashi_link.pdf": "https://web.archive.org/web/20260130080125/https://www.city.adachi.tokyo.jp/documents/74956/r8_yosan_aramashi_link.pdf",
   "https://www.city.adachi.tokyo.jp/zaise/ku/kuse/zaise-y-r8tosyo.html": "https://web.archive.org/web/20260419050638/https://www.city.adachi.tokyo.jp/zaise/ku/kuse/zaise-y-r8tosyo.html",
+  "https://www.pref.aichi.jp/soshiki/zaisei/r8-gian-kansuru.html": "https://web.archive.org/web/20260308175820/https://www.pref.aichi.jp/soshiki/zaisei/r8-gian-kansuru.html",
+  "https://www.pref.aichi.jp/uploaded/attachment/600028.pdf": "https://web.archive.org/web/20260726073610/https://www.pref.aichi.jp/uploaded/attachment/600028.pdf",
   "https://www.city.arakawa.tokyo.jp/a002/zaisei/yosan/2yosansyo.html": "https://web.archive.org/web/20250713180302/https://www.city.arakawa.tokyo.jp/a002/zaisei/yosan/2yosansyo.html",
   "https://www.city.arakawa.tokyo.jp/documents/27655/r2_yosan-setumeisyo.pdf": "https://web.archive.org/web/20260723044339/https://www.city.arakawa.tokyo.jp/documents/27655/r2_yosan-setumeisyo.pdf",
   "https://www.city.arakawa.tokyo.jp/a002/zaisei/yosan/3yosannsyo.html": "https://web.archive.org/web/20260314173025/https://www.city.arakawa.tokyo.jp/a002/zaisei/yosan/3yosannsyo.html",
