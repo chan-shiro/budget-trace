@@ -218,6 +218,43 @@ interface Options {
    */
   totalAmountNextLine?: boolean;
   /**
+   * **前年度セルが完全な空欄の款**（側ごとに款番号で明示・2026-07-27・富山県 R8）。
+   *
+   * 富山の歳入款2「利子割清算金」は R8 新設で、前年度セルに **`－` すら印字されず**「皆増」の語も無い:
+   * ```
+   *  2   利  子  割  清  算  金      512,000                                512,000
+   * ```
+   * ints が `[当年度, 比較]` の2つに詰まるため既定は**比較列 512,000 を前年度として読み**、
+   * **前年度Σが +512,000 ずれる**。⚠ 前年度Σの不一致は **error ではなく warning** なので
+   * derive まで流れ、画面の前年度合計と caveats に嘘が出る。
+   *
+   * ⚠ **`dashAsZero` では救えない**（ダッシュが無い）。**`amountTypos` も使わない** — あれは
+   *   「原典の誤植」用で、空セルは誤植ではないし、from 文字列が版面の空白数に依存して腐る。
+   * ⚠ **款番号で明示する**（`kanNameContinues` と同じ思想）。「ints が2個なら前年度0」と推測すると
+   *   本当に前年度が2列しかない様式を壊す。
+   * ⚠ **その款の ints が3個以上になったら throw する** — 発行元が翌年度に前年度額を埋めたら
+   *   この指定は不要になるので、黙って 0 で上書きせず気づけるようにしてある。
+   */
+  prevBlankAsZero?: { revenue?: number[]; expenditure?: number[] };
+  /**
+   * **款行に項番号と項名が同居する様式**（2026-07-27・佐賀県）。`kanIndentMax` とセットで使う。
+   *
+   * 佐賀の総括は款と項が同一表で、**項が1つしかない款は款行に項が並ぶ**:
+   * ```
+   *  2 地方消費税清算金   1 地方消費税清算金     47,596,000    46,366,000    1,230,000
+   *  3 地方譲与税                     19,439,000    18,804,000      635,000   ← 項が複数の款は同居しない
+   * ```
+   * 既定は先頭の整数 `1`（項番号）を**当年度額として読み**、その款が `1` になって全列が1つずれる
+   * （歳入15款中7款・歳出14款中3款で発生。Σ が大きく割れるので**静かには壊れない**が収録できない）。
+   *
+   * 指定すると、**先頭の整数トークンの直後が日本語（＝項名）なら、その整数を項番号とみなして落とす**。
+   * ⚠ **単位語は除く** — `35,300,000 千円` のようにインラインで単位が付く様式（北杜）を壊さないため、
+   *   直後が `千円`/`百万円`/`円` のときは落とさない。
+   * ⚠ 落とすのは**先頭の1つだけ**。2つ目以降の整数は必ず金額なので触らない。
+   * ⚠ `revenueCropX` では救えない（項カラムが**款名と金額の中間帯**にあり、`-x/-W` は連続1帯しか切れない）。
+   */
+  kanRowInlineKoNo?: boolean;
+  /**
    * **款と項が同一表に混在する様式**（大阪 §8e・相模原 §8p）で、**款行の字下げの上限**。
    * 指定するとこれより深く字下げされた行は款のパースから外れる（＝項・目の行を款と誤認しない）。
    *
@@ -750,6 +787,20 @@ function parseKanPage(
       // 2つに詰まる通常の皆増（甲府 R2 款6）は従来どおり 0。
       const printedPrev = ints.length >= 3 ? toAmount(ints[1]!) : 0;
       prevAmount = zeroPrev ? printedPrev : toAmount(ints[prevIdx]!);
+      // 前年度セルが完全な空欄の款（Options.prevBlankAsZero 参照）。**款番号で明示された款だけ**
+      // 前年度を 0 にする。⚠ ints が3個以上＝前年度が印字されているので throw する
+      // （発行元が翌年度に埋めたら指定が不要になる。黙って 0 で上書きしない）。
+      const blanks = (side === "revenue" ? opts.prevBlankAsZero?.revenue : opts.prevBlankAsZero?.expenditure) ?? [];
+      if (kanNo != null && blanks.includes(kanNo)) {
+        if (ints.length >= 3) {
+          throw new Error(
+            `${filename} ${pageLabel}: prevBlankAsZero に款${kanNo} を指定していますが、この行は` +
+              `整数が ${ints.length} 個あり前年度が印字されています（指定を外してください）: ${raw.trim()}`,
+          );
+        }
+        amount = toAmount(ints[0]!);
+        prevAmount = 0;
+      }
     }
     // 款名の**前後に付いた空セルのダッシュ**を落とす（2026-07-25・茨城 R8）。
     // これまで剥がしていたのは廃止款（皆減・廃款・△▲○）のブランチだけで、**皆増行では素通り**
@@ -936,7 +987,15 @@ function parseKanPage(
     // **lead の判定より後**に置くこと（款番号は百分率ではないので剥がしてはいけない）。
     const rest = stripPercents(lead ? raw.slice(raw.indexOf(lead[1]!) + lead[1]!.length) : raw);
     const tokens = rest.match(AMOUNT_RE) ?? [];
-    const ints = tokens.filter((t) => !t.includes("."));
+    let ints = tokens.filter((t) => !t.includes("."));
+    // 款行に同居する項番号を落とす（Options.kanRowInlineKoNo 参照）。
+    // **先頭の整数の直後が日本語なら項名が続いている**＝その整数は金額ではなく項番号。
+    // ⚠ 単位語（`千円` 等）が続く様式（北杜のインライン単位）を壊さないよう除く。
+    if (opts.kanRowInlineKoNo && ints.length > 0 && ints[0] === tokens[0]) {
+      const after = rest.slice(rest.indexOf(tokens[0]!) + tokens[0]!.length);
+      const next = after.replace(/^[\s　]+/, "");
+      if (hasCJKChars(next.slice(0, 1)) && !/^(?:千円|百万円|円)/.test(next)) ints = ints.slice(1);
+    }
     // 款名の三点リーダを落とす（2026-07-16）。堺 R2 は折返しの上段末尾に `…` が入る
     // （`ゴ ル フ 場 利 用 税…` / `国有提供施設等所在…` / `交 通 安 全 対 策…`）が、
     // **同じ款・同じ折返しの R3 には無い**ので款名の一部ではなく R2 の組版の体裁記号。

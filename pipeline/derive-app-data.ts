@@ -2147,6 +2147,16 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     { srcId: "ishikawa-ken-yosan-gaiyou-r8", muniCode: "170003", muniName: "石川県", prefName: "石川県", isPref: true },
     { srcId: "oita-ken-zaisei-jokyo-r8", muniCode: "440001", muniName: "大分県", prefName: "大分県", isPref: true },
     { srcId: "miyazaki-ken-yosansho-r8", muniCode: "450006", muniName: "宮崎県", prefName: "宮崎県", isPref: true },
+    // 2026-07-27 第10弾。⚠ 県と県庁所在市を取り違えない（富山県 160008 ≠ 富山市 162019 /
+    //    香川県 370002 ≠ 高松市 372013 / 秋田県 050008 ≠ 秋田市 052019 /
+    //    和歌山県 300004 ≠ 和歌山市 302015 / 佐賀県 410004 ≠ 佐賀市 412015）。
+    //    ⚠ **和歌山は県エンティティで2件目の `open`**（愛媛はカタログ登載だが、和歌山は
+    //    サイト全体の利用規約が CC BY 互換＝根拠の系統が違う）。
+    { srcId: "toyama-ken-yosansetsumeisho-r8", muniCode: "160008", muniName: "富山県", prefName: "富山県", isPref: true },
+    { srcId: "kagawa-ken-zaisei-jijo-r8", muniCode: "370002", muniName: "香川県", prefName: "香川県", isPref: true },
+    { srcId: "akita-ken-setsumeisho-sokatsu-r8", muniCode: "050008", muniName: "秋田県", prefName: "秋田県", isPref: true },
+    { srcId: "wakayama-ken-yosan-shiryo-r8", muniCode: "300004", muniName: "和歌山県", prefName: "和歌山県", isPref: true },
+    { srcId: "saga-ken-yosansho-r8", muniCode: "410004", muniName: "佐賀県", prefName: "佐賀県", isPref: true },
     { srcId: "shizuokaken-zaisei-aramashi-157", muniCode: "220001", muniName: "静岡県", prefName: "静岡県", isPref: true },
     // 東京都（2026-07-22 追加・#124）。予算概要CSV（H29〜R8 の10年）。PDF は全経路パース不可のため
     // CSV が唯一の経路（registry のコメント参照）。歳出は款再編が2回（R5・R6）あり款名結合が切れる。

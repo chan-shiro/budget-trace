@@ -141,6 +141,24 @@
       "waybackBytes": 3988467
     },
     {
+      "sourceId": "akita-ken-setsumeisho-sokatsu-r8",
+      "url": "https://www.pref.akita.lg.jp/pages/archive/94507",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260421171449/https://www.pref.akita.lg.jp/pages/archive/94507",
+      "waybackTimestamp": "20260421171449",
+      "checkedAt": "2026-07-27T14:41:32.737Z"
+    },
+    {
+      "sourceId": "akita-ken-setsumeisho-sokatsu-r8",
+      "url": "https://www.pref.akita.lg.jp/uploads/public/archive_0000094507_00/%E6%96%B0%E8%A6%8F%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80%E3%83%BC/%E4%BA%88%E7%AE%97%E6%9B%B8%E3%80%90%EF%BC%96%E3%80%91%EF%BC%88%EF%BC%92%E6%9C%88%E8%AD%B0%E4%BC%9A%E3%83%BB%EF%BC%B2%EF%BC%98%E5%BD%93%E5%88%9D%E4%BA%88%E7%AE%97%E5%88%86%EF%BC%89.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260727144020/https://www.pref.akita.lg.jp/uploads/public/archive_0000094507_00/%E6%96%B0%E8%A6%8F%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80%E3%83%BC/%E4%BA%88%E7%AE%97%E6%9B%B8%E3%80%90%EF%BC%96%E3%80%91%EF%BC%88%EF%BC%92%E6%9C%88%E8%AD%B0%E4%BC%9A%E3%83%BB%EF%BC%B2%EF%BC%98%E5%BD%93%E5%88%9D%E4%BA%88%E7%AE%97%E5%88%86%EF%BC%89.pdf",
+      "waybackTimestamp": "20260727144020",
+      "checkedAt": "2026-07-27T14:41:20.560Z",
+      "sha256Match": true,
+      "waybackBytes": 4070973
+    },
+    {
       "sourceId": "aomori-ken-kanbetsu-sokatsu-r8",
       "url": "https://www.pref.aomori.lg.jp/soshiki/zaimu/zaisei/yosan_2026.html",
       "kind": "landing",
@@ -1659,6 +1677,24 @@
       "waybackTimestamp": "20260713094338",
       "checkedAt": "2026-07-13T13:09:05.827Z",
       "sha256Match": true
+    },
+    {
+      "sourceId": "kagawa-ken-zaisei-jijo-r8",
+      "url": "https://www.pref.kagawa.lg.jp/documents/8155/157_01-14_r8toshogaiyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260727143915/https://www.pref.kagawa.lg.jp/documents/8155/157_01-14_r8toshogaiyo.pdf",
+      "waybackTimestamp": "20260727143915",
+      "checkedAt": "2026-07-27T14:39:28.588Z",
+      "sha256Match": true,
+      "waybackBytes": 382358
+    },
+    {
+      "sourceId": "kagawa-ken-zaisei-jijo-r8",
+      "url": "https://www.pref.kagawa.lg.jp/yosan/sogo/z-jijou.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260309004057/https://www.pref.kagawa.lg.jp/yosan/sogo/z-jijou.html",
+      "waybackTimestamp": "20260309004057",
+      "checkedAt": "2026-07-27T14:39:38.459Z"
     },
     {
       "sourceId": "kagoshima-ken-yosan-setsumeisho-r8",
@@ -5278,6 +5314,24 @@
       "waybackUrl": "https://web.archive.org/web/20260411172410/https://www.city.otsuki.yamanashi.jp/shisei/jyohokokai/yosan.html",
       "waybackTimestamp": "20260411172410",
       "checkedAt": "2026-07-14T07:17:01.632Z"
+    },
+    {
+      "sourceId": "saga-ken-yosansho-r8",
+      "url": "https://www.pref.saga.lg.jp/kiji003117997/3_117997_up_6cba1aek.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260727144731/https://www.pref.saga.lg.jp/kiji003117997/3_117997_up_6cba1aek.pdf",
+      "waybackTimestamp": "20260727144731",
+      "checkedAt": "2026-07-27T14:49:16.126Z",
+      "sha256Match": true,
+      "waybackBytes": 10062436
+    },
+    {
+      "sourceId": "saga-ken-yosansho-r8",
+      "url": "https://www.pref.saga.lg.jp/kiji003117997/index.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260727144947/https://www.pref.saga.lg.jp/kiji003117997/index.html",
+      "waybackTimestamp": "20260727144947",
+      "checkedAt": "2026-07-27T14:51:00.040Z"
     },
     {
       "sourceId": "sagamihara-yosansho-r8",
@@ -8918,6 +8972,24 @@
       "sha256Match": true
     },
     {
+      "sourceId": "toyama-ken-yosansetsumeisho-r8",
+      "url": "https://www.pref.toyama.jp/1105/kensei/kenseiunei/zaisei/yosan/r08yosan/r08tousyoyosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260304120701/https://www.pref.toyama.jp/1105/kensei/kenseiunei/zaisei/yosan/r08yosan/r08tousyoyosan.html",
+      "waybackTimestamp": "20260304120701",
+      "checkedAt": "2026-07-27T14:43:30.257Z"
+    },
+    {
+      "sourceId": "toyama-ken-yosansetsumeisho-r8",
+      "url": "https://www.pref.toyama.jp/documents/52665/08yosansetsumeisyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260727144145/https://www.pref.toyama.jp/documents/52665/08yosansetsumeisyo.pdf",
+      "waybackTimestamp": "20260727144145",
+      "checkedAt": "2026-07-27T14:43:26.262Z",
+      "sha256Match": true,
+      "waybackBytes": 4792988
+    },
+    {
       "sourceId": "toyokawa-yosansho-r7",
       "url": "https://www.city.toyokawa.lg.jp/material/files/group/10/R7_yosann.pdf",
       "kind": "file",
@@ -8950,6 +9022,24 @@
       "waybackUrl": "https://web.archive.org/web/20260714072030/https://www.city.tsuru.yamanashi.jp/soshiki/zaimu/zaisei_t/1/1657.html",
       "waybackTimestamp": "20260714072030",
       "checkedAt": "2026-07-14T07:21:40.510Z"
+    },
+    {
+      "sourceId": "wakayama-ken-yosan-shiryo-r8",
+      "url": "https://www.pref.wakayama.lg.jp/prefg/010400/d00221758_d/fil/ippannkaikei.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260727144436/https://www.pref.wakayama.lg.jp/prefg/010400/d00221758_d/fil/ippannkaikei.pdf",
+      "waybackTimestamp": "20260727144436",
+      "checkedAt": "2026-07-27T14:45:14.711Z",
+      "sha256Match": true,
+      "waybackBytes": 218898
+    },
+    {
+      "sourceId": "wakayama-ken-yosan-shiryo-r8",
+      "url": "https://www.pref.wakayama.lg.jp/prefg/010400/d00221758.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260727144557/https://www.pref.wakayama.lg.jp/prefg/010400/d00221758.html",
+      "waybackTimestamp": "20260727144557",
+      "checkedAt": "2026-07-27T14:47:14.824Z"
     },
     {
       "sourceId": "yamaguchi-yosansho-r7",
