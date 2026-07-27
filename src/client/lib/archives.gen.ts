@@ -422,6 +422,7 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.city.minato.tokyo.jp/documents/4694/20260202131316.pdf": "https://web.archive.org/web/20260717223231/https://www.city.minato.tokyo.jp/documents/4694/20260202131316.pdf",
   "https://www.pref.miyagi.jp/documents/63498/aohon_ippannkaikei.pdf": "https://web.archive.org/web/20260725080452/https://www.pref.miyagi.jp/documents/63498/aohon_ippannkaikei.pdf",
   "https://www.pref.miyagi.jp/soshiki/zaisei/zei-r08-yosan.html": "https://web.archive.org/web/20260509234532/https://www.pref.miyagi.jp/soshiki/zaisei/zei-r08-yosan.html",
+  "https://www.pref.miyazaki.lg.jp/documents/106626/106626_20260219100915-1.pdf": "https://web.archive.org/web/20260727085657/https://www.pref.miyazaki.lg.jp/documents/106626/106626_20260219100915-1.pdf",
   "https://www.pref.miyazaki.lg.jp/zaisei/kense/zaise/20260208115417.html": "https://web.archive.org/web/20260325112525/https://www.pref.miyazaki.lg.jp/zaisei/kense/zaise/20260208115417.html",
   "https://www.pref.nagano.lg.jp/zaisei/kensei/soshiki/yosan/r08/documents/r0802_yosetsu_sokatsu.pdf": "https://web.archive.org/web/20260725095656/https://www.pref.nagano.lg.jp/zaisei/kensei/soshiki/yosan/r08/documents/r0802_yosetsu_sokatsu.pdf",
   "https://www.pref.nagano.lg.jp/zaisei/kensei/soshiki/yosan/r08/r8yosanan.html": "https://web.archive.org/web/20260602070343/https://www.pref.nagano.lg.jp/zaisei/kensei/soshiki/yosan/r08/r8yosanan.html",
