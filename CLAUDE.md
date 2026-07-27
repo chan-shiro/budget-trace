@@ -62,6 +62,14 @@ bun run pipeline:archive [sourceId] [--force]   # Wayback Machine へ登録（�
 - `src/client/components/JapanMap.tsx` — 日本地図（地域→都道府県→市区町村ズーム、島しょ部の別枠、エリアズーム、フリーワード検索）。SVG を直接 DOM 操作する React 管理外領域があるため、変更時は `boxRef` 配下と React 描画の境界を崩さないこと。
 - `src/client/components/ui.tsx` — `S()`（CSS 文字列→style オブジェクト。プロトタイプの inline style を逐語移植するためのヘルパ）、`HoverBox`（style-hover 相当）、`CountUpNum`（数値カウントアップ）。既存画面のスタイルは `S("...")` の文字列を**プロトタイプと diff 可能な形で維持**する。
 - `pipeline/registry/roadmap.ts` / `src/client/lib/roadmap.gen.ts` — `/roadmap`（進捗と計画）。**進捗の数字は1つも手書きしない** — coverage と同じ実データから derive が算出する（手書きの数字は必ず実態とズレる）。**手書きは計画（`registry/roadmap.ts`）だけ**で、公開ページなので「時期を約束しない」「進捗の数字を書かない」「done を書かない」の3ルールを derive が機械的に検査する（Markdown 記法・時期の約束は throw）。
+- `pipeline/registry/unrecordable.ts` — **「調べたが収録できなかった」記録**（`/coverage` に出る）。
+  `/coverage` の `×` は「まだ手を付けていない」の意味なので、**一次資料を調べたうえで収録できないと
+  判定したもの**は別の印（`—`）と一覧で開示する。**理由は docs/data-sources.md からの転記だけにする**
+  （推測を断定で書かない。理由が特定できていない年度は載せない）。**「できない」を永久の事実として
+  書かない** — 判定は実際にくつがえる（豊島 R4・R2 と大田 H27 は #159 の復号で収録できた）ので、
+  記録は確認日時点の実測として書く。**団体コードは総務省 R6.json から実引きする**（derive が名前と
+  突合して throw する）。**収録できたのに記録が残っていると derive が止まる**ので静かに腐らない。
+  件数・分類ごとの内訳は derive が算出する（手書きしない）。
 - `src/client/lib/caveats.gen.ts` — **データの注意**（ダッシュボードの「データの注意」セクション）。
   **手で書かない** — `validate` の warning（＝検証ゲートが検出し、原典側の事情と説明できるもの）を
   derive が自治体へ割り当てる。error は検証ゲートで止まり derive に来ないので、出るのは warning だけ。
