@@ -144,6 +144,12 @@ const MUNI_SLUGS: Record<string, string> = {
   "290009": "ken",
   "380008": "ken",
   "420000": "ken",
+  // 2026-07-27 第9弾。⚠ 岩手県 030007 ≠ 盛岡市 032018 / 石川県 170003 ≠ 金沢市 172014 /
+  //    大分県 440001 ≠ 大分市 442011 / 宮崎県 450006 ≠ 宮崎市 452017
+  "030007": "ken",
+  "170003": "ken",
+  "440001": "ken",
+  "450006": "ken",
 };
 
 interface KnownMuni { code: string; name: string; pref: string; slug: string; }

@@ -196,6 +196,24 @@ interface Options {
    */
   joinWrappedAmounts?: boolean;
   /**
+   * **合計行の「ラベル」と「金額」が別行に分かれる様式**（2026-07-27・宮崎県）。宮崎の事項別明細書は
+   * ```
+   *  歳       出       合       計
+   *                             689,950,000    667,959,000    21,991,000  102,015,250 …
+   * ```
+   * とラベル行に整数が0個で、合計行の pre-scan（整数2個以上を要求）が候補を1つも立てられず
+   * **「歳出合計 行が見つかりません」で throw する**（実測）。⚠ **款行も同じ2行構成**だが、
+   * そちらは既存の折返し分岐（台東型の `pendNo` 経由）がそのまま拾うので詰まるのは合計行だけ。
+   *
+   * 指定すると、ラベル行の整数が2個未満のとき**次の非空行**を見て、その行に**日本語が無く**
+   * 整数が2個以上あれば連結して整数列を作る。`totalIdx`（款パースの打切り位置）はラベル行のまま。
+   * ⚠ **日本語を含む行は連結しない** — 次に来るのが款行や注記だと、その金額を合計として読んでしまう。
+   *   「合計の金額行は数字だけの行である」という不変条件で守っている。
+   * ⚠ 既定にしない。既存様式はラベル行に必ず整数が2個以上あるので no-op になるが、
+   *   **「合計が見つからないときに次行を覗く」規則は様式次第で別の行を拾いうる**ので opt-in にする。
+   */
+  totalAmountNextLine?: boolean;
+  /**
    * **款と項が同一表に混在する様式**（大阪 §8e・相模原 §8p）で、**款行の字下げの上限**。
    * 指定するとこれより深く字下げされた行は款のパースから外れる（＝項・目の行を款と誤認しない）。
    *
@@ -771,7 +789,17 @@ function parseKanPage(
     allLines.forEach((raw, i) => {
       if (!raw.replace(/[\s　]/g, "").includes(totalLabel)) return;
       // 構成比 100%（＝整数）が前年度合計に化けるのを防ぐ（stripPercents 参照）
-      const ints = (stripPercents(raw).match(AMOUNT_RE) ?? []).filter((t) => !t.includes("."));
+      let ints = (stripPercents(raw).match(AMOUNT_RE) ?? []).filter((t) => !t.includes("."));
+      // 合計ラベルと金額が別行の様式（Options.totalAmountNextLine 参照）
+      if (opts.totalAmountNextLine && ints.length < 2) {
+        const next = allLines.slice(i + 1).find((l) => l.replace(/[\s　]/g, "") !== "");
+        // **日本語を含む行は連結しない** — 次に来るのが款行や注記なら、その金額を合計として
+        //   読んでしまう。合計の金額行は数字だけの行である、という不変条件で守る
+        if (next != null && !hasCJKChars(next)) {
+          const tail = (stripPercents(next).match(AMOUNT_RE) ?? []).filter((t) => !t.includes("."));
+          if (tail.length >= 2) ints = [...ints, ...tail];
+        }
+      }
       if (ints.length > bestInts) {
         bestInts = ints.length;
         totalIdx = i;
