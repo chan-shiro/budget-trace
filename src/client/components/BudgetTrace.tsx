@@ -1607,6 +1607,13 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
       const d = covData;
       if (!d) return { loading: covLoading, error: covError, ready: false as const };
       const ents = d.entities;
+      // 「調べたが収録できない」記録を団体コードで引けるようにする（表の印に添える）
+      const unrecByCode = new Map<string, typeof d.unrecordable>();
+      for (const u of d.unrecordable) {
+        const list = unrecByCode.get(u.code) ?? [];
+        list.push(u);
+        unrecByCode.set(u.code, list);
+      }
       // 検索は自治体名・都道府県名・団体コードに前方/部分一致（入力即時フィルタ）
       const hit = (name: string, code: string, pref: string) =>
         !q || name.includes(q) || pref.includes(q) || code.startsWith(q);
@@ -1636,18 +1643,23 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
             rows: open
               ? g.rows.map((m) => {
                   const e = ents[m.c];
-                  // 未収録の列 → その場でリクエスト（＝この表がそのまま参加導線になる）
-                  const missing = d.datasets.filter((ds, i) => m.f[i] !== "1");
+                  // 未収録の列 → その場でリクエスト（＝この表がそのまま参加導線になる）。
+                  // **「調べたが収録できない」と判定した列はリクエスト先から外す** — 資料の
+                  // 事情で取れないものを ToDo として起票させるのは読者の手間を無駄にする
+                  const missing = d.datasets.filter((ds, i) => m.f[i] !== "1" && m.u[i] !== "1");
                   const missLabel = missing.map((x) => x.label).join("・");
+                  const unrecOf = (key: string) => unrecByCode.get(m.c)?.filter((u) => u.dataset === key) ?? [];
                   return {
                     code: m.c,
                     name: m.n,
                     tier: e?.tier ?? null,
-                    // 列ごとの ○×（true=収録済み）と、収録済みなら中身の説明
+                    // 列ごとの ○×（true=収録済み）と、収録済みなら中身の説明。
+                    // `unrec` があれば「まだ調べていない（×）」ではなく「調べたが収録できない」
                     marks: d.datasets.map((ds, i) => ({
                       key: ds.key,
                       ok: m.f[i] === "1",
                       detail: e?.detail[ds.key] ?? "",
+                      unrec: m.u[i] === "1" ? unrecOf(ds.key) : [],
                     })),
                     missingCount: missing.length,
                     missLabel,
@@ -1700,6 +1712,26 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
         ),
         national: d.national,
         unclassified: d.unclassified,
+        // 「調べたが収録できなかった」記録。分類ごとにまとめて出す（原因の型が違えば
+        // 打ち手も違うので、自治体順に並べるより分類で束ねたほうが読める）。
+        // **件数は derive が registry から算出したもの**（ここで数え直さない）
+        unrecCount: d.summary.unrecordableCount,
+        unrecEntityCount: d.summary.unrecordableEntityCount,
+        unrecGroups: d.unrecordableCategories
+          .map((c) => ({
+            ...c,
+            // 主分類（categories の先頭）で束ねる。複数分類の記録は先頭の組にだけ出る
+            items: d.unrecordable
+              .filter((u) => u.categories[0] === c.key)
+              .map((u) => ({
+                ...u,
+                // 分類ラベル（複数該当ならすべて）。key → label は derive が持っている
+                catLabels: u.categories
+                  .map((k) => d.unrecordableCategories.find((x) => x.key === k)?.label ?? k)
+                  .join("・"),
+              })),
+          }))
+          .filter((c) => c.items.length > 0),
       };
     })(),
     goSources: () => nav({ screen: "sources" }), goDash: () => nav({ screen: "dash" }),

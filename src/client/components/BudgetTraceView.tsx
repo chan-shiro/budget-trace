@@ -273,7 +273,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
           <HoverBox as="button" onClick={v.goTop} style={S("border:none; background:none; color:#5C6B77; font-size:13px; cursor:pointer; padding:0; margin-bottom:14px; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("color:#1798D0;")}>← トップへ戻る</HoverBox>
           <div style={S("margin-bottom:18px;")}>
             <h1 style={S("margin:0 0 6px; font-size:24px; font-weight:700;")}>データ整備状況</h1>
-            <p style={S("margin:0 0 8px; color:#5C6B77; font-size:13.5px; line-height:1.8; max-width:78ch;")}>全国{v.cov.ready ? v.cov.summary.muniCount.toLocaleString() : "1,741"}市町村を都道府県別に網羅した一覧です。手付かずの自治体も載せています（×＝これからのToDo）。レジストリと魚拓台帳から自動生成しているため、常に実際の収録内容と一致します。</p>
+            <p style={S("margin:0 0 8px; color:#5C6B77; font-size:13.5px; line-height:1.8; max-width:78ch;")}>全国{v.cov.ready ? v.cov.summary.muniCount.toLocaleString() : "1,741"}市町村を都道府県別に網羅した一覧です。手付かずの自治体も載せています（<strong style={S("color:#14181C;")}>×＝これからのToDo</strong>）。一次資料を調べたうえで<strong style={S("color:#8A4B1F;")}>収録できないと判定したもの（—）</strong>は理由と確認日つきで別に開示しています。レジストリと魚拓台帳から自動生成しているため、常に実際の収録内容と一致します。</p>
             <p style={S("margin:0; color:#5C6B77; font-size:12.5px; line-height:1.8; max-width:78ch;")}>
               <strong style={S("color:#14181C;")}>未収録（×）はその場でリクエストできます</strong> — 各行の「＋リクエスト」から、その自治体・その資料の収録リクエストを起票できます（GitHub Issue・👍 の多い順に着手します）。
               <a href={v.requestListUrl} target="_blank" rel="noopener noreferrer" style={S("color:#1798D0; text-decoration:none; margin-left:6px;")}>リクエスト一覧 ↗</a>
@@ -293,6 +293,8 @@ export default function BudgetTraceView({ v }: { v: any }) {
                   { k: "予算（款別）収録", v: `${v.cov.summary.budgetCount}団体`, s: "当初予算＋前年当初比" },
                   { k: "決算で閲覧可", v: `${v.cov.summary.muniCount.toLocaleString()}市町村`, s: `${v.cov.summary.prefCount}都道府県・${v.cov.summary.kessanRange}` },
                   { k: "一次資料", v: `${v.cov.summary.sourceCount}件`, s: `原本${v.cov.summary.fileCount}ファイル・魚拓${v.cov.summary.archivedCount}` },
+                  // 「まだ調べていない」と「調べたが収録できない」は意味が違う。件数は derive が算出する
+                  { k: "調べたが収録できない", v: `${v.cov.unrecCount}件`, s: `${v.cov.unrecEntityCount}団体・理由と確認日つき` },
                 ].map((c: any, i: number) => (
                   <div key={i} style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:12px; padding:12px 14px;")}>
                     <div style={S("font-size:11px; color:#5C6B77; margin-bottom:3px;")}>{c.k}</div>
@@ -335,6 +337,55 @@ export default function BudgetTraceView({ v }: { v: any }) {
                 </div>
               </details>
 
+              {/* ==== 調べたが収録できなかった記録 ====
+                  表の × は既定では「まだ手を付けていない（ToDo）」の意味なので、**調べたうえで
+                  収録できないと判定したもの**をここで開示する。ライセンスの節と同じ作法:
+                  ネイティブの details/summary・初期は閉じる・**畳んでも件数と分類はサマリ行に出す**。
+                  件数は derive が registry（pipeline/registry/unrecordable.ts）から算出したもの。 */}
+              <details style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; padding:0; margin-bottom:18px;")}>
+                <summary style={S("cursor:pointer; padding:13px 18px; list-style:none; display:flex; align-items:center; gap:10px; flex-wrap:wrap;")}>
+                  <span style={S("font-size:14px; font-weight:700; color:#14181C;")}>調べたが収録できなかった記録 <span style={S("font-family:'IBM Plex Mono',monospace;")}>{v.cov.unrecCount}</span>件</span>
+                  <span style={S("display:flex; gap:6px; flex-wrap:wrap;")}>
+                    {v.cov.unrecGroups.map((c: any, i: number) => (
+                      <span key={i} title={c.note} style={S("font-size:11px; border:1px solid #DFE7EC; color:#5C6B77; border-radius:999px; padding:2px 10px; background:#FBFDFE; white-space:nowrap;")}>{c.label} <strong style={S("font-family:'IBM Plex Mono',monospace; color:#14181C;")}>{c.count}</strong></span>
+                    ))}
+                  </span>
+                  <span style={S("font-size:11.5px; color:#5C6B77; margin-left:auto; white-space:nowrap;")}>詳しく ▾</span>
+                </summary>
+                <div style={S("padding:0 18px 16px;")}>
+                  <p style={S("margin:0 0 12px; font-size:12px; color:#5C6B77; line-height:1.85; max-width:80ch;")}>
+                    下の表の <span style={S("color:#DFE7EC;")}>×</span> は<strong style={S("color:#14181C;")}>まだ手を付けていない</strong>という意味です。それとは別に、<strong style={S("color:#14181C;")}>一次資料を実際に調べたうえで収録できないと判定したもの</strong>がここにあります（表では <strong style={S("color:#8A4B1F;")}>—</strong> で示します）。
+                    <br />
+                    <strong style={S("color:#14181C;")}>これは確認日時点の実測であって、恒久的にできないという意味ではありません</strong> — 「壊れていて修復できない」と記録していた資料が、その後の復号処理で実際に収録できるようになった例があります。収録できたときに記録が残り続けないよう、生成時に「本当にまだ収録していないか」を機械的に照合しています。
+                  </p>
+                  {v.cov.unrecGroups.map((c: any, gi: number) => (
+                    <div key={gi} style={S(`${gi > 0 ? "margin-top:14px;" : ""}`)}>
+                      <div style={S("font-size:12.5px; font-weight:700; color:#14181C;")}>{c.label} <span style={S("font-weight:400; color:#8494A0; font-family:'IBM Plex Mono',monospace;")}>{c.count}</span></div>
+                      <div style={S("font-size:11px; color:#8494A0; line-height:1.7; margin-bottom:6px;")}>{c.note}</div>
+                      {c.items.map((u: any, i: number) => (
+                        <div key={i} style={S("background:#FBFDFE; border:1px solid #DFE7EC; border-radius:8px; padding:8px 11px; margin-top:5px;")}>
+                          <div style={S("display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; align-items:baseline;")}>
+                            <span style={S("font-size:12.5px; font-weight:600; color:#14181C;")}>
+                              {u.name}
+                              <span style={S("font-size:9.5px; color:#C6D2DA; margin-left:6px; font-family:'IBM Plex Mono',monospace;")}>{u.code}</span>
+                              <span style={S("font-size:11px; color:#5C6B77; font-weight:400; margin-left:8px;")}>{u.datasetLabel}</span>
+                            </span>
+                            <span style={S("font-size:11px; color:#8A4B1F; font-family:'IBM Plex Mono',monospace;")}>{u.fyLabel}</span>
+                          </div>
+                          <p style={S("margin:4px 0 0; font-size:11.5px; color:#5C6B77; line-height:1.8;")}>{u.reason}</p>
+                          <div style={S("display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-top:4px; font-size:10px; color:#8494A0; font-family:'IBM Plex Mono',monospace;")}>
+                            <span>{u.checkedOn} 確認</span>
+                            <span>{u.catLabels}</span>
+                            {u.url && <a href={u.url} target="_blank" rel="noopener noreferrer" style={S("color:#0F76A3; text-decoration:none;")}>判定した資料 ↗</a>}
+                            <span>{u.ref}</span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              </details>
+
               {/* ==== 網羅一覧（1つの表） ==== */}
               <div style={S("display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:10px;")}>
                 <div style={S("display:flex; align-items:center; gap:8px; flex-wrap:wrap;")}>
@@ -354,10 +405,17 @@ export default function BudgetTraceView({ v }: { v: any }) {
               </div>
 
               {/* 列の凡例 */}
-              <div style={S("display:flex; gap:10px; flex-wrap:wrap; font-size:10.5px; color:#8494A0; margin-bottom:8px;")}>
+              <div style={S("display:flex; gap:10px; flex-wrap:wrap; font-size:10.5px; color:#8494A0; margin-bottom:6px;")}>
                 {v.cov.datasets.map((d: any, i: number) => (
                   <span key={i}><strong style={S("color:#5C6B77;")}>{d.label}</strong> = {d.full}</span>
                 ))}
+              </div>
+              {/* 印の凡例 — 「まだ調べていない」と「調べたが収録できない」を読者が区別できるようにする */}
+              <div style={S("display:flex; gap:14px; flex-wrap:wrap; font-size:10.5px; color:#8494A0; margin-bottom:8px;")}>
+                <span><strong style={S("color:#1798D0; font-size:12px;")}>○</strong> 収録済み</span>
+                <span><strong style={S("color:#8A4B1F; font-size:12px;")}>—</strong> 調べたが収録できない（理由は上の記録）</span>
+                <span><strong style={S("color:#C6D2DA; font-size:12px;")}>×</strong> 未収録（まだ手を付けていない）</span>
+                <span><strong style={S("color:#1798D0; font-size:12px;")}>○<sup style={S("color:#8A4B1F;")}>*</sup></strong> 収録済みだが一部の年度は収録できない</span>
               </div>
 
               <div style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; overflow:hidden;")}>
@@ -403,11 +461,25 @@ export default function BudgetTraceView({ v }: { v: any }) {
                                     <span style={S("font-size:9.5px; color:#C6D2DA; margin-left:6px; font-family:'IBM Plex Mono',monospace;")}>{m.code}</span>
                                     {m.tier && <span style={S(`font-size:9px; font-weight:700; margin-left:6px; border-radius:4px; padding:0 5px; color:${m.tier === "full" ? "#0F76A3" : "#5C6B77"}; border:1px solid ${m.tier === "full" ? "#B9E0F2" : "#DFE7EC"};`)}>{m.tier === "full" ? "詳細" : "款別"}</span>}
                                   </td>
+                                  {/* ○＝収録済み／—＝調べたが収録できない／×＝まだ手を付けていない。
+                                      収録済みでも一部年度が収録できない場合があるので ○ の右肩に * を付ける
+                                      （どちらも title に理由と確認日を出す） */}
                                   {m.marks.map((mk: any, ki: number) => (
-                                    <td key={ki} title={mk.ok ? mk.detail || "収録済み" : "未収録"} style={S("padding:7px 4px; border-bottom:1px solid #F4F8FA; text-align:center;")}>
-                                      {mk.ok
-                                        ? <span style={S("color:#1798D0; font-weight:700; font-size:13px;")}>○</span>
-                                        : <span style={S("color:#DFE7EC; font-size:12px;")}>×</span>}
+                                    <td
+                                      key={ki}
+                                      title={[
+                                        mk.ok ? mk.detail || "収録済み" : mk.unrec.length ? "調べたが収録できません" : "未収録（まだ手を付けていません）",
+                                        ...mk.unrec.map((u: any) => `【${u.fyLabel}】${u.reason}（${u.checkedOn} 確認）`),
+                                      ].join("\n")}
+                                      style={S("padding:7px 4px; border-bottom:1px solid #F4F8FA; text-align:center;")}
+                                    >
+                                      {mk.ok ? (
+                                        <span style={S("color:#1798D0; font-weight:700; font-size:13px;")}>○{mk.unrec.length > 0 && <sup style={S("color:#8A4B1F; font-size:9px;")}>*</sup>}</span>
+                                      ) : mk.unrec.length > 0 ? (
+                                        <span style={S("color:#8A4B1F; font-weight:700; font-size:13px;")}>—</span>
+                                      ) : (
+                                        <span style={S("color:#DFE7EC; font-size:12px;")}>×</span>
+                                      )}
                                     </td>
                                   ))}
                                   <td style={S("padding:7px 14px; border-bottom:1px solid #F4F8FA; text-align:right; white-space:nowrap;")}>
