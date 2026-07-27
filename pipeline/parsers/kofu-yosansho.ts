@@ -234,6 +234,8 @@ interface Options {
    *   本当に前年度が2列しかない様式を壊す。
    * ⚠ **その款の ints が3個以上になったら throw する** — 発行元が翌年度に前年度額を埋めたら
    *   この指定は不要になるので、黙って 0 で上書きせず気づけるようにしてある。
+   * ⚠ **既定の列順（当年度→前年度）の様式専用**。`amountIntIndex` / `prevColumnFirst` の分岐では
+   *   評価されないので、**併用は throw で禁止**している（黙って no-op にしない）。
    */
   prevBlankAsZero?: { revenue?: number[]; expenditure?: number[] };
   /**
@@ -2262,6 +2264,14 @@ export function parseKofuYosansho(
   // 断片の通し方は `kanIndentMax` の例外規則なので、単独では意味を持たない（Options 参照）
   if (opts.kanFragmentsIndented && opts.kanIndentMax == null) {
     throw new Error(`${source.id}: kanFragmentsIndented は kanIndentMax とセットで指定してください`);
+  }
+  // `prevBlankAsZero` は**既定の列順様式の分岐でしか評価されない**（Options 参照）。
+  // 併用しても黙って no-op になるのはこのリポジトリの流儀に反するので、組み合わせを禁止する。
+  if (opts.prevBlankAsZero && (opts.amountIntIndex != null || opts.prevColumnFirst)) {
+    throw new Error(
+      `${source.id}: prevBlankAsZero は既定の列順（当年度→前年度）の様式専用です。` +
+        `amountIntIndex / prevColumnFirst とは併用できません（併用すると黙って無視されるため禁止しています）。`,
+    );
   }
   // 単数 revenuePage と複数 revenuePages のどちらか一方。内部は常にページ配列で扱う
   const sidePages = (
