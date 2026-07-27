@@ -21,6 +21,7 @@ import {
 import { eraYear, fyRank, fySeq } from "./lib/fy";
 import { findSource, SOURCES } from "./registry/sources";
 import { ROADMAP } from "./registry/roadmap";
+import { UNRECORDABLE, UNRECORDABLE_CATEGORIES } from "./registry/unrecordable";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
@@ -2622,22 +2623,141 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
     };
   }
 
+  // ---- 調べたが収録できなかった記録 → coverage.json の unrecordable ------------
+  // `/coverage` の × は既定では「まだ手を付けていない」の意味なので、**調べたうえで収録
+  // できないと判定したもの**を区別して出す（これまで docs にしか無く、読者には空欄の理由が
+  // 見えなかった）。台帳は pipeline/registry/unrecordable.ts。ここでやることは3つ:
+  //   ① **団体コードの同一性検査**（§9h の浜松＝静岡市コードの型。実在する別自治体のコードは
+  //      静かに紛れ込むので、存在ではなく名前との一致を見る）
+  //   ② **収録済みになっていないかの照合** — 「できない」の判定は実際にくつがえる
+  //      （豊島 R4・R2 と大田 H27 は #159 の復号で収録できた）。収録できた記録が台帳に
+  //      残り続けると `/coverage` が嘘をつくので、**収録済みなら throw して derive を止める**
+  //   ③ 表示用の断面（年度ラベル・分類ラベル・自治体ごとの索引）を作る
+  const unrecordable = (() => {
+    const dsKeys = new Set(DATASETS.map((d) => d.key));
+    const catKeys = new Set(UNRECORDABLE_CATEGORIES.map((c) => c.key));
+    const muniByCode = new Map(ds.records.map((r) => [r.muniCode, r]));
+    // 都道府県エンティティのコード（例 280003 = 兵庫県）。市区町村台帳には居ないので
+    // JIS X 0402 の検査数字で検算する（src/client/lib/data.ts の muniCode6 と同じ定義）。
+    const prefEntityCode = (pref2: string) => {
+      const c = `${pref2}000`;
+      const sum = [6, 5, 4, 3, 2].reduce((a, w, i) => a + Number(c[i]) * w, 0);
+      return c + String((11 - (sum % 11)) % 10);
+    };
+    const prefByEntityCode = new Map(
+      Object.entries(PREF_CODES).map(([name, code]) => [prefEntityCode(code), name]),
+    );
+
+    return UNRECORDABLE.map((u) => {
+      const where = `unrecordable「${u.name} ${u.dataset}」`;
+      if (!dsKeys.has(u.dataset as (typeof DATASETS)[number]["key"])) {
+        throw new Error(`${where}: dataset "${u.dataset}" は /coverage の列にありません（${[...dsKeys].join("/")}）`);
+      }
+      if (u.categories.length === 0 || u.categories.some((c) => !catKeys.has(c))) {
+        throw new Error(`${where}: categories が空か未知の分類です（${u.categories.join(",")}）`);
+      }
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(u.checkedOn)) throw new Error(`${where}: checkedOn は YYYY-MM-DD で書いてください`);
+      if (u.fiscalYears.length === 0 && !u.fyUpTo && !u.fyNote) {
+        throw new Error(`${where}: 対象年度が空です（fiscalYears / fyUpTo / fyNote のどれかは要る）`);
+      }
+
+      // ① 団体コード ↔ 名前の同一性
+      const isPrefEntity = prefByEntityCode.has(u.code);
+      const trueName = isPrefEntity ? prefByEntityCode.get(u.code)! : muniByCode.get(u.code)?.muniName;
+      if (!trueName) {
+        throw new Error(
+          `${where}: 団体コード ${u.code} が総務省台帳（municipal-accounts R6）にも都道府県エンティティにもありません。` +
+            `記憶で書かず data/normalized/municipal-accounts/R6.json から実引きしてください`,
+        );
+      }
+      if (trueName !== u.name) {
+        throw new Error(
+          `${where}: 団体コード ${u.code} は「${trueName}」です（台帳と食い違っています）。` +
+            `実在する別の自治体のコードは静かに紛れ込むので必ず突合してください（§9h の浜松＝静岡市コード）`,
+        );
+      }
+      const prefName = isPrefEntity ? trueName : muniByCode.get(u.code)!.prefName;
+
+      // ② 収録済みになっていないか（＝この記録はもう古くないか）
+      const collectedFys: string[] =
+        u.dataset !== "budget"
+          ? []
+          : u.code === SELF_CODE
+            ? KOFU_BUDGET_YEARS.map((b) => b.fy)
+            : (MUNI_BUDGET_YEARS[u.code] ?? []).map((y) => y.fy);
+      const stale = [
+        ...collectedFys.filter((fy) => u.fiscalYears.includes(fy)),
+        ...(u.fyUpTo ? collectedFys.filter((fy) => fySeq(fy) <= fySeq(u.fyUpTo!)) : []),
+      ];
+      if (stale.length > 0) {
+        throw new Error(
+          `${where}: 「収録できない」と記録されている ${[...new Set(stale)].join("・")} を実際には収録しています。` +
+            `判定はくつがえります（豊島 R4・大田 H27 の前例）ので、unrecordable.ts の該当行を削るか年度を狭めてください`,
+        );
+      }
+      if (u.dataset !== "budget" && entityDetail[u.code]?.detail[u.dataset]) {
+        throw new Error(
+          `${where}: 「収録できない」と記録されているのに /coverage の「${u.dataset}」が収録済みになっています` +
+            `（${entityDetail[u.code]!.detail[u.dataset]}）。unrecordable.ts の該当行を見直してください`,
+        );
+      }
+
+      // ③ 表示用の断面。年度ラベルは資料の呼称（H/R）をそのまま年号へ開く
+      const parts: string[] = [];
+      if (u.fiscalYears.length > 0) {
+        parts.push([...u.fiscalYears].sort((a, b) => fyRank(b) - fyRank(a)).map((fy) => `${eraYear(fy)}年度`).join("・"));
+      }
+      if (u.fyUpTo) parts.push(`${eraYear(u.fyUpTo)}年度以前`);
+      if (u.fiscalYears.length === 0 && !u.fyUpTo && u.fyNote) parts.push(u.fyNote);
+      return {
+        code: u.code, name: u.name, pref: prefName, isPref: isPrefEntity,
+        dataset: u.dataset,
+        datasetLabel: DATASETS.find((d) => d.key === u.dataset)!.full,
+        fyLabel: parts.join(" / "),
+        categories: u.categories,
+        reason: u.reason,
+        url: u.url ?? null,
+        checkedOn: u.checkedOn,
+        ref: u.ref,
+      };
+    }).sort((a, b) => a.pref.localeCompare(b.pref, "ja") || a.code.localeCompare(b.code) || a.dataset.localeCompare(b.dataset));
+  })();
+  /** 団体コード → 収録できないと判定したデータセットの集合（表の印を差し替えるのに使う） */
+  const unrecordableByCode = new Map<string, Set<string>>();
+  for (const u of unrecordable) {
+    const set = unrecordableByCode.get(u.code) ?? new Set<string>();
+    set.add(u.dataset);
+    unrecordableByCode.set(u.code, set);
+  }
+
   // 全1,741市町村を都道府県ごとに。f = 各データセットの 1/0（DATASETS の順）
+  // u = 「調べたが収録できない」記録があるかの 1/0（同じ順。f と直交する — 収録済みの
+  //     データセットでも、その中の特定年度が収録できない場合がある）
   const prefs = Object.entries(PREF_CODES).map(([name, code]) => {
     const shardPath = join(process.cwd(), "public/decision", `${code}.json`);
     const munis = existsSync(shardPath)
       ? Object.entries((readJson(shardPath) as { munis?: Record<string, { name: string }> }).munis ?? {})
       : [];
+    const unrecMark = (c: string) => {
+      const set = unrecordableByCode.get(c);
+      return DATASETS.map((d) => (set?.has(d.key) ? 1 : 0)).join("");
+    };
     const rows = munis.map(([c, m]) => {
       const e = entityDetail[c];
-      const f = DATASETS.map((ds) => (ds.key === "kessan" ? 1 : e && e.detail[ds.key] ? 1 : 0)).join("");
-      return { c, n: m.name, f };
+      const f = DATASETS.map((d) => (d.key === "kessan" ? 1 : e && e.detail[d.key] ? 1 : 0)).join("");
+      return { c, n: m.name, f, u: unrecMark(c) };
     });
-    // 県エンティティ（山梨県の当初予算など。市町村シャードには居ない）を先頭に足す
-    const prefEntities = KNOWN.filter((k) => entityDetail[k.code]?.isPref && k.pref === name).map((k) => {
-      const e = entityDetail[k.code]!;
-      const f = DATASETS.map((ds) => (ds.key === "kessan" ? 0 : e.detail[ds.key] ? 1 : 0)).join("");
-      return { c: k.code, n: `${k.name}（県全体）`, f };
+    // 県エンティティ（山梨県の当初予算など。市町村シャードには居ない）を先頭に足す。
+    // **収録できないと判定しただけの県も出す**（兵庫・沖縄）— 記録があるのに行が無いと
+    // 表の上では「そもそも存在しない」ことになり、判定を開示した意味が無くなる
+    const prefEntityCodes = [
+      ...KNOWN.filter((k) => entityDetail[k.code]?.isPref && k.pref === name).map((k) => k.code),
+      ...unrecordable.filter((x) => x.isPref && x.pref === name).map((x) => x.code),
+    ];
+    const prefEntities = [...new Set(prefEntityCodes)].map((c) => {
+      const e = entityDetail[c];
+      const f = DATASETS.map((d) => (d.key === "kessan" ? 0 : e?.detail[d.key] ? 1 : 0)).join("");
+      return { c, n: `${name}（県全体）`, f, u: unrecMark(c) };
     });
     return { name, code, munis: [...prefEntities, ...rows] };
   });
@@ -2658,15 +2778,31 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
     muniCount: prefs.reduce((a, p) => a + p.munis.filter((m) => !m.n.includes("（県全体）")).length, 0),
     prefCount: prefs.filter((p) => p.munis.length > 0).length,
     kessanRange,
+    // 「調べたが収録できない」の件数。**手で書かない** — registry の配列から数える
+    unrecordableCount: unrecordable.length,
+    unrecordableEntityCount: new Set(unrecordable.map((u) => u.code)).size,
   };
+  // 分類ごとの件数（1件が複数の分類を持つことがあるので合計は unrecordableCount と一致しない）
+  const unrecordableCategories = UNRECORDABLE_CATEGORIES.map((c) => ({
+    ...c,
+    count: unrecordable.filter((u) => u.categories.includes(c.key)).length,
+  }));
 
-  const out = { datasets: DATASETS, summary, prefs, entities: entityDetail, national, unclassified };
+  const out = {
+    datasets: DATASETS, summary, prefs, entities: entityDetail, national, unclassified,
+    unrecordable, unrecordableCategories,
+  };
   const dir = join(process.cwd(), "public");
   if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
   writeFileSync(join(dir, "coverage.json"), JSON.stringify(out), "utf8");
   const kb = (JSON.stringify(out).length / 1024).toFixed(0);
   console.log(
     `✓ データ整備状況を導出 → public/coverage.json（${summary.muniCount}市町村・${summary.sourceCount}資料・要許可${summary.licensePermission}・未確認${summary.licenseUnverified}・${kb}KB）`,
+  );
+  // **件数だけの報告にしない**（§9n）— どの団体のどれが収録不可なのかを出す
+  console.log(
+    `  収録できなかった記録 ${summary.unrecordableCount}件 / ${summary.unrecordableEntityCount}団体: ` +
+      unrecordable.map((u) => `${u.name}${u.fyLabel ? `(${u.fyLabel})` : ""}の${u.dataset}`).join(" / "),
   );
 
   // ---- データの注意（自治体ごと）→ src/client/lib/caveats.gen.ts ----------------
@@ -2869,6 +3005,9 @@ export const ROADMAP_PLAN: RoadmapItem[] = ${JSON.stringify(ROADMAP, null, 2)};
   const problems: string[] = [];
   const cov = readJson(join(process.cwd(), "public/coverage.json")) as {
     entities: Record<string, { name: string; detail: Record<string, string> }>;
+    prefs: { name: string; munis: { c: string; n: string; u: string }[] }[];
+    datasets: { key: string }[];
+    unrecordable: { code: string; name: string; dataset: string; fyLabel: string }[];
   };
   const { REPORT_MUNIS } = await import("../src/client/lib/reports-index.gen");
   const { MUNI_BUDGET_YEARS, BUDGET_MUNIS } = await import("../src/client/lib/munibudgets.gen");
@@ -2889,6 +3028,25 @@ export const ROADMAP_PLAN: RoadmapItem[] = ${JSON.stringify(ROADMAP, null, 2)};
         `${idx.name}: /coverage の成果「${detail || "（無し）"}」に配信件数 ${idx.count} が出ていません` +
           `（収録済みを未収録と偽る／件数が食い違う）`,
       );
+    }
+  }
+
+  // ①' 「調べたが収録できない」の記録は、必ず表の行として出る
+  //     記録だけあって行が無いと、表の上では「そもそも存在しない自治体」になり、
+  //     判定を開示した意味が消える（県エンティティは市町村シャードに居ないので実際に起こり得る）
+  {
+    const dsIndex = new Map(cov.datasets.map((d, i) => [d.key, i]));
+    const rowByCode = new Map(cov.prefs.flatMap((p) => p.munis.map((m) => [m.c, m] as const)));
+    for (const u of cov.unrecordable) {
+      const row = rowByCode.get(u.code);
+      if (!row) {
+        problems.push(`${u.name}（${u.code}）: 収録できない記録があるのに /coverage の表に行がありません`);
+        continue;
+      }
+      const i = dsIndex.get(u.dataset);
+      if (i === undefined || row.u[i] !== "1") {
+        problems.push(`${u.name}（${u.code}）: 収録できない記録の「${u.dataset}」が表の印に反映されていません`);
+      }
     }
   }
 
