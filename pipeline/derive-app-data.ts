@@ -74,8 +74,18 @@ const isArchiveUrl = (url: string): boolean => /^https?:\/\/(web\.archive\.org|w
 // オープンデータとして出す区**が実在し（世田谷 CSV・練馬 XLSX・千代田はサイト全体・
 // 東京都の決算 XLSX）、政令市20市の「ポータルの CC BY は予算書に及ばない」とは事情が違う。
 // 語彙が無いままだと**初の真正 open が unverified として画面に出る**。
+// **動詞と「禁止」の距離の上限を 10 → 20 に広げた**（2026-07-27・滋賀）。同じ穴の**2例目**:
+// - 三重（2026-07-26）… `複製、転用等する事は法律で禁止` で**間が11文字**。当時は
+//   「実際に適用される原文をもう1つ足す」（サイト共通フッター）で permission-required に落として回避した
+// - 滋賀 …………………… `複製、転用することは、法律で禁止` で**間が12文字**。滋賀には足せる第2の原文が
+//   無く（掲載ページのフッターは著作権ページへのリンクだけ）、回避できない
+// どちらも**原文は明確に「許可なく複製・転用することは禁止」と書いている**ので、区分が
+// **動詞と述語の距離という組版上の偶然**で決まっていた。`[^。]` が文をまたがせない制約は残るので、
+// 20 に広げても「1文の中で禁止と言っている」ことは変わらない。
+// ⚠ **広げても既存の区分は1件も動かない**ことを実測した（registry のライセンス原文86種に対し、
+//   窓 10/15/20/25/30 のいずれでも差分0）。**次に語彙や窓を触るときも同じ実測をしてから入れること**。
 const licenseClassOf = (lic: string): "open" | "permission-required" | "unverified" =>
-  /要許可|非営利|無断|複製・転用|転載を禁止|使用を禁止|(?:転載|複製|二次利用|引用)[^。]{0,10}(?:禁じ|禁止)/.test(lic)
+  /要許可|非営利|無断|複製・転用|転載を禁止|使用を禁止|(?:転載|複製|二次利用|引用)[^。]{0,20}(?:禁じ|禁止)/.test(lic)
     ? "permission-required"
   : /政府標準利用規約|公共データ利用規約|クリエイティブ・コモンズ|CC[ -]?BY/i.test(lic) ? "open"
   : "unverified";
@@ -2120,6 +2130,15 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     { srcId: "kagoshima-ken-yosan-setsumeisho-r8", muniCode: "460001", muniName: "鹿児島県", prefName: "鹿児島県", isPref: true },
     // 2026-07-26 第7弾（パーサ改修で開いた県）。⚠ **愛知県 230006 ≠ 名古屋市 231002**。
     { srcId: "aichi-yosan-setsumeisho-r8", muniCode: "230006", muniName: "愛知県", prefName: "愛知県", isPref: true },
+    // 2026-07-27 第8弾。⚠ 県と県庁所在市を取り違えない（滋賀県 250007 ≠ 大津市 252018 /
+    //    奈良県 290009 ≠ 奈良市 292010 / 愛媛県 380008 ≠ 松山市 382019 /
+    //    長崎県 420000 ≠ 長崎市 422011 / 青森県 020001 ≠ 青森市 022012）。
+    //    ⚠ **偵察は愛媛を 380003 と報告してきたが実在しないコード**だった（正 380008）。
+    { srcId: "shiga-ken-yosansho-r8", muniCode: "250007", muniName: "滋賀県", prefName: "滋賀県", isPref: true },
+    { srcId: "nara-ken-yosansetsumeisho-r8", muniCode: "290009", muniName: "奈良県", prefName: "奈良県", isPref: true },
+    { srcId: "ehime-yosan-setsumeisho-r8", muniCode: "380008", muniName: "愛媛県", prefName: "愛媛県", isPref: true },
+    { srcId: "nagasaki-ken-yosan-setsumeisho-r8", muniCode: "420000", muniName: "長崎県", prefName: "長崎県", isPref: true },
+    { srcId: "aomori-ken-kanbetsu-sokatsu-r8", muniCode: "020001", muniName: "青森県", prefName: "青森県", isPref: true },
     { srcId: "shizuokaken-zaisei-aramashi-157", muniCode: "220001", muniName: "静岡県", prefName: "静岡県", isPref: true },
     // 東京都（2026-07-22 追加・#124）。予算概要CSV（H29〜R8 の10年）。PDF は全経路パース不可のため
     // CSV が唯一の経路（registry のコメント参照）。歳出は款再編が2回（R5・R6）あり款名結合が切れる。

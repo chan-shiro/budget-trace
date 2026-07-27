@@ -151,6 +151,30 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "license": "「静岡県ホームページ」に掲載されている情報（文章、写真、イラスト、画像など）は、著作権の対象となっています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
     "target": "page"
   },
+  "/sources/shiga-ken-yosansho-r8/5592374.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.shiga.lg.jp/file/attachment/5592374.pdf",
+    "license": "「滋賀県ホームページ」に掲載されている個々の情報（文字、写真、イラスト等）に関する諸権利は、滋賀県ならびに第三者が有する著作権の対象であり、法律によって保護されています。「滋賀県ホームページ」の利用者は、私的使用その他法律で認める範囲内において使用する場合にのみ、個々の情報をダウンロード等により複製することができます。また、上記目的による複製以外の場合であっても、個々の情報に著作権者による個別の利用条件が示されている場合には、当該条件に従って利用することができます。その他、私的使用その他法律で認める範囲を超えて権利者の許可なく複製、転用することは、法律で禁止されています。",
+    "target": "file"
+  },
+  "/sources/nara-ken-yosansetsumeisho-r8/02_r8_setsumeisyo_soukatsu_001-004.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.nara.lg.jp/documents/21175/02_r8_setsumeisyo_soukatsu_001-004.pdf",
+    "license": "奈良県ホームページに掲載されている文章、画像等の著作権は、奈良県または提供者にあります。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、当県のオープンデータカタログサイトや当県サイトの各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "file"
+  },
+  "/sources/nagasaki-ken-yosan-setsumeisho-r8/_________.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.nagasaki.jp/doc/45074.html",
+    "license": "当県サイトに掲載されている文字、写真、イラストなどの個々の情報に関する著作権は、原則として長崎県に帰属します。（ただし、一部の画像等の著作権は、原著作者が所有しています。）「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "page"
+  },
+  "/sources/aomori-ken-kanbetsu-sokatsu-r8/R8tousyo_kanbetu-cleaned.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.aomori.lg.jp/soshiki/zaimu/zaisei/yosan_2026.html",
+    "license": "青森県庁ホームページ(https://www.pref.aomori.lg.jp/)に掲載されている文章、写真、画像、動画、その他全ての情報は著作権の対象となっています。また、「青森県庁ホームページ」全体も編集著作物として著作権の対象となっており、共に著作権法により保護されています。これらの情報については、青森県または第三者が著作権を有しており、「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "page"
+  },
   "/sources/sapporo-yosansetsumeisho-r7/02_r7_yosansetsumeisho_ippan.pdf": {
     "mode": "origin",
     "href": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r7/documents/02_r7_yosansetsumeisho_ippan.pdf",
