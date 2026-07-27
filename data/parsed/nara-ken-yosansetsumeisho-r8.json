@@ -1,0 +1,369 @@
+{
+  "docType": "budget-book",
+  "sourceId": "nara-ken-yosansetsumeisho-r8",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-07-27T02:20:57.600Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R8",
+  "account": "一般会計",
+  "revenueTotal": 621987000,
+  "expenditureTotal": 621987000,
+  "prevRevenueTotal": 563657000,
+  "prevExpenditureTotal": 563657000,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "県税",
+      "amount": 143900000,
+      "prevAmount": 132800000,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "利子割清算金",
+      "amount": 715000,
+      "prevAmount": 0,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "地方消費税清算金",
+      "amount": 68169000,
+      "prevAmount": 59413000,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "地方譲与税",
+      "amount": 32008000,
+      "prevAmount": 28645000,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "地方特例交付金",
+      "amount": 5200000,
+      "prevAmount": 800000,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "地方交付税",
+      "amount": 191800000,
+      "prevAmount": 175700000,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 300000,
+      "prevAmount": 300000,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "分担金及び負担金",
+      "amount": 1256657,
+      "prevAmount": 1557110,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "使用料及び手数料",
+      "amount": 6995629,
+      "prevAmount": 6936567,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "国庫支出金",
+      "amount": 75299843,
+      "prevAmount": 61679812,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "財産収入",
+      "amount": 5145071,
+      "prevAmount": 2302849,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "寄附金",
+      "amount": 491303,
+      "prevAmount": 225666,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "繰入金",
+      "amount": 18383060,
+      "prevAmount": 28282349,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "繰越金",
+      "amount": 500000,
+      "prevAmount": 500000,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "諸収入",
+      "amount": 12664037,
+      "prevAmount": 12018147,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "県債",
+      "amount": 59159400,
+      "prevAmount": 52496500,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 1317362,
+      "prevAmount": 1209026,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 46902202,
+      "prevAmount": 34413140,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "地域創造費",
+      "amount": 58864111,
+      "prevAmount": 44687807,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "福祉保険費",
+      "amount": 93538071,
+      "prevAmount": 87811206,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "医療政策費",
+      "amount": 18234279,
+      "prevAmount": 16106966,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "環境森林費",
+      "amount": 11941219,
+      "prevAmount": 10354622,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "人材・雇用政策費",
+      "amount": 2295658,
+      "prevAmount": 1353019,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "食農費",
+      "amount": 9445321,
+      "prevAmount": 8411380,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "産業費",
+      "amount": 14607613,
+      "prevAmount": 16691618,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "県土マネジメント費",
+      "amount": 75099006,
+      "prevAmount": 71339127,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 11,
+      "kanName": "警察費",
+      "amount": 33231328,
+      "prevAmount": 32330283,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 12,
+      "kanName": "教育費",
+      "amount": 117013051,
+      "prevAmount": 108802002,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 13,
+      "kanName": "災害復旧費",
+      "amount": 1646100,
+      "prevAmount": 1527790,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 14,
+      "kanName": "公債費",
+      "amount": 69180679,
+      "prevAmount": 70443014,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 15,
+      "kanName": "諸支出金",
+      "amount": 68471000,
+      "prevAmount": 57976000,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 16,
+      "kanName": "予備費",
+      "amount": 200000,
+      "prevAmount": 200000,
+      "locator": {
+        "file": "02_r8_setsumeisyo_soukatsu_001-004.pdf",
+        "page": 3
+      }
+    }
+  ]
+}

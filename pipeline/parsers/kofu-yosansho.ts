@@ -613,7 +613,14 @@ function parseKanPage(
     const all = text.split("\n");
     const totalIdxs = all
       .map((l, i) => ({ c: l.replace(/[\s　]/g, ""), i }))
-      .filter((x) => x.c.includes(totalLabel))
+      // **表ヘッダ・表題を合計行と取り違えない**（2026-07-27・青森）。青森の款別総括表は
+      // 合計ラベルが **`計` の一字**で、表題 `令和８年度一般会計当初予算款別総括表`・
+      // 列見出し `令和７年度現計`・`当初比 現計比` にも当たる（5本ヒットし t1=0 になって
+      // 歳入区画が表題1行だけになり「款行が1件も抽出できませんでした」で落ちる）。
+      // ⚠ ヘッダ語彙で落とすのが安全 — **本物の合計行は `KAN_HEADER_RE` に1つも当たらない**
+      //   （既存28ソース＋青森で実測）。合計ラベルが2文字以上（`合計`/`歳入合計`）の既存様式では
+      //   そもそもヘッダ行に当たらないので、この除外は no-op になる。
+      .filter((x) => x.c.includes(totalLabel) && !headerRe.test(x.c))
       .map((x) => x.i);
     if (totalIdxs.length < 2) {
       throw new Error(`${filename} ${pageLabel}: samePage 指定だが「${totalLabel}」行が2つ見つかりません（${totalIdxs.length}件）`);

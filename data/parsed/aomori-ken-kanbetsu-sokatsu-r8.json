@@ -1,0 +1,358 @@
+{
+  "docType": "budget-book",
+  "sourceId": "aomori-ken-kanbetsu-sokatsu-r8",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-07-27T02:20:57.845Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R8",
+  "account": "一般会計",
+  "revenueTotal": 751400000,
+  "expenditureTotal": 751400000,
+  "prevRevenueTotal": 709500000,
+  "prevExpenditureTotal": 709500000,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "県税",
+      "amount": 162183592,
+      "prevAmount": 155961694,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "利子割清算金",
+      "amount": 654371,
+      "prevAmount": 0,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "地方消費税清算金",
+      "amount": 76833611,
+      "prevAmount": 71480088,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "地方譲与税",
+      "amount": 30233938,
+      "prevAmount": 27861299,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "市町村たばこ税都道府県交付金",
+      "amount": 1,
+      "prevAmount": 1,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "地方特例交付金",
+      "amount": 7508965,
+      "prevAmount": 660950,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "地方交付税",
+      "amount": 215009000,
+      "prevAmount": 212073000,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 285840,
+      "prevAmount": 315016,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "分担金及び負担金",
+      "amount": 3566303,
+      "prevAmount": 3488848,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "使用料及び手数料",
+      "amount": 7215284,
+      "prevAmount": 7217724,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "国庫支出金",
+      "amount": 110910828,
+      "prevAmount": 109217038,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "財産収入",
+      "amount": 2150174,
+      "prevAmount": 2135232,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "寄附金",
+      "amount": 12602,
+      "prevAmount": 6233,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "繰入金",
+      "amount": 28870447,
+      "prevAmount": 18379173,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "繰越金",
+      "amount": 1,
+      "prevAmount": 1,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "諸収入",
+      "amount": 47548043,
+      "prevAmount": 47942703,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 17,
+      "kanName": "県債",
+      "amount": 58417000,
+      "prevAmount": 52761000,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 1347691,
+      "prevAmount": 1328174,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 53639475,
+      "prevAmount": 41136775,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "民生費",
+      "amount": 123194524,
+      "prevAmount": 117696860,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "環境保健費",
+      "amount": 27932889,
+      "prevAmount": 27870316,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "労働費",
+      "amount": 2142551,
+      "prevAmount": 2293984,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "農林水産業費",
+      "amount": 47659738,
+      "prevAmount": 47936031,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "商工費",
+      "amount": 67110053,
+      "prevAmount": 67338998,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "土木費",
+      "amount": 69066164,
+      "prevAmount": 68432952,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "警察費",
+      "amount": 35991659,
+      "prevAmount": 33768638,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "教育費",
+      "amount": 146815449,
+      "prevAmount": 138486994,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 11,
+      "kanName": "災害復旧費",
+      "amount": 8890319,
+      "prevAmount": 5041712,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 12,
+      "kanName": "公債費",
+      "amount": 86735830,
+      "prevAmount": 89039484,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 13,
+      "kanName": "諸支出金",
+      "amount": 80723658,
+      "prevAmount": 68979082,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 14,
+      "kanName": "予備費",
+      "amount": 150000,
+      "prevAmount": 150000,
+      "locator": {
+        "file": "R8tousyo_kanbetu-cleaned.pdf",
+        "page": 1
+      }
+    }
+  ]
+}
