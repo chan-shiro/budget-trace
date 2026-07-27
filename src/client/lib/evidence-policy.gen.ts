@@ -175,6 +175,30 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "license": "青森県庁ホームページ(https://www.pref.aomori.lg.jp/)に掲載されている文章、写真、画像、動画、その他全ての情報は著作権の対象となっています。また、「青森県庁ホームページ」全体も編集著作物として著作権の対象となっており、共に著作権法により保護されています。これらの情報については、青森県または第三者が著作権を有しており、「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
     "target": "page"
   },
+  "/sources/iwate-ken-yosan-setsumeisho-r8/r8tousyo_setumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.iwate.jp/kensei/yosan/yosan/1069687/1097070.html",
+    "license": "岩手県ホームページに掲載されている写真、画像、イラスト、動画などの個々の情報についての著作権は、県又はコンテンツ提供者にあります。これらの情報については、「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "page"
+  },
+  "/sources/ishikawa-ken-yosan-gaiyou-r8/r8_5ten.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.ishikawa.lg.jp/zaisei/yosan/r7/r8tousyo.html",
+    "license": "「石川県ホームページ」に掲載されている個々の情報（文字、写真、イラスト等）は著作権の対象となっています。また、「石川県ホームページ」全体も編集著作物として著作権の対象となっており、ともに日本国著作権法及び国際条約により保護されています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、石川県の許可なく無断で複製・転用することはできません。",
+    "target": "page"
+  },
+  "/sources/oita-ken-zaisei-jokyo-r8/2269676.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.oita.jp/site/zaiseisugata/zaisei-jyokyo.html",
+    "license": "大分県ホームページ全体及び大分県ホームページに掲載されている個々の情報（文章、写真、イラストなど）は、大分県及び第三者が有する著作権により保護されています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載・複製・改変などはできません。",
+    "target": "page"
+  },
+  "/sources/miyazaki-ken-yosansho-r8/106626_20260219100915-1.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.miyazaki.lg.jp/documents/106626/106626_20260219100915-1.pdf",
+    "license": "「宮崎県ホームページ」に掲載されている情報（文章、写真、イラスト等）の著作権は、県に帰属します。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
   "/sources/sapporo-yosansetsumeisho-r7/02_r7_yosansetsumeisho_ippan.pdf": {
     "mode": "origin",
     "href": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r7/documents/02_r7_yosansetsumeisho_ippan.pdf",

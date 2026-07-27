@@ -287,6 +287,24 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     checkedOn: "2026-07-25", ref: "docs/data-sources.md §11b",
   },
   {
+    // 山形県 060003（⚠ 山形市 062014 と別物）。**資料は要件を形式上すべて満たしているのに、
+    // 発行元の PDF 化工程だけが理由で機械可読でない**という型。**手で OCR の破損を直せば
+    // Σ が4系統とも差0 で閉じる**＝原典の数字自体は正しい。
+    code: "060003", name: "山形県", dataset: "budget",
+    fiscalYears: ["R8", "R7", "R6", "R5", "R3"],
+    categories: ["scanned-image", "broken-text-layer"],
+    reason:
+      "当初予算の款別資料（予算に関する説明書の総括4ページ）は款別・前年度当初列・単位千円をすべて備えているが、" +
+      "全年度が複合機スキャン（pdfinfo の Creator が Apeos C7580 等）で、OCR のテキスト層が壊れている。" +
+      "款名が9件破損し（利子割清算金→「利子生ι?圭算金」・土木費→「士木費」・農林水産業費→「辰林水産業費」・" +
+      "議会費→「会議費」など）、款が4件丸ごと落ちる（款番号 11 がローマ数字 Ⅱ に化けて款行と判定されない・" +
+      "繰越金は行ごと消失・労働費は「5,斗働費」のカンマで番号検出が壊れる）。金額も破損する" +
+      "（125,477,109 → 125,47フ,109 とカタカナのフになる。R5〜R7 では前年度列の款金額まで壊れる）。" +
+      "誤植のピンポイント指定（amountTypos）では年度ごとに数十箇所を列挙することになり、" +
+      "原典の写しではなく人手の再入力になるため採らなかった。R3 はテキスト層自体が無い（pdftotext が4バイト）。",
+    checkedOn: "2026-07-27", ref: "docs/data-sources.md §11j",
+  },
+  {
     code: "470007", name: "沖縄県", dataset: "budget", fiscalYears: ["R8"],
     categories: ["no-material", "format-mismatch"],
     reason:

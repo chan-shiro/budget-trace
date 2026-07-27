@@ -2139,6 +2139,14 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     { srcId: "ehime-yosan-setsumeisho-r8", muniCode: "380008", muniName: "愛媛県", prefName: "愛媛県", isPref: true },
     { srcId: "nagasaki-ken-yosan-setsumeisho-r8", muniCode: "420000", muniName: "長崎県", prefName: "長崎県", isPref: true },
     { srcId: "aomori-ken-kanbetsu-sokatsu-r8", muniCode: "020001", muniName: "青森県", prefName: "青森県", isPref: true },
+    // 2026-07-27 第9弾。⚠ 県と県庁所在市を取り違えない（岩手県 030007 ≠ 盛岡市 032018 /
+    //    石川県 170003 ≠ 金沢市 172014 / 大分県 440001 ≠ 大分市 442011 / 宮崎県 450006 ≠ 宮崎市 452017）。
+    //    ⚠ **収録指示側が岩手を 030001 と書いていたが原本に存在しないコード**だった（偵察が訂正）。
+    //    ⚠ **山形は収録不可**（当初予算の款別資料が全年度スキャン＋OCR で款名・金額とも破損）。
+    { srcId: "iwate-ken-yosan-setsumeisho-r8", muniCode: "030007", muniName: "岩手県", prefName: "岩手県", isPref: true },
+    { srcId: "ishikawa-ken-yosan-gaiyou-r8", muniCode: "170003", muniName: "石川県", prefName: "石川県", isPref: true },
+    { srcId: "oita-ken-zaisei-jokyo-r8", muniCode: "440001", muniName: "大分県", prefName: "大分県", isPref: true },
+    { srcId: "miyazaki-ken-yosansho-r8", muniCode: "450006", muniName: "宮崎県", prefName: "宮崎県", isPref: true },
     { srcId: "shizuokaken-zaisei-aramashi-157", muniCode: "220001", muniName: "静岡県", prefName: "静岡県", isPref: true },
     // 東京都（2026-07-22 追加・#124）。予算概要CSV（H29〜R8 の10年）。PDF は全経路パース不可のため
     // CSV が唯一の経路（registry のコメント参照）。歳出は款再編が2回（R5・R6）あり款名結合が切れる。
