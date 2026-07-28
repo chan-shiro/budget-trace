@@ -921,6 +921,13 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
   // 各自治体は**最も深い到達点の段にだけ**載せる。「事業報告 ⊃ 主な事業 ⊃ 款別」の
   // 入れ子ではない（横浜・川崎は主な事業一覧を持たずに事業報告を持つ）ので、
   // 階段ではなく到達点で束ねる。
+  //
+  // **段の中は「都道府県」と「市区町村」に割る**（2026-07-28）。都道府県エンティティが
+  // 2 → 39 に増えて、団体コード順のフラットな並びだと**県と市区町村が交互に混ざり**、
+  // 見た目も同一（添え書きが県名か「都道府県」かの違いだけ）で読めなくなっていた。
+  // 市区町村はさらに**所属する都道府県で束ねる** — 東京23区が23個のチップとして
+  // 段の1/4を占めて視覚を支配していたのが「東京都」1行に収まる。件数が増えても
+  // 市区町村は自分の県の行に吸収されるので、伸びるのは行の長さだけになる。
   const coverageLevels = (() => {
     const entries = Object.entries(D.MUNI_BUDGETS)
       .map(([code, b]) => {
@@ -935,21 +942,36 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
         };
       })
       .sort((a, b) => a.code.localeCompare(b.code));
-    // 甲府（full）は事業報告に加えて執行・評価・議会まで＝最深段の先頭に置く
     const all = [{ code: "192015", name: "甲府市", pref: "山梨県", isPref: false, level: 2 }, ...entries];
-    const mk = (level: number) =>
-      all
-        .filter((e) => e.level === level)
-        .map((e) => ({
-          name: e.name,
-          // 県エンティティは名前自体が県名なので、添え書きは県名の繰り返しでなく種別にする
-          pref: e.isPref ? "都道府県" : e.pref,
-          open: () => nav({ screen: "dash", pref: e.pref, muni: e.name, muniCode: e.code, drillPath: [], theme: null, budgetFy: undefined }),
-        }));
+    type Ent = (typeof all)[number];
+    const chip = (e: Ent) => ({
+      name: e.name,
+      open: () => nav({ screen: "dash", pref: e.pref, muni: e.name, muniCode: e.code, drillPath: [], theme: null, budgetFy: undefined }),
+    });
+    const mk = (level: number) => {
+      const inLevel = all.filter((e) => e.level === level);
+      const prefs = inLevel.filter((e) => e.isPref);
+      const munis = inLevel.filter((e) => !e.isPref);
+      // 県の並びは**団体コードの上2桁**（＝北から南の定型順）。県名の五十音でも
+      // 収録順でもなく、/coverage の一覧・日本地図と同じ並びに揃える。
+      const byPref = new Map<string, { pref: string; munis: ReturnType<typeof chip>[] }>();
+      for (const e of munis) {
+        const key = e.code.slice(0, 2);
+        const g = byPref.get(key) ?? { pref: e.pref, munis: [] };
+        g.munis.push(chip(e));
+        byPref.set(key, g);
+      }
+      return {
+        prefs: prefs.map(chip),
+        prefCount: prefs.length,
+        muniCount: munis.length,
+        muniGroups: [...byPref.entries()].sort((a, b) => a[0].localeCompare(b[0])).map(([, g]) => g),
+      };
+    };
     return [
-      { title: "事業報告（成果）まで", note: "予算 → 事業 → 成果を1事業ずつたどれる（甲府市は執行・評価・議会の構成まで）", munis: mk(2) },
-      { title: "主な事業まで", note: "款別の内訳に加えて、主な事業の一覧と説明つき", munis: mk(1) },
-      { title: "当初予算（款別）まで", note: "歳入・歳出の款別内訳と前年当初比較", munis: mk(0) },
+      { title: "事業報告（成果）まで", note: "予算 → 事業 → 成果を1事業ずつたどれる（甲府市は執行・評価・議会の構成まで）", ...mk(2) },
+      { title: "主な事業まで", note: "款別の内訳に加えて、主な事業の一覧と説明つき", ...mk(1) },
+      { title: "当初予算（款別）まで", note: "歳入・歳出の款別内訳と前年当初比較", ...mk(0) },
     ];
   })();
 
@@ -1248,6 +1270,10 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     // 「収録の深さから選ぶ」（トップ）。段の割り当ては収録データから自動（coverageLevels 参照）
     coverageLevels,
     coverageDecisionCount: ROADMAP_PROGRESS.muniCount.toLocaleString(),
+    // 都道府県の到達度は**段をまたぐ**（山梨県だけ「主な事業まで」の段にいる）ので、
+    // 段の中でなくセクションの導入に出す。分母 47 も derive 由来（手書きしない）
+    coveragePrefDone: coverageLevels.reduce((a, g) => a + g.prefCount, 0),
+    coveragePrefTotal: ROADMAP_PROGRESS.prefCount,
     mapColorMode,
     onMuniSelect: (pfName: string, muniName: string | null, code5?: string) => {
       // 地図で市区町村をクリックしたら、その自治体のダッシュボードへ直行する。
@@ -1617,6 +1643,44 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
       // 検索は自治体名・都道府県名・団体コードに前方/部分一致（入力即時フィルタ）
       const hit = (name: string, code: string, pref: string) =>
         !q || name.includes(q) || pref.includes(q) || code.startsWith(q);
+      // 都道府県エンティティ（県全体）の行かどうか。**名前の「（県全体）」でなく団体コードの
+      // 構造で判定する** — JIS X 0402 の都道府県コードは `PP000C`（3〜5桁目が 000）で、
+      // 市区町村がこの形を取ることはない。ラベルの文言が変わっても壊れない。
+      const isPrefRow = (code: string) => code.slice(2, 5) === "000";
+      // 「決算」列（総務省・決算状況調）は**市町村が対象**の調査なので、県全体エンティティに
+      // 対しては構造的に存在しない。× を出すと「まだ手を付けていない ToDo」に読めるため
+      // 対象外の印にする（リクエストの宛先からも外す）
+      const isNA = (code: string, dsKey: string) => dsKey === "kessan" && isPrefRow(code);
+      const budgetIdx = d.datasets.findIndex((ds) => ds.key === "budget");
+      // 都道府県（県全体）の当初予算の到達度。**47件のアコーディオンを開かないと
+      // 分からなかった**ので一覧の上にサマリとして出す（2026-07-28）。件数は数えず
+      // ここで実データから算出する（手書きの数字は必ず実態とズレる）
+      const prefEntities = d.prefs.map((p) => {
+        const row = p.munis.find((m) => isPrefRow(m.c));
+        const ok = row ? row.f[budgetIdx] === "1" : false;
+        const unrec = row ? row.u[budgetIdx] === "1" : false;
+        return {
+          name: p.name,
+          code: row?.c ?? "",
+          ok,
+          // 収録済みでも一部年度が収録できないことがある（トップの ○* と同じ）
+          partial: ok && unrec,
+          unrec: !ok && unrec,
+          title: row
+            ? (unrecByCode.get(row.c) ?? [])
+                .filter((u) => u.dataset === "budget")
+                .map((u) => `【${u.fyLabel}】${u.reason}（${u.checkedOn} 確認）`)
+                .join("\n")
+            : "",
+        };
+      });
+      const prefSummary = {
+        total: prefEntities.length,
+        done: prefEntities.filter((p) => p.ok).length,
+        unrec: prefEntities.filter((p) => p.unrec).length,
+        todo: prefEntities.filter((p) => !p.ok && !p.unrec).length,
+        items: prefEntities,
+      };
       const groups = d.prefs
         .map((p) => {
           const prefMatched = !q || p.name.includes(q);
@@ -1627,12 +1691,23 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
         .map((g) => {
           // 検索中はヒットした県を自動で開く（探して即見えるように）
           const open = q ? true : openPrefs.includes(g.pref.name);
-          const deep = g.rows.filter((m) => ents[m.c]).length;
+          // 県全体エンティティは「1,741市町村の網羅」の外側なので、件数からも
+          // 「市区町村 N団体」からも外す（導入文の 1,741 と Σ が合うようにする）
+          const deep = g.rows.filter((m) => ents[m.c] && !isPrefRow(m.c)).length;
+          // 検索の「N件」は**実際に出ている行の数**にする。市町村だけを数えると、
+          // 県エンティティのコード（例 190004）で検索したときに行が1つ出ているのに
+          // 「0件」と出る（見えているものと数が食い違う）
+          const shown = g.rows.length;
+          // 見出しの「県全体」印は**検索で絞られても変わらない**（その県の性質なので、
+          // 絞り込みの結果でなく元の一覧から引く）
+          const prefEnt = prefEntities.find((p) => p.name === g.pref.name)!;
           return {
             name: g.pref.name,
             code: g.pref.code,
-            count: g.rows.length,
+            count: g.rows.filter((m) => !isPrefRow(m.c)).length,
+            shown,
             deep,
+            prefEnt,
             open,
             toggle: () =>
               setSt({
@@ -1646,7 +1721,9 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
                   // 未収録の列 → その場でリクエスト（＝この表がそのまま参加導線になる）。
                   // **「調べたが収録できない」と判定した列はリクエスト先から外す** — 資料の
                   // 事情で取れないものを ToDo として起票させるのは読者の手間を無駄にする
-                  const missing = d.datasets.filter((ds, i) => m.f[i] !== "1" && m.u[i] !== "1");
+                  const missing = d.datasets.filter(
+                    (ds, i) => m.f[i] !== "1" && m.u[i] !== "1" && !isNA(m.c, ds.key),
+                  );
                   const missLabel = missing.map((x) => x.label).join("・");
                   const unrecOf = (key: string) => unrecByCode.get(m.c)?.filter((u) => u.dataset === key) ?? [];
                   return {
@@ -1654,10 +1731,12 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
                     name: m.n,
                     tier: e?.tier ?? null,
                     // 列ごとの ○×（true=収録済み）と、収録済みなら中身の説明。
-                    // `unrec` があれば「まだ調べていない（×）」ではなく「調べたが収録できない」
+                    // `unrec` があれば「まだ調べていない（×）」ではなく「調べたが収録できない」。
+                    // `na` は「この団体には構造的に存在しないデータセット」（県全体の決算）
                     marks: d.datasets.map((ds, i) => ({
                       key: ds.key,
                       ok: m.f[i] === "1",
+                      na: isNA(m.c, ds.key),
                       detail: e?.detail[ds.key] ?? "",
                       unrec: m.u[i] === "1" ? unrecOf(ds.key) : [],
                     })),
@@ -1692,7 +1771,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
               : [],
           };
         });
-      const matched = groups.reduce((a, g) => a + g.count, 0);
+      const matched = groups.reduce((a, g) => a + g.shown, 0);
       return {
         ready: true as const,
         loading: false,
@@ -1703,6 +1782,8 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
         setQ: (val: string) => setSt({ covQ: val }),
         groups,
         matched,
+        // 都道府県（県全体）の当初予算の到達度。件数・内訳は実データから算出（上記）
+        prefSummary,
         allOpen: openPrefs.length > 0 && !q,
         expandAll: () => setSt({ covOpen: d.prefs.map((p) => p.name) }),
         collapseAll: () => setSt({ covOpen: [] }),

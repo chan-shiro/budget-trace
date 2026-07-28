@@ -65,25 +65,52 @@ export default function BudgetTraceView({ v }: { v: any }) {
           </div>
 
           {/* 収録の深さから選ぶ。段の割り当て・件数は**収録データから自動生成**（手書きの列挙をしない —
-              coverageLevels 参照）。自治体名は変わらないので、深い順に全部並べてそのまま入口にする。 */}
+              coverageLevels 参照）。自治体名は変わらないので、深い順に全部並べてそのまま入口にする。
+              段の中は**都道府県ブロック**と**市区町村ブロック（都道府県ごとに束ねる）**に割る。
+              都道府県チップは淡い塗り・市区町村チップは白で、形からも種別が読めるようにする
+              （添え書きの「都道府県」に頼っていた頃は、隣り合う2つの区別が本文を読まないと付かなかった）。 */}
           <section data-mq-pad="" style={S("width:min(1160px,100%); margin:0 auto; padding:0 32px 44px; animation:fadeUp .4s ease both;")}>
             <h2 style={S("margin:0 0 4px; font-size:16px; font-weight:700;")}>収録の深さから選ぶ</h2>
-            <p style={S("margin:0 0 14px; font-size:12.5px; color:#5C6B77;")}>どこまで深く収録できているかは自治体ごとに違います。深い順に並べています（この一覧は収録データから自動生成）。</p>
+            <p style={S("margin:0 0 14px; font-size:12.5px; color:#5C6B77;")}>どこまで深く収録できているかは自治体ごとに違います。深い順に並べています（この一覧は収録データから自動生成）。都道府県（県全体の会計）は<strong style={S("color:#14181C; font-family:'IBM Plex Mono',monospace;")}>{v.coveragePrefDone}</strong>/<span style={S("font-family:'IBM Plex Mono',monospace;")}>{v.coveragePrefTotal}</span> を収録しています。</p>
             {v.coverageLevels.map((g: any, i: number) => (
               <div key={i} style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; padding:14px 18px; margin-bottom:10px;")}>
-                <div style={S("display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:9px;")}>
+                <div style={S("display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:11px;")}>
                   <h3 style={S("margin:0; font-size:13.5px; font-weight:700;")}>{g.title}</h3>
-                  <span style={S("font-family:'IBM Plex Mono',monospace; font-size:11px; color:#0F76A3; border:1px solid #B9E0F2; border-radius:999px; padding:1px 9px;")}>{g.munis.length}団体</span>
+                  <span style={S("font-family:'IBM Plex Mono',monospace; font-size:11px; color:#0F76A3; border:1px solid #B9E0F2; border-radius:999px; padding:1px 9px;")}>{g.prefCount + g.muniCount}団体</span>
                   <span style={S("font-size:11.5px; color:#8494A0;")}>{g.note}</span>
                 </div>
-                <div style={S("display:flex; gap:6px; flex-wrap:wrap;")}>
-                  {g.munis.map((m: any, j: number) => (
-                    <HoverBox as="button" key={j} onClick={m.open} style={S("display:inline-flex; align-items:baseline; gap:6px; border:1px solid #DFE7EC; background:#FFFFFF; border-radius:999px; padding:5px 13px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("border-color:#1798D0;")}>
-                      <span style={S("font-size:13px; font-weight:600; color:#14181C;")}>{m.name}</span>
-                      <span style={S("font-size:10.5px; color:#8494A0;")}>{m.pref}</span>
-                    </HoverBox>
-                  ))}
-                </div>
+
+                {/* 都道府県（県全体の会計）。名前自体が県名なので添え書きは持たせない */}
+                {g.prefCount > 0 && (
+                  <>
+                    <div style={S("font-size:11px; font-weight:700; color:#5C6B77; margin-bottom:6px;")}>都道府県 <span style={S("font-family:'IBM Plex Mono',monospace; font-weight:400; color:#8494A0;")}>{g.prefCount}</span></div>
+                    <div style={S(`display:flex; gap:6px; flex-wrap:wrap; ${g.muniCount > 0 ? "margin-bottom:13px;" : ""}`)}>
+                      {g.prefs.map((m: any, j: number) => (
+                        <HoverBox as="button" key={j} onClick={m.open} style={S("border:1px solid #C6D2DA; background:#F1F6F9; border-radius:999px; padding:5px 13px; cursor:pointer; font-size:13px; font-weight:600; color:#14181C; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("border-color:#1798D0; background:#FFFFFF;")}>{m.name}</HoverBox>
+                      ))}
+                    </div>
+                  </>
+                )}
+
+                {/* 市区町村。所属する都道府県ごとに束ねる（束の頭に県名があるのでチップに県名は書かない）。
+                    束は**行を占有せず流し込む** — 1県1行にすると仙台市・千葉市のような1団体の県が
+                    1行を丸ごと使い、デスクトップで縦が倍以上に伸びる。束ごと wrap させれば
+                    東京23区のような大きな束は自分の中で折り返し、小さな束は横に並ぶ。 */}
+                {g.muniCount > 0 && (
+                  <>
+                    <div style={S("font-size:11px; font-weight:700; color:#5C6B77; margin-bottom:6px;")}>市区町村 <span style={S("font-family:'IBM Plex Mono',monospace; font-weight:400; color:#8494A0;")}>{g.muniCount}</span></div>
+                    <div style={S("display:flex; flex-wrap:wrap; gap:7px 18px; align-items:center;")}>
+                      {g.muniGroups.map((mg: any, j: number) => (
+                        <span key={j} style={S("display:flex; flex-wrap:wrap; gap:6px; align-items:center;")}>
+                          <span style={S("font-size:11px; color:#8494A0; white-space:nowrap;")}>{mg.pref}</span>
+                          {mg.munis.map((m: any, k: number) => (
+                            <HoverBox as="button" key={k} onClick={m.open} style={S("border:1px solid #DFE7EC; background:#FFFFFF; border-radius:999px; padding:5px 13px; cursor:pointer; font-size:13px; font-weight:600; color:#14181C; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("border-color:#1798D0;")}>{m.name}</HoverBox>
+                          ))}
+                        </span>
+                      ))}
+                    </div>
+                  </>
+                )}
               </div>
             ))}
             <p style={S("margin:6px 2px 0; font-size:12px; color:#5C6B77;")}>そのほかの全{v.coverageDecisionCount}市区町村も、総務省の決算ベース（款別歳出・歳入内訳・1人あたり・類似自治体比較）で閲覧できます — 上の日本地図か検索から選んでください。</p>
@@ -273,7 +300,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
           <HoverBox as="button" onClick={v.goTop} style={S("border:none; background:none; color:#5C6B77; font-size:13px; cursor:pointer; padding:0; margin-bottom:14px; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("color:#1798D0;")}>← トップへ戻る</HoverBox>
           <div style={S("margin-bottom:18px;")}>
             <h1 style={S("margin:0 0 6px; font-size:24px; font-weight:700;")}>データ整備状況</h1>
-            <p style={S("margin:0 0 8px; color:#5C6B77; font-size:13.5px; line-height:1.8; max-width:78ch;")}>全国{v.cov.ready ? v.cov.summary.muniCount.toLocaleString() : "1,741"}市町村を都道府県別に網羅した一覧です。手付かずの自治体も載せています（<strong style={S("color:#14181C;")}>×＝これからのToDo</strong>）。一次資料を調べたうえで<strong style={S("color:#8A4B1F;")}>収録できないと判定したもの（—）</strong>は理由と確認日つきで別に開示しています。レジストリと魚拓台帳から自動生成しているため、常に実際の収録内容と一致します。</p>
+            <p style={S("margin:0 0 8px; color:#5C6B77; font-size:13.5px; line-height:1.8; max-width:78ch;")}>全国{v.cov.ready ? v.cov.summary.muniCount.toLocaleString() : "1,741"}市町村を都道府県別に網羅した一覧です。手付かずの自治体も載せています（<strong style={S("color:#14181C;")}>×＝これからのToDo</strong>）。一次資料を調べたうえで<strong style={S("color:#8A4B1F;")}>収録できないと判定したもの（—）</strong>は理由と確認日つきで別に開示しています。レジストリと魚拓台帳から自動生成しているため、常に実際の収録内容と一致します。各県の件数はこの{v.cov.ready ? v.cov.summary.muniCount.toLocaleString() : "1,741"}市町村の内訳で、都道府県会計そのもの（各県の先頭にある「〜（県全体）」の行）は市町村とは別に数えています。</p>
             <p style={S("margin:0; color:#5C6B77; font-size:12.5px; line-height:1.8; max-width:78ch;")}>
               <strong style={S("color:#14181C;")}>未収録（×）はその場でリクエストできます</strong> — 各行の「＋リクエスト」から、その自治体・その資料の収録リクエストを起票できます（GitHub Issue・👍 の多い順に着手します）。
               <a href={v.requestListUrl} target="_blank" rel="noopener noreferrer" style={S("color:#1798D0; text-decoration:none; margin-left:6px;")}>リクエスト一覧 ↗</a>
@@ -386,6 +413,46 @@ export default function BudgetTraceView({ v }: { v: any }) {
                 </div>
               </details>
 
+              {/* ==== 都道府県（県全体）の当初予算 ====
+                  下の一覧は市町村を県ごとに畳んでいるので、**県エンティティ自身の収録状況は
+                  47個のアコーディオンを全部開かないと読めなかった**（見出しのバッジも
+                  「予算資料 N団体」で県が含まれるか分からない）。都道府県は分母が 47 に固定で
+                  一巡が見えるものなので、到達度として一覧の上に出す。
+                  作法は上の2つの details と同じ（初期は閉じる・畳んでも件数は summary に出す）。
+                  件数は cov.prefSummary が実データから算出したもの（手書きしない）。 */}
+              <details style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; padding:0; margin-bottom:18px;")}>
+                <summary style={S("cursor:pointer; padding:13px 18px; list-style:none; display:flex; align-items:center; gap:10px; flex-wrap:wrap;")}>
+                  <span style={S("font-size:14px; font-weight:700; color:#14181C;")}>都道府県（県全体）の当初予算 <span style={S("font-family:'IBM Plex Mono',monospace; color:#0F76A3;")}>{v.cov.prefSummary.done}</span><span style={S("font-family:'IBM Plex Mono',monospace; color:#8494A0;")}>/{v.cov.prefSummary.total}</span></span>
+                  <span style={S("display:flex; gap:6px; flex-wrap:wrap;")}>
+                    {[
+                      { l: "収録", n: v.cov.prefSummary.done, c: "#0F76A3", b: "#B9E0F2" },
+                      { l: "調べたが収録できない", n: v.cov.prefSummary.unrec, c: "#8A4B1F", b: "#EFD4BE" },
+                      { l: "未着手", n: v.cov.prefSummary.todo, c: "#5C6B77", b: "#DFE7EC" },
+                    ].map((x: any, i: number) => (
+                      <span key={i} style={S(`font-size:11px; border:1px solid ${x.b}; color:${x.c}; border-radius:999px; padding:2px 10px; background:#FBFDFE; white-space:nowrap;`)}>{x.l} <strong style={S("font-family:'IBM Plex Mono',monospace; color:#14181C;")}>{x.n}</strong></span>
+                    ))}
+                  </span>
+                  <span style={S("font-size:11.5px; color:#5C6B77; margin-left:auto; white-space:nowrap;")}>詳しく ▾</span>
+                </summary>
+                <div style={S("padding:0 18px 16px;")}>
+                  <p style={S("margin:0 0 10px; font-size:12px; color:#5C6B77; line-height:1.85; max-width:80ch;")}>
+                    都道府県は<strong style={S("color:#14181C;")}>県全体（都道府県会計）の当初予算</strong>を款別に収録しています。市町村と違って分母が {v.cov.prefSummary.total} で固定なので、一巡までの残りがそのまま見えます。各県の詳しい内容は下の一覧でその県を開くと、先頭の「〜（県全体）」の行にあります。
+                  </p>
+                  <div style={S("display:flex; gap:6px; flex-wrap:wrap;")}>
+                    {v.cov.prefSummary.items.map((p: any, i: number) => (
+                      <span
+                        key={i}
+                        title={p.ok ? (p.title ? `収録済み（一部の年度は収録できません）\n${p.title}` : "収録済み") : p.unrec ? `調べたが収録できません\n${p.title}` : "未収録（まだ手を付けていません）"}
+                        style={S(`display:inline-flex; align-items:baseline; gap:5px; border:1px solid ${p.ok ? "#B9E0F2" : p.unrec ? "#EFD4BE" : "#DFE7EC"}; background:${p.ok ? "#FFFFFF" : "#FBFDFE"}; border-radius:999px; padding:3px 11px; white-space:nowrap;`)}
+                      >
+                        <span style={S(`font-size:12px; font-weight:700; color:${p.ok ? "#1798D0" : p.unrec ? "#8A4B1F" : "#C6D2DA"};`)}>{p.ok ? "○" : p.unrec ? "—" : "×"}{p.partial && <sup style={S("color:#8A4B1F; font-size:9px;")}>*</sup>}</span>
+                        <span style={S(`font-size:12.5px; color:${p.ok ? "#14181C" : "#8494A0"};`)}>{p.name}</span>
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </details>
+
               {/* ==== 網羅一覧（1つの表） ==== */}
               <div style={S("display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:10px;")}>
                 <div style={S("display:flex; align-items:center; gap:8px; flex-wrap:wrap;")}>
@@ -416,6 +483,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                 <span><strong style={S("color:#8A4B1F; font-size:12px;")}>—</strong> 調べたが収録できない（理由は上の記録）</span>
                 <span><strong style={S("color:#C6D2DA; font-size:12px;")}>×</strong> 未収録（まだ手を付けていない）</span>
                 <span><strong style={S("color:#1798D0; font-size:12px;")}>○<sup style={S("color:#8A4B1F;")}>*</sup></strong> 収録済みだが一部の年度は収録できない</span>
+                <span><strong style={S("color:#C6D2DA; font-size:12px;")}>·</strong> 対象外（この団体には存在しないデータ）</span>
               </div>
 
               <div style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:14px; overflow:hidden;")}>
@@ -434,9 +502,19 @@ export default function BudgetTraceView({ v }: { v: any }) {
                       <span style={S("display:flex; align-items:center; gap:8px;")}>
                         <span style={S(`color:#8494A0; font-size:10px; transform:rotate(${g.open ? "90deg" : "0deg"}); display:inline-block; transition:transform .15s;`)}>▶</span>
                         <span style={S("font-size:13.5px; font-weight:700; color:#14181C;")}>{g.name}</span>
-                        <span style={S("font-size:11px; color:#8494A0; font-family:'IBM Plex Mono',monospace;")}>{g.count}</span>
+                        {/* この数は**市町村の数**（1,741 の内訳）。県全体エンティティは
+                            右の「県全体」バッジが受け持つので、ここには含めない */}
+                        <span title="この県の市町村の数（都道府県会計そのものは右の「県全体」で示しています）" style={S("font-size:11px; color:#8494A0; font-family:'IBM Plex Mono',monospace;")}>{g.count}<span style={S("font-family:'IBM Plex Sans JP',sans-serif;")}>市町村</span></span>
                       </span>
-                      {g.deep > 0 && <span style={S("font-size:10.5px; color:#0F76A3; border:1px solid #B9E0F2; border-radius:999px; padding:1px 9px; white-space:nowrap;")}>予算資料 {g.deep}団体</span>}
+                      {/* 「県全体」と「市区町村」は別の話なので畳んだ状態でも分けて出す
+                          （旧「予算資料 N団体」は県自身が含まれるかが読めなかった） */}
+                      <span style={S("display:flex; align-items:center; gap:6px; flex-wrap:wrap; justify-content:flex-end;")}>
+                        <span
+                          title={g.prefEnt.ok ? "県全体（都道府県会計）の当初予算を収録済み" : g.prefEnt.unrec ? "県全体の当初予算は調べたが収録できません" : "県全体の当初予算は未収録（まだ手を付けていません）"}
+                          style={S(`font-size:10.5px; color:${g.prefEnt.ok ? "#0F76A3" : g.prefEnt.unrec ? "#8A4B1F" : "#8494A0"}; border:1px solid ${g.prefEnt.ok ? "#B9E0F2" : g.prefEnt.unrec ? "#EFD4BE" : "#DFE7EC"}; border-radius:999px; padding:1px 9px; white-space:nowrap;`)}
+                        >県全体 <strong style={S("font-family:'IBM Plex Mono',monospace;")}>{g.prefEnt.ok ? "○" : g.prefEnt.unrec ? "—" : "×"}</strong></span>
+                        {g.deep > 0 && <span style={S("font-size:10.5px; color:#0F76A3; border:1px solid #B9E0F2; border-radius:999px; padding:1px 9px; white-space:nowrap;")}>市区町村 {g.deep}団体</span>}
+                      </span>
                     </HoverBox>
 
                     {/* 市町村の行（○×） */}
@@ -468,12 +546,18 @@ export default function BudgetTraceView({ v }: { v: any }) {
                                     <td
                                       key={ki}
                                       title={[
-                                        mk.ok ? mk.detail || "収録済み" : mk.unrec.length ? "調べたが収録できません" : "未収録（まだ手を付けていません）",
+                                        mk.na
+                                          ? "対象外 — 総務省の決算状況調は市町村が対象の調査で、都道府県会計は含まれません"
+                                          : mk.ok ? mk.detail || "収録済み" : mk.unrec.length ? "調べたが収録できません" : "未収録（まだ手を付けていません）",
                                         ...mk.unrec.map((u: any) => `【${u.fyLabel}】${u.reason}（${u.checkedOn} 確認）`),
                                       ].join("\n")}
                                       style={S("padding:7px 4px; border-bottom:1px solid #F4F8FA; text-align:center;")}
                                     >
-                                      {mk.ok ? (
+                                      {/* 対象外（この団体には構造的に存在しないデータセット）は
+                                          × と別の印にする — × は「これからの ToDo」の意味なので */}
+                                      {mk.na ? (
+                                        <span style={S("color:#C6D2DA; font-size:12px;")}>·</span>
+                                      ) : mk.ok ? (
                                         <span style={S("color:#1798D0; font-weight:700; font-size:13px;")}>○{mk.unrec.length > 0 && <sup style={S("color:#8A4B1F; font-size:9px;")}>*</sup>}</span>
                                       ) : mk.unrec.length > 0 ? (
                                         <span style={S("color:#8A4B1F; font-weight:700; font-size:13px;")}>—</span>
