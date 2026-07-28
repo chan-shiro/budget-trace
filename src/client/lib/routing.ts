@@ -150,6 +150,13 @@ const MUNI_SLUGS: Record<string, string> = {
   "170003": "ken",
   "440001": "ken",
   "450006": "ken",
+  // 2026-07-27 第10弾。⚠ 富山県 160008 ≠ 富山市 162019 / 香川県 370002 ≠ 高松市 372013 /
+  //    秋田県 050008 ≠ 秋田市 052019 / 和歌山県 300004 ≠ 和歌山市 302015 / 佐賀県 410004 ≠ 佐賀市 412015
+  "050008": "ken",
+  "160008": "ken",
+  "300004": "ken",
+  "370002": "ken",
+  "410004": "ken",
 };
 
 interface KnownMuni { code: string; name: string; pref: string; slug: string; }

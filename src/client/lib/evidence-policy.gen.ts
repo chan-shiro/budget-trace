@@ -199,6 +199,30 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "license": "「宮崎県ホームページ」に掲載されている情報（文章、写真、イラスト等）の著作権は、県に帰属します。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
     "target": "file"
   },
+  "/sources/kagawa-ken-zaisei-jijo-r8/157_01-14_r8toshogaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.kagawa.lg.jp/documents/8155/157_01-14_r8toshogaiyo.pdf",
+    "license": "当サイトに掲載されている個々の情報（文章・写真・イラストなど）は、著作権の対象となっています。また、当サイト全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。当サイトの内容の全部または一部については、私的使用または引用など著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載複製を行うことができます。ただし「無断転載を禁じます」などの注記があるものについては、それに従ってください。当サイトの内容の全部または一部について、無断で改変を行うことはできません。",
+    "target": "file"
+  },
+  "/sources/akita-ken-setsumeisho-sokatsu-r8/予算書【６】（２月議会・Ｒ８当初予算分）.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.akita.lg.jp/pages/archive/94507",
+    "license": "「美の国あきたネット」に掲載されている文章、写真、画像、動画、その他全ての情報は著作権の対象となっています。また、「美の国あきたネット」全体も編集著作物として著作権の対象となっており、共に著作権法により保護されています。これらの情報については、秋田県または第三者が著作権を有しており、「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製、転用することはできません。",
+    "target": "page"
+  },
+  "/sources/toyama-ken-yosansetsumeisho-r8/08yosansetsumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.toyama.jp/documents/52665/08yosansetsumeisyo.pdf",
+    "license": "このウェブサイトに掲載されている文章、画像等の著作権は、富山県または文章、画像等の提供者の方にあります。これらの著作物は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で複製・転用することはできません。利用許諾については各ページに記載されているお問い合わせ先の所属へご連絡ください。",
+    "target": "file"
+  },
+  "/sources/saga-ken-yosansho-r8/3_117997_up_6cba1aek.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.saga.lg.jp/kiji003117997/index.html",
+    "license": "「佐賀県庁ホームページ」に掲載されている文字、写真、イラストなどの個々の情報及び「佐賀県庁ホームページ」全体に関する著作権は、原則として佐賀県に帰属します。（ただし、一部の画像等の著作権は、原著作者が所有しています。）「私的使用のための複製」など著作権法上認められた場合を除き、無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "page"
+  },
   "/sources/sapporo-yosansetsumeisho-r7/02_r7_yosansetsumeisho_ippan.pdf": {
     "mode": "origin",
     "href": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r7/documents/02_r7_yosansetsumeisho_ippan.pdf",
