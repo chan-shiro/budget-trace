@@ -205,7 +205,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
       acc += (items[i].v / total) * 360;
       if (deg <= acc) { seg = items[i]; idx = i; break; }
     }
-    showTip(e, seg.name, fmtOku(seg.v), pctOf(seg.v, total), D.PALETTE[idx % D.PALETTE.length],
+    showTip(e, seg.name, fmtOku(seg.v), pctOf(seg.v, total), D.seriesColor(idx),
       pop ? `1人あたり ${fmtPerCap(seg.v, pop)}` : "", key ? { key, idx } : null);
   };
   const mkSegTip = (title: string, amt: string, pct: string, sw: string, hover?: any) => (e: any) => showTip(e, title, amt, pct, sw, "", hover);
@@ -431,7 +431,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     const hv = hoverFor(side);
     return items.map((it, i) => ({
       name: it.name, amtFmt: fmtV(it.v), pctFmt: pctOf(it.v, total),
-      sw: hv == null || hv === i ? D.PALETTE[i % D.PALETTE.length] : fadeColor(D.PALETTE[i % D.PALETTE.length]),
+      sw: hv == null || hv === i ? D.seriesColor(i) : fadeColor(D.seriesColor(i)),
       hoverOn: hoverOnFn(side, i), hoverOff: hideTip,
       open: () => nav({ screen: "drill", drillSide: side, drillPath: [it.name] }),
     }));
@@ -545,7 +545,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
       name: it.name, amtFmt: fmtV(it.v),
       sub: subV(it.v),
       pctFmt: pctOf(it.v, nodeTotal), barW: ((it.v / (nodeItems[0].v || 1)) * 100).toFixed(1),
-      sw: dHover == null || dHover === i ? D.PALETTE[i % D.PALETTE.length] : fadeColor(D.PALETTE[i % D.PALETTE.length]),
+      sw: dHover == null || dHover === i ? D.seriesColor(i) : fadeColor(D.seriesColor(i)),
       hoverOn: hoverOnFn("drill", i), hoverOff: hideTip,
       cursor: clickable ? "pointer" : "default", arrow: clickable ? "›" : "",
       open: clickable ? () => setSt({ drillPath: [...s.drillPath, it.name] }) : () => {},
@@ -584,7 +584,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
       themeIntent: `${planInfo.plan}の基本目標「${curGoal.name}」に紐づく主な事業（予算資料の主な事業一覧に掲載された ${ps.length}事業）の集計です。複数の基本目標を持つ事業は各目標に計上しています。`,
       themeTotalFmt: fmtV(total), themeSub: subV(total), themeCount: String(ps.length),
       themePer: fmtPerCap(total, data.pop),
-      themeKanChips: Object.entries(kanAgg).map(([nm, v]) => ({ name: nm, amtFmt: fmtV(v), sw: D.PALETTE[kanIdx(nm) % D.PALETTE.length], open: () => nav({ screen: "drill", drillSide: "exp", drillPath: [nm] }) })),
+      themeKanChips: Object.entries(kanAgg).map(([nm, v]) => ({ name: nm, amtFmt: fmtV(v), sw: D.seriesColor(kanIdx(nm)), open: () => nav({ screen: "drill", drillSide: "exp", drillPath: [nm] }) })),
       themeRequestUrl: D.buildRequestUrl(
         "事務事業評価票（全事業分・各年度）",
         `政策テーマ「${curGoal.name}」の事業について、事業費の決算額・成果指標の実績（評価詳細票）まで見たい`,
@@ -616,7 +616,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     const dd = it.v - prev;
     const up = dd >= 0;
     return {
-      name: it.name, sw: D.PALETTE[i % D.PALETTE.length],
+      name: it.name, sw: D.seriesColor(i),
       prevFmt: fmtV(prev), curFmt: fmtV(it.v),
       prevW: ((prev / compMax) * 100).toFixed(1), curW: ((it.v / compMax) * 100).toFixed(1),
       deltaFmt: (up ? "+" : "−") + fmtV(Math.abs(dd)) + "（" + (up ? "+" : "−") + Math.abs(g).toFixed(1) + "%）",
@@ -658,7 +658,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
   const execSettledTotal = execSide === "rev" ? execYear.revenueSettledTotalOku : execYear.expenditureSettledTotalOku;
   const execOverallRate = (execSettledTotal / execBudgetTotal) * 100;
   const execRows = execRows0.map((r, i) => ({
-    name: r.name, sw: D.PALETTE[i % D.PALETTE.length],
+    name: r.name, sw: D.seriesColor(i),
     budgetFmt: fmtOku(r.budgetOku), settledFmt: fmtOku(r.settledOku),
     rateFmt: r.ratePct != null ? r.ratePct.toFixed(1) + "%" : "—",
     barW: r.ratePct != null ? Math.min(100, r.ratePct).toFixed(1) : "0",
@@ -1074,7 +1074,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
             amtFmt: fmtV(n.v),
             pctFmt: pctOf(n.v, decisionView!.total),
             barW: ((n.v / (decisionView!.nature![0]?.v || 1)) * 100).toFixed(1),
-            sw: D.PALETTE[i % D.PALETTE.length],
+            sw: D.seriesColor(i),
           }))
         : [],
     // 地方債現在高ほか（決算・R6のみ・総務省(5)）
@@ -1145,7 +1145,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
           asOfLabel: councilForFy.asOfLabel,
           fyLabel: councilForFy.fyLabel,
           factions: councilForFy.factions.map((f, i) => {
-            const sw = D.PALETTE[i % D.PALETTE.length];
+            const sw = D.seriesColor(i);
             const pct = ((f.seats / councilForFy.seats) * 100).toFixed(1);
             return {
               name: f.name,
@@ -1314,7 +1314,13 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     prefRequestUrl,
     // 全市町村が最低でも決算ベースで閲覧可能になったので、空県カードは出さない
     prefIsEmpty: false,
-    crumbPref: s.pref || "山梨県", crumbMuni: data.name || s.muni || "甲府市", yearLabel,
+    crumbPref: s.pref || "山梨県",
+    // 都道府県エンティティは名前が県名そのものなので、そのまま出すと
+    // 「日本 › 東京都 › 東京都」と同じ語が2回並ぶ。末尾は**この画面が何か**にする。
+    // 中段（県名）は市区町村一覧へのリンクなので、2段に潰さず残す。
+    // 語は /coverage の「〜（県全体）」に合わせる（都・道・府でも「県全体」で統一）
+    crumbMuni: isPref ? "県全体" : data.name || s.muni || "甲府市",
+    yearLabel,
     // 年度切り替え。full=当初予算(複数年)、budget=当初予算(1年)、decision=決算年度
     yearOptions: isDecision
       ? [
@@ -1413,7 +1419,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
           finalFmt: fmtOku(r.finalOku),
           settledFmt: fmtOku(r.settledOku),
           execFmt: r.execPct != null ? r.execPct.toFixed(1) + "%" : "―",
-          sw: D.PALETTE[i % D.PALETTE.length],
+          sw: D.seriesColor(i),
           ref: r.ref,
         })),
         outturnKan: oKan
@@ -1445,7 +1451,7 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
         r6DetailRows: rows.map((r, i) => ({
           name: r.name, amtFmt: fmtOku(r.v), pctFmt: pctOf(r.v, kanTotal),
           barW: ((r.v / (rows[0]?.v || 1)) * 100).toFixed(1),
-          sw: D.PALETTE[i % D.PALETTE.length],
+          sw: D.seriesColor(i),
         })),
         r6DetailKanTotalFmt: fmtOku(kanTotal),
         r6DetailRequestUrl: D.buildRequestUrl(
