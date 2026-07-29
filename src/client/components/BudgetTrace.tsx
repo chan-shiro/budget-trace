@@ -228,6 +228,12 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
   const isCoverage = screen === "coverage";
   const isRoadmap = screen === "roadmap";
   const isSources = screen === "sources";
+  // `/sources` は**自治体スコープを持つ形（/yamanashi/kofu/sources）と持たない形（/sources）の
+  // 2つの URL がある**（routing.ts の stateToPath がそう振り分けている）。後者で来たときは
+  // 全473資料を横断する全体ページなので、**甲府市の文脈（パンくず・年度セレクタ・タブ）を
+  // 背負ってはいけない** — 直接開くと `日本 › 山梨県 › 甲府市` が出ていた（2026-07-29 修正）。
+  // /coverage・/roadmap と同じく、素の「← トップへ戻る」だけにする。
+  const isGlobalSources = isSources && !s.muni;
   // /coverage と /sources はどちらも「全資料の台帳」が要る。同じ coverage.json を共有する
   // （useCoverage はモジュールキャッシュを持つので、両方を見ても取得は1回）
   const { data: covData, loading: covLoading, error: covError } = useCoverage(isCoverage || isSources);
@@ -1672,6 +1678,10 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     unitTabs,
     unitLabel: isPer ? "1人あたり" : "総額",
     isSimilar: screen === "similar", isSources,
+    // 全体ページとして開いた /sources ではアプリヘッダー（パンくず・年度・タブ・単位切替）を
+    // 出さない。どれも自治体スコープのものなので、横断ページに載ると誤った文脈になる
+    showAppHeader: !isGlobalSources,
+    isGlobalSources,
     isCoverage,
     goCoverage: () => nav({ screen: "coverage", pref: null, muni: null, muniCode: undefined }),
     // データ整備状況: 全1,741市町村を都道府県ごとに ○× で網羅する単一の表。

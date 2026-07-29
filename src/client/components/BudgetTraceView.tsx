@@ -642,6 +642,10 @@ export default function BudgetTraceView({ v }: { v: any }) {
 
       {v.isApp && (
         <div style={S("min-height:100vh; display:flex; flex-direction:column;")}>
+          {/* 自治体スコープを持たない /sources ではヘッダーごと出さない — パンくず・年度
+              セレクタ・タブ・単位切替はどれも「いま見ている自治体」のものなので、
+              全473資料を横断するページに載ると誤った文脈になる（/coverage・/roadmap と同じ扱い） */}
+          {v.showAppHeader && (
           <header style={S("background:#FFFFFF; border-bottom:1px solid #DFE7EC; position:sticky; top:0; z-index:10;")}>
             <div data-mq-pad="" data-mq="head" style={S("width:min(1160px,100%); margin:0 auto; padding:12px 28px 0; display:flex; flex-direction:column; gap:8px;")}>
               <div style={S("display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;")}>
@@ -681,6 +685,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
               </nav>
             </div>
           </header>
+          )}
 
           <main data-mq-pad="" style={S("flex:1; width:min(1160px,100%); margin:0 auto; padding:28px 28px 72px;")}>
 
@@ -1791,7 +1796,14 @@ export default function BudgetTraceView({ v }: { v: any }) {
             {/* ==== データ出典・更新日 ==== */}
             {v.isSources && (
               <div data-screen-label="データ出典・更新日" style={S("animation:fadeUp .35s ease both;")}>
-                <HoverBox as="button" onClick={v.goDash} style={S("border:none; background:none; color:#5C6B77; font-size:13px; cursor:pointer; padding:0; margin-bottom:14px; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("color:#1798D0;")}>← ダッシュボードへ戻る</HoverBox>
+                {/* 戻り先は来た経路に合わせる。自治体のダッシュボードから来たなら
+                    そこへ、/sources を直接開いたならトップへ（戻る先が無いのに
+                    「ダッシュボードへ戻る」と言うと、行ったことのない甲府市へ飛ぶ） */}
+                {v.isGlobalSources ? (
+                  <HoverBox as="button" onClick={v.goTop} style={S("border:none; background:none; color:#5C6B77; font-size:13px; cursor:pointer; padding:0; margin-bottom:14px; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("color:#1798D0;")}>← トップへ戻る</HoverBox>
+                ) : (
+                  <HoverBox as="button" onClick={v.goDash} style={S("border:none; background:none; color:#5C6B77; font-size:13px; cursor:pointer; padding:0; margin-bottom:14px; font-family:'IBM Plex Sans JP',sans-serif;")} hoverStyle={S("color:#1798D0;")}>← ダッシュボードへ戻る</HoverBox>
+                )}
                 <div style={S("margin-bottom:14px;")}>
                   <h1 style={S("margin:0 0 6px; font-size:24px; font-weight:700;")}>データ出典・更新日</h1>
                   <p style={S("margin:0; color:#5C6B77; font-size:13.5px; line-height:1.8; max-width:78ch;")}>このサイトで使用している<strong style={S("color:#14181C;")}>一次資料の全件</strong>と最終確認日の一覧です。すべての数値はこれらの資料まで遡れます。レジストリと魚拓台帳から自動生成しているため、資料を追加すればここにも必ず現れます。</p>
