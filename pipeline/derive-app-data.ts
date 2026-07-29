@@ -2740,6 +2740,74 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
     unrecordableByCode.set(u.code, set);
   }
 
+  // ---- 「調べたが収録できない」を全画面へ配る → src/client/lib/unrecordable.gen.ts ----
+  // **/coverage だけが知っていても足りない**（2026-07-29）。読者が実際に歩くのは
+  // 市区町村選択とダッシュボードで、そこでは「調べたが収録できない」団体が
+  // **未着手の団体とまったく同じ「準備中」「決算ベース」**に見えていた。さらに
+  // **取れないと分かっているものへリクエストを起票させていた** — /coverage が
+  // 「調べたが収録できない列はリクエスト先から外す」と決めたのと正反対のことを、
+  // 同じデータについてやっていた。
+  //
+  // coverage.json（882KB）は /coverage と /sources でしか取らない方針なので、
+  // **判定だけを抜いた数KBの gen** を別に焼いて静的 import で配る。
+  // ⚠ **収録できたら上の検証が throw する**仕組みはそのまま効く（記録が腐らない）。
+  {
+    const byCode: Record<string, Record<string, { fyLabel: string; reason: string; checkedOn: string }[]>> = {};
+    for (const u of unrecordable) {
+      ((byCode[u.code] ??= {})[u.dataset] ??= []).push({
+        fyLabel: u.fyLabel, reason: u.reason, checkedOn: u.checkedOn,
+      });
+    }
+    // 「1年度も収録できていない」＝画面の案内を差し替えるべきもの。収録済みで
+    // 一部年度だけ不可（/coverage の ○*）は**現状の案内で正しい**ので混ぜない。
+    // 判定は entityDetail（＝/coverage の ○ と同じ源）で行う。
+    const wholly: Record<string, string[]> = {};
+    for (const [code, byDs] of Object.entries(byCode)) {
+      const keys = Object.keys(byDs).filter((k) => !entityDetail[code]?.detail[k]);
+      if (keys.length > 0) wholly[code] = keys.sort();
+    }
+    const out = `// このファイルは自動生成です。手で編集しないこと。
+// 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
+//
+// **調べたが収録できなかった記録** — 台帳は pipeline/registry/unrecordable.ts。
+// /coverage は coverage.json から同じ内容を出しているが、**あちらは 882KB あって
+// /coverage と /sources でしか取得しない**ので、判定だけを抜いたこれを静的 import で配る。
+//
+// 使い道は「まだ手を付けていない（×）」と「調べたが取れない（—）」の**書き分け**。
+// ⚠ **取れないと分かっているものへリクエストを誘導しない**こと（読者の手間を無駄にする）。
+// ⚠ **「できない」は永久の事実ではない** — 判定は実際にくつがえる（豊島 R4・大田 H27）。
+// 文面は確認日つきの実測として出すこと。
+
+export interface UnrecordableNote {
+  /** 対象年度の表示（例「令和8年度・令和7年度」「平成29年度以前」） */
+  fyLabel: string;
+  /** 理由。docs/data-sources.md からの転記（推測を断定で書かない） */
+  reason: string;
+  /** YYYY-MM-DD。判定は確認日時点の実測であって恒久の事実ではない */
+  checkedOn: string;
+}
+
+/** 団体コード → データセット（/coverage の列と同じキー）→ 記録 */
+export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNote[]>> = ${JSON.stringify(byCode, null, 2)};
+
+/**
+ * 団体コード → **1年度も収録できていない**データセットのキー。
+ * 収録済みで一部年度だけ不可（/coverage の ○*）は含まない — そちらは
+ * 「収録済み」の案内のままで正しいので、画面の文言を差し替える対象ではない。
+ */
+export const UNRECORDABLE_WHOLLY: Record<string, string[]> = ${JSON.stringify(wholly, null, 2)};
+`;
+    writeFileSync(join(process.cwd(), "src/client/lib/unrecordable.gen.ts"), out, "utf8");
+    console.log(
+      `✓ 収録できない記録を導出 → src/client/lib/unrecordable.gen.ts（${Object.keys(byCode).length}団体・` +
+        `うち1年度も収録できていないのは ${Object.keys(wholly).length}団体: ` +
+        Object.entries(wholly)
+          .map(([c, ks]) => `${unrecordable.find((u) => u.code === c)!.name}の${ks.join("・")}`)
+          .join(" / ") +
+        `）`,
+    );
+  }
+
   // 全1,741市町村を都道府県ごとに。f = 各データセットの 1/0（DATASETS の順）
   // u = 「調べたが収録できない」記録があるかの 1/0（同じ順。f と直交する — 収録済みの
   //     データセットでも、その中の特定年度が収録できない場合がある）

@@ -12,8 +12,11 @@ import { CAVEATS } from "@/client/lib/caveats.gen";
 import { useSimilarIndex } from "@/client/hooks/useSimilarIndex";
 import { stateToPath, locationToState, codeByPrefAndName, type RouteState } from "@/client/lib/routing";
 // 進捗（実データから derive が算出）と計画（pipeline/registry/roadmap.ts が唯一の手書き）。
-// 数KBなので静的 import でよい（130KB級の coverage.json はフェッチしている）
+// 数KBなので静的 import でよい（882KB の coverage.json はフェッチしている）
 import { ROADMAP_PROGRESS, ROADMAP_PLAN } from "@/client/lib/roadmap.gen";
+// 「調べたが収録できない」判定。**/coverage だけが知っていても足りない** — 読者が実際に
+// 歩くのは市区町村選択とダッシュボードで、そこで未着手の団体と同じ顔をしていた（14KB）
+import { UNRECORDABLE_BY_CODE, UNRECORDABLE_WHOLLY } from "@/client/lib/unrecordable.gen";
 import BudgetTraceView from "./BudgetTraceView";
 
 const {
@@ -397,29 +400,55 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isApp, s.muniCode, s.muni, muniEntries.length]);
+  // 「一次資料を調べたうえで収録できないと判定した」ものを引く。**「まだ手を付けていない」と
+  // 読者にとって意味が全然違う**（/coverage の × と — の書き分けと同じ）ので、案内の文言と
+  // リクエスト導線をここで分ける。1年度も収録できていないものだけが対象（一部年度のみ不可＝
+  // /coverage の ○* は「収録済み」の案内のままで正しい）。
+  const unrecOf = (code: string, dataset: string) =>
+    (UNRECORDABLE_WHOLLY[code] ?? []).includes(dataset) ? UNRECORDABLE_BY_CODE[code]?.[dataset] ?? [] : [];
+  // 記録は**確認日時点の実測**であって恒久の事実ではない（豊島 R4・大田 H27 は後から収録できた）
+  const unrecTitle = (notes: { fyLabel: string; reason: string; checkedOn: string }[]) =>
+    notes.map((u) => `【${u.fyLabel}】${u.reason}（${u.checkedOn} 確認）`).join("\n");
+  // この都道府県の「県全体」の当初予算が収録不可と判定されているか（山形・兵庫・沖縄）。
+  // **未収録の県には prefEntity が無い**ので、県エンティティのコードは県コード2桁から
+  // JIS X 0402 の検査数字で組み立てる（derive の prefEntityCode と同じ定義）
+  const prefUnrec = (() => {
+    const pc = D.prefCodeOf(prefName);
+    return pc ? unrecOf(D.muniCode6(`${pc}000`), "budget") : [];
+  })();
   const muniList = muniEntries.map(({ code, name }) => {
     const t = D.tierOf(code);
+    // decision 階層で当初予算が「調べたが収録できない」団体は、**未着手の団体と
+    // 同じ「決算ベース（総務省）」に見えていた**（2026-07-29 修正）
+    const unrec = t === "decision" ? unrecOf(code, "budget") : [];
     const badge =
       t === "full"
         ? `収録済 当初予算${KOFU_BUDGET_YEARS.length}年度分＋決算`
         : t === "budget"
           ? "当初予算＋決算（総務省）"
-          : "決算ベース（総務省）";
+          : unrec.length > 0
+            ? "決算のみ（予算は収録不可）"
+            : "決算ベース（総務省）";
     const strong = t !== "decision";
     return {
       name,
       badge,
-      badgeFg: strong ? accent : "#4B95C4",
+      badgeFg: strong ? accent : unrec.length > 0 ? "#8A4B1F" : "#4B95C4",
       bg: "#FFFFFF",
-      bd: strong ? accent : "#CFE0EA",
+      bd: strong ? accent : unrec.length > 0 ? "#EFD4BE" : "#CFE0EA",
       fg: "#14181C",
       cursor: "pointer",
+      // 理由と確認日は title で開示する（カードを厚くせず、知りたい人には届く）
+      title: unrec.length > 0 ? `当初予算は調べたうえで収録できないと判定しています\n${unrecTitle(unrec)}` : "",
       open: openMuni(name, code),
       requestUrl: "", // 全市町村が閲覧可能なのでリクエスト不要
     };
   });
   const muniLoading = needShard && screen === "muni" && shardLoading && muniEntries.length === 0;
-  // 都道府県レベルの予算（県全体）は未収録なのでリクエストへ
+  // 都道府県レベルの予算（県全体）は未収録なのでリクエストへ。
+  // ⚠ **調べたうえで収録できないと判定した県では出さない**（山形・兵庫・沖縄）—
+  // 取れないと分かっているものを ToDo として起票させるのは読者の手間を無駄にする
+  // （/coverage が同じ理由でリクエスト先から外している）。判定は下の prefUnrec で行う。
   const prefRequestUrl = D.buildRequestUrl(
     `${prefName}（都道府県）の予算・決算資料の収録`,
     `自治体リクエスト: ${prefName} の県全体（都道府県会計）を収録してほしい（市区町村選択画面より）`,
@@ -1047,14 +1076,21 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     })(),
     // decision 自治体のシャード取得待ち（ダッシュボードでスケルトンを出す）
     loading: decisionPending,
-    // decision 自治体の未収録機能（主な事業・執行・評価・補正）のその場リクエスト
-    decisionRequestUrl: isDecision
+    // decision 自治体の未収録機能（主な事業・執行・評価・補正）のその場リクエスト。
+    // ⚠ **当初予算を調べたうえで収録できないと判定した団体では出さない**（山梨市・韮崎市・
+    // 甲斐市・上野原市・中央市）。/coverage は同じ理由でリクエスト先から外しているのに、
+    // 読者が実際に開くこの画面では出し続けていた（2026-07-29 修正）
+    decisionRequestUrl: isDecision && unrecOf(muniCode ?? "", "budget").length === 0
       ? D.buildRequestUrl(
           `${data.name}の予算資料（当初予算・主な事業・執行状況）の収録`,
           `自治体リクエスト: ${prefName} ${data.name} は決算ベース（総務省）で収録済み。当初予算・主な事業・執行状況などの予算資料も見たい`,
           data.name,
         )
       : "",
+    // リクエストの代わりに出す説明（理由と確認日）。**恒久の事実として書かない**
+    decisionUnrec: isDecision
+      ? unrecOf(muniCode ?? "", "budget").map((u) => ({ fyLabel: u.fyLabel, reason: u.reason, checkedOn: u.checkedOn }))
+      : [],
     decisionEvidence: isDecision
       ? (decisionView!.evidence ?? []).map((ev) => ({
           ...ev,
@@ -1303,15 +1339,22 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     prefAllOpen: prefEntity
       ? () => nav({ screen: "dash", muni: prefEntity.muniName, muniCode: prefEntity.muniCode, pref: prefName, drillPath: [], theme: null, budgetFy: undefined })
       : () => {},
-    prefAllBg: prefEntity ? "#FFFFFF" : "#F0F5F8",
-    prefAllFg: prefEntity ? "#14181C" : "#8494A0",
-    prefAllBd: prefEntity ? accent : "#DFE7EC",
-    prefAllBadge: prefEntity ? "当初予算 収録済" : "準備中",
+    prefAllBg: prefEntity ? "#FFFFFF" : prefUnrec.length > 0 ? "#FFF8F2" : "#F0F5F8",
+    prefAllFg: prefEntity ? "#14181C" : prefUnrec.length > 0 ? "#8A4B1F" : "#8494A0",
+    prefAllBd: prefEntity ? accent : prefUnrec.length > 0 ? "#EFD4BE" : "#DFE7EC",
+    // 「準備中」は**これから手を付ける**という約束に読める。調べたうえで取れないと
+    // 判定した県（山形・兵庫・沖縄）で出すと、いつまでも来ないものを待たせることになる
+    prefAllBadge: prefEntity ? "当初予算 収録済" : prefUnrec.length > 0 ? "収録不可" : "準備中",
     prefAllNote: prefEntity
       ? `${prefName}（都道府県会計）の当初予算を款別で閲覧できます`
-      : "都道府県（県全体）レベルの会計データは未収録です",
+      : prefUnrec.length > 0
+        ? `一次資料を調べたうえで収録できないと判定しています（${prefUnrec[0].checkedOn} 確認）`
+        : "都道府県（県全体）レベルの会計データは未収録です",
+    // 理由の全文は title に出す。**恒久の事実ではない**ので確認日を必ず添える
+    prefAllTitle: prefUnrec.length > 0 ? unrecTitle(prefUnrec) : "",
     muniList,
-    prefRequestUrl,
+    // 取れないと分かっている県ではリクエストを出さない（読者の手間を無駄にしない）
+    prefRequestUrl: prefUnrec.length > 0 ? "" : prefRequestUrl,
     // 全市町村が最低でも決算ベースで閲覧可能になったので、空県カードは出さない
     prefIsEmpty: false,
     crumbPref: s.pref || "山梨県",
