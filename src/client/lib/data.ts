@@ -294,9 +294,32 @@ export function fmtPop(pop: number): string {
 }
 export function hash(s: string): number { let h = 0; for (let i=0;i<s.length;i++) { h = (h*31 + s.charCodeAt(i)) >>> 0; } return h; }
 export function fadeColor(c: string): string { return `color-mix(in srgb, ${c} 26%, #F2F6F9)`; }
+/**
+ * 系列の i 番目の色。**PALETTE を直接 `[i % length]` で引かないこと** — 必ずこれを通す。
+ *
+ * PALETTE は12色しかないので、款が13以上ある団体では色が一周し、**同じドーナツの中に
+ * 同色のスライスが2つ**できて凡例のスウォッチでも見分けられなかった（2026-07-29 修正。
+ * 東京都の歳出18款で6色が2回ずつ・**95エンティティ中73／417断面中198が該当**）。
+ *
+ * 直し方は**色相を新設せず周ごとに明度を振る**（CLAUDE.md の「PALETTE 以外の系列色を
+ * 新設しない」＝ Okabe-Ito ベースの色覚多様性対応を壊さないため）。2周目を**はっきり淡く**
+ * してあるのは、1周目の彩度が高い色と「層」として見分けさせるためで、中途半端に淡くすると
+ * 別の色相の1周目（例: 淡くした青 と 空色）と紛れる。
+ *
+ * 実データの最大は東京都の18款＝2周目までだが、3周目以降も定義しておく（款が増えても
+ * 静かに同色へ戻らないように）。`fadeColor` と入れ子になるが color-mix は入れ子で使える。
+ */
+export function seriesColor(i: number): string {
+  const base = PALETTE[i % PALETTE.length];
+  const lap = Math.floor(i / PALETTE.length);
+  if (lap === 0) return base;
+  if (lap === 1) return `color-mix(in srgb, ${base} 45%, #FFFFFF)`;
+  if (lap === 2) return `color-mix(in srgb, ${base} 60%, #000000)`;
+  return `color-mix(in srgb, ${base} 25%, #FFFFFF)`;
+}
 export function donutBg(items: BudgetNode[], hi: number | null): string {
   const total = items.reduce((a,b)=>a+b.v,0);
   let acc = 0; const stops: string[] = [];
-  items.forEach((it,i)=>{ const from = acc/total*100; acc += it.v; const to = acc/total*100; const col = PALETTE[i%PALETTE.length]; stops.push(`${(hi==null||hi===i)?col:fadeColor(col)} ${from.toFixed(2)}% ${to.toFixed(2)}%`); });
+  items.forEach((it,i)=>{ const from = acc/total*100; acc += it.v; const to = acc/total*100; const col = seriesColor(i); stops.push(`${(hi==null||hi===i)?col:fadeColor(col)} ${from.toFixed(2)}% ${to.toFixed(2)}%`); });
   return `conic-gradient(${stops.join(', ')})`;
 }
