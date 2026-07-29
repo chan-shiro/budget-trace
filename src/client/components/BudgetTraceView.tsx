@@ -136,7 +136,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
           <h1 style={S("margin:18px 0 6px; font-size:32px; font-weight:700;")}>{v.muniPrefName}</h1>
           <p style={S("margin:0 0 28px; color:#5C6B77; font-size:14px;")}>{v.muniIntro}</p>
 
-          <HoverBox as="button" onClick={v.prefAllOpen} style={S(`width:100%; text-align:left; display:flex; align-items:center; justify-content:space-between; gap:12px; background:${v.prefAllBg}; color:${v.prefAllFg}; border:1px solid ${v.prefAllBd}; border-radius:12px; padding:18px 22px; cursor:pointer; margin-bottom:22px; font-family:'IBM Plex Sans JP',sans-serif;`)} hoverStyle={S("border-color:#1798D0;")}>
+          <HoverBox as="button" onClick={v.prefAllOpen} title={v.prefAllTitle || undefined} style={S(`width:100%; text-align:left; display:flex; align-items:center; justify-content:space-between; gap:12px; background:${v.prefAllBg}; color:${v.prefAllFg}; border:1px solid ${v.prefAllBd}; border-radius:12px; padding:18px 22px; cursor:pointer; margin-bottom:22px; font-family:'IBM Plex Sans JP',sans-serif;`)} hoverStyle={S("border-color:#1798D0;")}>
             <span>
               <span style={S("display:block; font-size:17px; font-weight:700;")}>{v.muniPrefName}全体（都道府県レベル）</span>
               <span style={S("display:block; font-size:12.5px; opacity:0.75; margin-top:2px;")}>{v.prefAllNote}</span>
@@ -155,7 +155,8 @@ export default function BudgetTraceView({ v }: { v: any }) {
                   <span style={S(`font-family:'IBM Plex Mono',monospace; font-size:11px; color:${m.badgeFg};`)}>{m.badge}</span>
                 </HoverBox>
               ) : (
-                <HoverBox as="button" key={i} onClick={m.open} style={S(`text-align:left; display:flex; flex-direction:column; gap:6px; background:${m.bg}; border:1px solid ${m.bd}; border-radius:12px; padding:14px 16px; cursor:${m.cursor}; color:${m.fg}; font-family:'IBM Plex Sans JP',sans-serif;`)} hoverStyle={S("border-color:#1798D0;")}>
+                // title は「調べたが収録できない」団体にだけ付く（理由と確認日）
+                <HoverBox as="button" key={i} onClick={m.open} title={m.title || undefined} style={S(`text-align:left; display:flex; flex-direction:column; gap:6px; background:${m.bg}; border:1px solid ${m.bd}; border-radius:12px; padding:14px 16px; cursor:${m.cursor}; color:${m.fg}; font-family:'IBM Plex Sans JP',sans-serif;`)} hoverStyle={S("border-color:#1798D0;")}>
                   <span style={S("font-size:15px; font-weight:600;")}>{m.name}</span>
                   <span style={S(`font-family:'IBM Plex Mono',monospace; font-size:11px; color:${m.badgeFg};`)}>{m.badge}</span>
                 </HoverBox>
@@ -1177,7 +1178,25 @@ export default function BudgetTraceView({ v }: { v: any }) {
                     {/* 収録済み自治体を並べ書きしない — 手書きの列挙は増えるたびにズレる。/coverage が実データから出す一覧へ誘導する */}
                     （収録済みの自治体は<a href="/coverage" onClick={(e) => { e.preventDefault(); v.goCoverage(); }} style={S("color:#0F76A3; cursor:pointer;")}>データ整備状況</a>を参照）。
                   </p>
-                  <a href={v.decisionRequestUrl} target="_blank" rel="noopener noreferrer" style={S("display:inline-block; font-size:12.5px; border:1px solid #1798D0; color:#0F76A3; border-radius:999px; padding:6px 16px; text-decoration:none;")}>この自治体の予算資料の収録をリクエスト ↗</a>
+                  {/* リクエストできるのは「まだ手を付けていない」ものだけ。**調べたうえで
+                      収録できないと判定した団体では、リクエストの代わりに理由を出す** —
+                      取れないと分かっているものを起票させるのは読者の手間を無駄にする
+                      （/coverage が同じ理由でリクエスト先から外している）。
+                      ⚠ **恒久の事実として書かない**（判定は実際にくつがえる）ので確認日を添える。 */}
+                  {v.decisionRequestUrl ? (
+                    <a href={v.decisionRequestUrl} target="_blank" rel="noopener noreferrer" style={S("display:inline-block; font-size:12.5px; border:1px solid #1798D0; color:#0F76A3; border-radius:999px; padding:6px 16px; text-decoration:none;")}>この自治体の予算資料の収録をリクエスト ↗</a>
+                  ) : (
+                    <div style={S("background:#FFF8F2; border:1px solid #EFD4BE; border-radius:10px; padding:11px 14px;")}>
+                      <div style={S("font-size:12.5px; font-weight:700; color:#8A4B1F; margin-bottom:4px;")}>当初予算は一次資料を調べたうえで収録できないと判定しています</div>
+                      {v.decisionUnrec.map((u: any, i: number) => (
+                        <p key={i} style={S("margin:0; font-size:11.5px; color:#5C6B77; line-height:1.8;")}>
+                          <span style={S("font-family:'IBM Plex Mono',monospace; color:#8A4B1F;")}>{u.fyLabel}</span> — {u.reason}
+                          <span style={S("font-family:'IBM Plex Mono',monospace; color:#8494A0; margin-left:6px;")}>（{u.checkedOn} 確認）</span>
+                        </p>
+                      ))}
+                      <p style={S("margin:6px 0 0; font-size:11px; color:#8494A0; line-height:1.7;")}>これは確認日時点の実測であって、恒久的にできないという意味ではありません（資料が差し替わったり、抽出の手当てが増えれば収録できるようになります）。</p>
+                    </div>
+                  )}
                 </section>
                 )}
 
