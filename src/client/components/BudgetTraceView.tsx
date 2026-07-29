@@ -234,10 +234,9 @@ export default function BudgetTraceView({ v }: { v: any }) {
                   <span style={S("color:#5C6B77; font-family:'IBM Plex Mono',monospace; font-size:11px;")}>{d.range}</span>
                 </div>
               ))}
-              <div style={S("display:flex; justify-content:space-between; gap:12px; padding:6px 0; font-size:12px;")}>
-                <span style={S("color:#14181C; font-weight:600;")}>甲府市</span>
-                <span style={S("color:#5C6B77; font-family:'IBM Plex Mono',monospace; font-size:11px;")}>{v.rm.progress.kofuBudgetRange}</span>
-              </div>
+              {/* ⚠ ここに甲府市の行をべた書きしていた（2026-07-29 撤去）— ソートの外に
+                  置かれるので7年度なのに2年度の自治体より後ろに出ており、団体名も手書き
+                  だった。depth は derive が甲府（full）を含めて年度の多い順に並べる。 */}
             </section>
           </div>
 

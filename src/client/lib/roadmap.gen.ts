@@ -117,6 +117,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H29〜R8（9年度）"
     },
     {
+      "name": "札幌市",
+      "code": "011002",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "目黒区",
       "code": "131105",
       "years": 7,
@@ -153,6 +159,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "甲府市",
+      "code": "192015",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "名古屋市",
       "code": "231002",
       "years": 7,
@@ -179,12 +191,6 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "福岡市",
       "code": "401307",
-      "years": 7,
-      "range": "R2〜R8（7年度）"
-    },
-    {
-      "name": "札幌市",
-      "code": "011002",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },

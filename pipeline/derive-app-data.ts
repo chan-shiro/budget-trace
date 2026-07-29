@@ -2977,10 +2977,25 @@ export const CAVEATS: Record<string, Caveat[]> = ${JSON.stringify(byCode, null, 
   // **進捗の数字は1つも手で書かない** — coverage と同じ実データ（上の summary・gen 各種）から出す。
   // 手書きなのは計画（pipeline/registry/roadmap.ts）だけ。roadmap は数KBなので静的 import でよい
   // （coverage.json は130KB級なのでフェッチしているが、こちらはその必要がない）。
-  const budgetDepth = Object.entries(MUNI_BUDGET_YEARS)
-    .filter(([, ys]) => ys.length > 1)
-    .map(([code, ys]) => ({ name: ys[0]!.muniName, code, years: ys.length, range: range(ys.map((y) => y.fy)) }))
-    .sort((a, z) => z.years - a.years);
+  // ⚠ **甲府（full）もここに含める**。かつては画面側の JSX に甲府の行をべた書きして
+  // いたが、**ソートの外に置かれるので7年度なのに2年度の自治体より後ろに出ていた**
+  // （2026-07-29 修正）。団体名も手書きだった＝この節が繰り返し踏んでいる型。
+  // 甲府は full 階層なので MUNI_BUDGET_YEARS ではなく KOFU_BUDGET_YEARS を持つ。
+  const budgetDepth = [
+    ...Object.entries(MUNI_BUDGET_YEARS).map(([code, ys]) => ({
+      name: ys[0]!.muniName, code, years: ys.length, range: range(ys.map((y) => y.fy)),
+    })),
+    {
+      name: KNOWN.find((k) => k.code === SELF_CODE)!.name,
+      code: SELF_CODE,
+      years: KOFU_BUDGET_YEARS.length,
+      range: range(KOFU_BUDGET_YEARS.map((b) => b.fy)),
+    },
+  ]
+    .filter((d) => d.years > 1)
+    // 同年度数は団体コード順（＝地理順）で解く。件数だけで並べると年度を足すたびに
+    // 同数グループの中の順序が不定に入れ替わり、差分がノイズになる
+    .sort((a, z) => z.years - a.years || a.code.localeCompare(z.code));
   const progress = {
     // 3階層のカバレッジ
     fullCount: summary.fullCount,
