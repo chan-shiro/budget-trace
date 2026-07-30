@@ -357,8 +357,10 @@ interface Options {
    * - "table-lines"（山口: 事業名 予算額 内容 担当課 の事業別表。施策見出しつき・款/前年度なし）
    * - "kan-ko-numbered"（北区: 款見出し（件数の宣言つき）→ 項見出し（項合計/掲載事業小計）→
    *   項ごとに 1..M の番号つき事業。**款が直接付く**・**Σ項合計 = 款額の完全分解**が張れる）
+   * - "dept-kan-table"（港区: 所管部署別の新規・臨時・レベルアップ事業一覧。**款が直接付く**が
+   *   **抜粋（新規等のみ）なので完全分解ではない**。原典の締めの表（区分別の件数・Σ）で検証する）
    */
-  projectFormat?: "table" | "bullets" | "coded-sections" | "marked-bullets" | "table-lines" | "pref-bullets" | "dept-bullets" | "coord-table" | "kan-tree" | "meisai-tree" | "numbered-rows" | "kan-ko-numbered";
+  projectFormat?: "table" | "bullets" | "coded-sections" | "marked-bullets" | "table-lines" | "pref-bullets" | "dept-bullets" | "coord-table" | "kan-tree" | "meisai-tree" | "numbered-rows" | "kan-ko-numbered" | "dept-kan-table";
   /**
    * numbered-rows（浜松）: 款セルを持てない事業を何件まで許容するか（既定0）。
    * R7 は p.65「重度障害者等就労・大学修学支援事業」の1件だけ**原本に款セルが無い**（±180pt を
@@ -2486,6 +2488,200 @@ function parseProjectsKanKoNumbered(
   return projects;
 }
 
+// ---- 主な事業「dept-kan-table」（港区 R8・2026-07-31）------------------------
+// 「港区予算概要」Ⅳ章 参考資料の `２ 所管部署別新規・臨時・レベルアップ事業一覧`。
+// **款が事業に直接付く**フラットな表。⚠ **「新規・臨時・レベルアップ」だけ**なので、
+// 北区（§10l-2）のような**歳出の完全分解にはならない**（R8 で歳出の 26.4%）。
+//
+// 1行 = 3テキスト行（所管課が上・区分と金額が中・（款名）が下）:
+//                                     まちづくり課
+//     【新規】     芝地区道路・橋りょう工事業務管理システム     555   -   50
+//                                     （土木費）
+//
+// ⚠ **区分マーカーを行のアンカーにする**。偵察は「縦書きの部署グループラベル（`芝地区` 等）が
+//   区分セルに融合して7行が静かに消える」と報告してきたが、**それは -layout の行テキストの話**で、
+//   **-tsv の語単位なら別トークンなので融合しない**（293件すべて `【…】` 単独・x=76.8 固定を実測）。
+//   → 座標で取る限りこの罠は存在しない。
+// ⚠ **所管課が長いと2行に折返し、（款名）が所管課の続きと同じトークンに入る**（`担当（総務費）`）。
+//   full match で款を探すと**36行の款が静かに落ちる**（実測）。**連結してから末尾の（…費）を取る**。
+// ⚠ **`【ﾚﾍﾞﾙ】` は半角カナ**（`【レベル】` では当たらない）。
+// ⚠ **列は年度で全部ずれる**（R7 は区分 79.7 / 名前 133.3 / 所管課 377.3 で、
+//   `うちレベルアップ分` 列そのものが無い）。**外挿しない**。
+//
+// **検証は原典の締めの表（最終ページ）で張る** — 前年度列が無く年度間クロスチェックが
+// 張れないので、**これが唯一かつ十分な網**: 区分ごとの件数・Σ と 合計（件数・Σ）を
+// 原典から読み取り、抽出結果と突き合わせる。H30〜R8 の9年度に締めの表がある。
+function parseProjectsDeptKanTable(
+  filePath: string,
+  filename: string,
+  from: number,
+  to: number,
+  expLines: BudgetLineFact[],
+  sourceId: string,
+): BudgetProjectFact[] {
+  const X_KUBUN = [70, 120] as const;
+  const X_NAME = [120, 335] as const;
+  const X_DEPT = [335, 420] as const;
+  const X_NUM = 420;
+  const ANCHOR = /^【(新規|臨新|臨継|ﾚﾍﾞﾙ)】$/;
+  const FULL: Record<string, string> = { 新規: "新規", 臨新: "臨時・新規", 臨継: "臨時・継続", ﾚﾍﾞﾙ: "レベルアップ" };
+  const toNum = (s: string) => Number(s.replace(/[,\s]/g, ""));
+
+  const out: BudgetProjectFact[] = [];
+  const kubunCount: Record<string, number> = {};
+  const kubunSum: Record<string, number> = {};
+  const stray: string[] = [];
+  // 事業名の列にあるトークンが**どの行にも入らずに余る**のを検出するための集計。
+  // ⚠ Σ も件数も合ったまま**名前の頭だけが落ちる**ことがある（窓を y の固定オフセットで
+  //   切っていたときに実際に踏んだ: `業≪港南子ども中高生プラザ…`）。金額でないので
+  //   Σ では絶対に捕まらない＝この網だけが検出する。
+  let nameTokensInTable = 0;
+  let nameTokensConsumed = 0;
+
+  // 表の上端（列見出しの下）と下端。⚠ 最終ページには**締めの表**が続いており、その件数・Σ は
+  // 事業名の x 帯（120〜335）に入る。最後の行の窓を頁末まで伸ばすと**締めの数字が事業名に混ざる**
+  // ので、締めの見出しで止める。
+  const HEADER_Y = 88;      // 列見出しの最下 77.89 と最初のデータ 97.09 の間
+  const PAGE_BOTTOM = 795;  // 印字ノンブル 805.6 の上
+
+  for (let page = from; page <= to; page++) {
+    const ws = pdfPageWords(filePath, page);
+    const summaryHead = ws.find((w) => /事業数及び予算額/.test(w.text));
+    const FOOTER_Y = summaryHead ? summaryHead.y - 6 : PAGE_BOTTOM;
+    const anchors = ws.filter((w) => ANCHOR.test(w.text) && w.x >= X_KUBUN[0] && w.x <= X_KUBUN[1]);
+    nameTokensInTable += ws.filter((w) => w.x >= X_NAME[0] && w.x < X_NAME[1] && w.y > HEADER_Y && w.y < FOOTER_Y).length;
+    // 網は抽出より緩く: `【..】` を**含む**トークンを全部見て、アンカーにならなかったものは控える
+    // （融合や座標のずれが起きたときに、抽出と同じ条件では自分の失敗を検出できない）
+    for (const w of ws) {
+      if (/【.{2}】/.test(w.text) && !anchors.includes(w)) stray.push(`p.${page} 「${w.text}」@x=${w.x.toFixed(1)}`);
+    }
+
+    // ⚠ **y の固定オフセットで窓を切らない**。事業名は最大4行に折返し、**アンカー（区分）は
+    //   その途中の行に来る**ので、上に何行伸びるかは行ごとに違う（±14pt で切ったら
+    //   `業≪港南子ども中高生プラザ…` のように**名前の頭が落ちた**。金額も件数も合ったままなので
+    //   Σ では捕まらない＝画面を見るまで気づかない型）。
+    //   → **隣接するアンカーの中点**で区切る。行の高さに magic number を置かない。
+    const sortedY = anchors.map((w) => w.y).sort((p, q) => p - q);
+    for (const a of anchors) {
+      const i = sortedY.indexOf(a.y);
+      const top = i === 0 ? HEADER_Y : (sortedY[i - 1]! + a.y) / 2;
+      const bottom = i === sortedY.length - 1 ? FOOTER_Y : (a.y + sortedY[i + 1]!) / 2;
+      const band = ws.filter((w) => w.y > top && w.y < bottom);
+      const nameWs = band.filter((w) => w.x >= X_NAME[0] && w.x < X_NAME[1]);
+      nameTokensConsumed += nameWs.length;
+      const name = [...nameWs].sort((p, q) => p.y - q.y || p.x - q.x).map((w) => w.text).join("").trim();
+      if (!name) throw new Error(`${filename} p.${page}: 事業名が空です（区分 ${a.text}）`);
+
+      const deptJoined = band.filter((w) => w.x >= X_DEPT[0] && w.x < X_DEPT[1])
+        .sort((p, q) => p.y - q.y || p.x - q.x).map((w) => w.text).join("");
+      const km = deptJoined.match(/（([^（）]*費)）\s*$/);
+      const kan = km ? km[1]! : null;
+      const dept = (km ? deptJoined.slice(0, km.index) : deptJoined).trim();
+
+      const nums = ws.filter((w) => w.x > X_NUM && Math.abs(w.y - a.y) <= 3).sort((p, q) => p.x - q.x);
+      const amtW = nums.find((w) => /^[\d,]+$/.test(w.text));
+      if (!amtW) throw new Error(`${filename} p.${page}「${name.slice(0, 24)}」: 予算額が読めません`);
+      const amount = toNum(amtW.text);
+      const luW = nums.filter((w) => w !== amtW).find((w) => /^[\d,]+$/.test(w.text));
+
+      const kubunKey = a.text.replace(/[【】]/g, "");
+      kubunCount[kubunKey] = (kubunCount[kubunKey] ?? 0) + 1;
+      kubunSum[kubunKey] = (kubunSum[kubunKey] ?? 0) + amount;
+
+      // 原典の4区分は既存の3値（新規/拡充/繰越）に収まらないので、**区分の原文は description に残す**
+      // （臨時・継続は新規でも拡充でもない）。⚠ 予算額は目次の凡例により**事業全体**で、
+      // レベルアップの差分ではない — `うちレベルアップ分` はその内数なので併記する。
+      const descParts = [FULL[kubunKey]!];
+      if (dept) descParts.push(`所管 ${dept}`);
+      if (luW) descParts.push(`うちレベルアップ分 ${luW.text}千円`);
+
+      out.push({
+        kan,
+        no: null,
+        kubun: kubunKey === "ﾚﾍﾞﾙ" ? "拡充" : kubunKey === "臨継" ? null : "新規",
+        name,
+        budgetBookName: null,
+        amount,
+        description: descParts.join("・"),
+        basicGoal: "",
+        shisaku: "",
+        locator: { file: filename, page },
+      });
+    }
+  }
+
+  if (stray.length > 0) {
+    throw new Error(`${filename}: 区分マーカーらしきトークンが行のアンカーになりませんでした（${stray.length}件）:\n  ${stray.join("\n  ")}`);
+  }
+  if (out.length === 0) throw new Error(`${filename} p.${from}-${to}: 事業が1件も抽出できませんでした`);
+  // 事業名の列に、どの行にも吸われなかったトークンが残っていないか
+  // （＝名前の折返しの取りこぼし。Σ でも件数でも捕まらない）
+  if (nameTokensConsumed !== nameTokensInTable) {
+    throw new Error(
+      `${filename}: 事業名の列のトークン ${nameTokensInTable} 個に対し、行に取り込めたのは ` +
+        `${nameTokensConsumed} 個です（差 ${nameTokensInTable - nameTokensConsumed}）。` +
+        `折返しの窓が狭くて名前の一部が落ちている可能性があります`,
+    );
+  }
+
+  // ---- 原典の締めの表と突合（この資料で唯一かつ十分な網）----
+  // 最終ページに `新 規 28 757,564` … `合 計 293 56,648,478` が載る。
+  // ラベルは1文字ずつ分かち書きされるので連結してから判定する。
+  {
+    const ws = pdfPageWords(filePath, to);
+    const rows: { label: string; ints: number[] }[] = [];
+    const byY: Map<number, typeof ws> = new Map();
+    for (const w of [...ws].sort((p, q) => p.y - q.y || p.x - q.x)) {
+      const key = [...byY.keys()].find((k) => Math.abs(k - w.y) <= 3);
+      if (key == null) byY.set(w.y, [w]); else byY.get(key)!.push(w);
+    }
+    for (const [, line] of byY) {
+      const label = line.filter((w) => w.x < 160).map((w) => w.text).join("").replace(/\s/g, "");
+      const ints = line.filter((w) => w.x >= 160 && /^[\d,]+$/.test(w.text)).map((w) => toNum(w.text));
+      if (label) rows.push({ label, ints });
+    }
+    const find = (re: RegExp) => rows.find((r) => re.test(r.label));
+    const total = find(/^合計$/);
+    if (!total || total.ints.length < 2) {
+      throw new Error(`${sourceId}: 原典の締めの表（合計行）が p.${to} に見つかりません — この資料の唯一の網なので、見つからないまま通さない`);
+    }
+    const [wantCount, wantSum] = total.ints;
+    const gotSum = out.reduce((a, b) => a + b.amount, 0);
+    if (out.length !== wantCount) {
+      throw new Error(`${sourceId}: 原典の合計は ${wantCount}事業 ですが ${out.length}件 しか抽出できていません`);
+    }
+    if (gotSum !== wantSum) {
+      throw new Error(`${sourceId}: Σ予算額 ${gotSum.toLocaleString()} が原典の合計 ${wantSum!.toLocaleString()} と一致しません（差 ${(gotSum - wantSum!).toLocaleString()}）`);
+    }
+    // 区分ごとの件数・Σ も原典が持っている
+    for (const [key, label] of Object.entries(FULL)) {
+      const r = find(new RegExp(`^${label.replace(/・/g, "・")}$`));
+      if (!r || r.ints.length < 2) continue;   // レベルアップ行は（レベルアップ分）が別行に割れる年度がある
+      if ((kubunCount[key] ?? 0) !== r.ints[0]) {
+        throw new Error(`${sourceId}: 区分「${label}」は原典が ${r.ints[0]}件 ですが ${kubunCount[key] ?? 0}件 です`);
+      }
+      if ((kubunSum[key] ?? 0) !== r.ints[1]) {
+        throw new Error(`${sourceId}: 区分「${label}」の Σ ${(kubunSum[key] ?? 0).toLocaleString()} が原典の ${r.ints[1]!.toLocaleString()} と一致しません`);
+      }
+    }
+  }
+
+  // ---- 款の健全性（抜粋なので等式ではなく ≤ で張る）----
+  {
+    const kanAmount = new Map(expLines.map((l) => [l.kanName, l.amount]));
+    const sums = new Map<string, number>();
+    for (const p of out) if (p.kan) sums.set(p.kan, (sums.get(p.kan) ?? 0) + p.amount);
+    for (const [kan, sum] of sums) {
+      const want = kanAmount.get(kan);
+      if (want == null) throw new Error(`${sourceId}: 事業の款「${kan}」が歳出の款別一覧にありません`);
+      if (sum > want) {
+        throw new Error(`${sourceId}: 款「${kan}」の Σ事業 ${sum.toLocaleString()} が款予算 ${want.toLocaleString()} を超えています`);
+      }
+    }
+  }
+  return out;
+}
+
 // meisai-tree（北九州）は**Σ事業 = 款の完全分解**が成り立つ資料（説明欄が歳出予算を漏れなく
 // 分解している。R8 で16款すべて厳密一致を実測）。「主な事業の Σ ≤ 款」（抜粋・§2-4）より強い
 // **等式**で張れる、収録中では唯一の網。折返し金額の取り違え・事業の取り落としを款単位で捕まえる。
@@ -2644,6 +2840,8 @@ export function parseKofuYosansho(
                       exp.lines, source.id)
                 : projFmt === "kan-ko-numbered"
                   ? parseProjectsKanKoNumbered(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to, exp.lines, source.id)
+                : projFmt === "dept-kan-table"
+                  ? parseProjectsDeptKanTable(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to, exp.lines, source.id)
                 : projFmt === "coord-table"
                   ? parseProjectsCoordTable(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
                   : parseProjectPages(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to, opts.projectColumns, opts.projectRowBanding ?? "midpoint")

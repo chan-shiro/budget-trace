@@ -5197,6 +5197,12 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "license": "港区ホームページ上の文書や画像等の各ファイル、およびその内容に関する諸権利は、原則として港区に帰属します。記載内容の無断での転載は禁じます。もし、記載内容について転載を希望される場合は、その旨下記までご連絡ください。",
     "target": "file"
   },
+  "/sources/minato-yosangaiyou-r8/20260202131436.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minato.tokyo.jp/documents/4694/20260202131436.pdf",
+    "license": "港区ホームページ上の文書や画像等の各ファイル、およびその内容に関する諸権利は、原則として港区に帰属します。記載内容の無断での転載は禁じます。もし、記載内容について転載を希望される場合は、その旨下記までご連絡ください。",
+    "target": "file"
+  },
   "/sources/minato-yosangaiyou-r7/r7nishou.pdf": {
     "mode": "origin",
     "href": "https://www.city.minato.tokyo.jp/documents/4694/r7nishou.pdf",
