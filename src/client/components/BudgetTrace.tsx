@@ -109,7 +109,7 @@ const PLAN_BY_FY: Record<string, { plan: string; goals?: { name: string; label: 
   R2: { plan: "第六次甲府市総合計画" },
 };
 
-export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {}) {
+export default function BudgetTrace({ initial, consentEnabled }: { initial?: Partial<St>; consentEnabled?: boolean } = {}) {
   // 初期 state はサーバ側でパスから解決済み（初回描画から正しい画面＝チラつき無し）
   const [st, setStRaw] = React.useState<St>({ ...DEFAULT_ST, ...(initial ?? {}) });
   const tipTimer = React.useRef<any>(null);
@@ -1312,6 +1312,13 @@ export default function BudgetTrace({ initial }: { initial?: Partial<St> } = {})
     // 「収録の深さから選ぶ」（トップ）。段の割り当ては収録データから自動（coverageLevels 参照）
     coverageLevels,
     coverageDecisionCount: ROADMAP_PROGRESS.muniCount.toLocaleString(),
+    // フッターの公開用リンク。プライバシーポリシーは www.phh.jp が正典（同じ事業者・
+    // 同じ計測の仕組みなので2つに分けない）。Cookie 設定は**バナーを出す環境でだけ**出す
+    // （dev や Preview では同意バナー自体が無いので、押しても何も起きないボタンになる）
+    privacyUrl: D.PRIVACY_URL,
+    openCookiePrefs: consentEnabled
+      ? () => { void import("vanilla-cookieconsent").then((cc) => cc.showPreferences()); }
+      : null,
     // 都道府県の到達度は**段をまたぐ**（山梨県だけ「主な事業まで」の段にいる）ので、
     // 段の中でなくセクションの導入に出す。分母 47 も derive 由来（手書きしない）
     coveragePrefDone: coverageLevels.reduce((a, g) => a + g.prefCount, 0),

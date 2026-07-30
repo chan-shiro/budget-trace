@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, SITE_TITLE, OG_IMAGE } from "@/client/lib/site";
+import CookieConsent from "@/client/components/CookieConsent";
 
 // Google Tag Manager。コンテナは *.phh.jp を対象に設定されている。
 // **本番ドメインでだけ読み込む** — Preview デプロイ（*.vercel.app）や dev で読み込むと、
@@ -9,6 +10,13 @@ import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, SITE_TITLE, OG_IMAGE } from "@/c
 // （production / preview / development）ので、ローカルでは undefined = 無効。
 const GTM_ID = "GTM-MQRPKN33";
 const gtmEnabled = process.env.VERCEL_ENV === "production";
+
+// Google Consent Mode v2 の**既定値**。www.phh.jp と同一で、計測系はすべて denied から始める。
+// ⚠ **GTM より前に dataLayer へ入らなければ意味がない** — 後から入れると、GTM は
+// 「既定＝granted」として一度発火してしまう。だから beforeInteractive で先に流す。
+// `wait_for_update` は、同意バナーの判断が返るまでタグに待ってもらう猶予（ミリ秒）。
+const CONSENT_DEFAULT = `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',functionality_storage:'granted',security_storage:'granted',wait_for_update:500});`;
 
 export const metadata: Metadata = {
   // 相対パスの OG 画像などをこのドメインで絶対 URL に解決させる
@@ -54,6 +62,12 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
           rel="stylesheet"
         />
+        {/* ⚠ Consent Mode の既定値は GTM より先に入れる（後だと granted 扱いで一度発火する） */}
+        {gtmEnabled && (
+          <Script id="consent-default" strategy="beforeInteractive">
+            {CONSENT_DEFAULT}
+          </Script>
+        )}
       </head>
       <body>
         {/* GTM の noscript iframe は body 直後に置くのが公式の指定 */}
@@ -78,6 +92,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','${GTM_ID}');`}
           </Script>
         )}
+        {/* 同意バナー。GTM を読む環境でだけ出す（読まないなら訊く必要が無い）。
+            同意 Cookie は `.phh.jp` に置くので、www.phh.jp で同意済みなら出ない */}
+        {gtmEnabled && <CookieConsent />}
       </body>
     </html>
   );

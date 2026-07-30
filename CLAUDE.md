@@ -137,6 +137,9 @@ onKeyDown={(e) => {
 - **canonical は `stateToPath` で正規化してから入れる** — 旧・日本語パス（`/山梨県/甲府市`）で来ても `/yamanashi/kofu` を正典として指す。クエリ（`?fy=` 等）は画面内の状態なので載せない
 - **OG 画像 `public/og.png`** は静的にコミットしてある。**数字を焼き込まない**（収録が進むと古くなる）。再生成が要るときは `src/app/og-gen/route.tsx` を一時的に作って `next/og` の `ImageResponse` で焼き、`curl localhost:PORT/og-gen -o public/og.png` した後に**ルートを削除する** — 本番に Google Fonts への実行時フェッチを持ち込まないため（手順は docs/handoff.md）
 - **GTM**（`GTM-MQRPKN33`・コンテナは `*.phh.jp` を対象）は `layout.tsx` に直書き（依存を増やさない）。**`process.env.VERCEL_ENV === "production"` のときだけ読み込む** — Preview デプロイや dev で読むと公開前の試行が計測に混ざる
+- **Cookie 同意は `www.phh.jp` と同じ仕組み・同じ Cookie**（`vanilla-cookieconsent` + Google Consent Mode v2）。⚠ **`cc_cookie` を `.phh.jp`（親ドメイン）に置くのが要点** — どちらかで同意すればもう一方では訊かれない。**名前・ドメイン・カテゴリ名のどれかがズレると共有が黙って壊れる**（利用者はサブドメインごとに同じ質問をされる）
+- ⚠ **Consent Mode の既定値は GTM より前に入れる**（`beforeInteractive`）。後から入れると GTM は「既定＝granted」として一度発火してしまう
+- **プライバシーポリシーは `www.phh.jp/privacy` が正典**（`PRIVACY_URL`）。事業者も計測の仕組みも同一なので、ポリシーを2つに分けない。⚠ **絶対 URL で持つ** — 相対 `/privacy` にすると budget-trace 側の存在しないページを指す
 - **`robots.ts` は `/sources/` を除外している** — エビデンスの原本コピーを配信しているディレクトリで、**発行元の資料が発行元より上位に出かねない**ため。配信用の大きな JSON（`/decision/` `/reports/` `coverage.json`）も同様
 - **`sitemap.ts` は URL を必ず `stateToPath` に作らせる**（手で組むとスラグの手当てと二重管理になり、サイトマップだけが 404 を指す）。収録が増えれば黙って追随する
 

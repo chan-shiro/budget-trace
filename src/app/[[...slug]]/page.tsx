@@ -71,5 +71,7 @@ export default async function Page({
   const { slug } = await params;
   const query = await searchParams;
   const initial = pathToState(slug ?? [], query ?? {});
-  return <BudgetTrace initial={initial} />;
+  // 同意バナーを出す環境か（layout の gtmEnabled と同じ判定）。フッターの「Cookie 設定」は
+  // バナーが在るときだけ出す — 無い環境では押しても何も起きないボタンになるため
+  return <BudgetTrace initial={initial} consentEnabled={process.env.VERCEL_ENV === "production"} />;
 }
