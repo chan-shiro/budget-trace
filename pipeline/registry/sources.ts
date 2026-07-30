@@ -5481,10 +5481,16 @@ export const SOURCES: SourceEntry[] = [
     ["H19", 3, 4, "h19_yosangaiyo_03", "old"],
   ] as const).map(([fy, rev, exp, path, gen]) => ({
     id: `minato-yosangaiyou-${fy.toLowerCase()}`,
-    title: `${eraYear(fy)}年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表）`,
+    title: `${eraYear(fy)}年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表${
+      fy === "R8" ? "・所管部署別新規・臨時・レベルアップ事業一覧" : ""
+    }）`,
     publisher: "港区",
     url: null,
-    urls: [`https://www.city.minato.tokyo.jp/documents/4694/${path}.pdf`],
+    // R8 だけ**2ファイル**（Ⅱ章＝款別表 ＋ Ⅳ章＝主要事業）。⚠ 他年度へ外挿しない（下記）
+    urls: [
+      `https://www.city.minato.tokyo.jp/documents/4694/${path}.pdf`,
+      ...(fy === "R8" ? ["https://www.city.minato.tokyo.jp/documents/4694/20260202131436.pdf"] : []),
+    ],
     landingPage: "https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
     kind: "pdf" as const,
     fiscalYear: fy,
@@ -5516,6 +5522,24 @@ export const SOURCES: SourceEntry[] = [
         (gen === "reiwa" || gen === "h31" ? "" : "[、。､]|億|") +
         "特別区[民⺠]税|特別区たばこ税|般財源分|社会保障財源分",
       ...(gen === "reiwa" || gen === "h31" ? {} : { expenditureHeaderExtra: "[、。､]|億" }),
+      // 主要事業（Ⅳ章 参考資料 `２ 所管部署別新規・臨時・レベルアップ事業一覧`・2026-07-31・#162）。
+      // **R8 のみ**。⚠ **他年度へ外挿しない** — 列の x が年度で全部ずれる（R7 は区分 79.7・
+      // 名前 133.3・所管課 377.3 で、`うちレベルアップ分` 列そのものが無い）。物理ページも動く
+      // （R7 p.5–15 / R6 p.5–14 / R5 p.7–18 / R4 p.6–13 / R3 p.12–19 / R2 p.5–13 / H31 p.4–11 /
+      // H30 p.4–12。**H29 以前は締めの表が無く検証ゲートを設計できない**。詳細は docs §10n-2）。
+      //
+      // ⚠ **収録するのは「新規・臨時・レベルアップ」だけ**（原典がそういう表）。歳出の 26.4%
+      //   （56,648,478 / 214,300,000）で、**北区のような完全分解ではない**。継続の通常事業は載らない。
+      // ⚠ **同じ予算概要の「Ⅲ章 新規・臨時・レベルアップ事業」を採ってはいけない** —
+      //   款が `民生費ほか` と**複合款で潰れる**（按分不可）うえ、原典に合計が無く検証が張れない。
+      ...(fy === "R8"
+        ? {
+            kanFile: `${path}.pdf`,
+            projectsFile: "20260202131436.pdf",
+            projectPages: { from: 5, to: 17 },
+            projectFormat: "dept-kan-table" as const,
+          }
+        : {}),
     },
   })),
 

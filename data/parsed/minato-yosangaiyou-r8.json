@@ -3,7 +3,7 @@
   "sourceId": "minato-yosangaiyou-r8",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-07-17T22:17:56.429Z",
+  "parsedAt": "2026-07-30T16:32:13.670Z",
   "unit": "thousandYen",
   "fiscalYear": "R8",
   "account": "一般会計",
@@ -341,6 +341,4403 @@
       "locator": {
         "file": "20260202131316.pdf",
         "page": 5
+      }
+    }
+  ],
+  "projects": [
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "芝地区道路・橋りょう工事業務管理システム",
+      "budgetBookName": null,
+      "amount": 555,
+      "description": "新規・所管 まちづくり課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "芝地区すくわくプログラム推進事業（区立保育園分）",
+      "budgetBookName": null,
+      "amount": 4501,
+      "description": "臨時・継続・所管 管理課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "芝地区すくわくプログラム推進事業（港区保育室分）",
+      "budgetBookName": null,
+      "amount": 1500,
+      "description": "臨時・継続・所管 管理課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "芝地区公衆便所建替",
+      "budgetBookName": null,
+      "amount": 149128,
+      "description": "臨時・継続・所管 まちづくり課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "芝地区公園整備",
+      "budgetBookName": null,
+      "amount": 125614,
+      "description": "臨時・継続・所管 まちづくり課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "芝地区児童遊園整備",
+      "budgetBookName": null,
+      "amount": 99443,
+      "description": "臨時・継続・所管 まちづくり課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "芝地区快適な児童遊園トイレの整備",
+      "budgetBookName": null,
+      "amount": 71143,
+      "description": "臨時・継続・所管 まちづくり課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "戸籍振り仮名法対応",
+      "budgetBookName": null,
+      "amount": 11667,
+      "description": "臨時・継続・所管 区民課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "放課後児童支援員キャリアアップ処遇改善事業≪神明子ども中高生プラザ管理運営≫",
+      "budgetBookName": null,
+      "amount": 179505,
+      "description": "レベルアップ・所管 管理課・うちレベルアップ分 919千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "芝地区放課ＧＯ→クラブ",
+      "budgetBookName": null,
+      "amount": 231080,
+      "description": "レベルアップ・所管 管理課・うちレベルアップ分 36,488千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "港区版こども誰でも通園制度≪芝地区港区保育室事業≫",
+      "budgetBookName": null,
+      "amount": 193266,
+      "description": "レベルアップ・所管 管理課・うちレベルアップ分 14,993千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "一時保育事業及び一時預かり事業に係る利用者の負担軽減≪芝地区子育てひろば事業管理運営≫",
+      "budgetBookName": null,
+      "amount": 98421,
+      "description": "レベルアップ・所管 管理課・うちレベルアップ分 8,428千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "芝地区生活安全活動推進事業",
+      "budgetBookName": null,
+      "amount": 40691,
+      "description": "レベルアップ・所管 協働推進課・うちレベルアップ分 31,293千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "芝地区町会等活動支援",
+      "budgetBookName": null,
+      "amount": 33466,
+      "description": "レベルアップ・所管 協働推進課・うちレベルアップ分 15,305千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "芝地区地域防災力向上",
+      "budgetBookName": null,
+      "amount": 13575,
+      "description": "レベルアップ・所管 協働推進課・うちレベルアップ分 700千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "芝地区住民記録事務",
+      "budgetBookName": null,
+      "amount": 463352,
+      "description": "レベルアップ・所管 区民課・うちレベルアップ分 930千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "個人番号カード交付事務",
+      "budgetBookName": null,
+      "amount": 712930,
+      "description": "レベルアップ・所管 区民課・うちレベルアップ分 598,037千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "麻布地区道路・橋りょう工事業務管理システム",
+      "budgetBookName": null,
+      "amount": 693,
+      "description": "新規・所管 まちづくり課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "東麻布保育園仮設園舎整備に向けた調査",
+      "budgetBookName": null,
+      "amount": 24200,
+      "description": "臨時・新規・所管 管理課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "有栖川樹木管理計画策定",
+      "budgetBookName": null,
+      "amount": 16951,
+      "description": "臨時・新規・所管 まちづくり課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "東麻布二丁目複合施設整備",
+      "budgetBookName": null,
+      "amount": 486914,
+      "description": "臨時・継続・所管 管理課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "南麻布いきいきプラザ大規模改修",
+      "budgetBookName": null,
+      "amount": 28619,
+      "description": "臨時・継続・所管 管理課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 5
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "麻布地区すくわくプログラム推進事業（区立保育園分）",
+      "budgetBookName": null,
+      "amount": 10500,
+      "description": "臨時・継続・所管 管理課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "麻布地区すくわくプログラム推進事業（みなと保育サポート分）",
+      "budgetBookName": null,
+      "amount": 1500,
+      "description": "臨時・継続・所管 管理課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "麻布地区児童遊園整備",
+      "budgetBookName": null,
+      "amount": 210925,
+      "description": "臨時・継続・所管 まちづくり課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "放課後児童支援員キャリアアップ処遇改善事業≪麻布地区学童クラブ(港区学童クラブ)≫",
+      "budgetBookName": null,
+      "amount": 143138,
+      "description": "レベルアップ・所管 管理課・うちレベルアップ分 3,676千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "麻布地区放課ＧＯ→クラブ",
+      "budgetBookName": null,
+      "amount": 294552,
+      "description": "レベルアップ・所管 管理課・うちレベルアップ分 10,827千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "一時保育事業及び一時預かり事業に係る利用者の負担軽減≪麻布地区みなと保育サポート事業管理運営、麻布地区子育てひろば事業管理運営≫",
+      "budgetBookName": null,
+      "amount": 209758,
+      "description": "レベルアップ・所管 管理課・うちレベルアップ分 14,005千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "麻布地区生活安全活動推進事業",
+      "budgetBookName": null,
+      "amount": 52889,
+      "description": "レベルアップ・所管 協働推進課・うちレベルアップ分 38,489千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "麻布地区町会等活動支援",
+      "budgetBookName": null,
+      "amount": 41336,
+      "description": "レベルアップ・所管 協働推進課・うちレベルアップ分 10,232千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "麻布地区地域防災力向上",
+      "budgetBookName": null,
+      "amount": 2433,
+      "description": "レベルアップ・所管 協働推進課・うちレベルアップ分 600千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "環境清掃費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "麻布地区清潔なまちの実現に向けた活動推進事業",
+      "budgetBookName": null,
+      "amount": 18125,
+      "description": "レベルアップ・所管 協働推進課・うちレベルアップ分 3,884千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "赤坂地区道路・橋りょう工事業務管理システム",
+      "budgetBookName": null,
+      "amount": 416,
+      "description": "新規・所管 まちづくり課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "赤坂地区総合支所等改修",
+      "budgetBookName": null,
+      "amount": 394060,
+      "description": "臨時・継続・所管 管理課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "青山いきいきプラザ大規模改修",
+      "budgetBookName": null,
+      "amount": 860276,
+      "description": "臨時・継続・所管 管理課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "赤坂地区すくわくプログラム推進事業（区立保育園分）",
+      "budgetBookName": null,
+      "amount": 4500,
+      "description": "臨時・継続・所管 管理課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "赤坂地区すくわくプログラム推進事業（港区保育室分）",
+      "budgetBookName": null,
+      "amount": 3000,
+      "description": "臨時・継続・所管 管理課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "赤坂地区すくわくプログラム推進事業（みなと保育サポート分）",
+      "budgetBookName": null,
+      "amount": 1500,
+      "description": "臨時・継続・所管 管理課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "放課後児童支援員キャリアアップ処遇改善事業≪赤坂地区放課ＧＯ→クラブ≫",
+      "budgetBookName": null,
+      "amount": 196338,
+      "description": "レベルアップ・所管 管理課・うちレベルアップ分 919千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "港区版こども誰でも通園制度≪赤坂地区港区保育室事業≫",
+      "budgetBookName": null,
+      "amount": 415229,
+      "description": "レベルアップ・所管 管理課・うちレベルアップ分 19,298千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "一時保育事業及び一時預かり事業に係る利用者の負担軽減≪赤坂地区みなと保育サポート事業管理運営、赤坂地区子育てひろば事業管理運営≫",
+      "budgetBookName": null,
+      "amount": 121352,
+      "description": "レベルアップ・所管 管理課・うちレベルアップ分 7,657千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "赤坂地区生活安全活動推進事業",
+      "budgetBookName": null,
+      "amount": 23121,
+      "description": "レベルアップ・所管 協働推進課・うちレベルアップ分 10,358千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "赤坂地区町会等活動支援",
+      "budgetBookName": null,
+      "amount": 20860,
+      "description": "レベルアップ・所管 協働推進課・うちレベルアップ分 8,178千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 6
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "赤坂地区赤坂親善大使魅力発信プロジェクト",
+      "budgetBookName": null,
+      "amount": 8554,
+      "description": "レベルアップ・所管 協働推進課・うちレベルアップ分 6,518千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "赤坂地区地域防災力向上",
+      "budgetBookName": null,
+      "amount": 668,
+      "description": "レベルアップ・所管 協働推進課・うちレベルアップ分 200千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "高輪地区道路・橋りょう工事業務管理システム",
+      "budgetBookName": null,
+      "amount": 416,
+      "description": "新規・所管 まちづくり課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "豊岡いきいきプラザ等大規模改修",
+      "budgetBookName": null,
+      "amount": 22624,
+      "description": "臨時・新規・所管 管理課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "高輪地区児童遊園整備",
+      "budgetBookName": null,
+      "amount": 23565,
+      "description": "臨時・新規・所管 まちづくり課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "白金台いきいきプラザ等大規模改修",
+      "budgetBookName": null,
+      "amount": 1352931,
+      "description": "臨時・継続・所管 管理課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "高輪地区すくわくプログラム推進事業（区立保育園分）",
+      "budgetBookName": null,
+      "amount": 6000,
+      "description": "臨時・継続・所管 管理課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "高輪地区すくわくプログラム推進事業（港区保育室分）",
+      "budgetBookName": null,
+      "amount": 4500,
+      "description": "臨時・継続・所管 管理課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "高輪地区すくわくプログラム推進事業（みなと保育サポート分）",
+      "budgetBookName": null,
+      "amount": 3000,
+      "description": "臨時・継続・所管 管理課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "高輪地区公園整備",
+      "budgetBookName": null,
+      "amount": 25084,
+      "description": "臨時・継続・所管 まちづくり課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "放課後児童支援員キャリアアップ処遇改善事業≪高輪地区学童クラブ（港区学童クラブ）、高輪地区放課ＧＯ→クラブ≫",
+      "budgetBookName": null,
+      "amount": 623774,
+      "description": "レベルアップ・所管 管理課・うちレベルアップ分 11,684千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "港区版こども誰でも通園制度≪高輪地区港区保育室事業≫",
+      "budgetBookName": null,
+      "amount": 1074510,
+      "description": "レベルアップ・所管 管理課・うちレベルアップ分 24,938千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "一時保育事業及び一時預かり事業に係る利用者の負担軽減≪高輪地区みなと保育サポート事業管理運営、高輪地区子育てひろば事業管理運営≫",
+      "budgetBookName": null,
+      "amount": 364426,
+      "description": "レベルアップ・所管 管理課・うちレベルアップ分 12,443千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "高輪地区生活安全活動推進事業",
+      "budgetBookName": null,
+      "amount": 15705,
+      "description": "レベルアップ・所管 協働推進課・うちレベルアップ分 3,906千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "高輪地区町会等活動支援",
+      "budgetBookName": null,
+      "amount": 43344,
+      "description": "レベルアップ・所管 協働推進課・うちレベルアップ分 11,533千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "高輪地区地域防災力向上",
+      "budgetBookName": null,
+      "amount": 7774,
+      "description": "レベルアップ・所管 協働推進課・うちレベルアップ分 400千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "チャレンジコミュニティ大学",
+      "budgetBookName": null,
+      "amount": 39021,
+      "description": "レベルアップ・所管 協働推進課・うちレベルアップ分 2,237千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "水辺を向いたまちづくり機運醸成事業",
+      "budgetBookName": null,
+      "amount": 23600,
+      "description": "新規・所管 協働推進課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "芝浦港南地区道路・橋りょう工事業務管理システム",
+      "budgetBookName": null,
+      "amount": 416,
+      "description": "新規・所管 まちづくり課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "お台場30周年記念事業",
+      "budgetBookName": null,
+      "amount": 9996,
+      "description": "臨時・新規・所管 協働推進課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "芝浦港南地区公園整備",
+      "budgetBookName": null,
+      "amount": 185080,
+      "description": "臨時・新規・所管 まちづくり課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 7
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "芝浦港南地区水辺空間の整備",
+      "budgetBookName": null,
+      "amount": 33287,
+      "description": "臨時・新規・所管 まちづくり課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "芝浦港南地区すくわくプログラム推進事業（区立保育園分）",
+      "budgetBookName": null,
+      "amount": 7500,
+      "description": "臨時・継続・所管 管理課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "芝浦港南地区すくわくプログラム推進事業（港区保育室分）",
+      "budgetBookName": null,
+      "amount": 4500,
+      "description": "臨時・継続・所管 管理課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "芝浦港南地区すくわくプログラム推進事業（みなと保育サポート分）",
+      "budgetBookName": null,
+      "amount": 1500,
+      "description": "臨時・継続・所管 管理課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "放課後児童支援員キャリアアップ処遇改善事業≪港南子ども中高生プラザ管理運営、芝浦アイランド児童高齢者交流プラザ管理運営、芝浦港南地区学童クラブ（港区学童クラブ）、芝浦港南地区放課ＧＯ→クラブ≫",
+      "budgetBookName": null,
+      "amount": 1483469,
+      "description": "レベルアップ・所管 管理課・うちレベルアップ分 19,299千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "港区版こども誰でも通園制度≪しばうら保育園管理運営、芝浦港南地区港区保育室事業≫",
+      "budgetBookName": null,
+      "amount": 1818049,
+      "description": "レベルアップ・所管 管理課・うちレベルアップ分 10,810千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "一時保育事業及び一時預かり事業に係る利用者の負担軽減≪芝浦港南地区みなと保育サポート事業管理運営、芝浦港南地区子育てひろば事業管理運営≫",
+      "budgetBookName": null,
+      "amount": 357680,
+      "description": "レベルアップ・所管 管理課・うちレベルアップ分 24,075千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "芝浦港南地区生活安全活動推進事業",
+      "budgetBookName": null,
+      "amount": 14527,
+      "description": "レベルアップ・所管 協働推進課・うちレベルアップ分 9,297千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "芝浦港南地区町会等活動支援",
+      "budgetBookName": null,
+      "amount": 23327,
+      "description": "レベルアップ・所管 協働推進課・うちレベルアップ分 13,416千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "芝浦港南地区地域防災力向上",
+      "budgetBookName": null,
+      "amount": 10703,
+      "description": "レベルアップ・所管 協働推進課・うちレベルアップ分 300千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "運河の魅力向上事業",
+      "budgetBookName": null,
+      "amount": 18101,
+      "description": "レベルアップ・所管 まちづくり課・うちレベルアップ分 9,646千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "全国大会等出場祝金（文化芸術）",
+      "budgetBookName": null,
+      "amount": 1380,
+      "description": "新規・所管 国際化・文化芸術担当",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "産業経済費",
+      "no": null,
+      "kubun": "新規",
+      "name": "観光統計・マーケティング分析",
+      "budgetBookName": null,
+      "amount": 11245,
+      "description": "新規・所管 産業振興課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "地域振興プラン策定",
+      "budgetBookName": null,
+      "amount": 37321,
+      "description": "臨時・新規・所管 地域振興課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "区民葬儀",
+      "budgetBookName": null,
+      "amount": 4320,
+      "description": "臨時・新規・所管 地域振興課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "産業経済費",
+      "no": null,
+      "kubun": "新規",
+      "name": "港区版ご当地ナンバープレート導入調査",
+      "budgetBookName": null,
+      "amount": 7200,
+      "description": "臨時・新規・所管 産業振興課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "産業経済費",
+      "no": null,
+      "kubun": "新規",
+      "name": "ＭＩＣＥ誘致に向けたＤＭＯ連携支援",
+      "budgetBookName": null,
+      "amount": 792,
+      "description": "臨時・新規・所管 産業振興課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "東京湾大華火祭",
+      "budgetBookName": null,
+      "amount": 631174,
+      "description": "臨時・継続・所管 地域振興課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "みなと芸術センター整備",
+      "budgetBookName": null,
+      "amount": 515420,
+      "description": "臨時・継続・所管 国際化・文化芸術担当",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "産業経済費",
+      "no": null,
+      "kubun": null,
+      "name": "産業振興プラン策定",
+      "budgetBookName": null,
+      "amount": 9219,
+      "description": "臨時・継続・所管 産業振興課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "産業経済費",
+      "no": null,
+      "kubun": null,
+      "name": "みなトクＰＡＹ運営支援",
+      "budgetBookName": null,
+      "amount": 776577,
+      "description": "臨時・継続・所管 産業振興課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 8
+      }
+    },
+    {
+      "kan": "産業経済費",
+      "no": null,
+      "kubun": null,
+      "name": "デザインマンホール蓋の製作・活用事業",
+      "budgetBookName": null,
+      "amount": 11062,
+      "description": "臨時・継続・所管 産業振興課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "区民保養施設",
+      "budgetBookName": null,
+      "amount": 125965,
+      "description": "レベルアップ・所管 地域振興課・うちレベルアップ分 3,421千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "地域で育む日本語学習支援プロジェクト",
+      "budgetBookName": null,
+      "amount": 43610,
+      "description": "レベルアップ・所管 国際化・文化芸術担当・うちレベルアップ分 4,032千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "外国都市との国際友好都市交流事業",
+      "budgetBookName": null,
+      "amount": 33872,
+      "description": "レベルアップ・所管 国際化・文化芸術担当・うちレベルアップ分 32,245千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "ＭＩＮＡＴＯまちなかコンサート",
+      "budgetBookName": null,
+      "amount": 25625,
+      "description": "レベルアップ・所管 国際化・文化芸術担当・うちレベルアップ分 15,939千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "産業経済費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "中小企業ＤＸ促進支援事業",
+      "budgetBookName": null,
+      "amount": 46320,
+      "description": "レベルアップ・所管 産業振興課・うちレベルアップ分 2,000千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "産業経済費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "港区産業団体連合会支援",
+      "budgetBookName": null,
+      "amount": 2844,
+      "description": "レベルアップ・所管 産業振興課・うちレベルアップ分 830千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "産業経済費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "にぎわい商店街事業",
+      "budgetBookName": null,
+      "amount": 286307,
+      "description": "レベルアップ・所管 産業振興課・うちレベルアップ分 219,343千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "シルバーパス購入費助成事業",
+      "budgetBookName": null,
+      "amount": 61582,
+      "description": "新規・所管 高齢者支援課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "認知症普及啓発事業",
+      "budgetBookName": null,
+      "amount": 1646,
+      "description": "新規・所管 高齢者支援課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "高齢者福祉避難所運営事業",
+      "budgetBookName": null,
+      "amount": 21864,
+      "description": "新規・所管 高齢者支援課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "高齢者熱中症対策見守り推進事業",
+      "budgetBookName": null,
+      "amount": 170428,
+      "description": "新規・所管 高齢者支援課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "東麻布二丁目複合施設（小規模多機能型居宅介護施設）開設準備",
+      "budgetBookName": null,
+      "amount": 653,
+      "description": "臨時・新規・所管 福祉施設整備担当",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "南麻布三丁目福祉施設整備",
+      "budgetBookName": null,
+      "amount": 1753,
+      "description": "臨時・新規・所管 福祉施設整備担当",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "障害福祉サービス等事業所職員居住支援事業",
+      "budgetBookName": null,
+      "amount": 58080,
+      "description": "臨時・新規・所管 障害者福祉課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "地域保健福祉計画等推進",
+      "budgetBookName": null,
+      "amount": 32937,
+      "description": "臨時・継続・所管 保健福祉課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "原油価格高騰等に伴う公衆浴場緊急経営助成",
+      "budgetBookName": null,
+      "amount": 661,
+      "description": "臨時・継続・所管 保健福祉課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "赤羽幼稚園等（小規模多機能型居宅介護施設）開設準備",
+      "budgetBookName": null,
+      "amount": 10088,
+      "description": "臨時・継続・所管 福祉施設整備担当",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "（仮称）障害者グループホーム南麻布等整備",
+      "budgetBookName": null,
+      "amount": 190004,
+      "description": "臨時・継続・所管 福祉施設整備担当",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "高齢者福祉施設将来需要等調査",
+      "budgetBookName": null,
+      "amount": 11575,
+      "description": "臨時・継続・所管 高齢者支援課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "シティハイツ港南等大規模改修",
+      "budgetBookName": null,
+      "amount": 40500,
+      "description": "臨時・継続・所管 高齢者支援課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "ケアプランデータ連携システム導入支援事業",
+      "budgetBookName": null,
+      "amount": 5455,
+      "description": "臨時・継続・所管 介護保険課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "障害保健福祉センター大規模改修",
+      "budgetBookName": null,
+      "amount": 58744,
+      "description": "臨時・継続・所管 障害者福祉課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "障害保健福祉センター分館整備",
+      "budgetBookName": null,
+      "amount": 1237166,
+      "description": "臨時・継続・所管 障害者福祉課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 9
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "成年後見制度利用促進事業≪成年後見制度利用促進事業（一般会計）、各地区成年後見審判申立事業≫",
+      "budgetBookName": null,
+      "amount": 53287,
+      "description": "レベルアップ・所管 保健福祉課ほか・うちレベルアップ分 2,970千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "避難行動要支援者支援体制整備事業",
+      "budgetBookName": null,
+      "amount": 44153,
+      "description": "レベルアップ・所管 保健福祉課・うちレベルアップ分 42,133千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "公衆浴場助成",
+      "budgetBookName": null,
+      "amount": 25896,
+      "description": "レベルアップ・所管 保健福祉課・うちレベルアップ分 894千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "介護事業運営費補助事業",
+      "budgetBookName": null,
+      "amount": 274545,
+      "description": "レベルアップ・所管 高齢者支援課・うちレベルアップ分 82,125千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "介護職魅力発信事業",
+      "budgetBookName": null,
+      "amount": 10890,
+      "description": "レベルアップ・所管 高齢者支援課・うちレベルアップ分 6,776千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "高齢者熱中症等対策事業",
+      "budgetBookName": null,
+      "amount": 11269,
+      "description": "レベルアップ・所管 高齢者支援課・うちレベルアップ分 9,826千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "生活支援体制整備事業",
+      "budgetBookName": null,
+      "amount": 40428,
+      "description": "レベルアップ・所管 高齢者支援課・うちレベルアップ分 2,967千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "介護保険サービス第三者評価支援",
+      "budgetBookName": null,
+      "amount": 4585,
+      "description": "レベルアップ・所管 介護保険課・うちレベルアップ分 1,200千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "介護サービス事業者振興事業",
+      "budgetBookName": null,
+      "amount": 15885,
+      "description": "レベルアップ・所管 介護保険課・うちレベルアップ分 44千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "障害者スポーツ・文化芸術活動支援事業",
+      "budgetBookName": null,
+      "amount": 2924,
+      "description": "レベルアップ・所管 障害者福祉課・うちレベルアップ分 2,451千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "移動支援事業",
+      "budgetBookName": null,
+      "amount": 590682,
+      "description": "レベルアップ・所管 障害者福祉課・うちレベルアップ分 957千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "障害者（児）日常生活用具給付",
+      "budgetBookName": null,
+      "amount": 54588,
+      "description": "レベルアップ・所管 障害者福祉課・うちレベルアップ分 4,850千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "障害者（児）紙おむつ給付",
+      "budgetBookName": null,
+      "amount": 29967,
+      "description": "レベルアップ・所管 障害者福祉課・うちレベルアップ分 4,140千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "障害者グループホーム支援",
+      "budgetBookName": null,
+      "amount": 104234,
+      "description": "レベルアップ・所管 障害者福祉課・うちレベルアップ分 14,500千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "障害者（児）日中一時支援事業",
+      "budgetBookName": null,
+      "amount": 38698,
+      "description": "レベルアップ・所管 障害者福祉課・うちレベルアップ分 15,000千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "特定相談支援事業所等運営支援",
+      "budgetBookName": null,
+      "amount": 31476,
+      "description": "レベルアップ・所管 障害者福祉課・うちレベルアップ分 5,850千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "障害児通所支援事業所運営支援",
+      "budgetBookName": null,
+      "amount": 183592,
+      "description": "レベルアップ・所管 障害者福祉課・うちレベルアップ分 15,044千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "障害者就労支援",
+      "budgetBookName": null,
+      "amount": 91242,
+      "description": "レベルアップ・所管 障害者福祉課・うちレベルアップ分 7,653千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "障害保健福祉センター管理運営",
+      "budgetBookName": null,
+      "amount": 1170044,
+      "description": "レベルアップ・所管 障害者福祉課・うちレベルアップ分 6,955千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "児童発達支援センター管理運営",
+      "budgetBookName": null,
+      "amount": 582309,
+      "description": "レベルアップ・所管 障害者福祉課・うちレベルアップ分 1,861千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": null,
+      "no": null,
+      "kubun": "拡充",
+      "name": "成年後見制度利用促進事業≪成年後見制度利用促進事業（介護保険会計）≫",
+      "budgetBookName": null,
+      "amount": 22140,
+      "description": "レベルアップ・所管 高齢者支援課・うちレベルアップ分 17,820千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "高層住宅へのＡＥＤ設置助成",
+      "budgetBookName": null,
+      "amount": 10182,
+      "description": "新規・所管 生活衛生課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "自殺対策推進計画策定",
+      "budgetBookName": null,
+      "amount": 2989,
+      "description": "臨時・新規・所管 健康推進課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 10
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "みなトクＰＡＹを活用した健康増進事業",
+      "budgetBookName": null,
+      "amount": 1921,
+      "description": "臨時・新規・所管 健康推進課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": null,
+      "name": "港区新型インフルエンザ等対策行動計画改定",
+      "budgetBookName": null,
+      "amount": 6447,
+      "description": "臨時・継続・所管 生活衛生課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "衛生害虫等防除対策",
+      "budgetBookName": null,
+      "amount": 10915,
+      "description": "レベルアップ・所管 生活衛生課・うちレベルアップ分 206千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "動物相談・指導",
+      "budgetBookName": null,
+      "amount": 13095,
+      "description": "レベルアップ・所管 生活衛生課・うちレベルアップ分 9,599千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "災害医療対策",
+      "budgetBookName": null,
+      "amount": 27337,
+      "description": "レベルアップ・所管 保健予防課・うちレベルアップ分 9,856千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "予防接種事業",
+      "budgetBookName": null,
+      "amount": 2842453,
+      "description": "レベルアップ・所管 保健予防課・うちレベルアップ分 372,289千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "乳幼児健康診査",
+      "budgetBookName": null,
+      "amount": 156435,
+      "description": "レベルアップ・所管 健康推進課・うちレベルアップ分 32,779千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "妊産婦健康診査",
+      "budgetBookName": null,
+      "amount": 269159,
+      "description": "レベルアップ・所管 健康推進課・うちレベルアップ分 24,564千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "食育の推進",
+      "budgetBookName": null,
+      "amount": 3872,
+      "description": "レベルアップ・所管 健康推進課・うちレベルアップ分 1,975千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "衛生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "お口の健康診査",
+      "budgetBookName": null,
+      "amount": 433669,
+      "description": "レベルアップ・所管 健康推進課・うちレベルアップ分 1,681千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "民設認証学童クラブ補助",
+      "budgetBookName": null,
+      "amount": 212414,
+      "description": "新規・所管 子ども若者支援課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "港区乳児等通園支援給付（私立認可保育所等分）",
+      "budgetBookName": null,
+      "amount": 84882,
+      "description": "新規・所管 保育課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "親子関係形成支援事業",
+      "budgetBookName": null,
+      "amount": 1984,
+      "description": "新規・所管 子ども家庭支援センター",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "子育て家庭家事支援事業",
+      "budgetBookName": null,
+      "amount": 36136,
+      "description": "新規・所管 子ども家庭支援センター",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "子ども・若者・子育て総合支援計画改定",
+      "budgetBookName": null,
+      "amount": 30473,
+      "description": "臨時・新規・所管 子ども政策課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "高校生世代等のひとりで過ごせる居場所づくり",
+      "budgetBookName": null,
+      "amount": 117807,
+      "description": "臨時・継続・所管 子ども若者支援課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "港区こどもまんなか宣言ポイント付与",
+      "budgetBookName": null,
+      "amount": 29958,
+      "description": "臨時・継続・所管 子ども若者支援課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "ひとり親フード等サポート事業",
+      "budgetBookName": null,
+      "amount": 156379,
+      "description": "臨時・継続・所管 子ども若者支援課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "すくわくプログラム推進事業（私立認可保育所等分）",
+      "budgetBookName": null,
+      "amount": 111000,
+      "description": "臨時・継続・所管 保育課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "私立認可保育所等物価高騰対策支援事業",
+      "budgetBookName": null,
+      "amount": 12990,
+      "description": "臨時・継続・所管 保育課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "オレンジリボン・児童虐待防止推進",
+      "budgetBookName": null,
+      "amount": 11856,
+      "description": "臨時・継続・所管 子ども家庭支援センター",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": null,
+      "name": "子育て支援施設物価高騰対策支援事業",
+      "budgetBookName": null,
+      "amount": 85,
+      "description": "臨時・継続・所管 子ども家庭支援センター",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "子どもの意見表明支援等事業",
+      "budgetBookName": null,
+      "amount": 12793,
+      "description": "レベルアップ・所管 子ども政策課・うちレベルアップ分 8,626千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "保育施設関係補助金助成等支援",
+      "budgetBookName": null,
+      "amount": 95043,
+      "description": "レベルアップ・所管 保育課・うちレベルアップ分 21,980千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "病児・病後児保育",
+      "budgetBookName": null,
+      "amount": 350226,
+      "description": "レベルアップ・所管 保育課・うちレベルアップ分 18,471千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 11
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "一時保育事業及び一時預かり事業に係る利用者の負担軽減≪一時保育、派遣型一時保育、育児サポート事業（育児サポート子むすび）、みなと子育てサポートハウス事業、みなと子育て応援プラザ事業≫",
+      "budgetBookName": null,
+      "amount": 294957,
+      "description": "レベルアップ・所管 保育課、子ども家庭支援センター・うちレベルアップ分 53,314千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "ヤングケアラー支援事業",
+      "budgetBookName": null,
+      "amount": 48156,
+      "description": "レベルアップ・所管 子ども家庭支援センター・うちレベルアップ分 31,116千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "子育て情報収集・提供事業",
+      "budgetBookName": null,
+      "amount": 11709,
+      "description": "レベルアップ・所管 子ども家庭支援センター・うちレベルアップ分 5,627千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "離婚前後の親支援事業",
+      "budgetBookName": null,
+      "amount": 2060,
+      "description": "レベルアップ・所管 子ども家庭支援センター・うちレベルアップ分 400千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "母子生活支援施設管理運営",
+      "budgetBookName": null,
+      "amount": 113236,
+      "description": "レベルアップ・所管 子ども家庭支援センター・うちレベルアップ分 1,508千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "新規",
+      "name": "社会的養護児童自立支援事業",
+      "budgetBookName": null,
+      "amount": 8360,
+      "description": "新規・所管 児童相談課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "民生費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "児童相談所運営",
+      "budgetBookName": null,
+      "amount": 72841,
+      "description": "レベルアップ・所管 児童相談課・うちレベルアップ分 7,545千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "都市計画から見たまちづくりの歩み",
+      "budgetBookName": null,
+      "amount": 5500,
+      "description": "臨時・新規・所管 都市計画課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "区民向け住宅の活用検討",
+      "budgetBookName": null,
+      "amount": 12980,
+      "description": "臨時・新規・所管 住宅課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "耐震改修促進計画推進",
+      "budgetBookName": null,
+      "amount": 6984,
+      "description": "臨時・新規・所管 建築課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "樹木管理システム導入",
+      "budgetBookName": null,
+      "amount": 123,
+      "description": "臨時・新規・所管 土木課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "港にぎわい公園づくり推進計画改定及び整備マニュアル策定",
+      "budgetBookName": null,
+      "amount": 476,
+      "description": "臨時・新規・所管 土木課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "白金一丁目西部中地区市街地再開発事業支援",
+      "budgetBookName": null,
+      "amount": 136394,
+      "description": "臨時・新規・所管 開発指導課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "西麻布三丁目北東地区市街地再開発事業支援",
+      "budgetBookName": null,
+      "amount": 348162,
+      "description": "臨時・新規・所管 開発指導課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "赤坂七丁目２番地区市街地再開発事業支援",
+      "budgetBookName": null,
+      "amount": 1269415,
+      "description": "臨時・新規・所管 開発指導課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "自転車交通環境整備計画改定",
+      "budgetBookName": null,
+      "amount": 9082,
+      "description": "臨時・新規・所管 地域交通課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "総合交通計画改定",
+      "budgetBookName": null,
+      "amount": 9554,
+      "description": "臨時・新規・所管 地域交通課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "機械式自転車駐車場の改修",
+      "budgetBookName": null,
+      "amount": 33000,
+      "description": "臨時・新規・所管 地域交通課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "新規",
+      "name": "（仮称）芝公園駅自転車駐車場整備",
+      "budgetBookName": null,
+      "amount": 5804,
+      "description": "臨時・新規・所管 地域交通課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "まちづくりマスタープラン改定",
+      "budgetBookName": null,
+      "amount": 648,
+      "description": "臨時・継続・所管 都市計画課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "赤坂見附駅周辺のまちづくりの推進",
+      "budgetBookName": null,
+      "amount": 9823,
+      "description": "臨時・継続・所管 都市計画課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "マンション実態調査",
+      "budgetBookName": null,
+      "amount": 8389,
+      "description": "臨時・継続・所管 住宅課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "シティハイツ車町建替",
+      "budgetBookName": null,
+      "amount": 528,
+      "description": "臨時・継続・所管 住宅課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "シティハイツ一ツ木建替",
+      "budgetBookName": null,
+      "amount": 11169,
+      "description": "臨時・継続・所管 住宅課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 12
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "道路施設維持管理計画策定",
+      "budgetBookName": null,
+      "amount": 1320,
+      "description": "臨時・継続・所管 土木課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "都市計画道路整備",
+      "budgetBookName": null,
+      "amount": 2774301,
+      "description": "臨時・継続・所管 土木課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "都市計画公園整備",
+      "budgetBookName": null,
+      "amount": 28430,
+      "description": "臨時・継続・所管 土木課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "公園施設等維持管理計画策定",
+      "budgetBookName": null,
+      "amount": 1320,
+      "description": "臨時・継続・所管 土木課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "区立公園への公募設置管理制度の導入",
+      "budgetBookName": null,
+      "amount": 23056,
+      "description": "臨時・継続・所管 土木課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "虎ノ門一丁目東地区市街地再開発事業支援",
+      "budgetBookName": null,
+      "amount": 7485376,
+      "description": "臨時・継続・所管 開発指導課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "三田小山町西地区市街地再開発事業支援",
+      "budgetBookName": null,
+      "amount": 2505407,
+      "description": "臨時・継続・所管 開発指導課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "連続立体交差事業",
+      "budgetBookName": null,
+      "amount": 1414620,
+      "description": "臨時・継続・所管 開発指導課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "鉄道駅総合改善事業",
+      "budgetBookName": null,
+      "amount": 60000,
+      "description": "臨時・継続・所管 開発指導課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": null,
+      "name": "公共駐車場等保全計画策定",
+      "budgetBookName": null,
+      "amount": 1485,
+      "description": "臨時・継続・所管 地域交通課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "景観形成推進",
+      "budgetBookName": null,
+      "amount": 6751,
+      "description": "レベルアップ・所管 都市計画課・うちレベルアップ分 3,004千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "マンション管理・建替支援",
+      "budgetBookName": null,
+      "amount": 63011,
+      "description": "レベルアップ・所管 住宅課・うちレベルアップ分 38,860千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "水防対策",
+      "budgetBookName": null,
+      "amount": 43017,
+      "description": "レベルアップ・所管 土木課・うちレベルアップ分 22,994千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "土木費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "交通安全運動",
+      "budgetBookName": null,
+      "amount": 18700,
+      "description": "レベルアップ・所管 地域交通課・うちレベルアップ分 2,000千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "環境清掃費",
+      "no": null,
+      "kubun": "新規",
+      "name": "森林由来のカーボンクレジットの活用促進",
+      "budgetBookName": null,
+      "amount": 5295,
+      "description": "新規・所管 地球温暖化対策担当",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "環境清掃費",
+      "no": null,
+      "kubun": "新規",
+      "name": "港区みどりの実態調査",
+      "budgetBookName": null,
+      "amount": 36928,
+      "description": "臨時・新規・所管 環境課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "環境清掃費",
+      "no": null,
+      "kubun": null,
+      "name": "環境基本計画策定",
+      "budgetBookName": null,
+      "amount": 18321,
+      "description": "臨時・継続・所管 環境課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "環境清掃費",
+      "no": null,
+      "kubun": null,
+      "name": "一般廃棄物処理基本計画策定",
+      "budgetBookName": null,
+      "amount": 15609,
+      "description": "臨時・継続・所管 みなとリサイクル清掃事務所",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "環境清掃費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "特別保護樹木・樹林の指定",
+      "budgetBookName": null,
+      "amount": 1882,
+      "description": "レベルアップ・所管 環境課・うちレベルアップ分 350千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "環境清掃費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "熱中症対策の推進",
+      "budgetBookName": null,
+      "amount": 9350,
+      "description": "レベルアップ・所管 環境課・うちレベルアップ分 1,863千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "環境清掃費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "創エネルギー・省エネルギー機器等助成",
+      "budgetBookName": null,
+      "amount": 122129,
+      "description": "レベルアップ・所管 地球温暖化対策担当・うちレベルアップ分 500千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "環境清掃費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "「ＭＩＮＡＴＯ再エネ１００」再エネ電力導入サポート事業",
+      "budgetBookName": null,
+      "amount": 2111,
+      "description": "レベルアップ・所管 地球温暖化対策担当・うちレベルアップ分 1,670千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "環境清掃費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "みなと区民の森づくり",
+      "budgetBookName": null,
+      "amount": 40728,
+      "description": "レベルアップ・所管 地球温暖化対策担当・うちレベルアップ分 3,977千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "環境清掃費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "食品廃棄物・食品ロス削減推進事業",
+      "budgetBookName": null,
+      "amount": 18953,
+      "description": "レベルアップ・所管 みなとリサイクル清掃事務所・うちレベルアップ分 11,247千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 13
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "区民アンケート",
+      "budgetBookName": null,
+      "amount": 2087,
+      "description": "新規・所管 区長室",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "少子化対策推進事業",
+      "budgetBookName": null,
+      "amount": 9935,
+      "description": "臨時・新規・所管 企画課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "港区政80周年記念事業",
+      "budgetBookName": null,
+      "amount": 166978,
+      "description": "臨時・新規・所管 企画課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "連携自治体体験学習講座",
+      "budgetBookName": null,
+      "amount": 2888,
+      "description": "臨時・新規・所管 企画課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "区政情報取得に関する動向調査",
+      "budgetBookName": null,
+      "amount": 10356,
+      "description": "臨時・新規・所管 区長室",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "港区イノベーションラボ",
+      "budgetBookName": null,
+      "amount": 6054,
+      "description": "臨時・新規・所管 区長室",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "ＭＩＮＡＴＯビジョン策定",
+      "budgetBookName": null,
+      "amount": 67320,
+      "description": "臨時・継続・所管 企画課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "公衆無線ＬＡＮの整備",
+      "budgetBookName": null,
+      "amount": 334039,
+      "description": "臨時・継続・所管 デジタル改革担当",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "公共施設等総合管理計画策定",
+      "budgetBookName": null,
+      "amount": 14447,
+      "description": "臨時・継続・所管 用地・施設活用担当",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "新技術の活用に向けた体制の充実",
+      "budgetBookName": null,
+      "amount": 33980,
+      "description": "臨時・継続・所管 新技術活用担当",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "みなと新技術チャレンジ提案制度",
+      "budgetBookName": null,
+      "amount": 15000,
+      "description": "臨時・継続・所管 新技術活用担当",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "行政情報システム標準化対応",
+      "budgetBookName": null,
+      "amount": 1190697,
+      "description": "臨時・継続・所管 情報政策課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "デジタル社会の実現に向けたＤＸ推進",
+      "budgetBookName": null,
+      "amount": 394281,
+      "description": "レベルアップ・所管 デジタル改革担当・うちレベルアップ分 44,770千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "港区業務継続計画（新型インフルエンザ編）改定",
+      "budgetBookName": null,
+      "amount": 5662,
+      "description": "臨時・新規・所管 防災課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "生活安全行動計画・再犯防止推進計画策定",
+      "budgetBookName": null,
+      "amount": 8229,
+      "description": "臨時・新規・所管 防災課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "地域防災計画改定",
+      "budgetBookName": null,
+      "amount": 18475,
+      "description": "臨時・新規・所管 防災課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "地域強靭化計画策定",
+      "budgetBookName": null,
+      "amount": 5253,
+      "description": "臨時・新規・所管 防災課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "同報系無線更新",
+      "budgetBookName": null,
+      "amount": 13710,
+      "description": "臨時・新規・所管 防災課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "港区防災用品支給事業",
+      "budgetBookName": null,
+      "amount": 978998,
+      "description": "臨時・新規・所管 防災課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "港区業務継続計画（震災・風水害編）改定",
+      "budgetBookName": null,
+      "amount": 9064,
+      "description": "臨時・継続・所管 防災課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "移動系無線更新",
+      "budgetBookName": null,
+      "amount": 5170,
+      "description": "臨時・継続・所管 防災課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "区民避難所におけるペットの受入れ体制整備",
+      "budgetBookName": null,
+      "amount": 3400,
+      "description": "臨時・継続・所管 防災課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "特殊詐欺被害防止対策",
+      "budgetBookName": null,
+      "amount": 3768,
+      "description": "レベルアップ・所管 防災課・うちレベルアップ分 2,395千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "家具転倒防止対策等促進事業",
+      "budgetBookName": null,
+      "amount": 54531,
+      "description": "レベルアップ・所管 防災課・うちレベルアップ分 53,835千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 14
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "区職員人材確保・活躍推進事業",
+      "budgetBookName": null,
+      "amount": 4388,
+      "description": "新規・所管 人事課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "労働報酬等審議会運営",
+      "budgetBookName": null,
+      "amount": 1188,
+      "description": "新規・所管 契約管財課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "入札・契約制度適正化推進",
+      "budgetBookName": null,
+      "amount": 466,
+      "description": "新規・所管 契約管財課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "港区名誉区民選定",
+      "budgetBookName": null,
+      "amount": 3048,
+      "description": "臨時・新規・所管 総務課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "男女平等参画行動計画策定",
+      "budgetBookName": null,
+      "amount": 8790,
+      "description": "臨時・新規・所管 人権・男女平等参画担当",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "タレントマネジメントシステム導入",
+      "budgetBookName": null,
+      "amount": 46006,
+      "description": "臨時・新規・所管 人事課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": null,
+      "name": "（仮称）分庁舎維持管理",
+      "budgetBookName": null,
+      "amount": 594447,
+      "description": "臨時・継続・所管 契約管財課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "災害対策住宅借上げ",
+      "budgetBookName": null,
+      "amount": 133734,
+      "description": "レベルアップ・所管 人事課・うちレベルアップ分 87,338千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "人材育成",
+      "budgetBookName": null,
+      "amount": 37139,
+      "description": "レベルアップ・所管 人事課・うちレベルアップ分 3,214千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "外国人学校保護者補助金",
+      "budgetBookName": null,
+      "amount": 840,
+      "description": "新規・所管 教育長室",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "麻雀を活用した多世代交流事業",
+      "budgetBookName": null,
+      "amount": 3983,
+      "description": "新規・所管 生涯学習スポーツ振興課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "全国大会等出場祝金（スポーツ）",
+      "budgetBookName": null,
+      "amount": 2080,
+      "description": "新規・所管 生涯学習スポーツ振興課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "インターナショナルスクール施策の検討",
+      "budgetBookName": null,
+      "amount": 440,
+      "description": "臨時・新規・所管 教育長室",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "全国健康福祉祭開催準備",
+      "budgetBookName": null,
+      "amount": 4134,
+      "description": "臨時・新規・所管 生涯学習スポーツ振興課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "東京開催ラクロス世界選手権大会気運醸成事業",
+      "budgetBookName": null,
+      "amount": 4511,
+      "description": "臨時・新規・所管 生涯学習スポーツ振興課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "民間スポーツ施設を活用したスポーツの場の提供",
+      "budgetBookName": null,
+      "amount": 2255,
+      "description": "臨時・新規・所管 生涯学習スポーツ振興課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "芝浦中央公園運動場大規模改修",
+      "budgetBookName": null,
+      "amount": 25159,
+      "description": "臨時・新規・所管 生涯学習スポーツ振興課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "北青山三丁目地区スポーツ施設整備",
+      "budgetBookName": null,
+      "amount": 86978,
+      "description": "臨時・新規・所管 生涯学習スポーツ振興課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "教育推進計画策定",
+      "budgetBookName": null,
+      "amount": 29384,
+      "description": "臨時・継続・所管 教育長室",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "青山生涯学習館等賃借",
+      "budgetBookName": null,
+      "amount": 4488,
+      "description": "臨時・継続・所管 生涯学習スポーツ振興課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "スポーツ活動支援補助金",
+      "budgetBookName": null,
+      "amount": 5000,
+      "description": "臨時・継続・所管 生涯学習スポーツ振興課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "元麻布三丁目複合施設整備",
+      "budgetBookName": null,
+      "amount": 78018,
+      "description": "臨時・継続・所管 生涯学習スポーツ振興課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "海外留学支援事業",
+      "budgetBookName": null,
+      "amount": 12702,
+      "description": "レベルアップ・所管 教育長室・うちレベルアップ分 6,166千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "私立学校指導監督",
+      "budgetBookName": null,
+      "amount": 57579,
+      "description": "レベルアップ・所管 教育長室・うちレベルアップ分 1,982千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 15
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "私立幼稚園保育料等給付",
+      "budgetBookName": null,
+      "amount": 486782,
+      "description": "レベルアップ・所管 教育長室・うちレベルアップ分 22,423千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "幼稚園・こども園広域入園事務",
+      "budgetBookName": null,
+      "amount": 69639,
+      "description": "レベルアップ・所管 教育長室・うちレベルアップ分 1,671千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "私立幼稚園連合会補助金",
+      "budgetBookName": null,
+      "amount": 42503,
+      "description": "レベルアップ・所管 教育長室・うちレベルアップ分 11,500千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "学校プール開放事業",
+      "budgetBookName": null,
+      "amount": 172543,
+      "description": "レベルアップ・所管 生涯学習スポーツ振興課・うちレベルアップ分 36,144千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "区立運動場管理運営",
+      "budgetBookName": null,
+      "amount": 562107,
+      "description": "レベルアップ・所管 生涯学習スポーツ振興課・うちレベルアップ分 137千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "区立図書館管理運営",
+      "budgetBookName": null,
+      "amount": 1419402,
+      "description": "レベルアップ・所管 図書文化財課・うちレベルアップ分 770千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "児童の朝の居場所づくり事業",
+      "budgetBookName": null,
+      "amount": 86378,
+      "description": "新規・所管 教育人事企画課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "ＭＩＮＡＴＯボルダリングスクール",
+      "budgetBookName": null,
+      "amount": 2660,
+      "description": "新規・所管 教育指導担当",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "赤羽小学校グラウンド・プール開設準備",
+      "budgetBookName": null,
+      "amount": 10604,
+      "description": "臨時・新規・所管 学務課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "東町小学校改築",
+      "budgetBookName": null,
+      "amount": 33058,
+      "description": "臨時・新規・所管 学務課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "赤羽幼稚園新園舎開設準備",
+      "budgetBookName": null,
+      "amount": 14699,
+      "description": "臨時・新規・所管 学務課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "新規",
+      "name": "ｅスポーツ部活動の推進",
+      "budgetBookName": null,
+      "amount": 11321,
+      "description": "臨時・新規・所管 教育人事企画課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "学校提案事業",
+      "budgetBookName": null,
+      "amount": 9707,
+      "description": "臨時・継続・所管 学務課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "小学校普通教室化改修",
+      "budgetBookName": null,
+      "amount": 2971,
+      "description": "臨時・継続・所管 学務課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "御田小学校仮校舎移転交通費補助",
+      "budgetBookName": null,
+      "amount": 6164,
+      "description": "臨時・継続・所管 学務課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "赤羽小学校等改築",
+      "budgetBookName": null,
+      "amount": 2437387,
+      "description": "臨時・継続・所管 学務課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "芝浦小学校校舎賃借",
+      "budgetBookName": null,
+      "amount": 14477,
+      "description": "臨時・継続・所管 学務課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "御田小学校改築",
+      "budgetBookName": null,
+      "amount": 778191,
+      "description": "臨時・継続・所管 学務課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "東町小学校校舎賃借",
+      "budgetBookName": null,
+      "amount": 4412,
+      "description": "臨時・継続・所管 学務課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "港南小学校校舎賃借",
+      "budgetBookName": null,
+      "amount": 15840,
+      "description": "臨時・継続・所管 学務課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "青南小学校屋外運動場人工地盤賃借",
+      "budgetBookName": null,
+      "amount": 106,
+      "description": "臨時・継続・所管 学務課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "中学校普通教室化改修",
+      "budgetBookName": null,
+      "amount": 76313,
+      "description": "臨時・継続・所管 学務課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "箱根ニコニコ高原学園大規模改修",
+      "budgetBookName": null,
+      "amount": 146362,
+      "description": "臨時・継続・所管 学務課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "区立幼稚園性被害防止対策",
+      "budgetBookName": null,
+      "amount": 10275,
+      "description": "臨時・継続・所管 学務課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 16
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "すくわくプログラム推進事業（区立幼稚園分）",
+      "budgetBookName": null,
+      "amount": 16500,
+      "description": "臨時・継続・所管 学務課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "港南幼稚園園舎賃借",
+      "budgetBookName": null,
+      "amount": 2418,
+      "description": "臨時・継続・所管 学務課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": null,
+      "name": "中高一貫校検討委員会",
+      "budgetBookName": null,
+      "amount": 210,
+      "description": "臨時・継続・所管 教育人事企画課",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "学習活動支援保護者負担軽減事業",
+      "budgetBookName": null,
+      "amount": 142159,
+      "description": "レベルアップ・所管 学務課・うちレベルアップ分 107,408千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "就学事務",
+      "budgetBookName": null,
+      "amount": 24337,
+      "description": "レベルアップ・所管 学務課・うちレベルアップ分 13,950千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "防犯啓発・緊急情報配信事業",
+      "budgetBookName": null,
+      "amount": 102918,
+      "description": "レベルアップ・所管 学務課・うちレベルアップ分 3,200千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "小学校移動教室運営事務",
+      "budgetBookName": null,
+      "amount": 47002,
+      "description": "レベルアップ・所管 学務課・うちレベルアップ分 8,405千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "小学校の安全体制の整備",
+      "budgetBookName": null,
+      "amount": 130838,
+      "description": "レベルアップ・所管 学務課・うちレベルアップ分 5,769千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "中学校移動教室運営事務",
+      "budgetBookName": null,
+      "amount": 63420,
+      "description": "レベルアップ・所管 学務課・うちレベルアップ分 17,459千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "小学校夏季学園",
+      "budgetBookName": null,
+      "amount": 37482,
+      "description": "レベルアップ・所管 学務課・うちレベルアップ分 6,114千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "中学校夏季学園",
+      "budgetBookName": null,
+      "amount": 69443,
+      "description": "レベルアップ・所管 学務課・うちレベルアップ分 62,364千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "区立幼稚園弁当給食事業",
+      "budgetBookName": null,
+      "amount": 62458,
+      "description": "レベルアップ・所管 学務課・うちレベルアップ分 56,204千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "国際人育成事業",
+      "budgetBookName": null,
+      "amount": 927225,
+      "description": "レベルアップ・所管 教育人事企画課・うちレベルアップ分 47,791千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "心の教育相談・不登校対策事業",
+      "budgetBookName": null,
+      "amount": 106217,
+      "description": "レベルアップ・所管 教育指導担当・うちレベルアップ分 23,408千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "教育費",
+      "no": null,
+      "kubun": "拡充",
+      "name": "部活動・水泳支援事業",
+      "budgetBookName": null,
+      "amount": 300903,
+      "description": "レベルアップ・所管 教育指導担当・うちレベルアップ分 28,163千円",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 17
+      }
+    },
+    {
+      "kan": "総務費",
+      "no": null,
+      "kubun": "新規",
+      "name": "投票所のオンライン化による共通投票所設置に向けた調査",
+      "budgetBookName": null,
+      "amount": 63142,
+      "description": "臨時・新規・所管 選挙管理委員会事務局",
+      "basicGoal": "",
+      "shisaku": "",
+      "locator": {
+        "file": "20260202131436.pdf",
+        "page": 17
       }
     }
   ]

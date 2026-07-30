@@ -5,8 +5,15 @@
       "filename": "20260202131316.pdf",
       "sha256": "175c1dd529b26d2eab7fb0e26e424d2314d611bd5325a3b5b8213f356f56cafb",
       "bytes": 2242522,
-      "fetchedAt": "2026-07-17T22:17:36.724Z",
+      "fetchedAt": "2026-07-30T16:06:35.893Z",
       "fetchedFrom": "https://www.city.minato.tokyo.jp/documents/4694/20260202131316.pdf"
+    },
+    {
+      "filename": "20260202131436.pdf",
+      "sha256": "747f03e6824cd200ddc9f59b98d310e759bf9b755616c0e12fc37e29870db42a",
+      "bytes": 4592528,
+      "fetchedAt": "2026-07-30T16:06:37.702Z",
+      "fetchedFrom": "https://www.city.minato.tokyo.jp/documents/4694/20260202131436.pdf"
     }
   ]
 }

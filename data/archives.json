@@ -4102,9 +4102,19 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260717223231/https://www.city.minato.tokyo.jp/documents/4694/20260202131316.pdf",
       "waybackTimestamp": "20260717223231",
-      "checkedAt": "2026-07-17T22:52:03.761Z",
+      "checkedAt": "2026-07-30T16:07:23.075Z",
       "sha256Match": true,
       "waybackBytes": 2242522
+    },
+    {
+      "sourceId": "minato-yosangaiyou-r8",
+      "url": "https://www.city.minato.tokyo.jp/documents/4694/20260202131436.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260606041635/https://www.city.minato.tokyo.jp/documents/4694/20260202131436.pdf",
+      "waybackTimestamp": "20260606041635",
+      "checkedAt": "2026-07-30T16:07:27.124Z",
+      "sha256Match": true,
+      "waybackBytes": 4592528
     },
     {
       "sourceId": "minato-yosangaiyou-r8",
@@ -4112,7 +4122,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260516044517/https://www.city.minato.tokyo.jp/kuse/zaise/yosan/",
       "waybackTimestamp": "20260516044517",
-      "checkedAt": "2026-07-17T22:52:10.970Z"
+      "checkedAt": "2026-07-30T16:07:32.030Z"
     },
     {
       "sourceId": "miyagiken-yosansho-r8",

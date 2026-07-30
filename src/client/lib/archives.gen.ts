@@ -430,6 +430,7 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.city.minato.tokyo.jp/documents/4694/nishou.pdf": "https://web.archive.org/web/20260717223356/https://www.city.minato.tokyo.jp/documents/4694/nishou.pdf",
   "https://www.city.minato.tokyo.jp/documents/4694/r7nishou.pdf": "https://web.archive.org/web/20260717224121/https://www.city.minato.tokyo.jp/documents/4694/r7nishou.pdf",
   "https://www.city.minato.tokyo.jp/documents/4694/20260202131316.pdf": "https://web.archive.org/web/20260717223231/https://www.city.minato.tokyo.jp/documents/4694/20260202131316.pdf",
+  "https://www.city.minato.tokyo.jp/documents/4694/20260202131436.pdf": "https://web.archive.org/web/20260606041635/https://www.city.minato.tokyo.jp/documents/4694/20260202131436.pdf",
   "https://www.pref.miyagi.jp/documents/63498/aohon_ippannkaikei.pdf": "https://web.archive.org/web/20260725080452/https://www.pref.miyagi.jp/documents/63498/aohon_ippannkaikei.pdf",
   "https://www.pref.miyagi.jp/soshiki/zaisei/zei-r08-yosan.html": "https://web.archive.org/web/20260509234532/https://www.pref.miyagi.jp/soshiki/zaisei/zei-r08-yosan.html",
   "https://www.pref.miyazaki.lg.jp/documents/106626/106626_20260219100915-1.pdf": "https://web.archive.org/web/20260727085657/https://www.pref.miyazaki.lg.jp/documents/106626/106626_20260219100915-1.pdf",
