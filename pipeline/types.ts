@@ -282,6 +282,14 @@ export const budgetBookDocSchema = z.object({
   facts: z.array(budgetLineFactSchema),
   /** 「主な事業一覧」ページの抽出結果（ページ指定がある場合のみ） */
   projects: z.array(budgetProjectFactSchema).optional(),
+  /**
+   * 事業の No が**項ごとに 1 へリセットする**様式（北区の `７ 主要事業`・2026-07-30）。
+   * 既定（未宣言）は甲府と同じ「資料を通した連番」で、validate は No の重複を error にする。
+   * ⚠ **宣言した資料だけ**その2つの検査を外す（京都府 §12 の `noPerProjectCost` と同じ作法）。
+   * 外しても網は弱くならない — **パーサ側が「項ごとに 1..M」をより厳しく検査**しており、
+   * さらに原典の宣言件数（`総務費 67事業`）と Σ項合計＝款額の等式で二重に張っている。
+   */
+  projectNoResetsPerKo: z.boolean().optional(),
 });
 export type BudgetBookDoc = z.infer<typeof budgetBookDocSchema>;
 
