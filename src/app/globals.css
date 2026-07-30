@@ -85,3 +85,33 @@ summary::marker { content: ""; }
   [data-mq="rep"] > :nth-child(3){ grid-column:1 / -1 !important; }
   [data-mq="rep"] > :nth-child(4){ grid-column:1 / -1 !important; text-align:left !important; }
 }
+
+/* Cookie 同意バナー（vanilla-cookieconsent）を既存のデザインに合わせる。
+   ライブラリの既定は角丸が強く配色も別系統なので、白カード + #DFE7EC ボーダー +
+   アクセント #1798D0 + IBM Plex Sans JP に寄せる（CLAUDE.md「既存デザインを尊重する」）。
+   ⚠ 系列色（PALETTE）には触らない — ここはチャートではない。 */
+#cc-main {
+  --cc-font-family: 'IBM Plex Sans JP', sans-serif;
+  --cc-bg: #FFFFFF;
+  --cc-primary-color: #14181C;
+  --cc-secondary-color: #5C6B77;
+  --cc-btn-primary-bg: #14181C;
+  --cc-btn-primary-color: #F7FAFC;
+  --cc-btn-primary-border-color: #14181C;
+  --cc-btn-primary-hover-bg: #1798D0;
+  --cc-btn-primary-hover-border-color: #1798D0;
+  --cc-btn-primary-hover-color: #FFFFFF;
+  --cc-btn-secondary-bg: #FFFFFF;
+  --cc-btn-secondary-color: #14181C;
+  --cc-btn-secondary-border-color: #C6D2DA;
+  --cc-btn-secondary-hover-bg: #F1F6F9;
+  --cc-btn-secondary-hover-border-color: #1798D0;
+  --cc-btn-secondary-hover-color: #14181C;
+  --cc-btn-border-radius: 999px;
+  --cc-modal-border-radius: 14px;
+  --cc-link-color: #0F76A3;
+  --cc-separator-border-color: #DFE7EC;
+  --cc-cookie-category-block-bg: #FBFDFE;
+  --cc-cookie-category-block-border: #DFE7EC;
+  --cc-toggle-on-bg: #1798D0;
+}
