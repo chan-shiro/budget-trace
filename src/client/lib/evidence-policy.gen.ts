@@ -223,6 +223,36 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "license": "「佐賀県庁ホームページ」に掲載されている文字、写真、イラストなどの個々の情報及び「佐賀県庁ホームページ」全体に関する著作権は、原則として佐賀県に帰属します。（ただし、一部の画像等の著作権は、原著作者が所有しています。）「私的使用のための複製」など著作権法上認められた場合を除き、無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
     "target": "page"
   },
+  "/sources/fukui-ken-yosansho-r8/r8tousyo_yosanan.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.fukui.lg.jp/doc/zaisei/fukuikenyosan/tousyo08.html",
+    "license": "このサイトにおけるコンテンツの著作権は、福井県に帰属します。著作権法上認められた場合を除いては、無断での複製・転用はできません。個々の写真・文章等の二次利用をご希望の方は、それぞれのページの担当課にご相談ください。",
+    "target": "page"
+  },
+  "/sources/tokushima-ken-yosan-gaiyou-keisu-r8/1033755.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.tokushima.lg.jp/kenseijoho/zaisei/7310242/",
+    "license": "徳島県ホームページで提供するすべての情報（文章・写真・イラストなど）について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、徳島県の許可なく複製・転用・販売することはできません。ただし、当県サイトの各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "page"
+  },
+  "/sources/kochi-ken-zaisei-jokyo-r8/file_2026629122744_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.kochi.lg.jp/doc/zaiseijoukyou-index/",
+    "license": "高知県ホームページに掲載されている個々の情報（文字、写真、イラスト等）に関する諸権利は、著作権の対象であり、法律によって保護されています。これらの情報について、「私的使用のための複製」や「引用」など著作権法上で認められた場合を除き、高知県の許可なく複製、転用等をすることは法律で禁止されています。",
+    "target": "page"
+  },
+  "/sources/shimane-ken-kamoku-mokuteki-r8/01_kamoku_mokuteki.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.shimane.lg.jp/admin/seisaku/zaisei/yosan/yosanr8/r8gaiyou.data/01_kamoku_mokuteki.pdf",
+    "license": "「島根県ホームページ」に掲載されている文章や写真、イラスト、画像などの著作権は、「島根県」又は「コンテンツ提供者」にあります。「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については、各ホームページに記載されている所属へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/tottori-ken-yosan-gaiyou-bunseki-r8/R8tousyogaiyoubunseki.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.tottori.lg.jp/327294.htm",
+    "license": "とりネットに掲載されている個々の情報（文章，写真，イラストなど）は，著作権の対象となっています。とりネット全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。 「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。利用許諾については該当するウェブページを所管する担当課へお問い合わせください。",
+    "target": "page"
+  },
   "/sources/sapporo-yosansetsumeisho-r7/02_r7_yosansetsumeisho_ippan.pdf": {
     "mode": "origin",
     "href": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r7/documents/02_r7_yosansetsumeisho_ippan.pdf",
