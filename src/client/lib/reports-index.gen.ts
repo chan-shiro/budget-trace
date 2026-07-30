@@ -27,7 +27,7 @@ export const REPORT_MUNIS: Record<string, { name: string; fy: string; fyLabel: s
     "name": "京都府",
     "fy": "R6",
     "fyLabel": "令和6年度",
-    "count": 396
+    "count": 418
   },
   "401005": {
     "name": "北九州市",

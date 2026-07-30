@@ -100,7 +100,11 @@ function lines(words: Word[]): { y: number; xMin: number; text: string; words: W
 
 /** 成果欄の本文から `３ 執行額 …円` を拾う（円単位。無ければ null） */
 function pickExecution(body: string): number | null {
-  const m = /執\s*行\s*額[^0-9]{0,12}([0-9,]+)\s*円/.exec(body);
+  // ⚠ ラベルと金額の間に注記（`（補助金）` 等）や改行が挟まる施策がある。
+  //   間隔を 12 文字に絞っていたときは 19 件を取りこぼした（自己検証の assert が捕まえた）。
+  // ⚠ **`円` を必須にしない** — `執行額（積立金）278,913,177` のように単位を伴わない施策がある
+  //   （実測149件が「直後に N円 が無い」型）。⚠ 3桁以上を要求して、注記中の小さな数を拾わない。
+  const m = /執\s*行\s*額[^0-9]{0,60}?([0-9][0-9,]{2,})/.exec(body);
   if (!m) return null;
   const v = Number(m[1]!.replace(/,/g, ""));
   return Number.isFinite(v) ? v : null;
@@ -122,7 +126,15 @@ function pickIndicators(
     const m = /指標[:：](.+?)目標[:：](.+?)実績[:：](.+)$/.exec(l.text);
     if (!m) continue;
     const name = clean(m[1]!);
-    if (name) out.push({ category: "成果指標", name, targets: [numOrNull(m[2]!)], actuals: [numOrNull(m[3]!)] });
+    const target = numOrNull(m[2]!);
+    const actual = numOrNull(m[3]!);
+    // ⚠ **壊れた指標を出さない**（レビュー指摘）。1つの指標に複数の目標が並ぶ施策があり、
+    //   素で採ると指標名が目標文字列を飲み込み、`令和12年度` の 12 を目標値として出していた。
+    //   その結果 caveats の「実績値がまだ記載されていません」が**事実と逆**の説明になっていた
+    //   （原典は実績 25.5% を明記）。**名前が長すぎる／目標が取れない指標は載せない**。
+    if (name && name.length <= 40 && target != null) {
+      out.push({ category: "成果指標", name, targets: [target], actuals: [actual] });
+    }
   }
   // ① 表形式: ヘッダ `指標 目標 実績` の x を列境界に使う
   const headIdx = bodyLines.findIndex((l) => /^指標.{0,4}目標.{0,4}実績$/.test(l.text));
@@ -159,176 +171,166 @@ const numOrNull = (s: string): number | null => {
   return Number.isFinite(v) ? v : null;
 };
 
+/**
+ * ページ装飾（表の外の文字）かどうか。
+ * ⚠ **y の閾値で切ってはいけない** — 継続ページは表の1行目が y=63〜90 に来るので、
+ *   `y > 90` で落とすと**その施策が丸ごと消える**（レビューで40件以上の欠落が出た）。
+ *   落としてよいのは「ページ上部の注記」と「列見出し」だけなので、**テキストで判定する**。
+ */
+const CHROME_RE =
+  /^(?:科|目|予|算|現|額|決|主|要|な|施|策|の|実|況|と|成|果|等|状)$|予算現額及び決算額欄中|内の数字は、歳入歳出決算事項別明細書|^主要な施策$|^科目$/;
+const isChrome = (w: Word): boolean => w.y < 100 && CHROME_RE.test(w.text.replace(/\s/g, ""));
+
+/**
+ * **テキスト層が破損したページ**（原典 PDF に、同じ表が多重・180°反転で重なって描かれた頁がある）。
+ * `pdftotext` は `科 目 予目算 現科 予額…` の交互文字列と `業事等備整宅住営` の反転文字列を返す。
+ * ⚠ **Σ も語彙ゲートも効かない**（金額ではない）ので、**ここで機械検出して頁ごと捨てる**。
+ * 捨てた頁は件数を返して呼び出し側で assert する（黙って減らさない）。
+ */
+function isCorruptPage(ws: Word[]): boolean {
+  const nameBand = ws.filter((w) => w.x >= 285 && w.x < 400).map((w) => w.text).join("");
+  // 事業名に全角カンマ＋数字が混じることは原典では無い（重なった金額が混入した証拠）
+  if (/[０-９0-9]，|，[０-９0-9]/.test(nameBand)) return true;
+  // 反転して重なった見出しの断片
+  // ⚠ `茨`・`芋` は反転して重なった文字の断片として現れる（京都府の施策名には出てこない語）。
+  //   ⚠ 一般の漢字なので**名前欄に限って**判定する（本文には出てもよい）。
+  return /額行執|策施要主|業事等備整宅住営|茨|芋/.test(nameBand);
+}
+
 export function parseKyotofuSeikaHoukoku(
   files: { path: string; filename: string }[],
   source: SourceEntry,
 ): ProjectReportDoc {
   const facts: ProjectReportFact[] = [];
-  const opts = (source.parserOptions ?? {}) as { targetFy?: string };
+  const opts = (source.parserOptions ?? {}) as { targetFy?: string; corruptPages?: number; execMissedAllowed?: number };
   const targetFy = opts.targetFy ?? source.fiscalYear;
+  const hasReal = (t: string) =>
+    /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}A-Za-z0-9]/u.test(t);
+  let corruptPages = 0;
+  let shishiMarkers = 0;
+  /** 本文に執行額があるのに金額を取り出せなかった施策（＝取りこぼし。0 でなければ throw） */
+  let execMissed = 0;
 
   for (const file of files) {
     const words = pdfWords(file.path);
     const byPage = new Map<number, Word[]>();
     for (const w of words) (byPage.get(w.page) ?? byPage.set(w.page, []).get(w.page)!).push(w);
 
-    // 款・項・目は**ページを跨いで持ち越す**（章の途中でページが変わるため）
     let kan: string | null = null;
-    let kou: string | null = null;
-    let moku: string | null = null;
+    // 施策のバッファは**ページを跨ぐ**（本文が次ページへ続くため。頁末で確定すると執行額を落とす）
+    let nameBuf: string[] = [];
+    let bukaBuf: string[] = [];
+    let startPage: number | null = null;
+    let inBuka = false;
+    let pendingBody: { text: string; words: Word[] }[] = [];
+
+    const flush = () => {
+      const name = nameBuf.join("").trim();
+      nameBuf = [];
+      bukaBuf = [];
+      inBuka = false;
+      const body = pendingBody;
+      pendingBody = [];
+      const page = startPage;
+      startPage = null;
+      if (!name || page == null || !kan) return;
+      const bodyText = body.map((l) => l.text).join("\n");
+      const exec = pickExecution(bodyText);
+      // ⚠ **本文に執行額があるのに拾えなかったら取りこぼし**（ページ跨ぎで本文が切れていた型）。
+      //   マーカーの総数と突き合わせる代わりに**施策単位で照合する**（`３ 執行額` の行頭番号を
+      //   数に含めてしまうなど、総数の突合はノイズが多い）。
+      if (exec == null && /執\s*行\s*額/.test(bodyText) && /[0-9]/.test(bodyText)) {
+        execMissed++;
+        if (process.env.KYOTOFU_DEBUG) {
+          const at = bodyText.search(/執\s*行\s*額/);
+          console.error(`  MISS p.${page} ${name}: ${JSON.stringify(bodyText.slice(at, at + 90))}`);
+        }
+      }
+      facts.push({
+        no: String(facts.length + 1),
+        name,
+        buka: bukaBuf.join("").replace(/[（()）]/g, "").trim(),
+        kubun: null,
+        implementation: bodyText || null,
+        grade: null,
+        score: null,
+        // ⚠⚠ **款だけを出す**（項・目も原典にはあるが、科目欄が空のページが続く版面のため
+        //   持ち越すしかなく、取りこぼしが1つあると以降の施策に誤った項・目が付く。
+        //   実測で教育費の 4項高等学校費・5項特別支援学校費 が落ちた）。
+        //   **款は章見出しから取るので取りこぼしが起きない** — 款ドリルの紐付けは款だけで足りる。
+        measure: kan,
+        policy: null,
+        cost:
+          exec == null
+            ? []
+            : [{ fy: targetFy, kind: "決算", jigyohi: exec, jinkenhi: null, totalCost: null, ippanZaigen: null }],
+        indicators: pickIndicators(body),
+        locator: { file: file.filename, page },
+      });
+    };
 
     for (const [page, ws] of [...byPage.entries()].sort((a, b) => a[0] - b[0])) {
-      // --- 款の章見出し（ページ上部・x<260。⚠ 注記を連結させないため x を絞る） ---
       const headText = lines(ws.filter((w) => w.y < 90 && w.x >= 60 && w.x < 260))
         .map((l) => l.text)
         .join("");
       const km = /第(\d+)款(.+?)費/.exec(headText);
       if (km) {
+        flush(); // 章が変わったら持ち越し中の施策を確定する
         kan = `${km[1]}款${km[2]}費`;
-        kou = null;
-        moku = null;
       }
       if (!kan) continue; // 款の章が始まる前（総括表など）は対象外
 
-      // --- 科目欄（x<140）の項・目。y つきで拾い、施策の y と突き合わせる ---
-      // ⚠ **項名・目名は折り返す**（`1目特別支援学` ＋ `校費`）。番号で始まらない後続行は
-      //   直前の科目名の続きなので結合する。**結合しないと名前が切れたまま次ページへ持ち越され、
-      //   関係のない施策にまで誤った項・目が付く**（実測: 教育費の事業に `3項中学校費/1目特別支援学`）。
-      const kamokuEvents: { y: number; kou?: string; moku?: string }[] = [];
-      let lastEvent: { y: number; kou?: string; moku?: string } | null = null;
-      for (const l of lines(ws.filter((w) => w.x < 140 && w.y > 90))) {
-        const m = /^(\d+)([^\d\s（(].*)$/.exec(l.text);
-        if (m) {
-          if (l.xMin < 62) lastEvent = { y: l.y, kou: `${m[1]}項${m[2]}` };
-          else if (l.xMin < 100) lastEvent = { y: l.y, moku: `${m[1]}目${m[2]}` };
-          else continue;
-          kamokuEvents.push(lastEvent);
-          continue;
-        }
-        // 番号で始まらない行 = 折返しの続き（`（ P 72）` のような注記は括弧で始まるので除く）
-        if (lastEvent && l.text && !/^[（(]/.test(l.text) && l.y - lastEvent.y < 40) {
-          if (lastEvent.kou) lastEvent.kou += l.text;
-          if (lastEvent.moku) lastEvent.moku += l.text;
-          lastEvent.y = l.y;
-        }
+      if (isCorruptPage(ws)) {
+        flush(); // 破損頁の直前までで確定し、この頁は捨てる
+        corruptPages++;
+        continue;
       }
-      kamokuEvents.sort((a, b) => a.y - b.y);
 
-      // --- 名前欄（285〜400）を「事業名 → 所管課の括弧ブロック」で施策に切る ---
-      const nameLines = lines(ws.filter((w) => w.x >= 285 && w.x < 400 && w.y > 90));
-      const bodyLines = lines(ws.filter((w) => w.x >= 400 && w.y > 90));
+      const nameLines = lines(ws.filter((w) => w.x >= 285 && w.x < 400 && !isChrome(w)));
+      const bodyLines = lines(ws.filter((w) => w.x >= 400 && !isChrome(w)));
+      // 件数の網（相模原 §8p-2 の「マーカーの数 = 拾えた数」と同じ考え方）
+      for (const l of bodyLines) if (/施策の趣旨等/.test(l.text)) shishiMarkers++;
 
-      let nameBuf: string[] = [];
-      let bukaBuf: string[] = [];
-      let startY: number | null = null;
-      let inBuka = false;
-      const flush = (endY: number) => {
-        const name = nameBuf.join("").trim();
-        if (!name || startY == null) {
-          nameBuf = [];
-          bukaBuf = [];
-          inBuka = false;
-          return;
-        }
-        // この施策の位置に効いている項・目（施策の開始 y より前の最後のイベント）
-        for (const e of kamokuEvents) {
-          if (e.y > startY + 6) break;
-          if (e.kou) {
-            kou = e.kou;
-            moku = null;
-          }
-          if (e.moku) moku = e.moku;
-        }
-        const body = bodyLines.filter((l) => l.y >= startY! - 6 && l.y < endY);
-        const bodyText = body.map((l) => l.text).join("\n");
-        const exec = pickExecution(bodyText);
-        // ⚠⚠ **款だけを出す**（2026-07-30 の判断）。項・目も原典にはあり抽出も試みたが、
-        //   ① 項名・目名が折り返す ② **科目欄が空のページが続く**（金額ブロックだけのページ）ため
-        //   直前の値を持ち越すしかなく、**取りこぼしが1つあると以降の施策に誤った項・目が付く**。
-        //   実測で教育費の 項 が 4項高等学校費・5項特別支援学校費 を落として
-        //   `府立学校教育環境整備事業` に `3項中学校費` が付いた。
-        //   **款は章見出しから取るので取りこぼしが起きない**（款ドリルへの紐付けは款だけで足りる）。
-        //   項・目を出すのは、科目欄の持ち越しを原典の別資料（事項別明細書）で裏取りできてから。
-        const measure = kan ?? "";
-        facts.push({
-          no: String(facts.length + 1),
-          name,
-          buka: bukaBuf.join("").replace(/[（()）]/g, "").trim(),
-          kubun: null,
-          implementation: bodyText || null,
-          grade: null,
-          score: null,
-          measure,
-          policy: null,
-          cost:
-            exec == null
-              ? []
-              : [{ fy: targetFy, kind: "決算", jigyohi: exec, jinkenhi: null, totalCost: null, ippanZaigen: null }],
-          indicators: pickIndicators(body),
-          locator: { file: file.filename, page },
-        });
-        nameBuf = [];
-        bukaBuf = [];
-        startY = null;
-        inBuka = false;
-      };
-
-      // ⚠ **所管課は「括弧」ではなく「x のインデント」で見分ける**。
-      //   事業名は必ず x≈291（列の左端）から始まり、所管課は x≈304〜314 に字下げされる。
-      //   括弧 `（ ）` は装飾で、**無い施策が実在する**（p.15 ベンチャーチャレンジ職員育成事業）。
-      //   括弧をアンカーにしていたときは、そこで課名が事業名に飲み込まれて
-      //   `ベンチャーチャレンジ職員育成事業職員総務課安心・安全まちづくり推進課…` になっていた（実測）。
-      // **事業名と所管課は「行の左端」で見分ける**（全325ページの x 分布を測って決めた）:
-      //   事業名の左端は **291pt に集中**（656語）、所管課は **297〜315pt**（字下げ）。→ 境界は 295。
-      // ⚠ **括弧 `（ ）` をアンカーにしてはいけない** — 括弧の無い施策が実在する（p.15）。
-      // ⚠ **単語ごとに x で振り分けてもいけない** — 課名は `職 員 総 務 課` と1文字ずつ別語に
-      //   なって x が 304〜361 に散るので、単語単位だと事業名の途中で切れて断片が量産される
-      //   （実測: 名前2字未満が50件出た）。**行の左端**だけが安定した信号。
-      const hasReal = (s: string) => /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}A-Za-z0-9]/u.test(s);
+      let bodyFrom = 0; // このページの本文のうち、今の施策に属する開始位置
       for (const l of nameLines) {
-        if (/^主要な施策$/.test(l.text)) continue; // 列見出し
-        if (!hasReal(l.text)) continue; // 罫線・括弧だけの行
+        if (!hasReal(l.text)) continue;
         if (l.xMin >= 295) {
-          // 所管課ブロック。名前がまだ無ければページ跨ぎの継続なので捨てる
-          if (startY != null) {
+          if (startPage != null) {
             inBuka = true;
             bukaBuf.push(l.text);
           }
           continue;
         }
-        // 左端から始まる行 = 事業名。
-        // ⚠ **ただし行内に `（課名）` が同居することがある**（p.23・p.32 等。3つ目の型）:
-        //   `向日町競輪場周辺地域まちづくり協働検討費（文化施設政策監付）地域振興計画推進事業`
-        //   → 括弧の前 = 今の施策名の続き / 括弧の中 = 所管課 / **括弧の後ろ = 次の施策の名前**。
-        //   これを分けないと2件が1件に潰れる（実測25件）。
+        // 行内に `（課名）` が同居する型（`事業名（課名）次の事業名`）を括弧で分割する
         let rest = l.text;
         let first = true;
         while (rest) {
           const m = /^([^（(]*)[（(]([^）)]*)[）)](.*)$/.exec(rest);
-          if (!m) {
-            if (hasReal(rest)) {
-              if (inBuka) flush(l.y);
-              if (startY == null) startY = l.y;
-              nameBuf.push(rest);
+          const before = m ? m[1]! : rest;
+          if (hasReal(before)) {
+            if (inBuka && (first || m)) {
+              // 新しい施策の始まり — 直前の施策の本文はこの行の手前まで
+              pendingBody.push(...bodyLines.slice(bodyFrom).filter((b) => b.y < l.y - 6));
+              bodyFrom = bodyLines.findIndex((b) => b.y >= l.y - 6);
+              if (bodyFrom < 0) bodyFrom = bodyLines.length;
+              flush();
             }
-            break;
+            if (startPage == null) startPage = page;
+            nameBuf.push(before);
           }
-          const [, before, inside, after] = m;
-          if (hasReal(before!)) {
-            if (inBuka && first) flush(l.y);
-            if (startY == null) startY = l.y;
-            nameBuf.push(before!);
-          }
-          if (hasReal(inside!) && startY != null) {
+          if (!m) break;
+          if (hasReal(m[2]!) && startPage != null) {
             inBuka = true;
-            bukaBuf.push(inside!);
+            bukaBuf.push(m[2]!);
           }
-          rest = after!;
+          rest = m[3]!;
           first = false;
         }
       }
-      flush(1e9);
+      // このページの残りの本文は、いま持ち越している施策のもの
+      pendingBody.push(...bodyLines.slice(Math.max(0, bodyFrom)));
     }
+    flush();
   }
 
   if (facts.length === 0) {
@@ -341,6 +343,32 @@ export function parseKyotofuSeikaHoukoku(
   if (noKan.length > 0) {
     throw new Error(
       `${source.id}: 款を解決できない施策が ${noKan.length} 件あります（例: ${noKan[0]!.name} p.${noKan[0]!.locator.page}）`,
+    );
+  }
+  // ⚠ **件数の網**（Σ が立たない資料なので、これが唯一の網）:
+  //   ① 破損頁の数が宣言と一致するか ② 施策の数がマーカー数から大きく外れていないか
+  //   ③ 執行額を持つ施策の数がマーカー数と一致するか
+  const declaredCorrupt = opts.corruptPages ?? 0;
+  if (corruptPages !== declaredCorrupt) {
+    throw new Error(
+      `${source.id}: 破損ページが ${corruptPages} 頁（parserOptions.corruptPages は ${declaredCorrupt}）。` +
+        `原典が差し替わった可能性があるので、頁を目で確かめてから宣言を更新してください`,
+    );
+  }
+  // ⚠ **取りこぼしの許容数は宣言する**（黙って落とさない）。残っているのは
+  //   **執行額が本文ではなく下部の表に載る施策**（p.262 地域密着型社会資本整備事業＝路線別の表 /
+  //   p.320 国直轄災害復旧事業＝事業名別の表 など）で、表の構造が施策ごとに違うため
+  //   1つの正規表現では取れない。**金額を推計で埋めるより、載せないほうを採る**。
+  const allowed = opts.execMissedAllowed ?? 0;
+  if (execMissed !== allowed) {
+    throw new Error(
+      `${source.id}: 本文に執行額があるのに金額を取り出せなかった施策が ${execMissed} 件（宣言は ${allowed} 件）。` +
+        `増えていれば取りこぼし・減っていれば宣言が古いので、頁を目で確かめてから更新してください`,
+    );
+  }
+  if (facts.length < shishiMarkers) {
+    throw new Error(
+      `${source.id}: 「施策の趣旨等」が ${shishiMarkers} 件あるのに施策は ${facts.length} 件しかありません（結合の疑い）`,
     );
   }
 

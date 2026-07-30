@@ -1960,7 +1960,13 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
           ...(repData.has.achievement ? ["達成度"] : []),
           ...(repData.has.progress ? ["進捗評価"] : []),
           ...(repData.has.direction ? ["今後の方向性"] : []),
-          ...(repData.has.kanKoumoku ? ["歳出予算科目（款・項・目）"] : []),
+          // ⚠ 京都府は**款だけ**（項・目は原典にあるが取りこぼしが避けられず落とした）。
+          //   「款・項・目」と決め打ちすると嘘になるので、資料が持つ深さで振り替える。
+          ...(repData.has.kanKoumokuFull
+            ? ["歳出予算科目（款・項・目）"]
+            : repData.has.kanKoumoku
+              ? ["歳出予算科目（款）"]
+              : []),
         ].join("・"),
         total: repData.reports.length,
         hits: rows.length,

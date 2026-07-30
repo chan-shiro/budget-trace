@@ -3581,6 +3581,24 @@
       "checkedAt": "2026-07-15T16:11:01.683Z"
     },
     {
+      "sourceId": "kyotofu-seika-houkoku-r6",
+      "url": "https://www.pref.kyoto.jp/kessan/documents/01sesaku_1.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20251002115126/https://www.pref.kyoto.jp/kessan/documents/01sesaku_1.pdf",
+      "waybackTimestamp": "20251002115126",
+      "checkedAt": "2026-07-30T11:15:42.507Z",
+      "sha256Match": true,
+      "waybackBytes": 4256499
+    },
+    {
+      "sourceId": "kyotofu-seika-houkoku-r6",
+      "url": "https://www.pref.kyoto.jp/kessan/r6kessan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260730111646/https://www.pref.kyoto.jp/kessan/r6kessan.html",
+      "waybackTimestamp": "20260730111646",
+      "checkedAt": "2026-07-30T11:18:06.485Z"
+    },
+    {
       "sourceId": "kyotofu-tosho-gaiyou-r8",
       "url": "https://www.pref.kyoto.jp/yosan/08tousho.html",
       "kind": "landing",

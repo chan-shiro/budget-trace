@@ -1095,9 +1095,10 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
       evalNote: "この資料は達成度の数値の代わりに「順調」「概ね順調」「やや遅れ」「遅れ」の4段階で自己評価し、KPI（成果指標）の目標・実績もあわせて持ちます。",
     },
     // 京都府（#161・2026-07-30）。主要な施策の成果に関する報告書 R6・396施策。**都道府県で初の事業報告**。
-    // **款で章立てされた資料**で、`measure` が `N款款名/N項…/N目…` なので**款名を報告書自身が内包する**
+    // **款で章立てされた資料**で、`measure` が `N款款名` なので**款名を報告書自身が内包する**
+    // （⚠ **項・目は出していない** — 取りこぼしが避けられないため。§12）
     // （さいたまと同じ経路・kanFromSrc 不要）。docs §12。
-    // ⚠ **原典が施策ごとの金額を印字しない**（金額は目レベル。執行額を持つのは396件中177件）。
+    // ⚠ **原典が施策ごとの金額を印字しない**（金額は目レベル。執行額を持つのは418件中406件）。
     //   目の額を施策へ配ると二重計上になるので埋めていない（parsed の `noPerProjectCost` 宣言）。
     //   → **画面には「決算額を持たない事業」が並ぶ**ので、evalNote でその旨を必ず伝える。
     {
@@ -1206,8 +1207,13 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
         achievement: reports.some((x) => x.achievement != null),
         direction: reports.some((x) => x.direction),
         progress: reports.some((x) => x.progress),
-        /** 歳出予算科目（款項目）。**横浜だけが持つ** — 事業を款ドリルへ紐付けられる */
+        /**
+         * 歳出予算科目。事業を款ドリルへ紐付けられる資料。
+         * ⚠ **`kanKoumoku` は「款・項・目」と言い切らない** — 京都府は**款だけ**（項・目は原典に
+         * あるが取りこぼしが避けられず落とした。§12）。画面の文面はこの2つで振り替える。
+         */
         kanKoumoku: reports.some((x) => /\d+款/.test(x.measure ?? "")),
+        kanKoumokuFull: reports.some((x) => /\d+款[^/]*\/\d+項/.test(x.measure ?? "")),
         estimate: reports.some((x) => x.cost.some((c) => (c as { est?: number }).est === 1)),
       },
       fy: doc.fiscalYear,

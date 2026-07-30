@@ -59,7 +59,7 @@ export interface ProjectReportShard {
     /**
      * **全事業が事業費を持つか / 一部でも持つか**（2026-07-30・京都府）。
      * 京都府の成果報告書は**金額が款・項・目の単位**で、施策ごとの決算額は原典が執行額を
-     * 書いた施策（396件中177件）にしか無い。**「事業ごとに事業費が載っています」を
+     * 書いた施策（418件中406件）にしか無い。**「事業ごとに事業費が載っています」を
      * 決め打ちすると嘘になる**ので、文面をこの2つで振り替える。
      */
     jigyohiAll: boolean;
@@ -69,7 +69,9 @@ export interface ProjectReportShard {
     achievement: boolean;
     direction: boolean;
     progress: boolean;
+    /** 款だけでも true。項まであるかは `kanKoumokuFull`（京都府は款のみ） */
     kanKoumoku: boolean;
+    kanKoumokuFull: boolean;
     estimate: boolean;
   };
   fy: string;
