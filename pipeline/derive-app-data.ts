@@ -2157,6 +2157,17 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     { srcId: "akita-ken-setsumeisho-sokatsu-r8", muniCode: "050008", muniName: "秋田県", prefName: "秋田県", isPref: true },
     { srcId: "wakayama-ken-yosan-shiryo-r8", muniCode: "300004", muniName: "和歌山県", prefName: "和歌山県", isPref: true },
     { srcId: "saga-ken-yosansho-r8", muniCode: "410004", muniName: "佐賀県", prefName: "佐賀県", isPref: true },
+    // 2026-07-30 第11弾＝**47都道府県の一巡**（収録可能な44県がこれで揃う。収録不可は兵庫・沖縄・山形）。
+    //    ⚠ 県と県庁所在市を取り違えない（福井県 180009 ≠ 福井市 182010 / 徳島県 360007 ≠ 徳島市 362018 /
+    //    高知県 390003 ≠ 高知市 392014 / 島根県 320005 ≠ 松江市 322016 / 鳥取県 310000 ≠ 鳥取市 312011）。
+    //    ⚠ **団体コードは総務省の原本 Excel から実引きした**（偵察の申告・依頼側のプロンプトを根拠にしない）。
+    //    ⚠ **鳥取は 310000**（チェックディジットの算式では 310001 になるが原本が 310000）。
+    //    ⚠ 高知は歳出18款で**款体系が標準でない**（危機管理費・産業振興推進費 等）。標準款へ寄せない。
+    { srcId: "fukui-ken-yosansho-r8", muniCode: "180009", muniName: "福井県", prefName: "福井県", isPref: true },
+    { srcId: "tokushima-ken-yosan-gaiyou-keisu-r8", muniCode: "360007", muniName: "徳島県", prefName: "徳島県", isPref: true },
+    { srcId: "kochi-ken-zaisei-jokyo-r8", muniCode: "390003", muniName: "高知県", prefName: "高知県", isPref: true },
+    { srcId: "shimane-ken-kamoku-mokuteki-r8", muniCode: "320005", muniName: "島根県", prefName: "島根県", isPref: true },
+    { srcId: "tottori-ken-yosan-gaiyou-bunseki-r8", muniCode: "310000", muniName: "鳥取県", prefName: "鳥取県", isPref: true },
     { srcId: "shizuokaken-zaisei-aramashi-157", muniCode: "220001", muniName: "静岡県", prefName: "静岡県", isPref: true },
     // 東京都（2026-07-22 追加・#124）。予算概要CSV（H29〜R8 の10年）。PDF は全経路パース不可のため
     // CSV が唯一の経路（registry のコメント参照）。歳出は款再編が2回（R5・R6）あり款名結合が切れる。
