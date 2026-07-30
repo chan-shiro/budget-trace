@@ -2523,6 +2523,13 @@ function parseProjectsDeptKanTable(
   const X_NAME = [120, 335] as const;
   const X_DEPT = [335, 420] as const;
   const X_NUM = 420;
+  // ⚠ x>420 には**3列**ある（予算額 / うちレベルアップ分 / 掲載頁）。左から順に拾うと、
+  //   レベルアップ分が `-` の行（176行）で**掲載頁の数字をレベルアップ分として拾う**
+  //   （実測: 110件が `うちレベルアップ分 50千円` のような偽の金額を画面に出していた）。
+  //   Σ も件数も amount しか見ないので**どのゲートも素通りする**（§2-4）。
+  //   → **右端**で列を決める（実測: 予算額 472 / レベルアップ分 503(`-`)・526(数) / 掲載頁 547）。
+  const R_AMOUNT = [465, 480] as const;
+  const R_LEVELUP = [495, 535] as const;
   const ANCHOR = /^【(新規|臨新|臨継|ﾚﾍﾞﾙ)】$/;
   const FULL: Record<string, string> = { 新規: "新規", 臨新: "臨時・新規", 臨継: "臨時・継続", ﾚﾍﾞﾙ: "レベルアップ" };
   const toNum = (s: string) => Number(s.replace(/[,\s]/g, ""));
@@ -2541,12 +2548,27 @@ function parseProjectsDeptKanTable(
   // 表の上端（列見出しの下）と下端。⚠ 最終ページには**締めの表**が続いており、その件数・Σ は
   // 事業名の x 帯（120〜335）に入る。最後の行の窓を頁末まで伸ばすと**締めの数字が事業名に混ざる**
   // ので、締めの見出しで止める。
-  const HEADER_Y = 88;      // 列見出しの最下 77.89 と最初のデータ 97.09 の間
   const PAGE_BOTTOM = 795;  // 印字ノンブル 805.6 の上
+  // ⚠ **表の上端を定数で置かない**。節タイトルがある p.5 だけ列見出しが約27pt 下がり
+  //   （実測: 見出しの最下 y=105.0 / 他ページ 77.9）、定数 88 では**見出しが1行目に食い込んで
+  //   事業名が `事業名芝地区…`・所管課が `（款名）まちづくり課` になっていた**。
+  //   → **見出しの語そのものから毎ページ導く**（見出しと最初の行の間隔は全ページ 24pt 以上）。
+  const HEAD_WORDS = ["事", "業", "名", "所管課", "（款名）", "予算額", "（千円）", "うちレベル", "アップ分", "掲載", "頁"];
 
   for (let page = from; page <= to; page++) {
     const ws = pdfPageWords(filePath, page);
+    const headYs = ws.filter((w) => HEAD_WORDS.includes(w.text) && w.y < 140).map((w) => w.y);
+    if (headYs.length === 0) {
+      throw new Error(`${filename} p.${page}: 表の列見出しが見つかりません（ページ範囲か様式を疑うこと）`);
+    }
+    const HEADER_Y = Math.max(...headYs) + 6;
     const summaryHead = ws.find((w) => /事業数及び予算額/.test(w.text));
+    // ⚠ 最終ページには**必ず締めの表がある**（この様式の前提であり唯一の検証ゲートの拠り所）。
+    //   見出しが見つからないまま頁末まで窓を伸ばすと、**締めの件数・Σ が事業名の x 帯に入り
+    //   最後の行の名前に無音で混入する**。→ 見つからなければ落とす。
+    if (page === to && !summaryHead) {
+      throw new Error(`${filename} p.${page}: 締めの表の見出し（…事業数及び予算額）が見つかりません — この資料の検証はこの表に依存しているので、見つからないまま通さない`);
+    }
     const FOOTER_Y = summaryHead ? summaryHead.y - 6 : PAGE_BOTTOM;
     const anchors = ws.filter((w) => ANCHOR.test(w.text) && w.x >= X_KUBUN[0] && w.x <= X_KUBUN[1]);
     nameTokensInTable += ws.filter((w) => w.x >= X_NAME[0] && w.x < X_NAME[1] && w.y > HEADER_Y && w.y < FOOTER_Y).length;
@@ -2578,11 +2600,12 @@ function parseProjectsDeptKanTable(
       const kan = km ? km[1]! : null;
       const dept = (km ? deptJoined.slice(0, km.index) : deptJoined).trim();
 
-      const nums = ws.filter((w) => w.x > X_NUM && Math.abs(w.y - a.y) <= 3).sort((p, q) => p.x - q.x);
-      const amtW = nums.find((w) => /^[\d,]+$/.test(w.text));
+      const nums = ws.filter((w) => w.x > X_NUM && Math.abs(w.y - a.y) <= 3 && /^[\d,]+$/.test(w.text));
+      const inR = (w: Word, r: readonly [number, number]) => w.x + w.w >= r[0] && w.x + w.w <= r[1];
+      const amtW = nums.find((w) => inR(w, R_AMOUNT));
       if (!amtW) throw new Error(`${filename} p.${page}「${name.slice(0, 24)}」: 予算額が読めません`);
       const amount = toNum(amtW.text);
-      const luW = nums.filter((w) => w !== amtW).find((w) => /^[\d,]+$/.test(w.text));
+      const luW = nums.find((w) => inR(w, R_LEVELUP));
 
       const kubunKey = a.text.replace(/[【】]/g, "");
       kubunCount[kubunKey] = (kubunCount[kubunKey] ?? 0) + 1;
@@ -2666,8 +2689,54 @@ function parseProjectsDeptKanTable(
     }
   }
 
+  // ---- 「うちレベルアップ分」を持てるのはレベルアップ行だけ ----
+  // 原典の列定義上そうなっており、実測でも数字が入るのはちょうど117行＝【ﾚﾍﾞﾙ】の件数。
+  // **列を右端でなく左から順に拾うと掲載頁を掴む**（実際に110件で誤った）ので、その再発を殺す。
+  {
+    const withLu = out.filter((p) => /うちレベルアップ分/.test(p.description));
+    const bad = withLu.filter((p) => p.kubun !== "拡充");
+    if (bad.length > 0) {
+      throw new Error(
+        `${sourceId}: レベルアップ以外の区分に「うちレベルアップ分」が付いています（${bad.length}件）: ` +
+          bad.slice(0, 5).map((p) => `「${p.name.slice(0, 20)}」`).join("・") +
+          ` — 金額列の取り違え（掲載頁を拾っている）を疑うこと`,
+      );
+    }
+    if (withLu.length !== (kubunCount["ﾚﾍﾞﾙ"] ?? 0)) {
+      throw new Error(`${sourceId}: 「うちレベルアップ分」が ${withLu.length}件 ですが レベルアップ行は ${kubunCount["ﾚﾍﾞﾙ"] ?? 0}件 です`);
+    }
+  }
+
+  // ---- 見出し語が行に食い込んでいないか（表示専用フィールドの網）----
+  // ⚠ 名前トークンの網は**抽出と同じ HEADER_Y を共有する**ので、見出しが窓に入ったときは
+  //   「正しく消費された」ことになって検出できない（レビュー指摘）。語そのもので独立に張る。
+  {
+    // ⚠ description には**こちらが書いた**「うちレベルアップ分」が入るので、見出し語の
+    //   `うちレベル` と衝突する。名前と description で見る語を分ける（自分の文言を検出しない）。
+    const HEAD_IN_NAME = /(事業名|所管課|（款名）|（千円）|うちレベル|アップ分|掲載頁)/;
+    const HEAD_IN_DESC = /(（款名）|（千円）|掲載頁|事業名)/;
+    const dirty = out.filter((p) => HEAD_IN_NAME.test(p.name) || HEAD_IN_DESC.test(p.description));
+    if (dirty.length > 0) {
+      throw new Error(
+        `${sourceId}: 列見出しが事業に混入しています（${dirty.length}件）: ` +
+          dirty.slice(0, 5).map((p) => `「${p.name.slice(0, 24)}」`).join("・") +
+          ` — 表の上端（HEADER_Y）がそのページの見出しより上にある可能性`,
+      );
+    }
+  }
+
   // ---- 款の健全性（抜粋なので等式ではなく ≤ で張る）----
   {
+    // ⚠ 款が付かない行は**特別会計の1件だけ**（原本に款セルが無い）。増えたら款の取りこぼしを疑う。
+    //   款名の正規表現は「…費」で終わる前提なので、`諸支出金` のような款が出ると静かに null になる。
+    const kanless = out.filter((p) => !p.kan);
+    if (kanless.length > 1) {
+      throw new Error(
+        `${sourceId}: 款が付かない事業が ${kanless.length}件 あります（想定は特別会計の1件）: ` +
+          kanless.slice(0, 5).map((p) => `「${p.name.slice(0, 24)}」`).join("・") +
+          ` — 「費」で終わらない款（諸支出金など）の取りこぼしを疑うこと`,
+      );
+    }
     const kanAmount = new Map(expLines.map((l) => [l.kanName, l.amount]));
     const sums = new Map<string, number>();
     for (const p of out) if (p.kan) sums.set(p.kan, (sums.get(p.kan) ?? 0) + p.amount);

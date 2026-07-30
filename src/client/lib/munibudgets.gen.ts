@@ -7996,7 +7996,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 学務課・うちレベルアップ分 23千円",
+          "description": "臨時・継続・所管 学務課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.16",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=16"
         },
@@ -8073,7 +8073,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 障害者福祉課・うちレベルアップ分 32千円",
+          "description": "臨時・継続・所管 障害者福祉課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.9",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=9"
         },
@@ -8084,7 +8084,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 情報政策課・うちレベルアップ分 51千円",
+          "description": "臨時・継続・所管 情報政策課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
         },
@@ -8117,7 +8117,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 防災課・うちレベルアップ分 39千円",
+          "description": "臨時・新規・所管 防災課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
         },
@@ -8150,7 +8150,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 学務課・うちレベルアップ分 23千円",
+          "description": "臨時・継続・所管 学務課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.16",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=16"
         },
@@ -8161,7 +8161,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 産業振興課・うちレベルアップ分 48千円",
+          "description": "臨時・継続・所管 産業振興課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.8",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=8"
         },
@@ -8183,7 +8183,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 地域振興課・うちレベルアップ分 54千円",
+          "description": "臨時・継続・所管 地域振興課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.8",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=8"
         },
@@ -8205,7 +8205,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 契約管財課・うちレベルアップ分 52千円",
+          "description": "臨時・継続・所管 契約管財課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
         },
@@ -8249,7 +8249,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 国際化・文化芸術担当・うちレベルアップ分 46千円",
+          "description": "臨時・継続・所管 国際化・文化芸術担当",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.8",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=8"
         },
@@ -8381,7 +8381,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 デジタル改革担当・うちレベルアップ分 51千円",
+          "description": "臨時・継続・所管 デジタル改革担当",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
         },
@@ -8469,7 +8469,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 子ども若者支援課・うちレベルアップ分 16千円",
+          "description": "新規・所管 子ども若者支援課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.11",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=11"
         },
@@ -8524,7 +8524,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 福祉施設整備担当・うちレベルアップ分 32千円",
+          "description": "臨時・継続・所管 福祉施設整備担当",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.9",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=9"
         },
@@ -8579,7 +8579,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 高齢者支援課・うちレベルアップ分 30千円",
+          "description": "新規・所管 高齢者支援課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.9",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=9"
         },
@@ -8590,7 +8590,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 企画課・うちレベルアップ分 53千円",
+          "description": "臨時・新規・所管 企画課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
         },
@@ -8612,7 +8612,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 子ども若者支援課・うちレベルアップ分 17千円",
+          "description": "臨時・継続・所管 子ども若者支援課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.11",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=11"
         },
@@ -8623,7 +8623,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 まちづくり課・うちレベルアップ分 42千円",
+          "description": "臨時・継続・所管 まちづくり課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.5",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=5"
         },
@@ -8744,7 +8744,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 子ども若者支援課・うちレベルアップ分 27千円",
+          "description": "臨時・継続・所管 子ども若者支援課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.11",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=11"
         },
@@ -8766,7 +8766,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 保育課・うちレベルアップ分 23千円",
+          "description": "臨時・継続・所管 保育課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.11",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=11"
         },
@@ -8854,7 +8854,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 生涯学習スポーツ振興課・うちレベルアップ分 35千円",
+          "description": "臨時・新規・所管 生涯学習スポーツ振興課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
         },
@@ -8865,7 +8865,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 教育人事企画課・うちレベルアップ分 21千円",
+          "description": "新規・所管 教育人事企画課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.16",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=16"
         },
@@ -8876,7 +8876,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 保育課・うちレベルアップ分 16千円",
+          "description": "新規・所管 保育課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.11",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=11"
         },
@@ -8887,7 +8887,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 生涯学習スポーツ振興課・うちレベルアップ分 36千円",
+          "description": "臨時・継続・所管 生涯学習スポーツ振興課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
         },
@@ -8898,7 +8898,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 学務課・うちレベルアップ分 24千円",
+          "description": "臨時・継続・所管 学務課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.16",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=16"
         },
@@ -8953,7 +8953,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 企画課・うちレベルアップ分 51千円",
+          "description": "臨時・継続・所管 企画課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
         },
@@ -8975,7 +8975,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 選挙管理委員会事務局・うちレベルアップ分 50千円",
+          "description": "臨時・新規・所管 選挙管理委員会事務局",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.17",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=17"
         },
@@ -9008,7 +9008,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 高齢者支援課・うちレベルアップ分 29千円",
+          "description": "新規・所管 高齢者支援課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.9",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=9"
         },
@@ -9041,7 +9041,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 障害者福祉課・うちレベルアップ分 32千円",
+          "description": "臨時・新規・所管 障害者福祉課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.9",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=9"
         },
@@ -9140,7 +9140,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 人事課・うちレベルアップ分 51千円",
+          "description": "臨時・新規・所管 人事課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
         },
@@ -9316,7 +9316,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 環境課・うちレベルアップ分 44千円",
+          "description": "臨時・新規・所管 環境課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.13",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=13"
         },
@@ -9327,7 +9327,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 子ども家庭支援センター・うちレベルアップ分 17千円",
+          "description": "新規・所管 子ども家庭支援センター",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.11",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=11"
         },
@@ -9338,7 +9338,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 新技術活用担当・うちレベルアップ分 51千円",
+          "description": "臨時・継続・所管 新技術活用担当",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
         },
@@ -9371,7 +9371,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 まちづくり課・うちレベルアップ分 42千円",
+          "description": "臨時・新規・所管 まちづくり課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.8",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=8"
         },
@@ -9382,7 +9382,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 学務課・うちレベルアップ分 22千円",
+          "description": "臨時・新規・所管 学務課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.16",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=16"
         },
@@ -9393,7 +9393,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 地域交通課・うちレベルアップ分 42千円",
+          "description": "臨時・新規・所管 地域交通課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.12",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=12"
         },
@@ -9569,7 +9569,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 協働推進課・うちレベルアップ分 48千円",
+          "description": "新規・所管 協働推進課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.7",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=7"
         },
@@ -9646,7 +9646,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 高齢者支援課・うちレベルアップ分 29千円",
+          "description": "新規・所管 高齢者支援課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.9",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=9"
         },
@@ -9745,7 +9745,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 学務課・うちレベルアップ分 24千円",
+          "description": "臨時・継続・所管 学務課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.17",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=17"
         },
@@ -9800,7 +9800,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 新技術活用担当・うちレベルアップ分 51千円",
+          "description": "臨時・継続・所管 新技術活用担当",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
         },
@@ -9811,7 +9811,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 学務課・うちレベルアップ分 22千円",
+          "description": "臨時・新規・所管 学務課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.16",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=16"
         },
@@ -9855,7 +9855,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 防災課・うちレベルアップ分 39千円",
+          "description": "臨時・新規・所管 防災課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
         },
@@ -9888,7 +9888,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 保育課・うちレベルアップ分 18千円",
+          "description": "臨時・継続・所管 保育課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.11",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=11"
         },
@@ -9899,7 +9899,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 住宅課・うちレベルアップ分 42千円",
+          "description": "臨時・新規・所管 住宅課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.12",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=12"
         },
@@ -9932,7 +9932,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 子ども家庭支援センター・うちレベルアップ分 18千円",
+          "description": "臨時・継続・所管 子ども家庭支援センター",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.11",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=11"
         },
@@ -9976,7 +9976,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 教育人事企画課・うちレベルアップ分 22千円",
+          "description": "臨時・新規・所管 教育人事企画課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.16",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=16"
         },
@@ -9998,7 +9998,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 産業振興課・うちレベルアップ分 48千円",
+          "description": "新規・所管 産業振興課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.8",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=8"
         },
@@ -10020,7 +10020,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 産業振興課・うちレベルアップ分 48千円",
+          "description": "臨時・継続・所管 産業振興課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.9",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=9"
         },
@@ -10064,7 +10064,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 学務課・うちレベルアップ分 22千円",
+          "description": "臨時・新規・所管 学務課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.16",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=16"
         },
@@ -10075,7 +10075,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+          "description": "臨時・継続・所管 管理課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.6",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=6"
         },
@@ -10086,7 +10086,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 区長室・うちレベルアップ分 50千円",
+          "description": "臨時・新規・所管 区長室",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
         },
@@ -10097,7 +10097,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 学務課・うちレベルアップ分 18千円",
+          "description": "臨時・継続・所管 学務課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.16",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=16"
         },
@@ -10108,7 +10108,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 生活衛生課・うちレベルアップ分 34千円",
+          "description": "新規・所管 生活衛生課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.10",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=10"
         },
@@ -10119,7 +10119,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 福祉施設整備担当・うちレベルアップ分 30千円",
+          "description": "臨時・継続・所管 福祉施設整備担当",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.9",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=9"
         },
@@ -10130,7 +10130,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 協働推進課・うちレベルアップ分 53千円",
+          "description": "臨時・新規・所管 協働推進課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.7",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=7"
         },
@@ -10141,7 +10141,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 企画課・うちレベルアップ分 17千円",
+          "description": "臨時・新規・所管 企画課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
         },
@@ -10163,7 +10163,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 学務課・うちレベルアップ分 23千円",
+          "description": "臨時・継続・所管 学務課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.16",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=16"
         },
@@ -10218,7 +10218,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 防災課・うちレベルアップ分 39千円",
+          "description": "臨時・継続・所管 防災課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
         },
@@ -10251,7 +10251,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 住宅課・うちレベルアップ分 43千円",
+          "description": "臨時・継続・所管 住宅課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.12",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=12"
         },
@@ -10262,7 +10262,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 児童相談課・うちレベルアップ分 26千円",
+          "description": "新規・所管 児童相談課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.12",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=12"
         },
@@ -10295,7 +10295,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+          "description": "臨時・継続・所管 管理課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.8",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=8"
         },
@@ -10306,7 +10306,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 産業振興課・うちレベルアップ分 48千円",
+          "description": "臨時・新規・所管 産業振興課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.8",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=8"
         },
@@ -10350,7 +10350,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 学務課・うちレベルアップ分 23千円",
+          "description": "臨時・継続・所管 学務課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.16",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=16"
         },
@@ -10361,7 +10361,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 区長室・うちレベルアップ分 51千円",
+          "description": "臨時・新規・所管 区長室",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
         },
@@ -10372,7 +10372,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+          "description": "臨時・継続・所管 管理課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.7",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=7"
         },
@@ -10405,7 +10405,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 都市計画課・うちレベルアップ分 54千円",
+          "description": "臨時・新規・所管 都市計画課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.12",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=12"
         },
@@ -10416,7 +10416,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 介護保険課・うちレベルアップ分 30千円",
+          "description": "臨時・継続・所管 介護保険課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.9",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=9"
         },
@@ -10427,7 +10427,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 地球温暖化対策担当・うちレベルアップ分 44千円",
+          "description": "新規・所管 地球温暖化対策担当",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.13",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=13"
         },
@@ -10449,7 +10449,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 防災課・うちレベルアップ分 39千円",
+          "description": "臨時・継続・所管 防災課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
         },
@@ -10460,7 +10460,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 生涯学習スポーツ振興課・うちレベルアップ分 35千円",
+          "description": "臨時・継続・所管 生涯学習スポーツ振興課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
         },
@@ -10482,7 +10482,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 生涯学習スポーツ振興課・うちレベルアップ分 35千円",
+          "description": "臨時・新規・所管 生涯学習スポーツ振興課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
         },
@@ -10493,7 +10493,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+          "description": "臨時・継続・所管 管理課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.5",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=5"
         },
@@ -10504,7 +10504,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+          "description": "臨時・継続・所管 管理課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.6",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=6"
         },
@@ -10515,7 +10515,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+          "description": "臨時・継続・所管 管理課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.7",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=7"
         },
@@ -10526,7 +10526,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+          "description": "臨時・継続・所管 管理課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.8",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=8"
         },
@@ -10559,7 +10559,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 人事課・うちレベルアップ分 50千円",
+          "description": "新規・所管 人事課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
         },
@@ -10570,7 +10570,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 地域振興課・うちレベルアップ分 35千円",
+          "description": "臨時・新規・所管 地域振興課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.8",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=8"
         },
@@ -10581,7 +10581,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 生涯学習スポーツ振興課・うちレベルアップ分 30千円",
+          "description": "臨時・新規・所管 生涯学習スポーツ振興課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
         },
@@ -10592,7 +10592,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 生涯学習スポーツ振興課・うちレベルアップ分 34千円",
+          "description": "新規・所管 生涯学習スポーツ振興課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
         },
@@ -10625,7 +10625,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 防災課・うちレベルアップ分 39千円",
+          "description": "臨時・継続・所管 防災課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
         },
@@ -10636,7 +10636,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 総務課・うちレベルアップ分 54千円",
+          "description": "臨時・新規・所管 総務課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
         },
@@ -10647,7 +10647,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+          "description": "臨時・継続・所管 管理課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.6",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=6"
         },
@@ -10658,7 +10658,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 管理課・うちレベルアップ分 23千円",
+          "description": "臨時・継続・所管 管理課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.7",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=7"
         },
@@ -10680,7 +10680,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 学務課・うちレベルアップ分 23千円",
+          "description": "臨時・継続・所管 学務課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.16",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=16"
         },
@@ -10702,7 +10702,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 企画課・うちレベルアップ分 54千円",
+          "description": "臨時・新規・所管 企画課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
         },
@@ -10724,7 +10724,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 教育指導担当・うちレベルアップ分 21千円",
+          "description": "新規・所管 教育指導担当",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.16",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=16"
         },
@@ -10757,7 +10757,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 生涯学習スポーツ振興課・うちレベルアップ分 35千円",
+          "description": "臨時・新規・所管 生涯学習スポーツ振興課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
         },
@@ -10779,7 +10779,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 区長室・うちレベルアップ分 50千円",
+          "description": "新規・所管 区長室",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
         },
@@ -10790,7 +10790,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 生涯学習スポーツ振興課・うちレベルアップ分 35千円",
+          "description": "新規・所管 生涯学習スポーツ振興課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
         },
@@ -10812,7 +10812,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 子ども家庭支援センター・うちレベルアップ分 16千円",
+          "description": "新規・所管 子ども家庭支援センター",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.11",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=11"
         },
@@ -10823,7 +10823,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 健康推進課・うちレベルアップ分 30千円",
+          "description": "臨時・新規・所管 健康推進課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.11",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=11"
         },
@@ -10845,7 +10845,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 福祉施設整備担当・うちレベルアップ分 30千円",
+          "description": "臨時・新規・所管 福祉施設整備担当",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.9",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=9"
         },
@@ -10856,7 +10856,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 高齢者支援課・うちレベルアップ分 29千円",
+          "description": "新規・所管 高齢者支援課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.9",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=9"
         },
@@ -10867,7 +10867,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+          "description": "臨時・継続・所管 管理課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.5",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=5"
         },
@@ -10878,7 +10878,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 管理課・うちレベルアップ分 23千円",
+          "description": "臨時・継続・所管 管理課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.6",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=6"
         },
@@ -10889,7 +10889,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 管理課・うちレベルアップ分 23千円",
+          "description": "臨時・継続・所管 管理課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.6",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=6"
         },
@@ -10900,7 +10900,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 管理課・うちレベルアップ分 23千円",
+          "description": "臨時・継続・所管 管理課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.8",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=8"
         },
@@ -10922,7 +10922,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 国際化・文化芸術担当・うちレベルアップ分 46千円",
+          "description": "新規・所管 国際化・文化芸術担当",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.8",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=8"
         },
@@ -10955,7 +10955,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 契約管財課・うちレベルアップ分 50千円",
+          "description": "新規・所管 契約管財課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
         },
@@ -10966,7 +10966,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 教育長室・うちレベルアップ分 22千円",
+          "description": "新規・所管 教育長室",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
         },
@@ -10977,7 +10977,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 産業振興課・うちレベルアップ分 48千円",
+          "description": "臨時・新規・所管 産業振興課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.8",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=8"
         },
@@ -10988,7 +10988,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 まちづくり課・うちレベルアップ分 50千円",
+          "description": "新規・所管 まちづくり課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.5",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=5"
         },
@@ -11021,7 +11021,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 福祉施設整備担当・うちレベルアップ分 30千円",
+          "description": "臨時・新規・所管 福祉施設整備担当",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.9",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=9"
         },
@@ -11037,13 +11037,13 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=12"
         },
         {
-          "name": "事業名芝地区道路・橋りょう工事業務管理システム",
+          "name": "芝地区道路・橋りょう工事業務管理システム",
           "amountOku": 0.00555,
           "kan": "土木費",
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 （款名）まちづくり課・うちレベルアップ分 50千円",
+          "description": "新規・所管 まちづくり課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.5",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=5"
         },
@@ -11076,7 +11076,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 契約管財課・うちレベルアップ分 50千円",
+          "description": "新規・所管 契約管財課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
         },
@@ -11087,7 +11087,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 教育長室・うちレベルアップ分 22千円",
+          "description": "臨時・新規・所管 教育長室",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
         },
@@ -11098,7 +11098,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 まちづくり課・うちレベルアップ分 50千円",
+          "description": "新規・所管 まちづくり課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.6",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=6"
         },
@@ -11109,7 +11109,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 まちづくり課・うちレベルアップ分 50千円",
+          "description": "新規・所管 まちづくり課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.7",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=7"
         },
@@ -11120,7 +11120,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "新規・所管 まちづくり課・うちレベルアップ分 50千円",
+          "description": "新規・所管 まちづくり課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.7",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=7"
         },
@@ -11131,7 +11131,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 教育人事企画課・うちレベルアップ分 24千円",
+          "description": "臨時・継続・所管 教育人事企画課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.17",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=17"
         },
@@ -11142,7 +11142,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": "新規",
           "prevAmountOku": null,
-          "description": "臨時・新規・所管 土木課・うちレベルアップ分 42千円",
+          "description": "臨時・新規・所管 土木課",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.12",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=12"
         },
@@ -11164,7 +11164,7 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = {
           "shisaku": "",
           "kubun": null,
           "prevAmountOku": null,
-          "description": "臨時・継続・所管 子ども家庭支援センター・うちレベルアップ分 18千円",
+          "description": "臨時・継続・所管 子ども家庭支援センター",
           "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.11",
           "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=11"
         }
@@ -195202,7 +195202,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 学務課・うちレベルアップ分 23千円",
+        "description": "臨時・継続・所管 学務課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.16",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=16"
       },
@@ -195279,7 +195279,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 障害者福祉課・うちレベルアップ分 32千円",
+        "description": "臨時・継続・所管 障害者福祉課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.9",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=9"
       },
@@ -195290,7 +195290,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 情報政策課・うちレベルアップ分 51千円",
+        "description": "臨時・継続・所管 情報政策課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
       },
@@ -195323,7 +195323,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 防災課・うちレベルアップ分 39千円",
+        "description": "臨時・新規・所管 防災課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
       },
@@ -195356,7 +195356,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 学務課・うちレベルアップ分 23千円",
+        "description": "臨時・継続・所管 学務課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.16",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=16"
       },
@@ -195367,7 +195367,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 産業振興課・うちレベルアップ分 48千円",
+        "description": "臨時・継続・所管 産業振興課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.8",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=8"
       },
@@ -195389,7 +195389,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 地域振興課・うちレベルアップ分 54千円",
+        "description": "臨時・継続・所管 地域振興課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.8",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=8"
       },
@@ -195411,7 +195411,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 契約管財課・うちレベルアップ分 52千円",
+        "description": "臨時・継続・所管 契約管財課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
       },
@@ -195455,7 +195455,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 国際化・文化芸術担当・うちレベルアップ分 46千円",
+        "description": "臨時・継続・所管 国際化・文化芸術担当",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.8",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=8"
       },
@@ -195587,7 +195587,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 デジタル改革担当・うちレベルアップ分 51千円",
+        "description": "臨時・継続・所管 デジタル改革担当",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
       },
@@ -195675,7 +195675,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 子ども若者支援課・うちレベルアップ分 16千円",
+        "description": "新規・所管 子ども若者支援課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.11",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=11"
       },
@@ -195730,7 +195730,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 福祉施設整備担当・うちレベルアップ分 32千円",
+        "description": "臨時・継続・所管 福祉施設整備担当",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.9",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=9"
       },
@@ -195785,7 +195785,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 高齢者支援課・うちレベルアップ分 30千円",
+        "description": "新規・所管 高齢者支援課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.9",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=9"
       },
@@ -195796,7 +195796,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 企画課・うちレベルアップ分 53千円",
+        "description": "臨時・新規・所管 企画課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
       },
@@ -195818,7 +195818,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 子ども若者支援課・うちレベルアップ分 17千円",
+        "description": "臨時・継続・所管 子ども若者支援課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.11",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=11"
       },
@@ -195829,7 +195829,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 まちづくり課・うちレベルアップ分 42千円",
+        "description": "臨時・継続・所管 まちづくり課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.5",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=5"
       },
@@ -195950,7 +195950,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 子ども若者支援課・うちレベルアップ分 27千円",
+        "description": "臨時・継続・所管 子ども若者支援課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.11",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=11"
       },
@@ -195972,7 +195972,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 保育課・うちレベルアップ分 23千円",
+        "description": "臨時・継続・所管 保育課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.11",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=11"
       },
@@ -196060,7 +196060,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 生涯学習スポーツ振興課・うちレベルアップ分 35千円",
+        "description": "臨時・新規・所管 生涯学習スポーツ振興課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
       },
@@ -196071,7 +196071,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 教育人事企画課・うちレベルアップ分 21千円",
+        "description": "新規・所管 教育人事企画課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.16",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=16"
       },
@@ -196082,7 +196082,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 保育課・うちレベルアップ分 16千円",
+        "description": "新規・所管 保育課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.11",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=11"
       },
@@ -196093,7 +196093,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 生涯学習スポーツ振興課・うちレベルアップ分 36千円",
+        "description": "臨時・継続・所管 生涯学習スポーツ振興課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
       },
@@ -196104,7 +196104,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 学務課・うちレベルアップ分 24千円",
+        "description": "臨時・継続・所管 学務課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.16",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=16"
       },
@@ -196159,7 +196159,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 企画課・うちレベルアップ分 51千円",
+        "description": "臨時・継続・所管 企画課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
       },
@@ -196181,7 +196181,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 選挙管理委員会事務局・うちレベルアップ分 50千円",
+        "description": "臨時・新規・所管 選挙管理委員会事務局",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.17",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=17"
       },
@@ -196214,7 +196214,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 高齢者支援課・うちレベルアップ分 29千円",
+        "description": "新規・所管 高齢者支援課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.9",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=9"
       },
@@ -196247,7 +196247,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 障害者福祉課・うちレベルアップ分 32千円",
+        "description": "臨時・新規・所管 障害者福祉課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.9",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=9"
       },
@@ -196346,7 +196346,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 人事課・うちレベルアップ分 51千円",
+        "description": "臨時・新規・所管 人事課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
       },
@@ -196522,7 +196522,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 環境課・うちレベルアップ分 44千円",
+        "description": "臨時・新規・所管 環境課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.13",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=13"
       },
@@ -196533,7 +196533,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 子ども家庭支援センター・うちレベルアップ分 17千円",
+        "description": "新規・所管 子ども家庭支援センター",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.11",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=11"
       },
@@ -196544,7 +196544,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 新技術活用担当・うちレベルアップ分 51千円",
+        "description": "臨時・継続・所管 新技術活用担当",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
       },
@@ -196577,7 +196577,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 まちづくり課・うちレベルアップ分 42千円",
+        "description": "臨時・新規・所管 まちづくり課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.8",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=8"
       },
@@ -196588,7 +196588,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 学務課・うちレベルアップ分 22千円",
+        "description": "臨時・新規・所管 学務課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.16",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=16"
       },
@@ -196599,7 +196599,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 地域交通課・うちレベルアップ分 42千円",
+        "description": "臨時・新規・所管 地域交通課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.12",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=12"
       },
@@ -196775,7 +196775,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 協働推進課・うちレベルアップ分 48千円",
+        "description": "新規・所管 協働推進課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.7",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=7"
       },
@@ -196852,7 +196852,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 高齢者支援課・うちレベルアップ分 29千円",
+        "description": "新規・所管 高齢者支援課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.9",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=9"
       },
@@ -196951,7 +196951,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 学務課・うちレベルアップ分 24千円",
+        "description": "臨時・継続・所管 学務課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.17",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=17"
       },
@@ -197006,7 +197006,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 新技術活用担当・うちレベルアップ分 51千円",
+        "description": "臨時・継続・所管 新技術活用担当",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
       },
@@ -197017,7 +197017,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 学務課・うちレベルアップ分 22千円",
+        "description": "臨時・新規・所管 学務課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.16",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=16"
       },
@@ -197061,7 +197061,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 防災課・うちレベルアップ分 39千円",
+        "description": "臨時・新規・所管 防災課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
       },
@@ -197094,7 +197094,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 保育課・うちレベルアップ分 18千円",
+        "description": "臨時・継続・所管 保育課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.11",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=11"
       },
@@ -197105,7 +197105,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 住宅課・うちレベルアップ分 42千円",
+        "description": "臨時・新規・所管 住宅課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.12",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=12"
       },
@@ -197138,7 +197138,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 子ども家庭支援センター・うちレベルアップ分 18千円",
+        "description": "臨時・継続・所管 子ども家庭支援センター",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.11",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=11"
       },
@@ -197182,7 +197182,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 教育人事企画課・うちレベルアップ分 22千円",
+        "description": "臨時・新規・所管 教育人事企画課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.16",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=16"
       },
@@ -197204,7 +197204,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 産業振興課・うちレベルアップ分 48千円",
+        "description": "新規・所管 産業振興課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.8",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=8"
       },
@@ -197226,7 +197226,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 産業振興課・うちレベルアップ分 48千円",
+        "description": "臨時・継続・所管 産業振興課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.9",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=9"
       },
@@ -197270,7 +197270,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 学務課・うちレベルアップ分 22千円",
+        "description": "臨時・新規・所管 学務課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.16",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=16"
       },
@@ -197281,7 +197281,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+        "description": "臨時・継続・所管 管理課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.6",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=6"
       },
@@ -197292,7 +197292,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 区長室・うちレベルアップ分 50千円",
+        "description": "臨時・新規・所管 区長室",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
       },
@@ -197303,7 +197303,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 学務課・うちレベルアップ分 18千円",
+        "description": "臨時・継続・所管 学務課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.16",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=16"
       },
@@ -197314,7 +197314,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 生活衛生課・うちレベルアップ分 34千円",
+        "description": "新規・所管 生活衛生課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.10",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=10"
       },
@@ -197325,7 +197325,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 福祉施設整備担当・うちレベルアップ分 30千円",
+        "description": "臨時・継続・所管 福祉施設整備担当",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.9",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=9"
       },
@@ -197336,7 +197336,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 協働推進課・うちレベルアップ分 53千円",
+        "description": "臨時・新規・所管 協働推進課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.7",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=7"
       },
@@ -197347,7 +197347,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 企画課・うちレベルアップ分 17千円",
+        "description": "臨時・新規・所管 企画課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
       },
@@ -197369,7 +197369,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 学務課・うちレベルアップ分 23千円",
+        "description": "臨時・継続・所管 学務課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.16",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=16"
       },
@@ -197424,7 +197424,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 防災課・うちレベルアップ分 39千円",
+        "description": "臨時・継続・所管 防災課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
       },
@@ -197457,7 +197457,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 住宅課・うちレベルアップ分 43千円",
+        "description": "臨時・継続・所管 住宅課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.12",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=12"
       },
@@ -197468,7 +197468,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 児童相談課・うちレベルアップ分 26千円",
+        "description": "新規・所管 児童相談課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.12",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=12"
       },
@@ -197501,7 +197501,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+        "description": "臨時・継続・所管 管理課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.8",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=8"
       },
@@ -197512,7 +197512,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 産業振興課・うちレベルアップ分 48千円",
+        "description": "臨時・新規・所管 産業振興課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.8",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=8"
       },
@@ -197556,7 +197556,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 学務課・うちレベルアップ分 23千円",
+        "description": "臨時・継続・所管 学務課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.16",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=16"
       },
@@ -197567,7 +197567,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 区長室・うちレベルアップ分 51千円",
+        "description": "臨時・新規・所管 区長室",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
       },
@@ -197578,7 +197578,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+        "description": "臨時・継続・所管 管理課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.7",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=7"
       },
@@ -197611,7 +197611,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 都市計画課・うちレベルアップ分 54千円",
+        "description": "臨時・新規・所管 都市計画課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.12",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=12"
       },
@@ -197622,7 +197622,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 介護保険課・うちレベルアップ分 30千円",
+        "description": "臨時・継続・所管 介護保険課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.9",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=9"
       },
@@ -197633,7 +197633,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 地球温暖化対策担当・うちレベルアップ分 44千円",
+        "description": "新規・所管 地球温暖化対策担当",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.13",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=13"
       },
@@ -197655,7 +197655,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 防災課・うちレベルアップ分 39千円",
+        "description": "臨時・継続・所管 防災課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
       },
@@ -197666,7 +197666,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 生涯学習スポーツ振興課・うちレベルアップ分 35千円",
+        "description": "臨時・継続・所管 生涯学習スポーツ振興課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
       },
@@ -197688,7 +197688,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 生涯学習スポーツ振興課・うちレベルアップ分 35千円",
+        "description": "臨時・新規・所管 生涯学習スポーツ振興課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
       },
@@ -197699,7 +197699,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+        "description": "臨時・継続・所管 管理課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.5",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=5"
       },
@@ -197710,7 +197710,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+        "description": "臨時・継続・所管 管理課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.6",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=6"
       },
@@ -197721,7 +197721,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+        "description": "臨時・継続・所管 管理課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.7",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=7"
       },
@@ -197732,7 +197732,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+        "description": "臨時・継続・所管 管理課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.8",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=8"
       },
@@ -197765,7 +197765,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 人事課・うちレベルアップ分 50千円",
+        "description": "新規・所管 人事課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
       },
@@ -197776,7 +197776,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 地域振興課・うちレベルアップ分 35千円",
+        "description": "臨時・新規・所管 地域振興課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.8",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=8"
       },
@@ -197787,7 +197787,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 生涯学習スポーツ振興課・うちレベルアップ分 30千円",
+        "description": "臨時・新規・所管 生涯学習スポーツ振興課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
       },
@@ -197798,7 +197798,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 生涯学習スポーツ振興課・うちレベルアップ分 34千円",
+        "description": "新規・所管 生涯学習スポーツ振興課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
       },
@@ -197831,7 +197831,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 防災課・うちレベルアップ分 39千円",
+        "description": "臨時・継続・所管 防災課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
       },
@@ -197842,7 +197842,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 総務課・うちレベルアップ分 54千円",
+        "description": "臨時・新規・所管 総務課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
       },
@@ -197853,7 +197853,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+        "description": "臨時・継続・所管 管理課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.6",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=6"
       },
@@ -197864,7 +197864,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 管理課・うちレベルアップ分 23千円",
+        "description": "臨時・継続・所管 管理課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.7",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=7"
       },
@@ -197886,7 +197886,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 学務課・うちレベルアップ分 23千円",
+        "description": "臨時・継続・所管 学務課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.16",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=16"
       },
@@ -197908,7 +197908,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 企画課・うちレベルアップ分 54千円",
+        "description": "臨時・新規・所管 企画課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
       },
@@ -197930,7 +197930,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 教育指導担当・うちレベルアップ分 21千円",
+        "description": "新規・所管 教育指導担当",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.16",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=16"
       },
@@ -197963,7 +197963,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 生涯学習スポーツ振興課・うちレベルアップ分 35千円",
+        "description": "臨時・新規・所管 生涯学習スポーツ振興課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
       },
@@ -197985,7 +197985,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 区長室・うちレベルアップ分 50千円",
+        "description": "新規・所管 区長室",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.14",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=14"
       },
@@ -197996,7 +197996,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 生涯学習スポーツ振興課・うちレベルアップ分 35千円",
+        "description": "新規・所管 生涯学習スポーツ振興課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
       },
@@ -198018,7 +198018,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 子ども家庭支援センター・うちレベルアップ分 16千円",
+        "description": "新規・所管 子ども家庭支援センター",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.11",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=11"
       },
@@ -198029,7 +198029,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 健康推進課・うちレベルアップ分 30千円",
+        "description": "臨時・新規・所管 健康推進課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.11",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=11"
       },
@@ -198051,7 +198051,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 福祉施設整備担当・うちレベルアップ分 30千円",
+        "description": "臨時・新規・所管 福祉施設整備担当",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.9",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=9"
       },
@@ -198062,7 +198062,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 高齢者支援課・うちレベルアップ分 29千円",
+        "description": "新規・所管 高齢者支援課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.9",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=9"
       },
@@ -198073,7 +198073,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+        "description": "臨時・継続・所管 管理課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.5",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=5"
       },
@@ -198084,7 +198084,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 管理課・うちレベルアップ分 23千円",
+        "description": "臨時・継続・所管 管理課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.6",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=6"
       },
@@ -198095,7 +198095,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 管理課・うちレベルアップ分 23千円",
+        "description": "臨時・継続・所管 管理課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.6",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=6"
       },
@@ -198106,7 +198106,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 管理課・うちレベルアップ分 23千円",
+        "description": "臨時・継続・所管 管理課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.8",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=8"
       },
@@ -198128,7 +198128,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 国際化・文化芸術担当・うちレベルアップ分 46千円",
+        "description": "新規・所管 国際化・文化芸術担当",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.8",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=8"
       },
@@ -198161,7 +198161,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 契約管財課・うちレベルアップ分 50千円",
+        "description": "新規・所管 契約管財課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
       },
@@ -198172,7 +198172,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 教育長室・うちレベルアップ分 22千円",
+        "description": "新規・所管 教育長室",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
       },
@@ -198183,7 +198183,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 産業振興課・うちレベルアップ分 48千円",
+        "description": "臨時・新規・所管 産業振興課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.8",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=8"
       },
@@ -198194,7 +198194,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 まちづくり課・うちレベルアップ分 50千円",
+        "description": "新規・所管 まちづくり課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.5",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=5"
       },
@@ -198227,7 +198227,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 福祉施設整備担当・うちレベルアップ分 30千円",
+        "description": "臨時・新規・所管 福祉施設整備担当",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.9",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=9"
       },
@@ -198243,13 +198243,13 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=12"
       },
       {
-        "name": "事業名芝地区道路・橋りょう工事業務管理システム",
+        "name": "芝地区道路・橋りょう工事業務管理システム",
         "amountOku": 0.00555,
         "kan": "土木費",
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 （款名）まちづくり課・うちレベルアップ分 50千円",
+        "description": "新規・所管 まちづくり課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.5",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=5"
       },
@@ -198282,7 +198282,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 契約管財課・うちレベルアップ分 50千円",
+        "description": "新規・所管 契約管財課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
       },
@@ -198293,7 +198293,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 教育長室・うちレベルアップ分 22千円",
+        "description": "臨時・新規・所管 教育長室",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.15",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=15"
       },
@@ -198304,7 +198304,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 まちづくり課・うちレベルアップ分 50千円",
+        "description": "新規・所管 まちづくり課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.6",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=6"
       },
@@ -198315,7 +198315,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 まちづくり課・うちレベルアップ分 50千円",
+        "description": "新規・所管 まちづくり課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.7",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=7"
       },
@@ -198326,7 +198326,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "新規・所管 まちづくり課・うちレベルアップ分 50千円",
+        "description": "新規・所管 まちづくり課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.7",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=7"
       },
@@ -198337,7 +198337,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 教育人事企画課・うちレベルアップ分 24千円",
+        "description": "臨時・継続・所管 教育人事企画課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.17",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=17"
       },
@@ -198348,7 +198348,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": "新規",
         "prevAmountOku": null,
-        "description": "臨時・新規・所管 土木課・うちレベルアップ分 42千円",
+        "description": "臨時・新規・所管 土木課",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.12",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=12"
       },
@@ -198370,7 +198370,7 @@ export const MUNI_BUDGETS: Record<string, MuniBudget> = {
         "shisaku": "",
         "kubun": null,
         "prevAmountOku": null,
-        "description": "臨時・継続・所管 子ども家庭支援センター・うちレベルアップ分 18千円",
+        "description": "臨時・継続・所管 子ども家庭支援センター",
         "refLabel": "令和8年度 港区予算概要（歳入予算内訳表・目的別歳出予算内訳表・所管部署別新規・臨時・レベルアップ事業一覧） p.11",
         "refLocalUrl": "/sources/minato-yosangaiyou-r8/20260202131436.pdf#page=11"
       }

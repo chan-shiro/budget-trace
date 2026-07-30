@@ -3,7 +3,7 @@
   "sourceId": "minato-yosangaiyou-r8",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-07-30T16:08:42.203Z",
+  "parsedAt": "2026-07-30T16:32:13.670Z",
   "unit": "thousandYen",
   "fiscalYear": "R8",
   "account": "一般会計",
@@ -349,10 +349,10 @@
       "kan": "土木費",
       "no": null,
       "kubun": "新規",
-      "name": "事業名芝地区道路・橋りょう工事業務管理システム",
+      "name": "芝地区道路・橋りょう工事業務管理システム",
       "budgetBookName": null,
       "amount": 555,
-      "description": "新規・所管 （款名）まちづくり課・うちレベルアップ分 50千円",
+      "description": "新規・所管 まちづくり課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -367,7 +367,7 @@
       "name": "芝地区すくわくプログラム推進事業（区立保育園分）",
       "budgetBookName": null,
       "amount": 4501,
-      "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+      "description": "臨時・継続・所管 管理課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -382,7 +382,7 @@
       "name": "芝地区すくわくプログラム推進事業（港区保育室分）",
       "budgetBookName": null,
       "amount": 1500,
-      "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+      "description": "臨時・継続・所管 管理課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -397,7 +397,7 @@
       "name": "芝地区公衆便所建替",
       "budgetBookName": null,
       "amount": 149128,
-      "description": "臨時・継続・所管 まちづくり課・うちレベルアップ分 42千円",
+      "description": "臨時・継続・所管 まちづくり課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -607,7 +607,7 @@
       "name": "麻布地区道路・橋りょう工事業務管理システム",
       "budgetBookName": null,
       "amount": 693,
-      "description": "新規・所管 まちづくり課・うちレベルアップ分 50千円",
+      "description": "新規・所管 まちづくり課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -682,7 +682,7 @@
       "name": "麻布地区すくわくプログラム推進事業（区立保育園分）",
       "budgetBookName": null,
       "amount": 10500,
-      "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+      "description": "臨時・継続・所管 管理課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -697,7 +697,7 @@
       "name": "麻布地区すくわくプログラム推進事業（みなと保育サポート分）",
       "budgetBookName": null,
       "amount": 1500,
-      "description": "臨時・継続・所管 管理課・うちレベルアップ分 23千円",
+      "description": "臨時・継続・所管 管理課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -832,7 +832,7 @@
       "name": "赤坂地区道路・橋りょう工事業務管理システム",
       "budgetBookName": null,
       "amount": 416,
-      "description": "新規・所管 まちづくり課・うちレベルアップ分 50千円",
+      "description": "新規・所管 まちづくり課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -877,7 +877,7 @@
       "name": "赤坂地区すくわくプログラム推進事業（区立保育園分）",
       "budgetBookName": null,
       "amount": 4500,
-      "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+      "description": "臨時・継続・所管 管理課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -892,7 +892,7 @@
       "name": "赤坂地区すくわくプログラム推進事業（港区保育室分）",
       "budgetBookName": null,
       "amount": 3000,
-      "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+      "description": "臨時・継続・所管 管理課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -907,7 +907,7 @@
       "name": "赤坂地区すくわくプログラム推進事業（みなと保育サポート分）",
       "budgetBookName": null,
       "amount": 1500,
-      "description": "臨時・継続・所管 管理課・うちレベルアップ分 23千円",
+      "description": "臨時・継続・所管 管理課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1027,7 +1027,7 @@
       "name": "高輪地区道路・橋りょう工事業務管理システム",
       "budgetBookName": null,
       "amount": 416,
-      "description": "新規・所管 まちづくり課・うちレベルアップ分 50千円",
+      "description": "新規・所管 まちづくり課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1087,7 +1087,7 @@
       "name": "高輪地区すくわくプログラム推進事業（区立保育園分）",
       "budgetBookName": null,
       "amount": 6000,
-      "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+      "description": "臨時・継続・所管 管理課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1102,7 +1102,7 @@
       "name": "高輪地区すくわくプログラム推進事業（港区保育室分）",
       "budgetBookName": null,
       "amount": 4500,
-      "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+      "description": "臨時・継続・所管 管理課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1117,7 +1117,7 @@
       "name": "高輪地区すくわくプログラム推進事業（みなと保育サポート分）",
       "budgetBookName": null,
       "amount": 3000,
-      "description": "臨時・継続・所管 管理課・うちレベルアップ分 23千円",
+      "description": "臨時・継続・所管 管理課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1252,7 +1252,7 @@
       "name": "水辺を向いたまちづくり機運醸成事業",
       "budgetBookName": null,
       "amount": 23600,
-      "description": "新規・所管 協働推進課・うちレベルアップ分 48千円",
+      "description": "新規・所管 協働推進課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1267,7 +1267,7 @@
       "name": "芝浦港南地区道路・橋りょう工事業務管理システム",
       "budgetBookName": null,
       "amount": 416,
-      "description": "新規・所管 まちづくり課・うちレベルアップ分 50千円",
+      "description": "新規・所管 まちづくり課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1282,7 +1282,7 @@
       "name": "お台場30周年記念事業",
       "budgetBookName": null,
       "amount": 9996,
-      "description": "臨時・新規・所管 協働推進課・うちレベルアップ分 53千円",
+      "description": "臨時・新規・所管 協働推進課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1312,7 +1312,7 @@
       "name": "芝浦港南地区水辺空間の整備",
       "budgetBookName": null,
       "amount": 33287,
-      "description": "臨時・新規・所管 まちづくり課・うちレベルアップ分 42千円",
+      "description": "臨時・新規・所管 まちづくり課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1327,7 +1327,7 @@
       "name": "芝浦港南地区すくわくプログラム推進事業（区立保育園分）",
       "budgetBookName": null,
       "amount": 7500,
-      "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+      "description": "臨時・継続・所管 管理課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1342,7 +1342,7 @@
       "name": "芝浦港南地区すくわくプログラム推進事業（港区保育室分）",
       "budgetBookName": null,
       "amount": 4500,
-      "description": "臨時・継続・所管 管理課・うちレベルアップ分 22千円",
+      "description": "臨時・継続・所管 管理課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1357,7 +1357,7 @@
       "name": "芝浦港南地区すくわくプログラム推進事業（みなと保育サポート分）",
       "budgetBookName": null,
       "amount": 1500,
-      "description": "臨時・継続・所管 管理課・うちレベルアップ分 23千円",
+      "description": "臨時・継続・所管 管理課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1477,7 +1477,7 @@
       "name": "全国大会等出場祝金（文化芸術）",
       "budgetBookName": null,
       "amount": 1380,
-      "description": "新規・所管 国際化・文化芸術担当・うちレベルアップ分 46千円",
+      "description": "新規・所管 国際化・文化芸術担当",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1492,7 +1492,7 @@
       "name": "観光統計・マーケティング分析",
       "budgetBookName": null,
       "amount": 11245,
-      "description": "新規・所管 産業振興課・うちレベルアップ分 48千円",
+      "description": "新規・所管 産業振興課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1522,7 +1522,7 @@
       "name": "区民葬儀",
       "budgetBookName": null,
       "amount": 4320,
-      "description": "臨時・新規・所管 地域振興課・うちレベルアップ分 35千円",
+      "description": "臨時・新規・所管 地域振興課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1537,7 +1537,7 @@
       "name": "港区版ご当地ナンバープレート導入調査",
       "budgetBookName": null,
       "amount": 7200,
-      "description": "臨時・新規・所管 産業振興課・うちレベルアップ分 48千円",
+      "description": "臨時・新規・所管 産業振興課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1552,7 +1552,7 @@
       "name": "ＭＩＣＥ誘致に向けたＤＭＯ連携支援",
       "budgetBookName": null,
       "amount": 792,
-      "description": "臨時・新規・所管 産業振興課・うちレベルアップ分 48千円",
+      "description": "臨時・新規・所管 産業振興課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1567,7 +1567,7 @@
       "name": "東京湾大華火祭",
       "budgetBookName": null,
       "amount": 631174,
-      "description": "臨時・継続・所管 地域振興課・うちレベルアップ分 54千円",
+      "description": "臨時・継続・所管 地域振興課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1582,7 +1582,7 @@
       "name": "みなと芸術センター整備",
       "budgetBookName": null,
       "amount": 515420,
-      "description": "臨時・継続・所管 国際化・文化芸術担当・うちレベルアップ分 46千円",
+      "description": "臨時・継続・所管 国際化・文化芸術担当",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1612,7 +1612,7 @@
       "name": "みなトクＰＡＹ運営支援",
       "budgetBookName": null,
       "amount": 776577,
-      "description": "臨時・継続・所管 産業振興課・うちレベルアップ分 48千円",
+      "description": "臨時・継続・所管 産業振興課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1627,7 +1627,7 @@
       "name": "デザインマンホール蓋の製作・活用事業",
       "budgetBookName": null,
       "amount": 11062,
-      "description": "臨時・継続・所管 産業振興課・うちレベルアップ分 48千円",
+      "description": "臨時・継続・所管 産業振興課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1747,7 +1747,7 @@
       "name": "シルバーパス購入費助成事業",
       "budgetBookName": null,
       "amount": 61582,
-      "description": "新規・所管 高齢者支援課・うちレベルアップ分 29千円",
+      "description": "新規・所管 高齢者支援課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1762,7 +1762,7 @@
       "name": "認知症普及啓発事業",
       "budgetBookName": null,
       "amount": 1646,
-      "description": "新規・所管 高齢者支援課・うちレベルアップ分 29千円",
+      "description": "新規・所管 高齢者支援課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1777,7 +1777,7 @@
       "name": "高齢者福祉避難所運営事業",
       "budgetBookName": null,
       "amount": 21864,
-      "description": "新規・所管 高齢者支援課・うちレベルアップ分 29千円",
+      "description": "新規・所管 高齢者支援課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1792,7 +1792,7 @@
       "name": "高齢者熱中症対策見守り推進事業",
       "budgetBookName": null,
       "amount": 170428,
-      "description": "新規・所管 高齢者支援課・うちレベルアップ分 30千円",
+      "description": "新規・所管 高齢者支援課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1807,7 +1807,7 @@
       "name": "東麻布二丁目複合施設（小規模多機能型居宅介護施設）開設準備",
       "budgetBookName": null,
       "amount": 653,
-      "description": "臨時・新規・所管 福祉施設整備担当・うちレベルアップ分 30千円",
+      "description": "臨時・新規・所管 福祉施設整備担当",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1822,7 +1822,7 @@
       "name": "南麻布三丁目福祉施設整備",
       "budgetBookName": null,
       "amount": 1753,
-      "description": "臨時・新規・所管 福祉施設整備担当・うちレベルアップ分 30千円",
+      "description": "臨時・新規・所管 福祉施設整備担当",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1837,7 +1837,7 @@
       "name": "障害福祉サービス等事業所職員居住支援事業",
       "budgetBookName": null,
       "amount": 58080,
-      "description": "臨時・新規・所管 障害者福祉課・うちレベルアップ分 32千円",
+      "description": "臨時・新規・所管 障害者福祉課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1882,7 +1882,7 @@
       "name": "赤羽幼稚園等（小規模多機能型居宅介護施設）開設準備",
       "budgetBookName": null,
       "amount": 10088,
-      "description": "臨時・継続・所管 福祉施設整備担当・うちレベルアップ分 30千円",
+      "description": "臨時・継続・所管 福祉施設整備担当",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1897,7 +1897,7 @@
       "name": "（仮称）障害者グループホーム南麻布等整備",
       "budgetBookName": null,
       "amount": 190004,
-      "description": "臨時・継続・所管 福祉施設整備担当・うちレベルアップ分 32千円",
+      "description": "臨時・継続・所管 福祉施設整備担当",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1942,7 +1942,7 @@
       "name": "ケアプランデータ連携システム導入支援事業",
       "budgetBookName": null,
       "amount": 5455,
-      "description": "臨時・継続・所管 介護保険課・うちレベルアップ分 30千円",
+      "description": "臨時・継続・所管 介護保険課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -1972,7 +1972,7 @@
       "name": "障害保健福祉センター分館整備",
       "budgetBookName": null,
       "amount": 1237166,
-      "description": "臨時・継続・所管 障害者福祉課・うちレベルアップ分 32千円",
+      "description": "臨時・継続・所管 障害者福祉課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -2302,7 +2302,7 @@
       "name": "高層住宅へのＡＥＤ設置助成",
       "budgetBookName": null,
       "amount": 10182,
-      "description": "新規・所管 生活衛生課・うちレベルアップ分 34千円",
+      "description": "新規・所管 生活衛生課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -2332,7 +2332,7 @@
       "name": "みなトクＰＡＹを活用した健康増進事業",
       "budgetBookName": null,
       "amount": 1921,
-      "description": "臨時・新規・所管 健康推進課・うちレベルアップ分 30千円",
+      "description": "臨時・新規・所管 健康推進課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -2482,7 +2482,7 @@
       "name": "民設認証学童クラブ補助",
       "budgetBookName": null,
       "amount": 212414,
-      "description": "新規・所管 子ども若者支援課・うちレベルアップ分 16千円",
+      "description": "新規・所管 子ども若者支援課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -2497,7 +2497,7 @@
       "name": "港区乳児等通園支援給付（私立認可保育所等分）",
       "budgetBookName": null,
       "amount": 84882,
-      "description": "新規・所管 保育課・うちレベルアップ分 16千円",
+      "description": "新規・所管 保育課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -2512,7 +2512,7 @@
       "name": "親子関係形成支援事業",
       "budgetBookName": null,
       "amount": 1984,
-      "description": "新規・所管 子ども家庭支援センター・うちレベルアップ分 16千円",
+      "description": "新規・所管 子ども家庭支援センター",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -2527,7 +2527,7 @@
       "name": "子育て家庭家事支援事業",
       "budgetBookName": null,
       "amount": 36136,
-      "description": "新規・所管 子ども家庭支援センター・うちレベルアップ分 17千円",
+      "description": "新規・所管 子ども家庭支援センター",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -2557,7 +2557,7 @@
       "name": "高校生世代等のひとりで過ごせる居場所づくり",
       "budgetBookName": null,
       "amount": 117807,
-      "description": "臨時・継続・所管 子ども若者支援課・うちレベルアップ分 27千円",
+      "description": "臨時・継続・所管 子ども若者支援課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -2587,7 +2587,7 @@
       "name": "ひとり親フード等サポート事業",
       "budgetBookName": null,
       "amount": 156379,
-      "description": "臨時・継続・所管 子ども若者支援課・うちレベルアップ分 17千円",
+      "description": "臨時・継続・所管 子ども若者支援課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -2602,7 +2602,7 @@
       "name": "すくわくプログラム推進事業（私立認可保育所等分）",
       "budgetBookName": null,
       "amount": 111000,
-      "description": "臨時・継続・所管 保育課・うちレベルアップ分 23千円",
+      "description": "臨時・継続・所管 保育課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -2617,7 +2617,7 @@
       "name": "私立認可保育所等物価高騰対策支援事業",
       "budgetBookName": null,
       "amount": 12990,
-      "description": "臨時・継続・所管 保育課・うちレベルアップ分 18千円",
+      "description": "臨時・継続・所管 保育課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -2632,7 +2632,7 @@
       "name": "オレンジリボン・児童虐待防止推進",
       "budgetBookName": null,
       "amount": 11856,
-      "description": "臨時・継続・所管 子ども家庭支援センター・うちレベルアップ分 18千円",
+      "description": "臨時・継続・所管 子ども家庭支援センター",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -2647,7 +2647,7 @@
       "name": "子育て支援施設物価高騰対策支援事業",
       "budgetBookName": null,
       "amount": 85,
-      "description": "臨時・継続・所管 子ども家庭支援センター・うちレベルアップ分 18千円",
+      "description": "臨時・継続・所管 子ども家庭支援センター",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -2782,7 +2782,7 @@
       "name": "社会的養護児童自立支援事業",
       "budgetBookName": null,
       "amount": 8360,
-      "description": "新規・所管 児童相談課・うちレベルアップ分 26千円",
+      "description": "新規・所管 児童相談課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -2812,7 +2812,7 @@
       "name": "都市計画から見たまちづくりの歩み",
       "budgetBookName": null,
       "amount": 5500,
-      "description": "臨時・新規・所管 都市計画課・うちレベルアップ分 54千円",
+      "description": "臨時・新規・所管 都市計画課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -2827,7 +2827,7 @@
       "name": "区民向け住宅の活用検討",
       "budgetBookName": null,
       "amount": 12980,
-      "description": "臨時・新規・所管 住宅課・うちレベルアップ分 42千円",
+      "description": "臨時・新規・所管 住宅課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -2857,7 +2857,7 @@
       "name": "樹木管理システム導入",
       "budgetBookName": null,
       "amount": 123,
-      "description": "臨時・新規・所管 土木課・うちレベルアップ分 42千円",
+      "description": "臨時・新規・所管 土木課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -2962,7 +2962,7 @@
       "name": "機械式自転車駐車場の改修",
       "budgetBookName": null,
       "amount": 33000,
-      "description": "臨時・新規・所管 地域交通課・うちレベルアップ分 42千円",
+      "description": "臨時・新規・所管 地域交通課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3022,7 +3022,7 @@
       "name": "マンション実態調査",
       "budgetBookName": null,
       "amount": 8389,
-      "description": "臨時・継続・所管 住宅課・うちレベルアップ分 43千円",
+      "description": "臨時・継続・所管 住宅課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3277,7 +3277,7 @@
       "name": "森林由来のカーボンクレジットの活用促進",
       "budgetBookName": null,
       "amount": 5295,
-      "description": "新規・所管 地球温暖化対策担当・うちレベルアップ分 44千円",
+      "description": "新規・所管 地球温暖化対策担当",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3292,7 +3292,7 @@
       "name": "港区みどりの実態調査",
       "budgetBookName": null,
       "amount": 36928,
-      "description": "臨時・新規・所管 環境課・うちレベルアップ分 44千円",
+      "description": "臨時・新規・所管 環境課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3427,7 +3427,7 @@
       "name": "区民アンケート",
       "budgetBookName": null,
       "amount": 2087,
-      "description": "新規・所管 区長室・うちレベルアップ分 50千円",
+      "description": "新規・所管 区長室",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3442,7 +3442,7 @@
       "name": "少子化対策推進事業",
       "budgetBookName": null,
       "amount": 9935,
-      "description": "臨時・新規・所管 企画課・うちレベルアップ分 17千円",
+      "description": "臨時・新規・所管 企画課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3457,7 +3457,7 @@
       "name": "港区政80周年記念事業",
       "budgetBookName": null,
       "amount": 166978,
-      "description": "臨時・新規・所管 企画課・うちレベルアップ分 53千円",
+      "description": "臨時・新規・所管 企画課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3472,7 +3472,7 @@
       "name": "連携自治体体験学習講座",
       "budgetBookName": null,
       "amount": 2888,
-      "description": "臨時・新規・所管 企画課・うちレベルアップ分 54千円",
+      "description": "臨時・新規・所管 企画課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3487,7 +3487,7 @@
       "name": "区政情報取得に関する動向調査",
       "budgetBookName": null,
       "amount": 10356,
-      "description": "臨時・新規・所管 区長室・うちレベルアップ分 50千円",
+      "description": "臨時・新規・所管 区長室",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3502,7 +3502,7 @@
       "name": "港区イノベーションラボ",
       "budgetBookName": null,
       "amount": 6054,
-      "description": "臨時・新規・所管 区長室・うちレベルアップ分 51千円",
+      "description": "臨時・新規・所管 区長室",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3517,7 +3517,7 @@
       "name": "ＭＩＮＡＴＯビジョン策定",
       "budgetBookName": null,
       "amount": 67320,
-      "description": "臨時・継続・所管 企画課・うちレベルアップ分 51千円",
+      "description": "臨時・継続・所管 企画課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3532,7 +3532,7 @@
       "name": "公衆無線ＬＡＮの整備",
       "budgetBookName": null,
       "amount": 334039,
-      "description": "臨時・継続・所管 デジタル改革担当・うちレベルアップ分 51千円",
+      "description": "臨時・継続・所管 デジタル改革担当",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3562,7 +3562,7 @@
       "name": "新技術の活用に向けた体制の充実",
       "budgetBookName": null,
       "amount": 33980,
-      "description": "臨時・継続・所管 新技術活用担当・うちレベルアップ分 51千円",
+      "description": "臨時・継続・所管 新技術活用担当",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3577,7 +3577,7 @@
       "name": "みなと新技術チャレンジ提案制度",
       "budgetBookName": null,
       "amount": 15000,
-      "description": "臨時・継続・所管 新技術活用担当・うちレベルアップ分 51千円",
+      "description": "臨時・継続・所管 新技術活用担当",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3592,7 +3592,7 @@
       "name": "行政情報システム標準化対応",
       "budgetBookName": null,
       "amount": 1190697,
-      "description": "臨時・継続・所管 情報政策課・うちレベルアップ分 51千円",
+      "description": "臨時・継続・所管 情報政策課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3682,7 +3682,7 @@
       "name": "同報系無線更新",
       "budgetBookName": null,
       "amount": 13710,
-      "description": "臨時・新規・所管 防災課・うちレベルアップ分 39千円",
+      "description": "臨時・新規・所管 防災課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3697,7 +3697,7 @@
       "name": "港区防災用品支給事業",
       "budgetBookName": null,
       "amount": 978998,
-      "description": "臨時・新規・所管 防災課・うちレベルアップ分 39千円",
+      "description": "臨時・新規・所管 防災課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3712,7 +3712,7 @@
       "name": "港区業務継続計画（震災・風水害編）改定",
       "budgetBookName": null,
       "amount": 9064,
-      "description": "臨時・継続・所管 防災課・うちレベルアップ分 39千円",
+      "description": "臨時・継続・所管 防災課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3727,7 +3727,7 @@
       "name": "移動系無線更新",
       "budgetBookName": null,
       "amount": 5170,
-      "description": "臨時・継続・所管 防災課・うちレベルアップ分 39千円",
+      "description": "臨時・継続・所管 防災課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3742,7 +3742,7 @@
       "name": "区民避難所におけるペットの受入れ体制整備",
       "budgetBookName": null,
       "amount": 3400,
-      "description": "臨時・継続・所管 防災課・うちレベルアップ分 39千円",
+      "description": "臨時・継続・所管 防災課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3787,7 +3787,7 @@
       "name": "区職員人材確保・活躍推進事業",
       "budgetBookName": null,
       "amount": 4388,
-      "description": "新規・所管 人事課・うちレベルアップ分 50千円",
+      "description": "新規・所管 人事課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3802,7 +3802,7 @@
       "name": "労働報酬等審議会運営",
       "budgetBookName": null,
       "amount": 1188,
-      "description": "新規・所管 契約管財課・うちレベルアップ分 50千円",
+      "description": "新規・所管 契約管財課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3817,7 +3817,7 @@
       "name": "入札・契約制度適正化推進",
       "budgetBookName": null,
       "amount": 466,
-      "description": "新規・所管 契約管財課・うちレベルアップ分 50千円",
+      "description": "新規・所管 契約管財課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3832,7 +3832,7 @@
       "name": "港区名誉区民選定",
       "budgetBookName": null,
       "amount": 3048,
-      "description": "臨時・新規・所管 総務課・うちレベルアップ分 54千円",
+      "description": "臨時・新規・所管 総務課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3862,7 +3862,7 @@
       "name": "タレントマネジメントシステム導入",
       "budgetBookName": null,
       "amount": 46006,
-      "description": "臨時・新規・所管 人事課・うちレベルアップ分 51千円",
+      "description": "臨時・新規・所管 人事課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3877,7 +3877,7 @@
       "name": "（仮称）分庁舎維持管理",
       "budgetBookName": null,
       "amount": 594447,
-      "description": "臨時・継続・所管 契約管財課・うちレベルアップ分 52千円",
+      "description": "臨時・継続・所管 契約管財課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3922,7 +3922,7 @@
       "name": "外国人学校保護者補助金",
       "budgetBookName": null,
       "amount": 840,
-      "description": "新規・所管 教育長室・うちレベルアップ分 22千円",
+      "description": "新規・所管 教育長室",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3937,7 +3937,7 @@
       "name": "麻雀を活用した多世代交流事業",
       "budgetBookName": null,
       "amount": 3983,
-      "description": "新規・所管 生涯学習スポーツ振興課・うちレベルアップ分 34千円",
+      "description": "新規・所管 生涯学習スポーツ振興課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3952,7 +3952,7 @@
       "name": "全国大会等出場祝金（スポーツ）",
       "budgetBookName": null,
       "amount": 2080,
-      "description": "新規・所管 生涯学習スポーツ振興課・うちレベルアップ分 35千円",
+      "description": "新規・所管 生涯学習スポーツ振興課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3967,7 +3967,7 @@
       "name": "インターナショナルスクール施策の検討",
       "budgetBookName": null,
       "amount": 440,
-      "description": "臨時・新規・所管 教育長室・うちレベルアップ分 22千円",
+      "description": "臨時・新規・所管 教育長室",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3982,7 +3982,7 @@
       "name": "全国健康福祉祭開催準備",
       "budgetBookName": null,
       "amount": 4134,
-      "description": "臨時・新規・所管 生涯学習スポーツ振興課・うちレベルアップ分 30千円",
+      "description": "臨時・新規・所管 生涯学習スポーツ振興課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -3997,7 +3997,7 @@
       "name": "東京開催ラクロス世界選手権大会気運醸成事業",
       "budgetBookName": null,
       "amount": 4511,
-      "description": "臨時・新規・所管 生涯学習スポーツ振興課・うちレベルアップ分 35千円",
+      "description": "臨時・新規・所管 生涯学習スポーツ振興課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -4012,7 +4012,7 @@
       "name": "民間スポーツ施設を活用したスポーツの場の提供",
       "budgetBookName": null,
       "amount": 2255,
-      "description": "臨時・新規・所管 生涯学習スポーツ振興課・うちレベルアップ分 35千円",
+      "description": "臨時・新規・所管 生涯学習スポーツ振興課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -4042,7 +4042,7 @@
       "name": "北青山三丁目地区スポーツ施設整備",
       "budgetBookName": null,
       "amount": 86978,
-      "description": "臨時・新規・所管 生涯学習スポーツ振興課・うちレベルアップ分 35千円",
+      "description": "臨時・新規・所管 生涯学習スポーツ振興課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -4087,7 +4087,7 @@
       "name": "スポーツ活動支援補助金",
       "budgetBookName": null,
       "amount": 5000,
-      "description": "臨時・継続・所管 生涯学習スポーツ振興課・うちレベルアップ分 35千円",
+      "description": "臨時・継続・所管 生涯学習スポーツ振興課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -4102,7 +4102,7 @@
       "name": "元麻布三丁目複合施設整備",
       "budgetBookName": null,
       "amount": 78018,
-      "description": "臨時・継続・所管 生涯学習スポーツ振興課・うちレベルアップ分 36千円",
+      "description": "臨時・継続・所管 生涯学習スポーツ振興課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -4237,7 +4237,7 @@
       "name": "児童の朝の居場所づくり事業",
       "budgetBookName": null,
       "amount": 86378,
-      "description": "新規・所管 教育人事企画課・うちレベルアップ分 21千円",
+      "description": "新規・所管 教育人事企画課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -4252,7 +4252,7 @@
       "name": "ＭＩＮＡＴＯボルダリングスクール",
       "budgetBookName": null,
       "amount": 2660,
-      "description": "新規・所管 教育指導担当・うちレベルアップ分 21千円",
+      "description": "新規・所管 教育指導担当",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -4267,7 +4267,7 @@
       "name": "赤羽小学校グラウンド・プール開設準備",
       "budgetBookName": null,
       "amount": 10604,
-      "description": "臨時・新規・所管 学務課・うちレベルアップ分 22千円",
+      "description": "臨時・新規・所管 学務課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -4282,7 +4282,7 @@
       "name": "東町小学校改築",
       "budgetBookName": null,
       "amount": 33058,
-      "description": "臨時・新規・所管 学務課・うちレベルアップ分 22千円",
+      "description": "臨時・新規・所管 学務課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -4297,7 +4297,7 @@
       "name": "赤羽幼稚園新園舎開設準備",
       "budgetBookName": null,
       "amount": 14699,
-      "description": "臨時・新規・所管 学務課・うちレベルアップ分 22千円",
+      "description": "臨時・新規・所管 学務課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -4312,7 +4312,7 @@
       "name": "ｅスポーツ部活動の推進",
       "budgetBookName": null,
       "amount": 11321,
-      "description": "臨時・新規・所管 教育人事企画課・うちレベルアップ分 22千円",
+      "description": "臨時・新規・所管 教育人事企画課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -4327,7 +4327,7 @@
       "name": "学校提案事業",
       "budgetBookName": null,
       "amount": 9707,
-      "description": "臨時・継続・所管 学務課・うちレベルアップ分 23千円",
+      "description": "臨時・継続・所管 学務課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -4342,7 +4342,7 @@
       "name": "小学校普通教室化改修",
       "budgetBookName": null,
       "amount": 2971,
-      "description": "臨時・継続・所管 学務課・うちレベルアップ分 23千円",
+      "description": "臨時・継続・所管 学務課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -4357,7 +4357,7 @@
       "name": "御田小学校仮校舎移転交通費補助",
       "budgetBookName": null,
       "amount": 6164,
-      "description": "臨時・継続・所管 学務課・うちレベルアップ分 23千円",
+      "description": "臨時・継続・所管 学務課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -4372,7 +4372,7 @@
       "name": "赤羽小学校等改築",
       "budgetBookName": null,
       "amount": 2437387,
-      "description": "臨時・継続・所管 学務課・うちレベルアップ分 23千円",
+      "description": "臨時・継続・所管 学務課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -4402,7 +4402,7 @@
       "name": "御田小学校改築",
       "budgetBookName": null,
       "amount": 778191,
-      "description": "臨時・継続・所管 学務課・うちレベルアップ分 23千円",
+      "description": "臨時・継続・所管 学務課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -4462,7 +4462,7 @@
       "name": "中学校普通教室化改修",
       "budgetBookName": null,
       "amount": 76313,
-      "description": "臨時・継続・所管 学務課・うちレベルアップ分 24千円",
+      "description": "臨時・継続・所管 学務課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -4492,7 +4492,7 @@
       "name": "区立幼稚園性被害防止対策",
       "budgetBookName": null,
       "amount": 10275,
-      "description": "臨時・継続・所管 学務課・うちレベルアップ分 18千円",
+      "description": "臨時・継続・所管 学務課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -4507,7 +4507,7 @@
       "name": "すくわくプログラム推進事業（区立幼稚園分）",
       "budgetBookName": null,
       "amount": 16500,
-      "description": "臨時・継続・所管 学務課・うちレベルアップ分 24千円",
+      "description": "臨時・継続・所管 学務課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -4537,7 +4537,7 @@
       "name": "中高一貫校検討委員会",
       "budgetBookName": null,
       "amount": 210,
-      "description": "臨時・継続・所管 教育人事企画課・うちレベルアップ分 24千円",
+      "description": "臨時・継続・所管 教育人事企画課",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
@@ -4732,7 +4732,7 @@
       "name": "投票所のオンライン化による共通投票所設置に向けた調査",
       "budgetBookName": null,
       "amount": 63142,
-      "description": "臨時・新規・所管 選挙管理委員会事務局・うちレベルアップ分 50千円",
+      "description": "臨時・新規・所管 選挙管理委員会事務局",
       "basicGoal": "",
       "shisaku": "",
       "locator": {
