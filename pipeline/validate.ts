@@ -206,8 +206,10 @@ function validateBudgetBook(d: BudgetBookDoc): void {
     let prevNo = 0;
     for (const p of d.projects) {
       const tag = p.no != null ? `事業 No.${p.no}「${p.name}」` : `事業「${p.name}」`;
-      // No・款は表形式（R6〜）のみ。箇条書き形式（R2・R3）は null なので対象外
-      if (p.no != null) {
+      // No・款は表形式（R6〜）のみ。箇条書き形式（R2・R3）は null なので対象外。
+      // ⚠ **`projectNoResetsPerKo` を宣言した資料は資料通しの連番ではない**（北区・項ごとに 1..M）。
+      //   その2件だけ外す。パーサ側が項ごとの 1..M をより厳しく検査しているので網は弱くならない。
+      if (p.no != null && !d.projectNoResetsPerKo) {
         if (seenNo.has(p.no)) issues.push({ level: "error", message: `${tag}: No が重複` });
         seenNo.add(p.no);
         if (p.no !== prevNo + 1) {
