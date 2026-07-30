@@ -600,6 +600,22 @@ export const projectReportDocSchema = z.object({
   fiscalYear: z.string(),
   /** 対象（実績）年度 */
   targetFy: z.string(),
+  /**
+   * **原典が事業ごとの金額を印字しない資料**（2026-07-30・京都府 §12）。
+   *
+   * true のとき validate は「コスト経年が空」を error にしない。
+   * ⚠ **パーサが原典を見て宣言する**もので、既定は false（宣言しない限りゲートは効いたまま）。
+   * これを立てるのは「原典に無い金額を推計で埋めない」ことの裏返しであって、
+   * **抽出に失敗したことの言い訳に使ってはいけない**。
+   *
+   * 京都府「主要な施策の成果に関する報告書」は**金額が目レベルにしか無く**、施策ごとの額は
+   * 本文の `３ 執行額 …円` を持つ施策（417件中399件）にしか存在しない。
+   * **1つの目に複数の施策がぶら下がるので、目の金額を施策へ配ると二重計上になる**。
+   *
+   * ⚠ **列ずれの検出（`cost` があるのに全年度 null）は宣言の有無に関わらず効く** —
+   * ゲートの本来の目的はそちらなので、この宣言で緩むのは「そもそも cost が無い」場合だけ。
+   */
+  noPerProjectCost: z.boolean().optional(),
   facts: z.array(projectReportFactSchema),
 });
 export type ProjectReportDoc = z.infer<typeof projectReportDocSchema>;

@@ -1,0 +1,12 @@
+{
+  "sourceId": "kyotofu-seika-houkoku-r6",
+  "files": [
+    {
+      "filename": "01sesaku_1.pdf",
+      "sha256": "8ed6f7ec0a97a125b7e586eba86497270d9631e042e06f4ec77b6e4bddef2ae1",
+      "bytes": 4256499,
+      "fetchedAt": "2026-07-30T09:27:44.298Z",
+      "fetchedFrom": "https://www.pref.kyoto.jp/kessan/documents/01sesaku_1.pdf"
+    }
+  ]
+}

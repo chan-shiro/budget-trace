@@ -1946,13 +1946,27 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
         has: repData.has,
         // **その資料が持つ項目だけを並べる**（川崎の文面を横浜に使い回すと嘘になる）
         holds: [
-          "事業費",
+          // ⚠ **「事業費」を決め打ちしない** — 原典が事業ごとの金額を持たない資料がある
+          // （京都府は金額が款・項・目の単位で、施策ごとの決算額は執行額を書いた施策だけ）。
+          // 決め打ちだと「事業ごとに事業費が載っています」が嘘になる（川崎の文面を横浜へ
+          // 使い回しかけた §derive の has 参照と同じ型の事故）。
+          ...(repData.has.jigyohiAll
+            ? ["事業費"]
+            : repData.has.jigyohiSome
+              ? ["事業費（原典が記載している事業のみ）"]
+              : []),
           ...(repData.has.jinkenhi ? ["人件費"] : []),
           ...(repData.has.totalCost ? ["総コスト（人件費込み）"] : []),
           ...(repData.has.achievement ? ["達成度"] : []),
           ...(repData.has.progress ? ["進捗評価"] : []),
           ...(repData.has.direction ? ["今後の方向性"] : []),
-          ...(repData.has.kanKoumoku ? ["歳出予算科目（款・項・目）"] : []),
+          // ⚠ 京都府は**款だけ**（項・目は原典にあるが取りこぼしが避けられず落とした）。
+          //   「款・項・目」と決め打ちすると嘘になるので、資料が持つ深さで振り替える。
+          ...(repData.has.kanKoumokuFull
+            ? ["歳出予算科目（款・項・目）"]
+            : repData.has.kanKoumoku
+              ? ["歳出予算科目（款）"]
+              : []),
         ].join("・"),
         total: repData.reports.length,
         hits: rows.length,

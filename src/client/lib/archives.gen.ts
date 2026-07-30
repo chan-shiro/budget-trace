@@ -387,6 +387,8 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.city.kyoto.lg.jp/gyozai/page/0000335933.html": "https://web.archive.org/web/20260305120016/https://www.city.kyoto.lg.jp/gyozai/page/0000335933.html",
   "https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000347/347934/01_ippantousyo.pdf": "https://web.archive.org/web/20260715161041/https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000347/347934/01_ippantousyo.pdf",
   "https://www.city.kyoto.lg.jp/gyozai/page/0000347934.html": "https://web.archive.org/web/20260210234236/https://www.city.kyoto.lg.jp/gyozai/page/0000347934.html",
+  "https://www.pref.kyoto.jp/kessan/documents/01sesaku_1.pdf": "https://web.archive.org/web/20251002115126/https://www.pref.kyoto.jp/kessan/documents/01sesaku_1.pdf",
+  "https://www.pref.kyoto.jp/kessan/r6kessan.html": "https://web.archive.org/web/20260730111646/https://www.pref.kyoto.jp/kessan/r6kessan.html",
   "https://www.pref.kyoto.jp/yosan/08tousho.html": "https://web.archive.org/web/20260412093649/https://www.pref.kyoto.jp/yosan/08tousho.html",
   "https://www.pref.kyoto.jp/yosan/documents/r8_p1_sainyu.pdf": "https://web.archive.org/web/20260411084014/https://www.pref.kyoto.jp/yosan/documents/r8_p1_sainyu.pdf",
   "https://www.pref.kyoto.jp/yosan/documents/r8_p5_mokuteki.pdf": "https://web.archive.org/web/20260411074459/https://www.pref.kyoto.jp/yosan/documents/r8_p5_mokuteki.pdf",
