@@ -127,7 +127,18 @@ onKeyDown={(e) => {
 
 # デプロイ
 
-**Vercel（構築済み）**。チーム `philosophyhouse` のプロジェクト `budget-trace`。GitHub 連携済みで、`main` への push で本番へ自動デプロイされる（PR は Preview デプロイ）。本番 URL: https://budget-trace-tawny.vercel.app 。ビルド設定はデフォルトの Next.js プリセット + bun（`bun.lock` 自動検出）。環境変数は現状不要。CLI 操作は `bunx vercel`（`.vercel/` と `.env*` は gitignore）。
+**Vercel（構築済み）**。チーム `philosophyhouse` のプロジェクト `budget-trace`。GitHub 連携済みで、`main` への push で本番へ自動デプロイされる（PR は Preview デプロイ）。本番 URL: **https://budget-trace.phh.jp**（独自ドメイン・2026-07-30〜。`budget-trace-tawny.vercel.app` も生きているが canonical はこちらへ向けている）。ビルド設定はデフォルトの Next.js プリセット + bun（`bun.lock` 自動検出）。環境変数は現状不要。CLI 操作は `bunx vercel`（`.vercel/` と `.env*` は gitignore）。
+
+## 公開用の設定（ドメイン・OGP・計測）
+
+**ドメインは `src/client/lib/site.ts` の1か所に持つ**。OGP・canonical・robots・sitemap がすべてこれを基準にするので、別々に直書きしない。
+
+- **OGP** — `layout.tsx` が既定、`[[...slug]]/page.tsx` の `generateMetadata` が画面ごとの `title`・`canonical`・`og:url` を上書きする。⚠ **Next は `openGraph` / `twitter` をフィールド単位でなくオブジェクトごと子で置き換える**ので、**画像は両方で明示する**（片方だけだと `og:image` が黙って消える。実際に踏んだ）
+- **canonical は `stateToPath` で正規化してから入れる** — 旧・日本語パス（`/山梨県/甲府市`）で来ても `/yamanashi/kofu` を正典として指す。クエリ（`?fy=` 等）は画面内の状態なので載せない
+- **OG 画像 `public/og.png`** は静的にコミットしてある。**数字を焼き込まない**（収録が進むと古くなる）。再生成が要るときは `src/app/og-gen/route.tsx` を一時的に作って `next/og` の `ImageResponse` で焼き、`curl localhost:PORT/og-gen -o public/og.png` した後に**ルートを削除する** — 本番に Google Fonts への実行時フェッチを持ち込まないため（手順は docs/handoff.md）
+- **GTM**（`GTM-MQRPKN33`・コンテナは `*.phh.jp` を対象）は `layout.tsx` に直書き（依存を増やさない）。**`process.env.VERCEL_ENV === "production"` のときだけ読み込む** — Preview デプロイや dev で読むと公開前の試行が計測に混ざる
+- **`robots.ts` は `/sources/` を除外している** — エビデンスの原本コピーを配信しているディレクトリで、**発行元の資料が発行元より上位に出かねない**ため。配信用の大きな JSON（`/decision/` `/reports/` `coverage.json`）も同様
+- **`sitemap.ts` は URL を必ず `stateToPath` に作らせる**（手で組むとスラグの手当てと二重管理になり、サイトマップだけが 404 を指す）。収録が増えれば黙って追随する
 
 ## `main` へ直接 push しない（non-negotiable）
 

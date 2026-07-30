@@ -521,6 +521,52 @@ derive し直して差分が新規ファイルだけであることを確認す�
 ⚠ **自治体スコープの `/yamanashi/kofu/sources` は従来どおり**（ダッシュボード末尾の出典
 リンクから来る経路）。ユーザー判断は「直接来たときはトップに戻るだけでよい」（2026-07-29）。
 
+### 2-11. 独自ドメインへ移行し、公開用の設定を入れた（2026-07-30）
+
+**`https://budget-trace.phh.jp`** へ移行した（`budget-trace-tawny.vercel.app` も生きているが
+**canonical はこちらへ向けている**ので、検索エンジンには1本化して見える）。
+**ドメインは `src/client/lib/site.ts` の1か所**に持たせた — OGP・canonical・robots・sitemap が
+すべてこれを基準にするので、別々に直書きすると必ずどれかが古いまま残る（このリポジトリが
+繰り返し踏んでいる手書きの二重管理と同じ型）。
+
+**入れたもの**:
+
+| | 中身 |
+| --- | --- |
+| OGP / Twitter Card | `layout.tsx` が既定、`generateMetadata` が画面ごとの `title`・`canonical`・`og:url` を上書き |
+| OG 画像 | `public/og.png`（1200×630・54KB）。**数字を焼き込んでいない** |
+| canonical | `stateToPath` で正規化してから入れる。旧・日本語パスで来ても正典は1本 |
+| robots | 全体は許可。**`/sources/` `/decision/` `/reports/` `/mapdata/` `/vendor/` `coverage.json` を除外** |
+| sitemap | **1,831 URL**（全体4＋都道府県47＋収録済み95＋決算のみ1,685） |
+| GTM | `GTM-MQRPKN33`（コンテナは `*.phh.jp` 対象）。`layout.tsx` に直書き＝依存を増やさない |
+
+⚠ **踏んだ罠**: **Next は `openGraph` / `twitter` をフィールド単位でなくオブジェクトごと
+子で置き換える**。`generateMetadata` 側で `openGraph` を指定した瞬間、layout に書いた
+`images` が丸ごと落ちて **`og:image` が消えた**（curl で実測して気づいた）。
+→ **画像は layout とページの両方で明示する**（`OG_IMAGE` を共有して書く）。
+
+⚠ **GTM は `process.env.VERCEL_ENV === "production"` でだけ読む**。Preview デプロイ
+（`*.vercel.app`）や dev で読むと、**公開前の試行がそのまま計測に混ざる**。ローカルでは
+`VERCEL_ENV` が undefined なので自動的に無効（実測: ローカルの HTML に `GTM-` は0件）。
+
+⚠ **`robots.ts` が `/sources/` を除外している理由**は crawl budget ではない。あそこは
+**エビデンスの原本コピー**（発行元の PDF・HTML・Excel）を配信しているディレクトリで、
+**発行元の資料が発行元より上位に検索結果へ出かねない**。エビデンス3層の③は「消えたときの
+保険」であって発行元の代替ではない、という方針（data-strategy.md）と揃えている。
+
+**OG 画像の再生成手順**（数字を入れないので普段は不要。文言やデザインを変えるときだけ）:
+1. `src/app/og-gen/route.tsx` を作る（`next/og` の `ImageResponse`。Google Fonts の
+   `text=` パラメータで**サブセット**を取る — 日本語フォントを丸ごと入れると数MBになる）
+2. `bun run dev` して `curl -s localhost:PORT/og-gen -o public/og.png`
+3. **ルートを削除する** — 本番に Google Fonts への実行時フェッチを持ち込まないため。
+   commit するのは PNG だけ
+4. 改行はサイトの h1 と同じ位置で**明示的に割る**（自動折返しに任せると「執行ま／で。」と
+   語中で割れる。実際に1回焼き直した）
+
+**未対応（判断が要る）**: **プライバシーポリシーのページが無い**。GTM を入れた以上、
+市民向けの公開サイトとしては「何を計測しているか」を書いた1ページがあったほうがよい。
+フッターに `/sources` `/coverage` `/roadmap` と並べる場所はある。
+
 ## 2b. 以前の状態（2026-07-15 時点）
 
 > **以下は当時の記録**。現在地は §2 を見ること。この節の「政令市5市」「budget 18エンティティ」
@@ -771,7 +817,7 @@ derive し直して差分が新規ファイルだけであることを確認す�
   資料を追加・更新したら必ず追記する運用）
 - サーバー層（`src/server/` ほか）は**スケルトンのみ**。Hono/Inversify/CASL/Postgres は未導入
 - **デプロイ構築済み**: Vercel チーム `philosophyhouse` / プロジェクト `budget-trace`。
-  GitHub 連携で main push → 本番自動デプロイ。本番 https://budget-trace-tawny.vercel.app
+  GitHub 連携で main push → 本番自動デプロイ。本番 https://budget-trace.phh.jp
 
 ## 3. 主要な決定事項（経緯つき）
 

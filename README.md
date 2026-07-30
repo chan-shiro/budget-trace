@@ -3,7 +3,7 @@
 税金のゆくえを、執行まで。地方公共団体の予算（歳入・歳出）から執行率・事業報告までを
 一次資料（エビデンス）付きでたどれる可視化サイトです。
 
-**本番: https://budget-trace-tawny.vercel.app**
+**本番: https://budget-trace.phh.jp**
 
 掲載数値は**すべて一次資料由来の実データ**です（ダミー・推計値は置かない — 2026-07-12 に全廃）。
 一次資料が無い機能は「未収録」と表示し、資料を収録してから追加します。
@@ -13,7 +13,7 @@
 （`project/予算トレース.dc.html`）を **Next.js + React + TypeScript** で本実装した
 ものです。デザインの元データは `project/` に残しています（会話ログは git 履歴にのみ残る）。
 
-## 収録データ（2026-07-18 時点・最新は [/coverage](https://budget-trace-tawny.vercel.app/coverage)）
+## 収録データ（2026-07-18 時点・最新は [/coverage](https://budget-trace.phh.jp/coverage)）
 
 3つの階層で、どの自治体を選んでも何かしら見られる構成です:
 
@@ -44,9 +44,9 @@
   選んでから相手を選ぶ方式。全1,741市町村から検索
 - **full 専用（甲府）** — 政策テーマ別ビュー・予算執行状況（R1〜R7）・事務事業評価・
   事業報告・議会の構成と議決
-- **データ出典 [/sources](https://budget-trace-tawny.vercel.app/sources)・
-  整備状況 [/coverage](https://budget-trace-tawny.vercel.app/coverage)・
-  進捗と計画 [/roadmap](https://budget-trace-tawny.vercel.app/roadmap)** —
+- **データ出典 [/sources](https://budget-trace.phh.jp/sources)・
+  整備状況 [/coverage](https://budget-trace.phh.jp/coverage)・
+  進捗と計画 [/roadmap](https://budget-trace.phh.jp/roadmap)** —
   何を・どこから・どんな利用条件で収録しているかの全件開示と、プロジェクトの現在地
   （進捗の数字は実データから自動算出）
 - 表示単位トグル（総額 ⇄ 1人あたり）、実 URL でのディープリンク・共有、
@@ -110,6 +110,6 @@ bun run typecheck  # 型チェック
 ## 注意
 
 本サイトはプロトタイプです。掲載数値はすべて一次資料由来の実データですが、
-機能・画面は開発中で、収録範囲は自治体・年度により異なります（[/coverage](https://budget-trace-tawny.vercel.app/coverage) が正）。
+機能・画面は開発中で、収録範囲は自治体・年度により異なります（[/coverage](https://budget-trace.phh.jp/coverage) が正）。
 一次資料の利用条件は発行元ごとに異なり、区分（再利用可／要許可／未確認）を
 /coverage で開示しています。
