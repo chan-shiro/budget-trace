@@ -22,6 +22,7 @@ import { parseSapporoJigyouHyouka } from "./sapporo-jigyou-hyouka";
 import { parseSetagayaMierukaCsv, parseSetagayaToushoXls } from "./setagaya-kanbetsu";
 import { parseSaitamaJigyouHoukoku } from "./saitama-jigyou-houkoku";
 import { parseKitakyushuJigyouHyoka } from "./kitakyushu-jigyou-hyoka";
+import { parseKyotofuSeikaHoukoku } from "./kyotofu-seika-houkoku";
 
 /** 1ソースの raw ファイル群をまとめて受け取り、マージ済みの facts を返す */
 type ParserFn = (files: { path: string; filename: string }[], source: SourceEntry) => AnyParsedDoc;
@@ -50,6 +51,8 @@ const PARSERS: Record<string, ParserFn> = {
   "kofu-jigyou-houkoku": parseKofuJigyouHoukoku, // 事業報告（成果）＝事務事業評価 詳細票
   "saitama-jigyou-houkoku": parseSaitamaJigyouHoukoku, // 行政報告書（事業報告＝成果・676事業・款項目に款名まで内包）
   "kitakyushu-jigyou-hyoka": parseKitakyushuJigyouHyoka, // 行政評価の取組結果（事業評価・198事業・KPI＋4段階評価・款は無し）
+  // 京都府 主要な施策の成果に関する報告書（事業報告＝成果・**款で章立て**・款項目つき。docs §12）
+  "kyotofu-seika-houkoku": parseKyotofuSeikaHoukoku,
 };
 
 export function getParser(key: string): ParserFn {
