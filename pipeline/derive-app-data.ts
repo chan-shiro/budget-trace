@@ -1094,11 +1094,11 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
       srcId: "kitakyushu-jigyou-hyoka-r6", muniCode: "401005", muniName: "北九州市", docLabel: "行政評価の取組結果（事業評価）",
       evalNote: "この資料は達成度の数値の代わりに「順調」「概ね順調」「やや遅れ」「遅れ」の4段階で自己評価し、KPI（成果指標）の目標・実績もあわせて持ちます。",
     },
-    // 京都府（#161・2026-07-30）。主要な施策の成果に関する報告書 R6・396施策。**都道府県で初の事業報告**。
+    // 京都府（#161・2026-07-30）。主要な施策の成果に関する報告書 R6・418施策。**都道府県で初の事業報告**。
     // **款で章立てされた資料**で、`measure` が `N款款名` なので**款名を報告書自身が内包する**
     // （⚠ **項・目は出していない** — 取りこぼしが避けられないため。§12）
     // （さいたまと同じ経路・kanFromSrc 不要）。docs §12。
-    // ⚠ **原典が施策ごとの金額を印字しない**（金額は目レベル。執行額を持つのは418件中406件）。
+    // ⚠ **原典が施策ごとの金額を印字しない**（金額は目レベル。執行額を持つのは418件中399件）。
     //   目の額を施策へ配ると二重計上になるので埋めていない（parsed の `noPerProjectCost` 宣言）。
     //   → **画面には「決算額を持たない事業」が並ぶ**ので、evalNote でその旨を必ず伝える。
     {
@@ -1153,8 +1153,11 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
         kanName: (() => {
           // 款名が measure 自身に内包される資料（さいたま。`2款総務費/1項…`）はそこから直接取る
           // → kanFromSrc（外部の予算解決）が無くても款ドリルへ紐付けられる
-          // ⚠ 款だけの `10款教育費` も受ける（京都府 §12。項・目は未収録でも款ドリルへ紐付く）
-          const embedded = /^(\d+)款([^/]+?)(?:\/|$)/.exec(f.measure ?? "");
+          // ⚠ 款だけの `10款教育費` も受ける（京都府 §12。項・目は未収録でも款ドリルへ紐付く）。
+          // ⚠⚠ **横浜の `02款01項01目`（スラッシュ無し・番号だけ）を款名と誤読しないこと** —
+          //   末尾 `$` を許した初版は `01項01目` を款名として捕獲し、**横浜2,313件の款ドリルを
+          //   全滅させた**（レビューで発覚）。→ **款名は数字で始まらない**という制約を置く。
+          const embedded = /^(\d+)款([^0-9/][^/]*?)(?:\/|$)/.exec(f.measure ?? "");
           if (embedded) return embedded[2]!.trim();
           const m = /^(\d+)款/.exec(f.measure ?? "");
           return m ? kanNames[String(Number(m[1]))] ?? null : null;
@@ -1213,7 +1216,8 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
          * あるが取りこぼしが避けられず落とした。§12）。画面の文面はこの2つで振り替える。
          */
         kanKoumoku: reports.some((x) => /\d+款/.test(x.measure ?? "")),
-        kanKoumokuFull: reports.some((x) => /\d+款[^/]*\/\d+項/.test(x.measure ?? "")),
+        // ⚠ 横浜は `02款01項01目`（スラッシュ無し）なので**両方の書式**を受ける
+        kanKoumokuFull: reports.some((x) => /\d+款[^/]*\/\d+項|\d+款\d+項/.test(x.measure ?? "")),
         estimate: reports.some((x) => x.cost.some((c) => (c as { est?: number }).est === 1)),
       },
       fy: doc.fiscalYear,

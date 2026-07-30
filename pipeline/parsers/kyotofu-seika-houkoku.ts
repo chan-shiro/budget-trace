@@ -98,17 +98,41 @@ function lines(words: Word[]): { y: number; xMin: number; text: string; words: W
   });
 }
 
-/** 成果欄の本文から `３ 執行額 …円` を拾う（円単位。無ければ null） */
+/**
+ * 成果欄の本文から `３ 執行額 …円` を拾う（円単位。無ければ null）。
+ *
+ * ⚠⚠ **改行を跨いで数字を拾ってはいけない**（2026-07-30・レビュー指摘）。`円` を必須にしない
+ *   正規表現で改行を跨いだ結果、**表の見出し・箇所数・国道番号・頁番号を金額として収録**していた
+ *   （`地域密着型社会資本整備事業` に「道路事業 **167箇所**」の 167 が入り、画面に「167円」と出た。
+ *   ほかに国道163/175/307/477号・頁番号 ―255―・相談件数 1,939件）。
+ *   → **同じ行なら `円` は任意／行を跨ぐなら `円` を必須**にする。
+ * ⚠ **表の中にしか執行額が無い施策は拾わない**（`execMissedAllowed` で件数を宣言して開示する）。
+ *   1行目の金額だけを施策の決算額にすると、路線別・箇所別の表を持つ施策で**過少の値**になる。
+ */
 function pickExecution(body: string): number | null {
-  // ⚠ ラベルと金額の間に注記（`（補助金）` 等）や改行が挟まる施策がある。
-  //   間隔を 12 文字に絞っていたときは 19 件を取りこぼした（自己検証の assert が捕まえた）。
-  // ⚠ **`円` を必須にしない** — `執行額（積立金）278,913,177` のように単位を伴わない施策がある
-  //   （実測149件が「直後に N円 が無い」型）。⚠ 3桁以上を要求して、注記中の小さな数を拾わない。
-  const m = /執\s*行\s*額[^0-9]{0,60}?([0-9][0-9,]{2,})/.exec(body);
+  for (const line of body.split("\n")) {
+    // ⚠ `額` は任意 — テキスト層で `額` が落ちる施策がある（`3執行613,346,200円`・実測5件で
+    //   計10億円超）。同じ行に限れば誤爆しない。
+    const m = /執\s*行\s*額?[^0-9]{0,60}?([0-9][0-9,]{2,})/.exec(line);
+    if (m) {
+      const v = Number(m[1]!.replace(/,/g, ""));
+      if (Number.isFinite(v)) return v;
+    }
+  }
+  const m = /執\s*行\s*額[^0-9]{0,60}?([0-9][0-9,]{2,})\s*円/.exec(body);
   if (!m) return null;
   const v = Number(m[1]!.replace(/,/g, ""));
   return Number.isFinite(v) ? v : null;
 }
+
+/**
+ * 取りこぼしの検出は**抽出より緩いパターン**で行う（レビュー指摘）。
+ * 抽出と同じ `執行額` で検出すると、テキスト層で `額` が離れた施策
+ * （`3執行613,346,200円` の型・実測5件で計10億円超）が**抽出も検出も両方すり抜ける**。
+ * **網は自分の失敗を検出できなければ意味がない**。
+ */
+const hasExecutionMarker = (body: string): boolean =>
+  /執\s*行/.test(body) && /[0-9][0-9,]{4,}/.test(body);
 
 /**
  * 成果欄の本文から成果指標を拾う（①表形式・②行内形式の両方）。
@@ -225,7 +249,11 @@ export function parseKyotofuSeikaHoukoku(
     let pendingBody: { text: string; words: Word[] }[] = [];
 
     const flush = () => {
+      // ⚠ **読む前にクリアしない**（2026-07-30・レビュー指摘で発覚）。name だけ退避して
+      //   bukaBuf を先に空にしていたため、**418件全件の所管課が空**になっていた
+      //   （川崎572件が空だった §2-4 の再演。Σ が立たない表示専用フィールドの型）。
       const name = nameBuf.join("").trim();
+      const buka = bukaBuf.join("").replace(/[（()）]/g, "").trim();
       nameBuf = [];
       bukaBuf = [];
       inBuka = false;
@@ -235,11 +263,16 @@ export function parseKyotofuSeikaHoukoku(
       startPage = null;
       if (!name || page == null || !kan) return;
       const bodyText = body.map((l) => l.text).join("\n");
-      const exec = pickExecution(bodyText);
+      // ⚠⚠ **本文だけが破損した頁がある**（p.177・p.261・p.303・p.304。名前欄は健全なので
+      //   `isCorruptPage` の名前欄判定では捕まらない）。反転して重なった文字から
+      //   **`2,616円` のようなゴミ金額**が生まれ、破損文字列がそのまま画面の実施状況に出ていた。
+      //   → **本文が破損していたら金額も指標も本文も出さない**（施策自体は名前と款が正しいので残す）。
+      const bodyCorrupt = /額行執|策施要主|業事等備整宅住営|茨|芋|倹|検{3,}/.test(bodyText);
+      const exec = bodyCorrupt ? null : pickExecution(bodyText);
       // ⚠ **本文に執行額があるのに拾えなかったら取りこぼし**（ページ跨ぎで本文が切れていた型）。
       //   マーカーの総数と突き合わせる代わりに**施策単位で照合する**（`３ 執行額` の行頭番号を
       //   数に含めてしまうなど、総数の突合はノイズが多い）。
-      if (exec == null && /執\s*行\s*額/.test(bodyText) && /[0-9]/.test(bodyText)) {
+      if (exec == null && !bodyCorrupt && hasExecutionMarker(bodyText)) {
         execMissed++;
         if (process.env.KYOTOFU_DEBUG) {
           const at = bodyText.search(/執\s*行\s*額/);
@@ -249,9 +282,9 @@ export function parseKyotofuSeikaHoukoku(
       facts.push({
         no: String(facts.length + 1),
         name,
-        buka: bukaBuf.join("").replace(/[（()）]/g, "").trim(),
+        buka,
         kubun: null,
-        implementation: bodyText || null,
+        implementation: bodyCorrupt ? null : bodyText || null,
         grade: null,
         score: null,
         // ⚠⚠ **款だけを出す**（項・目も原典にはあるが、科目欄が空のページが続く版面のため
@@ -264,7 +297,7 @@ export function parseKyotofuSeikaHoukoku(
           exec == null
             ? []
             : [{ fy: targetFy, kind: "決算", jigyohi: exec, jinkenhi: null, totalCost: null, ippanZaigen: null }],
-        indicators: pickIndicators(body),
+        indicators: bodyCorrupt ? [] : pickIndicators(body),
         locator: { file: file.filename, page },
       });
     };
