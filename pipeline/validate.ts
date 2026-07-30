@@ -397,9 +397,18 @@ if (doc.docType === "project-report") {
   for (const f of doc.facts) {
     if (seenNo.has(f.no)) issues.push({ level: "error", message: `詳細票 No.${f.no} が重複` });
     seenNo.add(f.no);
-    if (!f.cost.length) issues.push({ level: "error", message: `${f.name}: コスト経年が空` });
-    // 事業費がどの年度も取れていない＝列ずれの疑い
-    if (f.cost.every((c) => c.jigyohi == null)) {
+    // ⚠ **`noPerProjectCost` を宣言した資料だけ「コスト空」を許す**（2026-07-30・京都府 §12）。
+    //   原典が事業ごとの金額を印字しない資料が実在する（京都府は金額が目レベルにしかなく、
+    //   1つの目に複数の施策がぶら下がるので**目の額を施策へ配ると二重計上**になる）。
+    //   宣言は parsed 側（パーサが原典を見て立てる）にあり、既定ではゲートは効いたまま。
+    if (!f.cost.length && !doc.noPerProjectCost) {
+      issues.push({ level: "error", message: `${f.name}: コスト経年が空` });
+    }
+    // 事業費がどの年度も取れていない＝列ずれの疑い。
+    // ⚠ **`cost` が空の場合は対象外**（`[].every()` は true なので、素で書くと「空」と
+    //   「列ずれ」の2件が必ず同時に出る＝ゲートの意味が薄れる）。列ずれの検出はここが本体なので、
+    //   **`noPerProjectCost` を宣言した資料でも、cost を持つ事業には効かせる**。
+    if (f.cost.length > 0 && f.cost.every((c) => c.jigyohi == null)) {
       issues.push({ level: "error", message: `${f.name}: 事業費が全年度 null（列ずれの可能性）` });
     }
     // 実績値のある成果/活動指標が1つも無い＝目標達成状況の取りこぼし

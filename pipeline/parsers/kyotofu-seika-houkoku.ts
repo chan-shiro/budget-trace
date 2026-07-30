@@ -3,8 +3,13 @@
 // 地方自治法233条5項の成果説明書。R6・325p・born-digital（テキスト層あり）。docs §12。
 // **款で章立てされた唯一の資料**（第2款 総務費 〜 第11款 災害復旧費 の10款）で、
 // 1つの表の中に 科目（項・目）／予算現額・決算額／主要な施策・所管課／実施状況と成果 が並ぶ。
-// → `measure` を `N款款名/N項項名/N目目名` の形にすると derive が款名を取り出して
-//    **款ドリルへ直接紐付ける**（さいたま §8f と同じ経路。derive-app-data.ts の `kanName`）。
+// → `measure` に `N款款名` を入れると derive が款名を取り出して**款ドリルへ直接紐付ける**
+//    （さいたま §8f と同じ経路。derive-app-data.ts の `kanName`）。
+//
+// ⚠⚠ **項・目は出していない**（原典にはある）。理由は下の measure のコメントに書いたとおりで、
+//    **科目欄が空のページが続く版面**のため持ち越すしかなく、取りこぼしが1つあると以降の施策に
+//    誤った項・目が付く（実測で教育費の 4項高等学校費・5項特別支援学校費 が落ちた）。
+//    **款は章見出しから取るので取りこぼしが起きない** — 款ドリルの紐付けは款だけで足りる。
 //
 // ⚠⚠ **座標で読む**（`-layout` では列が混ざる）。x 帯は実測値:
 //   科目 〜140 / 予算現額・決算額 140〜285 / 主要な施策・所管課 285〜400 / 実施状況と成果 400〜
@@ -186,12 +191,26 @@ export function parseKyotofuSeikaHoukoku(
       if (!kan) continue; // 款の章が始まる前（総括表など）は対象外
 
       // --- 科目欄（x<140）の項・目。y つきで拾い、施策の y と突き合わせる ---
+      // ⚠ **項名・目名は折り返す**（`1目特別支援学` ＋ `校費`）。番号で始まらない後続行は
+      //   直前の科目名の続きなので結合する。**結合しないと名前が切れたまま次ページへ持ち越され、
+      //   関係のない施策にまで誤った項・目が付く**（実測: 教育費の事業に `3項中学校費/1目特別支援学`）。
       const kamokuEvents: { y: number; kou?: string; moku?: string }[] = [];
+      let lastEvent: { y: number; kou?: string; moku?: string } | null = null;
       for (const l of lines(ws.filter((w) => w.x < 140 && w.y > 90))) {
         const m = /^(\d+)([^\d\s（(].*)$/.exec(l.text);
-        if (!m) continue;
-        if (l.xMin < 62) kamokuEvents.push({ y: l.y, kou: `${m[1]}項${m[2]}` });
-        else if (l.xMin < 100) kamokuEvents.push({ y: l.y, moku: `${m[1]}目${m[2]}` });
+        if (m) {
+          if (l.xMin < 62) lastEvent = { y: l.y, kou: `${m[1]}項${m[2]}` };
+          else if (l.xMin < 100) lastEvent = { y: l.y, moku: `${m[1]}目${m[2]}` };
+          else continue;
+          kamokuEvents.push(lastEvent);
+          continue;
+        }
+        // 番号で始まらない行 = 折返しの続き（`（ P 72）` のような注記は括弧で始まるので除く）
+        if (lastEvent && l.text && !/^[（(]/.test(l.text) && l.y - lastEvent.y < 40) {
+          if (lastEvent.kou) lastEvent.kou += l.text;
+          if (lastEvent.moku) lastEvent.moku += l.text;
+          lastEvent.y = l.y;
+        }
       }
       kamokuEvents.sort((a, b) => a.y - b.y);
 
@@ -223,7 +242,14 @@ export function parseKyotofuSeikaHoukoku(
         const body = bodyLines.filter((l) => l.y >= startY! - 6 && l.y < endY);
         const bodyText = body.map((l) => l.text).join("\n");
         const exec = pickExecution(bodyText);
-        const measure = kan && kou && moku ? `${kan}/${kou}/${moku}` : kan ? `${kan}` : "";
+        // ⚠⚠ **款だけを出す**（2026-07-30 の判断）。項・目も原典にはあり抽出も試みたが、
+        //   ① 項名・目名が折り返す ② **科目欄が空のページが続く**（金額ブロックだけのページ）ため
+        //   直前の値を持ち越すしかなく、**取りこぼしが1つあると以降の施策に誤った項・目が付く**。
+        //   実測で教育費の 項 が 4項高等学校費・5項特別支援学校費 を落として
+        //   `府立学校教育環境整備事業` に `3項中学校費` が付いた。
+        //   **款は章見出しから取るので取りこぼしが起きない**（款ドリルへの紐付けは款だけで足りる）。
+        //   項・目を出すのは、科目欄の持ち越しを原典の別資料（事項別明細書）で裏取りできてから。
+        const measure = kan ?? "";
         facts.push({
           no: String(facts.length + 1),
           name,
@@ -326,6 +352,9 @@ export function parseKyotofuSeikaHoukoku(
     parsedAt: new Date().toISOString(),
     fiscalYear: source.fiscalYear,
     targetFy,
+    // **原典が施策ごとの金額を印字しない**（金額は目レベル・執行額を持つ施策だけが例外）。
+    // 目の額を施策へ配ると二重計上になるので埋めず、宣言で validate に伝える（types.ts 参照）。
+    noPerProjectCost: true,
     facts,
   };
 }

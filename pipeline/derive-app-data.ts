@@ -1094,6 +1094,18 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
       srcId: "kitakyushu-jigyou-hyoka-r6", muniCode: "401005", muniName: "北九州市", docLabel: "行政評価の取組結果（事業評価）",
       evalNote: "この資料は達成度の数値の代わりに「順調」「概ね順調」「やや遅れ」「遅れ」の4段階で自己評価し、KPI（成果指標）の目標・実績もあわせて持ちます。",
     },
+    // 京都府（#161・2026-07-30）。主要な施策の成果に関する報告書 R6・396施策。**都道府県で初の事業報告**。
+    // **款で章立てされた資料**で、`measure` が `N款款名/N項…/N目…` なので**款名を報告書自身が内包する**
+    // （さいたまと同じ経路・kanFromSrc 不要）。docs §12。
+    // ⚠ **原典が施策ごとの金額を印字しない**（金額は目レベル。執行額を持つのは396件中177件）。
+    //   目の額を施策へ配ると二重計上になるので埋めていない（parsed の `noPerProjectCost` 宣言）。
+    //   → **画面には「決算額を持たない事業」が並ぶ**ので、evalNote でその旨を必ず伝える。
+    {
+      srcId: "kyotofu-seika-houkoku-r6", muniCode: "260002", muniName: "京都府", docLabel: "主要な施策の成果に関する報告書",
+      unit: "円",
+      evalNote:
+        "この資料は総合評価や達成度の数値を持たず、施策ごとの実施状況と成果を自由記述で報告しています。金額は款・項・目の単位で示されており、施策ごとの決算額は原典が執行額を記載しているものだけに載ります。",
+    },
   ];
   const byMuni: Record<string, unknown> = {};
   for (const r of REPORT_MUNI_SOURCES) {
@@ -1140,7 +1152,8 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
         kanName: (() => {
           // 款名が measure 自身に内包される資料（さいたま。`2款総務費/1項…`）はそこから直接取る
           // → kanFromSrc（外部の予算解決）が無くても款ドリルへ紐付けられる
-          const embedded = /^(\d+)款([^/]+)\//.exec(f.measure ?? "");
+          // ⚠ 款だけの `10款教育費` も受ける（京都府 §12。項・目は未収録でも款ドリルへ紐付く）
+          const embedded = /^(\d+)款([^/]+?)(?:\/|$)/.exec(f.measure ?? "");
           if (embedded) return embedded[2]!.trim();
           const m = /^(\d+)款/.exec(f.measure ?? "");
           return m ? kanNames[String(Number(m[1]))] ?? null : null;
@@ -1180,6 +1193,14 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
        * （横浜は人件費・総コスト・達成度・方向性のいずれも持たない）。
        */
       has: {
+        /**
+         * **全事業が事業費を持つか**（2026-07-30・京都府）。false のときは画面の文面を
+         * 「事業費」ではなく「原典が記載している事業のみ」に振り替える。
+         * ⚠ 京都府は金額が目レベルにしか無く、施策ごとの決算額は執行額を書いた施策
+         * （396件中177件）にしか無い。**「事業ごとに事業費が載っています」は嘘になる**。
+         */
+        jigyohiAll: reports.length > 0 && reports.every((x) => x.cost.some((c) => c.jigyohi != null)),
+        jigyohiSome: reports.some((x) => x.cost.some((c) => c.jigyohi != null)),
         jinkenhi: reports.some((x) => x.cost.some((c) => c.jinkenhi != null)),
         totalCost: reports.some((x) => x.cost.some((c) => c.totalCost != null)),
         achievement: reports.some((x) => x.achievement != null),
@@ -2540,6 +2561,7 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
     "yokohama-jigyo-hyoka": "事業報告（成果）",
     "saitama-jigyou-houkoku": "事業報告（成果）",
     "kitakyushu-jigyou-hyoka": "事業報告（成果）",
+    "kyotofu-seika-houkoku": "事業報告（成果）",
     "yamanashi-kessan": "予算執行状況（款別 執行率）",
     "shinjuku-kessan-taisho": "予算執行状況（款別 執行率）",
   };
@@ -2592,7 +2614,7 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
   // 偽る（実際に横浜で踏んだ。2,313事業を収録したのに「成果 ×」と出た）。
   const REPORT_PARSERS = new Set([
     "kofu-jigyou-houkoku", "kawasaki-jigyou-hyouka", "yokohama-jigyo-hyoka", "sapporo-jigyou-hyouka",
-    "saitama-jigyou-houkoku", "kitakyushu-jigyou-hyoka",
+    "saitama-jigyou-houkoku", "kitakyushu-jigyou-hyoka", "kyotofu-seika-houkoku",
   ]);
   const reportDetailByCode: Record<string, string> = {};
   for (const s of srcs) {

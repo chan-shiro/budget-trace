@@ -174,6 +174,15 @@ export const CAVEATS: Record<string, Caveat[]> = {
       "message": "事業「市立幼稚園中山間地域満3歳児受入の試行事業」: 予算額が0（原典どおりか確認）"
     }
   ],
+  "260002": [
+    {
+      "source": "kyotofu-seika-houkoku-r6",
+      "title": "令和6年度 京都府 主要な施策の成果に関する報告書",
+      "fy": "R6",
+      "plain": "成果指標の実績値が資料にまだ記載されていません（新規事業などで集計中の可能性）。目標値のみ載せています。",
+      "message": "地球温暖化対策総合戦略事業: 指標の実績値が全て null"
+    }
+  ],
   "401005": [
     {
       "source": "kitakyushu-jigyou-hyoka-r6",

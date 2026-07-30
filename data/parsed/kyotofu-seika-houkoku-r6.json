@@ -3,9 +3,10 @@
   "sourceId": "kyotofu-seika-houkoku-r6",
   "parser": "kyotofu-seika-houkoku",
   "parserVersion": "0.1.0",
-  "parsedAt": "2026-07-30T09:35:02.693Z",
+  "parsedAt": "2026-07-30T10:45:20.215Z",
   "fiscalYear": "R6",
   "targetFy": "R6",
+  "noPerProjectCost": true,
   "facts": [
     {
       "no": "1",
@@ -16,7 +17,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/1目一般管理費",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [
         {
@@ -54,7 +55,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/1目一般管理費",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [
         {
@@ -82,7 +83,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/1目一般管理費",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -108,7 +109,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/1目一般管理費",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -125,7 +126,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/1目一般管理費",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -142,7 +143,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/1目一般管理費",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -159,7 +160,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/1目一般管理費",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [
         {
@@ -187,7 +188,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/1目一般管理費",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -224,7 +225,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/2目人事管理費",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -241,7 +242,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/8目文化芸術費",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -267,7 +268,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/8目文化芸術費",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -284,7 +285,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/8目文化芸術費",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -310,7 +311,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/8目文化芸術費",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -327,7 +328,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/8目文化芸術費",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -353,7 +354,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/8目文化芸術費",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -370,7 +371,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/8目文化芸術費",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -407,7 +408,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/8目文化芸術費",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -424,7 +425,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/8目文化芸術費",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -450,7 +451,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/8目文化芸術費",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -467,7 +468,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/8目文化芸術費",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -493,7 +494,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/8目文化芸術費",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -519,7 +520,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/8目文化芸術費",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -545,7 +546,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/8目文化芸術費",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -562,7 +563,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/8目文化芸術費",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -588,7 +589,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/10目広域振興局",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -605,7 +606,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/11目京都学・歴",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -622,7 +623,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/11目京都学・歴",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -648,7 +649,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/11目京都学・歴",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -674,7 +675,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/15目諸費",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -691,7 +692,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/15目諸費",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -717,7 +718,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/1項総務管理費/1目企画総務費",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -1048,7 +1049,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/2項計画調査費/3目交通対策費",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -1065,7 +1066,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/2項計画調査費/3目交通対策費",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -1091,7 +1092,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/2項計画調査費/3目交通対策費",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -1117,7 +1118,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/2項計画調査費/3目交通対策費",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -1134,7 +1135,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/2項計画調査費/3目交通対策費",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -1171,7 +1172,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/2項計画調査費/3目交通対策費",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -1197,7 +1198,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/2項計画調査費/3目交通対策費",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -1214,7 +1215,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/2項計画調査費/3目交通対策費",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -1240,7 +1241,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/2項計画調査費/3目交通対策費",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -1266,7 +1267,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/2項計画調査費/3目交通対策費",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -1283,7 +1284,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/2項計画調査費/3目交通対策費",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -1309,7 +1310,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/2項計画調査費/3目交通対策費",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -1335,7 +1336,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/2項計画調査費/5目男女共同参",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -1352,7 +1353,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/2項計画調査費/5目男女共同参",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -1369,7 +1370,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/2項計画調査費/5目男女共同参",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -1386,7 +1387,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/2項計画調査費/6目青少年育成",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -1403,7 +1404,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/2項計画調査費/6目青少年育成",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -1420,7 +1421,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/3項徴税費/1目税務総務費",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -1446,7 +1447,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/3項徴税費/2目賦課徴収費",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -1463,7 +1464,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/4項市町村振興費/2目自治振興費",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -1480,7 +1481,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/4項市町村振興費/2目自治振興費",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -1497,7 +1498,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/4項市町村振興費/4目最高裁判所",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -1523,7 +1524,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/6項防災費/1目防災総務費",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -1540,7 +1541,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/6項防災費/1目防災総務費",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -1566,7 +1567,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/6項防災費/1目防災総務費",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -1583,7 +1584,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/6項防災費/1目防災総務費",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -1609,7 +1610,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/6項防災費/1目防災総務費",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -1635,7 +1636,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/6項防災費/1目防災総務費",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -1652,7 +1653,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/6項防災費/1目防災総務費",
+      "measure": "2款総務費",
       "cost": [
         {
           "fy": "R6",
@@ -1678,7 +1679,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "2款総務費/6項防災費/2目消防連絡調",
+      "measure": "2款総務費",
       "cost": [],
       "indicators": [
         {
@@ -1706,7 +1707,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "3款民生費/1項社会福祉費/1目社会福祉総",
+      "measure": "3款民生費",
       "cost": [
         {
           "fy": "R6",
@@ -1732,7 +1733,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "3款民生費/1項社会福祉費/1目社会福祉総",
+      "measure": "3款民生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -1749,7 +1750,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "3款民生費/1項社会福祉費/1目社会福祉総",
+      "measure": "3款民生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -1766,7 +1767,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "3款民生費/1項社会福祉費/1目社会福祉総",
+      "measure": "3款民生費",
       "cost": [
         {
           "fy": "R6",
@@ -1792,7 +1793,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "3款民生費/1項社会福祉費/1目社会福祉総",
+      "measure": "3款民生費",
       "cost": [
         {
           "fy": "R6",
@@ -1818,7 +1819,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "3款民生費/1項社会福祉費/1目社会福祉総",
+      "measure": "3款民生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -1835,7 +1836,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "3款民生費/1項社会福祉費/1目社会福祉総",
+      "measure": "3款民生費",
       "cost": [
         {
           "fy": "R6",
@@ -1861,7 +1862,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "3款民生費/1項社会福祉費/1目社会福祉総",
+      "measure": "3款民生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -1878,7 +1879,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "3款民生費/1項社会福祉費/1目社会福祉総",
+      "measure": "3款民生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -1895,7 +1896,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "3款民生費/1項社会福祉費/3目婦人福祉費",
+      "measure": "3款民生費",
       "cost": [
         {
           "fy": "R6",
@@ -1921,7 +1922,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "3款民生費/1項社会福祉費/3目婦人福祉費",
+      "measure": "3款民生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -1938,7 +1939,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "3款民生費/1項社会福祉費/4目老人福祉費",
+      "measure": "3款民生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -1955,7 +1956,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "3款民生費/1項社会福祉費/4目老人福祉費",
+      "measure": "3款民生費",
       "cost": [
         {
           "fy": "R6",
@@ -1981,7 +1982,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "3款民生費/1項社会福祉費/4目老人福祉費",
+      "measure": "3款民生費",
       "cost": [
         {
           "fy": "R6",
@@ -2007,7 +2008,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "3款民生費/1項社会福祉費/7目介護保険推",
+      "measure": "3款民生費",
       "cost": [
         {
           "fy": "R6",
@@ -2033,7 +2034,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "3款民生費/1項社会福祉費/7目介護保険推",
+      "measure": "3款民生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -2050,7 +2051,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "3款民生費/1項社会福祉費/7目介護保険推",
+      "measure": "3款民生費",
       "cost": [
         {
           "fy": "R6",
@@ -2076,7 +2077,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "3款民生費/1項社会福祉費/7目介護保険推",
+      "measure": "3款民生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -2093,7 +2094,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "3款民生費/1項社会福祉費/7目介護保険推",
+      "measure": "3款民生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -2110,7 +2111,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "3款民生費/1項社会福祉費/7目介護保険推",
+      "measure": "3款民生費",
       "cost": [
         {
           "fy": "R6",
@@ -2136,7 +2137,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "3款民生費/1項社会福祉費/7目介護保険推",
+      "measure": "3款民生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -2153,7 +2154,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "3款民生費/1項社会福祉費/7目介護保険推",
+      "measure": "3款民生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -2170,7 +2171,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "3款民生費/1項社会福祉費/7目介護保険推",
+      "measure": "3款民生費",
       "cost": [
         {
           "fy": "R6",
@@ -2196,7 +2197,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/1項公衆衛生費/1目公衆衛生総",
+      "measure": "4款衛生費",
       "cost": [
         {
           "fy": "R6",
@@ -2222,7 +2223,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/1項公衆衛生費/1目公衆衛生総",
+      "measure": "4款衛生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -2239,7 +2240,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/1項公衆衛生費/1目公衆衛生総",
+      "measure": "4款衛生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -2256,7 +2257,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/1項公衆衛生費/1目公衆衛生総",
+      "measure": "4款衛生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -2273,7 +2274,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/1項公衆衛生費/3目予防費",
+      "measure": "4款衛生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -2290,7 +2291,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/1項公衆衛生費/3目予防費",
+      "measure": "4款衛生費",
       "cost": [
         {
           "fy": "R6",
@@ -2316,7 +2317,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/1項公衆衛生費/4目精神保健費",
+      "measure": "4款衛生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -2333,7 +2334,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/2項環境衛生費/3目環境衛生指",
+      "measure": "4款衛生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -2350,7 +2351,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/2項環境衛生費/3目環境衛生指",
+      "measure": "4款衛生費",
       "cost": [
         {
           "fy": "R6",
@@ -2376,7 +2377,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/2項環境衛生費/3目環境衛生指",
+      "measure": "4款衛生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -2393,7 +2394,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/2項環境衛生費/3目環境衛生指",
+      "measure": "4款衛生費",
       "cost": [
         {
           "fy": "R6",
@@ -2419,7 +2420,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/3項保健所費/1目保健所費",
+      "measure": "4款衛生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -2436,7 +2437,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/4項医薬費/1目医薬総務費",
+      "measure": "4款衛生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -2453,7 +2454,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/4項医薬費/2目医務費",
+      "measure": "4款衛生費",
       "cost": [
         {
           "fy": "R6",
@@ -2479,7 +2480,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/4項医薬費/2目医務費",
+      "measure": "4款衛生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -2496,7 +2497,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/4項医薬費/2目医務費",
+      "measure": "4款衛生費",
       "cost": [
         {
           "fy": "R6",
@@ -2522,7 +2523,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/4項医薬費/2目医務費",
+      "measure": "4款衛生費",
       "cost": [
         {
           "fy": "R6",
@@ -2548,7 +2549,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/4項医薬費/2目医務費",
+      "measure": "4款衛生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -2565,7 +2566,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/4項医薬費/2目医務費",
+      "measure": "4款衛生費",
       "cost": [
         {
           "fy": "R6",
@@ -2591,7 +2592,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/4項医薬費/2目医務費",
+      "measure": "4款衛生費",
       "cost": [
         {
           "fy": "R6",
@@ -2617,7 +2618,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/4項医薬費/3目保健師等指",
+      "measure": "4款衛生費",
       "cost": [
         {
           "fy": "R6",
@@ -2643,7 +2644,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/4項医薬費/3目保健師等指",
+      "measure": "4款衛生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -2660,7 +2661,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/4項医薬費/3目保健師等指",
+      "measure": "4款衛生費",
       "cost": [
         {
           "fy": "R6",
@@ -2686,7 +2687,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/4項医薬費/4目薬務費",
+      "measure": "4款衛生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -2703,7 +2704,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/5項環境対策費/1目環境総務費",
+      "measure": "4款衛生費",
       "cost": [],
       "indicators": [
         {
@@ -2731,7 +2732,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/5項環境対策費/1目環境総務費",
+      "measure": "4款衛生費",
       "cost": [
         {
           "fy": "R6",
@@ -2757,7 +2758,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/5項環境対策費/1目環境総務費",
+      "measure": "4款衛生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -2774,7 +2775,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/5項環境対策費/1目環境総務費",
+      "measure": "4款衛生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -2791,7 +2792,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/5項環境対策費/1目環境総務費",
+      "measure": "4款衛生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -2808,7 +2809,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/5項環境対策費/1目環境総務費",
+      "measure": "4款衛生費",
       "cost": [
         {
           "fy": "R6",
@@ -2834,7 +2835,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "4款衛生費/5項環境対策費/1目環境総務費",
+      "measure": "4款衛生費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -2851,7 +2852,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "5款労働費/1項労政費/1目労政総務費",
+      "measure": "5款労働費",
       "cost": [
         {
           "fy": "R6",
@@ -2888,7 +2889,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "5款労働費/2項雇用対策費/2目雇用促進費",
+      "measure": "5款労働費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -2905,7 +2906,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "5款労働費/2項雇用対策費/2目雇用促進費",
+      "measure": "5款労働費",
       "cost": [
         {
           "fy": "R6",
@@ -2942,7 +2943,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "5款労働費/2項雇用対策費/2目雇用促進費",
+      "measure": "5款労働費",
       "cost": [],
       "indicators": [
         {
@@ -2970,7 +2971,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "5款労働費/2項雇用対策費/2目雇用促進費",
+      "measure": "5款労働費",
       "cost": [],
       "indicators": [
         {
@@ -2998,7 +2999,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "5款労働費/2項雇用対策費/2目雇用促進費",
+      "measure": "5款労働費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -3015,7 +3016,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "5款労働費/2項雇用対策費/2目雇用促進費",
+      "measure": "5款労働費",
       "cost": [
         {
           "fy": "R6",
@@ -3041,7 +3042,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "5款労働費/2項雇用対策費/2目雇用促進費",
+      "measure": "5款労働費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -3058,7 +3059,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "5款労働費/2項雇用対策費/2目雇用促進費",
+      "measure": "5款労働費",
       "cost": [
         {
           "fy": "R6",
@@ -3084,7 +3085,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "5款労働費/2項雇用対策費/2目雇用促進費",
+      "measure": "5款労働費",
       "cost": [
         {
           "fy": "R6",
@@ -3121,7 +3122,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項農業費/3目農業振興費",
+      "measure": "6款農林水産業費",
       "cost": [
         {
           "fy": "R6",
@@ -3158,7 +3159,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項農業費/3目農業振興費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -3175,7 +3176,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項農業費/3目農業振興費",
+      "measure": "6款農林水産業費",
       "cost": [
         {
           "fy": "R6",
@@ -3201,7 +3202,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項農業費/3目農業振興費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -3218,7 +3219,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項農業費/3目農業振興費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -3235,7 +3236,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項農業費/3目農業振興費",
+      "measure": "6款農林水産業費",
       "cost": [
         {
           "fy": "R6",
@@ -3261,7 +3262,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項農業費/3目農業振興費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [
         {
@@ -3289,7 +3290,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項農業費/3目農業振興費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -3306,7 +3307,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項農業費/3目農業振興費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -3323,7 +3324,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項農業費/3目農業振興費",
+      "measure": "6款農林水産業費",
       "cost": [
         {
           "fy": "R6",
@@ -3349,7 +3350,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項農業費/3目農業振興費",
+      "measure": "6款農林水産業費",
       "cost": [
         {
           "fy": "R6",
@@ -3375,7 +3376,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項農業費/3目農業振興費",
+      "measure": "6款農林水産業費",
       "cost": [
         {
           "fy": "R6",
@@ -3401,7 +3402,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項農業費/3目農業振興費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -3418,7 +3419,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項農業費/3目農業振興費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -3435,7 +3436,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項農業費/3目農業振興費",
+      "measure": "6款農林水産業費",
       "cost": [
         {
           "fy": "R6",
@@ -3461,7 +3462,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項農業費/9目農業技術セ",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -3478,7 +3479,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項農業費/1目茶業費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -3495,7 +3496,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項農業費/1目茶業費",
+      "measure": "6款農林水産業費",
       "cost": [
         {
           "fy": "R6",
@@ -3521,7 +3522,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項農業費/1目茶業費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [
         {
@@ -3549,7 +3550,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項農業費/1目茶業費",
+      "measure": "6款農林水産業費",
       "cost": [
         {
           "fy": "R6",
@@ -3575,7 +3576,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項農業費/1目茶業費",
+      "measure": "6款農林水産業費",
       "cost": [
         {
           "fy": "R6",
@@ -3601,7 +3602,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項農業費/1目茶業費",
+      "measure": "6款農林水産業費",
       "cost": [
         {
           "fy": "R6",
@@ -3627,7 +3628,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項農業費/1目茶業費",
+      "measure": "6款農林水産業費",
       "cost": [
         {
           "fy": "R6",
@@ -3653,7 +3654,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項農業費/1目茶業費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -3670,7 +3671,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項農業費/1目茶業費",
+      "measure": "6款農林水産業費",
       "cost": [
         {
           "fy": "R6",
@@ -3696,7 +3697,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項農業費/1目茶業費",
+      "measure": "6款農林水産業費",
       "cost": [
         {
           "fy": "R6",
@@ -3722,7 +3723,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/4項農地費/1目農地総務費",
+      "measure": "6款農林水産業費",
       "cost": [
         {
           "fy": "R6",
@@ -3748,7 +3749,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/4項農地費/2目土地改良費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -3765,7 +3766,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/4項農地費/2目土地改良費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -4105,7 +4106,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項，182，5681，0，10802，国庫支出金568，/3目農地防災事",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -4122,7 +4123,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/1項，182，5681，0，10802，国庫支出金568，/5目国直轄事業",
+      "measure": "6款農林水産業費",
       "cost": [
         {
           "fy": "R6",
@@ -4148,7 +4149,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/5項林業費/1目林業総務費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -4165,7 +4166,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/5項林業費/1目林業総務費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -4182,7 +4183,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/5項林業費/2目林業振興費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -4199,7 +4200,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/5項林業費/2目林業振興費",
+      "measure": "6款農林水産業費",
       "cost": [
         {
           "fy": "R6",
@@ -4225,7 +4226,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/5項林業費/2目林業振興費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -4242,7 +4243,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/5項林業費/2目林業振興費",
+      "measure": "6款農林水産業費",
       "cost": [
         {
           "fy": "R6",
@@ -4268,7 +4269,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/5項林業費/2目林業振興費",
+      "measure": "6款農林水産業費",
       "cost": [
         {
           "fy": "R6",
@@ -4294,7 +4295,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/5項林業費/4目造林費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -4311,7 +4312,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/5項林業費/4目造林費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -4328,7 +4329,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/5項林業費/5目林道費",
+      "measure": "6款農林水産業費",
       "cost": [
         {
           "fy": "R6",
@@ -4354,7 +4355,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/5項林業費/6目治山費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -4371,7 +4372,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/5項林業費/6目治山費",
+      "measure": "6款農林水産業費",
       "cost": [
         {
           "fy": "R6",
@@ -4397,7 +4398,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/5項林業費/6目治山費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -4414,7 +4415,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/5項林業費/6目治山費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -4431,7 +4432,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/5項林業費/6目治山費",
+      "measure": "6款農林水産業費",
       "cost": [
         {
           "fy": "R6",
@@ -4457,7 +4458,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/5項林業費/6目治山費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -4474,7 +4475,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/5項林業費/8目狩猟費",
+      "measure": "6款農林水産業費",
       "cost": [
         {
           "fy": "R6",
@@ -4500,7 +4501,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/6項水産業費/2目水産振興費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -4517,7 +4518,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/6項水産業費/2目水産振興費",
+      "measure": "6款農林水産業費",
       "cost": [
         {
           "fy": "R6",
@@ -4564,7 +4565,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/6項水産業費/2目水産振興費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -4581,7 +4582,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/6項水産業費/2目水産振興費",
+      "measure": "6款農林水産業費",
       "cost": [
         {
           "fy": "R6",
@@ -4607,7 +4608,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/6項水産業費/7目漁港管理費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -4624,7 +4625,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "6款農林水産業費/6項水産業費/8目漁港建設費",
+      "measure": "6款農林水産業費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -4641,7 +4642,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/2目商工業振興",
+      "measure": "7款商工費",
       "cost": [
         {
           "fy": "R6",
@@ -4678,7 +4679,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/2目商工業振興",
+      "measure": "7款商工費",
       "cost": [
         {
           "fy": "R6",
@@ -4704,7 +4705,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/2目商工業振興",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [
         {
@@ -4732,7 +4733,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/2目商工業振興",
+      "measure": "7款商工費",
       "cost": [
         {
           "fy": "R6",
@@ -4758,7 +4759,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/2目商工業振興",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [
         {
@@ -4786,7 +4787,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/2目商工業振興",
+      "measure": "7款商工費",
       "cost": [
         {
           "fy": "R6",
@@ -4823,7 +4824,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/2目商工業振興",
+      "measure": "7款商工費",
       "cost": [
         {
           "fy": "R6",
@@ -4860,7 +4861,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/2目商工業振興",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [
         {
@@ -4888,7 +4889,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/2目商工業振興",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [
         {
@@ -4916,7 +4917,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/2目商工業振興",
+      "measure": "7款商工費",
       "cost": [
         {
           "fy": "R6",
@@ -4942,7 +4943,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/2目商工業振興",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -4959,7 +4960,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/2目商工業振興",
+      "measure": "7款商工費",
       "cost": [
         {
           "fy": "R6",
@@ -4985,7 +4986,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/2目商工業振興",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [
         {
@@ -5013,7 +5014,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/2目商工業振興",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5030,7 +5031,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/2目商工業振興",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5047,7 +5048,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/2目商工業振興",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5064,7 +5065,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/2目商工業振興",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5081,7 +5082,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/2目商工業振興",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5098,7 +5099,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/2目商工業振興",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5115,7 +5116,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/2目商工業振興",
+      "measure": "7款商工費",
       "cost": [
         {
           "fy": "R6",
@@ -5152,7 +5153,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/2目商工業振興",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5169,7 +5170,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/2目商工業振興",
+      "measure": "7款商工費",
       "cost": [
         {
           "fy": "R6",
@@ -5206,7 +5207,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/2目商工業振興",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5223,7 +5224,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/2目商工業振興",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5240,7 +5241,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/2目商工業振興",
+      "measure": "7款商工費",
       "cost": [
         {
           "fy": "R6",
@@ -5266,7 +5267,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/3目中小企業振",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5283,7 +5284,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/3目中小企業振",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5300,7 +5301,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/3目中小企業振",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5317,7 +5318,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/3目中小企業振",
+      "measure": "7款商工費",
       "cost": [
         {
           "fy": "R6",
@@ -5343,7 +5344,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/3目中小企業振",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5360,7 +5361,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/3目中小企業振",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5377,7 +5378,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/1項商工業費/3目中小企業振",
+      "measure": "7款商工費",
       "cost": [
         {
           "fy": "R6",
@@ -5403,7 +5404,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/2項観光費/1目観光費",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5420,7 +5421,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/2項観光費/1目観光費",
+      "measure": "7款商工費",
       "cost": [
         {
           "fy": "R6",
@@ -5446,7 +5447,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/2項観光費/1目観光費",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5463,7 +5464,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/2項観光費/1目観光費",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5480,7 +5481,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/2項観光費/1目観光費",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5497,7 +5498,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/2項観光費/1目観光費",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5514,7 +5515,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/2項観光費/1目観光費",
+      "measure": "7款商工費",
       "cost": [
         {
           "fy": "R6",
@@ -5540,7 +5541,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/2項観光費/1目観光費",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5557,7 +5558,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/2項観光費/1目観光費",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5574,7 +5575,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "7款商工費/3項消費生活費/1目消費生活費",
+      "measure": "7款商工費",
       "cost": [],
       "indicators": [
         {
@@ -5602,7 +5603,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/1項土木管理費/1目土木総務費",
+      "measure": "8款土木費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5619,7 +5620,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/1項土木管理費/1目土木総務費",
+      "measure": "8款土木費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5636,7 +5637,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/1項土木管理費/1目土木総務費",
+      "measure": "8款土木費",
       "cost": [
         {
           "fy": "R6",
@@ -5662,7 +5663,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/1項土木管理費/1目土木総務費",
+      "measure": "8款土木費",
       "cost": [
         {
           "fy": "R6",
@@ -5688,7 +5689,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/1項土木管理費/2目道路維持費",
+      "measure": "8款土木費",
       "cost": [
         {
           "fy": "R6",
@@ -5714,7 +5715,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/1項土木管理費/2目道路維持費",
+      "measure": "8款土木費",
       "cost": [
         {
           "fy": "R6",
@@ -5740,7 +5741,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/1項土木管理費/3目道路新設改",
+      "measure": "8款土木費",
       "cost": [
         {
           "fy": "R6",
@@ -5766,7 +5767,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/1項土木管理費/3目道路新設改",
+      "measure": "8款土木費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5783,7 +5784,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/1項土木管理費/3目道路新設改",
+      "measure": "8款土木費",
       "cost": [
         {
           "fy": "R6",
@@ -5809,7 +5810,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/1項土木管理費/3目道路新設改",
+      "measure": "8款土木費",
       "cost": [
         {
           "fy": "R6",
@@ -5835,7 +5836,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/1項土木管理費/3目道路新設改",
+      "measure": "8款土木費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5852,7 +5853,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/1項土木管理費/3目道路新設改",
+      "measure": "8款土木費",
       "cost": [
         {
           "fy": "R6",
@@ -5878,7 +5879,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/1項土木管理費/3目道路新設改",
+      "measure": "8款土木費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5895,7 +5896,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/1項土木管理費/6目国直轄事業",
+      "measure": "8款土木費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5912,7 +5913,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/3項河川海岸費/1目河川総務費",
+      "measure": "8款土木費",
       "cost": [
         {
           "fy": "R6",
@@ -5938,7 +5939,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/3項河川海岸費/1目河川総務費",
+      "measure": "8款土木費",
       "cost": [
         {
           "fy": "R6",
@@ -5964,7 +5965,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/3項河川海岸費/2目河川改良費",
+      "measure": "8款土木費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5981,7 +5982,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/3項河川海岸費/2目河川改良費",
+      "measure": "8款土木費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -5998,7 +5999,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/3項河川海岸費/2目河川改良費",
+      "measure": "8款土木費",
       "cost": [
         {
           "fy": "R6",
@@ -6024,7 +6025,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/3項河川海岸費/2目河川改良費",
+      "measure": "8款土木費",
       "cost": [
         {
           "fy": "R6",
@@ -6050,7 +6051,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/3項河川海岸費/2目河川改良費",
+      "measure": "8款土木費",
       "cost": [
         {
           "fy": "R6",
@@ -6076,7 +6077,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/3項河川海岸費/3目砂防費",
+      "measure": "8款土木費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -6093,7 +6094,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/3項河川海岸費/3目砂防費",
+      "measure": "8款土木費",
       "cost": [
         {
           "fy": "R6",
@@ -6119,7 +6120,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/3項河川海岸費/3目砂防費",
+      "measure": "8款土木費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -6136,7 +6137,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/3項河川海岸費/3目砂防費",
+      "measure": "8款土木費",
       "cost": [
         {
           "fy": "R6",
@@ -6162,7 +6163,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/3項河川海岸費/3目砂防費",
+      "measure": "8款土木費",
       "cost": [
         {
           "fy": "R6",
@@ -6188,7 +6189,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/3項河川海岸費/3目砂防費",
+      "measure": "8款土木費",
       "cost": [
         {
           "fy": "R6",
@@ -6214,7 +6215,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/3項河川海岸費/4目海岸保全費",
+      "measure": "8款土木費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -6231,7 +6232,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/3項河川海岸費/4目海岸保全費",
+      "measure": "8款土木費",
       "cost": [
         {
           "fy": "R6",
@@ -6257,7 +6258,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/4項港湾費/2目港湾建設費",
+      "measure": "8款土木費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -6274,7 +6275,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/4項港湾費/2目港湾建設費",
+      "measure": "8款土木費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -6291,7 +6292,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/4項港湾費/3目国直轄事業",
+      "measure": "8款土木費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -6308,7 +6309,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/4項港湾費/3目国直轄事業",
+      "measure": "8款土木費",
       "cost": [
         {
           "fy": "R6",
@@ -6334,7 +6335,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/4項港湾費/3目国直轄事業",
+      "measure": "8款土木費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -6351,7 +6352,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/6項公園費/2目都市公園費",
+      "measure": "8款土木費",
       "cost": [
         {
           "fy": "R6",
@@ -6377,7 +6378,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/6項公園費/2目都市公園費",
+      "measure": "8款土木費",
       "cost": [
         {
           "fy": "R6",
@@ -6403,7 +6404,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/6項公園費/2目都市公園費",
+      "measure": "8款土木費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -6420,7 +6421,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/6項公園費/2目都市公園費",
+      "measure": "8款土木費",
       "cost": [
         {
           "fy": "R6",
@@ -6446,7 +6447,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/6項公園費/3目自然公園費",
+      "measure": "8款土木費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -6463,7 +6464,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/7項住宅費/2目住宅建設費",
+      "measure": "8款土木費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -6480,7 +6481,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/7項住宅費/2目住宅建設費",
+      "measure": "8款土木費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -6497,7 +6498,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/7項住宅費/2目住宅建設費",
+      "measure": "8款土木費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -6582,7 +6583,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/927項，400，000927，40/27目，992，99127，99",
+      "measure": "8款土木費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -6599,7 +6600,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/927項，400，000927，40/27目，992，99127，99",
+      "measure": "8款土木費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -6616,7 +6617,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/927項，400，000927，40/27目，992，99127，99",
+      "measure": "8款土木費",
       "cost": [
         {
           "fy": "R6",
@@ -6642,7 +6643,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/927項，400，000927，40/27目，992，99127，99",
+      "measure": "8款土木費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -6659,7 +6660,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/927項，400，000927，40/27目，992，99127，99",
+      "measure": "8款土木費",
       "cost": [
         {
           "fy": "R6",
@@ -6685,7 +6686,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/927項，400，000927，40/3目住宅対策費",
+      "measure": "8款土木費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -6702,7 +6703,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/927項，400，000927，40/3目住宅対策費",
+      "measure": "8款土木費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -6719,7 +6720,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/927項，400，000927，40/3目住宅対策費",
+      "measure": "8款土木費",
       "cost": [
         {
           "fy": "R6",
@@ -6756,7 +6757,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "8款土木費/927項，400，000927，40/3目住宅対策費",
+      "measure": "8款土木費",
       "cost": [
         {
           "fy": "R6",
@@ -6782,7 +6783,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "9款警察費/1項警察管理費/2目警察本部費",
+      "measure": "9款警察費",
       "cost": [
         {
           "fy": "R6",
@@ -6808,7 +6809,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "9款警察費/1項警察管理費/2目警察本部費",
+      "measure": "9款警察費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -6825,7 +6826,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "9款警察費/1項警察管理費/2目警察本部費",
+      "measure": "9款警察費",
       "cost": [
         {
           "fy": "R6",
@@ -6851,7 +6852,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "9款警察費/1項警察管理費/3目装備費",
+      "measure": "9款警察費",
       "cost": [
         {
           "fy": "R6",
@@ -6877,7 +6878,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "9款警察費/1項警察管理費/3目装備費",
+      "measure": "9款警察費",
       "cost": [
         {
           "fy": "R6",
@@ -6903,7 +6904,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "9款警察費/1項警察管理費/3目装備費",
+      "measure": "9款警察費",
       "cost": [
         {
           "fy": "R6",
@@ -6929,7 +6930,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "9款警察費/1項警察管理費/3目装備費",
+      "measure": "9款警察費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -6946,7 +6947,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "9款警察費/1項警察管理費/3目装備費",
+      "measure": "9款警察費",
       "cost": [
         {
           "fy": "R6",
@@ -6972,7 +6973,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "9款警察費/1項警察管理費/3目装備費",
+      "measure": "9款警察費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -6989,7 +6990,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "9款警察費/1項警察管理費/3目装備費",
+      "measure": "9款警察費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -7006,7 +7007,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "9款警察費/1項警察管理費/1目警察活動費",
+      "measure": "9款警察費",
       "cost": [
         {
           "fy": "R6",
@@ -7032,7 +7033,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "9款警察費/1項警察管理費/1目警察活動費",
+      "measure": "9款警察費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -7049,7 +7050,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "9款警察費/1項警察管理費/1目警察活動費",
+      "measure": "9款警察費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -7066,7 +7067,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "9款警察費/1項警察管理費/1目警察活動費",
+      "measure": "9款警察費",
       "cost": [
         {
           "fy": "R6",
@@ -7092,7 +7093,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "9款警察費/1項警察管理費/1目警察活動費",
+      "measure": "9款警察費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -7109,7 +7110,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "9款警察費/1項警察管理費/1目警察活動費",
+      "measure": "9款警察費",
       "cost": [
         {
           "fy": "R6",
@@ -7135,7 +7136,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "9款警察費/1項警察管理費/1目警察活動費",
+      "measure": "9款警察費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -7152,7 +7153,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "9款警察費/1項警察管理費/1目警察活動費",
+      "measure": "9款警察費",
       "cost": [
         {
           "fy": "R6",
@@ -7178,7 +7179,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/1項教育総務費/3目教職員人事",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -7204,7 +7205,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/1項教育総務費/4目教育連絡調",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -7221,7 +7222,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/1項教育総務費/4目教育連絡調",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -7247,7 +7248,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/1項教育総務費/4目教育連絡調",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -7264,7 +7265,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/1項教育総務費/4目教育連絡調",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -7290,7 +7291,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/1項教育総務費/4目教育連絡調",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -7316,7 +7317,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/1項教育総務費/4目教育連絡調",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -7333,7 +7334,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/1項教育総務費/4目教育連絡調",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -7359,7 +7360,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/1項教育総務費/4目教育連絡調",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -7396,7 +7397,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/1項教育総務費/5目総合教育セ",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -7422,7 +7423,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/2項小学校費/1目教職員費",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -7439,7 +7440,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/2項小学校費/1目教職員費",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -7456,7 +7457,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/2項小学校費/1目教職員費",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -7482,7 +7483,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/3項中学校費/1目教職員費",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -7499,7 +7500,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/3項中学校費/1目教職員費",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -7525,7 +7526,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/3項中学校費/1目教職員費",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -7551,7 +7552,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/3項中学校費/1目教職員費",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -7588,7 +7589,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/3項中学校費/1目教職員費",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -7614,7 +7615,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/3項中学校費/4目教育振興費",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -7631,7 +7632,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/3項中学校費/4目教育振興費",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -7657,7 +7658,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/3項中学校費/4目教育振興費",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -7683,7 +7684,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/3項中学校費/4目教育振興費",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -7709,7 +7710,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/3項中学校費/4目教育振興費",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -7726,7 +7727,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/3項中学校費/4目教育振興費",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -7752,7 +7753,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/3項中学校費/4目教育振興費",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -7778,7 +7779,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/3項中学校費/4目教育振興費",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -7804,7 +7805,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/3項中学校費/4目教育振興費",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -7830,7 +7831,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/3項中学校費/1目特別支援学",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -7856,7 +7857,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/3項中学校費/1目特別支援学",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -7882,7 +7883,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/3項中学校費/1目特別支援学",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -7908,7 +7909,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/3項中学校費/1目特別支援学",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -7925,7 +7926,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/3項中学校費/1目特別支援学",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -7951,7 +7952,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/3項中学校費/1目特別支援学",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -7968,7 +7969,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/3項中学校費/1目特別支援学",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -7994,7 +7995,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/3項中学校費/1目特別支援学",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -8011,7 +8012,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/6項大学費/1目大学費",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -8028,7 +8029,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/6項大学費/1目大学費",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -8045,7 +8046,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/6項大学費/1目大学費",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -8062,7 +8063,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/6項大学費/1目大学費",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -8088,7 +8089,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/6項大学費/1目大学費",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -8105,7 +8106,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/7項社会教育費/1目社会教育総",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -8152,7 +8153,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/8項文化財保護費/1目文化財保護",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -8169,7 +8170,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/8項文化財保護費/1目文化財保護",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -8195,7 +8196,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/8項文化財保護費/1目文化財保護",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -8221,7 +8222,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/8項文化財保護費/1目文化財保護",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -8238,7 +8239,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/8項文化財保護費/2目郷土資料館",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -8264,7 +8265,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/9項保健体育費/1目保健体育総",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -8281,7 +8282,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/9項保健体育費/2目体育振興費",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -8298,7 +8299,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/9項保健体育費/2目体育振興費",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -8315,7 +8316,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/9項保健体育費/2目体育振興費",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -8332,7 +8333,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/9項保健体育費/2目体育振興費",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -8349,7 +8350,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/9項保健体育費/2目体育振興費",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -8366,7 +8367,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/9項保健体育費/2目体育振興費",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -8383,7 +8384,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/9項保健体育費/2目体育振興費",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -8400,7 +8401,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/9項保健体育費/2目体育振興費",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -8417,7 +8418,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/9項保健体育費/2目体育振興費",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -8434,7 +8435,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/9項保健体育費/2目体育振興費",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -8451,7 +8452,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/10項私学振興費/2目私学振興費",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -8468,7 +8469,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/10項私学振興費/2目私学振興費",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -8485,7 +8486,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/10項私学振興費/2目私学振興費",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -8511,7 +8512,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/10項私学振興費/2目私学振興費",
+      "measure": "10款教育費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -8528,7 +8529,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/10項私学振興費/2目私学振興費",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -8554,7 +8555,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "10款教育費/10項私学振興費/2目私学振興費",
+      "measure": "10款教育費",
       "cost": [
         {
           "fy": "R6",
@@ -8580,7 +8581,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "11款災害復旧費/1項農林水産施設/1目農業施設災",
+      "measure": "11款災害復旧費",
       "cost": [
         {
           "fy": "R6",
@@ -8606,7 +8607,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "11款災害復旧費/1項農林水産施設/1目農業施設災",
+      "measure": "11款災害復旧費",
       "cost": [
         {
           "fy": "R6",
@@ -8632,7 +8633,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "11款災害復旧費/2項土木施設災害/1目河川等災害",
+      "measure": "11款災害復旧費",
       "cost": [
         {
           "fy": "R6",
@@ -8658,7 +8659,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "11款災害復旧費/2項土木施設災害/1目河川等災害",
+      "measure": "11款災害復旧費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -8675,7 +8676,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "11款災害復旧費/2項土木施設災害/2目国直轄事業",
+      "measure": "11款災害復旧費",
       "cost": [],
       "indicators": [],
       "locator": {
@@ -8692,7 +8693,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "11款災害復旧費/3項庁舎等災害復/1目庁舎等災害",
+      "measure": "11款災害復旧費",
       "cost": [
         {
           "fy": "R6",
@@ -8718,7 +8719,7 @@
       "grade": null,
       "score": null,
       "policy": null,
-      "measure": "11款災害復旧費/2項港湾整備費/1目港湾整備費",
+      "measure": "11款災害復旧費",
       "cost": [
         {
           "fy": "R6",

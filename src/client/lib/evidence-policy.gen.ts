@@ -85,6 +85,12 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "license": "京都府ホームページに掲載されている個々の情報(文章、写真、イラストなど)について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
     "target": "file"
   },
+  "/sources/kyotofu-seika-houkoku-r6/01sesaku_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.kyoto.jp/kessan/documents/01sesaku_1.pdf",
+    "license": "京都府ホームページに掲載されている個々の情報(文章、写真、イラストなど)について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
   "/sources/naganoken-yosansho-r8/r0802_yosetsu_sokatsu.pdf": {
     "mode": "origin",
     "href": "https://www.pref.nagano.lg.jp/zaisei/kensei/soshiki/yosan/r08/r8yosanan.html",
