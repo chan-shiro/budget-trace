@@ -156,7 +156,13 @@ function pickIndicators(
     //   素で採ると指標名が目標文字列を飲み込み、`令和12年度` の 12 を目標値として出していた。
     //   その結果 caveats の「実績値がまだ記載されていません」が**事実と逆**の説明になっていた
     //   （原典は実績 25.5% を明記）。**名前が長すぎる／目標が取れない指標は載せない**。
-    if (name && name.length <= 40 && target != null) {
+    // ⚠ **目標が「年度」から来た指標を載せない**（レビュー2回目でも残っていた）。
+    //   1つの指標に複数の目標が並ぶ施策があり、名前が目標文字列を飲み込むと
+    //   `（令和12年度` の 12 を目標値として拾う。実績が null になるため caveats の
+    //   「実績値がまだ記載されていません」が**事実と逆**の説明になって画面に出る
+    //   （原典は実績 25.5% を明記）。**年度由来・％を含む名前は捨てる**。
+    const targetFromEra = /(?:令和|平成)\s*$/.test(m[2]!.replace(/[0-9０-９].*$/, ""));
+    if (name && name.length <= 40 && target != null && !targetFromEra && !/[％%]/.test(name)) {
       out.push({ category: "成果指標", name, targets: [target], actuals: [actual] });
     }
   }
@@ -176,6 +182,9 @@ function pickIndicators(
         // 表は連続する。名前が無い／数値が片側でも欠けたら表の終わり
         if (!name || tgtW.length === 0 || actW.length === 0) break;
         if (/^[0-9,]/.test(name)) break;
+        // ⚠ 行内形式と同じガード（指標名が目標文字列を飲み込んだ行は載せない）。
+        //   これを表形式側にも入れるまで、`（令和12年度` の 12 を目標値として出していた。
+        if (/[％%]/.test(name) || /(?:令和|平成)$/.test(name)) continue;
         out.push({
           category: "成果指標",
           name,
@@ -352,9 +361,20 @@ export function parseKyotofuSeikaHoukoku(
             nameBuf.push(before);
           }
           if (!m) break;
-          if (hasReal(m[2]!) && startPage != null) {
+          // ⚠ **`（者）` のような短い括弧は課名ではない**（`重度心身障害児（者）等医療給付助成事業`
+          //   が2件に割れていた）。**所管課は課・室・部・局・本部・監・委員会で終わる**ので、
+          //   それ以外の短い括弧は名前の一部として扱う。
+          const inner = m[2]!;
+          const looksLikeBuka = /(?:課|室|部|局|本部|監|監付|委員会|機構|センター)$/.test(inner);
+          if (!looksLikeBuka) {
+            nameBuf.push(`（${inner}）`);
+            rest = m[3]!;
+            first = false;
+            continue;
+          }
+          if (hasReal(inner) && startPage != null) {
             inBuka = true;
-            bukaBuf.push(m[2]!);
+            bukaBuf.push(inner);
           }
           rest = m[3]!;
           first = false;

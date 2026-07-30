@@ -1,11 +1,6 @@
 {
   "sourceId": "kyotofu-seika-houkoku-r6",
-  "validatedAt": "2026-07-30T12:13:19.321Z",
+  "validatedAt": "2026-07-30T12:55:23.498Z",
   "status": "ok",
-  "issues": [
-    {
-      "level": "warning",
-      "message": "地球温暖化対策総合戦略事業: 指標の実績値が全て null"
-    }
-  ]
+  "issues": []
 }
