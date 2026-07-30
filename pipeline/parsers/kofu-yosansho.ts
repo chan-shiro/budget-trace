@@ -2410,9 +2410,14 @@ function parseProjectsKanKoNumbered(
         continue;
       }
 
-      // 網は抽出より緩く: 「番号列に数字がある行」は事業行のはずなので、
-      // ここまでで拾えていなければ取りこぼし候補として控える（抽出と同じ条件にしない）
-      if (noW) missed.push(`p.${page} 「${r.text.slice(0, 60)}」`);
+      // 網は抽出より緩く張る。**番号トークンに頼らない**のが要点 —
+      // 縦書きラベルが番号に融合すると（`-x 28` で実際に踏んだ型）`noW` 自体が取れず、
+      // 番号だけを見る網では**事業行にも網にもかからず静かに消える**。宣言のある款なら
+      // 件数ゲート①が捕まえるが、**宣言も掲載事業小計も無い款（公債費・諸支出金・予備費）では
+      // 誰も気づかない**。→ **金額列に2つ数字が並ぶ行**はすべて候補にする（項見出し・小計・
+      // 事業行のいずれかのはずで、どれにも分類されなかったなら取りこぼし）。
+      const twoAmounts = r.ws.filter((w) => /^[\d,]+$/.test(w.text) && w.x > X_AMOUNT).length >= 2;
+      if (noW || twoAmounts) missed.push(`p.${page} 「${r.text.slice(0, 60)}」`);
     }
   }
   flushDesc();
@@ -2466,6 +2471,16 @@ function parseProjectsKanKoNumbered(
       if (sum !== want) {
         throw new Error(`${sourceId}: 款「${kan}」の Σ項合計 ${sum.toLocaleString()} が款予算 ${want.toLocaleString()} と一致しません（差 ${(sum - want).toLocaleString()}）`);
       }
+    }
+    // ⚠ 上のループは**主要事業側に現れた款だけ**を見るので、款セクションが丸ごと欠けても
+    //   発火しない（ページ範囲の設定ミス・打ち切りの早すぎ）。「完全分解」を主張する以上、
+    //   **歳出の全款が現れること**も張る。
+    const missingKan = expLines.map((l) => l.kanName).filter((k) => !sums.has(k));
+    if (missingKan.length > 0) {
+      throw new Error(
+        `${sourceId}: 歳出の款「${missingKan.join("・")}」が主要事業のページに1つも現れません` +
+          `（projectPages の範囲か、打ち切り条件を疑うこと）`,
+      );
     }
   }
   return projects;
