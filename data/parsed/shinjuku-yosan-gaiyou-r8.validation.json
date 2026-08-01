@@ -1,6 +1,19 @@
 {
   "sourceId": "shinjuku-yosan-gaiyou-r8",
-  "validatedAt": "2026-07-17T11:58:32.789Z",
+  "validatedAt": "2026-08-01T07:18:03.720Z",
   "status": "ok",
-  "issues": []
+  "issues": [
+    {
+      "level": "warning",
+      "message": "事業「新たな防火規制による不燃化の促進」: 予算額が0（原典どおりか確認）"
+    },
+    {
+      "level": "warning",
+      "message": "事業「歌舞伎町地区のまちづくり推進」: 予算額が0（原典どおりか確認）"
+    },
+    {
+      "level": "warning",
+      "message": "事業「学校用務委託」: 予算額が0（原典どおりか確認）"
+    }
+  ]
 }
