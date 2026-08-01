@@ -359,8 +359,10 @@ interface Options {
    *   項ごとに 1..M の番号つき事業。**款が直接付く**・**Σ項合計 = 款額の完全分解**が張れる）
    * - "dept-kan-table"（港区: 所管部署別の新規・臨時・レベルアップ事業一覧。**款が直接付く**が
    *   **抜粋（新規等のみ）なので完全分解ではない**。原典の締めの表（区分別の件数・Σ）で検証する）
+   * - "policy-blocks"（新宿区: Ⅴ 主要施策事業。1ページ2〜3事業の縦組みで、**ブロックの終端が
+   *   款項目の行**。前ページの集計表（基本政策別の事業数・予算額）で検証する）
    */
-  projectFormat?: "table" | "bullets" | "coded-sections" | "marked-bullets" | "table-lines" | "pref-bullets" | "dept-bullets" | "coord-table" | "kan-tree" | "meisai-tree" | "numbered-rows" | "kan-ko-numbered" | "dept-kan-table";
+  projectFormat?: "table" | "bullets" | "coded-sections" | "marked-bullets" | "table-lines" | "pref-bullets" | "dept-bullets" | "coord-table" | "kan-tree" | "meisai-tree" | "numbered-rows" | "kan-ko-numbered" | "dept-kan-table" | "policy-blocks";
   /**
    * numbered-rows（浜松）: 款セルを持てない事業を何件まで許容するか（既定0）。
    * R7 は p.65「重度障害者等就労・大学修学支援事業」の1件だけ**原本に款セルが無い**（±180pt を
@@ -2751,6 +2753,283 @@ function parseProjectsDeptKanTable(
   return out;
 }
 
+// ---- 主な事業「policy-blocks」（新宿区 R8・2026-07-31）--------------------------
+// 「予算の概要」Ⅴ 主要施策事業（物理 p.42–143）。**款項目が事業に付く**が、版面は北区・港区と
+// まったく別で、**1ページに2〜3事業の縦組み**。事業ブロックは**下端の款項目行で終わる**:
+//
+//   地域で支え合うしくみづく          ← 事業名（左カラム・複数行に折返す）
+//   りの推進（高齢者見守り登
+//   録事業等）        11,811  5,905  拡充   ← 予算額 / 特定財源 / 種別
+//   [福祉部]                         ← ⚠ **款ではなく「部」**（文京 §10j と同じ罠）
+//   福祉費 高齢者福祉費 高齢者福祉事    ← 款項目（ここでブロック終端）
+//   業費                             ← ⚠ 目名は次行に折返す
+//
+// **★ 検証は原典が用意している** — p.41「Ⅳ 基本政策事業予算額等」に
+// **「本表は次頁以降の『Ⅴ 主要施策事業』を集計したものです」**と明記された集計表があり、
+// 基本政策ごとの事業数・予算額が載る（合計 251件 / 41,653,453千円）。**これが唯一の網**
+// （前年度列が無いので年度間クロスチェックは張れない）。
+//
+// ⚠ **予算額は「右端」で取る**（右寄せ）。left で窓を切ると**桁の多い事業が外れて
+//   19,223,802千円 ぶん落ちる**（港区 §10n-2 と同じ型を再度踏んだ）。
+// ⚠ **終端の判定を款名の集合でやってはいけない** — 特別会計は款体系が別（`地域支援事業費`・
+//   `保健事業費`・`後期高齢者支援事業費`）なので一般会計13款では終端にならず、**ブロックが
+//   次の事業まで走って事業名がページ見出しごと飲み込まれる**（実装1回目の失敗）。
+//   **座標（列 x）でもいけない** — 款項目の列 x が**ページごとにドリフトする**
+//   （款 37/38/40・項 69〜72・目 101〜140＝文京 §10j の「座標空間が割れる」型）。
+//   → **「左カラムに2語以上あり、先頭語が 費/金 で終わる行」**で取る（列 x にも款名にも依存しない）。
+// ⚠ **その判定は款項目の折返し行にも当たる**（`中学校費｜学校管理費`・`②教育費｜教育総務費｜…`）。
+//   実測で 256 当たり、うち5件が折返し。**ブロック内に金額もダッシュも無ければ折返し**として
+//   直前の事業へ併合する（248 + ダッシュ3 = 251 で原典と一致）。
+// ⚠ **予算額が `―` の事業が3件ある**（p.82・p.95・p.130）。原典が
+//   `＊事業費は「3（3）…」94頁に計上` と**別事業への計上を注記**しており**金額が無い**（0ではない）。
+//   → **amount は 0 で収録し、注記を description に残す**（件数は原典の251に含まれるので、
+//     除外すると集計表との突合が「248＋3」の二本立てになり網が弱くなる）。
+// ⚠⚠ **特別会計の事業を一般会計の款に載せてはいけない** — 介護保険特別会計にも `総務費` があり、
+//   そのまま kan に入れると**一般会計の総務費ドリルに他会計の事業が混ざる**（Σ も款名も通る）。
+//   → 特会は **kan = null**（款ドリルに出さない）。会計名と科目は description に残す。
+function parseProjectsPolicyBlocks(
+  filePath: string,
+  filename: string,
+  from: number,
+  to: number,
+  expLines: BudgetLineFact[],
+  sourceId: string,
+): BudgetProjectFact[] {
+  const X_LEFT = 200;          // 左カラム（事業名・部・款項目）の右端
+  const R_AMOUNT = [238, 244] as const;   // 予算額の右端（右寄せ）
+  const R_TOKUTEI = [288, 300] as const;  // 特定財源の右端
+  const X_KUBUN = [295, 330] as const;    // 種別（新規/拡充）
+  const X_DESC = 335;                     // 説明の左端
+  // ⚠ **`ー`（U+30FC・カタカナ長音）を入れてはいけない**。原典の「―」は U+2015 だけ（実測）で、
+  //   長音まで含めると**事業名から長音が消える**（`サービス`→`サビス` が15件・実際に踏んだ）。
+  //   §9c の「ダッシュはクラスごと広げる」は**款名の掃除**の話で、ここは逆に広げすぎが害になる。
+  const DASH = /^[―—－‐−]$/;
+  const toNum = (s: string) => Number(s.replace(/[,\s]/g, ""));
+
+  interface R { page: number; y: number; ws: Word[]; text: string; left: Word[] }
+  const flat: R[] = [];
+  const policyAt: { i: number; policy: string }[] = [];
+
+  for (let page = from; page <= to; page++) {
+    const rows: R[] = [];
+    for (const w of pdfPageWords(filePath, page).sort((a, b) => a.y - b.y || a.x - b.x)) {
+      const last = rows.at(-1);
+      if (last && Math.abs(last.y - w.y) <= 2) last.ws.push(w);
+      else rows.push({ page, y: w.y, ws: [w], text: "", left: [] });
+    }
+    for (const r of rows) {
+      r.ws.sort((a, b) => a.x - b.x);   // ⚠ 行内は必ず x で並べ直す（外側は y 優先）
+      r.text = r.ws.map((w) => w.text).join("");
+      // ⚠ **金額は右寄せなので、桁が多いと左端が X_LEFT(200) より左に来る**
+      //   （`1,604,538` は x=191.8）。単純に x<200 で切ると**事業名の頭に金額が入る**
+      //   （画面で `940,788区営住宅` と出た。件数も Σ も正しいままなので Σ では捕まらない）。
+      //   → 左カラムからは「金額列に右端がある数字」を外す。
+      r.left = r.ws.filter((w) => w.x < X_LEFT && !(/^[\d,]+$/.test(w.text) && w.x + w.w >= 230));
+    }
+    // 表の列見出し。⚠ ページによって `予算額` が1語だったり `予 算 額` に割れるので**行の連結文字列**で見る。
+    //   見出しより上（章題・基本政策・施策の見出し・単位）は事業名に混ざるので落とす。
+    const head = rows.find((r) => r.text.includes("予算額") && r.text.includes("特定財源") && r.text.replace(/\s/g, "").includes("種別"));
+    if (!head) throw new Error(`${filename} p.${page}: 表の列見出しが見つかりません`);
+    // 基本政策（ページ最上部の `１ 暮らしやすさ１番の新宿`）
+    for (const r of rows) {
+      if (r.y >= head.y) break;
+      const m = r.text.match(/^([１-５])\s*([^\d（(].*)$/);
+      if (m) { policyAt.push({ i: flat.length, policy: `${m[1]} ${m[2]}` }); break; }
+    }
+    flat.push(...rows.filter((r) => r.y > head.y + 3));
+  }
+  const policyOf = (i: number) => {
+    let cur = "";
+    for (const p of policyAt) { if (p.i <= i) cur = p.policy; else break; }
+    return cur;
+  };
+
+  // 款項目の行（＝ブロックの終端）。列 x にも款名の集合にも依存しない（上記）
+  // ⚠ **会計名と科目が同じ行に来る版がある**（p.140 `国民健康保険特別会計｜総務費｜総務`）。
+  //   `特別会計` は 費/金 で終わらないので終端と見なされず、**事業名に丸ごと漏れた**（実測1件）。
+  //   → 行頭が「費/金で終わる」か「特別会計で終わる」なら終端とする。
+  const isTerm = (r: R) => r.left.length >= 2 && r.left[0]!.x < 45 && /[費金]$|特別会計$/.test(r.left[0]!.text);
+  const amountOf = (r: R) => r.ws.find((w) => /^[\d,]+$/.test(w.text) && w.x + w.w >= R_AMOUNT[0] && w.x + w.w <= R_AMOUNT[1]);
+  const hasDash = (r: R) => r.ws.some((w) => DASH.test(w.text) && w.x >= 195 && w.x <= 245);
+
+  const out: BudgetProjectFact[] = [];
+  // 科目は**後から折返し行が足される**ので、description に埋め込まず別配列で持ち、最後に組み立てる
+  const kamokuOf: string[] = [];
+  const metaOf: string[][] = [];
+  let contMerged = 0, dashCount = 0;
+  let prev = -1;
+
+  for (let i = 0; i < flat.length; i++) {
+    if (!isTerm(flat[i]!)) continue;
+    const block = flat.slice(prev + 1, i + 1);
+    prev = i;
+    const term = flat[i]!;
+    const amtRow = block.find((r) => amountOf(r));
+    const dashRow = block.find((r) => hasDash(r));
+
+    // 金額もダッシュも無いブロックは**款項目の折返し**。直前の事業の目名へ併合する
+    if (!amtRow && !dashRow) {
+      if (out.length === 0) throw new Error(`${filename} p.${term.page}: 事業より先に款項目の折返しが出ました（${term.text.slice(0, 30)}）`);
+      contMerged++;
+      // ⚠ 区切りを入れない — この行は**款項目の折返し**（`後期高齢者` ＋ `支援事業費`）であることが
+      //   多く、`／` を挟むと語を割ってしまう。別科目の併記（①②）は原典の記号が残るので読める。
+      kamokuOf[kamokuOf.length - 1] += term.left.map((w) => w.text).join("");
+      continue;
+    }
+
+    // 款項目（終端行 ＋ 直後の1語だけの折返し行）
+    const kamoku = term.left.map((w) => w.text);
+    // 目名の折返し。⚠ **説明や特定財源など「右カラムだけの行」が間に挟まる**ことがあるので
+    //   `flat[i+1]` の1件先読みでは外れる（`子ども` で切れて `家庭事業費` を落とした＝実測4件）。
+    //   左カラムに語がある次の行まで読み飛ばす。
+    let j = i + 1;
+    while (flat[j] && flat[j]!.left.length === 0 && flat[j]!.page === term.page && flat[j]!.y - term.y < 20) j++;
+    const nxt = flat[j];
+    if (nxt && !isTerm(nxt) && nxt.left.length === 1 && nxt.left[0]!.x < 45 && /[費金]$/.test(nxt.left[0]!.text)
+        && nxt.page === term.page && nxt.y - term.y < 20) {
+      kamoku[kamoku.length - 1] += nxt.left[0]!.text;
+      prev = j;
+    }
+    // ⚠ 原典は**1事業が2つの科目にまたがる**とき ①② を頭に付ける（p.123 は ①総務費 と ②教育費）。
+    //   款名としては不正なので落とす。**科目の全文は description に残す**ので情報は消えない。
+    const [kanRaw, ko, ...moku] = kamoku;
+    const kan = kanRaw?.replace(/^[①-⑳]/, "");
+
+    // 左カラムから事業名を組む。終端行と、**会計名だけの行**（`介護保険特別会計`）は除く。
+    // ⚠ 会計名を正規表現で消してはいけない — 日本語は空白が無いので `\S*特別会計` が
+    //   **事業名を丸ごと食う**（`…フレイル予防事業介護保険特別会計` が全消しになった）。行で外す。
+    const kaikeiRow = block.find((r) => r !== term && r.left.length === 1 && /特別会計$/.test(r.left[0]!.text));
+    // ⚠⚠ **同じ事業名が「施策グループの見出し」としてブロックの上にもう一度出る**（36件で
+    //   完全に二重化した。見出しと名前が `…の推進` / `…事業` と違う版もあるので単純な重複除去では
+    //   直らない）。**見出しと本文の名前は説明だけの行で隔てられている**ので、
+    //   **金額行までの左カラム行を「連続する塊」に割り、いちばん最後の塊**＝その事業自身の名前を採る。
+    // ⚠ 説明の行が名前の行の**間に挟まる**ので「連続する行」では割れない。**左カラムに語がある行だけを
+    //   並べ、y の空きで割る** — 見出しと本文の名前は大きく離れ（実測 90pt）、名前の折返しは
+    //   行送りぶんしか離れない（13pt）。[部] や 【計画】 は剥がすと空になるので、
+    //   **最後から見て「剥がしても中身が残る塊」**がその事業の名前。
+    const cand = block.filter((r) => r !== term && r !== kaikeiRow && r.left.length > 0);
+    const groups: R[][] = [];
+    for (const r of cand) {
+      const g = groups.at(-1);
+      if (g && r.y - g[g.length - 1]!.y <= 20) g.push(r);
+      else groups.push([r]);
+    }
+    const strip = (t: string) => t
+      .replace(/[[［][^\]］]+[\]］]/g, "").replace(/【計画】/g, "")
+      .replace(/（[^（）]*特別会計）/g, "").trim();
+    let nameRows: R[] = cand;
+    for (let g = groups.length - 1; g >= 0; g--) {
+      if (strip(groups[g]!.flatMap((r) => r.left).map((w) => w.text).join(""))) { nameRows = groups[g]!; break; }
+    }
+    let raw = nameRows.flatMap((r) => r.left).map((w) => w.text).join("");
+    // 部・会計・【計画】は名前の塊の外にあることもあるのでブロック全体から拾う
+    const allLeft = block.filter((r) => r !== term).flatMap((r) => r.left).map((w) => w.text).join("");
+    const bu = (allLeft.match(/[[［]([^\]］]+)[\]］]/) ?? [])[1] ?? "";
+    const kaikeiInName = allLeft.match(/（([^（）]*特別会計)）/);
+    const kaikei = kaikeiInName?.[1] ?? kaikeiRow?.left[0]!.text ?? null;
+    const keikaku = /【計画】/.test(allLeft);
+    raw = raw
+      .replace(/[[［][^\]］]+[\]］]/g, "")
+      .replace(/【計画】/g, "")
+      .replace(/（[^（）]*特別会計）/g, "")
+      .trim();   // ダッシュは金額列（x≥200）にしか出ないので left には入らない
+    if (!raw) throw new Error(`${filename} p.${term.page}: 事業名が空です（款項目 ${kamoku.join("/")}）`);
+
+    const amtW = amtRow ? amountOf(amtRow) : undefined;
+    if (!amtW) dashCount++;
+    const tokW = amtRow?.ws.find((w) => /^[\d,]+$/.test(w.text) && w.x + w.w >= R_TOKUTEI[0] && w.x + w.w <= R_TOKUTEI[1]);
+    const kubunW = block.flatMap((r) => r.ws).find((w) => /^(新規|拡充)$/.test(w.text) && w.x >= X_KUBUN[0] && w.x <= X_KUBUN[1]);
+    const descText = block.flatMap((r) => r.ws.filter((w) => w.x >= X_DESC)).map((w) => w.text).join(" ").replace(/\s+/g, " ").trim();
+
+    // 科目・所管部・会計は説明欄が持たない情報なので description に残す（この資料は説明が自由文）
+    const meta: string[] = [];
+    if (bu) meta.push(`所管 ${bu}`);
+    if (kaikei) meta.push(kaikei);
+    if (keikaku) meta.push("実行計画事業");
+    if (!amtW) meta.push("予算額は原典が「―」（別事業に計上）");
+    kamokuOf.push(kamoku.join("／"));
+    metaOf.push(meta);
+
+    out.push({
+      // ⚠ 特別会計は一般会計の款体系と別なので **kan を付けない**（款ドリルに混ぜない）
+      kan: kaikei ? null : (kan ?? null),
+      no: null,
+      kubun: kubunW ? (kubunW.text as "新規" | "拡充") : null,
+      name: raw,
+      budgetBookName: null,
+      amount: amtW ? toNum(amtW.text) : 0,
+      description: descText,
+      // ⚠ basicGoal は甲府の総合計画の語彙（ひと/まち/魅力・基本目標1〜4）で validate されるので使わない。
+      //   新宿の「基本政策」は総合計画の施策そのものなので shisaku に入れる。
+      basicGoal: "",
+      shisaku: policyOf(i),
+      locator: { file: filename, page: (amtRow ?? term).page },
+    });
+  }
+  // 科目（折返しの併合が終わってから）＋メタを description の先頭に付ける
+  for (let k = 0; k < out.length; k++) {
+    const head = [`科目 ${kamokuOf[k]}`, ...metaOf[k]!].join("／");
+    out[k]!.description = [head, out[k]!.description].filter(Boolean).join(" — ");
+  }
+
+  if (out.length === 0) throw new Error(`${filename} p.${from}-${to}: 事業が1件も抽出できませんでした`);
+
+  // ---- 原典の集計表（p.41「Ⅳ 基本政策事業予算額等」）と突合 ----
+  // 「本表は次頁以降の『Ⅴ 主要施策事業』を集計したものです」と明記された表。**この資料で唯一の網**。
+  {
+    // ⚠ この表は**ラベルが縦中央寄せ**（`合 計` と `予 算 額` が同じ行に来て、値は**その1行上**）。
+    //   行を「ラベル＋値」で読もうとすると合計行が取れない。**ラベル行の直上の行から、
+    //   いちばん右の列（右端≈551＝合計列）**を取る。合計ブロックはページの最後なので
+    //   「最後の `事業数` / `予算額` ラベル」がそれ。
+    const ws = pdfPageWords(filePath, from - 1);
+    const grouped: Word[][] = [];
+    for (const w of [...ws].sort((a, b) => a.y - b.y || a.x - b.x)) {
+      const last = grouped.at(-1);
+      if (last && Math.abs(last[0]!.y - w.y) <= 3) last.push(w); else grouped.push([w]);
+    }
+    for (const g of grouped) g.sort((a, b) => a.x - b.x);
+    const labelOf = (g: Word[]) => g.filter((w) => w.x < 160).map((w) => w.text).join("").replace(/\s/g, "");
+    const totalCol = (g: Word[] | undefined) => {
+      const v = g?.filter((w) => /^[\d,]+$/.test(w.text) && w.x + w.w >= 545 && w.x + w.w <= 556);
+      return v && v.length ? toNum(v[v.length - 1]!.text) : null;
+    };
+    // ⚠ ラベルは**完全一致**で取る。表の下の注記
+    //   「（ ）は特別会計に計上されている事業数及び予算額を再掲しています。」にも
+    //   `事業数` と `予算額` が含まれるので、部分一致だと**注記を合計行と誤認する**（実際に踏んだ）。
+    const lastIdxOf = (re: RegExp) => {
+      let idx = -1;
+      for (let k = 0; k < grouped.length; k++) if (re.test(labelOf(grouped[k]!))) idx = k;
+      return idx;
+    };
+    const ci = lastIdxOf(/^事業数$/), ai = lastIdxOf(/^(?:[ⅠⅡⅢⅣⅤ]|合計)?予算額$/);
+    const wantCount = ci > 0 ? totalCol(grouped[ci - 1]) : null;
+    const wantSum = ai > 0 ? totalCol(grouped[ai - 1]) : null;
+    if (wantCount == null || wantSum == null) {
+      throw new Error(`${sourceId}: p.${from - 1} の集計表（合計の事業数・予算額）が読めません — この資料の検証はこの表に依存しているので、読めないまま通さない`);
+    }
+    if (out.length !== wantCount) {
+      throw new Error(`${sourceId}: 原典の集計表は ${wantCount}事業 ですが ${out.length}件 です（款項目の折返し併合 ${contMerged} / 予算額がダッシュ ${dashCount}）`);
+    }
+    const gotSum = out.reduce((a, b) => a + b.amount, 0);
+    if (gotSum !== wantSum) {
+      throw new Error(`${sourceId}: Σ予算額 ${gotSum.toLocaleString()} が集計表の ${wantSum.toLocaleString()} と一致しません（差 ${(gotSum - wantSum).toLocaleString()}）`);
+    }
+  }
+
+  // ---- 款の健全性（抜粋なので ≤ で張る。特会は kan=null なので対象外）----
+  {
+    const kanAmount = new Map(expLines.map((l) => [l.kanName, l.amount]));
+    const sums = new Map<string, number>();
+    for (const p of out) if (p.kan) sums.set(p.kan, (sums.get(p.kan) ?? 0) + p.amount);
+    for (const [kan, sum] of sums) {
+      const want = kanAmount.get(kan);
+      if (want == null) throw new Error(`${sourceId}: 事業の款「${kan}」が歳出の款別一覧にありません（特別会計の款を一般会計に載せていないか確認）`);
+      if (sum > want) throw new Error(`${sourceId}: 款「${kan}」の Σ事業 ${sum.toLocaleString()} が款予算 ${want.toLocaleString()} を超えています`);
+    }
+  }
+  return out;
+}
+
 // meisai-tree（北九州）は**Σ事業 = 款の完全分解**が成り立つ資料（説明欄が歳出予算を漏れなく
 // 分解している。R8 で16款すべて厳密一致を実測）。「主な事業の Σ ≤ 款」（抜粋・§2-4）より強い
 // **等式**で張れる、収録中では唯一の網。折返し金額の取り違え・事業の取り落としを款単位で捕まえる。
@@ -2911,6 +3190,8 @@ export function parseKofuYosansho(
                   ? parseProjectsKanKoNumbered(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to, exp.lines, source.id)
                 : projFmt === "dept-kan-table"
                   ? parseProjectsDeptKanTable(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to, exp.lines, source.id)
+                : projFmt === "policy-blocks"
+                  ? parseProjectsPolicyBlocks(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to, exp.lines, source.id)
                 : projFmt === "coord-table"
                   ? parseProjectsCoordTable(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to)
                   : parseProjectPages(projFile.path, projFile.filename, opts.projectPages.from, opts.projectPages.to, opts.projectColumns, opts.projectRowBanding ?? "midpoint")

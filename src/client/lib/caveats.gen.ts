@@ -20,6 +20,29 @@ export interface Caveat {
 
 /** 団体コード → データの注意。注意の無い自治体はキーごと存在しない */
 export const CAVEATS: Record<string, Caveat[]> = {
+  "131041": [
+    {
+      "source": "shinjuku-yosan-gaiyou-r8",
+      "title": "令和8年度 新宿区予算の概要",
+      "fy": "R8",
+      "plain": "予算額が0の事業が載っています。資料どおりです。",
+      "message": "事業「新たな防火規制による不燃化の促進」: 予算額が0（原典どおりか確認）"
+    },
+    {
+      "source": "shinjuku-yosan-gaiyou-r8",
+      "title": "令和8年度 新宿区予算の概要",
+      "fy": "R8",
+      "plain": "予算額が0の事業が載っています。資料どおりです。",
+      "message": "事業「歌舞伎町地区のまちづくり推進」: 予算額が0（原典どおりか確認）"
+    },
+    {
+      "source": "shinjuku-yosan-gaiyou-r8",
+      "title": "令和8年度 新宿区予算の概要",
+      "fy": "R8",
+      "plain": "予算額が0の事業が載っています。資料どおりです。",
+      "message": "事業「学校用務委託」: 予算額が0（原典どおりか確認）"
+    }
+  ],
   "131121": [
     {
       "source": "setagaya-kanbetsu-r2",
