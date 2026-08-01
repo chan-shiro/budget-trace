@@ -23,6 +23,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
   その ESM ビルドは `readFile`/`writeFile` が fs を自動で掴まないため、`pipeline/lib/xlsx.ts` で一度だけ
   `set_fs` して re-export している。直接 import すると "Cannot access file …" で落ちる。
 - `postcss` は Next が 8.4.31 を固定するが脆弱性があるため package.json の `overrides` で 8.x 最新へ上げている。
+  **Next 16.2.12 でもまだ 8.4.31 固定なので、この overrides は外せない**（2026-08-01 実測）。
+- `sharp` も `overrides` で 0.35 系へ上げている（2026-08-01・#196）。**Next は sharp を
+  `optionalDependencies: ^0.34.5` で連れてくる**が libvips 由来の脆弱性があるため。
+  ⚠ **このアプリは `next/image` も `next/og` も `sharp` も使っていない**（grep で0件）ので
+  画像最適化は動かず実質デッドコードだが、依存ツリーに残る以上 `bun audit` には出る。
+  **next 側の宣言範囲外の版を入れている**ので、**Next を上げたときは必ず `bun audit` と `build` で確かめる**。
 - React 19 でグローバル `JSX` 名前空間が廃止 → `React.JSX.IntrinsicElements` を使う。
 - Next 15 以降 **`params` / `searchParams` は Promise** → catch-all ルートでは `await` してから使う。
 
