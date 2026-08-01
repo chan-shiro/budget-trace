@@ -20,7 +20,7 @@
     "pipeline:archive": "bun pipeline/archive.ts"
   },
   "dependencies": {
-    "next": "^16.2.10",
+    "next": "^16.2.12",
     "pdfjs-dist": "^6.1.200",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
@@ -36,6 +36,8 @@
   },
   "overrides": {
     "//": "next が postcss 8.4.31 を固定するが GHSA-qx2v-qp2m-jg93（CSS stringify の XSS）があるため 8.x 内で最新へ上げる",
-    "postcss": "^8.5.19"
+    "postcss": "^8.5.19",
+    "//sharp": "next は sharp を optionalDependencies ^0.34.5 で連れてくるが GHSA-f88m-g3jw-g9cj（libvips 由来）があるため 0.35 系へ上げる。⚠ このアプリは next/image も next/og も sharp も使っておらず（grep で0件）、画像最適化は動かないので実質デッドコード。next 側の宣言範囲外なので、next を上げたときは必ず bun audit と build で確かめること",
+    "sharp": "^0.35.3"
   }
 }
