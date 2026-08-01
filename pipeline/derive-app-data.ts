@@ -22,7 +22,7 @@ import { eraYear, fyRank, fySeq } from "./lib/fy";
 import { findSource, SOURCES } from "./registry/sources";
 import { ROADMAP } from "./registry/roadmap";
 import { UNRECORDABLE, UNRECORDABLE_CATEGORIES } from "./registry/unrecordable";
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const SOURCE_ID = "soumu-shichoson-kessan-r6";
@@ -3277,12 +3277,136 @@ export const ROADMAP_PLAN: RoadmapItem[] = ${JSON.stringify(ROADMAP, null, 2)};
     if (problems.length === 0) console.log(`  年度間クロスチェーン: ${links} リンク（列の取り違えなし）`);
   }
 
+  // --------------------------------------------------------------------------
+  // ② 表示専用フィールドの汚染（#190）
+  // --------------------------------------------------------------------------
+  // **なぜ要るか**: Σ が立つのは金額だけで、**事業名・説明・所管課・款名は金額でないので
+  // どのゲートも守備範囲に入らない**（handoff §2-4）。2026-07-30〜08-01 の特別区3区の収録で、
+  // **1件も検証ゲートが鳴らないまま画面に出ていた**汚染を6つ踏んだ:
+  //   北区   説明の末尾に印字ノンブル `-60-`（34件）
+  //   港区   掲載頁の数字を「うちレベルアップ分」として金額表示（110件）／列見出しが1行目に食い込む
+  //   新宿   金額が事業名の頭に（`940,788区営住宅`）／事業名の完全二重化（36件）／
+  //          ダッシュのクラスを広げすぎて長音が消える（`サービス`→`サビス`・15件）
+  // 以前にも 川崎の所属名572件が空・横浜の所属名456件が汚染・横浜R3の款名破損があり、
+  // **すべて「画面を見て」見つかっている**。字面で取れるものはここで落とす。
+  //
+  // ⚠ **これは目視の代わりにならない**（issue #190 が明記）。語彙・字面の網なので、
+  //   未知の壊れ方は捕まらない。「新しい資料は款名と事業名を全件目視する」の規約は変わらない。
+  {
+    const DASH_CLS = "[-\\u2010\\u2011\\u2012\\u2013\\u2014\\u2015\\u2212]";
+    /** name = 事業名や款名など「短い見出し」／ text = 説明など自由文 */
+    const RULES: { id: string; on: ("name" | "text")[]; hit: (s: string) => boolean; why: string }[] = [
+      {
+        id: "印字ノンブル",
+        on: ["name", "text"],
+        hit: (s) => new RegExp(`${DASH_CLS}\\s*\\d{1,3}\\s*${DASH_CLS}\\s*$`).test(s),
+        why: "ページ下端の印字ノンブル（`- 60 -`）が本文の x 帯に入って混ざった型。y で切らずテキストで落とす",
+      },
+      {
+        id: "列見出しの語",
+        on: ["name"],
+        hit: (s) => /(事業名|予算額|特定財源|掲載頁|（款名）|（千円）|単位：千円|所管課)/.test(s),
+        why: "表の列見出しが1行目のデータに食い込んだ型。表の上端を定数で置くと、節タイトルのあるページで起きる",
+      },
+      {
+        id: "生の金額が見出しに",
+        on: ["name"],
+        hit: (s) => /^\d{1,3}(,\d{3})+|\d{1,3}(,\d{3})+$/.test(s),
+        why: "右寄せの金額は桁が多いと左端が名前の帯に入る。列は left ではなく right（left+width）で決める",
+      },
+      {
+        id: "見出しの完全二重化",
+        on: ["name"],
+        hit: (s) => s.length >= 8 && s.length % 2 === 0 && s.slice(0, s.length / 2) === s.slice(s.length / 2),
+        why: "同じ名前がグループ見出しとしても出る様式で二重に拾った型",
+      },
+      {
+        id: "部首の異体字",
+        on: ["name", "text"],
+        hit: (s) => [...s].some((c) => { const o = c.codePointAt(0)!; return o >= 0x2e80 && o <= 0x2fdf; }),
+        why: "Kangxi Radicals / CJK部首補助。見た目がほぼ同じで Σ も語彙ゲートも通る（港区 §10n）",
+      },
+    ];
+    const dirty: string[] = [];
+    let scanned = 0;
+    const look = (where: string, field: string, kind: "name" | "text", v: unknown) => {
+      if (typeof v !== "string" || !v) return;
+      scanned++;
+      for (const r of RULES) {
+        if (r.on.includes(kind) && r.hit(v)) {
+          dirty.push(`${where} の ${field}「${v.slice(0, 40)}」: ${r.id} — ${r.why}`);
+        }
+      }
+    };
+    for (const [code, years] of Object.entries(MUNI_BUDGET_YEARS)) {
+      for (const b of years) {
+        for (const p of b.projects ?? []) {
+          const w = `${b.muniName}(${code}) ${b.fy}`;
+          look(w, "事業名", "name", p.name);
+          look(w, "説明", "text", p.description);
+          look(w, "款", "name", p.kan);
+          look(w, "施策", "text", p.shisaku);
+        }
+      }
+    }
+    for (const code of Object.keys(REPORT_MUNIS)) {
+      const shard = readJson(join(process.cwd(), `public/reports/${code}.json`)) as {
+        muniName: string; reports: Record<string, unknown>[];
+      };
+      for (const r of shard.reports) {
+        const w = `${shard.muniName}(${code}) 事業報告`;
+        look(w, "事業名", "name", r.name);
+        look(w, "所管", "text", r.buka);
+        look(w, "款", "name", r.kanName);
+      }
+    }
+    if (dirty.length) {
+      // 件数だけでなく**何が**を必ず出す（handoff §2-3「件数だけの報告をやめた」）
+      for (const d of dirty.slice(0, 30)) problems.push(`表示専用フィールドの汚染: ${d}`);
+      if (dirty.length > 30) problems.push(`表示専用フィールドの汚染: 他 ${dirty.length - 30} 件`);
+    } else {
+      console.log(`  表示専用フィールドの汚染: なし（${scanned.toLocaleString()} 文字列を検査）`);
+    }
+  }
+
+  // --------------------------------------------------------------------------
+  // ③ 系列色は必ず seriesColor を通す（#190・#186 の再発防止）
+  // --------------------------------------------------------------------------
+  // PALETTE は12色しかなく、**款が13以上ある団体は95エンティティ中73**もある。
+  // `PALETTE[i % length]` を直接書くと**同じドーナツの中に同じ色**ができ、凡例でも見分けられない。
+  // ⚠ **数値リテラルの添字は禁じない**（`PALETTE[0]` のような固定5色は一周しようがない）。
+  //   危ないのは**変数で引く**ケースだけなので、そこだけを落とす。
+  {
+    const offenders: string[] = [];
+    const walk = (dir: string): string[] =>
+      readdirSync(dir, { withFileTypes: true }).flatMap((e) =>
+        e.isDirectory() ? walk(join(dir, e.name)) : e.name.endsWith(".ts") || e.name.endsWith(".tsx") ? [join(dir, e.name)] : [],
+      );
+    for (const f of walk(join(process.cwd(), "src/client"))) {
+      if (f.endsWith(join("lib", "data.ts"))) continue; // seriesColor の実装そのもの
+      const src = readFileSync(f, "utf8");
+      for (const m of src.matchAll(/PALETTE\s*\[\s*([^\]]+)\]/g)) {
+        if (!/^\d+$/.test(m[1]!.trim())) {
+          offenders.push(`${f.replace(process.cwd() + "/", "")}: \`PALETTE[${m[1]!.trim()}]\``);
+        }
+      }
+    }
+    if (offenders.length) {
+      for (const o of offenders) {
+        problems.push(
+          `系列色を PALETTE から直接引いています（${o}）— **必ず D.seriesColor(i) を通す**。` +
+            `PALETTE は12色しかなく、款13以上の団体で同じチャート内に同色ができる`,
+        );
+      }
+    }
+  }
+
   if (problems.length > 0) {
     console.error("✗ 生成物どうしの整合チェックで問題が見つかりました:");
     for (const p of problems) console.error(`  - ${p}`);
     throw new Error(`生成物の整合チェックに失敗（${problems.length}件）`);
   }
   console.log(
-    `✓ 生成物どうしの整合チェック（/coverage の件数 = 配信シャードの件数 / 事業報告の収録漏れ / URL スラグ / 年度間クロスチェーン）`,
+    `✓ 生成物どうしの整合チェック（/coverage の件数 = 配信シャードの件数 / 事業報告の収録漏れ / URL スラグ / 年度間クロスチェーン / 表示専用フィールドの汚染 / 系列色）`,
   );
 }
