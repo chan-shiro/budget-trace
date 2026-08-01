@@ -2782,7 +2782,8 @@ function parseProjectsDeptKanTable(
 //   直前の事業へ併合する（248 + ダッシュ3 = 251 で原典と一致）。
 // ⚠ **予算額が `―` の事業が3件ある**（p.82・p.95・p.130）。原典が
 //   `＊事業費は「3（3）…」94頁に計上` と**別事業への計上を注記**しており**金額が無い**（0ではない）。
-//   → amount は 0 を入れず、**注記を description に残して収録する**（件数は原典の251に含まれる）。
+//   → **amount は 0 で収録し、注記を description に残す**（件数は原典の251に含まれるので、
+//     除外すると集計表との突合が「248＋3」の二本立てになり網が弱くなる）。
 // ⚠⚠ **特別会計の事業を一般会計の款に載せてはいけない** — 介護保険特別会計にも `総務費` があり、
 //   そのまま kan に入れると**一般会計の総務費ドリルに他会計の事業が混ざる**（Σ も款名も通る）。
 //   → 特会は **kan = null**（款ドリルに出さない）。会計名と科目は description に残す。
@@ -2870,17 +2871,24 @@ function parseProjectsPolicyBlocks(
     if (!amtRow && !dashRow) {
       if (out.length === 0) throw new Error(`${filename} p.${term.page}: 事業より先に款項目の折返しが出ました（${term.text.slice(0, 30)}）`);
       contMerged++;
+      // ⚠ 区切りを入れない — この行は**款項目の折返し**（`後期高齢者` ＋ `支援事業費`）であることが
+      //   多く、`／` を挟むと語を割ってしまう。別科目の併記（①②）は原典の記号が残るので読める。
       kamokuOf[kamokuOf.length - 1] += term.left.map((w) => w.text).join("");
       continue;
     }
 
     // 款項目（終端行 ＋ 直後の1語だけの折返し行）
     const kamoku = term.left.map((w) => w.text);
-    const nxt = flat[i + 1];
+    // 目名の折返し。⚠ **説明や特定財源など「右カラムだけの行」が間に挟まる**ことがあるので
+    //   `flat[i+1]` の1件先読みでは外れる（`子ども` で切れて `家庭事業費` を落とした＝実測4件）。
+    //   左カラムに語がある次の行まで読み飛ばす。
+    let j = i + 1;
+    while (flat[j] && flat[j]!.left.length === 0 && flat[j]!.page === term.page && flat[j]!.y - term.y < 20) j++;
+    const nxt = flat[j];
     if (nxt && !isTerm(nxt) && nxt.left.length === 1 && nxt.left[0]!.x < 45 && /[費金]$/.test(nxt.left[0]!.text)
-        && nxt.page === term.page && nxt.y - term.y < 16) {
+        && nxt.page === term.page && nxt.y - term.y < 20) {
       kamoku[kamoku.length - 1] += nxt.left[0]!.text;
-      prev = i + 1;
+      prev = j;
     }
     // ⚠ 原典は**1事業が2つの科目にまたがる**とき ①② を頭に付ける（p.123 は ①総務費 と ②教育費）。
     //   款名としては不正なので落とす。**科目の全文は description に残す**ので情報は消えない。
