@@ -31,7 +31,8 @@ import { mkdtempSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 
-export const PARSER_VERSION = "0.1.0";
+// 0.2.0: 項行・款行の前年度額も取る（Σ目prev では項の前年比が符号ごと狂う。#192 のレビュー）
+export const PARSER_VERSION = "0.2.0";
 
 interface Options {
   /** 説明書 XLSX を選ぶ zip エントリの接頭辞（既定 "02_"） */
@@ -110,6 +111,11 @@ export function parseYokohamaSetsumeishoXlsx(
     const cPrev = colOf("前年度");
 
     let kanNo = "", kanName = "", koNo = "", koName = "";
+    // ⚠⚠ **項行・款行にも前年度が印字されており、そちらが正**（#192 のレビューで発覚）。
+    //   当年度に廃止された目は行ごと消えるので、Σ目prev は項行prev より小さくなる
+    //   （実測 R5 歳出「選挙費」項行 2,833,438 / Σ目 1,499,819）。**Σ目で項の前年比を作ると
+    //   符号が逆になる**（選挙費は実際は減なのに +50.1% と出ていた）。葉に持たせて derive へ渡す。
+    let kanPrev: number | null = null, koPrev: number | null = null;
     let nKan = 0;
     // **当年度は 款 = 項 = 目 で厳密に閉じる**（実測・全年度・両側）。ここが唯一3階層を
     // 同時に見られる場所なので assert する。⚠ **前年度は閉じない**（当年度に廃止された目は
@@ -125,11 +131,12 @@ export function parseYokohamaSetsumeishoXlsx(
 
       if (/^\d+$/.test(c(0)) && c(1)) {
         kanNo = c(0); kanName = cleanName(r[1]); koNo = ""; koName = "";
+        kanPrev = prev; koPrev = null;
         nKan++; curKan += cur;
         totals[side].cur += cur;
         totals[side].prev += prev ?? 0;
       } else if (/^\d+$/.test(c(1)) && c(2)) {
-        koNo = c(1); koName = cleanName(r[2]); curKo += cur;
+        koNo = c(1); koName = cleanName(r[2]); koPrev = prev; curKo += cur;
       } else if (/^\d+$/.test(c(2)) && c(4)) {
         curMoku += cur;
         if (!kanName || !koName) {
@@ -147,6 +154,8 @@ export function parseYokohamaSetsumeishoXlsx(
           saisetsuNo: null, saisetsuName: null,
           amount: cur,
           prevAmount: prev,
+          koPrevAmount: koPrev,
+          kanPrevAmount: kanPrev,
           locator: { file: zip.filename, sheet: sheetName },
         });
       }

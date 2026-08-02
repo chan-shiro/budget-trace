@@ -350,6 +350,52 @@ if (doc.docType === "budget-detail") {
     }
   }
 
+  // ①''' **前年度の階層が「上ほど大きい」で揃っている** — Σ目prev ≦ 項行prev ≦ … ≦ 款行prev。
+  //    ⚠⚠ **①'' だけでは足りなかった**（#192 のレビューで発覚）。①'' は**全体の和**しか見ないので、
+  //    「ある項では目が廃止されて足りない」「別の項では二重に足している」が**相殺して素通りする**。
+  //    しかも当時は項の前年度を **Σ目で作っていた**ため、**画面の前年比が符号ごと逆になった**
+  //    （R5 歳出「選挙費」は項行 2,833,438 に対し Σ目 1,499,819 で、実際は減なのに +50.1% と表示）。
+  //    → **項ごと・款ごとに**張る。等号でなく `≦`（廃止された下位は行として現れないため）。
+  {
+    const key = (f: (typeof doc.facts)[number], lv: "ko" | "kan") =>
+      lv === "kan" ? `${f.side}/${f.accountCode}/${f.kanNo}` : `${f.side}/${f.accountCode}/${f.kanNo}/${f.koNo}`;
+    for (const [lv, label, printed] of [
+      ["ko", "項", (f: (typeof doc.facts)[number]) => f.koPrevAmount],
+      ["kan", "款", (f: (typeof doc.facts)[number]) => f.kanPrevAmount],
+    ] as const) {
+      const sum: Record<string, number> = {};
+      const decl: Record<string, number | null> = {};
+      const name: Record<string, string> = {};
+      for (const f of doc.facts) {
+        const p = printed(f);
+        if (p == null) continue; // その資料は上位の前年度を持たない（CSV 版）
+        const k = key(f, lv);
+        sum[k] = (sum[k] ?? 0) + (f.prevAmount ?? 0);
+        // 同じ項・款の葉には同じ値が入っているはず。違えば行の取り違え
+        if (decl[k] != null && decl[k] !== p) {
+          issues.push({
+            level: "error",
+            message: `${lv === "kan" ? f.kanName : f.koName}: ${label}行の前年度額が葉ごとに違います（${decl[k]!.toLocaleString()} と ${p.toLocaleString()}）。行の階層判定を疑うこと`,
+          });
+        }
+        decl[k] = p;
+        name[k] = lv === "kan" ? f.kanName : `${f.kanName}/${f.koName}`;
+      }
+      for (const [k, got] of Object.entries(sum)) {
+        const want = decl[k];
+        if (want == null) continue;
+        if (got > want) {
+          issues.push({
+            level: "error",
+            message:
+              `${name[k]}: 下位の前年度の和 ${got.toLocaleString()} が${label}行の前年度額 ` +
+              `${want.toLocaleString()} を**超えています**（差 +${(got - want).toLocaleString()}）＝二重計上`,
+          });
+        }
+      }
+    }
+  }
+
   // ② 原典の `総計` 行 = 葉の Σ（総計行がある側・年度だけ。横浜は R8・R7 の歳出に在る）
   for (const [label, stated, leaves] of [
     ["歳入", doc.statedRevenueTotal, doc.allRevenueTotal],

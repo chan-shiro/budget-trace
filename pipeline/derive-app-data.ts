@@ -2512,6 +2512,8 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
   const byCode: Record<string, Entry[]> = {};
   /** 年度をまたぐ突合のために、款レベルの合計だけ控えておく（下の ★★ で使う） */
   const detailTotals: { code: string; fy: string; id: string; cur: [number, number]; prev: [number | null, number | null] }[] = [];
+  /** 款行の前年度額（款別一覧の前年度当初額との突合に使う） */
+  const detailKanPrev: { id: string; fy: string; code: string; printed: Record<string, number> }[] = [];
   for (const src of detailSources) {
     const v = validationResultSchema.parse(readJson(validationPath(src.id)));
     if (v.status !== "ok") throw new Error(`${src.id}: 検証が ${v.status} のため derive しません`);
@@ -2529,12 +2531,17 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
     for (const side of ["revenue", "expenditure"] as const) {
       const leaves = doc.facts.filter((f) => f.side === side && f.accountCode === "01");
       const kanMap: Record<string, Record<string, Record<string, { v: number; p: number | null }>>> = {};
+      // ⚠⚠ **項の前年度は Σ目で作ってはいけない**（#192 のレビューで発覚）。当年度に廃止された目は
+      //   行ごと消えるので、Σ目prev は項行prev より小さくなり、**前年比が符号ごと逆になる項が出る**
+      //   （R5 歳出「選挙費」は実際は減なのに +50.1% と出ていた）。**原典の項行の値をそのまま使う**。
+      const koPrinted: Record<string, number | null> = {};
       for (const f of leaves) {
         const bucket = ((kanMap[f.kanName] ??= {})[f.koName] ??= {});
         const cell = (bucket[f.mokuName] ??= { v: 0, p: null });
         cell.v += f.amount;
         // ⚠ 前年度は**全部の葉が持つとは限らない**（皆増は空）。持っているものだけ足す
         if (f.prevAmount != null) cell.p = (cell.p ?? 0) + f.prevAmount;
+        koPrinted[`${f.kanName}/${f.koName}`] = f.koPrevAmount;
       }
       byKan[side] = Object.fromEntries(
         Object.entries(kanMap).map(([kan, kos]) => [
@@ -2542,11 +2549,11 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
           Object.entries(kos)
             .map(([ko, mokus]) => {
               const vals = Object.values(mokus);
-              const anyPrev = vals.some((m) => m.p != null);
+              const printed = koPrinted[`${kan}/${ko}`];
               return {
                 name: ko,
                 v: vals.reduce((a, b) => a + b.v, 0) / 1e5, // 千円 → 億円
-                prevV: anyPrev ? vals.reduce((a, b) => a + (b.p ?? 0), 0) / 1e5 : null,
+                prevV: printed == null ? null : printed / 1e5,
                 moku: Object.entries(mokus)
                   .map(([nm, m]) => ({ name: nm, v: m.v / 1e5, prevV: m.p == null ? null : m.p / 1e5 }))
                   .sort((a, b) => b.v - a.v),
@@ -2556,6 +2563,13 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
         ]),
       );
     }
+    // 款行の前年度額（款別一覧の前年度当初額と突合するために控える）
+    const kanPrinted: Record<string, number> = {};
+    for (const f of doc.facts) {
+      if (f.accountCode !== "01" || f.kanPrevAmount == null) continue;
+      kanPrinted[`${f.side}/${f.kanName}`] = f.kanPrevAmount;
+    }
+    detailKanPrev.push({ id: src.id, fy: src.fiscalYear, code, printed: kanPrinted });
     detailTotals.push({
       code, fy: src.fiscalYear, id: src.id,
       cur: [doc.generalRevenueTotal, doc.generalExpenditureTotal],
@@ -2602,6 +2616,17 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
             throw new Error(
               `${bb.id}: 款「${kan}」(${side}) の Σ項 ${got.toLocaleString()} が款別一覧の ` +
                 `${want.toLocaleString()} と一致しません（差 ${(got - want).toLocaleString()}）`,
+            );
+          }
+          // ★ **前年度も同じ年度の款別一覧と突合する**（#192 のレビューで足した）。
+          //   ⚠ 年度チェーン（下の ★★）は**前の年度が収録済みの年度しか守れない**ので、
+          //   鎖の端（R3）は素通りしていた。こちらは**同じ年度の別資料**と突合するので端も守れる。
+          const printedPrev = detailKanPrev.find((x) => x.code === code && x.fy === e.fy)?.printed[`${side}/${kan}`];
+          const wantPrev = bdoc.facts.find((f) => f.side === side && f.kanName === kan)?.prevAmount;
+          if (printedPrev != null && wantPrev != null && printedPrev !== wantPrev) {
+            throw new Error(
+              `${bb.id}: 款「${kan}」(${side}) の**前年度**額が款項目 ${printedPrev.toLocaleString()} / ` +
+                `款別一覧 ${wantPrev.toLocaleString()} で食い違います（差 ${(printedPrev - wantPrev).toLocaleString()}）`,
             );
           }
         }

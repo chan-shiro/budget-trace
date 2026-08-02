@@ -670,6 +670,17 @@ export const budgetDetailFactSchema = z.object({
    * ⚠ **無いことを 0 で表さない**（0 は「前年度は0円」という別の主張になる）。
    */
   prevAmount: z.number().nullable(),
+  /**
+   * **この葉が属する項・款の行に印字された前年度額**（千円）。同じ項の葉には同じ値が入る。
+   *
+   * ⚠⚠ **葉の前年度を足しても項・款の前年度にはならない**（実測・#192）。原典の前年度額は
+   * **当年度の科目体系に組み替えたもの**で、**当年度に廃止された目は行ごと消える**が、その額は
+   * **項・款の行にだけ残る**（R5 歳出「選挙費」は 項行 2,833,438 に対し Σ目 1,499,819）。
+   * Σ目で項の前年比を作ると**符号が逆になる項が出る**（R5 選挙費は実際は減なのに +50.1% と出た）。
+   * → **項・款の前年比は必ずこの値を使う**。持たない資料（CSV 版）は null。
+   */
+  koPrevAmount: z.number().nullable(),
+  kanPrevAmount: z.number().nullable(),
   locator: locatorSchema,
 });
 export type BudgetDetailFact = z.infer<typeof budgetDetailFactSchema>;

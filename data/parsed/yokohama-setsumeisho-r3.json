@@ -2,8 +2,8 @@
   "docType": "budget-detail",
   "sourceId": "yokohama-setsumeisho-r3",
   "parser": "yokohama-setsumeisho-xlsx",
-  "parserVersion": "0.1.0",
-  "parsedAt": "2026-08-02T15:13:37.749Z",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-08-02T16:15:58.395Z",
   "unit": "thousandYen",
   "fiscalYear": "R3",
   "generalRevenueTotal": 2007260724,
@@ -31,6 +31,8 @@
       "saisetsuName": null,
       "amount": 388313000,
       "prevAmount": 417719000,
+      "koPrevAmount": 465238000,
+      "kanPrevAmount": 844082000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -52,6 +54,8 @@
       "saisetsuName": null,
       "amount": 32917000,
       "prevAmount": 47519000,
+      "koPrevAmount": 465238000,
+      "kanPrevAmount": 844082000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -73,6 +77,8 @@
       "saisetsuName": null,
       "amount": 269062000,
       "prevAmount": 276071000,
+      "koPrevAmount": 276996000,
+      "kanPrevAmount": 844082000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -94,6 +100,8 @@
       "saisetsuName": null,
       "amount": 914000,
       "prevAmount": 925000,
+      "koPrevAmount": 276996000,
+      "kanPrevAmount": 844082000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -115,6 +123,8 @@
       "saisetsuName": null,
       "amount": 160000,
       "prevAmount": 168000,
+      "koPrevAmount": 3120000,
+      "kanPrevAmount": 844082000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -136,6 +146,8 @@
       "saisetsuName": null,
       "amount": 3069000,
       "prevAmount": 2952000,
+      "koPrevAmount": 3120000,
+      "kanPrevAmount": 844082000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -157,6 +169,8 @@
       "saisetsuName": null,
       "amount": 21069000,
       "prevAmount": 19885000,
+      "koPrevAmount": 19885000,
+      "kanPrevAmount": 844082000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -178,6 +192,8 @@
       "saisetsuName": null,
       "amount": 39000,
       "prevAmount": 79000,
+      "koPrevAmount": 79000,
+      "kanPrevAmount": 844082000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -199,6 +215,8 @@
       "saisetsuName": null,
       "amount": 17680000,
       "prevAmount": 18457000,
+      "koPrevAmount": 18457000,
+      "kanPrevAmount": 844082000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -220,6 +238,8 @@
       "saisetsuName": null,
       "amount": 59086000,
       "prevAmount": 60307000,
+      "koPrevAmount": 60307000,
+      "kanPrevAmount": 844082000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -241,6 +261,8 @@
       "saisetsuName": null,
       "amount": 2831000,
       "prevAmount": 2956000,
+      "koPrevAmount": 2956000,
+      "kanPrevAmount": 8962001,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -262,6 +284,8 @@
       "saisetsuName": null,
       "amount": 4449000,
       "prevAmount": 4514000,
+      "koPrevAmount": 4514000,
+      "kanPrevAmount": 8962001,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -283,6 +307,8 @@
       "saisetsuName": null,
       "amount": 1,
       "prevAmount": 1,
+      "koPrevAmount": 1,
+      "kanPrevAmount": 8962001,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -304,6 +330,8 @@
       "saisetsuName": null,
       "amount": 302000,
       "prevAmount": 302000,
+      "koPrevAmount": 302000,
+      "kanPrevAmount": 8962001,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -325,6 +353,8 @@
       "saisetsuName": null,
       "amount": 1075000,
       "prevAmount": 1161000,
+      "koPrevAmount": 1161000,
+      "kanPrevAmount": 8962001,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -346,6 +376,8 @@
       "saisetsuName": null,
       "amount": 15000,
       "prevAmount": 29000,
+      "koPrevAmount": 29000,
+      "kanPrevAmount": 8962001,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -367,6 +399,8 @@
       "saisetsuName": null,
       "amount": 339000,
       "prevAmount": 464000,
+      "koPrevAmount": 464000,
+      "kanPrevAmount": 464000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -388,6 +422,8 @@
       "saisetsuName": null,
       "amount": 4366000,
       "prevAmount": 4648000,
+      "koPrevAmount": 4648000,
+      "kanPrevAmount": 4648000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -409,6 +445,8 @@
       "saisetsuName": null,
       "amount": 3464000,
       "prevAmount": 3396000,
+      "koPrevAmount": 3396000,
+      "kanPrevAmount": 3396000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -430,6 +468,8 @@
       "saisetsuName": null,
       "amount": 991000,
       "prevAmount": 991000,
+      "koPrevAmount": 991000,
+      "kanPrevAmount": 991000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -451,6 +491,8 @@
       "saisetsuName": null,
       "amount": 7412000,
       "prevAmount": 3881000,
+      "koPrevAmount": 3881000,
+      "kanPrevAmount": 3881000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -472,6 +514,8 @@
       "saisetsuName": null,
       "amount": 75088000,
       "prevAmount": 82369000,
+      "koPrevAmount": 82369000,
+      "kanPrevAmount": 82369000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -493,6 +537,8 @@
       "saisetsuName": null,
       "amount": 133000,
       "prevAmount": 139000,
+      "koPrevAmount": 139000,
+      "kanPrevAmount": 139000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -514,6 +560,8 @@
       "saisetsuName": null,
       "amount": 2182999,
       "prevAmount": 2354000,
+      "koPrevAmount": 2354000,
+      "kanPrevAmount": 2354000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -535,6 +583,8 @@
       "saisetsuName": null,
       "amount": 1,
       "prevAmount": null,
+      "koPrevAmount": 2354000,
+      "kanPrevAmount": 2354000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -556,6 +606,8 @@
       "saisetsuName": null,
       "amount": 11646000,
       "prevAmount": 11894000,
+      "koPrevAmount": 11895000,
+      "kanPrevAmount": 11895000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -577,6 +629,8 @@
       "saisetsuName": null,
       "amount": 1000,
       "prevAmount": 1000,
+      "koPrevAmount": 11895000,
+      "kanPrevAmount": 11895000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -598,6 +652,8 @@
       "saisetsuName": null,
       "amount": 500000,
       "prevAmount": 500000,
+      "koPrevAmount": 500000,
+      "kanPrevAmount": 500000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -619,6 +675,8 @@
       "saisetsuName": null,
       "amount": 5239000,
       "prevAmount": 5051000,
+      "koPrevAmount": 5051000,
+      "kanPrevAmount": 5051000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -640,6 +698,8 @@
       "saisetsuName": null,
       "amount": 6067000,
       "prevAmount": null,
+      "koPrevAmount": null,
+      "kanPrevAmount": 5051000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -661,6 +721,8 @@
       "saisetsuName": null,
       "amount": 23000000,
       "prevAmount": 20000000,
+      "koPrevAmount": 20000000,
+      "kanPrevAmount": 20000000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -682,6 +744,8 @@
       "saisetsuName": null,
       "amount": 814000,
       "prevAmount": 840000,
+      "koPrevAmount": 840000,
+      "kanPrevAmount": 840000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -703,6 +767,8 @@
       "saisetsuName": null,
       "amount": 10297491,
       "prevAmount": 9909808,
+      "koPrevAmount": 27405572,
+      "kanPrevAmount": 27405572,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -724,6 +790,8 @@
       "saisetsuName": null,
       "amount": 6420706,
       "prevAmount": 6238024,
+      "koPrevAmount": 27405572,
+      "kanPrevAmount": 27405572,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -745,6 +813,8 @@
       "saisetsuName": null,
       "amount": 6483,
       "prevAmount": 6587,
+      "koPrevAmount": 27405572,
+      "kanPrevAmount": 27405572,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -766,6 +836,8 @@
       "saisetsuName": null,
       "amount": 114000,
       "prevAmount": 97000,
+      "koPrevAmount": 27405572,
+      "kanPrevAmount": 27405572,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -787,6 +859,8 @@
       "saisetsuName": null,
       "amount": 570266,
       "prevAmount": 718393,
+      "koPrevAmount": 27405572,
+      "kanPrevAmount": 27405572,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -808,6 +882,8 @@
       "saisetsuName": null,
       "amount": 98468,
       "prevAmount": 163034,
+      "koPrevAmount": 27405572,
+      "kanPrevAmount": 27405572,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -829,6 +905,8 @@
       "saisetsuName": null,
       "amount": 3562,
       "prevAmount": 2508,
+      "koPrevAmount": 27405572,
+      "kanPrevAmount": 27405572,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -850,6 +928,8 @@
       "saisetsuName": null,
       "amount": 10765986,
       "prevAmount": 10117382,
+      "koPrevAmount": 27405572,
+      "kanPrevAmount": 27405572,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -871,6 +951,8 @@
       "saisetsuName": null,
       "amount": 146807,
       "prevAmount": 125982,
+      "koPrevAmount": 39569176,
+      "kanPrevAmount": 49876279,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -892,6 +974,8 @@
       "saisetsuName": null,
       "amount": 77087,
       "prevAmount": 88930,
+      "koPrevAmount": 39569176,
+      "kanPrevAmount": 49876279,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -913,6 +997,8 @@
       "saisetsuName": null,
       "amount": 7291,
       "prevAmount": 13308,
+      "koPrevAmount": 39569176,
+      "kanPrevAmount": 49876279,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -934,6 +1020,8 @@
       "saisetsuName": null,
       "amount": 27148,
       "prevAmount": 24796,
+      "koPrevAmount": 39569176,
+      "kanPrevAmount": 49876279,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -955,6 +1043,8 @@
       "saisetsuName": null,
       "amount": 7396817,
       "prevAmount": 8004854,
+      "koPrevAmount": 39569176,
+      "kanPrevAmount": 49876279,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -976,6 +1066,8 @@
       "saisetsuName": null,
       "amount": 1611258,
       "prevAmount": 1704600,
+      "koPrevAmount": 39569176,
+      "kanPrevAmount": 49876279,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -997,6 +1089,8 @@
       "saisetsuName": null,
       "amount": 1067523,
       "prevAmount": 1067523,
+      "koPrevAmount": 39569176,
+      "kanPrevAmount": 49876279,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1018,6 +1112,8 @@
       "saisetsuName": null,
       "amount": 10961334,
       "prevAmount": 11088845,
+      "koPrevAmount": 39569176,
+      "kanPrevAmount": 49876279,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1039,6 +1135,8 @@
       "saisetsuName": null,
       "amount": 7209029,
       "prevAmount": 7093586,
+      "koPrevAmount": 39569176,
+      "kanPrevAmount": 49876279,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1060,6 +1158,8 @@
       "saisetsuName": null,
       "amount": 9262913,
       "prevAmount": 9414579,
+      "koPrevAmount": 39569176,
+      "kanPrevAmount": 49876279,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1081,6 +1181,8 @@
       "saisetsuName": null,
       "amount": 52094,
       "prevAmount": 47711,
+      "koPrevAmount": 39569176,
+      "kanPrevAmount": 49876279,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1102,6 +1204,8 @@
       "saisetsuName": null,
       "amount": 894663,
       "prevAmount": 894462,
+      "koPrevAmount": 39569176,
+      "kanPrevAmount": 49876279,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1123,6 +1227,8 @@
       "saisetsuName": null,
       "amount": 188071,
       "prevAmount": 224705,
+      "koPrevAmount": 10307103,
+      "kanPrevAmount": 49876279,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1144,6 +1250,8 @@
       "saisetsuName": null,
       "amount": 1521414,
       "prevAmount": 1532696,
+      "koPrevAmount": 10307103,
+      "kanPrevAmount": 49876279,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1165,6 +1273,8 @@
       "saisetsuName": null,
       "amount": 38042,
       "prevAmount": 30898,
+      "koPrevAmount": 10307103,
+      "kanPrevAmount": 49876279,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1186,6 +1296,8 @@
       "saisetsuName": null,
       "amount": 9,
       "prevAmount": 9,
+      "koPrevAmount": 10307103,
+      "kanPrevAmount": 49876279,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1207,6 +1319,8 @@
       "saisetsuName": null,
       "amount": 342697,
       "prevAmount": 366837,
+      "koPrevAmount": 10307103,
+      "kanPrevAmount": 49876279,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1228,6 +1342,8 @@
       "saisetsuName": null,
       "amount": 779,
       "prevAmount": 1016,
+      "koPrevAmount": 10307103,
+      "kanPrevAmount": 49876279,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1249,6 +1365,8 @@
       "saisetsuName": null,
       "amount": 5737626,
       "prevAmount": 5405299,
+      "koPrevAmount": 10307103,
+      "kanPrevAmount": 49876279,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1270,6 +1388,8 @@
       "saisetsuName": null,
       "amount": 210063,
       "prevAmount": 209113,
+      "koPrevAmount": 10307103,
+      "kanPrevAmount": 49876279,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1291,6 +1411,8 @@
       "saisetsuName": null,
       "amount": 70540,
       "prevAmount": 76360,
+      "koPrevAmount": 10307103,
+      "kanPrevAmount": 49876279,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1312,6 +1434,8 @@
       "saisetsuName": null,
       "amount": 2257893,
       "prevAmount": 2292774,
+      "koPrevAmount": 10307103,
+      "kanPrevAmount": 49876279,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1333,6 +1457,8 @@
       "saisetsuName": null,
       "amount": 10,
       "prevAmount": 12,
+      "koPrevAmount": 10307103,
+      "kanPrevAmount": 49876279,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1354,6 +1480,8 @@
       "saisetsuName": null,
       "amount": 161953,
       "prevAmount": 142041,
+      "koPrevAmount": 10307103,
+      "kanPrevAmount": 49876279,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1375,6 +1503,8 @@
       "saisetsuName": null,
       "amount": 25419,
       "prevAmount": 25343,
+      "koPrevAmount": 10307103,
+      "kanPrevAmount": 49876279,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1396,6 +1526,8 @@
       "saisetsuName": null,
       "amount": 104714730,
       "prevAmount": 102065538,
+      "koPrevAmount": 287856867,
+      "kanPrevAmount": 335416392,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1417,6 +1549,8 @@
       "saisetsuName": null,
       "amount": 160069390,
       "prevAmount": 138978509,
+      "koPrevAmount": 287856867,
+      "kanPrevAmount": 335416392,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1438,6 +1572,8 @@
       "saisetsuName": null,
       "amount": 36906960,
       "prevAmount": 36886670,
+      "koPrevAmount": 287856867,
+      "kanPrevAmount": 335416392,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1459,6 +1595,8 @@
       "saisetsuName": null,
       "amount": 187224,
       "prevAmount": 230925,
+      "koPrevAmount": 46349321,
+      "kanPrevAmount": 335416392,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1480,6 +1618,8 @@
       "saisetsuName": null,
       "amount": 8755851,
       "prevAmount": 4945315,
+      "koPrevAmount": 46349321,
+      "kanPrevAmount": 335416392,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1501,6 +1641,8 @@
       "saisetsuName": null,
       "amount": 972056,
       "prevAmount": 1293492,
+      "koPrevAmount": 46349321,
+      "kanPrevAmount": 335416392,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1522,6 +1664,8 @@
       "saisetsuName": null,
       "amount": 5070500,
       "prevAmount": null,
+      "koPrevAmount": 46349321,
+      "kanPrevAmount": 335416392,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1543,6 +1687,8 @@
       "saisetsuName": null,
       "amount": 14318744,
       "prevAmount": 13139836,
+      "koPrevAmount": 46349321,
+      "kanPrevAmount": 335416392,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1564,6 +1710,8 @@
       "saisetsuName": null,
       "amount": 14372082,
       "prevAmount": 5497781,
+      "koPrevAmount": 46349321,
+      "kanPrevAmount": 335416392,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1585,6 +1733,8 @@
       "saisetsuName": null,
       "amount": 3660402,
       "prevAmount": 2453810,
+      "koPrevAmount": 46349321,
+      "kanPrevAmount": 335416392,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1606,6 +1756,8 @@
       "saisetsuName": null,
       "amount": 921629,
       "prevAmount": 853001,
+      "koPrevAmount": 46349321,
+      "kanPrevAmount": 335416392,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1627,6 +1779,8 @@
       "saisetsuName": null,
       "amount": 3054060,
       "prevAmount": 2859745,
+      "koPrevAmount": 46349321,
+      "kanPrevAmount": 335416392,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1648,6 +1802,8 @@
       "saisetsuName": null,
       "amount": 1523591,
       "prevAmount": 1058045,
+      "koPrevAmount": 46349321,
+      "kanPrevAmount": 335416392,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1669,6 +1825,8 @@
       "saisetsuName": null,
       "amount": 14333735,
       "prevAmount": 6908276,
+      "koPrevAmount": 46349321,
+      "kanPrevAmount": 335416392,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1690,6 +1848,8 @@
       "saisetsuName": null,
       "amount": 909981,
       "prevAmount": 3027050,
+      "koPrevAmount": 46349321,
+      "kanPrevAmount": 335416392,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1711,6 +1871,8 @@
       "saisetsuName": null,
       "amount": 178871,
       "prevAmount": 93808,
+      "koPrevAmount": 46349321,
+      "kanPrevAmount": 335416392,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1732,6 +1894,8 @@
       "saisetsuName": null,
       "amount": 5892077,
       "prevAmount": 3850084,
+      "koPrevAmount": 46349321,
+      "kanPrevAmount": 335416392,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1753,6 +1917,8 @@
       "saisetsuName": null,
       "amount": 169500,
       "prevAmount": 138153,
+      "koPrevAmount": 46349321,
+      "kanPrevAmount": 335416392,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1774,6 +1940,8 @@
       "saisetsuName": null,
       "amount": 8906365,
       "prevAmount": null,
+      "koPrevAmount": 46349321,
+      "kanPrevAmount": 335416392,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1795,6 +1963,8 @@
       "saisetsuName": null,
       "amount": 710,
       "prevAmount": 710,
+      "koPrevAmount": 1210204,
+      "kanPrevAmount": 335416392,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1816,6 +1986,8 @@
       "saisetsuName": null,
       "amount": 43358,
       "prevAmount": 39508,
+      "koPrevAmount": 1210204,
+      "kanPrevAmount": 335416392,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1837,6 +2009,8 @@
       "saisetsuName": null,
       "amount": 129427,
       "prevAmount": 127480,
+      "koPrevAmount": 1210204,
+      "kanPrevAmount": 335416392,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1858,6 +2032,8 @@
       "saisetsuName": null,
       "amount": 31728,
       "prevAmount": 27771,
+      "koPrevAmount": 1210204,
+      "kanPrevAmount": 335416392,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1879,6 +2055,8 @@
       "saisetsuName": null,
       "amount": 936454,
       "prevAmount": 872644,
+      "koPrevAmount": 1210204,
+      "kanPrevAmount": 335416392,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1900,6 +2078,8 @@
       "saisetsuName": null,
       "amount": 1300,
       "prevAmount": 1300,
+      "koPrevAmount": 1210204,
+      "kanPrevAmount": 335416392,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1921,6 +2101,8 @@
       "saisetsuName": null,
       "amount": 133801,
       "prevAmount": 140791,
+      "koPrevAmount": 1210204,
+      "kanPrevAmount": 335416392,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1942,6 +2124,8 @@
       "saisetsuName": null,
       "amount": 263000,
       "prevAmount": 290025,
+      "koPrevAmount": 64846680,
+      "kanPrevAmount": 89871685,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1963,6 +2147,8 @@
       "saisetsuName": null,
       "amount": 35418947,
       "prevAmount": 34778521,
+      "koPrevAmount": 64846680,
+      "kanPrevAmount": 89871685,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -1984,6 +2170,8 @@
       "saisetsuName": null,
       "amount": 30271797,
       "prevAmount": 29708526,
+      "koPrevAmount": 64846680,
+      "kanPrevAmount": 89871685,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2005,6 +2193,8 @@
       "saisetsuName": null,
       "amount": 31328,
       "prevAmount": 35289,
+      "koPrevAmount": 64846680,
+      "kanPrevAmount": 89871685,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2026,6 +2216,8 @@
       "saisetsuName": null,
       "amount": 929,
       "prevAmount": 944,
+      "koPrevAmount": 64846680,
+      "kanPrevAmount": 89871685,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2047,6 +2239,8 @@
       "saisetsuName": null,
       "amount": 34857,
       "prevAmount": 6900,
+      "koPrevAmount": 64846680,
+      "kanPrevAmount": 89871685,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2068,6 +2262,8 @@
       "saisetsuName": null,
       "amount": 10000,
       "prevAmount": null,
+      "koPrevAmount": 64846680,
+      "kanPrevAmount": 89871685,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2089,6 +2285,8 @@
       "saisetsuName": null,
       "amount": 73,
       "prevAmount": 1189,
+      "koPrevAmount": 64846680,
+      "kanPrevAmount": 89871685,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2110,6 +2308,8 @@
       "saisetsuName": null,
       "amount": 25286,
       "prevAmount": 25286,
+      "koPrevAmount": 64846680,
+      "kanPrevAmount": 89871685,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2131,6 +2331,8 @@
       "saisetsuName": null,
       "amount": 50506,
       "prevAmount": 38286,
+      "koPrevAmount": 16778083,
+      "kanPrevAmount": 89871685,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2152,6 +2354,8 @@
       "saisetsuName": null,
       "amount": 598013,
       "prevAmount": 49078,
+      "koPrevAmount": 16778083,
+      "kanPrevAmount": 89871685,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2173,6 +2377,8 @@
       "saisetsuName": null,
       "amount": 37417,
       "prevAmount": 48724,
+      "koPrevAmount": 16778083,
+      "kanPrevAmount": 89871685,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2194,6 +2400,8 @@
       "saisetsuName": null,
       "amount": 7301522,
       "prevAmount": 6347127,
+      "koPrevAmount": 16778083,
+      "kanPrevAmount": 89871685,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2215,6 +2423,8 @@
       "saisetsuName": null,
       "amount": 11005447,
       "prevAmount": 9055959,
+      "koPrevAmount": 16778083,
+      "kanPrevAmount": 89871685,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2236,6 +2446,8 @@
       "saisetsuName": null,
       "amount": 38288,
       "prevAmount": 38388,
+      "koPrevAmount": 16778083,
+      "kanPrevAmount": 89871685,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2257,6 +2469,8 @@
       "saisetsuName": null,
       "amount": 137252,
       "prevAmount": 61677,
+      "koPrevAmount": 16778083,
+      "kanPrevAmount": 89871685,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2278,6 +2492,8 @@
       "saisetsuName": null,
       "amount": 724071,
       "prevAmount": 758738,
+      "koPrevAmount": 16778083,
+      "kanPrevAmount": 89871685,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2299,6 +2515,8 @@
       "saisetsuName": null,
       "amount": 422572,
       "prevAmount": 360072,
+      "koPrevAmount": 16778083,
+      "kanPrevAmount": 89871685,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2320,6 +2538,8 @@
       "saisetsuName": null,
       "amount": 4824,
       "prevAmount": 5998,
+      "koPrevAmount": 16778083,
+      "kanPrevAmount": 89871685,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2341,6 +2561,8 @@
       "saisetsuName": null,
       "amount": 7828200,
       "prevAmount": 8053936,
+      "koPrevAmount": 8246922,
+      "kanPrevAmount": 89871685,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2362,6 +2584,8 @@
       "saisetsuName": null,
       "amount": 193222,
       "prevAmount": 142666,
+      "koPrevAmount": 8246922,
+      "kanPrevAmount": 89871685,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2383,6 +2607,8 @@
       "saisetsuName": null,
       "amount": 47921,
       "prevAmount": 47237,
+      "koPrevAmount": 8246922,
+      "kanPrevAmount": 89871685,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2404,6 +2630,8 @@
       "saisetsuName": null,
       "amount": 1835,
       "prevAmount": 1835,
+      "koPrevAmount": 8246922,
+      "kanPrevAmount": 89871685,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2425,6 +2653,8 @@
       "saisetsuName": null,
       "amount": 1290,
       "prevAmount": 1248,
+      "koPrevAmount": 8246922,
+      "kanPrevAmount": 89871685,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2446,6 +2676,8 @@
       "saisetsuName": null,
       "amount": 5745295,
       "prevAmount": 5439515,
+      "koPrevAmount": 5715370,
+      "kanPrevAmount": 14596267,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2467,6 +2699,8 @@
       "saisetsuName": null,
       "amount": 285101,
       "prevAmount": 275855,
+      "koPrevAmount": 5715370,
+      "kanPrevAmount": 14596267,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2488,6 +2722,8 @@
       "saisetsuName": null,
       "amount": 7630927,
       "prevAmount": 8836715,
+      "koPrevAmount": 8880897,
+      "kanPrevAmount": 14596267,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2509,6 +2745,8 @@
       "saisetsuName": null,
       "amount": 43962,
       "prevAmount": 33852,
+      "koPrevAmount": 8880897,
+      "kanPrevAmount": 14596267,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2530,6 +2768,8 @@
       "saisetsuName": null,
       "amount": 7333,
       "prevAmount": 10330,
+      "koPrevAmount": 8880897,
+      "kanPrevAmount": 14596267,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2551,6 +2791,8 @@
       "saisetsuName": null,
       "amount": 33800000,
       "prevAmount": null,
+      "koPrevAmount": 8880897,
+      "kanPrevAmount": 14596267,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2572,6 +2814,8 @@
       "saisetsuName": null,
       "amount": 409500,
       "prevAmount": null,
+      "koPrevAmount": 8880897,
+      "kanPrevAmount": 14596267,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2593,6 +2837,8 @@
       "saisetsuName": null,
       "amount": 674088,
       "prevAmount": 732859,
+      "koPrevAmount": 1079821,
+      "kanPrevAmount": 1079821,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2614,6 +2860,8 @@
       "saisetsuName": null,
       "amount": 486917,
       "prevAmount": 346962,
+      "koPrevAmount": 1079821,
+      "kanPrevAmount": 1079821,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2635,6 +2883,8 @@
       "saisetsuName": null,
       "amount": 4293536,
       "prevAmount": 2109221,
+      "koPrevAmount": 2109221,
+      "kanPrevAmount": 33017635,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2656,6 +2906,8 @@
       "saisetsuName": null,
       "amount": 5400000,
       "prevAmount": 4138889,
+      "koPrevAmount": 4138889,
+      "kanPrevAmount": 33017635,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2677,6 +2929,8 @@
       "saisetsuName": null,
       "amount": 244066,
       "prevAmount": 190263,
+      "koPrevAmount": 190263,
+      "kanPrevAmount": 33017635,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2698,6 +2952,8 @@
       "saisetsuName": null,
       "amount": 36446,
       "prevAmount": 38171,
+      "koPrevAmount": 38171,
+      "kanPrevAmount": 33017635,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2719,6 +2975,8 @@
       "saisetsuName": null,
       "amount": 230000,
       "prevAmount": 200000,
+      "koPrevAmount": 200000,
+      "kanPrevAmount": 33017635,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2740,6 +2998,8 @@
       "saisetsuName": null,
       "amount": 71671,
       "prevAmount": 60539,
+      "koPrevAmount": 60539,
+      "kanPrevAmount": 33017635,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2761,6 +3021,8 @@
       "saisetsuName": null,
       "amount": 83516,
       "prevAmount": 71736,
+      "koPrevAmount": 71736,
+      "kanPrevAmount": 33017635,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2782,6 +3044,8 @@
       "saisetsuName": null,
       "amount": 11200,
       "prevAmount": 11200,
+      "koPrevAmount": 11200,
+      "kanPrevAmount": 33017635,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2803,6 +3067,8 @@
       "saisetsuName": null,
       "amount": 35000,
       "prevAmount": 25000,
+      "koPrevAmount": 25000,
+      "kanPrevAmount": 33017635,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2824,6 +3090,8 @@
       "saisetsuName": null,
       "amount": 9000,
       "prevAmount": 9000,
+      "koPrevAmount": 9000,
+      "kanPrevAmount": 33017635,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2845,6 +3113,8 @@
       "saisetsuName": null,
       "amount": 263231,
       "prevAmount": 211866,
+      "koPrevAmount": 211866,
+      "kanPrevAmount": 33017635,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2866,6 +3136,8 @@
       "saisetsuName": null,
       "amount": 56760,
       "prevAmount": null,
+      "koPrevAmount": null,
+      "kanPrevAmount": 33017635,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2887,6 +3159,8 @@
       "saisetsuName": null,
       "amount": 24314985,
       "prevAmount": 25921750,
+      "koPrevAmount": 25921750,
+      "kanPrevAmount": 33017635,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2908,6 +3182,8 @@
       "saisetsuName": null,
       "amount": 1,
       "prevAmount": 1,
+      "koPrevAmount": 1,
+      "kanPrevAmount": 1,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2929,6 +3205,8 @@
       "saisetsuName": null,
       "amount": 344285,
       "prevAmount": 390159,
+      "koPrevAmount": 394171,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2950,6 +3228,8 @@
       "saisetsuName": null,
       "amount": 1,
       "prevAmount": 1,
+      "koPrevAmount": 394171,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2971,6 +3251,8 @@
       "saisetsuName": null,
       "amount": 4011,
       "prevAmount": 4011,
+      "koPrevAmount": 394171,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -2992,6 +3274,8 @@
       "saisetsuName": null,
       "amount": 1500,
       "prevAmount": 2000,
+      "koPrevAmount": 2000,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3013,6 +3297,8 @@
       "saisetsuName": null,
       "amount": 1391166,
       "prevAmount": 1876943,
+      "koPrevAmount": 47832751,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3034,6 +3320,8 @@
       "saisetsuName": null,
       "amount": 30599,
       "prevAmount": 80954,
+      "koPrevAmount": 47832751,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3055,6 +3343,8 @@
       "saisetsuName": null,
       "amount": 54708,
       "prevAmount": 2742087,
+      "koPrevAmount": 47832751,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3076,6 +3366,8 @@
       "saisetsuName": null,
       "amount": 192545066,
       "prevAmount": 36070141,
+      "koPrevAmount": 47832751,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3097,6 +3389,8 @@
       "saisetsuName": null,
       "amount": 46452,
       "prevAmount": 72017,
+      "koPrevAmount": 47832751,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3118,6 +3412,8 @@
       "saisetsuName": null,
       "amount": 70110,
       "prevAmount": 70110,
+      "koPrevAmount": 47832751,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3139,6 +3435,8 @@
       "saisetsuName": null,
       "amount": 1112,
       "prevAmount": 1112,
+      "koPrevAmount": 47832751,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3160,6 +3458,8 @@
       "saisetsuName": null,
       "amount": 94892,
       "prevAmount": 97281,
+      "koPrevAmount": 47832751,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3181,6 +3481,8 @@
       "saisetsuName": null,
       "amount": 32500000,
       "prevAmount": 5300000,
+      "koPrevAmount": 47832751,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3202,6 +3504,8 @@
       "saisetsuName": null,
       "amount": 243391,
       "prevAmount": 378600,
+      "koPrevAmount": 47832751,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3223,6 +3527,8 @@
       "saisetsuName": null,
       "amount": 5478,
       "prevAmount": 7867,
+      "koPrevAmount": 47832751,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3244,6 +3550,8 @@
       "saisetsuName": null,
       "amount": 10000000,
       "prevAmount": 10000000,
+      "koPrevAmount": 10000000,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3265,6 +3573,8 @@
       "saisetsuName": null,
       "amount": 1534922,
       "prevAmount": 1769192,
+      "koPrevAmount": 14290831,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3286,6 +3596,8 @@
       "saisetsuName": null,
       "amount": 235969,
       "prevAmount": 207726,
+      "koPrevAmount": 14290831,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3307,6 +3619,8 @@
       "saisetsuName": null,
       "amount": 328825,
       "prevAmount": 470940,
+      "koPrevAmount": 14290831,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3328,6 +3642,8 @@
       "saisetsuName": null,
       "amount": 820318,
       "prevAmount": 808959,
+      "koPrevAmount": 14290831,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3349,6 +3665,8 @@
       "saisetsuName": null,
       "amount": 2043375,
       "prevAmount": 1898314,
+      "koPrevAmount": 14290831,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3370,6 +3688,8 @@
       "saisetsuName": null,
       "amount": 580813,
       "prevAmount": 743859,
+      "koPrevAmount": 14290831,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3391,6 +3711,8 @@
       "saisetsuName": null,
       "amount": 4399122,
       "prevAmount": 4443929,
+      "koPrevAmount": 14290831,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3412,6 +3734,8 @@
       "saisetsuName": null,
       "amount": 143699,
       "prevAmount": 108434,
+      "koPrevAmount": 14290831,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3433,6 +3757,8 @@
       "saisetsuName": null,
       "amount": 59631,
       "prevAmount": 59631,
+      "koPrevAmount": 14290831,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3454,6 +3780,8 @@
       "saisetsuName": null,
       "amount": 226903,
       "prevAmount": 227860,
+      "koPrevAmount": 14290831,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3475,6 +3803,8 @@
       "saisetsuName": null,
       "amount": 630169,
       "prevAmount": 607417,
+      "koPrevAmount": 14290831,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3496,6 +3826,8 @@
       "saisetsuName": null,
       "amount": 184897,
       "prevAmount": 296904,
+      "koPrevAmount": 14290831,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3517,6 +3849,8 @@
       "saisetsuName": null,
       "amount": 93440,
       "prevAmount": 102277,
+      "koPrevAmount": 14290831,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3538,6 +3872,8 @@
       "saisetsuName": null,
       "amount": 2310769,
       "prevAmount": 2278442,
+      "koPrevAmount": 14290831,
+      "kanPrevAmount": 72519753,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3559,6 +3895,8 @@
       "saisetsuName": null,
       "amount": 2527000,
       "prevAmount": 5414000,
+      "koPrevAmount": 126661000,
+      "kanPrevAmount": 126661000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3580,6 +3918,8 @@
       "saisetsuName": null,
       "amount": 3480000,
       "prevAmount": 6398000,
+      "koPrevAmount": 126661000,
+      "kanPrevAmount": 126661000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3601,6 +3941,8 @@
       "saisetsuName": null,
       "amount": 5247000,
       "prevAmount": 1792000,
+      "koPrevAmount": 126661000,
+      "kanPrevAmount": 126661000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3622,6 +3964,8 @@
       "saisetsuName": null,
       "amount": 1560000,
       "prevAmount": 1249000,
+      "koPrevAmount": 126661000,
+      "kanPrevAmount": 126661000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3643,6 +3987,8 @@
       "saisetsuName": null,
       "amount": 6477000,
       "prevAmount": 3205000,
+      "koPrevAmount": 126661000,
+      "kanPrevAmount": 126661000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3664,6 +4010,8 @@
       "saisetsuName": null,
       "amount": 6631000,
       "prevAmount": 7253000,
+      "koPrevAmount": 126661000,
+      "kanPrevAmount": 126661000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3685,6 +4033,8 @@
       "saisetsuName": null,
       "amount": 4051000,
       "prevAmount": 2979000,
+      "koPrevAmount": 126661000,
+      "kanPrevAmount": 126661000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3706,6 +4056,8 @@
       "saisetsuName": null,
       "amount": 4161000,
       "prevAmount": 4111000,
+      "koPrevAmount": 126661000,
+      "kanPrevAmount": 126661000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3727,6 +4079,8 @@
       "saisetsuName": null,
       "amount": 10055000,
       "prevAmount": 9677000,
+      "koPrevAmount": 126661000,
+      "kanPrevAmount": 126661000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3748,6 +4102,8 @@
       "saisetsuName": null,
       "amount": 22709000,
       "prevAmount": 26450000,
+      "koPrevAmount": 126661000,
+      "kanPrevAmount": 126661000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3769,6 +4125,8 @@
       "saisetsuName": null,
       "amount": 3554000,
       "prevAmount": 4629000,
+      "koPrevAmount": 126661000,
+      "kanPrevAmount": 126661000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3790,6 +4148,8 @@
       "saisetsuName": null,
       "amount": 2961000,
       "prevAmount": 2139000,
+      "koPrevAmount": 126661000,
+      "kanPrevAmount": 126661000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3811,6 +4171,8 @@
       "saisetsuName": null,
       "amount": 16686000,
       "prevAmount": 17920000,
+      "koPrevAmount": 126661000,
+      "kanPrevAmount": 126661000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3832,6 +4194,8 @@
       "saisetsuName": null,
       "amount": 3691000,
       "prevAmount": 3445000,
+      "koPrevAmount": 126661000,
+      "kanPrevAmount": 126661000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3853,6 +4217,8 @@
       "saisetsuName": null,
       "amount": 78000000,
       "prevAmount": 30000000,
+      "koPrevAmount": 126661000,
+      "kanPrevAmount": 126661000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "07歳入事項別"
@@ -3874,6 +4240,8 @@
       "saisetsuName": null,
       "amount": 3095987,
       "prevAmount": 3118043,
+      "koPrevAmount": 3118043,
+      "kanPrevAmount": 3118043,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -3895,6 +4263,8 @@
       "saisetsuName": null,
       "amount": 19273418,
       "prevAmount": 20380484,
+      "koPrevAmount": 22089671,
+      "kanPrevAmount": 83978320,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -3916,6 +4286,8 @@
       "saisetsuName": null,
       "amount": 137151,
       "prevAmount": 1709187,
+      "koPrevAmount": 22089671,
+      "kanPrevAmount": 83978320,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -3937,6 +4309,8 @@
       "saisetsuName": null,
       "amount": 1531875,
       "prevAmount": 1665601,
+      "koPrevAmount": 1665601,
+      "kanPrevAmount": 83978320,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -3958,6 +4332,8 @@
       "saisetsuName": null,
       "amount": 8718951,
       "prevAmount": 18799492,
+      "koPrevAmount": 41071855,
+      "kanPrevAmount": 83978320,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -3979,6 +4355,8 @@
       "saisetsuName": null,
       "amount": 14732599,
       "prevAmount": 14927398,
+      "koPrevAmount": 41071855,
+      "kanPrevAmount": 83978320,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4000,6 +4378,8 @@
       "saisetsuName": null,
       "amount": 5516750,
       "prevAmount": 4886069,
+      "koPrevAmount": 41071855,
+      "kanPrevAmount": 83978320,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4021,6 +4401,8 @@
       "saisetsuName": null,
       "amount": 2039679,
       "prevAmount": 2458896,
+      "koPrevAmount": 41071855,
+      "kanPrevAmount": 83978320,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4042,6 +4424,8 @@
       "saisetsuName": null,
       "amount": 3055927,
       "prevAmount": 2478076,
+      "koPrevAmount": 2644265,
+      "kanPrevAmount": 83978320,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4063,6 +4447,8 @@
       "saisetsuName": null,
       "amount": 205255,
       "prevAmount": 166189,
+      "koPrevAmount": 2644265,
+      "kanPrevAmount": 83978320,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4084,6 +4470,8 @@
       "saisetsuName": null,
       "amount": 8970369,
       "prevAmount": 9083771,
+      "koPrevAmount": 13312208,
+      "kanPrevAmount": 83978320,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4105,6 +4493,8 @@
       "saisetsuName": null,
       "amount": 4226964,
       "prevAmount": 4228437,
+      "koPrevAmount": 13312208,
+      "kanPrevAmount": 83978320,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4126,6 +4516,8 @@
       "saisetsuName": null,
       "amount": 1522678,
       "prevAmount": 1581823,
+      "koPrevAmount": 1581823,
+      "kanPrevAmount": 83978320,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4147,6 +4539,8 @@
       "saisetsuName": null,
       "amount": 266844,
       "prevAmount": 270330,
+      "koPrevAmount": 270330,
+      "kanPrevAmount": 83978320,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4168,6 +4562,8 @@
       "saisetsuName": null,
       "amount": 406454,
       "prevAmount": 423502,
+      "koPrevAmount": 441007,
+      "kanPrevAmount": 83978320,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4189,6 +4585,8 @@
       "saisetsuName": null,
       "amount": 17505,
       "prevAmount": 17505,
+      "koPrevAmount": 441007,
+      "kanPrevAmount": 83978320,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4210,6 +4608,8 @@
       "saisetsuName": null,
       "amount": 833045,
       "prevAmount": 901560,
+      "koPrevAmount": 901560,
+      "kanPrevAmount": 83978320,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4231,6 +4631,8 @@
       "saisetsuName": null,
       "amount": 1300000,
       "prevAmount": null,
+      "koPrevAmount": 901560,
+      "kanPrevAmount": 83978320,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4252,6 +4654,8 @@
       "saisetsuName": null,
       "amount": 1346070,
       "prevAmount": null,
+      "koPrevAmount": 901560,
+      "kanPrevAmount": 83978320,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4273,6 +4677,8 @@
       "saisetsuName": null,
       "amount": 13396447,
       "prevAmount": 13242676,
+      "koPrevAmount": 22851509,
+      "kanPrevAmount": 51662729,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4294,6 +4700,8 @@
       "saisetsuName": null,
       "amount": 53134,
       "prevAmount": 52630,
+      "koPrevAmount": 22851509,
+      "kanPrevAmount": 51662729,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4315,6 +4723,8 @@
       "saisetsuName": null,
       "amount": 1094779,
       "prevAmount": 1075464,
+      "koPrevAmount": 22851509,
+      "kanPrevAmount": 51662729,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4336,6 +4746,8 @@
       "saisetsuName": null,
       "amount": 2518262,
       "prevAmount": 2164535,
+      "koPrevAmount": 22851509,
+      "kanPrevAmount": 51662729,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4357,6 +4769,8 @@
       "saisetsuName": null,
       "amount": 4945942,
       "prevAmount": 6316204,
+      "koPrevAmount": 22851509,
+      "kanPrevAmount": 51662729,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4378,6 +4792,8 @@
       "saisetsuName": null,
       "amount": 15509285,
       "prevAmount": 15537297,
+      "koPrevAmount": 28811220,
+      "kanPrevAmount": 51662729,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4399,6 +4815,8 @@
       "saisetsuName": null,
       "amount": 10118957,
       "prevAmount": 6275999,
+      "koPrevAmount": 28811220,
+      "kanPrevAmount": 51662729,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4420,6 +4838,8 @@
       "saisetsuName": null,
       "amount": 4641162,
       "prevAmount": 6997924,
+      "koPrevAmount": 28811220,
+      "kanPrevAmount": 51662729,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4441,6 +4861,8 @@
       "saisetsuName": null,
       "amount": 1319437,
       "prevAmount": 1399255,
+      "koPrevAmount": 14283901,
+      "kanPrevAmount": 14283901,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4462,6 +4884,8 @@
       "saisetsuName": null,
       "amount": 10810187,
       "prevAmount": 7341571,
+      "koPrevAmount": 14283901,
+      "kanPrevAmount": 14283901,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4483,6 +4907,8 @@
       "saisetsuName": null,
       "amount": 548360,
       "prevAmount": 570200,
+      "koPrevAmount": 14283901,
+      "kanPrevAmount": 14283901,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4504,6 +4930,8 @@
       "saisetsuName": null,
       "amount": 5793637,
       "prevAmount": 4972875,
+      "koPrevAmount": 14283901,
+      "kanPrevAmount": 14283901,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4525,6 +4953,8 @@
       "saisetsuName": null,
       "amount": 1690537,
       "prevAmount": 1671897,
+      "koPrevAmount": 43609572,
+      "kanPrevAmount": 43609572,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4546,6 +4976,8 @@
       "saisetsuName": null,
       "amount": 2726018,
       "prevAmount": 2592412,
+      "koPrevAmount": 43609572,
+      "kanPrevAmount": 43609572,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4567,6 +4999,8 @@
       "saisetsuName": null,
       "amount": 672867,
       "prevAmount": 804305,
+      "koPrevAmount": 43609572,
+      "kanPrevAmount": 43609572,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4588,6 +5022,8 @@
       "saisetsuName": null,
       "amount": 942087,
       "prevAmount": 446605,
+      "koPrevAmount": 43609572,
+      "kanPrevAmount": 43609572,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4609,6 +5045,8 @@
       "saisetsuName": null,
       "amount": 198037456,
       "prevAmount": 36693150,
+      "koPrevAmount": 43609572,
+      "kanPrevAmount": 43609572,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4630,6 +5068,8 @@
       "saisetsuName": null,
       "amount": 268000,
       "prevAmount": 253621,
+      "koPrevAmount": 43609572,
+      "kanPrevAmount": 43609572,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4651,6 +5091,8 @@
       "saisetsuName": null,
       "amount": 350319,
       "prevAmount": 336689,
+      "koPrevAmount": 43609572,
+      "kanPrevAmount": 43609572,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4672,6 +5114,8 @@
       "saisetsuName": null,
       "amount": 817755,
       "prevAmount": 810893,
+      "koPrevAmount": 43609572,
+      "kanPrevAmount": 43609572,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4693,6 +5137,8 @@
       "saisetsuName": null,
       "amount": 21409016,
       "prevAmount": 21132044,
+      "koPrevAmount": 22404209,
+      "kanPrevAmount": 307930695,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4714,6 +5160,8 @@
       "saisetsuName": null,
       "amount": 1325683,
       "prevAmount": 1272165,
+      "koPrevAmount": 22404209,
+      "kanPrevAmount": 307930695,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4735,6 +5183,8 @@
       "saisetsuName": null,
       "amount": 2685489,
       "prevAmount": 2311493,
+      "koPrevAmount": 187966013,
+      "kanPrevAmount": 307930695,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4756,6 +5206,8 @@
       "saisetsuName": null,
       "amount": 169052847,
       "prevAmount": 161644613,
+      "koPrevAmount": 187966013,
+      "kanPrevAmount": 307930695,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4777,6 +5229,8 @@
       "saisetsuName": null,
       "amount": 11053596,
       "prevAmount": 11941633,
+      "koPrevAmount": 187966013,
+      "kanPrevAmount": 307930695,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4798,6 +5252,8 @@
       "saisetsuName": null,
       "amount": 9741947,
       "prevAmount": 8830475,
+      "koPrevAmount": 187966013,
+      "kanPrevAmount": 307930695,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4819,6 +5275,8 @@
       "saisetsuName": null,
       "amount": 3070513,
       "prevAmount": 3237799,
+      "koPrevAmount": 187966013,
+      "kanPrevAmount": 307930695,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4840,6 +5298,8 @@
       "saisetsuName": null,
       "amount": 9597418,
       "prevAmount": 9494676,
+      "koPrevAmount": 97560473,
+      "kanPrevAmount": 307930695,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4861,6 +5321,8 @@
       "saisetsuName": null,
       "amount": 16707766,
       "prevAmount": 14976849,
+      "koPrevAmount": 97560473,
+      "kanPrevAmount": 307930695,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4882,6 +5344,8 @@
       "saisetsuName": null,
       "amount": 6290051,
       "prevAmount": 4771873,
+      "koPrevAmount": 97560473,
+      "kanPrevAmount": 307930695,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4903,6 +5367,8 @@
       "saisetsuName": null,
       "amount": 60692115,
       "prevAmount": 62072655,
+      "koPrevAmount": 97560473,
+      "kanPrevAmount": 307930695,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4924,6 +5390,8 @@
       "saisetsuName": null,
       "amount": 3781363,
       "prevAmount": 3770555,
+      "koPrevAmount": 97560473,
+      "kanPrevAmount": 307930695,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4945,6 +5413,8 @@
       "saisetsuName": null,
       "amount": 1891748,
       "prevAmount": 1671118,
+      "koPrevAmount": 97560473,
+      "kanPrevAmount": 307930695,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4966,6 +5436,8 @@
       "saisetsuName": null,
       "amount": 1524217,
       "prevAmount": 802747,
+      "koPrevAmount": 97560473,
+      "kanPrevAmount": 307930695,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -4987,6 +5459,8 @@
       "saisetsuName": null,
       "amount": 26851570,
       "prevAmount": 26244093,
+      "koPrevAmount": 44719948,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5008,6 +5482,8 @@
       "saisetsuName": null,
       "amount": 6172408,
       "prevAmount": 6057137,
+      "koPrevAmount": 44719948,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5029,6 +5505,8 @@
       "saisetsuName": null,
       "amount": 155979,
       "prevAmount": 161972,
+      "koPrevAmount": 44719948,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5050,6 +5528,8 @@
       "saisetsuName": null,
       "amount": 1566189,
       "prevAmount": 1636958,
+      "koPrevAmount": 44719948,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5071,6 +5551,8 @@
       "saisetsuName": null,
       "amount": 10481596,
       "prevAmount": 10619788,
+      "koPrevAmount": 44719948,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5092,6 +5574,8 @@
       "saisetsuName": null,
       "amount": 97811347,
       "prevAmount": 96185824,
+      "koPrevAmount": 117404031,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5113,6 +5597,8 @@
       "saisetsuName": null,
       "amount": 637335,
       "prevAmount": 628688,
+      "koPrevAmount": 117404031,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5134,6 +5620,8 @@
       "saisetsuName": null,
       "amount": 1094410,
       "prevAmount": 1088474,
+      "koPrevAmount": 117404031,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5155,6 +5643,8 @@
       "saisetsuName": null,
       "amount": 16234152,
       "prevAmount": 15806370,
+      "koPrevAmount": 117404031,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5176,6 +5666,8 @@
       "saisetsuName": null,
       "amount": 768979,
       "prevAmount": 618139,
+      "koPrevAmount": 117404031,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5197,6 +5689,8 @@
       "saisetsuName": null,
       "amount": 3325860,
       "prevAmount": 3076536,
+      "koPrevAmount": 117404031,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5218,6 +5712,8 @@
       "saisetsuName": null,
       "amount": 3062100,
       "prevAmount": 2952637,
+      "koPrevAmount": 11747499,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5239,6 +5735,8 @@
       "saisetsuName": null,
       "amount": 10350497,
       "prevAmount": 8646381,
+      "koPrevAmount": 11747499,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5260,6 +5758,8 @@
       "saisetsuName": null,
       "amount": 137292,
       "prevAmount": 148481,
+      "koPrevAmount": 11747499,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5281,6 +5781,8 @@
       "saisetsuName": null,
       "amount": 129699497,
       "prevAmount": 127465100,
+      "koPrevAmount": 129439389,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5302,6 +5804,8 @@
       "saisetsuName": null,
       "amount": 1986919,
       "prevAmount": 1974289,
+      "koPrevAmount": 129439389,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5323,6 +5827,8 @@
       "saisetsuName": null,
       "amount": 9713764,
       "prevAmount": 6005648,
+      "koPrevAmount": 6005648,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5344,6 +5850,8 @@
       "saisetsuName": null,
       "amount": 41032040,
       "prevAmount": 10650260,
+      "koPrevAmount": 23242192,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5365,6 +5873,8 @@
       "saisetsuName": null,
       "amount": 5842967,
       "prevAmount": 5697491,
+      "koPrevAmount": 23242192,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5386,6 +5896,8 @@
       "saisetsuName": null,
       "amount": 967850,
       "prevAmount": 913695,
+      "koPrevAmount": 23242192,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5407,6 +5919,8 @@
       "saisetsuName": null,
       "amount": 5884689,
       "prevAmount": 5436356,
+      "koPrevAmount": 23242192,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5428,6 +5942,8 @@
       "saisetsuName": null,
       "amount": 543298,
       "prevAmount": 544390,
+      "koPrevAmount": 23242192,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5449,6 +5965,8 @@
       "saisetsuName": null,
       "amount": 182506,
       "prevAmount": 194546,
+      "koPrevAmount": 3202789,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5470,6 +5988,8 @@
       "saisetsuName": null,
       "amount": 254820,
       "prevAmount": 242905,
+      "koPrevAmount": 3202789,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5491,6 +6011,8 @@
       "saisetsuName": null,
       "amount": 82221,
       "prevAmount": 79728,
+      "koPrevAmount": 3202789,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5512,6 +6034,8 @@
       "saisetsuName": null,
       "amount": 70216,
       "prevAmount": 69830,
+      "koPrevAmount": 3202789,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5533,6 +6057,8 @@
       "saisetsuName": null,
       "amount": 2273974,
       "prevAmount": 2425153,
+      "koPrevAmount": 3202789,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5554,6 +6080,8 @@
       "saisetsuName": null,
       "amount": 185423,
       "prevAmount": 190627,
+      "koPrevAmount": 3202789,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5575,6 +6103,8 @@
       "saisetsuName": null,
       "amount": 4696156,
       "prevAmount": 3726549,
+      "koPrevAmount": 3726549,
+      "kanPrevAmount": 339488045,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5596,6 +6126,8 @@
       "saisetsuName": null,
       "amount": 6349292,
       "prevAmount": 6385850,
+      "koPrevAmount": 9305827,
+      "kanPrevAmount": 36371268,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5617,6 +6149,8 @@
       "saisetsuName": null,
       "amount": 57656,
       "prevAmount": 61977,
+      "koPrevAmount": 9305827,
+      "kanPrevAmount": 36371268,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5638,6 +6172,8 @@
       "saisetsuName": null,
       "amount": 2805000,
       "prevAmount": 2858000,
+      "koPrevAmount": 9305827,
+      "kanPrevAmount": 36371268,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5659,6 +6195,8 @@
       "saisetsuName": null,
       "amount": 40907,
       "prevAmount": 39164,
+      "koPrevAmount": 1202232,
+      "kanPrevAmount": 36371268,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5680,6 +6218,8 @@
       "saisetsuName": null,
       "amount": 76670,
       "prevAmount": 182820,
+      "koPrevAmount": 1202232,
+      "kanPrevAmount": 36371268,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5701,6 +6241,8 @@
       "saisetsuName": null,
       "amount": 181744,
       "prevAmount": 173395,
+      "koPrevAmount": 1202232,
+      "kanPrevAmount": 36371268,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5722,6 +6264,8 @@
       "saisetsuName": null,
       "amount": 868136,
       "prevAmount": 806853,
+      "koPrevAmount": 1202232,
+      "kanPrevAmount": 36371268,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5743,6 +6287,8 @@
       "saisetsuName": null,
       "amount": 429411,
       "prevAmount": 464370,
+      "koPrevAmount": 464370,
+      "kanPrevAmount": 36371268,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5764,6 +6310,8 @@
       "saisetsuName": null,
       "amount": 377517,
       "prevAmount": 450436,
+      "koPrevAmount": 1009033,
+      "kanPrevAmount": 36371268,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5785,6 +6333,8 @@
       "saisetsuName": null,
       "amount": 458953,
       "prevAmount": 458818,
+      "koPrevAmount": 1009033,
+      "kanPrevAmount": 36371268,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5806,6 +6356,8 @@
       "saisetsuName": null,
       "amount": 119294,
       "prevAmount": 99779,
+      "koPrevAmount": 1009033,
+      "kanPrevAmount": 36371268,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5827,6 +6379,8 @@
       "saisetsuName": null,
       "amount": 6950175,
       "prevAmount": 6838417,
+      "koPrevAmount": 9236397,
+      "kanPrevAmount": 36371268,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5848,6 +6402,8 @@
       "saisetsuName": null,
       "amount": 2394211,
       "prevAmount": 2397980,
+      "koPrevAmount": 9236397,
+      "kanPrevAmount": 36371268,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5869,6 +6425,8 @@
       "saisetsuName": null,
       "amount": 15809809,
       "prevAmount": 15153409,
+      "koPrevAmount": 15153409,
+      "kanPrevAmount": 36371268,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5890,6 +6448,8 @@
       "saisetsuName": null,
       "amount": 15713525,
       "prevAmount": 16084561,
+      "koPrevAmount": 22943858,
+      "kanPrevAmount": 41993265,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5911,6 +6471,8 @@
       "saisetsuName": null,
       "amount": 4988379,
       "prevAmount": 4629570,
+      "koPrevAmount": 22943858,
+      "kanPrevAmount": 41993265,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5932,6 +6494,8 @@
       "saisetsuName": null,
       "amount": 856903,
       "prevAmount": 475762,
+      "koPrevAmount": 22943858,
+      "kanPrevAmount": 41993265,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5953,6 +6517,8 @@
       "saisetsuName": null,
       "amount": 2085430,
       "prevAmount": 1753965,
+      "koPrevAmount": 22943858,
+      "kanPrevAmount": 41993265,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5974,6 +6540,8 @@
       "saisetsuName": null,
       "amount": 6390869,
       "prevAmount": 6311747,
+      "koPrevAmount": 18627823,
+      "kanPrevAmount": 41993265,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -5995,6 +6563,8 @@
       "saisetsuName": null,
       "amount": 7986398,
       "prevAmount": 8052677,
+      "koPrevAmount": 18627823,
+      "kanPrevAmount": 41993265,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6016,6 +6586,8 @@
       "saisetsuName": null,
       "amount": 3980391,
       "prevAmount": 3478845,
+      "koPrevAmount": 18627823,
+      "kanPrevAmount": 41993265,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6037,6 +6609,8 @@
       "saisetsuName": null,
       "amount": 506844,
       "prevAmount": 784554,
+      "koPrevAmount": 18627823,
+      "kanPrevAmount": 41993265,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6058,6 +6632,8 @@
       "saisetsuName": null,
       "amount": 176838,
       "prevAmount": 172479,
+      "koPrevAmount": 421584,
+      "kanPrevAmount": 41993265,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6079,6 +6655,8 @@
       "saisetsuName": null,
       "amount": 152408,
       "prevAmount": 249105,
+      "koPrevAmount": 421584,
+      "kanPrevAmount": 41993265,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6100,6 +6678,8 @@
       "saisetsuName": null,
       "amount": 7564150,
       "prevAmount": 8683986,
+      "koPrevAmount": 12476624,
+      "kanPrevAmount": 24914290,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6121,6 +6701,8 @@
       "saisetsuName": null,
       "amount": 156147,
       "prevAmount": 136131,
+      "koPrevAmount": 12476624,
+      "kanPrevAmount": 24914290,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6142,6 +6724,8 @@
       "saisetsuName": null,
       "amount": 4076138,
       "prevAmount": 3626575,
+      "koPrevAmount": 12476624,
+      "kanPrevAmount": 24914290,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6163,6 +6747,8 @@
       "saisetsuName": null,
       "amount": 30096,
       "prevAmount": 29932,
+      "koPrevAmount": 12476624,
+      "kanPrevAmount": 24914290,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6184,6 +6770,8 @@
       "saisetsuName": null,
       "amount": 7511833,
       "prevAmount": 7703730,
+      "koPrevAmount": 12437666,
+      "kanPrevAmount": 24914290,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6205,6 +6793,8 @@
       "saisetsuName": null,
       "amount": 3080894,
       "prevAmount": 2938879,
+      "koPrevAmount": 12437666,
+      "kanPrevAmount": 24914290,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6226,6 +6816,8 @@
       "saisetsuName": null,
       "amount": 1626334,
       "prevAmount": 1565780,
+      "koPrevAmount": 12437666,
+      "kanPrevAmount": 24914290,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6247,6 +6839,8 @@
       "saisetsuName": null,
       "amount": 226179,
       "prevAmount": 229277,
+      "koPrevAmount": 12437666,
+      "kanPrevAmount": 24914290,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6268,6 +6862,8 @@
       "saisetsuName": null,
       "amount": 3337849,
       "prevAmount": 2829448,
+      "koPrevAmount": 20772826,
+      "kanPrevAmount": 20772826,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6289,6 +6885,8 @@
       "saisetsuName": null,
       "amount": 10360351,
       "prevAmount": 11333064,
+      "koPrevAmount": 20772826,
+      "kanPrevAmount": 20772826,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6310,6 +6908,8 @@
       "saisetsuName": null,
       "amount": 5299614,
       "prevAmount": 6210314,
+      "koPrevAmount": 20772826,
+      "kanPrevAmount": 20772826,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6331,6 +6931,8 @@
       "saisetsuName": null,
       "amount": 360000,
       "prevAmount": 400000,
+      "koPrevAmount": 20772826,
+      "kanPrevAmount": 20772826,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6352,6 +6954,8 @@
       "saisetsuName": null,
       "amount": 6679075,
       "prevAmount": 6787186,
+      "koPrevAmount": 24608617,
+      "kanPrevAmount": 81774943,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6373,6 +6977,8 @@
       "saisetsuName": null,
       "amount": 51682,
       "prevAmount": 51682,
+      "koPrevAmount": 24608617,
+      "kanPrevAmount": 81774943,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6394,6 +7000,8 @@
       "saisetsuName": null,
       "amount": 314651,
       "prevAmount": 314762,
+      "koPrevAmount": 24608617,
+      "kanPrevAmount": 81774943,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6415,6 +7023,8 @@
       "saisetsuName": null,
       "amount": 2949004,
       "prevAmount": 2948865,
+      "koPrevAmount": 24608617,
+      "kanPrevAmount": 81774943,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6436,6 +7046,8 @@
       "saisetsuName": null,
       "amount": 12285440,
       "prevAmount": 12255533,
+      "koPrevAmount": 24608617,
+      "kanPrevAmount": 81774943,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6457,6 +7069,8 @@
       "saisetsuName": null,
       "amount": 2186984,
       "prevAmount": 2250589,
+      "koPrevAmount": 24608617,
+      "kanPrevAmount": 81774943,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6478,6 +7092,8 @@
       "saisetsuName": null,
       "amount": 723628,
       "prevAmount": 655100,
+      "koPrevAmount": 53318663,
+      "kanPrevAmount": 81774943,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6499,6 +7115,8 @@
       "saisetsuName": null,
       "amount": 246792,
       "prevAmount": 232830,
+      "koPrevAmount": 53318663,
+      "kanPrevAmount": 81774943,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6520,6 +7138,8 @@
       "saisetsuName": null,
       "amount": 13675378,
       "prevAmount": 12729850,
+      "koPrevAmount": 53318663,
+      "kanPrevAmount": 81774943,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6541,6 +7161,8 @@
       "saisetsuName": null,
       "amount": 83799505,
       "prevAmount": 29840538,
+      "koPrevAmount": 53318663,
+      "kanPrevAmount": 81774943,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6562,6 +7184,8 @@
       "saisetsuName": null,
       "amount": 141247,
       "prevAmount": 262345,
+      "koPrevAmount": 53318663,
+      "kanPrevAmount": 81774943,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6583,6 +7207,8 @@
       "saisetsuName": null,
       "amount": 8719832,
       "prevAmount": 9598000,
+      "koPrevAmount": 53318663,
+      "kanPrevAmount": 81774943,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6604,6 +7230,8 @@
       "saisetsuName": null,
       "amount": 1372857,
       "prevAmount": 1490972,
+      "koPrevAmount": 3847663,
+      "kanPrevAmount": 81774943,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6625,6 +7253,8 @@
       "saisetsuName": null,
       "amount": 2559576,
       "prevAmount": 2356691,
+      "koPrevAmount": 3847663,
+      "kanPrevAmount": 81774943,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6646,6 +7276,8 @@
       "saisetsuName": null,
       "amount": 2586074,
       "prevAmount": 2599504,
+      "koPrevAmount": 15724564,
+      "kanPrevAmount": 19034944,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6667,6 +7299,8 @@
       "saisetsuName": null,
       "amount": 1049641,
       "prevAmount": 1128223,
+      "koPrevAmount": 15724564,
+      "kanPrevAmount": 19034944,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6688,6 +7322,8 @@
       "saisetsuName": null,
       "amount": 2333608,
       "prevAmount": 3316875,
+      "koPrevAmount": 15724564,
+      "kanPrevAmount": 19034944,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6709,6 +7345,8 @@
       "saisetsuName": null,
       "amount": 839734,
       "prevAmount": 1345070,
+      "koPrevAmount": 15724564,
+      "kanPrevAmount": 19034944,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6730,6 +7368,8 @@
       "saisetsuName": null,
       "amount": 3364225,
       "prevAmount": 7334892,
+      "koPrevAmount": 15724564,
+      "kanPrevAmount": 19034944,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6751,6 +7391,8 @@
       "saisetsuName": null,
       "amount": 696409,
       "prevAmount": 2354380,
+      "koPrevAmount": 3310380,
+      "kanPrevAmount": 19034944,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6772,6 +7414,8 @@
       "saisetsuName": null,
       "amount": 2268490,
       "prevAmount": 956000,
+      "koPrevAmount": 3310380,
+      "kanPrevAmount": 19034944,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6793,6 +7437,8 @@
       "saisetsuName": null,
       "amount": 33952295,
       "prevAmount": 33770353,
+      "koPrevAmount": 39522528,
+      "kanPrevAmount": 39522528,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6814,6 +7460,8 @@
       "saisetsuName": null,
       "amount": 171388,
       "prevAmount": 154284,
+      "koPrevAmount": 39522528,
+      "kanPrevAmount": 39522528,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6835,6 +7483,8 @@
       "saisetsuName": null,
       "amount": 1782702,
       "prevAmount": 1714324,
+      "koPrevAmount": 39522528,
+      "kanPrevAmount": 39522528,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6856,6 +7506,8 @@
       "saisetsuName": null,
       "amount": 261315,
       "prevAmount": 245936,
+      "koPrevAmount": 39522528,
+      "kanPrevAmount": 39522528,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6877,6 +7529,8 @@
       "saisetsuName": null,
       "amount": 171379,
       "prevAmount": 133348,
+      "koPrevAmount": 39522528,
+      "kanPrevAmount": 39522528,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6898,6 +7552,8 @@
       "saisetsuName": null,
       "amount": 1936150,
       "prevAmount": 1880748,
+      "koPrevAmount": 39522528,
+      "kanPrevAmount": 39522528,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6919,6 +7575,8 @@
       "saisetsuName": null,
       "amount": 2524676,
       "prevAmount": 1623535,
+      "koPrevAmount": 39522528,
+      "kanPrevAmount": 39522528,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6940,6 +7598,8 @@
       "saisetsuName": null,
       "amount": 21342,
       "prevAmount": 21360,
+      "koPrevAmount": 186795004,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6961,6 +7621,8 @@
       "saisetsuName": null,
       "amount": 11365741,
       "prevAmount": 10291848,
+      "koPrevAmount": 186795004,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -6982,6 +7644,8 @@
       "saisetsuName": null,
       "amount": 166231529,
       "prevAmount": 167563781,
+      "koPrevAmount": 186795004,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7003,6 +7667,8 @@
       "saisetsuName": null,
       "amount": 7790114,
       "prevAmount": 6849199,
+      "koPrevAmount": 186795004,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7024,6 +7690,8 @@
       "saisetsuName": null,
       "amount": 152589,
       "prevAmount": 212122,
+      "koPrevAmount": 186795004,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7045,6 +7713,8 @@
       "saisetsuName": null,
       "amount": 545293,
       "prevAmount": 510441,
+      "koPrevAmount": 186795004,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7066,6 +7736,8 @@
       "saisetsuName": null,
       "amount": 1459670,
       "prevAmount": 1346253,
+      "koPrevAmount": 186795004,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7087,6 +7759,8 @@
       "saisetsuName": null,
       "amount": 8610640,
       "prevAmount": 7362337,
+      "koPrevAmount": 11207678,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7108,6 +7782,8 @@
       "saisetsuName": null,
       "amount": 3627254,
       "prevAmount": 3845341,
+      "koPrevAmount": 11207678,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7129,6 +7805,8 @@
       "saisetsuName": null,
       "amount": 3327080,
       "prevAmount": 2886977,
+      "koPrevAmount": 5308127,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7150,6 +7828,8 @@
       "saisetsuName": null,
       "amount": 2433198,
       "prevAmount": 2421150,
+      "koPrevAmount": 5308127,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7171,6 +7851,8 @@
       "saisetsuName": null,
       "amount": 644953,
       "prevAmount": 584502,
+      "koPrevAmount": 886232,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7192,6 +7874,8 @@
       "saisetsuName": null,
       "amount": 305052,
       "prevAmount": 301730,
+      "koPrevAmount": 886232,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7213,6 +7897,8 @@
       "saisetsuName": null,
       "amount": 1355901,
       "prevAmount": 1128112,
+      "koPrevAmount": 1347474,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7234,6 +7920,8 @@
       "saisetsuName": null,
       "amount": 220269,
       "prevAmount": 219362,
+      "koPrevAmount": 1347474,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7255,6 +7943,8 @@
       "saisetsuName": null,
       "amount": 368968,
       "prevAmount": 318479,
+      "koPrevAmount": 2922426,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7276,6 +7966,8 @@
       "saisetsuName": null,
       "amount": 1033363,
       "prevAmount": 1003768,
+      "koPrevAmount": 2922426,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7297,6 +7989,8 @@
       "saisetsuName": null,
       "amount": 1690275,
       "prevAmount": 1600179,
+      "koPrevAmount": 2922426,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7318,6 +8012,8 @@
       "saisetsuName": null,
       "amount": 700954,
       "prevAmount": 680375,
+      "koPrevAmount": 20355639,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7339,6 +8035,8 @@
       "saisetsuName": null,
       "amount": 688421,
       "prevAmount": 905581,
+      "koPrevAmount": 20355639,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7360,6 +8058,8 @@
       "saisetsuName": null,
       "amount": 9695059,
       "prevAmount": 8816404,
+      "koPrevAmount": 20355639,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7381,6 +8081,8 @@
       "saisetsuName": null,
       "amount": 10589705,
       "prevAmount": 9953279,
+      "koPrevAmount": 20355639,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7402,6 +8104,8 @@
       "saisetsuName": null,
       "amount": 1439021,
       "prevAmount": 1465464,
+      "koPrevAmount": 29548777,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7423,6 +8127,8 @@
       "saisetsuName": null,
       "amount": 7665465,
       "prevAmount": 8940783,
+      "koPrevAmount": 29548777,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7444,6 +8150,8 @@
       "saisetsuName": null,
       "amount": 133143,
       "prevAmount": 754506,
+      "koPrevAmount": 29548777,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7465,6 +8173,8 @@
       "saisetsuName": null,
       "amount": 131427,
       "prevAmount": 131427,
+      "koPrevAmount": 29548777,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7486,6 +8196,8 @@
       "saisetsuName": null,
       "amount": 18571584,
       "prevAmount": 17512509,
+      "koPrevAmount": 29548777,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7507,6 +8219,8 @@
       "saisetsuName": null,
       "amount": 542124,
       "prevAmount": 744088,
+      "koPrevAmount": 29548777,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7528,6 +8242,8 @@
       "saisetsuName": null,
       "amount": 16028,
       "prevAmount": null,
+      "koPrevAmount": 29548777,
+      "kanPrevAmount": 258371357,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7549,6 +8265,8 @@
       "saisetsuName": null,
       "amount": 156583258,
       "prevAmount": 154555181,
+      "koPrevAmount": 181565663,
+      "kanPrevAmount": 189169042,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7570,6 +8288,8 @@
       "saisetsuName": null,
       "amount": 23496347,
       "prevAmount": 25641724,
+      "koPrevAmount": 181565663,
+      "kanPrevAmount": 189169042,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7591,6 +8311,8 @@
       "saisetsuName": null,
       "amount": 1176502,
       "prevAmount": 1368758,
+      "koPrevAmount": 181565663,
+      "kanPrevAmount": 189169042,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7612,6 +8334,8 @@
       "saisetsuName": null,
       "amount": 7322196,
       "prevAmount": 7322196,
+      "koPrevAmount": 7603379,
+      "kanPrevAmount": 189169042,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7633,6 +8357,8 @@
       "saisetsuName": null,
       "amount": 252616,
       "prevAmount": 280243,
+      "koPrevAmount": 7603379,
+      "kanPrevAmount": 189169042,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7654,6 +8380,8 @@
       "saisetsuName": null,
       "amount": 866,
       "prevAmount": 940,
+      "koPrevAmount": 7603379,
+      "kanPrevAmount": 189169042,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7675,6 +8403,8 @@
       "saisetsuName": null,
       "amount": 27487714,
       "prevAmount": 27970647,
+      "koPrevAmount": 183020638,
+      "kanPrevAmount": 183020638,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7696,6 +8426,8 @@
       "saisetsuName": null,
       "amount": 49190647,
       "prevAmount": 46533614,
+      "koPrevAmount": 183020638,
+      "kanPrevAmount": 183020638,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7717,6 +8449,8 @@
       "saisetsuName": null,
       "amount": 37293821,
       "prevAmount": 36027080,
+      "koPrevAmount": 183020638,
+      "kanPrevAmount": 183020638,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7738,6 +8472,8 @@
       "saisetsuName": null,
       "amount": 87255,
       "prevAmount": 100255,
+      "koPrevAmount": 183020638,
+      "kanPrevAmount": 183020638,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7759,6 +8495,8 @@
       "saisetsuName": null,
       "amount": 67300,
       "prevAmount": 147800,
+      "koPrevAmount": 183020638,
+      "kanPrevAmount": 183020638,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7780,6 +8518,8 @@
       "saisetsuName": null,
       "amount": 2519029,
       "prevAmount": 2254134,
+      "koPrevAmount": 183020638,
+      "kanPrevAmount": 183020638,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7801,6 +8541,8 @@
       "saisetsuName": null,
       "amount": 30762,
       "prevAmount": 37029,
+      "koPrevAmount": 183020638,
+      "kanPrevAmount": 183020638,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7822,6 +8564,8 @@
       "saisetsuName": null,
       "amount": 15296,
       "prevAmount": 14425,
+      "koPrevAmount": 183020638,
+      "kanPrevAmount": 183020638,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7843,6 +8587,8 @@
       "saisetsuName": null,
       "amount": 11306,
       "prevAmount": 11629,
+      "koPrevAmount": 183020638,
+      "kanPrevAmount": 183020638,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7864,6 +8610,8 @@
       "saisetsuName": null,
       "amount": 4397862,
       "prevAmount": 3624963,
+      "koPrevAmount": 183020638,
+      "kanPrevAmount": 183020638,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7885,6 +8633,8 @@
       "saisetsuName": null,
       "amount": 388114,
       "prevAmount": 362511,
+      "koPrevAmount": 183020638,
+      "kanPrevAmount": 183020638,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7906,6 +8656,8 @@
       "saisetsuName": null,
       "amount": 3385648,
       "prevAmount": 3267929,
+      "koPrevAmount": 183020638,
+      "kanPrevAmount": 183020638,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7927,6 +8679,8 @@
       "saisetsuName": null,
       "amount": 478362,
       "prevAmount": 429317,
+      "koPrevAmount": 183020638,
+      "kanPrevAmount": 183020638,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7948,6 +8702,8 @@
       "saisetsuName": null,
       "amount": 39648373,
       "prevAmount": 38728906,
+      "koPrevAmount": 183020638,
+      "kanPrevAmount": 183020638,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7969,6 +8725,8 @@
       "saisetsuName": null,
       "amount": 46510,
       "prevAmount": 76854,
+      "koPrevAmount": 183020638,
+      "kanPrevAmount": 183020638,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -7990,6 +8748,8 @@
       "saisetsuName": null,
       "amount": 2017045,
       "prevAmount": 1634095,
+      "koPrevAmount": 183020638,
+      "kanPrevAmount": 183020638,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -8011,6 +8771,8 @@
       "saisetsuName": null,
       "amount": 1452,
       "prevAmount": 1752,
+      "koPrevAmount": 183020638,
+      "kanPrevAmount": 183020638,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -8032,6 +8794,8 @@
       "saisetsuName": null,
       "amount": 6687256,
       "prevAmount": 6387993,
+      "koPrevAmount": 183020638,
+      "kanPrevAmount": 183020638,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -8053,6 +8817,8 @@
       "saisetsuName": null,
       "amount": 7506018,
       "prevAmount": 7919962,
+      "koPrevAmount": 183020638,
+      "kanPrevAmount": 183020638,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -8074,6 +8840,8 @@
       "saisetsuName": null,
       "amount": 7440953,
       "prevAmount": 7489743,
+      "koPrevAmount": 183020638,
+      "kanPrevAmount": 183020638,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"
@@ -8095,6 +8863,8 @@
       "saisetsuName": null,
       "amount": 1000000,
       "prevAmount": 1000000,
+      "koPrevAmount": 1000000,
+      "kanPrevAmount": 1000000,
       "locator": {
         "file": "r3ippan.zip",
         "sheet": "08歳出事項別"

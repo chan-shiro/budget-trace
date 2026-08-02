@@ -6467,7 +6467,7 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = {
             {
               "name": "県補助金",
               "v": 312.38881,
-              "prevV": 260.29846,
+              "prevV": 260.69583,
               "moku": [
                 {
                   "name": "健康福祉費県補助金",
@@ -7194,7 +7194,7 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = {
             {
               "name": "選挙費",
               "v": 22.5133,
-              "prevV": 14.99819,
+              "prevV": 28.33438,
               "moku": [
                 {
                   "name": "統一地方選挙費",
@@ -8058,7 +8058,7 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = {
             {
               "name": "港湾整備費",
               "v": 31.31582,
-              "prevV": 30.95337,
+              "prevV": 38.45337,
               "moku": [
                 {
                   "name": "港湾整備費負担金",
@@ -8346,7 +8346,7 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = {
             {
               "name": "第三セクター等改革推進債公債費",
               "v": 2.11194,
-              "prevV": 2.24956,
+              "prevV": 283.98177,
               "moku": [
                 {
                   "name": "利子",
@@ -9233,7 +9233,7 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = {
             {
               "name": "県負担金",
               "v": 691.7698,
-              "prevV": 660.20858,
+              "prevV": 660.56217,
               "moku": [
                 {
                   "name": "こども青少年費県負担金",
@@ -9371,7 +9371,7 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = {
             {
               "name": "財産売払収入",
               "v": 326.57853,
-              "prevV": 80.91722,
+              "prevV": 418.91722,
               "moku": [
                 {
                   "name": "不動産売払収入",
@@ -9990,7 +9990,7 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = {
             {
               "name": "選挙費",
               "v": 28.33438,
-              "prevV": 8.33045,
+              "prevV": 34.79115,
               "moku": [
                 {
                   "name": "参議院議員選挙費",
@@ -10725,7 +10725,7 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = {
             {
               "name": "都市整備費",
               "v": 175.71643,
-              "prevV": 189.97814,
+              "prevV": 193.57814,
               "moku": [
                 {
                   "name": "都市交通費",
@@ -11696,7 +11696,7 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = {
             {
               "name": "負担金",
               "v": 282.76962,
-              "prevV": 272.52736,
+              "prevV": 274.05572,
               "moku": [
                 {
                   "name": "教育費負担金",
@@ -11886,7 +11886,7 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = {
             {
               "name": "国庫負担金",
               "v": 3016.9108,
-              "prevV": 2779.30717,
+              "prevV": 2878.56867,
               "moku": [
                 {
                   "name": "健康福祉費国庫負担金",
@@ -12091,7 +12091,7 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = {
             {
               "name": "県補助金",
               "v": 203.19912,
-              "prevV": 167.64047,
+              "prevV": 167.78083,
               "moku": [
                 {
                   "name": "健康福祉費県補助金",
@@ -12424,7 +12424,7 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = {
             {
               "name": "貸付金元利収入",
               "v": 2269.82974,
-              "prevV": 466.97112,
+              "prevV": 478.32751,
               "moku": [
                 {
                   "name": "経済費貸付金元利収入",
@@ -12486,7 +12486,7 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = {
             {
               "name": "雑入",
               "v": 135.92852,
-              "prevV": 140.23884,
+              "prevV": 142.90831,
               "moku": [
                 {
                   "name": "資源循環費雑入",
