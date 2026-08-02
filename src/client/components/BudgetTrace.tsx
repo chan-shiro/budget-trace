@@ -561,6 +561,10 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
   // 款は「実データの内訳・主な事業・R6決算の項内訳」のいずれかがあれば掘れる。
   // decision（総務省決算）は款→項の children を持つのでそれで判定する（full 専用の
   // 主な事業・R6決算内訳による掘り下げは甲府のみ）
+  // ⚠ **detail を引く年度は「表示中の木の年度」**。`budget.fy` は**甲府の年度リストで解決される**ので、
+  //   甲府に無い年度を持つ自治体では**木と違う年度の内訳**が出うる（`muniBudget` は自前の年度リストで
+  //   解決し、無ければ最新へフォールバックする）。掘れるかの判定と描画の**両方が同じキーを使う**こと。
+  const detailFy = muniBudget?.fy ?? budget.fy;
   // ⚠ **款項目（#191/#192）を持つ款も掘れる** — この判定は `children` の有無で見ているが、
   //   `BUDGET_DETAIL` は munibudgets の木とは別の gen なので `children` が付かない。
   //   教えないと、**画面には項・目パネルが出るのに、そこへ入る導線が無い**（レビューの3巡目で発覚。
@@ -568,12 +572,14 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
   //   「その他」の子も款なので、**depth 0 と「その他」直下の depth 1** の両方で見る。
   const detailKansHere: Record<string, unknown> | null = (() => {
     if (depth !== 0 && !(depth === 1 && nodeName === "その他")) return null;
-    const e = (muniCode ? D.BUDGET_DETAIL[muniCode] : undefined)?.find((x) => x.fy === budget.fy);
-    return e ? e.byKan[side === "exp" ? "expenditure" : "revenue"] : null;
+    const e = (muniCode ? D.BUDGET_DETAIL[muniCode] : undefined)?.find((x) => x.fy === detailFy);
+    return e && Object.hasOwn(e.byKan, side === "exp" ? "expenditure" : "revenue")
+      ? e.byKan[side === "exp" ? "expenditure" : "revenue"]
+      : null;
   })();
   const canDrillDeeper = (it: any) =>
     !!(it.children && it.children.length > 0) ||
-    !!detailKansHere?.[it.name] ||
+    (!!detailKansHere && Object.hasOwn(detailKansHere, it.name)) ||
     (isFull &&
       side === "exp" &&
       depth === 0 &&
@@ -1514,7 +1520,7 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
     //   款の下に並べると「目的別の内訳」と誤読させる（gen にも入れていない）。
     ...(() => {
       const detailYears = muniCode ? D.BUDGET_DETAIL[muniCode] : undefined;
-      const entry = detailYears?.find((e) => e.fy === budget.fy);
+      const entry = detailYears?.find((e) => e.fy === detailFy); // ⚠ 掘れる判定と同じキーで引く
       // ⚠ **款は depth 1 とは限らない** — 上位8款に入らなかった款は「その他」に畳まれて
       //   **depth 2** に落ちる（歳入で起きる。実測: 横浜 R4 の「財産収入」390億）。
       //   `depth === 1` だけで見ていたため、**収録済みなのに「未収録です」と出ていた**
