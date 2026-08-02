@@ -913,6 +913,8 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.pref.yamanashi.jp/documents/6018/02_tousyonogaiyou_1.pdf": "https://web.archive.org/web/20260508112720/https://www.pref.yamanashi.jp/documents/6018/02_tousyonogaiyou_1.pdf",
   "https://www.pref.yamanashi.jp/documents/6018/03_tousyoyosannkibo_1.pdf": "https://web.archive.org/web/20260520040653/https://www.pref.yamanashi.jp/documents/6018/03_tousyoyosannkibo_1.pdf",
   "https://www.pref.yamanashi.jp/zaisei/43539671890.html": "https://web.archive.org/web/20251206161316/https://www.pref.yamanashi.jp/zaisei/43539671890.html",
+  "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r6/r6.files/r6sainyu_saisyutsu.zip": "https://web.archive.org/web/20251024204137/https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r6/r6.files/r6sainyu_saisyutsu.zip",
+  "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r8/r8yosan.html": "https://web.archive.org/web/20260215050834/https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r8/r8yosan.html",
   "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r3/r3.files/r3ippan.pdf": "https://web.archive.org/web/20251126044940/https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r3/r3.files/r3ippan.pdf",
   "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r3/r3.html": "https://web.archive.org/web/20260215182128/https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r3/r3.html",
   "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r4/r4.files/r4ippan.pdf": "https://web.archive.org/web/20220202122123/https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r4/r4.files/r4ippan.pdf",
@@ -922,6 +924,5 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r6/r6.files/r6ippan.pdf": "https://web.archive.org/web/20251210144812/https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r6/r6.files/r6ippan.pdf",
   "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r6/r6.html": "https://web.archive.org/web/20260509132938/https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r6/r6.html",
   "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r7/r7.files/r7ippan.pdf": "https://web.archive.org/web/20250316084637/https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r7/r7.files/r7ippan.pdf",
-  "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r7/r7.html": "https://web.archive.org/web/20260314135853/https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r7/r7.html",
-  "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r8/r8yosan.html": "https://web.archive.org/web/20260215050834/https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r8/r8yosan.html"
+  "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r7/r7.html": "https://web.archive.org/web/20260314135853/https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r7/r7.html"
 };

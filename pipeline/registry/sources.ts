@@ -7782,6 +7782,53 @@ export const SOURCES: SourceEntry[] = [
       expenditureHeaderExtra: "^一般財源$|^国県支出金",
     },
   },
+  ...([
+    // [年度, zip の URL パス, ランディング]
+    //
+    // 横浜市（団体コード 141003）。**予算に関する説明書「歳入・歳出予算」CSV（zip）**。
+    // **プロジェクト初の「款より下」に届く資料**（#191・docs §8d-2）。全自治体で款別までしか
+    // 収録できておらず、`/roadmap` の later「款より下（項・目・節）の内訳」はここで初めて解ける。
+    // 款・項・目・節（歳出はさらに細節）の5階層。一般会計は R8 で歳入 799行 / 歳出 4,571行。
+    //
+    // ⚠ **URL のパスが年度で違う** — R8 は `r8/r8yosan.files/`、**R7・R6 は `rN/rN.files/`**。
+    //   ⚠ 偵察の申し送りは `rNyosan.files` で統一されていたが**R8 でしか成り立たない**。
+    //   URL は**横浜のオープンデータ CKAN（`package_show`）から実引き**した（下記ライセンスも同じ）。
+    //
+    // ⚠⚠ **R7 は収録しない**（2026-08-02 実測・unrecordable.ts に記録）。
+    //   **歳入 CSV だけが +379,539千円 大きく、CSV 自身の中で歳入 Σ ≠ 歳出 Σ**
+    //   （一般会計 1,984,787,527 vs 1,984,407,988）＝**資料内部で矛盾している**。
+    //   既収録の款別 parsed とも歳出側だけが一致する。zip 内 mtime も歳入 2025-01-30 /
+    //   歳出 2025-07-15 で**歳出だけ後から差し替えられている**。原因は未確認。
+    //
+    // ⚠ **単位は原典のどこにも書かれていない**（練馬型）。**千円**は外部突合で確定した
+    //   （一般会計 Σ = 既収録 `yokohama-yosansho-rN` の総額と差0）。
+    //
+    // ライセンスは **CC BY**（`data.city.yokohama.lg.jp` の CKAN で `zaisei_r8yosan` /
+    //   `zaisei_r6` とも `license_id: cc-by`、**この zip の URL が完全一致で登載**されているのを
+    //   API で実引きした）。⚠ **§8 の「横浜は R3 だけ open」は `rNippan.pdf` の話**であって別物。
+    //   ⚠⚠ **サイトポリシー原文（「無断で複製・転用…」）を併記しないこと** — `licenseClassOf` は
+    //   禁止文言を CC BY より優先させる設計なので、**併記した瞬間 permission-required へ落ちる**（§9g）。
+    ["R8", "r8/r8yosan.files/r8sainyu_saisyutsu.zip", "r8/r8yosan.html"],
+    // ⚠ landing は `r6/index.html` だと 301（`r6/` へ）。兄弟の `yokohama-yosansho-r6` と同じ
+    //   `r6/r6.html`（200）を指す。魚拓は 301 の URL では張れない
+    ["R6", "r6/r6.files/r6sainyu_saisyutsu.zip", "r6/r6.html"],
+  ] as const).map(([fy, path, landing]) => ({
+    id: `yokohama-yosan-meisai-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 横浜市予算に関する説明書（歳入・歳出予算 款項目節 CSV）`,
+    publisher: "横浜市",
+    url: null,
+    urls: [`https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/${path}`],
+    landingPage: `https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/${landing}`,
+    kind: "zip" as const,
+    fiscalYear: fy,
+    scope: "横浜市（全17会計・団体コード141003）",
+    // CC BY（横浜市オープンデータ CKAN の登載。上記のとおりサイトポリシーは併記しない）
+    license:
+      "クリエイティブ・コモンズ 表示 4.0 国際（CC BY 4.0）。横浜市オープンデータポータル（data.city.yokohama.lg.jp）のデータセット「令和８年度予算」「令和６年度予算」に、本ファイルの URL が license_id: cc-by で登載されている（API package_show で確認・確認日 2026-08-02）。",
+    parser: "yokohama-yosan-meisai-csv" as const,
+    parserOptions: { generalAccountCode: "01" },
+  })),
+
   {
     // 名古屋市（団体コード 231002）。一般会計予算に関する説明書 R8（修正後版・158p・16.9MB）。
     // **2月定例会で修正可決**されており、発行元は「（修正後）」版のみを掲載している

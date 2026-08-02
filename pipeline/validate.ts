@@ -288,6 +288,100 @@ if (doc.docType === "budget-execution") {
   finish(doc.facts.length, "款");
 }
 
+// ---- 当初予算の款項目節（項以下の内訳・#191） ----------------------------------
+// **葉ノードだけを持つ資料**なので、Σ が立つ場所が3つある。どれも原典が自分で持っている数字。
+if (doc.docType === "budget-detail") {
+  // ① **予算は均衡編成**（歳入 = 歳出）。一般会計と全会計の両方で見る。
+  //    ⚠ **横浜 R7 はここが破れる**（歳入 CSV だけ +379,539千円）ので収録していない。
+  //    この等式を緩めると「資料内部で矛盾している版を静かに通す」型に化ける。
+  for (const [label, rev, exp] of [
+    ["一般会計", doc.generalRevenueTotal, doc.generalExpenditureTotal],
+    ["全会計", doc.allRevenueTotal, doc.allExpenditureTotal],
+  ] as const) {
+    if (rev !== exp) {
+      issues.push({
+        level: "error",
+        message:
+          `${label}の歳入 ${rev.toLocaleString()} と歳出 ${exp.toLocaleString()} が一致しません` +
+          `（差 ${(rev - exp).toLocaleString()}）。予算は均衡編成なので、**原典の側が矛盾している**` +
+          `可能性がある（横浜 R7 は実際にそうだった）。原因を突き止めるまで収録しないこと`,
+      });
+    }
+  }
+
+  // ② 原典の `総計` 行 = 葉の Σ（総計行がある側・年度だけ。横浜は R8・R7 の歳出に在る）
+  for (const [label, stated, leaves] of [
+    ["歳入", doc.statedRevenueTotal, doc.allRevenueTotal],
+    ["歳出", doc.statedExpenditureTotal, doc.allExpenditureTotal],
+  ] as const) {
+    if (stated != null && stated !== leaves) {
+      issues.push({
+        level: "error",
+        message:
+          `${label}の原典の総計行 ${stated.toLocaleString()} と葉の Σ ${leaves.toLocaleString()} が` +
+          `一致しません（差 ${(leaves - stated).toLocaleString()}）。` +
+          `総計行を葉として拾っている（二重計上）か、行を落としている`,
+      });
+    }
+  }
+
+  // ③ 細節の在り方。⚠ **これは横浜の様式であって款項目節の一般則ではない**
+  //    （細節を持たない資料は当然あり得る）。**「歳出に細節がある資料」だと分かっている場合だけ**
+  //    その一貫性を検査する — 全 doc に一般則として効かせると、細節の無い自治体を足した瞬間に
+  //    偽陽性 error になり、**ゲートを緩める圧力**が生まれる（レビュー指摘）。
+  {
+    const expHasSaisetsu = doc.facts.some((f) => f.side === "expenditure" && f.saisetsuNo);
+    if (expHasSaisetsu) {
+      const missing = doc.facts.find((f) => f.side === "expenditure" && !f.saisetsuNo);
+      if (missing) {
+        issues.push({
+          level: "error",
+          message: `歳出の一部にだけ細節がありません（${missing.kanName}/${missing.koName}/${missing.mokuName}）— 行の取り違えを疑う`,
+        });
+      }
+    }
+    // 歳入に細節が付くのは側の取り違え（歳入 CSV に細節列は無い）
+    const revSaisetsu = doc.facts.find((f) => f.side === "revenue" && f.saisetsuNo);
+    if (revSaisetsu) {
+      issues.push({ level: "error", message: `歳入に細節が付いています（${revSaisetsu.kanName}/${revSaisetsu.koName}）— 側の取り違えを疑う` });
+    }
+  }
+
+  // ⑤ **科目名の破損**（款別と同じ網を項以下にも効かせる）。#192 で予定している
+  //    R5〜H29 のレイアウト型 XLSX は、まさにヘッダ繰返し・結合セルで名前が壊れる型なので、
+  //    そのとき効かなければ意味が無い（レビュー指摘）。
+  //
+  // ⚠⚠ **語彙の網（KANNAME_JUNK_RE）は款名にしか当ててはいけない。**
+  //    あれは「**款名として**原典にあり得ない語」を選んだもので、**下の階層では実在の科目名**に
+  //    なる。実際に `前年度繰越金`（歳入 繰越金 の節）が `前年度` で誤検出された（実測）。
+  //    → **語彙は款名だけ。部首の網（文字クラス）は階層に依らず安全なので全階層に当てる。**
+  for (const f of doc.facts) {
+    const j = KANNAME_JUNK_RE.exec(f.kanName);
+    if (j) {
+      issues.push({ level: "error", message: `款名「${f.kanName}」に表ヘッダ/単位の断片「${j[0]}」が混入しています` });
+      break;
+    }
+  }
+  for (const f of doc.facts) {
+    const hit = ([["款", f.kanName], ["項", f.koName], ["目", f.mokuName], ["節", f.setsuName], ["細節", f.saisetsuName]] as const)
+      .find(([, nm]) => nm && KANNAME_RADICAL_RE.test(nm));
+    if (hit) {
+      issues.push({
+        level: "error",
+        message: `${hit[0]}名「${hit[1]}」に部首の異体字が混入しています（見た目は正字とほぼ同じで Σ も通る）`,
+      });
+      break;
+    }
+  }
+
+  // ④ 一般会計の款が1つも無い、は様式の取り違え
+  const genKan = new Set(doc.facts.filter((f) => f.accountCode === "01" && f.side === "expenditure").map((f) => f.kanName));
+  if (genKan.size < 5) {
+    issues.push({ level: "error", message: `一般会計の歳出款が ${genKan.size} 種しかありません（会計コードの取り違えを疑う）` });
+  }
+  finish(doc.facts.length, "行");
+}
+
 // ---- 統計書 財政章（款項×当初/最終/決算） --------------------------------------
 if (doc.docType === "budget-outturn") {
   for (const side of ["revenue", "expenditure"] as const) {
