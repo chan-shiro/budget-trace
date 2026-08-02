@@ -561,8 +561,19 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
   // 款は「実データの内訳・主な事業・R6決算の項内訳」のいずれかがあれば掘れる。
   // decision（総務省決算）は款→項の children を持つのでそれで判定する（full 専用の
   // 主な事業・R6決算内訳による掘り下げは甲府のみ）
+  // ⚠ **款項目（#191/#192）を持つ款も掘れる** — この判定は `children` の有無で見ているが、
+  //   `BUDGET_DETAIL` は munibudgets の木とは別の gen なので `children` が付かない。
+  //   教えないと、**画面には項・目パネルが出るのに、そこへ入る導線が無い**（レビューの3巡目で発覚。
+  //   「その他」に畳まれた歳入17款が URL 直打ちでしか見えなかった）。
+  //   「その他」の子も款なので、**depth 0 と「その他」直下の depth 1** の両方で見る。
+  const detailKansHere: Record<string, unknown> | null = (() => {
+    if (depth !== 0 && !(depth === 1 && nodeName === "その他")) return null;
+    const e = (muniCode ? D.BUDGET_DETAIL[muniCode] : undefined)?.find((x) => x.fy === budget.fy);
+    return e ? e.byKan[side === "exp" ? "expenditure" : "revenue"] : null;
+  })();
   const canDrillDeeper = (it: any) =>
     !!(it.children && it.children.length > 0) ||
+    !!detailKansHere?.[it.name] ||
     (isFull &&
       side === "exp" &&
       depth === 0 &&
