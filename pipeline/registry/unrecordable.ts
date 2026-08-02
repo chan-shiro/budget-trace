@@ -77,6 +77,18 @@ export interface UnrecordableRecord {
 }
 
 export const UNRECORDABLE: UnrecordableRecord[] = [
+  // ==== 横浜市の款項目節（2026-08-02・#191・docs §8d-2）=============================
+  {
+    code: "141003", name: "横浜市", dataset: "detail", fiscalYears: ["R7"],
+    categories: ["format-mismatch"],
+    reason:
+      "款項目節 CSV の歳入だけが歳出より 379,539千円 大きく、同じ CSV の中で歳入 Σ ≠ 歳出 Σ になっている" +
+      "（一般会計 1,984,787,527 対 1,984,407,988）。予算は均衡編成なので資料内部で矛盾している。" +
+      "既収録の款別・R8 の前年度列とは歳出側だけが一致するため、歳入 CSV が単独で外れていると考えられる。" +
+      "原因は未確認。R8・R6 は同じ資料で差0 なので収録済み。",
+    url: "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r7/r7.files/r7sainyu_saisyutsu.zip",
+    checkedOn: "2026-08-02", ref: "docs/data-sources.md §8d-2",
+  },
   // ==== 山梨県内の市（2026-07-14・docs §「山梨県内 budget 市を横に拡大」）===========
   {
     code: "192074", name: "韮崎市", dataset: "budget", fiscalYears: ["R8"],

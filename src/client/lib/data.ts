@@ -98,6 +98,8 @@ export { KOFU_BUDGET, KOFU_BUDGET_YEARS, type KofuBudgetYear } from './kofu.gen'
 export { KOFU_PROJECTS, KOFU_PROJECTS_SOURCE, KOFU_PROJECT_YEARS } from './projects.gen';
 export { KOFU_EXECUTION, KOFU_EXECUTION_YEARS, type KofuExecutionYear } from './execution.gen';
 export { KOFU_R6_DETAIL } from './detail.gen';
+// 款より下（項・目）の内訳。⚠ 節・細節は入っていない（性質別の軸なので別物・#191）
+export { BUDGET_DETAIL, type BudgetDetailKo, type BudgetDetailYear } from './budgetdetail.gen';
 export { KOFU_TREND } from './trend.gen';
 export { KOFU_EVALUATION_YEARS, type KofuEvaluationYear } from './evaluations.gen';
 export { KOFU_COUNCIL, KOFU_COUNCIL_YEARS, type KofuCouncil, type CouncilFaction } from './council.gen';
@@ -263,6 +265,7 @@ export function evidenceFormatLabel(localUrl: string | null | undefined): string
   if (/\.html?$/i.test(path)) return 'HTML';
   if (/\.xlsx?$|\.xlsm$/i.test(path)) return 'Excel';
   if (/\.csv$/i.test(path)) return 'CSV';
+  if (/\.zip$/i.test(path)) return 'ZIP';
   return null;
 }
 

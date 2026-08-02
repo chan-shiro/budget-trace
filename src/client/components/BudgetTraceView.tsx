@@ -1310,6 +1310,40 @@ export default function BudgetTraceView({ v }: { v: any }) {
                         </p>
                       </div>
                     )}
+                    {/* **款より下（項・目）の実データ**（#191）。決算の参考表示ではなく、
+                        表示中の年度の当初予算そのもの。項をクリックすると目まで開く。 */}
+                    {v.hasBudgetDetail && (
+                      <div style={S("margin-top:8px;")}>
+                        <h3 style={S("margin:0 0 4px; font-size:14px; font-weight:700;")}>項・目の内訳（{v.budgetDetailFyLabel}）</h3>
+                        <p style={S("margin:0 0 10px; font-size:12px; color:#5C6B77;")}>この款の予算を項・目まで分解しています（款計 {v.budgetDetailKanTotalFmt}）。項をクリックすると目の内訳が開きます。</p>
+                        <div style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:11px; padding:6px 16px;")}>
+                          {v.budgetDetailRows.map((r: any, i: number) => (
+                            <details key={i} style={S("border-bottom:1px solid #ECF2F6;")}>
+                              <summary data-mq="drill" style={S("display:grid; grid-template-columns:14px minmax(120px,1.4fr) 2fr 92px 56px 20px; align-items:center; gap:12px; padding:10px 0; cursor:pointer; list-style:none;")}>
+                                <span style={S(`width:11px; height:11px; border-radius:3px; background:${r.sw};`)}></span>
+                                <span style={S("font-size:13.5px; font-weight:600; color:#14181C;")}>{r.name}</span>
+                                <span style={S("height:8px; border-radius:999px; background:#E3EBF0; overflow:hidden;")}><span data-anim="bar" style={S(`display:block; height:100%; width:${r.barW}%; background:${r.sw};`)}></span></span>
+                                <span style={S("font-family:'IBM Plex Mono',monospace; font-size:13px; text-align:right;")}>{r.amtFmt}</span>
+                                <span style={S("font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:#5C6B77; text-align:right;")}>{r.pctFmt}</span>
+                                <span style={S("font-size:11px; color:#8494A0;")}>▾</span>
+                              </summary>
+                              <div style={S("padding:2px 0 10px 26px;")}>
+                                {r.moku.map((m: any, j: number) => (
+                                  <div key={j} style={S("display:grid; grid-template-columns:minmax(120px,1.6fr) 92px 56px; align-items:center; gap:12px; padding:5px 0;")}>
+                                    <span style={S("font-size:12.5px; color:#37454F;")}>{m.name}</span>
+                                    <span style={S("font-family:'IBM Plex Mono',monospace; font-size:12px; text-align:right; color:#37454F;")}>{m.amtFmt}</span>
+                                    <span style={S("font-family:'IBM Plex Mono',monospace; font-size:11px; color:#8494A0; text-align:right;")}>{m.pctFmt}</span>
+                                  </div>
+                                ))}
+                              </div>
+                            </details>
+                          ))}
+                        </div>
+                        <p style={S("margin:8px 2px 0; font-size:12px; color:#5C6B77;")}>
+                          <a href={v.budgetDetailSourceUrl} onClick={(e) => { e.preventDefault(); v.budgetDetailSourceOpen(); }} style={S("color:#5C6B77; cursor:pointer;")}>{v.budgetDetailSourceLabel}（{v.budgetDetailSourceAction}）</a>
+                        </p>
+                      </div>
+                    )}
                     {!v.hasOutturn && v.hasR6Detail && (
                       <div style={S("margin-top:8px;")}>
                         <h3 style={S("margin:0 0 4px; font-size:14px; font-weight:700;")}>項別の内訳（{v.r6DetailFyLabel}）</h3>
@@ -1332,7 +1366,8 @@ export default function BudgetTraceView({ v }: { v: any }) {
                       </div>
                     )}
 
-                    {v.drillNoChildrenNote && !v.hasRealProjects && !v.hasR6Detail && (
+                    {/* ⚠ 項・目を収録した款でこれを出すと「未収録」と嘘をつく（#191 で実際に出た） */}
+                    {v.drillNoChildrenNote && !v.hasRealProjects && !v.hasR6Detail && !v.hasBudgetDetail && (
                       <p style={S("margin:8px 2px 0; font-size:12.5px; color:#5C6B77;")}>この款の項・目・節の内訳は未収録です（予算書本編の収録後に追加予定）。</p>
                     )}
 

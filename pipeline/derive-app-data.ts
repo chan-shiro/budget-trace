@@ -2484,6 +2484,135 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
 
 
 // ============================================================================
+// 当初予算の款項目（項以下の内訳）→ src/client/lib/budgetdetail.gen.ts（#191）
+// ============================================================================
+// **プロジェクト初の「款より下」**。全自治体で款別（第1階層）までしか収録できておらず、
+// `/roadmap` の later「款より下（項・目・節）の内訳」はここで初めて実データが入る。
+//
+// ⚠ **節・細節は載せない**（parsed には在る）。歳出の節は**地方自治法の性質別区分**
+//   （報酬・給料・委託料…）で款項目の目的別とは軸が違い、**款ドリルの下に並べると
+//   「目的別の内訳」と誤読させる**。しかも R8 歳出だけで節1,857・細節4,571 行あり、
+//   静的 import する gen に入れるとバンドルに載る（決算シャードと同じ理由で避ける）。
+//   性質別のクロス集計は別の画面として起こすべきもの。
+// ⚠ **一般会計だけ**（画面が一般会計なので）。parsed は全17会計を持っている。
+{
+  const detailSources = SOURCES.filter((s) => s.parser === "yokohama-yosan-meisai-csv");
+  type Moku = { name: string; v: number };
+  type Ko = { name: string; v: number; moku: Moku[] };
+  type Entry = {
+    fy: string; fyLabel: string;
+    /** 側 → 款名 → 項（金額降順・各項の下に目） */
+    byKan: Record<"revenue" | "expenditure", Record<string, Ko[]>>;
+    sourceTitle: string; localUrl: string; refLabel: string;
+    originUrl: string; archiveUrl: string;
+  };
+  const byCode: Record<string, Entry[]> = {};
+  for (const src of detailSources) {
+    const v = validationResultSchema.parse(readJson(validationPath(src.id)));
+    if (v.status !== "ok") throw new Error(`${src.id}: 検証が ${v.status} のため derive しません`);
+    const doc = anyParsedDocSchema.parse(readJson(parsedPath(src.id)));
+    if (doc.docType !== "budget-detail") throw new Error(`${src.id}: budget-detail ではありません`);
+    const meta = readRawMeta(src.id);
+    if (!meta) throw new Error(`${src.id}: raw-meta がありません（先に pipeline:fetch）`);
+    const file = meta.files[0]!;
+    // scope から団体コードを引く（他の gen と同じ作法）
+    const m = src.scope.match(/団体コード(\d{6})/);
+    if (!m) throw new Error(`${src.id}: scope から団体コードを読めません（${src.scope}）`);
+    const code = m[1]!;
+
+    const byKan = { revenue: {}, expenditure: {} } as Entry["byKan"];
+    for (const side of ["revenue", "expenditure"] as const) {
+      const leaves = doc.facts.filter((f) => f.side === side && f.accountCode === "01");
+      const kanMap: Record<string, Record<string, Record<string, number>>> = {};
+      for (const f of leaves) {
+        ((kanMap[f.kanName] ??= {})[f.koName] ??= {})[f.mokuName] =
+          (kanMap[f.kanName]![f.koName]![f.mokuName] ?? 0) + f.amount;
+      }
+      byKan[side] = Object.fromEntries(
+        Object.entries(kanMap).map(([kan, kos]) => [
+          kan,
+          Object.entries(kos)
+            .map(([ko, mokus]) => ({
+              name: ko,
+              v: Object.values(mokus).reduce((a, b) => a + b, 0) / 1e5, // 千円 → 億円
+              moku: Object.entries(mokus)
+                .map(([nm, amt]) => ({ name: nm, v: amt / 1e5 }))
+                .sort((a, b) => b.v - a.v),
+            }))
+            .sort((a, b) => b.v - a.v),
+        ]),
+      );
+    }
+    (byCode[code] ??= []).push({
+      fy: src.fiscalYear,
+      fyLabel: `${eraYear(src.fiscalYear)}年度 当初予算`,
+      byKan,
+      sourceTitle: src.title,
+      localUrl: `/sources/${src.id}/${file.filename}`,
+      refLabel: file.filename,
+      originUrl: src.urls![0]!,
+      archiveUrl: wayback(src.urls![0]!),
+    });
+  }
+  for (const list of Object.values(byCode)) list.sort((a, b) => fyRank(b.fy) - fyRank(a.fy));
+
+  // ★ 出口の突合: 款ごとの Σ項 が、同じ年度の**既収録の款別**（munibudgets の元＝budget-book）と一致する。
+  //   これが揃わないと「款は A なのに項の合計は B」という画面になる。
+  for (const [code, list] of Object.entries(byCode)) {
+    for (const e of list) {
+      const bb = SOURCES.find(
+        (s) => s.parser === "kofu-yosansho" && s.fiscalYear === e.fy && s.scope.includes(code),
+      );
+      if (!bb) continue;
+      const bdoc = anyParsedDocSchema.parse(readJson(parsedPath(bb.id)));
+      if (bdoc.docType !== "budget-book") continue;
+      for (const side of ["revenue", "expenditure"] as const) {
+        for (const [kan, kos] of Object.entries(e.byKan[side])) {
+          const got = Math.round(kos.reduce((a, k) => a + k.v, 0) * 1e5);
+          const want = bdoc.facts.find((f) => f.side === side && f.kanName === kan)?.amount;
+          if (want == null) throw new Error(`${bb.id}: 款項目の款「${kan}」(${side}) が款別一覧にありません`);
+          if (got !== want) {
+            throw new Error(
+              `${bb.id}: 款「${kan}」(${side}) の Σ項 ${got.toLocaleString()} が款別一覧の ` +
+                `${want.toLocaleString()} と一致しません（差 ${(got - want).toLocaleString()}）`,
+            );
+          }
+        }
+      }
+    }
+  }
+
+  const out = `// このファイルは自動生成です。手で編集しないこと。
+// 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
+// **款より下（項・目）の内訳**。金額は億円（原典の千円値を 1e5 で割った正確値）。
+// ⚠ 節・細節は載せていない（歳出の節は性質別区分で款項目の目的別とは軸が違う。parsed には在る）。
+// ⚠ 一般会計のみ（parsed は全17会計を持つ）。
+
+export type BudgetDetailKo = { name: string; v: number; moku: { name: string; v: number }[] };
+export type BudgetDetailYear = {
+  fy: string;
+  fyLabel: string;
+  byKan: Record<"revenue" | "expenditure", Record<string, BudgetDetailKo[]>>;
+  sourceTitle: string;
+  localUrl: string;
+  refLabel: string;
+  originUrl: string;
+  archiveUrl: string;
+};
+
+/** 団体コード → 年度（新しい順）。款ドリルの「項・目の内訳」が使う */
+export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = ${JSON.stringify(byCode, null, 2)};
+`;
+  writeFileSync(join(process.cwd(), "src/client/lib/budgetdetail.gen.ts"), out, "utf8");
+  const n = Object.values(byCode).flat();
+  console.log(
+    `✓ 款項目（項以下の内訳）を導出 → src/client/lib/budgetdetail.gen.ts（` +
+      n.map((e) => `${e.fy}:歳入${Object.values(e.byKan.revenue).flat().length}項/歳出${Object.values(e.byKan.expenditure).flat().length}項`).join(" / ") +
+      `）`,
+  );
+}
+
+// ============================================================================
 // データ整備状況 → public/coverage.json（/coverage ページが取得する）
 //
 // 「全1,741市町村を網羅した ○× 一覧（手付かずも含む）」＋「原本の保管情報」＋
@@ -2505,6 +2634,17 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
   const { KOFU_EXECUTION_YEARS } = await import("../src/client/lib/execution.gen");
   const { KOFU_EVALUATION_YEARS } = await import("../src/client/lib/evaluations.gen");
   const { KOFU_OUTTURN_YEARS } = await import("../src/client/lib/outturn.gen");
+  const { BUDGET_DETAIL } = await import("../src/client/lib/budgetdetail.gen");
+  const BUDGET_DETAIL_FOR_COVERAGE: Record<string, { fy: string; koCount: number; mokuCount: number }[]> =
+    Object.fromEntries(
+      Object.entries(BUDGET_DETAIL).map(([code, years]) => [
+        code,
+        years.map((e) => {
+          const kos = [...Object.values(e.byKan.revenue), ...Object.values(e.byKan.expenditure)].flat();
+          return { fy: e.fy, koCount: kos.length, mokuCount: kos.reduce((a, k) => a + k.moku.length, 0) };
+        }),
+      ]),
+    );
   const { MUNI_BUDGETS, MUNI_BUDGET_YEARS, BUDGET_MUNIS } = await import("../src/client/lib/munibudgets.gen");
   const { PREF_CODES } = await import("../src/client/lib/decision-index.gen");
   const { DECISION_YEARS } = await import("../src/client/lib/decision-index.gen");
@@ -2519,6 +2659,7 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
     { key: "execution", label: "執行", full: "執行・決算（自治体の確定値）" },
     { key: "evaluation", label: "評価", full: "事務事業評価" },
     { key: "outturn", label: "統計", full: "統計書（款項×当初/最終/決算）" },
+    { key: "detail", label: "内訳", full: "款より下の内訳（項・目）" },
   ] as const;
 
   const srcs = SOURCES.filter((s) => !s.fixture);
@@ -2554,6 +2695,7 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
     "osaka-yosansho": "ダッシュボード／款別ドリルダウン／前年比較",
     "hiroshima-yosansho": "ダッシュボード／款別ドリルダウン／前年比較",
     "tokyo-yosangaiyou-csv": "ダッシュボード／款別ドリルダウン／前年比較",
+    "yokohama-yosan-meisai-csv": "款別ドリルダウンの項・目の内訳（当初予算）",
     "nerima-kanbetsu-xlsx": "ダッシュボード／款別ドリルダウン／前年比較",
     "arakawa-setsumei": "ダッシュボード／款別ドリルダウン／前年比較",
     "setagaya-mieruka-csv": "ダッシュボード／款別ドリルダウン／前年比較",
@@ -2667,6 +2809,13 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
       // 事業報告（成果）は budget 階層でも収録し得る（川崎 R6・572事業）
       if (reportDetailByCode[k.code]) d.report = reportDetailByCode[k.code]!;
       if (mb.projects.length > 0) d.projects = `${mb.projects.length}件`;
+      // 款より下（項・目）の内訳（#191）。**款別とは別の資料**なので独立した列にしている
+      {
+        const bd = BUDGET_DETAIL_FOR_COVERAGE[k.code];
+        if (bd?.length) {
+          d.detail = `${range(bd.map((e) => e.fy))}・${bd[0]!.koCount}項/${bd[0]!.mokuCount}目`;
+        }
+      }
       if ((mb.execution?.length ?? 0) > 0) d.execution = mb.execution!.map((e) => e.fyLabel).join("・");
     }
     entityDetail[k.code] = {
@@ -2732,9 +2881,15 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
       const prefName = isPrefEntity ? trueName : muniByCode.get(u.code)!.prefName;
 
       // ② 収録済みになっていないか（＝この記録はもう古くないか）
-      const collectedFys: string[] =
-        u.dataset !== "budget"
-          ? []
+      // ⚠ **年度ごとに収録できる列は年度で照合する**（budget と detail）。
+      //   それ以外（report・evaluation…）は資料まるごとの収録なので、下の粗い照合でよい。
+      //   detail を粗いほうに入れると「R8・R6 は収録済みだから R7 の記録も古い」と誤判定する
+      //   （#191 で実際にそうなった）。
+      const YEARWISE = new Set(["budget", "detail"]);
+      const collectedFys: string[] = !YEARWISE.has(u.dataset)
+        ? []
+        : u.dataset === "detail"
+          ? (BUDGET_DETAIL[u.code] ?? []).map((e) => e.fy)
           : u.code === SELF_CODE
             ? KOFU_BUDGET_YEARS.map((b) => b.fy)
             : (MUNI_BUDGET_YEARS[u.code] ?? []).map((y) => y.fy);
@@ -2748,7 +2903,7 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
             `判定はくつがえります（豊島 R4・大田 H27 の前例）ので、unrecordable.ts の該当行を削るか年度を狭めてください`,
         );
       }
-      if (u.dataset !== "budget" && entityDetail[u.code]?.detail[u.dataset]) {
+      if (!YEARWISE.has(u.dataset) && entityDetail[u.code]?.detail[u.dataset]) {
         throw new Error(
           `${where}: 「収録できない」と記録されているのに /coverage の「${u.dataset}」が収録済みになっています` +
             `（${entityDetail[u.code]!.detail[u.dataset]}）。unrecordable.ts の該当行を見直してください`,

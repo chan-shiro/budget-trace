@@ -38,7 +38,13 @@ export const sourceEntrySchema = z.object({
    *   コメントに原文で残すこと。
    */
   noDeepLink: z.boolean().optional(),
-  kind: z.enum(["excel", "csv", "pdf", "page"]),
+  /**
+   * 原本の種別。⚠ **zip は 2026-08-02（#191・横浜の款項目節 CSV）で足した** —
+   * 中身は CSV だが**落ちてくるファイルは zip** なので、`csv` と偽ると
+   * ①魚拓の sha256 突合が別物を指す ②/sources の表示が実物と食い違う。
+   * archive の `isVerifiable` は `page` 以外を検証対象にするので zip もそのまま乗る。
+   */
+  kind: z.enum(["excel", "csv", "pdf", "page", "zip"]),
   /** 会計年度（例: "R6"） */
   fiscalYear: z.string().regex(/^[RH]\d+$/),
   scope: z.string(),
@@ -628,9 +634,64 @@ export const projectReportDocSchema = z.object({
 });
 export type ProjectReportDoc = z.infer<typeof projectReportDocSchema>;
 
+// ---- [2''''] parsed: 当初予算の款項目節（項以下の内訳） ------------------------
+// **プロジェクト初の「款より下」に届く層**（2026-08-02・#191・横浜）。全自治体で款別
+// （第1階層）までしか収録できておらず、`/roadmap` の later「款より下（項・目・節）の内訳」は
+// 甲府市の原典（予算書本編）がウェブ未公開で止まっていた。
+//
+// **なぜ budget-book に載せられないか**: `budgetLineFactSchema` は `kanNo`/`kanName` しか持たず、
+// **項・目・節を入れる場所が無い**。budget-book を壊さずに階層を持つため別 docType にする。
+//
+// **葉ノードだけを持つ**（原典が小計行を持たないため。⚠ 例外は下記の `総計` 行で、
+// **これは parse 時に落とす** — 残すと二重計上になる）。上位階層の額は葉の和で作る。
+export const budgetDetailFactSchema = z.object({
+  side: z.enum(["revenue", "expenditure"]),
+  /** 会計コード（横浜は `01` が一般会計。⚠ R6 はゼロ埋めされないので parse 側で揃える） */
+  accountCode: z.string().min(1),
+  accountName: z.string().min(1),
+  /** 款・項・目（番号は原典の桁のまま。名称は原典どおり） */
+  kanNo: z.string().min(1),
+  kanName: z.string().min(1),
+  koNo: z.string().min(1),
+  koName: z.string().min(1),
+  mokuNo: z.string().min(1),
+  mokuName: z.string().min(1),
+  /** 節。⚠ **歳出の節は地方自治法の性質別区分**（報酬・給料・委託料…）で、款項目の目的別とは軸が違う */
+  setsuNo: z.string().min(1),
+  setsuName: z.string().min(1),
+  /** 細節（歳出のみ。歳入には無い） */
+  saisetsuNo: z.string().nullable(),
+  saisetsuName: z.string().nullable(),
+  /** 金額（千円）。⚠ 原典は単位をどこにも書いていないので registry の `unit` で宣言する */
+  amount: z.number(),
+  locator: locatorSchema,
+});
+export type BudgetDetailFact = z.infer<typeof budgetDetailFactSchema>;
+
+export const budgetDetailDocSchema = z.object({
+  docType: z.literal("budget-detail"),
+  sourceId: z.string(),
+  parser: z.string(),
+  parserVersion: z.string(),
+  parsedAt: z.string(),
+  unit: z.literal("thousandYen"),
+  fiscalYear: z.string(),
+  /** 一般会計の歳入合計・歳出合計（葉の和）。全会計ではなく**一般会計**なのは画面が一般会計だから */
+  generalRevenueTotal: z.number(),
+  generalExpenditureTotal: z.number(),
+  /** 全会計の合計（原典の `総計` 行と突合するために持つ） */
+  allRevenueTotal: z.number(),
+  allExpenditureTotal: z.number(),
+  /** 原典の `総計` 行の値（R8・R7 の歳出にだけ在る。無い年度は null） */
+  statedExpenditureTotal: z.number().nullable(),
+  facts: z.array(budgetDetailFactSchema),
+});
+export type BudgetDetailDoc = z.infer<typeof budgetDetailDocSchema>;
+
 /** parse/validate が受け取り得る全ドキュメント型 */
 export const anyParsedDocSchema = z.union([
   budgetBookDocSchema,
+  budgetDetailDocSchema,
   budgetExecutionDocSchema,
   projectEvaluationDocSchema,
   budgetOutturnDocSchema,

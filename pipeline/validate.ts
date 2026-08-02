@@ -288,6 +288,58 @@ if (doc.docType === "budget-execution") {
   finish(doc.facts.length, "款");
 }
 
+// ---- 当初予算の款項目節（項以下の内訳・#191） ----------------------------------
+// **葉ノードだけを持つ資料**なので、Σ が立つ場所が3つある。どれも原典が自分で持っている数字。
+if (doc.docType === "budget-detail") {
+  // ① **予算は均衡編成**（歳入 = 歳出）。一般会計と全会計の両方で見る。
+  //    ⚠ **横浜 R7 はここが破れる**（歳入 CSV だけ +379,539千円）ので収録していない。
+  //    この等式を緩めると「資料内部で矛盾している版を静かに通す」型に化ける。
+  for (const [label, rev, exp] of [
+    ["一般会計", doc.generalRevenueTotal, doc.generalExpenditureTotal],
+    ["全会計", doc.allRevenueTotal, doc.allExpenditureTotal],
+  ] as const) {
+    if (rev !== exp) {
+      issues.push({
+        level: "error",
+        message:
+          `${label}の歳入 ${rev.toLocaleString()} と歳出 ${exp.toLocaleString()} が一致しません` +
+          `（差 ${(rev - exp).toLocaleString()}）。予算は均衡編成なので、**原典の側が矛盾している**` +
+          `可能性がある（横浜 R7 は実際にそうだった）。原因を突き止めるまで収録しないこと`,
+      });
+    }
+  }
+
+  // ② 原典の `総計` 行 = 葉の Σ（総計行がある年度だけ。R8・R7 の歳出に在る）
+  if (doc.statedExpenditureTotal != null && doc.statedExpenditureTotal !== doc.allExpenditureTotal) {
+    issues.push({
+      level: "error",
+      message:
+        `原典の総計行 ${doc.statedExpenditureTotal.toLocaleString()} と葉の Σ ${doc.allExpenditureTotal.toLocaleString()} が` +
+        `一致しません（差 ${(doc.allExpenditureTotal - doc.statedExpenditureTotal).toLocaleString()}）。` +
+        `総計行を葉として拾っている（二重計上）か、行を落としている`,
+    });
+  }
+
+  // ③ 階層の健全性 — 上位が空・下位だけ在るような木は作れない
+  for (const f of doc.facts) {
+    if (f.side === "expenditure" && !f.saisetsuNo) {
+      issues.push({ level: "error", message: `歳出に細節がありません（${f.kanName}/${f.koName}/${f.mokuName}/${f.setsuName}）` });
+      break;
+    }
+    if (f.side === "revenue" && f.saisetsuNo) {
+      issues.push({ level: "error", message: `歳入に細節が付いています（${f.kanName}/${f.koName}）— 側の取り違えを疑う` });
+      break;
+    }
+  }
+
+  // ④ 一般会計の款が1つも無い、は様式の取り違え
+  const genKan = new Set(doc.facts.filter((f) => f.accountCode === "01" && f.side === "expenditure").map((f) => f.kanName));
+  if (genKan.size < 5) {
+    issues.push({ level: "error", message: `一般会計の歳出款が ${genKan.size} 種しかありません（会計コードの取り違えを疑う）` });
+  }
+  finish(doc.facts.length, "行");
+}
+
 // ---- 統計書 財政章（款項×当初/最終/決算） --------------------------------------
 if (doc.docType === "budget-outturn") {
   for (const side of ["revenue", "expenditure"] as const) {

@@ -1497,6 +1497,39 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
           : null,
       };
     })(),
+    // **款より下（項・目）の実データ**（#191・横浜）。**当該年度の当初予算そのもの**なので、
+    // 下の R6 決算の参考表示（甲府）とは別物。両方が同時に立つことはない（甲府は full・横浜は budget）。
+    // ⚠ 節・細節は出さない — 歳出の節は**性質別区分**で款項目の目的別とは軸が違い、
+    //   款の下に並べると「目的別の内訳」と誤読させる（gen にも入れていない）。
+    ...(() => {
+      const detailYears = muniCode ? D.BUDGET_DETAIL[muniCode] : undefined;
+      const entry = detailYears?.find((e) => e.fy === budget.fy);
+      const kos = entry && depth === 1 ? entry.byKan[side === "exp" ? "expenditure" : "revenue"][nodeName] ?? [] : [];
+      const kanTotal = kos.reduce((a, k) => a + k.v, 0);
+      return {
+        hasBudgetDetail: kos.length > 0,
+        budgetDetailFyLabel: entry?.fyLabel ?? "",
+        budgetDetailKanTotalFmt: fmtOku(kanTotal),
+        budgetDetailRows: kos.map((k, i) => ({
+          name: k.name,
+          amtFmt: fmtOku(k.v),
+          pctFmt: pctOf(k.v, kanTotal),
+          barW: ((k.v / (kos[0]?.v || 1)) * 100).toFixed(1),
+          sw: D.seriesColor(i),
+          // 目は多い項があるので、画面では項を開いたときだけ出す（View 側で details に入れる）
+          moku: k.moku.map((m) => ({ name: m.name, amtFmt: fmtOku(m.v), pctFmt: pctOf(m.v, k.v) })),
+        })),
+        budgetDetailSourceLabel: entry ? `出典：${entry.sourceTitle}（${entry.refLabel}）` : "",
+        budgetDetailSourceUrl: entry ? evHref(entry.localUrl) : "",
+        budgetDetailSourceAction: entry ? evAction(entry.localUrl) : "",
+        budgetDetailSourceOpen: entry
+          ? () => openViewer({
+              url: entry.localUrl, title: entry.sourceTitle, sub: entry.refLabel,
+              originUrl: entry.originUrl, archiveUrl: entry.archiveUrl,
+            })
+          : () => {},
+      };
+    })(),
     // R8 予算の項以下は原典未公開のため、R6 決算の項内訳を年度明示で参考表示する
     ...(() => {
       const rows = isFull && side === "exp" && depth === 1 ? KOFU_R6_DETAIL.byKan[nodeName] ?? [] : [];

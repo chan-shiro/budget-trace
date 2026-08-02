@@ -23,6 +23,7 @@ import { parseSetagayaMierukaCsv, parseSetagayaToushoXls } from "./setagaya-kanb
 import { parseSaitamaJigyouHoukoku } from "./saitama-jigyou-houkoku";
 import { parseKitakyushuJigyouHyoka } from "./kitakyushu-jigyou-hyoka";
 import { parseKyotofuSeikaHoukoku } from "./kyotofu-seika-houkoku";
+import { parseYokohamaYosanMeisaiCsv } from "./yokohama-yosan-meisai-csv";
 
 /** 1ソースの raw ファイル群をまとめて受け取り、マージ済みの facts を返す */
 type ParserFn = (files: { path: string; filename: string }[], source: SourceEntry) => AnyParsedDoc;
@@ -32,6 +33,7 @@ const PARSERS: Record<string, ParserFn> = {
   "kofu-yosansho": parseKofuYosansho,
   "osaka-yosansho": parseOsakaYosansho, // 事項別明細書（款項目が同一表・182p・折返し款あり）
   "hiroshima-yosansho": parseHiroshimaYosansho, // 当初予算の概要「資料1」（款番号列が無い・10列）
+  "yokohama-yosan-meisai-csv": parseYokohamaYosanMeisaiCsv, // 款項目節（項以下の内訳）・zip 内 CSV
   "tokyo-yosangaiyou-csv": parseTokyoYosangaiyouCsv, // 東京都 予算概要CSV（PDFが全経路パース不可のため唯一の機械可読経路）
   "kofu-zaisei-jokyo": parseKofuZaiseiJokyo, // 財政事情の公表（予算執行状況・速報）
   "kofu-kessan-syousai": parseKofuKessanSyousai, // 決算状況 収入支出詳細（執行の確定値）
