@@ -112,6 +112,7 @@ export function parseYokohamaYosanMeisaiCsv(
 
   const { revenue, expenditure } = readZipEntries(zip.path);
   const facts: BudgetDetailFact[] = [];
+  let statedRevenueTotal: number | null = null;
   let statedExpenditureTotal: number | null = null;
 
   const load = (text: string, side: "revenue" | "expenditure") => {
@@ -129,7 +130,9 @@ export function parseYokohamaYosanMeisaiCsv(
       // ⚠ `総計` 行（年度列が `総計`・会計コードが空）。残すと二重計上になる
       if (r[0]!.trim() === "総計") {
         const v = Number(r[r.length - 1]!.replace(/,/g, ""));
+        // ⚠ **歳入側も捨てない**（現状の原典には出ないが、出たら検証の錨になる）
         if (side === "expenditure") statedExpenditureTotal = v;
+        else statedRevenueTotal = v;
         continue;
       }
       const acc = r[1]!.trim().padStart(2, "0"); // ⚠ R6 はゼロ埋めされない
@@ -192,6 +195,7 @@ export function parseYokohamaYosanMeisaiCsv(
     generalExpenditureTotal,
     allRevenueTotal: sum((f) => f.side === "revenue"),
     allExpenditureTotal: sum((f) => f.side === "expenditure"),
+    statedRevenueTotal,
     statedExpenditureTotal,
     facts,
   };

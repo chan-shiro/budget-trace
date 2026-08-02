@@ -2563,7 +2563,15 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
       const bb = SOURCES.find(
         (s) => s.parser === "kofu-yosansho" && s.fiscalYear === e.fy && s.scope.includes(code),
       );
-      if (!bb) continue;
+      // ⚠ **見つからなければ落とす**。この突合は**唯一の外部 Σ 錨**であり、
+      //   「単位＝千円」の確定根拠でもある（原典は単位を書いていない）。黙ってスキップすると、
+      //   款別が別パーサの自治体に detail を足した瞬間に**錨が無言で消える**。
+      if (!bb) {
+        throw new Error(
+          `${code} ${e.fy}: 款項目（detail）を収録しているのに、突合できる款別（budget-book）が見つかりません。` +
+            `Σ項 = 款額 はこの資料の唯一の外部の錨（単位の確定根拠でもある）なので、無いまま通さない`,
+        );
+      }
       const bdoc = anyParsedDocSchema.parse(readJson(parsedPath(bb.id)));
       if (bdoc.docType !== "budget-book") continue;
       for (const side of ["revenue", "expenditure"] as const) {

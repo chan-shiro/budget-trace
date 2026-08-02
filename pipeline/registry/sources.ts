@@ -7809,7 +7809,9 @@ export const SOURCES: SourceEntry[] = [
     //   ⚠⚠ **サイトポリシー原文（「無断で複製・転用…」）を併記しないこと** — `licenseClassOf` は
     //   禁止文言を CC BY より優先させる設計なので、**併記した瞬間 permission-required へ落ちる**（§9g）。
     ["R8", "r8/r8yosan.files/r8sainyu_saisyutsu.zip", "r8/r8yosan.html"],
-    ["R6", "r6/r6.files/r6sainyu_saisyutsu.zip", "r6/index.html"],
+    // ⚠ landing は `r6/index.html` だと 301（`r6/` へ）。兄弟の `yokohama-yosansho-r6` と同じ
+    //   `r6/r6.html`（200）を指す。魚拓は 301 の URL では張れない
+    ["R6", "r6/r6.files/r6sainyu_saisyutsu.zip", "r6/r6.html"],
   ] as const).map(([fy, path, landing]) => ({
     id: `yokohama-yosan-meisai-${fy.toLowerCase()}`,
     title: `${eraYear(fy)}年度 横浜市予算に関する説明書（歳入・歳出予算 款項目節 CSV）`,

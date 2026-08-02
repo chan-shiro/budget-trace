@@ -682,7 +682,12 @@ export const budgetDetailDocSchema = z.object({
   /** 全会計の合計（原典の `総計` 行と突合するために持つ） */
   allRevenueTotal: z.number(),
   allExpenditureTotal: z.number(),
-  /** 原典の `総計` 行の値（R8・R7 の歳出にだけ在る。無い年度は null） */
+  /**
+   * 原典の `総計` 行の値（横浜は R8・R7 の**歳出にだけ**在る。無ければ null）。
+   * ⚠ **歳入側も必ず持つ** — 現状の原典には無いが、出たときに「検証の錨に使える数字を
+   * 黙って捨てる」ことになるため（レビュー指摘）。validate が在るほうだけ突合する。
+   */
+  statedRevenueTotal: z.number().nullable(),
   statedExpenditureTotal: z.number().nullable(),
   facts: z.array(budgetDetailFactSchema),
 });

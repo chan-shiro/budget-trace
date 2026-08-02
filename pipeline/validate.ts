@@ -309,25 +309,67 @@ if (doc.docType === "budget-detail") {
     }
   }
 
-  // ② 原典の `総計` 行 = 葉の Σ（総計行がある年度だけ。R8・R7 の歳出に在る）
-  if (doc.statedExpenditureTotal != null && doc.statedExpenditureTotal !== doc.allExpenditureTotal) {
-    issues.push({
-      level: "error",
-      message:
-        `原典の総計行 ${doc.statedExpenditureTotal.toLocaleString()} と葉の Σ ${doc.allExpenditureTotal.toLocaleString()} が` +
-        `一致しません（差 ${(doc.allExpenditureTotal - doc.statedExpenditureTotal).toLocaleString()}）。` +
-        `総計行を葉として拾っている（二重計上）か、行を落としている`,
-    });
+  // ② 原典の `総計` 行 = 葉の Σ（総計行がある側・年度だけ。横浜は R8・R7 の歳出に在る）
+  for (const [label, stated, leaves] of [
+    ["歳入", doc.statedRevenueTotal, doc.allRevenueTotal],
+    ["歳出", doc.statedExpenditureTotal, doc.allExpenditureTotal],
+  ] as const) {
+    if (stated != null && stated !== leaves) {
+      issues.push({
+        level: "error",
+        message:
+          `${label}の原典の総計行 ${stated.toLocaleString()} と葉の Σ ${leaves.toLocaleString()} が` +
+          `一致しません（差 ${(leaves - stated).toLocaleString()}）。` +
+          `総計行を葉として拾っている（二重計上）か、行を落としている`,
+      });
+    }
   }
 
-  // ③ 階層の健全性 — 上位が空・下位だけ在るような木は作れない
+  // ③ 細節の在り方。⚠ **これは横浜の様式であって款項目節の一般則ではない**
+  //    （細節を持たない資料は当然あり得る）。**「歳出に細節がある資料」だと分かっている場合だけ**
+  //    その一貫性を検査する — 全 doc に一般則として効かせると、細節の無い自治体を足した瞬間に
+  //    偽陽性 error になり、**ゲートを緩める圧力**が生まれる（レビュー指摘）。
+  {
+    const expHasSaisetsu = doc.facts.some((f) => f.side === "expenditure" && f.saisetsuNo);
+    if (expHasSaisetsu) {
+      const missing = doc.facts.find((f) => f.side === "expenditure" && !f.saisetsuNo);
+      if (missing) {
+        issues.push({
+          level: "error",
+          message: `歳出の一部にだけ細節がありません（${missing.kanName}/${missing.koName}/${missing.mokuName}）— 行の取り違えを疑う`,
+        });
+      }
+    }
+    // 歳入に細節が付くのは側の取り違え（歳入 CSV に細節列は無い）
+    const revSaisetsu = doc.facts.find((f) => f.side === "revenue" && f.saisetsuNo);
+    if (revSaisetsu) {
+      issues.push({ level: "error", message: `歳入に細節が付いています（${revSaisetsu.kanName}/${revSaisetsu.koName}）— 側の取り違えを疑う` });
+    }
+  }
+
+  // ⑤ **科目名の破損**（款別と同じ網を項以下にも効かせる）。#192 で予定している
+  //    R5〜H29 のレイアウト型 XLSX は、まさにヘッダ繰返し・結合セルで名前が壊れる型なので、
+  //    そのとき効かなければ意味が無い（レビュー指摘）。
+  //
+  // ⚠⚠ **語彙の網（KANNAME_JUNK_RE）は款名にしか当ててはいけない。**
+  //    あれは「**款名として**原典にあり得ない語」を選んだもので、**下の階層では実在の科目名**に
+  //    なる。実際に `前年度繰越金`（歳入 繰越金 の節）が `前年度` で誤検出された（実測）。
+  //    → **語彙は款名だけ。部首の網（文字クラス）は階層に依らず安全なので全階層に当てる。**
   for (const f of doc.facts) {
-    if (f.side === "expenditure" && !f.saisetsuNo) {
-      issues.push({ level: "error", message: `歳出に細節がありません（${f.kanName}/${f.koName}/${f.mokuName}/${f.setsuName}）` });
+    const j = KANNAME_JUNK_RE.exec(f.kanName);
+    if (j) {
+      issues.push({ level: "error", message: `款名「${f.kanName}」に表ヘッダ/単位の断片「${j[0]}」が混入しています` });
       break;
     }
-    if (f.side === "revenue" && f.saisetsuNo) {
-      issues.push({ level: "error", message: `歳入に細節が付いています（${f.kanName}/${f.koName}）— 側の取り違えを疑う` });
+  }
+  for (const f of doc.facts) {
+    const hit = ([["款", f.kanName], ["項", f.koName], ["目", f.mokuName], ["節", f.setsuName], ["細節", f.saisetsuName]] as const)
+      .find(([, nm]) => nm && KANNAME_RADICAL_RE.test(nm));
+    if (hit) {
+      issues.push({
+        level: "error",
+        message: `${hit[0]}名「${hit[1]}」に部首の異体字が混入しています（見た目は正字とほぼ同じで Σ も通る）`,
+      });
       break;
     }
   }

@@ -9245,9 +9245,17 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20251024204137/https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r6/r6.files/r6sainyu_saisyutsu.zip",
       "waybackTimestamp": "20251024204137",
-      "checkedAt": "2026-08-02T07:21:45.761Z",
+      "checkedAt": "2026-08-02T08:02:20.019Z",
       "sha256Match": true,
       "waybackBytes": 76735
+    },
+    {
+      "sourceId": "yokohama-yosan-meisai-r6",
+      "url": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r6/r6.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260509132938/https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r6/r6.html",
+      "waybackTimestamp": "20260509132938",
+      "checkedAt": "2026-08-02T08:02:43.542Z"
     },
     {
       "sourceId": "yokohama-yosan-meisai-r8",

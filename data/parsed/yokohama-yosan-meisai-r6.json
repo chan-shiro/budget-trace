@@ -3,13 +3,14 @@
   "sourceId": "yokohama-yosan-meisai-r6",
   "parser": "yokohama-yosan-meisai-csv",
   "parserVersion": "0.1.0",
-  "parsedAt": "2026-08-02T07:17:19.034Z",
+  "parsedAt": "2026-08-02T08:00:01.172Z",
   "unit": "thousandYen",
   "fiscalYear": "R6",
   "generalRevenueTotal": 1915553874,
   "generalExpenditureTotal": 1915553874,
   "allRevenueTotal": 3223465729,
   "allExpenditureTotal": 3223465729,
+  "statedRevenueTotal": null,
   "statedExpenditureTotal": null,
   "facts": [
     {
