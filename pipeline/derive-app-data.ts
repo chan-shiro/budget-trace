@@ -2496,9 +2496,12 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
 //   性質別のクロス集計は別の画面として起こすべきもの。
 // ⚠ **一般会計だけ**（画面が一般会計なので）。parsed は全17会計を持っている。
 {
-  const detailSources = SOURCES.filter((s) => s.parser === "yokohama-yosan-meisai-csv");
-  type Moku = { name: string; v: number };
-  type Ko = { name: string; v: number; moku: Moku[] };
+  // #191 の CSV 版（R6〜R8・当年度のみ）と #192 の XLSX 版（R5〜R3・**前年度つき**）の両方
+  const DETAIL_PARSERS = new Set(["yokohama-yosan-meisai-csv", "yokohama-setsumeisho-xlsx"]);
+  const detailSources = SOURCES.filter((s) => DETAIL_PARSERS.has(s.parser));
+  // ⚠ prevV は**資料によって無い**（CSV 版は当年度のみ）。無いことを 0 で表さない
+  type Moku = { name: string; v: number; prevV: number | null };
+  type Ko = { name: string; v: number; prevV: number | null; moku: Moku[] };
   type Entry = {
     fy: string; fyLabel: string;
     /** 側 → 款名 → 項（金額降順・各項の下に目） */
@@ -2507,6 +2510,8 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
     originUrl: string; archiveUrl: string;
   };
   const byCode: Record<string, Entry[]> = {};
+  /** 年度をまたぐ突合のために、款レベルの合計だけ控えておく（下の ★★ で使う） */
+  const detailTotals: { code: string; fy: string; id: string; cur: [number, number]; prev: [number | null, number | null] }[] = [];
   for (const src of detailSources) {
     const v = validationResultSchema.parse(readJson(validationPath(src.id)));
     if (v.status !== "ok") throw new Error(`${src.id}: 検証が ${v.status} のため derive しません`);
@@ -2523,26 +2528,39 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
     const byKan = { revenue: {}, expenditure: {} } as Entry["byKan"];
     for (const side of ["revenue", "expenditure"] as const) {
       const leaves = doc.facts.filter((f) => f.side === side && f.accountCode === "01");
-      const kanMap: Record<string, Record<string, Record<string, number>>> = {};
+      const kanMap: Record<string, Record<string, Record<string, { v: number; p: number | null }>>> = {};
       for (const f of leaves) {
-        ((kanMap[f.kanName] ??= {})[f.koName] ??= {})[f.mokuName] =
-          (kanMap[f.kanName]![f.koName]![f.mokuName] ?? 0) + f.amount;
+        const bucket = ((kanMap[f.kanName] ??= {})[f.koName] ??= {});
+        const cell = (bucket[f.mokuName] ??= { v: 0, p: null });
+        cell.v += f.amount;
+        // ⚠ 前年度は**全部の葉が持つとは限らない**（皆増は空）。持っているものだけ足す
+        if (f.prevAmount != null) cell.p = (cell.p ?? 0) + f.prevAmount;
       }
       byKan[side] = Object.fromEntries(
         Object.entries(kanMap).map(([kan, kos]) => [
           kan,
           Object.entries(kos)
-            .map(([ko, mokus]) => ({
-              name: ko,
-              v: Object.values(mokus).reduce((a, b) => a + b, 0) / 1e5, // 千円 → 億円
-              moku: Object.entries(mokus)
-                .map(([nm, amt]) => ({ name: nm, v: amt / 1e5 }))
-                .sort((a, b) => b.v - a.v),
-            }))
+            .map(([ko, mokus]) => {
+              const vals = Object.values(mokus);
+              const anyPrev = vals.some((m) => m.p != null);
+              return {
+                name: ko,
+                v: vals.reduce((a, b) => a + b.v, 0) / 1e5, // 千円 → 億円
+                prevV: anyPrev ? vals.reduce((a, b) => a + (b.p ?? 0), 0) / 1e5 : null,
+                moku: Object.entries(mokus)
+                  .map(([nm, m]) => ({ name: nm, v: m.v / 1e5, prevV: m.p == null ? null : m.p / 1e5 }))
+                  .sort((a, b) => b.v - a.v),
+              };
+            })
             .sort((a, b) => b.v - a.v),
         ]),
       );
     }
+    detailTotals.push({
+      code, fy: src.fiscalYear, id: src.id,
+      cur: [doc.generalRevenueTotal, doc.generalExpenditureTotal],
+      prev: [doc.prevRevenueTotal, doc.prevExpenditureTotal],
+    });
     (byCode[code] ??= []).push({
       fy: src.fiscalYear,
       fyLabel: `${eraYear(src.fiscalYear)}年度 当初予算`,
@@ -2576,6 +2594,7 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
       if (bdoc.docType !== "budget-book") continue;
       for (const side of ["revenue", "expenditure"] as const) {
         for (const [kan, kos] of Object.entries(e.byKan[side])) {
+          // ⚠ **当年度だけ**突合する。前年度は当年度に廃止された目のぶん葉が少ないので閉じない
           const got = Math.round(kos.reduce((a, k) => a + k.v, 0) * 1e5);
           const want = bdoc.facts.find((f) => f.side === side && f.kanName === kan)?.amount;
           if (want == null) throw new Error(`${bb.id}: 款項目の款「${kan}」(${side}) が款別一覧にありません`);
@@ -2590,13 +2609,45 @@ export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))
     }
   }
 
+  // ★★ 年度をまたぐ突合: **ある年度の「前年度」合計 = 前の年度の資料の「当年度」合計**。
+  //   validate は1資料の中しか見ないので、ここでしか張れない。**前年度列がこの資料の価値**
+  //   （#192 の目的）なので、列を取り違えたまま通すと画面の前年比が全部ずれる。
+  //   ⚠ **項・目のレベルでは同じ等式が成り立たない**（実測）。原典の前年度額は
+  //     **当年度の科目体系に組み替えたもの**で、廃止された項は行ごと消えるため、
+  //     R5 の前年（項）と R4 の当年（項）は 115項中12項が食い違う。**款の合計だけが閉じる**。
+  {
+    const byCodeTotals: Record<string, typeof detailTotals> = {};
+    for (const t of detailTotals) (byCodeTotals[t.code] ??= []).push(t);
+    let chained = 0;
+    for (const list of Object.values(byCodeTotals)) {
+      for (const t of list) {
+        const prevFy = list.find((x) => fyRank(x.fy) === fyRank(t.fy) - 1);
+        if (!prevFy) continue; // 前の年度が未収録（R2 以前・R7）なら鎖はそこで切れる
+        for (const [i, label] of [[0, "歳入"], [1, "歳出"]] as const) {
+          const want = t.prev[i];
+          if (want == null) continue; // 前年度列を持たない資料（CSV 版）
+          if (want !== prevFy.cur[i]) {
+            throw new Error(
+              `${t.id} の${label}「前年度」合計 ${want.toLocaleString()} が、` +
+                `${prevFy.id} の「当年度」合計 ${prevFy.cur[i].toLocaleString()} と一致しません` +
+                `（差 ${(want - prevFy.cur[i]).toLocaleString()}）。列の取り違えか年度の取り違えを疑うこと`,
+            );
+          }
+          chained++;
+        }
+      }
+    }
+    if (detailTotals.length > 0) console.log(`  款項目の年度チェーン: ${chained} 本（前年度合計 = 前年の当年度合計）`);
+  }
+
   const out = `// このファイルは自動生成です。手で編集しないこと。
 // 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
 // **款より下（項・目）の内訳**。金額は億円（原典の千円値を 1e5 で割った正確値）。
 // ⚠ 節・細節は載せていない（歳出の節は性質別区分で款項目の目的別とは軸が違う。parsed には在る）。
 // ⚠ 一般会計のみ（parsed は全17会計を持つ）。
 
-export type BudgetDetailKo = { name: string; v: number; moku: { name: string; v: number }[] };
+/** ⚠ prevV は資料によって null（CSV 版 R6〜R8 は当年度のみ。XLSX 版 R5〜R3 は前年度つき） */
+export type BudgetDetailKo = { name: string; v: number; prevV: number | null; moku: { name: string; v: number; prevV: number | null }[] };
 export type BudgetDetailYear = {
   fy: string;
   fyLabel: string;
@@ -2704,6 +2755,7 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = ${JSON.stringif
     "hiroshima-yosansho": "ダッシュボード／款別ドリルダウン／前年比較",
     "tokyo-yosangaiyou-csv": "ダッシュボード／款別ドリルダウン／前年比較",
     "yokohama-yosan-meisai-csv": "款別ドリルダウンの項・目の内訳（当初予算）",
+    "yokohama-setsumeisho-xlsx": "款別ドリルダウンの項・目の内訳（当初予算・前年度つき）",
     "nerima-kanbetsu-xlsx": "ダッシュボード／款別ドリルダウン／前年比較",
     "arakawa-setsumei": "ダッシュボード／款別ドリルダウン／前年比較",
     "setagaya-mieruka-csv": "ダッシュボード／款別ドリルダウン／前年比較",

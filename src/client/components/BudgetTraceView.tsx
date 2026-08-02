@@ -1315,24 +1315,36 @@ export default function BudgetTraceView({ v }: { v: any }) {
                     {v.hasBudgetDetail && (
                       <div style={S("margin-top:8px;")}>
                         <h3 style={S("margin:0 0 4px; font-size:14px; font-weight:700;")}>項・目の内訳（{v.budgetDetailFyLabel}）</h3>
-                        <p style={S("margin:0 0 10px; font-size:12px; color:#5C6B77;")}>この款の予算を項・目まで分解しています（款計 {v.budgetDetailKanTotalFmt}）。項をクリックすると目の内訳が開きます。</p>
+                        <p style={S("margin:0 0 10px; font-size:12px; color:#5C6B77;")}>
+                          この款の予算を項・目まで分解しています（款計 {v.budgetDetailKanTotalFmt}）。項をクリックすると目の内訳が開きます。
+                          {/* ⚠ 前年比を出す年度では、それが**原典の前年度列**であることを必ず添える（#192）。
+                              原典は当年度の科目体系に組み替えた前年度額を載せており、前の年度の画面の額とは
+                              一致しない項がある。断らずに出すと「どちらかが間違っている」と読まれる。 */}
+                          {v.budgetDetailHasPrev && "前年比は原典の前年度額（当年度の科目に組み替えたもの）との比較です。"}
+                        </p>
                         <div style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:11px; padding:6px 16px;")}>
                           {v.budgetDetailRows.map((r: any, i: number) => (
                             <details key={i} style={S("border-bottom:1px solid #ECF2F6;")}>
-                              <summary data-mq="drill" style={S("display:grid; grid-template-columns:14px minmax(120px,1.4fr) 2fr 92px 56px 20px; align-items:center; gap:12px; padding:10px 0; cursor:pointer; list-style:none;")}>
+                              <summary data-mq={v.budgetDetailHasPrev ? "drilld" : "drill"} style={S(`display:grid; grid-template-columns:14px minmax(120px,1.4fr) 2fr 92px 56px ${v.budgetDetailHasPrev ? "62px " : ""}20px; align-items:center; gap:12px; padding:10px 0; cursor:pointer; list-style:none;`)}>
                                 <span style={S(`width:11px; height:11px; border-radius:3px; background:${r.sw};`)}></span>
                                 <span style={S("font-size:13.5px; font-weight:600; color:#14181C;")}>{r.name}</span>
                                 <span style={S("height:8px; border-radius:999px; background:#E3EBF0; overflow:hidden;")}><span data-anim="bar" style={S(`display:block; height:100%; width:${r.barW}%; background:${r.sw};`)}></span></span>
                                 <span style={S("font-family:'IBM Plex Mono',monospace; font-size:13px; text-align:right;")}>{r.amtFmt}</span>
                                 <span style={S("font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:#5C6B77; text-align:right;")}>{r.pctFmt}</span>
+                                {v.budgetDetailHasPrev && (
+                                  <span title={`前年度 ${r.prevFmt}`} style={S(`font-family:'IBM Plex Mono',monospace; font-size:11.5px; text-align:right; color:${r.yoyFg};`)}>{r.yoyFmt}</span>
+                                )}
                                 <span style={S("font-size:11px; color:#8494A0;")}>▾</span>
                               </summary>
                               <div style={S("padding:2px 0 10px 26px;")}>
                                 {r.moku.map((m: any, j: number) => (
-                                  <div key={j} style={S("display:grid; grid-template-columns:minmax(120px,1.6fr) 92px 56px; align-items:center; gap:12px; padding:5px 0;")}>
+                                  <div key={j} data-mq={v.budgetDetailHasPrev ? "drilldm" : undefined} style={S(`display:grid; grid-template-columns:minmax(120px,1.6fr) 92px 56px${v.budgetDetailHasPrev ? " 62px" : ""}; align-items:center; gap:12px; padding:5px 0;`)}>
                                     <span style={S("font-size:12.5px; color:#37454F;")}>{m.name}</span>
                                     <span style={S("font-family:'IBM Plex Mono',monospace; font-size:12px; text-align:right; color:#37454F;")}>{m.amtFmt}</span>
                                     <span style={S("font-family:'IBM Plex Mono',monospace; font-size:11px; color:#8494A0; text-align:right;")}>{m.pctFmt}</span>
+                                    {v.budgetDetailHasPrev && (
+                                      <span style={S(`font-family:'IBM Plex Mono',monospace; font-size:11px; text-align:right; color:${m.yoyFg};`)}>{m.yoyFmt}</span>
+                                    )}
                                   </div>
                                 ))}
                               </div>

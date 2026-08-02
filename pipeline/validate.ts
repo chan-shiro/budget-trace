@@ -309,6 +309,47 @@ if (doc.docType === "budget-detail") {
     }
   }
 
+  // ①' **前年度も均衡している**（前年度列を持つ資料だけ）。
+  //    ⚠ **横浜 R2・H31 はここが破れる**（歳入と歳出で前年度 Σ が食い違う）ので収録していない。
+  //    当年度だけ見ていると通ってしまうので、前年度も同じゲートに掛ける
+  //    （§9「前年度列が静かに壊れる」— 甲府 R2 で実害を出した型の再来）。
+  if (doc.prevRevenueTotal != null && doc.prevExpenditureTotal != null &&
+      doc.prevRevenueTotal !== doc.prevExpenditureTotal) {
+    issues.push({
+      level: "error",
+      message:
+        `前年度の歳入 ${doc.prevRevenueTotal.toLocaleString()} と歳出 ${doc.prevExpenditureTotal.toLocaleString()} が` +
+        `一致しません（差 ${(doc.prevRevenueTotal - doc.prevExpenditureTotal).toLocaleString()}）。` +
+        `**当年度が合っていても前年度列だけが壊れていることがある**（横浜 R2・H31 が実例）`,
+    });
+  }
+  // ①'' **Σ前年度（葉） ≤ 前年度合計**。
+  //    ⚠⚠ **等号にしてはいけない**（実測して分かった）。この様式は**当年度の構造**を並べるので、
+  //    **前年度に在って当年度に廃止された目・項は行として現れない**。その分の前年度額は
+  //    上位（款）の合計にだけ残るため、**葉の前年度の和は款の合計より少なくなる**
+  //    （実測: 横浜 R5 歳出で 30,256,840千円・R3 歳入で 11,525,608千円 少ない）。
+  //    **当年度は 款 = 項 = 目 で厳密に閉じる**（パーサ側で assert 済み）。
+  //    ここで見るのは「**多い**」＝二重計上だけ。
+  //    ⚠ **前年度が空の行があるのも正常**（その年に新設された目＝皆増）。空を 0 と読み替えない
+  //    （甲府 R2 は空欄の皆増を比較列と読み違えて +190,691 ずれた＝§9）。
+  if (doc.prevRevenueTotal != null && doc.prevExpenditureTotal != null) {
+    for (const [label, side, want] of [
+      ["歳入", "revenue", doc.prevRevenueTotal],
+      ["歳出", "expenditure", doc.prevExpenditureTotal],
+    ] as const) {
+      const got = doc.facts.filter((f) => f.side === side).reduce((a, f) => a + (f.prevAmount ?? 0), 0);
+      if (got > want) {
+        issues.push({
+          level: "error",
+          message:
+            `${label}: 葉の前年度の和 ${got.toLocaleString()} が前年度合計 ${want.toLocaleString()} を` +
+            `**超えています**（差 +${(got - want).toLocaleString()}）＝二重計上。` +
+            `（少ないのは正常 — 当年度に廃止された目は行として現れないため）`,
+        });
+      }
+    }
+  }
+
   // ② 原典の `総計` 行 = 葉の Σ（総計行がある側・年度だけ。横浜は R8・R7 の歳出に在る）
   for (const [label, stated, leaves] of [
     ["歳入", doc.statedRevenueTotal, doc.allRevenueTotal],

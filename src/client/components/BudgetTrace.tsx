@@ -1506,18 +1506,37 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
       const entry = detailYears?.find((e) => e.fy === budget.fy);
       const kos = entry && depth === 1 ? entry.byKan[side === "exp" ? "expenditure" : "revenue"][nodeName] ?? [] : [];
       const kanTotal = kos.reduce((a, k) => a + k.v, 0);
+      // **前年比は資料が前年度列を持つ年度だけ**（#192・横浜 R5〜R3 の XLSX 版）。
+      // ⚠ **前年度額は原典が当年度の科目体系に組み替えたもの**なので、
+      //   「前の年度の画面に出ている当年度額」とは一致しない項がある（実測 115項中12項）。
+      //   それでも**前年比としてはこちらが正しい**（同じ器で比べたもの）。
+      const hasPrev = kos.some((k) => k.prevV != null);
+      // 前年比の書式は compare 画面と同じ約束（+ / − と #0F76A3 / #C25400）
+      const yoy = (v: number, prev: number | null) => {
+        if (prev == null || prev === 0) return { fmt: "皆増", fg: "#5C6B77" };
+        const g = (v / prev - 1) * 100;
+        return { fmt: (g >= 0 ? "+" : "−") + Math.abs(g).toFixed(1) + "%", fg: g >= 0 ? "#0F76A3" : "#C25400" };
+      };
       return {
         hasBudgetDetail: kos.length > 0,
         budgetDetailFyLabel: entry?.fyLabel ?? "",
         budgetDetailKanTotalFmt: fmtOku(kanTotal),
+        budgetDetailHasPrev: hasPrev,
         budgetDetailRows: kos.map((k, i) => ({
           name: k.name,
           amtFmt: fmtOku(k.v),
           pctFmt: pctOf(k.v, kanTotal),
           barW: ((k.v / (kos[0]?.v || 1)) * 100).toFixed(1),
           sw: D.seriesColor(i),
+          yoyFmt: hasPrev ? yoy(k.v, k.prevV).fmt : "",
+          yoyFg: hasPrev ? yoy(k.v, k.prevV).fg : "",
+          prevFmt: k.prevV == null ? "—" : fmtOku(k.prevV),
           // 目は多い項があるので、画面では項を開いたときだけ出す（View 側で details に入れる）
-          moku: k.moku.map((m) => ({ name: m.name, amtFmt: fmtOku(m.v), pctFmt: pctOf(m.v, k.v) })),
+          moku: k.moku.map((m) => ({
+            name: m.name, amtFmt: fmtOku(m.v), pctFmt: pctOf(m.v, k.v),
+            yoyFmt: hasPrev ? yoy(m.v, m.prevV).fmt : "",
+            yoyFg: hasPrev ? yoy(m.v, m.prevV).fg : "",
+          })),
         })),
         budgetDetailSourceLabel: entry ? `出典：${entry.sourceTitle}（${entry.refLabel}）` : "",
         budgetDetailSourceUrl: entry ? evHref(entry.localUrl) : "",

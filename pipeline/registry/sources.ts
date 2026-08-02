@@ -7829,6 +7829,48 @@ export const SOURCES: SourceEntry[] = [
     parserOptions: { generalAccountCode: "01" },
   })),
 
+  ...([
+    // [年度, zip の URL パス, ランディング]
+    //
+    // 横浜市（団体コード 141003）。**予算に関する説明書（一般会計）XLSX**（`rNippan.zip` 内）。
+    // #191（歳入歳出 CSV）の**過年度への延伸**（#192・docs §8d-2）。CSV があるのは R6〜R8 だけで、
+    // **R5 以前はこの XLSX**。⚠ **CSV に無い「前年度」列を持つ**のが強みで、
+    // **項・目レベルの前年比較**は CSV 版では出せない。
+    //
+    // ⚠ **URL のパスが年度で違う**（#191 と同じ轍）。**CKAN（`package_show`）から実引き**した。
+    //   R5〜R3 は `rN/rN.files/rNippan.zip`。R2 は `r2/02yosan.files/`、H31 は `h31/31yosan.files/`。
+    //
+    // ⚠⚠ **R2・H31 は収録しない**（2026-08-02 実測）。**歳入と歳出で「前年度」列の Σ が食い違う**:
+    //   R2  歳入 1,759,429,383 / 歳出 1,761,506,383（差 2,077,000）
+    //   H31 歳入 1,713,697,299 / 歳出 1,726,435,299（差 12,738,000）
+    //   当年度は両側とも一致するので**前年度列だけが壊れている**。**前年度列こそがこの資料の
+    //   価値**なので、そこが検証できない年度は入れない（#191 の R7 と同じ判断）。
+    //
+    // **検証**（実測・R5〜R3 の3年とも）: Σ款 = Σ項 = Σ目（当年度）が**既収録の款別と差0**、
+    //   前年度も**既収録の前年度合計と差0**。さらに**年度の鎖**が閉じる
+    //   （R5 の前年度 = R4 の当年度 = 1,974,874,143 / R4 の前年度 = R3 の当年度 = 2,007,260,724）。
+    //
+    // ライセンスは **CC BY**（CKAN の `zaisei_r5` / `zaisei_r4` / `zaisei_r3` で登載を実引き）。
+    //   ⚠ サイトポリシー原文を併記しないこと（§9g・併記すると permission-required に落ちる）。
+    ["R5", "r5/r5.files/r5ippan.zip", "r5/r5.html"],
+    ["R4", "r4/r4.files/r4ippan.zip", "r4/r4.html"],
+    ["R3", "r3/r3.files/r3ippan.zip", "r3/r3.html"],
+  ] as const).map(([fy, path, landing]) => ({
+    id: `yokohama-setsumeisho-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 横浜市予算に関する説明書（一般会計・款項目＋前年度）`,
+    publisher: "横浜市",
+    url: null,
+    urls: [`https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/${path}`],
+    landingPage: `https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/${landing}`,
+    kind: "zip" as const,
+    fiscalYear: fy,
+    scope: "横浜市（一般会計・団体コード141003）",
+    license:
+      "クリエイティブ・コモンズ 表示 4.0 国際（CC BY 4.0）。横浜市オープンデータポータル（data.city.yokohama.lg.jp）のデータセット「令和５年度予算」「令和４年度予算」「令和３年度予算」に、本ファイルの URL が license_id: cc-by で登載されている（API package_show で確認・確認日 2026-08-02）。",
+    parser: "yokohama-setsumeisho-xlsx" as const,
+    parserOptions: { entryPrefix: "02_" },
+  })),
+
   {
     // 名古屋市（団体コード 231002）。一般会計予算に関する説明書 R8（修正後版・158p・16.9MB）。
     // **2月定例会で修正可決**されており、発行元は「（修正後）」版のみを掲載している

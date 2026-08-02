@@ -16,10 +16,10 @@ export const ROADMAP_PROGRESS = {
   "budgetCount": 99,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 481,
-  "fileCount": 1274,
-  "archivedCount": 450,
-  "licenseOpen": 62,
+  "sourceCount": 484,
+  "fileCount": 1277,
+  "archivedCount": 452,
+  "licenseOpen": 65,
   "licensePermission": 358,
   "licenseUnverified": 61,
   "kessanRange": "R2〜R6（5年度）",
@@ -310,8 +310,8 @@ export const ROADMAP_PLAN: RoadmapItem[] = [
   {
     "title": "款より下（項・目・節）の内訳を広げる",
     "status": "now",
-    "why": "「民生費 1,000億」の内訳を追えるようにする。横浜は当初予算の款項目を収録して項・目まで開けるが、ほかの自治体はまだ款までで、甲府の項レベルは決算値で代替表示している。",
-    "needs": "自治体ごとに原典の形が違う。甲府は予算書本編がウェブ未公開＝情報公開請求。横浜の過年度はレイアウト型の XLSX で別パーサが要る。推計はしない（一次資料が無ければ載せない）。"
+    "why": "「民生費 1,000億」の内訳を追えるようにする。横浜は当初予算の款項目を収録して項・目まで開け、年度によっては項・目の前年比も出せる。ほかの自治体はまだ款までで、甲府の項レベルは決算値で代替表示している。",
+    "needs": "自治体ごとに原典の形が違う。甲府は予算書本編がウェブ未公開＝情報公開請求。推計はしない（一次資料が無ければ載せない）。"
   },
   {
     "title": "ライセンス未確認の資料の棚卸し",

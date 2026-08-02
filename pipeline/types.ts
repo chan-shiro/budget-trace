@@ -664,6 +664,12 @@ export const budgetDetailFactSchema = z.object({
   saisetsuName: z.string().nullable(),
   /** 金額（千円）。⚠ 原典は単位をどこにも書いていないので registry の `unit` で宣言する */
   amount: z.number(),
+  /**
+   * 前年度額（千円）。**資料によって在ったり無かったりする**ので nullable。
+   * 横浜の CSV 版（R6〜R8）は当年度しか持たず、**XLSX 版（R5 以前）は前年度列を持つ**（#192）。
+   * ⚠ **無いことを 0 で表さない**（0 は「前年度は0円」という別の主張になる）。
+   */
+  prevAmount: z.number().nullable(),
   locator: locatorSchema,
 });
 export type BudgetDetailFact = z.infer<typeof budgetDetailFactSchema>;
@@ -682,6 +688,12 @@ export const budgetDetailDocSchema = z.object({
   /** 全会計の合計（原典の `総計` 行と突合するために持つ） */
   allRevenueTotal: z.number(),
   allExpenditureTotal: z.number(),
+  /**
+   * 前年度の合計（千円）。**前年度列を持つ資料だけ**（#192 の XLSX 版）。無ければ null。
+   * ⚠ **歳入と歳出で食い違う年度が実在する**（横浜 R2・H31）ので validate が突合する。
+   */
+  prevRevenueTotal: z.number().nullable(),
+  prevExpenditureTotal: z.number().nullable(),
   /**
    * 原典の `総計` 行の値（横浜は R8・R7 の**歳出にだけ**在る。無ければ null）。
    * ⚠ **歳入側も必ず持つ** — 現状の原典には無いが、出たときに「検証の錨に使える数字を
