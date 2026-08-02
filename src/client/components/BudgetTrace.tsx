@@ -1504,7 +1504,13 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
     ...(() => {
       const detailYears = muniCode ? D.BUDGET_DETAIL[muniCode] : undefined;
       const entry = detailYears?.find((e) => e.fy === budget.fy);
-      const kos = entry && depth === 1 ? entry.byKan[side === "exp" ? "expenditure" : "revenue"][nodeName] ?? [] : [];
+      // ⚠ **款は depth 1 とは限らない** — 上位8款に入らなかった款は「その他」に畳まれて
+      //   **depth 2** に落ちる（歳入で起きる。実測: 横浜 R4 の「財産収入」390億）。
+      //   `depth === 1` だけで見ていたため、**収録済みなのに「未収録です」と出ていた**
+      //   （#191 から在った穴。#192 で前年比が乗って実害の面積が広がりレビューが発見）。
+      //   ⚠ 「その他」の子だけを許す — 単に depth 2 を許すと**項名が款名と衝突**しうる。
+      const isKanNode = depth === 1 || (depth === 2 && s.drillPath[0] === "その他");
+      const kos = entry && isKanNode ? entry.byKan[side === "exp" ? "expenditure" : "revenue"][nodeName] ?? [] : [];
       const kanTotal = kos.reduce((a, k) => a + k.v, 0);
       // **前年比は資料が前年度列を持つ年度だけ**（#192・横浜 R5〜R3 の XLSX 版）。
       // ⚠ **前年度額は原典が当年度の科目体系に組み替えたもの**なので、

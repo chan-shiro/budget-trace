@@ -356,39 +356,74 @@ if (doc.docType === "budget-detail") {
   //    しかも当時は項の前年度を **Σ目で作っていた**ため、**画面の前年比が符号ごと逆になった**
   //    （R5 歳出「選挙費」は項行 2,833,438 に対し Σ目 1,499,819 で、実際は減なのに +50.1% と表示）。
   //    → **項ごと・款ごとに**張る。等号でなく `≦`（廃止された下位は行として現れないため）。
+  //    ⚠⚠ **款は「Σ目 ≦ 款行」でなく「Σ項行 ≦ 款行」で張る**（レビューの2巡目で発覚）。
+  //    Σ目 で張ると、**項行の前年度だけが（項内で一様に）過大**な壊れ方が
+  //    「下から見れば Σ目 ≦ 項行」も「款は款別一覧と一致」も通って**素通りする**
+  //    ＝ 実害を出した壊れ方のちょうど鏡像。**1段上とだけ比べる**のが正しい張り方。
   {
-    const key = (f: (typeof doc.facts)[number], lv: "ko" | "kan") =>
-      lv === "kan" ? `${f.side}/${f.accountCode}/${f.kanNo}` : `${f.side}/${f.accountCode}/${f.kanNo}/${f.koNo}`;
-    for (const [lv, label, printed] of [
-      ["ko", "項", (f: (typeof doc.facts)[number]) => f.koPrevAmount],
-      ["kan", "款", (f: (typeof doc.facts)[number]) => f.kanPrevAmount],
-    ] as const) {
-      const sum: Record<string, number> = {};
-      const decl: Record<string, number | null> = {};
-      const name: Record<string, string> = {};
-      for (const f of doc.facts) {
-        const p = printed(f);
-        if (p == null) continue; // その資料は上位の前年度を持たない（CSV 版）
-        const k = key(f, lv);
-        sum[k] = (sum[k] ?? 0) + (f.prevAmount ?? 0);
-        // 同じ項・款の葉には同じ値が入っているはず。違えば行の取り違え
-        if (decl[k] != null && decl[k] !== p) {
+    /** 項ごと・款ごとの「行に印字された前年度額」。同じ項・款の葉は同じ値を持つはず */
+    const koPrinted = new Map<string, number | null>();
+    const kanPrinted = new Map<string, number | null>();
+    const koOfKan = new Map<string, string>();
+    const nameOf = new Map<string, string>();
+    /** 項ごとの Σ目prev */
+    const mokuSum = new Map<string, number>();
+    let anyPrinted = false;
+    for (const f of doc.facts) {
+      const kk = `${f.side}/${f.accountCode}/${f.kanNo}`;
+      const kok = `${kk}/${f.koNo}`;
+      nameOf.set(kk, f.kanName);
+      nameOf.set(kok, `${f.kanName}/${f.koName}`);
+      koOfKan.set(kok, kk);
+      mokuSum.set(kok, (mokuSum.get(kok) ?? 0) + (f.prevAmount ?? 0));
+      // ⚠ **null と非 null の混在も error**（片方だけ見て continue すると、derive 側の
+      //   last-wins で「皆増」に化ける経路が残る）。資料が前年度を持たないなら全部 null のはず
+      for (const [m, v] of [
+        [koPrinted, f.koPrevAmount] as const,
+        [kanPrinted, f.kanPrevAmount] as const,
+      ]) {
+        const k = m === koPrinted ? kok : kk;
+        if (v != null) anyPrinted = true;
+        if (m.has(k) && m.get(k) !== v) {
           issues.push({
             level: "error",
-            message: `${lv === "kan" ? f.kanName : f.koName}: ${label}行の前年度額が葉ごとに違います（${decl[k]!.toLocaleString()} と ${p.toLocaleString()}）。行の階層判定を疑うこと`,
+            message:
+              `${nameOf.get(k)}: 行に印字された前年度額が葉ごとに違います` +
+              `（${m.get(k) ?? "空"} と ${v ?? "空"}）。行の階層判定を疑うこと`,
           });
         }
-        decl[k] = p;
-        name[k] = lv === "kan" ? f.kanName : `${f.kanName}/${f.koName}`;
+        m.set(k, v);
       }
-      for (const [k, got] of Object.entries(sum)) {
-        const want = decl[k];
+    }
+    if (anyPrinted) {
+      // Σ目prev ≦ 項行prev
+      for (const [k, got] of mokuSum) {
+        const want = koPrinted.get(k);
         if (want == null) continue;
         if (got > want) {
           issues.push({
             level: "error",
             message:
-              `${name[k]}: 下位の前年度の和 ${got.toLocaleString()} が${label}行の前年度額 ` +
+              `${nameOf.get(k)}: 目の前年度の和 ${got.toLocaleString()} が項行の前年度額 ` +
+              `${want.toLocaleString()} を**超えています**（差 +${(got - want).toLocaleString()}）＝二重計上`,
+          });
+        }
+      }
+      // Σ項行prev ≦ 款行prev（**目の和ではなく項行の和**）
+      const koSum = new Map<string, number>();
+      for (const [kok, v] of koPrinted) {
+        if (v == null) continue;
+        const kk = koOfKan.get(kok)!;
+        koSum.set(kk, (koSum.get(kk) ?? 0) + v);
+      }
+      for (const [k, got] of koSum) {
+        const want = kanPrinted.get(k);
+        if (want == null) continue;
+        if (got > want) {
+          issues.push({
+            level: "error",
+            message:
+              `${nameOf.get(k)}: 項の前年度の和 ${got.toLocaleString()} が款行の前年度額 ` +
               `${want.toLocaleString()} を**超えています**（差 +${(got - want).toLocaleString()}）＝二重計上`,
           });
         }
