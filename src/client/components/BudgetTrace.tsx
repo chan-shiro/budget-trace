@@ -2022,7 +2022,7 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
         // 総コストの説明。⚠ **算定式は資料ごとに違う**ので文面を使い回さない（#163）
         costNote: !repData.has.totalCost
           ? ""
-          : (repData.has as { ninku?: boolean }).ninku
+          : repData.has.ninku
             ? "総コストは事業費＋人件費（職員1人当たり人件費 × 人工）です。"
             : "総コストは事業費＋人件費です。",
         sourceTitle: repData.sourceTitle,

@@ -1152,6 +1152,8 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
     // ⚠ **parsed に出す前に落とした件数も足す** — 会計欄を持たない資料（杉並）は
     //   ここでは除外が見えないので、パーサの宣言（`excludedCount`）を使う。
     //   足さないと画面が「全N事業が公表されています（サンプルではなく全量）」と過大に言う
+    //   ⚠ **両方を持つ資料が来たら二重計上になる**（現状は横浜が前者のみ・杉並が後者のみ）。
+    //   会計欄と parsed 前の除外が同居する資料を足すときは、どちらか一方に寄せること
     const excluded = doc.facts.length - inScope.length + (doc.excludedCount ?? 0);
     const reports = inScope.map((f) => {
       const file = meta.files.find((x) => x.filename === f.locator.file) ?? meta.files[0]!;
@@ -1227,7 +1229,11 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
         totalCost: reports.some((x) => x.cost.some((c) => c.totalCost != null)),
         // ⚠ **人工（ninku）を持つのは川崎だけ** — 「1人当たり人件費 × 人工」という算定式は
         //   川崎の様式の記述なので、他資料に使い回すと嘘になる（レビューの指摘・#163）
-        ninku: doc.facts.some((x) => x.cost.some((c) => c.ninku != null)),
+        // ⚠ 母集団は**除外後の `reports`**（兄弟のフラグと揃える。除外側だけが人工を持つ
+        //   資料が来たときに食い違わないようにする＝レビューの指摘）
+        ninku: doc.facts
+          .filter((f) => !/会計$/.test(f.policy ?? "") || f.policy === "一般会計")
+          .some((x) => x.cost.some((c) => c.ninku != null)),
         achievement: reports.some((x) => x.achievement != null),
         direction: reports.some((x) => x.direction),
         progress: reports.some((x) => x.progress),

@@ -66,6 +66,12 @@ export interface ProjectReportShard {
     jigyohiSome: boolean;
     jinkenhi: boolean;
     totalCost: boolean;
+    /**
+     * **人工（にんく）を持つか**（川崎だけ）。総コストの説明文の**算定式**を出してよいかの判定に使う。
+     * 「職員1人当たり人件費 × 人工」は**川崎の様式の記述**なので、持たない資料に書くと嘘になる
+     * （#163・杉並は `常勤職員分` と `上記以外の職員` の2本で算定は未確認）。
+     */
+    ninku: boolean;
     achievement: boolean;
     direction: boolean;
     progress: boolean;
