@@ -1107,6 +1107,21 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
       evalNote:
         "この資料は総合評価や達成度の数値を持たず、施策ごとの実施状況と成果を自由記述で報告しています。金額は款・項・目の単位で示されており、施策ごとの決算額は原典が執行額を記載しているものだけに載ります。",
     },
+    // 杉並区（#163・2026-08-03）。事務事業評価シート R7・一般会計521事業。**特別区で初の事業報告**。
+    // **款項目事業コードを持つ**ので `measure` は `NN款NN項NN目NNN事業`（款名は含まない＝
+    // 款名は既収録の当初予算から引く。番号が歳出11款と一致することを実測済み）。
+    // ⚠ **総合評価も達成度も持たない**（A〜F も点数も無い）。持つのは方向性2軸と成果指標。
+    // ⚠ **Σ を歳出総額と並べてはいけない** — 人件費を各事業に配賦しつつ款08「職員費」でも
+    //   別立てで載るため二重に載る（docs §10i-2）。
+    {
+      srcId: "suginami-jimujigyou-hyouka-r7", muniCode: "131156", muniName: "杉並区", docLabel: "事務事業評価シート",
+      // 款名はシートに無い（番号だけ）ので、**同じ年度の当初予算から引く**（横浜と同じ経路）。
+      // 番号が歳出11款と一致することはパーサ側とここの両方で効いてくる
+      kanFromSrc: "suginami-yosansho-r7",
+      // ⚠ `unit` は**「円建てなので千円へ換算する」宣言**。杉並は原典が千円なので**書かない**
+      evalNote:
+        "この資料は総合評価や達成度の数値を持たず、翌年度に向けた「事業コストの方向性」と「事業の改善の方向性」（複数回答）で方針を示し、活動指標・成果指標の計画と実績を4年分載せています。金額は事業費・人件費・財源内訳を6年分持ちますが、人件費は款「職員費」にも別立てで計上されるため、事業の総事業費を合計しても歳出総額にはなりません。",
+    },
   ];
   const byMuni: Record<string, unknown> = {};
   for (const r of REPORT_MUNI_SOURCES) {
@@ -1134,7 +1149,12 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
     // **一般会計に絞る**（横浜は policy に会計名が入る。2,535 → 2,313）。
     // 会計名を持たない資料（川崎）は素通りさせる — 全件が一般会計の前提で収録している
     const inScope = doc.facts.filter((f) => !/会計$/.test(f.policy ?? "") || f.policy === "一般会計");
-    const excluded = doc.facts.length - inScope.length;
+    // ⚠ **parsed に出す前に落とした件数も足す** — 会計欄を持たない資料（杉並）は
+    //   ここでは除外が見えないので、パーサの宣言（`excludedCount`）を使う。
+    //   足さないと画面が「全N事業が公表されています（サンプルではなく全量）」と過大に言う
+    //   ⚠ **両方を持つ資料が来たら二重計上になる**（現状は横浜が前者のみ・杉並が後者のみ）。
+    //   会計欄と parsed 前の除外が同居する資料を足すときは、どちらか一方に寄せること
+    const excluded = doc.facts.length - inScope.length + (doc.excludedCount ?? 0);
     const reports = inScope.map((f) => {
       const file = meta.files.find((x) => x.filename === f.locator.file) ?? meta.files[0]!;
       return {
@@ -1207,6 +1227,13 @@ export const KOFU_REPORT_YEARS: KofuReportYear[] = ${JSON.stringify(reportYears,
         jigyohiSome: reports.some((x) => x.cost.some((c) => c.jigyohi != null)),
         jinkenhi: reports.some((x) => x.cost.some((c) => c.jinkenhi != null)),
         totalCost: reports.some((x) => x.cost.some((c) => c.totalCost != null)),
+        // ⚠ **人工（ninku）を持つのは川崎だけ** — 「1人当たり人件費 × 人工」という算定式は
+        //   川崎の様式の記述なので、他資料に使い回すと嘘になる（レビューの指摘・#163）
+        // ⚠ 母集団は**除外後の `reports`**（兄弟のフラグと揃える。除外側だけが人工を持つ
+        //   資料が来たときに食い違わないようにする＝レビューの指摘）
+        ninku: doc.facts
+          .filter((f) => !/会計$/.test(f.policy ?? "") || f.policy === "一般会計")
+          .some((x) => x.cost.some((c) => c.ninku != null)),
         achievement: reports.some((x) => x.achievement != null),
         direction: reports.some((x) => x.direction),
         progress: reports.some((x) => x.progress),
@@ -2796,6 +2823,7 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = ${JSON.stringif
     "kawasaki-jigyou-hyouka": "事業報告（成果）",
     "sapporo-jigyou-hyouka": "事業報告（成果）",
     "yokohama-jigyo-hyoka": "事業報告（成果）",
+    "suginami-jimujigyou-hyouka": "事業報告（成果）",
     "saitama-jigyou-houkoku": "事業報告（成果）",
     "kitakyushu-jigyou-hyoka": "事業報告（成果）",
     "kyotofu-seika-houkoku": "事業報告（成果）",
@@ -2852,6 +2880,7 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = ${JSON.stringif
   const REPORT_PARSERS = new Set([
     "kofu-jigyou-houkoku", "kawasaki-jigyou-hyouka", "yokohama-jigyo-hyoka", "sapporo-jigyou-hyouka",
     "saitama-jigyou-houkoku", "kitakyushu-jigyou-hyoka", "kyotofu-seika-houkoku",
+    "suginami-jimujigyou-hyouka",
   ]);
   const reportDetailByCode: Record<string, string> = {};
   for (const s of srcs) {

@@ -3481,6 +3481,72 @@ export const SOURCES: SourceEntry[] = [
     parser: "yokohama-jigyo-hyoka",
   },
   {
+    // ==== 杉並区 事務事業評価シート（#163・特別区で初の事業報告）====================
+    // **1事業ちょうど2ページ**（590事業 / シート1,180ページ・目次込みで1,195ページ。
+    //   ⚠ 偵察の「836ページ」は算術が合っていない＝実測し直した）。**款項目事業コードを持つ**ので
+    // 横浜と同じく「款 → 事業 → 成果」が繋がる（款1〜11 が suginami-yosansho の歳出11款に対応）。
+    // ⚠ **ファイル名の連番規則が破れる** — 施策16・24・27 だけ `zimuzigyou3`（他は `zimuzigyou2`）。
+    //   **URL を生成せず全32本を明示列挙する**（生成すると3本が静かに 404 になる）。
+    // ⚠ **一般会計は整理番号 001〜521 の521事業**。522以降は国保/介護/後期高齢の特別会計だが、
+    //   **シートに会計欄が無い**（款番号が 01 に戻るだけ）ので、整理番号レンジで切る。
+    // ⚠ **R6 以前は様式が別物**（金額表の列構成が違う）。多年度化は年度ごとに実測が要る。
+    id: "suginami-jimujigyou-hyouka-r7",
+    title: "令和7年度 杉並区事務事業評価シート（令和6年度事業）",
+    publisher: "杉並区",
+    url: null,
+    urls: [
+      // 目次（整理番号順）— 590行あり**件数ゲートの錨**になる
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_00_mokuzi_seiribanngou.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_00_mokuzi_sisakutaikeibetu.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_01_zimuzigyou2.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_02_zimuzigyou2.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_03_zimuzigyou2.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_04_zimuzigyou2.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_05_zimuzigyou2.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_06_zimuzigyou2.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_07_zimuzigyou2.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_08_zimuzigyou2.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_09_zimuzigyou2.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_10_zimuzigyou2.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_11_zimuzigyou2.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_12_zimuzigyou2.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_13_zimuzigyou2.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_14_zimuzigyou2.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_15_zimuzigyou2.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_16_zimuzigyou3.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_17_zimuzigyou2.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_18_zimuzigyou2.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_19_zimuzigyou2.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_20_zimuzigyou2.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_21_zimuzigyou2.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_22_zimuzigyou2.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_23_zimuzigyou2.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_24_zimuzigyou3.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_25_zimuzigyou2.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_26_zimuzigyou2.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_27_zimuzigyou3.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_28_zimuzigyou2.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_29_zimuzigyou2.pdf",
+      "https://www.city.suginami.tokyo.jp/documents/23075/r7_99_zimuzigyou2.pdf",
+    ],
+    landingPage: "https://www.city.suginami.tokyo.jp/s001/23075.html",
+    kind: "pdf",
+    fiscalYear: "R7",
+    scope: "杉並区（一般会計・団体コード131156）※特別会計は整理番号522以降として除外する",
+    // 「杉並区公式ホームページの利用について」（/about/17.html・確認日 2026-08-03）。
+    // ⚠ 杉並区オープンデータ利用規約（CC BY 4.0）は**「杉並区が公開するオープンデータ」に自ら限定**
+    //   しており、東京都オープンデータカタログの杉並区103データセットに**事務事業評価は無い**ので
+    //   本資料には及ばない（§9g の「適用されない規約を license に書かない」）。
+    license:
+      "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    parser: "suginami-jimujigyou-hyouka",
+    parserOptions: {
+      // 一般会計の整理番号の上限。**パーサは款番号のリスタートから自動検出**しており、
+      // ここは**宣言と実測の突合**のためだけに置く（食い違えば throw）。片方だけを信じない。
+      generalAccountSeiriMax: 521,
+    },
+  },
+  {
     // 札幌市（団体コード 011002）事業評価調書 R7（＝**令和6年度事業**の自己評価）。#127・docs §8t。
     // **1事業1PDF（一般会計634件）**のため urls は収集器（pipeline/collect-sapporo-hyoka.ts）が
     // 生成する台帳 JSON から展開する（手で並べない・年度更新は収集器を再実行して差分を見る）。

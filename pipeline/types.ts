@@ -521,7 +521,12 @@ export const projectReportCostYearSchema = z.object({
    * 甲府は「決算/当初/計画」。川崎は「予算額/決算額/計画事業費」で、**予算額が当初とは限らない**
    * （資料には「予算額」としか書かれていない）ため "当初" に丸めず "予算" を別に持つ。
    */
-  kind: z.enum(["決算", "当初", "計画", "予算"]),
+  /**
+   * ⚠ 杉並は **「予算額 / 実績額」**（#163）。**`実績` を `決算` へ丸めない** — 原典が
+   * 「決算額」と書いていないうえ、評価年度（R7）の実績額は全件 `-`（未確定）で、
+   * 決算と呼べるのは過年度分だけ。原文の語のまま持つ。
+   */
+  kind: z.enum(["決算", "当初", "計画", "予算", "実績"]),
   /** 事業費（千円）。川崎の「事業費 A」 */
   jigyohi: z.number().nullable(),
   /** 一般財源（千円） */
@@ -543,6 +548,14 @@ export const projectReportCostYearSchema = z.object({
    * （公立保育所等運営費: 事業費 1,212,230 / 特定財源 1,894,054・R5 決算）。原文のまま持つ。
    */
   tokuteiZaigen: z.number().nullable().optional(),
+  /**
+   * 財源内訳（千円）。**杉並の3本**（#163）。⚠ **川崎の `kokkoShishutsukin`/`shisai`/
+   * `sonotaTokuzai` に寄せない** — 杉並は「国**・都**からの補助金」で国庫単独ではなく、
+   * 市債の欄がそもそも無い。**特定財源 = ①+②+③** が検証ゲート。
+   */
+  jueki: z.number().nullable().optional(),
+  kokuToHojokin: z.number().nullable().optional(),
+  sonotaHojokin: z.number().nullable().optional(),
   /** 決算額が見込み（評価年度のため確定値でない）か。川崎 R6 の決算額が該当 */
   isEstimate: z.boolean().optional(),
 });
@@ -554,6 +567,16 @@ export const projectReportIndicatorSchema = z.object({
   targets: z.array(z.number().nullable()),
   /** 実績値（決算年度分・目標より少ない）。 */
   actuals: z.array(z.number().nullable()),
+  /**
+   * 達成率（%・年度順）。杉並が印字する（#163）。⚠ **実績÷計画で導出しない** — 原典が
+   * 印字した値をそのまま持ち、**導出値との一致を validate の証人に使う**。
+   */
+  rates: z.array(z.number().nullable()).optional(),
+  /**
+   * 成果指標の分類（杉並・#163）。実測の語彙: 行政サービス成果指標 / 社会成果（課題）指標 /
+   * 利用者満足度指標 / 区民満足度指標。**丸めない**。持たない資料・活動指標は null。
+   */
+  classification: z.string().nullable().optional(),
 });
 export const projectReportFactSchema = z.object({
   /** 評価票の通し番号（シート名） */
@@ -583,6 +606,11 @@ export const projectReportFactSchema = z.object({
   achievement: z.number().int().min(1).max(5).nullable().optional(),
   /** 今後の事業の方向性（川崎: Ⅰ現状のまま継続 / Ⅱ改善しながら継続 / Ⅲ事業規模拡大 / Ⅳ事業規模縮小 / Ⅴ終了） */
   direction: z.string().nullable().optional(),
+  /**
+   * 事業の改善の方向性（杉並の「Ⅱ.」・#163）。⚠ **複数回答**なので配列
+   * （実測 590事業で延べ613）。`direction` は「Ⅰ.事業コストの方向性」（単一回答）で別軸。
+   */
+  improvementDirections: z.array(z.string()).optional(),
   /**
    * 進捗の自己評価（北九州: 順調／概ね順調／やや遅れ／遅れ の4段階）。
    * `achievement`（1〜5の数値・川崎）や `grade`（A〜Fの1文字・甲府）のどちらにも当てはまらない
@@ -630,6 +658,13 @@ export const projectReportDocSchema = z.object({
    * ゲートの本来の目的はそちらなので、この宣言で緩むのは「そもそも cost が無い」場合だけ。
    */
   noPerProjectCost: z.boolean().optional(),
+  /**
+   * **パーサが parsed に出す前に落とした件数**（杉並・#163）。
+   * ⚠ derive は既定では `policy` の会計名で除外を数える（横浜方式）が、**会計欄を持たない資料**では
+   * それができない。宣言しないと画面が「全N事業が公表されています（サンプルではなく全量）」と
+   * **過大に言う**（除外の但し書きが出ない）。
+   */
+  excludedCount: z.number().int().nonnegative().optional(),
   facts: z.array(projectReportFactSchema),
 });
 export type ProjectReportDoc = z.infer<typeof projectReportDocSchema>;

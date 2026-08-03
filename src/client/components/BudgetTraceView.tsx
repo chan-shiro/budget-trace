@@ -991,8 +991,11 @@ export default function BudgetTraceView({ v }: { v: any }) {
                           style={S(`border:1px solid #C6D2DA; background:#FFFFFF; border-radius:999px; padding:5px 14px; font-size:12.5px; font-family:'IBM Plex Sans JP',sans-serif; ${v.repAll.page >= v.repAll.pages ? "color:#C6D2DA; cursor:default;" : "color:#3A4750; cursor:pointer;"}`)}>次へ →</button>
                       </div>
                     )}
-                    {/* 総コストの説明は**総コストを持つ資料（川崎）だけ**。横浜（事業費のみ）に出すと嘘になる */}
-                    <p style={S("margin:12px 2px 0; font-size:11.5px; color:#8494A0; line-height:1.7;")}>事業名をクリックすると原本（{v.repAll.sourceTitle}）の該当ページを開きます。{v.repAll.has.totalCost && "総コストは事業費＋人件費（職員1人当たり人件費 × 人工）です。"}</p>
+                    {/* 総コストの説明は**総コストを持つ資料だけ**。横浜（事業費のみ）に出すと嘘になる。
+                        ⚠ **算定式まで使い回さない** — 「1人当たり人件費 × 人工」は川崎の様式の記述で、
+                        杉並は `常勤職員分(再任用含)` と `上記以外の職員` の2本（算定は未確認）。
+                        文面は資料が持つもの（`costNote`）から出す（レビューの指摘・#163） */}
+                    <p style={S("margin:12px 2px 0; font-size:11.5px; color:#8494A0; line-height:1.7;")}>事業名をクリックすると原本（{v.repAll.sourceTitle}）の該当ページを開きます。{v.repAll.costNote}</p>
                   </>
                   )}
                 </section>
@@ -1389,8 +1392,8 @@ export default function BudgetTraceView({ v }: { v: any }) {
                     {v.drillReports && (
                       <div style={S("margin-top:24px;")}>
                         <div style={S("display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:8px;")}>
-                          <h3 style={S("margin:0; font-size:14px; font-weight:700;")}>この款の事業と成果（{v.drillReports.fyLabel}・決算）</h3>
-                          <span style={S("font-size:11.5px; color:#8494A0;")}>{v.drillReports.docLabel}より・この款に <strong style={S("font-family:'IBM Plex Mono',monospace; color:#5C6B77;")}>{v.drillReports.total}</strong>事業（決算額の大きい順に{v.drillReports.shown}件）</span>
+                          <h3 style={S("margin:0; font-size:14px; font-weight:700;")}>この款の事業と成果（{v.drillReports.fyLabel}）</h3>
+                          <span style={S("font-size:11.5px; color:#8494A0;")}>{v.drillReports.docLabel}より・この款に <strong style={S("font-family:'IBM Plex Mono',monospace; color:#5C6B77;")}>{v.drillReports.total}</strong>事業（{v.drillReports.sortLabel}の大きい順に{v.drillReports.shown}件）</span>
                         </div>
                         {v.drillReports.rows.map((r: any, i: number) => (
                           <div key={i} data-mq="rep" style={S("display:grid; grid-template-columns:1fr 110px; gap:12px; padding:9px 0; border-bottom:1px solid #ECF2F6; align-items:center;")}>
