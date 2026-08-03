@@ -3,9 +3,10 @@
   "sourceId": "suginami-jimujigyou-hyouka-r7",
   "parser": "suginami-jimujigyou-hyouka",
   "parserVersion": "0.1.0",
-  "parsedAt": "2026-08-03T12:11:50.828Z",
+  "parsedAt": "2026-08-03T13:30:33.185Z",
   "fiscalYear": "R7",
   "targetFy": "R6",
+  "excludedCount": 69,
   "facts": [
     {
       "no": "001",
@@ -23,7 +24,7 @@
         "対象の見直し"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "01款01項01目001事業",
       "cost": [
         {
@@ -192,7 +193,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "01款01項01目002事業",
       "cost": [
         {
@@ -361,7 +362,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "01款01項02目001事業",
       "cost": [
         {
@@ -530,7 +531,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項01目001事業",
       "cost": [
         {
@@ -699,7 +700,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項01目002事業",
       "cost": [
         {
@@ -868,7 +869,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項01目003事業",
       "cost": [
         {
@@ -1037,7 +1038,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項01目005事業",
       "cost": [
         {
@@ -1206,7 +1207,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項02目001事業",
       "cost": [
         {
@@ -1375,7 +1376,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項02目002事業",
       "cost": [
         {
@@ -1544,7 +1545,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項02目003事業",
       "cost": [
         {
@@ -1713,7 +1714,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項03目001事業",
       "cost": [
         {
@@ -1882,7 +1883,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項03目002事業",
       "cost": [
         {
@@ -2051,7 +2052,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項03目003事業",
       "cost": [
         {
@@ -2220,7 +2221,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項04目001事業",
       "cost": [
         {
@@ -2389,7 +2390,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項04目002事業",
       "cost": [
         {
@@ -2558,7 +2559,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項04目003事業",
       "cost": [
         {
@@ -2727,7 +2728,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項04目005事業",
       "cost": [
         {
@@ -2896,7 +2897,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項04目006事業",
       "cost": [
         {
@@ -3065,7 +3066,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項04目007事業",
       "cost": [
         {
@@ -3572,7 +3573,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項05目003事業",
       "cost": [
         {
@@ -3741,7 +3742,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項05目004事業",
       "cost": [
         {
@@ -3910,7 +3911,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項05目005事業",
       "cost": [
         {
@@ -4248,7 +4249,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項05目007事業",
       "cost": [
         {
@@ -4417,7 +4418,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項05目009事業",
       "cost": [
         {
@@ -4586,7 +4587,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項06目001事業",
       "cost": [
         {
@@ -4924,7 +4925,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項06目004事業",
       "cost": [
         {
@@ -5093,7 +5094,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項06目005事業",
       "cost": [
         {
@@ -5262,7 +5263,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項07目001事業",
       "cost": [
         {
@@ -5431,7 +5432,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項07目002事業",
       "cost": [
         {
@@ -5600,7 +5601,7 @@
         "実施主体の見直し"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項07目003事業",
       "cost": [
         {
@@ -5769,7 +5770,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項08目001事業",
       "cost": [
         {
@@ -6200,7 +6201,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項08目003事業",
       "cost": [
         {
@@ -7587,7 +7588,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款01項08目010事業",
       "cost": [
         {
@@ -7756,7 +7757,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款02項01目001事業",
       "cost": [
         {
@@ -7925,7 +7926,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款03項01目001事業",
       "cost": [
         {
@@ -8092,7 +8093,7 @@
       "direction": "現状維持",
       "improvementDirections": [],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款03項02目001事業",
       "cost": [
         {
@@ -8261,7 +8262,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款03項03目002事業",
       "cost": [
         {
@@ -8430,7 +8431,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款03項05目001事業",
       "cost": [
         {
@@ -8599,7 +8600,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "02款04項01目001事業",
       "cost": [
         {
@@ -8768,7 +8769,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "03款01項01目001事業",
       "cost": [
         {
@@ -8937,7 +8938,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "03款01項01目002事業",
       "cost": [
         {
@@ -9106,7 +9107,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "03款01項01目003事業",
       "cost": [
         {
@@ -9275,7 +9276,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "03款01項01目004事業",
       "cost": [
         {
@@ -9444,7 +9445,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "03款01項01目005事業",
       "cost": [
         {
@@ -9613,7 +9614,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "03款01項01目006事業",
       "cost": [
         {
@@ -11808,7 +11809,7 @@
         "対象の見直し"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "03款01項01目019事業",
       "cost": [
         {
@@ -11977,7 +11978,7 @@
         "廃止"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "03款01項01目022事業",
       "cost": [
         {
@@ -12932,7 +12933,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "03款01項03目001事業",
       "cost": [
         {
@@ -13101,7 +13102,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "03款01項03目002事業",
       "cost": [
         {
@@ -14778,7 +14779,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "03款02項01目001事業",
       "cost": [
         {
@@ -14947,7 +14948,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "03款02項01目002事業",
       "cost": [
         {
@@ -15116,7 +15117,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "03款02項01目003事業",
       "cost": [
         {
@@ -15285,7 +15286,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "03款02項01目004事業",
       "cost": [
         {
@@ -15454,7 +15455,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "03款03項01目001事業",
       "cost": [
         {
@@ -15623,7 +15624,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "03款03項01目002事業",
       "cost": [
         {
@@ -15792,7 +15793,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "03款04項01目001事業",
       "cost": [
         {
@@ -15961,7 +15962,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "03款04項02目001事業",
       "cost": [
         {
@@ -16130,7 +16131,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "03款04項02目002事業",
       "cost": [
         {
@@ -16300,7 +16301,7 @@
         "対象の見直し"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "03款04項02目003事業",
       "cost": [
         {
@@ -16469,7 +16470,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "03款04項03目001事業",
       "cost": [
         {
@@ -17686,7 +17687,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "03款05項01目005事業",
       "cost": [
         {
@@ -18024,7 +18025,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "03款05項02目001事業",
       "cost": [
         {
@@ -20319,7 +20320,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款01項01目001事業",
       "cost": [
         {
@@ -20488,7 +20489,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款01項01目002事業",
       "cost": [
         {
@@ -21135,7 +21136,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款01項01目005事業",
       "cost": [
         {
@@ -21520,7 +21521,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款01項01目008事業",
       "cost": [
         {
@@ -21689,7 +21690,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款01項01目009事業",
       "cost": [
         {
@@ -24126,7 +24127,7 @@
         "実施主体の見直し"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款01項01目024事業",
       "cost": [
         {
@@ -24534,7 +24535,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款01項01目034事業",
       "cost": [
         {
@@ -24965,7 +24966,7 @@
         "廃止"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款01項01目040事業",
       "cost": [
         {
@@ -25134,7 +25135,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款01項01目050事業",
       "cost": [
         {
@@ -25303,7 +25304,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款01項01目051事業",
       "cost": [
         {
@@ -25472,7 +25473,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款01項01目052事業",
       "cost": [
         {
@@ -25641,7 +25642,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款01項01目053事業",
       "cost": [
         {
@@ -25810,7 +25811,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款01項01目054事業",
       "cost": [
         {
@@ -25979,7 +25980,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款01項01目055事業",
       "cost": [
         {
@@ -32392,7 +32393,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款01項02目051事業",
       "cost": [
         {
@@ -32561,7 +32562,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款01項02目052事業",
       "cost": [
         {
@@ -32730,7 +32731,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款01項02目053事業",
       "cost": [
         {
@@ -32899,7 +32900,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款01項02目054事業",
       "cost": [
         {
@@ -36584,7 +36585,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款01項03目030事業",
       "cost": [
         {
@@ -40957,7 +40958,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款01項06目001事業",
       "cost": [
         {
@@ -41295,7 +41296,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款01項06目005事業",
       "cost": [
         {
@@ -42402,7 +42403,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款01項06目015事業",
       "cost": [
         {
@@ -47454,7 +47455,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款02項01目014事業",
       "cost": [
         {
@@ -56198,7 +56199,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款02項01目069事業",
       "cost": [
         {
@@ -56367,7 +56368,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款02項01目070事業",
       "cost": [
         {
@@ -62195,7 +62196,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款04項01目001事業",
       "cost": [
         {
@@ -62364,7 +62365,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款05項01目001事業",
       "cost": [
         {
@@ -67212,7 +67213,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款05項02目001事業",
       "cost": [
         {
@@ -67381,7 +67382,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款05項02目002事業",
       "cost": [
         {
@@ -67550,7 +67551,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "04款05項02目003事業",
       "cost": [
         {
@@ -71210,7 +71211,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "05款01項01目001事業",
       "cost": [
         {
@@ -71379,7 +71380,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "05款01項01目002事業",
       "cost": [
         {
@@ -71764,7 +71765,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "05款01項01目004事業",
       "cost": [
         {
@@ -74369,7 +74370,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "05款01項02目006事業",
       "cost": [
         {
@@ -77432,7 +77433,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "05款01項04目001事業",
       "cost": [
         {
@@ -77601,7 +77602,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "05款01項04目002事業",
       "cost": [
         {
@@ -77770,7 +77771,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "05款01項04目003事業",
       "cost": [
         {
@@ -77939,7 +77940,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "05款01項04目004事業",
       "cost": [
         {
@@ -78108,7 +78109,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "05款01項04目005事業",
       "cost": [
         {
@@ -78277,7 +78278,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "05款01項04目006事業",
       "cost": [
         {
@@ -78446,7 +78447,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "05款01項04目007事業",
       "cost": [
         {
@@ -79309,7 +79310,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "05款02項01目001事業",
       "cost": [
         {
@@ -80411,7 +80412,7 @@
         "廃止"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "05款02項01目007事業",
       "cost": [
         {
@@ -80580,7 +80581,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "05款02項01目008事業",
       "cost": [
         {
@@ -80749,7 +80750,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "05款02項02目001事業",
       "cost": [
         {
@@ -80918,7 +80919,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "05款03項01目001事業",
       "cost": [
         {
@@ -81087,7 +81088,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "05款03項01目002事業",
       "cost": [
         {
@@ -81256,7 +81257,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "05款03項01目003事業",
       "cost": [
         {
@@ -81949,7 +81950,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "05款03項01目006事業",
       "cost": [
         {
@@ -82118,7 +82119,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "05款03項01目007事業",
       "cost": [
         {
@@ -84769,7 +84770,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "05款03項03目005事業",
       "cost": [
         {
@@ -84938,7 +84939,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "05款03項03目006事業",
       "cost": [
         {
@@ -89311,7 +89312,7 @@
       "direction": "廃止",
       "improvementDirections": [],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "05款04項04目002事業",
       "cost": [
         {
@@ -89480,7 +89481,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "06款01項01目001事業",
       "cost": [
         {
@@ -90693,7 +90694,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "06款01項01目007事業",
       "cost": [
         {
@@ -91124,7 +91125,7 @@
         "廃止"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "06款01項01目082事業",
       "cost": [
         {
@@ -93109,7 +93110,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "06款01項03目006事業",
       "cost": [
         {
@@ -93278,7 +93279,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "06款01項03目007事業",
       "cost": [
         {
@@ -93447,7 +93448,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "06款01項04目001事業",
       "cost": [
         {
@@ -93616,7 +93617,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "06款01項04目002事業",
       "cost": [
         {
@@ -94810,7 +94811,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "07款01項01目010事業",
       "cost": [
         {
@@ -95148,7 +95149,7 @@
         "実施主体の見直し"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "07款01項02目003事業",
       "cost": [
         {
@@ -95317,7 +95318,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "07款01項02目004事業",
       "cost": [
         {
@@ -96010,7 +96011,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "07款01項02目007事業",
       "cost": [
         {
@@ -96441,7 +96442,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "07款01項02目009事業",
       "cost": [
         {
@@ -98259,7 +98260,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "07款01項03目009事業",
       "cost": [
         {
@@ -109605,7 +109606,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "08款01項01目001事業",
       "cost": [
         {
@@ -109774,7 +109775,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "08款01項02目001事業",
       "cost": [
         {
@@ -109943,7 +109944,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "08款01項03目001事業",
       "cost": [
         {
@@ -110112,7 +110113,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "08款01項04目001事業",
       "cost": [
         {
@@ -110281,7 +110282,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "08款01項05目001事業",
       "cost": [
         {
@@ -110450,7 +110451,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "08款01項06目001事業",
       "cost": [
         {
@@ -110619,7 +110620,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "08款01項07目001事業",
       "cost": [
         {
@@ -110788,7 +110789,7 @@
         "実施主体の見直し"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "08款01項07目002事業",
       "cost": [
         {
@@ -110957,7 +110958,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "08款01項08目001事業",
       "cost": [
         {
@@ -111126,7 +111127,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "08款01項09目001事業",
       "cost": [
         {
@@ -111295,7 +111296,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "08款01項10目001事業",
       "cost": [
         {
@@ -111464,7 +111465,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "08款01項11目001事業",
       "cost": [
         {
@@ -111633,7 +111634,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "09款01項01目001事業",
       "cost": [
         {
@@ -111802,7 +111803,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "09款01項02目001事業",
       "cost": [
         {
@@ -111971,7 +111972,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "09款01項03目001事業",
       "cost": [
         {
@@ -112140,7 +112141,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "09款01項04目001事業",
       "cost": [
         {
@@ -112309,7 +112310,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "10款01項01目001事業",
       "cost": [
         {
@@ -112478,7 +112479,7 @@
         "手段・方法の見直し（改善）"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "10款02項01目001事業",
       "cost": [
         {
@@ -112647,7 +112648,7 @@
         "現状維持"
       ],
       "progress": null,
-      "policy": "予算事業区分",
+      "policy": null,
       "measure": "11款01項01目001事業",
       "cost": [
         {

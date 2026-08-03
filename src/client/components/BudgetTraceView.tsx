@@ -991,8 +991,11 @@ export default function BudgetTraceView({ v }: { v: any }) {
                           style={S(`border:1px solid #C6D2DA; background:#FFFFFF; border-radius:999px; padding:5px 14px; font-size:12.5px; font-family:'IBM Plex Sans JP',sans-serif; ${v.repAll.page >= v.repAll.pages ? "color:#C6D2DA; cursor:default;" : "color:#3A4750; cursor:pointer;"}`)}>次へ →</button>
                       </div>
                     )}
-                    {/* 総コストの説明は**総コストを持つ資料（川崎）だけ**。横浜（事業費のみ）に出すと嘘になる */}
-                    <p style={S("margin:12px 2px 0; font-size:11.5px; color:#8494A0; line-height:1.7;")}>事業名をクリックすると原本（{v.repAll.sourceTitle}）の該当ページを開きます。{v.repAll.has.totalCost && "総コストは事業費＋人件費（職員1人当たり人件費 × 人工）です。"}</p>
+                    {/* 総コストの説明は**総コストを持つ資料だけ**。横浜（事業費のみ）に出すと嘘になる。
+                        ⚠ **算定式まで使い回さない** — 「1人当たり人件費 × 人工」は川崎の様式の記述で、
+                        杉並は `常勤職員分(再任用含)` と `上記以外の職員` の2本（算定は未確認）。
+                        文面は資料が持つもの（`costNote`）から出す（レビューの指摘・#163） */}
+                    <p style={S("margin:12px 2px 0; font-size:11.5px; color:#8494A0; line-height:1.7;")}>事業名をクリックすると原本（{v.repAll.sourceTitle}）の該当ページを開きます。{v.repAll.costNote}</p>
                   </>
                   )}
                 </section>

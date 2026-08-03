@@ -386,7 +386,11 @@ export function parseSuginamiJimujigyouHyouka(
           return got;
         })(),
         progress: null,
-        policy: pick(/上位施策No・施策名[^\S\r\n]+(.+?)[^\S\r\n]{2,}/),
+        // ⚠⚠ **値が空のとき、同じ行の右にある次のラベルを拾う**（実測 147件が `予算事業区分` に
+        //   化けていた。`r7_99`＝施策を構成しない事業は上位施策が空欄で、右隣に
+        //   `予算事業区分 既定事業` が並ぶ）。Ⅱ軸で踏んだ「次のラベルを値にする」型の**行内版**。
+        //   → **値の形（`NN 施策名`）を要求する**。空欄なら null（施策に属さない事業は実在する）
+        policy: pick(/上位施策No・施策名[^\S\r\n]+(\d{2}[^\S\r\n].+?)[^\S\r\n]{2,}/),
         // ⚠ 款項目は `measure` に入れる（既存の事業報告と同じ約束。derive が /\d+款/ で拾う）
         measure: `${kanNo!.padStart(2, "0")}款${koNo!.padStart(2, "0")}項${mokuNo!.padStart(2, "0")}目${jigyoNo!.padStart(3, "0")}事業`,
         cost,
@@ -430,7 +434,11 @@ export function parseSuginamiJimujigyouHyouka(
     fiscalYear: source.fiscalYear,
     // 評価年度 R7 は「令和6年度事業」の評価
     targetFy: `R${Number(/\d+/.exec(source.fiscalYear)![0]) - 1}`,
-    // ⚠ **特別会計は落とす**（シートに会計欄が無いので整理番号のレンジで切る）
+    // ⚠ **特別会計は落とす**（シートに会計欄が無いので整理番号のレンジで切る）。
+    //   ⚠ **落とした件数を宣言する** — derive は `policy` の会計名で除外を数える（横浜方式）が、
+    //   杉並は parsed に出す前に落とすので**derive からは除外が見えず、画面が「全521事業が
+    //   公表されています（サンプルではなく全量）」と過大に言う**（レビューが発見）。
+    excludedCount: sorted.length - general.length,
     facts: general,
   };
 }

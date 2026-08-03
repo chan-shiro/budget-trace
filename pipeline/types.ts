@@ -658,6 +658,13 @@ export const projectReportDocSchema = z.object({
    * ゲートの本来の目的はそちらなので、この宣言で緩むのは「そもそも cost が無い」場合だけ。
    */
   noPerProjectCost: z.boolean().optional(),
+  /**
+   * **パーサが parsed に出す前に落とした件数**（杉並・#163）。
+   * ⚠ derive は既定では `policy` の会計名で除外を数える（横浜方式）が、**会計欄を持たない資料**では
+   * それができない。宣言しないと画面が「全N事業が公表されています（サンプルではなく全量）」と
+   * **過大に言う**（除外の但し書きが出ない）。
+   */
+  excludedCount: z.number().int().nonnegative().optional(),
   facts: z.array(projectReportFactSchema),
 });
 export type ProjectReportDoc = z.infer<typeof projectReportDocSchema>;

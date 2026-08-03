@@ -7951,6 +7951,324 @@
       "sha256Match": true
     },
     {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_00_mokuzi_sisakutaikeibetu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803125602/https://www.city.suginami.tokyo.jp/documents/23075/r7_00_mokuzi_sisakutaikeibetu.pdf",
+      "waybackTimestamp": "20260803125602",
+      "checkedAt": "2026-08-03T13:24:12.941Z",
+      "sha256Match": true,
+      "waybackBytes": 473327
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_01_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803132431/https://www.city.suginami.tokyo.jp/documents/23075/r7_01_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803132431",
+      "checkedAt": "2026-08-03T13:24:49.989Z",
+      "sha256Match": true,
+      "waybackBytes": 1039680
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_02_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803125645/https://www.city.suginami.tokyo.jp/documents/23075/r7_02_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803125645",
+      "checkedAt": "2026-08-03T13:24:52.403Z",
+      "sha256Match": true,
+      "waybackBytes": 734493
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_03_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803125804/https://www.city.suginami.tokyo.jp/documents/23075/r7_03_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803125804",
+      "checkedAt": "2026-08-03T13:25:00.205Z",
+      "sha256Match": true,
+      "waybackBytes": 450372
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_04_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803125843/https://www.city.suginami.tokyo.jp/documents/23075/r7_04_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803125843",
+      "checkedAt": "2026-08-03T13:25:38.217Z",
+      "sha256Match": true,
+      "waybackBytes": 523147
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_05_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803125920/https://www.city.suginami.tokyo.jp/documents/23075/r7_05_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803125920",
+      "checkedAt": "2026-08-03T13:25:41.407Z",
+      "sha256Match": true,
+      "waybackBytes": 787108
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_06_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803130005/https://www.city.suginami.tokyo.jp/documents/23075/r7_06_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803130005",
+      "checkedAt": "2026-08-03T13:25:44.341Z",
+      "sha256Match": true,
+      "waybackBytes": 1231785
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_07_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803130122/https://www.city.suginami.tokyo.jp/documents/23075/r7_07_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803130122",
+      "checkedAt": "2026-08-03T13:25:49.122Z",
+      "sha256Match": true,
+      "waybackBytes": 1064711
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_08_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803130205/https://www.city.suginami.tokyo.jp/documents/23075/r7_08_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803130205",
+      "checkedAt": "2026-08-03T13:25:52.996Z",
+      "sha256Match": true,
+      "waybackBytes": 882708
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_09_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803130247/https://www.city.suginami.tokyo.jp/documents/23075/r7_09_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803130247",
+      "checkedAt": "2026-08-03T13:26:05.283Z",
+      "sha256Match": true,
+      "waybackBytes": 730237
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_10_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803130327/https://www.city.suginami.tokyo.jp/documents/23075/r7_10_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803130327",
+      "checkedAt": "2026-08-03T13:26:10.629Z",
+      "sha256Match": true,
+      "waybackBytes": 997260
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_11_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803130403/https://www.city.suginami.tokyo.jp/documents/23075/r7_11_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803130403",
+      "checkedAt": "2026-08-03T13:26:22.999Z",
+      "sha256Match": true,
+      "waybackBytes": 1013759
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_12_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803130435/https://www.city.suginami.tokyo.jp/documents/23075/r7_12_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803130435",
+      "checkedAt": "2026-08-03T13:26:44.579Z",
+      "sha256Match": true,
+      "waybackBytes": 1558559
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_13_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803130523/https://www.city.suginami.tokyo.jp/documents/23075/r7_13_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803130523",
+      "checkedAt": "2026-08-03T13:26:50.102Z",
+      "sha256Match": true,
+      "waybackBytes": 1033595
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_14_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803130542/https://www.city.suginami.tokyo.jp/documents/23075/r7_14_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803130542",
+      "checkedAt": "2026-08-03T13:26:53.652Z",
+      "sha256Match": true,
+      "waybackBytes": 430431
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_15_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803130631/https://www.city.suginami.tokyo.jp/documents/23075/r7_15_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803130631",
+      "checkedAt": "2026-08-03T13:26:56.143Z",
+      "sha256Match": true,
+      "waybackBytes": 1782242
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_16_zimuzigyou3.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803130821/https://www.city.suginami.tokyo.jp/documents/23075/r7_16_zimuzigyou3.pdf",
+      "waybackTimestamp": "20260803130821",
+      "checkedAt": "2026-08-03T13:27:00.683Z",
+      "sha256Match": true,
+      "waybackBytes": 2903542
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_17_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803130855/https://www.city.suginami.tokyo.jp/documents/23075/r7_17_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803130855",
+      "checkedAt": "2026-08-03T13:27:09.334Z",
+      "sha256Match": true,
+      "waybackBytes": 1980457
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_18_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803130918/https://www.city.suginami.tokyo.jp/documents/23075/r7_18_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803130918",
+      "checkedAt": "2026-08-03T13:27:10.104Z",
+      "sha256Match": true,
+      "waybackBytes": 977637
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_19_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803130953/https://www.city.suginami.tokyo.jp/documents/23075/r7_19_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803130953",
+      "checkedAt": "2026-08-03T13:27:12.858Z",
+      "sha256Match": true,
+      "waybackBytes": 673831
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_20_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803131117/https://www.city.suginami.tokyo.jp/documents/23075/r7_20_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803131117",
+      "checkedAt": "2026-08-03T13:27:22.834Z",
+      "sha256Match": true,
+      "waybackBytes": 3448595
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_21_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803131205/https://www.city.suginami.tokyo.jp/documents/23075/r7_21_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803131205",
+      "checkedAt": "2026-08-03T13:27:26.709Z",
+      "sha256Match": true,
+      "waybackBytes": 695988
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_22_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803131239/https://www.city.suginami.tokyo.jp/documents/23075/r7_22_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803131239",
+      "checkedAt": "2026-08-03T13:27:33.863Z",
+      "sha256Match": true,
+      "waybackBytes": 1803783
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_23_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803131328/https://www.city.suginami.tokyo.jp/documents/23075/r7_23_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803131328",
+      "checkedAt": "2026-08-03T13:27:42.135Z",
+      "sha256Match": true,
+      "waybackBytes": 796945
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_24_zimuzigyou3.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803131431/https://www.city.suginami.tokyo.jp/documents/23075/r7_24_zimuzigyou3.pdf",
+      "waybackTimestamp": "20260803131431",
+      "checkedAt": "2026-08-03T13:27:45.242Z",
+      "sha256Match": true,
+      "waybackBytes": 1416976
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_25_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803131550/https://www.city.suginami.tokyo.jp/documents/23075/r7_25_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803131550",
+      "checkedAt": "2026-08-03T13:27:46.435Z",
+      "sha256Match": true,
+      "waybackBytes": 807731
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_26_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803131739/https://www.city.suginami.tokyo.jp/documents/23075/r7_26_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803131739",
+      "checkedAt": "2026-08-03T13:27:50.137Z",
+      "sha256Match": true,
+      "waybackBytes": 769132
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_27_zimuzigyou3.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803131838/https://www.city.suginami.tokyo.jp/documents/23075/r7_27_zimuzigyou3.pdf",
+      "waybackTimestamp": "20260803131838",
+      "checkedAt": "2026-08-03T13:27:55.962Z",
+      "sha256Match": true,
+      "waybackBytes": 922050
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_28_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803131951/https://www.city.suginami.tokyo.jp/documents/23075/r7_28_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803131951",
+      "checkedAt": "2026-08-03T13:27:57.408Z",
+      "sha256Match": true,
+      "waybackBytes": 384913
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_29_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803132059/https://www.city.suginami.tokyo.jp/documents/23075/r7_29_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803132059",
+      "checkedAt": "2026-08-03T13:28:29.091Z",
+      "sha256Match": true,
+      "waybackBytes": 561559
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/documents/23075/r7_99_zimuzigyou2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260803132220/https://www.city.suginami.tokyo.jp/documents/23075/r7_99_zimuzigyou2.pdf",
+      "waybackTimestamp": "20260803132220",
+      "checkedAt": "2026-08-03T13:28:32.477Z",
+      "sha256Match": true,
+      "waybackBytes": 11093478
+    },
+    {
+      "sourceId": "suginami-jimujigyou-hyouka-r7",
+      "url": "https://www.city.suginami.tokyo.jp/s001/23075.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251231124122/https://www.city.suginami.tokyo.jp/s001/23075.html",
+      "waybackTimestamp": "20251231124122",
+      "checkedAt": "2026-08-03T13:28:34.681Z"
+    },
+    {
       "sourceId": "suginami-keikakusho-r2",
       "url": "https://www.city.suginami.tokyo.jp/documents/7155/r2kuseikeieikeikakusho.pdf",
       "kind": "file",
