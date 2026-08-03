@@ -44,6 +44,12 @@ button { font-family: 'IBM Plex Sans JP', sans-serif; }
   [data-mq="council"]{ grid-template-columns:12px 1fr 58px !important; gap:8px !important; }
   [data-mq="drill"]{ grid-template-columns:12px 1fr 80px 16px !important; gap:8px !important; }
   [data-mq="drill"] > :nth-child(3), [data-mq="drill"] > :nth-child(5){ display:none !important; }
+  /* 項・目の内訳で**前年比の列がある**とき（#192）。drill と列数が違うので別名にしてある
+     — drill の規則は子の**位置**で隠すので、列を1本足すと黙ってズレる */
+  [data-mq="drilld"]{ grid-template-columns:12px 1fr 80px 56px 16px !important; gap:8px !important; }
+  [data-mq="drilld"] > :nth-child(3), [data-mq="drilld"] > :nth-child(5){ display:none !important; }
+  [data-mq="drilldm"]{ grid-template-columns:1fr 80px 56px !important; gap:8px !important; }
+  [data-mq="drilldm"] > :nth-child(3){ display:none !important; }
   [data-mq="comp"]{ grid-template-columns:12px 1fr 80px 84px !important; gap:8px !important; }
   [data-mq="comp"] > :nth-child(3), [data-mq="comp"] > :nth-child(4){ display:none !important; }
   [data-mq="tproj"]{ grid-template-columns:1fr 92px !important; gap:8px 12px !important; }

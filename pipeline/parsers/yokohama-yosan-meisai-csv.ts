@@ -36,7 +36,9 @@ import { readFileSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import type { BudgetDetailDoc, BudgetDetailFact, SourceEntry } from "../types";
 
-export const PARSER_VERSION = "0.1.0";
+// 0.3.0: #192 で前年度列つきの XLSX 版を足したのに伴い、共通スキーマへ prevAmount / koPrevAmount /
+//        kanPrevAmount を追加（CSV 版は前年度列を持たないので常に null）
+export const PARSER_VERSION = "0.3.0";
 
 interface Options {
   /** 一般会計の会計コード（既定 "01"）。ゼロ埋め後の2桁で書く */
@@ -151,6 +153,9 @@ export function parseYokohamaYosanMeisaiCsv(
         saisetsuNo: side === "expenditure" ? r[11]!.trim() : null,
         saisetsuName: side === "expenditure" ? r[12]!.trim() : null,
         amount,
+        prevAmount: null, // CSV 版は前年度列を持たない（XLSX 版＝#192 は持つ）
+        koPrevAmount: null,
+        kanPrevAmount: null,
         locator: { file: zip.filename, sheet: side === "revenue" ? "010_歳入" : "020_歳出" },
       });
     }
@@ -195,6 +200,8 @@ export function parseYokohamaYosanMeisaiCsv(
     generalExpenditureTotal,
     allRevenueTotal: sum((f) => f.side === "revenue"),
     allExpenditureTotal: sum((f) => f.side === "expenditure"),
+    prevRevenueTotal: null,
+    prevExpenditureTotal: null,
     statedRevenueTotal,
     statedExpenditureTotal,
     facts,

@@ -309,6 +309,128 @@ if (doc.docType === "budget-detail") {
     }
   }
 
+  // ①' **前年度も均衡している**（前年度列を持つ資料だけ）。
+  //    ⚠ **横浜 R2・H31 はここが破れる**（歳入と歳出で前年度 Σ が食い違う）ので収録していない。
+  //    当年度だけ見ていると通ってしまうので、前年度も同じゲートに掛ける
+  //    （§9「前年度列が静かに壊れる」— 甲府 R2 で実害を出した型の再来）。
+  if (doc.prevRevenueTotal != null && doc.prevExpenditureTotal != null &&
+      doc.prevRevenueTotal !== doc.prevExpenditureTotal) {
+    issues.push({
+      level: "error",
+      message:
+        `前年度の歳入 ${doc.prevRevenueTotal.toLocaleString()} と歳出 ${doc.prevExpenditureTotal.toLocaleString()} が` +
+        `一致しません（差 ${(doc.prevRevenueTotal - doc.prevExpenditureTotal).toLocaleString()}）。` +
+        `**当年度が合っていても前年度列だけが壊れていることがある**（横浜 R2・H31 が実例）`,
+    });
+  }
+  // ①'' **Σ前年度（葉） ≤ 前年度合計**。
+  //    ⚠⚠ **等号にしてはいけない**（実測して分かった）。この様式は**当年度の構造**を並べるので、
+  //    **前年度に在って当年度に廃止された目・項は行として現れない**。その分の前年度額は
+  //    上位（款）の合計にだけ残るため、**葉の前年度の和は款の合計より少なくなる**
+  //    （実測: 横浜 R5 歳出で 30,256,840千円・R3 歳入で 11,525,608千円 少ない）。
+  //    **当年度は 款 = 項 = 目 で厳密に閉じる**（パーサ側で assert 済み）。
+  //    ここで見るのは「**多い**」＝二重計上だけ。
+  //    ⚠ **前年度が空の行があるのも正常**（その年に新設された目＝皆増）。空を 0 と読み替えない
+  //    （甲府 R2 は空欄の皆増を比較列と読み違えて +190,691 ずれた＝§9）。
+  if (doc.prevRevenueTotal != null && doc.prevExpenditureTotal != null) {
+    for (const [label, side, want] of [
+      ["歳入", "revenue", doc.prevRevenueTotal],
+      ["歳出", "expenditure", doc.prevExpenditureTotal],
+    ] as const) {
+      const got = doc.facts.filter((f) => f.side === side).reduce((a, f) => a + (f.prevAmount ?? 0), 0);
+      if (got > want) {
+        issues.push({
+          level: "error",
+          message:
+            `${label}: 葉の前年度の和 ${got.toLocaleString()} が前年度合計 ${want.toLocaleString()} を` +
+            `**超えています**（差 +${(got - want).toLocaleString()}）＝二重計上。` +
+            `（少ないのは正常 — 当年度に廃止された目は行として現れないため）`,
+        });
+      }
+    }
+  }
+
+  // ①''' **前年度の階層が「上ほど大きい」で揃っている** — Σ目prev ≦ 項行prev ≦ … ≦ 款行prev。
+  //    ⚠⚠ **①'' だけでは足りなかった**（#192 のレビューで発覚）。①'' は**全体の和**しか見ないので、
+  //    「ある項では目が廃止されて足りない」「別の項では二重に足している」が**相殺して素通りする**。
+  //    しかも当時は項の前年度を **Σ目で作っていた**ため、**画面の前年比が符号ごと逆になった**
+  //    （R5 歳出「選挙費」は項行 2,833,438 に対し Σ目 1,499,819 で、実際は減なのに +50.1% と表示）。
+  //    → **項ごと・款ごとに**張る。等号でなく `≦`（廃止された下位は行として現れないため）。
+  //    ⚠⚠ **款は「Σ目 ≦ 款行」でなく「Σ項行 ≦ 款行」で張る**（レビューの2巡目で発覚）。
+  //    Σ目 で張ると、**項行の前年度だけが（項内で一様に）過大**な壊れ方が
+  //    「下から見れば Σ目 ≦ 項行」も「款は款別一覧と一致」も通って**素通りする**
+  //    ＝ 実害を出した壊れ方のちょうど鏡像。**1段上とだけ比べる**のが正しい張り方。
+  {
+    /** 項ごと・款ごとの「行に印字された前年度額」。同じ項・款の葉は同じ値を持つはず */
+    const koPrinted = new Map<string, number | null>();
+    const kanPrinted = new Map<string, number | null>();
+    const koOfKan = new Map<string, string>();
+    const nameOf = new Map<string, string>();
+    /** 項ごとの Σ目prev */
+    const mokuSum = new Map<string, number>();
+    let anyPrinted = false;
+    for (const f of doc.facts) {
+      const kk = `${f.side}/${f.accountCode}/${f.kanNo}`;
+      const kok = `${kk}/${f.koNo}`;
+      nameOf.set(kk, f.kanName);
+      nameOf.set(kok, `${f.kanName}/${f.koName}`);
+      koOfKan.set(kok, kk);
+      mokuSum.set(kok, (mokuSum.get(kok) ?? 0) + (f.prevAmount ?? 0));
+      // ⚠ **null と非 null の混在も error**（片方だけ見て continue すると、derive 側の
+      //   last-wins で「皆増」に化ける経路が残る）。資料が前年度を持たないなら全部 null のはず
+      for (const [m, v] of [
+        [koPrinted, f.koPrevAmount] as const,
+        [kanPrinted, f.kanPrevAmount] as const,
+      ]) {
+        const k = m === koPrinted ? kok : kk;
+        if (v != null) anyPrinted = true;
+        if (m.has(k) && m.get(k) !== v) {
+          issues.push({
+            level: "error",
+            message:
+              `${nameOf.get(k)}: 行に印字された前年度額が葉ごとに違います` +
+              `（${m.get(k) ?? "空"} と ${v ?? "空"}）。行の階層判定を疑うこと`,
+          });
+        }
+        m.set(k, v);
+      }
+    }
+    if (anyPrinted) {
+      // Σ目prev ≦ 項行prev
+      for (const [k, got] of mokuSum) {
+        const want = koPrinted.get(k);
+        if (want == null) continue;
+        if (got > want) {
+          issues.push({
+            level: "error",
+            message:
+              `${nameOf.get(k)}: 目の前年度の和 ${got.toLocaleString()} が項行の前年度額 ` +
+              `${want.toLocaleString()} を**超えています**（差 +${(got - want).toLocaleString()}）＝二重計上`,
+          });
+        }
+      }
+      // Σ項行prev ≦ 款行prev（**目の和ではなく項行の和**）
+      const koSum = new Map<string, number>();
+      for (const [kok, v] of koPrinted) {
+        if (v == null) continue;
+        const kk = koOfKan.get(kok)!;
+        koSum.set(kk, (koSum.get(kk) ?? 0) + v);
+      }
+      for (const [k, got] of koSum) {
+        const want = kanPrinted.get(k);
+        if (want == null) continue;
+        if (got > want) {
+          issues.push({
+            level: "error",
+            message:
+              `${nameOf.get(k)}: 項の前年度の和 ${got.toLocaleString()} が款行の前年度額 ` +
+              `${want.toLocaleString()} を**超えています**（差 +${(got - want).toLocaleString()}）＝二重計上`,
+          });
+        }
+      }
+    }
+  }
+
   // ② 原典の `総計` 行 = 葉の Σ（総計行がある側・年度だけ。横浜は R8・R7 の歳出に在る）
   for (const [label, stated, leaves] of [
     ["歳入", doc.statedRevenueTotal, doc.allRevenueTotal],

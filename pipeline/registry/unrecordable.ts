@@ -89,6 +89,20 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     url: "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r7/r7.files/r7sainyu_saisyutsu.zip",
     checkedOn: "2026-08-02", ref: "docs/data-sources.md §8d-2",
   },
+  // ==== 横浜市の款項目（XLSX 版・2026-08-03・#192・docs §8d-3）======================
+  {
+    code: "141003", name: "横浜市", dataset: "detail", fiscalYears: ["R2", "H31"],
+    categories: ["format-mismatch"],
+    reason:
+      "予算に関する説明書 XLSX の「前年度」列が、歳入と歳出で合計が食い違っている" +
+      "（R2 は歳入 1,759,429,383 対 歳出 1,761,506,383 で差 2,077,000、" +
+      "H31 は歳入 1,713,697,299 対 歳出 1,726,435,299 で差 12,738,000）。" +
+      "当年度の列は両側とも一致し既収録の款別とも差0 なので、前年度列だけが外れている。" +
+      "前年度列こそがこの資料を CSV 版より優先して収録する理由なので、そこが検証できない年度は入れない。" +
+      "原因は未確認。R5・R4・R3 は同じ資料で両列とも差0 なので収録済み。",
+    url: "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r2/r2.files/r2ippan.zip",
+    checkedOn: "2026-08-03", ref: "docs/data-sources.md §8d-3",
+  },
   // ==== 山梨県内の市（2026-07-14・docs §「山梨県内 budget 市を横に拡大」）===========
   {
     code: "192074", name: "韮崎市", dataset: "budget", fiscalYears: ["R8"],
