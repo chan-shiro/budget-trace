@@ -11,6 +11,12 @@ export const REPORT_MUNIS: Record<string, { name: string; fy: string; fyLabel: s
     "fyLabel": "令和6年度",
     "count": 676
   },
+  "131156": {
+    "name": "杉並区",
+    "fy": "R7",
+    "fyLabel": "令和7年度",
+    "count": 521
+  },
   "141003": {
     "name": "横浜市",
     "fy": "R7",

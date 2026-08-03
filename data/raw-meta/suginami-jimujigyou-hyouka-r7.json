@@ -1,0 +1,229 @@
+{
+  "sourceId": "suginami-jimujigyou-hyouka-r7",
+  "files": [
+    {
+      "filename": "r7_00_mokuzi_seiribanngou.pdf",
+      "sha256": "cd7fcff2a1884b205c4a0cd839612e25b68379a5c0ee71f2e0f5f726cec45866",
+      "bytes": 503377,
+      "fetchedAt": "2026-08-03T11:56:30.256Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_00_mokuzi_seiribanngou.pdf"
+    },
+    {
+      "filename": "r7_00_mokuzi_sisakutaikeibetu.pdf",
+      "sha256": "acb3b3c486ae6fd331e3ee0936de8c6d56e9348659115d69da429171aa3518d0",
+      "bytes": 473327,
+      "fetchedAt": "2026-08-03T11:56:30.598Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_00_mokuzi_sisakutaikeibetu.pdf"
+    },
+    {
+      "filename": "r7_01_zimuzigyou2.pdf",
+      "sha256": "57a5bff05c4871728afac981f160e4092457b8987d59844693330674264c1cf3",
+      "bytes": 1039680,
+      "fetchedAt": "2026-08-03T11:56:30.964Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_01_zimuzigyou2.pdf"
+    },
+    {
+      "filename": "r7_02_zimuzigyou2.pdf",
+      "sha256": "f76aa3c20ec1dfbdfb095925cf6fcc725a7252c1773d95c97b1a49a4be8a5601",
+      "bytes": 734493,
+      "fetchedAt": "2026-08-03T11:56:31.303Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_02_zimuzigyou2.pdf"
+    },
+    {
+      "filename": "r7_03_zimuzigyou2.pdf",
+      "sha256": "628cc25bcd3dcf98c642913ef7cff3f8e34160e8bf7616d49eb16b00be34daf0",
+      "bytes": 450372,
+      "fetchedAt": "2026-08-03T11:56:31.648Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_03_zimuzigyou2.pdf"
+    },
+    {
+      "filename": "r7_04_zimuzigyou2.pdf",
+      "sha256": "81e78864de897622a71a3505b4842be56ce04258205dd6d2ed2157308c2b3f12",
+      "bytes": 523147,
+      "fetchedAt": "2026-08-03T11:56:31.991Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_04_zimuzigyou2.pdf"
+    },
+    {
+      "filename": "r7_05_zimuzigyou2.pdf",
+      "sha256": "529f689b692bc7e32fcb89dc052e1252fc45c07f7091e00fa5e46289e893ddda",
+      "bytes": 787108,
+      "fetchedAt": "2026-08-03T11:56:32.337Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_05_zimuzigyou2.pdf"
+    },
+    {
+      "filename": "r7_06_zimuzigyou2.pdf",
+      "sha256": "c96e67fbfb4c6a05f9b07e4396b97fb566460c68f8c75b59465b1083760a1d11",
+      "bytes": 1231785,
+      "fetchedAt": "2026-08-03T11:56:32.686Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_06_zimuzigyou2.pdf"
+    },
+    {
+      "filename": "r7_07_zimuzigyou2.pdf",
+      "sha256": "28a203c8346ff7b8a926749797b0b39d389372245989117a779ae12c2bd1ab0f",
+      "bytes": 1064711,
+      "fetchedAt": "2026-08-03T11:56:33.033Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_07_zimuzigyou2.pdf"
+    },
+    {
+      "filename": "r7_08_zimuzigyou2.pdf",
+      "sha256": "a6f84801d88a8212635df2aef7bf3177dc55aa6c6d65dc151b551742bd6a19d7",
+      "bytes": 882708,
+      "fetchedAt": "2026-08-03T11:56:33.385Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_08_zimuzigyou2.pdf"
+    },
+    {
+      "filename": "r7_09_zimuzigyou2.pdf",
+      "sha256": "6a753b2063a4391416982816276889f7d929ce3f0bb47391f5d8134841c75f3e",
+      "bytes": 730237,
+      "fetchedAt": "2026-08-03T11:56:33.777Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_09_zimuzigyou2.pdf"
+    },
+    {
+      "filename": "r7_10_zimuzigyou2.pdf",
+      "sha256": "af38cc733e2e5d3ca804f836705c959f6b6ab0142718e07190681d9dfad3934d",
+      "bytes": 997260,
+      "fetchedAt": "2026-08-03T11:56:34.135Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_10_zimuzigyou2.pdf"
+    },
+    {
+      "filename": "r7_11_zimuzigyou2.pdf",
+      "sha256": "8e2bfa712648566fb1585b9c8bd36bde11f903658cde686456ea128f0fbba8e2",
+      "bytes": 1013759,
+      "fetchedAt": "2026-08-03T11:56:34.490Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_11_zimuzigyou2.pdf"
+    },
+    {
+      "filename": "r7_12_zimuzigyou2.pdf",
+      "sha256": "321ed4f01368eb748226c96f660f1222353839a1782d9f079cdf18e18d650630",
+      "bytes": 1558559,
+      "fetchedAt": "2026-08-03T11:56:34.845Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_12_zimuzigyou2.pdf"
+    },
+    {
+      "filename": "r7_13_zimuzigyou2.pdf",
+      "sha256": "94507b2c0a7cf83a11496696ea11d7cecef22631876f68198f3960dcf9208eb9",
+      "bytes": 1033595,
+      "fetchedAt": "2026-08-03T11:56:35.199Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_13_zimuzigyou2.pdf"
+    },
+    {
+      "filename": "r7_14_zimuzigyou2.pdf",
+      "sha256": "a2f9c9cfded6b5840f41e16811096157f81f4506bd0a70d0f50a272246e70306",
+      "bytes": 430431,
+      "fetchedAt": "2026-08-03T11:56:35.542Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_14_zimuzigyou2.pdf"
+    },
+    {
+      "filename": "r7_15_zimuzigyou2.pdf",
+      "sha256": "8db78fd934b6eed6a8a1ec8a0b07114664cf2b47d4398642333edabda289af1d",
+      "bytes": 1782242,
+      "fetchedAt": "2026-08-03T11:56:35.904Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_15_zimuzigyou2.pdf"
+    },
+    {
+      "filename": "r7_16_zimuzigyou3.pdf",
+      "sha256": "164b2a161a12f142f74c5895a0ea97dad20317ca9bc1eb349539bb1b25b548e4",
+      "bytes": 2903542,
+      "fetchedAt": "2026-08-03T11:56:36.292Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_16_zimuzigyou3.pdf"
+    },
+    {
+      "filename": "r7_17_zimuzigyou2.pdf",
+      "sha256": "13478b957002ddfa0165b353ef057845045cbace96af2f432793ed941369baab",
+      "bytes": 1980457,
+      "fetchedAt": "2026-08-03T11:56:36.650Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_17_zimuzigyou2.pdf"
+    },
+    {
+      "filename": "r7_18_zimuzigyou2.pdf",
+      "sha256": "3e96e5a3cfa8de056c8ac8c7995414c2ba5b72e81caa76386680367d634b42ac",
+      "bytes": 977637,
+      "fetchedAt": "2026-08-03T11:56:36.997Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_18_zimuzigyou2.pdf"
+    },
+    {
+      "filename": "r7_19_zimuzigyou2.pdf",
+      "sha256": "5041e9f3cd0dd3619fb8cb041c891ac36a2b6f3a926507d592dbaba7c37bed94",
+      "bytes": 673831,
+      "fetchedAt": "2026-08-03T11:56:37.391Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_19_zimuzigyou2.pdf"
+    },
+    {
+      "filename": "r7_20_zimuzigyou2.pdf",
+      "sha256": "8dc59d82ff5450f93b68a8282b3959f7a72eb54486d730f042ecc4273bf61289",
+      "bytes": 3448595,
+      "fetchedAt": "2026-08-03T11:56:37.946Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_20_zimuzigyou2.pdf"
+    },
+    {
+      "filename": "r7_21_zimuzigyou2.pdf",
+      "sha256": "df757f1d2a26a7b4db034298a3f1448f4ee9dad051f390fdf3a11d08b8fd088b",
+      "bytes": 695988,
+      "fetchedAt": "2026-08-03T11:56:38.350Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_21_zimuzigyou2.pdf"
+    },
+    {
+      "filename": "r7_22_zimuzigyou2.pdf",
+      "sha256": "b090a2452ac92446a7dcae6426abab908ae866f43d6676679242ad60ae14c568",
+      "bytes": 1803783,
+      "fetchedAt": "2026-08-03T11:56:38.816Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_22_zimuzigyou2.pdf"
+    },
+    {
+      "filename": "r7_23_zimuzigyou2.pdf",
+      "sha256": "12412422b4c9b31a514eeccd2db7f976363331295bbd681b45b409d3fe81eff0",
+      "bytes": 796945,
+      "fetchedAt": "2026-08-03T11:56:39.200Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_23_zimuzigyou2.pdf"
+    },
+    {
+      "filename": "r7_24_zimuzigyou3.pdf",
+      "sha256": "ebb1ba8dbe0bd8457f228bcd49969f9908bcde06a73692a58d29a41af644c7cb",
+      "bytes": 1416976,
+      "fetchedAt": "2026-08-03T11:56:39.614Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_24_zimuzigyou3.pdf"
+    },
+    {
+      "filename": "r7_25_zimuzigyou2.pdf",
+      "sha256": "fc096ab2e2b392e81133b27cd94eb9e523569e8eee250546de858d9843064006",
+      "bytes": 807731,
+      "fetchedAt": "2026-08-03T11:56:39.994Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_25_zimuzigyou2.pdf"
+    },
+    {
+      "filename": "r7_26_zimuzigyou2.pdf",
+      "sha256": "7dc736f8365b79056b5b897d68ea164921d6d38fda4a3cd804d59b771296a793",
+      "bytes": 769132,
+      "fetchedAt": "2026-08-03T11:56:40.376Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_26_zimuzigyou2.pdf"
+    },
+    {
+      "filename": "r7_27_zimuzigyou3.pdf",
+      "sha256": "f74601ecaadfde9929e04c4cf08b3b18f75e401d8641052dda3ca4baf0e975c5",
+      "bytes": 922050,
+      "fetchedAt": "2026-08-03T11:56:40.762Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_27_zimuzigyou3.pdf"
+    },
+    {
+      "filename": "r7_28_zimuzigyou2.pdf",
+      "sha256": "831ab9ede150556866e0e3adab8a61ea3a354c1b11efdaa236f1a86fd5a7e5bf",
+      "bytes": 384913,
+      "fetchedAt": "2026-08-03T11:56:41.123Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_28_zimuzigyou2.pdf"
+    },
+    {
+      "filename": "r7_29_zimuzigyou2.pdf",
+      "sha256": "7acc457ae53ef23378ca5534ab94b4e76196cb58af0dd2ab0df30d0b0e09794c",
+      "bytes": 561559,
+      "fetchedAt": "2026-08-03T11:56:41.490Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_29_zimuzigyou2.pdf"
+    },
+    {
+      "filename": "r7_99_zimuzigyou2.pdf",
+      "sha256": "bd81a51f1fe27ca648d45063e2bbf302f9fb9d14f7b5992686c2918cec24a0fc",
+      "bytes": 11093478,
+      "fetchedAt": "2026-08-03T11:56:42.190Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/23075/r7_99_zimuzigyou2.pdf"
+    }
+  ]
+}

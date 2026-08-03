@@ -1605,6 +1605,9 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
     // 款名に解決済み（derive 側。画面では推測しない）
     drillReports: (() => {
       if (side !== "exp" || depth !== 1 || !repData?.has.kanKoumoku) return null;
+      /** 金額が入っている最後の年度（未確定の年度を代表値にしない） */
+      const repLast = (r: (typeof repData.reports)[number]) =>
+        [...r.cost].reverse().find((c) => c.jigyohi != null) ?? r.cost[r.cost.length - 1];
       const rows = repData.reports.filter((r) => r.kanName === nodeName);
       if (rows.length === 0) return null;
       const SHOW = 8;
@@ -1613,22 +1616,25 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
         docLabel: repData.docLabel,
         total: rows.length,
         shown: Math.min(SHOW, rows.length),
-        // 決算額の大きい順（この款で何にいちばん使われたかが先に見える）
+        // ⚠ **「決算額」と直書きしない** — 代表値に使う年度の語は資料で違う（杉並は予算/実績）
+        sortLabel: `${repLast(rows[0]!)?.kind ?? "決算"}額`,
+        // ⚠ **「最後の cost」を代表値にしてはいけない** — 杉並（#163）は最新年度の実績額が
+        //   全件 `-`（評価年度なので未確定）で、素で取ると**金額が全行空になる**（実測）。
+        //   **金額が入っている最後の年度**を代表にする。
+        //   ⚠ **ラベルの「決算」も直書きしない** — 資料によって語が違う（杉並は 予算/実績）。
         rows: [...rows]
-          .sort((a, b) => {
-            const av = a.cost[a.cost.length - 1]?.jigyohi ?? 0;
-            const bv = b.cost[b.cost.length - 1]?.jigyohi ?? 0;
-            return bv - av;
-          })
+          .sort((a, b) => (repLast(b)?.jigyohi ?? 0) - (repLast(a)?.jigyohi ?? 0))
           .slice(0, SHOW)
           .map((r) => {
-            const last = r.cost[r.cost.length - 1];
+            const last = repLast(r);
             return {
               name: r.name,
               buka: r.buka,
               measure: r.measure,
               amtFmt: last?.jigyohi != null ? fmtV(last.jigyohi / 1e5) : "",
-              fyLabel: last ? `${last.fy === repData.fy ? repData.fyLabel : D.fyEraLabel(last.fy)}決算` : "",
+              fyLabel: last
+                ? `${last.fy === repData.fy ? repData.fyLabel : D.fyEraLabel(last.fy)}${last.kind ?? "決算"}`
+                : "",
               ref: evHref(r.ref),
               open: () =>
                 openViewer({

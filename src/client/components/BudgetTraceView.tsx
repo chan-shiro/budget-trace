@@ -1389,8 +1389,8 @@ export default function BudgetTraceView({ v }: { v: any }) {
                     {v.drillReports && (
                       <div style={S("margin-top:24px;")}>
                         <div style={S("display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:8px;")}>
-                          <h3 style={S("margin:0; font-size:14px; font-weight:700;")}>この款の事業と成果（{v.drillReports.fyLabel}・決算）</h3>
-                          <span style={S("font-size:11.5px; color:#8494A0;")}>{v.drillReports.docLabel}より・この款に <strong style={S("font-family:'IBM Plex Mono',monospace; color:#5C6B77;")}>{v.drillReports.total}</strong>事業（決算額の大きい順に{v.drillReports.shown}件）</span>
+                          <h3 style={S("margin:0; font-size:14px; font-weight:700;")}>この款の事業と成果（{v.drillReports.fyLabel}）</h3>
+                          <span style={S("font-size:11.5px; color:#8494A0;")}>{v.drillReports.docLabel}より・この款に <strong style={S("font-family:'IBM Plex Mono',monospace; color:#5C6B77;")}>{v.drillReports.total}</strong>事業（{v.drillReports.sortLabel}の大きい順に{v.drillReports.shown}件）</span>
                         </div>
                         {v.drillReports.rows.map((r: any, i: number) => (
                           <div key={i} data-mq="rep" style={S("display:grid; grid-template-columns:1fr 110px; gap:12px; padding:9px 0; border-bottom:1px solid #ECF2F6; align-items:center;")}>

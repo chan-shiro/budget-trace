@@ -709,6 +709,198 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
     "target": "file"
   },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_00_mokuzi_seiribanngou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_00_mokuzi_seiribanngou.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_00_mokuzi_sisakutaikeibetu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_00_mokuzi_sisakutaikeibetu.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_01_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_01_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_02_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_02_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_03_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_03_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_04_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_04_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_05_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_05_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_06_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_06_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_07_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_07_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_08_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_08_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_09_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_09_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_10_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_10_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_11_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_11_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_12_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_12_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_13_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_13_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_14_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_14_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_15_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_15_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_16_zimuzigyou3.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_16_zimuzigyou3.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_17_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_17_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_18_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_18_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_19_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_19_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_20_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_20_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_21_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_21_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_22_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_22_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_23_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_23_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_24_zimuzigyou3.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_24_zimuzigyou3.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_25_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_25_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_26_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_26_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_27_zimuzigyou3.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_27_zimuzigyou3.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_28_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_28_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_29_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_29_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-jimujigyou-hyouka-r7/r7_99_zimuzigyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/23075/r7_99_zimuzigyou2.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
   "/sources/sapporo-jigyou-hyouka-r7/20251020058.pdf": {
     "mode": "origin",
     "href": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020058.pdf",
