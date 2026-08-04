@@ -259,6 +259,67 @@ export const budgetProjectFactSchema = z.object({
 });
 export type BudgetProjectFact = z.infer<typeof budgetProjectFactSchema>;
 
+// ---- [2e] parsed: 主な事業だけの独立資料（款項目つき） ------------------------
+// **`budget-book` に載せられない主な事業**（2026-08-04・#164・横浜の局別事業計画書）。
+// `budgetBookDocSchema` は `revenueTotal`/`expenditureTotal` を必須にしており、
+// **款別歳入歳出表を持たない資料**（局ごとに分割された事業計画書）を入れる場所が無い。
+// 総額を捏造して通すのは論外なので、#191 の `budget-detail` と同じ判断で別 docType にする。
+//
+// ⚠ **これは「主な事業」であって事業報告（成果）ではない** — 当初予算の事業一覧で、
+//   決算も成果指標も持たない。`project-report` とは別物。
+export const budgetProjectLineSchema = z.object({
+  /** 会計名（原典の `歳出予算科目` の会計。一般会計以外は derive で落とす） */
+  accountName: z.string().min(1),
+  /** 款・項・目の番号（原典のまま。名前は既収録の款別・款項目から引く） */
+  kanNo: z.string().min(1),
+  koNo: z.string().nullable(),
+  mokuNo: z.string().nullable(),
+  /** 所管（局・統括本部名） */
+  bureau: z.string().min(1),
+  name: z.string().min(1),
+  /** 事業費（千円） */
+  amount: z.number(),
+  /** うち市債＋一般財源（千円） */
+  shisaiIppan: z.number().nullable(),
+  /** 前年度の事業費・市債＋一財（千円）。⚠ **廃止事業は当年度が 0 で前年度だけ入る** */
+  prevAmount: z.number().nullable(),
+  prevShisaiIppan: z.number().nullable(),
+  /** 新規・拡充の印（原典は丸印）。無印は null */
+  kubun: z.string().nullable(),
+  /** 計画書の頁（廃止事業はハイフン）。原典の表示のまま */
+  page: z.string().nullable(),
+  locator: locatorSchema,
+});
+export type BudgetProjectLine = z.infer<typeof budgetProjectLineSchema>;
+
+export const budgetProjectsDocSchema = z.object({
+  docType: z.literal("budget-projects"),
+  sourceId: z.string(),
+  parser: z.string(),
+  parserVersion: z.string(),
+  parsedAt: z.string(),
+  unit: z.literal("thousandYen"),
+  fiscalYear: z.string(),
+  /**
+   * 目ごとの「計」（原典が印字する）。**Σ事業 = 計** が最初の検証ゲートで、
+   * さらに derive が **計 = 既収録の款項目明細の目** を突合する。
+   */
+  totals: z.array(
+    z.object({
+      accountName: z.string().min(1),
+      kanNo: z.string().min(1),
+      koNo: z.string().nullable(),
+      mokuNo: z.string().nullable(),
+      bureau: z.string().min(1),
+      amount: z.number(),
+      prevAmount: z.number().nullable(),
+      locator: locatorSchema,
+    }),
+  ),
+  facts: z.array(budgetProjectLineSchema),
+});
+export type BudgetProjectsDoc = z.infer<typeof budgetProjectsDocSchema>;
+
 export const budgetBookDocSchema = z.object({
   docType: z.literal("budget-book"),
   sourceId: z.string(),
@@ -755,6 +816,7 @@ export type BudgetDetailDoc = z.infer<typeof budgetDetailDocSchema>;
 export const anyParsedDocSchema = z.union([
   budgetBookDocSchema,
   budgetDetailDocSchema,
+  budgetProjectsDocSchema,
   budgetExecutionDocSchema,
   projectEvaluationDocSchema,
   budgetOutturnDocSchema,
