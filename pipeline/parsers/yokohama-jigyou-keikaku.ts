@@ -62,6 +62,37 @@ const num = (s: string): number | null => {
   return /^\d+$/.test(v) ? Number(v) : null;
 };
 
+/**
+ * **セル内で行をまたいで割れた数字をつなぐ**（実測）。
+ *
+ * 列が狭い目次では `141,848` が `141,84`（上の行）と `8`（下の行）に割れて印字される
+ * （健康福祉局 7款3項2目 の「在宅高齢者生活支援・虐待防止事業」）。割れたままだと
+ * その行の金額が4個になって事業ごと落ち、Σ が 141,848 ちょうど足りなくなる。
+ *
+ * ⚠ **無条件につないではいけない**（同じ列の上下は別の事業の値であることが普通）。
+ * **上の断片が数字として未完成**（カンマの後が1〜2桁）で、**下が1〜2桁だけ**で、
+ * **x が重なっていて y が近い**ときだけつなぐ。
+ */
+function joinSplitNumbers(ws: W[]): W[] {
+  const out = [...ws];
+  const partial = (t: string) => /,\d{1,2}$/.test(t);
+  const tail = (t: string) => /^\d{1,2}$/.test(t);
+  for (const a of out) {
+    if (!partial(a.t)) continue;
+    const b = out.find(
+      (x) => x !== a && tail(x.t) && x.y > a.y && x.y - a.y < 12 && x.x0 < a.x1 && x.x1 > a.x0,
+    );
+    if (!b) continue;
+    a.t += b.t;
+    // ⚠ **つないだ数字は2つの断片の「中点」に置く** — 上の断片の y のままだと、その事業の
+    //   ほかの金額（別の行にある）と同じ行にまとまらず、結局4個のまま落ちる。
+    //   実測: `141,84`(y=501.8) と `8`(y=513.0) の中点 507.4 は、同じ事業の `5,788` の y と一致する。
+    a.y = (a.y + b.y) / 2;
+    b.t = ""; // 使い切ったので消す（下の行の金額として二重に数えない）
+  }
+  return out.filter((w) => w.t !== "");
+}
+
 function rowsOf(ws: W[], tol = 3): W[][] {
   const sorted = [...ws].sort((a, b) => a.y - b.y || a.x0 - b.x0);
   const out: W[][] = [];
@@ -135,7 +166,7 @@ export function parseYokohamaJigyouKeikaku(
     let head: Head | null = null;
     let group: BudgetProjectLine[] = [];
     /** 列の位置は**目次の開始ページ**で決めて、見出しの無い継続ページへ引き継ぐ */
-    let cols: { numLeft: number; headY: number } | null = null;
+    let cols: { numLeft: number; nameLeft: number; headY: number } | null = null;
 
     /** 目のグループを「計」で閉じる。**Σ事業 = 計** がこの資料の一次ゲート */
     const closeGroup = (tot: (number | null)[], page: number) => {
@@ -193,25 +224,36 @@ export function parseYokohamaJigyouKeikaku(
       const hdr = rowsOf(ws).find(
         (r) => r.filter((w) => w.t === "事業費").length >= 2 && r.filter((w) => w.t === "市債+一財").length >= 2,
       );
-      if (!hdr) continue;
+      // ⚠⚠ **目次の継続ページは「列見出しがあるとき」と「無いとき」の両方がある**（実測）:
+      //   健康福祉局 p.80 は見出しあり、p.198 は見出しも `（単位：千円）` も `[局名]` も無く
+      //   「計」の行だけ。**見出し必須にすると後者が落ちて、目が閉じないまま次の目が始まる**。
+      //   → **目が開いているあいだは、詳細シートの印が無いページを継続とみなす**（列は引き継ぐ）。
+      //   安全弁は Σ事業 = 計 のゲートで、取りこぼせば必ず差が出る。
+      if (!hdr && (!head || group.length === 0)) continue;
       if (hdr) {
+        // 計画書頁の列は `計画` / `書頁` のラベルの真下にある。
+        // ⚠ **ラベルの右端ちょうどで切ると値がはみ出す** — 健康福祉局 p.23 の `10` は右端 63.5 で、
+        //   ラベル `計画` の右端 63.4 を **0.1pt** 超えて金額として数えられた（実測）。
+        //   名前の左端はラベルよりさらに右（同ページで 68.1）なので、**2pt の許容で両立する**。
+        const labelRight = Math.max(
+          ...ws.filter((w) => /^(計画|書頁|計画書頁|頁)$/.test(w.t)).map((w) => w.x1),
+          0,
+        );
         cols = {
           numLeft: Math.min(...hdr.filter((w) => /^(事業費|市債\+一財)$/.test(w.t)).map((w) => w.x0)) - 6,
+          // ⚠ **継続ページにはラベルが無い**ので、開始ページの値を引き継ぐ（引き継がないと
+          //   フォールバック 90 になり、頁の値 `18` を金額として数えて「7個」で落ちる＝実測 p.198）
+          nameLeft: labelRight > 0 ? labelRight + 2 : 90,
           headY: hdr[0]!.y,
         };
       }
       if (!cols) continue;
       const numLeft = cols.numLeft;
-      // 計画書頁の列は `計画` / `書頁` のラベルの真下にある。
-      // ⚠ **ラベルの右端ちょうどで切ると値がはみ出す** — 健康福祉局 p.23 の `10` は右端 63.5 で、
-      //   ラベル `計画` の右端 63.4 を **0.1pt** 超えて金額として数えられた（実測）。
-      //   ⚠ 名前の左端はラベルよりさらに右（同ページで 68.1）なので、**2pt の許容で両立する**。
-      const labelRight = Math.max(...ws.filter((w) => /^(計画|書頁|計画書頁|頁)$/.test(w.t)).map((w) => w.x1), 0);
-      const nameLeft = labelRight > 0 ? labelRight + 2 : 90;
+      const nameLeft = cols.nameLeft;
+      // 継続ページには見出しが無いので、そのページは上端から読む
+      const headY = hdr ? cols.headY : 0;
 
       const h = parseHead(text);
-      // ⚠ **見出しの無い継続ページがある**（事業の多い目は目次が2ページに渡り、
-      //   2ページ目に見出しが無い＝実測 こども青少年局 6款2項2目）。直前の見出しを引き継ぐ
       // ⚠ **新しい目が始まるのに前の目が「計」で閉じていないのは異常**（取りこぼしか、
       //   目の合計を課の小計と取り違えている）。黙って次へ行くと事業が別の目に混ざる
       if (h && group.length > 0 && head) {
@@ -222,10 +264,8 @@ export function parseYokohamaJigyouKeikaku(
       }
       if (h) head = h;
       if (!head) continue;
-
-      // 継続ページには見出しが無いので、開始ページの見出しの y は使えない（ページ上端から読む）
-      const headY = hdr ? cols.headY : 0;
-      for (const row of rowsOf(ws)) {
+      const hd = head;
+      for (const row of rowsOf(joinSplitNumbers(ws))) {
         const yThis = row[0]!.y;
         // ⚠ **見出しより上の行は見ない** — `[医療局] ８款１項１目（単位：千円）` の
         //   款項目の数字を金額として拾ってしまう（実測）
@@ -286,11 +326,11 @@ export function parseYokohamaJigyouKeikaku(
           (w) => w.x0 >= pageRight - COL.kubunFromRight && Math.abs(w.y - yThis) <= 8 && /[○〇◎]/.test(w.t),
         );
         group.push({
-          accountName: head.accountName,
-          kanNo: head.kanNo,
-          koNo: head.koNo,
-          mokuNo: head.mokuNo,
-          bureau: head.bureau,
+          accountName: hd.accountName,
+          kanNo: hd.kanNo,
+          koNo: hd.koNo,
+          mokuNo: hd.mokuNo,
+          bureau: hd.bureau,
           name,
           amount: amts[0] ?? 0,
           shisaiIppan: amts[1],
