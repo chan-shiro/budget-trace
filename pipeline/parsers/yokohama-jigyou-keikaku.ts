@@ -519,6 +519,39 @@ export function parseYokohamaJigyouKeikaku(
     group = [];
   }
 
+  // ---- 目次が項・目を書かない款の「目」を詳細シートから埋める -------------------
+  // ⚠⚠ **目次の見出しが款どまりのことがある**（`[財政局] 18款 公債費`）。そのままだと
+  //   事業に項・目が付かず、**款の合計は合うのに目のレベルでは全部ゼロ**になる
+  //   （款18 公債費の 177,285,013 が 6つの目に1円も割り当たらなかった＝実測）。
+  //   #192 で学んだ「総和のゲートは局所の間違いを隠す」型そのもの。
+  //   → **詳細シートの `歳出予算科目 … N款N項N目` と `事業名称` の対応表**で埋める。
+  {
+    const mokuOf = new Map<string, { ko: string; moku: string }>();
+    for (const f of files) {
+      for (const text of layoutPages(f.path)) {
+        const h = han(text);
+        const m = /歳出予算科目\s*(\S+?)\s+(\d+)\s*款\s*(\d+)\s*項\s*(\d+)\s*目/.exec(h);
+        if (!m) continue;
+        const nm = (/事業名称\s+(.+?)\s*$/m.exec(h)?.[1] ?? "").replace(/[\s　]+/g, "");
+        if (!nm) continue;
+        mokuOf.set(`${m[1]}\u0001${Number(m[2])}\u0001${nm}`, {
+          ko: String(Number(m[3])),
+          moku: String(Number(m[4])),
+        });
+      }
+    }
+    let filled = 0;
+    for (const x of facts) {
+      if (x.koNo != null && x.mokuNo != null) continue;
+      const hit = mokuOf.get(`${x.accountName}\u0001${Number(x.kanNo)}\u0001${x.name}`);
+      if (!hit) continue;
+      x.koNo = hit.ko;
+      x.mokuNo = hit.moku;
+      filled++;
+    }
+    void filled;
+  }
+
   // ---- 目次に載らない目を詳細シートから補う -----------------------------------
   // ⚠⚠ **一部の目は目次に1行も載らず、詳細シートにしかない**（実測。経済局の
   //   19款1項6目「中央と畜場費会計繰出金」2,579,388 など。19-1-6/7/8 が該当し、

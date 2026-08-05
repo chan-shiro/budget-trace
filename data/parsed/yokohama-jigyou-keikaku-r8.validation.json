@@ -1,6 +1,11 @@
 {
   "sourceId": "yokohama-jigyou-keikaku-r8",
-  "validatedAt": "2026-08-05T16:52:40.441Z",
-  "status": "ok",
-  "issues": []
+  "validatedAt": "2026-08-05T17:16:56.639Z",
+  "status": "needs_review",
+  "issues": [
+    {
+      "level": "error",
+      "message": "財政局 18款-項-目: Σ事業 433 が「計」177,285,013 と一致しません"
+    }
+  ]
 }
