@@ -298,6 +298,7 @@ for (const source of targets) {
   for (const { url, kind } of urls) {
     // WARP（国立国会図書館）／Wayback 由来の URL はそれ自体が恒久アーカイブなので登録しない
     if (url.includes("warp.ndl.go.jp") || url.includes("web.archive.org")) continue;
+    try {
     // 同じスナップショットを検証済みなら再ダウンロードしない
     const prior = ledger.find((x) => x.sourceId === source.id && x.url === url);
     const verify = async (timestamp: string, waybackUrl: string): Promise<VerifyResult> => {
@@ -387,6 +388,15 @@ for (const source of targets) {
       saved++;
     } else {
       console.log(`✗ 未確認 ${source.id} ${kind}（次回実行で再試行）`);
+      failed++;
+    }
+    } catch (e) {
+      // ⚠⚠ **1本の失敗で全体を落とさない**（2026-08-06・#164 で実害）。
+      //   329本のソース（横浜の事業計画書）で**最初の1本がタイムアウトしただけで
+      //   プロセスが終了し、台帳に1件も登録されなかった**。ファイル数の多いソースでは
+      //   ネットワークの一時失敗が必ず起きるので、**その1本だけ諦めて次へ進む**。
+      //   台帳は毎回併合保存されるので、次回実行で未登録のものだけ再試行される。
+      console.log(`✗ 失敗 ${source.id} ${kind}: ${e instanceof Error ? e.message : String(e)}（次回実行で再試行）`);
       failed++;
     }
   }
