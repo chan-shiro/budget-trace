@@ -1661,7 +1661,10 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
           : [];
       const covered = rows.reduce((a, p) => a + p.amountOku, 0);
       const uncovered = Math.max(0, nodeTotal - covered);
+      // ⚠ **主な事業が款別と別の資料から来る自治体がある**（#164・横浜の事業計画書）。
+      //   出典は款別の資料名ではなく**その事業の refLabel が指す資料**を出す
       const projTitle = isBudget ? muniBudget!.sourceTitle : KOFU_PROJECTS_SOURCE.title;
+      const projSrcLabel = rows[0]?.refLabel?.replace(/\s*p\.\d+$/, "") ?? projTitle;
       return {
         hasRealProjects: rows.length > 0,
         realProjects: rows.map((p) => ({
@@ -1689,9 +1692,13 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
                 `款別ドリルダウンの「${nodeName}」で、主な事業一覧に掲載のない ${fmtOku(uncovered)} の内訳（項・目・節、事業別）を知りたい`,
               )
             : "",
-        realProjectsSourceUrl: evHref(isBudget ? muniBudget!.sourceLocalUrl : KOFU_PROJECTS_SOURCE.localUrl),
-        realProjectsSourceAction: evAction(isBudget ? muniBudget!.sourceLocalUrl : KOFU_PROJECTS_SOURCE.localUrl),
-        realProjectsSourceLabel: `出典：${projTitle} 主な事業`,
+        realProjectsSourceUrl: evHref(
+          rows[0]?.refLocalUrl ?? (isBudget ? muniBudget!.sourceLocalUrl : KOFU_PROJECTS_SOURCE.localUrl),
+        ),
+        realProjectsSourceAction: evAction(
+          rows[0]?.refLocalUrl ?? (isBudget ? muniBudget!.sourceLocalUrl : KOFU_PROJECTS_SOURCE.localUrl),
+        ),
+        realProjectsSourceLabel: `出典：${projSrcLabel}`,
         realProjectsSourceOpen: () => openViewer({
           url: isBudget ? muniBudget!.sourceLocalUrl : KOFU_PROJECTS_SOURCE.localUrl,
           title: projTitle, sub: "主な事業",
