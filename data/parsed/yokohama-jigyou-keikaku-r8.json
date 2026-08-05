@@ -3,7 +3,7 @@
   "sourceId": "yokohama-jigyou-keikaku-r8",
   "parser": "yokohama-jigyou-keikaku",
   "parserVersion": "0.1.0",
-  "parsedAt": "2026-08-05T19:23:38.397Z",
+  "parsedAt": "2026-08-05T23:27:34.698Z",
   "unit": "thousandYen",
   "fiscalYear": "R8",
   "totals": [
@@ -4858,7 +4858,7 @@
       "shisaiIppan": 30450,
       "prevAmount": 16300,
       "prevShisaiIppan": 16300,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "4",
       "locator": {
         "file": "r8jigyoukeikakusho2.pdf",
@@ -4894,7 +4894,7 @@
       "shisaiIppan": 561027,
       "prevAmount": 127888,
       "prevShisaiIppan": 127888,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "6",
       "locator": {
         "file": "r8jigyoukeikakusho2.pdf",
@@ -4930,7 +4930,7 @@
       "shisaiIppan": 32645,
       "prevAmount": 38290,
       "prevShisaiIppan": 38290,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "8",
       "locator": {
         "file": "r8jigyoukeikakusho2.pdf",
@@ -4948,7 +4948,7 @@
       "shisaiIppan": 13842,
       "prevAmount": 922579,
       "prevShisaiIppan": 5842,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "9",
       "locator": {
         "file": "r8jigyoukeikakusho2.pdf",
@@ -5020,7 +5020,7 @@
       "shisaiIppan": 132122,
       "prevAmount": 223783,
       "prevShisaiIppan": 219634,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "13",
       "locator": {
         "file": "r8jigyoukeikakusho2.pdf",
@@ -5164,7 +5164,7 @@
       "shisaiIppan": 303800,
       "prevAmount": 100000,
       "prevShisaiIppan": 100000,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "21",
       "locator": {
         "file": "r8jigyoukeikakusho2.pdf",
@@ -5182,7 +5182,7 @@
       "shisaiIppan": 1959900,
       "prevAmount": 599900,
       "prevShisaiIppan": 599900,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "22",
       "locator": {
         "file": "r8jigyoukeikakusho2.pdf",
@@ -5200,7 +5200,7 @@
       "shisaiIppan": 5485,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "23",
       "locator": {
         "file": "r8jigyoukeikakusho2.pdf",
@@ -5218,7 +5218,7 @@
       "shisaiIppan": 6410,
       "prevAmount": 2857,
       "prevShisaiIppan": 2857,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "24",
       "locator": {
         "file": "r8jigyoukeikakusho2.pdf",
@@ -5236,7 +5236,7 @@
       "shisaiIppan": 1635818,
       "prevAmount": 870755,
       "prevShisaiIppan": 860755,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "1",
       "locator": {
         "file": "r8jigyoukeikakusho2.pdf",
@@ -5344,7 +5344,7 @@
       "shisaiIppan": 2710809,
       "prevAmount": 657000,
       "prevShisaiIppan": 608000,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "3",
       "locator": {
         "file": "r8jigyoukeikakusho2.pdf",
@@ -5380,7 +5380,7 @@
       "shisaiIppan": 73000,
       "prevAmount": 5802,
       "prevShisaiIppan": 5802,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "1",
       "locator": {
         "file": "r8jigyoukeikakusho19.pdf",
@@ -5596,7 +5596,7 @@
       "shisaiIppan": 82500,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "12",
       "locator": {
         "file": "r8-somu-jigyoukeikaku.pdf",
@@ -6028,7 +6028,7 @@
       "shisaiIppan": 88090,
       "prevAmount": 84508,
       "prevShisaiIppan": 81451,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "11",
       "locator": {
         "file": "r8-somu-jigyoukeikaku.pdf",
@@ -6172,7 +6172,7 @@
       "shisaiIppan": 243652,
       "prevAmount": 116940,
       "prevShisaiIppan": 116740,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "8",
       "locator": {
         "file": "r8-somu-jigyoukeikaku.pdf",
@@ -6316,7 +6316,7 @@
       "shisaiIppan": 11415,
       "prevAmount": 19660,
       "prevShisaiIppan": 19660,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "16",
       "locator": {
         "file": "r8-somu-jigyoukeikaku.pdf",
@@ -6370,7 +6370,7 @@
       "shisaiIppan": 51857,
       "prevAmount": 19755,
       "prevShisaiIppan": 19755,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "19",
       "locator": {
         "file": "r8-somu-jigyoukeikaku.pdf",
@@ -6460,7 +6460,7 @@
       "shisaiIppan": 47734,
       "prevAmount": 61833,
       "prevShisaiIppan": 40495,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "1",
       "locator": {
         "file": "0088_20260121.pdf",
@@ -6496,7 +6496,7 @@
       "shisaiIppan": 1885094,
       "prevAmount": 1704830,
       "prevShisaiIppan": 1704809,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "3",
       "locator": {
         "file": "0088_20260121.pdf",
@@ -6514,7 +6514,7 @@
       "shisaiIppan": 70899,
       "prevAmount": 94690,
       "prevShisaiIppan": 94690,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "4",
       "locator": {
         "file": "0088_20260121.pdf",
@@ -6604,7 +6604,7 @@
       "shisaiIppan": 761903,
       "prevAmount": 728073,
       "prevShisaiIppan": 717269,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "9",
       "locator": {
         "file": "0088_20260121.pdf",
@@ -6676,7 +6676,7 @@
       "shisaiIppan": 50702,
       "prevAmount": 46997,
       "prevShisaiIppan": 42997,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "13",
       "locator": {
         "file": "0088_20260121.pdf",
@@ -6748,7 +6748,7 @@
       "shisaiIppan": 165708,
       "prevAmount": 165708,
       "prevShisaiIppan": 165708,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "17",
       "locator": {
         "file": "0088_20260121.pdf",
@@ -7018,7 +7018,7 @@
       "shisaiIppan": 42535,
       "prevAmount": 42627,
       "prevShisaiIppan": 42627,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "3",
       "locator": {
         "file": "0004_20260123.pdf",
@@ -7036,7 +7036,7 @@
       "shisaiIppan": 40762,
       "prevAmount": 26202,
       "prevShisaiIppan": 26068,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "4",
       "locator": {
         "file": "0004_20260123.pdf",
@@ -7072,7 +7072,7 @@
       "shisaiIppan": 19500,
       "prevAmount": 30500,
       "prevShisaiIppan": 30500,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "6",
       "locator": {
         "file": "0004_20260123.pdf",
@@ -7108,7 +7108,7 @@
       "shisaiIppan": 231151,
       "prevAmount": 144825,
       "prevShisaiIppan": 144825,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "8",
       "locator": {
         "file": "0004_20260123.pdf",
@@ -7126,7 +7126,7 @@
       "shisaiIppan": 79524,
       "prevAmount": 59950,
       "prevShisaiIppan": 59950,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "9",
       "locator": {
         "file": "0004_20260123.pdf",
@@ -7144,7 +7144,7 @@
       "shisaiIppan": 2920593,
       "prevAmount": 2521497,
       "prevShisaiIppan": 2378953,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "10",
       "locator": {
         "file": "0004_20260123.pdf",
@@ -7324,7 +7324,7 @@
       "shisaiIppan": 18167,
       "prevAmount": 12875,
       "prevShisaiIppan": 11718,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "6",
       "locator": {
         "file": "0056_20260126.pdf",
@@ -7612,7 +7612,7 @@
       "shisaiIppan": 69854,
       "prevAmount": 24942,
       "prevShisaiIppan": 16410,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "22",
       "locator": {
         "file": "0056_20260126.pdf",
@@ -7666,7 +7666,7 @@
       "shisaiIppan": 195693,
       "prevAmount": 317346,
       "prevShisaiIppan": 317346,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "25",
       "locator": {
         "file": "0056_20260126.pdf",
@@ -7684,7 +7684,7 @@
       "shisaiIppan": 180944,
       "prevAmount": 179952,
       "prevShisaiIppan": 179952,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "26",
       "locator": {
         "file": "0056_20260126.pdf",
@@ -7892,8 +7892,8 @@
     {
       "accountName": "一般会計",
       "kanNo": "18",
-      "koNo": null,
-      "mokuNo": null,
+      "koNo": "2",
+      "mokuNo": "3",
       "bureau": "財政局",
       "name": "一般会計第三セクター等改革推進債公債費公債諸費",
       "amount": 433,
@@ -8224,7 +8224,7 @@
       "shisaiIppan": 41264,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "2",
       "locator": {
         "file": "R8kokusai.pdf",
@@ -8242,7 +8242,7 @@
       "shisaiIppan": 98555,
       "prevAmount": 184659,
       "prevShisaiIppan": 139659,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "3",
       "locator": {
         "file": "R8kokusai.pdf",
@@ -8260,7 +8260,7 @@
       "shisaiIppan": 22210,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "4",
       "locator": {
         "file": "R8kokusai.pdf",
@@ -8476,7 +8476,7 @@
       "shisaiIppan": 19840,
       "prevAmount": 82880,
       "prevShisaiIppan": 80889,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "1",
       "locator": {
         "file": "0021_20260126.pdf",
@@ -8656,7 +8656,7 @@
       "shisaiIppan": 3604,
       "prevAmount": 23100,
       "prevShisaiIppan": 3988,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "1",
       "locator": {
         "file": "0021_20260126.pdf",
@@ -8746,7 +8746,7 @@
       "shisaiIppan": 193260,
       "prevAmount": 64380,
       "prevShisaiIppan": 64380,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "4",
       "locator": {
         "file": "0021_20260126.pdf",
@@ -8908,7 +8908,7 @@
       "shisaiIppan": 134214,
       "prevAmount": 75908,
       "prevShisaiIppan": 50708,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "19",
       "locator": {
         "file": "0021_20260126.pdf",
@@ -8944,7 +8944,7 @@
       "shisaiIppan": 576017,
       "prevAmount": 654387,
       "prevShisaiIppan": 645502,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "22",
       "locator": {
         "file": "0021_20260126.pdf",
@@ -8962,7 +8962,7 @@
       "shisaiIppan": 132169,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "24",
       "locator": {
         "file": "0021_20260126.pdf",
@@ -9034,7 +9034,7 @@
       "shisaiIppan": 17702454,
       "prevAmount": 17561338,
       "prevShisaiIppan": 17181799,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "1",
       "locator": {
         "file": "0021_20260126.pdf",
@@ -9196,7 +9196,7 @@
       "shisaiIppan": 6245,
       "prevAmount": 6836990,
       "prevShisaiIppan": 11226,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "8",
       "locator": {
         "file": "0021_20260126.pdf",
@@ -9286,7 +9286,7 @@
       "shisaiIppan": 356726,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "15",
       "locator": {
         "file": "0021_20260126.pdf",
@@ -9646,7 +9646,7 @@
       "shisaiIppan": 11873,
       "prevAmount": 27832,
       "prevShisaiIppan": 11961,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "4",
       "locator": {
         "file": "0012_20260123.pdf",
@@ -9664,7 +9664,7 @@
       "shisaiIppan": 16532,
       "prevAmount": 77399,
       "prevShisaiIppan": 15649,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "5",
       "locator": {
         "file": "0012_20260123.pdf",
@@ -9700,7 +9700,7 @@
       "shisaiIppan": 49940,
       "prevAmount": 44940,
       "prevShisaiIppan": 44940,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "7",
       "locator": {
         "file": "0012_20260123.pdf",
@@ -9808,7 +9808,7 @@
       "shisaiIppan": 0,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "13",
       "locator": {
         "file": "0012_20260123.pdf",
@@ -9952,7 +9952,7 @@
       "shisaiIppan": 393609,
       "prevAmount": 413153,
       "prevShisaiIppan": 413153,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "1",
       "locator": {
         "file": "0012_20260123.pdf",
@@ -9988,7 +9988,7 @@
       "shisaiIppan": 10397,
       "prevAmount": 2329,
       "prevShisaiIppan": 2329,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "3",
       "locator": {
         "file": "0012_20260123.pdf",
@@ -10006,7 +10006,7 @@
       "shisaiIppan": 4000,
       "prevAmount": 61973,
       "prevShisaiIppan": 41973,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "4",
       "locator": {
         "file": "0012_20260123.pdf",
@@ -10096,7 +10096,7 @@
       "shisaiIppan": 108701,
       "prevAmount": 98630,
       "prevShisaiIppan": 98630,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "9",
       "locator": {
         "file": "0012_20260123.pdf",
@@ -10204,7 +10204,7 @@
       "shisaiIppan": 1392436,
       "prevAmount": 1716034,
       "prevShisaiIppan": 1677788,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "15",
       "locator": {
         "file": "0012_20260123.pdf",
@@ -10258,7 +10258,7 @@
       "shisaiIppan": 308476,
       "prevAmount": 290268,
       "prevShisaiIppan": 290268,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "1",
       "locator": {
         "file": "0012_20260123.pdf",
@@ -10276,7 +10276,7 @@
       "shisaiIppan": 521900,
       "prevAmount": 360000,
       "prevShisaiIppan": 349900,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "2",
       "locator": {
         "file": "0012_20260123.pdf",
@@ -10312,7 +10312,7 @@
       "shisaiIppan": 627881,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "4",
       "locator": {
         "file": "0012_20260123.pdf",
@@ -10348,7 +10348,7 @@
       "shisaiIppan": 203345,
       "prevAmount": 187950,
       "prevShisaiIppan": 181360,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "6",
       "locator": {
         "file": "0012_20260123.pdf",
@@ -10384,7 +10384,7 @@
       "shisaiIppan": -722568,
       "prevAmount": 358061,
       "prevShisaiIppan": -559974,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "8",
       "locator": {
         "file": "0012_20260123.pdf",
@@ -10582,7 +10582,7 @@
       "shisaiIppan": 292069,
       "prevAmount": 228013,
       "prevShisaiIppan": 211302,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "1",
       "locator": {
         "file": "0175_20260123.pdf",
@@ -10600,7 +10600,7 @@
       "shisaiIppan": 79149,
       "prevAmount": 122105,
       "prevShisaiIppan": 86702,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "2",
       "locator": {
         "file": "0175_20260123.pdf",
@@ -10636,7 +10636,7 @@
       "shisaiIppan": -34816,
       "prevAmount": 10157,
       "prevShisaiIppan": -35598,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "4",
       "locator": {
         "file": "0175_20260123.pdf",
@@ -10690,7 +10690,7 @@
       "shisaiIppan": 10000,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "7",
       "locator": {
         "file": "0175_20260123.pdf",
@@ -10726,7 +10726,7 @@
       "shisaiIppan": 271389,
       "prevAmount": 571186,
       "prevShisaiIppan": 498134,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "1",
       "locator": {
         "file": "0175_20260123.pdf",
@@ -10780,7 +10780,7 @@
       "shisaiIppan": 95000,
       "prevAmount": 70000,
       "prevShisaiIppan": 70000,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "4",
       "locator": {
         "file": "0175_20260123.pdf",
@@ -10816,7 +10816,7 @@
       "shisaiIppan": 443978,
       "prevAmount": 339138,
       "prevShisaiIppan": 339070,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "6",
       "locator": {
         "file": "0175_20260123.pdf",
@@ -10942,7 +10942,7 @@
       "shisaiIppan": 162448,
       "prevAmount": 153848,
       "prevShisaiIppan": 153848,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "1",
       "locator": {
         "file": "0175_20260123.pdf",
@@ -10960,7 +10960,7 @@
       "shisaiIppan": 28700,
       "prevAmount": 23700,
       "prevShisaiIppan": 23700,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "2",
       "locator": {
         "file": "0175_20260123.pdf",
@@ -10996,7 +10996,7 @@
       "shisaiIppan": 280430,
       "prevAmount": 305840,
       "prevShisaiIppan": 277577,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "4",
       "locator": {
         "file": "0175_20260123.pdf",
@@ -11086,7 +11086,7 @@
       "shisaiIppan": 8390,
       "prevAmount": 11200,
       "prevShisaiIppan": 4300,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "9",
       "locator": {
         "file": "0175_20260123.pdf",
@@ -11356,7 +11356,7 @@
       "shisaiIppan": 3914,
       "prevAmount": 10654,
       "prevShisaiIppan": 6014,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "6",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -11392,7 +11392,7 @@
       "shisaiIppan": 17409,
       "prevAmount": 20320,
       "prevShisaiIppan": 20320,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "8",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -11410,7 +11410,7 @@
       "shisaiIppan": 20000,
       "prevAmount": 1229,
       "prevShisaiIppan": 1229,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "10",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -11590,7 +11590,7 @@
       "shisaiIppan": 453420,
       "prevAmount": 255246,
       "prevShisaiIppan": 255246,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "22",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -11698,7 +11698,7 @@
       "shisaiIppan": 171447,
       "prevAmount": 353778,
       "prevShisaiIppan": 173419,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "28",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -11770,7 +11770,7 @@
       "shisaiIppan": 957493,
       "prevAmount": 1341179,
       "prevShisaiIppan": 936339,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "31",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -11788,7 +11788,7 @@
       "shisaiIppan": 189554,
       "prevAmount": 706681,
       "prevShisaiIppan": 176307,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "32",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -11806,7 +11806,7 @@
       "shisaiIppan": 64771,
       "prevAmount": 402368,
       "prevShisaiIppan": 94574,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "33",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -11860,7 +11860,7 @@
       "shisaiIppan": 841918,
       "prevAmount": 959399,
       "prevShisaiIppan": 608968,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "36",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -11896,7 +11896,7 @@
       "shisaiIppan": 2025,
       "prevAmount": 28676,
       "prevShisaiIppan": 2022,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "39",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -11914,7 +11914,7 @@
       "shisaiIppan": 12800,
       "prevAmount": 3000,
       "prevShisaiIppan": 3000,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "40",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -11932,7 +11932,7 @@
       "shisaiIppan": 22935,
       "prevAmount": 20000,
       "prevShisaiIppan": 20000,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "41",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -11968,7 +11968,7 @@
       "shisaiIppan": 79528,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "43",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -11986,7 +11986,7 @@
       "shisaiIppan": 2000,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "44",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -12004,7 +12004,7 @@
       "shisaiIppan": 20000,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "45",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -12094,7 +12094,7 @@
       "shisaiIppan": 38922085,
       "prevAmount": 39616393,
       "prevShisaiIppan": 37462766,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "50",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -12112,7 +12112,7 @@
       "shisaiIppan": 1764591,
       "prevAmount": 1561125,
       "prevShisaiIppan": 1478529,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "51",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -12148,7 +12148,7 @@
       "shisaiIppan": 576011,
       "prevAmount": 1403751,
       "prevShisaiIppan": 570779,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "53",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -12166,7 +12166,7 @@
       "shisaiIppan": 317675,
       "prevAmount": 732084,
       "prevShisaiIppan": 350732,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "55",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -12436,7 +12436,7 @@
       "shisaiIppan": 165020,
       "prevAmount": 477035,
       "prevShisaiIppan": 263203,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "75",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -12454,7 +12454,7 @@
       "shisaiIppan": 970726,
       "prevAmount": 2967806,
       "prevShisaiIppan": 1133173,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "77",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -12670,7 +12670,7 @@
       "shisaiIppan": 48029,
       "prevAmount": 81314,
       "prevShisaiIppan": 19706,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "92",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -12688,7 +12688,7 @@
       "shisaiIppan": 8646,
       "prevAmount": 10000,
       "prevShisaiIppan": 10000,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "93",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -12706,7 +12706,7 @@
       "shisaiIppan": 2750,
       "prevAmount": 8250,
       "prevShisaiIppan": 2750,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "94",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -12778,7 +12778,7 @@
       "shisaiIppan": 4825044,
       "prevAmount": 5793651,
       "prevShisaiIppan": 4425444,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "98",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -12832,7 +12832,7 @@
       "shisaiIppan": 628647,
       "prevAmount": 3207600,
       "prevShisaiIppan": 801900,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "102",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -12940,7 +12940,7 @@
       "shisaiIppan": 107512,
       "prevAmount": 114240,
       "prevShisaiIppan": 114240,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "108",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -12994,7 +12994,7 @@
       "shisaiIppan": 5392967,
       "prevAmount": 10666905,
       "prevShisaiIppan": 5106438,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "112",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -13030,7 +13030,7 @@
       "shisaiIppan": 1787011,
       "prevAmount": 4037052,
       "prevShisaiIppan": 1619354,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "114",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -13048,7 +13048,7 @@
       "shisaiIppan": 70270,
       "prevAmount": 37957,
       "prevShisaiIppan": 25305,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "115",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -13084,7 +13084,7 @@
       "shisaiIppan": 386750,
       "prevAmount": 478664,
       "prevShisaiIppan": 424578,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "117",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -13120,7 +13120,7 @@
       "shisaiIppan": 722635,
       "prevAmount": 2605532,
       "prevShisaiIppan": 770068,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "120",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -13246,7 +13246,7 @@
       "shisaiIppan": 467472,
       "prevAmount": 717146,
       "prevShisaiIppan": 411432,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "130",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -13264,7 +13264,7 @@
       "shisaiIppan": 10286,
       "prevAmount": 14376,
       "prevShisaiIppan": 9063,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "132",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -13462,7 +13462,7 @@
       "shisaiIppan": 30098,
       "prevAmount": 60196,
       "prevShisaiIppan": 30098,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "145",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -13480,7 +13480,7 @@
       "shisaiIppan": 117588,
       "prevAmount": 152967,
       "prevShisaiIppan": 110150,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "146",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -13498,7 +13498,7 @@
       "shisaiIppan": 3092,
       "prevAmount": 5222,
       "prevShisaiIppan": 5169,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "147",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -13552,7 +13552,7 @@
       "shisaiIppan": 242269,
       "prevAmount": 716870,
       "prevShisaiIppan": 239949,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "150",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -13624,7 +13624,7 @@
       "shisaiIppan": 200483,
       "prevAmount": 486241,
       "prevShisaiIppan": 170302,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "156",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -13660,7 +13660,7 @@
       "shisaiIppan": 132919,
       "prevAmount": 129743,
       "prevShisaiIppan": 90921,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "158",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -13696,7 +13696,7 @@
       "shisaiIppan": 10550,
       "prevAmount": 6600,
       "prevShisaiIppan": 6600,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "160",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -13714,7 +13714,7 @@
       "shisaiIppan": 7199953,
       "prevAmount": 25326673,
       "prevShisaiIppan": 6448927,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "161",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -13732,7 +13732,7 @@
       "shisaiIppan": 82705,
       "prevAmount": 49359,
       "prevShisaiIppan": 49359,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "162",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -13750,7 +13750,7 @@
       "shisaiIppan": 65961,
       "prevAmount": 72222,
       "prevShisaiIppan": 69543,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "163",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -13858,7 +13858,7 @@
       "shisaiIppan": 238975,
       "prevAmount": 273365,
       "prevShisaiIppan": 231027,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "171",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -13876,7 +13876,7 @@
       "shisaiIppan": 907453,
       "prevAmount": 1048291,
       "prevShisaiIppan": 959052,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "173",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -13948,7 +13948,7 @@
       "shisaiIppan": 143875,
       "prevAmount": 77585,
       "prevShisaiIppan": 74564,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "179",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -14038,7 +14038,7 @@
       "shisaiIppan": 114014,
       "prevAmount": 330990,
       "prevShisaiIppan": 112816,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "185",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -14290,7 +14290,7 @@
       "shisaiIppan": -8799,
       "prevAmount": 33306,
       "prevShisaiIppan": -14363,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "200",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -14326,7 +14326,7 @@
       "shisaiIppan": 23983,
       "prevAmount": 167813,
       "prevShisaiIppan": 35861,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "202",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -14362,7 +14362,7 @@
       "shisaiIppan": 780113,
       "prevAmount": 765126,
       "prevShisaiIppan": 757642,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "207",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -14398,7 +14398,7 @@
       "shisaiIppan": 969722,
       "prevAmount": 1765188,
       "prevShisaiIppan": 1130810,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "210",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -14470,7 +14470,7 @@
       "shisaiIppan": 82979,
       "prevAmount": 69146,
       "prevShisaiIppan": 59646,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "216",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -14488,7 +14488,7 @@
       "shisaiIppan": 139859,
       "prevAmount": 1746499,
       "prevShisaiIppan": 1412340,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "218",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -14686,7 +14686,7 @@
       "shisaiIppan": 19254,
       "prevAmount": 30395,
       "prevShisaiIppan": 30373,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "4",
       "locator": {
         "file": "0158_20260213.pdf",
@@ -15208,7 +15208,7 @@
       "shisaiIppan": 3871270,
       "prevAmount": 3547018,
       "prevShisaiIppan": 3522117,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "18",
       "locator": {
         "file": "0158_20260213.pdf",
@@ -15334,7 +15334,7 @@
       "shisaiIppan": 14934750,
       "prevAmount": 15762681,
       "prevShisaiIppan": 12569129,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "1",
       "locator": {
         "file": "0158_20260213.pdf",
@@ -15424,7 +15424,7 @@
       "shisaiIppan": 1164979,
       "prevAmount": 1999875,
       "prevShisaiIppan": 1111530,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "2",
       "locator": {
         "file": "0158_20260213.pdf",
@@ -15568,7 +15568,7 @@
       "shisaiIppan": 8557,
       "prevAmount": 19833,
       "prevShisaiIppan": 5296,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "4",
       "locator": {
         "file": "0158_20260213.pdf",
@@ -15622,7 +15622,7 @@
       "shisaiIppan": 19623,
       "prevAmount": 23412,
       "prevShisaiIppan": 15136,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "7",
       "locator": {
         "file": "0158_20260213.pdf",
@@ -15766,7 +15766,7 @@
       "shisaiIppan": 344377,
       "prevAmount": 1216696,
       "prevShisaiIppan": 310926,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "15",
       "locator": {
         "file": "0158_20260213.pdf",
@@ -15802,7 +15802,7 @@
       "shisaiIppan": 56653,
       "prevAmount": 75146,
       "prevShisaiIppan": 56035,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "17",
       "locator": {
         "file": "0158_20260213.pdf",
@@ -15892,7 +15892,7 @@
       "shisaiIppan": 11318665,
       "prevAmount": 22965613,
       "prevShisaiIppan": 10602323,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "22",
       "locator": {
         "file": "0158_20260213.pdf",
@@ -16126,7 +16126,7 @@
       "shisaiIppan": 31295,
       "prevAmount": 66304,
       "prevShisaiIppan": 30217,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "35",
       "locator": {
         "file": "0158_20260213.pdf",
@@ -16378,7 +16378,7 @@
       "shisaiIppan": 377220,
       "prevAmount": 278107,
       "prevShisaiIppan": 278107,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "49",
       "locator": {
         "file": "0158_20260213.pdf",
@@ -16396,7 +16396,7 @@
       "shisaiIppan": 9040739,
       "prevAmount": 22190158,
       "prevShisaiIppan": 8563715,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "50",
       "locator": {
         "file": "0158_20260213.pdf",
@@ -16432,7 +16432,7 @@
       "shisaiIppan": 2508583,
       "prevAmount": 2047411,
       "prevShisaiIppan": 2047411,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "52",
       "locator": {
         "file": "0158_20260213.pdf",
@@ -16486,7 +16486,7 @@
       "shisaiIppan": 218960,
       "prevAmount": 208521,
       "prevShisaiIppan": 208206,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "2",
       "locator": {
         "file": "0158_20260213.pdf",
@@ -16504,7 +16504,7 @@
       "shisaiIppan": 27356,
       "prevAmount": 74825,
       "prevShisaiIppan": 28144,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "3",
       "locator": {
         "file": "0158_20260213.pdf",
@@ -16522,7 +16522,7 @@
       "shisaiIppan": 284081,
       "prevAmount": 357001,
       "prevShisaiIppan": 284340,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "4",
       "locator": {
         "file": "0158_20260213.pdf",
@@ -16720,7 +16720,7 @@
       "shisaiIppan": 294997,
       "prevAmount": 357177,
       "prevShisaiIppan": 245490,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "1",
       "locator": {
         "file": "0158_20260213.pdf",
@@ -16864,7 +16864,7 @@
       "shisaiIppan": 7370755,
       "prevAmount": 8113187,
       "prevShisaiIppan": 6861233,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "4",
       "locator": {
         "file": "0158_20260213.pdf",
@@ -17440,7 +17440,7 @@
       "shisaiIppan": 369953,
       "prevAmount": 1076418,
       "prevShisaiIppan": 359310,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "6",
       "locator": {
         "file": "0158_20260213.pdf",
@@ -17728,7 +17728,7 @@
       "shisaiIppan": 1982929,
       "prevAmount": 4207313,
       "prevShisaiIppan": 2920134,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "3",
       "locator": {
         "file": "0158_20260213.pdf",
@@ -17818,7 +17818,7 @@
       "shisaiIppan": 91046,
       "prevAmount": 96325,
       "prevShisaiIppan": 28922,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "8",
       "locator": {
         "file": "0158_20260213.pdf",
@@ -17980,7 +17980,7 @@
       "shisaiIppan": 13037,
       "prevAmount": 8966,
       "prevShisaiIppan": 8966,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "5",
       "locator": {
         "file": "0158_20260213.pdf",
@@ -18034,7 +18034,7 @@
       "shisaiIppan": 38225,
       "prevAmount": 34948,
       "prevShisaiIppan": 26149,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "8",
       "locator": {
         "file": "0158_20260213.pdf",
@@ -18412,7 +18412,7 @@
       "shisaiIppan": 44216,
       "prevAmount": 44216,
       "prevShisaiIppan": 44214,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "6",
       "locator": {
         "file": "0001_20260126.pdf",
@@ -18502,7 +18502,7 @@
       "shisaiIppan": 23737,
       "prevAmount": 29674,
       "prevShisaiIppan": 29674,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "4",
       "locator": {
         "file": "0001_20260126.pdf",
@@ -18520,7 +18520,7 @@
       "shisaiIppan": 3000,
       "prevAmount": 5170,
       "prevShisaiIppan": 5170,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "6",
       "locator": {
         "file": "0001_20260126.pdf",
@@ -18574,7 +18574,7 @@
       "shisaiIppan": 22993,
       "prevAmount": 59064,
       "prevShisaiIppan": 28172,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "10",
       "locator": {
         "file": "0001_20260126.pdf",
@@ -18610,7 +18610,7 @@
       "shisaiIppan": 110746,
       "prevAmount": 107746,
       "prevShisaiIppan": 107746,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "14",
       "locator": {
         "file": "0001_20260126.pdf",
@@ -18682,7 +18682,7 @@
       "shisaiIppan": 235097,
       "prevAmount": 309876,
       "prevShisaiIppan": 259473,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "20",
       "locator": {
         "file": "0001_20260126.pdf",
@@ -18718,7 +18718,7 @@
       "shisaiIppan": 163300,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "24",
       "locator": {
         "file": "0001_20260126.pdf",
@@ -18736,7 +18736,7 @@
       "shisaiIppan": 136079,
       "prevAmount": 152742,
       "prevShisaiIppan": 131342,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "25",
       "locator": {
         "file": "0001_20260126.pdf",
@@ -18754,7 +18754,7 @@
       "shisaiIppan": 12557,
       "prevAmount": 20383,
       "prevShisaiIppan": 16977,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "27",
       "locator": {
         "file": "0001_20260126.pdf",
@@ -18808,7 +18808,7 @@
       "shisaiIppan": 8244347,
       "prevAmount": 8070050,
       "prevShisaiIppan": 7985994,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "3",
       "locator": {
         "file": "0001_20260126.pdf",
@@ -18862,7 +18862,7 @@
       "shisaiIppan": 1851779,
       "prevAmount": 1604774,
       "prevShisaiIppan": 1604766,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "9",
       "locator": {
         "file": "0001_20260126.pdf",
@@ -19510,7 +19510,7 @@
       "shisaiIppan": 14242,
       "prevAmount": 5345,
       "prevShisaiIppan": 5345,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "34",
       "locator": {
         "file": "0001_20260126.pdf",
@@ -19546,7 +19546,7 @@
       "shisaiIppan": 31116,
       "prevAmount": 39726,
       "prevShisaiIppan": 28338,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "37",
       "locator": {
         "file": "0001_20260126.pdf",
@@ -19600,7 +19600,7 @@
       "shisaiIppan": 0,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "42",
       "locator": {
         "file": "0001_20260126.pdf",
@@ -19672,7 +19672,7 @@
       "shisaiIppan": 21246,
       "prevAmount": 40277,
       "prevShisaiIppan": 22018,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "1",
       "locator": {
         "file": "0463_20260126.pdf",
@@ -19888,7 +19888,7 @@
       "shisaiIppan": 233168,
       "prevAmount": 146267,
       "prevShisaiIppan": 52360,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "4",
       "locator": {
         "file": "0463_20260126.pdf",
@@ -20086,7 +20086,7 @@
       "shisaiIppan": 80000,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "6",
       "locator": {
         "file": "0463_20260126.pdf",
@@ -20158,7 +20158,7 @@
       "shisaiIppan": 210000,
       "prevAmount": 70000,
       "prevShisaiIppan": 70000,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "4",
       "locator": {
         "file": "0463_20260126.pdf",
@@ -20194,7 +20194,7 @@
       "shisaiIppan": 129665,
       "prevAmount": 130175,
       "prevShisaiIppan": 121673,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "1",
       "locator": {
         "file": "0463_20260126.pdf",
@@ -20284,7 +20284,7 @@
       "shisaiIppan": 211464,
       "prevAmount": 20088,
       "prevShisaiIppan": 20088,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "6",
       "locator": {
         "file": "0463_20260126.pdf",
@@ -20338,7 +20338,7 @@
       "shisaiIppan": 33000,
       "prevAmount": 33000,
       "prevShisaiIppan": 33000,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "3",
       "locator": {
         "file": "0463_20260126.pdf",
@@ -20356,7 +20356,7 @@
       "shisaiIppan": 14800,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "4",
       "locator": {
         "file": "0463_20260126.pdf",
@@ -20734,7 +20734,7 @@
       "shisaiIppan": 100000,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "4",
       "locator": {
         "file": "0397_20260122.pdf",
@@ -20896,7 +20896,7 @@
       "shisaiIppan": 50000,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "4",
       "locator": {
         "file": "0397_20260122.pdf",
@@ -20968,7 +20968,7 @@
       "shisaiIppan": 66689,
       "prevAmount": 94295,
       "prevShisaiIppan": 72651,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "3",
       "locator": {
         "file": "0017_20260123.pdf",
@@ -21058,7 +21058,7 @@
       "shisaiIppan": 2404633,
       "prevAmount": 3061924,
       "prevShisaiIppan": 2861103,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "8",
       "locator": {
         "file": "0017_20260123.pdf",
@@ -21094,7 +21094,7 @@
       "shisaiIppan": 10000,
       "prevAmount": 210213,
       "prevShisaiIppan": 3300,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "10",
       "locator": {
         "file": "0017_20260123.pdf",
@@ -21112,7 +21112,7 @@
       "shisaiIppan": 45087,
       "prevAmount": 34360,
       "prevShisaiIppan": 34360,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "11",
       "locator": {
         "file": "0017_20260123.pdf",
@@ -21184,7 +21184,7 @@
       "shisaiIppan": 28385,
       "prevAmount": 12667,
       "prevShisaiIppan": 12621,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "15",
       "locator": {
         "file": "0017_20260123.pdf",
@@ -21472,7 +21472,7 @@
       "shisaiIppan": 336537,
       "prevAmount": 252883,
       "prevShisaiIppan": 246421,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "31",
       "locator": {
         "file": "0017_20260123.pdf",
@@ -21544,7 +21544,7 @@
       "shisaiIppan": 67600,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "35",
       "locator": {
         "file": "0017_20260123.pdf",
@@ -21598,7 +21598,7 @@
       "shisaiIppan": 46457,
       "prevAmount": 15650,
       "prevShisaiIppan": 12300,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "38",
       "locator": {
         "file": "0017_20260123.pdf",
@@ -21634,7 +21634,7 @@
       "shisaiIppan": 96867,
       "prevAmount": 16009,
       "prevShisaiIppan": 16009,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "40",
       "locator": {
         "file": "0017_20260123.pdf",
@@ -22066,7 +22066,7 @@
       "shisaiIppan": 105632,
       "prevAmount": 59494,
       "prevShisaiIppan": 42877,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "64",
       "locator": {
         "file": "0017_20260123.pdf",
@@ -22570,7 +22570,7 @@
       "shisaiIppan": 12453,
       "prevAmount": 18670,
       "prevShisaiIppan": 12453,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "27",
       "locator": {
         "file": "0108_20260122.pdf",
@@ -22660,7 +22660,7 @@
       "shisaiIppan": 40000,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "32",
       "locator": {
         "file": "0108_20260122.pdf",
@@ -22678,7 +22678,7 @@
       "shisaiIppan": 3000,
       "prevAmount": 3000,
       "prevShisaiIppan": 3000,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "1",
       "locator": {
         "file": "0108_20260122.pdf",
@@ -22750,7 +22750,7 @@
       "shisaiIppan": 4754,
       "prevAmount": 4775,
       "prevShisaiIppan": 4754,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "5",
       "locator": {
         "file": "0108_20260122.pdf",
@@ -22894,7 +22894,7 @@
       "shisaiIppan": 10000,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "3",
       "locator": {
         "file": "0108_20260122.pdf",
@@ -22966,7 +22966,7 @@
       "shisaiIppan": 2184550,
       "prevAmount": 2294221,
       "prevShisaiIppan": 1949100,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "4",
       "locator": {
         "file": "0108_20260122.pdf",
@@ -23020,7 +23020,7 @@
       "shisaiIppan": 834543,
       "prevAmount": 1430854,
       "prevShisaiIppan": 861857,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "1",
       "locator": {
         "file": "0108_20260122.pdf",
@@ -23146,7 +23146,7 @@
       "shisaiIppan": 8940,
       "prevAmount": 22888,
       "prevShisaiIppan": -6060,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "7",
       "locator": {
         "file": "0108_20260122.pdf",
@@ -23164,7 +23164,7 @@
       "shisaiIppan": 173659,
       "prevAmount": 133226,
       "prevShisaiIppan": 80557,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "8",
       "locator": {
         "file": "0108_20260122.pdf",
@@ -23272,7 +23272,7 @@
       "shisaiIppan": 125005,
       "prevAmount": 123254,
       "prevShisaiIppan": 89157,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "6",
       "locator": {
         "file": "2026_01_12.pdf",
@@ -23326,7 +23326,7 @@
       "shisaiIppan": 550000,
       "prevAmount": 260731,
       "prevShisaiIppan": 260731,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "9",
       "locator": {
         "file": "2026_01_12.pdf",
@@ -23560,7 +23560,7 @@
       "shisaiIppan": 79300,
       "prevAmount": 108300,
       "prevShisaiIppan": 108300,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "13",
       "locator": {
         "file": "2026_01_12.pdf",
@@ -23668,7 +23668,7 @@
       "shisaiIppan": 1255000,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "5",
       "locator": {
         "file": "2026_01_12.pdf",
@@ -23686,7 +23686,7 @@
       "shisaiIppan": 23000,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "6",
       "locator": {
         "file": "2026_01_12.pdf",
@@ -23776,7 +23776,7 @@
       "shisaiIppan": 325260,
       "prevAmount": 307100,
       "prevShisaiIppan": 176375,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "11",
       "locator": {
         "file": "2026_01_12.pdf",
@@ -23956,7 +23956,7 @@
       "shisaiIppan": 324455,
       "prevAmount": 721108,
       "prevShisaiIppan": 393703,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "21",
       "locator": {
         "file": "2026_01_12.pdf",
@@ -23992,7 +23992,7 @@
       "shisaiIppan": 33339,
       "prevAmount": 31436,
       "prevShisaiIppan": 24242,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "23",
       "locator": {
         "file": "2026_01_12.pdf",
@@ -24550,7 +24550,7 @@
       "shisaiIppan": 200000,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "5",
       "locator": {
         "file": "0029_20260204.pdf",
@@ -25054,7 +25054,7 @@
       "shisaiIppan": 85000,
       "prevAmount": 14470,
       "prevShisaiIppan": 13870,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "19",
       "locator": {
         "file": "0029_20260204.pdf",
@@ -25954,7 +25954,7 @@
       "shisaiIppan": 8000,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "19",
       "locator": {
         "file": "0073_20260127.pdf",
@@ -26566,7 +26566,7 @@
       "shisaiIppan": 162000,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "13",
       "locator": {
         "file": "0073_20260127.pdf",
@@ -26584,7 +26584,7 @@
       "shisaiIppan": 694308,
       "prevAmount": 561000,
       "prevShisaiIppan": 437690,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "1",
       "locator": {
         "file": "0073_20260127.pdf",
@@ -26692,7 +26692,7 @@
       "shisaiIppan": 6000,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "7",
       "locator": {
         "file": "0073_20260127.pdf",
@@ -26710,7 +26710,7 @@
       "shisaiIppan": 225000,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "8",
       "locator": {
         "file": "0073_20260127.pdf",
@@ -27250,7 +27250,7 @@
       "shisaiIppan": 99136,
       "prevAmount": 114767,
       "prevShisaiIppan": 114767,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "8",
       "locator": {
         "file": "0016_20260122.pdf",
@@ -27286,7 +27286,7 @@
       "shisaiIppan": 868753,
       "prevAmount": 928784,
       "prevShisaiIppan": 926282,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "12",
       "locator": {
         "file": "0016_20260122.pdf",
@@ -27304,7 +27304,7 @@
       "shisaiIppan": 150405,
       "prevAmount": 160192,
       "prevShisaiIppan": 129216,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "14",
       "locator": {
         "file": "0016_20260122.pdf",
@@ -27430,7 +27430,7 @@
       "shisaiIppan": 2062043,
       "prevAmount": 2414648,
       "prevShisaiIppan": 2099204,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "1",
       "locator": {
         "file": "0016_20260122.pdf",
@@ -27484,7 +27484,7 @@
       "shisaiIppan": 326740,
       "prevAmount": 224165,
       "prevShisaiIppan": 224165,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "4",
       "locator": {
         "file": "0016_20260122.pdf",
@@ -27502,7 +27502,7 @@
       "shisaiIppan": 42061,
       "prevAmount": 1938906,
       "prevShisaiIppan": 289590,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "5",
       "locator": {
         "file": "0016_20260122.pdf",
@@ -27826,7 +27826,7 @@
       "shisaiIppan": 80594,
       "prevAmount": 66530,
       "prevShisaiIppan": 66203,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "12",
       "locator": {
         "file": "0212_20260126.pdf",
@@ -27862,7 +27862,7 @@
       "shisaiIppan": 127223,
       "prevAmount": 112593,
       "prevShisaiIppan": 112248,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "15",
       "locator": {
         "file": "0212_20260126.pdf",
@@ -27898,7 +27898,7 @@
       "shisaiIppan": 94483,
       "prevAmount": 95072,
       "prevShisaiIppan": 90366,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "18",
       "locator": {
         "file": "0212_20260126.pdf",
@@ -27916,7 +27916,7 @@
       "shisaiIppan": 41682,
       "prevAmount": 43590,
       "prevShisaiIppan": 38989,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "20",
       "locator": {
         "file": "0212_20260126.pdf",
@@ -27934,7 +27934,7 @@
       "shisaiIppan": 70102,
       "prevAmount": 72460,
       "prevShisaiIppan": 67939,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "21",
       "locator": {
         "file": "0212_20260126.pdf",
@@ -27952,7 +27952,7 @@
       "shisaiIppan": 66162,
       "prevAmount": 68658,
       "prevShisaiIppan": 64096,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "23",
       "locator": {
         "file": "0212_20260126.pdf",
@@ -28042,7 +28042,7 @@
       "shisaiIppan": 59548,
       "prevAmount": 29650,
       "prevShisaiIppan": 29650,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "30",
       "locator": {
         "file": "0212_20260126.pdf",
@@ -28060,7 +28060,7 @@
       "shisaiIppan": 1060225,
       "prevAmount": 1397091,
       "prevShisaiIppan": 1071690,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "31",
       "locator": {
         "file": "0212_20260126.pdf",
@@ -28114,7 +28114,7 @@
       "shisaiIppan": 14835,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "36",
       "locator": {
         "file": "0212_20260126.pdf",
@@ -28168,7 +28168,7 @@
       "shisaiIppan": 8067115,
       "prevAmount": 8193900,
       "prevShisaiIppan": 7747601,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "3",
       "locator": {
         "file": "0213_20260126.pdf",
@@ -28222,7 +28222,7 @@
       "shisaiIppan": 384232,
       "prevAmount": 287205,
       "prevShisaiIppan": 220785,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "3",
       "locator": {
         "file": "0214_20260126.pdf",
@@ -28240,7 +28240,7 @@
       "shisaiIppan": 235862,
       "prevAmount": 320883,
       "prevShisaiIppan": 214625,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "5",
       "locator": {
         "file": "0214_20260126.pdf",
@@ -28492,7 +28492,7 @@
       "shisaiIppan": 13286,
       "prevAmount": 16603,
       "prevShisaiIppan": 11069,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "23",
       "locator": {
         "file": "0214_20260126.pdf",
@@ -28510,7 +28510,7 @@
       "shisaiIppan": 716248,
       "prevAmount": 635673,
       "prevShisaiIppan": 635673,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "24",
       "locator": {
         "file": "0214_20260126.pdf",
@@ -28582,7 +28582,7 @@
       "shisaiIppan": 41059,
       "prevAmount": 48075,
       "prevShisaiIppan": 39852,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "30",
       "locator": {
         "file": "0214_20260126.pdf",
@@ -28708,7 +28708,7 @@
       "shisaiIppan": 104191,
       "prevAmount": 1099,
       "prevShisaiIppan": 1099,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "41",
       "locator": {
         "file": "0214_20260126.pdf",
@@ -28816,7 +28816,7 @@
       "shisaiIppan": 79199,
       "prevAmount": 65826,
       "prevShisaiIppan": 65804,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "49",
       "locator": {
         "file": "0214_20260126.pdf",
@@ -28978,7 +28978,7 @@
       "shisaiIppan": 1922348,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "59",
       "locator": {
         "file": "0214_20260126.pdf",
@@ -28996,7 +28996,7 @@
       "shisaiIppan": 875697,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "61",
       "locator": {
         "file": "0214_20260126.pdf",
@@ -29014,7 +29014,7 @@
       "shisaiIppan": 10000,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "62",
       "locator": {
         "file": "0214_20260126.pdf",
@@ -29086,7 +29086,7 @@
       "shisaiIppan": 82378,
       "prevAmount": 60125,
       "prevShisaiIppan": 57468,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "1",
       "locator": {
         "file": "0215_20260126.pdf",
@@ -29122,7 +29122,7 @@
       "shisaiIppan": 7800,
       "prevAmount": 4011,
       "prevShisaiIppan": 4011,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "5",
       "locator": {
         "file": "0215_20260126.pdf",
@@ -29140,7 +29140,7 @@
       "shisaiIppan": 2944,
       "prevAmount": 3548,
       "prevShisaiIppan": 3498,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "7",
       "locator": {
         "file": "0215_20260126.pdf",
@@ -29248,7 +29248,7 @@
       "shisaiIppan": 204691,
       "prevAmount": 267871,
       "prevShisaiIppan": 194363,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "7",
       "locator": {
         "file": "0239_20260204.pdf",
@@ -29338,7 +29338,7 @@
       "shisaiIppan": 16033,
       "prevAmount": 8927,
       "prevShisaiIppan": 8927,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "14",
       "locator": {
         "file": "0239_20260204.pdf",
@@ -29392,7 +29392,7 @@
       "shisaiIppan": 30337,
       "prevAmount": 28667,
       "prevShisaiIppan": 28667,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "19",
       "locator": {
         "file": "0239_20260204.pdf",
@@ -29554,7 +29554,7 @@
       "shisaiIppan": 775863,
       "prevAmount": 1088776,
       "prevShisaiIppan": 781022,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "4",
       "locator": {
         "file": "0217_20260126.pdf",
@@ -29608,7 +29608,7 @@
       "shisaiIppan": 1419224,
       "prevAmount": 1263591,
       "prevShisaiIppan": 1257261,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "2",
       "locator": {
         "file": "0218_20260126.pdf",
@@ -29770,7 +29770,7 @@
       "shisaiIppan": 1229830,
       "prevAmount": 1074797,
       "prevShisaiIppan": 1074797,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "14",
       "locator": {
         "file": "0218_20260126.pdf",
@@ -29914,7 +29914,7 @@
       "shisaiIppan": 559426,
       "prevAmount": 502376,
       "prevShisaiIppan": 499917,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "2",
       "locator": {
         "file": "0220_20260126.pdf",
@@ -30094,7 +30094,7 @@
       "shisaiIppan": 555636,
       "prevAmount": 489030,
       "prevShisaiIppan": 489030,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "15",
       "locator": {
         "file": "0220_20260126.pdf",
@@ -30220,7 +30220,7 @@
       "shisaiIppan": 93180,
       "prevAmount": 67787,
       "prevShisaiIppan": 67586,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "2",
       "locator": {
         "file": "0222_20260126.pdf",
@@ -30382,7 +30382,7 @@
       "shisaiIppan": 58152,
       "prevAmount": 56356,
       "prevShisaiIppan": 56356,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "14",
       "locator": {
         "file": "0222_20260126.pdf",
@@ -30598,7 +30598,7 @@
       "shisaiIppan": 1080751,
       "prevAmount": 1077808,
       "prevShisaiIppan": 1040019,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "10",
       "locator": {
         "file": "0224_20260126.pdf",
@@ -30922,7 +30922,7 @@
       "shisaiIppan": 14249,
       "prevAmount": 12769,
       "prevShisaiIppan": 12352,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "12",
       "locator": {
         "file": "0226_20260126.pdf",
@@ -31030,7 +31030,7 @@
       "shisaiIppan": 999038,
       "prevAmount": 865328,
       "prevShisaiIppan": 864474,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "1",
       "locator": {
         "file": "0227_20260126.pdf",
@@ -31048,7 +31048,7 @@
       "shisaiIppan": 90435,
       "prevAmount": 91569,
       "prevShisaiIppan": 91478,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "3",
       "locator": {
         "file": "0227_20260126.pdf",
@@ -31120,7 +31120,7 @@
       "shisaiIppan": 21950,
       "prevAmount": 20769,
       "prevShisaiIppan": 20645,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "8",
       "locator": {
         "file": "0227_20260126.pdf",
@@ -31138,7 +31138,7 @@
       "shisaiIppan": 24983,
       "prevAmount": 26035,
       "prevShisaiIppan": 24983,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "9",
       "locator": {
         "file": "0227_20260126.pdf",
@@ -31210,7 +31210,7 @@
       "shisaiIppan": 392748,
       "prevAmount": 385085,
       "prevShisaiIppan": 384120,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "4",
       "locator": {
         "file": "0228_20260126.pdf",
@@ -31318,7 +31318,7 @@
       "shisaiIppan": 2709066,
       "prevAmount": 460874,
       "prevShisaiIppan": 460874,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "12",
       "locator": {
         "file": "0228_20260126.pdf",
@@ -31426,7 +31426,7 @@
       "shisaiIppan": 95961,
       "prevAmount": 84081,
       "prevShisaiIppan": 84081,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "7",
       "locator": {
         "file": "0229_20260126.pdf",
@@ -31552,7 +31552,7 @@
       "shisaiIppan": 9854,
       "prevAmount": 5166,
       "prevShisaiIppan": 5166,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "15",
       "locator": {
         "file": "0229_20260126.pdf",
@@ -31660,7 +31660,7 @@
       "shisaiIppan": 4205,
       "prevAmount": 1800,
       "prevShisaiIppan": 1800,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "23",
       "locator": {
         "file": "0229_20260126.pdf",
@@ -31768,7 +31768,7 @@
       "shisaiIppan": 347230,
       "prevAmount": 378873,
       "prevShisaiIppan": 294920,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "7",
       "locator": {
         "file": "0230_20260126.pdf",
@@ -31930,7 +31930,7 @@
       "shisaiIppan": 7412540,
       "prevAmount": 6952914,
       "prevShisaiIppan": 6952914,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "11",
       "locator": {
         "file": "0231_20260126.pdf",
@@ -31966,7 +31966,7 @@
       "shisaiIppan": 101055,
       "prevAmount": 93784,
       "prevShisaiIppan": 93662,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "14",
       "locator": {
         "file": "0231_20260126.pdf",
@@ -32002,7 +32002,7 @@
       "shisaiIppan": 9093100,
       "prevAmount": 6948409,
       "prevShisaiIppan": 6403352,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "17",
       "locator": {
         "file": "0231_20260126.pdf",
@@ -32344,7 +32344,7 @@
       "shisaiIppan": 1548510,
       "prevAmount": 2241592,
       "prevShisaiIppan": 1639821,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "3",
       "locator": {
         "file": "0240_20260209.pdf",
@@ -32650,7 +32650,7 @@
       "shisaiIppan": 2788700,
       "prevAmount": 683600,
       "prevShisaiIppan": 523850,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "21",
       "locator": {
         "file": "0240_20260209.pdf",
@@ -32668,7 +32668,7 @@
       "shisaiIppan": 377024,
       "prevAmount": 39701,
       "prevShisaiIppan": 39701,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "22",
       "locator": {
         "file": "0240_20260209.pdf",
@@ -32704,7 +32704,7 @@
       "shisaiIppan": 950100,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "24",
       "locator": {
         "file": "0240_20260209.pdf",
@@ -32992,7 +32992,7 @@
       "shisaiIppan": 54157,
       "prevAmount": 52095,
       "prevShisaiIppan": 52093,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "5",
       "locator": {
         "file": "jinji__0003_20260126.pdf",
@@ -33075,7 +33075,7 @@
       "accountName": "一般会計",
       "kanNo": "2",
       "koNo": "13",
-      "mokuNo": "1・2",
+      "mokuNo": "1",
       "bureau": "監査事務局",
       "name": "職員人件費",
       "amount": 445269,

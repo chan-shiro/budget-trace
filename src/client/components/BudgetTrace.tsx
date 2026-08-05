@@ -518,6 +518,11 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
       : () => {},
   });
   // budget 階層の「主な事業一覧」（款のない和泉も含め上位を一覧。full は款ドリル/テーマで見せる）
+  // 主な事業の出典（款別と別資料のことがある）。事業の refLabel が資料名を含むときだけ使う
+  const dashProjRef = (muniBudget?.projects ?? [])[0];
+  const dashProjSrcName = (dashProjRef?.refLabel ?? "").replace(/\s*p\.\d+$/, "");
+  const dashProjSrcUrl =
+    dashProjSrcName.length > 8 && dashProjRef?.refLocalUrl ? dashProjRef.refLocalUrl : "";
   const budgetProjectRows = isBudget
     ? [...projectsForDisplay].sort((a, b) => b.amountOku - a.amountOku).slice(0, 20).map(toProjRow)
     : [];
@@ -1461,9 +1466,16 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
     budgetProjectGroups,
     hasBudgetProjectGroups: budgetProjectGroups.length > 0,
     budgetProjectsCountLabel: isBudget ? `全${projectsForDisplay.length}事業` : "",
-    budgetProjectsSourceLabel: isBudget ? `出典：${muniBudget!.sourceTitle}` : "",
-    budgetProjectsSourceUrl: isBudget ? evHref(muniBudget!.sourceLocalUrl) : "",
-    budgetProjectsSourceAction: isBudget ? evAction(muniBudget!.sourceLocalUrl) : "",
+    // ⚠ **主な事業が款別と別の資料から来る自治体がある**（#164・横浜の事業計画書）。
+    //   款別の資料名を出すと**データと出典が食い違う**（レビューで発覚。ドリルだけ直して
+    //   ダッシュボードが直っていなかった）。事業の refLabel が資料名を含むならそちらを出す。
+    budgetProjectsSourceLabel: isBudget ? `出典：${dashProjSrcName || muniBudget!.sourceTitle}` : "",
+    budgetProjectsSourceUrl: isBudget
+      ? evHref(dashProjSrcUrl || muniBudget!.sourceLocalUrl)
+      : "",
+    budgetProjectsSourceAction: isBudget
+      ? evAction(dashProjSrcUrl || muniBudget!.sourceLocalUrl)
+      : "",
     budgetProjectsSourceOpen: isBudget
       ? () => openViewer({
           url: muniBudget!.sourceLocalUrl, title: muniBudget!.sourceTitle,
@@ -1664,7 +1676,11 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
       // ⚠ **主な事業が款別と別の資料から来る自治体がある**（#164・横浜の事業計画書）。
       //   出典は款別の資料名ではなく**その事業の refLabel が指す資料**を出す
       const projTitle = isBudget ? muniBudget!.sourceTitle : KOFU_PROJECTS_SOURCE.title;
-      const projSrcLabel = rows[0]?.refLabel?.replace(/\s*p\.\d+$/, "") ?? projTitle;
+      // ⚠ refLabel が資料名を含まない自治体がある（甲府は `予算資料 p.14` という汎用文字列）。
+      //   そのまま使うと**従来の資料名入りラベルから劣化する**（レビューで発覚）。
+      //   → **款別と違う資料から来ているときだけ**差し替える
+      const projRefName = rows[0]?.refLabel?.replace(/\s*p\.\d+$/, "") ?? "";
+      const projSrcLabel = projRefName.length > 8 ? projRefName : projTitle;
       return {
         hasRealProjects: rows.length > 0,
         realProjects: rows.map((p) => ({
@@ -1693,15 +1709,30 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
               )
             : "",
         realProjectsSourceUrl: evHref(
-          rows[0]?.refLocalUrl ?? (isBudget ? muniBudget!.sourceLocalUrl : KOFU_PROJECTS_SOURCE.localUrl),
+          projRefName.length > 8 && rows[0]?.refLocalUrl
+            ? rows[0].refLocalUrl
+            : isBudget
+              ? muniBudget!.sourceLocalUrl
+              : KOFU_PROJECTS_SOURCE.localUrl,
         ),
         realProjectsSourceAction: evAction(
-          rows[0]?.refLocalUrl ?? (isBudget ? muniBudget!.sourceLocalUrl : KOFU_PROJECTS_SOURCE.localUrl),
+          projRefName.length > 8 && rows[0]?.refLocalUrl
+            ? rows[0].refLocalUrl
+            : isBudget
+              ? muniBudget!.sourceLocalUrl
+              : KOFU_PROJECTS_SOURCE.localUrl,
         ),
         realProjectsSourceLabel: `出典：${projSrcLabel}`,
+        // ⚠ **文言と開くものを一致させる**（data.ts の原則）。ラベルを事業の資料名にしたのに
+        //   開くのが款別のままだった（レビューで発覚）
         realProjectsSourceOpen: () => openViewer({
-          url: isBudget ? muniBudget!.sourceLocalUrl : KOFU_PROJECTS_SOURCE.localUrl,
-          title: projTitle, sub: "主な事業",
+          url:
+            projRefName.length > 8 && rows[0]?.refLocalUrl
+              ? rows[0].refLocalUrl
+              : isBudget
+                ? muniBudget!.sourceLocalUrl
+                : KOFU_PROJECTS_SOURCE.localUrl,
+          title: projSrcLabel, sub: "主な事業",
           originUrl: isBudget ? muniBudget!.originUrl : KOFU_PROJECTS_SOURCE.originUrl,
           archiveUrl: isBudget ? muniBudget!.sourceUrl : KOFU_PROJECTS_SOURCE.url,
         }),

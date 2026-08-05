@@ -2331,7 +2331,9 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
         // ⚠ 款名が引けない事業は**款なし**にする（推測で当てない）
         kan: kanName.get(String(Number(x.kanNo))) ?? null,
         shisaku: "",
-        kubun: x.kubun === "新規・拡充" ? ("拡充" as const) : null,
+        // ⚠ **一律「拡充」にしない**（レビューで発覚）。目次の丸印は新規と拡充を区別せず、
+        //   前年度0の事業まで拡充バッジが付いていた。詳細シートで具体化できたものだけ使う
+        kubun: x.kubun === "新規" ? ("新規" as const) : x.kubun === "拡充" ? ("拡充" as const) : null,
         prevAmount: x.prevAmount ?? undefined,
         description: "",
         locator: x.locator,

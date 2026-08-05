@@ -150,6 +150,26 @@ function amountsOf(row: W[], pageColRight: number): { vals: (number | null)[]; u
   return { vals, used };
 }
 
+/**
+ * 詳細シートの `事業名称`。⚠ **行をまたいで折返す**（実測 0056 p.55 は
+ * `事業名称 一般会計 第三セクター等改革推進債公債費 公債` / 次行 `諸費`）。
+ * 1行しか読まないと名前が切れて**目次との照合が外れ、目が付かない**（18款2項3目 の 433 が
+ * 目に割り当たらなかった）。**次の行が短くラベルでなければ続きとみなす**。
+ */
+function detailName(h: string): string {
+  const lines = h.split("\n");
+  const i = lines.findIndex((l) => /事業名称\s+\S/.test(l));
+  if (i < 0) return "";
+  let nm = /事業名称\s+(.+?)\s*$/.exec(lines[i]!)?.[1] ?? "";
+  for (let j = i + 1; j < Math.min(i + 3, lines.length); j++) {
+    const l = lines[j]!.trim();
+    // 続きの行は**短く・ラベルを含まない**。ラベル行に当たったら止める
+    if (!l || l.length > 24 || /（単位|区\s*分|金\s*額|事業概要|歳出|予算|決算|財\s*源/.test(l)) break;
+    nm += l;
+  }
+  return nm.replace(/[\s　]+/g, "");
+}
+
 interface Head {
   bureau: string;
   kanNo: string;
@@ -601,21 +621,38 @@ export function parseYokohamaJigyouKeikaku(
   {
     /** 事業名 → 目。⚠ **一意でない名前は `null`**（衝突を使うと正しい目まで壊す） */
     const mokuOf = new Map<string, { ko: string; moku: string } | null>();
+    /**
+     * 事業名 → 新規/拡充。⚠ **目次の丸印は新規と拡充を区別しない**ので、
+     * 一律「拡充」と書くと**原典より強い主張**になる（前年度0の事業まで拡充になる）。
+     * 詳細シートには `■新規` / `■拡充` のチェックがあるのでそこから引く。
+     */
+    const kubunOf = new Map<string, string | null>();
     for (const f of files) {
       for (const text of layoutPages(f.path)) {
         const h = han(text);
         const m = /歳出予算科目\s*(\S+?)\s+(\d+)\s*款\s*(\d+)\s*項\s*(\d+)\s*目/.exec(h);
         if (!m) continue;
-        const nm = (/事業名称\s+(.+?)\s*$/m.exec(h)?.[1] ?? "").replace(/[\s　]+/g, "");
+        const nm = detailName(h);
         if (!nm) continue;
         // ⚠⚠ **同じ事業名が複数の目にある**（`職員人件費` は款2 だけで多数）。
         //   衝突したまま使うと**正しく付いていた目まで書き換えて壊す**（実測。全件上書きに
         //   したら差のある目が 10 → 21 に増えた）。**款の中で一意な名前だけ**を使う。
-        const key = `${m[1]}\u0001${Number(m[2])}\u0001${nm}`;
         const val = { ko: String(Number(m[3])), moku: String(Number(m[4])) };
-        const cur = mokuOf.get(key);
-        if (cur === undefined) mokuOf.set(key, val);
-        else if (cur && (cur.ko !== val.ko || cur.moku !== val.moku)) mokuOf.set(key, null);
+        // ⚠ **款だけの鍵では `職員人件費` のような名前が衝突する**。項まで含めた鍵も作り、
+        //   引くときは**具体的な方を優先**する（監査の 2款13項 は項まで入れれば一意になり、
+        //   原典が `1・2目` と合併して書いている目を事業ごとに正しく分けられる）。
+        const kb = /■\s*新規/.test(h) ? "新規" : /■\s*拡充/.test(h) ? "拡充" : null;
+        for (const key of [
+          `${m[1]}\u0001${Number(m[2])}\u0001${nm}`,
+          `${m[1]}\u0001${Number(m[2])}\u0001${Number(m[3])}\u0001${nm}`,
+        ]) {
+          const cur = mokuOf.get(key);
+          if (cur === undefined) mokuOf.set(key, val);
+          else if (cur && (cur.ko !== val.ko || cur.moku !== val.moku)) mokuOf.set(key, null);
+          const ck = kubunOf.get(key);
+          if (ck === undefined) kubunOf.set(key, kb);
+          else if (ck !== kb) kubunOf.set(key, null);
+        }
       }
     }
     // ⚠⚠ **見出しの目より詳細シートの目を優先する**（実測）。1つの目次ページに
@@ -625,7 +662,17 @@ export function parseYokohamaJigyouKeikaku(
     //   詳細シートは**事業ごとに**科目を明記しているので、名前が一致したらそちらを採る。
     let filled = 0;
     for (const x of facts) {
-      const hit = mokuOf.get(`${x.accountName}\u0001${Number(x.kanNo)}\u0001${x.name}`);
+      // 項まで一致する鍵を優先し、無ければ款だけの鍵にフォールバック
+      const hit =
+        (x.koNo != null
+          ? mokuOf.get(`${x.accountName}\u0001${Number(x.kanNo)}\u0001${Number(x.koNo)}\u0001${x.name}`)
+          : undefined) ?? mokuOf.get(`${x.accountName}\u0001${Number(x.kanNo)}\u0001${x.name}`);
+      const kb =
+        (x.koNo != null
+          ? kubunOf.get(`${x.accountName}\u0001${Number(x.kanNo)}\u0001${Number(x.koNo)}\u0001${x.name}`)
+          : undefined) ?? kubunOf.get(`${x.accountName}\u0001${Number(x.kanNo)}\u0001${x.name}`);
+      // 目次の丸印がある事業だけ、詳細シートの新規/拡充で具体化する
+      if (x.kubun && kb) x.kubun = kb;
       if (!hit) continue;
       if (x.koNo === hit.ko && x.mokuNo === hit.moku) continue;
       x.koNo = hit.ko;
@@ -663,8 +710,7 @@ export function parseYokohamaJigyouKeikaku(
       if (isCovered(acc!, Number(kanNo), Number(koNo), Number(mokuNo))) continue;
       if (acc !== "一般会計") continue;
       // ⚠ **事業名称は折返す**（実測 1,529シート中41件が2行）。ラベル行の続きも拾う
-      const nameM = /事業名称\s+(.+?)\s*$/m.exec(h);
-      const name = (nameM?.[1] ?? "").replace(/[\s　]+/g, "");
+      const name = detailName(h);
       if (!name) continue;
       const amt = (label: string): number | null => {
         const r = new RegExp(`^\\s*${label}\\s+([\\d,]+)`, "m").exec(h);
