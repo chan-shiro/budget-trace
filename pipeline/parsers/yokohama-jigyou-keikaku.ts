@@ -126,12 +126,19 @@ function rowsOf(ws: W[], tol = 3): W[][] {
  * ⚠ 負号 `△`/`▲` は**別トークン**なので直前を見る。
  * **6個でないときは throw せずそのまま返す** — 判断は呼び出し側（名前があるかで意味が変わる）。
  */
-function amountsOf(row: W[], pageColRight: number): { vals: number[]; used: Set<W> } {
-  const vals: number[] = [];
+function amountsOf(row: W[], pageColRight: number): { vals: (number | null)[]; used: Set<W> } {
+  const vals: (number | null)[] = [];
   const used = new Set<W>();
   for (let i = 0; i < row.length; i++) {
     const w = row[i]!;
     if (w.x1 <= pageColRight) continue; // 計画書頁の列だけ除く
+    // ⚠ **`-`（該当なし）も1つの値** — 財政局 2款9項2目「資産活用推進基金積立金」は
+    //   一財+市債の列が `-` で、数えないと金額が4個になって**事業ごと落ちる**（差 7,567）。
+    if (/^[-‐－—―−]$/.test(w.t)) {
+      vals.push(null);
+      used.add(w);
+      continue;
+    }
     const v = num(w.t);
     if (v == null) continue;
     const prev = row[i - 1];
@@ -208,7 +215,8 @@ export function parseYokohamaJigyouKeikaku(
       if (tot[0] != null && sum !== tot[0]) {
         throw new Error(
           `${f.filename} p.${page} ${label}: Σ事業費 ${sum.toLocaleString()} が「計」` +
-            `${tot[0].toLocaleString()} と一致しません（差 ${(sum - tot[0]).toLocaleString()}・${use.length}事業）`,
+            `${tot[0].toLocaleString()} と一致しません（差 ${(sum - tot[0]).toLocaleString()}・${use.length}事業）` +
+            `\n  取れた頁: ${use.map((x) => x.page ?? "?").join(",")}`,
         );
       }
       // ⚠⚠ **前年度は等号で張れない**（#192 で横浜の説明書に対して得たのと同じ結論）。
@@ -257,9 +265,12 @@ export function parseYokohamaJigyouKeikaku(
 
       // ⚠⚠ **列の x はファイルごとに違う**ので、**見出し行から毎ページ導出する**
       //   （固定値にしたら別の局のファイルで名前も金額も取りこぼした＝実測）。
-      const hdr = rowsOf(ws).find(
-        (r) => r.filter((w) => w.t === "事業費").length >= 2 && r.filter((w) => w.t === "市債+一財").length >= 2,
-      );
+      // ⚠⚠ **列見出しの語は局によって違う** — `市債+一財` と **`一財+市債`（逆順）** の
+      //   両方が使われている（実測: こども青少年局・港湾局・財政局は逆順で、
+      //   `市債+一財` だけを見ていたため**3ファイル・款6/15/18/20 がまるごと0件だった**）。
+      //   ⚠ こども青少年局と財政局は `事業費` の見出しも別の書き方なので、**財源列の語だけを鍵にする**。
+      const isMoneyHdr = (t: string) => /^(市債\+一財|一財\+市債)$/.test(t);
+      const hdr = rowsOf(ws).find((r) => r.filter((w) => isMoneyHdr(w.t)).length >= 2);
       // ⚠⚠ **目次の継続ページは「列見出しがあるとき」と「無いとき」の両方がある**（実測）:
       //   健康福祉局 p.80 は見出しあり、p.198 は見出しも `（単位：千円）` も `[局名]` も無く
       //   「計」の行だけ。**見出し必須にすると後者が落ちて、目が閉じないまま次の目が始まる**。
@@ -276,7 +287,7 @@ export function parseYokohamaJigyouKeikaku(
           0,
         );
         cols = {
-          numLeft: Math.min(...hdr.filter((w) => /^(事業費|市債\+一財)$/.test(w.t)).map((w) => w.x0)) - 6,
+          numLeft: Math.min(...hdr.filter((w) => /^(事業費|市債\+一財|一財\+市債)$/.test(w.t)).map((w) => w.x0)) - 6,
           // ⚠ **継続ページにはラベルが無い**ので、開始ページの値を引き継ぐ（引き継がないと
           //   フォールバック 90 になり、頁の値 `18` を金額として数えて「7個」で落ちる＝実測 p.198）
           nameLeft: labelRight > 0 ? labelRight + 2 : 90,
@@ -326,8 +337,20 @@ export function parseYokohamaJigyouKeikaku(
         // ⚠ **名前の右端を numLeft で切ってはいけない** — 長い事業名は数値列へはみ出す
         //   （`学校特別営繕費（枠的公共）` が丸ごと落ちて「名前がありません」で throw した＝実測）。
         //   → **金額として使わなかったトークン**を名前とする（除外の基準を x から「使ったか」へ）。
+        // ⚠⚠ 名前の窓に入ってはいけないものが2つある（実測）:
+        //   ①**新規・拡充の印 `○`**（右端の列）→ `○中学校給食事業費` になった
+        //   ②**見出しの文字**（`19款１項１目`）→ 1行目の事業で `19款１項１目国民健康保険…` になった。
+        //     行そのものは headY で弾いているが、**名前の窓（±14pt）は見出しへ届く**
+        const nameRight = Math.max(...ws.map((w) => w.x1)) - COL.kubunFromRight;
         const name = ws
-          .filter((w) => !amtTokens.has(w) && num(w.t) === null && Math.abs(w.y - yThis) <= 14)
+          .filter(
+            (w) =>
+              !amtTokens.has(w) &&
+              num(w.t) === null &&
+              w.y > headY &&
+              w.x0 < nameRight &&
+              Math.abs(w.y - yThis) <= 14,
+          )
           .sort((a, b) => a.y - b.y || a.x0 - b.x0)
           .map((w) => w.t)
           .join("")
@@ -366,7 +389,11 @@ export function parseYokohamaJigyouKeikaku(
           closeGroup(amts, p);
           continue;
         }
-        if (/課計$|計.*課$/.test(rowName) || /課計$|計.*課$/.test(flat)) continue; // 課ごとの小計は事業ではない
+        // ⚠⚠ **課の小計の判定を緩くすると正当な事業名を巻き込む** — `計.*課$` は
+        //   `会計年度任用職員雇用経費（港湾管財課）` に当たり、**事業が丸ごと消えた**（差 3,753）。
+        //   小計の原文は `（○○課計）` なので、**括弧を残したまま**判定する
+        //   （折返しで語順が崩れた `計）（福祉保健課` は先頭の `計）` で拾う）。
+        if (/課計/.test(name) || /^計）/.test(name)) continue;
         // ⚠⚠ **枠（グループ）の見出し行がある** — `学校特別営繕費（枠的公共）` は配下の事業の
         //   合計を持つ行で、**そのまま事業として数えると二重計上**になる（実測 +15,313,643）。
         //   見分けは**計画書頁の欄が無いこと**（事業には番号か `-`＝廃止 が必ず入る）。
