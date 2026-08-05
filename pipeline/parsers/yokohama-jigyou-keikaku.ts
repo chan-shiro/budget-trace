@@ -57,9 +57,18 @@ function layoutPages(path: string): string[] {
 const han = (s: string): string =>
   s.replace(/[０-９]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xfee0)).replace(/　/g, " ");
 
+/**
+ * 数字。⚠ **負号は「別トークン」のときと「くっついた1トークン」のときがある**（実測）。
+ * `△ 2`（空白あり）は別トークンだが、`△2`（空白なし）は1トークンで来る。
+ * 後者を数字と認めないと、その行の金額が4個になって**事業ごと落ちる**
+ * （資源循環局 10款1項4目「車両燃料費」331,166 がまるごと消えた）。
+ */
 const num = (s: string): number | null => {
-  const v = s.replace(/[,\s]/g, "");
-  return /^\d+$/.test(v) ? Number(v) : null;
+  // ⚠ **全角数字が混ざる** — 資源循環局 10款1項1目 の7件目は計画書頁が全角の `７` で、
+  //   半角しか見ないと「頁の欄が無い行」＝枠見出しと誤判定して**事業ごと落ちた**（差 3,772）。
+  const v = han(s).replace(/[,\s]/g, "");
+  const m = /^([△▲]?)(\d+)$/.exec(v);
+  return m ? (m[1] ? -Number(m[2]) : Number(m[2])) : null;
 };
 
 /**
@@ -117,8 +126,9 @@ function rowsOf(ws: W[], tol = 3): W[][] {
  * ⚠ 負号 `△`/`▲` は**別トークン**なので直前を見る。
  * **6個でないときは throw せずそのまま返す** — 判断は呼び出し側（名前があるかで意味が変わる）。
  */
-function amountsOf(row: W[], pageColRight: number): (number | null)[] {
+function amountsOf(row: W[], pageColRight: number): { vals: number[]; used: Set<W> } {
   const vals: number[] = [];
+  const used = new Set<W>();
   for (let i = 0; i < row.length; i++) {
     const w = row[i]!;
     if (w.x1 <= pageColRight) continue; // 計画書頁の列だけ除く
@@ -127,8 +137,10 @@ function amountsOf(row: W[], pageColRight: number): (number | null)[] {
     const prev = row[i - 1];
     const neg = prev && /^[△▲]$/.test(prev.t) && w.x0 - prev.x1 < 14;
     vals.push(neg ? -v : v);
+    used.add(w);
+    if (neg && prev) used.add(prev);
   }
-  return vals;
+  return { vals, used };
 }
 
 interface Head {
@@ -141,9 +153,14 @@ interface Head {
 
 /** 目次ページの見出し `[局名] ３款 １項 １目`。項目が無い款（公債費）・会計名つきの型もある */
 function parseHead(text: string): Head | null {
-  const bureau = /\[\s*([^\]]{2,20}?)\s*\]/.exec(text)?.[1]?.replace(/[\s　]+/g, "");
+  // ⚠⚠ **ページ全体から拾ってはいけない** — 会計名の正規表現が事業名を拾って
+  //   `都市計画課会計` `その他会計事務費（会計` のような会計が20種も生まれた（実測）。
+  //   見出しは `[局名] N款N項N目 …（単位：千円）` の**1行**なので、その行だけを見る。
+  const line = han(text).split("\n").find((l) => /\[[^\]]{2,20}\]/.test(l) && /\d+\s*款/.test(l));
+  if (!line) return null;
+  const bureau = /\[\s*([^\]]{2,20}?)\s*\]/.exec(line)?.[1]?.replace(/[\s　]+/g, "");
   if (!bureau) return null;
-  const h = han(text);
+  const h = line;
   const m = /(\d+)\s*款(?:\s*(\d+)\s*項)?(?:\s*([\d・]+)\s*目)?/.exec(h);
   if (!m) return null;
   // ⚠ **目次ページには会計名が無いのが普通**（一般会計）。特別会計は見出しに会計名が出る。
@@ -165,6 +182,8 @@ export function parseYokohamaJigyouKeikaku(
 
     let head: Head | null = null;
     let group: BudgetProjectLine[] = [];
+    /** 計画書頁の欄が空だった行（枠見出しの候補。実在の事業もここに入る） */
+    const noPage = new WeakSet<BudgetProjectLine>();
     /** 列の位置は**目次の開始ページ**で決めて、見出しの無い継続ページへ引き継ぐ */
     let cols: { numLeft: number; nameLeft: number; headY: number } | null = null;
 
@@ -172,18 +191,35 @@ export function parseYokohamaJigyouKeikaku(
     const closeGroup = (tot: (number | null)[], page: number) => {
       if (!head) return;
       const label = `[${head.bureau}] ${head.kanNo}款${head.koNo ?? "-"}項${head.mokuNo ?? "-"}目`;
-      const sum = group.reduce((a, x) => a + x.amount, 0);
-      const sumPrev = group.reduce((a, x) => a + (x.prevAmount ?? 0), 0);
+      let use = group;
+      let sum = use.reduce((a, x) => a + x.amount, 0);
+      // ★ **「計」を権威にして枠見出しを外す** — 超過分とちょうど同じ額の「頁なし行」があれば
+      //   それが枠見出し（配下の合計）。**照合で外れたときだけ落とす**ので、
+      //   実在の事業（職員人件費・委員報酬）を取りこぼさない。
+      if (tot[0] != null && sum > tot[0]) {
+        const over = sum - tot[0];
+        const heading = use.find((x) => noPage.has(x) && x.amount === over);
+        if (heading) {
+          use = use.filter((x) => x !== heading);
+          sum = use.reduce((a, x) => a + x.amount, 0);
+        }
+      }
+      const sumPrev = use.reduce((a, x) => a + (x.prevAmount ?? 0), 0);
       if (tot[0] != null && sum !== tot[0]) {
         throw new Error(
           `${f.filename} p.${page} ${label}: Σ事業費 ${sum.toLocaleString()} が「計」` +
-            `${tot[0].toLocaleString()} と一致しません（差 ${(sum - tot[0]).toLocaleString()}・${group.length}事業）`,
+            `${tot[0].toLocaleString()} と一致しません（差 ${(sum - tot[0]).toLocaleString()}・${use.length}事業）`,
         );
       }
-      if (tot[2] != null && sumPrev !== tot[2]) {
+      // ⚠⚠ **前年度は等号で張れない**（#192 で横浜の説明書に対して得たのと同じ結論）。
+      //   当年度に廃止された事業は**行として印字されない目がある**のに、「計」の前年度には
+      //   その額が残る（実測 教育委員会 17款7項4目 は Σ13,882,567 に対し計 13,990,906＝差 108,339。
+      //   その額のトークンはページ上に1つも無い）。**当年度は全目で厳密に一致する**ので、
+      //   前年度だけ `≦` にする。**超えたら二重計上**なので、そちらは落とす。
+      if (tot[2] != null && sumPrev > tot[2]) {
         throw new Error(
           `${f.filename} p.${page} ${label}: Σ前年度 ${sumPrev.toLocaleString()} が「計」` +
-            `${tot[2].toLocaleString()} と一致しません（差 ${(sumPrev - tot[2]).toLocaleString()}）`,
+            `${tot[2].toLocaleString()} を**超えています**（差 +${(sumPrev - tot[2]).toLocaleString()}）＝二重計上`,
         );
       }
       totals.push({
@@ -196,7 +232,7 @@ export function parseYokohamaJigyouKeikaku(
         prevAmount: tot[2] ?? null,
         locator: { file: f.filename, page },
       });
-      facts.push(...group);
+      facts.push(...use);
       group = [];
     };
 
@@ -254,15 +290,26 @@ export function parseYokohamaJigyouKeikaku(
       const headY = hdr ? cols.headY : 0;
 
       const h = parseHead(text);
+      // ⚠⚠ **継続ページが同じ見出しを繰り返す型がある**（実測 建築局 11款1項1目 は p.1・p.2 とも
+      //   `[建築局] 11 款１項１目 建築行政総務費` を印字し、「計」は p.2 にある）。
+      //   見出しが在るだけで「次の目」とみなすと、**同じ目の途中で throw する**。
+      //   → **見出しが前と変わったときだけ**新しい目とみなす。
+      const isNew =
+        !!h &&
+        (!head ||
+          h.kanNo !== head.kanNo ||
+          h.koNo !== head.koNo ||
+          h.mokuNo !== head.mokuNo ||
+          h.accountName !== head.accountName);
       // ⚠ **新しい目が始まるのに前の目が「計」で閉じていないのは異常**（取りこぼしか、
       //   目の合計を課の小計と取り違えている）。黙って次へ行くと事業が別の目に混ざる
-      if (h && group.length > 0 && head) {
+      if (isNew && group.length > 0 && head) {
         throw new Error(
           `${f.filename} p.${p}: 前の目 [${head.bureau}] ${head.kanNo}款${head.koNo ?? "-"}項${head.mokuNo ?? "-"}目 が` +
             `「計」で閉じないまま次の目が始まりました（${group.length}事業が宙に浮いています）`,
         );
       }
-      if (h) head = h;
+      if (isNew && h) head = h;
       if (!head) continue;
       const hd = head;
       for (const row of rowsOf(joinSplitNumbers(ws))) {
@@ -270,19 +317,17 @@ export function parseYokohamaJigyouKeikaku(
         // ⚠ **見出しより上の行は見ない** — `[医療局] ８款１項１目（単位：千円）` の
         //   款項目の数字を金額として拾ってしまう（実測）
         if (yThis <= headY) continue;
-        const amts = amountsOf(row, nameLeft);
+        const { vals: amts, used: amtTokens } = amountsOf(row, nameLeft);
         if (amts.length === 0) continue; // 金額行でない
         // 事業名は**この金額行と同じ帯**（上下に折返す型があるので ±14pt で拾う）。
         // ⚠ **名前の窓の中の数字を除いてはいけない** — `GREEN×EXPO 2027中小企業出展支援事業` の
         //   `2027` が名前から静かに落ちた（実測）。窓で既に金額と分かれているので除外は不要
         //   （§9c の「文字クラスで広げる」の逆で、**窓があるなら中身を選り好みしない**）
+        // ⚠ **名前の右端を numLeft で切ってはいけない** — 長い事業名は数値列へはみ出す
+        //   （`学校特別営繕費（枠的公共）` が丸ごと落ちて「名前がありません」で throw した＝実測）。
+        //   → **金額として使わなかったトークン**を名前とする（除外の基準を x から「使ったか」へ）。
         const name = ws
-          .filter(
-            (w) =>
-              w.x0 >= nameLeft &&
-              w.x1 <= numLeft &&
-              Math.abs(w.y - yThis) <= 14,
-          )
+          .filter((w) => !amtTokens.has(w) && num(w.t) === null && Math.abs(w.y - yThis) <= 14)
           .sort((a, b) => a.y - b.y || a.x0 - b.x0)
           .map((w) => w.t)
           .join("")
@@ -299,15 +344,42 @@ export function parseYokohamaJigyouKeikaku(
         //   （`（福祉保健課計）`）。小計を目の計と誤認すると**そこでグループを閉じてしまい**、
         //   以降の事業が次のグループに落ちて「Σ 0 が 計 9,524,955 と一致しません」になる（実測）。
         //   ⚠ トークンの並び順は折返しで崩れる（`計）（福祉保健課`）ので、**括弧と空白を落として**判定する。
+        // ⚠⚠ **「計」の判定に名前の窓（±14pt）を使ってはいけない** — 直上の事業名の折返しを
+        //   巻き込んで `〜事業計` になり、**目の合計が事業として扱われてグループが閉じない**
+        //   （実測 教育委員会 0214 は50事業が宙に浮いた）。**行そのもののトークン**で見る。
         const flat = name.replace(/[（）()\s　]/g, "");
-        if (flat === "計") {
+        //   ⚠ ただし**トークン1個で見るのも駄目** — 課の小計 `（福祉保健課計）` にも `計` の
+        //   トークンがあり、目の合計と区別できない。**その行の名前欄の文字だけ**を連結して見る。
+        //   ⚠ **左端も制限しない** — 頁番号の無い行では事業名が頁の列より左から始まる
+        //     （`学校特別営繕費（枠的公共）` は x0=67.6 でラベル右端 71 より左＝実測）。
+        //     頁の列に入るのは数字か `-` だけなので、**数字を除けば左端の制限は要らない**。
+        const rowName = row
+          .filter((w) => !amtTokens.has(w) && num(w.t) === null)
+          .map((w) => w.t)
+          .join("")
+          .replace(/[（）()\s　]/g, "");
+        const isTotalRow = rowName === "計";
+        if (isTotalRow) {
           if (amts.length !== 6) {
             throw new Error(`${f.filename} p.${p}: 目の「計」の金額が ${amts.length} 個です（期待 6）`);
           }
           closeGroup(amts, p);
           continue;
         }
-        if (/課計$|計.*課$/.test(flat)) continue; // 課ごとの小計は事業ではない
+        if (/課計$|計.*課$/.test(rowName) || /課計$|計.*課$/.test(flat)) continue; // 課ごとの小計は事業ではない
+        // ⚠⚠ **枠（グループ）の見出し行がある** — `学校特別営繕費（枠的公共）` は配下の事業の
+        //   合計を持つ行で、**そのまま事業として数えると二重計上**になる（実測 +15,313,643）。
+        //   見分けは**計画書頁の欄が無いこと**（事業には番号か `-`＝廃止 が必ず入る）。
+        const hasPageCell = row.some(
+          (w) => w.x1 <= nameLeft && (num(w.t) !== null || /^[-‐－—―−]$/.test(w.t)),
+        );
+        //   ⚠⚠ **頁の欄が空の行には3種類ある**（実測。見た目では区別できない）:
+        //     ①枠見出し（`学校特別営繕費（枠的公共）`＝配下の事業の合計。**二重計上になる**）
+        //     ②廃止事業（`0 0 10,000 10,000 △10,000 △10,000`＝当年度0・実在の事業）
+        //     ③頁を持たない実在の事業（`職員人件費` `人事委員会委員報酬`）
+        //     金額の形（当年度=前年度・増減0 など）では②③と①を分けられない
+        //     （委員報酬は 13,128 = 13,128・増減0 で枠見出しと同じ形）。
+        //     → **落とさず印だけ付けて、「計」との照合で外す**（下の closeGroup）。
         if (amts.length < 6) continue;
         if (amts.length > 6) {
           throw new Error(
@@ -325,7 +397,7 @@ export function parseYokohamaJigyouKeikaku(
         const marked = ws.some(
           (w) => w.x0 >= pageRight - COL.kubunFromRight && Math.abs(w.y - yThis) <= 8 && /[○〇◎]/.test(w.t),
         );
-        group.push({
+        const line: BudgetProjectLine = {
           accountName: hd.accountName,
           kanNo: hd.kanNo,
           koNo: hd.koNo,
@@ -341,7 +413,9 @@ export function parseYokohamaJigyouKeikaku(
           kubun: marked ? "新規・拡充" : null,
           page: pageCell?.t ?? null,
           locator: { file: f.filename, page: p },
-        });
+        };
+        if (!hasPageCell) noPage.add(line);
+        group.push(line);
       }
     }
     if (group.length > 0) {
