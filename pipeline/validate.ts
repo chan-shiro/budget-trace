@@ -707,41 +707,11 @@ if (doc.docType === "project-report") {
 
 // ---- budget-projects（主な事業だけの独立資料・#164 横浜の事業計画書）------------
 if (doc.docType === "budget-projects") {
-  // ① **Σ事業 = 目の「計」**（原典が印字する）。パーサ側でも張っているが、
-  //    parsed を直接いじられた場合に備えてここでも見る
-  const byMoku = new Map<string, number>();
-  for (const f of doc.facts) {
-    // ⚠ 詳細シートから補った事業は目次に「計」が無いので対象外。
-    //   **`page` の有無では区別できない**（目次にも頁を持たない行がある＝職員人件費・委員報酬）
-    if (f.fromDetail) continue;
-    // ⚠ 同じ目が複数ファイルに分かれるので、**ファイルも鍵に含める**。
-    // ⚠⚠ **目次が款どまりの款では、事業の項・目は後から詳細シートで埋めている**ので、
-    //   鍵に項・目を使うと「計」と噛み合わない（款18 公債費で実測）。
-    //   → **「計」が持っている粒度に合わせて**集計する（下で款キーも作る）。
-    const kMoku = [f.locator.file, f.accountName, f.kanNo, f.koNo ?? "", f.mokuNo ?? ""].join("/");
-    byMoku.set(kMoku, (byMoku.get(kMoku) ?? 0) + f.amount);
-    const kKan = [f.locator.file, f.accountName, f.kanNo, "", ""].join("/");
-    if (kKan !== kMoku) byMoku.set(kKan, (byMoku.get(kKan) ?? 0) + f.amount);
-  }
-  // ⚠ **同じファイルの同じ目に「計」が2つ出ることがある**（課ごとに目次が分かれる。
-  //   実測 都市整備局 19款1項10目 は 3,330,418 と 126,468 の2本）。合算して比べる
-  const totalByMoku = new Map<string, { amount: number; t: (typeof doc.totals)[number] }>();
-  for (const t of doc.totals) {
-    const k = [t.locator.file, t.accountName, t.kanNo, t.koNo ?? "", t.mokuNo ?? ""].join("/");
-    const e = totalByMoku.get(k);
-    if (e) e.amount += t.amount;
-    else totalByMoku.set(k, { amount: t.amount, t });
-  }
-  for (const [k, { amount, t }] of totalByMoku) {
-    const got = byMoku.get(k);
-    if (got == null) continue;
-    if (got !== amount) {
-      issues.push({
-        level: "error",
-        message: `${t.bureau} ${t.kanNo}款${t.koNo ?? "-"}項${t.mokuNo ?? "-"}目: Σ事業 ${got.toLocaleString()} が「計」${amount.toLocaleString()} と一致しません`,
-      });
-    }
-  }
+  // ⚠ **「Σ事業 = 目の「計」」はパーサ側が持つ**（validate では張れない）。
+  //   パーサは目次のグループを閉じるときに厳密照合しているが、その**後で**
+  //   「目次が款どまり」「1つの目次に複数の目が混在」を詳細シートで補正するため、
+  //   parsed に残る項・目は目次のグループとは一致しない。ここで張り直すと、
+  //   **正しく補正した結果を誤りとして落とす**（実測でそうなった）。
   // ② 事業名の重複（同じ会計・款項目に同名同額が2つある＝重複の落とし漏れ）
   const seenKey = new Set<string>();
   for (const f of doc.facts) {

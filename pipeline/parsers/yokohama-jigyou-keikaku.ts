@@ -388,6 +388,31 @@ export function parseYokohamaJigyouKeikaku(
             };
       for (const row of rowsOf(joinSplitNumbers(ws))) {
         const yThis = row[0]!.y;
+        // ⚠⚠ **1ページに目次ブロックが2つ以上あることがある**（実測 都市整備局 2026_01_19.pdf は
+        //   `19款1項10目` と `19款1項17目` が同じページに並ぶ）。ページ単位で見出しを1つだけ
+        //   読むと、**後半のブロックの事業が前半の目に入る**（126,468 が 10目 と 17目 で
+        //   ずれた）。→ **行ごとに見出しを検出して切り替える**。
+        const rowText = row.map((w) => w.t).join("");
+        if (/\[[^\]]{2,20}\]/.test(rowText) && /\d+\s*款/.test(han(rowText))) {
+          const h2 = parseHead(rowText);
+          // ⚠ 継続ページは**同じ見出しを繰り返す**ので、変わったときだけ切り替える
+          const changed =
+            !!h2 &&
+            (!head ||
+              h2.kanNo !== head.kanNo ||
+              h2.koNo !== head.koNo ||
+              h2.mokuNo !== head.mokuNo ||
+              h2.accountName !== head.accountName);
+          if (h2 && changed) {
+            if (group.length > 0) {
+              throw new Error(
+                `${f.filename} p.${p}: 目次ブロックが「計」で閉じないまま次の見出しが来ました（${group.length}事業）`,
+              );
+            }
+            head = h2;
+            continue;
+          }
+        }
         // ⚠ **見出しより上の行は見ない** — `[医療局] ８款１項１目（単位：千円）` の
         //   款項目の数字を金額として拾ってしまう（実測）
         if (yThis <= headY) continue;
@@ -410,6 +435,10 @@ export function parseYokohamaJigyouKeikaku(
             (w) =>
               !amtTokens.has(w) &&
               num(w.t) === null &&
+              // ⚠ **計画書頁の `-`（廃止事業）が名前に混ざる** — `横浜市生活交通バス路-線維持…`
+              //   `市街地開発事業費会計-繰出金` になり、**詳細シートとの名前照合が外れて
+              //   目が直らない**（19-1-10 と 19-1-17 が 126,468 ずれた＝実測）
+              !/^[-‐－—―−]$/.test(w.t) &&
               // ⚠ 見出しの款項目が名前に混ざる（継続ページは headY が 0 なので y だけでは弾けない）
               !/\d+\s*款/.test(w.t) &&
               w.y > headY &&
@@ -526,7 +555,8 @@ export function parseYokohamaJigyouKeikaku(
   //   #192 で学んだ「総和のゲートは局所の間違いを隠す」型そのもの。
   //   → **詳細シートの `歳出予算科目 … N款N項N目` と `事業名称` の対応表**で埋める。
   {
-    const mokuOf = new Map<string, { ko: string; moku: string }>();
+    /** 事業名 → 目。⚠ **一意でない名前は `null`**（衝突を使うと正しい目まで壊す） */
+    const mokuOf = new Map<string, { ko: string; moku: string } | null>();
     for (const f of files) {
       for (const text of layoutPages(f.path)) {
         const h = han(text);
@@ -534,17 +564,26 @@ export function parseYokohamaJigyouKeikaku(
         if (!m) continue;
         const nm = (/事業名称\s+(.+?)\s*$/m.exec(h)?.[1] ?? "").replace(/[\s　]+/g, "");
         if (!nm) continue;
-        mokuOf.set(`${m[1]}\u0001${Number(m[2])}\u0001${nm}`, {
-          ko: String(Number(m[3])),
-          moku: String(Number(m[4])),
-        });
+        // ⚠⚠ **同じ事業名が複数の目にある**（`職員人件費` は款2 だけで多数）。
+        //   衝突したまま使うと**正しく付いていた目まで書き換えて壊す**（実測。全件上書きに
+        //   したら差のある目が 10 → 21 に増えた）。**款の中で一意な名前だけ**を使う。
+        const key = `${m[1]}\u0001${Number(m[2])}\u0001${nm}`;
+        const val = { ko: String(Number(m[3])), moku: String(Number(m[4])) };
+        const cur = mokuOf.get(key);
+        if (cur === undefined) mokuOf.set(key, val);
+        else if (cur && (cur.ko !== val.ko || cur.moku !== val.moku)) mokuOf.set(key, null);
       }
     }
+    // ⚠⚠ **見出しの目より詳細シートの目を優先する**（実測）。1つの目次ページに
+    //   **複数の目の事業が並ぶ**ことがある（経済局 0158 p.1 は見出しが `19款1項5目` なのに、
+    //   中央と畜場費(6目)・中央卸売市場費(5目)・勤労者福祉共済(8目) が同じ表に載る）。
+    //   見出しは「そのページの先頭の目」でしかなく、行ごとの目ではない。
+    //   詳細シートは**事業ごとに**科目を明記しているので、名前が一致したらそちらを採る。
     let filled = 0;
     for (const x of facts) {
-      if (x.koNo != null && x.mokuNo != null) continue;
       const hit = mokuOf.get(`${x.accountName}\u0001${Number(x.kanNo)}\u0001${x.name}`);
       if (!hit) continue;
+      if (x.koNo === hit.ko && x.mokuNo === hit.moku) continue;
       x.koNo = hit.ko;
       x.mokuNo = hit.moku;
       filled++;
