@@ -3,7 +3,7 @@
   "sourceId": "yokohama-jigyou-keikaku-r8",
   "parser": "yokohama-jigyou-keikaku",
   "parserVersion": "0.1.0",
-  "parsedAt": "2026-08-05T16:25:59.551Z",
+  "parsedAt": "2026-08-05T16:52:40.372Z",
   "unit": "thousandYen",
   "fiscalYear": "R8",
   "totals": [
@@ -87,12 +87,90 @@
     },
     {
       "accountName": "一般会計",
+      "kanNo": "2",
+      "koNo": "1",
+      "mokuNo": "1",
+      "bureau": "脱炭素・GREEN×EXPO推進局",
+      "amount": 7855208,
+      "prevAmount": 5597749,
+      "locator": {
+        "file": "r8jigyoukeikakusho211.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "2",
+      "koNo": "2",
+      "mokuNo": "1",
+      "bureau": "脱炭素・GREEN×EXPO推進局",
+      "amount": 3619120,
+      "prevAmount": 870755,
+      "locator": {
+        "file": "r8jigyoukeikakusho221.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "2",
+      "koNo": "2",
+      "mokuNo": "2",
+      "bureau": "脱炭素・GREEN×EXPO推進局",
+      "amount": 8697215,
+      "prevAmount": 9216380,
+      "locator": {
+        "file": "r8jigyoukeikakusho222.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "2",
+      "koNo": "3",
+      "mokuNo": "1",
+      "bureau": "脱炭素・GREEN×EXPO推進局",
+      "amount": 11128109,
+      "prevAmount": 4755329,
+      "locator": {
+        "file": "r8jigyoukeikakusho231.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "2",
+      "koNo": "4",
+      "mokuNo": "1",
+      "bureau": "脱炭素・GREEN×EXPO推進局",
+      "amount": 3559783,
+      "prevAmount": 4241281,
+      "locator": {
+        "file": "r8jigyoukeikakusho241.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "2",
+      "koNo": "5",
+      "mokuNo": "1",
+      "bureau": "脱炭素・GREEN×EXPO推進局",
+      "amount": 3440647,
+      "prevAmount": 1304900,
+      "locator": {
+        "file": "r8jigyoukeikakusho251.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
       "kanNo": "19",
       "koNo": "1",
       "mokuNo": "10",
       "bureau": "脱炭素・GREEN×EXPO推進局",
-      "amount": 11140277,
-      "prevAmount": 10812493,
+      "amount": 769619,
+      "prevAmount": 699991,
       "locator": {
         "file": "r8jigyoukeikakusho19.pdf",
         "page": 1
@@ -104,11 +182,37 @@
       "koNo": "1",
       "mokuNo": "17",
       "bureau": "脱炭素・GREEN×EXPO推進局",
-      "amount": 11800975,
-      "prevAmount": 10844090,
+      "amount": 73000,
+      "prevAmount": 5802,
       "locator": {
         "file": "r8jigyoukeikakusho19.pdf",
         "page": 3
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "10",
+      "bureau": "脱炭素・GREEN×EXPO推進局",
+      "amount": 769619,
+      "prevAmount": 699991,
+      "locator": {
+        "file": "r8jigyoukeikakusho19110.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "17",
+      "bureau": "脱炭素・GREEN×EXPO推進局",
+      "amount": 73000,
+      "prevAmount": 5802,
+      "locator": {
+        "file": "r8jigyoukeikakusho19117.pdf",
+        "page": 1
       }
     },
     {
@@ -156,11 +260,63 @@
       "koNo": "1",
       "mokuNo": "15",
       "bureau": "総務局",
-      "amount": 11601621,
-      "prevAmount": 9852324,
+      "amount": 213,
+      "prevAmount": 301,
       "locator": {
         "file": "r8-somu-jigyoukeikaku.pdf",
         "page": 83
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "2",
+      "koNo": "8",
+      "mokuNo": "1",
+      "bureau": "総務局",
+      "amount": 26579059,
+      "prevAmount": 26112985,
+      "locator": {
+        "file": "r8-somu-281-jigyoukeikaku.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "2",
+      "koNo": "8",
+      "mokuNo": "2",
+      "bureau": "総務局",
+      "amount": 16995260,
+      "prevAmount": 18169978,
+      "locator": {
+        "file": "r8-somu-282-jigyoukeikaku.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "2",
+      "koNo": "8",
+      "mokuNo": "3",
+      "bureau": "総務局",
+      "amount": 2856601,
+      "prevAmount": 2368491,
+      "locator": {
+        "file": "r8-somu-283-jigyoukeikaku.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "15",
+      "bureau": "総務局",
+      "amount": 213,
+      "prevAmount": 301,
+      "locator": {
+        "file": "r8-somu-19115-jigyoukeikaku.pdf",
+        "page": 1
       }
     },
     {
@@ -187,6 +343,32 @@
       "locator": {
         "file": "0088_20260121.pdf",
         "page": 38
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "2",
+      "koNo": "6",
+      "mokuNo": "1",
+      "bureau": "政策経営局",
+      "amount": 6449467,
+      "prevAmount": 6159328,
+      "locator": {
+        "file": "0086_20260121.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "2",
+      "koNo": "6",
+      "mokuNo": "2",
+      "bureau": "政策経営局",
+      "amount": 208660,
+      "prevAmount": 2206218,
+      "locator": {
+        "file": "0085_20260121.pdf",
+        "page": 1
       }
     },
     {
@@ -271,6 +453,19 @@
       "accountName": "一般会計",
       "kanNo": "19",
       "koNo": "1",
+      "mokuNo": "15",
+      "bureau": "財政局",
+      "amount": 3081120,
+      "prevAmount": 2532440,
+      "locator": {
+        "file": "0056_20260126.pdf",
+        "page": 56
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
       "mokuNo": "16",
       "bureau": "財政局",
       "amount": 2952,
@@ -284,10 +479,23 @@
       "accountName": "一般会計",
       "kanNo": "19",
       "koNo": "1",
+      "mokuNo": "17",
+      "bureau": "財政局",
+      "amount": 699893,
+      "prevAmount": 671900,
+      "locator": {
+        "file": "0056_20260126.pdf",
+        "page": 61
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
       "mokuNo": "18",
       "bureau": "財政局",
-      "amount": 12042262,
-      "prevAmount": 11294080,
+      "amount": 7112870,
+      "prevAmount": 6520674,
       "locator": {
         "file": "0056_20260126.pdf",
         "page": 66
@@ -304,6 +512,266 @@
       "locator": {
         "file": "0056_20260126.pdf",
         "page": 75
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "2",
+      "koNo": "9",
+      "mokuNo": "1",
+      "bureau": "財政局",
+      "amount": 16431951,
+      "prevAmount": 9196769,
+      "locator": {
+        "file": "0054_20260126.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "2",
+      "koNo": "9",
+      "mokuNo": "2",
+      "bureau": "財政局",
+      "amount": 291912,
+      "prevAmount": 277452,
+      "locator": {
+        "file": "0054_20260126.pdf",
+        "page": 15
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "2",
+      "koNo": "10",
+      "mokuNo": "1",
+      "bureau": "財政局",
+      "amount": 9487543,
+      "prevAmount": 9189900,
+      "locator": {
+        "file": "0054_20260126.pdf",
+        "page": 22
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "2",
+      "koNo": "10",
+      "mokuNo": "2",
+      "bureau": "財政局",
+      "amount": 7796575,
+      "prevAmount": 6058899,
+      "locator": {
+        "file": "0054_20260126.pdf",
+        "page": 25
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "18",
+      "koNo": null,
+      "mokuNo": null,
+      "bureau": "財政局",
+      "amount": 177285013,
+      "prevAmount": 166358260,
+      "locator": {
+        "file": "0054_20260126.pdf",
+        "page": 49
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "15",
+      "bureau": "財政局",
+      "amount": 3081120,
+      "prevAmount": 2532440,
+      "locator": {
+        "file": "0054_20260126.pdf",
+        "page": 56
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "16",
+      "bureau": "財政局",
+      "amount": 2952,
+      "prevAmount": 2952,
+      "locator": {
+        "file": "0054_20260126.pdf",
+        "page": 59
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "17",
+      "bureau": "財政局",
+      "amount": 699893,
+      "prevAmount": 671900,
+      "locator": {
+        "file": "0054_20260126.pdf",
+        "page": 61
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "18",
+      "bureau": "財政局",
+      "amount": 7112870,
+      "prevAmount": 6520674,
+      "locator": {
+        "file": "0054_20260126.pdf",
+        "page": 66
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "20",
+      "koNo": null,
+      "mokuNo": null,
+      "bureau": "財政局",
+      "amount": 1000000,
+      "prevAmount": 1000000,
+      "locator": {
+        "file": "0054_20260126.pdf",
+        "page": 75
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "2",
+      "koNo": "9",
+      "mokuNo": "1",
+      "bureau": "財政局",
+      "amount": 16431951,
+      "prevAmount": 9196769,
+      "locator": {
+        "file": "0055_20260126.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "2",
+      "koNo": "9",
+      "mokuNo": "2",
+      "bureau": "財政局",
+      "amount": 291912,
+      "prevAmount": 277452,
+      "locator": {
+        "file": "0042_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "2",
+      "koNo": "10",
+      "mokuNo": "1",
+      "bureau": "財政局",
+      "amount": 9487543,
+      "prevAmount": 9189900,
+      "locator": {
+        "file": "0043_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "2",
+      "koNo": "10",
+      "mokuNo": "2",
+      "bureau": "財政局",
+      "amount": 7796575,
+      "prevAmount": 6058899,
+      "locator": {
+        "file": "0044_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "18",
+      "koNo": null,
+      "mokuNo": null,
+      "bureau": "財政局",
+      "amount": 177285013,
+      "prevAmount": 166358260,
+      "locator": {
+        "file": "0045_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "15",
+      "bureau": "財政局",
+      "amount": 3081120,
+      "prevAmount": 2532440,
+      "locator": {
+        "file": "0046_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "16",
+      "bureau": "財政局",
+      "amount": 2952,
+      "prevAmount": 2952,
+      "locator": {
+        "file": "0047_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "17",
+      "bureau": "財政局",
+      "amount": 699893,
+      "prevAmount": 671900,
+      "locator": {
+        "file": "0048_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "18",
+      "bureau": "財政局",
+      "amount": 7112870,
+      "prevAmount": 6520674,
+      "locator": {
+        "file": "0049_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "20",
+      "koNo": null,
+      "mokuNo": null,
+      "bureau": "財政局",
+      "amount": 1000000,
+      "prevAmount": 1000000,
+      "locator": {
+        "file": "0050_20260123.pdf",
+        "page": 1
       }
     },
     {
@@ -399,6 +867,84 @@
     },
     {
       "accountName": "一般会計",
+      "kanNo": "3",
+      "koNo": "1",
+      "mokuNo": "1",
+      "bureau": "市民局",
+      "amount": 14118946,
+      "prevAmount": 13941535,
+      "locator": {
+        "file": "0022_20260126.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "3",
+      "koNo": "1",
+      "mokuNo": "2",
+      "bureau": "市民局",
+      "amount": 44319,
+      "prevAmount": 46360,
+      "locator": {
+        "file": "0023_20260126.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "3",
+      "koNo": "1",
+      "mokuNo": "3",
+      "bureau": "市民局",
+      "amount": 2604890,
+      "prevAmount": 3221096,
+      "locator": {
+        "file": "0024_20260126.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "3",
+      "koNo": "2",
+      "mokuNo": "1",
+      "bureau": "市民局",
+      "amount": 18122675,
+      "prevAmount": 17561338,
+      "locator": {
+        "file": "0025_20260126.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "3",
+      "koNo": "2",
+      "mokuNo": "2",
+      "bureau": "市民局",
+      "amount": 8819308,
+      "prevAmount": 11395677,
+      "locator": {
+        "file": "0026_20260126.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "3",
+      "koNo": "2",
+      "mokuNo": "3",
+      "bureau": "市民局",
+      "amount": 2010163,
+      "prevAmount": 3243343,
+      "locator": {
+        "file": "0027_20260126.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
       "kanNo": "4",
       "koNo": "1",
       "mokuNo": "1",
@@ -447,6 +993,58 @@
       "locator": {
         "file": "0012_20260123.pdf",
         "page": 55
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "4",
+      "koNo": "1",
+      "mokuNo": "1",
+      "bureau": "にぎわいスポーツ文化局",
+      "amount": 1511426,
+      "prevAmount": 1458592,
+      "locator": {
+        "file": "0008_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "4",
+      "koNo": "1",
+      "mokuNo": "2",
+      "bureau": "にぎわいスポーツ文化局",
+      "amount": 4469092,
+      "prevAmount": 6239654,
+      "locator": {
+        "file": "0009_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "4",
+      "koNo": "1",
+      "mokuNo": "3",
+      "bureau": "にぎわいスポーツ文化局",
+      "amount": 4588061,
+      "prevAmount": 4816298,
+      "locator": {
+        "file": "0010_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "4",
+      "koNo": "1",
+      "mokuNo": "4",
+      "bureau": "にぎわいスポーツ文化局",
+      "amount": 6591530,
+      "prevAmount": 5543132,
+      "locator": {
+        "file": "0011_20260123.pdf",
+        "page": 1
       }
     },
     {
@@ -512,6 +1110,71 @@
       "locator": {
         "file": "0175_20260123.pdf",
         "page": 39
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "5",
+      "koNo": "1",
+      "mokuNo": "1",
+      "bureau": "経済局",
+      "amount": 1605657,
+      "prevAmount": 1550749,
+      "locator": {
+        "file": "0153_20260121.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "5",
+      "koNo": "1",
+      "mokuNo": "2",
+      "bureau": "経済局",
+      "amount": 5977608,
+      "prevAmount": 5725888,
+      "locator": {
+        "file": "0154_20260121.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "5",
+      "koNo": "1",
+      "mokuNo": "3",
+      "bureau": "経済局",
+      "amount": 1083182,
+      "prevAmount": 1119959,
+      "locator": {
+        "file": "0176_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "5",
+      "koNo": "1",
+      "mokuNo": "4",
+      "bureau": "経済局",
+      "amount": 35290336,
+      "prevAmount": 43626435,
+      "locator": {
+        "file": "0156_20260121.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "5",
+      "koNo": "1",
+      "mokuNo": "5",
+      "bureau": "経済局",
+      "amount": 1383341,
+      "prevAmount": 1681681,
+      "locator": {
+        "file": "0173_20260122.pdf",
+        "page": 1
       }
     },
     {
@@ -720,6 +1383,383 @@
       "locator": {
         "file": "r8_kodomo_all.pdf",
         "page": 222
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "1",
+      "mokuNo": "1",
+      "bureau": "こども青少年局",
+      "amount": 24206145,
+      "prevAmount": 23478599,
+      "locator": {
+        "file": "0002_20260126.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "1",
+      "mokuNo": "2",
+      "bureau": "こども青少年局",
+      "amount": 2018635,
+      "prevAmount": 1658135,
+      "locator": {
+        "file": "0002_20260126.pdf",
+        "page": 12
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "2",
+      "mokuNo": "1",
+      "bureau": "こども青少年局",
+      "amount": 4599904,
+      "prevAmount": 4081968,
+      "locator": {
+        "file": "0002_20260126.pdf",
+        "page": 30
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "2",
+      "mokuNo": "2",
+      "bureau": "こども青少年局",
+      "amount": 220463455,
+      "prevAmount": 213049854,
+      "locator": {
+        "file": "0002_20260126.pdf",
+        "page": 47
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "2",
+      "mokuNo": "3",
+      "bureau": "こども青少年局",
+      "amount": 9648407,
+      "prevAmount": 9875864,
+      "locator": {
+        "file": "0002_20260126.pdf",
+        "page": 97
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "2",
+      "mokuNo": "4",
+      "bureau": "こども青少年局",
+      "amount": 17217026,
+      "prevAmount": 15609590,
+      "locator": {
+        "file": "0002_20260126.pdf",
+        "page": 111
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "2",
+      "mokuNo": "5",
+      "bureau": "こども青少年局",
+      "amount": 2400369,
+      "prevAmount": 2625737,
+      "locator": {
+        "file": "0002_20260126.pdf",
+        "page": 119
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "3",
+      "mokuNo": "1",
+      "bureau": "こども青少年局",
+      "amount": 12984030,
+      "prevAmount": 12227617,
+      "locator": {
+        "file": "0002_20260126.pdf",
+        "page": 123
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "3",
+      "mokuNo": "2",
+      "bureau": "こども青少年局",
+      "amount": 32292128,
+      "prevAmount": 29132229,
+      "locator": {
+        "file": "0002_20260126.pdf",
+        "page": 143
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "3",
+      "mokuNo": "3",
+      "bureau": "こども青少年局",
+      "amount": 10297048,
+      "prevAmount": 11348043,
+      "locator": {
+        "file": "0002_20260126.pdf",
+        "page": 170
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "3",
+      "mokuNo": "4",
+      "bureau": "こども青少年局",
+      "amount": 78662169,
+      "prevAmount": 79906181,
+      "locator": {
+        "file": "0002_20260126.pdf",
+        "page": 193
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "3",
+      "mokuNo": "5",
+      "bureau": "こども青少年局",
+      "amount": 4484115,
+      "prevAmount": 4525809,
+      "locator": {
+        "file": "0002_20260126.pdf",
+        "page": 199
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "3",
+      "mokuNo": "6",
+      "bureau": "こども青少年局",
+      "amount": 3053963,
+      "prevAmount": 3080806,
+      "locator": {
+        "file": "0002_20260126.pdf",
+        "page": 206
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "3",
+      "mokuNo": "7",
+      "bureau": "こども青少年局",
+      "amount": 223877,
+      "prevAmount": 1805842,
+      "locator": {
+        "file": "0002_20260126.pdf",
+        "page": 217
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "1",
+      "mokuNo": "1",
+      "bureau": "こども青少年局",
+      "amount": 24206145,
+      "prevAmount": 23478599,
+      "locator": {
+        "file": "0003_20260126.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "1",
+      "mokuNo": "2",
+      "bureau": "こども青少年局",
+      "amount": 2018635,
+      "prevAmount": 1658135,
+      "locator": {
+        "file": "0004_20260126.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "2",
+      "mokuNo": "1",
+      "bureau": "こども青少年局",
+      "amount": 4599904,
+      "prevAmount": 4081968,
+      "locator": {
+        "file": "r8_6-2-1.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "2",
+      "mokuNo": "2",
+      "bureau": "こども青少年局",
+      "amount": 220463455,
+      "prevAmount": 213049854,
+      "locator": {
+        "file": "r8_6-2-2.pdf",
+        "page": 2
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "2",
+      "mokuNo": "3",
+      "bureau": "こども青少年局",
+      "amount": 9648407,
+      "prevAmount": 9875864,
+      "locator": {
+        "file": "r8_6-2-3.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "2",
+      "mokuNo": "4",
+      "bureau": "こども青少年局",
+      "amount": 17217026,
+      "prevAmount": 15609590,
+      "locator": {
+        "file": "r8_6-2-4.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "2",
+      "mokuNo": "5",
+      "bureau": "こども青少年局",
+      "amount": 2400369,
+      "prevAmount": 2625737,
+      "locator": {
+        "file": "r8_6-2-5.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "3",
+      "mokuNo": "1",
+      "bureau": "こども青少年局",
+      "amount": 12984030,
+      "prevAmount": 12227617,
+      "locator": {
+        "file": "r8_6-3-1.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "3",
+      "mokuNo": "2",
+      "bureau": "こども青少年局",
+      "amount": 32292128,
+      "prevAmount": 29132229,
+      "locator": {
+        "file": "r8_6-3-2.pdf",
+        "page": 2
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "3",
+      "mokuNo": "3",
+      "bureau": "こども青少年局",
+      "amount": 10297048,
+      "prevAmount": 11348043,
+      "locator": {
+        "file": "r8_6-3-3.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "3",
+      "mokuNo": "4",
+      "bureau": "こども青少年局",
+      "amount": 78662169,
+      "prevAmount": 79906181,
+      "locator": {
+        "file": "r8_6-3-4.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "3",
+      "mokuNo": "5",
+      "bureau": "こども青少年局",
+      "amount": 4484115,
+      "prevAmount": 4525809,
+      "locator": {
+        "file": "r8_6-3-5.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "3",
+      "mokuNo": "6",
+      "bureau": "こども青少年局",
+      "amount": 3053963,
+      "prevAmount": 3080806,
+      "locator": {
+        "file": "r8_6-3-6.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "6",
+      "koNo": "3",
+      "mokuNo": "7",
+      "bureau": "こども青少年局",
+      "amount": 223877,
+      "prevAmount": 1805842,
+      "locator": {
+        "file": "r8_6-3-7.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": null,
+      "bureau": "こども青少年局",
+      "amount": 466737,
+      "prevAmount": 467318,
+      "locator": {
+        "file": "r8_19.pdf",
+        "page": 1
       }
     },
     {
@@ -997,6 +2037,279 @@
     },
     {
       "accountName": "一般会計",
+      "kanNo": "7",
+      "koNo": "1",
+      "mokuNo": "1",
+      "bureau": "健康福祉局",
+      "amount": 27854875,
+      "prevAmount": 27111490,
+      "locator": {
+        "file": "0119_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "7",
+      "koNo": "1",
+      "mokuNo": "2",
+      "bureau": "健康福祉局",
+      "amount": 9524955,
+      "prevAmount": 9190008,
+      "locator": {
+        "file": "0159_20260213.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "7",
+      "koNo": "1",
+      "mokuNo": "3",
+      "bureau": "健康福祉局",
+      "amount": 234537,
+      "prevAmount": 172655,
+      "locator": {
+        "file": "0121_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "7",
+      "koNo": "1",
+      "mokuNo": "4",
+      "bureau": "健康福祉局",
+      "amount": 1818123,
+      "prevAmount": 1766198,
+      "locator": {
+        "file": "0122_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "7",
+      "koNo": "1",
+      "mokuNo": "5",
+      "bureau": "健康福祉局",
+      "amount": 17896995,
+      "prevAmount": 15972325,
+      "locator": {
+        "file": "0123_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "7",
+      "koNo": "1",
+      "mokuNo": "6",
+      "bureau": "健康福祉局",
+      "amount": 8988071,
+      "prevAmount": 8247939,
+      "locator": {
+        "file": "0124_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "7",
+      "koNo": "1",
+      "mokuNo": "7",
+      "bureau": "健康福祉局",
+      "amount": 2652402,
+      "prevAmount": 2471497,
+      "locator": {
+        "file": "0155_20260126.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "7",
+      "koNo": "2",
+      "mokuNo": "1",
+      "bureau": "健康福祉局",
+      "amount": 137059808,
+      "prevAmount": 123052617,
+      "locator": {
+        "file": "0126_20260123.pdf",
+        "page": 2
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "7",
+      "koNo": "2",
+      "mokuNo": "2",
+      "bureau": "健康福祉局",
+      "amount": 733617,
+      "prevAmount": 703406,
+      "locator": {
+        "file": "0127_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "7",
+      "koNo": "2",
+      "mokuNo": "3",
+      "bureau": "健康福祉局",
+      "amount": 1373350,
+      "prevAmount": 1272500,
+      "locator": {
+        "file": "0128_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "7",
+      "koNo": "2",
+      "mokuNo": "4",
+      "bureau": "健康福祉局",
+      "amount": 16994508,
+      "prevAmount": 16272677,
+      "locator": {
+        "file": "0129_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "7",
+      "koNo": "2",
+      "mokuNo": "5",
+      "bureau": "健康福祉局",
+      "amount": 720814,
+      "prevAmount": 661006,
+      "locator": {
+        "file": "0130_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "7",
+      "koNo": "2",
+      "mokuNo": "6",
+      "bureau": "健康福祉局",
+      "amount": 3406242,
+      "prevAmount": 4099119,
+      "locator": {
+        "file": "0131_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "7",
+      "koNo": "3",
+      "mokuNo": "1",
+      "bureau": "健康福祉局",
+      "amount": 2770163,
+      "prevAmount": 2657870,
+      "locator": {
+        "file": "0132_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "7",
+      "koNo": "3",
+      "mokuNo": "2",
+      "bureau": "健康福祉局",
+      "amount": 12213641,
+      "prevAmount": 13637926,
+      "locator": {
+        "file": "0133_20260123.pdf",
+        "page": 2
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "7",
+      "koNo": "3",
+      "mokuNo": "3",
+      "bureau": "健康福祉局",
+      "amount": 499913,
+      "prevAmount": 319966,
+      "locator": {
+        "file": "0134_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "7",
+      "koNo": "4",
+      "mokuNo": "1",
+      "bureau": "健康福祉局",
+      "amount": 140749923,
+      "prevAmount": 136984122,
+      "locator": {
+        "file": "0135_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "7",
+      "koNo": "4",
+      "mokuNo": "2",
+      "bureau": "健康福祉局",
+      "amount": 2217736,
+      "prevAmount": 1993091,
+      "locator": {
+        "file": "0136_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "7",
+      "koNo": "5",
+      "mokuNo": "1",
+      "bureau": "健康福祉局",
+      "amount": 23813827,
+      "prevAmount": 10174453,
+      "locator": {
+        "file": "0137_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "7",
+      "koNo": "6",
+      "mokuNo": "1",
+      "bureau": "健康福祉局",
+      "amount": 527300,
+      "prevAmount": 581516,
+      "locator": {
+        "file": "0138_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "7",
+      "koNo": "6",
+      "mokuNo": "2",
+      "bureau": "健康福祉局",
+      "amount": 3895365,
+      "prevAmount": 3505177,
+      "locator": {
+        "file": "0139_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
       "kanNo": "19",
       "koNo": "1",
       "mokuNo": "1",
@@ -1049,6 +2362,136 @@
     },
     {
       "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "15",
+      "bureau": "健康福祉局",
+      "amount": 793088,
+      "prevAmount": 812910,
+      "locator": {
+        "file": "0140_20260123.pdf",
+        "page": 13
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "17",
+      "bureau": "健康福祉局",
+      "amount": 4814148,
+      "prevAmount": 4411294,
+      "locator": {
+        "file": "0140_20260123.pdf",
+        "page": 17
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "18",
+      "bureau": "健康福祉局",
+      "amount": 2464696,
+      "prevAmount": 2386703,
+      "locator": {
+        "file": "0140_20260123.pdf",
+        "page": 21
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "1",
+      "bureau": "健康福祉局",
+      "amount": 30610269,
+      "prevAmount": 29918373,
+      "locator": {
+        "file": "0141_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "2",
+      "bureau": "健康福祉局",
+      "amount": 54625440,
+      "prevAmount": 52678894,
+      "locator": {
+        "file": "0142_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "3",
+      "bureau": "健康福祉局",
+      "amount": 47928610,
+      "prevAmount": 45114311,
+      "locator": {
+        "file": "0143_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "9",
+      "bureau": "健康福祉局",
+      "amount": 19353,
+      "prevAmount": 6590,
+      "locator": {
+        "file": "0144_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "15",
+      "bureau": "健康福祉局",
+      "amount": 793088,
+      "prevAmount": 812910,
+      "locator": {
+        "file": "0145_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "17",
+      "bureau": "健康福祉局",
+      "amount": 4814148,
+      "prevAmount": 4411294,
+      "locator": {
+        "file": "0146_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "18",
+      "bureau": "健康福祉局",
+      "amount": 2464696,
+      "prevAmount": 2386703,
+      "locator": {
+        "file": "0147_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
       "kanNo": "8",
       "koNo": "1",
       "mokuNo": "1",
@@ -1097,6 +2540,58 @@
       "locator": {
         "file": "0001_20260126.pdf",
         "page": 78
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "8",
+      "koNo": "1",
+      "mokuNo": "1",
+      "bureau": "医療局",
+      "amount": 4944287,
+      "prevAmount": 3993839,
+      "locator": {
+        "file": "iryo__0002_20260126.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "8",
+      "koNo": "1",
+      "mokuNo": "2",
+      "bureau": "医療局",
+      "amount": 2917888,
+      "prevAmount": 2829787,
+      "locator": {
+        "file": "iryo__0003_20260126.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "8",
+      "koNo": "2",
+      "mokuNo": "1",
+      "bureau": "医療局",
+      "amount": 18572603,
+      "prevAmount": 18525795,
+      "locator": {
+        "file": "iryo__0004_20260126.pdf",
+        "page": 2
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "8",
+      "koNo": "2",
+      "mokuNo": "2",
+      "bureau": "医療局",
+      "amount": 950390,
+      "prevAmount": 948286,
+      "locator": {
+        "file": "0005_20260126.pdf",
+        "page": 2
       }
     },
     {
@@ -1283,6 +2778,175 @@
     },
     {
       "accountName": "一般会計",
+      "kanNo": "9",
+      "koNo": "1",
+      "mokuNo": "1",
+      "bureau": "みどり環境局",
+      "amount": 6697500,
+      "prevAmount": 6442837,
+      "locator": {
+        "file": "0425_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "9",
+      "koNo": "1",
+      "mokuNo": "2",
+      "bureau": "みどり環境局",
+      "amount": 91094,
+      "prevAmount": 52661,
+      "locator": {
+        "file": "0434_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "9",
+      "koNo": "1",
+      "mokuNo": "3",
+      "bureau": "みどり環境局",
+      "amount": 95802,
+      "prevAmount": 58070,
+      "locator": {
+        "file": "0464_20260126.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "9",
+      "koNo": "1",
+      "mokuNo": "4",
+      "bureau": "みどり環境局",
+      "amount": 68365,
+      "prevAmount": 81620,
+      "locator": {
+        "file": "0436_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "9",
+      "koNo": "1",
+      "mokuNo": "5",
+      "bureau": "みどり環境局",
+      "amount": 3020000,
+      "prevAmount": 3013000,
+      "locator": {
+        "file": "0437_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "9",
+      "koNo": "2",
+      "mokuNo": "1",
+      "bureau": "みどり環境局",
+      "amount": 8115981,
+      "prevAmount": 7697220,
+      "locator": {
+        "file": "0438_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "9",
+      "koNo": "2",
+      "mokuNo": "2",
+      "bureau": "みどり環境局",
+      "amount": 2782300,
+      "prevAmount": 2521426,
+      "locator": {
+        "file": "0439_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "9",
+      "koNo": "2",
+      "mokuNo": "3",
+      "bureau": "みどり環境局",
+      "amount": 365757,
+      "prevAmount": 320231,
+      "locator": {
+        "file": "0441_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "9",
+      "koNo": "2",
+      "mokuNo": "4",
+      "bureau": "みどり環境局",
+      "amount": 12519304,
+      "prevAmount": 11619163,
+      "locator": {
+        "file": "0442_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "9",
+      "koNo": "3",
+      "mokuNo": "1",
+      "bureau": "みどり環境局",
+      "amount": 691465,
+      "prevAmount": 412155,
+      "locator": {
+        "file": "0443_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "9",
+      "koNo": "3",
+      "mokuNo": "2",
+      "bureau": "みどり環境局",
+      "amount": 103888,
+      "prevAmount": 93635,
+      "locator": {
+        "file": "0444_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "9",
+      "koNo": "4",
+      "mokuNo": "1",
+      "bureau": "みどり環境局",
+      "amount": 394682,
+      "prevAmount": 399100,
+      "locator": {
+        "file": "0461_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "9",
+      "koNo": "4",
+      "mokuNo": "2",
+      "bureau": "みどり環境局",
+      "amount": 192231,
+      "prevAmount": 198826,
+      "locator": {
+        "file": "0446_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
       "kanNo": "19",
       "koNo": "1",
       "mokuNo": "12",
@@ -1322,6 +2986,32 @@
     },
     {
       "accountName": "一般会計",
+      "kanNo": "14",
+      "koNo": "1",
+      "mokuNo": "1",
+      "bureau": "下水道河川局",
+      "amount": 2185139,
+      "prevAmount": 2099510,
+      "locator": {
+        "file": "0398_20260122.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "14",
+      "koNo": "1",
+      "mokuNo": "2",
+      "bureau": "下水道河川局",
+      "amount": 2715688,
+      "prevAmount": 3374076,
+      "locator": {
+        "file": "0399_20260122.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
       "kanNo": "19",
       "koNo": "1",
       "mokuNo": "14",
@@ -1330,6 +3020,19 @@
       "prevAmount": 35173283,
       "locator": {
         "file": "0400_20260122.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "14",
+      "bureau": "下水道河川局",
+      "amount": 36175277,
+      "prevAmount": 35173283,
+      "locator": {
+        "file": "0401_20260122.pdf",
         "page": 1
       }
     },
@@ -1465,6 +3168,136 @@
     },
     {
       "accountName": "一般会計",
+      "kanNo": "10",
+      "koNo": "1",
+      "mokuNo": "1",
+      "bureau": "資源循環局",
+      "amount": 16613242,
+      "prevAmount": 16168455,
+      "locator": {
+        "file": "0018_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "10",
+      "koNo": "1",
+      "mokuNo": "2",
+      "bureau": "資源循環局",
+      "amount": 3898480,
+      "prevAmount": 4331248,
+      "locator": {
+        "file": "0019_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "10",
+      "koNo": "1",
+      "mokuNo": "3",
+      "bureau": "資源循環局",
+      "amount": 489397,
+      "prevAmount": 561228,
+      "locator": {
+        "file": "0020_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "10",
+      "koNo": "1",
+      "mokuNo": "4",
+      "bureau": "資源循環局",
+      "amount": 1664452,
+      "prevAmount": 1619533,
+      "locator": {
+        "file": "0021_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "10",
+      "koNo": "2",
+      "mokuNo": "1",
+      "bureau": "資源循環局",
+      "amount": 11118473,
+      "prevAmount": 10231538,
+      "locator": {
+        "file": "0022_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "10",
+      "koNo": "2",
+      "mokuNo": "2",
+      "bureau": "資源循環局",
+      "amount": 14106562,
+      "prevAmount": 11250287,
+      "locator": {
+        "file": "0023_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "10",
+      "koNo": "2",
+      "mokuNo": "3",
+      "bureau": "資源循環局",
+      "amount": 6228760,
+      "prevAmount": 6104733,
+      "locator": {
+        "file": "0024_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "10",
+      "koNo": "2",
+      "mokuNo": "4",
+      "bureau": "資源循環局",
+      "amount": 362861,
+      "prevAmount": 352115,
+      "locator": {
+        "file": "0025_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "10",
+      "koNo": "3",
+      "mokuNo": "1",
+      "bureau": "資源循環局",
+      "amount": 188049,
+      "prevAmount": 187086,
+      "locator": {
+        "file": "0026_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "10",
+      "koNo": "3",
+      "mokuNo": "2",
+      "bureau": "資源循環局",
+      "amount": 415727,
+      "prevAmount": 231719,
+      "locator": {
+        "file": "0027_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
       "kanNo": "11",
       "koNo": "1",
       "mokuNo": "1",
@@ -1569,6 +3402,110 @@
     },
     {
       "accountName": "一般会計",
+      "kanNo": "11",
+      "koNo": "1",
+      "mokuNo": "1",
+      "bureau": "建築局",
+      "amount": 7992038,
+      "prevAmount": 7740426,
+      "locator": {
+        "file": "0109_20260122.pdf",
+        "page": 2
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "11",
+      "koNo": "1",
+      "mokuNo": "2",
+      "bureau": "建築局",
+      "amount": 129953,
+      "prevAmount": 124085,
+      "locator": {
+        "file": "0111_20260122.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "11",
+      "koNo": "1",
+      "mokuNo": "3",
+      "bureau": "建築局",
+      "amount": 4367223,
+      "prevAmount": 3764050,
+      "locator": {
+        "file": "0100_20260121.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "11",
+      "koNo": "1",
+      "mokuNo": "4",
+      "bureau": "建築局",
+      "amount": 49193,
+      "prevAmount": 46943,
+      "locator": {
+        "file": "0101_20260121.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "11",
+      "koNo": "2",
+      "mokuNo": "1",
+      "bureau": "建築局",
+      "amount": 8798587,
+      "prevAmount": 8558882,
+      "locator": {
+        "file": "0102_20260121.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "11",
+      "koNo": "2",
+      "mokuNo": "2",
+      "bureau": "建築局",
+      "amount": 9778212,
+      "prevAmount": 9446254,
+      "locator": {
+        "file": "0103_20260121.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "11",
+      "koNo": "2",
+      "mokuNo": "3",
+      "bureau": "建築局",
+      "amount": 1380601,
+      "prevAmount": 1430854,
+      "locator": {
+        "file": "0104_20260121.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "11",
+      "koNo": "2",
+      "mokuNo": "4",
+      "bureau": "建築局",
+      "amount": 426949,
+      "prevAmount": 268515,
+      "locator": {
+        "file": "0105_20260121.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
       "kanNo": "12",
       "koNo": "1",
       "mokuNo": "1",
@@ -1604,6 +3541,123 @@
       "locator": {
         "file": "2026_01_12.pdf",
         "page": 34
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "12",
+      "koNo": "1",
+      "mokuNo": "1",
+      "bureau": "都市整備局",
+      "amount": 3367230,
+      "prevAmount": 3005193,
+      "locator": {
+        "file": "2026_01_120101.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "12",
+      "koNo": "1",
+      "mokuNo": "2",
+      "bureau": "都市整備局",
+      "amount": 1512518,
+      "prevAmount": 1596264,
+      "locator": {
+        "file": "2026_01_120102.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "12",
+      "koNo": "1",
+      "mokuNo": "3",
+      "bureau": "都市整備局",
+      "amount": 5973060,
+      "prevAmount": 4809551,
+      "locator": {
+        "file": "2026_01_120103.pdf",
+        "page": 2
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "10",
+      "bureau": "都市整備局",
+      "amount": 3330418,
+      "prevAmount": 3228318,
+      "locator": {
+        "file": "2026_01_19.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "10",
+      "bureau": "都市整備局",
+      "amount": 126468,
+      "prevAmount": 142516,
+      "locator": {
+        "file": "2026_01_19.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "10",
+      "bureau": "都市整備局",
+      "amount": 3330418,
+      "prevAmount": 3228318,
+      "locator": {
+        "file": "2026_01_190110.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "10",
+      "bureau": "都市整備局",
+      "amount": 126468,
+      "prevAmount": 142516,
+      "locator": {
+        "file": "2026_01_190110.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "10",
+      "bureau": "都市整備局",
+      "amount": 3330418,
+      "prevAmount": 3228318,
+      "locator": {
+        "file": "2026_01_190117.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "10",
+      "bureau": "都市整備局",
+      "amount": 126468,
+      "prevAmount": 142516,
+      "locator": {
+        "file": "2026_01_190117.pdf",
+        "page": 1
       }
     },
     {
@@ -1712,6 +3766,110 @@
     },
     {
       "accountName": "一般会計",
+      "kanNo": "13",
+      "koNo": "1",
+      "mokuNo": "1",
+      "bureau": "道路局",
+      "amount": 6727624,
+      "prevAmount": 6621240,
+      "locator": {
+        "file": "jigyokeikaku__0011_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "13",
+      "koNo": "1",
+      "mokuNo": "2",
+      "bureau": "道路局",
+      "amount": 2991101,
+      "prevAmount": 3092534,
+      "locator": {
+        "file": "0027_20260204.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "13",
+      "koNo": "1",
+      "mokuNo": "3",
+      "bureau": "道路局",
+      "amount": 14621691,
+      "prevAmount": 13864553,
+      "locator": {
+        "file": "jigyokeikaku__0024_20260126.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "13",
+      "koNo": "1",
+      "mokuNo": "4",
+      "bureau": "道路局",
+      "amount": 2524486,
+      "prevAmount": 2324389,
+      "locator": {
+        "file": "jigyokeikaku__0025_20260126.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "13",
+      "koNo": "2",
+      "mokuNo": "1",
+      "bureau": "道路局",
+      "amount": 15605143,
+      "prevAmount": 15456883,
+      "locator": {
+        "file": "0015_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "13",
+      "koNo": "2",
+      "mokuNo": "2",
+      "bureau": "道路局",
+      "amount": 11628129,
+      "prevAmount": 11773002,
+      "locator": {
+        "file": "0016_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "13",
+      "koNo": "2",
+      "mokuNo": "3",
+      "bureau": "道路局",
+      "amount": 73148,
+      "prevAmount": 73148,
+      "locator": {
+        "file": "jigyokeikaku__0017_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "13",
+      "koNo": "2",
+      "mokuNo": "4",
+      "bureau": "道路局",
+      "amount": 3269167,
+      "prevAmount": 3269167,
+      "locator": {
+        "file": "jigyokeikaku__0018_20260123.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
       "kanNo": "19",
       "koNo": "1",
       "mokuNo": "11",
@@ -1734,6 +3892,32 @@
       "locator": {
         "file": "0020_20260126.pdf",
         "page": 3
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "11",
+      "bureau": "道路局",
+      "amount": 29132,
+      "prevAmount": 51876,
+      "locator": {
+        "file": "jigyokeikaku__0022_20260126.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "13",
+      "bureau": "道路局",
+      "amount": 566866,
+      "prevAmount": 556985,
+      "locator": {
+        "file": "jigyokeikaku__0023_20260126.pdf",
+        "page": 1
       }
     },
     {
@@ -1842,6 +4026,110 @@
     },
     {
       "accountName": "一般会計",
+      "kanNo": "15",
+      "koNo": "1",
+      "mokuNo": "1",
+      "bureau": "港湾局",
+      "amount": 2917467,
+      "prevAmount": 2855895,
+      "locator": {
+        "file": "0066_20260127.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "15",
+      "koNo": "1",
+      "mokuNo": "2",
+      "bureau": "港湾局",
+      "amount": 1044570,
+      "prevAmount": 1002689,
+      "locator": {
+        "file": "0067_20260127.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "15",
+      "koNo": "1",
+      "mokuNo": "3",
+      "bureau": "港湾局",
+      "amount": 2475852,
+      "prevAmount": 2481967,
+      "locator": {
+        "file": "0068_20260127.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "15",
+      "koNo": "1",
+      "mokuNo": "4",
+      "bureau": "港湾局",
+      "amount": 981151,
+      "prevAmount": 992517,
+      "locator": {
+        "file": "0069_20260127.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "15",
+      "koNo": "1",
+      "mokuNo": "5",
+      "bureau": "港湾局",
+      "amount": 1046739,
+      "prevAmount": 1084388,
+      "locator": {
+        "file": "0070_20260127.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "15",
+      "koNo": "2",
+      "mokuNo": "1",
+      "bureau": "港湾局",
+      "amount": 2071018,
+      "prevAmount": 1354881,
+      "locator": {
+        "file": "0071_20260127.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "15",
+      "koNo": "2",
+      "mokuNo": "2",
+      "bureau": "港湾局",
+      "amount": 3264000,
+      "prevAmount": 3264000,
+      "locator": {
+        "file": "0051_20260126.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "4",
+      "bureau": "港湾局",
+      "amount": 1782584,
+      "prevAmount": 1069116,
+      "locator": {
+        "file": "0072_20260127.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
       "kanNo": "16",
       "koNo": "1",
       "mokuNo": "1",
@@ -1929,6 +4217,110 @@
       "locator": {
         "file": "0016_20260122.pdf",
         "page": 67
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "16",
+      "koNo": "1",
+      "mokuNo": "1",
+      "bureau": "消防局",
+      "amount": 38157739,
+      "prevAmount": 36996428,
+      "locator": {
+        "file": "0017_20260122.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "16",
+      "koNo": "1",
+      "mokuNo": "2",
+      "bureau": "消防局",
+      "amount": 214151,
+      "prevAmount": 215002,
+      "locator": {
+        "file": "0019_20260122.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "16",
+      "koNo": "1",
+      "mokuNo": "3",
+      "bureau": "消防局",
+      "amount": 1614451,
+      "prevAmount": 1750035,
+      "locator": {
+        "file": "0020_20260122.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "16",
+      "koNo": "1",
+      "mokuNo": "4",
+      "bureau": "消防局",
+      "amount": 470240,
+      "prevAmount": 426926,
+      "locator": {
+        "file": "0021_20260122.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "16",
+      "koNo": "1",
+      "mokuNo": "5",
+      "bureau": "消防局",
+      "amount": 983784,
+      "prevAmount": 521999,
+      "locator": {
+        "file": "0022_20260122.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "16",
+      "koNo": "1",
+      "mokuNo": "6",
+      "bureau": "消防局",
+      "amount": 2380804,
+      "prevAmount": 2414648,
+      "locator": {
+        "file": "0023_20260122.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "16",
+      "koNo": "1",
+      "mokuNo": "7",
+      "bureau": "消防局",
+      "amount": 1943552,
+      "prevAmount": 4141224,
+      "locator": {
+        "file": "0024_20260122.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "15",
+      "bureau": "消防局",
+      "amount": 771872,
+      "prevAmount": 628883,
+      "locator": {
+        "file": "0025_20260122.pdf",
+        "page": 1
       }
     },
     {
@@ -2332,6 +4724,32 @@
       "locator": {
         "file": "0004_20260125.pdf",
         "page": 9
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "2",
+      "koNo": "14",
+      "mokuNo": "1",
+      "bureau": "選挙管理委員会事務局",
+      "amount": 985461,
+      "prevAmount": 1245274,
+      "locator": {
+        "file": "0005_20260125.pdf",
+        "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "2",
+      "koNo": "14",
+      "mokuNo": "2",
+      "bureau": "選挙管理委員会事務局",
+      "amount": 739785,
+      "prevAmount": 0,
+      "locator": {
+        "file": "0006_20260125.pdf",
+        "page": 1
       }
     },
     {
@@ -15791,7 +18209,7 @@
       "koNo": "1",
       "mokuNo": "1",
       "bureau": "健康福祉局",
-      "name": "19款１項１目国民健康保険事業費会計繰出金",
+      "name": "国民健康保険事業費会計繰出金",
       "amount": 30610269,
       "shisaiIppan": 16140981,
       "prevAmount": 29918373,

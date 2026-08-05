@@ -288,6 +288,12 @@ export const budgetProjectLineSchema = z.object({
   kubun: z.string().nullable(),
   /** 計画書の頁（廃止事業はハイフン）。原典の表示のまま */
   page: z.string().nullable(),
+  /**
+   * **目次ではなく詳細シートから拾った事業**（#164）。目次に1行も載らない目があるため。
+   * ⚠ `page` の有無では区別できない — **目次にも頁を持たない行がある**（職員人件費・委員報酬）。
+   * 検証で「Σ事業 = 目の計」を張るのは目次由来だけなので、その切り分けにこの印を使う。
+   */
+  fromDetail: z.boolean().optional(),
   locator: locatorSchema,
 });
 export type BudgetProjectLine = z.infer<typeof budgetProjectLineSchema>;

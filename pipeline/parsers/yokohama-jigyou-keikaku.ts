@@ -410,6 +410,8 @@ export function parseYokohamaJigyouKeikaku(
             (w) =>
               !amtTokens.has(w) &&
               num(w.t) === null &&
+              // ⚠ 見出しの款項目が名前に混ざる（継続ページは headY が 0 なので y だけでは弾けない）
+              !/\d+\s*款/.test(w.t) &&
               w.y > headY &&
               w.x0 < nameRight &&
               Math.abs(w.y - yThis) <= 14,
@@ -566,8 +568,8 @@ export function parseYokohamaJigyouKeikaku(
         prevAmount: amt(prevLabel),
         prevShisaiIppan: null,
         kubun: /■\s*(新規|拡充)/.test(h) ? "新規・拡充" : null,
-        // ⚠ 目次由来でないことを **page: null** で区別できるようにしておく
         page: null,
+        fromDetail: true,
         locator: { file: f.filename, page: i + 1 },
       });
     }
@@ -593,20 +595,10 @@ export function parseYokohamaJigyouKeikaku(
     seen.add(k);
     uniq.push(x);
   }
-  // 目の「計」も同じ理由で重複する。**値が食い違ったら落とす**（同じ目の計は一致するはず）
-  const totalByKey = new Map<string, (typeof totals)[number]>();
-  for (const t of totals) {
-    const k = [t.accountName, t.kanNo, t.koNo, t.mokuNo].join("\u0001");
-    const prev = totalByKey.get(k);
-    if (!prev) { totalByKey.set(k, t); continue; }
-    // 分割（複数ファイルが同じ目に事業を持つ）なら計は違う値になる＝足す。
-    // 重複なら同じ値になる＝そのまま。**どちらでもない食い違いは検出できないので、
-    // 目の総額は下の derive で明細と突合する**（ここでは大きい方を採らない）
-    if (prev.amount !== t.amount) prev.amount += t.amount;
-    if (prev.prevAmount != null && t.prevAmount != null && prev.prevAmount !== t.prevAmount) {
-      prev.prevAmount += t.prevAmount;
-    }
-  }
+  // ⚠⚠ **目の「計」はファイル横断で合算してはいけない**（実測）。同じ目が複数ファイルに
+  //   出るとき各ファイルの「計」は**そのファイルの分**で、合算すると 19款1項10目 が
+  //   Σ事業 769,619 に対し「計」11,140,277 のような値になる。**ファイルごとに残す**
+  //   （locator で区別でき、照合もファイル単位でできる）。
 
   return {
     docType: "budget-projects",
@@ -616,7 +608,7 @@ export function parseYokohamaJigyouKeikaku(
     parsedAt: new Date().toISOString(),
     unit: "thousandYen",
     fiscalYear: source.fiscalYear,
-    totals: [...totalByKey.values()],
+    totals,
     facts: uniq,
   };
 }

@@ -705,6 +705,68 @@ if (doc.docType === "project-report") {
   finish(doc.facts.length, "詳細票");
 }
 
+// ---- budget-projects（主な事業だけの独立資料・#164 横浜の事業計画書）------------
+if (doc.docType === "budget-projects") {
+  // ① **Σ事業 = 目の「計」**（原典が印字する）。パーサ側でも張っているが、
+  //    parsed を直接いじられた場合に備えてここでも見る
+  const byMoku = new Map<string, number>();
+  for (const f of doc.facts) {
+    // ⚠ 詳細シートから補った事業は目次に「計」が無いので対象外。
+    //   **`page` の有無では区別できない**（目次にも頁を持たない行がある＝職員人件費・委員報酬）
+    if (f.fromDetail) continue;
+    // ⚠ 同じ目が複数ファイルに分かれるので、**ファイルも鍵に含める**
+    const k = [f.locator.file, f.accountName, f.kanNo, f.koNo ?? "", f.mokuNo ?? ""].join("/");
+    byMoku.set(k, (byMoku.get(k) ?? 0) + f.amount);
+  }
+  // ⚠ **同じファイルの同じ目に「計」が2つ出ることがある**（課ごとに目次が分かれる。
+  //   実測 都市整備局 19款1項10目 は 3,330,418 と 126,468 の2本）。合算して比べる
+  const totalByMoku = new Map<string, { amount: number; t: (typeof doc.totals)[number] }>();
+  for (const t of doc.totals) {
+    const k = [t.locator.file, t.accountName, t.kanNo, t.koNo ?? "", t.mokuNo ?? ""].join("/");
+    const e = totalByMoku.get(k);
+    if (e) e.amount += t.amount;
+    else totalByMoku.set(k, { amount: t.amount, t });
+  }
+  for (const [k, { amount, t }] of totalByMoku) {
+    const got = byMoku.get(k);
+    if (got == null) continue;
+    if (got !== amount) {
+      issues.push({
+        level: "error",
+        message: `${t.bureau} ${t.kanNo}款${t.koNo ?? "-"}項${t.mokuNo ?? "-"}目: Σ事業 ${got.toLocaleString()} が「計」${amount.toLocaleString()} と一致しません`,
+      });
+    }
+  }
+  // ② 事業名の重複（同じ会計・款項目に同名同額が2つある＝重複の落とし漏れ）
+  const seenKey = new Set<string>();
+  for (const f of doc.facts) {
+    const k = [f.accountName, f.kanNo, f.koNo, f.mokuNo, f.name, f.amount].join("/");
+    if (seenKey.has(k)) {
+      issues.push({ level: "error", message: `${f.name}（${f.kanNo}款${f.koNo}項${f.mokuNo}目）が重複しています` });
+    }
+    seenKey.add(k);
+  }
+  // ③ 会計が一般会計だけになっているか（scope の宣言どおり）
+  const accs = [...new Set(doc.facts.map((f) => f.accountName))];
+  if (accs.some((a) => a !== "一般会計")) {
+    issues.push({ level: "error", message: `一般会計以外が混ざっています: ${accs.join(" / ")}` });
+  }
+  // ④ 事業名の汚染（見出し語・印の混入）。**金額でないので Σ が立たない領域**
+  for (const f of doc.facts) {
+    if (/^[○〇◎]/.test(f.name)) {
+      issues.push({ level: "error", message: `事業名に新規・拡充の印が混ざっています: ${f.name}` });
+    }
+    if (/\d+款\d*項?\d*目?/.test(f.name)) {
+      issues.push({ level: "error", message: `事業名に見出しの款項目が混ざっています: ${f.name}` });
+    }
+    if (/^(計|合計)$/.test(f.name) || /課計/.test(f.name)) {
+      issues.push({ level: "error", message: `小計・合計の行が事業として入っています: ${f.name}` });
+    }
+  }
+  if (doc.facts.length === 0) issues.push({ level: "error", message: `事業が0件` });
+  finish(doc.facts.length, "事業");
+}
+
 if (doc.docType !== "municipal-accounts") {
   throw new Error(`未知の docType: ${(doc as { docType: string }).docType}`);
 }
