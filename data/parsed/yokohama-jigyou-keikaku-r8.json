@@ -3,7 +3,7 @@
   "sourceId": "yokohama-jigyou-keikaku-r8",
   "parser": "yokohama-jigyou-keikaku",
   "parserVersion": "0.1.0",
-  "parsedAt": "2026-08-05T15:35:56.982Z",
+  "parsedAt": "2026-08-05T16:02:06.373Z",
   "unit": "thousandYen",
   "fiscalYear": "R8",
   "totals": [
@@ -485,32 +485,6 @@
       "prevAmount": 2651521,
       "locator": {
         "file": "0158_20260121.pdf",
-        "page": 1
-      }
-    },
-    {
-      "accountName": "一般会計",
-      "kanNo": "1",
-      "koNo": "2",
-      "mokuNo": null,
-      "bureau": "経済局",
-      "amount": 757657,
-      "prevAmount": 635181,
-      "locator": {
-        "file": "0161_20260121.pdf",
-        "page": 1
-      }
-    },
-    {
-      "accountName": "一般会計",
-      "kanNo": "1",
-      "koNo": "1",
-      "mokuNo": null,
-      "bureau": "経済局",
-      "amount": 563467,
-      "prevAmount": 547821,
-      "locator": {
-        "file": "0169_20260121.pdf",
         "page": 1
       }
     },
@@ -8564,168 +8538,6 @@
       "page": "3",
       "locator": {
         "file": "0158_20260121.pdf",
-        "page": 1
-      }
-    },
-    {
-      "accountName": "一般会計",
-      "kanNo": "1",
-      "koNo": "2",
-      "mokuNo": null,
-      "bureau": "経済局",
-      "name": "公債費（本場）元金",
-      "amount": 443614,
-      "shisaiIppan": 0,
-      "prevAmount": 381917,
-      "prevShisaiIppan": 0,
-      "kubun": null,
-      "page": "15",
-      "locator": {
-        "file": "0161_20260121.pdf",
-        "page": 1
-      }
-    },
-    {
-      "accountName": "一般会計",
-      "kanNo": "1",
-      "koNo": "2",
-      "mokuNo": null,
-      "bureau": "経済局",
-      "name": "公債費（本場）利子",
-      "amount": 134442,
-      "shisaiIppan": 0,
-      "prevAmount": 73681,
-      "prevShisaiIppan": 0,
-      "kubun": null,
-      "page": "16",
-      "locator": {
-        "file": "0161_20260121.pdf",
-        "page": 1
-      }
-    },
-    {
-      "accountName": "一般会計",
-      "kanNo": "1",
-      "koNo": "2",
-      "mokuNo": null,
-      "bureau": "経済局",
-      "name": "公債諸費（本場）",
-      "amount": 14716,
-      "shisaiIppan": 0,
-      "prevAmount": 5122,
-      "prevShisaiIppan": 0,
-      "kubun": null,
-      "page": "17",
-      "locator": {
-        "file": "0161_20260121.pdf",
-        "page": 1
-      }
-    },
-    {
-      "accountName": "一般会計",
-      "kanNo": "1",
-      "koNo": "2",
-      "mokuNo": null,
-      "bureau": "経済局",
-      "name": "公債費（南部）元金",
-      "amount": 158737,
-      "shisaiIppan": 0,
-      "prevAmount": 167712,
-      "prevShisaiIppan": 0,
-      "kubun": null,
-      "page": "18",
-      "locator": {
-        "file": "0161_20260121.pdf",
-        "page": 1
-      }
-    },
-    {
-      "accountName": "一般会計",
-      "kanNo": "1",
-      "koNo": "2",
-      "mokuNo": null,
-      "bureau": "経済局",
-      "name": "公債費（南部）利子",
-      "amount": 6094,
-      "shisaiIppan": 0,
-      "prevAmount": 6706,
-      "prevShisaiIppan": 0,
-      "kubun": null,
-      "page": "19",
-      "locator": {
-        "file": "0161_20260121.pdf",
-        "page": 1
-      }
-    },
-    {
-      "accountName": "一般会計",
-      "kanNo": "1",
-      "koNo": "2",
-      "mokuNo": null,
-      "bureau": "経済局",
-      "name": "公債諸費（南部）",
-      "amount": 54,
-      "shisaiIppan": 0,
-      "prevAmount": 43,
-      "prevShisaiIppan": 0,
-      "kubun": null,
-      "page": "20",
-      "locator": {
-        "file": "0161_20260121.pdf",
-        "page": 1
-      }
-    },
-    {
-      "accountName": "一般会計",
-      "kanNo": "1",
-      "koNo": "1",
-      "mokuNo": null,
-      "bureau": "経済局",
-      "name": "勤労者福祉共済事業",
-      "amount": 541746,
-      "shisaiIppan": 0,
-      "prevAmount": 526440,
-      "prevShisaiIppan": 0,
-      "kubun": null,
-      "page": "1",
-      "locator": {
-        "file": "0169_20260121.pdf",
-        "page": 1
-      }
-    },
-    {
-      "accountName": "一般会計",
-      "kanNo": "1",
-      "koNo": "1",
-      "mokuNo": null,
-      "bureau": "経済局",
-      "name": "職員人件費",
-      "amount": 20721,
-      "shisaiIppan": 20721,
-      "prevAmount": 20381,
-      "prevShisaiIppan": 20381,
-      "kubun": null,
-      "page": "2",
-      "locator": {
-        "file": "0169_20260121.pdf",
-        "page": 1
-      }
-    },
-    {
-      "accountName": "一般会計",
-      "kanNo": "1",
-      "koNo": "1",
-      "mokuNo": null,
-      "bureau": "経済局",
-      "name": "予備費",
-      "amount": 1000,
-      "shisaiIppan": 0,
-      "prevAmount": 1000,
-      "prevShisaiIppan": 0,
-      "kubun": null,
-      "page": "3",
-      "locator": {
-        "file": "0169_20260121.pdf",
         "page": 1
       }
     },
@@ -30579,6 +30391,78 @@
       "locator": {
         "file": "gikai__0001_20260126.pdf",
         "page": 1
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "16",
+      "bureau": "財政局",
+      "name": "児童手当補助金",
+      "amount": 2952,
+      "shisaiIppan": null,
+      "prevAmount": 2952,
+      "prevShisaiIppan": null,
+      "kubun": null,
+      "page": null,
+      "locator": {
+        "file": "0056_20260126.pdf",
+        "page": 60
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "6",
+      "bureau": "経済局",
+      "name": "中央と畜場費会計繰出金",
+      "amount": 2579388,
+      "shisaiIppan": null,
+      "prevAmount": 2450175,
+      "prevShisaiIppan": null,
+      "kubun": null,
+      "page": null,
+      "locator": {
+        "file": "0158_20260121.pdf",
+        "page": 3
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "8",
+      "bureau": "経済局",
+      "name": "勤労者福祉共済事業費会計繰出金",
+      "amount": 20721,
+      "shisaiIppan": null,
+      "prevAmount": 20381,
+      "prevShisaiIppan": null,
+      "kubun": null,
+      "page": null,
+      "locator": {
+        "file": "0158_20260121.pdf",
+        "page": 4
+      }
+    },
+    {
+      "accountName": "一般会計",
+      "kanNo": "19",
+      "koNo": "1",
+      "mokuNo": "7",
+      "bureau": "こども青少年局",
+      "name": "母子父子寡婦福祉資金会計繰出金",
+      "amount": 44195,
+      "shisaiIppan": null,
+      "prevAmount": 35493,
+      "prevShisaiIppan": null,
+      "kubun": null,
+      "page": null,
+      "locator": {
+        "file": "r8_kodomo_all.pdf",
+        "page": 223
       }
     }
   ]

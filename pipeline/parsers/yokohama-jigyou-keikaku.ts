@@ -211,6 +211,13 @@ export function parseYokohamaJigyouKeikaku(
         accountOf.set(`${Number(m[2])}-${Number(m[3])}-${Number(m[4])}`, m[1]!);
       }
     }
+    // ⚠ **見出しが項・目を持たない目次がある**（`[経済局] １款 ２項`）ので、
+    //   款項目のキーでは引けない。→ **そのファイルで最も多い会計**を既定にする
+    //   （1ファイル＝1会計が原則。これを入れないと中央卸売市場費会計が一般会計の
+    //   議会費に化けて +1,321,124 になった＝実測）。
+    const accCount = new Map<string, number>();
+    for (const a of accountOf.values()) accCount.set(a, (accCount.get(a) ?? 0) + 1);
+    const fileAccount = [...accCount.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] ?? "一般会計";
 
     let head: Head | null = null;
     let group: BudgetProjectLine[] = [];
@@ -364,7 +371,7 @@ export function parseYokohamaJigyouKeikaku(
         head!.accountName !== "一般会計"
           ? head!.accountName
           : accountOf.get(`${Number(head!.kanNo)}-${Number(head!.koNo)}-${Number(head!.mokuNo)}`) ??
-            "一般会計";
+            fileAccount;
       const hd: Head =
         head.accountName !== "一般会計"
           ? head
@@ -372,7 +379,7 @@ export function parseYokohamaJigyouKeikaku(
               ...head,
               accountName:
                 accountOf.get(`${Number(head.kanNo)}-${Number(head.koNo)}-${Number(head.mokuNo)}`) ??
-                "一般会計",
+                fileAccount,
             };
       for (const row of rowsOf(joinSplitNumbers(ws))) {
         const yThis = row[0]!.y;
@@ -503,6 +510,62 @@ export function parseYokohamaJigyouKeikaku(
       throw new Error(`${f.filename}: 「計」で閉じていない事業が ${group.length} 件あります（最後の目の「計」が取れていない）`);
     }
     group = [];
+  }
+
+  // ---- 目次に載らない目を詳細シートから補う -----------------------------------
+  // ⚠⚠ **一部の目は目次に1行も載らず、詳細シートにしかない**（実測。経済局の
+  //   19款1項6目「中央と畜場費会計繰出金」2,579,388 など。19-1-6/7/8 が該当し、
+  //   諸支出金が 14,820,671千円 足りなかった）。**目次だけを読む設計では原理的に届かない**。
+  //   → **目次が1件も持たない目だけ**を詳細シートから補う（両方から採ると二重計上になる）。
+  // ⚠⚠ **目次側の目番号は「無い」ことも「`1・2` の合併」もある**ので、文字列キーでは突合できない
+  //   （公債費は目次が項・目を持たず、素朴に照合したら**詳細シート由来が丸ごと二重計上**になり
+  //   款18 がちょうど2倍になった。監査の `1・2目` も同型）。**含意で判定する**。
+  const isCovered = (acc: string, kan: number, ko: number, moku: number): boolean =>
+    totals.some((t) => {
+      if (t.accountName !== acc || Number(t.kanNo) !== kan) return false;
+      if (t.koNo == null) return true; // 項も目も持たない見出し（公債費）＝款まるごと
+      if (Number(t.koNo) !== ko) return false;
+      if (t.mokuNo == null) return true;
+      return t.mokuNo.split("・").some((x) => Number(x) === moku);
+    });
+  const curLabel = `令和${Number(/\d+/.exec(source.fiscalYear)![0])}年度`;
+  const prevLabel = `令和${Number(/\d+/.exec(source.fiscalYear)![0]) - 1}年度`;
+  for (const f of files) {
+    for (const [i, text] of layoutPages(f.path).entries()) {
+      const h = han(text);
+      const m = /歳出予算科目\s*(\S+?)\s+(\d+)\s*款\s*(\d+)\s*項\s*(\d+)\s*目/.exec(h);
+      if (!m) continue;
+      const [, acc, kanNo, koNo, mokuNo] = m;
+      // 目次が持っている目は目次を正とする（詳細シートは廃止事業を持たないため）
+      if (isCovered(acc!, Number(kanNo), Number(koNo), Number(mokuNo))) continue;
+      if (acc !== "一般会計") continue;
+      // ⚠ **事業名称は折返す**（実測 1,529シート中41件が2行）。ラベル行の続きも拾う
+      const nameM = /事業名称\s+(.+?)\s*$/m.exec(h);
+      const name = (nameM?.[1] ?? "").replace(/[\s　]+/g, "");
+      if (!name) continue;
+      const amt = (label: string): number | null => {
+        const r = new RegExp(`^\\s*${label}\\s+([\\d,]+)`, "m").exec(h);
+        return r ? Number(r[1]!.replace(/,/g, "")) : null;
+      };
+      const cur = amt(curLabel);
+      if (cur == null) continue;
+      facts.push({
+        accountName: acc!,
+        kanNo: String(Number(kanNo)),
+        koNo: String(Number(koNo)),
+        mokuNo: String(Number(mokuNo)),
+        bureau: /事業局課\s+(\S+)/.exec(h)?.[1] ?? "",
+        name,
+        amount: cur,
+        shisaiIppan: null,
+        prevAmount: amt(prevLabel),
+        prevShisaiIppan: null,
+        kubun: /■\s*(新規|拡充)/.test(h) ? "新規・拡充" : null,
+        // ⚠ 目次由来でないことを **page: null** で区別できるようにしておく
+        page: null,
+        locator: { file: f.filename, page: i + 1 },
+      });
+    }
   }
 
   if (facts.length === 0) throw new Error(`${source.id}: 事業を1件も抽出できませんでした`);
