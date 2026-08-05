@@ -714,9 +714,14 @@ if (doc.docType === "budget-projects") {
     // ⚠ 詳細シートから補った事業は目次に「計」が無いので対象外。
     //   **`page` の有無では区別できない**（目次にも頁を持たない行がある＝職員人件費・委員報酬）
     if (f.fromDetail) continue;
-    // ⚠ 同じ目が複数ファイルに分かれるので、**ファイルも鍵に含める**
-    const k = [f.locator.file, f.accountName, f.kanNo, f.koNo ?? "", f.mokuNo ?? ""].join("/");
-    byMoku.set(k, (byMoku.get(k) ?? 0) + f.amount);
+    // ⚠ 同じ目が複数ファイルに分かれるので、**ファイルも鍵に含める**。
+    // ⚠⚠ **目次が款どまりの款では、事業の項・目は後から詳細シートで埋めている**ので、
+    //   鍵に項・目を使うと「計」と噛み合わない（款18 公債費で実測）。
+    //   → **「計」が持っている粒度に合わせて**集計する（下で款キーも作る）。
+    const kMoku = [f.locator.file, f.accountName, f.kanNo, f.koNo ?? "", f.mokuNo ?? ""].join("/");
+    byMoku.set(kMoku, (byMoku.get(kMoku) ?? 0) + f.amount);
+    const kKan = [f.locator.file, f.accountName, f.kanNo, "", ""].join("/");
+    if (kKan !== kMoku) byMoku.set(kKan, (byMoku.get(kKan) ?? 0) + f.amount);
   }
   // ⚠ **同じファイルの同じ目に「計」が2つ出ることがある**（課ごとに目次が分かれる。
   //   実測 都市整備局 19款1項10目 は 3,330,418 と 126,468 の2本）。合算して比べる
