@@ -9558,6 +9558,236 @@
       "checkedAt": "2026-07-14T04:39:09.783Z"
     },
     {
+      "sourceId": "yokohama-jigyou-keikaku-r8",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho171.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260805190926/https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho171.pdf",
+      "waybackTimestamp": "20260805190926",
+      "checkedAt": "2026-08-05T19:10:15.379Z",
+      "sha256Match": true,
+      "waybackBytes": 196039
+    },
+    {
+      "sourceId": "yokohama-jigyou-keikaku-r8",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho17123.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260805191121/https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho17123.pdf",
+      "waybackTimestamp": "20260805191121",
+      "checkedAt": "2026-08-05T19:12:58.316Z",
+      "sha256Match": true,
+      "waybackBytes": 165612
+    },
+    {
+      "sourceId": "yokohama-jigyou-keikaku-r8",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho17131.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260805191306/https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho17131.pdf",
+      "waybackTimestamp": "20260805191306",
+      "checkedAt": "2026-08-05T19:13:38.004Z",
+      "sha256Match": true,
+      "waybackBytes": 126640
+    },
+    {
+      "sourceId": "yokohama-jigyou-keikaku-r8",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho17132.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260805191436/https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho17132.pdf",
+      "waybackTimestamp": "20260805191436",
+      "checkedAt": "2026-08-05T19:15:20.878Z",
+      "sha256Match": true,
+      "waybackBytes": 126958
+    },
+    {
+      "sourceId": "yokohama-jigyou-keikaku-r8",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho17133.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260805191617/https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho17133.pdf",
+      "waybackTimestamp": "20260805191617",
+      "checkedAt": "2026-08-05T19:16:48.666Z",
+      "sha256Match": true,
+      "waybackBytes": 127033
+    },
+    {
+      "sourceId": "yokohama-jigyou-keikaku-r8",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho17141.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260805191716/https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho17141.pdf",
+      "waybackTimestamp": "20260805191716",
+      "checkedAt": "2026-08-05T19:17:40.544Z",
+      "sha256Match": true,
+      "waybackBytes": 127423
+    },
+    {
+      "sourceId": "yokohama-jigyou-keikaku-r8",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho17142.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260805191742/https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho17142.pdf",
+      "waybackTimestamp": "20260805191742",
+      "checkedAt": "2026-08-05T19:17:56.716Z",
+      "sha256Match": true,
+      "waybackBytes": 128996
+    },
+    {
+      "sourceId": "yokohama-jigyou-keikaku-r8",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho19.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260805190446/https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho19.pdf",
+      "waybackTimestamp": "20260805190446",
+      "checkedAt": "2026-08-05T19:06:24.543Z",
+      "sha256Match": true,
+      "waybackBytes": 152091
+    },
+    {
+      "sourceId": "yokohama-jigyou-keikaku-r8",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho19110.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260805190718/https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho19110.pdf",
+      "waybackTimestamp": "20260805190718",
+      "checkedAt": "2026-08-05T19:07:54.975Z",
+      "sha256Match": true,
+      "waybackBytes": 134528
+    },
+    {
+      "sourceId": "yokohama-jigyou-keikaku-r8",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho19117.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260805190843/https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho19117.pdf",
+      "waybackTimestamp": "20260805190843",
+      "checkedAt": "2026-08-05T19:09:20.050Z",
+      "sha256Match": true,
+      "waybackBytes": 148429
+    },
+    {
+      "sourceId": "yokohama-jigyou-keikaku-r8",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho201.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260805191900/https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho201.pdf",
+      "waybackTimestamp": "20260805191900",
+      "checkedAt": "2026-08-05T19:19:18.315Z",
+      "sha256Match": true,
+      "waybackBytes": 139870
+    },
+    {
+      "sourceId": "yokohama-jigyou-keikaku-r8",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho20111.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260805191920/https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho20111.pdf",
+      "waybackTimestamp": "20260805191920",
+      "checkedAt": "2026-08-05T19:19:36.424Z",
+      "sha256Match": true,
+      "waybackBytes": 146061
+    },
+    {
+      "sourceId": "yokohama-jigyou-keikaku-r8",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho20121.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260805191958/https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho20121.pdf",
+      "waybackTimestamp": "20260805191958",
+      "checkedAt": "2026-08-05T19:20:26.546Z",
+      "sha256Match": true,
+      "waybackBytes": 128506
+    },
+    {
+      "sourceId": "yokohama-jigyou-keikaku-r8",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho211.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260805185830/https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho211.pdf",
+      "waybackTimestamp": "20260805185830",
+      "checkedAt": "2026-08-05T18:58:53.093Z",
+      "sha256Match": true,
+      "waybackBytes": 1977341
+    },
+    {
+      "sourceId": "yokohama-jigyou-keikaku-r8",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho221.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260805185927/https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho221.pdf",
+      "waybackTimestamp": "20260805185927",
+      "checkedAt": "2026-08-05T18:59:54.437Z",
+      "sha256Match": true,
+      "waybackBytes": 184120
+    },
+    {
+      "sourceId": "yokohama-jigyou-keikaku-r8",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho222.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260805190020/https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho222.pdf",
+      "waybackTimestamp": "20260805190020",
+      "checkedAt": "2026-08-05T19:01:02.970Z",
+      "sha256Match": true,
+      "waybackBytes": 168946
+    },
+    {
+      "sourceId": "yokohama-jigyou-keikaku-r8",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho231.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260805190151/https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho231.pdf",
+      "waybackTimestamp": "20260805190151",
+      "checkedAt": "2026-08-05T19:02:15.652Z",
+      "sha256Match": true,
+      "waybackBytes": 163438
+    },
+    {
+      "sourceId": "yokohama-jigyou-keikaku-r8",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho241.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260805190223/https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho241.pdf",
+      "waybackTimestamp": "20260805190223",
+      "checkedAt": "2026-08-05T19:02:51.372Z",
+      "sha256Match": true,
+      "waybackBytes": 165562
+    },
+    {
+      "sourceId": "yokohama-jigyou-keikaku-r8",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho251.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260805190356/https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho251.pdf",
+      "waybackTimestamp": "20260805190356",
+      "checkedAt": "2026-08-05T19:04:18.412Z",
+      "sha256Match": true,
+      "waybackBytes": 427301
+    },
+    {
+      "sourceId": "yokohama-jigyou-keikaku-r8",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/zaisei/jigyokeikaku/r8jigyoukeikaku.files/r8-somu-281-jigyoukeikaku.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260805192106/https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/zaisei/jigyokeikaku/r8jigyoukeikaku.files/r8-somu-281-jigyoukeikaku.pdf",
+      "waybackTimestamp": "20260805192106",
+      "checkedAt": "2026-08-05T19:21:29.453Z",
+      "sha256Match": true,
+      "waybackBytes": 1160014
+    },
+    {
+      "sourceId": "yokohama-jigyou-keikaku-r8",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/zaisei/jigyokeikaku/r8jigyoukeikaku.files/r8-somu-282-jigyoukeikaku.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260805192139/https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/zaisei/jigyokeikaku/r8jigyoukeikaku.files/r8-somu-282-jigyoukeikaku.pdf",
+      "waybackTimestamp": "20260805192139",
+      "checkedAt": "2026-08-05T19:22:03.939Z",
+      "sha256Match": true,
+      "waybackBytes": 468227
+    },
+    {
+      "sourceId": "yokohama-jigyou-keikaku-r8",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/zaisei/jigyokeikaku/r8jigyoukeikaku.files/r8-somu-283-jigyoukeikaku.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260805192236/https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/zaisei/jigyokeikaku/r8jigyoukeikaku.files/r8-somu-283-jigyoukeikaku.pdf",
+      "waybackTimestamp": "20260805192236",
+      "checkedAt": "2026-08-05T19:23:42.176Z",
+      "sha256Match": true,
+      "waybackBytes": 650781
+    },
+    {
+      "sourceId": "yokohama-jigyou-keikaku-r8",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/zaisei/jigyokeikaku/r8jigyoukeikaku.files/r8-somu-jigyoukeikaku.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260805192034/https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/zaisei/jigyokeikaku/r8jigyoukeikaku.files/r8-somu-jigyoukeikaku.pdf",
+      "waybackTimestamp": "20260805192034",
+      "checkedAt": "2026-08-05T19:20:50.932Z",
+      "sha256Match": true,
+      "waybackBytes": 1610373
+    },
+    {
       "sourceId": "yokohama-setsumeisho-r3",
       "url": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r3/r3.files/r3ippan.zip",
       "kind": "file",

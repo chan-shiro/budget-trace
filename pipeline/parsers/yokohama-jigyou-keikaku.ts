@@ -347,7 +347,9 @@ export function parseYokohamaJigyouKeikaku(
       const numLeft = cols.numLeft;
       const nameLeft = cols.nameLeft;
       // 継続ページには見出しが無いので、そのページは上端から読む
-      const headY = hdr ? cols.headY : 0;
+      // ⚠ 1ページに目次ブロックが複数あるとき、**2つ目以降は自分の見出しより下だけ**を見る
+      //   （そうしないと2つ目のブロックの列見出しが名前に丸ごと入る＝実測）
+      let headY = hdr ? cols.headY : 0;
 
       const h = parseHead(text);
       // ⚠⚠ **継続ページが同じ見出しを繰り返す型がある**（実測 建築局 11款1項1目 は p.1・p.2 とも
@@ -386,13 +388,37 @@ export function parseYokohamaJigyouKeikaku(
                 accountOf.get(`${Number(head.kanNo)}-${Number(head.koNo)}-${Number(head.mokuNo)}`) ??
                 fileAccount,
             };
-      for (const row of rowsOf(joinSplitNumbers(ws))) {
+      // ⚠⚠ **名前の窓を固定の ±14pt にしてはいけない**（レビューで発覚）。行ピッチが詰まった
+      //   目次（教育委員会 0214）では**隣の行の折返し断片を巻き込み**、4行を超える折返しでは
+      //   **窓の外の行を落とす**。実測で 42件の事業名が壊れ、`推進事業グローバル教育推進事業
+      //   グローバル人材育成に` のような名前が**そのまま画面に出ていた**。
+      //   ⚠ 金額は全件正しく Σ=計 も款/目の突合も全緑なので、**ゲートは何も言わない**。
+      //   → **隣り合う金額行の中間**を境界にする（行ピッチに追随する）。
+      const allRows = rowsOf(joinSplitNumbers(ws));
+      const dataYs = allRows
+        .filter((r) => amountsOf(r, cols!.nameLeft).vals.length >= 6)
+        .map((r) => r[0]!.y);
+      const bandOf = (y: number): [number, number] => {
+        const i = dataYs.indexOf(y);
+        const prev = i > 0 ? dataYs[i - 1]! : headY;
+        const next = i >= 0 && i < dataYs.length - 1 ? dataYs[i + 1]! : y + (y - prev);
+        return [(prev + y) / 2, (y + next) / 2];
+      };
+      for (const row of allRows) {
         const yThis = row[0]!.y;
         // ⚠⚠ **1ページに目次ブロックが2つ以上あることがある**（実測 都市整備局 2026_01_19.pdf は
         //   `19款1項10目` と `19款1項17目` が同じページに並ぶ）。ページ単位で見出しを1つだけ
         //   読むと、**後半のブロックの事業が前半の目に入る**（126,468 が 10目 と 17目 で
         //   ずれた）。→ **行ごとに見出しを検出して切り替える**。
-        const rowText = row.map((w) => w.t).join("");
+        // ⚠ **見出しが2行に割れることがある**（`19款1項17目…` と `[都市整備局]（単位：千円）` が
+        //   別の y。実測 2026_01_19.pdf）。行単位で見ると見出しと認識できず、
+        //   **2つ目のブロックの事業が1つ目の目に入る**（126,468 が 10目 と 17目 でずれた）。
+        //   → 見出しの判定だけ**近傍（±8pt）の語を合わせて**行う。
+        const rowText = ws
+          .filter((w) => Math.abs(w.y - yThis) <= 8)
+          .sort((a, b) => a.y - b.y || a.x0 - b.x0)
+          .map((w) => w.t)
+          .join("");
         if (/\[[^\]]{2,20}\]/.test(rowText) && /\d+\s*款/.test(han(rowText))) {
           const h2 = parseHead(rowText);
           // ⚠ 継続ページは**同じ見出しを繰り返す**ので、変わったときだけ切り替える
@@ -404,6 +430,13 @@ export function parseYokohamaJigyouKeikaku(
               h2.mokuNo !== head.mokuNo ||
               h2.accountName !== head.accountName);
           if (h2 && changed) {
+            // ⚠ 見出しの直下には列見出し（`事業費` `市債+一財` …）が2〜3行あり、
+            //   これを名前から外さないと**丸ごと事業名に入る**（実測）。
+            //   固定の pt では足りないので、**次の列見出し行の y** を基準にする。
+            const nextHdr = allRows.find(
+              (r) => r[0]!.y > yThis && r.filter((w) => isMoneyHdr(w.t)).length >= 2,
+            );
+            headY = nextHdr ? nextHdr[0]!.y : yThis + 30;
             if (group.length > 0) {
               throw new Error(
                 `${f.filename} p.${p}: 目次ブロックが「計」で閉じないまま次の見出しが来ました（${group.length}事業）`,
@@ -430,6 +463,7 @@ export function parseYokohamaJigyouKeikaku(
         //   ②**見出しの文字**（`19款１項１目`）→ 1行目の事業で `19款１項１目国民健康保険…` になった。
         //     行そのものは headY で弾いているが、**名前の窓（±14pt）は見出しへ届く**
         const nameRight = Math.max(...ws.map((w) => w.x1)) - COL.kubunFromRight;
+        const band = bandOf(yThis);
         const name = ws
           .filter(
             (w) =>
@@ -443,7 +477,8 @@ export function parseYokohamaJigyouKeikaku(
               !/\d+\s*款/.test(w.t) &&
               w.y > headY &&
               w.x0 < nameRight &&
-              Math.abs(w.y - yThis) <= 14,
+              w.y > band[0] &&
+              w.y < band[1],
           )
           .sort((a, b) => a.y - b.y || a.x0 - b.x0)
           .map((w) => w.t)
@@ -521,12 +556,21 @@ export function parseYokohamaJigyouKeikaku(
         const marked = ws.some(
           (w) => w.x0 >= pageRight - COL.kubunFromRight && Math.abs(w.y - yThis) <= 8 && /[○〇◎]/.test(w.t),
         );
+        // ⚠⚠ **`hd` はページ単位で1回しか計算されない** — 行途中で見出しが切り替わっても
+        //   反映されず、**2つ目のブロックの事業が1つ目の目に入る**（126,468 が 10目 のまま。
+        //   `totals` は正しく 17目 で閉じているのに fact だけずれる＝実測）。
+        //   → **その行の時点の `head`** を使う。
+        const cur = head!;
+        const curAcc =
+          cur.accountName !== "一般会計"
+            ? cur.accountName
+            : accountOf.get(`${Number(cur.kanNo)}-${Number(cur.koNo)}-${Number(cur.mokuNo)}`) ?? fileAccount;
         const line: BudgetProjectLine = {
-          accountName: hd.accountName,
-          kanNo: hd.kanNo,
-          koNo: hd.koNo,
-          mokuNo: hd.mokuNo,
-          bureau: hd.bureau,
+          accountName: curAcc,
+          kanNo: cur.kanNo,
+          koNo: cur.koNo,
+          mokuNo: cur.mokuNo,
+          bureau: cur.bureau,
           name,
           amount: amts[0] ?? 0,
           shisaiIppan: amts[1],
