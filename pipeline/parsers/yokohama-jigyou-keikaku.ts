@@ -198,6 +198,20 @@ export function parseYokohamaJigyouKeikaku(
     const texts = layoutPages(f.path);
     const byPage = pageWords(f.path);
 
+    // ⚠⚠ **目次の見出しには会計名が無いことがある** — 特別会計のファイルでも
+    //   `[経済局] １款１項１目` としか書かず、素で読むと**一般会計の議会費に化ける**
+    //   （全329本に広げて発覚。62本の最小集合では表に出なかった）。
+    //   → **詳細シートの `歳出予算科目 <会計名> N款N項N目` から会計を引く**。
+    //     ここは会計名が必ず明記されている唯一の場所。
+    const accountOf = new Map<string, string>();
+    for (const t of texts) {
+      for (const m of han(t).matchAll(
+        /歳出予算科目\s*(\S+?会計[^\s\d]*)\s*(\d+)\s*款\s*(\d+)\s*項\s*(\d+)\s*目/g,
+      )) {
+        accountOf.set(`${Number(m[2])}-${Number(m[3])}-${Number(m[4])}`, m[1]!);
+      }
+    }
+
     let head: Head | null = null;
     let group: BudgetProjectLine[] = [];
     /** 計画書頁の欄が空だった行（枠見出しの候補。実在の事業もここに入る） */
@@ -206,8 +220,20 @@ export function parseYokohamaJigyouKeikaku(
     let cols: { numLeft: number; nameLeft: number; headY: number } | null = null;
 
     /** 目のグループを「計」で閉じる。**Σ事業 = 計** がこの資料の一次ゲート */
+    /** 「計」を記録するときの会計名（目次に無ければ詳細シートから引く） */
+    let headAcc: () => string = () => "一般会計";
     const closeGroup = (tot: (number | null)[], page: number) => {
       if (!head) return;
+      // ⚠⚠ **一般会計以外はゲートの対象から外す**（2026-08-06）。全329本に広げると
+      //   特別会計・企業会計のファイルが入り、**様式の変種の尾が延々と続く**（会計名が
+      //   局名に埋まっている `[港湾局埋立事業会計]`、款項目を持たない見出し、等）。
+      //   このソースの scope は**一般会計**で、収録しないものの版面に付き合う理由が無い。
+      //   ⚠ 落とすのは「ゲートと収録」だけで、**会計の判別自体はしている**（黙って
+      //     一般会計に混ぜない）。
+      if (headAcc() !== "一般会計") {
+        group = [];
+        return;
+      }
       const label = `[${head.bureau}] ${head.kanNo}款${head.koNo ?? "-"}項${head.mokuNo ?? "-"}目`;
       let use = group;
       let sum = use.reduce((a, x) => a + x.amount, 0);
@@ -242,7 +268,7 @@ export function parseYokohamaJigyouKeikaku(
         );
       }
       totals.push({
-        accountName: head.accountName,
+        accountName: headAcc(),
         kanNo: head.kanNo,
         koNo: head.koNo,
         mokuNo: head.mokuNo,
@@ -333,7 +359,21 @@ export function parseYokohamaJigyouKeikaku(
       }
       if (isNew && h) head = h;
       if (!head) continue;
-      const hd = head;
+      // 見出しが会計名を書いていない場合だけ、詳細シート由来の対応表で補う
+      headAcc = () =>
+        head!.accountName !== "一般会計"
+          ? head!.accountName
+          : accountOf.get(`${Number(head!.kanNo)}-${Number(head!.koNo)}-${Number(head!.mokuNo)}`) ??
+            "一般会計";
+      const hd: Head =
+        head.accountName !== "一般会計"
+          ? head
+          : {
+              ...head,
+              accountName:
+                accountOf.get(`${Number(head.kanNo)}-${Number(head.koNo)}-${Number(head.mokuNo)}`) ??
+                "一般会計",
+            };
       for (const row of rowsOf(joinSplitNumbers(ws))) {
         const yThis = row[0]!.y;
         // ⚠ **見出しより上の行は見ない** — `[医療局] ８款１項１目（単位：千円）` の
@@ -405,6 +445,9 @@ export function parseYokohamaJigyouKeikaku(
         //   小計の原文は `（○○課計）` なので、**括弧を残したまま**判定する
         //   （折返しで語順が崩れた `計）（福祉保健課` は先頭の `計）` で拾う）。
         if (/課計/.test(name) || /^計）/.test(name)) continue;
+        // ⚠ **ファイル末尾に `事業費 合計` の総計行がある**（実測 経済局 0163。
+        //   `（令和７年度終了事業）` という別ブロックの後に置かれる）。事業として数えない
+        if (/合計$/.test(rowName)) continue;
         // ⚠⚠ **枠（グループ）の見出し行がある** — `学校特別営繕費（枠的公共）` は配下の事業の
         //   合計を持つ行で、**そのまま事業として数えると二重計上**になる（実測 +15,313,643）。
         //   見分けは**計画書頁の欄が無いこと**（事業には番号か `-`＝廃止 が必ず入る）。
@@ -456,12 +499,46 @@ export function parseYokohamaJigyouKeikaku(
         group.push(line);
       }
     }
-    if (group.length > 0) {
+    if (group.length > 0 && headAcc() === "一般会計") {
       throw new Error(`${f.filename}: 「計」で閉じていない事業が ${group.length} 件あります（最後の目の「計」が取れていない）`);
     }
+    group = [];
   }
 
   if (facts.length === 0) throw new Error(`${source.id}: 事業を1件も抽出できませんでした`);
+
+  // ---- 重複を落とす -----------------------------------------------------------
+  // ⚠⚠ **発行元は同じ事業を「款単位の一括」と「目単位の個別」の両方に載せる**（全329本）。
+  //   人が「一般会計を1回ずつ含む最小集合」を選ぶ方式は**不完全になった**（偵察の62本には
+  //   19款1項6・7・8目の見出しがどこにも無く、諸支出金が 14,820,671千円 足りなかった）。
+  //   どのファイルがどの目を持つかは**開けるまで分からない**ので、全部入れて機械で解く。
+  //
+  // ⚠ **「同じ目が2ファイルに出る」には2種類ある**ので、目の単位で落としてはいけない:
+  //   ①重複（一括と目別が同じ事業を載せる）→ **落とす**
+  //   ②分割（複数の局・課が同じ目に事業を持つ）→ **足す**
+  //   → **事業の単位**（会計・款項目・事業名・金額）で見れば、①は同じ行・②は違う行になる。
+  const seen = new Set<string>();
+  const uniq: BudgetProjectLine[] = [];
+  for (const x of facts) {
+    const k = [x.accountName, x.kanNo, x.koNo, x.mokuNo, x.name, x.amount, x.prevAmount].join("\u0001");
+    if (seen.has(k)) continue;
+    seen.add(k);
+    uniq.push(x);
+  }
+  // 目の「計」も同じ理由で重複する。**値が食い違ったら落とす**（同じ目の計は一致するはず）
+  const totalByKey = new Map<string, (typeof totals)[number]>();
+  for (const t of totals) {
+    const k = [t.accountName, t.kanNo, t.koNo, t.mokuNo].join("\u0001");
+    const prev = totalByKey.get(k);
+    if (!prev) { totalByKey.set(k, t); continue; }
+    // 分割（複数ファイルが同じ目に事業を持つ）なら計は違う値になる＝足す。
+    // 重複なら同じ値になる＝そのまま。**どちらでもない食い違いは検出できないので、
+    // 目の総額は下の derive で明細と突合する**（ここでは大きい方を採らない）
+    if (prev.amount !== t.amount) prev.amount += t.amount;
+    if (prev.prevAmount != null && t.prevAmount != null && prev.prevAmount !== t.prevAmount) {
+      prev.prevAmount += t.prevAmount;
+    }
+  }
 
   return {
     docType: "budget-projects",
@@ -471,7 +548,7 @@ export function parseYokohamaJigyouKeikaku(
     parsedAt: new Date().toISOString(),
     unit: "thousandYen",
     fiscalYear: source.fiscalYear,
-    totals,
-    facts,
+    totals: [...totalByKey.values()],
+    facts: uniq,
   };
 }

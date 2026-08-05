@@ -5,434 +5,2303 @@
       "filename": "r8jigyoukeikakusho2.pdf",
       "sha256": "245c2dc6869f5c13715ea212c4ebedd46e6b5be1a98babd5b608738f04271ae9",
       "bytes": 676473,
-      "fetchedAt": "2026-08-04T08:18:32.846Z",
+      "fetchedAt": "2026-08-05T15:31:03.968Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho2.pdf"
+    },
+    {
+      "filename": "r8jigyoukeikakusho211.pdf",
+      "sha256": "db437c4a2e964f59d85ba8cbf3c384469a79b35e76fe6c1f4ceed48d6a57e7ac",
+      "bytes": 1977341,
+      "fetchedAt": "2026-08-05T15:31:04.329Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho211.pdf"
+    },
+    {
+      "filename": "r8jigyoukeikakusho221.pdf",
+      "sha256": "baa7aecce93e7c3b9c28b3fb2844c82f7f0934014912261cfadc4c7f5e72b4ac",
+      "bytes": 184120,
+      "fetchedAt": "2026-08-05T15:31:04.670Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho221.pdf"
+    },
+    {
+      "filename": "r8jigyoukeikakusho222.pdf",
+      "sha256": "952e01df81f9a81e5a27f3f086a9a3d50d3bf30c38555094ababccb7ccc090d6",
+      "bytes": 168946,
+      "fetchedAt": "2026-08-05T15:31:04.994Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho222.pdf"
+    },
+    {
+      "filename": "r8jigyoukeikakusho231.pdf",
+      "sha256": "e5776598636ac6f01b865d4c63dd4e3895f595fa2a76b5765f62e4a4714c7ec7",
+      "bytes": 163438,
+      "fetchedAt": "2026-08-05T15:31:05.317Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho231.pdf"
+    },
+    {
+      "filename": "r8jigyoukeikakusho241.pdf",
+      "sha256": "3ca26cc2ecb565530dfc59301f239d190b45e564cef16c01d58d238b6eaefe1f",
+      "bytes": 165562,
+      "fetchedAt": "2026-08-05T15:31:05.641Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho241.pdf"
+    },
+    {
+      "filename": "r8jigyoukeikakusho251.pdf",
+      "sha256": "a99c21b93cd78bef1085aa02b9c26fe09e9f2b41a4ab3cdc09590e577f4cc22e",
+      "bytes": 427301,
+      "fetchedAt": "2026-08-05T15:31:05.972Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho251.pdf"
     },
     {
       "filename": "r8jigyoukeikakusho19.pdf",
       "sha256": "bab33d8f64afd1b18eb531be6f4d940e61c9e44f25f4acadc019f196b08c4dc5",
       "bytes": 152091,
-      "fetchedAt": "2026-08-04T08:18:33.174Z",
+      "fetchedAt": "2026-08-05T15:31:06.298Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho19.pdf"
+    },
+    {
+      "filename": "r8jigyoukeikakusho19110.pdf",
+      "sha256": "767bab5db8b74510a2b1c3b02b0dea4593d0acbb76bf07095a680841d1f03090",
+      "bytes": 134528,
+      "fetchedAt": "2026-08-05T15:31:06.622Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho19110.pdf"
+    },
+    {
+      "filename": "r8jigyoukeikakusho19117.pdf",
+      "sha256": "94e5b39cdf632a6f1455e787f828f0797a78d4d7694007ddc806a7469c6add68",
+      "bytes": 148429,
+      "fetchedAt": "2026-08-05T15:31:06.946Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho19117.pdf"
+    },
+    {
+      "filename": "r8jigyoukeikakusho171.pdf",
+      "sha256": "ac2e0489d94227e03ca31532c7b21603d44f4065f420e5e10137d9de8e56513f",
+      "bytes": 196039,
+      "fetchedAt": "2026-08-05T15:31:07.270Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho171.pdf"
+    },
+    {
+      "filename": "r8jigyoukeikakusho17123.pdf",
+      "sha256": "f645cdac989ba5b3638379b4add0101be8db638a4cbf829894d9dcd6f70c7fdb",
+      "bytes": 165612,
+      "fetchedAt": "2026-08-05T15:31:07.596Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho17123.pdf"
+    },
+    {
+      "filename": "r8jigyoukeikakusho17131.pdf",
+      "sha256": "07907672b8d219f44eea7160fa81f036aa238e152c13daee1245eb7fca4571c9",
+      "bytes": 126640,
+      "fetchedAt": "2026-08-05T15:31:07.924Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho17131.pdf"
+    },
+    {
+      "filename": "r8jigyoukeikakusho17132.pdf",
+      "sha256": "9d887ba08eae8541b18e6fb20f08e3d9527c74b4f44d0202490fa69501ff7418",
+      "bytes": 126958,
+      "fetchedAt": "2026-08-05T15:31:08.249Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho17132.pdf"
+    },
+    {
+      "filename": "r8jigyoukeikakusho17133.pdf",
+      "sha256": "270f907a39c6262db8c8f733483bbc54cbebd0386ceea51474b69647abb44d84",
+      "bytes": 127033,
+      "fetchedAt": "2026-08-05T15:31:08.574Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho17133.pdf"
+    },
+    {
+      "filename": "r8jigyoukeikakusho17141.pdf",
+      "sha256": "1059cf6899379f35f93337835a9bd2ca73d41957aecb47ead6891d42242fff12",
+      "bytes": 127423,
+      "fetchedAt": "2026-08-05T15:31:08.899Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho17141.pdf"
+    },
+    {
+      "filename": "r8jigyoukeikakusho17142.pdf",
+      "sha256": "de2defe82f31e0a07f61818db8a9bc79fb0e21197dc52336c72adda0fb645c8a",
+      "bytes": 128996,
+      "fetchedAt": "2026-08-05T15:31:09.223Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho17142.pdf"
+    },
+    {
+      "filename": "r8jigyoukeikakusho201.pdf",
+      "sha256": "e4e5e1c321ed41492441e761de285e49b38d187e92f98340bfc8a5e9ffd59129",
+      "bytes": 139870,
+      "fetchedAt": "2026-08-05T15:31:09.548Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho201.pdf"
+    },
+    {
+      "filename": "r8jigyoukeikakusho20111.pdf",
+      "sha256": "57319a6f7fa9720c3e19b4bf7da8ae365414244b1cc38e8c338ccbfbd56c383d",
+      "bytes": 146061,
+      "fetchedAt": "2026-08-05T15:31:09.873Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho20111.pdf"
+    },
+    {
+      "filename": "r8jigyoukeikakusho20121.pdf",
+      "sha256": "6608109ea29413812caf0c8a2b6835e81a0fc7924b3dad72cac4b63b07fd9709",
+      "bytes": 128506,
+      "fetchedAt": "2026-08-05T15:31:10.198Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho20121.pdf"
     },
     {
       "filename": "r8-somu-jigyoukeikaku.pdf",
       "sha256": "8ff942de11bbaadf8a9c028f4a6740f2eebbe712ca0a569aea2c43190e44ed4d",
       "bytes": 1610373,
-      "fetchedAt": "2026-08-04T08:18:33.596Z",
+      "fetchedAt": "2026-08-05T15:31:10.546Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/zaisei/jigyokeikaku/r8jigyoukeikaku.files/r8-somu-jigyoukeikaku.pdf"
+    },
+    {
+      "filename": "r8-somu-281-jigyoukeikaku.pdf",
+      "sha256": "87d88a2df8b64468d0b47294c8534c909707648f6d50bdcc9fc343d363abee97",
+      "bytes": 1160014,
+      "fetchedAt": "2026-08-05T15:31:10.883Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/zaisei/jigyokeikaku/r8jigyoukeikaku.files/r8-somu-281-jigyoukeikaku.pdf"
+    },
+    {
+      "filename": "r8-somu-282-jigyoukeikaku.pdf",
+      "sha256": "e6e9ef86bdaee6ad147f879c2f61ecb3e1b2e0f19a9a900af75f3b33fa77f9c3",
+      "bytes": 468227,
+      "fetchedAt": "2026-08-05T15:31:11.212Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/zaisei/jigyokeikaku/r8jigyoukeikaku.files/r8-somu-282-jigyoukeikaku.pdf"
+    },
+    {
+      "filename": "r8-somu-283-jigyoukeikaku.pdf",
+      "sha256": "cae8fb2179cb621dcd440625157a2c113e30ce1c5859e7935d4bbcad213e4ade",
+      "bytes": 650781,
+      "fetchedAt": "2026-08-05T15:31:11.543Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/zaisei/jigyokeikaku/r8jigyoukeikaku.files/r8-somu-283-jigyoukeikaku.pdf"
+    },
+    {
+      "filename": "r8-somu-19115-jigyoukeikaku.pdf",
+      "sha256": "9494a76c73f42f99a72e8cd9e0e733201a3bbf7b29537960c92103599f81db1f",
+      "bytes": 361381,
+      "fetchedAt": "2026-08-05T15:31:11.868Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/zaisei/jigyokeikaku/r8jigyoukeikaku.files/r8-somu-19115-jigyoukeikaku.pdf"
     },
     {
       "filename": "0088_20260121.pdf",
       "sha256": "92729303041294b808959e7941027996262100778e0590c6ab9f21cb4b188202",
       "bytes": 655135,
-      "fetchedAt": "2026-08-04T08:18:33.959Z",
+      "fetchedAt": "2026-08-05T15:31:12.198Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/seisaku/jigyokeikaku/r8jigyoukeikaku.files/0088_20260121.pdf"
+    },
+    {
+      "filename": "0086_20260121.pdf",
+      "sha256": "01e85218259d0ee9df0e4fe6d03a50d974a7c650c1a873067b2e9d5b292b3a8a",
+      "bytes": 631442,
+      "fetchedAt": "2026-08-05T15:31:12.529Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/seisaku/jigyokeikaku/r8jigyoukeikaku.files/0086_20260121.pdf"
+    },
+    {
+      "filename": "0085_20260121.pdf",
+      "sha256": "39f2ce1cb0bb2550466229fd1e7d60c014fd6b2212f4ae4e21ef816598127c4f",
+      "bytes": 273425,
+      "fetchedAt": "2026-08-05T15:31:12.857Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/seisaku/jigyokeikaku/r8jigyoukeikaku.files/0085_20260121.pdf"
     },
     {
       "filename": "0004_20260123.pdf",
       "sha256": "7b4afe50c80a4537441e2a51eb8bc7a276233f64e4023c973496880d7ea7c863",
       "bytes": 380217,
-      "fetchedAt": "2026-08-04T08:18:34.310Z",
+      "fetchedAt": "2026-08-05T15:31:13.191Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/R07izen/digital/jigyokeikaku/r8jigyoukeikaku.files/0004_20260123.pdf"
     },
     {
       "filename": "0056_20260126.pdf",
       "sha256": "fee967eb9c8d50158e3de2204d611ba19d1061740a49f3ce51502dc27ff8ac04",
       "bytes": 967260,
-      "fetchedAt": "2026-08-04T08:18:34.906Z",
+      "fetchedAt": "2026-08-05T15:31:13.527Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0056_20260126.pdf"
+    },
+    {
+      "filename": "0054_20260126.pdf",
+      "sha256": "fdec1bede1209bf268d37551df9651e7582a71dcc333196f2f547e2c6555ce6e",
+      "bytes": 855577,
+      "fetchedAt": "2026-08-05T15:31:13.861Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0054_20260126.pdf"
+    },
+    {
+      "filename": "0055_20260126.pdf",
+      "sha256": "63e9313228cc3379b5500465a7868bfdfcc0f19c55506a736f57acc6e6ce6262",
+      "bytes": 350425,
+      "fetchedAt": "2026-08-05T15:31:14.187Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0055_20260126.pdf"
+    },
+    {
+      "filename": "0042_20260123.pdf",
+      "sha256": "f798349d1ab3a143c90d95a5727419c495afc2a46f6627ae8f6fe65aa2bad0ed",
+      "bytes": 271786,
+      "fetchedAt": "2026-08-05T15:31:14.513Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0042_20260123.pdf"
+    },
+    {
+      "filename": "0043_20260123.pdf",
+      "sha256": "5a4d630a5cc617bcf27e0f563f7c706e7d7124193bb2462393d505cfe5c1bb8d",
+      "bytes": 193652,
+      "fetchedAt": "2026-08-05T15:31:14.838Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0043_20260123.pdf"
+    },
+    {
+      "filename": "0044_20260123.pdf",
+      "sha256": "075fbbe3b1976449bacdea2ed43d46ccb981ed15750561f9194a17b180a5be76",
+      "bytes": 479334,
+      "fetchedAt": "2026-08-05T15:31:15.167Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0044_20260123.pdf"
+    },
+    {
+      "filename": "0045_20260123.pdf",
+      "sha256": "85d032a977bc54da48de0393f23fcc5f61591bbd167aaa83513479d77772526c",
+      "bytes": 193518,
+      "fetchedAt": "2026-08-05T15:31:15.493Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0045_20260123.pdf"
+    },
+    {
+      "filename": "0046_20260123.pdf",
+      "sha256": "53ac4991e8dfb7dbec95cd11e5fc69c990a66d6f54b646d35e39a5ab5bf981fb",
+      "bytes": 175888,
+      "fetchedAt": "2026-08-05T15:31:15.818Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0046_20260123.pdf"
+    },
+    {
+      "filename": "0047_20260123.pdf",
+      "sha256": "a49bff9e443fc8eeec79d7239d543977adc3c45a16b340385e678f0de6ad5404",
+      "bytes": 150996,
+      "fetchedAt": "2026-08-05T15:31:16.144Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0047_20260123.pdf"
+    },
+    {
+      "filename": "0048_20260123.pdf",
+      "sha256": "5749bc003e044ebb5ba3d8d133fdab1d53ad044b8b6c07133c5c6545f776e968",
+      "bytes": 191809,
+      "fetchedAt": "2026-08-05T15:31:16.469Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0048_20260123.pdf"
+    },
+    {
+      "filename": "0049_20260123.pdf",
+      "sha256": "97168e55603cfde26427e1027bb8ea1b90d1a6168d22bc3710e82fcca448be73",
+      "bytes": 268037,
+      "fetchedAt": "2026-08-05T15:31:16.795Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0049_20260123.pdf"
+    },
+    {
+      "filename": "0050_20260123.pdf",
+      "sha256": "f5373116578a879c25885b6d25b4c339ec1bce67dbba1d771990fe8e7280a119",
+      "bytes": 163694,
+      "fetchedAt": "2026-08-05T15:31:17.118Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0050_20260123.pdf"
+    },
+    {
+      "filename": "0051_20260123.pdf",
+      "sha256": "616c71bb40077ba5a1790c2659366a91cb1067500e3c8fc7c972bfddb5c65610",
+      "bytes": 224041,
+      "fetchedAt": "2026-08-05T15:31:17.443Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0051_20260123.pdf"
+    },
+    {
+      "filename": "0052_20260123.pdf",
+      "sha256": "77b5a19e8bece275bf2932a8617de45f40609acfe249bb578f2c8d3c0699c70a",
+      "bytes": 226076,
+      "fetchedAt": "2026-08-05T15:31:17.769Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0052_20260123.pdf"
     },
     {
       "filename": "R8kokusai.pdf",
       "sha256": "bc7827244c5cb659ed27319da21ffa6d2d5c745231a727374ea1c1f243293391",
       "bytes": 379637,
-      "fetchedAt": "2026-08-04T08:18:35.246Z",
+      "fetchedAt": "2026-08-05T15:31:18.110Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/R07izen/kokusai/jigyoukeikaku/r8jigyoukeikaku.files/R8kokusai.pdf"
     },
     {
       "filename": "0021_20260126.pdf",
       "sha256": "9a8f3be54d88694a78ea71c706a15d25506f24f82261e800b91398cec76c8526",
       "bytes": 1023716,
-      "fetchedAt": "2026-08-04T08:18:35.626Z",
+      "fetchedAt": "2026-08-05T15:31:18.447Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shimin/jigyoukeikaku/r8jigyoukeikaku.files/0021_20260126.pdf"
+    },
+    {
+      "filename": "0022_20260126.pdf",
+      "sha256": "335b2f2c85a2f97175d4e1d48910a278438d7f638b28ff221a90dd9aaf69eb91",
+      "bytes": 381716,
+      "fetchedAt": "2026-08-05T15:31:18.774Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shimin/jigyoukeikaku/r8jigyoukeikaku.files/0022_20260126.pdf"
+    },
+    {
+      "filename": "0023_20260126.pdf",
+      "sha256": "a47d92a9302d29971d910058f88e5529eaf01a06d3af177e2f89616bc13d23e7",
+      "bytes": 291736,
+      "fetchedAt": "2026-08-05T15:31:19.101Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shimin/jigyoukeikaku/r8jigyoukeikaku.files/0023_20260126.pdf"
+    },
+    {
+      "filename": "0024_20260126.pdf",
+      "sha256": "69f07539273ea7b6becdf84c2bc9d8089511af02e6904dfa8234d97309f8b160",
+      "bytes": 524516,
+      "fetchedAt": "2026-08-05T15:31:19.429Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shimin/jigyoukeikaku/r8jigyoukeikaku.files/0024_20260126.pdf"
+    },
+    {
+      "filename": "0025_20260126.pdf",
+      "sha256": "f8a732181b495a8a08f2f0266643756ad44754b42124ce1da0552a3cb70c25a0",
+      "bytes": 218362,
+      "fetchedAt": "2026-08-05T15:31:19.754Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shimin/jigyoukeikaku/r8jigyoukeikaku.files/0025_20260126.pdf"
+    },
+    {
+      "filename": "0026_20260126.pdf",
+      "sha256": "d9138e160b5aa334b931f54a79deea8e757bdf5e45225e3bb6b97d69b19efb83",
+      "bytes": 442604,
+      "fetchedAt": "2026-08-05T15:31:20.082Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shimin/jigyoukeikaku/r8jigyoukeikaku.files/0026_20260126.pdf"
+    },
+    {
+      "filename": "0027_20260126.pdf",
+      "sha256": "c41e62cbf6e5e6ad330be865eadd1ed49283df6767e2e2c5ee4071cda5a138cd",
+      "bytes": 361174,
+      "fetchedAt": "2026-08-05T15:31:20.408Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shimin/jigyoukeikaku/r8jigyoukeikaku.files/0027_20260126.pdf"
     },
     {
       "filename": "0012_20260123.pdf",
       "sha256": "c04611ed518ac54a8a2a12a99cf191534eb86f5da150a11495a39f5af8cf756a",
       "bytes": 933770,
-      "fetchedAt": "2026-08-04T08:18:36.016Z",
+      "fetchedAt": "2026-08-05T15:31:20.746Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/bunko/jigyoukeikaku/r8jigyoukeikaku.files/0012_20260123.pdf"
+    },
+    {
+      "filename": "0008_20260123.pdf",
+      "sha256": "60f86d805f351500cfe5ccb18a702d70fcfc99e0bcd0b8ccede8e91898fc0e25",
+      "bytes": 168696,
+      "fetchedAt": "2026-08-05T15:31:21.070Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/bunko/jigyoukeikaku/r8jigyoukeikaku.files/0008_20260123.pdf"
+    },
+    {
+      "filename": "0009_20260123.pdf",
+      "sha256": "b6ca137da280add2622e636353a5b48d1827a7b20fbeddacd24a63c8fcca26f4",
+      "bytes": 426234,
+      "fetchedAt": "2026-08-05T15:31:21.399Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/bunko/jigyoukeikaku/r8jigyoukeikaku.files/0009_20260123.pdf"
+    },
+    {
+      "filename": "0010_20260123.pdf",
+      "sha256": "60a81cb8d0e823d36c2324a404e305a617f0be3200cb72332a5fb71127432923",
+      "bytes": 569969,
+      "fetchedAt": "2026-08-05T15:31:21.725Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/bunko/jigyoukeikaku/r8jigyoukeikaku.files/0010_20260123.pdf"
+    },
+    {
+      "filename": "0011_20260123.pdf",
+      "sha256": "8e80b616ff35a62167f79a8c7dd9280e38fbf7d4874b7d103144715bb010b9c4",
+      "bytes": 332694,
+      "fetchedAt": "2026-08-05T15:31:22.049Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/bunko/jigyoukeikaku/r8jigyoukeikaku.files/0011_20260123.pdf"
+    },
+    {
+      "filename": "0013_20260123.pdf",
+      "sha256": "f392af2c342e4c879010728a0cc4ee0524cd9f7b553a206939bb860fcf2a2adb",
+      "bytes": 172630,
+      "fetchedAt": "2026-08-05T15:31:22.372Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/bunko/jigyoukeikaku/r8jigyoukeikaku.files/0013_20260123.pdf"
     },
     {
       "filename": "0175_20260123.pdf",
       "sha256": "20a7131e1210a87cc2d5ef0dc07bbd993b282996458d9b46692a70d5fb0db420",
       "bytes": 1012602,
-      "fetchedAt": "2026-08-04T08:18:36.613Z",
+      "fetchedAt": "2026-08-05T15:31:22.704Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0175_20260123.pdf"
+    },
+    {
+      "filename": "0153_20260121.pdf",
+      "sha256": "b84c443a941aca6864e205fa95b7c21d5979d1909d0343b1808c62d4967a90c9",
+      "bytes": 304391,
+      "fetchedAt": "2026-08-05T15:31:23.031Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0153_20260121.pdf"
+    },
+    {
+      "filename": "0154_20260121.pdf",
+      "sha256": "0786420ea97f7e9bd05ea8f0b3d52580c1fc782c9c8338cd44eb1c26a6476f84",
+      "bytes": 338003,
+      "fetchedAt": "2026-08-05T15:31:23.358Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0154_20260121.pdf"
+    },
+    {
+      "filename": "0176_20260123.pdf",
+      "sha256": "a2649901ae2a2200545f950fed3d09b74bef265b9aa7ee0175d1d041779a6b48",
+      "bytes": 428820,
+      "fetchedAt": "2026-08-05T15:31:23.685Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0176_20260123.pdf"
+    },
+    {
+      "filename": "0156_20260121.pdf",
+      "sha256": "7c1e25bf0bd5eb88b88f7e3066718268b91ad365d2ce0470b61a3df0aeb7459d",
+      "bytes": 224686,
+      "fetchedAt": "2026-08-05T15:31:24.014Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0156_20260121.pdf"
+    },
+    {
+      "filename": "0173_20260122.pdf",
+      "sha256": "1e7f425a2d1598041003febfd9c5f2530c7e715812d40a599128c20ec8151965",
+      "bytes": 470572,
+      "fetchedAt": "2026-08-05T15:31:24.342Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0173_20260122.pdf"
     },
     {
       "filename": "0158_20260121.pdf",
       "sha256": "042f7f11071236447c66b4532853a6876031d0155e8316330115679db2b494d9",
       "bytes": 189237,
-      "fetchedAt": "2026-08-04T08:18:36.943Z",
+      "fetchedAt": "2026-08-05T15:31:24.669Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0158_20260121.pdf"
+    },
+    {
+      "filename": "0163_20260121.pdf",
+      "sha256": "ff34e3f9c03b273e9c437720d77025d9117b433729d88c75ef1fb9d747e15fce",
+      "bytes": 459459,
+      "fetchedAt": "2026-08-05T15:31:25.000Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0163_20260121.pdf"
+    },
+    {
+      "filename": "0160_20260121.pdf",
+      "sha256": "e93f21ca1323054761ed939def6bf3fcb906e396d8923cb923ef02fbdcd69e81",
+      "bytes": 387878,
+      "fetchedAt": "2026-08-05T15:31:25.328Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0160_20260121.pdf"
+    },
+    {
+      "filename": "0161_20260121.pdf",
+      "sha256": "9f3c615254489e6bbfada26ba93268eacce41c9a6699f3efd9817ff2f4d4b8ff",
+      "bytes": 254934,
+      "fetchedAt": "2026-08-05T15:31:25.651Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0161_20260121.pdf"
+    },
+    {
+      "filename": "0162_20260121.pdf",
+      "sha256": "f96ddfd68df0402626533ee916a3f68093ce9ae4c413da3f9baa3ac44a8f4d4e",
+      "bytes": 214856,
+      "fetchedAt": "2026-08-05T15:31:25.975Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0162_20260121.pdf"
+    },
+    {
+      "filename": "0164_20260121.pdf",
+      "sha256": "cc58dff2d5008e84bc7042a4c6a41593435cf7b07e6cc1dafb70c13afa04c2f1",
+      "bytes": 429716,
+      "fetchedAt": "2026-08-05T15:31:26.303Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0164_20260121.pdf"
+    },
+    {
+      "filename": "0165_20260121.pdf",
+      "sha256": "1dbfe5e7c8d07f077b2c04545e450c4fc4ae919861f70d001066e3796dfc3bf2",
+      "bytes": 372056,
+      "fetchedAt": "2026-08-05T15:31:26.630Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0165_20260121.pdf"
+    },
+    {
+      "filename": "0166_20260121.pdf",
+      "sha256": "dc82ea2d6659971c1b11baac5f3d822a4c3076c37422ab90a0b9b25701f52dfe",
+      "bytes": 250028,
+      "fetchedAt": "2026-08-05T15:31:26.956Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0166_20260121.pdf"
+    },
+    {
+      "filename": "0167_20260121.pdf",
+      "sha256": "3f36b8caa9a7204edb8fc22e263c63cdb6348bb33067d1f5083a479c8871a948",
+      "bytes": 221843,
+      "fetchedAt": "2026-08-05T15:31:27.283Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0167_20260121.pdf"
+    },
+    {
+      "filename": "0168_20260121.pdf",
+      "sha256": "1921db6922ac1dd1c8376b44cf033292eb98085bb4277552bf0a3fb6b3379017",
+      "bytes": 205563,
+      "fetchedAt": "2026-08-05T15:31:27.606Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0168_20260121.pdf"
+    },
+    {
+      "filename": "0169_20260121.pdf",
+      "sha256": "8ae8d8f18fea64f001ba204906125db195abe43e06104d72caae380e99ff1cdd",
+      "bytes": 202562,
+      "fetchedAt": "2026-08-05T15:31:27.929Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0169_20260121.pdf"
     },
     {
       "filename": "r8_kodomo_all.pdf",
       "sha256": "f56d134e4d21c9f44c83ece0ae83becaa339bfe91adf034527caced8c387753c",
       "bytes": 2438451,
-      "fetchedAt": "2026-08-04T08:18:37.434Z",
+      "fetchedAt": "2026-08-05T15:31:28.278Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_kodomo_all.pdf"
+    },
+    {
+      "filename": "0002_20260126.pdf",
+      "sha256": "9a6bf6742ac41ff9d03a2cffd93ba675850af174d632ca3b71384272d890c97c",
+      "bytes": 2290608,
+      "fetchedAt": "2026-08-05T15:31:28.627Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/0002_20260126.pdf"
+    },
+    {
+      "filename": "0003_20260126.pdf",
+      "sha256": "2124183a5c001180d7290af005ee7088978c2f177aa2e1bc34461c08fb7fb79c",
+      "bytes": 644918,
+      "fetchedAt": "2026-08-05T15:31:28.959Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/0003_20260126.pdf"
+    },
+    {
+      "filename": "0004_20260126.pdf",
+      "sha256": "3d4e7d39cf7d9fc3320a2b65f44960355fc12c0b255d85fa2a018f477d5b2a58",
+      "bytes": 712347,
+      "fetchedAt": "2026-08-05T15:31:29.293Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/0004_20260126.pdf"
+    },
+    {
+      "filename": "r8_6-2-1.pdf",
+      "sha256": "9c22f950ad3e4e50bb91a7224c62f3b90a4443bae29693f623e6af883f18bc77",
+      "bytes": 684329,
+      "fetchedAt": "2026-08-05T15:31:29.624Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_6-2-1.pdf"
+    },
+    {
+      "filename": "r8_6-2-2.pdf",
+      "sha256": "4538a4f14e2826548c55cb803e731e54b5fdbd1295d32b59d361057f196f6574",
+      "bytes": 923224,
+      "fetchedAt": "2026-08-05T15:31:29.955Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_6-2-2.pdf"
+    },
+    {
+      "filename": "r8_6-2-3.pdf",
+      "sha256": "95d3e221c689b6586f32e6bf9dcc1fe157ca9e2d4f353249b9ba6f0a854cb0dd",
+      "bytes": 636911,
+      "fetchedAt": "2026-08-05T15:31:30.282Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_6-2-3.pdf"
+    },
+    {
+      "filename": "r8_6-2-4.pdf",
+      "sha256": "976a5bd546591d8e1d9b3593075e243330f35e76806a03abffd5e6208b20bacc",
+      "bytes": 596842,
+      "fetchedAt": "2026-08-05T15:31:30.612Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_6-2-4.pdf"
+    },
+    {
+      "filename": "r8_6-2-5.pdf",
+      "sha256": "484919524d06955db68dcdb0803510fc9cacfdd3141c4d309831002306af079d",
+      "bytes": 555710,
+      "fetchedAt": "2026-08-05T15:31:30.945Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_6-2-5.pdf"
+    },
+    {
+      "filename": "r8_6-3-1.pdf",
+      "sha256": "a18c48df3e383a6181dc7286ee6eb9d18c6cbbce4fe9209bfea9b87daa7e1efb",
+      "bytes": 673969,
+      "fetchedAt": "2026-08-05T15:31:31.274Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_6-3-1.pdf"
+    },
+    {
+      "filename": "r8_6-3-2.pdf",
+      "sha256": "beb012b15fb7169ed6b47b383b1e0203e66fac86b5f558bc5136b373f7604008",
+      "bytes": 748001,
+      "fetchedAt": "2026-08-05T15:31:31.605Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_6-3-2.pdf"
+    },
+    {
+      "filename": "r8_6-3-3.pdf",
+      "sha256": "8464b857fef13b81761c406bd37b07340ca374a3c0b1ceaf9c24e98042b12e47",
+      "bytes": 695165,
+      "fetchedAt": "2026-08-05T15:31:31.939Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_6-3-3.pdf"
+    },
+    {
+      "filename": "r8_6-3-4.pdf",
+      "sha256": "4a2e2af9ce66a09bc54e515ab4408c6238c03517bf4c29747887bc0729c00ad8",
+      "bytes": 575740,
+      "fetchedAt": "2026-08-05T15:31:32.270Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_6-3-4.pdf"
+    },
+    {
+      "filename": "r8_6-3-5.pdf",
+      "sha256": "9ae30854e3f463896c1f804a568f50091399e86630685eeac23a927fa643c3ee",
+      "bytes": 577501,
+      "fetchedAt": "2026-08-05T15:31:32.597Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_6-3-5.pdf"
+    },
+    {
+      "filename": "r8_6-3-6.pdf",
+      "sha256": "f658bd2178fd0e6e6a7645ae20921ea4282325815b74c90a5403ffe6299e67ed",
+      "bytes": 603142,
+      "fetchedAt": "2026-08-05T15:31:32.931Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_6-3-6.pdf"
+    },
+    {
+      "filename": "r8_6-3-7.pdf",
+      "sha256": "03a331568c8c18b0767c388615c112c8d747e4db2c3b0747aa48418dd6322349",
+      "bytes": 562393,
+      "fetchedAt": "2026-08-05T15:31:33.258Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_6-3-7.pdf"
+    },
+    {
+      "filename": "r8_19.pdf",
+      "sha256": "37713b76b2bf71c754b139c0652c47a44f7b6bf9540da3ef5ee5faff9278be08",
+      "bytes": 563037,
+      "fetchedAt": "2026-08-05T15:31:33.585Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_19.pdf"
+    },
+    {
+      "filename": "r8_kashitukekin.pdf",
+      "sha256": "f5e1df59eb2e0a7485fe364ceacbeb16c1ff1a75665dccc061d1f306de9e9722",
+      "bytes": 577289,
+      "fetchedAt": "2026-08-05T15:31:33.915Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_kashitukekin.pdf"
     },
     {
       "filename": "0158_20260213.pdf",
       "sha256": "2fca7768658da2ea7a8df0da40a4141d22a43a064c80138fce7fb4b24bdf8fc6",
       "bytes": 2810166,
-      "fetchedAt": "2026-08-04T08:18:37.950Z",
+      "fetchedAt": "2026-08-05T15:31:34.276Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0158_20260213.pdf"
+    },
+    {
+      "filename": "0119_20260123.pdf",
+      "sha256": "3597efddac71cbe171e906a31620695860f5578707789445cfc320df08540a43",
+      "bytes": 404956,
+      "fetchedAt": "2026-08-05T15:31:34.602Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0119_20260123.pdf"
+    },
+    {
+      "filename": "0159_20260213.pdf",
+      "sha256": "418e800b7cd56c86620ac10d9bbdd20398a43e5762c5065c787913f64eda9303",
+      "bytes": 568298,
+      "fetchedAt": "2026-08-05T15:31:34.931Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0159_20260213.pdf"
+    },
+    {
+      "filename": "0121_20260123.pdf",
+      "sha256": "03197345550d5cff9cbbb13147fb1726aa503e36e8cf6b5a9542772163c78d7f",
+      "bytes": 137268,
+      "fetchedAt": "2026-08-05T15:31:35.258Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0121_20260123.pdf"
+    },
+    {
+      "filename": "0122_20260123.pdf",
+      "sha256": "0f7b150dc25b56a0641e2a538d0cd72e3bdd94c89dbc5f46726ea575e7f1b321",
+      "bytes": 124037,
+      "fetchedAt": "2026-08-05T15:31:35.582Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0122_20260123.pdf"
+    },
+    {
+      "filename": "0123_20260123.pdf",
+      "sha256": "3f57ac12d16b49d0200a3f37b3f8861bce345d0f55a99c1cca056f75091dfdf3",
+      "bytes": 145936,
+      "fetchedAt": "2026-08-05T15:31:35.904Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0123_20260123.pdf"
+    },
+    {
+      "filename": "0124_20260123.pdf",
+      "sha256": "8b670f2f029ce09d0c3fb1b672b9800c7ca2ff652a2eb506fc3232d840c82be7",
+      "bytes": 165292,
+      "fetchedAt": "2026-08-05T15:31:36.228Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0124_20260123.pdf"
+    },
+    {
+      "filename": "0155_20260126.pdf",
+      "sha256": "9e9ca1de43aa9d4864539381bd4943999ec73cc61b3f2d3679d19f943e65fcc6",
+      "bytes": 240255,
+      "fetchedAt": "2026-08-05T15:31:36.554Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0155_20260126.pdf"
+    },
+    {
+      "filename": "0126_20260123.pdf",
+      "sha256": "bd1eee2231de4ca31edfd0182916abb58f1a36b4c1ab0403c53232beb5705da7",
+      "bytes": 910065,
+      "fetchedAt": "2026-08-05T15:31:36.887Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0126_20260123.pdf"
+    },
+    {
+      "filename": "0127_20260123.pdf",
+      "sha256": "a12ac99259a5057cacf32ad4cf1d1fcd3c22089aa3cfca0db5f7904a9b77849c",
+      "bytes": 305449,
+      "fetchedAt": "2026-08-05T15:31:37.214Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0127_20260123.pdf"
+    },
+    {
+      "filename": "0128_20260123.pdf",
+      "sha256": "305d23bc8b256909fcbb5df9b206b457cf3c8ac4bf2f5b770716bd77f91f22e3",
+      "bytes": 186614,
+      "fetchedAt": "2026-08-05T15:31:37.541Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0128_20260123.pdf"
+    },
+    {
+      "filename": "0129_20260123.pdf",
+      "sha256": "143fcbbbae1c90bb199e1c522136a4de3050e84637d414c3d1b44240404b2b57",
+      "bytes": 144760,
+      "fetchedAt": "2026-08-05T15:31:37.867Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0129_20260123.pdf"
+    },
+    {
+      "filename": "0130_20260123.pdf",
+      "sha256": "e0c267125b21aaea9e58efb565645ec332c7bbc0a26b9689c04f06df006da59b",
+      "bytes": 281933,
+      "fetchedAt": "2026-08-05T15:31:38.193Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0130_20260123.pdf"
+    },
+    {
+      "filename": "0131_20260123.pdf",
+      "sha256": "a7dd4f5157c58fad3669760c36c2f215aa4abc3405a810adef4405fc187b23c7",
+      "bytes": 215713,
+      "fetchedAt": "2026-08-05T15:31:38.517Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0131_20260123.pdf"
+    },
+    {
+      "filename": "0132_20260123.pdf",
+      "sha256": "71ccad56a7d183b25a0a320eb27ff2929bc7ce51d164fc0fd5a0ede7dc426efe",
+      "bytes": 244692,
+      "fetchedAt": "2026-08-05T15:31:38.842Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0132_20260123.pdf"
+    },
+    {
+      "filename": "0133_20260123.pdf",
+      "sha256": "3d384241bcae8a6800efc8b2e76843bcc98d66154195ebb34324a60022cd98dd",
+      "bytes": 526970,
+      "fetchedAt": "2026-08-05T15:31:39.171Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0133_20260123.pdf"
+    },
+    {
+      "filename": "0134_20260123.pdf",
+      "sha256": "a88ff745ea8f2fb15a1e369b3544e0483f3f476e57e1cb64042326fd92ec0695",
+      "bytes": 227634,
+      "fetchedAt": "2026-08-05T15:31:39.496Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0134_20260123.pdf"
+    },
+    {
+      "filename": "0135_20260123.pdf",
+      "sha256": "17f08117ff00263dcaabfb520174676a9f9c951604eb093fa2c1cbc4f5dcb709",
+      "bytes": 386727,
+      "fetchedAt": "2026-08-05T15:31:39.825Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0135_20260123.pdf"
+    },
+    {
+      "filename": "0136_20260123.pdf",
+      "sha256": "0303645cf5fd805f9163d9ebe8022ae6de5afb1e3da13bcfbfb1f9e42318a870",
+      "bytes": 306980,
+      "fetchedAt": "2026-08-05T15:31:40.151Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0136_20260123.pdf"
+    },
+    {
+      "filename": "0137_20260123.pdf",
+      "sha256": "074308249a9c4360ab999a092a674b31023cf23b200b479dd6a9bb7cda2c1b8e",
+      "bytes": 360250,
+      "fetchedAt": "2026-08-05T15:31:40.479Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0137_20260123.pdf"
+    },
+    {
+      "filename": "0138_20260123.pdf",
+      "sha256": "ca0fc2fb267fa5269053c265738fac6e80e1cf539e163e9da3e0abf41abc3e2a",
+      "bytes": 305990,
+      "fetchedAt": "2026-08-05T15:31:40.809Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0138_20260123.pdf"
+    },
+    {
+      "filename": "0139_20260123.pdf",
+      "sha256": "86ab0e766a6d71f2ea7bbd87a953379a10d24d063d1e6822c8d56b54c66b78e0",
+      "bytes": 293887,
+      "fetchedAt": "2026-08-05T15:31:41.135Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0139_20260123.pdf"
     },
     {
       "filename": "0140_20260123.pdf",
       "sha256": "c7ae703f5c2478c4b0c284382e7b971f2018583a37092395e90a7f3a509c7770",
       "bytes": 423460,
-      "fetchedAt": "2026-08-04T08:18:38.296Z",
+      "fetchedAt": "2026-08-05T15:31:41.465Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0140_20260123.pdf"
+    },
+    {
+      "filename": "0141_20260123.pdf",
+      "sha256": "607b6d3ba208addbe0151700f75244a487656e9fd30ae4b05654fd059961ffd6",
+      "bytes": 126174,
+      "fetchedAt": "2026-08-05T15:31:41.789Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0141_20260123.pdf"
+    },
+    {
+      "filename": "0142_20260123.pdf",
+      "sha256": "ebc7261f72bd2480bd460ec7f7b101e22375d9fe5fef18f9752c3961daa72294",
+      "bytes": 108173,
+      "fetchedAt": "2026-08-05T15:31:42.154Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0142_20260123.pdf"
+    },
+    {
+      "filename": "0143_20260123.pdf",
+      "sha256": "d3c2041b4cf1eb47e883f1e32cf3349fdbc448ec7651b67c2dab8fecd85f47d2",
+      "bytes": 114570,
+      "fetchedAt": "2026-08-05T15:31:42.479Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0143_20260123.pdf"
+    },
+    {
+      "filename": "0144_20260123.pdf",
+      "sha256": "7ad0feaa846f972ebd2c0387abf41e06c3383bfe9972af768cb8f73cccc65718",
+      "bytes": 108741,
+      "fetchedAt": "2026-08-05T15:31:42.806Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0144_20260123.pdf"
+    },
+    {
+      "filename": "0145_20260123.pdf",
+      "sha256": "784668301c53908e39e80f8707d8a6b4c59579105d24aa2b45b9896c60964504",
+      "bytes": 186029,
+      "fetchedAt": "2026-08-05T15:31:43.131Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0145_20260123.pdf"
+    },
+    {
+      "filename": "0146_20260123.pdf",
+      "sha256": "d414d23b82ca027f21fac4ea07b603146e31cc2650cf4e6c5e8a96380b20b8f3",
+      "bytes": 150804,
+      "fetchedAt": "2026-08-05T15:31:43.456Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0146_20260123.pdf"
+    },
+    {
+      "filename": "0147_20260123.pdf",
+      "sha256": "0bb00f181ed6f831a9c04eaacb14db008547cea5dc88551d60887b1dc3acd466",
+      "bytes": 152064,
+      "fetchedAt": "2026-08-05T15:31:43.783Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0147_20260123.pdf"
+    },
+    {
+      "filename": "0148_20260123.pdf",
+      "sha256": "8030b391c70998eae212cdc52c2983d0e3ca783f7369d06bb68c51b155c54238",
+      "bytes": 178362,
+      "fetchedAt": "2026-08-05T15:31:44.107Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0148_20260123.pdf"
+    },
+    {
+      "filename": "0149_20260123.pdf",
+      "sha256": "370148322c15d79b58337c10fb5baa6a851317d3b89e342510423a484f504cbb",
+      "bytes": 272475,
+      "fetchedAt": "2026-08-05T15:31:44.435Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0149_20260123.pdf"
+    },
+    {
+      "filename": "0156_20260126.pdf",
+      "sha256": "835d6ab89f3056b1ec78fab8b77e57065e21a49512eb900ffb0b731526e7c0ea",
+      "bytes": 784632,
+      "fetchedAt": "2026-08-05T15:31:44.770Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0156_20260126.pdf"
+    },
+    {
+      "filename": "0151_20260123.pdf",
+      "sha256": "30c4591a01fef98b185f54df0e74f54e98d63273eddc001717103a8e22c243d8",
+      "bytes": 182545,
+      "fetchedAt": "2026-08-05T15:31:45.093Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0151_20260123.pdf"
+    },
+    {
+      "filename": "0157_20260126.pdf",
+      "sha256": "47a503c7f7e7f78c08335fcdd90d28335d651d42b05aca3766af8845ff352486",
+      "bytes": 158180,
+      "fetchedAt": "2026-08-05T15:31:45.419Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0157_20260126.pdf"
+    },
+    {
+      "filename": "0153_20260123.pdf",
+      "sha256": "5cced916ba8f5006cc56533b4d4e3471c4500630ed8e1e27aa4302e4178de429",
+      "bytes": 230213,
+      "fetchedAt": "2026-08-05T15:31:45.742Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0153_20260123.pdf"
     },
     {
       "filename": "0001_20260126.pdf",
       "sha256": "7f6a0e0a5a61037dd2d37256309e92b959f02ccb6ca8ff1f5dbeb62c21a18a92",
       "bytes": 1248508,
-      "fetchedAt": "2026-08-04T08:18:38.701Z",
+      "fetchedAt": "2026-08-05T15:31:46.087Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/iryo/jigyoukeikaku/r8jigyoukeikaku.files/0001_20260126.pdf"
+    },
+    {
+      "filename": "iryo__0002_20260126.pdf",
+      "sha256": "93a5f261db24790cf383994fe87d3e3d43953a2e319125c1462758b55c54f9f0",
+      "bytes": 356166,
+      "fetchedAt": "2026-08-05T15:31:46.415Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/iryo/jigyoukeikaku/r8jigyoukeikaku.files/0002_20260126.pdf"
+    },
+    {
+      "filename": "iryo__0003_20260126.pdf",
+      "sha256": "21cffde38d2678bab0aadf27ecb43038fe1ab0181517b2e85aff49d736982ebd",
+      "bytes": 560167,
+      "fetchedAt": "2026-08-05T15:31:46.746Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/iryo/jigyoukeikaku/r8jigyoukeikaku.files/0003_20260126.pdf"
+    },
+    {
+      "filename": "iryo__0004_20260126.pdf",
+      "sha256": "c76b5bdfa75a01cd4d477c11c1aff11c5701cd42ec2390f783c54a6adef42442",
+      "bytes": 578177,
+      "fetchedAt": "2026-08-05T15:31:47.080Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/iryo/jigyoukeikaku/r8jigyoukeikaku.files/0004_20260126.pdf"
+    },
+    {
+      "filename": "0005_20260126.pdf",
+      "sha256": "c90af9a9bf268cf6dbb6299dcc5d2b68c8b0ada07364f2cb0ccfce021c055b56",
+      "bytes": 924987,
+      "fetchedAt": "2026-08-05T15:31:47.415Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/iryo/jigyoukeikaku/r8jigyoukeikaku.files/0005_20260126.pdf"
     },
     {
       "filename": "0006_20260126.pdf",
       "sha256": "43ec47ca5cd913a4393db27548abd41e52e07185c43d3c2c5fa95bf059ecfb20",
       "bytes": 227846,
-      "fetchedAt": "2026-08-04T08:18:39.036Z",
+      "fetchedAt": "2026-08-05T15:31:47.742Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/iryo/jigyoukeikaku/r8jigyoukeikaku.files/0006_20260126.pdf"
+    },
+    {
+      "filename": "0007_20260126.pdf",
+      "sha256": "deeeb4ea44d42c9c2e8f3b5e56f94c8250a2f3643181f7b4d397bd326b52f533",
+      "bytes": 268927,
+      "fetchedAt": "2026-08-05T15:31:48.069Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/iryo/jigyoukeikaku/r8jigyoukeikaku.files/0007_20260126.pdf"
+    },
+    {
+      "filename": "iryo-byoin__0005_20260126.pdf",
+      "sha256": "080c81f79d5e279ac16a6874966874f64233d6c9768b9456bb4eb16ffc813053",
+      "bytes": 336460,
+      "fetchedAt": "2026-08-05T15:31:48.397Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/iryo-byoin/jigyoukeikaku/r8jigyoukeikaku.files/0005_20260126.pdf"
     },
     {
       "filename": "0463_20260126.pdf",
       "sha256": "e66901658e812c94ff8d7c83cbe5f07ad5a90bb20c339d764a87a10a059cd5a5",
       "bytes": 1000183,
-      "fetchedAt": "2026-08-04T08:18:39.422Z",
+      "fetchedAt": "2026-08-05T15:31:48.736Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0463_20260126.pdf"
+    },
+    {
+      "filename": "0425_20260123.pdf",
+      "sha256": "5039f09a52ef406fd745fa7ae0017957a78329e4f42c509ecc2268d31c295da8",
+      "bytes": 223007,
+      "fetchedAt": "2026-08-05T15:31:49.061Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0425_20260123.pdf"
+    },
+    {
+      "filename": "0434_20260123.pdf",
+      "sha256": "6fef46b37b347de56b26c55ed1725765eaff797e9c7c6df0b34af3809a967583",
+      "bytes": 319524,
+      "fetchedAt": "2026-08-05T15:31:49.394Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0434_20260123.pdf"
+    },
+    {
+      "filename": "0464_20260126.pdf",
+      "sha256": "2c41e674407d653611c60c21a50727df9929e83a7b506b8de671e55acdce0368",
+      "bytes": 231082,
+      "fetchedAt": "2026-08-05T15:31:49.719Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0464_20260126.pdf"
+    },
+    {
+      "filename": "0436_20260123.pdf",
+      "sha256": "3717bdb8a079c55e9c08e829843ba3d02e4c1e8e834303ee23debb1848fb900f",
+      "bytes": 226703,
+      "fetchedAt": "2026-08-05T15:31:50.042Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0436_20260123.pdf"
+    },
+    {
+      "filename": "0437_20260123.pdf",
+      "sha256": "b47782e458f5982c3ff3b68c55fc9ae741ca7a754bfae32673dc3c0259e44043",
+      "bytes": 211566,
+      "fetchedAt": "2026-08-05T15:31:50.368Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0437_20260123.pdf"
+    },
+    {
+      "filename": "0438_20260123.pdf",
+      "sha256": "f93631b021b29c7fefe8aa4896471d02b5da32c51c18037e5f434ea75fa5e05d",
+      "bytes": 315556,
+      "fetchedAt": "2026-08-05T15:31:50.696Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0438_20260123.pdf"
+    },
+    {
+      "filename": "0439_20260123.pdf",
+      "sha256": "23df4de149df599e571d5809f4712d75934e99de60174cedbb9658b2cba7f3e3",
+      "bytes": 292832,
+      "fetchedAt": "2026-08-05T15:31:51.024Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0439_20260123.pdf"
+    },
+    {
+      "filename": "0441_20260123.pdf",
+      "sha256": "266f641aa852ce35082be67636ba18976d451b9315e2832a11ccf728731c0b80",
+      "bytes": 362554,
+      "fetchedAt": "2026-08-05T15:31:51.356Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0441_20260123.pdf"
+    },
+    {
+      "filename": "0442_20260123.pdf",
+      "sha256": "894483b3d8490933ad5a3a3a23e588581c3caa33efcddbce6fbf0f0dd72839ee",
+      "bytes": 321825,
+      "fetchedAt": "2026-08-05T15:31:51.683Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0442_20260123.pdf"
+    },
+    {
+      "filename": "0443_20260123.pdf",
+      "sha256": "216274c9d36e77a913f01eb5e1846219d7eee49591114964ca78569352e74d73",
+      "bytes": 375665,
+      "fetchedAt": "2026-08-05T15:31:52.011Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0443_20260123.pdf"
+    },
+    {
+      "filename": "0444_20260123.pdf",
+      "sha256": "825bfcfba3edea82d25696c6452bcd0d1b6bb27e9586b51a43810a3829d7c715",
+      "bytes": 326967,
+      "fetchedAt": "2026-08-05T15:31:52.336Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0444_20260123.pdf"
+    },
+    {
+      "filename": "0461_20260123.pdf",
+      "sha256": "3638cd43a36f9d6acfffa13282f32a001b8c3c25e996b29010aa16eebca8bedf",
+      "bytes": 407256,
+      "fetchedAt": "2026-08-05T15:31:52.669Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0461_20260123.pdf"
+    },
+    {
+      "filename": "0446_20260123.pdf",
+      "sha256": "815665159a8d2b1f07f8c82d6e1e6fb068a8ce28b53a422f8857ab22c15ab8f4",
+      "bytes": 367238,
+      "fetchedAt": "2026-08-05T15:31:52.993Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0446_20260123.pdf"
     },
     {
       "filename": "0447_20260123.pdf",
       "sha256": "625360c4ae8e42301e07b6cdb30b01722570d38474e8552123b93a82cf8a57ae",
       "bytes": 214436,
-      "fetchedAt": "2026-08-04T08:18:39.758Z",
+      "fetchedAt": "2026-08-05T15:31:53.320Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0447_20260123.pdf"
+    },
+    {
+      "filename": "0448_20260123.pdf",
+      "sha256": "dd39e944ed237faf3ac66fa95dc86a4145e969a263266c5830ce603f52ea8379",
+      "bytes": 637240,
+      "fetchedAt": "2026-08-05T15:31:53.650Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0448_20260123.pdf"
+    },
+    {
+      "filename": "0449_20260123.pdf",
+      "sha256": "db9c0e80e08a40aee8c0bb4077c3fb2b7a981b40f4610584bee4b71299be9118",
+      "bytes": 276271,
+      "fetchedAt": "2026-08-05T15:31:53.975Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0449_20260123.pdf"
+    },
+    {
+      "filename": "0450_20260123.pdf",
+      "sha256": "74980880100ae879aba3767139904eb45bf908a11abfb04016fd94724005d484",
+      "bytes": 291731,
+      "fetchedAt": "2026-08-05T15:31:54.300Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0450_20260123.pdf"
+    },
+    {
+      "filename": "0451_20260123.pdf",
+      "sha256": "21bbe4b74ae8597cb97ca303d1e12ae3e06160594d90dbf793ccde40a012d77a",
+      "bytes": 310997,
+      "fetchedAt": "2026-08-05T15:31:54.627Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0451_20260123.pdf"
+    },
+    {
+      "filename": "0452_20260123.pdf",
+      "sha256": "a93b6ba9289571f0c6dc6f3d74b9c208b31ecf54367b80614ee7c1c6aaaa15be",
+      "bytes": 277917,
+      "fetchedAt": "2026-08-05T15:31:54.954Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0452_20260123.pdf"
+    },
+    {
+      "filename": "0453_20260123.pdf",
+      "sha256": "a6c03c9147986b89c457f4edc6a4143e966417097299cf17dcc4b3bb958e75d4",
+      "bytes": 341282,
+      "fetchedAt": "2026-08-05T15:31:55.279Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0453_20260123.pdf"
+    },
+    {
+      "filename": "0454_20260123.pdf",
+      "sha256": "5bd0d8e776c5c0550cc80f28a2927b858c2b4a1561ddbe668836e815ca8a64c0",
+      "bytes": 309542,
+      "fetchedAt": "2026-08-05T15:31:55.605Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0454_20260123.pdf"
+    },
+    {
+      "filename": "0455_20260123.pdf",
+      "sha256": "4e52095e4314a1a94f1550b612e94378e16303192a5215722ef3e55fdfdca214",
+      "bytes": 233236,
+      "fetchedAt": "2026-08-05T15:31:55.932Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0455_20260123.pdf"
+    },
+    {
+      "filename": "0456_20260123.pdf",
+      "sha256": "3580e89c632013a4993032f921885495f74eb6832ef91402677c590adc70eaa8",
+      "bytes": 213835,
+      "fetchedAt": "2026-08-05T15:31:56.257Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0456_20260123.pdf"
+    },
+    {
+      "filename": "0457_20260123.pdf",
+      "sha256": "7b130e99d8eb2a275452a16d492c721d7f00de79c59a3ab13548e114abc367a7",
+      "bytes": 211492,
+      "fetchedAt": "2026-08-05T15:31:56.583Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0457_20260123.pdf"
+    },
+    {
+      "filename": "0458_20260123.pdf",
+      "sha256": "5dec4a81056251fb76bb2873f943ac98e18fddb19b77125c1121b140b4b6751c",
+      "bytes": 212011,
+      "fetchedAt": "2026-08-05T15:31:56.911Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0458_20260123.pdf"
+    },
+    {
+      "filename": "0459_20260123.pdf",
+      "sha256": "2692377d2e627c1a6e1ebfd90cd83b19fe94b5f31e681b6b4720f47cb7e4f33d",
+      "bytes": 211758,
+      "fetchedAt": "2026-08-05T15:31:57.236Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0459_20260123.pdf"
+    },
+    {
+      "filename": "0460_20260123.pdf",
+      "sha256": "bff253ce4991790ff31e6964f5c65a34851894689c0ed2980cac131c88c2576c",
+      "bytes": 210018,
+      "fetchedAt": "2026-08-05T15:31:57.565Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0460_20260123.pdf"
+    },
+    {
+      "filename": "0403_20260123.pdf",
+      "sha256": "75bb4af25719f6f4d4718e7c40d20f26896f9dcd259ea2525cc86f607d1c1618",
+      "bytes": 592715,
+      "fetchedAt": "2026-08-05T15:31:57.896Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0403_20260123.pdf"
+    },
+    {
+      "filename": "0404_20260123.pdf",
+      "sha256": "c740882ba5a3166a8befeb9580fb1dade13eecd6fbd151d22946e099cb09782a",
+      "bytes": 129595,
+      "fetchedAt": "2026-08-05T15:31:58.220Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0404_20260123.pdf"
+    },
+    {
+      "filename": "0405_20260123.pdf",
+      "sha256": "3108cd27d22b74dcd6786ba62b53a7e2c8b33316f8ae347d316b49449656eaa1",
+      "bytes": 102350,
+      "fetchedAt": "2026-08-05T15:31:58.544Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0405_20260123.pdf"
+    },
+    {
+      "filename": "0407_20260123.pdf",
+      "sha256": "51a0674ad3432e0ed19d4172355502de2c24ae222aed24650162e924426b93e7",
+      "bytes": 100895,
+      "fetchedAt": "2026-08-05T15:31:58.868Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0407_20260123.pdf"
+    },
+    {
+      "filename": "0406_20260123.pdf",
+      "sha256": "7960d50a1dcaa18480fa4f9aed189c36a05c957d5adfe8c06264dbe9509a6053",
+      "bytes": 129905,
+      "fetchedAt": "2026-08-05T15:31:59.193Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0406_20260123.pdf"
+    },
+    {
+      "filename": "0408_20260123.pdf",
+      "sha256": "1c17ddf31d0a555fb83e858e35929f9eb8610b52c2b9c3d0f8bf653ce98c2abf",
+      "bytes": 97194,
+      "fetchedAt": "2026-08-05T15:31:59.517Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0408_20260123.pdf"
+    },
+    {
+      "filename": "0409_20260123.pdf",
+      "sha256": "e80bc9e3bde75e517c1204505369992abf179daddca431e36b675312ed617585",
+      "bytes": 101403,
+      "fetchedAt": "2026-08-05T15:31:59.841Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0409_20260123.pdf"
+    },
+    {
+      "filename": "0410_20260123.pdf",
+      "sha256": "88c1f0770ad570785c48da417265e22e3540a0c4010fef74359176ff354cc12e",
+      "bytes": 279350,
+      "fetchedAt": "2026-08-05T15:32:00.169Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0410_20260123.pdf"
+    },
+    {
+      "filename": "0411_20260123.pdf",
+      "sha256": "3659b3611ce08b9d5108c20c463f727a37f09fcb348e036869a27582f8e3478b",
+      "bytes": 102098,
+      "fetchedAt": "2026-08-05T15:32:00.493Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0411_20260123.pdf"
+    },
+    {
+      "filename": "0412_20260123.pdf",
+      "sha256": "7627376631c3d321de481b8629807b3d6edf19de482e6cadc4200dad20d5ccd9",
+      "bytes": 107758,
+      "fetchedAt": "2026-08-05T15:32:00.818Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0412_20260123.pdf"
+    },
+    {
+      "filename": "0413_20260123.pdf",
+      "sha256": "ccec1481e4f775877b8ccc34794c16924659f9b155a3753c8e2a2552745f7f08",
+      "bytes": 80881,
+      "fetchedAt": "2026-08-05T15:32:01.143Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0413_20260123.pdf"
+    },
+    {
+      "filename": "0414_20260123.pdf",
+      "sha256": "adb0fecd9cd165b2c3da1c88ed96f059e723f3327a4564ac8ab47bd7b06672e1",
+      "bytes": 80333,
+      "fetchedAt": "2026-08-05T15:32:01.482Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0414_20260123.pdf"
+    },
+    {
+      "filename": "0415_20260123.pdf",
+      "sha256": "4f4916469dc4cf312306b84e0c20ddd434abfb5855904a0cbffacaf324566eb3",
+      "bytes": 78959,
+      "fetchedAt": "2026-08-05T15:32:01.808Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0415_20260123.pdf"
+    },
+    {
+      "filename": "0416_20260123.pdf",
+      "sha256": "a916fd69cf78c71def39d5bd6f26563a49ec4e9b2969849dc901be3170436382",
+      "bytes": 81216,
+      "fetchedAt": "2026-08-05T15:32:02.134Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0416_20260123.pdf"
+    },
+    {
+      "filename": "0432_20260123.pdf",
+      "sha256": "8ef72a9fdd3113878260d36c10798b6d6f7cfc3d3f4f48c5a9d5bede3e4939fd",
+      "bytes": 91155,
+      "fetchedAt": "2026-08-05T15:32:02.459Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0432_20260123.pdf"
+    },
+    {
+      "filename": "0418_20260123.pdf",
+      "sha256": "22bc263724ef79b7d54fc338c5be97d0a10f0ab59700d6d6e4495ce07a8ad399",
+      "bytes": 89564,
+      "fetchedAt": "2026-08-05T15:32:02.785Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0418_20260123.pdf"
+    },
+    {
+      "filename": "0419_20260123.pdf",
+      "sha256": "310349209e3cbf4405035e6de4fdd3e7c7755c133aa51bad55da303bd3a80bff",
+      "bytes": 84174,
+      "fetchedAt": "2026-08-05T15:32:03.111Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0419_20260123.pdf"
+    },
+    {
+      "filename": "0420_20260123.pdf",
+      "sha256": "944e47b71f51408ef9f4014a1e3ba4fd6f717c5bec0325d4e9252ae6db9bb732",
+      "bytes": 73944,
+      "fetchedAt": "2026-08-05T15:32:03.440Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0420_20260123.pdf"
+    },
+    {
+      "filename": "0421_20260123.pdf",
+      "sha256": "75242008ec088791f873a4659f4047b9a75af154f9c6e47623f173d512c009fd",
+      "bytes": 245166,
+      "fetchedAt": "2026-08-05T15:32:03.784Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0421_20260123.pdf"
+    },
+    {
+      "filename": "0422_20260123.pdf",
+      "sha256": "5c7452d516b482cc059900fd00e3ab5a4f40ff274b5f77f4b548d9147dde37a0",
+      "bytes": 105240,
+      "fetchedAt": "2026-08-05T15:32:04.109Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0422_20260123.pdf"
+    },
+    {
+      "filename": "0423_20260123.pdf",
+      "sha256": "dc73fb3c801e61cd321de32ef44cb27f5e05214237860ba9a52efd2794708a48",
+      "bytes": 87133,
+      "fetchedAt": "2026-08-05T15:32:04.434Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0423_20260123.pdf"
+    },
+    {
+      "filename": "0424_20260123.pdf",
+      "sha256": "645f09aff9326971c9a7cf115fd21eb64ac3cb52f1d3d3339a72d38c0b551725",
+      "bytes": 96754,
+      "fetchedAt": "2026-08-05T15:32:04.757Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0424_20260123.pdf"
+    },
+    {
+      "filename": "jigyokeikaku__0425_20260123.pdf",
+      "sha256": "5066c689cf08e482e642723d160b7a0fece8a1b3cc66026e4720c974fcbaf39c",
+      "bytes": 78481,
+      "fetchedAt": "2026-08-05T15:32:05.082Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0425_20260123.pdf"
+    },
+    {
+      "filename": "0426_20260123.pdf",
+      "sha256": "c7f10da02e22b05b3a66fa89bf415cdb2456a0b5a987e115297f42a035a29f72",
+      "bytes": 78416,
+      "fetchedAt": "2026-08-05T15:32:05.406Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0426_20260123.pdf"
+    },
+    {
+      "filename": "0427_20260123.pdf",
+      "sha256": "39185924dd44a2f57da0da10fc97ea1be4bac5fcd84333e032bcfb824aeb3812",
+      "bytes": 91260,
+      "fetchedAt": "2026-08-05T15:32:05.729Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0427_20260123.pdf"
+    },
+    {
+      "filename": "0428_20260123.pdf",
+      "sha256": "180131bcfd31ce79ffbb7e6f019171c90dd0e378258f7b3d22bab859393e420b",
+      "bytes": 78477,
+      "fetchedAt": "2026-08-05T15:32:06.057Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0428_20260123.pdf"
+    },
+    {
+      "filename": "0429_20260123.pdf",
+      "sha256": "8c3dbaab6b613934c2c0c6ed395ed65d35b1fb8aa745dfbe1a1cc49f229cd15d",
+      "bytes": 74177,
+      "fetchedAt": "2026-08-05T15:32:06.380Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0429_20260123.pdf"
+    },
+    {
+      "filename": "0430_20260123.pdf",
+      "sha256": "a8ac7f1edc045c4e4224cdfbdd39204676045e82e4675e901f3d0554b8264d50",
+      "bytes": 126068,
+      "fetchedAt": "2026-08-05T15:32:06.704Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0430_20260123.pdf"
     },
     {
       "filename": "0397_20260122.pdf",
       "sha256": "380a8a9ef6124b6863f1f50c46feeeea6fbec3d3c5774973c1516bc604a000aa",
       "bytes": 509548,
-      "fetchedAt": "2026-08-04T08:18:40.332Z",
+      "fetchedAt": "2026-08-05T15:32:07.033Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0397_20260122.pdf"
+    },
+    {
+      "filename": "0398_20260122.pdf",
+      "sha256": "2b9359d8a3ef953d8665373ba01aaa52059bd3caab8f08729aaf30fcce2fc8ee",
+      "bytes": 470812,
+      "fetchedAt": "2026-08-05T15:32:07.362Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0398_20260122.pdf"
+    },
+    {
+      "filename": "0399_20260122.pdf",
+      "sha256": "4d6cbf2165bd7664df55364a16760b6d1344adc6439de3349c8076b5b64dd87b",
+      "bytes": 308048,
+      "fetchedAt": "2026-08-05T15:32:07.688Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0399_20260122.pdf"
     },
     {
       "filename": "0400_20260122.pdf",
       "sha256": "539d4b0bcdd5d39683a76e1cbf7bb8af22ea4c1b09a671b3e6e9e67d4c182ce7",
       "bytes": 181432,
-      "fetchedAt": "2026-08-04T08:18:40.663Z",
+      "fetchedAt": "2026-08-05T15:32:08.015Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0400_20260122.pdf"
+    },
+    {
+      "filename": "0401_20260122.pdf",
+      "sha256": "fd00b2fae7b17e33b5db7fec9bbe297659b39b10aa0a553af25e3c131f4ea489",
+      "bytes": 181432,
+      "fetchedAt": "2026-08-05T15:32:08.341Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0401_20260122.pdf"
     },
     {
       "filename": "0017_20260123.pdf",
       "sha256": "38ad1c9e3cfd5cb929e21177bb2e06bd731ced08243998d3a3169788f0d9a9a1",
       "bytes": 1105643,
-      "fetchedAt": "2026-08-04T08:18:41.052Z",
+      "fetchedAt": "2026-08-05T15:32:08.684Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shigen/jigyoukeikaku/r8jigyoukeikaku.files/0017_20260123.pdf"
+    },
+    {
+      "filename": "0018_20260123.pdf",
+      "sha256": "78627b71a3a2ed9bee21ce6d58b9cff6cf85a930f7cedb966198998ea118a0fa",
+      "bytes": 245721,
+      "fetchedAt": "2026-08-05T15:32:09.008Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shigen/jigyoukeikaku/r8jigyoukeikaku.files/0018_20260123.pdf"
+    },
+    {
+      "filename": "0019_20260123.pdf",
+      "sha256": "59bcdf4710f12e6fa93f096ede5498cd08706ab6d110c9b8737908c0787188cd",
+      "bytes": 381498,
+      "fetchedAt": "2026-08-05T15:32:09.338Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shigen/jigyoukeikaku/r8jigyoukeikaku.files/0019_20260123.pdf"
+    },
+    {
+      "filename": "0020_20260123.pdf",
+      "sha256": "2c46460a18422828211e62ff373c7d05b520063633cd147007714a43be5268ea",
+      "bytes": 161041,
+      "fetchedAt": "2026-08-05T15:32:09.665Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shigen/jigyoukeikaku/r8jigyoukeikaku.files/0020_20260123.pdf"
+    },
+    {
+      "filename": "0021_20260123.pdf",
+      "sha256": "94540800044889cda17a28e15bb5eb668307f6a0c6578af99885840ae0b09817",
+      "bytes": 181383,
+      "fetchedAt": "2026-08-05T15:32:09.990Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shigen/jigyoukeikaku/r8jigyoukeikaku.files/0021_20260123.pdf"
+    },
+    {
+      "filename": "0022_20260123.pdf",
+      "sha256": "9c31e37bf2c782d01389b1e4874cf598867370260ac7068ff57cacfc63f8b494",
+      "bytes": 382001,
+      "fetchedAt": "2026-08-05T15:32:10.322Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shigen/jigyoukeikaku/r8jigyoukeikaku.files/0022_20260123.pdf"
+    },
+    {
+      "filename": "0023_20260123.pdf",
+      "sha256": "2c6c5ccdb1652701ca8472c666f7aad07dade693cacbb5e9a5459e57722943bb",
+      "bytes": 321592,
+      "fetchedAt": "2026-08-05T15:32:10.650Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shigen/jigyoukeikaku/r8jigyoukeikaku.files/0023_20260123.pdf"
+    },
+    {
+      "filename": "0024_20260123.pdf",
+      "sha256": "f7a9dcac9bb404cff0987d83a5613d0f271348013ec920e2cb97173e3e17aa2f",
+      "bytes": 282832,
+      "fetchedAt": "2026-08-05T15:32:10.980Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shigen/jigyoukeikaku/r8jigyoukeikaku.files/0024_20260123.pdf"
+    },
+    {
+      "filename": "0025_20260123.pdf",
+      "sha256": "90398f12559c6731cc1bafa80d4ced89a547ba6bebc7035c2c70654189ae73f2",
+      "bytes": 294321,
+      "fetchedAt": "2026-08-05T15:32:11.309Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shigen/jigyoukeikaku/r8jigyoukeikaku.files/0025_20260123.pdf"
+    },
+    {
+      "filename": "0026_20260123.pdf",
+      "sha256": "9e588213b653edc30ef6b8d627654f802046bb70e0e154b41b50e81328b8cc17",
+      "bytes": 167143,
+      "fetchedAt": "2026-08-05T15:32:11.639Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shigen/jigyoukeikaku/r8jigyoukeikaku.files/0026_20260123.pdf"
+    },
+    {
+      "filename": "0027_20260123.pdf",
+      "sha256": "871a3e48884d69e5caf0ab93aeeab60312055b06b83416e3bae8fcb5ef92abce",
+      "bytes": 195712,
+      "fetchedAt": "2026-08-05T15:32:11.965Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shigen/jigyoukeikaku/r8jigyoukeikaku.files/0027_20260123.pdf"
     },
     {
       "filename": "0108_20260122.pdf",
       "sha256": "d62d5b1a107664d1a5242253179e8ed613fb64b12b77f95fc63378d4a25ebb5b",
       "bytes": 1236932,
-      "fetchedAt": "2026-08-04T08:18:41.461Z",
+      "fetchedAt": "2026-08-05T15:32:12.310Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenchiku/jigyoukeikaku/r8jigyoukeikaku.files/0108_20260122.pdf"
+    },
+    {
+      "filename": "0109_20260122.pdf",
+      "sha256": "cfa73eefdf2f682d1fc2f38bd401dd44d930fbfd8f71934dabdc3340f748b3f1",
+      "bytes": 822724,
+      "fetchedAt": "2026-08-05T15:32:12.643Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenchiku/jigyoukeikaku/r8jigyoukeikaku.files/0109_20260122.pdf"
+    },
+    {
+      "filename": "0111_20260122.pdf",
+      "sha256": "17b9acbaa78689cabbc355e9eef9421ad38eb4e788ff62bbb033ad401acec561",
+      "bytes": 706536,
+      "fetchedAt": "2026-08-05T15:32:12.973Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenchiku/jigyoukeikaku/r8jigyoukeikaku.files/0111_20260122.pdf"
+    },
+    {
+      "filename": "0100_20260121.pdf",
+      "sha256": "1a78026d90cdbb3e89fc334505befecc3a0361dcf24e747f92555af8c5dfba9f",
+      "bytes": 458970,
+      "fetchedAt": "2026-08-05T15:32:13.302Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenchiku/jigyoukeikaku/r8jigyoukeikaku.files/0100_20260121.pdf"
+    },
+    {
+      "filename": "0101_20260121.pdf",
+      "sha256": "b9b0099d9541e54410b9a9c9e8414098b12e7651fc2667d22408a01f0e33597f",
+      "bytes": 496421,
+      "fetchedAt": "2026-08-05T15:32:13.638Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenchiku/jigyoukeikaku/r8jigyoukeikaku.files/0101_20260121.pdf"
+    },
+    {
+      "filename": "0102_20260121.pdf",
+      "sha256": "09f61b5ef854809fecc25197ffd4a611a8349156451df8da456ebdd1d2ef61bc",
+      "bytes": 484840,
+      "fetchedAt": "2026-08-05T15:32:13.967Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenchiku/jigyoukeikaku/r8jigyoukeikaku.files/0102_20260121.pdf"
+    },
+    {
+      "filename": "0103_20260121.pdf",
+      "sha256": "3288982bb06ad273788f37876933b45eb072b9e2d4608cba7c67c95bdca4c7f5",
+      "bytes": 445349,
+      "fetchedAt": "2026-08-05T15:32:14.295Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenchiku/jigyoukeikaku/r8jigyoukeikaku.files/0103_20260121.pdf"
+    },
+    {
+      "filename": "0104_20260121.pdf",
+      "sha256": "964d98344e3f9243e121ada396c8188994b03a72f56f5f213b916c28343b785b",
+      "bytes": 445858,
+      "fetchedAt": "2026-08-05T15:32:14.624Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenchiku/jigyoukeikaku/r8jigyoukeikaku.files/0104_20260121.pdf"
+    },
+    {
+      "filename": "0105_20260121.pdf",
+      "sha256": "ed62fccfa6fb4678e36a3e9f1cf36c6eed75c624949924f0cff03acef05c4a7e",
+      "bytes": 667044,
+      "fetchedAt": "2026-08-05T15:32:14.961Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenchiku/jigyoukeikaku/r8jigyoukeikaku.files/0105_20260121.pdf"
+    },
+    {
+      "filename": "0106_20260121.pdf",
+      "sha256": "fadc617a8622287901bedcc6c094d9462f0a9ebe66da5d1de434bdfd433bddc6",
+      "bytes": 158916,
+      "fetchedAt": "2026-08-05T15:32:15.288Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenchiku/jigyoukeikaku/r8jigyoukeikaku.files/0106_20260121.pdf"
     },
     {
       "filename": "2026_01_12.pdf",
       "sha256": "9982c6bf522c3fdd121dc6808b8d5a9f366b0f42231da662eaad4da8ddb645d8",
       "bytes": 795641,
-      "fetchedAt": "2026-08-04T08:18:41.833Z",
+      "fetchedAt": "2026-08-05T15:32:15.625Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/toshi/jigyoukeikaku/r8jigyoukeikaku.files/2026_01_12.pdf"
+    },
+    {
+      "filename": "2026_01_120101.pdf",
+      "sha256": "5f8a16f4c6c2b52005b4875a85f8b43954994771c5ae4090ca288d5fe77422ba",
+      "bytes": 335297,
+      "fetchedAt": "2026-08-05T15:32:15.954Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/toshi/jigyoukeikaku/r8jigyoukeikaku.files/2026_01_120101.pdf"
+    },
+    {
+      "filename": "2026_01_120102.pdf",
+      "sha256": "2a08d0157a4ba7dcf7a2c08e048c190a59e82196dbab021b52040daecbb6efd3",
+      "bytes": 404604,
+      "fetchedAt": "2026-08-05T15:32:16.283Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/toshi/jigyoukeikaku/r8jigyoukeikaku.files/2026_01_120102.pdf"
+    },
+    {
+      "filename": "2026_01_120103.pdf",
+      "sha256": "224ad921701707ecd4bcaa39b0dd58c81394c32b9b4acb6b788b2467268f46ce",
+      "bytes": 608586,
+      "fetchedAt": "2026-08-05T15:32:16.614Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/toshi/jigyoukeikaku/r8jigyoukeikaku.files/2026_01_120103.pdf"
     },
     {
       "filename": "2026_01_19.pdf",
       "sha256": "ad41b23b92ad83aff424c308c4f8133f82a472a1a6d4be05b5aa0623762a6682",
       "bytes": 201472,
-      "fetchedAt": "2026-08-04T08:18:42.163Z",
+      "fetchedAt": "2026-08-05T15:32:16.942Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/toshi/jigyoukeikaku/r8jigyoukeikaku.files/2026_01_19.pdf"
+    },
+    {
+      "filename": "2026_01_190110.pdf",
+      "sha256": "4831b7b3f2398fd30160188e78f1c5646a3552b7e587967b4cc65b8d4fec6082",
+      "bytes": 158060,
+      "fetchedAt": "2026-08-05T15:32:17.265Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/toshi/jigyoukeikaku/r8jigyoukeikaku.files/2026_01_190110.pdf"
+    },
+    {
+      "filename": "2026_01_190117.pdf",
+      "sha256": "f3c6fc1d9bb3dee724b307231b19a212bd7a814822219729da99e525fae9c338",
+      "bytes": 163926,
+      "fetchedAt": "2026-08-05T15:32:17.593Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/toshi/jigyoukeikaku/r8jigyoukeikaku.files/2026_01_190117.pdf"
+    },
+    {
+      "filename": "2026_17.pdf",
+      "sha256": "a411c33fad57a21aa1609bb58784019ba8337af23e4e2be6207f3b91db5eae0d",
+      "bytes": 391372,
+      "fetchedAt": "2026-08-05T15:32:17.925Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/toshi/jigyoukeikaku/r8jigyoukeikaku.files/2026_17.pdf"
+    },
+    {
+      "filename": "2026_17_0101.pdf",
+      "sha256": "f430c0a13cea1247ff1d70a765202868482e7291c57568c265653cb85d724b56",
+      "bytes": 196732,
+      "fetchedAt": "2026-08-05T15:32:18.251Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/toshi/jigyoukeikaku/r8jigyoukeikaku.files/2026_17_0101.pdf"
+    },
+    {
+      "filename": "2026_17_0102.pdf",
+      "sha256": "3b3a19e6ed984bf3b0985ff201a917dd85e42cbfdfc0951865b2ad33c3dc5d90",
+      "bytes": 321130,
+      "fetchedAt": "2026-08-05T15:32:18.580Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/toshi/jigyoukeikaku/r8jigyoukeikaku.files/2026_17_0102.pdf"
+    },
+    {
+      "filename": "2026_17_0103.pdf",
+      "sha256": "944ee16ae312d1f1344e117e621e40f94a7f5bdb6832964fd88c6970c71ac888",
+      "bytes": 177568,
+      "fetchedAt": "2026-08-05T15:32:18.905Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/toshi/jigyoukeikaku/r8jigyoukeikaku.files/2026_17_0103.pdf"
+    },
+    {
+      "filename": "2026_17_0105.pdf",
+      "sha256": "6096f53aa50c5c4679341960915884b0c595ecb896ab8b7a29acb5cb172f13db",
+      "bytes": 153375,
+      "fetchedAt": "2026-08-05T15:32:19.231Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/toshi/jigyoukeikaku/r8jigyoukeikaku.files/2026_17_0105.pdf"
+    },
+    {
+      "filename": "R8_hosyo.pdf",
+      "sha256": "751322d42cbcc3ed53f76313e8726d6cc1ad374b265796188ca2a42a17d3b2c3",
+      "bytes": 211136,
+      "fetchedAt": "2026-08-05T15:32:19.560Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/toshi/jigyoukeikaku/r8jigyoukeikaku.files/R8_hosyo.pdf"
     },
     {
       "filename": "0029_20260204.pdf",
       "sha256": "7d3831f14c0d72f094287abab6a7082a7e69cb464aafb6b8f96ea71a4f628ed8",
       "bytes": 1011476,
-      "fetchedAt": "2026-08-04T08:18:42.552Z",
+      "fetchedAt": "2026-08-05T15:32:19.897Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/doro/jigyokeikaku/r8jigyoukeikaku.files/0029_20260204.pdf"
+    },
+    {
+      "filename": "jigyokeikaku__0011_20260123.pdf",
+      "sha256": "57b461915c08a10f7691570a84bcb6b19fda137d855b3c01a8c0d909ed8d30c1",
+      "bytes": 285758,
+      "fetchedAt": "2026-08-05T15:32:20.226Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/doro/jigyokeikaku/r8jigyoukeikaku.files/0011_20260123.pdf"
+    },
+    {
+      "filename": "0027_20260204.pdf",
+      "sha256": "d1dbcf405030ad25494f6d66150dd615292209394dcb4b2d8a1319896238032d",
+      "bytes": 315192,
+      "fetchedAt": "2026-08-05T15:32:20.556Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/doro/jigyokeikaku/r8jigyoukeikaku.files/0027_20260204.pdf"
+    },
+    {
+      "filename": "jigyokeikaku__0024_20260126.pdf",
+      "sha256": "95f76eabbeee0ea9f6f802797aea1dd518cab7f3de02984b4386d9267c6a58c6",
+      "bytes": 468401,
+      "fetchedAt": "2026-08-05T15:32:20.888Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/doro/jigyokeikaku/r8jigyoukeikaku.files/0024_20260126.pdf"
+    },
+    {
+      "filename": "jigyokeikaku__0025_20260126.pdf",
+      "sha256": "14ca2160d2b780360fea7e1792994af51e40d185d94be79e8e990f4c44cb71ea",
+      "bytes": 260004,
+      "fetchedAt": "2026-08-05T15:32:21.215Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/doro/jigyokeikaku/r8jigyoukeikaku.files/0025_20260126.pdf"
+    },
+    {
+      "filename": "0015_20260123.pdf",
+      "sha256": "52d769bb5a48a6b852ad4457d6d1e129d3fec272de4f97c491df59c0ed4fa0b8",
+      "bytes": 460596,
+      "fetchedAt": "2026-08-05T15:32:21.548Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/doro/jigyokeikaku/r8jigyoukeikaku.files/0015_20260123.pdf"
+    },
+    {
+      "filename": "0016_20260123.pdf",
+      "sha256": "277d84bc443828a2fd6b86cef3ee7b3d44fd6032bd1b3c0db7065adecc1241a5",
+      "bytes": 183912,
+      "fetchedAt": "2026-08-05T15:32:21.873Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/doro/jigyokeikaku/r8jigyoukeikaku.files/0016_20260123.pdf"
+    },
+    {
+      "filename": "jigyokeikaku__0017_20260123.pdf",
+      "sha256": "5ef20f8b5a2ec84dd9fa8dc33f50ab64c11df4791cd27810211713e729c8cb4d",
+      "bytes": 199138,
+      "fetchedAt": "2026-08-05T15:32:22.204Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/doro/jigyokeikaku/r8jigyoukeikaku.files/0017_20260123.pdf"
+    },
+    {
+      "filename": "jigyokeikaku__0018_20260123.pdf",
+      "sha256": "62c8e9d54c343b3ab1eed86702a2323faaacfae9e31ad016f3a46302a717a439",
+      "bytes": 182080,
+      "fetchedAt": "2026-08-05T15:32:22.537Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/doro/jigyokeikaku/r8jigyoukeikaku.files/0018_20260123.pdf"
     },
     {
       "filename": "0020_20260126.pdf",
       "sha256": "a21758f6889abe4466afde29d225546c69d2c5e455b499a16956213c6853b845",
       "bytes": 199897,
-      "fetchedAt": "2026-08-04T08:18:42.918Z",
+      "fetchedAt": "2026-08-05T15:32:22.865Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/doro/jigyokeikaku/r8jigyoukeikaku.files/0020_20260126.pdf"
+    },
+    {
+      "filename": "jigyokeikaku__0022_20260126.pdf",
+      "sha256": "36df8c2facad9da063a0b975eb91264f9a23cbe2e4eba7259cc2becdee9db44b",
+      "bytes": 179531,
+      "fetchedAt": "2026-08-05T15:32:23.190Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/doro/jigyokeikaku/r8jigyoukeikaku.files/0022_20260126.pdf"
+    },
+    {
+      "filename": "jigyokeikaku__0023_20260126.pdf",
+      "sha256": "864a7cee37cc1ccbdec7e764606f896f97dc57c9cc269cfec23f5dbe0eb29e4f",
+      "bytes": 173013,
+      "fetchedAt": "2026-08-05T15:32:23.516Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/doro/jigyokeikaku/r8jigyoukeikaku.files/0023_20260126.pdf"
+    },
+    {
+      "filename": "jigyokeikaku__0019_20260123.pdf",
+      "sha256": "eeb4835dd31454aee8dfe2c28631e736a5af18746b8a6150ce52120ac9112893",
+      "bytes": 209741,
+      "fetchedAt": "2026-08-05T15:32:23.842Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/doro/jigyokeikaku/r8jigyoukeikaku.files/0019_20260123.pdf"
     },
     {
       "filename": "0073_20260127.pdf",
       "sha256": "77c8aaa241e6fe53ff322e9cf497672b07a90e4b85cf9b9f1dbdc774db50c623",
       "bytes": 1119062,
-      "fetchedAt": "2026-08-04T08:18:43.317Z",
+      "fetchedAt": "2026-08-05T15:32:24.181Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0073_20260127.pdf"
+    },
+    {
+      "filename": "0066_20260127.pdf",
+      "sha256": "b4a8b61d7a2121ae6eae483056b3947074532f7f0985ee4fff54f2173ae3d3df",
+      "bytes": 270520,
+      "fetchedAt": "2026-08-05T15:32:24.507Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0066_20260127.pdf"
+    },
+    {
+      "filename": "0067_20260127.pdf",
+      "sha256": "e8804eefb081ff455db3ac00053a9b1b3129ff3f7dd015dd1d9480f040e7a6ce",
+      "bytes": 333039,
+      "fetchedAt": "2026-08-05T15:32:24.834Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0067_20260127.pdf"
+    },
+    {
+      "filename": "0068_20260127.pdf",
+      "sha256": "daeb85118a791d6274dc937c2ede0a2b701ab7b257b3323540229361affecc87",
+      "bytes": 423154,
+      "fetchedAt": "2026-08-05T15:32:25.166Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0068_20260127.pdf"
+    },
+    {
+      "filename": "0069_20260127.pdf",
+      "sha256": "7af1c36c2c0b88ea9e8cecbfa7501e11be68eba91ac36aefcacb43c7e4d189db",
+      "bytes": 450584,
+      "fetchedAt": "2026-08-05T15:32:25.495Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0069_20260127.pdf"
+    },
+    {
+      "filename": "0070_20260127.pdf",
+      "sha256": "c7af4d9952bcee14be341d20ff2a5e7786ca2a12d615f601fb57608a5e4bd9ab",
+      "bytes": 273121,
+      "fetchedAt": "2026-08-05T15:32:25.823Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0070_20260127.pdf"
+    },
+    {
+      "filename": "0071_20260127.pdf",
+      "sha256": "651d8914a68e60463dfd003945a8449ab5bdc88a65c981584ba12004019aceb8",
+      "bytes": 268621,
+      "fetchedAt": "2026-08-05T15:32:26.149Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0071_20260127.pdf"
+    },
+    {
+      "filename": "0051_20260126.pdf",
+      "sha256": "fd2d2e3cd3195b701325b4d1eab54a78fa009e26af25eb3b891a83ef318aadc6",
+      "bytes": 140867,
+      "fetchedAt": "2026-08-05T15:32:26.474Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0051_20260126.pdf"
+    },
+    {
+      "filename": "0072_20260127.pdf",
+      "sha256": "7e4c1bab4b7716f9a994f4e0f8261a4082592116fd3824a93978ce4ac88bf316",
+      "bytes": 131377,
+      "fetchedAt": "2026-08-05T15:32:26.799Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0072_20260127.pdf"
+    },
+    {
+      "filename": "0053_20260126.pdf",
+      "sha256": "e90c6c825bb60b97083fcf42c56e9d87da4b9b7e694e572fadd750bd87c59666",
+      "bytes": 597989,
+      "fetchedAt": "2026-08-05T15:32:27.138Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0053_20260126.pdf"
+    },
+    {
+      "filename": "kowan__0054_20260126.pdf",
+      "sha256": "9eb44ddac3982cf392bb4006ad02e179b396713df975d1d5e853ba4a02dd5cea",
+      "bytes": 364666,
+      "fetchedAt": "2026-08-05T15:32:27.466Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0054_20260126.pdf"
+    },
+    {
+      "filename": "kowan__0055_20260126.pdf",
+      "sha256": "06f40f3e84b9d4533e51734c62fe2c152dfb59160d6bf332af55fc89560ffea6",
+      "bytes": 220028,
+      "fetchedAt": "2026-08-05T15:32:27.795Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0055_20260126.pdf"
+    },
+    {
+      "filename": "kowan__0056_20260126.pdf",
+      "sha256": "f4599517a179938b7001db026961f42d64458ba17464104736bfa0226755d05c",
+      "bytes": 184169,
+      "fetchedAt": "2026-08-05T15:32:28.120Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0056_20260126.pdf"
+    },
+    {
+      "filename": "0057_20260126.pdf",
+      "sha256": "8af9cb2c5093f5dce361ac593d641f7c132a77c0c63208d8a0852738e49d8882",
+      "bytes": 187667,
+      "fetchedAt": "2026-08-05T15:32:28.444Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0057_20260126.pdf"
+    },
+    {
+      "filename": "0059_20260126.pdf",
+      "sha256": "3dbc03a7872656acf34b07d11988d388b524652cb8285e5085d1d9c4c255d0f1",
+      "bytes": 204725,
+      "fetchedAt": "2026-08-05T15:32:28.783Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0059_20260126.pdf"
+    },
+    {
+      "filename": "0060_20260126.pdf",
+      "sha256": "fa51c300e234743f0e865d10277668f8408f6113cdf3478c174e1e5fd2b0cec9",
+      "bytes": 205091,
+      "fetchedAt": "2026-08-05T15:32:29.107Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0060_20260126.pdf"
+    },
+    {
+      "filename": "0061_20260126.pdf",
+      "sha256": "6e0a0382399724245db37f53683480b755dc5590b338f3e93559683edae6e0ee",
+      "bytes": 193350,
+      "fetchedAt": "2026-08-05T15:32:29.435Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0061_20260126.pdf"
+    },
+    {
+      "filename": "0062_20260126.pdf",
+      "sha256": "9e3b75a8a380303e40a2eebb6777e525fa1be45336cac8957afe21f98c0022f7",
+      "bytes": 218463,
+      "fetchedAt": "2026-08-05T15:32:29.762Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0062_20260126.pdf"
+    },
+    {
+      "filename": "0063_20260126.pdf",
+      "sha256": "d2f92c50db9e183bfa1636cbf2975ba3e76f6a17e9170167420544ac665d9893",
+      "bytes": 185185,
+      "fetchedAt": "2026-08-05T15:32:30.090Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0063_20260126.pdf"
+    },
+    {
+      "filename": "0064_20260126.pdf",
+      "sha256": "a0917f3d1157dd62a942754eabaf471e8290969a99ff082267374d2422d9d4c7",
+      "bytes": 163451,
+      "fetchedAt": "2026-08-05T15:32:30.415Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0064_20260126.pdf"
+    },
+    {
+      "filename": "0065_20260126.pdf",
+      "sha256": "6f17e4a284875d1b808f721157c0b482734f845b54683686fd0f9d07ed63e234",
+      "bytes": 421506,
+      "fetchedAt": "2026-08-05T15:32:30.744Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0065_20260126.pdf"
     },
     {
       "filename": "0016_20260122.pdf",
       "sha256": "523b2ae8d5b77a89404863a57a3539c1b336ad9300cd0f673b744e453738d433",
       "bytes": 863521,
-      "fetchedAt": "2026-08-04T08:18:43.949Z",
+      "fetchedAt": "2026-08-05T15:32:31.080Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shobo/jigyoukeikaku/r8jigyoukeikaku.files/0016_20260122.pdf"
+    },
+    {
+      "filename": "0017_20260122.pdf",
+      "sha256": "07ceb5ca048ac1823266a84e6da3080439e5b548982ac38b85e3715c3fc098ad",
+      "bytes": 366352,
+      "fetchedAt": "2026-08-05T15:32:31.413Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shobo/jigyoukeikaku/r8jigyoukeikaku.files/0017_20260122.pdf"
+    },
+    {
+      "filename": "0019_20260122.pdf",
+      "sha256": "75cb454c25676a18a055a752c09161d47cfd6643b2743f5a3b4d92e32573fd24",
+      "bytes": 269542,
+      "fetchedAt": "2026-08-05T15:32:31.739Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shobo/jigyoukeikaku/r8jigyoukeikaku.files/0019_20260122.pdf"
+    },
+    {
+      "filename": "0020_20260122.pdf",
+      "sha256": "bd092212ec2a116a203a52a273eb8be64b57d1a027ae2164d6431c767cbfa7b1",
+      "bytes": 368751,
+      "fetchedAt": "2026-08-05T15:32:32.068Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shobo/jigyoukeikaku/r8jigyoukeikaku.files/0020_20260122.pdf"
+    },
+    {
+      "filename": "0021_20260122.pdf",
+      "sha256": "46dda9e0da80d4bad31e04341bf76730122cf66fb4b37bf7fccb7ed960ce1029",
+      "bytes": 164567,
+      "fetchedAt": "2026-08-05T15:32:32.392Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shobo/jigyoukeikaku/r8jigyoukeikaku.files/0021_20260122.pdf"
+    },
+    {
+      "filename": "0022_20260122.pdf",
+      "sha256": "af640c44bd89afeb3fac01cf37432ece534b371d48bbed1ca2a55171b8557c36",
+      "bytes": 168956,
+      "fetchedAt": "2026-08-05T15:32:32.721Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shobo/jigyoukeikaku/r8jigyoukeikaku.files/0022_20260122.pdf"
+    },
+    {
+      "filename": "0023_20260122.pdf",
+      "sha256": "5b80cc257f03335d808fa0cab177024e47044b16243ae73891de23b1c51b5db7",
+      "bytes": 130420,
+      "fetchedAt": "2026-08-05T15:32:33.049Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shobo/jigyoukeikaku/r8jigyoukeikaku.files/0023_20260122.pdf"
+    },
+    {
+      "filename": "0024_20260122.pdf",
+      "sha256": "404d63e139a36c8cafc6f23017d9b29de6dc42172e5ac7ff8e400258c12abdac",
+      "bytes": 222827,
+      "fetchedAt": "2026-08-05T15:32:33.376Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shobo/jigyoukeikaku/r8jigyoukeikaku.files/0024_20260122.pdf"
     },
     {
       "filename": "0025_20260122.pdf",
       "sha256": "ca567bfc5f1674ff9e84dc8d09d8351670bf3889eb0cd6ce6fed4034ff2cb3aa",
       "bytes": 212327,
-      "fetchedAt": "2026-08-04T08:18:44.918Z",
+      "fetchedAt": "2026-08-05T15:32:33.703Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shobo/jigyoukeikaku/r8jigyoukeikaku.files/0025_20260122.pdf"
+    },
+    {
+      "filename": "jigyoukeikaku__0004_20260123.pdf",
+      "sha256": "702693b3267186e5aa65b959f0e564f7e785a86616946ab800616d2dc2caf608",
+      "bytes": 2231665,
+      "fetchedAt": "2026-08-05T15:32:34.054Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/suido/jigyoukeikaku/r8jigyoukeikaku.files/0004_20260123.pdf"
+    },
+    {
+      "filename": "8jidousya-02-01-01syokouchiku.pdf",
+      "sha256": "76479aa41a46567d5aa1a8af1bd82a5a2c2b42dac1c1a0285c6b8adc0597113b",
+      "bytes": 511534,
+      "fetchedAt": "2026-08-05T15:32:34.384Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8jidousya-02-01-01syokouchiku.pdf"
+    },
+    {
+      "filename": "8jidousya-02-01-30syaryou.pdf",
+      "sha256": "11ad81399420dcb014bd1193948b9fb4b8d81b862d355acfd3d4e48e31e2d943",
+      "bytes": 188046,
+      "fetchedAt": "2026-08-05T15:32:34.710Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8jidousya-02-01-30syaryou.pdf"
+    },
+    {
+      "filename": "8jidousya-02-01-40unten.pdf",
+      "sha256": "8731b4fd109fcb959946b7edfa52d1078762253e0fe459e276acc036b4bd7831",
+      "bytes": 192305,
+      "fetchedAt": "2026-08-05T15:32:35.039Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8jidousya-02-01-40unten.pdf"
+    },
+    {
+      "filename": "8jidousya-02-01-60unyukanri.pdf",
+      "sha256": "3c3dcf2bc78d9bea6d9bc68b8f8e009d40814a4562e04ccc9bda92df6a461912",
+      "bytes": 228688,
+      "fetchedAt": "2026-08-05T15:32:35.366Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8jidousya-02-01-60unyukanri.pdf"
+    },
+    {
+      "filename": "8jidousya-02-01-73juuryouzei.pdf",
+      "sha256": "9cdc8123b646ba847748888c391f8f3e3d6dab2a06857dfa62830e48a2bf595b",
+      "bytes": 46582,
+      "fetchedAt": "2026-08-05T15:32:35.680Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8jidousya-02-01-73juuryouzei.pdf"
+    },
+    {
+      "filename": "8jidousya-12-01-01syaryou.pdf",
+      "sha256": "3e9c11ce43e0f12170534f689c5cfc3423723f4b6d4487102e82811b96539637",
+      "bytes": 85572,
+      "fetchedAt": "2026-08-05T15:32:36.006Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8jidousya-12-01-01syaryou.pdf"
+    },
+    {
+      "filename": "8jidousya-12-01-10kouchikubutsu.pdf",
+      "sha256": "f5b443b1139790f9ad9bd24c737eb3108d98bb7d58c2569ba3691674855761f5",
+      "bytes": 1009218,
+      "fetchedAt": "2026-08-05T15:32:36.341Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8jidousya-12-01-10kouchikubutsu.pdf"
+    },
+    {
+      "filename": "8jidousya-12-01-15kikaibihin.pdf",
+      "sha256": "a65ac31e5b60ef95382ce0dc6ca7f56e2b88947bf21a6d79c5628f26eb3a55ad",
+      "bytes": 266711,
+      "fetchedAt": "2026-08-05T15:32:36.667Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8jidousya-12-01-15kikaibihin.pdf"
+    },
+    {
+      "filename": "8kanren-18-01-80kensyuujo.pdf",
+      "sha256": "febe60a64f4046298b2d6ce0f3f7106091c1e94e4cfb597b72f5466378d1241b",
+      "bytes": 62160,
+      "fetchedAt": "2026-08-05T15:32:36.993Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8kanren-18-01-80kensyuujo.pdf"
+    },
+    {
+      "filename": "8kanren-18-01-90ippankanri.pdf",
+      "sha256": "61ce6766993dfaa6cf5f143a631bfec008c611f57396959b1dd39abebaa25903",
+      "bytes": 84822,
+      "fetchedAt": "2026-08-05T15:32:37.317Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8kanren-18-01-90ippankanri.pdf"
+    },
+    {
+      "filename": "8kousoku-02-01-10senro.pdf",
+      "sha256": "446836a95ad6ad987dc11f082e03f81052998bcadc8dfa7c0c65c8e6bc85dd32",
+      "bytes": 3068840,
+      "fetchedAt": "2026-08-05T15:32:37.680Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8kousoku-02-01-10senro.pdf"
+    },
+    {
+      "filename": "8kousoku-02-01-20denro.pdf",
+      "sha256": "e27fc180d869426219b579ab3a463f70b0828de008765d6d97671ac16e353c83",
+      "bytes": 2191955,
+      "fetchedAt": "2026-08-05T15:32:38.033Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8kousoku-02-01-20denro.pdf"
+    },
+    {
+      "filename": "8kousoku-02-01-30sharyou.pdf",
+      "sha256": "e2a264a9693d30be7ee8c17e8208de6fd53315cb791453f42e7508aa59b7a957",
+      "bytes": 5281248,
+      "fetchedAt": "2026-08-05T15:32:38.429Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8kousoku-02-01-30sharyou.pdf"
+    },
+    {
+      "filename": "8kousoku-02-01-40unten.pdf",
+      "sha256": "af4abc0b8d712ee9a3ceb13f80a38ad708c83d8c975ebae06ea7b47f8c9e9224",
+      "bytes": 139528,
+      "fetchedAt": "2026-08-05T15:32:38.757Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8kousoku-02-01-40unten.pdf"
+    },
+    {
+      "filename": "8kousoku-02-01-50unyu.pdf",
+      "sha256": "a7bc9b8cd7b0f0d0430bd4707fd8ae0cccdb959753514ef9ab5c2f104921cee1",
+      "bytes": 373796,
+      "fetchedAt": "2026-08-05T15:32:39.088Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8kousoku-02-01-50unyu.pdf"
+    },
+    {
+      "filename": "8kousoku-02-01-60unyukanri.pdf",
+      "sha256": "d2a9f7115d9e9054c0df034ec11a9a8c0c6c962ee66c07ef5343ae1ac10679ae",
+      "bytes": 265929,
+      "fetchedAt": "2026-08-05T15:32:39.417Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8kousoku-02-01-60unyukanri.pdf"
+    },
+    {
+      "filename": "8kousoku-12-01-01kensetsu.pdf",
+      "sha256": "0221273c67ae1071869be91031ce7415390254b1075ccd35fdb2ffa6fbca1137",
+      "bytes": 117965,
+      "fetchedAt": "2026-08-05T15:32:39.744Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8kousoku-12-01-01kensetsu.pdf"
+    },
+    {
+      "filename": "8kousoku-12-01-05kensetsukairyou.pdf",
+      "sha256": "eaa316c9487f0649e248c6545fb3b339a35523cb22b42be5527ed733ae070a1e",
+      "bytes": 8882048,
+      "fetchedAt": "2026-08-05T15:32:40.177Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8kousoku-12-01-05kensetsukairyou.pdf"
+    },
+    {
+      "filename": "8kousoku-12-01-07futaijigyou.pdf",
+      "sha256": "5192ebe68184db692b3191d8bfcb5a83c074c318c38f4e7b5e56b006a1205bb4",
+      "bytes": 487355,
+      "fetchedAt": "2026-08-05T15:32:40.508Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8kousoku-12-01-07futaijigyou.pdf"
     },
     {
       "filename": "0003_20260123.pdf",
       "sha256": "f1ed5b6f4ef05e9373f69f762bf61be8774023dffee84dff05358a701980e175",
       "bytes": 351552,
-      "fetchedAt": "2026-08-04T08:18:45.264Z",
+      "fetchedAt": "2026-08-05T15:32:40.842Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kaikei/jigyoukeikaku/r8jigyoukeikaku.files/0003_20260123.pdf"
     },
     {
-      "filename": "0214_20260126.pdf",
-      "sha256": "be6adef950569ef4fb7e66e79d4d91cb9c8c2d55da2ee3e58775d806d9fc45ac",
-      "bytes": 917530,
-      "fetchedAt": "2026-08-04T08:18:45.650Z",
-      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0214_20260126.pdf"
+      "filename": "0211_20260126.pdf",
+      "sha256": "bf20a8c46609c1edbc44296d000cbec02170b75196e5eb96a24766f86282e88b",
+      "bytes": 168480,
+      "fetchedAt": "2026-08-05T15:32:41.173Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0211_20260126.pdf"
     },
     {
       "filename": "0212_20260126.pdf",
       "sha256": "6fbc5e990a2f97498ea3ff725ba4a58c5f4b1e2f15e045803bfe1547276711aa",
       "bytes": 815679,
-      "fetchedAt": "2026-08-04T08:18:46.035Z",
+      "fetchedAt": "2026-08-05T15:32:41.510Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0212_20260126.pdf"
-    },
-    {
-      "filename": "0240_20260209.pdf",
-      "sha256": "54eaeae5f0c4e574a12c5650fb6c99cec9669f9eedbb94c8f9a87ac3fdb0c969",
-      "bytes": 528788,
-      "fetchedAt": "2026-08-04T08:18:46.694Z",
-      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0240_20260209.pdf"
-    },
-    {
-      "filename": "0229_20260126.pdf",
-      "sha256": "be3d66b9d3fd9c2c93e5f4a7b63852626b8fa5872f285746ac8186c0757e9912",
-      "bytes": 431442,
-      "fetchedAt": "2026-08-04T08:18:47.048Z",
-      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0229_20260126.pdf"
-    },
-    {
-      "filename": "0239_20260204.pdf",
-      "sha256": "af171677b61fb029a90e6f9f22b28e540f782b52a37607c4129ee586090e218b",
-      "bytes": 628485,
-      "fetchedAt": "2026-08-04T08:18:47.415Z",
-      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0239_20260204.pdf"
-    },
-    {
-      "filename": "0226_20260126.pdf",
-      "sha256": "756e451da7d1bdc92d4f6a9daeab3abd4eda585ce659515fc4329a01ed789eb5",
-      "bytes": 474709,
-      "fetchedAt": "2026-08-04T08:18:47.791Z",
-      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0226_20260126.pdf"
-    },
-    {
-      "filename": "0218_20260126.pdf",
-      "sha256": "7fdacab496598959cf04351aa0a4022be4e07629dc9776925cf4f95926573d55",
-      "bytes": 765199,
-      "fetchedAt": "2026-08-04T08:18:48.182Z",
-      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0218_20260126.pdf"
-    },
-    {
-      "filename": "0220_20260126.pdf",
-      "sha256": "723ebaad17e54c74786994825a921860e7d4fcfef500d09c4023a8519eff73b1",
-      "bytes": 836816,
-      "fetchedAt": "2026-08-04T08:18:48.569Z",
-      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0220_20260126.pdf"
-    },
-    {
-      "filename": "0224_20260126.pdf",
-      "sha256": "b2f080bead493d7ca19e745fe6b31debcf4029ca3b00289cf39e96f1ae79a8a7",
-      "bytes": 712798,
-      "fetchedAt": "2026-08-04T08:18:49.163Z",
-      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0224_20260126.pdf"
-    },
-    {
-      "filename": "0231_20260126.pdf",
-      "sha256": "c422e294dd278e25c4b3cb8155ea7e13423321e6dfc845a7e63a0cc358a1c309",
-      "bytes": 620479,
-      "fetchedAt": "2026-08-04T08:18:49.526Z",
-      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0231_20260126.pdf"
-    },
-    {
-      "filename": "0222_20260126.pdf",
-      "sha256": "bbdc3ca607eb73cafbe06d513dd43a9e20de242aa0954b2632b0a55f067369b0",
-      "bytes": 668287,
-      "fetchedAt": "2026-08-04T08:18:50.119Z",
-      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0222_20260126.pdf"
-    },
-    {
-      "filename": "0228_20260126.pdf",
-      "sha256": "43b59d135c68ff607ecacf4e4c63c8c07d1bb104de00504ef27952687a970db5",
-      "bytes": 318787,
-      "fetchedAt": "2026-08-04T08:18:50.461Z",
-      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0228_20260126.pdf"
-    },
-    {
-      "filename": "0227_20260126.pdf",
-      "sha256": "feb571ba3f05d71dbb1803412365b38d5f779ef056a6f0eb37409baf67c4e5c3",
-      "bytes": 376208,
-      "fetchedAt": "2026-08-04T08:18:50.812Z",
-      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0227_20260126.pdf"
-    },
-    {
-      "filename": "0230_20260126.pdf",
-      "sha256": "a2bc3e5d0a422d5517929507c8015f74e06f53b99ad4606f83c38a69c1dc6a57",
-      "bytes": 295441,
-      "fetchedAt": "2026-08-04T08:18:51.152Z",
-      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0230_20260126.pdf"
-    },
-    {
-      "filename": "0215_20260126.pdf",
-      "sha256": "b540ab5a695058996ae1d4204aa3c80d346c60ef7cbc9d844326e6414c455fff",
-      "bytes": 316339,
-      "fetchedAt": "2026-08-04T08:18:51.716Z",
-      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0215_20260126.pdf"
     },
     {
       "filename": "0213_20260126.pdf",
       "sha256": "2af04a1f7d6a052c369f0824ad095e5c0a396329721d115e51bda463710656e5",
       "bytes": 148454,
-      "fetchedAt": "2026-08-04T08:18:52.044Z",
+      "fetchedAt": "2026-08-05T15:32:41.853Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0213_20260126.pdf"
+    },
+    {
+      "filename": "0214_20260126.pdf",
+      "sha256": "be6adef950569ef4fb7e66e79d4d91cb9c8c2d55da2ee3e58775d806d9fc45ac",
+      "bytes": 917530,
+      "fetchedAt": "2026-08-05T15:32:42.190Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0214_20260126.pdf"
+    },
+    {
+      "filename": "0215_20260126.pdf",
+      "sha256": "b540ab5a695058996ae1d4204aa3c80d346c60ef7cbc9d844326e6414c455fff",
+      "bytes": 316339,
+      "fetchedAt": "2026-08-05T15:32:42.519Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0215_20260126.pdf"
+    },
+    {
+      "filename": "0239_20260204.pdf",
+      "sha256": "af171677b61fb029a90e6f9f22b28e540f782b52a37607c4129ee586090e218b",
+      "bytes": 628485,
+      "fetchedAt": "2026-08-05T15:32:42.852Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0239_20260204.pdf"
     },
     {
       "filename": "0217_20260126.pdf",
       "sha256": "138b5c154c306ca17eb973c786dd9394d9b90d3649d5a8ad70385c017065ed7b",
       "bytes": 276490,
-      "fetchedAt": "2026-08-04T08:18:52.390Z",
+      "fetchedAt": "2026-08-05T15:32:43.183Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0217_20260126.pdf"
+    },
+    {
+      "filename": "0218_20260126.pdf",
+      "sha256": "7fdacab496598959cf04351aa0a4022be4e07629dc9776925cf4f95926573d55",
+      "bytes": 765199,
+      "fetchedAt": "2026-08-05T15:32:43.520Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0218_20260126.pdf"
+    },
+    {
+      "filename": "0219_20260126.pdf",
+      "sha256": "e9600fa72225f7317ccb334849fb570de9f22b2568bf94af474efabef7594025",
+      "bytes": 185070,
+      "fetchedAt": "2026-08-05T15:32:43.850Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0219_20260126.pdf"
+    },
+    {
+      "filename": "0220_20260126.pdf",
+      "sha256": "723ebaad17e54c74786994825a921860e7d4fcfef500d09c4023a8519eff73b1",
+      "bytes": 836816,
+      "fetchedAt": "2026-08-05T15:32:44.194Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0220_20260126.pdf"
+    },
+    {
+      "filename": "0221_20260126.pdf",
+      "sha256": "5c39a7cb6858d13a1d099abb185231599e066e2304f08455201e4b98b8e15ff0",
+      "bytes": 177393,
+      "fetchedAt": "2026-08-05T15:32:44.526Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0221_20260126.pdf"
+    },
+    {
+      "filename": "0222_20260126.pdf",
+      "sha256": "bbdc3ca607eb73cafbe06d513dd43a9e20de242aa0954b2632b0a55f067369b0",
+      "bytes": 668287,
+      "fetchedAt": "2026-08-05T15:32:44.871Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0222_20260126.pdf"
+    },
+    {
+      "filename": "0223_20260126.pdf",
+      "sha256": "45874de720a756a6b26f3808b84bbd55bc1ed7d366284aa322e7a3e9ea63883b",
+      "bytes": 181866,
+      "fetchedAt": "2026-08-05T15:32:45.200Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0223_20260126.pdf"
+    },
+    {
+      "filename": "0224_20260126.pdf",
+      "sha256": "b2f080bead493d7ca19e745fe6b31debcf4029ca3b00289cf39e96f1ae79a8a7",
+      "bytes": 712798,
+      "fetchedAt": "2026-08-05T15:32:45.545Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0224_20260126.pdf"
+    },
+    {
+      "filename": "0225_20260126.pdf",
+      "sha256": "9388784c01b8e94a12d3b872c8848b6aa4b59f7f126f66a83e1890651aae1c3d",
+      "bytes": 180290,
+      "fetchedAt": "2026-08-05T15:32:45.876Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0225_20260126.pdf"
+    },
+    {
+      "filename": "0226_20260126.pdf",
+      "sha256": "756e451da7d1bdc92d4f6a9daeab3abd4eda585ce659515fc4329a01ed789eb5",
+      "bytes": 474709,
+      "fetchedAt": "2026-08-05T15:32:46.212Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0226_20260126.pdf"
+    },
+    {
+      "filename": "0227_20260126.pdf",
+      "sha256": "feb571ba3f05d71dbb1803412365b38d5f779ef056a6f0eb37409baf67c4e5c3",
+      "bytes": 376208,
+      "fetchedAt": "2026-08-05T15:32:46.547Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0227_20260126.pdf"
+    },
+    {
+      "filename": "0228_20260126.pdf",
+      "sha256": "43b59d135c68ff607ecacf4e4c63c8c07d1bb104de00504ef27952687a970db5",
+      "bytes": 318787,
+      "fetchedAt": "2026-08-05T15:32:46.876Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0228_20260126.pdf"
+    },
+    {
+      "filename": "0229_20260126.pdf",
+      "sha256": "be3d66b9d3fd9c2c93e5f4a7b63852626b8fa5872f285746ac8186c0757e9912",
+      "bytes": 431442,
+      "fetchedAt": "2026-08-05T15:32:47.227Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0229_20260126.pdf"
+    },
+    {
+      "filename": "0230_20260126.pdf",
+      "sha256": "a2bc3e5d0a422d5517929507c8015f74e06f53b99ad4606f83c38a69c1dc6a57",
+      "bytes": 295441,
+      "fetchedAt": "2026-08-05T15:32:47.559Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0230_20260126.pdf"
+    },
+    {
+      "filename": "0231_20260126.pdf",
+      "sha256": "c422e294dd278e25c4b3cb8155ea7e13423321e6dfc845a7e63a0cc358a1c309",
+      "bytes": 620479,
+      "fetchedAt": "2026-08-05T15:32:47.899Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0231_20260126.pdf"
+    },
+    {
+      "filename": "0232_20260126.pdf",
+      "sha256": "e47b8ed376800ba809181c9484dc7e1c25632c7594a7e72d830111b0dfe7ac6f",
+      "bytes": 200538,
+      "fetchedAt": "2026-08-05T15:32:48.229Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0232_20260126.pdf"
     },
     {
       "filename": "0233_20260126.pdf",
       "sha256": "5648f105494984c469158d4dabb5c874efc650621bf5e2693c06aebad5f5faed",
       "bytes": 234606,
-      "fetchedAt": "2026-08-04T08:18:52.732Z",
+      "fetchedAt": "2026-08-05T15:32:48.559Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0233_20260126.pdf"
     },
     {
       "filename": "0234_20260126.pdf",
       "sha256": "4febb00d6daf4a2fb48885c92367450d0ad7b7d3f1e8328bf815356b738baad4",
       "bytes": 262287,
-      "fetchedAt": "2026-08-04T08:18:53.293Z",
+      "fetchedAt": "2026-08-05T15:32:48.890Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0234_20260126.pdf"
-    },
-    {
-      "filename": "0219_20260126.pdf",
-      "sha256": "e9600fa72225f7317ccb334849fb570de9f22b2568bf94af474efabef7594025",
-      "bytes": 185070,
-      "fetchedAt": "2026-08-04T08:18:53.629Z",
-      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0219_20260126.pdf"
-    },
-    {
-      "filename": "0221_20260126.pdf",
-      "sha256": "5c39a7cb6858d13a1d099abb185231599e066e2304f08455201e4b98b8e15ff0",
-      "bytes": 177393,
-      "fetchedAt": "2026-08-04T08:18:53.971Z",
-      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0221_20260126.pdf"
-    },
-    {
-      "filename": "0223_20260126.pdf",
-      "sha256": "45874de720a756a6b26f3808b84bbd55bc1ed7d366284aa322e7a3e9ea63883b",
-      "bytes": 181866,
-      "fetchedAt": "2026-08-04T08:18:54.516Z",
-      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0223_20260126.pdf"
-    },
-    {
-      "filename": "0225_20260126.pdf",
-      "sha256": "9388784c01b8e94a12d3b872c8848b6aa4b59f7f126f66a83e1890651aae1c3d",
-      "bytes": 180290,
-      "fetchedAt": "2026-08-04T08:18:55.059Z",
-      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0225_20260126.pdf"
-    },
-    {
-      "filename": "0236_20260126.pdf",
-      "sha256": "9bbbe217abf9091490b131f252f31b39dd943e1face540febaddcfb1c0e9884f",
-      "bytes": 215388,
-      "fetchedAt": "2026-08-04T08:18:55.405Z",
-      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0236_20260126.pdf"
-    },
-    {
-      "filename": "0232_20260126.pdf",
-      "sha256": "e47b8ed376800ba809181c9484dc7e1c25632c7594a7e72d830111b0dfe7ac6f",
-      "bytes": 200538,
-      "fetchedAt": "2026-08-04T08:18:55.758Z",
-      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0232_20260126.pdf"
-    },
-    {
-      "filename": "0211_20260126.pdf",
-      "sha256": "bf20a8c46609c1edbc44296d000cbec02170b75196e5eb96a24766f86282e88b",
-      "bytes": 168480,
-      "fetchedAt": "2026-08-04T08:18:56.097Z",
-      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0211_20260126.pdf"
     },
     {
       "filename": "0235_20260126.pdf",
       "sha256": "ff51d4425921be1c6a56b81eafd4803ba6df2f269e0b89721a613496a0e239d6",
       "bytes": 179617,
-      "fetchedAt": "2026-08-04T08:18:56.433Z",
+      "fetchedAt": "2026-08-05T15:32:49.220Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0235_20260126.pdf"
+    },
+    {
+      "filename": "0236_20260126.pdf",
+      "sha256": "9bbbe217abf9091490b131f252f31b39dd943e1face540febaddcfb1c0e9884f",
+      "bytes": 215388,
+      "fetchedAt": "2026-08-05T15:32:49.546Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0236_20260126.pdf"
+    },
+    {
+      "filename": "0240_20260209.pdf",
+      "sha256": "54eaeae5f0c4e574a12c5650fb6c99cec9669f9eedbb94c8f9a87ac3fdb0c969",
+      "bytes": 528788,
+      "fetchedAt": "2026-08-05T15:32:49.882Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0240_20260209.pdf"
     },
     {
       "filename": "0238_20260126.pdf",
       "sha256": "d90950afabeeac30771a02f9f2d22d949b1ec6ff6abefe384bc9d93eb36b7829",
       "bytes": 194208,
-      "fetchedAt": "2026-08-04T08:18:56.988Z",
+      "fetchedAt": "2026-08-05T15:32:50.213Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0238_20260126.pdf"
     },
     {
       "filename": "0004_20260125.pdf",
       "sha256": "648830df1a8ee13042baa83f62bea249672cf0d2ada5bbda2cd0802d3aa6c6cf",
       "bytes": 264680,
-      "fetchedAt": "2026-08-04T08:18:57.344Z",
+      "fetchedAt": "2026-08-05T15:32:50.546Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/senkyo/jigyoukeikaku/r8jigyoukeikaku.files/0004_20260125.pdf"
     },
     {
-      "filename": "0003_20260126.pdf",
+      "filename": "0005_20260125.pdf",
+      "sha256": "2d24441d074dd000d6e544f723e55caff9fdfdf99cffbd4498d6da5861762496",
+      "bytes": 222020,
+      "fetchedAt": "2026-08-05T15:32:50.877Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/senkyo/jigyoukeikaku/r8jigyoukeikaku.files/0005_20260125.pdf"
+    },
+    {
+      "filename": "0006_20260125.pdf",
+      "sha256": "17bcdab9e5cd6d7c2f86a1f4b712f9189a41933d0c98f2e18f121e4e8dd361de",
+      "bytes": 190075,
+      "fetchedAt": "2026-08-05T15:32:51.208Z",
+      "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/senkyo/jigyoukeikaku/r8jigyoukeikaku.files/0006_20260125.pdf"
+    },
+    {
+      "filename": "jinji__0003_20260126.pdf",
       "sha256": "130e030829a28c0c0839348a3c902322285d86b9764d48bb7afecfa9f79ab535",
       "bytes": 238244,
-      "fetchedAt": "2026-08-04T08:18:57.691Z",
+      "fetchedAt": "2026-08-05T15:32:51.539Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/jinji/jigyoukeikaku/r8jigyoukeikaku.files/0003_20260126.pdf"
     },
     {
       "filename": "0014_20260123.pdf",
       "sha256": "434aef1ef2972107a9b9d328e606c17a5c0b79c9a961a5f53eca22c987ae929b",
       "bytes": 214830,
-      "fetchedAt": "2026-08-04T08:18:58.258Z",
+      "fetchedAt": "2026-08-05T15:32:51.865Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kansa/jigyoukeikaku/r8jigyoukeikaku.files/0014_20260123.pdf"
     },
     {
       "filename": "gikai__0001_20260126.pdf",
       "sha256": "f34f8221246b804454832ba9150ab1fe3b2b89ea60f87c3d8b7b5d98fc9bc7b5",
       "bytes": 289367,
-      "fetchedAt": "2026-08-04T08:18:58.617Z",
+      "fetchedAt": "2026-08-05T15:32:52.195Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gikai/jigyoukeikaku/r8jigyoukeikaku.files/0001_20260126.pdf"
     }
   ]
