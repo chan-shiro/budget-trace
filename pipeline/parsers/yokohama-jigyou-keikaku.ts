@@ -163,13 +163,24 @@ function parseHead(text: string): Head | null {
   // ⚠⚠ **ページ全体から拾ってはいけない** — 会計名の正規表現が事業名を拾って
   //   `都市計画課会計` `その他会計事務費（会計` のような会計が20種も生まれた（実測）。
   //   見出しは `[局名] N款N項N目 …（単位：千円）` の**1行**なので、その行だけを見る。
-  const line = han(text).split("\n").find((l) => /\[[^\]]{2,20}\]/.test(l) && /\d+\s*款/.test(l));
+  // ⚠ 見出しの行は「款がある」か「会計名だけ」のどちらか（特別会計は後者）
+  const line = han(text)
+    .split("\n")
+    .find((l) => /\[[^\]]{2,20}\]/.test(l) && (/\d+\s*款/.test(l) || /会計/.test(l)));
   if (!line) return null;
   const bureau = /\[\s*([^\]]{2,20}?)\s*\]/.exec(line)?.[1]?.replace(/[\s　]+/g, "");
   if (!bureau) return null;
   const h = line;
   const m = /(\d+)\s*款(?:\s*(\d+)\s*項)?(?:\s*([\d・]+)\s*目)?/.exec(h);
-  if (!m) return null;
+  // ⚠⚠ **款項目を持たない見出しがある** — 特別会計は `[財政局] 市債金会計` のように
+  //   会計名だけを印字する（実測 0056 p.77・p.84）。null を返すと**直前の目の続き**として
+  //   扱われ、市債金会計の 4,758億 が一般会計の款20（予備費・実際は10億）に流れ込んだ。
+  //   → **会計名だけの見出しも「新しい節の始まり」として受ける**（款は不明なので "0"）。
+  if (!m) {
+    const accOnly = /([^\s\]０-９0-9]{2,12}会計)/.exec(h)?.[1];
+    if (!accOnly) return null;
+    return { bureau, kanNo: "0", koNo: null, mokuNo: null, accountName: accOnly };
+  }
   // ⚠ **目次ページには会計名が無いのが普通**（一般会計）。特別会計は見出しに会計名が出る。
   //   一般会計の1款（議会費）と特会の1款が**番号で衝突する**ので、会計名は必ず持つ
   const acc = /([^\s\]０-９0-9]{2,12}会計)/.exec(h)?.[1] ?? "一般会計";

@@ -3,7 +3,7 @@
   "sourceId": "yokohama-jigyou-keikaku-r8",
   "parser": "yokohama-jigyou-keikaku",
   "parserVersion": "0.1.0",
-  "parsedAt": "2026-08-05T08:01:14.629Z",
+  "parsedAt": "2026-08-05T15:18:52.745Z",
   "unit": "thousandYen",
   "fiscalYear": "R8",
   "totals": [
@@ -333,8 +333,8 @@
       }
     },
     {
-      "accountName": "一般会計",
-      "kanNo": "20",
+      "accountName": "公共事業用地費会計",
+      "kanNo": "0",
       "koNo": null,
       "mokuNo": null,
       "bureau": "財政局",
@@ -346,8 +346,8 @@
       }
     },
     {
-      "accountName": "一般会計",
-      "kanNo": "20",
+      "accountName": "市債金会計",
+      "kanNo": "0",
       "koNo": null,
       "mokuNo": null,
       "bureau": "財政局",
@@ -775,9 +775,9 @@
       }
     },
     {
-      "accountName": "特別会計",
-      "kanNo": "19",
-      "koNo": "1",
+      "accountName": "母子父子寡婦福祉資金会計",
+      "kanNo": "0",
+      "koNo": null,
       "mokuNo": null,
       "bureau": "こども青少年局",
       "amount": 619069,
@@ -5921,8 +5921,8 @@
       }
     },
     {
-      "accountName": "一般会計",
-      "kanNo": "20",
+      "accountName": "公共事業用地費会計",
+      "kanNo": "0",
       "koNo": null,
       "mokuNo": null,
       "bureau": "財政局",
@@ -5939,8 +5939,8 @@
       }
     },
     {
-      "accountName": "一般会計",
-      "kanNo": "20",
+      "accountName": "公共事業用地費会計",
+      "kanNo": "0",
       "koNo": null,
       "mokuNo": null,
       "bureau": "財政局",
@@ -5957,8 +5957,8 @@
       }
     },
     {
-      "accountName": "一般会計",
-      "kanNo": "20",
+      "accountName": "公共事業用地費会計",
+      "kanNo": "0",
       "koNo": null,
       "mokuNo": null,
       "bureau": "財政局",
@@ -5975,8 +5975,8 @@
       }
     },
     {
-      "accountName": "一般会計",
-      "kanNo": "20",
+      "accountName": "公共事業用地費会計",
+      "kanNo": "0",
       "koNo": null,
       "mokuNo": null,
       "bureau": "財政局",
@@ -5993,8 +5993,8 @@
       }
     },
     {
-      "accountName": "一般会計",
-      "kanNo": "20",
+      "accountName": "公共事業用地費会計",
+      "kanNo": "0",
       "koNo": null,
       "mokuNo": null,
       "bureau": "財政局",
@@ -6011,8 +6011,8 @@
       }
     },
     {
-      "accountName": "一般会計",
-      "kanNo": "20",
+      "accountName": "公共事業用地費会計",
+      "kanNo": "0",
       "koNo": null,
       "mokuNo": null,
       "bureau": "財政局",
@@ -6029,8 +6029,8 @@
       }
     },
     {
-      "accountName": "一般会計",
-      "kanNo": "20",
+      "accountName": "市債金会計",
+      "kanNo": "0",
       "koNo": null,
       "mokuNo": null,
       "bureau": "財政局",
@@ -6047,8 +6047,8 @@
       }
     },
     {
-      "accountName": "一般会計",
-      "kanNo": "20",
+      "accountName": "市債金会計",
+      "kanNo": "0",
       "koNo": null,
       "mokuNo": null,
       "bureau": "財政局",
@@ -6065,8 +6065,8 @@
       }
     },
     {
-      "accountName": "一般会計",
-      "kanNo": "20",
+      "accountName": "市債金会計",
+      "kanNo": "0",
       "koNo": null,
       "mokuNo": null,
       "bureau": "財政局",
@@ -6083,8 +6083,8 @@
       }
     },
     {
-      "accountName": "一般会計",
-      "kanNo": "20",
+      "accountName": "市債金会計",
+      "kanNo": "0",
       "koNo": null,
       "mokuNo": null,
       "bureau": "財政局",
@@ -6101,8 +6101,8 @@
       }
     },
     {
-      "accountName": "一般会計",
-      "kanNo": "20",
+      "accountName": "市債金会計",
+      "kanNo": "0",
       "koNo": null,
       "mokuNo": null,
       "bureau": "財政局",
@@ -6119,8 +6119,8 @@
       }
     },
     {
-      "accountName": "一般会計",
-      "kanNo": "20",
+      "accountName": "市債金会計",
+      "kanNo": "0",
       "koNo": null,
       "mokuNo": null,
       "bureau": "財政局",
@@ -6137,8 +6137,8 @@
       }
     },
     {
-      "accountName": "一般会計",
-      "kanNo": "20",
+      "accountName": "市債金会計",
+      "kanNo": "0",
       "koNo": null,
       "mokuNo": null,
       "bureau": "財政局",
@@ -6155,8 +6155,8 @@
       }
     },
     {
-      "accountName": "一般会計",
-      "kanNo": "20",
+      "accountName": "市債金会計",
+      "kanNo": "0",
       "koNo": null,
       "mokuNo": null,
       "bureau": "財政局",
@@ -12581,9 +12581,9 @@
       }
     },
     {
-      "accountName": "特別会計",
-      "kanNo": "19",
-      "koNo": "1",
+      "accountName": "母子父子寡婦福祉資金会計",
+      "kanNo": "0",
+      "koNo": null,
       "mokuNo": null,
       "bureau": "こども青少年局",
       "name": "母子父子福祉資金貸付金",
@@ -12599,9 +12599,9 @@
       }
     },
     {
-      "accountName": "特別会計",
-      "kanNo": "19",
-      "koNo": "1",
+      "accountName": "母子父子寡婦福祉資金会計",
+      "kanNo": "0",
+      "koNo": null,
       "mokuNo": null,
       "bureau": "こども青少年局",
       "name": "寡婦福祉資金貸付金",
@@ -12617,9 +12617,9 @@
       }
     },
     {
-      "accountName": "特別会計",
-      "kanNo": "19",
-      "koNo": "1",
+      "accountName": "母子父子寡婦福祉資金会計",
+      "kanNo": "0",
+      "koNo": null,
       "mokuNo": null,
       "bureau": "こども青少年局",
       "name": "母子父子寡婦福祉資金事務費",
@@ -12635,9 +12635,9 @@
       }
     },
     {
-      "accountName": "特別会計",
-      "kanNo": "19",
-      "koNo": "1",
+      "accountName": "母子父子寡婦福祉資金会計",
+      "kanNo": "0",
+      "koNo": null,
       "mokuNo": null,
       "bureau": "こども青少年局",
       "name": "公債費元金（国への償還）",
@@ -12653,9 +12653,9 @@
       }
     },
     {
-      "accountName": "特別会計",
-      "kanNo": "19",
-      "koNo": "1",
+      "accountName": "母子父子寡婦福祉資金会計",
+      "kanNo": "0",
+      "koNo": null,
       "mokuNo": null,
       "bureau": "こども青少年局",
       "name": "一般会計繰出金",
