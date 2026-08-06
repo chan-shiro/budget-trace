@@ -58,6 +58,18 @@ const han = (s: string): string =>
   s.replace(/[０-９]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xfee0)).replace(/　/g, " ");
 
 /**
+ * 事業名を照合するための正規化。⚠ **目次と詳細シートで全角・半角が食い違う**（実測）:
+ * `SDG`/`ＳＤＧ`・`LED`/`ＬＥＤ`・`(特別支援学校)`/`（特別支援学校）`・`２歳児`/`2歳児`。
+ * しかも**詳細シート側だけ `han()` を通していた**ので、全角数字の名前は鍵が恒久に一致しなかった。
+ * → **両側にこれを掛ける**（目の補正と新規/拡充の引き当ての両方で使う）。
+ */
+const normName = (s: string): string =>
+  s
+    .replace(/[！-～]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xfee0))
+    .replace(/[\s　]+/g, "")
+    .toUpperCase();
+
+/**
  * 数字。⚠ **負号は「別トークン」のときと「くっついた1トークン」のときがある**（実測）。
  * `△ 2`（空白あり）は別トークンだが、`△2`（空白なし）は1トークンで来る。
  * 後者を数字と認めないと、その行の金額が4個になって**事業ごと落ちる**
@@ -488,7 +500,12 @@ export function parseYokohamaJigyouKeikaku(
           .filter(
             (w) =>
               !amtTokens.has(w) &&
-              num(w.t) === null &&
+              // ⚠⚠ **数字を一律で外すと名前の一部が落ちる** — `GREEN×EXPO 2027中小企業出展支援事業`
+              //   の `2027` が消えていた（2巡目レビューで発覚。**コメントは「直した」と書いてあるのに
+              //   コードは直っていなかった** — コメントを実装の証拠にしない）。
+              //   数字を外す目的は**計画書頁の列**なので、そこは x で外し、
+              //   **名前の列の中の数字は残す**。
+              (num(w.t) === null || (w.x0 >= nameLeft && w.x1 <= numLeft)) &&
               // ⚠ **計画書頁の `-`（廃止事業）が名前に混ざる** — `横浜市生活交通バス路-線維持…`
               //   `市街地開発事業費会計-繰出金` になり、**詳細シートとの名前照合が外れて
               //   目が直らない**（19-1-10 と 19-1-17 が 126,468 ずれた＝実測）
@@ -643,8 +660,8 @@ export function parseYokohamaJigyouKeikaku(
         //   原典が `1・2目` と合併して書いている目を事業ごとに正しく分けられる）。
         const kb = /■\s*新規/.test(h) ? "新規" : /■\s*拡充/.test(h) ? "拡充" : null;
         for (const key of [
-          `${m[1]}\u0001${Number(m[2])}\u0001${nm}`,
-          `${m[1]}\u0001${Number(m[2])}\u0001${Number(m[3])}\u0001${nm}`,
+          `${m[1]}\u0001${Number(m[2])}\u0001${normName(nm)}`,
+          `${m[1]}\u0001${Number(m[2])}\u0001${Number(m[3])}\u0001${normName(nm)}`,
         ]) {
           const cur = mokuOf.get(key);
           if (cur === undefined) mokuOf.set(key, val);
@@ -665,12 +682,12 @@ export function parseYokohamaJigyouKeikaku(
       // 項まで一致する鍵を優先し、無ければ款だけの鍵にフォールバック
       const hit =
         (x.koNo != null
-          ? mokuOf.get(`${x.accountName}\u0001${Number(x.kanNo)}\u0001${Number(x.koNo)}\u0001${x.name}`)
-          : undefined) ?? mokuOf.get(`${x.accountName}\u0001${Number(x.kanNo)}\u0001${x.name}`);
+          ? mokuOf.get(`${x.accountName}\u0001${Number(x.kanNo)}\u0001${Number(x.koNo)}\u0001${normName(x.name)}`)
+          : undefined) ?? mokuOf.get(`${x.accountName}\u0001${Number(x.kanNo)}\u0001${normName(x.name)}`);
       const kb =
         (x.koNo != null
-          ? kubunOf.get(`${x.accountName}\u0001${Number(x.kanNo)}\u0001${Number(x.koNo)}\u0001${x.name}`)
-          : undefined) ?? kubunOf.get(`${x.accountName}\u0001${Number(x.kanNo)}\u0001${x.name}`);
+          ? kubunOf.get(`${x.accountName}\u0001${Number(x.kanNo)}\u0001${Number(x.koNo)}\u0001${normName(x.name)}`)
+          : undefined) ?? kubunOf.get(`${x.accountName}\u0001${Number(x.kanNo)}\u0001${normName(x.name)}`);
       // 目次の丸印がある事業だけ、詳細シートの新規/拡充で具体化する
       if (x.kubun && kb) x.kubun = kb;
       if (!hit) continue;

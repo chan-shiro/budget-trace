@@ -1476,13 +1476,18 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
     budgetProjectsSourceAction: isBudget
       ? evAction(dashProjSrcUrl || muniBudget!.sourceLocalUrl)
       : "",
+    // ⚠ **文言・href と「開く」を一致させる**（2巡目レビューで発覚。ドリルだけ直して
+    //   ダッシュボードは href だけ差し替わり、クリックすると款別が開いていた）
     budgetProjectsSourceOpen: isBudget
-      ? () => openViewer({
-          url: muniBudget!.sourceLocalUrl, title: muniBudget!.sourceTitle,
-          sub: "主な事業", originUrl: muniBudget!.originUrl, archiveUrl: muniBudget!.sourceUrl,
-        })
+      ? () =>
+          openViewer({
+            url: dashProjSrcUrl || muniBudget!.sourceLocalUrl,
+            title: dashProjSrcName || muniBudget!.sourceTitle,
+            sub: "主な事業",
+            originUrl: muniBudget!.originUrl,
+            archiveUrl: muniBudget!.sourceUrl,
+          })
       : () => {},
-    goThemes: () => nav({ screen: "themes" }),
     drillSideTabs, drillCrumbs, drillLevelLabel: depth === 0 ? "款" : "内訳",
     drillTitle: nodeName, drillTotalFmt: fmtOku(nodeTotal), drillDonutBg: donutBg(donutItems, hoverFor("drill")),
     drillRows, drillEvidence,

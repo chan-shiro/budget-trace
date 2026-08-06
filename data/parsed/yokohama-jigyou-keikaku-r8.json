@@ -3,7 +3,7 @@
   "sourceId": "yokohama-jigyou-keikaku-r8",
   "parser": "yokohama-jigyou-keikaku",
   "parserVersion": "0.1.0",
-  "parsedAt": "2026-08-05T23:27:34.698Z",
+  "parsedAt": "2026-08-06T01:10:11.854Z",
   "unit": "thousandYen",
   "fiscalYear": "R8",
   "totals": [
@@ -10865,12 +10865,12 @@
       "koNo": "1",
       "mokuNo": "3",
       "bureau": "経済局",
-      "name": "GREEN×EXPO中小企業出展支援事業",
+      "name": "GREEN×EXPO2027中小企業出展支援事業",
       "amount": 67500,
       "shisaiIppan": 67500,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "9",
       "locator": {
         "file": "0175_20260123.pdf",
@@ -12814,7 +12814,7 @@
       "shisaiIppan": 103429,
       "prevAmount": 231908,
       "prevShisaiIppan": 119204,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "100",
       "locator": {
         "file": "r8_kodomo_all.pdf",
@@ -23848,7 +23848,7 @@
       "shisaiIppan": 214020,
       "prevAmount": 469000,
       "prevShisaiIppan": 313000,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "15",
       "locator": {
         "file": "2026_01_12.pdf",
@@ -28384,7 +28384,7 @@
       "shisaiIppan": 0,
       "prevAmount": 3388,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "15",
       "locator": {
         "file": "0214_20260126.pdf",
@@ -30670,7 +30670,7 @@
       "shisaiIppan": 80144,
       "prevAmount": 72366,
       "prevShisaiIppan": 72366,
-      "kubun": "新規・拡充",
+      "kubun": "拡充",
       "page": "16",
       "locator": {
         "file": "0224_20260126.pdf",
@@ -32686,7 +32686,7 @@
       "shisaiIppan": 2746079,
       "prevAmount": 0,
       "prevShisaiIppan": 0,
-      "kubun": "新規・拡充",
+      "kubun": "新規",
       "page": "23",
       "locator": {
         "file": "0240_20260209.pdf",
