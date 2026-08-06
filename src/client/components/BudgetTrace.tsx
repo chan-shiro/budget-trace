@@ -1488,6 +1488,7 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
             archiveUrl: muniBudget!.sourceUrl,
           })
       : () => {},
+    goThemes: () => nav({ screen: "themes" }),
     drillSideTabs, drillCrumbs, drillLevelLabel: depth === 0 ? "款" : "内訳",
     drillTitle: nodeName, drillTotalFmt: fmtOku(nodeTotal), drillDonutBg: donutBg(donutItems, hoverFor("drill")),
     drillRows, drillEvidence,
