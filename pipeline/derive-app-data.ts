@@ -2384,7 +2384,6 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
   }
   // 最新年度だけの索引。市区町村選択・類似比較・coverage・routing は「その自治体の代表値」しか
   // 要らないのでこちらを使う（複数年度化しても既存の消費側を壊さないための互換レイヤ）
-  const byCode = Object.fromEntries(Object.entries(byCodeYears).map(([code, ys]) => [code, ys[0]!]));
   const muniBudgetsOut = `// このファイルは自動生成です。手で編集しないこと。
 // 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
 // 甲府の類似4市（豊川・山口・沼津・和泉）の当初予算（款別歳入歳出・前年当初比較つき）。
@@ -2495,8 +2494,13 @@ export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = ${JSON.stringify(
 /**
  * 団体コード → 当初予算（**最新年度のみ**）。市区町村選択・類似比較・coverage・routing など
  * 「その自治体の代表値」だけが要る場面で使う。年度を切り替える画面は MUNI_BUDGET_YEARS を見ること。
+ *
+ * ⚠ **リテラルで焼き込まない**（#216） — 中身は MUNI_BUDGET_YEARS の各先頭と同一なので、
+ * リテラルにすると**同じデータが2回バンドルに載る**（実測 8.9MB のうち 2.4MB がこの重複）。
  */
-export const MUNI_BUDGETS: Record<string, MuniBudget> = ${JSON.stringify(byCode, null, 2)};
+export const MUNI_BUDGETS: Record<string, MuniBudget> = Object.fromEntries(
+  Object.entries(MUNI_BUDGET_YEARS).map(([code, ys]) => [code, ys[0]!]),
+);
 
 /** budget 階層（予算ベースの款別ダッシュボードを持つ）自治体の団体コード */
 export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))};
