@@ -22,11 +22,35 @@ import { eraYear, fyRank, fySeq } from "./lib/fy";
 import { findSource, SOURCES } from "./registry/sources";
 import { ROADMAP } from "./registry/roadmap";
 import { UNRECORDABLE, UNRECORDABLE_CATEGORIES } from "./registry/unrecordable";
-import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const SOURCE_ID = "soumu-shichoson-kessan-r6";
 const SELF_CODE = "192015"; // 甲府市
+
+// ---- 当初予算の本体（public/munibudgets/<団体コード>.json） -------------------
+// ⚠ **gen から import しない**（#216）。本体はシャードへ出したので、gen には索引しか無い。
+// derive 自身の出口ゲート（表示専用フィールドの汚染・/coverage の年度範囲・事業件数）は
+// 本体が要るので、**書いたシャードを読み戻す**。decision の県シャードや coverage.json を
+// 読み戻しているのと同じ作法で、「書いたものと検査するものが同一」であることが保証になる。
+interface MuniBudgetShardYear {
+  muniName: string;
+  prefName: string;
+  isPref: boolean;
+  fy: string;
+  projects: { name: string; description: string; kan: string | null; shisaku: string }[];
+  execution?: { fyLabel: string }[];
+}
+function readMuniBudgetShards(): Record<string, MuniBudgetShardYear[]> {
+  const dir = join(process.cwd(), "public", "munibudgets");
+  if (!existsSync(dir)) return {};
+  const out: Record<string, MuniBudgetShardYear[]> = {};
+  for (const f of readdirSync(dir)) {
+    if (!f.endsWith(".json")) continue;
+    out[f.replace(/\.json$/, "")] = readJson(join(dir, f)) as MuniBudgetShardYear[];
+  }
+  return out;
+}
 
 // ---- 外部アーカイブ台帳（data/archives.json） --------------------------------
 // 画面のエビデンスリンクは**発行元の直リンクではなく Wayback のコピー**を優先する。
@@ -2384,7 +2408,6 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
   }
   // 最新年度だけの索引。市区町村選択・類似比較・coverage・routing は「その自治体の代表値」しか
   // 要らないのでこちらを使う（複数年度化しても既存の消費側を壊さないための互換レイヤ）
-  const byCode = Object.fromEntries(Object.entries(byCodeYears).map(([code, ys]) => [code, ys[0]!]));
   const muniBudgetsOut = `// このファイルは自動生成です。手で編集しないこと。
 // 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
 // 甲府の類似4市（豊川・山口・沼津・和泉）の当初予算（款別歳入歳出・前年当初比較つき）。
@@ -2487,21 +2510,57 @@ export interface MuniBudget {
 }
 
 /**
- * 団体コード → 当初予算の**全収録年度**（新しい順）。年度ドロップダウンはこれで作る。
- * 1年度しか収録していない自治体は要素1つの配列になる。
+ * 団体コード → 当初予算の索引。**本体は載せない**（#216）。
+ *
+ * ⚠⚠ **予算の中身をここに焼き込まないこと**。全エンティティ・全年度を TS モジュールで持つと
+ * バンドルが 6.8MB になり、**ビルドのほぼ全部がその解析時間**になる（実測: 6.8MB で
+ * Compiled in 3.2min、重複込みの 8.9MB では 6.0min。**サイズに対して超線形に効く**）。
+ * 本体は public/munibudgets/《団体コード》.json から useMuniBudgets が実行時に取る
+ * （decision 階層の県シャードと同じ作法）。
+ *
+ * ここに置いてよいのは**サーバ側で同期的に要るものだけ** — サイトマップ（sitemap.ts）と
+ * URL 解決（routing.ts）はビルド時に全団体の名前を引くので、フェッチでは間に合わない。
  */
-export const MUNI_BUDGET_YEARS: Record<string, MuniBudget[]> = ${JSON.stringify(byCodeYears, null, 2)};
+export interface MuniBudgetIndexEntry {
+  muniName: string;
+  prefName: string;
+  /** 都道府県エンティティ（県全体）か */
+  isPref: boolean;
+  /** 収録年度（新しい順）。年度ドロップダウンはこれで作る */
+  fys: string[];
+  /** いずれかの年度に主な事業があるか（トップの「収録の深さ」の段割り用） */
+  hasProjects: boolean;
+}
 
-/**
- * 団体コード → 当初予算（**最新年度のみ**）。市区町村選択・類似比較・coverage・routing など
- * 「その自治体の代表値」だけが要る場面で使う。年度を切り替える画面は MUNI_BUDGET_YEARS を見ること。
- */
-export const MUNI_BUDGETS: Record<string, MuniBudget> = ${JSON.stringify(byCode, null, 2)};
+export const MUNI_BUDGET_INDEX: Record<string, MuniBudgetIndexEntry> = ${JSON.stringify(
+    Object.fromEntries(
+      Object.entries(byCodeYears).map(([code, ys]) => [
+        code,
+        {
+          muniName: ys[0]!.muniName,
+          prefName: ys[0]!.prefName,
+          isPref: !!ys[0]!.isPref,
+          fys: ys.map((y) => y.fy),
+          hasProjects: ys.some((y) => (y.projects?.length ?? 0) > 0),
+        },
+      ]),
+    ),
+    null,
+    2,
+  )};
 
 /** budget 階層（予算ベースの款別ダッシュボードを持つ）自治体の団体コード */
 export const BUDGET_MUNIS: string[] = ${JSON.stringify(Object.keys(byCodeYears))};
 `;
   writeFileSync(join(process.cwd(), "src/client/lib/munibudgets.gen.ts"), muniBudgetsOut, "utf8");
+
+  // 本体は団体コードごとのシャードへ（決定的: 年度は新しい順、キーは団体コード昇順）
+  const mbDir = join(process.cwd(), "public", "munibudgets");
+  rmSync(mbDir, { recursive: true, force: true });
+  mkdirSync(mbDir, { recursive: true });
+  for (const [code, ys] of Object.entries(byCodeYears).sort((a, z) => a[0].localeCompare(z[0]))) {
+    writeFileSync(join(mbDir, `${code}.json`), JSON.stringify(ys), "utf8");
+  }
   console.log(
     `✓ 類似市の当初予算を導出 → src/client/lib/munibudgets.gen.ts（${Object.values(byCodeYears)
       .map((ys) => `${ys[0]!.muniName}:${ys[0]!.totalOku.toFixed(0)}億${ys.length > 1 ? `(${ys.length}年度)` : ""}`)
@@ -2756,7 +2815,8 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = ${JSON.stringif
         }),
       ]),
     );
-  const { MUNI_BUDGETS, MUNI_BUDGET_YEARS, BUDGET_MUNIS } = await import("../src/client/lib/munibudgets.gen");
+  const { MUNI_BUDGET_INDEX, BUDGET_MUNIS } = await import("../src/client/lib/munibudgets.gen");
+  const MUNI_BUDGET_YEARS = readMuniBudgetShards();
   const { PREF_CODES } = await import("../src/client/lib/decision-index.gen");
   const { DECISION_YEARS } = await import("../src/client/lib/decision-index.gen");
 
@@ -2786,7 +2846,7 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = ${JSON.stringif
   const KNOWN = [
     { code: "192015", name: "甲府市", pref: "山梨県" },
     ...BUDGET_MUNIS.map((c) => {
-      const b = MUNI_BUDGETS[c]!;
+      const b = MUNI_BUDGET_INDEX[c]!;
       return { code: c, name: b.muniName, pref: b.prefName };
     }),
   ];
@@ -2904,7 +2964,7 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = ${JSON.stringif
 
   for (const k of KNOWN) {
     const isFull = k.code === "192015";
-    const mb = MUNI_BUDGETS[k.code] ?? null;
+    const mb = MUNI_BUDGET_YEARS[k.code]?.[0] ?? null;
     const d: Record<string, string> = { kessan: kessanRange };
     if (isFull) {
       d.budget = range(KOFU_BUDGET_YEARS.map((b) => b.fy));
@@ -3415,7 +3475,8 @@ export const ROADMAP_PLAN: RoadmapItem[] = ${JSON.stringify(ROADMAP, null, 2)};
     unrecordable: { code: string; name: string; dataset: string; fyLabel: string }[];
   };
   const { REPORT_MUNIS } = await import("../src/client/lib/reports-index.gen");
-  const { MUNI_BUDGET_YEARS, BUDGET_MUNIS } = await import("../src/client/lib/munibudgets.gen");
+  const { MUNI_BUDGET_INDEX, BUDGET_MUNIS } = await import("../src/client/lib/munibudgets.gen");
+  const MUNI_BUDGET_YEARS = readMuniBudgetShards();
   const { FULL_MUNIS } = await import("../src/client/lib/decision-index.gen");
 
   // ① /coverage の「成果」の件数 = 実際に配信しているシャードの件数
@@ -3475,11 +3536,30 @@ export const ROADMAP_PLAN: RoadmapItem[] = ${JSON.stringify(ROADMAP, null, 2)};
     }
   }
 
+  // ②' 索引に載っている自治体は必ず当初予算のシャードが配信されている（#216）
+  //     本体を public/munibudgets/ へ出したので、**索引だけあってシャードが無いと
+  //     ダッシュボードが空で開く**（バンドルに焼いていた頃は原理的に起きなかった型）。
+  //     索引の年度もシャードの年度と一致していること — ズレると年度ドロップダウンに
+  //     出るのに選ぶと落ちる。
+  for (const code of BUDGET_MUNIS) {
+    const idx = MUNI_BUDGET_INDEX[code]!;
+    const shard = MUNI_BUDGET_YEARS[code];
+    if (!shard?.length) {
+      problems.push(`${idx.muniName}（${code}）: 当初予算の索引にあるのに public/munibudgets/${code}.json がありません`);
+      continue;
+    }
+    const a = idx.fys.join(",");
+    const b = shard.map((y) => y.fy).join(",");
+    if (a !== b) {
+      problems.push(`${idx.muniName}（${code}）: 索引の年度（${a}）と配信シャードの年度（${b}）が食い違っています`);
+    }
+  }
+
   // ③ 画面に出る自治体は必ず URL スラグを持つ（無いと共有リンクが壊れる）
   const slugs = readFileSync(join(process.cwd(), "src/client/lib/routing.ts"), "utf8");
   for (const code of [...BUDGET_MUNIS, ...FULL_MUNIS]) {
     if (!slugs.includes(`"${code}"`)) {
-      const name = MUNI_BUDGET_YEARS[code]?.[0]?.muniName ?? code;
+      const name = MUNI_BUDGET_INDEX[code]?.muniName ?? code;
       problems.push(`${name}（${code}）: routing.ts の MUNI_SLUGS にローマ字スラグがありません（URL が団体コードになります）`);
     }
   }

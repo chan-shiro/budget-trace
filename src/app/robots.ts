@@ -14,7 +14,15 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/sources/", "/decision/", "/reports/", "/mapdata/", "/vendor/", "/coverage.json"],
+        disallow: [
+          "/sources/",
+          "/decision/",
+          "/munibudgets/",
+          "/reports/",
+          "/mapdata/",
+          "/vendor/",
+          "/coverage.json",
+        ],
       },
     ],
     sitemap: `${SITE_URL}/sitemap.xml`,
