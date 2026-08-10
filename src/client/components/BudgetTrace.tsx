@@ -6,6 +6,7 @@ import * as D from "@/client/lib/data";
 import { useDecisionData } from "@/client/hooks/useDecisionData";
 import { useCoverage } from "@/client/hooks/useCoverage";
 import { useProjectReports } from "@/client/hooks/useProjectReports";
+import { useMuniBudgets } from "@/client/hooks/useMuniBudgets";
 import { REPORT_MUNIS } from "@/client/lib/reports-index.gen";
 // データの注意（validate の warning から derive が生成。手書きしない）
 import { CAVEATS } from "@/client/lib/caveats.gen";
@@ -261,22 +262,31 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
   // decision 自治体だがまだ表示できない（シャード取得待ち・名前解決前）
   const decisionPending = isApp && tier === "decision" && !decisionView;
 
-  // budget 階層（当初予算・静的 gen）。政令市は R2〜R8 の7年前後を収録しているので、
-  // full（甲府）と同じく**年度ドロップダウンで切り替える**。1年度しか無い自治体は要素1つの配列。
   // 事業報告（成果）の全量公開シャード。**索引にある自治体をダッシュボードで見ているときだけ**取得する
   // （696KB。決算シャード・coverage.json と同じ方針）
   const reportMuni = isApp && muniCode && REPORT_MUNIS[muniCode] ? muniCode : null;
   const { data: repData, loading: repLoading, error: repError } = useProjectReports(reportMuni);
 
-  const muniBudgetYears = tier === "budget" && muniCode ? D.MUNI_BUDGET_YEARS[muniCode] ?? null : null;
-  const muniBudget = muniBudgetYears
+  // budget 階層（当初予算）。政令市は R2〜R8 の7年前後を収録しているので、full（甲府）と同じく
+  // **年度ドロップダウンで切り替える**。1年度しか無い自治体は要素1つの配列。
+  // ⚠ **本体は gen ではなく実行時フェッチ**（#216。決算シャードと同じ形）。名前・県名・収録年度は
+  //   索引 `D.MUNI_BUDGET_INDEX` から同期で引けるが、金額は取得後にしか出せない。
+  const budgetMuni = tier === "budget" && muniCode ? muniCode : null;
+  const { years: muniBudgetYears } = useMuniBudgets(budgetMuni);
+  const muniBudget = muniBudgetYears?.length
     ? muniBudgetYears.find((b) => b.fy === s.budgetFy) ?? muniBudgetYears[0]!
     : null;
   const isBudget = !!muniBudget;
-  // 都道府県エンティティ（県全体）か。市町村向けの機能（類似自治体比較・主な事業）は出さない
-  const isPref = !!muniBudget?.isPref;
+  // 取得中（索引には居るのに本体がまだ無い）。decisionPending と同じ扱いでローディングを出す
+  const budgetPending = !!budgetMuni && !muniBudget;
+  // 都道府県エンティティ（県全体）か。市町村向けの機能（類似自治体比較・主な事業）は出さない。
+  // **索引から引く** — 本体の取得を待たずに決まる（画面のゲートが取得中にちらつかない）
+  const isPref = !!(budgetMuni && D.MUNI_BUDGET_INDEX[budgetMuni]?.isPref);
   // この都道府県の「県全体」エンティティ（市区町村選択の県全体ボタン用）
-  const prefEntity = Object.values(D.MUNI_BUDGETS).find((b) => b.isPref && b.prefName === prefName) ?? null;
+  const prefEntity = (() => {
+    const hit = Object.entries(D.MUNI_BUDGET_INDEX).find(([, b]) => b.isPref && b.prefName === prefName);
+    return hit ? { muniCode: hit[0], muniName: hit[1].muniName } : null;
+  })();
 
   // 収録済み（full）の年度は当初予算の収録年度（R8〜R6・R3〜R2）から選択
   const budget = KOFU_BUDGET_YEARS.find((b) => b.fy === s.budgetFy) ?? KOFU_BUDGET_YEARS[0]!;
@@ -968,7 +978,7 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
 
   // --- トップの「収録の深さから選ぶ」 -----------------------------------------
   // 進捗を手書きしない原則（/roadmap・heroStats と同じ）: 段の割り当ては収録済み gen
-  // （MUNI_BUDGETS・MUNI_BUDGET_YEARS・REPORT_MUNIS）から毎回組み立てるので、
+  // （MUNI_BUDGET_INDEX・REPORT_MUNIS）から毎回組み立てるので、
   // 自治体を収録すれば黙って正しい段に載る。
   // 各自治体は**最も深い到達点の段にだけ**載せる。「事業報告 ⊃ 主な事業 ⊃ 款別」の
   // 入れ子ではない（横浜・川崎は主な事業一覧を持たずに事業報告を持つ）ので、
@@ -981,16 +991,17 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
   // 段の1/4を占めて視覚を支配していたのが「東京都」1行に収まる。件数が増えても
   // 市区町村は自分の県の行に吸収されるので、伸びるのは行の長さだけになる。
   const coverageLevels = (() => {
-    const entries = Object.entries(D.MUNI_BUDGETS)
+    // ⚠ **索引だけで組む**（#216） — 段の割り当てに要るのは名前・県名・isPref と
+    //    「いずれかの年度に事業があるか」だけで、金額は要らない。ここで本体を触ると
+    //    トップページが全99団体ぶんのシャードを取りに行くことになる。
+    const entries = Object.entries(D.MUNI_BUDGET_INDEX)
       .map(([code, b]) => {
-        const years = D.MUNI_BUDGET_YEARS[code] ?? [];
-        const hasProj = years.some((y) => (y.projects?.length ?? 0) > 0);
         return {
           code,
           name: b.muniName,
           pref: b.prefName,
           isPref: !!b.isPref,
-          level: REPORT_MUNIS[code] ? 2 : hasProj ? 1 : 0,
+          level: REPORT_MUNIS[code] ? 2 : b.hasProjects ? 1 : 0,
         };
       })
       .sort((a, b) => a.code.localeCompare(b.code));
@@ -1097,8 +1108,9 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
           ];
       return `${can.join("・")}を確認できます。${budgetMissing.length > 0 ? `${budgetMissing.join("・")}は未収録です。` : ""}`;
     })(),
-    // decision 自治体のシャード取得待ち（ダッシュボードでスケルトンを出す）
-    loading: decisionPending,
+    // シャード取得待ち（ダッシュボードでスケルトンを出す）。decision の県シャードと
+    // budget の当初予算シャード（#216）はどちらも実行時フェッチなので同じ扱い
+    loading: decisionPending || budgetPending,
     // decision 自治体の未収録機能（主な事業・執行・評価・補正）のその場リクエスト。
     // ⚠ **当初予算を調べたうえで収録できないと判定した団体では出さない**（山梨市・韮崎市・
     // 甲斐市・上野原市・中央市）。/coverage は同じ理由でリクエスト先から外しているのに、

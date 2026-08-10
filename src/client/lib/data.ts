@@ -118,8 +118,10 @@ export {
 } from './decision';
 
 // budget 階層（類似4市の当初予算・款別歳入歳出＋前年比較）
-import { BUDGET_MUNIS, MUNI_BUDGETS } from './munibudgets.gen';
-export { BUDGET_MUNIS, MUNI_BUDGETS, MUNI_BUDGET_YEARS, type MuniBudget, type MuniKanRow, type MuniProject, type MuniExecutionYear, type MuniExecRow } from './munibudgets.gen';
+// ⚠ 予算の本体は gen に無い（#216 で public/munibudgets/ へ出した）。年度の中身が要る画面は
+//    `useMuniBudgets(団体コード)` で取る。ここから引けるのは索引（名前・県名・収録年度）だけ。
+import { BUDGET_MUNIS, MUNI_BUDGET_INDEX } from './munibudgets.gen';
+export { BUDGET_MUNIS, MUNI_BUDGET_INDEX, type MuniBudgetIndexEntry, type MuniBudget, type MuniKanRow, type MuniProject, type MuniExecutionYear, type MuniExecRow } from './munibudgets.gen';
 
 /**
  * カバレッジ階層。
