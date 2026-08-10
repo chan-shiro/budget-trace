@@ -14,7 +14,7 @@
 // 残りの decision 自治体は団体コード（読みデータが無いため）を使う。
 // 画面内の細かな状態（表示年度・ドリル位置・単位）はクエリに載せてパスを短く保つ。
 import { PREF_CODES } from "./decision-index.gen";
-import { MUNI_BUDGETS, BUDGET_MUNIS } from "./munibudgets.gen";
+import { MUNI_BUDGET_INDEX, BUDGET_MUNIS } from "./munibudgets.gen";
 
 export interface RouteState {
   screen: string;
@@ -171,7 +171,7 @@ interface KnownMuni { code: string; name: string; pref: string; slug: string; }
 const KNOWN_MUNIS: KnownMuni[] = (() => {
   const list: KnownMuni[] = [{ code: "192015", name: "甲府市", pref: "山梨県", slug: "kofu" }];
   for (const c of BUDGET_MUNIS) {
-    const b = MUNI_BUDGETS[c];
+    const b = MUNI_BUDGET_INDEX[c];
     if (b && MUNI_SLUGS[c]) list.push({ code: c, name: b.muniName, pref: b.prefName, slug: MUNI_SLUGS[c]! });
   }
   return list;

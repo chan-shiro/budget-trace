@@ -3,7 +3,7 @@ import path from "node:path";
 import type { MetadataRoute } from "next";
 import { stateToPath } from "@/client/lib/routing";
 import { PREF_CODES } from "@/client/lib/decision-index.gen";
-import { MUNI_BUDGETS, BUDGET_MUNIS } from "@/client/lib/munibudgets.gen";
+import { MUNI_BUDGET_INDEX, BUDGET_MUNIS } from "@/client/lib/munibudgets.gen";
 import { SITE_URL } from "@/client/lib/site";
 
 /**
@@ -11,7 +11,7 @@ import { SITE_URL } from "@/client/lib/site";
  * ローマ字スラグの手当て（`kofu`・県エンティティの `ken`）や旧パスの正規化と二重管理になり、
  * サイトマップだけが 404 を指す状態が静かにできあがる。
  *
- * 収録が進めば `MUNI_BUDGETS` と決算シャードが増え、ここも黙って追随する（列挙を手書きしない）。
+ * 収録が進めば `MUNI_BUDGET_INDEX` と決算シャードが増え、ここも黙って追随する（列挙を手書きしない）。
  *
  * ⚠ **クエリ（?fy= ?path= 等）は載せない** — 画面内の状態であって別ページではない。
  * ⚠ full 専用画面（/compare など）は甲府だけに出るので、一覧には自治体のトップだけを載せる。
@@ -39,7 +39,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const recorded = new Set<string>(["192015"]);
   out.push(entry(st("dash", "山梨県", "甲府市", "192015"), 0.9));
   for (const code of BUDGET_MUNIS) {
-    const b = MUNI_BUDGETS[code];
+    const b = MUNI_BUDGET_INDEX[code];
     if (!b) continue;
     recorded.add(code);
     out.push(entry(st("dash", b.prefName, b.muniName, code), 0.9));
