@@ -137,7 +137,7 @@ onKeyDown={(e) => {
 
 # デプロイ
 
-**Vercel（構築済み）**。チーム `philosophyhouse` のプロジェクト `budget-trace`。GitHub 連携済みで、`main` への push で本番へ自動デプロイされる（PR は Preview デプロイ）。本番 URL: **https://budget-trace.phh.jp**（独自ドメイン・2026-07-30〜。`budget-trace-tawny.vercel.app` も生きているが canonical はこちらへ向けている）。ビルド設定はデフォルトの Next.js プリセット + bun（`bun.lock` 自動検出）。環境変数は現状不要。CLI 操作は `bunx vercel`（`.vercel/` と `.env*` は gitignore）。
+**Vercel（構築済み）**。チーム `philosophyhouse` のプロジェクト `budget-trace`。GitHub 連携済みで、`main` への push で本番へ自動デプロイされる。**PR では Preview デプロイを作らない**（`vercel.json` の `git.deploymentEnabled` で `main` 以外を止めてある。2026-08-10）— ビルドは実測6分で、そのほぼ全部が `munibudgets.gen.ts`（8.9MB）のバンドル時間。Hobby プランは同時ビルド1本なので、push のたびに本番デプロイがこれに待たされていた。**PR の門番は代わりに GitHub Actions（`.github/workflows/ci.yml`）が担う**（型検査・derive の出口ゲート・gen の最新性・本番と同じビルド）。ブランチで Preview を見たいときは `bunx vercel` で手動デプロイする。本番 URL: **https://budget-trace.phh.jp**（独自ドメイン・2026-07-30〜。`budget-trace-tawny.vercel.app` も生きているが canonical はこちらへ向けている）。ビルド設定はデフォルトの Next.js プリセット + bun（`bun.lock` 自動検出）。環境変数は現状不要。CLI 操作は `bunx vercel`（`.vercel/` と `.env*` は gitignore）。
 
 ## 公開用の設定（ドメイン・OGP・計測）
 
@@ -155,4 +155,4 @@ onKeyDown={(e) => {
 
 ## `main` へ直接 push しない（non-negotiable）
 
-`main` への push は**そのまま本番デプロイ**になる。変更は必ず作業ブランチ → PR（Preview デプロイで確認）→ squash マージの順で入れる。ユーザーが「マージしよう」と言った場合も、`main` への直接 push ではなく **PR を作る**の意味に解釈する。`git push origin main` / `main` 上での直接コミットは、ユーザーがその都度明示的に指示しない限り実行しない。
+`main` への push は**そのまま本番デプロイ**になる。変更は必ず作業ブランチ → PR（**CI の緑で確認**）→ squash マージの順で入れる。ユーザーが「マージしよう」と言った場合も、`main` への直接 push ではなく **PR を作る**の意味に解釈する。`git push origin main` / `main` 上での直接コミットは、ユーザーがその都度明示的に指示しない限り実行しない。

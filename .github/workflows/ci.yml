@@ -1,0 +1,76 @@
+# PR の検査。**Vercel の Preview ビルドを止めた代わりの門番**（vercel.json を参照）。
+#
+# ⚠ **data/raw をチェックアウトしない**（sparse-checkout / cone mode）。追跡下は全体で 1.6GB
+#   あるが、その 1.4GB は raw の一次資料 PDF で、**型検査にも derive にも build にも要らない**
+#   （derive が読むのは normalized / parsed / raw-meta / archives.json、
+#   `sync-public-sources.ts` は `existsSync(RAW_DIR)` で不在を許す）。除くと 200MB になる。
+#   cone mode は「列挙したディレクトリは丸ごと・その親ディレクトリは直下のファイルだけ」を含むので、
+#   `data/normalized` を挙げれば `data/archives.json` も付いてくる（実測で確認済み）。
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # 速い門番（実測: typecheck 2秒 / derive 2秒）。壊れていれば1分以内に赤が出る
+  check:
+    name: 型検査と derive
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github
+            src
+            pipeline
+            public
+            docs
+            data/normalized
+            data/parsed
+            data/raw-meta
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install --frozen-lockfile
+
+      - name: 型検査
+        run: bun run typecheck
+
+      # derive は出口で gen 同士の整合を検査する（/coverage の件数＝配信シャードの件数・
+      # 事業報告の収録漏れ・URL スラグ・年度間クロスチェーン・表示専用フィールドの汚染・系列色）。
+      # validate は parsed の自己整合しか見ないので、この層はここでしか守れない。
+      - name: derive（出口の整合チェック）
+        run: bun run pipeline:derive
+
+      # ⚠ **生成物は競合せずに合流する** — 別々の PR がそれぞれ derive した gen は、
+      #   git 上は綺麗にマージされるのに中身は実態とズレる。**derive し直して差分ゼロ**を要求する。
+      - name: gen が最新か（derive の結果と差分が無いこと）
+        run: |
+          if ! git diff --exit-code; then
+            echo "::error::derive の結果が commit 済みの生成物と食い違っています。bun run pipeline:derive を実行して commit してください"
+            exit 1
+          fi
+
+  # 本番と同じビルド（実測: 約6分。ほぼ全部がバンドル時間で、munibudgets.gen.ts が 8.9MB ある）
+  build:
+    name: 本番ビルド
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github
+            src
+            pipeline
+            public
+            docs
+            data/normalized
+            data/parsed
+            data/raw-meta
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install --frozen-lockfile
+      - run: bun run build
