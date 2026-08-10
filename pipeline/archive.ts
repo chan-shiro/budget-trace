@@ -84,9 +84,18 @@ type VerifyResult =
     };
 
 const filenameOf = (url: string) => decodeURIComponent(new URL(url).pathname.split("/").pop() ?? "");
+/**
+ * その URL から取得した raw のエントリ。
+ * ⚠⚠ **basename で引いてはいけない** — ファイル名の衝突を避けるために局名を前置した
+ * ファイル（`iryo__0002_20260126.pdf`）は basename と一致せず、**同名別ディレクトリの
+ * 別ファイルとハッシュを比べて「不一致」になる**（2026-08-06・横浜で偽陽性5件）。
+ * raw-meta は取得元 URL を持っているので、**それで引く**（衝突しても一意に決まる）。
+ * ⚠ **偽陽性を出すゲートは無視されるようになる**（§9o）ので放置しない。
+ */
+const rawFileOf = (sourceId: string, url: string) =>
+  readRawMeta(sourceId)?.files.find((f) => f.fetchedFrom === url);
 /** raw 側のバイト数（台帳のコピーと突き合わせて不一致の型を診断するため） */
-const rawBytesOf = (sourceId: string, url: string) =>
-  readRawMeta(sourceId)?.files.find((f) => f.filename === filenameOf(url))?.bytes;
+const rawBytesOf = (sourceId: string, url: string) => rawFileOf(sourceId, url)?.bytes;
 
 /**
  * sha256 照合の対象か。**registry の `kind` を正とする**（2026-07-23・#124 東京都で発見）。
@@ -123,8 +132,9 @@ async function verifySnapshot(sourceId: string, url: string, timestamp: string):
   if (!isVerifiable(sourceId, url)) return { status: "skipped" };
   const meta = readRawMeta(sourceId);
   if (!meta) return { status: "failed", reason: "raw-meta が無い（未 fetch）" };
-  const raw = meta.files.find((f) => f.filename === filename);
-  if (!raw) return { status: "failed", reason: `raw に ${filename} が無い` };
+  // ⚠ **取得元 URL で引く**（basename だと衝突回避で改名したファイルを取り違える。上記 rawFileOf）
+  const raw = rawFileOf(sourceId, url);
+  if (!raw) return { status: "failed", reason: `raw に ${filename} が無い（取得元 ${url}）` };
 
   // ダウンロードの失敗は**一時的なことが多い**（#137）ので、1回で諦めて台帳に固定しない。
   // タイムスタンプはリダイレクトで更新され得るためループ内で持ち回る。
@@ -298,6 +308,7 @@ for (const source of targets) {
   for (const { url, kind } of urls) {
     // WARP（国立国会図書館）／Wayback 由来の URL はそれ自体が恒久アーカイブなので登録しない
     if (url.includes("warp.ndl.go.jp") || url.includes("web.archive.org")) continue;
+    try {
     // 同じスナップショットを検証済みなら再ダウンロードしない
     const prior = ledger.find((x) => x.sourceId === source.id && x.url === url);
     const verify = async (timestamp: string, waybackUrl: string): Promise<VerifyResult> => {
@@ -387,6 +398,15 @@ for (const source of targets) {
       saved++;
     } else {
       console.log(`✗ 未確認 ${source.id} ${kind}（次回実行で再試行）`);
+      failed++;
+    }
+    } catch (e) {
+      // ⚠⚠ **1本の失敗で全体を落とさない**（2026-08-06・#164 で実害）。
+      //   329本のソース（横浜の事業計画書）で**最初の1本がタイムアウトしただけで
+      //   プロセスが終了し、台帳に1件も登録されなかった**。ファイル数の多いソースでは
+      //   ネットワークの一時失敗が必ず起きるので、**その1本だけ諦めて次へ進む**。
+      //   台帳は毎回併合保存されるので、次回実行で未登録のものだけ再試行される。
+      console.log(`✗ 失敗 ${source.id} ${kind}: ${e instanceof Error ? e.message : String(e)}（次回実行で再試行）`);
       failed++;
     }
   }

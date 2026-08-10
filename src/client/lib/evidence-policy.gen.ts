@@ -901,6 +901,1980 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。ただし、一部の画像などの著作権は、原著作者が所有しています。私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
     "target": "file"
   },
+  "/sources/yokohama-jigyou-keikaku-r8/r8jigyoukeikakusho2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho2.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8jigyoukeikakusho211.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho211.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8jigyoukeikakusho221.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho221.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8jigyoukeikakusho222.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho222.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8jigyoukeikakusho231.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho231.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8jigyoukeikakusho241.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho241.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8jigyoukeikakusho251.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho251.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8jigyoukeikakusho19.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho19.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8jigyoukeikakusho19110.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho19110.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8jigyoukeikakusho19117.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho19117.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8jigyoukeikakusho171.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho171.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8jigyoukeikakusho17123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho17123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8jigyoukeikakusho17131.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho17131.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8jigyoukeikakusho17132.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho17132.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8jigyoukeikakusho17133.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho17133.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8jigyoukeikakusho17141.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho17141.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8jigyoukeikakusho17142.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho17142.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8jigyoukeikakusho201.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho201.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8jigyoukeikakusho20111.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho20111.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8jigyoukeikakusho20121.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho20121.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8-somu-jigyoukeikaku.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/zaisei/jigyokeikaku/r8jigyoukeikaku.files/r8-somu-jigyoukeikaku.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8-somu-281-jigyoukeikaku.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/zaisei/jigyokeikaku/r8jigyoukeikaku.files/r8-somu-281-jigyoukeikaku.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8-somu-282-jigyoukeikaku.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/zaisei/jigyokeikaku/r8jigyoukeikaku.files/r8-somu-282-jigyoukeikaku.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8-somu-283-jigyoukeikaku.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/zaisei/jigyokeikaku/r8jigyoukeikaku.files/r8-somu-283-jigyoukeikaku.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8-somu-19115-jigyoukeikaku.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/zaisei/jigyokeikaku/r8jigyoukeikaku.files/r8-somu-19115-jigyoukeikaku.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0088_20260121.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/seisaku/jigyokeikaku/r8jigyoukeikaku.files/0088_20260121.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0086_20260121.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/seisaku/jigyokeikaku/r8jigyoukeikaku.files/0086_20260121.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0085_20260121.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/seisaku/jigyokeikaku/r8jigyoukeikaku.files/0085_20260121.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0004_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/R07izen/digital/jigyokeikaku/r8jigyoukeikaku.files/0004_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0056_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0056_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0054_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0054_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0055_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0055_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0042_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0042_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0043_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0043_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0044_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0044_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0045_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0045_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0046_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0046_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0047_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0047_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0048_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0048_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0049_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0049_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0050_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0050_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0051_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0051_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0052_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/somu/jigyoukeikaku/r8jigyoukeikaku.files/0052_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/R8kokusai.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/R07izen/kokusai/jigyoukeikaku/r8jigyoukeikaku.files/R8kokusai.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0021_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shimin/jigyoukeikaku/r8jigyoukeikaku.files/0021_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0022_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shimin/jigyoukeikaku/r8jigyoukeikaku.files/0022_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0023_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shimin/jigyoukeikaku/r8jigyoukeikaku.files/0023_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0024_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shimin/jigyoukeikaku/r8jigyoukeikaku.files/0024_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0025_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shimin/jigyoukeikaku/r8jigyoukeikaku.files/0025_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0026_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shimin/jigyoukeikaku/r8jigyoukeikaku.files/0026_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0027_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shimin/jigyoukeikaku/r8jigyoukeikaku.files/0027_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0012_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/bunko/jigyoukeikaku/r8jigyoukeikaku.files/0012_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0008_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/bunko/jigyoukeikaku/r8jigyoukeikaku.files/0008_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0009_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/bunko/jigyoukeikaku/r8jigyoukeikaku.files/0009_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0010_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/bunko/jigyoukeikaku/r8jigyoukeikaku.files/0010_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0011_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/bunko/jigyoukeikaku/r8jigyoukeikaku.files/0011_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0013_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/bunko/jigyoukeikaku/r8jigyoukeikaku.files/0013_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0175_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0175_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0153_20260121.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0153_20260121.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0154_20260121.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0154_20260121.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0176_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0176_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0156_20260121.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0156_20260121.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0173_20260122.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0173_20260122.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0158_20260121.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0158_20260121.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0163_20260121.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0163_20260121.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0160_20260121.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0160_20260121.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0161_20260121.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0161_20260121.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0162_20260121.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0162_20260121.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0164_20260121.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0164_20260121.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0165_20260121.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0165_20260121.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0166_20260121.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0166_20260121.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0167_20260121.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0167_20260121.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0168_20260121.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0168_20260121.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0169_20260121.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/keizai/jigyoukeikaku/r8jigyoukeikaku.files/0169_20260121.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8_kodomo_all.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_kodomo_all.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0002_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/0002_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0003_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/0003_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0004_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/0004_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8_6-2-1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_6-2-1.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8_6-2-2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_6-2-2.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8_6-2-3.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_6-2-3.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8_6-2-4.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_6-2-4.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8_6-2-5.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_6-2-5.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8_6-3-1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_6-3-1.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8_6-3-2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_6-3-2.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8_6-3-3.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_6-3-3.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8_6-3-4.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_6-3-4.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8_6-3-5.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_6-3-5.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8_6-3-6.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_6-3-6.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8_6-3-7.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_6-3-7.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8_19.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_19.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/r8_kashitukekin.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/r8_kashitukekin.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0158_20260213.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0158_20260213.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0119_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0119_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0159_20260213.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0159_20260213.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0121_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0121_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0122_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0122_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0123_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0123_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0124_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0124_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0155_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0155_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0126_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0126_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0127_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0127_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0128_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0128_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0129_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0129_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0130_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0130_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0131_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0131_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0132_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0132_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0133_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0133_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0134_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0134_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0135_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0135_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0136_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0136_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0137_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0137_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0138_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0138_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0139_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0139_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0140_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0140_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0141_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0141_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0142_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0142_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0143_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0143_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0144_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0144_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0145_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0145_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0146_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0146_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0147_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0147_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0148_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0148_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0149_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0149_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0156_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0156_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0151_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0151_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0157_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0157_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0153_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenko/jigyoukeikaku/r8jigyoukeikaku.files/0153_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0001_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/iryo/jigyoukeikaku/r8jigyoukeikaku.files/0001_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/iryo__0002_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/iryo/jigyoukeikaku/r8jigyoukeikaku.files/0002_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/iryo__0003_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/iryo/jigyoukeikaku/r8jigyoukeikaku.files/0003_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/iryo__0004_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/iryo/jigyoukeikaku/r8jigyoukeikaku.files/0004_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0005_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/iryo/jigyoukeikaku/r8jigyoukeikaku.files/0005_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0006_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/iryo/jigyoukeikaku/r8jigyoukeikaku.files/0006_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0007_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/iryo/jigyoukeikaku/r8jigyoukeikaku.files/0007_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/iryo-byoin__0005_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/iryo-byoin/jigyoukeikaku/r8jigyoukeikaku.files/0005_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0463_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0463_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0425_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0425_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0434_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0434_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0464_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0464_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0436_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0436_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0437_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0437_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0438_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0438_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0439_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0439_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0441_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0441_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0442_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0442_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0443_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0443_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0444_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0444_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0461_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0461_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0446_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0446_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0447_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0447_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0448_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0448_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0449_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0449_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0450_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0450_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0451_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0451_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0452_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0452_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0453_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0453_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0454_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0454_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0455_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0455_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0456_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0456_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0457_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0457_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0458_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0458_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0459_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0459_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0460_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kankyo/jigyoukeikaku/r8jigyoukeikaku.files/0460_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0403_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0403_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0404_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0404_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0405_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0405_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0407_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0407_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0406_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0406_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0408_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0408_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0409_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0409_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0410_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0410_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0411_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0411_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0412_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0412_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0413_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0413_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0414_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0414_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0415_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0415_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0416_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0416_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0432_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0432_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0418_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0418_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0419_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0419_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0420_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0420_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0421_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0421_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0422_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0422_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0423_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0423_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0424_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0424_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/jigyokeikaku__0425_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0425_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0426_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0426_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0427_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0427_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0428_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0428_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0429_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0429_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0430_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0430_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0397_20260122.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0397_20260122.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0398_20260122.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0398_20260122.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0399_20260122.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0399_20260122.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0400_20260122.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0400_20260122.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0401_20260122.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gesui/jigyokeikaku/r8jigyoukeikaku.files/0401_20260122.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0017_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shigen/jigyoukeikaku/r8jigyoukeikaku.files/0017_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0018_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shigen/jigyoukeikaku/r8jigyoukeikaku.files/0018_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0019_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shigen/jigyoukeikaku/r8jigyoukeikaku.files/0019_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0020_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shigen/jigyoukeikaku/r8jigyoukeikaku.files/0020_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0021_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shigen/jigyoukeikaku/r8jigyoukeikaku.files/0021_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0022_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shigen/jigyoukeikaku/r8jigyoukeikaku.files/0022_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0023_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shigen/jigyoukeikaku/r8jigyoukeikaku.files/0023_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0024_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shigen/jigyoukeikaku/r8jigyoukeikaku.files/0024_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0025_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shigen/jigyoukeikaku/r8jigyoukeikaku.files/0025_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0026_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shigen/jigyoukeikaku/r8jigyoukeikaku.files/0026_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0027_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shigen/jigyoukeikaku/r8jigyoukeikaku.files/0027_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0108_20260122.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenchiku/jigyoukeikaku/r8jigyoukeikaku.files/0108_20260122.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0109_20260122.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenchiku/jigyoukeikaku/r8jigyoukeikaku.files/0109_20260122.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0111_20260122.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenchiku/jigyoukeikaku/r8jigyoukeikaku.files/0111_20260122.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0100_20260121.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenchiku/jigyoukeikaku/r8jigyoukeikaku.files/0100_20260121.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0101_20260121.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenchiku/jigyoukeikaku/r8jigyoukeikaku.files/0101_20260121.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0102_20260121.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenchiku/jigyoukeikaku/r8jigyoukeikaku.files/0102_20260121.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0103_20260121.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenchiku/jigyoukeikaku/r8jigyoukeikaku.files/0103_20260121.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0104_20260121.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenchiku/jigyoukeikaku/r8jigyoukeikaku.files/0104_20260121.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0105_20260121.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenchiku/jigyoukeikaku/r8jigyoukeikaku.files/0105_20260121.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0106_20260121.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kenchiku/jigyoukeikaku/r8jigyoukeikaku.files/0106_20260121.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/2026_01_12.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/toshi/jigyoukeikaku/r8jigyoukeikaku.files/2026_01_12.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/2026_01_120101.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/toshi/jigyoukeikaku/r8jigyoukeikaku.files/2026_01_120101.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/2026_01_120102.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/toshi/jigyoukeikaku/r8jigyoukeikaku.files/2026_01_120102.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/2026_01_120103.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/toshi/jigyoukeikaku/r8jigyoukeikaku.files/2026_01_120103.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/2026_01_19.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/toshi/jigyoukeikaku/r8jigyoukeikaku.files/2026_01_19.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/2026_01_190110.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/toshi/jigyoukeikaku/r8jigyoukeikaku.files/2026_01_190110.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/2026_01_190117.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/toshi/jigyoukeikaku/r8jigyoukeikaku.files/2026_01_190117.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/2026_17.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/toshi/jigyoukeikaku/r8jigyoukeikaku.files/2026_17.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/2026_17_0101.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/toshi/jigyoukeikaku/r8jigyoukeikaku.files/2026_17_0101.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/2026_17_0102.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/toshi/jigyoukeikaku/r8jigyoukeikaku.files/2026_17_0102.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/2026_17_0103.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/toshi/jigyoukeikaku/r8jigyoukeikaku.files/2026_17_0103.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/2026_17_0105.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/toshi/jigyoukeikaku/r8jigyoukeikaku.files/2026_17_0105.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/R8_hosyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/toshi/jigyoukeikaku/r8jigyoukeikaku.files/R8_hosyo.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0029_20260204.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/doro/jigyokeikaku/r8jigyoukeikaku.files/0029_20260204.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/jigyokeikaku__0011_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/doro/jigyokeikaku/r8jigyoukeikaku.files/0011_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0027_20260204.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/doro/jigyokeikaku/r8jigyoukeikaku.files/0027_20260204.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/jigyokeikaku__0024_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/doro/jigyokeikaku/r8jigyoukeikaku.files/0024_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/jigyokeikaku__0025_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/doro/jigyokeikaku/r8jigyoukeikaku.files/0025_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0015_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/doro/jigyokeikaku/r8jigyoukeikaku.files/0015_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0016_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/doro/jigyokeikaku/r8jigyoukeikaku.files/0016_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/jigyokeikaku__0017_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/doro/jigyokeikaku/r8jigyoukeikaku.files/0017_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/jigyokeikaku__0018_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/doro/jigyokeikaku/r8jigyoukeikaku.files/0018_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0020_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/doro/jigyokeikaku/r8jigyoukeikaku.files/0020_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/jigyokeikaku__0022_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/doro/jigyokeikaku/r8jigyoukeikaku.files/0022_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/jigyokeikaku__0023_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/doro/jigyokeikaku/r8jigyoukeikaku.files/0023_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/jigyokeikaku__0019_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/doro/jigyokeikaku/r8jigyoukeikaku.files/0019_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0073_20260127.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0073_20260127.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0066_20260127.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0066_20260127.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0067_20260127.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0067_20260127.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0068_20260127.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0068_20260127.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0069_20260127.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0069_20260127.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0070_20260127.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0070_20260127.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0071_20260127.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0071_20260127.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0051_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0051_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0072_20260127.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0072_20260127.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0053_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0053_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/kowan__0054_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0054_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/kowan__0055_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0055_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/kowan__0056_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0056_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0057_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0057_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0059_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0059_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0060_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0060_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0061_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0061_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0062_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0062_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0063_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0063_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0064_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0064_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0065_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kowan/jigyoukeikaku/r8jigyoukeikaku.files/0065_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0016_20260122.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shobo/jigyoukeikaku/r8jigyoukeikaku.files/0016_20260122.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0017_20260122.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shobo/jigyoukeikaku/r8jigyoukeikaku.files/0017_20260122.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0019_20260122.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shobo/jigyoukeikaku/r8jigyoukeikaku.files/0019_20260122.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0020_20260122.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shobo/jigyoukeikaku/r8jigyoukeikaku.files/0020_20260122.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0021_20260122.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shobo/jigyoukeikaku/r8jigyoukeikaku.files/0021_20260122.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0022_20260122.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shobo/jigyoukeikaku/r8jigyoukeikaku.files/0022_20260122.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0023_20260122.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shobo/jigyoukeikaku/r8jigyoukeikaku.files/0023_20260122.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0024_20260122.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shobo/jigyoukeikaku/r8jigyoukeikaku.files/0024_20260122.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0025_20260122.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/shobo/jigyoukeikaku/r8jigyoukeikaku.files/0025_20260122.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/jigyoukeikaku__0004_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/suido/jigyoukeikaku/r8jigyoukeikaku.files/0004_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/8jidousya-02-01-01syokouchiku.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8jidousya-02-01-01syokouchiku.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/8jidousya-02-01-30syaryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8jidousya-02-01-30syaryou.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/8jidousya-02-01-40unten.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8jidousya-02-01-40unten.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/8jidousya-02-01-60unyukanri.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8jidousya-02-01-60unyukanri.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/8jidousya-02-01-73juuryouzei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8jidousya-02-01-73juuryouzei.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/8jidousya-12-01-01syaryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8jidousya-12-01-01syaryou.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/8jidousya-12-01-10kouchikubutsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8jidousya-12-01-10kouchikubutsu.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/8jidousya-12-01-15kikaibihin.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8jidousya-12-01-15kikaibihin.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/8kanren-18-01-80kensyuujo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8kanren-18-01-80kensyuujo.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/8kanren-18-01-90ippankanri.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8kanren-18-01-90ippankanri.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/8kousoku-02-01-10senro.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8kousoku-02-01-10senro.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/8kousoku-02-01-20denro.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8kousoku-02-01-20denro.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/8kousoku-02-01-30sharyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8kousoku-02-01-30sharyou.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/8kousoku-02-01-40unten.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8kousoku-02-01-40unten.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/8kousoku-02-01-50unyu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8kousoku-02-01-50unyu.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/8kousoku-02-01-60unyukanri.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8kousoku-02-01-60unyukanri.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/8kousoku-12-01-01kensetsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8kousoku-12-01-01kensetsu.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/8kousoku-12-01-05kensetsukairyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8kousoku-12-01-05kensetsukairyou.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/8kousoku-12-01-07futaijigyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kotsu/jigyoukeikaku/r8jigyoukeikaku.files/8kousoku-12-01-07futaijigyou.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0003_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kaikei/jigyoukeikaku/r8jigyoukeikaku.files/0003_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0211_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0211_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0212_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0212_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0213_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0213_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0214_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0214_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0215_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0215_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0239_20260204.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0239_20260204.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0217_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0217_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0218_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0218_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0219_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0219_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0220_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0220_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0221_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0221_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0222_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0222_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0223_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0223_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0224_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0224_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0225_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0225_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0226_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0226_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0227_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0227_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0228_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0228_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0229_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0229_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0230_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0230_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0231_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0231_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0232_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0232_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0233_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0233_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0234_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0234_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0235_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0235_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0236_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0236_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0240_20260209.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0240_20260209.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0238_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0238_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0004_20260125.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/senkyo/jigyoukeikaku/r8jigyoukeikaku.files/0004_20260125.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0005_20260125.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/senkyo/jigyoukeikaku/r8jigyoukeikaku.files/0005_20260125.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0006_20260125.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/senkyo/jigyoukeikaku/r8jigyoukeikaku.files/0006_20260125.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/jinji__0003_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/jinji/jigyoukeikaku/r8jigyoukeikaku.files/0003_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/0014_20260123.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kansa/jigyoukeikaku/r8jigyoukeikaku.files/0014_20260123.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
+  "/sources/yokohama-jigyou-keikaku-r8/gikai__0001_20260126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/gikai/jigyoukeikaku/r8jigyoukeikaku.files/0001_20260126.pdf",
+    "license": "当サイトの著作権は原則として横浜市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などをご希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、自由に利用できます。",
+    "target": "file"
+  },
   "/sources/sapporo-jigyou-hyouka-r7/20251020058.pdf": {
     "mode": "origin",
     "href": "https://www.city.sapporo.jp/somu/hyoka/kekka/documents/zikohyouka/r7kyoku/documents/20251020058.pdf",

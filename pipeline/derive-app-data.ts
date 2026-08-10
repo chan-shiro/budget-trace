@@ -2332,6 +2332,39 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     // 款が取れる市（豊川）は款ドリルで全件使うので全件、款のない市（和泉・山口）は
     // ダッシュボード一覧用に上位 PROJECT_CAP 件へ絞る（山口の事業別は700超あるため）
     const PROJECT_CAP = 60;
+    // ⚠ **主な事業が別 docType で来る自治体がある**（#164・横浜の事業計画書）。
+    //   `budget-book` は歳入歳出総額を必須にしており、款別表を持たない事業計画書は
+    //   そこに入らない（`budget-projects` を新設した理由）。ここで同じ形へ合流させる。
+    const extProjects = (() => {
+      const ps = SOURCES.find(
+        (x) => x.parser === "yokohama-jigyou-keikaku" && x.fiscalYear === doc.fiscalYear && x.scope.includes(b.muniCode),
+      );
+      if (!ps) return [];
+      const v = validationResultSchema.parse(readJson(validationPath(ps.id)));
+      if (v.status !== "ok") throw new Error(`${ps.id}: 検証が ${v.status} のため derive しません`);
+      const pd = anyParsedDocSchema.parse(readJson(parsedPath(ps.id)));
+      if (pd.docType !== "budget-projects") throw new Error(`${ps.id}: budget-projects ではありません`);
+      // 款名は同じ年度の款別（この doc 自身）から引く
+      const kanName = new Map<string, string>();
+      for (const f of doc.facts) {
+        if (f.side === "expenditure" && f.kanNo != null) kanName.set(String(f.kanNo), f.kanName);
+      }
+      return pd.facts.map((x) => ({
+        name: x.name,
+        amount: x.amount,
+        // ⚠ 款名が引けない事業は**款なし**にする（推測で当てない）
+        kan: kanName.get(String(Number(x.kanNo))) ?? null,
+        shisaku: "",
+        // ⚠ **一律「拡充」にしない**（レビューで発覚）。目次の丸印は新規と拡充を区別せず、
+        //   前年度0の事業まで拡充バッジが付いていた。詳細シートで具体化できたものだけ使う
+        kubun: x.kubun === "新規" ? ("新規" as const) : x.kubun === "拡充" ? ("拡充" as const) : null,
+        prevAmount: x.prevAmount ?? undefined,
+        description: "",
+        locator: x.locator,
+        srcId: ps.id,
+        srcTitle: ps.title,
+      }));
+    })();
     const projectsAll = (doc.projects ?? [])
       .map((p) => ({
         name: p.name,
@@ -2345,6 +2378,19 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
         refLabel: `${src.title} p.${p.locator.page ?? "?"}`,
         refLocalUrl: `/sources/${b.srcId}/${p.locator.file}#page=${p.locator.page ?? 1}`,
       }))
+      .concat(
+        extProjects.map((p) => ({
+          name: p.name,
+          amountOku: toOku(p.amount),
+          kan: p.kan,
+          shisaku: p.shisaku,
+          kubun: p.kubun,
+          prevAmountOku: p.prevAmount != null ? toOku(p.prevAmount) : null,
+          description: p.description,
+          refLabel: `${p.srcTitle} p.${p.locator.page ?? "?"}`,
+          refLocalUrl: `/sources/${p.srcId}/${p.locator.file}#page=${p.locator.page ?? 1}`,
+        })),
+      )
       .sort((a, b2) => b2.amountOku - a.amountOku);
     // 款が取れる市（豊川）は款ドリルで全件、都道府県（施策別に全件見せる）も全件、
     // 款のない市（和泉・山口・700超）はダッシュボード一覧用に上位 PROJECT_CAP 件へ
@@ -2868,6 +2914,7 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = ${JSON.stringif
     "tokyo-yosangaiyou-csv": "ダッシュボード／款別ドリルダウン／前年比較",
     "yokohama-yosan-meisai-csv": "款別ドリルダウンの項・目の内訳（当初予算）",
     "yokohama-setsumeisho-xlsx": "款別ドリルダウンの項・目の内訳（当初予算・前年度つき）",
+    "yokohama-jigyou-keikaku": "主な事業（款項目つき・当初予算）",
     "nerima-kanbetsu-xlsx": "ダッシュボード／款別ドリルダウン／前年比較",
     "arakawa-setsumei": "ダッシュボード／款別ドリルダウン／前年比較",
     "setagaya-mieruka-csv": "ダッシュボード／款別ドリルダウン／前年比較",

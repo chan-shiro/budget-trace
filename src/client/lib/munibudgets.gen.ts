@@ -667,7 +667,7 @@ export const MUNI_BUDGET_INDEX: Record<string, MuniBudgetIndexEntry> = {
       "R4",
       "R3"
     ],
-    "hasProjects": false
+    "hasProjects": true
   },
   "141305": {
     "muniName": "川崎市",
