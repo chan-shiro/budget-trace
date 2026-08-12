@@ -225,7 +225,7 @@ function verifyNote(v: VerifyResult): string | null {
     case "match":
       return null;
     case "truncated":
-      return `⚠ Wayback 側が MiB 境界（${v.bytes !== undefined ? `${v.bytes / MIB}MiB・` : ""}${sizes}）で打ち切っている。私たちの raw が正しい。--force で再登録しても同じ上限で切られる見込み`;
+      return `⚠ Wayback 側が MiB 境界（${v.bytes !== undefined ? `${v.bytes / MIB}MiB・` : ""}${sizes}）で打ち切っている。私たちの raw が正しい。SPN の保存は切られない（#214）ので --force で再保存 → 実体化（数十分〜）後の再実行で解消できる見込み`;
     case "partial":
       return `⚠ コピーが原本より小さい（${sizes}）。Wayback が最後まで返していない（MiB 境界ではないので打ち切りとは断定できない）。→ **まず時間を置いて再照合**（保存直後は取り込み中で途中までしか返らず、同じスナップショットが後で完全に取れることがある）。それでも変わらなければ古い版か不完全な捕捉なので --force を試す`;
     case "other":
