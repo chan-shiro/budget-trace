@@ -35,20 +35,33 @@ const POLL_INTERVAL_MS = 6_000;
 // 取れて完全一致した）。1回の失敗を台帳に固定しない。
 const VERIFY_TRIES = 3;
 const VERIFY_RETRY_MS = 5_000;
+// 最新の捕捉が不一致だったとき、過去の捕捉を何件まで照合するか（最新を含む）。
+// 多数の捕捉が全部不一致の URL で毎回のダウンロードが際限なく増えないための上限。
+const WALK_LIMIT = 4;
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
-/** CDX API で最新の 200 スナップショットを探す */
-async function latestSnapshot(url: string): Promise<{ timestamp: string; waybackUrl: string } | null> {
-  const api = `https://web.archive.org/cdx/search/cdx?url=${encodeURIComponent(url)}&output=json&filter=statuscode:200&limit=-1`;
+type Snapshot = { timestamp: string; waybackUrl: string };
+
+/**
+ * CDX API で 200 スナップショットを**新しい順に**返す（最大 50 件）。
+ *
+ * 最新の1件だけでは足りない（2026-08-13・#214）— 打ち切られた捕捉より**古い完全な捕捉**が
+ * ある URL が実在する（新宿 R5: 最新 2026-04 は 5MiB 打ち切りだが 2025-08 の捕捉は全量 12.4MB で
+ * raw と完全一致）。しかも SPN の再保存では解消しない — 内容が既存の完全捕捉と同一だと Wayback は
+ * **revisit 記録**（statuscode "-"）として保存し、このフィルタには**永遠に新しい 200 捕捉が
+ * 現れない**（新宿 R5 で実測）。→ 呼び出し側が最新から順に照合し、一致する捕捉を台帳に採る。
+ */
+async function snapshots200(url: string): Promise<Snapshot[]> {
+  const api = `https://web.archive.org/cdx/search/cdx?url=${encodeURIComponent(url)}&output=json&filter=statuscode:200&limit=-50`;
   const res = await fetch(api, { headers: { "User-Agent": UA } });
-  if (!res.ok) return null;
+  if (!res.ok) return [];
   const rows = (await res.json()) as string[][];
-  if (!Array.isArray(rows) || rows.length < 2) return null;
-  const last = rows[rows.length - 1]!;
-  const timestamp = last[1]!;
-  const original = last[2]!;
-  return { timestamp, waybackUrl: `https://web.archive.org/web/${timestamp}/${original}` };
+  if (!Array.isArray(rows) || rows.length < 2) return [];
+  return rows
+    .slice(1)
+    .map((r) => ({ timestamp: r[1]!, waybackUrl: `https://web.archive.org/web/${r[1]}/${r[2]}` }))
+    .reverse();
 }
 
 /**
@@ -225,7 +238,7 @@ function verifyNote(v: VerifyResult): string | null {
     case "match":
       return null;
     case "truncated":
-      return `⚠ Wayback 側が MiB 境界（${v.bytes !== undefined ? `${v.bytes / MIB}MiB・` : ""}${sizes}）で打ち切っている。私たちの raw が正しい。SPN の保存は切られない（#214）ので --force で再保存 → 実体化（数十分〜）後の再実行で解消できる見込み`;
+      return `⚠ Wayback 側が MiB 境界（${v.bytes !== undefined ? `${v.bytes / MIB}MiB・` : ""}${sizes}）で打ち切っている。私たちの raw が正しい。SPN の保存は切られない（#214）ので --force で再保存 → 実体化（数十分〜十数時間。#214 で13時間の実測）後の再実行で解消できる見込み`;
     case "partial":
       return `⚠ コピーが原本より小さい（${sizes}）。Wayback が最後まで返していない（MiB 境界ではないので打ち切りとは断定できない）。→ **まず時間を置いて再照合**（保存直後は取り込み中で途中までしか返らず、同じスナップショットが後で完全に取れることがある）。それでも変わらなければ古い版か不完全な捕捉なので --force を試す`;
     case "other":
@@ -355,18 +368,55 @@ for (const source of targets) {
               ...(v.bytes !== undefined ? { waybackBytes: v.bytes } : {}),
               ...(v.kind === "truncated" ? { waybackTruncated: true } : {}),
               ...(v.kind === "partial" ? { waybackPartial: true } : {}),
+              // 照合が走ったら「そのときの raw」も錨として残す（types.ts の rawSha256 参照）
+              ...(rawSha !== undefined ? { rawSha256: rawSha } : {}),
             };
 
-    const existing = await latestSnapshot(url);
+    const rawSha = kind === "file" ? rawFileOf(source.id, url)?.sha256 : undefined;
+    const snaps = await snapshots200(url);
+    const existing = snaps[0];
     if (existing && !force) {
-      const match = await verify(existing.timestamp, existing.waybackUrl);
+      // **照合済みの捕捉は維持する**（再ダウンロードしない）。台帳の仕事は「raw と一致する写しの
+      // 所在」を指すことで、新しい捕捉が現れても一致済みの記録は無効にならない。ただし
+      // **raw が再取得で変わったら維持しない**（rawSha256 の錨・上書き型 URL の版違い検出を
+      // 殺さないため）。捕捉が CDX から消えた場合も維持しない（指す先の存在確認を兼ねる）。
+      if (
+        kind === "file" &&
+        prior?.sha256Match === true &&
+        prior.rawSha256 !== undefined &&
+        prior.rawSha256 === rawSha &&
+        snaps.some((s) => s.timestamp === prior.waybackTimestamp)
+      ) {
+        upsert({ ...prior, checkedAt: new Date().toISOString() });
+        console.log(`✓ 登録済み ${source.id} ${kind}: ${prior.waybackUrl}（照合済み・維持）`);
+        already++;
+        continue;
+      }
+      // 最新の捕捉から照合し、不一致なら**過去の捕捉**を新しい順に試す（snapshots200 の
+      // コメント参照 — 打ち切られた最新捕捉より古い完全捕捉が実在し、SPN の再保存は revisit に
+      // 落ちて解消しない）。一致した捕捉を台帳に採る。walk は照合が実際に走って不一致だった
+      // ときだけ（skipped / failed では回さない — 転送失敗で古い捕捉を無駄に舐めない）。
+      let pick = existing;
+      let match = await verify(existing.timestamp, existing.waybackUrl);
+      if (match.status === "verified" && !match.match) {
+        for (const s of snaps.slice(1, WALK_LIMIT)) {
+          const alt = await verify(s.timestamp, s.waybackUrl);
+          if (alt.status === "verified" && alt.match) {
+            pick = s;
+            match = alt;
+            break;
+          }
+        }
+      }
       upsert({
         sourceId: source.id, url, kind,
-        waybackUrl: existing.waybackUrl, waybackTimestamp: existing.timestamp,
+        waybackUrl: pick.waybackUrl, waybackTimestamp: pick.timestamp,
         checkedAt: new Date().toISOString(),
         ...verdict(match),
       });
-      console.log(`✓ 登録済み ${source.id} ${kind}: ${existing.waybackUrl}`);
+      console.log(`✓ 登録済み ${source.id} ${kind}: ${pick.waybackUrl}`);
+      if (pick !== existing)
+        console.log(`  （最新の捕捉 ${existing.timestamp} は raw と不一致のため、一致する過去の捕捉を記録）`);
       const note = verifyNote(match);
       if (note) console.log(`  ${note}`);
       already++;
@@ -375,10 +425,10 @@ for (const source of targets) {
     console.log(`↑ SPN 登録要求 ${source.id} ${kind}: ${url}`);
     const ok = await requestSave(url);
     await sleep(SAVE_INTERVAL_MS);
-    let snap = ok ? await latestSnapshot(url) : null;
+    let snap = ok ? ((await snapshots200(url))[0] ?? null) : null;
     for (let t = 0; !snap && ok && t < POLL_TRIES; t++) {
       await sleep(POLL_INTERVAL_MS);
-      snap = await latestSnapshot(url);
+      snap = (await snapshots200(url))[0] ?? null;
     }
     if (snap) {
       const match = await verify(snap.timestamp, snap.waybackUrl);
