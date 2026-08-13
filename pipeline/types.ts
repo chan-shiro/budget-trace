@@ -116,6 +116,15 @@ export const archiveEntrySchema = z.object({
   /** コピーの実バイト数。不一致の原因を後から診断するために残す（照合が走った file のみ） */
   waybackBytes: z.number().int().nonnegative().optional(),
   /**
+   * **照合したときの raw の sha256**（照合が走った file のみ・2026-08-13・#214）。
+   * `sha256Match` は「そのときの raw」との比較結果でしかない。台帳は最新でない過去の
+   * スナップショット（打ち切られた最新捕捉より古い完全捕捉）を指せる（archive.ts の
+   * `snapshots200` 参照）ため、照合済みのエントリは再ダウンロードせずに維持するが、
+   * **raw が再取得で変わったらその維持を無効にする**錨としてこれを残す（上書き型 URL —
+   * kofu-zaisei-jokyo — で古い一致が「現行版と一致」と読まれる事故を防ぐ）。
+   */
+  rawSha256: z.string().length(64).optional(),
+  /**
    * **スナップショットが Wayback 側で MiB 境界ちょうどで切り詰められている**
    * （＝発行元の差し替えではない）。上限は1つではない（神戸 R8 24MB→5MiB /
    * 浜松 R5 3.9MB→1MiB）ため、境界そのもの（1 MiB の倍数）で判定する。
