@@ -2282,6 +2282,12 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
       compSrc.prevBasis === "補正後"
         ? "前年度は当初額ではなく補正後予算額"
         : "予算資料の前年度当初額を使用",
+    // 表の末尾の脚注も同じ基準で出し分ける（2026-08-22・大分 R6/R2 で露出。見出し側だけ直して脚注が「当初予算同士」の
+    // ままだった＝上と同じ自己矛盾）
+    compFootNote:
+      compSrc.prevBasis === "補正後"
+        ? "増減は前年度の補正後予算額との比較。行をクリックすると款の内訳へ移動します。"
+        : "増減は当初予算同士の比較。行をクリックすると款の内訳へ移動します。",
     // 前年度列の資料注記（甲府 R6:「※令和5年度当初予算額は6月補正の政策的予算を含む」）
     compPrevNote: (compSrc as { prevNote?: string }).prevNote ? `※資料注記: ${(compSrc as { prevNote?: string }).prevNote}` : "",
     compPrevTotal: fmtV(compPrevSum), compCurTotal: fmtV(compCurSum), compSub: subV(compCurSum),
