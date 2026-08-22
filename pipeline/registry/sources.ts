@@ -8721,22 +8721,23 @@ export const SOURCES: SourceEntry[] = [
     // ⚠ **R6 だけ歳入 p.4 / 歳出 p.7**（+1p）。
     // 前年度列は資料に基準の明記なし → R8 前年度列 = R7 総括の当年度列（全款・235,900,000）を実測して
     //    「当初」と確定（R8→H24 の全隣接ペアで全款一致・偵察が実測）。
-    // ⚠⚠ **R3・R2 は既存パーサでは収録不可**（この巡では見送り・年度延伸とは別の理由）:
-    //    R3 = 歳出款11 災害復旧費が皆増（前年度セル空欄）で、財源内訳の整数が後続するため ints≥3 となり
-    //      比較列 548,001 を前年度として読む（前年度Σ +548,001・**warning なので derive まで流れる**）。
-    //      `prevBlankAsZero` は ints≥3 で throw（実測）＝パーサ改修が要る。
-    //    R2 = 廃止款「〇 自動車取得税交付金」の当年度セルが **U+2500 `─`** で款名末尾に残る
-    //      （`自動車取得税交付金─`・**Σ 差0 のまま静かに通る**）。DASHES 文字クラスに U+2500 が無い＝
-    //      文字クラスごと広げて既存全ソースを再 parse してから（§9c の型）。
+    // ⚠⚠ **R3・R2 は #226 のパーサ改修で収録できた**（2026-08-22・第3巡）:
+    //    R3 = 歳出款11 災害復旧費が皆増（前年度セル空欄）で、財源内訳の整数が後続するため ints≥3 になり、
+    //      改修前は比較列 548,001 を前年度として読んでいた（前年度Σ +548,001・warning で derive まで流れる型）。
+    //      `prevBlankAsZero.expenditure: [11]` を指定（改修で「ints[2] が当年度−前年度と整合するときだけ印字値」になった）。
+    //    R2 = 廃止款「〇 自動車取得税交付金」の当年度セルが **U+2500 `─`** で款名末尾に残っていた
+    //      （`自動車取得税交付金─`・Σ 差0 のまま）。DASHES 文字クラスに U+2500/U+2501 を足して解消。
     //    H31〜H22 の12年度は同型で読める（H30 は `dashAsZero: true` が要る・H23/H22 は見出し語が違う）が
     //      年度延伸は優先しない方針につき未収録。申し送りは data-sources.md §13 参照。
-    // [年度, ファイル名, 歳入ページ, 歳出ページ]
-    ["R8", "R08soukatu.pdf", 3, 6],
-    ["R7", "R07soukatu.pdf", 3, 6],
-    ["R6", "R06soukatu.pdf", 4, 7],
-    ["R5", "R05soukatu.pdf", 3, 6],
-    ["R4", "R04soukatu.pdf", 3, 6],
-  ] as const).map(([fy, file, revPage, expPage]) => ({
+    // [年度, ファイル名, 歳入ページ, 歳出ページ, 追加オプション]
+    ["R8", "R08soukatu.pdf", 3, 6, {}],
+    ["R7", "R07soukatu.pdf", 3, 6, {}],
+    ["R6", "R06soukatu.pdf", 4, 7, {}],
+    ["R5", "R05soukatu.pdf", 3, 6, {}],
+    ["R4", "R04soukatu.pdf", 3, 6, {}],
+    ["R3", "R03soukatu.pdf", 3, 6, { prevBlankAsZero: { expenditure: [11] } }],
+    ["R2", "R02soukatu.pdf", 3, 6, {}],
+  ] as const).map(([fy, file, revPage, expPage, extra]) => ({
     id: `hachioji-yosan-gaiyou-${fy.toLowerCase()}`,
     title: `${eraYear(fy)}年度 八王子市予算の概要 総括（一般会計歳入歳出 款別）`,
     publisher: "八王子市",
@@ -8764,6 +8765,7 @@ export const SOURCES: SourceEntry[] = [
       expenditureHeading: "目的別（款別）",
       revenueTotalLabel: "計",
       expenditureTotalLabel: "計",
+      ...extra,
     },
   })),
 
@@ -8860,9 +8862,9 @@ export const SOURCES: SourceEntry[] = [
     //    指定しないと款8 が `ゴルフ場利用`・款9 が `税交付金国有提供施設等所在市町村`… になる
     //    （**Σ は4系統差0 のまま＝静かに壊れる型**・偵察と収録で実測）。年度ごとに原典を見て `kanNameContinues` を書いた。
     // ⚠ R8 は廃止款行が款番号欄 `・`（環境性能割交付金 0/120,000・災害復旧費 0/1,008,934）で kanNo=null として拾われる。
-    //    `kanNamePrefixStrip: "・"` で `・` を落とすが、**環境性能割交付金の下段「交付金」は kanNo が無いので
-    //    kanNameContinues で指せず `環境性能割` のまま**（廃止款・当年度0・前年度額は正しい。表示だけの欠け。
-    //    直すなら kanNo=null 行にも下段待ちを付けるパーサ改修が要る＝§13-2）。
+    //    `kanNamePrefixStrip: "・"` で `・` を落とす。**環境性能割交付金は上段「環境性能割」＋下段「交付金」**で、
+    //    kanNo が無いので `kanNameContinues` では指せない → `abolishedAwaitTail.revenue: ["環境性能割"]`（#226・2026-08-22）。
+    //    改修前は `環境性能割` で確定していた（Σ は差0・表示だけの欠け）。
     // 前年度列は**当初**（R8↔R7 … R2↔H31 の7リンクで全款一致・偵察が実測）。H31 の款名は原典どおり
     //    `株式譲渡所得割交付金`・`国有提供所在市町村交付金`（R2 以降と表記が違う＝年度をまたぐ結合はここで切れる）。
     // ⚠ PDF 本文に「松山市」の文字列が無い。同ページの「各会計別予算総括表」（松山城観光事業特別会計 等）と
@@ -8901,7 +8903,7 @@ export const SOURCES: SourceEntry[] = [
       revenueHeading: "当初予算総括表",
       expenditureHeading: "当初予算総括表",
       ...(cont.length ? { kanNameContinues: { revenue: [...cont] } } : {}),
-      ...(fy === "R8" ? { kanNamePrefixStrip: "・" } : {}),
+      ...(fy === "R8" ? { kanNamePrefixStrip: "・", abolishedAwaitTail: { revenue: ["環境性能割"] } } : {}),
     },
   })),
 
@@ -8958,6 +8960,127 @@ export const SOURCES: SourceEntry[] = [
       dashAsZero: true,
       revenueHeaderExtra: "^歳入$",
       expenditureHeaderExtra: "^[0-9]+[.](千円)+$",
+    },
+  })),
+
+  // ---- 中核市 第2弾の見送り2市（2026-08-22・loop.md の第3巡・#226 のパーサ改修後）----------------
+  ...([
+    // 宇都宮市（栃木県・中核市・団体コード 092011）。財政課「当初予算案の大綱」巻末【参考資料】の
+    // 「一般会計（歳入）」「一般会計（歳出：目的別）」。印字ノンブルと物理ページのズレは年度で +2〜+5 と動く（下表が正）。
+    // ⚠ 歳入は**款番号なし**（`kanNoless`）で、自主財源/依存財源の**小計行**を `revenueHeaderExtra` で落とす
+    //    （落とし忘れは Σ 2倍で止まる）。歳出は款番号 1〜14 あり・折返しなし。
+    // ⚠⚠ **歳入の款名は「上段2行＋名前欄が空の金額行」の折返しで下段が無い** → `kanNolessUpperOnly`（#226）。
+    //    無いと kanNoless の分岐が下段を待って次の款の上段を食い、`地方消費税交付金ゴルフ場利用税` / `交付金` になる
+    //    （**Σ 4系統差0 のまま**・R8〜R3 は2款・R2 は3款・H31 は4款・H30 以前は5款が壊れる＝最も危険な型）。
+    // ⚠ `dashAsZero` は**付けない**。皆減行（R8 環境性能割交付金 `－ － 211,000 … 皆減`・R2 自動車取得税）は
+    //    abolished 分岐が当年度0/前年度 211,000 と正しく読む。付けると ints=[0,0,…] で前年度が 0 になり
+    //    前年度Σが −211,000（R8）/ −232,000（R2）ずれる（偵察が実測）。
+    // ⚠⚠ **R3 は未収録** — R3 の大綱は**議会修正前の「案」**（229,000,000）で、可決された当初は修正後 229,140,000
+    //    （同ページ `r3teisei.pdf`「令和３年第２回市議会定例会予算（修正案）総括表」）。R4 大綱の前年度列・統計書 17-3 は
+    //    どちらも修正後なので、R3 を入れると derive の年度間クロスチェーンが R4↔R3 で割れる（歳入4款・歳出 教育費 +140,000）。
+    //    `unrecordable.ts`（format-mismatch）に記録。修正後の款別は統計書 17-3 XLSX にある（別様式・未収録）。
+    // 前年度列は**当初**（両年度とも列見出しが「当初予算」。R8→R7 … H29→H28 の全隣接ペアで歳入歳出とも全款一致・偵察が実測）。
+    // ⚠ 年度 URL は規則なし（ファイル名が毎年違う・下表）。年度一覧は `1010664.html` に H16〜R8 が1ページ。
+    // [年度, ファイル名, 歳入ページ, 歳出ページ]（物理）
+    ["R8", "r8yosantaikou.pdf", 66, 68],
+    ["R7", "r7yosantaikou.pdf", 105, 107],
+    ["R6", "r6yosantaikou-2.pdf", 106, 108],
+    ["R5", "r5yosantaikou2.pdf", 86, 88],
+    ["R4", "r4yosanntaikou.pdf", 66, 68],
+    // R3 `03taikou.pdf`（68/70）は案のため未収録（上記）
+    ["R2", "r2taikou.pdf", 62, 64],
+    ["H31", "31taikou2.pdf", 60, 62],
+    ["H30", "30taikou.pdf", 58, 60],
+    ["H29", "29yosantaikou.pdf", 58, 60],
+    ["H28", "28toushoyosanannotaikou.pdf", 58, 60],
+  ] as const).map(([fy, file, revPage, expPage]) => ({
+    id: `utsunomiya-yosan-taikou-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 宇都宮市当初予算案の大綱（参考資料 一般会計 歳入／歳出：目的別）`,
+    publisher: "宇都宮市",
+    url: `https://www.city.utsunomiya.lg.jp/_res/projects/default_project/_page_/001/010/664/${file}`,
+    landingPage: "https://www.city.utsunomiya.lg.jp/shisei/johokokai/zaisei/1010664.html",
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "宇都宮市（一般会計・団体コード092011）",
+    // 「著作権等について」（/about/1010747.html・更新日 2024-03-08・確認日 2026-08-22）。サイト全体の条項で大綱 PDF に及ぶ。
+    // ⚠ オープンデータカタログ（CKAN・全295件）に予算・決算・財政は0件（実検索）＝CC BY は大綱に及ばない（§9g）。
+    //    ⚠ 市統計書「17-3 一般会計予算額及び決算額」XLSX は掲載ページが CC BY を宣言する**別資料**（八王子型の open）。
+    //    **本エントリの license を流用しない／統計書の CC BY を本エントリに書かない**。
+    // リンクは「リンクは自由です…特にお知らせいただく必要はありません。リンク先は原則としてトップページへお願いしますが、
+    //    必要なページに直接リンクしても構いません」（/about/1008437.html）＝直リンクを明示的に許容 → `noDeepLink` 不要。
+    license:
+      "宇都宮市公式サイト上の文書や画像等のコンテンツ、及び内容に関する諸権利は宇都宮市に帰属します。一部の画像等の著作権は原著作者が所有しています。本サイト上の文書・画像等の各ファイルの無断使用・転載・引用は禁じます。",
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      revenuePage: revPage,
+      expenditurePage: expPage,
+      revenueHeading: "一般会計（歳入）",
+      expenditureHeading: "一般会計（歳出：目的別）",
+      kanNoless: true,
+      kanNolessUpperOnly: true,
+      revenueHeaderExtra: "自主財源|依存財源",
+    },
+  })),
+
+  ...([
+    // 西宮市（兵庫県・中核市・団体コード 282049。⚠ 兵庫県は歳入款別がウェブに無く収録不可だが市は別サイト）。
+    // 財政課「当初予算の概要」（19p）の p.4「■２．一般会計歳入予算の概要」22款 / p.8「■３．（１）目的別内訳」14款
+    // （物理＝印字 +2）。R8〜R1・H30・H29 の10年度が完全同型。
+    // ⚠ 款番号なし → `kanNoless`。合計ラベルは「計」の一字。
+    // ⚠ 表の前に本文段落があり、句読点なしで改行された行（R7「…120億3,474万」）が款として拾われる →
+    //    HeaderExtra `[、。]|\d億`（R7 は外すと歳出 Σ +31 で止まる）。
+    // ⚠⚠ **歳出は款名が単独行で、金額行の名前欄に原典の注記「（市議会運営のために）」が来る**（14款すべて）。
+    //    `kanNameSuffixStrip.expenditure: "（[^）]*に）$"` で落とす（#226）。無いと `議会費（市議会運営のために）` が
+    //    **Σ 差0・validate の款名ゲートも素通り**で画面に出る。
+    // ⚠ **H30 は合計行の同点**（本文「…16億9,924万1千円の」が「会計」の『計』を含み整数3個）。#226 で同点時は
+    //    ラベルで始まる行を優先するようにして通った（偵察時は款0件で throw していた）。
+    // ⚠ 歳出款6 は原典が `農林水産費`（総務省標準の 農林水産業費 ではない）。寄せない。
+    // ⚠ R7 の概要は「修正後」（223,329,255）。記者発表の主要事業 p.4 は修正前 222,663,230 なので混ぜない。
+    // ⚠ R4 のファイル名は `toushohosei` だが p.1 は「令和４年度 当初予算の概要」（偵察が実測）。R1 は表紙「平成３１年度」だが
+    //    年度ページは `r1yosanannogaiyou`（令和元年度）＝発行元の呼称に従い R1。
+    // 前年度列は**当初**（R8→R7 … R2→R1 で全款一致・H29 の前年度合計は H28 オープンデータ CSV の Σ と一致・偵察が実測）。
+    // [年度, 年度ページ, ファイルディレクトリ, PDF ファイル名]
+    ["R8", "R8yosan", "R8yosan.files", "R8yosannogaiyou.pdf"],
+    ["R7", "R7yosanan", "R7yosanan.files", "R7gaiyou.pdf"],
+    ["R6", "R6yosan", "R6yosan.files", "R6yosannogaiyou.pdf"],
+    ["R5", "20230203091643212", "20230203091643212.files", "R5.toushoyosan_gaiyo.pdf"],
+    ["R4", "20220209144503509", "20220209144503509.files", "R4.toushohosei_gaiyo.pdf"],
+    ["R3", "R3yosannogaiyou", "R3yosannogaiyou.files", "R3.toushoyosan_gaiyo.pdf"],
+    ["R2", "R2yosannogaiyou", "R2yosannogaiyou.files", "R2toushoyosannogaiyo.pdf"],
+    ["R1", "r1yosanannogaiyou", "r1yosanannogaiyou.files", "H31tousyoyosannogaiyo1900320.pdf"],
+    ["H30", "H30yosannogaiyou", "H30yosannogaiyou.files", "H30yosannogaiyou1.pdf"],
+    ["H29", "h29yosangaiyo", "h29yosangaiyo.files", "H29yosannogaiyou1.pdf"],
+  ] as const).map(([fy, page, dir, file]) => ({
+    id: `nishinomiya-yosan-gaiyou-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 西宮市当初予算の概要（一般会計歳入・歳出予算の概要）`,
+    publisher: "西宮市",
+    url: `https://www.nishi.or.jp/shisei/zaiseijoho/yosan/${dir}/${file}`,
+    landingPage: `https://www.nishi.or.jp/shisei/zaiseijoho/yosan/${page}.html`,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "西宮市（一般会計・団体コード282049）",
+    // 「サイトポリシー」（/aboutweb/sitepolicy.html・更新日 2025-08-19・確認日 2026-08-22）の「著作権について」。
+    //    サイト全体の条項なので本 PDF に及ぶ。PDF 自体に利用条件の記載は無い。
+    // ⚠ オープンデータカタログ（opendata.nishi.or.jp・PDL1.0）に「財政情報（予算の概要）」（d_id 90020）が登載されているが
+    //    **ファイルは無く、関連リンクで予算の概要 index を指すだけ**。規約は「本サイトで掲載・発信している情報」が対象で、
+    //    本 PDF は本体サイト配信＝愛媛・八王子型の「ファイル直リンク単位の登載」ではない → 保守的に要許可のまま（§9g）。
+    //    同カタログの「西宮市当初予算データ」CSV（款項目節・H28〜R8）は**本サイト配信で open**＝別資料（§13-2）。
+    // リンクは「個別のページへのリンクを設定していただいてもかまいません」＋事後連絡の依頼＋フレーム遠慮
+    //    ＝§11h 第3群＋第5群（船橋・山口型）→ `noDeepLink` は立てない。
+    license:
+      "「西宮市ホームページ」に掲載されている個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、「西宮市ホームページ」全体も編集著作物として著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      revenuePage: 4,
+      expenditurePage: 8,
+      revenueHeading: "一般会計歳入予算の概要",
+      expenditureHeading: "目的別内訳",
+      revenueTotalLabel: "計",
+      expenditureTotalLabel: "計",
+      kanNoless: true,
+      revenueHeaderExtra: "[、。]|\\d億",
+      expenditureHeaderExtra: "[、。]|\\d億",
+      kanNameSuffixStrip: { expenditure: "（[^）]*に）$" },
     },
   })),
 

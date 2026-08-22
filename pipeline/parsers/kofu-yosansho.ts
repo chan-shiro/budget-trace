@@ -150,7 +150,7 @@ interface Options {
    * ⚠ **ダッシュは文字クラスごと広げてある**（2026-07-25・岡山で U+2015 を踏んだ）。
    *   発行元がどのダッシュを使うかは様式ごとに違い（豊島=U+FF0D/U+2212・岡山=U+2015
    *   HORIZONTAL BAR・静岡=U+002D ASCII ハイフン）、**1文字ずつ足すと同じ穴を何度も踏む**。
-   *   **廃止款の款名クリーンアップ（`cleaned` の `.replace(/[-‐‑‒–—―−－]/g, "")`）と同じクラスに
+   *   **廃止款の款名クリーンアップ（`cleaned` の `.replace(/[-‐‑‒–—―−－─━]/g, "")`）と同じクラスに
    *   揃えてある** — 以前はここだけ `[－−]` と狭く、同一パーサ内で不整合だった。
    *   **片方だけ足さないこと**（次に別のダッシュを踏んだら両方を同時に広げる）。
    */
@@ -327,6 +327,30 @@ interface Options {
    * **金額は全件正しく Σ も4系統一致するので validate を素通りする**＝目視しないと気づけない型。
    */
   kanNamePrefixStrip?: string;
+  /**
+   * **款名の末尾から落とす注記**（側ごとの正規表現・2026-08-22・西宮 #226）。西宮の歳出は款名が単独行で、
+   * 金額行の名前欄に原典の注記が来る（`議会費` / `（市議会運営のために） 844,380 …`）ため、組み立てた款名が
+   * `議会費（市議会運営のために）` になる（14款すべて・Σ 差0・validate の款名ゲートも素通り）。
+   * `kanNamePrefixStrip` は先頭1文字専用で、HeaderExtra で注記行を捨てると金額ごと消える。
+   * ⚠ **側ごと・明示指定**にし、`（特別区債）`（文京・中央の廃止款表記）や `環境清掃費（⑲環境費）`（新宿 H20）の
+   *   ような**原典が意味を持たせたバランスした括弧**を巻き添えにしないパターンを書く（例 `（[^）]*に）$`）。
+   * 折返しの組み立てが終わった款名に対して最後に適用する。
+   */
+  kanNameSuffixStrip?: { revenue?: string; expenditure?: string };
+  /**
+   * **`kanNoless` の折返しが上段だけの様式**（2026-08-22・宇都宮 #226）。kanNoless の分岐は「金額行の名前欄が
+   * 空なら下段を待つ」（杉並の中央寄せ3行折返し `株式等譲渡` / 金額行 / `所得割交付金`）が、宇都宮は
+   * 「上段2行＋名前欄が空の金額行」で**下段が無い**。待つと**次の款の上段を食って** `地方消費税交付金ゴルフ場利用税` /
+   * `交付金` になる（Σ 差0 のまま＝最も危険な型）。構造だけでは杉並型と区別できないので、原典を見て宣言する。
+   */
+  kanNolessUpperOnly?: boolean;
+  /**
+   * **廃止款（kanNo=null）で下段を待つ款名**（側ごと・2026-08-22・松山 R8 #226）。廃止款の分岐は「マーカーを落として
+   * 名前欄が空なら下段を待つ」だけで、`・ 環境性能割  0  120,000  △120,000  皆減` / `交付金` のように
+   * **上段に名前があり下段が続く**型は `kanNameContinues`（款番号で指定）でも届かない。上段の款名（`環境性能割`）を
+   * そのまま書く。指定が無いと `環境性能割` で確定し、下段 `交付金` は次の款の断片に化ける（末尾の款なら捨てられる）。
+   */
+  abolishedAwaitTail?: { revenue?: string[]; expenditure?: string[] };
   /** 「主な事業一覧」のページ範囲（1-origin・両端含む） */
   projectPages?: { from: number; to: number };
   /** 分冊形式（R2・R3）: 款別一覧表のファイル名。未指定なら単一ファイル */
@@ -584,6 +608,13 @@ function parseKanPage(
     (side === "revenue" ? opts.kanNameContinues?.revenue : opts.kanNameContinues?.expenditure) ?? [],
   );
   const headerRe = extraHeader ? new RegExp(`${KAN_HEADER_RE.source}|${extraHeader}`) : KAN_HEADER_RE;
+  // 廃止款で下段を待つ款名（Options.abolishedAwaitTail 参照）
+  const abolishedTails = new Set(
+    (side === "revenue" ? opts.abolishedAwaitTail?.revenue : opts.abolishedAwaitTail?.expenditure) ?? [],
+  );
+  // 款名の末尾から落とす注記（Options.kanNameSuffixStrip 参照）
+  const suffixSrc = side === "revenue" ? opts.kanNameSuffixStrip?.revenue : opts.kanNameSuffixStrip?.expenditure;
+  const suffixRe = suffixSrc ? new RegExp(suffixSrc) : null;
   const spread = side === "revenue" ? opts.revenueSpread : opts.expenditureSpread;
   const cropX = side === "revenue" ? opts.revenueCropX : opts.expenditureCropX;
   // テキスト抽出モード（Options.textSource 参照）。既定 -layout。
@@ -619,7 +650,9 @@ function parseKanPage(
   // 空セルの － を 0 に（Options.dashAsZero 参照）。単独トークンだけ・款名中のハイフンには当たらない。
   // ⚠ 文字クラスはまとめて広い（U+002D ASCII / U+2010-2015 / U+2212 / U+FF0D）。1文字ずつ足すと
   //   同じ穴を何度も踏む（豊島=－ で作り、岡山で ― を、静岡で - を踏んだ）。
-  if (opts.dashAsZero) text = text.replace(/(?<=[\s　]|^)[-‐‑‒–—―−－](?=[\s　]|$)/gm, "0");
+  // ⚠ **U+2500 `─`・U+2501 `━`（罫線素片）も足した**（2026-08-22・八王子 R2 #226）。廃止款の当年度セルが `─` で
+  //   款名末尾に残り `自動車取得税交付金─` になっていた（Σ 差0 のまま）。§9c「文字クラスごと広げる」。
+  if (opts.dashAsZero) text = text.replace(/(?<=[\s　]|^)[-‐‑‒–—―−－─━](?=[\s　]|$)/gm, "0");
   const heading =
     side === "revenue"
       ? opts.revenueHeading ?? "歳入予算款別一覧"
@@ -800,7 +833,13 @@ function parseKanPage(
       // （発行元が翌年度に埋めたら指定が不要になる。黙って 0 で上書きしない）。
       const blanks = (side === "revenue" ? opts.prevBlankAsZero?.revenue : opts.prevBlankAsZero?.expenditure) ?? [];
       if (kanNo != null && blanks.includes(kanNo)) {
-        if (ints.length >= 3) {
+        // ⚠ ints≥3 でも**前年度が印字されているとは限らない**（2026-08-22・八王子 R3 #226）。八王子の歳出表は
+        //   右に財源内訳の整数列が続くので、皆増行（前年度セル空欄）でも `548,001  548,001(増減)  財源…` と
+        //   3個以上になる。「印字されている」と判定するのは **ints[2] が |ints[0] − ints[1]| に一致する**
+        //   （＝当年度・前年度・増減の3列として整合する）ときだけにし、整合しなければ空欄として 0 にする。
+        const printedTriple =
+          ints.length >= 3 && toAmount(ints[2]!) === Math.abs(toAmount(ints[0]!) - toAmount(ints[1]!));
+        if (printedTriple) {
           throw new Error(
             `${filename} ${pageLabel}: prevBlankAsZero に款${kanNo} を指定していますが、この行は` +
               `整数が ${ints.length} 個あり前年度が印字されています（指定を外してください）: ${raw.trim()}`,
@@ -818,7 +857,7 @@ function parseKanPage(
     // 皆増・皆減で対称に起きる以上、剥がすのも対称にする。
     // ⚠ **前後だけ**にして内部は触らない。款名に単独ダッシュは出ないが、`防災・危機管理費`（茨城）の
     //   ような中黒（U+30FB）は文字クラス外なので無関係。ダッシュ類は `dashAsZero` と同じクラス。
-    const DASHES = "-‐‑‒–—―−－";
+    const DASHES = "-‐‑‒–—―−－─━";
     const trimmed = name.replace(new RegExp(`^[${DASHES}]+|[${DASHES}]+$`, "g"), "");
     const line: BudgetLineFact = { side, kanNo, kanName: trimmed, amount, prevAmount, locator };
     lines.push(line);
@@ -849,6 +888,12 @@ function parseKanPage(
     let bestInts = 1; // 最低2個の整数金額（当年度＋前年度）を要求
     let bestTokens: string[] | null = null;
     let bestRaw = "";
+    // ⚠ **同点のときだけ「合計ラベルで始まる行」を優先する**（2026-08-22・西宮 H30 #226）。西宮の歳出ページは
+    //   本文「一般会計の歳出を…16億9,924万1千円の」が `計` を含み整数3個＝本物の合計行 `計 …` と同数で、
+    //   先勝ちだと本文行が合計に選ばれ款0件で throw した。整数が多い行が勝つ規則は変えない。
+    let bestStartsWithLabel = false;
+    const startsWithLabel = (raw: string) =>
+      raw.replace(/[\s　]/g, "").replace(/^[○◎●]+/, "").startsWith(totalLabel);
     allLines.forEach((raw, i) => {
       if (!raw.replace(/[\s　]/g, "").includes(totalLabel)) return;
       // 構成比 100%（＝整数）が前年度合計に化けるのを防ぐ（stripPercents 参照）
@@ -863,11 +908,13 @@ function parseKanPage(
           if (tail.length >= 2) ints = [...ints, ...tail];
         }
       }
-      if (ints.length > bestInts) {
+      const sw = startsWithLabel(raw);
+      if (ints.length > bestInts || (ints.length === bestInts && bestTokens != null && sw && !bestStartsWithLabel)) {
         bestInts = ints.length;
         totalIdx = i;
         bestTokens = ints;
         bestRaw = raw;
+        bestStartsWithLabel = sw;
       }
     });
     if (bestTokens) {
@@ -999,7 +1046,11 @@ function parseKanPage(
     const lead = raw.match(/^\s*[○◎●]*\s*(0?[1-9]\d*)(?![\d,])/);
     // 款行でも整数の百分率（`0%`・`100%`）が金額に紛れうるので合計行と同じ扱いにする。
     // **lead の判定より後**に置くこと（款番号は百分率ではないので剥がしてはいけない）。
-    const rest = stripPercents(lead ? raw.slice(raw.indexOf(lead[1]!) + lead[1]!.length) : raw);
+    // 款番号直後の**半角ピリオド**（松戸 `1.市税`・市川 `1.` 単独行）は款番号の体裁なので落とす（2026-08-22 #226）。
+    // 数字が続くピリオド（小数）は落とさない。
+    const rest = stripPercents(
+      lead ? raw.slice(raw.indexOf(lead[1]!) + lead[1]!.length).replace(/^\.(?!\d)/, "") : raw,
+    );
     const tokens = rest.match(AMOUNT_RE) ?? [];
     let ints = tokens.filter((t) => !t.includes("."));
     // 款行に同居する項番号を落とす（Options.kanRowInlineKoNo 参照）。
@@ -1067,8 +1118,9 @@ function parseKanPage(
       // 年度間でも揺れる**（中央 R6/H29 と同じ）。
       // ⚠ ダッシュのクラスは `dashAsZero`（Options 参照）と**同じものに揃える**。
       //    片方だけ広げると、次に別のダッシュを踏んだとき款名にだけ残って Σ 差0 のまま画面に出る。
-      const cleaned = namePart.replace(/^(?:廃款|[△▲〇○])/, "").replace(/[○〇]$/, "").replace(/[-‐‑‒–—―−－]/g, "");
-      emit(null, pendName + cleaned, ints, raw, cleaned === "");
+      const cleaned = namePart.replace(/^(?:廃款|[△▲〇○])/, "").replace(/[○〇]$/, "").replace(/[-‐‑‒–—―−－─━]/g, "");
+      // 上段に名前があり下段が続く廃止款（Options.abolishedAwaitTail 参照・松山 R8）
+      emit(null, pendName + cleaned, ints, raw, cleaned === "" || abolishedTails.has(pendName + cleaned));
     } else if (pendNo != null && lead && namePart === "" && ints.length >= 1) {
       // **折返し款の金額行なのに、当年度額そのものが lead に食われる**（2026-07-17・台東 R8 の
       // 款7 環境性能割交付金）。原典は**象徴計上の1千円**を置く:
@@ -1104,7 +1156,8 @@ function parseKanPage(
       //   → `株式等譲渡` / `所得割交付金地方消費税交付金`（実測）
       // **金額は全件正しく Σ も4系統すべて差0 で通る＝検証ゲートを完全に素通りする**。
       // 既存の唯一の kanNoless ソース（岡山）は款行に折返しが無く、この穴は潜在していた。
-      emit(null, pendName + namePart, ints, raw, namePart === "");
+      // 上段だけの折返し様式では下段を待たない（Options.kanNolessUpperOnly 参照・宇都宮）
+      emit(null, pendName + namePart, ints, raw, namePart === "" && !opts.kanNolessUpperOnly);
     } else if (tokens.length === 0) {
       // 金額のない款名断片（折返しの上段/下段）。日本語断片のみ採る。
       // 「款名 （A）（%）…」等の列見出し行は款名に混ぜない。
@@ -1154,7 +1207,10 @@ function parseKanPage(
   // ⚠ **折返しの組み立てが終わった款名に対して判定する**こと。namePart（断片）の段階で掃除すると、
   //   `（環境性能割` ＋ `交付金）` のような**折返しの上段だけを見て「閉じが無い」と誤判定**し、
   //   既存の `（環境性能割交付金）` を `環境性能割交付金）` に壊す（全293ソースの再 parse で実測）。
-  for (const l of lines) l.kanName = l.kanName.replace(/^[（(](?=[^）)]*$)/, "");
+  for (const l of lines) {
+    l.kanName = l.kanName.replace(/^[（(](?=[^）)]*$)/, "");
+    if (suffixRe) l.kanName = l.kanName.replace(suffixRe, "");
+  }
   const note = opts.prevNote ?? prevNote; // 明示指定 > 本文の ※ 注記
   return { lines, total, prevTotal, prevBasis, ...(note ? { prevNote: note } : {}) };
 }

@@ -2267,7 +2267,7 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       srcId: `kagoshima-yosangaiyo-${fy}`, muniCode: "462012", muniName: "鹿児島市", prefName: "鹿児島県", isPref: false,
     })),
     // 八王子は R8〜R4（R3・R2 はパーサ改修待ち・H31 以前は年度延伸なので未収録。registry のコメント参照）
-    ...(["r8", "r7", "r6", "r5", "r4"] as const).map((fy) => ({
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `hachioji-yosan-gaiyou-${fy}`, muniCode: "132012", muniName: "八王子市", prefName: "東京都", isPref: false,
     })),
     ...(["r8", "r7", "r6", "r5", "r4"] as const).map((fy) => ({
@@ -2283,6 +2283,13 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     })),
     ...(["r8", "r7", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
       srcId: `ichikawa-yosansho-${fy}`, muniCode: "122033", muniName: "市川市", prefName: "千葉県", isPref: false,
+    })),
+    // 第2弾の見送り2市（#226 のパーサ改修後・2026-08-22 第3巡）。宇都宮 R3 は案のため未収録（unrecordable.ts）
+    ...(["r8", "r7", "r6", "r5", "r4", "r2", "h31", "h30", "h29", "h28"] as const).map((fy) => ({
+      srcId: `utsunomiya-yosan-taikou-${fy}`, muniCode: "092011", muniName: "宇都宮市", prefName: "栃木県", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "r1", "h30", "h29"] as const).map((fy) => ({
+      srcId: `nishinomiya-yosan-gaiyou-${fy}`, muniCode: "282049", muniName: "西宮市", prefName: "兵庫県", isPref: false,
     })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
