@@ -6057,7 +6057,8 @@ registry のコメントが記録のすべて。
 
 ⚠ **derive のクロスチェーンは srcId の年度サフィックスを落とした接頭辞ごとに鎖を張る**ので、
 **松戸の R8（`matsudo-yosan-setsumeisho-r8`）↔ R7（`matsudo-sankouhyou-r7`）は資料の乗り換えで別系列と見なされ検査されない**
-（レビューが発見。杉並 `keikakusho`/`yosansho`・江戸川 `yoko`/`yosansho` も同型の盲点で、いずれも表看板の年度が無検査）。
+（レビューが発見。杉並 `keikakusho`/`yosansho`（R4↔R3）・江戸川 `yoko`/`yosansho`（R4↔R3・R2↔H31・H30↔H29）も同じ盲点を持つが、
+**最新年度が無検査なのは松戸だけ**）。
 松戸 R8→R7 は**手で検算して 37款すべて款名・金額が一致**（歳入歳出とも Σ 194,980,000）。
 → 鎖を `BUDGET_SOURCES` の muniCode で張れば乗り換え年度も検査に入る（既存3団体で発火しないことを実測してから・別 PR）。
 松山 R8 の廃止款 `環境性能割` は #226 で直したら**松山 R8 の再 parse が要る**（validate warning ではないので caveats にも出ない）。

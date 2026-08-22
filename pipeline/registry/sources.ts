@@ -8932,9 +8932,12 @@ export const SOURCES: SourceEntry[] = [
     title: `${eraYear(fy)}年度 市川市一般会計予算（歳入歳出予算事項別明細書 総括）`,
     publisher: "市川市",
     url: `https://www.city.ichikawa.lg.jp/uploaded/attachment/${att}.pdf`,
+    // ⚠ 旧 URL（/fin01/1111000080.html・/fin01/1111000093.html）は 301 で /page/ へ飛ぶ。**旧 URL のまま登録すると
+    //    Wayback は 2015 年の旧サイト捕捉（当該年度の PDF を含まない）を「登録済み」にする**（レビューが発見）ので、
+    //    リダイレクト先を landingPage にする。
     landingPage: fy === "R8"
-      ? "https://www.city.ichikawa.lg.jp/fin01/1111000080.html"
-      : "https://www.city.ichikawa.lg.jp/fin01/1111000093.html",
+      ? "https://www.city.ichikawa.lg.jp/page/3174.html"
+      : "https://www.city.ichikawa.lg.jp/page/4121.html",
     kind: "pdf" as const,
     fiscalYear: fy,
     scope: "市川市（一般会計・団体コード122033）",
