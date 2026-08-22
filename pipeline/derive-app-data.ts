@@ -2256,6 +2256,23 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29"] as const).map((fy) => ({
       srcId: `tokyo-yosangaiyou-${fy}`, muniCode: "130001", muniName: "東京都", prefName: "東京都", isPref: true,
     })),
+    // 中核市（人口の多い順に整備。2026-08-22・loop.md の第1巡）。候補は「総務省の人口 × BUDGET_SOURCES に無い
+    // 団体」で機械的に出した（船橋・川口・鹿児島市・八王子・姫路）。款体系は総務省の目的別標準。
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "r1"] as const).map((fy) => ({
+      srcId: `funabashi-yosan-gaiyou-${fy}`, muniCode: "122041", muniName: "船橋市", prefName: "千葉県", isPref: false,
+    })),
+    // 川口は R8 のみ（R3〜R7 は非テキスト PDF・unrecordable.ts）
+    { srcId: "kawaguchi-yosan-gaiyou-r8", muniCode: "112038", muniName: "川口市", prefName: "埼玉県", isPref: false },
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31"] as const).map((fy) => ({
+      srcId: `kagoshima-yosangaiyo-${fy}`, muniCode: "462012", muniName: "鹿児島市", prefName: "鹿児島県", isPref: false,
+    })),
+    // 八王子は R8〜R4（R3・R2 はパーサ改修待ち・H31 以前は年度延伸なので未収録。registry のコメント参照）
+    ...(["r8", "r7", "r6", "r5", "r4"] as const).map((fy) => ({
+      srcId: `hachioji-yosan-gaiyou-${fy}`, muniCode: "132012", muniName: "八王子市", prefName: "東京都", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5", "r4"] as const).map((fy) => ({
+      srcId: `himeji-yosan-soukatsu-${fy}`, muniCode: "282014", muniName: "姫路市", prefName: "兵庫県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。

@@ -77,6 +77,18 @@ export interface UnrecordableRecord {
 }
 
 export const UNRECORDABLE: UnrecordableRecord[] = [
+  // ==== 中核市（2026-08-22・loop.md 第1巡・docs §13）==============================
+  {
+    code: "112038", name: "川口市", dataset: "budget", fiscalYears: ["R7", "R6", "R5", "R4", "R3"],
+    categories: ["scanned-image"],
+    reason:
+      "年度ページの「予算概要」PDF（R7_yosanngaiyou.pdf ほか）は DocuWorks 出力の非テキスト PDF で、" +
+      "pdftotext の全文が 55〜63 文字しか無い（R7 63・R6 57・R5 55・R4 59・R3 61）。" +
+      "R7 の「当初予算書 一般会計」（426p）も同様で、Wayback の R7 写しも同一バイナリ。" +
+      "R8 は同名の PDF にテキスト層があり収録済み。R2 以前は年度一覧に無い。",
+    url: "https://www.city.kawaguchi.lg.jp/soshiki/01020/030/3/index.html",
+    checkedOn: "2026-08-22", ref: "docs/data-sources.md §13",
+  },
   // ==== 横浜市の款項目節（2026-08-02・#191・docs §8d-2）=============================
   {
     code: "141003", name: "横浜市", dataset: "detail", fiscalYears: ["R7"],

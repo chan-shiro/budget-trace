@@ -1,0 +1,19 @@
+{
+  "sourceId": "himeji-yosan-soukatsu-r7",
+  "files": [
+    {
+      "filename": "R7ippannkaikeiyosannsoukatuhyousainyuu.pdf",
+      "sha256": "6c2a5c4814478344a0c7c2b3fe4ce39319acf595f1a4d1ce778f1288e8a8ac07",
+      "bytes": 80293,
+      "fetchedAt": "2026-08-22T11:25:06.508Z",
+      "fetchedFrom": "https://www.city.himeji.lg.jp/shisei/cmsfiles/contents/0000030/30034/R7ippannkaikeiyosannsoukatuhyousainyuu.pdf"
+    },
+    {
+      "filename": "R7ippannkaikeiyosannsoukatuhyousaishutumokuteki.pdf",
+      "sha256": "129f0788d8e00727989011f47c5f656dea9bf81b08e2556814f8b378b1722363",
+      "bytes": 57380,
+      "fetchedAt": "2026-08-22T11:25:06.851Z",
+      "fetchedFrom": "https://www.city.himeji.lg.jp/shisei/cmsfiles/contents/0000030/30034/R7ippannkaikeiyosannsoukatuhyousaishutumokuteki.pdf"
+    }
+  ]
+}

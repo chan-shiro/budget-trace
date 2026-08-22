@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 99,
+  "budgetCount": 104,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 486,
-  "fileCount": 1638,
-  "archivedCount": 454,
-  "licenseOpen": 65,
-  "licensePermission": 360,
+  "sourceCount": 513,
+  "fileCount": 1672,
+  "archivedCount": 481,
+  "licenseOpen": 70,
+  "licensePermission": 382,
   "licenseUnverified": 61,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -115,6 +115,18 @@ export const ROADMAP_PROGRESS = {
       "code": "131164",
       "years": 9,
       "range": "H29〜R8（9年度）"
+    },
+    {
+      "name": "船橋市",
+      "code": "122041",
+      "years": 8,
+      "range": "R1〜R8（8年度）"
+    },
+    {
+      "name": "鹿児島市",
+      "code": "462012",
+      "years": 8,
+      "range": "H31〜R8（8年度）"
     },
     {
       "name": "札幌市",
@@ -213,6 +225,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R4〜R8（5年度）"
     },
     {
+      "name": "八王子市",
+      "code": "132012",
+      "years": 5,
+      "range": "R4〜R8（5年度）"
+    },
+    {
       "name": "浜松市",
       "code": "221309",
       "years": 5,
@@ -223,6 +241,12 @@ export const ROADMAP_PROGRESS = {
       "code": "271403",
       "years": 5,
       "range": "R2〜R8（5年度）"
+    },
+    {
+      "name": "姫路市",
+      "code": "282014",
+      "years": 5,
+      "range": "R4〜R8（5年度）"
     },
     {
       "name": "渋谷区",

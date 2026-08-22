@@ -8634,5 +8634,179 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.kawasaki.jp/230/cmsfiles/contents/0000186/186101/26bunkatuban6_antore.pdf",
     "license": "川崎市ホームページの掲載コンテンツ（文書・画像等、及びその内容）に関する諸権利は、原則として川崎市に帰属します。一部の画像等の著作権は、原著作者が所有しています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、川崎市ホームページの掲載コンテンツについて無断で複製・転用することを禁止します。コンテンツの転載などを行いたい場合は、各コンテンツのお問い合わせ先まで事前にご連絡ください。（内容を改変しないことが条件となります。）",
     "target": "file"
+  },
+  "/sources/funabashi-yosan-gaiyou-r8/sainyu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.funabashi.lg.jp/shisei/zaisei/001/p144524_d/fil/sainyu.pdf",
+    "license": "「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、船橋市の許可なく当ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/funabashi-yosan-gaiyou-r8/saisyutu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.funabashi.lg.jp/shisei/zaisei/001/p144524_d/fil/saisyutu.pdf",
+    "license": "「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、船橋市の許可なく当ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/funabashi-yosan-gaiyou-r7/sanko-2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.funabashi.lg.jp/shisei/zaisei/001/p134434_d/fil/sanko-2.pdf",
+    "license": "「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、船橋市の許可なく当ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/funabashi-yosan-gaiyou-r7/sanko-3.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.funabashi.lg.jp/shisei/zaisei/001/p134434_d/fil/sanko-3.pdf",
+    "license": "「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、船橋市の許可なく当ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/funabashi-yosan-gaiyou-r6/gaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.funabashi.lg.jp/shisei/zaisei/001/p123980_d/fil/gaiyo.pdf",
+    "license": "「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、船橋市の許可なく当ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/funabashi-yosan-gaiyou-r5/R5gaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.funabashi.lg.jp/shisei/zaisei/001/p125141_d/fil/R5gaiyo.pdf",
+    "license": "「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、船橋市の許可なく当ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/funabashi-yosan-gaiyou-r4/R4gaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.funabashi.lg.jp/shisei/zaisei/001/p118949_d/fil/R4gaiyo.pdf",
+    "license": "「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、船橋市の許可なく当ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/funabashi-yosan-gaiyou-r3/gaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.funabashi.lg.jp/shisei/zaisei/001/p124347_d/fil/gaiyo.pdf",
+    "license": "「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、船橋市の許可なく当ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/funabashi-yosan-gaiyou-r2/R2gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.funabashi.lg.jp/shisei/zaisei/001/p124633_d/fil/R2gaiyou.pdf",
+    "license": "「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、船橋市の許可なく当ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/funabashi-yosan-gaiyou-r1/gaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.funabashi.lg.jp/shisei/zaisei/001/p125198_d/fil/gaiyo.pdf",
+    "license": "「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、船橋市の許可なく当ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/kagoshima-yosangaiyo-r8/r8yosanangaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kagoshima.lg.jp/kikakuzaisei/zaisei/zaisei/shise/yosan/jokyo/r7/documents/r8yosanangaiyo.pdf",
+    "license": "本ウェブサイトにおいて提供している情報（文書や画像等の各ファイル及びその内容）の著作権は、原則として鹿児島市に帰属します。また、本ウェブサイト上で提供している情報・文章・画像などの全てのコンテンツデータについては、「私的使用のための複製」や「引用」といった、著作権法上認められた場合を除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/kagoshima-yosangaiyo-r7/r7yosangaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kagoshima.lg.jp/kikakuzaisei/zaisei/zaisei/shise/yosan/jokyo/r7/documents/r7yosangaiyo.pdf",
+    "license": "本ウェブサイトにおいて提供している情報（文書や画像等の各ファイル及びその内容）の著作権は、原則として鹿児島市に帰属します。また、本ウェブサイト上で提供している情報・文章・画像などの全てのコンテンツデータについては、「私的使用のための複製」や「引用」といった、著作権法上認められた場合を除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/kagoshima-yosangaiyo-r6/gaiyouannnasir61-8.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kagoshima.lg.jp/kikakuzaisei/zaisei/zaisei/shise/yosan/jokyo/r4/documents/gaiyouannnasir61-8.pdf",
+    "license": "本ウェブサイトにおいて提供している情報（文書や画像等の各ファイル及びその内容）の著作権は、原則として鹿児島市に帰属します。また、本ウェブサイト上で提供している情報・文章・画像などの全てのコンテンツデータについては、「私的使用のための複製」や「引用」といった、著作権法上認められた場合を除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/kagoshima-yosangaiyo-r5/gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kagoshima.lg.jp/kikakuzaisei/zaisei/zaisei/shise/yosan/jokyo/r4/documents/gaiyou.pdf",
+    "license": "本ウェブサイトにおいて提供している情報（文書や画像等の各ファイル及びその内容）の著作権は、原則として鹿児島市に帰属します。また、本ウェブサイト上で提供している情報・文章・画像などの全てのコンテンツデータについては、「私的使用のための複製」や「引用」といった、著作権法上認められた場合を除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/kagoshima-yosangaiyo-r4/annnashisyuyoujigyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kagoshima.lg.jp/kikakuzaisei/zaisei/zaisei/shise/yosan/jokyo/r4/documents/annnashisyuyoujigyou.pdf",
+    "license": "本ウェブサイトにおいて提供している情報（文書や画像等の各ファイル及びその内容）の著作権は、原則として鹿児島市に帰属します。また、本ウェブサイト上で提供している情報・文章・画像などの全てのコンテンツデータについては、「私的使用のための複製」や「引用」といった、著作権法上認められた場合を除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/kagoshima-yosangaiyo-r3/r3pointannasi.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kagoshima.lg.jp/kikakuzaisei/zaisei/zaisei/shise/yosan/jokyo/r3/documents/r3pointannasi.pdf",
+    "license": "本ウェブサイトにおいて提供している情報（文書や画像等の各ファイル及びその内容）の著作権は、原則として鹿児島市に帰属します。また、本ウェブサイト上で提供している情報・文章・画像などの全てのコンテンツデータについては、「私的使用のための複製」や「引用」といった、著作権法上認められた場合を除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/kagoshima-yosangaiyo-r2/2gaiyo-1_0-8.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kagoshima.lg.jp/kikakuzaisei/zaisei/zaisei/shise/yosan/jokyo/r2/documents/2gaiyo-1_0-8.pdf",
+    "license": "本ウェブサイトにおいて提供している情報（文書や画像等の各ファイル及びその内容）の著作権は、原則として鹿児島市に帰属します。また、本ウェブサイト上で提供している情報・文章・画像などの全てのコンテンツデータについては、「私的使用のための複製」や「引用」といった、著作権法上認められた場合を除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/kagoshima-yosangaiyo-h31/31-gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kagoshima.lg.jp/kikakuzaisei/zaisei/zaisei/shise/yosan/jokyo/documents/31-gaiyou.pdf",
+    "license": "本ウェブサイトにおいて提供している情報（文書や画像等の各ファイル及びその内容）の著作権は、原則として鹿児島市に帰属します。また、本ウェブサイト上で提供している情報・文章・画像などの全てのコンテンツデータについては、「私的使用のための複製」や「引用」といった、著作権法上認められた場合を除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/himeji-yosan-soukatsu-r8/R8ippannkaikeiyosannsoukatuhyousainyuu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.himeji.lg.jp/shisei/cmsfiles/contents/0000032/32701/R8ippannkaikeiyosannsoukatuhyousainyuu.pdf",
+    "license": "姫路市公式ウェブサイト(以下、当サイト)に掲載しているすべてのコンテンツ（文章・画像・イラストなど)は、権利者に無断で二次利用（複製・転載・転用・販売など）することを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/himeji-yosan-soukatsu-r8/R8ippannkaikeiyosannsoukatuhyousaishutumokuteki.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.himeji.lg.jp/shisei/cmsfiles/contents/0000032/32701/R8ippannkaikeiyosannsoukatuhyousaishutumokuteki.pdf",
+    "license": "姫路市公式ウェブサイト(以下、当サイト)に掲載しているすべてのコンテンツ（文章・画像・イラストなど)は、権利者に無断で二次利用（複製・転載・転用・販売など）することを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/himeji-yosan-soukatsu-r7/R7ippannkaikeiyosannsoukatuhyousainyuu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.himeji.lg.jp/shisei/cmsfiles/contents/0000030/30034/R7ippannkaikeiyosannsoukatuhyousainyuu.pdf",
+    "license": "姫路市公式ウェブサイト(以下、当サイト)に掲載しているすべてのコンテンツ（文章・画像・イラストなど)は、権利者に無断で二次利用（複製・転載・転用・販売など）することを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/himeji-yosan-soukatsu-r7/R7ippannkaikeiyosannsoukatuhyousaishutumokuteki.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.himeji.lg.jp/shisei/cmsfiles/contents/0000030/30034/R7ippannkaikeiyosannsoukatuhyousaishutumokuteki.pdf",
+    "license": "姫路市公式ウェブサイト(以下、当サイト)に掲載しているすべてのコンテンツ（文章・画像・イラストなど)は、権利者に無断で二次利用（複製・転載・転用・販売など）することを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/himeji-yosan-soukatsu-r6/R6ippannkaikeiyosannsoukatuhyousainyuu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.himeji.lg.jp/shisei/cmsfiles/contents/0000026/26326/R6ippannkaikeiyosannsoukatuhyousainyuu.pdf",
+    "license": "姫路市公式ウェブサイト(以下、当サイト)に掲載しているすべてのコンテンツ（文章・画像・イラストなど)は、権利者に無断で二次利用（複製・転載・転用・販売など）することを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/himeji-yosan-soukatsu-r6/R6ippannkaikeiyosannsoukatuhyousaishutumokuteki.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.himeji.lg.jp/shisei/cmsfiles/contents/0000026/26326/R6ippannkaikeiyosannsoukatuhyousaishutumokuteki.pdf",
+    "license": "姫路市公式ウェブサイト(以下、当サイト)に掲載しているすべてのコンテンツ（文章・画像・イラストなど)は、権利者に無断で二次利用（複製・転載・転用・販売など）することを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/himeji-yosan-soukatsu-r5/R5ippannkaikeiyosannsoukatuhyousainyuu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.himeji.lg.jp/shisei/cmsfiles/contents/0000023/23499/R5ippannkaikeiyosannsoukatuhyousainyuu.pdf",
+    "license": "姫路市公式ウェブサイト(以下、当サイト)に掲載しているすべてのコンテンツ（文章・画像・イラストなど)は、権利者に無断で二次利用（複製・転載・転用・販売など）することを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/himeji-yosan-soukatsu-r5/R5ippannkaikeiyosannsoukatuhyousaishutumokuteki.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.himeji.lg.jp/shisei/cmsfiles/contents/0000023/23499/R5ippannkaikeiyosannsoukatuhyousaishutumokuteki.pdf",
+    "license": "姫路市公式ウェブサイト(以下、当サイト)に掲載しているすべてのコンテンツ（文章・画像・イラストなど)は、権利者に無断で二次利用（複製・転載・転用・販売など）することを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/himeji-yosan-soukatsu-r4/R4ippannkaikeiyosannsoukatuhyousainyuu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.himeji.lg.jp/shisei/cmsfiles/contents/0000020/20103/R4ippannkaikeiyosannsoukatuhyousainyuu.pdf",
+    "license": "姫路市公式ウェブサイト(以下、当サイト)に掲載しているすべてのコンテンツ（文章・画像・イラストなど)は、権利者に無断で二次利用（複製・転載・転用・販売など）することを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/himeji-yosan-soukatsu-r4/R4ippannkaikeiyosannsoukatuhyousaishutumokuteki.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.himeji.lg.jp/shisei/cmsfiles/contents/0000020/20103/R4ippannkaikeiyosannsoukatuhyousaishutumokuteki.pdf",
+    "license": "姫路市公式ウェブサイト(以下、当サイト)に掲載しているすべてのコンテンツ（文章・画像・イラストなど)は、権利者に無断で二次利用（複製・転載・転用・販売など）することを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/kawaguchi-yosan-gaiyou-r8/R8_yosanngaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kawaguchi.lg.jp/material/files/group/9/R8_yosanngaiyou.pdf",
+    "license": "川口市ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、川口市またはコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転載することはできません。「引用」を行う際は、必ず出典を明示してください。また、利用許諾については各ページの担当課へお問い合わせください。",
+    "target": "file"
   }
 };
