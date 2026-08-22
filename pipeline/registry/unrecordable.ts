@@ -79,6 +79,17 @@ export interface UnrecordableRecord {
 export const UNRECORDABLE: UnrecordableRecord[] = [
   // ==== 中核市 第5弾（2026-08-23・loop.md 第6巡・docs §13-6）==================================
   {
+    code: "452017", name: "宮崎市", dataset: "budget", fiscalYears: ["H31", "H30", "H29", "H28", "H27"],
+    categories: ["format-mismatch"],
+    reason:
+      "「当初予算案の概要」の同じ表は H31 以前も存在し既存パーサで読めるが、**単位が百万円**で、さらに旧宮崎市域と" +
+      "清武町域の2組の列が右に続く様式になっている。R2 の前年度列（千円の実額）と款単位で一致しないため、" +
+      "収録すると年度間クロスチェーンが R2↔H31 で割れる（H31 の前年度列も「肉付け後」）。R8〜R2 は千円の同型で収録済み。" +
+      "H26 以前も同じ様式（H27 で実測）。",
+    url: "https://www.city.miyazaki.miyazaki.jp/city/finance/budget/",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-6",
+  },
+  {
     code: "232114", name: "豊田市", dataset: "budget", fiscalYears: ["R3", "R2", "H31"],
     categories: ["scanned-image"],
     reason:

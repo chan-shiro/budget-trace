@@ -18899,10 +18899,18 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260822201454/https://www.city.toyonaka.osaka.jp/joho/zaisei/yosan/reiwa6yosan.files/r6giansankousiryou_0226.pdf",
       "waybackTimestamp": "20260822201454",
-      "checkedAt": "2026-08-22T20:37:14.579Z",
+      "checkedAt": "2026-08-22T21:08:29.975Z",
       "sha256Match": true,
       "waybackBytes": 3205410,
       "rawSha256": "d884a09462f0293de37629e207d3ad0b1fb5533a497cb11859e7c60a5d6b2886"
+    },
+    {
+      "sourceId": "toyonaka-kanbetsu-r6",
+      "url": "https://www.city.toyonaka.osaka.jp/joho/zaisei/yosan/reiwa6yosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260822201517/https://www.city.toyonaka.osaka.jp/joho/zaisei/yosan/reiwa6yosan.html",
+      "waybackTimestamp": "20260822201517",
+      "checkedAt": "2026-08-22T21:08:41.340Z"
     },
     {
       "sourceId": "toyonaka-kanbetsu-r7",
