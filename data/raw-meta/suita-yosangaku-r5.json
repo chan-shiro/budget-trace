@@ -1,0 +1,12 @@
+{
+  "sourceId": "suita-yosangaku-r5",
+  "files": [
+    {
+      "filename": "ippannyosan.pdf",
+      "sha256": "f5d35efc592181e9f3808f989ce9a1b5bf445f37b38de7070cb902bd70cfa29f",
+      "bytes": 212896,
+      "fetchedAt": "2026-08-22T21:51:06.520Z",
+      "fetchedFrom": "https://www.city.suita.osaka.jp/_res/projects/default_project/_page_/001/026/012/ippannyosan.pdf"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "sourceId": "okazaki-yosan-gaiyou-r2",
+  "files": [
+    {
+      "filename": "gaiyou.pdf",
+      "sha256": "bcc95a4ef4bc2fe065485da5aa63e7f03f36822ccbe9b21758ffc5cfc3cea2be",
+      "bytes": 1636249,
+      "fetchedAt": "2026-08-22T21:50:57.294Z",
+      "fetchedFrom": "https://www.city.okazaki.lg.jp/_res/projects/default_project/_page_/001/006/082/gaiyou.pdf"
+    }
+  ]
+}

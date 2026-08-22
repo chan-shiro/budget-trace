@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 124,
+  "budgetCount": 129,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 670,
-  "fileCount": 1829,
-  "archivedCount": 638,
+  "sourceCount": 709,
+  "fileCount": 1868,
+  "archivedCount": 676,
   "licenseOpen": 75,
-  "licensePermission": 520,
+  "licensePermission": 559,
   "licenseUnverified": 75,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -123,6 +123,18 @@ export const ROADMAP_PROGRESS = {
       "range": "H28〜R8（11年度）"
     },
     {
+      "name": "岡崎市",
+      "code": "232025",
+      "years": 11,
+      "range": "H28〜R8（11年度）"
+    },
+    {
+      "name": "吹田市",
+      "code": "272051",
+      "years": 11,
+      "range": "H28〜R8（11年度）"
+    },
+    {
       "name": "宇都宮市",
       "code": "092011",
       "years": 10,
@@ -169,6 +181,12 @@ export const ROADMAP_PROGRESS = {
       "code": "122041",
       "years": 8,
       "range": "R1〜R8（8年度）"
+    },
+    {
+      "name": "横須賀市",
+      "code": "142018",
+      "years": 8,
+      "range": "H31〜R8（8年度）"
     },
     {
       "name": "豊中市",
@@ -309,6 +327,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R3〜R8（6年度）"
     },
     {
+      "name": "長崎市",
+      "code": "422011",
+      "years": 6,
+      "range": "H29〜R8（6年度）"
+    },
+    {
       "name": "品川区",
       "code": "131091",
       "years": 5,
@@ -367,6 +391,12 @@ export const ROADMAP_PROGRESS = {
       "code": "221007",
       "years": 3,
       "range": "R6〜R8（3年度）"
+    },
+    {
+      "name": "枚方市",
+      "code": "272108",
+      "years": 3,
+      "range": "R5〜R8（3年度）"
     },
     {
       "name": "神戸市",

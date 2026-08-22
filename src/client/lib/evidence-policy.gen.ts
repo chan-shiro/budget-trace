@@ -9636,5 +9636,239 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.toyonaka.osaka.jp/joho/zaisei/yosan/heisei30yosan.files/300226kanbetsu.pdf",
     "license": "豊中市ホームページに掲載されている文章、写真、イラストなど個々の情報は、著作権の対象です。また、本市サイト全体も編集著作権として、著作権の対象になります。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製、転用することはできません。",
     "target": "file"
+  },
+  "/sources/okazaki-yosan-gaiyou-r8/01-01.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.okazaki.lg.jp/shisei/yosan/1006068/1014207.html",
+    "license": "岡崎市ホームページに掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として岡崎市または原著作者に帰属します。著作権法上認められた場合を除き、無断で複製・引用することはできません。掲載されている内容を二次利用する場合には、各ページ内に記載された担当課へ、事前にご相談ください。",
+    "target": "page"
+  },
+  "/sources/okazaki-yosan-gaiyou-r7/0-1_.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.okazaki.lg.jp/shisei/yosan/1006068/1006072.html",
+    "license": "岡崎市ホームページに掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として岡崎市または原著作者に帰属します。著作権法上認められた場合を除き、無断で複製・引用することはできません。掲載されている内容を二次利用する場合には、各ページ内に記載された担当課へ、事前にご相談ください。",
+    "target": "page"
+  },
+  "/sources/okazaki-yosan-gaiyou-r6/gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.okazaki.lg.jp/shisei/yosan/1006068/1006074.html",
+    "license": "岡崎市ホームページに掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として岡崎市または原著作者に帰属します。著作権法上認められた場合を除き、無断で複製・引用することはできません。掲載されている内容を二次利用する場合には、各ページ内に記載された担当課へ、事前にご相談ください。",
+    "target": "page"
+  },
+  "/sources/okazaki-yosan-gaiyou-r5/gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.okazaki.lg.jp/shisei/yosan/1006068/1006076.html",
+    "license": "岡崎市ホームページに掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として岡崎市または原著作者に帰属します。著作権法上認められた場合を除き、無断で複製・引用することはできません。掲載されている内容を二次利用する場合には、各ページ内に記載された担当課へ、事前にご相談ください。",
+    "target": "page"
+  },
+  "/sources/okazaki-yosan-gaiyou-r4/gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.okazaki.lg.jp/shisei/yosan/1006068/1006078.html",
+    "license": "岡崎市ホームページに掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として岡崎市または原著作者に帰属します。著作権法上認められた場合を除き、無断で複製・引用することはできません。掲載されている内容を二次利用する場合には、各ページ内に記載された担当課へ、事前にご相談ください。",
+    "target": "page"
+  },
+  "/sources/okazaki-yosan-gaiyou-r3/gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.okazaki.lg.jp/shisei/yosan/1006068/1006080.html",
+    "license": "岡崎市ホームページに掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として岡崎市または原著作者に帰属します。著作権法上認められた場合を除き、無断で複製・引用することはできません。掲載されている内容を二次利用する場合には、各ページ内に記載された担当課へ、事前にご相談ください。",
+    "target": "page"
+  },
+  "/sources/okazaki-yosan-gaiyou-r2/gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.okazaki.lg.jp/shisei/yosan/1006068/1006082.html",
+    "license": "岡崎市ホームページに掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として岡崎市または原著作者に帰属します。著作権法上認められた場合を除き、無断で複製・引用することはできません。掲載されている内容を二次利用する場合には、各ページ内に記載された担当課へ、事前にご相談ください。",
+    "target": "page"
+  },
+  "/sources/okazaki-yosan-gaiyou-h31/01-01.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.okazaki.lg.jp/shisei/yosan/1006068/1006084.html",
+    "license": "岡崎市ホームページに掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として岡崎市または原著作者に帰属します。著作権法上認められた場合を除き、無断で複製・引用することはできません。掲載されている内容を二次利用する場合には、各ページ内に記載された担当課へ、事前にご相談ください。",
+    "target": "page"
+  },
+  "/sources/okazaki-yosan-gaiyou-h30/01-01.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.okazaki.lg.jp/shisei/yosan/1006068/1006086.html",
+    "license": "岡崎市ホームページに掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として岡崎市または原著作者に帰属します。著作権法上認められた場合を除き、無断で複製・引用することはできません。掲載されている内容を二次利用する場合には、各ページ内に記載された担当課へ、事前にご相談ください。",
+    "target": "page"
+  },
+  "/sources/okazaki-yosan-gaiyou-h29/01.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.okazaki.lg.jp/shisei/yosan/1006068/1006088.html",
+    "license": "岡崎市ホームページに掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として岡崎市または原著作者に帰属します。著作権法上認められた場合を除き、無断で複製・引用することはできません。掲載されている内容を二次利用する場合には、各ページ内に記載された担当課へ、事前にご相談ください。",
+    "target": "page"
+  },
+  "/sources/okazaki-yosan-gaiyou-h28/01.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.okazaki.lg.jp/shisei/yosan/1006068/1006090.html",
+    "license": "岡崎市ホームページに掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として岡崎市または原著作者に帰属します。著作権法上認められた場合を除き、無断で複製・引用することはできません。掲載されている内容を二次利用する場合には、各ページ内に記載された担当課へ、事前にご相談ください。",
+    "target": "page"
+  },
+  "/sources/nagasaki-shi-yosansho-r8/56051.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagasaki.lg.jp/uploaded/attachment/56051.pdf",
+    "license": "長崎市ウェブサイトに掲載されている文章、画像等の著作権は長崎市またはコンテンツ提供者に帰属します。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については、各ウェブページに記載されている課等へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/nagasaki-shi-yosansho-r7/42798.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagasaki.lg.jp/uploaded/attachment/42798.pdf",
+    "license": "長崎市ウェブサイトに掲載されている文章、画像等の著作権は長崎市またはコンテンツ提供者に帰属します。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については、各ウェブページに記載されている課等へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/nagasaki-shi-yosansho-r5/23851.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagasaki.lg.jp/uploaded/attachment/23851.pdf",
+    "license": "長崎市ウェブサイトに掲載されている文章、画像等の著作権は長崎市またはコンテンツ提供者に帰属します。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については、各ウェブページに記載されている課等へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/nagasaki-shi-yosansho-r2/16522.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagasaki.lg.jp/uploaded/attachment/16522.pdf",
+    "license": "長崎市ウェブサイトに掲載されている文章、画像等の著作権は長崎市またはコンテンツ提供者に帰属します。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については、各ウェブページに記載されている課等へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/nagasaki-shi-yosansho-h30/12831.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagasaki.lg.jp/uploaded/attachment/12831.pdf",
+    "license": "長崎市ウェブサイトに掲載されている文章、画像等の著作権は長崎市またはコンテンツ提供者に帰属します。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については、各ウェブページに記載されている課等へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/nagasaki-shi-yosansho-h29/11548.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagasaki.lg.jp/uploaded/attachment/11548.pdf",
+    "license": "長崎市ウェブサイトに掲載されている文章、画像等の著作権は長崎市またはコンテンツ提供者に帰属します。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については、各ウェブページに記載されている課等へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/hirakata-yosan-gaiyou-r8/20260224_02_yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hirakata.osaka.jp/0000045365.html",
+    "license": "本サイトに掲載されている個々の情報（文章、写真、イラスト等）は、私的使用のための複製や引用等の著作権上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "page"
+  },
+  "/sources/hirakata-yosan-gaiyou-r7/02_R07yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hirakata.osaka.jp/0000053646.html",
+    "license": "本サイトに掲載されている個々の情報（文章、写真、イラスト等）は、私的使用のための複製や引用等の著作権上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "page"
+  },
+  "/sources/hirakata-yosan-gaiyou-r5/toushoyosanngaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hirakata.osaka.jp/0000053637.html",
+    "license": "本サイトに掲載されている個々の情報（文章、写真、イラスト等）は、私的使用のための複製や引用等の著作権上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "page"
+  },
+  "/sources/yokosuka-yosan-gaiyou-r8/r8yosan-gaiyo_yokosuka.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokosuka.kanagawa.jp/shisei/unei/zaisei/documents/r8yosan-gaiyo_yokosuka.pdf",
+    "license": "当サイトに掲載されている文字、写真、イラストやデザインといった情報の著作権は、私たちまたは原権利者に帰属します。私的使用または引用等著作権法上認められている行為を除き、無断で転載等を行うことはできません。引用を行う際は、適宜の方法により、必ず出所を明示してください。また、当サイトの内容の全部または一部について、私たちに無断で改変を行うことはできません。",
+    "target": "file"
+  },
+  "/sources/yokosuka-yosan-gaiyou-r7/07kannmatushiryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokosuka.kanagawa.jp/shisei/unei/zaisei/documents/07kannmatushiryou.pdf",
+    "license": "当サイトに掲載されている文字、写真、イラストやデザインといった情報の著作権は、私たちまたは原権利者に帰属します。私的使用または引用等著作権法上認められている行為を除き、無断で転載等を行うことはできません。引用を行う際は、適宜の方法により、必ず出所を明示してください。また、当サイトの内容の全部または一部について、私たちに無断で改変を行うことはできません。",
+    "target": "file"
+  },
+  "/sources/yokosuka-yosan-gaiyou-r6/07_kanmatusiryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokosuka.kanagawa.jp/1610/finas/yosan/documents/07_kanmatusiryou.pdf",
+    "license": "当サイトに掲載されている文字、写真、イラストやデザインといった情報の著作権は、私たちまたは原権利者に帰属します。私的使用または引用等著作権法上認められている行為を除き、無断で転載等を行うことはできません。引用を行う際は、適宜の方法により、必ず出所を明示してください。また、当サイトの内容の全部または一部について、私たちに無断で改変を行うことはできません。",
+    "target": "file"
+  },
+  "/sources/yokosuka-yosan-gaiyou-r5/07kanmatusiryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokosuka.kanagawa.jp/1610/finas/yosan/documents/07kanmatusiryou.pdf",
+    "license": "当サイトに掲載されている文字、写真、イラストやデザインといった情報の著作権は、私たちまたは原権利者に帰属します。私的使用または引用等著作権法上認められている行為を除き、無断で転載等を行うことはできません。引用を行う際は、適宜の方法により、必ず出所を明示してください。また、当サイトの内容の全部または一部について、私たちに無断で改変を行うことはできません。",
+    "target": "file"
+  },
+  "/sources/yokosuka-yosan-gaiyou-r4/04-2zennenhikaku.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokosuka.kanagawa.jp/1610/finas/yosan/documents/04-2zennenhikaku.pdf",
+    "license": "当サイトに掲載されている文字、写真、イラストやデザインといった情報の著作権は、私たちまたは原権利者に帰属します。私的使用または引用等著作権法上認められている行為を除き、無断で転載等を行うことはできません。引用を行う際は、適宜の方法により、必ず出所を明示してください。また、当サイトの内容の全部または一部について、私たちに無断で改変を行うことはできません。",
+    "target": "file"
+  },
+  "/sources/yokosuka-yosan-gaiyou-r3/03-2zennenhikaku.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokosuka.kanagawa.jp/1610/finas/yosan/documents/03-2zennenhikaku.pdf",
+    "license": "当サイトに掲載されている文字、写真、イラストやデザインといった情報の著作権は、私たちまたは原権利者に帰属します。私的使用または引用等著作権法上認められている行為を除き、無断で転載等を行うことはできません。引用を行う際は、適宜の方法により、必ず出所を明示してください。また、当サイトの内容の全部または一部について、私たちに無断で改変を行うことはできません。",
+    "target": "file"
+  },
+  "/sources/yokosuka-yosan-gaiyou-r2/02-2zennenhikaku.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokosuka.kanagawa.jp/1610/finas/yosan/documents/02-2zennenhikaku.pdf",
+    "license": "当サイトに掲載されている文字、写真、イラストやデザインといった情報の著作権は、私たちまたは原権利者に帰属します。私的使用または引用等著作権法上認められている行為を除き、無断で転載等を行うことはできません。引用を行う際は、適宜の方法により、必ず出所を明示してください。また、当サイトの内容の全部または一部について、私たちに無断で改変を行うことはできません。",
+    "target": "file"
+  },
+  "/sources/yokosuka-yosan-gaiyou-h31/31-2zennenhikaku.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yokosuka.kanagawa.jp/1610/finas/yosan/documents/31-2zennenhikaku.pdf",
+    "license": "当サイトに掲載されている文字、写真、イラストやデザインといった情報の著作権は、私たちまたは原権利者に帰属します。私的使用または引用等著作権法上認められている行為を除き、無断で転載等を行うことはできません。引用を行う際は、適宜の方法により、必ず出所を明示してください。また、当サイトの内容の全部または一部について、私たちに無断で改変を行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suita-yosangaku-r8/05_R8ippankaikeiyosangaku.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suita.osaka.jp/_res/projects/default_project/_page_/001/041/852/05_R8ippankaikeiyosangaku.pdf",
+    "license": "吹田市公式ウェブサイト内に掲載している文章、画像等に関する諸権利は、原則として吹田市または原著作者に帰属します。これらの情報について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/suita-yosangaku-r7/05_R7ippankaikeiyosangaku.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suita.osaka.jp/_res/projects/default_project/_page_/001/037/994/05_R7ippankaikeiyosangaku.pdf",
+    "license": "吹田市公式ウェブサイト内に掲載している文章、画像等に関する諸権利は、原則として吹田市または原著作者に帰属します。これらの情報について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/suita-yosangaku-r6/R6_ippankaikeiyosangaku.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suita.osaka.jp/_res/projects/default_project/_page_/001/032/448/R6_ippankaikeiyosangaku.pdf",
+    "license": "吹田市公式ウェブサイト内に掲載している文章、画像等に関する諸権利は、原則として吹田市または原著作者に帰属します。これらの情報について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/suita-yosangaku-r5/ippannyosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suita.osaka.jp/_res/projects/default_project/_page_/001/026/012/ippannyosan.pdf",
+    "license": "吹田市公式ウェブサイト内に掲載している文章、画像等に関する諸権利は、原則として吹田市または原著作者に帰属します。これらの情報について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/suita-yosangaku-r4/12232515347.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suita.osaka.jp/_res/projects/default_project/_page_/001/008/372/12232515347.pdf",
+    "license": "吹田市公式ウェブサイト内に掲載している文章、画像等に関する諸権利は、原則として吹田市または原著作者に帰属します。これらの情報について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/suita-yosangaku-r3/121916113254.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suita.osaka.jp/_res/projects/default_project/_page_/001/008/369/121916113254.pdf",
+    "license": "吹田市公式ウェブサイト内に掲載している文章、画像等に関する諸権利は、原則として吹田市または原著作者に帰属します。これらの情報について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/suita-yosangaku-r2/12192414539.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suita.osaka.jp/_res/projects/default_project/_page_/001/008/365/12192414539.pdf",
+    "license": "吹田市公式ウェブサイト内に掲載している文章、画像等に関する諸権利は、原則として吹田市または原著作者に帰属します。これらの情報について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/suita-yosangaku-h31/121924134314.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suita.osaka.jp/_res/projects/default_project/_page_/001/008/383/121924134314.pdf",
+    "license": "吹田市公式ウェブサイト内に掲載している文章、画像等に関する諸権利は、原則として吹田市または原著作者に帰属します。これらの情報について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/suita-yosangaku-h30/12193011857.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suita.osaka.jp/_res/projects/default_project/_page_/001/008/379/12193011857.pdf",
+    "license": "吹田市公式ウェブサイト内に掲載している文章、画像等に関する諸権利は、原則として吹田市または原著作者に帰属します。これらの情報について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/suita-yosangaku-h29/121924125046.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suita.osaka.jp/_res/projects/default_project/_page_/001/008/375/121924125046.pdf",
+    "license": "吹田市公式ウェブサイト内に掲載している文章、画像等に関する諸権利は、原則として吹田市または原著作者に帰属します。これらの情報について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/suita-yosangaku-h28/121924113447.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suita.osaka.jp/_res/projects/default_project/_page_/001/008/374/121924113447.pdf",
+    "license": "吹田市公式ウェブサイト内に掲載している文章、画像等に関する諸権利は、原則として吹田市または原著作者に帰属します。これらの情報について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
   }
 };
