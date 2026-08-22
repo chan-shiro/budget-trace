@@ -1,0 +1,12 @@
+{
+  "sourceId": "toyota-yosan-kanren-r5",
+  "files": [
+    {
+      "filename": "03.pdf",
+      "sha256": "5cf73b12fcb71dabb96b3580975bf83f90a373876d054cef9bf132c09157a32e",
+      "bytes": 617022,
+      "fetchedAt": "2026-08-22T19:28:26.769Z",
+      "fetchedFrom": "https://www.city.toyota.aichi.jp/_res/projects/default_project/_page_/001/004/776/r0502/03.pdf"
+    }
+  ]
+}

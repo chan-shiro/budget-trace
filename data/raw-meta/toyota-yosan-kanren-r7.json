@@ -1,0 +1,12 @@
+{
+  "sourceId": "toyota-yosan-kanren-r7",
+  "files": [
+    {
+      "filename": "03.pdf",
+      "sha256": "6577ee606aff726cc6eb5e0f6a507f3b880530bf1a7ecc7624cdd3c208fecc5c",
+      "bytes": 407647,
+      "fetchedAt": "2026-08-22T19:28:26.175Z",
+      "fetchedFrom": "https://www.city.toyota.aichi.jp/_res/projects/default_project/_page_/001/004/776/r0702/03.pdf"
+    }
+  ]
+}
