@@ -1,0 +1,19 @@
+{
+  "sourceId": "funabashi-yosan-gaiyou-r7",
+  "files": [
+    {
+      "filename": "sanko-2.pdf",
+      "sha256": "8e6f2f41e0c0048bf34f33b0929f48effd93b12dc2e620ca0e02525621a23059",
+      "bytes": 1127741,
+      "fetchedAt": "2026-08-22T11:24:55.116Z",
+      "fetchedFrom": "https://www.city.funabashi.lg.jp/shisei/zaisei/001/p134434_d/fil/sanko-2.pdf"
+    },
+    {
+      "filename": "sanko-3.pdf",
+      "sha256": "db144d1f3e931585cc4f6ab8b72adc1b2539cee57adbf201633d7c732f8c4fce",
+      "bytes": 1190092,
+      "fetchedAt": "2026-08-22T11:24:55.528Z",
+      "fetchedFrom": "https://www.city.funabashi.lg.jp/shisei/zaisei/001/p134434_d/fil/sanko-3.pdf"
+    }
+  ]
+}

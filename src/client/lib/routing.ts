@@ -57,6 +57,8 @@ const MUNI_SLUGS: Record<string, string> = {
   "192015": "kofu", "192112": "fuefuki", "192023": "fujiyoshida", "192082": "minami-alps",
   "192091": "hokuto", "192066": "otsuki", "192040": "tsuru", "192139": "koshu",
   "194301": "fujikawaguchiko",
+  // 中核市（2026-08-22）。鹿児島市は県と同じ語だが県は `ken` なので衝突しない（静岡市と同型）
+  "122041": "funabashi", "112038": "kawaguchi", "462012": "kagoshima", "132012": "hachioji", "282014": "himeji",
   "232076": "toyokawa", "352039": "yamaguchi", "222038": "numazu", "272191": "izumi",
   // 政令指定都市（2026-07-15）
   "141003": "yokohama", "231002": "nagoya", "011002": "sapporo",

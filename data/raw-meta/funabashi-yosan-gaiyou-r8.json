@@ -1,0 +1,19 @@
+{
+  "sourceId": "funabashi-yosan-gaiyou-r8",
+  "files": [
+    {
+      "filename": "sainyu.pdf",
+      "sha256": "5ea62e735408967f62be3f0587932702b1441615f1b0a4c4384e13060355048e",
+      "bytes": 1361142,
+      "fetchedAt": "2026-08-22T11:24:53.943Z",
+      "fetchedFrom": "https://www.city.funabashi.lg.jp/shisei/zaisei/001/p144524_d/fil/sainyu.pdf"
+    },
+    {
+      "filename": "saisyutu.pdf",
+      "sha256": "64a2b482abe0cdea1d4cd99252bddcffb67407da756c7878ff50d104e250d972",
+      "bytes": 1132089,
+      "fetchedAt": "2026-08-22T11:24:54.319Z",
+      "fetchedFrom": "https://www.city.funabashi.lg.jp/shisei/zaisei/001/p144524_d/fil/saisyutu.pdf"
+    }
+  ]
+}

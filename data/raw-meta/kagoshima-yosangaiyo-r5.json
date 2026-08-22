@@ -1,0 +1,12 @@
+{
+  "sourceId": "kagoshima-yosangaiyo-r5",
+  "files": [
+    {
+      "filename": "gaiyou.pdf",
+      "sha256": "3fa4867e5be829f6946d9677b44fd348638b1cca08bc6aa47897856e55a814f0",
+      "bytes": 1001664,
+      "fetchedAt": "2026-08-22T11:25:03.802Z",
+      "fetchedFrom": "https://www.city.kagoshima.lg.jp/kikakuzaisei/zaisei/zaisei/shise/yosan/jokyo/r4/documents/gaiyou.pdf"
+    }
+  ]
+}
