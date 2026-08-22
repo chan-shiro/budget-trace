@@ -8808,5 +8808,155 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.kawaguchi.lg.jp/material/files/group/9/R8_yosanngaiyou.pdf",
     "license": "川口市ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、川口市またはコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転載することはできません。「引用」を行う際は、必ず出典を明示してください。また、利用許諾については各ページの担当課へお問い合わせください。",
     "target": "file"
+  },
+  "/sources/matsudo-yosan-setsumeisho-r8/R8setsumeisho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/R8setsumeisho.pdf",
+    "license": "これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断の転用・引用を禁止します。ただし、特段の定めがある場合は、この限りでありません。",
+    "target": "file"
+  },
+  "/sources/matsudo-sankouhyou-r7/07_sankouhyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/07_sankouhyou.pdf",
+    "license": "これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断の転用・引用を禁止します。ただし、特段の定めがある場合は、この限りでありません。",
+    "target": "file"
+  },
+  "/sources/matsudo-sankouhyou-r6/3_sankouhyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/3_sankouhyou.pdf",
+    "license": "これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断の転用・引用を禁止します。ただし、特段の定めがある場合は、この限りでありません。",
+    "target": "file"
+  },
+  "/sources/matsudo-sankouhyou-r5/sankouhyou_R5.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/sankouhyou_R5.pdf",
+    "license": "これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断の転用・引用を禁止します。ただし、特段の定めがある場合は、この限りでありません。",
+    "target": "file"
+  },
+  "/sources/matsudo-sankouhyou-r4/sankouhyou_R4.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/sankouhyou_R4.pdf",
+    "license": "これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断の転用・引用を禁止します。ただし、特段の定めがある場合は、この限りでありません。",
+    "target": "file"
+  },
+  "/sources/matsudo-sankouhyou-r3/sankouhyou_R3.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/sankouhyou_R3.pdf",
+    "license": "これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断の転用・引用を禁止します。ただし、特段の定めがある場合は、この限りでありません。",
+    "target": "file"
+  },
+  "/sources/matsudo-sankouhyou-r2/sankouhyou_R2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/sankouhyou_R2.pdf",
+    "license": "これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断の転用・引用を禁止します。ただし、特段の定めがある場合は、この限りでありません。",
+    "target": "file"
+  },
+  "/sources/matsudo-sankouhyou-h31/sankouhyou_H31.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/sankouhyou_H31.pdf",
+    "license": "これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断の転用・引用を禁止します。ただし、特段の定めがある場合は、この限りでありません。",
+    "target": "file"
+  },
+  "/sources/matsudo-sankouhyou-h30/sankouhyou_H30.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/sankouhyou_H30.pdf",
+    "license": "これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断の転用・引用を禁止します。ただし、特段の定めがある場合は、この限りでありません。",
+    "target": "file"
+  },
+  "/sources/matsudo-sankouhyou-h29/sankouhyou_H29.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/sankouhyou_H29.pdf",
+    "license": "これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断の転用・引用を禁止します。ただし、特段の定めがある場合は、この限りでありません。",
+    "target": "file"
+  },
+  "/sources/matsudo-sankouhyou-h28/sankouhyou_H28.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/sankouhyou_H28.pdf",
+    "license": "これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断の転用・引用を禁止します。ただし、特段の定めがある場合は、この限りでありません。",
+    "target": "file"
+  },
+  "/sources/matsuyama-yosan-soukatsu-r8/06_R8_ippan_mokutekibetu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/R8tousyo.files/06_R8_ippan_mokutekibetu.pdf",
+    "license": "本Webサイトに掲載されている文章、写真、イラスト、画像等の著作権は、原則として松山市に帰属し、国際条約・法律等によって保護されています。一部の画像等の著作権は、原著作者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。ただし、特段の定めがある場合は、この取り扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/matsuyama-yosan-soukatsu-r7/06_R7_ippan_mokutekibetu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/14591120250213.files/06_R7_ippan_mokutekibetu.pdf",
+    "license": "本Webサイトに掲載されている文章、写真、イラスト、画像等の著作権は、原則として松山市に帰属し、国際条約・法律等によって保護されています。一部の画像等の著作権は、原著作者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。ただし、特段の定めがある場合は、この取り扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/matsuyama-yosan-soukatsu-r6/06_R6_ippan_mokutekibetu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/R06tousyo.files/06_R6_ippan_mokutekibetu.pdf",
+    "license": "本Webサイトに掲載されている文章、写真、イラスト、画像等の著作権は、原則として松山市に帰属し、国際条約・法律等によって保護されています。一部の画像等の著作権は、原著作者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。ただし、特段の定めがある場合は、この取り扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/matsuyama-yosan-soukatsu-r5/07_R5_ippan_soukatsuhyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/2023_tosho_yosan.files/07_R5_ippan_soukatsuhyo.pdf",
+    "license": "本Webサイトに掲載されている文章、写真、イラスト、画像等の著作権は、原則として松山市に帰属し、国際条約・法律等によって保護されています。一部の画像等の著作権は、原著作者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。ただし、特段の定めがある場合は、この取り扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/matsuyama-yosan-soukatsu-r4/07_R4_ippan_soukatsuhyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/2022_tosho_yosan.files/07_R4_ippan_soukatsuhyo.pdf",
+    "license": "本Webサイトに掲載されている文章、写真、イラスト、画像等の著作権は、原則として松山市に帰属し、国際条約・法律等によって保護されています。一部の画像等の著作権は、原著作者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。ただし、特段の定めがある場合は、この取り扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/matsuyama-yosan-soukatsu-r3/07_R3_ippan_soukatsuhyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/2021_tosho_yosan.files/07_R3_ippan_soukatsuhyo.pdf",
+    "license": "本Webサイトに掲載されている文章、写真、イラスト、画像等の著作権は、原則として松山市に帰属し、国際条約・法律等によって保護されています。一部の画像等の著作権は、原著作者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。ただし、特段の定めがある場合は、この取り扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/matsuyama-yosan-soukatsu-r2/05_R2_ippan_soukatsuhyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/2020_tosho_yosan.files/05_R2_ippan_soukatsuhyo.pdf",
+    "license": "本Webサイトに掲載されている文章、写真、イラスト、画像等の著作権は、原則として松山市に帰属し、国際条約・法律等によって保護されています。一部の画像等の著作権は、原著作者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。ただし、特段の定めがある場合は、この取り扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/matsuyama-yosan-soukatsu-h31/05_H31_ippan_soukatsuhyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/2019_tosho_yosan.files/05_H31_ippan_soukatsuhyo.pdf",
+    "license": "本Webサイトに掲載されている文章、写真、イラスト、画像等の著作権は、原則として松山市に帰属し、国際条約・法律等によって保護されています。一部の画像等の著作権は、原著作者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。ただし、特段の定めがある場合は、この取り扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/ichikawa-yosansho-r8/41372.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ichikawa.lg.jp/uploaded/attachment/41372.pdf",
+    "license": "市公式Webサイトに掲載されている文章、写真、イラストなどの個々の情報は、著作権の対象となります。また、市公式Webサイト全体も編集著作物として著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/ichikawa-yosansho-r7/5288.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ichikawa.lg.jp/uploaded/attachment/5288.pdf",
+    "license": "市公式Webサイトに掲載されている文章、写真、イラストなどの個々の情報は、著作権の対象となります。また、市公式Webサイト全体も編集著作物として著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/ichikawa-yosansho-r6/8731.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ichikawa.lg.jp/uploaded/attachment/8731.pdf",
+    "license": "市公式Webサイトに掲載されている文章、写真、イラストなどの個々の情報は、著作権の対象となります。また、市公式Webサイト全体も編集著作物として著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/ichikawa-yosansho-r5/5364.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ichikawa.lg.jp/uploaded/attachment/5364.pdf",
+    "license": "市公式Webサイトに掲載されている文章、写真、イラストなどの個々の情報は、著作権の対象となります。また、市公式Webサイト全体も編集著作物として著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/ichikawa-yosansho-r4/5331.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ichikawa.lg.jp/uploaded/attachment/5331.pdf",
+    "license": "市公式Webサイトに掲載されている文章、写真、イラストなどの個々の情報は、著作権の対象となります。また、市公式Webサイト全体も編集著作物として著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/ichikawa-yosansho-r3/8783.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ichikawa.lg.jp/uploaded/attachment/8783.pdf",
+    "license": "市公式Webサイトに掲載されている文章、写真、イラストなどの個々の情報は、著作権の対象となります。また、市公式Webサイト全体も編集著作物として著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
   }
 };
