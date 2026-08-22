@@ -2000,6 +2000,120 @@
       "checkedAt": "2026-07-25T09:59:01.509Z"
     },
     {
+      "sourceId": "ichikawa-yosansho-r3",
+      "url": "https://www.city.ichikawa.lg.jp/page/4121.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260822130944/https://www.city.ichikawa.lg.jp/page/4121.html",
+      "waybackTimestamp": "20260822130944",
+      "checkedAt": "2026-08-22T13:30:30.225Z"
+    },
+    {
+      "sourceId": "ichikawa-yosansho-r3",
+      "url": "https://www.city.ichikawa.lg.jp/uploaded/attachment/8783.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260729001737/https://www.city.ichikawa.lg.jp/uploaded/attachment/8783.pdf",
+      "waybackTimestamp": "20260729001737",
+      "checkedAt": "2026-08-22T13:30:20.810Z",
+      "sha256Match": true,
+      "waybackBytes": 2297814,
+      "rawSha256": "2de05749f0cfaee479a23abce2b5bcd5782293ae8abf5facfba702b07b52e444"
+    },
+    {
+      "sourceId": "ichikawa-yosansho-r4",
+      "url": "https://www.city.ichikawa.lg.jp/page/4121.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260822130944/https://www.city.ichikawa.lg.jp/page/4121.html",
+      "waybackTimestamp": "20260822130944",
+      "checkedAt": "2026-08-22T13:30:14.969Z"
+    },
+    {
+      "sourceId": "ichikawa-yosansho-r4",
+      "url": "https://www.city.ichikawa.lg.jp/uploaded/attachment/5331.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260729001643/https://www.city.ichikawa.lg.jp/uploaded/attachment/5331.pdf",
+      "waybackTimestamp": "20260729001643",
+      "checkedAt": "2026-08-22T13:29:57.701Z",
+      "sha256Match": true,
+      "waybackBytes": 2322826,
+      "rawSha256": "15489e912d24332bcb3ef6a298fe6798308a003cc78945db0830dd0a385f0723"
+    },
+    {
+      "sourceId": "ichikawa-yosansho-r5",
+      "url": "https://www.city.ichikawa.lg.jp/page/4121.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260822130944/https://www.city.ichikawa.lg.jp/page/4121.html",
+      "waybackTimestamp": "20260822130944",
+      "checkedAt": "2026-08-22T13:29:51.728Z"
+    },
+    {
+      "sourceId": "ichikawa-yosansho-r5",
+      "url": "https://www.city.ichikawa.lg.jp/uploaded/attachment/5364.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260729001730/https://www.city.ichikawa.lg.jp/uploaded/attachment/5364.pdf",
+      "waybackTimestamp": "20260729001730",
+      "checkedAt": "2026-08-22T13:29:42.562Z",
+      "sha256Match": true,
+      "waybackBytes": 2369102,
+      "rawSha256": "834959bb3658a4a7b6d19120dd2d0cf981e2e21ff40c377a8dc4e3d521e9013a"
+    },
+    {
+      "sourceId": "ichikawa-yosansho-r6",
+      "url": "https://www.city.ichikawa.lg.jp/page/4121.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260822130944/https://www.city.ichikawa.lg.jp/page/4121.html",
+      "waybackTimestamp": "20260822130944",
+      "checkedAt": "2026-08-22T13:29:38.261Z"
+    },
+    {
+      "sourceId": "ichikawa-yosansho-r6",
+      "url": "https://www.city.ichikawa.lg.jp/uploaded/attachment/8731.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260729001736/https://www.city.ichikawa.lg.jp/uploaded/attachment/8731.pdf",
+      "waybackTimestamp": "20260729001736",
+      "checkedAt": "2026-08-22T13:29:16.763Z",
+      "sha256Match": true,
+      "waybackBytes": 3081891,
+      "rawSha256": "7a447c18c13df595322f1fd039366dc944adf7fdd08948eba3ff152af169efd9"
+    },
+    {
+      "sourceId": "ichikawa-yosansho-r7",
+      "url": "https://www.city.ichikawa.lg.jp/page/4121.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260822130944/https://www.city.ichikawa.lg.jp/page/4121.html",
+      "waybackTimestamp": "20260822130944",
+      "checkedAt": "2026-08-22T13:29:05.254Z"
+    },
+    {
+      "sourceId": "ichikawa-yosansho-r7",
+      "url": "https://www.city.ichikawa.lg.jp/uploaded/attachment/5288.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260729001648/https://www.city.ichikawa.lg.jp/uploaded/attachment/5288.pdf",
+      "waybackTimestamp": "20260729001648",
+      "checkedAt": "2026-08-22T13:28:48.922Z",
+      "sha256Match": true,
+      "waybackBytes": 2831205,
+      "rawSha256": "d4252e79dd569b5c6ba9ac7ab8fb10086da3586e3665e3e255e9286eddf4018f"
+    },
+    {
+      "sourceId": "ichikawa-yosansho-r8",
+      "url": "https://www.city.ichikawa.lg.jp/page/3174.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260729001655/https://www.city.ichikawa.lg.jp/page/3174.html",
+      "waybackTimestamp": "20260729001655",
+      "checkedAt": "2026-08-22T13:27:04.747Z"
+    },
+    {
+      "sourceId": "ichikawa-yosansho-r8",
+      "url": "https://www.city.ichikawa.lg.jp/uploaded/attachment/41372.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260729033736/https://www.city.ichikawa.lg.jp/uploaded/attachment/41372.pdf",
+      "waybackTimestamp": "20260729033736",
+      "checkedAt": "2026-08-22T13:26:57.640Z",
+      "sha256Match": true,
+      "waybackBytes": 3096061,
+      "rawSha256": "f1071dd2c9021665c85fc35ab8153f6ce3285b07be27a246c4ac254b8f0c74f8"
+    },
+    {
       "sourceId": "ishikawa-ken-yosan-gaiyou-r8",
       "url": "https://www.pref.ishikawa.lg.jp/zaisei/yosan/r7/documents/r8_5ten.pdf",
       "kind": "file",
@@ -4210,6 +4324,367 @@
       "checkedAt": "2026-07-25T08:56:01.132Z",
       "sha256Match": true,
       "waybackBytes": 103602
+    },
+    {
+      "sourceId": "matsudo-sankouhyou-h28",
+      "url": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/sankouhyou_H28.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20251008222437/https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/sankouhyou_H28.pdf",
+      "waybackTimestamp": "20251008222437",
+      "checkedAt": "2026-08-22T12:49:45.299Z",
+      "sha256Match": true,
+      "waybackBytes": 1417477,
+      "rawSha256": "8f30fa53b2604a4d68f44bd4cabbc82370d06ed5f721608d5d509feb736753f1"
+    },
+    {
+      "sourceId": "matsudo-sankouhyou-h28",
+      "url": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260822124211/https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.html",
+      "waybackTimestamp": "20260822124211",
+      "checkedAt": "2026-08-22T12:50:02.767Z"
+    },
+    {
+      "sourceId": "matsudo-sankouhyou-h29",
+      "url": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/sankouhyou_H29.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20251008225632/https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/sankouhyou_H29.pdf",
+      "waybackTimestamp": "20251008225632",
+      "checkedAt": "2026-08-22T12:49:10.619Z",
+      "sha256Match": true,
+      "waybackBytes": 1791404,
+      "rawSha256": "40433933875af52905e458628be232c2b6b49706cc3b30a2161814522684df68"
+    },
+    {
+      "sourceId": "matsudo-sankouhyou-h29",
+      "url": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260822124211/https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.html",
+      "waybackTimestamp": "20260822124211",
+      "checkedAt": "2026-08-22T12:49:39.966Z"
+    },
+    {
+      "sourceId": "matsudo-sankouhyou-h30",
+      "url": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/sankouhyou_H30.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20251008011446/https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/sankouhyou_H30.pdf",
+      "waybackTimestamp": "20251008011446",
+      "checkedAt": "2026-08-22T12:48:44.670Z",
+      "sha256Match": true,
+      "waybackBytes": 1730289,
+      "rawSha256": "ea954afcab471e7e129f24c2d83b15a72fd04161ee7ae6a782816baf00c6e446"
+    },
+    {
+      "sourceId": "matsudo-sankouhyou-h30",
+      "url": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260822124211/https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.html",
+      "waybackTimestamp": "20260822124211",
+      "checkedAt": "2026-08-22T12:48:50.564Z"
+    },
+    {
+      "sourceId": "matsudo-sankouhyou-h31",
+      "url": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/sankouhyou_H31.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20251007235559/https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/sankouhyou_H31.pdf",
+      "waybackTimestamp": "20251007235559",
+      "checkedAt": "2026-08-22T12:48:05.684Z",
+      "sha256Match": true,
+      "waybackBytes": 2172232,
+      "rawSha256": "7a3e67a5a69f1ae7d518c04f8c5a83fa9612a9fba1502adf4b13d46049112e82"
+    },
+    {
+      "sourceId": "matsudo-sankouhyou-h31",
+      "url": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260822124211/https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.html",
+      "waybackTimestamp": "20260822124211",
+      "checkedAt": "2026-08-22T12:48:19.444Z"
+    },
+    {
+      "sourceId": "matsudo-sankouhyou-r2",
+      "url": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/sankouhyou_R2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20251008010615/https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/sankouhyou_R2.pdf",
+      "waybackTimestamp": "20251008010615",
+      "checkedAt": "2026-08-22T12:47:15.564Z",
+      "sha256Match": true,
+      "waybackBytes": 1852197,
+      "rawSha256": "5209bcfba8ec00d3e6bc33909f7b30337f386e71ce1e6a0d4982c6795da9ba3c"
+    },
+    {
+      "sourceId": "matsudo-sankouhyou-r2",
+      "url": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260822124211/https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.html",
+      "waybackTimestamp": "20260822124211",
+      "checkedAt": "2026-08-22T12:47:54.111Z"
+    },
+    {
+      "sourceId": "matsudo-sankouhyou-r3",
+      "url": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/sankouhyou_R3.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20251008222146/https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/sankouhyou_R3.pdf",
+      "waybackTimestamp": "20251008222146",
+      "checkedAt": "2026-08-22T12:46:37.501Z",
+      "sha256Match": true,
+      "waybackBytes": 2027853,
+      "rawSha256": "821e77037198b83f808910a657d2eb5a0ede5208c9728c70c598aa8268d0721c"
+    },
+    {
+      "sourceId": "matsudo-sankouhyou-r3",
+      "url": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260822124211/https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.html",
+      "waybackTimestamp": "20260822124211",
+      "checkedAt": "2026-08-22T12:46:58.139Z"
+    },
+    {
+      "sourceId": "matsudo-sankouhyou-r4",
+      "url": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/sankouhyou_R4.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20251007233824/https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/sankouhyou_R4.pdf",
+      "waybackTimestamp": "20251007233824",
+      "checkedAt": "2026-08-22T12:45:14.774Z",
+      "sha256Match": true,
+      "waybackBytes": 1805013,
+      "rawSha256": "ed2e113abb8a0e1ff5df8378f811115fec775712be07340855a6bb8447b85d7e"
+    },
+    {
+      "sourceId": "matsudo-sankouhyou-r4",
+      "url": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260822124211/https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.html",
+      "waybackTimestamp": "20260822124211",
+      "checkedAt": "2026-08-22T12:45:45.306Z"
+    },
+    {
+      "sourceId": "matsudo-sankouhyou-r5",
+      "url": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/sankouhyou_R5.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260822124126/https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/sankouhyou_R5.pdf",
+      "waybackTimestamp": "20260822124126",
+      "checkedAt": "2026-08-22T12:42:01.624Z",
+      "sha256Match": true,
+      "waybackBytes": 1918592,
+      "rawSha256": "135061b70fa52d5dd4e9579e030576690f66dcb024742cda6b5ddaf2ee2b5330"
+    },
+    {
+      "sourceId": "matsudo-sankouhyou-r5",
+      "url": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260822124211/https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.html",
+      "waybackTimestamp": "20260822124211",
+      "checkedAt": "2026-08-22T12:45:05.889Z"
+    },
+    {
+      "sourceId": "matsudo-sankouhyou-r6",
+      "url": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/3_sankouhyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20251008000352/https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/3_sankouhyou.pdf",
+      "waybackTimestamp": "20251008000352",
+      "checkedAt": "2026-08-22T13:32:31.472Z",
+      "sha256Match": true,
+      "waybackBytes": 2475685,
+      "rawSha256": "01c8a1d856e90bfb919c5210716165c22c8c50f3aabd22719e440421a7ffab20"
+    },
+    {
+      "sourceId": "matsudo-sankouhyou-r6",
+      "url": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260822124211/https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.html",
+      "waybackTimestamp": "20260822124211",
+      "checkedAt": "2026-08-22T13:33:13.661Z"
+    },
+    {
+      "sourceId": "matsudo-sankouhyou-r7",
+      "url": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/07_sankouhyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20251008221042/https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/07_sankouhyou.pdf",
+      "waybackTimestamp": "20251008221042",
+      "checkedAt": "2026-08-22T13:31:41.092Z",
+      "sha256Match": true,
+      "waybackBytes": 1833447,
+      "rawSha256": "72926eacea3245294cb3f20289039412e3942bcf7504de32a844b174a1d744e2"
+    },
+    {
+      "sourceId": "matsudo-sankouhyou-r7",
+      "url": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260822124211/https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.html",
+      "waybackTimestamp": "20260822124211",
+      "checkedAt": "2026-08-22T13:32:22.357Z"
+    },
+    {
+      "sourceId": "matsudo-yosan-setsumeisho-r8",
+      "url": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/R8setsumeisho.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260822123804/https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/R8setsumeisho.pdf",
+      "waybackTimestamp": "20260822123804",
+      "checkedAt": "2026-08-22T13:31:09.198Z",
+      "sha256Match": true,
+      "waybackBytes": 13689834,
+      "rawSha256": "60403c86273dd139c0d1ea39af2dab4fd8067c30c1ac9d741c3d57f8ac42add1"
+    },
+    {
+      "sourceId": "matsudo-yosan-setsumeisho-r8",
+      "url": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260822124211/https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.html",
+      "waybackTimestamp": "20260822124211",
+      "checkedAt": "2026-08-22T13:31:31.772Z"
+    },
+    {
+      "sourceId": "matsuyama-yosan-soukatsu-h31",
+      "url": "https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/2019_tosho_yosan.files/05_H31_ippan_soukatsuhyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260608164500/https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/2019_tosho_yosan.files/05_H31_ippan_soukatsuhyo.pdf",
+      "waybackTimestamp": "20260608164500",
+      "checkedAt": "2026-08-22T13:05:47.188Z",
+      "sha256Match": true,
+      "waybackBytes": 159160,
+      "rawSha256": "9c0b17054a1d4bd54a087b1b838233e6b211534ab8a892c2a5529fdba8db2dc3"
+    },
+    {
+      "sourceId": "matsuyama-yosan-soukatsu-h31",
+      "url": "https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/2019_tosho_yosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260510055436/https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/2019_tosho_yosan.html",
+      "waybackTimestamp": "20260510055436",
+      "checkedAt": "2026-08-22T13:05:54.073Z"
+    },
+    {
+      "sourceId": "matsuyama-yosan-soukatsu-r2",
+      "url": "https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/2020_tosho_yosan.files/05_R2_ippan_soukatsuhyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260822130432/https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/2020_tosho_yosan.files/05_R2_ippan_soukatsuhyo.pdf",
+      "waybackTimestamp": "20260822130432",
+      "checkedAt": "2026-08-22T13:04:56.490Z",
+      "sha256Match": true,
+      "waybackBytes": 158074,
+      "rawSha256": "f3f3fc180f3bbeccaf81d4366ee7bbd2a0802c105048f9cf201b79641bbea6b1"
+    },
+    {
+      "sourceId": "matsuyama-yosan-soukatsu-r2",
+      "url": "https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/2020_tosho_yosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260307032120/https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/2020_tosho_yosan.html",
+      "waybackTimestamp": "20260307032120",
+      "checkedAt": "2026-08-22T13:05:08.542Z"
+    },
+    {
+      "sourceId": "matsuyama-yosan-soukatsu-r3",
+      "url": "https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/2021_tosho_yosan.files/07_R3_ippan_soukatsuhyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260822130152/https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/2021_tosho_yosan.files/07_R3_ippan_soukatsuhyo.pdf",
+      "waybackTimestamp": "20260822130152",
+      "checkedAt": "2026-08-22T13:02:13.958Z",
+      "sha256Match": true,
+      "waybackBytes": 177463,
+      "rawSha256": "730a752016bf3bcea30fd47d9aea501d895ea8df02965a2a2183776d6db6ea18"
+    },
+    {
+      "sourceId": "matsuyama-yosan-soukatsu-r3",
+      "url": "https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/2021_tosho_yosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260822130327/https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/2021_tosho_yosan.html",
+      "waybackTimestamp": "20260822130327",
+      "checkedAt": "2026-08-22T13:04:05.457Z"
+    },
+    {
+      "sourceId": "matsuyama-yosan-soukatsu-r4",
+      "url": "https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/2022_tosho_yosan.files/07_R4_ippan_soukatsuhyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260822130010/https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/2022_tosho_yosan.files/07_R4_ippan_soukatsuhyo.pdf",
+      "waybackTimestamp": "20260822130010",
+      "checkedAt": "2026-08-22T13:00:33.797Z",
+      "sha256Match": true,
+      "waybackBytes": 154177,
+      "rawSha256": "01ca38a543087a5afe5f50311ed0064da563b930dec9524326d15f9057a61751"
+    },
+    {
+      "sourceId": "matsuyama-yosan-soukatsu-r4",
+      "url": "https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/2022_tosho_yosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260218003354/https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/2022_tosho_yosan.html",
+      "waybackTimestamp": "20260218003354",
+      "checkedAt": "2026-08-22T13:01:02.010Z"
+    },
+    {
+      "sourceId": "matsuyama-yosan-soukatsu-r5",
+      "url": "https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/2023_tosho_yosan.files/07_R5_ippan_soukatsuhyo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250807105508/https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/2023_tosho_yosan.files/07_R5_ippan_soukatsuhyo.pdf",
+      "waybackTimestamp": "20250807105508",
+      "checkedAt": "2026-08-22T12:58:18.337Z",
+      "sha256Match": true,
+      "waybackBytes": 149795,
+      "rawSha256": "cd1ce41d2d4f0fa8ab75a15c08c6c24a6701625f857bf163369f2668d6d9c30f"
+    },
+    {
+      "sourceId": "matsuyama-yosan-soukatsu-r5",
+      "url": "https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/2023_tosho_yosan.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260822125917/https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/2023_tosho_yosan.html",
+      "waybackTimestamp": "20260822125917",
+      "checkedAt": "2026-08-22T12:59:52.085Z"
+    },
+    {
+      "sourceId": "matsuyama-yosan-soukatsu-r6",
+      "url": "https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/R06tousyo.files/06_R6_ippan_mokutekibetu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260822125440/https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/R06tousyo.files/06_R6_ippan_mokutekibetu.pdf",
+      "waybackTimestamp": "20260822125440",
+      "checkedAt": "2026-08-22T12:56:08.707Z",
+      "sha256Match": true,
+      "waybackBytes": 256474,
+      "rawSha256": "28c12eccfe05bfd7008e60b6ac8b7a4592157d87922610d662235fa60cd6048a"
+    },
+    {
+      "sourceId": "matsuyama-yosan-soukatsu-r6",
+      "url": "https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/R06tousyo.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260822125630/https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/R06tousyo.html",
+      "waybackTimestamp": "20260822125630",
+      "checkedAt": "2026-08-22T12:57:33.574Z"
+    },
+    {
+      "sourceId": "matsuyama-yosan-soukatsu-r7",
+      "url": "https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/14591120250213.files/06_R7_ippan_mokutekibetu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250423120919/https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/14591120250213.files/06_R7_ippan_mokutekibetu.pdf",
+      "waybackTimestamp": "20250423120919",
+      "checkedAt": "2026-08-22T12:53:47.209Z",
+      "sha256Match": true,
+      "waybackBytes": 309467,
+      "rawSha256": "45f1ceb66d17248c1b744228c3754a03f64e99ed3d7ef03852aa162ce040fe6e"
+    },
+    {
+      "sourceId": "matsuyama-yosan-soukatsu-r7",
+      "url": "https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/14591120250213.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260410201225/https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/14591120250213.html",
+      "waybackTimestamp": "20260410201225",
+      "checkedAt": "2026-08-22T12:53:57.463Z"
+    },
+    {
+      "sourceId": "matsuyama-yosan-soukatsu-r8",
+      "url": "https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/R8tousyo.files/06_R8_ippan_mokutekibetu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260822125012/https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/R8tousyo.files/06_R8_ippan_mokutekibetu.pdf",
+      "waybackTimestamp": "20260822125012",
+      "checkedAt": "2026-08-22T12:50:52.380Z",
+      "sha256Match": true,
+      "waybackBytes": 288532,
+      "rawSha256": "81c375a51b16820107b8bd4ac2a058ac107bcb562a3eb735fd0f8b082d17b83a"
+    },
+    {
+      "sourceId": "matsuyama-yosan-soukatsu-r8",
+      "url": "https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/R8tousyo.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260822125225/https://www.city.matsuyama.ehime.jp/shisei/zaisei/yosan/R8tousyo.html",
+      "waybackTimestamp": "20260822125225",
+      "checkedAt": "2026-08-22T12:52:59.626Z"
     },
     {
       "sourceId": "meguro-yosanan-r2",

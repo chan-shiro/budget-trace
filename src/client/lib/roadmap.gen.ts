@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 104,
+  "budgetCount": 107,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 513,
-  "fileCount": 1672,
-  "archivedCount": 481,
+  "sourceCount": 538,
+  "fileCount": 1697,
+  "archivedCount": 506,
   "licenseOpen": 70,
-  "licensePermission": 382,
+  "licensePermission": 407,
   "licenseUnverified": 61,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -87,6 +87,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H27〜R8（12年度）"
     },
     {
+      "name": "松戸市",
+      "code": "122076",
+      "years": 11,
+      "range": "H28〜R8（11年度）"
+    },
+    {
       "name": "江東区",
       "code": "131083",
       "years": 11,
@@ -121,6 +127,12 @@ export const ROADMAP_PROGRESS = {
       "code": "122041",
       "years": 8,
       "range": "R1〜R8（8年度）"
+    },
+    {
+      "name": "松山市",
+      "code": "382019",
+      "years": 8,
+      "range": "H31〜R8（8年度）"
     },
     {
       "name": "鹿児島市",
@@ -205,6 +217,12 @@ export const ROADMAP_PROGRESS = {
       "code": "401307",
       "years": 7,
       "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "市川市",
+      "code": "122033",
+      "years": 6,
+      "range": "R3〜R8（6年度）"
     },
     {
       "name": "千代田区",

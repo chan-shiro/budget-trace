@@ -1,0 +1,12 @@
+{
+  "sourceId": "matsudo-sankouhyou-h30",
+  "files": [
+    {
+      "filename": "sankouhyou_H30.pdf",
+      "sha256": "ea954afcab471e7e129f24c2d83b15a72fd04161ee7ae6a782816baf00c6e446",
+      "bytes": 1730289,
+      "fetchedAt": "2026-08-22T12:35:47.658Z",
+      "fetchedFrom": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/sankouhyou_H30.pdf"
+    }
+  ]
+}

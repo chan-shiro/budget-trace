@@ -2273,6 +2273,17 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4"] as const).map((fy) => ({
       srcId: `himeji-yosan-soukatsu-${fy}`, muniCode: "282014", muniName: "姫路市", prefName: "兵庫県", isPref: false,
     })),
+    // 中核市 第2弾（2026-08-22・loop.md の第2巡）。宇都宮・西宮は偵察したがパーサ改修が要るため未収録（unrecordable.ts）。
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28"] as const).map((fy) => ({
+      srcId: fy === "r8" ? "matsudo-yosan-setsumeisho-r8" : `matsudo-sankouhyou-${fy}`,
+      muniCode: "122076", muniName: "松戸市", prefName: "千葉県", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31"] as const).map((fy) => ({
+      srcId: `matsuyama-yosan-soukatsu-${fy}`, muniCode: "382019", muniName: "松山市", prefName: "愛媛県", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
+      srcId: `ichikawa-yosansho-${fy}`, muniCode: "122033", muniName: "市川市", prefName: "千葉県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。

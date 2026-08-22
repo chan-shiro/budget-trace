@@ -1,0 +1,12 @@
+{
+  "sourceId": "matsudo-sankouhyou-r2",
+  "files": [
+    {
+      "filename": "sankouhyou_R2.pdf",
+      "sha256": "5209bcfba8ec00d3e6bc33909f7b30337f386e71ce1e6a0d4982c6795da9ba3c",
+      "bytes": 1852197,
+      "fetchedAt": "2026-08-22T12:35:46.173Z",
+      "fetchedFrom": "https://www.city.matsudo.chiba.jp/shisei/zai-yosan-kessan/yosan.files/sankouhyou_R2.pdf"
+    }
+  ]
+}
