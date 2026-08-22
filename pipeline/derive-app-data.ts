@@ -2309,6 +2309,22 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
       srcId: `kurashiki-yosan-gaiyo-${fy}`, muniCode: "332020", muniName: "倉敷市", prefName: "岡山県", isPref: false,
     })),
+    // 中核市 第4弾（2026-08-23・loop.md の第5巡）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28", "h27", "h26", "h25", "h24", "h23", "h22", "h21"] as const).map((fy) => ({
+      srcId: `takamatsu-yosan-gaiyou-${fy}`, muniCode: "372013", muniName: "高松市", prefName: "香川県", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `fujisawa-yosansho-${fy}`, muniCode: "142051", muniName: "藤沢市", prefName: "神奈川県", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `kashiwa-yosan-setsumeisho-${fy}`, muniCode: "122173", muniName: "柏市", prefName: "千葉県", isPref: false,
+    })),
+    // 町田は R8 のみ（R7 以前は3行組みで throw＝unrecordable.ts）
+    { srcId: "machida-yosansho-r8", muniCode: "132098", muniName: "町田市", prefName: "東京都", isPref: false },
+    // 金沢は R5・R4 のみ（R8〜R6・H30 はスキャン／図形化・あらましは歳入が集約12区分＝unrecordable.ts）
+    ...(["r5", "r4"] as const).map((fy) => ({
+      srcId: `kanazawa-yosangaiyou-${fy}`, muniCode: "172014", muniName: "金沢市", prefName: "石川県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。
