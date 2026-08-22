@@ -6205,11 +6205,22 @@
     },
     {
       "sourceId": "nishinomiya-yosan-gaiyou-r8",
+      "url": "https://www.nishi.or.jp/shisei/zaiseijoho/yosan/R8yosan.files/R8yosannogaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260822141754/https://www.nishi.or.jp/shisei/zaiseijoho/yosan/R8yosan.files/R8yosannogaiyou.pdf",
+      "waybackTimestamp": "20260822141754",
+      "checkedAt": "2026-08-22T14:18:30.149Z",
+      "sha256Match": true,
+      "waybackBytes": 2403867,
+      "rawSha256": "e57eee991c243b2bfd16e931815a8d28a1d64f018ce60969149dc2cba4bbc0c4"
+    },
+    {
+      "sourceId": "nishinomiya-yosan-gaiyou-r8",
       "url": "https://www.nishi.or.jp/shisei/zaiseijoho/yosan/R8yosan.html",
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260316025049/https://www.nishi.or.jp/shisei/zaiseijoho/yosan/R8yosan.html",
       "waybackTimestamp": "20260316025049",
-      "checkedAt": "2026-08-22T14:17:45.953Z"
+      "checkedAt": "2026-08-22T14:18:40.161Z"
     },
     {
       "sourceId": "numazu-yosansho-r7",
@@ -17148,11 +17159,22 @@
     },
     {
       "sourceId": "utsunomiya-yosan-taikou-r8",
+      "url": "https://www.city.utsunomiya.lg.jp/_res/projects/default_project/_page_/001/010/664/r8yosantaikou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260822141548/https://www.city.utsunomiya.lg.jp/_res/projects/default_project/_page_/001/010/664/r8yosantaikou.pdf",
+      "waybackTimestamp": "20260822141548",
+      "checkedAt": "2026-08-22T14:18:08.302Z",
+      "sha256Match": true,
+      "waybackBytes": 1925828,
+      "rawSha256": "e047b464d3ec5f69847fccf9058d7d0bbcce838249c32deb500faad7ad0bde1b"
+    },
+    {
+      "sourceId": "utsunomiya-yosan-taikou-r8",
       "url": "https://www.city.utsunomiya.lg.jp/shisei/johokokai/zaisei/1010664.html",
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260822141554/https://www.city.utsunomiya.lg.jp/shisei/johokokai/zaisei/1010664.html",
       "waybackTimestamp": "20260822141554",
-      "checkedAt": "2026-08-22T14:16:58.179Z"
+      "checkedAt": "2026-08-22T14:18:17.729Z"
     },
     {
       "sourceId": "wakayama-ken-yosan-shiryo-r8",
