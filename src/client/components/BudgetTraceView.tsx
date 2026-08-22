@@ -1503,7 +1503,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                       <span style={S(`font-family:'IBM Plex Mono',monospace; text-align:right; font-weight:600; color:${cr.deltaFg};`)}>{cr.deltaFmt}</span>
                     </HoverBox>
                   ))}
-                  <p style={S("margin:12px 2px 0; font-size:12px; color:#5C6B77;")}>増減は当初予算同士の比較。行をクリックすると款の内訳へ移動します。</p>
+                  <p style={S("margin:12px 2px 0; font-size:12px; color:#5C6B77;")}>{v.compFootNote}</p>
                 </section>
               </div>
             )}

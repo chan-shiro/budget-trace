@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 109,
+  "budgetCount": 114,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 560,
-  "fileCount": 1719,
-  "archivedCount": 528,
+  "sourceCount": 600,
+  "fileCount": 1759,
+  "archivedCount": 568,
   "licenseOpen": 72,
-  "licensePermission": 427,
+  "licensePermission": 467,
   "licenseUnverified": 61,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -73,6 +73,12 @@ export const ROADMAP_PROGRESS = {
       "code": "131172",
       "years": 14,
       "range": "H24〜R8（14年度）"
+    },
+    {
+      "name": "尼崎市",
+      "code": "282022",
+      "years": 14,
+      "range": "H25〜R8（14年度）"
     },
     {
       "name": "台東区",
@@ -129,10 +135,22 @@ export const ROADMAP_PROGRESS = {
       "range": "H29〜R8（10年度）"
     },
     {
+      "name": "大分市",
+      "code": "442011",
+      "years": 10,
+      "range": "H29〜R8（10年度）"
+    },
+    {
       "name": "豊島区",
       "code": "131164",
       "years": 9,
       "range": "H29〜R8（9年度）"
+    },
+    {
+      "name": "福山市",
+      "code": "342076",
+      "years": 9,
+      "range": "H30〜R8（9年度）"
     },
     {
       "name": "船橋市",
@@ -279,6 +297,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R4〜R8（5年度）"
     },
     {
+      "name": "倉敷市",
+      "code": "332020",
+      "years": 5,
+      "range": "R3〜R8（5年度）"
+    },
+    {
       "name": "渋谷区",
       "code": "131130",
       "years": 4,
@@ -323,6 +347,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "三重県",
       "code": "240001",
+      "years": 2,
+      "range": "R7〜R8（2年度）"
+    },
+    {
+      "name": "東大阪市",
+      "code": "272272",
       "years": 2,
       "range": "R7〜R8（2年度）"
     }

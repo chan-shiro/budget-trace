@@ -2291,6 +2291,24 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "r1", "h30", "h29"] as const).map((fy) => ({
       srcId: `nishinomiya-yosan-gaiyou-${fy}`, muniCode: "282049", muniName: "西宮市", prefName: "兵庫県", isPref: false,
     })),
+    // 中核市 第3弾（2026-08-22・loop.md の第4巡）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29"] as const).map((fy) => ({
+      srcId: `oita-shi-yosan-gaiyou-${fy}`, muniCode: "442011", muniName: "大分市", prefName: "大分県", isPref: false,
+    })),
+    // 東大阪は R8・R7 のみ（R6〜R4 は総括が図形化・R3 以前は款別資料なし＝unrecordable.ts）
+    ...(["r8", "r7"] as const).map((fy) => ({
+      srcId: `higashiosaka-yosansho-${fy}`, muniCode: "272272", muniName: "東大阪市", prefName: "大阪府", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28", "h27", "h26", "h25"] as const).map((fy) => ({
+      srcId: `amagasaki-yosan-gaiyou-${fy}`, muniCode: "282022", muniName: "尼崎市", prefName: "兵庫県", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "r1", "h30"] as const).map((fy) => ({
+      srcId: `fukuyama-yosan-sankou-${fy}`, muniCode: "342076", muniName: "福山市", prefName: "広島県", isPref: false,
+    })),
+    // 倉敷は R7 を除く（歳出が3行組み＝unrecordable.ts）
+    ...(["r8", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
+      srcId: `kurashiki-yosan-gaiyo-${fy}`, muniCode: "332020", muniName: "倉敷市", prefName: "岡山県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。

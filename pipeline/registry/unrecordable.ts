@@ -77,6 +77,47 @@ export interface UnrecordableRecord {
 }
 
 export const UNRECORDABLE: UnrecordableRecord[] = [
+  // ==== 中核市 第3弾（2026-08-22・loop.md 第4巡・docs §13-4）==================================
+  {
+    code: "332020", name: "倉敷市", dataset: "budget", fiscalYears: ["R7"],
+    categories: ["parser-unsupported"],
+    reason:
+      "当初予算概要版 p.5 の歳出（目的別）だけが「前年度額の行 → 款名＋当年度額の行 → 括弧書きの補正後比較の行」の3行組みで、" +
+      "款行が整数1個・前年度行が名前なし整数1個になり、既存パーサでは款行が1件も取れない（歳入 p.3 は読める）。" +
+      "他の年度（R8・R6〜R3）は同じ資料の通常の1行組みで収録済み。",
+    url: "https://www.city.kurashiki.okayama.jp/cityinfo/finance/1011778/1015416.html",
+    checkedOn: "2026-08-22", ref: "docs/data-sources.md §13-4",
+  },
+  {
+    code: "272272", name: "東大阪市", dataset: "budget", fiscalYears: ["R6", "R5", "R4"],
+    categories: ["scanned-image"],
+    reason:
+      "一般会計予算書の事項別明細書 総括（R6/R5/R4 とも p.17〜）は本文がアウトライン化された図形で、" +
+      "PDF の内容ストリームがパス（m/l/c）だけ・文字は各ページのノンブル1個・画像0枚＝テキスト層が無く決定的パース不可。" +
+      "R4 の予算書は現行サイトから消えており WARP（2024-08）にしか無い。R3 以前は予算書が未掲載で、" +
+      "「予算の概要」は性質別・財源別の表のみ＝款別資料が存在しない。R8・R7 は同じ資料で収録済み。",
+    url: "https://www.city.higashiosaka.lg.jp/0000000529.html",
+    checkedOn: "2026-08-22", ref: "docs/data-sources.md §13-4",
+  },
+  {
+    code: "272272", name: "東大阪市", dataset: "budget", fiscalYears: ["R3"],
+    categories: ["format-mismatch"],
+    reason:
+      "R3 以前は予算書（事項別明細書の総括）がウェブ未掲載で、掲載されている「予算の概要」は性質別・財源別の表のみ" +
+      "（市税・地方交付税など款名に似た行が並ぶが款別ではない）。R3 の概要は Wayback と WARP にも同じ構成で残っており、" +
+      "款別＋前年当初比較の資料が存在しない。R2 以前は未確認。",
+    url: "https://www.city.higashiosaka.lg.jp/0000000529.html",
+    checkedOn: "2026-08-22", ref: "docs/data-sources.md §13-4",
+  },
+  {
+    code: "442011", name: "大分市", dataset: "budget", fiscalYears: ["H28", "H27", "H26", "H25", "H24"],
+    categories: ["scanned-image", "broken-text-layer"],
+    reason:
+      "「当初予算（案）の概要」PDF が H28・H27・H24 は複合機スキャン（テキスト層なし）、H26・H25 は Canon の OCR で" +
+      "見出し〈歳入〉や金額が壊れている（「苗日」「∠ゝ 12,770,000」）。R8〜H29 は同じ資料で収録済み。",
+    url: "https://www.city.oita.oita.jp/shisejoho/kekakuzaise/shinozaise/yosan/index.html",
+    checkedOn: "2026-08-22", ref: "docs/data-sources.md §13-4",
+  },
   // ==== 中核市 第2弾（2026-08-22・loop.md 第2巡→第3巡・docs §13-3）=========================
   // 宇都宮・西宮の parser-unsupported は #226 の改修で収録できたため外した（第3巡）。残るのは原典側の事情だけ。
   {
