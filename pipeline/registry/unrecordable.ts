@@ -77,7 +77,7 @@ export interface UnrecordableRecord {
 }
 
 export const UNRECORDABLE: UnrecordableRecord[] = [
-  // ==== 中核市 第2弾（2026-08-22・loop.md 第2巡→第3巡・docs §13-2）=========================
+  // ==== 中核市 第2弾（2026-08-22・loop.md 第2巡→第3巡・docs §13-3）=========================
   // 宇都宮・西宮の parser-unsupported は #226 の改修で収録できたため外した（第3巡）。残るのは原典側の事情だけ。
   {
     code: "092011", name: "宇都宮市", dataset: "budget", fiscalYears: ["R3"],
