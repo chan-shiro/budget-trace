@@ -9528,5 +9528,113 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www4.city.kanazawa.lg.jp/material/files/group/16/R4zentai_040331.pdf",
     "license": "私的使用のための複製や引用など著作権法上認められた場合を除き、金沢市公式ホームページに掲載されている写真、イラスト、音声、動画、記事等は、無断で複製・転用することはできません。使用許諾は、必ずそれぞれのページを所管する担当課にご確認ください（担当課は、それぞれのページ下部に記載してあります）。",
     "target": "file"
+  },
+  "/sources/gifu-yosan-setsumeisho-r8/r8yosannsetumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.gifu.lg.jp/_res/projects/default_project/_page_/001/035/841/r8yosannsetumeisyo.pdf",
+    "license": "岐阜市公式ホームページに掲載されている写真、イラスト、音声、動画、記事等は、著作権法により保護されており、原則として著作権は、岐阜市に帰属します。岐阜市公式ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。また、一部の画像等の著作権については、原著作者が所有しています。私的使用のための複製や引用など著作権法上認められた場合を除き、岐阜市公式ホームページに掲載されている写真、イラスト、音声、動画、記事等は、無断で複製・転用することはできません。使用許諾は、必ずそれぞれのページを所管する担当課にご確認ください（担当課は、それぞれのページ下部に記載してあります）。",
+    "target": "file"
+  },
+  "/sources/gifu-yosan-setsumeisho-r7/r7yosannsetumeisho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.gifu.lg.jp/_res/projects/default_project/_page_/001/029/017/r7yosannsetumeisho.pdf",
+    "license": "岐阜市公式ホームページに掲載されている写真、イラスト、音声、動画、記事等は、著作権法により保護されており、原則として著作権は、岐阜市に帰属します。岐阜市公式ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。また、一部の画像等の著作権については、原著作者が所有しています。私的使用のための複製や引用など著作権法上認められた場合を除き、岐阜市公式ホームページに掲載されている写真、イラスト、音声、動画、記事等は、無断で複製・転用することはできません。使用許諾は、必ずそれぞれのページを所管する担当課にご確認ください（担当課は、それぞれのページ下部に記載してあります）。",
+    "target": "file"
+  },
+  "/sources/gifu-yosan-setsumeisho-r6/r6yosansetumeisho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.gifu.lg.jp/_res/projects/default_project/_page_/001/023/302/r6yosansetumeisho.pdf",
+    "license": "岐阜市公式ホームページに掲載されている写真、イラスト、音声、動画、記事等は、著作権法により保護されており、原則として著作権は、岐阜市に帰属します。岐阜市公式ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。また、一部の画像等の著作権については、原著作者が所有しています。私的使用のための複製や引用など著作権法上認められた場合を除き、岐阜市公式ホームページに掲載されている写真、イラスト、音声、動画、記事等は、無断で複製・転用することはできません。使用許諾は、必ずそれぞれのページを所管する担当課にご確認ください（担当課は、それぞれのページ下部に記載してあります）。",
+    "target": "file"
+  },
+  "/sources/miyazaki-shi-yosan-gaiyou-r8/04____4_________.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.miyazaki.miyazaki.jp/fs/8/7/2/0/7/6/_/04____4_________.pdf",
+    "license": "宮崎市ホームページに掲載しているすべてのコンテンツは、特別の断りがない限り原則として宮崎市が保有します。私的使用のための複製など著作権法上で認められている場合を除き、権利者の許可なく複製・転用することを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/miyazaki-shi-yosan-gaiyou-r7/832555.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.miyazaki.miyazaki.jp/fs/8/3/2/5/5/5/_/832555.pdf",
+    "license": "宮崎市ホームページに掲載しているすべてのコンテンツは、特別の断りがない限り原則として宮崎市が保有します。私的使用のための複製など著作権法上で認められている場合を除き、権利者の許可なく複製・転用することを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/miyazaki-shi-yosan-gaiyou-r6/785174.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.miyazaki.miyazaki.jp/fs/7/8/5/1/7/4/_/785174.pdf",
+    "license": "宮崎市ホームページに掲載しているすべてのコンテンツは、特別の断りがない限り原則として宮崎市が保有します。私的使用のための複製など著作権法上で認められている場合を除き、権利者の許可なく複製・転用することを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/miyazaki-shi-yosan-gaiyou-r5/747252.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.miyazaki.miyazaki.jp/fs/7/4/7/2/5/2/_/747252.pdf",
+    "license": "宮崎市ホームページに掲載しているすべてのコンテンツは、特別の断りがない限り原則として宮崎市が保有します。私的使用のための複製など著作権法上で認められている場合を除き、権利者の許可なく複製・転用することを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/miyazaki-shi-yosan-gaiyou-r4/675955.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.miyazaki.miyazaki.jp/fs/6/7/5/9/5/5/_/675955.pdf",
+    "license": "宮崎市ホームページに掲載しているすべてのコンテンツは、特別の断りがない限り原則として宮崎市が保有します。私的使用のための複製など著作権法上で認められている場合を除き、権利者の許可なく複製・転用することを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/miyazaki-shi-yosan-gaiyou-r3/514224.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.miyazaki.miyazaki.jp/fs/5/1/4/2/2/4/_/514224.pdf",
+    "license": "宮崎市ホームページに掲載しているすべてのコンテンツは、特別の断りがない限り原則として宮崎市が保有します。私的使用のための複製など著作権法上で認められている場合を除き、権利者の許可なく複製・転用することを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/miyazaki-shi-yosan-gaiyou-r2/368981.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.miyazaki.miyazaki.jp/fs/3/6/8/9/8/1/_/368981.pdf",
+    "license": "宮崎市ホームページに掲載しているすべてのコンテンツは、特別の断りがない限り原則として宮崎市が保有します。私的使用のための複製など著作権法上で認められている場合を除き、権利者の許可なく複製・転用することを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/toyonaka-kanbetsu-r8/r8giansankou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.toyonaka.osaka.jp/joho/zaisei/yosan/r8yosan.files/r8giansankou.pdf",
+    "license": "豊中市ホームページに掲載されている文章、写真、イラストなど個々の情報は、著作権の対象です。また、本市サイト全体も編集著作権として、著作権の対象になります。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
+  },
+  "/sources/toyonaka-kanbetsu-r7/r7giansankousiryou_0221.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.toyonaka.osaka.jp/joho/zaisei/yosan/reiwa7.files/r7giansankousiryou_0221.pdf",
+    "license": "豊中市ホームページに掲載されている文章、写真、イラストなど個々の情報は、著作権の対象です。また、本市サイト全体も編集著作権として、著作権の対象になります。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
+  },
+  "/sources/toyonaka-kanbetsu-r6/r6giansankousiryou_0226.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.toyonaka.osaka.jp/joho/zaisei/yosan/reiwa6yosan.files/r6giansankousiryou_0226.pdf",
+    "license": "豊中市ホームページに掲載されている文章、写真、イラストなど個々の情報は、著作権の対象です。また、本市サイト全体も編集著作権として、著作権の対象になります。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
+  },
+  "/sources/toyonaka-kanbetsu-r5/r5giansankoutousyoyosan_0224.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.toyonaka.osaka.jp/joho/zaisei/yosan/reiwa5yosan.files/r5giansankoutousyoyosan_0224.pdf",
+    "license": "豊中市ホームページに掲載されている文章、写真、イラストなど個々の情報は、著作権の対象です。また、本市サイト全体も編集著作権として、著作権の対象になります。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
+  },
+  "/sources/toyonaka-kanbetsu-r4/r4giansankou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.toyonaka.osaka.jp/joho/zaisei/yosan/reiwa4yosan.files/r4giansankou.pdf",
+    "license": "豊中市ホームページに掲載されている文章、写真、イラストなど個々の情報は、著作権の対象です。また、本市サイト全体も編集著作権として、著作権の対象になります。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
+  },
+  "/sources/toyonaka-kanbetsu-r3/giansankou01_0217.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.toyonaka.osaka.jp/joho/shigikai_anken/r3/r3sangatuteireikai.files/giansankou01_0217.pdf",
+    "license": "豊中市ホームページに掲載されている文章、写真、イラストなど個々の情報は、著作権の対象です。また、本市サイト全体も編集著作権として、著作権の対象になります。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
+  },
+  "/sources/toyonaka-kanbetsu-r1/310225kanbetsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.toyonaka.osaka.jp/joho/zaisei/yosan/reiwa1yosan.files/310225kanbetsu.pdf",
+    "license": "豊中市ホームページに掲載されている文章、写真、イラストなど個々の情報は、著作権の対象です。また、本市サイト全体も編集著作権として、著作権の対象になります。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
+  },
+  "/sources/toyonaka-kanbetsu-h30/300226kanbetsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.toyonaka.osaka.jp/joho/zaisei/yosan/heisei30yosan.files/300226kanbetsu.pdf",
+    "license": "豊中市ホームページに掲載されている文章、写真、イラストなど個々の情報は、著作権の対象です。また、本市サイト全体も編集著作権として、著作権の対象になります。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
   }
 };

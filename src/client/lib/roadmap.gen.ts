@@ -13,15 +13,15 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 119,
+  "budgetCount": 124,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 635,
-  "fileCount": 1794,
-  "archivedCount": 603,
-  "licenseOpen": 72,
-  "licensePermission": 502,
-  "licenseUnverified": 61,
+  "sourceCount": 670,
+  "fileCount": 1829,
+  "archivedCount": 638,
+  "licenseOpen": 75,
+  "licensePermission": 520,
+  "licenseUnverified": 75,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
   "kofuBudgetYears": 7,
@@ -99,6 +99,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H27〜R8（12年度）"
     },
     {
+      "name": "富山市",
+      "code": "162019",
+      "years": 12,
+      "range": "H27〜R8（12年度）"
+    },
+    {
       "name": "松戸市",
       "code": "122076",
       "years": 11,
@@ -163,6 +169,12 @@ export const ROADMAP_PROGRESS = {
       "code": "122041",
       "years": 8,
       "range": "R1〜R8（8年度）"
+    },
+    {
+      "name": "豊中市",
+      "code": "272035",
+      "years": 8,
+      "range": "H30〜R8（8年度）"
     },
     {
       "name": "松山市",
@@ -273,6 +285,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "宮崎市",
+      "code": "452017",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "市川市",
       "code": "122033",
       "years": 6,
@@ -299,6 +317,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "浜松市",
       "code": "221309",
+      "years": 5,
+      "range": "R4〜R8（5年度）"
+    },
+    {
+      "name": "豊田市",
+      "code": "232114",
       "years": 5,
       "range": "R4〜R8（5年度）"
     },
@@ -331,6 +355,12 @@ export const ROADMAP_PROGRESS = {
       "code": "131199",
       "years": 4,
       "range": "R5〜R8（4年度）"
+    },
+    {
+      "name": "岐阜市",
+      "code": "212016",
+      "years": 3,
+      "range": "R6〜R8（3年度）"
     },
     {
       "name": "静岡市",

@@ -77,6 +77,49 @@ export interface UnrecordableRecord {
 }
 
 export const UNRECORDABLE: UnrecordableRecord[] = [
+  // ==== 中核市 第5弾（2026-08-23・loop.md 第6巡・docs §13-6）==================================
+  {
+    code: "232114", name: "豊田市", dataset: "budget", fiscalYears: ["R3", "R2", "H31"],
+    categories: ["scanned-image"],
+    reason:
+      "当初予算関連資料・予算説明書とも CCITT スキャンで pdftotext が0〜43文字しか返さない（発行元からは削除済みで、" +
+      "Wayback とオープンデータカタログの写しも同一のスキャン）。H30〜H28 は Wayback にテキスト層つきで残り同じ設定で" +
+      "読めるが、R3・R2 が埋まらないので年度の鎖が切れる。R8〜R4 は同じ資料の健全な版で収録済み。",
+    url: "https://www.city.toyota.aichi.jp/shisei/yosan/1073321/1004776.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-6",
+  },
+  {
+    code: "272035", name: "豊中市", dataset: "budget", fiscalYears: ["R2"],
+    categories: ["scanned-image"],
+    reason:
+      "款別歳入歳出＋前年当初比較の資料がウェブに無い。年度ページが載せる予算書・予算説明書の総括は本文が CCITT スキャン画像で" +
+      "pdftotext がノンブルしか返さず、R3〜R8 と R1・H30 にある「各会計款別内訳」（議案参考資料／単体 PDF）は R2 だけ掲載が無い" +
+      "（予算ページ・議会の令和2年案件ページとも）。この欠落で年度間クロスチェーンが R3〜R8 と R1・H30 の2本に割れる。",
+    url: "https://www.city.toyonaka.osaka.jp/joho/zaisei/yosan/reiwa2yosan.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-6",
+  },
+  {
+    code: "162019", name: "富山市", dataset: "budget", fiscalYears: ["H26", "H25"],
+    categories: ["broken-text-layer"],
+    reason:
+      "議案概要の「歳入 款別構成」は、款10 地方交付税の金額が原典のテキスト層でセル内2行に分断されており" +
+      "（21 400 ＋ ,400,000）、歳入Σが 21,399,979千円（H25 は 21,649,979千円）不足する。既存の joinWrappedAmounts は" +
+      "末尾がカンマのトークンを前提にしているので効かない。歳出側は健全。H24 以前の議案概要には款別構成の表そのものが" +
+      "無い（H24〜H18 を全部取って実測）。R8〜H27 は同じ資料で収録済み。",
+    url: "https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-6",
+  },
+  {
+    code: "212016", name: "岐阜市", dataset: "budget", fiscalYears: ["R5", "R4", "R3", "R2", "H31", "H30"],
+    categories: ["scanned-image"],
+    reason:
+      "予算説明書が R5 はスキャン＋OCR で、-layout は数字の並びが崩れ -raw は1文字ずつ空白区切り（6 7 , 1 3 5 , 9 6 2）に" +
+      "なるため金額として読めず、款名にも OCR 誤りがある（利子割交付金 → 利 子 割 父 『 付 金）。R4 以前はテキスト層が無い" +
+      "（CCITT の画像のみ）。年度ページ本文には HTML の款別表があるが金額が「634億3,349万5千円」形式で既存パーサでは読めず、" +
+      "さらに R1 の前年度列は原典自身が「当初＋6月補正」と注記している（H30 が骨格予算）。R8・R7・R6 は健全な版で収録済み。",
+    url: "https://www.city.gifu.lg.jp/info/zaisei/1007720/index.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-6",
+  },
   // ==== 中核市 第4弾（2026-08-23・loop.md 第5巡・docs §13-5）==================================
   {
     code: "172014", name: "金沢市", dataset: "budget", fiscalYears: ["R8", "R7", "R6", "H30"],

@@ -2325,6 +2325,23 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r5", "r4"] as const).map((fy) => ({
       srcId: `kanazawa-yosangaiyou-${fy}`, muniCode: "172014", muniName: "金沢市", prefName: "石川県", isPref: false,
     })),
+    // 中核市 第5弾（2026-08-23・loop.md の第6巡）
+    ...(["r8", "r7", "r6"] as const).map((fy) => ({
+      srcId: `gifu-yosan-setsumeisho-${fy}`, muniCode: "212016", muniName: "岐阜市", prefName: "岐阜県", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `miyazaki-shi-yosan-gaiyou-${fy}`, muniCode: "452017", muniName: "宮崎市", prefName: "宮崎県", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28", "h27"] as const).map((fy) => ({
+      srcId: `toyama-shi-giangaiyou-${fy}`, muniCode: "162019", muniName: "富山市", prefName: "富山県", isPref: false,
+    })),
+    // 豊中は R2 を除く（資料がスキャン＝unrecordable.ts）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r1", "h30"] as const).map((fy) => ({
+      srcId: `toyonaka-kanbetsu-${fy}`, muniCode: "272035", muniName: "豊中市", prefName: "大阪府", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5", "r4"] as const).map((fy) => ({
+      srcId: `toyota-yosan-kanren-${fy}`, muniCode: "232114", muniName: "豊田市", prefName: "愛知県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。
