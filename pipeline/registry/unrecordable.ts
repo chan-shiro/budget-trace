@@ -79,6 +79,30 @@ export interface UnrecordableRecord {
 export const UNRECORDABLE: UnrecordableRecord[] = [
   // ==== 中核市 第5弾（2026-08-23・loop.md 第6巡・docs §13-6）==================================
   {
+    code: "272108", name: "枚方市", dataset: "budget", fiscalYears: ["R6"],
+    categories: ["scanned-image"],
+    reason:
+      "「令和6年度当初予算の概要」は JBIG2 スキャン＋OCR で、款別の前年度比較表（物理 p.17 / p.23）の款名が抽出できず" +
+      "金額が「6 72, 492」と桁ごとに割れる。同年度の一般会計予算説明書の総括（物理 p.12〜19）も同じ OCR 破損で、" +
+      "Wayback の写しは発行元とバイト単位で同一（sha256 一致）。R8・R7・R5 は同じ資料で収録済み" +
+      "（R4 以前は「概要」自体がウェブに無く、議会資料室の公開が令和4年5月開会議会から）。",
+    url: "https://www.city.hirakata.osaka.jp/soshiki/8-4-0-0-0_2.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-7",
+  },
+  {
+    code: "422011", name: "長崎市", dataset: "budget", fiscalYears: ["R6", "R4", "R3", "H31", "H28"],
+    categories: ["broken-text-layer", "scanned-image", "format-mismatch"],
+    reason:
+      "R6・R4 は ToUnicode 欠落の化け（荒川・豊島と同一族の −0x1D 帯）で、GARBLE_CHAR_MAP に漢字約72字の追加が要る" +
+      "（追加すれば開く見込み。数字だけ自前復号して前年度列と一致することは偵察が確認）。R3 はさらに表題行だけ +0x3EAC の" +
+      "別の帯が混在し、decodeGarbleBand が側ごとに1オフセットしか取れないためマップ追加だけでは開かない（三重 R8 型）。" +
+      "H31 は CCITT スキャンでテキスト層が無い。H28 は刊行物自体は自己整合するが、H29 の前年度列と民生費・地方交付税の" +
+      "2款が各 −1,380 ずれており（議会修正前の値と考えられる・宇都宮 R3 と同型）、収録すると年度間クロスチェーンが割れる。" +
+      "R8・R7・R5・R2・H30・H29 は同じ資料で収録済み。",
+    url: "https://www.city.nagasaki.lg.jp/life/7/52/",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-7",
+  },
+  {
     code: "452017", name: "宮崎市", dataset: "budget", fiscalYears: ["H31", "H30", "H29", "H28", "H27"],
     categories: ["format-mismatch"],
     reason:

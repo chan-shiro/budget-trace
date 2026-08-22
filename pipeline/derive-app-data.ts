@@ -2342,6 +2342,24 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4"] as const).map((fy) => ({
       srcId: `toyota-yosan-kanren-${fy}`, muniCode: "232114", muniName: "豊田市", prefName: "愛知県", isPref: false,
     })),
+    // 中核市 第6弾（2026-08-23・loop.md の第7巡）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28"] as const).map((fy) => ({
+      srcId: `okazaki-yosan-gaiyou-${fy}`, muniCode: "232025", muniName: "岡崎市", prefName: "愛知県", isPref: false,
+    })),
+    // 長崎市は R6・R4・R3（化け）・H31（スキャン）・H28（鎖が割れる）を除く＝unrecordable.ts
+    ...(["r8", "r7", "r5", "r2", "h30", "h29"] as const).map((fy) => ({
+      srcId: `nagasaki-shi-yosansho-${fy}`, muniCode: "422011", muniName: "長崎市", prefName: "長崎県", isPref: false,
+    })),
+    // 枚方市は R6（スキャン＋OCR 破損）を除く。R4 以前は「概要」がウェブに無い＝鎖は R8↔R7 のみで R5 は孤立
+    ...(["r8", "r7", "r5"] as const).map((fy) => ({
+      srcId: `hirakata-yosan-gaiyou-${fy}`, muniCode: "272108", muniName: "枚方市", prefName: "大阪府", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31"] as const).map((fy) => ({
+      srcId: `yokosuka-yosan-gaiyou-${fy}`, muniCode: "142018", muniName: "横須賀市", prefName: "神奈川県", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28"] as const).map((fy) => ({
+      srcId: `suita-yosangaku-${fy}`, muniCode: "272051", muniName: "吹田市", prefName: "大阪府", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。

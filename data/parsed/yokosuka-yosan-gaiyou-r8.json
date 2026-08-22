@@ -1,0 +1,435 @@
+{
+  "docType": "budget-book",
+  "sourceId": "yokosuka-yosan-gaiyou-r8",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-08-22T21:51:22.494Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R8",
+  "account": "一般会計",
+  "revenueTotal": 180120000,
+  "expenditureTotal": 180120000,
+  "prevRevenueTotal": 179590000,
+  "prevExpenditureTotal": 179590000,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "市税",
+      "amount": 63235381,
+      "prevAmount": 62342054,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 93
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "地方譲与税",
+      "amount": 656000,
+      "prevAmount": 681751,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 93
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "利子割交付金",
+      "amount": 167000,
+      "prevAmount": 27000,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 93
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "配当割交付金",
+      "amount": 669000,
+      "prevAmount": 501000,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 93
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 943000,
+      "prevAmount": 815000,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 93
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "法人事業税交付金",
+      "amount": 937000,
+      "prevAmount": 919000,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 93
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "地方消費税交付金",
+      "amount": 10686000,
+      "prevAmount": 9062000,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 93
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "ゴルフ場利用税交付金",
+      "amount": 23000,
+      "prevAmount": 23000,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 93
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "環境性能割交付金",
+      "amount": 2000,
+      "prevAmount": 213000,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 93
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "国有提供施設等所在市町村助成交付金",
+      "amount": 2361329,
+      "prevAmount": 2315981,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 93
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "地方特例交付金",
+      "amount": 541528,
+      "prevAmount": 315644,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 93
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "地方交付税",
+      "amount": 19601000,
+      "prevAmount": 19547000,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 93
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 38269,
+      "prevAmount": 41874,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 93
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "分担金及び負担金",
+      "amount": 289326,
+      "prevAmount": 256599,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 93
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "使用料及び手数料",
+      "amount": 4487288,
+      "prevAmount": 3909017,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 93
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "国庫支出金",
+      "amount": 32208121,
+      "prevAmount": 33036123,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 93
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 17,
+      "kanName": "県支出金",
+      "amount": 12989196,
+      "prevAmount": 11828904,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 93
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 18,
+      "kanName": "財産収入",
+      "amount": 758018,
+      "prevAmount": 335320,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 93
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 19,
+      "kanName": "寄附金",
+      "amount": 1347937,
+      "prevAmount": 1414897,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 93
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 20,
+      "kanName": "繰入金",
+      "amount": 8184875,
+      "prevAmount": 8094942,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 93
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 21,
+      "kanName": "繰越金",
+      "amount": 300000,
+      "prevAmount": 300000,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 93
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 22,
+      "kanName": "諸収入",
+      "amount": 7183532,
+      "prevAmount": 7651494,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 93
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 23,
+      "kanName": "市債",
+      "amount": 12511200,
+      "prevAmount": 15958400,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 93
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 774618,
+      "prevAmount": 778110,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 95
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 23779546,
+      "prevAmount": 23203759,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 95
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "民生費",
+      "amount": 75774559,
+      "prevAmount": 75735312,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 95
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "衛生費",
+      "amount": 8400099,
+      "prevAmount": 8452965,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 95
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "環境費",
+      "amount": 7843333,
+      "prevAmount": 8593202,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 95
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "労働費",
+      "amount": 357224,
+      "prevAmount": 337838,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 95
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "農林水産業費",
+      "amount": 836316,
+      "prevAmount": 942831,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 95
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "商工費",
+      "amount": 4151719,
+      "prevAmount": 4187359,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 95
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "土木費",
+      "amount": 16192567,
+      "prevAmount": 17027273,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 95
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "消防費",
+      "amount": 7276754,
+      "prevAmount": 9131211,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 95
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 11,
+      "kanName": "教育費",
+      "amount": 16457180,
+      "prevAmount": 13458956,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 95
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 12,
+      "kanName": "災害復旧費",
+      "amount": 147760,
+      "prevAmount": 150460,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 95
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 13,
+      "kanName": "公債費",
+      "amount": 17904125,
+      "prevAmount": 17367962,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 95
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 14,
+      "kanName": "諸支出金",
+      "amount": 24200,
+      "prevAmount": 22762,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 95
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 15,
+      "kanName": "予備費",
+      "amount": 200000,
+      "prevAmount": 200000,
+      "locator": {
+        "file": "r8yosan-gaiyo_yokosuka.pdf",
+        "page": 95
+      }
+    }
+  ]
+}
