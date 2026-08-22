@@ -8958,5 +8958,125 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.ichikawa.lg.jp/uploaded/attachment/8783.pdf",
     "license": "市公式Webサイトに掲載されている文章、写真、イラストなどの個々の情報は、著作権の対象となります。また、市公式Webサイト全体も編集著作物として著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
     "target": "file"
+  },
+  "/sources/utsunomiya-yosan-taikou-r8/r8yosantaikou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.utsunomiya.lg.jp/_res/projects/default_project/_page_/001/010/664/r8yosantaikou.pdf",
+    "license": "宇都宮市公式サイト上の文書や画像等のコンテンツ、及び内容に関する諸権利は宇都宮市に帰属します。一部の画像等の著作権は原著作者が所有しています。本サイト上の文書・画像等の各ファイルの無断使用・転載・引用は禁じます。",
+    "target": "file"
+  },
+  "/sources/utsunomiya-yosan-taikou-r7/r7yosantaikou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.utsunomiya.lg.jp/_res/projects/default_project/_page_/001/010/664/r7yosantaikou.pdf",
+    "license": "宇都宮市公式サイト上の文書や画像等のコンテンツ、及び内容に関する諸権利は宇都宮市に帰属します。一部の画像等の著作権は原著作者が所有しています。本サイト上の文書・画像等の各ファイルの無断使用・転載・引用は禁じます。",
+    "target": "file"
+  },
+  "/sources/utsunomiya-yosan-taikou-r6/r6yosantaikou-2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.utsunomiya.lg.jp/_res/projects/default_project/_page_/001/010/664/r6yosantaikou-2.pdf",
+    "license": "宇都宮市公式サイト上の文書や画像等のコンテンツ、及び内容に関する諸権利は宇都宮市に帰属します。一部の画像等の著作権は原著作者が所有しています。本サイト上の文書・画像等の各ファイルの無断使用・転載・引用は禁じます。",
+    "target": "file"
+  },
+  "/sources/utsunomiya-yosan-taikou-r5/r5yosantaikou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.utsunomiya.lg.jp/_res/projects/default_project/_page_/001/010/664/r5yosantaikou2.pdf",
+    "license": "宇都宮市公式サイト上の文書や画像等のコンテンツ、及び内容に関する諸権利は宇都宮市に帰属します。一部の画像等の著作権は原著作者が所有しています。本サイト上の文書・画像等の各ファイルの無断使用・転載・引用は禁じます。",
+    "target": "file"
+  },
+  "/sources/utsunomiya-yosan-taikou-r4/r4yosanntaikou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.utsunomiya.lg.jp/_res/projects/default_project/_page_/001/010/664/r4yosanntaikou.pdf",
+    "license": "宇都宮市公式サイト上の文書や画像等のコンテンツ、及び内容に関する諸権利は宇都宮市に帰属します。一部の画像等の著作権は原著作者が所有しています。本サイト上の文書・画像等の各ファイルの無断使用・転載・引用は禁じます。",
+    "target": "file"
+  },
+  "/sources/utsunomiya-yosan-taikou-r2/r2taikou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.utsunomiya.lg.jp/_res/projects/default_project/_page_/001/010/664/r2taikou.pdf",
+    "license": "宇都宮市公式サイト上の文書や画像等のコンテンツ、及び内容に関する諸権利は宇都宮市に帰属します。一部の画像等の著作権は原著作者が所有しています。本サイト上の文書・画像等の各ファイルの無断使用・転載・引用は禁じます。",
+    "target": "file"
+  },
+  "/sources/utsunomiya-yosan-taikou-h31/31taikou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.utsunomiya.lg.jp/_res/projects/default_project/_page_/001/010/664/31taikou2.pdf",
+    "license": "宇都宮市公式サイト上の文書や画像等のコンテンツ、及び内容に関する諸権利は宇都宮市に帰属します。一部の画像等の著作権は原著作者が所有しています。本サイト上の文書・画像等の各ファイルの無断使用・転載・引用は禁じます。",
+    "target": "file"
+  },
+  "/sources/utsunomiya-yosan-taikou-h30/30taikou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.utsunomiya.lg.jp/_res/projects/default_project/_page_/001/010/664/30taikou.pdf",
+    "license": "宇都宮市公式サイト上の文書や画像等のコンテンツ、及び内容に関する諸権利は宇都宮市に帰属します。一部の画像等の著作権は原著作者が所有しています。本サイト上の文書・画像等の各ファイルの無断使用・転載・引用は禁じます。",
+    "target": "file"
+  },
+  "/sources/utsunomiya-yosan-taikou-h29/29yosantaikou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.utsunomiya.lg.jp/_res/projects/default_project/_page_/001/010/664/29yosantaikou.pdf",
+    "license": "宇都宮市公式サイト上の文書や画像等のコンテンツ、及び内容に関する諸権利は宇都宮市に帰属します。一部の画像等の著作権は原著作者が所有しています。本サイト上の文書・画像等の各ファイルの無断使用・転載・引用は禁じます。",
+    "target": "file"
+  },
+  "/sources/utsunomiya-yosan-taikou-h28/28toushoyosanannotaikou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.utsunomiya.lg.jp/_res/projects/default_project/_page_/001/010/664/28toushoyosanannotaikou.pdf",
+    "license": "宇都宮市公式サイト上の文書や画像等のコンテンツ、及び内容に関する諸権利は宇都宮市に帰属します。一部の画像等の著作権は原著作者が所有しています。本サイト上の文書・画像等の各ファイルの無断使用・転載・引用は禁じます。",
+    "target": "file"
+  },
+  "/sources/nishinomiya-yosan-gaiyou-r8/R8yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.nishi.or.jp/shisei/zaiseijoho/yosan/R8yosan.files/R8yosannogaiyou.pdf",
+    "license": "「西宮市ホームページ」に掲載されている個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、「西宮市ホームページ」全体も編集著作物として著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nishinomiya-yosan-gaiyou-r7/R7gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.nishi.or.jp/shisei/zaiseijoho/yosan/R7yosanan.files/R7gaiyou.pdf",
+    "license": "「西宮市ホームページ」に掲載されている個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、「西宮市ホームページ」全体も編集著作物として著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nishinomiya-yosan-gaiyou-r6/R6yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.nishi.or.jp/shisei/zaiseijoho/yosan/R6yosan.files/R6yosannogaiyou.pdf",
+    "license": "「西宮市ホームページ」に掲載されている個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、「西宮市ホームページ」全体も編集著作物として著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nishinomiya-yosan-gaiyou-r5/R5.toushoyosan_gaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.nishi.or.jp/shisei/zaiseijoho/yosan/20230203091643212.files/R5.toushoyosan_gaiyo.pdf",
+    "license": "「西宮市ホームページ」に掲載されている個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、「西宮市ホームページ」全体も編集著作物として著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nishinomiya-yosan-gaiyou-r4/R4.toushohosei_gaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.nishi.or.jp/shisei/zaiseijoho/yosan/20220209144503509.files/R4.toushohosei_gaiyo.pdf",
+    "license": "「西宮市ホームページ」に掲載されている個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、「西宮市ホームページ」全体も編集著作物として著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nishinomiya-yosan-gaiyou-r3/R3.toushoyosan_gaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.nishi.or.jp/shisei/zaiseijoho/yosan/R3yosannogaiyou.files/R3.toushoyosan_gaiyo.pdf",
+    "license": "「西宮市ホームページ」に掲載されている個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、「西宮市ホームページ」全体も編集著作物として著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nishinomiya-yosan-gaiyou-r2/R2toushoyosannogaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.nishi.or.jp/shisei/zaiseijoho/yosan/R2yosannogaiyou.files/R2toushoyosannogaiyo.pdf",
+    "license": "「西宮市ホームページ」に掲載されている個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、「西宮市ホームページ」全体も編集著作物として著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nishinomiya-yosan-gaiyou-r1/H31tousyoyosannogaiyo1900320.pdf": {
+    "mode": "origin",
+    "href": "https://www.nishi.or.jp/shisei/zaiseijoho/yosan/r1yosanannogaiyou.files/H31tousyoyosannogaiyo1900320.pdf",
+    "license": "「西宮市ホームページ」に掲載されている個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、「西宮市ホームページ」全体も編集著作物として著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nishinomiya-yosan-gaiyou-h30/H30yosannogaiyou1.pdf": {
+    "mode": "origin",
+    "href": "https://www.nishi.or.jp/shisei/zaiseijoho/yosan/H30yosannogaiyou.files/H30yosannogaiyou1.pdf",
+    "license": "「西宮市ホームページ」に掲載されている個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、「西宮市ホームページ」全体も編集著作物として著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nishinomiya-yosan-gaiyou-h29/H29yosannogaiyou1.pdf": {
+    "mode": "origin",
+    "href": "https://www.nishi.or.jp/shisei/zaiseijoho/yosan/h29yosangaiyo.files/H29yosannogaiyou1.pdf",
+    "license": "「西宮市ホームページ」に掲載されている個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、「西宮市ホームページ」全体も編集著作物として著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
   }
 };

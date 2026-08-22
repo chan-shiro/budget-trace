@@ -77,30 +77,18 @@ export interface UnrecordableRecord {
 }
 
 export const UNRECORDABLE: UnrecordableRecord[] = [
-  // ==== 中核市 第2弾（2026-08-22・loop.md 第2巡・docs §13-2）— パーサ側の事情で見送ったもの ========
+  // ==== 中核市 第2弾（2026-08-22・loop.md 第2巡→第3巡・docs §13-2）=========================
+  // 宇都宮・西宮の parser-unsupported は #226 の改修で収録できたため外した（第3巡）。残るのは原典側の事情だけ。
   {
-    code: "092011", name: "宇都宮市", dataset: "budget", fiscalYears: ["R8", "R7", "R6", "R5", "R4", "R3", "R2", "H31", "H30", "H29", "H28"],
-    categories: ["parser-unsupported"],
+    code: "092011", name: "宇都宮市", dataset: "budget", fiscalYears: ["R3"],
+    categories: ["format-mismatch"],
     reason:
-      "「当初予算案の大綱」巻末の款別表（歳入は款番号なし）は金額が全年度 Σ 差0 で読めるが、" +
-      "歳入の款名が「上段2行＋名前欄が空の金額行」の折返しで、それが連続する箇所（地方消費税交付金→ゴルフ場利用税交付金 等）で" +
-      "kanNoless の分岐が次の款の上段まで連結してしまう（地方消費税交付金ゴルフ場利用税／交付金）。" +
-      "Σ は差0 のまま通るので款名だけが壊れる型。既存オプションでは回避できず、パーサの kanNoless 分岐の修正が要る。" +
-      "歳出14款は全年度クリーン。R3 の大綱は議会修正前の「案」で R4 の前年度列と食い違う点も要設計。",
+      "「当初予算案の大綱」は議会修正前の「案」（一般会計 229,000,000千円）で、可決された当初予算は修正後の 229,140,000千円" +
+      "（同ページの「令和３年第２回市議会定例会予算（修正案）総括表」）。R4 の大綱の前年度列と市統計書 17-3 はどちらも" +
+      "修正後なので、案のまま収録すると年度間のクロスチェックが R4↔R3 で食い違う（歳入4款・歳出 教育費 +140,000）。" +
+      "修正後の款別は統計書 17-3 XLSX（CC BY）にあるが別様式で未収録。R8〜R4・R2〜H28 は同じ資料で収録済み。",
     url: "https://www.city.utsunomiya.lg.jp/shisei/johokokai/zaisei/1010664.html",
-    checkedOn: "2026-08-22", ref: "docs/data-sources.md §13-2",
-  },
-  {
-    code: "282049", name: "西宮市", dataset: "budget", fiscalYears: ["R8", "R7", "R6", "R5", "R4", "R3", "R2", "R1", "H30", "H29"],
-    categories: ["parser-unsupported"],
-    reason:
-      "「当初予算の概要」p.4/p.8 の款別表は R8〜R1・H29 の9年度が Σ 4系統差0 で読めるが、" +
-      "歳出は款名が単独行で、金額行の名前欄に原典の注記（「（市議会運営のために）」等）が来るため、" +
-      "既存パーサでは14款すべての款名が「議会費（市議会運営のために）」のように注記つきになる。" +
-      "Σ も validate の款名ゲートも素通りする型で、款名末尾の注記を落とすオプションがパーサに無い。" +
-      "H30 は本文行（「…16億9,924万1千円の」）が合計行に選ばれて款0件で throw する（別原因）。",
-    url: "https://www.nishi.or.jp/shisei/zaiseijoho/yosan/index.html",
-    checkedOn: "2026-08-22", ref: "docs/data-sources.md §13-2",
+    checkedOn: "2026-08-22", ref: "docs/data-sources.md §13-3",
   },
   // ==== 中核市（2026-08-22・loop.md 第1巡・docs §13）==============================
   {

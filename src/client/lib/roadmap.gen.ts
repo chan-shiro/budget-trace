@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 107,
+  "budgetCount": 109,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 538,
-  "fileCount": 1697,
-  "archivedCount": 506,
-  "licenseOpen": 70,
-  "licensePermission": 407,
+  "sourceCount": 560,
+  "fileCount": 1719,
+  "archivedCount": 526,
+  "licenseOpen": 72,
+  "licensePermission": 427,
   "licenseUnverified": 61,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -105,6 +105,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H28〜R8（11年度）"
     },
     {
+      "name": "宇都宮市",
+      "code": "092011",
+      "years": 10,
+      "range": "H28〜R8（10年度）"
+    },
+    {
       "name": "東京都",
       "code": "130001",
       "years": 10,
@@ -113,6 +119,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "中央区",
       "code": "131024",
+      "years": 10,
+      "range": "H29〜R8（10年度）"
+    },
+    {
+      "name": "西宮市",
+      "code": "282049",
       "years": 10,
       "range": "H29〜R8（10年度）"
     },
@@ -173,6 +185,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "足立区",
       "code": "131211",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "八王子市",
+      "code": "132012",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },
@@ -239,12 +257,6 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "品川区",
       "code": "131091",
-      "years": 5,
-      "range": "R4〜R8（5年度）"
-    },
-    {
-      "name": "八王子市",
-      "code": "132012",
       "years": 5,
       "range": "R4〜R8（5年度）"
     },
