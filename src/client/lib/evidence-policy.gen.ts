@@ -9318,5 +9318,215 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.kurashiki.okayama.jp/_res/projects/default_project/_page_/001/011/594/r3gaiyo1.pdf",
     "license": "本サイト上のコンテンツは、倉敷市およびその他団体ならびに第三者が有する著作権により保護されております。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用等を希望される方は、各ページに記載されている担当所属へ、事前にご相談ください。",
     "target": "file"
+  },
+  "/sources/takamatsu-yosan-gaiyou-r8/R08_01gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/zaisei/katei/r8/2026yosanhensei.files/R08_01gaiyou.pdf",
+    "license": "高松市公式ホームページ「もっと高松」に掲載されている文章、写真、イラスト、画像等の著作権は、高松市又はコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ホームページに記載されている課等へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/takamatsu-yosan-gaiyou-r7/R07_01gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/zaisei/katei/r7/2025yosanhensei.files/R07_01gaiyou.pdf",
+    "license": "高松市公式ホームページ「もっと高松」に掲載されている文章、写真、イラスト、画像等の著作権は、高松市又はコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ホームページに記載されている課等へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/takamatsu-yosan-gaiyou-r6/R06_01gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/zaisei/katei/r_6/2024yosannhensei.files/R06_01gaiyou.pdf",
+    "license": "高松市公式ホームページ「もっと高松」に掲載されている文章、写真、イラスト、画像等の著作権は、高松市又はコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ホームページに記載されている課等へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/takamatsu-yosan-gaiyou-r5/R05_01gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/zaisei/katei/r5/2023yosannhensei.files/R05_01gaiyou.pdf",
+    "license": "高松市公式ホームページ「もっと高松」に掲載されている文章、写真、イラスト、画像等の著作権は、高松市又はコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ホームページに記載されている課等へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/takamatsu-yosan-gaiyou-r4/R04_01gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/zaisei/katei/r4/2022yosannhensei.files/R04_01gaiyou.pdf",
+    "license": "高松市公式ホームページ「もっと高松」に掲載されている文章、写真、イラスト、画像等の著作権は、高松市又はコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ホームページに記載されている課等へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/takamatsu-yosan-gaiyou-r3/R3_gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/zaisei/katei/r3/2021yosannhensei.files/R3_gaiyou.pdf",
+    "license": "高松市公式ホームページ「もっと高松」に掲載されている文章、写真、イラスト、画像等の著作権は、高松市又はコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ホームページに記載されている課等へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/takamatsu-yosan-gaiyou-r2/R2_gaiyou_.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/zaisei/katei/r2/zaisei_up20191004.files/R2_gaiyou_.pdf",
+    "license": "高松市公式ホームページ「もっと高松」に掲載されている文章、写真、イラスト、画像等の著作権は、高松市又はコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ホームページに記載されている課等へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/takamatsu-yosan-gaiyou-h31/02_2019tousyogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/zaisei/katei/2019/2019yosanhensei.files/02_2019tousyogaiyou.pdf",
+    "license": "高松市公式ホームページ「もっと高松」に掲載されている文章、写真、イラスト、画像等の著作権は、高松市又はコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ホームページに記載されている課等へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/takamatsu-yosan-gaiyou-h30/h30toushogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/zaisei/katei/h30/yosanhensei_h30.files/h30toushogaiyou.pdf",
+    "license": "高松市公式ホームページ「もっと高松」に掲載されている文章、写真、イラスト、画像等の著作権は、高松市又はコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ホームページに記載されている課等へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/takamatsu-yosan-gaiyou-h29/29gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/zaisei/katei/h29/yosanhensei_h29.files/29gaiyou.pdf",
+    "license": "高松市公式ホームページ「もっと高松」に掲載されている文章、写真、イラスト、画像等の著作権は、高松市又はコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ホームページに記載されている課等へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/takamatsu-yosan-gaiyou-h28/28gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/zaisei/katei/h28/yosanhensei_28.files/28gaiyou.pdf",
+    "license": "高松市公式ホームページ「もっと高松」に掲載されている文章、写真、イラスト、画像等の著作権は、高松市又はコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ホームページに記載されている課等へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/takamatsu-yosan-gaiyou-h27/24081_L21_27gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/zaisei/katei/h27/yosanhensei_27.files/24081_L21_27gaiyou.pdf",
+    "license": "高松市公式ホームページ「もっと高松」に掲載されている文章、写真、イラスト、画像等の著作権は、高松市又はコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ホームページに記載されている課等へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/takamatsu-yosan-gaiyou-h26/26gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/zaisei/katei/h26/yosanhensei_26.files/26gaiyou.pdf",
+    "license": "高松市公式ホームページ「もっと高松」に掲載されている文章、写真、イラスト、画像等の著作権は、高松市又はコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ホームページに記載されている課等へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/takamatsu-yosan-gaiyou-h25/25gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/zaisei/katei/h25/yosanhensei_25.files/25gaiyou.pdf",
+    "license": "高松市公式ホームページ「もっと高松」に掲載されている文章、写真、イラスト、画像等の著作権は、高松市又はコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ホームページに記載されている課等へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/takamatsu-yosan-gaiyou-h24/24toushoyosannnogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/zaisei/katei/h24/yosanhensei_24.files/24toushoyosannnogaiyou.pdf",
+    "license": "高松市公式ホームページ「もっと高松」に掲載されている文章、写真、イラスト、画像等の著作権は、高松市又はコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ホームページに記載されている課等へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/takamatsu-yosan-gaiyou-h23/17278_L17_17278_h23_yosan_gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/zaisei/katei/h23/yosanhensei_23.files/17278_L17_17278_h23_yosan_gaiyou.pdf",
+    "license": "高松市公式ホームページ「もっと高松」に掲載されている文章、写真、イラスト、画像等の著作権は、高松市又はコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ホームページに記載されている課等へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/takamatsu-yosan-gaiyou-h22/13058_L17_13058_h22_yosan_gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/zaisei/katei/h22/yosanhensei_22.files/13058_L17_13058_h22_yosan_gaiyou.pdf",
+    "license": "高松市公式ホームページ「もっと高松」に掲載されている文章、写真、イラスト、画像等の著作権は、高松市又はコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ホームページに記載されている課等へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/takamatsu-yosan-gaiyou-h21/11406_L17_11406_h21_yosan_gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/zaisei/katei/h21/yosanhensei_21.files/11406_L17_11406_h21_yosan_gaiyou.pdf",
+    "license": "高松市公式ホームページ「もっと高松」に掲載されている文章、写真、イラスト、画像等の著作権は、高松市又はコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ホームページに記載されている課等へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/fujisawa-yosansho-r8/r8_yosansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fujisawa.kanagawa.jp/documents/34730/r8_yosansyo.pdf",
+    "license": "「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、藤沢市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/fujisawa-yosansho-r7/r7_yosansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fujisawa.kanagawa.jp/documents/32609/r7_yosansyo.pdf",
+    "license": "「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、藤沢市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/fujisawa-yosansho-r6/r6_yosansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fujisawa.kanagawa.jp/documents/30625/r6_yosansyo.pdf",
+    "license": "「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、藤沢市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/fujisawa-yosansho-r5/r5_yosansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fujisawa.kanagawa.jp/documents/28756/r5_yosansyo.pdf",
+    "license": "「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、藤沢市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/fujisawa-yosansho-r4/r4yosansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fujisawa.kanagawa.jp/documents/26734/r4yosansyo.pdf",
+    "license": "「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、藤沢市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/fujisawa-yosansho-r3/r3yosannsyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fujisawa.kanagawa.jp/documents/24661/r3yosannsyo.pdf",
+    "license": "「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、藤沢市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/fujisawa-yosansho-r2/yosann.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fujisawa.kanagawa.jp/documents/22950/yosann.pdf",
+    "license": "「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、藤沢市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/kashiwa-yosan-setsumeisho-r8/r8yosansetumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kashiwa.lg.jp/zaisei/policy_pr/budget/budget2/r8-yosan.html",
+    "license": "柏市オフィシャルウェブサイトに掲載されている情報（文字、写真、イラストなど）は著作権の対象です。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転用等をすることはできません。",
+    "target": "page"
+  },
+  "/sources/kashiwa-yosan-setsumeisho-r7/r7yosannsetsumeisho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kashiwa.lg.jp/zaisei/policy_pr/budget/budget2/r7-yosan.html",
+    "license": "柏市オフィシャルウェブサイトに掲載されている情報（文字、写真、イラストなど）は著作権の対象です。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転用等をすることはできません。",
+    "target": "page"
+  },
+  "/sources/kashiwa-yosan-setsumeisho-r6/r6yosannsetsumeisho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kashiwa.lg.jp/zaisei/policy_pr/budget/budget2/r6-yosan.html",
+    "license": "柏市オフィシャルウェブサイトに掲載されている情報（文字、写真、イラストなど）は著作権の対象です。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転用等をすることはできません。",
+    "target": "page"
+  },
+  "/sources/kashiwa-yosan-setsumeisho-r5/r5yosannsetsumeisho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kashiwa.lg.jp/zaisei/policy_pr/budget/budget2/r5-yosan.html",
+    "license": "柏市オフィシャルウェブサイトに掲載されている情報（文字、写真、イラストなど）は著作権の対象です。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転用等をすることはできません。",
+    "target": "page"
+  },
+  "/sources/kashiwa-yosan-setsumeisho-r4/r4toushoyosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kashiwa.lg.jp/zaisei/policy_pr/budget/budget2/20211029.html",
+    "license": "柏市オフィシャルウェブサイトに掲載されている情報（文字、写真、イラストなど）は著作権の対象です。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転用等をすることはできません。",
+    "target": "page"
+  },
+  "/sources/kashiwa-yosan-setsumeisho-r3/r3setumei_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kashiwa.lg.jp/zaisei/policy_pr/budget/budget2/r3-yosan.html",
+    "license": "柏市オフィシャルウェブサイトに掲載されている情報（文字、写真、イラストなど）は著作権の対象です。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転用等をすることはできません。",
+    "target": "page"
+  },
+  "/sources/kashiwa-yosan-setsumeisho-r2/reiwa2nenndokashiwashiippannkaikeitokubetukaikeiyosannnikannsurusetumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kashiwa.lg.jp/zaisei/policy_pr/budget/budget2/r2-yosan.html",
+    "license": "柏市オフィシャルウェブサイトに掲載されている情報（文字、写真、イラストなど）は著作権の対象です。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転用等をすることはできません。",
+    "target": "page"
+  },
+  "/sources/machida-yosansho-r8/R8_yosansyo_2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.machida.tokyo.jp/shisei/gyouzaisei/siyosan/tousyo_26/2026yosansyo.files/R8_yosansyo_2.pdf",
+    "license": "本サイトに記載された文章・画像に関する権利は町田市に帰属しています。無断で転載することを禁じます。もし、これらの文書等について転用等を希望される場合は、その旨掲載されているページの担当課へご連絡下さい。",
+    "target": "file"
+  },
+  "/sources/kanazawa-yosangaiyou-r5/R5zentai.pdf": {
+    "mode": "origin",
+    "href": "https://www4.city.kanazawa.lg.jp/material/files/group/16/R5zentai.pdf",
+    "license": "私的使用のための複製や引用など著作権法上認められた場合を除き、金沢市公式ホームページに掲載されている写真、イラスト、音声、動画、記事等は、無断で複製・転用することはできません。使用許諾は、必ずそれぞれのページを所管する担当課にご確認ください（担当課は、それぞれのページ下部に記載してあります）。",
+    "target": "file"
+  },
+  "/sources/kanazawa-yosangaiyou-r4/R4zentai_040331.pdf": {
+    "mode": "origin",
+    "href": "https://www4.city.kanazawa.lg.jp/material/files/group/16/R4zentai_040331.pdf",
+    "license": "私的使用のための複製や引用など著作権法上認められた場合を除き、金沢市公式ホームページに掲載されている写真、イラスト、音声、動画、記事等は、無断で複製・転用することはできません。使用許諾は、必ずそれぞれのページを所管する担当課にご確認ください（担当課は、それぞれのページ下部に記載してあります）。",
+    "target": "file"
   }
 };

@@ -77,6 +77,30 @@ export interface UnrecordableRecord {
 }
 
 export const UNRECORDABLE: UnrecordableRecord[] = [
+  // ==== 中核市 第4弾（2026-08-23・loop.md 第5巡・docs §13-5）==================================
+  {
+    code: "172014", name: "金沢市", dataset: "budget", fiscalYears: ["R8", "R7", "R6", "H30"],
+    categories: ["scanned-image"],
+    reason:
+      "「金沢市予算概要」の一般会計款別表が R8・R7・R6 は CCITT スキャン＋OCR のテキスト層で、金額が壊れて読めない" +
+      "（84,497,1801・46.フ など）。H30 は文字が図形化されていて pdftotext が款別表のページから何も返さない。" +
+      "代替の「予算のあらまし」は歳入が原典の時点で12区分に集約されており（交付金＝款3〜11の合計、その他＝寄附金・" +
+      "繰越金・諸収入等の合計）款別歳入ではないため採らない。R6 はあらまし自体が発行元から消え魚拓にも無い。" +
+      "R5・R4 は同じ資料の健全な版で収録済み。",
+    url: "https://www4.city.kanazawa.lg.jp/shiseijoho/gyozaisei/zaisei_yosan_kessan/2/13057.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-5",
+  },
+  {
+    code: "132098", name: "町田市", dataset: "budget", fiscalYears: ["R7", "R6", "R5", "R4", "R3", "R2"],
+    categories: ["parser-unsupported"],
+    reason:
+      "予算書がウェブに載っているのは R8 の年度ページだけで、R7 以前は「予算概要説明書」しか無い。" +
+      "その歳出（目的別）内訳表が「金額行 → 款番号＋款名行 → 構成比行」の3行組みで、款名行に整数が1つも無いため" +
+      "既存パーサが款を1件も抽出できず throw する（R7・R6・R5・R4・R3・R2 の各歳出ページに try-parse を当てて実測）。" +
+      "歳入側は単行なので読める。倉敷 R7 と同じ「3行組み」の型で、パーサに opt-in を足せば開く見込み。",
+    url: "https://www.city.machida.tokyo.jp/shisei/gyouzaisei/siyosan/index.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-5",
+  },
   // ==== 中核市 第3弾（2026-08-22・loop.md 第4巡・docs §13-4）==================================
   {
     code: "332020", name: "倉敷市", dataset: "budget", fiscalYears: ["R7"],

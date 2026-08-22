@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 114,
+  "budgetCount": 119,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 600,
-  "fileCount": 1759,
-  "archivedCount": 568,
+  "sourceCount": 635,
+  "fileCount": 1794,
+  "archivedCount": 603,
   "licenseOpen": 72,
-  "licensePermission": 467,
+  "licensePermission": 502,
   "licenseUnverified": 61,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -59,6 +59,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "世田谷区",
       "code": "131121",
+      "years": 18,
+      "range": "H21〜R8（18年度）"
+    },
+    {
+      "name": "高松市",
+      "code": "372013",
       "years": 18,
       "range": "H21〜R8（18年度）"
     },
@@ -177,6 +183,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "柏市",
+      "code": "122173",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "目黒区",
       "code": "131105",
       "years": 7,
@@ -215,6 +227,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "川崎市",
       "code": "141305",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "藤沢市",
+      "code": "142051",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },
@@ -343,6 +361,12 @@ export const ROADMAP_PROGRESS = {
       "code": "151009",
       "years": 2,
       "range": "R7〜R8（2年度）"
+    },
+    {
+      "name": "金沢市",
+      "code": "172014",
+      "years": 2,
+      "range": "R4〜R5（2年度）"
     },
     {
       "name": "三重県",

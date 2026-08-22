@@ -1,0 +1,12 @@
+{
+  "sourceId": "fujisawa-yosansho-r2",
+  "files": [
+    {
+      "filename": "yosann.pdf",
+      "sha256": "bf6ba2c3ee38be126b1f061a53a4647f540559fa52d724a5c962e0178da0635f",
+      "bytes": 5924438,
+      "fetchedAt": "2026-08-22T17:40:26.410Z",
+      "fetchedFrom": "https://www.city.fujisawa.kanagawa.jp/documents/22950/yosann.pdf"
+    }
+  ]
+}
