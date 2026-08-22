@@ -9503,7 +9503,7 @@ export const SOURCES: SourceEntry[] = [
       { kanNoless: true, prevBlankAsZero: { revenue: [6] } }],
   ] as const).map(([fy, docId, file, slug, extra]) => ({
     id: `kashiwa-yosan-setsumeisho-${fy.toLowerCase()}`,
-    title: `${eraYear(fy)}年度 柏市一般会計・特別会計予算に関する説明書（歳入予算款別明細書 総括）`,
+    title: `${eraYear(fy)}年度 柏市一般会計・特別会計予算に関する説明書（歳入・歳出予算款別明細書 総括）`,
     publisher: "柏市",
     url: `https://www.city.kashiwa.lg.jp/documents/${docId}/${file}`,
     landingPage: `https://www.city.kashiwa.lg.jp/zaisei/policy_pr/budget/budget2/${slug}.html`,
