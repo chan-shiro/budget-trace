@@ -6264,6 +6264,17 @@ R3 は `prevBlankAsZero.expenditure: [11]`（災害復旧費の皆増）、R2 �
 file 40件のうち **39件が sha256 一致**、1件（福山 H30）は **Wayback 側のコピー取得が 404 で未照合**（§9p の再試行型・
 台帳に `sha256Verified: false` と理由が永続化されている。時間を置いて `pipeline:archive fukuyama-yosan-sankou-h30` で拾える）。
 
+⚠ **replay が 404 でも「捕捉が正しいバイト列か」は CDX で独立に確認できる**（2026-08-22・レビューが発見）。CDX API が返す
+`digest` は **原本の SHA-1 を base32 化した値**なので、手元の raw から計算して突き合わせられる:
+
+```bash
+curl -s 'https://web.archive.org/cdx/search/cdx?url=<原本URL>&output=json&fl=timestamp,statuscode,mimetype,digest'
+python3 -c "import hashlib,base64,sys;print(base64.b32encode(hashlib.sha1(open(sys.argv[1],'rb').read()).digest()).decode())" data/raw/<id>/<file>
+```
+
+福山 H30 はこれで一致（＝**保存は正しく replay の索引が遅れているだけ**・§9b の MiB 打ち切りでもない）。
+「照合できない」を放置してよいかの判断材料になるので、再試行が続けて失敗するときはこれを見る。
+
 **landing は40件すべてについて「魚拓を実際に取得して当該 PDF のファイル名を含むか」を検査した**（松戸・市川・宇都宮に続く
 3例目なので、目視でなくスクリプトにした）。含まなかったのは3件で `--force` で取り直した:
 - **東大阪 R8・R7 は landing を共有**（`0000000529.html`）していて、捕捉が 2025-11＝**ファイル名の一斉付け替え（2026-07-02）前**。
