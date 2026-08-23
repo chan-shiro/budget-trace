@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 163,
+  "budgetCount": 168,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 990,
-  "fileCount": 2161,
-  "archivedCount": 938,
+  "sourceCount": 1045,
+  "fileCount": 2233,
+  "archivedCount": 974,
   "licenseOpen": 98,
-  "licensePermission": 782,
+  "licensePermission": 837,
   "licenseUnverified": 110,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -87,8 +87,20 @@ export const ROADMAP_PROGRESS = {
       "range": "H23〜R8（16年度）"
     },
     {
+      "name": "茅ヶ崎市",
+      "code": "142077",
+      "years": 16,
+      "range": "H21〜R8（16年度）"
+    },
+    {
       "name": "越谷市",
       "code": "112224",
+      "years": 15,
+      "range": "H24〜R8（15年度）"
+    },
+    {
+      "name": "徳島市",
+      "code": "362018",
       "years": 15,
       "range": "H24〜R8（15年度）"
     },
@@ -171,6 +183,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H28〜R8（11年度）"
     },
     {
+      "name": "大和市",
+      "code": "142131",
+      "years": 11,
+      "range": "H28〜R8（11年度）"
+    },
+    {
       "name": "岡崎市",
       "code": "232025",
       "years": 11,
@@ -209,6 +227,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "中央区",
       "code": "131024",
+      "years": 10,
+      "range": "H29〜R8（10年度）"
+    },
+    {
+      "name": "富士市",
+      "code": "222101",
       "years": 10,
       "range": "H29〜R8（10年度）"
     },
@@ -571,6 +595,12 @@ export const ROADMAP_PROGRESS = {
       "code": "472018",
       "years": 4,
       "range": "R4〜R8（4年度）"
+    },
+    {
+      "name": "草加市",
+      "code": "112216",
+      "years": 3,
+      "range": "R6〜R8（3年度）"
     },
     {
       "name": "岐阜市",

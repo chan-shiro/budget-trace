@@ -1535,6 +1535,33 @@
       "checkedAt": "2026-07-15T17:24:22.598Z"
     },
     {
+      "sourceId": "chigasaki-yosan-soukatsu-h26",
+      "url": "https://www.city.chigasaki.kanagawa.jp/zaisei/1008506/1008513/1008525.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20150416064919/http://www.city.chigasaki.kanagawa.jp:80/zaisei/1008506/1008513/1008525.html",
+      "waybackTimestamp": "20150416064919",
+      "checkedAt": "2026-08-23T16:21:49.643Z"
+    },
+    {
+      "sourceId": "chigasaki-yosan-soukatsu-r7",
+      "url": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/061/665/202502173.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260120001132/https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/061/665/202502173.pdf",
+      "waybackTimestamp": "20260120001132",
+      "checkedAt": "2026-08-23T16:17:06.842Z",
+      "sha256Match": true,
+      "waybackBytes": 1506157,
+      "rawSha256": "1a0723f67eca5ae71eba719b44aa7fc1e1e75e3e7272184974c18a8cf8723650"
+    },
+    {
+      "sourceId": "chigasaki-yosan-soukatsu-r7",
+      "url": "https://www.city.chigasaki.kanagawa.jp/koho/1030702/1020324/1061665.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260521141330/https://www.city.chigasaki.kanagawa.jp/koho/1030702/1020324/1061665.html",
+      "waybackTimestamp": "20260521141330",
+      "checkedAt": "2026-08-23T16:17:50.658Z"
+    },
+    {
       "sourceId": "chiyoda-yosansho-r4",
       "url": "https://www.city.chiyoda.lg.jp/documents/27821/r4yosangaikyo_1.pdf",
       "kind": "file",
@@ -1955,6 +1982,17 @@
       "checkedAt": "2026-07-13T11:40:28.507Z"
     },
     {
+      "sourceId": "fuji-shi-yosan-fuzoku-r7",
+      "url": "https://www.city.fuji.shizuoka.jp/documents/7866/hngtkl000000jjas_1.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250907101245/https://www.city.fuji.shizuoka.jp/documents/7866/hngtkl000000jjas_1.pdf",
+      "waybackTimestamp": "20250907101245",
+      "checkedAt": "2026-08-23T16:14:10.087Z",
+      "sha256Match": true,
+      "waybackBytes": 568863,
+      "rawSha256": "cbeed37409ade7adc99cdbcfa8d496cdf44ac37760de40c0d8606c4c7390000f"
+    },
+    {
       "sourceId": "fujikawaguchiko-yosansho-r8",
       "url": "https://www.town.fujikawaguchiko.lg.jp/ka/info.php?if_id=7737",
       "kind": "landing",
@@ -2219,7 +2257,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260520011907/https://www.city.fukui.lg.jp/sisei/zaisei/yosan/p026947.html",
       "waybackTimestamp": "20260520011907",
-      "checkedAt": "2026-08-23T14:30:44.881Z"
+      "checkedAt": "2026-08-23T15:08:50.351Z"
     },
     {
       "sourceId": "fukui-shi-yosan-gaiyou-r7",
@@ -2235,7 +2273,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260520011725/https://www.city.fukui.lg.jp/sisei/zaisei/yosan/p071963.html",
       "waybackTimestamp": "20260520011725",
-      "checkedAt": "2026-08-23T14:28:23.297Z"
+      "checkedAt": "2026-08-23T15:07:08.799Z"
     },
     {
       "sourceId": "fukuoka-ken-yosangaiyou-r8",
@@ -2371,7 +2409,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260823112805/https://www.city.fukushima.fukushima.jp/soshiki/4/1012/1/3286.html",
       "waybackTimestamp": "20260823112805",
-      "checkedAt": "2026-08-23T13:11:58.837Z"
+      "checkedAt": "2026-08-23T15:11:33.730Z"
     },
     {
       "sourceId": "fukushima-shi-yosan-gaiyou-h29",
@@ -3559,7 +3597,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20220214054239/http://www.city.hiratsuka.kanagawa.jp/keikaku/page-c_02405.html",
       "waybackTimestamp": "20220214054239",
-      "checkedAt": "2026-08-23T14:27:41.845Z"
+      "checkedAt": "2026-08-23T15:06:31.397Z"
     },
     {
       "sourceId": "hiratsuka-yosan-gaiyou-r6",
@@ -3567,7 +3605,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20220214054239/http://www.city.hiratsuka.kanagawa.jp/keikaku/page-c_02405.html",
       "waybackTimestamp": "20220214054239",
-      "checkedAt": "2026-08-23T14:26:59.433Z"
+      "checkedAt": "2026-08-23T15:06:12.407Z"
     },
     {
       "sourceId": "hiratsuka-yosan-gaiyou-r7",
@@ -4961,7 +4999,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260318151937/https://www.city.kakogawa.lg.jp/soshikikarasagasu/kikakubu/zaiseika/yosan/1529392713015.html",
       "waybackTimestamp": "20260318151937",
-      "checkedAt": "2026-08-23T14:26:30.007Z"
+      "checkedAt": "2026-08-23T15:05:45.322Z"
     },
     {
       "sourceId": "kanagawa-yosansho-r8",
@@ -10041,7 +10079,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260213231743/https://www.city.nagaoka.niigata.jp/shisei/cate03/zaisei/r07yosan.html",
       "waybackTimestamp": "20260213231743",
-      "checkedAt": "2026-08-23T14:26:08.718Z"
+      "checkedAt": "2026-08-23T15:03:58.916Z"
     },
     {
       "sourceId": "nagaoka-yosansho-r8",
@@ -10049,7 +10087,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260530172938/https://www.city.nagaoka.niigata.jp/shisei/cate03/zaisei/r08yosan.html",
       "waybackTimestamp": "20260530172938",
-      "checkedAt": "2026-08-23T14:25:28.262Z"
+      "checkedAt": "2026-08-23T15:02:36.801Z"
     },
     {
       "sourceId": "nagasaki-ken-yosan-setsumeisho-r8",
@@ -23140,6 +23178,308 @@
       "checkedAt": "2026-07-30T05:28:31.523Z"
     },
     {
+      "sourceId": "tokushima-shi-kanbetsu-h24",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2012/mokuteki.files/02-3.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20220708100408/https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2012/mokuteki.files/02-3.pdf",
+      "waybackTimestamp": "20220708100408",
+      "checkedAt": "2026-08-23T16:07:48.480Z",
+      "sha256Match": true,
+      "waybackBytes": 77519,
+      "rawSha256": "fa1379a6d2f0aa8372471be9097a46d80f2481919f8afd82bdf5b9e8e6a7b485"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-h24",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2012/sainyu_uchiwake.files/02-2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260307063654/https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2012/sainyu_uchiwake.files/02-2.pdf",
+      "waybackTimestamp": "20260307063654",
+      "checkedAt": "2026-08-23T16:07:42.512Z",
+      "sha256Match": true,
+      "waybackBytes": 79147,
+      "rawSha256": "12b6f2b534990d7617817124ddaac6bf30fe35dbae4d0dd77271cd44ca31ba56"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-h24",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2012/sainyu_uchiwake.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260609142619/https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2012/sainyu_uchiwake.html",
+      "waybackTimestamp": "20260609142619",
+      "checkedAt": "2026-08-23T16:08:31.790Z"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-h25",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2013/sainyu_uchiwake.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260218082443/https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2013/sainyu_uchiwake.html",
+      "waybackTimestamp": "20260218082443",
+      "checkedAt": "2026-08-23T16:07:38.163Z"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-h26",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2014/mokuteki.files/02-3.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20220710045043/https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2014/mokuteki.files/02-3.pdf",
+      "waybackTimestamp": "20220710045043",
+      "checkedAt": "2026-08-23T16:06:45.624Z",
+      "sha256Match": true,
+      "waybackBytes": 137792,
+      "rawSha256": "1e1cf67daa98e5ab161b644d25f4540cdf593eae0c941e9d6de3723348bc367c"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-h26",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2014/sainyu_uchiwake.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260511203520/https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2014/sainyu_uchiwake.html",
+      "waybackTimestamp": "20260511203520",
+      "checkedAt": "2026-08-23T16:06:59.369Z"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-h27",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2015/sainyu_uchiwake.files/sainyuu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260214172744/http://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2015/sainyu_uchiwake.files/sainyuu.pdf",
+      "waybackTimestamp": "20260214172744",
+      "checkedAt": "2026-08-23T16:05:41.566Z",
+      "sha256Match": true,
+      "waybackBytes": 86972,
+      "rawSha256": "25a22ddb2907099dff9cede7776d5fa8d46faebcf0b153ed674dfe09c70ebc79"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-h27",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2015/sainyu_uchiwake.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260122142652/http://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2015/sainyu_uchiwake.html",
+      "waybackTimestamp": "20260122142652",
+      "checkedAt": "2026-08-23T16:06:10.598Z"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-h28",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2016/100100a201604071337.files/02-2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20210613051030/https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2016/100100a201604071337.files/02-2.pdf",
+      "waybackTimestamp": "20210613051030",
+      "checkedAt": "2026-08-23T16:04:11.396Z",
+      "sha256Match": true,
+      "waybackBytes": 86227,
+      "rawSha256": "2612244cb2a85718f914aae183780383428981633c3043c5e5aba3b4bfcd0673"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-h28",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2016/100100a201604071339.files/02-3.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20241206160538/http://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2016/100100a201604071339.files/02-3.pdf",
+      "waybackTimestamp": "20241206160538",
+      "checkedAt": "2026-08-23T16:04:25.904Z",
+      "sha256Match": true,
+      "waybackBytes": 71082,
+      "rawSha256": "a10cb6a7be27b072d5c5930627118b457b5312e6049b526d0229c14a54279d11"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-h29",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2019/29ippannsainyuu.files/29ippannsainyuuutiwake.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20220705103549/https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2019/29ippannsainyuu.files/29ippannsainyuuutiwake.pdf",
+      "waybackTimestamp": "20220705103549",
+      "checkedAt": "2026-08-23T16:03:09.008Z",
+      "sha256Match": true,
+      "waybackBytes": 57891,
+      "rawSha256": "d85e7d84d5995b35fb12a80d45c8acb264928722dabb7eb9cd48cf9c0616a95c"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-h29",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2019/29ippannsainyuu.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260316000046/http://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2019/29ippannsainyuu.html",
+      "waybackTimestamp": "20260316000046",
+      "checkedAt": "2026-08-23T16:04:00.915Z"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-h29",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2019/29mokutekisaisyutu.files/29mokutekibetusaisyutu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20241010015621/http://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2019/29mokutekisaisyutu.files/29mokutekibetusaisyutu.pdf",
+      "waybackTimestamp": "20241010015621",
+      "checkedAt": "2026-08-23T16:03:16.337Z",
+      "sha256Match": true,
+      "waybackBytes": 56330,
+      "rawSha256": "5db1022f329f42385fac944411daa30b67a64cfd6f8f9deab6fa6cae607c4b5b"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-h30",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2020/mokuteki.files/mokuteki.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260609093929/http://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2020/mokuteki.files/mokuteki.pdf",
+      "waybackTimestamp": "20260609093929",
+      "checkedAt": "2026-08-23T16:01:48.761Z",
+      "sha256Match": true,
+      "waybackBytes": 53954,
+      "rawSha256": "73cf1d3a2651f94a0cef1653c76923a8bd5f3f7d32b29cd6ef8448add4976bf6"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-h30",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2020/saunyu.files/sainyuuutiwake.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20220709050332/https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2020/saunyu.files/sainyuuutiwake.pdf",
+      "waybackTimestamp": "20220709050332",
+      "checkedAt": "2026-08-23T16:01:12.060Z",
+      "sha256Match": true,
+      "waybackBytes": 55088,
+      "rawSha256": "e1a058523428f7ab82ba8ffd9732f1c35c851459b1d3e3d9d264a9d68dc9f3e9"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-h31",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/h31/h31_tousho_gaiyo.files/h31_tousho_04sain.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20221203055317/https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/h31/h31_tousho_gaiyo.files/h31_tousho_04sain.pdf",
+      "waybackTimestamp": "20221203055317",
+      "checkedAt": "2026-08-23T16:00:16.167Z",
+      "sha256Match": true,
+      "waybackBytes": 56698,
+      "rawSha256": "83b97e5a6eed8d3302c2b445c3df09935d892bfa60c4f416bb8879ebe1f65e45"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-h31",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/h31/h31_tousho_gaiyo.files/h31_tousho_05saisA.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20220708141343/https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/h31/h31_tousho_gaiyo.files/h31_tousho_05saisA.pdf",
+      "waybackTimestamp": "20220708141343",
+      "checkedAt": "2026-08-23T16:00:34.707Z",
+      "sha256Match": true,
+      "waybackBytes": 55353,
+      "rawSha256": "7c25f2096c3a3ebcf5373d9478b3835b72a45d466d5de774a5d0f929fb3820da"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-h31",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/h31/h31_tousho_gaiyo.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260611064849/https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/h31/h31_tousho_gaiyo.html",
+      "waybackTimestamp": "20260611064849",
+      "checkedAt": "2026-08-23T16:01:01.746Z"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-r2",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r2/0228165931777.files/003.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250119072841/https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r2/0228165931777.files/003.pdf",
+      "waybackTimestamp": "20250119072841",
+      "checkedAt": "2026-08-23T15:59:48.418Z",
+      "sha256Match": true,
+      "waybackBytes": 89291,
+      "rawSha256": "15de41f59db6d1ef1127472dd512957d5c52ac5bc77b32a3619fe94d85849df8"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-r2",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r2/0228165931777.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260606021957/https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r2/0228165931777.html",
+      "waybackTimestamp": "20260606021957",
+      "checkedAt": "2026-08-23T15:59:52.373Z"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-r3",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r3/r3tousyoyosangaiyo.files/003.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260423030956/http://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r3/r3tousyoyosangaiyo.files/003.pdf",
+      "waybackTimestamp": "20260423030956",
+      "checkedAt": "2026-08-23T15:59:21.285Z",
+      "sha256Match": true,
+      "waybackBytes": 94036,
+      "rawSha256": "b9e6062f0bd33b481bf8a6adab9dfab9801b1f2c6decd2cd84c05d14fda46e46"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-r3",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r3/r3tousyoyosangaiyo.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260420123231/https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r3/r3tousyoyosangaiyo.html",
+      "waybackTimestamp": "20260420123231",
+      "checkedAt": "2026-08-23T15:59:46.275Z"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-r4",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r4/R4tousyo.files/003R4.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250808131423/http://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r4/R4tousyo.files/003R4.pdf",
+      "waybackTimestamp": "20250808131423",
+      "checkedAt": "2026-08-23T15:59:04.256Z",
+      "sha256Match": true,
+      "waybackBytes": 65782,
+      "rawSha256": "f537633fdd5b4440141280274f4d47b8cc8e6c3ec4530f4ce0e606e1dd942a4b"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-r4",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r4/R4tousyo.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260611072903/https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r4/R4tousyo.html",
+      "waybackTimestamp": "20260611072903",
+      "checkedAt": "2026-08-23T15:59:10.077Z"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-r5",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r5/2023022401.files/reiwa5yosankibo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20240612161355/http://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r5/2023022401.files/reiwa5yosankibo.pdf",
+      "waybackTimestamp": "20240612161355",
+      "checkedAt": "2026-08-23T15:58:50.739Z",
+      "sha256Match": true,
+      "waybackBytes": 152355,
+      "rawSha256": "77c9152638ab93d23ae070a8b15845d20da264fcd35e044aa56121afd0d55a45"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-r5",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r5/2023022401.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260607235621/https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r5/2023022401.html",
+      "waybackTimestamp": "20260607235621",
+      "checkedAt": "2026-08-23T15:58:55.349Z"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-r6",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r6/2024022602.files/reiwa6yosankibo.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250803021647/http://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r6/2024022602.files/reiwa6yosankibo.pdf",
+      "waybackTimestamp": "20250803021647",
+      "checkedAt": "2026-08-23T15:58:29.377Z",
+      "sha256Match": true,
+      "waybackBytes": 890435,
+      "rawSha256": "5582eb11c3c14ab211a93bcd002dbc27292d817d1c9805e7646722e223310b3c"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-r6",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r6/2024022602.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260114143631/http://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r6/2024022602.html",
+      "waybackTimestamp": "20260114143631",
+      "checkedAt": "2026-08-23T15:58:34.747Z"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-r7",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r7/r7yosanannogaiyoutou.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260416083612/http://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r7/r7yosanannogaiyoutou.html",
+      "waybackTimestamp": "20260416083612",
+      "checkedAt": "2026-08-23T15:58:21.196Z"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-r8",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r8/r8yosanannogaiyoutou.files/r8_kaikeibetuyosankibokanbetuutiwakehyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260421231151/http://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r8/r8yosanannogaiyoutou.files/r8_kaikeibetuyosankibokanbetuutiwakehyou.pdf",
+      "waybackTimestamp": "20260421231151",
+      "checkedAt": "2026-08-23T15:57:49.402Z",
+      "sha256Match": true,
+      "waybackBytes": 164328,
+      "rawSha256": "9e01d82ec13cc6891e1b9207e2d1864701d4d6d091b8f1fcc8e3e4d45efe58e5"
+    },
+    {
+      "sourceId": "tokushima-shi-kanbetsu-r8",
+      "url": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r8/r8yosanannogaiyoutou.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260306152409/http://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/r8/r8yosanannogaiyoutou.html",
+      "waybackTimestamp": "20260306152409",
+      "checkedAt": "2026-08-23T15:57:54.015Z"
+    },
+    {
       "sourceId": "tokyo-yosangaiyou-h29",
       "url": "https://www.zaimu.metro.tokyo.lg.jp/documents/d/zaimu/29yosangaiyou5_3-1",
       "kind": "file",
@@ -24683,6 +25023,90 @@
       "waybackUrl": "https://web.archive.org/web/20251206161316/https://www.pref.yamanashi.jp/zaisei/43539671890.html",
       "waybackTimestamp": "20251206161316",
       "checkedAt": "2026-07-14T04:39:09.783Z"
+    },
+    {
+      "sourceId": "yamato-yosan-fuzoku-r4",
+      "url": "https://www.city.yamato.lg.jp/gyosei/soshik/39/shinoshokai/zaisei/5283.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260212193655/https://www.city.yamato.lg.jp/gyosei/soshik/39/shinoshokai/zaisei/5283.html",
+      "waybackTimestamp": "20260212193655",
+      "checkedAt": "2026-08-23T16:13:32.475Z"
+    },
+    {
+      "sourceId": "yamato-yosan-fuzoku-r4",
+      "url": "https://www.city.yamato.lg.jp/material/files/group/8/R4yosanfuzoku.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250317115738/https://www.city.yamato.lg.jp/material/files/group/8/R4yosanfuzoku.pdf",
+      "waybackTimestamp": "20250317115738",
+      "checkedAt": "2026-08-23T16:13:09.251Z",
+      "sha256Match": true,
+      "waybackBytes": 801973,
+      "rawSha256": "6c173a46c847015d5ff9f355f5a034a336dbbcfbbb6f7f2674d58711f1c5102c"
+    },
+    {
+      "sourceId": "yamato-yosan-fuzoku-r5",
+      "url": "https://www.city.yamato.lg.jp/gyosei/soshik/39/shinoshokai/zaisei/5283.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260212193655/https://www.city.yamato.lg.jp/gyosei/soshik/39/shinoshokai/zaisei/5283.html",
+      "waybackTimestamp": "20260212193655",
+      "checkedAt": "2026-08-23T16:12:43.845Z"
+    },
+    {
+      "sourceId": "yamato-yosan-fuzoku-r5",
+      "url": "https://www.city.yamato.lg.jp/material/files/group/8/R5huzoku.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250317121151/https://www.city.yamato.lg.jp/material/files/group/8/R5huzoku.pdf",
+      "waybackTimestamp": "20250317121151",
+      "checkedAt": "2026-08-23T16:12:22.780Z",
+      "sha256Match": true,
+      "waybackBytes": 784756,
+      "rawSha256": "a8723107b6cc9fa2b99244f4f7acb7b369b1276ed257c9601e30066c1fab650f"
+    },
+    {
+      "sourceId": "yamato-yosan-fuzoku-r6",
+      "url": "https://www.city.yamato.lg.jp/gyosei/soshik/39/shinoshokai/zaisei/5283.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260212193655/https://www.city.yamato.lg.jp/gyosei/soshik/39/shinoshokai/zaisei/5283.html",
+      "waybackTimestamp": "20260212193655",
+      "checkedAt": "2026-08-23T16:11:39.971Z"
+    },
+    {
+      "sourceId": "yamato-yosan-fuzoku-r6",
+      "url": "https://www.city.yamato.lg.jp/material/files/group/8/R6fuzoku.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250317123032/https://www.city.yamato.lg.jp/material/files/group/8/R6fuzoku.pdf",
+      "waybackTimestamp": "20250317123032",
+      "checkedAt": "2026-08-23T16:11:37.602Z",
+      "sha256Match": true,
+      "waybackBytes": 736943,
+      "rawSha256": "25f5e7ead7174c23456e6a0096b309473a988d75375126c62964af8f84643940"
+    },
+    {
+      "sourceId": "yamato-yosan-fuzoku-r7",
+      "url": "https://www.city.yamato.lg.jp/gyosei/soshik/39/shinoshokai/zaisei/5283.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260212193655/https://www.city.yamato.lg.jp/gyosei/soshik/39/shinoshokai/zaisei/5283.html",
+      "waybackTimestamp": "20260212193655",
+      "checkedAt": "2026-08-23T16:11:27.839Z"
+    },
+    {
+      "sourceId": "yamato-yosan-fuzoku-r7",
+      "url": "https://www.city.yamato.lg.jp/material/files/group/8/R7huzoku_0328.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20251006164319/https://www.city.yamato.lg.jp/material/files/group/8/R7huzoku_0328.pdf",
+      "waybackTimestamp": "20251006164319",
+      "checkedAt": "2026-08-23T16:11:14.017Z",
+      "sha256Match": true,
+      "waybackBytes": 2115283,
+      "rawSha256": "853380477911e5f5e75a9bf99dd4049bc9947d4dac7475b4bf235bf9686cf89b"
+    },
+    {
+      "sourceId": "yamato-yosan-fuzoku-r8",
+      "url": "https://www.city.yamato.lg.jp/gyosei/soshik/39/shinoshokai/zaisei/5283.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260212193655/https://www.city.yamato.lg.jp/gyosei/soshik/39/shinoshokai/zaisei/5283.html",
+      "waybackTimestamp": "20260212193655",
+      "checkedAt": "2026-08-23T16:11:11.774Z"
     },
     {
       "sourceId": "yokkaichi-yosan-siryou-r2",

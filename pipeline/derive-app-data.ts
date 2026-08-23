@@ -2509,6 +2509,35 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `kakogawa-yosanpoint-${fy}`, muniCode: "282103", muniName: "加古川市", prefName: "兵庫県", isPref: false,
     })),
+    // 徳島市は市長選が4年ごと（H24・H28・R2・R6 が骨格予算）で、その翌年度の前年度列は肉付補正後
+    ...([
+      "r8", "r7", "r6", "r5", "r4", "r3", "r2",
+      "h31", "h30", "h29", "h28", "h27", "h26", "h25", "h24",
+    ] as const).map((fy) => ({
+      srcId: `tokushima-shi-kanbetsu-${fy}`, muniCode: "362018", muniName: "徳島市", prefName: "徳島県", isPref: false,
+    })),
+    // 草加市は市議会サイトの参考資料が R8〜R6 の3年度だけ（予算書は罫線セルでパーサ側の宿題）
+    ...(["r8", "r7", "r6"] as const).map((fy) => ({
+      srcId: `soka-yosan-sankou-${fy}`, muniCode: "112216", muniName: "草加市", prefName: "埼玉県", isPref: false,
+    })),
+    // 大和市は H27 以前に歳入の款別表が無い
+    ...([
+      "r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28",
+    ] as const).map((fy) => ({
+      srcId: `yamato-yosan-fuzoku-${fy}`, muniCode: "142131", muniName: "大和市", prefName: "神奈川県", isPref: false,
+    })),
+    ...([
+      "r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29",
+    ] as const).map((fy) => ({
+      srcId: `fuji-shi-yosan-fuzoku-${fy}`, muniCode: "222101", muniName: "富士市", prefName: "静岡県", isPref: false,
+    })),
+    // 茅ヶ崎市は H25・H23 が収録不可、H20 以前は PDF が無く HTML 表のみ
+    ...([
+      "r8", "r7", "r6", "r5", "r4", "r3", "r2", "r1",
+      "h30", "h29", "h28", "h27", "h26", "h24", "h22", "h21",
+    ] as const).map((fy) => ({
+      srcId: `chigasaki-yosan-soukatsu-${fy}`, muniCode: "142077", muniName: "茅ヶ崎市", prefName: "神奈川県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。

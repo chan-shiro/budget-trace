@@ -1,0 +1,19 @@
+{
+  "sourceId": "chigasaki-yosan-soukatsu-h22",
+  "files": [
+    {
+      "filename": "22tousho_soukatsu2.pdf",
+      "sha256": "a564f9220e08aa2e32375e56bf191a25fb6b73fe2447489468d004fdceab79ce",
+      "bytes": 109819,
+      "fetchedAt": "2026-08-23T15:41:04.760Z",
+      "fetchedFrom": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/008/562/22tousho_soukatsu2.pdf"
+    },
+    {
+      "filename": "22tousho_soukatsu3.pdf",
+      "sha256": "a96f60943c7486318bbc95b23a1658e026574a9d98d6d558e5e880d40d0edd6d",
+      "bytes": 91802,
+      "fetchedAt": "2026-08-23T15:41:05.106Z",
+      "fetchedFrom": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/008/562/22tousho_soukatsu3.pdf"
+    }
+  ]
+}

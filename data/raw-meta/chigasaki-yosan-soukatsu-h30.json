@@ -1,0 +1,19 @@
+{
+  "sourceId": "chigasaki-yosan-soukatsu-h30",
+  "files": [
+    {
+      "filename": "02H30sainyuu.pdf",
+      "sha256": "cecd3f7fd9dcb031cc7bcee24e5a3ba3bf9309b583770d9b79789647607260fd",
+      "bytes": 200980,
+      "fetchedAt": "2026-08-23T15:40:59.057Z",
+      "fetchedFrom": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/030/356/02H30sainyuu.pdf"
+    },
+    {
+      "filename": "03H30saisyutumokuteki.pdf",
+      "sha256": "0c9b234188911cb87c0d9f558674be9331dcaf1dce1a4b9bb65fd27792bdd47a",
+      "bytes": 185045,
+      "fetchedAt": "2026-08-23T15:40:59.409Z",
+      "fetchedFrom": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/030/356/03H30saisyutumokuteki.pdf"
+    }
+  ]
+}
