@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 134,
+  "budgetCount": 139,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 749,
-  "fileCount": 1908,
-  "archivedCount": 714,
+  "sourceCount": 782,
+  "fileCount": 1949,
+  "archivedCount": 747,
   "licenseOpen": 80,
-  "licensePermission": 586,
+  "licensePermission": 619,
   "licenseUnverified": 83,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -147,6 +147,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H28〜R8（11年度）"
     },
     {
+      "name": "奈良市",
+      "code": "292010",
+      "years": 11,
+      "range": "H28〜R8（11年度）"
+    },
+    {
       "name": "宇都宮市",
       "code": "092011",
       "years": 10,
@@ -221,6 +227,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "札幌市",
       "code": "011002",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "川越市",
+      "code": "112011",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },
@@ -351,6 +363,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H29〜R8（6年度）"
     },
     {
+      "name": "所沢市",
+      "code": "112089",
+      "years": 5,
+      "range": "R4〜R8（5年度）"
+    },
+    {
       "name": "品川区",
       "code": "131091",
       "years": 5,
@@ -369,10 +387,22 @@ export const ROADMAP_PROGRESS = {
       "range": "R4〜R8（5年度）"
     },
     {
+      "name": "大津市",
+      "code": "252018",
+      "years": 5,
+      "range": "R4〜R8（5年度）"
+    },
+    {
       "name": "堺市",
       "code": "271403",
       "years": 5,
       "range": "R2〜R8（5年度）"
+    },
+    {
+      "name": "高槻市",
+      "code": "272078",
+      "years": 5,
+      "range": "R4〜R8（5年度）"
     },
     {
       "name": "姫路市",

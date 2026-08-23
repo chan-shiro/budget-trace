@@ -10032,5 +10032,251 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.takasaki.gunma.jp/uploaded/attachment/6399.pdf",
     "license": "本サイトに掲載している文書や画像等の各ファイル及びその内容に関する著作権は、原則として高崎市またはコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。本サイトに掲載している文書・画像等の無断使用・転載を禁止します。",
     "target": "file"
+  },
+  "/sources/nara-shi-yosanan-gaiyou-r8/209549.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nara.lg.jp/uploaded/attachment/209549.pdf",
+    "license": "奈良市公式ホームページに掲載の文章、画像などの著作権は、奈良市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、当ホームページに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/nara-shi-yosanan-gaiyou-r7/193354.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nara.lg.jp/uploaded/attachment/193354.pdf",
+    "license": "奈良市公式ホームページに掲載の文章、画像などの著作権は、奈良市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、当ホームページに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/nara-shi-yosanan-gaiyou-r6/174848.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nara.lg.jp/uploaded/attachment/174848.pdf",
+    "license": "奈良市公式ホームページに掲載の文章、画像などの著作権は、奈良市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、当ホームページに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/nara-shi-yosanan-gaiyou-r5/157157.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nara.lg.jp/uploaded/attachment/157157.pdf",
+    "license": "奈良市公式ホームページに掲載の文章、画像などの著作権は、奈良市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、当ホームページに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/nara-shi-yosanan-gaiyou-r4/141146.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nara.lg.jp/uploaded/attachment/141146.pdf",
+    "license": "奈良市公式ホームページに掲載の文章、画像などの著作権は、奈良市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、当ホームページに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/nara-shi-yosanan-gaiyou-r3/122732.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nara.lg.jp/uploaded/attachment/122732.pdf",
+    "license": "奈良市公式ホームページに掲載の文章、画像などの著作権は、奈良市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、当ホームページに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/nara-shi-yosanan-gaiyou-r2/101115.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nara.lg.jp/uploaded/attachment/101115.pdf",
+    "license": "奈良市公式ホームページに掲載の文章、画像などの著作権は、奈良市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、当ホームページに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/nara-shi-yosanan-gaiyou-h28/14021.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nara.lg.jp/uploaded/attachment/14021.pdf",
+    "license": "奈良市公式ホームページに掲載の文章、画像などの著作権は、奈良市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、当ホームページに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/nara-shi-yosanan-bunsatsu-h31/28764.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nara.lg.jp/uploaded/attachment/28764.pdf",
+    "license": "奈良市公式ホームページに掲載の文章、画像などの著作権は、奈良市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、当ホームページに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/nara-shi-yosanan-bunsatsu-h31/28765.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nara.lg.jp/uploaded/attachment/28765.pdf",
+    "license": "奈良市公式ホームページに掲載の文章、画像などの著作権は、奈良市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、当ホームページに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/nara-shi-yosanan-bunsatsu-h30/22053.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nara.lg.jp/uploaded/attachment/22053.pdf",
+    "license": "奈良市公式ホームページに掲載の文章、画像などの著作権は、奈良市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、当ホームページに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/nara-shi-yosanan-bunsatsu-h30/22054.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nara.lg.jp/uploaded/attachment/22054.pdf",
+    "license": "奈良市公式ホームページに掲載の文章、画像などの著作権は、奈良市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、当ホームページに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/nara-shi-yosanan-bunsatsu-h29/14539.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nara.lg.jp/uploaded/attachment/14539.pdf",
+    "license": "奈良市公式ホームページに掲載の文章、画像などの著作権は、奈良市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、当ホームページに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/nara-shi-yosanan-bunsatsu-h29/14540.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nara.lg.jp/uploaded/attachment/14540.pdf",
+    "license": "奈良市公式ホームページに掲載の文章、画像などの著作権は、奈良市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、当ホームページに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/kawagoe-yosan-sankou-r8/r8sanko.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kawagoe.saitama.jp/_res/projects/default_project/_page_/001/016/409/r8sanko.pdf",
+    "license": "市ホームページから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、川越市に帰属します。また、一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "file"
+  },
+  "/sources/kawagoe-yosan-sankou-r7/r7sanko.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kawagoe.saitama.jp/_res/projects/default_project/_page_/001/020/589/r7sanko.pdf",
+    "license": "市ホームページから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、川越市に帰属します。また、一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "file"
+  },
+  "/sources/kawagoe-yosan-sankou-r6/r6sanko.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kawagoe.saitama.jp/_res/projects/default_project/_page_/001/010/992/r6sanko.pdf",
+    "license": "市ホームページから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、川越市に帰属します。また、一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "file"
+  },
+  "/sources/kawagoe-yosan-sankou-r5/r5sanko.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kawagoe.saitama.jp/_res/projects/default_project/_page_/001/010/997/r5sanko.pdf",
+    "license": "市ホームページから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、川越市に帰属します。また、一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "file"
+  },
+  "/sources/kawagoe-yosan-sankou-r4/r4sankousiryo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kawagoe.saitama.jp/_res/projects/default_project/_page_/001/011/000/r4sankousiryo.pdf",
+    "license": "市ホームページから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、川越市に帰属します。また、一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "file"
+  },
+  "/sources/kawagoe-yosan-sankou-r3/r3sankousiryo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kawagoe.saitama.jp/_res/projects/default_project/_page_/001/011/004/r3sankousiryo.pdf",
+    "license": "市ホームページから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、川越市に帰属します。また、一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "file"
+  },
+  "/sources/kawagoe-yosan-sankou-r2/r2tousyoyosannsannkousiryo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kawagoe.saitama.jp/_res/projects/default_project/_page_/001/011/009/r2tousyoyosannsannkousiryo.pdf",
+    "license": "市ホームページから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、川越市に帰属します。また、一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "file"
+  },
+  "/sources/takatsuki-yosan-gaikyo-r8/64584.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takatsuki.osaka.jp/uploaded/attachment/64584.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、高槻市または原著作者に帰属します。著作権法上認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできません。",
+    "target": "file"
+  },
+  "/sources/takatsuki-yosan-gaikyo-r8/64570.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takatsuki.osaka.jp/uploaded/attachment/64570.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、高槻市または原著作者に帰属します。著作権法上認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできません。",
+    "target": "file"
+  },
+  "/sources/takatsuki-yosan-gaikyo-r7/52675.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takatsuki.osaka.jp/uploaded/attachment/52675.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、高槻市または原著作者に帰属します。著作権法上認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできません。",
+    "target": "file"
+  },
+  "/sources/takatsuki-yosan-gaikyo-r7/52627.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takatsuki.osaka.jp/uploaded/attachment/52627.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、高槻市または原著作者に帰属します。著作権法上認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできません。",
+    "target": "file"
+  },
+  "/sources/takatsuki-yosan-gaikyo-r6/41479.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takatsuki.osaka.jp/uploaded/attachment/41479.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、高槻市または原著作者に帰属します。著作権法上認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできません。",
+    "target": "file"
+  },
+  "/sources/takatsuki-yosan-gaikyo-r6/41484.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takatsuki.osaka.jp/uploaded/attachment/41484.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、高槻市または原著作者に帰属します。著作権法上認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできません。",
+    "target": "file"
+  },
+  "/sources/takatsuki-yosan-gaikyo-r5/33368.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20250617172858id_/https://www.city.takatsuki.osaka.jp/uploaded/attachment/33368.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、高槻市または原著作者に帰属します。著作権法上認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできません。",
+    "target": "file"
+  },
+  "/sources/takatsuki-yosan-gaikyo-r5/29086.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20250617163115id_/https://www.city.takatsuki.osaka.jp/uploaded/attachment/29086.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、高槻市または原著作者に帰属します。著作権法上認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできません。",
+    "target": "file"
+  },
+  "/sources/takatsuki-yosan-gaikyo-r4/19938.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20250328150344id_/https://www.city.takatsuki.osaka.jp/uploaded/attachment/19938.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、高槻市または原著作者に帰属します。著作権法上認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできません。",
+    "target": "file"
+  },
+  "/sources/takatsuki-yosan-gaikyo-r4/19937.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20250328143150id_/https://www.city.takatsuki.osaka.jp/uploaded/attachment/19937.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、高槻市または原著作者に帰属します。著作権法上認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできません。",
+    "target": "file"
+  },
+  "/sources/otsu-yosansho-r8/r8tousyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.otsu.lg.jp/material/files/group/114/r8tousyo.pdf",
+    "license": "大津市ホームページに掲載しているコンテンツ（文章、写真、イラスト、PDFなど）に関する著作権は原則として大津市に帰属します。ただし、一部の画像などの著作権は、大津市以外の原著作者が所有しています。「私的使用のための複製」や「引用」など、法律で認められている場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
+  },
+  "/sources/otsu-yosansho-r7/r7tousyo.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20250517/20250515112703/https://www.city.otsu.lg.jp/material/files/group/114/r7tousyo.pdf",
+    "license": "大津市ホームページに掲載しているコンテンツ（文章、写真、イラスト、PDFなど）に関する著作権は原則として大津市に帰属します。ただし、一部の画像などの著作権は、大津市以外の原著作者が所有しています。「私的使用のための複製」や「引用」など、法律で認められている場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
+  },
+  "/sources/otsu-yosansho-r6/reiwa6tousyo.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20240517/20240515024644/https://www.city.otsu.lg.jp/material/files/group/114/reiwa6tousyo.pdf",
+    "license": "大津市ホームページに掲載しているコンテンツ（文章、写真、イラスト、PDFなど）に関する著作権は原則として大津市に帰属します。ただし、一部の画像などの著作権は、大津市以外の原著作者が所有しています。「私的使用のための複製」や「引用」など、法律で認められている場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
+  },
+  "/sources/otsu-yosansho-r5/r5tousyo.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20230516/20230513045555/https://www.city.otsu.lg.jp/material/files/group/114/r5tousyo.pdf",
+    "license": "大津市ホームページに掲載しているコンテンツ（文章、写真、イラスト、PDFなど）に関する著作権は原則として大津市に帰属します。ただし、一部の画像などの著作権は、大津市以外の原著作者が所有しています。「私的使用のための複製」や「引用」など、法律で認められている場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
+  },
+  "/sources/otsu-yosansho-r4/toushoyosan.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20221114/20221112063843/https://www.city.otsu.lg.jp/material/files/group/114/toushoyosan.pdf",
+    "license": "大津市ホームページに掲載しているコンテンツ（文章、写真、イラスト、PDFなど）に関する著作権は原則として大津市に帰属します。ただし、一部の画像などの著作権は、大津市以外の原著作者が所有しています。「私的使用のための複製」や「引用」など、法律で認められている場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
+  },
+  "/sources/tokorozawa-yosan-siryo-r8/siryo-R08-042-043.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tokorozawa.saitama.jp/shiseijoho/shichougian/reiwa8nendai2kai.html",
+    "license": "所沢市ホームページ上に掲載されている文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として所沢市に帰属します。（一部の画像等の著作権は、原著作者が所有しています。）また、所沢市ホームページ内にて掲載された会社名・製品名などの名称は、一般に各社の商標あるいは登録商標です。著作権法上認められる場合を除き、所沢市の許可なく所沢市ホームページ上に掲載されている文書や画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。なお、所沢市の各課が配信するページ等に利用規約等、特段の定めがある場合は、この取り扱いに優先するものとします。",
+    "target": "page"
+  },
+  "/sources/tokorozawa-yosan-siryo-r7/siryou-R7-009-018.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tokorozawa.saitama.jp/shiseijoho/shichougian/reiwa7nendai1kaiteireikai.html",
+    "license": "所沢市ホームページ上に掲載されている文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として所沢市に帰属します。（一部の画像等の著作権は、原著作者が所有しています。）また、所沢市ホームページ内にて掲載された会社名・製品名などの名称は、一般に各社の商標あるいは登録商標です。著作権法上認められる場合を除き、所沢市の許可なく所沢市ホームページ上に掲載されている文書や画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。なお、所沢市の各課が配信するページ等に利用規約等、特段の定めがある場合は、この取り扱いに優先するものとします。",
+    "target": "page"
+  },
+  "/sources/tokorozawa-yosan-siryo-r6/siryo-R6-008-017.pdf": {
+    "mode": "origin",
+    "href": "https://web.archive.org/web/20250214111844/https://www.city.tokorozawa.saitama.jp/shiseijoho/shichougian/reiwa6nendai1kaiteireikai.html",
+    "license": "所沢市ホームページ上に掲載されている文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として所沢市に帰属します。（一部の画像等の著作権は、原著作者が所有しています。）また、所沢市ホームページ内にて掲載された会社名・製品名などの名称は、一般に各社の商標あるいは登録商標です。著作権法上認められる場合を除き、所沢市の許可なく所沢市ホームページ上に掲載されている文書や画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。なお、所沢市の各課が配信するページ等に利用規約等、特段の定めがある場合は、この取り扱いに優先するものとします。",
+    "target": "page"
+  },
+  "/sources/tokorozawa-yosan-siryo-r5/siryoR5-9-18.pdf": {
+    "mode": "origin",
+    "href": "https://web.archive.org/web/20230306080104/https://www.city.tokorozawa.saitama.jp/shiseijoho/shichougian/bunsyo20230208.html",
+    "license": "所沢市ホームページ上に掲載されている文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として所沢市に帰属します。（一部の画像等の著作権は、原著作者が所有しています。）また、所沢市ホームページ内にて掲載された会社名・製品名などの名称は、一般に各社の商標あるいは登録商標です。著作権法上認められる場合を除き、所沢市の許可なく所沢市ホームページ上に掲載されている文書や画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。なお、所沢市の各課が配信するページ等に利用規約等、特段の定めがある場合は、この取り扱いに優先するものとします。",
+    "target": "page"
+  },
+  "/sources/tokorozawa-yosan-siryo-r4/siryo-R4-011-020.pdf": {
+    "mode": "origin",
+    "href": "https://web.archive.org/web/20220217075546/https://www.city.tokorozawa.saitama.jp/shiseijoho/shichougian/bunsyo20220216101931943.html",
+    "license": "所沢市ホームページ上に掲載されている文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として所沢市に帰属します。（一部の画像等の著作権は、原著作者が所有しています。）また、所沢市ホームページ内にて掲載された会社名・製品名などの名称は、一般に各社の商標あるいは登録商標です。著作権法上認められる場合を除き、所沢市の許可なく所沢市ホームページ上に掲載されている文書や画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。なお、所沢市の各課が配信するページ等に利用規約等、特段の定めがある場合は、この取り扱いに優先するものとします。",
+    "target": "page"
   }
 };

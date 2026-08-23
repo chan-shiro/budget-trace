@@ -1,0 +1,19 @@
+{
+  "sourceId": "takatsuki-yosan-gaikyo-r5",
+  "files": [
+    {
+      "filename": "33368.pdf",
+      "sha256": "bb568febfd611b0259e528b10baa9e42332733d8fbc64a545d24b6214ca7d507",
+      "bytes": 106819,
+      "fetchedAt": "2026-08-23T02:27:12.086Z",
+      "fetchedFrom": "https://web.archive.org/web/20250617172858id_/https://www.city.takatsuki.osaka.jp/uploaded/attachment/33368.pdf"
+    },
+    {
+      "filename": "29086.pdf",
+      "sha256": "ce67569e6a18b0e62c17a8ab1d9b21171ba9220c0b9ad4c2965c9a17f1444fd0",
+      "bytes": 95982,
+      "fetchedAt": "2026-08-23T02:27:12.868Z",
+      "fetchedFrom": "https://web.archive.org/web/20250617163115id_/https://www.city.takatsuki.osaka.jp/uploaded/attachment/29086.pdf"
+    }
+  ]
+}
