@@ -1586,7 +1586,12 @@ export const WAYBACK_BY_URL: Record<string, string> = ${JSON.stringify(byUrl, nu
     for (const f of meta?.files ?? []) {
       const from = f.fetchedFrom;
       const link: Omit<Link, "target"> | null = s.noDeepLink
-        ? { mode: "origin", href: s.landingPage!, license: s.license }
+        ? // ⚠ **`noDeepLink` でも mode は宛先で決める**（2026-08-23・レビュー指摘）— ここだけ `origin` を
+          //   決め打ちしていたため、**landingPage が魚拓の資料で「発行元で開く ↗」と表示して
+          //   web.archive.org / warp.ndl.go.jp が開いていた**（水戸 H30・八尾 R5/R4/R3・所沢 R6/R5/R4 の7件）。
+          //   文言は `mode` から作られる（`src/client/lib/data.ts` の `actionLabel`/`openLabel`）ので、
+          //   **宛先の実態と mode を必ず一致させる**。他の分岐は最初からこう書いてある。
+          { mode: isArchiveUrl(s.landingPage!) ? "archive" : "origin", href: s.landingPage!, license: s.license }
         : /^https?:/.test(from)
           ? { mode: isArchiveUrl(from) ? "archive" : "origin", href: from, license: s.license }
           : ARCHIVES[registryUrl ?? ""]
@@ -2459,6 +2464,28 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     // 津市は R5 以前が全ページ スキャン画像で収録不可
     ...(["r8", "r7", "r6"] as const).map((fy) => ({
       srcId: `tsu-shi-yosansho-${fy}`, muniCode: "242012", muniName: "津市", prefName: "三重県", isPref: false,
+    })),
+    // 水戸市は R3（歳入が集約）・H31（テキスト層破損）が収録不可、H30 は Wayback から
+    ...(["r8", "r7", "r6", "r5", "r4", "h30"] as const).map((fy) => ({
+      srcId: `mito-yosangaiyou-${fy}`, muniCode: "082015", muniName: "水戸市", prefName: "茨城県", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28"] as const).map((fy) => ({
+      srcId: `fukushima-shi-yosan-gaiyou-${fy}`, muniCode: "072010", muniName: "福島市", prefName: "福島県", isPref: false,
+    })),
+    // 青森市は R2 以前が発行元から消えており魚拓にも無い（未確認なので unrecordable には載せていない）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
+      srcId: `aomorishi-yosan-gaiyou-${fy}`, muniCode: "022012", muniName: "青森市", prefName: "青森県", isPref: false,
+    })),
+    // 市原市は R1 が原典の呼称どおり西暦表記（2019年度）。H20 以前は未確認
+    ...([
+      "r8", "r7", "r6", "r5", "r4", "r3", "r2", "r1",
+      "h30", "h29", "h28", "h27", "h26", "h25", "h24", "h23", "h22", "h21",
+    ] as const).map((fy) => ({
+      srcId: `ichihara-yosansho-${fy}`, muniCode: "122190", muniName: "市原市", prefName: "千葉県", isPref: false,
+    })),
+    // 八尾市は R1 以前がスキャン画像、R2 は化け（どちらも自分で確かめていないので unrecordable には載せていない）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
+      srcId: `yao-yosansho-${fy}`, muniCode: "272124", muniName: "八尾市", prefName: "大阪府", isPref: false,
     })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。

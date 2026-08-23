@@ -60,6 +60,20 @@ interface Options {
    */
   kanNameContinues?: { revenue?: number[]; expenditure?: number[] };
   /**
+   * **`kanNameContinues` の下段待ちを空行1本ぶんだけ跨がせる**（2026-08-23・八尾 R8〜R5）。
+   *
+   * 既定では行間の空行で折返しバッファを捨てる（款は空行を挟まず連続するという前提）。ところが
+   * 八尾の予算書は `-layout` が款9 の金額行と下段の間に空行を1本入れるため、
+   * **款名が `国有提供施設等所在市町村` で切れる**（下段の `助成交付金` が落ちる）。
+   * ⚠ **金額は正しく Σ も4系統とも差0** なので、**款名の全件目視でしか気づけない**。
+   * ⚠ 同じ八尾でも R4・R3 は空行が入らず完全形で取れる＝**同一自治体の年度間で揺れる**。
+   *
+   * ⚠⚠ **既定にしない**（opt-in）。空行を跨ぐと、下段が実は来ない様式で
+   * **遠く離れた別の断片を款名に足しかねない**。跨ぐのは
+   * **`kanNameContinues` で款番号を明示した款の下段待ち中・空行1本まで**に限る。
+   */
+  kanNameContinuesAcrossBlank?: boolean;
+  /**
    * **見開き2ページ型**（2026-07-16・新潟 R8 で発見）。**款名と金額が別ページに載る**様式:
    *   p.8 =「款番号＋款名」だけ（金額なし）  /  p.9 =「本年度・前年度・比較」だけ（款名なし）
    * `revenuePages`（複数ページを**縦に**連結）とも `samePage`（1ページに2側）とも別方向で、
@@ -119,7 +133,15 @@ interface Options {
    *   合計行はラベルが数字の後ろに来る（`242,022,354 … 4.2 合 計`）が、合計検出は空白を
    *   畳んでから `includes` するので当たる。
    */
-  textSource?: "layout" | "raw";
+  /**
+   * ⚠ **側ごとに分けられる**（2026-08-23・市原 R8）。市原 R8 の歳入は `交通安全対策特別交付金` の
+   *   `策` と `特` がほぼ同じ x に置かれており、`-layout` が `策` を右へ押し出して
+   *   **`交通安全対特別交付策金`** になる（⚠ `revenueCropX` では直らない — x/W を24通り試して全滅）。
+   *   `-raw` なら正しい。**ところが同じ年度の歳出は `-raw` だと合計ラベルが金額行から3行離れて
+   *   「歳出合計 行が見つかりません」で throw する**。片側だけ `-raw` にできないと収録できない。
+   *   ⚠ 単一値のときは両側に効く（既存の指定は意味が変わらない）。
+   */
+  textSource?: "layout" | "raw" | { revenue?: "layout" | "raw"; expenditure?: "layout" | "raw" };
   /**
    * **ToUnicode 欠落 PDF の決定論的復号**（#159・pipeline/lib/garble-decode.ts）。
    * 豊島 R4/R2/H31〜H29・大田 H27・品川 R2 は荒川（#125）と同一の化けマップで、
@@ -669,8 +691,12 @@ function parseKanPage(
   const suffixRe = suffixSrc ? new RegExp(suffixSrc) : null;
   const spread = side === "revenue" ? opts.revenueSpread : opts.expenditureSpread;
   const cropX = side === "revenue" ? opts.revenueCropX : opts.expenditureCropX;
-  // テキスト抽出モード（Options.textSource 参照）。既定 -layout。
-  const src = opts.textSource ?? "layout";
+  // テキスト抽出モード（Options.textSource 参照）。既定 -layout。側ごとの指定にも対応する。
+  const srcOpt = opts.textSource;
+  const src =
+    typeof srcOpt === "object" && srcOpt !== null
+      ? (side === "revenue" ? srcOpt.revenue : srcOpt.expenditure) ?? "layout"
+      : srcOpt ?? "layout";
   let text = spread
     ? pdfPageText(filePath, spread.namePage, undefined, src) +
       "\n" +
@@ -808,7 +834,11 @@ function parseKanPage(
   // 款行の名前欄が空だった款だけを「下段待ち」にし、続く日本語断片をその款名の末尾に足す。
   // 名前欄が非空の款（＝行内で名前が完結）は下段待ちにしないので、上段折返し
   // （"国有提供施設等所在" + "4 市町村助成交付金 3,000"）の既存挙動は変わらない。
-  let openLine: BudgetLineFact | null = null;
+  // ⚠ 型注釈つきの `as` は**narrowing 除け**。`emit`（クロージャ）からしか代入されない区間があり、
+  //   素で `= null` と書くと TS がループ先頭で `null` に絞り込んで `openLine.kanNo` が `never` になる。
+  let openLine = null as BudgetLineFact | null;
+  // `kanNameContinuesAcrossBlank` 用。openLine が立ってから跨いだ空行の本数
+  let blanksSinceOpen = 0;
   // 「金額はあるが款番号が無く、どの款にも結び付かない行」＝孤児。直後に款番号の単独行が来たら
   // その款の上段だったと分かる（Options 参照なしの構造判定。静岡 R8 の第5の折返し型）
   let orphan: { namePart: string; ints: string[]; raw: string } | null = null;
@@ -915,6 +945,7 @@ function parseKanPage(
     lines.push(line);
     reset();
     openLine = awaitTail ? line : null;
+    blanksSinceOpen = 0;
   };
 
   // 款名の断片（折返し）に日本語（漢字・かな）が含まれるか。列見出し「Ａ ％ Ｂ」等の
@@ -1042,6 +1073,19 @@ function parseKanPage(
       }
     }
     if (compact === "") {
+      // `kanNameContinuesAcrossBlank`（Options 参照）を立てた款の下段待ち中だけ、
+      // **空行1本を跨いで openLine を保つ**。2本目からは従来どおり捨てる（遠くの断片を拾わない）。
+      if (
+        opts.kanNameContinuesAcrossBlank &&
+        openLine &&
+        openLine.kanNo != null &&
+        tailKans.has(openLine.kanNo) &&
+        blanksSinceOpen === 0
+      ) {
+        blanksSinceOpen += 1;
+        reset();
+        continue;
+      }
       reset(); // 行間の空行で断片を破棄（款は空行を挟まず連続する）
       openLine = null; // 下段折返しは款行の直後に来る。空行を挟んだら別物
       continue;
@@ -1179,7 +1223,7 @@ function parseKanPage(
     const abolished =
       !lead &&
       ints.length >= 2 &&
-      (/^\s*(?:廃款|[△▲〇○])/.test(raw) || compact.includes("皆減"));
+      (/^\s*(?:廃款|[（(]\s*廃\s*[）)]|[△▲〇○])/.test(raw) || compact.includes("皆減"));
     if (abolished) {
       // 款名から**廃止マーカーと空セルのダッシュ**を落とす（`▲自動車取得税交付金--` `自動車税環境△`）。
       // 表示専用なので Σ も款名重複ゲートも守ってくれない領域＝出力を目視して確かめること。
@@ -1198,7 +1242,15 @@ function parseKanPage(
       // 年度間でも揺れる**（中央 R6/H29 と同じ）。
       // ⚠ ダッシュのクラスは `dashAsZero`（Options 参照）と**同じものに揃える**。
       //    片方だけ広げると、次に別のダッシュを踏んだとき款名にだけ残って Σ 差0 のまま画面に出る。
-      const cleaned = namePart.replace(/^(?:廃款|[△▲〇○])/, "").replace(/[○〇]$/, "").replace(/[-‐‑‒–—―−－─━]/g, "");
+      // **`(廃)` / `（廃）` も落とす**（2026-08-23・市原 R8/R2）。市原は廃止款を
+      //   `(廃)  環 境 性 能 割 交 付 金   -  -  180,000  0.2  △ 180,000  皆減` と表す。
+      //   検出は `皆減` が担うので Σ は差0 のまま通り、**款名だけが `(廃)環境性能割交付金` になる**
+      //   ＝目視でしか気づけない型。⚠ `kanNamePrefixStrip` は先頭1文字の文字クラス専用なので届かない。
+      //   ⚠ 括弧は半角・全角の両方が来うるので**文字クラスごと**書く（§9c の「1つ踏んだら周辺も来る」）。
+      const cleaned = namePart
+        .replace(/^(?:廃款|[（(]\s*廃\s*[）)]|[△▲〇○])/, "")
+        .replace(/[○〇]$/, "")
+        .replace(/[-‐‑‒–—―−－─━]/g, "");
       // 上段に名前があり下段が続く廃止款（Options.abolishedAwaitTail 参照・松山 R8）
       emit(null, pendName + cleaned, ints, raw, cleaned === "" || abolishedTails.has(pendName + cleaned));
     } else if (pendNo != null && lead && namePart === "" && ints.length >= 1) {
@@ -1260,6 +1312,7 @@ function parseKanPage(
           // 直前の款（名前欄が空だった）の下段折返し。次の款へ漏らさずその款名の末尾に足す
           openLine.kanName += namePart;
           openLine = null;
+          blanksSinceOpen = 0;
         } else {
           pendName += namePart;
         }

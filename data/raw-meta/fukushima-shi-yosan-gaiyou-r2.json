@@ -1,0 +1,12 @@
+{
+  "sourceId": "fukushima-shi-yosan-gaiyou-r2",
+  "files": [
+    {
+      "filename": "r2yosan.pdf",
+      "sha256": "9e41fc2da1c67719a46409e682c3a6228615dce9bb16215319edf94bf408d810",
+      "bytes": 6940499,
+      "fetchedAt": "2026-08-23T10:45:35.257Z",
+      "fetchedFrom": "https://www.city.fukushima.fukushima.jp/material/files/group/14/r2yosan.pdf"
+    }
+  ]
+}
