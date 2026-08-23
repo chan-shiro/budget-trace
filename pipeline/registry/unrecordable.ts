@@ -102,17 +102,6 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-9",
   },
   {
-    code: "292010", name: "奈良市", dataset: "budget", fiscalYears: ["H31", "H30", "H29"],
-    categories: ["format-mismatch"],
-    reason:
-      "「予算案の概要」が**議会修正前の案**のまま差し替えられておらず、当年度合計が翌年度資料の前年度列と一致しない" +
-      "（H29 △138,003千円・H30 △473,600千円・H31 △10,000千円）。奈良市議会は当初予算案を修正議決することがあり、" +
-      "発行元は修正後の値で PDF を差し替える年と案のまま放置する年がある（R8 は差し替え済み）。収録すると年度間" +
-      "クロスチェーンが割れる。R8〜R2 と H28 は同じ資料で収録済み。",
-    url: "https://www.city.nara.lg.jp/site/zaisei/list629-2062.html",
-    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-9",
-  },
-  {
     code: "272078", name: "高槻市", dataset: "budget", fiscalYears: ["R3", "R2"],
     categories: ["no-material"],
     reason:

@@ -16,11 +16,11 @@ export const ROADMAP_PROGRESS = {
   "budgetCount": 139,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 779,
-  "fileCount": 1943,
-  "archivedCount": 723,
+  "sourceCount": 782,
+  "fileCount": 1949,
+  "archivedCount": 747,
   "licenseOpen": 80,
-  "licensePermission": 616,
+  "licensePermission": 619,
   "licenseUnverified": 83,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -147,6 +147,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H28〜R8（11年度）"
     },
     {
+      "name": "奈良市",
+      "code": "292010",
+      "years": 11,
+      "range": "H28〜R8（11年度）"
+    },
+    {
       "name": "宇都宮市",
       "code": "092011",
       "years": 10,
@@ -205,12 +211,6 @@ export const ROADMAP_PROGRESS = {
       "code": "272035",
       "years": 8,
       "range": "H30〜R8（8年度）"
-    },
-    {
-      "name": "奈良市",
-      "code": "292010",
-      "years": 8,
-      "range": "H28〜R8（8年度）"
     },
     {
       "name": "松山市",

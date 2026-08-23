@@ -1,0 +1,19 @@
+{
+  "sourceId": "nara-shi-yosanan-bunsatsu-h31",
+  "files": [
+    {
+      "filename": "28764.pdf",
+      "sha256": "cc3055e95071f9f7cfa8b1fa1efd180382505340b69ae15f30f13751dcc3afc8",
+      "bytes": 68421,
+      "fetchedAt": "2026-08-23T02:55:39.691Z",
+      "fetchedFrom": "https://www.city.nara.lg.jp/uploaded/attachment/28764.pdf"
+    },
+    {
+      "filename": "28765.pdf",
+      "sha256": "78847d44ecff534a2a0183964f6ebdbc22ef2cb5c4ccba7d330a14f57cddc158",
+      "bytes": 51400,
+      "fetchedAt": "2026-08-23T02:55:40.068Z",
+      "fetchedFrom": "https://www.city.nara.lg.jp/uploaded/attachment/28765.pdf"
+    }
+  ]
+}

@@ -2387,6 +2387,10 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h28"] as const).map((fy) => ({
       srcId: `nara-shi-yosanan-gaiyou-${fy}`, muniCode: "292010", muniName: "奈良市", prefName: "奈良県", isPref: false,
     })),
+    // H31〜H29 は同じ年度ページの「分冊」（一括の概要は議会修正前の案のまま・分冊だけが修正後）
+    ...(["h31", "h30", "h29"] as const).map((fy) => ({
+      srcId: `nara-shi-yosanan-bunsatsu-${fy}`, muniCode: "292010", muniName: "奈良市", prefName: "奈良県", isPref: false,
+    })),
     // 川越市は R1 の参考資料が回収できず（発行元 404・Wayback も0件）鎖が R8〜R2 で切れる
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `kawagoe-yosan-sankou-${fy}`, muniCode: "112011", muniName: "川越市", prefName: "埼玉県", isPref: false,

@@ -10081,6 +10081,42 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "license": "奈良市公式ホームページに掲載の文章、画像などの著作権は、奈良市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、当ホームページに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
     "target": "file"
   },
+  "/sources/nara-shi-yosanan-bunsatsu-h31/28764.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nara.lg.jp/uploaded/attachment/28764.pdf",
+    "license": "奈良市公式ホームページに掲載の文章、画像などの著作権は、奈良市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、当ホームページに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/nara-shi-yosanan-bunsatsu-h31/28765.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nara.lg.jp/uploaded/attachment/28765.pdf",
+    "license": "奈良市公式ホームページに掲載の文章、画像などの著作権は、奈良市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、当ホームページに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/nara-shi-yosanan-bunsatsu-h30/22053.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nara.lg.jp/uploaded/attachment/22053.pdf",
+    "license": "奈良市公式ホームページに掲載の文章、画像などの著作権は、奈良市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、当ホームページに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/nara-shi-yosanan-bunsatsu-h30/22054.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nara.lg.jp/uploaded/attachment/22054.pdf",
+    "license": "奈良市公式ホームページに掲載の文章、画像などの著作権は、奈良市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、当ホームページに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/nara-shi-yosanan-bunsatsu-h29/14539.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nara.lg.jp/uploaded/attachment/14539.pdf",
+    "license": "奈良市公式ホームページに掲載の文章、画像などの著作権は、奈良市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、当ホームページに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/nara-shi-yosanan-bunsatsu-h29/14540.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nara.lg.jp/uploaded/attachment/14540.pdf",
+    "license": "奈良市公式ホームページに掲載の文章、画像などの著作権は、奈良市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、当ホームページに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
   "/sources/kawagoe-yosan-sankou-r8/r8sanko.pdf": {
     "mode": "origin",
     "href": "https://www.city.kawagoe.saitama.jp/_res/projects/default_project/_page_/001/016/409/r8sanko.pdf",

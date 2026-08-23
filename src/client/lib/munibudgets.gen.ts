@@ -1462,6 +1462,9 @@ export const MUNI_BUDGET_INDEX: Record<string, MuniBudgetIndexEntry> = {
       "R4",
       "R3",
       "R2",
+      "H31",
+      "H30",
+      "H29",
       "H28"
     ],
     "hasProjects": false
