@@ -1,0 +1,12 @@
+{
+  "sourceId": "chofu-yosan-gaiyou-r5",
+  "files": [
+    {
+      "filename": "r5_gaiyou2.pdf",
+      "sha256": "53010d3d87d8c254a2130ff4fa6489831fdaee0028daa1a4ff742c7e6bd161bf",
+      "bytes": 7384828,
+      "fetchedAt": "2026-08-23T17:35:55.556Z",
+      "fetchedFrom": "https://www.city.chofu.lg.jp/documents/4873/r5_gaiyou2.pdf"
+    }
+  ]
+}
