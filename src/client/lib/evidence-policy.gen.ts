@@ -11958,5 +11958,167 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.sasebo.lg.jp/documents/17636/zaisei2_1.pdf",
     "license": "当サイトに掲載している文字、写真、イラストやデザインといった情報の著作権は、私たち又は原権利者に帰属します。私的使用又は引用等著作権法上認められている行為を除き、無断で転載等を行うことはできません。引用を行う際は、適宜の方法により、必ず出所を明示してください。また、当サイトの内容の全部又は一部について、私たちに無断で改変を行うことはできません。",
     "target": "file"
+  },
+  "/sources/ageo-yosan-gaiyou-r8/116055.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ageo.lg.jp/uploaded/attachment/116055.pdf",
+    "license": "上尾市Webサイトから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、上尾市に帰属します。また一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書、画像などの無断使用・転載、二次利用を禁止します。著作権法上の｢私的使用｣や｢引用｣の範囲を越えて、当Webサイトの情報の使用を希望する場合は事前に広報広聴課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "file"
+  },
+  "/sources/ageo-yosan-gaiyou-r7/107329.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ageo.lg.jp/uploaded/attachment/107329.pdf",
+    "license": "上尾市Webサイトから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、上尾市に帰属します。また一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書、画像などの無断使用・転載、二次利用を禁止します。著作権法上の｢私的使用｣や｢引用｣の範囲を越えて、当Webサイトの情報の使用を希望する場合は事前に広報広聴課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "file"
+  },
+  "/sources/ageo-yosan-gaiyou-r6/99050.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ageo.lg.jp/uploaded/attachment/99050.pdf",
+    "license": "上尾市Webサイトから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、上尾市に帰属します。また一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書、画像などの無断使用・転載、二次利用を禁止します。著作権法上の｢私的使用｣や｢引用｣の範囲を越えて、当Webサイトの情報の使用を希望する場合は事前に広報広聴課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "file"
+  },
+  "/sources/ageo-yosan-gaiyou-r5/90492.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ageo.lg.jp/uploaded/attachment/90492.pdf",
+    "license": "上尾市Webサイトから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、上尾市に帰属します。また一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書、画像などの無断使用・転載、二次利用を禁止します。著作権法上の｢私的使用｣や｢引用｣の範囲を越えて、当Webサイトの情報の使用を希望する場合は事前に広報広聴課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "file"
+  },
+  "/sources/ageo-yosan-gaiyou-r4/81723.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ageo.lg.jp/uploaded/attachment/81723.pdf",
+    "license": "上尾市Webサイトから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、上尾市に帰属します。また一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書、画像などの無断使用・転載、二次利用を禁止します。著作権法上の｢私的使用｣や｢引用｣の範囲を越えて、当Webサイトの情報の使用を希望する場合は事前に広報広聴課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "file"
+  },
+  "/sources/ageo-yosan-gaiyou-r3/76147.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ageo.lg.jp/uploaded/attachment/76147.pdf",
+    "license": "上尾市Webサイトから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、上尾市に帰属します。また一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書、画像などの無断使用・転載、二次利用を禁止します。著作権法上の｢私的使用｣や｢引用｣の範囲を越えて、当Webサイトの情報の使用を希望する場合は事前に広報広聴課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "file"
+  },
+  "/sources/ageo-yosan-gaiyou-r2/61213.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ageo.lg.jp/uploaded/attachment/61213.pdf",
+    "license": "上尾市Webサイトから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、上尾市に帰属します。また一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書、画像などの無断使用・転載、二次利用を禁止します。著作権法上の｢私的使用｣や｢引用｣の範囲を越えて、当Webサイトの情報の使用を希望する場合は事前に広報広聴課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "file"
+  },
+  "/sources/saga-shi-yosan-gaiyou-r8/p1jkmhfbjheuu1oh6o91jd0s304.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.saga.lg.jp/shisei/gyoseiunei/5/1/6/6810.html",
+    "license": "本サイトで提供する文書、画像等の各ファイルおよびその内容に関する著作権は、原則として佐賀市に帰属します。（ただし、一部の画像等の著作権は、原著作者が所有しています。）「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、文書、画像等の無断使用・転載を禁止します。",
+    "target": "page"
+  },
+  "/sources/saga-shi-yosan-gaiyou-r5/p1grn0h23g88lr301a5sju01of75.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.saga.lg.jp/shisei/gyoseiunei/5/1/1/3/1462.html",
+    "license": "本サイトで提供する文書、画像等の各ファイルおよびその内容に関する著作権は、原則として佐賀市に帰属します。（ただし、一部の画像等の著作権は、原著作者が所有しています。）「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、文書、画像等の無断使用・転載を禁止します。",
+    "target": "page"
+  },
+  "/sources/kasukabe-yosan-gaiyou-r8/R8toushoyosannnogaiyou0226.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kasukabe.lg.jp/material/files/group/9/R8toushoyosannnogaiyou0226.pdf",
+    "license": "市ホームページに掲載される全ての記事・画像データなどの著作権は春日部市に帰属します。無断転載・転用はご遠慮ください。ホームページ上で公開しているデータは、行政情報を広くお知らせするためのものであり、掲載されている情報や画像などを無断で転載することは禁止されています。",
+    "target": "file"
+  },
+  "/sources/kasukabe-yosan-gaiyou-r6/R6tousyoyosannnogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kasukabe.lg.jp/material/files/group/9/R6tousyoyosannnogaiyou.pdf",
+    "license": "市ホームページに掲載される全ての記事・画像データなどの著作権は春日部市に帰属します。無断転載・転用はご遠慮ください。ホームページ上で公開しているデータは、行政情報を広くお知らせするためのものであり、掲載されている情報や画像などを無断で転載することは禁止されています。",
+    "target": "file"
+  },
+  "/sources/takarazuka-yosansho-r8/r8_tousyosetumei_2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/062/614/r8_tousyosetumei_2.pdf",
+    "license": "宝塚市議会のホームページに掲載されている文章や画像等の各ファイル及びその内容に関する権利は、原則として宝塚市に帰属します。「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、許可なく無断で複製や転用をすることはできません。また、営利を目的とした著作物の二次利用はお断りしております。",
+    "target": "file"
+  },
+  "/sources/takarazuka-yosansho-r7/r7_tousyosetumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/059/274/r7_tousyosetumei.pdf",
+    "license": "宝塚市議会のホームページに掲載されている文章や画像等の各ファイル及びその内容に関する権利は、原則として宝塚市に帰属します。「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、許可なく無断で複製や転用をすることはできません。また、営利を目的とした著作物の二次利用はお断りしております。",
+    "target": "file"
+  },
+  "/sources/takarazuka-yosansho-r6/r6_tousyosetumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/055/632/r6_tousyosetumei.pdf",
+    "license": "宝塚市議会のホームページに掲載されている文章や画像等の各ファイル及びその内容に関する権利は、原則として宝塚市に帰属します。「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、許可なく無断で複製や転用をすることはできません。また、営利を目的とした著作物の二次利用はお断りしております。",
+    "target": "file"
+  },
+  "/sources/takarazuka-yosansho-r5/yosansetumeir5.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/049/834/yosansetumeir5.pdf",
+    "license": "宝塚市議会のホームページに掲載されている文章や画像等の各ファイル及びその内容に関する権利は、原則として宝塚市に帰属します。「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、許可なく無断で複製や転用をすることはできません。また、営利を目的とした著作物の二次利用はお断りしております。",
+    "target": "file"
+  },
+  "/sources/takarazuka-yosansho-r4/yosansetumei.r4.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/045/177/yosansetumei.r4.pdf",
+    "license": "宝塚市議会のホームページに掲載されている文章や画像等の各ファイル及びその内容に関する権利は、原則として宝塚市に帰属します。「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、許可なく無断で複製や転用をすることはできません。また、営利を目的とした著作物の二次利用はお断りしております。",
+    "target": "file"
+  },
+  "/sources/takarazuka-yosansho-h25/taiyou25.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/012/635/taiyou25.pdf",
+    "license": "宝塚市議会のホームページに掲載されている文章や画像等の各ファイル及びその内容に関する権利は、原則として宝塚市に帰属します。「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、許可なく無断で複製や転用をすることはできません。また、営利を目的とした著作物の二次利用はお断りしております。",
+    "target": "file"
+  },
+  "/sources/takarazuka-yosansho-h24/taiyou24.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/012/635/taiyou24.pdf",
+    "license": "宝塚市議会のホームページに掲載されている文章や画像等の各ファイル及びその内容に関する権利は、原則として宝塚市に帰属します。「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、許可なく無断で複製や転用をすることはできません。また、営利を目的とした著作物の二次利用はお断りしております。",
+    "target": "file"
+  },
+  "/sources/takarazuka-yosansho-h23/taiyo23.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/012/635/taiyo23.pdf",
+    "license": "宝塚市議会のホームページに掲載されている文章や画像等の各ファイル及びその内容に関する権利は、原則として宝塚市に帰属します。「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、許可なく無断で複製や転用をすることはできません。また、営利を目的とした著作物の二次利用はお断りしております。",
+    "target": "file"
+  },
+  "/sources/takarazuka-yosansho-h22/taiyo22.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/012/635/taiyo22.pdf",
+    "license": "宝塚市議会のホームページに掲載されている文章や画像等の各ファイル及びその内容に関する権利は、原則として宝塚市に帰属します。「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、許可なく無断で複製や転用をすることはできません。また、営利を目的とした著作物の二次利用はお断りしております。",
+    "target": "file"
+  },
+  "/sources/takarazuka-yosansho-h19/taiyo19.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/012/635/taiyo19.pdf",
+    "license": "宝塚市議会のホームページに掲載されている文章や画像等の各ファイル及びその内容に関する権利は、原則として宝塚市に帰属します。「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、許可なく無断で複製や転用をすることはできません。また、営利を目的とした著作物の二次利用はお断りしております。",
+    "target": "file"
+  },
+  "/sources/takarazuka-yosansho-h18/taiyo18.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/012/635/taiyo18.pdf",
+    "license": "宝塚市議会のホームページに掲載されている文章や画像等の各ファイル及びその内容に関する権利は、原則として宝塚市に帰属します。「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、許可なく無断で複製や転用をすることはできません。また、営利を目的とした著作物の二次利用はお断りしております。",
+    "target": "file"
+  },
+  "/sources/takarazuka-yosansho-h17/taiyo17.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/012/635/taiyo17.pdf",
+    "license": "宝塚市議会のホームページに掲載されている文章や画像等の各ファイル及びその内容に関する権利は、原則として宝塚市に帰属します。「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、許可なく無断で複製や転用をすることはできません。また、営利を目的とした著作物の二次利用はお断りしております。",
+    "target": "file"
+  },
+  "/sources/yamagata-shi-zaisei-siryou-r8/siryou-yosan-r8-05.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yamagata-yamagata.lg.jp/_res/projects/default_project/_page_/001/003/974/siryou-yosan-r8-05.pdf",
+    "license": "公式ホームページに掲載されている文書や画像、映像、音声等の著作権は、原則として山形市に帰属します（一部の画像等の著作権は、原著作者が所有しています。）。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。",
+    "target": "file"
+  },
+  "/sources/yamagata-shi-zaisei-siryou-r8/siryou-yosan-r8-09.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yamagata-yamagata.lg.jp/_res/projects/default_project/_page_/001/003/974/siryou-yosan-r8-09.pdf",
+    "license": "公式ホームページに掲載されている文書や画像、映像、音声等の著作権は、原則として山形市に帰属します（一部の画像等の著作権は、原著作者が所有しています。）。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。",
+    "target": "file"
+  },
+  "/sources/yamagata-shi-zaisei-siryou-r7/siryou-yosan-r7-05.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20250623151246id_/https://www.city.yamagata-yamagata.lg.jp/_res/projects/default_project/_page_/001/003/974/siryou-yosan-r7-05.pdf",
+    "license": "公式ホームページに掲載されている文書や画像、映像、音声等の著作権は、原則として山形市に帰属します（一部の画像等の著作権は、原著作者が所有しています。）。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。",
+    "target": "file"
+  },
+  "/sources/yamagata-shi-zaisei-siryou-r7/siryou-yosan-r7-09.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20250623152051id_/https://www.city.yamagata-yamagata.lg.jp/_res/projects/default_project/_page_/001/003/974/siryou-yosan-r7-09.pdf",
+    "license": "公式ホームページに掲載されている文書や画像、映像、音声等の著作権は、原則として山形市に帰属します（一部の画像等の著作権は、原著作者が所有しています。）。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。",
+    "target": "file"
   }
 };

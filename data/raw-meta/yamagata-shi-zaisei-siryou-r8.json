@@ -1,0 +1,19 @@
+{
+  "sourceId": "yamagata-shi-zaisei-siryou-r8",
+  "files": [
+    {
+      "filename": "siryou-yosan-r8-05.pdf",
+      "sha256": "29cc888e8631444c3af749e474976af0e921e662070ac213ca89d6268b8b1426",
+      "bytes": 154856,
+      "fetchedAt": "2026-08-23T20:43:58.756Z",
+      "fetchedFrom": "https://www.city.yamagata-yamagata.lg.jp/_res/projects/default_project/_page_/001/003/974/siryou-yosan-r8-05.pdf"
+    },
+    {
+      "filename": "siryou-yosan-r8-09.pdf",
+      "sha256": "8cd491addd37eb67ef3ffb8c62e7fa04fa6f71fc4bde7622f665e80949128ace",
+      "bytes": 104504,
+      "fetchedAt": "2026-08-23T20:43:59.225Z",
+      "fetchedFrom": "https://www.city.yamagata-yamagata.lg.jp/_res/projects/default_project/_page_/001/003/974/siryou-yosan-r8-09.pdf"
+    }
+  ]
+}

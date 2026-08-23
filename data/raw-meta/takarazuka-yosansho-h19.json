@@ -1,0 +1,12 @@
+{
+  "sourceId": "takarazuka-yosansho-h19",
+  "files": [
+    {
+      "filename": "taiyo19.pdf",
+      "sha256": "34cd4641031ac48768fa69bec973c59d79c4f9b228dd01e3ef88ba1db59bf5f4",
+      "bytes": 645571,
+      "fetchedAt": "2026-08-23T20:39:45.104Z",
+      "fetchedFrom": "https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/012/635/taiyo19.pdf"
+    }
+  ]
+}
