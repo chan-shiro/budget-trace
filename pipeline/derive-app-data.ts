@@ -2557,6 +2557,26 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "h25", "h23", "h21", "h20", "h19"] as const).map((fy) => ({
       srcId: `sasebo-yosansetsumei-${fy}`, muniCode: "422029", muniName: "佐世保市", prefName: "長崎県", isPref: false,
     })),
+    // 上尾市（R3 は修正後の差替えファイルを使う）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `ageo-yosan-gaiyou-${fy}`, muniCode: "112194", muniName: "上尾市", prefName: "埼玉県", isPref: false,
+    })),
+    // 佐賀市は R7・R6 が文字化け（パーサ側の宿題）・R4/R3 がスキャン画像
+    ...(["r8", "r5"] as const).map((fy) => ({
+      srcId: `saga-shi-yosan-gaiyou-${fy}`, muniCode: "412015", muniName: "佐賀市", prefName: "佐賀県", isPref: false,
+    })),
+    // 春日部市は R7・R5〜R3 が本文アウトライン化
+    ...(["r8", "r6"] as const).map((fy) => ({
+      srcId: `kasukabe-yosan-gaiyou-${fy}`, muniCode: "112143", muniName: "春日部市", prefName: "埼玉県", isPref: false,
+    })),
+    // 宝塚市は R8〜R4 が予算説明書ルート・H25〜H17 が予算編成大要ルート（見出しも合計ラベルも別）
+    ...(["r8", "r7", "r6", "r5", "r4", "h25", "h24", "h23", "h22", "h19", "h18", "h17"] as const).map((fy) => ({
+      srcId: `takarazuka-yosansho-${fy}`, muniCode: "282146", muniName: "宝塚市", prefName: "兵庫県", isPref: false,
+    })),
+    // 山形市は明細書が使えず財政課「財政状況 資料編」ルート（R7 版は発行元が上書きしたので魚拓から）
+    ...(["r8", "r7"] as const).map((fy) => ({
+      srcId: `yamagata-shi-zaisei-siryou-${fy}`, muniCode: "062014", muniName: "山形市", prefName: "山形県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。

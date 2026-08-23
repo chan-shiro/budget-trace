@@ -120,6 +120,11 @@ const MUNI_SLUGS: Record<string, string> = {
   "352012": "shimonoseki",
   "202029": "matsumoto",
   "422029": "sasebo",
+  "112194": "ageo",
+  "412015": "saga", // ⚠ 佐賀県 410004 は "ken" スラグなので衝突しない
+  "112143": "kasukabe", // ⚠ 春日井市 232068 = "kasugai" と別物
+  "282146": "takarazuka",
+  "062014": "yamagata", // ⚠ 山形県 060003 は "ken" スラグなので衝突しない
   "232076": "toyokawa", "352039": "yamaguchi", "222038": "numazu", "272191": "izumi",
   // 政令指定都市（2026-07-15）
   "141003": "yokohama", "231002": "nagoya", "011002": "sapporo",

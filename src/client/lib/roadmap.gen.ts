@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 172,
+  "budgetCount": 177,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 1090,
-  "fileCount": 2278,
-  "archivedCount": 998,
+  "sourceCount": 1115,
+  "fileCount": 2305,
+  "archivedCount": 1014,
   "licenseOpen": 98,
-  "licensePermission": 882,
+  "licensePermission": 907,
   "licenseUnverified": 110,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -163,6 +163,12 @@ export const ROADMAP_PROGRESS = {
       "code": "162019",
       "years": 12,
       "range": "H27〜R8（12年度）"
+    },
+    {
+      "name": "宝塚市",
+      "code": "282146",
+      "years": 12,
+      "range": "H17〜R8（12年度）"
     },
     {
       "name": "福島市",
@@ -347,6 +353,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "川越市",
       "code": "112011",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "上尾市",
+      "code": "112194",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },
@@ -657,10 +669,22 @@ export const ROADMAP_PROGRESS = {
       "range": "R6〜R8（3年度）"
     },
     {
+      "name": "山形市",
+      "code": "062014",
+      "years": 2,
+      "range": "R7〜R8（2年度）"
+    },
+    {
       "name": "さいたま市",
       "code": "111007",
       "years": 2,
       "range": "R7〜R8（2年度）"
+    },
+    {
+      "name": "春日部市",
+      "code": "112143",
+      "years": 2,
+      "range": "R6〜R8（2年度）"
     },
     {
       "name": "千葉市",
@@ -697,6 +721,12 @@ export const ROADMAP_PROGRESS = {
       "code": "302015",
       "years": 2,
       "range": "R7〜R8（2年度）"
+    },
+    {
+      "name": "佐賀市",
+      "code": "412015",
+      "years": 2,
+      "range": "R5〜R8（2年度）"
     }
   ],
   "kofuDetail": {

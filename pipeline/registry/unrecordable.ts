@@ -129,6 +129,46 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-14",
   },
   {
+    code: "062014", name: "山形市", dataset: "budget",
+    fiscalYears: ["R6"],
+    categories: ["broken-text-layer"],
+    reason:
+      "この年度は候補になる資料がすべて読み取れない。当初予算の明細書と説明附属書は、" +
+      "紙に印刷すれば読めるが文字として取り出すと数字が1つも出てこない状態で作られている" +
+      "（収録時に実測。スキャン画像ではない）。内示会資料は集計表の部分だけが同じ状態で、" +
+      "議案の総括表には前年度と比べる列が無い。" +
+      "財政課の「財政状況 資料編」はこの年度の版が発行元から削除され、魚拓にも残っていない。" +
+      "令和8年度と令和7年度は同じ資料で収録済み。",
+    url: "https://www.city.yamagata-yamagata.lg.jp/shiseijoho/zaisei/1013833/index.html",
+    checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-17",
+  },
+  {
+    code: "112143", name: "春日部市", dataset: "budget",
+    fiscalYears: ["R7", "R5", "R4", "R3"],
+    categories: ["broken-text-layer"],
+    reason:
+      "「当初予算の概要」がこの4年度とも文字を図形に変換した状態で作られており、" +
+      "本文の文字が1つも取り出せない（抽出できる文字数は全ページ合計で48字・0字・0字・0字。収録時に実測）。" +
+      "スキャン画像ではないので読み取り誤りの心配は無いが、数値を取り出す手立てがない。" +
+      "同じ年度の予算書・事業別概要書も同じ状態で、代わりになる資料が無い。" +
+      "令和3年度のダイジェスト版は文字が取れるものの、金額が億円単位に丸められ小さい款が「その他」にまとめられている。" +
+      "令和8年度と令和6年度は同じ資料で収録済み。",
+    url: "https://www.city.kasukabe.lg.jp/shiseijoho/yosan_kessan_zaiseijokyo/8211.html",
+    checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-17",
+  },
+  {
+    code: "412015", name: "佐賀市", dataset: "budget",
+    fiscalYears: ["R4", "R3"],
+    categories: ["scanned-image"],
+    reason:
+      "「当初予算の概要」がこの2年度とも全ページ スキャン画像で、1ページに画像が1枚ずつ入っており、" +
+      "文字として取り出せる中身が無い（令和4年度は17ページで17字、令和3年度は15ページで15字。収録時に実測）。" +
+      "文字を読み取る処理もかかっていないため、数値を取り出す手立てがない。" +
+      "同じ年度の別冊「当初予算資料」にも款ごとの表は入っていない。令和8年度と令和5年度は同じ資料で収録済み。",
+    url: "https://www.city.saga.lg.jp/shisei/gyoseiunei/5/1/index.html",
+    checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-17",
+  },
+  {
     code: "422029", name: "佐世保市", dataset: "budget",
     fiscalYears: ["R3", "R2", "H31", "H30", "H29", "H28", "H27", "H26", "H24"],
     categories: ["scanned-image"],

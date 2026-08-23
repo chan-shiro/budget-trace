@@ -123,6 +123,93 @@
       "checkedAt": "2026-07-16T07:53:45.900Z"
     },
     {
+      "sourceId": "ageo-yosan-gaiyou-r2",
+      "url": "https://www.city.ageo.lg.jp/page/003120021704.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250811083112/https://www.city.ageo.lg.jp/page/003120021704.html",
+      "waybackTimestamp": "20250811083112",
+      "checkedAt": "2026-08-23T20:48:31.842Z"
+    },
+    {
+      "sourceId": "ageo-yosan-gaiyou-r2",
+      "url": "https://www.city.ageo.lg.jp/uploaded/attachment/61213.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250910054153/https://www.city.ageo.lg.jp/uploaded/attachment/61213.pdf",
+      "waybackTimestamp": "20250910054153",
+      "checkedAt": "2026-08-23T20:48:26.433Z",
+      "sha256Match": true,
+      "waybackBytes": 1934630,
+      "rawSha256": "03d9b5d8b9dea3526cd1c0ebe70779dfcaccc5a0c550d6c9a6dc3e9e2a984cfd"
+    },
+    {
+      "sourceId": "ageo-yosan-gaiyou-r3",
+      "url": "https://www.city.ageo.lg.jp/page/0031210212002.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251205091036/https://www.city.ageo.lg.jp/page/0031210212002.html",
+      "waybackTimestamp": "20251205091036",
+      "checkedAt": "2026-08-23T20:48:17.184Z"
+    },
+    {
+      "sourceId": "ageo-yosan-gaiyou-r3",
+      "url": "https://www.city.ageo.lg.jp/uploaded/attachment/76147.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250507052814/https://www.city.ageo.lg.jp/uploaded/attachment/76147.pdf",
+      "waybackTimestamp": "20250507052814",
+      "checkedAt": "2026-08-23T20:48:07.293Z",
+      "sha256Match": true,
+      "waybackBytes": 1491319,
+      "rawSha256": "189439967b87dc8ff4e71a9f35d4bcf28161711bc5e1088d35be8ac9c4213b6a"
+    },
+    {
+      "sourceId": "ageo-yosan-gaiyou-r4",
+      "url": "https://www.city.ageo.lg.jp/uploaded/attachment/81723.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250206161700/http://www.city.ageo.lg.jp/uploaded/attachment/81723.pdf",
+      "waybackTimestamp": "20250206161700",
+      "checkedAt": "2026-08-23T20:47:37.224Z",
+      "sha256Match": true,
+      "waybackBytes": 895337,
+      "rawSha256": "3ec383b187ec5e06faa59583895a8c4fa7e19b79c4294ffc1d91b8de0c3e803e"
+    },
+    {
+      "sourceId": "ageo-yosan-gaiyou-r5",
+      "url": "https://www.city.ageo.lg.jp/page/332362.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250910051658/https://www.city.ageo.lg.jp/page/332362.html",
+      "waybackTimestamp": "20250910051658",
+      "checkedAt": "2026-08-23T20:47:20.862Z"
+    },
+    {
+      "sourceId": "ageo-yosan-gaiyou-r5",
+      "url": "https://www.city.ageo.lg.jp/uploaded/attachment/90492.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20240624165635/http://www.city.ageo.lg.jp/uploaded/attachment/90492.pdf",
+      "waybackTimestamp": "20240624165635",
+      "checkedAt": "2026-08-23T20:47:12.870Z",
+      "sha256Match": true,
+      "waybackBytes": 1016114,
+      "rawSha256": "de0e4ae5c2d7ac29dc6a928e9e523ca496f77bfff1330e32ca19a863de6ab648"
+    },
+    {
+      "sourceId": "ageo-yosan-gaiyou-r6",
+      "url": "https://www.city.ageo.lg.jp/page/361381.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20250320023335/http://www.city.ageo.lg.jp/page/361381.html",
+      "waybackTimestamp": "20250320023335",
+      "checkedAt": "2026-08-23T20:46:51.355Z"
+    },
+    {
+      "sourceId": "ageo-yosan-gaiyou-r6",
+      "url": "https://www.city.ageo.lg.jp/uploaded/attachment/99050.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250419050443/http://www.city.ageo.lg.jp/uploaded/attachment/99050.pdf",
+      "waybackTimestamp": "20250419050443",
+      "checkedAt": "2026-08-23T20:46:33.219Z",
+      "sha256Match": true,
+      "waybackBytes": 921202,
+      "rawSha256": "64b62d7a9e376666fb0698a8931a4f49240327bf9b851598c15216c6a640bf69"
+    },
+    {
       "sourceId": "aichi-yosan-setsumeisho-r8",
       "url": "https://www.pref.aichi.jp/soshiki/zaisei/r8-gian-kansuru.html",
       "kind": "landing",
@@ -5428,6 +5515,33 @@
       "waybackUrl": "https://web.archive.org/web/20260823071720/https://www.city.kasugai.lg.jp/shisei/zaisei/yosan/1038130.html",
       "waybackTimestamp": "20260823071720",
       "checkedAt": "2026-08-23T07:18:30.285Z"
+    },
+    {
+      "sourceId": "kasukabe-yosan-gaiyou-r6",
+      "url": "https://www.city.kasukabe.lg.jp/material/files/group/9/R6tousyoyosannnogaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250323025729/https://www.city.kasukabe.lg.jp/material/files/group/9/R6tousyoyosannnogaiyou.pdf",
+      "waybackTimestamp": "20250323025729",
+      "checkedAt": "2026-08-23T20:51:35.913Z",
+      "sha256Match": true,
+      "waybackBytes": 3271847,
+      "rawSha256": "32168f111742c4d1bd94e82b17553537dc645538716a9b7d2cd77f26188efb30"
+    },
+    {
+      "sourceId": "kasukabe-yosan-gaiyou-r6",
+      "url": "https://www.city.kasukabe.lg.jp/shiseijoho/yosan_kessan_zaiseijokyo/8211.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260416233038/https://www.city.kasukabe.lg.jp/shiseijoho/yosan_kessan_zaiseijokyo/8211.html",
+      "waybackTimestamp": "20260416233038",
+      "checkedAt": "2026-08-23T20:51:41.094Z"
+    },
+    {
+      "sourceId": "kasukabe-yosan-gaiyou-r8",
+      "url": "https://www.city.kasukabe.lg.jp/shiseijoho/yosan_kessan_zaiseijokyo/8211.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260416233038/https://www.city.kasukabe.lg.jp/shiseijoho/yosan_kessan_zaiseijokyo/8211.html",
+      "waybackTimestamp": "20260416233038",
+      "checkedAt": "2026-08-23T20:51:16.746Z"
     },
     {
       "sourceId": "katsushika-yosangaiyou-h28",
@@ -23252,6 +23366,161 @@
       "checkedAt": "2026-08-22T17:41:53.726Z"
     },
     {
+      "sourceId": "takarazuka-yosansho-h17",
+      "url": "https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/012/635/taiyo17.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20220428112616/https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/012/635/taiyo17.pdf",
+      "waybackTimestamp": "20220428112616",
+      "checkedAt": "2026-08-23T20:57:35.391Z",
+      "sha256Match": true,
+      "waybackBytes": 206423,
+      "rawSha256": "53314c3f08fa9d68fdcad1699690d2660e8feda63431a38a02c0322859cea425"
+    },
+    {
+      "sourceId": "takarazuka-yosansho-h18",
+      "url": "https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/012/635/taiyo18.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20220428112650/https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/012/635/taiyo18.pdf",
+      "waybackTimestamp": "20220428112650",
+      "checkedAt": "2026-08-23T20:56:48.844Z",
+      "sha256Match": true,
+      "waybackBytes": 147431,
+      "rawSha256": "aeee86b9fc2573cb879c9bc54a8a37e30ff174f07c74a3f13c206d7116430c5d"
+    },
+    {
+      "sourceId": "takarazuka-yosansho-h18",
+      "url": "https://www.city.takarazuka.hyogo.jp/1060687/1060727/1000137/1012635.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260116024553/https://www.city.takarazuka.hyogo.jp/1060687/1060727/1000137/1012635.html",
+      "waybackTimestamp": "20260116024553",
+      "checkedAt": "2026-08-23T20:57:08.297Z"
+    },
+    {
+      "sourceId": "takarazuka-yosansho-h19",
+      "url": "https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/012/635/taiyo19.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20220428112614/https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/012/635/taiyo19.pdf",
+      "waybackTimestamp": "20220428112614",
+      "checkedAt": "2026-08-23T20:56:24.202Z",
+      "sha256Match": true,
+      "waybackBytes": 645571,
+      "rawSha256": "34cd4641031ac48768fa69bec973c59d79c4f9b228dd01e3ef88ba1db59bf5f4"
+    },
+    {
+      "sourceId": "takarazuka-yosansho-h19",
+      "url": "https://www.city.takarazuka.hyogo.jp/1060687/1060727/1000137/1012635.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260116024553/https://www.city.takarazuka.hyogo.jp/1060687/1060727/1000137/1012635.html",
+      "waybackTimestamp": "20260116024553",
+      "checkedAt": "2026-08-23T20:56:36.944Z"
+    },
+    {
+      "sourceId": "takarazuka-yosansho-h22",
+      "url": "https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/012/635/taiyo22.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20220428112638/https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/012/635/taiyo22.pdf",
+      "waybackTimestamp": "20220428112638",
+      "checkedAt": "2026-08-23T20:55:39.450Z",
+      "sha256Match": true,
+      "waybackBytes": 549170,
+      "rawSha256": "960ac01359446bd641cc19e7d99a831a029f1d8baf745764b68d977bc4853fcc"
+    },
+    {
+      "sourceId": "takarazuka-yosansho-h22",
+      "url": "https://www.city.takarazuka.hyogo.jp/1060687/1060727/1000137/1012635.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260116024553/https://www.city.takarazuka.hyogo.jp/1060687/1060727/1000137/1012635.html",
+      "waybackTimestamp": "20260116024553",
+      "checkedAt": "2026-08-23T20:56:12.758Z"
+    },
+    {
+      "sourceId": "takarazuka-yosansho-h23",
+      "url": "https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/012/635/taiyo23.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20220428112644/https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/012/635/taiyo23.pdf",
+      "waybackTimestamp": "20220428112644",
+      "checkedAt": "2026-08-23T20:54:46.315Z",
+      "sha256Match": true,
+      "waybackBytes": 632221,
+      "rawSha256": "67e575df14b655b6315437914e2c1f33a5a75df5d1878b5a6bd92cbf95724409"
+    },
+    {
+      "sourceId": "takarazuka-yosansho-h23",
+      "url": "https://www.city.takarazuka.hyogo.jp/1060687/1060727/1000137/1012635.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260116024553/https://www.city.takarazuka.hyogo.jp/1060687/1060727/1000137/1012635.html",
+      "waybackTimestamp": "20260116024553",
+      "checkedAt": "2026-08-23T20:54:55.811Z"
+    },
+    {
+      "sourceId": "takarazuka-yosansho-h24",
+      "url": "https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/012/635/taiyou24.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20220428112614/https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/012/635/taiyou24.pdf",
+      "waybackTimestamp": "20220428112614",
+      "checkedAt": "2026-08-23T20:54:30.763Z",
+      "sha256Match": true,
+      "waybackBytes": 739020,
+      "rawSha256": "4a4d32137646887b35f41738c759891afefc5ba54d548c989a3fae0a38e0dc0e"
+    },
+    {
+      "sourceId": "takarazuka-yosansho-h24",
+      "url": "https://www.city.takarazuka.hyogo.jp/1060687/1060727/1000137/1012635.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260116024553/https://www.city.takarazuka.hyogo.jp/1060687/1060727/1000137/1012635.html",
+      "waybackTimestamp": "20260116024553",
+      "checkedAt": "2026-08-23T20:54:37.940Z"
+    },
+    {
+      "sourceId": "takarazuka-yosansho-h25",
+      "url": "https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/012/635/taiyou25.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20220428112618/https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/012/635/taiyou25.pdf",
+      "waybackTimestamp": "20220428112618",
+      "checkedAt": "2026-08-23T20:54:12.965Z",
+      "sha256Match": true,
+      "waybackBytes": 713868,
+      "rawSha256": "ae75c41e3d506b98a0041d7d28cde2b398909d6eada1a1b53924c0b728feba1f"
+    },
+    {
+      "sourceId": "takarazuka-yosansho-h25",
+      "url": "https://www.city.takarazuka.hyogo.jp/1060687/1060727/1000137/1012635.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260116024553/https://www.city.takarazuka.hyogo.jp/1060687/1060727/1000137/1012635.html",
+      "waybackTimestamp": "20260116024553",
+      "checkedAt": "2026-08-23T20:54:18.976Z"
+    },
+    {
+      "sourceId": "takarazuka-yosansho-r6",
+      "url": "https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/055/632/r6_tousyosetumei.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250219091111/https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/055/632/r6_tousyosetumei.pdf",
+      "waybackTimestamp": "20250219091111",
+      "checkedAt": "2026-08-23T20:52:48.870Z",
+      "sha256Match": true,
+      "waybackBytes": 4256624,
+      "rawSha256": "31258f5bacb1b07d1375894557428b047a6f92ac144939a917c8a78098a6fd18"
+    },
+    {
+      "sourceId": "takarazuka-yosansho-r7",
+      "url": "https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/059/274/r7_tousyosetumei.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250820162821/https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/059/274/r7_tousyosetumei.pdf",
+      "waybackTimestamp": "20250820162821",
+      "checkedAt": "2026-08-23T20:52:31.505Z",
+      "sha256Match": true,
+      "waybackBytes": 4140020,
+      "rawSha256": "6ebafa92cc29bc43099d905751f34caff2931b702a875d5dd2eb83fa2bdf98ee"
+    },
+    {
+      "sourceId": "takarazuka-yosansho-r7",
+      "url": "https://www.city.takarazuka.hyogo.jp/1060687/1060727/1000137/1042315/1059274.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260203092141/https://www.city.takarazuka.hyogo.jp/1060687/1060727/1000137/1042315/1059274.html",
+      "waybackTimestamp": "20260203092141",
+      "checkedAt": "2026-08-23T20:52:41.345Z"
+    },
+    {
       "sourceId": "takasaki-yosan-gaiyou-h21",
       "url": "https://www.city.takasaki.gunma.jp/page/3227.html",
       "kind": "landing",
@@ -25444,6 +25713,22 @@
       "waybackUrl": "https://web.archive.org/web/20260823003952/https://www.city.wakayama.wakayama.jp/shisei/zaisei/1033880/1066991/1066992.html",
       "waybackTimestamp": "20260823003952",
       "checkedAt": "2026-08-23T00:42:02.909Z"
+    },
+    {
+      "sourceId": "yamagata-shi-zaisei-siryou-r7",
+      "url": "https://www.city.yamagata-yamagata.lg.jp/shiseijoho/zaisei/1007006/1003974.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251206190729/https://www.city.yamagata-yamagata.lg.jp/shiseijoho/zaisei/1007006/1003974.html",
+      "waybackTimestamp": "20251206190729",
+      "checkedAt": "2026-08-23T20:59:37.703Z"
+    },
+    {
+      "sourceId": "yamagata-shi-zaisei-siryou-r8",
+      "url": "https://www.city.yamagata-yamagata.lg.jp/shiseijoho/zaisei/1007006/1003974.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251206190729/https://www.city.yamagata-yamagata.lg.jp/shiseijoho/zaisei/1007006/1003974.html",
+      "waybackTimestamp": "20251206190729",
+      "checkedAt": "2026-08-23T20:59:05.755Z"
     },
     {
       "sourceId": "yamaguchi-yosansho-r7",
