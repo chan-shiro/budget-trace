@@ -129,6 +129,42 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-14",
   },
   {
+    code: "282146", name: "宝塚市", dataset: "budget",
+    fiscalYears: ["R3", "H21"],
+    categories: ["scanned-image"],
+    reason:
+      "この2年度は資料が全ページ スキャン画像で、文字として取り出せる中身が無い" +
+      "（令和3年度の予算説明書は640ページに画像が640枚で0字、平成21年度の予算編成大要は63ページに63枚で0字。収録時に実測）。" +
+      "令和3年度は予算の概要（16ページ・画像802枚・0字）も同じ状態で、代わりになる資料が無い。" +
+      "文字を読み取る処理もかかっていないため、数値を取り出す手立てがない。",
+    url: "https://www.city.takarazuka.hyogo.jp/1060687/1060727/1000137/1012635.html",
+    checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-17",
+  },
+  {
+    code: "282146", name: "宝塚市", dataset: "budget",
+    fiscalYears: ["R2", "H27", "H20"],
+    categories: ["broken-text-layer"],
+    reason:
+      "この3年度は資料に文字が入っているものの壊れていて、款の名前が1つも読み取れない" +
+      "（令和2年度は取り出した4万2千字のうち1万4千字が判読不能な記号、平成27年度と平成20年度は" +
+      "別の壊れ方で「市税」「議会費」「民生費」がいずれも0回。収録時に実測）。" +
+      "この年度の予算編成大要・予算説明書は発行元に無く、代わりになる資料が無い。",
+    url: "https://www.city.takarazuka.hyogo.jp/1060687/1060727/1000137/1012635.html",
+    checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-17",
+  },
+  {
+    code: "282146", name: "宝塚市", dataset: "budget",
+    fiscalYears: ["H31", "H30", "H29", "H28", "H26"],
+    categories: ["format-mismatch"],
+    reason:
+      "この5年度は予算の概要の文字は健全に取り出せるが、款ごとに金額を並べた表が入っていない" +
+      "（「民生費」と金額が同じ行に並ぶ箇所が、平成31年度の億円単位に丸めたグラフの1か所だけで、" +
+      "ほかの4年度は0か所。収録時に実測）。" +
+      "款ごとの表を載せている予算説明書と予算編成大要は、この年度は発行元に無い。",
+    url: "https://www.city.takarazuka.hyogo.jp/1060687/1060727/1000137/1012635.html",
+    checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-17",
+  },
+  {
     code: "062014", name: "山形市", dataset: "budget",
     fiscalYears: ["R6"],
     categories: ["broken-text-layer"],

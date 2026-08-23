@@ -166,7 +166,7 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20250206161700/http://www.city.ageo.lg.jp/uploaded/attachment/81723.pdf",
       "waybackTimestamp": "20250206161700",
-      "checkedAt": "2026-08-23T20:47:37.224Z",
+      "checkedAt": "2026-08-23T21:22:32.417Z",
       "sha256Match": true,
       "waybackBytes": 895337,
       "rawSha256": "3ec383b187ec5e06faa59583895a8c4fa7e19b79c4294ffc1d91b8de0c3e803e"
@@ -5541,7 +5541,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260416233038/https://www.city.kasukabe.lg.jp/shiseijoho/yosan_kessan_zaiseijokyo/8211.html",
       "waybackTimestamp": "20260416233038",
-      "checkedAt": "2026-08-23T20:51:16.746Z"
+      "checkedAt": "2026-08-23T21:21:56.308Z"
     },
     {
       "sourceId": "katsushika-yosangaiyou-h28",
@@ -23371,10 +23371,18 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20220428112616/https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/012/635/taiyo17.pdf",
       "waybackTimestamp": "20220428112616",
-      "checkedAt": "2026-08-23T20:57:35.391Z",
+      "checkedAt": "2026-08-23T21:23:49.013Z",
       "sha256Match": true,
       "waybackBytes": 206423,
       "rawSha256": "53314c3f08fa9d68fdcad1699690d2660e8feda63431a38a02c0322859cea425"
+    },
+    {
+      "sourceId": "takarazuka-yosansho-h17",
+      "url": "https://www.city.takarazuka.hyogo.jp/1060687/1060727/1000137/1012635.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260116024553/https://www.city.takarazuka.hyogo.jp/1060687/1060727/1000137/1012635.html",
+      "waybackTimestamp": "20260116024553",
+      "checkedAt": "2026-08-23T21:23:50.441Z"
     },
     {
       "sourceId": "takarazuka-yosansho-h18",
@@ -23496,7 +23504,7 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20250219091111/https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/055/632/r6_tousyosetumei.pdf",
       "waybackTimestamp": "20250219091111",
-      "checkedAt": "2026-08-23T20:52:48.870Z",
+      "checkedAt": "2026-08-23T21:23:33.567Z",
       "sha256Match": true,
       "waybackBytes": 4256624,
       "rawSha256": "31258f5bacb1b07d1375894557428b047a6f92ac144939a917c8a78098a6fd18"
@@ -25728,7 +25736,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20251206190729/https://www.city.yamagata-yamagata.lg.jp/shiseijoho/zaisei/1007006/1003974.html",
       "waybackTimestamp": "20251206190729",
-      "checkedAt": "2026-08-23T20:59:05.755Z"
+      "checkedAt": "2026-08-23T21:22:29.477Z"
     },
     {
       "sourceId": "yamaguchi-yosansho-r7",
