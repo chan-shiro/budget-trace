@@ -1,0 +1,12 @@
+{
+  "sourceId": "akashi-yosansho-r5",
+  "files": [
+    {
+      "filename": "r5ippan.pdf",
+      "sha256": "3ccd72292b4cd88c539b558edd8588c5ffbc344d05f8387785b256eda1dfc35c",
+      "bytes": 1819115,
+      "fetchedAt": "2026-08-23T06:25:35.055Z",
+      "fetchedFrom": "https://www.city.akashi.lg.jp/documents/2584/r5ippan.pdf"
+    }
+  ]
+}

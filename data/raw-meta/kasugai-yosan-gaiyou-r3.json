@@ -1,0 +1,19 @@
+{
+  "sourceId": "kasugai-yosan-gaiyou-r3",
+  "files": [
+    {
+      "filename": "R3sainyuu.pdf",
+      "sha256": "27689f3beb7de6a3f926c9ea1cb7a450ea741202a6d8d122ca227f93955bfbff",
+      "bytes": 103669,
+      "fetchedAt": "2026-08-23T06:25:41.774Z",
+      "fetchedFrom": "https://www.city.kasugai.lg.jp/_res/projects/default_project/_page_/001/022/806/R3sainyuu.pdf"
+    },
+    {
+      "filename": "R3saisyutu.pdf",
+      "sha256": "e0ea818712d38aa5ccfd29a423ffc9db3237c947e1115a704a635dd8f0287915",
+      "bytes": 68577,
+      "fetchedAt": "2026-08-23T06:25:42.139Z",
+      "fetchedFrom": "https://www.city.kasugai.lg.jp/_res/projects/default_project/_page_/001/022/806/R3saisyutu.pdf"
+    }
+  ]
+}

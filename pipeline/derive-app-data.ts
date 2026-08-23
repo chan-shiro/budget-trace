@@ -2427,6 +2427,25 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `koriyama-yosan-gaiyou-${fy}`, muniCode: "072036", muniName: "郡山市", prefName: "福島県", isPref: false,
     })),
+    // 中核市など 第10弾（2026-08-23・loop.md の第11巡）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `yokkaichi-yosan-siryou-${fy}`, muniCode: "242021", muniName: "四日市市", prefName: "三重県", isPref: false,
+    })),
+    // ⚠ H21 は原典の「歳入合計（前年度）」が誤植（記載 115,691,713 に対し Σ款 = 115,691,813）で、
+    //    収録すると derive の年度間クロスチェーンが H20 との間で止まる（宇都宮 R3・長崎 H28 と同じ扱いで落とす）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28", "h27", "h26", "h25", "h24", "h23", "h22", "h20"] as const).map((fy) => ({
+      srcId: `iwaki-yosan-gaiyou-${fy}`, muniCode: "072044", muniName: "いわき市", prefName: "福島県", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `akashi-yosansho-${fy}`, muniCode: "282031", muniName: "明石市", prefName: "兵庫県", isPref: false,
+    })),
+    // 高知市は R7・R6（3行組で throw）・R2（議会修正＋ガーブル）・H31（Σ 差0 のまま款名が化ける）を除く
+    ...(["r8", "r5", "r4", "r3", "h30"] as const).map((fy) => ({
+      srcId: `kochi-shi-yosan-gaiyou-${fy}`, muniCode: "392014", muniName: "高知市", prefName: "高知県", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
+      srcId: `kasugai-yosan-gaiyou-${fy}`, muniCode: "232068", muniName: "春日井市", prefName: "愛知県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。

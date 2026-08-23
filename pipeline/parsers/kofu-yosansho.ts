@@ -476,7 +476,29 @@ interface Options {
    * （**年度を外挿しない**）。
    */
   prevColumnFirst?: boolean;
+  /**
+   * **款番号が丸数字で印字される様式**（2026-08-23・四日市市）。四日市の歳入は
+   * **自主財源の8款だけ丸数字**（`① 市税` `⑭ 使用料及び手数料` … `㉒ 諸収入`）で、
+   * 残りは全角の `２．地方譲与税` 形式。原典の凡例が「○付数字は自主財源」と説明している。
+   * ⚠ 指定しないと**丸数字の款が丸ごと落ちて Σ が −89,358,383 で error になる**（＝大声で落ちる）。
+   * `kanNoless` + `kanNamePrefixStrip` でも Σ は通せるが**その8款の `kanNo` が null になる**ので、
+   * 款番号を原典どおり持たせたいときはこちらを使う。
+   *
+   * ⚠⚠ **既定にしてはいけない**（opt-in にしてある理由）— 丸数字を全ソースで数字へ読み替えると、
+   * **新宿 H20 の歳出款8 `環境清掃費（⑲環境費）` が `環境清掃費（` に壊れ Σ が −8,366,258 で落ちる**
+   * （偵察がリポジトリの raw に当てて再現済み）。**款名の一部に丸数字が出る資料が実在する**。
+   */
+  kanNoCircled?: boolean;
 }
+
+/** 丸数字（①〜㊿・㉑〜㉟ の追加面も含む）→ 半角数字。`kanNoCircled` のときだけ行頭に適用する */
+const circledToDigits = (s: string): string =>
+  s.replace(/[\u2460-\u2473\u3251-\u325f\u32b1-\u32bf]/g, (c) => {
+    const cp = c.codePointAt(0)!;
+    if (cp >= 0x2460 && cp <= 0x2473) return String(cp - 0x2460 + 1); // ①〜⑳
+    if (cp >= 0x3251 && cp <= 0x325f) return String(cp - 0x3251 + 21); // ㉑〜㉟
+    return String(cp - 0x32b1 + 36); // ㊱〜㊿
+  });
 
 /** 全角数字・全角カンマ → 半角（豊川の款番号・北杜の小計見出しが全角） */
 const toHalfDigits = (s: string): string =>
@@ -1078,17 +1100,26 @@ function parseKanPage(
     // `0?[1-9]` は**0 単独には当たらない**ので、葛飾 R2 の `○  0  182,000  △ 182,000  皆減` は
     // 従来どおり lead なし＝廃止款の分岐へ落ちる。
     // **既存の kofu-yosansho ソース371件を再 parse して `parsedAt` 以外の差分ゼロを実測**（葛飾 R2 を含む）。
-    const lead = raw.match(
+    // **行頭の丸数字を款番号として読む**（Options.kanNoCircled 参照・四日市）。
+    // ⚠ **行頭だけ**に当てる — 款名の途中に出る丸数字（新宿 H20 の `環境清掃費（⑲環境費）`）を壊さないため。
+    const rawForLead = opts.kanNoCircled
+      ? raw.replace(/^(\s*[○◎●]*\s*)([\u2460-\u2473\u3251-\u325f\u32b1-\u32bf])/, (_m, pre: string, c: string) => pre + circledToDigits(c))
+      : raw;
+    const lead = rawForLead.match(
       opts.kanNoParenthesized
         ? /^\s*[○◎●]*\s*[(（]\s*(0?[1-9]\d*)\s*[)）](?![\d,])/ // 括弧付き款番号（Options.kanNoParenthesized 参照・福山）
         : /^\s*[○◎●]*\s*(0?[1-9]\d*)(?![\d,])/,
     );
     // 款行でも整数の百分率（`0%`・`100%`）が金額に紛れうるので合計行と同じ扱いにする。
     // **lead の判定より後**に置くこと（款番号は百分率ではないので剥がしてはいけない）。
-    // 款番号直後の**半角ピリオド**（松戸 `1.市税`・市川 `1.` 単独行）は款番号の体裁なので落とす（2026-08-22 #226）。
+    // 款番号直後の**ピリオド**（松戸 `1.市税`・市川 `1.` 単独行）は款番号の体裁なので落とす（2026-08-22 #226）。
+    // ⚠ **全角 `．` も落とす**（2026-08-23・四日市 `２．地方譲与税`）— 半角だけだと款名が `．地方譲与税` になり、
+    //   **Σ は4系統とも差0 のまま**なので**目視でしか気づけない**（収録時の款名全件目視で実際に捕まえた）。
     // 数字が続くピリオド（小数）は落とさない。
     // lead[0] は行頭の空白・付番マーカー・款番号（括弧付きなら閉じ括弧まで）を含むので、その直後から款名が始まる
-    const rest = stripPercents(lead ? raw.slice(lead[0].length).replace(/^\.(?!\d)/, "") : raw);
+    // ⚠ **`rawForLead` から切る**（`raw` ではない）— `kanNoCircled` で `⑭` を `14` に読み替えると
+    //   lead[0] の長さが raw と1文字ずれ、**款名の先頭1文字が削れる**（収録時に実測して直した）。
+    const rest = stripPercents(lead ? rawForLead.slice(lead[0].length).replace(/^[.．](?!\d)/, "") : rawForLead);
     const tokens = rest.match(AMOUNT_RE) ?? [];
     let ints = tokens.filter((t) => !t.includes("."));
     // 款行に同居する項番号を落とす（Options.kanRowInlineKoNo 参照）。

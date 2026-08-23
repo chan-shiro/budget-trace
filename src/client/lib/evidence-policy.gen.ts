@@ -10482,5 +10482,185 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.koriyama.lg.jp/uploaded/attachment/19142.pdf",
     "license": "郡山市ホームページ上に掲載されている文書や画像等のコンテンツの無断使用・転載・引用を禁じます。郡山市公式サイト上における文書・画像等コンテンツの著作権は、郡山市に帰属します。一部の画像等の著作権は、撮影者や画像提供者などの原著作者が所有します。",
     "target": "file"
+  },
+  "/sources/iwaki-yosan-gaiyou-r8/r8tousyoyosansiryousyuu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwaki.lg.jp/www/contents/1761108064077/simple/r8tousyoyosansiryousyuu.pdf",
+    "license": "いわき市公式ホームページ（サーバ：www.city.iwaki.lg.jp ドメイン）から発信するコンテンツ（文章や画像で構成された閲覧可能な情報を言う。）の著作権は、いわき市に帰属します。いわき市公式ホームページの内容の全部又は一部については、私的使用又は引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載複製を行なうことができます。ただし、「無断転載を禁じます」等の注記があるものについては、それに従うようお願いします。いわき市公式ホームページの内容の全部又は一部について、いわき市に無断で改変を行なうことはできません。",
+    "target": "file"
+  },
+  "/sources/iwaki-yosan-gaiyou-r7/R7tousyoyosannsiryousyuu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwaki.lg.jp/www/contents/1729517378184/simple/R7tousyoyosannsiryousyuu.pdf",
+    "license": "いわき市公式ホームページ（サーバ：www.city.iwaki.lg.jp ドメイン）から発信するコンテンツ（文章や画像で構成された閲覧可能な情報を言う。）の著作権は、いわき市に帰属します。いわき市公式ホームページの内容の全部又は一部については、私的使用又は引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載複製を行なうことができます。ただし、「無断転載を禁じます」等の注記があるものについては、それに従うようお願いします。いわき市公式ホームページの内容の全部又は一部について、いわき市に無断で改変を行なうことはできません。",
+    "target": "file"
+  },
+  "/sources/iwaki-yosan-gaiyou-r6/reiwa6nenndoippannkaikeitousyoyosannnogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwaki.lg.jp/www/contents/1698135404978/simple/reiwa6nenndoippannkaikeitousyoyosannnogaiyou.pdf",
+    "license": "いわき市公式ホームページ（サーバ：www.city.iwaki.lg.jp ドメイン）から発信するコンテンツ（文章や画像で構成された閲覧可能な情報を言う。）の著作権は、いわき市に帰属します。いわき市公式ホームページの内容の全部又は一部については、私的使用又は引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載複製を行なうことができます。ただし、「無断転載を禁じます」等の注記があるものについては、それに従うようお願いします。いわき市公式ホームページの内容の全部又は一部について、いわき市に無断で改変を行なうことはできません。",
+    "target": "file"
+  },
+  "/sources/iwaki-yosan-gaiyou-r5/R5nenndoippannkaikeitousyoyosannnogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwaki.lg.jp/www/contents/1675670185830/simple/R5nenndoippannkaikeitousyoyosannnogaiyou.pdf",
+    "license": "いわき市公式ホームページ（サーバ：www.city.iwaki.lg.jp ドメイン）から発信するコンテンツ（文章や画像で構成された閲覧可能な情報を言う。）の著作権は、いわき市に帰属します。いわき市公式ホームページの内容の全部又は一部については、私的使用又は引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載複製を行なうことができます。ただし、「無断転載を禁じます」等の注記があるものについては、それに従うようお願いします。いわき市公式ホームページの内容の全部又は一部について、いわき市に無断で改変を行なうことはできません。",
+    "target": "file"
+  },
+  "/sources/iwaki-yosan-gaiyou-r4/R4nenndoippannkaikeitousyoyosannnogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwaki.lg.jp/www/contents/1636440666502/simple/R4nenndoippannkaikeitousyoyosannnogaiyou.pdf",
+    "license": "いわき市公式ホームページ（サーバ：www.city.iwaki.lg.jp ドメイン）から発信するコンテンツ（文章や画像で構成された閲覧可能な情報を言う。）の著作権は、いわき市に帰属します。いわき市公式ホームページの内容の全部又は一部については、私的使用又は引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載複製を行なうことができます。ただし、「無断転載を禁じます」等の注記があるものについては、それに従うようお願いします。いわき市公式ホームページの内容の全部又は一部について、いわき市に無断で改変を行なうことはできません。",
+    "target": "file"
+  },
+  "/sources/iwaki-yosan-gaiyou-r3/R3nenndotouyoyosannnopoinnto.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwaki.lg.jp/www/contents/1604468120594/simple/R3nenndotouyoyosannnopoinnto.pdf",
+    "license": "いわき市公式ホームページ（サーバ：www.city.iwaki.lg.jp ドメイン）から発信するコンテンツ（文章や画像で構成された閲覧可能な情報を言う。）の著作権は、いわき市に帰属します。いわき市公式ホームページの内容の全部又は一部については、私的使用又は引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載複製を行なうことができます。ただし、「無断転載を禁じます」等の注記があるものについては、それに従うようお願いします。いわき市公式ホームページの内容の全部又は一部について、いわき市に無断で改変を行なうことはできません。",
+    "target": "file"
+  },
+  "/sources/iwaki-yosan-gaiyou-r2/R2tousyoyosannopoint.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwaki.lg.jp/www/contents/1581555289068/simple/R2tousyoyosannopoint.pdf",
+    "license": "いわき市公式ホームページ（サーバ：www.city.iwaki.lg.jp ドメイン）から発信するコンテンツ（文章や画像で構成された閲覧可能な情報を言う。）の著作権は、いわき市に帰属します。いわき市公式ホームページの内容の全部又は一部については、私的使用又は引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載複製を行なうことができます。ただし、「無断転載を禁じます」等の注記があるものについては、それに従うようお願いします。いわき市公式ホームページの内容の全部又は一部について、いわき市に無断で改変を行なうことはできません。",
+    "target": "file"
+  },
+  "/sources/iwaki-yosan-gaiyou-h31/H31tousyoyosanpoint.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwaki.lg.jp/www/contents/1540545559169/simple/H31tousyoyosanpoint.pdf",
+    "license": "いわき市公式ホームページ（サーバ：www.city.iwaki.lg.jp ドメイン）から発信するコンテンツ（文章や画像で構成された閲覧可能な情報を言う。）の著作権は、いわき市に帰属します。いわき市公式ホームページの内容の全部又は一部については、私的使用又は引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載複製を行なうことができます。ただし、「無断転載を禁じます」等の注記があるものについては、それに従うようお願いします。いわき市公式ホームページの内容の全部又は一部について、いわき市に無断で改変を行なうことはできません。",
+    "target": "file"
+  },
+  "/sources/iwaki-yosan-gaiyou-h30/H30tousyoyosannpointo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwaki.lg.jp/www/contents/1509502188650/simple/H30tousyoyosannpointo.pdf",
+    "license": "いわき市公式ホームページ（サーバ：www.city.iwaki.lg.jp ドメイン）から発信するコンテンツ（文章や画像で構成された閲覧可能な情報を言う。）の著作権は、いわき市に帰属します。いわき市公式ホームページの内容の全部又は一部については、私的使用又は引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載複製を行なうことができます。ただし、「無断転載を禁じます」等の注記があるものについては、それに従うようお願いします。いわき市公式ホームページの内容の全部又は一部について、いわき市に無断で改変を行なうことはできません。",
+    "target": "file"
+  },
+  "/sources/iwaki-yosan-gaiyou-h29/H29tousyoyosannnopoinntogiketugo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwaki.lg.jp/www/contents/1479992214405/simple/H29tousyoyosannnopoinntogiketugo.pdf",
+    "license": "いわき市公式ホームページ（サーバ：www.city.iwaki.lg.jp ドメイン）から発信するコンテンツ（文章や画像で構成された閲覧可能な情報を言う。）の著作権は、いわき市に帰属します。いわき市公式ホームページの内容の全部又は一部については、私的使用又は引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載複製を行なうことができます。ただし、「無断転載を禁じます」等の注記があるものについては、それに従うようお願いします。いわき市公式ホームページの内容の全部又は一部について、いわき市に無断で改変を行なうことはできません。",
+    "target": "file"
+  },
+  "/sources/iwaki-yosan-gaiyou-h28/h28toushogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwaki.lg.jp/www/contents/1455763178320/simple/h28toushogaiyou.pdf",
+    "license": "いわき市公式ホームページ（サーバ：www.city.iwaki.lg.jp ドメイン）から発信するコンテンツ（文章や画像で構成された閲覧可能な情報を言う。）の著作権は、いわき市に帰属します。いわき市公式ホームページの内容の全部又は一部については、私的使用又は引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載複製を行なうことができます。ただし、「無断転載を禁じます」等の注記があるものについては、それに従うようお願いします。いわき市公式ホームページの内容の全部又は一部について、いわき市に無断で改変を行なうことはできません。",
+    "target": "file"
+  },
+  "/sources/iwaki-yosan-gaiyou-h27/H27touyoyosannannnogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwaki.lg.jp/www/contents/1001000003480/simple/H27touyoyosannannnogaiyou.pdf",
+    "license": "いわき市公式ホームページ（サーバ：www.city.iwaki.lg.jp ドメイン）から発信するコンテンツ（文章や画像で構成された閲覧可能な情報を言う。）の著作権は、いわき市に帰属します。いわき市公式ホームページの内容の全部又は一部については、私的使用又は引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載複製を行なうことができます。ただし、「無断転載を禁じます」等の注記があるものについては、それに従うようお願いします。いわき市公式ホームページの内容の全部又は一部について、いわき市に無断で改変を行なうことはできません。",
+    "target": "file"
+  },
+  "/sources/iwaki-yosan-gaiyou-h26/h26_tousyo_gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwaki.lg.jp/www/contents/1001000003479/simple/h26_tousyo_gaiyou.pdf",
+    "license": "いわき市公式ホームページ（サーバ：www.city.iwaki.lg.jp ドメイン）から発信するコンテンツ（文章や画像で構成された閲覧可能な情報を言う。）の著作権は、いわき市に帰属します。いわき市公式ホームページの内容の全部又は一部については、私的使用又は引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載複製を行なうことができます。ただし、「無断転載を禁じます」等の注記があるものについては、それに従うようお願いします。いわき市公式ホームページの内容の全部又は一部について、いわき市に無断で改変を行なうことはできません。",
+    "target": "file"
+  },
+  "/sources/iwaki-yosan-gaiyou-h25/H25GAIYOU2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwaki.lg.jp/www/contents/1001000003478/simple/H25GAIYOU2.pdf",
+    "license": "いわき市公式ホームページ（サーバ：www.city.iwaki.lg.jp ドメイン）から発信するコンテンツ（文章や画像で構成された閲覧可能な情報を言う。）の著作権は、いわき市に帰属します。いわき市公式ホームページの内容の全部又は一部については、私的使用又は引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載複製を行なうことができます。ただし、「無断転載を禁じます」等の注記があるものについては、それに従うようお願いします。いわき市公式ホームページの内容の全部又は一部について、いわき市に無断で改変を行なうことはできません。",
+    "target": "file"
+  },
+  "/sources/iwaki-yosan-gaiyou-h24/H24_tousyo.gaiyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwaki.lg.jp/www/contents/1455496444656/simple/H24_tousyo.gaiyou2.pdf",
+    "license": "いわき市公式ホームページ（サーバ：www.city.iwaki.lg.jp ドメイン）から発信するコンテンツ（文章や画像で構成された閲覧可能な情報を言う。）の著作権は、いわき市に帰属します。いわき市公式ホームページの内容の全部又は一部については、私的使用又は引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載複製を行なうことができます。ただし、「無断転載を禁じます」等の注記があるものについては、それに従うようお願いします。いわき市公式ホームページの内容の全部又は一部について、いわき市に無断で改変を行なうことはできません。",
+    "target": "file"
+  },
+  "/sources/iwaki-yosan-gaiyou-h23/h23_tousho_gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwaki.lg.jp/www/contents/1455498085783/simple/h23_tousho_gaiyou.pdf",
+    "license": "いわき市公式ホームページ（サーバ：www.city.iwaki.lg.jp ドメイン）から発信するコンテンツ（文章や画像で構成された閲覧可能な情報を言う。）の著作権は、いわき市に帰属します。いわき市公式ホームページの内容の全部又は一部については、私的使用又は引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載複製を行なうことができます。ただし、「無断転載を禁じます」等の注記があるものについては、それに従うようお願いします。いわき市公式ホームページの内容の全部又は一部について、いわき市に無断で改変を行なうことはできません。",
+    "target": "file"
+  },
+  "/sources/iwaki-yosan-gaiyou-h22/h22_toshogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwaki.lg.jp/www/contents/1455500996723/simple/h22_toshogaiyou.pdf",
+    "license": "いわき市公式ホームページ（サーバ：www.city.iwaki.lg.jp ドメイン）から発信するコンテンツ（文章や画像で構成された閲覧可能な情報を言う。）の著作権は、いわき市に帰属します。いわき市公式ホームページの内容の全部又は一部については、私的使用又は引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載複製を行なうことができます。ただし、「無断転載を禁じます」等の注記があるものについては、それに従うようお願いします。いわき市公式ホームページの内容の全部又は一部について、いわき市に無断で改変を行なうことはできません。",
+    "target": "file"
+  },
+  "/sources/iwaki-yosan-gaiyou-h20/h20_toushogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwaki.lg.jp/www/contents/1455504020116/simple/h20_toushogaiyou.pdf",
+    "license": "いわき市公式ホームページ（サーバ：www.city.iwaki.lg.jp ドメイン）から発信するコンテンツ（文章や画像で構成された閲覧可能な情報を言う。）の著作権は、いわき市に帰属します。いわき市公式ホームページの内容の全部又は一部については、私的使用又は引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載複製を行なうことができます。ただし、「無断転載を禁じます」等の注記があるものについては、それに従うようお願いします。いわき市公式ホームページの内容の全部又は一部について、いわき市に無断で改変を行なうことはできません。",
+    "target": "file"
+  },
+  "/sources/akashi-yosansho-r8/r8ippan_shusei1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.akashi.lg.jp/documents/2584/r8ippan_shusei1.pdf",
+    "license": "明石市公式ホームページに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、明石市公式ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されていますので、無断で複製・転用することはできません。利用許諾については各ページに記載されている課・所属などへお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/akashi-yosansho-r7/r7ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.akashi.lg.jp/documents/2584/r7ippan.pdf",
+    "license": "明石市公式ホームページに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、明石市公式ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されていますので、無断で複製・転用することはできません。利用許諾については各ページに記載されている課・所属などへお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/akashi-yosansho-r6/r6ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.akashi.lg.jp/documents/2584/r6ippan.pdf",
+    "license": "明石市公式ホームページに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、明石市公式ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されていますので、無断で複製・転用することはできません。利用許諾については各ページに記載されている課・所属などへお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/akashi-yosansho-r5/r5ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.akashi.lg.jp/documents/2584/r5ippan.pdf",
+    "license": "明石市公式ホームページに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、明石市公式ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されていますので、無断で複製・転用することはできません。利用許諾については各ページに記載されている課・所属などへお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/akashi-yosansho-r4/r4ippantosho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.akashi.lg.jp/documents/2584/r4ippantosho.pdf",
+    "license": "明石市公式ホームページに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、明石市公式ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されていますので、無断で複製・転用することはできません。利用許諾については各ページに記載されている課・所属などへお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/akashi-yosansho-r3/r03_01ippann.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.akashi.lg.jp/documents/2584/r03_01ippann.pdf",
+    "license": "明石市公式ホームページに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、明石市公式ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されていますので、無断で複製・転用することはできません。利用許諾については各ページに記載されている課・所属などへお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/akashi-yosansho-r2/r02_01ippann.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.akashi.lg.jp/documents/2584/r02_01ippann.pdf",
+    "license": "明石市公式ホームページに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、明石市公式ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されていますので、無断で複製・転用することはできません。利用許諾については各ページに記載されている課・所属などへお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/kochi-shi-yosan-gaiyou-r8/265460_1141150_misc.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kochi.kochi.jp/uploaded/life/265460_1141150_misc.pdf",
+    "license": "高知市公式ホームページに掲載されている個々の情報（文字、イラスト、写真等）に関する諸権利は、著作権の対象であり、法律によって保護されています。これらの情報について、「私的使用のための複製」や「引用」など著作権法上で認められている行為を除き、無断で複製、転用等をすることは法律で禁止されています。",
+    "target": "file"
+  },
+  "/sources/kochi-shi-yosan-gaiyou-r5/186341_703247_misc.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kochi.kochi.jp/uploaded/life/186341_703247_misc.pdf",
+    "license": "高知市公式ホームページに掲載されている個々の情報（文字、イラスト、写真等）に関する諸権利は、著作権の対象であり、法律によって保護されています。これらの情報について、「私的使用のための複製」や「引用」など著作権法上で認められている行為を除き、無断で複製、転用等をすることは法律で禁止されています。",
+    "target": "file"
+  },
+  "/sources/kochi-shi-yosan-gaiyou-r4/177465_659000_misc.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kochi.kochi.jp/uploaded/life/177465_659000_misc.pdf",
+    "license": "高知市公式ホームページに掲載されている個々の情報（文字、イラスト、写真等）に関する諸権利は、著作権の対象であり、法律によって保護されています。これらの情報について、「私的使用のための複製」や「引用」など著作権法上で認められている行為を除き、無断で複製、転用等をすることは法律で禁止されています。",
+    "target": "file"
+  },
+  "/sources/kochi-shi-yosan-gaiyou-r3/166247_603071_misc.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kochi.kochi.jp/uploaded/life/166247_603071_misc.pdf",
+    "license": "高知市公式ホームページに掲載されている個々の情報（文字、イラスト、写真等）に関する諸権利は、著作権の対象であり、法律によって保護されています。これらの情報について、「私的使用のための複製」や「引用」など著作権法上で認められている行為を除き、無断で複製、転用等をすることは法律で禁止されています。",
+    "target": "file"
+  },
+  "/sources/kochi-shi-yosan-gaiyou-h30/100669_269405_misc.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kochi.kochi.jp/uploaded/life/100669_269405_misc.pdf",
+    "license": "高知市公式ホームページに掲載されている個々の情報（文字、イラスト、写真等）に関する諸権利は、著作権の対象であり、法律によって保護されています。これらの情報について、「私的使用のための複製」や「引用」など著作権法上で認められている行為を除き、無断で複製、転用等をすることは法律で禁止されています。",
+    "target": "file"
   }
 };
