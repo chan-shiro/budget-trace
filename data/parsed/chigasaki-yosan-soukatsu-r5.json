@@ -3,7 +3,7 @@
   "sourceId": "chigasaki-yosan-soukatsu-r5",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-08-23T15:40:54.310Z",
+  "parsedAt": "2026-08-23T16:44:28.399Z",
   "unit": "thousandYen",
   "fiscalYear": "R5",
   "account": "一般会計",
@@ -12,7 +12,7 @@
   "prevRevenueTotal": 76550000,
   "prevExpenditureTotal": 76550000,
   "prevBasis": "当初",
-  "prevNote": "組織改正に伴い、令和4年度当初予算では民生費に属していた「目」保健体育総務費及び体育施設費が「目」スポーツ振興費に名称を変えて総",
+  "prevNote": "組織改正に伴い、令和4年度当初予算では民生費に属していた「目」保健体育総務費及び体育施設費が「目」スポーツ振興費に名称を変えて総務費へ、民生費の「目」地域児童福祉費のうち「細目」放課後児童健全育成事業費が教育費へ移動する等、予算科目の変更が生じています。",
   "facts": [
     {
       "side": "revenue",

@@ -1083,9 +1083,28 @@ function parseKanPage(
   // 既存の正当な注記は全件が年度に言及している（甲府 R6「令和5年度当初予算額は…」・
   // 千代田 R4「令和3年度予算額は…」・福岡 R4「令和4年度に…令和3年度予算」）ので回帰しない。
   const PREV_NOTE_RE = /前年度|[令和平成\d]+\d年度|\d+年度/;
-  for (const l of allLines) {
-    const c = l.replace(/[\s　]/g, "");
-    if (c.startsWith("※") && c.includes("予算") && PREV_NOTE_RE.test(c)) { prevNote = c.slice(1); break; }
+  for (let i = 0; i < allLines.length; i++) {
+    const c = allLines[i]!.replace(/[\s　]/g, "");
+    if (!(c.startsWith("※") && c.includes("予算") && PREV_NOTE_RE.test(c))) continue;
+    let note = c.slice(1);
+    // ⚠⚠ **折返した注記の続きを連結する**（2026-08-24・茅ヶ崎 R5／福岡 R4）。
+    //   従来は1物理行だけを拾っていたため、原典が2行に折り返している注記が
+    //   **文の途中で切れたまま画面の「※資料注記」に出ていた**
+    //   （茅ヶ崎 R5 は `…名称を変えて総` で終わり、落ちた後半こそ
+    //   「民生費→総務費/教育費の科目移動」＝款別増減の読み方に効く実質部分だった）。
+    //   ⚠ 金額でも款名でもないので **Σ も款名重複ゲートも守ってくれない**＝画面を見るしかない領域。
+    // **句点で終わっていない間だけ**続きを足す。⚠ 止める条件を3つ持つ:
+    //   ①空行（表の区切り）②次の `※`（別の注記）③日本語を含まない行（金額行・罫線）。
+    //   ⚠ さらに**2行まで**に制限する — 止め条件を抜けたときに表の残り全部を飲み込ませない。
+    for (let j = i + 1, joined = 0; j < allLines.length && joined < 2; j++) {
+      if (/[。）]$/.test(note)) break;
+      const nx = allLines[j]!.replace(/[\s　]/g, "");
+      if (nx === "" || nx.startsWith("※") || !hasCJKChars(nx)) break;
+      note += nx;
+      joined++;
+    }
+    prevNote = note;
+    break;
   }
 
   for (let li = 0; li < allLines.length; li++) {
