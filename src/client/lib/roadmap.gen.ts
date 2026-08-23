@@ -13,15 +13,15 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 144,
+  "budgetCount": 149,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 826,
-  "fileCount": 1993,
+  "sourceCount": 869,
+  "fileCount": 2040,
   "archivedCount": 791,
   "licenseOpen": 90,
-  "licensePermission": 653,
-  "licenseUnverified": 83,
+  "licensePermission": 683,
+  "licenseUnverified": 96,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
   "kofuBudgetYears": 7,
@@ -49,6 +49,12 @@ export const ROADMAP_PROGRESS = {
       "code": "131113",
       "years": 19,
       "range": "H20〜R8（19年度）"
+    },
+    {
+      "name": "いわき市",
+      "code": "072044",
+      "years": 18,
+      "range": "H20〜R8（18年度）"
     },
     {
       "name": "港区",
@@ -333,8 +339,20 @@ export const ROADMAP_PROGRESS = {
       "range": "H25〜R8（7年度）"
     },
     {
+      "name": "四日市市",
+      "code": "242021",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "京都市",
       "code": "261009",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "明石市",
+      "code": "282031",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },
@@ -377,6 +395,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "横浜市",
       "code": "141003",
+      "years": 6,
+      "range": "R3〜R8（6年度）"
+    },
+    {
+      "name": "春日井市",
+      "code": "232068",
       "years": 6,
       "range": "R3〜R8（6年度）"
     },
@@ -439,6 +463,12 @@ export const ROADMAP_PROGRESS = {
       "code": "332020",
       "years": 5,
       "range": "R3〜R8（5年度）"
+    },
+    {
+      "name": "高知市",
+      "code": "392014",
+      "years": 5,
+      "range": "H30〜R8（5年度）"
     },
     {
       "name": "渋谷区",

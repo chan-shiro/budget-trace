@@ -90,6 +90,54 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-7",
   },
   {
+    code: "072044", name: "いわき市", dataset: "budget", fiscalYears: ["H21"],
+    categories: ["format-mismatch"],
+    reason:
+      "資料も抽出も健全だが、**原典の「歳入合計（前年度）」が誤植**している — 記載 115,691,713 に対し款の和は" +
+      "115,691,813（+100）で、H20 の当年度合計 115,691,813 と突き合わせると Σ 側が正しい。収録すると derive の" +
+      "年度間クロスチェーンが H20 との間で止まるため落とした（宇都宮 R3・長崎 H28 と同じ扱い）。" +
+      "款別の値そのものは正しいので、原典が訂正されるか合計を持たない別資料が見つかれば収録できる。" +
+      "R8〜H22 と H20 は同じ資料で収録済み。",
+    url: "https://www.city.iwaki.lg.jp/www/genre/1000100000314/index.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-11",
+  },
+  {
+    code: "392014", name: "高知市", dataset: "budget", fiscalYears: ["R7", "R6"],
+    categories: ["parser-unsupported"],
+    reason:
+      "R7・R6 の巻末［資料］の款別表は、原典の注記「※上段（ ）書きは満期一括償還及び起債借換による影響額を除いた数値」" +
+      "のとおり一部の款が3行組（（ ）書きの上段／款名行／本体行）になっており、款の金額が款名行と次行にセル単位で分かれる" +
+      "（該当は R7 の歳入19繰入金・22市債・歳入合計と歳出12公債費・歳出合計、R6 の歳入19繰入金・歳入合計と歳出12公債費・" +
+      "歳出合計）。列は x が同じで y だけ違うため CropX でも -raw でも組み直せず、既存パーサは throw する" +
+      "（静かには壊れない）。座標で行を組み直す改修を足せば開く見込み。R8・R5・R4・R3・H30 は同じ資料で収録済み。",
+    url: "https://www.city.kochi.kochi.jp/soshiki/3/yosan07.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-11",
+  },
+  {
+    code: "392014", name: "高知市", dataset: "budget", fiscalYears: ["R2", "H31"],
+    categories: ["broken-text-layer", "format-mismatch"],
+    reason:
+      "R2 は当初予算が議会で修正可決された年度で資料が2つに割れている。前年度当初列を持つ「概要」は値が修正前の原案" +
+      "（歳入合計 147,600,000）で、しかもテキスト層が全面ガーブル（数字がサブセットフォントの制御文字で固定オフセットの" +
+      "帯ではないため decodeGarble も効かない）。可決額を載せた「修正可決後」PDF（合計 147,555,800）は列が" +
+      "［原案／修正可決後／差］だけで前年度当初列を持たない。H31 は金額が正しく抽出でき Σ が4系統とも差0 になるが、" +
+      "款名が11件化ける（利子割交付金→匏子割交付□・民生費→□生費 など）。⚠ U+FFFD は validate の KANNAME_JUNK_RE にも" +
+      "部首ゲートにも当たらないため検出されず、目視だけが網。",
+    url: "https://www.city.kochi.kochi.jp/soshiki/3/yosan02.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-11",
+  },
+  {
+    code: "242021", name: "四日市市", dataset: "budget", fiscalYears: ["H31"],
+    categories: ["broken-text-layer"],
+    reason:
+      "「当初予算資料」の全ページが ToUnicode 欠落のサブセットフォントで抽出時に化け（平成→ᖹᡂ）、既存の復号帯" +
+      "（荒川・豊島族の −0x1D、三重県 R8 の +0x3EAC）のいずれにも乗らない（等差にならずサブセットの並び順に依存する）。" +
+      "同年度の「当初予算の概要」は健全だが款別が円グラフの画像だけで表が無い。R8〜R2 は同じ資料で収録済み。",
+    url: "https://www.city.yokkaichi.lg.jp/www/contents/1001000000530/index.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-11",
+  },
+
+  {
     code: "472018", name: "那覇市", dataset: "budget",
     fiscalYears: ["R6", "R3", "R2", "H31", "H30"],
     categories: ["broken-text-layer"],

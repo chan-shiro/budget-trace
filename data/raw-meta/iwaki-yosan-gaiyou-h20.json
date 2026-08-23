@@ -1,0 +1,12 @@
+{
+  "sourceId": "iwaki-yosan-gaiyou-h20",
+  "files": [
+    {
+      "filename": "h20_toushogaiyou.pdf",
+      "sha256": "759dbda1d867acdee9059656642e0ff942288a8d4de4e4669dd71a1cc74ca7a0",
+      "bytes": 328849,
+      "fetchedAt": "2026-08-23T06:25:33.380Z",
+      "fetchedFrom": "https://www.city.iwaki.lg.jp/www/contents/1455504020116/simple/h20_toushogaiyou.pdf"
+    }
+  ]
+}
