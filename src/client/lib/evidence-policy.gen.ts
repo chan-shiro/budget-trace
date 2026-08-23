@@ -10262,19 +10262,19 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "target": "page"
   },
   "/sources/tokorozawa-yosan-siryo-r6/siryo-R6-008-017.pdf": {
-    "mode": "origin",
+    "mode": "archive",
     "href": "https://web.archive.org/web/20250214111844/https://www.city.tokorozawa.saitama.jp/shiseijoho/shichougian/reiwa6nendai1kaiteireikai.html",
     "license": "所沢市ホームページ上に掲載されている文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として所沢市に帰属します。（一部の画像等の著作権は、原著作者が所有しています。）また、所沢市ホームページ内にて掲載された会社名・製品名などの名称は、一般に各社の商標あるいは登録商標です。著作権法上認められる場合を除き、所沢市の許可なく所沢市ホームページ上に掲載されている文書や画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。なお、所沢市の各課が配信するページ等に利用規約等、特段の定めがある場合は、この取り扱いに優先するものとします。",
     "target": "page"
   },
   "/sources/tokorozawa-yosan-siryo-r5/siryoR5-9-18.pdf": {
-    "mode": "origin",
+    "mode": "archive",
     "href": "https://web.archive.org/web/20230306080104/https://www.city.tokorozawa.saitama.jp/shiseijoho/shichougian/bunsyo20230208.html",
     "license": "所沢市ホームページ上に掲載されている文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として所沢市に帰属します。（一部の画像等の著作権は、原著作者が所有しています。）また、所沢市ホームページ内にて掲載された会社名・製品名などの名称は、一般に各社の商標あるいは登録商標です。著作権法上認められる場合を除き、所沢市の許可なく所沢市ホームページ上に掲載されている文書や画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。なお、所沢市の各課が配信するページ等に利用規約等、特段の定めがある場合は、この取り扱いに優先するものとします。",
     "target": "page"
   },
   "/sources/tokorozawa-yosan-siryo-r4/siryo-R4-011-020.pdf": {
-    "mode": "origin",
+    "mode": "archive",
     "href": "https://web.archive.org/web/20220217075546/https://www.city.tokorozawa.saitama.jp/shiseijoho/shichougian/bunsyo20220216101931943.html",
     "license": "所沢市ホームページ上に掲載されている文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として所沢市に帰属します。（一部の画像等の著作権は、原著作者が所有しています。）また、所沢市ホームページ内にて掲載された会社名・製品名などの名称は、一般に各社の商標あるいは登録商標です。著作権法上認められる場合を除き、所沢市の許可なく所沢市ホームページ上に掲載されている文書や画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。なお、所沢市の各課が配信するページ等に利用規約等、特段の定めがある場合は、この取り扱いに優先するものとします。",
     "target": "page"
@@ -10766,7 +10766,7 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "target": "page"
   },
   "/sources/mito-yosangaiyou-h30/002.pdf": {
-    "mode": "origin",
+    "mode": "archive",
     "href": "https://web.archive.org/web/20220302161030/https://www.city.mito.lg.jp/000271/000273/000282/000367/p018400.html",
     "license": "市ホームページに掲載されている文章、写真、イラストなどの個々の情報は、著作権の対象となります。また、市ホームページ全体も編集著作物として著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
     "target": "page"
@@ -11000,19 +11000,19 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "target": "page"
   },
   "/sources/yao-yosansho-r5/R5yosansho.pdf": {
-    "mode": "origin",
+    "mode": "archive",
     "href": "https://warp.ndl.go.jp/20230813/20230811223340/https://www.city.yao.osaka.jp/0000067628.html",
     "license": "八尾市ホームページ上に掲載されている写真・イラスト・音声・動画及び記事は、著作権の対象となっています。また、八尾市ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。原則、著作権は八尾市に帰属しており、一部の画像等の著作権は、原著作者が所有していますので、無断での使用や転載を禁じます。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、八尾市ホームページの掲載コンテンツを複製・転用する際は、必ず事前に広報課までお問合せください。",
     "target": "page"
   },
   "/sources/yao-yosansho-r4/R4yosansyo.pdf": {
-    "mode": "origin",
+    "mode": "archive",
     "href": "https://web.archive.org/web/20230529044845/https://www.city.yao.osaka.jp/0000062171.html",
     "license": "八尾市ホームページ上に掲載されている写真・イラスト・音声・動画及び記事は、著作権の対象となっています。また、八尾市ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。原則、著作権は八尾市に帰属しており、一部の画像等の著作権は、原著作者が所有していますので、無断での使用や転載を禁じます。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、八尾市ホームページの掲載コンテンツを複製・転用する際は、必ず事前に広報課までお問合せください。",
     "target": "page"
   },
   "/sources/yao-yosansho-r3/23yosansyo.pdf": {
-    "mode": "origin",
+    "mode": "archive",
     "href": "https://web.archive.org/web/20231130112349/https://www.city.yao.osaka.jp/0000056728.html",
     "license": "八尾市ホームページ上に掲載されている写真・イラスト・音声・動画及び記事は、著作権の対象となっています。また、八尾市ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。原則、著作権は八尾市に帰属しており、一部の画像等の著作権は、原著作者が所有していますので、無断での使用や転載を禁じます。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、八尾市ホームページの掲載コンテンツを複製・転用する際は、必ず事前に広報課までお問合せください。",
     "target": "page"

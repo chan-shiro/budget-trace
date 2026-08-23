@@ -1586,7 +1586,12 @@ export const WAYBACK_BY_URL: Record<string, string> = ${JSON.stringify(byUrl, nu
     for (const f of meta?.files ?? []) {
       const from = f.fetchedFrom;
       const link: Omit<Link, "target"> | null = s.noDeepLink
-        ? { mode: "origin", href: s.landingPage!, license: s.license }
+        ? // ⚠ **`noDeepLink` でも mode は宛先で決める**（2026-08-23・レビュー指摘）— ここだけ `origin` を
+          //   決め打ちしていたため、**landingPage が魚拓の資料で「発行元で開く ↗」と表示して
+          //   web.archive.org / warp.ndl.go.jp が開いていた**（水戸 H30・八尾 R5/R4/R3・所沢 R6/R5/R4 の7件）。
+          //   文言は `mode` から作られる（`src/client/lib/data.ts` の `actionLabel`/`openLabel`）ので、
+          //   **宛先の実態と mode を必ず一致させる**。他の分岐は最初からこう書いてある。
+          { mode: isArchiveUrl(s.landingPage!) ? "archive" : "origin", href: s.landingPage!, license: s.license }
         : /^https?:/.test(from)
           ? { mode: isArchiveUrl(from) ? "archive" : "origin", href: from, license: s.license }
           : ARCHIVES[registryUrl ?? ""]
