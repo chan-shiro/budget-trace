@@ -90,6 +90,29 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-7",
   },
   {
+    code: "472018", name: "那覇市", dataset: "budget",
+    fiscalYears: ["R6", "R3", "R2", "H31", "H30"],
+    categories: ["broken-text-layer"],
+    reason:
+      "R6・H31・H30 は「予算に関する説明書」の総括表の数字が ToUnicode を持たない非埋め込みフォントで描かれており、" +
+      "抽出時に金額が1つも現れない（漢字も別系統で化ける）。R3・R2 は本文がアウトライン化されていてテキスト層が" +
+      "柱のノンブルだけ。いずれも印刷面には表があり、200dpi 描画で R6 の歳入22款・当年度合計 174,789,000 と" +
+      "R3 の市税 49,197,273 を目視確認した（公表値は年度をまたいで動いていない）。代替も無い — 「なはしのよさんのはなし」は" +
+      "款別でなく、Wayback CDX にも R6 の PDF の捕捉が0件。R8・R7・R5・R4 は同じ資料で収録済み。",
+    url: "https://www.city.naha.okinawa.jp/admin/nahashizaisei/1004386/1004391/index.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-10",
+  },
+  {
+    code: "472018", name: "那覇市", dataset: "budget",
+    fiscalYears: ["H29", "H28", "H27", "H26", "H25"],
+    categories: ["format-mismatch"],
+    reason:
+      "掲載されているのは「一般会計予算書」（16〜18ページ・第1表 歳入歳出予算ほか）だけで、" +
+      "前年度予算額の列を持つ事項別明細書の総括が含まれない。H28・H27 は加えて文字化け、H26・H25 は CCITT スキャン画像。",
+    url: "https://www.city.naha.okinawa.jp/admin/nahashizaisei/1004386/1004391/index.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-10",
+  },
+  {
     code: "112089", name: "所沢市", dataset: "budget", fiscalYears: ["R3"],
     categories: ["format-mismatch"],
     reason:
