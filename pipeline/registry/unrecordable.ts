@@ -134,8 +134,8 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     categories: ["scanned-image"],
     reason:
       "「当初予算説明資料」がこの9年度とも全ページ スキャン画像で、1ページに画像が1枚ずつ入っており、" +
-      "pdftotext の抽出文字数がページ数とほぼ同じ（ページ番号だけ）。文字を読み取る処理もかかっていないため、" +
-      "数値を取り出す手立てがない。収録時にすべての年度を取得して実測した。" +
+      "文字として取り出せる中身がほとんど無い（平成29年度に67字が残るほかは、空白を除くと0字）。" +
+      "文字を読み取る処理もかかっていないため、数値を取り出す手立てがない。収録時にすべての年度を取得して実測した。" +
       "令和8〜4年度と平成25年度以前は同じ資料で収録済み。",
     url: "https://www.city.sasebo.lg.jp/zaimu/zaisei/yosansetsumei.html",
     checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-16",
