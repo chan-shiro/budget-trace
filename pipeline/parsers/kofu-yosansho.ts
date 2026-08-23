@@ -178,6 +178,27 @@ interface Options {
   amountIntIndex?: number;
   prevIntIndex?: number;
   /**
+   * **合計行だけ列の並びが款行と違う様式**（2026-08-23・豊橋市）。豊橋の概要資料は、
+   * 款行の構成比が必ず小数か `-` なのに、**合計行の構成比だけ小数点の無い `100`** で印字される:
+   * ```
+   *  1 市            税      69,530,000   42.0   66,997,000   43.0   2,533,000   3.8   ← 款行（小数）
+   *    歳  入  合  計       165,610,000    100  155,900,000    100   9,710,000   6.2   ← 合計行（整数!）
+   * ```
+   * `stripPercents` は `%` 記号つきの数字しか落とさないので、**合計行の整数トークンが
+   * `[当年度, 100, 前年度, 100, 増減]` になり、既定の ints[1] は前年度ではなく構成比の 100 を掴む**。
+   * ⚠⚠ **これは前年度合計だけを壊す**（当年度の Σ も款の値も正しい）。前年度 Σ の不一致は
+   *   validate では **error ではなく warning** なので **derive まで流れ、画面に「前年度 100千円」が出る**。
+   * ⚠ `amountIntIndex` / `prevIntIndex` は**合計行にも同じ添字を使う**設計（京都府で実測）なので、
+   *   款行と合計行で列が違うこの様式は既存オプションでは表現できない。`CropX` も構成比が当年度と
+   *   前年度の**間**に挟まるため救えない。
+   *
+   * 指定すると**合計行だけ**この添字で読む（款行は従来どおり）。⚠ **必ず2つセットで指定する**
+   * （片方だけだと静かに既定へ落ちるので throw する）。⚠ `prevColumnFirst` とは併用できない
+   *   （どちらが優先か曖昧になるため throw する）。
+   */
+  totalAmountIntIndex?: number;
+  totalPrevIntIndex?: number;
+  /**
    * **金額が原典のセル幅で改行され、桁区切りの途中で次行へ折り返す様式**（2026-07-26・愛知 R8/R7）。
    * 愛知の説明書は歳出の合計行だけ列幅が足りず、**カンマで切れた頭が上段・残りの3桁が下段**に落ちる:
    * ```
@@ -930,9 +951,14 @@ function parseKanPage(
       const ints: string[] = bestTokens;
       // 逆順様式では合計行も [前年度, 当年度] の順（Options.prevColumnFirst 参照）。
       // bestInts > 1 が保証するとおりここは常に整数2個以上なので ints[1] は存在する。
-      if (opts.amountIntIndex != null && opts.prevIntIndex != null) {
-        // 列指定の様式は**合計行も同じ列構成**（Options.amountIntIndex 参照）。
-        // 款行と同じ添字を使い、範囲外なら throw する（＝静かに別の列を読ませない）。
+      // **合計行だけ列が違う様式**は `totalAmountIntIndex` / `totalPrevIntIndex` が優先する
+      // （Options 参照・豊橋）。指定が無ければ従来どおり款行と同じ添字を使う。
+      const totalAmtIdx = opts.totalAmountIntIndex ?? opts.amountIntIndex;
+      const totalPrevIdx = opts.totalPrevIntIndex ?? opts.prevIntIndex;
+      if (totalAmtIdx != null && totalPrevIdx != null) {
+        // 既定では款行と同じ添字（列指定の様式は合計行も同じ列構成であることが多い。京都府で実測）。
+        // **合計行だけ列が違う様式**は上の `total*IntIndex` がこれを上書きする（豊橋）。
+        // どちらの経路でも範囲外なら throw する（＝静かに別の列を読ませない）。
         const pick = (idx: number, what: string): number => {
           const t = ints[idx];
           if (t == null) {
@@ -943,8 +969,8 @@ function parseKanPage(
           }
           return toAmount(t);
         };
-        total = pick(opts.amountIntIndex, "当年度");
-        prevTotal = pick(opts.prevIntIndex, "前年度");
+        total = pick(totalAmtIdx, "当年度");
+        prevTotal = pick(totalPrevIdx, "前年度");
       } else if (opts.prevColumnFirst) {
         total = toAmount(ints[1]!);
         prevTotal = toAmount(ints[0]!);
@@ -3159,6 +3185,20 @@ export function parseKofuYosansho(
     throw new Error(
       `${source.id}: prevBlankAsZero は既定の列順（当年度→前年度）の様式専用です。` +
         `amountIntIndex / prevColumnFirst とは併用できません（併用すると黙って無視されるため禁止しています）。`,
+    );
+  }
+  // `totalAmountIntIndex` / `totalPrevIntIndex` は**必ず2つセット**（Options 参照）。
+  // 片方だけだと静かに `amountIntIndex` 側（または既定の推測）へ落ちるので禁止する。
+  if ((opts.totalAmountIntIndex == null) !== (opts.totalPrevIntIndex == null)) {
+    throw new Error(
+      `${source.id}: totalAmountIntIndex と totalPrevIntIndex は必ず2つセットで指定してください` +
+        `（片方だけだと合計行が黙って既定の推測に落ちるため禁止しています）。`,
+    );
+  }
+  if (opts.totalAmountIntIndex != null && opts.prevColumnFirst) {
+    throw new Error(
+      `${source.id}: totalAmountIntIndex / totalPrevIntIndex は prevColumnFirst とは併用できません` +
+        `（どちらが合計行を読むか曖昧になるため禁止しています）。`,
     );
   }
   // 単数 revenuePage と複数 revenuePages のどちらか一方。内部は常にページ配列で扱う

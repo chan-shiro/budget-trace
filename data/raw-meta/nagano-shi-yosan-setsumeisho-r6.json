@@ -1,0 +1,12 @@
+{
+  "sourceId": "nagano-shi-yosan-setsumeisho-r6",
+  "files": [
+    {
+      "filename": "ippan.pdf",
+      "sha256": "7d679246880bf58026b85c1b519e3189bcca58a2e005e30e764fc75037f7d12a",
+      "bytes": 6283285,
+      "fetchedAt": "2026-08-23T00:06:02.741Z",
+      "fetchedFrom": "https://www.city.nagano.nagano.jp/documents/1170/ippan.pdf"
+    }
+  ]
+}

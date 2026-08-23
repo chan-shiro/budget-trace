@@ -13,15 +13,15 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 129,
+  "budgetCount": 134,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 709,
-  "fileCount": 1868,
-  "archivedCount": 676,
-  "licenseOpen": 75,
-  "licensePermission": 559,
-  "licenseUnverified": 75,
+  "sourceCount": 749,
+  "fileCount": 1908,
+  "archivedCount": 714,
+  "licenseOpen": 80,
+  "licensePermission": 586,
+  "licenseUnverified": 83,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
   "kofuBudgetYears": 7,
@@ -81,10 +81,22 @@ export const ROADMAP_PROGRESS = {
       "range": "H24〜R8（14年度）"
     },
     {
+      "name": "長野市",
+      "code": "202011",
+      "years": 14,
+      "range": "H25〜R8（14年度）"
+    },
+    {
       "name": "尼崎市",
       "code": "282022",
       "years": 14,
       "range": "H25〜R8（14年度）"
+    },
+    {
+      "name": "高崎市",
+      "code": "102024",
+      "years": 13,
+      "range": "H21〜R8（13年度）"
     },
     {
       "name": "台東区",
@@ -279,6 +291,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "一宮市",
+      "code": "232033",
+      "years": 7,
+      "range": "H25〜R8（7年度）"
+    },
+    {
       "name": "京都市",
       "code": "261009",
       "years": 7,
@@ -381,6 +399,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R5〜R8（4年度）"
     },
     {
+      "name": "豊橋市",
+      "code": "232017",
+      "years": 4,
+      "range": "R3〜R8（4年度）"
+    },
+    {
       "name": "岐阜市",
       "code": "212016",
       "years": 3,
@@ -437,6 +461,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "東大阪市",
       "code": "272272",
+      "years": 2,
+      "range": "R7〜R8（2年度）"
+    },
+    {
+      "name": "和歌山市",
+      "code": "302015",
       "years": 2,
       "range": "R7〜R8（2年度）"
     }

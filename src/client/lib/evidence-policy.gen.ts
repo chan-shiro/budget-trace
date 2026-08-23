@@ -9870,5 +9870,167 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.suita.osaka.jp/_res/projects/default_project/_page_/001/008/374/121924113447.pdf",
     "license": "吹田市公式ウェブサイト内に掲載している文章、画像等に関する諸権利は、原則として吹田市または原著作者に帰属します。これらの情報について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
     "target": "file"
+  },
+  "/sources/nagano-shi-yosan-setsumeisho-r8/r8yosannsetumeisyoippannkaikeitou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagano.nagano.jp/documents/1170/r8yosannsetumeisyoippannkaikeitou.pdf",
+    "license": "長野市ホームページ（以下、当ホームページ）に掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として長野市に帰属します。また、一部の画像等の著作権は、長野市以外の原著作者が所有しています。当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたホームページ担当課へ、事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/nagano-shi-yosan-setsumeisho-r7/ippannkaikeiyosannsetumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagano.nagano.jp/documents/1170/ippannkaikeiyosannsetumeisyo.pdf",
+    "license": "長野市ホームページ（以下、当ホームページ）に掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として長野市に帰属します。また、一部の画像等の著作権は、長野市以外の原著作者が所有しています。当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたホームページ担当課へ、事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/nagano-shi-yosan-setsumeisho-r6/ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagano.nagano.jp/documents/1170/ippan.pdf",
+    "license": "長野市ホームページ（以下、当ホームページ）に掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として長野市に帰属します。また、一部の画像等の著作権は、長野市以外の原著作者が所有しています。当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたホームページ担当課へ、事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/nagano-shi-yosan-setsumeisho-r5/yosannsetumeisyoippann.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagano.nagano.jp/documents/1170/yosannsetumeisyoippann.pdf",
+    "license": "長野市ホームページ（以下、当ホームページ）に掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として長野市に帰属します。また、一部の画像等の著作権は、長野市以外の原著作者が所有しています。当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたホームページ担当課へ、事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/nagano-shi-yosan-setsumeisho-r4/742573_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagano.nagano.jp/documents/1170/742573_1.pdf",
+    "license": "長野市ホームページ（以下、当ホームページ）に掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として長野市に帰属します。また、一部の画像等の著作権は、長野市以外の原著作者が所有しています。当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたホームページ担当課へ、事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/nagano-shi-yosan-setsumeisho-r3/358472_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagano.nagano.jp/documents/1170/358472_1.pdf",
+    "license": "長野市ホームページ（以下、当ホームページ）に掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として長野市に帰属します。また、一部の画像等の著作権は、長野市以外の原著作者が所有しています。当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたホームページ担当課へ、事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/nagano-shi-yosan-setsumeisho-r2/340608_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagano.nagano.jp/documents/1170/340608_1.pdf",
+    "license": "長野市ホームページ（以下、当ホームページ）に掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として長野市に帰属します。また、一部の画像等の著作権は、長野市以外の原著作者が所有しています。当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたホームページ担当課へ、事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/nagano-shi-yosan-setsumeisho-r1/322165_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagano.nagano.jp/documents/1170/322165_1.pdf",
+    "license": "長野市ホームページ（以下、当ホームページ）に掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として長野市に帰属します。また、一部の画像等の著作権は、長野市以外の原著作者が所有しています。当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたホームページ担当課へ、事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/nagano-shi-yosan-setsumeisho-h30/306634_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagano.nagano.jp/documents/1170/306634_1.pdf",
+    "license": "長野市ホームページ（以下、当ホームページ）に掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として長野市に帰属します。また、一部の画像等の著作権は、長野市以外の原著作者が所有しています。当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたホームページ担当課へ、事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/nagano-shi-yosan-setsumeisho-h28/100995_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagano.nagano.jp/documents/1170/100995_1.pdf",
+    "license": "長野市ホームページ（以下、当ホームページ）に掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として長野市に帰属します。また、一部の画像等の著作権は、長野市以外の原著作者が所有しています。当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたホームページ担当課へ、事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/nagano-shi-yosan-setsumeisho-h27/81423_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagano.nagano.jp/documents/1170/81423_1.pdf",
+    "license": "長野市ホームページ（以下、当ホームページ）に掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として長野市に帰属します。また、一部の画像等の著作権は、長野市以外の原著作者が所有しています。当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたホームページ担当課へ、事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/nagano-shi-yosan-setsumeisho-h26/63554_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagano.nagano.jp/documents/1170/63554_1.pdf",
+    "license": "長野市ホームページ（以下、当ホームページ）に掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として長野市に帰属します。また、一部の画像等の著作権は、長野市以外の原著作者が所有しています。当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたホームページ担当課へ、事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/nagano-shi-yosan-setsumeisho-h25/47890_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagano.nagano.jp/documents/1170/47890_1.pdf",
+    "license": "長野市ホームページ（以下、当ホームページ）に掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として長野市に帰属します。また、一部の画像等の著作権は、長野市以外の原著作者が所有しています。当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたホームページ担当課へ、事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/nagano-shi-yosan-gaiyou-h29/118006_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagano.nagano.jp/documents/1170/118006_1.pdf",
+    "license": "長野市ホームページ（以下、当ホームページ）に掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として長野市に帰属します。また、一部の画像等の著作権は、長野市以外の原著作者が所有しています。当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたホームページ担当課へ、事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/takasaki-yosan-gaiyou-r8/37728.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takasaki.gunma.jp/uploaded/attachment/37728.pdf",
+    "license": "本サイトに掲載している文書や画像等の各ファイル及びその内容に関する著作権は、原則として高崎市またはコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。本サイトに掲載している文書・画像等の無断使用・転載を禁止します。",
+    "target": "file"
+  },
+  "/sources/takasaki-yosan-gaiyou-r7/26854.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takasaki.gunma.jp/uploaded/attachment/26854.pdf",
+    "license": "本サイトに掲載している文書や画像等の各ファイル及びその内容に関する著作権は、原則として高崎市またはコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。本サイトに掲載している文書・画像等の無断使用・転載を禁止します。",
+    "target": "file"
+  },
+  "/sources/takasaki-yosan-gaiyou-r6/15966.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takasaki.gunma.jp/uploaded/attachment/15966.pdf",
+    "license": "本サイトに掲載している文書や画像等の各ファイル及びその内容に関する著作権は、原則として高崎市またはコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。本サイトに掲載している文書・画像等の無断使用・転載を禁止します。",
+    "target": "file"
+  },
+  "/sources/takasaki-yosan-gaiyou-r5/6478.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takasaki.gunma.jp/uploaded/attachment/6478.pdf",
+    "license": "本サイトに掲載している文書や画像等の各ファイル及びその内容に関する著作権は、原則として高崎市またはコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。本サイトに掲載している文書・画像等の無断使用・転載を禁止します。",
+    "target": "file"
+  },
+  "/sources/takasaki-yosan-gaiyou-r3/6472.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takasaki.gunma.jp/uploaded/attachment/6472.pdf",
+    "license": "本サイトに掲載している文書や画像等の各ファイル及びその内容に関する著作権は、原則として高崎市またはコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。本サイトに掲載している文書・画像等の無断使用・転載を禁止します。",
+    "target": "file"
+  },
+  "/sources/takasaki-yosan-gaiyou-r2/6469.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takasaki.gunma.jp/uploaded/attachment/6469.pdf",
+    "license": "本サイトに掲載している文書や画像等の各ファイル及びその内容に関する著作権は、原則として高崎市またはコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。本サイトに掲載している文書・画像等の無断使用・転載を禁止します。",
+    "target": "file"
+  },
+  "/sources/takasaki-yosan-gaiyou-h30/6463.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takasaki.gunma.jp/uploaded/attachment/6463.pdf",
+    "license": "本サイトに掲載している文書や画像等の各ファイル及びその内容に関する著作権は、原則として高崎市またはコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。本サイトに掲載している文書・画像等の無断使用・転載を禁止します。",
+    "target": "file"
+  },
+  "/sources/takasaki-yosan-gaiyou-h29/6460.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takasaki.gunma.jp/uploaded/attachment/6460.pdf",
+    "license": "本サイトに掲載している文書や画像等の各ファイル及びその内容に関する著作権は、原則として高崎市またはコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。本サイトに掲載している文書・画像等の無断使用・転載を禁止します。",
+    "target": "file"
+  },
+  "/sources/takasaki-yosan-gaiyou-h26/6451.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takasaki.gunma.jp/uploaded/attachment/6451.pdf",
+    "license": "本サイトに掲載している文書や画像等の各ファイル及びその内容に関する著作権は、原則として高崎市またはコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。本サイトに掲載している文書・画像等の無断使用・転載を禁止します。",
+    "target": "file"
+  },
+  "/sources/takasaki-yosan-gaiyou-h25/6448.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takasaki.gunma.jp/uploaded/attachment/6448.pdf",
+    "license": "本サイトに掲載している文書や画像等の各ファイル及びその内容に関する著作権は、原則として高崎市またはコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。本サイトに掲載している文書・画像等の無断使用・転載を禁止します。",
+    "target": "file"
+  },
+  "/sources/takasaki-yosan-gaiyou-h23/6429.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takasaki.gunma.jp/uploaded/attachment/6429.pdf",
+    "license": "本サイトに掲載している文書や画像等の各ファイル及びその内容に関する著作権は、原則として高崎市またはコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。本サイトに掲載している文書・画像等の無断使用・転載を禁止します。",
+    "target": "file"
+  },
+  "/sources/takasaki-yosan-gaiyou-h22/6414.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takasaki.gunma.jp/uploaded/attachment/6414.pdf",
+    "license": "本サイトに掲載している文書や画像等の各ファイル及びその内容に関する著作権は、原則として高崎市またはコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。本サイトに掲載している文書・画像等の無断使用・転載を禁止します。",
+    "target": "file"
+  },
+  "/sources/takasaki-yosan-gaiyou-h21/6399.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takasaki.gunma.jp/uploaded/attachment/6399.pdf",
+    "license": "本サイトに掲載している文書や画像等の各ファイル及びその内容に関する著作権は、原則として高崎市またはコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。本サイトに掲載している文書・画像等の無断使用・転載を禁止します。",
+    "target": "file"
   }
 };

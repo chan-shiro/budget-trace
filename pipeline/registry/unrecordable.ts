@@ -90,6 +90,76 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-7",
   },
   {
+    code: "102024", name: "高崎市", dataset: "budget",
+    fiscalYears: ["R4", "H31", "H28", "H27", "H24", "H20"],
+    categories: ["broken-text-layer", "format-mismatch"],
+    reason:
+      "R4・H31・H28・H27・H24 の「当初予算の概要及び主要事業」は本文の文字がすべてアウトライン化されており" +
+      "（pdftotext の抽出に CJK が0字で、取れるのは印字ノンブルだけ。全面スキャンではなく埋め込み画像は装飾のみ）、" +
+      "決定的なパースができない。歳入・歳出の款別表と前年当初比較は印刷面には存在する（H31 は 200dpi 描画で" +
+      "22款・合計 168,140,000 を目視確認）。H20 は歳入が11区分（交付金＝款3〜9 の合計・その他）に集約されており" +
+      "款別歳入ではない。R8〜R5・R3・R2・H30・H29・H26・H25・H23〜H21 の13年度は同じ資料で収録済み。",
+    url: "https://www.city.takasaki.gunma.jp/soshiki/15/",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-8",
+  },
+  {
+    code: "232033", name: "一宮市", dataset: "budget",
+    fiscalYears: ["R4", "R2", "H31", "H30", "H29", "H28", "H27"],
+    categories: ["broken-text-layer"],
+    reason:
+      "「一般会計予算書及び予算説明書」は7年度ともテキスト層はあるが ToUnicode が欠落しており、款名は" +
+      "MS-Mincho サブセットのグリフ ID がそのまま Latin-1 域の文字として出力され、数字は真の字 −0x2A の帯に落ちている。" +
+      "荒川・豊島族の GARBLE_CHAR_MAP とは別系統で、**サブセット順に依存するため文書ごとにマップが違い**共通マップの" +
+      "拡張では開かない。R2 は Wayback の捕捉も発行元と同一の化けた PDF。同年度の「予算概要説明資料」は読めるが" +
+      "款名ページと金額ページが見開きで分かれる様式で、既存の見開き分岐は金額ページ側にヘッダ除外も合計行での" +
+      "打ち切りも通していないため行数が合わず throw する。R8〜R5・R3・H26・H25 は同じ資料で収録済み。",
+    url: "https://www.city.ichinomiya.aichi.jp/zaimu/zaisei/1044383/1000242/index.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-8",
+  },
+  {
+    code: "302015", name: "和歌山市", dataset: "budget", fiscalYears: ["R3", "R2"],
+    categories: ["no-material"],
+    reason:
+      "2021-11-30 時点の予算インデックスには令和3年度・令和2年度の年度ページへのリンクがあったが、" +
+      "両ページとも現在 404 で、Wayback にも当該ページ・PDF の捕捉が1件も無い（CDX が空）。" +
+      "発行元から掲載が消えており、写しも見つからない。R8・R7 は同じ資料で収録済み。",
+    url: "https://www.city.wakayama.wakayama.jp/shisei/zaisei/1033880/index.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-8",
+  },
+  {
+    code: "302015", name: "和歌山市", dataset: "budget", fiscalYears: ["R6", "R5", "R4"],
+    categories: ["scanned-image"],
+    reason:
+      "「予算内示資料」が CCITT グループ4 のスキャン画像でテキスト層を持たない（pdftotext の出力が 73 / 80 / 74 バイト）。" +
+      "同じ年度の議会提出議案 PDF も同じスキャンで代替にならない。R3・R2 は年度ページが現行サイトから削除され" +
+      "Wayback にも捕捉が無い。R8・R7 は同じ資料で収録済み。",
+    url: "https://www.city.wakayama.wakayama.jp/shisei/zaisei/1033880/index.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-8",
+  },
+  {
+    code: "232017", name: "豊橋市", dataset: "budget", fiscalYears: ["R7", "R4", "R2"],
+    categories: ["parser-unsupported"],
+    reason:
+      "原典は健全だが既存パーサが款を取りこぼす。豊橋は前年度補正の前倒し繰越を含む額を括弧で上段に置く様式で、" +
+      "両年度とも括弧がある行は既存の折返し分岐が拾うのに、**片側だけ括弧の行**では款名行の整数が1個になり" +
+      "どの分岐にも入らず行ごと落ちる（R7 は歳出款2、R4 は歳入款16・21・23＋歳出款8・10、R2 は歳出款10。" +
+      "合計行が同じ形になる年度もある）。⚠ Σ が割れるので**パーサは throw し、静かには壊れない**。" +
+      "片側だけ括弧の行を組む opt-in を足せば開く見込みで、開けば豊橋は R8〜R2 の7年度が連続する。" +
+      "R8・R6・R5・R3 は同じ資料で収録済み。",
+    url: "https://www.city.toyohashi.lg.jp/8815.htm",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-8",
+  },
+  {
+    code: "232017", name: "豊橋市", dataset: "budget", fiscalYears: ["H31", "H30", "H29", "H28"],
+    categories: ["broken-text-layer", "scanned-image"],
+    reason:
+      "「予算概要説明資料」は H31・H30 が PDF のテキスト層の全文字 U+FFFD（ToUnicode が無く、固定オフセットの" +
+      "化けでもないため decodeGarble でも復元できない）、H29・H28 はスキャン画像で pdftotext が本文0文字。" +
+      "R8・R6・R5・R3 は同じ資料で収録済み。",
+    url: "https://www.city.toyohashi.lg.jp/8815.htm",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-8",
+  },
+  {
     code: "422011", name: "長崎市", dataset: "budget", fiscalYears: ["R6", "R4", "R3", "H31", "H28"],
     categories: ["broken-text-layer", "scanned-image", "format-mismatch"],
     reason:

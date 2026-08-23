@@ -2360,6 +2360,28 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28"] as const).map((fy) => ({
       srcId: `suita-yosangaku-${fy}`, muniCode: "272051", muniName: "吹田市", prefName: "大阪府", isPref: false,
     })),
+    // 中核市 第7弾（2026-08-23・loop.md の第8巡）
+    // ⚠ 長野市の H29 だけ srcId の接頭辞が違う（説明書に歳入総括が無く「概要」で代替した）ので鎖が2本に割れる
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "r1", "h30", "h28", "h27", "h26", "h25"] as const).map((fy) => ({
+      srcId: `nagano-shi-yosan-setsumeisho-${fy}`, muniCode: "202011", muniName: "長野市", prefName: "長野県", isPref: false,
+    })),
+    { srcId: "nagano-shi-yosan-gaiyou-h29", muniCode: "202011", muniName: "長野市", prefName: "長野県", isPref: false },
+    // 一宮市は R4・R2・H31〜H27（化け）を除く＝鎖は R8-R7-R6-R5 / R3 / H26-H25 の3本
+    ...(["r8", "r7", "r6", "r5", "r3", "h26", "h25"] as const).map((fy) => ({
+      srcId: `ichinomiya-yosansho-${fy}`, muniCode: "232033", muniName: "一宮市", prefName: "愛知県", isPref: false,
+    })),
+    // 和歌山市は R6・R5・R4（スキャン）を除く。R3・R2 は年度ページが消えている
+    ...(["r8", "r7"] as const).map((fy) => ({
+      srcId: `wakayama-shi-yosan-naiji-${fy}`, muniCode: "302015", muniName: "和歌山市", prefName: "和歌山県", isPref: false,
+    })),
+    // 豊橋市は R7・R4・R2（括弧書きが片側だけの行で款が落ちる＝パーサが throw する）と H31 以前（化け・スキャン）を除く
+    ...(["r8", "r6", "r5", "r3"] as const).map((fy) => ({
+      srcId: `toyohashi-yosan-gaiyou-${fy}`, muniCode: "232017", muniName: "豊橋市", prefName: "愛知県", isPref: false,
+    })),
+    // 高崎市は R4・H31・H28・H27・H24（アウトライン化）と H20（款別でない）を除く＝鎖は5本
+    ...(["r8", "r7", "r6", "r5", "r3", "r2", "h30", "h29", "h26", "h25", "h23", "h22", "h21"] as const).map((fy) => ({
+      srcId: `takasaki-yosan-gaiyou-${fy}`, muniCode: "102024", muniName: "高崎市", prefName: "群馬県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。
