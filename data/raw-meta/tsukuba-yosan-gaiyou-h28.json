@@ -1,0 +1,12 @@
+{
+  "sourceId": "tsukuba-yosan-gaiyou-h28",
+  "files": [
+    {
+      "filename": "h28gaiyou.pdf",
+      "sha256": "6bce1f4c58996d37d87e25b87ec8c6ad2bf6edd344bcca76cd215dfe01b1a4b4",
+      "bytes": 780112,
+      "fetchedAt": "2026-08-23T13:42:53.050Z",
+      "fetchedFrom": "https://www.city.tsukuba.lg.jp/material/files/group/22/h28gaiyou.pdf"
+    }
+  ]
+}

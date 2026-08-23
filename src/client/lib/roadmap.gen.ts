@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 158,
+  "budgetCount": 163,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 950,
-  "fileCount": 2121,
-  "archivedCount": 906,
+  "sourceCount": 990,
+  "fileCount": 2161,
+  "archivedCount": 911,
   "licenseOpen": 98,
-  "licensePermission": 742,
+  "licensePermission": 782,
   "licenseUnverified": 110,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -95,6 +95,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "盛岡市",
       "code": "032018",
+      "years": 14,
+      "range": "H25〜R8（14年度）"
+    },
+    {
+      "name": "つくば市",
+      "code": "082201",
       "years": 14,
       "range": "H25〜R8（14年度）"
     },
@@ -351,6 +357,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "福井市",
+      "code": "182010",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "甲府市",
       "code": "192015",
       "years": 7,
@@ -383,6 +395,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "明石市",
       "code": "282031",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "加古川市",
+      "code": "282103",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },
@@ -439,6 +457,18 @@ export const ROADMAP_PROGRESS = {
       "code": "141003",
       "years": 6,
       "range": "R3〜R8（6年度）"
+    },
+    {
+      "name": "平塚市",
+      "code": "142034",
+      "years": 6,
+      "range": "R2〜R7（6年度）"
+    },
+    {
+      "name": "長岡市",
+      "code": "152021",
+      "years": 6,
+      "range": "R2〜R8（6年度）"
     },
     {
       "name": "春日井市",

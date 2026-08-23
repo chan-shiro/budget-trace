@@ -2487,6 +2487,28 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
       srcId: `yao-yosansho-${fy}`, muniCode: "272124", muniName: "八尾市", prefName: "大阪府", isPref: false,
     })),
+    ...([
+      "r8", "r7", "r6", "r5", "r4", "r3", "r2",
+      "h31", "h30", "h29", "h28", "h27", "h26", "h25",
+    ] as const).map((fy) => ({
+      srcId: `tsukuba-yosan-gaiyou-${fy}`, muniCode: "082201", muniName: "つくば市", prefName: "茨城県", isPref: false,
+    })),
+    // 平塚市は R8（概要がスキャン画像・予算書は字化け）と H31〜H27（款別歳入の表が無い）が収録不可
+    ...(["r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `hiratsuka-yosan-gaiyou-${fy}`, muniCode: "142034", muniName: "平塚市", prefName: "神奈川県", isPref: false,
+    })),
+    // 福井市は H31 以前が発行元から消えている（魚拓にはあるが横展開優先で今回は現行サイトの7年度）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `fukui-shi-yosan-gaiyou-${fy}`, muniCode: "182010", muniName: "福井市", prefName: "福井県", isPref: false,
+    })),
+    // 長岡市は R6 のみ収録不可（款別ページだけ文字が図形化）
+    ...(["r8", "r7", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `nagaoka-yosansho-${fy}`, muniCode: "152021", muniName: "長岡市", prefName: "新潟県", isPref: false,
+    })),
+    // 加古川市は H31〜H29 が収録不可（原本が消え、魚拓が全捕捉とも 1 MiB 打ち切り）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `kakogawa-yosanpoint-${fy}`, muniCode: "282103", muniName: "加古川市", prefName: "兵庫県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。

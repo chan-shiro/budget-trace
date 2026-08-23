@@ -251,6 +251,7 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.city.fukushima.fukushima.jp/material/files/group/14/r5-yosan_1.pdf": "https://web.archive.org/web/20260823113016/https://www.city.fukushima.fukushima.jp/material/files/group/14/r5-yosan_1.pdf",
   "https://www.city.fukushima.fukushima.jp/material/files/group/14/r6yosangaiyou.pdf": "https://web.archive.org/web/20260823112921/https://www.city.fukushima.fukushima.jp/material/files/group/14/r6yosangaiyou.pdf",
   "https://www.city.fukushima.fukushima.jp/material/files/group/14/r7gaiyoutokusyuu.pdf": "https://web.archive.org/web/20260823112737/https://www.city.fukushima.fukushima.jp/material/files/group/14/r7gaiyoutokusyuu.pdf",
+  "https://www.city.fukushima.fukushima.jp/material/files/group/14/R8yosan-tokusyuu2.pdf": "https://web.archive.org/web/20260823112457/https://www.city.fukushima.fukushima.jp/material/files/group/14/R8yosan-tokusyuu2.pdf",
   "https://www.city.fukushima.fukushima.jp/soshiki/4/1012/1/17263.html": "https://web.archive.org/web/20260823112532/https://www.city.fukushima.fukushima.jp/soshiki/4/1012/1/17263.html",
   "https://www.pref.fukushima.lg.jp/sec/01115b/08tousyoyosangaiyou.html": "https://web.archive.org/web/20260725165101/https://www.pref.fukushima.lg.jp/sec/01115b/08tousyoyosangaiyou.html",
   "https://www.pref.fukushima.lg.jp/uploaded/attachment/734665.pdf": "https://web.archive.org/web/20260725164833/https://www.pref.fukushima.lg.jp/uploaded/attachment/734665.pdf",

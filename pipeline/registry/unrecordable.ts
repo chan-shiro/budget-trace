@@ -102,6 +102,59 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-11",
   },
   {
+    code: "282103", name: "加古川市", dataset: "budget",
+    fiscalYears: ["H31", "H30", "H29"],
+    categories: ["broken-text-layer"],
+    reason:
+      "「予算のポイント」が発行元から削除されており（現在は 404）、外部アーカイブの写しが" +
+      "どの捕捉も 1 MiB ちょうどで打ち切られている（原本は 1.3〜1.7MB）。" +
+      "平成31年度と平成30年度は PDF として開くことすらできず、平成29年度は開くものの" +
+      "款別集計のあるページが空になる。原本が消えているため取り直しもできない。" +
+      "同じ年度の「予算概要」もスキャン画像。令和2年度以降は同じ資料で収録済み。",
+    url: "https://www.city.kakogawa.lg.jp/soshikikarasagasu/kikakubu/zaiseika/yosan/1529392713015.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-14",
+  },
+  {
+    code: "152021", name: "長岡市", dataset: "budget",
+    fiscalYears: ["R6"],
+    categories: ["broken-text-layer"],
+    reason:
+      "「当初予算（案）計数資料編」のうち、款別の表があるページ（歳入款別・歳出目的別・地方債の3ページ）だけ" +
+      "文字が図形に変換されており、pdftotext の抽出が節番号の1文字（5バイト）しか返らない" +
+      "（同じ資料の他のページは3,000〜4,000字が正常に取れる。画像は1枚も無いのでスキャンではない）。" +
+      "外部アーカイブの3つの写しと、差し替え前後の2つのファイルをすべて確認したが、どれも同じ状態だった。" +
+      "代わりの「予算に関する説明書」は数字の桁区切りが「37, 459, 000」と読点の後ろに空白が入るため" +
+      "桁ごとに割れて合計が桁違いにずれる。R8・R7・R5〜R2 は同じ資料で収録済み。",
+    url: "https://www.city.nagaoka.niigata.jp/shisei/cate03/zaisei/r06yosan.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-14",
+  },
+  {
+    code: "142034", name: "平塚市", dataset: "budget",
+    fiscalYears: ["R8"],
+    categories: ["scanned-image", "broken-text-layer"],
+    reason:
+      "「当初予算の概要」がこの年度だけ全47ページのスキャン画像で、pdftotext の抽出が全文47字・" +
+      "PDF に埋め込みフォントが1つも無い（R7 以前は18万字前後で健全）。" +
+      "代わりの「一般会計当初予算書」には文字があるが、総括ページの構成比が款の行から切り離されて" +
+      "別の行に落ちるため金額の並びが崩れ、さらに文字の対応表が壊れていて歳出の款8 が「士木費」" +
+      "（正しくは土木費）になる。金額そのものを信用できないため決定的に読み取れない。" +
+      "R7〜R2 は同じ「当初予算の概要」で収録済み。",
+    url: "https://www.city.hiratsuka.kanagawa.jp/keikaku/page-c_02405.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-14",
+  },
+  {
+    code: "142034", name: "平塚市", dataset: "budget",
+    fiscalYears: ["H31", "H30", "H29", "H28", "H27"],
+    categories: ["format-mismatch"],
+    reason:
+      "この年度群の「当初予算の概要」には歳入を款ごとに並べた表が無く、自主財源・依存財源にまとめた" +
+      "表しか載っていない（「使用料及び手数料」「交通安全対策特別交付金」「分担金及び負担金」が" +
+      "5年度ともファイル全体で0回。収録時に実測）。歳出は目的別の表があるが、歳入が取れないため" +
+      "歳入と歳出をそろえて収録できない。R7〜R2 は同じ資料で収録済み。",
+    url: "https://www.city.hiratsuka.kanagawa.jp/keikaku/page-c_02405.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-14",
+  },
+  {
     code: "082015", name: "水戸市", dataset: "budget",
     fiscalYears: ["R3"],
     categories: ["format-mismatch"],
