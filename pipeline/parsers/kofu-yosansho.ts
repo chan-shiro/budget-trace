@@ -261,6 +261,21 @@ interface Options {
    */
   totalAmountNextLine?: boolean;
   /**
+   * **合計行だけ数字の字間に空白が入る様式**（2026-08-24・大和 H31/R2〜R6）。
+   *
+   * 大和の「目的別歳出予算内訳」は**合計行だけが両端揃えで組まれ**、
+   * `合           計   8 7,18 0,0 00   100 .0   84,9 80 ,000` のように**数字の内側に空白が入る**
+   * （款行は無傷）。`AMOUNT_RE` が `8` と `7,18` に割れるため、記載合計が `8` になって
+   * **Σ が +87,179,992 のように桁違いにずれる**（＝大声で落ちるので静かには壊れない）。
+   * ⚠ `textSource: "raw"` では合計ラベルが金額行から3行離れて `totalAmountNextLine` でも届かない。
+   *
+   * true にすると**合計行に限り**、数字・カンマ・ピリオドに挟まれた半角空白1つを畳んでから金額を拾う。
+   *
+   * ⚠⚠ **既定にしない**（opt-in）。列の区切りが空白1つの様式では**隣の列と融合して別の数値を作る**。
+   * ⚠ **款行には当てない** — 款行が無傷な様式でしか要らないうえ、当てると副作用の面が広がる。
+   */
+  totalRowJoinSpacedDigits?: boolean;
+  /**
    * **前年度セルが完全な空欄の款**（側ごとに款番号で明示・2026-07-27・富山県 R8）。
    *
    * 富山の歳入款2「利子割清算金」は R8 新設で、前年度セルに **`－` すら印字されず**「皆増」の語も無い:
@@ -998,7 +1013,11 @@ function parseKanPage(
     allLines.forEach((raw, i) => {
       if (!raw.replace(/[\s　]/g, "").includes(totalLabel)) return;
       // 構成比 100%（＝整数）が前年度合計に化けるのを防ぐ（stripPercents 参照）
-      let ints = (stripPercents(raw).match(AMOUNT_RE) ?? []).filter((t) => !t.includes("."));
+      // `totalRowJoinSpacedDigits`（Options 参照）は**この合計行の判定にだけ**効かせる。
+      const forAmount = opts.totalRowJoinSpacedDigits
+        ? raw.replace(/(?<=[\d,.]) (?=[\d,.])/g, "")
+        : raw;
+      let ints = (stripPercents(forAmount).match(AMOUNT_RE) ?? []).filter((t) => !t.includes("."));
       // 合計ラベルと金額が別行の様式（Options.totalAmountNextLine 参照）
       if (opts.totalAmountNextLine && ints.length < 2) {
         const next = allLines.slice(i + 1).find((l) => l.replace(/[\s　]/g, "") !== "");
@@ -1064,9 +1083,28 @@ function parseKanPage(
   // 既存の正当な注記は全件が年度に言及している（甲府 R6「令和5年度当初予算額は…」・
   // 千代田 R4「令和3年度予算額は…」・福岡 R4「令和4年度に…令和3年度予算」）ので回帰しない。
   const PREV_NOTE_RE = /前年度|[令和平成\d]+\d年度|\d+年度/;
-  for (const l of allLines) {
-    const c = l.replace(/[\s　]/g, "");
-    if (c.startsWith("※") && c.includes("予算") && PREV_NOTE_RE.test(c)) { prevNote = c.slice(1); break; }
+  for (let i = 0; i < allLines.length; i++) {
+    const c = allLines[i]!.replace(/[\s　]/g, "");
+    if (!(c.startsWith("※") && c.includes("予算") && PREV_NOTE_RE.test(c))) continue;
+    let note = c.slice(1);
+    // ⚠⚠ **折返した注記の続きを連結する**（2026-08-24・茅ヶ崎 R5／福岡 R4）。
+    //   従来は1物理行だけを拾っていたため、原典が2行に折り返している注記が
+    //   **文の途中で切れたまま画面の「※資料注記」に出ていた**
+    //   （茅ヶ崎 R5 は `…名称を変えて総` で終わり、落ちた後半こそ
+    //   「民生費→総務費/教育費の科目移動」＝款別増減の読み方に効く実質部分だった）。
+    //   ⚠ 金額でも款名でもないので **Σ も款名重複ゲートも守ってくれない**＝画面を見るしかない領域。
+    // **句点で終わっていない間だけ**続きを足す。⚠ 止める条件を3つ持つ:
+    //   ①空行（表の区切り）②次の `※`（別の注記）③日本語を含まない行（金額行・罫線）。
+    //   ⚠ さらに**2行まで**に制限する — 止め条件を抜けたときに表の残り全部を飲み込ませない。
+    for (let j = i + 1, joined = 0; j < allLines.length && joined < 2; j++) {
+      if (/[。）]$/.test(note)) break;
+      const nx = allLines[j]!.replace(/[\s　]/g, "");
+      if (nx === "" || nx.startsWith("※") || !hasCJKChars(nx)) break;
+      note += nx;
+      joined++;
+    }
+    prevNote = note;
+    break;
   }
 
   for (let li = 0; li < allLines.length; li++) {

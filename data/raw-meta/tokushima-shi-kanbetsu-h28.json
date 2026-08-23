@@ -1,0 +1,19 @@
+{
+  "sourceId": "tokushima-shi-kanbetsu-h28",
+  "files": [
+    {
+      "filename": "02-2.pdf",
+      "sha256": "2612244cb2a85718f914aae183780383428981633c3043c5e5aba3b4bfcd0673",
+      "bytes": 86227,
+      "fetchedAt": "2026-08-23T15:27:02.977Z",
+      "fetchedFrom": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2016/100100a201604071337.files/02-2.pdf"
+    },
+    {
+      "filename": "02-3.pdf",
+      "sha256": "a10cb6a7be27b072d5c5930627118b457b5312e6049b526d0229c14a54279d11",
+      "bytes": 71082,
+      "fetchedAt": "2026-08-23T15:27:03.342Z",
+      "fetchedFrom": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2016/100100a201604071339.files/02-3.pdf"
+    }
+  ]
+}

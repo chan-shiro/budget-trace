@@ -129,6 +129,18 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-14",
   },
   {
+    code: "142077", name: "茅ヶ崎市", dataset: "budget",
+    fiscalYears: ["H25", "H23"],
+    categories: ["broken-text-layer"],
+    reason:
+      "歳入の総括表で、款16「財産収入」の金額の桁区切りのカンマだけが別の文字要素として下の行に落ちており、" +
+      "抽出すると金額が2行に割れてその款が丸ごと読み取れない（平成25年度は当年度48,475千円・前年度50,512千円、" +
+      "平成23年度は49,927千円・65,549千円が欠ける）。抽出方法を変えても合計行が見つからなくなるだけで解決しない。" +
+      "歳出側は同じ年度でも正常。前後の年度は同じ資料で収録済み。",
+    url: "https://www.city.chigasaki.kanagawa.jp/zaisei/1008506/index.html",
+    checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-15",
+  },
+  {
     code: "142034", name: "平塚市", dataset: "budget",
     fiscalYears: ["R8"],
     categories: ["scanned-image", "broken-text-layer"],

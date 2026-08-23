@@ -1,0 +1,19 @@
+{
+  "sourceId": "chigasaki-yosan-soukatsu-h26",
+  "files": [
+    {
+      "filename": "H26sainyuusoukatu.pdf",
+      "sha256": "745cbfe7ffbd77ff238c28cc817ed1b68aa52f88ca8fdd80b1c7c141286562ae",
+      "bytes": 199855,
+      "fetchedAt": "2026-08-23T15:41:02.869Z",
+      "fetchedFrom": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/008/525/H26sainyuusoukatu.pdf"
+    },
+    {
+      "filename": "H26saisyutumokuteki.pdf",
+      "sha256": "919f00101078d1d4b0c0f73563e5b89e0fc4a79ccbca7eb34b03a5dee1e0847f",
+      "bytes": 193245,
+      "fetchedAt": "2026-08-23T15:41:03.217Z",
+      "fetchedFrom": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/008/525/H26saisyutumokuteki.pdf"
+    }
+  ]
+}

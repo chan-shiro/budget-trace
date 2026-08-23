@@ -1,0 +1,19 @@
+{
+  "sourceId": "tokushima-shi-kanbetsu-h31",
+  "files": [
+    {
+      "filename": "h31_tousho_04sain.pdf",
+      "sha256": "83b97e5a6eed8d3302c2b445c3df09935d892bfa60c4f416bb8879ebe1f65e45",
+      "bytes": 56698,
+      "fetchedAt": "2026-08-23T15:26:59.020Z",
+      "fetchedFrom": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/h31/h31_tousho_gaiyo.files/h31_tousho_04sain.pdf"
+    },
+    {
+      "filename": "h31_tousho_05saisA.pdf",
+      "sha256": "7c25f2096c3a3ebcf5373d9478b3835b72a45d466d5de774a5d0f929fb3820da",
+      "bytes": 55353,
+      "fetchedAt": "2026-08-23T15:26:59.397Z",
+      "fetchedFrom": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/h31/h31_tousho_gaiyo.files/h31_tousho_05saisA.pdf"
+    }
+  ]
+}
