@@ -1,0 +1,402 @@
+{
+  "docType": "budget-book",
+  "sourceId": "ichihara-yosansho-r3",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-08-23T11:21:29.861Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R3",
+  "account": "一般会計",
+  "revenueTotal": 99400000,
+  "expenditureTotal": 99400000,
+  "prevRevenueTotal": 97730000,
+  "prevExpenditureTotal": 97730000,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "市税",
+      "amount": 46921459,
+      "prevAmount": 49113013,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 18
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "地方譲与税",
+      "amount": 1067000,
+      "prevAmount": 1084000,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 18
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "利子割交付金",
+      "amount": 30000,
+      "prevAmount": 30000,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 18
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "配当割交付金",
+      "amount": 160000,
+      "prevAmount": 170000,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 18
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 130000,
+      "prevAmount": 150000,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 18
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "法人事業税交付金",
+      "amount": 350000,
+      "prevAmount": 0,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 18
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "地方消費税交付金",
+      "amount": 5619000,
+      "prevAmount": 5950000,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 18
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "ゴルフ場利用税交付金",
+      "amount": 630000,
+      "prevAmount": 670000,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 18
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "環境性能割交付金",
+      "amount": 120000,
+      "prevAmount": 117000,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 18
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "地方特例交付金",
+      "amount": 655000,
+      "prevAmount": 250000,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 18
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "地方交付税",
+      "amount": 50000,
+      "prevAmount": 100000,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 18
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 30000,
+      "prevAmount": 30000,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 18
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "分担金及び負担金",
+      "amount": 327419,
+      "prevAmount": 276047,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 18
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "使用料及び手数料",
+      "amount": 2856715,
+      "prevAmount": 2890940,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 18
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "国庫支出金",
+      "amount": 20502053,
+      "prevAmount": 17846066,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 18
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "県支出金",
+      "amount": 7226722,
+      "prevAmount": 7273135,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 18
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 17,
+      "kanName": "財産収入",
+      "amount": 373483,
+      "prevAmount": 480057,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 18
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 18,
+      "kanName": "寄附金",
+      "amount": 477591,
+      "prevAmount": 357208,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 18
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 19,
+      "kanName": "繰入金",
+      "amount": 4742663,
+      "prevAmount": 1855073,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 18
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 20,
+      "kanName": "繰越金",
+      "amount": 500000,
+      "prevAmount": 500000,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 18
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 21,
+      "kanName": "諸収入",
+      "amount": 3936695,
+      "prevAmount": 4329661,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 18
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 22,
+      "kanName": "市債",
+      "amount": 2694200,
+      "prevAmount": 4257800,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 18
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 578200,
+      "prevAmount": 574700,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 19
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 9920500,
+      "prevAmount": 10135600,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 19
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "民生費",
+      "amount": 45570300,
+      "prevAmount": 44190800,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 19
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "衛生費",
+      "amount": 10985000,
+      "prevAmount": 8576000,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 19
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "労働費",
+      "amount": 124200,
+      "prevAmount": 129900,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 19
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "農林水産業費",
+      "amount": 1166400,
+      "prevAmount": 1163900,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 19
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "商工費",
+      "amount": 3226300,
+      "prevAmount": 3093900,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 19
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "土木費",
+      "amount": 8436900,
+      "prevAmount": 9485900,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 19
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "消防費",
+      "amount": 4297300,
+      "prevAmount": 4966200,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 19
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "教育費",
+      "amount": 8941700,
+      "prevAmount": 8741000,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 19
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 11,
+      "kanName": "災害復旧費",
+      "amount": 111200,
+      "prevAmount": 342500,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 19
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 12,
+      "kanName": "公債費",
+      "amount": 5942000,
+      "prevAmount": 6229600,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 19
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 13,
+      "kanName": "予備費",
+      "amount": 100000,
+      "prevAmount": 100000,
+      "locator": {
+        "file": "02一般会計－1表から4表・明細書（総括）.pdf",
+        "page": 19
+      }
+    }
+  ]
+}

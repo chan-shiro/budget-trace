@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 153,
+  "budgetCount": 158,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 903,
-  "fileCount": 2074,
-  "archivedCount": 865,
+  "sourceCount": 950,
+  "fileCount": 2121,
+  "archivedCount": 869,
   "licenseOpen": 98,
-  "licensePermission": 695,
+  "licensePermission": 742,
   "licenseUnverified": 110,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -55,6 +55,12 @@ export const ROADMAP_PROGRESS = {
       "code": "072044",
       "years": 18,
       "range": "H20〜R8（18年度）"
+    },
+    {
+      "name": "市原市",
+      "code": "122190",
+      "years": 18,
+      "range": "H21〜R8（18年度）"
     },
     {
       "name": "港区",
@@ -133,6 +139,12 @@ export const ROADMAP_PROGRESS = {
       "code": "162019",
       "years": 12,
       "range": "H27〜R8（12年度）"
+    },
+    {
+      "name": "福島市",
+      "code": "072010",
+      "years": 11,
+      "range": "H28〜R8（11年度）"
     },
     {
       "name": "松戸市",
@@ -399,6 +411,18 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "青森市",
+      "code": "022012",
+      "years": 6,
+      "range": "R3〜R8（6年度）"
+    },
+    {
+      "name": "水戸市",
+      "code": "082015",
+      "years": 6,
+      "range": "H30〜R8（6年度）"
+    },
+    {
       "name": "市川市",
       "code": "122033",
       "years": 6,
@@ -419,6 +443,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "春日井市",
       "code": "232068",
+      "years": 6,
+      "range": "R3〜R8（6年度）"
+    },
+    {
+      "name": "八尾市",
+      "code": "272124",
       "years": 6,
       "range": "R3〜R8（6年度）"
     },

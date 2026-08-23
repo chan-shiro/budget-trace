@@ -102,6 +102,30 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-11",
   },
   {
+    code: "082015", name: "水戸市", dataset: "budget",
+    fiscalYears: ["R3"],
+    categories: ["format-mismatch"],
+    reason:
+      "「当初予算の概要」の（2）一般会計歳入内訳が、この年度だけ款2〜10 を「2〜10 地方譲与税等 7,964,000」の1行に" +
+      "まとめており、款ごとの額が取れない（歳出の（3）予算総括は13款そろっており正常）。" +
+      "代わりの「予算に関する説明書」は、総括ページの金額が1文字も抽出できず款名も別系統で化ける" +
+      "（サブセットフォント由来でオフセットが等差でないため復号もできない）。R8〜R4 は同じ資料で収録済み。",
+    url: "https://www.city.mito.lg.jp/page/5714.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-13",
+  },
+  {
+    code: "082015", name: "水戸市", dataset: "budget",
+    fiscalYears: ["H31"],
+    categories: ["broken-text-layer"],
+    reason:
+      "「当初予算の概要」の款別ページ（物理3〜6ページ）だけテキスト層が壊れており、日本語が1文字も無く" +
+      "数字も「9 9 9 * *」のようなラテン文字の並びになる（PDF 全体では46万字が抽出でき、2ページ目には" +
+      "日本語が439字あるので全面ではない）。画像ではなく、文字の対応表が壊れている状態。" +
+      "発行元の現行サイトにこの年度は無く、外部アーカイブの写しで確認した。",
+    url: "https://web.archive.org/web/20220309025719/https://www.city.mito.lg.jp/000271/000273/000282/000367/p020007.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-13",
+  },
+  {
     code: "402036", name: "久留米市", dataset: "budget",
     fiscalYears: ["H29"],
     categories: ["broken-text-layer"],
