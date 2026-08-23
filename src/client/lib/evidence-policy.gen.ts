@@ -10278,5 +10278,209 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://web.archive.org/web/20220217075546/https://www.city.tokorozawa.saitama.jp/shiseijoho/shichougian/bunsyo20220216101931943.html",
     "license": "所沢市ホームページ上に掲載されている文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として所沢市に帰属します。（一部の画像等の著作権は、原著作者が所有しています。）また、所沢市ホームページ内にて掲載された会社名・製品名などの名称は、一般に各社の商標あるいは登録商標です。著作権法上認められる場合を除き、所沢市の許可なく所沢市ホームページ上に掲載されている文書や画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。なお、所沢市の各課が配信するページ等に利用規約等、特段の定めがある場合は、この取り扱いに優先するものとします。",
     "target": "page"
+  },
+  "/sources/maebashi-yosan-siryou-r8/R8tousyoyosannsiryou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.maebashi.gunma.jp/material/files/group/12/R8tousyoyosannsiryou2.pdf",
+    "license": "前橋市ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、前橋市またはコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転載することはできません。「引用」を行う際は、必ず出典を明示してください。また、利用許諾については各ページの担当課へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/maebashi-yosan-siryou-r7/R7_yosannaijishiryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.maebashi.gunma.jp/material/files/group/12/R7_yosannaijishiryou.pdf",
+    "license": "前橋市ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、前橋市またはコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転載することはできません。「引用」を行う際は、必ず出典を明示してください。また、利用許諾については各ページの担当課へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/maebashi-yosan-siryou-r6/R6toushoyosanshiryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.maebashi.gunma.jp/material/files/group/12/R6toushoyosanshiryou.pdf",
+    "license": "前橋市ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、前橋市またはコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転載することはできません。「引用」を行う際は、必ず出典を明示してください。また、利用許諾については各ページの担当課へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/maebashi-yosan-siryou-r5/R5_tousyo_naijisiryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.maebashi.gunma.jp/material/files/group/12/R5_tousyo_naijisiryou.pdf",
+    "license": "前橋市ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、前橋市またはコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転載することはできません。「引用」を行う際は、必ず出典を明示してください。また、利用許諾については各ページの担当課へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/maebashi-yosan-siryou-r4/R4tousyo_naijisiryou_annwonozoku.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.maebashi.gunma.jp/material/files/group/12/R4tousyo_naijisiryou_annwonozoku.pdf",
+    "license": "前橋市ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、前橋市またはコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転載することはできません。「引用」を行う際は、必ず出典を明示してください。また、利用許諾については各ページの担当課へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/maebashi-yosan-siryou-r3/R3_tousyoyosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.maebashi.gunma.jp/material/files/group/12/R3_tousyoyosan.pdf",
+    "license": "前橋市ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、前橋市またはコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転載することはできません。「引用」を行う際は、必ず出典を明示してください。また、利用許諾については各ページの担当課へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/maebashi-yosan-siryou-r2/R2_naiji.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.maebashi.gunma.jp/material/files/group/12/R2_naiji.pdf",
+    "license": "前橋市ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、前橋市またはコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転載することはできません。「引用」を行う際は、必ず出典を明示してください。また、利用許諾については各ページの担当課へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/maebashi-yosan-siryou-h31/syousai31.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.maebashi.gunma.jp/material/files/group/12/syousai31.pdf",
+    "license": "前橋市ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、前橋市またはコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転載することはできません。「引用」を行う際は、必ず出典を明示してください。また、利用許諾については各ページの担当課へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/maebashi-yosan-siryou-h30/yosannsyousai.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.maebashi.gunma.jp/material/files/group/12/yosannsyousai.pdf",
+    "license": "前橋市ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、前橋市またはコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転載することはできません。「引用」を行う際は、必ず出典を明示してください。また、利用許諾については各ページの担当課へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/maebashi-yosan-siryou-h29/syousai.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.maebashi.gunma.jp/material/files/group/12/syousai.pdf",
+    "license": "前橋市ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、前橋市またはコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転載することはできません。「引用」を行う際は、必ず出典を明示してください。また、利用許諾については各ページの担当課へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/asahikawa-yosanan-gaiyou-r8/R8houdousiryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.asahikawa.hokkaido.jp/700/731/732/d083385.html",
+    "license": "旭川市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は旭川市、またはその情報提供者に帰属します。著作権についての取り扱いが明記されていない、本ホームページ上の文書・画像などの無断使用・転載、二次利用を禁止します。",
+    "target": "page"
+  },
+  "/sources/asahikawa-yosanan-gaiyou-r7/R7houdousiryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.asahikawa.hokkaido.jp/700/731/732/d081225.html",
+    "license": "旭川市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は旭川市、またはその情報提供者に帰属します。著作権についての取り扱いが明記されていない、本ホームページ上の文書・画像などの無断使用・転載、二次利用を禁止します。",
+    "target": "page"
+  },
+  "/sources/asahikawa-yosanan-gaiyou-r6/R6houdousiryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.asahikawa.hokkaido.jp/700/731/732/d078978.html",
+    "license": "旭川市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は旭川市、またはその情報提供者に帰属します。著作権についての取り扱いが明記されていない、本ホームページ上の文書・画像などの無断使用・転載、二次利用を禁止します。",
+    "target": "page"
+  },
+  "/sources/asahikawa-yosanan-gaiyou-r5/r5kishahappyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.asahikawa.hokkaido.jp/700/731/732/d076583.html",
+    "license": "旭川市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は旭川市、またはその情報提供者に帰属します。著作権についての取り扱いが明記されていない、本ホームページ上の文書・画像などの無断使用・転載、二次利用を禁止します。",
+    "target": "page"
+  },
+  "/sources/asahikawa-yosanan-gaiyou-r4/r4kishahappyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.asahikawa.hokkaido.jp/700/731/732/d074733.html",
+    "license": "旭川市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は旭川市、またはその情報提供者に帰属します。著作権についての取り扱いが明記されていない、本ホームページ上の文書・画像などの無断使用・転載、二次利用を禁止します。",
+    "target": "page"
+  },
+  "/sources/asahikawa-yosanan-gaiyou-r3/R3kishahappyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.asahikawa.hokkaido.jp/700/731/732/d072116.html",
+    "license": "旭川市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は旭川市、またはその情報提供者に帰属します。著作権についての取り扱いが明記されていない、本ホームページ上の文書・画像などの無断使用・転載、二次利用を禁止します。",
+    "target": "page"
+  },
+  "/sources/asahikawa-yosanan-gaiyou-r2/R2kisyahappyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.asahikawa.hokkaido.jp/700/731/732/d067961.html",
+    "license": "旭川市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は旭川市、またはその情報提供者に帰属します。著作権についての取り扱いが明記されていない、本ホームページ上の文書・画像などの無断使用・転載、二次利用を禁止します。",
+    "target": "page"
+  },
+  "/sources/asahikawa-yosanan-gaiyou-h31/H31kishahappyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.asahikawa.hokkaido.jp/700/731/732/d065375.html",
+    "license": "旭川市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は旭川市、またはその情報提供者に帰属します。著作権についての取り扱いが明記されていない、本ホームページ上の文書・画像などの無断使用・転載、二次利用を禁止します。",
+    "target": "page"
+  },
+  "/sources/naha-yosansho-r8/02_r8_ippannkaikeiyosannsho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.naha.okinawa.jp/_res/projects/default_project/_page_/001/011/083/02_r8_ippannkaikeiyosannsho.pdf",
+    "license": "「私的使用のための複製」や「引用」等著作権法上認められる場合を除き、那覇市の許可なく本ホームページに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配付することを禁止します。",
+    "target": "file"
+  },
+  "/sources/naha-yosansho-r7/02_ippannyosannsyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.naha.okinawa.jp/_res/projects/default_project/_page_/001/004/387/02_ippannyosannsyo.pdf",
+    "license": "「私的使用のための複製」や「引用」等著作権法上認められる場合を除き、那覇市の許可なく本ホームページに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配付することを禁止します。",
+    "target": "file"
+  },
+  "/sources/naha-yosansho-r5/02_r5ippannkaikeiyosannsyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.naha.okinawa.jp/_res/projects/default_project/_page_/001/004/392/02_r5ippannkaikeiyosannsyo.pdf",
+    "license": "「私的使用のための複製」や「引用」等著作権法上認められる場合を除き、那覇市の許可なく本ホームページに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配付することを禁止します。",
+    "target": "file"
+  },
+  "/sources/naha-yosansho-r4/02_r4ippannkaikeiyosannsyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.naha.okinawa.jp/_res/projects/default_project/_page_/001/004/393/02_r4ippannkaikeiyosannsyo.pdf",
+    "license": "「私的使用のための複製」や「引用」等著作権法上認められる場合を除き、那覇市の許可なく本ホームページに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配付することを禁止します。",
+    "target": "file"
+  },
+  "/sources/koshigaya-yosan-gaiyou-r8/r8toushoyosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koshigaya.saitama.jp/kurashi_shisei/shisei/yosankessan/yosan/r08/koshigaya_contents_r8toushogaiyo.html",
+    "license": "越谷市公式ホームページに掲載される記事、写真、図画、その他のデータ類の著作権は、越谷市、またはその情報提供者に帰属します。また、そのすべてについて、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、越谷市の許可・承諾を得ないままほかのメディア等へ転載・引用することはお断りします。ホームページ上で公開しているデータは、行政情報を広くお知らせするためのものであり、掲載されている情報や画像等を無断で転載することは禁止されています。",
+    "target": "page"
+  },
+  "/sources/koshigaya-yosan-gaiyou-h26/h26-toushoyosan-gaiyou_files_tousyo_gaiyou26.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koshigaya.saitama.jp/kurashi_shisei/shisei/yosankessan/yosan/h26/h26-toushoyosan-gaiyou.html",
+    "license": "越谷市公式ホームページに掲載される記事、写真、図画、その他のデータ類の著作権は、越谷市、またはその情報提供者に帰属します。また、そのすべてについて、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、越谷市の許可・承諾を得ないままほかのメディア等へ転載・引用することはお断りします。ホームページ上で公開しているデータは、行政情報を広くお知らせするためのものであり、掲載されている情報や画像等を無断で転載することは禁止されています。",
+    "target": "page"
+  },
+  "/sources/koshigaya-yosan-gaiyou-h25/h25_toushoyosan_gaiyou_files_tousyo_gaiyou25.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koshigaya.saitama.jp/kurashi_shisei/shisei/yosankessan/yosan/h25/h25_toushoyosan_gaiyou.html",
+    "license": "越谷市公式ホームページに掲載される記事、写真、図画、その他のデータ類の著作権は、越谷市、またはその情報提供者に帰属します。また、そのすべてについて、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、越谷市の許可・承諾を得ないままほかのメディア等へ転載・引用することはお断りします。ホームページ上で公開しているデータは、行政情報を広くお知らせするためのものであり、掲載されている情報や画像等を無断で転載することは禁止されています。",
+    "target": "page"
+  },
+  "/sources/koshigaya-yosan-gaiyou-h24/heisei24_tousyoyosan_gaiyou_files_tousyo_gaiyou24.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koshigaya.saitama.jp/kurashi_shisei/shisei/yosankessan/yosan/h24/heisei24_tousyoyosan_gaiyou.html",
+    "license": "越谷市公式ホームページに掲載される記事、写真、図画、その他のデータ類の著作権は、越谷市、またはその情報提供者に帰属します。また、そのすべてについて、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、越谷市の許可・承諾を得ないままほかのメディア等へ転載・引用することはお断りします。ホームページ上で公開しているデータは、行政情報を広くお知らせするためのものであり、掲載されている情報や画像等を無断で転載することは禁止されています。",
+    "target": "page"
+  },
+  "/sources/koshigaya-yosan-satei-r7/r7kannbetusateijoukyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koshigaya.saitama.jp/kurashi_shisei/shisei/yosankessan/yosan/R06/R7tousyoyosan_sateizyoukyou.html",
+    "license": "越谷市公式ホームページに掲載される記事、写真、図画、その他のデータ類の著作権は、越谷市、またはその情報提供者に帰属します。また、そのすべてについて、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、越谷市の許可・承諾を得ないままほかのメディア等へ転載・引用することはお断りします。ホームページ上で公開しているデータは、行政情報を広くお知らせするためのものであり、掲載されている情報や画像等を無断で転載することは禁止されています。",
+    "target": "page"
+  },
+  "/sources/koriyama-yosan-gaiyou-r8/117243.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koriyama.lg.jp/uploaded/attachment/117243.pdf",
+    "license": "郡山市ホームページ上に掲載されている文書や画像等のコンテンツの無断使用・転載・引用を禁じます。郡山市公式サイト上における文書・画像等コンテンツの著作権は、郡山市に帰属します。一部の画像等の著作権は、撮影者や画像提供者などの原著作者が所有します。",
+    "target": "file"
+  },
+  "/sources/koriyama-yosan-gaiyou-r7/96119.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koriyama.lg.jp/uploaded/attachment/96119.pdf",
+    "license": "郡山市ホームページ上に掲載されている文書や画像等のコンテンツの無断使用・転載・引用を禁じます。郡山市公式サイト上における文書・画像等コンテンツの著作権は、郡山市に帰属します。一部の画像等の著作権は、撮影者や画像提供者などの原著作者が所有します。",
+    "target": "file"
+  },
+  "/sources/koriyama-yosan-gaiyou-r6/74838.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koriyama.lg.jp/uploaded/attachment/74838.pdf",
+    "license": "郡山市ホームページ上に掲載されている文書や画像等のコンテンツの無断使用・転載・引用を禁じます。郡山市公式サイト上における文書・画像等コンテンツの著作権は、郡山市に帰属します。一部の画像等の著作権は、撮影者や画像提供者などの原著作者が所有します。",
+    "target": "file"
+  },
+  "/sources/koriyama-yosan-gaiyou-r5/54157.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koriyama.lg.jp/uploaded/attachment/54157.pdf",
+    "license": "郡山市ホームページ上に掲載されている文書や画像等のコンテンツの無断使用・転載・引用を禁じます。郡山市公式サイト上における文書・画像等コンテンツの著作権は、郡山市に帰属します。一部の画像等の著作権は、撮影者や画像提供者などの原著作者が所有します。",
+    "target": "file"
+  },
+  "/sources/koriyama-yosan-gaiyou-r4/32767.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koriyama.lg.jp/uploaded/attachment/32767.pdf",
+    "license": "郡山市ホームページ上に掲載されている文書や画像等のコンテンツの無断使用・転載・引用を禁じます。郡山市公式サイト上における文書・画像等コンテンツの著作権は、郡山市に帰属します。一部の画像等の著作権は、撮影者や画像提供者などの原著作者が所有します。",
+    "target": "file"
+  },
+  "/sources/koriyama-yosan-gaiyou-r3/19300.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koriyama.lg.jp/uploaded/attachment/19300.pdf",
+    "license": "郡山市ホームページ上に掲載されている文書や画像等のコンテンツの無断使用・転載・引用を禁じます。郡山市公式サイト上における文書・画像等コンテンツの著作権は、郡山市に帰属します。一部の画像等の著作権は、撮影者や画像提供者などの原著作者が所有します。",
+    "target": "file"
+  },
+  "/sources/koriyama-yosan-gaiyou-r2/19142.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koriyama.lg.jp/uploaded/attachment/19142.pdf",
+    "license": "郡山市ホームページ上に掲載されている文書や画像等のコンテンツの無断使用・転載・引用を禁じます。郡山市公式サイト上における文書・画像等コンテンツの著作権は、郡山市に帰属します。一部の画像等の著作権は、撮影者や画像提供者などの原著作者が所有します。",
+    "target": "file"
   }
 };

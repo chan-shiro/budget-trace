@@ -1,0 +1,12 @@
+{
+  "sourceId": "maebashi-yosan-siryou-h29",
+  "files": [
+    {
+      "filename": "syousai.pdf",
+      "sha256": "c40d2f5f898a6f11cd02163202074eaa5db654f2722bf5bdfd22f0bfef30ef3f",
+      "bytes": 4516541,
+      "fetchedAt": "2026-08-23T04:25:01.945Z",
+      "fetchedFrom": "https://www.city.maebashi.gunma.jp/material/files/group/12/syousai.pdf"
+    }
+  ]
+}

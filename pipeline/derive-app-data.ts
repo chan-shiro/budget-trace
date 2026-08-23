@@ -2407,6 +2407,26 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4"] as const).map((fy) => ({
       srcId: `tokorozawa-yosan-siryo-${fy}`, muniCode: "112089", muniName: "所沢市", prefName: "埼玉県", isPref: false,
     })),
+    // 中核市など 第9弾（2026-08-23・loop.md の第10巡）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29"] as const).map((fy) => ({
+      srcId: `maebashi-yosan-siryou-${fy}`, muniCode: "102016", muniName: "前橋市", prefName: "群馬県", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31"] as const).map((fy) => ({
+      srcId: `asahikawa-yosanan-gaiyou-${fy}`, muniCode: "012041", muniName: "旭川市", prefName: "北海道", isPref: false,
+    })),
+    // 那覇市は R6（数字が抽出で消える）・R3/R2（アウトライン化）・H29 以前（前年度列なし）を除く＝鎖が2本に割れる
+    ...(["r8", "r7", "r5", "r4"] as const).map((fy) => ({
+      srcId: `naha-yosansho-${fy}`, muniCode: "472018", muniName: "那覇市", prefName: "沖縄県", isPref: false,
+    })),
+    // 越谷市。⚠ R7 だけ概要がアウトライン化で読めず「査定状況」PDF で代替＝接頭辞が違うのでクロスチェーンが2リンク外れる
+    ...(["r8", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28", "h27", "h26", "h25", "h24"] as const).map((fy) => ({
+      srcId: `koshigaya-yosan-gaiyou-${fy}`, muniCode: "112224", muniName: "越谷市", prefName: "埼玉県", isPref: false,
+    })),
+    { srcId: "koshigaya-yosan-satei-r7", muniCode: "112224", muniName: "越谷市", prefName: "埼玉県", isPref: false },
+    // 郡山市。⚠ R8 の前年度は「R7 当初＋6月送り分」（R7 が骨格予算）なので prevBasis: 補正後
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `koriyama-yosan-gaiyou-${fy}`, muniCode: "072036", muniName: "郡山市", prefName: "福島県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。

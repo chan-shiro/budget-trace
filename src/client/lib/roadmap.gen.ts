@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 139,
+  "budgetCount": 144,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 782,
-  "fileCount": 1949,
+  "sourceCount": 826,
+  "fileCount": 1993,
   "archivedCount": 747,
-  "licenseOpen": 80,
-  "licensePermission": 619,
+  "licenseOpen": 90,
+  "licensePermission": 653,
   "licenseUnverified": 83,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -73,6 +73,12 @@ export const ROADMAP_PROGRESS = {
       "code": "131202",
       "years": 16,
       "range": "H23〜R8（16年度）"
+    },
+    {
+      "name": "越谷市",
+      "code": "112224",
+      "years": 15,
+      "range": "H24〜R8（15年度）"
     },
     {
       "name": "北区",
@@ -159,6 +165,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H28〜R8（10年度）"
     },
     {
+      "name": "前橋市",
+      "code": "102016",
+      "years": 10,
+      "range": "H29〜R8（10年度）"
+    },
+    {
       "name": "東京都",
       "code": "130001",
       "years": 10,
@@ -195,6 +207,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H30〜R8（9年度）"
     },
     {
+      "name": "旭川市",
+      "code": "012041",
+      "years": 8,
+      "range": "H31〜R8（8年度）"
+    },
+    {
       "name": "船橋市",
       "code": "122041",
       "years": 8,
@@ -227,6 +245,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "札幌市",
       "code": "011002",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "郡山市",
+      "code": "072036",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },
@@ -433,6 +457,12 @@ export const ROADMAP_PROGRESS = {
       "code": "232017",
       "years": 4,
       "range": "R3〜R8（4年度）"
+    },
+    {
+      "name": "那覇市",
+      "code": "472018",
+      "years": 4,
+      "range": "R4〜R8（4年度）"
     },
     {
       "name": "岐阜市",
