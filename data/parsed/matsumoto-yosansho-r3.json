@@ -3,7 +3,7 @@
   "sourceId": "matsumoto-yosansho-r3",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-08-23T18:14:08.087Z",
+  "parsedAt": "2026-08-23T19:41:45.401Z",
   "unit": "thousandYen",
   "fiscalYear": "R3",
   "account": "一般会計",
@@ -12,7 +12,7 @@
   "prevRevenueTotal": 89510000,
   "prevExpenditureTotal": 89510000,
   "prevBasis": "当初",
-  "prevNote": "前年度（令和2年度）の当初予算は、市長選挙を控えた骨格予算として編成されている（原典「令和2年度当初予算 主要事務事業説明資料」p.1）。前年当初比はその骨格予算との比較。",
+  "prevNote": "前年度（令和2年度）の当初予算は、市長選挙を控えた骨格予算として編成されている（原典「令和2年度当初予算 主要事務事業説明資料」の印字 p.2＝物理 p.4）。前年当初比はその骨格予算との比較。",
   "facts": [
     {
       "side": "revenue",

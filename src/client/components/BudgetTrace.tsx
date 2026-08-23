@@ -1461,12 +1461,17 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
     totalFmt: fmtV(totalNow),
     totalFmtAnim: <CountUpNum value={totalNow} fmt={fmtV} />,
     yoy: data.yoy,
+    // ⚠⚠ **budget 階層でも年度ごとの `prevBasis` を見る**（2026-08-24・収録レビューが下関 R8 で発見）。
+    //   従来は budget を一律「当初比」と書いていたため、**前年度列が肉付補正後の年度で
+    //   「対前年度（当初比）」と偽って出ていた**（下関 R8 の +4.7% は骨格＋6月肉付補正後との比）。
+    //   ⚠ 前年比較画面は正しく注記まで出しており、**ダッシュボードだけが不整合**だった。
+    //   ⚠ 該当は札幌 R6/R2・徳島 R8・佐世保 H20・下関 R8 で、**下関は最新年度＝既定表示**なので実害が一段上がる。
     yoyCaption: isDecision
       ? "対前年度（決算比）"
-      : isBudget
-        ? "対前年度（当初比）"
-        : budget.prevBasis === "補正後"
-          ? "対前年度（補正後予算比）"
+      : (isBudget ? muniBudget!.prevBasis : budget.prevBasis) === "補正後"
+        ? "対前年度（補正後予算比）"
+        : isBudget
+          ? "対前年度（当初比）"
           : "対前年度",
     // 政策テーマ・注目の事業は主な事業一覧が要る full 専用
     // 注目の事業は full（甲府）＋budget（豊川・和泉）で出す。政策テーマは full 専用

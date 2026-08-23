@@ -129,6 +129,30 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-14",
   },
   {
+    code: "422029", name: "佐世保市", dataset: "budget",
+    fiscalYears: ["R3", "R2", "H31", "H30", "H29", "H28", "H27", "H26", "H24"],
+    categories: ["scanned-image"],
+    reason:
+      "「当初予算説明資料」がこの9年度とも全ページ スキャン画像で、1ページに画像が1枚ずつ入っており、" +
+      "pdftotext の抽出文字数がページ数とほぼ同じ（ページ番号だけ）。文字を読み取る処理もかかっていないため、" +
+      "数値を取り出す手立てがない。収録時にすべての年度を取得して実測した。" +
+      "令和8〜4年度と平成25年度以前は同じ資料で収録済み。",
+    url: "https://www.city.sasebo.lg.jp/zaimu/zaisei/yosansetsumei.html",
+    checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-16",
+  },
+  {
+    code: "422029", name: "佐世保市", dataset: "budget",
+    fiscalYears: ["H22"],
+    categories: ["no-material"],
+    reason:
+      "この年度だけ「当初予算説明資料」が発行元に掲載されておらず、記者発表資料しかない。" +
+      "その記者発表資料には文字はあるが、款ごとの歳入歳出の表が含まれていない" +
+      "（「市税」「地方交付税」「議会費」「民生費」がいずれも0回。収録時に実測）。" +
+      "前後の年度は同じ資料の系列で収録済み。",
+    url: "https://www.city.sasebo.lg.jp/zaimu/zaisei/yosansetsumei.html",
+    checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-16",
+  },
+  {
     code: "142077", name: "茅ヶ崎市", dataset: "budget",
     fiscalYears: ["H25", "H23"],
     categories: ["broken-text-layer"],
