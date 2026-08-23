@@ -10662,5 +10662,77 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.kochi.kochi.jp/uploaded/life/100669_269405_misc.pdf",
     "license": "高知市公式ホームページに掲載されている個々の情報（文字、イラスト、写真等）に関する諸権利は、著作権の対象であり、法律によって保護されています。これらの情報について、「私的使用のための複製」や「引用」など著作権法上で認められている行為を除き、無断で複製、転用等をすることは法律で禁止されています。",
     "target": "file"
+  },
+  "/sources/kurume-yosangaiyo-r8/R8ippankaikeiyosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kurume.fukuoka.jp/1100keikaku/2070zaisei/3010yosan/4230yosanr08/files/R8ippankaikeiyosannogaiyou.pdf",
+    "license": "久留米市ホームページに掲載している文書や画像などのファイル、デザイン、及びその内容に関する諸権利は、原則として久留米市に帰属します。（一部の画像の著作権は、原著作者が所有している場合があります。）久留米市ホームページの文書や画像などのファイル、デザイン、及びその内容の無断転用、転載は原則として禁止します。ただし、久留米市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "file"
+  },
+  "/sources/kurume-yosangaiyo-r7/R7yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kurume.fukuoka.jp/1100keikaku/2070zaisei/3010yosan/4220yosanr07/files/R7yosannogaiyou.pdf",
+    "license": "久留米市ホームページに掲載している文書や画像などのファイル、デザイン、及びその内容に関する諸権利は、原則として久留米市に帰属します。（一部の画像の著作権は、原著作者が所有している場合があります。）久留米市ホームページの文書や画像などのファイル、デザイン、及びその内容の無断転用、転載は原則として禁止します。ただし、久留米市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "file"
+  },
+  "/sources/kurume-yosangaiyo-r6/R6yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kurume.fukuoka.jp/1100keikaku/2070zaisei/3010yosan/4210yosanr06/files/R6yosannogaiyou.pdf",
+    "license": "久留米市ホームページに掲載している文書や画像などのファイル、デザイン、及びその内容に関する諸権利は、原則として久留米市に帰属します。（一部の画像の著作権は、原著作者が所有している場合があります。）久留米市ホームページの文書や画像などのファイル、デザイン、及びその内容の無断転用、転載は原則として禁止します。ただし、久留米市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "file"
+  },
+  "/sources/kurume-yosangaiyo-r5/R5_yosannnogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kurume.fukuoka.jp/1100keikaku/2070zaisei/3010yosan/4200yosanr05/files/R5_yosannnogaiyou.pdf",
+    "license": "久留米市ホームページに掲載している文書や画像などのファイル、デザイン、及びその内容に関する諸権利は、原則として久留米市に帰属します。（一部の画像の著作権は、原著作者が所有している場合があります。）久留米市ホームページの文書や画像などのファイル、デザイン、及びその内容の無断転用、転載は原則として禁止します。ただし、久留米市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "file"
+  },
+  "/sources/kurume-yosangaiyo-r4/ippannkaikeiyosannnogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kurume.fukuoka.jp/1100keikaku/2070zaisei/3010yosan/4190yosanr04/files/ippannkaikeiyosannnogaiyou.pdf",
+    "license": "久留米市ホームページに掲載している文書や画像などのファイル、デザイン、及びその内容に関する諸権利は、原則として久留米市に帰属します。（一部の画像の著作権は、原著作者が所有している場合があります。）久留米市ホームページの文書や画像などのファイル、デザイン、及びその内容の無断転用、転載は原則として禁止します。ただし、久留米市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "file"
+  },
+  "/sources/kurume-yosangaiyo-r3/r3_yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kurume.fukuoka.jp/1100keikaku/2070zaisei/3010yosan/4180yosanr03/files/r3_yosangaiyou.pdf",
+    "license": "久留米市ホームページに掲載している文書や画像などのファイル、デザイン、及びその内容に関する諸権利は、原則として久留米市に帰属します。（一部の画像の著作権は、原著作者が所有している場合があります。）久留米市ホームページの文書や画像などのファイル、デザイン、及びその内容の無断転用、転載は原則として禁止します。ただし、久留米市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "file"
+  },
+  "/sources/kurume-yosangaiyo-r2/yosannnogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kurume.fukuoka.jp/1100keikaku/2070zaisei/3010yosan/4170yosanr02/files/yosannnogaiyou.pdf",
+    "license": "久留米市ホームページに掲載している文書や画像などのファイル、デザイン、及びその内容に関する諸権利は、原則として久留米市に帰属します。（一部の画像の著作権は、原著作者が所有している場合があります。）久留米市ホームページの文書や画像などのファイル、デザイン、及びその内容の無断転用、転載は原則として禁止します。ただし、久留米市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "file"
+  },
+  "/sources/kurume-yosangaiyo-h31/31gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kurume.fukuoka.jp/1100keikaku/2070zaisei/3010yosan/4160yosan31/files/31gaiyou.pdf",
+    "license": "久留米市ホームページに掲載している文書や画像などのファイル、デザイン、及びその内容に関する諸権利は、原則として久留米市に帰属します。（一部の画像の著作権は、原著作者が所有している場合があります。）久留米市ホームページの文書や画像などのファイル、デザイン、及びその内容の無断転用、転載は原則として禁止します。ただし、久留米市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "file"
+  },
+  "/sources/kurume-yosangaiyo-h30/h30-01yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kurume.fukuoka.jp/1100keikaku/2070zaisei/3010yosan/4150yosan30/files/h30-01yosannogaiyou.pdf",
+    "license": "久留米市ホームページに掲載している文書や画像などのファイル、デザイン、及びその内容に関する諸権利は、原則として久留米市に帰属します。（一部の画像の著作権は、原著作者が所有している場合があります。）久留米市ホームページの文書や画像などのファイル、デザイン、及びその内容の無断転用、転載は原則として禁止します。ただし、久留米市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "file"
+  },
+  "/sources/tsu-shi-yosansho-r8/r8_toushoyosansho.pdf": {
+    "mode": "origin",
+    "href": "https://www.info.city.tsu.mie.jp/_res/projects/default_project/_page_/001/005/575/r8_toushoyosansho.pdf",
+    "license": "本サイト上の文書や画像等の各ファイルおよびその内容に関する諸権利は、原則として津市に帰属します。また、他の個人または団体が著作権を有する文書・画像等を引用している場合は、原則としてその出典を明示しています。これらの著作権はそれぞれの個人または団体に帰属します。本サイト上の文書・画像等の無断使用・転載を禁止します。",
+    "target": "file"
+  },
+  "/sources/tsu-shi-yosansho-r7/r7toushoyosansho.pdf": {
+    "mode": "origin",
+    "href": "https://www.info.city.tsu.mie.jp/_res/projects/default_project/_page_/001/005/575/r7toushoyosansho.pdf",
+    "license": "本サイト上の文書や画像等の各ファイルおよびその内容に関する諸権利は、原則として津市に帰属します。また、他の個人または団体が著作権を有する文書・画像等を引用している場合は、原則としてその出典を明示しています。これらの著作権はそれぞれの個人または団体に帰属します。本サイト上の文書・画像等の無断使用・転載を禁止します。",
+    "target": "file"
+  },
+  "/sources/tsu-shi-yosansho-r6/r6tousyoyosannsyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.info.city.tsu.mie.jp/_res/projects/default_project/_page_/001/005/575/r6tousyoyosannsyo.pdf",
+    "license": "本サイト上の文書や画像等の各ファイルおよびその内容に関する諸権利は、原則として津市に帰属します。また、他の個人または団体が著作権を有する文書・画像等を引用している場合は、原則としてその出典を明示しています。これらの著作権はそれぞれの個人または団体に帰属します。本サイト上の文書・画像等の無断使用・転載を禁止します。",
+    "target": "file"
   }
 };

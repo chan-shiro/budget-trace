@@ -102,6 +102,48 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-11",
   },
   {
+    code: "242012", name: "津市", dataset: "budget",
+    fiscalYears: ["R5", "R4", "R3", "R2", "H31", "H30", "H29", "H28", "H27", "H26", "H25", "H24", "H23"],
+    categories: ["scanned-image"],
+    reason:
+      "「当初予算書」が H23〜R5 の13年度とも**全ページ スキャン画像**で、pdftotext の抽出文字数が1ファイル全文で" +
+      "300〜1,700字（ノンブル等のみ。R6 以降は約16,000字以上で健全）。同年度の「当初予算の概要」も、" +
+      "H30・H31・R2・R4 は末尾3ページ（円グラフ等）にしかテキスト層が無く**款別予算額調書のページは画像**、" +
+      "H20〜H29・R3・R5 の概要は全文0字。決定的パースができない。R8・R7・R6 は同じ資料で収録済み。",
+    url: "https://www.info.city.tsu.mie.jp/shisei/zaisei/1005573/1005575.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-12",
+  },
+  {
+    code: "272116", name: "茨木市", dataset: "budget",
+    fiscalYears: ["R8", "R7", "R6", "R5", "R4", "R3"],
+    categories: ["broken-text-layer", "parser-unsupported"],
+    reason:
+      "款別＋前年当初比較を持つのは予算書の事項別明細書 総括だけだが、その（歳出）側は6年度とも" +
+      "**表全体がベクタのアウトラインで描かれておりテキストが1文字も無い**（R8 は当該 XObject の BT が2個＝" +
+      "ノンブルのみ・曲線 15,051 本。スキャンではないので pdfimages は0件）。R7・R6 は代わりに OCR レイヤが乗るが" +
+      "数字が「107, 400, 000」とカンマ後で分かち書きされ Σ が +6,065,484 ずれて落ちる。" +
+      "同じ予算書の事項別明細の款行には健全な款別＋前年度額があり Σ款＝合計が当年度・前年度とも差0 になるが、" +
+      "**その範囲には合計行が無く既存パーサは「歳出合計 行が見つかりません」で throw する**。" +
+      "さらに R8・R5 の明細は ToUnicode 欠落の化け（荒川族）で GARBLE_CHAR_MAP に 項・明・細・書・法・人・" +
+      "ゴ・ル・フ・府 の10字が足りず throw し、R3 は数字まで化けて1ページ内に3系統以上の帯がある。" +
+      "⇒ マップの追加と「合計行を持たない明細から款行だけ拾う」経路の2点を足せば開く見込み。",
+    url: "https://www.city.ibaraki.osaka.jp/kikou/kikaku/zaisei/menu/yosan/index.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-12",
+  },
+  {
+    code: "272116", name: "茨木市", dataset: "budget",
+    fiscalYears: ["R2", "R1", "H30", "H29", "H28", "H27", "H26", "H25"],
+    categories: ["format-mismatch"],
+    reason:
+      "R2 以前は「予算書データ」ページ自体が無く（現存は R8〜R3 の6年）、年度ページにあるのは「当初予算の概要」だけ。" +
+      "概要の一般会計予算総括表は（歳入）側にしか前年度額が無く、（歳出）側は款×性質別（人件費・物件費・扶助費…）で" +
+      "前年度列が存在しない。R8・R4・R2 で同一構成を確認した。" +
+      "⚠ なお概要の備考欄「前年度予算」は当初と一致しない（R7 の市税は 50,608,061 だが R6 の当初は 50,360,000）ので、" +
+      "概要ルートを採るときは款を1つ見て「当初だ」と判断してはいけない（大津・郡山と同型の3例目）。",
+    url: "https://www.city.ibaraki.osaka.jp/kikou/kikaku/zaisei/menu/yosan/index.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-12",
+  },
+  {
     code: "392014", name: "高知市", dataset: "budget", fiscalYears: ["R7", "R6"],
     categories: ["parser-unsupported"],
     reason:

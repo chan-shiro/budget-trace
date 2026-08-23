@@ -13,15 +13,15 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 149,
+  "budgetCount": 153,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 869,
-  "fileCount": 2040,
-  "archivedCount": 831,
-  "licenseOpen": 90,
-  "licensePermission": 683,
-  "licenseUnverified": 96,
+  "sourceCount": 903,
+  "fileCount": 2074,
+  "archivedCount": 833,
+  "licenseOpen": 98,
+  "licensePermission": 695,
+  "licenseUnverified": 110,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
   "kofuBudgetYears": 7,
@@ -85,6 +85,12 @@ export const ROADMAP_PROGRESS = {
       "code": "112224",
       "years": 15,
       "range": "H24〜R8（15年度）"
+    },
+    {
+      "name": "盛岡市",
+      "code": "032018",
+      "years": 14,
+      "range": "H25〜R8（14年度）"
     },
     {
       "name": "北区",
@@ -213,8 +219,20 @@ export const ROADMAP_PROGRESS = {
       "range": "H30〜R8（9年度）"
     },
     {
+      "name": "久留米市",
+      "code": "402036",
+      "years": 9,
+      "range": "H30〜R8（9年度）"
+    },
+    {
       "name": "旭川市",
       "code": "012041",
+      "years": 8,
+      "range": "H31〜R8（8年度）"
+    },
+    {
+      "name": "秋田市",
+      "code": "052019",
       "years": 8,
       "range": "H31〜R8（8年度）"
     },
@@ -503,6 +521,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "静岡市",
       "code": "221007",
+      "years": 3,
+      "range": "R6〜R8（3年度）"
+    },
+    {
+      "name": "津市",
+      "code": "242012",
       "years": 3,
       "range": "R6〜R8（3年度）"
     },
