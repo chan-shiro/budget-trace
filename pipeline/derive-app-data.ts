@@ -2382,6 +2382,27 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r3", "r2", "h30", "h29", "h26", "h25", "h23", "h22", "h21"] as const).map((fy) => ({
       srcId: `takasaki-yosan-gaiyou-${fy}`, muniCode: "102024", muniName: "高崎市", prefName: "群馬県", isPref: false,
     })),
+    // 中核市 第8弾（2026-08-23・loop.md の第9巡）
+    // 奈良市は H31・H30・H29（議会修正前の案のまま）と H27 以前（4行組み）を除く。H28 は孤立するが値を2方向で裏取り済み
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h28"] as const).map((fy) => ({
+      srcId: `nara-shi-yosanan-gaiyou-${fy}`, muniCode: "292010", muniName: "奈良市", prefName: "奈良県", isPref: false,
+    })),
+    // 川越市は R1 の参考資料が回収できず（発行元 404・Wayback も0件）鎖が R8〜R2 で切れる
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `kawagoe-yosan-sankou-${fy}`, muniCode: "112011", muniName: "川越市", prefName: "埼玉県", isPref: false,
+    })),
+    // 高槻市は R3 以前が発行元からも Wayback からも消えている。R5・R4 は Wayback の写しが唯一の経路
+    ...(["r8", "r7", "r6", "r5", "r4"] as const).map((fy) => ({
+      srcId: `takatsuki-yosan-gaikyo-${fy}`, muniCode: "272078", muniName: "高槻市", prefName: "大阪府", isPref: false,
+    })),
+    // 大津市は R3 を落とした（前年度基準が確認できず、R2 が無いのでクロスチェーンも張られない）。R7 以前は WARP が唯一の写し
+    ...(["r8", "r7", "r6", "r5", "r4"] as const).map((fy) => ({
+      srcId: `otsu-yosansho-${fy}`, muniCode: "252018", muniName: "大津市", prefName: "滋賀県", isPref: false,
+    })),
+    // 所沢市は R3（議会修正前の案）を除く。R6 以前は Wayback の写しが唯一の経路。R2 は読めるが孤立するので見送り
+    ...(["r8", "r7", "r6", "r5", "r4"] as const).map((fy) => ({
+      srcId: `tokorozawa-yosan-siryo-${fy}`, muniCode: "112089", muniName: "所沢市", prefName: "埼玉県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。

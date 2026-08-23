@@ -1,0 +1,12 @@
+{
+  "sourceId": "otsu-yosansho-r4",
+  "files": [
+    {
+      "filename": "toushoyosan.pdf",
+      "sha256": "ee43c4c2a33a835faa60ea02263e50c1ba1576b632e474f9b3dc5b889a5f92a8",
+      "bytes": 4555516,
+      "fetchedAt": "2026-08-23T02:27:18.836Z",
+      "fetchedFrom": "https://warp.ndl.go.jp/20221114/20221112063843/https://www.city.otsu.lg.jp/material/files/group/114/toushoyosan.pdf"
+    }
+  ]
+}

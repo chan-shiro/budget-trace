@@ -1,0 +1,12 @@
+{
+  "sourceId": "otsu-yosansho-r6",
+  "files": [
+    {
+      "filename": "reiwa6tousyo.pdf",
+      "sha256": "7cc08b415ee52761cd470731c38692fd819a605b53a2c498b9bded0882b8d423",
+      "bytes": 1091579,
+      "fetchedAt": "2026-08-23T02:27:17.888Z",
+      "fetchedFrom": "https://warp.ndl.go.jp/20240517/20240515024644/https://www.city.otsu.lg.jp/material/files/group/114/reiwa6tousyo.pdf"
+    }
+  ]
+}

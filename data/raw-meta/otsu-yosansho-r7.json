@@ -1,0 +1,12 @@
+{
+  "sourceId": "otsu-yosansho-r7",
+  "files": [
+    {
+      "filename": "r7tousyo.pdf",
+      "sha256": "ffbaad560442c8946d1dd35d62c24cd8f1a9b6bb020e9fb5374a5138b9b920d8",
+      "bytes": 906578,
+      "fetchedAt": "2026-08-23T02:27:17.585Z",
+      "fetchedFrom": "https://warp.ndl.go.jp/20250517/20250515112703/https://www.city.otsu.lg.jp/material/files/group/114/r7tousyo.pdf"
+    }
+  ]
+}
