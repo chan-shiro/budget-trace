@@ -11016,5 +11016,245 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://web.archive.org/web/20231130112349/https://www.city.yao.osaka.jp/0000056728.html",
     "license": "八尾市ホームページ上に掲載されている写真・イラスト・音声・動画及び記事は、著作権の対象となっています。また、八尾市ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。原則、著作権は八尾市に帰属しており、一部の画像等の著作権は、原著作者が所有していますので、無断での使用や転載を禁じます。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、八尾市ホームページの掲載コンテンツを複製・転用する際は、必ず事前に広報課までお問合せください。",
     "target": "page"
+  },
+  "/sources/tsukuba-yosan-gaiyou-r8/R8yosan_gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsukuba.lg.jp/material/files/group/22/R8yosan_gaiyou.pdf",
+    "license": "本サイト上の各ファイル、及びその内容に関しての諸権利は、特記事項がない限り、原則としてつくば市に帰属します。本サイト上の情報を個人的に利用する場合、営利目的で利用されないという前提において複製(端末からのプリントアウト、ダウンロード等)が認められるものとしますが、改変等は認められません。また個人的な利用であっても著作権等に関する表示を削除してはいけません。市章等、本サイト上の画像を許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/tsukuba-yosan-gaiyou-r7/R7yosan_gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsukuba.lg.jp/material/files/group/22/R7yosan_gaiyou.pdf",
+    "license": "本サイト上の各ファイル、及びその内容に関しての諸権利は、特記事項がない限り、原則としてつくば市に帰属します。本サイト上の情報を個人的に利用する場合、営利目的で利用されないという前提において複製(端末からのプリントアウト、ダウンロード等)が認められるものとしますが、改変等は認められません。また個人的な利用であっても著作権等に関する表示を削除してはいけません。市章等、本サイト上の画像を許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/tsukuba-yosan-gaiyou-r6/R6yosan_gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsukuba.lg.jp/material/files/group/22/R6yosan_gaiyou.pdf",
+    "license": "本サイト上の各ファイル、及びその内容に関しての諸権利は、特記事項がない限り、原則としてつくば市に帰属します。本サイト上の情報を個人的に利用する場合、営利目的で利用されないという前提において複製(端末からのプリントアウト、ダウンロード等)が認められるものとしますが、改変等は認められません。また個人的な利用であっても著作権等に関する表示を削除してはいけません。市章等、本サイト上の画像を許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/tsukuba-yosan-gaiyou-r5/R5toushoyosan_gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsukuba.lg.jp/material/files/group/22/R5toushoyosan_gaiyou.pdf",
+    "license": "本サイト上の各ファイル、及びその内容に関しての諸権利は、特記事項がない限り、原則としてつくば市に帰属します。本サイト上の情報を個人的に利用する場合、営利目的で利用されないという前提において複製(端末からのプリントアウト、ダウンロード等)が認められるものとしますが、改変等は認められません。また個人的な利用であっても著作権等に関する表示を削除してはいけません。市章等、本サイト上の画像を許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/tsukuba-yosan-gaiyou-r4/R4_toshoyosan_gaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsukuba.lg.jp/material/files/group/22/R4_toshoyosan_gaiyo.pdf",
+    "license": "本サイト上の各ファイル、及びその内容に関しての諸権利は、特記事項がない限り、原則としてつくば市に帰属します。本サイト上の情報を個人的に利用する場合、営利目的で利用されないという前提において複製(端末からのプリントアウト、ダウンロード等)が認められるものとしますが、改変等は認められません。また個人的な利用であっても著作権等に関する表示を削除してはいけません。市章等、本サイト上の画像を許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/tsukuba-yosan-gaiyou-r3/R3_tousyoyosann_gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsukuba.lg.jp/material/files/group/22/R3_tousyoyosann_gaiyou.pdf",
+    "license": "本サイト上の各ファイル、及びその内容に関しての諸権利は、特記事項がない限り、原則としてつくば市に帰属します。本サイト上の情報を個人的に利用する場合、営利目的で利用されないという前提において複製(端末からのプリントアウト、ダウンロード等)が認められるものとしますが、改変等は認められません。また個人的な利用であっても著作権等に関する表示を削除してはいけません。市章等、本サイト上の画像を許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/tsukuba-yosan-gaiyou-r2/gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsukuba.lg.jp/material/files/group/22/gaiyou.pdf",
+    "license": "本サイト上の各ファイル、及びその内容に関しての諸権利は、特記事項がない限り、原則としてつくば市に帰属します。本サイト上の情報を個人的に利用する場合、営利目的で利用されないという前提において複製(端末からのプリントアウト、ダウンロード等)が認められるものとしますが、改変等は認められません。また個人的な利用であっても著作権等に関する表示を削除してはいけません。市章等、本サイト上の画像を許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/tsukuba-yosan-gaiyou-h31/H31_gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsukuba.lg.jp/material/files/group/22/H31_gaiyou.pdf",
+    "license": "本サイト上の各ファイル、及びその内容に関しての諸権利は、特記事項がない限り、原則としてつくば市に帰属します。本サイト上の情報を個人的に利用する場合、営利目的で利用されないという前提において複製(端末からのプリントアウト、ダウンロード等)が認められるものとしますが、改変等は認められません。また個人的な利用であっても著作権等に関する表示を削除してはいけません。市章等、本サイト上の画像を許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/tsukuba-yosan-gaiyou-h30/H30_gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsukuba.lg.jp/material/files/group/22/H30_gaiyou.pdf",
+    "license": "本サイト上の各ファイル、及びその内容に関しての諸権利は、特記事項がない限り、原則としてつくば市に帰属します。本サイト上の情報を個人的に利用する場合、営利目的で利用されないという前提において複製(端末からのプリントアウト、ダウンロード等)が認められるものとしますが、改変等は認められません。また個人的な利用であっても著作権等に関する表示を削除してはいけません。市章等、本サイト上の画像を許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/tsukuba-yosan-gaiyou-h29/H29tousyoyosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsukuba.lg.jp/material/files/group/22/H29tousyoyosangaiyou.pdf",
+    "license": "本サイト上の各ファイル、及びその内容に関しての諸権利は、特記事項がない限り、原則としてつくば市に帰属します。本サイト上の情報を個人的に利用する場合、営利目的で利用されないという前提において複製(端末からのプリントアウト、ダウンロード等)が認められるものとしますが、改変等は認められません。また個人的な利用であっても著作権等に関する表示を削除してはいけません。市章等、本サイト上の画像を許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/tsukuba-yosan-gaiyou-h28/h28gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsukuba.lg.jp/material/files/group/22/h28gaiyou.pdf",
+    "license": "本サイト上の各ファイル、及びその内容に関しての諸権利は、特記事項がない限り、原則としてつくば市に帰属します。本サイト上の情報を個人的に利用する場合、営利目的で利用されないという前提において複製(端末からのプリントアウト、ダウンロード等)が認められるものとしますが、改変等は認められません。また個人的な利用であっても著作権等に関する表示を削除してはいけません。市章等、本サイト上の画像を許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/tsukuba-yosan-gaiyou-h27/h27gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsukuba.lg.jp/material/files/group/22/h27gaiyou.pdf",
+    "license": "本サイト上の各ファイル、及びその内容に関しての諸権利は、特記事項がない限り、原則としてつくば市に帰属します。本サイト上の情報を個人的に利用する場合、営利目的で利用されないという前提において複製(端末からのプリントアウト、ダウンロード等)が認められるものとしますが、改変等は認められません。また個人的な利用であっても著作権等に関する表示を削除してはいけません。市章等、本サイト上の画像を許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/tsukuba-yosan-gaiyou-h26/H26_gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsukuba.lg.jp/material/files/group/22/H26_gaiyou.pdf",
+    "license": "本サイト上の各ファイル、及びその内容に関しての諸権利は、特記事項がない限り、原則としてつくば市に帰属します。本サイト上の情報を個人的に利用する場合、営利目的で利用されないという前提において複製(端末からのプリントアウト、ダウンロード等)が認められるものとしますが、改変等は認められません。また個人的な利用であっても著作権等に関する表示を削除してはいけません。市章等、本サイト上の画像を許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/tsukuba-yosan-gaiyou-h25/H25_gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsukuba.lg.jp/material/files/group/22/H25_gaiyou.pdf",
+    "license": "本サイト上の各ファイル、及びその内容に関しての諸権利は、特記事項がない限り、原則としてつくば市に帰属します。本サイト上の情報を個人的に利用する場合、営利目的で利用されないという前提において複製(端末からのプリントアウト、ダウンロード等)が認められるものとしますが、改変等は認められません。また個人的な利用であっても著作権等に関する表示を削除してはいけません。市章等、本サイト上の画像を許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/hiratsuka-yosan-gaiyou-r7/200172091.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hiratsuka.kanagawa.jp/common/200172091.pdf",
+    "license": "平塚市ウェブサイトに掲載されている文書、写真、画像、イラスト等の各ファイル及びその内容に関する諸権利は、原則として平塚市に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断の転用・引用を禁止します。",
+    "target": "file"
+  },
+  "/sources/hiratsuka-yosan-gaiyou-r6/200149782.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hiratsuka.kanagawa.jp/common/200149782.pdf",
+    "license": "平塚市ウェブサイトに掲載されている文書、写真、画像、イラスト等の各ファイル及びその内容に関する諸権利は、原則として平塚市に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断の転用・引用を禁止します。",
+    "target": "file"
+  },
+  "/sources/hiratsuka-yosan-gaiyou-r5/200149779.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hiratsuka.kanagawa.jp/common/200149779.pdf",
+    "license": "平塚市ウェブサイトに掲載されている文書、写真、画像、イラスト等の各ファイル及びその内容に関する諸権利は、原則として平塚市に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断の転用・引用を禁止します。",
+    "target": "file"
+  },
+  "/sources/hiratsuka-yosan-gaiyou-r4/200101452.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hiratsuka.kanagawa.jp/common/200101452.pdf",
+    "license": "平塚市ウェブサイトに掲載されている文書、写真、画像、イラスト等の各ファイル及びその内容に関する諸権利は、原則として平塚市に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断の転用・引用を禁止します。",
+    "target": "file"
+  },
+  "/sources/hiratsuka-yosan-gaiyou-r3/200081415.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hiratsuka.kanagawa.jp/common/200081415.pdf",
+    "license": "平塚市ウェブサイトに掲載されている文書、写真、画像、イラスト等の各ファイル及びその内容に関する諸権利は、原則として平塚市に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断の転用・引用を禁止します。",
+    "target": "file"
+  },
+  "/sources/hiratsuka-yosan-gaiyou-r2/200064292.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hiratsuka.kanagawa.jp/common/200064292.pdf",
+    "license": "平塚市ウェブサイトに掲載されている文書、写真、画像、イラスト等の各ファイル及びその内容に関する諸権利は、原則として平塚市に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断の転用・引用を禁止します。",
+    "target": "file"
+  },
+  "/sources/fukui-shi-yosan-gaiyou-r8/R8yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fukui.lg.jp/sisei/zaisei/yosan/p071963_d/fil/R8yosannogaiyou.pdf",
+    "license": "福井市公式ホームページに掲載されている文書、写真、画像及び映像に関する著作権は、福井市又は原著作者に帰属しています。私的使用のための複製、引用等著作権法上、国際条約上認められた範囲内及びクリエイティブ・コモンズ・ライセンス（以下「CCライセンス」という。）により表示するライセンス条件の範囲内で使用する場合を除き、これらを無断で利用することはできません。著作権法上、国際条約上認められた範囲及びCCライセンスにより表示するライセンス条件の範囲を超える利用を希望する場合には、各ページの担当所属に直接ご相談ください。【福井市公式ホームページのCCライセンス】福井市公式ホームページのCCライセンスの基本ライセンスは、写真、画像、映像及び個別に設定する場合を除き、CC－BY－SA（表示－継承）とします。",
+    "target": "file"
+  },
+  "/sources/fukui-shi-yosan-gaiyou-r7/R7syuyouzigyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fukui.lg.jp/sisei/zaisei/yosan/p070783_d/fil/R7syuyouzigyou.pdf",
+    "license": "福井市公式ホームページに掲載されている文書、写真、画像及び映像に関する著作権は、福井市又は原著作者に帰属しています。私的使用のための複製、引用等著作権法上、国際条約上認められた範囲内及びクリエイティブ・コモンズ・ライセンス（以下「CCライセンス」という。）により表示するライセンス条件の範囲内で使用する場合を除き、これらを無断で利用することはできません。著作権法上、国際条約上認められた範囲及びCCライセンスにより表示するライセンス条件の範囲を超える利用を希望する場合には、各ページの担当所属に直接ご相談ください。【福井市公式ホームページのCCライセンス】福井市公式ホームページのCCライセンスの基本ライセンスは、写真、画像、映像及び個別に設定する場合を除き、CC－BY－SA（表示－継承）とします。",
+    "target": "file"
+  },
+  "/sources/fukui-shi-yosan-gaiyou-r6/R6syuyoujigyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fukui.lg.jp/sisei/zaisei/yosan/p026947_d/fil/R6syuyoujigyou.pdf",
+    "license": "福井市公式ホームページに掲載されている文書、写真、画像及び映像に関する著作権は、福井市又は原著作者に帰属しています。私的使用のための複製、引用等著作権法上、国際条約上認められた範囲内及びクリエイティブ・コモンズ・ライセンス（以下「CCライセンス」という。）により表示するライセンス条件の範囲内で使用する場合を除き、これらを無断で利用することはできません。著作権法上、国際条約上認められた範囲及びCCライセンスにより表示するライセンス条件の範囲を超える利用を希望する場合には、各ページの担当所属に直接ご相談ください。【福井市公式ホームページのCCライセンス】福井市公式ホームページのCCライセンスの基本ライセンスは、写真、画像、映像及び個別に設定する場合を除き、CC－BY－SA（表示－継承）とします。",
+    "target": "file"
+  },
+  "/sources/fukui-shi-yosan-gaiyou-r5/R5syuyoujigyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fukui.lg.jp/sisei/zaisei/yosan/p025604_d/fil/R5syuyoujigyou.pdf",
+    "license": "福井市公式ホームページに掲載されている文書、写真、画像及び映像に関する著作権は、福井市又は原著作者に帰属しています。私的使用のための複製、引用等著作権法上、国際条約上認められた範囲内及びクリエイティブ・コモンズ・ライセンス（以下「CCライセンス」という。）により表示するライセンス条件の範囲内で使用する場合を除き、これらを無断で利用することはできません。著作権法上、国際条約上認められた範囲及びCCライセンスにより表示するライセンス条件の範囲を超える利用を希望する場合には、各ページの担当所属に直接ご相談ください。【福井市公式ホームページのCCライセンス】福井市公式ホームページのCCライセンスの基本ライセンスは、写真、画像、映像及び個別に設定する場合を除き、CC－BY－SA（表示－継承）とします。",
+    "target": "file"
+  },
+  "/sources/fukui-shi-yosan-gaiyou-r4/R4syuyoujigyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fukui.lg.jp/sisei/zaisei/yosan/yosan-r4_d/fil/R4syuyoujigyou.pdf",
+    "license": "福井市公式ホームページに掲載されている文書、写真、画像及び映像に関する著作権は、福井市又は原著作者に帰属しています。私的使用のための複製、引用等著作権法上、国際条約上認められた範囲内及びクリエイティブ・コモンズ・ライセンス（以下「CCライセンス」という。）により表示するライセンス条件の範囲内で使用する場合を除き、これらを無断で利用することはできません。著作権法上、国際条約上認められた範囲及びCCライセンスにより表示するライセンス条件の範囲を超える利用を希望する場合には、各ページの担当所属に直接ご相談ください。【福井市公式ホームページのCCライセンス】福井市公式ホームページのCCライセンスの基本ライセンスは、写真、画像、映像及び個別に設定する場合を除き、CC－BY－SA（表示－継承）とします。",
+    "target": "file"
+  },
+  "/sources/fukui-shi-yosan-gaiyou-r3/R3syuyoujigyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fukui.lg.jp/sisei/zaisei/yosan/yosan-r3_d/fil/R3syuyoujigyou.pdf",
+    "license": "福井市公式ホームページに掲載されている文書、写真、画像及び映像に関する著作権は、福井市又は原著作者に帰属しています。私的使用のための複製、引用等著作権法上、国際条約上認められた範囲内及びクリエイティブ・コモンズ・ライセンス（以下「CCライセンス」という。）により表示するライセンス条件の範囲内で使用する場合を除き、これらを無断で利用することはできません。著作権法上、国際条約上認められた範囲及びCCライセンスにより表示するライセンス条件の範囲を超える利用を希望する場合には、各ページの担当所属に直接ご相談ください。【福井市公式ホームページのCCライセンス】福井市公式ホームページのCCライセンスの基本ライセンスは、写真、画像、映像及び個別に設定する場合を除き、CC－BY－SA（表示－継承）とします。",
+    "target": "file"
+  },
+  "/sources/fukui-shi-yosan-gaiyou-r2/R2syuyoujigyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fukui.lg.jp/sisei/zaisei/yosan/p021700_d/fil/R2syuyoujigyou.pdf",
+    "license": "福井市公式ホームページに掲載されている文書、写真、画像及び映像に関する著作権は、福井市又は原著作者に帰属しています。私的使用のための複製、引用等著作権法上、国際条約上認められた範囲内及びクリエイティブ・コモンズ・ライセンス（以下「CCライセンス」という。）により表示するライセンス条件の範囲内で使用する場合を除き、これらを無断で利用することはできません。著作権法上、国際条約上認められた範囲及びCCライセンスにより表示するライセンス条件の範囲を超える利用を希望する場合には、各ページの担当所属に直接ご相談ください。【福井市公式ホームページのCCライセンス】福井市公式ホームページのCCライセンスの基本ライセンスは、写真、画像、映像及び個別に設定する場合を除き、CC－BY－SA（表示－継承）とします。",
+    "target": "file"
+  },
+  "/sources/nagaoka-yosansho-r8/r08j-01a.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagaoka.niigata.jp/shisei/cate03/zaisei/file/r08j-01a.pdf",
+    "license": "当サイト上に掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として長岡市が所有しています。当サイトの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。引用・転用・転載などをご希望の場合には、コンテンツ内に記載された担当課へ直接ご連絡ください。「長岡市オープンデータ」のコンテンツについては、「長岡市オープンデータ利用規約」により取扱を定めます。",
+    "target": "file"
+  },
+  "/sources/nagaoka-yosansho-r7/r07j-01.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagaoka.niigata.jp/shisei/cate03/zaisei/file/r07j-01.pdf",
+    "license": "当サイト上に掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として長岡市が所有しています。当サイトの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。引用・転用・転載などをご希望の場合には、コンテンツ内に記載された担当課へ直接ご連絡ください。「長岡市オープンデータ」のコンテンツについては、「長岡市オープンデータ利用規約」により取扱を定めます。",
+    "target": "file"
+  },
+  "/sources/nagaoka-yosansho-r5/r05j.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagaoka.niigata.jp/shisei/cate03/zaisei/file/r05j.pdf",
+    "license": "当サイト上に掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として長岡市が所有しています。当サイトの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。引用・転用・転載などをご希望の場合には、コンテンツ内に記載された担当課へ直接ご連絡ください。「長岡市オープンデータ」のコンテンツについては、「長岡市オープンデータ利用規約」により取扱を定めます。",
+    "target": "file"
+  },
+  "/sources/nagaoka-yosansho-r4/r04j.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagaoka.niigata.jp/shisei/cate03/zaisei/file/r04j.pdf",
+    "license": "当サイト上に掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として長岡市が所有しています。当サイトの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。引用・転用・転載などをご希望の場合には、コンテンツ内に記載された担当課へ直接ご連絡ください。「長岡市オープンデータ」のコンテンツについては、「長岡市オープンデータ利用規約」により取扱を定めます。",
+    "target": "file"
+  },
+  "/sources/nagaoka-yosansho-r3/r03j.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20211207150033id_/https://www.city.nagaoka.niigata.jp/shisei/cate03/zaisei/file/r03j.pdf",
+    "license": "当サイト上に掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として長岡市が所有しています。当サイトの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。引用・転用・転載などをご希望の場合には、コンテンツ内に記載された担当課へ直接ご連絡ください。「長岡市オープンデータ」のコンテンツについては、「長岡市オープンデータ利用規約」により取扱を定めます。",
+    "target": "file"
+  },
+  "/sources/nagaoka-yosansho-r2/r02j.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20210123192055id_/https://www.city.nagaoka.niigata.jp/shisei/cate03/zaisei/file/r02j.pdf",
+    "license": "当サイト上に掲載している内容（文章、写真、図、イラスト等）に関する著作権は、原則として長岡市が所有しています。当サイトの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。引用・転用・転載などをご希望の場合には、コンテンツ内に記載された担当課へ直接ご連絡ください。「長岡市オープンデータ」のコンテンツについては、「長岡市オープンデータ利用規約」により取扱を定めます。",
+    "target": "file"
+  },
+  "/sources/kakogawa-yosanpoint-r8/R8point.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kakogawa.lg.jp/material/files/group/9/R8point.pdf",
+    "license": "加古川市ホームページに掲載している著作物（文章、写真、イラストなど）にかかる著作権は、加古川市もしくは、加古川市に情報提供していただいた提供元に帰属します。権利者の許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/kakogawa-yosanpoint-r7/20250226.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kakogawa.lg.jp/material/files/group/9/20250226.pdf",
+    "license": "加古川市ホームページに掲載している著作物（文章、写真、イラストなど）にかかる著作権は、加古川市もしくは、加古川市に情報提供していただいた提供元に帰属します。権利者の許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/kakogawa-yosanpoint-r6/rokunendoyosannpointo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kakogawa.lg.jp/material/files/group/9/rokunendoyosannpointo.pdf",
+    "license": "加古川市ホームページに掲載している著作物（文章、写真、イラストなど）にかかる著作権は、加古川市もしくは、加古川市に情報提供していただいた提供元に帰属します。権利者の許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/kakogawa-yosanpoint-r5/jifuisdhaskf.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kakogawa.lg.jp/material/files/group/9/jifuisdhaskf.pdf",
+    "license": "加古川市ホームページに掲載している著作物（文章、写真、イラストなど）にかかる著作権は、加古川市もしくは、加古川市に情報提供していただいた提供元に帰属します。権利者の許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/kakogawa-yosanpoint-r4/r4yosannopointo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kakogawa.lg.jp/material/files/group/9/r4yosannopointo.pdf",
+    "license": "加古川市ホームページに掲載している著作物（文章、写真、イラストなど）にかかる著作権は、加古川市もしくは、加古川市に情報提供していただいた提供元に帰属します。権利者の許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/kakogawa-yosanpoint-r3/R03-yosanpoint.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20240711215337id_/https://www.city.kakogawa.lg.jp/material/files/group/9/R03-yosanpoint.pdf",
+    "license": "加古川市ホームページに掲載している著作物（文章、写真、イラストなど）にかかる著作権は、加古川市もしくは、加古川市に情報提供していただいた提供元に帰属します。権利者の許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/kakogawa-yosanpoint-r2/R2_yosanpoint.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20240711215439id_/https://www.city.kakogawa.lg.jp/material/files/group/9/R2_yosanpoint.pdf",
+    "license": "加古川市ホームページに掲載している著作物（文章、写真、イラストなど）にかかる著作権は、加古川市もしくは、加古川市に情報提供していただいた提供元に帰属します。権利者の許可なく使用・転載することを禁止します。",
+    "target": "file"
   }
 };

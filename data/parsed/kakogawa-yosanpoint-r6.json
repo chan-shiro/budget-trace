@@ -1,0 +1,380 @@
+{
+  "docType": "budget-book",
+  "sourceId": "kakogawa-yosanpoint-r6",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-08-23T13:43:19.658Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R6",
+  "account": "一般会計",
+  "revenueTotal": 97050000,
+  "expenditureTotal": 97050000,
+  "prevRevenueTotal": 93510000,
+  "prevExpenditureTotal": 93510000,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "市税",
+      "amount": 39574900,
+      "prevAmount": 40251700,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "地方譲与税",
+      "amount": 710000,
+      "prevAmount": 698000,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "利子割交付金",
+      "amount": 18000,
+      "prevAmount": 20000,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "配当割交付金",
+      "amount": 320000,
+      "prevAmount": 300000,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 200000,
+      "prevAmount": 200000,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "法人事業税交付金",
+      "amount": 479000,
+      "prevAmount": 468000,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "地方消費税交付金",
+      "amount": 5800000,
+      "prevAmount": 6000000,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "ゴルフ場利用税交付金",
+      "amount": 20000,
+      "prevAmount": 20000,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "環境性能割交付金",
+      "amount": 110000,
+      "prevAmount": 90000,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "地方特例交付金",
+      "amount": 1460000,
+      "prevAmount": 310000,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "地方交付税",
+      "amount": 6660000,
+      "prevAmount": 5600000,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 45000,
+      "prevAmount": 45000,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "分担金及び負担金",
+      "amount": 476039,
+      "prevAmount": 459268,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "使用料及び手数料",
+      "amount": 932199,
+      "prevAmount": 913224,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "国庫支出金",
+      "amount": 19581933,
+      "prevAmount": 16398221,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 17,
+      "kanName": "県支出金",
+      "amount": 7536520,
+      "prevAmount": 7006660,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 18,
+      "kanName": "財産収入",
+      "amount": 65065,
+      "prevAmount": 72577,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 19,
+      "kanName": "寄附金",
+      "amount": 504350,
+      "prevAmount": 424350,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 20,
+      "kanName": "繰入金",
+      "amount": 4739149,
+      "prevAmount": 3712000,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 22,
+      "kanName": "諸収入",
+      "amount": 2272745,
+      "prevAmount": 2305700,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 23,
+      "kanName": "市債",
+      "amount": 5545100,
+      "prevAmount": 8215300,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 547184,
+      "prevAmount": 540139,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 12216798,
+      "prevAmount": 9866664,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "民生費",
+      "amount": 42518127,
+      "prevAmount": 36373414,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "衛生費",
+      "amount": 8755127,
+      "prevAmount": 12695208,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "労働費",
+      "amount": 271301,
+      "prevAmount": 286883,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "農林水産業費",
+      "amount": 820863,
+      "prevAmount": 1850230,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "商工費",
+      "amount": 1752371,
+      "prevAmount": 1190825,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "土木費",
+      "amount": 9428230,
+      "prevAmount": 9022322,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "消防費",
+      "amount": 3392884,
+      "prevAmount": 3378984,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "教育費",
+      "amount": 9028354,
+      "prevAmount": 9720605,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 12,
+      "kanName": "公債費",
+      "amount": 8218761,
+      "prevAmount": 8484726,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 14,
+      "kanName": "予備費",
+      "amount": 100000,
+      "prevAmount": 100000,
+      "locator": {
+        "file": "rokunendoyosannpointo.pdf",
+        "page": 6
+      }
+    }
+  ]
+}

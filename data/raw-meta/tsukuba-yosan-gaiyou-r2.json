@@ -1,0 +1,12 @@
+{
+  "sourceId": "tsukuba-yosan-gaiyou-r2",
+  "files": [
+    {
+      "filename": "gaiyou.pdf",
+      "sha256": "0471b291cfd5eb764b85609c6c0a68739594668c37dac3ac98d9e71201d1e753",
+      "bytes": 1147164,
+      "fetchedAt": "2026-08-23T13:42:51.846Z",
+      "fetchedFrom": "https://www.city.tsukuba.lg.jp/material/files/group/22/gaiyou.pdf"
+    }
+  ]
+}
