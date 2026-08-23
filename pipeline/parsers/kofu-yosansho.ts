@@ -956,8 +956,9 @@ function parseKanPage(
       const totalAmtIdx = opts.totalAmountIntIndex ?? opts.amountIntIndex;
       const totalPrevIdx = opts.totalPrevIntIndex ?? opts.prevIntIndex;
       if (totalAmtIdx != null && totalPrevIdx != null) {
-        // 列指定の様式は**合計行も同じ列構成**（Options.amountIntIndex 参照）。
-        // 款行と同じ添字を使い、範囲外なら throw する（＝静かに別の列を読ませない）。
+        // 既定では款行と同じ添字（列指定の様式は合計行も同じ列構成であることが多い。京都府で実測）。
+        // **合計行だけ列が違う様式**は上の `total*IntIndex` がこれを上書きする（豊橋）。
+        // どちらの経路でも範囲外なら throw する（＝静かに別の列を読ませない）。
         const pick = (idx: number, what: string): number => {
           const t = ints[idx];
           if (t == null) {

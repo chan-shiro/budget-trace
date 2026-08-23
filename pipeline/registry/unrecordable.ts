@@ -117,6 +117,16 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-8",
   },
   {
+    code: "302015", name: "和歌山市", dataset: "budget", fiscalYears: ["R3", "R2"],
+    categories: ["no-material"],
+    reason:
+      "2021-11-30 時点の予算インデックスには令和3年度・令和2年度の年度ページへのリンクがあったが、" +
+      "両ページとも現在 404 で、Wayback にも当該ページ・PDF の捕捉が1件も無い（CDX が空）。" +
+      "発行元から掲載が消えており、写しも見つからない。R8・R7 は同じ資料で収録済み。",
+    url: "https://www.city.wakayama.wakayama.jp/shisei/zaisei/1033880/index.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-8",
+  },
+  {
     code: "302015", name: "和歌山市", dataset: "budget", fiscalYears: ["R6", "R5", "R4"],
     categories: ["scanned-image"],
     reason:
@@ -124,6 +134,19 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
       "同じ年度の議会提出議案 PDF も同じスキャンで代替にならない。R3・R2 は年度ページが現行サイトから削除され" +
       "Wayback にも捕捉が無い。R8・R7 は同じ資料で収録済み。",
     url: "https://www.city.wakayama.wakayama.jp/shisei/zaisei/1033880/index.html",
+    checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-8",
+  },
+  {
+    code: "232017", name: "豊橋市", dataset: "budget", fiscalYears: ["R7", "R4", "R2"],
+    categories: ["parser-unsupported"],
+    reason:
+      "原典は健全だが既存パーサが款を取りこぼす。豊橋は前年度補正の前倒し繰越を含む額を括弧で上段に置く様式で、" +
+      "両年度とも括弧がある行は既存の折返し分岐が拾うのに、**片側だけ括弧の行**では款名行の整数が1個になり" +
+      "どの分岐にも入らず行ごと落ちる（R7 は歳出款2、R4 は歳入款16・21・23＋歳出款8・10、R2 は歳出款10。" +
+      "合計行が同じ形になる年度もある）。⚠ Σ が割れるので**パーサは throw し、静かには壊れない**。" +
+      "片側だけ括弧の行を組む opt-in を足せば開く見込みで、開けば豊橋は R8〜R2 の7年度が連続する。" +
+      "R8・R6・R5・R3 は同じ資料で収録済み。",
+    url: "https://www.city.toyohashi.lg.jp/8815.htm",
     checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-8",
   },
   {
