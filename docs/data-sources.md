@@ -6934,6 +6934,32 @@ R7 は市長選（2025年4月）の**骨格予算**で、R8 概要の「Ｒ７�
   パーサは **throw する**（静かには壊れない）。座標で行を組み直す改修を足せば開く。
 - **高知 R2・H31**／**四日市 H31**（`broken-text-layer` ほか）／**いわき H21**（原典の合計が誤植）。
 
+#### 魚拓
+
+43ソースを直列で登録し、**40件は原本・landing とも登録済み・sha256 の不一致0**。
+⚠ **四日市 R8・R7・R5 の原本だけ「未確認」で残っている** — 再試行の途中で **Internet Archive が
+「Temporarily Offline」を返した**（CDX も HTML のエラーページを返す状態）ため、その時点では登録も照合もできない。
+台帳（`data/archives.json`）に未確認として残るので**次回の `pipeline:archive` で自動的に再試行される**（静かには消えない）。
+3層のうち ①git raw と ③自サーバー配信は揃っている。
+⚠ **IA のダウン中は CDX の応答が JSON ではなく HTML になる**ので、「捕捉0件」と読み違えないこと
+（§9b の打ち切り判定と同じく、レスポンスの中身を見てから判断する）。
+
+#### 後回しにした年度（`unrecordable` ではない・URL をここに残す）
+
+**春日井 R2・R1** — 年度ページ・PDF とも発行元から 404 で、**Wayback の写しが唯一の経路**。
+偵察が try-parse で Σ 4系統差0 を実測しているので、足すこと自体はできる（今回は現行サイトから取れる R8〜R3 に絞った）。
+⚠ **歳出のファイル名が R2=`saisyutu` / R1=`saisyutsu` で違う**。⚠ Wayback を url に置くと `pipeline:archive` の
+対象外になるのは正常（§13-9 の高槻・大津と同じ）。
+
+| 年度 | 歳入（`id_` 付き実体 URL） | 歳出 | landing |
+| --- | --- | --- | --- |
+| R2 | `web/20240711215207id_/…/_page_/001/018/453/sainyuu.pdf` | `web/20240711215524id_/…/001/018/453/saisyutu.pdf` | `web/20250814204028/…/shisei/zaisei/yosan/1018453.html` |
+| R1 | `web/20240711215545id_/…/_page_/001/014/891/sainyuu.pdf` | `web/20240712173251id_/…/001/014/891/saisyutsu.pdf` | `web/20250114053532/…/shisei/zaisei/yosan/1014891.html` |
+
+（ホストは `https://web.archive.org/` ＋ `https://www.city.kasugai.lg.jp/_res/projects/default_project/`。
+`parserOptions` は R6〜R3 と同じ＝`revenueFile`/`expenditureFile` ＋ `revenueHeading:"歳入"` / `expenditureHeading:"歳"`。
+H30〜H22 も Wayback にあり、**H30 は偵察が try-parse で Σ 差0 を実測済み**。）
+
 #### 次に繋がる資料（在り処だけ確認・未収録）
 
 - **四日市**: 同じ PDF に**部局別「【主な事業】」箇条書き＝一般会計477件**と**1事業1ページの詳細票＝74件**
