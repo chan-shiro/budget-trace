@@ -125,6 +125,10 @@ const MUNI_SLUGS: Record<string, string> = {
   "112143": "kasukabe", // ⚠ 春日井市 232068 = "kasugai" と別物
   "282146": "takarazuka",
   "062014": "yamagata", // ⚠ 山形県 060003 は "ken" スラグなので衝突しない
+  "102059": "ota-gunma", // ⚠ 大田区 131113 が "ota" を使っているので衝突を避ける
+  "142123": "atsugi",
+  "022039": "hachinohe",
+  "132063": "fuchu-tokyo", // ⚠ 広島県府中市 342089 が未収録なだけなので `fuchu` 単独は使わない
   "232076": "toyokawa", "352039": "yamaguchi", "222038": "numazu", "272191": "izumi",
   // 政令指定都市（2026-07-15）
   "141003": "yokohama", "231002": "nagoya", "011002": "sapporo",
