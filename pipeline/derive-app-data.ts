@@ -2538,6 +2538,25 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ] as const).map((fy) => ({
       srcId: `chigasaki-yosan-soukatsu-${fy}`, muniCode: "142077", muniName: "茅ヶ崎市", prefName: "神奈川県", isPref: false,
     })),
+    // 調布市は H30 以前が旧ドメイン（未調査）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31"] as const).map((fy) => ({
+      srcId: `chofu-yosan-gaiyou-${fy}`, muniCode: "132080", muniName: "調布市", prefName: "東京都", isPref: false,
+    })),
+    // 下関市は R5〜R8 の総括 PDF がアウトライン化されているので、その4年度だけ概要ルート
+    ...(["r4", "r3", "r2", "h31", "h30", "h29", "h28", "h27", "h26", "h25", "h24", "h23", "h22", "h21"] as const).map((fy) => ({
+      srcId: `shimonoseki-yosansho-${fy}`, muniCode: "352012", muniName: "下関市", prefName: "山口県", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5"] as const).map((fy) => ({
+      srcId: `shimonoseki-yosan-gaiyou-${fy}`, muniCode: "352012", muniName: "下関市", prefName: "山口県", isPref: false,
+    })),
+    // 松本市は R2・H31・H30 が説明書未公開で主要事務事業説明資料ルート
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30"] as const).map((fy) => ({
+      srcId: `matsumoto-yosansho-${fy}`, muniCode: "202029", muniName: "松本市", prefName: "長野県", isPref: false,
+    })),
+    // 佐世保市は R3〜H24 の多くがスキャン画像
+    ...(["r8", "r7", "r6", "r5", "r4", "h25", "h23", "h21", "h20", "h19"] as const).map((fy) => ({
+      srcId: `sasebo-yosansetsumei-${fy}`, muniCode: "422029", muniName: "佐世保市", prefName: "長崎県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。

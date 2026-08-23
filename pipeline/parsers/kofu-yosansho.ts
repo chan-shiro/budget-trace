@@ -276,6 +276,27 @@ interface Options {
    */
   totalRowJoinSpacedDigits?: boolean;
   /**
+   * **合計行にラベルが1文字も無い様式**（2026-08-24・佐世保 R8〜R4・H25 の歳入）。
+   *
+   * 佐世保の「予算説明資料」歳入ページは、合計行の名前欄が**版面ごと空**で
+   * `133,877,303  100  2.7  3,582,505  130,294,798  100` の数字だけが並ぶ（歳出側には `合 計` がある）。
+   * 既存のパーサは合計ラベルを必須にしているので、そのままでは「合計 行が見つかりません」で throw する。
+   *
+   * ⚠⚠ **金額そのものを `revenueTotalLabel` に書く回避策を採らないこと** — 動きはする（発行元が数字を直せば
+   * throw するので静かには壊れない）が、**`revenueTotalLabel: "100"` のように短い数字を書くと
+   * `compact.includes(totalLabel)` の読み飛ばしに款行が巻き込まれて丸ごと落ちる**
+   * （佐世保 R8 で款1 市税・款7・款9・款23 が消えて Σ −44,621,701 になることを偵察が実測）。
+   *
+   * true にすると、その側だけ**「日本語を1文字も含まず整数が3個以上ある行のうち、先頭の整数がいちばん大きいもの」**を
+   * 合計行とみなす。**合計は定義上その表でいちばん大きい額**（款の和であり、内訳はその一部）という不変条件による。
+   *
+   * ⚠⚠ **位置（最初/最後）で決めてはいけない** — 実装時に両方を試して両方落ちた（詳細は使用箇所のコメント）。
+   *   条件を満たす行は**合計行だけではない**（合計の下に続く財源内訳の数字だけの行・折返し款の金額行も当たる）。
+   * ⚠ この不変条件が崩れる様式（負の合計・複数会計の混在）には使わない。
+   * ⚠⚠ **既定にしない**（opt-in）。ラベルのある様式に当てると、**表の下の集計行や注記の数字を合計と誤認しうる**。
+   */
+  totalNoLabel?: { revenue?: boolean; expenditure?: boolean };
+  /**
    * **前年度セルが完全な空欄の款**（側ごとに款番号で明示・2026-07-27・富山県 R8）。
    *
    * 富山の歳入款2「利子割清算金」は R8 新設で、前年度セルに **`－` すら印字されず**「皆増」の語も無い:
@@ -1010,7 +1031,43 @@ function parseKanPage(
     let bestStartsWithLabel = false;
     const startsWithLabel = (raw: string) =>
       raw.replace(/[\s　]/g, "").replace(/^[○◎●]+/, "").startsWith(totalLabel);
+    // **合計行にラベルが無い様式**（Options.totalNoLabel 参照・佐世保）。
+    // 日本語を含まず整数が3個以上ある行のうち、**先頭の整数がいちばん大きいもの**を合計行にする。
+    //
+    // ⚠⚠ **位置（最初/最後）で決めてはいけない**（2026-08-24 に両方試して両方落ちた）:
+    //   - **最後**を採ると、合計行の下に続く財源内訳・注記の**数字だけの行**を掴む
+    //     （佐世保 R7 は `臨時財政対策債を含む` の次行が `65,999,000 50.7 3.0 …` で Σ が 130,294,798 ずれた）。
+    //   - **最初**を採ると、**折返し款の金額行**（款名が上下段に割れて金額行だけ日本語を含まない）を掴む
+    //     （佐世保 R8 は款10 の金額行 `827,900 …` で Σ が 39,521,101 ずれた）。
+    // ⇒ **合計は定義上その表でいちばん大きい額**（款の和であり、内訳はその一部）なので、
+    //   先頭の整数の最大で選ぶ。⚠ この不変条件が崩れる様式（負の合計・複数会計の混在）には使わない。
+    // ⚠ どちらの誤りも **Σ が大きく割れて error になった**＝静かには壊れなかった。
+    const noLabel =
+      side === "revenue" ? opts.totalNoLabel?.revenue : opts.totalNoLabel?.expenditure;
+    if (noLabel) {
+      let bestFirst = -1;
+      for (let i = 0; i < allLines.length; i++) {
+        const raw = allLines[i]!;
+        if (raw.replace(/[\s　]/g, "") === "" || hasCJKChars(raw)) continue;
+        const ints = (stripPercents(raw).match(AMOUNT_RE) ?? []).filter((t) => !t.includes("."));
+        if (ints.length < 3) continue;
+        const first = Math.abs(Number(ints[0]!.replace(/[△▲,]/g, "")));
+        if (!Number.isFinite(first) || first <= bestFirst) continue;
+        bestFirst = first;
+        bestInts = ints.length;
+        totalIdx = i;
+        bestTokens = ints;
+        bestRaw = raw;
+        bestStartsWithLabel = true;
+      }
+      if (!bestTokens) {
+        throw new Error(
+          `${filename} ${pageLabel}: totalNoLabel を指定しましたが、日本語を含まず整数3個以上の行が見つかりません`,
+        );
+      }
+    }
     allLines.forEach((raw, i) => {
+      if (noLabel) return; // 合計行はラベル無しの経路で決めた
       if (!raw.replace(/[\s　]/g, "").includes(totalLabel)) return;
       // 構成比 100%（＝整数）が前年度合計に化けるのを防ぐ（stripPercents 参照）
       // `totalRowJoinSpacedDigits`（Options 参照）は**この合計行の判定にだけ**効かせる。
@@ -1373,7 +1430,15 @@ function parseKanPage(
       }
     } else if (pendNo != null && ints.length >= 2) {
       // 折返し款の金額行（行頭に款番号がない）
-      emit(pendNo, pendName + namePart, ints, raw);
+      // ⚠⚠ **`kanNameContinues` の下段待ちをここでも渡す**（2026-08-24・佐世保/松本/八尾）。
+      //   原典が `９ 国有提供施設等所在市町村` / 金額行 / `助成交付金` の**3行構成**になる様式では、
+      //   款行に金額が無いので上の `lead && ints>=2` の分岐に入らず**ここへ落ちる**。
+      //   従来はここで `awaitTail` を渡していなかったため、**下段 `助成交付金` が次の款の頭に漏れて
+      //   `助成交付金地方特例交付金` になる**（**Σ は4系統とも差0 のまま**＝目視でしか気づけない）。
+      //   ⚠ 逃がすと同じ款が資料ごとに `国有提供施設等` / `国有提供施設等所在市町村` / 完全形 の
+      //   **3通りの名前で画面に出る**（第16巡の目視で発覚）。
+      //   ⚠ `kanNameContinues` で款番号を明示した款だけが対象なので、既定の挙動は変わらない。
+      emit(pendNo, pendName + namePart, ints, raw, tailKans.has(pendNo));
     } else if (ints.length >= 2 && hasCJK(namePart)) {
       // 款番号が無く、どの款にも結び付かない金額行。**直後に款番号の単独行が来れば**
       // その款の上段（bare の分岐で拾う）。来なければ従来どおり無視される。

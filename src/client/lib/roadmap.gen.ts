@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 168,
+  "budgetCount": 172,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 1045,
-  "fileCount": 2233,
-  "archivedCount": 974,
+  "sourceCount": 1090,
+  "fileCount": 2278,
+  "archivedCount": 998,
   "licenseOpen": 98,
-  "licensePermission": 837,
+  "licensePermission": 882,
   "licenseUnverified": 110,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -71,6 +71,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "世田谷区",
       "code": "131121",
+      "years": 18,
+      "range": "H21〜R8（18年度）"
+    },
+    {
+      "name": "下関市",
+      "code": "352012",
       "years": 18,
       "range": "H21〜R8（18年度）"
     },
@@ -243,6 +249,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H29〜R8（10年度）"
     },
     {
+      "name": "佐世保市",
+      "code": "422029",
+      "years": 10,
+      "range": "H19〜R8（10年度）"
+    },
+    {
       "name": "大分市",
       "code": "442011",
       "years": 10,
@@ -253,6 +265,12 @@ export const ROADMAP_PROGRESS = {
       "code": "131164",
       "years": 9,
       "range": "H29〜R8（9年度）"
+    },
+    {
+      "name": "松本市",
+      "code": "202029",
+      "years": 9,
+      "range": "H30〜R8（9年度）"
     },
     {
       "name": "福山市",
@@ -283,6 +301,12 @@ export const ROADMAP_PROGRESS = {
       "code": "122041",
       "years": 8,
       "range": "R1〜R8（8年度）"
+    },
+    {
+      "name": "調布市",
+      "code": "132080",
+      "years": 8,
+      "range": "H31〜R8（8年度）"
     },
     {
       "name": "横須賀市",

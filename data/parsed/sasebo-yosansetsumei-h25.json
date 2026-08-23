@@ -1,0 +1,424 @@
+{
+  "docType": "budget-book",
+  "sourceId": "sasebo-yosansetsumei-h25",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-08-23T18:14:08.872Z",
+  "unit": "thousandYen",
+  "fiscalYear": "H25",
+  "account": "一般会計",
+  "revenueTotal": 112840235,
+  "expenditureTotal": 112840235,
+  "prevRevenueTotal": 112864379,
+  "prevExpenditureTotal": 112864379,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "市税",
+      "amount": 28000000,
+      "prevAmount": 28200000,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "地方譲与税",
+      "amount": 795000,
+      "prevAmount": 876000,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "利子割交付金",
+      "amount": 53000,
+      "prevAmount": 69000,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "配当割交付金",
+      "amount": 46000,
+      "prevAmount": 40000,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 5000,
+      "prevAmount": 10000,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "地方消費税交付金",
+      "amount": 2500000,
+      "prevAmount": 2464000,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "ゴルフ場利用税交付金",
+      "amount": 41000,
+      "prevAmount": 33000,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "自動車取得税交付金",
+      "amount": 155000,
+      "prevAmount": 127000,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "国有提供施設等所在市町村助成交付金",
+      "amount": 790000,
+      "prevAmount": 776000,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "地方特例交付金",
+      "amount": 99000,
+      "prevAmount": 102000,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "地方交付税",
+      "amount": 28550000,
+      "prevAmount": 28950000,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 44000,
+      "prevAmount": 44000,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "分担金及び負担金",
+      "amount": 2498915,
+      "prevAmount": 2433216,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "使用料及び手数料",
+      "amount": 1329768,
+      "prevAmount": 1613939,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "国庫支出金",
+      "amount": 17861126,
+      "prevAmount": 17915430,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "県支出金",
+      "amount": 7952614,
+      "prevAmount": 7832717,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 17,
+      "kanName": "財産収入",
+      "amount": 471820,
+      "prevAmount": 426284,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 18,
+      "kanName": "寄附金",
+      "amount": 8988,
+      "prevAmount": 11795,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 19,
+      "kanName": "繰入金",
+      "amount": 4873198,
+      "prevAmount": 4477662,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 20,
+      "kanName": "繰越金",
+      "amount": 56657,
+      "prevAmount": 488,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 21,
+      "kanName": "諸収入",
+      "amount": 6692249,
+      "prevAmount": 6755948,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 22,
+      "kanName": "市債",
+      "amount": 10016900,
+      "prevAmount": 9705900,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 663841,
+      "prevAmount": 673486,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 10798826,
+      "prevAmount": 11306961,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "民生費",
+      "amount": 40629336,
+      "prevAmount": 39865908,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "衛生費",
+      "amount": 12054803,
+      "prevAmount": 12255440,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "労働費",
+      "amount": 83158,
+      "prevAmount": 83931,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "農林水産業費",
+      "amount": 2661370,
+      "prevAmount": 2957015,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "商工費",
+      "amount": 8153807,
+      "prevAmount": 8339701,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "土木費",
+      "amount": 6984000,
+      "prevAmount": 6830737,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "港湾費",
+      "amount": 1945949,
+      "prevAmount": 2423139,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "消防費",
+      "amount": 4301195,
+      "prevAmount": 4295574,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 11,
+      "kanName": "教育費",
+      "amount": 11394116,
+      "prevAmount": 10543786,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 12,
+      "kanName": "災害復旧費",
+      "amount": 80000,
+      "prevAmount": 80000,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 13,
+      "kanName": "公債費",
+      "amount": 13008754,
+      "prevAmount": 13124262,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 14,
+      "kanName": "諸支出金",
+      "amount": 31080,
+      "prevAmount": 34439,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 15,
+      "kanName": "予備費",
+      "amount": 50000,
+      "prevAmount": 50000,
+      "locator": {
+        "file": "h25tousyoyosan_yosansetumei_1.pdf",
+        "page": 6
+      }
+    }
+  ]
+}
