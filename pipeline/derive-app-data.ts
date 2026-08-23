@@ -2446,6 +2446,20 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
       srcId: `kasugai-yosan-gaiyou-${fy}`, muniCode: "232068", muniName: "春日井市", prefName: "愛知県", isPref: false,
     })),
+    // 中核市など 第11弾（2026-08-23・loop.md の第12巡）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30"] as const).map((fy) => ({
+      srcId: `kurume-yosangaiyo-${fy}`, muniCode: "402036", muniName: "久留米市", prefName: "福岡県", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28", "h27", "h26", "h25"] as const).map((fy) => ({
+      srcId: `morioka-yosan-soukatsu-${fy}`, muniCode: "032018", muniName: "盛岡市", prefName: "岩手県", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31"] as const).map((fy) => ({
+      srcId: `akita-shi-yosansho-${fy}`, muniCode: "052019", muniName: "秋田市", prefName: "秋田県", isPref: false,
+    })),
+    // 津市は R5 以前が全ページ スキャン画像で収録不可
+    ...(["r8", "r7", "r6"] as const).map((fy) => ({
+      srcId: `tsu-shi-yosansho-${fy}`, muniCode: "242012", muniName: "津市", prefName: "三重県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。
