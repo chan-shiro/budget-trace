@@ -2596,6 +2596,36 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ] as const).map((fy) => ({
       srcId: `fuchu-tokyo-aramashi-${fy}`, muniCode: "132063", muniName: "府中市", prefName: "東京都", isPref: false,
     })),
+    // ⚠ 流山は R2 がパーサ側の宿題（当年度セルが空欄の廃止款）なので飛ばしている
+    ...([
+      "r8", "r7", "r6", "r5", "r4", "r3", "r1", "h30", "h29", "h28",
+      "h27", "h26", "h25", "h24", "h23", "h22", "h21", "h20",
+    ] as const).map((fy) => ({
+      srcId: `nagareyama-yosansho-${fy}`, muniCode: "122203", muniName: "流山市", prefName: "千葉県", isPref: false,
+    })),
+    // ⚠ 伊勢崎は H30・H28 が文字化けでパーサ側の宿題
+    ...([
+      "r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h29", "h27", "h26", "h25", "h24", "h23",
+    ] as const).map((fy) => ({
+      srcId: `isesaki-yosangaiyou-${fy}`, muniCode: "102041", muniName: "伊勢崎市", prefName: "群馬県", isPref: false,
+    })),
+    // ⚠ 呉は R3 がスキャン画像で鎖が切れる
+    ...(["r8", "r7", "r6", "r5", "r4", "r2"] as const).map((fy) => ({
+      srcId: `kure-yosan-kiso-${fy}`, muniCode: "342025", muniName: "呉市", prefName: "広島県", isPref: false,
+    })),
+    // ⚠ 西東京は R2 以前が WARP からの取得
+    ...([
+      "r8", "r7", "r6", "r5", "r4", "r3", "r2", "r1", "h30", "h29", "h28", "h27", "h26", "h25", "h24",
+    ] as const).map((fy) => ({
+      srcId: `nishitokyo-yosangaiyou-${fy}`, muniCode: "132292", muniName: "西東京市", prefName: "東京都", isPref: false,
+    })),
+    // ⚠ 八千代は H29 が収録不可なので H30↔H28 で鎖が切れる
+    ...([
+      "r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30",
+      "h28", "h27", "h26", "h25", "h24", "h23", "h22", "h21", "h18",
+    ] as const).map((fy) => ({
+      srcId: `yachiyo-yosangaiyou-${fy}`, muniCode: "122211", muniName: "八千代市", prefName: "千葉県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。
@@ -3663,6 +3693,12 @@ export const UNRECORDABLE_WHOLLY: Record<string, string[]> = ${JSON.stringify(wh
       }
       if (m.includes("款番号が連番ではありません")) {
         return "款の番号に欠番があります。資料どおりで、取りこぼしではありません。";
+      }
+      // 八千代（§13-19）— 原典が款番号順ではなく「自主財源→依存財源」の順に並べる様式。
+      // ⚠ 検証の原文は「行の取り違えの可能性」と書くが、**収録時に款番号と款名の対応を
+      //   全年度目視して実態どおりと確かめてある**。原文は残しつつ、その旨を市民向けに言い換える。
+      if (m.includes("款番号が昇順ではありません")) {
+        return "款が、番号の順ではなく資料の並び（市の自前の収入 → 国や県から来る収入、など）のまま載っています。資料どおりで、行の取り違えではありません。";
       }
       if (m.includes("予算額が0")) {
         return "予算額が0の事業が載っています。資料どおりです。";

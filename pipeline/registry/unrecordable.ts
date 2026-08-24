@@ -193,6 +193,45 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-17",
   },
   {
+    code: "342025", name: "呉市", dataset: "budget",
+    fiscalYears: ["R3"],
+    categories: ["scanned-image"],
+    reason:
+      "この年度は、款ごとの表が載る「当初予算基礎資料」も予算書も紙をスキャンした画像で、" +
+      "文字として取り出せる中身が無い（基礎資料は14ページに画像が14枚で14字。収録時に実測）。" +
+      "文字を読み取る処理もかかっていないため、数値を取り出す手立てがない。" +
+      "同じ年度の「当初予算のポイント」は文字が取れるものの、金額が百万円単位に丸められ、" +
+      "歳入の款が13にまとめられていて、款ごとの金額が合計と合わない。" +
+      "令和8年度から令和4年度と令和2年度は同じ資料で収録済み。",
+    url: "https://www.city.kure.lg.jp/soshiki/89/",
+    checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-19",
+  },
+  {
+    code: "122211", name: "八千代市", dataset: "budget",
+    fiscalYears: ["H29", "H19"],
+    categories: ["format-mismatch"],
+    reason:
+      "この2年度は冊子の「予算の概要」が発行されておらず、款ごとに前年度と比べられる表が無い。" +
+      "平成29年度は広報紙面をそのまま載せた1ページの資料で、会計ごとの総額と円グラフだけ" +
+      "（収録時に実測）。平成19年度はページに文章が載っているだけで資料そのものが無い。" +
+      "ほかの18年度は同じ「予算の概要」で収録済み。",
+    url: "https://www.city.yachiyo.lg.jp/site/yachiyo-zaisei/list265-335.html",
+    checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-19",
+  },
+  {
+    code: "122211", name: "八千代市", dataset: "budget",
+    fiscalYears: ["H20"],
+    categories: ["broken-text-layer"],
+    reason:
+      "この年度は資料に文字が入っているものの壊れていて、款の名前も見出しも読み取れない" +
+      "（款ごとの表のページから取り出せた漢字が0字。収録時に実測）。" +
+      "金額のほうは壊れていないが、どの款の金額なのかが判別できない。" +
+      "ほかの資料で使っている文字化けの復元表とも別の系統で、そのままでは戻せない。" +
+      "ほかの18年度は同じ「予算の概要」で収録済み。",
+    url: "https://www.city.yachiyo.lg.jp/site/yachiyo-zaisei/2451.html",
+    checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-19",
+  },
+  {
     code: "272159", name: "寝屋川市", dataset: "budget",
     fiscalYears: ["R8", "R7", "R6", "R5"],
     categories: ["format-mismatch", "scanned-image"],
