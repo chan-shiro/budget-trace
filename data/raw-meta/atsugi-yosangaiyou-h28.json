@@ -1,0 +1,12 @@
+{
+  "sourceId": "atsugi-yosangaiyou-h28",
+  "files": [
+    {
+      "filename": "gaiyou.pdf",
+      "sha256": "6afecd46b858d508bb1b9439cfeea40f48cd2618c6c11b0dd638346c66a599e9",
+      "bytes": 852374,
+      "fetchedAt": "2026-08-23T22:44:29.887Z",
+      "fetchedFrom": "https://www.city.atsugi.kanagawa.jp/material/files/group/11/gaiyou.pdf"
+    }
+  ]
+}

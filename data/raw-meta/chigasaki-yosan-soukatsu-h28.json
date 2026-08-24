@@ -1,0 +1,19 @@
+{
+  "sourceId": "chigasaki-yosan-soukatsu-h28",
+  "files": [
+    {
+      "filename": "sainyuu.pdf",
+      "sha256": "9f319f6728d69a8d69694d2bd34f66147feb795e262f0dbe0e6cb3c33c782093",
+      "bytes": 192108,
+      "fetchedAt": "2026-08-23T15:41:00.949Z",
+      "fetchedFrom": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/017/856/sainyuu.pdf"
+    },
+    {
+      "filename": "saisyutumokuteki.pdf",
+      "sha256": "d102cc3497ef6e4e02d60059a977bd2f8ceaa2fa21009517ab2fead3459c8b21",
+      "bytes": 196363,
+      "fetchedAt": "2026-08-23T15:41:01.302Z",
+      "fetchedFrom": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/017/856/saisyutumokuteki.pdf"
+    }
+  ]
+}

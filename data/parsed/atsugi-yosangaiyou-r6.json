@@ -1,0 +1,392 @@
+{
+  "docType": "budget-book",
+  "sourceId": "atsugi-yosangaiyou-r6",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-08-23T22:44:26.499Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R6",
+  "account": "一般会計",
+  "revenueTotal": 103800000,
+  "expenditureTotal": 103800000,
+  "prevRevenueTotal": 92300000,
+  "prevExpenditureTotal": 92300000,
+  "prevBasis": "当初",
+  "prevNote": "原典は前年度（令和5年度）の欄を「当初予算」「補正2号」「計」の3列に分け、本文では令和5年度本予算（当初＋6月補正）と比較している。ここでの前年度額は当初予算の列を採っている。令和5年度の当初予算は市長選のため骨格予算として編成されたもの。",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "市税",
+      "amount": 42968858,
+      "prevAmount": 43499657,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "地方譲与税",
+      "amount": 529866,
+      "prevAmount": 526210,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "利子割交付金",
+      "amount": 14000,
+      "prevAmount": 14000,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 18,
+      "kanName": "配当割交付金",
+      "amount": 202000,
+      "prevAmount": 202000,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 21,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 220000,
+      "prevAmount": 220000,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 23,
+      "kanName": "法人事業税交付金",
+      "amount": 835000,
+      "prevAmount": 815000,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 24,
+      "kanName": "地方消費税交付金",
+      "amount": 5800000,
+      "prevAmount": 5689000,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 27,
+      "kanName": "ゴルフ場利用税交付金",
+      "amount": 138000,
+      "prevAmount": 138000,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 31,
+      "kanName": "環境性能割交付金",
+      "amount": 118000,
+      "prevAmount": 118000,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 33,
+      "kanName": "地方特例交付金",
+      "amount": 1230000,
+      "prevAmount": 224000,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 35,
+      "kanName": "地方交付税",
+      "amount": 30000,
+      "prevAmount": 30000,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 40,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 38000,
+      "prevAmount": 38000,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 45,
+      "kanName": "分担金及び負担金",
+      "amount": 376890,
+      "prevAmount": 355485,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 50,
+      "kanName": "使用料及び手数料",
+      "amount": 1394971,
+      "prevAmount": 1390113,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 55,
+      "kanName": "国庫支出金",
+      "amount": 16524403,
+      "prevAmount": 14596129,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 60,
+      "kanName": "県支出金",
+      "amount": 6362941,
+      "prevAmount": 6044345,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 65,
+      "kanName": "財産収入",
+      "amount": 241218,
+      "prevAmount": 292258,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 70,
+      "kanName": "寄附金",
+      "amount": 1300000,
+      "prevAmount": 1300000,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 75,
+      "kanName": "繰入金",
+      "amount": 6434221,
+      "prevAmount": 3201824,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 80,
+      "kanName": "繰越金",
+      "amount": 2400000,
+      "prevAmount": 900000,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 85,
+      "kanName": "諸収入",
+      "amount": 4410732,
+      "prevAmount": 4034579,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 90,
+      "kanName": "市債",
+      "amount": 12230900,
+      "prevAmount": 8671400,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 9
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "議会費",
+      "amount": 460132,
+      "prevAmount": 454214,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 13
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "総務費",
+      "amount": 15194482,
+      "prevAmount": 9626855,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 13
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 15,
+      "kanName": "民生費",
+      "amount": 39614154,
+      "prevAmount": 37322147,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 13
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 20,
+      "kanName": "衛生費",
+      "amount": 10895669,
+      "prevAmount": 12392105,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 13
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 25,
+      "kanName": "労働費",
+      "amount": 308069,
+      "prevAmount": 234539,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 13
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 30,
+      "kanName": "農林水産業費",
+      "amount": 918420,
+      "prevAmount": 738135,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 13
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 35,
+      "kanName": "商工費",
+      "amount": 3043392,
+      "prevAmount": 3157715,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 13
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 40,
+      "kanName": "土木費",
+      "amount": 15053951,
+      "prevAmount": 11681848,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 13
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 45,
+      "kanName": "消防費",
+      "amount": 3416282,
+      "prevAmount": 3175080,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 13
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 50,
+      "kanName": "教育費",
+      "amount": 9235694,
+      "prevAmount": 8063700,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 13
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 60,
+      "kanName": "公債費",
+      "amount": 5559755,
+      "prevAmount": 5353662,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 13
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 70,
+      "kanName": "予備費",
+      "amount": 100000,
+      "prevAmount": 100000,
+      "locator": {
+        "file": "R06_budget-summary_atsugicity.pdf",
+        "page": 13
+      }
+    }
+  ]
+}

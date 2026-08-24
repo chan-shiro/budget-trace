@@ -129,6 +129,173 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     checkedOn: "2026-08-23", ref: "docs/data-sources.md §13-14",
   },
   {
+    code: "282146", name: "宝塚市", dataset: "budget",
+    fiscalYears: ["R3", "H21"],
+    categories: ["scanned-image"],
+    reason:
+      "この2年度は資料が全ページ スキャン画像で、文字として取り出せる中身が無い" +
+      "（令和3年度の予算説明書は640ページに画像が640枚で0字、平成21年度の予算編成大要は63ページに63枚で0字。収録時に実測）。" +
+      "令和3年度は予算の概要（16ページ・画像802枚・0字）も同じ状態で、代わりになる資料が無い。" +
+      "文字を読み取る処理もかかっていないため、数値を取り出す手立てがない。",
+    url: "https://www.city.takarazuka.hyogo.jp/1060687/1060727/1000137/1012635.html",
+    checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-17",
+  },
+  {
+    code: "282146", name: "宝塚市", dataset: "budget",
+    fiscalYears: ["R2", "H27", "H20"],
+    categories: ["broken-text-layer"],
+    reason:
+      "この3年度は資料に文字が入っているものの壊れていて、款の名前が1つも読み取れない" +
+      "（令和2年度は取り出した4万2千字のうち1万4千字が判読不能な記号、平成27年度と平成20年度は" +
+      "別の壊れ方で「市税」「議会費」「民生費」がいずれも0回。収録時に実測）。" +
+      "この年度の予算編成大要・予算説明書は発行元に無く、代わりになる資料が無い。",
+    url: "https://www.city.takarazuka.hyogo.jp/1060687/1060727/1000137/1012635.html",
+    checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-17",
+  },
+  {
+    code: "282146", name: "宝塚市", dataset: "budget",
+    fiscalYears: ["H31", "H30", "H29", "H28", "H26"],
+    categories: ["format-mismatch"],
+    reason:
+      "この5年度は予算の概要の文字は健全に取り出せるが、款ごとに金額を並べた表が入っていない" +
+      "（「民生費」と金額が同じ行に並ぶ箇所が、平成31年度の億円単位に丸めたグラフの1か所だけで、" +
+      "ほかの4年度は0か所。収録時に実測）。" +
+      "款ごとの表を載せている予算説明書と予算編成大要は、この年度は発行元に無い。",
+    url: "https://www.city.takarazuka.hyogo.jp/1060687/1060727/1000137/1012635.html",
+    checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-17",
+  },
+  {
+    code: "062014", name: "山形市", dataset: "budget",
+    fiscalYears: ["R6"],
+    categories: ["broken-text-layer"],
+    reason:
+      "この年度は候補になる資料がすべて読み取れない。当初予算の明細書と説明附属書は、" +
+      "紙に印刷すれば読めるが文字として取り出すと数字が1つも出てこない状態で作られている" +
+      "（収録時に実測。スキャン画像ではない）。内示会資料は集計表の部分だけが同じ状態で、" +
+      "議案の総括表には前年度と比べる列が無い。" +
+      "財政課の「財政状況 資料編」はこの年度の版が発行元から削除され、魚拓にも残っていない。" +
+      "令和8年度と令和7年度は同じ資料で収録済み。",
+    url: "https://www.city.yamagata-yamagata.lg.jp/shiseijoho/zaisei/1013833/index.html",
+    checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-17",
+  },
+  {
+    code: "112143", name: "春日部市", dataset: "budget",
+    fiscalYears: ["R7", "R5", "R4", "R3"],
+    categories: ["broken-text-layer"],
+    reason:
+      "「当初予算の概要」がこの4年度とも文字を図形に変換した状態で作られており、" +
+      "本文の文字が1つも取り出せない（抽出できる文字数は全ページ合計で48字・0字・0字・0字。収録時に実測）。" +
+      "スキャン画像ではないので読み取り誤りの心配は無いが、数値を取り出す手立てがない。" +
+      "同じ年度の予算書・事業別概要書も同じ状態で、代わりになる資料が無い。" +
+      "令和3年度のダイジェスト版は文字が取れるものの、金額が億円単位に丸められ小さい款が「その他」にまとめられている。" +
+      "令和8年度と令和6年度は同じ資料で収録済み。",
+    url: "https://www.city.kasukabe.lg.jp/shiseijoho/yosan_kessan_zaiseijokyo/8211.html",
+    checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-17",
+  },
+  {
+    code: "342025", name: "呉市", dataset: "budget",
+    fiscalYears: ["R3"],
+    categories: ["scanned-image"],
+    reason:
+      "この年度は、款ごとの表が載る「当初予算基礎資料」も予算書も紙をスキャンした画像で、" +
+      "文字として取り出せる中身が無い（基礎資料は14ページに画像が14枚で14字。収録時に実測）。" +
+      "文字を読み取る処理もかかっていないため、数値を取り出す手立てがない。" +
+      "同じ年度の「当初予算のポイント」は文字が取れるものの、金額が百万円単位に丸められ、" +
+      "歳入の款が13にまとめられていて、款ごとの金額が合計と合わない。" +
+      "令和8年度から令和4年度と令和2年度は同じ資料で収録済み。",
+    url: "https://www.city.kure.lg.jp/soshiki/89/",
+    checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-19",
+  },
+  {
+    code: "122211", name: "八千代市", dataset: "budget",
+    fiscalYears: ["H29", "H19"],
+    categories: ["format-mismatch"],
+    reason:
+      "この2年度は冊子の「予算の概要」が発行されておらず、款ごとに前年度と比べられる表が無い。" +
+      "平成29年度は広報紙面をそのまま載せた1ページの資料で、会計ごとの総額と円グラフだけ" +
+      "（収録時に実測）。平成19年度はページに文章が載っているだけで資料そのものが無い。" +
+      "ほかの18年度は同じ「予算の概要」で収録済み。",
+    url: "https://www.city.yachiyo.lg.jp/site/yachiyo-zaisei/list265-335.html",
+    checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-19",
+  },
+  {
+    code: "122211", name: "八千代市", dataset: "budget",
+    fiscalYears: ["H20"],
+    categories: ["broken-text-layer"],
+    reason:
+      "この年度は資料に文字が入っているものの壊れていて、款の名前も見出しも読み取れない" +
+      "（款ごとの表のページから取り出せた漢字が0字。収録時に実測）。" +
+      "金額のほうは壊れていないが、どの款の金額なのかが判別できない。" +
+      "ほかの資料で使っている文字化けの復元表とも別の系統で、そのままでは戻せない。" +
+      "ほかの18年度は同じ「予算の概要」で収録済み。",
+    url: "https://www.city.yachiyo.lg.jp/site/yachiyo-zaisei/2451.html",
+    checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-19",
+  },
+  {
+    code: "272159", name: "寝屋川市", dataset: "budget",
+    fiscalYears: ["R8", "R7", "R6", "R5"],
+    categories: ["format-mismatch", "scanned-image"],
+    reason:
+      "款ごとに前年度と比べられる資料が歳出の分しかなく、歳入の分が公開されていない。" +
+      "当初予算書は紙をスキャンした画像で、" +
+      "文字として取り出せる中身が無い（令和8年度の歳入の冊子は92ページに画像が92枚で0字、" + "令和8年度と令和7年度の議案の冊子も同じ状態。収録時に3冊を実測）。" +
+      "市のホームページに載っている歳入の内訳は7つに大きくまとめた円グラフの画像で、款ごとになっていない。" +
+      "オープンデータとして公開されている当初予算のデータも歳出の分だけで、" +
+      "一覧を検索しても歳入のデータは無い（収録時に実測）。" +
+      "款ごとの歳出と前年度当初との比較は「当初予算編成状況」の別紙4で読み取れるので、" +
+      "歳入の資料が公開されれば収録できる。",
+    url: "https://www.city.neyagawa.osaka.jp/organization_list/zaimu/zaiseika/yosan/toushoyosanhenseijyoukyou/index.html",
+    checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-18",
+  },
+  {
+    code: "412015", name: "佐賀市", dataset: "budget",
+    fiscalYears: ["R4", "R3"],
+    categories: ["scanned-image"],
+    reason:
+      "「当初予算の概要」がこの2年度とも全ページ スキャン画像で、1ページに画像が1枚ずつ入っており、" +
+      "文字として取り出せる中身が無い（令和4年度は17ページで17字、令和3年度は15ページで15字。収録時に実測）。" +
+      "文字を読み取る処理もかかっていないため、数値を取り出す手立てがない。" +
+      "同じ年度の別冊「当初予算資料」にも款ごとの表は入っていない。令和8年度と令和5年度は同じ資料で収録済み。",
+    url: "https://www.city.saga.lg.jp/shisei/gyoseiunei/5/1/index.html",
+    checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-17",
+  },
+  {
+    code: "422029", name: "佐世保市", dataset: "budget",
+    fiscalYears: ["R3", "R2", "H31", "H30", "H29", "H28", "H27", "H26", "H24"],
+    categories: ["scanned-image"],
+    reason:
+      "「当初予算説明資料」がこの9年度とも全ページ スキャン画像で、1ページに画像が1枚ずつ入っており、" +
+      "文字として取り出せる中身がほとんど無い（平成29年度に67字が残るほかは、空白を除くと0字）。" +
+      "文字を読み取る処理もかかっていないため、数値を取り出す手立てがない。収録時にすべての年度を取得して実測した。" +
+      "令和8〜4年度と平成25年度以前は同じ資料で収録済み。",
+    url: "https://www.city.sasebo.lg.jp/zaimu/zaisei/yosansetsumei.html",
+    checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-16",
+  },
+  {
+    code: "422029", name: "佐世保市", dataset: "budget",
+    fiscalYears: ["H22"],
+    categories: ["no-material"],
+    reason:
+      "この年度だけ「当初予算説明資料」が発行元に掲載されておらず、記者発表資料しかない。" +
+      "その記者発表資料には文字はあるが、款ごとの歳入歳出の表が含まれていない" +
+      "（「市税」「地方交付税」「議会費」「民生費」がいずれも0回。収録時に実測）。" +
+      "前後の年度は同じ資料の系列で収録済み。",
+    url: "https://www.city.sasebo.lg.jp/zaimu/zaisei/yosansetsumei.html",
+    checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-16",
+  },
+  {
+    code: "142077", name: "茅ヶ崎市", dataset: "budget",
+    fiscalYears: ["H25", "H23"],
+    categories: ["broken-text-layer"],
+    reason:
+      "歳入の総括表で、款16「財産収入」の金額の桁区切りのカンマだけが別の文字要素として下の行に落ちており、" +
+      "抽出すると金額が2行に割れてその款が丸ごと読み取れない（平成25年度は当年度48,475千円・前年度50,512千円、" +
+      "平成23年度は49,927千円・65,549千円が欠ける）。抽出方法を変えても合計行が見つからなくなるだけで解決しない。" +
+      "歳出側は同じ年度でも正常。前後の年度は同じ資料で収録済み。",
+    url: "https://www.city.chigasaki.kanagawa.jp/zaisei/1008506/index.html",
+    checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-15",
+  },
+  {
     code: "142034", name: "平塚市", dataset: "budget",
     fiscalYears: ["R8"],
     categories: ["scanned-image", "broken-text-layer"],

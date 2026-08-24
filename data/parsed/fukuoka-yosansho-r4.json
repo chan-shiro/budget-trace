@@ -3,7 +3,7 @@
   "sourceId": "fukuoka-yosansho-r4",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-08-23T06:27:40.221Z",
+  "parsedAt": "2026-08-23T16:43:42.246Z",
   "unit": "thousandYen",
   "fiscalYear": "R4",
   "account": "一般会計",
@@ -12,7 +12,7 @@
   "prevRevenueTotal": 1054544000,
   "prevExpenditureTotal": 1054544000,
   "prevBasis": "当初",
-  "prevNote": "令和4年度に環境局の所管する事業の一部が、保健医療局に移管されることに伴い、当該事業にかかる令和3年度予算",
+  "prevNote": "令和4年度に環境局の所管する事業の一部が、保健医療局に移管されることに伴い、当該事業にかかる令和3年度予算についても、保健医療局へ移替えしている。",
   "facts": [
     {
       "side": "revenue",

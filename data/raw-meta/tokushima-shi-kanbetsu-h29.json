@@ -1,0 +1,19 @@
+{
+  "sourceId": "tokushima-shi-kanbetsu-h29",
+  "files": [
+    {
+      "filename": "29ippannsainyuuutiwake.pdf",
+      "sha256": "d85e7d84d5995b35fb12a80d45c8acb264928722dabb7eb9cd48cf9c0616a95c",
+      "bytes": 57891,
+      "fetchedAt": "2026-08-23T15:27:01.018Z",
+      "fetchedFrom": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2019/29ippannsainyuu.files/29ippannsainyuuutiwake.pdf"
+    },
+    {
+      "filename": "29mokutekibetusaisyutu.pdf",
+      "sha256": "5db1022f329f42385fac944411daa30b67a64cfd6f8f9deab6fa6cae607c4b5b",
+      "bytes": 56330,
+      "fetchedAt": "2026-08-23T15:27:01.396Z",
+      "fetchedFrom": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2019/29mokutekisaisyutu.files/29mokutekibetusaisyutu.pdf"
+    }
+  ]
+}

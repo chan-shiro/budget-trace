@@ -261,6 +261,42 @@ interface Options {
    */
   totalAmountNextLine?: boolean;
   /**
+   * **合計行だけ数字の字間に空白が入る様式**（2026-08-24・大和 H31/R2〜R6）。
+   *
+   * 大和の「目的別歳出予算内訳」は**合計行だけが両端揃えで組まれ**、
+   * `合           計   8 7,18 0,0 00   100 .0   84,9 80 ,000` のように**数字の内側に空白が入る**
+   * （款行は無傷）。`AMOUNT_RE` が `8` と `7,18` に割れるため、記載合計が `8` になって
+   * **Σ が +87,179,992 のように桁違いにずれる**（＝大声で落ちるので静かには壊れない）。
+   * ⚠ `textSource: "raw"` では合計ラベルが金額行から3行離れて `totalAmountNextLine` でも届かない。
+   *
+   * true にすると**合計行に限り**、数字・カンマ・ピリオドに挟まれた半角空白1つを畳んでから金額を拾う。
+   *
+   * ⚠⚠ **既定にしない**（opt-in）。列の区切りが空白1つの様式では**隣の列と融合して別の数値を作る**。
+   * ⚠ **款行には当てない** — 款行が無傷な様式でしか要らないうえ、当てると副作用の面が広がる。
+   */
+  totalRowJoinSpacedDigits?: boolean;
+  /**
+   * **合計行にラベルが1文字も無い様式**（2026-08-24・佐世保 R8〜R4・H25 の歳入）。
+   *
+   * 佐世保の「予算説明資料」歳入ページは、合計行の名前欄が**版面ごと空**で
+   * `133,877,303  100  2.7  3,582,505  130,294,798  100` の数字だけが並ぶ（歳出側には `合 計` がある）。
+   * 既存のパーサは合計ラベルを必須にしているので、そのままでは「合計 行が見つかりません」で throw する。
+   *
+   * ⚠⚠ **金額そのものを `revenueTotalLabel` に書く回避策を採らないこと** — 動きはする（発行元が数字を直せば
+   * throw するので静かには壊れない）が、**`revenueTotalLabel: "100"` のように短い数字を書くと
+   * `compact.includes(totalLabel)` の読み飛ばしに款行が巻き込まれて丸ごと落ちる**
+   * （佐世保 R8 で款1 市税・款7・款9・款23 が消えて Σ −44,621,701 になることを偵察が実測）。
+   *
+   * true にすると、その側だけ**「日本語を1文字も含まず整数が3個以上ある行のうち、先頭の整数がいちばん大きいもの」**を
+   * 合計行とみなす。**合計は定義上その表でいちばん大きい額**（款の和であり、内訳はその一部）という不変条件による。
+   *
+   * ⚠⚠ **位置（最初/最後）で決めてはいけない** — 実装時に両方を試して両方落ちた（詳細は使用箇所のコメント）。
+   *   条件を満たす行は**合計行だけではない**（合計の下に続く財源内訳の数字だけの行・折返し款の金額行も当たる）。
+   * ⚠ この不変条件が崩れる様式（負の合計・複数会計の混在）には使わない。
+   * ⚠⚠ **既定にしない**（opt-in）。ラベルのある様式に当てると、**表の下の集計行や注記の数字を合計と誤認しうる**。
+   */
+  totalNoLabel?: { revenue?: boolean; expenditure?: boolean };
+  /**
    * **前年度セルが完全な空欄の款**（側ごとに款番号で明示・2026-07-27・富山県 R8）。
    *
    * 富山の歳入款2「利子割清算金」は R8 新設で、前年度セルに **`－` すら印字されず**「皆増」の語も無い:
@@ -540,10 +576,30 @@ const toHalfDigits = (s: string): string =>
  * ⚠ **1文字ずつ足すと同じ穴を繰り返す**ので、×類は U+00D7 / U+2715 / U+2716 / U+2717 / U+2718 / U+2613 と
  * ASCII の `x` `X` まで**クラスごと**書く。マーカー直後のピリオド（`×.`）も落とす — 款番号欄に置かれる
  * 記号なので、原典が款番号の書式（`1.`）に合わせて点を打つことがある。
+ * ⚠ **裸の `廃` ＋空白**（太田 R2 の `廃 自動車取得税交付金`）も落とす。
+ * ⚠⚠ **`廃棄物処理費` を巻き込まない理由は「後ろの空白」ではない** — このコードベースが繰り返し踏んでいる
+ * **分かち書き様式**（堺 `ゴ ル フ 場 利 用 税`・杉並 `株 式 等 譲 渡`）では `廃 棄 物 …` と印字されうるので、
+ * 空白の lookahead は防壁にならない。**実際の防壁は `!lead`**（款番号が取れた行は abolished 分岐に入らない）
+ * **と「款レベルに `廃` で始まる款名が実在しない」こと**（全 parsed を走査して0件を確認済み）。
+ * ⚠⚠ **この `廃(?=[\s　])` 系の分岐は掃除側では死にコード**（掃除は空白を畳んだ款名に当たる）。
+ * 掃除は下の `BARE_ABOLISHED_MARK_RE` が担う。**流用するときは当てる文字列を必ず確かめること**。
+ * ⚠ **1文字ずつ足すと同じ穴を2度踏む**ので、`廃` / `廃止` / `廃款` をまとめて入れてある。
  * ⚠ **`△` は負号にも使われる**が、この正規表現は**行頭かつ款番号が取れなかった行**にしか当たらない
  * （`abolished` の条件が `!lead`）ので、金額の `△ 1,234` を巻き込まない。
  */
-const ABOLISHED_MARK_RE = /^\s*(?:廃款|[（(]\s*廃\s*[）)]|[△▲〇○×✕✖✗✘☓xX])\s*[.．]?/;
+const ABOLISHED_MARK_RE =
+  /^\s*(?:廃款|廃止(?=[\s　])|廃(?=[\s　])|[（(]\s*廃\s*[）)]|[△▲〇○×✕✖✗✘☓xX])\s*[.．]?/;
+
+/**
+ * **裸の廃止マーカー**（`廃 自動車取得税交付金`）を **raw の行**で見分けるための正規表現。
+ *
+ * ⚠⚠ **掃除側（`namePart`）は空白が畳まれた後**なので `廃自動車取得税交付金` になっており、
+ * `ABOLISHED_MARK_RE` の `廃(?=[\s　])` は**掃除側では絶対に当たらない**（2026-08-24・太田 R2）。
+ * かといって掃除側で空白なしの `^廃` を落とすと、**`廃棄物処理費` のような正規の款名を壊す**。
+ * ⇒ **判定は空白の残っている raw で行い、掃除は namePart に対して行う**という二段構えにする。
+ * ⚠ **検出側と掃除側で見ている文字列が違う**のが事故の元（§9c の「掃除側と検出側の間でも揺れる」）。
+ */
+const BARE_ABOLISHED_MARK_RE = /^\s*廃(?:止)?[\s　]/;
 
 const hasCJKChars = (s: string): boolean => /[぀-ヿ㐀-鿿々〆ヶ]/.test(s);
 
@@ -995,10 +1051,50 @@ function parseKanPage(
     let bestStartsWithLabel = false;
     const startsWithLabel = (raw: string) =>
       raw.replace(/[\s　]/g, "").replace(/^[○◎●]+/, "").startsWith(totalLabel);
+    // **合計行にラベルが無い様式**（Options.totalNoLabel 参照・佐世保）。
+    // 日本語を含まず整数が3個以上ある行のうち、**先頭の整数がいちばん大きいもの**を合計行にする。
+    //
+    // ⚠⚠ **位置（最初/最後）で決めてはいけない**（2026-08-24 に両方試して両方落ちた）:
+    //   - **最後**を採ると、合計行の下に続く財源内訳・注記の**数字だけの行**を掴む
+    //     （佐世保 R7 は `臨時財政対策債を含む` の次行が `65,999,000 50.7 3.0 …` で Σ が 130,294,798 ずれた）。
+    //   - **最初**を採ると、**折返し款の金額行**（款名が上下段に割れて金額行だけ日本語を含まない）を掴む
+    //     （佐世保 R8 は款10 の金額行 `827,900 …` で Σ が 39,521,101 ずれた）。
+    // ⇒ **合計は定義上その表でいちばん大きい額**（款の和であり、内訳はその一部）なので、
+    //   先頭の整数の最大で選ぶ。⚠ この不変条件が崩れる様式（負の合計・複数会計の混在）には使わない。
+    // ⚠ どちらの誤りも **Σ が大きく割れて error になった**＝静かには壊れなかった。
+    const noLabel =
+      side === "revenue" ? opts.totalNoLabel?.revenue : opts.totalNoLabel?.expenditure;
+    if (noLabel) {
+      let bestFirst = -1;
+      for (let i = 0; i < allLines.length; i++) {
+        const raw = allLines[i]!;
+        if (raw.replace(/[\s　]/g, "") === "" || hasCJKChars(raw)) continue;
+        const ints = (stripPercents(raw).match(AMOUNT_RE) ?? []).filter((t) => !t.includes("."));
+        if (ints.length < 3) continue;
+        const first = Math.abs(Number(ints[0]!.replace(/[△▲,]/g, "")));
+        if (!Number.isFinite(first) || first <= bestFirst) continue;
+        bestFirst = first;
+        bestInts = ints.length;
+        totalIdx = i;
+        bestTokens = ints;
+        bestRaw = raw;
+        bestStartsWithLabel = true;
+      }
+      if (!bestTokens) {
+        throw new Error(
+          `${filename} ${pageLabel}: totalNoLabel を指定しましたが、日本語を含まず整数3個以上の行が見つかりません`,
+        );
+      }
+    }
     allLines.forEach((raw, i) => {
+      if (noLabel) return; // 合計行はラベル無しの経路で決めた
       if (!raw.replace(/[\s　]/g, "").includes(totalLabel)) return;
       // 構成比 100%（＝整数）が前年度合計に化けるのを防ぐ（stripPercents 参照）
-      let ints = (stripPercents(raw).match(AMOUNT_RE) ?? []).filter((t) => !t.includes("."));
+      // `totalRowJoinSpacedDigits`（Options 参照）は**この合計行の判定にだけ**効かせる。
+      const forAmount = opts.totalRowJoinSpacedDigits
+        ? raw.replace(/(?<=[\d,.]) (?=[\d,.])/g, "")
+        : raw;
+      let ints = (stripPercents(forAmount).match(AMOUNT_RE) ?? []).filter((t) => !t.includes("."));
       // 合計ラベルと金額が別行の様式（Options.totalAmountNextLine 参照）
       if (opts.totalAmountNextLine && ints.length < 2) {
         const next = allLines.slice(i + 1).find((l) => l.replace(/[\s　]/g, "") !== "");
@@ -1064,9 +1160,28 @@ function parseKanPage(
   // 既存の正当な注記は全件が年度に言及している（甲府 R6「令和5年度当初予算額は…」・
   // 千代田 R4「令和3年度予算額は…」・福岡 R4「令和4年度に…令和3年度予算」）ので回帰しない。
   const PREV_NOTE_RE = /前年度|[令和平成\d]+\d年度|\d+年度/;
-  for (const l of allLines) {
-    const c = l.replace(/[\s　]/g, "");
-    if (c.startsWith("※") && c.includes("予算") && PREV_NOTE_RE.test(c)) { prevNote = c.slice(1); break; }
+  for (let i = 0; i < allLines.length; i++) {
+    const c = allLines[i]!.replace(/[\s　]/g, "");
+    if (!(c.startsWith("※") && c.includes("予算") && PREV_NOTE_RE.test(c))) continue;
+    let note = c.slice(1);
+    // ⚠⚠ **折返した注記の続きを連結する**（2026-08-24・茅ヶ崎 R5／福岡 R4）。
+    //   従来は1物理行だけを拾っていたため、原典が2行に折り返している注記が
+    //   **文の途中で切れたまま画面の「※資料注記」に出ていた**
+    //   （茅ヶ崎 R5 は `…名称を変えて総` で終わり、落ちた後半こそ
+    //   「民生費→総務費/教育費の科目移動」＝款別増減の読み方に効く実質部分だった）。
+    //   ⚠ 金額でも款名でもないので **Σ も款名重複ゲートも守ってくれない**＝画面を見るしかない領域。
+    // **句点で終わっていない間だけ**続きを足す。⚠ 止める条件を3つ持つ:
+    //   ①空行（表の区切り）②次の `※`（別の注記）③日本語を含まない行（金額行・罫線）。
+    //   ⚠ さらに**2行まで**に制限する — 止め条件を抜けたときに表の残り全部を飲み込ませない。
+    for (let j = i + 1, joined = 0; j < allLines.length && joined < 2; j++) {
+      if (/[。）]$/.test(note)) break;
+      const nx = allLines[j]!.replace(/[\s　]/g, "");
+      if (nx === "" || nx.startsWith("※") || !hasCJKChars(nx)) break;
+      note += nx;
+      joined++;
+    }
+    prevNote = note;
+    break;
   }
 
   for (let li = 0; li < allLines.length; li++) {
@@ -1263,7 +1378,11 @@ function parseKanPage(
       //   検出は `皆減` が担うので Σ は差0 のまま通り、**款名だけが `(廃)環境性能割交付金` になる**
       //   ＝目視でしか気づけない型。⚠ `kanNamePrefixStrip` は先頭1文字の文字クラス専用なので届かない。
       //   ⚠ 括弧は半角・全角の両方が来うるので**文字クラスごと**書く（§9c の「1つ踏んだら周辺も来る」）。
-      const cleaned = namePart
+      // **裸の `廃`**（太田 R2 の `廃 自動車取得税交付金`）は raw で見分けてから落とす
+      //   （BARE_ABOLISHED_MARK_RE の説明を参照。掃除側は空白が畳まれていて判別できない）。
+      const cleaned = (
+        BARE_ABOLISHED_MARK_RE.test(raw) ? namePart.replace(/^廃(?:止)?/, "") : namePart
+      )
         .replace(ABOLISHED_MARK_RE, "")
         .replace(/[○〇]$/, "")
         .replace(/[-‐‑‒–—―−－─━]/g, "");
@@ -1335,7 +1454,15 @@ function parseKanPage(
       }
     } else if (pendNo != null && ints.length >= 2) {
       // 折返し款の金額行（行頭に款番号がない）
-      emit(pendNo, pendName + namePart, ints, raw);
+      // ⚠⚠ **`kanNameContinues` の下段待ちをここでも渡す**（2026-08-24・佐世保/松本/八尾）。
+      //   原典が `９ 国有提供施設等所在市町村` / 金額行 / `助成交付金` の**3行構成**になる様式では、
+      //   款行に金額が無いので上の `lead && ints>=2` の分岐に入らず**ここへ落ちる**。
+      //   従来はここで `awaitTail` を渡していなかったため、**下段 `助成交付金` が次の款の頭に漏れて
+      //   `助成交付金地方特例交付金` になる**（**Σ は4系統とも差0 のまま**＝目視でしか気づけない）。
+      //   ⚠ 逃がすと同じ款が資料ごとに `国有提供施設等` / `国有提供施設等所在市町村` / 完全形 の
+      //   **3通りの名前で画面に出る**（第16巡の目視で発覚）。
+      //   ⚠ `kanNameContinues` で款番号を明示した款だけが対象なので、既定の挙動は変わらない。
+      emit(pendNo, pendName + namePart, ints, raw, tailKans.has(pendNo));
     } else if (ints.length >= 2 && hasCJK(namePart)) {
       // 款番号が無く、どの款にも結び付かない金額行。**直後に款番号の単独行が来れば**
       // その款の上段（bare の分岐で拾う）。来なければ従来どおり無視される。

@@ -1,0 +1,19 @@
+{
+  "sourceId": "chigasaki-yosan-soukatsu-h24",
+  "files": [
+    {
+      "filename": "H24ippannkaikeisainyuu.pdf",
+      "sha256": "ac685f5dc6b9c11c611f5889cdf729f9bc843caa941e52a2d50b8c157e407f8a",
+      "bytes": 193216,
+      "fetchedAt": "2026-08-23T15:41:03.814Z",
+      "fetchedFrom": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/008/541/H24ippannkaikeisainyuu.pdf"
+    },
+    {
+      "filename": "H24ippannkaikeisaisyutumokuteki.pdf",
+      "sha256": "9d051624b966f0d85fe77c81480a091240567a4ffaf57429ac12383a14d887a7",
+      "bytes": 194630,
+      "fetchedAt": "2026-08-23T15:41:04.161Z",
+      "fetchedFrom": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/008/541/H24ippannkaikeisaisyutumokuteki.pdf"
+    }
+  ]
+}

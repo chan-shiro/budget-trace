@@ -1,0 +1,19 @@
+{
+  "sourceId": "tokushima-shi-kanbetsu-h24",
+  "files": [
+    {
+      "filename": "02-2.pdf",
+      "sha256": "12b6f2b534990d7617817124ddaac6bf30fe35dbae4d0dd77271cd44ca31ba56",
+      "bytes": 79147,
+      "fetchedAt": "2026-08-23T15:27:07.231Z",
+      "fetchedFrom": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2012/sainyu_uchiwake.files/02-2.pdf"
+    },
+    {
+      "filename": "02-3.pdf",
+      "sha256": "fa1379a6d2f0aa8372471be9097a46d80f2481919f8afd82bdf5b9e8e6a7b485",
+      "bytes": 77519,
+      "fetchedAt": "2026-08-23T15:27:07.617Z",
+      "fetchedFrom": "https://www.city.tokushima.tokushima.jp/shisei/zaisei/yosan/yosan_jokyou/2012/mokuteki.files/02-3.pdf"
+    }
+  ]
+}

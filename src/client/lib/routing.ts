@@ -111,6 +111,29 @@ const MUNI_SLUGS: Record<string, string> = {
   "182010": "fukui",
   "152021": "nagaoka",
   "282103": "kakogawa",
+  "362018": "tokushima",
+  "112216": "soka",
+  "142131": "yamato",
+  "222101": "fuji",
+  "142077": "chigasaki",
+  "132080": "chofu",
+  "352012": "shimonoseki",
+  "202029": "matsumoto",
+  "422029": "sasebo",
+  "112194": "ageo",
+  "412015": "saga", // ⚠ 佐賀県 410004 は "ken" スラグなので衝突しない
+  "112143": "kasukabe", // ⚠ 春日井市 232068 = "kasugai" と別物
+  "282146": "takarazuka",
+  "062014": "yamagata", // ⚠ 山形県 060003 は "ken" スラグなので衝突しない
+  "102059": "ota-gunma", // ⚠ 大田区 131113 が "ota" を使っているので衝突を避ける
+  "142123": "atsugi",
+  "022039": "hachinohe",
+  "132063": "fuchu-tokyo", // ⚠ 広島県府中市 342084 が未収録なだけなので `fuchu` 単独は使わない
+  "122203": "nagareyama",
+  "102041": "isesaki",
+  "342025": "kure",
+  "132292": "nishitokyo",
+  "122211": "yachiyo",
   "232076": "toyokawa", "352039": "yamaguchi", "222038": "numazu", "272191": "izumi",
   // 政令指定都市（2026-07-15）
   "141003": "yokohama", "231002": "nagoya", "011002": "sapporo",

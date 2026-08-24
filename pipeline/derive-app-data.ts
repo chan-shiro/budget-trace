@@ -2509,6 +2509,123 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `kakogawa-yosanpoint-${fy}`, muniCode: "282103", muniName: "加古川市", prefName: "兵庫県", isPref: false,
     })),
+    // 徳島市は市長選が4年ごと（H24・H28・R2・R6 が骨格予算）で、その翌年度の前年度列は肉付補正後
+    ...([
+      "r8", "r7", "r6", "r5", "r4", "r3", "r2",
+      "h31", "h30", "h29", "h28", "h27", "h26", "h25", "h24",
+    ] as const).map((fy) => ({
+      srcId: `tokushima-shi-kanbetsu-${fy}`, muniCode: "362018", muniName: "徳島市", prefName: "徳島県", isPref: false,
+    })),
+    // 草加市は市議会サイトの参考資料が R8〜R6 の3年度だけ（予算書は罫線セルでパーサ側の宿題）
+    ...(["r8", "r7", "r6"] as const).map((fy) => ({
+      srcId: `soka-yosan-sankou-${fy}`, muniCode: "112216", muniName: "草加市", prefName: "埼玉県", isPref: false,
+    })),
+    // 大和市は H27 以前に歳入の款別表が無い
+    ...([
+      "r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28",
+    ] as const).map((fy) => ({
+      srcId: `yamato-yosan-fuzoku-${fy}`, muniCode: "142131", muniName: "大和市", prefName: "神奈川県", isPref: false,
+    })),
+    ...([
+      "r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29",
+    ] as const).map((fy) => ({
+      srcId: `fuji-shi-yosan-fuzoku-${fy}`, muniCode: "222101", muniName: "富士市", prefName: "静岡県", isPref: false,
+    })),
+    // 茅ヶ崎市は H25・H23 が収録不可、H20 以前は PDF が無く HTML 表のみ
+    ...([
+      "r8", "r7", "r6", "r5", "r4", "r3", "r2", "r1",
+      "h30", "h29", "h28", "h27", "h26", "h24", "h22", "h21",
+    ] as const).map((fy) => ({
+      srcId: `chigasaki-yosan-soukatsu-${fy}`, muniCode: "142077", muniName: "茅ヶ崎市", prefName: "神奈川県", isPref: false,
+    })),
+    // 調布市は H30 以前が旧ドメイン（未調査）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31"] as const).map((fy) => ({
+      srcId: `chofu-yosan-gaiyou-${fy}`, muniCode: "132080", muniName: "調布市", prefName: "東京都", isPref: false,
+    })),
+    // 下関市は R5〜R8 の総括 PDF がアウトライン化されているので、その4年度だけ概要ルート
+    ...(["r4", "r3", "r2", "h31", "h30", "h29", "h28", "h27", "h26", "h25", "h24", "h23", "h22", "h21"] as const).map((fy) => ({
+      srcId: `shimonoseki-yosansho-${fy}`, muniCode: "352012", muniName: "下関市", prefName: "山口県", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5"] as const).map((fy) => ({
+      srcId: `shimonoseki-yosan-gaiyou-${fy}`, muniCode: "352012", muniName: "下関市", prefName: "山口県", isPref: false,
+    })),
+    // 松本市は R2・H31・H30 が説明書未公開で主要事務事業説明資料ルート
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30"] as const).map((fy) => ({
+      srcId: `matsumoto-yosansho-${fy}`, muniCode: "202029", muniName: "松本市", prefName: "長野県", isPref: false,
+    })),
+    // 佐世保市は R3〜H24 の多くがスキャン画像
+    ...(["r8", "r7", "r6", "r5", "r4", "h25", "h23", "h21", "h20", "h19"] as const).map((fy) => ({
+      srcId: `sasebo-yosansetsumei-${fy}`, muniCode: "422029", muniName: "佐世保市", prefName: "長崎県", isPref: false,
+    })),
+    // 上尾市（R3 は修正後の差替えファイルを使う）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `ageo-yosan-gaiyou-${fy}`, muniCode: "112194", muniName: "上尾市", prefName: "埼玉県", isPref: false,
+    })),
+    // 佐賀市は R7・R6 が文字化け（パーサ側の宿題）・R4/R3 がスキャン画像
+    ...(["r8", "r5"] as const).map((fy) => ({
+      srcId: `saga-shi-yosan-gaiyou-${fy}`, muniCode: "412015", muniName: "佐賀市", prefName: "佐賀県", isPref: false,
+    })),
+    // 春日部市は R7・R5〜R3 が本文アウトライン化
+    ...(["r8", "r6"] as const).map((fy) => ({
+      srcId: `kasukabe-yosan-gaiyou-${fy}`, muniCode: "112143", muniName: "春日部市", prefName: "埼玉県", isPref: false,
+    })),
+    // 宝塚市は R8〜R4 が予算説明書ルート・H25〜H17 が予算編成大要ルート（見出しも合計ラベルも別）
+    ...(["r8", "r7", "r6", "r5", "r4", "h25", "h24", "h23", "h22", "h19", "h18", "h17"] as const).map((fy) => ({
+      srcId: `takarazuka-yosansho-${fy}`, muniCode: "282146", muniName: "宝塚市", prefName: "兵庫県", isPref: false,
+    })),
+    // 山形市は明細書が使えず財政課「財政状況 資料編」ルート（R7 版は発行元が上書きしたので魚拓から）
+    ...(["r8", "r7"] as const).map((fy) => ({
+      srcId: `yamagata-shi-zaisei-siryou-${fy}`, muniCode: "062014", muniName: "山形市", prefName: "山形県", isPref: false,
+    })),
+    // ⚠ 太田市（群馬 102059）は大田区（東京 131113・スラグ `ota`）と別団体。スラグは `ota-gunma`
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30"] as const).map((fy) => ({
+      srcId: `otagunma-yosangaiyou-${fy}`, muniCode: "102059", muniName: "太田市", prefName: "群馬県", isPref: false,
+    })),
+    // ⚠ 厚木は R5 に肉付後版の別 PDF があるので、当初版を使っていることを年度追加のたびに確かめる
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "r1", "h30", "h29", "h28"] as const).map((fy) => ({
+      srcId: `atsugi-yosangaiyou-${fy}`, muniCode: "142123", muniName: "厚木市", prefName: "神奈川県", isPref: false,
+    })),
+    // ⚠ 八戸の R3 は現行サイトから消えており魚拓からのみ取得している
+    ...(["r8", "r7", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
+      srcId: `hachinohe-yosan-gaiyou-${fy}`, muniCode: "022039", muniName: "八戸市", prefName: "青森県", isPref: false,
+    })),
+    // ⚠ 東京都府中市 132063。広島県府中市 342084 とは別団体なのでスラグは `fuchu-tokyo`
+    ...([
+      "r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29",
+      "h28", "h27", "h26", "h25", "h24", "h23", "h22",
+    ] as const).map((fy) => ({
+      srcId: `fuchu-tokyo-aramashi-${fy}`, muniCode: "132063", muniName: "府中市", prefName: "東京都", isPref: false,
+    })),
+    // ⚠ 流山は R2 がパーサ側の宿題（当年度セルが空欄の廃止款）なので飛ばしている
+    ...([
+      "r8", "r7", "r6", "r5", "r4", "r3", "r1", "h30", "h29", "h28",
+      "h27", "h26", "h25", "h24", "h23", "h22", "h21", "h20",
+    ] as const).map((fy) => ({
+      srcId: `nagareyama-yosansho-${fy}`, muniCode: "122203", muniName: "流山市", prefName: "千葉県", isPref: false,
+    })),
+    // ⚠ 伊勢崎は H30・H28 が文字化けでパーサ側の宿題
+    ...([
+      "r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h29", "h27", "h26", "h25", "h24", "h23",
+    ] as const).map((fy) => ({
+      srcId: `isesaki-yosangaiyou-${fy}`, muniCode: "102041", muniName: "伊勢崎市", prefName: "群馬県", isPref: false,
+    })),
+    // ⚠ 呉は R3 がスキャン画像で鎖が切れる
+    ...(["r8", "r7", "r6", "r5", "r4", "r2"] as const).map((fy) => ({
+      srcId: `kure-yosan-kiso-${fy}`, muniCode: "342025", muniName: "呉市", prefName: "広島県", isPref: false,
+    })),
+    // ⚠ 西東京は R2 以前が WARP からの取得
+    ...([
+      "r8", "r7", "r6", "r5", "r4", "r3", "r2", "r1", "h30", "h29", "h28", "h27", "h26", "h25", "h24",
+    ] as const).map((fy) => ({
+      srcId: `nishitokyo-yosangaiyou-${fy}`, muniCode: "132292", muniName: "西東京市", prefName: "東京都", isPref: false,
+    })),
+    // ⚠ 八千代は H29 が収録不可なので H30↔H28 で鎖が切れる
+    ...([
+      "r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30",
+      "h28", "h27", "h26", "h25", "h24", "h23", "h22", "h21", "h18",
+    ] as const).map((fy) => ({
+      srcId: `yachiyo-yosangaiyou-${fy}`, muniCode: "122211", muniName: "八千代市", prefName: "千葉県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。
@@ -3576,6 +3693,12 @@ export const UNRECORDABLE_WHOLLY: Record<string, string[]> = ${JSON.stringify(wh
       }
       if (m.includes("款番号が連番ではありません")) {
         return "款の番号に欠番があります。資料どおりで、取りこぼしではありません。";
+      }
+      // 八千代（§13-19）— 原典が款番号順ではなく「自主財源→依存財源」の順に並べる様式。
+      // ⚠ 検証の原文は「行の取り違えの可能性」と書くが、**収録時に款番号と款名の対応を
+      //   全年度目視して実態どおりと確かめてある**。原文は残しつつ、その旨を市民向けに言い換える。
+      if (m.includes("款番号が昇順ではありません")) {
+        return "款が、番号の順ではなく資料の並び（市の自前の収入 → 国や県から来る収入、など）のまま載っています。資料どおりで、行の取り違えではありません。";
       }
       if (m.includes("予算額が0")) {
         return "予算額が0の事業が載っています。資料どおりです。";
