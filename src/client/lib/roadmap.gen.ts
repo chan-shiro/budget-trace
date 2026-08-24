@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 181,
+  "budgetCount": 186,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 1158,
-  "fileCount": 2348,
-  "archivedCount": 1045,
+  "sourceCount": 1229,
+  "fileCount": 2419,
+  "archivedCount": 1092,
   "licenseOpen": 98,
-  "licensePermission": 950,
+  "licensePermission": 1021,
   "licenseUnverified": 110,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -61,6 +61,18 @@ export const ROADMAP_PROGRESS = {
       "code": "122190",
       "years": 18,
       "range": "H21〜R8（18年度）"
+    },
+    {
+      "name": "流山市",
+      "code": "122203",
+      "years": 18,
+      "range": "H20〜R8（18年度）"
+    },
+    {
+      "name": "八千代市",
+      "code": "122211",
+      "years": 18,
+      "range": "H18〜R8（18年度）"
     },
     {
       "name": "港区",
@@ -111,6 +123,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H24〜R8（15年度）"
     },
     {
+      "name": "西東京市",
+      "code": "132292",
+      "years": 15,
+      "range": "H24〜R8（15年度）"
+    },
+    {
       "name": "徳島市",
       "code": "362018",
       "years": 15,
@@ -127,6 +145,12 @@ export const ROADMAP_PROGRESS = {
       "code": "082201",
       "years": 14,
       "range": "H25〜R8（14年度）"
+    },
+    {
+      "name": "伊勢崎市",
+      "code": "102041",
+      "years": 14,
+      "range": "H23〜R8（14年度）"
     },
     {
       "name": "北区",
@@ -565,6 +589,12 @@ export const ROADMAP_PROGRESS = {
       "code": "272124",
       "years": 6,
       "range": "R3〜R8（6年度）"
+    },
+    {
+      "name": "呉市",
+      "code": "342025",
+      "years": 6,
+      "range": "R2〜R8（6年度）"
     },
     {
       "name": "長崎市",

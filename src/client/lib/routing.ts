@@ -129,6 +129,11 @@ const MUNI_SLUGS: Record<string, string> = {
   "142123": "atsugi",
   "022039": "hachinohe",
   "132063": "fuchu-tokyo", // ⚠ 広島県府中市 342084 が未収録なだけなので `fuchu` 単独は使わない
+  "122203": "nagareyama",
+  "102041": "isesaki",
+  "342025": "kure",
+  "132292": "nishitokyo",
+  "122211": "yachiyo",
   "232076": "toyokawa", "352039": "yamaguchi", "222038": "numazu", "272191": "izumi",
   // 政令指定都市（2026-07-15）
   "141003": "yokohama", "231002": "nagoya", "011002": "sapporo",

@@ -12378,5 +12378,431 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.fuchu.tokyo.jp/gyosei/zaise/yosan/toushoyosan/yosangaiyo.files/H22gaiyou.pdf",
     "license": "府中市ホームページ自体及び府中市ホームページに掲載されている情報は、オープンデータとして公開されている項目を除いて、すべて著作権の対象となります。著作権は日本国著作権法および国際条約により保護されています。府中市ホームページ内のすべての情報について、無断転載はご遠慮ください。",
     "target": "file"
+  },
+  "/sources/nagareyama-yosansho-r8/r8toushoyosansetumeisho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagareyama.chiba.jp/_res/projects/default_project/_page_/001/051/523/r8toushoyosansetumeisho.pdf",
+    "license": "流山市ホームページに掲載されている文章、写真、イラストなどの個々の情報は、著作権の対象となります。また、ホームページ全体も編集著作物としての著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nagareyama-yosansho-r7/r7toushoyosansetumeisho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagareyama.chiba.jp/_res/projects/default_project/_page_/001/047/710/r7toushoyosansetumeisho.pdf",
+    "license": "流山市ホームページに掲載されている文章、写真、イラストなどの個々の情報は、著作権の対象となります。また、ホームページ全体も編集著作物としての著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nagareyama-yosansho-r6/setumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagareyama.chiba.jp/_res/projects/default_project/_page_/001/043/454/setumeisyo.pdf",
+    "license": "流山市ホームページに掲載されている文章、写真、イラストなどの個々の情報は、著作権の対象となります。また、ホームページ全体も編集著作物としての著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nagareyama-yosansho-r5/yosannsetumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagareyama.chiba.jp/_res/projects/default_project/_page_/001/038/916/yosannsetumeisyo.pdf",
+    "license": "流山市ホームページに掲載されている文章、写真、イラストなどの個々の情報は、著作権の対象となります。また、ホームページ全体も編集著作物としての著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nagareyama-yosansho-r4/r4_setumesyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagareyama.chiba.jp/_res/projects/default_project/_page_/001/032/384/r4_setumesyo.pdf",
+    "license": "流山市ホームページに掲載されている文章、写真、イラストなどの個々の情報は、著作権の対象となります。また、ホームページ全体も編集著作物としての著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nagareyama-yosansho-r3/r3yosansetsumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagareyama.chiba.jp/_res/projects/default_project/_page_/001/028/236/r3yosansetsumeisyo.pdf",
+    "license": "流山市ホームページに掲載されている文章、写真、イラストなどの個々の情報は、著作権の対象となります。また、ホームページ全体も編集著作物としての著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nagareyama-yosansho-r1/31_yosansetsumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagareyama.chiba.jp/_res/projects/default_project/_page_/001/019/612/31_yosansetsumei.pdf",
+    "license": "流山市ホームページに掲載されている文章、写真、イラストなどの個々の情報は、著作権の対象となります。また、ホームページ全体も編集著作物としての著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nagareyama-yosansho-h30/30_setumeisyo_teisei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagareyama.chiba.jp/_res/projects/default_project/_page_/001/016/319/30_setumeisyo_teisei.pdf",
+    "license": "流山市ホームページに掲載されている文章、写真、イラストなどの個々の情報は、著作権の対象となります。また、ホームページ全体も編集著作物としての著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nagareyama-yosansho-h29/h29yosansetumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagareyama.chiba.jp/_res/projects/default_project/_page_/001/008/340/h29yosansetumeisyo.pdf",
+    "license": "流山市ホームページに掲載されている文章、写真、イラストなどの個々の情報は、著作権の対象となります。また、ホームページ全体も編集著作物としての著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nagareyama-yosansho-h28/h28yosan_setsumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagareyama.chiba.jp/_res/projects/default_project/_page_/001/008/343/h28yosan_setsumei.pdf",
+    "license": "流山市ホームページに掲載されている文章、写真、イラストなどの個々の情報は、著作権の対象となります。また、ホームページ全体も編集著作物としての著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nagareyama-yosansho-h27/27yosann.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagareyama.chiba.jp/_res/projects/default_project/_page_/001/008/346/27yosann.pdf",
+    "license": "流山市ホームページに掲載されている文章、写真、イラストなどの個々の情報は、著作権の対象となります。また、ホームページ全体も編集著作物としての著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nagareyama-yosansho-h26/h26setumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagareyama.chiba.jp/_res/projects/default_project/_page_/001/008/349/h26setumei.pdf",
+    "license": "流山市ホームページに掲載されている文章、写真、イラストなどの個々の情報は、著作権の対象となります。また、ホームページ全体も編集著作物としての著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nagareyama-yosansho-h25/h25setumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagareyama.chiba.jp/_res/projects/default_project/_page_/001/008/352/h25setumei.pdf",
+    "license": "流山市ホームページに掲載されている文章、写真、イラストなどの個々の情報は、著作権の対象となります。また、ホームページ全体も編集著作物としての著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nagareyama-yosansho-h24/h24setumei_all.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagareyama.chiba.jp/_res/projects/default_project/_page_/001/008/355/h24setumei_all.pdf",
+    "license": "流山市ホームページに掲載されている文章、写真、イラストなどの個々の情報は、著作権の対象となります。また、ホームページ全体も編集著作物としての著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nagareyama-yosansho-h23/h23setumei_all.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagareyama.chiba.jp/_res/projects/default_project/_page_/001/008/358/h23setumei_all.pdf",
+    "license": "流山市ホームページに掲載されている文章、写真、イラストなどの個々の情報は、著作権の対象となります。また、ホームページ全体も編集著作物としての著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nagareyama-yosansho-h22/h22setumei_all.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagareyama.chiba.jp/_res/projects/default_project/_page_/001/008/362/h22setumei_all.pdf",
+    "license": "流山市ホームページに掲載されている文章、写真、イラストなどの個々の情報は、著作権の対象となります。また、ホームページ全体も編集著作物としての著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nagareyama-yosansho-h21/h21setumei-all.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagareyama.chiba.jp/_res/projects/default_project/_page_/001/008/366/h21setumei-all.pdf",
+    "license": "流山市ホームページに掲載されている文章、写真、イラストなどの個々の情報は、著作権の対象となります。また、ホームページ全体も編集著作物としての著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nagareyama-yosansho-h20/h20setumei_all.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagareyama.chiba.jp/_res/projects/default_project/_page_/001/008/369/h20setumei_all.pdf",
+    "license": "流山市ホームページに掲載されている文章、写真、イラストなどの個々の情報は、著作権の対象となります。また、ホームページ全体も編集著作物としての著作権の対象となり、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/isesaki-yosangaiyou-r8/yosangaiyouR8.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.isesaki.lg.jp/material/files/group/18/yosangaiyouR8.pdf",
+    "license": "伊勢崎市ウェブサイトに掲載されている、写真・イラスト・音声・動画および記事は、著作権の対象となっています。また、伊勢崎市ウェブサイト全体も編集著作物として著作権の対象となっており、ともに日本国著作権法および国際条約により保護されています。原則、著作権は伊勢崎市に帰属しており、一部の画像等の著作権は、原著作者が所有していますので、無断での使用や転載を禁じます。本ウェブサイトの内容の全部または一部については、私的使用または引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載・複製することができます。ただし、「無断転載を禁じます」などの注記があるものについては、それに従ってください。",
+    "target": "file"
+  },
+  "/sources/isesaki-yosangaiyou-r7/R7_tousyoyosann_gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.isesaki.lg.jp/material/files/group/18/R7_tousyoyosann_gaiyou.pdf",
+    "license": "伊勢崎市ウェブサイトに掲載されている、写真・イラスト・音声・動画および記事は、著作権の対象となっています。また、伊勢崎市ウェブサイト全体も編集著作物として著作権の対象となっており、ともに日本国著作権法および国際条約により保護されています。原則、著作権は伊勢崎市に帰属しており、一部の画像等の著作権は、原著作者が所有していますので、無断での使用や転載を禁じます。本ウェブサイトの内容の全部または一部については、私的使用または引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載・複製することができます。ただし、「無断転載を禁じます」などの注記があるものについては、それに従ってください。",
+    "target": "file"
+  },
+  "/sources/isesaki-yosangaiyou-r6/R6_tosyoyosan_gaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.isesaki.lg.jp/material/files/group/18/R6_tosyoyosan_gaiyo.pdf",
+    "license": "伊勢崎市ウェブサイトに掲載されている、写真・イラスト・音声・動画および記事は、著作権の対象となっています。また、伊勢崎市ウェブサイト全体も編集著作物として著作権の対象となっており、ともに日本国著作権法および国際条約により保護されています。原則、著作権は伊勢崎市に帰属しており、一部の画像等の著作権は、原著作者が所有していますので、無断での使用や転載を禁じます。本ウェブサイトの内容の全部または一部については、私的使用または引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載・複製することができます。ただし、「無断転載を禁じます」などの注記があるものについては、それに従ってください。",
+    "target": "file"
+  },
+  "/sources/isesaki-yosangaiyou-r5/R5_yosan_gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.isesaki.lg.jp/material/files/group/18/R5_yosan_gaiyou.pdf",
+    "license": "伊勢崎市ウェブサイトに掲載されている、写真・イラスト・音声・動画および記事は、著作権の対象となっています。また、伊勢崎市ウェブサイト全体も編集著作物として著作権の対象となっており、ともに日本国著作権法および国際条約により保護されています。原則、著作権は伊勢崎市に帰属しており、一部の画像等の著作権は、原著作者が所有していますので、無断での使用や転載を禁じます。本ウェブサイトの内容の全部または一部については、私的使用または引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載・複製することができます。ただし、「無断転載を禁じます」などの注記があるものについては、それに従ってください。",
+    "target": "file"
+  },
+  "/sources/isesaki-yosangaiyou-r4/R4_yosan_gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.isesaki.lg.jp/material/files/group/18/R4_yosan_gaiyou.pdf",
+    "license": "伊勢崎市ウェブサイトに掲載されている、写真・イラスト・音声・動画および記事は、著作権の対象となっています。また、伊勢崎市ウェブサイト全体も編集著作物として著作権の対象となっており、ともに日本国著作権法および国際条約により保護されています。原則、著作権は伊勢崎市に帰属しており、一部の画像等の著作権は、原著作者が所有していますので、無断での使用や転載を禁じます。本ウェブサイトの内容の全部または一部については、私的使用または引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載・複製することができます。ただし、「無断転載を禁じます」などの注記があるものについては、それに従ってください。",
+    "target": "file"
+  },
+  "/sources/isesaki-yosangaiyou-r3/R3_yosan_gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.isesaki.lg.jp/material/files/group/18/R3_yosan_gaiyou.pdf",
+    "license": "伊勢崎市ウェブサイトに掲載されている、写真・イラスト・音声・動画および記事は、著作権の対象となっています。また、伊勢崎市ウェブサイト全体も編集著作物として著作権の対象となっており、ともに日本国著作権法および国際条約により保護されています。原則、著作権は伊勢崎市に帰属しており、一部の画像等の著作権は、原著作者が所有していますので、無断での使用や転載を禁じます。本ウェブサイトの内容の全部または一部については、私的使用または引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載・複製することができます。ただし、「無断転載を禁じます」などの注記があるものについては、それに従ってください。",
+    "target": "file"
+  },
+  "/sources/isesaki-yosangaiyou-r2/h02tousyoyosannnogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.isesaki.lg.jp/material/files/group/18/h02tousyoyosannnogaiyou.pdf",
+    "license": "伊勢崎市ウェブサイトに掲載されている、写真・イラスト・音声・動画および記事は、著作権の対象となっています。また、伊勢崎市ウェブサイト全体も編集著作物として著作権の対象となっており、ともに日本国著作権法および国際条約により保護されています。原則、著作権は伊勢崎市に帰属しており、一部の画像等の著作権は、原著作者が所有していますので、無断での使用や転載を禁じます。本ウェブサイトの内容の全部または一部については、私的使用または引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載・複製することができます。ただし、「無断転載を禁じます」などの注記があるものについては、それに従ってください。",
+    "target": "file"
+  },
+  "/sources/isesaki-yosangaiyou-h31/h31toushoyosangaiyou319.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.isesaki.lg.jp/material/files/group/18/h31toushoyosangaiyou319.pdf",
+    "license": "伊勢崎市ウェブサイトに掲載されている、写真・イラスト・音声・動画および記事は、著作権の対象となっています。また、伊勢崎市ウェブサイト全体も編集著作物として著作権の対象となっており、ともに日本国著作権法および国際条約により保護されています。原則、著作権は伊勢崎市に帰属しており、一部の画像等の著作権は、原著作者が所有していますので、無断での使用や転載を禁じます。本ウェブサイトの内容の全部または一部については、私的使用または引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載・複製することができます。ただし、「無断転載を禁じます」などの注記があるものについては、それに従ってください。",
+    "target": "file"
+  },
+  "/sources/isesaki-yosangaiyou-h29/H29yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.isesaki.lg.jp/material/files/group/18/H29yosangaiyou.pdf",
+    "license": "伊勢崎市ウェブサイトに掲載されている、写真・イラスト・音声・動画および記事は、著作権の対象となっています。また、伊勢崎市ウェブサイト全体も編集著作物として著作権の対象となっており、ともに日本国著作権法および国際条約により保護されています。原則、著作権は伊勢崎市に帰属しており、一部の画像等の著作権は、原著作者が所有していますので、無断での使用や転載を禁じます。本ウェブサイトの内容の全部または一部については、私的使用または引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載・複製することができます。ただし、「無断転載を禁じます」などの注記があるものについては、それに従ってください。",
+    "target": "file"
+  },
+  "/sources/isesaki-yosangaiyou-h27/h27toushoyosan_gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.isesaki.lg.jp/material/files/group/18/h27toushoyosan_gaiyou.pdf",
+    "license": "伊勢崎市ウェブサイトに掲載されている、写真・イラスト・音声・動画および記事は、著作権の対象となっています。また、伊勢崎市ウェブサイト全体も編集著作物として著作権の対象となっており、ともに日本国著作権法および国際条約により保護されています。原則、著作権は伊勢崎市に帰属しており、一部の画像等の著作権は、原著作者が所有していますので、無断での使用や転載を禁じます。本ウェブサイトの内容の全部または一部については、私的使用または引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載・複製することができます。ただし、「無断転載を禁じます」などの注記があるものについては、それに従ってください。",
+    "target": "file"
+  },
+  "/sources/isesaki-yosangaiyou-h26/H26toshoyosan_gaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.isesaki.lg.jp/material/files/group/18/H26toshoyosan_gaiyo.pdf",
+    "license": "伊勢崎市ウェブサイトに掲載されている、写真・イラスト・音声・動画および記事は、著作権の対象となっています。また、伊勢崎市ウェブサイト全体も編集著作物として著作権の対象となっており、ともに日本国著作権法および国際条約により保護されています。原則、著作権は伊勢崎市に帰属しており、一部の画像等の著作権は、原著作者が所有していますので、無断での使用や転載を禁じます。本ウェブサイトの内容の全部または一部については、私的使用または引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載・複製することができます。ただし、「無断転載を禁じます」などの注記があるものについては、それに従ってください。",
+    "target": "file"
+  },
+  "/sources/isesaki-yosangaiyou-h25/H25toshoyosan_gaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.isesaki.lg.jp/material/files/group/18/H25toshoyosan_gaiyo.pdf",
+    "license": "伊勢崎市ウェブサイトに掲載されている、写真・イラスト・音声・動画および記事は、著作権の対象となっています。また、伊勢崎市ウェブサイト全体も編集著作物として著作権の対象となっており、ともに日本国著作権法および国際条約により保護されています。原則、著作権は伊勢崎市に帰属しており、一部の画像等の著作権は、原著作者が所有していますので、無断での使用や転載を禁じます。本ウェブサイトの内容の全部または一部については、私的使用または引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載・複製することができます。ただし、「無断転載を禁じます」などの注記があるものについては、それに従ってください。",
+    "target": "file"
+  },
+  "/sources/isesaki-yosangaiyou-h24/H24toshoyosan_gaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.isesaki.lg.jp/material/files/group/18/H24toshoyosan_gaiyo.pdf",
+    "license": "伊勢崎市ウェブサイトに掲載されている、写真・イラスト・音声・動画および記事は、著作権の対象となっています。また、伊勢崎市ウェブサイト全体も編集著作物として著作権の対象となっており、ともに日本国著作権法および国際条約により保護されています。原則、著作権は伊勢崎市に帰属しており、一部の画像等の著作権は、原著作者が所有していますので、無断での使用や転載を禁じます。本ウェブサイトの内容の全部または一部については、私的使用または引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載・複製することができます。ただし、「無断転載を禁じます」などの注記があるものについては、それに従ってください。",
+    "target": "file"
+  },
+  "/sources/isesaki-yosangaiyou-h23/H23toshoyosan_gaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.isesaki.lg.jp/material/files/group/18/H23toshoyosan_gaiyo.pdf",
+    "license": "伊勢崎市ウェブサイトに掲載されている、写真・イラスト・音声・動画および記事は、著作権の対象となっています。また、伊勢崎市ウェブサイト全体も編集著作物として著作権の対象となっており、ともに日本国著作権法および国際条約により保護されています。原則、著作権は伊勢崎市に帰属しており、一部の画像等の著作権は、原著作者が所有していますので、無断での使用や転載を禁じます。本ウェブサイトの内容の全部または一部については、私的使用または引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載・複製することができます。ただし、「無断転載を禁じます」などの注記があるものについては、それに従ってください。",
+    "target": "file"
+  },
+  "/sources/kure-yosan-kiso-r8/109287.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kure.lg.jp/uploaded/attachment/109287.pdf",
+    "license": "本サイトに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また本サイト全体も編集著作物として著作権の対象となっており「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/kure-yosan-kiso-r7/100886.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kure.lg.jp/uploaded/attachment/100886.pdf",
+    "license": "本サイトに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また本サイト全体も編集著作物として著作権の対象となっており「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/kure-yosan-kiso-r6/89293.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kure.lg.jp/uploaded/attachment/89293.pdf",
+    "license": "本サイトに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また本サイト全体も編集著作物として著作権の対象となっており「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/kure-yosan-kiso-r5/80628.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kure.lg.jp/uploaded/attachment/80628.pdf",
+    "license": "本サイトに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また本サイト全体も編集著作物として著作権の対象となっており「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/kure-yosan-kiso-r4/69221.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kure.lg.jp/uploaded/attachment/69221.pdf",
+    "license": "本サイトに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また本サイト全体も編集著作物として著作権の対象となっており「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/kure-yosan-kiso-r2/46933.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20220324184939id_/https://www.city.kure.lg.jp/uploaded/attachment/46933.pdf",
+    "license": "本サイトに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また本サイト全体も編集著作物として著作権の対象となっており「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/nishitokyo-yosangaiyou-r8/R8_yosannnogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nishitokyo.lg.jp/siseizyoho/zaisei/yosan/reiwa-8/R8yosannogaiyou.html",
+    "license": "西東京市Web上の情報は、原則として西東京市が著作権を有しています。法律で認められた場合を除き、無断で転用・引用することを禁じます。",
+    "target": "page"
+  },
+  "/sources/nishitokyo-yosangaiyou-r7/R7_yosannnogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nishitokyo.lg.jp/siseizyoho/zaisei/yosan/reiwa-7/R7yosannogaiyou.html",
+    "license": "西東京市Web上の情報は、原則として西東京市が著作権を有しています。法律で認められた場合を除き、無断で転用・引用することを禁じます。",
+    "target": "page"
+  },
+  "/sources/nishitokyo-yosangaiyou-r6/R6_yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nishitokyo.lg.jp/siseizyoho/zaisei/yosan/reiwa-6/R6yosannogaiyou.html",
+    "license": "西東京市Web上の情報は、原則として西東京市が著作権を有しています。法律で認められた場合を除き、無断で転用・引用することを禁じます。",
+    "target": "page"
+  },
+  "/sources/nishitokyo-yosangaiyou-r5/R5_yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nishitokyo.lg.jp/siseizyoho/zaisei/yosan/reiwa-5/R5yosannogaiyou.html",
+    "license": "西東京市Web上の情報は、原則として西東京市が著作権を有しています。法律で認められた場合を除き、無断で転用・引用することを禁じます。",
+    "target": "page"
+  },
+  "/sources/nishitokyo-yosangaiyou-r4/R4_yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nishitokyo.lg.jp/siseizyoho/zaisei/yosan/reiwa-4/R4yosannogaiyou.html",
+    "license": "西東京市Web上の情報は、原則として西東京市が著作権を有しています。法律で認められた場合を除き、無断で転用・引用することを禁じます。",
+    "target": "page"
+  },
+  "/sources/nishitokyo-yosangaiyou-r3/R3_yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nishitokyo.lg.jp/siseizyoho/zaisei/yosan/reiwa-3/R3yosannogaiyou.html",
+    "license": "西東京市Web上の情報は、原則として西東京市が著作権を有しています。法律で認められた場合を除き、無断で転用・引用することを禁じます。",
+    "target": "page"
+  },
+  "/sources/nishitokyo-yosangaiyou-r2/R2yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nishitokyo.lg.jp/siseizyoho/zaisei/yosan/kako.html",
+    "license": "西東京市Web上の情報は、原則として西東京市が著作権を有しています。法律で認められた場合を除き、無断で転用・引用することを禁じます。",
+    "target": "page"
+  },
+  "/sources/nishitokyo-yosangaiyou-r1/31yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nishitokyo.lg.jp/siseizyoho/zaisei/yosan/kako.html",
+    "license": "西東京市Web上の情報は、原則として西東京市が著作権を有しています。法律で認められた場合を除き、無断で転用・引用することを禁じます。",
+    "target": "page"
+  },
+  "/sources/nishitokyo-yosangaiyou-h30/30_yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nishitokyo.lg.jp/siseizyoho/zaisei/yosan/kako.html",
+    "license": "西東京市Web上の情報は、原則として西東京市が著作権を有しています。法律で認められた場合を除き、無断で転用・引用することを禁じます。",
+    "target": "page"
+  },
+  "/sources/nishitokyo-yosangaiyou-h29/29_yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nishitokyo.lg.jp/siseizyoho/zaisei/yosan/kako.html",
+    "license": "西東京市Web上の情報は、原則として西東京市が著作権を有しています。法律で認められた場合を除き、無断で転用・引用することを禁じます。",
+    "target": "page"
+  },
+  "/sources/nishitokyo-yosangaiyou-h28/28_yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nishitokyo.lg.jp/siseizyoho/zaisei/yosan/kako.html",
+    "license": "西東京市Web上の情報は、原則として西東京市が著作権を有しています。法律で認められた場合を除き、無断で転用・引用することを禁じます。",
+    "target": "page"
+  },
+  "/sources/nishitokyo-yosangaiyou-h27/27yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nishitokyo.lg.jp/siseizyoho/zaisei/yosan/kako.html",
+    "license": "西東京市Web上の情報は、原則として西東京市が著作権を有しています。法律で認められた場合を除き、無断で転用・引用することを禁じます。",
+    "target": "page"
+  },
+  "/sources/nishitokyo-yosangaiyou-h26/26yosannogaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nishitokyo.lg.jp/siseizyoho/zaisei/yosan/kako.html",
+    "license": "西東京市Web上の情報は、原則として西東京市が著作権を有しています。法律で認められた場合を除き、無断で転用・引用することを禁じます。",
+    "target": "page"
+  },
+  "/sources/nishitokyo-yosangaiyou-h25/25yosannnogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nishitokyo.lg.jp/siseizyoho/zaisei/yosan/kako.html",
+    "license": "西東京市Web上の情報は、原則として西東京市が著作権を有しています。法律で認められた場合を除き、無断で転用・引用することを禁じます。",
+    "target": "page"
+  },
+  "/sources/nishitokyo-yosangaiyou-h24/24yosannnogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nishitokyo.lg.jp/siseizyoho/zaisei/yosan/kako.html",
+    "license": "西東京市Web上の情報は、原則として西東京市が著作権を有しています。法律で認められた場合を除き、無断で転用・引用することを禁じます。",
+    "target": "page"
+  },
+  "/sources/yachiyo-yosangaiyou-r8/45788.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yachiyo.lg.jp/uploaded/attachment/45788.pdf",
+    "license": "八千代市公式ホームページ（以下、「本ホームページ」という）全体及び掲載情報の著作権は、原則として八千代市（以下、「本市」という）に帰属します（一部の画像等の著作権は、原著作者が所有しています。）。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、本市の許可なく本ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/yachiyo-yosangaiyou-r7/36528.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yachiyo.lg.jp/uploaded/attachment/36528.pdf",
+    "license": "八千代市公式ホームページ（以下、「本ホームページ」という）全体及び掲載情報の著作権は、原則として八千代市（以下、「本市」という）に帰属します（一部の画像等の著作権は、原著作者が所有しています。）。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、本市の許可なく本ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/yachiyo-yosangaiyou-r6/28810.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yachiyo.lg.jp/uploaded/attachment/28810.pdf",
+    "license": "八千代市公式ホームページ（以下、「本ホームページ」という）全体及び掲載情報の著作権は、原則として八千代市（以下、「本市」という）に帰属します（一部の画像等の著作権は、原著作者が所有しています。）。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、本市の許可なく本ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/yachiyo-yosangaiyou-r5/20440.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yachiyo.lg.jp/uploaded/attachment/20440.pdf",
+    "license": "八千代市公式ホームページ（以下、「本ホームページ」という）全体及び掲載情報の著作権は、原則として八千代市（以下、「本市」という）に帰属します（一部の画像等の著作権は、原著作者が所有しています。）。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、本市の許可なく本ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/yachiyo-yosangaiyou-r4/10180.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yachiyo.lg.jp/uploaded/attachment/10180.pdf",
+    "license": "八千代市公式ホームページ（以下、「本ホームページ」という）全体及び掲載情報の著作権は、原則として八千代市（以下、「本市」という）に帰属します（一部の画像等の著作権は、原著作者が所有しています。）。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、本市の許可なく本ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/yachiyo-yosangaiyou-r3/10166.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yachiyo.lg.jp/uploaded/attachment/10166.pdf",
+    "license": "八千代市公式ホームページ（以下、「本ホームページ」という）全体及び掲載情報の著作権は、原則として八千代市（以下、「本市」という）に帰属します（一部の画像等の著作権は、原著作者が所有しています。）。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、本市の許可なく本ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/yachiyo-yosangaiyou-r2/36603.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yachiyo.lg.jp/uploaded/attachment/36603.pdf",
+    "license": "八千代市公式ホームページ（以下、「本ホームページ」という）全体及び掲載情報の著作権は、原則として八千代市（以下、「本市」という）に帰属します（一部の画像等の著作権は、原著作者が所有しています。）。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、本市の許可なく本ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/yachiyo-yosangaiyou-h31/10109.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yachiyo.lg.jp/uploaded/attachment/10109.pdf",
+    "license": "八千代市公式ホームページ（以下、「本ホームページ」という）全体及び掲載情報の著作権は、原則として八千代市（以下、「本市」という）に帰属します（一部の画像等の著作権は、原著作者が所有しています。）。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、本市の許可なく本ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/yachiyo-yosangaiyou-h30/10092.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yachiyo.lg.jp/uploaded/attachment/10092.pdf",
+    "license": "八千代市公式ホームページ（以下、「本ホームページ」という）全体及び掲載情報の著作権は、原則として八千代市（以下、「本市」という）に帰属します（一部の画像等の著作権は、原著作者が所有しています。）。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、本市の許可なく本ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/yachiyo-yosangaiyou-h28/10004.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yachiyo.lg.jp/uploaded/attachment/10004.pdf",
+    "license": "八千代市公式ホームページ（以下、「本ホームページ」という）全体及び掲載情報の著作権は、原則として八千代市（以下、「本市」という）に帰属します（一部の画像等の著作権は、原著作者が所有しています。）。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、本市の許可なく本ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/yachiyo-yosangaiyou-h27/10244.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yachiyo.lg.jp/uploaded/attachment/10244.pdf",
+    "license": "八千代市公式ホームページ（以下、「本ホームページ」という）全体及び掲載情報の著作権は、原則として八千代市（以下、「本市」という）に帰属します（一部の画像等の著作権は、原著作者が所有しています。）。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、本市の許可なく本ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/yachiyo-yosangaiyou-h26/9968.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yachiyo.lg.jp/uploaded/attachment/9968.pdf",
+    "license": "八千代市公式ホームページ（以下、「本ホームページ」という）全体及び掲載情報の著作権は、原則として八千代市（以下、「本市」という）に帰属します（一部の画像等の著作権は、原著作者が所有しています。）。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、本市の許可なく本ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/yachiyo-yosangaiyou-h25/9946.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yachiyo.lg.jp/uploaded/attachment/9946.pdf",
+    "license": "八千代市公式ホームページ（以下、「本ホームページ」という）全体及び掲載情報の著作権は、原則として八千代市（以下、「本市」という）に帰属します（一部の画像等の著作権は、原著作者が所有しています。）。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、本市の許可なく本ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/yachiyo-yosangaiyou-h24/9874.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yachiyo.lg.jp/uploaded/attachment/9874.pdf",
+    "license": "八千代市公式ホームページ（以下、「本ホームページ」という）全体及び掲載情報の著作権は、原則として八千代市（以下、「本市」という）に帰属します（一部の画像等の著作権は、原著作者が所有しています。）。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、本市の許可なく本ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/yachiyo-yosangaiyou-h23/9875.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yachiyo.lg.jp/uploaded/attachment/9875.pdf",
+    "license": "八千代市公式ホームページ（以下、「本ホームページ」という）全体及び掲載情報の著作権は、原則として八千代市（以下、「本市」という）に帰属します（一部の画像等の著作権は、原著作者が所有しています。）。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、本市の許可なく本ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/yachiyo-yosangaiyou-h22/9876.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yachiyo.lg.jp/uploaded/attachment/9876.pdf",
+    "license": "八千代市公式ホームページ（以下、「本ホームページ」という）全体及び掲載情報の著作権は、原則として八千代市（以下、「本市」という）に帰属します（一部の画像等の著作権は、原著作者が所有しています。）。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、本市の許可なく本ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/yachiyo-yosangaiyou-h21/9877.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yachiyo.lg.jp/uploaded/attachment/9877.pdf",
+    "license": "八千代市公式ホームページ（以下、「本ホームページ」という）全体及び掲載情報の著作権は、原則として八千代市（以下、「本市」という）に帰属します（一部の画像等の著作権は、原著作者が所有しています。）。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、本市の許可なく本ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/yachiyo-yosangaiyou-h18/9879.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yachiyo.lg.jp/uploaded/attachment/9879.pdf",
+    "license": "八千代市公式ホームページ（以下、「本ホームページ」という）全体及び掲載情報の著作権は、原則として八千代市（以下、「本市」という）に帰属します（一部の画像等の著作権は、原著作者が所有しています。）。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、本市の許可なく本ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
+    "target": "file"
   }
 };
