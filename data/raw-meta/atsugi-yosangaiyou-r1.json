@@ -1,0 +1,12 @@
+{
+  "sourceId": "atsugi-yosangaiyou-r1",
+  "files": [
+    {
+      "filename": "yosannogaiyou.pdf",
+      "sha256": "0366658326cbae677c69b90c7c90bb95c116696a8a6f5d82c0477e2090108f1f",
+      "bytes": 2696421,
+      "fetchedAt": "2026-08-23T22:44:28.632Z",
+      "fetchedFrom": "https://www.city.atsugi.kanagawa.jp/material/files/group/11/yosannogaiyou.pdf"
+    }
+  ]
+}

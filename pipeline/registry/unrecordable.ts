@@ -193,6 +193,22 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-17",
   },
   {
+    code: "272159", name: "寝屋川市", dataset: "budget",
+    fiscalYears: ["R8", "R7", "R6", "R5"],
+    categories: ["format-mismatch", "scanned-image"],
+    reason:
+      "款ごとに前年度と比べられる資料が歳出の分しかなく、歳入の分が公開されていない。" +
+      "当初予算書は紙をスキャンした画像で、" +
+      "文字として取り出せる中身が無い（令和8年度の歳入の冊子は92ページに画像が92枚で0字、" + "令和8年度と令和7年度の議案の冊子も同じ状態。収録時に3冊を実測）。" +
+      "市のホームページに載っている歳入の内訳は7つに大きくまとめた円グラフの画像で、款ごとになっていない。" +
+      "オープンデータとして公開されている当初予算のデータも歳出の分だけで、" +
+      "一覧を検索しても歳入のデータは無い（収録時に実測）。" +
+      "款ごとの歳出と前年度当初との比較は「当初予算編成状況」の別紙4で読み取れるので、" +
+      "歳入の資料が公開されれば収録できる。",
+    url: "https://www.city.neyagawa.osaka.jp/organization_list/zaimu/zaiseika/yosan/toushoyosanhenseijyoukyou/index.html",
+    checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-18",
+  },
+  {
     code: "412015", name: "佐賀市", dataset: "budget",
     fiscalYears: ["R4", "R3"],
     categories: ["scanned-image"],

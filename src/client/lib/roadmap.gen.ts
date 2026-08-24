@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 177,
+  "budgetCount": 181,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 1115,
-  "fileCount": 2305,
-  "archivedCount": 1014,
+  "sourceCount": 1158,
+  "fileCount": 2348,
+  "archivedCount": 1045,
   "licenseOpen": 98,
-  "licensePermission": 907,
+  "licensePermission": 950,
   "licenseUnverified": 110,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -85,6 +85,12 @@ export const ROADMAP_PROGRESS = {
       "code": "372013",
       "years": 18,
       "range": "H21〜R8（18年度）"
+    },
+    {
+      "name": "府中市",
+      "code": "132063",
+      "years": 17,
+      "range": "H22〜R8（17年度）"
     },
     {
       "name": "練馬区",
@@ -195,6 +201,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H28〜R8（11年度）"
     },
     {
+      "name": "厚木市",
+      "code": "142123",
+      "years": 11,
+      "range": "H28〜R8（11年度）"
+    },
+    {
       "name": "大和市",
       "code": "142131",
       "years": 11,
@@ -265,6 +277,12 @@ export const ROADMAP_PROGRESS = {
       "code": "442011",
       "years": 10,
       "range": "H29〜R8（10年度）"
+    },
+    {
+      "name": "太田市",
+      "code": "102059",
+      "years": 9,
+      "range": "H30〜R8（9年度）"
     },
     {
       "name": "豊島区",
@@ -491,6 +509,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "青森市",
       "code": "022012",
+      "years": 6,
+      "range": "R3〜R8（6年度）"
+    },
+    {
+      "name": "八戸市",
+      "code": "022039",
       "years": 6,
       "range": "R3〜R8（6年度）"
     },

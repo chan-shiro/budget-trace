@@ -2577,6 +2577,25 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7"] as const).map((fy) => ({
       srcId: `yamagata-shi-zaisei-siryou-${fy}`, muniCode: "062014", muniName: "山形市", prefName: "山形県", isPref: false,
     })),
+    // ⚠ 太田市（群馬 102059）は大田区（東京 131113・スラグ `ota`）と別団体。スラグは `ota-gunma`
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30"] as const).map((fy) => ({
+      srcId: `otagunma-yosangaiyou-${fy}`, muniCode: "102059", muniName: "太田市", prefName: "群馬県", isPref: false,
+    })),
+    // ⚠ 厚木は R5 に肉付後版の別 PDF があるので、当初版を使っていることを年度追加のたびに確かめる
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "r1", "h30", "h29", "h28"] as const).map((fy) => ({
+      srcId: `atsugi-yosangaiyou-${fy}`, muniCode: "142123", muniName: "厚木市", prefName: "神奈川県", isPref: false,
+    })),
+    // ⚠ 八戸の R3 は現行サイトから消えており魚拓からのみ取得している
+    ...(["r8", "r7", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
+      srcId: `hachinohe-yosan-gaiyou-${fy}`, muniCode: "022039", muniName: "八戸市", prefName: "青森県", isPref: false,
+    })),
+    // ⚠ 東京都府中市 132063。広島県府中市 342084 とは別団体なのでスラグは `fuchu-tokyo`
+    ...([
+      "r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29",
+      "h28", "h27", "h26", "h25", "h24", "h23", "h22",
+    ] as const).map((fy) => ({
+      srcId: `fuchu-tokyo-aramashi-${fy}`, muniCode: "132063", muniName: "府中市", prefName: "東京都", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。
