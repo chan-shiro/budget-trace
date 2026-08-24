@@ -2589,7 +2589,7 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
       srcId: `hachinohe-yosan-gaiyou-${fy}`, muniCode: "022039", muniName: "八戸市", prefName: "青森県", isPref: false,
     })),
-    // ⚠ 東京都府中市 132063。広島県府中市 342089 とは別団体なのでスラグは `fuchu-tokyo`
+    // ⚠ 東京都府中市 132063。広島県府中市 342084 とは別団体なのでスラグは `fuchu-tokyo`
     ...([
       "r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29",
       "h28", "h27", "h26", "h25", "h24", "h23", "h22",

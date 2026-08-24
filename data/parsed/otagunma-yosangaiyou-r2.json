@@ -3,7 +3,7 @@
   "sourceId": "otagunma-yosangaiyou-r2",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-08-23T22:41:08.842Z",
+  "parsedAt": "2026-08-23T23:53:59.833Z",
   "unit": "thousandYen",
   "fiscalYear": "R2",
   "account": "一般会計",
@@ -258,7 +258,7 @@
     {
       "side": "revenue",
       "kanNo": null,
-      "kanName": "廃自動車取得税交付金",
+      "kanName": "自動車取得税交付金",
       "amount": 0,
       "prevAmount": 100000,
       "locator": {

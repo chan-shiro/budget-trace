@@ -128,7 +128,7 @@ const MUNI_SLUGS: Record<string, string> = {
   "102059": "ota-gunma", // ⚠ 大田区 131113 が "ota" を使っているので衝突を避ける
   "142123": "atsugi",
   "022039": "hachinohe",
-  "132063": "fuchu-tokyo", // ⚠ 広島県府中市 342089 が未収録なだけなので `fuchu` 単独は使わない
+  "132063": "fuchu-tokyo", // ⚠ 広島県府中市 342084 が未収録なだけなので `fuchu` 単独は使わない
   "232076": "toyokawa", "352039": "yamaguchi", "222038": "numazu", "272191": "izumi",
   // 政令指定都市（2026-07-15）
   "141003": "yokohama", "231002": "nagoya", "011002": "sapporo",
