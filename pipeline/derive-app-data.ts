@@ -2626,6 +2626,32 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ] as const).map((fy) => ({
       srcId: `yachiyo-yosangaiyou-${fy}`, muniCode: "122211", muniName: "八千代市", prefName: "千葉県", isPref: false,
     })),
+    // ⚠ 伊丹は様式が3世代（R8〜R6 別ページ・R5 別ページ・R4〜H30 縦積み）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30"] as const).map((fy) => ({
+      srcId: `itami-yosangaiyou-${fy}`, muniCode: "282073", muniName: "伊丹市", prefName: "兵庫県", isPref: false,
+    })),
+    // ⚠ 小平は R7・R5 が総括表だけ図形化で収録不可（鎖が2か所切れる）
+    ...(["r8", "r6", "r4", "r3", "r2", "r1"] as const).map((fy) => ({
+      srcId: `kodaira-yosansho-${fy}`, muniCode: "132110", muniName: "小平市", prefName: "東京都", isPref: false,
+    })),
+    // ⚠ 熊谷は R8〜R2 が予算分析表・H31〜H23 が予算に関する説明書の2経路
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `kumagaya-yosan-bunseki-${fy}`, muniCode: "112020", muniName: "熊谷市", prefName: "埼玉県", isPref: false,
+    })),
+    ...(["h31", "h30", "h29", "h28", "h27", "h26", "h25", "h24", "h23"] as const).map((fy) => ({
+      srcId: `kumagaya-yosan-setsumeisho-${fy}`, muniCode: "112020", muniName: "熊谷市", prefName: "埼玉県", isPref: false,
+    })),
+    // ⚠ 松江は島根県内で初の市町村。R8〜R4 が概要・R3〜H24 が会計別 PDF
+    ...([
+      "r8", "r7", "r6", "r5", "r4", "r3", "r2", "r1", "h30", "h29", "h28", "h27", "h26", "h25", "h24",
+    ] as const).map((fy) => ({
+      srcId: `matsue-yosangaiyou-${fy}`, muniCode: "322016", muniName: "松江市", prefName: "島根県", isPref: false,
+    })),
+    // ⚠ 鈴鹿は R8〜H31 が予算書（議案等一覧）・H30 だけ WARP の当初予算資料
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31"] as const).map((fy) => ({
+      srcId: `suzuka-yosansho-${fy}`, muniCode: "242071", muniName: "鈴鹿市", prefName: "三重県", isPref: false,
+    })),
+    { srcId: "suzuka-yosan-shiryou-h30", muniCode: "242071", muniName: "鈴鹿市", prefName: "三重県", isPref: false },
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。

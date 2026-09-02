@@ -1,0 +1,12 @@
+{
+  "sourceId": "suzuka-yosan-shiryou-h30",
+  "files": [
+    {
+      "filename": "yosan_2018.pdf",
+      "sha256": "f9f5fd56b3ad3be4c594eff8821657fe18d7143aefb4f4db0e2a78e42dcec14c",
+      "bytes": 4448386,
+      "fetchedAt": "2026-09-02T07:09:57.274Z",
+      "fetchedFrom": "https://warp.ndl.go.jp/20200214/20200213203750/https://www.city.suzuka.lg.jp/kouhou/gyosei/plan/zaisei/data/pdfs/yosan_2018.pdf"
+    }
+  ]
+}

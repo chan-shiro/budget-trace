@@ -1,0 +1,424 @@
+{
+  "docType": "budget-book",
+  "sourceId": "matsue-yosangaiyou-r1",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-09-02T07:03:56.047Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R1",
+  "account": "一般会計",
+  "revenueTotal": 100198000,
+  "expenditureTotal": 100198000,
+  "prevRevenueTotal": 96238000,
+  "prevExpenditureTotal": 96238000,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "市税",
+      "amount": 28631504,
+      "prevAmount": 28273301,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "地方譲与税",
+      "amount": 755577,
+      "prevAmount": 686144,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "利子割交付金",
+      "amount": 80762,
+      "prevAmount": 68881,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "配当割交付金",
+      "amount": 86159,
+      "prevAmount": 86221,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 82218,
+      "prevAmount": 97968,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "地方消費税交付金",
+      "amount": 3868077,
+      "prevAmount": 3892657,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "ゴルフ場利用税交付金",
+      "amount": 7232,
+      "prevAmount": 10703,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "自動車取得税交付金",
+      "amount": 65814,
+      "prevAmount": 128970,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "環境性能割交付金",
+      "amount": 17682,
+      "prevAmount": 0,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "国有提供施設等所在市町村助成交付金",
+      "amount": 8539,
+      "prevAmount": 8699,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "地方特例交付金",
+      "amount": 467151,
+      "prevAmount": 103197,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "地方交付税",
+      "amount": 20890104,
+      "prevAmount": 21742708,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 39077,
+      "prevAmount": 40188,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "分担金及び負担金",
+      "amount": 933310,
+      "prevAmount": 1351279,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "使用料及び手数料",
+      "amount": 2576520,
+      "prevAmount": 2516534,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "国庫支出金",
+      "amount": 17261693,
+      "prevAmount": 15898009,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 17,
+      "kanName": "県支出金",
+      "amount": 7296121,
+      "prevAmount": 6551283,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 18,
+      "kanName": "財産収入",
+      "amount": 987584,
+      "prevAmount": 1112096,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 19,
+      "kanName": "寄附金",
+      "amount": 135850,
+      "prevAmount": 130050,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 20,
+      "kanName": "繰入金",
+      "amount": 1476225,
+      "prevAmount": 1621646,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 21,
+      "kanName": "繰越金",
+      "amount": 1,
+      "prevAmount": 1,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 22,
+      "kanName": "諸収入",
+      "amount": 4549800,
+      "prevAmount": 3984640,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 23,
+      "kanName": "市債",
+      "amount": 9981000,
+      "prevAmount": 7932825,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 494318,
+      "prevAmount": 492845,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 9854490,
+      "prevAmount": 9434432,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "民生費",
+      "amount": 37601745,
+      "prevAmount": 35279871,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "衛生費",
+      "amount": 10125453,
+      "prevAmount": 9761992,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "労働費",
+      "amount": 288531,
+      "prevAmount": 403065,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "農林水産業費",
+      "amount": 2559955,
+      "prevAmount": 2862426,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "商工費",
+      "amount": 3153131,
+      "prevAmount": 3581412,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "土木費",
+      "amount": 8809358,
+      "prevAmount": 9901727,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "消防費",
+      "amount": 2681044,
+      "prevAmount": 2501011,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "教育費",
+      "amount": 11836882,
+      "prevAmount": 8816991,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 11,
+      "kanName": "災害復旧費",
+      "amount": 137000,
+      "prevAmount": 5000,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 12,
+      "kanName": "公債費",
+      "amount": 12324409,
+      "prevAmount": 12861197,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 13,
+      "kanName": "諸支出金",
+      "amount": 281684,
+      "prevAmount": 286031,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 14,
+      "kanName": "予備費",
+      "amount": 50000,
+      "prevAmount": 50000,
+      "locator": {
+        "file": "02_H31kaikeibetu_ippankaikeiyosan2.pdf",
+        "page": 3
+      }
+    }
+  ]
+}

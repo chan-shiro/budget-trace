@@ -1,0 +1,414 @@
+{
+  "docType": "budget-book",
+  "sourceId": "matsue-yosangaiyou-h24",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-09-02T07:03:56.851Z",
+  "unit": "thousandYen",
+  "fiscalYear": "H24",
+  "account": "一般会計",
+  "revenueTotal": 97186000,
+  "expenditureTotal": 97186000,
+  "prevRevenueTotal": 99847000,
+  "prevExpenditureTotal": 99847000,
+  "prevBasis": "当初",
+  "prevNote": "前年度（平成23年度）の額は、平成23年8月に合併した旧東出雲町の分を合算したもの（原典の「平成23年度当初（合算）」列）。原典には「松江市のみ」の列もあるが、ここでは合算の列を採っている。",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "市税",
+      "amount": 27492242,
+      "prevAmount": 27841579,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "地方譲与税",
+      "amount": 773634,
+      "prevAmount": 768967,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "利子割交付金",
+      "amount": 94505,
+      "prevAmount": 109618,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "配当割交付金",
+      "amount": 33779,
+      "prevAmount": 28825,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 10594,
+      "prevAmount": 10453,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "地方消費税交付金",
+      "amount": 1987704,
+      "prevAmount": 2087185,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "ｺﾞﾙﾌ場利用税交付金",
+      "amount": 15689,
+      "prevAmount": 17482,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "自動車取得税交付金",
+      "amount": 137846,
+      "prevAmount": 116476,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "国有提供施設等所在市町村助成交付金",
+      "amount": 8390,
+      "prevAmount": 9321,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "地方特例交付金",
+      "amount": 107476,
+      "prevAmount": 313671,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "地方交付税",
+      "amount": 25361122,
+      "prevAmount": 23956166,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 45728,
+      "prevAmount": 42957,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "分担金及び負担金",
+      "amount": 1495758,
+      "prevAmount": 1910522,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "使用料及び手数料",
+      "amount": 2225644,
+      "prevAmount": 2438267,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "国庫支出金",
+      "amount": 13792491,
+      "prevAmount": 14426034,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "県支出金",
+      "amount": 6329033,
+      "prevAmount": 7616338,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 17,
+      "kanName": "財産収入",
+      "amount": 224849,
+      "prevAmount": 197421,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 18,
+      "kanName": "寄附金",
+      "amount": 32000,
+      "prevAmount": 31400,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 19,
+      "kanName": "繰入金",
+      "amount": 1333754,
+      "prevAmount": 1863025,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 20,
+      "kanName": "繰越金",
+      "amount": 1,
+      "prevAmount": 2,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 21,
+      "kanName": "諸収入",
+      "amount": 6339861,
+      "prevAmount": 6441591,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 22,
+      "kanName": "市債",
+      "amount": 9343900,
+      "prevAmount": 9619700,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 531258,
+      "prevAmount": 642505,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 8586638,
+      "prevAmount": 9549349,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "民生費",
+      "amount": 30948788,
+      "prevAmount": 30834094,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "衛生費",
+      "amount": 7995834,
+      "prevAmount": 9203844,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "労働費",
+      "amount": 765298,
+      "prevAmount": 999970,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "農林水産業費",
+      "amount": 3376778,
+      "prevAmount": 3677321,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "商工費",
+      "amount": 4717783,
+      "prevAmount": 4798884,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "土木費",
+      "amount": 10360756,
+      "prevAmount": 10148025,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "消防費",
+      "amount": 3374497,
+      "prevAmount": 2893048,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "教育費",
+      "amount": 10273245,
+      "prevAmount": 11340828,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 11,
+      "kanName": "災害復旧費",
+      "amount": 24280,
+      "prevAmount": 13312,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 12,
+      "kanName": "公債費",
+      "amount": 15920044,
+      "prevAmount": 15351211,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 13,
+      "kanName": "諸支出金",
+      "amount": 280801,
+      "prevAmount": 359609,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 14,
+      "kanName": "予備費",
+      "amount": 30000,
+      "prevAmount": 35000,
+      "locator": {
+        "file": "H24_tosho_02.pdf",
+        "page": 4
+      }
+    }
+  ]
+}

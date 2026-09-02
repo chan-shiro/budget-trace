@@ -143,6 +143,16 @@ interface Options {
    */
   textSource?: "layout" | "raw" | { revenue?: "layout" | "raw"; expenditure?: "layout" | "raw" };
   /**
+   * **罫線文字で組まれた表**（小平 §13-20）— 表が `┃┣┏┗━` などの罫線素片（U+2500〜U+257F）で描画されていて、
+   * 行頭が `┃` になるため款番号の lead が当たらず「款行が1件も抽出できませんでした」で throw する型。
+   * `true` で罫線素片を**空白に置換**してから行パーサに渡す（さいたま R6・草加 R5 以前と同型の宿題）。
+   * ⚠ **opt-in** — 既定では何もしない（既存ソースへの回帰を避ける）。⚠ 置換は空白（削除ではない）にする:
+   *   罫線は列区切りを兼ねる字なので、消すと**列見出し行**が `本年度予算額前年度予算額` と連結する。
+   *   ⚠ 款行は罫線の右に空白があるので削除しても変わらない（収録レビューで実測）— 影響は列見出し行だけ。
+   * ⚠ 罫線だけの行（`┣━━┫`）は空白化後に空行になるので、行パーサの空行処理に乗る。
+   */
+  stripBoxDrawing?: boolean;
+  /**
    * **ToUnicode 欠落 PDF の決定論的復号**（#159・pipeline/lib/garble-decode.ts）。
    * 豊島 R4/R2/H31〜H29・大田 H27・品川 R2 は荒川（#125）と同一の化けマップで、
    * 数字が制御文字（真の字 − 0x1D）・漢字が固定ガーブルになる。true にすると抽出テキストを
@@ -780,6 +790,11 @@ function parseKanPage(
   if (opts.decodeGarble) {
     const band = side === "revenue" ? opts.decodeGarbleBand?.revenue : opts.decodeGarbleBand?.expenditure;
     text = decodeGarbleText(text, `${filename} ${pageLabel}`, band);
+  }
+  // 罫線素片を空白化する（Options.stripBoxDrawing 参照）。**復号の後・誤植修正の前** —
+  // 復号は化け字の帯を見るので罫線を先に消すと帯の判定が動きうる。誤植修正以降は「印字が正しい」前提で動く。
+  if (opts.stripBoxDrawing) {
+    text = text.replace(/[\u2500-\u257F]/g, " ");
   }
   // 原典の誤植をピンポイントで直す（Options.amountTypos 参照）。**dashAsZero・折返し復元より先** —
   // 誤植は原典の印字そのものなので、以降の全処理が「正しい印字」を前提に動けるようにする
