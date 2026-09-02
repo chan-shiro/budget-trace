@@ -193,6 +193,20 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-17",
   },
   {
+    code: "132110", name: "小平市", dataset: "budget",
+    fiscalYears: ["R7", "R5"],
+    categories: ["broken-text-layer"],
+    reason:
+      "この2年度は予算書のうち、款ごとの表が載る総括表の2ページだけが文字を図形に変換した状態で作られていて、" +
+      "文字として取り出せるのがページ番号だけ（令和7年度は19・20ページ、令和5年度は18・19ページで、" +
+      "それぞれ7字。前後のページは3千字前後が取り出せる。収録時に実測）。" +
+      "スキャン画像ではないので読み取り誤りの心配は無いが、数値を取り出す手立てがない。" +
+      "同じ年度の「予算（案）の概要」は歳出の款は読めるが、歳入がいくつかの款をまとめた表になっていて款ごとにならない。" +
+      "令和8年度・令和6年度・令和4年度〜令和元年度は同じ予算書で収録済み。",
+    url: "https://www.city.kodaira.tokyo.jp/kurashi/index07011001.html",
+    checkedOn: "2026-09-02", ref: "docs/data-sources.md §13-20",
+  },
+  {
     code: "342025", name: "呉市", dataset: "budget",
     fiscalYears: ["R3"],
     categories: ["scanned-image"],

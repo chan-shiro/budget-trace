@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 186,
+  "budgetCount": 191,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 1229,
-  "fileCount": 2419,
-  "archivedCount": 1114,
+  "sourceCount": 1284,
+  "fileCount": 2474,
+  "archivedCount": 1156,
   "licenseOpen": 98,
-  "licensePermission": 1021,
+  "licensePermission": 1076,
   "licenseUnverified": 110,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -105,6 +105,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H22〜R8（17年度）"
     },
     {
+      "name": "熊谷市",
+      "code": "112020",
+      "years": 16,
+      "range": "H23〜R8（16年度）"
+    },
+    {
       "name": "練馬区",
       "code": "131202",
       "years": 16,
@@ -125,6 +131,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "西東京市",
       "code": "132292",
+      "years": 15,
+      "range": "H24〜R8（15年度）"
+    },
+    {
+      "name": "松江市",
+      "code": "322016",
       "years": 15,
       "range": "H24〜R8（15年度）"
     },
@@ -317,6 +329,18 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "松本市",
       "code": "202029",
+      "years": 9,
+      "range": "H30〜R8（9年度）"
+    },
+    {
+      "name": "鈴鹿市",
+      "code": "242071",
+      "years": 9,
+      "range": "H30〜R8（9年度）"
+    },
+    {
+      "name": "伊丹市",
+      "code": "282073",
       "years": 9,
       "range": "H30〜R8（9年度）"
     },
@@ -559,6 +583,12 @@ export const ROADMAP_PROGRESS = {
       "code": "131016",
       "years": 6,
       "range": "R2〜R8（6年度）"
+    },
+    {
+      "name": "小平市",
+      "code": "132110",
+      "years": 6,
+      "range": "R1〜R8（6年度）"
     },
     {
       "name": "横浜市",

@@ -12804,5 +12804,335 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.yachiyo.lg.jp/uploaded/attachment/9879.pdf",
     "license": "八千代市公式ホームページ（以下、「本ホームページ」という）全体及び掲載情報の著作権は、原則として八千代市（以下、「本市」という）に帰属します（一部の画像等の著作権は、原著作者が所有しています。）。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、本市の許可なく本ホームページに掲載している文書・画像等を無断で複製・転用することを禁止します。",
     "target": "file"
+  },
+  "/sources/itami-yosangaiyou-r8/R8_yosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.itami.lg.jp/material/files/group/12/R8_yosan.pdf",
+    "license": "伊丹市ホームページに掲載している情報（文字・画像・写真など）に関する諸権利は、原則として伊丹市に帰属します。無断転載は禁止します。",
+    "target": "file"
+  },
+  "/sources/itami-yosangaiyou-r7/R07press0101.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.itami.lg.jp/material/files/group/12/R07press0101.pdf",
+    "license": "伊丹市ホームページに掲載している情報（文字・画像・写真など）に関する諸権利は、原則として伊丹市に帰属します。無断転載は禁止します。",
+    "target": "file"
+  },
+  "/sources/itami-yosangaiyou-r6/r6-gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.itami.lg.jp/material/files/group/12/r6-gaiyou.pdf",
+    "license": "伊丹市ホームページに掲載している情報（文字・画像・写真など）に関する諸権利は、原則として伊丹市に帰属します。無断転載は禁止します。",
+    "target": "file"
+  },
+  "/sources/itami-yosangaiyou-r5/reiwa5nenntousyoyosanngaiyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.itami.lg.jp/material/files/group/12/reiwa5nenntousyoyosanngaiyou2.pdf",
+    "license": "伊丹市ホームページに掲載している情報（文字・画像・写真など）に関する諸権利は、原則として伊丹市に帰属します。無断転載は禁止します。",
+    "target": "file"
+  },
+  "/sources/itami-yosangaiyou-r4/reiwa4tousyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.itami.lg.jp/material/files/group/12/reiwa4tousyo.pdf",
+    "license": "伊丹市ホームページに掲載している情報（文字・画像・写真など）に関する諸権利は、原則として伊丹市に帰属します。無断転載は禁止します。",
+    "target": "file"
+  },
+  "/sources/itami-yosangaiyou-r3/reiwa3nenndo(2021nenndo)toushoyosanoyobireiwa2nenndo(2020nenndo)2gatuhoseiyosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.itami.lg.jp/material/files/group/12/reiwa3nenndo(2021nenndo)toushoyosanoyobireiwa2nenndo(2020nenndo)2gatuhoseiyosan.pdf",
+    "license": "伊丹市ホームページに掲載している情報（文字・画像・写真など）に関する諸権利は、原則として伊丹市に帰属します。無断転載は禁止します。",
+    "target": "file"
+  },
+  "/sources/itami-yosangaiyou-r2/reiwaninenndotousyoyosannannhoka.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.itami.lg.jp/material/files/group/12/reiwaninenndotousyoyosannannhoka.pdf",
+    "license": "伊丹市ホームページに掲載している情報（文字・画像・写真など）に関する諸権利は、原則として伊丹市に帰属します。無断転載は禁止します。",
+    "target": "file"
+  },
+  "/sources/itami-yosangaiyou-h31/H31_press1_2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.itami.lg.jp/material/files/group/12/H31_press1_2.pdf",
+    "license": "伊丹市ホームページに掲載している情報（文字・画像・写真など）に関する諸権利は、原則として伊丹市に帰属します。無断転載は禁止します。",
+    "target": "file"
+  },
+  "/sources/itami-yosangaiyou-h30/H30press.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.itami.lg.jp/material/files/group/12/H30press.pdf",
+    "license": "伊丹市ホームページに掲載している情報（文字・画像・写真など）に関する諸権利は、原則として伊丹市に帰属します。無断転載は禁止します。",
+    "target": "file"
+  },
+  "/sources/kodaira-yosansho-r8/att_0000010.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kodaira.tokyo.jp/kurashi/124/124053.html",
+    "license": "東京都小平市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "page"
+  },
+  "/sources/kodaira-yosansho-r6/att_0000009.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kodaira.tokyo.jp/kurashi/108/108990.html",
+    "license": "東京都小平市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "page"
+  },
+  "/sources/kodaira-yosansho-r4/att_0000015.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kodaira.tokyo.jp/kurashi/093/093834.html",
+    "license": "東京都小平市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "page"
+  },
+  "/sources/kodaira-yosansho-r3/att_0000029.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kodaira.tokyo.jp/kurashi/085/085735.html",
+    "license": "東京都小平市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "page"
+  },
+  "/sources/kodaira-yosansho-r2/att_0000010.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kodaira.tokyo.jp/kurashi/078/078209.html",
+    "license": "東京都小平市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "page"
+  },
+  "/sources/kodaira-yosansho-r1/att_0000010.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kodaira.tokyo.jp/kurashi/071/071986.html",
+    "license": "東京都小平市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "page"
+  },
+  "/sources/kumagaya-yosan-bunseki-r8/R8bunsekihyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kumagaya.lg.jp/about/zaisei/yosantuite/yosangaiyo/R8yosangaiyo.html",
+    "license": "本市ホームページに掲載されている文書や、画像等の情報及び内容に関しては著作権の対象になっています。著作権は本市およびウェブ作成者、画像等提供者、撮影者等に帰属しており、日本国著作権法等により保護されています。なお、本市ホームページに掲載されている文書・画像等の無断使用・転載を禁止します。ただし、熊谷市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "page"
+  },
+  "/sources/kumagaya-yosan-bunseki-r7/R7bunsekihyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kumagaya.lg.jp/about/zaisei/yosantuite/yosangaiyo/0001.html",
+    "license": "本市ホームページに掲載されている文書や、画像等の情報及び内容に関しては著作権の対象になっています。著作権は本市およびウェブ作成者、画像等提供者、撮影者等に帰属しており、日本国著作権法等により保護されています。なお、本市ホームページに掲載されている文書・画像等の無断使用・転載を禁止します。ただし、熊谷市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "page"
+  },
+  "/sources/kumagaya-yosan-bunseki-r6/R6bunsekihyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kumagaya.lg.jp/about/zaisei/yosantuite/yosangaiyo/ta04025560.html",
+    "license": "本市ホームページに掲載されている文書や、画像等の情報及び内容に関しては著作権の対象になっています。著作権は本市およびウェブ作成者、画像等提供者、撮影者等に帰属しており、日本国著作権法等により保護されています。なお、本市ホームページに掲載されている文書・画像等の無断使用・転載を禁止します。ただし、熊谷市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "page"
+  },
+  "/sources/kumagaya-yosan-bunseki-r5/R5bunsekihyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kumagaya.lg.jp/about/zaisei/yosantuite/yosangaiyo/R5toushoyosangaiyou.html",
+    "license": "本市ホームページに掲載されている文書や、画像等の情報及び内容に関しては著作権の対象になっています。著作権は本市およびウェブ作成者、画像等提供者、撮影者等に帰属しており、日本国著作権法等により保護されています。なお、本市ホームページに掲載されている文書・画像等の無断使用・転載を禁止します。ただし、熊谷市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "page"
+  },
+  "/sources/kumagaya-yosan-bunseki-r4/R4-bunsekihyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kumagaya.lg.jp/about/zaisei/yosantuite/yosangaiyo/R4yosan.html",
+    "license": "本市ホームページに掲載されている文書や、画像等の情報及び内容に関しては著作権の対象になっています。著作権は本市およびウェブ作成者、画像等提供者、撮影者等に帰属しており、日本国著作権法等により保護されています。なお、本市ホームページに掲載されている文書・画像等の無断使用・転載を禁止します。ただし、熊谷市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "page"
+  },
+  "/sources/kumagaya-yosan-bunseki-r3/R3bunseki.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kumagaya.lg.jp/about/zaisei/yosantuite/yosangaiyo/R3gaiyou.html",
+    "license": "本市ホームページに掲載されている文書や、画像等の情報及び内容に関しては著作権の対象になっています。著作権は本市およびウェブ作成者、画像等提供者、撮影者等に帰属しており、日本国著作権法等により保護されています。なお、本市ホームページに掲載されている文書・画像等の無断使用・転載を禁止します。ただし、熊谷市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "page"
+  },
+  "/sources/kumagaya-yosan-bunseki-r2/bunsekihyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kumagaya.lg.jp/about/zaisei/yosantuite/yosangaiyo/r2-gaiyou.html",
+    "license": "本市ホームページに掲載されている文書や、画像等の情報及び内容に関しては著作権の対象になっています。著作権は本市およびウェブ作成者、画像等提供者、撮影者等に帰属しており、日本国著作権法等により保護されています。なお、本市ホームページに掲載されている文書・画像等の無断使用・転載を禁止します。ただし、熊谷市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "page"
+  },
+  "/sources/kumagaya-yosan-setsumeisho-h31/ikkatsu31.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kumagaya.lg.jp/about/zaisei/yosantuite/yosansyo/h31-no2.html",
+    "license": "本市ホームページに掲載されている文書や、画像等の情報及び内容に関しては著作権の対象になっています。著作権は本市およびウェブ作成者、画像等提供者、撮影者等に帰属しており、日本国著作権法等により保護されています。なお、本市ホームページに掲載されている文書・画像等の無断使用・転載を禁止します。ただし、熊谷市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "page"
+  },
+  "/sources/kumagaya-yosan-setsumeisho-h30/ikkatsu30.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kumagaya.lg.jp/about/zaisei/yosantuite/yosansyo/h30-no2.html",
+    "license": "本市ホームページに掲載されている文書や、画像等の情報及び内容に関しては著作権の対象になっています。著作権は本市およびウェブ作成者、画像等提供者、撮影者等に帰属しており、日本国著作権法等により保護されています。なお、本市ホームページに掲載されている文書・画像等の無断使用・転載を禁止します。ただし、熊谷市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "page"
+  },
+  "/sources/kumagaya-yosan-setsumeisho-h29/ikkatsu29.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kumagaya.lg.jp/about/zaisei/yosantuite/yosansyo/h29-no2.html",
+    "license": "本市ホームページに掲載されている文書や、画像等の情報及び内容に関しては著作権の対象になっています。著作権は本市およびウェブ作成者、画像等提供者、撮影者等に帰属しており、日本国著作権法等により保護されています。なお、本市ホームページに掲載されている文書・画像等の無断使用・転載を禁止します。ただし、熊谷市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "page"
+  },
+  "/sources/kumagaya-yosan-setsumeisho-h28/ikkatsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kumagaya.lg.jp/about/zaisei/yosantuite/yosansyo/h28-no2.html",
+    "license": "本市ホームページに掲載されている文書や、画像等の情報及び内容に関しては著作権の対象になっています。著作権は本市およびウェブ作成者、画像等提供者、撮影者等に帰属しており、日本国著作権法等により保護されています。なお、本市ホームページに掲載されている文書・画像等の無断使用・転載を禁止します。ただし、熊谷市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "page"
+  },
+  "/sources/kumagaya-yosan-setsumeisho-h27/ikkatsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kumagaya.lg.jp/about/zaisei/yosantuite/yosansyo/h27-no2.html",
+    "license": "本市ホームページに掲載されている文書や、画像等の情報及び内容に関しては著作権の対象になっています。著作権は本市およびウェブ作成者、画像等提供者、撮影者等に帰属しており、日本国著作権法等により保護されています。なお、本市ホームページに掲載されている文書・画像等の無断使用・転載を禁止します。ただし、熊谷市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "page"
+  },
+  "/sources/kumagaya-yosan-setsumeisho-h26/ikkatsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kumagaya.lg.jp/about/zaisei/yosantuite/yosansyo/h26-no2.html",
+    "license": "本市ホームページに掲載されている文書や、画像等の情報及び内容に関しては著作権の対象になっています。著作権は本市およびウェブ作成者、画像等提供者、撮影者等に帰属しており、日本国著作権法等により保護されています。なお、本市ホームページに掲載されている文書・画像等の無断使用・転載を禁止します。ただし、熊谷市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "page"
+  },
+  "/sources/kumagaya-yosan-setsumeisho-h25/ikkatsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kumagaya.lg.jp/about/zaisei/yosantuite/yosansyo/h25-no2.html",
+    "license": "本市ホームページに掲載されている文書や、画像等の情報及び内容に関しては著作権の対象になっています。著作権は本市およびウェブ作成者、画像等提供者、撮影者等に帰属しており、日本国著作権法等により保護されています。なお、本市ホームページに掲載されている文書・画像等の無断使用・転載を禁止します。ただし、熊谷市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "page"
+  },
+  "/sources/kumagaya-yosan-setsumeisho-h24/No.2-ikkatsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kumagaya.lg.jp/about/zaisei/yosantuite/yosansyo/h24-no2.html",
+    "license": "本市ホームページに掲載されている文書や、画像等の情報及び内容に関しては著作権の対象になっています。著作権は本市およびウェブ作成者、画像等提供者、撮影者等に帰属しており、日本国著作権法等により保護されています。なお、本市ホームページに掲載されている文書・画像等の無断使用・転載を禁止します。ただし、熊谷市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "page"
+  },
+  "/sources/kumagaya-yosan-setsumeisho-h23/No.2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kumagaya.lg.jp/about/zaisei/yosantuite/yosansyo/23_yosansyo2.html",
+    "license": "本市ホームページに掲載されている文書や、画像等の情報及び内容に関しては著作権の対象になっています。著作権は本市およびウェブ作成者、画像等提供者、撮影者等に帰属しており、日本国著作権法等により保護されています。なお、本市ホームページに掲載されている文書・画像等の無断使用・転載を禁止します。ただし、熊谷市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "page"
+  },
+  "/sources/matsue-yosangaiyou-r8/R8toushoyosangaiyou_.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsue.lg.jp/soshikikarasagasu/zaiseibu_zaiseika/gyozaisei/1/3/16_2/24268.html",
+    "license": "「松江市ウェブサイト」に掲載されている文章、写真、イラスト、画像等の著作権は、松江市またはコンテンツ提供者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で使用・転載等することはできません。利用の許諾については、各ページに記載されている課等へお問い合わせください。",
+    "target": "page"
+  },
+  "/sources/matsue-yosangaiyou-r7/R7toushoyosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsue.lg.jp/soshikikarasagasu/zaiseibu_zaiseika/gyozaisei/1/3/15/20819.html",
+    "license": "「松江市ウェブサイト」に掲載されている文章、写真、イラスト、画像等の著作権は、松江市またはコンテンツ提供者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で使用・転載等することはできません。利用の許諾については、各ページに記載されている課等へお問い合わせください。",
+    "target": "page"
+  },
+  "/sources/matsue-yosangaiyou-r6/01_R6toushoyosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsue.lg.jp/soshikikarasagasu/zaiseibu_zaiseika/gyozaisei/1/3/14/17359.html",
+    "license": "「松江市ウェブサイト」に掲載されている文章、写真、イラスト、画像等の著作権は、松江市またはコンテンツ提供者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で使用・転載等することはできません。利用の許諾については、各ページに記載されている課等へお問い合わせください。",
+    "target": "page"
+  },
+  "/sources/matsue-yosangaiyou-r5/01_R5toushoyosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsue.lg.jp/gyoseijoho/gyozaisei/3/3/16/10188.html",
+    "license": "「松江市ウェブサイト」に掲載されている文章、写真、イラスト、画像等の著作権は、松江市またはコンテンツ提供者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で使用・転載等することはできません。利用の許諾については、各ページに記載されている課等へお問い合わせください。",
+    "target": "page"
+  },
+  "/sources/matsue-yosangaiyou-r4/01_R4toushoyosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsue.lg.jp/soshikikarasagasu/zaiseibu_zaiseika/gyozaisei/1/3/12/14028.html",
+    "license": "「松江市ウェブサイト」に掲載されている文章、写真、イラスト、画像等の著作権は、松江市またはコンテンツ提供者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で使用・転載等することはできません。利用の許諾については、各ページに記載されている課等へお問い合わせください。",
+    "target": "page"
+  },
+  "/sources/matsue-yosangaiyou-r3/02_R3kaikeibetu_ippankaikeiyosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsue.lg.jp/soshikikarasagasu/zaiseibu_zaiseika/gyozaisei/1/3/11/11966.html",
+    "license": "「松江市ウェブサイト」に掲載されている文章、写真、イラスト、画像等の著作権は、松江市またはコンテンツ提供者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で使用・転載等することはできません。利用の許諾については、各ページに記載されている課等へお問い合わせください。",
+    "target": "page"
+  },
+  "/sources/matsue-yosangaiyou-r2/02_R2kaikeibetu_ippankaikeiyosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsue.lg.jp/soshikikarasagasu/zaiseibu_zaiseika/gyozaisei/1/3/10/9946.html",
+    "license": "「松江市ウェブサイト」に掲載されている文章、写真、イラスト、画像等の著作権は、松江市またはコンテンツ提供者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で使用・転載等することはできません。利用の許諾については、各ページに記載されている課等へお問い合わせください。",
+    "target": "page"
+  },
+  "/sources/matsue-yosangaiyou-r1/02_H31kaikeibetu_ippankaikeiyosan2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsue.lg.jp/soshikikarasagasu/zaiseibu_zaiseika/gyozaisei/1/3/9/8009.html",
+    "license": "「松江市ウェブサイト」に掲載されている文章、写真、イラスト、画像等の著作権は、松江市またはコンテンツ提供者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で使用・転載等することはできません。利用の許諾については、各ページに記載されている課等へお問い合わせください。",
+    "target": "page"
+  },
+  "/sources/matsue-yosangaiyou-h30/H30kaikeibetsu2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsue.lg.jp/soshikikarasagasu/zaiseibu_zaiseika/gyozaisei/1/3/8/6167.html",
+    "license": "「松江市ウェブサイト」に掲載されている文章、写真、イラスト、画像等の著作権は、松江市またはコンテンツ提供者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で使用・転載等することはできません。利用の許諾については、各ページに記載されている課等へお問い合わせください。",
+    "target": "page"
+  },
+  "/sources/matsue-yosangaiyou-h29/55910014.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsue.lg.jp/soshikikarasagasu/zaiseibu_zaiseika/gyozaisei/1/3/7/4611.html",
+    "license": "「松江市ウェブサイト」に掲載されている文章、写真、イラスト、画像等の著作権は、松江市またはコンテンツ提供者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で使用・転載等することはできません。利用の許諾については、各ページに記載されている課等へお問い合わせください。",
+    "target": "page"
+  },
+  "/sources/matsue-yosangaiyou-h28/H28kaikeibetu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsue.lg.jp/soshikikarasagasu/zaiseibu_zaiseika/gyozaisei/1/3/6/3648.html",
+    "license": "「松江市ウェブサイト」に掲載されている文章、写真、イラスト、画像等の著作権は、松江市またはコンテンツ提供者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で使用・転載等することはできません。利用の許諾については、各ページに記載されている課等へお問い合わせください。",
+    "target": "page"
+  },
+  "/sources/matsue-yosangaiyou-h27/H27_tosyo_02.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsue.lg.jp/soshikikarasagasu/zaiseibu_zaiseika/gyozaisei/1/3/5/3647.html",
+    "license": "「松江市ウェブサイト」に掲載されている文章、写真、イラスト、画像等の著作権は、松江市またはコンテンツ提供者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で使用・転載等することはできません。利用の許諾については、各ページに記載されている課等へお問い合わせください。",
+    "target": "page"
+  },
+  "/sources/matsue-yosangaiyou-h26/H26_tosyo_02.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsue.lg.jp/soshikikarasagasu/zaiseibu_zaiseika/gyozaisei/1/3/5_2/3651.html",
+    "license": "「松江市ウェブサイト」に掲載されている文章、写真、イラスト、画像等の著作権は、松江市またはコンテンツ提供者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で使用・転載等することはできません。利用の許諾については、各ページに記載されている課等へお問い合わせください。",
+    "target": "page"
+  },
+  "/sources/matsue-yosangaiyou-h25/H25_tosyo_02.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsue.lg.jp/soshikikarasagasu/zaiseibu_zaiseika/gyozaisei/1/3/5_3/3652.html",
+    "license": "「松江市ウェブサイト」に掲載されている文章、写真、イラスト、画像等の著作権は、松江市またはコンテンツ提供者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で使用・転載等することはできません。利用の許諾については、各ページに記載されている課等へお問い合わせください。",
+    "target": "page"
+  },
+  "/sources/matsue-yosangaiyou-h24/H24_tosho_02.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsue.lg.jp/soshikikarasagasu/zaiseibu_zaiseika/gyozaisei/1/3/4/3653.html",
+    "license": "「松江市ウェブサイト」に掲載されている文章、写真、イラスト、画像等の著作権は、松江市またはコンテンツ提供者が所有しています。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で使用・転載等することはできません。利用の許諾については、各ページに記載されている課等へお問い合わせください。",
+    "target": "page"
+  },
+  "/sources/suzuka-yosansho-r8/3.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suzuka.lg.jp/_res/projects/default_project/_page_/001/016/327/3.pdf",
+    "license": "このサイト（○○○.city.suzuka.lg.jp）から発信するコンテンツの著作権は、鈴鹿市に帰属します。このサイトから発信するコンテンツについて、次項の例外を除いて引用を承認します。ただし、引用する場合は、出所を明示する等の一般的な引用のルールに従ってください。アイコン・写真等の画像データの複製(デジタルデータとしての単純な複製）による使用または複製物を改変しての使用は、原則禁止します。",
+    "target": "file"
+  },
+  "/sources/suzuka-yosansho-r7/yosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suzuka.lg.jp/_res/projects/default_project/_page_/001/014/749/yosan.pdf",
+    "license": "このサイト（○○○.city.suzuka.lg.jp）から発信するコンテンツの著作権は、鈴鹿市に帰属します。このサイトから発信するコンテンツについて、次項の例外を除いて引用を承認します。ただし、引用する場合は、出所を明示する等の一般的な引用のルールに従ってください。アイコン・写真等の画像データの複製(デジタルデータとしての単純な複製）による使用または複製物を改変しての使用は、原則禁止します。",
+    "target": "file"
+  },
+  "/sources/suzuka-yosansho-r6/528_005.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suzuka.lg.jp/_res/projects/default_project/_page_/001/012/448/528_005.pdf",
+    "license": "このサイト（○○○.city.suzuka.lg.jp）から発信するコンテンツの著作権は、鈴鹿市に帰属します。このサイトから発信するコンテンツについて、次項の例外を除いて引用を承認します。ただし、引用する場合は、出所を明示する等の一般的な引用のルールに従ってください。アイコン・写真等の画像データの複製(デジタルデータとしての単純な複製）による使用または複製物を改変しての使用は、原則禁止します。",
+    "target": "file"
+  },
+  "/sources/suzuka-yosansho-r5/482_006.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suzuka.lg.jp/_res/projects/default_project/_page_/001/012/496/482_006.pdf",
+    "license": "このサイト（○○○.city.suzuka.lg.jp）から発信するコンテンツの著作権は、鈴鹿市に帰属します。このサイトから発信するコンテンツについて、次項の例外を除いて引用を承認します。ただし、引用する場合は、出所を明示する等の一般的な引用のルールに従ってください。アイコン・写真等の画像データの複製(デジタルデータとしての単純な複製）による使用または複製物を改変しての使用は、原則禁止します。",
+    "target": "file"
+  },
+  "/sources/suzuka-yosansho-r4/416_006.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suzuka.lg.jp/_res/projects/default_project/_page_/001/012/534/416_006.pdf",
+    "license": "このサイト（○○○.city.suzuka.lg.jp）から発信するコンテンツの著作権は、鈴鹿市に帰属します。このサイトから発信するコンテンツについて、次項の例外を除いて引用を承認します。ただし、引用する場合は、出所を明示する等の一般的な引用のルールに従ってください。アイコン・写真等の画像データの複製(デジタルデータとしての単純な複製）による使用または複製物を改変しての使用は、原則禁止します。",
+    "target": "file"
+  },
+  "/sources/suzuka-yosansho-r3/363_006.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suzuka.lg.jp/_res/projects/default_project/_page_/001/012/535/363_006.pdf",
+    "license": "このサイト（○○○.city.suzuka.lg.jp）から発信するコンテンツの著作権は、鈴鹿市に帰属します。このサイトから発信するコンテンツについて、次項の例外を除いて引用を承認します。ただし、引用する場合は、出所を明示する等の一般的な引用のルールに従ってください。アイコン・写真等の画像データの複製(デジタルデータとしての単純な複製）による使用または複製物を改変しての使用は、原則禁止します。",
+    "target": "file"
+  },
+  "/sources/suzuka-yosansho-r2/304_006.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suzuka.lg.jp/_res/projects/default_project/_page_/001/012/607/304_006.pdf",
+    "license": "このサイト（○○○.city.suzuka.lg.jp）から発信するコンテンツの著作権は、鈴鹿市に帰属します。このサイトから発信するコンテンツについて、次項の例外を除いて引用を承認します。ただし、引用する場合は、出所を明示する等の一般的な引用のルールに従ってください。アイコン・写真等の画像データの複製(デジタルデータとしての単純な複製）による使用または複製物を改変しての使用は、原則禁止します。",
+    "target": "file"
+  },
+  "/sources/suzuka-yosansho-h31/266_006.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suzuka.lg.jp/_res/projects/default_project/_page_/001/012/538/266_006.pdf",
+    "license": "このサイト（○○○.city.suzuka.lg.jp）から発信するコンテンツの著作権は、鈴鹿市に帰属します。このサイトから発信するコンテンツについて、次項の例外を除いて引用を承認します。ただし、引用する場合は、出所を明示する等の一般的な引用のルールに従ってください。アイコン・写真等の画像データの複製(デジタルデータとしての単純な複製）による使用または複製物を改変しての使用は、原則禁止します。",
+    "target": "file"
+  },
+  "/sources/suzuka-yosan-shiryou-h30/yosan_2018.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20200214/20200213203750/https://www.city.suzuka.lg.jp/kouhou/gyosei/plan/zaisei/data/pdfs/yosan_2018.pdf",
+    "license": "このサイト（○○○.city.suzuka.lg.jp）から発信するコンテンツの著作権は、鈴鹿市に帰属します。このサイトから発信するコンテンツについて、次項の例外を除いて引用を承認します。ただし、引用する場合は、出所を明示する等の一般的な引用のルールに従ってください。アイコン・写真等の画像データの複製(デジタルデータとしての単純な複製）による使用または複製物を改変しての使用は、原則禁止します。",
+    "target": "file"
   }
 };

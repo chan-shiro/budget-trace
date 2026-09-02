@@ -1,0 +1,12 @@
+{
+  "sourceId": "suzuka-yosansho-r7",
+  "files": [
+    {
+      "filename": "yosan.pdf",
+      "sha256": "b807060efac494c8f6087781613709fcef409d67ce76d11b480b558c55693cb8",
+      "bytes": 5296406,
+      "fetchedAt": "2026-09-02T07:09:53.479Z",
+      "fetchedFrom": "https://www.city.suzuka.lg.jp/_res/projects/default_project/_page_/001/014/749/yosan.pdf"
+    }
+  ]
+}

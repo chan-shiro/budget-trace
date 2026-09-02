@@ -1,0 +1,391 @@
+{
+  "docType": "budget-book",
+  "sourceId": "kumagaya-yosan-bunseki-r8",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-09-02T07:02:31.374Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R8",
+  "account": "一般会計",
+  "revenueTotal": 80300000,
+  "expenditureTotal": 80300000,
+  "prevRevenueTotal": 79700000,
+  "prevExpenditureTotal": 79700000,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "市税",
+      "amount": 32778000,
+      "prevAmount": 31784458,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "地方譲与税",
+      "amount": 634790,
+      "prevAmount": 626992,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "利子割交付金",
+      "amount": 57000,
+      "prevAmount": 17000,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "配当割交付金",
+      "amount": 300000,
+      "prevAmount": 192000,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 330000,
+      "prevAmount": 180000,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "法人事業税交付金",
+      "amount": 511000,
+      "prevAmount": 492000,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "地方消費税交付金",
+      "amount": 5400000,
+      "prevAmount": 4900000,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "ゴルフ場利用税交付金",
+      "amount": 63000,
+      "prevAmount": 63000,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "環境性能割交付金",
+      "amount": 139000,
+      "prevAmount": 157000,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "地方特例交付金",
+      "amount": 179000,
+      "prevAmount": 170000,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "地方交付税",
+      "amount": 7350000,
+      "prevAmount": 6650000,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 20400,
+      "prevAmount": 20800,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "分担金及び負担金",
+      "amount": 37264,
+      "prevAmount": 23634,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "使用料及び手数料",
+      "amount": 719440,
+      "prevAmount": 736030,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "国庫支出金",
+      "amount": 15323947,
+      "prevAmount": 13440204,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "県支出金",
+      "amount": 6621126,
+      "prevAmount": 5836520,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 17,
+      "kanName": "財産収入",
+      "amount": 186055,
+      "prevAmount": 142008,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 18,
+      "kanName": "寄附金",
+      "amount": 5665,
+      "prevAmount": 11341,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 19,
+      "kanName": "繰入金",
+      "amount": 4433164,
+      "prevAmount": 5504245,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 20,
+      "kanName": "繰越金",
+      "amount": 1000000,
+      "prevAmount": 1000000,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 21,
+      "kanName": "諸収入",
+      "amount": 1927649,
+      "prevAmount": 2225268,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 22,
+      "kanName": "市債",
+      "amount": 2283500,
+      "prevAmount": 5527500,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 452940,
+      "prevAmount": 447728,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 8980740,
+      "prevAmount": 8239039,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "民生費",
+      "amount": 35573620,
+      "prevAmount": 38045145,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "衛生費",
+      "amount": 6671420,
+      "prevAmount": 6249206,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "労働費",
+      "amount": 358986,
+      "prevAmount": 367175,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "農林水産業費",
+      "amount": 1256469,
+      "prevAmount": 1121355,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "商工費",
+      "amount": 1616662,
+      "prevAmount": 1619733,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "土木費",
+      "amount": 10456385,
+      "prevAmount": 9328667,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "消防費",
+      "amount": 3108469,
+      "prevAmount": 2874637,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "教育費",
+      "amount": 7401257,
+      "prevAmount": 7032692,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 11,
+      "kanName": "公債費",
+      "amount": 4323052,
+      "prevAmount": 4274623,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 4
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 12,
+      "kanName": "予備費",
+      "amount": 100000,
+      "prevAmount": 100000,
+      "locator": {
+        "file": "R8bunsekihyo.pdf",
+        "page": 4
+      }
+    }
+  ]
+}
