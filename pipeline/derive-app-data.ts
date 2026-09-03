@@ -3382,7 +3382,14 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = ${JSON.stringif
       originUrl, landingPage: s.landingPage ?? null, files,
       archived: arch.length > 0 || isArchiveOrigin,
       archiveOrigin: isArchiveOrigin,
-      archiveUrl: arch[0]?.waybackUrl ?? (isArchiveOrigin ? originUrl : null),
+      // ⚠ 魚拓リンクには **sha256 が不一致と分かっている捕捉を出さない**（2026-09-03・三鷹 R8）。
+      //   `attach_37785_1.pdf` のような「今年度用に毎年上書きされる URL」では、台帳の捕捉が**同じ URL に置かれていた
+      //   別年度の文書**であることがあり、`arch[0]` をそのまま出すと「令和8年度」のカードの魚拓が令和3年度の PDF を開いた。
+      //   優先順: sha256 一致 → 未照合（一致・不一致が未確定）→ 無し。**不一致（false）は落とす**。
+      //   ⚠ `archived` のバッジは従来どおり「エントリがある」で点く（照合済みかは `shaVerified` が別に持つ）。
+      archiveUrl:
+        (arch.find((a) => a.sha256Match === true) ?? arch.find((a) => a.sha256Match !== false))?.waybackUrl ??
+        (isArchiveOrigin ? originUrl : null),
       shaVerified: arch.some((a) => a.sha256Match === true),
     };
   };

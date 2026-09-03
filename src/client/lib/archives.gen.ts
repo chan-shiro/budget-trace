@@ -1138,7 +1138,7 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.city.mitaka.lg.jp/c_service/024/attached/attach_24595_1.pdf": "https://web.archive.org/web/20260902184806/https://www.city.mitaka.lg.jp/c_service/024/attached/attach_24595_1.pdf",
   "https://www.city.mitaka.lg.jp/c_service/024/attached/attach_24595_11.pdf": "https://web.archive.org/web/20260902184703/https://www.city.mitaka.lg.jp/c_service/024/attached/attach_24595_11.pdf",
   "https://www.city.mitaka.lg.jp/c_service/024/attached/attach_24595_9.pdf": "https://web.archive.org/web/20260902184429/https://www.city.mitaka.lg.jp/c_service/024/attached/attach_24595_9.pdf",
-  "https://www.city.mitaka.lg.jp/c_service/037/037785.html": "https://web.archive.org/web/20260609154933/https://www.city.mitaka.lg.jp/c_service/037/037785.html",
+  "https://www.city.mitaka.lg.jp/c_service/037/037785.html": "https://web.archive.org/web/20260903011825/https://www.city.mitaka.lg.jp/c_service/037/037785.html",
   "https://www.city.mitaka.lg.jp/c_service/037/attached/attach_37785_1.pdf": "https://web.archive.org/web/20210310233820/https://www.city.mitaka.lg.jp/c_service/037/attached/attach_37785_1.pdf",
   "https://www.city.mito.lg.jp/page/5715.html": "https://web.archive.org/web/20260117170103/https://www.city.mito.lg.jp/page/5715.html",
   "https://www.city.mito.lg.jp/uploaded/attachment/17737.pdf": "https://web.archive.org/web/20250717221741/https://www.city.mito.lg.jp/uploaded/attachment/17737.pdf",
