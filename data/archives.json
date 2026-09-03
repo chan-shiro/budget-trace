@@ -26334,10 +26334,18 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20250422132750/https://www.city.tachikawa.lg.jp/_res/projects/default_project/_page_/001/007/125/r5ippankaikeiyosansho.pdf",
       "waybackTimestamp": "20250422132750",
-      "checkedAt": "2026-09-03T02:27:40.815Z",
+      "checkedAt": "2026-09-03T02:49:48.672Z",
       "sha256Match": true,
       "waybackBytes": 5084911,
       "rawSha256": "f694812f78d4e02a1afd68b372f8cf77cad8220062e1d3639f27e61c1b9821c0"
+    },
+    {
+      "sourceId": "tachikawa-yosansho-r5",
+      "url": "https://www.city.tachikawa.lg.jp/shisei/yosan/1007100/1007125.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260903022943/https://www.city.tachikawa.lg.jp/shisei/yosan/1007100/1007125.html",
+      "waybackTimestamp": "20260903022943",
+      "checkedAt": "2026-09-03T02:49:51.750Z"
     },
     {
       "sourceId": "tachikawa-yosansho-r6",
