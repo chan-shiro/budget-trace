@@ -13134,5 +13134,263 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://warp.ndl.go.jp/20200214/20200213203750/https://www.city.suzuka.lg.jp/kouhou/gyosei/plan/zaisei/data/pdfs/yosan_2018.pdf",
     "license": "このサイト（○○○.city.suzuka.lg.jp）から発信するコンテンツの著作権は、鈴鹿市に帰属します。このサイトから発信するコンテンツについて、次項の例外を除いて引用を承認します。ただし、引用する場合は、出所を明示する等の一般的な引用のルールに従ってください。アイコン・写真等の画像データの複製(デジタルデータとしての単純な複製）による使用または複製物を改変しての使用は、原則禁止します。",
     "target": "file"
+  },
+  "/sources/mitaka-yosangaiyou-r8/attach_37785_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.mitaka.lg.jp/c_service/037/attached/attach_37785_1.pdf",
+    "license": "三鷹市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）は、オープンデータとして公開されているものを除き、著作権は三鷹市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的のために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "file"
+  },
+  "/sources/mitaka-yosangaiyou-r7/attach_24595_9.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.mitaka.lg.jp/c_service/024/attached/attach_24595_9.pdf",
+    "license": "三鷹市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）は、オープンデータとして公開されているものを除き、著作権は三鷹市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的のために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "file"
+  },
+  "/sources/mitaka-yosangaiyou-r6/attach_24595_11.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.mitaka.lg.jp/c_service/024/attached/attach_24595_11.pdf",
+    "license": "三鷹市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）は、オープンデータとして公開されているものを除き、著作権は三鷹市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的のために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "file"
+  },
+  "/sources/mitaka-yosangaiyou-r5/attach_24595_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.mitaka.lg.jp/c_service/024/attached/attach_24595_1.pdf",
+    "license": "三鷹市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）は、オープンデータとして公開されているものを除き、著作権は三鷹市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的のために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "file"
+  },
+  "/sources/mitaka-yosangaiyou-r4/attach_24595_3.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.mitaka.lg.jp/c_service/024/attached/attach_24595_3.pdf",
+    "license": "三鷹市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）は、オープンデータとして公開されているものを除き、著作権は三鷹市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的のために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "file"
+  },
+  "/sources/mitaka-yosangaiyou-r3/attach_24595_5.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.mitaka.lg.jp/c_service/024/attached/attach_24595_5.pdf",
+    "license": "三鷹市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）は、オープンデータとして公開されているものを除き、著作権は三鷹市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的のために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "file"
+  },
+  "/sources/mitaka-yosangaiyou-r2/attach_24595_7.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.mitaka.lg.jp/c_service/024/attached/attach_24595_7.pdf",
+    "license": "三鷹市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）は、オープンデータとして公開されているものを除き、著作権は三鷹市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的のために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "file"
+  },
+  "/sources/mitaka-yosangaiyou-r1/attach_44181_11.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.mitaka.lg.jp/c_service/044/attached/attach_44181_11.pdf",
+    "license": "三鷹市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）は、オープンデータとして公開されているものを除き、著作権は三鷹市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的のために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "file"
+  },
+  "/sources/mitaka-yosangaiyou-h30/attach_44181_9.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.mitaka.lg.jp/c_service/044/attached/attach_44181_9.pdf",
+    "license": "三鷹市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）は、オープンデータとして公開されているものを除き、著作権は三鷹市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的のために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "file"
+  },
+  "/sources/mitaka-yosangaiyou-h29/attach_44181_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.mitaka.lg.jp/c_service/044/attached/attach_44181_1.pdf",
+    "license": "三鷹市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）は、オープンデータとして公開されているものを除き、著作権は三鷹市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的のために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "file"
+  },
+  "/sources/mitaka-yosangaiyou-h28/attach_44181_3.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.mitaka.lg.jp/c_service/044/attached/attach_44181_3.pdf",
+    "license": "三鷹市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）は、オープンデータとして公開されているものを除き、著作権は三鷹市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的のために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "file"
+  },
+  "/sources/mitaka-yosangaiyou-h27/attach_44181_5.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.mitaka.lg.jp/c_service/044/attached/attach_44181_5.pdf",
+    "license": "三鷹市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）は、オープンデータとして公開されているものを除き、著作権は三鷹市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的のために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "file"
+  },
+  "/sources/mitaka-yosangaiyou-h26/attach_44181_7.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.mitaka.lg.jp/c_service/044/attached/attach_44181_7.pdf",
+    "license": "三鷹市ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）は、オープンデータとして公開されているものを除き、著作権は三鷹市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的のために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "file"
+  },
+  "/sources/hino-yosansho-soukatsu-r8/r8ippann_soukatu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/030/505/r8ippann_soukatu.pdf",
+    "license": "日野市ホームページから発信するコンテンツ（テキスト、画像、PDF、その他データ）の著作権は日野市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。もし、これらの文書等について転用等を希望される場合は、その旨ご連絡下さい。",
+    "target": "file"
+  },
+  "/sources/hino-yosansho-soukatsu-r7/6.soukatu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/028/423/6.soukatu.pdf",
+    "license": "日野市ホームページから発信するコンテンツ（テキスト、画像、PDF、その他データ）の著作権は日野市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。もし、これらの文書等について転用等を希望される場合は、その旨ご連絡下さい。",
+    "target": "file"
+  },
+  "/sources/hino-yosansho-soukatsu-r6/6.soukatu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/025/883/6.soukatu.pdf",
+    "license": "日野市ホームページから発信するコンテンツ（テキスト、画像、PDF、その他データ）の著作権は日野市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。もし、これらの文書等について転用等を希望される場合は、その旨ご連絡下さい。",
+    "target": "file"
+  },
+  "/sources/hino-yosansho-soukatsu-r5/6.soukatu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/023/301/6.soukatu.pdf",
+    "license": "日野市ホームページから発信するコンテンツ（テキスト、画像、PDF、その他データ）の著作権は日野市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。もし、これらの文書等について転用等を希望される場合は、その旨ご連絡下さい。",
+    "target": "file"
+  },
+  "/sources/hino-yosansho-soukatsu-r4/6.soukatu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/019/187/6.soukatu.pdf",
+    "license": "日野市ホームページから発信するコンテンツ（テキスト、画像、PDF、その他データ）の著作権は日野市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。もし、これらの文書等について転用等を希望される場合は、その旨ご連絡下さい。",
+    "target": "file"
+  },
+  "/sources/hino-yosansho-soukatsu-r3/6.soukatu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/015/489/6.soukatu.pdf",
+    "license": "日野市ホームページから発信するコンテンツ（テキスト、画像、PDF、その他データ）の著作権は日野市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。もし、これらの文書等について転用等を希望される場合は、その旨ご連絡下さい。",
+    "target": "file"
+  },
+  "/sources/hino-yosansho-soukatsu-r2/r2ippan06soukatsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/013/546/r2ippan06soukatsu.pdf",
+    "license": "日野市ホームページから発信するコンテンツ（テキスト、画像、PDF、その他データ）の著作権は日野市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。もし、これらの文書等について転用等を希望される場合は、その旨ご連絡下さい。",
+    "target": "file"
+  },
+  "/sources/hino-yosansho-soukatsu-r1/06soukatu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/011/333/06soukatu.pdf",
+    "license": "日野市ホームページから発信するコンテンツ（テキスト、画像、PDF、その他データ）の著作権は日野市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。もし、これらの文書等について転用等を希望される場合は、その旨ご連絡下さい。",
+    "target": "file"
+  },
+  "/sources/hino-yosansho-soukatsu-h30/soukatu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/007/588/soukatu.pdf",
+    "license": "日野市ホームページから発信するコンテンツ（テキスト、画像、PDF、その他データ）の著作権は日野市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。もし、これらの文書等について転用等を希望される場合は、その旨ご連絡下さい。",
+    "target": "file"
+  },
+  "/sources/hino-yosansho-soukatsu-h29/20170222-163212.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/005/069/20170222-163212.pdf",
+    "license": "日野市ホームページから発信するコンテンツ（テキスト、画像、PDF、その他データ）の著作権は日野市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。もし、これらの文書等について転用等を希望される場合は、その旨ご連絡下さい。",
+    "target": "file"
+  },
+  "/sources/hino-yosansho-soukatsu-h28/20160330-090509.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/005/072/20160330-090509.pdf",
+    "license": "日野市ホームページから発信するコンテンツ（テキスト、画像、PDF、その他データ）の著作権は日野市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。もし、これらの文書等について転用等を希望される場合は、その旨ご連絡下さい。",
+    "target": "file"
+  },
+  "/sources/hino-yosansho-soukatsu-h27/20150409-134546.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/005/075/20150409-134546.pdf",
+    "license": "日野市ホームページから発信するコンテンツ（テキスト、画像、PDF、その他データ）の著作権は日野市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。もし、これらの文書等について転用等を希望される場合は、その旨ご連絡下さい。",
+    "target": "file"
+  },
+  "/sources/hino-yosansho-soukatsu-h26/20140304-142033.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/005/078/20140304-142033.pdf",
+    "license": "日野市ホームページから発信するコンテンツ（テキスト、画像、PDF、その他データ）の著作権は日野市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。もし、これらの文書等について転用等を希望される場合は、その旨ご連絡下さい。",
+    "target": "file"
+  },
+  "/sources/hino-yosansho-soukatsu-h25/20130221-184129.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/005/081/20130221-184129.pdf",
+    "license": "日野市ホームページから発信するコンテンツ（テキスト、画像、PDF、その他データ）の著作権は日野市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。もし、これらの文書等について転用等を希望される場合は、その旨ご連絡下さい。",
+    "target": "file"
+  },
+  "/sources/hino-yosansho-soukatsu-h24/20120223-132417.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/005/084/20120223-132417.pdf",
+    "license": "日野市ホームページから発信するコンテンツ（テキスト、画像、PDF、その他データ）の著作権は日野市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。もし、これらの文書等について転用等を希望される場合は、その旨ご連絡下さい。",
+    "target": "file"
+  },
+  "/sources/hino-yosansho-soukatsu-h23/20110216-083549.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/005/087/20110216-083549.pdf",
+    "license": "日野市ホームページから発信するコンテンツ（テキスト、画像、PDF、その他データ）の著作権は日野市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。もし、これらの文書等について転用等を希望される場合は、その旨ご連絡下さい。",
+    "target": "file"
+  },
+  "/sources/hino-yosansho-soukatsu-h22/20110215-113344.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/005/090/20110215-113344.pdf",
+    "license": "日野市ホームページから発信するコンテンツ（テキスト、画像、PDF、その他データ）の著作権は日野市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。もし、これらの文書等について転用等を希望される場合は、その旨ご連絡下さい。",
+    "target": "file"
+  },
+  "/sources/hino-yosansho-soukatsu-h21/20090326-161406.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/005/093/20090326-161406.pdf",
+    "license": "日野市ホームページから発信するコンテンツ（テキスト、画像、PDF、その他データ）の著作権は日野市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。もし、これらの文書等について転用等を希望される場合は、その旨ご連絡下さい。",
+    "target": "file"
+  },
+  "/sources/hino-yosansho-soukatsu-h20/soukatsu-ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/005/094/soukatsu-ippan.pdf",
+    "license": "日野市ホームページから発信するコンテンツ（テキスト、画像、PDF、その他データ）の著作権は日野市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。もし、これらの文書等について転用等を希望される場合は、その旨ご連絡下さい。",
+    "target": "file"
+  },
+  "/sources/hino-yosansho-soukatsu-h19/20090105-164846.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/005/095/20090105-164846.pdf",
+    "license": "日野市ホームページから発信するコンテンツ（テキスト、画像、PDF、その他データ）の著作権は日野市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。もし、これらの文書等について転用等を希望される場合は、その旨ご連絡下さい。",
+    "target": "file"
+  },
+  "/sources/hino-yosansho-soukatsu-h18/ippan_soukatsu18.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/005/096/ippan_soukatsu18.pdf",
+    "license": "日野市ホームページから発信するコンテンツ（テキスト、画像、PDF、その他データ）の著作権は日野市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。もし、これらの文書等について転用等を希望される場合は、その旨ご連絡下さい。",
+    "target": "file"
+  },
+  "/sources/hino-yosansho-soukatsu-h17/ippankaikeisoukatu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/005/097/ippankaikeisoukatu.pdf",
+    "license": "日野市ホームページから発信するコンテンツ（テキスト、画像、PDF、その他データ）の著作権は日野市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。もし、これらの文書等について転用等を希望される場合は、その旨ご連絡下さい。",
+    "target": "file"
+  },
+  "/sources/hino-yosansho-soukatsu-h16/ippannjikousoukatu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/005/099/ippannjikousoukatu.pdf",
+    "license": "日野市ホームページから発信するコンテンツ（テキスト、画像、PDF、その他データ）の著作権は日野市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。もし、これらの文書等について転用等を希望される場合は、その旨ご連絡下さい。",
+    "target": "file"
+  },
+  "/sources/higashihiroshima-setsumeisho-r8/R8_setsumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.higashihiroshima.lg.jp/material/files/group/11/R8_setsumeisyo.pdf",
+    "license": "本サイトに掲載されている各ファイル及びその内容に関する諸権利は、原則として東広島市に帰属します。私的利用の範囲や、引用など著作権法上認められる場合を除き、当サイト上の情報を、許可なく使用・複製・転載・販売・改変・印刷配布する行為等は禁止します。",
+    "target": "file"
+  },
+  "/sources/higashihiroshima-setsumeisho-r7/r7toushosetumeisho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.higashihiroshima.lg.jp/material/files/group/11/r7toushosetumeisho.pdf",
+    "license": "本サイトに掲載されている各ファイル及びその内容に関する諸権利は、原則として東広島市に帰属します。私的利用の範囲や、引用など著作権法上認められる場合を除き、当サイト上の情報を、許可なく使用・複製・転載・販売・改変・印刷配布する行為等は禁止します。",
+    "target": "file"
+  },
+  "/sources/higashihiroshima-setsumeisho-r6/6tousyosetumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.higashihiroshima.lg.jp/material/files/group/11/6tousyosetumeisyo.pdf",
+    "license": "本サイトに掲載されている各ファイル及びその内容に関する諸権利は、原則として東広島市に帰属します。私的利用の範囲や、引用など著作権法上認められる場合を除き、当サイト上の情報を、許可なく使用・複製・転載・販売・改変・印刷配布する行為等は禁止します。",
+    "target": "file"
+  },
+  "/sources/higashihiroshima-setsumeisho-r5/reiwagonenndoyosannnikannsurusetumeisixyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.higashihiroshima.lg.jp/material/files/group/11/reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+    "license": "本サイトに掲載されている各ファイル及びその内容に関する諸権利は、原則として東広島市に帰属します。私的利用の範囲や、引用など著作権法上認められる場合を除き、当サイト上の情報を、許可なく使用・複製・転載・販売・改変・印刷配布する行為等は禁止します。",
+    "target": "file"
+  },
+  "/sources/higashihiroshima-setsumeisho-r4/R4setsumeisyo.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20250914062713id_/https://www.city.higashihiroshima.lg.jp/material/files/group/11/R4setsumeisyo.pdf",
+    "license": "本サイトに掲載されている各ファイル及びその内容に関する諸権利は、原則として東広島市に帰属します。私的利用の範囲や、引用など著作権法上認められる場合を除き、当サイト上の情報を、許可なく使用・複製・転載・販売・改変・印刷配布する行為等は禁止します。",
+    "target": "file"
+  },
+  "/sources/higashihiroshima-setsumeisho-r3/yosansetumeisyo_R3.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20220709013745id_/https://www.city.higashihiroshima.lg.jp/material/files/group/11/yosansetumeisyo_R3.pdf",
+    "license": "本サイトに掲載されている各ファイル及びその内容に関する諸権利は、原則として東広島市に帰属します。私的利用の範囲や、引用など著作権法上認められる場合を除き、当サイト上の情報を、許可なく使用・複製・転載・販売・改変・印刷配布する行為等は禁止します。",
+    "target": "file"
+  },
+  "/sources/higashihiroshima-setsumeisho-r2/R2setsumeisho.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20220710004158id_/https://www.city.higashihiroshima.lg.jp/material/files/group/11/R2setsumeisho.pdf",
+    "license": "本サイトに掲載されている各ファイル及びその内容に関する諸権利は、原則として東広島市に帰属します。私的利用の範囲や、引用など著作権法上認められる場合を除き、当サイト上の情報を、許可なく使用・複製・転載・販売・改変・印刷配布する行為等は禁止します。",
+    "target": "file"
   }
 };

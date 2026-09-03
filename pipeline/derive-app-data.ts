@@ -2652,6 +2652,29 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       srcId: `suzuka-yosansho-${fy}`, muniCode: "242071", muniName: "鈴鹿市", prefName: "三重県", isPref: false,
     })),
     { srcId: "suzuka-yosan-shiryou-h30", muniCode: "242071", muniName: "鈴鹿市", prefName: "三重県", isPref: false },
+    // ⚠ 三鷹は H27 が骨格予算（H28 に prevNote）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "r1", "h30", "h29", "h28", "h27", "h26"] as const).map((fy) => ({
+      srcId: `mitaka-yosangaiyou-${fy}`, muniCode: "132047", muniName: "三鷹市", prefName: "東京都", isPref: false,
+    })),
+    // ⚠ 安城は1ページ PDF ペア（分冊形式）。R3 以前は未回収
+    ...(["r8", "r7", "r6", "r5", "r4"] as const).map((fy) => ({
+      srcId: `anjo-kanbetsu-yosan-${fy}`, muniCode: "232122", muniName: "安城市", prefName: "愛知県", isPref: false,
+    })),
+    // ⚠ 日野は R8〜H16 の23年度が同一様式（R8 だけ横並びで CropX）
+    ...([
+      "r8", "r7", "r6", "r5", "r4", "r3", "r2", "r1", "h30", "h29", "h28", "h27",
+      "h26", "h25", "h24", "h23", "h22", "h21", "h20", "h19", "h18", "h17", "h16",
+    ] as const).map((fy) => ({
+      srcId: `hino-yosansho-soukatsu-${fy}`, muniCode: "132128", muniName: "日野市", prefName: "東京都", isPref: false,
+    })),
+    // ⚠ 東広島は R4〜R2 が Wayback からの取得
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `higashihiroshima-setsumeisho-${fy}`, muniCode: "342122", muniName: "東広島市", prefName: "広島県", isPref: false,
+    })),
+    // ⚠ 岸和田は R4・R3・H31 が収録不可（鎖が2か所切れる）
+    ...(["r8", "r7", "r6", "r5", "r2", "h30", "h29", "h28", "h27", "h26"] as const).map((fy) => ({
+      srcId: `kishiwada-yosansho-${fy}`, muniCode: "272027", muniName: "岸和田市", prefName: "大阪府", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。

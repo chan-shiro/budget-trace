@@ -1,0 +1,19 @@
+{
+  "sourceId": "anjo-kanbetsu-yosan-r4",
+  "files": [
+    {
+      "filename": "r4kanbetsusainyu.pdf",
+      "sha256": "ae059f3e5a5003c9808511c2de6a6cfb15c202b8fffc617b6990d4a838c57435",
+      "bytes": 31975,
+      "fetchedAt": "2026-09-02T17:51:15.227Z",
+      "fetchedFrom": "https://www.city.anjo.aichi.jp/shisei/zaisei/yosan/documents/documents/r4kanbetsusainyu.pdf"
+    },
+    {
+      "filename": "r4mokutekibetsusaisyutsu.pdf",
+      "sha256": "4f2099d3a9719bbb13bbfb2cc7240b383206dbfcdb3d1ea398240ddd888db605",
+      "bytes": 24703,
+      "fetchedAt": "2026-09-02T17:51:15.564Z",
+      "fetchedFrom": "https://www.city.anjo.aichi.jp/shisei/zaisei/yosan/documents/documents/r4mokutekibetsusaisyutsu.pdf"
+    }
+  ]
+}

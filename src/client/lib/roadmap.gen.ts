@@ -13,15 +13,15 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 191,
+  "budgetCount": 196,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 1284,
-  "fileCount": 2474,
-  "archivedCount": 1157,
+  "sourceCount": 1342,
+  "fileCount": 2537,
+  "archivedCount": 1186,
   "licenseOpen": 98,
-  "licensePermission": 1076,
-  "licenseUnverified": 110,
+  "licensePermission": 1119,
+  "licenseUnverified": 125,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
   "kofuBudgetYears": 7,
@@ -31,6 +31,12 @@ export const ROADMAP_PROGRESS = {
       "code": "131041",
       "years": 26,
       "range": "H13〜R8（26年度）"
+    },
+    {
+      "name": "日野市",
+      "code": "132128",
+      "years": 23,
+      "range": "H16〜R8（23年度）"
     },
     {
       "name": "文京区",
@@ -189,6 +195,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H21〜R8（13年度）"
     },
     {
+      "name": "三鷹市",
+      "code": "132047",
+      "years": 13,
+      "range": "H26〜R8（13年度）"
+    },
+    {
       "name": "台東区",
       "code": "131067",
       "years": 12,
@@ -295,6 +307,12 @@ export const ROADMAP_PROGRESS = {
       "code": "222101",
       "years": 10,
       "range": "H29〜R8（10年度）"
+    },
+    {
+      "name": "岸和田市",
+      "code": "272027",
+      "years": 10,
+      "range": "H26〜R8（10年度）"
     },
     {
       "name": "西宮市",
@@ -537,6 +555,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "東広島市",
+      "code": "342122",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "北九州市",
       "code": "401005",
       "years": 7,
@@ -653,6 +677,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "豊田市",
       "code": "232114",
+      "years": 5,
+      "range": "R4〜R8（5年度）"
+    },
+    {
+      "name": "安城市",
+      "code": "232122",
       "years": 5,
       "range": "R4〜R8（5年度）"
     },

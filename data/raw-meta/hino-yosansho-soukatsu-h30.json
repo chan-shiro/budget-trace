@@ -1,0 +1,12 @@
+{
+  "sourceId": "hino-yosansho-soukatsu-h30",
+  "files": [
+    {
+      "filename": "soukatu.pdf",
+      "sha256": "0c44dfdaef5bd11beb9159b4e70c6560fc375434ba46b0741e168d2391588c88",
+      "bytes": 58001,
+      "fetchedAt": "2026-09-02T17:52:23.947Z",
+      "fetchedFrom": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/007/588/soukatu.pdf"
+    }
+  ]
+}
