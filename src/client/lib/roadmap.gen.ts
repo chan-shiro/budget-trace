@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 196,
+  "budgetCount": 198,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 1342,
-  "fileCount": 2537,
-  "archivedCount": 1186,
+  "sourceCount": 1357,
+  "fileCount": 2552,
+  "archivedCount": 1222,
   "licenseOpen": 98,
-  "licensePermission": 1119,
+  "licensePermission": 1134,
   "licenseUnverified": 125,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -245,6 +245,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "葛飾区",
       "code": "131229",
+      "years": 11,
+      "range": "H28〜R8（11年度）"
+    },
+    {
+      "name": "立川市",
+      "code": "132021",
       "years": 11,
       "range": "H28〜R8（11年度）"
     },
@@ -731,6 +737,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "板橋区",
       "code": "131199",
+      "years": 4,
+      "range": "R5〜R8（4年度）"
+    },
+    {
+      "name": "小田原市",
+      "code": "142069",
       "years": 4,
       "range": "R5〜R8（4年度）"
     },
