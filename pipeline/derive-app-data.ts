@@ -2675,6 +2675,15 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r2", "h30", "h29", "h28", "h27", "h26"] as const).map((fy) => ({
       srcId: `kishiwada-yosansho-${fy}`, muniCode: "272027", muniName: "岸和田市", prefName: "大阪府", isPref: false,
     })),
+    // ⚠ 小田原は R8〜R5 の4年（R4 以前はスキャン画像）。R7 のウェブ掲載は「（原案）」＝R8 の前年度列（議会修正後）と3款ずれる（総額は同じ・R8 に prevNote）
+    ...(["r8", "r7", "r6", "r5"] as const).map((fy) => ({
+      srcId: `odawara-yosansho-${fy}`, muniCode: "142069", muniName: "小田原市", prefName: "神奈川県", isPref: false,
+    })),
+    // ⚠ 立川は R8〜H29 が予算書（R6・H31・H30 は decodeGarble）・H28 だけ概要で代替（予算書がスキャン）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29"] as const).map((fy) => ({
+      srcId: `tachikawa-yosansho-${fy}`, muniCode: "132021", muniName: "立川市", prefName: "東京都", isPref: false,
+    })),
+    { srcId: "tachikawa-yosan-gaiyou-h28", muniCode: "132021", muniName: "立川市", prefName: "東京都", isPref: false },
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。
