@@ -193,6 +193,30 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     checkedOn: "2026-08-24", ref: "docs/data-sources.md §13-17",
   },
   {
+    code: "272027", name: "岸和田市", dataset: "budget",
+    fiscalYears: ["R4", "R3"],
+    categories: ["broken-text-layer"],
+    reason:
+      "この2年度は予算書の文字が壊れていて数値を取り出せない。令和4年度は396ページの文字は入っているが" +
+      "数字がページ番号ぶんの1,040個しか無く、金額が1つも取り出せない（漢字も別の符号で入っていて、" +
+      "ほかの資料で使っている復元表とは別の系統）。令和3年度は370ページで取り出せる文字が1,315字だけ・" +
+      "画像も0枚で、文字が図形に変換されている（収録時に実測）。" +
+      "令和8年度〜令和5年度・令和2年度・平成30年度〜平成26年度は同じ予算書で収録済み。",
+    url: "https://www.city.kishiwada.lg.jp/life/6/35/145/",
+    checkedOn: "2026-09-03", ref: "docs/data-sources.md §13-21",
+  },
+  {
+    code: "272027", name: "岸和田市", dataset: "budget",
+    fiscalYears: ["H31"],
+    categories: ["format-mismatch"],
+    reason:
+      "この年度の予算に関する説明書には歳入の総括表はあるが、歳出を款ごとにまとめた総括表のページが無く、" +
+      "前年度と比べられる歳出の表が見つからない（161ページを走査して「歳出」の総括の語が0回。収録時に実測）。" +
+      "別冊の「各種調書等」も全ページ文字が入っていない。前後の年度は同じ予算書で収録済み。",
+    url: "https://www.city.kishiwada.lg.jp/page/13-h31-yosan.html",
+    checkedOn: "2026-09-03", ref: "docs/data-sources.md §13-21",
+  },
+  {
     code: "132110", name: "小平市", dataset: "budget",
     fiscalYears: ["R7", "R5"],
     categories: ["broken-text-layer"],

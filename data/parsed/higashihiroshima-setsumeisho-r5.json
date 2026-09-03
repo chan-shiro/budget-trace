@@ -1,0 +1,424 @@
+{
+  "docType": "budget-book",
+  "sourceId": "higashihiroshima-setsumeisho-r5",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-09-02T18:17:24.113Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R5",
+  "account": "一般会計",
+  "revenueTotal": 94440000,
+  "expenditureTotal": 94440000,
+  "prevRevenueTotal": 95180000,
+  "prevExpenditureTotal": 95180000,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "市税",
+      "amount": 37777747,
+      "prevAmount": 37032095,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "地方譲与税",
+      "amount": 676243,
+      "prevAmount": 671381,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "利子割交付金",
+      "amount": 13966,
+      "prevAmount": 31449,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "配当割交付金",
+      "amount": 203259,
+      "prevAmount": 124734,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 124796,
+      "prevAmount": 169294,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "法人事業税交付金",
+      "amount": 457155,
+      "prevAmount": 400914,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "地方消費税交付金",
+      "amount": 5006530,
+      "prevAmount": 4453012,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "ゴルフ場利用税交付金",
+      "amount": 116715,
+      "prevAmount": 108491,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "環境性能割交付金",
+      "amount": 92571,
+      "prevAmount": 101147,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "国有提供施設等所在市町村助成交付金",
+      "amount": 130215,
+      "prevAmount": 126886,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "地方特例交付金",
+      "amount": 321818,
+      "prevAmount": 267765,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "地方交付税",
+      "amount": 6450000,
+      "prevAmount": 7050000,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 23156,
+      "prevAmount": 23674,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "分担金及び負担金",
+      "amount": 1279093,
+      "prevAmount": 1280624,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "使用料及び手数料",
+      "amount": 1305582,
+      "prevAmount": 1372650,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "国庫支出金",
+      "amount": 13528400,
+      "prevAmount": 14597758,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 17,
+      "kanName": "県支出金",
+      "amount": 7773652,
+      "prevAmount": 7410952,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 18,
+      "kanName": "財産収入",
+      "amount": 222343,
+      "prevAmount": 221130,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 19,
+      "kanName": "寄附金",
+      "amount": 547200,
+      "prevAmount": 308800,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 20,
+      "kanName": "繰入金",
+      "amount": 8197922,
+      "prevAmount": 6975139,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 21,
+      "kanName": "繰越金",
+      "amount": 1,
+      "prevAmount": 1,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 22,
+      "kanName": "諸収入",
+      "amount": 3201936,
+      "prevAmount": 3174204,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 23,
+      "kanName": "市債",
+      "amount": 6989700,
+      "prevAmount": 9277900,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 461093,
+      "prevAmount": 452411,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 9887180,
+      "prevAmount": 9386822,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "民生費",
+      "amount": 32483774,
+      "prevAmount": 32364515,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "衛生費",
+      "amount": 6715937,
+      "prevAmount": 6288182,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "労働費",
+      "amount": 279677,
+      "prevAmount": 271607,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "農林水産業費",
+      "amount": 2215068,
+      "prevAmount": 2484125,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "商工費",
+      "amount": 3266458,
+      "prevAmount": 3689462,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "土木費",
+      "amount": 9853767,
+      "prevAmount": 11412743,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "消防費",
+      "amount": 3737409,
+      "prevAmount": 4150988,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "教育費",
+      "amount": 12741801,
+      "prevAmount": 11797772,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 11,
+      "kanName": "災害復旧費",
+      "amount": 2522504,
+      "prevAmount": 2719964,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 12,
+      "kanName": "公債費",
+      "amount": 9151781,
+      "prevAmount": 9246292,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 13,
+      "kanName": "諸支出金",
+      "amount": 1023551,
+      "prevAmount": 715117,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 14,
+      "kanName": "予備費",
+      "amount": 100000,
+      "prevAmount": 200000,
+      "locator": {
+        "file": "reiwagonenndoyosannnikannsurusetumeisixyo.pdf",
+        "page": 8
+      }
+    }
+  ]
+}

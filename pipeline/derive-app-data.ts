@@ -2652,6 +2652,29 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       srcId: `suzuka-yosansho-${fy}`, muniCode: "242071", muniName: "鈴鹿市", prefName: "三重県", isPref: false,
     })),
     { srcId: "suzuka-yosan-shiryou-h30", muniCode: "242071", muniName: "鈴鹿市", prefName: "三重県", isPref: false },
+    // ⚠ 三鷹は H27 が骨格予算（H28 に prevNote）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "r1", "h30", "h29", "h28", "h27", "h26"] as const).map((fy) => ({
+      srcId: `mitaka-yosangaiyou-${fy}`, muniCode: "132047", muniName: "三鷹市", prefName: "東京都", isPref: false,
+    })),
+    // ⚠ 安城は1ページ PDF ペア（分冊形式）。R3 以前は未回収
+    ...(["r8", "r7", "r6", "r5", "r4"] as const).map((fy) => ({
+      srcId: `anjo-kanbetsu-yosan-${fy}`, muniCode: "232122", muniName: "安城市", prefName: "愛知県", isPref: false,
+    })),
+    // ⚠ 日野は R8〜H16 の23年度が同一様式（R8 だけ横並びで CropX）
+    ...([
+      "r8", "r7", "r6", "r5", "r4", "r3", "r2", "r1", "h30", "h29", "h28", "h27",
+      "h26", "h25", "h24", "h23", "h22", "h21", "h20", "h19", "h18", "h17", "h16",
+    ] as const).map((fy) => ({
+      srcId: `hino-yosansho-soukatsu-${fy}`, muniCode: "132128", muniName: "日野市", prefName: "東京都", isPref: false,
+    })),
+    // ⚠ 東広島は R4〜R2 が Wayback からの取得
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `higashihiroshima-setsumeisho-${fy}`, muniCode: "342122", muniName: "東広島市", prefName: "広島県", isPref: false,
+    })),
+    // ⚠ 岸和田は R4・R3・H31 が収録不可（鎖が2か所切れる）
+    ...(["r8", "r7", "r6", "r5", "r2", "h30", "h29", "h28", "h27", "h26"] as const).map((fy) => ({
+      srcId: `kishiwada-yosansho-${fy}`, muniCode: "272027", muniName: "岸和田市", prefName: "大阪府", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。
@@ -3359,7 +3382,14 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = ${JSON.stringif
       originUrl, landingPage: s.landingPage ?? null, files,
       archived: arch.length > 0 || isArchiveOrigin,
       archiveOrigin: isArchiveOrigin,
-      archiveUrl: arch[0]?.waybackUrl ?? (isArchiveOrigin ? originUrl : null),
+      // ⚠ 魚拓リンクには **sha256 が不一致と分かっている捕捉を出さない**（2026-09-03・三鷹 R8）。
+      //   `attach_37785_1.pdf` のような「今年度用に毎年上書きされる URL」では、台帳の捕捉が**同じ URL に置かれていた
+      //   別年度の文書**であることがあり、`arch[0]` をそのまま出すと「令和8年度」のカードの魚拓が令和3年度の PDF を開いた。
+      //   優先順: sha256 一致 → 未照合（一致・不一致が未確定）→ 無し。**不一致（false）は落とす**。
+      //   ⚠ `archived` のバッジは従来どおり「エントリがある」で点く（照合済みかは `shaVerified` が別に持つ）。
+      archiveUrl:
+        (arch.find((a) => a.sha256Match === true) ?? arch.find((a) => a.sha256Match !== false))?.waybackUrl ??
+        (isArchiveOrigin ? originUrl : null),
       shaVerified: arch.some((a) => a.sha256Match === true),
     };
   };

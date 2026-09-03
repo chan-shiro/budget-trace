@@ -139,6 +139,11 @@ const MUNI_SLUGS: Record<string, string> = {
   "112020": "kumagaya",
   "322016": "matsue",
   "242071": "suzuka",
+  "132047": "mitaka",
+  "232122": "anjo",
+  "132128": "hino",
+  "342122": "higashihiroshima",
+  "272027": "kishiwada",
   "232076": "toyokawa", "352039": "yamaguchi", "222038": "numazu", "272191": "izumi",
   // 政令指定都市（2026-07-15）
   "141003": "yokohama", "231002": "nagoya", "011002": "sapporo",
