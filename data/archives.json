@@ -269,11 +269,12 @@
       "sourceId": "akashi-yosansho-r4",
       "url": "https://www.city.akashi.lg.jp/documents/2584/r4ippantosho.pdf",
       "kind": "file",
-      "waybackUrl": "https://web.archive.org/web/20260823065959/https://www.city.akashi.lg.jp/documents/2584/r4ippantosho.pdf",
-      "waybackTimestamp": "20260823065959",
-      "checkedAt": "2026-08-23T07:36:43.752Z",
-      "sha256Verified": false,
-      "sha256FailReason": "コピーの取得が 404（3回試行）"
+      "waybackUrl": "https://web.archive.org/web/20260823070037/https://www.city.akashi.lg.jp/documents/2584/r4ippantosho.pdf",
+      "waybackTimestamp": "20260823070037",
+      "checkedAt": "2026-09-04T09:01:39.646Z",
+      "sha256Match": true,
+      "waybackBytes": 1834785,
+      "rawSha256": "3736252f8e9bed1680dc765c4e34b149512685b52209858ac7ff5cb72d4cc3d4"
     },
     {
       "sourceId": "akashi-yosansho-r4",
@@ -281,7 +282,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260823070021/https://www.city.akashi.lg.jp/zaimu/zaisei_ka/shise/zaise/aramashi/yosannaiyo/index.html",
       "waybackTimestamp": "20260823070021",
-      "checkedAt": "2026-08-23T07:38:23.216Z"
+      "checkedAt": "2026-09-04T09:01:51.136Z"
     },
     {
       "sourceId": "akashi-yosansho-r5",
@@ -2700,9 +2701,10 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260822175615/https://www.city.fujisawa.kanagawa.jp/documents/22950/yosann.pdf",
       "waybackTimestamp": "20260822175615",
-      "checkedAt": "2026-08-22T18:29:48.327Z",
-      "sha256Verified": false,
-      "sha256FailReason": "コピーの取得が 404（3回試行）"
+      "checkedAt": "2026-09-04T09:03:22.804Z",
+      "sha256Match": true,
+      "waybackBytes": 5924438,
+      "rawSha256": "bf6ba2c3ee38be126b1f061a53a4647f540559fa52d724a5c962e0178da0635f"
     },
     {
       "sourceId": "fujisawa-yosansho-r2",
@@ -2710,17 +2712,18 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260411023052/https://www.city.fujisawa.kanagawa.jp/zaisei/shise/yosan/r2/houshin.html",
       "waybackTimestamp": "20260411023052",
-      "checkedAt": "2026-08-22T18:29:54.971Z"
+      "checkedAt": "2026-09-04T09:03:32.180Z"
     },
     {
       "sourceId": "fujisawa-yosansho-r3",
       "url": "https://www.city.fujisawa.kanagawa.jp/documents/24661/r3yosannsyo.pdf",
       "kind": "file",
-      "waybackUrl": "https://web.archive.org/web/20260822175520/https://www.city.fujisawa.kanagawa.jp/documents/24661/r3yosannsyo.pdf",
-      "waybackTimestamp": "20260822175520",
-      "checkedAt": "2026-08-22T18:28:46.683Z",
-      "sha256Verified": false,
-      "sha256FailReason": "コピーの取得が 404（3回試行）"
+      "waybackUrl": "https://web.archive.org/web/20260822182358/https://www.city.fujisawa.kanagawa.jp/documents/24661/r3yosannsyo.pdf",
+      "waybackTimestamp": "20260822182358",
+      "checkedAt": "2026-09-04T09:05:27.702Z",
+      "sha256Match": true,
+      "waybackBytes": 5486093,
+      "rawSha256": "23163c4a2cbbc8d40524780b094e08d5842ba0426abc09afcc19ff53910efff9"
     },
     {
       "sourceId": "fujisawa-yosansho-r3",
@@ -2728,7 +2731,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260822182338/https://www.city.fujisawa.kanagawa.jp/zaisei/shise/yosan/r3/houshin.html",
       "waybackTimestamp": "20260822182338",
-      "checkedAt": "2026-08-22T18:29:02.743Z"
+      "checkedAt": "2026-09-04T09:05:37.912Z"
     },
     {
       "sourceId": "fujisawa-yosansho-r4",
@@ -3310,17 +3313,18 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260822161807/https://www.city.fukuyama.hiroshima.jp/soshiki/zaisei/145698.html",
       "waybackTimestamp": "20260822161807",
-      "checkedAt": "2026-08-22T16:29:47.413Z"
+      "checkedAt": "2026-09-04T09:06:05.670Z"
     },
     {
       "sourceId": "fukuyama-yosan-sankou-h30",
       "url": "https://www.city.fukuyama.hiroshima.jp/uploaded/life/347578_2070867_misc.pdf",
       "kind": "file",
-      "waybackUrl": "https://web.archive.org/web/20260822160536/https://www.city.fukuyama.hiroshima.jp/uploaded/life/347578_2070867_misc.pdf",
-      "waybackTimestamp": "20260822160536",
-      "checkedAt": "2026-08-22T16:29:38.972Z",
-      "sha256Verified": false,
-      "sha256FailReason": "コピーの取得が 404（3回試行）"
+      "waybackUrl": "https://web.archive.org/web/20260822161826/https://www.city.fukuyama.hiroshima.jp/uploaded/life/347578_2070867_misc.pdf",
+      "waybackTimestamp": "20260822161826",
+      "checkedAt": "2026-09-04T09:05:57.507Z",
+      "sha256Match": true,
+      "waybackBytes": 9106440,
+      "rawSha256": "2ebdde1aae274c132ed276534e4365f9d496f4e1893f82c2eb9e78b231b9262d"
     },
     {
       "sourceId": "fukuyama-yosan-sankou-r1",
@@ -6771,9 +6775,10 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260822175642/https://www.city.kashiwa.lg.jp/documents/43816/r8yosansetumei.pdf",
       "waybackTimestamp": "20260822175642",
-      "checkedAt": "2026-08-22T18:30:14.079Z",
-      "sha256Verified": false,
-      "sha256FailReason": "コピーの取得が 404（3回試行）"
+      "checkedAt": "2026-09-04T09:06:35.557Z",
+      "sha256Match": true,
+      "waybackBytes": 5460183,
+      "rawSha256": "750aeaca747b712fef72b70d4d66f36a69549b6f180d4a94d16c155f96c159d8"
     },
     {
       "sourceId": "kashiwa-yosan-setsumeisho-r8",
@@ -6781,7 +6786,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260822175747/https://www.city.kashiwa.lg.jp/zaisei/policy_pr/budget/budget2/r8-yosan.html",
       "waybackTimestamp": "20260822175747",
-      "checkedAt": "2026-08-22T18:31:03.458Z"
+      "checkedAt": "2026-09-04T09:06:43.063Z"
     },
     {
       "sourceId": "kasugai-yosan-gaiyou-r3",
@@ -9415,9 +9420,10 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260823044525/https://www.city.koshigaya.saitama.jp/kurashi_shisei/shisei/yosankessan/yosan/r08/files/r8toushoyosannogaiyou.pdf",
       "waybackTimestamp": "20260823044525",
-      "checkedAt": "2026-08-23T05:12:43.404Z",
-      "sha256Verified": false,
-      "sha256FailReason": "コピーの取得が 404（3回試行）"
+      "checkedAt": "2026-09-04T09:06:53.358Z",
+      "sha256Match": true,
+      "waybackBytes": 1161523,
+      "rawSha256": "69fc24983bea86aa379233e0260ffe36f34261358e7c77313453c39bdb73e83c"
     },
     {
       "sourceId": "koshigaya-yosan-gaiyou-r8",
@@ -9425,7 +9431,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260514074444/https://www.city.koshigaya.saitama.jp/kurashi_shisei/shisei/yosankessan/yosan/r08/koshigaya_contents_r8toushogaiyo.html",
       "waybackTimestamp": "20260514074444",
-      "checkedAt": "2026-08-23T05:12:55.672Z"
+      "checkedAt": "2026-09-04T09:07:04.959Z"
     },
     {
       "sourceId": "koshigaya-yosan-satei-r7",
@@ -12393,11 +12399,12 @@
       "sourceId": "morioka-yosan-soukatsu-h30",
       "url": "https://www.city.morioka.iwate.jp/_res/projects/default_project/_page_/001/022/595/h30_sainyusaisyutu.pdf",
       "kind": "file",
-      "waybackUrl": "https://web.archive.org/web/20260823092124/https://www.city.morioka.iwate.jp/_res/projects/default_project/_page_/001/022/595/h30_sainyusaisyutu.pdf",
-      "waybackTimestamp": "20260823092124",
-      "checkedAt": "2026-08-23T09:47:07.692Z",
-      "sha256Verified": false,
-      "sha256FailReason": "コピーの取得が 404（3回試行）"
+      "waybackUrl": "https://web.archive.org/web/20260823094839/https://www.city.morioka.iwate.jp/_res/projects/default_project/_page_/001/022/595/h30_sainyusaisyutu.pdf",
+      "waybackTimestamp": "20260823094839",
+      "checkedAt": "2026-09-04T09:07:27.707Z",
+      "sha256Match": true,
+      "waybackBytes": 120110,
+      "rawSha256": "1671ad62c33db257a6694909960e8cc5d5dabdf632a24baae21f81821ac423e3"
     },
     {
       "sourceId": "morioka-yosan-soukatsu-h30",
@@ -12405,7 +12412,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260823094817/https://www.city.morioka.iwate.jp/shisei/zaisei/suii/1022592/1022595.html",
       "waybackTimestamp": "20260823094817",
-      "checkedAt": "2026-08-23T10:00:07.639Z"
+      "checkedAt": "2026-09-04T09:07:39.508Z"
     },
     {
       "sourceId": "morioka-yosan-soukatsu-h31",
@@ -13341,19 +13348,20 @@
       "sourceId": "nagasaki-shi-yosansho-r7",
       "url": "https://www.city.nagasaki.lg.jp/page/50110.html",
       "kind": "landing",
-      "waybackUrl": "https://web.archive.org/web/20250925164703/https://www.city.nagasaki.lg.jp/page/50110.html",
-      "waybackTimestamp": "20250925164703",
-      "checkedAt": "2026-08-22T22:16:01.325Z"
+      "waybackUrl": "https://web.archive.org/web/20260904093000/https://www.city.nagasaki.lg.jp/page/50110.html",
+      "waybackTimestamp": "20260904093000",
+      "checkedAt": "2026-09-04T09:30:48.982Z"
     },
     {
       "sourceId": "nagasaki-shi-yosansho-r7",
       "url": "https://www.city.nagasaki.lg.jp/uploaded/attachment/42798.pdf",
       "kind": "file",
-      "waybackUrl": "https://web.archive.org/web/20250925174212/https://www.city.nagasaki.lg.jp/uploaded/attachment/42798.pdf",
-      "waybackTimestamp": "20250925174212",
-      "checkedAt": "2026-08-22T22:15:25.125Z",
-      "sha256Verified": false,
-      "sha256FailReason": "コピーの取得が 404（3回試行）"
+      "waybackUrl": "https://web.archive.org/web/20260904092919/https://www.city.nagasaki.lg.jp/uploaded/attachment/42798.pdf",
+      "waybackTimestamp": "20260904092919",
+      "checkedAt": "2026-09-04T09:29:48.276Z",
+      "sha256Match": true,
+      "waybackBytes": 1541625,
+      "rawSha256": "db12f72357491543f28b0e02459d25d66fc5edd1393fbe0255a7ea21163ac928"
     },
     {
       "sourceId": "nagasaki-shi-yosansho-r8",
@@ -13889,7 +13897,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20251108161922/https://www.city.nara.lg.jp/site/zaisei/198916.html",
       "waybackTimestamp": "20251108161922",
-      "checkedAt": "2026-08-23T03:09:05.327Z"
+      "checkedAt": "2026-09-04T09:09:45.591Z"
     },
     {
       "sourceId": "nara-shi-yosanan-gaiyou-r6",
@@ -13897,9 +13905,10 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260823023143/https://www.city.nara.lg.jp/uploaded/attachment/174848.pdf",
       "waybackTimestamp": "20260823023143",
-      "checkedAt": "2026-08-23T03:09:02.991Z",
-      "sha256Verified": false,
-      "sha256FailReason": "コピーの取得が 404（3回試行）"
+      "checkedAt": "2026-09-04T09:09:35.056Z",
+      "sha256Match": true,
+      "waybackBytes": 483945,
+      "rawSha256": "891fece7ade683d9e903cbdbb22a512c047cb202baca6cfedbce232e544887ae"
     },
     {
       "sourceId": "nara-shi-yosanan-gaiyou-r7",
@@ -28249,7 +28258,7 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20250928142717/https://www.city.toyama.lg.jp/_res/projects/default_project/_page_/001/003/081/2703giangaiyou-tousyo.pdf",
       "waybackTimestamp": "20250928142717",
-      "checkedAt": "2026-08-22T20:33:48.905Z",
+      "checkedAt": "2026-09-04T09:52:05.874Z",
       "sha256Verified": false,
       "sha256FailReason": "コピーの取得が 404（3回試行）"
     },
@@ -28257,63 +28266,66 @@
       "sourceId": "toyama-shi-giangaiyou-h27",
       "url": "https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
       "kind": "landing",
-      "waybackUrl": "https://web.archive.org/web/20260822195326/https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
-      "waybackTimestamp": "20260822195326",
-      "checkedAt": "2026-08-22T20:35:07.511Z"
+      "waybackUrl": "https://web.archive.org/web/20260904091219/https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
+      "waybackTimestamp": "20260904091219",
+      "checkedAt": "2026-09-04T09:52:26.927Z"
     },
     {
       "sourceId": "toyama-shi-giangaiyou-h28",
       "url": "https://www.city.toyama.lg.jp/_res/projects/default_project/_page_/001/003/081/2803giangaiyou-tousyo.pdf",
       "kind": "file",
-      "waybackUrl": "https://web.archive.org/web/20250928174829/https://www.city.toyama.lg.jp/_res/projects/default_project/_page_/001/003/081/2803giangaiyou-tousyo.pdf",
-      "waybackTimestamp": "20250928174829",
-      "checkedAt": "2026-08-22T20:32:16.306Z",
-      "sha256Verified": false,
-      "sha256FailReason": "コピーの取得が 404（3回試行）"
+      "waybackUrl": "https://web.archive.org/web/20260904093515/https://www.city.toyama.lg.jp/_res/projects/default_project/_page_/001/003/081/2803giangaiyou-tousyo.pdf",
+      "waybackTimestamp": "20260904093515",
+      "checkedAt": "2026-09-04T09:35:46.661Z",
+      "sha256Match": true,
+      "waybackBytes": 324421,
+      "rawSha256": "a5ad1afb32a8659c8e1ab024d207a78fba282c623518027d021d007555b93bbb"
     },
     {
       "sourceId": "toyama-shi-giangaiyou-h28",
       "url": "https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
       "kind": "landing",
-      "waybackUrl": "https://web.archive.org/web/20260822195326/https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
-      "waybackTimestamp": "20260822195326",
-      "checkedAt": "2026-08-22T20:32:42.720Z"
+      "waybackUrl": "https://web.archive.org/web/20260904091219/https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
+      "waybackTimestamp": "20260904091219",
+      "checkedAt": "2026-09-04T09:36:29.429Z"
     },
     {
       "sourceId": "toyama-shi-giangaiyou-h29",
       "url": "https://www.city.toyama.lg.jp/_res/projects/default_project/_page_/001/003/081/2903giangaiyou-tousyo.pdf",
       "kind": "file",
-      "waybackUrl": "https://web.archive.org/web/20250928173148/https://www.city.toyama.lg.jp/_res/projects/default_project/_page_/001/003/081/2903giangaiyou-tousyo.pdf",
-      "waybackTimestamp": "20250928173148",
-      "checkedAt": "2026-08-22T20:31:18.197Z",
-      "sha256Verified": false,
-      "sha256FailReason": "コピーの取得が 404（3回試行）"
+      "waybackUrl": "https://web.archive.org/web/20260904093704/https://www.city.toyama.lg.jp/_res/projects/default_project/_page_/001/003/081/2903giangaiyou-tousyo.pdf",
+      "waybackTimestamp": "20260904093704",
+      "checkedAt": "2026-09-04T09:37:41.615Z",
+      "sha256Match": true,
+      "waybackBytes": 266951,
+      "rawSha256": "4e2945a01ef6059f13da6125981a68190515f5a9a6102a2ce01be954ed00fa62"
     },
     {
       "sourceId": "toyama-shi-giangaiyou-h29",
       "url": "https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
       "kind": "landing",
-      "waybackUrl": "https://web.archive.org/web/20260822195326/https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
-      "waybackTimestamp": "20260822195326",
-      "checkedAt": "2026-08-22T20:31:18.969Z"
+      "waybackUrl": "https://web.archive.org/web/20260904091219/https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
+      "waybackTimestamp": "20260904091219",
+      "checkedAt": "2026-09-04T09:38:50.008Z"
     },
     {
       "sourceId": "toyama-shi-giangaiyou-h30",
       "url": "https://www.city.toyama.lg.jp/_res/projects/default_project/_page_/001/003/081/3003giangaiyou-tousyo.pdf",
       "kind": "file",
-      "waybackUrl": "https://web.archive.org/web/20250928150832/https://www.city.toyama.lg.jp/_res/projects/default_project/_page_/001/003/081/3003giangaiyou-tousyo.pdf",
-      "waybackTimestamp": "20250928150832",
-      "checkedAt": "2026-08-22T20:29:57.596Z",
-      "sha256Verified": false,
-      "sha256FailReason": "コピーの取得が 404（3回試行）"
+      "waybackUrl": "https://web.archive.org/web/20260904093910/https://www.city.toyama.lg.jp/_res/projects/default_project/_page_/001/003/081/3003giangaiyou-tousyo.pdf",
+      "waybackTimestamp": "20260904093910",
+      "checkedAt": "2026-09-04T09:39:59.946Z",
+      "sha256Match": true,
+      "waybackBytes": 330102,
+      "rawSha256": "e45ce7655b002d2bfeb21ac8f5a80cb21abcc061471a8a4daee1ea4fd56b3ec3"
     },
     {
       "sourceId": "toyama-shi-giangaiyou-h30",
       "url": "https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
       "kind": "landing",
-      "waybackUrl": "https://web.archive.org/web/20260822195326/https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
-      "waybackTimestamp": "20260822195326",
-      "checkedAt": "2026-08-22T20:30:55.213Z"
+      "waybackUrl": "https://web.archive.org/web/20260904091219/https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
+      "waybackTimestamp": "20260904091219",
+      "checkedAt": "2026-09-04T09:40:49.482Z"
     },
     {
       "sourceId": "toyama-shi-giangaiyou-h31",
@@ -28321,7 +28333,7 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20250928173538/https://www.city.toyama.lg.jp/_res/projects/default_project/_page_/001/003/081/3103giangaiyou-tousyo.pdf",
       "waybackTimestamp": "20250928173538",
-      "checkedAt": "2026-08-22T20:28:50.226Z",
+      "checkedAt": "2026-09-04T09:53:06.397Z",
       "sha256Verified": false,
       "sha256FailReason": "コピーの取得が 404（3回試行）"
     },
@@ -28329,9 +28341,9 @@
       "sourceId": "toyama-shi-giangaiyou-h31",
       "url": "https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
       "kind": "landing",
-      "waybackUrl": "https://web.archive.org/web/20260822195326/https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
-      "waybackTimestamp": "20260822195326",
-      "checkedAt": "2026-08-22T20:28:55.751Z"
+      "waybackUrl": "https://web.archive.org/web/20260904091219/https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
+      "waybackTimestamp": "20260904091219",
+      "checkedAt": "2026-09-04T09:53:10.960Z"
     },
     {
       "sourceId": "toyama-shi-giangaiyou-r2",
@@ -28339,7 +28351,7 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20250928142926/https://www.city.toyama.lg.jp/_res/projects/default_project/_page_/001/003/081/r0203giangaiyou-tousyo.pdf",
       "waybackTimestamp": "20250928142926",
-      "checkedAt": "2026-08-22T20:36:19.241Z",
+      "checkedAt": "2026-09-04T09:53:54.695Z",
       "sha256Verified": false,
       "sha256FailReason": "コピーの取得が 404（3回試行）"
     },
@@ -28347,9 +28359,9 @@
       "sourceId": "toyama-shi-giangaiyou-r2",
       "url": "https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
       "kind": "landing",
-      "waybackUrl": "https://web.archive.org/web/20260822195326/https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
-      "waybackTimestamp": "20260822195326",
-      "checkedAt": "2026-08-22T20:36:20.223Z"
+      "waybackUrl": "https://web.archive.org/web/20260904091219/https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
+      "waybackTimestamp": "20260904091219",
+      "checkedAt": "2026-09-04T09:54:09.435Z"
     },
     {
       "sourceId": "toyama-shi-giangaiyou-r3",
@@ -28357,7 +28369,7 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20250928145831/https://www.city.toyama.lg.jp/_res/projects/default_project/_page_/001/003/081/r0303giangaiyou-tousyo.pdf",
       "waybackTimestamp": "20250928145831",
-      "checkedAt": "2026-08-22T20:28:27.147Z",
+      "checkedAt": "2026-09-04T09:55:07.934Z",
       "sha256Verified": false,
       "sha256FailReason": "コピーの取得が 404（3回試行）"
     },
@@ -28365,9 +28377,9 @@
       "sourceId": "toyama-shi-giangaiyou-r3",
       "url": "https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
       "kind": "landing",
-      "waybackUrl": "https://web.archive.org/web/20260822195326/https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
-      "waybackTimestamp": "20260822195326",
-      "checkedAt": "2026-08-22T20:28:34.578Z"
+      "waybackUrl": "https://web.archive.org/web/20260904091219/https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
+      "waybackTimestamp": "20260904091219",
+      "checkedAt": "2026-09-04T09:55:34.046Z"
     },
     {
       "sourceId": "toyama-shi-giangaiyou-r4",
@@ -28375,7 +28387,7 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20250928144936/https://www.city.toyama.lg.jp/_res/projects/default_project/_page_/001/003/081/r0403giangaiyou-tousyo.pdf",
       "waybackTimestamp": "20250928144936",
-      "checkedAt": "2026-08-22T20:28:04.154Z",
+      "checkedAt": "2026-09-04T09:56:11.932Z",
       "sha256Verified": false,
       "sha256FailReason": "コピーの取得が 404（3回試行）"
     },
@@ -28383,9 +28395,9 @@
       "sourceId": "toyama-shi-giangaiyou-r4",
       "url": "https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
       "kind": "landing",
-      "waybackUrl": "https://web.archive.org/web/20260822195326/https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
-      "waybackTimestamp": "20260822195326",
-      "checkedAt": "2026-08-22T20:28:09.004Z"
+      "waybackUrl": "https://web.archive.org/web/20260904091219/https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
+      "waybackTimestamp": "20260904091219",
+      "checkedAt": "2026-09-04T09:56:50.949Z"
     },
     {
       "sourceId": "toyama-shi-giangaiyou-r5",
@@ -28412,7 +28424,7 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20250928145927/https://www.city.toyama.lg.jp/_res/projects/default_project/_page_/001/003/081/giangaiyou_tousyo.pdf",
       "waybackTimestamp": "20250928145927",
-      "checkedAt": "2026-08-22T20:27:27.122Z",
+      "checkedAt": "2026-09-04T09:57:25.874Z",
       "sha256Verified": false,
       "sha256FailReason": "コピーの取得が 404（3回試行）"
     },
@@ -28420,9 +28432,9 @@
       "sourceId": "toyama-shi-giangaiyou-r6",
       "url": "https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
       "kind": "landing",
-      "waybackUrl": "https://web.archive.org/web/20260822195326/https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
-      "waybackTimestamp": "20260822195326",
-      "checkedAt": "2026-08-22T20:27:29.274Z"
+      "waybackUrl": "https://web.archive.org/web/20260904091219/https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
+      "waybackTimestamp": "20260904091219",
+      "checkedAt": "2026-09-04T09:58:15.116Z"
     },
     {
       "sourceId": "toyama-shi-giangaiyou-r7",
@@ -28430,7 +28442,7 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20250928151851/https://www.city.toyama.lg.jp/_res/projects/default_project/_page_/001/003/081/r07giangaiyou_tousyo_.pdf",
       "waybackTimestamp": "20250928151851",
-      "checkedAt": "2026-08-22T20:27:04.814Z",
+      "checkedAt": "2026-09-04T09:20:36.872Z",
       "sha256Verified": false,
       "sha256FailReason": "コピーの取得が 404（3回試行）"
     },
@@ -28438,9 +28450,9 @@
       "sourceId": "toyama-shi-giangaiyou-r7",
       "url": "https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
       "kind": "landing",
-      "waybackUrl": "https://web.archive.org/web/20260822195326/https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
-      "waybackTimestamp": "20260822195326",
-      "checkedAt": "2026-08-22T20:27:08.648Z"
+      "waybackUrl": "https://web.archive.org/web/20260904091219/https://www.city.toyama.lg.jp/shisei/yosan/1010829/1003081.html",
+      "waybackTimestamp": "20260904091219",
+      "checkedAt": "2026-09-04T09:50:08.219Z"
     },
     {
       "sourceId": "toyama-shi-giangaiyou-r8",
@@ -33452,9 +33464,10 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260822223802/https://www.city.yokosuka.kanagawa.jp/1610/finas/yosan/documents/04-2zennenhikaku.pdf",
       "waybackTimestamp": "20260822223802",
-      "checkedAt": "2026-08-22T22:53:33.881Z",
-      "sha256Verified": false,
-      "sha256FailReason": "コピーの取得が 404（3回試行）"
+      "checkedAt": "2026-09-04T09:21:55.879Z",
+      "sha256Match": true,
+      "waybackBytes": 342396,
+      "rawSha256": "e7cba1635c690451be6fa490ce0981b687593a857eb1b004655e18e1ca6e547a"
     },
     {
       "sourceId": "yokosuka-yosan-gaiyou-r4",
@@ -33462,7 +33475,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260822223621/https://www.city.yokosuka.kanagawa.jp/1610/finas/yosan/yosankako.html",
       "waybackTimestamp": "20260822223621",
-      "checkedAt": "2026-08-22T22:53:37.010Z"
+      "checkedAt": "2026-09-04T09:22:03.797Z"
     },
     {
       "sourceId": "yokosuka-yosan-gaiyou-r5",
