@@ -13,15 +13,15 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 198,
+  "budgetCount": 203,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 1357,
-  "fileCount": 2552,
-  "archivedCount": 1222,
+  "sourceCount": 1396,
+  "fileCount": 2591,
+  "archivedCount": 1261,
   "licenseOpen": 98,
-  "licensePermission": 1134,
-  "licenseUnverified": 125,
+  "licensePermission": 1163,
+  "licenseUnverified": 135,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
   "kofuBudgetYears": 7,
@@ -201,6 +201,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H26〜R8（13年度）"
     },
     {
+      "name": "習志野市",
+      "code": "122165",
+      "years": 12,
+      "range": "H27〜R8（12年度）"
+    },
+    {
       "name": "台東区",
       "code": "131067",
       "years": 12,
@@ -315,6 +321,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H29〜R8（10年度）"
     },
     {
+      "name": "西尾市",
+      "code": "232131",
+      "years": 10,
+      "range": "H29〜R8（10年度）"
+    },
+    {
       "name": "岸和田市",
       "code": "272027",
       "years": 10,
@@ -367,6 +379,12 @@ export const ROADMAP_PROGRESS = {
       "code": "282073",
       "years": 9,
       "range": "H30〜R8（9年度）"
+    },
+    {
+      "name": "出雲市",
+      "code": "322032",
+      "years": 9,
+      "range": "H18〜R8（9年度）"
     },
     {
       "name": "福山市",
@@ -609,6 +627,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R3〜R8（6年度）"
     },
     {
+      "name": "浦安市",
+      "code": "122271",
+      "years": 6,
+      "range": "R3〜R8（6年度）"
+    },
+    {
       "name": "千代田区",
       "code": "131016",
       "years": 6,
@@ -817,6 +841,12 @@ export const ROADMAP_PROGRESS = {
       "code": "121002",
       "years": 2,
       "range": "R4〜R8（2年度）"
+    },
+    {
+      "name": "鎌倉市",
+      "code": "142042",
+      "years": 2,
+      "range": "R7〜R8（2年度）"
     },
     {
       "name": "新潟市",
