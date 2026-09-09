@@ -2684,6 +2684,26 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       srcId: `tachikawa-yosansho-${fy}`, muniCode: "132021", muniName: "立川市", prefName: "東京都", isPref: false,
     })),
     { srcId: "tachikawa-yosan-gaiyou-h28", muniCode: "132021", muniName: "立川市", prefName: "東京都", isPref: false },
+    // ⚠ 鎌倉は R8・R7 のみ（R6 以前は画像/OCR 破損。CSV ルートは判断待ち）
+    ...(["r8", "r7"] as const).map((fy) => ({
+      srcId: `kamakura-yosansho-${fy}`, muniCode: "142042", muniName: "鎌倉市", prefName: "神奈川県", isPref: false,
+    })),
+    // ⚠ 習志野は R8〜H27 の12年（HeaderExtra 必須・特別会計3本の同名総括を同梱）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "r1", "h30", "h29", "h28", "h27"] as const).map((fy) => ({
+      srcId: `narashino-yosansho-${fy}`, muniCode: "122165", muniName: "習志野市", prefName: "千葉県", isPref: false,
+    })),
+    // ⚠ 浦安は R8〜R3 の6年（R7・R3 が骨格予算→R8・R4 に prevNote。R2 以前はスキャン／概要系列はパーサ手当て待ち）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
+      srcId: `urayasu-yosansho-${fy}`, muniCode: "122271", muniName: "浦安市", prefName: "千葉県", isPref: false,
+    })),
+    // ⚠ 西尾は概要 PDF 10年（現行は R8 のみ・R7〜H29 は WARP）。ライセンスは判定語に当たらず unverified（判断待ち）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29"] as const).map((fy) => ({
+      srcId: `nishio-yosan-gaiyou-${fy}`, muniCode: "232131", muniName: "西尾市", prefName: "愛知県", isPref: false,
+    })),
+    // ⚠ 出雲は既存パーサで通る9年のみ（R7〜H31・H25・H22〜H20 はパーサ手当て待ち）。H26 の前年度は6月補正後（prevBasis 明示）
+    ...(["r8", "h30", "h29", "h28", "h27", "h26", "h24", "h23", "h18"] as const).map((fy) => ({
+      srcId: `izumo-yosangaiyou-${fy}`, muniCode: "322032", muniName: "出雲市", prefName: "島根県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。
