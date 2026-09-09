@@ -6481,11 +6481,22 @@
     },
     {
       "sourceId": "izumo-yosangaiyou-r8",
+      "url": "https://www.city.izumo.shimane.jp/www/contents/1741751998868/files/R8tousyo_gaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260909042745/https://www.city.izumo.shimane.jp/www/contents/1741751998868/files/R8tousyo_gaiyou.pdf",
+      "waybackTimestamp": "20260909042745",
+      "checkedAt": "2026-09-09T04:37:15.148Z",
+      "sha256Match": true,
+      "waybackBytes": 2191026,
+      "rawSha256": "e7ab056467a7ff42aef8298ce08bf1b59dac1f4d245898176d7c75e65a75425e"
+    },
+    {
+      "sourceId": "izumo-yosangaiyou-r8",
       "url": "https://www.city.izumo.shimane.jp/www/contents/1741751998868/index.html",
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20251023234638/https://www.city.izumo.shimane.jp/www/contents/1741751998868/index.html",
       "waybackTimestamp": "20251023234638",
-      "checkedAt": "2026-09-09T04:28:07.458Z"
+      "checkedAt": "2026-09-09T04:37:24.402Z"
     },
     {
       "sourceId": "kagawa-ken-zaisei-jijo-r8",
@@ -15056,11 +15067,22 @@
     },
     {
       "sourceId": "nishio-yosan-gaiyou-r8",
+      "url": "https://www.city.nishio.aichi.jp/_res/projects/default_project/_page_/001/003/218/r8yosangaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260909042824/https://www.city.nishio.aichi.jp/_res/projects/default_project/_page_/001/003/218/r8yosangaiyou.pdf",
+      "waybackTimestamp": "20260909042824",
+      "checkedAt": "2026-09-09T04:37:58.375Z",
+      "sha256Match": true,
+      "waybackBytes": 229499,
+      "rawSha256": "6df4ca35bc083b849e7d5c0f5b9a207ebe137d957e095e86ada3fae541ffd3e4"
+    },
+    {
+      "sourceId": "nishio-yosan-gaiyou-r8",
       "url": "https://www.city.nishio.aichi.jp/shisei/yosan/1001510/1003218.html",
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20230808033605/https://www.city.nishio.aichi.jp/shisei/yosan/1001510/1003218.html",
       "waybackTimestamp": "20230808033605",
-      "checkedAt": "2026-09-09T04:28:59.017Z"
+      "checkedAt": "2026-09-09T04:38:11.557Z"
     },
     {
       "sourceId": "nishitokyo-yosangaiyou-h24",
