@@ -1,0 +1,12 @@
+{
+  "sourceId": "hitachi-yosan-gaiyou-h27",
+  "files": [
+    {
+      "filename": "pdf3.pdf",
+      "sha256": "40bda520c7ee4694f42ebc7e2243e23f0ae6aaca07ef9aa2ae7819091d98d72e",
+      "bytes": 876322,
+      "fetchedAt": "2026-09-09T07:28:39.653Z",
+      "fetchedFrom": "https://www.city.hitachi.lg.jp/_res/projects/default_project/_page_/001/003/348/pdf3.pdf"
+    }
+  ]
+}

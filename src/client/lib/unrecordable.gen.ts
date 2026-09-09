@@ -732,6 +732,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
       }
     ]
   },
+  "452025": {
+    "budget": [
+      {
+        "fyLabel": "令和8年度・令和7年度・令和5年度・令和2年度・平成31年度・平成29年度・平成28年度・平成27年度",
+        "reason": "「当初予算説明資料（No.2）」がスキャン画像（pdftotext 0字・埋め込みフォント0。R8 は 600dpi CCITT 18画像、R7 160画像、R5 327画像、R2/H31 40画像、H29 153画像、H28 36画像、H27 30画像）。R8・R7・R5 は議会ページの予算書も歳出総括がパス描画でテキストが無い（R8 p.58-59 の pdftotext が8字＝ノンブルのみ・画像0）ため読めない。",
+        "checkedOn": "2026-09-09"
+      }
+    ]
+  },
   "460001": {
     "budget": [
       {

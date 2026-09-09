@@ -1,0 +1,19 @@
+{
+  "sourceId": "hitachi-yosan-gaiyou-h26",
+  "files": [
+    {
+      "filename": "h26sainyu.pdf",
+      "sha256": "dac4e6572a1c3adfb9386661b38577041403caa5cf870d3c62571c2dde9784d9",
+      "bytes": 45533,
+      "fetchedAt": "2026-09-09T07:28:39.951Z",
+      "fetchedFrom": "https://www.city.hitachi.lg.jp/_res/projects/default_project/_page_/001/003/350/h26sainyu.pdf"
+    },
+    {
+      "filename": "h26saisyutu.pdf",
+      "sha256": "f49aa8ac6597f9701c9f86d152f5e7390d3dc54b40462a4c236de558c232f2a9",
+      "bytes": 39149,
+      "fetchedAt": "2026-09-09T07:28:40.292Z",
+      "fetchedFrom": "https://www.city.hitachi.lg.jp/_res/projects/default_project/_page_/001/003/350/h26saisyutu.pdf"
+    }
+  ]
+}

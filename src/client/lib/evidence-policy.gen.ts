@@ -13968,5 +13968,293 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://warp.ndl.go.jp/20181113/20181112225554/https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/002/618/03_001.pdf",
     "license": "磐田市ホームページに掲載しているコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は磐田市に帰属します。また、一部の画像などの著作権は原著作者が所有しているものもあります。磐田市ホームページ上の文書・画像などの無断使用・転載、二次利用を原則禁止します。ただし掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に広報広聴・シティプロモーション課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
     "target": "file"
+  },
+  "/sources/hitachi-yosan-gaiyou-r8/r8yosannnogaiyou01.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hitachi.lg.jp/_res/projects/default_project/_page_/001/019/108/r8yosannnogaiyou01.pdf",
+    "license": "日立市ホームページに掲載している文章、写真、イラストなどの情報に関する著作権は、原則として日立市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/hitachi-yosan-gaiyou-r7/r7yosannnogaiyou02.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hitachi.lg.jp/_res/projects/default_project/_page_/001/015/884/r7yosannnogaiyou02.pdf",
+    "license": "日立市ホームページに掲載している文章、写真、イラストなどの情報に関する著作権は、原則として日立市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/hitachi-yosan-gaiyou-r6/r6yosannnogaiyou01.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hitachi.lg.jp/_res/projects/default_project/_page_/001/011/818/r6yosannnogaiyou01.pdf",
+    "license": "日立市ホームページに掲載している文章、写真、イラストなどの情報に関する著作権は、原則として日立市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/hitachi-yosan-gaiyou-r5/r5yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hitachi.lg.jp/_res/projects/default_project/_page_/001/003/332/r5yosannogaiyou.pdf",
+    "license": "日立市ホームページに掲載している文章、写真、イラストなどの情報に関する著作権は、原則として日立市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/hitachi-yosan-gaiyou-r4/r4yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hitachi.lg.jp/_res/projects/default_project/_page_/001/003/334/r4yosannogaiyou.pdf",
+    "license": "日立市ホームページに掲載している文章、写真、イラストなどの情報に関する著作権は、原則として日立市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/hitachi-yosan-gaiyou-r3/r3yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hitachi.lg.jp/_res/projects/default_project/_page_/001/003/336/r3yosannogaiyou.pdf",
+    "license": "日立市ホームページに掲載している文章、写真、イラストなどの情報に関する著作権は、原則として日立市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/hitachi-yosan-gaiyou-r2/r2yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hitachi.lg.jp/_res/projects/default_project/_page_/001/003/338/r2yosannogaiyou.pdf",
+    "license": "日立市ホームページに掲載している文章、写真、イラストなどの情報に関する著作権は、原則として日立市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/hitachi-yosan-gaiyou-r1/toushoyosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hitachi.lg.jp/_res/projects/default_project/_page_/001/003/340/toushoyosangaiyou.pdf",
+    "license": "日立市ホームページに掲載している文章、写真、イラストなどの情報に関する著作権は、原則として日立市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/hitachi-yosan-gaiyou-h30/30yosannnogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hitachi.lg.jp/_res/projects/default_project/_page_/001/003/342/30yosannnogaiyou.pdf",
+    "license": "日立市ホームページに掲載している文章、写真、イラストなどの情報に関する著作権は、原則として日立市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/hitachi-yosan-gaiyou-h29/29yosannnogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hitachi.lg.jp/_res/projects/default_project/_page_/001/003/344/29yosannnogaiyou.pdf",
+    "license": "日立市ホームページに掲載している文章、写真、イラストなどの情報に関する著作権は、原則として日立市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/hitachi-yosan-gaiyou-h28/pdf3.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hitachi.lg.jp/_res/projects/default_project/_page_/001/003/346/pdf3.pdf",
+    "license": "日立市ホームページに掲載している文章、写真、イラストなどの情報に関する著作権は、原則として日立市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/hitachi-yosan-gaiyou-h27/pdf3.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hitachi.lg.jp/_res/projects/default_project/_page_/001/003/348/pdf3.pdf",
+    "license": "日立市ホームページに掲載している文章、写真、イラストなどの情報に関する著作権は、原則として日立市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/hitachi-yosan-gaiyou-h26/h26sainyu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hitachi.lg.jp/_res/projects/default_project/_page_/001/003/350/h26sainyu.pdf",
+    "license": "日立市ホームページに掲載している文章、写真、イラストなどの情報に関する著作権は、原則として日立市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/hitachi-yosan-gaiyou-h26/h26saisyutu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hitachi.lg.jp/_res/projects/default_project/_page_/001/003/350/h26saisyutu.pdf",
+    "license": "日立市ホームページに掲載している文章、写真、イラストなどの情報に関する著作権は、原則として日立市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/hitachi-yosan-gaiyou-h25/04288_20130509_0005.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hitachi.lg.jp/_res/projects/default_project/_page_/001/003/351/04288_20130509_0005.pdf",
+    "license": "日立市ホームページに掲載している文章、写真、イラストなどの情報に関する著作権は、原則として日立市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/hitachi-yosan-gaiyou-h25/04288_20130509_0006.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hitachi.lg.jp/_res/projects/default_project/_page_/001/003/351/04288_20130509_0006.pdf",
+    "license": "日立市ホームページに掲載している文章、写真、イラストなどの情報に関する著作権は、原則として日立市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/hitachi-yosan-gaiyou-h24/04645_20120503_0015.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hitachi.lg.jp/_res/projects/default_project/_page_/001/003/352/04645_20120503_0015.pdf",
+    "license": "日立市ホームページに掲載している文章、写真、イラストなどの情報に関する著作権は、原則として日立市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/hitachi-yosan-gaiyou-h24/04645_20120503_0016.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hitachi.lg.jp/_res/projects/default_project/_page_/001/003/352/04645_20120503_0016.pdf",
+    "license": "日立市ホームページに掲載している文章、写真、イラストなどの情報に関する著作権は、原則として日立市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/hirosaki-yosansho-r8/R8yosansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hirosaki.aomori.jp/jouhou/keikaku/yosan/R8yosansyo.pdf",
+    "license": "弘前市ホームページに掲載している文章、写真、画像、動画、その他全ての情報は著作権の対象となっています。また、「弘前市ホームページ」全体も編集著作物として著作権の対象となっており、共に著作権法により保護されています。これらの情報については、弘前市または第三者が著作権を有しており、「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/hirosaki-yosansho-r7/R7yosansho2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hirosaki.aomori.jp/jouhou/keikaku/yosan/R7yosansho2.pdf",
+    "license": "弘前市ホームページに掲載している文章、写真、画像、動画、その他全ての情報は著作権の対象となっています。また、「弘前市ホームページ」全体も編集著作物として著作権の対象となっており、共に著作権法により保護されています。これらの情報については、弘前市または第三者が著作権を有しており、「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/hirosaki-yosansho-r6/R6yosannsho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hirosaki.aomori.jp/jouhou/keikaku/yosan/R6yosannsho.pdf",
+    "license": "弘前市ホームページに掲載している文章、写真、画像、動画、その他全ての情報は著作権の対象となっています。また、「弘前市ホームページ」全体も編集著作物として著作権の対象となっており、共に著作権法により保護されています。これらの情報については、弘前市または第三者が著作権を有しており、「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/hirosaki-yosansho-r5/R5yosansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hirosaki.aomori.jp/jouhou/keikaku/yosan/R5yosansyo.pdf",
+    "license": "弘前市ホームページに掲載している文章、写真、画像、動画、その他全ての情報は著作権の対象となっています。また、「弘前市ホームページ」全体も編集著作物として著作権の対象となっており、共に著作権法により保護されています。これらの情報については、弘前市または第三者が著作権を有しており、「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/hirosaki-yosansho-r4/R4yosansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hirosaki.aomori.jp/jouhou/keikaku/yosan/R4yosansyo.pdf",
+    "license": "弘前市ホームページに掲載している文章、写真、画像、動画、その他全ての情報は著作権の対象となっています。また、「弘前市ホームページ」全体も編集著作物として著作権の対象となっており、共に著作権法により保護されています。これらの情報については、弘前市または第三者が著作権を有しており、「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/obihiro-yosansho-r8/5_r08_ippannkaikeizikoubetu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.obihiro.hokkaido.jp/_res/projects/default_project/_page_/001/023/191/5_r08_ippannkaikeizikoubetu.pdf",
+    "license": "本ホームページに掲載している著作物（文章・画像・映像・音声などで、プログラムデータを含む）にかかる著作権は、帯広市もしくは、帯広市に情報提供していただいた提供元に帰属します。本ホームページで掲載している情報・文章・画像などのデータは、権利者の許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/obihiro-yosansho-r7/5_r07_ippannkaikeizikoubetu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.obihiro.hokkaido.jp/_res/projects/default_project/_page_/001/019/420/5_r07_ippannkaikeizikoubetu.pdf",
+    "license": "本ホームページに掲載している著作物（文章・画像・映像・音声などで、プログラムデータを含む）にかかる著作権は、帯広市もしくは、帯広市に情報提供していただいた提供元に帰属します。本ホームページで掲載している情報・文章・画像などのデータは、権利者の許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/obihiro-yosansho-r6/r6_ippankaikei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.obihiro.hokkaido.jp/_res/projects/default_project/_page_/001/016/762/r6_ippankaikei.pdf",
+    "license": "本ホームページに掲載している著作物（文章・画像・映像・音声などで、プログラムデータを含む）にかかる著作権は、帯広市もしくは、帯広市に情報提供していただいた提供元に帰属します。本ホームページで掲載している情報・文章・画像などのデータは、権利者の許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/obihiro-yosan-setsumei-r5/r5_yosansetsumeisiryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.obihiro.hokkaido.jp/_res/projects/default_project/_page_/001/013/664/r5_yosansetsumeisiryou.pdf",
+    "license": "本ホームページに掲載している著作物（文章・画像・映像・音声などで、プログラムデータを含む）にかかる著作権は、帯広市もしくは、帯広市に情報提供していただいた提供元に帰属します。本ホームページで掲載している情報・文章・画像などのデータは、権利者の許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/obihiro-yosan-setsumei-r4/r4_yosansetsumeisiryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.obihiro.hokkaido.jp/_res/projects/default_project/_page_/001/011/136/r4_yosansetsumeisiryou.pdf",
+    "license": "本ホームページに掲載している著作物（文章・画像・映像・音声などで、プログラムデータを含む）にかかる著作権は、帯広市もしくは、帯広市に情報提供していただいた提供元に帰属します。本ホームページで掲載している情報・文章・画像などのデータは、権利者の許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/obihiro-yosansho-r3/r3ippannkaikei_zikoubetu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.obihiro.hokkaido.jp/_res/projects/default_project/_page_/001/008/617/r3ippannkaikei_zikoubetu.pdf",
+    "license": "本ホームページに掲載している著作物（文章・画像・映像・音声などで、プログラムデータを含む）にかかる著作権は、帯広市もしくは、帯広市に情報提供していただいた提供元に帰属します。本ホームページで掲載している情報・文章・画像などのデータは、権利者の許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/obihiro-yosan-gaiyou-r2/03_r2henseigaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.obihiro.hokkaido.jp/_res/projects/default_project/_page_/001/003/553/03_r2henseigaiyou.pdf",
+    "license": "本ホームページに掲載している著作物（文章・画像・映像・音声などで、プログラムデータを含む）にかかる著作権は、帯広市もしくは、帯広市に情報提供していただいた提供元に帰属します。本ホームページで掲載している情報・文章・画像などのデータは、権利者の許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/obihiro-yosan-gaiyou-h31/h31_gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.obihiro.hokkaido.jp/_res/projects/default_project/_page_/001/003/555/h31_gaiyou.pdf",
+    "license": "本ホームページに掲載している著作物（文章・画像・映像・音声などで、プログラムデータを含む）にかかる著作権は、帯広市もしくは、帯広市に情報提供していただいた提供元に帰属します。本ホームページで掲載している情報・文章・画像などのデータは、権利者の許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/obihiro-yosansho-h30/h30yosansho_02ippan_jikoubetsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.obihiro.hokkaido.jp/_res/projects/default_project/_page_/001/003/557/h30yosansho_02ippan_jikoubetsu.pdf",
+    "license": "本ホームページに掲載している著作物（文章・画像・映像・音声などで、プログラムデータを含む）にかかる著作権は、帯広市もしくは、帯広市に情報提供していただいた提供元に帰属します。本ホームページで掲載している情報・文章・画像などのデータは、権利者の許可なく使用・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/miyakonojo-yosan-setsumei-r6/31143.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.miyakonojo.miyazaki.jp/uploaded/attachment/31143.pdf",
+    "license": "都城市ホームページ上に掲載している個々の情報(文章、写真、イラストなど)は、著作権保護の対象となっています。また、都城市ホームページ全体も編集著作物として著作権保護の対象となっています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/miyakonojo-yosan-setsumei-r4/44032_67939_misc.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.miyakonojo.miyazaki.jp/uploaded/life/44032_67939_misc.pdf",
+    "license": "都城市ホームページ上に掲載している個々の情報(文章、写真、イラストなど)は、著作権保護の対象となっています。また、都城市ホームページ全体も編集著作物として著作権保護の対象となっています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/miyakonojo-yosan-setsumei-r3/44014_67906_misc.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.miyakonojo.miyazaki.jp/uploaded/life/44014_67906_misc.pdf",
+    "license": "都城市ホームページ上に掲載している個々の情報(文章、写真、イラストなど)は、著作権保護の対象となっています。また、都城市ホームページ全体も編集著作物として著作権保護の対象となっています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/miyakonojo-yosan-setsumei-h30/6558.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.miyakonojo.miyazaki.jp/uploaded/attachment/6558.pdf",
+    "license": "都城市ホームページ上に掲載している個々の情報(文章、写真、イラストなど)は、著作権保護の対象となっています。また、都城市ホームページ全体も編集著作物として著作権保護の対象となっています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/miyakonojo-yosan-setsumei-h26/6306.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.miyakonojo.miyazaki.jp/uploaded/attachment/6306.pdf",
+    "license": "都城市ホームページ上に掲載している個々の情報(文章、写真、イラストなど)は、著作権保護の対象となっています。また、都城市ホームページ全体も編集著作物として著作権保護の対象となっています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/miyakonojo-yosan-setsumei-h25/6232.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.miyakonojo.miyazaki.jp/uploaded/attachment/6232.pdf",
+    "license": "都城市ホームページ上に掲載している個々の情報(文章、写真、イラストなど)は、著作権保護の対象となっています。また、都城市ホームページ全体も編集著作物として著作権保護の対象となっています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/takaoka-yosansho-r8/r8yosansho_ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takaoka.toyama.jp/material/files/group/10/r8yosansho_ippan.pdf",
+    "license": "高岡市ホームページに掲載されている情報・文章・画像等の著作権は、高岡市にあります。ただし、これらの提供者の方にある場合もあります。これらの著作物は、著作権法上認められた場合を除き、無断で転用・引用することはできません。",
+    "target": "file"
+  },
+  "/sources/takaoka-yosansho-r7/r7yosansho_ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takaoka.toyama.jp/material/files/group/10/r7yosansho_ippan.pdf",
+    "license": "高岡市ホームページに掲載されている情報・文章・画像等の著作権は、高岡市にあります。ただし、これらの提供者の方にある場合もあります。これらの著作物は、著作権法上認められた場合を除き、無断で転用・引用することはできません。",
+    "target": "file"
+  },
+  "/sources/takaoka-yosansho-r6/6yosansho_ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takaoka.toyama.jp/material/files/group/10/6yosansho_ippan.pdf",
+    "license": "高岡市ホームページに掲載されている情報・文章・画像等の著作権は、高岡市にあります。ただし、これらの提供者の方にある場合もあります。これらの著作物は、著作権法上認められた場合を除き、無断で転用・引用することはできません。",
+    "target": "file"
+  },
+  "/sources/takaoka-yosansho-r5/r5ippankaikei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takaoka.toyama.jp/material/files/group/10/r5ippankaikei.pdf",
+    "license": "高岡市ホームページに掲載されている情報・文章・画像等の著作権は、高岡市にあります。ただし、これらの提供者の方にある場合もあります。これらの著作物は、著作権法上認められた場合を除き、無断で転用・引用することはできません。",
+    "target": "file"
+  },
+  "/sources/takaoka-yosansho-r4/r4ippann.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takaoka.toyama.jp/material/files/group/10/r4ippann.pdf",
+    "license": "高岡市ホームページに掲載されている情報・文章・画像等の著作権は、高岡市にあります。ただし、これらの提供者の方にある場合もあります。これらの著作物は、著作権法上認められた場合を除き、無断で転用・引用することはできません。",
+    "target": "file"
+  },
+  "/sources/takaoka-yosansho-r3/r3ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takaoka.toyama.jp/material/files/group/10/r3ippan.pdf",
+    "license": "高岡市ホームページに掲載されている情報・文章・画像等の著作権は、高岡市にあります。ただし、これらの提供者の方にある場合もあります。これらの著作物は、著作権法上認められた場合を除き、無断で転用・引用することはできません。",
+    "target": "file"
+  },
+  "/sources/takaoka-yosansho-r2/r2ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.takaoka.toyama.jp/material/files/group/10/r2ippan.pdf",
+    "license": "高岡市ホームページに掲載されている情報・文章・画像等の著作権は、高岡市にあります。ただし、これらの提供者の方にある場合もあります。これらの著作物は、著作権法上認められた場合を除き、無断で転用・引用することはできません。",
+    "target": "file"
+  },
+  "/sources/takaoka-kaikeibetsu-yosan-h30/kaikeibetsu.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20190505/20190505063922/https://www.city.takaoka.toyama.jp/zaisei/shise/yosan/yosan/h30yosan/documents/kaikeibetsu.pdf",
+    "license": "高岡市ホームページに掲載されている情報・文章・画像等の著作権は、高岡市にあります。ただし、これらの提供者の方にある場合もあります。これらの著作物は、著作権法上認められた場合を除き、無断で転用・引用することはできません。",
+    "target": "file"
+  },
+  "/sources/takaoka-kaikeibetsu-yosan-h29/_h29kaikeibetsu.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20180515/20180513145242/https://www.city.takaoka.toyama.jp/zaisei/shise/yosan/yosan/h29yosan/documents/_h29kaikeibetsu.pdf",
+    "license": "高岡市ホームページに掲載されている情報・文章・画像等の著作権は、高岡市にあります。ただし、これらの提供者の方にある場合もあります。これらの著作物は、著作権法上認められた場合を除き、無断で転用・引用することはできません。",
+    "target": "file"
+  },
+  "/sources/takaoka-kaikeibetsu-yosan-h28/h28kaikeibetsu.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20170511/20170510012940/https://www.city.takaoka.toyama.jp/zaisei/shise/yosan/yosan/documents/h28kaikeibetsu.pdf",
+    "license": "高岡市ホームページに掲載されている情報・文章・画像等の著作権は、高岡市にあります。ただし、これらの提供者の方にある場合もあります。これらの著作物は、著作権法上認められた場合を除き、無断で転用・引用することはできません。",
+    "target": "file"
   }
 };

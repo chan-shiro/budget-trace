@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 208,
+  "budgetCount": 213,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 1458,
-  "fileCount": 2653,
-  "archivedCount": 1323,
+  "sourceCount": 1503,
+  "fileCount": 2701,
+  "archivedCount": 1333,
   "licenseOpen": 98,
-  "licensePermission": 1215,
+  "licensePermission": 1260,
   "licenseUnverified": 145,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -133,6 +133,12 @@ export const ROADMAP_PROGRESS = {
       "code": "142077",
       "years": 16,
       "range": "H21〜R8（16年度）"
+    },
+    {
+      "name": "日立市",
+      "code": "082023",
+      "years": 15,
+      "range": "H24〜R8（15年度）"
     },
     {
       "name": "越谷市",
@@ -339,6 +345,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H29〜R8（10年度）"
     },
     {
+      "name": "高岡市",
+      "code": "162027",
+      "years": 10,
+      "range": "H28〜R8（10年度）"
+    },
+    {
       "name": "富士市",
       "code": "222101",
       "years": 10,
@@ -373,6 +385,12 @@ export const ROADMAP_PROGRESS = {
       "code": "442011",
       "years": 10,
       "range": "H29〜R8（10年度）"
+    },
+    {
+      "name": "帯広市",
+      "code": "012076",
+      "years": 9,
+      "range": "H30〜R8（9年度）"
     },
     {
       "name": "小山市",
@@ -715,6 +733,18 @@ export const ROADMAP_PROGRESS = {
       "code": "422011",
       "years": 6,
       "range": "H29〜R8（6年度）"
+    },
+    {
+      "name": "都城市",
+      "code": "452025",
+      "years": 6,
+      "range": "H25〜R6（6年度）"
+    },
+    {
+      "name": "弘前市",
+      "code": "022021",
+      "years": 5,
+      "range": "R4〜R8（5年度）"
     },
     {
       "name": "所沢市",

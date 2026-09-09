@@ -1,0 +1,12 @@
+{
+  "sourceId": "hirosaki-yosansho-r6",
+  "files": [
+    {
+      "filename": "R6yosannsho.pdf",
+      "sha256": "b930250c37dc4b577ba48f4b3bed4e5fa5143569aeb7fadaebb1be8cceeb58c5",
+      "bytes": 7520444,
+      "fetchedAt": "2026-09-09T07:32:17.431Z",
+      "fetchedFrom": "https://www.city.hirosaki.aomori.jp/jouhou/keikaku/yosan/R6yosannsho.pdf"
+    }
+  ]
+}
