@@ -1,0 +1,12 @@
+{
+  "sourceId": "iwata-yosansho-h30",
+  "files": [
+    {
+      "filename": "02_001.pdf",
+      "sha256": "35a6593160ab0fa7fda02d0b6a808f437c23184fd01ce45376988bc48f017d10",
+      "bytes": 822645,
+      "fetchedAt": "2026-09-09T05:40:40.662Z",
+      "fetchedFrom": "https://warp.ndl.go.jp/20181113/20181112225202/https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/002/614/02_001.pdf"
+    }
+  ]
+}

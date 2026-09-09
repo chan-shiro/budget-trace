@@ -1,0 +1,12 @@
+{
+  "sourceId": "sakura-yosan-setsumei-r2",
+  "files": [
+    {
+      "filename": "setumei.pdf",
+      "sha256": "29dc97b5ea2f31dabc865edf81376cc2398ef9a7ead229e8665f38456360e4be",
+      "bytes": 717717,
+      "fetchedAt": "2026-09-09T05:29:27.313Z",
+      "fetchedFrom": "https://www.city.sakura.lg.jp/material/files/group/9/setumei.pdf"
+    }
+  ]
+}

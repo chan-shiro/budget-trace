@@ -2704,6 +2704,33 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "h30", "h29", "h28", "h27", "h26", "h24", "h23", "h18"] as const).map((fy) => ({
       srcId: `izumo-yosangaiyou-${fy}`, muniCode: "322032", muniName: "出雲市", prefName: "島根県", isPref: false,
     })),
+    // ⚠ 佐倉は R8〜H19 の18年（H24 はパーサ手当て待ち・H22 は別様式）。R6・R2・H28・H20 は前年度が6月補正後（prevBasis 明示）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28", "h27", "h26", "h25", "h23", "h21", "h20", "h19"] as const).map((fy) => ({
+      srcId: `sakura-yosan-setsumei-${fy}`, muniCode: "122122", muniName: "佐倉市", prefName: "千葉県", isPref: false,
+    })),
+    // ⚠ 苫小牧は予算書の総括 12年（H28・H27 は画像）。R2 は CropX・H26 は歳出前年度の5款不一致を prevNote。noDeepLink
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h26", "h25"] as const).map((fy) => ({
+      srcId: `tomakomai-yosansho-${fy}`, muniCode: "012131", muniName: "苫小牧市", prefName: "北海道", isPref: false,
+    })),
+    // ⚠ 小山は予算書の総括 9年（R4 以前は decodeGarble・R2 は末尾型の廃款印）。noDeepLink
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30"] as const).map((fy) => ({
+      srcId: `oyama-yosansho-${fy}`, muniCode: "092088", muniName: "小山市", prefName: "栃木県", isPref: false,
+    })),
+    // ⚠ 磐田は R8・R7 が説明資料（CropX）、R6〜H30 が予算書の総括（R3〜H30 は WARP）、H29〜H26 が総括3頁 PDF（WARP）。R2 は原案→R3 に prevNote
+    ...(["r8", "r7"] as const).map((fy) => ({
+      srcId: `iwata-yosan-setsumei-${fy}`, muniCode: "222119", muniName: "磐田市", prefName: "静岡県", isPref: false,
+    })),
+    ...(["r6", "r5", "r4", "r3", "r2", "h31", "h30"] as const).map((fy) => ({
+      srcId: `iwata-yosansho-${fy}`, muniCode: "222119", muniName: "磐田市", prefName: "静岡県", isPref: false,
+    })),
+    ...(["h29", "h28", "h27", "h26"] as const).map((fy) => ({
+      srcId: `iwata-soukatsu-${fy}`, muniCode: "222119", muniName: "磐田市", prefName: "静岡県", isPref: false,
+    })),
+    // ⚠ 新座は予算書の総括（見開き spread）9年＋R2 は概要で代替。R4/R3/H31/H30 はスキャン。ライセンスは判定語に当たらず unverified（判断待ち）
+    ...(["r8", "r7", "r6", "r5", "h29", "h28", "h27", "h26", "h25"] as const).map((fy) => ({
+      srcId: `niiza-yosansho-${fy}`, muniCode: "112305", muniName: "新座市", prefName: "埼玉県", isPref: false,
+    })),
+    { srcId: "niiza-yosangaiyou-r2", muniCode: "112305", muniName: "新座市", prefName: "埼玉県", isPref: false },
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。
