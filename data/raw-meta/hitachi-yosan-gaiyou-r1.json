@@ -1,0 +1,12 @@
+{
+  "sourceId": "hitachi-yosan-gaiyou-r1",
+  "files": [
+    {
+      "filename": "toushoyosangaiyou.pdf",
+      "sha256": "af4e7ee8268549d062f2db6b090614086529475fb5a4e09c376efcde053bf0fe",
+      "bytes": 895241,
+      "fetchedAt": "2026-09-09T07:28:38.183Z",
+      "fetchedFrom": "https://www.city.hitachi.lg.jp/_res/projects/default_project/_page_/001/003/340/toushoyosangaiyou.pdf"
+    }
+  ]
+}

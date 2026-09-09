@@ -1,0 +1,12 @@
+{
+  "sourceId": "takaoka-kaikeibetsu-yosan-h30",
+  "files": [
+    {
+      "filename": "kaikeibetsu.pdf",
+      "sha256": "fbc36378cb70e92e429aef0e95156193606fa4257571e5ea3a2a8e2fe2752891",
+      "bytes": 135178,
+      "fetchedAt": "2026-09-09T07:40:21.741Z",
+      "fetchedFrom": "https://warp.ndl.go.jp/20190505/20190505063922/https://www.city.takaoka.toyama.jp/zaisei/shise/yosan/yosan/h30yosan/documents/kaikeibetsu.pdf"
+    }
+  ]
+}

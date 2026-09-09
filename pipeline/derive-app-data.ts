@@ -2731,6 +2731,35 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       srcId: `niiza-yosansho-${fy}`, muniCode: "112305", muniName: "新座市", prefName: "埼玉県", isPref: false,
     })),
     { srcId: "niiza-yosangaiyou-r2", muniCode: "112305", muniName: "新座市", prefName: "埼玉県", isPref: false },
+    // ⚠ 日立は「予算の概要」の款別表 15年（H26〜H24 は歳入・歳出の2ファイル型）。ライセンスは open に読める根拠あり（判断待ち）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "r1", "h30", "h29", "h28", "h27", "h26", "h25", "h24"] as const).map((fy) => ({
+      srcId: `hitachi-yosan-gaiyou-${fy}`, muniCode: "082023", muniName: "日立市", prefName: "茨城県", isPref: false,
+    })),
+    // ⚠ 弘前は予算書の総括 R8〜R4（予算書の掲載は R4 から）。R8 は骨格予算（自身の年）
+    ...(["r8", "r7", "r6", "r5", "r4"] as const).map((fy) => ({
+      srcId: `hirosaki-yosansho-${fy}`, muniCode: "022021", muniName: "弘前市", prefName: "青森県", isPref: false,
+    })),
+    // ⚠ 帯広は事項別明細書 5年（R7/R6/R3 は復号）＋説明資料 R5/R4＋編成概要 R2/H31。R5・H31 は前年度が6月補正後（prevBasis 明示）
+    ...(["r8", "r7", "r6", "r3", "h30"] as const).map((fy) => ({
+      srcId: `obihiro-yosansho-${fy}`, muniCode: "012076", muniName: "帯広市", prefName: "北海道", isPref: false,
+    })),
+    ...(["r5", "r4"] as const).map((fy) => ({
+      srcId: `obihiro-yosan-setsumei-${fy}`, muniCode: "012076", muniName: "帯広市", prefName: "北海道", isPref: false,
+    })),
+    ...(["r2", "h31"] as const).map((fy) => ({
+      srcId: `obihiro-yosan-gaiyou-${fy}`, muniCode: "012076", muniName: "帯広市", prefName: "北海道", isPref: false,
+    })),
+    // ⚠ 都城は説明資料にテキスト層がある6年だけ（R8/R7 を含む8年はスキャン・予算書は歳出がパス描画）。kanNoless・前年先行・年度ごとの CropX
+    ...(["r6", "r4", "r3", "h30", "h26", "h25"] as const).map((fy) => ({
+      srcId: `miyakonojo-yosan-setsumei-${fy}`, muniCode: "452025", muniName: "都城市", prefName: "宮崎県", isPref: false,
+    })),
+    // ⚠ 高岡は予算書の総括 R8〜R2（復号・kanNoless）＋ WARP の会計別予算 H30〜H28（前年先行）。R1 はパーサ手当て待ち
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `takaoka-yosansho-${fy}`, muniCode: "162027", muniName: "高岡市", prefName: "富山県", isPref: false,
+    })),
+    ...(["h30", "h29", "h28"] as const).map((fy) => ({
+      srcId: `takaoka-kaikeibetsu-yosan-${fy}`, muniCode: "162027", muniName: "高岡市", prefName: "富山県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。

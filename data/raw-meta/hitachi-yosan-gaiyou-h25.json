@@ -1,0 +1,19 @@
+{
+  "sourceId": "hitachi-yosan-gaiyou-h25",
+  "files": [
+    {
+      "filename": "04288_20130509_0005.pdf",
+      "sha256": "21abd9c879206bd7f9db0747c77ffe1541ffe1998da555e78434e6def6082d39",
+      "bytes": 42022,
+      "fetchedAt": "2026-09-09T07:28:40.915Z",
+      "fetchedFrom": "https://www.city.hitachi.lg.jp/_res/projects/default_project/_page_/001/003/351/04288_20130509_0005.pdf"
+    },
+    {
+      "filename": "04288_20130509_0006.pdf",
+      "sha256": "349885c293c574a1f1166aaa4f8ed684d986104f000c35092b28d6d336627246",
+      "bytes": 36031,
+      "fetchedAt": "2026-09-09T07:28:41.242Z",
+      "fetchedFrom": "https://www.city.hitachi.lg.jp/_res/projects/default_project/_page_/001/003/351/04288_20130509_0006.pdf"
+    }
+  ]
+}
