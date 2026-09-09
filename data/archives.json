@@ -16868,10 +16868,18 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260129143844/https://www.city.sakura.lg.jp/material/files/group/9/20_yosanan_setumei.pdf",
       "waybackTimestamp": "20260129143844",
-      "checkedAt": "2026-09-09T05:47:14.172Z",
+      "checkedAt": "2026-09-09T06:58:12.141Z",
       "sha256Match": true,
       "waybackBytes": 164035,
       "rawSha256": "fb596b72b6352f63efd7fc0456d281f4d88e1cf029be7fd6facbd51079636bff"
+    },
+    {
+      "sourceId": "sakura-yosan-setsumei-h20",
+      "url": "https://www.city.sakura.lg.jp/soshiki/zaiseika/76/3235.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260129131053/https://www.city.sakura.lg.jp/soshiki/zaiseika/76/3235.html",
+      "waybackTimestamp": "20260129131053",
+      "checkedAt": "2026-09-09T06:58:19.566Z"
     },
     {
       "sourceId": "sakura-yosan-setsumei-h21",
@@ -16974,10 +16982,18 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260202083745/https://www.city.sakura.lg.jp/material/files/group/9/H28syuyou.pdf",
       "waybackTimestamp": "20260202083745",
-      "checkedAt": "2026-09-09T05:37:38.318Z",
+      "checkedAt": "2026-09-09T06:58:39.690Z",
       "sha256Match": true,
       "waybackBytes": 361568,
       "rawSha256": "c63850a5e305c163eeaa49503e4f375fa0dfb2237553cdca90322431bb6107e1"
+    },
+    {
+      "sourceId": "sakura-yosan-setsumei-h28",
+      "url": "https://www.city.sakura.lg.jp/soshiki/zaiseika/76/3781.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260129092630/https://www.city.sakura.lg.jp/soshiki/zaiseika/76/3781.html",
+      "waybackTimestamp": "20260129092630",
+      "checkedAt": "2026-09-09T06:59:01.455Z"
     },
     {
       "sourceId": "sakura-yosan-setsumei-h29",
