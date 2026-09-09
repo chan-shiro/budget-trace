@@ -13,15 +13,15 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 203,
+  "budgetCount": 208,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 1396,
-  "fileCount": 2591,
-  "archivedCount": 1261,
+  "sourceCount": 1458,
+  "fileCount": 2653,
+  "archivedCount": 1323,
   "licenseOpen": 98,
-  "licensePermission": 1163,
-  "licenseUnverified": 135,
+  "licensePermission": 1215,
+  "licenseUnverified": 145,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
   "kofuBudgetYears": 7,
@@ -61,6 +61,12 @@ export const ROADMAP_PROGRESS = {
       "code": "072044",
       "years": 18,
       "range": "H20〜R8（18年度）"
+    },
+    {
+      "name": "佐倉市",
+      "code": "122122",
+      "years": 18,
+      "range": "H19〜R8（18年度）"
     },
     {
       "name": "市原市",
@@ -201,6 +207,18 @@ export const ROADMAP_PROGRESS = {
       "range": "H26〜R8（13年度）"
     },
     {
+      "name": "磐田市",
+      "code": "222119",
+      "years": 13,
+      "range": "H26〜R8（13年度）"
+    },
+    {
+      "name": "苫小牧市",
+      "code": "012131",
+      "years": 12,
+      "range": "H25〜R8（12年度）"
+    },
+    {
       "name": "習志野市",
       "code": "122165",
       "years": 12,
@@ -303,6 +321,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H29〜R8（10年度）"
     },
     {
+      "name": "新座市",
+      "code": "112305",
+      "years": 10,
+      "range": "H25〜R8（10年度）"
+    },
+    {
       "name": "東京都",
       "code": "130001",
       "years": 10,
@@ -349,6 +373,12 @@ export const ROADMAP_PROGRESS = {
       "code": "442011",
       "years": 10,
       "range": "H29〜R8（10年度）"
+    },
+    {
+      "name": "小山市",
+      "code": "092088",
+      "years": 9,
+      "range": "H30〜R8（9年度）"
     },
     {
       "name": "太田市",

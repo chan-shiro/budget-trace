@@ -1,0 +1,12 @@
+{
+  "sourceId": "tomakomai-yosansho-h30",
+  "files": [
+    {
+      "filename": "yosan-ippan-h30.pdf",
+      "sha256": "5dd5eed369015d2c430a261733cd9e4fc83c9e107d33bdfe14c84622e1bd97c0",
+      "bytes": 1225651,
+      "fetchedAt": "2026-09-09T05:32:38.285Z",
+      "fetchedFrom": "https://www.city.tomakomai.hokkaido.jp/files/00004100/00004109/yosan-ippan-h30.pdf"
+    }
+  ]
+}

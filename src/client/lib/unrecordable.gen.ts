@@ -57,6 +57,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
       }
     ]
   },
+  "112305": {
+    "budget": [
+      {
+        "fyLabel": "令和4年度・令和3年度・平成31年度・平成30年度",
+        "reason": "「一般会計予算書」も「予算概要」もスキャン画像で、pdftotext で金額が1つも出ない（先頭40ページで R4 予算書 0字・画像176／概要 16字、R3 予算書 335字（ノンブルのみ）／概要 0字、H31（令和元年度）予算書 1,910字・金額0／概要 0字、H30 予算書 338字／概要 0字）。",
+        "checkedOn": "2026-09-09"
+      }
+    ]
+  },
   "121002": {
     "report": [
       {
@@ -811,6 +820,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
         "fyLabel": "令和7年度",
         "reason": "予算の概要 PDF がスキャン画像。",
         "checkedOn": "2026-07-25"
+      }
+    ]
+  },
+  "012131": {
+    "budget": [
+      {
+        "fyLabel": "平成28年度・平成27年度",
+        "reason": "「一般会計予算書」（H28: 257p・H27: 249p）が全ページスキャン画像で、総括のページ（p.13〜14）の pdftotext 出力が0字・埋め込みフォント0・各ページ1画像。",
+        "checkedOn": "2026-09-09"
       }
     ]
   }

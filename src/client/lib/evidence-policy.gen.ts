@@ -13656,5 +13656,317 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.izumo.shimane.jp/www/contents/1141374852515/files/H18gaiyou.pdf",
     "license": "出雲市ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、出雲市またはコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各課等へお問い合わせください。",
     "target": "file"
+  },
+  "/sources/sakura-yosan-setsumei-r8/R08tousyoyosansetumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakura.lg.jp/material/files/group/9/R08tousyoyosansetumei.pdf",
+    "license": "本サイトが提供する文書、写真、イラスト等の情報は、告示・訓令・通達その他これらに類するもの（及びそれらの翻訳物及び編集物含む）を除き、佐倉市ならびに第三者が保有する著作権により保護されています。私的な目的で使用する場合や、著作権法上認められている場合を除き、無断で転載、引用、複製することは禁じられています。ただし、個々の情報に別途定めがある場合はこの取り扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/sakura-yosan-setsumei-r7/R07tousyoyosansetumei02.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakura.lg.jp/material/files/group/9/R07tousyoyosansetumei02.pdf",
+    "license": "本サイトが提供する文書、写真、イラスト等の情報は、告示・訓令・通達その他これらに類するもの（及びそれらの翻訳物及び編集物含む）を除き、佐倉市ならびに第三者が保有する著作権により保護されています。私的な目的で使用する場合や、著作権法上認められている場合を除き、無断で転載、引用、複製することは禁じられています。ただし、個々の情報に別途定めがある場合はこの取り扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/sakura-yosan-setsumei-r6/R6_0226_02.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakura.lg.jp/material/files/group/9/R6_0226_02.pdf",
+    "license": "本サイトが提供する文書、写真、イラスト等の情報は、告示・訓令・通達その他これらに類するもの（及びそれらの翻訳物及び編集物含む）を除き、佐倉市ならびに第三者が保有する著作権により保護されています。私的な目的で使用する場合や、著作権法上認められている場合を除き、無断で転載、引用、複製することは禁じられています。ただし、個々の情報に別途定めがある場合はこの取り扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/sakura-yosan-setsumei-r5/R05_0220_02.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakura.lg.jp/material/files/group/9/R05_0220_02.pdf",
+    "license": "本サイトが提供する文書、写真、イラスト等の情報は、告示・訓令・通達その他これらに類するもの（及びそれらの翻訳物及び編集物含む）を除き、佐倉市ならびに第三者が保有する著作権により保護されています。私的な目的で使用する場合や、著作権法上認められている場合を除き、無断で転載、引用、複製することは禁じられています。ただし、個々の情報に別途定めがある場合はこの取り扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/sakura-yosan-setsumei-r4/R4_jigyouichirann.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakura.lg.jp/material/files/group/9/R4_jigyouichirann.pdf",
+    "license": "本サイトが提供する文書、写真、イラスト等の情報は、告示・訓令・通達その他これらに類するもの（及びそれらの翻訳物及び編集物含む）を除き、佐倉市ならびに第三者が保有する著作権により保護されています。私的な目的で使用する場合や、著作権法上認められている場合を除き、無断で転載、引用、複製することは禁じられています。ただし、個々の情報に別途定めがある場合はこの取り扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/sakura-yosan-setsumei-r3/setumei_06072307.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakura.lg.jp/material/files/group/9/setumei_06072307.pdf",
+    "license": "本サイトが提供する文書、写真、イラスト等の情報は、告示・訓令・通達その他これらに類するもの（及びそれらの翻訳物及び編集物含む）を除き、佐倉市ならびに第三者が保有する著作権により保護されています。私的な目的で使用する場合や、著作権法上認められている場合を除き、無断で転載、引用、複製することは禁じられています。ただし、個々の情報に別途定めがある場合はこの取り扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/sakura-yosan-setsumei-r2/setumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakura.lg.jp/material/files/group/9/setumei.pdf",
+    "license": "本サイトが提供する文書、写真、イラスト等の情報は、告示・訓令・通達その他これらに類するもの（及びそれらの翻訳物及び編集物含む）を除き、佐倉市ならびに第三者が保有する著作権により保護されています。私的な目的で使用する場合や、著作権法上認められている場合を除き、無断で転載、引用、複製することは禁じられています。ただし、個々の情報に別途定めがある場合はこの取り扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/sakura-yosan-setsumei-h31/02_setumei_93409991.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakura.lg.jp/material/files/group/9/02_setumei_93409991.pdf",
+    "license": "本サイトが提供する文書、写真、イラスト等の情報は、告示・訓令・通達その他これらに類するもの（及びそれらの翻訳物及び編集物含む）を除き、佐倉市ならびに第三者が保有する著作権により保護されています。私的な目的で使用する場合や、著作権法上認められている場合を除き、無断で転載、引用、複製することは禁じられています。ただし、個々の情報に別途定めがある場合はこの取り扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/sakura-yosan-setsumei-h30/02_setumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakura.lg.jp/material/files/group/9/02_setumei.pdf",
+    "license": "本サイトが提供する文書、写真、イラスト等の情報は、告示・訓令・通達その他これらに類するもの（及びそれらの翻訳物及び編集物含む）を除き、佐倉市ならびに第三者が保有する著作権により保護されています。私的な目的で使用する場合や、著作権法上認められている場合を除き、無断で転載、引用、複製することは禁じられています。ただし、個々の情報に別途定めがある場合はこの取り扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/sakura-yosan-setsumei-h29/29syuyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakura.lg.jp/material/files/group/9/29syuyo.pdf",
+    "license": "本サイトが提供する文書、写真、イラスト等の情報は、告示・訓令・通達その他これらに類するもの（及びそれらの翻訳物及び編集物含む）を除き、佐倉市ならびに第三者が保有する著作権により保護されています。私的な目的で使用する場合や、著作権法上認められている場合を除き、無断で転載、引用、複製することは禁じられています。ただし、個々の情報に別途定めがある場合はこの取り扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/sakura-yosan-setsumei-h28/H28syuyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakura.lg.jp/material/files/group/9/H28syuyou.pdf",
+    "license": "本サイトが提供する文書、写真、イラスト等の情報は、告示・訓令・通達その他これらに類するもの（及びそれらの翻訳物及び編集物含む）を除き、佐倉市ならびに第三者が保有する著作権により保護されています。私的な目的で使用する場合や、著作権法上認められている場合を除き、無断で転載、引用、複製することは禁じられています。ただし、個々の情報に別途定めがある場合はこの取り扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/sakura-yosan-setsumei-h27/H27syuyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakura.lg.jp/material/files/group/9/H27syuyou.pdf",
+    "license": "本サイトが提供する文書、写真、イラスト等の情報は、告示・訓令・通達その他これらに類するもの（及びそれらの翻訳物及び編集物含む）を除き、佐倉市ならびに第三者が保有する著作権により保護されています。私的な目的で使用する場合や、著作権法上認められている場合を除き、無断で転載、引用、複製することは禁じられています。ただし、個々の情報に別途定めがある場合はこの取り扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/sakura-yosan-setsumei-h26/H26setumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakura.lg.jp/material/files/group/9/H26setumei.pdf",
+    "license": "本サイトが提供する文書、写真、イラスト等の情報は、告示・訓令・通達その他これらに類するもの（及びそれらの翻訳物及び編集物含む）を除き、佐倉市ならびに第三者が保有する著作権により保護されています。私的な目的で使用する場合や、著作権法上認められている場合を除き、無断で転載、引用、複製することは禁じられています。ただし、個々の情報に別途定めがある場合はこの取り扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/sakura-yosan-setsumei-h25/H25setumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakura.lg.jp/material/files/group/9/H25setumei.pdf",
+    "license": "本サイトが提供する文書、写真、イラスト等の情報は、告示・訓令・通達その他これらに類するもの（及びそれらの翻訳物及び編集物含む）を除き、佐倉市ならびに第三者が保有する著作権により保護されています。私的な目的で使用する場合や、著作権法上認められている場合を除き、無断で転載、引用、複製することは禁じられています。ただし、個々の情報に別途定めがある場合はこの取り扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/sakura-yosan-setsumei-h23/h23main.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakura.lg.jp/material/files/group/9/h23main.pdf",
+    "license": "本サイトが提供する文書、写真、イラスト等の情報は、告示・訓令・通達その他これらに類するもの（及びそれらの翻訳物及び編集物含む）を除き、佐倉市ならびに第三者が保有する著作権により保護されています。私的な目的で使用する場合や、著作権法上認められている場合を除き、無断で転載、引用、複製することは禁じられています。ただし、個々の情報に別途定めがある場合はこの取り扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/sakura-yosan-setsumei-h21/21_yosan_setsumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakura.lg.jp/material/files/group/9/21_yosan_setsumei.pdf",
+    "license": "本サイトが提供する文書、写真、イラスト等の情報は、告示・訓令・通達その他これらに類するもの（及びそれらの翻訳物及び編集物含む）を除き、佐倉市ならびに第三者が保有する著作権により保護されています。私的な目的で使用する場合や、著作権法上認められている場合を除き、無断で転載、引用、複製することは禁じられています。ただし、個々の情報に別途定めがある場合はこの取り扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/sakura-yosan-setsumei-h20/20_yosanan_setumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakura.lg.jp/material/files/group/9/20_yosanan_setumei.pdf",
+    "license": "本サイトが提供する文書、写真、イラスト等の情報は、告示・訓令・通達その他これらに類するもの（及びそれらの翻訳物及び編集物含む）を除き、佐倉市ならびに第三者が保有する著作権により保護されています。私的な目的で使用する場合や、著作権法上認められている場合を除き、無断で転載、引用、複製することは禁じられています。ただし、個々の情報に別途定めがある場合はこの取り扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/sakura-yosan-setsumei-h19/19_yosanangaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakura.lg.jp/material/files/group/9/19_yosanangaiyo.pdf",
+    "license": "本サイトが提供する文書、写真、イラスト等の情報は、告示・訓令・通達その他これらに類するもの（及びそれらの翻訳物及び編集物含む）を除き、佐倉市ならびに第三者が保有する著作権により保護されています。私的な目的で使用する場合や、著作権法上認められている場合を除き、無断で転載、引用、複製することは禁じられています。ただし、個々の情報に別途定めがある場合はこの取り扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/tomakomai-yosansho-r8/20260310161626.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tomakomai.hokkaido.jp/shisei/zaisei/zaiseikenzenka/yosannitsuite.html",
+    "license": "掲載している記事や写真の無断使用はお断りします。 苫小牧市公式ホームページに掲載されている個々の情報（文字、写真、イラスト等）に関する諸権利は、著作権の対象であり、法律によって保護されています。これらの情報について、「私的使用のための複製」や「引用」など著作権法上で認められた場合を除き、苫小牧市の許可なく複製、転用等をすることは法律で禁止されています。",
+    "target": "page"
+  },
+  "/sources/tomakomai-yosansho-r7/20250304115126.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tomakomai.hokkaido.jp/shisei/zaisei/zaiseikenzenka/yosannitsuite.html",
+    "license": "掲載している記事や写真の無断使用はお断りします。 苫小牧市公式ホームページに掲載されている個々の情報（文字、写真、イラスト等）に関する諸権利は、著作権の対象であり、法律によって保護されています。これらの情報について、「私的使用のための複製」や「引用」など著作権法上で認められた場合を除き、苫小牧市の許可なく複製、転用等をすることは法律で禁止されています。",
+    "target": "page"
+  },
+  "/sources/tomakomai-yosansho-r6/yosan-ippan-r6.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tomakomai.hokkaido.jp/shisei/zaisei/zaiseikenzenka/yosannitsuite.html",
+    "license": "掲載している記事や写真の無断使用はお断りします。 苫小牧市公式ホームページに掲載されている個々の情報（文字、写真、イラスト等）に関する諸権利は、著作権の対象であり、法律によって保護されています。これらの情報について、「私的使用のための複製」や「引用」など著作権法上で認められた場合を除き、苫小牧市の許可なく複製、転用等をすることは法律で禁止されています。",
+    "target": "page"
+  },
+  "/sources/tomakomai-yosansho-r5/yosan-ippan-r5.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tomakomai.hokkaido.jp/shisei/zaisei/zaiseikenzenka/yosannitsuite.html",
+    "license": "掲載している記事や写真の無断使用はお断りします。 苫小牧市公式ホームページに掲載されている個々の情報（文字、写真、イラスト等）に関する諸権利は、著作権の対象であり、法律によって保護されています。これらの情報について、「私的使用のための複製」や「引用」など著作権法上で認められた場合を除き、苫小牧市の許可なく複製、転用等をすることは法律で禁止されています。",
+    "target": "page"
+  },
+  "/sources/tomakomai-yosansho-r4/yosan-ippan-r4.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tomakomai.hokkaido.jp/shisei/zaisei/zaiseikenzenka/yosannitsuite.html",
+    "license": "掲載している記事や写真の無断使用はお断りします。 苫小牧市公式ホームページに掲載されている個々の情報（文字、写真、イラスト等）に関する諸権利は、著作権の対象であり、法律によって保護されています。これらの情報について、「私的使用のための複製」や「引用」など著作権法上で認められた場合を除き、苫小牧市の許可なく複製、転用等をすることは法律で禁止されています。",
+    "target": "page"
+  },
+  "/sources/tomakomai-yosansho-r3/20210310133124.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tomakomai.hokkaido.jp/shisei/zaisei/zaiseikenzenka/yosannitsuite.html",
+    "license": "掲載している記事や写真の無断使用はお断りします。 苫小牧市公式ホームページに掲載されている個々の情報（文字、写真、イラスト等）に関する諸権利は、著作権の対象であり、法律によって保護されています。これらの情報について、「私的使用のための複製」や「引用」など著作権法上で認められた場合を除き、苫小牧市の許可なく複製、転用等をすることは法律で禁止されています。",
+    "target": "page"
+  },
+  "/sources/tomakomai-yosansho-r2/20200310085807.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tomakomai.hokkaido.jp/shisei/zaisei/zaiseikenzenka/yosannitsuite.html",
+    "license": "掲載している記事や写真の無断使用はお断りします。 苫小牧市公式ホームページに掲載されている個々の情報（文字、写真、イラスト等）に関する諸権利は、著作権の対象であり、法律によって保護されています。これらの情報について、「私的使用のための複製」や「引用」など著作権法上で認められた場合を除き、苫小牧市の許可なく複製、転用等をすることは法律で禁止されています。",
+    "target": "page"
+  },
+  "/sources/tomakomai-yosansho-h31/yosan-ippan-h31.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tomakomai.hokkaido.jp/shisei/zaisei/zaiseikenzenka/yosannitsuite.html",
+    "license": "掲載している記事や写真の無断使用はお断りします。 苫小牧市公式ホームページに掲載されている個々の情報（文字、写真、イラスト等）に関する諸権利は、著作権の対象であり、法律によって保護されています。これらの情報について、「私的使用のための複製」や「引用」など著作権法上で認められた場合を除き、苫小牧市の許可なく複製、転用等をすることは法律で禁止されています。",
+    "target": "page"
+  },
+  "/sources/tomakomai-yosansho-h30/yosan-ippan-h30.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tomakomai.hokkaido.jp/shisei/zaisei/zaiseikenzenka/yosannitsuite.html",
+    "license": "掲載している記事や写真の無断使用はお断りします。 苫小牧市公式ホームページに掲載されている個々の情報（文字、写真、イラスト等）に関する諸権利は、著作権の対象であり、法律によって保護されています。これらの情報について、「私的使用のための複製」や「引用」など著作権法上で認められた場合を除き、苫小牧市の許可なく複製、転用等をすることは法律で禁止されています。",
+    "target": "page"
+  },
+  "/sources/tomakomai-yosansho-h29/yosan-ippan-h29.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tomakomai.hokkaido.jp/shisei/zaisei/zaiseikenzenka/yosannitsuite.html",
+    "license": "掲載している記事や写真の無断使用はお断りします。 苫小牧市公式ホームページに掲載されている個々の情報（文字、写真、イラスト等）に関する諸権利は、著作権の対象であり、法律によって保護されています。これらの情報について、「私的使用のための複製」や「引用」など著作権法上で認められた場合を除き、苫小牧市の許可なく複製、転用等をすることは法律で禁止されています。",
+    "target": "page"
+  },
+  "/sources/tomakomai-yosansho-h26/yosan-ippan-h26.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20150609144740/http://www.city.tomakomai.hokkaido.jp/shisei/zaisei/zaiseikenzenka/yosannitsuite.html",
+    "license": "掲載している記事や写真の無断使用はお断りします。 苫小牧市公式ホームページに掲載されている個々の情報（文字、写真、イラスト等）に関する諸権利は、著作権の対象であり、法律によって保護されています。これらの情報について、「私的使用のための複製」や「引用」など著作権法上で認められた場合を除き、苫小牧市の許可なく複製、転用等をすることは法律で禁止されています。",
+    "target": "page"
+  },
+  "/sources/tomakomai-yosansho-h25/yosan-ippan-h25[1].pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20150609144740/http://www.city.tomakomai.hokkaido.jp/shisei/zaisei/zaiseikenzenka/yosannitsuite.html",
+    "license": "掲載している記事や写真の無断使用はお断りします。 苫小牧市公式ホームページに掲載されている個々の情報（文字、写真、イラスト等）に関する諸権利は、著作権の対象であり、法律によって保護されています。これらの情報について、「私的使用のための複製」や「引用」など著作権法上で認められた場合を除き、苫小牧市の許可なく複製、転用等をすることは法律で禁止されています。",
+    "target": "page"
+  },
+  "/sources/oyama-yosansho-r8/1773881593_doc_359_0.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.oyama.tochigi.jp/shisei/gyouzaisei/zaisei/yosan/page010570.html",
+    "license": "「小山市ホームページ」（以下、当サイトといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として小山市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/oyama-yosansho-r7/1741850597_doc_359_0.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.oyama.tochigi.jp/shisei/gyouzaisei/zaisei/yosan/page008634.html",
+    "license": "「小山市ホームページ」（以下、当サイトといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として小山市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/oyama-yosansho-r6/1708489368_doc_45_0.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.oyama.tochigi.jp/shisei/gyouzaisei/zaisei/yosan/page006222.html",
+    "license": "「小山市ホームページ」（以下、当サイトといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として小山市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/oyama-yosansho-r5/1691132677_doc_13_0.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.oyama.tochigi.jp/shisei/gyouzaisei/zaisei/yosan/page001839.html",
+    "license": "「小山市ホームページ」（以下、当サイトといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として小山市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/oyama-yosansho-r4/1691133667_doc_13_0.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.oyama.tochigi.jp/shisei/gyouzaisei/zaisei/yosan/page001848.html",
+    "license": "「小山市ホームページ」（以下、当サイトといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として小山市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/oyama-yosansho-r3/1693393138_doc_13_0.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.oyama.tochigi.jp/shisei/gyouzaisei/zaisei/yosan/page002988.html",
+    "license": "「小山市ホームページ」（以下、当サイトといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として小山市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/oyama-yosansho-r2/1693393639_doc_13_0.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.oyama.tochigi.jp/shisei/gyouzaisei/zaisei/yosan/page002993.html",
+    "license": "「小山市ホームページ」（以下、当サイトといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として小山市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/oyama-yosansho-h31/1693458469_doc_14_0.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.oyama.tochigi.jp/shisei/gyouzaisei/zaisei/yosan/page003046.html",
+    "license": "「小山市ホームページ」（以下、当サイトといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として小山市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/oyama-yosansho-h30/1693456893_doc_14_0.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.oyama.tochigi.jp/shisei/gyouzaisei/zaisei/yosan/page003043.html",
+    "license": "「小山市ホームページ」（以下、当サイトといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として小山市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/iwata-yosan-setsumei-r8/R8setsumeisiryo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/015/750/R8setsumeisiryo.pdf",
+    "license": "磐田市ホームページに掲載しているコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は磐田市に帰属します。また、一部の画像などの著作権は原著作者が所有しているものもあります。磐田市ホームページ上の文書・画像などの無断使用・転載、二次利用を原則禁止します。ただし掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に広報広聴・シティプロモーション課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "file"
+  },
+  "/sources/iwata-yosan-setsumei-r7/r7_setumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/014/066/r7_setumei.pdf",
+    "license": "磐田市ホームページに掲載しているコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は磐田市に帰属します。また、一部の画像などの著作権は原著作者が所有しているものもあります。磐田市ホームページ上の文書・画像などの無断使用・転載、二次利用を原則禁止します。ただし掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に広報広聴・シティプロモーション課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "file"
+  },
+  "/sources/iwata-yosansho-r6/24-00.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/013/099/24-00.pdf",
+    "license": "磐田市ホームページに掲載しているコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は磐田市に帰属します。また、一部の画像などの著作権は原著作者が所有しているものもあります。磐田市ホームページ上の文書・画像などの無断使用・転載、二次利用を原則禁止します。ただし掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に広報広聴・シティプロモーション課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "file"
+  },
+  "/sources/iwata-yosansho-r5/23-10.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/012/039/23-10.pdf",
+    "license": "磐田市ホームページに掲載しているコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は磐田市に帰属します。また、一部の画像などの著作権は原著作者が所有しているものもあります。磐田市ホームページ上の文書・画像などの無断使用・転載、二次利用を原則禁止します。ただし掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に広報広聴・シティプロモーション課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "file"
+  },
+  "/sources/iwata-yosansho-r4/22-10.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/010/507/22-10.pdf",
+    "license": "磐田市ホームページに掲載しているコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は磐田市に帰属します。また、一部の画像などの著作権は原著作者が所有しているものもあります。磐田市ホームページ上の文書・画像などの無断使用・転載、二次利用を原則禁止します。ただし掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に広報広聴・シティプロモーション課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "file"
+  },
+  "/sources/iwata-yosansho-r3/10.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20211113/20211113011215/https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/009/172/10.pdf",
+    "license": "磐田市ホームページに掲載しているコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は磐田市に帰属します。また、一部の画像などの著作権は原著作者が所有しているものもあります。磐田市ホームページ上の文書・画像などの無断使用・転載、二次利用を原則禁止します。ただし掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に広報広聴・シティプロモーション課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "file"
+  },
+  "/sources/iwata-yosansho-r2/R200ippa.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20201114/20201113080318/https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/821/R200ippa.pdf",
+    "license": "磐田市ホームページに掲載しているコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は磐田市に帰属します。また、一部の画像などの著作権は原著作者が所有しているものもあります。磐田市ホームページ上の文書・画像などの無断使用・転載、二次利用を原則禁止します。ただし掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に広報広聴・シティプロモーション課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "file"
+  },
+  "/sources/iwata-yosansho-h31/3101.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20191113/20191112101814/https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/006/469/3101.pdf",
+    "license": "磐田市ホームページに掲載しているコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は磐田市に帰属します。また、一部の画像などの著作権は原著作者が所有しているものもあります。磐田市ホームページ上の文書・画像などの無断使用・転載、二次利用を原則禁止します。ただし掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に広報広聴・シティプロモーション課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "file"
+  },
+  "/sources/iwata-yosansho-h30/02_001.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20181113/20181112225202/https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/002/614/02_001.pdf",
+    "license": "磐田市ホームページに掲載しているコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は磐田市に帰属します。また、一部の画像などの著作権は原著作者が所有しているものもあります。磐田市ホームページ上の文書・画像などの無断使用・転載、二次利用を原則禁止します。ただし掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に広報広聴・シティプロモーション課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "file"
+  },
+  "/sources/iwata-soukatsu-h29/03_001.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20181113/20181112225254/https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/002/615/03_001.pdf",
+    "license": "磐田市ホームページに掲載しているコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は磐田市に帰属します。また、一部の画像などの著作権は原著作者が所有しているものもあります。磐田市ホームページ上の文書・画像などの無断使用・転載、二次利用を原則禁止します。ただし掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に広報広聴・シティプロモーション課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "file"
+  },
+  "/sources/iwata-soukatsu-h28/03_001.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20181113/20181112225411/https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/002/616/03_001.pdf",
+    "license": "磐田市ホームページに掲載しているコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は磐田市に帰属します。また、一部の画像などの著作権は原著作者が所有しているものもあります。磐田市ホームページ上の文書・画像などの無断使用・転載、二次利用を原則禁止します。ただし掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に広報広聴・シティプロモーション課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "file"
+  },
+  "/sources/iwata-soukatsu-h27/03_001.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20181113/20181112225509/https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/002/617/03_001.pdf",
+    "license": "磐田市ホームページに掲載しているコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は磐田市に帰属します。また、一部の画像などの著作権は原著作者が所有しているものもあります。磐田市ホームページ上の文書・画像などの無断使用・転載、二次利用を原則禁止します。ただし掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に広報広聴・シティプロモーション課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "file"
+  },
+  "/sources/iwata-soukatsu-h26/03_001.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20181113/20181112225554/https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/002/618/03_001.pdf",
+    "license": "磐田市ホームページに掲載しているコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は磐田市に帰属します。また、一部の画像などの著作権は原著作者が所有しているものもあります。磐田市ホームページ上の文書・画像などの無断使用・転載、二次利用を原則禁止します。ただし掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に広報広聴・シティプロモーション課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "file"
   }
 };

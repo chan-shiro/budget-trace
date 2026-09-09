@@ -613,6 +613,14 @@ const ABOLISHED_MARK_RE =
  */
 const BARE_ABOLISHED_MARK_RE = /^\s*廃(?:止)?[\s　]/;
 
+/**
+ * **末尾型の廃止マーカー**（`自動車取得税交付金(廃款)   -   110,000   △110,000`・2026-09-09・小山 R2）。
+ * 印が款名の**後ろ**に付く様式で、行頭アンカーの `ABOLISHED_MARK_RE` にも `皆減` にも当たらず**行ごと落ちて
+ * 前年度 Σ が −110,000**（validate では warning 止まり）。検出は raw 全体に当て、掃除は `cleaned` で同じ正規表現を落とす。
+ * ⚠ `(廃)` の先頭型（市原）は `ABOLISHED_MARK_RE` 側。括弧は半角・全角をまとめて入れる（§9c）。
+ */
+const TAIL_ABOLISHED_MARK_RE = /[（(]\s*廃款?\s*[）)]/;
+
 const hasCJKChars = (s: string): boolean => /[぀-ヿ㐀-鿿々〆ヶ]/.test(s);
 
 /** 金額トークンの正規表現（負号 △/▲ を許容） */
@@ -1371,7 +1379,9 @@ function parseKanPage(
     //   §9c の「記号の揺れ」は自治体間だけでなく**掃除側と検出側の間でも起きる**。
     //   ⚠ 既存全ソースの再パースで差分0 を確認済み（`○` 始まりで整数2個以上の行は他に無い）。
     const abolished =
-      !lead && ints.length >= 2 && (ABOLISHED_MARK_RE.test(raw) || compact.includes("皆減"));
+      !lead &&
+      ints.length >= 2 &&
+      (ABOLISHED_MARK_RE.test(raw) || TAIL_ABOLISHED_MARK_RE.test(raw) || compact.includes("皆減"));
     if (abolished) {
       // 款名から**廃止マーカーと空セルのダッシュ**を落とす（`▲自動車取得税交付金--` `自動車税環境△`）。
       // 表示専用なので Σ も款名重複ゲートも守ってくれない領域＝出力を目視して確かめること。
@@ -1401,6 +1411,7 @@ function parseKanPage(
         BARE_ABOLISHED_MARK_RE.test(raw) ? namePart.replace(/^廃(?:止)?/, "") : namePart
       )
         .replace(ABOLISHED_MARK_RE, "")
+        .replace(TAIL_ABOLISHED_MARK_RE, "")
         .replace(/[○〇]$/, "")
         .replace(/[-‐‑‒–—―−－─━]/g, "");
       // 上段に名前があり下段が続く廃止款（Options.abolishedAwaitTail 参照・松山 R8）

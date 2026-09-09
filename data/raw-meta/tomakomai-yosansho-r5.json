@@ -1,0 +1,12 @@
+{
+  "sourceId": "tomakomai-yosansho-r5",
+  "files": [
+    {
+      "filename": "yosan-ippan-r5.pdf",
+      "sha256": "71a29b405dd650196dd97815f77c9d6723509e0e535a4ab5ba93c1d14d4206e0",
+      "bytes": 1831174,
+      "fetchedAt": "2026-09-09T05:32:35.861Z",
+      "fetchedFrom": "https://www.city.tomakomai.hokkaido.jp/files/00004100/00004109/yosan-ippan-r5.pdf"
+    }
+  ]
+}
