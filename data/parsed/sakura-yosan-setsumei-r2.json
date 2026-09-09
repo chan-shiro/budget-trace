@@ -3,7 +3,7 @@
   "sourceId": "sakura-yosan-setsumei-r2",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-09-09T05:37:22.787Z",
+  "parsedAt": "2026-09-09T07:08:38.878Z",
   "unit": "thousandYen",
   "fiscalYear": "R2",
   "account": "一般会計",
@@ -12,7 +12,7 @@
   "prevRevenueTotal": 48697242,
   "prevExpenditureTotal": 48697242,
   "prevBasis": "補正後",
-  "prevNote": "前年度（令和元年度）の額は当初予算ではなく6月補正後の額（原典の列見出しが「令和元年度６月補正後」、注記に「前年度予算額は、令和元年度6月補正後（肉付け後）の額」。平成31年度当初予算は骨格予算）。",
+  "prevNote": "前年度（令和元年度）の額は当初予算ではなく6月補正後の額（原典の列見出しが「令和元年度６月補正後」、注記に「前年度予算額は、令和元年度6月補正後（肉付け後）の額」）。",
   "facts": [
     {
       "side": "revenue",

@@ -3,7 +3,7 @@
   "sourceId": "sakura-yosan-setsumei-h28",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-09-09T05:37:23.116Z",
+  "parsedAt": "2026-09-09T07:08:39.004Z",
   "unit": "thousandYen",
   "fiscalYear": "H28",
   "account": "一般会計",
@@ -12,7 +12,7 @@
   "prevRevenueTotal": 46826548,
   "prevExpenditureTotal": 46826548,
   "prevBasis": "補正後",
-  "prevNote": "前年度（平成27年度）の額は当初予算ではなく6月補正後の額（原典の列見出しが「平成27年度6月補正後」、注記に「前年度予算額は、平成２７年度６月補正後（肉付け後）の額」。平成27年度当初予算は骨格予算）。",
+  "prevNote": "前年度（平成27年度）の額は当初予算ではなく6月補正後の額（原典の列見出しが「平成27年度6月補正後」、注記に「前年度予算額は、平成２７年度６月補正後（肉付け後）の額」）。",
   "facts": [
     {
       "side": "revenue",
