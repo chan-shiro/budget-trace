@@ -2779,8 +2779,63 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     const meta = readRawMeta(b.srcId);
     if (!meta) throw new Error(`${b.srcId}: raw-meta がありません`);
     const src = findSource(b.srcId);
-    const file = meta.files[0]!;
     const url = src.urls?.[0] ?? src.landingPage ?? "";
+    // ⚠ **歳入・歳出が別ファイルの資料がある**（#257・2026-09-10）。以前は `meta.files[0]` を全款の
+    //   エビデンスにしていたため、2ファイル型（日立 H26〜H24・安城・台東・品川・練馬・東京都など
+    //   78ソース）で**歳出ドリルの出典チップが歳入の PDF を開いていた**（第25巡レビューで発覚）。
+    //   側ごとのファイルは **parsed の locator から引く**（行ごとに `file` を持つ＝実際に読んだ
+    //   ファイルそのもの。事業報告と同じ作法）。registry の `parserOptions.revenueFile` /
+    //   `expenditureFile` は**突合にだけ使う**（書いてあれば locator と一致していること）。
+    const sideFile = (side: "revenue" | "expenditure") => {
+      const names = [...new Set(doc.facts.filter((f) => f.side === side).map((f) => f.locator.file))];
+      if (names.length !== 1) {
+        throw new Error(
+          `${b.srcId}: ${side === "revenue" ? "歳入" : "歳出"}の款が ${names.length} ファイルにまたがっています（${names.join(", ")}）。` +
+            `側ごとのエビデンスを1ファイルに決められません`,
+        );
+      }
+      const f = meta.files.find((x) => x.filename === names[0]);
+      if (!f) throw new Error(`${b.srcId}: parsed の locator が指す ${names[0]} が raw-meta にありません`);
+      return f;
+    };
+    const revFile = sideFile("revenue");
+    const expFile = sideFile("expenditure");
+    const split = revFile.filename !== expFile.filename;
+    {
+      const po = (src.parserOptions ?? {}) as { revenueFile?: unknown; expenditureFile?: unknown };
+      if (po.revenueFile != null || po.expenditureFile != null) {
+        if (po.revenueFile !== revFile.filename || po.expenditureFile !== expFile.filename) {
+          throw new Error(
+            `${b.srcId}: registry の revenueFile/expenditureFile（${String(po.revenueFile)} / ${String(po.expenditureFile)}）と ` +
+              `parsed の locator（${revFile.filename} / ${expFile.filename}）が一致しません`,
+          );
+        }
+      }
+    }
+    // 側ごとの発行元 URL。単一ファイルは従来どおり（urls[0] → landingPage）。2ファイル型は
+    // ファイル名で registry の urls を引き、無ければ raw-meta の fetchedFrom（実際の取得元）、
+    // それも無ければ従来の URL（両側が同じ掲載ページを指す＝嘘ではない）に落とす
+    const fileUrl = (f: (typeof meta.files)[number]): string =>
+      split
+        ? (src.urls?.find((u) => u.endsWith(`/${f.filename}`)) ??
+          (/^https?:/.test(f.fetchedFrom) ? f.fetchedFrom : null) ??
+          url)
+        : url;
+    const sideSrc = (f: (typeof meta.files)[number]) => {
+      const u = fileUrl(f);
+      return { originUrl: u, sourceUrl: wayback(u), sourceLocalUrl: `/sources/${b.srcId}/${f.filename}` };
+    };
+    const revSrc = sideSrc(revFile);
+    const expSrc = sideSrc(expFile);
+    const evidenceCard = (f: (typeof meta.files)[number], s: ReturnType<typeof sideSrc>, side?: "revenue" | "expenditure") => ({
+      title: side ? `${src.title}（${side === "revenue" ? "歳入" : "歳出"}）` : src.title,
+      type: "PDF",
+      url: s.sourceUrl,
+      localUrl: s.sourceLocalUrl,
+      source: url ? new URL(url).hostname : "",
+      thumb: `${f.filename} ・ sha256 ${f.sha256.slice(0, 16)}… ・ ${f.fetchedAt.slice(0, 10)} 取得`,
+      ...(side ? { side } : {}),
+    });
     // 都道府県エンティティの人口は県内市町村（団体コード先頭2桁一致）の住基人口の合計
     const prefCode = b.muniCode.slice(0, 2);
     const popRec = b.isPref
@@ -2931,20 +2986,24 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       sourceTitle: src.title,
       sourceUrl: wayback(url),
       originUrl: url,
-      sourceLocalUrl: `/sources/${b.srcId}/${file.filename}`,
+      // ⚠ 2ファイル型では**歳入側のファイル**（従来の files[0] と同じ）。歳出ドリルなど側が
+      //   決まる場面では必ず `sides` を引くこと（クライアントは budgetSideSrc で振り分ける）
+      sourceLocalUrl: revSrc.sourceLocalUrl,
       pagesLabel: "款別歳入歳出",
-      evidence: [
-        {
-          title: src.title,
-          type: "PDF",
-          url: wayback(url),
-          localUrl: `/sources/${b.srcId}/${file.filename}`,
-          source: url ? new URL(url).hostname : "",
-          thumb: `${file.filename} ・ sha256 ${file.sha256.slice(0, 16)}… ・ ${file.fetchedAt.slice(0, 10)} 取得`,
-        },
-      ],
+      evidence: split
+        ? [evidenceCard(revFile, revSrc, "revenue"), evidenceCard(expFile, expSrc, "expenditure")]
+        : [evidenceCard(revFile, revSrc)],
+      ...(split ? { sides: { revenue: revSrc, expenditure: expSrc } } : {}),
     };
   });
+  {
+    const splitYears = budgets.filter((b) => b.sides);
+    const sameOrigin = splitYears.filter((b) => b.sides!.revenue.originUrl === b.sides!.expenditure.originUrl);
+    console.log(
+      `  ・歳入・歳出が別ファイルの年度: ${splitYears.length}（側ごとにエビデンスを持つ` +
+        `${sameOrigin.length ? `・うち発行元 URL をファイル単位で引けず掲載ページに落とした: ${sameOrigin.length}` : ""}）`,
+    );
+  }
 
   // budget 階層は1自治体＝複数年度になり得る（政令市は R2〜R8 の7年前後さかのぼれる）。
   // 年度は**新しい順**に並べる（画面の年度ドロップダウンの並び・既定の選択がこの順に依存する）。
@@ -3029,6 +3088,13 @@ export interface MuniExecutionYear {
   evidence: { title: string; type: string; url: string; localUrl: string; source: string; thumb: string }[];
 }
 
+/** 一次資料の1ファイル分のリンク（url = 魚拓 / originUrl = 発行元 / sourceLocalUrl = 自サーバー配信コピー） */
+export interface MuniSideSource {
+  originUrl: string;
+  sourceUrl: string;
+  sourceLocalUrl: string;
+}
+
 export interface MuniBudget {
   muniCode: string;
   muniName: string;
@@ -3054,9 +3120,27 @@ export interface MuniBudget {
   sourceTitle: string;
   sourceUrl: string;
   originUrl: string;
+  /**
+   * 自サーバー配信コピー。⚠ 歳入・歳出が別ファイルの資料（\`sides\` あり）では**歳入側のファイル**。
+   * 側が決まる場面（款別ドリル）では \`sides\` から引くこと（#257）
+   */
   sourceLocalUrl: string;
   pagesLabel: string;
-  evidence: { title: string; type: string; url: string; localUrl: string; source: string; thumb: string }[];
+  evidence: {
+    title: string;
+    type: string;
+    url: string;
+    localUrl: string;
+    source: string;
+    thumb: string;
+    /** 歳入・歳出が別ファイルの資料だけ付く（どちら側のファイルか） */
+    side?: "revenue" | "expenditure";
+  }[];
+  /**
+   * 歳入・歳出が別ファイルの資料（日立 H26〜H24・安城・台東・練馬・東京都など）の側ごとのリンク。
+   * 単一ファイルの資料には無い（undefined）— その場合は sourceUrl / originUrl / sourceLocalUrl を使う
+   */
+  sides?: { revenue: MuniSideSource; expenditure: MuniSideSource };
 }
 
 /**

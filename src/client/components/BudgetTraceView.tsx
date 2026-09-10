@@ -1221,7 +1221,14 @@ export default function BudgetTraceView({ v }: { v: any }) {
                 )}
 
                 <p style={S("margin:14px 2px 0; font-size:12px; color:#5C6B77;")}>
-                  <a href={v.dashSourceUrl} onClick={(e) => { e.preventDefault(); v.dashSourceOpen(); }} style={S("color:#5C6B77; cursor:pointer;")}>{v.dashSourceLabel}（{v.dashSourceAction}）</a>
+                  {v.dashSourceSides.length > 0 ? (
+                    // 歳入・歳出が別ファイルの資料: 側ごとに開く（#257）
+                    <span>{v.dashSourceLabel}（{v.dashSourceSides.map((sd: any, i: number) => (
+                      <span key={sd.label}>{i > 0 && " ／ "}{sd.label}：<a href={sd.url} onClick={(e) => { e.preventDefault(); sd.open(); }} style={S("color:#5C6B77; cursor:pointer;")}>{sd.action}</a></span>
+                    ))}）</span>
+                  ) : (
+                    <a href={v.dashSourceUrl} onClick={(e) => { e.preventDefault(); v.dashSourceOpen(); }} style={S("color:#5C6B77; cursor:pointer;")}>{v.dashSourceLabel}（{v.dashSourceAction}）</a>
+                  )}
                 </p>
               </div>
             )}
@@ -1263,7 +1270,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                     <div style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:12px; padding:12px 16px; max-width:240px;")}>
                       <div style={S("font-size:11px; font-family:'IBM Plex Mono',monospace; letter-spacing:0.12em; color:#5C6B77; margin-bottom:5px;")}>EVIDENCE</div>
                       <div style={S("font-size:12.5px; line-height:1.6;")}>{v.drillEvidence}</div>
-                      <a href={v.drillPdfUrl} onClick={(e) => { e.preventDefault(); v.dashSourceOpen(); }} style={S("font-size:12px; cursor:pointer;")}>{v.drillEvidenceAction}</a>
+                      <a href={v.drillPdfUrl} onClick={(e) => { e.preventDefault(); v.drillSourceOpen(); }} style={S("font-size:12px; cursor:pointer;")}>{v.drillEvidenceAction}</a>
                     </div>
                   </div>
 

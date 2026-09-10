@@ -1735,6 +1735,12 @@ GTM は「既定＝granted」として**一度発火してしまう**。HTML 内
     既知プロパティが `unknown`/`{}` に落ちるので使う分だけ絞り込む（`ui.tsx` の HoverBox）
   - Next 15+: `params`/`searchParams` は Promise → catch-all ルートで `await`
   - TypeScript は 5.5 のまま（7 系は Go 実装で飛躍が大きく、脆弱性指摘も無いため別途）
+- **歳入・歳出が別ファイルの資料（2ファイル型）のエビデンスは側ごと**（#257・2026-09-10）: 当初予算シャードの
+  `sourceLocalUrl` / `originUrl` / `sourceUrl` は**歳入側（従来の files[0]）**で、`sides.revenue` / `sides.expenditure` に
+  側ごとのリンクがある（単一ファイルの資料には `sides` が無い）。**側が決まる場面では `sides` を引く**
+  （BudgetTrace の `budgetSideSrc` / `budgetSideOpen`）。derive は parsed の locator から側のファイルを決め、
+  registry の `revenueFile`/`expenditureFile` と食い違えば throw する。**クリック（`left_click`）はこのツールでは
+  (0,0) に落ちて失敗する**ことがある — `javascript_tool` で `a.click()` を発火させてドロワーの状態を読む
 - **ブラウザ検証ツールの限界**: プレビュー用ヘッドレスブラウザは**コンポジットしない**ため
   (a) スクリーンショットが body 背景だけの空画像になる (b) viewport が 0×0 になることがある
   (c) **IntersectionObserver のコールバックが一切発火しない**（自明に可視な要素でも）。
@@ -1816,8 +1822,10 @@ GTM は「既定＝granted」として**一度発火してしまう**。HTML 内
 > **#139** サーバー層導入（§5-2）/
 > **#190** 画面の「表示専用領域」を守る仕組みが無い（§2-6〜§2-10 の4件が証拠）/
 > **#191** **項以下の内訳に届く — 横浜の歳入歳出 CSV**（§8d-2。**新 docType が要る**）/
-> **#257** **2ファイル型（`revenueFile`/`expenditureFile`）のエビデンスが歳入 PDF しか指さない**（2026-09-09・第25巡レビューで日立 H26 で確認。
-> derive の当初予算カードが `meta.files[0]` を全款に使う。parsed の locator は行ごとに `file` を持つので事業報告と同じく引く。台東 R2/H31/H27・品川 R7・日立 H26〜H24 など既存の2ファイル型すべてに及ぶ）/
+> ~~**#257** 2ファイル型（`revenueFile`/`expenditureFile`）のエビデンスが歳入 PDF しか指さない~~ ✅ **2026-09-10 に修正**（2026-09-09・第25巡レビューで日立 H26 で確認。
+> derive の当初予算カードが `meta.files[0]` を全款に使っていた。**側ごとのファイルは parsed の locator から引く**（registry の `revenueFile`/`expenditureFile` は突合だけ）。
+> シャードに `sides`（歳入/歳出それぞれの originUrl・魚拓・自サーバー配信パス）と側付きの `evidence` 2件を持たせ、ドリルは側のファイルを開き、ダッシュボード末尾は歳入/歳出の2リンクにした。
+> **78年度分**（日立 H26〜H24・安城・台東・品川・練馬・東京都・姫路・春日井・茅ヶ崎・徳島・高槻・奈良・船橋・世田谷・山形・京都府）。単一ファイルのシャードは byte 単位で不変・要許可の振替は `evidence-policy.gen.ts` が元からファイル単位なので側ごとに追随する）/
 > ~~**#192** 横浜の項以下を過年度へ~~ ✅ **2026-08-03 に R5・R4・R3 を収録（§8d-3）**。
 > 残るのは **H30・H29 の `.xls`（BIFF）**と **R2・H31 の前年度列が壊れている原因**
 >

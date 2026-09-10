@@ -69,6 +69,13 @@ export interface MuniExecutionYear {
   evidence: { title: string; type: string; url: string; localUrl: string; source: string; thumb: string }[];
 }
 
+/** 一次資料の1ファイル分のリンク（url = 魚拓 / originUrl = 発行元 / sourceLocalUrl = 自サーバー配信コピー） */
+export interface MuniSideSource {
+  originUrl: string;
+  sourceUrl: string;
+  sourceLocalUrl: string;
+}
+
 export interface MuniBudget {
   muniCode: string;
   muniName: string;
@@ -94,9 +101,27 @@ export interface MuniBudget {
   sourceTitle: string;
   sourceUrl: string;
   originUrl: string;
+  /**
+   * 自サーバー配信コピー。⚠ 歳入・歳出が別ファイルの資料（`sides` あり）では**歳入側のファイル**。
+   * 側が決まる場面（款別ドリル）では `sides` から引くこと（#257）
+   */
   sourceLocalUrl: string;
   pagesLabel: string;
-  evidence: { title: string; type: string; url: string; localUrl: string; source: string; thumb: string }[];
+  evidence: {
+    title: string;
+    type: string;
+    url: string;
+    localUrl: string;
+    source: string;
+    thumb: string;
+    /** 歳入・歳出が別ファイルの資料だけ付く（どちら側のファイルか） */
+    side?: "revenue" | "expenditure";
+  }[];
+  /**
+   * 歳入・歳出が別ファイルの資料（日立 H26〜H24・安城・台東・練馬・東京都など）の側ごとのリンク。
+   * 単一ファイルの資料には無い（undefined）— その場合は sourceUrl / originUrl / sourceLocalUrl を使う
+   */
+  sides?: { revenue: MuniSideSource; expenditure: MuniSideSource };
 }
 
 /**

@@ -1065,11 +1065,54 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
 
   // ドリル画面とダッシュボード末尾の出典が指す一次資料（自サーバー配信コピーのパス）。
   // href・文言・開く動作を同じ1つの URL から作る（別々に組むとリンク先と文言がズレる）
-  const drillEvidenceLocalUrl = isDecision
+  const dashEvidenceLocalUrl = isDecision
     ? decisionView!.primaryEvidence?.localUrl ?? ""
     : isBudget
       ? muniBudget!.sourceLocalUrl
       : budget.sourceLocalUrl;
+  // ⚠ **歳入・歳出が別ファイルの資料がある**（#257・日立 H26〜H24・安城・台東・練馬・東京都など）。
+  //   ドリルは側が決まるので、その側のファイル（`sides`）を引く。単一ファイルの資料は
+  //   `sides` が無く、従来どおり sourceLocalUrl / originUrl / sourceUrl に落ちる
+  const budgetSideSrc = (sd: string) => {
+    const mb = muniBudget!;
+    return (
+      mb.sides?.[sd === "rev" ? "revenue" : "expenditure"] ??
+      { originUrl: mb.originUrl, sourceUrl: mb.sourceUrl, sourceLocalUrl: mb.sourceLocalUrl }
+    );
+  };
+  const drillEvidenceLocalUrl = isBudget ? budgetSideSrc(side).sourceLocalUrl : dashEvidenceLocalUrl;
+  const dashSourceOpen = isDecision
+    ? (decisionView!.primaryEvidence
+        ? () => openViewer({
+            url: decisionView!.primaryEvidence!.localUrl,
+            title: decisionView!.primaryEvidence!.title,
+            sub: `${decisionView!.fyLabel} ・ ${decisionView!.refLabel}`,
+            originUrl: "https://www.soumu.go.jp/iken/zaisei/r06_shichouson.html",
+            archiveUrl: decisionView!.primaryEvidence!.url,
+          })
+        : () => {})
+    : isBudget
+      ? () => openViewer({
+          url: muniBudget!.sourceLocalUrl, title: muniBudget!.sourceTitle,
+          sub: `${muniBudget!.fyLabel} ・ 款別${muniBudget!.sides ? "歳入" : "歳入歳出"}`,
+          originUrl: muniBudget!.originUrl, archiveUrl: muniBudget!.sourceUrl,
+        })
+      : () => openViewer({
+          // 表紙でなく款別一覧の先頭ページ（pagesLabel の最初の数値）から開く
+          url: `${budget.sourceLocalUrl}#page=${budget.pagesLabel.match(/\d+/)?.[0] ?? 1}`,
+          title: budget.sourceTitle, sub: `款別一覧 ${budget.pagesLabel}`,
+          originUrl: budget.originUrl, archiveUrl: budget.sourceUrl,
+        });
+  // 2ファイル型の budget では、側ごとに開く（歳入ドリル→歳入の PDF・歳出ドリル→歳出の PDF）
+  const budgetSideOpen = (sd: string) => () => {
+    const ss = budgetSideSrc(sd);
+    openViewer({
+      url: ss.sourceLocalUrl, title: muniBudget!.sourceTitle,
+      sub: `${muniBudget!.fyLabel} ・ 款別${sd === "rev" ? "歳入" : "歳出"}`,
+      originUrl: ss.originUrl, archiveUrl: ss.sourceUrl,
+    });
+  };
+  const drillSourceOpen = isBudget ? budgetSideOpen(side) : dashSourceOpen;
 
   const v: any = {
     isTop: screen === "top", isMuni: screen === "muni", isApp,
@@ -1785,37 +1828,28 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
     // ドリル画面の EVIDENCE リンク文言。**「予算書PDFを開く」で固定しない** — 要許可の資料は
     // 発行元の掲載ページ（HTML）へ振り替わり、コピー自体も Excel/CSV のことがある（2026-07-26）
     drillEvidenceAction: evOpenLabel(drillEvidenceLocalUrl, isDecision ? "決算資料" : "予算書"),
+    // ドリルの「開く」は側ごと（2ファイル型は歳入/歳出で別ファイル）。href・文言と同じ URL から作る
+    drillSourceOpen,
     dashSourceLabel: isDecision
       ? `出典：${decisionView!.primaryEvidence?.title ?? "総務省 市町村別決算状況調"}（${decisionView!.refLabel}）`
       : isBudget
         ? `出典：${muniBudget!.sourceTitle}`
         : `出典：${budget.sourceTitle} ${budget.pagesLabel}`,
-    dashSourceUrl: evHref(drillEvidenceLocalUrl),
+    dashSourceUrl: evHref(dashEvidenceLocalUrl),
     // リンク文言（要許可の資料は「原本を開く」ではなく「発行元で開く」）
-    dashSourceAction: evAction(drillEvidenceLocalUrl),
+    dashSourceAction: evAction(dashEvidenceLocalUrl),
     dashSourceTitle: isDecision ? decisionView!.primaryEvidence?.title ?? "総務省 市町村別決算状況調" : isBudget ? muniBudget!.sourceTitle : budget.sourceTitle,
-    dashSourceOpen: isDecision
-      ? (decisionView!.primaryEvidence
-          ? () => openViewer({
-              url: decisionView!.primaryEvidence!.localUrl,
-              title: decisionView!.primaryEvidence!.title,
-              sub: `${decisionView!.fyLabel} ・ ${decisionView!.refLabel}`,
-              originUrl: "https://www.soumu.go.jp/iken/zaisei/r06_shichouson.html",
-              archiveUrl: decisionView!.primaryEvidence!.url,
-            })
-          : () => {})
-      : isBudget
-        ? () => openViewer({
-            url: muniBudget!.sourceLocalUrl, title: muniBudget!.sourceTitle,
-            sub: `${muniBudget!.fyLabel} ・ 款別歳入歳出`,
-            originUrl: muniBudget!.originUrl, archiveUrl: muniBudget!.sourceUrl,
-          })
-        : () => openViewer({
-            // 表紙でなく款別一覧の先頭ページ（pagesLabel の最初の数値）から開く
-            url: `${budget.sourceLocalUrl}#page=${budget.pagesLabel.match(/\d+/)?.[0] ?? 1}`,
-            title: budget.sourceTitle, sub: `款別一覧 ${budget.pagesLabel}`,
-            originUrl: budget.originUrl, archiveUrl: budget.sourceUrl,
-          }),
+    dashSourceOpen,
+    // 2ファイル型の budget だけ、ダッシュボード末尾の出典を歳入・歳出の2リンクにする
+    // （単一ファイルは空配列 → View は従来の1リンク）。href・文言・開く動作を同じ URL から作る
+    dashSourceSides: isBudget && muniBudget!.sides
+      ? (["rev", "exp"] as const).map((sd) => ({
+          label: sd === "rev" ? "歳入" : "歳出",
+          url: evHref(budgetSideSrc(sd).sourceLocalUrl),
+          action: evAction(budgetSideSrc(sd).sourceLocalUrl),
+          open: budgetSideOpen(sd),
+        }))
+      : [],
     themesIntro: `${planInfo.plan}の基本目標（${GOALS.map((g) => `「${g.name}」`).join("")}）別に、予算資料「主な事業一覧」に掲載された${KOFU_PROJECTS.length}事業を、資料記載の基本目標・施策の紐付けどおりに集計しています。`,
     drillTipMove: mkDonutTip(donutItems, nodeTotal, data.pop, "drill"),
     drillSub: subV(nodeTotal),
