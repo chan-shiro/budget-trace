@@ -2757,6 +2757,30 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `takaoka-yosansho-${fy}`, muniCode: "162027", muniName: "高岡市", prefName: "富山県", isPref: false,
     })),
+    // ⚠ 松阪は「当初予算説明資料」の款別構成表 13年（R1・H29 はスキャン、H22 は前年度が肉付け後、H23 は `*` 印がパーサ手当て待ち）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h30", "h28", "h27", "h26", "h25", "h24"] as const).map((fy) => ({
+      srcId: `matsusaka-yosan-setsumei-${fy}`, muniCode: "242047", muniName: "松阪市", prefName: "三重県", isPref: false,
+    })),
+    // ⚠ ひたちなかは「予算の概要」の款別総括 7年（前年度が左＝prevColumnFirst）。H31 は化け・H30/H29 はスキャン
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `hitachinaka-yosan-gaiyou-${fy}`, muniCode: "082210", muniName: "ひたちなか市", prefName: "茨城県", isPref: false,
+    })),
+    // ⚠ 秦野は「予算のあらまし」6年＋R5 は「予算資料」（あらましの款別表が画像）。R3・R2・R5 は WARP 起点。noDeepLink
+    ...(["r8", "r7", "r6", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `hadano-yosan-aramashi-${fy}`, muniCode: "142115", muniName: "秦野市", prefName: "神奈川県", isPref: false,
+    })),
+    { srcId: "hadano-yosan-siryou-r5", muniCode: "142115", muniName: "秦野市", prefName: "神奈川県", isPref: false },
+    // ⚠ 宇部は「当初予算（案）の概要」4年（R4・R3 は WARP 起点）。open（年度ページの CC BY 4.0 ブロック直下に PDF）。R7/R5/R2 は化け・R1 はパーサ都合
+    ...(["r8", "r6", "r4", "r3"] as const).map((fy) => ({
+      srcId: `ube-yosan-gaiyou-${fy}`, muniCode: "352021", muniName: "宇部市", prefName: "山口県", isPref: false,
+    })),
+    // ⚠ 大垣は予算明細書の総括 R8〜R2（R5〜R2 は Wayback 起点）＋当初予算の概要 H31〜H23（H25 はパーサ手当て待ち・H28 以前は前年度が左）。R3 が骨格 → R4 に prevNote
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `ogaki-yosanmeisai-${fy}`, muniCode: "212024", muniName: "大垣市", prefName: "岐阜県", isPref: false,
+    })),
+    ...(["h31", "h30", "h29", "h28", "h27", "h26", "h24", "h23"] as const).map((fy) => ({
+      srcId: `ogaki-yosangaiyou-${fy}`, muniCode: "212024", muniName: "大垣市", prefName: "岐阜県", isPref: false,
+    })),
     ...(["h30", "h29", "h28"] as const).map((fy) => ({
       srcId: `takaoka-kaikeibetsu-yosan-${fy}`, muniCode: "162027", muniName: "高岡市", prefName: "富山県", isPref: false,
     })),

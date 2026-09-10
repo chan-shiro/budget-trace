@@ -1,0 +1,12 @@
+{
+  "sourceId": "matsusaka-yosan-setsumei-r2",
+  "files": [
+    {
+      "filename": "42125.pdf",
+      "sha256": "ecc47aec0d9e3a34c8eb92172c02146a1402309d2f0cf374c4daa371183d5800",
+      "bytes": 2357962,
+      "fetchedAt": "2026-09-10T01:29:03.618Z",
+      "fetchedFrom": "https://www.city.matsusaka.mie.jp/uploaded/attachment/42125.pdf"
+    }
+  ]
+}

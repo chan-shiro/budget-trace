@@ -13,15 +13,15 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 213,
+  "budgetCount": 218,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 1503,
-  "fileCount": 2701,
-  "archivedCount": 1347,
-  "licenseOpen": 98,
-  "licensePermission": 1260,
-  "licenseUnverified": 145,
+  "sourceCount": 1549,
+  "fileCount": 2747,
+  "archivedCount": 1412,
+  "licenseOpen": 102,
+  "licensePermission": 1282,
+  "licenseUnverified": 165,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
   "kofuBudgetYears": 7,
@@ -153,6 +153,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H24〜R8（15年度）"
     },
     {
+      "name": "大垣市",
+      "code": "212024",
+      "years": 15,
+      "range": "H23〜R8（15年度）"
+    },
+    {
       "name": "松江市",
       "code": "322016",
       "years": 15,
@@ -217,6 +223,12 @@ export const ROADMAP_PROGRESS = {
       "code": "222119",
       "years": 13,
       "range": "H26〜R8（13年度）"
+    },
+    {
+      "name": "松阪市",
+      "code": "242047",
+      "years": 13,
+      "range": "H24〜R8（13年度）"
     },
     {
       "name": "苫小牧市",
@@ -507,6 +519,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "ひたちなか市",
+      "code": "082210",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "川越市",
       "code": "112011",
       "years": 7,
@@ -569,6 +587,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "藤沢市",
       "code": "142051",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "秦野市",
+      "code": "142115",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },
@@ -833,6 +857,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "豊橋市",
       "code": "232017",
+      "years": 4,
+      "range": "R3〜R8（4年度）"
+    },
+    {
+      "name": "宇部市",
+      "code": "352021",
       "years": 4,
       "range": "R3〜R8（4年度）"
     },

@@ -1,0 +1,402 @@
+{
+  "docType": "budget-book",
+  "sourceId": "ogaki-yosangaiyou-h26",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-09-10T01:47:20.010Z",
+  "unit": "thousandYen",
+  "fiscalYear": "H26",
+  "account": "一般会計",
+  "revenueTotal": 56690000,
+  "expenditureTotal": 56690000,
+  "prevRevenueTotal": 55370000,
+  "prevExpenditureTotal": 55370000,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "市税",
+      "amount": 26430000,
+      "prevAmount": 25850000,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "地方譲与税",
+      "amount": 550000,
+      "prevAmount": 602000,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "利子割交付金",
+      "amount": 69000,
+      "prevAmount": 63000,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "配当割交付金",
+      "amount": 99000,
+      "prevAmount": 44000,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 14000,
+      "prevAmount": 11000,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "地方消費税交付金",
+      "amount": 1777000,
+      "prevAmount": 1599000,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "ゴルフ場利用税交付金",
+      "amount": 33000,
+      "prevAmount": 30000,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "自動車取得税交付金",
+      "amount": 82000,
+      "prevAmount": 187000,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "地方特例交付金",
+      "amount": 95000,
+      "prevAmount": 98000,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "地方交付税",
+      "amount": 4420000,
+      "prevAmount": 4650000,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 31000,
+      "prevAmount": 32000,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "分担金及び負担金",
+      "amount": 952154,
+      "prevAmount": 938147,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "使用料及び手数料",
+      "amount": 1071540,
+      "prevAmount": 1082580,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "国庫支出金",
+      "amount": 6524178,
+      "prevAmount": 5689888,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "県支出金",
+      "amount": 3450738,
+      "prevAmount": 3092793,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "財産収入",
+      "amount": 63910,
+      "prevAmount": 69990,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 17,
+      "kanName": "寄附金",
+      "amount": 8270,
+      "prevAmount": 7400,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 18,
+      "kanName": "繰入金",
+      "amount": 1494100,
+      "prevAmount": 1299690,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 19,
+      "kanName": "繰越金",
+      "amount": 1000000,
+      "prevAmount": 1000000,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 20,
+      "kanName": "諸収入",
+      "amount": 3864610,
+      "prevAmount": 3865412,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 21,
+      "kanName": "市債",
+      "amount": 4660500,
+      "prevAmount": 5158100,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 2
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 401340,
+      "prevAmount": 421930,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 5582180,
+      "prevAmount": 6046360,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "民生費",
+      "amount": 20761940,
+      "prevAmount": 20116510,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "衛生費",
+      "amount": 4522180,
+      "prevAmount": 4031510,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "労働費",
+      "amount": 106710,
+      "prevAmount": 124560,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "農林水産業費",
+      "amount": 901350,
+      "prevAmount": 904940,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "商工費",
+      "amount": 3262130,
+      "prevAmount": 3248270,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "土木費",
+      "amount": 7471760,
+      "prevAmount": 6988550,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "消防費",
+      "amount": 1723030,
+      "prevAmount": 1695280,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "教育費",
+      "amount": 6272480,
+      "prevAmount": 5997790,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 11,
+      "kanName": "災害復旧費",
+      "amount": 130000,
+      "prevAmount": 222000,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 12,
+      "kanName": "公債費",
+      "amount": 5027300,
+      "prevAmount": 5019800,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 13,
+      "kanName": "諸支出金",
+      "amount": 487600,
+      "prevAmount": 512500,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 14,
+      "kanName": "予備費",
+      "amount": 40000,
+      "prevAmount": 40000,
+      "locator": {
+        "file": "26tousyo.pdf",
+        "page": 6
+      }
+    }
+  ]
+}
