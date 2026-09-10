@@ -14388,5 +14388,155 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.ogaki.lg.jp/cmsfiles/contents/0000002/2490/23tousyo.pdf",
     "license": "大垣市ホームページに掲載されている個々の情報（文字、写真、イラストなど）の著作権は、原則として大垣市にあります。当ホームページの情報の無断引用及び転載は禁止します。",
     "target": "file"
+  },
+  "/sources/kushiro-yosan-gaiyou-r8/r8yosanangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kushiro.lg.jp/_res/projects/default_project/_page_/001/018/509/r8yosanangaiyou.pdf",
+    "license": "当ホームページに掲載されている記事・写真等の「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断での転載・転用を禁じます。",
+    "target": "file"
+  },
+  "/sources/kushiro-yosan-gaiyou-r7/r7yosanangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kushiro.lg.jp/_res/projects/default_project/_page_/001/016/038/r7yosanangaiyou.pdf",
+    "license": "当ホームページに掲載されている記事・写真等の「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断での転載・転用を禁じます。",
+    "target": "file"
+  },
+  "/sources/kushiro-yosan-gaiyou-r6/1013888_06.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kushiro.lg.jp/_res/projects/default_project/_page_/001/013/888/1013888_06.pdf",
+    "license": "当ホームページに掲載されている記事・写真等の「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断での転載・転用を禁じます。",
+    "target": "file"
+  },
+  "/sources/kushiro-yosan-gaiyou-r5/1011046_4.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kushiro.lg.jp/_res/projects/default_project/_page_/001/011/046/1011046_4.pdf",
+    "license": "当ホームページに掲載されている記事・写真等の「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断での転載・転用を禁じます。",
+    "target": "file"
+  },
+  "/sources/kushiro-yosan-gaiyou-r4/000186459.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kushiro.lg.jp/_res/projects/default_project/_page_/001/007/152/000186459.pdf",
+    "license": "当ホームページに掲載されている記事・写真等の「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断での転載・転用を禁じます。",
+    "target": "file"
+  },
+  "/sources/kushiro-yosan-gaiyou-r3/000166290.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kushiro.lg.jp/_res/projects/default_project/_page_/001/007/153/000166290.pdf",
+    "license": "当ホームページに掲載されている記事・写真等の「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断での転載・転用を禁じます。",
+    "target": "file"
+  },
+  "/sources/kushiro-yosan-gaiyou-r2/000147217.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kushiro.lg.jp/_res/projects/default_project/_page_/001/007/154/000147217.pdf",
+    "license": "当ホームページに掲載されている記事・写真等の「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断での転載・転用を禁じます。",
+    "target": "file"
+  },
+  "/sources/kushiro-yosan-gaiyou-h31/000132324.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kushiro.lg.jp/_res/projects/default_project/_page_/001/007/155/000132324.pdf",
+    "license": "当ホームページに掲載されている記事・写真等の「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断での転載・転用を禁じます。",
+    "target": "file"
+  },
+  "/sources/kushiro-yosan-gaiyou-h30/000141150.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kushiro.lg.jp/_res/projects/default_project/_page_/001/007/156/000141150.pdf",
+    "license": "当ホームページに掲載されている記事・写真等の「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断での転載・転用を禁じます。",
+    "target": "file"
+  },
+  "/sources/tochigi-shi-yosan-aramashi-r8/68661.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tochigi.lg.jp/uploaded/attachment/68661.pdf",
+    "license": "栃木市ホームページ上に掲載されている文書や画像等のコンテンツの無断使用・転載・引用を禁じます。栃木市公式サイト上における文書・画像等コンテンツの著作権は、栃木市に帰属します。一部の画像等の著作権は、撮影者や画像提供者などの原著作者が所有します。",
+    "target": "file"
+  },
+  "/sources/tochigi-shi-yosan-aramashi-r7/61216.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tochigi.lg.jp/uploaded/attachment/61216.pdf",
+    "license": "栃木市ホームページ上に掲載されている文書や画像等のコンテンツの無断使用・転載・引用を禁じます。栃木市公式サイト上における文書・画像等コンテンツの著作権は、栃木市に帰属します。一部の画像等の著作権は、撮影者や画像提供者などの原著作者が所有します。",
+    "target": "file"
+  },
+  "/sources/tochigi-shi-yosan-aramashi-r6/54891.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tochigi.lg.jp/uploaded/attachment/54891.pdf",
+    "license": "栃木市ホームページ上に掲載されている文書や画像等のコンテンツの無断使用・転載・引用を禁じます。栃木市公式サイト上における文書・画像等コンテンツの著作権は、栃木市に帰属します。一部の画像等の著作権は、撮影者や画像提供者などの原著作者が所有します。",
+    "target": "file"
+  },
+  "/sources/tochigi-shi-yosan-aramashi-r5/54840.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tochigi.lg.jp/uploaded/attachment/54840.pdf",
+    "license": "栃木市ホームページ上に掲載されている文書や画像等のコンテンツの無断使用・転載・引用を禁じます。栃木市公式サイト上における文書・画像等コンテンツの著作権は、栃木市に帰属します。一部の画像等の著作権は、撮影者や画像提供者などの原著作者が所有します。",
+    "target": "file"
+  },
+  "/sources/tochigi-shi-yosan-aramashi-r4/42040.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tochigi.lg.jp/uploaded/attachment/42040.pdf",
+    "license": "栃木市ホームページ上に掲載されている文書や画像等のコンテンツの無断使用・転載・引用を禁じます。栃木市公式サイト上における文書・画像等コンテンツの著作権は、栃木市に帰属します。一部の画像等の著作権は、撮影者や画像提供者などの原著作者が所有します。",
+    "target": "file"
+  },
+  "/sources/tochigi-shi-yosan-aramashi-r3/33830.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tochigi.lg.jp/uploaded/attachment/33830.pdf",
+    "license": "栃木市ホームページ上に掲載されている文書や画像等のコンテンツの無断使用・転載・引用を禁じます。栃木市公式サイト上における文書・画像等コンテンツの著作権は、栃木市に帰属します。一部の画像等の著作権は、撮影者や画像提供者などの原著作者が所有します。",
+    "target": "file"
+  },
+  "/sources/tochigi-shi-yosan-aramashi-r2/24589.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tochigi.lg.jp/uploaded/attachment/24589.pdf",
+    "license": "栃木市ホームページ上に掲載されている文書や画像等のコンテンツの無断使用・転載・引用を禁じます。栃木市公式サイト上における文書・画像等コンテンツの著作権は、栃木市に帰属します。一部の画像等の著作権は、撮影者や画像提供者などの原著作者が所有します。",
+    "target": "file"
+  },
+  "/sources/tochigi-shi-yosan-aramashi-h31/18913.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tochigi.lg.jp/uploaded/attachment/18913.pdf",
+    "license": "栃木市ホームページ上に掲載されている文書や画像等のコンテンツの無断使用・転載・引用を禁じます。栃木市公式サイト上における文書・画像等コンテンツの著作権は、栃木市に帰属します。一部の画像等の著作権は、撮影者や画像提供者などの原著作者が所有します。",
+    "target": "file"
+  },
+  "/sources/tochigi-shi-yosan-aramashi-h30/14475.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tochigi.lg.jp/uploaded/attachment/14475.pdf",
+    "license": "栃木市ホームページ上に掲載されている文書や画像等のコンテンツの無断使用・転載・引用を禁じます。栃木市公式サイト上における文書・画像等コンテンツの著作権は、栃木市に帰属します。一部の画像等の著作権は、撮影者や画像提供者などの原著作者が所有します。",
+    "target": "file"
+  },
+  "/sources/kawanishi-yosan-setsumeisho-r7/R7yosannsetumeisho0214.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kawanishi.hyogo.jp/_res/projects/default_project/_page_/001/021/134/R7yosannsetumeisho0214.pdf",
+    "license": "本ホームページで掲載している情報（文章・画像などの全てのコンテンツデータ）の著作権は、原則として川西市に帰属します（一部の画像等は原著作者が所有しています）。著作権法上認められている場合を除き、権利者の許可なく複製・転用・販売・改変といった二次利用をすることを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/kawanishi-yosan-setsumeisho-r6/R6_yosansetumei_2_060321.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kawanishi.hyogo.jp/_res/projects/default_project/_page_/001/019/058/R6_yosansetumei_2_060321.pdf",
+    "license": "本ホームページで掲載している情報（文章・画像などの全てのコンテンツデータ）の著作権は、原則として川西市に帰属します（一部の画像等は原著作者が所有しています）。著作権法上認められている場合を除き、権利者の許可なく複製・転用・販売・改変といった二次利用をすることを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/kawanishi-yosan-setsumeisho-r5/R5yosansetumei2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kawanishi.hyogo.jp/_res/projects/default_project/_page_/001/016/966/R5yosansetumei2.pdf",
+    "license": "本ホームページで掲載している情報（文章・画像などの全てのコンテンツデータ）の著作権は、原則として川西市に帰属します（一部の画像等は原著作者が所有しています）。著作権法上認められている場合を除き、権利者の許可なく複製・転用・販売・改変といった二次利用をすることを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/kawanishi-yosan-setsumeisho-h31/H31yosansetsumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kawanishi.hyogo.jp/_res/projects/default_project/_page_/001/008/286/H31yosansetsumeisyo.pdf",
+    "license": "本ホームページで掲載している情報（文章・画像などの全てのコンテンツデータ）の著作権は、原則として川西市に帰属します（一部の画像等は原著作者が所有しています）。著作権法上認められている場合を除き、権利者の許可なく複製・転用・販売・改変といった二次利用をすることを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/kawanishi-yosan-setsumeisho-h30/H30yosannsetumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kawanishi.hyogo.jp/_res/projects/default_project/_page_/001/008/287/H30yosannsetumeisyo.pdf",
+    "license": "本ホームページで掲載している情報（文章・画像などの全てのコンテンツデータ）の著作権は、原則として川西市に帰属します（一部の画像等は原著作者が所有しています）。著作権法上認められている場合を除き、権利者の許可なく複製・転用・販売・改変といった二次利用をすることを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/kawanishi-yosan-setsumeisho-h29/H29yosansetumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kawanishi.hyogo.jp/_res/projects/default_project/_page_/001/008/292/H29yosansetumeisyo.pdf",
+    "license": "本ホームページで掲載している情報（文章・画像などの全てのコンテンツデータ）の著作権は、原則として川西市に帰属します（一部の画像等は原著作者が所有しています）。著作権法上認められている場合を除き、権利者の許可なく複製・転用・販売・改変といった二次利用をすることを固く禁じます。",
+    "target": "file"
+  },
+  "/sources/kawanishi-yosan-setsumeisho-h28/H28yosansetsumeisho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kawanishi.hyogo.jp/_res/projects/default_project/_page_/001/008/311/H28yosansetsumeisho.pdf",
+    "license": "本ホームページで掲載している情報（文章・画像などの全てのコンテンツデータ）の著作権は、原則として川西市に帰属します（一部の画像等は原著作者が所有しています）。著作権法上認められている場合を除き、権利者の許可なく複製・転用・販売・改変といった二次利用をすることを固く禁じます。",
+    "target": "file"
   }
 };

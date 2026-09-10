@@ -13,15 +13,15 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 218,
+  "budgetCount": 223,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 1549,
-  "fileCount": 2747,
-  "archivedCount": 1412,
+  "sourceCount": 1592,
+  "fileCount": 2794,
+  "archivedCount": 1454,
   "licenseOpen": 102,
-  "licensePermission": 1282,
-  "licenseUnverified": 165,
+  "licensePermission": 1307,
+  "licenseUnverified": 183,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
   "kofuBudgetYears": 7,
@@ -399,8 +399,20 @@ export const ROADMAP_PROGRESS = {
       "range": "H29〜R8（10年度）"
     },
     {
+      "name": "釧路市",
+      "code": "012068",
+      "years": 9,
+      "range": "H30〜R8（9年度）"
+    },
+    {
       "name": "帯広市",
       "code": "012076",
+      "years": 9,
+      "range": "H30〜R8（9年度）"
+    },
+    {
+      "name": "栃木市",
+      "code": "092037",
       "years": 9,
       "range": "H30〜R8（9年度）"
     },
@@ -417,6 +429,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H30〜R8（9年度）"
     },
     {
+      "name": "野田市",
+      "code": "122084",
+      "years": 9,
+      "range": "H29〜R8（9年度）"
+    },
+    {
       "name": "豊島区",
       "code": "131164",
       "years": 9,
@@ -425,6 +443,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "松本市",
       "code": "202029",
+      "years": 9,
+      "range": "H30〜R8（9年度）"
+    },
+    {
+      "name": "刈谷市",
+      "code": "232106",
       "years": 9,
       "range": "H30〜R8（9年度）"
     },
@@ -643,6 +667,12 @@ export const ROADMAP_PROGRESS = {
       "code": "282103",
       "years": 7,
       "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "川西市",
+      "code": "282171",
+      "years": 7,
+      "range": "H28〜R7（7年度）"
     },
     {
       "name": "岡山市",

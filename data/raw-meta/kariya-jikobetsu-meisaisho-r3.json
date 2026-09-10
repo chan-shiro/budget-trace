@@ -1,0 +1,19 @@
+{
+  "sourceId": "kariya-jikobetsu-meisaisho-r3",
+  "files": [
+    {
+      "filename": "jikoubetumeisaisyoh3.pdf",
+      "sha256": "f26cda01e693ccbe6b618e079c76a3b997808f01eecfa41409ce1684318a9fd1",
+      "bytes": 76167,
+      "fetchedAt": "2026-09-10T03:35:30.845Z",
+      "fetchedFrom": "https://warp.ndl.go.jp/20210514/20210513232832/https://www.city.kariya.lg.jp/_res/projects/default_project/_page_/001/004/552/jikoubetumeisaisyoh3.pdf"
+    },
+    {
+      "filename": "jikoubetumeisaisyosaisyutuh3.pdf",
+      "sha256": "68b9ad9306ab147dbcfafc3a3a23c3f2d8b451a82558501e4d2ffb5e334a1fa7",
+      "bytes": 63101,
+      "fetchedAt": "2026-09-10T03:35:31.305Z",
+      "fetchedFrom": "https://warp.ndl.go.jp/20210514/20210513232832/https://www.city.kariya.lg.jp/_res/projects/default_project/_page_/001/004/552/jikoubetumeisaisyosaisyutuh3.pdf"
+    }
+  ]
+}
