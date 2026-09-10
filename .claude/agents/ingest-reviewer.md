@@ -74,6 +74,9 @@ optional フィールドの欠落（`prevNote` 等）を検出しない**。
 
 - **ファイルを書き換えない** — `data/`・`pipeline/`・`src/`・docs・registry のすべて。
   Bash も読み取り・検査・dev サーバ起動に限る（parse/fetch/archive/derive を走らせ直さない。
-  ただし `pipeline:validate` と `bun run typecheck` は副作用が無いので実行してよい）
+  `bun run typecheck` は副作用が無いので実行してよい）。
+  ⚠ **`pipeline:validate` は副作用がある** — `pipeline/validate.ts` が `validatedAt` を
+  `data/parsed/*.validation.json` に書き戻すので、**レビューでは走らせず既存の `.validation.json` を読む**
+  （2026-09-10 に第29巡のレビューで判明。それまで「副作用が無い」と書いていた）
 - 推測で「乗る/乗らない」「当たる/当たらない」を語らない — コードと実データを読んでから書く
   （source-scout の誤報4種と同根の失敗をレビューで繰り返さない）

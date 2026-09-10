@@ -1203,7 +1203,9 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     categories: ["broken-text-layer"],
     reason:
       "「平成27年度当初予算の概要」（89ページ）はテキスト層があり金額は取れるが、日本語が1文字も出ない" +
-      "（全ページの非 ASCII は ○ ◎ △ ☆ ※ ① ⑴ ⑵ ― の9種の記号だけ）。款名の欄が空になり款が1つも取れない。",
+      "（全ページの非 ASCII は ○ ◎ △ ☆ ※ ① ⑴ ⑵ ― の9種の記号だけ）。款名の欄が空になり款が1つも取れない。" +
+      "この年度は概要のほかに款別の候補が無い（年度ページの節は補正・専決の概要6本と当初予算の概要・予算編成方針だけで、予算書も予算説明書も載っていない）。",
+    url: "https://www.city.ueda.nagano.jp/uploaded/attachment/1981.pdf",
     checkedOn: "2026-09-10", ref: "docs/data-sources.md §13-29",
   },
   {
@@ -1213,6 +1215,7 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     reason:
       "予算のページの「平成20年度予算」の節に「当初予算の概要」のリンクが無い（補正予算の概要・専決予算の概要・予算編成方針だけ）。" +
       "前後の平成22・21・19・18年度には当初予算の概要がある。",
+    url: "https://www.city.ueda.nagano.jp/soshiki/zaisei/1256.html",
     checkedOn: "2026-09-10", ref: "docs/data-sources.md §13-29",
   },
 ];
