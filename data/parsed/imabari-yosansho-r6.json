@@ -1,0 +1,402 @@
+{
+  "docType": "budget-book",
+  "sourceId": "imabari-yosansho-r6",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-09-10T09:25:40.684Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R6",
+  "account": "一般会計",
+  "revenueTotal": 77700000,
+  "expenditureTotal": 77700000,
+  "prevRevenueTotal": 75250000,
+  "prevExpenditureTotal": 75250000,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "市税",
+      "amount": 20141840,
+      "prevAmount": 20445649,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 48
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "地方譲与税",
+      "amount": 562105,
+      "prevAmount": 531000,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 48
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "利子割交付金",
+      "amount": 20000,
+      "prevAmount": 26000,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 48
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "配当割交付金",
+      "amount": 80000,
+      "prevAmount": 60000,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 48
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 70000,
+      "prevAmount": 40000,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 48
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "法人事業税交付金",
+      "amount": 400000,
+      "prevAmount": 380000,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 48
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "地方消費税交付金",
+      "amount": 3900000,
+      "prevAmount": 3900000,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 48
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "ゴルフ場利用税交付金",
+      "amount": 20000,
+      "prevAmount": 20000,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 48
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "環境性能割交付金",
+      "amount": 50000,
+      "prevAmount": 50000,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 48
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "地方特例交付金",
+      "amount": 685000,
+      "prevAmount": 130000,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 48
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "地方交付税",
+      "amount": 19840000,
+      "prevAmount": 17930000,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 48
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 17200,
+      "prevAmount": 17400,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 48
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "分担金及び負担金",
+      "amount": 277176,
+      "prevAmount": 295106,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 48
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "使用料及び手数料",
+      "amount": 1388035,
+      "prevAmount": 1366760,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 48
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "国庫支出金",
+      "amount": 10677816,
+      "prevAmount": 10860876,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 48
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "県支出金",
+      "amount": 5925371,
+      "prevAmount": 5751216,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 48
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 17,
+      "kanName": "財産収入",
+      "amount": 146483,
+      "prevAmount": 262361,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 48
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 18,
+      "kanName": "寄附金",
+      "amount": 1823611,
+      "prevAmount": 1702231,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 48
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 19,
+      "kanName": "繰入金",
+      "amount": 2690508,
+      "prevAmount": 4014784,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 48
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 20,
+      "kanName": "繰越金",
+      "amount": 2755639,
+      "prevAmount": 2757328,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 48
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 21,
+      "kanName": "諸収入",
+      "amount": 1650516,
+      "prevAmount": 1573889,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 48
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 22,
+      "kanName": "市債",
+      "amount": 4578700,
+      "prevAmount": 3135400,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 48
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 424300,
+      "prevAmount": 424873,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 49
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 8022713,
+      "prevAmount": 6736577,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 49
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "民生費",
+      "amount": 30052572,
+      "prevAmount": 29314957,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 49
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "衛生費",
+      "amount": 5252824,
+      "prevAmount": 5939023,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 49
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "労働費",
+      "amount": 276497,
+      "prevAmount": 261805,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 49
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "農林水産業費",
+      "amount": 2528808,
+      "prevAmount": 2415258,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 49
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "商工費",
+      "amount": 3024158,
+      "prevAmount": 2727616,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 49
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "土木費",
+      "amount": 9109046,
+      "prevAmount": 8686066,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 49
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "消防費",
+      "amount": 3264662,
+      "prevAmount": 2646348,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 49
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "教育費",
+      "amount": 7635348,
+      "prevAmount": 6396694,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 49
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 11,
+      "kanName": "災害復旧費",
+      "amount": 5400,
+      "prevAmount": 5400,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 49
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 12,
+      "kanName": "公債費",
+      "amount": 8073672,
+      "prevAmount": 9665383,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 49
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 13,
+      "kanName": "予備費",
+      "amount": 30000,
+      "prevAmount": 30000,
+      "locator": {
+        "file": "R06_tosho_siryo.pdf",
+        "page": 49
+      }
+    }
+  ]
+}

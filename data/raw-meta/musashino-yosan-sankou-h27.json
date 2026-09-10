@@ -1,0 +1,12 @@
+{
+  "sourceId": "musashino-yosan-sankou-h27",
+  "files": [
+    {
+      "filename": "sankou27.pdf",
+      "sha256": "49c92a6da70d91687033444127a2f51d943fddf3a86bea0ee99598ccebcb98ed",
+      "bytes": 6376579,
+      "fetchedAt": "2026-09-10T09:15:40.465Z",
+      "fetchedFrom": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/010/207/sankou27.pdf"
+    }
+  ]
+}

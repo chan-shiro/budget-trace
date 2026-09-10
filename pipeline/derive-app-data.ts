@@ -2831,6 +2831,32 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28", "h27", "h26"] as const).map((fy) => ({
       srcId: `sayama-yosan-setsumeisho-${fy}`, muniCode: "112151", muniName: "狭山市", prefName: "埼玉県", isPref: false,
     })),
+    // ⚠ 朝霞は予算説明書の総括表 12年（R2 は廃止款の当年度セルが空欄でパーサ手当て待ち）。
+    //    revenueHeaderExtra が無いと歳入の款1 が `総括表割合対する割合市税` になる（Σ 差0 のまま壊れる型）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "h31", "h30", "h29", "h28", "h27", "h26"] as const).map((fy) => ({
+      srcId: `asaka-yosansho-${fy}`, muniCode: "112275", muniName: "朝霞市", prefName: "埼玉県", isPref: false,
+    })),
+    // ⚠ 武蔵野は予算参考資料の前年度比較 18年（今のところ最長）。歳出の款6 は原典が `農業費`。
+    //    ⚠⚠ R6 は初版と修正版の2本があり **どちらも Σ4系統差0 で通る** — 正版は年度間クロスチェックだけが決める
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28", "h27", "h26", "h25", "h24", "h23", "h22", "h21"] as const).map((fy) => ({
+      srcId: `musashino-yosan-sankou-${fy}`, muniCode: "132039", muniName: "武蔵野市", prefName: "東京都", isPref: false,
+    })),
+    // ⚠ 各務原は計数資料の款別比較 8年。R8〜R6 は「主な増減要因」欄の `（皆減）` を切るため CropX 必須。
+    //    ⚠⚠ 別冊子の予算説明書 総括は Σ 差0 のまま款11 災害復旧費 が欠ける（14款→13款）ので採らない
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31"] as const).map((fy) => ({
+      srcId: `kakamigahara-yosan-keisu-${fy}`, muniCode: "212130", muniName: "各務原市", prefName: "岐阜県", isPref: false,
+    })),
+    // ⚠ 今治は記者発表資料の「一般会計款別予算額調」6年（無指定で素通りする）。
+    //    ⚠⚠ 同じ内容の「概要版」は R6〜R4 で歳出の款5 が `衛生費労働費` になるのに Σ 差0 のまま通る。採らない
+    ...(["r8", "r7", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
+      srcId: `imabari-yosansho-${fy}`, muniCode: "382027", muniName: "今治市", prefName: "愛媛県", isPref: false,
+    })),
+    // ⚠ 多摩は予算書の総括5年＋R3 は予算の概要（予算書が発行元にも Wayback にも WARP にも無い）。
+    //    歳出の款6 は原典が `農林業費`
+    ...(["r8", "r7", "r6", "r5", "r4"] as const).map((fy) => ({
+      srcId: `tama-yosansho-${fy}`, muniCode: "132241", muniName: "多摩市", prefName: "東京都", isPref: false,
+    })),
+    { srcId: "tama-yosan-gaiyou-r3", muniCode: "132241", muniName: "多摩市", prefName: "東京都", isPref: false },
     ...(["h30", "h29", "h28"] as const).map((fy) => ({
       srcId: `takaoka-kaikeibetsu-yosan-${fy}`, muniCode: "162027", muniName: "高岡市", prefName: "富山県", isPref: false,
     })),

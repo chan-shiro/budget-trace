@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 228,
+  "budgetCount": 233,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 1642,
-  "fileCount": 2844,
-  "archivedCount": 1498,
+  "sourceCount": 1692,
+  "fileCount": 2894,
+  "archivedCount": 1547,
   "licenseOpen": 102,
-  "licensePermission": 1347,
+  "licensePermission": 1397,
   "licenseUnverified": 193,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -95,6 +95,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "世田谷区",
       "code": "131121",
+      "years": 18,
+      "range": "H21〜R8（18年度）"
+    },
+    {
+      "name": "武蔵野市",
+      "code": "132039",
       "years": 18,
       "range": "H21〜R8（18年度）"
     },
@@ -247,6 +253,12 @@ export const ROADMAP_PROGRESS = {
       "code": "012131",
       "years": 12,
       "range": "H25〜R8（12年度）"
+    },
+    {
+      "name": "朝霞市",
+      "code": "112275",
+      "years": 12,
+      "range": "H26〜R8（12年度）"
     },
     {
       "name": "習志野市",
@@ -531,6 +543,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H31〜R8（8年度）"
     },
     {
+      "name": "各務原市",
+      "code": "212130",
+      "years": 8,
+      "range": "H31〜R8（8年度）"
+    },
+    {
       "name": "豊中市",
       "code": "272035",
       "years": 8,
@@ -777,6 +795,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R3〜R8（6年度）"
     },
     {
+      "name": "多摩市",
+      "code": "132241",
+      "years": 6,
+      "range": "R3〜R8（6年度）"
+    },
+    {
       "name": "横浜市",
       "code": "141003",
       "years": 6,
@@ -811,6 +835,12 @@ export const ROADMAP_PROGRESS = {
       "code": "342025",
       "years": 6,
       "range": "R2〜R8（6年度）"
+    },
+    {
+      "name": "今治市",
+      "code": "382027",
+      "years": 6,
+      "range": "R3〜R8（6年度）"
     },
     {
       "name": "長崎市",
