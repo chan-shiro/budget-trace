@@ -3,7 +3,7 @@
   "sourceId": "yonago-yosan-gaiyou-r8",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-09-10T15:15:32.393Z",
+  "parsedAt": "2026-09-10T15:26:49.487Z",
   "unit": "thousandYen",
   "fiscalYear": "R8",
   "account": "一般会計",
@@ -12,7 +12,7 @@
   "prevRevenueTotal": 87182770,
   "prevExpenditureTotal": 87182770,
   "prevBasis": "補正後",
-  "prevNote": "原典の前年度列は当初額ではない。脚注は「＊令和7年度は6月補正後の予算額」（原文のまま）。前年度の当初予算は4月の市長選挙を控えた骨格予算だった（原典に明記）。当初額どうしの比較ではない。",
+  "prevNote": "原典の前年度列は当初額ではない。歳入・歳出の各ページの脚注に「＊令和7年度は6月補正後の予算額」とある（原文のまま）。前年度の当初予算は4月の市長選挙を控えた骨格予算だった（令和7年度の「予算の概要」に明記。この年度の資料には書かれていない）。当初額どうしの比較ではない。",
   "facts": [
     {
       "side": "revenue",
