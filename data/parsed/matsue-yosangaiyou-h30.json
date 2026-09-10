@@ -3,7 +3,7 @@
   "sourceId": "matsue-yosangaiyou-h30",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-09-02T07:03:56.161Z",
+  "parsedAt": "2026-09-10T18:42:37.366Z",
   "unit": "thousandYen",
   "fiscalYear": "H30",
   "account": "一般会計",
@@ -12,7 +12,7 @@
   "prevRevenueTotal": 93067000,
   "prevExpenditureTotal": 93067000,
   "prevBasis": "当初",
-  "prevNote": "前年度（平成29年度）の当初予算は、4月の市長選挙を控えた骨格予算として編成されたもの（当該年度の当初予算資料に明記）。ここでの前年度額はその骨格予算の当初額。",
+  "prevNote": "前年度（平成29年度）の当初予算は、4月の市長選挙を控えた骨格予算として編成されている（発行元の別資料「平成29年度 松江市当初予算概要」に「4月に市長選挙を控えていることから、政策的経費を抑え、義務的経費や継続性・緊急性を有する経費を中心とした骨格予算を編成した。」と明記）。ここでの前年度額はその骨格予算の当初額。",
   "facts": [
     {
       "side": "revenue",

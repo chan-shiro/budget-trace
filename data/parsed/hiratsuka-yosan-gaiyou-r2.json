@@ -3,7 +3,7 @@
   "sourceId": "hiratsuka-yosan-gaiyou-r2",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-08-23T13:43:17.975Z",
+  "parsedAt": "2026-09-10T15:55:10.993Z",
   "unit": "thousandYen",
   "fiscalYear": "R2",
   "account": "一般会計",
@@ -12,7 +12,7 @@
   "prevRevenueTotal": 80780000,
   "prevExpenditureTotal": 80780000,
   "prevBasis": "当初",
-  "prevNote": "前年度（令和元年度＝平成31年度）の当初予算は、市長選挙のため骨格予算として編成されている（原典「平成31年度当初予算の概要」p.1 に「＊平成31年度は骨格的予算」と明記）。ここでの前年度額はその骨格予算の当初額。",
+  "prevNote": "前年度（令和元年度＝平成31年度）の当初予算は、市長選挙のため骨格予算として編成されている（発行元の別資料「平成31年度当初予算の概要」p.1 に「＊平成31年度は骨格的予算」と明記）。ここでの前年度額はその骨格予算の当初額。",
   "facts": [
     {
       "side": "revenue",

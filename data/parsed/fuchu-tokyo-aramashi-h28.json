@@ -3,7 +3,7 @@
   "sourceId": "fuchu-tokyo-aramashi-h28",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-08-23T22:50:37.031Z",
+  "parsedAt": "2026-09-10T12:38:19.052Z",
   "unit": "thousandYen",
   "fiscalYear": "H28",
   "account": "一般会計",
@@ -12,7 +12,6 @@
   "prevRevenueTotal": 92850000,
   "prevExpenditureTotal": 92850000,
   "prevBasis": "当初",
-  "prevNote": "平成24年度の当初予算は骨格予算のた",
   "facts": [
     {
       "side": "revenue",

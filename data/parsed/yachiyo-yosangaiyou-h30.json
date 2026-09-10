@@ -3,7 +3,7 @@
   "sourceId": "yachiyo-yosangaiyou-h30",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-08-24T01:56:33.466Z",
+  "parsedAt": "2026-09-10T19:25:08.814Z",
   "unit": "thousandYen",
   "fiscalYear": "H30",
   "account": "一般会計",
@@ -12,6 +12,7 @@
   "prevRevenueTotal": 52879615,
   "prevExpenditureTotal": 52879615,
   "prevBasis": "当初",
+  "prevNote": "前年度（平成29年度）の当初予算は、平成29年5月の市長選挙を控えた骨格予算として編成されたもの（原典「平成30年度 八千代市予算の概要」が平成29年度当初について「骨格予算による編成であったことから，総額についても大幅な減となっている」と記している）。ここでの前年度額はその骨格予算の当初額で、選挙後に肉付けした後の額ではない（肉付け後の額は、2026年9月10日時点で収録資料の範囲では確認できていない）。",
   "facts": [
     {
       "side": "revenue",

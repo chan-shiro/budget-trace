@@ -3,7 +3,7 @@
   "sourceId": "shimonoseki-yosansho-r4",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-08-23T18:14:06.148Z",
+  "parsedAt": "2026-09-10T12:38:18.793Z",
   "unit": "thousandYen",
   "fiscalYear": "R4",
   "account": "一般会計",
@@ -12,6 +12,7 @@
   "prevRevenueTotal": 110800000,
   "prevExpenditureTotal": 110800000,
   "prevBasis": "当初",
+  "prevNote": "前年度（令和3年度）の当初予算は、3月の市長選挙を控えた骨格予算として編成されている（市長記者発表「令和3年度当初予算」に「経常的な経費や継続事業、国や県との連携事業に係る経費などを中心とした骨格予算として編成しています。」と明記）。ここでの前年度額はその骨格予算の当初額（110,800,000千円）で、選挙後の6月補正で肉付け（2,829,581千円）した後の113,629,581千円ではない。",
   "facts": [
     {
       "side": "revenue",

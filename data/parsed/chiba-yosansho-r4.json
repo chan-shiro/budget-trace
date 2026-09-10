@@ -3,7 +3,7 @@
   "sourceId": "chiba-yosansho-r4",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-08-23T06:27:14.625Z",
+  "parsedAt": "2026-09-10T13:41:54.942Z",
   "unit": "thousandYen",
   "fiscalYear": "R4",
   "account": "一般会計",
@@ -12,6 +12,7 @@
   "prevRevenueTotal": 466400000,
   "prevExpenditureTotal": 466400000,
   "prevBasis": "当初",
+  "prevNote": "前年度（令和3年度）の当初予算は「準骨格予算」として編成されている（発行元の別資料「令和3年度当初予算の概要」p.1 に「新市長の政策を実現できる余地を残すため、新たな政策的判断を要する事業を留保しつつ、新型コロナウイルス感染症対策など、継続的に取り組む内容を中心とした「準骨格予算」を編成。」と明記）。ここでの前年度額は、その留保したままの当初額（4,664億円）。市長選挙後の6月補正で「肉付け予算」として58億5,500万円が追加されている。",
   "facts": [
     {
       "side": "revenue",
