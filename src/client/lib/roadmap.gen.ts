@@ -13,15 +13,15 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 233,
+  "budgetCount": 238,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 1692,
-  "fileCount": 2894,
-  "archivedCount": 1547,
+  "sourceCount": 1755,
+  "fileCount": 2957,
+  "archivedCount": 1549,
   "licenseOpen": 102,
-  "licensePermission": 1397,
-  "licenseUnverified": 193,
+  "licensePermission": 1430,
+  "licenseUnverified": 223,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
   "kofuBudgetYears": 7,
@@ -123,6 +123,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H22〜R8（17年度）"
     },
     {
+      "name": "米子市",
+      "code": "312029",
+      "years": 17,
+      "range": "H22〜R8（17年度）"
+    },
+    {
       "name": "熊谷市",
       "code": "112020",
       "years": 16,
@@ -149,6 +155,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "越谷市",
       "code": "112224",
+      "years": 15,
+      "range": "H24〜R8（15年度）"
+    },
+    {
+      "name": "三郷市",
+      "code": "112372",
       "years": 15,
       "range": "H24〜R8（15年度）"
     },
@@ -231,6 +243,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H26〜R8（13年度）"
     },
     {
+      "name": "入間市",
+      "code": "112259",
+      "years": 13,
+      "range": "H26〜R8（13年度）"
+    },
+    {
       "name": "三鷹市",
       "code": "132047",
       "years": 13,
@@ -293,6 +311,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "福島市",
       "code": "072010",
+      "years": 11,
+      "range": "H28〜R8（11年度）"
+    },
+    {
+      "name": "戸田市",
+      "code": "112241",
       "years": 11,
       "range": "H28〜R8（11年度）"
     },
@@ -743,6 +767,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "宮崎市",
       "code": "452017",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "沖縄市",
+      "code": "472115",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },

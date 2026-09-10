@@ -15078,5 +15078,203 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.tama.lg.jp/_res/projects/default_project/_page_/001/004/900/03yosannnogaiyou2.pdf",
     "license": "多摩市公式ホームページに掲載している情報（文章、写真、イラスト等）は、多摩市に帰属します。また、一部の画像等の著作権は原著作者が所有しています。著作権法上の「私的使用のための複製」や「引用」などの範囲を越えて、無断で複製・転用することはできません。",
     "target": "file"
+  },
+  "/sources/misato-yosan-gaiyou-r8/01yosangaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.misato.lg.jp/soshiki/zaimu/zaisei/1/12732.html",
+    "license": "本サイトのコンテンツの著作権はすべて三郷市に帰属します。本サイト内の記事・写真の無断転載を禁じます。また、すべての内容は日本の著作権法並びに国際条約により保護されています。",
+    "target": "page"
+  },
+  "/sources/misato-yosan-gaiyou-r7/R7tousyoyosannnogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.misato.lg.jp/soshiki/zaimu/zaisei/1/11366.html",
+    "license": "本サイトのコンテンツの著作権はすべて三郷市に帰属します。本サイト内の記事・写真の無断転載を禁じます。また、すべての内容は日本の著作権法並びに国際条約により保護されています。",
+    "target": "page"
+  },
+  "/sources/misato-yosan-gaiyou-r6/R6tousyoyosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.misato.lg.jp/soshiki/zaimu/zaisei/1/10221.html",
+    "license": "本サイトのコンテンツの著作権はすべて三郷市に帰属します。本サイト内の記事・写真の無断転載を禁じます。また、すべての内容は日本の著作権法並びに国際条約により保護されています。",
+    "target": "page"
+  },
+  "/sources/misato-yosan-gaiyou-r5/R5toushoyosannnogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.misato.lg.jp/soshiki/zaimu/zaisei/1/8366.html",
+    "license": "本サイトのコンテンツの著作権はすべて三郷市に帰属します。本サイト内の記事・写真の無断転載を禁じます。また、すべての内容は日本の著作権法並びに国際条約により保護されています。",
+    "target": "page"
+  },
+  "/sources/misato-yosan-gaiyou-r4/98294117.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.misato.lg.jp/soshiki/zaimu/zaisei/1/4912.html",
+    "license": "本サイトのコンテンツの著作権はすべて三郷市に帰属します。本サイト内の記事・写真の無断転載を禁じます。また、すべての内容は日本の著作権法並びに国際条約により保護されています。",
+    "target": "page"
+  },
+  "/sources/misato-yosan-gaiyou-r3/86510397.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.misato.lg.jp/soshiki/zaimu/zaisei/1/4633.html",
+    "license": "本サイトのコンテンツの著作権はすべて三郷市に帰属します。本サイト内の記事・写真の無断転載を禁じます。また、すべての内容は日本の著作権法並びに国際条約により保護されています。",
+    "target": "page"
+  },
+  "/sources/misato-yosan-gaiyou-r2/12613836.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.misato.lg.jp/soshiki/zaimu/zaisei/1/2818.html",
+    "license": "本サイトのコンテンツの著作権はすべて三郷市に帰属します。本サイト内の記事・写真の無断転載を禁じます。また、すべての内容は日本の著作権法並びに国際条約により保護されています。",
+    "target": "page"
+  },
+  "/sources/misato-yosan-gaiyou-h31/12261707.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.misato.lg.jp/soshiki/zaimu/zaisei/1/3119.html",
+    "license": "本サイトのコンテンツの著作権はすべて三郷市に帰属します。本サイト内の記事・写真の無断転載を禁じます。また、すべての内容は日本の著作権法並びに国際条約により保護されています。",
+    "target": "page"
+  },
+  "/sources/misato-yosan-gaiyou-h30/36677916.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.misato.lg.jp/soshiki/zaimu/zaisei/1/2061.html",
+    "license": "本サイトのコンテンツの著作権はすべて三郷市に帰属します。本サイト内の記事・写真の無断転載を禁じます。また、すべての内容は日本の著作権法並びに国際条約により保護されています。",
+    "target": "page"
+  },
+  "/sources/misato-yosan-gaiyou-h29/51169433.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.misato.lg.jp/soshiki/zaimu/zaisei/1/2060.html",
+    "license": "本サイトのコンテンツの著作権はすべて三郷市に帰属します。本サイト内の記事・写真の無断転載を禁じます。また、すべての内容は日本の著作権法並びに国際条約により保護されています。",
+    "target": "page"
+  },
+  "/sources/misato-yosan-gaiyou-h28/87964603.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.misato.lg.jp/soshiki/zaimu/zaisei/1/2059.html",
+    "license": "本サイトのコンテンツの著作権はすべて三郷市に帰属します。本サイト内の記事・写真の無断転載を禁じます。また、すべての内容は日本の著作権法並びに国際条約により保護されています。",
+    "target": "page"
+  },
+  "/sources/misato-yosan-gaiyou-h27/78139647.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.misato.lg.jp/soshiki/zaimu/zaisei/1/1546.html",
+    "license": "本サイトのコンテンツの著作権はすべて三郷市に帰属します。本サイト内の記事・写真の無断転載を禁じます。また、すべての内容は日本の著作権法並びに国際条約により保護されています。",
+    "target": "page"
+  },
+  "/sources/misato-yosan-gaiyou-h26/79284702.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.misato.lg.jp/soshiki/zaimu/zaisei/1/1545.html",
+    "license": "本サイトのコンテンツの著作権はすべて三郷市に帰属します。本サイト内の記事・写真の無断転載を禁じます。また、すべての内容は日本の著作権法並びに国際条約により保護されています。",
+    "target": "page"
+  },
+  "/sources/misato-yosansho-soukatsu-h25/80289626.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.misato.lg.jp/soshiki/zaimu/zaisei/1/1544.html",
+    "license": "本サイトのコンテンツの著作権はすべて三郷市に帰属します。本サイト内の記事・写真の無断転載を禁じます。また、すべての内容は日本の著作権法並びに国際条約により保護されています。",
+    "target": "page"
+  },
+  "/sources/misato-yosansho-soukatsu-h24/19217423.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.misato.lg.jp/soshiki/zaimu/zaisei/1/1543.html",
+    "license": "本サイトのコンテンツの著作権はすべて三郷市に帰属します。本サイト内の記事・写真の無断転載を禁じます。また、すべての内容は日本の著作権法並びに国際条約により保護されています。",
+    "target": "page"
+  },
+  "/sources/okinawa-shi-yosansho-r8/reiwa8nenndookinawasiippannkaiekiyosann.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.okinawa.okinawa.jp/documents/23551/reiwa8nenndookinawasiippannkaiekiyosann.pdf",
+    "license": "「沖縄市ホームページ」に掲載されている情報（文章、写真、イラスト等）は、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断での転用・引用は禁止いたします。",
+    "target": "file"
+  },
+  "/sources/okinawa-shi-yosansho-r7/r7ippannkaikeiyosann.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.okinawa.okinawa.jp/documents/22088/r7ippannkaikeiyosann.pdf",
+    "license": "「沖縄市ホームページ」に掲載されている情報（文章、写真、イラスト等）は、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断での転用・引用は禁止いたします。",
+    "target": "file"
+  },
+  "/sources/okinawa-shi-yosansho-r6/r6ippannkaikeiyosann.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.okinawa.okinawa.jp/documents/20061/r6ippannkaikeiyosann.pdf",
+    "license": "「沖縄市ホームページ」に掲載されている情報（文章、写真、イラスト等）は、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断での転用・引用は禁止いたします。",
+    "target": "file"
+  },
+  "/sources/okinawa-shi-yosansho-r5/r5okinawacityippannkaikeiyosansetumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.okinawa.okinawa.jp/documents/17761/r5okinawacityippannkaikeiyosansetumeisyo.pdf",
+    "license": "「沖縄市ホームページ」に掲載されている情報（文章、写真、イラスト等）は、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断での転用・引用は禁止いたします。",
+    "target": "file"
+  },
+  "/sources/okinawa-shi-yosansho-r4/r4okinawacityippannkaikeiyosansetumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.okinawa.okinawa.jp/documents/16698/r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+    "license": "「沖縄市ホームページ」に掲載されている情報（文章、写真、イラスト等）は、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断での転用・引用は禁止いたします。",
+    "target": "file"
+  },
+  "/sources/okinawa-shi-yosansho-r3/r3okinawacityippannkaikeiyosansetumeisyo_0225.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.okinawa.okinawa.jp/documents/1880/r3okinawacityippannkaikeiyosansetumeisyo_0225.pdf",
+    "license": "「沖縄市ホームページ」に掲載されている情報（文章、写真、イラスト等）は、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断での転用・引用は禁止いたします。",
+    "target": "file"
+  },
+  "/sources/okinawa-shi-yosansho-r2/r2okinawacityippannkaikeiyosansetumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.okinawa.okinawa.jp/documents/1879/r2okinawacityippannkaikeiyosansetumeisyo.pdf",
+    "license": "「沖縄市ホームページ」に掲載されている情報（文章、写真、イラスト等）は、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断での転用・引用は禁止いたします。",
+    "target": "file"
+  },
+  "/sources/toda-yosan-gaiyou-r8/78136.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.toda.saitama.jp/uploaded/attachment/78136.pdf",
+    "license": "戸田市公式サイト上の文書、図画等の各ファイル及びその内容に関する諸権利は、原則戸田市に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。戸田市公式サイトの内容（文書、図画等）について、私的使用または引用等著作権上で認められた行為を除き、戸田市に無断で掲載等をすることは禁止します。",
+    "target": "file"
+  },
+  "/sources/toda-yosan-gaiyou-r7/72319.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.toda.saitama.jp/uploaded/attachment/72319.pdf",
+    "license": "戸田市公式サイト上の文書、図画等の各ファイル及びその内容に関する諸権利は、原則戸田市に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。戸田市公式サイトの内容（文書、図画等）について、私的使用または引用等著作権上で認められた行為を除き、戸田市に無断で掲載等をすることは禁止します。",
+    "target": "file"
+  },
+  "/sources/toda-yosan-gaiyou-r6/66114.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.toda.saitama.jp/uploaded/attachment/66114.pdf",
+    "license": "戸田市公式サイト上の文書、図画等の各ファイル及びその内容に関する諸権利は、原則戸田市に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。戸田市公式サイトの内容（文書、図画等）について、私的使用または引用等著作権上で認められた行為を除き、戸田市に無断で掲載等をすることは禁止します。",
+    "target": "file"
+  },
+  "/sources/toda-yosan-gaiyou-r5/59043.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.toda.saitama.jp/uploaded/attachment/59043.pdf",
+    "license": "戸田市公式サイト上の文書、図画等の各ファイル及びその内容に関する諸権利は、原則戸田市に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。戸田市公式サイトの内容（文書、図画等）について、私的使用または引用等著作権上で認められた行為を除き、戸田市に無断で掲載等をすることは禁止します。",
+    "target": "file"
+  },
+  "/sources/toda-yosan-gaiyou-r4/51290.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.toda.saitama.jp/uploaded/attachment/51290.pdf",
+    "license": "戸田市公式サイト上の文書、図画等の各ファイル及びその内容に関する諸権利は、原則戸田市に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。戸田市公式サイトの内容（文書、図画等）について、私的使用または引用等著作権上で認められた行為を除き、戸田市に無断で掲載等をすることは禁止します。",
+    "target": "file"
+  },
+  "/sources/toda-yosan-gaiyou-r3/44154.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.toda.saitama.jp/uploaded/attachment/44154.pdf",
+    "license": "戸田市公式サイト上の文書、図画等の各ファイル及びその内容に関する諸権利は、原則戸田市に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。戸田市公式サイトの内容（文書、図画等）について、私的使用または引用等著作権上で認められた行為を除き、戸田市に無断で掲載等をすることは禁止します。",
+    "target": "file"
+  },
+  "/sources/toda-yosan-gaiyou-r2/37038.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.toda.saitama.jp/uploaded/attachment/37038.pdf",
+    "license": "戸田市公式サイト上の文書、図画等の各ファイル及びその内容に関する諸権利は、原則戸田市に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。戸田市公式サイトの内容（文書、図画等）について、私的使用または引用等著作権上で認められた行為を除き、戸田市に無断で掲載等をすることは禁止します。",
+    "target": "file"
+  },
+  "/sources/toda-yosan-gaiyou-h31/34326.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.toda.saitama.jp/uploaded/attachment/34326.pdf",
+    "license": "戸田市公式サイト上の文書、図画等の各ファイル及びその内容に関する諸権利は、原則戸田市に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。戸田市公式サイトの内容（文書、図画等）について、私的使用または引用等著作権上で認められた行為を除き、戸田市に無断で掲載等をすることは禁止します。",
+    "target": "file"
+  },
+  "/sources/toda-yosan-gaiyou-h30/24853.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.toda.saitama.jp/uploaded/attachment/24853.pdf",
+    "license": "戸田市公式サイト上の文書、図画等の各ファイル及びその内容に関する諸権利は、原則戸田市に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。戸田市公式サイトの内容（文書、図画等）について、私的使用または引用等著作権上で認められた行為を除き、戸田市に無断で掲載等をすることは禁止します。",
+    "target": "file"
+  },
+  "/sources/toda-yosan-gaiyou-h29/20399.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20180117/20180117115302/https://www.city.toda.saitama.jp/uploaded/attachment/20399.pdf",
+    "license": "戸田市公式サイト上の文書、図画等の各ファイル及びその内容に関する諸権利は、原則戸田市に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。戸田市公式サイトの内容（文書、図画等）について、私的使用または引用等著作権上で認められた行為を除き、戸田市に無断で掲載等をすることは禁止します。",
+    "target": "file"
+  },
+  "/sources/toda-yosan-gaiyou-h28/21425.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20180117/20180117115302/https://www.city.toda.saitama.jp/uploaded/attachment/21425.pdf",
+    "license": "戸田市公式サイト上の文書、図画等の各ファイル及びその内容に関する諸権利は、原則戸田市に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。戸田市公式サイトの内容（文書、図画等）について、私的使用または引用等著作権上で認められた行為を除き、戸田市に無断で掲載等をすることは禁止します。",
+    "target": "file"
   }
 };

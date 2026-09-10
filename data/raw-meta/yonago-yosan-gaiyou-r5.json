@@ -1,0 +1,12 @@
+{
+  "sourceId": "yonago-yosan-gaiyou-r5",
+  "files": [
+    {
+      "filename": "gaiyou.pdf",
+      "sha256": "a2dae7333fbfa53bf68ddb29c33799823bd844f74346c46058ce5a216e9121e4",
+      "bytes": 1724189,
+      "fetchedAt": "2026-09-10T14:40:56.188Z",
+      "fetchedFrom": "https://www.city.yonago.lg.jp/secure/50296/gaiyou.pdf"
+    }
+  ]
+}

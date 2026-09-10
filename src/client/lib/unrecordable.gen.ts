@@ -57,6 +57,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
       }
     ]
   },
+  "112259": {
+    "budget": [
+      {
+        "fyLabel": "平成24年度",
+        "reason": "「平成24年度予算の概要（主な事業）」（20ページ）も「一般会計予算書」（9ページ）も CCITT のスキャン画像で、pdftotext の可読文字が0・埋め込みフォントも0。",
+        "checkedOn": "2026-09-11"
+      }
+    ]
+  },
   "112275": {
     "budget": [
       {
@@ -72,6 +81,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
         "fyLabel": "令和4年度・令和3年度・平成31年度・平成30年度",
         "reason": "「一般会計予算書」も「予算概要」もスキャン画像で、pdftotext で金額が1つも出ない（先頭40ページで R4 予算書 0字・画像176／概要 16字、R3 予算書 335字（ノンブルのみ）／概要 0字、H31（令和元年度）予算書 1,910字・金額0／概要 0字、H30 予算書 338字／概要 0字）。",
         "checkedOn": "2026-09-09"
+      }
+    ]
+  },
+  "112372": {
+    "budget": [
+      {
+        "fyLabel": "平成23年度",
+        "reason": "「予算説明書総括」（12ページ）も「一般会計予算書」（9ページ）もスキャン画像で、pdftotext の可読文字が0・埋め込みフォントも0。同年度の「当初予算の概要」（7ページ）はテキスト層があるが本文が説明の文章だけで款別構成比較表を持たない（各ページを開いて確認）。",
+        "checkedOn": "2026-09-10"
       }
     ]
   },

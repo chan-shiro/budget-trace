@@ -1,0 +1,12 @@
+{
+  "sourceId": "yonago-yosan-gaiyou-r6",
+  "files": [
+    {
+      "filename": "yosan.pdf",
+      "sha256": "1785dbae5c63725a7ac2e9d8a294af6d42ec4e980d22a05afae9be2a31adac24",
+      "bytes": 1459246,
+      "fetchedAt": "2026-09-10T14:40:54.824Z",
+      "fetchedFrom": "https://www.city.yonago.lg.jp/secure/53886/yosan.pdf"
+    }
+  ]
+}
