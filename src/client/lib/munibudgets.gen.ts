@@ -95,6 +95,11 @@ export interface MuniBudget {
   sourceUrl: string;
   originUrl: string;
   sourceLocalUrl: string;
+  /**
+   * 歳入・歳出が別ファイルの分冊形式（revenueFile/expenditureFile）の歳出側のコピー（#257）。
+   * sourceLocalUrl は歳入側。1ファイルの資料は null（画面は sourceLocalUrl だけを使う）
+   */
+  expenditureEvidence: { localUrl: string; originUrl: string; sourceUrl: string } | null;
   pagesLabel: string;
   evidence: { title: string; type: string; url: string; localUrl: string; source: string; thumb: string }[];
 }

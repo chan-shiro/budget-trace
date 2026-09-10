@@ -1065,11 +1065,17 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
 
   // ドリル画面とダッシュボード末尾の出典が指す一次資料（自サーバー配信コピーのパス）。
   // href・文言・開く動作を同じ1つの URL から作る（別々に組むとリンク先と文言がズレる）
-  const drillEvidenceLocalUrl = isDecision
+  const dashEvidenceLocalUrl = isDecision
     ? decisionView!.primaryEvidence?.localUrl ?? ""
     : isBudget
       ? muniBudget!.sourceLocalUrl
       : budget.sourceLocalUrl;
+  // 歳入・歳出が別ファイルの分冊形式（日立 H26〜H24・台東・品川など）の budget 市は、ドリル画面の側に
+  // 合わせて歳出側のコピーを指す（#257）。ダッシュボードは両側を出すので sourceLocalUrl（歳入）＋
+  // 歳出の補助リンク（dashSourceExp*）にする
+  const drillExpEvidence =
+    isBudget && s.drillSide === "exp" && muniBudget!.expenditureEvidence ? muniBudget!.expenditureEvidence : null;
+  const drillEvidenceLocalUrl = drillExpEvidence ? drillExpEvidence.localUrl : dashEvidenceLocalUrl;
 
   const v: any = {
     isTop: screen === "top", isMuni: screen === "muni", isApp,
@@ -1788,11 +1794,30 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
     dashSourceLabel: isDecision
       ? `出典：${decisionView!.primaryEvidence?.title ?? "総務省 市町村別決算状況調"}（${decisionView!.refLabel}）`
       : isBudget
-        ? `出典：${muniBudget!.sourceTitle}`
+        ? `出典：${muniBudget!.sourceTitle}${muniBudget!.expenditureEvidence ? " 歳入" : ""}`
         : `出典：${budget.sourceTitle} ${budget.pagesLabel}`,
-    dashSourceUrl: evHref(drillEvidenceLocalUrl),
+    dashSourceUrl: evHref(dashEvidenceLocalUrl),
     // リンク文言（要許可の資料は「原本を開く」ではなく「発行元で開く」）
-    dashSourceAction: evAction(drillEvidenceLocalUrl),
+    dashSourceAction: evAction(dashEvidenceLocalUrl),
+    // 分冊形式の budget 市だけ、ダッシュボードに歳出側の補助リンクを出す（#257）
+    dashSourceExpUrl: isBudget && muniBudget!.expenditureEvidence ? evHref(muniBudget!.expenditureEvidence.localUrl) : "",
+    dashSourceExpAction: isBudget && muniBudget!.expenditureEvidence ? evAction(muniBudget!.expenditureEvidence.localUrl) : "",
+    dashSourceExpOpen:
+      isBudget && muniBudget!.expenditureEvidence
+        ? () => openViewer({
+            url: muniBudget!.expenditureEvidence!.localUrl, title: `${muniBudget!.sourceTitle}（歳出）`,
+            sub: `${muniBudget!.fyLabel} ・ 款別歳出`,
+            originUrl: muniBudget!.expenditureEvidence!.originUrl, archiveUrl: muniBudget!.expenditureEvidence!.sourceUrl,
+          })
+        : () => {},
+    // ドリル画面の EVIDENCE リンクの開く動作。分冊形式で歳出側に居るときだけ歳出のコピーを開く（#257）
+    drillSourceOpen: drillExpEvidence
+      ? () => openViewer({
+          url: drillExpEvidence.localUrl, title: `${muniBudget!.sourceTitle}（歳出）`,
+          sub: `${muniBudget!.fyLabel} ・ 款別歳出`,
+          originUrl: drillExpEvidence.originUrl, archiveUrl: drillExpEvidence.sourceUrl,
+        })
+      : null,
     dashSourceTitle: isDecision ? decisionView!.primaryEvidence?.title ?? "総務省 市町村別決算状況調" : isBudget ? muniBudget!.sourceTitle : budget.sourceTitle,
     dashSourceOpen: isDecision
       ? (decisionView!.primaryEvidence
