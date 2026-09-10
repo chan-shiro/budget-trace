@@ -2857,6 +2857,35 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       srcId: `tama-yosansho-${fy}`, muniCode: "132241", muniName: "多摩市", prefName: "東京都", isPref: false,
     })),
     { srcId: "tama-yosan-gaiyou-r3", muniCode: "132241", muniName: "多摩市", prefName: "東京都", isPref: false },
+    // ⚠ 三郷は「当初予算の概要」の款別構成比較表 13年＋H25/H24 は予算書の総括（概要に表が無い年度）。
+    //    発行元がトップページ以外へのリンクに連絡を求めているので noDeepLink（振替先は年度ページ）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28", "h27", "h26"] as const).map((fy) => ({
+      srcId: `misato-yosan-gaiyou-${fy}`, muniCode: "112372", muniName: "三郷市", prefName: "埼玉県", isPref: false,
+    })),
+    ...(["h25", "h24"] as const).map((fy) => ({
+      srcId: `misato-yosansho-soukatsu-${fy}`, muniCode: "112372", muniName: "三郷市", prefName: "埼玉県", isPref: false,
+    })),
+    // ⚠ 沖縄市は説明書の総括 7年。款9 は kanNameContinues + AcrossBlank が無いと
+    //    `国有提供施設等所在市町村` に切れる（Σ 差0 のまま）。R8・R5 は前年度が骨格予算で prevNote つき
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `okinawa-shi-yosansho-${fy}`, muniCode: "472115", muniName: "沖縄市", prefName: "沖縄県", isPref: false,
+    })),
+    // ⚠ 入間は年度で冊子が2系統（R7・R6 だけ予算書の総括・他は予算の概要）。
+    //    概要側は HeaderExtra が無いと款1 が `歳入市税`／`歳出議会費` になる（Σ 差0 のまま）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28", "h27", "h26"] as const).map((fy) => ({
+      srcId: `iruma-yosansho-${fy}`, muniCode: "112259", muniName: "入間市", prefName: "埼玉県", isPref: false,
+    })),
+    // ⚠ 戸田は「当初予算の概要」の款別集計表 11年（H29・H28 は WARP が唯一の写し）。
+    //    H31 だけ新設款の前年度セルが全角ダッシュで dashAsZero が要る（warning 止まりで derive まで流れる型）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28"] as const).map((fy) => ({
+      srcId: `toda-yosan-gaiyou-${fy}`, muniCode: "112241", muniName: "戸田市", prefName: "埼玉県", isPref: false,
+    })),
+    // ⚠ 米子は「予算の概要」の一般会計予算の内訳 17年（今のところ最長）。
+    //    ⚠⚠ **前年度基準が年度で変わる**（市長選の翌年度 R8・R4・H30・H26・H22 だけ6月補正後）。
+    //    歳入の左端に縦書きラベルがあり CropX 必須（境界 76 では H22 に効かない）。款番号は印字されない
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28", "h27", "h26", "h25", "h24", "h23", "h22"] as const).map((fy) => ({
+      srcId: `yonago-yosan-gaiyou-${fy}`, muniCode: "312029", muniName: "米子市", prefName: "鳥取県", isPref: false,
+    })),
     ...(["h30", "h29", "h28"] as const).map((fy) => ({
       srcId: `takaoka-kaikeibetsu-yosan-${fy}`, muniCode: "162027", muniName: "高岡市", prefName: "富山県", isPref: false,
     })),

@@ -1243,4 +1243,15 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     url: "https://www.city.musashino.lg.jp/shiseijoho/zaisei/zaiseijokyo/yosangaiyou/1010214.html",
     checkedOn: "2026-09-10", ref: "docs/data-sources.md §13-30",
   },
+  {
+    // 三郷市（112372）。R8〜H24（H23 を除く）は「当初予算の概要」の款別構成比較表と予算書の総括で収録済み（§13-31）。
+    // ⚠ 発行元に他の候補が無いことまで確かめた（概要は文章だけで表を持たない）。
+    code: "112372", name: "三郷市", dataset: "budget", fiscalYears: ["H23"],
+    categories: ["scanned-image"],
+    reason:
+      "「予算説明書総括」（12ページ）も「一般会計予算書」（9ページ）もスキャン画像で、pdftotext の可読文字が0・埋め込みフォントも0。" +
+      "同年度の「当初予算の概要」（7ページ）はテキスト層があるが本文が説明の文章だけで款別構成比較表を持たない（各ページを開いて確認）。",
+    url: "https://www.city.misato.lg.jp/soshiki/zaimu/zaisei/1/1542.html",
+    checkedOn: "2026-09-10", ref: "docs/data-sources.md §13-31",
+  },
 ];

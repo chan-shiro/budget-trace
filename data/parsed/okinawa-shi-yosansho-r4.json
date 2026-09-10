@@ -1,0 +1,413 @@
+{
+  "docType": "budget-book",
+  "sourceId": "okinawa-shi-yosansho-r4",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-09-10T14:31:48.912Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R4",
+  "account": "一般会計",
+  "revenueTotal": 75013000,
+  "expenditureTotal": 75013000,
+  "prevRevenueTotal": 78299000,
+  "prevExpenditureTotal": 78299000,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "市税",
+      "amount": 15640463,
+      "prevAmount": 15155741,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "地方譲与税",
+      "amount": 266344,
+      "prevAmount": 260862,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "利子割交付金",
+      "amount": 5789,
+      "prevAmount": 6436,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "配当割交付金",
+      "amount": 19920,
+      "prevAmount": 22040,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 18908,
+      "prevAmount": 19718,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "法人事業税交付金",
+      "amount": 158546,
+      "prevAmount": 85666,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "地方消費税交付金",
+      "amount": 2920261,
+      "prevAmount": 2501075,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "環境性能割交付金",
+      "amount": 21502,
+      "prevAmount": 20466,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "国有提供施設等所在市町村助成交付金",
+      "amount": 1387950,
+      "prevAmount": 1395580,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "地方特例交付金",
+      "amount": 55100,
+      "prevAmount": 155396,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "地方交付税",
+      "amount": 11379357,
+      "prevAmount": 10700864,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 18705,
+      "prevAmount": 19041,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "分担金及び負担金",
+      "amount": 398439,
+      "prevAmount": 377725,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "使用料及び手数料",
+      "amount": 785151,
+      "prevAmount": 777510,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "国庫支出金",
+      "amount": 25644425,
+      "prevAmount": 23889156,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "県支出金",
+      "amount": 7602320,
+      "prevAmount": 9207893,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 17,
+      "kanName": "財産収入",
+      "amount": 1301602,
+      "prevAmount": 1279162,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 18,
+      "kanName": "寄附金",
+      "amount": 127056,
+      "prevAmount": 62715,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 19,
+      "kanName": "繰入金",
+      "amount": 4263256,
+      "prevAmount": 4533234,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 20,
+      "kanName": "繰越金",
+      "amount": 1,
+      "prevAmount": 1,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 21,
+      "kanName": "諸収入",
+      "amount": 475367,
+      "prevAmount": 448238,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 22,
+      "kanName": "市債",
+      "amount": 2522538,
+      "prevAmount": 7380481,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 394002,
+      "prevAmount": 402825,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 6156523,
+      "prevAmount": 5973238,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "民生費",
+      "amount": 40939420,
+      "prevAmount": 40218490,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "衛生費",
+      "amount": 4690206,
+      "prevAmount": 4810869,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "労働費",
+      "amount": 91092,
+      "prevAmount": 93415,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "農林水産業費",
+      "amount": 344966,
+      "prevAmount": 475889,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "商工費",
+      "amount": 5082464,
+      "prevAmount": 5127390,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "土木費",
+      "amount": 5682298,
+      "prevAmount": 5657331,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "消防費",
+      "amount": 1148949,
+      "prevAmount": 1185566,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "教育費",
+      "amount": 6891548,
+      "prevAmount": 10734203,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 11,
+      "kanName": "災害復旧費",
+      "amount": 4,
+      "prevAmount": 4,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 12,
+      "kanName": "公債費",
+      "amount": 3431527,
+      "prevAmount": 3459779,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 13,
+      "kanName": "諸支出金",
+      "amount": 1,
+      "prevAmount": 1,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 14,
+      "kanName": "予備費",
+      "amount": 160000,
+      "prevAmount": 160000,
+      "locator": {
+        "file": "r4okinawacityippannkaikeiyosansetumeisyo.pdf",
+        "page": 6
+      }
+    }
+  ]
+}

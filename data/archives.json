@@ -15052,8 +15052,8 @@
       "checkedAt": "2026-09-10T13:03:41.639Z",
       "sha256Match": false,
       "waybackBytes": 1048576,
-      "waybackTruncated": true,
-      "rawSha256": "36ee1bf2e61f5114ac7b01f445dff712d25a6fda18f4ac987f1b3d38d137026e"
+      "rawSha256": "36ee1bf2e61f5114ac7b01f445dff712d25a6fda18f4ac987f1b3d38d137026e",
+      "waybackTruncated": true
     },
     {
       "sourceId": "musashino-yosan-sankou-h23",

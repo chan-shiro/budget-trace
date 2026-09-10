@@ -75,6 +75,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
       }
     ]
   },
+  "112372": {
+    "budget": [
+      {
+        "fyLabel": "平成23年度",
+        "reason": "「予算説明書総括」（12ページ）も「一般会計予算書」（9ページ）もスキャン画像で、pdftotext の可読文字が0・埋め込みフォントも0。同年度の「当初予算の概要」（7ページ）はテキスト層があるが本文が説明の文章だけで款別構成比較表を持たない（各ページを開いて確認）。",
+        "checkedOn": "2026-09-10"
+      }
+    ]
+  },
   "121002": {
     "report": [
       {

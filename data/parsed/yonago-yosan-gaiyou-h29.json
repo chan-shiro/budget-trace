@@ -1,0 +1,391 @@
+{
+  "docType": "budget-book",
+  "sourceId": "yonago-yosan-gaiyou-h29",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-09-10T14:41:05.471Z",
+  "unit": "thousandYen",
+  "fiscalYear": "H29",
+  "account": "一般会計",
+  "revenueTotal": 59215000,
+  "expenditureTotal": 59215000,
+  "prevRevenueTotal": 61230000,
+  "prevExpenditureTotal": 61230000,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "市税",
+      "amount": 18391886,
+      "prevAmount": 18325062,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 10
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "分担金及び負担金",
+      "amount": 567290,
+      "prevAmount": 617947,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 10
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "使用料及び手数料",
+      "amount": 2191575,
+      "prevAmount": 2262156,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 10
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "財産収入",
+      "amount": 360071,
+      "prevAmount": 387692,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 10
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "寄附金",
+      "amount": 501373,
+      "prevAmount": 660006,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 10
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "繰入金",
+      "amount": 361800,
+      "prevAmount": 634625,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 10
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "繰越金",
+      "amount": 1,
+      "prevAmount": 1,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 10
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "諸収入",
+      "amount": 7757494,
+      "prevAmount": 7400465,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 10
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "地方譲与税",
+      "amount": 379604,
+      "prevAmount": 370587,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 10
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "利子割交付金",
+      "amount": 32567,
+      "prevAmount": 52886,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 10
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "配当割交付金",
+      "amount": 91612,
+      "prevAmount": 92649,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 10
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 76929,
+      "prevAmount": 86411,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 10
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "地方消費税交付金",
+      "amount": 2733298,
+      "prevAmount": 2740843,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 10
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "ゴルフ場利用税交付金",
+      "amount": 5966,
+      "prevAmount": 6662,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 10
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "自動車取得税交付金",
+      "amount": 69839,
+      "prevAmount": 66409,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 10
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "国有提供施設等所在市町村助成交付金",
+      "amount": 71772,
+      "prevAmount": 63536,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 10
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "地方特例交付金",
+      "amount": 81651,
+      "prevAmount": 71214,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 10
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "地方交付税",
+      "amount": 8953985,
+      "prevAmount": 8977253,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 10
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 22555,
+      "prevAmount": 20720,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 10
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "国庫支出金",
+      "amount": 8790065,
+      "prevAmount": 9439126,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 10
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "県支出金",
+      "amount": 4625511,
+      "prevAmount": 5086997,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 10
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "市債",
+      "amount": 3148156,
+      "prevAmount": 3866753,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 10
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "議会費",
+      "amount": 335081,
+      "prevAmount": 340378,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "総務費",
+      "amount": 8241255,
+      "prevAmount": 8547113,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "民生費",
+      "amount": 24639472,
+      "prevAmount": 24627475,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "衛生費",
+      "amount": 3468231,
+      "prevAmount": 3325926,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "労働費",
+      "amount": 252604,
+      "prevAmount": 256886,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "農林水産業費",
+      "amount": 1022181,
+      "prevAmount": 1108723,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "商工費",
+      "amount": 7126788,
+      "prevAmount": 7387313,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "土木費",
+      "amount": 4552599,
+      "prevAmount": 5475783,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "消防費",
+      "amount": 91238,
+      "prevAmount": 150505,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "教育費",
+      "amount": 3397130,
+      "prevAmount": 3625730,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "公債費",
+      "amount": 6058421,
+      "prevAmount": 6354168,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": null,
+      "kanName": "予備費",
+      "amount": 30000,
+      "prevAmount": 30000,
+      "locator": {
+        "file": "H29draftbudgetoutline20170221.pdf",
+        "page": 12
+      }
+    }
+  ]
+}
