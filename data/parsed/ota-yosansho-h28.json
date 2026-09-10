@@ -3,7 +3,7 @@
   "sourceId": "ota-yosansho-h28",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-08-23T06:27:19.495Z",
+  "parsedAt": "2026-09-10T12:02:38.546Z",
   "unit": "thousandYen",
   "fiscalYear": "H28",
   "account": "一般会計",
@@ -12,6 +12,7 @@
   "prevRevenueTotal": 250121847,
   "prevExpenditureTotal": 250121847,
   "prevBasis": "当初",
+  "prevNote": "前年度（平成27年度）の当初予算は骨格予算（原典「平成28年度 大田区予算（案）概要」p.9 の【参考】に「平成27年度一般会計当初予算は骨格予算であり、区政の継続性を重視した上で留保した政策的事業予算等は平成27年度第1次補正予算で計上している」と明記）。ここでの前年度額はその骨格予算の当初額（2,501億円）で、原典は第1次補正後（2,529億円）との対比（+1.8%）も併記している。",
   "facts": [
     {
       "side": "revenue",

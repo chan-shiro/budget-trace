@@ -3,7 +3,7 @@
   "sourceId": "itami-yosangaiyou-h30",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-09-02T06:59:56.581Z",
+  "parsedAt": "2026-09-10T14:59:13.207Z",
   "unit": "thousandYen",
   "fiscalYear": "H30",
   "account": "一般会計",
@@ -12,6 +12,7 @@
   "prevRevenueTotal": 67750000,
   "prevExpenditureTotal": 67750000,
   "prevBasis": "当初",
+  "prevNote": "前年度（平成29年度）の当初予算は、平成29年4月の市長選挙を控えた骨格予算として編成されている（発行元の別資料「平成29年度 施政方針」に「その財源につきましては、骨格的予算として編成しました平成29年度当初予算で計上した予備費に加え、市長選挙が無投票となったことで生じた財源や基金等を活用し編成しました」と明記）。ここでの前年度額はその骨格予算の当初額で、選挙後の6月補正（3億7,672万4千円）を加えた後の額ではない。",
   "facts": [
     {
       "side": "revenue",

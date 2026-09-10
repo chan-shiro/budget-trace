@@ -3,7 +3,7 @@
   "sourceId": "hachioji-yosan-gaiyou-r7",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-08-23T06:27:43.124Z",
+  "parsedAt": "2026-09-10T14:33:51.250Z",
   "unit": "thousandYen",
   "fiscalYear": "R7",
   "account": "一般会計",
@@ -12,6 +12,7 @@
   "prevRevenueTotal": 227200000,
   "prevExpenditureTotal": 227200000,
   "prevBasis": "当初",
+  "prevNote": "前年度（令和6年度）の当初予算は、令和6年1月の市長選挙を控えた骨格予算として編成されている（前年度の原典「令和6年度 八王子市予算の概要 総括」の「予算編成の考え方」に「令和6年度（2024年度）当初予算はいわゆる「骨格予算」とする。」と明記）。ここでの前年度額はその骨格予算の当初額（227,200,000千円）で、選挙後の6月補正（9,099,000千円）を加えた 236,299,000千円 ではない。",
   "facts": [
     {
       "side": "revenue",
