@@ -2779,8 +2779,27 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     const meta = readRawMeta(b.srcId);
     if (!meta) throw new Error(`${b.srcId}: raw-meta がありません`);
     const src = findSource(b.srcId);
-    const file = meta.files[0]!;
+    // 歳入・歳出が別ファイルの分冊形式（`revenueFile`/`expenditureFile`・台東 R2/H31/H27・品川 R7・
+    // 日立 H26〜H24 など）は**ファイルを側で引く**（#257）。以前は `meta.files[0]`（＝歳入 PDF）を
+    // 全款のエビデンスにしていたので、歳出の款を開いても歳入 PDF が出ていた。parserOptions が指す
+    // ファイルが raw に無ければ黙って先頭に倒さず止める
+    const optFiles = (src.parserOptions ?? {}) as { kanFile?: string; revenueFile?: string; expenditureFile?: string };
+    const fileNamed = (name: string) => {
+      const f = meta.files.find((x) => x.filename === name);
+      if (!f) throw new Error(`${b.srcId}: parserOptions が指す ${name} が raw-meta にありません`);
+      return f;
+    };
+    const file = optFiles.kanFile
+      ? fileNamed(optFiles.kanFile)
+      : optFiles.revenueFile
+        ? fileNamed(optFiles.revenueFile)
+        : meta.files[0]!;
+    const expFile = optFiles.expenditureFile ? fileNamed(optFiles.expenditureFile) : null;
     const url = src.urls?.[0] ?? src.landingPage ?? "";
+    // 歳出側の発行元 URL は registry の urls からファイル名で引く（無ければ取得来歴の fetchedFrom）
+    const expUrl = expFile
+      ? (src.urls?.find((u) => u.endsWith(`/${expFile.filename}`)) ?? expFile.fetchedFrom ?? "")
+      : "";
     // 都道府県エンティティの人口は県内市町村（団体コード先頭2桁一致）の住基人口の合計
     const prefCode = b.muniCode.slice(0, 2);
     const popRec = b.isPref
@@ -2932,16 +2951,36 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       sourceUrl: wayback(url),
       originUrl: url,
       sourceLocalUrl: `/sources/${b.srcId}/${file.filename}`,
+      // 分冊形式（歳入・歳出が別ファイル）のときだけ歳出側のコピー（#257）。1ファイルの資料は null
+      expenditureEvidence: expFile
+        ? {
+            localUrl: `/sources/${b.srcId}/${expFile.filename}`,
+            originUrl: expUrl,
+            sourceUrl: wayback(expUrl),
+          }
+        : null,
       pagesLabel: "款別歳入歳出",
       evidence: [
         {
-          title: src.title,
+          title: expFile ? `${src.title}（歳入）` : src.title,
           type: "PDF",
           url: wayback(url),
           localUrl: `/sources/${b.srcId}/${file.filename}`,
           source: url ? new URL(url).hostname : "",
           thumb: `${file.filename} ・ sha256 ${file.sha256.slice(0, 16)}… ・ ${file.fetchedAt.slice(0, 10)} 取得`,
         },
+        ...(expFile
+          ? [
+              {
+                title: `${src.title}（歳出）`,
+                type: "PDF",
+                url: wayback(expUrl),
+                localUrl: `/sources/${b.srcId}/${expFile.filename}`,
+                source: expUrl ? new URL(expUrl).hostname : "",
+                thumb: `${expFile.filename} ・ sha256 ${expFile.sha256.slice(0, 16)}… ・ ${expFile.fetchedAt.slice(0, 10)} 取得`,
+              },
+            ]
+          : []),
       ],
     };
   });
@@ -3055,6 +3094,11 @@ export interface MuniBudget {
   sourceUrl: string;
   originUrl: string;
   sourceLocalUrl: string;
+  /**
+   * 歳入・歳出が別ファイルの分冊形式（revenueFile/expenditureFile）の歳出側のコピー（#257）。
+   * sourceLocalUrl は歳入側。1ファイルの資料は null（画面は sourceLocalUrl だけを使う）
+   */
+  expenditureEvidence: { localUrl: string; originUrl: string; sourceUrl: string } | null;
   pagesLabel: string;
   evidence: { title: string; type: string; url: string; localUrl: string; source: string; thumb: string }[];
 }
