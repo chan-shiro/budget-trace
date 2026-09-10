@@ -456,7 +456,7 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
   "242047": {
     "budget": [
       {
-        "fyLabel": "令和1年度・平成29年度",
+        "fyLabel": "平成31年度・平成29年度",
         "reason": "「当初予算説明資料」が全ページ 600dpi の CCITT 画像で、pdftotext の抽出が資料全体で約1,100字（平成31年度・158p＝1,135字／平成29年度・166p＝1,199字。自分で実測）。平成29年度は「一般会計当初予算」（予算書）にテキスト層があるが、事項別明細書総括が罫線文字（┃│）で組まれた表で款行が1件も抽出できない。",
         "checkedOn": "2026-09-10"
       },
