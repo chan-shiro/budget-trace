@@ -1928,6 +1928,26 @@ GTM は「既定＝granted」として**一度発火してしまう**。HTML 内
   ⚠ **0件は「無かった」ではなく「道具が壊れている」かもしれない** — 0件が返ったら必ず
   **当たるはずの語**（`市` など）で1回試して道具の生死を確かめること。
 
+- **⚠⚠ 魚拓が通らないときは4つのエンドポイントを切り分ける**（2026-09-11 に判明）。
+  `pipeline:archive` の「✗ 未確認（次回実行で再試行）」は**理由を区別しない**ので、そのまま再試行すると
+  何時間でも空振りする。**IA の状態は次の4本を叩けば1回で分かる**:
+
+```bash
+curl -s -o /dev/null -w "save:         %{http_code}\n" "https://web.archive.org/save/https://example.com"
+curl -s -o /dev/null -w "availability: %{http_code}\n" "http://archive.org/wayback/available?url=example.com"
+curl -s -o /dev/null -w "cdx:          %{http_code}\n" "http://web.archive.org/cdx/search/cdx?url=example.com&limit=1"
+curl -s -o /dev/null -w "replay:       %{http_code}\n" "https://web.archive.org/web/2024/https://example.com"
+```
+
+  読み方:
+  - **save だけ 520・他は 200/302** … **SPN（新規保存）だけが壊れている**。読み取りは生きているので
+    照合や CDX 調査は進む。**待つしかない**（2026-09-11 の第31巡はこれで63ソースが0件のまま持ち越した）
+  - **全部 429** … こちら側の叩きすぎ。**時間を置く**（同日夜にこれも踏んだ）
+  - **全部が "Temporarily Offline" の HTML** … IA 全体の停止（第29巡で踏んだ）
+  - **save は通るのに特定の発行元だけ未確認が続く** … **発行元がクローラを弾いている**疑い。
+    その URL に UA を3通り当てる（[[publisher-may-block-wayback]] の東村山型）
+  ⚠ **「未確認」を遅延と決めつけない** — 上の4つは対処がまったく違う。
+
 - **⚠ 骨格予算の `prevNote` は棚卸しが要る**（2026-09-10・第30巡のレビュー）。**前年度側が骨格なら
   `prevNote` に書く**（弘前 §13-25 で確立）が、第30巡で朝霞 R8・今治 R4・上田 R5 の3件が落ちていた。
   収録済み raw を `骨格予算` で機械走査すると十数団体（調布・下関・帯広・府中・佐世保・出雲・佐倉・
