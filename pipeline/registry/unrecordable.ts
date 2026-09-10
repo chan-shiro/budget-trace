@@ -1254,4 +1254,15 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     url: "https://www.city.misato.lg.jp/soshiki/zaimu/zaisei/1/1542.html",
     checkedOn: "2026-09-10", ref: "docs/data-sources.md §13-31",
   },
+  {
+    // 入間市（112259）。R8〜H26 の13年度は「予算の概要」と予算書の総括で収録済み（§13-31）。
+    // ⚠ H25 は別の理由（GARBLE_CHAR_MAP 外の化け字）で、**新しい復号マップを作れば開く見込みがある**ので記録しない。
+    code: "112259", name: "入間市", dataset: "budget", fiscalYears: ["H24"],
+    categories: ["scanned-image"],
+    reason:
+      "「平成24年度予算の概要（主な事業）」（20ページ）も「一般会計予算書」（9ページ）も CCITT のスキャン画像で、" +
+      "pdftotext の可読文字が0・埋め込みフォントも0。",
+    url: "https://www.city.iruma.saitama.jp/soshiki/zaiseka/gyozaisei/yosan/h24/tosyo/index.html",
+    checkedOn: "2026-09-11", ref: "docs/data-sources.md §13-31",
+  },
 ];

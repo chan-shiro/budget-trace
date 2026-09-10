@@ -57,6 +57,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
       }
     ]
   },
+  "112259": {
+    "budget": [
+      {
+        "fyLabel": "平成24年度",
+        "reason": "「平成24年度予算の概要（主な事業）」（20ページ）も「一般会計予算書」（9ページ）も CCITT のスキャン画像で、pdftotext の可読文字が0・埋め込みフォントも0。",
+        "checkedOn": "2026-09-11"
+      }
+    ]
+  },
   "112275": {
     "budget": [
       {
