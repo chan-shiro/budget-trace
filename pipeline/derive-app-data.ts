@@ -2807,6 +2807,30 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r7", "r6", "r5", "h31", "h30", "h29", "h28"] as const).map((fy) => ({
       srcId: `kawanishi-yosan-setsumeisho-${fy}`, muniCode: "282171", muniName: "川西市", prefName: "兵庫県", isPref: false,
     })),
+    // ⚠ 上田は「当初予算の概要」の款別 7年。円グラフの凡例が款名に食い込むので CropX 必須（歳出は Σ 差0 のまま壊れる型）。R8・R4 は骨格予算（当年度側）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `ueda-yosan-gaiyou-${fy}`, muniCode: "202037", muniName: "上田市", prefName: "長野県", isPref: false,
+    })),
+    // ⚠ 東村山は予算書の総括 5年（R6〜R4 は歳入だけ見開き＝revenueSpread）＋R3 は予算概要（予算書がスキャン）。HeaderExtra は側で分ける
+    ...(["r8", "r7", "r6", "r5", "r4"] as const).map((fy) => ({
+      srcId: `higashimurayama-yosansho-${fy}`, muniCode: "132136", muniName: "東村山市", prefName: "東京都", isPref: false,
+    })),
+    { srcId: "higashimurayama-yosan-gaiyou-r3", muniCode: "132136", muniName: "東村山市", prefName: "東京都", isPref: false },
+    // ⚠ 久喜は説明書の総括 13年（R4〜H25 は WARP 起点・R2 は `廃` 接頭の廃止款）＋H30 は予算の概要（明細書が ASCII 域の化け）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h29", "h28", "h27", "h26", "h25"] as const).map((fy) => ({
+      srcId: `kuki-yosansho-${fy}`, muniCode: "112321", muniName: "久喜市", prefName: "埼玉県", isPref: false,
+    })),
+    { srcId: "kuki-yosangaiyou-h30", muniCode: "112321", muniName: "久喜市", prefName: "埼玉県", isPref: false },
+    // ⚠ 小牧は「当初予算の概要」の款別表 10年（H29 は WARP 起点）。R8 だけ歳入歳出が同一ページで CropX。
+    //    款「国有提供施設等所在市町村助成交付金」が3行に割れるので kanNameContinues 必須（款番号が年度で動く）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29"] as const).map((fy) => ({
+      srcId: `komaki-yosansho-${fy}`, muniCode: "232190", muniName: "小牧市", prefName: "愛知県", isPref: false,
+    })),
+    // ⚠ 狭山は予算説明書冒頭の「歳入歳出予算比較表」13年（R2〜H26 は WARP 起点・H26 だけ別ファイルの p.14/15）。
+    //    同じ冊子の事項別明細書 総括を採ると歳出の款1 が財源内訳ヘッダと連結する（Σ 差0 のまま壊れる型）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28", "h27", "h26"] as const).map((fy) => ({
+      srcId: `sayama-yosan-setsumeisho-${fy}`, muniCode: "112151", muniName: "狭山市", prefName: "埼玉県", isPref: false,
+    })),
     ...(["h30", "h29", "h28"] as const).map((fy) => ({
       srcId: `takaoka-kaikeibetsu-yosan-${fy}`, muniCode: "162027", muniName: "高岡市", prefName: "富山県", isPref: false,
     })),

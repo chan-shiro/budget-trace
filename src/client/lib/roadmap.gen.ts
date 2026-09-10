@@ -13,15 +13,15 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 223,
+  "budgetCount": 228,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 1592,
-  "fileCount": 2794,
-  "archivedCount": 1454,
+  "sourceCount": 1642,
+  "fileCount": 2844,
+  "archivedCount": 1498,
   "licenseOpen": 102,
-  "licensePermission": 1307,
-  "licenseUnverified": 183,
+  "licensePermission": 1347,
+  "licenseUnverified": 193,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
   "kofuBudgetYears": 7,
@@ -189,6 +189,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H23〜R8（14年度）"
     },
     {
+      "name": "久喜市",
+      "code": "112321",
+      "years": 14,
+      "range": "H25〜R8（14年度）"
+    },
+    {
       "name": "北区",
       "code": "131172",
       "years": 14,
@@ -211,6 +217,12 @@ export const ROADMAP_PROGRESS = {
       "code": "102024",
       "years": 13,
       "range": "H21〜R8（13年度）"
+    },
+    {
+      "name": "狭山市",
+      "code": "112151",
+      "years": 13,
+      "range": "H26〜R8（13年度）"
     },
     {
       "name": "三鷹市",
@@ -371,6 +383,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "西尾市",
       "code": "232131",
+      "years": 10,
+      "range": "H29〜R8（10年度）"
+    },
+    {
+      "name": "小牧市",
+      "code": "232190",
       "years": 10,
       "range": "H29〜R8（10年度）"
     },
@@ -633,6 +651,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "上田市",
+      "code": "202037",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "名古屋市",
       "code": "231002",
       "years": 7,
@@ -745,6 +769,12 @@ export const ROADMAP_PROGRESS = {
       "code": "132110",
       "years": 6,
       "range": "R1〜R8（6年度）"
+    },
+    {
+      "name": "東村山市",
+      "code": "132136",
+      "years": 6,
+      "range": "R3〜R8（6年度）"
     },
     {
       "name": "横浜市",
