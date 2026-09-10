@@ -11197,6 +11197,17 @@
       "rawSha256": "32914a1d2e34155a984e6df036e3b9e9c85d04225f2e0c67d8db88f278f11e93"
     },
     {
+      "sourceId": "kushiro-yosan-gaiyou-r8",
+      "url": "https://www.city.kushiro.lg.jp/_res/projects/default_project/_page_/001/018/509/r8yosanangaiyou.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260910034310/https://www.city.kushiro.lg.jp/_res/projects/default_project/_page_/001/018/509/r8yosanangaiyou.pdf",
+      "waybackTimestamp": "20260910034310",
+      "checkedAt": "2026-09-10T03:43:58.047Z",
+      "sha256Match": true,
+      "waybackBytes": 1172866,
+      "rawSha256": "2fa2baf3715c22d9ffe032f51ca0445f15d3db8fc4420bb60ffe0ce5e3d5aa9f"
+    },
+    {
       "sourceId": "kyoto-yosansho-r2",
       "url": "https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000259/259833/01ippan.pdf",
       "kind": "file",
@@ -12282,9 +12293,20 @@
       "sourceId": "matsusaka-yosan-setsumei-r6",
       "url": "https://www.city.matsusaka.mie.jp/site/zaisei/r06-yosan.html",
       "kind": "landing",
-      "waybackUrl": "https://web.archive.org/web/20260516025457/https://www.city.matsusaka.mie.jp/site/zaisei/r06-yosan.html",
-      "waybackTimestamp": "20260516025457",
-      "checkedAt": "2026-09-10T02:42:01.557Z"
+      "waybackUrl": "https://web.archive.org/web/20260910031259/https://www.city.matsusaka.mie.jp/site/zaisei/r06-yosan.html",
+      "waybackTimestamp": "20260910031259",
+      "checkedAt": "2026-09-10T03:13:32.254Z"
+    },
+    {
+      "sourceId": "matsusaka-yosan-setsumei-r6",
+      "url": "https://www.city.matsusaka.mie.jp/uploaded/attachment/84088.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260910031206/https://www.city.matsusaka.mie.jp/uploaded/attachment/84088.pdf",
+      "waybackTimestamp": "20260910031206",
+      "checkedAt": "2026-09-10T03:12:32.543Z",
+      "sha256Match": true,
+      "waybackBytes": 1064971,
+      "rawSha256": "623e1027b1d2a35260cee64ad435d5ce0cad0b7942a74153b68bb7a1ef0b618e"
     },
     {
       "sourceId": "matsusaka-yosan-setsumei-r7",
@@ -29500,10 +29522,18 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260910014705/https://www.city.takaoka.toyama.jp/material/files/group/10/r2ippan.pdf",
       "waybackTimestamp": "20260910014705",
-      "checkedAt": "2026-09-10T02:39:48.595Z",
+      "checkedAt": "2026-09-10T03:15:47.015Z",
       "sha256Match": true,
       "waybackBytes": 4363083,
       "rawSha256": "96ded198af37b134453264a1f02671d1497790803897894934038f9154302e3d"
+    },
+    {
+      "sourceId": "takaoka-yosansho-r2",
+      "url": "https://www.city.takaoka.toyama.jp/soshiki/zaiseika/2/1/2/3/1/2381.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260910024142/https://www.city.takaoka.toyama.jp/soshiki/zaiseika/2/1/2/3/1/2381.html",
+      "waybackTimestamp": "20260910024142",
+      "checkedAt": "2026-09-10T03:16:06.338Z"
     },
     {
       "sourceId": "takaoka-yosansho-r4",

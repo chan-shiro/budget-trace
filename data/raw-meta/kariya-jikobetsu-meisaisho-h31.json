@@ -1,0 +1,19 @@
+{
+  "sourceId": "kariya-jikobetsu-meisaisho-h31",
+  "files": [
+    {
+      "filename": "jikoubetumeisaisyoh31.pdf",
+      "sha256": "5acead47890d82c866c86f16e935ddb794ba5663c3f545aa5e24c2eed7cc6847",
+      "bytes": 75396,
+      "fetchedAt": "2026-09-10T03:35:33.163Z",
+      "fetchedFrom": "https://warp.ndl.go.jp/20190814/20190812132449/https://www.city.kariya.lg.jp/shisei/zaiseishisai/kariyanozaisei.files/jikoubetumeisaisyoh31.pdf"
+    },
+    {
+      "filename": "jikoubetumeisaisyosaisyutuh31.pdf",
+      "sha256": "3cc8bde1e8b3bad5e8072044b288e4bedb88d1d488bc1975f5f1c989ce52ce59",
+      "bytes": 62908,
+      "fetchedAt": "2026-09-10T03:35:33.607Z",
+      "fetchedFrom": "https://warp.ndl.go.jp/20190814/20190812132449/https://www.city.kariya.lg.jp/shisei/zaiseishisai/kariyanozaisei.files/jikoubetumeisaisyosaisyutuh31.pdf"
+    }
+  ]
+}
