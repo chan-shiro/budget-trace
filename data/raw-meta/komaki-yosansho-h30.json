@@ -1,0 +1,12 @@
+{
+  "sourceId": "komaki-yosansho-h30",
+  "files": [
+    {
+      "filename": "H30gaiyo.pdf",
+      "sha256": "9d7149e4a0f1b426f50e8433dfe02ed4008df07da66460faff4fd4c73c9f139d",
+      "bytes": 308652,
+      "fetchedAt": "2026-09-10T05:47:02.848Z",
+      "fetchedFrom": "https://www.city.komaki.aichi.jp/material/files/group/8/H30gaiyo.pdf"
+    }
+  ]
+}

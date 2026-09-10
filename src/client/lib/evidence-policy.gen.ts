@@ -14538,5 +14538,245 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.kawanishi.hyogo.jp/_res/projects/default_project/_page_/001/008/311/H28yosansetsumeisho.pdf",
     "license": "本ホームページで掲載している情報（文章・画像などの全てのコンテンツデータ）の著作権は、原則として川西市に帰属します（一部の画像等は原著作者が所有しています）。著作権法上認められている場合を除き、権利者の許可なく複製・転用・販売・改変といった二次利用をすることを固く禁じます。",
     "target": "file"
+  },
+  "/sources/ueda-yosan-gaiyou-r8/79509.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ueda.nagano.jp/uploaded/attachment/79509.pdf",
+    "license": "上田市ホームページの掲載情報は、日本国の著作権法及び国際条約による著作権保護の対象となっています。当ホームページの内容及びこれらの配置・編集などについて私的使用又は引用等著作権法上、認められた行為を除き、著作権は上田市又はその作成者に帰属しておりますので、これらを無断で、転載、複製、出版、放送、上映等を行うことはできません。また、引用を行う場合は、適宜の方法により、必ず出所を明示してください。なお、上田市ホームページの内容の全部または一部について、上田市に無断で改変を行うことはできません。",
+    "target": "file"
+  },
+  "/sources/ueda-yosan-gaiyou-r7/67291.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ueda.nagano.jp/uploaded/attachment/67291.pdf",
+    "license": "上田市ホームページの掲載情報は、日本国の著作権法及び国際条約による著作権保護の対象となっています。当ホームページの内容及びこれらの配置・編集などについて私的使用又は引用等著作権法上、認められた行為を除き、著作権は上田市又はその作成者に帰属しておりますので、これらを無断で、転載、複製、出版、放送、上映等を行うことはできません。また、引用を行う場合は、適宜の方法により、必ず出所を明示してください。なお、上田市ホームページの内容の全部または一部について、上田市に無断で改変を行うことはできません。",
+    "target": "file"
+  },
+  "/sources/ueda-yosan-gaiyou-r6/56914.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ueda.nagano.jp/uploaded/attachment/56914.pdf",
+    "license": "上田市ホームページの掲載情報は、日本国の著作権法及び国際条約による著作権保護の対象となっています。当ホームページの内容及びこれらの配置・編集などについて私的使用又は引用等著作権法上、認められた行為を除き、著作権は上田市又はその作成者に帰属しておりますので、これらを無断で、転載、複製、出版、放送、上映等を行うことはできません。また、引用を行う場合は、適宜の方法により、必ず出所を明示してください。なお、上田市ホームページの内容の全部または一部について、上田市に無断で改変を行うことはできません。",
+    "target": "file"
+  },
+  "/sources/ueda-yosan-gaiyou-r5/47388.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ueda.nagano.jp/uploaded/attachment/47388.pdf",
+    "license": "上田市ホームページの掲載情報は、日本国の著作権法及び国際条約による著作権保護の対象となっています。当ホームページの内容及びこれらの配置・編集などについて私的使用又は引用等著作権法上、認められた行為を除き、著作権は上田市又はその作成者に帰属しておりますので、これらを無断で、転載、複製、出版、放送、上映等を行うことはできません。また、引用を行う場合は、適宜の方法により、必ず出所を明示してください。なお、上田市ホームページの内容の全部または一部について、上田市に無断で改変を行うことはできません。",
+    "target": "file"
+  },
+  "/sources/ueda-yosan-gaiyou-r4/38851.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ueda.nagano.jp/uploaded/attachment/38851.pdf",
+    "license": "上田市ホームページの掲載情報は、日本国の著作権法及び国際条約による著作権保護の対象となっています。当ホームページの内容及びこれらの配置・編集などについて私的使用又は引用等著作権法上、認められた行為を除き、著作権は上田市又はその作成者に帰属しておりますので、これらを無断で、転載、複製、出版、放送、上映等を行うことはできません。また、引用を行う場合は、適宜の方法により、必ず出所を明示してください。なお、上田市ホームページの内容の全部または一部について、上田市に無断で改変を行うことはできません。",
+    "target": "file"
+  },
+  "/sources/ueda-yosan-gaiyou-r3/28777.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ueda.nagano.jp/uploaded/attachment/28777.pdf",
+    "license": "上田市ホームページの掲載情報は、日本国の著作権法及び国際条約による著作権保護の対象となっています。当ホームページの内容及びこれらの配置・編集などについて私的使用又は引用等著作権法上、認められた行為を除き、著作権は上田市又はその作成者に帰属しておりますので、これらを無断で、転載、複製、出版、放送、上映等を行うことはできません。また、引用を行う場合は、適宜の方法により、必ず出所を明示してください。なお、上田市ホームページの内容の全部または一部について、上田市に無断で改変を行うことはできません。",
+    "target": "file"
+  },
+  "/sources/ueda-yosan-gaiyou-r2/20223.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ueda.nagano.jp/uploaded/attachment/20223.pdf",
+    "license": "上田市ホームページの掲載情報は、日本国の著作権法及び国際条約による著作権保護の対象となっています。当ホームページの内容及びこれらの配置・編集などについて私的使用又は引用等著作権法上、認められた行為を除き、著作権は上田市又はその作成者に帰属しておりますので、これらを無断で、転載、複製、出版、放送、上映等を行うことはできません。また、引用を行う場合は、適宜の方法により、必ず出所を明示してください。なお、上田市ホームページの内容の全部または一部について、上田市に無断で改変を行うことはできません。",
+    "target": "file"
+  },
+  "/sources/higashimurayama-yosansho-r8/8yosan_an.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.higashimurayama.tokyo.jp/shisei/gyozaisei/gyozaisei/yosan/files/8yosan_an.pdf",
+    "license": "東村山市ホームページ上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として東村山市に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、東村山市の許可なく本ホームページ上の文書・画像等の各ファイルの無断使用・転載・引用は禁じます。",
+    "target": "file"
+  },
+  "/sources/higashimurayama-yosansho-r7/1_7yosan_jikobetsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.higashimurayama.tokyo.jp/shisei/gyozaisei/gyozaisei/yosan/files/1_7yosan_jikobetsu.pdf",
+    "license": "東村山市ホームページ上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として東村山市に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、東村山市の許可なく本ホームページ上の文書・画像等の各ファイルの無断使用・転載・引用は禁じます。",
+    "target": "file"
+  },
+  "/sources/higashimurayama-yosansho-r6/1_6yosan_jikobetsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.higashimurayama.tokyo.jp/shisei/gyozaisei/gyozaisei/yosan/files/1_6yosan_jikobetsu.pdf",
+    "license": "東村山市ホームページ上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として東村山市に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、東村山市の許可なく本ホームページ上の文書・画像等の各ファイルの無断使用・転載・引用は禁じます。",
+    "target": "file"
+  },
+  "/sources/higashimurayama-yosansho-r5/yosan_r5_1_5yosan_jikobetsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.higashimurayama.tokyo.jp/shisei/gyozaisei/gyozaisei/yosan/files/yosan_r5_1_5yosan_jikobetsu.pdf",
+    "license": "東村山市ホームページ上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として東村山市に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、東村山市の許可なく本ホームページ上の文書・画像等の各ファイルの無断使用・転載・引用は禁じます。",
+    "target": "file"
+  },
+  "/sources/higashimurayama-yosansho-r4/yosan_r4_1_4yosan_jikobetsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.higashimurayama.tokyo.jp/shisei/gyozaisei/gyozaisei/yosan/files/yosan_r4_1_4yosan_jikobetsu.pdf",
+    "license": "東村山市ホームページ上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として東村山市に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、東村山市の許可なく本ホームページ上の文書・画像等の各ファイルの無断使用・転載・引用は禁じます。",
+    "target": "file"
+  },
+  "/sources/higashimurayama-yosan-gaiyou-r3/zaisei20201005_3gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.higashimurayama.tokyo.jp/shisei/gyozaisei/gyozaisei/yosan/files/zaisei20201005_3gaiyou.pdf",
+    "license": "東村山市ホームページ上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として東村山市に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、東村山市の許可なく本ホームページ上の文書・画像等の各ファイルの無断使用・転載・引用は禁じます。",
+    "target": "file"
+  },
+  "/sources/kuki-yosansho-r8/r8_jikoubetumeisaisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kuki.lg.jp/_res/projects/default_project/_page_/001/012/000/r8_jikoubetumeisaisyo.pdf",
+    "license": "久喜市ホームページに掲載されている文書や画像などの各情報に関する諸権利は、原則として久喜市に帰属します。また、一部の画像等の著作権は、原著作者が所有します。法令などに認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/kuki-yosansho-r7/r7_jikoubetumeisaisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kuki.lg.jp/_res/projects/default_project/_page_/001/009/855/r7_jikoubetumeisaisyo.pdf",
+    "license": "久喜市ホームページに掲載されている文書や画像などの各情報に関する諸権利は、原則として久喜市に帰属します。また、一部の画像等の著作権は、原著作者が所有します。法令などに認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/kuki-yosansho-r6/1005568_003.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kuki.lg.jp/_res/projects/default_project/_page_/001/005/568/1005568_003.pdf",
+    "license": "久喜市ホームページに掲載されている文書や画像などの各情報に関する諸権利は、原則として久喜市に帰属します。また、一部の画像等の著作権は、原著作者が所有します。法令などに認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/kuki-yosansho-r5/1005571_003.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kuki.lg.jp/_res/projects/default_project/_page_/001/005/571/1005571_003.pdf",
+    "license": "久喜市ホームページに掲載されている文書や画像などの各情報に関する諸権利は、原則として久喜市に帰属します。また、一部の画像等の著作権は、原著作者が所有します。法令などに認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/kuki-yosansho-r4/R4jikioubetumeisaisyo.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20240111/20240109232246/http://www.city.kuki.lg.jp/shisei/zaisei_yosan_kessan/yosan/zaisei_yosan/R4nenndoyosann.files/R4jikioubetumeisaisyo.pdf",
+    "license": "久喜市ホームページに掲載されている文書や画像などの各情報に関する諸権利は、原則として久喜市に帰属します。また、一部の画像等の著作権は、原著作者が所有します。法令などに認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/kuki-yosansho-r3/R3jikoubetumeisaisyo.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20240111/20240109232246/http://www.city.kuki.lg.jp/shisei/zaisei_yosan_kessan/yosan/zaisei_yosan/R3nenndoyosann.files/R3jikoubetumeisaisyo.pdf",
+    "license": "久喜市ホームページに掲載されている文書や画像などの各情報に関する諸権利は、原則として久喜市に帰属します。また、一部の画像等の著作権は、原著作者が所有します。法令などに認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/kuki-yosansho-r2/R2jikobetsumeisaisho.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20240111/20240109232246/http://www.city.kuki.lg.jp/shisei/zaisei_yosan_kessan/yosan/zaisei_yosan/02tosho.files/R2jikobetsumeisaisho.pdf",
+    "license": "久喜市ホームページに掲載されている文書や画像などの各情報に関する諸権利は、原則として久喜市に帰属します。また、一部の画像等の著作権は、原著作者が所有します。法令などに認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/kuki-yosansho-h31/31jikoubetu.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20240111/20240109232246/http://www.city.kuki.lg.jp/shisei/zaisei_yosan_kessan/yosan/zaisei_yosan/01tousho.files/31jikoubetu.pdf",
+    "license": "久喜市ホームページに掲載されている文書や画像などの各情報に関する諸権利は、原則として久喜市に帰属します。また、一部の画像等の著作権は、原著作者が所有します。法令などに認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/kuki-yosansho-h29/2902jikoubetsu.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20240111/20240109232246/http://www.city.kuki.lg.jp/shisei/zaisei_yosan_kessan/yosan/zaisei_yosan/a1000200102901.files/2902jikoubetsu.pdf",
+    "license": "久喜市ホームページに掲載されている文書や画像などの各情報に関する諸権利は、原則として久喜市に帰属します。また、一部の画像等の著作権は、原著作者が所有します。法令などに認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/kuki-yosansho-h28/02jikoubetsumeisai.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20240111/20240109232246/http://www.city.kuki.lg.jp/shisei/zaisei_yosan_kessan/yosan/zaisei_yosan/28tousho.files/02jikoubetsumeisai.pdf",
+    "license": "久喜市ホームページに掲載されている文書や画像などの各情報に関する諸権利は、原則として久喜市に帰属します。また、一部の画像等の著作権は、原著作者が所有します。法令などに認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/kuki-yosansho-h27/02jikoubetsu.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20240111/20240109232246/http://www.city.kuki.lg.jp/shisei/zaisei_yosan_kessan/yosan/zaisei_yosan/h27yosan.files/02jikoubetsu.pdf",
+    "license": "久喜市ホームページに掲載されている文書や画像などの各情報に関する諸権利は、原則として久喜市に帰属します。また、一部の画像等の著作権は、原著作者が所有します。法令などに認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/kuki-yosansho-h26/02jikoubetsu.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20240111/20240109232246/http://www.city.kuki.lg.jp/shisei/zaisei_yosan_kessan/yosan/zaisei_yosan/h26yosan.files/02jikoubetsu.pdf",
+    "license": "久喜市ホームページに掲載されている文書や画像などの各情報に関する諸権利は、原則として久喜市に帰属します。また、一部の画像等の著作権は、原著作者が所有します。法令などに認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/kuki-yosansho-h25/02jikoubetsu.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20240111/20240109232246/http://www.city.kuki.lg.jp/shisei/zaisei_yosan_kessan/yosan/zaisei_yosan/h25yosan.files/02jikoubetsu.pdf",
+    "license": "久喜市ホームページに掲載されている文書や画像などの各情報に関する諸権利は、原則として久喜市に帰属します。また、一部の画像等の著作権は、原著作者が所有します。法令などに認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/kuki-yosangaiyou-h30/30gaiyou.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20240111/20240109232246/http://www.city.kuki.lg.jp/shisei/zaisei_yosan_kessan/yosan/zaisei_yosan/11111.files/30gaiyou.pdf",
+    "license": "久喜市ホームページに掲載されている文書や画像などの各情報に関する諸権利は、原則として久喜市に帰属します。また、一部の画像等の著作権は、原著作者が所有します。法令などに認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/sayama-yosan-setsumeisho-r8/01_R8hyoushimokujihikakuhyouetc.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sayama.saitama.jp/shisei/zaisei/yosan/3.files/01_R8hyoushimokujihikakuhyouetc.pdf",
+    "license": "当サイトの著作権は原則として狭山市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など、著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などを希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。",
+    "target": "file"
+  },
+  "/sources/sayama-yosan-setsumeisho-r7/01_R7hyoushimokujihikakuhyouetc.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sayama.saitama.jp/shisei/zaisei/yosan/yosansho_kako/r7yosansyo.files/01_R7hyoushimokujihikakuhyouetc.pdf",
+    "license": "当サイトの著作権は原則として狭山市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など、著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などを希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。",
+    "target": "file"
+  },
+  "/sources/sayama-yosan-setsumeisho-r6/01_R6hyoushimokujihikakuhyouetc.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sayama.saitama.jp/shisei/zaisei/yosan/yosansho_kako/r6yosansho.files/01_R6hyoushimokujihikakuhyouetc.pdf",
+    "license": "当サイトの著作権は原則として狭山市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など、著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などを希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。",
+    "target": "file"
+  },
+  "/sources/sayama-yosan-setsumeisho-r5/01_R5hyoushimokuji.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sayama.saitama.jp/shisei/zaisei/yosan/yosansho_kako/r5yosansyo.files/01_R5hyoushimokuji.pdf",
+    "license": "当サイトの著作権は原則として狭山市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など、著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などを希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。",
+    "target": "file"
+  },
+  "/sources/sayama-yosan-setsumeisho-r4/01_hyoushimokujisoukatsuhyoutou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sayama.saitama.jp/shisei/zaisei/yosan/yosansho_kako/r4yosansyo.files/01_hyoushimokujisoukatsuhyoutou.pdf",
+    "license": "当サイトの著作権は原則として狭山市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など、著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などを希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。",
+    "target": "file"
+  },
+  "/sources/sayama-yosan-setsumeisho-r3/R3_hyoushi.mokuji.hikakuhyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sayama.saitama.jp/shisei/zaisei/yosan/yosansho_kako/r3yosansyo.files/R3_hyoushi.mokuji.hikakuhyou.pdf",
+    "license": "当サイトの著作権は原則として狭山市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など、著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などを希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。",
+    "target": "file"
+  },
+  "/sources/sayama-yosan-setsumeisho-r2/soukatutou.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20220709/20220709002004/https://www.city.sayama.saitama.jp/shisei/zaisei/yosan/yosansho_kako/r2yosansyo.files/soukatutou.pdf",
+    "license": "当サイトの著作権は原則として狭山市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など、著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などを希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。",
+    "target": "file"
+  },
+  "/sources/sayama-yosan-setsumeisho-h31/31ippan-hikaku.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20220709/20220709002004/https://www.city.sayama.saitama.jp/shisei/zaisei/yosan/yosansho_kako/31yosansyo.files/31ippan-hikaku.pdf",
+    "license": "当サイトの著作権は原則として狭山市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など、著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などを希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。",
+    "target": "file"
+  },
+  "/sources/sayama-yosan-setsumeisho-h30/30ippan-hikaku.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20220709/20220709002004/https://www.city.sayama.saitama.jp/shisei/zaisei/yosan/yosansho_kako/h30yosan.files/30ippan-hikaku.pdf",
+    "license": "当サイトの著作権は原則として狭山市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など、著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などを希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。",
+    "target": "file"
+  },
+  "/sources/sayama-yosan-setsumeisho-h29/2900ippan-hikakuhyo.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20220709/20220709002004/https://www.city.sayama.saitama.jp/shisei/zaisei/yosan/yosansho_kako/29sayamashiyosan.files/2900ippan-hikakuhyo.pdf",
+    "license": "当サイトの著作権は原則として狭山市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など、著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などを希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。",
+    "target": "file"
+  },
+  "/sources/sayama-yosan-setsumeisho-h28/2803hyousimokujihikakuhyou.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20220709/20220709002004/https://www.city.sayama.saitama.jp/shisei/zaisei/yosan/yosansho_kako/yosansho28.files/2803hyousimokujihikakuhyou.pdf",
+    "license": "当サイトの著作権は原則として狭山市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など、著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などを希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。",
+    "target": "file"
+  },
+  "/sources/sayama-yosan-setsumeisho-h27/27yosan03.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20220709/20220709002004/https://www.city.sayama.saitama.jp/shisei/zaisei/yosan/yosansho_kako/27yosansho.files/27yosan03.pdf",
+    "license": "当サイトの著作権は原則として狭山市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など、著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などを希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。",
+    "target": "file"
+  },
+  "/sources/sayama-yosan-setsumeisho-h26/0126yosan.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20220709/20220709002004/https://www.city.sayama.saitama.jp/shisei/zaisei/yosan/yosansho_kako/yosan.files/0126yosan.pdf",
+    "license": "当サイトの著作権は原則として狭山市が所有しています。掲載している文章・写真・イラストなどの各々の情報及び各ページは、著作権法の保護の対象となる著作物であり、当サイトの全体についても編集著作物として著作権の対象となっています。私的使用のための複製や引用など、著作権法上認められた場合を除き、無断で複製・転用をすることはできません。著作権法上認められた範囲を超える引用・転用・転載などを希望する場合には、各ページ下部に記載された問合せ先に直接ご相談ください。",
+    "target": "file"
   }
 };
