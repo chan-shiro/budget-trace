@@ -57,6 +57,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
       }
     ]
   },
+  "112275": {
+    "budget": [
+      {
+        "fyLabel": "令和2年度",
+        "reason": "歳入の廃止款「自動車取得税交付金」が行頭 △ の印つきで、当年度セルが 0 でも - でも「皆減」でもなく完全な空欄。整数が [前年度, 増減] の2個になるため列を左に1つずらして読み、当年度 Σ が +40,000・前年度 Σ が -80,000 で割れる。既存パーサは error で止まる（静かには壊れない）。前年度セル向けの prevBlankAsZero と対称の当年度版を足せば開く見込み。",
+        "checkedOn": "2026-09-10"
+      }
+    ]
+  },
   "112305": {
     "budget": [
       {
@@ -237,6 +246,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
         "fyLabel": "平成30年度・平成29年度",
         "reason": "主要施策の成果の ToUnicode が部分破損しており、事業名・所管課は読めるが表の半角数字が丸ごと欠落する（成果指標の実績値が取れない）。",
         "checkedOn": "2026-07-16"
+      }
+    ]
+  },
+  "132039": {
+    "budget": [
+      {
+        "fyLabel": "平成20年度",
+        "reason": "歳入・歳出が同一の A3 ページに横並びで（CropX で分離できることは実測）、末尾に款番号を持たない廃止款「特別地方消費税交付金」（当年度0・前年度1）がある。H21 以降の同型には「皆減」の語があるがこの年度の表にはその欄が無いため拾えず、前年度 Σ が -1 で割れる。既存パーサは error で止まる（静かには壊れない）。",
+        "checkedOn": "2026-09-10"
       }
     ]
   },

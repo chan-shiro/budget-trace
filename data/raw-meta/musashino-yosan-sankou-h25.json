@@ -1,0 +1,12 @@
+{
+  "sourceId": "musashino-yosan-sankou-h25",
+  "files": [
+    {
+      "filename": "123456.pdf",
+      "sha256": "eba42ae33693a991ad70be324651ed3f660e6bbd1704860e5945c8c5db981fb8",
+      "bytes": 3193924,
+      "fetchedAt": "2026-09-10T09:15:42.260Z",
+      "fetchedFrom": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/010/209/123456.pdf"
+    }
+  ]
+}

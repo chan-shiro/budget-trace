@@ -1218,4 +1218,29 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     url: "https://www.city.ueda.nagano.jp/soshiki/zaisei/1256.html",
     checkedOn: "2026-09-10", ref: "docs/data-sources.md §13-29",
   },
+  {
+    // 朝霞市（112275）。R8〜R3・H31〜H26 の12年度は予算説明書の総括表で収録済み（§13-30）。
+    // ⚠ 原典は健全で、こちらの抽出が「廃止款の当年度セルが完全な空欄」に対応していないだけ。
+    //    Σ が割れて error で止まるので静かには壊れない。
+    code: "112275", name: "朝霞市", dataset: "budget", fiscalYears: ["R2"],
+    categories: ["parser-unsupported"],
+    reason:
+      "歳入の廃止款「自動車取得税交付金」が行頭 △ の印つきで、当年度セルが 0 でも - でも「皆減」でもなく完全な空欄。" +
+      "整数が [前年度, 増減] の2個になるため列を左に1つずらして読み、当年度 Σ が +40,000・前年度 Σ が -80,000 で割れる。" +
+      "既存パーサは error で止まる（静かには壊れない）。前年度セル向けの prevBlankAsZero と対称の当年度版を足せば開く見込み。",
+    url: "https://www.city.asaka.lg.jp/uploaded/attachment/60774.pdf",
+    checkedOn: "2026-09-10", ref: "docs/data-sources.md §13-30",
+  },
+  {
+    // 武蔵野市（132039）。R8〜H21 の18年度は予算参考資料で収録済み（§13-30）。
+    // ⚠ H20 だけ歳入・歳出が同一 A3 ページに横並びで、廃止款の書き方も他年度と違う。
+    code: "132039", name: "武蔵野市", dataset: "budget", fiscalYears: ["H20"],
+    categories: ["parser-unsupported"],
+    reason:
+      "歳入・歳出が同一の A3 ページに横並びで（CropX で分離できることは実測）、末尾に款番号を持たない廃止款" +
+      "「特別地方消費税交付金」（当年度0・前年度1）がある。H21 以降の同型には「皆減」の語があるがこの年度の表には" +
+      "その欄が無いため拾えず、前年度 Σ が -1 で割れる。既存パーサは error で止まる（静かには壊れない）。",
+    url: "https://www.city.musashino.lg.jp/shiseijoho/zaisei/zaiseijokyo/yosangaiyou/1010214.html",
+    checkedOn: "2026-09-10", ref: "docs/data-sources.md §13-30",
+  },
 ];

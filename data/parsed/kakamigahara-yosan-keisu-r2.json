@@ -1,0 +1,435 @@
+{
+  "docType": "budget-book",
+  "sourceId": "kakamigahara-yosan-keisu-r2",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-09-10T09:16:52.337Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R2",
+  "account": "一般会計",
+  "revenueTotal": 54570000,
+  "expenditureTotal": 54570000,
+  "prevRevenueTotal": 48880000,
+  "prevExpenditureTotal": 48880000,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "市税",
+      "amount": 21369888,
+      "prevAmount": 21391643,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "地方譲与税",
+      "amount": 402840,
+      "prevAmount": 406090,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "利子割交付金",
+      "amount": 22000,
+      "prevAmount": 47000,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "配当割交付金",
+      "amount": 70000,
+      "prevAmount": 62000,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 34000,
+      "prevAmount": 49000,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "法人事業税交付金",
+      "amount": 105000,
+      "prevAmount": 0,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "地方消費税交付金",
+      "amount": 3100000,
+      "prevAmount": 2500000,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "ゴルフ場利用税交付金",
+      "amount": 19000,
+      "prevAmount": 20000,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "環境性能割交付金",
+      "amount": 47000,
+      "prevAmount": 25000,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "国有提供施設等所在市町村助成交付金",
+      "amount": 380000,
+      "prevAmount": 390000,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "地方特例交付金",
+      "amount": 145000,
+      "prevAmount": 174521,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "地方交付税",
+      "amount": 2550000,
+      "prevAmount": 2350000,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 15000,
+      "prevAmount": 18000,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "分担金及び負担金",
+      "amount": 359837,
+      "prevAmount": 434406,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "使用料及び手数料",
+      "amount": 507386,
+      "prevAmount": 499759,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "国庫支出金",
+      "amount": 8532232,
+      "prevAmount": 8057628,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 17,
+      "kanName": "県支出金",
+      "amount": 3599294,
+      "prevAmount": 3424632,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 18,
+      "kanName": "財産収入",
+      "amount": 173089,
+      "prevAmount": 179068,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 19,
+      "kanName": "寄附金",
+      "amount": 600000,
+      "prevAmount": 420000,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 20,
+      "kanName": "繰入金",
+      "amount": 7549743,
+      "prevAmount": 2812139,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 21,
+      "kanName": "繰越金",
+      "amount": 850000,
+      "prevAmount": 850000,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 22,
+      "kanName": "諸収入",
+      "amount": 991891,
+      "prevAmount": 1366014,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 23,
+      "kanName": "市債",
+      "amount": 3146800,
+      "prevAmount": 3332100,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": null,
+      "kanName": "自動車取得税交付金",
+      "amount": 0,
+      "prevAmount": 71000,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 7
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 362696,
+      "prevAmount": 361249,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 8837929,
+      "prevAmount": 4382401,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "民生費",
+      "amount": 14972430,
+      "prevAmount": 15061526,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "衛生費",
+      "amount": 3860839,
+      "prevAmount": 5137432,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "労働費",
+      "amount": 110604,
+      "prevAmount": 330462,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "農林水産業費",
+      "amount": 398355,
+      "prevAmount": 433599,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "商工費",
+      "amount": 1418869,
+      "prevAmount": 1632350,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "土木費",
+      "amount": 4229408,
+      "prevAmount": 4247574,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "消防費",
+      "amount": 2347379,
+      "prevAmount": 2051478,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "教育費",
+      "amount": 6505598,
+      "prevAmount": 5584449,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 11,
+      "kanName": "災害復旧費",
+      "amount": 0,
+      "prevAmount": 0,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 12,
+      "kanName": "公債費",
+      "amount": 6210750,
+      "prevAmount": 4339905,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 13,
+      "kanName": "諸支出金",
+      "amount": 5265143,
+      "prevAmount": 5267575,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 8
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 14,
+      "kanName": "予備費",
+      "amount": 50000,
+      "prevAmount": 50000,
+      "locator": {
+        "file": "bessatsu_2020.pdf",
+        "page": 8
+      }
+    }
+  ]
+}

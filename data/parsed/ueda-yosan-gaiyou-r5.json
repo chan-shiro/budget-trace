@@ -3,7 +3,7 @@
   "sourceId": "ueda-yosan-gaiyou-r5",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-09-10T05:37:43.282Z",
+  "parsedAt": "2026-09-10T11:27:21.120Z",
   "unit": "thousandYen",
   "fiscalYear": "R5",
   "account": "一般会計",
@@ -12,6 +12,7 @@
   "prevRevenueTotal": 68413000,
   "prevExpenditureTotal": 68413000,
   "prevBasis": "当初",
+  "prevNote": "前年度（令和4年度）の当初予算は骨格予算（原典 p.4 の脚注に「※H22、H26、H30、R4は骨格予算編成」と明記）。ここでの前年度額はその骨格予算の当初額（68,413,000千円）で、肉付け後の額ではない。肉付け後の額は上田市の当初予算の概要には載っていない。",
   "facts": [
     {
       "side": "revenue",
