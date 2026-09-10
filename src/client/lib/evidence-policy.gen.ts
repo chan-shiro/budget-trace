@@ -14256,5 +14256,137 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://warp.ndl.go.jp/20170511/20170510012940/https://www.city.takaoka.toyama.jp/zaisei/shise/yosan/yosan/documents/h28kaikeibetsu.pdf",
     "license": "高岡市ホームページに掲載されている情報・文章・画像等の著作権は、高岡市にあります。ただし、これらの提供者の方にある場合もあります。これらの著作物は、著作権法上認められた場合を除き、無断で転用・引用することはできません。",
     "target": "file"
+  },
+  "/sources/hadano-yosan-aramashi-r8/yosannoaramashi.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hadano.kanagawa.jp/soshiki/1/1003/4/2380.html",
+    "license": "秦野市役所ホームページの情報は、原則として秦野市が著作権を有しています。法律で認められた場合を除き、無断で転用・引用することを禁じます。",
+    "target": "page"
+  },
+  "/sources/hadano-yosan-aramashi-r7/yosannnoaramasi.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hadano.kanagawa.jp/soshiki/1/1003/4/2380.html",
+    "license": "秦野市役所ホームページの情報は、原則として秦野市が著作権を有しています。法律で認められた場合を除き、無断で転用・引用することを禁じます。",
+    "target": "page"
+  },
+  "/sources/hadano-yosan-aramashi-r6/r6.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hadano.kanagawa.jp/soshiki/1/1003/4/2380.html",
+    "license": "秦野市役所ホームページの情報は、原則として秦野市が著作権を有しています。法律で認められた場合を除き、無断で転用・引用することを禁じます。",
+    "target": "page"
+  },
+  "/sources/hadano-yosan-aramashi-r4/r4aramashi.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hadano.kanagawa.jp/soshiki/1/1003/4/2380.html",
+    "license": "秦野市役所ホームページの情報は、原則として秦野市が著作権を有しています。法律で認められた場合を除き、無断で転用・引用することを禁じます。",
+    "target": "page"
+  },
+  "/sources/hadano-yosan-aramashi-r3/R03yosannoaramashi.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20260207/20260206162041/https://www.city.hadano.kanagawa.jp/soshiki/1/1003/4/2380.html",
+    "license": "秦野市役所ホームページの情報は、原則として秦野市が著作権を有しています。法律で認められた場合を除き、無断で転用・引用することを禁じます。",
+    "target": "page"
+  },
+  "/sources/hadano-yosan-aramashi-r2/R02yosanaramashi.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20230511/20230509133115/https://www.city.hadano.kanagawa.jp/www/contents/1001000003696/index.html",
+    "license": "秦野市役所ホームページの情報は、原則として秦野市が著作権を有しています。法律で認められた場合を除き、無断で転用・引用することを禁じます。",
+    "target": "page"
+  },
+  "/sources/hadano-yosan-siryou-r5/R05_yosansiryou.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20230511/20230509133115/https://www.city.hadano.kanagawa.jp/www/contents/1001000003696/index.html",
+    "license": "秦野市役所ホームページの情報は、原則として秦野市が著作権を有しています。法律で認められた場合を除き、無断で転用・引用することを禁じます。",
+    "target": "page"
+  },
+  "/sources/ogaki-yosanmeisai-r8/R8yosanmeisai1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ogaki.lg.jp/cmsfiles/contents/0000044/44983/R8yosanmeisai1.pdf",
+    "license": "大垣市ホームページに掲載されている個々の情報（文字、写真、イラストなど）の著作権は、原則として大垣市にあります。当ホームページの情報の無断引用及び転載は禁止します。",
+    "target": "file"
+  },
+  "/sources/ogaki-yosanmeisai-r7/R7yosanmeisai1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ogaki.lg.jp/cmsfiles/contents/0000044/44983/R7yosanmeisai1.pdf",
+    "license": "大垣市ホームページに掲載されている個々の情報（文字、写真、イラストなど）の著作権は、原則として大垣市にあります。当ホームページの情報の無断引用及び転載は禁止します。",
+    "target": "file"
+  },
+  "/sources/ogaki-yosanmeisai-r6/R6yosanmeisai1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ogaki.lg.jp/cmsfiles/contents/0000044/44983/R6yosanmeisai1.pdf",
+    "license": "大垣市ホームページに掲載されている個々の情報（文字、写真、イラストなど）の著作権は、原則として大垣市にあります。当ホームページの情報の無断引用及び転載は禁止します。",
+    "target": "file"
+  },
+  "/sources/ogaki-yosanmeisai-r5/R5yosanmeisai1.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20230601133657id_/https://www.city.ogaki.lg.jp/cmsfiles/contents/0000044/44983/R5yosanmeisai1.pdf",
+    "license": "大垣市ホームページに掲載されている個々の情報（文字、写真、イラストなど）の著作権は、原則として大垣市にあります。当ホームページの情報の無断引用及び転載は禁止します。",
+    "target": "file"
+  },
+  "/sources/ogaki-yosanmeisai-r4/R4yosanmeisai1.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20220707131230id_/https://www.city.ogaki.lg.jp/cmsfiles/contents/0000044/44983/R4yosanmeisai1.pdf",
+    "license": "大垣市ホームページに掲載されている個々の情報（文字、写真、イラストなど）の著作権は、原則として大垣市にあります。当ホームページの情報の無断引用及び転載は禁止します。",
+    "target": "file"
+  },
+  "/sources/ogaki-yosanmeisai-r3/R3yosanmeisai_1.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20220708214433id_/https://www.city.ogaki.lg.jp/cmsfiles/contents/0000044/44983/R3yosanmeisai_1.pdf",
+    "license": "大垣市ホームページに掲載されている個々の情報（文字、写真、イラストなど）の著作権は、原則として大垣市にあります。当ホームページの情報の無断引用及び転載は禁止します。",
+    "target": "file"
+  },
+  "/sources/ogaki-yosanmeisai-r2/R2yosanmeisai_1.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20200930224020id_/https://www.city.ogaki.lg.jp/cmsfiles/contents/0000044/44983/R2yosanmeisai_1.pdf",
+    "license": "大垣市ホームページに掲載されている個々の情報（文字、写真、イラストなど）の著作権は、原則として大垣市にあります。当ホームページの情報の無断引用及び転載は禁止します。",
+    "target": "file"
+  },
+  "/sources/ogaki-yosangaiyou-h31/31tousyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ogaki.lg.jp/cmsfiles/contents/0000002/2490/31tousyo.pdf",
+    "license": "大垣市ホームページに掲載されている個々の情報（文字、写真、イラストなど）の著作権は、原則として大垣市にあります。当ホームページの情報の無断引用及び転載は禁止します。",
+    "target": "file"
+  },
+  "/sources/ogaki-yosangaiyou-h30/30tousyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ogaki.lg.jp/cmsfiles/contents/0000002/2490/30tousyo.pdf",
+    "license": "大垣市ホームページに掲載されている個々の情報（文字、写真、イラストなど）の著作権は、原則として大垣市にあります。当ホームページの情報の無断引用及び転載は禁止します。",
+    "target": "file"
+  },
+  "/sources/ogaki-yosangaiyou-h29/29tousyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ogaki.lg.jp/cmsfiles/contents/0000002/2490/29tousyo.pdf",
+    "license": "大垣市ホームページに掲載されている個々の情報（文字、写真、イラストなど）の著作権は、原則として大垣市にあります。当ホームページの情報の無断引用及び転載は禁止します。",
+    "target": "file"
+  },
+  "/sources/ogaki-yosangaiyou-h28/28tousyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ogaki.lg.jp/cmsfiles/contents/0000002/2490/28tousyo.pdf",
+    "license": "大垣市ホームページに掲載されている個々の情報（文字、写真、イラストなど）の著作権は、原則として大垣市にあります。当ホームページの情報の無断引用及び転載は禁止します。",
+    "target": "file"
+  },
+  "/sources/ogaki-yosangaiyou-h27/27tousyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ogaki.lg.jp/cmsfiles/contents/0000002/2490/27tousyo.pdf",
+    "license": "大垣市ホームページに掲載されている個々の情報（文字、写真、イラストなど）の著作権は、原則として大垣市にあります。当ホームページの情報の無断引用及び転載は禁止します。",
+    "target": "file"
+  },
+  "/sources/ogaki-yosangaiyou-h26/26tousyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ogaki.lg.jp/cmsfiles/contents/0000002/2490/26tousyo.pdf",
+    "license": "大垣市ホームページに掲載されている個々の情報（文字、写真、イラストなど）の著作権は、原則として大垣市にあります。当ホームページの情報の無断引用及び転載は禁止します。",
+    "target": "file"
+  },
+  "/sources/ogaki-yosangaiyou-h24/24tousyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ogaki.lg.jp/cmsfiles/contents/0000002/2490/24tousyo.pdf",
+    "license": "大垣市ホームページに掲載されている個々の情報（文字、写真、イラストなど）の著作権は、原則として大垣市にあります。当ホームページの情報の無断引用及び転載は禁止します。",
+    "target": "file"
+  },
+  "/sources/ogaki-yosangaiyou-h23/23tousyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ogaki.lg.jp/cmsfiles/contents/0000002/2490/23tousyo.pdf",
+    "license": "大垣市ホームページに掲載されている個々の情報（文字、写真、イラストなど）の著作権は、原則として大垣市にあります。当ホームページの情報の無断引用及び転載は禁止します。",
+    "target": "file"
   }
 };
