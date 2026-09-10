@@ -3,7 +3,7 @@
   "sourceId": "imabari-yosansho-r4",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-09-10T09:25:42.885Z",
+  "parsedAt": "2026-09-10T10:46:06.048Z",
   "unit": "thousandYen",
   "fiscalYear": "R4",
   "account": "一般会計",
@@ -12,6 +12,7 @@
   "prevRevenueTotal": 74170000,
   "prevExpenditureTotal": 74170000,
   "prevBasis": "当初",
+  "prevNote": "前年度（令和3年度）の当初予算は骨格予算（発行元の「令和3年度 今治市議会定例会（第2回）当初予算」記者発表資料 p.3 に「令和３年度は、骨格予算を基本に…具体的な事業は、今後の定例会等で予算化を行っていく」と明記）。ここでの前年度額はその骨格予算の当初額（74,170,000千円）で、肉付け後の額ではない。",
   "facts": [
     {
       "side": "revenue",

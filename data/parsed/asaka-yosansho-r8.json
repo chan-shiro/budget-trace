@@ -3,7 +3,7 @@
   "sourceId": "asaka-yosansho-r8",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-09-10T09:05:29.275Z",
+  "parsedAt": "2026-09-10T10:46:05.933Z",
   "unit": "thousandYen",
   "fiscalYear": "R8",
   "account": "一般会計",
@@ -12,6 +12,7 @@
   "prevRevenueTotal": 51323032,
   "prevExpenditureTotal": 51323032,
   "prevBasis": "当初",
+  "prevNote": "前年度（令和7年度）の当初予算は骨格予算（発行元の「令和8年度（2026年度）一般会計当初予算資料」p.1 に「※前年度予算については、当初予算が骨格予算のため、肉付後予算額（補正予算第１号）としています」と明記）。ここでの前年度額はその骨格予算の当初額（51,323,032千円）で、肉付け後の額（52,100,011千円）ではない。発行元が公表している対前年比は肉付け後に対する +8.1% です。",
   "facts": [
     {
       "side": "revenue",
