@@ -2779,26 +2779,50 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     const meta = readRawMeta(b.srcId);
     if (!meta) throw new Error(`${b.srcId}: raw-meta がありません`);
     const src = findSource(b.srcId);
-    // 歳入・歳出が別ファイルの分冊形式（`revenueFile`/`expenditureFile`・台東 R2/H31/H27・品川 R7・
-    // 日立 H26〜H24 など）は**ファイルを側で引く**（#257）。以前は `meta.files[0]`（＝歳入 PDF）を
-    // 全款のエビデンスにしていたので、歳出の款を開いても歳入 PDF が出ていた。parserOptions が指す
-    // ファイルが raw に無ければ黙って先頭に倒さず止める
-    const optFiles = (src.parserOptions ?? {}) as { kanFile?: string; revenueFile?: string; expenditureFile?: string };
-    const fileNamed = (name: string) => {
-      const f = meta.files.find((x) => x.filename === name);
-      if (!f) throw new Error(`${b.srcId}: parserOptions が指す ${name} が raw-meta にありません`);
+    // 歳入・歳出が別ファイルの資料は**ファイルを側で引く**（#257）。以前は `meta.files[0]`（＝歳入 PDF）を
+    // 全款のエビデンスにしていたので、歳出の款を開いても歳入 PDF が出ていた。
+    // ⚠ **側のファイルは parsed の locator（行ごとの `file`）から決める**（2026-09-10）。#259 は registry の
+    //   `parserOptions.revenueFile`/`expenditureFile` を見ていたが、それは kofu-yosansho パーサの語彙で、
+    //   **側をファイルで分ける別パーサ**（東京都の CSV・練馬の xlsx・世田谷の CSV＝27年度分）は
+    //   オプション名が違うので `files[0]` に落ちたままだった。locator は「実際に読んだファイル」そのもの
+    //   なのでパーサに依らない（事業報告と同じ作法）。parserOptions は**突合にだけ使う**（書いてあれば
+    //   locator と一致すること — ファイル取り違えを黙って通さない）
+    const sideFile = (side: "revenue" | "expenditure") => {
+      const names = [...new Set(doc.facts.filter((f) => f.side === side).map((f) => f.locator.file))];
+      if (names.length !== 1) {
+        throw new Error(
+          `${b.srcId}: ${side === "revenue" ? "歳入" : "歳出"}の款が ${names.length} ファイルにまたがっています（${names.join(", ")}）。` +
+            `側ごとのエビデンスを1ファイルに決められません`,
+        );
+      }
+      const f = meta.files.find((x) => x.filename === names[0]);
+      if (!f) throw new Error(`${b.srcId}: parsed の locator が指す ${names[0]} が raw-meta にありません`);
       return f;
     };
-    const file = optFiles.kanFile
-      ? fileNamed(optFiles.kanFile)
-      : optFiles.revenueFile
-        ? fileNamed(optFiles.revenueFile)
-        : meta.files[0]!;
-    const expFile = optFiles.expenditureFile ? fileNamed(optFiles.expenditureFile) : null;
+    const file = sideFile("revenue");
+    const expSideFile = sideFile("expenditure");
+    // 単一ファイル（歳入・歳出が同じファイル）は null ＝ 従来どおり
+    const expFile = expSideFile.filename === file.filename ? null : expSideFile;
+    {
+      const po = (src.parserOptions ?? {}) as { kanFile?: unknown; revenueFile?: unknown; expenditureFile?: unknown };
+      const expect = [
+        ["kanFile", po.kanFile, file.filename],
+        ["revenueFile", po.revenueFile, file.filename],
+        ["expenditureFile", po.expenditureFile, expSideFile.filename],
+      ] as const;
+      for (const [key, want, got] of expect) {
+        if (want != null && want !== got) {
+          throw new Error(`${b.srcId}: registry の parserOptions.${key}（${String(want)}）と parsed の locator（${got}）が一致しません`);
+        }
+      }
+    }
     const url = src.urls?.[0] ?? src.landingPage ?? "";
-    // 歳出側の発行元 URL は registry の urls からファイル名で引く（無ければ取得来歴の fetchedFrom）
+    // 歳出側の発行元 URL は registry の urls からファイル名で引く（無ければ取得来歴の fetchedFrom。
+    // `manual:` の手動投入は URL でないので従来の宛先に落とす）
     const expUrl = expFile
-      ? (src.urls?.find((u) => u.endsWith(`/${expFile.filename}`)) ?? expFile.fetchedFrom ?? "")
+      ? (src.urls?.find((u) => u.endsWith(`/${expFile.filename}`)) ??
+        (/^https?:/.test(expFile.fetchedFrom) ? expFile.fetchedFrom : null) ??
+        url)
       : "";
     // 都道府県エンティティの人口は県内市町村（団体コード先頭2桁一致）の住基人口の合計
     const prefCode = b.muniCode.slice(0, 2);
@@ -2984,6 +3008,15 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       ],
     };
   });
+
+  {
+    const split = budgets.filter((x) => x.expenditureEvidence);
+    const sameUrl = split.filter((x) => x.expenditureEvidence!.originUrl === x.originUrl);
+    console.log(
+      `  ・歳入・歳出が別ファイルの年度: ${split.length}（歳出側のエビデンスを持つ` +
+        `${sameUrl.length ? `・うち歳出の発行元 URL をファイル単位で引けず歳入側と同じ宛先: ${sameUrl.length}` : ""}）`,
+    );
+  }
 
   // budget 階層は1自治体＝複数年度になり得る（政令市は R2〜R8 の7年前後さかのぼれる）。
   // 年度は**新しい順**に並べる（画面の年度ドロップダウンの並び・既定の選択がこの順に依存する）。
