@@ -1342,6 +1342,7 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.city.kuwana.lg.jp/documents/10475/03_r6tousyosoukatuhyou.pdf": "https://web.archive.org/web/20250513003443/https://www.city.kuwana.lg.jp/documents/10475/03_r6tousyosoukatuhyou.pdf",
   "https://www.city.kuwana.lg.jp/zaisei/shiseijouhou/yosanzaisei/r6tousyo.html": "https://web.archive.org/web/20260416075818/https://www.city.kuwana.lg.jp/zaisei/shiseijouhou/yosanzaisei/r6tousyo.html",
   "https://www.city.kuwana.lg.jp/documents/11585/03_r7tousyoyosan3.pdf": "https://web.archive.org/web/20250321230517/https://www.city.kuwana.lg.jp/documents/11585/03_r7tousyoyosan3.pdf",
+  "https://www.city.kuwana.lg.jp/zaisei/r7tousyo.html": "https://web.archive.org/web/20260608080223/https://www.city.kuwana.lg.jp/zaisei/r7tousyo.html",
   "https://www.city.kuwana.lg.jp/zaisei/r8tousyo.html": "https://web.archive.org/web/20260509131219/https://www.city.kuwana.lg.jp/zaisei/r8tousyo.html",
   "https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000259/259833/01ippan.pdf": "https://web.archive.org/web/20260715161449/https://www.city.kyoto.lg.jp/gyozai/cmsfiles/contents/0000259/259833/01ippan.pdf",
   "https://www.city.kyoto.lg.jp/gyozai/page/0000259833.html": "https://web.archive.org/web/20260121030020/https://www.city.kyoto.lg.jp/gyozai/page/0000259833.html",

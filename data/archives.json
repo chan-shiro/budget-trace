@@ -13404,10 +13404,18 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20250321230517/https://www.city.kuwana.lg.jp/documents/11585/03_r7tousyoyosan3.pdf",
       "waybackTimestamp": "20250321230517",
-      "checkedAt": "2026-09-11T13:43:05.188Z",
+      "checkedAt": "2026-09-11T14:06:16.542Z",
       "sha256Match": true,
       "waybackBytes": 160446,
       "rawSha256": "54f6a1b4f9dca1b73f9fe38cb5d93a7ed9e8983c271b454277b1a44b9a6e2314"
+    },
+    {
+      "sourceId": "kuwana-yosan-soukatsu-r7",
+      "url": "https://www.city.kuwana.lg.jp/zaisei/r7tousyo.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260608080223/https://www.city.kuwana.lg.jp/zaisei/r7tousyo.html",
+      "waybackTimestamp": "20260608080223",
+      "checkedAt": "2026-09-11T14:06:52.134Z"
     },
     {
       "sourceId": "kuwana-yosan-soukatsu-r8",
