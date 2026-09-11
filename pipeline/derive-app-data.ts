@@ -2915,7 +2915,8 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       srcId: `ashikaga-yosanan-${fy}`, muniCode: "092029", muniName: "足利市", prefName: "栃木県", isPref: false,
     })),
     { srcId: "ashikaga-yosansetsumeisho-r7", muniCode: "092029", muniName: "足利市", prefName: "栃木県", isPref: false },
-    // ⚠ 藤枝は4年度だけ（R5 以前はスキャン）。R8・H30 は歳入と歳出が同一ページの左右なので CropX が要る
+    // ⚠ 藤枝は4年度だけ（11年分あるがテキスト層は R8・R7・R6・H30 の4年だけ。R5〜R2・H31・H29・H28 がスキャン）。
+    //    R8・H30 は歳入と歳出が同一ページの左右なので CropX が要る。⚠ H30 は前後がスキャンで鎖が張れない
     ...(["r8", "r7", "r6", "h30"] as const).map((fy) => ({
       srcId: `fujieda-soukatsu-${fy}`, muniCode: "222143", muniName: "藤枝市", prefName: "静岡県", isPref: false,
     })),
