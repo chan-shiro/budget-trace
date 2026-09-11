@@ -79,6 +79,11 @@ bun run pipeline:validate <sourceId>
 既存パーサ（`kofu-yosansho` 等）を直すときは **`parserOptions` で吸収できないか先に考える**。
 
 パーサ本体を触ったら、**既存の全ソースを再 parse し、`parsedAt` 以外の差分が無いことを確認する**。
+**その年度の当初予算が骨格予算なら `pipeline/registry/skeleton-budgets.ts` に書く**（原典の言い回しと根拠つき）。
+書いておけば、翌年度を収録したときに `prevNote` を落としても derive が止める。⚠ 前年度側の `prevNote` は
+**注記を書くだけでなく台帳にも書く**（逆方向の照合で止まる）。骨格かどうかは**原典で確かめる**
+（周期・交代から推し量らない。docs §13-32）。
+
 **`validate` が通るだけでは不十分** — optional フィールド（`prevNote` 等）の欠落は検出されない
 （`fd3a500` の打切りが甲府 R6 の資料注記を巻き添えにし、再生成しなかったため長く露見しなかった実例）:
 

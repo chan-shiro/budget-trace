@@ -22,6 +22,7 @@ import { eraYear, fyRank, fySeq } from "./lib/fy";
 import { findSource, SOURCES } from "./registry/sources";
 import { ROADMAP } from "./registry/roadmap";
 import { UNRECORDABLE, UNRECORDABLE_CATEGORIES } from "./registry/unrecordable";
+import { SKELETON_BUDGETS, type SkeletonBudget } from "./registry/skeleton-budgets";
 import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
@@ -4457,6 +4458,76 @@ export const ROADMAP_PLAN: RoadmapItem[] = ${JSON.stringify(ROADMAP, null, 2)};
     if (problems.length === 0) console.log(`  年度間クロスチェーン: ${links} リンク（列の取り違えなし）`);
   }
 
+  // ⑤ 骨格予算の翌年度に説明があるか（pipeline/registry/skeleton-budgets.ts）
+  //
+  // **④ が構造的に見ない領域**（2026-09-10 の棚卸し・docs §13-32）。骨格予算の翌年度は前年度列が
+  // 骨格の当初額そのものなので④の総額は一致し、`prevBasis:"当初"` のまま `prevNote` が空でも
+  // 何も鳴らない。それでいて画面の「対前年度（当初比）」は発行元の公表値（肉付け後基準）と
+  // 食い違う（千葉県 R8: 画面 +7.1% / 県 +3.0%）。**§11k の規約「前年度側が骨格なら prevNote」を
+  // 人が全団体を読み直す以外に守る手が無く、14件落ちていた。**
+  //
+  // 台帳（骨格の年度）を正として2方向に照合する:
+  //   順方向: 台帳の年度 Y の翌年度 Y+1 が収録済みなのに説明が無い → throw（落ちている）
+  //   逆方向: prevNote が骨格に触れているのに台帳に無い → throw（台帳が腐っている）
+  // 「説明」は④と同じ判定（`prevBasis !== "当初" || prevNote`）。前年度列が肉付け後なら
+  // `prevBasis` で、当初のままなら `prevNote` で説明する（どちらかは台帳で決めない）。
+  {
+    const skeleton = new Map<string, SkeletonBudget>();
+    const muniByCode = new Map(ds.records.map((r) => [r.muniCode, r.muniName]));
+    const { PREF_CODES } = await import("../src/client/lib/decision-index.gen");
+    const prefEntityCode = (pref2: string) => {
+      const c = `${pref2}000`;
+      const sum = [6, 5, 4, 3, 2].reduce((a, w, i) => a + Number(c[i]) * w, 0);
+      return c + String((11 - (sum % 11)) % 10);
+    };
+    const prefByEntityCode = new Map(Object.entries(PREF_CODES).map(([name, code]) => [prefEntityCode(code), name]));
+    for (const s of SKELETON_BUDGETS) {
+      const trueName = prefByEntityCode.get(s.code) ?? muniByCode.get(s.code);
+      if (!trueName) throw new Error(`skeleton-budgets「${s.name} ${s.fy}」: 団体コード ${s.code} が総務省台帳にも都道府県にもありません`);
+      if (trueName !== s.name) throw new Error(`skeleton-budgets「${s.name} ${s.fy}」: 団体コード ${s.code} は「${trueName}」です（取り違え）`);
+      const key = `${s.code}:${fySeq(s.fy)}`;
+      if (skeleton.has(key)) throw new Error(`skeleton-budgets「${s.name} ${s.fy}」: 同じ年度が二重に載っています`);
+      skeleton.set(key, s);
+    }
+    // 収録済みの budget-book を団体コード×年度で引く。団体コードは registry の scope から
+    // （甲府だけ scope に無い＝full 階層で BUDGET_SOURCES にも居ないので固定）
+    const codeOf = (s: (typeof SOURCES)[number]) =>
+      /団体コード\s*(\d{6})/.exec(s.scope)?.[1] ?? (s.id.startsWith("kofu-") ? "192015" : null);
+    const KOKKAKU_WORDS = /骨格|第一次編成|準骨格|肉付/;
+    let checked = 0;
+    for (const s of SOURCES) {
+      if (s.fixture || !existsSync(parsedPath(s.id))) continue;
+      const code = codeOf(s);
+      if (!code) continue;
+      const doc = anyParsedDocSchema.parse(readJson(parsedPath(s.id)));
+      if (doc.docType !== "budget-book") continue;
+      const seq = fySeq(doc.fiscalYear);
+      const explained = doc.prevBasis !== "当初" || !!doc.prevNote;
+      const prevIsSkeleton = skeleton.get(`${code}:${seq - 1}`);
+      if (prevIsSkeleton) {
+        checked++;
+        if (!explained) {
+          problems.push(
+            `${s.id}: 前年度（${prevIsSkeleton.fy}）は骨格予算です（${prevIsSkeleton.evidence}）が、` +
+              `prevBasis が「当初」のまま prevNote がありません。画面の「対前年度（当初比）」が発行元の公表値と食い違います。` +
+              `前年度列が肉付け後なら parserOptions.prevBasis:"補正後"、当初額なら prevNote に「前年度は骨格予算」と書く（§11k・§13-32）`,
+          );
+        }
+      }
+      if (doc.prevNote && KOKKAKU_WORDS.test(doc.prevNote)) {
+        const cur = /^(本年度|この年度)/.test(doc.prevNote);
+        const want = cur ? seq : seq - 1;
+        if (!skeleton.has(`${code}:${want}`)) {
+          problems.push(
+            `${s.id}: prevNote が骨格予算に触れていますが、${cur ? "この年度" : "前年度"}が pipeline/registry/skeleton-budgets.ts に載っていません。` +
+              `注記を足したら台帳にも書く（根拠つき）。台帳に無い年度の注記は次の棚卸しで見つからない`,
+          );
+        }
+      }
+    }
+    if (problems.length === 0) console.log(`  骨格予算の翌年度: ${checked} 件（説明の無いものなし・台帳 ${SKELETON_BUDGETS.length} 年度）`);
+  }
+
   // --------------------------------------------------------------------------
   // ② 表示専用フィールドの汚染（#190）
   // --------------------------------------------------------------------------
@@ -4587,6 +4658,6 @@ export const ROADMAP_PLAN: RoadmapItem[] = ${JSON.stringify(ROADMAP, null, 2)};
     throw new Error(`生成物の整合チェックに失敗（${problems.length}件）`);
   }
   console.log(
-    `✓ 生成物どうしの整合チェック（/coverage の件数 = 配信シャードの件数 / 事業報告の収録漏れ / URL スラグ / 年度間クロスチェーン / 表示専用フィールドの汚染 / 系列色）`,
+    `✓ 生成物どうしの整合チェック（/coverage の件数 = 配信シャードの件数 / 事業報告の収録漏れ / URL スラグ / 年度間クロスチェーン / 骨格予算の翌年度 / 表示専用フィールドの汚染 / 系列色）`,
   );
 }
