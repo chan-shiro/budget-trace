@@ -1,0 +1,12 @@
+{
+  "sourceId": "isahaya-kanbetsu-r1",
+  "files": [
+    {
+      "filename": "dc4f7a9e5c55e572d4f9c3ff7ae67d69.pdf",
+      "sha256": "85bb2f5fe23c7250e4f2fd0709ba8d724d1235eb947f9927671aea29147b1048",
+      "bytes": 212233,
+      "fetchedAt": "2026-09-11T15:55:43.417Z",
+      "fetchedFrom": "https://warp.ndl.go.jp/20210306/20210304110335/https://www.city.isahaya.nagasaki.jp/wp-content/uploads/2019/03/dc4f7a9e5c55e572d4f9c3ff7ae67d69.pdf"
+    }
+  ]
+}

@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 247,
+  "budgetCount": 252,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 1846,
-  "fileCount": 3048,
-  "archivedCount": 1701,
+  "sourceCount": 1907,
+  "fileCount": 3109,
+  "archivedCount": 1755,
   "licenseOpen": 102,
-  "licensePermission": 1521,
+  "licensePermission": 1582,
   "licenseUnverified": 223,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -59,6 +59,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "いわき市",
       "code": "072044",
+      "years": 18,
+      "range": "H20〜R8（18年度）"
+    },
+    {
+      "name": "成田市",
+      "code": "122114",
       "years": 18,
       "range": "H20〜R8（18年度）"
     },
@@ -191,6 +197,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "徳島市",
       "code": "362018",
+      "years": 15,
+      "range": "H24〜R8（15年度）"
+    },
+    {
+      "name": "諫早市",
+      "code": "422045",
       "years": 15,
       "range": "H24〜R8（15年度）"
     },
@@ -429,6 +441,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H25〜R8（10年度）"
     },
     {
+      "name": "木更津市",
+      "code": "122068",
+      "years": 10,
+      "range": "H29〜R8（10年度）"
+    },
+    {
       "name": "東京都",
       "code": "130001",
       "years": 10,
@@ -475,6 +493,12 @@ export const ROADMAP_PROGRESS = {
       "code": "282049",
       "years": 10,
       "range": "H29〜R8（10年度）"
+    },
+    {
+      "name": "周南市",
+      "code": "352152",
+      "years": 10,
+      "range": "H25〜R8（10年度）"
     },
     {
       "name": "佐世保市",
@@ -605,6 +629,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "各務原市",
       "code": "212130",
+      "years": 8,
+      "range": "H31〜R8（8年度）"
+    },
+    {
+      "name": "焼津市",
+      "code": "222127",
       "years": 8,
       "range": "H31〜R8（8年度）"
     },

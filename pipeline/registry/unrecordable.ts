@@ -1325,4 +1325,38 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     url: "https://www.city.ibaraki-koga.lg.jp/soshiki/zaisei/2/index.html",
     checkedOn: "2026-09-11", ref: "docs/data-sources.md §13-35",
   },
+  {
+    // 成田市（122114）。H20・H22〜R8 の18年度は「当初予算の概要」で収録済み（§13-36）。
+    // ⚠ H21 の款別値は H22 の前年度列に入っているので、鎖の値としては欠けていない。
+    code: "122114", name: "成田市", dataset: "budget",
+    fiscalYears: ["H21"],
+    categories: ["scanned-image"],
+    reason:
+      "「平成21年度当初予算の概要」がスキャン画像で、取り出せる文字が27字しかない（実測）。",
+    url: "https://www.city.narita.chiba.jp/shisei/page085300.html",
+    checkedOn: "2026-09-12", ref: "docs/data-sources.md §13-36",
+  },
+  {
+    // 周南市（352152）。H25〜R8 のうち10年度は収録済み（§13-36）。
+    // ⚠ この4年度が抜けるので、鎖は H25〜H27 と R2〜R8 の2本に割れる。
+    code: "352152", name: "周南市", dataset: "budget",
+    fiscalYears: ["H31", "H30", "H29", "H28"],
+    categories: ["scanned-image"],
+    reason:
+      "当初予算の概要・予算説明参考資料・予算書のいずれもスキャン画像で、埋め込みフォントが0本（実測）。" +
+      "H30 の予算書だけは一部にテキスト層があるが、歳出の総括ページが帯状の画像で、片側しか取り出せない。",
+    url: "https://www.city.shunan.lg.jp/soshiki/11/2575.html",
+    checkedOn: "2026-09-12", ref: "docs/data-sources.md §13-36",
+  },
+  {
+    // 焼津市（222127）。R8〜R2 と H31 の8年度は収録済み（§13-36）。
+    // ⚠ H30 の表の中身は H31 の前年度列と21款すべて一致することを偵察が画像で確認しており、鎖の値は欠けていない。
+    code: "222127", name: "焼津市", dataset: "budget",
+    fiscalYears: ["H30"],
+    categories: ["broken-text-layer"],
+    reason:
+      "「当初予算（案）の概要」の款別表がアウトライン化されていて、取り出せる文字が0字（画像ではないので復号でも直らない）。",
+    url: "https://www.city.yaizu.lg.jp/city-info/finance/tosho-yosan.html",
+    checkedOn: "2026-09-12", ref: "docs/data-sources.md §13-36",
+  },
 ];

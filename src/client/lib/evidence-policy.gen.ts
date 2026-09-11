@@ -15822,5 +15822,371 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://web.archive.org/web/20210922150347id_/http://www.city.kuwana.lg.jp/index.cfm/25,47396,c,html/47396/H28soukatsu.pdf",
     "license": "本Webサイトで掲載している、情報・文章・画像などのコンテンツデータについて、特別に許可しているページを除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。本Webサイトに掲載している著作物(文章・画像・映像・音声など)から、プログラムにかかわる著作権は、「桑名市」もしくは、桑名市に情報提供いただいている提供元に帰属します。",
     "target": "file"
+  },
+  "/sources/narita-yosan-gaiyou-r8/000214475.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.narita.chiba.jp/content/000214475.pdf",
+    "license": "このサイトの文章・画像は著作権により保護されていますので、無断での転用・転載はご遠慮ください。",
+    "target": "file"
+  },
+  "/sources/narita-yosan-gaiyou-r7/000193432.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.narita.chiba.jp/content/000193432.pdf",
+    "license": "このサイトの文章・画像は著作権により保護されていますので、無断での転用・転載はご遠慮ください。",
+    "target": "file"
+  },
+  "/sources/narita-yosan-gaiyou-r6/000172717.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.narita.chiba.jp/content/000172717.pdf",
+    "license": "このサイトの文章・画像は著作権により保護されていますので、無断での転用・転載はご遠慮ください。",
+    "target": "file"
+  },
+  "/sources/narita-yosan-gaiyou-r5/000150306.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.narita.chiba.jp/content/000150306.pdf",
+    "license": "このサイトの文章・画像は著作権により保護されていますので、無断での転用・転載はご遠慮ください。",
+    "target": "file"
+  },
+  "/sources/narita-yosan-gaiyou-r4/000130230.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.narita.chiba.jp/content/000130230.pdf",
+    "license": "このサイトの文章・画像は著作権により保護されていますので、無断での転用・転載はご遠慮ください。",
+    "target": "file"
+  },
+  "/sources/narita-yosan-gaiyou-r3/000108551.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.narita.chiba.jp/content/000108551.pdf",
+    "license": "このサイトの文章・画像は著作権により保護されていますので、無断での転用・転載はご遠慮ください。",
+    "target": "file"
+  },
+  "/sources/narita-yosan-gaiyou-r2/000090406.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.narita.chiba.jp/content/000090406.pdf",
+    "license": "このサイトの文章・画像は著作権により保護されていますので、無断での転用・転載はご遠慮ください。",
+    "target": "file"
+  },
+  "/sources/narita-yosan-gaiyou-h31/000076024.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.narita.chiba.jp/content/000076024.pdf",
+    "license": "このサイトの文章・画像は著作権により保護されていますので、無断での転用・転載はご遠慮ください。",
+    "target": "file"
+  },
+  "/sources/narita-yosan-gaiyou-h30/000062616.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.narita.chiba.jp/content/000062616.pdf",
+    "license": "このサイトの文章・画像は著作権により保護されていますので、無断での転用・転載はご遠慮ください。",
+    "target": "file"
+  },
+  "/sources/narita-yosan-gaiyou-h29/000044905.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.narita.chiba.jp/content/000044905.pdf",
+    "license": "このサイトの文章・画像は著作権により保護されていますので、無断での転用・転載はご遠慮ください。",
+    "target": "file"
+  },
+  "/sources/narita-yosan-gaiyou-h28/000002316.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.narita.chiba.jp/content/000002316.pdf",
+    "license": "このサイトの文章・画像は著作権により保護されていますので、無断での転用・転載はご遠慮ください。",
+    "target": "file"
+  },
+  "/sources/narita-yosan-gaiyou-h27/000002317.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.narita.chiba.jp/content/000002317.pdf",
+    "license": "このサイトの文章・画像は著作権により保護されていますので、無断での転用・転載はご遠慮ください。",
+    "target": "file"
+  },
+  "/sources/narita-yosan-gaiyou-h26/000002324.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.narita.chiba.jp/content/000002324.pdf",
+    "license": "このサイトの文章・画像は著作権により保護されていますので、無断での転用・転載はご遠慮ください。",
+    "target": "file"
+  },
+  "/sources/narita-yosan-gaiyou-h25/000002325.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.narita.chiba.jp/content/000002325.pdf",
+    "license": "このサイトの文章・画像は著作権により保護されていますので、無断での転用・転載はご遠慮ください。",
+    "target": "file"
+  },
+  "/sources/narita-yosan-gaiyou-h24/000002326.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.narita.chiba.jp/content/000002326.pdf",
+    "license": "このサイトの文章・画像は著作権により保護されていますので、無断での転用・転載はご遠慮ください。",
+    "target": "file"
+  },
+  "/sources/narita-yosan-gaiyou-h23/000002327.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.narita.chiba.jp/content/000002327.pdf",
+    "license": "このサイトの文章・画像は著作権により保護されていますので、無断での転用・転載はご遠慮ください。",
+    "target": "file"
+  },
+  "/sources/narita-yosan-gaiyou-h22/000002328.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.narita.chiba.jp/content/000002328.pdf",
+    "license": "このサイトの文章・画像は著作権により保護されていますので、無断での転用・転載はご遠慮ください。",
+    "target": "file"
+  },
+  "/sources/narita-yosan-gaiyou-h20/000002330.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.narita.chiba.jp/content/000002330.pdf",
+    "license": "このサイトの文章・画像は著作権により保護されていますので、無断での転用・転載はご遠慮ください。",
+    "target": "file"
+  },
+  "/sources/yaizu-soukatsu-r8/01_r8soukatsu_ippankaikeinojyokyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yaizu.lg.jp/documents/244/01_r8soukatsu_ippankaikeinojyokyou.pdf",
+    "license": "「焼津市ホームページ」に掲載されている文章、写真、イラスト、画像等の著作権は、焼津市またはコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ページに記載されている課・所属などへお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/yaizu-soukatsu-r7/01_r7soukatsu_ippankaikeinojyokyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yaizu.lg.jp/documents/244/01_r7soukatsu_ippankaikeinojyokyou.pdf",
+    "license": "「焼津市ホームページ」に掲載されている文章、写真、イラスト、画像等の著作権は、焼津市またはコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ページに記載されている課・所属などへお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/yaizu-soukatsu-r6/01_r6tousyoyosannnogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yaizu.lg.jp/documents/244/01_r6tousyoyosannnogaiyou.pdf",
+    "license": "「焼津市ホームページ」に掲載されている文章、写真、イラスト、画像等の著作権は、焼津市またはコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ページに記載されている課・所属などへお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/yaizu-soukatsu-r5/01_ippannkaikeinojoukyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yaizu.lg.jp/documents/244/01_ippannkaikeinojoukyou.pdf",
+    "license": "「焼津市ホームページ」に掲載されている文章、写真、イラスト、画像等の著作権は、焼津市またはコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ページに記載されている課・所属などへお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/yaizu-soukatsu-r4/r4gaiyo_soukatsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yaizu.lg.jp/documents/244/r4gaiyo_soukatsu.pdf",
+    "license": "「焼津市ホームページ」に掲載されている文章、写真、イラスト、画像等の著作権は、焼津市またはコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ページに記載されている課・所属などへお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/yaizu-soukatsu-r3/r3gaiyo_soukatu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yaizu.lg.jp/documents/244/r3gaiyo_soukatu.pdf",
+    "license": "「焼津市ホームページ」に掲載されている文章、写真、イラスト、画像等の著作権は、焼津市またはコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ページに記載されている課・所属などへお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/yaizu-soukatsu-r2/r2gaiyo_soukatu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yaizu.lg.jp/documents/244/r2gaiyo_soukatu.pdf",
+    "license": "「焼津市ホームページ」に掲載されている文章、写真、イラスト、画像等の著作権は、焼津市またはコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ページに記載されている課・所属などへお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/yaizu-soukatsu-h31/h31gaiyo_soukatu.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20220308015921id_/https://www.city.yaizu.lg.jp/g02-003/documents/h31gaiyo_soukatu.pdf",
+    "license": "「焼津市ホームページ」に掲載されている文章、写真、イラスト、画像等の著作権は、焼津市またはコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。利用許諾については各ページに記載されている課・所属などへお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/shunan-yosangaiyou-r8/122154.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.shunan.lg.jp/soshiki/11/2575.html",
+    "license": "「周南市ウェブサイト」（以下、当サイトといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として周南市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。また、当サイトに掲載された社名・商品名などの名称は、一般に関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、周南市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/shunan-yosangaiyou-r7/108319.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.shunan.lg.jp/soshiki/11/2575.html",
+    "license": "「周南市ウェブサイト」（以下、当サイトといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として周南市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。また、当サイトに掲載された社名・商品名などの名称は、一般に関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、周南市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/shunan-yosangaiyou-r6/98970.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.shunan.lg.jp/soshiki/11/2575.html",
+    "license": "「周南市ウェブサイト」（以下、当サイトといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として周南市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。また、当サイトに掲載された社名・商品名などの名称は、一般に関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、周南市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/shunan-yosangaiyou-r5/90368.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.shunan.lg.jp/soshiki/11/2575.html",
+    "license": "「周南市ウェブサイト」（以下、当サイトといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として周南市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。また、当サイトに掲載された社名・商品名などの名称は、一般に関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、周南市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/shunan-yosangaiyou-r3/65999.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.shunan.lg.jp/soshiki/11/2575.html",
+    "license": "「周南市ウェブサイト」（以下、当サイトといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として周南市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。また、当サイトに掲載された社名・商品名などの名称は、一般に関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、周南市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/shunan-yosangaiyou-r2/53917.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.shunan.lg.jp/soshiki/11/2575.html",
+    "license": "「周南市ウェブサイト」（以下、当サイトといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として周南市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。また、当サイトに掲載された社名・商品名などの名称は、一般に関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、周南市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/shunan-yosangaiyou-h27/12592.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.shunan.lg.jp/soshiki/11/2575.html",
+    "license": "「周南市ウェブサイト」（以下、当サイトといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として周南市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。また、当サイトに掲載された社名・商品名などの名称は、一般に関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、周南市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/shunan-yosangaiyou-h26/12613.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.shunan.lg.jp/soshiki/11/2575.html",
+    "license": "「周南市ウェブサイト」（以下、当サイトといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として周南市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。また、当サイトに掲載された社名・商品名などの名称は、一般に関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、周南市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/shunan-yosangaiyou-h25/12615.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.shunan.lg.jp/soshiki/11/2575.html",
+    "license": "「周南市ウェブサイト」（以下、当サイトといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として周南市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。また、当サイトに掲載された社名・商品名などの名称は、一般に関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、周南市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/shunan-yosansho-r4/80610.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.shunan.lg.jp/soshiki/11/2575.html",
+    "license": "「周南市ウェブサイト」（以下、当サイトといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として周南市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。また、当サイトに掲載された社名・商品名などの名称は、一般に関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、周南市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/isahaya-kanbetsu-r8/25213.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.isahaya.nagasaki.jp/uploaded/attachment/25213.pdf",
+    "license": "諫早市ホームページに掲載されている文字、写真、イラストなどの個々の情報に関する著作権は、原則として諫早市に帰属します。（ただし、一部の画像等の著作権は、原著作者が所有しています。）「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "file"
+  },
+  "/sources/isahaya-kanbetsu-r7/19718.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.isahaya.nagasaki.jp/uploaded/attachment/19718.pdf",
+    "license": "諫早市ホームページに掲載されている文字、写真、イラストなどの個々の情報に関する著作権は、原則として諫早市に帰属します。（ただし、一部の画像等の著作権は、原著作者が所有しています。）「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "file"
+  },
+  "/sources/isahaya-kanbetsu-r6/15688.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.isahaya.nagasaki.jp/uploaded/attachment/15688.pdf",
+    "license": "諫早市ホームページに掲載されている文字、写真、イラストなどの個々の情報に関する著作権は、原則として諫早市に帰属します。（ただし、一部の画像等の著作権は、原著作者が所有しています。）「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "file"
+  },
+  "/sources/isahaya-kanbetsu-r5/11102.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20230605/20230605090205/https://www.city.isahaya.nagasaki.jp/uploaded/attachment/11102.pdf",
+    "license": "諫早市ホームページに掲載されている文字、写真、イラストなどの個々の情報に関する著作権は、原則として諫早市に帰属します。（ただし、一部の画像等の著作権は、原著作者が所有しています。）「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "file"
+  },
+  "/sources/isahaya-kanbetsu-r4/5053.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20230605/20230605090205/https://www.city.isahaya.nagasaki.jp/uploaded/attachment/5053.pdf",
+    "license": "諫早市ホームページに掲載されている文字、写真、イラストなどの個々の情報に関する著作権は、原則として諫早市に帰属します。（ただし、一部の画像等の著作権は、原著作者が所有しています。）「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "file"
+  },
+  "/sources/isahaya-kanbetsu-r3/5014.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20230605/20230605090205/https://www.city.isahaya.nagasaki.jp/uploaded/attachment/5014.pdf",
+    "license": "諫早市ホームページに掲載されている文字、写真、イラストなどの個々の情報に関する著作権は、原則として諫早市に帰属します。（ただし、一部の画像等の著作権は、原著作者が所有しています。）「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "file"
+  },
+  "/sources/isahaya-kanbetsu-r2/4967.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20230307/20230304094600/https://www.city.isahaya.nagasaki.jp/uploaded/attachment/4967.pdf",
+    "license": "諫早市ホームページに掲載されている文字、写真、イラストなどの個々の情報に関する著作権は、原則として諫早市に帰属します。（ただし、一部の画像等の著作権は、原著作者が所有しています。）「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "file"
+  },
+  "/sources/isahaya-kanbetsu-r1/dc4f7a9e5c55e572d4f9c3ff7ae67d69.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20210306/20210304110335/https://www.city.isahaya.nagasaki.jp/wp-content/uploads/2019/03/dc4f7a9e5c55e572d4f9c3ff7ae67d69.pdf",
+    "license": "諫早市ホームページに掲載されている文字、写真、イラストなどの個々の情報に関する著作権は、原則として諫早市に帰属します。（ただし、一部の画像等の著作権は、原著作者が所有しています。）「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "file"
+  },
+  "/sources/isahaya-kanbetsu-h30/dc4f7a9e5c55e572d4f9c3ff7ae67d69.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20190306/20190304094331/http://www.city.isahaya.nagasaki.jp/wp-content/uploads/2018/04/dc4f7a9e5c55e572d4f9c3ff7ae67d69.pdf",
+    "license": "諫早市ホームページに掲載されている文字、写真、イラストなどの個々の情報に関する著作権は、原則として諫早市に帰属します。（ただし、一部の画像等の著作権は、原著作者が所有しています。）「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "file"
+  },
+  "/sources/isahaya-kanbetsu-h29/dc4f7a9e5c55e572d4f9c3ff7ae67d69.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20170305/20170304093308/http://www.city.isahaya.nagasaki.jp/wp-content/uploads/2016/12/dc4f7a9e5c55e572d4f9c3ff7ae67d69.pdf",
+    "license": "諫早市ホームページに掲載されている文字、写真、イラストなどの個々の情報に関する著作権は、原則として諫早市に帰属します。（ただし、一部の画像等の著作権は、原著作者が所有しています。）「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "file"
+  },
+  "/sources/isahaya-kanbetsu-h28/50cc56a858ce6e208d46ebf47bd0d986.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20170305/20170304093308/http://www.city.isahaya.nagasaki.jp/wp-content/uploads/2016/02/50cc56a858ce6e208d46ebf47bd0d986.pdf",
+    "license": "諫早市ホームページに掲載されている文字、写真、イラストなどの個々の情報に関する著作権は、原則として諫早市に帰属します。（ただし、一部の画像等の著作権は、原著作者が所有しています。）「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "file"
+  },
+  "/sources/isahaya-kanbetsu-h27/a20a4dace210d6f78c3674bd106701ca1.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20170305/20170304093308/http://www.city.isahaya.nagasaki.jp/wp-content/uploads/2014/12/a20a4dace210d6f78c3674bd106701ca1.pdf",
+    "license": "諫早市ホームページに掲載されている文字、写真、イラストなどの個々の情報に関する著作権は、原則として諫早市に帰属します。（ただし、一部の画像等の著作権は、原著作者が所有しています。）「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "file"
+  },
+  "/sources/isahaya-kanbetsu-h26/9d46828e4a5d018eecb67f4563282dde.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20160305/20160304110905/http://www.city.isahaya.nagasaki.jp/wp-content/uploads/2014/04/9d46828e4a5d018eecb67f4563282dde.pdf",
+    "license": "諫早市ホームページに掲載されている文字、写真、イラストなどの個々の情報に関する著作権は、原則として諫早市に帰属します。（ただし、一部の画像等の著作権は、原著作者が所有しています。）「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "file"
+  },
+  "/sources/isahaya-kanbetsu-h25/25yosan_00_21.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20150307/20150307023608/http://www.city.isahaya.nagasaki.jp/wp-content/uploads/2013/12/25yosan_00_21.pdf",
+    "license": "諫早市ホームページに掲載されている文字、写真、イラストなどの個々の情報に関する著作権は、原則として諫早市に帰属します。（ただし、一部の画像等の著作権は、原著作者が所有しています。）「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "file"
+  },
+  "/sources/isahaya-kanbetsu-h24/24yosan_00_21.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20150307/20150307023608/http://www.city.isahaya.nagasaki.jp/wp-content/uploads/2013/12/24yosan_00_21.pdf",
+    "license": "諫早市ホームページに掲載されている文字、写真、イラストなどの個々の情報に関する著作権は、原則として諫早市に帰属します。（ただし、一部の画像等の著作権は、原著作者が所有しています。）「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "file"
+  },
+  "/sources/kisarazu-yosan-gaiyo-r8/20260224.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kisarazu.lg.jp/material/files/group/12/20260224.pdf",
+    "license": "このホームページ上の各ファイル（テキスト、画像、PDF、その他のデータ）及びその内容に関する諸権利は、原則として木更津市に帰属します。なお、一部の画像等の著作権は、原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載を希望する方は、ページ下部「このページに関するお問い合わせ」にある連絡先までお問い合わせください。また、いかなる場合であっても、掲載資料の使用に際して発生した損害については一切の責任を負いません。",
+    "target": "file"
+  },
+  "/sources/kisarazu-yosan-gaiyo-r7/r07gaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kisarazu.lg.jp/material/files/group/12/r07gaiyo.pdf",
+    "license": "このホームページ上の各ファイル（テキスト、画像、PDF、その他のデータ）及びその内容に関する諸権利は、原則として木更津市に帰属します。なお、一部の画像等の著作権は、原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載を希望する方は、ページ下部「このページに関するお問い合わせ」にある連絡先までお問い合わせください。また、いかなる場合であっても、掲載資料の使用に際して発生した損害については一切の責任を負いません。",
+    "target": "file"
+  },
+  "/sources/kisarazu-yosan-gaiyo-r6/202402292.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kisarazu.lg.jp/material/files/group/12/202402292.pdf",
+    "license": "このホームページ上の各ファイル（テキスト、画像、PDF、その他のデータ）及びその内容に関する諸権利は、原則として木更津市に帰属します。なお、一部の画像等の著作権は、原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載を希望する方は、ページ下部「このページに関するお問い合わせ」にある連絡先までお問い合わせください。また、いかなる場合であっても、掲載資料の使用に際して発生した損害については一切の責任を負いません。",
+    "target": "file"
+  },
+  "/sources/kisarazu-yosan-gaiyo-r5/r5gaiyou.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20230509/20230508065556/https://www.city.kisarazu.lg.jp/_res/projects/default_project/_page_/001/002/490/r5gaiyou.pdf",
+    "license": "このホームページ上の各ファイル（テキスト、画像、PDF、その他のデータ）及びその内容に関する諸権利は、原則として木更津市に帰属します。なお、一部の画像等の著作権は、原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載を希望する方は、ページ下部「このページに関するお問い合わせ」にある連絡先までお問い合わせください。また、いかなる場合であっても、掲載資料の使用に際して発生した損害については一切の責任を負いません。",
+    "target": "file"
+  },
+  "/sources/kisarazu-yosan-gaiyo-r4/r4gaiyou.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20230509/20230508065556/https://www.city.kisarazu.lg.jp/_res/projects/default_project/_page_/001/002/490/r4gaiyou.pdf",
+    "license": "このホームページ上の各ファイル（テキスト、画像、PDF、その他のデータ）及びその内容に関する諸権利は、原則として木更津市に帰属します。なお、一部の画像等の著作権は、原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載を希望する方は、ページ下部「このページに関するお問い合わせ」にある連絡先までお問い合わせください。また、いかなる場合であっても、掲載資料の使用に際して発生した損害については一切の責任を負いません。",
+    "target": "file"
+  },
+  "/sources/kisarazu-yosan-gaiyo-r3/yosannnogaiyou.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20230509/20230508065556/https://www.city.kisarazu.lg.jp/_res/projects/default_project/_page_/001/002/490/yosannnogaiyou.pdf",
+    "license": "このホームページ上の各ファイル（テキスト、画像、PDF、その他のデータ）及びその内容に関する諸権利は、原則として木更津市に帰属します。なお、一部の画像等の著作権は、原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載を希望する方は、ページ下部「このページに関するお問い合わせ」にある連絡先までお問い合わせください。また、いかなる場合であっても、掲載資料の使用に際して発生した損害については一切の責任を負いません。",
+    "target": "file"
+  },
+  "/sources/kisarazu-yosan-gaiyo-r2/r2_yosangaiyou.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20210206/20210205121223/https://www.city.kisarazu.lg.jp/_res/projects/default_project/_page_/001/002/490/r2_yosangaiyou.pdf",
+    "license": "このホームページ上の各ファイル（テキスト、画像、PDF、その他のデータ）及びその内容に関する諸権利は、原則として木更津市に帰属します。なお、一部の画像等の著作権は、原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載を希望する方は、ページ下部「このページに関するお問い合わせ」にある連絡先までお問い合わせください。また、いかなる場合であっても、掲載資料の使用に際して発生した損害については一切の責任を負いません。",
+    "target": "file"
+  },
+  "/sources/kisarazu-yosan-gaiyo-h31/h31yosan-gaiyou.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20200206/20200205130007/https://www.city.kisarazu.lg.jp/_res/projects/default_project/_page_/001/002/490/h31yosan-gaiyou.pdf",
+    "license": "このホームページ上の各ファイル（テキスト、画像、PDF、その他のデータ）及びその内容に関する諸権利は、原則として木更津市に帰属します。なお、一部の画像等の著作権は、原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載を希望する方は、ページ下部「このページに関するお問い合わせ」にある連絡先までお問い合わせください。また、いかなる場合であっても、掲載資料の使用に際して発生した損害については一切の責任を負いません。",
+    "target": "file"
+  },
+  "/sources/kisarazu-yosan-gaiyo-h30/h30yosan-gaiyou.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20200206/20200205130007/https://www.city.kisarazu.lg.jp/_res/projects/default_project/_page_/001/002/490/h30yosan-gaiyou.pdf",
+    "license": "このホームページ上の各ファイル（テキスト、画像、PDF、その他のデータ）及びその内容に関する諸権利は、原則として木更津市に帰属します。なお、一部の画像等の著作権は、原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載を希望する方は、ページ下部「このページに関するお問い合わせ」にある連絡先までお問い合わせください。また、いかなる場合であっても、掲載資料の使用に際して発生した損害については一切の責任を負いません。",
+    "target": "file"
+  },
+  "/sources/kisarazu-yosan-gaiyo-h29/h29yosan-gaiyou.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20200206/20200205130007/https://www.city.kisarazu.lg.jp/_res/projects/default_project/_page_/001/002/490/h29yosan-gaiyou.pdf",
+    "license": "このホームページ上の各ファイル（テキスト、画像、PDF、その他のデータ）及びその内容に関する諸権利は、原則として木更津市に帰属します。なお、一部の画像等の著作権は、原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載を希望する方は、ページ下部「このページに関するお問い合わせ」にある連絡先までお問い合わせください。また、いかなる場合であっても、掲載資料の使用に際して発生した損害については一切の責任を負いません。",
+    "target": "file"
   }
 };
