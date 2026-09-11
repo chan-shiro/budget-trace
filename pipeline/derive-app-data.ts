@@ -3898,6 +3898,18 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = ${JSON.stringif
     unrecordableByCode.set(u.code, set);
   }
 
+  // ⚠ **書き出す前に検査する** — 「調べたが収録できなかった」理由も**プレーンテキストとして**描画される（`/coverage` と
+  // 市区町村選択の両方）。**roadmap と同じ規約を機械的に守らせる**（#236）— registry の
+  // コメントには `**` を書いてよいが、**`reason` は市民が読む本文**なので落とす。
+  for (const u of UNRECORDABLE) {
+    if (u.reason.includes("**") || /\[.+\]\(.+\)/.test(u.reason) || u.reason.includes("⚠")) {
+      throw new Error(
+        `unrecordable「${u.name}（${u.code}）${u.dataset}」の reason: Markdown 記法（** や リンク）と` +
+          `保守者向けの印（⚠）は画面にそのまま出ます。強調も注意喚起も registry のコメント側に書いてください`,
+      );
+    }
+  }
+
   // ---- 「調べたが収録できない」を全画面へ配る → src/client/lib/unrecordable.gen.ts ----
   // **/coverage だけが知っていても足りない**（2026-07-29）。読者が実際に歩くのは
   // 市区町村選択とダッシュボードで、そこでは「調べたが収録できない」団体が
