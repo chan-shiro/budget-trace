@@ -37,6 +37,12 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "license": "富士河口湖町公式ホームページに掲載している個々の情報（文章，写真，イラストなど）は，著作権の対象となっています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
     "target": "file"
   },
+  "/sources/saitama-ken-yosangaiyou-r8/03-r8-02-siryou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.saitama.lg.jp/documents/274057/03-r8-02-siryou2.pdf",
+    "license": "埼玉県ホームページに掲載される記事、写真、図画、その他データ類の著作権は、埼玉県、またはその情報提供者に帰属します。また、そのすべてについて、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、埼玉県の許可・承諾を得ないままほかのメディアへ転載することはお断りします。",
+    "target": "file"
+  },
   "/sources/chiba-ken-yosansho-r8/202602-5-y-i-yosan.pdf": {
     "mode": "origin",
     "href": "https://www.pref.chiba.lg.jp/zaisei/gian/documents/202602-5-y-i-yosan.pdf",
@@ -14027,6 +14033,66 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "mode": "archive",
     "href": "https://warp.ndl.go.jp/20181113/20181112225554/https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/002/618/03_001.pdf",
     "license": "磐田市ホームページに掲載しているコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は磐田市に帰属します。また、一部の画像などの著作権は原著作者が所有しているものもあります。磐田市ホームページ上の文書・画像などの無断使用・転載、二次利用を原則禁止します。ただし掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に広報広聴・シティプロモーション課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "file"
+  },
+  "/sources/niiza-yosansho-r8/70073.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.niiza.lg.jp/uploaded/attachment/70073.pdf",
+    "license": "新座市ホームページに掲載している記事、画像、データ類の著作権は、新座市又はその情報提供者に帰属します。また、その全てについて、「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、新座市の許可・承諾を得ないままほかの媒体へ転載することはできません。新座市ホームページに掲載している情報や画像等の転載を希望する場合は、必ず転載の許可を得てください。",
+    "target": "file"
+  },
+  "/sources/niiza-yosansho-r7/64351.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.niiza.lg.jp/uploaded/attachment/64351.pdf",
+    "license": "新座市ホームページに掲載している記事、画像、データ類の著作権は、新座市又はその情報提供者に帰属します。また、その全てについて、「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、新座市の許可・承諾を得ないままほかの媒体へ転載することはできません。新座市ホームページに掲載している情報や画像等の転載を希望する場合は、必ず転載の許可を得てください。",
+    "target": "file"
+  },
+  "/sources/niiza-yosansho-r6/58880.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.niiza.lg.jp/uploaded/attachment/58880.pdf",
+    "license": "新座市ホームページに掲載している記事、画像、データ類の著作権は、新座市又はその情報提供者に帰属します。また、その全てについて、「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、新座市の許可・承諾を得ないままほかの媒体へ転載することはできません。新座市ホームページに掲載している情報や画像等の転載を希望する場合は、必ず転載の許可を得てください。",
+    "target": "file"
+  },
+  "/sources/niiza-yosansho-r5/54112.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.niiza.lg.jp/uploaded/attachment/54112.pdf",
+    "license": "新座市ホームページに掲載している記事、画像、データ類の著作権は、新座市又はその情報提供者に帰属します。また、その全てについて、「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、新座市の許可・承諾を得ないままほかの媒体へ転載することはできません。新座市ホームページに掲載している情報や画像等の転載を希望する場合は、必ず転載の許可を得てください。",
+    "target": "file"
+  },
+  "/sources/niiza-yosansho-h29/23296.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20180418/20180416030713/https://www.city.niiza.lg.jp/uploaded/attachment/23296.pdf",
+    "license": "新座市ホームページに掲載している記事、画像、データ類の著作権は、新座市又はその情報提供者に帰属します。また、その全てについて、「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、新座市の許可・承諾を得ないままほかの媒体へ転載することはできません。新座市ホームページに掲載している情報や画像等の転載を希望する場合は、必ず転載の許可を得てください。",
+    "target": "file"
+  },
+  "/sources/niiza-yosansho-h28/19727.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20180418/20180416030714/https://www.city.niiza.lg.jp/uploaded/attachment/19727.pdf",
+    "license": "新座市ホームページに掲載している記事、画像、データ類の著作権は、新座市又はその情報提供者に帰属します。また、その全てについて、「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、新座市の許可・承諾を得ないままほかの媒体へ転載することはできません。新座市ホームページに掲載している情報や画像等の転載を希望する場合は、必ず転載の許可を得てください。",
+    "target": "file"
+  },
+  "/sources/niiza-yosansho-h27/15369.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20180418/20180416030715/https://www.city.niiza.lg.jp/uploaded/attachment/15369.pdf",
+    "license": "新座市ホームページに掲載している記事、画像、データ類の著作権は、新座市又はその情報提供者に帰属します。また、その全てについて、「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、新座市の許可・承諾を得ないままほかの媒体へ転載することはできません。新座市ホームページに掲載している情報や画像等の転載を希望する場合は、必ず転載の許可を得てください。",
+    "target": "file"
+  },
+  "/sources/niiza-yosansho-h26/12387.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20180418/20180416030717/https://www.city.niiza.lg.jp/uploaded/attachment/12387.pdf",
+    "license": "新座市ホームページに掲載している記事、画像、データ類の著作権は、新座市又はその情報提供者に帰属します。また、その全てについて、「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、新座市の許可・承諾を得ないままほかの媒体へ転載することはできません。新座市ホームページに掲載している情報や画像等の転載を希望する場合は、必ず転載の許可を得てください。",
+    "target": "file"
+  },
+  "/sources/niiza-yosansho-h25/9238.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20170715/20170714011553/https://www.city.niiza.lg.jp/uploaded/attachment/9238.pdf",
+    "license": "新座市ホームページに掲載している記事、画像、データ類の著作権は、新座市又はその情報提供者に帰属します。また、その全てについて、「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、新座市の許可・承諾を得ないままほかの媒体へ転載することはできません。新座市ホームページに掲載している情報や画像等の転載を希望する場合は、必ず転載の許可を得てください。",
+    "target": "file"
+  },
+  "/sources/niiza-yosangaiyou-r2/35518.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20220711/20220709010451/https://www.city.niiza.lg.jp/uploaded/attachment/35518.pdf",
+    "license": "新座市ホームページに掲載している記事、画像、データ類の著作権は、新座市又はその情報提供者に帰属します。また、その全てについて、「私的利用のための複製」や「引用」など著作権法上認められた場合を除き、新座市の許可・承諾を得ないままほかの媒体へ転載することはできません。新座市ホームページに掲載している情報や画像等の転載を希望する場合は、必ず転載の許可を得てください。",
     "target": "file"
   },
   "/sources/hitachi-yosan-gaiyou-r8/r8yosannnogaiyou01.pdf": {
