@@ -127,7 +127,7 @@ const isArchiveUrl = (url: string): boolean => /^https?:\/\/(web\.archive\.org|w
 //   「帰属表示」は①権利が誰に属するかの表示 ②引用元を明記せよという要求 の二義で、
 //   群の名前にすると読む人ごとに切り方が変わる（レビューで実際に割れた）。
 //   列挙も腐る（レビューが富山12・豊田2・名古屋7 の抜けを実測で見つけた）。
-//   ⇒ **正は `coverage.json` の `licenseUnverified`**。共通点は**禁止・不許可を述べる述語が1つも無い**こと。
+//   ⇒ **件数の正は `coverage.json` の `summary.licenseUnverified`、団体は `entities.<code>.sources[].licenseClass`**。共通点は**禁止・不許可を述べる述語が1つも無い**こと。
 //   例: 米子（問い合わせ先だけ）・福岡県（権利の所在だけ）・四日市（引用元明記・改変不可・配布時は要確認）・
 //   入間（`All Rights Reserved` だけ）。**これらは語彙では拾えない**（拾おうとすると意訳になる）。
 const licenseClassOf = (lic: string): "open" | "permission-required" | "unverified" =>
