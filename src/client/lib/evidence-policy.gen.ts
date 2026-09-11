@@ -15534,5 +15534,293 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.tsuchiura.lg.jp/shisei/zaseikeikaku-yosan/yosan/h27/page007023.html",
     "license": "土浦市ホームページの画像、レイアウト、デザインおよび構造に関する情報は著作権の対象です。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転用等をすることはできません。",
     "target": "page"
+  },
+  "/sources/ashikaga-yosanan-r8/69965233709f1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ashikaga.tochigi.jp/manage/contents/upload/69965233709f1.pdf",
+    "license": "本サイトに掲載されている各ファイル及びその内容に関する諸権利は、原則として足利市に帰属します。私的利用の範囲や、引用など著作権法上認められる場合を除き、当サイト上の情報を、許可なく使用・複製・転載・販売・改変・印刷配布する行為等は禁止します。",
+    "target": "file"
+  },
+  "/sources/ashikaga-yosanan-r6/65d42b50f3f7b.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ashikaga.tochigi.jp/manage/contents/upload/65d42b50f3f7b.pdf",
+    "license": "本サイトに掲載されている各ファイル及びその内容に関する諸権利は、原則として足利市に帰属します。私的利用の範囲や、引用など著作権法上認められる場合を除き、当サイト上の情報を、許可なく使用・複製・転載・販売・改変・印刷配布する行為等は禁止します。",
+    "target": "file"
+  },
+  "/sources/ashikaga-yosanan-r5/662b5c1f5142f.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ashikaga.tochigi.jp/manage/contents/upload/662b5c1f5142f.pdf",
+    "license": "本サイトに掲載されている各ファイル及びその内容に関する諸権利は、原則として足利市に帰属します。私的利用の範囲や、引用など著作権法上認められる場合を除き、当サイト上の情報を、許可なく使用・複製・転載・販売・改変・印刷配布する行為等は禁止します。",
+    "target": "file"
+  },
+  "/sources/ashikaga-yosanan-r4/633fcc3d48006.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ashikaga.tochigi.jp/manage/contents/upload/633fcc3d48006.pdf",
+    "license": "本サイトに掲載されている各ファイル及びその内容に関する諸権利は、原則として足利市に帰属します。私的利用の範囲や、引用など著作権法上認められる場合を除き、当サイト上の情報を、許可なく使用・複製・転載・販売・改変・印刷配布する行為等は禁止します。",
+    "target": "file"
+  },
+  "/sources/ashikaga-yosanan-r3/633fcc3e1063d.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ashikaga.tochigi.jp/manage/contents/upload/633fcc3e1063d.pdf",
+    "license": "本サイトに掲載されている各ファイル及びその内容に関する諸権利は、原則として足利市に帰属します。私的利用の範囲や、引用など著作権法上認められる場合を除き、当サイト上の情報を、許可なく使用・複製・転載・販売・改変・印刷配布する行為等は禁止します。",
+    "target": "file"
+  },
+  "/sources/ashikaga-yosanan-r2/633fcc3e86362.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ashikaga.tochigi.jp/manage/contents/upload/633fcc3e86362.pdf",
+    "license": "本サイトに掲載されている各ファイル及びその内容に関する諸権利は、原則として足利市に帰属します。私的利用の範囲や、引用など著作権法上認められる場合を除き、当サイト上の情報を、許可なく使用・複製・転載・販売・改変・印刷配布する行為等は禁止します。",
+    "target": "file"
+  },
+  "/sources/ashikaga-yosanan-r1/65280.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20220218080342id_/https://www.city.ashikaga.tochigi.jp/uploaded/attachment/65280.pdf",
+    "license": "本サイトに掲載されている各ファイル及びその内容に関する諸権利は、原則として足利市に帰属します。私的利用の範囲や、引用など著作権法上認められる場合を除き、当サイト上の情報を、許可なく使用・複製・転載・販売・改変・印刷配布する行為等は禁止します。",
+    "target": "file"
+  },
+  "/sources/ashikaga-yosanan-h30/65279.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20220218080342id_/https://www.city.ashikaga.tochigi.jp/uploaded/attachment/65279.pdf",
+    "license": "本サイトに掲載されている各ファイル及びその内容に関する諸権利は、原則として足利市に帰属します。私的利用の範囲や、引用など著作権法上認められる場合を除き、当サイト上の情報を、許可なく使用・複製・転載・販売・改変・印刷配布する行為等は禁止します。",
+    "target": "file"
+  },
+  "/sources/ashikaga-yosanan-h29/39194.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20220218080342id_/https://www.city.ashikaga.tochigi.jp/uploaded/attachment/39194.pdf",
+    "license": "本サイトに掲載されている各ファイル及びその内容に関する諸権利は、原則として足利市に帰属します。私的利用の範囲や、引用など著作権法上認められる場合を除き、当サイト上の情報を、許可なく使用・複製・転載・販売・改変・印刷配布する行為等は禁止します。",
+    "target": "file"
+  },
+  "/sources/ashikaga-yosansetsumeisho-r7/67e3a9e236db6.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ashikaga.tochigi.jp/manage/contents/upload/67e3a9e236db6.pdf",
+    "license": "本サイトに掲載されている各ファイル及びその内容に関する諸権利は、原則として足利市に帰属します。私的利用の範囲や、引用など著作権法上認められる場合を除き、当サイト上の情報を、許可なく使用・複製・転載・販売・改変・印刷配布する行為等は禁止します。",
+    "target": "file"
+  },
+  "/sources/fujieda-soukatsu-r8/01_R8soukatsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fujieda.shizuoka.jp/material/files/group/129/01_R8soukatsu.pdf",
+    "license": "本サイトで提供するすべてのコンテンツ（文章・画像・イラストなど）は、藤枝市の許可なく複製・転用・販売することはできません。",
+    "target": "file"
+  },
+  "/sources/fujieda-soukatsu-r7/01_R7soukatu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fujieda.shizuoka.jp/material/files/group/129/01_R7soukatu.pdf",
+    "license": "本サイトで提供するすべてのコンテンツ（文章・画像・イラストなど）は、藤枝市の許可なく複製・転用・販売することはできません。",
+    "target": "file"
+  },
+  "/sources/fujieda-soukatsu-r6/r6soukatsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fujieda.shizuoka.jp/material/files/group/129/r6soukatsu.pdf",
+    "license": "本サイトで提供するすべてのコンテンツ（文章・画像・イラストなど）は、藤枝市の許可なく複製・転用・販売することはできません。",
+    "target": "file"
+  },
+  "/sources/fujieda-soukatsu-h30/30soukatsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fujieda.shizuoka.jp/material/files/group/129/30soukatsu.pdf",
+    "license": "本サイトで提供するすべてのコンテンツ（文章・画像・イラストなど）は、藤枝市の許可なく複製・転用・販売することはできません。",
+    "target": "file"
+  },
+  "/sources/koga-ibaraki-yosansho-r8/R8_ippankaikei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ibaraki-koga.lg.jp/material/files/group/9/R8_ippankaikei.pdf",
+    "license": "古河市ホームページに掲載している個々の情報（文章、写真、イラストなど）に関する著作権は、原則として古河市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。古河市ホームページは利用目的を問わず自由な閲覧が可能ですが、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、古河市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "file"
+  },
+  "/sources/koga-ibaraki-yosansho-r6/R6_ippankaikei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ibaraki-koga.lg.jp/material/files/group/9/R6_ippankaikei.pdf",
+    "license": "古河市ホームページに掲載している個々の情報（文章、写真、イラストなど）に関する著作権は、原則として古河市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。古河市ホームページは利用目的を問わず自由な閲覧が可能ですが、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、古河市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "file"
+  },
+  "/sources/koga-ibaraki-yosansho-r5/R5_ippankaikei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ibaraki-koga.lg.jp/material/files/group/9/R5_ippankaikei.pdf",
+    "license": "古河市ホームページに掲載している個々の情報（文章、写真、イラストなど）に関する著作権は、原則として古河市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。古河市ホームページは利用目的を問わず自由な閲覧が可能ですが、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、古河市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "file"
+  },
+  "/sources/koga-ibaraki-yosansho-r4/R4_ippann.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ibaraki-koga.lg.jp/material/files/group/9/R4_ippann.pdf",
+    "license": "古河市ホームページに掲載している個々の情報（文章、写真、イラストなど）に関する著作権は、原則として古河市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。古河市ホームページは利用目的を問わず自由な閲覧が可能ですが、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、古河市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "file"
+  },
+  "/sources/koga-ibaraki-yosansho-r3/R3_ippann.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ibaraki-koga.lg.jp/material/files/group/9/R3_ippann.pdf",
+    "license": "古河市ホームページに掲載している個々の情報（文章、写真、イラストなど）に関する著作権は、原則として古河市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。古河市ホームページは利用目的を問わず自由な閲覧が可能ですが、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、古河市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "file"
+  },
+  "/sources/minoh-yosangaiyou-r8/r8yosanggaiyousasshi.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minoh.lg.jp/zaisei/yosan/h31/r8yosan.html",
+    "license": "箕面市ホームページに掲載されている情報（文章、画像など。但し、条例・規則などは除く）は、著作権の対象となります。無断転載は禁止します。文章を利用したい場合は、出所を明示することによって、引用・転載・複製できます。画像を利用したい場合は、必ずその画像が掲載されているページの作成者へ問い合わせてください。",
+    "target": "page"
+  },
+  "/sources/minoh-yosangaiyou-r7/r7yosanggaiyousasshii.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minoh.lg.jp/zaisei/yosan/h31/r7yosan.html",
+    "license": "箕面市ホームページに掲載されている情報（文章、画像など。但し、条例・規則などは除く）は、著作権の対象となります。無断転載は禁止します。文章を利用したい場合は、出所を明示することによって、引用・転載・複製できます。画像を利用したい場合は、必ずその画像が掲載されているページの作成者へ問い合わせてください。",
+    "target": "page"
+  },
+  "/sources/minoh-yosangaiyou-r6/r6yosanggaiyousasshii.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minoh.lg.jp/zaisei/yosan/h31/r6yosan.html",
+    "license": "箕面市ホームページに掲載されている情報（文章、画像など。但し、条例・規則などは除く）は、著作権の対象となります。無断転載は禁止します。文章を利用したい場合は、出所を明示することによって、引用・転載・複製できます。画像を利用したい場合は、必ずその画像が掲載されているページの作成者へ問い合わせてください。",
+    "target": "page"
+  },
+  "/sources/minoh-yosangaiyou-r5/r5yosanggaiyousasshi.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minoh.lg.jp/zaisei/yosan/h31/r5yosan.html",
+    "license": "箕面市ホームページに掲載されている情報（文章、画像など。但し、条例・規則などは除く）は、著作権の対象となります。無断転載は禁止します。文章を利用したい場合は、出所を明示することによって、引用・転載・複製できます。画像を利用したい場合は、必ずその画像が掲載されているページの作成者へ問い合わせてください。",
+    "target": "page"
+  },
+  "/sources/minoh-yosangaiyou-r4/r4yosanggaiyousasshi4.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minoh.lg.jp/zaisei/yosan/h31/r4yosan.html",
+    "license": "箕面市ホームページに掲載されている情報（文章、画像など。但し、条例・規則などは除く）は、著作権の対象となります。無断転載は禁止します。文章を利用したい場合は、出所を明示することによって、引用・転載・複製できます。画像を利用したい場合は、必ずその画像が掲載されているページの作成者へ問い合わせてください。",
+    "target": "page"
+  },
+  "/sources/minoh-yosangaiyou-r3/r3yosanggaiyousasshi.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minoh.lg.jp/zaisei/yosan/h31/r3yosan.html",
+    "license": "箕面市ホームページに掲載されている情報（文章、画像など。但し、条例・規則などは除く）は、著作権の対象となります。無断転載は禁止します。文章を利用したい場合は、出所を明示することによって、引用・転載・複製できます。画像を利用したい場合は、必ずその画像が掲載されているページの作成者へ問い合わせてください。",
+    "target": "page"
+  },
+  "/sources/minoh-yosangaiyou-r2/r2yosangaiyou_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minoh.lg.jp/zaisei/yosan/h31/r2yosan.html",
+    "license": "箕面市ホームページに掲載されている情報（文章、画像など。但し、条例・規則などは除く）は、著作権の対象となります。無断転載は禁止します。文章を利用したい場合は、出所を明示することによって、引用・転載・複製できます。画像を利用したい場合は、必ずその画像が掲載されているページの作成者へ問い合わせてください。",
+    "target": "page"
+  },
+  "/sources/minoh-yosangaiyou-h31/h31yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minoh.lg.jp/zaisei/yosan/h31/h31yosan.html",
+    "license": "箕面市ホームページに掲載されている情報（文章、画像など。但し、条例・規則などは除く）は、著作権の対象となります。無断転載は禁止します。文章を利用したい場合は、出所を明示することによって、引用・転載・複製できます。画像を利用したい場合は、必ずその画像が掲載されているページの作成者へ問い合わせてください。",
+    "target": "page"
+  },
+  "/sources/minoh-yosangaiyou-h30/h30yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minoh.lg.jp/zaisei/yosan/h30.html",
+    "license": "箕面市ホームページに掲載されている情報（文章、画像など。但し、条例・規則などは除く）は、著作権の対象となります。無断転載は禁止します。文章を利用したい場合は、出所を明示することによって、引用・転載・複製できます。画像を利用したい場合は、必ずその画像が掲載されているページの作成者へ問い合わせてください。",
+    "target": "page"
+  },
+  "/sources/minoh-yosangaiyou-h29/h29yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minoh.lg.jp/zaisei/yosan/h29/gaiyou.html",
+    "license": "箕面市ホームページに掲載されている情報（文章、画像など。但し、条例・規則などは除く）は、著作権の対象となります。無断転載は禁止します。文章を利用したい場合は、出所を明示することによって、引用・転載・複製できます。画像を利用したい場合は、必ずその画像が掲載されているページの作成者へ問い合わせてください。",
+    "target": "page"
+  },
+  "/sources/minoh-yosangaiyou-h28/h28gaiyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minoh.lg.jp/zaisei/yosan/h28/gaiyou.html",
+    "license": "箕面市ホームページに掲載されている情報（文章、画像など。但し、条例・規則などは除く）は、著作権の対象となります。無断転載は禁止します。文章を利用したい場合は、出所を明示することによって、引用・転載・複製できます。画像を利用したい場合は、必ずその画像が掲載されているページの作成者へ問い合わせてください。",
+    "target": "page"
+  },
+  "/sources/minoh-yosangaiyou-h27/h27gaiyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minoh.lg.jp/zaisei/yosan/h27/gaiyou.html",
+    "license": "箕面市ホームページに掲載されている情報（文章、画像など。但し、条例・規則などは除く）は、著作権の対象となります。無断転載は禁止します。文章を利用したい場合は、出所を明示することによって、引用・転載・複製できます。画像を利用したい場合は、必ずその画像が掲載されているページの作成者へ問い合わせてください。",
+    "target": "page"
+  },
+  "/sources/minoh-yosangaiyou-h26/h26gaiyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minoh.lg.jp/zaisei/yosan/h26/gaiyou.html",
+    "license": "箕面市ホームページに掲載されている情報（文章、画像など。但し、条例・規則などは除く）は、著作権の対象となります。無断転載は禁止します。文章を利用したい場合は、出所を明示することによって、引用・転載・複製できます。画像を利用したい場合は、必ずその画像が掲載されているページの作成者へ問い合わせてください。",
+    "target": "page"
+  },
+  "/sources/minoh-yosangaiyou-h25/h25gaiyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minoh.lg.jp/zaisei/yosan/h25/gaiyou.html",
+    "license": "箕面市ホームページに掲載されている情報（文章、画像など。但し、条例・規則などは除く）は、著作権の対象となります。無断転載は禁止します。文章を利用したい場合は、出所を明示することによって、引用・転載・複製できます。画像を利用したい場合は、必ずその画像が掲載されているページの作成者へ問い合わせてください。",
+    "target": "page"
+  },
+  "/sources/minoh-yosangaiyou-h24/h24gaiyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minoh.lg.jp/zaisei/yosan/h24/gaiyou.html",
+    "license": "箕面市ホームページに掲載されている情報（文章、画像など。但し、条例・規則などは除く）は、著作権の対象となります。無断転載は禁止します。文章を利用したい場合は、出所を明示することによって、引用・転載・複製できます。画像を利用したい場合は、必ずその画像が掲載されているページの作成者へ問い合わせてください。",
+    "target": "page"
+  },
+  "/sources/minoh-yosangaiyou-h23/h23yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minoh.lg.jp/zaisei/h23yosan-gaiyou.html",
+    "license": "箕面市ホームページに掲載されている情報（文章、画像など。但し、条例・規則などは除く）は、著作権の対象となります。無断転載は禁止します。文章を利用したい場合は、出所を明示することによって、引用・転載・複製できます。画像を利用したい場合は、必ずその画像が掲載されているページの作成者へ問い合わせてください。",
+    "target": "page"
+  },
+  "/sources/minoh-yosangaiyou-h22/5-h22yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minoh.lg.jp/zaisei/2-2-yosan.html",
+    "license": "箕面市ホームページに掲載されている情報（文章、画像など。但し、条例・規則などは除く）は、著作権の対象となります。無断転載は禁止します。文章を利用したい場合は、出所を明示することによって、引用・転載・複製できます。画像を利用したい場合は、必ずその画像が掲載されているページの作成者へ問い合わせてください。",
+    "target": "page"
+  },
+  "/sources/minoh-yosangaiyou-h21/h21_5yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minoh.lg.jp/zaisei/2_1_yosan-youten.html",
+    "license": "箕面市ホームページに掲載されている情報（文章、画像など。但し、条例・規則などは除く）は、著作権の対象となります。無断転載は禁止します。文章を利用したい場合は、出所を明示することによって、引用・転載・複製できます。画像を利用したい場合は、必ずその画像が掲載されているページの作成者へ問い合わせてください。",
+    "target": "page"
+  },
+  "/sources/kuwana-yosan-soukatsu-r8/r8_tousyoyosan3.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kuwana.lg.jp/documents/12594/r8_tousyoyosan3.pdf",
+    "license": "本Webサイトで掲載している、情報・文章・画像などのコンテンツデータについて、特別に許可しているページを除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。本Webサイトに掲載している著作物(文章・画像・映像・音声など)から、プログラムにかかわる著作権は、「桑名市」もしくは、桑名市に情報提供いただいている提供元に帰属します。",
+    "target": "file"
+  },
+  "/sources/kuwana-yosan-soukatsu-r7/03_r7tousyoyosan3.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kuwana.lg.jp/documents/11585/03_r7tousyoyosan3.pdf",
+    "license": "本Webサイトで掲載している、情報・文章・画像などのコンテンツデータについて、特別に許可しているページを除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。本Webサイトに掲載している著作物(文章・画像・映像・音声など)から、プログラムにかかわる著作権は、「桑名市」もしくは、桑名市に情報提供いただいている提供元に帰属します。",
+    "target": "file"
+  },
+  "/sources/kuwana-yosan-soukatsu-r6/03_r6tousyosoukatuhyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kuwana.lg.jp/documents/10475/03_r6tousyosoukatuhyou.pdf",
+    "license": "本Webサイトで掲載している、情報・文章・画像などのコンテンツデータについて、特別に許可しているページを除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。本Webサイトに掲載している著作物(文章・画像・映像・音声など)から、プログラムにかかわる著作権は、「桑名市」もしくは、桑名市に情報提供いただいている提供元に帰属します。",
+    "target": "file"
+  },
+  "/sources/kuwana-yosan-soukatsu-r5/r5soukatsuhyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kuwana.lg.jp/documents/9109/r5soukatsuhyou.pdf",
+    "license": "本Webサイトで掲載している、情報・文章・画像などのコンテンツデータについて、特別に許可しているページを除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。本Webサイトに掲載している著作物(文章・画像・映像・音声など)から、プログラムにかかわる著作権は、「桑名市」もしくは、桑名市に情報提供いただいている提供元に帰属します。",
+    "target": "file"
+  },
+  "/sources/kuwana-yosan-soukatsu-r4/r4-0soukatsu_s.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kuwana.lg.jp/documents/1645/r4-0soukatsu_s.pdf",
+    "license": "本Webサイトで掲載している、情報・文章・画像などのコンテンツデータについて、特別に許可しているページを除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。本Webサイトに掲載している著作物(文章・画像・映像・音声など)から、プログラムにかかわる著作権は、「桑名市」もしくは、桑名市に情報提供いただいている提供元に帰属します。",
+    "target": "file"
+  },
+  "/sources/kuwana-yosan-soukatsu-r3/r3-0soukatsu_s.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kuwana.lg.jp/documents/1647/r3-0soukatsu_s.pdf",
+    "license": "本Webサイトで掲載している、情報・文章・画像などのコンテンツデータについて、特別に許可しているページを除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。本Webサイトに掲載している著作物(文章・画像・映像・音声など)から、プログラムにかかわる著作権は、「桑名市」もしくは、桑名市に情報提供いただいている提供元に帰属します。",
+    "target": "file"
+  },
+  "/sources/kuwana-yosan-soukatsu-r2/r2-0soukatsu_s.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kuwana.lg.jp/documents/1649/r2-0soukatsu_s.pdf",
+    "license": "本Webサイトで掲載している、情報・文章・画像などのコンテンツデータについて、特別に許可しているページを除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。本Webサイトに掲載している著作物(文章・画像・映像・音声など)から、プログラムにかかわる著作権は、「桑名市」もしくは、桑名市に情報提供いただいている提供元に帰属します。",
+    "target": "file"
+  },
+  "/sources/kuwana-yosan-soukatsu-h31/20190327-091600.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kuwana.lg.jp/documents/1651/20190327-091600.pdf",
+    "license": "本Webサイトで掲載している、情報・文章・画像などのコンテンツデータについて、特別に許可しているページを除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。本Webサイトに掲載している著作物(文章・画像・映像・音声など)から、プログラムにかかわる著作権は、「桑名市」もしくは、桑名市に情報提供いただいている提供元に帰属します。",
+    "target": "file"
+  },
+  "/sources/kuwana-yosan-soukatsu-h30/H30soukatsu_s.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20210922133347id_/http://www.city.kuwana.lg.jp/index.cfm/25,58878,c,html/58878/H30soukatsu_s.pdf",
+    "license": "本Webサイトで掲載している、情報・文章・画像などのコンテンツデータについて、特別に許可しているページを除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。本Webサイトに掲載している著作物(文章・画像・映像・音声など)から、プログラムにかかわる著作権は、「桑名市」もしくは、桑名市に情報提供いただいている提供元に帰属します。",
+    "target": "file"
+  },
+  "/sources/kuwana-yosan-soukatsu-h29/H29soukatsu.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20191016092007id_/http://www.city.kuwana.lg.jp/index.cfm/25,53607,c,html/53607/H29soukatsu.pdf",
+    "license": "本Webサイトで掲載している、情報・文章・画像などのコンテンツデータについて、特別に許可しているページを除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。本Webサイトに掲載している著作物(文章・画像・映像・音声など)から、プログラムにかかわる著作権は、「桑名市」もしくは、桑名市に情報提供いただいている提供元に帰属します。",
+    "target": "file"
+  },
+  "/sources/kuwana-yosan-soukatsu-h28/H28soukatsu.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20210922150347id_/http://www.city.kuwana.lg.jp/index.cfm/25,47396,c,html/47396/H28soukatsu.pdf",
+    "license": "本Webサイトで掲載している、情報・文章・画像などのコンテンツデータについて、特別に許可しているページを除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。本Webサイトに掲載している著作物(文章・画像・映像・音声など)から、プログラムにかかわる著作権は、「桑名市」もしくは、桑名市に情報提供いただいている提供元に帰属します。",
+    "target": "file"
   }
 };
