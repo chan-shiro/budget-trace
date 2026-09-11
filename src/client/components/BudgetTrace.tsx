@@ -20,6 +20,11 @@ import { ROADMAP_PROGRESS, ROADMAP_PLAN } from "@/client/lib/roadmap.gen";
 import { UNRECORDABLE_BY_CODE, UNRECORDABLE_WHOLLY } from "@/client/lib/unrecordable.gen";
 import BudgetTraceView from "./BudgetTraceView";
 
+// `sumOku`（億の float を素朴に足さない・#232）は `data.ts` の `fmtOku` の隣にある。
+// ⚠ **`decision.ts` から引くとまだ循環する** — `data.ts` は `./decision` を import しているので、
+//   `decision.ts` で使うなら `fyEraLabel` と同じように別ファイルへ切り出すこと（→ handoff §5 の `0j`）。
+const sumOku = D.sumOku;
+
 const {
   GLOSS, SIMILAR_EVIDENCE,
   KOFU_BUDGET_YEARS, KOFU_PROJECT_YEARS, KOFU_EXECUTION_YEARS, KOFU_EVALUATION_YEARS, KOFU_OUTTURN_YEARS, KOFU_R6_DETAIL, KOFU_TREND, KOFU_COUNCIL, KOFU_COUNCIL_YEARS, KOFU_REPORT_YEARS,
@@ -385,8 +390,12 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
   const totalNow = data.total; // 歳出（決算 or 予算）総額
   // 歳入・歳出それぞれの構成比の分母。予算（full）は均衡するので等しいが、
   // 決算（decision）は歳入決算 ≠ 歳出決算なので側ごとに分母を分ける
-  const revSum = revItems.reduce((a: number, b: any) => a + b.v, 0);
-  const expSum = expItems.reduce((a: number, b: any) => a + b.v, 0);
+  // ⚠ **`sumOku` を使う**（#232・モジュール冒頭のコメント）。素朴に足すと
+  //   「歳入と歳出は同額で編成されます」の直下に**1億円違う2つの数字**が出る
+  //   （岡崎 R8 は歳入 1548.5 / 歳出 1548.4999999999998。表示で割れるのは**25年度**・
+  //   **総額カードとの食い違いは32年度**で、どちらも直した後は0。2026-09-11 実測）。
+  const revSum = sumOku(revItems.map((x: any) => x.v));
+  const expSum = sumOku(expItems.map((x: any) => x.v));
   const yearLabel = data.year;
 
   const openMuni = (muniName: string, code: string) => () =>
@@ -490,7 +499,7 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
   const openTheme = (name: string) => () => nav({ screen: "themes", theme: name });
   const goalCards = GOALS.map((g) => {
     const ps = goalProjects(g.name);
-    const total = ps.reduce((a, p) => a + p.amountOku, 0);
+    const total = sumOku(ps.map((p) => p.amountOku)); // #232（画面に出る額はすべて `sumOku`）
     return { goal: g, ps, total };
   });
   const themeStrip = goalCards.map(({ goal, ps, total }) => ({
@@ -553,7 +562,7 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
             return {
               shisaku: key,
               count: rows.length,
-              totalFmt: fmtV(rows.reduce((a, p) => a + p.amountOku, 0)),
+              totalFmt: fmtV(sumOku(rows.map((p: any) => p.amountOku))), // #232
               rows: [...rows].sort((a, b) => b.amountOku - a.amountOku).map(toProjRow),
             };
           });
@@ -637,10 +646,14 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
   let themeVals: any = { hasTheme: false, themeName: "", themeIntent: "", themeTotalFmt: "", themeCount: "", themeKanChips: [], themeProjects: [], themePer: "", themeSub: "" };
   if (curGoal) {
     const ps = goalProjects(curGoal.name);
-    const total = ps.reduce((a, p) => a + p.amountOku, 0);
+    const total = sumOku(ps.map((p) => p.amountOku)); // #232
     // 款チップ（款別ドリルへのリンク）。款の記載が無い年度（R2・R3）はチップなし
-    const kanAgg: Record<string, number> = {};
-    ps.forEach((p) => { if (p.kan != null) kanAgg[p.kan] = (kanAgg[p.kan] || 0) + p.amountOku; });
+    // ⚠ 千円の整数で足してから億へ戻す（#232）。チップの額も画面に出る。
+    const kanAggSen: Record<string, number> = {};
+    ps.forEach((p) => { if (p.kan != null) kanAggSen[p.kan] = (kanAggSen[p.kan] || 0) + Math.round(p.amountOku * 1e5); });
+    const kanAgg: Record<string, number> = Object.fromEntries(
+      Object.entries(kanAggSen).map(([k, v]) => [k, v / 1e5]),
+    );
     const kanIdx = (nm: string) => Math.max(0, data.expenditure.findIndex((k) => k.name === nm));
     themeVals = {
       hasTheme: true,
@@ -1573,7 +1586,9 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
       //   ⚠ 「その他」の子だけを許す — 単に depth 2 を許すと**項名が款名と衝突**しうる。
       const isKanNode = depth === 1 || (depth === 2 && s.drillPath[0] === "その他");
       const kos = entry && isKanNode ? entry.byKan[side === "exp" ? "expenditure" : "revenue"][nodeName] ?? [] : [];
-      const kanTotal = kos.reduce((a, k) => a + k.v, 0);
+      // ⚠ **画面に出る**（「この款の予算を項・目まで分解しています（款計 …）」）ので `sumOku`。
+      //   素朴に足すと横浜 R5 歳入「地方特例交付金」が**見出し 52.5億円・款計 52.4億円**に割れた（#232）。
+      const kanTotal = sumOku(kos.map((k) => k.v));
       // **前年比は資料が前年度列を持つ年度だけ**（#192・横浜 R5〜R3 の XLSX 版）。
       // ⚠ **前年度額は原典が当年度の科目体系に組み替えたもの**なので、
       //   「前の年度の画面に出ている当年度額」とは一致しない項がある（実測 115項中12項）。
@@ -1620,7 +1635,7 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
     // R8 予算の項以下は原典未公開のため、R6 決算の項内訳を年度明示で参考表示する
     ...(() => {
       const rows = isFull && side === "exp" && depth === 1 ? KOFU_R6_DETAIL.byKan[nodeName] ?? [] : [];
-      const kanTotal = rows.reduce((a, r) => a + r.v, 0);
+      const kanTotal = sumOku(rows.map((r) => r.v)); // 「決算計 …」として画面に出る（#232）
       return {
         hasR6Detail: rows.length > 0,
         r6DetailFyLabel: KOFU_R6_DETAIL.fyLabel,
@@ -1704,7 +1719,9 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
               ? muniBudget!.projects.filter((p) => p.kan === nodeName)
               : []
           : [];
-      const covered = rows.reduce((a, p) => a + p.amountOku, 0);
+      // ⚠ 差が `uncovered` として画面に出る。素朴に足すと**款を事業が100%覆うときに
+      //   1e-13 の残差が残り**、`fmtOku` の象徴計上の枝に落ちて「**0円**」と出る（#232）。
+      const covered = sumOku(rows.map((p) => p.amountOku));
       const uncovered = Math.max(0, nodeTotal - covered);
       // ⚠ **主な事業が款別と別の資料から来る自治体がある**（#164・横浜の事業計画書）。
       //   出典は款別の資料名ではなく**その事業の refLabel が指す資料**を出す
@@ -1774,7 +1791,7 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
     // 全体のエビデンス充足度（一般会計の款に属する主な事業の合計 vs 歳出総額）
     ...(() => {
       const general = isFull ? KOFU_PROJECTS.filter((p) => budget.expenditure.some((k) => k.name === p.kan)) : [];
-      const covered = general.reduce((a, p) => a + p.amountOku, 0);
+      const covered = sumOku(general.map((p) => p.amountOku)); // #232（上と同じ理由）
       return {
         hasProjCoverage: general.length > 0,
         projCoverageCoveredFmt: fmtOku(covered),
