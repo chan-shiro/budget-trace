@@ -21,7 +21,8 @@ import { UNRECORDABLE_BY_CODE, UNRECORDABLE_WHOLLY } from "@/client/lib/unrecord
 import BudgetTraceView from "./BudgetTraceView";
 
 // `sumOku`（億の float を素朴に足さない・#232）は `data.ts` の `fmtOku` の隣にある。
-// **lib からも使うので置き場所はそちら** — `decision.ts` はコンポーネントを import できない。
+// ⚠ **`decision.ts` から引くとまだ循環する** — `data.ts` は `./decision` を import しているので、
+//   `decision.ts` で使うなら `fyEraLabel` と同じように別ファイルへ切り出すこと（→ handoff §5 の `0j`）。
 const sumOku = D.sumOku;
 
 const {
@@ -498,7 +499,7 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
   const openTheme = (name: string) => () => nav({ screen: "themes", theme: name });
   const goalCards = GOALS.map((g) => {
     const ps = goalProjects(g.name);
-    const total = ps.reduce((a, p) => a + p.amountOku, 0);
+    const total = sumOku(ps.map((p) => p.amountOku)); // #232（画面に出る額はすべて `sumOku`）
     return { goal: g, ps, total };
   });
   const themeStrip = goalCards.map(({ goal, ps, total }) => ({
@@ -561,7 +562,7 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
             return {
               shisaku: key,
               count: rows.length,
-              totalFmt: fmtV(rows.reduce((a, p) => a + p.amountOku, 0)),
+              totalFmt: fmtV(sumOku(rows.map((p: any) => p.amountOku))), // #232
               rows: [...rows].sort((a, b) => b.amountOku - a.amountOku).map(toProjRow),
             };
           });
@@ -645,10 +646,14 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
   let themeVals: any = { hasTheme: false, themeName: "", themeIntent: "", themeTotalFmt: "", themeCount: "", themeKanChips: [], themeProjects: [], themePer: "", themeSub: "" };
   if (curGoal) {
     const ps = goalProjects(curGoal.name);
-    const total = ps.reduce((a, p) => a + p.amountOku, 0);
+    const total = sumOku(ps.map((p) => p.amountOku)); // #232
     // 款チップ（款別ドリルへのリンク）。款の記載が無い年度（R2・R3）はチップなし
-    const kanAgg: Record<string, number> = {};
-    ps.forEach((p) => { if (p.kan != null) kanAgg[p.kan] = (kanAgg[p.kan] || 0) + p.amountOku; });
+    // ⚠ 千円の整数で足してから億へ戻す（#232）。チップの額も画面に出る。
+    const kanAggSen: Record<string, number> = {};
+    ps.forEach((p) => { if (p.kan != null) kanAggSen[p.kan] = (kanAggSen[p.kan] || 0) + Math.round(p.amountOku * 1e5); });
+    const kanAgg: Record<string, number> = Object.fromEntries(
+      Object.entries(kanAggSen).map(([k, v]) => [k, v / 1e5]),
+    );
     const kanIdx = (nm: string) => Math.max(0, data.expenditure.findIndex((k) => k.name === nm));
     themeVals = {
       hasTheme: true,

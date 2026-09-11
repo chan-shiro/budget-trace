@@ -285,6 +285,8 @@ export { fyEraLabel, prevFyEraLabel } from './fy';
 // <1億は万円）ので「N+0.5 億のときだけ」と覚えない。
 // ⚠ **`v` が千円単位であることは derive 側の約束**。円単位の資料を款別に入れるなら、
 // この丸めが千円未満を黙って落とすので先に見直すこと。
+// ⚠ **`decision.ts` からはまだ引けない** — この `data.ts` が `./decision` を import しているので
+// 循環する。使うなら `fyEraLabel` と同じように別ファイルへ切り出すこと（→ handoff §5 の `0j`）。
 export const sumOku = (vs: number[]): number =>
   vs.reduce((a, b) => a + Math.round(b * 1e5), 0) / 1e5;
 export function fmtOku(v: number): string {
