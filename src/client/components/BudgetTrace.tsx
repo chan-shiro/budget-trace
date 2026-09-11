@@ -20,6 +20,17 @@ import { ROADMAP_PROGRESS, ROADMAP_PLAN } from "@/client/lib/roadmap.gen";
 import { UNRECORDABLE_BY_CODE, UNRECORDABLE_WHOLLY } from "@/client/lib/unrecordable.gen";
 import BudgetTraceView from "./BudgetTraceView";
 
+// ⚠⚠ **億に換算済みの float を素朴に足さない**（#232）。gen の `v` / `amountOku` は
+//   **千円の整数を 1e5 で割った億**（derive の `toOku`）なので、`reduce` でそのまま足すと
+//   **加算順序で最下位ビットが揺れ**、`fmtOku` の丸めの向きが割れる。実害は
+//   「同じ額が画面の2か所で1つ違う数字になる」型で、**金額データは正しいので検証ゲートも
+//   汚染ゲートも見ていない**。⇒ **千円の整数に戻して足し、最後に1度だけ億へ返す。**
+//   ⚠ 割れる境界は `fmtOku` の段ごとに違う（≥1兆は 0.005兆・≥100億は 0.5億・1〜100億は
+//   0.05億・<1億は万円）ので、「N+0.5 億のときだけ」と覚えない。
+//   ⚠ **`v` が千円単位であることは derive 側の約束**（`toOku = 千円 / 100_000`）。
+//   円単位の資料を款別に入れるなら、この丸めが千円未満を黙って落とすので先に見直すこと。
+const sumOku = (vs: number[]) => vs.reduce((a, b) => a + Math.round(b * 1e5), 0) / 1e5;
+
 const {
   GLOSS, SIMILAR_EVIDENCE,
   KOFU_BUDGET_YEARS, KOFU_PROJECT_YEARS, KOFU_EXECUTION_YEARS, KOFU_EVALUATION_YEARS, KOFU_OUTTURN_YEARS, KOFU_R6_DETAIL, KOFU_TREND, KOFU_COUNCIL, KOFU_COUNCIL_YEARS, KOFU_REPORT_YEARS,
@@ -385,16 +396,12 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
   const totalNow = data.total; // 歳出（決算 or 予算）総額
   // 歳入・歳出それぞれの構成比の分母。予算（full）は均衡するので等しいが、
   // 決算（decision）は歳入決算 ≠ 歳出決算なので側ごとに分母を分ける
-  // ⚠ **億の float をそのまま足さない**（#232）。`v` は千円の整数を 1e5 で割った億なので、
-  //   素朴に足すと総額がちょうど N+0.5 億のときに**加算順序で `Math.round` の向きが割れ**、
+  // ⚠ **`sumOku` を使う**（#232・モジュール冒頭のコメント）。素朴に足すと
   //   「歳入と歳出は同額で編成されます」の直下に**1億円違う2つの数字**が出る
-  //   （岡崎 R8 は歳入 1548.5 / 歳出 1548.4999999999998。ほかに宮崎県 R8・新潟県 R8・
-  //   足立 H31・高松 H29・豊川 R7・横須賀 R5 で実測）。**千円の整数に戻して足し、最後に1度だけ億へ返す。**
-  //   ⚠ 総額がちょうど N+0.5 億になるかは偶然なので、**収録が増えるたびに確率的に増える**型。
-  const sumOku = (items: { v: number }[]) =>
-    items.reduce((a: number, b) => a + Math.round(b.v * 1e5), 0) / 1e5;
-  const revSum = sumOku(revItems);
-  const expSum = sumOku(expItems);
+  //   （岡崎 R8 は歳入 1548.5 / 歳出 1548.4999999999998。表示で割れるのは**25年度**・
+  //   **総額カードとの食い違いは32年度**で、どちらも直した後は0。2026-09-11 実測）。
+  const revSum = sumOku(revItems.map((x: any) => x.v));
+  const expSum = sumOku(expItems.map((x: any) => x.v));
   const yearLabel = data.year;
 
   const openMuni = (muniName: string, code: string) => () =>
@@ -1581,7 +1588,9 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
       //   ⚠ 「その他」の子だけを許す — 単に depth 2 を許すと**項名が款名と衝突**しうる。
       const isKanNode = depth === 1 || (depth === 2 && s.drillPath[0] === "その他");
       const kos = entry && isKanNode ? entry.byKan[side === "exp" ? "expenditure" : "revenue"][nodeName] ?? [] : [];
-      const kanTotal = kos.reduce((a, k) => a + k.v, 0);
+      // ⚠ **画面に出る**（「この款の予算を項・目まで分解しています（款計 …）」）ので `sumOku`。
+      //   素朴に足すと横浜 R5 歳入「地方特例交付金」が**見出し 52.5億円・款計 52.4億円**に割れた（#232）。
+      const kanTotal = sumOku(kos.map((k) => k.v));
       // **前年比は資料が前年度列を持つ年度だけ**（#192・横浜 R5〜R3 の XLSX 版）。
       // ⚠ **前年度額は原典が当年度の科目体系に組み替えたもの**なので、
       //   「前の年度の画面に出ている当年度額」とは一致しない項がある（実測 115項中12項）。
@@ -1628,7 +1637,7 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
     // R8 予算の項以下は原典未公開のため、R6 決算の項内訳を年度明示で参考表示する
     ...(() => {
       const rows = isFull && side === "exp" && depth === 1 ? KOFU_R6_DETAIL.byKan[nodeName] ?? [] : [];
-      const kanTotal = rows.reduce((a, r) => a + r.v, 0);
+      const kanTotal = sumOku(rows.map((r) => r.v)); // 「決算計 …」として画面に出る（#232）
       return {
         hasR6Detail: rows.length > 0,
         r6DetailFyLabel: KOFU_R6_DETAIL.fyLabel,
@@ -1712,7 +1721,9 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
               ? muniBudget!.projects.filter((p) => p.kan === nodeName)
               : []
           : [];
-      const covered = rows.reduce((a, p) => a + p.amountOku, 0);
+      // ⚠ 差が `uncovered` として画面に出る。素朴に足すと**款を事業が100%覆うときに
+      //   1e-13 の残差が残り**、`fmtOku` の象徴計上の枝に落ちて「**0円**」と出る（#232）。
+      const covered = sumOku(rows.map((p) => p.amountOku));
       const uncovered = Math.max(0, nodeTotal - covered);
       // ⚠ **主な事業が款別と別の資料から来る自治体がある**（#164・横浜の事業計画書）。
       //   出典は款別の資料名ではなく**その事業の refLabel が指す資料**を出す
@@ -1782,7 +1793,7 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
     // 全体のエビデンス充足度（一般会計の款に属する主な事業の合計 vs 歳出総額）
     ...(() => {
       const general = isFull ? KOFU_PROJECTS.filter((p) => budget.expenditure.some((k) => k.name === p.kan)) : [];
-      const covered = general.reduce((a, p) => a + p.amountOku, 0);
+      const covered = sumOku(general.map((p) => p.amountOku)); // #232（上と同じ理由）
       return {
         hasProjCoverage: general.length > 0,
         projCoverageCoveredFmt: fmtOku(covered),
