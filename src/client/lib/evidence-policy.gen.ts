@@ -10663,6 +10663,66 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "license": "高知市公式ホームページに掲載されている個々の情報（文字、イラスト、写真等）に関する諸権利は、著作権の対象であり、法律によって保護されています。これらの情報について、「私的使用のための複製」や「引用」など著作権法上で認められている行為を除き、無断で複製、転用等をすることは法律で禁止されています。",
     "target": "file"
   },
+  "/sources/kasugai-yosan-gaiyou-r8/R8gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kasugai.lg.jp/shisei/zaisei/yosan/1038130.html",
+    "license": "「春日井市ホームページ」の著作権は、春日井市(写真や文章などの一部はその著作権者)に帰属します。 著作権法で認められている場合を除き、著作権者の許可なく文章や画像、データなどの一部または全部を利用することは禁止します。(注)なお、各ページに利用規約等の特段の定めがある場合は、この取扱いに優先するものとします。",
+    "target": "page"
+  },
+  "/sources/kasugai-yosan-gaiyou-r7/R7fuzokugaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kasugai.lg.jp/shisei/zaisei/yosan/1035591.html",
+    "license": "「春日井市ホームページ」の著作権は、春日井市(写真や文章などの一部はその著作権者)に帰属します。 著作権法で認められている場合を除き、著作権者の許可なく文章や画像、データなどの一部または全部を利用することは禁止します。(注)なお、各ページに利用規約等の特段の定めがある場合は、この取扱いに優先するものとします。",
+    "target": "page"
+  },
+  "/sources/kasugai-yosan-gaiyou-r6/sainyuu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kasugai.lg.jp/shisei/zaisei/yosan/1032661.html",
+    "license": "「春日井市ホームページ」の著作権は、春日井市(写真や文章などの一部はその著作権者)に帰属します。 著作権法で認められている場合を除き、著作権者の許可なく文章や画像、データなどの一部または全部を利用することは禁止します。(注)なお、各ページに利用規約等の特段の定めがある場合は、この取扱いに優先するものとします。",
+    "target": "page"
+  },
+  "/sources/kasugai-yosan-gaiyou-r6/saisyutu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kasugai.lg.jp/shisei/zaisei/yosan/1032661.html",
+    "license": "「春日井市ホームページ」の著作権は、春日井市(写真や文章などの一部はその著作権者)に帰属します。 著作権法で認められている場合を除き、著作権者の許可なく文章や画像、データなどの一部または全部を利用することは禁止します。(注)なお、各ページに利用規約等の特段の定めがある場合は、この取扱いに優先するものとします。",
+    "target": "page"
+  },
+  "/sources/kasugai-yosan-gaiyou-r5/sainyuu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kasugai.lg.jp/shisei/zaisei/yosan/1030010.html",
+    "license": "「春日井市ホームページ」の著作権は、春日井市(写真や文章などの一部はその著作権者)に帰属します。 著作権法で認められている場合を除き、著作権者の許可なく文章や画像、データなどの一部または全部を利用することは禁止します。(注)なお、各ページに利用規約等の特段の定めがある場合は、この取扱いに優先するものとします。",
+    "target": "page"
+  },
+  "/sources/kasugai-yosan-gaiyou-r5/saisyutu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kasugai.lg.jp/shisei/zaisei/yosan/1030010.html",
+    "license": "「春日井市ホームページ」の著作権は、春日井市(写真や文章などの一部はその著作権者)に帰属します。 著作権法で認められている場合を除き、著作権者の許可なく文章や画像、データなどの一部または全部を利用することは禁止します。(注)なお、各ページに利用規約等の特段の定めがある場合は、この取扱いに優先するものとします。",
+    "target": "page"
+  },
+  "/sources/kasugai-yosan-gaiyou-r4/R4sainyuu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kasugai.lg.jp/shisei/zaisei/yosan/1026515.html",
+    "license": "「春日井市ホームページ」の著作権は、春日井市(写真や文章などの一部はその著作権者)に帰属します。 著作権法で認められている場合を除き、著作権者の許可なく文章や画像、データなどの一部または全部を利用することは禁止します。(注)なお、各ページに利用規約等の特段の定めがある場合は、この取扱いに優先するものとします。",
+    "target": "page"
+  },
+  "/sources/kasugai-yosan-gaiyou-r4/R4saisyutu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kasugai.lg.jp/shisei/zaisei/yosan/1026515.html",
+    "license": "「春日井市ホームページ」の著作権は、春日井市(写真や文章などの一部はその著作権者)に帰属します。 著作権法で認められている場合を除き、著作権者の許可なく文章や画像、データなどの一部または全部を利用することは禁止します。(注)なお、各ページに利用規約等の特段の定めがある場合は、この取扱いに優先するものとします。",
+    "target": "page"
+  },
+  "/sources/kasugai-yosan-gaiyou-r3/R3sainyuu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kasugai.lg.jp/shisei/zaisei/yosan/1022806.html",
+    "license": "「春日井市ホームページ」の著作権は、春日井市(写真や文章などの一部はその著作権者)に帰属します。 著作権法で認められている場合を除き、著作権者の許可なく文章や画像、データなどの一部または全部を利用することは禁止します。(注)なお、各ページに利用規約等の特段の定めがある場合は、この取扱いに優先するものとします。",
+    "target": "page"
+  },
+  "/sources/kasugai-yosan-gaiyou-r3/R3saisyutu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kasugai.lg.jp/shisei/zaisei/yosan/1022806.html",
+    "license": "「春日井市ホームページ」の著作権は、春日井市(写真や文章などの一部はその著作権者)に帰属します。 著作権法で認められている場合を除き、著作権者の許可なく文章や画像、データなどの一部または全部を利用することは禁止します。(注)なお、各ページに利用規約等の特段の定めがある場合は、この取扱いに優先するものとします。",
+    "target": "page"
+  },
   "/sources/kurume-yosangaiyo-r8/R8ippankaikeiyosannogaiyou.pdf": {
     "mode": "origin",
     "href": "https://www.city.kurume.fukuoka.jp/1100keikaku/2070zaisei/3010yosan/4230yosanr08/files/R8ippankaikeiyosannogaiyou.pdf",
@@ -14699,6 +14759,66 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "mode": "archive",
     "href": "https://warp.ndl.go.jp/20240111/20240109232246/http://www.city.kuki.lg.jp/shisei/zaisei_yosan_kessan/yosan/zaisei_yosan/11111.files/30gaiyou.pdf",
     "license": "久喜市ホームページに掲載されている文書や画像などの各情報に関する諸権利は、原則として久喜市に帰属します。また、一部の画像等の著作権は、原著作者が所有します。法令などに認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/komaki-yosansho-r8/R8toushoyosangaiyou3.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.komaki.aichi.jp/material/files/group/8/R8toushoyosangaiyou3.pdf",
+    "license": "小牧市ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、小牧市または著作権者の方にあります。著作権法上認められた場合を除き、著作権者の許可なく文章、写真、イラスト、画像等の全部または一部を利用することは禁止します。",
+    "target": "file"
+  },
+  "/sources/komaki-yosansho-r7/R702yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.komaki.aichi.jp/material/files/group/8/R702yosannogaiyou.pdf",
+    "license": "小牧市ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、小牧市または著作権者の方にあります。著作権法上認められた場合を除き、著作権者の許可なく文章、写真、イラスト、画像等の全部または一部を利用することは禁止します。",
+    "target": "file"
+  },
+  "/sources/komaki-yosansho-r6/06-02toushoyosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.komaki.aichi.jp/material/files/group/8/06-02toushoyosannogaiyou.pdf",
+    "license": "小牧市ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、小牧市または著作権者の方にあります。著作権法上認められた場合を除き、著作権者の許可なく文章、写真、イラスト、画像等の全部または一部を利用することは禁止します。",
+    "target": "file"
+  },
+  "/sources/komaki-yosansho-r5/05-02toushoyosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.komaki.aichi.jp/material/files/group/8/05-02toushoyosannogaiyou.pdf",
+    "license": "小牧市ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、小牧市または著作権者の方にあります。著作権法上認められた場合を除き、著作権者の許可なく文章、写真、イラスト、画像等の全部または一部を利用することは禁止します。",
+    "target": "file"
+  },
+  "/sources/komaki-yosansho-r4/04-02tousyoyosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.komaki.aichi.jp/material/files/group/8/04-02tousyoyosannogaiyou.pdf",
+    "license": "小牧市ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、小牧市または著作権者の方にあります。著作権法上認められた場合を除き、著作権者の許可なく文章、写真、イラスト、画像等の全部または一部を利用することは禁止します。",
+    "target": "file"
+  },
+  "/sources/komaki-yosansho-r3/03-02tousyoyosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.komaki.aichi.jp/material/files/group/8/03-02tousyoyosannogaiyou.pdf",
+    "license": "小牧市ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、小牧市または著作権者の方にあります。著作権法上認められた場合を除き、著作権者の許可なく文章、写真、イラスト、画像等の全部または一部を利用することは禁止します。",
+    "target": "file"
+  },
+  "/sources/komaki-yosansho-r2/02-02tousyoyosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.komaki.aichi.jp/material/files/group/8/02-02tousyoyosannogaiyou.pdf",
+    "license": "小牧市ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、小牧市または著作権者の方にあります。著作権法上認められた場合を除き、著作権者の許可なく文章、写真、イラスト、画像等の全部または一部を利用することは禁止します。",
+    "target": "file"
+  },
+  "/sources/komaki-yosansho-h31/H31gaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.komaki.aichi.jp/material/files/group/8/H31gaiyo.pdf",
+    "license": "小牧市ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、小牧市または著作権者の方にあります。著作権法上認められた場合を除き、著作権者の許可なく文章、写真、イラスト、画像等の全部または一部を利用することは禁止します。",
+    "target": "file"
+  },
+  "/sources/komaki-yosansho-h30/H30gaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.komaki.aichi.jp/material/files/group/8/H30gaiyo.pdf",
+    "license": "小牧市ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、小牧市または著作権者の方にあります。著作権法上認められた場合を除き、著作権者の許可なく文章、写真、イラスト、画像等の全部または一部を利用することは禁止します。",
+    "target": "file"
+  },
+  "/sources/komaki-yosansho-h29/11495675.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20180524/20180523093048/http://www.city.komaki.aichi.jp/material/files/group/8/11495675.pdf",
+    "license": "小牧市ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、小牧市または著作権者の方にあります。著作権法上認められた場合を除き、著作権者の許可なく文章、写真、イラスト、画像等の全部または一部を利用することは禁止します。",
     "target": "file"
   },
   "/sources/sayama-yosan-setsumeisho-r8/01_R8hyoushimokujihikakuhyouetc.pdf": {
