@@ -2286,9 +2286,12 @@ curl -s -o /dev/null -w "replay:       %{http_code}\n" "https://web.archive.org/
    ⚠⚠ **`archivedCount − shaVerifiedCount` を「照合待ちの件数」と読んではいけない** — 最初そう書いたが、
    実際に分解すると中身が違った（`data/archives.json` を直接数えた実測）:
 
-   **数え方の正は `public/coverage.json` の `summary`**（`sourceCount` 1,798・`archivedCount` 1,657・
-   `shaVerifiedCount` 1,489）。derive は `archived: (file の行がある) || (取得元が魚拓)` で数えるので、
-   **`sourceCount − archivedCount` ＝ 141 が「SPN に投げる件数」そのもの**（2026-09-11 実測）:
+   **数え方の正は `public/coverage.json` の `summary`**（第33巡の直後で
+   `sourceCount` 1,846・`archivedCount` 1,701・`shaVerifiedCount` 1,528）。
+   derive は `archived: (file の行がある) || (取得元が魚拓)` で数えるので、
+   **`sourceCount − archivedCount` が「SPN に投げる件数」そのもの**（＝下の表の 145）。
+   ⚠ **ここに具体的な数字を書くと収録のたびに腐る** — 表と本文で違う数を言っていたことが2度あった。
+   **数えるときは毎回 `coverage.json` を開くこと。**
 
    ⚠ **下の表は 1,798 をちょうど4つに分ける**（重ならない・足すと合う）。**重なる切り口で数えない** —
    1巡目のレビューも私も「file の行はあるが未照合」を **40** と数えたが、そのうち5件（甲府議会 R7〜R3）は
@@ -2311,7 +2314,7 @@ curl -s -o /dev/null -w "replay:       %{http_code}\n" "https://web.archive.org/
    ⚠ **上の内訳は 2026-09-11 の第33巡の直後**（第32巡直後の 141/133/35/1,489・計1,798 から更新）。
    **数え直すときは `coverage.json` の `summary` を正にする**（`sourceCount − archivedCount` が SPN の件数）。
 
-   ⚠⚠ **「魚拓なし」と「landing だけ」を足さない** — **landing だけの80件は 141 の内数**
+   ⚠⚠ **「魚拓なし」と「landing だけ」を足さない** — **landing だけの件数（表の 84）は SPN が要る件数（表の 145）の内数**
    （landing の行があっても file の行が無ければ `archived === false`）。
    ⚠⚠ **2026-09-11 にいちど「141 は誤りで 142」と書いて戻した** — `archived` の定義を
    「台帳に行があるか」と読み替えて数え直したが、**derive が数えているのは file の行**で、
