@@ -1366,7 +1366,7 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     fiscalYears: ["H23"],
     categories: ["scanned-image"],
     reason:
-      "予算書と一般会計歳入の説明書がどちらも紙のスキャンで、583ページ分から取り出せる文字が数十字しかない。" +
+      "予算書と一般会計歳入の説明書がどちらも紙のスキャンで、39ページと52ページのどちらからも文字が1字も取り出せない。" +
       "H24 以降にある一般会計だけの総括ファイルも無く、説明書が款ごとの分冊になっている。",
     url: "https://www.city.ishinomaki.lg.jp/cont/10103000/7137/7137.html",
     checkedOn: "2026-09-12", ref: "docs/data-sources.md §13-37",
@@ -1416,7 +1416,8 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     fiscalYears: ["H29", "H28", "H27", "H26", "H25"],
     categories: ["scanned-image"],
     reason:
-      "予算説明書が紙のスキャンで、73ページから583ページある各年度のどれからも文字がほとんど取り出せない。" +
+      "予算説明書が紙のスキャンで、73ページから582ページある各年度のどれからも文字がほとんど取り出せない" +
+      "（H29・H28・H27・H26 は1字も出ず、H25 は582ページで134字）。" +
       "H29・H28・H27 には同じ表の表計算ファイルが併載されているが、こちらが対応している表計算の様式とは列の並びが違う。",
     url: "https://www.city.abiko.chiba.jp/shisei/zaisei/yosansho/index.html",
     checkedOn: "2026-09-12", ref: "docs/data-sources.md §13-37",
@@ -1427,8 +1428,8 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     fiscalYears: ["R5", "R4"],
     categories: ["broken-text-layer"],
     reason:
-      "R5 は予算書177ページ全体を通して日本語の文字が1字も取り出せず、数字だけが出てくる。" +
-      "R4 は185ページのうち日本語が出るのは前半の29ページだけで、総括を含む明細書の部分は記号の並びになる。" +
+      "R5 は予算書176ページ全体を通して日本語の文字が1字も取り出せず、数字だけが出てくる。" +
+      "R4 は184ページのうち日本語が出るのは前半の29ページだけで、総括を含む明細書の部分は記号の並びになる。" +
       "どちらも款名が取れないので、金額が読めても款に結び付けられない。",
     url: "https://www.city.zama.kanagawa.jp/shisei/zaisei/yosan/1009994.html",
     checkedOn: "2026-09-12", ref: "docs/data-sources.md §13-37",
@@ -1464,7 +1465,7 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     categories: ["scanned-image"],
     reason:
       "予算書が紙のスキャンで、文字認識の層も入っていない。" +
-      "R6 は一般会計の説明書160ページから取り出せる文字が2千字に満たず、R3 は総括表の4ページから3字しか出ない。",
+      "R6 は一般会計の説明書159ページから取り出せる文字が1,708字しかなく、R3 は総括表の3ページから1字も出ない。",
     url: "https://www.city.kokubunji.tokyo.jp/shisei/zaisei/yosan/index.html",
     checkedOn: "2026-09-12", ref: "docs/data-sources.md §13-37",
   },
