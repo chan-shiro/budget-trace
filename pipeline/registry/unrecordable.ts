@@ -1291,4 +1291,38 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     url: "https://www.city.tsuchiura.lg.jp/shisei/zaseikeikaku-yosan/yosan/h26/page005656.html",
     checkedOn: "2026-09-11", ref: "docs/data-sources.md §13-33",
   },
+  {
+    // 藤枝市（222143）。R8・R7・R6・H30 は「歳入歳出予算事項別明細書 １ 総括」で収録済み（§13-35）。
+    // ⚠ 発行元の年度一覧は H28〜R8 の11年あるが、テキスト層があるのは4年だけ。
+    code: "222143", name: "藤枝市", dataset: "budget",
+    fiscalYears: ["R5", "R4", "R3", "R2", "H31", "H29", "H28"],
+    categories: ["scanned-image"],
+    reason:
+      "当初予算説明資料の総括も同年度の予算書もスキャン画像で、文字が1字も取り出せない" +
+      "（埋め込みフォント0・可読文字0を実測）。同じ年度ページにある「当初予算の概要」は性質別・財源別だけで" +
+      "款別の表を持たないので代わりにならない。画像を目で読めば数字は取れるが、機械での抽出はできない。",
+    url: "https://www.city.fujieda.shizuoka.jp/soshiki/zaiseikeiei/zaisei/oshirase/yosan/index.html",
+    checkedOn: "2026-09-11", ref: "docs/data-sources.md §13-35",
+  },
+  {
+    // 古河市（082040）。R8・R6〜R3 は予算書の総括で収録済み（§13-35）。
+    // ⚠ R7 だけ中抜けになる。⚠ R8 の前年度列が R7 の当年度列と全款一致することは画像で確認済み。
+    code: "082040", name: "古河市", dataset: "budget",
+    fiscalYears: ["R7", "R2", "H31"],
+    categories: ["broken-text-layer"],
+    reason:
+      "予算書に同じ「歳入歳出予算事項別明細書 総括」があるのに、本文がアウトライン化されていて" +
+      "取り出せる文字がページ番号だけしかない（画像ではないので復号でも直らない）。",
+    url: "https://www.city.ibaraki-koga.lg.jp/soshiki/zaisei/2/index.html",
+    checkedOn: "2026-09-11", ref: "docs/data-sources.md §13-35",
+  },
+  {
+    // 古河市（082040）の H30 以前。⚠ 上の R7・R2・H31 とは理由が違うので分けて記録する。
+    code: "082040", name: "古河市", dataset: "budget",
+    fiscalYears: ["H30", "H29", "H28", "H27", "H26", "H25", "H24"],
+    categories: ["scanned-image"],
+    reason: "予算書がスキャン画像で、取り出せる文字が0字（実測）。",
+    url: "https://www.city.ibaraki-koga.lg.jp/soshiki/zaisei/2/index.html",
+    checkedOn: "2026-09-11", ref: "docs/data-sources.md §13-35",
+  },
 ];

@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 242,
+  "budgetCount": 247,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 1798,
-  "fileCount": 3000,
-  "archivedCount": 1657,
+  "sourceCount": 1846,
+  "fileCount": 3048,
+  "archivedCount": 1701,
   "licenseOpen": 102,
-  "licensePermission": 1473,
+  "licensePermission": 1521,
   "licenseUnverified": 223,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -101,6 +101,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "武蔵野市",
       "code": "132039",
+      "years": 18,
+      "range": "H21〜R8（18年度）"
+    },
+    {
+      "name": "箕面市",
+      "code": "272205",
       "years": 18,
       "range": "H21〜R8（18年度）"
     },
@@ -375,6 +381,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H28〜R8（11年度）"
     },
     {
+      "name": "桑名市",
+      "code": "242055",
+      "years": 11,
+      "range": "H28〜R8（11年度）"
+    },
+    {
       "name": "吹田市",
       "code": "272051",
       "years": 11,
@@ -397,6 +409,12 @@ export const ROADMAP_PROGRESS = {
       "code": "092011",
       "years": 10,
       "range": "H28〜R8（10年度）"
+    },
+    {
+      "name": "足利市",
+      "code": "092029",
+      "years": 10,
+      "range": "H29〜R8（10年度）"
     },
     {
       "name": "前橋市",
@@ -915,6 +933,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R4〜R8（5年度）"
     },
     {
+      "name": "古河市",
+      "code": "082040",
+      "years": 5,
+      "range": "R3〜R8（5年度）"
+    },
+    {
       "name": "所沢市",
       "code": "112089",
       "years": 5,
@@ -997,6 +1021,12 @@ export const ROADMAP_PROGRESS = {
       "code": "142069",
       "years": 4,
       "range": "R5〜R8（4年度）"
+    },
+    {
+      "name": "藤枝市",
+      "code": "222143",
+      "years": 4,
+      "range": "H30〜R8（4年度）"
     },
     {
       "name": "豊橋市",
