@@ -2936,6 +2936,31 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28"] as const).map((fy) => ({
       srcId: `kuwana-yosan-soukatsu-${fy}`, muniCode: "242055", muniName: "桑名市", prefName: "三重県", isPref: false,
     })),
+    // ---- 第34巡（2026-09-12・§13-36）: 成田・周南・焼津・諫早・木更津 ----
+    // ⚠ 成田は `revenueHeading` を `一般会計予算` にしないと H24・H20 だけ款1 が汚れる（Σ 差0 のまま）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28", "h27", "h26", "h25", "h24", "h23", "h22", "h20"] as const).map((fy) => ({
+      srcId: `narita-yosan-gaiyou-${fy}`, muniCode: "122114", muniName: "成田市", prefName: "千葉県", isPref: false,
+    })),
+    // ⚠⚠ 周南は比較表の右に「主な増減事業」が並び、CropX を外すと歳出が Σ 差0 のまま款名に事業名が混ざる。
+    //    窓は年度ごとに違う（共通値は存在しない）。⚠ R4 だけ概要の歳入ページがラスタ画像なので予算書から採る
+    ...(["r8", "r7", "r6", "r5", "r3", "r2", "h27", "h26", "h25"] as const).map((fy) => ({
+      srcId: `shunan-yosangaiyou-${fy}`, muniCode: "352152", muniName: "周南市", prefName: "山口県", isPref: false,
+    })),
+    { srcId: "shunan-yosansho-r4", muniCode: "352152", muniName: "周南市", prefName: "山口県", isPref: false },
+    // ⚠ 焼津の H31 は発行元から消えていて Wayback から採る。H30 はアウトライン化で収録不可
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31"] as const).map((fy) => ({
+      srcId: `yaizu-soukatsu-${fy}`, muniCode: "222127", muniName: "焼津市", prefName: "静岡県", isPref: false,
+    })),
+    // ⚠⚠ 諫早は H28 以前が縦積みで `samePage` 必須（外すと歳出に歳入21款が入り Σ 差0 で通る）。
+    //    ⚠ R5 以前は現行サイトから消えていて WARP にしか無い。⚠ R4 で款体系が全面改組されている
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "r1", "h30", "h29", "h28", "h27", "h26", "h25", "h24"] as const).map((fy) => ({
+      srcId: `isahaya-kanbetsu-${fy}`, muniCode: "422045", muniName: "諫早市", prefName: "長崎県", isPref: false,
+    })),
+    // ⚠⚠ 木更津は歳出だけ当年度と前年度の間に財源内訳2列が挟まるので amountIntIndex を歳出側だけ指定する。
+    //    歳入に指定すると皆増の行で前年度が当年度の値になり前年度 Σ が割れる（warning 止まりで derive まで流れる）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29"] as const).map((fy) => ({
+      srcId: `kisarazu-yosan-gaiyo-${fy}`, muniCode: "122068", muniName: "木更津市", prefName: "千葉県", isPref: false,
+    })),
     ...(["h30", "h29", "h28"] as const).map((fy) => ({
       srcId: `takaoka-kaikeibetsu-yosan-${fy}`, muniCode: "162027", muniName: "高岡市", prefName: "富山県", isPref: false,
     })),

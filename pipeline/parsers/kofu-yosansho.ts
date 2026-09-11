@@ -206,9 +206,18 @@ interface Options {
    * ⚠ **必ず2つセットで指定する**。片方だけだと既定（または `prevColumnFirst`）の推測へ静かに
    *   落ちてしまい、このオプションを入れた意味（Σ差0 のまま別の列を読む事故を殺す）が失われるので、
    *   片方だけの指定は throw する。
+   * ⚠⚠ **歳入と歳出で列構成が違う様式がある**（2026-09-12・木更津市）。木更津の「予算の概要」は
+   *   歳入が `[当年度, 前年度, 増減]` なのに、**歳出だけ当年度と前年度の間に財源内訳2列が挟まる**
+   *   （`[当年度, 特定財源, 一般財源, 前年度, 増減]`）。`CropX` では救えない（必要な帯が不連続になる）。
+   *   ⇒ **`{ revenue, expenditure }` の形でも書ける**。数値で書けば従来どおり両側に同じ添字を使う。
+   * ⚠⚠ **片側だけ指定して、もう片側は既定の推測に任せられる**（`{ expenditure: 3 }` のように書く）。
+   *   木更津は**歳入に皆増・皆減の行があり、そこだけ前年度セルが空で ints が詰まる**ので、
+   *   固定の添字を当てると `環境性能割交付金` の前年度が 0 ではなく当年度の値になり
+   *   **前年度 Σ が割れる（validate では warning 止まり）**。歳入は推測に任せるのが正しい。
+   *   ⇒ **「列位置が全行で一定」が成り立つ側にだけ指定する。**
    */
-  amountIntIndex?: number;
-  prevIntIndex?: number;
+  amountIntIndex?: number | { revenue?: number; expenditure?: number };
+  prevIntIndex?: number | { revenue?: number; expenditure?: number };
   /**
    * **合計行だけ列の並びが款行と違う様式**（2026-08-23・豊橋市）。豊橋の概要資料は、
    * 款行の構成比が必ず小数か `-` なのに、**合計行の構成比だけ小数点の無い `100`** で印字される:
@@ -771,6 +780,11 @@ function parseKanPage(
   const pageLabel = pages.length > 1 ? `p.${pages[0]}-${pages[pages.length - 1]}` : `p.${page}`;
   // 側ごとの表ヘッダ語彙の追加（Options.revenueHeaderExtra / expenditureHeaderExtra 参照）
   const extraHeader = side === "revenue" ? opts.revenueHeaderExtra : opts.expenditureHeaderExtra;
+  // 側ごとに列位置が違う様式（Options.amountIntIndex 参照・木更津）。数値なら両側同じ。
+  const pickSide = (v: number | { revenue?: number; expenditure?: number } | undefined) =>
+    typeof v === "object" ? v[side] : v;
+  const amountIntIndex = pickSide(opts.amountIntIndex);
+  const prevIntIndex = pickSide(opts.prevIntIndex);
   // 款名が次行へ続く款（Options.kanNameContinues 参照）
   const tailKans = new Set(
     (side === "revenue" ? opts.kanNameContinues?.revenue : opts.kanNameContinues?.expenditure) ?? [],
@@ -972,7 +986,7 @@ function parseKanPage(
     // 前年度が **△1 → −1** になる（正: 1）。
     let amount: number;
     let prevAmount: number;
-    if (opts.amountIntIndex != null && opts.prevIntIndex != null) {
+    if (amountIntIndex != null && prevIntIndex != null) {
       // 列位置を直接指定する様式（Options.amountIntIndex 参照）。**皆増/皆減の推測は通さない** —
       // 位置が固定である様式にだけ使うオプションなので、推測を混ぜると逆に壊れる。
       // 範囲外は throw（静かに別の列を読ませない）。
@@ -986,8 +1000,8 @@ function parseKanPage(
         }
         return toAmount(t);
       };
-      amount = pick(opts.amountIntIndex, "当年度");
-      prevAmount = pick(opts.prevIntIndex, "前年度");
+      amount = pick(amountIntIndex, "当年度");
+      prevAmount = pick(prevIntIndex, "前年度");
     } else if (opts.prevColumnFirst) {
       // 逆順様式（Options.prevColumnFirst 参照）: ints = [前年度, 当年度, 比較]。
       // 添字ロジックは正順の**鏡像**になる — 前年度は常に ints[0]。当年度は ints[1] だが、
@@ -1145,8 +1159,8 @@ function parseKanPage(
       // bestInts > 1 が保証するとおりここは常に整数2個以上なので ints[1] は存在する。
       // **合計行だけ列が違う様式**は `totalAmountIntIndex` / `totalPrevIntIndex` が優先する
       // （Options 参照・豊橋）。指定が無ければ従来どおり款行と同じ添字を使う。
-      const totalAmtIdx = opts.totalAmountIntIndex ?? opts.amountIntIndex;
-      const totalPrevIdx = opts.totalPrevIntIndex ?? opts.prevIntIndex;
+      const totalAmtIdx = opts.totalAmountIntIndex ?? amountIntIndex;
+      const totalPrevIdx = opts.totalPrevIntIndex ?? prevIntIndex;
       if (totalAmtIdx != null && totalPrevIdx != null) {
         // 既定では款行と同じ添字（列指定の様式は合計行も同じ列構成であることが多い。京都府で実測）。
         // **合計行だけ列が違う様式**は上の `total*IntIndex` がこれを上書きする（豊橋）。
@@ -3438,11 +3452,18 @@ export function parseKofuYosansho(
   const opts = (source.parserOptions ?? {}) as Options;
   // 列指定は**2つセット**が必須（Options.amountIntIndex 参照）。片方だけだと既定の推測へ
   // 静かに落ちて、このオプションを入れた意味（Σ差0 のまま別の列を読む事故を殺す）が失われる。
-  if ((opts.amountIntIndex == null) !== (opts.prevIntIndex == null)) {
-    throw new Error(
-      `${source.id}: amountIntIndex と prevIntIndex は2つセットで指定してください` +
-        `（現在 amountIntIndex=${opts.amountIntIndex} / prevIntIndex=${opts.prevIntIndex}）`,
-    );
+  // ⚠ **側ごとに**2つセットであることを見る（`{ expenditure: 3 }` のような片側指定を許すため）。
+  for (const sd of ["revenue", "expenditure"] as const) {
+    const pick = (v: number | { revenue?: number; expenditure?: number } | undefined) =>
+      typeof v === "object" ? v[sd] : v;
+    const a1 = pick(opts.amountIntIndex);
+    const p1 = pick(opts.prevIntIndex);
+    if ((a1 == null) !== (p1 == null)) {
+      throw new Error(
+        `${source.id}: amountIntIndex と prevIntIndex は側ごとに2つセットで指定してください` +
+          `（${sd}: amountIntIndex=${a1} / prevIntIndex=${p1}）`,
+      );
+    }
   }
   // 帯の指定は復号の一部なので、復号しないなら意味を持たない（Options.decodeGarbleBand 参照）
   if (opts.decodeGarbleBand && !opts.decodeGarble) {
