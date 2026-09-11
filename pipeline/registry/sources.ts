@@ -18560,7 +18560,8 @@ export const SOURCES: SourceEntry[] = [
     //   「無断で複製、転用等することは法律で禁止」で permission-required。
     //   ⚠ リンクは「原則としてトップページに設定してください」と指示形だが、**直後に
     //   「特定のページに対する直接リンクを禁止するものではありません」と明示的に否定している**ので
-    //   `noDeepLink` は立てない（§11h のどの群にも無い新しい下位型）。
+    //   `noDeepLink` は立てない。**§11h の5群表に第6群として足した**（「原則トップページ＋直接リンクを
+    //   禁止しないと明言」）— 長崎（第2群・立てる）と字面が途中まで同じなので、否定句まで読むこと。
     // [年度, ファイルパス, 年度ページ, 皆減の除去が要るか]
     ["R8", "yosan120260218.files/R8gaiyou.pdf", "yosan120260218", false],
     ["R7", "r7tousyoyosangaiyou.files/R7gaiyou.pdf", "r7tousyoyosangaiyou", false],
