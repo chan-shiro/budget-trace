@@ -2253,12 +2253,16 @@ curl -s -o /dev/null -w "replay:       %{http_code}\n" "https://web.archive.org/
     その URL に UA を3通り当てる（[[publisher-may-block-wayback]] の東村山型）
   ⚠ **「未確認」を遅延と決めつけない** — 上の4つは対処がまったく違う。
 
-- **⚠⚠ `parserOptions` の文字列を直したら、その年度を再 parse する**（2026-09-12・第35巡のレビュー）。
+- **⚠⚠ registry の「人が読む文字列」を直したら、生成物まで流し直す**（2026-09-12・第35巡と第36巡のレビューで2回踏んだ）。
   `prevNote` は **parsed に焼き込まれてから** derive を通って画面に出る。registry だけ直して parse を回さないと、
   **registry と画面で本文が食い違い、画面側に古い（＝誤った）資料名が残る**。
   第35巡では石巻 R4 の引用資料名を「令和3年度当初予算の概要」→「令和3年度当初予算**案**の概要」と直したのに
   再 parse を忘れ、**配信データだけ実在しない資料名を引いていた**。typecheck も build も derive のゲートも鳴らない。
   ⇒ **registry の文字列を触ったら `pipeline:parse <id>` → `pipeline:derive` までを1組で回す。**
+  ⚠⚠ **対象は `prevNote` だけではない**（第36巡で `unrecordable.ts` の `reason` でも同じことをやった）。
+  `reason` は parse を経由しないが **derive が `unrecordable.gen.ts` と `coverage.json` に焼く**ので、
+  derive を忘れると**画面に出る2つの生成物だけが訂正前のまま**になる。しかも CI の「gen が最新か」で落ちる。
+  ⇒ **`pipeline/registry/` 配下を1文字でも直したら derive まで流す**（parse が要るかは対象で変わるが、derive は常に要る）。
 
 - **⚠⚠ 「ページ数」を `wc -c` の出力から読まない**（2026-09-12・第35巡のレビュー）。
   `pdftotext` の出力バイト数をページ数として台帳に書いてしまい、石巻 H23 に**我孫子 H25 の583ページ**を書いた。
