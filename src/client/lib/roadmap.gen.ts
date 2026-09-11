@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 238,
+  "budgetCount": 242,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 1755,
-  "fileCount": 2957,
+  "sourceCount": 1798,
+  "fileCount": 3000,
   "archivedCount": 1614,
   "licenseOpen": 102,
-  "licensePermission": 1430,
+  "licensePermission": 1473,
   "licenseUnverified": 223,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -267,10 +267,22 @@ export const ROADMAP_PROGRESS = {
       "range": "H24〜R8（13年度）"
     },
     {
+      "name": "草津市",
+      "code": "252069",
+      "years": 13,
+      "range": "H25〜R8（13年度）"
+    },
+    {
       "name": "苫小牧市",
       "code": "012131",
       "years": 12,
       "range": "H25〜R8（12年度）"
+    },
+    {
+      "name": "土浦市",
+      "code": "082031",
+      "years": 12,
+      "range": "H27〜R8（12年度）"
     },
     {
       "name": "朝霞市",
@@ -365,6 +377,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "吹田市",
       "code": "272051",
+      "years": 11,
+      "range": "H28〜R8（11年度）"
+    },
+    {
+      "name": "守口市",
+      "code": "272094",
       "years": 11,
       "range": "H28〜R8（11年度）"
     },
@@ -677,6 +695,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "秦野市",
       "code": "142115",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "海老名市",
+      "code": "142158",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },

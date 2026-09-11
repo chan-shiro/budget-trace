@@ -15276,5 +15276,263 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://warp.ndl.go.jp/20180117/20180117115302/https://www.city.toda.saitama.jp/uploaded/attachment/21425.pdf",
     "license": "戸田市公式サイト上の文書、図画等の各ファイル及びその内容に関する諸権利は、原則戸田市に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。戸田市公式サイトの内容（文書、図画等）について、私的使用または引用等著作権上で認められた行為を除き、戸田市に無断で掲載等をすることは禁止します。",
     "target": "file"
+  },
+  "/sources/ebina-yosansho-r8/R8yosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ebina.kanagawa.jp/shisei/zaisei/zaisei/1003917.html",
+    "license": "市ホームページから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、海老名市に帰属します。また、一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を超えて、本ページの情報の使用を希望する場合は事前に市長室広報担当までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "page"
+  },
+  "/sources/ebina-yosansho-r7/R7yosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ebina.kanagawa.jp/shisei/zaisei/zaisei/1003917.html",
+    "license": "市ホームページから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、海老名市に帰属します。また、一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を超えて、本ページの情報の使用を希望する場合は事前に市長室広報担当までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "page"
+  },
+  "/sources/ebina-yosansho-r6/R06yosansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ebina.kanagawa.jp/shisei/zaisei/zaisei/1003917.html",
+    "license": "市ホームページから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、海老名市に帰属します。また、一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を超えて、本ページの情報の使用を希望する場合は事前に市長室広報担当までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "page"
+  },
+  "/sources/ebina-yosansho-r5/R05yosansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ebina.kanagawa.jp/shisei/zaisei/zaisei/1003917.html",
+    "license": "市ホームページから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、海老名市に帰属します。また、一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を超えて、本ページの情報の使用を希望する場合は事前に市長室広報担当までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "page"
+  },
+  "/sources/ebina-yosansho-r4/r4yosansho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ebina.kanagawa.jp/shisei/zaisei/zaisei/1003917.html",
+    "license": "市ホームページから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、海老名市に帰属します。また、一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を超えて、本ページの情報の使用を希望する場合は事前に市長室広報担当までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "page"
+  },
+  "/sources/ebina-yosansho-r3/R03yosannsyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ebina.kanagawa.jp/shisei/zaisei/zaisei/1003917.html",
+    "license": "市ホームページから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、海老名市に帰属します。また、一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を超えて、本ページの情報の使用を希望する場合は事前に市長室広報担当までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "page"
+  },
+  "/sources/ebina-yosan-setsumei-r2/R02yosansetumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ebina.kanagawa.jp/shisei/zaisei/zaisei/1003917.html",
+    "license": "市ホームページから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、海老名市に帰属します。また、一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を超えて、本ページの情報の使用を希望する場合は事前に市長室広報担当までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "page"
+  },
+  "/sources/moriguchi-yosan-sankou-r8/R8yosan_sankou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.moriguchi.osaka.jp/kakukanoannai/kikakuzaiseibu/zaiseika/yosankessann/yosan/reiwa8/20244.html",
+    "license": "守口市ホームページに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として守口市に帰属しています。ただし、外部委託先の制作による一部の著作物など、当市以外に著作者が存在する場合は、著作権は各著作者に帰属します。「私的使用」や「引用」など、著作権法で認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできませんのでご注意ください。",
+    "target": "page"
+  },
+  "/sources/moriguchi-yosan-sankou-r7/hpyou_sannkou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.moriguchi.osaka.jp/kakukanoannai/kikakuzaiseibu/zaiseika/yosankessann/yosan/reiwa7/18597.html",
+    "license": "守口市ホームページに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として守口市に帰属しています。ただし、外部委託先の制作による一部の著作物など、当市以外に著作者が存在する場合は、著作権は各著作者に帰属します。「私的使用」や「引用」など、著作権法で認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできませんのでご注意ください。",
+    "target": "page"
+  },
+  "/sources/moriguchi-yosan-sankou-r5/yosansankousiryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.moriguchi.osaka.jp/kakukanoannai/kikakuzaiseibu/zaiseika/yosankessann/yosan/reiwa5nendo/index.html",
+    "license": "守口市ホームページに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として守口市に帰属しています。ただし、外部委託先の制作による一部の著作物など、当市以外に著作者が存在する場合は、著作権は各著作者に帰属します。「私的使用」や「引用」など、著作権法で認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできませんのでご注意ください。",
+    "target": "page"
+  },
+  "/sources/moriguchi-yosan-sankou-r4/R4yosansannko.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.moriguchi.osaka.jp/kakukanoannai/kikakuzaiseibu/zaiseika/yosankessann/yosan/reiwa4nenndo/index.html",
+    "license": "守口市ホームページに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として守口市に帰属しています。ただし、外部委託先の制作による一部の著作物など、当市以外に著作者が存在する場合は、著作権は各著作者に帰属します。「私的使用」や「引用」など、著作権法で認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできませんのでご注意ください。",
+    "target": "page"
+  },
+  "/sources/moriguchi-yosan-sankou-r3/R3yosansannko.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.moriguchi.osaka.jp/kakukanoannai/kikakuzaiseibu/zaiseika/yosankessann/yosan/reiwa3nenndo/index.html",
+    "license": "守口市ホームページに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として守口市に帰属しています。ただし、外部委託先の制作による一部の著作物など、当市以外に著作者が存在する場合は、著作権は各著作者に帰属します。「私的使用」や「引用」など、著作権法で認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできませんのでご注意ください。",
+    "target": "page"
+  },
+  "/sources/moriguchi-yosan-sankou-r2/R2yosansannko.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.moriguchi.osaka.jp/kakukanoannai/kikakuzaiseibu/zaiseika/yosankessann/yosan/reiwa2nenndo/index.html",
+    "license": "守口市ホームページに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として守口市に帰属しています。ただし、外部委託先の制作による一部の著作物など、当市以外に著作者が存在する場合は、著作権は各著作者に帰属します。「私的使用」や「引用」など、著作権法で認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできませんのでご注意ください。",
+    "target": "page"
+  },
+  "/sources/moriguchi-yosan-sankou-h31/H31sanko.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.moriguchi.osaka.jp/kakukanoannai/kikakuzaiseibu/zaiseika/yosankessann/yosan/h31yosan/index.html",
+    "license": "守口市ホームページに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として守口市に帰属しています。ただし、外部委託先の制作による一部の著作物など、当市以外に著作者が存在する場合は、著作権は各著作者に帰属します。「私的使用」や「引用」など、著作権法で認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできませんのでご注意ください。",
+    "target": "page"
+  },
+  "/sources/moriguchi-yosan-sankou-h30/H30yosansanko.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.moriguchi.osaka.jp/kakukanoannai/kikakuzaiseibu/zaiseika/yosankessann/yosan/h30yosan/index.html",
+    "license": "守口市ホームページに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として守口市に帰属しています。ただし、外部委託先の制作による一部の著作物など、当市以外に著作者が存在する場合は、著作権は各著作者に帰属します。「私的使用」や「引用」など、著作権法で認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできませんのでご注意ください。",
+    "target": "page"
+  },
+  "/sources/moriguchi-yosan-sankou-h29/H29yosansanko.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.moriguchi.osaka.jp/kakukanoannai/kikakuzaiseibu/zaiseika/yosankessann/yosan/h29yosan/index.html",
+    "license": "守口市ホームページに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として守口市に帰属しています。ただし、外部委託先の制作による一部の著作物など、当市以外に著作者が存在する場合は、著作権は各著作者に帰属します。「私的使用」や「引用」など、著作権法で認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできませんのでご注意ください。",
+    "target": "page"
+  },
+  "/sources/moriguchi-yosan-sankou-h28/H28yosansanko.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.moriguchi.osaka.jp/kakukanoannai/kikakuzaiseibu/zaiseika/yosankessann/yosan/h28/index.html",
+    "license": "守口市ホームページに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として守口市に帰属しています。ただし、外部委託先の制作による一部の著作物など、当市以外に著作者が存在する場合は、著作権は各著作者に帰属します。「私的使用」や「引用」など、著作権法で認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできませんのでご注意ください。",
+    "target": "page"
+  },
+  "/sources/moriguchi-yosan-gaiyou-r6/R6yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.moriguchi.osaka.jp/kakukanoannai/kikakuzaiseibu/zaiseika/yosankessann/yosan/reiwa6/16135.html",
+    "license": "守口市ホームページに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として守口市に帰属しています。ただし、外部委託先の制作による一部の著作物など、当市以外に著作者が存在する場合は、著作権は各著作者に帰属します。「私的使用」や「引用」など、著作権法で認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできませんのでご注意ください。",
+    "target": "page"
+  },
+  "/sources/kusatsu-yosan-gaiyou-r8/R8gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kusatsu.shiga.jp/shisei/zaisei/yosan/yosan120260218.files/R8gaiyou.pdf",
+    "license": "草津市ホームページに掲載しているすべてのページ（文書・写真・画像・その他データ）に関する著作権は、特に表示のない場合、草津市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製、転用等することは法律で禁止されています。",
+    "target": "file"
+  },
+  "/sources/kusatsu-yosan-gaiyou-r7/R7gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kusatsu.shiga.jp/shisei/zaisei/yosan/r7tousyoyosangaiyou.files/R7gaiyou.pdf",
+    "license": "草津市ホームページに掲載しているすべてのページ（文書・写真・画像・その他データ）に関する著作権は、特に表示のない場合、草津市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製、転用等することは法律で禁止されています。",
+    "target": "file"
+  },
+  "/sources/kusatsu-yosan-gaiyou-r6/R6gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kusatsu.shiga.jp/shisei/zaisei/yosan/yosan120240222.files/R6gaiyou.pdf",
+    "license": "草津市ホームページに掲載しているすべてのページ（文書・写真・画像・その他データ）に関する著作権は、特に表示のない場合、草津市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製、転用等することは法律で禁止されています。",
+    "target": "file"
+  },
+  "/sources/kusatsu-yosan-gaiyou-r5/R5gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kusatsu.shiga.jp/shisei/zaisei/yosan/yosan120230213.files/R5gaiyou.pdf",
+    "license": "草津市ホームページに掲載しているすべてのページ（文書・写真・画像・その他データ）に関する著作権は、特に表示のない場合、草津市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製、転用等することは法律で禁止されています。",
+    "target": "file"
+  },
+  "/sources/kusatsu-yosan-gaiyou-r4/gaiyouR4.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kusatsu.shiga.jp/shisei/zaisei/yosan/yosangaiyouR4.files/gaiyouR4.pdf",
+    "license": "草津市ホームページに掲載しているすべてのページ（文書・写真・画像・その他データ）に関する著作権は、特に表示のない場合、草津市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製、転用等することは法律で禁止されています。",
+    "target": "file"
+  },
+  "/sources/kusatsu-yosan-gaiyou-r3/gaiyou1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kusatsu.shiga.jp/shisei/zaisei/yosan/r3toushoyosangaiyou.files/gaiyou1.pdf",
+    "license": "草津市ホームページに掲載しているすべてのページ（文書・写真・画像・その他データ）に関する著作権は、特に表示のない場合、草津市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製、転用等することは法律で禁止されています。",
+    "target": "file"
+  },
+  "/sources/kusatsu-yosan-gaiyou-r2/2gaiyo1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kusatsu.shiga.jp/shisei/zaisei/yosan/yosangaiyo02.files/2gaiyo1.pdf",
+    "license": "草津市ホームページに掲載しているすべてのページ（文書・写真・画像・その他データ）に関する著作権は、特に表示のない場合、草津市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製、転用等することは法律で禁止されています。",
+    "target": "file"
+  },
+  "/sources/kusatsu-yosan-gaiyou-h31/31yosangaiyo1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kusatsu.shiga.jp/shisei/zaisei/yosan/31toushoyosangaiyo.files/31yosangaiyo1.pdf",
+    "license": "草津市ホームページに掲載しているすべてのページ（文書・写真・画像・その他データ）に関する著作権は、特に表示のない場合、草津市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製、転用等することは法律で禁止されています。",
+    "target": "file"
+  },
+  "/sources/kusatsu-yosan-gaiyou-h30/300216-1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kusatsu.shiga.jp/shisei/zaisei/yosan/yosangaiyo30.files/300216-1.pdf",
+    "license": "草津市ホームページに掲載しているすべてのページ（文書・写真・画像・その他データ）に関する著作権は、特に表示のない場合、草津市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製、転用等することは法律で禁止されています。",
+    "target": "file"
+  },
+  "/sources/kusatsu-yosan-gaiyou-h29/29gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kusatsu.shiga.jp/shisei/zaisei/yosan/29yosangaiyou.files/29gaiyou.pdf",
+    "license": "草津市ホームページに掲載しているすべてのページ（文書・写真・画像・その他データ）に関する著作権は、特に表示のない場合、草津市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製、転用等することは法律で禁止されています。",
+    "target": "file"
+  },
+  "/sources/kusatsu-yosan-gaiyou-h28/209.pdf": {
+    "mode": "origin",
+    "href": "https://data.bodik.jp/dataset/6ecffcf7-a2d3-4500-be51-ea7502b48ea5/resource/714fa0d4-6756-49b1-b21e-1b90e9333df1/download/209.pdf",
+    "license": "草津市ホームページに掲載しているすべてのページ（文書・写真・画像・その他データ）に関する著作権は、特に表示のない場合、草津市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製、転用等することは法律で禁止されています。",
+    "target": "file"
+  },
+  "/sources/kusatsu-yosan-gaiyou-h27/217.pdf": {
+    "mode": "origin",
+    "href": "https://data.bodik.jp/dataset/6ecffcf7-a2d3-4500-be51-ea7502b48ea5/resource/d428b68e-3c58-46e2-ae5c-ffcc83e828e9/download/217.pdf",
+    "license": "草津市ホームページに掲載しているすべてのページ（文書・写真・画像・その他データ）に関する著作権は、特に表示のない場合、草津市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製、転用等することは法律で禁止されています。",
+    "target": "file"
+  },
+  "/sources/kusatsu-yosan-gaiyou-h25/225.pdf": {
+    "mode": "origin",
+    "href": "https://data.bodik.jp/dataset/6ecffcf7-a2d3-4500-be51-ea7502b48ea5/resource/873fb134-9a91-4d5e-9ec8-80a2c33717b5/download/225.pdf",
+    "license": "草津市ホームページに掲載しているすべてのページ（文書・写真・画像・その他データ）に関する著作権は、特に表示のない場合、草津市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製、転用等することは法律で禁止されています。",
+    "target": "file"
+  },
+  "/sources/tsuchiura-yosan-gaiyou-r8/1770964232_doc_5_0.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsuchiura.lg.jp/shisei/zaseikeikaku-yosan/yosan/r8/page022716.html",
+    "license": "土浦市ホームページの画像、レイアウト、デザインおよび構造に関する情報は著作権の対象です。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転用等をすることはできません。",
+    "target": "page"
+  },
+  "/sources/tsuchiura-yosan-gaiyou-r7/1739773048_doc_5_0.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsuchiura.lg.jp/shisei/zaseikeikaku-yosan/yosan/yosan/page021234.html",
+    "license": "土浦市ホームページの画像、レイアウト、デザインおよび構造に関する情報は著作権の対象です。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転用等をすることはできません。",
+    "target": "page"
+  },
+  "/sources/tsuchiura-yosan-gaiyou-r6/1708578672_doc_5_0.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsuchiura.lg.jp/shisei/zaseikeikaku-yosan/yosan/r6/page019744.html",
+    "license": "土浦市ホームページの画像、レイアウト、デザインおよび構造に関する情報は著作権の対象です。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転用等をすることはできません。",
+    "target": "page"
+  },
+  "/sources/tsuchiura-yosan-gaiyou-r5/1676596511_doc_5_0.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsuchiura.lg.jp/shisei/zaseikeikaku-yosan/yosan/r5/page018273.html",
+    "license": "土浦市ホームページの画像、レイアウト、デザインおよび構造に関する情報は著作権の対象です。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転用等をすることはできません。",
+    "target": "page"
+  },
+  "/sources/tsuchiura-yosan-gaiyou-r4/1645509951_doc_159_0.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsuchiura.lg.jp/shisei/zaseikeikaku-yosan/yosan/r4/page017011.html",
+    "license": "土浦市ホームページの画像、レイアウト、デザインおよび構造に関する情報は著作権の対象です。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転用等をすることはできません。",
+    "target": "page"
+  },
+  "/sources/tsuchiura-yosan-gaiyou-r3/1614662171_doc_5_0.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsuchiura.lg.jp/shisei/zaseikeikaku-yosan/yosan/r3/page015463.html",
+    "license": "土浦市ホームページの画像、レイアウト、デザインおよび構造に関する情報は著作権の対象です。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転用等をすることはできません。",
+    "target": "page"
+  },
+  "/sources/tsuchiura-yosan-gaiyou-r2/1584584405_doc_5_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsuchiura.lg.jp/shisei/zaseikeikaku-yosan/yosan/r2/page013249.html",
+    "license": "土浦市ホームページの画像、レイアウト、デザインおよび構造に関する情報は著作権の対象です。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転用等をすることはできません。",
+    "target": "page"
+  },
+  "/sources/tsuchiura-yosan-gaiyou-h31/1552972432_doc_5_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsuchiura.lg.jp/shisei/zaseikeikaku-yosan/yosan/h31/page012055.html",
+    "license": "土浦市ホームページの画像、レイアウト、デザインおよび構造に関する情報は著作権の対象です。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転用等をすることはできません。",
+    "target": "page"
+  },
+  "/sources/tsuchiura-yosan-gaiyou-h30/1520300133_doc_5_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsuchiura.lg.jp/shisei/zaseikeikaku-yosan/yosan/h30/page010838.html",
+    "license": "土浦市ホームページの画像、レイアウト、デザインおよび構造に関する情報は著作権の対象です。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転用等をすることはできません。",
+    "target": "page"
+  },
+  "/sources/tsuchiura-yosan-gaiyou-h29/1500360544_doc_5_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsuchiura.lg.jp/shisei/zaseikeikaku-yosan/yosan/h29/page009749.html",
+    "license": "土浦市ホームページの画像、レイアウト、デザインおよび構造に関する情報は著作権の対象です。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転用等をすることはできません。",
+    "target": "page"
+  },
+  "/sources/tsuchiura-yosan-gaiyou-h28/1458024276_doc_5_9.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsuchiura.lg.jp/shisei/zaseikeikaku-yosan/yosan/h28/page008507.html",
+    "license": "土浦市ホームページの画像、レイアウト、デザインおよび構造に関する情報は著作権の対象です。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転用等をすることはできません。",
+    "target": "page"
+  },
+  "/sources/tsuchiura-yosan-gaiyou-h27/1426565189_doc_5_0.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsuchiura.lg.jp/shisei/zaseikeikaku-yosan/yosan/h27/page007023.html",
+    "license": "土浦市ホームページの画像、レイアウト、デザインおよび構造に関する情報は著作権の対象です。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転用等をすることはできません。",
+    "target": "page"
   }
 };

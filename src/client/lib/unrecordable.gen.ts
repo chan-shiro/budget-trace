@@ -57,6 +57,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
       }
     ]
   },
+  "112186": {
+    "budget": [
+      {
+        "fyLabel": "令和8年度・令和7年度・令和6年度・令和5年度・令和4年度・令和3年度・令和2年度・平成31年度・平成30年度",
+        "reason": "毎年出ている「予算資料」の一般会計歳入・歳出款別内訳は列が「款／予算額／構成比」だけで、前年度の額を持たない（令和8年度の p.15 を開いて実測）。前年度額があるのは款を8区分に丸めた推移表だけで、款別の前年当初比較にならない。同じ年度に出ている『当初予算書』はスキャン画像で文字が取り出せない、と偵察が報告している（この点だけは自分では未確認）。",
+        "checkedOn": "2026-09-11"
+      }
+    ]
+  },
   "112259": {
     "budget": [
       {
@@ -869,6 +878,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
       }
     ]
   },
+  "082031": {
+    "budget": [
+      {
+        "fyLabel": "平成26年度",
+        "reason": "歳出に印の無い廃止款（諸支出金・款番号の欄が空で伸率が「▲ 100.0」）があり、廃止款の分岐に入らず行ごと落ちる。前年度 Σ が 1,611,880千円 不足して error で止まる（静かには壊れない）。行頭の印に頼らず款番号欄の空きで判定できれば開く見込み。",
+        "checkedOn": "2026-09-11"
+      }
+    ]
+  },
   "082210": {
     "budget": [
       {
@@ -940,6 +958,9 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
  * 「収録済み」の案内のままで正しいので、画面の文言を差し替える対象ではない。
  */
 export const UNRECORDABLE_WHOLLY: Record<string, string[]> = {
+  "112186": [
+    "budget"
+  ],
   "121002": [
     "report"
   ],

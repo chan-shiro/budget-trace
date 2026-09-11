@@ -185,6 +185,10 @@ const MUNI_SLUGS: Record<string, string> = {
   "112259": "iruma",
   "112241": "toda",
   "312029": "yonago",
+  "142158": "ebina",
+  "272094": "moriguchi",
+  "252069": "kusatsu",
+  "082031": "tsuchiura",
   "472115": "okinawa", // ⚠ 沖縄県 470007 は "ken" スラグなので衝突しない（富山市・佐賀市と同じ規則）
   "232076": "toyokawa", "352039": "yamaguchi", "222038": "numazu", "272191": "izumi",
   // 政令指定都市（2026-07-15）
