@@ -2334,7 +2334,8 @@ curl -s -o /dev/null -w "replay:       %{http_code}\n" "https://web.archive.org/
 
 0k. **`unrecordable` の `reason` の書き方を決める**（2026-09-11・#236 のレビューで判明・**判断待ち**）。
    記法（`**`・`⚠`）は #236 で落としたが、**文章は保守者向けのまま**。113件を掃くと
-   コード識別子（`derive`・`throw`・`GARBLE_CHAR_MAP`・`ToUnicode`・`U+FFFD` など）が18件・
+   コード識別子が**少なくとも18件**（`derive`・`throw`・`GARBLE_CHAR_MAP`・`ToUnicode`・`U+FFFD` の5語だけで18。
+   `pdftotext` 29・`decodeGarble` 4・`try-parse` 3 まで入れると44。**語を足せば増えるので上限ではない**）・
    `Σ` が10件・`⇒`/`→` が7件ある。茨木のダッシュボードには
    「XObject の BT が2個」「GARBLE_CHAR_MAP に 項・明・細・書…の10字が足りず throw し」が出ている。
    ⚠ **CLAUDE.md の「理由は docs/data-sources.md からの転記だけにする」**（推測を断定で書かないための規約）と
