@@ -4497,10 +4497,11 @@ export const ROADMAP_PLAN: RoadmapItem[] = ${JSON.stringify(ROADMAP, null, 2)};
     let checked = 0;
     for (const s of SOURCES) {
       if (s.fixture || !existsSync(parsedPath(s.id))) continue;
-      const code = codeOf(s);
-      if (!code) continue;
       const doc = anyParsedDocSchema.parse(readJson(parsedPath(s.id)));
       if (doc.docType !== "budget-book") continue;
+      const code = codeOf(s);
+      // 団体コードが読めない budget-book を黙って飛ばすと、このゲートだけ静かに無効化される
+      if (!code) throw new Error(`${s.id}: scope から団体コードを読めません（骨格予算ゲートの対象から外れる）: ${s.scope}`);
       const seq = fySeq(doc.fiscalYear);
       const explained = doc.prevBasis !== "当初" || !!doc.prevNote;
       const prevIsSkeleton = skeleton.get(`${code}:${seq - 1}`);
@@ -4514,13 +4515,16 @@ export const ROADMAP_PLAN: RoadmapItem[] = ${JSON.stringify(ROADMAP, null, 2)};
           );
         }
       }
+      // 逆方向。注記の文言から当年度側/前年度側を推測しない（「本年度」「この年度」で始まらない当年度側の
+      // 注記があり得て、推測を外すと**存在しない骨格年度を台帳に書かせる**方向に鳴る）。
+      // 両方を見て、両方無いときだけ、両方を名指しして鳴らす。
+      // ⚠ これは語彙の網なので、骨格の語を使わずに事情を説明する注記（宝塚 R4/R8「市長改選前に編成」・
+      //   甲府 R6・佐倉 R6・米子 H22）は対象外。**台帳の腐り止めであって網羅の保証ではない**。
       if (doc.prevNote && KOKKAKU_WORDS.test(doc.prevNote)) {
-        const cur = /^(本年度|この年度)/.test(doc.prevNote);
-        const want = cur ? seq : seq - 1;
-        if (!skeleton.has(`${code}:${want}`)) {
+        if (!skeleton.has(`${code}:${seq}`) && !skeleton.has(`${code}:${seq - 1}`)) {
           problems.push(
-            `${s.id}: prevNote が骨格予算に触れていますが、${cur ? "この年度" : "前年度"}が pipeline/registry/skeleton-budgets.ts に載っていません。` +
-              `注記を足したら台帳にも書く（根拠つき）。台帳に無い年度の注記は次の棚卸しで見つからない`,
+            `${s.id}: prevNote が骨格予算に触れていますが、この年度（${doc.fiscalYear}）も前年度も pipeline/registry/skeleton-budgets.ts に載っていません。` +
+              `注記が前年度の話なら前年度を、当年度の話ならこの年度を、**原典で確かめてから**台帳に書く（周期から書かない）`,
           );
         }
       }
