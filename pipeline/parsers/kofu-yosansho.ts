@@ -215,6 +215,9 @@ interface Options {
    *   固定の添字を当てると `環境性能割交付金` の前年度が 0 ではなく当年度の値になり
    *   **前年度 Σ が割れる（validate では warning 止まり）**。歳入は推測に任せるのが正しい。
    *   ⇒ **「列位置が全行で一定」が成り立つ側にだけ指定する。**
+   * ⚠ **`prevBlankAsZero` との併用禁止は object 形でも「指定したか」だけで見る**ので、
+   *   片側を既定の推測に任せていても throw する。歳入側だけ `prevBlankAsZero` が要る様式に
+   *   当たったら、この検査も側ごとにすること（2026-09-12 時点でその様式はまだ無い）。
    */
   amountIntIndex?: number | { revenue?: number; expenditure?: number };
   prevIntIndex?: number | { revenue?: number; expenditure?: number };

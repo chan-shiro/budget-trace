@@ -111,6 +111,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
       }
     ]
   },
+  "122114": {
+    "budget": [
+      {
+        "fyLabel": "平成21年度",
+        "reason": "「平成21年度当初予算の概要」がスキャン画像で、取り出せる文字が27字しかない（実測）。",
+        "checkedOn": "2026-09-12"
+      }
+    ]
+  },
   "122211": {
     "budget": [
       {
@@ -462,6 +471,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
       }
     ]
   },
+  "222127": {
+    "budget": [
+      {
+        "fyLabel": "平成30年度",
+        "reason": "「当初予算（案）の概要」の款別表がアウトライン化されていて、取り出せる文字が0字（画像ではないので復号でも直らない）。",
+        "checkedOn": "2026-09-12"
+      }
+    ]
+  },
   "222143": {
     "budget": [
       {
@@ -756,6 +774,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
         "fyLabel": "令和7年度・令和5年度・令和2年度",
         "reason": "「当初予算（案）の概要」の PDF が ToUnicode 欠落で文字化けする（埋め込みフォントの ToUnicode がすべて無く、pdftotext の出力が「䊡䚷௧࿴䠓ᖺᗘ…」のような別の文字になる）。令和7・5年度は歳入・歳出とも化け、令和2年度は歳入ページ（p.4）は正常で歳出ページ（p.9）だけ化ける。既存の復号表（GARBLE_CHAR_MAP）に無い字（△・皆・全角数字帯など）が多く、表の上の本文段落も復号対象になるため decodeGarble でも通らない（偵察が実測）。",
         "checkedOn": "2026-09-10"
+      }
+    ]
+  },
+  "352152": {
+    "budget": [
+      {
+        "fyLabel": "平成31年度・平成30年度・平成29年度・平成28年度",
+        "reason": "当初予算の概要・予算説明参考資料・予算書のいずれもスキャン画像で、埋め込みフォントが0本（実測）。H30 の予算書だけは一部にテキスト層があるが、歳出の総括ページが帯状の画像で、片側しか取り出せない。",
+        "checkedOn": "2026-09-12"
       }
     ]
   },
