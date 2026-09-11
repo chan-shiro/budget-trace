@@ -15279,111 +15279,111 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
   },
   "/sources/ebina-yosansho-r8/R8yosan.pdf": {
     "mode": "origin",
-    "href": "https://www.city.ebina.kanagawa.jp/_res/projects/default_project/_page_/001/003/917/R8yosan.pdf",
+    "href": "https://www.city.ebina.kanagawa.jp/shisei/zaisei/zaisei/1003917.html",
     "license": "市ホームページから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、海老名市に帰属します。また、一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を超えて、本ページの情報の使用を希望する場合は事前に市長室広報担当までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
-    "target": "file"
+    "target": "page"
   },
   "/sources/ebina-yosansho-r7/R7yosan.pdf": {
     "mode": "origin",
-    "href": "https://www.city.ebina.kanagawa.jp/_res/projects/default_project/_page_/001/003/917/R7yosan.pdf",
+    "href": "https://www.city.ebina.kanagawa.jp/shisei/zaisei/zaisei/1003917.html",
     "license": "市ホームページから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、海老名市に帰属します。また、一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を超えて、本ページの情報の使用を希望する場合は事前に市長室広報担当までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
-    "target": "file"
+    "target": "page"
   },
   "/sources/ebina-yosansho-r6/R06yosansyo.pdf": {
     "mode": "origin",
-    "href": "https://www.city.ebina.kanagawa.jp/_res/projects/default_project/_page_/001/003/917/R06yosansyo.pdf",
+    "href": "https://www.city.ebina.kanagawa.jp/shisei/zaisei/zaisei/1003917.html",
     "license": "市ホームページから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、海老名市に帰属します。また、一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を超えて、本ページの情報の使用を希望する場合は事前に市長室広報担当までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
-    "target": "file"
+    "target": "page"
   },
   "/sources/ebina-yosansho-r5/R05yosansyo.pdf": {
     "mode": "origin",
-    "href": "https://www.city.ebina.kanagawa.jp/_res/projects/default_project/_page_/001/003/917/R05yosansyo.pdf",
+    "href": "https://www.city.ebina.kanagawa.jp/shisei/zaisei/zaisei/1003917.html",
     "license": "市ホームページから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、海老名市に帰属します。また、一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を超えて、本ページの情報の使用を希望する場合は事前に市長室広報担当までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
-    "target": "file"
+    "target": "page"
   },
   "/sources/ebina-yosansho-r4/r4yosansho.pdf": {
     "mode": "origin",
-    "href": "https://www.city.ebina.kanagawa.jp/_res/projects/default_project/_page_/001/003/917/r4yosansho.pdf",
+    "href": "https://www.city.ebina.kanagawa.jp/shisei/zaisei/zaisei/1003917.html",
     "license": "市ホームページから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、海老名市に帰属します。また、一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を超えて、本ページの情報の使用を希望する場合は事前に市長室広報担当までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
-    "target": "file"
+    "target": "page"
   },
   "/sources/ebina-yosansho-r3/R03yosannsyo.pdf": {
     "mode": "origin",
-    "href": "https://www.city.ebina.kanagawa.jp/_res/projects/default_project/_page_/001/003/917/R03yosannsyo.pdf",
+    "href": "https://www.city.ebina.kanagawa.jp/shisei/zaisei/zaisei/1003917.html",
     "license": "市ホームページから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、海老名市に帰属します。また、一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を超えて、本ページの情報の使用を希望する場合は事前に市長室広報担当までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
-    "target": "file"
+    "target": "page"
   },
   "/sources/ebina-yosan-setsumei-r2/R02yosansetumei.pdf": {
     "mode": "origin",
-    "href": "https://www.city.ebina.kanagawa.jp/_res/projects/default_project/_page_/001/003/917/R02yosansetumei.pdf",
+    "href": "https://www.city.ebina.kanagawa.jp/shisei/zaisei/zaisei/1003917.html",
     "license": "市ホームページから発信する情報（テキスト、画像、PDF、音声そのほかのデータ）の著作権は、海老名市に帰属します。また、一部の写真、イラスト画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を超えて、本ページの情報の使用を希望する場合は事前に市長室広報担当までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
-    "target": "file"
+    "target": "page"
   },
   "/sources/moriguchi-yosan-sankou-r8/R8yosan_sankou.pdf": {
     "mode": "origin",
-    "href": "https://www.city.moriguchi.osaka.jp/material/files/group/72/R8yosan_sankou.pdf",
+    "href": "https://www.city.moriguchi.osaka.jp/kakukanoannai/kikakuzaiseibu/zaiseika/yosankessann/yosan/reiwa8/20244.html",
     "license": "守口市ホームページに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として守口市に帰属しています。ただし、外部委託先の制作による一部の著作物など、当市以外に著作者が存在する場合は、著作権は各著作者に帰属します。「私的使用」や「引用」など、著作権法で認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできませんのでご注意ください。",
-    "target": "file"
+    "target": "page"
   },
   "/sources/moriguchi-yosan-sankou-r7/hpyou_sannkou.pdf": {
     "mode": "origin",
-    "href": "https://www.city.moriguchi.osaka.jp/material/files/group/72/hpyou_sannkou.pdf",
+    "href": "https://www.city.moriguchi.osaka.jp/kakukanoannai/kikakuzaiseibu/zaiseika/yosankessann/yosan/reiwa7/18597.html",
     "license": "守口市ホームページに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として守口市に帰属しています。ただし、外部委託先の制作による一部の著作物など、当市以外に著作者が存在する場合は、著作権は各著作者に帰属します。「私的使用」や「引用」など、著作権法で認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできませんのでご注意ください。",
-    "target": "file"
+    "target": "page"
   },
   "/sources/moriguchi-yosan-sankou-r5/yosansankousiryou.pdf": {
     "mode": "origin",
-    "href": "https://www.city.moriguchi.osaka.jp/material/files/group/72/yosansankousiryou.pdf",
+    "href": "https://www.city.moriguchi.osaka.jp/kakukanoannai/kikakuzaiseibu/zaiseika/yosankessann/yosan/reiwa5nendo/index.html",
     "license": "守口市ホームページに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として守口市に帰属しています。ただし、外部委託先の制作による一部の著作物など、当市以外に著作者が存在する場合は、著作権は各著作者に帰属します。「私的使用」や「引用」など、著作権法で認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできませんのでご注意ください。",
-    "target": "file"
+    "target": "page"
   },
   "/sources/moriguchi-yosan-sankou-r4/R4yosansannko.pdf": {
     "mode": "origin",
-    "href": "https://www.city.moriguchi.osaka.jp/material/files/group/72/R4yosansannko.pdf",
+    "href": "https://www.city.moriguchi.osaka.jp/kakukanoannai/kikakuzaiseibu/zaiseika/yosankessann/yosan/reiwa4nenndo/index.html",
     "license": "守口市ホームページに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として守口市に帰属しています。ただし、外部委託先の制作による一部の著作物など、当市以外に著作者が存在する場合は、著作権は各著作者に帰属します。「私的使用」や「引用」など、著作権法で認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできませんのでご注意ください。",
-    "target": "file"
+    "target": "page"
   },
   "/sources/moriguchi-yosan-sankou-r3/R3yosansannko.pdf": {
     "mode": "origin",
-    "href": "https://www.city.moriguchi.osaka.jp/material/files/group/72/R3yosansannko.pdf",
+    "href": "https://www.city.moriguchi.osaka.jp/kakukanoannai/kikakuzaiseibu/zaiseika/yosankessann/yosan/reiwa3nenndo/index.html",
     "license": "守口市ホームページに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として守口市に帰属しています。ただし、外部委託先の制作による一部の著作物など、当市以外に著作者が存在する場合は、著作権は各著作者に帰属します。「私的使用」や「引用」など、著作権法で認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできませんのでご注意ください。",
-    "target": "file"
+    "target": "page"
   },
   "/sources/moriguchi-yosan-sankou-r2/R2yosansannko.pdf": {
     "mode": "origin",
-    "href": "https://www.city.moriguchi.osaka.jp/material/files/group/72/R2yosansannko.pdf",
+    "href": "https://www.city.moriguchi.osaka.jp/kakukanoannai/kikakuzaiseibu/zaiseika/yosankessann/yosan/reiwa2nenndo/index.html",
     "license": "守口市ホームページに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として守口市に帰属しています。ただし、外部委託先の制作による一部の著作物など、当市以外に著作者が存在する場合は、著作権は各著作者に帰属します。「私的使用」や「引用」など、著作権法で認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできませんのでご注意ください。",
-    "target": "file"
+    "target": "page"
   },
   "/sources/moriguchi-yosan-sankou-h31/H31sanko.pdf": {
     "mode": "origin",
-    "href": "https://www.city.moriguchi.osaka.jp/material/files/group/72/H31sanko.pdf",
+    "href": "https://www.city.moriguchi.osaka.jp/kakukanoannai/kikakuzaiseibu/zaiseika/yosankessann/yosan/h31yosan/index.html",
     "license": "守口市ホームページに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として守口市に帰属しています。ただし、外部委託先の制作による一部の著作物など、当市以外に著作者が存在する場合は、著作権は各著作者に帰属します。「私的使用」や「引用」など、著作権法で認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできませんのでご注意ください。",
-    "target": "file"
+    "target": "page"
   },
   "/sources/moriguchi-yosan-sankou-h30/H30yosansanko.pdf": {
     "mode": "origin",
-    "href": "https://www.city.moriguchi.osaka.jp/material/files/group/72/H30yosansanko.pdf",
+    "href": "https://www.city.moriguchi.osaka.jp/kakukanoannai/kikakuzaiseibu/zaiseika/yosankessann/yosan/h30yosan/index.html",
     "license": "守口市ホームページに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として守口市に帰属しています。ただし、外部委託先の制作による一部の著作物など、当市以外に著作者が存在する場合は、著作権は各著作者に帰属します。「私的使用」や「引用」など、著作権法で認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできませんのでご注意ください。",
-    "target": "file"
+    "target": "page"
   },
   "/sources/moriguchi-yosan-sankou-h29/H29yosansanko.pdf": {
     "mode": "origin",
-    "href": "https://www.city.moriguchi.osaka.jp/material/files/group/72/H29yosansanko.pdf",
+    "href": "https://www.city.moriguchi.osaka.jp/kakukanoannai/kikakuzaiseibu/zaiseika/yosankessann/yosan/h29yosan/index.html",
     "license": "守口市ホームページに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として守口市に帰属しています。ただし、外部委託先の制作による一部の著作物など、当市以外に著作者が存在する場合は、著作権は各著作者に帰属します。「私的使用」や「引用」など、著作権法で認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできませんのでご注意ください。",
-    "target": "file"
+    "target": "page"
   },
   "/sources/moriguchi-yosan-sankou-h28/H28yosansanko.pdf": {
     "mode": "origin",
-    "href": "https://www.city.moriguchi.osaka.jp/material/files/group/72/H28yosansanko.pdf",
+    "href": "https://www.city.moriguchi.osaka.jp/kakukanoannai/kikakuzaiseibu/zaiseika/yosankessann/yosan/h28/index.html",
     "license": "守口市ホームページに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として守口市に帰属しています。ただし、外部委託先の制作による一部の著作物など、当市以外に著作者が存在する場合は、著作権は各著作者に帰属します。「私的使用」や「引用」など、著作権法で認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできませんのでご注意ください。",
-    "target": "file"
+    "target": "page"
   },
   "/sources/moriguchi-yosan-gaiyou-r6/R6yosangaiyou.pdf": {
     "mode": "origin",
-    "href": "https://www.city.moriguchi.osaka.jp/material/files/group/72/R6yosangaiyou.pdf",
+    "href": "https://www.city.moriguchi.osaka.jp/kakukanoannai/kikakuzaiseibu/zaiseika/yosankessann/yosan/reiwa6/16135.html",
     "license": "守口市ホームページに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として守口市に帰属しています。ただし、外部委託先の制作による一部の著作物など、当市以外に著作者が存在する場合は、著作権は各著作者に帰属します。「私的使用」や「引用」など、著作権法で認められている適切な方法で利用する場合を除き、無断使用・無断転載することはできませんのでご注意ください。",
-    "target": "file"
+    "target": "page"
   },
   "/sources/kusatsu-yosan-gaiyou-r8/R8gaiyou.pdf": {
     "mode": "origin",

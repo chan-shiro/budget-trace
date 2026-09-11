@@ -1275,7 +1275,8 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     categories: ["format-mismatch"],
     reason:
       "毎年出ている「予算資料」の一般会計歳入・歳出款別内訳は列が「款／予算額／構成比」だけで、前年度の額を持たない" +
-      "（令和8年度の p.15 を開いて実測）。前年度額があるのは款を8区分に丸めた推移表だけで、款別の前年当初比較にならない。",
+      "（令和8年度の p.15 を開いて実測）。前年度額があるのは款を8区分に丸めた推移表だけで、款別の前年当初比較にならない。" +
+      "同じ年度に出ている『当初予算書』はスキャン画像で文字が取り出せない、と偵察が報告している（この点だけは自分では未確認）。",
     url: "https://www.city.fukaya.saitama.jp/shisei/zaiseiyosangyozaisei/zaisei/zaisei_yosan/1389851437763.html",
     checkedOn: "2026-09-11", ref: "docs/data-sources.md §13-33",
   },

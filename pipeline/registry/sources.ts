@@ -18370,7 +18370,10 @@ export const SOURCES: SourceEntry[] = [
     // ライセンス: 「著作権について」（/about/1005671.html・更新 2018-02-26・確認日 2026-09-11）。
     //   「無断使用・転載、二次利用を禁止」「個人的かつ非営利的な使用目的だけ」で permission-required。
     //   オープンデータの CC BY は規約自身が「下記対象データのみに適用」と範囲を限り、4カテゴリに予算・決算は0件 → 及ばない（§9g）。
-    //   直リンクを断る記述は無い → `noDeepLink` は立てない。
+    // ⚠⚠ **`noDeepLink` を立てた**（2026-09-11・レビューの指摘で追加）。**著作権のページとは別に「リンクについて」がある**
+    //   （/about/1005673.html・更新 2019-02-15・確認日 2026-09-11）: 「市ホームページへのリンクは、
+    //   **トップページを対象とする限り**原則として自由です。リンク先は『https://www.city.ebina.kanagawa.jp/』としてください」。
+    //   §11h の第2群（長崎「原則、トップページとしてください」より強い）。**最初は著作権ページしか読まず立てていなかった**。
     // [年度, ファイル名, 歳入p, 歳出p]
     ["R8", "R8yosan.pdf", 29, 30],
     ["R7", "R7yosan.pdf", 29, 30],
@@ -18388,6 +18391,7 @@ export const SOURCES: SourceEntry[] = [
     fiscalYear: fy,
     scope: "海老名市（一般会計・団体コード142158）",
     license: EBINA_LICENSE,
+    noDeepLink: true,
     parser: "kofu-yosansho" as const,
     parserOptions: {
       revenuePage: rp,
@@ -18408,6 +18412,7 @@ export const SOURCES: SourceEntry[] = [
     fiscalYear: "R2",
     scope: "海老名市（一般会計・団体コード142158）",
     license: EBINA_LICENSE,
+    noDeepLink: true,
     parser: "kofu-yosansho" as const,
     parserOptions: {
       revenuePage: 6,
@@ -18446,8 +18451,11 @@ export const SOURCES: SourceEntry[] = [
     // ライセンス: 「著作権について」（/gyoseijoho/konositenitsuite/copyright.html・確認日 2026-09-11）。
     //   「無断使用・無断転載することはできません」で permission-required。
     //   オープンデータは「掲載しているオープンデータは」と自ページに範囲を限り、掲載9件に予算・決算は0件 → 及ばない（§9g）。
-    //   リンクは「トップページへのリンクは事前の許可・承諾などは必要ありません」＝トップページのみ明示的に許可だが、
-    //   直リンクを断る文言は無い → `noDeepLink` は立てない。
+    // ⚠⚠ **`noDeepLink` を立てた**（2026-09-11・レビューの指摘で追加）。**著作権のページとは別に「リンクについて」がある**
+    //   （/gyoseijoho/konositenitsuite/link.html・確認日 2026-09-11）: 「トップページへのリンクは、事前の許可・承諾などは
+    //   必要ありません」に続けて「**トップページ以外の各個別のページへのリンクは、各ページの担当課までお問い合わせください**」。
+    //   §11h の第2群（要問い合わせ）。**最初は「断る文言は無い」と読んで立てていなかった** — 第2群は禁止でなく
+    //   要相談・要連絡を条件に立てる群なので、第1群の基準（名指しの禁止）を当てたのが誤り。
     // [年度, ファイル名, 年度ページ, 歳入p, 歳出p]
     ["R8", "R8yosan_sankou.pdf", "reiwa8/20244", 2, 3],
     ["R7", "hpyou_sannkou.pdf", "reiwa7/18597", 3, 4],
@@ -18469,6 +18477,7 @@ export const SOURCES: SourceEntry[] = [
     fiscalYear: fy,
     scope: "守口市（一般会計・団体コード272094）",
     license: MORIGUCHI_LICENSE,
+    noDeepLink: true,
     parser: "kofu-yosansho" as const,
     parserOptions: {
       revenuePage: rp,
@@ -18496,6 +18505,7 @@ export const SOURCES: SourceEntry[] = [
     fiscalYear: "R6",
     scope: "守口市（一般会計・団体コード272094）",
     license: MORIGUCHI_LICENSE,
+    noDeepLink: true,
     parser: "kofu-yosansho" as const,
     parserOptions: {
       revenuePage: 5,
@@ -18543,7 +18553,7 @@ export const SOURCES: SourceEntry[] = [
     //   ⚠⚠ **そこでのライセンスは CC BY 4.0** で、BODIK の利用規約第5条は「利用者が当サイトを利用するときに限り
     //   当サイトの利用規約が優先する」と書いている。**取得元が BODIK なら open に倒せる余地がある**が、
     //   **`open` は開ける側なので倒さない**（厚木 §13-18 と同じ判断）。全年度を市の著作権表記（要許可）で置き、
-    //   **判断は人に委ねる**（→ handoff の判断待ち一覧）。⚠ H29 は市サイト版と BODIK 版の sha256 が一致する。
+    //   **判断は人に委ねる**（docs/data-sources.md §13-33 と handoff §2 の第32巡に「判断待ち」として書いた）。⚠ H29 は市サイト版と BODIK 版の sha256 が一致する。
     // ⚠ **Wayback の写しが MiB 境界で打ち切られている年度がある**（R8・R7・R5 が約5 MiB）。
     //   ⚠ **R2 の款別表を持つファイルは Wayback に捕捉が1件も無い**ので、3層を作るには SPN が要る。
     // ライセンス: 「著作権・リンク・免責事項等」（/abouthomepage/chosakuken.html・更新 2025-03-11・確認日 2026-09-11）。
