@@ -1,0 +1,19 @@
+{
+  "sourceId": "fujinomiya-kanbetsu-r6",
+  "files": [
+    {
+      "filename": "b4l1vf0000001k6s.pdf",
+      "sha256": "c55d98f9fddbf397ef04ad033d7256a43c55089866704ffe32c2850d5da7e384",
+      "bytes": 63117,
+      "fetchedAt": "2026-09-11T22:50:36.119Z",
+      "fetchedFrom": "https://www.city.fujinomiya.lg.jp/documents/2791/b4l1vf0000001k6s.pdf"
+    },
+    {
+      "filename": "b4l1vf0000001k6x.pdf",
+      "sha256": "19d986b1124e944eb94e34aae793232543663ec4be73eb514b1df2aff996bdc6",
+      "bytes": 56002,
+      "fetchedAt": "2026-09-11T22:50:36.452Z",
+      "fetchedFrom": "https://www.city.fujinomiya.lg.jp/documents/2791/b4l1vf0000001k6x.pdf"
+    }
+  ]
+}

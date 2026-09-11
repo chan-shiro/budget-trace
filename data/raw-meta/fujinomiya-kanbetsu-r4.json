@@ -1,0 +1,19 @@
+{
+  "sourceId": "fujinomiya-kanbetsu-r4",
+  "files": [
+    {
+      "filename": "visuf8000001plpq.pdf",
+      "sha256": "f17d39e7f02db854d6ee7fe2b3566d9049c965fe377de6bede9f01fc4cb6dd45",
+      "bytes": 309151,
+      "fetchedAt": "2026-09-11T22:50:38.025Z",
+      "fetchedFrom": "https://www.city.fujinomiya.lg.jp/documents/2793/visuf8000001plpq.pdf"
+    },
+    {
+      "filename": "visuf8000001plpv.pdf",
+      "sha256": "387e27182f9d12afc40787d2b04aa2b0e6dd049cfde9c1ddd17546cd7fd97bca",
+      "bytes": 55604,
+      "fetchedAt": "2026-09-11T22:50:38.379Z",
+      "fetchedFrom": "https://www.city.fujinomiya.lg.jp/documents/2793/visuf8000001plpv.pdf"
+    }
+  ]
+}

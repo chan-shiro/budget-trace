@@ -1,0 +1,12 @@
+{
+  "sourceId": "uruma-yosansho-r3",
+  "files": [
+    {
+      "filename": "r3_tousho.pdf",
+      "sha256": "a3ef08268759240db295c7cc95cd371861bfab8b046381065b20995891d51600",
+      "bytes": 2377187,
+      "fetchedAt": "2026-09-11T22:53:50.744Z",
+      "fetchedFrom": "https://www.city.uruma.lg.jp/documents/1092/r3_tousho.pdf"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "sourceId": "fujinomiya-kanbetsu-r7",
+  "files": [
+    {
+      "filename": "ajq7h80000007qsn.pdf",
+      "sha256": "f2547248234c6e8f5e24d516fef2740a8bae40197df56c46787bc79c5fa5dbcc",
+      "bytes": 62279,
+      "fetchedAt": "2026-09-11T22:50:35.276Z",
+      "fetchedFrom": "https://www.city.fujinomiya.lg.jp/documents/4101/ajq7h80000007qsn.pdf"
+    },
+    {
+      "filename": "ajq7h80000007qss.pdf",
+      "sha256": "103c14f5b99e6ff3ebaf5eadbfe365eaace3fcc36584c79f56e63cf5f45ba4b7",
+      "bytes": 56635,
+      "fetchedAt": "2026-09-11T22:50:35.604Z",
+      "fetchedFrom": "https://www.city.fujinomiya.lg.jp/documents/4101/ajq7h80000007qss.pdf"
+    }
+  ]
+}
