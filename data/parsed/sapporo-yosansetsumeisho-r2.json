@@ -3,7 +3,7 @@
   "sourceId": "sapporo-yosansetsumeisho-r2",
   "parser": "kofu-yosansho",
   "parserVersion": "0.2.0",
-  "parsedAt": "2026-09-11T07:03:19.997Z",
+  "parsedAt": "2026-09-11T07:18:41.639Z",
   "unit": "thousandYen",
   "fiscalYear": "R2",
   "account": "一般会計",
@@ -12,7 +12,7 @@
   "prevRevenueTotal": 1022701300,
   "prevExpenditureTotal": 1022701300,
   "prevBasis": "補正後",
-  "prevNote": "令和元年度当初予算は市長選挙に伴う骨格予算のため、前年度予算額は肉付予算（第1回臨時会・第2回定例会の補正）後の額（令和元年度 補正予算のポイントの額を足すと 当初 1,019,300 ＋ 第1回臨時会 42 ＋ 第2回定例会 3,359 ＝ 1,022,701 百万円）",
+  "prevNote": "令和元年度当初予算は市長選挙に伴う骨格予算のため、前年度予算額は肉付予算（第1回臨時会・第2回定例会の補正）後の額（令和元年第2回定例市議会 補正予算の概要に「補正後予算額は対前年度比1.1％増の１兆227億円となり、当初予算としては過去最大」と明記）",
   "facts": [
     {
       "side": "revenue",
