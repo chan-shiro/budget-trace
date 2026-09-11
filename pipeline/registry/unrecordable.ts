@@ -1359,4 +1359,114 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     url: "https://www.city.yaizu.lg.jp/city-info/finance/tosho-yosan.html",
     checkedOn: "2026-09-12", ref: "docs/data-sources.md §13-36",
   },
+  {
+    // 石巻市（042021）。R8〜H24 の15年度は収録済み（§13-37）。
+    // H23 の当初予算は震災の年で、3月24日の専決処分として公表されている。
+    code: "042021", name: "石巻市", dataset: "budget",
+    fiscalYears: ["H23"],
+    categories: ["scanned-image"],
+    reason:
+      "予算書と一般会計歳入の説明書がどちらも紙のスキャンで、39ページと52ページのどちらからも文字が1字も取り出せない。" +
+      "H24 以降にある一般会計だけの総括ファイルも無く、説明書が款ごとの分冊になっている。",
+    url: "https://www.city.ishinomaki.lg.jp/cont/10103000/7137/7137.html",
+    checkedOn: "2026-09-12", ref: "docs/data-sources.md §13-37",
+  },
+  {
+    // 石巻市（042021）H22。スキャンに OCR の文字が載っているが認識が壊れている。
+    code: "042021", name: "石巻市", dataset: "budget",
+    fiscalYears: ["H22"],
+    categories: ["broken-text-layer"],
+    reason:
+      "説明書はスキャン画像に文字認識の層が載っているが、認識そのものが壊れている。" +
+      "目次の時点で土木費が別の2文字に、災害復旧費が途中で英字に、使用料が判読できない綴りになる。" +
+      "款名をそのまま信じられないので、総括の表も裏取りなしには使えない。",
+    url: "https://www.city.ishinomaki.lg.jp/cont/10103000/6281/6281.html",
+    checkedOn: "2026-09-12", ref: "docs/data-sources.md §13-37",
+  },
+  {
+    // 稲沢市（232203）。R8〜R2・H31・H30・H26・H25 の11年度は収録済み（§13-37）。
+    // 資料そのものは収録済み年度と同じ「予算説明資料」の前年度比較表で、様式も同じ。
+    code: "232203", name: "稲沢市", dataset: "budget",
+    fiscalYears: ["H29", "H28", "H27"],
+    categories: ["broken-text-layer"],
+    reason:
+      "前年度比較表のうち、国庫支出金と諸収入の金額だけが先頭の桁のまとまりを別の行に描かれている。" +
+      "百万円台の桁が行をまたいで割れるため、款の金額が1桁の数として読み取られ、合計が数百万円ずれる。" +
+      "レイアウト保持でも描画順でも同じ割れ方をするので、取り出し方を変えても直らなかった。",
+    url: "https://www.city.inazawa.aichi.jp/0000005502.html",
+    checkedOn: "2026-09-12", ref: "docs/data-sources.md §13-37",
+  },
+  {
+    // 我孫子市（122220）。R8〜R3・H31・H30 の8年度は収録済み（§13-37）。
+    // ⚠ これは原典ではなくこちらの事情。復号そのものは通っており、歳入合計まで読めている。
+    code: "122220", name: "我孫子市", dataset: "budget",
+    fiscalYears: ["R2"],
+    categories: ["parser-unsupported"],
+    reason:
+      "予算書の文字が全体にずれた符号で入っているが、こちらの復号のしくみで款名も金額も元に戻り、" +
+      "歳入合計まで読めるところまで来ている。止まっているのは、ページ下の印字されたページ番号に使われている" +
+      "見慣れない字種が復号表に載っていないためで、原典の側の問題ではない。",
+    url: "https://www.city.abiko.chiba.jp/shisei/zaisei/yosansho/R2tousyoyosannsyo.html",
+    checkedOn: "2026-09-12", ref: "docs/data-sources.md §13-37",
+  },
+  {
+    // 我孫子市（122220）H29〜H25。予算書・説明書とも紙のスキャン。
+    // ⚠ H29〜H27 は同じ表の Excel 版が発行元にあるが、既存の Excel パーサとは列構成が違う。
+    code: "122220", name: "我孫子市", dataset: "budget",
+    fiscalYears: ["H29", "H28", "H27", "H26", "H25"],
+    categories: ["scanned-image"],
+    reason:
+      "予算説明書が紙のスキャンで、73ページから582ページある各年度のどれからも文字がほとんど取り出せない" +
+      "（H29・H28・H27・H26 は1字も出ず、H25 は582ページで134字）。" +
+      "H29・H28・H27 には同じ表の表計算ファイルが併載されているが、こちらが対応している表計算の様式とは列の並びが違う。",
+    url: "https://www.city.abiko.chiba.jp/shisei/zaisei/yosansho/index.html",
+    checkedOn: "2026-09-12", ref: "docs/data-sources.md §13-37",
+  },
+  {
+    // 座間市（142166）。R8・R7・R6 の3年度は収録済み（§13-37）。
+    code: "142166", name: "座間市", dataset: "budget",
+    fiscalYears: ["R5", "R4"],
+    categories: ["broken-text-layer"],
+    reason:
+      "R5 は予算書176ページ全体を通して日本語の文字が1字も取り出せず、数字だけが出てくる。" +
+      "R4 は184ページのうち日本語が出るのは前半の29ページだけで、総括を含む明細書の部分は記号の並びになる。" +
+      "どちらも款名が取れないので、金額が読めても款に結び付けられない。",
+    url: "https://www.city.zama.kanagawa.jp/shisei/zaisei/yosan/1009994.html",
+    checkedOn: "2026-09-12", ref: "docs/data-sources.md §13-37",
+  },
+  {
+    // 座間市（142166）R3・R2。発行元の予算ページに当初予算書そのものが無い。
+    code: "142166", name: "座間市", dataset: "budget",
+    fiscalYears: ["R3", "R2"],
+    categories: ["no-material"],
+    reason:
+      "発行元の予算のページに載っているのは当初予算の総額と主な施策を述べるページだけで、" +
+      "款別の表を含む当初予算書が置かれていない。予算書が並ぶのは R4 からになっている。",
+    url: "https://www.city.zama.kanagawa.jp/shisei/zaisei/yosan/1009994.html",
+    checkedOn: "2026-09-12", ref: "docs/data-sources.md §13-37",
+  },
+  {
+    // 国分寺市（132144）。第35巡の候補だったが1年度も収録できていない。
+    // ⚠ 実測したのは R8・R6・R3 の3年度だけ。ほかの年度は台帳に載せない（＝まだ調べていない扱い）。
+    code: "132144", name: "国分寺市", dataset: "budget",
+    fiscalYears: ["R8"],
+    categories: ["broken-text-layer"],
+    reason:
+      "予算書は紙のスキャンに文字認識の層を載せたもので、歳出の総括は読めるが歳入の総括が読めない。" +
+      "歳入では金額が桁のまとまりの途中で行に割れ、さらに数字がアルファベットとして認識されている箇所がある。" +
+      "見た目には数字に見えるので、そのまま取り込むと誤りに気づけない。",
+    url: "https://www.city.kokubunji.tokyo.jp/shisei/zaisei/yosan/1037132.html",
+    checkedOn: "2026-09-12", ref: "docs/data-sources.md §13-37",
+  },
+  {
+    // 国分寺市（132144）R6・R3。文字認識の層すら無い。
+    code: "132144", name: "国分寺市", dataset: "budget",
+    fiscalYears: ["R6", "R3"],
+    categories: ["scanned-image"],
+    reason:
+      "予算書が紙のスキャンで、文字認識の層も入っていない。" +
+      "R6 は一般会計の説明書159ページから取り出せる文字が1,708字しかなく、R3 は総括表の3ページから1字も出ない。",
+    url: "https://www.city.kokubunji.tokyo.jp/shisei/zaisei/yosan/index.html",
+    checkedOn: "2026-09-12", ref: "docs/data-sources.md §13-37",
+  },
 ];
