@@ -1265,4 +1265,29 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     url: "https://www.city.iruma.saitama.jp/soshiki/zaiseka/gyozaisei/yosan/h24/tosyo/index.html",
     checkedOn: "2026-09-11", ref: "docs/data-sources.md §13-31",
   },
+  {
+    // 深谷市（112186）。**budget 階層に1年度も入れていない**団体。
+    // ⚠ 偵察は H24〜H26 の「一般会計当初予算要求・査定状況」（Wayback のみ）なら款別×前年当初が取れると
+    //    実測したが、R8 との間に12年の空白ができ、**市民が開いて見えるのが2012〜2014年度だけになる**ので
+    //    横展開優先の方針に照らして採らなかった（§13-33）。
+    code: "112186", name: "深谷市", dataset: "budget",
+    fiscalYears: ["R8", "R7", "R6", "R5", "R4", "R3", "R2", "H31", "H30"],
+    categories: ["format-mismatch"],
+    reason:
+      "毎年出ている「予算資料」の一般会計歳入・歳出款別内訳は列が「款／予算額／構成比」だけで、前年度の額を持たない" +
+      "（令和8年度の p.15 を開いて実測）。前年度額があるのは款を8区分に丸めた推移表だけで、款別の前年当初比較にならない。",
+    url: "https://www.city.fukaya.saitama.jp/shisei/zaiseiyosangyozaisei/zaisei/zaisei_yosan/1389851437763.html",
+    checkedOn: "2026-09-11", ref: "docs/data-sources.md §13-33",
+  },
+  {
+    // 土浦市（082031）。R8〜H27 の12年度は「予算の概要」で収録済み（§13-33）。
+    // ⚠ H25〜H20 も偵察が Σ 差0 を実測しているが、H26 で鎖が切れるので採っていない（記録しない）。
+    code: "082031", name: "土浦市", dataset: "budget", fiscalYears: ["H26"],
+    categories: ["parser-unsupported"],
+    reason:
+      "歳出に印の無い廃止款（諸支出金・款番号の欄が空で伸率が「▲ 100.0」）があり、廃止款の分岐に入らず行ごと落ちる。" +
+      "前年度 Σ が 1,611,880千円 不足して error で止まる（静かには壊れない）。行頭の印に頼らず款番号欄の空きで判定できれば開く見込み。",
+    url: "https://www.city.tsuchiura.lg.jp/shisei/zaseikeikaku-yosan/yosan/h26/page005656.html",
+    checkedOn: "2026-09-11", ref: "docs/data-sources.md §13-33",
+  },
 ];
