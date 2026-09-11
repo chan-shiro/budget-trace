@@ -385,8 +385,16 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
   const totalNow = data.total; // 歳出（決算 or 予算）総額
   // 歳入・歳出それぞれの構成比の分母。予算（full）は均衡するので等しいが、
   // 決算（decision）は歳入決算 ≠ 歳出決算なので側ごとに分母を分ける
-  const revSum = revItems.reduce((a: number, b: any) => a + b.v, 0);
-  const expSum = expItems.reduce((a: number, b: any) => a + b.v, 0);
+  // ⚠ **億の float をそのまま足さない**（#232）。`v` は千円の整数を 1e5 で割った億なので、
+  //   素朴に足すと総額がちょうど N+0.5 億のときに**加算順序で `Math.round` の向きが割れ**、
+  //   「歳入と歳出は同額で編成されます」の直下に**1億円違う2つの数字**が出る
+  //   （岡崎 R8 は歳入 1548.5 / 歳出 1548.4999999999998。ほかに宮崎県 R8・新潟県 R8・
+  //   足立 H31・高松 H29・豊川 R7・横須賀 R5 で実測）。**千円の整数に戻して足し、最後に1度だけ億へ返す。**
+  //   ⚠ 総額がちょうど N+0.5 億になるかは偶然なので、**収録が増えるたびに確率的に増える**型。
+  const sumOku = (items: { v: number }[]) =>
+    items.reduce((a: number, b) => a + Math.round(b.v * 1e5), 0) / 1e5;
+  const revSum = sumOku(revItems);
+  const expSum = sumOku(expItems);
   const yearLabel = data.year;
 
   const openMuni = (muniName: string, code: string) => () =>
