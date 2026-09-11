@@ -9986,8 +9986,13 @@ R6 と同じ「〜に明記」の形に揃えた**。**式は注記から外し�
 - R1（R2 の前年度）: `https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/documents/hoseiyosannnopoint.pdf`
   — 表紙「令和元年第２回定例市議会 補正予算の概要」・引用は印字 p.3「補正予算の規模」。
   年度ページは `/zaisei/kohyo/yosan-kessan/heisei31nendoyosann.html`
-- R5（R6 の前年度）: `.../documents/r5_2tei_yosangaiyou1.pdf`
-  — 表紙「令和５年第２回定例市議会 補正予算の概要」・引用は印字 p.9「一般会計予算規模の推移」
+- R5（R6 の前年度）: `https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r5/documents/r5_2tei_yosangaiyou1.pdf`
+  — 表紙「令和５年第２回定例市議会 補正予算の概要」・引用は印字 p.9「一般会計予算規模の推移」。
+  年度ページは `/zaisei/kohyo/yosan-kessan/r5/reiwa5nendo_yosan.html`
+- ⚠⚠ **この2本はディレクトリが違う** — R1 は `/yosan-kessan/documents/` 直下だが、**R5 は `/yosan-kessan/r5/documents/`**
+  と年度セグメントが1つ入る。年度ページも R1 は直下の `heisei31nendoyosann.html`・R5 は `r5/reiwa5nendo_yosan.html`。
+  **省略して書くと補完で 404 になる**（`/yosan-kessan/documents/r5_2tei_yosangaiyou1.pdf` は実測 404）ので
+  この2本はフルパスで置く。**札幌は PDF のファイル名にもディレクトリにも規則が無い**（registry のコメントにも同旨）。
 - ⚠ **どちらも収録 raw には無い**（骨格の根拠は予算説明書の外にある・§13-32 の言い回しでは「発行元の別資料」）
 
 ⚠ **`prevNote` は parse 時に parsed へ焼き込まれる**ので、registry を直したら**必ず再 parse する**
