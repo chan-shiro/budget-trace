@@ -275,6 +275,18 @@ export function evidenceFormatLabel(localUrl: string | null | undefined): string
 // 年度ラベル（fyEraLabel / prevFyEraLabel）は ./fy に置いて re-export する。
 // decision.ts からも使うが、data.ts → decision.ts の import があるため直接引くと循環する。
 export { fyEraLabel, prevFyEraLabel } from './fy';
+// ⚠⚠ **億に換算済みの float を素朴に足さない**（#232）。gen の `v` / `amountOku` は
+// **千円の整数を 1e5 で割った億**（derive の `toOku`）なので、`reduce` でそのまま足すと
+// **加算順序で最下位ビットが揺れ**、`fmtOku` の丸めの向きが割れる。症状は
+// **「同じ額が画面の2か所で1つ違う数字になる」**で、**金額データは正しいので検証ゲートも
+// 汚染ゲートも見ていない**（2026-09-11 の実測で 歳入合計≠歳出合計25年度・合計≠総額カード32年度・
+// 款計1件・「掲載なし」の 0円 36款）。⇒ **千円の整数に戻して足し、最後に1度だけ億へ返す。**
+// ⚠ 割れる境界は `fmtOku` の段ごとに違う（≥1兆は 0.005兆・≥100億は 0.5億・1〜100億は 0.05億・
+// <1億は万円）ので「N+0.5 億のときだけ」と覚えない。
+// ⚠ **`v` が千円単位であることは derive 側の約束**。円単位の資料を款別に入れるなら、
+// この丸めが千円未満を黙って落とすので先に見直すこと。
+export const sumOku = (vs: number[]): number =>
+  vs.reduce((a, b) => a + Math.round(b * 1e5), 0) / 1e5;
 export function fmtOku(v: number): string {
   if (v >= 10000) return (v/10000).toFixed(2) + '兆円';
   if (v >= 1) return (v >= 100 ? Math.round(v).toLocaleString() : v.toFixed(1)) + '億円';

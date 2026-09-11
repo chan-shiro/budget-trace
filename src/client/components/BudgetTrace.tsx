@@ -20,16 +20,9 @@ import { ROADMAP_PROGRESS, ROADMAP_PLAN } from "@/client/lib/roadmap.gen";
 import { UNRECORDABLE_BY_CODE, UNRECORDABLE_WHOLLY } from "@/client/lib/unrecordable.gen";
 import BudgetTraceView from "./BudgetTraceView";
 
-// ⚠⚠ **億に換算済みの float を素朴に足さない**（#232）。gen の `v` / `amountOku` は
-//   **千円の整数を 1e5 で割った億**（derive の `toOku`）なので、`reduce` でそのまま足すと
-//   **加算順序で最下位ビットが揺れ**、`fmtOku` の丸めの向きが割れる。実害は
-//   「同じ額が画面の2か所で1つ違う数字になる」型で、**金額データは正しいので検証ゲートも
-//   汚染ゲートも見ていない**。⇒ **千円の整数に戻して足し、最後に1度だけ億へ返す。**
-//   ⚠ 割れる境界は `fmtOku` の段ごとに違う（≥1兆は 0.005兆・≥100億は 0.5億・1〜100億は
-//   0.05億・<1億は万円）ので、「N+0.5 億のときだけ」と覚えない。
-//   ⚠ **`v` が千円単位であることは derive 側の約束**（`toOku = 千円 / 100_000`）。
-//   円単位の資料を款別に入れるなら、この丸めが千円未満を黙って落とすので先に見直すこと。
-const sumOku = (vs: number[]) => vs.reduce((a, b) => a + Math.round(b * 1e5), 0) / 1e5;
+// `sumOku`（億の float を素朴に足さない・#232）は `data.ts` の `fmtOku` の隣にある。
+// **lib からも使うので置き場所はそちら** — `decision.ts` はコンポーネントを import できない。
+const sumOku = D.sumOku;
 
 const {
   GLOSS, SIMILAR_EVIDENCE,
