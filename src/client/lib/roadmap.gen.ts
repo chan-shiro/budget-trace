@@ -13,15 +13,15 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 252,
+  "budgetCount": 256,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 1907,
-  "fileCount": 3109,
-  "archivedCount": 1755,
+  "sourceCount": 1944,
+  "fileCount": 3146,
+  "archivedCount": 1758,
   "licenseOpen": 102,
-  "licensePermission": 1609,
-  "licenseUnverified": 196,
+  "licensePermission": 1620,
+  "licenseUnverified": 222,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
   "kofuBudgetYears": 7,
@@ -157,6 +157,12 @@ export const ROADMAP_PROGRESS = {
       "code": "142077",
       "years": 16,
       "range": "H21〜R8（16年度）"
+    },
+    {
+      "name": "石巻市",
+      "code": "042021",
+      "years": 15,
+      "range": "H24〜R8（15年度）"
     },
     {
       "name": "日立市",
@@ -393,6 +399,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H28〜R8（11年度）"
     },
     {
+      "name": "稲沢市",
+      "code": "232203",
+      "years": 11,
+      "range": "H25〜R8（11年度）"
+    },
+    {
       "name": "桑名市",
       "code": "242055",
       "years": 11,
@@ -613,6 +625,12 @@ export const ROADMAP_PROGRESS = {
       "code": "122041",
       "years": 8,
       "range": "R1〜R8（8年度）"
+    },
+    {
+      "name": "我孫子市",
+      "code": "122220",
+      "years": 8,
+      "range": "H30〜R8（8年度）"
     },
     {
       "name": "調布市",
@@ -1079,6 +1097,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "草加市",
       "code": "112216",
+      "years": 3,
+      "range": "R6〜R8（3年度）"
+    },
+    {
+      "name": "座間市",
+      "code": "142166",
       "years": 3,
       "range": "R6〜R8（3年度）"
     },

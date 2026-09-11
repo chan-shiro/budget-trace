@@ -2985,6 +2985,27 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["h30", "h29", "h28"] as const).map((fy) => ({
       srcId: `takaoka-kaikeibetsu-yosan-${fy}`, muniCode: "162027", muniName: "高岡市", prefName: "富山県", isPref: false,
     })),
+    // ---- 第35巡（2026-09-12・§13-37）: 石巻・稲沢・我孫子・座間 ----
+    // ⚠ 石巻の R3 は骨格予算なので R4 に prevNote が要る（skeleton-budgets.ts が順方向で検査する）。
+    //    ⚠ R6 だけ歳入に revenueCropX が要り、H25 は decodeGarble が要る。H23・H22 はスキャンで収録不可
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28", "h27", "h26", "h25", "h24"] as const).map((fy) => ({
+      srcId: `ishinomaki-soukatsu-${fy}`, muniCode: "042021", muniName: "石巻市", prefName: "宮城県", isPref: false,
+    })),
+    // ⚠⚠ 稲沢は `revenueHeading` をページ冒頭の表題にすると款1 が `歳入市税` になる（Σ 差0 のまま）。`歳入` にする。
+    //    ⚠ 歳出は災害復旧費が欠番で款番号が飛ぶ（validate の warning 1件が正常）。H29〜H27 は桁割れで収録不可
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h26", "h25"] as const).map((fy) => ({
+      srcId: `inazawa-yosansetumei-${fy}`, muniCode: "232203", muniName: "稲沢市", prefName: "愛知県", isPref: false,
+    })),
+    // ⚠⚠ 我孫子は R8 の歳入だけ廃止款が款番号を持たないので `kanNoless` が要る（外すと前年度 Σ が warning 止まりで流れる）。
+    //    ⚠ 同じ PDF に特別会計の同型総括が3本あり見出しが完全に同一。物理ページだけが頼りで、年度ごとにずれる
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "h31", "h30"] as const).map((fy) => ({
+      srcId: `abiko-yosansho-${fy}`, muniCode: "122220", muniName: "我孫子市", prefName: "千葉県", isPref: false,
+    })),
+    // ⚠⚠ 座間は歳入の款9 が名前欄を非空のまま下段へ続くので `kanNameContinues` が要る（外すと款名が切れて Σ 差0 で通る）。
+    //    ⚠ 同じ PDF に特別会計の同型総括が3本あり、見出しも合計ラベルも一般会計と同一。R5・R4 は文字が取れず収録不可
+    ...(["r8", "r7", "r6"] as const).map((fy) => ({
+      srcId: `zama-yosansho-${fy}`, muniCode: "142166", muniName: "座間市", prefName: "神奈川県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。
