@@ -41,6 +41,11 @@ interface MuniBudgetShardYear {
   fy: string;
   projects: { name: string; description: string; kan: string | null; shisaku: string }[];
   execution?: { fyLabel: string }[];
+  /** `/sources/<srcId>/<ファイル名>`。**どの資料がこの年度になったか**の唯一の手掛かりで、
+   *  出口ゲート⑥（配線から消えた資料の検出）がここから srcId を回収する */
+  sourceLocalUrl: string;
+  /** 歳入・歳出が別ファイルの資料の歳出側（単一ファイルは null）。srcId は歳入側と同じ */
+  expenditureEvidence?: { localUrl: string } | null;
 }
 function readMuniBudgetShards(): Record<string, MuniBudgetShardYear[]> {
   const dir = join(process.cwd(), "public", "munibudgets");
@@ -4496,6 +4501,36 @@ export const ROADMAP_PLAN: RoadmapItem[] = ${JSON.stringify(ROADMAP, null, 2)};
     }
   }
 
+  // ③' 逆方向: スラグを持つ自治体は必ず budget か full で配信されている（2026-09-12・handoff §4）
+  //     ③ は `BUDGET_MUNIS ⊂ MUNI_SLUGS` の片方向なので、**スラグは残ったまま配信が消えた**
+  //     （座間の実例）を素通りする。`routing.ts` では **MUNI_SLUGS に居ないこと自体が decision 階層の
+  //     判定**（`isDecision = !!muniCode && !MUNI_SLUGS[code]`）なので、スラグがあるのに予算が無い
+  //     団体は「予算があるはずの自治体として振る舞うのに中身が無い」状態になる。⑥ とは独立した網で、
+  //     どちらも同じ事故を単独で落とせる（⑥ は資料側から、③' は配線側から見ている）。
+  {
+    const block = slugs.slice(slugs.indexOf("const MUNI_SLUGS"), slugs.indexOf("};", slugs.indexOf("const MUNI_SLUGS")));
+    const wired = new Set([...BUDGET_MUNIS, ...FULL_MUNIS]);
+    const found = [...block.matchAll(/"(\d{6})":\s*"([a-z0-9-]+)"/g)];
+    // 字面から切り出しているので、**書き方が変わって切り出しが縮むとこのゲートだけ静かに無効化される**
+    // （③ は「全文に含まれるか」しか見ないので、`MUNI_SLUGS` の外に出ていても気づかない）。
+    // ③ が全団体のスラグを保証している以上、**切り出しの中にも全団体が居るはず**。少なければ切り出しが壊れている。
+    if (found.length < wired.size) {
+      throw new Error(
+        `routing.ts の MUNI_SLUGS から ${found.length} 件しか読めません（配信中は ${wired.size} 団体）。` +
+          `切り出し（const MUNI_SLUGS 〜 };）か行の書き方が変わっていませんか。このままではスラグの逆方向ゲートが無効になります`,
+      );
+    }
+    for (const m of found) {
+      if (!wired.has(m[1]!)) {
+        problems.push(
+          `${m[1]}（スラグ /${m[2]}）: routing.ts の MUNI_SLUGS にあるのに当初予算を配信していません。` +
+            `derive の BUDGET_SOURCES から行が消えていませんか（消えると decision 扱いになり、` +
+            `unrecordable の記録がある団体では画面が「収録不可」と断言します・handoff §4）`,
+        );
+      }
+    }
+  }
+
   // ④ 年度間クロスチェーン: 連続する年度の「前年度列の合計」= 前年の「当年度の合計」
   //
   // **これが唯一、列の取り違えを捕まえる網**（2026-07-16 にゲート化）。validate は
@@ -4632,6 +4667,65 @@ export const ROADMAP_PLAN: RoadmapItem[] = ${JSON.stringify(ROADMAP, null, 2)};
     if (problems.length === 0) console.log(`  骨格予算の翌年度: ${checked} 件（説明の無いものなし・台帳 ${SKELETON_BUDGETS.length} 年度）`);
   }
 
+  // ⑥ 収録した当初予算は必ず配信されている（＝**配線から消えた**資料を落とす。2026-09-12・handoff §4）
+  //
+  // **なぜ要るか**: ここまでのゲートは全部「載っているものが正しいか」を見ていて、
+  // **載っていたものが消えたか**を誰も見ていない。③（画面に出る自治体は必ずスラグを持つ）は
+  // `BUDGET_MUNIS ⊂ MUNI_SLUGS` の片方向で、**スラグはあるのに BUDGET_MUNIS に居ない**は素通りする。
+  //
+  // 2026-09-12 の第36巡で実際に起きた: 新しい巡のブロックを `BUDGET_SOURCES` に差し込むスクリプトが
+  // **直前の座間市（142166）の spread 3行を追加ではなく置換**し、前の巡で収録したばかりの
+  // 座間 R8〜R6 が配信から消えた。registry の3ソース・parsed・validation・`MUNI_SLUGS` の
+  // `"142166": "zama"` は**全部残っていた**ので、`typecheck` も `build` もここまでのゲートも全部通り、
+  // レビュー3巡のうち2巡も気づかなかった。画面では座間が「決算のみ」になり、`unrecordable.ts` に
+  // R5・R4 の記録がある団体なので **UI が「×（未着手）」ではなく「収録不可」と断言**する
+  // ＝公開すれば誤った開示になる。唯一の兆候は coverage の件数が期待より1少ないことだけだった。
+  //
+  // `unrecordable.ts` の逆方向照合（「収録できない」と書いた資料を実は収録していないか）と同じ形で、
+  // **parsed を正として配信物を照合する**。docType が `budget-book` で検証が ok なら、その資料は
+  // 必ずどこかの画面に出ているはず — 出ていなければ配線が抜けている。
+  //
+  // 突合は**書いたシャードから srcId を回収して**行う（在メモリの `BUDGET_SOURCES` と比べるのではない）。
+  // 「書いたものと検査するものが同一」なので、配線の抜けだけでなく下流で落ちた場合も同じ網に掛かる。
+  // full 階層の甲府は `BUDGET_SOURCES` ではなく `kofu.gen.ts` 経由で配信されるので、そちらも数える
+  // （＝**除外リストを持たない**。除外リストは腐るし、腐っても静かなので同じ型を呼ぶ）。
+  {
+    const { KOFU_BUDGET_YEARS } = await import("../src/client/lib/kofu.gen");
+    const srcIdOf = (localUrl: string) => /^\/sources\/([^/]+)\//.exec(localUrl)?.[1] ?? null;
+    const delivered = new Map<string, string>(); // srcId → 出ている場所（エラー文のため）
+    for (const [code, years] of Object.entries(MUNI_BUDGET_YEARS)) {
+      for (const y of years) {
+        for (const u of [y.sourceLocalUrl, y.expenditureEvidence?.localUrl]) {
+          const id = u ? srcIdOf(u) : null;
+          if (id) delivered.set(id, `public/munibudgets/${code}.json`);
+        }
+      }
+    }
+    for (const y of KOFU_BUDGET_YEARS) {
+      const id = srcIdOf(y.sourceLocalUrl);
+      if (id) delivered.set(id, "src/client/lib/kofu.gen.ts");
+    }
+    let wired = 0;
+    for (const s of SOURCES) {
+      if (s.fixture || !existsSync(parsedPath(s.id))) continue;
+      if (anyParsedDocSchema.parse(readJson(parsedPath(s.id))).docType !== "budget-book") continue;
+      // 検証が ok でないものは**検証ゲートが意図して止めている**（needs_review を normalize に通さない）
+      // ので、配信されていなくて正しい。未検証も同じ扱い。
+      if (!existsSync(validationPath(s.id))) continue;
+      if (validationResultSchema.parse(readJson(validationPath(s.id))).status !== "ok") continue;
+      if (delivered.has(s.id)) {
+        wired++;
+        continue;
+      }
+      problems.push(
+        `${s.id}: 当初予算（${s.scope}）を収録して検証も ok なのに、どこにも配信されていません。` +
+          `derive の BUDGET_SOURCES に足し忘れていませんか（既にあった行を**置換**してしまった実例があります・handoff §4）。` +
+          `意図的に配信しない資料なら fixture: true にするか、収録そのものを取り消してください`,
+      );
+    }
+    if (problems.length === 0) console.log(`  配信されている当初予算: ${wired} 件（収録済みで未配信のものなし）`);
+  }
+
   // --------------------------------------------------------------------------
   // ② 表示専用フィールドの汚染（#190）
   // --------------------------------------------------------------------------
@@ -4762,6 +4856,6 @@ export const ROADMAP_PLAN: RoadmapItem[] = ${JSON.stringify(ROADMAP, null, 2)};
     throw new Error(`生成物の整合チェックに失敗（${problems.length}件）`);
   }
   console.log(
-    `✓ 生成物どうしの整合チェック（/coverage の件数 = 配信シャードの件数 / 事業報告の収録漏れ / URL スラグ / 年度間クロスチェーン / 骨格予算の翌年度 / 表示専用フィールドの汚染 / 系列色）`,
+    `✓ 生成物どうしの整合チェック（/coverage の件数 = 配信シャードの件数 / 事業報告の収録漏れ / URL スラグ（両方向） / 年度間クロスチェーン / 骨格予算の翌年度 / 収録済み当初予算の配信漏れ / 表示専用フィールドの汚染 / 系列色）`,
   );
 }
