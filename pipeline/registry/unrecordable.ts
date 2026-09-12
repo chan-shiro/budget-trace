@@ -1502,7 +1502,7 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     reason:
       "この年度だけ当初予算の説明資料が掲載されておらず、款別の表は予算書の総括にしかない。" +
       "その総括は2ページあるが、取り出せる文字は印刷されたページ番号の6字だけで、表の中身は取り出せない。" +
-      "紙のスキャンではなく、書体は埋め込まれているのに文字として読み出せない状態になっている。",
+      "紙のスキャンではなく、書体は埋め込まれているのに表の文字だけが読み出せない状態になっている。",
     url: "https://www.city.ome.tokyo.jp/site/omezaisei/119109.html",
     checkedOn: "2026-09-12", ref: "docs/data-sources.md §13-38",
   },

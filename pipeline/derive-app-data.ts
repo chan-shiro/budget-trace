@@ -3009,6 +3009,9 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     })),
     // ⚠⚠ 座間は歳入の款9 が名前欄を非空のまま下段へ続くので `kanNameContinues` が要る（外すと款名が切れて Σ 差0 で通る）。
     //    ⚠ 同じ PDF に特別会計の同型総括が3本あり、見出しも合計ラベルも一般会計と同一。R5・R4 は文字が取れず収録不可
+    ...(["r8", "r7", "r6"] as const).map((fy) => ({
+      srcId: `zama-yosansho-${fy}`, muniCode: "142166", muniName: "座間市", prefName: "神奈川県", isPref: false,
+    })),
     // ---- 第36巡（2026-09-12・§13-38）: 尾道・富士宮・瀬戸・青梅・うるま ----
     // ⚠⚠ 尾道は縦書きの表側ラベルが款名に1文字混入する（`歳ゴルフ場利用税交付金`）。外しても Σ 差0 で通る。
     //    ⚠ H31 はスキャンで収録不可なので H30↔R2 の鎖はここで切れる
@@ -3025,7 +3028,7 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `seto-yosan-gaiyou-${fy}`, muniCode: "232041", muniName: "瀬戸市", prefName: "愛知県", isPref: false,
     })),
-    // ⚠⚠ 青梅は予算書も総括もテキスト層が壊れていて使えず（アウトライン化ではない・埋込フォントはある）、説明資料だけが入口。
+    // ⚠⚠ 青梅は予算書も総括も「表のページだけ」テキストが取れず（アウトライン化ではない・埋込フォントはある）、説明資料だけが入口。
     //    ⚠ 歳出は2段組で crop と字下げ上限の両方が要る（どちらを外しても Σ が大きくずれて error）
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `ome-yosan-setsumei-${fy}`, muniCode: "132055", muniName: "青梅市", prefName: "東京都", isPref: false,

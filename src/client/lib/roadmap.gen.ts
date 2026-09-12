@@ -13,7 +13,7 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 260,
+  "budgetCount": 261,
   "muniCount": 1741,
   "prefCount": 47,
   "sourceCount": 1991,
@@ -1127,6 +1127,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "草加市",
       "code": "112216",
+      "years": 3,
+      "range": "R6〜R8（3年度）"
+    },
+    {
+      "name": "座間市",
+      "code": "142166",
       "years": 3,
       "range": "R6〜R8（3年度）"
     },
