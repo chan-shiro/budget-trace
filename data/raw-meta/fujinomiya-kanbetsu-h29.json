@@ -1,0 +1,19 @@
+{
+  "sourceId": "fujinomiya-kanbetsu-h29",
+  "files": [
+    {
+      "filename": "qc0he80000004zh3.pdf",
+      "sha256": "3b1e81fbf9642b3651b5b5bc2c930cc2360699aa9a55f986934a7dd38ab7ae75",
+      "bytes": 77935,
+      "fetchedAt": "2026-09-11T22:50:50.096Z",
+      "fetchedFrom": "https://web.archive.org/web/20220814041727id_/https://www.city.fujinomiya.lg.jp/municipal_government/qc0he80000004zaa-att/qc0he80000004zh3.pdf"
+    },
+    {
+      "filename": "qc0he80000004zh8.pdf",
+      "sha256": "b3eed678099e5cc2f52512ba7a0fc2b6c558c41c14898de801df9d00585731ee",
+      "bytes": 82536,
+      "fetchedAt": "2026-09-11T22:50:50.857Z",
+      "fetchedFrom": "https://web.archive.org/web/20220819144849id_/https://www.city.fujinomiya.lg.jp/municipal_government/qc0he80000004zaa-att/qc0he80000004zh8.pdf"
+    }
+  ]
+}

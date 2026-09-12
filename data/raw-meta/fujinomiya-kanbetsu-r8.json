@@ -1,0 +1,19 @@
+{
+  "sourceId": "fujinomiya-kanbetsu-r8",
+  "files": [
+    {
+      "filename": "kanbetuyosansainyuu.pdf",
+      "sha256": "065f8d7f3c66487c3ced72e28a7a3f7415a26696fb888ca84c198cb54b936757",
+      "bytes": 84406,
+      "fetchedAt": "2026-09-11T22:50:34.433Z",
+      "fetchedFrom": "https://www.city.fujinomiya.lg.jp/documents/7755/kanbetuyosansainyuu.pdf"
+    },
+    {
+      "filename": "kanbetusaisyutu.pdf",
+      "sha256": "48ca05a7bf5f6d3e620086b06072f57d15ea6006d07eda3dc9c668f85aeb877b",
+      "bytes": 88441,
+      "fetchedAt": "2026-09-11T22:50:34.766Z",
+      "fetchedFrom": "https://www.city.fujinomiya.lg.jp/documents/7755/kanbetusaisyutu.pdf"
+    }
+  ]
+}

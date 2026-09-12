@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 256,
+  "budgetCount": 261,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 1944,
-  "fileCount": 3146,
-  "archivedCount": 1758,
+  "sourceCount": 1991,
+  "fileCount": 3207,
+  "archivedCount": 1767,
   "licenseOpen": 102,
-  "licensePermission": 1635,
+  "licensePermission": 1682,
   "licenseUnverified": 207,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -249,10 +249,22 @@ export const ROADMAP_PROGRESS = {
       "range": "H25〜R8（14年度）"
     },
     {
+      "name": "富士宮市",
+      "code": "222071",
+      "years": 14,
+      "range": "H25〜R8（14年度）"
+    },
+    {
       "name": "尼崎市",
       "code": "282022",
       "years": 14,
       "range": "H25〜R8（14年度）"
+    },
+    {
+      "name": "尾道市",
+      "code": "342050",
+      "years": 14,
+      "range": "H24〜R8（14年度）"
     },
     {
       "name": "高崎市",
@@ -747,6 +759,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "青梅市",
+      "code": "132055",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "川崎市",
       "code": "141305",
       "years": 7,
@@ -799,6 +817,12 @@ export const ROADMAP_PROGRESS = {
       "code": "232033",
       "years": 7,
       "range": "H25〜R8（7年度）"
+    },
+    {
+      "name": "瀬戸市",
+      "code": "232041",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
     },
     {
       "name": "四日市市",
@@ -1051,6 +1075,12 @@ export const ROADMAP_PROGRESS = {
       "code": "392014",
       "years": 5,
       "range": "H30〜R8（5年度）"
+    },
+    {
+      "name": "うるま市",
+      "code": "472131",
+      "years": 5,
+      "range": "R3〜R8（5年度）"
     },
     {
       "name": "渋谷区",

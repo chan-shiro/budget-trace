@@ -3012,6 +3012,33 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6"] as const).map((fy) => ({
       srcId: `zama-yosansho-${fy}`, muniCode: "142166", muniName: "座間市", prefName: "神奈川県", isPref: false,
     })),
+    // ---- 第36巡（2026-09-12・§13-38）: 尾道・富士宮・瀬戸・青梅・うるま ----
+    // ⚠⚠ 尾道は縦書きの表側ラベルが款名に1文字混入する（`歳ゴルフ場利用税交付金`）。外しても Σ 差0 で通る。
+    //    ⚠ H31 はスキャンで収録不可なので H30↔R2 の鎖はここで切れる
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h30", "h29", "h28", "h27", "h26", "h25", "h24"] as const).map((fy) => ({
+      srcId: `onomichi-yosangaiyou-${fy}`, muniCode: "342050", muniName: "尾道市", prefName: "広島県", isPref: false,
+    })),
+    // ⚠⚠ 富士宮は歳入・歳出が別ファイル。⚠ R3 以前は発行元から消えていて Wayback から採る。
+    //    ⚠ H25 の歳出だけ「当年度が0でないのに皆減」の行があり列指定で推測を止めている
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30", "h29", "h28", "h27", "h26", "h25"] as const).map((fy) => ({
+      srcId: `fujinomiya-kanbetsu-${fy}`, muniCode: "222071", muniName: "富士宮市", prefName: "静岡県", isPref: false,
+    })),
+    // ⚠⚠ 瀬戸は R8 だけ `-layout` でも通ってしまう（臨財債の括弧書きが無い年度）。年度ごとに当てること。
+    //    ⚠ R6 の前年度列は骨格予算の肉付け後（prevBasis 補正後）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `seto-yosan-gaiyou-${fy}`, muniCode: "232041", muniName: "瀬戸市", prefName: "愛知県", isPref: false,
+    })),
+    // ⚠⚠ 青梅は予算書も総括も款別の表がアウトライン化されていて取れず（条文や第2表は文字で読める）、説明資料だけが入口。
+    //    ⚠ 同じ発行元でも描き方が2種（H31 は Form XObject・R8 は直接パス）＝`Do` の数だけを目印にしない
+    //    ⚠ 歳出は2段組で crop と字下げ上限の両方が要る（どちらを外しても Σ が大きくずれて error）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `ome-yosan-setsumei-${fy}`, muniCode: "132055", muniName: "青梅市", prefName: "東京都", isPref: false,
+    })),
+    // ⚠⚠ うるまは見出しの開き括弧が年度で半角／全角に割れる。⚠ 歳入合計＝歳出合計なので側の取り違えは Σ で捕まらない。
+    //    ⚠ R4・R2・H31 はパーサ待ちで収録していない（R4 は桁割れ・R2/H31 は無印の廃止款行）
+    ...(["r8", "r7", "r6", "r5", "r3"] as const).map((fy) => ({
+      srcId: `uruma-yosansho-${fy}`, muniCode: "472131", muniName: "うるま市", prefName: "沖縄県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。

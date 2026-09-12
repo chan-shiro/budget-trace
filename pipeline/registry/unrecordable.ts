@@ -1469,4 +1469,65 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     url: "https://www.city.kokubunji.tokyo.jp/shisei/zaisei/yosan/index.html",
     checkedOn: "2026-09-12", ref: "docs/data-sources.md §13-37",
   },
+  {
+    // 尾道市（342050）。H24〜R8 の14年度は収録済み（§13-38）。H31 でだけ鎖が切れる。
+    // ⚠ H31 の款別値は H30 と R2 の間に入るので、鎖の両端は収録できているが繋がらない。
+    code: "342050", name: "尾道市", dataset: "budget",
+    fiscalYears: ["H31"],
+    categories: ["scanned-image"],
+    reason:
+      "当初予算の概要が紙のスキャンで、64ページのどこからも文字が1字も取り出せない。" +
+      "埋め込まれた書体も1つも入っていないため、文字を復元する手だてがない。",
+    url: "https://www.city.onomichi.hiroshima.jp/soshiki/3/24012.html",
+    checkedOn: "2026-09-12", ref: "docs/data-sources.md §13-38",
+  },
+  {
+    // 瀬戸市（232041）。R8〜R2 の7年度は収録済み（§13-38）。
+    // ⚠ H30〜H18 は2段組の別様式で、crop を年度ごとに実測すれば読める見込み（横展開優先で未収録）。
+    code: "232041", name: "瀬戸市", dataset: "budget",
+    fiscalYears: ["H29", "H28"],
+    categories: ["scanned-image"],
+    reason:
+      "当初予算の概要が紙のスキャンで、176ページと45ページのどちらからも文字が1字も取り出せない。" +
+      "同じ年度の総括表には文字が入っているが、会計ごとの総額が3行あるだけで款別の内訳がない。",
+    url: "https://www.city.seto.aichi.jp/bunya/yosan/index.html",
+    checkedOn: "2026-09-12", ref: "docs/data-sources.md §13-38",
+  },
+  {
+    // 青梅市（132055）。R8〜R2 の7年度は収録済み（§13-38）。
+    // ⚠ H30 以前は現行サイトから消えており、Wayback にも旧年度ページの捕捉が無い（WARP は未調査）。
+    code: "132055", name: "青梅市", dataset: "budget",
+    fiscalYears: ["H31"],
+    categories: ["broken-text-layer"],
+    reason:
+      "この年度だけ当初予算の説明資料が掲載されておらず、ほかの年度と同じ形の表が見当たらない。" +
+      "載っているのは予算書と予算に関する説明書だけで、そのどちらも款別の金額が並ぶページの文字が" +
+      "図形として描かれていて、文字として読み取れない。" +
+      "同じ予算書でも、条文のページや債務負担行為・市債の表は文字として入っていて読める。",
+    url: "https://www.city.ome.tokyo.jp/site/omezaisei/119109.html",
+    checkedOn: "2026-09-12", ref: "docs/data-sources.md §13-38",
+  },
+  {
+    // うるま市（472131）。R8・R7・R6・R5・R3 の5年度は収録済み（§13-38）。
+    code: "472131", name: "うるま市", dataset: "budget",
+    fiscalYears: ["H24", "H23"],
+    categories: ["scanned-image"],
+    reason:
+      "「うるま市の予算」が紙のスキャンで、10ページと9ページのどちらからも文字が1字も取り出せない。" +
+      "埋め込まれた書体も1つも入っていない。",
+    url: "https://www.city.uruma.lg.jp/1003001000/contents/26791.html",
+    checkedOn: "2026-09-12", ref: "docs/data-sources.md §13-38",
+  },
+  {
+    // うるま市（472131）R4・R2・H31。⚠ 原典は健全で、こちらの抽出が届いていない。
+    code: "472131", name: "うるま市", dataset: "budget",
+    fiscalYears: ["R4", "R2", "H31"],
+    categories: ["parser-unsupported"],
+    reason:
+      "原典は読める状態で、こちらの取り出し方が追いついていない。" +
+      "R4 は歳入のページで文字の送りが詰まっており、金額が桁の途中で行に割れてしまう。" +
+      "R2 と H31 は、廃止された款の行に款番号も目印も「皆減」の語もないため、その行だけが落ちる。",
+    url: "https://www.city.uruma.lg.jp/shiseijouhou/yosanzaisei/yosankessan/ippankaikei/index.html",
+    checkedOn: "2026-09-12", ref: "docs/data-sources.md §13-38",
+  },
 ];
