@@ -1968,7 +1968,7 @@ export const KOFU_BUDGET_YEARS: KofuBudgetYear[] = [
       {
         "title": "令和3年度 甲府市当初予算資料（款別一覧表・主な事業）（3r03omonajigyo_3.pdf）",
         "type": "PDF",
-        "url": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf",
+        "url": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf",
         "localUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf",
         "source": "www.city.kofu.yamanashi.jp",
         "thumb": "3r03omonajigyo_3.pdf ・ sha256 022cb23bd9e0ad24… ・ 2026-07-12 取得"

@@ -121,7 +121,7 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       {
         "title": "令和6年度 市町村別決算状況調 町村別（2）歳入内訳",
         "type": "Excel",
-        "url": "https://web.archive.org/web/20260712084200/https://www.soumu.go.jp/main_content/001061675.xlsx",
+        "url": "https://web.archive.org/web/20260712084458/https://www.soumu.go.jp/main_content/001061675.xlsx",
         "localUrl": "/sources/soumu-shichoson-kessan-r6/001061675.xlsx",
         "source": "www.soumu.go.jp",
         "thumb": "001061675.xlsx ・ sha256 d39dc896172d94c8… ・ 2026-07-11 取得"
@@ -129,7 +129,7 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       {
         "title": "令和6年度 市町村別決算状況調 町村別（3）目的別歳出内訳",
         "type": "Excel",
-        "url": "https://web.archive.org/web/20260712084335/https://www.soumu.go.jp/main_content/001061676.xlsx",
+        "url": "https://web.archive.org/web/20260712084459/https://www.soumu.go.jp/main_content/001061676.xlsx",
         "localUrl": "/sources/soumu-shichoson-kessan-r6/001061676.xlsx",
         "source": "www.soumu.go.jp",
         "thumb": "001061676.xlsx ・ sha256 b1ecb4af94638244… ・ 2026-07-11 取得"
@@ -345,7 +345,7 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       {
         "title": "令和2年度 市町村別決算状況調 町村別（3）目的別歳出内訳",
         "type": "Excel",
-        "url": "https://web.archive.org/web/20220401110554/https://www.soumu.go.jp/main_content/000800830.xlsx",
+        "url": "https://web.archive.org/web/20260713110532/https://www.soumu.go.jp/main_content/000800830.xlsx",
         "localUrl": "/sources/soumu-shichoson-kessan-r2/000800830.xlsx",
         "source": "www.soumu.go.jp",
         "thumb": "000800830.xlsx ・ sha256 fd4fcf11c7eb7ff1… ・ 2026-07-12 取得"

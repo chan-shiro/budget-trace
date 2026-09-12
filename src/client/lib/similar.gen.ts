@@ -65,7 +65,7 @@ export const SIMILAR_EVIDENCE: SimilarEvidence[] = [
     "family": "town",
     "title": "令和6年度 市町村別決算状況調 町村別（3）目的別歳出内訳",
     "type": "Excel",
-    "url": "https://web.archive.org/web/20260712084335/https://www.soumu.go.jp/main_content/001061676.xlsx",
+    "url": "https://web.archive.org/web/20260712084459/https://www.soumu.go.jp/main_content/001061676.xlsx",
     "localUrl": "/sources/soumu-shichoson-kessan-r6/001061676.xlsx",
     "source": "www.soumu.go.jp",
     "thumb": "001061676.xlsx ・ sha256 b1ecb4af94638244… ・ 2026-07-11 取得"
