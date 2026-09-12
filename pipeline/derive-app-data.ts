@@ -3029,6 +3029,7 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       srcId: `seto-yosan-gaiyou-${fy}`, muniCode: "232041", muniName: "瀬戸市", prefName: "愛知県", isPref: false,
     })),
     // ⚠⚠ 青梅は予算書も総括も款別の表がアウトライン化されていて取れず（条文や第2表は文字で読める）、説明資料だけが入口。
+    //    ⚠ 同じ発行元でも描き方が2種（H31 は Form XObject・R8 は直接パス）＝`Do` の数だけを目印にしない
     //    ⚠ 歳出は2段組で crop と字下げ上限の両方が要る（どちらを外しても Σ が大きくずれて error）
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `ome-yosan-setsumei-${fy}`, muniCode: "132055", muniName: "青梅市", prefName: "東京都", isPref: false,
