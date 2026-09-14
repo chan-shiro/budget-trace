@@ -5824,7 +5824,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "次代を担う子どもたちを育む",
         "ref": "3r03omonajigyo_3.pdf#p1",
         "refLabel": "予算資料 p.1",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=1",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=1",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=1"
       },
       {
@@ -5840,7 +5840,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "次代を担う子どもたちを育む",
         "ref": "3r03omonajigyo_3.pdf#p1",
         "refLabel": "予算資料 p.1",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=1",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=1",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=1"
       },
       {
@@ -5856,7 +5856,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "次代を担う子どもたちを育む",
         "ref": "3r03omonajigyo_3.pdf#p1",
         "refLabel": "予算資料 p.1",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=1",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=1",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=1"
       },
       {
@@ -5872,7 +5872,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "次代を担う子どもたちを育む",
         "ref": "3r03omonajigyo_3.pdf#p1",
         "refLabel": "予算資料 p.1",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=1",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=1",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=1"
       },
       {
@@ -5888,7 +5888,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "次代を担う子どもたちを育む",
         "ref": "3r03omonajigyo_3.pdf#p1",
         "refLabel": "予算資料 p.1",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=1",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=1",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=1"
       },
       {
@@ -5904,7 +5904,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "次代を担う子どもたちを育む",
         "ref": "3r03omonajigyo_3.pdf#p1",
         "refLabel": "予算資料 p.1",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=1",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=1",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=1"
       },
       {
@@ -5920,7 +5920,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "次代を担う子どもたちを育む",
         "ref": "3r03omonajigyo_3.pdf#p1",
         "refLabel": "予算資料 p.1",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=1",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=1",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=1"
       },
       {
@@ -5936,7 +5936,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "次代を担う子どもたちを育む",
         "ref": "3r03omonajigyo_3.pdf#p1",
         "refLabel": "予算資料 p.1",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=1",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=1",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=1"
       },
       {
@@ -5952,7 +5952,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "心豊かで輝く人を育む",
         "ref": "3r03omonajigyo_3.pdf#p1",
         "refLabel": "予算資料 p.1",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=1",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=1",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=1"
       },
       {
@@ -5968,7 +5968,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "心豊かで輝く人を育む",
         "ref": "3r03omonajigyo_3.pdf#p1",
         "refLabel": "予算資料 p.1",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=1",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=1",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=1"
       },
       {
@@ -5984,7 +5984,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "心豊かで輝く人を育む",
         "ref": "3r03omonajigyo_3.pdf#p1",
         "refLabel": "予算資料 p.1",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=1",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=1",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=1"
       },
       {
@@ -6000,7 +6000,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "心豊かで輝く人を育む",
         "ref": "3r03omonajigyo_3.pdf#p1",
         "refLabel": "予算資料 p.1",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=1",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=1",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=1"
       },
       {
@@ -6016,7 +6016,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "産業を振興する",
         "ref": "3r03omonajigyo_3.pdf#p2",
         "refLabel": "予算資料 p.2",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=2"
       },
       {
@@ -6032,7 +6032,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "産業を振興する",
         "ref": "3r03omonajigyo_3.pdf#p2",
         "refLabel": "予算資料 p.2",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=2"
       },
       {
@@ -6048,7 +6048,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "産業を振興する",
         "ref": "3r03omonajigyo_3.pdf#p2",
         "refLabel": "予算資料 p.2",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=2"
       },
       {
@@ -6064,7 +6064,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "産業を振興する",
         "ref": "3r03omonajigyo_3.pdf#p2",
         "refLabel": "予算資料 p.2",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=2"
       },
       {
@@ -6080,7 +6080,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "産業を振興する",
         "ref": "3r03omonajigyo_3.pdf#p2",
         "refLabel": "予算資料 p.2",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=2"
       },
       {
@@ -6096,7 +6096,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "交流と賑わいを創出する",
         "ref": "3r03omonajigyo_3.pdf#p2",
         "refLabel": "予算資料 p.2",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=2"
       },
       {
@@ -6112,7 +6112,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "交流と賑わいを創出する",
         "ref": "3r03omonajigyo_3.pdf#p2",
         "refLabel": "予算資料 p.2",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=2"
       },
       {
@@ -6128,7 +6128,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "交流と賑わいを創出する",
         "ref": "3r03omonajigyo_3.pdf#p2",
         "refLabel": "予算資料 p.2",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=2"
       },
       {
@@ -6144,7 +6144,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "交流と賑わいを創出する",
         "ref": "3r03omonajigyo_3.pdf#p2",
         "refLabel": "予算資料 p.2",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=2"
       },
       {
@@ -6160,7 +6160,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "安全な暮らしを守る",
         "ref": "3r03omonajigyo_3.pdf#p2",
         "refLabel": "予算資料 p.2",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=2"
       },
       {
@@ -6176,7 +6176,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "安全な暮らしを守る",
         "ref": "3r03omonajigyo_3.pdf#p2",
         "refLabel": "予算資料 p.2",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=2"
       },
       {
@@ -6192,7 +6192,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "安全な暮らしを守る",
         "ref": "3r03omonajigyo_3.pdf#p2",
         "refLabel": "予算資料 p.2",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=2"
       },
       {
@@ -6208,7 +6208,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "安全な暮らしを守る",
         "ref": "3r03omonajigyo_3.pdf#p2",
         "refLabel": "予算資料 p.2",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=2"
       },
       {
@@ -6224,7 +6224,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健やかな暮らしを支える",
         "ref": "3r03omonajigyo_3.pdf#p2",
         "refLabel": "予算資料 p.2",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=2"
       },
       {
@@ -6240,7 +6240,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健やかな暮らしを支える",
         "ref": "3r03omonajigyo_3.pdf#p2",
         "refLabel": "予算資料 p.2",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=2"
       },
       {
@@ -6256,7 +6256,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健やかな暮らしを支える",
         "ref": "3r03omonajigyo_3.pdf#p2",
         "refLabel": "予算資料 p.2",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=2"
       },
       {
@@ -6272,7 +6272,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健やかな暮らしを支える",
         "ref": "3r03omonajigyo_3.pdf#p2",
         "refLabel": "予算資料 p.2",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=2"
       },
       {
@@ -6288,7 +6288,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健やかな暮らしを支える",
         "ref": "3r03omonajigyo_3.pdf#p2",
         "refLabel": "予算資料 p.2",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=2"
       },
       {
@@ -6304,7 +6304,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健やかな暮らしを支える",
         "ref": "3r03omonajigyo_3.pdf#p2",
         "refLabel": "予算資料 p.2",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=2",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=2"
       },
       {
@@ -6320,7 +6320,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健やかな暮らしを支える",
         "ref": "3r03omonajigyo_3.pdf#p3",
         "refLabel": "予算資料 p.3",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=3"
       },
       {
@@ -6336,7 +6336,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健やかな暮らしを支える",
         "ref": "3r03omonajigyo_3.pdf#p3",
         "refLabel": "予算資料 p.3",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=3"
       },
       {
@@ -6352,7 +6352,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "健やかな暮らしを支える",
         "ref": "3r03omonajigyo_3.pdf#p3",
         "refLabel": "予算資料 p.3",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=3"
       },
       {
@@ -6368,7 +6368,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "豊かな自然と良好な生活環境を確保する",
         "ref": "3r03omonajigyo_3.pdf#p3",
         "refLabel": "予算資料 p.3",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=3"
       },
       {
@@ -6384,7 +6384,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "豊かな自然と良好な生活環境を確保する",
         "ref": "3r03omonajigyo_3.pdf#p3",
         "refLabel": "予算資料 p.3",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=3"
       },
       {
@@ -6400,7 +6400,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "豊かな自然と良好な生活環境を確保する",
         "ref": "3r03omonajigyo_3.pdf#p3",
         "refLabel": "予算資料 p.3",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=3"
       },
       {
@@ -6416,7 +6416,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "豊かな自然と良好な生活環境を確保する",
         "ref": "3r03omonajigyo_3.pdf#p3",
         "refLabel": "予算資料 p.3",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=3"
       },
       {
@@ -6432,7 +6432,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "豊かな自然と良好な生活環境を確保する",
         "ref": "3r03omonajigyo_3.pdf#p3",
         "refLabel": "予算資料 p.3",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=3"
       },
       {
@@ -6448,7 +6448,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "都市基盤の利便性を高める",
         "ref": "3r03omonajigyo_3.pdf#p3",
         "refLabel": "予算資料 p.3",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=3"
       },
       {
@@ -6464,7 +6464,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "都市基盤の利便性を高める",
         "ref": "3r03omonajigyo_3.pdf#p3",
         "refLabel": "予算資料 p.3",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=3"
       },
       {
@@ -6480,7 +6480,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "都市基盤の利便性を高める",
         "ref": "3r03omonajigyo_3.pdf#p3",
         "refLabel": "予算資料 p.3",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=3"
       },
       {
@@ -6496,7 +6496,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "都市基盤の利便性を高める",
         "ref": "3r03omonajigyo_3.pdf#p3",
         "refLabel": "予算資料 p.3",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=3"
       },
       {
@@ -6512,7 +6512,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "都市基盤の利便性を高める",
         "ref": "3r03omonajigyo_3.pdf#p3",
         "refLabel": "予算資料 p.3",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=3"
       },
       {
@@ -6527,7 +6527,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "",
         "ref": "3r03omonajigyo_3.pdf#p3",
         "refLabel": "予算資料 p.3",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=3"
       },
       {
@@ -6542,7 +6542,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "",
         "ref": "3r03omonajigyo_3.pdf#p3",
         "refLabel": "予算資料 p.3",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=3"
       },
       {
@@ -6557,7 +6557,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "",
         "ref": "3r03omonajigyo_3.pdf#p3",
         "refLabel": "予算資料 p.3",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=3"
       },
       {
@@ -6572,7 +6572,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "",
         "ref": "3r03omonajigyo_3.pdf#p3",
         "refLabel": "予算資料 p.3",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=3"
       },
       {
@@ -6587,7 +6587,7 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "",
         "ref": "3r03omonajigyo_3.pdf#p3",
         "refLabel": "予算資料 p.3",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=3"
       },
       {
@@ -6602,13 +6602,13 @@ export const KOFU_PROJECT_YEARS: KofuProjectYear[] = [
         "shisaku": "",
         "ref": "3r03omonajigyo_3.pdf#p3",
         "refLabel": "予算資料 p.3",
-        "refUrl": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
+        "refUrl": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf#page=3",
         "refLocalUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf#page=3"
       }
     ],
     "source": {
       "title": "令和3年度 甲府市当初予算資料（款別一覧表・主な事業）",
-      "url": "https://web.archive.org/web/20260712103850/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf",
+      "url": "https://web.archive.org/web/20260712103938/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf",
       "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/3r03omonajigyo_3.pdf",
       "localUrl": "/sources/kofu-yosansho-r3/3r03omonajigyo_3.pdf",
       "pagesLabel": "p.1–3"
