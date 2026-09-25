@@ -3044,6 +3044,27 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r3"] as const).map((fy) => ({
       srcId: `uruma-yosansho-${fy}`, muniCode: "472131", muniName: "うるま市", prefName: "沖縄県", isPref: false,
     })),
+    // ---- 第37巡（2026-09-25・§13-39）: 小金井・岩国・飯塚・霧島・大崎 ----
+    // ⚠⚠ 小金井は表の直前の散文が款1 に連結する（HeaderExtra 必須・外しても Σ 差0）。R8 は原典の転記誤りで収録不可
+    ...(["r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `koganei-yosan-gaiyou-${fy}`, muniCode: "132101", muniName: "小金井市", prefName: "東京都", isPref: false,
+    })),
+    // ⚠⚠ 岩国は合計行の列指定が R8・R7 だけ要り、R6 以前に付けると逆に壊れる（どちらも前年度 Σ の warning 止まり）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31"] as const).map((fy) => ({
+      srcId: `iwakuni-yosangaiyou-${fy}`, muniCode: "352080", muniName: "岩国市", prefName: "山口県", isPref: false,
+    })),
+    // ⚠⚠ 飯塚 R6 は文字化けで decodeGarbleBand＋復号表4字。R4〜R2 は発行元から消えていて WARP から採る
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `iizuka-yosan-shiryo-${fy}`, muniCode: "402052", muniName: "飯塚市", prefName: "福岡県", isPref: false,
+    })),
+    // ⚠⚠ 霧島は HeaderExtra を外すと表題と財源内訳の列見出しが款1 に連結する（Σ 差0）。R2 はパーサ待ち（款番号 0 の廃止款）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "h31"] as const).map((fy) => ({
+      srcId: `kirishima-yosansho-${fy}`, muniCode: "462187", muniName: "霧島市", prefName: "鹿児島県", isPref: false,
+    })),
+    // ⚠⚠ 大崎は同じ PDF に特別会計の同型総括が 8〜11 本あり見出しも合計ラベルも同一。物理ページが頼り（年度で3通り）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31"] as const).map((fy) => ({
+      srcId: `osaki-yosan-setsumeisho-${fy}`, muniCode: "042153", muniName: "大崎市", prefName: "宮城県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。

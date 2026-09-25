@@ -326,6 +326,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
       }
     ]
   },
+  "132101": {
+    "budget": [
+      {
+        "fyLabel": "令和8年度",
+        "reason": "当初予算の概要の歳入の表で、使用料及び手数料の行に款番号と前年度の額が無く、増減率の欄が計算エラーの表示になっている。前年度の合計も前年度の当初予算額と違う額で印字されているため、款の合計が総額と合わない。款別の数字が載るほかの資料は、予算書の総括が文字として取り出せず、予算説明資料は紙のスキャンで、代わりにならなかった。",
+        "checkedOn": "2026-09-25"
+      }
+    ]
+  },
   "132110": {
     "budget": [
       {
@@ -952,6 +961,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
         "fyLabel": "令和7年度・令和6年度・令和5年度",
         "reason": "予算に関する説明書は born-digital だがテキスト層が無く、pdftotext が 30〜50バイトしか返さない。R8 が初のテキスト層あり。",
         "checkedOn": "2026-07-26"
+      }
+    ]
+  },
+  "462187": {
+    "budget": [
+      {
+        "fyLabel": "令和2年度",
+        "reason": "歳入の表の最後にある廃止された款（自動車取得税交付金）の行が、款番号の欄に 0 を置き、目印も「皆減」の語も持たない。こちらの抽出はこの書き方に対応しておらず、その行だけが落ちて前年度の歳入の合計が合わなくなる。",
+        "checkedOn": "2026-09-25"
       }
     ]
   },

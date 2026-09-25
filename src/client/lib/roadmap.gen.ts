@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 261,
+  "budgetCount": 266,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 1991,
-  "fileCount": 3207,
-  "archivedCount": 1771,
+  "sourceCount": 2027,
+  "fileCount": 3243,
+  "archivedCount": 1805,
   "licenseOpen": 102,
-  "licensePermission": 1682,
+  "licensePermission": 1718,
   "licenseUnverified": 207,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -627,6 +627,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H31〜R8（8年度）"
     },
     {
+      "name": "大崎市",
+      "code": "042153",
+      "years": 8,
+      "range": "H31〜R8（8年度）"
+    },
+    {
       "name": "秋田市",
       "code": "052019",
       "years": 8,
@@ -673,6 +679,12 @@ export const ROADMAP_PROGRESS = {
       "code": "272035",
       "years": 8,
       "range": "H30〜R8（8年度）"
+    },
+    {
+      "name": "岩国市",
+      "code": "352080",
+      "years": 8,
+      "range": "H31〜R8（8年度）"
     },
     {
       "name": "松山市",
@@ -879,10 +891,22 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "飯塚市",
+      "code": "402052",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "宮崎市",
       "code": "452017",
       "years": 7,
       "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "霧島市",
+      "code": "462187",
+      "years": 7,
+      "range": "H31〜R8（7年度）"
     },
     {
       "name": "沖縄市",
@@ -925,6 +949,12 @@ export const ROADMAP_PROGRESS = {
       "code": "131016",
       "years": 6,
       "range": "R2〜R8（6年度）"
+    },
+    {
+      "name": "小金井市",
+      "code": "132101",
+      "years": 6,
+      "range": "R2〜R7（6年度）"
     },
     {
       "name": "小平市",
