@@ -3113,6 +3113,19 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31"] as const).map((fy) => ({
       srcId: `handa-yosan-kamokubetu-${fy}`, muniCode: "232050", muniName: "半田市", prefName: "愛知県", isPref: false,
     })),
+    // ---- 第40巡（2026-09-26・§13-42）: 那須塩原・浦添・大東（門真・昭島はライセンスの人の判断待ちで見送り） ----
+    // ⚠⚠ 那須塩原は同じ冊子に特別会計の同型総括が続く（物理ページで指す）。R6〜H31 は revenueHeaderExtra が無いと款1 に表題が付く（Σ 差0）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31"] as const).map((fy) => ({
+      srcId: `nasushiobara-yosan-gaiyou-${fy}`, muniCode: "092134", muniName: "那須塩原市", prefName: "栃木県", isPref: false,
+    })),
+    // ⚠⚠ 浦添は歳入・歳出が別ファイル。列見出し「備考」が款1 に付く（Σ 差0）。R2 は原典の誤植で見送り（人の判断待ち）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
+      srcId: `urasoe-tousho-hikaku-${fy}`, muniCode: "472085", muniName: "浦添市", prefName: "沖縄県", isPref: false,
+    })),
+    // ⚠⚠ 大東 R8・R7 は議会修正後の概要（予算書は原案なので使わない）。R5 は原案しか無く見送り（人の判断待ち）。R4〜R2 は画像
+    ...(["r8", "r7", "r6"] as const).map((fy) => ({
+      srcId: `daito-yosan-gaiyou-${fy}`, muniCode: "272183", muniName: "大東市", prefName: "大阪府", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。
