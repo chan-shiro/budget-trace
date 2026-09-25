@@ -1556,4 +1556,28 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     url: "https://www.city-kirishima.jp/zaisei/shise/yosan/yosan/r2/r2tosho.html",
     checkedOn: "2026-09-25", ref: "docs/data-sources.md §13-39",
   },
+  // ==== 中核市など 第36弾（2026-09-25・loop.md 第38巡・docs §13-40）==================================
+  {
+    // 江別市（012173）R2。R8〜R3 の6年度は収録済み（§13-40）。
+    // ⚠ 予算書が見つからないこと（no-material）と、代わりの概要がこちらの抽出で読めないこと（parser-unsupported）の2つ。
+    code: "012173", name: "江別市", dataset: "budget",
+    fiscalYears: ["R2"],
+    categories: ["no-material", "parser-unsupported"],
+    reason:
+      "予算書は発行元のページが消えていて、ウェブの保存記録にも見つからなかった。" +
+      "代わりの当初予算案概要は、歳入の款別の表と同じページに地方交付税などの別の表があり、こちらの抽出がその表の合計を款別の表の合計と取り違えるため読めない。",
+    url: "https://www.city.ebetsu.hokkaido.jp/site/zaisei/86222.html",
+    checkedOn: "2026-09-25", ref: "docs/data-sources.md §13-40",
+  },
+  {
+    // 橿原市（292052）R4〜R2。R8〜R5 の4年度は収録済み（§13-40）。
+    code: "292052", name: "橿原市", dataset: "budget",
+    fiscalYears: ["R4", "R3", "R2"],
+    categories: ["no-material"],
+    reason:
+      "発行元の予算のページは最新の年度だけを載せる方式で、この3年度の資料はすでに消えている。" +
+      "当時のページは画面を後から組み立てる作りだったため、ウェブの保存記録（国立国会図書館・Internet Archive）にも資料の中身が残っていなかった。",
+    url: "https://www.city.kashihara.nara.jp/soshiki/1044/gyomu/2/2291.html",
+    checkedOn: "2026-09-25", ref: "docs/data-sources.md §13-40",
+  },
 ];
