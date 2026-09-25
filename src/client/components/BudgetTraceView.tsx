@@ -691,9 +691,12 @@ export default function BudgetTraceView({ v }: { v: any }) {
           <main data-mq-pad="" style={S("flex:1; width:min(1160px,100%); margin:0 auto; padding:28px 28px 72px;")}>
 
             {/* ==== ダッシュボード ==== */}
-            {v.isDash && v.loading && (
-              <div data-screen-label="自治体ダッシュボード（読み込み中）" style={S("padding:80px 0; text-align:center; color:#8494A0; font-size:14px; animation:fadeUp .35s ease both;")}>
-                決算データを読み込んでいます…
+            {/* シャード取得待ち。**自治体のデータを読む画面はすべて**ここで止める — 以前は
+                ダッシュボードだけが見ており、ドリル・前年比較などは取得完了まで甲府市の数値と
+                出典を出していた（2026-09-25 修正） */}
+            {v.loading && (
+              <div data-screen-label="自治体データ（読み込み中）" style={S("padding:80px 0; text-align:center; color:#8494A0; font-size:14px; animation:fadeUp .35s ease both;")}>
+                {v.loadingLabel}
               </div>
             )}
             {v.isDash && !v.loading && (
@@ -1234,7 +1237,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
             )}
 
             {/* ==== 款・項・目・節ドリルダウン ==== */}
-            {v.isDrill && (
+            {v.isDrill && !v.loading && (
               <div data-screen-label="款・項・目・節ドリルダウン" style={S("animation:fadeUp .35s ease both;")}>
                 <div style={S("display:flex; align-items:center; gap:8px; margin-bottom:18px; flex-wrap:wrap;")}>
                   <div style={S("display:inline-flex; border:1px solid #DFE7EC; border-radius:999px; overflow:hidden; background:#FFFFFF;")}>
@@ -1465,7 +1468,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
             )}
 
             {/* ==== 前年比較 ==== */}
-            {v.isCompare && (
+            {v.isCompare && !v.loading && (
               <div data-screen-label="予算の前年比較" style={S("animation:fadeUp .35s ease both;")}>
                 <div style={S("display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:20px;")}>
                   <div>
@@ -1516,7 +1519,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
             )}
 
             {/* ==== 政策テーマ ==== */}
-            {v.isThemes && (
+            {v.isThemes && !v.loading && (
               <div data-screen-label="政策テーマ別ビュー" style={S("animation:fadeUp .35s ease both;")}>
                 <section data-mq-pad="" style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:18px; padding:26px 30px; margin-bottom:24px;")}>
                   <div style={S("font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.18em; color:#0F76A3; margin-bottom:10px;")}>POLICY THEMES — 総合計画の基本目標別に見る</div>
@@ -1589,7 +1592,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
             )}
 
             {/* ==== 予算執行状況（財政事情の公表） ==== */}
-            {v.isExecution && (
+            {v.isExecution && !v.loading && (
               <div data-screen-label="予算執行状況" style={S("animation:fadeUp .35s ease both;")}>
                 <div style={S("display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:20px;")}>
                   <div>
@@ -1700,7 +1703,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
             )}
 
             {/* ==== 類似自治体との比較 ==== */}
-            {v.isSimilar && (
+            {v.isSimilar && !v.loading && (
               <div data-screen-label="類似自治体との比較" style={S("animation:fadeUp .35s ease both;")}>
                 <div style={S("margin-bottom:20px;")}>
                   <h1 style={S("margin:0 0 6px; font-size:24px; font-weight:700;")}>類似自治体との比較</h1>
@@ -1852,7 +1855,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
             )}
 
             {/* ==== データ出典・更新日 ==== */}
-            {v.isSources && (
+            {v.isSources && !v.loading && (
               <div data-screen-label="データ出典・更新日" style={S("animation:fadeUp .35s ease both;")}>
                 {/* 戻り先は来た経路に合わせる。自治体のダッシュボードから来たなら
                     そこへ、/sources を直接開いたならトップへ（戻る先が無いのに
