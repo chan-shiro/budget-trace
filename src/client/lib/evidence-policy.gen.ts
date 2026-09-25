@@ -16896,5 +16896,221 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.uruma.lg.jp/1003001000/contents/21727.html",
     "license": "当サイトの文書や画像などのファイル、デザイン、及びその内容に関する諸権利は、原則としてうるま市に帰属します。当サイトの文書や画像などのファイル、デザイン、及びその内容の無断転用、転載は原則として禁止します。／「リンクについて」: リンクを貼られる場合は、トップページへお願いいたします。フレーム内表示や、個々のコンテンツへの直接リンクなどは行わないで下さい。",
     "target": "page"
+  },
+  "/sources/iwakuni-yosangaiyou-r8/61572.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwakuni.lg.jp/uploaded/attachment/61572.pdf",
+    "license": "岩国市公式ウェブサイトに掲載している内容（写真・イラスト・音声・動画及び記事、その他のデータ）の著作権は岩国市に帰属します。（一部の画像等の著作権は、原著作者が所有しています）岩国市公式ウェブサイトの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたお問い合わせ先へ、事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/iwakuni-yosangaiyou-r7/56630.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwakuni.lg.jp/uploaded/attachment/56630.pdf",
+    "license": "岩国市公式ウェブサイトに掲載している内容（写真・イラスト・音声・動画及び記事、その他のデータ）の著作権は岩国市に帰属します。（一部の画像等の著作権は、原著作者が所有しています）岩国市公式ウェブサイトの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたお問い合わせ先へ、事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/iwakuni-yosangaiyou-r6/51167.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwakuni.lg.jp/uploaded/attachment/51167.pdf",
+    "license": "岩国市公式ウェブサイトに掲載している内容（写真・イラスト・音声・動画及び記事、その他のデータ）の著作権は岩国市に帰属します。（一部の画像等の著作権は、原著作者が所有しています）岩国市公式ウェブサイトの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたお問い合わせ先へ、事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/iwakuni-yosangaiyou-r5/46502.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwakuni.lg.jp/uploaded/attachment/46502.pdf",
+    "license": "岩国市公式ウェブサイトに掲載している内容（写真・イラスト・音声・動画及び記事、その他のデータ）の著作権は岩国市に帰属します。（一部の画像等の著作権は、原著作者が所有しています）岩国市公式ウェブサイトの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたお問い合わせ先へ、事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/iwakuni-yosangaiyou-r4/40739.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwakuni.lg.jp/uploaded/attachment/40739.pdf",
+    "license": "岩国市公式ウェブサイトに掲載している内容（写真・イラスト・音声・動画及び記事、その他のデータ）の著作権は岩国市に帰属します。（一部の画像等の著作権は、原著作者が所有しています）岩国市公式ウェブサイトの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたお問い合わせ先へ、事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/iwakuni-yosangaiyou-r3/34164.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwakuni.lg.jp/uploaded/attachment/34164.pdf",
+    "license": "岩国市公式ウェブサイトに掲載している内容（写真・イラスト・音声・動画及び記事、その他のデータ）の著作権は岩国市に帰属します。（一部の画像等の著作権は、原著作者が所有しています）岩国市公式ウェブサイトの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたお問い合わせ先へ、事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/iwakuni-yosangaiyou-r2/28952.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwakuni.lg.jp/uploaded/attachment/28952.pdf",
+    "license": "岩国市公式ウェブサイトに掲載している内容（写真・イラスト・音声・動画及び記事、その他のデータ）の著作権は岩国市に帰属します。（一部の画像等の著作権は、原著作者が所有しています）岩国市公式ウェブサイトの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたお問い合わせ先へ、事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/iwakuni-yosangaiyou-h31/24035.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iwakuni.lg.jp/uploaded/attachment/24035.pdf",
+    "license": "岩国市公式ウェブサイトに掲載している内容（写真・イラスト・音声・動画及び記事、その他のデータ）の著作権は岩国市に帰属します。（一部の画像等の著作権は、原著作者が所有しています）岩国市公式ウェブサイトの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたお問い合わせ先へ、事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/osaki-yosan-setsumeisho-r8/R8-01-ippantokubetu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.osaki.miyagi.jp/shisei/soshikikarasagasu/somubu/zaiseika/2_1/8/21957.html",
+    "license": "大崎市ウェブサイトから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は大崎市に帰属します。また、一部の画像などの著作権は原著作者が所有しているものもあります。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に秘書広報課まで問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "page"
+  },
+  "/sources/osaki-yosan-setsumeisho-r7/R7-01-ippantokubetsu2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.osaki.miyagi.jp/shisei/soshikikarasagasu/somubu/zaiseika/2_1/8/20110.html",
+    "license": "大崎市ウェブサイトから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は大崎市に帰属します。また、一部の画像などの著作権は原著作者が所有しているものもあります。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に秘書広報課まで問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "page"
+  },
+  "/sources/osaki-yosan-setsumeisho-r6/R6-1-1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.osaki.miyagi.jp/shisei/soshikikarasagasu/somubu/zaiseika/2_1/8/18089.html",
+    "license": "大崎市ウェブサイトから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は大崎市に帰属します。また、一部の画像などの著作権は原著作者が所有しているものもあります。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に秘書広報課まで問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "page"
+  },
+  "/sources/osaki-yosan-setsumeisho-r5/R5-1-1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.osaki.miyagi.jp/shisei/soshikikarasagasu/somubu/zaiseika/2_1/8/14132.html",
+    "license": "大崎市ウェブサイトから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は大崎市に帰属します。また、一部の画像などの著作権は原著作者が所有しているものもあります。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に秘書広報課まで問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "page"
+  },
+  "/sources/osaki-yosan-setsumeisho-r4/R4-1-1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.osaki.miyagi.jp/shisei/soshikikarasagasu/somubu/zaiseika/2_1/8/10783.html",
+    "license": "大崎市ウェブサイトから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は大崎市に帰属します。また、一部の画像などの著作権は原著作者が所有しているものもあります。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に秘書広報課まで問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "page"
+  },
+  "/sources/osaki-yosan-setsumeisho-r3/R3-1-1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.osaki.miyagi.jp/shisei/soshikikarasagasu/somubu/zaiseika/2_1/8/6991.html",
+    "license": "大崎市ウェブサイトから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は大崎市に帰属します。また、一部の画像などの著作権は原著作者が所有しているものもあります。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に秘書広報課まで問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "page"
+  },
+  "/sources/osaki-yosan-setsumeisho-r2/20200305-150616.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.osaki.miyagi.jp/shisei/soshikikarasagasu/somubu/zaiseika/2_1/8/3017.html",
+    "license": "大崎市ウェブサイトから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は大崎市に帰属します。また、一部の画像などの著作権は原著作者が所有しているものもあります。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に秘書広報課まで問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "page"
+  },
+  "/sources/osaki-yosan-setsumeisho-h31/20190322-113332.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.osaki.miyagi.jp/shisei/soshikikarasagasu/somubu/zaiseika/2_1/8/2960.html",
+    "license": "大崎市ウェブサイトから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は大崎市に帰属します。また、一部の画像などの著作権は原著作者が所有しているものもあります。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に秘書広報課まで問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "page"
+  },
+  "/sources/kirishima-yosansho-r8/r08-yosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city-kirishima.jp/zaisei/r8yosan/documents/r08-yosan.pdf",
+    "license": "本市サイトに掲載している情報（文章、写真、イラストなど）は著作権の対象となっており、著作権により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/kirishima-yosansho-r7/r07_yosan01.pdf": {
+    "mode": "origin",
+    "href": "https://www.city-kirishima.jp/zaisei/r7yosan/documents/r07_yosan01.pdf",
+    "license": "本市サイトに掲載している情報（文章、写真、イラストなど）は著作権の対象となっており、著作権により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/kirishima-yosansho-r6/r6_yosannsyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city-kirishima.jp/zaisei/documents/r6_yosannsyo.pdf",
+    "license": "本市サイトに掲載している情報（文章、写真、イラストなど）は著作権の対象となっており、著作権により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/kirishima-yosansho-r5/r05-00yosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city-kirishima.jp/zaisei/documents/r05-00yosan.pdf",
+    "license": "本市サイトに掲載している情報（文章、写真、イラストなど）は著作権の対象となっており、著作権により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/kirishima-yosansho-r4/r04-00tousyosetsumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city-kirishima.jp/zaisei/documents/r04-00tousyosetsumeisyo.pdf",
+    "license": "本市サイトに掲載している情報（文章、写真、イラストなど）は著作権の対象となっており、著作権により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/kirishima-yosansho-r3/01-02_r3yosannikansurusetumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city-kirishima.jp/zaisei/documents/01-02_r3yosannikansurusetumei.pdf",
+    "license": "本市サイトに掲載している情報（文章、写真、イラストなど）は著作権の対象となっており、著作権により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/kirishima-yosansho-h31/h31setsumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city-kirishima.jp/zaisei/shise/yosan/yosan/h31/documents/h31setsumei.pdf",
+    "license": "本市サイトに掲載している情報（文章、写真、イラストなど）は著作権の対象となっており、著作権により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/iizuka-yosan-shiryo-r8/11992_28187_misc.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iizuka.lg.jp/uploaded/life/11992_28187_misc.pdf",
+    "license": "当サイトに掲載されている個々の情報(文章、写真、画像など)は著作権の対象となっています。また、当サイト全体も編集著作物として著作権の対象となっており、どちらも著作権法により保護されています。これらの著作権は飯塚市及びコンテンツ提供者にあり、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することを禁止します。許諾を受け、引用する場合にあっては、その帰属等を明記してください。",
+    "target": "file"
+  },
+  "/sources/iizuka-yosan-shiryo-r7/8150.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iizuka.lg.jp/uploaded/attachment/8150.pdf",
+    "license": "当サイトに掲載されている個々の情報(文章、写真、画像など)は著作権の対象となっています。また、当サイト全体も編集著作物として著作権の対象となっており、どちらも著作権法により保護されています。これらの著作権は飯塚市及びコンテンツ提供者にあり、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することを禁止します。許諾を受け、引用する場合にあっては、その帰属等を明記してください。",
+    "target": "file"
+  },
+  "/sources/iizuka-yosan-shiryo-r6/10942.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iizuka.lg.jp/uploaded/attachment/10942.pdf",
+    "license": "当サイトに掲載されている個々の情報(文章、写真、画像など)は著作権の対象となっています。また、当サイト全体も編集著作物として著作権の対象となっており、どちらも著作権法により保護されています。これらの著作権は飯塚市及びコンテンツ提供者にあり、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することを禁止します。許諾を受け、引用する場合にあっては、その帰属等を明記してください。",
+    "target": "file"
+  },
+  "/sources/iizuka-yosan-shiryo-r5/11227.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.iizuka.lg.jp/uploaded/attachment/11227.pdf",
+    "license": "当サイトに掲載されている個々の情報(文章、写真、画像など)は著作権の対象となっています。また、当サイト全体も編集著作物として著作権の対象となっており、どちらも著作権法により保護されています。これらの著作権は飯塚市及びコンテンツ提供者にあり、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することを禁止します。許諾を受け、引用する場合にあっては、その帰属等を明記してください。",
+    "target": "file"
+  },
+  "/sources/iizuka-yosan-shiryo-r4/r4toushoyosansiryo.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20231204/20231204084301/https://www.city.iizuka.lg.jp/zaise/documents/r4toushoyosansiryo.pdf",
+    "license": "当サイトに掲載されている個々の情報(文章、写真、画像など)は著作権の対象となっています。また、当サイト全体も編集著作物として著作権の対象となっており、どちらも著作権法により保護されています。これらの著作権は飯塚市及びコンテンツ提供者にあり、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することを禁止します。許諾を受け、引用する場合にあっては、その帰属等を明記してください。",
+    "target": "file"
+  },
+  "/sources/iizuka-yosan-shiryo-r3/r3toushoyosannsiryou.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20231204/20231204084437/https://www.city.iizuka.lg.jp/zaise/documents/r3toushoyosannsiryou.pdf",
+    "license": "当サイトに掲載されている個々の情報(文章、写真、画像など)は著作権の対象となっています。また、当サイト全体も編集著作物として著作権の対象となっており、どちらも著作権法により保護されています。これらの著作権は飯塚市及びコンテンツ提供者にあり、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することを禁止します。許諾を受け、引用する場合にあっては、その帰属等を明記してください。",
+    "target": "file"
+  },
+  "/sources/iizuka-yosan-shiryo-r2/02_r02yosannsiryou.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20231204/20231204084651/https://www.city.iizuka.lg.jp/zaise/documents/02_r02yosannsiryou.pdf",
+    "license": "当サイトに掲載されている個々の情報(文章、写真、画像など)は著作権の対象となっています。また、当サイト全体も編集著作物として著作権の対象となっており、どちらも著作権法により保護されています。これらの著作権は飯塚市及びコンテンツ提供者にあり、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することを禁止します。許諾を受け、引用する場合にあっては、その帰属等を明記してください。",
+    "target": "file"
+  },
+  "/sources/koganei-yosan-gaiyou-r7/R07toushoyoyosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koganei.lg.jp/shisei/zaiseiyosan/yosan/yosanhensei/R7tousyoyosanhensei.files/R07toushoyoyosangaiyou.pdf",
+    "license": "本サイトに掲載の文章・画像・図表等に関する権利は小金井市に帰属するものであり、無断で転載することを禁止します。もし、これらの文書等について転載等を希望される場合は、あらかじめご相談ください。",
+    "target": "file"
+  },
+  "/sources/koganei-yosan-gaiyou-r6/R06toushoyoyosangaiyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koganei.lg.jp/shisei/zaiseiyosan/yosan/yosanhensei/R6henseihousin.files/R06toushoyoyosangaiyou2.pdf",
+    "license": "本サイトに掲載の文章・画像・図表等に関する権利は小金井市に帰属するものであり、無断で転載することを禁止します。もし、これらの文書等について転載等を希望される場合は、あらかじめご相談ください。",
+    "target": "file"
+  },
+  "/sources/koganei-yosan-gaiyou-r5/R05toushoyoyosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koganei.lg.jp/shisei/zaiseiyosan/yosan/yosanhensei/tousyoyosanhensei_R5.files/R05toushoyoyosangaiyou.pdf",
+    "license": "本サイトに掲載の文章・画像・図表等に関する権利は小金井市に帰属するものであり、無断で転載することを禁止します。もし、これらの文書等について転載等を希望される場合は、あらかじめご相談ください。",
+    "target": "file"
+  },
+  "/sources/koganei-yosan-gaiyou-r4/R04toushoyoyosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koganei.lg.jp/shisei/zaiseiyosan/yosan/yosanhensei/tousyoyosanhensei_R4.files/R04toushoyoyosangaiyou.pdf",
+    "license": "本サイトに掲載の文章・画像・図表等に関する権利は小金井市に帰属するものであり、無断で転載することを禁止します。もし、これらの文書等について転載等を希望される場合は、あらかじめご相談ください。",
+    "target": "file"
+  },
+  "/sources/koganei-yosan-gaiyou-r3/R3toushoyosanhenseigaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koganei.lg.jp/shisei/zaiseiyosan/yosan/yosanhensei/toushoyosanhensei_R3.files/R3toushoyosanhenseigaiyou.pdf",
+    "license": "本サイトに掲載の文章・画像・図表等に関する権利は小金井市に帰属するものであり、無断で転載することを禁止します。もし、これらの文書等について転載等を希望される場合は、あらかじめご相談ください。",
+    "target": "file"
+  },
+  "/sources/koganei-yosan-gaiyou-r2/R2toushoyosanhenseigaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koganei.lg.jp/shisei/zaiseiyosan/yosan/yosanhensei/01020181018092155482.files/R2toushoyosanhenseigaiyou.pdf",
+    "license": "本サイトに掲載の文章・画像・図表等に関する権利は小金井市に帰属するものであり、無断で転載することを禁止します。もし、これらの文書等について転載等を希望される場合は、あらかじめご相談ください。",
+    "target": "file"
   }
 };

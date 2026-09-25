@@ -1530,4 +1530,30 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     url: "https://www.city.uruma.lg.jp/shiseijouhou/yosanzaisei/yosankessan/ippankaikei/index.html",
     checkedOn: "2026-09-12", ref: "docs/data-sources.md §13-38",
   },
+  // ==== 中核市など 第35弾（2026-09-25・loop.md 第37巡・docs §13-39）==================================
+  {
+    // 小金井市（132101）R8。R7〜R2 の6年度は収録済み（§13-39）。
+    // ⚠ 原典（発行元の概要）の転記誤り。印字に無い数値を入れることになるので amountTypos で埋めない。
+    code: "132101", name: "小金井市", dataset: "budget",
+    fiscalYears: ["R8"],
+    categories: ["format-mismatch"],
+    reason:
+      "当初予算の概要の歳入の表で、使用料及び手数料の行に款番号と前年度の額が無く、増減率の欄が計算エラーの表示になっている。" +
+      "款番号の無いこの行を款として数えられないので当年度の款の合計が総額と合わず、前年度の合計も前年度の当初予算額と違う額で印字されている。" +
+      "款別の数字が載るほかの資料は、予算書の総括が文字として取り出せず、予算説明資料は紙のスキャンで、代わりにならなかった。",
+    url: "https://www.city.koganei.lg.jp/shisei/zaiseiyosan/yosan/yosanhensei/R8tousyoyosanhensei.html",
+    checkedOn: "2026-09-25", ref: "docs/data-sources.md §13-39",
+  },
+  {
+    // 霧島市（462187）R2。R8〜R3・H31 の7年度は収録済み（§13-39）。
+    // ⚠ 原典は健全で、こちらの抽出が「款番号の欄に 0 を置く廃止款」に対応していないだけ。
+    code: "462187", name: "霧島市", dataset: "budget",
+    fiscalYears: ["R2"],
+    categories: ["parser-unsupported"],
+    reason:
+      "歳入の表の最後にある廃止された款（自動車取得税交付金）の行が、款番号の欄に 0 を置き、目印も「皆減」の語も持たない。" +
+      "こちらの抽出はこの書き方に対応しておらず、その行だけが落ちて前年度の歳入の合計が合わなくなる。",
+    url: "https://www.city-kirishima.jp/zaisei/shise/yosan/yosan/r2/r2tosho.html",
+    checkedOn: "2026-09-25", ref: "docs/data-sources.md §13-39",
+  },
 ];
