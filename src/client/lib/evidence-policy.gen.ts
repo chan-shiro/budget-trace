@@ -17262,5 +17262,221 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://warp.ndl.go.jp/20240607/20240606002031/https://www.city.kashihara.nara.jp/material/files/group/45/20240304-1.pdf",
     "license": "橿原市ホームページに掲載されているすべての文書、画像、その他データなどに関する著作権は、特にそのページに記載がないかぎり橿原市に帰属します。著作権法上認められる場合を除き、橿原市の許可なく橿原市ホームページ上に掲載されている文書や画像、その他データなどを無断使用、複製、転載、販売、改変、印刷配布することを禁止します。なお、各ページに利用規約などの特段の定めがある場合は、この取扱いが優先されるものとします。",
     "target": "file"
+  },
+  "/sources/ikoma-yosan-gaiyou-r8/yosann8-1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ikoma.lg.jp/cmsfiles/contents/0000039/39458/yosann8-1.pdf",
+    "license": "生駒市ホームページに掲載されているすべての文書、画像、その他データ等に関する著作権は、特にそのページに記載がないかぎり生駒市に帰属します。著作権法上認められる場合を除き、生駒市の許可なく生駒市ホームページ上に掲載されている文書や画像、その他データ等を無断使用、複製、転載、販売、改変、印刷配布することを禁止します。なお、各ページ等に利用規約等の特段の定めがある場合は、この取扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/ikoma-yosan-gaiyou-r7/yosann7-6.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ikoma.lg.jp/cmsfiles/contents/0000036/36540/yosann7-6.pdf",
+    "license": "生駒市ホームページに掲載されているすべての文書、画像、その他データ等に関する著作権は、特にそのページに記載がないかぎり生駒市に帰属します。著作権法上認められる場合を除き、生駒市の許可なく生駒市ホームページ上に掲載されている文書や画像、その他データ等を無断使用、複製、転載、販売、改変、印刷配布することを禁止します。なお、各ページ等に利用規約等の特段の定めがある場合は、この取扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/ikoma-yosan-gaiyou-r6/yosan6-9.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ikoma.lg.jp/cmsfiles/contents/0000033/33990/yosan6-9.pdf",
+    "license": "生駒市ホームページに掲載されているすべての文書、画像、その他データ等に関する著作権は、特にそのページに記載がないかぎり生駒市に帰属します。著作権法上認められる場合を除き、生駒市の許可なく生駒市ホームページ上に掲載されている文書や画像、その他データ等を無断使用、複製、転載、販売、改変、印刷配布することを禁止します。なお、各ページ等に利用規約等の特段の定めがある場合は、この取扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/ikoma-yosan-gaiyou-r5/1.R5gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ikoma.lg.jp/cmsfiles/contents/0000031/31128/1.R5gaiyou.pdf",
+    "license": "生駒市ホームページに掲載されているすべての文書、画像、その他データ等に関する著作権は、特にそのページに記載がないかぎり生駒市に帰属します。著作権法上認められる場合を除き、生駒市の許可なく生駒市ホームページ上に掲載されている文書や画像、その他データ等を無断使用、複製、転載、販売、改変、印刷配布することを禁止します。なお、各ページ等に利用規約等の特段の定めがある場合は、この取扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/ikoma-yosan-gaiyou-r4/yosanannnogaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ikoma.lg.jp/cmsfiles/contents/0000028/28222/yosanannnogaiyo.pdf",
+    "license": "生駒市ホームページに掲載されているすべての文書、画像、その他データ等に関する著作権は、特にそのページに記載がないかぎり生駒市に帰属します。著作権法上認められる場合を除き、生駒市の許可なく生駒市ホームページ上に掲載されている文書や画像、その他データ等を無断使用、複製、転載、販売、改変、印刷配布することを禁止します。なお、各ページ等に利用規約等の特段の定めがある場合は、この取扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/ikoma-yosan-gaiyou-r3/yosan3-5.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ikoma.lg.jp/cmsfiles/contents/0000024/24170/yosan3-5.pdf",
+    "license": "生駒市ホームページに掲載されているすべての文書、画像、その他データ等に関する著作権は、特にそのページに記載がないかぎり生駒市に帰属します。著作権法上認められる場合を除き、生駒市の許可なく生駒市ホームページ上に掲載されている文書や画像、その他データ等を無断使用、複製、転載、販売、改変、印刷配布することを禁止します。なお、各ページ等に利用規約等の特段の定めがある場合は、この取扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/ikoma-yosan-gaiyou-r2/yosan2-5.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ikoma.lg.jp/cmsfiles/contents/0000020/20205/yosan2-5.pdf",
+    "license": "生駒市ホームページに掲載されているすべての文書、画像、その他データ等に関する著作権は、特にそのページに記載がないかぎり生駒市に帰属します。著作権法上認められる場合を除き、生駒市の許可なく生駒市ホームページ上に掲載されている文書や画像、その他データ等を無断使用、複製、転載、販売、改変、印刷配布することを禁止します。なお、各ページ等に利用規約等の特段の定めがある場合は、この取扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/ikoma-yosan-gaiyou-h31/yosan31-5.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ikoma.lg.jp/cmsfiles/contents/0000016/16220/yosan31-5.pdf",
+    "license": "生駒市ホームページに掲載されているすべての文書、画像、その他データ等に関する著作権は、特にそのページに記載がないかぎり生駒市に帰属します。著作権法上認められる場合を除き、生駒市の許可なく生駒市ホームページ上に掲載されている文書や画像、その他データ等を無断使用、複製、転載、販売、改変、印刷配布することを禁止します。なお、各ページ等に利用規約等の特段の定めがある場合は、この取扱いに優先するものとします。",
+    "target": "file"
+  },
+  "/sources/higashikurume-yosansho-soukatsu-r8/r8ippan2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.higashikurume.lg.jp/_res/projects/default_project/_page_/001/028/628/r8ippan2.pdf",
+    "license": "東久留米市ホームページに掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容の著作権は東久留米市に帰属します（一部の画像などの著作権は、原著作者が所有しています）。著作権は国際条約・法律などによって保護されています。また、著作権法上の「私的使用のための複製」や「引用」など、著作権法上認められる場合を除き、東久留米市の許可なく本サイトに掲載されている文書・画像などを無断使用、複製、転載、販売、改変、印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/higashikurume-yosansho-soukatsu-r7/r7ippan2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.higashikurume.lg.jp/_res/projects/default_project/_page_/001/025/982/r7ippan2.pdf",
+    "license": "東久留米市ホームページに掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容の著作権は東久留米市に帰属します（一部の画像などの著作権は、原著作者が所有しています）。著作権は国際条約・法律などによって保護されています。また、著作権法上の「私的使用のための複製」や「引用」など、著作権法上認められる場合を除き、東久留米市の許可なく本サイトに掲載されている文書・画像などを無断使用、複製、転載、販売、改変、印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/higashikurume-yosansho-soukatsu-r5/r5ippan2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.higashikurume.lg.jp/_res/projects/default_project/_page_/001/022/158/r5ippan2.pdf",
+    "license": "東久留米市ホームページに掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容の著作権は東久留米市に帰属します（一部の画像などの著作権は、原著作者が所有しています）。著作権は国際条約・法律などによって保護されています。また、著作権法上の「私的使用のための複製」や「引用」など、著作権法上認められる場合を除き、東久留米市の許可なく本サイトに掲載されている文書・画像などを無断使用、複製、転載、販売、改変、印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/higashikurume-yosansho-soukatsu-r4/r4ippan3.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.higashikurume.lg.jp/_res/projects/default_project/_page_/001/019/558/r4ippan3.pdf",
+    "license": "東久留米市ホームページに掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容の著作権は東久留米市に帰属します（一部の画像などの著作権は、原著作者が所有しています）。著作権は国際条約・法律などによって保護されています。また、著作権法上の「私的使用のための複製」や「引用」など、著作権法上認められる場合を除き、東久留米市の許可なく本サイトに掲載されている文書・画像などを無断使用、複製、転載、販売、改変、印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/higashikurume-yosansho-soukatsu-r3/r3soukatu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.higashikurume.lg.jp/_res/projects/default_project/_page_/001/016/873/r3soukatu.pdf",
+    "license": "東久留米市ホームページに掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容の著作権は東久留米市に帰属します（一部の画像などの著作権は、原著作者が所有しています）。著作権は国際条約・法律などによって保護されています。また、著作権法上の「私的使用のための複製」や「引用」など、著作権法上認められる場合を除き、東久留米市の許可なく本サイトに掲載されている文書・画像などを無断使用、複製、転載、販売、改変、印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/higashikurume-yosansho-soukatsu-r2/02soukatu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.higashikurume.lg.jp/_res/projects/default_project/_page_/001/015/004/02soukatu.pdf",
+    "license": "東久留米市ホームページに掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容の著作権は東久留米市に帰属します（一部の画像などの著作権は、原著作者が所有しています）。著作権は国際条約・法律などによって保護されています。また、著作権法上の「私的使用のための複製」や「引用」など、著作権法上認められる場合を除き、東久留米市の許可なく本サイトに掲載されている文書・画像などを無断使用、複製、転載、販売、改変、印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/higashikurume-yosansho-soukatsu-h31/31soukatuippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.higashikurume.lg.jp/_res/projects/default_project/_page_/001/012/998/31soukatuippan.pdf",
+    "license": "東久留米市ホームページに掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容の著作権は東久留米市に帰属します（一部の画像などの著作権は、原著作者が所有しています）。著作権は国際条約・法律などによって保護されています。また、著作権法上の「私的使用のための複製」や「引用」など、著作権法上認められる場合を除き、東久留米市の許可なく本サイトに掲載されている文書・画像などを無断使用、複製、転載、販売、改変、印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/higashikurume-yosan-gaiyou-r6/r6yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.higashikurume.lg.jp/_res/projects/default_project/_page_/001/023/874/r6yosannogaiyou.pdf",
+    "license": "東久留米市ホームページに掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容の著作権は東久留米市に帰属します（一部の画像などの著作権は、原著作者が所有しています）。著作権は国際条約・法律などによって保護されています。また、著作権法上の「私的使用のための複製」や「引用」など、著作権法上認められる場合を除き、東久留米市の許可なく本サイトに掲載されている文書・画像などを無断使用、複製、転載、販売、改変、印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/handa-yosan-kamokubetu-r8/r08_yosangaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.handa.lg.jp/_res/projects/default_project/_page_/001/011/636/r08_yosangaiyo.pdf",
+    "license": "当サイト上のコンテンツの著作権は原則として半田市が所有しており、利用目的を問わずご自由に閲覧していただくことが可能です。提供しているコンテンツを改変しない条件で複製やこれに類する行為を認めますので、私的かつ非商業目的のみに限定して利用してください。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、転載、転用等を行う際は、必ず事前にそれぞれのページを所管する各担当にご相談ください。",
+    "target": "file"
+  },
+  "/sources/handa-yosan-kamokubetu-r7/r7_yosangaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.handa.lg.jp/_res/projects/default_project/_page_/001/009/116/r7_yosangaiyo.pdf",
+    "license": "当サイト上のコンテンツの著作権は原則として半田市が所有しており、利用目的を問わずご自由に閲覧していただくことが可能です。提供しているコンテンツを改変しない条件で複製やこれに類する行為を認めますので、私的かつ非商業目的のみに限定して利用してください。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、転載、転用等を行う際は、必ず事前にそれぞれのページを所管する各担当にご相談ください。",
+    "target": "file"
+  },
+  "/sources/handa-yosan-kamokubetu-r6/r06_yosangaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.handa.lg.jp/_res/projects/default_project/_page_/001/007/523/r06_yosangaiyo.pdf",
+    "license": "当サイト上のコンテンツの著作権は原則として半田市が所有しており、利用目的を問わずご自由に閲覧していただくことが可能です。提供しているコンテンツを改変しない条件で複製やこれに類する行為を認めますので、私的かつ非商業目的のみに限定して利用してください。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、転載、転用等を行う際は、必ず事前にそれぞれのページを所管する各担当にご相談ください。",
+    "target": "file"
+  },
+  "/sources/handa-yosan-kamokubetu-r5/r05_yosangaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.handa.lg.jp/_res/projects/default_project/_page_/001/004/243/r05_yosangaiyo.pdf",
+    "license": "当サイト上のコンテンツの著作権は原則として半田市が所有しており、利用目的を問わずご自由に閲覧していただくことが可能です。提供しているコンテンツを改変しない条件で複製やこれに類する行為を認めますので、私的かつ非商業目的のみに限定して利用してください。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、転載、転用等を行う際は、必ず事前にそれぞれのページを所管する各担当にご相談ください。",
+    "target": "file"
+  },
+  "/sources/handa-yosan-kamokubetu-r4/r4_2kamokubetu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.handa.lg.jp/_res/projects/default_project/_page_/001/004/246/r4_2kamokubetu.pdf",
+    "license": "当サイト上のコンテンツの著作権は原則として半田市が所有しており、利用目的を問わずご自由に閲覧していただくことが可能です。提供しているコンテンツを改変しない条件で複製やこれに類する行為を認めますので、私的かつ非商業目的のみに限定して利用してください。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、転載、転用等を行う際は、必ず事前にそれぞれのページを所管する各担当にご相談ください。",
+    "target": "file"
+  },
+  "/sources/handa-yosan-kamokubetu-r3/2kamokubetu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.handa.lg.jp/_res/projects/default_project/_page_/001/004/252/2kamokubetu.pdf",
+    "license": "当サイト上のコンテンツの著作権は原則として半田市が所有しており、利用目的を問わずご自由に閲覧していただくことが可能です。提供しているコンテンツを改変しない条件で複製やこれに類する行為を認めますので、私的かつ非商業目的のみに限定して利用してください。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、転載、転用等を行う際は、必ず事前にそれぞれのページを所管する各担当にご相談ください。",
+    "target": "file"
+  },
+  "/sources/handa-yosan-kamokubetu-r2/2kamokubetu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.handa.lg.jp/_res/projects/default_project/_page_/001/004/257/2kamokubetu.pdf",
+    "license": "当サイト上のコンテンツの著作権は原則として半田市が所有しており、利用目的を問わずご自由に閲覧していただくことが可能です。提供しているコンテンツを改変しない条件で複製やこれに類する行為を認めますので、私的かつ非商業目的のみに限定して利用してください。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、転載、転用等を行う際は、必ず事前にそれぞれのページを所管する各担当にご相談ください。",
+    "target": "file"
+  },
+  "/sources/handa-yosan-kamokubetu-h31/h31sainyusaishutukamokubetu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.handa.lg.jp/_res/projects/default_project/_page_/001/004/262/h31sainyusaishutukamokubetu.pdf",
+    "license": "当サイト上のコンテンツの著作権は原則として半田市が所有しており、利用目的を問わずご自由に閲覧していただくことが可能です。提供しているコンテンツを改変しない条件で複製やこれに類する行為を認めますので、私的かつ非商業目的のみに限定して利用してください。著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、転載、転用等を行う際は、必ず事前にそれぞれのページを所管する各担当にご相談ください。",
+    "target": "file"
+  },
+  "/sources/matsubara-yosan-gaiyou-r8/_______.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsubara.lg.jp/fs/3/2/6/8/3/3/_/_______.pdf",
+    "license": "当ホームページ上の文書や画像等の各ファイル、及びその内容に関する諸権利は原則、松原市に帰属します。また一部の画像等の著作権は、原著作者が所有しています。当ホームページ上の文書・画像等について「私的利用のための複製」や「引用」等著作権法上認められている場合を除き、無断で複製、転用することはできません。当ホームページ上の文書・画像等の二次使用を希望されている場合は観光・シティプロモーション課広報係までメール（koho@city.matsubara.osaka.jp）にてお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/matsubara-yosan-gaiyou-r7/R7_______.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsubara.lg.jp/fs/2/6/9/5/7/6/_/R7_______.pdf",
+    "license": "当ホームページ上の文書や画像等の各ファイル、及びその内容に関する諸権利は原則、松原市に帰属します。また一部の画像等の著作権は、原著作者が所有しています。当ホームページ上の文書・画像等について「私的利用のための複製」や「引用」等著作権法上認められている場合を除き、無断で複製、転用することはできません。当ホームページ上の文書・画像等の二次使用を希望されている場合は観光・シティプロモーション課広報係までメール（koho@city.matsubara.osaka.jp）にてお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/matsubara-yosan-gaiyou-r6/_______.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsubara.lg.jp/fs/2/2/0/1/1/0/_/_______.pdf",
+    "license": "当ホームページ上の文書や画像等の各ファイル、及びその内容に関する諸権利は原則、松原市に帰属します。また一部の画像等の著作権は、原著作者が所有しています。当ホームページ上の文書・画像等について「私的利用のための複製」や「引用」等著作権法上認められている場合を除き、無断で複製、転用することはできません。当ホームページ上の文書・画像等の二次使用を希望されている場合は観光・シティプロモーション課広報係までメール（koho@city.matsubara.osaka.jp）にてお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/matsubara-yosan-gaiyou-r5/R5tousyoyosannnogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsubara.lg.jp/fs/1/9/2/8/6/3/_/R5tousyoyosannnogaiyou.pdf",
+    "license": "当ホームページ上の文書や画像等の各ファイル、及びその内容に関する諸権利は原則、松原市に帰属します。また一部の画像等の著作権は、原著作者が所有しています。当ホームページ上の文書・画像等について「私的利用のための複製」や「引用」等著作権法上認められている場合を除き、無断で複製、転用することはできません。当ホームページ上の文書・画像等の二次使用を希望されている場合は観光・シティプロモーション課広報係までメール（koho@city.matsubara.osaka.jp）にてお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/matsubara-yosan-gaiyou-r4/R4gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsubara.lg.jp/fs/1/9/2/8/6/4/_/R4gaiyou.pdf",
+    "license": "当ホームページ上の文書や画像等の各ファイル、及びその内容に関する諸権利は原則、松原市に帰属します。また一部の画像等の著作権は、原著作者が所有しています。当ホームページ上の文書・画像等について「私的利用のための複製」や「引用」等著作権法上認められている場合を除き、無断で複製、転用することはできません。当ホームページ上の文書・画像等の二次使用を希望されている場合は観光・シティプロモーション課広報係までメール（koho@city.matsubara.osaka.jp）にてお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/tsuruoka-yosan-shiryo-r8/R8yosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsuruoka.lg.jp/shisei/shiyakusyo/zaisei/yosan.files/R8yosan.pdf",
+    "license": "1．鶴岡市公式ホームページに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、鶴岡市公式ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。2．「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用・販売といった二次利用することをかたく禁じます。3．鶴岡市公式ホームページに掲載した社名・商標名などの名称は、基本的に関係各社の商標・登録商標です。",
+    "target": "file"
+  },
+  "/sources/tsuruoka-yosan-shiryo-r7/R7yosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsuruoka.lg.jp/shisei/shiyakusyo/zaisei/yosan.files/R7yosan.pdf",
+    "license": "1．鶴岡市公式ホームページに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、鶴岡市公式ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。2．「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用・販売といった二次利用することをかたく禁じます。3．鶴岡市公式ホームページに掲載した社名・商標名などの名称は、基本的に関係各社の商標・登録商標です。",
+    "target": "file"
+  },
+  "/sources/tsuruoka-yosan-shiryo-r6/R6_yosansiryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsuruoka.lg.jp/shisei/shiyakusyo/zaisei/yosan.files/R6_yosansiryou.pdf",
+    "license": "1．鶴岡市公式ホームページに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、鶴岡市公式ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。2．「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用・販売といった二次利用することをかたく禁じます。3．鶴岡市公式ホームページに掲載した社名・商標名などの名称は、基本的に関係各社の商標・登録商標です。",
+    "target": "file"
+  },
+  "/sources/tsuruoka-yosan-shiryo-r5/R5_yosansiryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsuruoka.lg.jp/shisei/shiyakusyo/zaisei/yosan.files/R5_yosansiryou.pdf",
+    "license": "1．鶴岡市公式ホームページに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、鶴岡市公式ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。2．「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用・販売といった二次利用することをかたく禁じます。3．鶴岡市公式ホームページに掲載した社名・商標名などの名称は、基本的に関係各社の商標・登録商標です。",
+    "target": "file"
+  },
+  "/sources/tsuruoka-yosan-shiryo-r3/R3_yosansiryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsuruoka.lg.jp/shisei/shiyakusyo/zaisei/yosan.files/R3_yosansiryou.pdf",
+    "license": "1．鶴岡市公式ホームページに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、鶴岡市公式ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。2．「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用・販売といった二次利用することをかたく禁じます。3．鶴岡市公式ホームページに掲載した社名・商標名などの名称は、基本的に関係各社の商標・登録商標です。",
+    "target": "file"
+  },
+  "/sources/tsuruoka-yosan-shiryo-r2/R2yosansiryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsuruoka.lg.jp/shisei/shiyakusyo/zaisei/yosan.files/R2yosansiryou.pdf",
+    "license": "1．鶴岡市公式ホームページに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、鶴岡市公式ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。2．「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用・販売といった二次利用することをかたく禁じます。3．鶴岡市公式ホームページに掲載した社名・商標名などの名称は、基本的に関係各社の商標・登録商標です。",
+    "target": "file"
+  },
+  "/sources/tsuruoka-yosan-shiryo-h31/R1_yosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsuruoka.lg.jp/shisei/shiyakusyo/zaisei/yosan.files/R1_yosan.pdf",
+    "license": "1．鶴岡市公式ホームページに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、鶴岡市公式ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。2．「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用・販売といった二次利用することをかたく禁じます。3．鶴岡市公式ホームページに掲載した社名・商標名などの名称は、基本的に関係各社の商標・登録商標です。",
+    "target": "file"
   }
 };

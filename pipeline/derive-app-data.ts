@@ -141,8 +141,12 @@ const isArchiveUrl = (url: string): boolean => /^https?:\/\/(web\.archive\.org|w
 //   ⇒ **件数の正は `coverage.json` の `summary.licenseUnverified`、団体は `entities.<code>.sources[].licenseClass`**。共通点は**禁止・不許可を述べる述語が1つも無い**こと。
 //   例: 米子（問い合わせ先だけ）・福岡県（権利の所在だけ）・四日市（引用元明記・改変不可・配布時は要確認）・
 //   入間（`All Rights Reserved` だけ）。**これらは語彙では拾えない**（拾おうとすると意訳になる）。
+// ⚠ **`非商業` を `非営利` の隣に足した**（2026-09-25・半田 §13-41）。半田の原文は「提供しているコンテンツを改変しない条件で複製や
+//   これに類する行為を認めますので、**私的かつ非商業目的のみに限定して利用してください**」＋「転載、転用等を行う際は、必ず事前に…ご相談ください」
+//   で、`非営利` と同じ制限を別の語で述べているのに `unverified`（＝自前の写しを開く側）に落ちていた。**意訳ではなく同義の語の追加**で、
+//   実測で registry の license に `非商業` を含むのは半田だけ（移るのは半田の8ソースだけ・open 側との衝突0）。
 const licenseClassOf = (lic: string): "open" | "permission-required" | "unverified" =>
-  /要許可|非営利|無断|複製・転用|転載を禁止|使用を禁止|(?:転載|複製|二次利用|引用)[^。]{0,20}(?:禁じ|禁止)|(?:許可|承諾|同意)(?:・(?:許可|承諾|同意))?(?:なく(?!ても|とも)|を得(?:ず|ない|ないまま))[^。]{0,40}(?:できません|禁じ|禁止|お断り)/.test(lic)
+  /要許可|非営利|非商業|無断|複製・転用|転載を禁止|使用を禁止|(?:転載|複製|二次利用|引用)[^。]{0,20}(?:禁じ|禁止)|(?:許可|承諾|同意)(?:・(?:許可|承諾|同意))?(?:なく(?!ても|とも)|を得(?:ず|ない|ないまま))[^。]{0,40}(?:できません|禁じ|禁止|お断り)/.test(lic)
     ? "permission-required"
   : /政府標準利用規約|公共データ利用規約|クリエイティブ・コモンズ|CC[ -]?BY/i.test(lic) ? "open"
   : "unverified";
@@ -3086,6 +3090,28 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     // ⚠⚠ 鴻巣は HeaderExtra を外すと款1 が `（歳入）市税` になる（Σ 差0）。⚠ ライセンス条項がサイトに無い（unverified・人の判断待ち）
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30"] as const).map((fy) => ({
       srcId: `konosu-yosan-sankou-${fy}`, muniCode: "112178", muniName: "鴻巣市", prefName: "埼玉県", isPref: false,
+    })),
+    // ---- 第39巡（2026-09-25・§13-41）: 鶴岡・生駒・東久留米・松原・半田 ----
+    // ⚠⚠ 鶴岡 R8 だけ款名が下の行へ折り返す（kanNameContinues・外すと Σ 差0 のまま壊れる）。R7 は議会修正後の議決版。R4 はスキャン
+    ...(["r8", "r7", "r6", "r5", "r3", "r2", "h31"] as const).map((fy) => ({
+      srcId: `tsuruoka-yosan-shiryo-${fy}`, muniCode: "062031", muniName: "鶴岡市", prefName: "山形県", isPref: false,
+    })),
+    // ⚠ 生駒は見出し2語だけで全年度が通る。款5 `産業経済費` は独自の款
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31"] as const).map((fy) => ({
+      srcId: `ikoma-yosan-gaiyou-${fy}`, muniCode: "292095", muniName: "生駒市", prefName: "奈良県", isPref: false,
+    })),
+    // ⚠⚠ 東久留米 R6 は明細書がスキャンで概要から（別 srcId）。R2 だけ kanNoless（外すと前年度 Σ の warning 止まり）
+    ...(["r8", "r7", "r5", "r4", "r3", "r2", "h31"] as const).map((fy) => ({
+      srcId: `higashikurume-yosansho-soukatsu-${fy}`, muniCode: "132225", muniName: "東久留米市", prefName: "東京都", isPref: false,
+    })),
+    { srcId: "higashikurume-yosan-gaiyou-r6", muniCode: "132225", muniName: "東久留米市", prefName: "東京都", isPref: false },
+    // ⚠ 松原 R3・R2 は画像のみで収録不可
+    ...(["r8", "r7", "r6", "r5", "r4"] as const).map((fy) => ({
+      srcId: `matsubara-yosan-gaiyou-${fy}`, muniCode: "272175", muniName: "松原市", prefName: "大阪府", isPref: false,
+    })),
+    // ⚠⚠ 半田は歳入の自主財源の款に `※`（kanNameSuffixStrip・外すと Σ 差0 のまま汚れる）。ライセンスは `非商業` で要許可
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31"] as const).map((fy) => ({
+      srcId: `handa-yosan-kamokubetu-${fy}`, muniCode: "232050", muniName: "半田市", prefName: "愛知県", isPref: false,
     })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。

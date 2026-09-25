@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 271,
+  "budgetCount": 276,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 2061,
-  "fileCount": 3277,
-  "archivedCount": 1838,
+  "sourceCount": 2097,
+  "fileCount": 3313,
+  "archivedCount": 1873,
   "licenseOpen": 102,
-  "licensePermission": 1743,
+  "licensePermission": 1779,
   "licenseUnverified": 216,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -663,6 +663,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H31〜R8（8年度）"
     },
     {
+      "name": "東久留米市",
+      "code": "132225",
+      "years": 8,
+      "range": "H31〜R8（8年度）"
+    },
+    {
       "name": "横須賀市",
       "code": "142018",
       "years": 8,
@@ -681,10 +687,22 @@ export const ROADMAP_PROGRESS = {
       "range": "H31〜R8（8年度）"
     },
     {
+      "name": "半田市",
+      "code": "232050",
+      "years": 8,
+      "range": "H31〜R8（8年度）"
+    },
+    {
       "name": "豊中市",
       "code": "272035",
       "years": 8,
       "range": "H30〜R8（8年度）"
+    },
+    {
+      "name": "生駒市",
+      "code": "292095",
+      "years": 8,
+      "range": "H31〜R8（8年度）"
     },
     {
       "name": "岩国市",
@@ -715,6 +733,12 @@ export const ROADMAP_PROGRESS = {
       "code": "011002",
       "years": 7,
       "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "鶴岡市",
+      "code": "062031",
+      "years": 7,
+      "range": "H31〜R8（7年度）"
     },
     {
       "name": "郡山市",
@@ -1109,6 +1133,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "高槻市",
       "code": "272078",
+      "years": 5,
+      "range": "R4〜R8（5年度）"
+    },
+    {
+      "name": "松原市",
+      "code": "272175",
       "years": 5,
       "range": "R4〜R8（5年度）"
     },

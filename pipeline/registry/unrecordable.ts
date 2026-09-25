@@ -1580,4 +1580,28 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     url: "https://www.city.kashihara.nara.jp/soshiki/1044/gyomu/2/2291.html",
     checkedOn: "2026-09-25", ref: "docs/data-sources.md §13-40",
   },
+  // ==== 中核市など 第37弾（2026-09-25・loop.md 第39巡・docs §13-41）==================================
+  {
+    // 松原市（272175）R3・R2。R8〜R4 の5年度は収録済み（§13-41）。
+    // ⚠ R2 は紙のスキャンではなく、組版ソフトから表を画像として書き出したもの（どちらも文字が入っていない点は同じ）。
+    code: "272175", name: "松原市", dataset: "budget",
+    fiscalYears: ["R3", "R2"],
+    categories: ["scanned-image"],
+    reason:
+      "令和3年度の当初予算の概要は紙をスキャンした画像で、令和2年度は表が画像として書き出されている。" +
+      "どちらも文字の情報が入っておらず、表の数字を機械で読み取れない。同じ年度の款別の表を載せた別の資料も見つからなかった。",
+    url: "https://www.city.matsubara.lg.jp/docs/page2958.html",
+    checkedOn: "2026-09-25", ref: "docs/data-sources.md §13-41",
+  },
+  {
+    // 鶴岡市（062031）R4。R8〜R5・R3・R2・H31 は収録済み（§13-41）。
+    code: "062031", name: "鶴岡市", dataset: "budget",
+    fiscalYears: ["R4"],
+    categories: ["scanned-image"],
+    reason:
+      "当初予算資料はページを画像として貼り合わせたもので、文字の情報が入っていない。" +
+      "ウェブの保存記録（国立国会図書館・Internet Archive）の写しも同じファイルで、同じ年度の参考資料は款別の表に前年度の額が無く代わりにならない。",
+    url: "https://www.city.tsuruoka.lg.jp/shisei/shiyakusyo/zaisei/yosan.html",
+    checkedOn: "2026-09-25", ref: "docs/data-sources.md §13-41",
+  },
 ];
