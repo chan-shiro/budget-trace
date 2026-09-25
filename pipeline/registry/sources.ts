@@ -100,6 +100,21 @@ const IIZUKA_LICENSE =
 const KOGANEI_LICENSE =
   "本サイトに掲載の文章・画像・図表等に関する権利は小金井市に帰属するものであり、無断で転載することを禁止します。もし、これらの文書等について転載等を希望される場合は、あらかじめご相談ください。";
 
+const ISE_LICENSE =
+  "伊勢市ホームページで掲載している文書や画像等の各ファイル及びその内容に関する諸権利は、原則として伊勢市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。伊勢市ホームページで掲載している文書・画像等の全てのデータについて、権利者の許可なく使用・転載・二次利用を禁止します。これらの文書等について転用等を希望される場合はご相談ください。";
+
+const KONOSU_LICENSE =
+  "© 2023 Konosu City（鴻巣市公式ホームページ フッター）。著作権・利用条件に関する規約のページは市サイトに存在しない（2026-09-25 時点で確認）。";
+
+const YATSUSHIRO_LICENSE =
+  "本サイトに掲載している情報（文章、写真、イラストなど）は著作権の対象となっており、著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。";
+
+const EBETSU_LICENSE =
+  "江別市公式ウェブサイトに掲載している内容（写真・イラスト・音声・動画及び記事、その他のデータ）の著作権は江別市に帰属します。（一部の画像等の著作権は、原著作者が所有しています）江別市公式ウェブサイトの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたお問い合わせ先へ、事前にご相談ください。また、どのような場合であっても、掲載資料の使用に際して発生した損害については、一切の責任を負いません。江別市公式ウェブサイトに掲載している内容（写真・イラスト・音声・動画及び記事、その他のデータ）の商用利用は原則できません。ただし、オープンデータは除きます。";
+
+const KASHIHARA_LICENSE =
+  "橿原市ホームページに掲載されているすべての文書、画像、その他データなどに関する著作権は、特にそのページに記載がないかぎり橿原市に帰属します。著作権法上認められる場合を除き、橿原市の許可なく橿原市ホームページ上に掲載されている文書や画像、その他データなどを無断使用、複製、転載、販売、改変、印刷配布することを禁止します。なお、各ページに利用規約などの特段の定めがある場合は、この取扱いが優先されるものとします。";
+
 const KOGA_IBARAKI_LICENSE =
   "古河市ホームページに掲載している個々の情報（文章、写真、イラストなど）に関する著作権は、原則として古河市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。古河市ホームページは利用目的を問わず自由な閲覧が可能ですが、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、古河市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。";
 
@@ -20327,6 +20342,290 @@ export const SOURCES: SourceEntry[] = [
       expenditureHeaderExtra: "[、。]|億円",
     },
   } satisfies SourceEntry)),
+
+  // ---- 第38巡（2026-09-25・§13-40）------------------------------------------------
+  // 伊勢市（三重県・団体コード 242039）。収録済みの三重県・津・四日市・松阪・鈴鹿・桑名とは別の団体（設定は写さない）。
+  //   当初予算書の「歳入歳出予算事項別明細書 １ 総括」。千円・負号 △。歳入24款・歳出15款（款8 `観光費` は伊勢市独自）。
+  // ⚠⚠ **R8 の分割版（r8yosansyo_ippan.pdf・一般会計のみ）は文字がアウトライン化**（pdftotext は全160ページで空・
+  //   p.13 の内容ストリームは Tj/TJ 0件で path 命令 6,662個）。**R8 だけ一括版（r8yosansyo_all.pdf・352p）を使う**。
+  //   ⚠⚠ 一括版には特別会計の同型総括が p.171/195/213/237/255 にあり、見出しも合計ラベルも一般会計と同じ（20例目）。
+  //   物理 p.19/20 で一般会計を指す（合計 60,606,000 は第1条の総額と一致）。⚠ 一括版はテキスト層の「一」が化ける（`�般会計`）が、
+  //   款名に「一」を含む款は無い。
+  // ⚠⚠ **款11 は「国有提供施設等所在市町村助」と「成交付金」の間に空行が1本入る**。`kanNameContinues` だけでは
+  //   `…市町村助` で切れ、**Σ は差0 のまま**（下段は捨てられ次の款は汚れない）。`kanNameContinuesAcrossBlank` が必須。
+  //   ⚠ H31 は款が23で折返しは款10（この巡では収録しない）。
+  // ⚠ R3 は歳出の総括が p.13 と p.14 に二重に綴じられている（同じ中身）。p.13 を指す。R3〜H31 の歳出総括は右側に財源内訳の5列。
+  // 総額突合: R6 当初 54,949,000千円 ÷ 総務省 R6 決算歳出 56,171,731千円 = 97.8%。
+  // 骨格予算: 4語はポイント（R8〜R2）と予算書（R8〜R2・H31）で0件（⚠ R7 のポイント PDF はテキスト層が無いが予算書で0件）。
+  //   前年度列は R8〜R2 の6組で款ごとに全件一致＝当初。
+  // ライセンス: 「著作権について」（/about/1003515.html・確認日 2026-09-25）。オープンデータは CC BY 4.0 だが、カタログの財政系は
+  //   当初予算額・決算額の **CSV だけ**で予算書・説明資料の PDF は無い＝本資料には及ばない（§9g）。
+  //   ⚠ 事業別の予算額 CSV（R3〜R8・CC BY 4.0）を将来収録するなら license はオープンデータ規約の方で、区分も別（混同しない）。
+  // リンク: 「リンクについて」（/about/1003510.html・確認日 2026-09-25・著作権とは別ページ）が「原則として自由にリンクしていただけます」
+  //   ＋「トップページ以外のページは、修正・削除等によりリンク切れとなる場合がありますので、リンク先は、**なるべく**https://www.city.ise.mie.jp/
+  //   にしてください」。⇒ **`noDeepLink` は立てない** — 「原則として」は自由にかかり（§13-4 の福山型）、トップページの指定は
+  //   **「なるべく」つき・理由がリンク切れ**の推奨（船橋・飯塚と同型）。⚠ 語尾は指示形「してください」なので桑名の依頼形より強い境界例。
+  // ⚠ 主な事業（説明資料の「歳出予算款別説明表（主な事業）」・事業別予算額 CSV）と事業報告（主要な施策の成果説明書 R6〜H19）は別の巡（§13-40）。
+  ...([
+    // [年度, ファイルパス, 年度ページ, 歳入の物理ページ, 歳出の物理ページ]
+    ["R8", "001/019/973/r8yosansyo_all.pdf", "1019972/1019973.html", 19, 20],
+    ["R7", "001/018/518/r7yosansyo_ippan.pdf", "1018517/1018518.html", 13, 14],
+    ["R6", "001/016/922/0401_r6yosansyo_ippan.pdf", "1016921/1016922.html", 13, 14],
+    ["R5", "001/015/072/0401_r5yosannsyo_ippan.pdf", "1015071/1015072.html", 12, 13],
+    ["R4", "001/013/694/0401_r4yosannsyo_ippan.pdf", "r4/1013694.html", 12, 13],
+    ["R3", "001/011/652/r3_ippan_yosansyo.pdf", "r3/1011652.html", 12, 13],
+    ["R2", "001/009/018/r2yosannsyo.ippan.pdf", "r2/1009018.html", 9, 10],
+  ] as const).map(([fy, file, page, rp, ep]) => ({
+    id: `ise-shi-yosansho-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 伊勢市当初予算書（歳入歳出予算事項別明細書 総括・款別＋前年度当初比較）`,
+    publisher: "伊勢市",
+    url: `https://www.city.ise.mie.jp/_res/projects/default_project/_page_/${file}`,
+    landingPage: `https://www.city.ise.mie.jp/shisei/zaisei_kaikaku/yosan/${page}`,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "伊勢市（一般会計・団体コード242039）",
+    license: ISE_LICENSE,
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      revenuePage: rp,
+      expenditurePage: ep,
+      revenueHeading: "（歳入）",
+      expenditureHeading: "（歳出）",
+      kanNameContinues: { revenue: [11] },
+      kanNameContinuesAcrossBlank: true,
+    },
+  } satisfies SourceEntry)),
+
+  // 鴻巣市（埼玉県・団体コード 112178）。「予算参考資料」物理 p.3「４．一般会計予算款別比較表」。
+  //   歳入と歳出が同じページに縦に並ぶ（`samePage`）。千円。列は [当年度, 構成比, 前年度, 構成比, 増減, 率]。
+  //   合計の原文は `歳 入 合 計`／`歳 出 合 計` だが、samePage は同じラベルが2本要るので両側 `合計` で切る。
+  //   R8〜H30 の9年度で物理ページは不変。歳入23款（H31 は22款・H30 は21款）・歳出13款。
+  // ⚠⚠ **HeaderExtra を外すと款1 が `（歳入）市税`／`（歳出）議会費` になる**（**Σ 差0 のまま**）。
+  // ⚠ この冊子の p.1 は会計別総括表（特別会計も載る・一般会計 47,229,000 が p.3 の合計と一致）、p.2 は性質別の表（`歳出合計` を持つ）。
+  //   款別の表は p.3 だけで、特別会計の同型表は無い。
+  // ⚠ 自動車取得税交付金は R2 以降も款9 に `1`（千円）で残る（廃止行の型ではない）。
+  // 総額突合: R6 当初 40,568,000千円 ÷ 総務省 R6 決算歳出 42,798,629千円 = 94.8%。
+  //   ⚠ R8 は埼玉県オープンデータポータルの当初予算 CSV（円単位・PDL1.0）を一般会計で款ごとに集計して全36款一致（偵察の独立の裏取り）。
+  // 骨格予算: 予算参考資料9冊に4語を当てて該当なし（R7 の `改選` は民生委員の一斉改選の本文）。前年度列は H30→R8 の8リンクで当初。
+  // ライセンス: ⚠⚠ **市サイトに著作権・利用条件の条項が無い**（「このサイトをはじめて利用する方へ」配下はリンク基準・個人情報・
+  //   アクセシビリティ等のみ。フッターは「© 2023 Konosu City」だけ）＝入間（§13-31）と同じ扱いで**フッターの表記をそのまま置く**
+  //   （判定語に当たらず `unverified`）。⚠ [[open-side-never]] に照らし、要許可へ倒すかは人の判断事項（handoff §2 第38巡）。
+  //   オープンデータ（埼玉県ポータル・PDL1.0）は「当サイトで公開している情報」に範囲を限り、鴻巣市の登載20件のうち予算は
+  //   R8 の CSV だけで**予算参考資料の PDF は無い**＝PDL は及ばない（§9g）。**PDF の license 欄に PDL を書かない。**
+  // リンク: 「鴻巣市ホームページリンク基準」（/site/userguide/2789.html）が「他のサイトから鴻巣市のサイトへのリンクは原則としてフリーとする」
+  //   ＝トップページへの限定も依頼も無い ⇒ `noDeepLink` は立てない。⚠ 取り消し要求の項目にフレーム等で埋め込み表示するものがあるので iframe に入れない。
+  // ⚠ 主な事業（「政策別の主な事業」R8〜R5／「６つの政策と主な事業」R4〜H30・新様式）と R8 の事業単位 CSV（大事業664件・前年度額つき）は
+  //   別の巡（§13-40）。事業報告はウェブ未掲載。
+  ...([
+    // [年度, attachment 番号]
+    ["R8", 25861], ["R7", 20874], ["R6", 16177], ["R5", 11340], ["R4", 9858],
+    ["R3", 9867], ["R2", 9881], ["H31", 9894], ["H30", 9907],
+  ] as const).map(([fy, n]) => ({
+    id: `konosu-yosan-sankou-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 鴻巣市予算参考資料（一般会計予算款別比較表・款別＋前年度当初比較）`,
+    publisher: "鴻巣市",
+    url: `https://www.city.kounosu.saitama.jp/uploaded/attachment/${n}.pdf`,
+    landingPage: "https://www.city.kounosu.saitama.jp/page/3894.html",
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "鴻巣市（一般会計・団体コード112178）",
+    license: KONOSU_LICENSE,
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      revenuePage: 3,
+      expenditurePage: 3,
+      samePage: true,
+      revenueHeading: "一般会計予算款別比較表",
+      expenditureHeading: "一般会計予算款別比較表",
+      revenueTotalLabel: "合計",
+      expenditureTotalLabel: "合計",
+      revenueHeaderExtra: "^（歳入）$",
+      expenditureHeaderExtra: "^（歳出）$",
+    },
+  } satisfies SourceEntry)),
+
+  // 八代市（熊本県・団体コード 432024）。⚠ 熊本市 431001・熊本県とは別団体（設定は写さない）。
+  //   「当初予算の概要」の「一般会計事項別明細」。【歳 入】【歳 出】が1ページに縦積み（`samePage`）。千円。
+  //   物理 p.3（印字3）が R8〜R4、物理 p.4（印字2）が R3・R2・H31（表紙の後に白紙が1枚入る）。
+  //   歳入22款（R2 は21款＋廃止款 `〇 自動車取得税交付金 0 … 55,700 皆減`・既定で拾えて Σ 差0）・歳出13款。
+  //   合計の原文は `歳 入 合 計`/`歳 出 合 計` だが、samePage は同じラベルが2本要るので両側 `合計`。
+  //   `うち事業債`・`うち臨時財政対策債` の番号なし行は既定で拾われない。
+  // ⚠ H31 の款18 は `寄付金`、R2 以降は `寄附金`（原典の字。金額 315,859 は鎖で一致）。
+  // ⚠ R8・R7 の PDF は「当初予算の概要について」のページではなく「3月定例会提出予定議案の概要」のページに置かれている。
+  //   R8 は予算データベースのページにも同じもの（sha256 同一）がある。
+  // 一般会計であることの根拠: 同冊子 p.2「予算規模」の一般会計の行（R8 72,960,000）＝この表の合計。冊子に同型の特別会計表は無い。
+  // 総額突合: R6 当初 66,716,300千円 ÷ 総務省 R6 決算歳出 71,852,943千円 = 92.9%。
+  // 骨格予算: R8〜R2・H31 の概要と R8・R7・R6・R2・H31 のポイントに4語を当てて0件（`改選` の2件は参院選の「選挙区（改選1）」）。
+  //   前年度列は H31〜R8 の隣接7リンクすべてで前年度当初と款単位一致。
+  // ライセンス: 「プライバシーポリシー」（/list01359.html・確認日 2026-09-25）内の「著作権について」。
+  //   BODIK の八代市15件（CC BY 4.0）に予算・決算・財政は0件（§9g）。
+  // リンク: 同ページの「リンクについて」＝「原則自由です。事前の連絡は必要ありませんが…リンク元の URL をご連絡ください」＋フレーム禁止
+  //   ＋八代市公式ホームページへのリンクである旨の明記の依頼。§11h の第3群＋第5群（霧島と同型）⇒ `noDeepLink` は立てない。iframe に入れない。
+  // ⚠ 主な事業（概要の「主要事項」・R8 の予算データベース XLSX）と事業報告（主要な施策の成果に関する調書・R5 はアウトライン化）は
+  //   別の巡（§13-40）。
+  ...([
+    // [年度, URL, landingPage, 物理ページ]
+    ["R8", "https://www.city.yatsushiro.lg.jp/kiji00325739/3_25739_150039_up_laj6y0vp.pdf", "https://www.city.yatsushiro.lg.jp/kiji00325739/index.html", 3],
+    ["R7", "https://www.city.yatsushiro.lg.jp/kiji00323623/3_23623_up_mx8b3px3.pdf", "https://www.city.yatsushiro.lg.jp/kiji00323623/index.html", 3],
+    ["R6", "https://www.city.yatsushiro.lg.jp/kiji00321761/3_21761_118416_up_slppg7jz.pdf", "https://www.city.yatsushiro.lg.jp/kiji00321761/index.html", 3],
+    ["R5", "https://www.city.yatsushiro.lg.jp/kiji00319512/3_19512_101696_up_o831zt2w.pdf", "https://www.city.yatsushiro.lg.jp/kiji00319512/index.html", 3],
+    ["R4", "https://www.city.yatsushiro.lg.jp/kiji00316858/3_16858_79842_up_uamsmgad.pdf", "https://www.city.yatsushiro.lg.jp/kiji00316858/index.html", 3],
+    ["R3", "https://www.city.yatsushiro.lg.jp/kiji00314457/3_14457_59667_up_odt6gvm3.pdf", "https://www.city.yatsushiro.lg.jp/kiji00314457/index.html", 4],
+    ["R2", "https://www.city.yatsushiro.lg.jp/kiji00312058/3_12058_45810_up_ppaxt0d0.pdf", "https://www.city.yatsushiro.lg.jp/kiji00312058/index.html", 4],
+    ["H31", "https://www.city.yatsushiro.lg.jp/kiji00310078/3_10078_33131_up_8akv62ew.pdf", "https://www.city.yatsushiro.lg.jp/kiji00310078/index.html", 4],
+  ] as const).map(([fy, url, landing, page]) => ({
+    id: `yatsushiro-yosan-gaiyo-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 八代市当初予算の概要（一般会計事項別明細・款別＋前年度当初比較）`,
+    publisher: "八代市",
+    url,
+    landingPage: landing,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "八代市（一般会計・団体コード432024）",
+    license: YATSUSHIRO_LICENSE,
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      revenuePage: page,
+      expenditurePage: page,
+      samePage: true,
+      revenueHeading: "【歳入】",
+      expenditureHeading: "【歳出】",
+      revenueTotalLabel: "合計",
+      expenditureTotalLabel: "合計",
+    },
+  } satisfies SourceEntry)),
+
+  // 江別市（北海道・団体コード 012173）。予算書の分冊「表紙：事項別明細書」（**一般会計だけのファイル**・22ページ）の
+  //   「予算説明書 １ 総括」物理 p.20（歳入・印字 -16-）/ p.21（歳出・印字 -17-）。千円。歳入22款・歳出13款。
+  // ⚠⚠ 1.0MB の「各会計予算及び予算説明書」（合冊）には特別会計の同型総括が同居する。**分冊の方を指す**
+  //   （分冊の物理 p.3 の各会計歳入歳出予算総括表で一般会計 61,850,000 ＝ 第1条の総額 ＝ この表の合計・R8）。
+  // ⚠⚠ 歳入 款9 は `国有提供施設等所在市町村` / `助成交付金` の2行に割れる → `kanNameContinues`。
+  //   外すと款9 が切れ、款10 が `助成交付金地方特例交付金` になる（**Σ 差0 のまま**）。
+  // ⚠ R3 は新設款6「法人事業税交付金」の前年度セルが空欄で、比較列 128,000 を前年度と読む（前年度 Σ +128,000・warning 止まり）
+  //   → `prevBlankAsZero`。
+  // ⚠⚠ **発行元の予算書の索引は直近5年度だけを載せる**（R3 以前の年度ページは 404。R4 も次に消える候補）。
+  //   **R3 は発行元から削除済みで Wayback の写し**（20251112 の捕捉1件・p.1 が令和３年度であることを確認）。
+  // ⚠⚠ **R5 は骨格予算**（`skeleton-budgets.ts`）。R6 の前年度列 51,720,000 は R5 の骨格の当初額（R5 の当年度と款単位で全一致）
+  //   なので R6 に `prevNote`。H31 も骨格（H31 は予算書が見つからず未収録）。
+  // ⚠ R2 は予算書が見つからず（年度ページ 404・Wayback の CDX は空・WARP は館内限定）、概要は歳入ページに
+  //   「地方交付税等の状況」表の `合 計` 行（整数8個）が同居してパーサがそちらを合計に選ぶ（Σ error）＝収録しない（unrecordable.ts）。
+  // 総額突合: R6 当初 52,620,000千円 ÷ 総務省 R6 決算歳出 56,219,272千円 = 93.6%。
+  // 前年度列は R8→R3 の全リンクで款単位一致＝当初。
+  // ライセンス: 「リンク・著作権・免責事項」（/soshiki/koucho/7269.html・確認日 2026-09-25）の著作権の節。
+  //   オープンデータ（CC BY 4.0）は「本ライセンスは、本市オープンデータのみ適用されます」と範囲を限り、17データセットに予算・決算・財政は0件（§9g）。
+  // リンク: 同ページの「江別市公式ウェブサイトトップページ（…）へのリンクは原則として自由です」＋リンク元の内容による拒否
+  //   ＋江別市のサイトである旨の明記の依頼のみ。**岩国（§13-39）と同じ字面の境界型**で、リンク先を限る文も依頼も無い ⇒ `noDeepLink` は立てない。
+  // ⚠ 主な事業（分冊「まちづくり政策」・政策別の見開きで款項目コード＋事業費＋人件費）と事業報告（事務事業評価表【評価版】・款項目の欄は無い）
+  //   は別の巡（§13-40）。
+  ...([
+    // [年度, 添付ID, 年度ページ]
+    ["R8", "79634", "148190"],
+    ["R7", "73158", "137089"],
+    ["R6", "66626", "125102"],
+    ["R5", "60074", "113219"],
+    ["R4", "53915", "100143"],
+    ["R3", "48230", "86703"],
+  ] as const).map(([fy, att, page]) => ({
+    id: `ebetsu-yosansho-soukatsu-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 江別市各会計予算及び予算説明書（表紙：事項別明細書・一般会計 総括・款別＋前年度当初比較）`,
+    publisher: "江別市",
+    url:
+      fy === "R3"
+        ? "https://web.archive.org/web/20251112030732id_/https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/48230.pdf"
+        : `https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/${att}.pdf`,
+    landingPage:
+      fy === "R3"
+        ? "https://web.archive.org/web/20260211001922/https://www.city.ebetsu.hokkaido.jp/site/zaisei/86703.html"
+        : `https://www.city.ebetsu.hokkaido.jp/site/zaisei/${page}.html`,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "江別市（一般会計・団体コード012173）",
+    license: EBETSU_LICENSE,
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      revenuePage: 20,
+      expenditurePage: 21,
+      revenueHeading: "（ 歳 入 ）",
+      expenditureHeading: "（ 歳 出 ）",
+      kanNameContinues: { revenue: [9] },
+      ...(fy === "R3" ? { prevBlankAsZero: { revenue: [6] } } : {}),
+      ...(fy === "R6"
+        ? {
+            prevNote:
+              "前年度（令和5年度）の当初予算は、市長の改選期にあたるため、いわゆる骨格予算として編成されています（江別市「令和5年度当初予算案概要」に記載）。ここでの前年度額はその骨格予算の当初額で、肉付けした後の額ではありません。",
+          }
+        : {}),
+    },
+  } satisfies SourceEntry)),
+
+  // 橿原市（奈良県・団体コード 292052）。⚠ 奈良県・奈良市とは別団体。「予算の概要」の「２．一般会計 款別予算額内訳」
+  //   物理 p.4（歳入・印字 -2-）/ p.5（歳出・印字 -3-）。千円。歳入21款・歳出12款（款6 は原典が `農業費`・武蔵野と同じ。
+  //   総務省の目的別「農林水産業費」に黙って寄せない）。合計ラベルは既定で拾える。特別会計は p.3 の会計別総括表に1行ずつだけ。
+  // ⚠⚠ **R8 は議会が修正して可決**（議第24号・議会の結果報告 teireikaikekka202603-2.pdf で「56,266,002千円と定める」可）。
+  //   財政課のページに**初版 2026-0227-5.pdf（56,290,000）と修正後 yosangaiyou_2.pdf（56,266,002）が並び、どちらも Σ 差0 で通る**
+  //   （[[two-versions-same-pdf-both-pass]]）。議決額と一致する**修正後を採る**。同じページの報道資料 20260227-4.pdf は修正前なので使わない。
+  //   ⚠ R9 を収録したらその前年度列で 56,266,002 系列かを突き合わせること。
+  // ⚠⚠ **R6 の概要（20240304-2.pdf）はアウトライン化**（DocuWorks・フォント0・内容ストリームの Tj 0件）。R6 予算書も複合機のスキャン。
+  //   ⇒ **R6 は同じ年の記者会見資料（20240304-1.pdf）** p.2〈当初予算歳入〉/ p.5〈当初予算歳出款別内訳〉から採る（下の別エントリ）。
+  // ⚠⚠ **現行ページは最新年度だけを載せる**。R7・R6・R5 は発行元から削除済みで WARP から採る（Wayback には group/45 の PDF が0件）。
+  //   R4〜R2 は旧サイト（JavaScript 描画）が WARP にも Wayback にも中身ごと残っておらず未回収（unrecordable.ts）。
+  // 総額突合: R6 当初 48,840,000千円 ÷ 総務省 R6 決算歳出 48,625,519千円 = 100.4%。
+  // 骨格予算: R8（修正後・初版）・R7・R5 の概要、R6・R8 の報道資料、R8 の予算書に4語を当てて0件。
+  //   前年度列は R8→R7→R6→R5 の隣接全年度で前年度当初と款単位一致（33款すべて）。
+  // ライセンス: 「橿原市ホームページの著作権」（/shiseijoho/koho/1/10367.html・確認日 2026-09-25）。
+  //   BODIK の橿原市19件（CC BY 4.0）に予算・決算・財政は0件（§9g）。
+  // リンク: 別ページ「リンク」（/shiseijoho/koho/1/10366.html）が「基本的にフリーですが…**なるべく**橿原市トップページにリンクされるよう
+  //   **お願いします**。トップページ以外へリンクされる場合は…予告なしにリンクがとぎれることがありますのでご了承ください」
+  //   ＝自由＋トップページへの依頼で、トップページ以外へのリンクを前提にした了承文まである（§13-4 の福山型）⇒ `noDeepLink` は立てない。
+  //   フレームへの組み込みは断っているので iframe に入れない。
+  // ⚠ 主な事業（概要の「８．予算の概要」・款→項→事業の木で前年度額あり・同じページに特別会計が続くので `〔一般会計〕` で切る設計が要る。
+  //   ⚠⚠ `table-lines` は**静かに46件を返して中身が壊れる**）と事業報告（成果報告書 R6・R5／事務事業評価書 R7）は別の巡（§13-40）。
+  ...([
+    // [年度, URL, landingPage]
+    ["R8", "https://www.city.kashihara.nara.jp/material/files/group/45/yosangaiyou_2.pdf", "https://www.city.kashihara.nara.jp/soshiki/1044/gyomu/2/2291.html"],
+    ["R7", "https://warp.ndl.go.jp/20250607/20250606053614/https://www.city.kashihara.nara.jp/material/files/group/45/20250228-2.pdf", "https://warp.ndl.go.jp/20250607/20250606053614/https://www.city.kashihara.nara.jp/soshiki/1044/gyomu/2/2291.html"],
+    ["R5", "https://warp.ndl.go.jp/20230607/20230605224124/https://www.city.kashihara.nara.jp/material/files/group/45/64003d5265909e299abefe54.pdf", "https://warp.ndl.go.jp/20230607/20230605224124/https://www.city.kashihara.nara.jp/soshiki/1044/gyomu/2/2291.html"],
+  ] as const).map(([fy, url, landing]) => ({
+    id: `kashihara-yosan-gaiyou-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 橿原市予算の概要${fy === "R8" ? "（修正後）" : ""}（一般会計 款別予算額内訳・款別＋前年度当初比較）`,
+    publisher: "橿原市",
+    url,
+    landingPage: landing,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "橿原市（一般会計・団体コード292052）",
+    license: KASHIHARA_LICENSE,
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      revenuePage: 4,
+      expenditurePage: 5,
+      revenueHeading: "（１）歳入",
+      expenditureHeading: "（２）歳出",
+    },
+  } satisfies SourceEntry)),
+  {
+    // 橿原市 R6。概要がアウトライン化されているので、同じ年の記者会見資料から採る（上の橿原市のコメント参照）。
+    // ⚠⚠ 欄外の `2024/2/28 記者会見資料` が款として拾われる（当年度 +2・前年度 +28 の error＝止まる）ので HeaderExtra が必須。
+    // ⚠ 物理と印字のズレは0。p.1 に市名が無く p.6 に「奈良県橿原市」。
+    id: "kashihara-yosan-houdou-r6",
+    title: "令和6年度 橿原市一般会計当初予算の概要について（記者会見資料・当初予算歳入／歳出款別内訳・款別＋前年度当初比較）",
+    publisher: "橿原市",
+    url: "https://warp.ndl.go.jp/20240607/20240606002031/https://www.city.kashihara.nara.jp/material/files/group/45/20240304-1.pdf",
+    landingPage: "https://warp.ndl.go.jp/20240607/20240606002031/https://www.city.kashihara.nara.jp/soshiki/1044/gyomu/2/2291.html",
+    kind: "pdf",
+    fiscalYear: "R6",
+    scope: "橿原市（一般会計・団体コード292052）",
+    license: KASHIHARA_LICENSE,
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 2,
+      expenditurePage: 5,
+      revenueHeading: "〈当初予算歳入〉",
+      expenditureHeading: "〈当初予算歳出款別内訳〉",
+      revenueHeaderExtra: "記者会見資料",
+      expenditureHeaderExtra: "記者会見資料",
+    },
+  },
 
   {
     // 山梨県（都道府県・団体コード 190004）R6 一般会計決算「決算の状況」PDF。

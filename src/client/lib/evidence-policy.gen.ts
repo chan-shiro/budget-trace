@@ -17112,5 +17112,155 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.koganei.lg.jp/shisei/zaiseiyosan/yosan/yosanhensei/01020181018092155482.files/R2toushoyosanhenseigaiyou.pdf",
     "license": "本サイトに掲載の文章・画像・図表等に関する権利は小金井市に帰属するものであり、無断で転載することを禁止します。もし、これらの文書等について転載等を希望される場合は、あらかじめご相談ください。",
     "target": "file"
+  },
+  "/sources/ise-shi-yosansho-r8/r8yosansyo_all.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ise.mie.jp/_res/projects/default_project/_page_/001/019/973/r8yosansyo_all.pdf",
+    "license": "伊勢市ホームページで掲載している文書や画像等の各ファイル及びその内容に関する諸権利は、原則として伊勢市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。伊勢市ホームページで掲載している文書・画像等の全てのデータについて、権利者の許可なく使用・転載・二次利用を禁止します。これらの文書等について転用等を希望される場合はご相談ください。",
+    "target": "file"
+  },
+  "/sources/ise-shi-yosansho-r7/r7yosansyo_ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ise.mie.jp/_res/projects/default_project/_page_/001/018/518/r7yosansyo_ippan.pdf",
+    "license": "伊勢市ホームページで掲載している文書や画像等の各ファイル及びその内容に関する諸権利は、原則として伊勢市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。伊勢市ホームページで掲載している文書・画像等の全てのデータについて、権利者の許可なく使用・転載・二次利用を禁止します。これらの文書等について転用等を希望される場合はご相談ください。",
+    "target": "file"
+  },
+  "/sources/ise-shi-yosansho-r6/0401_r6yosansyo_ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ise.mie.jp/_res/projects/default_project/_page_/001/016/922/0401_r6yosansyo_ippan.pdf",
+    "license": "伊勢市ホームページで掲載している文書や画像等の各ファイル及びその内容に関する諸権利は、原則として伊勢市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。伊勢市ホームページで掲載している文書・画像等の全てのデータについて、権利者の許可なく使用・転載・二次利用を禁止します。これらの文書等について転用等を希望される場合はご相談ください。",
+    "target": "file"
+  },
+  "/sources/ise-shi-yosansho-r5/0401_r5yosannsyo_ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ise.mie.jp/_res/projects/default_project/_page_/001/015/072/0401_r5yosannsyo_ippan.pdf",
+    "license": "伊勢市ホームページで掲載している文書や画像等の各ファイル及びその内容に関する諸権利は、原則として伊勢市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。伊勢市ホームページで掲載している文書・画像等の全てのデータについて、権利者の許可なく使用・転載・二次利用を禁止します。これらの文書等について転用等を希望される場合はご相談ください。",
+    "target": "file"
+  },
+  "/sources/ise-shi-yosansho-r4/0401_r4yosannsyo_ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ise.mie.jp/_res/projects/default_project/_page_/001/013/694/0401_r4yosannsyo_ippan.pdf",
+    "license": "伊勢市ホームページで掲載している文書や画像等の各ファイル及びその内容に関する諸権利は、原則として伊勢市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。伊勢市ホームページで掲載している文書・画像等の全てのデータについて、権利者の許可なく使用・転載・二次利用を禁止します。これらの文書等について転用等を希望される場合はご相談ください。",
+    "target": "file"
+  },
+  "/sources/ise-shi-yosansho-r3/r3_ippan_yosansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ise.mie.jp/_res/projects/default_project/_page_/001/011/652/r3_ippan_yosansyo.pdf",
+    "license": "伊勢市ホームページで掲載している文書や画像等の各ファイル及びその内容に関する諸権利は、原則として伊勢市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。伊勢市ホームページで掲載している文書・画像等の全てのデータについて、権利者の許可なく使用・転載・二次利用を禁止します。これらの文書等について転用等を希望される場合はご相談ください。",
+    "target": "file"
+  },
+  "/sources/ise-shi-yosansho-r2/r2yosannsyo.ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ise.mie.jp/_res/projects/default_project/_page_/001/009/018/r2yosannsyo.ippan.pdf",
+    "license": "伊勢市ホームページで掲載している文書や画像等の各ファイル及びその内容に関する諸権利は、原則として伊勢市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。伊勢市ホームページで掲載している文書・画像等の全てのデータについて、権利者の許可なく使用・転載・二次利用を禁止します。これらの文書等について転用等を希望される場合はご相談ください。",
+    "target": "file"
+  },
+  "/sources/yatsushiro-yosan-gaiyo-r8/3_25739_150039_up_laj6y0vp.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yatsushiro.lg.jp/kiji00325739/3_25739_150039_up_laj6y0vp.pdf",
+    "license": "本サイトに掲載している情報（文章、写真、イラストなど）は著作権の対象となっており、著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/yatsushiro-yosan-gaiyo-r7/3_23623_up_mx8b3px3.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yatsushiro.lg.jp/kiji00323623/3_23623_up_mx8b3px3.pdf",
+    "license": "本サイトに掲載している情報（文章、写真、イラストなど）は著作権の対象となっており、著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/yatsushiro-yosan-gaiyo-r6/3_21761_118416_up_slppg7jz.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yatsushiro.lg.jp/kiji00321761/3_21761_118416_up_slppg7jz.pdf",
+    "license": "本サイトに掲載している情報（文章、写真、イラストなど）は著作権の対象となっており、著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/yatsushiro-yosan-gaiyo-r5/3_19512_101696_up_o831zt2w.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yatsushiro.lg.jp/kiji00319512/3_19512_101696_up_o831zt2w.pdf",
+    "license": "本サイトに掲載している情報（文章、写真、イラストなど）は著作権の対象となっており、著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/yatsushiro-yosan-gaiyo-r4/3_16858_79842_up_uamsmgad.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yatsushiro.lg.jp/kiji00316858/3_16858_79842_up_uamsmgad.pdf",
+    "license": "本サイトに掲載している情報（文章、写真、イラストなど）は著作権の対象となっており、著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/yatsushiro-yosan-gaiyo-r3/3_14457_59667_up_odt6gvm3.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yatsushiro.lg.jp/kiji00314457/3_14457_59667_up_odt6gvm3.pdf",
+    "license": "本サイトに掲載している情報（文章、写真、イラストなど）は著作権の対象となっており、著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/yatsushiro-yosan-gaiyo-r2/3_12058_45810_up_ppaxt0d0.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yatsushiro.lg.jp/kiji00312058/3_12058_45810_up_ppaxt0d0.pdf",
+    "license": "本サイトに掲載している情報（文章、写真、イラストなど）は著作権の対象となっており、著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/yatsushiro-yosan-gaiyo-h31/3_10078_33131_up_8akv62ew.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yatsushiro.lg.jp/kiji00310078/3_10078_33131_up_8akv62ew.pdf",
+    "license": "本サイトに掲載している情報（文章、写真、イラストなど）は著作権の対象となっており、著作権法により保護されています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/ebetsu-yosansho-soukatsu-r8/79634.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/79634.pdf",
+    "license": "江別市公式ウェブサイトに掲載している内容（写真・イラスト・音声・動画及び記事、その他のデータ）の著作権は江別市に帰属します。（一部の画像等の著作権は、原著作者が所有しています）江別市公式ウェブサイトの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたお問い合わせ先へ、事前にご相談ください。また、どのような場合であっても、掲載資料の使用に際して発生した損害については、一切の責任を負いません。江別市公式ウェブサイトに掲載している内容（写真・イラスト・音声・動画及び記事、その他のデータ）の商用利用は原則できません。ただし、オープンデータは除きます。",
+    "target": "file"
+  },
+  "/sources/ebetsu-yosansho-soukatsu-r7/73158.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/73158.pdf",
+    "license": "江別市公式ウェブサイトに掲載している内容（写真・イラスト・音声・動画及び記事、その他のデータ）の著作権は江別市に帰属します。（一部の画像等の著作権は、原著作者が所有しています）江別市公式ウェブサイトの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたお問い合わせ先へ、事前にご相談ください。また、どのような場合であっても、掲載資料の使用に際して発生した損害については、一切の責任を負いません。江別市公式ウェブサイトに掲載している内容（写真・イラスト・音声・動画及び記事、その他のデータ）の商用利用は原則できません。ただし、オープンデータは除きます。",
+    "target": "file"
+  },
+  "/sources/ebetsu-yosansho-soukatsu-r6/66626.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/66626.pdf",
+    "license": "江別市公式ウェブサイトに掲載している内容（写真・イラスト・音声・動画及び記事、その他のデータ）の著作権は江別市に帰属します。（一部の画像等の著作権は、原著作者が所有しています）江別市公式ウェブサイトの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたお問い合わせ先へ、事前にご相談ください。また、どのような場合であっても、掲載資料の使用に際して発生した損害については、一切の責任を負いません。江別市公式ウェブサイトに掲載している内容（写真・イラスト・音声・動画及び記事、その他のデータ）の商用利用は原則できません。ただし、オープンデータは除きます。",
+    "target": "file"
+  },
+  "/sources/ebetsu-yosansho-soukatsu-r5/60074.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/60074.pdf",
+    "license": "江別市公式ウェブサイトに掲載している内容（写真・イラスト・音声・動画及び記事、その他のデータ）の著作権は江別市に帰属します。（一部の画像等の著作権は、原著作者が所有しています）江別市公式ウェブサイトの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたお問い合わせ先へ、事前にご相談ください。また、どのような場合であっても、掲載資料の使用に際して発生した損害については、一切の責任を負いません。江別市公式ウェブサイトに掲載している内容（写真・イラスト・音声・動画及び記事、その他のデータ）の商用利用は原則できません。ただし、オープンデータは除きます。",
+    "target": "file"
+  },
+  "/sources/ebetsu-yosansho-soukatsu-r4/53915.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/53915.pdf",
+    "license": "江別市公式ウェブサイトに掲載している内容（写真・イラスト・音声・動画及び記事、その他のデータ）の著作権は江別市に帰属します。（一部の画像等の著作権は、原著作者が所有しています）江別市公式ウェブサイトの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたお問い合わせ先へ、事前にご相談ください。また、どのような場合であっても、掲載資料の使用に際して発生した損害については、一切の責任を負いません。江別市公式ウェブサイトに掲載している内容（写真・イラスト・音声・動画及び記事、その他のデータ）の商用利用は原則できません。ただし、オープンデータは除きます。",
+    "target": "file"
+  },
+  "/sources/ebetsu-yosansho-soukatsu-r3/48230.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20251112030732id_/https://www.city.ebetsu.hokkaido.jp/uploaded/attachment/48230.pdf",
+    "license": "江別市公式ウェブサイトに掲載している内容（写真・イラスト・音声・動画及び記事、その他のデータ）の著作権は江別市に帰属します。（一部の画像等の著作権は、原著作者が所有しています）江別市公式ウェブサイトの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。使用許諾は、各ページ内に記載されたお問い合わせ先へ、事前にご相談ください。また、どのような場合であっても、掲載資料の使用に際して発生した損害については、一切の責任を負いません。江別市公式ウェブサイトに掲載している内容（写真・イラスト・音声・動画及び記事、その他のデータ）の商用利用は原則できません。ただし、オープンデータは除きます。",
+    "target": "file"
+  },
+  "/sources/kashihara-yosan-gaiyou-r8/yosangaiyou_2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kashihara.nara.jp/material/files/group/45/yosangaiyou_2.pdf",
+    "license": "橿原市ホームページに掲載されているすべての文書、画像、その他データなどに関する著作権は、特にそのページに記載がないかぎり橿原市に帰属します。著作権法上認められる場合を除き、橿原市の許可なく橿原市ホームページ上に掲載されている文書や画像、その他データなどを無断使用、複製、転載、販売、改変、印刷配布することを禁止します。なお、各ページに利用規約などの特段の定めがある場合は、この取扱いが優先されるものとします。",
+    "target": "file"
+  },
+  "/sources/kashihara-yosan-gaiyou-r7/20250228-2.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20250607/20250606053614/https://www.city.kashihara.nara.jp/material/files/group/45/20250228-2.pdf",
+    "license": "橿原市ホームページに掲載されているすべての文書、画像、その他データなどに関する著作権は、特にそのページに記載がないかぎり橿原市に帰属します。著作権法上認められる場合を除き、橿原市の許可なく橿原市ホームページ上に掲載されている文書や画像、その他データなどを無断使用、複製、転載、販売、改変、印刷配布することを禁止します。なお、各ページに利用規約などの特段の定めがある場合は、この取扱いが優先されるものとします。",
+    "target": "file"
+  },
+  "/sources/kashihara-yosan-gaiyou-r5/64003d5265909e299abefe54.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20230607/20230605224124/https://www.city.kashihara.nara.jp/material/files/group/45/64003d5265909e299abefe54.pdf",
+    "license": "橿原市ホームページに掲載されているすべての文書、画像、その他データなどに関する著作権は、特にそのページに記載がないかぎり橿原市に帰属します。著作権法上認められる場合を除き、橿原市の許可なく橿原市ホームページ上に掲載されている文書や画像、その他データなどを無断使用、複製、転載、販売、改変、印刷配布することを禁止します。なお、各ページに利用規約などの特段の定めがある場合は、この取扱いが優先されるものとします。",
+    "target": "file"
+  },
+  "/sources/kashihara-yosan-houdou-r6/20240304-1.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20240607/20240606002031/https://www.city.kashihara.nara.jp/material/files/group/45/20240304-1.pdf",
+    "license": "橿原市ホームページに掲載されているすべての文書、画像、その他データなどに関する著作権は、特にそのページに記載がないかぎり橿原市に帰属します。著作権法上認められる場合を除き、橿原市の許可なく橿原市ホームページ上に掲載されている文書や画像、その他データなどを無断使用、複製、転載、販売、改変、印刷配布することを禁止します。なお、各ページに利用規約などの特段の定めがある場合は、この取扱いが優先されるものとします。",
+    "target": "file"
   }
 };

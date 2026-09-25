@@ -1,0 +1,402 @@
+{
+  "docType": "budget-book",
+  "sourceId": "yatsushiro-yosan-gaiyo-r4",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-09-25T09:11:25.291Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R4",
+  "account": "一般会計",
+  "revenueTotal": 61345600,
+  "expenditureTotal": 61345600,
+  "prevRevenueTotal": 67106000,
+  "prevExpenditureTotal": 67106000,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "市税",
+      "amount": 15296969,
+      "prevAmount": 15144672,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "地方譲与税",
+      "amount": 645000,
+      "prevAmount": 570000,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "利子割交付金",
+      "amount": 7000,
+      "prevAmount": 8300,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "配当割交付金",
+      "amount": 25000,
+      "prevAmount": 47000,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 35000,
+      "prevAmount": 35000,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "法人事業税交付金",
+      "amount": 159000,
+      "prevAmount": 63000,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "地方消費税交付金",
+      "amount": 2902000,
+      "prevAmount": 2680000,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "ゴルフ場利用税交付金",
+      "amount": 7100,
+      "prevAmount": 6000,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "環境性能割交付金",
+      "amount": 32000,
+      "prevAmount": 33000,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "地方特例交付金",
+      "amount": 85200,
+      "prevAmount": 111000,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "地方交付税",
+      "amount": 15894000,
+      "prevAmount": 15320000,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 14000,
+      "prevAmount": 14000,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "分担金及び負担金",
+      "amount": 366830,
+      "prevAmount": 410285,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "使用料及び手数料",
+      "amount": 781080,
+      "prevAmount": 793014,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "国庫支出金",
+      "amount": 10701925,
+      "prevAmount": 9196482,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "県支出金",
+      "amount": 5338247,
+      "prevAmount": 5844653,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 17,
+      "kanName": "財産収入",
+      "amount": 86792,
+      "prevAmount": 57900,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 18,
+      "kanName": "寄附金",
+      "amount": 1224008,
+      "prevAmount": 1029999,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 19,
+      "kanName": "繰入金",
+      "amount": 1322907,
+      "prevAmount": 1114696,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 20,
+      "kanName": "繰越金",
+      "amount": 1100000,
+      "prevAmount": 1100000,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 21,
+      "kanName": "諸収入",
+      "amount": 901642,
+      "prevAmount": 1033499,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 22,
+      "kanName": "市債",
+      "amount": 4419900,
+      "prevAmount": 12493500,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 354369,
+      "prevAmount": 377207,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 7264383,
+      "prevAmount": 14496266,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "民生費",
+      "amount": 24479898,
+      "prevAmount": 23962860,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "衛生費",
+      "amount": 3946347,
+      "prevAmount": 3745942,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "農林水産業費",
+      "amount": 2591900,
+      "prevAmount": 3356528,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "商工費",
+      "amount": 2208105,
+      "prevAmount": 2135048,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "土木費",
+      "amount": 4791485,
+      "prevAmount": 4949931,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "消防費",
+      "amount": 2525208,
+      "prevAmount": 2300913,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "教育費",
+      "amount": 4354458,
+      "prevAmount": 4149313,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "災害復旧費",
+      "amount": 1695141,
+      "prevAmount": 658235,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 11,
+      "kanName": "公債費",
+      "amount": 6580679,
+      "prevAmount": 6490188,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 12,
+      "kanName": "諸支出金",
+      "amount": 533627,
+      "prevAmount": 463569,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 13,
+      "kanName": "予備費",
+      "amount": 20000,
+      "prevAmount": 20000,
+      "locator": {
+        "file": "3_16858_79842_up_uamsmgad.pdf",
+        "page": 3
+      }
+    }
+  ]
+}

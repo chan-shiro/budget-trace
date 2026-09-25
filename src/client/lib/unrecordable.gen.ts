@@ -778,6 +778,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
       }
     ]
   },
+  "292052": {
+    "budget": [
+      {
+        "fyLabel": "令和4年度・令和3年度・令和2年度",
+        "reason": "発行元の予算のページは最新の年度だけを載せる方式で、この3年度の資料はすでに消えている。当時のページは画面を後から組み立てる作りだったため、ウェブの保存記録（国立国会図書館・Internet Archive）にも資料の中身が残っていなかった。",
+        "checkedOn": "2026-09-25"
+      }
+    ]
+  },
   "302015": {
     "budget": [
       {
@@ -1121,6 +1130,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
         "fyLabel": "平成28年度・平成27年度",
         "reason": "「一般会計予算書」（H28: 257p・H27: 249p）が全ページスキャン画像で、総括のページ（p.13〜14）の pdftotext 出力が0字・埋め込みフォント0・各ページ1画像。",
         "checkedOn": "2026-09-09"
+      }
+    ]
+  },
+  "012173": {
+    "budget": [
+      {
+        "fyLabel": "令和2年度",
+        "reason": "予算書は発行元のページが消えていて、ウェブの保存記録にも見つからなかった。代わりの当初予算案概要は、歳入の款別の表と同じページに地方交付税などの別の表があり、こちらの抽出がその表の合計を款別の表の合計と取り違えるため読めない。",
+        "checkedOn": "2026-09-25"
       }
     ]
   }

@@ -3065,6 +3065,28 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31"] as const).map((fy) => ({
       srcId: `osaki-yosan-setsumeisho-${fy}`, muniCode: "042153", muniName: "大崎市", prefName: "宮城県", isPref: false,
     })),
+    // ---- 第38巡（2026-09-25・§13-40）: 八代・伊勢・橿原・江別・鴻巣 ----
+    // ⚠⚠ 八代は歳入・歳出が1ページに縦積み（samePage・両側 `合計`）。H31 の款18 は原典の字で `寄付金`
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31"] as const).map((fy) => ({
+      srcId: `yatsushiro-yosan-gaiyo-${fy}`, muniCode: "432024", muniName: "八代市", prefName: "熊本県", isPref: false,
+    })),
+    // ⚠⚠ 伊勢は款11 の下段が空行を挟む（kanNameContinuesAcrossBlank・外すと Σ 差0 のまま切れる）。R8 は一括版（分冊はアウトライン化）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `ise-shi-yosansho-${fy}`, muniCode: "242039", muniName: "伊勢市", prefName: "三重県", isPref: false,
+    })),
+    // ⚠⚠ 橿原 R8 は議会修正後の版（初版も Σ 差0 で通る）。R6 は概要がアウトライン化で記者会見資料から（別 srcId）
+    ...(["r8", "r7", "r5"] as const).map((fy) => ({
+      srcId: `kashihara-yosan-gaiyou-${fy}`, muniCode: "292052", muniName: "橿原市", prefName: "奈良県", isPref: false,
+    })),
+    { srcId: "kashihara-yosan-houdou-r6", muniCode: "292052", muniName: "橿原市", prefName: "奈良県", isPref: false },
+    // ⚠⚠ 江別 R5 は骨格予算（skeleton-budgets.ts）で R6 に prevNote。R3 は発行元から削除済みで Wayback から
+    ...(["r8", "r7", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
+      srcId: `ebetsu-yosansho-soukatsu-${fy}`, muniCode: "012173", muniName: "江別市", prefName: "北海道", isPref: false,
+    })),
+    // ⚠⚠ 鴻巣は HeaderExtra を外すと款1 が `（歳入）市税` になる（Σ 差0）。⚠ ライセンス条項がサイトに無い（unverified・人の判断待ち）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2", "h31", "h30"] as const).map((fy) => ({
+      srcId: `konosu-yosan-sankou-${fy}`, muniCode: "112178", muniName: "鴻巣市", prefName: "埼玉県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。
