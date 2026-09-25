@@ -96,7 +96,7 @@ export const KOFU_TREND: KofuTrendRow[] = [
       "公債費": 83.84582,
       "労働費": 1.92868
     },
-    "landingUrl": "https://web.archive.org/web/20260301074317/https://www.soumu.go.jp/iken/zaisei/r04_shichouson.html",
+    "landingUrl": "https://web.archive.org/web/20260914005107/https://www.soumu.go.jp/iken/zaisei/r04_shichouson.html",
     "ref": "000937287.xlsx 436行目"
   },
   {

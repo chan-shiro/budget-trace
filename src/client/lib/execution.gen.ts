@@ -962,14 +962,14 @@ export const KOFU_EXECUTION_YEARS: KofuExecutionYear[] = [
       }
     ],
     "sourceTitle": "令和5年度 甲府市決算状況 収入支出詳細（一般会計・確定値）",
-    "sourceUrl": "https://web.archive.org/web/20260712125134/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r5kessan/r5ippansyousai.html",
+    "sourceUrl": "https://web.archive.org/web/20260712125915/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r5kessan/r5ippansyousai.html",
     "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r5kessan/r5ippansyousai.html",
     "sourceLocalUrl": "/sources/kofu-kessan-syousai-r5/r5ippansyousai.html",
     "evidence": [
       {
         "title": "令和5年度 甲府市決算状況 収入支出詳細（一般会計・確定値）",
         "type": "Web",
-        "url": "https://web.archive.org/web/20260712125134/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r5kessan/r5ippansyousai.html",
+        "url": "https://web.archive.org/web/20260712125915/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/r5kessan/r5ippansyousai.html",
         "localUrl": "/sources/kofu-kessan-syousai-r5/r5ippansyousai.html",
         "source": "www.city.kofu.yamanashi.jp",
         "thumb": "r5ippansyousai.html ・ sha256 59a4a42ca20c946d… ・ 2026-07-12 取得"

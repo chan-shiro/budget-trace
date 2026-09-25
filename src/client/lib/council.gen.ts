@@ -397,7 +397,7 @@ export const KOFU_COUNCIL_YEARS: KofuCouncil[] = [
       "title": "令和4年3月定例会 審議結果",
       "localUrl": "/sources/kofu-gikai-r4/shingikekka.html",
       "originUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/r0403/shingikekka.html",
-      "archiveUrl": "https://web.archive.org/web/20260215161610/https://www.city.kofu.yamanashi.jp/gijichosa/r0403/shingikekka.html"
+      "archiveUrl": "https://web.archive.org/web/20260610022754/https://www.city.kofu.yamanashi.jp/gijichosa/r0403/shingikekka.html"
     },
     "minutesUrl": "https://www.city.kofu.yamanashi.dbsr.jp/",
     "newsletterUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/shise/gikai/koho/r08.html"

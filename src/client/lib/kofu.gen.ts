@@ -58,7 +58,7 @@ export const KOFU_BUDGET_YEARS: KofuBudgetYear[] = [
     "prevBasis": "当初",
     "prevNote": "",
     "sourceTitle": "令和8年度 甲府市当初予算（案）資料",
-    "sourceUrl": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf",
+    "sourceUrl": "https://web.archive.org/web/20260712083555/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf",
     "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf",
     "sourceLocalUrl": "/sources/kofu-yosansho-r8/r8toushoyosansiryou.pdf",
     "pagesLabel": "p.12–13",
@@ -360,7 +360,7 @@ export const KOFU_BUDGET_YEARS: KofuBudgetYear[] = [
       {
         "title": "令和8年度 甲府市当初予算（案）資料",
         "type": "PDF",
-        "url": "https://web.archive.org/web/20260712083450/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf",
+        "url": "https://web.archive.org/web/20260712083555/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r8toushoyosansiryou.pdf",
         "localUrl": "/sources/kofu-yosansho-r8/r8toushoyosansiryou.pdf",
         "source": "www.city.kofu.yamanashi.jp",
         "thumb": "r8toushoyosansiryou.pdf ・ sha256 9a3cb9417077a9d3… ・ 2026-07-11 取得"
@@ -378,7 +378,7 @@ export const KOFU_BUDGET_YEARS: KofuBudgetYear[] = [
     "prevBasis": "当初",
     "prevNote": "",
     "sourceTitle": "令和7年度 甲府市当初予算資料",
-    "sourceUrl": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf",
+    "sourceUrl": "https://web.archive.org/web/20260712085309/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf",
     "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf",
     "sourceLocalUrl": "/sources/kofu-yosansho-r7/r7toushoyosansiryou.pdf",
     "pagesLabel": "p.13–14",
@@ -680,7 +680,7 @@ export const KOFU_BUDGET_YEARS: KofuBudgetYear[] = [
       {
         "title": "令和7年度 甲府市当初予算資料",
         "type": "PDF",
-        "url": "https://web.archive.org/web/20260712085206/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf",
+        "url": "https://web.archive.org/web/20260712085309/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/r7toushoyosansiryou.pdf",
         "localUrl": "/sources/kofu-yosansho-r7/r7toushoyosansiryou.pdf",
         "source": "www.city.kofu.yamanashi.jp",
         "thumb": "r7toushoyosansiryou.pdf ・ sha256 8c98435dc455afbb… ・ 2026-07-12 取得"
@@ -698,7 +698,7 @@ export const KOFU_BUDGET_YEARS: KofuBudgetYear[] = [
     "prevBasis": "当初",
     "prevNote": "令和5年度当初予算額は、6月補正における政策的予算（KOFUNEXTACTION）を含む",
     "sourceTitle": "令和6年度 甲府市当初予算資料",
-    "sourceUrl": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf",
+    "sourceUrl": "https://web.archive.org/web/20260712085606/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf",
     "originUrl": "https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf",
     "sourceLocalUrl": "/sources/kofu-yosansho-r6/03r6tousyoshiryou.pdf",
     "pagesLabel": "p.15–16",
@@ -1000,7 +1000,7 @@ export const KOFU_BUDGET_YEARS: KofuBudgetYear[] = [
       {
         "title": "令和6年度 甲府市当初予算資料",
         "type": "PDF",
-        "url": "https://web.archive.org/web/20260712085452/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf",
+        "url": "https://web.archive.org/web/20260712085606/https://www.city.kofu.yamanashi.jp/zaise/shise/yosan/yosan/documents/03r6tousyoshiryou.pdf",
         "localUrl": "/sources/kofu-yosansho-r6/03r6tousyoshiryou.pdf",
         "source": "www.city.kofu.yamanashi.jp",
         "thumb": "03r6tousyoshiryou.pdf ・ sha256 1f07ed8057a696ba… ・ 2026-07-12 取得"
