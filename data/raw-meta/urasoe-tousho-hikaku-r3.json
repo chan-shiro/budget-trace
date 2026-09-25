@@ -1,0 +1,19 @@
+{
+  "sourceId": "urasoe-tousho-hikaku-r3",
+  "files": [
+    {
+      "filename": "sainyuu.pdf",
+      "sha256": "12c0c0ff7d554100ffa4bf165652de8aba5f7b2aca0b2296598fa02d39439b31",
+      "bytes": 42077,
+      "fetchedAt": "2026-09-25T15:04:19.910Z",
+      "fetchedFrom": "https://www.city.urasoe.lg.jp/doc/609e736b3d59ae2434bfdbae/file_contents/sainyuu.pdf"
+    },
+    {
+      "filename": "saisyutu.pdf",
+      "sha256": "4fbc2b13920539996de0c132191e9b2951e329bd1ef04efb4addfbc79d4751e3",
+      "bytes": 34451,
+      "fetchedAt": "2026-09-25T15:04:20.702Z",
+      "fetchedFrom": "https://www.city.urasoe.lg.jp/doc/609e736b3d59ae2434bfdbae/file_contents/saisyutu.pdf"
+    }
+  ]
+}

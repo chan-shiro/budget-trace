@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 276,
+  "budgetCount": 279,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 2097,
-  "fileCount": 3313,
-  "archivedCount": 1873,
+  "sourceCount": 2114,
+  "fileCount": 3336,
+  "archivedCount": 1889,
   "licenseOpen": 102,
-  "licensePermission": 1779,
+  "licensePermission": 1796,
   "licenseUnverified": 216,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -645,6 +645,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H31〜R8（8年度）"
     },
     {
+      "name": "那須塩原市",
+      "code": "092134",
+      "years": 8,
+      "range": "H31〜R8（8年度）"
+    },
+    {
       "name": "船橋市",
       "code": "122041",
       "years": 8,
@@ -1077,6 +1083,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H25〜R6（6年度）"
     },
     {
+      "name": "浦添市",
+      "code": "472085",
+      "years": 6,
+      "range": "R3〜R8（6年度）"
+    },
+    {
       "name": "弘前市",
       "code": "022021",
       "years": 5,
@@ -1249,6 +1261,12 @@ export const ROADMAP_PROGRESS = {
       "code": "272108",
       "years": 3,
       "range": "R5〜R8（3年度）"
+    },
+    {
+      "name": "大東市",
+      "code": "272183",
+      "years": 3,
+      "range": "R6〜R8（3年度）"
     },
     {
       "name": "神戸市",

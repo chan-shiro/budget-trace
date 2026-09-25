@@ -1,0 +1,19 @@
+{
+  "sourceId": "urasoe-tousho-hikaku-r4",
+  "files": [
+    {
+      "filename": "20240530170253713.pdf",
+      "sha256": "8c6078df371325c8b4889ef7724f6c5a9d3ddbd64d74ccc9d34c4fec49b5d938",
+      "bytes": 48230,
+      "fetchedAt": "2026-09-25T15:04:18.178Z",
+      "fetchedFrom": "https://www.city.urasoe.lg.jp/doc/62426ae973fe266fe599fc72/file_contents/20240530170253713.pdf"
+    },
+    {
+      "filename": "20240530170253717.pdf",
+      "sha256": "911f2bc87de9238398a10fa15c52ad69f6e3ee6db22156fdcbab81fe6fc5edfd",
+      "bytes": 38859,
+      "fetchedAt": "2026-09-25T15:04:18.907Z",
+      "fetchedFrom": "https://www.city.urasoe.lg.jp/doc/62426ae973fe266fe599fc72/file_contents/20240530170253717.pdf"
+    }
+  ]
+}

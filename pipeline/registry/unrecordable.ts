@@ -1604,4 +1604,40 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     url: "https://www.city.tsuruoka.lg.jp/shisei/shiyakusyo/zaisei/yosan.html",
     checkedOn: "2026-09-25", ref: "docs/data-sources.md §13-41",
   },
+  // ==== 中核市など 第38弾（2026-09-26・loop.md 第40巡・docs §13-42）==================================
+  {
+    // 浦添市（472085）R2。R8〜R3 の6年度は収録済み（§13-42）。
+    // ⚠ 原典の誤植（数字の並びの入れ替わり）。正しい値は同じ年度の予算書に印字されているが、別の資料の値で差し替える前例が無いので人の判断に回した。
+    code: "472085", name: "浦添市", dataset: "budget",
+    fiscalYears: ["R2"],
+    categories: ["format-mismatch"],
+    reason:
+      "款別の対前年度比較表で、歳入の市債と歳入合計の額が、翌年度の資料の前年度の列（同じ年度の当初予算額）より90千円少ない（数字の並びが入れ替わった誤植とみられる）。" +
+      "この年度の予算書の総括は文字が正しく取り出せないため、比較表の数字を正しい額に置き換えてよいかを確かめてから収録する。",
+    url: "https://www.city.urasoe.lg.jp/doc/609e7b803d59ae2434bfe9b8/",
+    checkedOn: "2026-09-26", ref: "docs/data-sources.md §13-42",
+  },
+  {
+    // 大東市（272183）R5。R8〜R6 は収録済み（§13-42）。
+    // ⚠ 議会修正で可決した年度で、公開されている款別の表が修正前の原案だけ。修正後の款別の全表は R6 の前年度列にしか無い。
+    code: "272183", name: "大東市", dataset: "budget",
+    fiscalYears: ["R5"],
+    categories: ["format-mismatch"],
+    reason:
+      "この年度の当初予算は議会で修正されて成立したが、公開されている款別の表（予算概要・予算書）は修正前の原案のもので、成立した予算の額と4つの款で合わない。" +
+      "成立した額の款別の表は翌年度の資料の前年度の列にしか載っていない。",
+    url: "https://www.city.daito.lg.jp/soshiki/4/43842.html",
+    checkedOn: "2026-09-26", ref: "docs/data-sources.md §13-42",
+  },
+  {
+    // 大東市（272183）R4〜R2。
+    code: "272183", name: "大東市", dataset: "budget",
+    fiscalYears: ["R4", "R3", "R2"],
+    categories: ["scanned-image"],
+    reason:
+      "予算概要も予算書も全ページが画像で、ページ番号以外の文字の情報が入っていない。" +
+      "国立国会図書館の保存記録にある令和2年度の写しも同じ画像のファイルだった。",
+    url: "https://www.city.daito.lg.jp/life/6/30/129/",
+    checkedOn: "2026-09-26", ref: "docs/data-sources.md §13-42",
+  },
 ];
