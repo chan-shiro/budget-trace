@@ -284,6 +284,10 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
   const isBudget = !!muniBudget;
   // 取得中（索引には居るのに本体がまだ無い）。decisionPending と同じ扱いでローディングを出す
   const budgetPending = !!budgetMuni && !muniBudget;
+  // どちらかの取得待ち。⚠ この間 `data` は甲府（kofuData）へフォールバックしているので、
+  // **自治体のデータを読む画面・ヘッダーはすべてこれで止める**（他の自治体の数値と出典を
+  // 一瞬でも出さない。2026-09-25 修正）。全体ページの /sources は自治体を持たないので対象外
+  const muniPending = !isGlobalSources && (decisionPending || budgetPending);
   // 都道府県エンティティ（県全体）か。市町村向けの機能（類似自治体比較・主な事業）は出さない。
   // **索引から引く** — 本体の取得を待たずに決まる（画面のゲートが取得中にちらつかない）
   const isPref = !!(budgetMuni && D.MUNI_BUDGET_INDEX[budgetMuni]?.isPref);
@@ -835,7 +839,8 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
     ["款別ドリルダウン", "drill", () => nav({ screen: "drill" })],
     ["類似自治体", "similar", () => nav({ screen: "similar" })],
   ];
-  const navDefs = isFull ? navDefsFull : isBudget ? navDefsBudget : navDefsDecision;
+  // 階層は索引から同期で決まるので、取得待ちの budget 自治体にも budget のタブを出す
+  const navDefs = isFull ? navDefsFull : tier === "budget" ? navDefsBudget : navDefsDecision;
   const navTabs = navDefs.map(([label, key, open]) => ({ label, open, fg: screen === key ? "#14181C" : "#5C6B77", fw: screen === key ? "700" : "500", ul: screen === key ? accent : "transparent" }));
 
   // 専用画面を指す URL に来たら、その階層で出せない画面はダッシュボードにフォールバック。
@@ -1134,7 +1139,8 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
     })(),
     // シャード取得待ち（ダッシュボードでスケルトンを出す）。decision の県シャードと
     // budget の当初予算シャード（#216）はどちらも実行時フェッチなので同じ扱い
-    loading: decisionPending || budgetPending,
+    loading: muniPending,
+    loadingLabel: budgetPending ? "当初予算データを読み込んでいます…" : "決算データを読み込んでいます…",
     // decision 自治体の未収録機能（主な事業・執行・評価・補正）のその場リクエスト。
     // ⚠ **当初予算を調べたうえで収録できないと判定した団体では出さない**（山梨市・韮崎市・
     // 甲斐市・上野原市・中央市）。/coverage は同じ理由でリクエスト先から外しているのに、
@@ -1428,10 +1434,18 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
     // 「日本 › 東京都 › 東京都」と同じ語が2回並ぶ。末尾は**この画面が何か**にする。
     // 中段（県名）は市区町村一覧へのリンクなので、2段に潰さず残す。
     // 語は /coverage の「〜（県全体）」に合わせる（都・道・府でも「県全体」で統一）
-    crumbMuni: isPref ? "県全体" : data.name || s.muni || "甲府市",
+    // 取得待ちの間 `data` は甲府なので、名前は URL（s.muni）か索引から引く
+    crumbMuni: isPref
+      ? "県全体"
+      : muniPending
+        ? s.muni || (budgetMuni ? D.MUNI_BUDGET_INDEX[budgetMuni]?.muniName : "") || ""
+        : data.name || s.muni || "甲府市",
     yearLabel,
     // 年度切り替え。full=当初予算(複数年)、budget=当初予算(1年)、decision=決算年度
-    yearOptions: isDecision
+    // 取得待ちの間は甲府の年度を並べない（選べる年度はまだ分からない）
+    yearOptions: muniPending
+      ? [{ value: "__pending", label: "読み込み中…" }]
+      : isDecision
       ? [
           ...decisionView!.availableFys.map((fy) => ({ value: fy, label: D.DECISION_FY_LABELS[fy] ?? `${D.fyEraLabel(fy)} 決算` })),
           { value: "__request", label: "＋ 他の年度をリクエスト…" },
@@ -1445,7 +1459,7 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
             ...KOFU_BUDGET_YEARS.map((b) => ({ value: b.fy, label: b.fyLabel })),
             { value: "__request", label: "＋ 他の年度をリクエスト…" },
           ],
-    yearSel: isDecision ? decisionView!.fy : isBudget ? muniBudget!.fy : budget.fy,
+    yearSel: muniPending ? "__pending" : isDecision ? decisionView!.fy : isBudget ? muniBudget!.fy : budget.fy,
     pickYear: (fy: string) => {
       if (fy === "__request") {
         window.open(
