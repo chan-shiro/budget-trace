@@ -1539,7 +1539,7 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     categories: ["format-mismatch"],
     reason:
       "当初予算の概要の歳入の表で、使用料及び手数料の行に款番号と前年度の額が無く、増減率の欄が計算エラーの表示になっている。" +
-      "前年度の合計も前年度の当初予算額と違う額で印字されているため、款の合計が総額と合わない。" +
+      "款番号の無いこの行を款として数えられないので当年度の款の合計が総額と合わず、前年度の合計も前年度の当初予算額と違う額で印字されている。" +
       "款別の数字が載るほかの資料は、予算書の総括が文字として取り出せず、予算説明資料は紙のスキャンで、代わりにならなかった。",
     url: "https://www.city.koganei.lg.jp/shisei/zaiseiyosan/yosan/yosanhensei/R8tousyoyosanhensei.html",
     checkedOn: "2026-09-25", ref: "docs/data-sources.md §13-39",

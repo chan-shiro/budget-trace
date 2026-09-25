@@ -17079,38 +17079,38 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
   },
   "/sources/koganei-yosan-gaiyou-r7/R07toushoyoyosangaiyou.pdf": {
     "mode": "origin",
-    "href": "https://www.city.koganei.lg.jp/shisei/zaiseiyosan/yosan/yosanhensei/R7tousyoyosanhensei.html",
+    "href": "https://www.city.koganei.lg.jp/shisei/zaiseiyosan/yosan/yosanhensei/R7tousyoyosanhensei.files/R07toushoyoyosangaiyou.pdf",
     "license": "本サイトに掲載の文章・画像・図表等に関する権利は小金井市に帰属するものであり、無断で転載することを禁止します。もし、これらの文書等について転載等を希望される場合は、あらかじめご相談ください。",
-    "target": "page"
+    "target": "file"
   },
   "/sources/koganei-yosan-gaiyou-r6/R06toushoyoyosangaiyou2.pdf": {
     "mode": "origin",
-    "href": "https://www.city.koganei.lg.jp/shisei/zaiseiyosan/yosan/yosanhensei/R6henseihousin.html",
+    "href": "https://www.city.koganei.lg.jp/shisei/zaiseiyosan/yosan/yosanhensei/R6henseihousin.files/R06toushoyoyosangaiyou2.pdf",
     "license": "本サイトに掲載の文章・画像・図表等に関する権利は小金井市に帰属するものであり、無断で転載することを禁止します。もし、これらの文書等について転載等を希望される場合は、あらかじめご相談ください。",
-    "target": "page"
+    "target": "file"
   },
   "/sources/koganei-yosan-gaiyou-r5/R05toushoyoyosangaiyou.pdf": {
     "mode": "origin",
-    "href": "https://www.city.koganei.lg.jp/shisei/zaiseiyosan/yosan/yosanhensei/tousyoyosanhensei_R5.html",
+    "href": "https://www.city.koganei.lg.jp/shisei/zaiseiyosan/yosan/yosanhensei/tousyoyosanhensei_R5.files/R05toushoyoyosangaiyou.pdf",
     "license": "本サイトに掲載の文章・画像・図表等に関する権利は小金井市に帰属するものであり、無断で転載することを禁止します。もし、これらの文書等について転載等を希望される場合は、あらかじめご相談ください。",
-    "target": "page"
+    "target": "file"
   },
   "/sources/koganei-yosan-gaiyou-r4/R04toushoyoyosangaiyou.pdf": {
     "mode": "origin",
-    "href": "https://www.city.koganei.lg.jp/shisei/zaiseiyosan/yosan/yosanhensei/tousyoyosanhensei_R4.html",
+    "href": "https://www.city.koganei.lg.jp/shisei/zaiseiyosan/yosan/yosanhensei/tousyoyosanhensei_R4.files/R04toushoyoyosangaiyou.pdf",
     "license": "本サイトに掲載の文章・画像・図表等に関する権利は小金井市に帰属するものであり、無断で転載することを禁止します。もし、これらの文書等について転載等を希望される場合は、あらかじめご相談ください。",
-    "target": "page"
+    "target": "file"
   },
   "/sources/koganei-yosan-gaiyou-r3/R3toushoyosanhenseigaiyou.pdf": {
     "mode": "origin",
-    "href": "https://www.city.koganei.lg.jp/shisei/zaiseiyosan/yosan/yosanhensei/toushoyosanhensei_R3.html",
+    "href": "https://www.city.koganei.lg.jp/shisei/zaiseiyosan/yosan/yosanhensei/toushoyosanhensei_R3.files/R3toushoyosanhenseigaiyou.pdf",
     "license": "本サイトに掲載の文章・画像・図表等に関する権利は小金井市に帰属するものであり、無断で転載することを禁止します。もし、これらの文書等について転載等を希望される場合は、あらかじめご相談ください。",
-    "target": "page"
+    "target": "file"
   },
   "/sources/koganei-yosan-gaiyou-r2/R2toushoyosanhenseigaiyou.pdf": {
     "mode": "origin",
-    "href": "https://www.city.koganei.lg.jp/shisei/zaiseiyosan/yosan/yosanhensei/01020181018092155482.html",
+    "href": "https://www.city.koganei.lg.jp/shisei/zaiseiyosan/yosan/yosanhensei/01020181018092155482.files/R2toushoyosanhenseigaiyou.pdf",
     "license": "本サイトに掲載の文章・画像・図表等に関する権利は小金井市に帰属するものであり、無断で転載することを禁止します。もし、これらの文書等について転載等を希望される場合は、あらかじめご相談ください。",
-    "target": "page"
+    "target": "file"
   }
 };
