@@ -226,6 +226,11 @@ const MUNI_SLUGS: Record<string, string> = {
   "092134": "nasushiobara",
   "472085": "urasoe",
   "272183": "daito",
+  "342131": "hatsukaichi",
+  "222135": "kakegawa",
+  "112453": "fujimino",
+  "452033": "nobeoka",
+  "412023": "karatsu",
   "472115": "okinawa", // ⚠ 沖縄県 470007 は "ken" スラグなので衝突しない（富山市・佐賀市と同じ規則）
   "232076": "toyokawa", "352039": "yamaguchi", "222038": "numazu", "272191": "izumi",
   // 政令指定都市（2026-07-15）

@@ -3126,6 +3126,31 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6"] as const).map((fy) => ({
       srcId: `daito-yosan-gaiyou-${fy}`, muniCode: "272183", muniName: "大東市", prefName: "大阪府", isPref: false,
     })),
+    // ---- 第41巡（2026-09-27・§13-43）: 廿日市・掛川・ふじみ野・延岡・唐津 ----
+    // ⚠ 廿日市 R8〜R5 は予算説明資料、R4 は予算書の総括（別 srcId）。R3・R2 はアウトライン化で収録不可
+    ...(["r8", "r7", "r6", "r5"] as const).map((fy) => ({
+      srcId: `hatsukaichi-yosansetsumei-${fy}`, muniCode: "342131", muniName: "廿日市市", prefName: "広島県", isPref: false,
+    })),
+    { srcId: "hatsukaichi-yosansho-r4", muniCode: "342131", muniName: "廿日市市", prefName: "広島県", isPref: false },
+    // ⚠ 掛川 R8〜R4 は予算書の総括、R3・R2 は予算書がスキャンなので当初予算案の概要（別 srcId）。noDeepLink（文書へのリンクを名指しで断る）
+    ...(["r8", "r7", "r6", "r5", "r4"] as const).map((fy) => ({
+      srcId: `kakegawa-yosansho-${fy}`, muniCode: "222135", muniName: "掛川市", prefName: "静岡県", isPref: false,
+    })),
+    ...(["r3", "r2"] as const).map((fy) => ({
+      srcId: `kakegawa-yosangaiyo-${fy}`, muniCode: "222135", muniName: "掛川市", prefName: "静岡県", isPref: false,
+    })),
+    // ⚠⚠ ふじみ野は歳出の財源内訳の列見出し4語が款1 に付く（Σ 差0）。ライセンスが割れていて要許可へ倒した
+    ...(["r8", "r7", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
+      srcId: `fujimino-yosansho-${fy}`, muniCode: "112453", muniName: "ふじみ野市", prefName: "埼玉県", isPref: false,
+    })),
+    // ⚠⚠ 延岡 R5 の前年度列は R4（骨格）の肉付後（prevBasis 補正後＋prevNote）。R5 は専決処分で成立。R7〜R5 は WARP
+    ...(["r8", "r7", "r6", "r5"] as const).map((fy) => ({
+      srcId: `nobeoka-yosan-gaiyou-${fy}`, muniCode: "452033", muniName: "延岡市", prefName: "宮崎県", isPref: false,
+    })),
+    // ⚠⚠ 唐津 R7・R3 は骨格予算で R8・R4 に prevNote。R6 は議会ページの版（財政課の版は文字化け）。R3・R2 は WARP
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `karatsu-yosan-gaiyou-${fy}`, muniCode: "412023", muniName: "唐津市", prefName: "佐賀県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。
