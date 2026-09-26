@@ -102,6 +102,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
       }
     ]
   },
+  "112453": {
+    "budget": [
+      {
+        "fyLabel": "令和2年度",
+        "reason": "当初予算書は全ページが画像で、文字の情報が入っていない。同じ年度の予算の概要は歳入の款をまとめて載せていて款別になっておらず、予算の内訳の明細書にも款ごとの総括が無い。",
+        "checkedOn": "2026-09-27"
+      }
+    ]
+  },
   "121002": {
     "report": [
       {
@@ -887,6 +896,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
       }
     ]
   },
+  "342131": {
+    "budget": [
+      {
+        "fyLabel": "令和3年度・令和2年度",
+        "reason": "予算書は文字が図形として描かれていて、文字の情報として取り出せない。令和3年度の予算説明資料も同じで、令和2年度の予算説明資料は掲載されていない。同じ年度の当初予算の概要は歳入を7つの区分にまとめていて、款別になっていない。",
+        "checkedOn": "2026-09-27"
+      }
+    ]
+  },
   "352021": {
     "budget": [
       {
@@ -984,6 +1002,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
         "fyLabel": "令和8年度・令和7年度・令和5年度・令和2年度・平成31年度・平成29年度・平成28年度・平成27年度",
         "reason": "「当初予算説明資料（No.2）」がスキャン画像（pdftotext 0字・埋め込みフォント0。R8 は 600dpi CCITT 18画像、R7 160画像、R5 327画像、R2/H31 40画像、H29 153画像、H28 36画像、H27 30画像）。R8・R7・R5 は議会ページの予算書も歳出総括がパス描画でテキストが無い（R8 p.58-59 の pdftotext が8字＝ノンブルのみ・画像0）ため読めない。",
         "checkedOn": "2026-09-09"
+      }
+    ]
+  },
+  "452033": {
+    "budget": [
+      {
+        "fyLabel": "令和4年度・令和3年度・令和2年度",
+        "reason": "款別に前年度と比べた当初予算の表が、発行元のサイトにもウェブの保存記録にも見つからなかった。令和4年度は施政方針の文章だけ、令和3年度は当初予算のページが無く、令和2年度は円グラフの画像だけが載っている。",
+        "checkedOn": "2026-09-27"
       }
     ]
   },

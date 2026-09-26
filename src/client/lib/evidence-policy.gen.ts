@@ -17616,5 +17616,179 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.daito.lg.jp/soshiki/4/51877.html",
     "license": "大東市ウェブサイトに掲載している情報（文章・写真・画像等）の著作権は、大東市もしくは大東市に情報提供していただいた提供元に帰属します。大東市ウェブサイトの内容の全部または一部は、「私的使用」または「引用」など著作権法上認められた行為として適切な方法で利用する場合を除き、大東市に無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などをすることは法律で禁止されています。また、いかなる場合でも、本サイトの情報を使用して発生した損害については一切の責任を負いかねます。",
     "target": "page"
+  },
+  "/sources/kakegawa-yosansho-r8/___8__________________.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/1008180.html",
+    "license": "掛川市ホームページに掲載されている情報（文書、画像等）および掛川市ホームページ全体に関する著作権等の諸権利は掛川市に帰属します。ただし、一部の情報の著作権は原著作権者が所有しています。これらの諸権利は国際条約、著作権法等の法律等によって保護されています。掛川市ホームページに掲載されている情報は、「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、掛川市の許可なく使用・複製・転載・販売・改変・印刷配布することを禁止します。ただし、掛川市ホームページリンク用バナーの画像はこの限りではありません。",
+    "target": "page"
+  },
+  "/sources/kakegawa-yosansho-r7/__7_______________.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/799874.html",
+    "license": "掛川市ホームページに掲載されている情報（文書、画像等）および掛川市ホームページ全体に関する著作権等の諸権利は掛川市に帰属します。ただし、一部の情報の著作権は原著作権者が所有しています。これらの諸権利は国際条約、著作権法等の法律等によって保護されています。掛川市ホームページに掲載されている情報は、「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、掛川市の許可なく使用・複製・転載・販売・改変・印刷配布することを禁止します。ただし、掛川市ホームページリンク用バナーの画像はこの限りではありません。",
+    "target": "page"
+  },
+  "/sources/kakegawa-yosansho-r6/____________.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/601677.html",
+    "license": "掛川市ホームページに掲載されている情報（文書、画像等）および掛川市ホームページ全体に関する著作権等の諸権利は掛川市に帰属します。ただし、一部の情報の著作権は原著作権者が所有しています。これらの諸権利は国際条約、著作権法等の法律等によって保護されています。掛川市ホームページに掲載されている情報は、「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、掛川市の許可なく使用・複製・転載・販売・改変・印刷配布することを禁止します。ただし、掛川市ホームページリンク用バナーの画像はこの限りではありません。",
+    "target": "page"
+  },
+  "/sources/kakegawa-yosansho-r5/________________.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/397245.html",
+    "license": "掛川市ホームページに掲載されている情報（文書、画像等）および掛川市ホームページ全体に関する著作権等の諸権利は掛川市に帰属します。ただし、一部の情報の著作権は原著作権者が所有しています。これらの諸権利は国際条約、著作権法等の法律等によって保護されています。掛川市ホームページに掲載されている情報は、「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、掛川市の許可なく使用・複製・転載・販売・改変・印刷配布することを禁止します。ただし、掛川市ホームページリンク用バナーの画像はこの限りではありません。",
+    "target": "page"
+  },
+  "/sources/kakegawa-yosansho-r4/R4jikoubetu_ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/217268.html",
+    "license": "掛川市ホームページに掲載されている情報（文書、画像等）および掛川市ホームページ全体に関する著作権等の諸権利は掛川市に帰属します。ただし、一部の情報の著作権は原著作権者が所有しています。これらの諸権利は国際条約、著作権法等の法律等によって保護されています。掛川市ホームページに掲載されている情報は、「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、掛川市の許可なく使用・複製・転載・販売・改変・印刷配布することを禁止します。ただし、掛川市ホームページリンク用バナーの画像はこの限りではありません。",
+    "target": "page"
+  },
+  "/sources/kakegawa-yosangaiyo-r3/R3yosangaiyo0726.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/11033.html",
+    "license": "掛川市ホームページに掲載されている情報（文書、画像等）および掛川市ホームページ全体に関する著作権等の諸権利は掛川市に帰属します。ただし、一部の情報の著作権は原著作権者が所有しています。これらの諸権利は国際条約、著作権法等の法律等によって保護されています。掛川市ホームページに掲載されている情報は、「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、掛川市の許可なく使用・複製・転載・販売・改変・印刷配布することを禁止します。ただし、掛川市ホームページリンク用バナーの画像はこの限りではありません。",
+    "target": "page"
+  },
+  "/sources/kakegawa-yosangaiyo-r2/yosanngaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/11033.html",
+    "license": "掛川市ホームページに掲載されている情報（文書、画像等）および掛川市ホームページ全体に関する著作権等の諸権利は掛川市に帰属します。ただし、一部の情報の著作権は原著作権者が所有しています。これらの諸権利は国際条約、著作権法等の法律等によって保護されています。掛川市ホームページに掲載されている情報は、「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、掛川市の許可なく使用・複製・転載・販売・改変・印刷配布することを禁止します。ただし、掛川市ホームページリンク用バナーの画像はこの限りではありません。",
+    "target": "page"
+  },
+  "/sources/fujimino-yosansho-r8/8tousho_ippan_yosansho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fujimino.saitama.jp/material/files/group/4/8tousho_ippan_yosansho.pdf",
+    "license": "本サイトに記載された文章・画像に関する権利はふじみ野市に帰属しています。無断で転載することを禁じます。もし、これらの文書等について転用等を希望される場合は、その旨をご連絡ください。",
+    "target": "file"
+  },
+  "/sources/fujimino-yosansho-r7/R7-ippan-yosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fujimino.saitama.jp/material/files/group/4/R7-ippan-yosan.pdf",
+    "license": "本サイトに記載された文章・画像に関する権利はふじみ野市に帰属しています。無断で転載することを禁じます。もし、これらの文書等について転用等を希望される場合は、その旨をご連絡ください。",
+    "target": "file"
+  },
+  "/sources/fujimino-yosansho-r6/R6-ippan-yosansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fujimino.saitama.jp/material/files/group/4/R6-ippan-yosansyo.pdf",
+    "license": "本サイトに記載された文章・画像に関する権利はふじみ野市に帰属しています。無断で転載することを禁じます。もし、これらの文書等について転用等を希望される場合は、その旨をご連絡ください。",
+    "target": "file"
+  },
+  "/sources/fujimino-yosansho-r5/R5ippankaikeitousyoyosansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fujimino.saitama.jp/material/files/group/4/R5ippankaikeitousyoyosansyo.pdf",
+    "license": "本サイトに記載された文章・画像に関する権利はふじみ野市に帰属しています。無断で転載することを禁じます。もし、これらの文書等について転用等を希望される場合は、その旨をご連絡ください。",
+    "target": "file"
+  },
+  "/sources/fujimino-yosansho-r4/R4ippankaikeitousyoyosansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fujimino.saitama.jp/material/files/group/4/R4ippankaikeitousyoyosansyo.pdf",
+    "license": "本サイトに記載された文章・画像に関する権利はふじみ野市に帰属しています。無断で転載することを禁じます。もし、これらの文書等について転用等を希望される場合は、その旨をご連絡ください。",
+    "target": "file"
+  },
+  "/sources/fujimino-yosansho-r3/R3ippannkaikeiyosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fujimino.saitama.jp/material/files/group/4/R3ippannkaikeiyosan.pdf",
+    "license": "本サイトに記載された文章・画像に関する権利はふじみ野市に帰属しています。無断で転載することを禁じます。もし、これらの文書等について転用等を希望される場合は、その旨をご連絡ください。",
+    "target": "file"
+  },
+  "/sources/karatsu-yosan-gaiyou-r8/23617.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.karatsu.lg.jp/uploaded/attachment/23617.pdf",
+    "license": "唐津市ホームページ上の文書や画像などの各ファイル、およびその内容についての諸権利は、原則として唐津市に帰属します。記載内容の無断での転載・引用は禁じます。記載内容について転用などを希望する場合は、下段の問い合わせフォームまたは電話で広聴広報課に相談してください。",
+    "target": "file"
+  },
+  "/sources/karatsu-yosan-gaiyou-r7/17268.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.karatsu.lg.jp/uploaded/attachment/17268.pdf",
+    "license": "唐津市ホームページ上の文書や画像などの各ファイル、およびその内容についての諸権利は、原則として唐津市に帰属します。記載内容の無断での転載・引用は禁じます。記載内容について転用などを希望する場合は、下段の問い合わせフォームまたは電話で広聴広報課に相談してください。",
+    "target": "file"
+  },
+  "/sources/karatsu-yosan-gaiyou-r6/4607.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.karatsu.lg.jp/uploaded/attachment/4607.pdf",
+    "license": "唐津市ホームページ上の文書や画像などの各ファイル、およびその内容についての諸権利は、原則として唐津市に帰属します。記載内容の無断での転載・引用は禁じます。記載内容について転用などを希望する場合は、下段の問い合わせフォームまたは電話で広聴広報課に相談してください。",
+    "target": "file"
+  },
+  "/sources/karatsu-yosan-gaiyou-r5/6564.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.karatsu.lg.jp/uploaded/attachment/6564.pdf",
+    "license": "唐津市ホームページ上の文書や画像などの各ファイル、およびその内容についての諸権利は、原則として唐津市に帰属します。記載内容の無断での転載・引用は禁じます。記載内容について転用などを希望する場合は、下段の問い合わせフォームまたは電話で広聴広報課に相談してください。",
+    "target": "file"
+  },
+  "/sources/karatsu-yosan-gaiyou-r4/7499.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.karatsu.lg.jp/uploaded/attachment/7499.pdf",
+    "license": "唐津市ホームページ上の文書や画像などの各ファイル、およびその内容についての諸権利は、原則として唐津市に帰属します。記載内容の無断での転載・引用は禁じます。記載内容について転用などを希望する場合は、下段の問い合わせフォームまたは電話で広聴広報課に相談してください。",
+    "target": "file"
+  },
+  "/sources/karatsu-yosan-gaiyou-r3/r03tousyogaiyousyo.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20230307/20230304025753/https://www.city.karatsu.lg.jp/zaisei/zaimuhear/documents/r03tousyogaiyousyo.pdf",
+    "license": "唐津市ホームページ上の文書や画像などの各ファイル、およびその内容についての諸権利は、原則として唐津市に帰属します。記載内容の無断での転載・引用は禁じます。記載内容について転用などを希望する場合は、下段の問い合わせフォームまたは電話で広聴広報課に相談してください。",
+    "target": "file"
+  },
+  "/sources/karatsu-yosan-gaiyou-r2/r02-toushogaiyou.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20230307/20230304025753/https://www.city.karatsu.lg.jp/zaisei/zaimuhear/documents/r02-toushogaiyou.pdf",
+    "license": "唐津市ホームページ上の文書や画像などの各ファイル、およびその内容についての諸権利は、原則として唐津市に帰属します。記載内容の無断での転載・引用は禁じます。記載内容について転用などを希望する場合は、下段の問い合わせフォームまたは電話で広聴広報課に相談してください。",
+    "target": "file"
+  },
+  "/sources/hatsukaichi-yosansetsumei-r8/90939.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hatsukaichi.hiroshima.jp/uploaded/attachment/90939.pdf",
+    "license": "廿日市市公式ホームページのコンテンツ（文章・写真・画像などの情報）の著作権は、原則として廿日市市に属します。一部の写真やイラストなどは、外部に著作権がある場合があります。このため、著作権法上認められている場合を除き、当ホームページのコンテンツに関して、無断で複製、転載、改変、編集、頒布、販売などを行うことを禁止します。",
+    "target": "file"
+  },
+  "/sources/hatsukaichi-yosansetsumei-r7/81342.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hatsukaichi.hiroshima.jp/uploaded/attachment/81342.pdf",
+    "license": "廿日市市公式ホームページのコンテンツ（文章・写真・画像などの情報）の著作権は、原則として廿日市市に属します。一部の写真やイラストなどは、外部に著作権がある場合があります。このため、著作権法上認められている場合を除き、当ホームページのコンテンツに関して、無断で複製、転載、改変、編集、頒布、販売などを行うことを禁止します。",
+    "target": "file"
+  },
+  "/sources/hatsukaichi-yosansetsumei-r6/72635.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hatsukaichi.hiroshima.jp/uploaded/attachment/72635.pdf",
+    "license": "廿日市市公式ホームページのコンテンツ（文章・写真・画像などの情報）の著作権は、原則として廿日市市に属します。一部の写真やイラストなどは、外部に著作権がある場合があります。このため、著作権法上認められている場合を除き、当ホームページのコンテンツに関して、無断で複製、転載、改変、編集、頒布、販売などを行うことを禁止します。",
+    "target": "file"
+  },
+  "/sources/hatsukaichi-yosansetsumei-r5/64823.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hatsukaichi.hiroshima.jp/uploaded/attachment/64823.pdf",
+    "license": "廿日市市公式ホームページのコンテンツ（文章・写真・画像などの情報）の著作権は、原則として廿日市市に属します。一部の写真やイラストなどは、外部に著作権がある場合があります。このため、著作権法上認められている場合を除き、当ホームページのコンテンツに関して、無断で複製、転載、改変、編集、頒布、販売などを行うことを禁止します。",
+    "target": "file"
+  },
+  "/sources/hatsukaichi-yosansho-r4/54101.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hatsukaichi.hiroshima.jp/uploaded/attachment/54101.pdf",
+    "license": "廿日市市公式ホームページのコンテンツ（文章・写真・画像などの情報）の著作権は、原則として廿日市市に属します。一部の写真やイラストなどは、外部に著作権がある場合があります。このため、著作権法上認められている場合を除き、当ホームページのコンテンツに関して、無断で複製、転載、改変、編集、頒布、販売などを行うことを禁止します。",
+    "target": "file"
+  },
+  "/sources/nobeoka-yosan-gaiyou-r8/27655.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nobeoka.miyazaki.jp/uploaded/attachment/27655.pdf",
+    "license": "延岡市公式ホームページに掲載している文書や画像などの各ファイル及びその内容に関する著作権は、延岡市またはそのコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められている行為として適切な方法で利用する場合を除き、無断で複製・転用することはできません。掲載内容について複製・転用を希望する場合は、各ページ下段にある担当課室あてにお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/nobeoka-yosan-gaiyou-r7/21314.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20260613/20260612131112/https://www.city.nobeoka.miyazaki.jp/uploaded/attachment/21314.pdf",
+    "license": "延岡市公式ホームページに掲載している文書や画像などの各ファイル及びその内容に関する著作権は、延岡市またはそのコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められている行為として適切な方法で利用する場合を除き、無断で複製・転用することはできません。掲載内容について複製・転用を希望する場合は、各ページ下段にある担当課室あてにお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/nobeoka-yosan-gaiyou-r6/16909.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20250606/20250605083131/https://www.city.nobeoka.miyazaki.jp/uploaded/attachment/16909.pdf",
+    "license": "延岡市公式ホームページに掲載している文書や画像などの各ファイル及びその内容に関する著作権は、延岡市またはそのコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められている行為として適切な方法で利用する場合を除き、無断で複製・転用することはできません。掲載内容について複製・転用を希望する場合は、各ページ下段にある担当課室あてにお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/nobeoka-yosan-gaiyou-r5/13405.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20250606/20250605083243/https://www.city.nobeoka.miyazaki.jp/uploaded/attachment/13405.pdf",
+    "license": "延岡市公式ホームページに掲載している文書や画像などの各ファイル及びその内容に関する著作権は、延岡市またはそのコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められている行為として適切な方法で利用する場合を除き、無断で複製・転用することはできません。掲載内容について複製・転用を希望する場合は、各ページ下段にある担当課室あてにお問い合わせください。",
+    "target": "file"
   }
 };

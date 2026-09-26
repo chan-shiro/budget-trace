@@ -1640,4 +1640,38 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     url: "https://www.city.daito.lg.jp/life/6/30/129/",
     checkedOn: "2026-09-26", ref: "docs/data-sources.md §13-42",
   },
+  // ==== 中核市など 第39弾（2026-09-27・loop.md 第41巡・docs §13-43）==================================
+  {
+    // ふじみ野市（112453）R2。R8〜R3 の6年度は収録済み（§13-43）。
+    code: "112453", name: "ふじみ野市", dataset: "budget",
+    fiscalYears: ["R2"],
+    categories: ["scanned-image"],
+    reason:
+      "当初予算書は全ページが画像で、文字の情報が入っていない。" +
+      "同じ年度の予算の概要は歳入の款をまとめて載せていて款別になっておらず、予算の内訳の明細書にも款ごとの総括が無い。",
+    url: "https://www.city.fujimino.saitama.jp/soshikiichiran/zaiseika/zaiseikakari/yosan/ippankaikei/index.html",
+    checkedOn: "2026-09-27", ref: "docs/data-sources.md §13-43",
+  },
+  {
+    // 廿日市市（342131）R3・R2。R8〜R4 は収録済み（§13-43）。
+    code: "342131", name: "廿日市市", dataset: "budget",
+    fiscalYears: ["R3", "R2"],
+    categories: ["broken-text-layer"],
+    reason:
+      "予算書は文字が図形として描かれていて、文字の情報として取り出せない。令和3年度の予算説明資料も同じで、令和2年度の予算説明資料は掲載されていない。" +
+      "同じ年度の当初予算の概要は歳入を7つの区分にまとめていて、款別になっていない。",
+    url: "https://www.city.hatsukaichi.hiroshima.jp/soshiki/2/63280.html",
+    checkedOn: "2026-09-27", ref: "docs/data-sources.md §13-43",
+  },
+  {
+    // 延岡市（452033）R4〜R2。R8〜R5 は収録済み（§13-43）。
+    code: "452033", name: "延岡市", dataset: "budget",
+    fiscalYears: ["R4", "R3", "R2"],
+    categories: ["no-material"],
+    reason:
+      "款別に前年度と比べた当初予算の表が、発行元のサイトにもウェブの保存記録にも見つからなかった。" +
+      "令和4年度は施政方針の文章だけ、令和3年度は当初予算のページが無く、令和2年度は円グラフの画像だけが載っている。",
+    url: "https://www.city.nobeoka.miyazaki.jp/life/3/22/96/",
+    checkedOn: "2026-09-27", ref: "docs/data-sources.md §13-43",
+  },
 ];

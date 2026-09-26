@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 279,
+  "budgetCount": 284,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 2114,
-  "fileCount": 3336,
-  "archivedCount": 1939,
+  "sourceCount": 2143,
+  "fileCount": 3365,
+  "archivedCount": 1967,
   "licenseOpen": 102,
-  "licensePermission": 1796,
+  "licensePermission": 1825,
   "licenseUnverified": 216,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -861,6 +861,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "掛川市",
+      "code": "222135",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "名古屋市",
       "code": "231002",
       "years": 7,
@@ -945,6 +951,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "唐津市",
+      "code": "412023",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "宮崎市",
       "code": "452017",
       "years": 7,
@@ -985,6 +997,12 @@ export const ROADMAP_PROGRESS = {
       "code": "082015",
       "years": 6,
       "range": "H30〜R8（6年度）"
+    },
+    {
+      "name": "ふじみ野市",
+      "code": "112453",
+      "years": 6,
+      "range": "R3〜R8（6年度）"
     },
     {
       "name": "市川市",
@@ -1167,6 +1185,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R3〜R8（5年度）"
     },
     {
+      "name": "廿日市市",
+      "code": "342131",
+      "years": 5,
+      "range": "R4〜R8（5年度）"
+    },
+    {
       "name": "高知市",
       "code": "392014",
       "years": 5,
@@ -1219,6 +1243,12 @@ export const ROADMAP_PROGRESS = {
       "code": "352021",
       "years": 4,
       "range": "R3〜R8（4年度）"
+    },
+    {
+      "name": "延岡市",
+      "code": "452033",
+      "years": 4,
+      "range": "R5〜R8（4年度）"
     },
     {
       "name": "那覇市",
