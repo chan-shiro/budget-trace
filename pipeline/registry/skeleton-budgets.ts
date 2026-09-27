@@ -182,4 +182,5 @@ export const SKELETON_BUDGETS: SkeletonBudget[] = [
   { code: "082171", name: "取手市", fy: "R5", evidence: "「令和5年度当初予算記者発表資料」（/zaisei/shise/yosan/yosan/documents/r5-zenkyo-siryo.pdf）「令和５年度は統一地方選の年にあたることから、行政運営の継続性にも配慮しつつ、骨格予算として編成する」（2026-09-28 に自分で取得して逐語照合）", ref: "docs/data-sources.md §13-49" },
   { code: "082171", name: "取手市", fy: "R1", evidence: "「令和2年度当初予算記者発表資料」（/zaisei/shise/yosan/yosan/documents/r2_toshoyosan.pdf）の予算総括表の列「令和元年度 当初（骨格）」と注記「※令和元年度一般会計当初予算は、骨格予算で編成したが、」（2026-09-28 に自分で取得して逐語照合。R1 は未収録）", ref: "docs/data-sources.md §13-49" },
   { code: "082171", name: "取手市", fy: "H27", evidence: "「令和6年度当初予算記者発表資料」（/zaisei/shise/yosan/yosan/documents/r6_tousyoyosan-gaiyou.pdf）の推移表の注記「※一般会計の平成27年度、令和元年度、5年度は当初骨格予算のため、6月補正予算における肉付予算を加算した後の予算額を表記。」（2026-09-28 に自分で取得して逐語照合。H27 は未収録）", ref: "docs/data-sources.md §13-49" },
+  { code: "082171", name: "取手市", fy: "H23", evidence: "「令和2年度当初予算記者発表資料」（/zaisei/shise/yosan/yosan/documents/r2_toshoyosan.pdf）の推移表の注記「※平成23年度、27年度、令和元年度は当初骨格予算のため、6月補正後の予算額で比較」（R3 の記者発表資料も同文。R6 以降の注記は H23 に触れない。2026-09-28 に自分で取得して逐語照合。H23 は未収録）", ref: "docs/data-sources.md §13-49" },
 ];
