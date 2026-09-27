@@ -615,7 +615,7 @@ export const WAYBACK_BY_URL: Record<string, string> = {
   "https://www.city.higashiosaka.lg.jp/cmsfiles/contents/0000000/529/R7yosan_T_I.pdf": "https://web.archive.org/web/20260822150819/https://www.city.higashiosaka.lg.jp/cmsfiles/contents/0000000/529/R7yosan_T_I.pdf",
   "https://www.city.higashiosaka.lg.jp/cmsfiles/contents/0000000/529/R8yosan_T_I.pdf": "https://web.archive.org/web/20260822150624/https://www.city.higashiosaka.lg.jp/cmsfiles/contents/0000000/529/R8yosan_T_I.pdf",
   "https://www.city.hikone.lg.jp/material/files/group/108/08-04_kakukaikeiyosan.pdf": "https://web.archive.org/web/20260927123213/https://www.city.hikone.lg.jp/material/files/group/108/08-04_kakukaikeiyosan.pdf",
-  "https://www.city.hikone.lg.jp/shisei/zaisei/5/6099.html": "https://web.archive.org/web/20241212190848/https://www.city.hikone.lg.jp/shisei/zaisei/5/6099.html",
+  "https://www.city.hikone.lg.jp/shisei/zaisei/5/6099.html": "https://web.archive.org/web/20260927133651/https://www.city.hikone.lg.jp/shisei/zaisei/5/6099.html",
   "https://www.city.himeji.lg.jp/shisei/0000020103.html": "https://web.archive.org/web/20240425045226/https://www.city.himeji.lg.jp/shisei/0000020103.html",
   "https://www.city.himeji.lg.jp/shisei/cmsfiles/contents/0000020/20103/R4ippannkaikeiyosannsoukatuhyousainyuu.pdf": "https://web.archive.org/web/20260822115055/https://www.city.himeji.lg.jp/shisei/cmsfiles/contents/0000020/20103/R4ippannkaikeiyosannsoukatuhyousainyuu.pdf",
   "https://www.city.himeji.lg.jp/shisei/cmsfiles/contents/0000020/20103/R4ippannkaikeiyosannsoukatuhyousaishutumokuteki.pdf": "https://web.archive.org/web/20260822115123/https://www.city.himeji.lg.jp/shisei/cmsfiles/contents/0000020/20103/R4ippannkaikeiyosannsoukatuhyousaishutumokuteki.pdf",
