@@ -3217,7 +3217,7 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       srcId: `oshu-yosan-gaiyou-${fy}`, muniCode: "032158", muniName: "奥州市", prefName: "岩手県", isPref: false,
     })),
     // ---- 第46巡（2026-09-27・§13-48）: #300 のパーサ修正で鎌ケ谷 ----
-    // ⚠⚠ 鎌ケ谷は脚注マーカー（注N）と R5・R4 の歳入合計行の整数 100（totalAmountIntIndex を側ごとに）。noDeepLink。R3・R2 は Wayback
+    // ⚠⚠ 鎌ケ谷は脚注マーカー（注N）と R5・R4 の歳入合計行の整数 100（totalAmountIntIndex を側ごとに）。R3・R2 は Wayback
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `kamagaya-yosan-gaiyou-${fy}`, muniCode: "122246", muniName: "鎌ケ谷市", prefName: "千葉県", isPref: false,
     })),
