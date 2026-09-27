@@ -1674,4 +1674,56 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     url: "https://www.city.nobeoka.miyazaki.jp/life/3/22/96/",
     checkedOn: "2026-09-27", ref: "docs/data-sources.md §13-43",
   },
+  {
+    // 新居浜市（382051）。R8〜R2 の全年度（§13-44）。
+    code: "382051", name: "新居浜市", dataset: "budget",
+    fiscalYears: ["R8", "R7", "R6", "R5", "R4", "R3", "R2"],
+    categories: ["format-mismatch", "scanned-image"],
+    reason:
+      "当初予算の概要の比較表は市税目別・地方交付税・市債・財政調整基金・性質別・経費別の6つだけで、款別に前年度と並べた表が無い（款別構成比は円グラフと上位3款の金額だけ）。" +
+      "予算書はウェブに掲載されておらず、市議会の当初予算議案はスキャン画像で、第1表も当年度の額だけ。",
+    url: "https://www.city.niihama.lg.jp/soshiki/zaisei/yosan.html",
+    checkedOn: "2026-09-27", ref: "docs/data-sources.md §13-44",
+  },
+  {
+    // 富士見市（112356）R2。R8〜R3 は収録済み（§13-44）。
+    // ⚠ 原典は健全で、こちらの抽出が「款番号も印も無い廃止款の行」に対応していないだけ。前年度 Σ の不一致は warning 止まりなので静かに流れる。
+    code: "112356", name: "富士見市", dataset: "budget", fiscalYears: ["R2"],
+    categories: ["parser-unsupported"],
+    reason:
+      "歳入の廃止款「自動車取得税交付金 0 36,000 △36,000」に款番号も廃止の印も「皆減」も無く、既存パーサがこの行を読み落とす。" +
+      "前年度の合計が 36,000千円合わなくなる。",
+    url: "https://www.city.fujimi.saitama.jp/shisei/04zaisei/01yosan/yosansho/2013-0712-1615-133/index.html",
+    checkedOn: "2026-09-27", ref: "docs/data-sources.md §13-44",
+  },
+  {
+    // 東海市（232220）R2。R8〜R3 は収録済み（§13-44）。
+    // ⚠ 原典は健全で、こちらの抽出が行頭の「0」を款番号として扱えないだけ。前年度 Σ の不一致は warning 止まりなので静かに流れる。
+    code: "232220", name: "東海市", dataset: "budget", fiscalYears: ["R2"],
+    categories: ["parser-unsupported"],
+    reason:
+      "歳入の廃止款が「0 自動車取得税交付金 … 54,000 … 皆減」と款番号の位置に 0 を置いて書かれていて、既存パーサがこの行を款名ごと読み落とす。" +
+      "前年度の合計が 54,000千円合わなくなる。",
+    url: "https://www.city.tokai.aichi.jp/shisei/1003714/1003715/1003716/1003719.html",
+    checkedOn: "2026-09-27", ref: "docs/data-sources.md §13-44",
+  },
+  {
+    // 防府市（352063）R3。R8〜R4・R2 は収録済み（§13-44）。
+    code: "352063", name: "防府市", dataset: "budget", fiscalYears: ["R3"],
+    categories: ["scanned-image"],
+    reason:
+      "当初予算参考資料は案・確定版とも総括表を含む前半28ページに文字の情報が入っていない。" +
+      "同じ年度の当初予算の概要は歳入を区分にまとめていて款別になっていない。",
+    url: "https://www.city.hofu.yamaguchi.jp/soshiki/9/yosan.html",
+    checkedOn: "2026-09-27", ref: "docs/data-sources.md §13-44",
+  },
+  {
+    // 白山市（172103）R2。R8〜R3 は収録済み（§13-44）。
+    code: "172103", name: "白山市", dataset: "budget", fiscalYears: ["R2"],
+    categories: ["scanned-image"],
+    reason:
+      "当初予算の一般会計附表（歳入・歳出の款別予算額調）が紙をスキャンした画像で、文字の情報が入っていない。予算書も同じく画像だけ。",
+    url: "https://www.city.hakusan.lg.jp/shisei/zaisei/1003544/1003560.html",
+    checkedOn: "2026-09-27", ref: "docs/data-sources.md §13-44",
+  },
 ];

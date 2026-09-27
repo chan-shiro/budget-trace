@@ -1,0 +1,19 @@
+{
+  "sourceId": "tokaishi-kanbetsu-hikaku-r6",
+  "files": [
+    {
+      "filename": "3ippann-sainyuu.pdf",
+      "sha256": "9f02e1dbca5e5ae0677fb67f1193fa2693ad42e14e4c64f898b8ef55e74768dd",
+      "bytes": 32252,
+      "fetchedAt": "2026-09-27T09:11:46.539Z",
+      "fetchedFrom": "https://www.city.tokai.aichi.jp/_res/projects/default_project/_page_/001/007/646/3ippann-sainyuu.pdf"
+    },
+    {
+      "filename": "4ippann-saisyutsu.pdf",
+      "sha256": "e3929cbfe68c385ed712ffc9e8cb0bee99150337ea40b4ecef2d7a3bb5d31ff2",
+      "bytes": 25738,
+      "fetchedAt": "2026-09-27T09:11:46.915Z",
+      "fetchedFrom": "https://www.city.tokai.aichi.jp/_res/projects/default_project/_page_/001/007/646/4ippann-saisyutsu.pdf"
+    }
+  ]
+}
