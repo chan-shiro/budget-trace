@@ -17790,5 +17790,227 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://warp.ndl.go.jp/20250606/20250605083243/https://www.city.nobeoka.miyazaki.jp/uploaded/attachment/13405.pdf",
     "license": "延岡市公式ホームページに掲載している文書や画像などの各ファイル及びその内容に関する著作権は、延岡市またはそのコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められている行為として適切な方法で利用する場合を除き、無断で複製・転用することはできません。掲載内容について複製・転用を希望する場合は、各ページ下段にある担当課室あてにお問い合わせください。",
     "target": "file"
+  },
+  "/sources/fujimi-yosansho-r8/R8_ippan_yosansyokumikae.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fujimi.saitama.jp/shisei/04zaisei/01yosan/yosansho/0120260212092638691.files/R8_ippan_yosansyokumikae.pdf",
+    "license": "著作権法上認められる場合を除き、富士見市の許可なく富士見市ホームページ上に掲載されている文書や画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/fujimi-yosansho-r7/R7_ippan_yosansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fujimi.saitama.jp/shisei/04zaisei/01yosan/yosansho/zaimu012025020512574.files/R7_ippan_yosansyo.pdf",
+    "license": "著作権法上認められる場合を除き、富士見市の許可なく富士見市ホームページ上に掲載されている文書や画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/fujimi-yosansho-r6/R6_ippan_yosansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fujimi.saitama.jp/shisei/04zaisei/01yosan/yosansho/R6yosan.files/R6_ippan_yosansyo.pdf",
+    "license": "著作権法上認められる場合を除き、富士見市の許可なく富士見市ホームページ上に掲載されている文書や画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/fujimi-yosansho-r5/R5ippannkaikei-yosannsho-giketsugo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fujimi.saitama.jp/shisei/04zaisei/01yosan/yosansho/2013-0712-1615-133/zaimu012023021010073.files/R5ippannkaikei-yosannsho-giketsugo.pdf",
+    "license": "著作権法上認められる場合を除き、富士見市の許可なく富士見市ホームページ上に掲載されている文書や画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/fujimi-yosansho-r4/R4-ippanyosannsyogiketugo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fujimi.saitama.jp/shisei/04zaisei/01yosan/yosansho/2013-0712-1615-133/reiwa4nenndotousyoyo.files/R4-ippanyosannsyogiketugo.pdf",
+    "license": "著作権法上認められる場合を除き、富士見市の許可なく富士見市ホームページ上に掲載されている文書や画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/fujimi-yosansho-r3/R3-05giketugoippanyosannsyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fujimi.saitama.jp/shisei/04zaisei/01yosan/yosansho/2013-0712-1615-133/R3toushoyosan.files/R3-05giketugoippanyosannsyo.pdf",
+    "license": "著作権法上認められる場合を除き、富士見市の許可なく富士見市ホームページ上に掲載されている文書や画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/tokaishi-kanbetsu-hikaku-r8/1ippannsainyuu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tokai.aichi.jp/shisei/1003714/1003715/1003716/1009331.html",
+    "license": "当サイトに掲載されている文字、写真、イラスト、画像などの個々の情報に関する著作権は東海市に帰属します。「私的利用」または「引用」など著作権法上認められた行為として適切な方法で利用する場合を除き、無断で転載、複製、改変などをすることはできません。",
+    "target": "page"
+  },
+  "/sources/tokaishi-kanbetsu-hikaku-r8/2ippannsaisyutu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tokai.aichi.jp/shisei/1003714/1003715/1003716/1009331.html",
+    "license": "当サイトに掲載されている文字、写真、イラスト、画像などの個々の情報に関する著作権は東海市に帰属します。「私的利用」または「引用」など著作権法上認められた行為として適切な方法で利用する場合を除き、無断で転載、複製、改変などをすることはできません。",
+    "target": "page"
+  },
+  "/sources/tokaishi-kanbetsu-hikaku-r7/3ippann-sainyuu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tokai.aichi.jp/shisei/1003714/1003715/1003716/1009669.html",
+    "license": "当サイトに掲載されている文字、写真、イラスト、画像などの個々の情報に関する著作権は東海市に帰属します。「私的利用」または「引用」など著作権法上認められた行為として適切な方法で利用する場合を除き、無断で転載、複製、改変などをすることはできません。",
+    "target": "page"
+  },
+  "/sources/tokaishi-kanbetsu-hikaku-r7/4ippann-saisyutsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tokai.aichi.jp/shisei/1003714/1003715/1003716/1009669.html",
+    "license": "当サイトに掲載されている文字、写真、イラスト、画像などの個々の情報に関する著作権は東海市に帰属します。「私的利用」または「引用」など著作権法上認められた行為として適切な方法で利用する場合を除き、無断で転載、複製、改変などをすることはできません。",
+    "target": "page"
+  },
+  "/sources/tokaishi-kanbetsu-hikaku-r6/3ippann-sainyuu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tokai.aichi.jp/shisei/1003714/1003715/1003716/1007646.html",
+    "license": "当サイトに掲載されている文字、写真、イラスト、画像などの個々の情報に関する著作権は東海市に帰属します。「私的利用」または「引用」など著作権法上認められた行為として適切な方法で利用する場合を除き、無断で転載、複製、改変などをすることはできません。",
+    "target": "page"
+  },
+  "/sources/tokaishi-kanbetsu-hikaku-r6/4ippann-saisyutsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tokai.aichi.jp/shisei/1003714/1003715/1003716/1007646.html",
+    "license": "当サイトに掲載されている文字、写真、イラスト、画像などの個々の情報に関する著作権は東海市に帰属します。「私的利用」または「引用」など著作権法上認められた行為として適切な方法で利用する場合を除き、無断で転載、複製、改変などをすることはできません。",
+    "target": "page"
+  },
+  "/sources/tokaishi-kanbetsu-hikaku-r5/3ippann-sainyuu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tokai.aichi.jp/shisei/1003714/1003715/1003716/1005469.html",
+    "license": "当サイトに掲載されている文字、写真、イラスト、画像などの個々の情報に関する著作権は東海市に帰属します。「私的利用」または「引用」など著作権法上認められた行為として適切な方法で利用する場合を除き、無断で転載、複製、改変などをすることはできません。",
+    "target": "page"
+  },
+  "/sources/tokaishi-kanbetsu-hikaku-r5/4ippann-saisyutsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tokai.aichi.jp/shisei/1003714/1003715/1003716/1005469.html",
+    "license": "当サイトに掲載されている文字、写真、イラスト、画像などの個々の情報に関する著作権は東海市に帰属します。「私的利用」または「引用」など著作権法上認められた行為として適切な方法で利用する場合を除き、無断で転載、複製、改変などをすることはできません。",
+    "target": "page"
+  },
+  "/sources/tokaishi-kanbetsu-hikaku-r4/3ippann-sainyuu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tokai.aichi.jp/shisei/1003714/1003715/1003716/1003717.html",
+    "license": "当サイトに掲載されている文字、写真、イラスト、画像などの個々の情報に関する著作権は東海市に帰属します。「私的利用」または「引用」など著作権法上認められた行為として適切な方法で利用する場合を除き、無断で転載、複製、改変などをすることはできません。",
+    "target": "page"
+  },
+  "/sources/tokaishi-kanbetsu-hikaku-r4/4ippann-saisyutsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tokai.aichi.jp/shisei/1003714/1003715/1003716/1003717.html",
+    "license": "当サイトに掲載されている文字、写真、イラスト、画像などの個々の情報に関する著作権は東海市に帰属します。「私的利用」または「引用」など著作権法上認められた行為として適切な方法で利用する場合を除き、無断で転載、複製、改変などをすることはできません。",
+    "target": "page"
+  },
+  "/sources/tokaishi-kanbetsu-hikaku-r3/ippann-sainyuu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tokai.aichi.jp/shisei/1003714/1003715/1003716/1003718.html",
+    "license": "当サイトに掲載されている文字、写真、イラスト、画像などの個々の情報に関する著作権は東海市に帰属します。「私的利用」または「引用」など著作権法上認められた行為として適切な方法で利用する場合を除き、無断で転載、複製、改変などをすることはできません。",
+    "target": "page"
+  },
+  "/sources/tokaishi-kanbetsu-hikaku-r3/ippann-saisyutsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tokai.aichi.jp/shisei/1003714/1003715/1003716/1003718.html",
+    "license": "当サイトに掲載されている文字、写真、イラスト、画像などの個々の情報に関する著作権は東海市に帰属します。「私的利用」または「引用」など著作権法上認められた行為として適切な方法で利用する場合を除き、無断で転載、複製、改変などをすることはできません。",
+    "target": "page"
+  },
+  "/sources/sano-yosan-kanbetsu-r8/R8ippannkaikei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sano.lg.jp/material/files/group/6/R8ippannkaikei.pdf",
+    "license": "佐野市ホームページに掲載されている文書・画像の無断使用・転載を禁止します。引用・転載する場合は、必ず佐野市広報ブランド推進課広報・地域連携係へ連絡し許可を得たうえで、出典を明示してください。画像については佐野市に著作権がないものがありますので佐野市広報ブランド推進課広報・地域連携係までご確認ください。佐野市ホームページの著作権は本市ウェブ作成担当部署、画像などの提供者、撮影者などに帰属します。",
+    "target": "file"
+  },
+  "/sources/sano-yosan-kanbetsu-r7/R7ippankaikei2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sano.lg.jp/material/files/group/6/R7ippankaikei2.pdf",
+    "license": "佐野市ホームページに掲載されている文書・画像の無断使用・転載を禁止します。引用・転載する場合は、必ず佐野市広報ブランド推進課広報・地域連携係へ連絡し許可を得たうえで、出典を明示してください。画像については佐野市に著作権がないものがありますので佐野市広報ブランド推進課広報・地域連携係までご確認ください。佐野市ホームページの著作権は本市ウェブ作成担当部署、画像などの提供者、撮影者などに帰属します。",
+    "target": "file"
+  },
+  "/sources/sano-yosan-kanbetsu-r6/R6ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sano.lg.jp/material/files/group/6/R6ippan.pdf",
+    "license": "佐野市ホームページに掲載されている文書・画像の無断使用・転載を禁止します。引用・転載する場合は、必ず佐野市広報ブランド推進課広報・地域連携係へ連絡し許可を得たうえで、出典を明示してください。画像については佐野市に著作権がないものがありますので佐野市広報ブランド推進課広報・地域連携係までご確認ください。佐野市ホームページの著作権は本市ウェブ作成担当部署、画像などの提供者、撮影者などに帰属します。",
+    "target": "file"
+  },
+  "/sources/sano-yosan-kanbetsu-r5/02ippannkaikei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sano.lg.jp/material/files/group/6/02ippannkaikei.pdf",
+    "license": "佐野市ホームページに掲載されている文書・画像の無断使用・転載を禁止します。引用・転載する場合は、必ず佐野市広報ブランド推進課広報・地域連携係へ連絡し許可を得たうえで、出典を明示してください。画像については佐野市に著作権がないものがありますので佐野市広報ブランド推進課広報・地域連携係までご確認ください。佐野市ホームページの著作権は本市ウェブ作成担当部署、画像などの提供者、撮影者などに帰属します。",
+    "target": "file"
+  },
+  "/sources/sano-yosan-kanbetsu-r4/02_R4ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sano.lg.jp/material/files/group/6/02_R4ippan.pdf",
+    "license": "佐野市ホームページに掲載されている文書・画像の無断使用・転載を禁止します。引用・転載する場合は、必ず佐野市広報ブランド推進課広報・地域連携係へ連絡し許可を得たうえで、出典を明示してください。画像については佐野市に著作権がないものがありますので佐野市広報ブランド推進課広報・地域連携係までご確認ください。佐野市ホームページの著作権は本市ウェブ作成担当部署、画像などの提供者、撮影者などに帰属します。",
+    "target": "file"
+  },
+  "/sources/sano-yosan-kanbetsu-r3/R3yosanippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sano.lg.jp/material/files/group/6/R3yosanippan.pdf",
+    "license": "佐野市ホームページに掲載されている文書・画像の無断使用・転載を禁止します。引用・転載する場合は、必ず佐野市広報ブランド推進課広報・地域連携係へ連絡し許可を得たうえで、出典を明示してください。画像については佐野市に著作権がないものがありますので佐野市広報ブランド推進課広報・地域連携係までご確認ください。佐野市ホームページの著作権は本市ウェブ作成担当部署、画像などの提供者、撮影者などに帰属します。",
+    "target": "file"
+  },
+  "/sources/sano-yosan-kanbetsu-r2/R2yosanippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sano.lg.jp/material/files/group/6/R2yosanippan.pdf",
+    "license": "佐野市ホームページに掲載されている文書・画像の無断使用・転載を禁止します。引用・転載する場合は、必ず佐野市広報ブランド推進課広報・地域連携係へ連絡し許可を得たうえで、出典を明示してください。画像については佐野市に著作権がないものがありますので佐野市広報ブランド推進課広報・地域連携係までご確認ください。佐野市ホームページの著作権は本市ウェブ作成担当部署、画像などの提供者、撮影者などに帰属します。",
+    "target": "file"
+  },
+  "/sources/hofu-yosan-sanko-r8/145362.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hofu.yamaguchi.jp/uploaded/attachment/145362.pdf",
+    "license": "防府市ホームページに掲載されている文章、画像（写真・イラスト・ロゴ）等の著作権は、原則として防府市に帰属します。これらの情報は、「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、無断使用、複製、転載等は禁止します。利用許諾につきましては、各ホームページに記載されている担当部署にお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/hofu-yosan-sanko-r7/138279.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20250607/20250606172130/https://www.city.hofu.yamaguchi.jp/uploaded/attachment/138279.pdf",
+    "license": "防府市ホームページに掲載されている文章、画像（写真・イラスト・ロゴ）等の著作権は、原則として防府市に帰属します。これらの情報は、「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、無断使用、複製、転載等は禁止します。利用許諾につきましては、各ホームページに記載されている担当部署にお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/hofu-yosan-sanko-r6/131332.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20240607/20240606113231/https://www.city.hofu.yamaguchi.jp/uploaded/attachment/131332.pdf",
+    "license": "防府市ホームページに掲載されている文章、画像（写真・イラスト・ロゴ）等の著作権は、原則として防府市に帰属します。これらの情報は、「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、無断使用、複製、転載等は禁止します。利用許諾につきましては、各ホームページに記載されている担当部署にお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/hofu-yosan-sanko-r5/125143.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20230607/20230606094205/https://www.city.hofu.yamaguchi.jp/uploaded/attachment/125143.pdf",
+    "license": "防府市ホームページに掲載されている文章、画像（写真・イラスト・ロゴ）等の著作権は、原則として防府市に帰属します。これらの情報は、「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、無断使用、複製、転載等は禁止します。利用許諾につきましては、各ホームページに記載されている担当部署にお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/hofu-yosan-sanko-r4/119122.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20220608/20220606171706/https://www.city.hofu.yamaguchi.jp/uploaded/attachment/119122.pdf",
+    "license": "防府市ホームページに掲載されている文章、画像（写真・イラスト・ロゴ）等の著作権は、原則として防府市に帰属します。これらの情報は、「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、無断使用、複製、転載等は禁止します。利用許諾につきましては、各ホームページに記載されている担当部署にお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/hofu-yosan-sanko-r2/101654.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20200609/20200608014319/https://www.city.hofu.yamaguchi.jp/uploaded/attachment/101654.pdf",
+    "license": "防府市ホームページに掲載されている文章、画像（写真・イラスト・ロゴ）等の著作権は、原則として防府市に帰属します。これらの情報は、「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、無断使用、複製、転載等は禁止します。利用許諾につきましては、各ホームページに記載されている担当部署にお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/hakusan-ippan-huhyou-r8/r8huhyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hakusan.lg.jp/shisei/zaisei/1003544/1018237.html",
+    "license": "このホームページは、白山市の情報ホームページです。電子媒体の技術的な制約のため、紙媒体による公表物とは字体等が異なる場合があります。これらの資料について本市に無断で複製、加工、再配布する事を禁じます。",
+    "target": "page"
+  },
+  "/sources/hakusan-ippan-huhyou-r7/r7ippannkaikeihuhyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hakusan.lg.jp/shisei/zaisei/1003544/1015849.html",
+    "license": "このホームページは、白山市の情報ホームページです。電子媒体の技術的な制約のため、紙媒体による公表物とは字体等が異なる場合があります。これらの資料について本市に無断で複製、加工、再配布する事を禁じます。",
+    "target": "page"
+  },
+  "/sources/hakusan-ippan-huhyou-r6/r6ippannkaikeihuhyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hakusan.lg.jp/shisei/zaisei/1003544/1011998.html",
+    "license": "このホームページは、白山市の情報ホームページです。電子媒体の技術的な制約のため、紙媒体による公表物とは字体等が異なる場合があります。これらの資料について本市に無断で複製、加工、再配布する事を禁じます。",
+    "target": "page"
+  },
+  "/sources/hakusan-ippan-huhyou-r5/r5ippannkaikeihuhyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hakusan.lg.jp/shisei/zaisei/1003544/1009862.html",
+    "license": "このホームページは、白山市の情報ホームページです。電子媒体の技術的な制約のため、紙媒体による公表物とは字体等が異なる場合があります。これらの資料について本市に無断で複製、加工、再配布する事を禁じます。",
+    "target": "page"
+  },
+  "/sources/hakusan-ippan-huhyou-r4/r4ippannhuhyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hakusan.lg.jp/shisei/zaisei/1003544/1007379.html",
+    "license": "このホームページは、白山市の情報ホームページです。電子媒体の技術的な制約のため、紙媒体による公表物とは字体等が異なる場合があります。これらの資料について本市に無断で複製、加工、再配布する事を禁じます。",
+    "target": "page"
+  },
+  "/sources/hakusan-ippan-huhyou-r3/3kanbetuyosannhoka.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hakusan.lg.jp/shisei/zaisei/1003544/1003545.html",
+    "license": "このホームページは、白山市の情報ホームページです。電子媒体の技術的な制約のため、紙媒体による公表物とは字体等が異なる場合があります。これらの資料について本市に無断で複製、加工、再配布する事を禁じます。",
+    "target": "page"
   }
 };

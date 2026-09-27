@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 284,
+  "budgetCount": 289,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 2143,
-  "fileCount": 3365,
-  "archivedCount": 1967,
+  "sourceCount": 2174,
+  "fileCount": 3402,
+  "archivedCount": 2001,
   "licenseOpen": 102,
-  "licensePermission": 1825,
+  "licensePermission": 1856,
   "licenseUnverified": 216,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -759,6 +759,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "佐野市",
+      "code": "092045",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "川越市",
       "code": "112011",
       "years": 7,
@@ -999,6 +1005,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H30〜R8（6年度）"
     },
     {
+      "name": "富士見市",
+      "code": "112356",
+      "years": 6,
+      "range": "R3〜R8（6年度）"
+    },
+    {
       "name": "ふじみ野市",
       "code": "112453",
       "years": 6,
@@ -1065,8 +1077,20 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（6年度）"
     },
     {
+      "name": "白山市",
+      "code": "172103",
+      "years": 6,
+      "range": "R3〜R8（6年度）"
+    },
+    {
       "name": "春日井市",
       "code": "232068",
+      "years": 6,
+      "range": "R3〜R8（6年度）"
+    },
+    {
+      "name": "東海市",
+      "code": "232220",
       "years": 6,
       "range": "R3〜R8（6年度）"
     },
@@ -1079,6 +1103,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "呉市",
       "code": "342025",
+      "years": 6,
+      "range": "R2〜R8（6年度）"
+    },
+    {
+      "name": "防府市",
+      "code": "352063",
       "years": 6,
       "range": "R2〜R8（6年度）"
     },
