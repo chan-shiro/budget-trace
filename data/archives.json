@@ -302,7 +302,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260617134948/https://www.city.aizuwakamatsu.fukushima.jp/docs/2025031000025/",
       "waybackTimestamp": "20260617134948",
-      "checkedAt": "2026-09-27T13:14:04.420Z"
+      "checkedAt": "2026-09-27T14:00:44.049Z"
     },
     {
       "sourceId": "aizuwakamatsu-yosangaiyo-r7",
@@ -310,7 +310,7 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20250930215545/https://www.city.aizuwakamatsu.fukushima.jp/docs/2025031000025/file_contents/R7_tousyo_gaiyo.pdf",
       "waybackTimestamp": "20250930215545",
-      "checkedAt": "2026-09-27T13:13:11.388Z",
+      "checkedAt": "2026-09-27T14:00:05.091Z",
       "sha256Verified": false,
       "sha256FailReason": "コピーの取得が 404（3回試行）"
     },
@@ -3838,6 +3838,25 @@
       "sha256Match": true,
       "waybackBytes": 1109870,
       "rawSha256": "fe5c31f78067c6c7a626ba3d9956806886962ecdc61a6aa22e5eaa07887673d8"
+    },
+    {
+      "sourceId": "fujimi-yosansho-r2",
+      "url": "https://www.city.fujimi.saitama.jp/shisei/04zaisei/01yosan/yosansho/2013-0712-1615-133/0120200207110443503.files/R2-giketsuzmi-ippankaikei.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260927140521/https://www.city.fujimi.saitama.jp/shisei/04zaisei/01yosan/yosansho/2013-0712-1615-133/0120200207110443503.files/R2-giketsuzmi-ippankaikei.pdf",
+      "waybackTimestamp": "20260927140521",
+      "checkedAt": "2026-09-27T14:08:03.958Z",
+      "sha256Match": true,
+      "waybackBytes": 2770950,
+      "rawSha256": "f209597f27df3a9cc69e510b86c2c13a33fb59bad4bdd60d29b6582f97593de8"
+    },
+    {
+      "sourceId": "fujimi-yosansho-r2",
+      "url": "https://www.city.fujimi.saitama.jp/shisei/04zaisei/01yosan/yosansho/2013-0712-1615-133/0120200207110443503.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260927140856/https://www.city.fujimi.saitama.jp/shisei/04zaisei/01yosan/yosansho/2013-0712-1615-133/0120200207110443503.html",
+      "waybackTimestamp": "20260927140856",
+      "checkedAt": "2026-09-27T14:11:04.612Z"
     },
     {
       "sourceId": "fujimi-yosansho-r3",
@@ -13413,7 +13432,18 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260927131658/https://www.city.kitami.lg.jp/administration/town/detail.php?content=13413",
       "waybackTimestamp": "20260927131658",
-      "checkedAt": "2026-09-27T13:18:02.844Z"
+      "checkedAt": "2026-09-27T14:02:05.110Z"
+    },
+    {
+      "sourceId": "kitami-yosansho-setsumei-r7",
+      "url": "https://www.city.kitami.lg.jp/common/img/content/content_20260325_113138.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260927131504/https://www.city.kitami.lg.jp/common/img/content/content_20260325_113138.pdf",
+      "waybackTimestamp": "20260927131504",
+      "checkedAt": "2026-09-27T14:01:12.017Z",
+      "sha256Match": true,
+      "waybackBytes": 3927631,
+      "rawSha256": "e1ce35da506d8f2436bbfc66db6e1916fafe956356b2ad9dadde7ce98343ebfc"
     },
     {
       "sourceId": "kitami-yosansho-setsumei-r8",
@@ -25798,11 +25828,22 @@
     },
     {
       "sourceId": "oshu-yosan-gaiyou-r3",
+      "url": "https://www.city.oshu.iwate.jp/material/files/group/8/28130.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260927131917/https://www.city.oshu.iwate.jp/material/files/group/8/28130.pdf",
+      "waybackTimestamp": "20260927131917",
+      "checkedAt": "2026-09-27T14:02:23.027Z",
+      "sha256Match": true,
+      "waybackBytes": 669773,
+      "rawSha256": "bd3eb3c09fb535ec81028269493746bffe56456d99ee4aacc0cd5ab803a8097d"
+    },
+    {
+      "sourceId": "oshu-yosan-gaiyou-r3",
       "url": "https://www.city.oshu.iwate.jp/soshiki/3/1007/1/1/2237.html",
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20251014094850/https://www.city.oshu.iwate.jp/soshiki/3/1007/1/1/2237.html",
       "waybackTimestamp": "20251014094850",
-      "checkedAt": "2026-09-27T13:19:15.171Z"
+      "checkedAt": "2026-09-27T14:02:37.038Z"
     },
     {
       "sourceId": "oshu-yosan-gaiyou-r4",
@@ -39968,6 +40009,36 @@
       "rawSha256": "6fe2205c03fa85289f6d49fc120c7eec7beb2a3e35af6616e85afcf4cfd22922"
     },
     {
+      "sourceId": "tokaishi-kanbetsu-hikaku-r2",
+      "url": "https://www.city.tokai.aichi.jp/_res/projects/default_project/_page_/001/003/719/02ippann-sainyuu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260422012528/https://www.city.tokai.aichi.jp/_res/projects/default_project/_page_/001/003/719/02ippann-sainyuu.pdf",
+      "waybackTimestamp": "20260422012528",
+      "checkedAt": "2026-09-27T13:58:44.267Z",
+      "sha256Match": true,
+      "waybackBytes": 71361,
+      "rawSha256": "67ab4f88a6067ebd0d15406a00eff0f28cc191767af864e0c6e53614844cfa09"
+    },
+    {
+      "sourceId": "tokaishi-kanbetsu-hikaku-r2",
+      "url": "https://www.city.tokai.aichi.jp/_res/projects/default_project/_page_/001/003/719/02ippann-saisyutsu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260422015104/https://www.city.tokai.aichi.jp/_res/projects/default_project/_page_/001/003/719/02ippann-saisyutsu.pdf",
+      "waybackTimestamp": "20260422015104",
+      "checkedAt": "2026-09-27T13:59:02.540Z",
+      "sha256Match": true,
+      "waybackBytes": 52934,
+      "rawSha256": "bda804a8c311964c085f33887e8c2249ccabaee7880ca0d723571ed05a2d3f1e"
+    },
+    {
+      "sourceId": "tokaishi-kanbetsu-hikaku-r2",
+      "url": "https://www.city.tokai.aichi.jp/shisei/1003714/1003715/1003716/1003719.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260316020322/https://www.city.tokai.aichi.jp/shisei/1003714/1003715/1003716/1003719.html",
+      "waybackTimestamp": "20260316020322",
+      "checkedAt": "2026-09-27T13:59:40.924Z"
+    },
+    {
       "sourceId": "tokaishi-kanbetsu-hikaku-r3",
       "url": "https://www.city.tokai.aichi.jp/_res/projects/default_project/_page_/001/003/718/ippann-sainyuu.pdf",
       "kind": "file",
@@ -40063,10 +40134,21 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260927093129/https://www.city.tokai.aichi.jp/_res/projects/default_project/_page_/001/007/646/3ippann-sainyuu.pdf",
       "waybackTimestamp": "20260927093129",
-      "checkedAt": "2026-09-27T11:24:28.240Z",
+      "checkedAt": "2026-09-27T14:03:04.623Z",
       "sha256Match": true,
       "waybackBytes": 32252,
       "rawSha256": "9f02e1dbca5e5ae0677fb67f1193fa2693ad42e14e4c64f898b8ef55e74768dd"
+    },
+    {
+      "sourceId": "tokaishi-kanbetsu-hikaku-r6",
+      "url": "https://www.city.tokai.aichi.jp/_res/projects/default_project/_page_/001/007/646/4ippann-saisyutsu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260927093217/https://www.city.tokai.aichi.jp/_res/projects/default_project/_page_/001/007/646/4ippann-saisyutsu.pdf",
+      "waybackTimestamp": "20260927093217",
+      "checkedAt": "2026-09-27T14:03:16.326Z",
+      "sha256Match": true,
+      "waybackBytes": 25738,
+      "rawSha256": "e3929cbfe68c385ed712ffc9e8cb0bee99150337ea40b4ecef2d7a3bb5d31ff2"
     },
     {
       "sourceId": "tokaishi-kanbetsu-hikaku-r6",

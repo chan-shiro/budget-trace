@@ -1686,28 +1686,6 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     checkedOn: "2026-09-27", ref: "docs/data-sources.md §13-44",
   },
   {
-    // 富士見市（112356）R2。R8〜R3 は収録済み（§13-44）。
-    // ⚠ 原典は健全で、こちらの抽出が「款番号も印も無い廃止款の行」に対応していないだけ。前年度 Σ の不一致は warning 止まりなので静かに流れる。
-    code: "112356", name: "富士見市", dataset: "budget", fiscalYears: ["R2"],
-    categories: ["parser-unsupported"],
-    reason:
-      "歳入の廃止款「自動車取得税交付金 0 36,000 △36,000」に款番号も廃止の印も「皆減」も無く、既存パーサがこの行を読み落とす。" +
-      "前年度の合計が 36,000千円合わなくなる。",
-    url: "https://www.city.fujimi.saitama.jp/shisei/04zaisei/01yosan/yosansho/2013-0712-1615-133/index.html",
-    checkedOn: "2026-09-27", ref: "docs/data-sources.md §13-44",
-  },
-  {
-    // 東海市（232220）R2。R8〜R3 は収録済み（§13-44）。
-    // ⚠ 原典は健全で、こちらの抽出が行頭の「0」を款番号として扱えないだけ。前年度 Σ の不一致は warning 止まりなので静かに流れる。
-    code: "232220", name: "東海市", dataset: "budget", fiscalYears: ["R2"],
-    categories: ["parser-unsupported"],
-    reason:
-      "歳入の廃止款が「0 自動車取得税交付金 … 54,000 … 皆減」と款番号の位置に 0 を置いて書かれていて、既存パーサがこの行を款名ごと読み落とす。" +
-      "前年度の合計が 54,000千円合わなくなる。",
-    url: "https://www.city.tokai.aichi.jp/shisei/1003714/1003715/1003716/1003719.html",
-    checkedOn: "2026-09-27", ref: "docs/data-sources.md §13-44",
-  },
-  {
     // 防府市（352063）R3。R8〜R4・R2 は収録済み（§13-44）。
     code: "352063", name: "防府市", dataset: "budget", fiscalYears: ["R3"],
     categories: ["scanned-image"],
@@ -1738,13 +1716,13 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
   },
   {
     // 北見市（012084）R2。R8〜R3 は収録済み（§13-46）。
-    // ⚠ 原典の廃止款の行は東海 R2 と同型（行頭の 0 が全角）。前年度 Σ の不一致は warning 止まりなので静かに流れる。
+    // ⚠ 廃止款の行（行頭の全角 0）は #301 で読めるようになった（§13-47）。残るのは原典の転記誤り＝浦添 R2 と同じく人の判断待ち。
     code: "012084", name: "北見市", dataset: "budget", fiscalYears: ["R2"],
-    categories: ["parser-unsupported"],
+    categories: ["format-mismatch"],
     reason:
-      "歳入の廃止款が「０ 自動車取得税交付金 0 86,700 △86,700」と款番号の位置に全角の 0 を置いて書かれていて、既存パーサがこの行を読み落とす。" +
-      "さらに総括表の前年度列の諸収入と市債が、同じ冊子の款別の明細と79,300千円ずつ食い違っている（合計は同じ）。",
+      "総括表の前年度列の諸収入と市債が、同じ冊子の款別の明細と79,300千円ずつ食い違っている（合計は同じ）。" +
+      "総括表の数字を別の箇所の数字で書き換えることになるため、収録を見送っている。",
     url: "https://www.city.kitami.lg.jp/administration/detail.php?content=7925",
-    checkedOn: "2026-09-27", ref: "docs/data-sources.md §13-46",
+    checkedOn: "2026-09-27", ref: "docs/data-sources.md §13-47",
   },
 ];
