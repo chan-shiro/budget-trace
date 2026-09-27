@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 298,
+  "budgetCount": 299,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 2237,
-  "fileCount": 3466,
-  "archivedCount": 2064,
+  "sourceCount": 2244,
+  "fileCount": 3473,
+  "archivedCount": 2069,
   "licenseOpen": 102,
-  "licensePermission": 1919,
+  "licensePermission": 1926,
   "licenseUnverified": 216,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -803,6 +803,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "柏市",
       "code": "122173",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "鎌ケ谷市",
+      "code": "122246",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },

@@ -239,9 +239,12 @@ interface Options {
    * 指定すると**合計行だけ**この添字で読む（款行は従来どおり）。⚠ **必ず2つセットで指定する**
    * （片方だけだと静かに既定へ落ちるので throw する）。⚠ `prevColumnFirst` とは併用できない
    *   （どちらが優先か曖昧になるため throw する）。
+   * ⚠⚠ **側ごとにも書ける**（2026-09-27・鎌ケ谷 R5・R4・#300）。鎌ケ谷は**歳入の合計行だけ**構成比が整数 `100`
+   *   （歳出の合計行は `100.0` で既定の推測が当たる）。数値で書けば従来どおり両側、`{ revenue: 0 }` のように
+   *   書けばその側だけ（もう片側は既定の推測）。2つセットの検査も**側ごと**に行う（`amountIntIndex` と同じ形）。
    */
-  totalAmountIntIndex?: number;
-  totalPrevIntIndex?: number;
+  totalAmountIntIndex?: number | { revenue?: number; expenditure?: number };
+  totalPrevIntIndex?: number | { revenue?: number; expenditure?: number };
   /**
    * **金額が原典のセル幅で改行され、桁区切りの途中で次行へ折り返す様式**（2026-07-26・愛知 R8/R7）。
    * 愛知の説明書は歳出の合計行だけ列幅が足りず、**カンマで切れた頭が上段・残りの3桁が下段**に落ちる:
@@ -1184,8 +1187,8 @@ function parseKanPage(
       // bestInts > 1 が保証するとおりここは常に整数2個以上なので ints[1] は存在する。
       // **合計行だけ列が違う様式**は `totalAmountIntIndex` / `totalPrevIntIndex` が優先する
       // （Options 参照・豊橋）。指定が無ければ従来どおり款行と同じ添字を使う。
-      const totalAmtIdx = opts.totalAmountIntIndex ?? amountIntIndex;
-      const totalPrevIdx = opts.totalPrevIntIndex ?? prevIntIndex;
+      const totalAmtIdx = pickSide(opts.totalAmountIntIndex) ?? amountIntIndex;
+      const totalPrevIdx = pickSide(opts.totalPrevIntIndex) ?? prevIntIndex;
       if (totalAmtIdx != null && totalPrevIdx != null) {
         // 既定では款行と同じ添字（列指定の様式は合計行も同じ列構成であることが多い。京都府で実測）。
         // **合計行だけ列が違う様式**は上の `total*IntIndex` がこれを上書きする（豊橋）。
@@ -1372,8 +1375,10 @@ function parseKanPage(
     // 北区の `(ｱ)` と同じ「款名欄に紛れ込んだ脚注マーカー」だが、**あちらは金額化の後**で足りる
     // （半角カナは金額にならない）のに対し、**数字なので金額化の前**でなければ間に合わない。
     // ⚠ `※` を含む括弧書きだけを対象にする（原典が意味を持たせた `（⑲環境費）` 等の注記は落とさない）。
+    // **`（注1）` も同じ扱い**（2026-09-27・鎌ケ谷・#300）。鎌ケ谷は `市税（注１）`・`地方交付税（注２）` で、落とさないと
+    //   `1`・`2` が第1金額に取られて当年度 Σ が大きく割れる（大声で落ちる側）。⚠ `注` か `※` の直後が**数字だけ**の括弧に限る。
     const restRaw = lead ? rawForLead.slice(lead[0].length).replace(/^[.．](?!\d)/, "") : rawForLead;
-    const rest = stripPercents(restRaw.replace(/[(（]\s*※\s*\d+\s*[)）]/g, ""));
+    const rest = stripPercents(restRaw.replace(/[(（]\s*(?:※|注)\s*\d+\s*[)）]/g, ""));
     const tokens = rest.match(AMOUNT_RE) ?? [];
     let ints = tokens.filter((t) => !t.includes("."));
     // 款行に同居する項番号を落とす（Options.kanRowInlineKoNo 参照）。
@@ -3523,7 +3528,14 @@ export function parseKofuYosansho(
   }
   // `totalAmountIntIndex` / `totalPrevIntIndex` は**必ず2つセット**（Options 参照）。
   // 片方だけだと静かに `amountIntIndex` 側（または既定の推測）へ落ちるので禁止する。
-  if ((opts.totalAmountIntIndex == null) !== (opts.totalPrevIntIndex == null)) {
+  // 側ごとの形（`{ revenue: 0 }`）でも**側ごと**に2つセットを要求する。
+  const totalSide = (v: Options["totalAmountIntIndex"], side: "revenue" | "expenditure") =>
+    typeof v === "object" ? v[side] : v;
+  if (
+    (["revenue", "expenditure"] as const).some(
+      (side) => (totalSide(opts.totalAmountIntIndex, side) == null) !== (totalSide(opts.totalPrevIntIndex, side) == null),
+    )
+  ) {
     throw new Error(
       `${source.id}: totalAmountIntIndex と totalPrevIntIndex は必ず2つセットで指定してください` +
         `（片方だけだと合計行が黙って既定の推測に落ちるため禁止しています）。`,
