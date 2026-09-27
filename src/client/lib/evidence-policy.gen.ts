@@ -17827,6 +17827,12 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "license": "著作権法上認められる場合を除き、富士見市の許可なく富士見市ホームページ上に掲載されている文書や画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
     "target": "file"
   },
+  "/sources/fujimi-yosansho-r2/R2-giketsuzmi-ippankaikei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fujimi.saitama.jp/shisei/04zaisei/01yosan/yosansho/2013-0712-1615-133/0120200207110443503.files/R2-giketsuzmi-ippankaikei.pdf",
+    "license": "著作権法上認められる場合を除き、富士見市の許可なく富士見市ホームページ上に掲載されている文書や画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "file"
+  },
   "/sources/tokaishi-kanbetsu-hikaku-r8/1ippannsainyuu.pdf": {
     "mode": "origin",
     "href": "https://www.city.tokai.aichi.jp/shisei/1003714/1003715/1003716/1009331.html",
@@ -17896,6 +17902,18 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
   "/sources/tokaishi-kanbetsu-hikaku-r3/ippann-saisyutsu.pdf": {
     "mode": "origin",
     "href": "https://www.city.tokai.aichi.jp/shisei/1003714/1003715/1003716/1003718.html",
+    "license": "当サイトに掲載されている文字、写真、イラスト、画像などの個々の情報に関する著作権は東海市に帰属します。「私的利用」または「引用」など著作権法上認められた行為として適切な方法で利用する場合を除き、無断で転載、複製、改変などをすることはできません。",
+    "target": "page"
+  },
+  "/sources/tokaishi-kanbetsu-hikaku-r2/02ippann-sainyuu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tokai.aichi.jp/shisei/1003714/1003715/1003716/1003719.html",
+    "license": "当サイトに掲載されている文字、写真、イラスト、画像などの個々の情報に関する著作権は東海市に帰属します。「私的利用」または「引用」など著作権法上認められた行為として適切な方法で利用する場合を除き、無断で転載、複製、改変などをすることはできません。",
+    "target": "page"
+  },
+  "/sources/tokaishi-kanbetsu-hikaku-r2/02ippann-saisyutsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tokai.aichi.jp/shisei/1003714/1003715/1003716/1003719.html",
     "license": "当サイトに掲載されている文字、写真、イラスト、画像などの個々の情報に関する著作権は東海市に帰属します。「私的利用」または「引用」など著作権法上認められた行為として適切な方法で利用する場合を除き、無断で転載、複製、改変などをすることはできません。",
     "target": "page"
   },

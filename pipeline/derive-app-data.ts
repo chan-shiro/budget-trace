@@ -3152,12 +3152,13 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
       srcId: `karatsu-yosan-gaiyou-${fy}`, muniCode: "412023", muniName: "唐津市", prefName: "佐賀県", isPref: false,
     })),
     // ---- 第42巡（2026-09-27・§13-44）: 富士見・東海・佐野・防府・白山 ----
-    // ⚠ 富士見 R2 は番号も印も無い廃止款を読み落とす（前年度 Σ は warning 止まり）ので未収録
-    ...(["r8", "r7", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
+    // ⚠ 富士見 R2 は番号も印も無い廃止款（#301 のパーサ修正で読めるようになり第45巡で収録）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `fujimi-yosansho-${fy}`, muniCode: "112356", muniName: "富士見市", prefName: "埼玉県", isPref: false,
     })),
     // ⚠⚠ 東海 R7・R3 は骨格予算で R8・R4 の前年度列は「６月現計」（prevBasis 補正後＋prevNote）。歳入・歳出が別ファイル。noDeepLink
-    ...(["r8", "r7", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
+    // ⚠ 東海 R2 は行頭の 0 の廃止款（#301 のパーサ修正で読めるようになり第45巡で収録）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `tokaishi-kanbetsu-hikaku-${fy}`, muniCode: "232220", muniName: "東海市", prefName: "愛知県", isPref: false,
     })),
     // ⚠⚠ 佐野は表題行「一般会計」が款1 に付く（Σ 差0）。ライセンスが割れていて要許可へ倒した

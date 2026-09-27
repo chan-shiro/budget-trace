@@ -517,7 +517,8 @@ export const MUNI_BUDGET_INDEX: Record<string, MuniBudgetIndexEntry> = {
       "R6",
       "R5",
       "R4",
-      "R3"
+      "R3",
+      "R2"
     ],
     "hasProjects": false
   },
@@ -2554,7 +2555,8 @@ export const MUNI_BUDGET_INDEX: Record<string, MuniBudgetIndexEntry> = {
       "R6",
       "R5",
       "R4",
-      "R3"
+      "R3",
+      "R2"
     ],
     "hasProjects": false
   },
