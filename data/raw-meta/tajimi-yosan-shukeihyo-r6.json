@@ -1,0 +1,19 @@
+{
+  "sourceId": "tajimi-yosan-shukeihyo-r6",
+  "files": [
+    {
+      "filename": "r6sainyuu.pdf",
+      "sha256": "519a77a0785f1d9b2150bbb326aba767756d8d8d91501c7fe2755a7fdc8fa2f9",
+      "bytes": 250623,
+      "fetchedAt": "2026-09-27T18:55:09.001Z",
+      "fetchedFrom": "https://www.city.tajimi.lg.jp/_res/projects/default_project/_page_/001/008/058/r6sainyuu.pdf"
+    },
+    {
+      "filename": "r6saishutu.pdf",
+      "sha256": "4d1950562649ee9daeda45510ffd820c9a377b7f907149ee8d208c301c214ac5",
+      "bytes": 107827,
+      "fetchedAt": "2026-09-27T18:55:09.419Z",
+      "fetchedFrom": "https://www.city.tajimi.lg.jp/_res/projects/default_project/_page_/001/008/058/r6saishutu.pdf"
+    }
+  ]
+}

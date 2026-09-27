@@ -1,0 +1,19 @@
+{
+  "sourceId": "tajimi-yosan-shukeihyo-r7",
+  "files": [
+    {
+      "filename": "r7_yosan_sainyusyukeihyo.pdf",
+      "sha256": "5e5582947949e946ba9f1ec5c785cedf67d404913b092da0f23c666c002b7dd2",
+      "bytes": 192473,
+      "fetchedAt": "2026-09-27T18:55:07.819Z",
+      "fetchedFrom": "https://www.city.tajimi.lg.jp/_res/projects/default_project/_page_/001/008/052/r7_yosan_sainyusyukeihyo.pdf"
+    },
+    {
+      "filename": "r7_yosan_kanbetusaisyutusyukeihyo.pdf",
+      "sha256": "0d2d8fe224e2d255b0a6176a10959c7f6e02394ed9b04fdd19914cda45e2928e",
+      "bytes": 84517,
+      "fetchedAt": "2026-09-27T18:55:08.230Z",
+      "fetchedFrom": "https://www.city.tajimi.lg.jp/_res/projects/default_project/_page_/001/008/052/r7_yosan_kanbetusaisyutusyukeihyo.pdf"
+    }
+  ]
+}

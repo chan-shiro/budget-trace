@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 303,
+  "budgetCount": 308,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 2269,
-  "fileCount": 3498,
-  "archivedCount": 2094,
+  "sourceCount": 2301,
+  "fileCount": 3537,
+  "archivedCount": 2127,
   "licenseOpen": 102,
-  "licensePermission": 1951,
+  "licensePermission": 1983,
   "licenseUnverified": 216,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -891,6 +891,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "小松市",
+      "code": "172031",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "福井市",
       "code": "182010",
       "years": 7,
@@ -905,6 +911,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "上田市",
       "code": "202037",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "多治見市",
+      "code": "212041",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },
@@ -1017,6 +1029,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "大牟田市",
+      "code": "402028",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "飯塚市",
       "code": "402052",
       "years": 7,
@@ -1073,6 +1091,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "八戸市",
       "code": "022039",
+      "years": 6,
+      "range": "R3〜R8（6年度）"
+    },
+    {
+      "name": "一関市",
+      "code": "032093",
       "years": 6,
       "range": "R3〜R8（6年度）"
     },
@@ -1243,6 +1267,12 @@ export const ROADMAP_PROGRESS = {
       "code": "221309",
       "years": 5,
       "range": "R4〜R8（5年度）"
+    },
+    {
+      "name": "三島市",
+      "code": "222062",
+      "years": 5,
+      "range": "R2〜R8（5年度）"
     },
     {
       "name": "豊田市",

@@ -3241,6 +3241,27 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `sanda-yosan-an-setsumei-${fy}`, muniCode: "282197", muniName: "三田市", prefName: "兵庫県", isPref: false,
     })),
+    // ---- 第48巡（2026-09-28・§13-50） ----
+    // ⚠ 大牟田 R2 の款9 は原典どおり「自動車取得税交付金⇒環境性能割交付金」
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `omuta-kanbetsu-hikaku-${fy}`, muniCode: "402028", muniName: "大牟田市", prefName: "福岡県", isPref: false,
+    })),
+    // ⚠⚠ 一関の歳入は自主財源／依存財源の順（款番号が昇順でない warning は八千代と同じ扱い）・縦書きラベルを CropX で落とす。R2 は未収録
+    ...(["r8", "r7", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
+      srcId: `ichinoseki-yosan-gaiyou-${fy}`, muniCode: "032093", muniName: "一関市", prefName: "岩手県", isPref: false,
+    })),
+    // ⚠ 三島 R8・R2 は decodeGarble、R2 は歳入だけ -raw。R4・R3 は左右2段で未収録
+    ...(["r8", "r7", "r6", "r5", "r2"] as const).map((fy) => ({
+      srcId: `mishima-yosansho-${fy}`, muniCode: "222062", muniName: "三島市", prefName: "静岡県", isPref: false,
+    })),
+    // ⚠⚠ 小松 R7・R3 は骨格で R8・R4 の前年度列は6月補正後（prevBasis 補正後＋prevNote）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `komatsu-yosan-setsumeisho-${fy}`, muniCode: "172031", muniName: "小松市", prefName: "石川県", isPref: false,
+    })),
+    // ⚠⚠ 多治見は歳入・歳出が別ファイル。自主／依存の列（kanNameSuffixStrip）と項の内訳行（kanIndentMax）。R5 骨格で R6 に prevNote。R3・R2 は WARP
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `tajimi-yosan-shukeihyo-${fy}`, muniCode: "212041", muniName: "多治見市", prefName: "岐阜県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。
