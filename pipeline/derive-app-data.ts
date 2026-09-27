@@ -3216,6 +3216,11 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `oshu-yosan-gaiyou-${fy}`, muniCode: "032158", muniName: "奥州市", prefName: "岩手県", isPref: false,
     })),
+    // ---- 第46巡（2026-09-27・§13-48）: #300 のパーサ修正で鎌ケ谷 ----
+    // ⚠⚠ 鎌ケ谷は脚注マーカー（注N）と R5・R4 の歳入合計行の整数 100（totalAmountIntIndex を側ごとに）。R3・R2 は Wayback
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `kamagaya-yosan-gaiyou-${fy}`, muniCode: "122246", muniName: "鎌ケ谷市", prefName: "千葉県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。

@@ -182,6 +182,8 @@ const KITAMI_LICENSE =
   "このホームページの著作権は原則として北見市に帰属します。このホームページの内容を無断で複写複製することは、著作権の侵害になります。";
 const OSHU_LICENSE =
   "本サイトに掲載の文章、画像などの著作権は、奥州市または原著作者に帰属します。 「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。";
+const KAMAGAYA_LICENSE =
+  "当ウェブサイト上の情報（文章・画像・音楽等）に関する著作権は、鎌ケ谷市に帰属しています。ただし、一部の画像等の著作権は、原著作者が所有している場合があります。これらの情報を営利目的に使用することや、無断転載を禁じます。";
 const KOGA_IBARAKI_LICENSE =
   "古河市ホームページに掲載している個々の情報（文章、写真、イラストなど）に関する著作権は、原則として古河市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。古河市ホームページは利用目的を問わず自由な閲覧が可能ですが、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、古河市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。";
 
@@ -22138,6 +22140,56 @@ export const SOURCES: SourceEntry[] = [
       expenditureHeading: "名称",
       revenueTotalLabel: "合計",
       expenditureTotalLabel: "合計",
+    },
+  } satisfies SourceEntry)),
+
+  // 鎌ケ谷市（千葉県・団体コード 122246 ＝ 総務省 R6.json から実引き・muniName「鎌ケ谷市」）。「予算の概要」の
+  //   「（１）款別歳入の状況」／「（３）款別（目的別）歳出の状況」。千円。歳入24款・歳出14款（7年度とも同じ款構成）。負号 ▲。
+  //   合計ラベルは `合計`／`歳 出 合 計`。
+  // ⚠ ページ冒頭の「７（R3・R2 は６） 一般会計歳入歳出予算の状況」が款1 に連結する（`一般会計歳入歳出予算の状況市税`・Σ 差0）
+  //   ⇒ 歳入の見出しをこの行にして読み飛ばす（「（１）款別歳入の状況」を見出しにすると壊れる）。
+  // ⚠⚠ 歳入の款1「市税（注１）」・款13「地方交付税（注２）」の脚注マーカーの数字が第1金額に取られていた（当年度 Σ が割れて大声で落ちる側）
+  //   ⇒ **#300 でパーサの脚注除去を `（※N）` から `（注N）` にも広げた**（Options なし・全資料に効く）。
+  // ⚠⚠ R5・R4 は**歳入の合計行だけ**構成比が整数 `100`（歳出は `100.0`）で、前年度合計を 100 と読んでいた（warning 止まり）
+  //   ⇒ **#300 で `totalAmountIntIndex`/`totalPrevIntIndex` を側ごとに書けるようにして** `{ revenue: 0 }`／`{ revenue: 2 }`。
+  // ⚠ R3・R2 は現行サイトで 404 ⇒ Wayback の id_ 版。R8 は R8yosangaiyou2.pdf（2026-02-16 更新・初版と款別表 p.34・p.36 のテキストは同一）。
+  // 前年度列は当初（列見出し「N 年 度 当初予算額 (B)」）。R8→R2 の6リンクで款単位全一致。議決は全年度「原案可決」（議会の審議結果一覧）。
+  // 骨格予算: 7年度の概要全文に「骨格」「肉付」0件（市長選は 2021-07・2025-06 でどちらも年度途中）。
+  // 総額突合: R6 当初 42,140,000千円 ÷ 総務省 R6 決算歳出 43,680,050千円 = 96.5%。
+  // ライセンス: 「このウェブサイトについて」（/footer_website/site.html・確認日 2026-09-27）＝要許可。千葉県オープンデータサイトに鎌ケ谷市の組織は無い（予算0件）。
+  // リンク: 「当ウェブサイトへのリンクは、原則として自由です。」の後に**別の文で**「リンクを設定する場合は、トップページ（…）にお願いします。」
+  //   ＝依頼形で、その後に理由つきで「トップページへのリンクを推奨しています」。「原則として」は**自由**に掛かっている（東海の「原則として当サイトトップページへの
+  //   リンク設定をお願いします」＝リンク先に掛かる型とは違う）⇒ 福山・松戸（推奨）・奥州（「自由ですが、…お願いします」）と同じ読みで **`noDeepLink` は立てない**。
+  //   フレーム内表示は断っている。
+  // ⚠ 主な事業（多額の経費を要する事業一覧・款は縦書きラベル・前年度額なし）と事業報告（事務事業評価 標準評価表 R7〜H25・主要施策の成果 R4〜R6）は別の巡（§13-46）。
+  ...([
+    // [年度, URL, 歳入ページ, 歳出ページ]
+    ["R8", "https://www.city.kamagaya.chiba.jp/sesakumidashi/sesaku_zaisei/yosan/index.files/R8yosangaiyou2.pdf", 34, 36],
+    ["R7", "https://www.city.kamagaya.chiba.jp/sesakumidashi/sesaku_zaisei/yosan/index.files/R7yosangaiyou.pdf", 32, 34],
+    ["R6", "https://www.city.kamagaya.chiba.jp/sesakumidashi/sesaku_zaisei/yosan/index.files/R6gaiyou.pdf", 28, 30],
+    ["R5", "https://www.city.kamagaya.chiba.jp/sesakumidashi/sesaku_zaisei/yosan/index.files/R5gaiyou.pdf", 26, 28],
+    ["R4", "https://www.city.kamagaya.chiba.jp/sesakumidashi/sesaku_zaisei/yosan/index.files/R4gaiyou.pdf", 24, 26],
+    ["R3", "https://web.archive.org/web/20220308014615id_/https://www.city.kamagaya.chiba.jp/sesakumidashi/sesaku_zaisei/yosan/index.files/R3yosan-gaiyou.pdf", 19, 21],
+    ["R2", "https://web.archive.org/web/20220302161144id_/https://www.city.kamagaya.chiba.jp/sesakumidashi/sesaku_zaisei/yosan/index.files/R2yosangaiyou1.pdf", 19, 21],
+  ] as const).map(([fy, url, rp, ep]) => ({
+    id: `kamagaya-yosan-gaiyou-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 鎌ケ谷市予算の概要（一般会計 款別歳入・款別（目的別）歳出の状況）`,
+    publisher: "鎌ケ谷市",
+    url,
+    landingPage: "https://www.city.kamagaya.chiba.jp/sesakumidashi/sesaku_zaisei/yosan/index.html",
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "鎌ケ谷市（一般会計・団体コード122246）",
+    license: KAMAGAYA_LICENSE,
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      revenuePage: rp,
+      expenditurePage: ep,
+      revenueHeading: "一般会計歳入歳出予算の状況",
+      expenditureHeading: "款別（目的別）歳出の状況",
+      revenueTotalLabel: "合計",
+      expenditureTotalLabel: "歳出合計",
+      ...(fy === "R5" || fy === "R4" ? { totalAmountIntIndex: { revenue: 0 }, totalPrevIntIndex: { revenue: 2 } } : {}),
     },
   } satisfies SourceEntry)),
 
