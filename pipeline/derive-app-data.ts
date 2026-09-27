@@ -3198,6 +3198,23 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `inzai-yosan-gaiyou-${fy}`, muniCode: "122319", muniName: "印西市", prefName: "千葉県", isPref: false,
     })),
+    // ---- 第44巡（2026-09-27・§13-46）: 会津若松・彦根・北見・奥州 ----
+    // ⚠ 会津若松 R4〜R2 は Wayback の写し（年度ページごと消えている）。ライセンスが割れていて要許可へ倒した
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `aizuwakamatsu-yosangaiyo-${fy}`, muniCode: "072028", muniName: "会津若松市", prefName: "福島県", isPref: false,
+    })),
+    // ⚠ 彦根 R7〜R2 は WARP（年度ページを毎年上書き）。R2 は議会の修正可決後の額
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `hikone-kakukaikei-yosan-${fy}`, muniCode: "252026", muniName: "彦根市", prefName: "滋賀県", isPref: false,
+    })),
+    // ⚠⚠ 北見 R6〜R4 は ToUnicode 欠落で decodeGarble（復号表に21字追加・款名に効くのは「道」だけ）。R2 は廃止款の行と原典の転記誤りで未収録
+    ...(["r8", "r7", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
+      srcId: `kitami-yosansho-setsumei-${fy}`, muniCode: "012084", muniName: "北見市", prefName: "北海道", isPref: false,
+    })),
+    // ⚠⚠ 奥州 R4・R8 は骨格予算。R5 の前年度列は「６月補正後」（パーサが自動で補正後と判定）。列見出し「名称」が款1 に付く（Σ 差0）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `oshu-yosan-gaiyou-${fy}`, muniCode: "032158", muniName: "奥州市", prefName: "岩手県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。

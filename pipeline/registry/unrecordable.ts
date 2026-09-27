@@ -1736,4 +1736,15 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     url: "https://www.city.kasuga.fukuoka.jp/shisei/zaiseijoukyou/yosan/1004507.html",
     checkedOn: "2026-09-27", ref: "docs/data-sources.md §13-45",
   },
+  {
+    // 北見市（012084）R2。R8〜R3 は収録済み（§13-46）。
+    // ⚠ 原典の廃止款の行は東海 R2 と同型（行頭の 0 が全角）。前年度 Σ の不一致は warning 止まりなので静かに流れる。
+    code: "012084", name: "北見市", dataset: "budget", fiscalYears: ["R2"],
+    categories: ["parser-unsupported"],
+    reason:
+      "歳入の廃止款が「０ 自動車取得税交付金 0 86,700 △86,700」と款番号の位置に全角の 0 を置いて書かれていて、既存パーサがこの行を読み落とす。" +
+      "さらに総括表の前年度列の諸収入と市債が、同じ冊子の款別の明細と79,300千円ずつ食い違っている（合計は同じ）。",
+    url: "https://www.city.kitami.lg.jp/administration/detail.php?content=7925",
+    checkedOn: "2026-09-27", ref: "docs/data-sources.md §13-46",
+  },
 ];
