@@ -18216,5 +18216,167 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://warp.ndl.go.jp/20200912/20200911165608/https://www.city.kasuga.fukuoka.jp/_res/projects/default_project/_page_/001/004/507/r02tousyoyosannsetumeisho.pdf",
     "license": "春日市ウェブサイトの著作権は、春日市（写真や文章などの一部はその著作権者）に帰属します。著作権法で認められている場合を除き、著作権者の許可なく文章や画像、データなどの一部または全部を利用することは禁止します。",
     "target": "file"
+  },
+  "/sources/aizuwakamatsu-yosangaiyo-r8/R8_tousho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.aizuwakamatsu.fukushima.jp/docs/2026031800028/file_contents/R8_tousho.pdf",
+    "license": "「会津若松市公式ホームページ」に掲載されている文章や写真、イラスト、画像、動画などの著作権は、会津若松市又は原著作者に帰属しています。「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で引用・転載することはできません。利用許諾については、各ページのお問い合わせ欄に記載されている所属へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/aizuwakamatsu-yosangaiyo-r7/R7_tousyo_gaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.aizuwakamatsu.fukushima.jp/docs/2025031000025/file_contents/R7_tousyo_gaiyo.pdf",
+    "license": "「会津若松市公式ホームページ」に掲載されている文章や写真、イラスト、画像、動画などの著作権は、会津若松市又は原著作者に帰属しています。「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で引用・転載することはできません。利用許諾については、各ページのお問い合わせ欄に記載されている所属へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/aizuwakamatsu-yosangaiyo-r6/R6tousyogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.aizuwakamatsu.fukushima.jp/docs/2024030500017/file_contents/R6tousyogaiyou.pdf",
+    "license": "「会津若松市公式ホームページ」に掲載されている文章や写真、イラスト、画像、動画などの著作権は、会津若松市又は原著作者に帰属しています。「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で引用・転載することはできません。利用許諾については、各ページのお問い合わせ欄に記載されている所属へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/aizuwakamatsu-yosangaiyo-r5/R5_tousyo_gaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.aizuwakamatsu.fukushima.jp/docs/2023021700016/file_contents/R5_tousyo_gaiyo.pdf",
+    "license": "「会津若松市公式ホームページ」に掲載されている文章や写真、イラスト、画像、動画などの著作権は、会津若松市又は原著作者に帰属しています。「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で引用・転載することはできません。利用許諾については、各ページのお問い合わせ欄に記載されている所属へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/aizuwakamatsu-yosangaiyo-r4/r04_tosyo_gaiyo.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20250218094827id_/https://www.city.aizuwakamatsu.fukushima.jp/docs/2022021400018/file_contents/r04_tosyo_gaiyo.pdf",
+    "license": "「会津若松市公式ホームページ」に掲載されている文章や写真、イラスト、画像、動画などの著作権は、会津若松市又は原著作者に帰属しています。「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で引用・転載することはできません。利用許諾については、各ページのお問い合わせ欄に記載されている所属へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/aizuwakamatsu-yosangaiyo-r3/r03_tosyo_gaiyo.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20211023145729id_/https://www.city.aizuwakamatsu.fukushima.jp/docs/2021021600015/files/r03_tosyo_gaiyo.pdf",
+    "license": "「会津若松市公式ホームページ」に掲載されている文章や写真、イラスト、画像、動画などの著作権は、会津若松市又は原著作者に帰属しています。「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で引用・転載することはできません。利用許諾については、各ページのお問い合わせ欄に記載されている所属へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/aizuwakamatsu-yosangaiyo-r2/r02_tosyo_gaiyo.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20220308000958id_/https://www.city.aizuwakamatsu.fukushima.jp/docs/2020021800012/files/r02_tosyo_gaiyo.pdf",
+    "license": "「会津若松市公式ホームページ」に掲載されている文章や写真、イラスト、画像、動画などの著作権は、会津若松市又は原著作者に帰属しています。「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で引用・転載することはできません。利用許諾については、各ページのお問い合わせ欄に記載されている所属へお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/hikone-kakukaikei-yosan-r8/08-04_kakukaikeiyosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.hikone.lg.jp/material/files/group/108/08-04_kakukaikeiyosan.pdf",
+    "license": "彦根市ホームページに掲載しているコンテンツ（文章、写真、イラスト、PDFなど）に関する著作権は、原則として彦根市に帰属します。ただし、一部の画像などの著作権は、彦根市以外の原著作者が所有しています。「私的使用のための複製」や「引用」など、著作権法上で認められている場合を除き、無断で複製、転用することは法律で禁じられています。",
+    "target": "file"
+  },
+  "/sources/hikone-kakukaikei-yosan-r7/0702kakukaikeiyosan.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20250510/20250508063932/https://www.city.hikone.lg.jp/material/files/group/108/0702kakukaikeiyosan.pdf",
+    "license": "彦根市ホームページに掲載しているコンテンツ（文章、写真、イラスト、PDFなど）に関する著作権は、原則として彦根市に帰属します。ただし、一部の画像などの著作権は、彦根市以外の原著作者が所有しています。「私的使用のための複製」や「引用」など、著作権法上で認められている場合を除き、無断で複製、転用することは法律で禁じられています。",
+    "target": "file"
+  },
+  "/sources/hikone-kakukaikei-yosan-r6/0602kakukaikeiyosan.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20240510/20240508062620/https://www.city.hikone.lg.jp/material/files/group/108/0602kakukaikeiyosan.pdf",
+    "license": "彦根市ホームページに掲載しているコンテンツ（文章、写真、イラスト、PDFなど）に関する著作権は、原則として彦根市に帰属します。ただし、一部の画像などの著作権は、彦根市以外の原著作者が所有しています。「私的使用のための複製」や「引用」など、著作権法上で認められている場合を除き、無断で複製、転用することは法律で禁じられています。",
+    "target": "file"
+  },
+  "/sources/hikone-kakukaikei-yosan-r5/0502kakukaikeiyosann.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20230510/20230508052256/https://www.city.hikone.lg.jp/material/files/group/108/0502kakukaikeiyosann.pdf",
+    "license": "彦根市ホームページに掲載しているコンテンツ（文章、写真、イラスト、PDFなど）に関する著作権は、原則として彦根市に帰属します。ただし、一部の画像などの著作権は、彦根市以外の原著作者が所有しています。「私的使用のための複製」や「引用」など、著作権法上で認められている場合を除き、無断で複製、転用することは法律で禁じられています。",
+    "target": "file"
+  },
+  "/sources/hikone-kakukaikei-yosan-r4/0402kakukaikeiyosann.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20220509/20220507042623/https://www.city.hikone.lg.jp/material/files/group/108/0402kakukaikeiyosann.pdf",
+    "license": "彦根市ホームページに掲載しているコンテンツ（文章、写真、イラスト、PDFなど）に関する著作権は、原則として彦根市に帰属します。ただし、一部の画像などの著作権は、彦根市以外の原著作者が所有しています。「私的使用のための複製」や「引用」など、著作権法上で認められている場合を除き、無断で複製、転用することは法律で禁じられています。",
+    "target": "file"
+  },
+  "/sources/hikone-kakukaikei-yosan-r3/0302kakukaikeiyosann.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20210514/20210512102238/https://www.city.hikone.lg.jp/material/files/group/108/0302kakukaikeiyosann.pdf",
+    "license": "彦根市ホームページに掲載しているコンテンツ（文章、写真、イラスト、PDFなど）に関する著作権は、原則として彦根市に帰属します。ただし、一部の画像などの著作権は、彦根市以外の原著作者が所有しています。「私的使用のための複製」や「引用」など、著作権法上で認められている場合を除き、無断で複製、転用することは法律で禁じられています。",
+    "target": "file"
+  },
+  "/sources/hikone-kakukaikei-yosan-r2/0222kakukaikeiyosan.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20200507/20200505121652/https://www.city.hikone.lg.jp/material/files/group/108/0222kakukaikeiyosan.pdf",
+    "license": "彦根市ホームページに掲載しているコンテンツ（文章、写真、イラスト、PDFなど）に関する著作権は、原則として彦根市に帰属します。ただし、一部の画像などの著作権は、彦根市以外の原著作者が所有しています。「私的使用のための複製」や「引用」など、著作権法上で認められている場合を除き、無断で複製、転用することは法律で禁じられています。",
+    "target": "file"
+  },
+  "/sources/kitami-yosansho-setsumei-r8/content_20260310_115714.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kitami.lg.jp/common/img/content/content_20260310_115714.pdf",
+    "license": "このホームページの著作権は原則として北見市に帰属します。このホームページの内容を無断で複写複製することは、著作権の侵害になります。",
+    "target": "file"
+  },
+  "/sources/kitami-yosansho-setsumei-r7/content_20260325_113138.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kitami.lg.jp/common/img/content/content_20260325_113138.pdf",
+    "license": "このホームページの著作権は原則として北見市に帰属します。このホームページの内容を無断で複写複製することは、著作権の侵害になります。",
+    "target": "file"
+  },
+  "/sources/kitami-yosansho-setsumei-r6/content_20240401_115529.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kitami.lg.jp/common/img/content/content_20240401_115529.pdf",
+    "license": "このホームページの著作権は原則として北見市に帰属します。このホームページの内容を無断で複写複製することは、著作権の侵害になります。",
+    "target": "file"
+  },
+  "/sources/kitami-yosansho-setsumei-r5/content_20251029_163844.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kitami.lg.jp/common/img/content/content_20251029_163844.pdf",
+    "license": "このホームページの著作権は原則として北見市に帰属します。このホームページの内容を無断で複写複製することは、著作権の侵害になります。",
+    "target": "file"
+  },
+  "/sources/kitami-yosansho-setsumei-r4/content_20251029_151632.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kitami.lg.jp/common/img/content/content_20251029_151632.pdf",
+    "license": "このホームページの著作権は原則として北見市に帰属します。このホームページの内容を無断で複写複製することは、著作権の侵害になります。",
+    "target": "file"
+  },
+  "/sources/kitami-yosansho-setsumei-r3/content_20251028_132312.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kitami.lg.jp/common/img/content/content_20251028_132312.pdf",
+    "license": "このホームページの著作権は原則として北見市に帰属します。このホームページの内容を無断で複写複製することは、著作権の侵害になります。",
+    "target": "file"
+  },
+  "/sources/oshu-yosan-gaiyou-r8/R8toushoyosannnogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.oshu.iwate.jp/material/files/group/8/R8toushoyosannnogaiyou.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、奥州市または原著作者に帰属します。 「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/oshu-yosan-gaiyou-r7/R7gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.oshu.iwate.jp/material/files/group/8/R7gaiyou.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、奥州市または原著作者に帰属します。 「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/oshu-yosan-gaiyou-r6/02_R6gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.oshu.iwate.jp/material/files/group/8/02_R6gaiyou.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、奥州市または原著作者に帰属します。 「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/oshu-yosan-gaiyou-r5/5002.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.oshu.iwate.jp/material/files/group/8/5002.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、奥州市または原著作者に帰属します。 「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/oshu-yosan-gaiyou-r4/33310.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.oshu.iwate.jp/material/files/group/8/33310.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、奥州市または原著作者に帰属します。 「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/oshu-yosan-gaiyou-r3/28130.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.oshu.iwate.jp/material/files/group/8/28130.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、奥州市または原著作者に帰属します。 「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/oshu-yosan-gaiyou-r2/23293.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.oshu.iwate.jp/material/files/group/8/23293.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、奥州市または原著作者に帰属します。 「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
   }
 };

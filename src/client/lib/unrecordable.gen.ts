@@ -1246,6 +1246,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
       }
     ]
   },
+  "012084": {
+    "budget": [
+      {
+        "fyLabel": "令和2年度",
+        "reason": "歳入の廃止款が「０ 自動車取得税交付金 0 86,700 △86,700」と款番号の位置に全角の 0 を置いて書かれていて、既存パーサがこの行を読み落とす。さらに総括表の前年度列の諸収入と市債が、同じ冊子の款別の明細と79,300千円ずつ食い違っている（合計は同じ）。",
+        "checkedOn": "2026-09-27"
+      }
+    ]
+  },
   "012131": {
     "budget": [
       {

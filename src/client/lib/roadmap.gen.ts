@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 294,
+  "budgetCount": 298,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 2208,
-  "fileCount": 3436,
-  "archivedCount": 2034,
+  "sourceCount": 2235,
+  "fileCount": 3463,
+  "archivedCount": 2060,
   "licenseOpen": 102,
-  "licensePermission": 1890,
+  "licensePermission": 1917,
   "licenseUnverified": 216,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -741,10 +741,22 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "奥州市",
+      "code": "032158",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "鶴岡市",
       "code": "062031",
       "years": 7,
       "range": "H31〜R8（7年度）"
+    },
+    {
+      "name": "会津若松市",
+      "code": "072028",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
     },
     {
       "name": "郡山市",
@@ -915,6 +927,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "彦根市",
+      "code": "252026",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "長浜市",
       "code": "252034",
       "years": 7,
@@ -1003,6 +1021,12 @@ export const ROADMAP_PROGRESS = {
       "code": "472115",
       "years": 7,
       "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "北見市",
+      "code": "012084",
+      "years": 6,
+      "range": "R3〜R8（6年度）"
     },
     {
       "name": "江別市",
