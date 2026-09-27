@@ -1,0 +1,12 @@
+{
+  "sourceId": "habikino-yosansho-r2",
+  "files": [
+    {
+      "filename": "01_ippan.pdf",
+      "sha256": "874ba7fb7a0e51041cc876dd5bd6f05b4779d4f7a5901981c7a78c8273c7b6f9",
+      "bytes": 9921590,
+      "fetchedAt": "2026-09-27T15:36:16.173Z",
+      "fetchedFrom": "https://www.city.habikino.lg.jp/material/files/group/7/01_ippan.pdf"
+    }
+  ]
+}
