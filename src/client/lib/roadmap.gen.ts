@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 289,
+  "budgetCount": 294,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 2174,
-  "fileCount": 3402,
-  "archivedCount": 2001,
+  "sourceCount": 2208,
+  "fileCount": 3436,
+  "archivedCount": 2034,
   "licenseOpen": 102,
-  "licensePermission": 1856,
+  "licensePermission": 1890,
   "licenseUnverified": 216,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -771,6 +771,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "加須市",
+      "code": "112101",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "上尾市",
       "code": "112194",
       "years": 7,
@@ -779,6 +785,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "柏市",
       "code": "122173",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "印西市",
+      "code": "122319",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },
@@ -903,6 +915,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "長浜市",
+      "code": "252034",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "京都市",
       "code": "261009",
       "years": 7,
@@ -959,6 +977,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "唐津市",
       "code": "412023",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "別府市",
+      "code": "442020",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },
@@ -1117,6 +1141,12 @@ export const ROADMAP_PROGRESS = {
       "code": "382027",
       "years": 6,
       "range": "R3〜R8（6年度）"
+    },
+    {
+      "name": "春日市",
+      "code": "402184",
+      "years": 6,
+      "range": "R2〜R8（6年度）"
     },
     {
       "name": "長崎市",

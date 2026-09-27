@@ -1726,4 +1726,14 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     url: "https://www.city.hakusan.lg.jp/shisei/zaisei/1003544/1003560.html",
     checkedOn: "2026-09-27", ref: "docs/data-sources.md §13-44",
   },
+  {
+    // 春日市（402184）R3。R8〜R4・R2 は収録済み（§13-45）。
+    code: "402184", name: "春日市", dataset: "budget", fiscalYears: ["R3"],
+    categories: ["scanned-image"],
+    reason:
+      "現在掲載されている予算に関する説明書は紙から取り込み直したもので、文字認識で付けた文字しか入っておらず、合計の行や款の名前が読み取れない。" +
+      "当初に掲載されていた版はウェブの保存記録にあるが、2ページ目以降に文字の情報が入っていない。",
+    url: "https://www.city.kasuga.fukuoka.jp/shisei/zaiseijoukyou/yosan/1004507.html",
+    checkedOn: "2026-09-27", ref: "docs/data-sources.md §13-45",
+  },
 ];

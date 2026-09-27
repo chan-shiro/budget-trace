@@ -18012,5 +18012,209 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.hakusan.lg.jp/shisei/zaisei/1003544/1003545.html",
     "license": "これらの資料について本市に無断で複製、加工、再配布する事を禁じます。本ホームページの著作権は原則として白山市にありますが、一部の写真やイラストなど外部に著作権がある場合があります。引用及び転載をする場合には、シティプロモーション推進課へご相談ください。",
     "target": "page"
+  },
+  "/sources/inzai-yosan-gaiyou-r8/R8tousyoyosannnogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.inzai.lg.jp/cmsfiles/contents/0000021/21276/R8tousyoyosannnogaiyou.pdf",
+    "license": "印西市公式ホームページ（以下、「本サイト」）に掲載するコンテンツ（テキスト、画像、PDF等）に関する著作権は、原則として印西市に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。著作権法上の「私的使用」や「引用」の範囲を越えて、無断で転用、引用、複製などをすることは出来ません。",
+    "target": "file"
+  },
+  "/sources/inzai-yosan-gaiyou-r7/yosanngaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.inzai.lg.jp/cmsfiles/contents/0000019/19322/yosanngaiyou.pdf",
+    "license": "印西市公式ホームページ（以下、「本サイト」）に掲載するコンテンツ（テキスト、画像、PDF等）に関する著作権は、原則として印西市に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。著作権法上の「私的使用」や「引用」の範囲を越えて、無断で転用、引用、複製などをすることは出来ません。",
+    "target": "file"
+  },
+  "/sources/inzai-yosan-gaiyou-r6/reiwa6nendo_yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.inzai.lg.jp/cmsfiles/contents/0000017/17558/reiwa6nendo_yosannogaiyou.pdf",
+    "license": "印西市公式ホームページ（以下、「本サイト」）に掲載するコンテンツ（テキスト、画像、PDF等）に関する著作権は、原則として印西市に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。著作権法上の「私的使用」や「引用」の範囲を越えて、無断で転用、引用、複製などをすることは出来ません。",
+    "target": "file"
+  },
+  "/sources/inzai-yosan-gaiyou-r5/R5yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.inzai.lg.jp/cmsfiles/contents/0000015/15548/R5yosangaiyou.pdf",
+    "license": "印西市公式ホームページ（以下、「本サイト」）に掲載するコンテンツ（テキスト、画像、PDF等）に関する著作権は、原則として印西市に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。著作権法上の「私的使用」や「引用」の範囲を越えて、無断で転用、引用、複製などをすることは出来ません。",
+    "target": "file"
+  },
+  "/sources/inzai-yosan-gaiyou-r4/R4yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.inzai.lg.jp/cmsfiles/contents/0000013/13931/R4yosangaiyou.pdf",
+    "license": "印西市公式ホームページ（以下、「本サイト」）に掲載するコンテンツ（テキスト、画像、PDF等）に関する著作権は、原則として印西市に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。著作権法上の「私的使用」や「引用」の範囲を越えて、無断で転用、引用、複製などをすることは出来ません。",
+    "target": "file"
+  },
+  "/sources/inzai-yosan-gaiyou-r3/R3yosangaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.inzai.lg.jp/cmsfiles/contents/0000012/12238/R3yosangaiyo.pdf",
+    "license": "印西市公式ホームページ（以下、「本サイト」）に掲載するコンテンツ（テキスト、画像、PDF等）に関する著作権は、原則として印西市に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。著作権法上の「私的使用」や「引用」の範囲を越えて、無断で転用、引用、複製などをすることは出来ません。",
+    "target": "file"
+  },
+  "/sources/inzai-yosan-gaiyou-r2/R2yosangaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.inzai.lg.jp/cmsfiles/contents/0000010/10431/R2yosangaiyo.pdf",
+    "license": "印西市公式ホームページ（以下、「本サイト」）に掲載するコンテンツ（テキスト、画像、PDF等）に関する著作権は、原則として印西市に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。著作権法上の「私的使用」や「引用」の範囲を越えて、無断で転用、引用、複製などをすることは出来ません。",
+    "target": "file"
+  },
+  "/sources/beppu-yosanan-setsumei-r8/kaikei1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.beppu.oita.jp/doc/sisei/zaisei/yosan/toushoyosan/r08/gaiyou/kaikei1.pdf",
+    "license": "別府市の公式サイトを構成している文章、画像、図表等の著作権は別府市及び各製作者に帰属しており、転載・二次転用などは禁止させていただきます。",
+    "target": "file"
+  },
+  "/sources/beppu-yosanan-setsumei-r7/kaikei1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.beppu.oita.jp/doc/sisei/zaisei/yosan/toushoyosan/r07/gaiyou/kaikei1.pdf",
+    "license": "別府市の公式サイトを構成している文章、画像、図表等の著作権は別府市及び各製作者に帰属しており、転載・二次転用などは禁止させていただきます。",
+    "target": "file"
+  },
+  "/sources/beppu-yosanan-setsumei-r6/kaikei1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.beppu.oita.jp/doc/sisei/zaisei/yosan/toushoyosan/r06/gaiyou/kaikei1.pdf",
+    "license": "別府市の公式サイトを構成している文章、画像、図表等の著作権は別府市及び各製作者に帰属しており、転載・二次転用などは禁止させていただきます。",
+    "target": "file"
+  },
+  "/sources/beppu-yosanan-sokatsu-r5/01.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.beppu.oita.jp/doc/sisei/zaisei/yosan/toushoyosan/r05/gaiyou/01.pdf",
+    "license": "別府市の公式サイトを構成している文章、画像、図表等の著作権は別府市及び各製作者に帰属しており、転載・二次転用などは禁止させていただきます。",
+    "target": "file"
+  },
+  "/sources/beppu-yosanan-sokatsu-r4/01.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.beppu.oita.jp/doc/sisei/zaisei/yosan/toushoyosan/r04/gaiyou/01.pdf",
+    "license": "別府市の公式サイトを構成している文章、画像、図表等の著作権は別府市及び各製作者に帰属しており、転載・二次転用などは禁止させていただきます。",
+    "target": "file"
+  },
+  "/sources/beppu-yosanan-sokatsu-r3/01.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.beppu.oita.jp/doc/sisei/zaisei/yosan/toushoyosan/r03/gaiyou/01.pdf",
+    "license": "別府市の公式サイトを構成している文章、画像、図表等の著作権は別府市及び各製作者に帰属しており、転載・二次転用などは禁止させていただきます。",
+    "target": "file"
+  },
+  "/sources/beppu-yosanan-sokatsu-r2/00.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.beppu.oita.jp/doc/sisei/zaisei/yosan/toushoyosan/r02/00.pdf",
+    "license": "別府市の公式サイトを構成している文章、画像、図表等の著作権は別府市及び各製作者に帰属しており、転載・二次転用などは禁止させていただきます。",
+    "target": "file"
+  },
+  "/sources/kazo-yosan-point-r8/R8yosannnopoint.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kazo.lg.jp/soshiki/zaisei/yosan/43249.html",
+    "license": "当市のホームページに掲載している文章・画像等、全てのページは、著作権の対象になっています。許可なく文章・画像等の無断使用・転載を禁止します。",
+    "target": "page"
+  },
+  "/sources/kazo-yosan-point-r7/R7yosannopoint.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kazo.lg.jp/soshiki/zaisei/yosan/40975.html",
+    "license": "当市のホームページに掲載している文章・画像等、全てのページは、著作権の対象になっています。許可なく文章・画像等の無断使用・転載を禁止します。",
+    "target": "page"
+  },
+  "/sources/kazo-yosan-point-r6/r6_2yosanannopointo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kazo.lg.jp/soshiki/zaisei/yosan/38379.html",
+    "license": "当市のホームページに掲載している文章・画像等、全てのページは、著作権の対象になっています。許可なく文章・画像等の無断使用・転載を禁止します。",
+    "target": "page"
+  },
+  "/sources/kazo-yosan-point-r5/r5_2yosannopointo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kazo.lg.jp/soshiki/zaisei/yosan/35448.html",
+    "license": "当市のホームページに掲載している文章・画像等、全てのページは、著作権の対象になっています。許可なく文章・画像等の無断使用・転載を禁止します。",
+    "target": "page"
+  },
+  "/sources/kazo-yosan-point-r4/r4yosannopoint_syuusei2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kazo.lg.jp/soshiki/zaisei/yosan/28793.html",
+    "license": "当市のホームページに掲載している文章・画像等、全てのページは、著作権の対象になっています。許可なく文章・画像等の無断使用・転載を禁止します。",
+    "target": "page"
+  },
+  "/sources/kazo-yosan-point-r3/r3_yosan_point.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kazo.lg.jp/soshiki/zaisei/yosan/25723.html",
+    "license": "当市のホームページに掲載している文章・画像等、全てのページは、著作権の対象になっています。許可なく文章・画像等の無断使用・転載を禁止します。",
+    "target": "page"
+  },
+  "/sources/kazo-yosan-point-r2/r2_yosan_point.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kazo.lg.jp/soshiki/zaisei/yosan/8298.html",
+    "license": "当市のホームページに掲載している文章・画像等、全てのページは、著作権の対象になっています。許可なく文章・画像等の無断使用・転載を禁止します。",
+    "target": "page"
+  },
+  "/sources/nagahama-yosan-gaiyou-keisuu-r8/02R8yosangaiyoukeisuusiryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagahama.lg.jp/cmsfiles/contents/0000016/16625/02R8yosangaiyoukeisuusiryou.pdf",
+    "license": "長浜市公式ホームページに掲載している情報(文章、写真、画像、その他のデータ)は、著作権の対象であり法律によって保護されています。これらの情報については、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、長浜市の許可なく複製、転用等することは法律で禁止されています。また、画像などの著作権には原著作者が所有しているものもありますのでご注意ください。",
+    "target": "file"
+  },
+  "/sources/nagahama-yosan-gaiyou-keisuu-r6/02R6yosangaiyoukeisuusiryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagahama.lg.jp/cmsfiles/contents/0000013/13919/02R6yosangaiyoukeisuusiryou.pdf",
+    "license": "長浜市公式ホームページに掲載している情報(文章、写真、画像、その他のデータ)は、著作権の対象であり法律によって保護されています。これらの情報については、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、長浜市の許可なく複製、転用等することは法律で禁止されています。また、画像などの著作権には原著作者が所有しているものもありますのでご注意ください。",
+    "target": "file"
+  },
+  "/sources/nagahama-yosan-gaiyou-keisuu-r5/R5yosan02.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagahama.lg.jp/cmsfiles/contents/0000012/12535/R5yosan02.pdf",
+    "license": "長浜市公式ホームページに掲載している情報(文章、写真、画像、その他のデータ)は、著作権の対象であり法律によって保護されています。これらの情報については、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、長浜市の許可なく複製、転用等することは法律で禁止されています。また、画像などの著作権には原著作者が所有しているものもありますのでご注意ください。",
+    "target": "file"
+  },
+  "/sources/nagahama-yosan-gaiyou-keisuu-r4/R4yosan02.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagahama.lg.jp/cmsfiles/contents/0000011/11181/R4yosan02.pdf",
+    "license": "長浜市公式ホームページに掲載している情報(文章、写真、画像、その他のデータ)は、著作権の対象であり法律によって保護されています。これらの情報については、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、長浜市の許可なく複製、転用等することは法律で禁止されています。また、画像などの著作権には原著作者が所有しているものもありますのでご注意ください。",
+    "target": "file"
+  },
+  "/sources/nagahama-yosan-gaiyou-keisuu-r3/R3yosan2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagahama.lg.jp/cmsfiles/contents/0000009/9807/R3yosan2.pdf",
+    "license": "長浜市公式ホームページに掲載している情報(文章、写真、画像、その他のデータ)は、著作権の対象であり法律によって保護されています。これらの情報については、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、長浜市の許可なく複製、転用等することは法律で禁止されています。また、画像などの著作権には原著作者が所有しているものもありますのでご注意ください。",
+    "target": "file"
+  },
+  "/sources/nagahama-yosan-gaiyou-keisuu-r2/R2yosan2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagahama.lg.jp/cmsfiles/contents/0000007/7974/R2yosan2.pdf",
+    "license": "長浜市公式ホームページに掲載している情報(文章、写真、画像、その他のデータ)は、著作権の対象であり法律によって保護されています。これらの情報については、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、長浜市の許可なく複製、転用等することは法律で禁止されています。また、画像などの著作権には原著作者が所有しているものもありますのでご注意ください。",
+    "target": "file"
+  },
+  "/sources/nagahama-ippan-yosansho-gian54-r7/0703giansho3.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nagahama.lg.jp/cmsfiles/contents/0000015/15295/0703giansho3.pdf",
+    "license": "長浜市公式ホームページに掲載している情報(文章、写真、画像、その他のデータ)は、著作権の対象であり法律によって保護されています。これらの情報については、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、長浜市の許可なく複製、転用等することは法律で禁止されています。また、画像などの著作権には原著作者が所有しているものもありますのでご注意ください。",
+    "target": "file"
+  },
+  "/sources/kasuga-yosan-setsumei-r8/r8toushosetumeisho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kasuga.fukuoka.jp/_res/projects/default_project/_page_/001/004/507/r8toushosetumeisho.pdf",
+    "license": "春日市ウェブサイトの著作権は、春日市（写真や文章などの一部はその著作権者）に帰属します。著作権法で認められている場合を除き、著作権者の許可なく文章や画像、データなどの一部または全部を利用することは禁止します。",
+    "target": "file"
+  },
+  "/sources/kasuga-yosan-setsumei-r7/r7toushosetumeisho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kasuga.fukuoka.jp/_res/projects/default_project/_page_/001/004/507/r7toushosetumeisho.pdf",
+    "license": "春日市ウェブサイトの著作権は、春日市（写真や文章などの一部はその著作権者）に帰属します。著作権法で認められている場合を除き、著作権者の許可なく文章や画像、データなどの一部または全部を利用することは禁止します。",
+    "target": "file"
+  },
+  "/sources/kasuga-yosan-setsumei-r6/06setumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kasuga.fukuoka.jp/_res/projects/default_project/_page_/001/004/507/06setumei.pdf",
+    "license": "春日市ウェブサイトの著作権は、春日市（写真や文章などの一部はその著作権者）に帰属します。著作権法で認められている場合を除き、著作権者の許可なく文章や画像、データなどの一部または全部を利用することは禁止します。",
+    "target": "file"
+  },
+  "/sources/kasuga-yosan-setsumei-r5/r05tosyo-setumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kasuga.fukuoka.jp/_res/projects/default_project/_page_/001/004/507/r05tosyo-setumeisyo.pdf",
+    "license": "春日市ウェブサイトの著作権は、春日市（写真や文章などの一部はその著作権者）に帰属します。著作権法で認められている場合を除き、著作権者の許可なく文章や画像、データなどの一部または全部を利用することは禁止します。",
+    "target": "file"
+  },
+  "/sources/kasuga-yosan-setsumei-r4/r04yosansetumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kasuga.fukuoka.jp/_res/projects/default_project/_page_/001/004/507/r04yosansetumei.pdf",
+    "license": "春日市ウェブサイトの著作権は、春日市（写真や文章などの一部はその著作権者）に帰属します。著作権法で認められている場合を除き、著作権者の許可なく文章や画像、データなどの一部または全部を利用することは禁止します。",
+    "target": "file"
+  },
+  "/sources/kasuga-yosan-setsumei-r2/r02tousyoyosannsetumeisho.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20200912/20200911165608/https://www.city.kasuga.fukuoka.jp/_res/projects/default_project/_page_/001/004/507/r02tousyoyosannsetumeisho.pdf",
+    "license": "春日市ウェブサイトの著作権は、春日市（写真や文章などの一部はその著作権者）に帰属します。著作権法で認められている場合を除き、著作権者の許可なく文章や画像、データなどの一部または全部を利用することは禁止します。",
+    "target": "file"
   }
 };

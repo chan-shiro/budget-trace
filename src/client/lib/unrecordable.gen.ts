@@ -991,6 +991,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
       }
     ]
   },
+  "402184": {
+    "budget": [
+      {
+        "fyLabel": "令和3年度",
+        "reason": "現在掲載されている予算に関する説明書は紙から取り込み直したもので、文字認識で付けた文字しか入っておらず、合計の行や款の名前が読み取れない。当初に掲載されていた版はウェブの保存記録にあるが、2ページ目以降に文字の情報が入っていない。",
+        "checkedOn": "2026-09-27"
+      }
+    ]
+  },
   "412015": {
     "budget": [
       {

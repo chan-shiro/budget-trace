@@ -3172,6 +3172,32 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
       srcId: `hakusan-ippan-huhyou-${fy}`, muniCode: "172103", muniName: "白山市", prefName: "石川県", isPref: false,
     })),
+    // ---- 第43巡（2026-09-27・§13-45）: 長浜・別府・加須・春日・印西 ----
+    // ⚠⚠ 長浜 R8・R4 は骨格予算＋同時提出の政策補正で、当初（A 列）を採る。R5 の前年度列は R4 の当初＋補正第1号（prevBasis 補正後）。
+    //   R7 は概要の議案第8号が否決 ⇒ 成立した議案第54号の予算書（別 srcId）
+    ...(["r8", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `nagahama-yosan-gaiyou-keisuu-${fy}`, muniCode: "252034", muniName: "長浜市", prefName: "滋賀県", isPref: false,
+    })),
+    { srcId: "nagahama-ippan-yosansho-gian54-r7", muniCode: "252034", muniName: "長浜市", prefName: "滋賀県", isPref: false },
+    // ⚠⚠ 別府 R5・R1 は骨格予算で R6・R2 の前年度列は肉付け後（prevBasis 補正後）。R8〜R6 は説明資料、R5〜R2 は総括説明資料（別 srcId）。ライセンスが割れていて要許可へ倒した
+    ...(["r8", "r7", "r6"] as const).map((fy) => ({
+      srcId: `beppu-yosanan-setsumei-${fy}`, muniCode: "442020", muniName: "別府市", prefName: "大分県", isPref: false,
+    })),
+    ...(["r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `beppu-yosanan-sokatsu-${fy}`, muniCode: "442020", muniName: "別府市", prefName: "大分県", isPref: false,
+    })),
+    // ⚠ 加須は noDeepLink（リンク先をトップページに指定する指示形）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `kazo-yosan-point-${fy}`, muniCode: "112101", muniName: "加須市", prefName: "埼玉県", isPref: false,
+    })),
+    // ⚠⚠ 春日は財源内訳の列見出し4語が款に付く（Σ 差0）。R2 は WARP、R3 は OCR のみで未収録
+    ...(["r8", "r7", "r6", "r5", "r4", "r2"] as const).map((fy) => ({
+      srcId: `kasuga-yosan-setsumei-${fy}`, muniCode: "402184", muniName: "春日市", prefName: "福岡県", isPref: false,
+    })),
+    // ⚠⚠ 印西は歳出の備考列を CropX で落とす（R2 の余裕は約1pt・外すと Σ 差0 のまま款名が汚れる）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `inzai-yosan-gaiyou-${fy}`, muniCode: "122319", muniName: "印西市", prefName: "千葉県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。
