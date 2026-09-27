@@ -242,6 +242,7 @@ interface Options {
    * ⚠⚠ **側ごとにも書ける**（2026-09-27・鎌ケ谷 R5・R4・#300）。鎌ケ谷は**歳入の合計行だけ**構成比が整数 `100`
    *   （歳出の合計行は `100.0` で既定の推測が当たる）。数値で書けば従来どおり両側、`{ revenue: 0 }` のように
    *   書けばその側だけ（もう片側は既定の推測）。2つセットの検査も**側ごと**に行う（`amountIntIndex` と同じ形）。
+   *   ⚠ 両方を空オブジェクト `{}` にすると両側とも未指定と同じ（throw しない・既定の推測）。書くなら側を必ず入れる。
    */
   totalAmountIntIndex?: number | { revenue?: number; expenditure?: number };
   totalPrevIntIndex?: number | { revenue?: number; expenditure?: number };

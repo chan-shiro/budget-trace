@@ -18399,44 +18399,44 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
   },
   "/sources/kamagaya-yosan-gaiyou-r8/R8yosangaiyou2.pdf": {
     "mode": "origin",
-    "href": "https://www.city.kamagaya.chiba.jp/sesakumidashi/sesaku_zaisei/yosan/index.html",
+    "href": "https://www.city.kamagaya.chiba.jp/sesakumidashi/sesaku_zaisei/yosan/index.files/R8yosangaiyou2.pdf",
     "license": "当ウェブサイト上の情報（文章・画像・音楽等）に関する著作権は、鎌ケ谷市に帰属しています。ただし、一部の画像等の著作権は、原著作者が所有している場合があります。これらの情報を営利目的に使用することや、無断転載を禁じます。",
-    "target": "page"
+    "target": "file"
   },
   "/sources/kamagaya-yosan-gaiyou-r7/R7yosangaiyou.pdf": {
     "mode": "origin",
-    "href": "https://www.city.kamagaya.chiba.jp/sesakumidashi/sesaku_zaisei/yosan/index.html",
+    "href": "https://www.city.kamagaya.chiba.jp/sesakumidashi/sesaku_zaisei/yosan/index.files/R7yosangaiyou.pdf",
     "license": "当ウェブサイト上の情報（文章・画像・音楽等）に関する著作権は、鎌ケ谷市に帰属しています。ただし、一部の画像等の著作権は、原著作者が所有している場合があります。これらの情報を営利目的に使用することや、無断転載を禁じます。",
-    "target": "page"
+    "target": "file"
   },
   "/sources/kamagaya-yosan-gaiyou-r6/R6gaiyou.pdf": {
     "mode": "origin",
-    "href": "https://www.city.kamagaya.chiba.jp/sesakumidashi/sesaku_zaisei/yosan/index.html",
+    "href": "https://www.city.kamagaya.chiba.jp/sesakumidashi/sesaku_zaisei/yosan/index.files/R6gaiyou.pdf",
     "license": "当ウェブサイト上の情報（文章・画像・音楽等）に関する著作権は、鎌ケ谷市に帰属しています。ただし、一部の画像等の著作権は、原著作者が所有している場合があります。これらの情報を営利目的に使用することや、無断転載を禁じます。",
-    "target": "page"
+    "target": "file"
   },
   "/sources/kamagaya-yosan-gaiyou-r5/R5gaiyou.pdf": {
     "mode": "origin",
-    "href": "https://www.city.kamagaya.chiba.jp/sesakumidashi/sesaku_zaisei/yosan/index.html",
+    "href": "https://www.city.kamagaya.chiba.jp/sesakumidashi/sesaku_zaisei/yosan/index.files/R5gaiyou.pdf",
     "license": "当ウェブサイト上の情報（文章・画像・音楽等）に関する著作権は、鎌ケ谷市に帰属しています。ただし、一部の画像等の著作権は、原著作者が所有している場合があります。これらの情報を営利目的に使用することや、無断転載を禁じます。",
-    "target": "page"
+    "target": "file"
   },
   "/sources/kamagaya-yosan-gaiyou-r4/R4gaiyou.pdf": {
     "mode": "origin",
-    "href": "https://www.city.kamagaya.chiba.jp/sesakumidashi/sesaku_zaisei/yosan/index.html",
+    "href": "https://www.city.kamagaya.chiba.jp/sesakumidashi/sesaku_zaisei/yosan/index.files/R4gaiyou.pdf",
     "license": "当ウェブサイト上の情報（文章・画像・音楽等）に関する著作権は、鎌ケ谷市に帰属しています。ただし、一部の画像等の著作権は、原著作者が所有している場合があります。これらの情報を営利目的に使用することや、無断転載を禁じます。",
-    "target": "page"
+    "target": "file"
   },
   "/sources/kamagaya-yosan-gaiyou-r3/R3yosan-gaiyou.pdf": {
-    "mode": "origin",
-    "href": "https://www.city.kamagaya.chiba.jp/sesakumidashi/sesaku_zaisei/yosan/index.html",
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20220308014615id_/https://www.city.kamagaya.chiba.jp/sesakumidashi/sesaku_zaisei/yosan/index.files/R3yosan-gaiyou.pdf",
     "license": "当ウェブサイト上の情報（文章・画像・音楽等）に関する著作権は、鎌ケ谷市に帰属しています。ただし、一部の画像等の著作権は、原著作者が所有している場合があります。これらの情報を営利目的に使用することや、無断転載を禁じます。",
-    "target": "page"
+    "target": "file"
   },
   "/sources/kamagaya-yosan-gaiyou-r2/R2yosangaiyou1.pdf": {
-    "mode": "origin",
-    "href": "https://www.city.kamagaya.chiba.jp/sesakumidashi/sesaku_zaisei/yosan/index.html",
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20220302161144id_/https://www.city.kamagaya.chiba.jp/sesakumidashi/sesaku_zaisei/yosan/index.files/R2yosangaiyou1.pdf",
     "license": "当ウェブサイト上の情報（文章・画像・音楽等）に関する著作権は、鎌ケ谷市に帰属しています。ただし、一部の画像等の著作権は、原著作者が所有している場合があります。これらの情報を営利目的に使用することや、無断転載を禁じます。",
-    "target": "page"
+    "target": "file"
   }
 };
