@@ -192,6 +192,16 @@ const HABIKINO_LICENSE =
   "本サイトに掲載の文章、画像などの著作権は、羽曳野市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。";
 const SANDA_LICENSE =
   "原則として、三田市市ホームページから発信するコンテンツの著作権は三田市に属します。ホームページの内容の全部又は一部については、私的使用又は引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載複製を行うことができます。ただし、「無断転載を禁じます」等の注記があるものについては、それに従ってください。";
+const OMUTA_LICENSE =
+  "「大牟田市ホームページ」に掲載しているすべてのコンテンツ（文章・画像・イラストなど)は、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。「大牟田市ホームページ」に掲載した著作物（文章・画像・音声など）、プログラムにかかわる著作権は、特別の断りがない限り大牟田市が保有します。";
+const ICHINOSEKI_LICENSE =
+  "当ホームページに掲載されている情報は、明記されているものを除き、すべて一関市が著作権を保有しています。私的利用のための複製や、引用など著作権法上認められた場合を除き、当ホームページの掲載コンテンツを複製・転用する場合は、必ず事前にそれぞれのコンテンツを所管する各担当課などにご相談ください。";
+const MISHIMA_LICENSE =
+  "「三島市公式ホームページ」（以下、当ページといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として本市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、本市の許可なく当ページに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。";
+const KOMATSU_LICENSE =
+  "「小松市ホームページ」に掲載されている個々の情報（文字、写真、イラスト等）は著作権の対象となっています。また、「小松市ホームページ」全体も編集著作物として著作権の対象となっており、ともに日本国著作権法及び国際条約により保護されています。「 私的使用のための複製」や「引用」など著作権法上認められた場合を除き、小松市の許可なく無断で複製・転用することはできません。";
+const TAJIMI_LICENSE =
+  "多治見市ホームページに掲載されている記事、画像、データ類は、すべて著作権の対象になっています。また、ホームページ全体も、編集著作権の対象となっています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製、転用することはできません。";
 const KOGA_IBARAKI_LICENSE =
   "古河市ホームページに掲載している個々の情報（文章、写真、イラストなど）に関する著作権は、原則として古河市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。古河市ホームページは利用目的を問わず自由な閲覧が可能ですが、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、古河市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。";
 
@@ -22421,6 +22431,270 @@ export const SOURCES: SourceEntry[] = [
       expenditureHeading: "(歳出)",
       prevColumnFirst: true,
       ...(fy === "R2" ? { expenditureHeaderExtra: "億円|見込み|など|^\\d+国庫支出金$" } : {}),
+    },
+  } satisfies SourceEntry)),
+
+  // 大牟田市（福岡県・団体コード 402028 ＝ 総務省 R6.json から実引き）。R8〜R6「一般会計歳入歳出予算款別比較表」（歳入 p.1／歳出 p.2）、
+  //   R5〜R2「歳入歳出予算の状況」（p.1 が会計別・歳入 p.2／歳出 p.3）。千円。歳入22款・歳出13款。見出し `歳 入`／`歳 出` は必須（無いと throw）。
+  // ⚠ R2 の歳入の款9 は原典が3行（「自動車取得税交付金」「９ 60,000…」「⇒環境性能割交付金」）で組んでいて、款名は原典どおり
+  //   `自動車取得税交付金⇒環境性能割交付金` として取る（抽出の壊れではない・R3 の款9 は `環境性能割交付金`）。
+  // 前年度列は当初（同じ PDF の会計別の列見出しが「当 初」）。R8→R2 の6リンクで款単位全一致（R2 の前年度も H31 の当年度と一致。
+  //   H31 は議会で修正された年で、R2 の前年度列は修正後の値＝議決された当初予算）。
+  // 骨格予算: R2〜R8 は無し（市長選は 2019-11・2023 年で当初予算の編成時期にかからない・資料に「骨格」0件）。議会: R2〜R8 はすべて原案可決。
+  // 総額突合: R6 当初 60,600,000千円 ÷ 総務省 R6 決算歳出 60,892,436千円 = 99.5%。
+  // ⚠ R2 の款9 の名前が R3 と違うので、R3←R2 の款単位の突合はこの1款だけ名前で結べない（値は 60,000 で一致・総額も一致）。
+  // ライセンス: 「著作権・リンク・免責事項・個人情報の取り扱いについて」（/kiji0033743/index.html・確認日 2026-09-28）＝要許可。
+  //   BODIK の大牟田市24件に予算・財政は0件。リンク: 「リンクは自由に設定していただいて結構です」（トップ以外もリンク切れの注意だけ・掲載後の連絡を求める）
+  //   ⇒ `noDeepLink` は立てない。
+  // ⚠ 主な事業（当初予算の主な事業・事業単位の前年度当初額あり・款なし・特別会計の事業が混ざる）と事業報告（主要施策の成果及び基金の運用状況説明書）は別の巡（§13-50）。
+  ...([
+    // [年度, 記事ID, ファイル, 歳入ページ, 歳出ページ]
+    ["R8", "00321276", "3_21276_127514_up_dyu5nc7y.pdf", 1, 2],
+    ["R7", "00320210", "3_20210_115737_up_kx8m2kvn.pdf", 1, 2],
+    ["R6", "00319167", "3_19167_105539_up_d348rmz5.pdf", 1, 2],
+    ["R5", "00317781", "3_17781_89309_up_osc7pi21.pdf", 2, 3],
+    ["R4", "00316490", "5_16490_84184_up_2VB1VLO0.pdf", 2, 3],
+    ["R3", "00315872", "5_15872_84187_up_Y5HBQV2Z.pdf", 2, 3],
+    ["R2", "00313929", "5_13929_58289_up_CYGXPVGG.pdf", 2, 3],
+  ] as const).map(([fy, kiji, file, rp, ep]) => ({
+    id: `omuta-kanbetsu-hikaku-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 大牟田市一般会計歳入歳出予算${["R8", "R7", "R6"].includes(fy) ? "款別比較表" : "の状況"}`,
+    publisher: "大牟田市",
+    url: `https://www.city.omuta.lg.jp/kiji${kiji}/${file}`,
+    landingPage: `https://www.city.omuta.lg.jp/kiji${kiji}/index.html`,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "大牟田市（一般会計・団体コード402028）",
+    license: OMUTA_LICENSE,
+    parser: "kofu-yosansho" as const,
+    parserOptions: { revenuePage: rp, expenditurePage: ep, revenueHeading: "歳 入", expenditureHeading: "歳 出" },
+  } satisfies SourceEntry)),
+
+  // 一関市（岩手県・団体コード 032093 ＝ 総務省 R6.json から実引き）。「一関市予算の概要」の「(2) 一般会計歳入の状況」「(3) 一般会計歳出の状況（目的別）」。
+  //   千円。歳入22款・歳出14款。物理ページ: R8 は 12/14、R7〜R3 は 14/16（備考は右隣の別ページ）。合計ラベルは歳入 `合 計`・歳出 `計`。
+  // ⚠⚠ 歳入の表は款番号順でなく自主財源／依存財源に分かれ、左端の縦書きラベル「区分／自主財源／依存財源」（x≈69.6〜79.2pt）が款行に混ざる
+  //   （`源 19 繰入金` は行ごと落ち、`自使用料及び手数料`・`主財産収入`・`財寄附金`・`存地方交付税` になる）⇒ `revenueCropX: {from:84,to:595}`。
+  // ⚠ R6〜R8 は当初と同じ日に「補正予算（第1号）」を提出していて、概要は当初＋第1号の「合計（補正後の額）」も載せるが、表の当年度は当初。
+  //   翌年度の前年度列も当初（補正前）の額（R8 の前年度 68,450,311 は補正後の 68,600,231 ではない）。骨格＋政策補正の型ではない。
+  // ⚠ R2 は歳入の廃止款 `自動車取得税交付金 ― ― 131,814 0.2 △131,814 ―`（番号なし・当年度がダッシュ・印も「皆減」も無い）を読み落とし、
+  //   前年度 Σ −131,814（warning 止まり）。#301 の手当ては当年度が `0`（整数3個）の型なので当たらない ⇒ unrecordable（parser-unsupported・§13-50）。
+  //   予算書・予算に関する説明書の R2 はスキャン画像で代わりにならない。
+  // 前年度列は当初（見出し「N年度当初予算」）。R8→R3 の5リンクで款単位全一致。議決は全年度「原案可決」。骨格予算: 概要全文に「骨格」「肉付」0件。
+  // 総額突合: R6 当初 67,876,079千円 ÷ 総務省 R6 決算歳出 73,487,260千円 = 92.4%。
+  // ライセンス: 「一関市ホームページについて（サイトポリシー）」の「著作権について」（/site-policy・確認日 2026-09-28）＝要許可。
+  //   リンクは「原則として自由です」（リンク後に連絡）⇒ `noDeepLink` は立てない。岩手県オープンデータポータルに一関市の組織は無い。
+  // ⚠ 主な事業（概要の「主要事項の説明」・款項目つき・前年度額なし・特別会計が続く）と事業報告（主要な施策の成果に関する説明書 R6〜H22）は別の巡（§13-50）。
+  ...([
+    ["R8", "07_%E4%BB%A4%E5%92%8C8%E5%B9%B4%E5%BA%A6%E4%B8%80%E9%96%A2%E5%B8%82%E4%BA%88%E7%AE%97%E3%81%AE%E6%A6%82%E8%A6%81.pdf", 12, 14],
+    ["R7", "20250313-094330.pdf", 14, 16],
+    ["R6", "20240313-153847.pdf", 14, 16],
+    ["R5", "20230317-105547.pdf", 14, 16],
+    ["R4", "20220317-103312.pdf", 14, 16],
+    ["R3", "20210319-133706.pdf", 14, 16],
+  ] as const).map(([fy, file, rp, ep]) => ({
+    id: `ichinoseki-yosan-gaiyou-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 一関市予算の概要（一般会計 歳入・歳出（目的別）款別＋前年度比較）`,
+    publisher: "一関市",
+    url: `https://www.city.ichinoseki.iwate.jp/uploads/public/archive_0000000998_00/${file}`,
+    landingPage: "https://www.city.ichinoseki.iwate.jp/archive/contents-48734",
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "一関市（一般会計・団体コード032093）",
+    license: ICHINOSEKI_LICENSE,
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      revenuePage: rp,
+      expenditurePage: ep,
+      revenueHeading: "一般会計歳入の状況",
+      expenditureHeading: "一般会計歳出の状況",
+      revenueTotalLabel: "合計",
+      expenditureTotalLabel: "計",
+      revenueCropX: { from: 84, to: 595 },
+    },
+  } satisfies SourceEntry)),
+
+  // 三島市（静岡県・団体コード 222062 ＝ 総務省 R6.json から実引き）。一般会計予算書「歳入歳出予算事項別明細書 １ 総括」。千円。
+  //   歳入23款・歳出13款（R8 のみ14款＝款13 諸支出金を新設・前年度 0）。見出し `（歳入）`／`（歳出）`・合計ラベルは既定。
+  //   物理ページ: R8 は歳入 p.23〜24／歳出 p.25、R7〜R5 は p.25〜26／p.27、R2 は見開き版（rot=90）で p.13／p.14。
+  // ⚠ R8・R2 は ToUnicode 欠落（豊島 R4 と同じ生成系）⇒ `decodeGarble`（復号表の追加なしで通る）。
+  // ⚠⚠ R2 は見開きの左右2面が -layout で1行に融合するので歳入だけ `textSource: raw`。raw では題字が款1 に付く（`総括歳入歳出予算事項別明細書市税`・
+  //   **Σ 差0 のまま静かに壊れる**）⇒ `revenueHeaderExtra`。
+  // ⚠ R4・R3 も見開き版だが、**歳入の総括が1物理ページの左右2段**（左 款1〜18・右 款19〜23＋合計）に組まれ、-layout では段が融合、-raw では見出しを失い、
+  //   CropX は1本の帯しか切れない ⇒ unrecordable（parser-unsupported・§13-50）。帯 x=0〜420／420〜842 に切れば左右とも行が壊れずに出る（偵察の実測）。
+  // ⚠ 財源内訳の見出しで化け字が別の実在字に見える（「源」→ `※`、「訳」→ `ヂ`）。decodeGarble は throw しないが款名の範囲には出ない（款名は隣の年度と一致）。
+  // 前年度列は当初（見出し「前年度予算額」）。R8→R2→H31 の全リンクで款単位全一致（R2 は法人事業税交付金の新設で款番号が1つずれる）。
+  // 骨格予算: 市長選は12月・施政方針に「骨格」0件。議会: R8〜R2 の議第1号はすべて可決。
+  // 総額突合: R6 当初 45,070,000千円 ÷ 総務省 R6 決算歳出 46,084,472千円 = 97.8%。
+  // ライセンス: 「免責事項・著作権・リンク」（/site/userguide/17917.html・確認日 2026-09-28）＝要許可。オープンデータ（CC・「本ページで公開している著作物」）の
+  //   財政の資料は決算の統計 XLSX だけ。リンクは「リンクはフリーです。リンクされる際には可能な限りトップページ（…）へお願いします。」⇒ `noDeepLink` は立てない。
+  // ⚠ 主な事業（予算案の大要の「主な事業（詳細一覧）」・前年度当初額つき）と事業報告（事務事業評価表の個票・市政報告書 R6〜H29）は別の巡（§13-50）。
+  ...([
+    // [年度, 添付ID, 年度ページID, 歳入 from, 歳入 to, 歳出, decodeGarble]
+    ["R8", "13478", "22591", 23, 24, 25, true],
+    ["R7", "5960", "3272", 25, 26, 27, false],
+    ["R6", "5281", "3048", 25, 26, 27, false],
+    ["R5", "4649", "2885", 25, 26, 27, false],
+  ] as const).map(([fy, att, page, rf, rt, ep, garble]) => ({
+    id: `mishima-yosansho-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 三島市一般会計予算書（歳入歳出予算事項別明細書 総括）`,
+    publisher: "三島市",
+    url: `https://www.city.mishima.shizuoka.jp/uploaded/attachment/${att}.pdf`,
+    landingPage: `https://www.city.mishima.shizuoka.jp/page/${page}.html`,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "三島市（一般会計・団体コード222062）",
+    license: MISHIMA_LICENSE,
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      revenuePages: { from: rf, to: rt },
+      expenditurePage: ep,
+      revenueHeading: "（歳入）",
+      expenditureHeading: "（歳出）",
+      ...(garble ? { decodeGarble: true } : {}),
+    },
+  } satisfies SourceEntry)),
+  {
+    // 三島市 R2（上の三島市のコメント参照）。見開き版・歳入だけ -raw。
+    id: "mishima-yosansho-r2",
+    title: "令和2年度 三島市一般会計予算書（歳入歳出予算事項別明細書 総括）",
+    publisher: "三島市",
+    url: "https://www.city.mishima.shizuoka.jp/uploaded/attachment/3543.pdf",
+    landingPage: "https://www.city.mishima.shizuoka.jp/page/2344.html",
+    kind: "pdf",
+    fiscalYear: "R2",
+    scope: "三島市（一般会計・団体コード222062）",
+    license: MISHIMA_LICENSE,
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 13,
+      expenditurePage: 14,
+      revenueHeading: "（歳入）",
+      expenditureHeading: "（歳出）",
+      decodeGarble: true,
+      textSource: { revenue: "raw" },
+      revenueHeaderExtra: "総括$|^（歳入）$|^歳入歳出予算事項別明細書$",
+    },
+  } satisfies SourceEntry,
+
+  // 小松市（石川県・団体コード 172031 ＝ 総務省 R6.json から実引き）。「予算に関する説明書」の「一般会計歳入歳出予算事項別明細書 １ 総括」。
+  //   千円。歳入23款（R2 は廃止款「自動車取得税交付金」を加えて24）・歳出13款。物理ページ: R8〜R3 は歳入 p.5／歳出 p.6、R2 は歳入 p.5〜6／歳出 p.7。
+  //   見出し `（歳入）`／`（歳出）`・合計ラベルは既定。歳出の右の財源内訳は既定の添字で正しく取れる。
+  // ⚠⚠ **骨格予算は R7・R3**（「予算のあらまし」に明記・skeleton-budgets.ts）。**R8・R4 の前年度列は前年度の6月補正後**（R8 の前年度 54,760,300 ＝
+  //   R7 あらましの「547億6,030万円」。R4 の前年度 48,914,100 ＝ R3 の6月補正後。R3 は4月補正も含む）なのに、見出しは「前年度予算額」だけで
+  //   パーサの自動判定は「当初」⇒ **R8・R4 に `prevBasis: "補正後"`＋`prevNote`**。⚠ 当初予算側の資料（総括表・主な施策・説明書）には「骨格」の語が0件。
+  // ⚠ 軽い「予算総括表」は R4・R8 が前年度を上段（補正後）／下段（当初）の2段組み、R2 は半角括弧の下段で既存パーサに乗らない ⇒ 説明書で揃えた。
+  // 前年度列は R2・R3・R5・R6・R7 が当初（R7←R6・R6←R5・R5←R4・R3←R2 は款単位全一致。R2 の前年度は H31 あらましの当初額と一致）。議会修正の形跡なし。
+  // 総額突合: R6 当初 51,650,000千円 ÷ 総務省 R6 決算歳出 56,298,460千円 = 91.7%。
+  // ライセンス: 「リンク・著作権・免責事項」（/site/5901.html・確認日 2026-09-28）＝要許可。いしかわ CKAN の小松市15件・市の一覧14件に予算・財政は0件。
+  //   リンクは「原則として自由ですが、リンクを行った場合は、…ご連絡ください」（リンク基準は事前連絡・別ウインドウ）⇒ `noDeepLink` は立てない。
+  // ⚠ 主な事業（当初予算概要の主な施策の概要・款なし・特別会計の事業が混ざる）は別の巡。事業報告はウェブ未掲載（§13-50）。
+  ...([
+    // [年度, 年度ページ, ファイル]
+    ["R8", "18366", "R08tousho_jikoubetsu.pdf"],
+    ["R7", "17535", "R07tousho_jikoubetsu.pdf"],
+    ["R6", "16523", "R0603tousho_jikoubetsu.pdf"],
+    ["R5", "14799", "R05tousho_jikobetsu.pdf"],
+    ["R4", "13534", "02_R04tousho_jikobetsu.pdf"],
+    ["R3", "11797", "02R03tousho_jikobetsu3.pdf"],
+    ["R2", "9973", "02R02tousho_jikobetsu.pdf"],
+  ] as const).map(([fy, page, file]) => ({
+    id: `komatsu-yosan-setsumeisho-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 小松市予算に関する説明書（一般会計 歳入歳出予算事項別明細書 総括）`,
+    publisher: "小松市",
+    url: `https://www.city.komatsu.lg.jp/material/files/group/5/${file}`,
+    landingPage: `https://www.city.komatsu.lg.jp/soshiki/1005/zaisei_yosan/3/${page}.html`,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "小松市（一般会計・団体コード172031）",
+    license: KOMATSU_LICENSE,
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      ...(fy === "R2" ? { revenuePages: { from: 5, to: 6 }, expenditurePage: 7 } : { revenuePage: 5, expenditurePage: 6 }),
+      revenueHeading: "（歳入）",
+      expenditureHeading: "（歳出）",
+      ...(fy === "R8"
+        ? {
+            prevBasis: "補正後" as const,
+            prevNote:
+              "前年度（令和7年度）の当初予算は、3月に市長選挙を控えていたため骨格予算でした（小松市「令和7年度予算のあらまし」に「令和７年度は、令和７年３月に市長選挙を控えていたため骨格予算となった当初予算と、６月補正予算を合わせた予算が通年予算となります。」と記載）。この資料の前年度額は当初予算額ではなく、6月補正後の予算額です。",
+          }
+        : fy === "R4"
+          ? {
+              prevBasis: "補正後" as const,
+              prevNote:
+                "前年度（令和3年度）の当初予算は、3月に市長選挙を控えていたため骨格予算でした（小松市「令和3年度予算のあらまし」に「令和３年度は，令和３年３月に市長選挙を控えていたため骨格予算となった当初予算と，４月・６月補正予算を合わせた予算が通年予算となります。」と記載）。この資料の前年度額は当初予算額ではなく、6月補正後の予算額（4月補正を含む）です。",
+            }
+          : {}),
+    },
+  } satisfies SourceEntry)),
+
+  // 多治見市（岐阜県・団体コード 212041 ＝ 総務省 R6.json から実引き）。財政課「当初予算の概要（議決後）」の「一般会計予算歳入集計表」「款別歳出集計表」。
+  //   歳入と歳出が**別 PDF**（各1ページ・千円・R2 の歳入だけ2ページ）。歳入23款（R2 は廃止款を加えて24）・歳出14款。
+  // ⚠ PDF 本文に「多治見市」の字が無い。同定は年度ページからのリンク＋ページ本文の予算総括表の一般会計額が PDF の合計と一致すること。
+  // ⚠⚠ R8〜R4 は款名と金額の間に財源種別の列（自主／依存）があり、全23款が `市税自主`・`地方譲与税依存` になる（**Σ 差0 のまま**・府中と同型）
+  //   ⇒ `kanNameSuffixStrip`（R3・R2 にはこの列が無い）。
+  // ⚠⚠ 歳入表に項の内訳行（字下げ7〜8）が混ざる ⇒ 全年度 `kanIndentMax: 4`（外すと R6・R5 は款12 が `新型コロナウイルス感染症対策地方税減収補塡特別交付金地方交付税`
+  //   になり **Σ 差0 のまま静かに壊れる**。R7・R5 は項の皆減行が廃止款として湧いて前年度 Σ が割れる）。R2 の廃止款の行は字下げ2〜4 なので 4 で拾える。
+  // ⚠ 歳出の見出しは R8〜R5「一般会計予算款別歳出集計表」・R4〜R2「一般会計款別予算歳出集計表」⇒ 共通部分 `歳出集計表`。
+  // ⚠⚠ **骨格予算は R5**（R5 の年度ページ本文「令和5年度当初予算は、市長改選を控え、義務的経費や継続的事業を中心とした「骨格予算」として編成しました。」
+  //   ・skeleton-budgets.ts）。R6 の資料は前年度の列が「当初予算額」（40,179,000＝R5 骨格）と「本格予算額」（41,610,174）の2本で、パーサは当初の列を取る
+  //   ⇒ prevBasis は当初のまま **R6 に `prevNote`**。
+  // ⚠ R3・R2 は現行サイトから削除済み ⇒ WARP（2021-05-11 収集）。R2 は同じ資料が2版あり（金額は38款すべて一致）、年度一覧からリンクされていた新しい版を採る。
+  // 前年度列は当初（列見出し「前年度 当初予算額」）。R8→R2 の6リンクで款単位全一致（R2 の前年度も H31 当初の総括額と一致）。
+  // 議会: 年度ページに「修正」「否決」0件。総額突合: R6 当初 45,963,000千円 ÷ 総務省 R6 決算歳出 44,468,684千円 = 103.4%。
+  // ライセンス: 「サイトポリシー」の「著作権」（/about/1008822.html・確認日 2026-09-28）＝要許可。岐阜県 CKAN の多治見市20件に予算・財政は0件。
+  //   リンクは「原則として自由にリンクしていただけます。…できるだけトップページにお願いします。」⇒ `noDeepLink` は立てない。
+  // ⚠ 主な事業（一般会計予算の主要内容・款と前年度当初額つき）は別の巡。事業報告はウェブ未掲載と判断（§13-50）。
+  ...([
+    // [年度, 歳入 URL, 歳出 URL, ランディング]
+    ["R8", "https://www.city.tajimi.lg.jp/_res/projects/default_project/_page_/001/009/932/r8_yosan_sainyusyukeihyo.pdf",
+      "https://www.city.tajimi.lg.jp/_res/projects/default_project/_page_/001/009/932/r8_yosan_kanbetusaisyutusyukeihyo.pdf",
+      "https://www.city.tajimi.lg.jp/shisei/zaisei/1008048/1008049/1009164/1009932.html"],
+    ["R7", "https://www.city.tajimi.lg.jp/_res/projects/default_project/_page_/001/008/052/r7_yosan_sainyusyukeihyo.pdf",
+      "https://www.city.tajimi.lg.jp/_res/projects/default_project/_page_/001/008/052/r7_yosan_kanbetusaisyutusyukeihyo.pdf",
+      "https://www.city.tajimi.lg.jp/shisei/zaisei/1008048/1008049/1008050/1008052.html"],
+    ["R6", "https://www.city.tajimi.lg.jp/_res/projects/default_project/_page_/001/008/058/r6sainyuu.pdf",
+      "https://www.city.tajimi.lg.jp/_res/projects/default_project/_page_/001/008/058/r6saishutu.pdf",
+      "https://www.city.tajimi.lg.jp/shisei/zaisei/1008048/1008049/1008056/1008058.html"],
+    ["R5", "https://www.city.tajimi.lg.jp/_res/projects/default_project/_page_/001/008/068/2ippansainyuu_3.pdf",
+      "https://www.city.tajimi.lg.jp/_res/projects/default_project/_page_/001/008/068/5saisyutusyuukeikanbetu.pdf",
+      "https://www.city.tajimi.lg.jp/shisei/zaisei/1008048/1008049/1008066/1008068.html"],
+    ["R4", "https://www.city.tajimi.lg.jp/_res/projects/default_project/_page_/001/008/078/2ippansainyuu.pdf",
+      "https://www.city.tajimi.lg.jp/_res/projects/default_project/_page_/001/008/078/9ippanusaisyutu.pdf",
+      "https://www.city.tajimi.lg.jp/shisei/zaisei/1008048/1008049/1008076/1008078.html"],
+    ["R3", "https://warp.ndl.go.jp/20210511/20210511051438/https://www.city.tajimi.lg.jp/gyose/zaise/yosan/r3-yosan/documents/r3_yosan_sainyu.pdf",
+      "https://warp.ndl.go.jp/20210511/20210511051440/https://www.city.tajimi.lg.jp/gyose/zaise/yosan/r3-yosan/documents/r3_yosan_saishutsu.pdf",
+      "https://warp.ndl.go.jp/20210511/20210511004520/https://www.city.tajimi.lg.jp/gyose/zaise/yosan/r3-yosan/r3_yosan_gaiyou_giketsugo.html"],
+    ["R2", "https://warp.ndl.go.jp/20210511/20210511051540/https://www.city.tajimi.lg.jp/gyose/zaise/yosan/r2-yosan/documents/r2_yosan_sainyu.pdf",
+      "https://warp.ndl.go.jp/20210511/20210511051543/https://www.city.tajimi.lg.jp/gyose/zaise/yosan/r2-yosan/documents/r2_saishutsu.pdf",
+      "https://warp.ndl.go.jp/20210511/20210511004527/https://www.city.tajimi.lg.jp/gyose/zaise/yosan/r2-yosan/r2-gaiyou-giketsugo.html"],
+  ] as const).map(([fy, rev, exp, landing]) => ({
+    id: `tajimi-yosan-shukeihyo-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 多治見市一般会計予算 歳入集計表・款別歳出集計表`,
+    publisher: "多治見市",
+    url: null,
+    urls: [rev, exp],
+    landingPage: landing,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "多治見市（一般会計・団体コード212041）",
+    license: TAJIMI_LICENSE,
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      revenueFile: rev.split("/").pop()!,
+      expenditureFile: exp.split("/").pop()!,
+      ...(fy === "R2" ? { revenuePages: { from: 1, to: 2 } } : { revenuePage: 1 }),
+      expenditurePage: 1,
+      revenueHeading: "一般会計予算歳入集計表",
+      expenditureHeading: "歳出集計表",
+      kanIndentMax: 4,
+      ...(fy === "R3" || fy === "R2" ? {} : { kanNameSuffixStrip: { revenue: "(?:自主|依存)$" } }),
+      ...(fy === "R6"
+        ? {
+            prevNote:
+              "前年度（令和5年度）の一般会計当初予算は、市長改選を控えた骨格予算として編成されました（多治見市「令和5年度当初予算の概要（議決後）」に「令和5年度当初予算は、市長改選を控え、義務的経費や継続的事業を中心とした「骨格予算」として編成しました。」と記載）。この資料の前年度額はその骨格予算の当初額で、同じ資料が別の列に載せている前年度の本格予算額ではありません。",
+          }
+        : {}),
     },
   } satisfies SourceEntry)),
 

@@ -1,0 +1,19 @@
+{
+  "sourceId": "tajimi-yosan-shukeihyo-r5",
+  "files": [
+    {
+      "filename": "2ippansainyuu_3.pdf",
+      "sha256": "acd8f6e1121f98e04ea5337f6053946fcb2a131ee7434cdeb2c0df81c1b92f5d",
+      "bytes": 193293,
+      "fetchedAt": "2026-09-27T18:55:10.172Z",
+      "fetchedFrom": "https://www.city.tajimi.lg.jp/_res/projects/default_project/_page_/001/008/068/2ippansainyuu_3.pdf"
+    },
+    {
+      "filename": "5saisyutusyuukeikanbetu.pdf",
+      "sha256": "89aa09f5322d181d4ce8b96f45436562e41c21f8b82fa5b5737133a58beab6ae",
+      "bytes": 84582,
+      "fetchedAt": "2026-09-27T18:55:10.579Z",
+      "fetchedFrom": "https://www.city.tajimi.lg.jp/_res/projects/default_project/_page_/001/008/068/5saisyutusyuukeikanbetu.pdf"
+    }
+  ]
+}

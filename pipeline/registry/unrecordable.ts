@@ -1745,4 +1745,26 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     url: "https://www.city.sanda.lg.jp/soshiki/9/gyomu/gyozaisei/zaisei_yosan_kessan/yosan/index.html",
     checkedOn: "2026-09-28", ref: "docs/data-sources.md §13-49",
   },
+  {
+    // 一関市（032093）R2。R8〜R3 は収録済み（§13-50）。
+    // ⚠ 原典は健全で、こちらの抽出が「当年度がダッシュで印も皆減も無い廃止款」に対応していないだけ（#301 の手当ては当年度 0 の型）。
+    code: "032093", name: "一関市", dataset: "budget", fiscalYears: ["R2"],
+    categories: ["parser-unsupported"],
+    reason:
+      "歳入の廃止款「自動車取得税交付金 ― ― 131,814 0.2 △131,814 ―」に款番号も廃止の印も「皆減」も無く、当年度の欄がダッシュのため既存パーサがこの行を読み落とす。" +
+      "前年度の合計が 131,814千円合わなくなる。予算書と予算に関する説明書はスキャン画像で代わりにならない。",
+    url: "https://www.city.ichinoseki.iwate.jp/archive/contents-48734",
+    checkedOn: "2026-09-28", ref: "docs/data-sources.md §13-50",
+  },
+  {
+    // 三島市（222062）R4・R3。R8〜R5・R2 は収録済み（§13-50）。
+    // ⚠ 原典は健全（復号すれば読める）。こちらの抽出が「1物理ページの左右2段にまたがる表」に対応していないだけ。
+    code: "222062", name: "三島市", dataset: "budget", fiscalYears: ["R4", "R3"],
+    categories: ["parser-unsupported"],
+    reason:
+      "予算書が見開き2面を1ページに収めた版で、歳入の総括の表が1ページの左右2段（左に款1〜18、右に款19〜23と合計）に分かれている。" +
+      "既存パーサは1ページの表を1列の帯としてしか読めず、左右の段が1行に混ざる。",
+    url: "https://www.city.mishima.shizuoka.jp/life/5/27/135/",
+    checkedOn: "2026-09-28", ref: "docs/data-sources.md §13-50",
+  },
 ];

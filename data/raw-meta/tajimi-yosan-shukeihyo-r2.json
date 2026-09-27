@@ -1,0 +1,19 @@
+{
+  "sourceId": "tajimi-yosan-shukeihyo-r2",
+  "files": [
+    {
+      "filename": "r2_yosan_sainyu.pdf",
+      "sha256": "bdfd16c4d9bfb8a26e90660aac1196291f4cd46f36b8e4789ca583216069e205",
+      "bytes": 77125,
+      "fetchedAt": "2026-09-27T18:55:13.980Z",
+      "fetchedFrom": "https://warp.ndl.go.jp/20210511/20210511051540/https://www.city.tajimi.lg.jp/gyose/zaise/yosan/r2-yosan/documents/r2_yosan_sainyu.pdf"
+    },
+    {
+      "filename": "r2_saishutsu.pdf",
+      "sha256": "b77f19738e486952e64708d8e73cb92b9486d593b1ff33de6fda3952c091ffbc",
+      "bytes": 54245,
+      "fetchedAt": "2026-09-27T18:55:14.537Z",
+      "fetchedFrom": "https://warp.ndl.go.jp/20210511/20210511051543/https://www.city.tajimi.lg.jp/gyose/zaise/yosan/r2-yosan/documents/r2_saishutsu.pdf"
+    }
+  ]
+}

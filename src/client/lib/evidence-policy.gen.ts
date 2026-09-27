@@ -18588,5 +18588,239 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.sanda.lg.jp/material/files/group/63/355sinnendoyosansetumei.pdf",
     "license": "原則として、三田市市ホームページから発信するコンテンツの著作権は三田市に属します。ホームページの内容の全部又は一部については、私的使用又は引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載複製を行うことができます。ただし、「無断転載を禁じます」等の注記があるものについては、それに従ってください。",
     "target": "file"
+  },
+  "/sources/omuta-kanbetsu-hikaku-r8/3_21276_127514_up_dyu5nc7y.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.omuta.lg.jp/kiji00321276/3_21276_127514_up_dyu5nc7y.pdf",
+    "license": "「大牟田市ホームページ」に掲載しているすべてのコンテンツ（文章・画像・イラストなど)は、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。「大牟田市ホームページ」に掲載した著作物（文章・画像・音声など）、プログラムにかかわる著作権は、特別の断りがない限り大牟田市が保有します。",
+    "target": "file"
+  },
+  "/sources/omuta-kanbetsu-hikaku-r7/3_20210_115737_up_kx8m2kvn.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.omuta.lg.jp/kiji00320210/3_20210_115737_up_kx8m2kvn.pdf",
+    "license": "「大牟田市ホームページ」に掲載しているすべてのコンテンツ（文章・画像・イラストなど)は、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。「大牟田市ホームページ」に掲載した著作物（文章・画像・音声など）、プログラムにかかわる著作権は、特別の断りがない限り大牟田市が保有します。",
+    "target": "file"
+  },
+  "/sources/omuta-kanbetsu-hikaku-r6/3_19167_105539_up_d348rmz5.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.omuta.lg.jp/kiji00319167/3_19167_105539_up_d348rmz5.pdf",
+    "license": "「大牟田市ホームページ」に掲載しているすべてのコンテンツ（文章・画像・イラストなど)は、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。「大牟田市ホームページ」に掲載した著作物（文章・画像・音声など）、プログラムにかかわる著作権は、特別の断りがない限り大牟田市が保有します。",
+    "target": "file"
+  },
+  "/sources/omuta-kanbetsu-hikaku-r5/3_17781_89309_up_osc7pi21.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.omuta.lg.jp/kiji00317781/3_17781_89309_up_osc7pi21.pdf",
+    "license": "「大牟田市ホームページ」に掲載しているすべてのコンテンツ（文章・画像・イラストなど)は、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。「大牟田市ホームページ」に掲載した著作物（文章・画像・音声など）、プログラムにかかわる著作権は、特別の断りがない限り大牟田市が保有します。",
+    "target": "file"
+  },
+  "/sources/omuta-kanbetsu-hikaku-r4/5_16490_84184_up_2VB1VLO0.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.omuta.lg.jp/kiji00316490/5_16490_84184_up_2VB1VLO0.pdf",
+    "license": "「大牟田市ホームページ」に掲載しているすべてのコンテンツ（文章・画像・イラストなど)は、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。「大牟田市ホームページ」に掲載した著作物（文章・画像・音声など）、プログラムにかかわる著作権は、特別の断りがない限り大牟田市が保有します。",
+    "target": "file"
+  },
+  "/sources/omuta-kanbetsu-hikaku-r3/5_15872_84187_up_Y5HBQV2Z.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.omuta.lg.jp/kiji00315872/5_15872_84187_up_Y5HBQV2Z.pdf",
+    "license": "「大牟田市ホームページ」に掲載しているすべてのコンテンツ（文章・画像・イラストなど)は、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。「大牟田市ホームページ」に掲載した著作物（文章・画像・音声など）、プログラムにかかわる著作権は、特別の断りがない限り大牟田市が保有します。",
+    "target": "file"
+  },
+  "/sources/omuta-kanbetsu-hikaku-r2/5_13929_58289_up_CYGXPVGG.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.omuta.lg.jp/kiji00313929/5_13929_58289_up_CYGXPVGG.pdf",
+    "license": "「大牟田市ホームページ」に掲載しているすべてのコンテンツ（文章・画像・イラストなど)は、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。「大牟田市ホームページ」に掲載した著作物（文章・画像・音声など）、プログラムにかかわる著作権は、特別の断りがない限り大牟田市が保有します。",
+    "target": "file"
+  },
+  "/sources/ichinoseki-yosan-gaiyou-r8/07_令和8年度一関市予算の概要.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ichinoseki.iwate.jp/uploads/public/archive_0000000998_00/07_%E4%BB%A4%E5%92%8C8%E5%B9%B4%E5%BA%A6%E4%B8%80%E9%96%A2%E5%B8%82%E4%BA%88%E7%AE%97%E3%81%AE%E6%A6%82%E8%A6%81.pdf",
+    "license": "当ホームページに掲載されている情報は、明記されているものを除き、すべて一関市が著作権を保有しています。私的利用のための複製や、引用など著作権法上認められた場合を除き、当ホームページの掲載コンテンツを複製・転用する場合は、必ず事前にそれぞれのコンテンツを所管する各担当課などにご相談ください。",
+    "target": "file"
+  },
+  "/sources/ichinoseki-yosan-gaiyou-r7/20250313-094330.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ichinoseki.iwate.jp/uploads/public/archive_0000000998_00/20250313-094330.pdf",
+    "license": "当ホームページに掲載されている情報は、明記されているものを除き、すべて一関市が著作権を保有しています。私的利用のための複製や、引用など著作権法上認められた場合を除き、当ホームページの掲載コンテンツを複製・転用する場合は、必ず事前にそれぞれのコンテンツを所管する各担当課などにご相談ください。",
+    "target": "file"
+  },
+  "/sources/ichinoseki-yosan-gaiyou-r6/20240313-153847.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ichinoseki.iwate.jp/uploads/public/archive_0000000998_00/20240313-153847.pdf",
+    "license": "当ホームページに掲載されている情報は、明記されているものを除き、すべて一関市が著作権を保有しています。私的利用のための複製や、引用など著作権法上認められた場合を除き、当ホームページの掲載コンテンツを複製・転用する場合は、必ず事前にそれぞれのコンテンツを所管する各担当課などにご相談ください。",
+    "target": "file"
+  },
+  "/sources/ichinoseki-yosan-gaiyou-r5/20230317-105547.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ichinoseki.iwate.jp/uploads/public/archive_0000000998_00/20230317-105547.pdf",
+    "license": "当ホームページに掲載されている情報は、明記されているものを除き、すべて一関市が著作権を保有しています。私的利用のための複製や、引用など著作権法上認められた場合を除き、当ホームページの掲載コンテンツを複製・転用する場合は、必ず事前にそれぞれのコンテンツを所管する各担当課などにご相談ください。",
+    "target": "file"
+  },
+  "/sources/ichinoseki-yosan-gaiyou-r4/20220317-103312.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ichinoseki.iwate.jp/uploads/public/archive_0000000998_00/20220317-103312.pdf",
+    "license": "当ホームページに掲載されている情報は、明記されているものを除き、すべて一関市が著作権を保有しています。私的利用のための複製や、引用など著作権法上認められた場合を除き、当ホームページの掲載コンテンツを複製・転用する場合は、必ず事前にそれぞれのコンテンツを所管する各担当課などにご相談ください。",
+    "target": "file"
+  },
+  "/sources/ichinoseki-yosan-gaiyou-r3/20210319-133706.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ichinoseki.iwate.jp/uploads/public/archive_0000000998_00/20210319-133706.pdf",
+    "license": "当ホームページに掲載されている情報は、明記されているものを除き、すべて一関市が著作権を保有しています。私的利用のための複製や、引用など著作権法上認められた場合を除き、当ホームページの掲載コンテンツを複製・転用する場合は、必ず事前にそれぞれのコンテンツを所管する各担当課などにご相談ください。",
+    "target": "file"
+  },
+  "/sources/mishima-yosansho-r8/13478.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.mishima.shizuoka.jp/uploaded/attachment/13478.pdf",
+    "license": "「三島市公式ホームページ」（以下、当ページといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として本市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、本市の許可なく当ページに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/mishima-yosansho-r7/5960.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.mishima.shizuoka.jp/uploaded/attachment/5960.pdf",
+    "license": "「三島市公式ホームページ」（以下、当ページといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として本市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、本市の許可なく当ページに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/mishima-yosansho-r6/5281.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.mishima.shizuoka.jp/uploaded/attachment/5281.pdf",
+    "license": "「三島市公式ホームページ」（以下、当ページといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として本市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、本市の許可なく当ページに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/mishima-yosansho-r5/4649.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.mishima.shizuoka.jp/uploaded/attachment/4649.pdf",
+    "license": "「三島市公式ホームページ」（以下、当ページといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として本市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、本市の許可なく当ページに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/mishima-yosansho-r2/3543.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.mishima.shizuoka.jp/uploaded/attachment/3543.pdf",
+    "license": "「三島市公式ホームページ」（以下、当ページといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として本市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、本市の許可なく当ページに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/komatsu-yosan-setsumeisho-r8/R08tousho_jikoubetsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.komatsu.lg.jp/material/files/group/5/R08tousho_jikoubetsu.pdf",
+    "license": "「小松市ホームページ」に掲載されている個々の情報（文字、写真、イラスト等）は著作権の対象となっています。また、「小松市ホームページ」全体も編集著作物として著作権の対象となっており、ともに日本国著作権法及び国際条約により保護されています。「 私的使用のための複製」や「引用」など著作権法上認められた場合を除き、小松市の許可なく無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/komatsu-yosan-setsumeisho-r7/R07tousho_jikoubetsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.komatsu.lg.jp/material/files/group/5/R07tousho_jikoubetsu.pdf",
+    "license": "「小松市ホームページ」に掲載されている個々の情報（文字、写真、イラスト等）は著作権の対象となっています。また、「小松市ホームページ」全体も編集著作物として著作権の対象となっており、ともに日本国著作権法及び国際条約により保護されています。「 私的使用のための複製」や「引用」など著作権法上認められた場合を除き、小松市の許可なく無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/komatsu-yosan-setsumeisho-r6/R0603tousho_jikoubetsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.komatsu.lg.jp/material/files/group/5/R0603tousho_jikoubetsu.pdf",
+    "license": "「小松市ホームページ」に掲載されている個々の情報（文字、写真、イラスト等）は著作権の対象となっています。また、「小松市ホームページ」全体も編集著作物として著作権の対象となっており、ともに日本国著作権法及び国際条約により保護されています。「 私的使用のための複製」や「引用」など著作権法上認められた場合を除き、小松市の許可なく無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/komatsu-yosan-setsumeisho-r5/R05tousho_jikobetsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.komatsu.lg.jp/material/files/group/5/R05tousho_jikobetsu.pdf",
+    "license": "「小松市ホームページ」に掲載されている個々の情報（文字、写真、イラスト等）は著作権の対象となっています。また、「小松市ホームページ」全体も編集著作物として著作権の対象となっており、ともに日本国著作権法及び国際条約により保護されています。「 私的使用のための複製」や「引用」など著作権法上認められた場合を除き、小松市の許可なく無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/komatsu-yosan-setsumeisho-r4/02_R04tousho_jikobetsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.komatsu.lg.jp/material/files/group/5/02_R04tousho_jikobetsu.pdf",
+    "license": "「小松市ホームページ」に掲載されている個々の情報（文字、写真、イラスト等）は著作権の対象となっています。また、「小松市ホームページ」全体も編集著作物として著作権の対象となっており、ともに日本国著作権法及び国際条約により保護されています。「 私的使用のための複製」や「引用」など著作権法上認められた場合を除き、小松市の許可なく無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/komatsu-yosan-setsumeisho-r3/02R03tousho_jikobetsu3.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.komatsu.lg.jp/material/files/group/5/02R03tousho_jikobetsu3.pdf",
+    "license": "「小松市ホームページ」に掲載されている個々の情報（文字、写真、イラスト等）は著作権の対象となっています。また、「小松市ホームページ」全体も編集著作物として著作権の対象となっており、ともに日本国著作権法及び国際条約により保護されています。「 私的使用のための複製」や「引用」など著作権法上認められた場合を除き、小松市の許可なく無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/komatsu-yosan-setsumeisho-r2/02R02tousho_jikobetsu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.komatsu.lg.jp/material/files/group/5/02R02tousho_jikobetsu.pdf",
+    "license": "「小松市ホームページ」に掲載されている個々の情報（文字、写真、イラスト等）は著作権の対象となっています。また、「小松市ホームページ」全体も編集著作物として著作権の対象となっており、ともに日本国著作権法及び国際条約により保護されています。「 私的使用のための複製」や「引用」など著作権法上認められた場合を除き、小松市の許可なく無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/tajimi-yosan-shukeihyo-r8/r8_yosan_sainyusyukeihyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tajimi.lg.jp/_res/projects/default_project/_page_/001/009/932/r8_yosan_sainyusyukeihyo.pdf",
+    "license": "多治見市ホームページに掲載されている記事、画像、データ類は、すべて著作権の対象になっています。また、ホームページ全体も、編集著作権の対象となっています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
+  },
+  "/sources/tajimi-yosan-shukeihyo-r8/r8_yosan_kanbetusaisyutusyukeihyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tajimi.lg.jp/_res/projects/default_project/_page_/001/009/932/r8_yosan_kanbetusaisyutusyukeihyo.pdf",
+    "license": "多治見市ホームページに掲載されている記事、画像、データ類は、すべて著作権の対象になっています。また、ホームページ全体も、編集著作権の対象となっています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
+  },
+  "/sources/tajimi-yosan-shukeihyo-r7/r7_yosan_sainyusyukeihyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tajimi.lg.jp/_res/projects/default_project/_page_/001/008/052/r7_yosan_sainyusyukeihyo.pdf",
+    "license": "多治見市ホームページに掲載されている記事、画像、データ類は、すべて著作権の対象になっています。また、ホームページ全体も、編集著作権の対象となっています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
+  },
+  "/sources/tajimi-yosan-shukeihyo-r7/r7_yosan_kanbetusaisyutusyukeihyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tajimi.lg.jp/_res/projects/default_project/_page_/001/008/052/r7_yosan_kanbetusaisyutusyukeihyo.pdf",
+    "license": "多治見市ホームページに掲載されている記事、画像、データ類は、すべて著作権の対象になっています。また、ホームページ全体も、編集著作権の対象となっています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
+  },
+  "/sources/tajimi-yosan-shukeihyo-r6/r6sainyuu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tajimi.lg.jp/_res/projects/default_project/_page_/001/008/058/r6sainyuu.pdf",
+    "license": "多治見市ホームページに掲載されている記事、画像、データ類は、すべて著作権の対象になっています。また、ホームページ全体も、編集著作権の対象となっています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
+  },
+  "/sources/tajimi-yosan-shukeihyo-r6/r6saishutu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tajimi.lg.jp/_res/projects/default_project/_page_/001/008/058/r6saishutu.pdf",
+    "license": "多治見市ホームページに掲載されている記事、画像、データ類は、すべて著作権の対象になっています。また、ホームページ全体も、編集著作権の対象となっています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
+  },
+  "/sources/tajimi-yosan-shukeihyo-r5/2ippansainyuu_3.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tajimi.lg.jp/_res/projects/default_project/_page_/001/008/068/2ippansainyuu_3.pdf",
+    "license": "多治見市ホームページに掲載されている記事、画像、データ類は、すべて著作権の対象になっています。また、ホームページ全体も、編集著作権の対象となっています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
+  },
+  "/sources/tajimi-yosan-shukeihyo-r5/5saisyutusyuukeikanbetu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tajimi.lg.jp/_res/projects/default_project/_page_/001/008/068/5saisyutusyuukeikanbetu.pdf",
+    "license": "多治見市ホームページに掲載されている記事、画像、データ類は、すべて著作権の対象になっています。また、ホームページ全体も、編集著作権の対象となっています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
+  },
+  "/sources/tajimi-yosan-shukeihyo-r4/2ippansainyuu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tajimi.lg.jp/_res/projects/default_project/_page_/001/008/078/2ippansainyuu.pdf",
+    "license": "多治見市ホームページに掲載されている記事、画像、データ類は、すべて著作権の対象になっています。また、ホームページ全体も、編集著作権の対象となっています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
+  },
+  "/sources/tajimi-yosan-shukeihyo-r4/9ippanusaisyutu.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tajimi.lg.jp/_res/projects/default_project/_page_/001/008/078/9ippanusaisyutu.pdf",
+    "license": "多治見市ホームページに掲載されている記事、画像、データ類は、すべて著作権の対象になっています。また、ホームページ全体も、編集著作権の対象となっています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
+  },
+  "/sources/tajimi-yosan-shukeihyo-r3/r3_yosan_sainyu.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20210511/20210511051438/https://www.city.tajimi.lg.jp/gyose/zaise/yosan/r3-yosan/documents/r3_yosan_sainyu.pdf",
+    "license": "多治見市ホームページに掲載されている記事、画像、データ類は、すべて著作権の対象になっています。また、ホームページ全体も、編集著作権の対象となっています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
+  },
+  "/sources/tajimi-yosan-shukeihyo-r3/r3_yosan_saishutsu.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20210511/20210511051440/https://www.city.tajimi.lg.jp/gyose/zaise/yosan/r3-yosan/documents/r3_yosan_saishutsu.pdf",
+    "license": "多治見市ホームページに掲載されている記事、画像、データ類は、すべて著作権の対象になっています。また、ホームページ全体も、編集著作権の対象となっています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
+  },
+  "/sources/tajimi-yosan-shukeihyo-r2/r2_yosan_sainyu.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20210511/20210511051540/https://www.city.tajimi.lg.jp/gyose/zaise/yosan/r2-yosan/documents/r2_yosan_sainyu.pdf",
+    "license": "多治見市ホームページに掲載されている記事、画像、データ類は、すべて著作権の対象になっています。また、ホームページ全体も、編集著作権の対象となっています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
+  },
+  "/sources/tajimi-yosan-shukeihyo-r2/r2_saishutsu.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20210511/20210511051543/https://www.city.tajimi.lg.jp/gyose/zaise/yosan/r2-yosan/documents/r2_saishutsu.pdf",
+    "license": "多治見市ホームページに掲載されている記事、画像、データ類は、すべて著作権の対象になっています。また、ホームページ全体も、編集著作権の対象となっています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
   }
 };

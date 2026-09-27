@@ -1,0 +1,413 @@
+{
+  "docType": "budget-book",
+  "sourceId": "komatsu-yosan-setsumeisho-r5",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-09-27T18:53:49.846Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R5",
+  "account": "一般会計",
+  "revenueTotal": 47720000,
+  "expenditureTotal": 47720000,
+  "prevRevenueTotal": 46970000,
+  "prevExpenditureTotal": 46970000,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "市税",
+      "amount": 16485000,
+      "prevAmount": 15625000,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "地方譲与税",
+      "amount": 358000,
+      "prevAmount": 369000,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "利子割交付金",
+      "amount": 13000,
+      "prevAmount": 19000,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "配当割交付金",
+      "amount": 87000,
+      "prevAmount": 56000,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 66000,
+      "prevAmount": 88000,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "法人事業税交付金",
+      "amount": 275000,
+      "prevAmount": 305000,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "地方消費税交付金",
+      "amount": 2922000,
+      "prevAmount": 2627000,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "ゴルフ場利用税交付金",
+      "amount": 58000,
+      "prevAmount": 56000,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "環境性能割交付金",
+      "amount": 31000,
+      "prevAmount": 55000,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "国有提供施設等所在市助成交付金",
+      "amount": 305000,
+      "prevAmount": 305000,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "地方特例交付金",
+      "amount": 135000,
+      "prevAmount": 120000,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "地方交付税",
+      "amount": 7990000,
+      "prevAmount": 7760000,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 12000,
+      "prevAmount": 12000,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "分担金及び負担金",
+      "amount": 112754,
+      "prevAmount": 116559,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "使用料及び手数料",
+      "amount": 716999,
+      "prevAmount": 600608,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "国庫支出金",
+      "amount": 8210126,
+      "prevAmount": 8749279,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 17,
+      "kanName": "県支出金",
+      "amount": 3845522,
+      "prevAmount": 3838020,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 18,
+      "kanName": "財産収入",
+      "amount": 143793,
+      "prevAmount": 101597,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 19,
+      "kanName": "寄附金",
+      "amount": 305402,
+      "prevAmount": 304701,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 20,
+      "kanName": "繰入金",
+      "amount": 1308041,
+      "prevAmount": 1073794,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 21,
+      "kanName": "繰越金",
+      "amount": 1,
+      "prevAmount": 1,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 22,
+      "kanName": "諸収入",
+      "amount": 683362,
+      "prevAmount": 613141,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 23,
+      "kanName": "市債",
+      "amount": 3657000,
+      "prevAmount": 4175300,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 5
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 356946,
+      "prevAmount": 351831,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 3749757,
+      "prevAmount": 3353457,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "民生費",
+      "amount": 17500135,
+      "prevAmount": 16911577,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "衛生費",
+      "amount": 2927176,
+      "prevAmount": 3036308,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "労働費",
+      "amount": 18720,
+      "prevAmount": 16750,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "農林水産業費",
+      "amount": 1089022,
+      "prevAmount": 1044260,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "商工費",
+      "amount": 1035663,
+      "prevAmount": 957355,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "土木費",
+      "amount": 6323980,
+      "prevAmount": 6791974,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "消防費",
+      "amount": 1502986,
+      "prevAmount": 1582168,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "教育費",
+      "amount": 7705314,
+      "prevAmount": 7227119,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 11,
+      "kanName": "災害復旧費",
+      "amount": 59301,
+      "prevAmount": 1,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 12,
+      "kanName": "公債費",
+      "amount": 5441000,
+      "prevAmount": 5687200,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 6
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 13,
+      "kanName": "予備費",
+      "amount": 10000,
+      "prevAmount": 10000,
+      "locator": {
+        "file": "R05tousho_jikobetsu.pdf",
+        "page": 6
+      }
+    }
+  ]
+}

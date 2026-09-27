@@ -1,0 +1,413 @@
+{
+  "docType": "budget-book",
+  "sourceId": "ichinoseki-yosan-gaiyou-r8",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-09-27T18:50:01.383Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R8",
+  "account": "一般会計",
+  "revenueTotal": 76622274,
+  "expenditureTotal": 76622274,
+  "prevRevenueTotal": 68450311,
+  "prevExpenditureTotal": 68450311,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 1,
+      "kanName": "市税",
+      "amount": 12812572,
+      "prevAmount": 12893986,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 13,
+      "kanName": "分担金及び負担金",
+      "amount": 263160,
+      "prevAmount": 231947,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 14,
+      "kanName": "使用料及び手数料",
+      "amount": 306471,
+      "prevAmount": 312907,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 17,
+      "kanName": "財産収入",
+      "amount": 785949,
+      "prevAmount": 645618,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 18,
+      "kanName": "寄附金",
+      "amount": 1702000,
+      "prevAmount": 1502000,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 19,
+      "kanName": "繰入金",
+      "amount": 6038132,
+      "prevAmount": 4758637,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 20,
+      "kanName": "繰越金",
+      "amount": 1,
+      "prevAmount": 1,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 21,
+      "kanName": "諸収入",
+      "amount": 1110562,
+      "prevAmount": 1082323,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 2,
+      "kanName": "地方譲与税",
+      "amount": 1161759,
+      "prevAmount": 1123465,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 3,
+      "kanName": "利子割交付金",
+      "amount": 29273,
+      "prevAmount": 3708,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 4,
+      "kanName": "配当割交付金",
+      "amount": 57013,
+      "prevAmount": 28232,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 58582,
+      "prevAmount": 21423,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 6,
+      "kanName": "法人事業税交付金",
+      "amount": 207104,
+      "prevAmount": 205138,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 7,
+      "kanName": "地方消費税交付金",
+      "amount": 3171745,
+      "prevAmount": 3059972,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 8,
+      "kanName": "ゴルフ場利用税交付金",
+      "amount": 11721,
+      "prevAmount": 12167,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 9,
+      "kanName": "環境性能割交付金",
+      "amount": 12248,
+      "prevAmount": 67513,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "地方特例交付金",
+      "amount": 207486,
+      "prevAmount": 87404,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 11,
+      "kanName": "地方交付税",
+      "amount": 24624005,
+      "prevAmount": 24787516,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 12,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 10924,
+      "prevAmount": 12861,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "国庫支出金",
+      "amount": 8092609,
+      "prevAmount": 7251664,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "県支出金",
+      "amount": 5112158,
+      "prevAmount": 5223729,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 22,
+      "kanName": "市債",
+      "amount": 10846800,
+      "prevAmount": 5138100,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 12
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 1,
+      "kanName": "議会費",
+      "amount": 314681,
+      "prevAmount": 316153,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 2,
+      "kanName": "総務費",
+      "amount": 13445437,
+      "prevAmount": 12776399,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 3,
+      "kanName": "民生費",
+      "amount": 21080511,
+      "prevAmount": 20157481,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 4,
+      "kanName": "衛生費",
+      "amount": 10411210,
+      "prevAmount": 5892022,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 5,
+      "kanName": "労働費",
+      "amount": 144225,
+      "prevAmount": 154536,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 6,
+      "kanName": "農林水産業費",
+      "amount": 5132624,
+      "prevAmount": 5105083,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 7,
+      "kanName": "商工費",
+      "amount": 2234153,
+      "prevAmount": 2031628,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 8,
+      "kanName": "土木費",
+      "amount": 6458884,
+      "prevAmount": 6093883,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 9,
+      "kanName": "消防費",
+      "amount": 2776215,
+      "prevAmount": 2981919,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "教育費",
+      "amount": 6732807,
+      "prevAmount": 4648520,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 11,
+      "kanName": "災害復旧費",
+      "amount": 2,
+      "prevAmount": 2,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 12,
+      "kanName": "公債費",
+      "amount": 7841456,
+      "prevAmount": 8242616,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 13,
+      "kanName": "諸支出金",
+      "amount": 69,
+      "prevAmount": 69,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 14
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 14,
+      "kanName": "予備費",
+      "amount": 50000,
+      "prevAmount": 50000,
+      "locator": {
+        "file": "07_令和8年度一関市予算の概要.pdf",
+        "page": 14
+      }
+    }
+  ]
+}
