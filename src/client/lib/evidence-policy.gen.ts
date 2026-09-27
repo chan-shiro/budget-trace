@@ -17980,37 +17980,37 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
   "/sources/hakusan-ippan-huhyou-r8/r8huhyou.pdf": {
     "mode": "origin",
     "href": "https://www.city.hakusan.lg.jp/shisei/zaisei/1003544/1018237.html",
-    "license": "このホームページは、白山市の情報ホームページです。電子媒体の技術的な制約のため、紙媒体による公表物とは字体等が異なる場合があります。これらの資料について本市に無断で複製、加工、再配布する事を禁じます。",
+    "license": "これらの資料について本市に無断で複製、加工、再配布する事を禁じます。本ホームページの著作権は原則として白山市にありますが、一部の写真やイラストなど外部に著作権がある場合があります。引用及び転載をする場合には、シティプロモーション推進課へご相談ください。",
     "target": "page"
   },
   "/sources/hakusan-ippan-huhyou-r7/r7ippannkaikeihuhyou.pdf": {
     "mode": "origin",
     "href": "https://www.city.hakusan.lg.jp/shisei/zaisei/1003544/1015849.html",
-    "license": "このホームページは、白山市の情報ホームページです。電子媒体の技術的な制約のため、紙媒体による公表物とは字体等が異なる場合があります。これらの資料について本市に無断で複製、加工、再配布する事を禁じます。",
+    "license": "これらの資料について本市に無断で複製、加工、再配布する事を禁じます。本ホームページの著作権は原則として白山市にありますが、一部の写真やイラストなど外部に著作権がある場合があります。引用及び転載をする場合には、シティプロモーション推進課へご相談ください。",
     "target": "page"
   },
   "/sources/hakusan-ippan-huhyou-r6/r6ippannkaikeihuhyou.pdf": {
     "mode": "origin",
     "href": "https://www.city.hakusan.lg.jp/shisei/zaisei/1003544/1011998.html",
-    "license": "このホームページは、白山市の情報ホームページです。電子媒体の技術的な制約のため、紙媒体による公表物とは字体等が異なる場合があります。これらの資料について本市に無断で複製、加工、再配布する事を禁じます。",
+    "license": "これらの資料について本市に無断で複製、加工、再配布する事を禁じます。本ホームページの著作権は原則として白山市にありますが、一部の写真やイラストなど外部に著作権がある場合があります。引用及び転載をする場合には、シティプロモーション推進課へご相談ください。",
     "target": "page"
   },
   "/sources/hakusan-ippan-huhyou-r5/r5ippannkaikeihuhyou.pdf": {
     "mode": "origin",
     "href": "https://www.city.hakusan.lg.jp/shisei/zaisei/1003544/1009862.html",
-    "license": "このホームページは、白山市の情報ホームページです。電子媒体の技術的な制約のため、紙媒体による公表物とは字体等が異なる場合があります。これらの資料について本市に無断で複製、加工、再配布する事を禁じます。",
+    "license": "これらの資料について本市に無断で複製、加工、再配布する事を禁じます。本ホームページの著作権は原則として白山市にありますが、一部の写真やイラストなど外部に著作権がある場合があります。引用及び転載をする場合には、シティプロモーション推進課へご相談ください。",
     "target": "page"
   },
   "/sources/hakusan-ippan-huhyou-r4/r4ippannhuhyou.pdf": {
     "mode": "origin",
     "href": "https://www.city.hakusan.lg.jp/shisei/zaisei/1003544/1007379.html",
-    "license": "このホームページは、白山市の情報ホームページです。電子媒体の技術的な制約のため、紙媒体による公表物とは字体等が異なる場合があります。これらの資料について本市に無断で複製、加工、再配布する事を禁じます。",
+    "license": "これらの資料について本市に無断で複製、加工、再配布する事を禁じます。本ホームページの著作権は原則として白山市にありますが、一部の写真やイラストなど外部に著作権がある場合があります。引用及び転載をする場合には、シティプロモーション推進課へご相談ください。",
     "target": "page"
   },
   "/sources/hakusan-ippan-huhyou-r3/3kanbetuyosannhoka.pdf": {
     "mode": "origin",
     "href": "https://www.city.hakusan.lg.jp/shisei/zaisei/1003544/1003545.html",
-    "license": "このホームページは、白山市の情報ホームページです。電子媒体の技術的な制約のため、紙媒体による公表物とは字体等が異なる場合があります。これらの資料について本市に無断で複製、加工、再配布する事を禁じます。",
+    "license": "これらの資料について本市に無断で複製、加工、再配布する事を禁じます。本ホームページの著作権は原則として白山市にありますが、一部の写真やイラストなど外部に著作権がある場合があります。引用及び転載をする場合には、シティプロモーション推進課へご相談ください。",
     "target": "page"
   }
 };
