@@ -18438,5 +18438,155 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://web.archive.org/web/20220302161144id_/https://www.city.kamagaya.chiba.jp/sesakumidashi/sesaku_zaisei/yosan/index.files/R2yosangaiyou1.pdf",
     "license": "当ウェブサイト上の情報（文章・画像・音楽等）に関する著作権は、鎌ケ谷市に帰属しています。ただし、一部の画像等の著作権は、原著作者が所有している場合があります。これらの情報を営利目的に使用することや、無断転載を禁じます。",
     "target": "file"
+  },
+  "/sources/tondabayashi-yosansho-r8/111642.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tondabayashi.lg.jp/uploaded/attachment/111642.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、富田林市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/tondabayashi-yosansho-r7/103784.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tondabayashi.lg.jp/uploaded/attachment/103784.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、富田林市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/tondabayashi-yosansho-r6/95991.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tondabayashi.lg.jp/uploaded/attachment/95991.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、富田林市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/tondabayashi-yosansho-r5/87029.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tondabayashi.lg.jp/uploaded/attachment/87029.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、富田林市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/tondabayashi-yosansho-r4/79813.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tondabayashi.lg.jp/uploaded/attachment/79813.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、富田林市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/tondabayashi-yosan-fuzoku-r3/71922.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tondabayashi.lg.jp/uploaded/attachment/71922.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、富田林市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/tondabayashi-yosan-fuzoku-r2/64465.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tondabayashi.lg.jp/uploaded/attachment/64465.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、富田林市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/toride-ippan-yosansho-r8/r8_ippanyosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.toride.ibaraki.jp/zaisei/shise/yosan/yosan/r8-tosho.html",
+    "license": "取手市ホームページに掲載されている情報（文章、写真、イラスト、画像、プログラムなどをいいます。ただし、著作権法に規定された「権利の目的とならない著作物」を除きます）に関する著作権は、原則として取手市に帰属し、法律によって保護されています。ただし、一部の画像等の著作権は、原著作者が所有しています。また、「取手市ホームページ」の全体についても編集著作物として著作権の対象となっており、著作権法により保護されています。これらの情報については、「私的使用」または「引用」など著作権法上認められた行為として適切な方法で利用する場合を除き、取手市に無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "page"
+  },
+  "/sources/toride-ippan-yosansho-r7/r7_ippanyosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.toride.ibaraki.jp/zaisei/shise/yosan/yosan/r7-tosho.html",
+    "license": "取手市ホームページに掲載されている情報（文章、写真、イラスト、画像、プログラムなどをいいます。ただし、著作権法に規定された「権利の目的とならない著作物」を除きます）に関する著作権は、原則として取手市に帰属し、法律によって保護されています。ただし、一部の画像等の著作権は、原著作者が所有しています。また、「取手市ホームページ」の全体についても編集著作物として著作権の対象となっており、著作権法により保護されています。これらの情報については、「私的使用」または「引用」など著作権法上認められた行為として適切な方法で利用する場合を除き、取手市に無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "page"
+  },
+  "/sources/toride-ippan-yosansho-r6/r6_ippanyosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.toride.ibaraki.jp/zaisei/shise/yosan/yosan/r6-tosho1.html",
+    "license": "取手市ホームページに掲載されている情報（文章、写真、イラスト、画像、プログラムなどをいいます。ただし、著作権法に規定された「権利の目的とならない著作物」を除きます）に関する著作権は、原則として取手市に帰属し、法律によって保護されています。ただし、一部の画像等の著作権は、原著作者が所有しています。また、「取手市ホームページ」の全体についても編集著作物として著作権の対象となっており、著作権法により保護されています。これらの情報については、「私的使用」または「引用」など著作権法上認められた行為として適切な方法で利用する場合を除き、取手市に無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "page"
+  },
+  "/sources/toride-ippan-yosansho-r5/00-r5-ippan-yosansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.toride.ibaraki.jp/zaisei/shise/yosan/yosan/r5-tosho.html",
+    "license": "取手市ホームページに掲載されている情報（文章、写真、イラスト、画像、プログラムなどをいいます。ただし、著作権法に規定された「権利の目的とならない著作物」を除きます）に関する著作権は、原則として取手市に帰属し、法律によって保護されています。ただし、一部の画像等の著作権は、原著作者が所有しています。また、「取手市ホームページ」の全体についても編集著作物として著作権の対象となっており、著作権法により保護されています。これらの情報については、「私的使用」または「引用」など著作権法上認められた行為として適切な方法で利用する場合を除き、取手市に無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "page"
+  },
+  "/sources/toride-ippan-yosansho-r4/00-r4-ippan-yosansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.toride.ibaraki.jp/zaisei/shise/yosan/yosan/r4-tosho.html",
+    "license": "取手市ホームページに掲載されている情報（文章、写真、イラスト、画像、プログラムなどをいいます。ただし、著作権法に規定された「権利の目的とならない著作物」を除きます）に関する著作権は、原則として取手市に帰属し、法律によって保護されています。ただし、一部の画像等の著作権は、原著作者が所有しています。また、「取手市ホームページ」の全体についても編集著作物として著作権の対象となっており、著作権法により保護されています。これらの情報については、「私的使用」または「引用」など著作権法上認められた行為として適切な方法で利用する場合を除き、取手市に無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "page"
+  },
+  "/sources/toride-ippan-yosansho-r3/00-r3-ippan-yosansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.toride.ibaraki.jp/zaisei/shise/yosan/yosan/r3-tosho.html",
+    "license": "取手市ホームページに掲載されている情報（文章、写真、イラスト、画像、プログラムなどをいいます。ただし、著作権法に規定された「権利の目的とならない著作物」を除きます）に関する著作権は、原則として取手市に帰属し、法律によって保護されています。ただし、一部の画像等の著作権は、原著作者が所有しています。また、「取手市ホームページ」の全体についても編集著作物として著作権の対象となっており、著作権法により保護されています。これらの情報については、「私的使用」または「引用」など著作権法上認められた行為として適切な方法で利用する場合を除き、取手市に無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "page"
+  },
+  "/sources/toride-ippan-yosansho-r2/r2_ippanyosan_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.toride.ibaraki.jp/zaisei/shise/yosan/yosan/r2-tosho.html",
+    "license": "取手市ホームページに掲載されている情報（文章、写真、イラスト、画像、プログラムなどをいいます。ただし、著作権法に規定された「権利の目的とならない著作物」を除きます）に関する著作権は、原則として取手市に帰属し、法律によって保護されています。ただし、一部の画像等の著作権は、原著作者が所有しています。また、「取手市ホームページ」の全体についても編集著作物として著作権の対象となっており、著作権法により保護されています。これらの情報については、「私的使用」または「引用」など著作権法上認められた行為として適切な方法で利用する場合を除き、取手市に無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "page"
+  },
+  "/sources/habikino-yosansho-r8/R8ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.habikino.lg.jp/material/files/group/7/R8ippan.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、羽曳野市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/habikino-yosansho-r7/R7ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.habikino.lg.jp/material/files/group/7/R7ippan.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、羽曳野市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/habikino-yosansho-r6/R6ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.habikino.lg.jp/material/files/group/7/R6ippan.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、羽曳野市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/habikino-yosansho-r5/R5ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.habikino.lg.jp/material/files/group/7/R5ippan.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、羽曳野市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/habikino-yosansho-r3/R03_01_ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.habikino.lg.jp/material/files/group/7/R03_01_ippan.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、羽曳野市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/habikino-yosansho-r2/01_ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.habikino.lg.jp/material/files/group/7/01_ippan.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、羽曳野市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/sanda-yosan-an-setsumei-r8/385shinnendoyosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sanda.lg.jp/material/files/group/63/385shinnendoyosan.pdf",
+    "license": "原則として、三田市市ホームページから発信するコンテンツの著作権は三田市に属します。ホームページの内容の全部又は一部については、私的使用又は引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載複製を行うことができます。ただし、「無断転載を禁じます」等の注記があるものについては、それに従ってください。",
+    "target": "file"
+  },
+  "/sources/sanda-yosan-an-setsumei-r5/gian5_gaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sanda.lg.jp/material/files/group/63/gian5_gaiyou.pdf",
+    "license": "原則として、三田市市ホームページから発信するコンテンツの著作権は三田市に属します。ホームページの内容の全部又は一部については、私的使用又は引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載複製を行うことができます。ただし、「無断転載を禁じます」等の注記があるものについては、それに従ってください。",
+    "target": "file"
+  },
+  "/sources/sanda-yosan-an-setsumei-r4/365yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sanda.lg.jp/material/files/group/63/365yosangaiyou.pdf",
+    "license": "原則として、三田市市ホームページから発信するコンテンツの著作権は三田市に属します。ホームページの内容の全部又は一部については、私的使用又は引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載複製を行うことができます。ただし、「無断転載を禁じます」等の注記があるものについては、それに従ってください。",
+    "target": "file"
+  },
+  "/sources/sanda-yosan-an-setsumei-r3/gaiyou_r3_3_gian6.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sanda.lg.jp/material/files/group/63/gaiyou_r3_3_gian6.pdf",
+    "license": "原則として、三田市市ホームページから発信するコンテンツの著作権は三田市に属します。ホームページの内容の全部又は一部については、私的使用又は引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載複製を行うことができます。ただし、「無断転載を禁じます」等の注記があるものについては、それに従ってください。",
+    "target": "file"
+  },
+  "/sources/sanda-yosan-an-setsumei-r2/355sinnendoyosansetumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sanda.lg.jp/material/files/group/63/355sinnendoyosansetumei.pdf",
+    "license": "原則として、三田市市ホームページから発信するコンテンツの著作権は三田市に属します。ホームページの内容の全部又は一部については、私的使用又は引用等著作権法上認められた行為として、適宜の方法により出所を明示することにより、引用・転載複製を行うことができます。ただし、「無断転載を禁じます」等の注記があるものについては、それに従ってください。",
+    "target": "file"
   }
 };

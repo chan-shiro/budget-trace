@@ -1725,4 +1725,24 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     url: "https://www.city.kitami.lg.jp/administration/detail.php?content=7925",
     checkedOn: "2026-09-27", ref: "docs/data-sources.md §13-47",
   },
+  {
+    // 羽曳野市（272221）R4。R8〜R5・R3・R2 は収録済み（§13-49）。
+    code: "272221", name: "羽曳野市", dataset: "budget", fiscalYears: ["R4"],
+    categories: ["broken-text-layer"],
+    reason:
+      "予算書の数字が、ページやフォントごとに違う番号の文字として埋め込まれていて、文字として取り出すと数字がすべて読めない記号になる。" +
+      "漢字は正しく取り出せ、同じ年度の予算の概要は1枚の図で款別の表が無い。",
+    url: "https://www.city.habikino.lg.jp/soshiki/soumu/zaisei/zaiseijokyo/habikinosiyosannsyo/index.html",
+    checkedOn: "2026-09-28", ref: "docs/data-sources.md §13-49",
+  },
+  {
+    // 三田市（282197）R7・R6。R8・R5〜R2 は収録済み（§13-49）。
+    code: "282197", name: "三田市", dataset: "budget", fiscalYears: ["R7", "R6"],
+    categories: ["broken-text-layer", "format-mismatch"],
+    reason:
+      "予算書と予算説明書の総括の表は文字が取り出せない形式で埋め込まれている。市議会の資料は令和7年度が会計別の総額だけで、令和6年度は議会で修正される前の原案の数字。" +
+      "修正後の款別を載せた「わかりやすい予算」は歳入を財源の区分ごとにまとめていて款別になっていない。",
+    url: "https://www.city.sanda.lg.jp/soshiki/9/gyomu/gyozaisei/zaisei_yosan_kessan/yosan/index.html",
+    checkedOn: "2026-09-28", ref: "docs/data-sources.md §13-49",
+  },
 ];

@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 299,
+  "budgetCount": 303,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 2244,
-  "fileCount": 3473,
-  "archivedCount": 2069,
+  "sourceCount": 2269,
+  "fileCount": 3498,
+  "archivedCount": 2094,
   "licenseOpen": 102,
-  "licensePermission": 1926,
+  "licensePermission": 1951,
   "licenseUnverified": 216,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -765,6 +765,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "取手市",
+      "code": "082171",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "ひたちなか市",
       "code": "082210",
       "years": 7,
@@ -963,6 +969,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "富田林市",
+      "code": "272141",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "明石市",
       "code": "282031",
       "years": 7,
@@ -1155,6 +1167,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R3〜R8（6年度）"
     },
     {
+      "name": "羽曳野市",
+      "code": "272221",
+      "years": 6,
+      "range": "R2〜R8（6年度）"
+    },
+    {
       "name": "呉市",
       "code": "342025",
       "years": 6,
@@ -1267,6 +1285,12 @@ export const ROADMAP_PROGRESS = {
       "code": "282014",
       "years": 5,
       "range": "R4〜R8（5年度）"
+    },
+    {
+      "name": "三田市",
+      "code": "282197",
+      "years": 5,
+      "range": "R2〜R8（5年度）"
     },
     {
       "name": "倉敷市",

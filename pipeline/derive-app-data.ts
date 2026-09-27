@@ -3221,6 +3221,26 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `kamagaya-yosan-gaiyou-${fy}`, muniCode: "122246", muniName: "鎌ケ谷市", prefName: "千葉県", isPref: false,
     })),
+    // ---- 第47巡（2026-09-28・§13-49） ----
+    // ⚠ 富田林 R8〜R4 は予算書の総括、R3・R2 は予算書がスキャンなので予算付属説明資料（別 srcId・kanIndentMax）
+    ...(["r8", "r7", "r6", "r5", "r4"] as const).map((fy) => ({
+      srcId: `tondabayashi-yosansho-${fy}`, muniCode: "272141", muniName: "富田林市", prefName: "大阪府", isPref: false,
+    })),
+    ...(["r3", "r2"] as const).map((fy) => ({
+      srcId: `tondabayashi-yosan-fuzoku-${fy}`, muniCode: "272141", muniName: "富田林市", prefName: "大阪府", isPref: false,
+    })),
+    // ⚠⚠ 取手 R5・R1 は骨格で R6・R2 の前年度列は骨格の当初額（prevNote）。見出し「総括」と財源内訳の列見出しが款1 に付く（Σ 差0）。noDeepLink
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `toride-ippan-yosansho-${fy}`, muniCode: "082171", muniName: "取手市", prefName: "茨城県", isPref: false,
+    })),
+    // ⚠⚠ 羽曳野 R8 は ToUnicode 欠落（復号表に3字追加）＋歳入だけ -raw・totalNoLabel。R3 は数字の帯の化け。R4 は新型の化けで未収録
+    ...(["r8", "r7", "r6", "r5", "r3", "r2"] as const).map((fy) => ({
+      srcId: `habikino-yosansho-${fy}`, muniCode: "272221", muniName: "羽曳野市", prefName: "大阪府", isPref: false,
+    })),
+    // ⚠ 三田は議会の予算案説明資料（prevColumnFirst）。R6 は修正可決で原案しか款別が無く、R7 は款別表が無い（どちらも未収録）
+    ...(["r8", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `sanda-yosan-an-setsumei-${fy}`, muniCode: "282197", muniName: "三田市", prefName: "兵庫県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。
