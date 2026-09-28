@@ -1484,7 +1484,8 @@ function parseKanPage(
       ints[0]!.replace(/,/g, "") !== "0" &&
       // 字面で「x … △x」の順（負号と数字の間の空白を許す。AMOUNT_RE は空白を挟んだ負号を落とす）
       new RegExp(`(?<![△▲][\\s　]*)${esc(ints[0]!)}(?![\\d,])[\\s\\S]*?[△▲][\\s　]*${esc(ints[0]!)}(?![\\d,])`).test(rest);
-    if (blankCurAbolished) ints = ["0", ints[0]!, ints[1]!];
+    // ⚠ 列が前年度→当年度の順（prevColumnFirst）の様式では [前年度, 当年度, 比較] に組む（emit の読み順に合わせる）
+    if (blankCurAbolished) ints = opts.prevColumnFirst ? [ints[0]!, "0", ints[1]!] : ["0", ints[0]!, ints[1]!];
     // **前年度セルがダッシュ**の新設款（2026-09-28・一関 R2）— 上の鏡像:
     //   `6 法人事業税交付金   138,444  0.2   ―   ―   138,444   ―`
     // 整数が2個（当年度 x・比較 x）で、既定では 2番目が前年度に読まれて**前年度 x の款になる**（前年度 Σ が静かに膨らむ）。

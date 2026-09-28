@@ -9506,21 +9506,20 @@
       "sourceId": "isehara-yosansho-r4",
       "url": "https://www.city.isehara.kanagawa.jp/docs/2022031400039/",
       "kind": "landing",
-      "waybackUrl": "https://web.archive.org/web/20240528194642/https://www.city.isehara.kanagawa.jp/docs/2022031400039/",
-      "waybackTimestamp": "20240528194642",
-      "checkedAt": "2026-09-28T05:12:24.212Z"
+      "waybackUrl": "https://web.archive.org/web/20260928053640/https://www.city.isehara.kanagawa.jp/docs/2022031400039/",
+      "waybackTimestamp": "20260928053640",
+      "checkedAt": "2026-09-28T05:37:32.577Z"
     },
     {
       "sourceId": "isehara-yosansho-r4",
       "url": "https://www.city.isehara.kanagawa.jp/docs/2022031400039/file_contents/41.pdf",
       "kind": "file",
-      "waybackUrl": "https://web.archive.org/web/20231004010745/https://www.city.isehara.kanagawa.jp/docs/2022031400039/file_contents/41.pdf",
-      "waybackTimestamp": "20231004010745",
-      "checkedAt": "2026-09-28T05:12:17.254Z",
-      "sha256Match": false,
-      "waybackBytes": 1048576,
-      "rawSha256": "4a376f95e8cd1e1be7b501edb4c6a84145c2e60db35c100d457f373c67865fa8",
-      "waybackTruncated": true
+      "waybackUrl": "https://web.archive.org/web/20260928053601/https://www.city.isehara.kanagawa.jp/docs/2022031400039/file_contents/41.pdf",
+      "waybackTimestamp": "20260928053601",
+      "checkedAt": "2026-09-28T05:36:26.061Z",
+      "sha256Match": true,
+      "waybackBytes": 2348455,
+      "rawSha256": "4a376f95e8cd1e1be7b501edb4c6a84145c2e60db35c100d457f373c67865fa8"
     },
     {
       "sourceId": "isehara-yosansho-r5",
