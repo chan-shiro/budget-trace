@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 308,
+  "budgetCount": 313,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 2301,
-  "fileCount": 3537,
-  "archivedCount": 2127,
+  "sourceCount": 2333,
+  "fileCount": 3569,
+  "archivedCount": 2159,
   "licenseOpen": 102,
-  "licensePermission": 1983,
+  "licensePermission": 2015,
   "licenseUnverified": 216,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -741,6 +741,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "一関市",
+      "code": "032093",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "奥州市",
       "code": "032158",
       "years": 7,
@@ -779,6 +785,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "佐野市",
       "code": "092045",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "桐生市",
+      "code": "102032",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },
@@ -981,6 +993,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "池田市",
+      "code": "272043",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "富田林市",
       "code": "272141",
       "years": 7,
@@ -1013,6 +1031,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "東広島市",
       "code": "342122",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "西条市",
+      "code": "382060",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },
@@ -1091,12 +1115,6 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "八戸市",
       "code": "022039",
-      "years": 6,
-      "range": "R3〜R8（6年度）"
-    },
-    {
-      "name": "一関市",
-      "code": "032093",
       "years": 6,
       "range": "R3〜R8（6年度）"
     },
@@ -1233,6 +1251,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H25〜R6（6年度）"
     },
     {
+      "name": "宜野湾市",
+      "code": "472051",
+      "years": 6,
+      "range": "R3〜R8（6年度）"
+    },
+    {
       "name": "浦添市",
       "code": "472085",
       "years": 6,
@@ -1363,6 +1387,12 @@ export const ROADMAP_PROGRESS = {
       "code": "142069",
       "years": 4,
       "range": "R5〜R8（4年度）"
+    },
+    {
+      "name": "伊勢原市",
+      "code": "142140",
+      "years": 4,
+      "range": "R3〜R8（4年度）"
     },
     {
       "name": "藤枝市",

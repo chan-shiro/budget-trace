@@ -3246,8 +3246,8 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `omuta-kanbetsu-hikaku-${fy}`, muniCode: "402028", muniName: "大牟田市", prefName: "福岡県", isPref: false,
     })),
-    // ⚠⚠ 一関の歳入は自主財源／依存財源の順（款番号が昇順でない warning は八千代と同じ扱い）・縦書きラベルを CropX で落とす。R2 は未収録
-    ...(["r8", "r7", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
+    // ⚠⚠ 一関の歳入は自主財源／依存財源の順（款番号が昇順でない warning は八千代と同じ扱い）・縦書きラベルを CropX で落とす。R2 は第49巡で追加
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `ichinoseki-yosan-gaiyou-${fy}`, muniCode: "032093", muniName: "一関市", prefName: "岩手県", isPref: false,
     })),
     // ⚠ 三島 R8・R2 は decodeGarble、R2 は歳入だけ -raw。R4・R3 は左右2段で未収録
@@ -3261,6 +3261,30 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     // ⚠⚠ 多治見は歳入・歳出が別ファイル。自主／依存の列（kanNameSuffixStrip）と項の内訳行（kanIndentMax）。R5 骨格で R6 に prevNote。R3・R2 は WARP
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `tajimi-yosan-shukeihyo-${fy}`, muniCode: "212041", muniName: "多治見市", prefName: "岐阜県", isPref: false,
+    })),
+    // ---- 第49巡（2026-09-28・§13-51） ----
+    // ⚠⚠ 西条の歳入は折返し款名の下段に見えない全角「１」が詰めてある（stripChars）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `saijo-yosan-gaiyou-${fy}`, muniCode: "382060", muniName: "西条市", prefName: "愛媛県", isPref: false,
+    })),
+    // ⚠⚠ 池田の歳入は3行に分かれる款名（kanNameContinues を年度ごと）・右の増減内容の列を CropX で落とす。R3 は修正可決後の版
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `ikeda-osaka-yosangaiyou-${fy}`, muniCode: "272043", muniName: "池田市", prefName: "大阪府", isPref: false,
+    })),
+    // ⚠ 伊勢原 R7・R6・R2 は予算書がスキャンで未収録
+    ...(["r8", "r5", "r4", "r3"] as const).map((fy) => ({
+      srcId: `isehara-yosansho-${fy}`, muniCode: "142140", muniName: "伊勢原市", prefName: "神奈川県", isPref: false,
+    })),
+    // ⚠⚠ 桐生は列が前年度→当年度の順（prevColumnFirst）・自主財源の「＊」を落とす。R2 は WARP・R1 骨格で R2 に prevNote
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `kiryu-yosangaiyou-${fy}`, muniCode: "102032", muniName: "桐生市", prefName: "群馬県", isPref: false,
+    })),
+    // ⚠ 宜野湾は R8〜R5 が予算書の総括・R4・R3 が概要 PDF。R2 は未収録
+    ...(["r8", "r7", "r6", "r5"] as const).map((fy) => ({
+      srcId: `ginowan-yosansho-${fy}`, muniCode: "472051", muniName: "宜野湾市", prefName: "沖縄県", isPref: false,
+    })),
+    ...(["r4", "r3"] as const).map((fy) => ({
+      srcId: `ginowan-yosan-gaiyo-${fy}`, muniCode: "472051", muniName: "宜野湾市", prefName: "沖縄県", isPref: false,
     })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。

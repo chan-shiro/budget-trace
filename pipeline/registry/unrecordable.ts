@@ -1746,17 +1746,6 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     checkedOn: "2026-09-28", ref: "docs/data-sources.md §13-49",
   },
   {
-    // 一関市（032093）R2。R8〜R3 は収録済み（§13-50）。
-    // ⚠ 原典は健全で、こちらの抽出が「当年度がダッシュで印も皆減も無い廃止款」に対応していないだけ（#301 の手当ては当年度 0 の型）。
-    code: "032093", name: "一関市", dataset: "budget", fiscalYears: ["R2"],
-    categories: ["parser-unsupported"],
-    reason:
-      "歳入の廃止款「自動車取得税交付金 ― ― 131,814 0.2 △131,814 ―」に款番号も廃止の印も「皆減」も無く、当年度の欄がダッシュのため既存パーサがこの行を読み落とす。" +
-      "前年度の合計が 131,814千円合わなくなる。予算書と予算に関する説明書はスキャン画像で代わりにならない。",
-    url: "https://www.city.ichinoseki.iwate.jp/archive/contents-48734",
-    checkedOn: "2026-09-28", ref: "docs/data-sources.md §13-50",
-  },
-  {
     // 三島市（222062）R4・R3。R8〜R5・R2 は収録済み（§13-50）。
     // ⚠ 原典は健全（復号すれば読める）。こちらの抽出が「1物理ページの左右2段にまたがる表」に対応していないだけ。
     code: "222062", name: "三島市", dataset: "budget", fiscalYears: ["R4", "R3"],
@@ -1766,5 +1755,35 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
       "既存パーサは1ページの表を1列の帯としてしか読めず、左右の段が1行に混ざる。",
     url: "https://www.city.mishima.shizuoka.jp/life/5/27/135/",
     checkedOn: "2026-09-28", ref: "docs/data-sources.md §13-50",
+  },
+  {
+    // 大野城市（402192）R8〜R2。1年度も収録できていない（§13-51）。
+    code: "402192", name: "大野城市", dataset: "budget", fiscalYears: ["R8", "R7", "R6", "R5", "R4", "R3", "R2"],
+    categories: ["format-mismatch", "no-material"],
+    reason:
+      "市が公開している当初予算の資料は「当初予算（ダイジェスト）」だけで、款別の比較は民生費・総務費など6つの款と「その他」にまとめた棒グラフ（令和5年度以降は画像、令和4年度以前はPDF）であり、金額も万円単位に丸められている。" +
+      "予算書・予算説明書は現行のサイト・旧サイト（Wayback）・議会のサイトのいずれにも掲載が無い。",
+    url: "https://www.city.onojo.fukuoka.jp/list00259.html",
+    checkedOn: "2026-09-28", ref: "docs/data-sources.md §13-51",
+  },
+  {
+    // 伊勢原市（142140）R7・R6・R2。R8・R5〜R3 は収録済み（§13-51）。
+    code: "142140", name: "伊勢原市", dataset: "budget", fiscalYears: ["R7", "R6", "R2"],
+    categories: ["scanned-image"],
+    reason:
+      "一般会計予算書が紙をスキャンした画像のPDFで、文字として取り出せない。款別の前年度比較を載せた別の資料（予算の概要）は広報の1ページで、款別の表が無い。",
+    url: "https://www.city.isehara.kanagawa.jp/categories/bunya/shisei/gyosei/yosan/",
+    checkedOn: "2026-09-28", ref: "docs/data-sources.md §13-51",
+  },
+  {
+    // 宜野湾市（472051）R2。R8〜R3 は収録済み（§13-51）。
+    // ⚠ 原典は健全で、こちらの抽出が「番号つきの新設款で前年度と比較のセルが空白・整数が1個」の行に対応していないだけ。
+    code: "472051", name: "宜野湾市", dataset: "budget", fiscalYears: ["R2"],
+    categories: ["parser-unsupported"],
+    reason:
+      "予算書は掲載が無く、予算の概要の歳入で新しく設けられた款「法人事業税交付金」の行が前年度と比較の欄が空白で「皆増」とだけ書かれていて、既存パーサがこの行を読めず隣の款とつながる。" +
+      "歳入の合計が 63,194千円合わなくなる。",
+    url: "https://www.city.ginowan.lg.jp/soshiki/kikaku/2/1/2/8/2469.html",
+    checkedOn: "2026-09-28", ref: "docs/data-sources.md §13-51",
   },
 ];
