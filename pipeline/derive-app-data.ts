@@ -3286,6 +3286,26 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r4", "r3"] as const).map((fy) => ({
       srcId: `ginowan-yosan-gaiyo-${fy}`, muniCode: "472051", muniName: "宜野湾市", prefName: "沖縄県", isPref: false,
     })),
+    // ---- 第50巡（2026-09-28・§13-52） ----
+    // ⚠⚠ 小樽の歳出は「金額行／(給) 組替行／計」の3行組（salaryRegroupRows・#307）。款13 職員給与費は独立款
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `otaru-yosan-setsumei-${fy}`, muniCode: "012033", muniName: "小樽市", prefName: "北海道", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `kani-yosan-gaiyou-${fy}`, muniCode: "212148", muniName: "可児市", prefName: "岐阜県", isPref: false,
+    })),
+    // ⚠ 大村 R2 は Wayback。R6 当初は決算の71%（総務費を補正で大きく積む）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `omura-yosangaiyou-${fy}`, muniCode: "422053", muniName: "大村市", prefName: "長崎県", isPref: false,
+    })),
+    // ⚠ 坂戸は現行サイトが直近3年度だけ（R5・R4・R2 は WARP・R3 は Wayback）。R7 以前は表題が款1 に付く（HeaderExtra）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `sakado-yosangaiyou-${fy}`, muniCode: "112399", muniName: "坂戸市", prefName: "埼玉県", isPref: false,
+    })),
+    // ⚠⚠ 筑西 R7 は骨格で R8 に prevNote。R6 は原案しか無く、R3・R2 はアウトライン化で未収録
+    ...(["r8", "r7", "r5", "r4"] as const).map((fy) => ({
+      srcId: `chikusei-yosansho-${fy}`, muniCode: "082279", muniName: "筑西市", prefName: "茨城県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。

@@ -1786,4 +1786,23 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     url: "https://www.city.ginowan.lg.jp/soshiki/kikaku/2/1/2/8/2469.html",
     checkedOn: "2026-09-28", ref: "docs/data-sources.md §13-51",
   },
+  {
+    // 筑西市（082279）R6。R8・R7・R5・R4 は収録済み（§13-52）。
+    code: "082279", name: "筑西市", dataset: "budget", fiscalYears: ["R6"],
+    categories: ["format-mismatch"],
+    reason:
+      "市が公開している一般会計予算書は議会で修正される前の原案で、修正は6ページの別の資料にしか載っていない。修正で総額と繰入金・市債・教育費の3つの款の額が変わっている。" +
+      "修正後の「予算の概要」は歳出の款が一部しか載っていない。",
+    url: "https://www.city.chikusei.lg.jp/gyousei/zai-kaikei-kansa/zaisei/yosan/page011294.html",
+    checkedOn: "2026-09-28", ref: "docs/data-sources.md §13-52",
+  },
+  {
+    // 筑西市（082279）R3・R2。
+    code: "082279", name: "筑西市", dataset: "budget", fiscalYears: ["R3", "R2"],
+    categories: ["broken-text-layer"],
+    reason:
+      "予算書の文字が図形に変換されていて、ページ番号以外は文字として取り出せない。「予算の概要」には款別の表の全部が無く、主な増減だけが載っている。",
+    url: "https://www.city.chikusei.lg.jp/gyousei/zai-kaikei-kansa/zaisei/yosan/",
+    checkedOn: "2026-09-28", ref: "docs/data-sources.md §13-52",
+  },
 ];

@@ -19014,5 +19014,197 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.ginowan.lg.jp/material/files/group/12/reiwa3yosan.pdf",
     "license": "「宜野湾市ホームページ」に掲載されている情報（文章、写真、イラスト等）は、著作権の対象となっています。また、「宜野湾市ホームページ」自体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転用・引用することはできません。また、当ページの内容の全部または一部について、宜野湾市に無断で改変を行うことはできません。",
     "target": "file"
+  },
+  "/sources/otaru-yosan-setsumei-r8/R08yosan_setsumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.otaru.lg.jp/docs/2025102700021/file_contents/R08yosan_setsumei.pdf",
+    "license": "本ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、小樽市、またはコンテンツ提供者に帰属しています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/otaru-yosan-setsumei-r7/R07yosan_setsumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.otaru.lg.jp/docs/2024100700019/file_contents/R07yosan_setsumei.pdf",
+    "license": "本ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、小樽市、またはコンテンツ提供者に帰属しています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/otaru-yosan-setsumei-r6/R06yosan_setsumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.otaru.lg.jp/docs/2023101000029/file_contents/R06yosan_setsumei.pdf",
+    "license": "本ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、小樽市、またはコンテンツ提供者に帰属しています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/otaru-yosan-setsumei-r5/R05yosan_setsumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.otaru.lg.jp/docs/2022100300048/file_contents/R05yosan_setsumei.pdf",
+    "license": "本ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、小樽市、またはコンテンツ提供者に帰属しています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/otaru-yosan-setsumei-r4/R04yosan_setsumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.otaru.lg.jp/docs/2021102100052/file_contents/R04yosan_setsumei.pdf",
+    "license": "本ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、小樽市、またはコンテンツ提供者に帰属しています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/otaru-yosan-setsumei-r3/R03yosan_setsumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.otaru.lg.jp/docs/2021031600111/file_contents/R03yosan_setsumei.pdf",
+    "license": "本ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、小樽市、またはコンテンツ提供者に帰属しています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/otaru-yosan-setsumei-r2/R02yosan_setsumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.otaru.lg.jp/docs/2020121300016/file_contents/R02yosan_setsumei.pdf",
+    "license": "本ホームページに掲載されている文章、写真、イラスト、画像等の著作権は、小樽市、またはコンテンツ提供者に帰属しています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/kani-yosan-gaiyou-r8/R8yosannogaiyou_01.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kani.lg.jp/26262.htm",
+    "license": "当サイトに掲載されている文字、画像、ファイルなど、個々の情報に関する著作権は、当市に帰属します。「私的利用」または「引用」など、著作権法上認められている場合を除き、無断で転載、複製、改変などをすることは禁じられています。",
+    "target": "page"
+  },
+  "/sources/kani-yosan-gaiyou-r7/R7yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kani.lg.jp/25072.htm",
+    "license": "当サイトに掲載されている文字、画像、ファイルなど、個々の情報に関する著作権は、当市に帰属します。「私的利用」または「引用」など、著作権法上認められている場合を除き、無断で転載、複製、改変などをすることは禁じられています。",
+    "target": "page"
+  },
+  "/sources/kani-yosan-gaiyou-r6/R6yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kani.lg.jp/24124.htm",
+    "license": "当サイトに掲載されている文字、画像、ファイルなど、個々の情報に関する著作権は、当市に帰属します。「私的利用」または「引用」など、著作権法上認められている場合を除き、無断で転載、複製、改変などをすることは禁じられています。",
+    "target": "page"
+  },
+  "/sources/kani-yosan-gaiyou-r5/R5yosanogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kani.lg.jp/22829.htm",
+    "license": "当サイトに掲載されている文字、画像、ファイルなど、個々の情報に関する著作権は、当市に帰属します。「私的利用」または「引用」など、著作権法上認められている場合を除き、無断で転載、複製、改変などをすることは禁じられています。",
+    "target": "page"
+  },
+  "/sources/kani-yosan-gaiyou-r4/R4yosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kani.lg.jp/21055.htm",
+    "license": "当サイトに掲載されている文字、画像、ファイルなど、個々の情報に関する著作権は、当市に帰属します。「私的利用」または「引用」など、著作権法上認められている場合を除き、無断で転載、複製、改変などをすることは禁じられています。",
+    "target": "page"
+  },
+  "/sources/kani-yosan-gaiyou-r3/R3tousyoyosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kani.lg.jp/19392.htm",
+    "license": "当サイトに掲載されている文字、画像、ファイルなど、個々の情報に関する著作権は、当市に帰属します。「私的利用」または「引用」など、著作権法上認められている場合を除き、無断で転載、複製、改変などをすることは禁じられています。",
+    "target": "page"
+  },
+  "/sources/kani-yosan-gaiyou-r2/R2yosangaiyousyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kani.lg.jp/17054.htm",
+    "license": "当サイトに掲載されている文字、画像、ファイルなど、個々の情報に関する著作権は、当市に帰属します。「私的利用」または「引用」など、著作権法上認められている場合を除き、無断で転載、複製、改変などをすることは禁じられています。",
+    "target": "page"
+  },
+  "/sources/omura-yosangaiyou-r8/r8gaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.omura.nagasaki.jp/zaisei/shise/shokai/zaise/yosan/documents/r8gaiyo.pdf",
+    "license": "本市サイトに掲載されている文字、写真、イラストなどの個々の情報に関する著作権は、原則として大村市に帰属します（ただし、一部の画像などの著作権は、原著作者が所有しています）。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "file"
+  },
+  "/sources/omura-yosangaiyou-r7/r7gaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.omura.nagasaki.jp/zaisei/shise/shokai/zaise/yosan/documents/r7gaiyo.pdf",
+    "license": "本市サイトに掲載されている文字、写真、イラストなどの個々の情報に関する著作権は、原則として大村市に帰属します（ただし、一部の画像などの著作権は、原著作者が所有しています）。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "file"
+  },
+  "/sources/omura-yosangaiyou-r6/r6gaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.omura.nagasaki.jp/zaisei/shise/shokai/zaise/yosan/documents/r6gaiyo.pdf",
+    "license": "本市サイトに掲載されている文字、写真、イラストなどの個々の情報に関する著作権は、原則として大村市に帰属します（ただし、一部の画像などの著作権は、原著作者が所有しています）。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "file"
+  },
+  "/sources/omura-yosangaiyou-r5/r5gaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.omura.nagasaki.jp/zaisei/shise/shokai/zaise/yosan/documents/r5gaiyo.pdf",
+    "license": "本市サイトに掲載されている文字、写真、イラストなどの個々の情報に関する著作権は、原則として大村市に帰属します（ただし、一部の画像などの著作権は、原著作者が所有しています）。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "file"
+  },
+  "/sources/omura-yosangaiyou-r4/r4_gaiyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.omura.nagasaki.jp/zaisei/shise/shokai/zaise/yosan/documents/r4_gaiyo.pdf",
+    "license": "本市サイトに掲載されている文字、写真、イラストなどの個々の情報に関する著作権は、原則として大村市に帰属します（ただし、一部の画像などの著作権は、原著作者が所有しています）。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "file"
+  },
+  "/sources/omura-yosangaiyou-r3/r3_gaiyo2_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.omura.nagasaki.jp/zaisei/shise/shokai/zaise/yosan/documents/r3_gaiyo2_1.pdf",
+    "license": "本市サイトに掲載されている文字、写真、イラストなどの個々の情報に関する著作権は、原則として大村市に帰属します（ただし、一部の画像などの著作権は、原著作者が所有しています）。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "file"
+  },
+  "/sources/omura-yosangaiyou-r2/r2_gaiyo.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20240518234137id_/http://www.city.omura.nagasaki.jp/zaisei/shise/shokai/zaise/yosan/documents/r2_gaiyo.pdf",
+    "license": "本市サイトに掲載されている文字、写真、イラストなどの個々の情報に関する著作権は、原則として大村市に帰属します（ただし、一部の画像などの著作権は、原著作者が所有しています）。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載、複製、改変、放送、送信、翻訳、販売、貸与などの利用をすることはできません。",
+    "target": "file"
+  },
+  "/sources/sakado-yosangaiyou-r8/34776.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakado.lg.jp/soshiki/4/57489.html",
+    "license": "「坂戸市ホームページ」（以下、当サイトといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として坂戸市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。また、当サイトに掲載された社名・商品名などの名称は、一般に関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、坂戸市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/sakado-yosangaiyou-r7/30987.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakado.lg.jp/soshiki/4/50813.html",
+    "license": "「坂戸市ホームページ」（以下、当サイトといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として坂戸市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。また、当サイトに掲載された社名・商品名などの名称は、一般に関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、坂戸市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/sakado-yosangaiyou-r6/26424.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakado.lg.jp/soshiki/4/43405.html",
+    "license": "「坂戸市ホームページ」（以下、当サイトといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として坂戸市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。また、当サイトに掲載された社名・商品名などの名称は、一般に関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、坂戸市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/sakado-yosangaiyou-r5/22752.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20240615041448/https://www.city.sakado.lg.jp/soshiki/4/37034.html",
+    "license": "「坂戸市ホームページ」（以下、当サイトといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として坂戸市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。また、当サイトに掲載された社名・商品名などの名称は、一般に関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、坂戸市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/sakado-yosangaiyou-r4/19082.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20240615035128/https://www.city.sakado.lg.jp/soshiki/4/30473.html",
+    "license": "「坂戸市ホームページ」（以下、当サイトといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として坂戸市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。また、当サイトに掲載された社名・商品名などの名称は、一般に関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、坂戸市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/sakado-yosangaiyou-r3/12999.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20220705055329/https://www.city.sakado.lg.jp/soshiki/4/22515.html",
+    "license": "「坂戸市ホームページ」（以下、当サイトといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として坂戸市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。また、当サイトに掲載された社名・商品名などの名称は、一般に関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、坂戸市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/sakado-yosangaiyou-r2/9233.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20210714/20210713143449/https://www.city.sakado.lg.jp/soshiki/4/15176.html",
+    "license": "「坂戸市ホームページ」（以下、当サイトといいます）に掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として坂戸市に帰属し、国際条約・法律等によって保護されています（一部の画像等の著作権は、原著作者が所有しています）。また、当サイトに掲載された社名・商品名などの名称は、一般に関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、坂戸市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/chikusei-yosansho-r8/1772173617_doc_47_0.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.chikusei.lg.jp/gyousei/zai-kaikei-kansa/zaisei/yosan/page013464.html",
+    "license": "本サイトに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として筑西市に帰属しています。ただし、外部委託先の制作による一部の著作物など、筑西市以外に著作者が存在する場合は、著作権は各著作者に帰属することになります。本サイトにお越し頂いた方が、著作権法で認められている「私的使用」または「引用」などの範囲内において、本サイトのコンテンツをダウンロードしたりプリントアウトすることは問題ありませんが、無断で他のホームページや印刷媒体に転載したり、複製、翻訳を行うなどといった行為は違法となりますのでご遠慮ください。",
+    "target": "page"
+  },
+  "/sources/chikusei-yosansho-r7/1740967372_doc_47_0.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.chikusei.lg.jp/gyousei/zai-kaikei-kansa/zaisei/yosan/7nendoyosan/page012353.html",
+    "license": "本サイトに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として筑西市に帰属しています。ただし、外部委託先の制作による一部の著作物など、筑西市以外に著作者が存在する場合は、著作権は各著作者に帰属することになります。本サイトにお越し頂いた方が、著作権法で認められている「私的使用」または「引用」などの範囲内において、本サイトのコンテンツをダウンロードしたりプリントアウトすることは問題ありませんが、無断で他のホームページや印刷媒体に転載したり、複製、翻訳を行うなどといった行為は違法となりますのでご遠慮ください。",
+    "target": "page"
+  },
+  "/sources/chikusei-yosansho-r5/1679028479_doc_48_0.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.chikusei.lg.jp/gyousei/zai-kaikei-kansa/zaisei/yosan/page010253.html",
+    "license": "本サイトに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として筑西市に帰属しています。ただし、外部委託先の制作による一部の著作物など、筑西市以外に著作者が存在する場合は、著作権は各著作者に帰属することになります。本サイトにお越し頂いた方が、著作権法で認められている「私的使用」または「引用」などの範囲内において、本サイトのコンテンツをダウンロードしたりプリントアウトすることは問題ありませんが、無断で他のホームページや印刷媒体に転載したり、複製、翻訳を行うなどといった行為は違法となりますのでご遠慮ください。",
+    "target": "page"
+  },
+  "/sources/chikusei-yosansho-r4/1647911638_doc_48_0.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.chikusei.lg.jp/gyousei/zai-kaikei-kansa/zaisei/yosan/page008133.html",
+    "license": "本サイトに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として筑西市に帰属しています。ただし、外部委託先の制作による一部の著作物など、筑西市以外に著作者が存在する場合は、著作権は各著作者に帰属することになります。本サイトにお越し頂いた方が、著作権法で認められている「私的使用」または「引用」などの範囲内において、本サイトのコンテンツをダウンロードしたりプリントアウトすることは問題ありませんが、無断で他のホームページや印刷媒体に転載したり、複製、翻訳を行うなどといった行為は違法となりますのでご遠慮ください。",
+    "target": "page"
   }
 };
