@@ -832,7 +832,9 @@ function foldSalaryRegroupRows(text: string, where: string): string {
     const label = line.slice(0, line.search(KYU)).replace(/[\s　]+$/, "");
     const above = near(i, -1);
     const below = near(i, 1);
-    if (above < 0 || !AMOUNT_ONLY.test(lines[above]!) || !/\d/.test(lines[above]!)) {
+    // ページ番号の行（`- 6 -`）は金額だけの行に見えるので除く（① が欠けた版面で取り違えない）
+    const isPageNo = (l: string) => /^[\s　]*[-－‐]\s*\d+\s*[-－‐]?[\s　]*$/.test(l);
+    if (above < 0 || !AMOUNT_ONLY.test(lines[above]!) || !/\d/.test(lines[above]!) || isPageNo(lines[above]!)) {
       throw new Error(`${where}: salaryRegroupRows — 「${line.trim()}」の直前に金額だけの行がありません`);
     }
     if (below < 0 || !KEI.test(lines[below]!)) {
