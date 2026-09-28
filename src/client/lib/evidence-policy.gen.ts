@@ -18667,6 +18667,12 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "license": "当ホームページに掲載されている情報は、明記されているものを除き、すべて一関市が著作権を保有しています。私的利用のための複製や、引用など著作権法上認められた場合を除き、当ホームページの掲載コンテンツを複製・転用する場合は、必ず事前にそれぞれのコンテンツを所管する各担当課などにご相談ください。",
     "target": "file"
   },
+  "/sources/ichinoseki-yosan-gaiyou-r2/20200316-115451.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ichinoseki.iwate.jp/uploads/public/archive_0000000998_00/20200316-115451.pdf",
+    "license": "当ホームページに掲載されている情報は、明記されているものを除き、すべて一関市が著作権を保有しています。私的利用のための複製や、引用など著作権法上認められた場合を除き、当ホームページの掲載コンテンツを複製・転用する場合は、必ず事前にそれぞれのコンテンツを所管する各担当課などにご相談ください。",
+    "target": "file"
+  },
   "/sources/mishima-yosansho-r8/13478.pdf": {
     "mode": "origin",
     "href": "https://www.city.mishima.shizuoka.jp/uploaded/attachment/13478.pdf",
@@ -18821,6 +18827,192 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "mode": "archive",
     "href": "https://warp.ndl.go.jp/20210511/20210511051543/https://www.city.tajimi.lg.jp/gyose/zaise/yosan/r2-yosan/documents/r2_saishutsu.pdf",
     "license": "多治見市ホームページに掲載されている記事、画像、データ類は、すべて著作権の対象になっています。また、ホームページ全体も、編集著作権の対象となっています。「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製、転用することはできません。",
+    "target": "file"
+  },
+  "/sources/saijo-yosan-gaiyou-r8/83041.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.saijo.ehime.jp/uploaded/attachment/83041.pdf",
+    "license": "本サイトに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また本サイト全体も編集著作物として著作権の対象となっており「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/saijo-yosan-gaiyou-r7/75493.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.saijo.ehime.jp/uploaded/attachment/75493.pdf",
+    "license": "本サイトに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また本サイト全体も編集著作物として著作権の対象となっており「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/saijo-yosan-gaiyou-r6/68796.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.saijo.ehime.jp/uploaded/attachment/68796.pdf",
+    "license": "本サイトに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また本サイト全体も編集著作物として著作権の対象となっており「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/saijo-yosan-gaiyou-r5/61697.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.saijo.ehime.jp/uploaded/attachment/61697.pdf",
+    "license": "本サイトに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また本サイト全体も編集著作物として著作権の対象となっており「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/saijo-yosan-gaiyou-r4/55434.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.saijo.ehime.jp/uploaded/attachment/55434.pdf",
+    "license": "本サイトに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また本サイト全体も編集著作物として著作権の対象となっており「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/saijo-yosan-gaiyou-r3/48228.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.saijo.ehime.jp/uploaded/attachment/48228.pdf",
+    "license": "本サイトに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また本サイト全体も編集著作物として著作権の対象となっており「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/saijo-yosan-gaiyou-r2/40590.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.saijo.ehime.jp/uploaded/attachment/40590.pdf",
+    "license": "本サイトに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また本サイト全体も編集著作物として著作権の対象となっており「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/ikeda-osaka-yosangaiyou-r8/R08ikeda_yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ikeda.osaka.jp/soshiki/somu/zaisei/16973.html",
+    "license": "池田市ホームページに掲載している個々の情報（文章、写真、イラストなど）に関する諸権利は、原則として池田市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "page"
+  },
+  "/sources/ikeda-osaka-yosangaiyou-r7/R07ikeda_yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ikeda.osaka.jp/soshiki/somu/zaisei/16973.html",
+    "license": "池田市ホームページに掲載している個々の情報（文章、写真、イラストなど）に関する諸権利は、原則として池田市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "page"
+  },
+  "/sources/ikeda-osaka-yosangaiyou-r6/R06ikeda_yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ikeda.osaka.jp/soshiki/somu/zaisei/16973.html",
+    "license": "池田市ホームページに掲載している個々の情報（文章、写真、イラストなど）に関する諸権利は、原則として池田市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "page"
+  },
+  "/sources/ikeda-osaka-yosangaiyou-r5/R05ikeda_yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ikeda.osaka.jp/soshiki/somu/zaisei/16973.html",
+    "license": "池田市ホームページに掲載している個々の情報（文章、写真、イラストなど）に関する諸権利は、原則として池田市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "page"
+  },
+  "/sources/ikeda-osaka-yosangaiyou-r4/R04ikeda_yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ikeda.osaka.jp/soshiki/somu/zaisei/16973.html",
+    "license": "池田市ホームページに掲載している個々の情報（文章、写真、イラストなど）に関する諸権利は、原則として池田市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "page"
+  },
+  "/sources/ikeda-osaka-yosangaiyou-r3/R03ikeda_yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ikeda.osaka.jp/soshiki/somu/zaisei/16973.html",
+    "license": "池田市ホームページに掲載している個々の情報（文章、写真、イラストなど）に関する諸権利は、原則として池田市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "page"
+  },
+  "/sources/ikeda-osaka-yosangaiyou-r2/R02ikeda_yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ikeda.osaka.jp/soshiki/somu/zaisei/16973.html",
+    "license": "池田市ホームページに掲載している個々の情報（文章、写真、イラストなど）に関する諸権利は、原則として池田市に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "page"
+  },
+  "/sources/isehara-yosansho-r8/R8yosannsho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.isehara.kanagawa.jp/docs/2026030900071/file_contents/R8yosannsho.pdf",
+    "license": "当ホームページに掲載されている文書や画像等の各ファイル及びその内容に関する権利は、伊勢原市に帰属し、法令によって保護されています。また、当ホームページに掲載された社名・商品名などの名称は、関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、市の許可なく当ホームページに掲載されている文書・画像等を無断使用・複製・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/isehara-yosansho-r5/R5yosansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.isehara.kanagawa.jp/docs/2023033000074/file_contents/R5yosansyo.pdf",
+    "license": "当ホームページに掲載されている文書や画像等の各ファイル及びその内容に関する権利は、伊勢原市に帰属し、法令によって保護されています。また、当ホームページに掲載された社名・商品名などの名称は、関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、市の許可なく当ホームページに掲載されている文書・画像等を無断使用・複製・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/isehara-yosansho-r4/41.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.isehara.kanagawa.jp/docs/2022031400039/file_contents/41.pdf",
+    "license": "当ホームページに掲載されている文書や画像等の各ファイル及びその内容に関する権利は、伊勢原市に帰属し、法令によって保護されています。また、当ホームページに掲載された社名・商品名などの名称は、関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、市の許可なく当ホームページに掲載されている文書・画像等を無断使用・複製・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/isehara-yosansho-r3/R03_01.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.isehara.kanagawa.jp/docs/2021030900021/file_contents/R03_01.pdf",
+    "license": "当ホームページに掲載されている文書や画像等の各ファイル及びその内容に関する権利は、伊勢原市に帰属し、法令によって保護されています。また、当ホームページに掲載された社名・商品名などの名称は、関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、市の許可なく当ホームページに掲載されている文書・画像等を無断使用・複製・転載することを禁止します。",
+    "target": "file"
+  },
+  "/sources/kiryu-yosangaiyou-r8/r8.toushoyosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kiryu.lg.jp/_res/projects/default_project/_page_/001/026/241/r8.toushoyosangaiyou.pdf",
+    "license": "桐生市ホームページに掲載している文書や画像などの各ファイル及びその内容に関する著作権は、桐生市またはそのコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。観光画像集など他の利用を可と記載している場合を除き、桐生市のホームページに掲載された文書・画像を許可なく使用・転載を禁止します。利用する場合は、各ページ下段にある担当課あてにお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/kiryu-yosangaiyou-r7/r7-toushoyosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kiryu.lg.jp/_res/projects/default_project/_page_/001/024/733/r7-toushoyosannogaiyou.pdf",
+    "license": "桐生市ホームページに掲載している文書や画像などの各ファイル及びその内容に関する著作権は、桐生市またはそのコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。観光画像集など他の利用を可と記載している場合を除き、桐生市のホームページに掲載された文書・画像を許可なく使用・転載を禁止します。利用する場合は、各ページ下段にある担当課あてにお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/kiryu-yosangaiyou-r6/r6toushoyosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kiryu.lg.jp/_res/projects/default_project/_page_/001/023/450/r6toushoyosannogaiyou.pdf",
+    "license": "桐生市ホームページに掲載している文書や画像などの各ファイル及びその内容に関する著作権は、桐生市またはそのコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。観光画像集など他の利用を可と記載している場合を除き、桐生市のホームページに掲載された文書・画像を許可なく使用・転載を禁止します。利用する場合は、各ページ下段にある担当課あてにお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/kiryu-yosangaiyou-r5/r5_tousyoyosannogaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kiryu.lg.jp/_res/projects/default_project/_page_/001/022/338/r5_tousyoyosannogaiyou.pdf",
+    "license": "桐生市ホームページに掲載している文書や画像などの各ファイル及びその内容に関する著作権は、桐生市またはそのコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。観光画像集など他の利用を可と記載している場合を除き、桐生市のホームページに掲載された文書・画像を許可なく使用・転載を禁止します。利用する場合は、各ページ下段にある担当課あてにお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/kiryu-yosangaiyou-r4/r4tousyoyosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kiryu.lg.jp/_res/projects/default_project/_page_/001/020/071/r4tousyoyosangaiyou.pdf",
+    "license": "桐生市ホームページに掲載している文書や画像などの各ファイル及びその内容に関する著作権は、桐生市またはそのコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。観光画像集など他の利用を可と記載している場合を除き、桐生市のホームページに掲載された文書・画像を許可なく使用・転載を禁止します。利用する場合は、各ページ下段にある担当課あてにお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/kiryu-yosangaiyou-r3/r03yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kiryu.lg.jp/_res/projects/default_project/_page_/001/018/572/r03yosangaiyou.pdf",
+    "license": "桐生市ホームページに掲載している文書や画像などの各ファイル及びその内容に関する著作権は、桐生市またはそのコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。観光画像集など他の利用を可と記載している場合を除き、桐生市のホームページに掲載された文書・画像を許可なく使用・転載を禁止します。利用する場合は、各ページ下段にある担当課あてにお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/kiryu-yosangaiyou-r2/r2yosangaiyou.pdf": {
+    "mode": "archive",
+    "href": "https://warp.ndl.go.jp/20210110/20210109125009/https://www.city.kiryu.lg.jp/_res/projects/default_project/_page_/001/016/484/r2yosangaiyou.pdf",
+    "license": "桐生市ホームページに掲載している文書や画像などの各ファイル及びその内容に関する著作権は、桐生市またはそのコンテンツ提供者にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。観光画像集など他の利用を可と記載している場合を除き、桐生市のホームページに掲載された文書・画像を許可なく使用・転載を禁止します。利用する場合は、各ページ下段にある担当課あてにお問い合わせください。",
+    "target": "file"
+  },
+  "/sources/ginowan-yosansho-r8/r8tousyoyosansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ginowan.lg.jp/material/files/group/12/r8tousyoyosansyo.pdf",
+    "license": "「宜野湾市ホームページ」に掲載されている情報（文章、写真、イラスト等）は、著作権の対象となっています。また、「宜野湾市ホームページ」自体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転用・引用することはできません。また、当ページの内容の全部または一部について、宜野湾市に無断で改変を行うことはできません。",
+    "target": "file"
+  },
+  "/sources/ginowan-yosansho-r7/R7tousyo_ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ginowan.lg.jp/material/files/group/12/R7tousyo_ippan.pdf",
+    "license": "「宜野湾市ホームページ」に掲載されている情報（文章、写真、イラスト等）は、著作権の対象となっています。また、「宜野湾市ホームページ」自体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転用・引用することはできません。また、当ページの内容の全部または一部について、宜野湾市に無断で改変を行うことはできません。",
+    "target": "file"
+  },
+  "/sources/ginowan-yosansho-r6/r6_ippann_tousyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ginowan.lg.jp/material/files/group/12/r6_ippann_tousyo.pdf",
+    "license": "「宜野湾市ホームページ」に掲載されている情報（文章、写真、イラスト等）は、著作権の対象となっています。また、「宜野湾市ホームページ」自体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転用・引用することはできません。また、当ページの内容の全部または一部について、宜野湾市に無断で改変を行うことはできません。",
+    "target": "file"
+  },
+  "/sources/ginowan-yosansho-r5/R5_tousyo_ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ginowan.lg.jp/material/files/group/12/R5_tousyo_ippan.pdf",
+    "license": "「宜野湾市ホームページ」に掲載されている情報（文章、写真、イラスト等）は、著作権の対象となっています。また、「宜野湾市ホームページ」自体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転用・引用することはできません。また、当ページの内容の全部または一部について、宜野湾市に無断で改変を行うことはできません。",
+    "target": "file"
+  },
+  "/sources/ginowan-yosan-gaiyo-r4/reiwa4yosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ginowan.lg.jp/material/files/group/12/reiwa4yosan.pdf",
+    "license": "「宜野湾市ホームページ」に掲載されている情報（文章、写真、イラスト等）は、著作権の対象となっています。また、「宜野湾市ホームページ」自体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転用・引用することはできません。また、当ページの内容の全部または一部について、宜野湾市に無断で改変を行うことはできません。",
+    "target": "file"
+  },
+  "/sources/ginowan-yosan-gaiyo-r3/reiwa3yosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ginowan.lg.jp/material/files/group/12/reiwa3yosan.pdf",
+    "license": "「宜野湾市ホームページ」に掲載されている情報（文章、写真、イラスト等）は、著作権の対象となっています。また、「宜野湾市ホームページ」自体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転用・引用することはできません。また、当ページの内容の全部または一部について、宜野湾市に無断で改変を行うことはできません。",
     "target": "file"
   }
 };

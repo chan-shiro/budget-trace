@@ -255,6 +255,11 @@ const MUNI_SLUGS: Record<string, string> = {
   "222062": "mishima",
   "172031": "komatsu",
   "212041": "tajimi",
+  "382060": "saijo",
+  "272043": "ikeda",
+  "142140": "isehara",
+  "102032": "kiryu",
+  "472051": "ginowan",
   "472115": "okinawa", // ⚠ 沖縄県 470007 は "ken" スラグなので衝突しない（富山市・佐賀市と同じ規則）
   "232076": "toyokawa", "352039": "yamaguchi", "222038": "numazu", "272191": "izumi",
   // 政令指定都市（2026-07-15）

@@ -153,6 +153,16 @@ interface Options {
    */
   stripBoxDrawing?: boolean;
   /**
+   * **款名の折返しに紛れ込む詰め物の字を消す**（2026-09-28・西条 R8〜R2・第49巡）。西条は2段に折り返す款名の下段に
+   * 画面に出ない全角「１」（U+FF11）を詰めていて（`割 交 付 金１ １１`）、pdftotext は字として拾う:
+   *   `5   (金額)` / `株 式 等 譲渡 所得` / `割 交 付 金１ １１`
+   * 下段が `１` で終わるため款名の続きと読まれず、隣の款とつながって款が抜ける（Σ は割れる＝大声で落ちる側）。
+   * `textSource: raw` では `１` が金額 1 に化ける。**側ごとに、消す字を文字の並びで指定**する（`{ revenue: "１" }`）。
+   * ⚠ **opt-in・側ごと** — 全角数字を款番号や金額に使う様式があるので、無条件には消さない。
+   * ⚠ 指定した字は**そのページの全文から消える**。原典のそのページに他の用途でその字が無いことを確かめてから使う。
+   */
+  stripChars?: { revenue?: string; expenditure?: string };
+  /**
    * **ToUnicode 欠落 PDF の決定論的復号**（#159・pipeline/lib/garble-decode.ts）。
    * 豊島 R4/R2/H31〜H29・大田 H27・品川 R2 は荒川（#125）と同一の化けマップで、
    * 数字が制御文字（真の字 − 0x1D）・漢字が固定ガーブルになる。true にすると抽出テキストを
@@ -846,6 +856,12 @@ function parseKanPage(
   if (opts.stripBoxDrawing) {
     text = text.replace(/[\u2500-\u257F]/g, " ");
   }
+  // 詰め物の字を消す（Options.stripChars 参照）。罫線と同じ位置（誤植修正より前）
+  const stripSrc = side === "revenue" ? opts.stripChars?.revenue : opts.stripChars?.expenditure;
+  if (stripSrc) {
+    const cls = [...stripSrc].map((c) => c.replace(/[\\\]^-]/g, "\\$&")).join("");
+    text = text.replace(new RegExp(`[${cls}]`, "gu"), "");
+  }
   // 原典の誤植をピンポイントで直す（Options.amountTypos 参照）。**dashAsZero・折返し復元より先** —
   // 誤植は原典の印字そのものなので、以降の全処理が「正しい印字」を前提に動けるようにする
   const typos = side === "revenue" ? opts.amountTypos?.revenue : opts.amountTypos?.expenditure;
@@ -1451,10 +1467,44 @@ function parseKanPage(
       /^[△▲]/.test(ints[2]!) &&
       ints[2]!.replace(/[△▲,]/g, "") === ints[1]!.replace(/,/g, "") &&
       ints[1]!.replace(/,/g, "") !== "0";
+    // **当年度セルが空欄**の同型（2026-09-28・糸島 R8・一関 R2・第49巡）:
+    //   `   環 境 性 能 割 交 付 金      70,000  0.1  △ 70,000 △ 100.0`
+    // 整数が2個（前年度 x・比較 △x）しかなく上の条件に当たらない。**当年度 0 を補って**3個の型に揃える。
+    // 条件は上と同じ厳しさ（款名が同じ行・2番目が負号つきで絶対値が1番目と一致・0 でない）。
+    const esc = (t: string) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const blankCurAbolished =
+      !lead &&
+      !ABOLISHED_MARK_RE.test(raw) &&
+      !TAIL_ABOLISHED_MARK_RE.test(raw) &&
+      !compact.includes("皆") &&
+      hasCJKChars(namePart) &&
+      ints.length === 2 &&
+      !/^[△▲]/.test(ints[0]!) &&
+      ints[1]!.replace(/^[△▲][\s　]*/, "") === ints[0] &&
+      ints[0]!.replace(/,/g, "") !== "0" &&
+      // 字面で「x … △x」の順（負号と数字の間の空白を許す。AMOUNT_RE は空白を挟んだ負号を落とす）
+      new RegExp(`(?<![△▲][\\s　]*)${esc(ints[0]!)}(?![\\d,])[\\s\\S]*?[△▲][\\s　]*${esc(ints[0]!)}(?![\\d,])`).test(rest);
+    if (blankCurAbolished) ints = ["0", ints[0]!, ints[1]!];
+    // **前年度セルがダッシュ**の新設款（2026-09-28・一関 R2）— 上の鏡像:
+    //   `6 法人事業税交付金   138,444  0.2   ―   ―   138,444   ―`
+    // 整数が2個（当年度 x・比較 x）で、既定では 2番目が前年度に読まれて**前年度 x の款になる**（前年度 Σ が静かに膨らむ）。
+    // 字面で「x … ダッシュ ダッシュ … x」（前年度額と構成比の2セルがダッシュ）のときだけ前年度 0 を補う。
+    if (
+      lead &&
+      !opts.dashAsZero &&
+      ints.length === 2 &&
+      !/^[△▲]/.test(ints[0]!) &&
+      ints[0] === ints[1] &&
+      ints[0]!.replace(/,/g, "") !== "0" &&
+      new RegExp(
+        `${esc(ints[0]!)}(?![\\d,])[\\s　0-9.]*[-‐‑‒–—―−－─━][\\s　]+[-‐‑‒–—―−－─━][\\s　]+${esc(ints[1]!)}(?![\\d,])`,
+      ).test(rest)
+    )
+      ints = [ints[0]!, "0", ints[1]!];
     const abolished =
       !lead &&
       ints.length >= 2 &&
-      (ABOLISHED_MARK_RE.test(raw) || TAIL_ABOLISHED_MARK_RE.test(raw) || compact.includes("皆減") || zeroCurAbolished);
+      (ABOLISHED_MARK_RE.test(raw) || TAIL_ABOLISHED_MARK_RE.test(raw) || compact.includes("皆減") || zeroCurAbolished || blankCurAbolished);
     if (abolished) {
       // 款名から**廃止マーカーと空セルのダッシュ**を落とす（`▲自動車取得税交付金--` `自動車税環境△`）。
       // 表示専用なので Σ も款名重複ゲートも守ってくれない領域＝出力を目視して確かめること。

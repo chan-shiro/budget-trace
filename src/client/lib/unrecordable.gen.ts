@@ -422,6 +422,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
       }
     ]
   },
+  "142140": {
+    "budget": [
+      {
+        "fyLabel": "令和7年度・令和6年度・令和2年度",
+        "reason": "一般会計予算書が紙をスキャンした画像のPDFで、文字として取り出せない。款別の前年度比較を載せた別の資料（予算の概要）は広報の1ページで、款別の表が無い。",
+        "checkedOn": "2026-09-28"
+      }
+    ]
+  },
   "142166": {
     "budget": [
       {
@@ -1009,6 +1018,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
       }
     ]
   },
+  "402192": {
+    "budget": [
+      {
+        "fyLabel": "令和8年度・令和7年度・令和6年度・令和5年度・令和4年度・令和3年度・令和2年度",
+        "reason": "市が公開している当初予算の資料は「当初予算（ダイジェスト）」だけで、款別の比較は民生費・総務費など6つの款と「その他」にまとめた棒グラフ（令和5年度以降は画像、令和4年度以前はPDF）であり、金額も万円単位に丸められている。予算書・予算説明書は現行のサイト・旧サイト（Wayback）・議会のサイトのいずれにも掲載が無い。",
+        "checkedOn": "2026-09-28"
+      }
+    ]
+  },
   "412015": {
     "budget": [
       {
@@ -1118,6 +1136,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
       }
     ]
   },
+  "472051": {
+    "budget": [
+      {
+        "fyLabel": "令和2年度",
+        "reason": "予算書は掲載が無く、予算の概要の歳入で新しく設けられた款「法人事業税交付金」の行が前年度と比較の欄が空白で「皆増」とだけ書かれていて、既存パーサがこの行を読めず隣の款とつながる。歳入の合計が 63,194千円合わなくなる。",
+        "checkedOn": "2026-09-28"
+      }
+    ]
+  },
   "472085": {
     "budget": [
       {
@@ -1184,15 +1211,6 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
         "fyLabel": "平成31年度・平成30年度・平成29年度",
         "reason": "平成31年度は「予算の概要」（24p・埋め込みフォント48）の款別総括ページ（p.5・p.8）のテキスト層が化けて款名が出ない（pdftotext で款番号と金額の一部だけが残り款名は空・化け字）。平成30・29年度は「予算の概要」（22p/21p）も「一般会計」の予算書（191p/187p）もpdftotext が約20〜190字（改ページのみ）・埋め込みフォント0のスキャン画像。",
         "checkedOn": "2026-09-10"
-      }
-    ]
-  },
-  "032093": {
-    "budget": [
-      {
-        "fyLabel": "令和2年度",
-        "reason": "歳入の廃止款「自動車取得税交付金 ― ― 131,814 0.2 △131,814 ―」に款番号も廃止の印も「皆減」も無く、当年度の欄がダッシュのため既存パーサがこの行を読み落とす。前年度の合計が 131,814千円合わなくなる。予算書と予算に関する説明書はスキャン画像で代わりにならない。",
-        "checkedOn": "2026-09-28"
       }
     ]
   },
@@ -1351,6 +1369,9 @@ export const UNRECORDABLE_WHOLLY: Record<string, string[]> = {
     "report"
   ],
   "382051": [
+    "budget"
+  ],
+  "402192": [
     "budget"
   ],
   "470007": [
