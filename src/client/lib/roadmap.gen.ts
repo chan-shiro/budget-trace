@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 313,
+  "budgetCount": 318,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 2333,
-  "fileCount": 3569,
-  "archivedCount": 2159,
+  "sourceCount": 2365,
+  "fileCount": 3601,
+  "archivedCount": 2190,
   "licenseOpen": 102,
-  "licensePermission": 2015,
+  "licensePermission": 2047,
   "licenseUnverified": 216,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -741,6 +741,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "小樽市",
+      "code": "012033",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "一関市",
       "code": "032093",
       "years": 7,
@@ -815,6 +821,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "富士見市",
       "code": "112356",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "坂戸市",
+      "code": "112399",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },
@@ -929,6 +941,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "多治見市",
       "code": "212041",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "可児市",
+      "code": "212148",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },
@@ -1067,6 +1085,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "唐津市",
       "code": "412023",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "大村市",
+      "code": "422053",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },
@@ -1369,6 +1393,12 @@ export const ROADMAP_PROGRESS = {
       "code": "472131",
       "years": 5,
       "range": "R3〜R8（5年度）"
+    },
+    {
+      "name": "筑西市",
+      "code": "082279",
+      "years": 4,
+      "range": "R4〜R8（4年度）"
     },
     {
       "name": "渋谷区",

@@ -163,6 +163,18 @@ interface Options {
    */
   stripChars?: { revenue?: string; expenditure?: string };
   /**
+   * **職員給与費の組替を併記する3行組**（2026-09-28・小樽 R8〜R2・#307）。小樽の「科目別予算比較表」の歳出は款ごとに:
+   *   `            244,650  0.4        234,978  0.4    9,672   4.1`   ← ① 金額だけの行（予算書第1表の款の額）
+   *   `1 議 会 費  (給)  67,266   (給)  72,520`                       ← ② 款番号＋款名＋職員給与費の組替額
+   *   `            計    311,916  0.5  計  307,498  0.5  4,418  1.4` ← ③ 組替後の計
+   * 職員給与費は款13 に一括計上されていて（「(給）欄は、13款職員給与費に一括計上した職員給与費を関係科目に組み替えたもの」）、
+   * ① を款の額にすれば Σ が合計（③ の総計）と一致する。既定では ② の (給) 額を款の額に読んで Σ が割れる（大声で落ちる側）。
+   * `true` の側では、`(給)` のある行を「① の数字を持つ款の行」に書き換え、① と ③ の行を消す。**合計行**（`歳 出 合 計 (給)`）だけは
+   * ③ の総計（職員給与費を含む＝予算の総額）を採る。① や ③ が見つからなければ throw（静かに読み違えない）。
+   * `(給)` の無い款（公債費・職員給与費・予備費など）は1行で、従来どおり読む。⚠ **opt-in・側ごと**。
+   */
+  salaryRegroupRows?: { revenue?: boolean; expenditure?: boolean };
+  /**
    * **ToUnicode 欠落 PDF の決定論的復号**（#159・pipeline/lib/garble-decode.ts）。
    * 豊島 R4/R2/H31〜H29・大田 H27・品川 R2 は荒川（#125）と同一の化けマップで、
    * 数字が制御文字（真の字 − 0x1D）・漢字が固定ガーブルになる。true にすると抽出テキストを
@@ -803,6 +815,40 @@ interface PageResult {
 // 「款名称」は単独行に置かれ、`^款$` は完全一致なので当たらず款1に連結される（富士河口湖町）。
 const KAN_HEADER_RE = /年度|予算額|一覧表|単位|構成比|増減|伸率|比較|区分|款名称|^款$/;
 
+/** Options.salaryRegroupRows の本体。`(給)` の行ごとに、直前の金額だけの行（款）または直後の「計」行（合計）の数字を採る。 */
+function foldSalaryRegroupRows(text: string, where: string): string {
+  const lines = text.split("\n");
+  // `(給)` の直後に金額が続く行だけ（注記「１(給）欄は、…」を拾わない）
+  const KYU = /[(（]\s*給\s*[)）](?=[\s　]*[\d△▲])/;
+  const AMOUNT_ONLY = /^[\s　\d,.△▲─━―－-]+$/;
+  const KEI = /^[\s　]*計[\s　]/;
+  const near = (from: number, step: 1 | -1): number => {
+    for (let j = from + step; j >= 0 && j < lines.length; j += step) if (lines[j]!.trim() !== "") return j;
+    return -1;
+  };
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i]!;
+    if (!KYU.test(line)) continue;
+    const label = line.slice(0, line.search(KYU)).replace(/[\s　]+$/, "");
+    const above = near(i, -1);
+    const below = near(i, 1);
+    // ページ番号の行（`- 6 -`）は金額だけの行に見えるので除く（① が欠けた版面で取り違えない）
+    const isPageNo = (l: string) => /^[\s　]*[-－‐]\s*\d+\s*[-－‐]?[\s　]*$/.test(l);
+    if (above < 0 || !AMOUNT_ONLY.test(lines[above]!) || !/\d/.test(lines[above]!) || isPageNo(lines[above]!)) {
+      throw new Error(`${where}: salaryRegroupRows — 「${line.trim()}」の直前に金額だけの行がありません`);
+    }
+    if (below < 0 || !KEI.test(lines[below]!)) {
+      throw new Error(`${where}: salaryRegroupRows — 「${line.trim()}」の直後に「計」の行がありません`);
+    }
+    const isTotal = /合[\s　]*計/.test(label);
+    const nums = isTotal ? lines[below]!.replace(/計/g, " ") : lines[above]!;
+    lines[i] = `${label}   ${nums.trim()}`;
+    lines[above] = "";
+    lines[below] = "";
+  }
+  return lines.join("\n");
+}
+
 function parseKanPage(
   filePath: string,
   filename: string,
@@ -861,6 +907,10 @@ function parseKanPage(
   if (stripSrc) {
     const cls = [...stripSrc].map((c) => c.replace(/[\\\]^-]/g, "\\$&")).join("");
     text = text.replace(new RegExp(`[${cls}]`, "gu"), "");
+  }
+  // 職員給与費の組替を併記する3行組を1行に畳む（Options.salaryRegroupRows 参照）。誤植修正より前（行の組み替えだけで字は変えない）
+  if (side === "revenue" ? opts.salaryRegroupRows?.revenue : opts.salaryRegroupRows?.expenditure) {
+    text = foldSalaryRegroupRows(text, `${filename} ${pageLabel}`);
   }
   // 原典の誤植をピンポイントで直す（Options.amountTypos 参照）。**dashAsZero・折返し復元より先** —
   // 誤植は原典の印字そのものなので、以降の全処理が「正しい印字」を前提に動けるようにする
