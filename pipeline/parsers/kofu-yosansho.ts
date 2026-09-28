@@ -1472,7 +1472,9 @@ function parseKanPage(
     // 整数が2個（前年度 x・比較 △x）しかなく上の条件に当たらない。**当年度 0 を補って**3個の型に揃える。
     // 条件は上と同じ厳しさ（款名が同じ行・2番目が負号つきで絶対値が1番目と一致・0 でない）。
     const esc = (t: string) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    // ⚠ 列位置を直接指定する様式（amountIntIndex）には当てない（あちらは推測を通さない設計）。
     const blankCurAbolished =
+      amountIntIndex == null &&
       !lead &&
       !ABOLISHED_MARK_RE.test(raw) &&
       !TAIL_ABOLISHED_MARK_RE.test(raw) &&
@@ -1490,9 +1492,12 @@ function parseKanPage(
     //   `6 法人事業税交付金   138,444  0.2   ―   ―   138,444   ―`
     // 整数が2個（当年度 x・比較 x）で、既定では 2番目が前年度に読まれて**前年度 x の款になる**（前年度 Σ が静かに膨らむ）。
     // 字面で「x … ダッシュ ダッシュ … x」（前年度額と構成比の2セルがダッシュ）のときだけ前年度 0 を補う。
+    // ⚠ 既定の列順専用（prevColumnFirst・amountIntIndex の様式では字面の順が違うので当てない）。
     if (
       lead &&
       !opts.dashAsZero &&
+      !opts.prevColumnFirst &&
+      amountIntIndex == null &&
       ints.length === 2 &&
       !/^[△▲]/.test(ints[0]!) &&
       ints[0] === ints[1] &&
