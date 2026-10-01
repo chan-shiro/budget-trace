@@ -6,7 +6,10 @@
       "sha256": "a8ad470b81c48bbd199f68b512e63d494956d3e125db6f0067d02c8917aba9c7",
       "bytes": 27668,
       "fetchedAt": "2026-10-01T15:50:47.089Z",
-      "fetchedFrom": "https://web.archive.org/web/20260220080313id_/https://www.city.yokohama.lg.jp/shikai/giin/kaihabetsu.html"
+      "fetchedFrom": "https://web.archive.org/web/20260220080313id_/https://www.city.yokohama.lg.jp/shikai/giin/kaihabetsu.html",
+      "transform": [
+        "gunzip"
+      ]
     },
     {
       "filename": "20260324_sanpi.pdf",

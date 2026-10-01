@@ -97,14 +97,20 @@
       "sha256": "14c836ec5951c0f6c248f0797c245c1b37c134562443a164c80d684f9d4115ba",
       "bytes": 430031,
       "fetchedAt": "2026-10-01T15:50:46.324Z",
-      "fetchedFrom": "https://www.city.sendai.miyagi.dbsr.jp/index.php/5286956?Template=view&VoiceType=all&DocumentID=3681"
+      "fetchedFrom": "https://www.city.sendai.miyagi.dbsr.jp/index.php/5286956?Template=view&VoiceType=all&DocumentID=3681",
+      "transform": [
+        "ext:.html"
+      ]
     },
     {
       "filename": "5286956_Template_view_VoiceType_all_DocumentID_3680.html",
       "sha256": "7157cca73249d6976df60d0c08b332a4f2c2c3326459911fb0af18f01fa52394",
       "bytes": 18547,
       "fetchedAt": "2026-10-01T15:50:46.325Z",
-      "fetchedFrom": "https://www.city.sendai.miyagi.dbsr.jp/index.php/5286956?Template=view&VoiceType=all&DocumentID=3680"
+      "fetchedFrom": "https://www.city.sendai.miyagi.dbsr.jp/index.php/5286956?Template=view&VoiceType=all&DocumentID=3680",
+      "transform": [
+        "ext:.html"
+      ]
     },
     {
       "filename": "212_01.pdf",

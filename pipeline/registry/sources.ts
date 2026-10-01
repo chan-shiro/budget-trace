@@ -23576,6 +23576,9 @@ export const SOURCES: SourceEntry[] = [
       body: "山梨県議会",
       asOf: "2025-09-17",
       asOfText: "会派別名簿（令和7年9月17日）",
+      // 議会全体の人数の網: 会派別名簿の見出し「会派名(人数)」が会派ごとに1回（直前が数字の「055(223)」＝電話番号は除く）。
+      // ⚠ 定数・欠員の原文がある選挙区別議員一覧は議員の自宅住所を載せるので使わない（2026-10-02 レビュー）
+      factionMarker: "(?<!\\d)\\(\\d{1,2}\\)",
       roster: {
         url: "https://web.archive.org/web/20260209231452id_/https://www.pref.yamanashi.jp/gikaisom/kaihabetu_meibo.html",
         title: "会派別名簿（令和7年9月17日）",
@@ -23626,6 +23629,8 @@ export const SOURCES: SourceEntry[] = [
       body: "北杜市議会",
       asOf: "2024-11-28",
       asOfText: "令和6年11月28日現在",
+      // 議会全体の人数の網（会派を丸ごと書き落とすと捕まらない穴を塞ぐ・2026-10-02 レビュー）
+      factionMarker: "\\d人",
       roster: {
         url: "https://www.city.hokuto.yamanashi.jp/fs/4/3/2/3/0/2/_/_____R6.11.28___1_.pdf",
         title: "北杜市議会議員所属会派（令和6年11月28日現在）",
@@ -23681,6 +23686,7 @@ export const SOURCES: SourceEntry[] = [
       body: "笛吹市議会",
       asOf: "2025-06-10",
       asOfText: "令和7年6月10日現在",
+      noTotalReason: "会派一覧表に総数・定数の印字が無く、会派ごとに1回だけ出る語も無い（「結成」は表頭にも出る）。定数を書いた市議会のページも見つからない（2026-10-02）",
       roster: {
         url: "https://www.city.fuefuki.yamanashi.jp/documents/1142/kaihaitiran.pdf",
         title: "笛吹市議会 会派一覧表（令和7年6月10日現在）",
@@ -23784,6 +23790,8 @@ export const SOURCES: SourceEntry[] = [
       body: "浜松市議会",
       asOf: "2026-01-20",
       asOfText: "更新日:2026年1月20日",
+      // 議会全体の人数の網（会派を丸ごと書き落とすと捕まらない穴を塞ぐ・2026-10-02 レビュー）
+      factionMarker: "\\(\\d+人\\)",
       roster: {"url": "https://web.archive.org/web/20260315043410id_/https://www.city.hamamatsu.shizuoka.jp/gikai/iinkai/meibokaiha.html", "title": "会派別名簿（更新日 2026年1月20日）"},
       factions: [
         { name: "自由民主党浜松", declared: "(23人)", members: ["渥美誠", "井田博康", "太田康隆", "小野田康弘", "加茂俊武", "神間郁子", "久米丈二", "倉田清一", "小泉翠", "齋藤和志", "鈴木裕之", "須藤京子", "髙林修", "辻村公子", "露木里江子", "戸田誠", "鳥井德孝", "中野和幸", "花井和夫", "平野岳子", "藤田典良", "松本康夫", "栁川樹一郎"] },
@@ -23931,6 +23939,8 @@ export const SOURCES: SourceEntry[] = [
       body: "堺市議会",
       asOf: "2025-04-02",
       asOfText: "更新日：2025年4月2日",
+      // 議会全体の人数の網（会派を丸ごと書き落とすと捕まらない穴を塞ぐ・2026-10-02 レビュー）
+      factionMarker: "\\(\\d+人\\)",
       roster: {"url": "https://web.archive.org/web/20260124021742id_/https://www.city.sakai.lg.jp/shigikai/meibo/75932120220517150837343.html", "title": "会派別（更新日 2025年4月2日）"},
       factions: [
         { name: "大阪維新の会堺市議会議員団", declared: "（16人）", members: ["伊豆丸精二", "上野充司", "上村太一", "加藤慎平", "萱野孝弥", "坂本千代子", "中野貴文", "西川知己", "西田浩延", "藤井載子", "札場泰司", "松木僚", "的場慎一", "三宅達也", "山﨑光", "米田敏文"] },
@@ -24084,9 +24094,11 @@ export const SOURCES: SourceEntry[] = [
       body: "広島市議会",
       asOf: "2026-02-25",
       asOfText: "更新日2026年2月25日",
+      // 議会全体の人数の網（会派を丸ごと書き落とすと捕まらない穴を塞ぐ・2026-10-02 レビュー）
+      factionMarker: "【会派連絡先",
       roster: {"url": "https://web.archive.org/web/20260329150632id_/https://www.city.hiroshima.lg.jp/gikai/giin-shoukai/1010248.html", "title": "会派別一覧（更新日 2026年2月25日）"},
       factions: [
-        { name: "自由民主党・市民クラブ", declared: "自民党・市民クラブ(14)", declaredIn: "https://www.city.hiroshima.lg.jp/_res/projects/default_project/_page_/001/048/719/260326.pdf", members: ["平岡優一", "水野考", "川口茂博", "碓井法明", "山田春男", "母谷龍典", "八條範彦", "宮崎誠克", "山路英男", "椋木太一", "西佐古晋平", "三宅朗充", "豊島永子", "沖本高博"] },
+        { name: "自由民主党・市民クラブ", abbr: "自民党・市民クラブ", declared: "自民党・市民クラブ(14)", declaredIn: "https://www.city.hiroshima.lg.jp/_res/projects/default_project/_page_/001/048/719/260326.pdf", members: ["平岡優一", "水野考", "川口茂博", "碓井法明", "山田春男", "母谷龍典", "八條範彦", "宮崎誠克", "山路英男", "椋木太一", "西佐古晋平", "三宅朗充", "豊島永子", "沖本高博"] },
         { name: "公明党", declared: "公明党(8)", declaredIn: "https://www.city.hiroshima.lg.jp/_res/projects/default_project/_page_/001/048/719/260326.pdf", members: ["西田浩", "石田祥子", "川村真治", "碓氷芳雄", "並川雄一", "田中勝", "川本和弘", "幸城麗子"] },
         { name: "市民連合・市民の声", declared: "市民連合・市民の声(7)", declaredIn: "https://www.city.hiroshima.lg.jp/_res/projects/default_project/_page_/001/048/719/260326.pdf", members: ["山内正晃", "山本昌宏", "岡村和明", "若林新三", "有田優子", "丸山幸一郎", "松本拓也"] },
         { name: "日本共産党", declared: "日本共産党(6)", declaredIn: "https://www.city.hiroshima.lg.jp/_res/projects/default_project/_page_/001/048/719/260326.pdf", members: ["中森辰一", "中村孝江", "中原洋美", "清水貞子", "藤本聡志", "大西理"] },
@@ -24136,6 +24148,8 @@ export const SOURCES: SourceEntry[] = [
       body: "北九州市議会",
       asOf: "2026-02-02",
       asOfText: "更新日 : 2026年2月2日",
+      // 議会全体の人数の網（会派を丸ごと書き落とすと捕まらない穴を塞ぐ・2026-10-02 レビュー）
+      factionMarker: "一般的な名称及び表示",
       roster: {"url": "https://web.archive.org/web/20260213010153id_/https://www.city.kitakyushu.lg.jp/sigikai/file_0056.html", "title": "議員名簿 会派別（更新日 2026年2月2日）"},
       factions: [
         { name: "自民党・無所属の会", declared: "16人", members: ["戸町武弘", "片山尹", "香月耕治", "日野雄二", "村上幸一", "中村義雄", "鷹木研一郎", "田仲常郎", "西田一", "宮﨑吉輝", "吉村太志", "吉田幸正", "田中元", "上野照弘", "佐藤栄作", "菊地公平"] },
@@ -24241,6 +24255,8 @@ export const SOURCES: SourceEntry[] = [
       asOfText: "令和8年（2026年）1月7日現在",
       labelSuffix: "期数",
       labelUrl: "https://kumamoto-shigikai.jp/agenda/pub/detail.aspx?c_id=4&coy_id=16&co_id=207&dis_id=3",
+      // 議会全体の人数の網（会派を丸ごと書き落とすと捕まらない穴を塞ぐ・2026-10-02 レビュー）
+      memberMarker: "期数",
       roster: {"url": "https://web.archive.org/web/20260421205002id_/https://kumamoto-shigikai.jp/common/UploadFileDsp.aspx?c_id=53&id=125&set_doc=1", "title": "選出区別議員名簿（令和8年（2026年）1月7日現在）", "confirmUrls": ["https://kumamoto-shigikai.jp/agenda/pub/detail.aspx?c_id=4&coy_id=16&co_id=207&dis_id=3"]},
       factions: [
         { name: "自由民主党熊本市議団", label: "自民党", noDeclaredCount: true, members: ["大石浩文", "村上麿", "村上誠也", "古川智子", "荒川慎太郎", "齊藤博", "田島幸治", "日隈忍", "小佐井賀瑞宜", "寺本義勝", "田中敦朗", "田中誠一", "坂田誠二", "落水清弘"] },
@@ -24293,6 +24309,8 @@ export const SOURCES: SourceEntry[] = [
       body: "札幌市議会",
       asOf: "2025-09-29",
       asOfText: "更新日：2025年9月29日",
+      // 議会全体の人数の網（会派を丸ごと書き落とすと捕まらない穴を塞ぐ・2026-10-02 レビュー）
+      factionMarker: "\\(\\d+人\\)",
       roster: {"url": "https://web.archive.org/web/20260117133407id_/https://www.city.sapporo.jp/gikai/meibo/meibo-kaiha.html", "title": "会派別名簿（更新日 2025年9月29日）"},
       factions: [
         { name: "札幌市議会自由民主党議員会", declared: "（25人）", members: ["三上洋右", "三神英彦", "和田勝也", "高橋克朋", "勝木勇人", "五十嵐徳美", "こんどう和雄", "長内直也", "よこやま峰子", "飯島弘之", "佐々木みつこ", "細川正人", "こじまゆみ", "北村光一郎", "小竹ともこ", "中川賢一", "伴良隆", "村松叶啓", "川田ただひさ", "小須田大拓", "村山拓司", "松井隆文", "山田洋聡", "藤田稔人", "山田一郎"] },
@@ -24315,6 +24333,8 @@ export const SOURCES: SourceEntry[] = [
         sessionLabel: "令和８年第１回札幌市議会定例会",
         decidedDate: "2026-03-26",
         result: "可決",
+        // 表の議決日の欄は「８.２.12 ８.２.20 ８.３.26」と3つの日付が空白だけで並び、正規化（空白を落とす）で
+        // 「8.2.128.2.208.3.26」とつながって区切れない。会期の終日（＝本会議の議決日）の原文で照合する
         farOk: ["decidedDate"],
         decidedDateText: "至 令和８年３月26日",
       },
@@ -24467,6 +24487,9 @@ export const SOURCES: SourceEntry[] = [
       body: "新潟市議会",
       asOf: "2026-02-20",
       asOfText: "最終更新日：2026年2月20日",
+      // 議会全体の人数の網: 常任委員会名簿は全議員が「氏名・会派・選出区」で1回ずつ並ぶので、「会派名＋区名」の出現数 = 現員。
+      // ⚠ 欠員の原文がある選出区別名簿は議員の自宅住所・電話を載せるので使わない（2026-10-02 レビュー）
+      memberMarker: "(翔政会|日本共産党新潟市議会議員団|新風にいがた|新潟市公明党|ともに躍動する新潟|無所属の会|市民ネットにいがた|会派に属さない議員)(北区|東区|中央区|南区|江南区|秋葉区|西区|西蒲区)",
       roster: {"url": "https://web.archive.org/web/20260305140442id_/https://www.city.niigata.lg.jp/shigikai/index_meibo/meibo_03jounin.html", "title": "常任委員会 委員名簿（最終更新日 2026年2月20日）"},
       factions: [
         { name: "翔政会", label: "翔政会", declared: "翔政会 20 人", declaredIn: "https://www.city.niigata.lg.jp/shigikai/index_honkaigi/honkaigi_kekka/r8kekka/r0802.html", declaredExcludes: ["小野清一郎"], members: ["小野清一郎", "伊藤健太郎", "佐藤幸雄", "佐藤正人", "保苅浩", "内宮貞志", "内山幸紀", "古泉幸一", "土田真清", "小林弘樹", "小野照子", "山際務", "東村里恵子", "林龍太郎", "皆川英二", "米野泰加", "美のよしゆき", "荒井宏幸", "西脇厚", "豊島真", "高橋哲也"] },
@@ -24635,6 +24658,8 @@ export const SOURCES: SourceEntry[] = [
       body: "相模原市議会",
       asOf: "2025-05-21",
       asOfText: "公開日 2025年5月21日",
+      // 議会全体の人数の網（会派を丸ごと書き落とすと捕まらない穴を塞ぐ・2026-10-02 レビュー）
+      factionMarker: "\\(\\d+人\\)",
       roster: {"url": "https://web.archive.org/web/20251006233116id_/https://www.sagamihara-shigikai.jp/doc/2013120600195/", "title": "会派別名簿（公開日 2025年5月21日）"},
       factions: [
         { name: "自由民主党相模原市議団", url: "https://web.archive.org/web/20251108031015id_/https://www.sagamihara-shigikai.jp/doc/2013120600201/", asOfText: "公開日 2025年4月21日", declared: "（14人）", members: ["渡部俊明", "西田悠人", "務川慧", "萩生田康治", "折笠正治", "大八木聡", "秋本仁", "佐藤尚史", "大槻和弘", "古内明", "寺田弘子", "阿部善博", "中村昌治", "須田毅"] },

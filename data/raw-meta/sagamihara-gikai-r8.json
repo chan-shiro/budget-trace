@@ -6,56 +6,80 @@
       "sha256": "85264b2f80d31d70937f4c8943bbe4ff15913008f8928afad523f022e4b48328",
       "bytes": 10777,
       "fetchedAt": "2026-10-01T15:50:47.096Z",
-      "fetchedFrom": "https://web.archive.org/web/20251006233116id_/https://www.sagamihara-shigikai.jp/doc/2013120600195/"
+      "fetchedFrom": "https://web.archive.org/web/20251006233116id_/https://www.sagamihara-shigikai.jp/doc/2013120600195/",
+      "transform": [
+        "ext:.html"
+      ]
     },
     {
       "filename": "2013120600201.html",
       "sha256": "855c7f087311630bc28e6d3523555730879be92eaa5d45a5dfcae1f7d9dc17fb",
       "bytes": 14763,
       "fetchedAt": "2026-10-01T15:50:47.096Z",
-      "fetchedFrom": "https://web.archive.org/web/20251108031015id_/https://www.sagamihara-shigikai.jp/doc/2013120600201/"
+      "fetchedFrom": "https://web.archive.org/web/20251108031015id_/https://www.sagamihara-shigikai.jp/doc/2013120600201/",
+      "transform": [
+        "ext:.html"
+      ]
     },
     {
       "filename": "2013120600225.html",
       "sha256": "5ec493a8fc11d8587a6c11a38f70e76fbb5170da8fd159aabfb90f13d1ee8a2f",
       "bytes": 13200,
       "fetchedAt": "2026-10-01T15:50:47.097Z",
-      "fetchedFrom": "https://web.archive.org/web/20251108034118id_/https://www.sagamihara-shigikai.jp/doc/2013120600225/"
+      "fetchedFrom": "https://web.archive.org/web/20251108034118id_/https://www.sagamihara-shigikai.jp/doc/2013120600225/",
+      "transform": [
+        "ext:.html"
+      ]
     },
     {
       "filename": "2013120600218.html",
       "sha256": "4d254c96139905c5a140d17735d17f35771684109a45197415c3f4841ce88d6c",
       "bytes": 13646,
       "fetchedAt": "2026-10-01T15:50:47.097Z",
-      "fetchedFrom": "https://web.archive.org/web/20251108041444id_/https://www.sagamihara-shigikai.jp/doc/2013120600218/"
+      "fetchedFrom": "https://web.archive.org/web/20251108041444id_/https://www.sagamihara-shigikai.jp/doc/2013120600218/",
+      "transform": [
+        "ext:.html"
+      ]
     },
     {
       "filename": "2023051500013.html",
       "sha256": "5b0de2d89bf5b2f319cdd1887320b2778f3e79cce044da655d0f03f0c2f51140",
       "bytes": 12160,
       "fetchedAt": "2026-10-01T15:50:47.098Z",
-      "fetchedFrom": "https://web.archive.org/web/20251108032204id_/https://www.sagamihara-shigikai.jp/doc/2023051500013/"
+      "fetchedFrom": "https://web.archive.org/web/20251108032204id_/https://www.sagamihara-shigikai.jp/doc/2023051500013/",
+      "transform": [
+        "ext:.html"
+      ]
     },
     {
       "filename": "2023051500020.html",
       "sha256": "8ddd7225f0fbe1aa0a49e80687e92818df3f38752819ee666d664338a6c44a66",
       "bytes": 11994,
       "fetchedAt": "2026-10-01T15:50:47.098Z",
-      "fetchedFrom": "https://web.archive.org/web/20251108024518id_/https://www.sagamihara-shigikai.jp/doc/2023051500020/"
+      "fetchedFrom": "https://web.archive.org/web/20251108024518id_/https://www.sagamihara-shigikai.jp/doc/2023051500020/",
+      "transform": [
+        "ext:.html"
+      ]
     },
     {
       "filename": "2013120600232.html",
       "sha256": "cf89e588dba1ba5d8554c21ed772790e61193d8abe0e9ee105df299174633b5d",
       "bytes": 11558,
       "fetchedAt": "2026-10-01T15:50:47.098Z",
-      "fetchedFrom": "https://web.archive.org/web/20260120175645id_/https://www.sagamihara-shigikai.jp/doc/2013120600232/"
+      "fetchedFrom": "https://web.archive.org/web/20260120175645id_/https://www.sagamihara-shigikai.jp/doc/2013120600232/",
+      "transform": [
+        "ext:.html"
+      ]
     },
     {
       "filename": "2019051700041.html",
       "sha256": "4d903e5cc1f727cda9b13c33f7505575d51dcf8b1f8edfc3765fa454c95f0d85",
       "bytes": 10990,
       "fetchedAt": "2026-10-01T15:50:47.099Z",
-      "fetchedFrom": "https://web.archive.org/web/20260120173146id_/https://www.sagamihara-shigikai.jp/doc/2019051700041/"
+      "fetchedFrom": "https://web.archive.org/web/20260120173146id_/https://www.sagamihara-shigikai.jp/doc/2019051700041/",
+      "transform": [
+        "ext:.html"
+      ]
     },
     {
       "filename": "2026_kekka_0324.pdf",

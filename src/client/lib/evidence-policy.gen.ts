@@ -19399,6 +19399,30 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "license": "「私的使用のための複製」や「引用」といった、著作権法上認められた場合を除き、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。",
     "target": "file"
   },
+  "/sources/nagoya-shikai-r8/1030799.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260313164258id_/https://www.city.nagoya.jp/shikai/about/1030778/1030799.html",
+    "license": "私的利用以外の目的でデータ等を複製・二次利用するには、特に記載のない限り個別に名古屋市の担当課の許諾を得ていただく必要があります。",
+    "target": "page"
+  },
+  "/sources/nagoya-shikai-r8/1046530.html": {
+    "mode": "origin",
+    "href": "https://www.city.nagoya.jp/shikai/shingi/1030858/1030859/1046530.html",
+    "license": "私的利用以外の目的でデータ等を複製・二次利用するには、特に記載のない限り個別に名古屋市の担当課の許諾を得ていただく必要があります。",
+    "target": "page"
+  },
+  "/sources/nagoya-shikai-r8/index.html": {
+    "mode": "origin",
+    "href": "https://www.city.nagoya.jp/shikai/about/1030637/1030640/index.html",
+    "license": "私的利用以外の目的でデータ等を複製・二次利用するには、特に記載のない限り個別に名古屋市の担当課の許諾を得ていただく必要があります。",
+    "target": "page"
+  },
+  "/sources/nagoya-shikai-r8/1049365.html": {
+    "mode": "origin",
+    "href": "https://www.city.nagoya.jp/shikai/kouhou/1030998/1030999/1051058/1045525/1049358/1049365.html",
+    "license": "私的利用以外の目的でデータ等を複製・二次利用するには、特に記載のない限り個別に名古屋市の担当課の許諾を得ていただく必要があります。",
+    "target": "page"
+  },
   "/sources/kyoto-shikai-r8/jimin-kyoto.html": {
     "mode": "origin",
     "href": "https://www2.city.kyoto.lg.jp/shikai/meibo/kaiha/jimin-kyoto.html",

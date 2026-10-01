@@ -47,6 +47,7 @@ export function registerRawFile(
   sourceId: string,
   srcFilePath: string,
   fetchedFrom: string,
+  transform?: string[],
 ): { meta: RawMeta; changed: boolean } {
   const dir = rawDir(sourceId);
   mkdirSync(dir, { recursive: true });
@@ -60,6 +61,7 @@ export function registerRawFile(
     bytes: readFileSync(dest).byteLength,
     fetchedAt: new Date().toISOString(),
     fetchedFrom,
+    ...(transform?.length ? { transform } : {}),
   };
 
   const prev = readRawMeta(sourceId);

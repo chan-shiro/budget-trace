@@ -67,6 +67,12 @@ export const rawFileMetaSchema = z.object({
   fetchedAt: z.string(), // ISO 8601
   /** 取得元URL、または "manual:<元ファイル名>"（手動投入） */
   fetchedFrom: z.string(),
+  /**
+   * 取得したバイト列に手を加えて持っているときの印（2026-10-02・議会の構成）。sha256 は**加えた後**のもの。
+   * - "gunzip": 魚拓（id_）が gzip の本文をそのまま返したので展開した（発行元が配ったのは展開後の HTML）
+   * - "ext:.html" / "ext:.pdf": URL に拡張子が無いので、中身を見てファイル名に付けた（ビューアは拡張子で見分ける）
+   */
+  transform: z.array(z.string()).optional(),
 });
 export const rawMetaSchema = z.object({
   sourceId: z.string(),

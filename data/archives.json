@@ -13562,10 +13562,21 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20261001160831/https://www.city.kawasaki.jp/980/cmsfiles/contents/0000183/183782/0318sityou.pdf",
       "waybackTimestamp": "20261001160831",
-      "checkedAt": "2026-10-01T16:08:50.830Z",
+      "checkedAt": "2026-10-01T16:36:29.187Z",
       "sha256Match": true,
       "waybackBytes": 425698,
       "rawSha256": "38acd19731cf9fdbd96249128ba5088e0c0d56b7a1f2404457dffad8e0e0458c"
+    },
+    {
+      "sourceId": "kawasaki-gikai-r8",
+      "url": "https://www.city.kawasaki.jp/980/cmsfiles/contents/0000183/183782/8-1kaigikekka-2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261001163637/https://www.city.kawasaki.jp/980/cmsfiles/contents/0000183/183782/8-1kaigikekka-2.pdf",
+      "waybackTimestamp": "20261001163637",
+      "checkedAt": "2026-10-01T16:37:05.723Z",
+      "sha256Match": true,
+      "waybackBytes": 124265,
+      "rawSha256": "2280f542a1ffb68da4f406456a2e77565991cc99525e4176abf7d53fd02df278"
     },
     {
       "sourceId": "kawasaki-gikai-r8",
@@ -13573,7 +13584,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260415034932/https://www.city.kawasaki.jp/980/page/0000183782.html",
       "waybackTimestamp": "20260415034932",
-      "checkedAt": "2026-10-01T16:09:24.056Z"
+      "checkedAt": "2026-10-01T16:37:56.204Z"
     },
     {
       "sourceId": "kawasaki-gikai-r8",
@@ -13581,7 +13592,7 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260519072219/https://www.city.kawasaki.jp/shisei/category/40-3-4-0-0-0-0-0-0-0.html",
       "waybackTimestamp": "20260519072219",
-      "checkedAt": "2026-10-01T16:07:07.449Z",
+      "checkedAt": "2026-10-01T16:36:21.165Z",
       "sha256Match": false,
       "waybackBytes": 55709,
       "rawSha256": "d49cdf8baf65b075029a249449fa655bb5544bd0d89192f51c56bdcc6f0c3b5a",
@@ -17721,11 +17732,11 @@
       "sourceId": "kumamoto-shigikai-r8",
       "url": "https://kumamoto-shigikai.jp/agenda/pub/detail.aspx?c_id=4&coy_id=16&co_id=207&dis_id=3",
       "kind": "file",
-      "waybackUrl": "https://web.archive.org/web/20260510060954/https://kumamoto-shigikai.jp/agenda/pub/detail.aspx?c_id=4&coy_id=16&co_id=207&dis_id=3",
-      "waybackTimestamp": "20260510060954",
-      "checkedAt": "2026-10-01T15:53:14.167Z",
+      "waybackUrl": "https://web.archive.org/web/20261001163846/https://kumamoto-shigikai.jp/agenda/pub/detail.aspx?c_id=4&coy_id=16&co_id=207&dis_id=3",
+      "waybackTimestamp": "20261001163846",
+      "checkedAt": "2026-10-01T16:39:26.420Z",
       "sha256Match": false,
-      "waybackBytes": 65087,
+      "waybackBytes": 60282,
       "rawSha256": "774789469c8a660626dd58d6cd381601eb6472aa99a030e2fff1da07dd0c4f6b"
     },
     {
@@ -17734,7 +17745,7 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20261001155326/https://kumamoto-shigikai.jp/common/UploadFileDsp.aspx?c_id=6&id=1417&sub_id=1&flid=7055",
       "waybackTimestamp": "20261001155326",
-      "checkedAt": "2026-10-01T15:54:04.951Z",
+      "checkedAt": "2026-10-01T16:39:49.555Z",
       "sha256Match": true,
       "waybackBytes": 34440,
       "rawSha256": "8bf325338b760750073a58a715af9896f3372a7bc398a7de85d7ca2f86b3ee89"
@@ -25641,7 +25652,7 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20261001160224/https://www.city.niigata.lg.jp/shigikai/index_honkaigi/honkaigi_kekka/r8kekka/r0802.html",
       "waybackTimestamp": "20261001160224",
-      "checkedAt": "2026-10-01T16:03:30.611Z"
+      "checkedAt": "2026-10-01T16:44:39.704Z"
     },
     {
       "sourceId": "niigata-shigikai-r8",
@@ -25649,7 +25660,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20261001160521/https://www.city.niigata.lg.jp/shigikai/index_meibo/meibo_03jounin.html",
       "waybackTimestamp": "20261001160521",
-      "checkedAt": "2026-10-01T16:05:52.067Z"
+      "checkedAt": "2026-10-01T16:45:04.219Z"
     },
     {
       "sourceId": "niigata-yosansho-r7",

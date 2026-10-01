@@ -6,21 +6,30 @@
       "sha256": "74df9aa42933d82b30d142fd206bb020dba76ec68569895db6efc379c654fa0b",
       "bytes": 394839,
       "fetchedAt": "2026-10-01T15:46:41.264Z",
-      "fetchedFrom": "https://web.archive.org/web/20260421205002id_/https://kumamoto-shigikai.jp/common/UploadFileDsp.aspx?c_id=53&id=125&set_doc=1"
+      "fetchedFrom": "https://web.archive.org/web/20260421205002id_/https://kumamoto-shigikai.jp/common/UploadFileDsp.aspx?c_id=53&id=125&set_doc=1",
+      "transform": [
+        "ext:.pdf"
+      ]
     },
     {
       "filename": "detail.aspx_c_id_4_coy_id_16_co_id_207_dis_id_3.html",
       "sha256": "774789469c8a660626dd58d6cd381601eb6472aa99a030e2fff1da07dd0c4f6b",
       "bytes": 60167,
       "fetchedAt": "2026-10-01T15:46:41.264Z",
-      "fetchedFrom": "https://kumamoto-shigikai.jp/agenda/pub/detail.aspx?c_id=4&coy_id=16&co_id=207&dis_id=3"
+      "fetchedFrom": "https://kumamoto-shigikai.jp/agenda/pub/detail.aspx?c_id=4&coy_id=16&co_id=207&dis_id=3",
+      "transform": [
+        "ext:.html"
+      ]
     },
     {
       "filename": "UploadFileDsp.aspx_c_id_6_id_1417_sub_id_1_flid_7055.pdf",
       "sha256": "8bf325338b760750073a58a715af9896f3372a7bc398a7de85d7ca2f86b3ee89",
       "bytes": 34440,
       "fetchedAt": "2026-10-01T15:46:41.265Z",
-      "fetchedFrom": "https://kumamoto-shigikai.jp/common/UploadFileDsp.aspx?c_id=6&id=1417&sub_id=1&flid=7055"
+      "fetchedFrom": "https://kumamoto-shigikai.jp/common/UploadFileDsp.aspx?c_id=6&id=1417&sub_id=1&flid=7055",
+      "transform": [
+        "ext:.pdf"
+      ]
     }
   ]
 }

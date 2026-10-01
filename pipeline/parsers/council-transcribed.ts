@@ -24,7 +24,7 @@ import { z } from "zod";
 import { readRawMeta } from "../lib/store";
 import type { CouncilCompositionDoc, CouncilFactionFact, SourceEntry } from "../types";
 
-export const PARSER_VERSION = "0.4.0";
+export const PARSER_VERSION = "0.5.0";
 
 const factionSchema = z
   .object({
@@ -56,6 +56,8 @@ const factionSchema = z
     label: z.string().optional(),
     /** `declared` を名簿ではなく別の原典（議決当日の会派別賛否の「（14）」など）で照合する。その URL */
     declaredIn: z.string().url().optional(),
+    /** declaredIn の原典での会派の略称（広島「自民党・市民クラブ」）。declared はこの略称か会派名を含むこと */
+    abbr: z.string().optional(),
     /**
      * 人数の網（declared・teisu・labelSuffix）がどれも掛けられない会派で、それでも収録する理由（原典の事情）。
      * 書けば通るが、**1人の書き落としは捕まらない**ことを registry で明示するためのもの
@@ -95,6 +97,20 @@ const optionsSchema = z.object({
   vacanciesPlaces: z.array(z.string().min(1)).optional(),
   /** 欠員の原文（vacancies > 0 のとき必須。teisuText と同じ原典で照合する） */
   vacanciesText: z.string().optional(),
+  /** 欠員の原文が区ごとなど複数に分かれるとき（新潟「東区（定数8人、欠員1人）」「中央区（…欠員1人）」）。各「欠員N」の和 = vacancies */
+  vacanciesTexts: z.array(z.string().min(1)).optional(),
+  /**
+   * 議会全体の人数の網（2026-10-02・レビューで「会派を丸ごと落としても通る」を実測）。teisu が掛けられない議会は、
+   * 次のどれかで**原典に載っている全員・全会派を書き写したか**を見る:
+   * - memberMarker: 名簿（-layout とページ全体）に**議員1人につき1回**出る語の正規表現（熊本「期数」）。出現数 = 現員
+   * - factionMarker: 名簿に**会派ごとに1回**出る語の正規表現（「\\(\\d+人\\)」「【会派連絡先」）。出現数 = 会派の数（同名の無所属は1つ）
+   * - totalText: 総数を印字した原文（「現員数37人」「出席議員（３８名）」）。数 = 現員
+   */
+  memberMarker: z.string().optional(),
+  factionMarker: z.string().optional(),
+  totalText: z.object({ text: z.string().min(1), url: z.string().url().optional() }).optional(),
+  /** 議会全体の人数の網がどれも掛けられない理由（原典の事情）。書けば通るが、会派ごとの書き落としは捕まらない */
+  noTotalReason: z.string().min(10).optional(),
   noFactions: z.boolean().optional(),
   roster: z.object({
     url: z.string().url(),
@@ -218,8 +234,12 @@ function readDoc(f: { path: string; filename: string }): { views: { page: number
 
 /** HTML を読む。魚拓（id_）は gzip の本文をそのまま返すことがある（広島・横浜で実測）ので展開する */
 function readHtml(path: string): string {
-  const b = readFileSync(path);
-  return (b[0] === 0x1f && b[1] === 0x8b ? gunzipSync(b) : b).toString("utf8");
+  const raw = readFileSync(path);
+  const b = raw[0] === 0x1f && raw[1] === 0x8b ? gunzipSync(raw) : raw;
+  // meta の charset で読み分ける（gijiroku.com 系・草加市議会のサイトは Shift_JIS）
+  const cs = b.subarray(0, 2048).toString("latin1").match(/charset=["']?([\w-]+)/i)?.[1]?.toLowerCase();
+  const enc = cs && /^(shift_jis|sjis|x-sjis|windows-31j|cp932)$/.test(cs) ? "shift_jis" : cs === "euc-jp" ? "euc-jp" : "utf-8";
+  return new TextDecoder(enc).decode(b);
 }
 
 /** 本文中の日付を「M月D日」にそろえて取り出す（「3月27日」「R8.3.27」の両方） */
@@ -227,7 +247,10 @@ function dateTokens(s: string): string[] {
   const n = norm(s);
   return [
     ...[...n.matchAll(/(\d+)月(\d+)日/g)].map((m) => `${Number(m[1])}月${Number(m[2])}日`),
-    ...[...n.matchAll(/R\d+\.(\d+)\.(\d+)/g)].map((m) => `${Number(m[1])}月${Number(m[2])}日`),
+    // 「R8.3.27」「8.3.26」「8. 3.23」（元号の字の無い年.月.日・正規化で空白は落ちている）
+    ...[...n.matchAll(/(?<![\d.])R?\d{1,2}\.(\d{1,2})\.(\d{1,2})(?![\d.])/g)].map((m) => `${Number(m[1])}月${Number(m[2])}日`),
+    // 「3/24」
+    ...[...n.matchAll(/(?<![\d/])(\d{1,2})\/(\d{1,2})(?![\d/])/g)].map((m) => `${Number(m[1])}月${Number(m[2])}日`),
   ];
 }
 
@@ -242,6 +265,12 @@ function htmlTables(html: string): string[][][] {
 function toWareki(iso: string): string {
   const [y, m, d] = iso.split("-").map(Number) as [number, number, number];
   return `令和${y - 2018}年${m}月${d}日`;
+}
+
+/** 窓の中で最初に出る結果語とその位置 */
+function m0Index(w: string, re: RegExp): { word: string; index: number } | null {
+  const m = new RegExp(re.source).exec(w);
+  return m ? { word: m[0], index: m.index } : null;
 }
 
 /** 「（15）」「４人」「6」→ 15 / 4 / 6。数字がちょうど1つでなければ null */
@@ -389,7 +418,9 @@ export function parseCouncilTranscribed(
       if (f.declaredIn) {
         // 別の原典では区間が無いので、印字は**会派の名前（略称）ごと**書かせる（「（1）」だけだと本文のどこかの数字に当たる。
         // 広島の 1人会派が5つ並ぶ型でレビューが指摘）
-        if (dN.replace(/[\d()（）人名]/g, "").length < 2) missing.push(`${f.name}: declaredIn の declared「${f.declared}」は会派の名前（略称）ごと書く`);
+        if (![norm(f.name), ...(f.abbr ? [norm(f.abbr)] : [])].some((nm) => dN.startsWith(nm))) {
+          missing.push(`${f.name}: declaredIn の declared「${f.declared}」は会派名か略称（abbr）で始める（入れ替えを捕まえるため）`);
+        }
         if (!has(readDoc(fileFor(f.declaredIn)).views, f.declared!)) missing.push(`${f.declaredIn}: 会派「${f.name}」の人数の印字「${f.declared}」が見つかりません`);
       } else if (f.box || f.url) {
         if (!sections.some((s) => s.includes(dN))) missing.push(`${rosterFile.filename}: 会派「${f.name}」の人数の印字「${f.declared}」が${f.box ? "枠" : "ページ"}に見つかりません`);
@@ -415,6 +446,26 @@ export function parseCouncilTranscribed(
   const unguarded = opt.factions.filter((f) => f.declared == null && !(f.label != null && opt.labelSuffix) && !f.noCountReason);
   if (unguarded.length && opt.teisu == null) {
     missing.push(`人数の網が無い会派があります（${unguarded.map((f) => f.name).join("・")}）— declared か teisu か labelSuffix が要ります`);
+  }
+  // 議会全体の人数の網
+  const countIn = (views: { text: string }[], re: string) => Math.max(0, ...views.map((v) => (v.text.match(new RegExp(re, "g")) ?? []).length));
+  const rosterAll = [...roster.views, ...opt.factions.filter((f) => f.url).flatMap((f) => readDoc(fileFor(f.url!)).views)];
+  if (opt.memberMarker) {
+    const c = countIn(roster.views, opt.memberMarker);
+    if (c !== seats) missing.push(`${rosterFile.filename}: 議員ごとの印「${opt.memberMarker}」は名簿に ${c} 回、書き写しは ${seats}人`);
+  }
+  if (opt.factionMarker) {
+    const c = countIn(roster.views, opt.factionMarker);
+    const n = new Set(opt.factions.map((f) => f.name)).size;
+    if (c !== n) missing.push(`${rosterFile.filename}: 会派ごとの印「${opt.factionMarker}」は名簿に ${c} 回、書き写しは ${n}会派`);
+  }
+  if (opt.totalText) {
+    const tv = opt.totalText.url ? readDoc(fileFor(opt.totalText.url)).views : rosterAll;
+    if (!has(tv, opt.totalText.text)) missing.push(`総数の原文「${opt.totalText.text}」が見つかりません`);
+    if (declaredNumber(opt.totalText.text) !== seats) missing.push(`総数の原文「${opt.totalText.text}」の数が現員 ${seats} と合いません`);
+  }
+  if (opt.teisu == null && !opt.memberMarker && !opt.factionMarker && !opt.totalText && !opt.noTotalReason) {
+    missing.push(`議会全体の人数の網がありません — teisu・memberMarker・factionMarker・totalText のどれか（無理なら noTotalReason）`);
   }
   if (opt.roster.linkedFrom) {
     const lf = opt.roster.linkedFrom;
@@ -448,7 +499,18 @@ export function parseCouncilTranscribed(
     if (!opt.teisuText) throw new Error(`${source.id}: teisu には teisuText（原典の表記）が要ります`);
     const tv = opt.teisuUrl ? readDoc(fileFor(opt.teisuUrl)).views : [...roster.views, ...resultViews];
     if (!has(tv, opt.teisuText)) missing.push(`定数の表記「${opt.teisuText}」が原典に見つかりません`);
-    if ((opt.vacancies ?? 0) > 0) {
+    if ((opt.vacancies ?? 0) > 0 && opt.vacanciesTexts?.length) {
+      const vv = opt.vacanciesUrl ? readDoc(fileFor(opt.vacanciesUrl)).views : tv;
+      let sum = 0;
+      if (new Set(opt.vacanciesTexts.map(norm)).size !== opt.vacanciesTexts.length) missing.push(`vacanciesTexts に同じ原文が重複しています`);
+      for (const t of opt.vacanciesTexts) {
+        if (!has(vv, t)) missing.push(`欠員の表記「${t}」が原典に見つかりません`);
+        const m = norm(t).match(/欠員(\d+)/);
+        if (!m) missing.push(`vacanciesTexts「${t}」に「欠員N」がありません`);
+        else sum += Number(m[1]);
+      }
+      if (sum !== opt.vacancies) missing.push(`vacanciesTexts の欠員の和 ${sum} が vacancies ${opt.vacancies} と合いません`);
+    } else if ((opt.vacancies ?? 0) > 0) {
       if (!opt.vacanciesText) throw new Error(`${source.id}: vacancies には vacanciesText（原典の表記）が要ります`);
       const vv = opt.vacanciesUrl ? readDoc(fileFor(opt.vacanciesUrl)).views : tv;
       if (!has(vv, opt.vacanciesText)) missing.push(`欠員の表記「${opt.vacanciesText}」が原典に見つかりません`);
@@ -503,7 +565,9 @@ export function parseCouncilTranscribed(
       return;
     }
     if (r.table) return; // 表の照合で見る
-    if (anchors.length && !anchors.some((a) => a.text.slice(a.at + nameN.length, a.at + nameN.length + AFTER).includes(n))) {
+    // 議決日は「M月D日」のほか「8.3.26」「R8.3.27」「3/24」の形でも窓の中にあればよい（札幌の表の議決日の欄）
+    const inWin = (w: string) => w.includes(n) || (key === "decidedDate" && dateTokens(w).includes(n));
+    if (anchors.length && !anchors.some((a) => inWin(a.text.slice(a.at + nameN.length, a.at + nameN.length + AFTER)))) {
       missing.push(`${resultFile.filename}: ${what}「${needle}」が件名の直後${AFTER}字に見つかりません`);
     }
   };
@@ -571,8 +635,13 @@ export function parseCouncilTranscribed(
       const w = a.text.slice(a.at + nameN.length, a.at + nameN.length + AFTER);
       // 「附帯決議を付して修正可決」のように結果語の前に句が付く原典がある（名古屋）。最も近い結果語が
       // 書き写した結果の末尾と同じで、書き写した結果そのものが窓にあること
-      const m = w.match(RE)?.[0];
-      return m != null && (m === resultN || (resultN.endsWith(m) && w.includes(resultN) && !/(原案|修正)$/.test(resultN.slice(0, -m.length))));
+      // 結果語の後ろの括弧書き（盛岡「可決(多数)」・前橋）だけは書き写してよい。前置き（「附帯決議を付して修正可決」）は
+      // 近接では「修正可決」との区別が付かない（レビューで実測）ので、表（セル全体の一致）でだけ認める
+      const at = m0Index(w, RE);
+      if (at == null) return false;
+      const m = at.word;
+      if (m === resultN) return true;
+      return resultN.startsWith(m) && /^[(（][^)）]{1,10}[)）]$/.test(resultN.slice(m.length)) && w.slice(at.index).startsWith(resultN);
     });
     const side = r.resultSide === "before" ? `直前${BEFORE}字` : `直後${AFTER}字`;
     if (!ok) missing.push(`${resultFile.filename}: 結果「${r.result}」が件名の${side}で最も近い結果語と一致しません`);

@@ -6,7 +6,10 @@
       "sha256": "2d5ccf4bfcb868938266806764dc6b62832c86c87b3d1dd3055cd2c059c49c89",
       "bytes": 58393,
       "fetchedAt": "2026-10-01T15:48:54.042Z",
-      "fetchedFrom": "https://web.archive.org/web/20260329150632id_/https://www.city.hiroshima.lg.jp/gikai/giin-shoukai/1010248.html"
+      "fetchedFrom": "https://web.archive.org/web/20260329150632id_/https://www.city.hiroshima.lg.jp/gikai/giin-shoukai/1010248.html",
+      "transform": [
+        "gunzip"
+      ]
     },
     {
       "filename": "1048719.html",
