@@ -230,6 +230,14 @@ const IZUMISANO_LICENSE =
   "このホームページに掲載している文書や写真などについての諸権利は、原則として泉佐野市に帰属します。このホームページの文書・写真などの無断使用・無断転載を禁止します。";
 const KAWACHINAGANO_LICENSE =
   "本サイトに掲載の文章、画像などの著作権は、河内長野市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。";
+const YOTSUKAIDO_LICENSE =
+  "当市のホームページに掲載されている個々の情報（文章・写真・イラストなど）は、著作権保護の対象となり、四街道市に帰属しています。私的利用や引用など著作権法上認められたものを除き、四街道市に許可なく複製・転用等をすることはできません。";
+const MUNAKATA_LICENSE =
+  "宗像市ウェブサイトから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は宗像市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。";
+const AZUMINO_LICENSE =
+  "市ホームページに掲載している個々の情報（文章、画像、イラストなど）に関する諸権利は、原則として安曇野市に帰属します。市ホームページは、著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転載、販売、貸与することはできません。また、市ホームページの内容の全部または一部について、無断で改変することもできません。";
+const TSUYAMA_LICENSE =
+  "・津山市公式ホームページに掲載している内容(文章、写真、図、イラストなど)に関する著作権は、原則として津山市、または文章、画像などの提供者に帰属します。・津山市公式ホームページの内容について「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、各ページに特段の定めがある場合には、その取り扱いが優先されます。・使用許諾は、各ページ内に記載された問い合わせ先に事前にご相談ください。";
 const KOGA_IBARAKI_LICENSE =
   "古河市ホームページに掲載している個々の情報（文章、写真、イラストなど）に関する著作権は、原則として古河市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。古河市ホームページは利用目的を問わず自由な閲覧が可能ですが、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、古河市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。";
 
@@ -23358,6 +23366,177 @@ export const SOURCES: SourceEntry[] = [
     license: KAWACHINAGANO_LICENSE,
     parser: "kofu-yosansho" as const,
     parserOptions: { revenuePage: 2, expenditurePage: 3, revenueHeading: "(歳入）", expenditureHeading: "(歳出）" },
+  } satisfies SourceEntry)),
+
+  // 四街道市（千葉県・団体コード 122289 ＝ 総務省 R6.json から実引き）。「四街道市予算書（附 予算に関する説明書）」の「歳入歳出予算事項別明細書 1 総括」。
+  //   千円。歳入23款・歳出11款（R3 は廃止款 `廃. 災害復旧費 - 2,000 △2,000` を加えて12・R2 は災害復旧費が款10 で12）。合計ラベルは既定。
+  //   物理ページ: R8〜R5 は 19/20、R4〜R2 は 17/18（款番号 `1.`・構成比の列あり）。歳出は財源内訳の列が続くが先頭2整数が当年度・前年度。
+  // ⚠⚠ 見出しを素朴に `総括`／`歳出` にすると款1 が `歳入歳出予算事項別明細書市税`・`一般財源国県支出金地方債その他議会費`（Σ 差0 のまま）⇒ 見出しと HeaderExtra の組。
+  // ⚠⚠ R4 が骨格予算（R4 当初予算のページ「…経常経費を中心とした骨格予算として編成するに至りました。」）⇒ R5 に `prevNote`。
+  // ⚠ 毎年3月に「当初補正予算」があるが別ファイルで、総括の数字にも翌年度の前年度列にも入らない（R8 の前年度 36,120,000 ＝ R7 当初）。
+  // 前年度列は当初（R8→R2 の6リンクで款単位全一致）。総額突合: R6 当初 35,920,000 ÷ 総務省 R6 決算歳出 39,023,264 = 92.0%。
+  // ライセンス: 「このサイトについて」（/about/aboutsite.html・確認日 2026-10-02）＝要許可。フッター「Copyright © Yotsukaido City. All rights reserved.」も同じ側。
+  //   オープンデータ（CC BY 4.0）の「財政」は決算系10件だけで予算は0件。
+  //   リンクは「…各部課への直接リンクは避け、トップページ【…】のリンクをお願いいたします。」＝宛先をトップページに限る ⇒ `noDeepLink`。
+  // ⚠ 主な事業（当初予算概要の「12. 一般会計事業概要」・款見出しつき・前年度事業費（当初）あり・特別会計の節が続く）と
+  //   事業報告（主要施策の成果報告書 R2〜R6）は別の巡（§13-54）。
+  ...([
+    ["R8", "r-8/R8tousyoyosan.files/R8tousyoyosan.pdf", "r-8/R8tousyoyosan.html", 19, 20],
+    ["R7", "r-7/R7tousyoyosan.files/R7tousyoyosan.pdf", "r-7/R7tousyoyosan.html", 19, 20],
+    ["R6", "r-6/R6tousyo.files/r6tousyoyosannsyo.pdf", "r-6/R6tousyo.html", 19, 20],
+    ["R5", "r-5/R5tousyo.files/R5tousyo.pdf", "r-5/R5tousyo.html", 19, 20],
+    ["R4", "r-4/r4_toushoyosan.files/r4_toushoyosan.pdf", "r-4/r4_toushoyosan.html", 17, 18],
+    ["R3", "r-3/r3tousyoyosann.files/r3tousyoyosan.pdf", "r-3/r3tousyoyosann.html", 17, 18],
+    ["R2", "reiwa2yosan/r2toushoyosan.files/R02tousho.pdf", "reiwa2yosan/r2toushoyosan.html", 17, 18],
+  ] as const).map(([fy, file, landing, rp, ep]) => ({
+    id: `yotsukaido-yosansho-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 四街道市予算書（歳入歳出予算事項別明細書 総括）`,
+    publisher: "四街道市",
+    url: `https://www.city.yotsukaido.chiba.jp/shisei/zaisei/yosan/${file}`,
+    landingPage: `https://www.city.yotsukaido.chiba.jp/shisei/zaisei/yosan/${landing}`,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "四街道市（一般会計・団体コード122289）",
+    license: YOTSUKAIDO_LICENSE,
+    noDeepLink: true,
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      revenuePage: rp,
+      expenditurePage: ep,
+      revenueHeading: "事項別明細書",
+      revenueHeaderExtra: "総括",
+      expenditureHeading: "一般財源",
+      expenditureHeaderExtra: "国県支出金",
+      ...(fy === "R5"
+        ? {
+            prevNote:
+              "前年度（令和4年度）の一般会計当初予算は骨格予算として編成されました（四街道市「令和4年度当初予算」のページに「経常経費を中心とした骨格予算として編成するに至りました。」と記載）。この資料の前年度額はその骨格予算の当初額です。",
+          }
+        : {}),
+    },
+  } satisfies SourceEntry)),
+
+  // 宗像市（福岡県・団体コード 402206 ＝ 総務省 R6.json から実引き）。当初予算書の「歳入歳出予算事項別明細書 １ 総括」。千円。歳入22款（R2 は廃止款 `（自動車取得税交付金）` を加えて23）・歳出13款。
+  //   物理ページ（＝印字）: R8 は歳入 21–23・歳出 24–26（歳出の合計行だけ p.26）、R7・R5 は 21–23／24–25、R6・R4・R3・R2 は 19–21／22–23。
+  // ⚠⚠ 総括表に款と項が混在（款は字下げ0〜1・項は約12〜16）⇒ `kanIndentMax: 5`（歳出の財源内訳の2段の列見出しが款1 に付くのもこれで消える）。
+  // ⚠⚠ 合計行のラベルは「計」の1字で、項の「都市計画税」「都市計画費」にも当たる。合計は整数の多い行で選ぶので項の行（項番号を含めて整数が1つ多い）が勝つ
+  //   ⇒ `stripChars: 計`（両側）で字を消して `totalNoLabel`。款名に「計」を含む款は全年度0件（目視）。消える先は項の名前と合計ラベルだけ。
+  // ⚠⚠ R4 が骨格予算（R4「当初予算参考資料」の表とグラフに「R4当初(骨格)」）⇒ R5 に `prevNote`（予算書の前年度列は R4 の骨格当初と款単位で一致）。
+  //   ⚠ R5 の参考資料は比較の基準を「R4(6月補正)」にしていて、予算書と基準が違う。H30 も骨格の可能性（H31 参考資料「前年度比は30年度6月補正後の予算と比較」）だが「骨格」の語は見つからず台帳に書かない。
+  // 前年度列は当初（R8←H31 の7リンクで款単位全一致）。総額突合: R6 当初 48,025,658 ÷ 総務省 R6 決算歳出 46,918,339 = 102.4%。
+  // ライセンス: 「このサイトについて」（/kiji0037836/index.html・確認日 2026-10-02）＝要許可（PDF を名指し）。BODIK の11件に予算・財政は0件。
+  //   リンクは「…トップページを対象とする限り原則として自由です。トップページ以外へのリンクは原則として禁止します。」⇒ `noDeepLink`。
+  // ⚠ 主な事業（当初予算参考資料の「主要事業の概要」カード・特別会計が混ざる）と事業報告（決算成果報告書 H26〜R7）は別の巡（§13-54）。
+  ...([
+    ["R8", "kiji0039691", "3_9691_12373_up_v5erhpyo.pdf", 21, 23, 24, 26],
+    ["R7", "kiji0037969", "3_7969_1919_up_gu804a1o.pdf", 21, 23, 24, 25],
+    ["R6", "kiji0031094", "3_1094_7_R6tousyoyosan.pdf", 19, 21, 22, 23],
+    ["R5", "kiji0031093", "3_1093_7_R5tousyoyosan.pdf", 21, 23, 24, 25],
+    ["R4", "kiji0031092", "3_1092_8_R04tousyoyosann.pdf", 19, 21, 22, 23],
+    ["R3", "kiji0031091", "3_1091_11_r3nenndotousyo.pdf", 19, 21, 22, 23],
+    ["R2", "kiji0031090", "3_1090_13_R2tousyoyosannsyo.pdf", 19, 21, 22, 23],
+  ] as const).map(([fy, kiji, file, rf, rt, ef, et]) => ({
+    id: `munakata-yosansho-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 宗像市当初予算書（歳入歳出予算事項別明細書 総括）`,
+    publisher: "宗像市",
+    url: `https://www.city.munakata.lg.jp/${kiji}/${file}`,
+    landingPage: `https://www.city.munakata.lg.jp/${kiji}/index.html`,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "宗像市（一般会計・団体コード402206）",
+    license: MUNAKATA_LICENSE,
+    noDeepLink: true,
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      revenuePages: { from: rf, to: rt },
+      expenditurePages: { from: ef, to: et },
+      revenueHeading: "歳   入",
+      expenditureHeading: "歳   出",
+      kanIndentMax: 5,
+      stripChars: { revenue: "計", expenditure: "計" },
+      totalNoLabel: { revenue: true, expenditure: true },
+      ...(fy === "R5"
+        ? {
+            prevNote:
+              "前年度（令和4年度）の一般会計当初予算は骨格予算でした（宗像市「令和４年度 当初予算参考資料」の表に「R4当初(骨格)」と記載）。この資料の前年度額はその骨格予算の当初額です。",
+          }
+        : {}),
+    },
+  } satisfies SourceEntry)),
+
+  // 安曇野市（長野県・団体コード 202207 ＝ 総務省 R6.json から実引き）。「一般会計予算書」の歳入歳出予算事項別明細書「1 総括」。千円。歳入22款（R2 は廃止款 `［自動車取得税交付金］` を加えて23）・歳出13款。
+  //   見出しは R8〜R4 が全角 `（歳 入）`、R3・R2 は半角 `(歳 入)`。合計ラベルは既定。歳出は右に財源内訳の4列（A3 見開き）が続くが先頭2整数で読める。
+  //   物理ページ: R8・R7・R5・R2 は 12/13、R6 は 13/14、R4・R3 は 11/12（印字とのずれが年度で違う）。R7 は p.13 と p.14 が同じテキスト層（見開きを分割）。
+  // ⚠ 廃止款の名前は原典の角括弧のまま（`［自動車取得税交付金］`・括弧は原典なので落とさない）。
+  // 前年度列は当初（R8→R2 の6リンクで款単位全一致・R2 の前年度 41,150,000 は H31 予算書の当初と一致）。骨格予算: 概要・予算書の7年度とも「骨格」0件。R8〜R5 は「原案可決」。
+  // 総額突合: R6 当初 48,930,000 ÷ 総務省 R6 決算歳出 47,634,806 = 102.7%。
+  // ライセンス: 「リンク・著作権・免責事項」（/site/userguide/exclusion.html・確認日 2026-10-02）＝要許可。市のオープンデータカタログは無く BODIK に0件。
+  //   リンクは「リンクされる場合は、原則としてトップページ（…）にお願いします。」＝東大阪と同じ「原則としてトップページ」 ⇒ `noDeepLink`。
+  // ⚠ 主な事業（事業別予算概要説明書＝1事業1枚・款項目コードと前年度額つき・特別会計の77枚が続く）と事業報告（主要な施策の成果に関する説明書 R7〜R2）は別の巡（§13-54）。
+  ...([
+    ["R8", "79348", "137299", 12, 13, "（歳入）", "（歳出）"],
+    ["R7", "70959", "137294", 12, 13, "（歳入）", "（歳出）"],
+    ["R6", "63271", "112059", 13, 14, "（歳入）", "（歳出）"],
+    ["R5", "56370", "100815", 12, 13, "（歳入）", "（歳出）"],
+    ["R4", "50207", "86909", 11, 12, "（歳入）", "（歳出）"],
+    ["R3", "43672", "69380", 11, 12, "(歳入)", "(歳出)"],
+    ["R2", "38962", "59678", 12, 13, "(歳入)", "(歳出)"],
+  ] as const).map(([fy, att, page, rp, ep, rh, eh]) => ({
+    id: `azumino-yosansho-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 安曇野市一般会計予算書（歳入歳出予算事項別明細書 総括）`,
+    publisher: "安曇野市",
+    url: `https://www.city.azumino.nagano.jp/uploaded/attachment/${att}.pdf`,
+    landingPage: `https://www.city.azumino.nagano.jp/soshiki/9/${page}.html`,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "安曇野市（一般会計・団体コード202207）",
+    license: AZUMINO_LICENSE,
+    noDeepLink: true,
+    parser: "kofu-yosansho" as const,
+    parserOptions: { revenuePage: rp, expenditurePage: ep, revenueHeading: rh, expenditureHeading: eh },
+  } satisfies SourceEntry)),
+
+  // 津山市（岡山県・団体コード 332038 ＝ 総務省 R6.json から実引き）。当初予算書の「歳入歳出予算事項別明細書 １ 総括」。千円。歳入23款（R2 は24款）・歳出14款。
+  //   款番号は5刻み（5,10,15,…）。廃止款は「○」付き・番号なし（R8 `○ 環境性能割交付金 0 67,000`／R2 `○ 自動車取得税交付金 0 62,000`）。
+  //   物理ページ: R8・R6・R5・R3 は 39/40、R7 は 41/42、R4・R2 は 43/44。後ろの方に特別会計の同じ形の総括が9組ほどある（最初の1組が一般会計）。
+  // ⚠⚠ R8・R4 が骨格予算（各年度の「当初予算(案)の概要」p.3）。R5 の前年度列は R4 の骨格当初 44,977,000 ⇒ R5 に `prevNote`。
+  //   ⚠ 概要の款別表は百万円単位のまとめ区分で、R5 の概要は前年度を「６月補正（肉付け）予算後の額」と比べている（予算書の総括と基準が違う）⇒ 概要の金額は使わない。
+  // ⚠ 公式サイトは SPA（HTML は空の殻・中身は API）。R8・R7 の PDF は Azure Blob（prdurbanostymapp1.blob.core.windows.net）、R6〜R2 は旧 CMS のパス。
+  // 前年度列は当初（R8→R2 の6リンクで款単位全一致）。総額突合: R6 当初 49,435,000 ÷ 総務省 R6 決算歳出 52,743,286 = 93.7%。
+  // ライセンス: 「リンク・著作権・免責事項について」（article?articleId=67c4ed7647c0d315cfe76392・確認日 2026-10-02）＝要許可。オープンデータの CC BY は「当ページに掲載するデータにのみ該当」。
+  //   リンクは「…へのリンクは原則として自由です。ただし、次の項目に該当するホームページからのリンクは認めません。」⇒ `noDeepLink` は立てない。
+  // ⚠ 主な事業（概要の「当初予算 主要事業の概要」・款見出しつき・前年度額なし・特別会計の節が続く）は新様式で別の巡。事業報告はウェブ上に見当たらない（§13-54）。
+  ...([
+    ["R8", "https://prdurbanostymapp1.blob.core.windows.net/common-article/65b38e0f5677ea07dd03acaa/%E4%BB%A4%E5%92%8C%EF%BC%98%E5%B9%B4%E5%BA%A6%E6%B4%A5%E5%B1%B1%E5%B8%82%E5%BD%93%E5%88%9D%E4%BA%88%E7%AE%97%E6%9B%B8%EF%BC%88%E4%B8%A1%E9%9D%A2%EF%BC%89.pdf", 39],
+    ["R7", "https://prdurbanostymapp1.blob.core.windows.net/common-article/65b38e0f5677ea07dd03acaa/%E4%BB%A4%E5%92%8C7%E5%B9%B4%E5%BA%A6%E6%B4%A5%E5%B1%B1%E5%B8%82%E4%BA%88%E7%AE%97%E6%9B%B8%EF%BC%88%E4%B8%A1%E9%9D%A2%EF%BC%89.pdf", 41],
+    ["R6", "https://www.city.tsuyama.lg.jp/common/photo/free/files/4334/202402211551200177506.pdf", 39],
+    ["R5", "https://www.city.tsuyama.lg.jp/common/photo/free/files/4334/202302201409200176772.pdf", 39],
+    ["R4", "https://www.city.tsuyama.lg.jp/common/photo/free/files/4334/R0400.yosansho.pdf", 43],
+    ["R3", "https://www.city.tsuyama.lg.jp/common/photo/free/files/4334/202102221132430985337.pdf", 39],
+    ["R2", "https://www.city.tsuyama.lg.jp/common/photo/free/files/4334/202007130848060897676.pdf", 43],
+  ] as const).map(([fy, url, rp]) => ({
+    id: `tsuyama-yosansho-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 津山市当初予算書（歳入歳出予算事項別明細書 総括）`,
+    publisher: "津山市",
+    url,
+    landingPage: "https://www.city.tsuyama.lg.jp/article?articleId=65b38e0f5677ea07dd03acaa",
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "津山市（一般会計・団体コード332038）",
+    license: TSUYAMA_LICENSE,
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      revenuePage: rp,
+      expenditurePage: rp + 1,
+      revenueHeading: "（歳入）",
+      expenditureHeading: "（歳出）",
+      ...(fy === "R5"
+        ? {
+            prevNote:
+              "前年度（令和4年度）の一般会計当初予算は骨格予算として編成されました（津山市「令和４年度当初予算（案）の概要」に「本年２月に市長選挙が実施されたことから、政策判断を必要とする新規施策や補助金等については、原則として当初予算計上を見送り、６月補正予算対応とする骨格予算編成としております。」と記載）。この資料の前年度額はその骨格予算の当初額です。",
+          }
+        : {}),
+    },
   } satisfies SourceEntry)),
 
   {

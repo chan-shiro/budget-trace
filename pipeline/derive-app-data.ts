@@ -3405,6 +3405,22 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `kawachinagano-yosan-hikaku-${fy}`, muniCode: "272167", muniName: "河内長野市", prefName: "大阪府", isPref: false,
     })),
+    // ---- 第52巡（2026-10-02・§13-54） ----
+    // ⚠⚠ 四街道 R4 骨格で R5 に prevNote。見出しと HeaderExtra の組（無いと款1 が汚れる）
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `yotsukaido-yosansho-${fy}`, muniCode: "122289", muniName: "四街道市", prefName: "千葉県", isPref: false,
+    })),
+    // ⚠⚠ 宗像は総括に款と項が混在（kanIndentMax）・合計ラベル「計」を stripChars で消して totalNoLabel。R4 骨格で R5 に prevNote
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `munakata-yosansho-${fy}`, muniCode: "402206", muniName: "宗像市", prefName: "福岡県", isPref: false,
+    })),
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `azumino-yosansho-${fy}`, muniCode: "202207", muniName: "安曇野市", prefName: "長野県", isPref: false,
+    })),
+    // ⚠⚠ 津山 R8・R4 が骨格で R5 に prevNote。サイトは SPA・R8・R7 の PDF は Azure Blob
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `tsuyama-yosansho-${fy}`, muniCode: "332038", muniName: "津山市", prefName: "岡山県", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。

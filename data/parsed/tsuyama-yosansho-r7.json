@@ -1,0 +1,424 @@
+{
+  "docType": "budget-book",
+  "sourceId": "tsuyama-yosansho-r7",
+  "parser": "kofu-yosansho",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-10-01T15:19:08.394Z",
+  "unit": "thousandYen",
+  "fiscalYear": "R7",
+  "account": "一般会計",
+  "revenueTotal": 53104000,
+  "expenditureTotal": 53104000,
+  "prevRevenueTotal": 49435000,
+  "prevExpenditureTotal": 49435000,
+  "prevBasis": "当初",
+  "facts": [
+    {
+      "side": "revenue",
+      "kanNo": 5,
+      "kanName": "市税",
+      "amount": 13500000,
+      "prevAmount": 12911000,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 10,
+      "kanName": "地方譲与税",
+      "amount": 662710,
+      "prevAmount": 594674,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 15,
+      "kanName": "利子割交付金",
+      "amount": 7000,
+      "prevAmount": 5000,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 16,
+      "kanName": "配当割交付金",
+      "amount": 100000,
+      "prevAmount": 86000,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 17,
+      "kanName": "株式等譲渡所得割交付金",
+      "amount": 157000,
+      "prevAmount": 105000,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 18,
+      "kanName": "法人事業税交付金",
+      "amount": 265000,
+      "prevAmount": 242000,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 19,
+      "kanName": "地方消費税交付金",
+      "amount": 2566000,
+      "prevAmount": 2547000,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 20,
+      "kanName": "ゴルフ場利用税交付金",
+      "amount": 8000,
+      "prevAmount": 8000,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 29,
+      "kanName": "環境性能割交付金",
+      "amount": 67000,
+      "prevAmount": 59000,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 31,
+      "kanName": "国有提供施設等所在市町村助成交付金",
+      "amount": 8107,
+      "prevAmount": 8169,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 33,
+      "kanName": "地方特例交付金",
+      "amount": 86000,
+      "prevAmount": 487000,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 35,
+      "kanName": "地方交付税",
+      "amount": 13220000,
+      "prevAmount": 13052000,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 40,
+      "kanName": "交通安全対策特別交付金",
+      "amount": 9000,
+      "prevAmount": 10000,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 45,
+      "kanName": "分担金及び負担金",
+      "amount": 387423,
+      "prevAmount": 400643,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 50,
+      "kanName": "使用料及び手数料",
+      "amount": 440128,
+      "prevAmount": 442006,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 55,
+      "kanName": "国庫支出金",
+      "amount": 8933163,
+      "prevAmount": 7133502,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 60,
+      "kanName": "県支出金",
+      "amount": 4042048,
+      "prevAmount": 4047491,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 65,
+      "kanName": "財産収入",
+      "amount": 61842,
+      "prevAmount": 59157,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 70,
+      "kanName": "寄附金",
+      "amount": 1232193,
+      "prevAmount": 1030190,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 75,
+      "kanName": "繰入金",
+      "amount": 2287142,
+      "prevAmount": 2367210,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 80,
+      "kanName": "繰越金",
+      "amount": 1,
+      "prevAmount": 1,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 85,
+      "kanName": "諸収入",
+      "amount": 1056143,
+      "prevAmount": 794757,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "revenue",
+      "kanNo": 90,
+      "kanName": "市債",
+      "amount": 4008100,
+      "prevAmount": 3045200,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 41
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 10,
+      "kanName": "議会費",
+      "amount": 337361,
+      "prevAmount": 339814,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 42
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 15,
+      "kanName": "総務費",
+      "amount": 5644325,
+      "prevAmount": 5175559,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 42
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 20,
+      "kanName": "民生費",
+      "amount": 19968037,
+      "prevAmount": 18258656,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 42
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 25,
+      "kanName": "衛生費",
+      "amount": 3339414,
+      "prevAmount": 3595233,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 42
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 30,
+      "kanName": "労働費",
+      "amount": 227171,
+      "prevAmount": 250256,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 42
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 35,
+      "kanName": "農林水産業費",
+      "amount": 2236349,
+      "prevAmount": 2214447,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 42
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 40,
+      "kanName": "商工費",
+      "amount": 2000373,
+      "prevAmount": 1973308,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 42
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 45,
+      "kanName": "土木費",
+      "amount": 4814557,
+      "prevAmount": 4568839,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 42
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 50,
+      "kanName": "消防費",
+      "amount": 1853628,
+      "prevAmount": 1839908,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 42
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 55,
+      "kanName": "教育費",
+      "amount": 6197166,
+      "prevAmount": 4676361,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 42
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 60,
+      "kanName": "災害復旧費",
+      "amount": 99300,
+      "prevAmount": 367860,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 42
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 65,
+      "kanName": "公債費",
+      "amount": 5731703,
+      "prevAmount": 5702506,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 42
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 70,
+      "kanName": "諸支出金",
+      "amount": 604616,
+      "prevAmount": 422253,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 42
+      }
+    },
+    {
+      "side": "expenditure",
+      "kanNo": 80,
+      "kanName": "予備費",
+      "amount": 50000,
+      "prevAmount": 50000,
+      "locator": {
+        "file": "令和7年度津山市予算書（両面）.pdf",
+        "page": 42
+      }
+    }
+  ]
+}
