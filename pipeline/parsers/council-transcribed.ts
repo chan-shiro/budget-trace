@@ -23,7 +23,7 @@ import { z } from "zod";
 import { readRawMeta } from "../lib/store";
 import type { CouncilCompositionDoc, CouncilFactionFact, SourceEntry } from "../types";
 
-export const PARSER_VERSION = "0.2.0";
+export const PARSER_VERSION = "0.3.0";
 
 const factionSchema = z
   .object({
@@ -276,6 +276,10 @@ export function parseCouncilTranscribed(
 
   // ---- 議決 ----
   const r = opt.resolution;
+  // 画面は「その予算を議決した議会」として出すので、当初の一般会計予算の議決に限る（別の議案の正しい事実を拒む）
+  if (!norm(r.billName).includes("一般会計予算") || /補正/.test(r.billName)) {
+    missing.push(`件名「${r.billName}」は当初の一般会計予算ではありません`);
+  }
   const resultFile = fileFor(r.url);
   const mainResult = readDoc(resultFile);
   const resultViews = [
@@ -291,6 +295,7 @@ export function parseCouncilTranscribed(
     if ((opt.vacancies ?? 0) > 0) {
       if (!opt.vacanciesText) throw new Error(`${source.id}: vacancies には vacanciesText（原典の表記）が要ります`);
       if (!has(tv, opt.vacanciesText)) missing.push(`欠員の表記「${opt.vacanciesText}」が原典に見つかりません`);
+      if (declaredNumber(opt.vacanciesText) !== opt.vacancies) missing.push(`vacanciesText「${opt.vacanciesText}」が欠員 ${opt.vacancies} の数を含みません`);
     }
     const expect = opt.teisu - (opt.vacancies ?? 0);
     if (seats !== expect) missing.push(`現員 ${seats} が 定数 ${opt.teisu} − 欠員 ${opt.vacancies ?? 0} = ${expect} と合いません（書き落とし？）`);
@@ -324,7 +329,11 @@ export function parseCouncilTranscribed(
     const n = norm(needle);
     if (key === "decidedDate" && r.farOk?.includes(key)) {
       if (!r.decidedDateText) throw new Error(`${source.id}: farOk の decidedDate には decidedDateText（原典の前後の字ごと）が要ります`);
-      if (!norm(r.decidedDateText).includes(n)) missing.push(`decidedDateText「${r.decidedDateText}」に議決月日「${needle}」が含まれません`);
+      // 月日が**ちょうど1つ**の原文に限る（「2月20日〜3月23日開催」なら会期の初日でも通ってしまう）
+      const dates = norm(r.decidedDateText).match(/\d+月\d+日/g) ?? [];
+      if (dates.length !== 1 || dates[0] !== n) {
+        missing.push(`decidedDateText「${r.decidedDateText}」は議決月日「${needle}」をただ1つ含む原文にする（含む月日: ${dates.join("・") || "なし"}）`);
+      }
       if (!has(resultViews, r.decidedDateText)) missing.push(`${resultFile.filename}: ${what}「${r.decidedDateText}」が本文に見つかりません`);
       return;
     }
@@ -348,6 +357,8 @@ export function parseCouncilTranscribed(
     // 件名が見出し（例: ◆全会一致で承認・可決・同意した議案）の一覧に属すること
     const headN = norm(r.resultBlock.heading);
     if (!headN.includes(resultN)) missing.push(`結果「${r.result}」が見出し「${r.resultBlock.heading}」の語ではありません`);
+    // 見出しは「承認・可決・同意」のように複数の語を並べる。予算の議決に当たる語だけを許す
+    if (!/^(原案可決|修正可決|可決|否決)$/.test(resultN)) missing.push(`結果「${r.result}」は予算の議決の語ではありません`);
     // ⚠ 見出しと一覧の並び順は抽出モードで変わる（-layout と -raw で見出しが一覧の前にも後にも出る）ので、
     //   「見出しの前に件名がある」では帰属を縛れない（2026-10-01 に実測）。代わりに、件名と同じ本文に見出しがあり、
     //   **件名の直後に結果語が無い**（＝自前の結果を持つ賛否表の行ではない）ことを見る。南アルプスの議案27は
@@ -382,7 +393,8 @@ export function parseCouncilTranscribed(
 
   if (missing.length) throw new Error(`${source.id}: 書き写しが原典と合いません\n  - ${missing.join("\n  - ")}`);
 
-  const billPage = isPdf(resultFile) ? (anchors.find((a) => a.page > 0)?.page ?? null) : null;
+  // 議案番号が補助の原典にしか無い原典（北杜）でも、結果を照合した主の原典の件名の位置をページにする
+  const billPage = isPdf(resultFile) ? (anchors.find((a) => a.page > 0)?.page ?? resAnchors.find((a) => a.page > 0)?.page ?? null) : null;
   return {
     docType: "council-composition",
     sourceId: source.id,

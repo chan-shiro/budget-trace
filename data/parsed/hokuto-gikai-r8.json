@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "hokuto-gikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.2.0",
-  "parsedAt": "2026-10-01T14:55:13.282Z",
+  "parserVersion": "0.3.0",
+  "parsedAt": "2026-10-01T14:59:03.306Z",
   "fiscalYear": "R8",
   "body": "北杜市議会",
   "seats": 20,
@@ -115,7 +115,8 @@
     "decidedDateLabel": "令和8年3月16日",
     "result": "可決",
     "locator": {
-      "file": "_______86_.pdf"
+      "file": "_______86_.pdf",
+      "page": 5
     }
   },
   "rosterTitle": "北杜市議会議員所属会派（令和6年11月28日現在）",
