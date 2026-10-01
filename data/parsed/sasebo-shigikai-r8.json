@@ -1,0 +1,135 @@
+{
+  "docType": "council-composition",
+  "sourceId": "sasebo-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.5",
+  "parsedAt": "2026-10-01T19:52:01.453Z",
+  "fiscalYear": "R8",
+  "body": "佐世保市議会",
+  "seats": 31,
+  "asOf": "2025-12-03",
+  "factions": [
+    {
+      "name": "自民党市民会議",
+      "seats": 15,
+      "isIndependent": false,
+      "members": [
+        "林健二",
+        "本田ひろし",
+        "黒川英朗",
+        "甲斐義博",
+        "田山藤丸",
+        "鶴大地",
+        "角田隆一郎",
+        "山下こうだい",
+        "山口裕二",
+        "さきやま信幸",
+        "大村のりちか",
+        "田中稔",
+        "松尾裕幸",
+        "長野孝道",
+        "市岡博道"
+      ],
+      "locator": {
+        "file": "kaihalist.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "市民クラブ",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "山下隆良",
+        "松尾俊哉",
+        "久野秀敏",
+        "永田秀人",
+        "柴山賢一",
+        "小野原茂",
+        "古家勉"
+      ],
+      "locator": {
+        "file": "kaihalist.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "佐藤文子",
+        "新川英之",
+        "宮島武雄",
+        "大塚克史"
+      ],
+      "locator": {
+        "file": "kaihalist.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "市政会",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "柴田英樹",
+        "古賀豪紀"
+      ],
+      "locator": {
+        "file": "kaihalist.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "小田徳顕"
+      ],
+      "locator": {
+        "file": "kaihalist.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "若者議員を増やす会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "諸國まや"
+      ],
+      "locator": {
+        "file": "kaihalist.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "葉風会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "久保葉人"
+      ],
+      "locator": {
+        "file": "kaihalist.html",
+        "row": 7
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第１８号議案",
+    "billName": "令和８年度佐世保市一般会計予算",
+    "sessionLabel": "令和8年3月定例会",
+    "decidedDate": "2026-03-23",
+    "decidedDateLabel": "令和8年3月23日",
+    "result": "原案可決",
+    "locator": {
+      "file": "r8nen3gatukagikekka.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "会派別議員名簿（更新日 2025年12月3日）",
+  "resultTitle": "令和8年3月定例会 審議結果"
+}

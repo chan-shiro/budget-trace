@@ -1,0 +1,33 @@
+{
+  "sourceId": "hirakata-shigikai-r8",
+  "files": [
+    {
+      "filename": "361.pdf",
+      "sha256": "1c05b57ca16a1e27802bcfd94c3528fd9831222619e98516523be2b9e48fbde0",
+      "bytes": 6580159,
+      "fetchedAt": "2026-10-01T16:54:23.266Z",
+      "fetchedFrom": "https://www.city.hirakata.osaka.jp/cmsfiles/contents/0000031/31677/361.pdf"
+    },
+    {
+      "filename": "362.pdf",
+      "sha256": "c0d8896ad6c2c864183f1f87fb82e7d29ebc6ba90e26216b8d9013eb501b50c4",
+      "bytes": 8175831,
+      "fetchedAt": "2026-10-01T16:54:23.274Z",
+      "fetchedFrom": "https://www.city.hirakata.osaka.jp/cmsfiles/contents/0000031/31677/362.pdf"
+    },
+    {
+      "filename": "20260327_giketsukekka.pdf",
+      "sha256": "e81d2b3f270e1c1cf10e3d3d7b084629d7a5bc5ea23eb40ce367827538bdc72a",
+      "bytes": 184974,
+      "fetchedAt": "2026-10-01T16:54:23.274Z",
+      "fetchedFrom": "https://www.city.hirakata.osaka.jp/cmsfiles/contents/0000000/269/20260327_giketsukekka.pdf"
+    },
+    {
+      "filename": "0000047727.html",
+      "sha256": "2a9605026978be9445f267829f3e0531645e086146466981468d5c74aef26280",
+      "bytes": 34268,
+      "fetchedAt": "2026-10-01T16:54:23.275Z",
+      "fetchedFrom": "https://www.city.hirakata.osaka.jp/0000047727.html"
+    }
+  ]
+}

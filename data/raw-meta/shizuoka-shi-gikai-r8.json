@@ -1,0 +1,33 @@
+{
+  "sourceId": "shizuoka-shi-gikai-r8",
+  "files": [
+    {
+      "filename": "01_kaihabetsumeibo.pdf",
+      "sha256": "070656080aec88cb7abf3feea5b63e6b2240c05beca79c3d98b984a39becb0e3",
+      "bytes": 122844,
+      "fetchedAt": "2026-10-01T15:50:47.100Z",
+      "fetchedFrom": "https://web.archive.org/web/20251005163031id_/https://www.city.shizuoka.lg.jp/documents/6545/01_kaihabetsumeibo.pdf"
+    },
+    {
+      "filename": "s006676.html",
+      "sha256": "1a68199320b379831344965ef1cfa53f8379b9e9bf2d3dd119d68855149accfd",
+      "bytes": 14102,
+      "fetchedAt": "2026-10-01T15:50:47.101Z",
+      "fetchedFrom": "https://web.archive.org/web/20260309064542id_/https://www.city.shizuoka.lg.jp/gikai/s006676.html"
+    },
+    {
+      "filename": "202602gatu_gigetukekka_02.pdf",
+      "sha256": "551712e290fc9acd1c8f60accd59716bd1500049e9dc295d1e9386c02bb000a0",
+      "bytes": 225898,
+      "fetchedAt": "2026-10-01T15:50:47.101Z",
+      "fetchedFrom": "https://www.city.shizuoka.lg.jp/documents/6558/202602gatu_gigetukekka_02.pdf"
+    },
+    {
+      "filename": "s006672.html",
+      "sha256": "4b43880909513ff522a59c3b868e82817d347604ac3ccaa74ad5ffa435ad5c1d",
+      "bytes": 17323,
+      "fetchedAt": "2026-10-01T15:50:47.102Z",
+      "fetchedFrom": "https://www.city.shizuoka.lg.jp/gikai/s006672.html"
+    }
+  ]
+}

@@ -16,12 +16,12 @@ export const ROADMAP_PROGRESS = {
   "budgetCount": 326,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 2417,
-  "fileCount": 3653,
-  "archivedCount": 2243,
-  "licenseOpen": 102,
-  "licensePermission": 2099,
-  "licenseUnverified": 216,
+  "sourceCount": 2482,
+  "fileCount": 3897,
+  "archivedCount": 2306,
+  "licenseOpen": 103,
+  "licensePermission": 2155,
+  "licenseUnverified": 224,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
   "kofuBudgetYears": 7,
@@ -1642,6 +1642,13 @@ export const ROADMAP_PLAN: RoadmapItem[] = [
     "why": "予算 → 執行 → 成果 の鎖の最後。川崎・横浜・札幌の3政令市で全量収録が揃い、請求なしで鎖が閉じることは確立した。さいたま・京都・北九州の成果説明書は款項を持つので、収録できれば款→事業→成果が一本で繋がる（款への紐付けは横浜の歳出予算科目に次ぐ2例目以降になる）。",
     "needs": "様式が市ごとに違い、評価体系も違う（甲府=A〜F／川崎=達成度1〜5＋方向性Ⅰ〜Ⅴ／横浜=7軸カテゴリ／札幌=自由記述）ので、丸めずに出し分ける設計を毎回起こす。札幌の過年度（H24〜R6 の13年分）はリポジトリ肥大の判断があって最新年度に絞っており、多年度化は事業コードの安定性を使えば後からできる。",
     "ref": "docs/data-sources.md §8b・§8f・§8j・§8t"
+  },
+  {
+    "title": "議会の構成（予算議決時）を広げる",
+    "status": "now",
+    "why": "その予算をどんな顔ぶれの議会が議決したかを、予算と並べて見られるようにする。金額の検算が要らないので、当初予算を収録済みの自治体へ速く広げられる。議員ごとの賛否を公表している議会も多く、次の段階で載せられる。",
+    "needs": "名簿の様式が議会ごとに違い（HTML の表・PDF・議会だより）、会派構成は同じページが上書き更新される。議決した時点の構成を魚拓や日付入りの名簿で確かめられない議会は載せない。会派制を採らない町村議会の見せ方も未定。",
+    "ref": "docs/data-sources.md §6・§6-2"
   },
   {
     "title": "主な事業（政令市）",

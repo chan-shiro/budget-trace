@@ -1,0 +1,112 @@
+{
+  "docType": "council-composition",
+  "sourceId": "toyonaka-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.5",
+  "parsedAt": "2026-10-01T19:51:57.503Z",
+  "fiscalYear": "R8",
+  "body": "豊中市議会",
+  "seats": 31,
+  "asOf": "2026-02-20",
+  "factions": [
+    {
+      "name": "公明党豊中市議会議員団",
+      "seats": 9,
+      "isIndependent": false,
+      "members": [
+        "今村正",
+        "三原和人",
+        "石原準司",
+        "大野妙子",
+        "酒井哲也",
+        "田中利栄",
+        "中島紳一",
+        "弘瀬源悟",
+        "吉田正弘"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "大阪維新の会・無所属議員団",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "花井慶太",
+        "大田康治",
+        "神原宏一郎",
+        "北之坊晋次",
+        "久場良孝",
+        "中川隆弘",
+        "藤田浩史",
+        "横尾しずか"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "とよなかを共に創る会",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "高木公香",
+        "井本博一",
+        "坂口雄太",
+        "白岩正三",
+        "中岡裕晶"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "日本共産党豊中市議会議員団",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "山本一徳",
+        "佐々木美穂",
+        "出口文子",
+        "和田愛美"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "無所属",
+      "seats": 5,
+      "isIndependent": true,
+      "members": [
+        "井上弘美",
+        "木村真",
+        "中野宏基",
+        "松岡信道",
+        "山田紗保"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 5
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "市議案第8号",
+    "billName": "令和8年度豊中市一般会計予算",
+    "sessionLabel": "令和8年(2026年)3月定例会",
+    "decidedDate": "2026-03-23",
+    "decidedDateLabel": "令和8年3月23日",
+    "result": "原案可決",
+    "locator": {
+      "file": "reiwa8nenn3_giketu.html"
+    }
+  },
+  "rosterTitle": "会派一覧表（更新日 2026年2月20日）",
+  "resultTitle": "令和8年(2026年)3月定例会 議決結果"
+}

@@ -1,0 +1,29 @@
+{
+  "sourceId": "hiroshima-shigikai-r8",
+  "files": [
+    {
+      "filename": "1010248.html",
+      "sha256": "2d5ccf4bfcb868938266806764dc6b62832c86c87b3d1dd3055cd2c059c49c89",
+      "bytes": 58393,
+      "fetchedAt": "2026-10-01T15:48:54.042Z",
+      "fetchedFrom": "https://web.archive.org/web/20260329150632id_/https://www.city.hiroshima.lg.jp/gikai/giin-shoukai/1010248.html",
+      "transform": [
+        "gunzip"
+      ]
+    },
+    {
+      "filename": "1048719.html",
+      "sha256": "f9eeb476d73d7945ad27e2f23e9f369d4c34548bda51f7b964208e9a97e991ea",
+      "bytes": 78132,
+      "fetchedAt": "2026-10-01T15:48:54.043Z",
+      "fetchedFrom": "https://www.city.hiroshima.lg.jp/gikai/nittei/1027907/1048719.html"
+    },
+    {
+      "filename": "260326.pdf",
+      "sha256": "c0f0c57eb5e5f189a6f63208df8bf632c48fde17ad299c7d8a731cce969fef6c",
+      "bytes": 563785,
+      "fetchedAt": "2026-10-01T15:48:54.044Z",
+      "fetchedFrom": "https://www.city.hiroshima.lg.jp/_res/projects/default_project/_page_/001/048/719/260326.pdf"
+    }
+  ]
+}

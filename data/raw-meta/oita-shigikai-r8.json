@@ -1,0 +1,12 @@
+{
+  "sourceId": "oita-shigikai-r8",
+  "files": [
+    {
+      "filename": "giketukekka.pdf",
+      "sha256": "da5348a1504ad0adf1a382d2bd61ba5b1814aff09fedd163bd18d06afee2a533",
+      "bytes": 555070,
+      "fetchedAt": "2026-10-01T17:04:04.702Z",
+      "fetchedFrom": "https://www.city.oita.oita.jp/o186/shigikai/kaiginokekka/documents/giketukekka.pdf"
+    }
+  ]
+}

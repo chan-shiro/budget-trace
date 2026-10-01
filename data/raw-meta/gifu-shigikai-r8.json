@@ -1,0 +1,26 @@
+{
+  "sourceId": "gifu-shigikai-r8",
+  "files": [
+    {
+      "filename": "1021215.html",
+      "sha256": "b34941bc5e263eadb1dec86d93f8f054897a8343c0f1b61e51fadcbbdb484f58",
+      "bytes": 50803,
+      "fetchedAt": "2026-10-01T16:55:47.083Z",
+      "fetchedFrom": "https://web.archive.org/web/20260418045437id_/https://www.city.gifu.lg.jp/info/shigikai/1009372/1021215.html"
+    },
+    {
+      "filename": "r803sanpi2.pdf",
+      "sha256": "8cf4560d98d52c7cdc7b4365efff77add2647223357dc12831e90d1bdbf307e9",
+      "bytes": 437363,
+      "fetchedAt": "2026-10-01T16:55:47.084Z",
+      "fetchedFrom": "https://www.city.gifu.lg.jp/_res/projects/default_project/_page_/001/009/433/r803sanpi2.pdf"
+    },
+    {
+      "filename": "r803giketsu3.pdf",
+      "sha256": "41cc1d3a589224b396af23c2c0fb8c542965fd34e42444971cb8c16a09aaea1a",
+      "bytes": 93251,
+      "fetchedAt": "2026-10-01T16:55:47.085Z",
+      "fetchedFrom": "https://www.city.gifu.lg.jp/_res/projects/default_project/_page_/001/009/432/r803giketsu3.pdf"
+    }
+  ]
+}

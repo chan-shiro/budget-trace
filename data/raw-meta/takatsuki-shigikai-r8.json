@@ -1,0 +1,33 @@
+{
+  "sourceId": "takatsuki-shigikai-r8",
+  "files": [
+    {
+      "filename": "1023.html",
+      "sha256": "fd684c70217f0855ae267fcc6a671320c0174b40dc22bd40143d4687a05ca383",
+      "bytes": 32762,
+      "fetchedAt": "2026-10-01T16:54:23.259Z",
+      "fetchedFrom": "https://web.archive.org/web/20260210090856id_/https://www.city.takatsuki.osaka.jp/site/takatsukishigikai/1023.html"
+    },
+    {
+      "filename": "62812.pdf",
+      "sha256": "16486bd710c0045fd7aa8799255d807e82c50c2b7d6da752e0198549ebb68f38",
+      "bytes": 72446,
+      "fetchedAt": "2026-10-01T16:54:23.260Z",
+      "fetchedFrom": "https://www.city.takatsuki.osaka.jp/uploaded/attachment/62812.pdf"
+    },
+    {
+      "filename": "62811.pdf",
+      "sha256": "1ec661a3f8f72b84073790c0030a011d609543ad9a72839efd9b28642f4d4ea8",
+      "bytes": 92717,
+      "fetchedAt": "2026-10-01T16:54:23.260Z",
+      "fetchedFrom": "https://www.city.takatsuki.osaka.jp/uploaded/attachment/62811.pdf"
+    },
+    {
+      "filename": "1010.html",
+      "sha256": "b2356942ecffde935104a57a2230871c6e7db2be1d8a389618967debcfcc6947",
+      "bytes": 42876,
+      "fetchedAt": "2026-10-01T16:54:23.260Z",
+      "fetchedFrom": "https://www.city.takatsuki.osaka.jp/site/takatsukishigikai/1010.html"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "docType": "council-composition",
+  "sourceId": "fuefuki-gikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.5",
+  "parsedAt": "2026-10-01T19:51:52.746Z",
+  "fiscalYear": "R8",
+  "body": "笛吹市議会",
+  "seats": 19,
+  "asOf": "2025-06-10",
+  "factions": [
+    {
+      "name": "笛新会",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "海野利比古",
+        "保坂利定",
+        "神澤敏美",
+        "荻野謙一",
+        "神宮司正人",
+        "樋口滝人"
+      ],
+      "locator": {
+        "file": "kaihaitiran.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "笛政クラブ",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "古屋始芳",
+        "岡由子",
+        "荻野陽子"
+      ],
+      "locator": {
+        "file": "kaihaitiran.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "清心会",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "落合俊美",
+        "山田宏司",
+        "河野正博"
+      ],
+      "locator": {
+        "file": "kaihaitiran.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "煌・フォーラム21",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "山本茂貴",
+        "三枝賢治",
+        "鈴木駿一"
+      ],
+      "locator": {
+        "file": "kaihaitiran.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "渡辺清美",
+        "中川秀哉"
+      ],
+      "locator": {
+        "file": "kaihaitiran.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無会派",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "河野智子",
+        "松本なつき"
+      ],
+      "locator": {
+        "file": "kaihaitiran.pdf",
+        "page": 1
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第18号",
+    "billName": "令和8年度笛吹市一般会計予算について",
+    "sessionLabel": "令和8年笛吹市議会第1回定例会",
+    "decidedDate": "2026-03-24",
+    "decidedDateLabel": "令和8年3月24日",
+    "result": "原案可決",
+    "locator": {
+      "file": "r81giketuitirann.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "笛吹市議会 会派一覧表（令和7年6月10日現在）",
+  "resultTitle": "令和8年笛吹市議会第1回定例会 議決案件一覧"
+}

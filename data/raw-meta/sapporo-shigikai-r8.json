@@ -1,0 +1,19 @@
+{
+  "sourceId": "sapporo-shigikai-r8",
+  "files": [
+    {
+      "filename": "meibo-kaiha.html",
+      "sha256": "0956e37546f5231a998c95a2a701b9ae99f1ee481f95885ddb3bb287c7536def",
+      "bytes": 22809,
+      "fetchedAt": "2026-10-01T15:50:46.314Z",
+      "fetchedFrom": "https://web.archive.org/web/20260117133407id_/https://www.city.sapporo.jp/gikai/meibo/meibo-kaiha.html"
+    },
+    {
+      "filename": "08_kekka1t.pdf",
+      "sha256": "ed96cab3221ba33562727a5e582d44148a9a0c52341736d9fd0f0fd359b867a6",
+      "bytes": 2107329,
+      "fetchedAt": "2026-10-01T15:50:46.318Z",
+      "fetchedFrom": "https://www.city.sapporo.jp/gikai/html/documents/08_kekka1t.pdf"
+    }
+  ]
+}

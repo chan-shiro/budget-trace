@@ -1,0 +1,143 @@
+{
+  "docType": "council-composition",
+  "sourceId": "nishinomiya-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.5",
+  "parsedAt": "2026-10-01T19:51:58.992Z",
+  "fiscalYear": "R8",
+  "body": "西宮市議会",
+  "seats": 40,
+  "asOf": "2025-10-02",
+  "factions": [
+    {
+      "name": "日本維新の会　西宮市議団",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "ありめこうへい",
+        "今泉ゆうた",
+        "江良健太郎",
+        "多田裕",
+        "浜口ひとし",
+        "前島のぶなが",
+        "前田しゅうじ",
+        "渡辺けんじろう"
+      ],
+      "locator": {
+        "file": "kaihabetsu-list.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "公明党議員団",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "大川原成彦",
+        "大原智",
+        "しげひさ大学",
+        "松田しげる",
+        "松山かつのり",
+        "山口まゆみ",
+        "山田ますと"
+      ],
+      "locator": {
+        "file": "kaihabetsu-list.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "会派・ぜんしん",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "おおさこ純司郎",
+        "菅野雅一",
+        "草加智清",
+        "澁谷祐介",
+        "たかのしん",
+        "牧みゆき",
+        "八木米太朗"
+      ],
+      "locator": {
+        "file": "kaihabetsu-list.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "市民クラブ",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "おくの尚美",
+        "河崎はじめ",
+        "田中あきよ",
+        "中尾孝夫",
+        "花岡ゆたか",
+        "宮本けいこ"
+      ],
+      "locator": {
+        "file": "kaihabetsu-list.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "啓誠会",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "川村よしと",
+        "坂上明",
+        "坂本龍佑",
+        "松本たかゆき",
+        "森けんと"
+      ],
+      "locator": {
+        "file": "kaihabetsu-list.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "日本共産党西宮市会議員団",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "庄本けんじ",
+        "野口あけみ",
+        "三好さつき"
+      ],
+      "locator": {
+        "file": "kaihabetsu-list.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "無所属",
+      "seats": 4,
+      "isIndependent": true,
+      "members": [
+        "一色風子",
+        "佐野ひろみ",
+        "村上ひろし",
+        "よつや薫"
+      ],
+      "locator": {
+        "file": "kaihabetsu-list.html",
+        "row": 7
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第493号",
+    "billName": "令和８年度西宮市一般会計予算",
+    "sessionLabel": "令和8年3月（第16回）定例会",
+    "decidedDate": "2026-03-18",
+    "decidedDateLabel": "令和8年3月18日",
+    "result": "可決",
+    "locator": {
+      "file": "g07_giketsu.asp_Sflg_1_kaigi_2026_02_16_2026_03_19_272_kensu_100.html"
+    }
+  },
+  "rosterTitle": "会派別議員名簿（令和7年10月2日現在）",
+  "resultTitle": "議決結果（令和8年3月（第16回）定例会）"
+}

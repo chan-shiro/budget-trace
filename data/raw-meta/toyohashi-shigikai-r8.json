@@ -1,0 +1,36 @@
+{
+  "sourceId": "toyohashi-shigikai-r8",
+  "files": [
+    {
+      "filename": "8130.htm",
+      "sha256": "5cc7fac4627ef296b207a6442fc7acde4e22533cab45927012b99c4b54a9d2e6",
+      "bytes": 64032,
+      "fetchedAt": "2026-10-01T16:54:23.247Z",
+      "fetchedFrom": "https://web.archive.org/web/20260314231058id_/https://www.city.toyohashi.lg.jp/8130.htm"
+    },
+    {
+      "filename": "R8.3giketukekka.pdf",
+      "sha256": "0dc482833f72e1050fdec90e594eb525ad6f76b57a359bb4c5510b2384c2af7b",
+      "bytes": 128664,
+      "fetchedAt": "2026-10-01T16:54:23.248Z",
+      "fetchedFrom": "https://www.city.toyohashi.lg.jp/secure/40193/R8.3giketukekka.pdf"
+    },
+    {
+      "filename": "gikaidayori353(pink.pdf",
+      "sha256": "61f51e74abf5c68fd0b09dcaf445981d9abcf77491286fd2a5d9a488fc05ff29",
+      "bytes": 2800862,
+      "fetchedAt": "2026-10-01T16:54:23.251Z",
+      "fetchedFrom": "https://www.city.toyohashi.lg.jp/secure/9867/gikaidayori353(pink.pdf"
+    },
+    {
+      "filename": "gikai.html",
+      "sha256": "457ab5d751c424004b7dd424db10a8785acb3d2fae7b98b776730f5bf1a1bfbb",
+      "bytes": 61809,
+      "fetchedAt": "2026-10-01T16:54:23.251Z",
+      "fetchedFrom": "https://www.city.toyohashi.lg.jp/gikai/",
+      "transform": [
+        "ext:.html"
+      ]
+    }
+  ]
+}

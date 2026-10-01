@@ -1,0 +1,19 @@
+{
+  "sourceId": "hamamatsu-gikai-r8",
+  "files": [
+    {
+      "filename": "meibokaiha.html",
+      "sha256": "017750a93edd60029a839ea78c11f04ec31f395eca0644c4be922c4b7553ec52",
+      "bytes": 17178,
+      "fetchedAt": "2026-10-01T15:24:40.183Z",
+      "fetchedFrom": "https://web.archive.org/web/20260315043410id_/https://www.city.hamamatsu.shizuoka.jp/gikai/iinkai/meibokaiha.html"
+    },
+    {
+      "filename": "giketukekkaitirann.pdf",
+      "sha256": "503d51f0f5a78f31da2ff3235bb4356ef96a477aeb9ed281b12f1a2f33575d06",
+      "bytes": 180801,
+      "fetchedAt": "2026-10-01T15:24:40.597Z",
+      "fetchedFrom": "https://www.city.hamamatsu.shizuoka.jp/documents/171369/giketukekkaitirann.pdf"
+    }
+  ]
+}

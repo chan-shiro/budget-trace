@@ -1,0 +1,33 @@
+{
+  "sourceId": "okayama-shigikai-r8",
+  "files": [
+    {
+      "filename": "0000015562.html",
+      "sha256": "248a352b1cd4ced8dacdf170cb6ae19aee8d5f71aa52f9f8d5d9522917929522",
+      "bytes": 26460,
+      "fetchedAt": "2026-10-01T15:40:52.341Z",
+      "fetchedFrom": "https://web.archive.org/web/20251215204755id_/https://www.city.okayama.jp/gikai/0000015562.html"
+    },
+    {
+      "filename": "0000078927.html",
+      "sha256": "90e8382d0ac6e6a0afa95d13a3c6a62542c4d36aed9d3cfe7ef0182c548e5bf8",
+      "bytes": 43050,
+      "fetchedAt": "2026-10-01T15:40:52.341Z",
+      "fetchedFrom": "https://www.city.okayama.jp/gikai/0000078927.html"
+    },
+    {
+      "filename": "0000078068.html",
+      "sha256": "51f6d46c4ad836760514c9102915aaf79644b95b88811182a47a07130f776588",
+      "bytes": 64950,
+      "fetchedAt": "2026-10-01T15:40:52.341Z",
+      "fetchedFrom": "https://www.city.okayama.jp/gikai/0000078068.html"
+    },
+    {
+      "filename": "0000015787.html",
+      "sha256": "222033e185ec6fdeeec1a5d75ecfe83759d77f90df2db4e6608ff3399f6da996",
+      "bytes": 27636,
+      "fetchedAt": "2026-10-01T15:40:52.342Z",
+      "fetchedFrom": "https://www.city.okayama.jp/gikai/0000015787.html"
+    }
+  ]
+}

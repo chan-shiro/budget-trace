@@ -1,0 +1,26 @@
+{
+  "sourceId": "toyonaka-shigikai-r8",
+  "files": [
+    {
+      "filename": "kaiha.html",
+      "sha256": "248e163981f81a0f8d0d28949f8c01b1f467e83d10321023d2eab528d3401dda",
+      "bytes": 16255,
+      "fetchedAt": "2026-10-01T16:54:23.257Z",
+      "fetchedFrom": "https://web.archive.org/web/20260221224735id_/https://www.city.toyonaka.osaka.jp/shigikai/giinsyokai/yakuin/kaiha.html"
+    },
+    {
+      "filename": "reiwa8nenn3_giketu.html",
+      "sha256": "51bc208e80572473438b25114e096ff15d980a028e17df14b183f62416e154d6",
+      "bytes": 25281,
+      "fetchedAt": "2026-10-01T16:54:23.257Z",
+      "fetchedFrom": "https://www.city.toyonaka.osaka.jp/shigikai/shigikaioshirase/giketsu_kekka/2026/reiwa8nenn3_giketu.html"
+    },
+    {
+      "filename": "202605_gikaihou.pdf",
+      "sha256": "7ade34c981280d88b0bdd6f854cef59b0b885d7af8a7a95463a960a2a79f17c1",
+      "bytes": 1660866,
+      "fetchedAt": "2026-10-01T16:54:23.259Z",
+      "fetchedFrom": "https://www.city.toyonaka.osaka.jp/shigikai/shigikaioshirase/gikai_ugoki/202603gikaihou.files/202605_gikaihou.pdf"
+    }
+  ]
+}

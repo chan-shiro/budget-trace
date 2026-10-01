@@ -1,0 +1,19 @@
+{
+  "sourceId": "nagano-shigikai-r8",
+  "files": [
+    {
+      "filename": "p005269.html",
+      "sha256": "d43c71e366abde2aa14cb2e5eb2adc412a8f4dab68555766ef6442d931a8870b",
+      "bytes": 18630,
+      "fetchedAt": "2026-10-01T16:55:47.081Z",
+      "fetchedFrom": "https://web.archive.org/web/20260421110348id_/https://www.city.nagano.nagano.jp/n440500/shigikai/p005269.html"
+    },
+    {
+      "filename": "p005627.html",
+      "sha256": "25ad57d8b3c93e3d98590ed1d07ff501987b99425b28fc57eeb9b61a71641926",
+      "bytes": 52474,
+      "fetchedAt": "2026-10-01T16:55:47.082Z",
+      "fetchedFrom": "https://www.city.nagano.nagano.jp/n440500/contents/p005627.html"
+    }
+  ]
+}

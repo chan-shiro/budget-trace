@@ -1,0 +1,26 @@
+{
+  "sourceId": "hokuto-gikai-r8",
+  "files": [
+    {
+      "filename": "_____R6.11.28___1_.pdf",
+      "sha256": "dee7fde232d4c6ee4dfad6c934e77ca7ff345df84686c94ca16e22e5d019ef0a",
+      "bytes": 26731,
+      "fetchedAt": "2026-10-01T14:18:49.462Z",
+      "fetchedFrom": "https://www.city.hokuto.yamanashi.jp/fs/4/3/2/3/0/2/_/_____R6.11.28___1_.pdf"
+    },
+    {
+      "filename": "_______86_.pdf",
+      "sha256": "368bfda818d49a0ce0f646bc460f2447eccb834e1fcef06b831691abd56728bb",
+      "bytes": 4342296,
+      "fetchedAt": "2026-10-01T14:18:51.159Z",
+      "fetchedFrom": "https://www.city.hokuto.yamanashi.jp/fs/5/0/0/6/4/8/_/_______86_.pdf"
+    },
+    {
+      "filename": "____.pdf",
+      "sha256": "90c5cc2de50ba2c44cb663a731496bab63c5621d1b85fd452235f931669bc0d3",
+      "bytes": 111282,
+      "fetchedAt": "2026-10-01T14:18:51.559Z",
+      "fetchedFrom": "https://www.city.hokuto.yamanashi.jp/fs/5/0/1/2/9/7/_/____.pdf"
+    }
+  ]
+}

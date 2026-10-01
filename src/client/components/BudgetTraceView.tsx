@@ -800,13 +800,13 @@ export default function BudgetTraceView({ v }: { v: any }) {
                 </section>
                 )}
 
-                {/* 議会の構成（予算議決時）— full 専用（甲府）。会派別議席数＋当初予算の議決。
-                    賛否内訳・会派別賛否は非公表（起立採決）なので出さない。 */}
+                {/* 議会の構成（予算議決時）— 甲府（full）＋議決時点の構成を確かめた budget 階層の議会。
+                    会派別議席数＋当初予算の議決。賛否は甲府は非公表（起立採決）、他は未収録。 */}
                 {v.council && (
                 <section style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:22px 24px; margin:26px 0;")}>
                   <div style={S("display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:16px;")}>
                     <h2 style={S("margin:0; font-size:16px; font-weight:700;")}>議会の構成（予算議決時）</h2>
-                    <span style={S("font-size:12.5px; color:#5C6B77;")}>{v.council.body} ・ 定数 <span style={S("font-family:'IBM Plex Mono',monospace; color:#14181C;")}>{v.council.seats}</span> ・ {v.council.asOfLabel}現在</span>
+                    <span style={S("font-size:12.5px; color:#5C6B77;")}>{v.council.body} ・ {v.council.seatsLabel} <span style={S("font-family:'IBM Plex Mono',monospace; color:#14181C;")}>{v.council.seatsShown}</span>{v.council.vacancyLabel && <> ・ {v.council.vacancyLabel}</>} ・ {v.council.asOfLabel}現在</span>
                   </div>
                   <div style={S("display:flex; gap:30px; flex-wrap:wrap;")}>
                     <div style={S("flex:2 1 380px; min-width:300px;")}>
@@ -832,13 +832,13 @@ export default function BudgetTraceView({ v }: { v: any }) {
                           <span style={S("font-size:12px; color:#5C6B77;")}>{v.council.resolution.sessionLabel}（{v.council.resolution.decidedDateLabel}）</span>
                         </div>
                         <div style={S("font-size:13px; font-weight:600; color:#14181C; line-height:1.6;")}>{v.council.resolution.billNo}　{v.council.resolution.billName}</div>
-                        <p style={S("margin:10px 0 0; font-size:11px; color:#8494A0; line-height:1.7;")}>会派ごとの賛否・票数は起立採決のため公表されていません（記録は「可決」のみ）。</p>
+                        <p style={S("margin:10px 0 0; font-size:11px; color:#8494A0; line-height:1.7;")}>{v.council.voteNote}</p>
                       </div>
                       <div style={S("display:flex; gap:6px; flex-wrap:wrap; font-size:11.5px;")}>
-                        <HoverBox as="button" onClick={v.council.rosterOpen} style={S("border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; border-radius:999px; padding:3px 11px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif; font-size:11.5px;")} hoverStyle={S("border-color:#1798D0; color:#1798D0;")}>出典：会派別議員名簿（{v.council.rosterAction}）</HoverBox>
-                        <HoverBox as="button" onClick={v.council.resultOpen} style={S("border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; border-radius:999px; padding:3px 11px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif; font-size:11.5px;")} hoverStyle={S("border-color:#1798D0; color:#1798D0;")}>出典：{v.council.resolution.sessionLabel} 審議結果（{v.council.resultAction}）</HoverBox>
-                        <a href={v.council.newsletterUrl} target="_blank" rel="noopener noreferrer" style={S("border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:3px 11px; text-decoration:none;")}>議会だより ↗</a>
-                        <a href={v.council.minutesUrl} target="_blank" rel="noopener noreferrer" style={S("border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:3px 11px; text-decoration:none;")}>会議録検索 ↗</a>
+                        <HoverBox as="button" onClick={v.council.rosterOpen} style={S("border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; border-radius:999px; padding:3px 11px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif; font-size:11.5px;")} hoverStyle={S("border-color:#1798D0; color:#1798D0;")}>出典：{v.council.rosterTitle}（{v.council.rosterAction}）</HoverBox>
+                        <HoverBox as="button" onClick={v.council.resultOpen} style={S("border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; border-radius:999px; padding:3px 11px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif; font-size:11.5px;")} hoverStyle={S("border-color:#1798D0; color:#1798D0;")}>出典：{v.council.resultTitle}（{v.council.resultAction}）</HoverBox>
+                        {v.council.newsletterUrl && <a href={v.council.newsletterUrl} target="_blank" rel="noopener noreferrer" style={S("border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:3px 11px; text-decoration:none;")}>議会だより ↗</a>}
+                        {v.council.minutesUrl && <a href={v.council.minutesUrl} target="_blank" rel="noopener noreferrer" style={S("border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:3px 11px; text-decoration:none;")}>会議録検索 ↗</a>}
                       </div>
                     </div>
                   </div>

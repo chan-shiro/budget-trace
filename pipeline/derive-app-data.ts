@@ -145,8 +145,11 @@ const isArchiveUrl = (url: string): boolean => /^https?:\/\/(web\.archive\.org|w
 //   これに類する行為を認めますので、**私的かつ非商業目的のみに限定して利用してください**」＋「転載、転用等を行う際は、必ず事前に…ご相談ください」
 //   で、`非営利` と同じ制限を別の語で述べているのに `unverified`（＝自前の写しを開く側）に落ちていた。**意訳ではなく同義の語の追加**で、
 //   実測で registry の license に `非商業` を含むのは半田だけ（移るのは半田の8ソースだけ・open 側との衝突0）。
+// ⚠ **「許諾を得…必要」を足した**（2026-10-02・名古屋市会 §6-3）。原文「…個別に名古屋市の担当課の許諾を得ていただく
+//   必要があります」は許可の要求そのものなのに、語彙（許可|承諾|同意 ＋ なく|を得ず）に当たらず unverified に落ちていた。
+//   全 registry で動くのは名古屋の1件だけ（open 側との衝突0・レビューが実測）。
 const licenseClassOf = (lic: string): "open" | "permission-required" | "unverified" =>
-  /要許可|非営利|非商業|無断|複製・転用|転載を禁止|使用を禁止|(?:転載|複製|二次利用|引用)[^。]{0,20}(?:禁じ|禁止)|(?:許可|承諾|同意)(?:・(?:許可|承諾|同意))?(?:なく(?!ても|とも)|を得(?:ず|ない|ないまま))[^。]{0,40}(?:できません|禁じ|禁止|お断り)/.test(lic)
+  /(?:許可|承諾|同意|許諾)を得(?:て|る)[^。]{0,20}必要|要許可|非営利|非商業|無断|複製・転用|転載を禁止|使用を禁止|(?:転載|複製|二次利用|引用)[^。]{0,20}(?:禁じ|禁止)|(?:許可|承諾|同意)(?:・(?:許可|承諾|同意))?(?:なく(?!ても|とも)|を得(?:ず|ない|ないまま))[^。]{0,40}(?:できません|禁じ|禁止|お断り)/.test(lic)
     ? "permission-required"
   : /政府標準利用規約|公共データ利用規約|クリエイティブ・コモンズ|CC[ -]?BY/i.test(lic) ? "open"
   : "unverified";
@@ -927,6 +930,73 @@ export const KOFU_EVALUATION_YEARS: KofuEvaluationYear[] = ${JSON.stringify(eval
       newsletterUrl: "https://www.city.kofu.yamanashi.jp/gijichosa/shise/gikai/koho/r08.html",
     };
   });
+  // ---- 甲府以外（`council-transcribed`）。団体コード → 年度の新しい順 ----
+  // 台帳は registry（parser: council-transcribed）そのもの。団体コードは scope の「団体コードNNNNNN」から取る
+  // （手で並べる台帳を別に持つと載せ忘れが起きる）。取り違えは出口で議会名と団体名を突き合わせて止める
+  const COUNCIL_SOURCES: { srcId: string; muniCode: string }[] = SOURCES.filter(
+    (s) => s.parser === "council-transcribed" && !s.fixture,
+  ).map((s) => {
+    const code = s.scope.match(/団体コード(\d{6})/)?.[1];
+    if (!code) throw new Error(`${s.id}: scope に「団体コードNNNNNN」がありません（議会の構成の配信先が決まらない）`);
+    return { srcId: s.id, muniCode: code };
+  });
+  const muniCouncils: Record<string, unknown[]> = {};
+  for (const { srcId, muniCode } of COUNCIL_SOURCES) {
+    const v = validationResultSchema.parse(readJson(validationPath(srcId)));
+    if (v.status !== "ok") throw new Error(`${srcId}: 検証が ${v.status} のため derive しません`);
+    const doc = anyParsedDocSchema.parse(readJson(parsedPath(srcId)));
+    if (doc.docType !== "council-composition") throw new Error(`${srcId}: council-composition ではありません`);
+    const src = findSource(srcId);
+    const meta = readRawMeta(srcId);
+    if (!meta) throw new Error(`${srcId}: raw-meta がありません`);
+    const opt = src.parserOptions as { roster: { url: string }; resolution: { url: string } };
+    const fileOf = (url: string) => {
+      const f = meta.files.find((x) => x.fetchedFrom === url);
+      if (!f) throw new Error(`${srcId}: ${url} の raw ファイルがありません`);
+      return f;
+    };
+    // 魚拓から取った原典は、魚拓そのものが「その版」なので発行元リンクにも魚拓を置く
+    // （発行元の同じ URL は議決後に上書きされた別の版を指す）
+    const ev = (url: string, title: string) => ({
+      title,
+      localUrl: `/sources/${srcId}/${fileOf(url).filename}`,
+      originUrl: url,
+      archiveUrl: url.startsWith("https://web.archive.org/") ? url : wayback(url),
+    });
+    const asOfLabel = doc.asOf.replace(/^(\d{4})-(\d{2})-(\d{2})$/, (_m, y, mo, d) => `${y}年${Number(mo)}月${Number(d)}日`);
+    (muniCouncils[muniCode] ??= []).push({
+      fy: doc.fiscalYear,
+      fyLabel: `${eraYear(doc.fiscalYear)}年度 当初予算`,
+      body: doc.body,
+      seats: doc.seats,
+      ...(doc.teisu != null ? { teisu: doc.teisu } : {}),
+      asOf: doc.asOf,
+      asOfLabel,
+      // 原典の並び（議席番号順の賛否表の列など）は団体ごとにまちまちなので、議席の多い順・無所属は後ろにそろえる
+      factions: doc.factions
+        .map((f) => ({ name: f.name, seats: f.seats, isIndependent: f.isIndependent }))
+        .sort((a, b) => Number(a.isIndependent) - Number(b.isIndependent) || b.seats - a.seats),
+      resolution: {
+        billNo: doc.resolution.billNo,
+        billName: doc.resolution.billName,
+        sessionLabel: doc.resolution.sessionLabel,
+        decidedDate: doc.resolution.decidedDate,
+        decidedDateLabel: doc.resolution.decidedDateLabel,
+        result: doc.resolution.result,
+      },
+      sourceTitle: src.title,
+      roster: ev(opt.roster.url, doc.rosterTitle ?? "会派別議員名簿"),
+      result: ev(opt.resolution.url, doc.resultTitle ?? `${doc.resolution.sessionLabel} 議決結果`),
+      minutesUrl: null,
+      newsletterUrl: null,
+    });
+  }
+  for (const [code, list] of Object.entries(muniCouncils) as [string, { fy: string }[]][]) {
+    // 同じ団体×年度が2本あると画面は先頭しか出さず、2本目が静かに消える
+    const dup = list.find((c, i) => list.findIndex((d) => d.fy === c.fy) !== i);
+    if (dup) throw new Error(`議会の構成 ${code} ${dup.fy}: 同じ年度の資料が2本あります（COUNCIL_SOURCES の重複）`);
+    list.sort((a, b) => Number(b.fy.slice(1)) - Number(a.fy.slice(1)));
+  }
   const councilOut = `// このファイルは自動生成です。手で編集しないこと。
 // 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
 // 出典: 甲府市議会 所属会派別議員名簿（各予算の議決時点のバージョン）＋各年3月定例会 審議結果。
@@ -947,14 +1017,16 @@ export interface CouncilEvidence {
   /** Wayback 魚拓（②） */
   archiveUrl: string;
 }
-export interface KofuCouncil {
+export interface Council {
   /** 予算年度（この議会が議決した当初予算の年度。"R8" など） */
   fy: string;
   fyLabel: string;
   /** 議会名 */
   body: string;
-  /** 定数（＝現員＝会派議席合計） */
+  /** 現員（＝会派議席合計）。甲府は定数＝現員 */
   seats: number;
+  /** 条例定数（原典で確かめた団体だけ。欠員があると seats より大きい） */
+  teisu?: number;
   /** 会派構成の基準日 ISO（名簿の更新日） */
   asOf: string;
   asOfLabel: string;
@@ -970,19 +1042,29 @@ export interface KofuCouncil {
   sourceTitle: string;
   roster: CouncilEvidence;
   result: CouncilEvidence;
-  minutesUrl: string;
-  newsletterUrl: string;
+  /** 参考リンク（会議録検索・議会だより）。甲府だけが持つ */
+  minutesUrl: string | null;
+  newsletterUrl: string | null;
 }
+/** 互換の別名（甲府） */
+export type KofuCouncil = Council;
 
 /** 甲府市議会の構成（予算議決時）。新しい年度順（R8→R2）。 */
-export const KOFU_COUNCIL_YEARS: KofuCouncil[] = ${JSON.stringify(councils, null, 2)};
+export const KOFU_COUNCIL_YEARS: Council[] = ${JSON.stringify(councils, null, 2)};
 
 /** 最新（R8）。年度未指定時のフォールバック。 */
-export const KOFU_COUNCIL: KofuCouncil = KOFU_COUNCIL_YEARS[0]!;
+export const KOFU_COUNCIL: Council = KOFU_COUNCIL_YEARS[0]!;
+
+/**
+ * 甲府以外の議会の構成（予算議決時）。団体コード → 新しい年度順。
+ * 会派と所属議員を名簿から書き写し、全員の氏名が原典の本文に出ることをパーサが確かめている
+ * （\`council-transcribed\`・docs/data-sources.md §6-2）。**年度が合わなければ出さない**（別年度の構成で代用しない）。
+ */
+export const MUNI_COUNCIL_YEARS: Record<string, Council[]> = ${JSON.stringify(muniCouncils, null, 2)};
 `;
   writeFileSync(join(process.cwd(), "src/client/lib/council.gen.ts"), councilOut, "utf8");
   console.log(
-    `✓ 議会の構成を導出 → src/client/lib/council.gen.ts（${councils.length}年度 ${councils.map((c) => `${c.fy}:${c.factions.length}会派`).join(" ")}）`,
+    `✓ 議会の構成を導出 → src/client/lib/council.gen.ts（甲府 ${councils.length}年度 ${councils.map((c) => `${c.fy}:${c.factions.length}会派`).join(" ")}／ほか ${Object.keys(muniCouncils).length}団体）`,
   );
 }
 
@@ -4006,7 +4088,7 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = ${JSON.stringif
   const { KOFU_BUDGET_YEARS } = await import("../src/client/lib/kofu.gen");
   const { KOFU_PROJECT_YEARS } = await import("../src/client/lib/projects.gen");
   const { KOFU_REPORT_YEARS } = await import("../src/client/lib/report.gen");
-  const { KOFU_COUNCIL_YEARS } = await import("../src/client/lib/council.gen");
+  const { KOFU_COUNCIL_YEARS, MUNI_COUNCIL_YEARS } = await import("../src/client/lib/council.gen");
   const { KOFU_EXECUTION_YEARS } = await import("../src/client/lib/execution.gen");
   const { KOFU_EVALUATION_YEARS } = await import("../src/client/lib/evaluations.gen");
   const { KOFU_OUTTURN_YEARS } = await import("../src/client/lib/outturn.gen");
@@ -4023,6 +4105,21 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = ${JSON.stringif
     );
   const { MUNI_BUDGET_INDEX, BUDGET_MUNIS } = await import("../src/client/lib/munibudgets.gen");
   const MUNI_BUDGET_YEARS = readMuniBudgetShards();
+  // 出口ゲート: 議会の構成は「表示年度と同じ年度」だけを画面に出すので、予算の収録年度に無い年度の
+  // 構成は**配信しても誰にも見えない**（静かに消える型）。団体が budget 階層に居ることもここで見る
+  for (const [code, list] of Object.entries(MUNI_COUNCIL_YEARS)) {
+    const ys = MUNI_BUDGET_YEARS[code];
+    if (!ys) throw new Error(`議会の構成 ${code}: budget 階層の団体ではありません（画面に出ない）`);
+    for (const c of list) {
+      if (!ys.some((y) => y.fy === c.fy)) {
+        throw new Error(`議会の構成 ${code} ${c.fy}: 当初予算にその年度が無いので画面に出ません`);
+      }
+      const name = MUNI_BUDGET_INDEX[code]?.muniName;
+      if (name && !c.body.startsWith(name)) {
+        throw new Error(`議会の構成 ${code}: 議会名「${c.body}」が団体名「${name}」で始まりません（団体コードの取り違え）`);
+      }
+    }
+  }
   const { PREF_CODES } = await import("../src/client/lib/decision-index.gen");
   const { DECISION_YEARS } = await import("../src/client/lib/decision-index.gen");
 
@@ -4085,6 +4182,7 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = ${JSON.stringif
     "kofu-zaisei-jokyo": "予算執行状況（速報）",
     "kofu-toukei-zaisei": "款別ドリルダウンの項テーブル（当初→最終→決算→執行率）",
     "kofu-gikai": "議会の構成（会派別議席・議決）",
+    "council-transcribed": "議会の構成（会派別議席・議決）",
     "kofu-gyousei-hyouka": "主な事業の評価バッジ",
     "kofu-jigyou-houkoku": "事業報告（成果）",
     "kawasaki-jigyou-hyouka": "事業報告（成果）",
@@ -4205,6 +4303,12 @@ export const BUDGET_DETAIL: Record<string, BudgetDetailYear[]> = ${JSON.stringif
         }
       }
       if ((mb.execution?.length ?? 0) > 0) d.execution = mb.execution!.map((e) => e.fyLabel).join("・");
+      // 議会の構成（予算議決時・council-transcribed）。**予算の収録年度に無い年度は数えない**
+      // （画面は表示年度と同じ年度の構成だけを出すので、/coverage もそれに合わせる）
+      {
+        const cs = (MUNI_COUNCIL_YEARS[k.code] ?? []).filter((c) => ys.some((y) => y.fy === c.fy));
+        if (cs.length) d.council = `${range(cs.map((c) => c.fy))}・議決つき`;
+      }
     }
     entityDetail[k.code] = {
       name: k.name, pref: k.pref, tier: isFull ? "full" : "budget", isPref: !!mb?.isPref,

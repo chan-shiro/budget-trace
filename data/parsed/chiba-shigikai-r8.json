@@ -1,0 +1,176 @@
+{
+  "docType": "council-composition",
+  "sourceId": "chiba-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.5",
+  "parsedAt": "2026-10-01T19:51:54.768Z",
+  "fiscalYear": "R8",
+  "body": "千葉市議会",
+  "seats": 50,
+  "asOf": "2025-04-07",
+  "teisu": 50,
+  "factions": [
+    {
+      "name": "自由民主党千葉市議会議員団",
+      "seats": 17,
+      "isIndependent": false,
+      "members": [
+        "前田健一郎",
+        "小松﨑文嘉",
+        "伊藤隆広",
+        "岳田雄亮",
+        "須藤博文",
+        "石川弘",
+        "阿部智",
+        "松坂吉則",
+        "植草毅",
+        "岩井雅夫",
+        "向後保雄",
+        "宇留間又衛門",
+        "中島賢治",
+        "三須和夫",
+        "石井茂隆",
+        "米持克彦",
+        "石橋毅"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "立憲民主・無所属千葉市議会議員団",
+      "seats": 11,
+      "isIndependent": false,
+      "members": [
+        "田畑直子",
+        "亀井琢磨",
+        "三井美和香",
+        "岡崎純子",
+        "小坂さとみ",
+        "渡辺忍",
+        "川合隆史",
+        "麻生紀雄",
+        "段木和彦",
+        "白鳥誠",
+        "三瓶輝枝"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "公明党千葉市議会議員団",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "森山和博",
+        "桜井秀夫",
+        "吉川英二",
+        "石川美香",
+        "茂呂一弘",
+        "青山雅紀",
+        "伊藤康平",
+        "酒井伸二"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "日本共産党千葉市議会議員団",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "中村公江",
+        "椛澤洋平",
+        "盛田眞弓",
+        "野島友介",
+        "安喰初美",
+        "佐々木友樹",
+        "野本信正"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "日本維新の会ちば",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "渡邊惟大",
+        "山崎真彦",
+        "守屋聡"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "無所属（黒澤和泉）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "黒澤和泉"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "無所属（大平真弘）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "大平真弘"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "無所属（蛭田浩文）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "蛭田浩文"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "無所属（櫻井崇）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "櫻井崇"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 9
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "15",
+    "billName": "令和8年度千葉市一般会計予算",
+    "sessionLabel": "令和8年第1回定例会",
+    "decidedDate": "2026-03-17",
+    "decidedDateLabel": "令和8年3月17日",
+    "result": "原案可決",
+    "locator": {
+      "file": "sichoteisyutu2601.html"
+    }
+  },
+  "rosterTitle": "会派別議員名簿（更新日 2025年4月7日）",
+  "resultTitle": "令和8年第1回定例会市長提出議案議決結果"
+}

@@ -67,6 +67,12 @@ export const rawFileMetaSchema = z.object({
   fetchedAt: z.string(), // ISO 8601
   /** 取得元URL、または "manual:<元ファイル名>"（手動投入） */
   fetchedFrom: z.string(),
+  /**
+   * 取得したバイト列に手を加えて持っているときの印（2026-10-02・議会の構成）。sha256 は**加えた後**のもの。
+   * - "gunzip": 魚拓（id_）が gzip の本文をそのまま返したので展開した（発行元が配ったのは展開後の HTML）
+   * - "ext:.html" / "ext:.pdf": URL に拡張子が無いので、中身を見てファイル名に付けた（ビューアは拡張子で見分ける）
+   */
+  transform: z.array(z.string()).optional(),
 });
 export const rawMetaSchema = z.object({
   sourceId: z.string(),
@@ -549,6 +555,11 @@ export const councilFactionFactSchema = z.object({
   seats: z.number().int().positive(),
   /** 無所属（会派に属さない議員）か */
   isIndependent: z.boolean(),
+  /**
+   * 所属議員の氏名（`council-transcribed` のみ）。名簿から書き写し、パーサが原典の本文に
+   * **全員の名前が出ること**を確かめている。議席数はこの人数（申告の人数ではない）。
+   */
+  members: z.array(z.string().min(1)).optional(),
   locator: locatorSchema,
 });
 export type CouncilFactionFact = z.infer<typeof councilFactionFactSchema>;
@@ -583,8 +594,18 @@ export const councilCompositionDocSchema = z.object({
   seats: z.number().int().positive(),
   /** 会派構成の基準日 ISO（名簿の更新日） */
   asOf: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  /**
+   * 条例定数（`council-transcribed` のみ・任意）。欠員があると `seats`（＝現員＝会派の和）より大きい。
+   * 原典で定数を確かめた団体だけが持つ（無い団体は「現員」とだけ表示する）。
+   */
+  teisu: z.number().int().positive().optional(),
   factions: z.array(councilFactionFactSchema),
+  /** 会派制を採らない議会（町村議会に多い）。factions は「会派なし」1件＝全議員 */
+  noFactions: z.boolean().optional(),
   resolution: councilResolutionSchema,
+  /** 名簿・議決結果の原典の呼び名（画面の出典チップ。`council-transcribed` のみ） */
+  rosterTitle: z.string().optional(),
+  resultTitle: z.string().optional(),
 });
 export type CouncilCompositionDoc = z.infer<typeof councilCompositionDocSchema>;
 

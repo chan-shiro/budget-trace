@@ -1,0 +1,43 @@
+{
+  "sourceId": "takasaki-shigikai-r8",
+  "files": [
+    {
+      "filename": "2244.html",
+      "sha256": "e9acbe0bdb51a0863f3dd0c1455294618a4cf73aaa72c5ae28d044075bdb2fe7",
+      "bytes": 22723,
+      "fetchedAt": "2026-10-01T16:59:04.928Z",
+      "fetchedFrom": "https://web.archive.org/web/20260307001842id_/https://www.city.takasaki.gunma.jp/site/gikai/2244.html"
+    },
+    {
+      "filename": "39050.pdf",
+      "sha256": "f97ef5b4c1f255088c43c745b2ed40ce2d3814af483eafa67edcf59620313924",
+      "bytes": 112814,
+      "fetchedAt": "2026-10-01T16:59:04.929Z",
+      "fetchedFrom": "https://www.city.takasaki.gunma.jp/uploaded/attachment/39050.pdf"
+    },
+    {
+      "filename": "g07_Video_Search.asp_kaigi_195_Sflg_1.html",
+      "sha256": "8cd3576a03642f6b4438c74c4727ce543e73c5f1cb8fab6db0940e13ff9e2121",
+      "bytes": 45439,
+      "fetchedAt": "2026-10-01T16:59:04.929Z",
+      "fetchedFrom": "https://takasaki.gijiroku.com/voices/g07_Video_Search.asp?kaigi=195&Sflg=1",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "39680.pdf",
+      "sha256": "08e229f174e74d1e261110ce2e6d6b552ed1b3ca39ee1baf123f8e82e37f06d6",
+      "bytes": 17970648,
+      "fetchedAt": "2026-10-01T16:59:04.945Z",
+      "fetchedFrom": "https://www.city.takasaki.gunma.jp/uploaded/attachment/39680.pdf"
+    },
+    {
+      "filename": "3792.html",
+      "sha256": "d26d965d5089fdc1a8607b71617016e30fdf6e1025f17241742e5a925aa8bf48",
+      "bytes": 23066,
+      "fetchedAt": "2026-10-01T16:59:04.946Z",
+      "fetchedFrom": "https://www.city.takasaki.gunma.jp/site/gikai/3792.html"
+    }
+  ]
+}

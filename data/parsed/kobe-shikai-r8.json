@@ -1,0 +1,212 @@
+{
+  "docType": "council-composition",
+  "sourceId": "kobe-shikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.5",
+  "parsedAt": "2026-10-01T19:51:53.446Z",
+  "fiscalYear": "R8",
+  "body": "神戸市会",
+  "seats": 64,
+  "asOf": "2026-01-27",
+  "teisu": 65,
+  "factions": [
+    {
+      "name": "自由民主党",
+      "seats": 15,
+      "isIndependent": false,
+      "members": [
+        "松本しゅうじ",
+        "坊池正",
+        "平井真千子",
+        "山口由美",
+        "河南忠和",
+        "しらくに高太郎",
+        "山下てんせい",
+        "植中雅子",
+        "吉田健吾",
+        "上畠寛弘",
+        "平野達司",
+        "大野陽平",
+        "村上立真",
+        "うえなか美貴子",
+        "浅井美佳"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "日本維新の会",
+      "seats": 12,
+      "isIndependent": false,
+      "members": [
+        "高橋としえ",
+        "住本かずのり",
+        "外海開三",
+        "三木しんじろう",
+        "黒田武志",
+        "山本のりかず",
+        "ながさわ淳一",
+        "さとうまちこ",
+        "平田正",
+        "原直樹",
+        "のまち圭一",
+        "岩谷しげなり"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 12,
+      "isIndependent": false,
+      "members": [
+        "吉田謙治",
+        "壬生潤",
+        "菅野吉記",
+        "堂下豊史",
+        "髙瀬勝也",
+        "徳山敏子",
+        "門田まゆみ",
+        "宮田公子",
+        "細谷典功",
+        "坂口有希子",
+        "萩原泰三",
+        "岩佐けんや"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 9,
+      "isIndependent": false,
+      "members": [
+        "松本のり子",
+        "森本真",
+        "大かわら鈴子",
+        "西ただす",
+        "赤田かつのり",
+        "味口としゆき",
+        "朝倉えつ子",
+        "森田たき子",
+        "前田あきら"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "こうべ未来",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "川内清尚",
+        "よこはた和幸",
+        "伊藤めぐみ",
+        "諫山大介",
+        "やのこうじ",
+        "かじ幸夫",
+        "木戸さだかず"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "新しい自民党",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "村野誠一",
+        "岡田ゆうじ"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "躍動の会",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "大井としひろ",
+        "川口まさる"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "つなぐ",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "あわはら富夫",
+        "香川真二"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "無所属（平野章三）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "平野章三"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 9
+      }
+    },
+    {
+      "name": "無所属（上原みなみ）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "上原みなみ"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 10
+      }
+    },
+    {
+      "name": "無所属（なんのゆうこ）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "なんのゆうこ"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 11
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "予算第1号議案",
+    "billName": "令和8年度神戸市一般会計予算",
+    "sessionLabel": "令和8年第1回定例市会",
+    "decidedDate": "2026-03-26",
+    "decidedDateLabel": "令和8年3月26日",
+    "result": "可決",
+    "locator": {
+      "file": "2gatsukekka.html"
+    }
+  },
+  "rosterTitle": "神戸市会 会派（最終更新日 2026年1月27日）",
+  "resultTitle": "2026年/令和8年第1回定例市会【2月議会】"
+}

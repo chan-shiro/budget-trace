@@ -1,0 +1,33 @@
+{
+  "sourceId": "hachinohe-shigikai-r8",
+  "files": [
+    {
+      "filename": "9032.html",
+      "sha256": "2a1f2cf6f0b17732312880cd81a448b2d6516036d9817df0718c85012b9bce7b",
+      "bytes": 49346,
+      "fetchedAt": "2026-10-01T16:54:08.314Z",
+      "fetchedFrom": "https://web.archive.org/web/20260216175742id_/https://www.city.hachinohe.aomori.jp/gyoseijoho/hachinoheshigikai/giinnoshokai/9032.html"
+    },
+    {
+      "filename": "R0803_giannsinnsakekkahyou.pdf",
+      "sha256": "df601d0ef1e1bba927f3e1a3bc3a3b8892f0aa6fc6a46c12aff6465eaf16a003",
+      "bytes": 163853,
+      "fetchedAt": "2026-10-01T16:54:08.314Z",
+      "fetchedFrom": "https://www.city.hachinohe.aomori.jp/material/files/group/80/R0803_giannsinnsakekkahyou.pdf"
+    },
+    {
+      "filename": "R0803_ggiinnbetusannpiitirann.pdf",
+      "sha256": "2d99718075ede00f61536732f50497b05feae0c300a9ac7eb2d7693c0b740430",
+      "bytes": 198672,
+      "fetchedAt": "2026-10-01T16:54:08.315Z",
+      "fetchedFrom": "https://www.city.hachinohe.aomori.jp/material/files/group/80/R0803_ggiinnbetusannpiitirann.pdf"
+    },
+    {
+      "filename": "25446.html",
+      "sha256": "b4a7fe5eb2ac4aa836411077e16d7fbc0699545b8b112197507de001f74cd47f",
+      "bytes": 64853,
+      "fetchedAt": "2026-10-01T16:54:08.315Z",
+      "fetchedFrom": "https://www.city.hachinohe.aomori.jp/gyoseijoho/hachinoheshigikai/shigikainogoannai/25446.html"
+    }
+  ]
+}

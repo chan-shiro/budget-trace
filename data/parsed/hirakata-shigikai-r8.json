@@ -1,0 +1,126 @@
+{
+  "docType": "council-composition",
+  "sourceId": "hirakata-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.5",
+  "parsedAt": "2026-10-01T19:51:58.164Z",
+  "fiscalYear": "R8",
+  "body": "枚方市議会",
+  "seats": 32,
+  "asOf": "2026-02-01",
+  "teisu": 32,
+  "factions": [
+    {
+      "name": "自由民主党・無所属の会",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "前田富枝",
+        "田口敬規",
+        "長友克由",
+        "松本佑介",
+        "妹尾正信"
+      ],
+      "locator": {
+        "file": "361.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "日本共産党議員団",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "堤幸子",
+        "広瀬ひとみ",
+        "松岡ちひろ",
+        "三和智之"
+      ],
+      "locator": {
+        "file": "361.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "連合市民の会",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "野村生代",
+        "八尾善之",
+        "奥野美佳",
+        "番匠映仁",
+        "大津真沙樹"
+      ],
+      "locator": {
+        "file": "361.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "大阪維新の会枚方市議会議員団",
+      "seats": 9,
+      "isIndependent": false,
+      "members": [
+        "泉大介",
+        "鍜治谷知宏",
+        "高野寿陛",
+        "岡市栄次郎",
+        "門川紘幸",
+        "小池晶子",
+        "大濱暢祐",
+        "佐田あゆ美",
+        "志甫直哉"
+      ],
+      "locator": {
+        "file": "361.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "公明党議員団",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "丹生真人",
+        "大地正広",
+        "藤田幸久",
+        "田中優子",
+        "一原明美",
+        "千葉雅民",
+        "東実名子",
+        "峠賢一"
+      ],
+      "locator": {
+        "file": "361.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "命を守る政治の会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "漆原周義"
+      ],
+      "locator": {
+        "file": "361.pdf",
+        "page": 1
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第84号",
+    "billName": "令和８年度大阪府枚方市一般会計予算",
+    "sessionLabel": "令和８年３月定例月議会",
+    "decidedDate": "2026-03-27",
+    "decidedDateLabel": "令和8年3月27日",
+    "result": "原案可決",
+    "locator": {
+      "file": "20260327_giketsukekka.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "枚方市議会報第361号（令和8年2月1日号）会派等所属別議員名",
+  "resultTitle": "付議事件議決結果一覧（令和8年3月定例月議会）"
+}

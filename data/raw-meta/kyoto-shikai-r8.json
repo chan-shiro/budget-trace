@@ -1,0 +1,54 @@
+{
+  "sourceId": "kyoto-shikai-r8",
+  "files": [
+    {
+      "filename": "jimin-kyoto.html",
+      "sha256": "4d98f81357de4381c7d0ab52a42ef1fa049dfc3b90259d2159ca636986ef4b51",
+      "bytes": 14454,
+      "fetchedAt": "2026-10-01T15:24:41.410Z",
+      "fetchedFrom": "https://www2.city.kyoto.lg.jp/shikai/meibo/kaiha/jimin-kyoto.html"
+    },
+    {
+      "filename": "ishin-kyoto-kokumin.html",
+      "sha256": "8720fd85609fec6d6147e317d7d6c7a8b7f6013e7d273d5931b7e7cea8926f48",
+      "bytes": 13978,
+      "fetchedAt": "2026-10-01T15:24:41.761Z",
+      "fetchedFrom": "https://www2.city.kyoto.lg.jp/shikai/meibo/kaiha/ishin-kyoto-kokumin.html"
+    },
+    {
+      "filename": "kyosan-kyoto.html",
+      "sha256": "e39f78160d0d14d7e2f58af1fbea467d35406debacdd69b680df8cf97761c43c",
+      "bytes": 13335,
+      "fetchedAt": "2026-10-01T15:24:42.104Z",
+      "fetchedFrom": "https://www2.city.kyoto.lg.jp/shikai/meibo/kaiha/kyosan-kyoto.html"
+    },
+    {
+      "filename": "koumei-kyoto.html",
+      "sha256": "3a8cebb04dd3cd2d931b994fda3c179599f8e4f34520ae86023fada5b6152dcf",
+      "bytes": 13658,
+      "fetchedAt": "2026-10-01T15:24:42.441Z",
+      "fetchedFrom": "https://www2.city.kyoto.lg.jp/shikai/meibo/kaiha/koumei-kyoto.html"
+    },
+    {
+      "filename": "mushozoku.html",
+      "sha256": "9ddcc3788e7c474230c165e8062b993689a847216c9c1e1898c044ddbb6d7cec",
+      "bytes": 14937,
+      "fetchedAt": "2026-10-01T15:24:42.785Z",
+      "fetchedFrom": "https://www2.city.kyoto.lg.jp/shikai/meibo/kaiha/mushozoku.html"
+    },
+    {
+      "filename": "gian2.html",
+      "sha256": "db112beaafe30002e17b41e15611a655181f3bcc21d62202f5dd02954968d61b",
+      "bytes": 175070,
+      "fetchedAt": "2026-10-01T15:24:43.156Z",
+      "fetchedFrom": "https://www2.city.kyoto.lg.jp/shikai/honkaigi/R07/gian2.html"
+    },
+    {
+      "filename": "kousei.html",
+      "sha256": "4124299e57db8d6feb59acad845d643c6f033e7fded5289bec296b4f76296799",
+      "bytes": 12544,
+      "fetchedAt": "2026-10-01T15:24:43.498Z",
+      "fetchedFrom": "https://www2.city.kyoto.lg.jp/shikai/shikumi/kousei.html"
+    }
+  ]
+}

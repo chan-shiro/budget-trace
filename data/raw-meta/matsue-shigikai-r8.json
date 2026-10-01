@@ -1,0 +1,40 @@
+{
+  "sourceId": "matsue-shigikai-r8",
+  "files": [
+    {
+      "filename": "kaihabetsumeibo20250425.pdf",
+      "sha256": "107afc94763ac24be0220ae498606e0950469840079d1a068f2b6e7953eb972f",
+      "bytes": 66015,
+      "fetchedAt": "2026-10-01T16:54:23.284Z",
+      "fetchedFrom": "https://web.archive.org/web/20250426010046id_/https://www.city.matsue.lg.jp/material/files/group/107/kaihabetsumeibo20250425.pdf"
+    },
+    {
+      "filename": "r8_3_26giantouitiran.pdf",
+      "sha256": "76a75112d828fc993b48b715b43339b818f1f497aa511e8f20b5b30620bb29c5",
+      "bytes": 92026,
+      "fetchedAt": "2026-10-01T16:54:23.284Z",
+      "fetchedFrom": "https://www.city.matsue.lg.jp/material/files/group/108/r8_3_26giantouitiran.pdf"
+    },
+    {
+      "filename": "r8_0326_giinbetuhyouketukekka.pdf",
+      "sha256": "3670526f372f3162c95b8d3b654ed5387263ec7dfea1522b901e8d07af34b73b",
+      "bytes": 167662,
+      "fetchedAt": "2026-10-01T16:54:23.285Z",
+      "fetchedFrom": "https://www.city.matsue.lg.jp/material/files/group/108/r8_0326_giinbetuhyouketukekka.pdf"
+    },
+    {
+      "filename": "4161.html",
+      "sha256": "5f42272ca73030827cc41428fa3f4b6376de62b7e5ad90c0b1ad3138f938b739",
+      "bytes": 43653,
+      "fetchedAt": "2026-10-01T16:54:23.285Z",
+      "fetchedFrom": "https://web.archive.org/web/20260125130231id_/https://www.city.matsue.lg.jp/soshikikarasagasu/gikaijimukyoku_somuka/matsueshigikai/1/4161.html"
+    },
+    {
+      "filename": "2874.html",
+      "sha256": "90d1cc1deac7015a3f6a5047f7332139da563da4c833300f77b0cdb2eda5566e",
+      "bytes": 64317,
+      "fetchedAt": "2026-10-01T16:54:23.285Z",
+      "fetchedFrom": "https://web.archive.org/web/20260125121917id_/https://www.city.matsue.lg.jp/soshikikarasagasu/gikaijimukyoku_gijichosaka/matsueshigikai/1/2874.html"
+    }
+  ]
+}

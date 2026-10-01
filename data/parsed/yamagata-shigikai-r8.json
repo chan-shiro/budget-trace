@@ -1,0 +1,125 @@
+{
+  "docType": "council-composition",
+  "sourceId": "yamagata-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.5",
+  "parsedAt": "2026-10-01T19:51:55.815Z",
+  "fiscalYear": "R8",
+  "body": "山形市議会",
+  "seats": 33,
+  "asOf": "2025-04-16",
+  "factions": [
+    {
+      "name": "新翔会",
+      "seats": 13,
+      "isIndependent": false,
+      "members": [
+        "浅野弥史",
+        "仁藤俊",
+        "佐藤清徳",
+        "井上和行",
+        "安久津優",
+        "高橋正樹",
+        "高野英昭",
+        "石山廣昭",
+        "鈴木進",
+        "田中英子",
+        "中野信吾",
+        "長谷川幸司",
+        "鈴木善太郎"
+      ],
+      "locator": {
+        "file": "1001203.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "緑政会",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "渋江朋博",
+        "武田聡",
+        "小野仁",
+        "渡辺元",
+        "斎藤淳一"
+      ],
+      "locator": {
+        "file": "1001203.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "未来やまがた",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "髙橋昭弘",
+        "荒井拓也",
+        "髙橋康輔",
+        "長澤愛",
+        "遠藤吉久"
+      ],
+      "locator": {
+        "file": "1001203.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "山形市議会公明党",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "武田新世",
+        "松田孝男",
+        "中川智子"
+      ],
+      "locator": {
+        "file": "1001203.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "令政会",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "高橋公夫",
+        "斉藤栄治",
+        "小田賢嗣"
+      ],
+      "locator": {
+        "file": "1001203.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "会派に属さない議員",
+      "seats": 4,
+      "isIndependent": true,
+      "members": [
+        "阿曽隆",
+        "佐藤亜希子",
+        "菊地健太郎",
+        "丸子善弘"
+      ],
+      "locator": {
+        "file": "1001203.html",
+        "row": 6
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議第8号",
+    "billName": "令和8年度山形市一般会計予算",
+    "sessionLabel": "令和8年3月市議会定例会",
+    "decidedDate": "2026-03-24",
+    "decidedDateLabel": "令和8年3月24日",
+    "result": "原案のとおり可決",
+    "locator": {
+      "file": "1018030.html"
+    }
+  },
+  "rosterTitle": "会派（更新日 令和7年4月16日）",
+  "resultTitle": "議決議案一覧（令和8年3月定例会）"
+}

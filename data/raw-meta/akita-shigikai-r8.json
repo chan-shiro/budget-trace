@@ -1,0 +1,26 @@
+{
+  "sourceId": "akita-shigikai-r8",
+  "files": [
+    {
+      "filename": "1001185.html",
+      "sha256": "741dfcef86021108c47d2d0382ebba9b5f554c0e735b20f78b4259b7872c87be",
+      "bytes": 24257,
+      "fetchedAt": "2026-10-01T16:54:43.245Z",
+      "fetchedFrom": "https://web.archive.org/web/20251108061321id_/https://www.city.akita.lg.jp/shigikai/giin/1001185.html"
+    },
+    {
+      "filename": "r080317sanpi.pdf",
+      "sha256": "055c3a785290c38bad2aa5e68babbd1a100b71586890a747f3db636037d3174e",
+      "bytes": 150864,
+      "fetchedAt": "2026-10-01T16:54:43.246Z",
+      "fetchedFrom": "https://www.city.akita.lg.jp/_res/projects/default_project/_page_/001/049/806/r080317sanpi.pdf"
+    },
+    {
+      "filename": "1049804.html",
+      "sha256": "16a15f00e4c75888192031ab3ec600eb68cb8acc41cf7a0c85caa7393db0f5bf",
+      "bytes": 47367,
+      "fetchedAt": "2026-10-01T16:54:43.246Z",
+      "fetchedFrom": "https://www.city.akita.lg.jp/shigikai/nittei/1049305/1049801/1049804.html"
+    }
+  ]
+}

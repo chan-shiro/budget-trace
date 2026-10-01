@@ -1,0 +1,36 @@
+{
+  "sourceId": "kobe-shikai-r8",
+  "files": [
+    {
+      "filename": "kaiha.html",
+      "sha256": "7a0336df0839afe0d4a3842a1fcf50bf295f41824949f9bc926784f2fd3a7d01",
+      "bytes": 25981,
+      "fetchedAt": "2026-10-01T15:48:54.038Z",
+      "fetchedFrom": "https://web.archive.org/web/20260309125942id_/https://www.city.kobe.lg.jp/a71064/shise/municipal/giinnmeibo/kaiha.html"
+    },
+    {
+      "filename": "2gatsukekka.html",
+      "sha256": "c880d7ee9bbc5dcc8205da53474790b41ae8cbc8646c8096c64916deb4ca982b",
+      "bytes": 70468,
+      "fetchedAt": "2026-10-01T15:48:54.039Z",
+      "fetchedFrom": "https://www.city.kobe.lg.jp/z/shikaijimukyoku/giann_etc/r8/2gatsukekka.html"
+    },
+    {
+      "filename": "20260326_sanpiichiran2.pdf",
+      "sha256": "b0bb3e5710798668bc990fe88923af72cf54ebaae7ea5ed48a8b4a5585208a57",
+      "bytes": 187589,
+      "fetchedAt": "2026-10-01T15:48:54.040Z",
+      "fetchedFrom": "https://www.city.kobe.lg.jp/documents/83465/20260326_sanpiichiran2.pdf"
+    },
+    {
+      "filename": "shikai.city.kobe.lg.jp.html",
+      "sha256": "e7589f3d6b06fa053269c8378dcca493af4ea66d7dbe304615b260b8c010fcfd",
+      "bytes": 69634,
+      "fetchedAt": "2026-10-01T15:48:54.041Z",
+      "fetchedFrom": "https://web.archive.org/web/20260314094250id_/https://shikai.city.kobe.lg.jp/",
+      "transform": [
+        "ext:.html"
+      ]
+    }
+  ]
+}

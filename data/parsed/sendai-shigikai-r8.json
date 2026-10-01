@@ -1,0 +1,203 @@
+{
+  "docType": "council-composition",
+  "sourceId": "sendai-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.5",
+  "parsedAt": "2026-10-01T19:51:54.687Z",
+  "fiscalYear": "R8",
+  "body": "仙台市議会",
+  "seats": 55,
+  "asOf": "2025-08-27",
+  "teisu": 55,
+  "factions": [
+    {
+      "name": "自由民主党",
+      "seats": 13,
+      "isIndependent": false,
+      "members": [
+        "加藤和彦",
+        "高橋たくみ",
+        "佐々木心",
+        "千葉修平",
+        "猪又隆広",
+        "内藤良介",
+        "西澤啓文",
+        "赤間次彦",
+        "鈴木勇治",
+        "野田譲",
+        "庄司俊充",
+        "橋本啓一",
+        "千葉ようすけ"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "公明党仙台市議団",
+      "seats": 9,
+      "isIndependent": false,
+      "members": [
+        "鎌田城行",
+        "佐藤幸雄",
+        "小野寺利裕",
+        "小田島久美子",
+        "佐藤和子",
+        "佐々木真由美",
+        "竹中栄雄",
+        "嶋中貴志",
+        "鈴木広康"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "市民フォーラム仙台",
+      "seats": 9,
+      "isIndependent": false,
+      "members": [
+        "沼沢しんや",
+        "ごうこ正太郎",
+        "貞宗けんじ",
+        "山下純",
+        "安孫子雅浩",
+        "村上かずひこ",
+        "加藤けんいち",
+        "鈴木すみえ",
+        "ごとう咲子"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "日本共産党仙台市議団",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "花木則彰",
+        "ふるくぼ和子",
+        "高見のり子",
+        "すげの直子",
+        "高村直也",
+        "吉田ごう"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "せんだい自民・参政の会",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "跡部薫",
+        "菊地崇良",
+        "田村勝",
+        "大河原ふゆこ",
+        "斎藤範夫",
+        "佐藤正昭"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "立憲民主党仙台",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "石川建治",
+        "辻隆一",
+        "ひぐちのりこ",
+        "いのまた由美"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "仙台維新",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "仁平覚子",
+        "早坂千亜紀",
+        "東城ひろみ"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "維新の会仙台市議団",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "福田ようすけ",
+        "関戸努"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "心豊かな社会をつくる会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "大草よしえ"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 9
+      }
+    },
+    {
+      "name": "市民の会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "伊藤ゆうた"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 10
+      }
+    },
+    {
+      "name": "自由民主党フォーラム",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "渡辺博"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 11
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第十四号議案",
+    "billName": "令和八年度仙台市一般会計予算",
+    "sessionLabel": "令和８年第１回定例会",
+    "decidedDate": "2026-03-12",
+    "decidedDateLabel": "令和8年3月12日",
+    "result": "可決",
+    "locator": {
+      "file": "5286956_Template_view_VoiceType_all_DocumentID_3681.html"
+    }
+  },
+  "rosterTitle": "会派別議員名簿（令和7年8月27日現在）",
+  "resultTitle": "仙台市議会会議録 令和8年第1回定例会（第7日目）本文"
+}

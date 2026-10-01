@@ -1,0 +1,158 @@
+{
+  "docType": "council-composition",
+  "sourceId": "oita-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.5",
+  "parsedAt": "2026-10-01T19:52:01.796Z",
+  "fiscalYear": "R8",
+  "body": "大分市議会",
+  "seats": 43,
+  "asOf": "2026-03-26",
+  "factions": [
+    {
+      "name": "自由民主党",
+      "seats": 13,
+      "isIndependent": false,
+      "members": [
+        "大津將嘉",
+        "平本泉",
+        "牧貴宏",
+        "進義和",
+        "長野辰生",
+        "倉掛賢裕",
+        "田島寛信",
+        "二宮博",
+        "藤田敬治",
+        "永松弘基",
+        "板倉永紀",
+        "仲道俊寿",
+        "秦野恭義"
+      ],
+      "locator": {
+        "file": "giketukekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "地域政党おおいた。",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "直野里子",
+        "衛藤延洋"
+      ],
+      "locator": {
+        "file": "giketukekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "斉藤由美子",
+        "岩崎貴博"
+      ],
+      "locator": {
+        "file": "giketukekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無所属（高松大樹）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "高松大樹"
+      ],
+      "locator": {
+        "file": "giketukekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "ネットワークみらい",
+      "seats": 10,
+      "isIndependent": false,
+      "members": [
+        "成迫研太",
+        "野上恵子",
+        "うつのみや陽子",
+        "馬見塚剛",
+        "甲斐高之",
+        "スカルリーパー・エイジ",
+        "帆秋誠悟",
+        "宮邉和弘",
+        "髙野博幸",
+        "日小田良二"
+      ],
+      "locator": {
+        "file": "giketukekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "Ｏｉｔａ市民クラブ",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "岩川義枝",
+        "野尻哲雄"
+      ],
+      "locator": {
+        "file": "giketukekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "新市民クラブ",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "吉川直樹",
+        "阿部邦彦",
+        "堤英貴",
+        "堀嘉徳",
+        "大石祥一",
+        "仲家孝治",
+        "高橋弘巳"
+      ],
+      "locator": {
+        "file": "giketukekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "安東美奈子",
+        "平田友章",
+        "橋本敬広",
+        "川邉浩子",
+        "国宗浩",
+        "今山裕之"
+      ],
+      "locator": {
+        "file": "giketukekka.pdf",
+        "page": 1
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議第１号",
+    "billName": "令和８年度大分市一般会計予算",
+    "sessionLabel": "令和８年第１回定例会",
+    "decidedDate": "2026-03-26",
+    "decidedDateLabel": "令和8年3月26日",
+    "result": "可決（多数）",
+    "locator": {
+      "file": "giketukekka.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "令和８年第１回定例会 議決結果賛否一覧表（会派・議員名〔議席番号順〕の列見出し）",
+  "resultTitle": "令和８年第１回定例会 議決結果賛否一覧表"
+}

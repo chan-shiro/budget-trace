@@ -1,0 +1,161 @@
+{
+  "docType": "council-composition",
+  "sourceId": "okayama-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.5",
+  "parsedAt": "2026-10-01T19:51:53.525Z",
+  "fiscalYear": "R8",
+  "body": "岡山市議会",
+  "seats": 46,
+  "asOf": "2025-10-06",
+  "teisu": 46,
+  "factions": [
+    {
+      "name": "公明党岡山市議団",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "則武宣弘",
+        "松田安義",
+        "福吉智徳",
+        "林敏宏",
+        "平元道隆",
+        "桑田桂子",
+        "長岡将克",
+        "早野賢一"
+      ],
+      "locator": {
+        "file": "0000015562.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "日本共産党岡山市議団",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "林潤",
+        "田中のぞみ",
+        "東毅",
+        "宿女和子"
+      ],
+      "locator": {
+        "file": "0000015562.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "自由民主党岡山市議会",
+      "seats": 23,
+      "isIndependent": false,
+      "members": [
+        "宮武博",
+        "難波満津留",
+        "柳井弘",
+        "岡崎隆",
+        "三木亮治",
+        "和氣健",
+        "田口裕士",
+        "成本俊一",
+        "小川信幸",
+        "藤原哲之",
+        "森田卓司",
+        "吉本賢二",
+        "赤木一雄",
+        "二嶋宣人",
+        "川本浩一郎",
+        "山田正幸",
+        "松田隆之",
+        "松本好厚",
+        "花岡栄太郎",
+        "江田厚志",
+        "大月晴一",
+        "安東真理",
+        "髙橋誠一郎"
+      ],
+      "locator": {
+        "file": "0000015562.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "懐かしい未来",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "森山幸治",
+        "川上智美"
+      ],
+      "locator": {
+        "file": "0000015562.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "みらいえ",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "鬼木のぞみ",
+        "土田貴行",
+        "高成壯磨"
+      ],
+      "locator": {
+        "file": "0000015562.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "おかやま創政会",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "高橋雄大",
+        "太田栄司",
+        "柳迫和夫",
+        "小林寿雄"
+      ],
+      "locator": {
+        "file": "0000015562.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "おかやま未来プロジェクト",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "中島純"
+      ],
+      "locator": {
+        "file": "0000015562.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "日本維新の会岡山市議団",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "前島慶太"
+      ],
+      "locator": {
+        "file": "0000015562.html",
+        "row": 8
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "甲第4号議案",
+    "billName": "令和8年度岡山市一般会計予算について",
+    "sessionLabel": "2月定例市議会",
+    "decidedDate": "2026-03-17",
+    "decidedDateLabel": "令和8年3月17日",
+    "result": "原案可決",
+    "locator": {
+      "file": "0000078927.html"
+    }
+  },
+  "rosterTitle": "会派別一覧（令和7年10月6日現在）",
+  "resultTitle": "2月定例市議会議決結果（令和8年3月17日議決）"
+}

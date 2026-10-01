@@ -1,0 +1,215 @@
+{
+  "docType": "council-composition",
+  "sourceId": "kyoto-shikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.5",
+  "parsedAt": "2026-10-01T19:51:53.244Z",
+  "fiscalYear": "R8",
+  "body": "京都市会",
+  "seats": 67,
+  "asOf": "2026-02-18",
+  "teisu": 67,
+  "factions": [
+    {
+      "name": "自由民主党京都市会議員団",
+      "seats": 19,
+      "isIndependent": false,
+      "members": [
+        "橋村芳和",
+        "さくらい泰広",
+        "井上よしひろ",
+        "加藤昌洋",
+        "しまもと京司",
+        "下村あきら",
+        "田中明秀",
+        "田中たかのり",
+        "谷口みゆき",
+        "津田大三",
+        "寺田一博",
+        "富きくお",
+        "西村義直",
+        "平山たかお",
+        "みちはた弘之",
+        "椋田隆知",
+        "森田守",
+        "山本恵一",
+        "山本しゅうじ"
+      ],
+      "locator": {
+        "file": "jimin-kyoto.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "維新・京都・国民市会議員団",
+      "seats": 16,
+      "isIndependent": false,
+      "members": [
+        "江村理紗",
+        "中野洋一",
+        "宇佐美賢一",
+        "大津裕太",
+        "おんづか功",
+        "片桐直哉",
+        "神谷修平",
+        "河村諒",
+        "北尾ゆか",
+        "北川みき",
+        "久保田正紀",
+        "こうち大輔",
+        "中高しゅうじ",
+        "土方莉紗",
+        "森かれん",
+        "もりもと英靖"
+      ],
+      "locator": {
+        "file": "jimin-kyoto.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "日本共産党京都市会議員団",
+      "seats": 14,
+      "isIndependent": false,
+      "members": [
+        "西野さち子",
+        "北山ただお",
+        "赤阪仁",
+        "えもとかよこ",
+        "加藤あい",
+        "河合ようこ",
+        "くらた共子",
+        "玉本なるみ",
+        "とがし豊",
+        "平井良人",
+        "森田ゆみ子",
+        "山田こうじ",
+        "やまね智史",
+        "山本陽子"
+      ],
+      "locator": {
+        "file": "jimin-kyoto.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "公明党京都市会議員団",
+      "seats": 11,
+      "isIndependent": false,
+      "members": [
+        "青野仁志",
+        "かわしま優子",
+        "くまざわ真昭",
+        "中村まり",
+        "西山信昌",
+        "兵藤しんいち",
+        "平山よしかず",
+        "増成竜治",
+        "松田けい子",
+        "湯浅光彦",
+        "吉田孝雄"
+      ],
+      "locator": {
+        "file": "jimin-kyoto.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "無所属（天方ひろゆき）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "天方ひろゆき"
+      ],
+      "locator": {
+        "file": "jimin-kyoto.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "無所属（井﨑敦子）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "井﨑敦子"
+      ],
+      "locator": {
+        "file": "jimin-kyoto.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "無所属（きくち一秀）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "きくち一秀"
+      ],
+      "locator": {
+        "file": "jimin-kyoto.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "無所属（小島信太郎）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "小島信太郎"
+      ],
+      "locator": {
+        "file": "jimin-kyoto.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "無所属（繁隆夫）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "繁隆夫"
+      ],
+      "locator": {
+        "file": "jimin-kyoto.html",
+        "row": 9
+      }
+    },
+    {
+      "name": "無所属（菅谷浩平）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "菅谷浩平"
+      ],
+      "locator": {
+        "file": "jimin-kyoto.html",
+        "row": 10
+      }
+    },
+    {
+      "name": "無所属（平田圭）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "平田圭"
+      ],
+      "locator": {
+        "file": "jimin-kyoto.html",
+        "row": 11
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議1",
+    "billName": "令和8年度京都市一般会計予算",
+    "sessionLabel": "令和8年2月市会",
+    "decidedDate": "2026-03-24",
+    "decidedDateLabel": "令和8年3月24日",
+    "result": "可決",
+    "locator": {
+      "file": "gian2.html"
+    }
+  },
+  "rosterTitle": "会派別名簿（最終更新日 令和8年2月3日・2月18日）",
+  "resultTitle": "議案・審議結果（令和8年2月市会）"
+}

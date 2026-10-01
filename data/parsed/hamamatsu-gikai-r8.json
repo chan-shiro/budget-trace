@@ -1,0 +1,148 @@
+{
+  "docType": "council-composition",
+  "sourceId": "hamamatsu-gikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.5",
+  "parsedAt": "2026-10-01T19:51:53.082Z",
+  "fiscalYear": "R8",
+  "body": "浜松市議会",
+  "seats": 44,
+  "asOf": "2026-01-20",
+  "factions": [
+    {
+      "name": "自由民主党浜松",
+      "seats": 23,
+      "isIndependent": false,
+      "members": [
+        "渥美誠",
+        "井田博康",
+        "太田康隆",
+        "小野田康弘",
+        "加茂俊武",
+        "神間郁子",
+        "久米丈二",
+        "倉田清一",
+        "小泉翠",
+        "齋藤和志",
+        "鈴木裕之",
+        "須藤京子",
+        "髙林修",
+        "辻村公子",
+        "露木里江子",
+        "戸田誠",
+        "鳥井德孝",
+        "中野和幸",
+        "花井和夫",
+        "平野岳子",
+        "藤田典良",
+        "松本康夫",
+        "栁川樹一郎"
+      ],
+      "locator": {
+        "file": "meibokaiha.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "市民クラブ",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "石津陽子",
+        "岩田邦泰",
+        "大城七瀬",
+        "斉藤晴明",
+        "鈴木真人",
+        "花井洋介"
+      ],
+      "locator": {
+        "file": "meibokaiha.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "黒田豊",
+        "幸田惠里子",
+        "松下正行",
+        "丸英之",
+        "山崎とし子"
+      ],
+      "locator": {
+        "file": "meibokaiha.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "創造浜松・国民民主党浜松",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "太田利実保",
+        "湖東秀隆",
+        "関イチロー",
+        "遠山将吾",
+        "森田賢児"
+      ],
+      "locator": {
+        "file": "meibokaiha.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "日本共産党浜松市議団",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "小黒啓子",
+        "北島定",
+        "酒井豊実"
+      ],
+      "locator": {
+        "file": "meibokaiha.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "浜松市政向上委員会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "鈴木恵"
+      ],
+      "locator": {
+        "file": "meibokaiha.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "市民サポート浜松",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "馬塚彩矢香"
+      ],
+      "locator": {
+        "file": "meibokaiha.html",
+        "row": 7
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第42号議案",
+    "billName": "令和8年度浜松市一般会計予算",
+    "sessionLabel": "令和8年第1回浜松市議会定例会",
+    "decidedDate": "2026-03-23",
+    "decidedDateLabel": "令和8年3月23日",
+    "result": "原案可決",
+    "locator": {
+      "file": "giketukekkaitirann.pdf",
+      "page": 2
+    }
+  },
+  "rosterTitle": "会派別名簿（更新日 2026年1月20日）",
+  "resultTitle": "令和8年第1回浜松市議会定例会 会議議決結果（全議案）"
+}

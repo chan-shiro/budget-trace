@@ -1,0 +1,26 @@
+{
+  "sourceId": "kawasaki-gikai-r8",
+  "files": [
+    {
+      "filename": "40-3-4-0-0-0-0-0-0-0.html",
+      "sha256": "d49cdf8baf65b075029a249449fa655bb5544bd0d89192f51c56bdcc6f0c3b5a",
+      "bytes": 56064,
+      "fetchedAt": "2026-10-01T15:50:47.093Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/shisei/category/40-3-4-0-0-0-0-0-0-0.html"
+    },
+    {
+      "filename": "0318sityou.pdf",
+      "sha256": "38acd19731cf9fdbd96249128ba5088e0c0d56b7a1f2404457dffad8e0e0458c",
+      "bytes": 425698,
+      "fetchedAt": "2026-10-01T15:50:47.095Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/980/cmsfiles/contents/0000183/183782/0318sityou.pdf"
+    },
+    {
+      "filename": "8-1kaigikekka-2.pdf",
+      "sha256": "2280f542a1ffb68da4f406456a2e77565991cc99525e4176abf7d53fd02df278",
+      "bytes": 124265,
+      "fetchedAt": "2026-10-01T15:50:47.095Z",
+      "fetchedFrom": "https://www.city.kawasaki.jp/980/cmsfiles/contents/0000183/183782/8-1kaigikekka-2.pdf"
+    }
+  ]
+}

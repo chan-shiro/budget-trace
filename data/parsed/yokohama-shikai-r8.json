@@ -1,0 +1,268 @@
+{
+  "docType": "council-composition",
+  "sourceId": "yokohama-shikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.5",
+  "parsedAt": "2026-10-01T19:51:55.055Z",
+  "fiscalYear": "R8",
+  "body": "横浜市会",
+  "seats": 86,
+  "asOf": "2026-01-27",
+  "teisu": 86,
+  "factions": [
+    {
+      "name": "自由民主党",
+      "seats": 32,
+      "isIndependent": false,
+      "members": [
+        "関勝則",
+        "伊波俊之助",
+        "大桑正貴",
+        "横山勇太朗",
+        "青木亮祐",
+        "東みちよ",
+        "磯部圭太",
+        "おさかべさやか",
+        "鴨志田啓介",
+        "川口広",
+        "黒川勝",
+        "小松範昭",
+        "佐藤茂",
+        "佐藤祐文",
+        "斉藤達也",
+        "酒井誠",
+        "清水富雄",
+        "渋谷健",
+        "白井亮次",
+        "鈴木太郎",
+        "瀬之間康浩",
+        "田野井一雄",
+        "長谷川琢磨",
+        "福地茂",
+        "伏見幸枝",
+        "藤代哲夫",
+        "増永純女",
+        "松本研",
+        "山下正人",
+        "山田一誠",
+        "横山正人",
+        "渡邊忠則"
+      ],
+      "locator": {
+        "file": "kaihabetsu.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 15,
+      "isIndependent": false,
+      "members": [
+        "斉藤伸一",
+        "行田朝仁",
+        "望月康弘",
+        "安西英俊",
+        "市来栄美子",
+        "尾崎太",
+        "木内秀一",
+        "久保和弘",
+        "髙橋正治",
+        "竹内康洋",
+        "武田勝久",
+        "竹野内猛",
+        "中島光徳",
+        "仁田昌寿",
+        "福島直子"
+      ],
+      "locator": {
+        "file": "kaihabetsu.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "立憲民主党・無所属の会",
+      "seats": 12,
+      "isIndependent": false,
+      "members": [
+        "大岩真善和",
+        "藤崎浩太郎",
+        "越久田記子",
+        "かざまあさみ",
+        "田中ゆき",
+        "髙田修平",
+        "中山大輔",
+        "花上喜代志",
+        "麓理恵",
+        "森ひろたか",
+        "谷田部孝一",
+        "山浦英太"
+      ],
+      "locator": {
+        "file": "kaihabetsu.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "日本維新の会・無所属の会",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "坂井太",
+        "伊藤くみこ",
+        "くしだ久子",
+        "いそべ尚哉",
+        "大山しょうじ",
+        "柏原すぐる",
+        "田中紳一"
+      ],
+      "locator": {
+        "file": "kaihabetsu.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "国民民主党",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "こがゆ康弘",
+        "熊本ちひろ",
+        "坂本勝司",
+        "深作祐衣",
+        "二井くみよ",
+        "横溝じゅん子"
+      ],
+      "locator": {
+        "file": "kaihabetsu.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "古谷靖彦",
+        "白井正子",
+        "宇佐美さやか",
+        "大和田あきお",
+        "みわ智恵美"
+      ],
+      "locator": {
+        "file": "kaihabetsu.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "地域政党よこはま",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "山田桂一郎",
+        "関嵩史"
+      ],
+      "locator": {
+        "file": "kaihabetsu.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "無所属（太田正孝）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "太田正孝"
+      ],
+      "locator": {
+        "file": "kaihabetsu.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "無所属（井上さくら）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "井上さくら"
+      ],
+      "locator": {
+        "file": "kaihabetsu.html",
+        "row": 9
+      }
+    },
+    {
+      "name": "無所属（梶村充）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "梶村充"
+      ],
+      "locator": {
+        "file": "kaihabetsu.html",
+        "row": 10
+      }
+    },
+    {
+      "name": "無所属（輿石かつ子）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "輿石かつ子"
+      ],
+      "locator": {
+        "file": "kaihabetsu.html",
+        "row": 11
+      }
+    },
+    {
+      "name": "無所属（荻原隆宏）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "荻原隆宏"
+      ],
+      "locator": {
+        "file": "kaihabetsu.html",
+        "row": 12
+      }
+    },
+    {
+      "name": "無所属（長谷川えつこ）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "長谷川えつこ"
+      ],
+      "locator": {
+        "file": "kaihabetsu.html",
+        "row": 13
+      }
+    },
+    {
+      "name": "無所属（大野トモイ）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "大野トモイ"
+      ],
+      "locator": {
+        "file": "kaihabetsu.html",
+        "row": 14
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "市第76号議案",
+    "billName": "令和８年度横浜市一般会計予算",
+    "sessionLabel": "令和８年第１回定例会",
+    "decidedDate": "2026-03-24",
+    "decidedDateLabel": "令和8年3月24日",
+    "result": "原案可決",
+    "locator": {
+      "file": "20260324_sanpi.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "会派別名簿（令和8年1月27日現在）",
+  "resultTitle": "令和８年３月24日 本会議 議決結果（議員別賛否一覧）"
+}

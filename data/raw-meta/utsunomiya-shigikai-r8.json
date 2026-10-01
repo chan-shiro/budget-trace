@@ -1,0 +1,33 @@
+{
+  "sourceId": "utsunomiya-shigikai-r8",
+  "files": [
+    {
+      "filename": "1008552.html",
+      "sha256": "4b3f14f2ad83a7b1e369ecbc0942ec0122cfab611d2fa1c5620711ba0450c47b",
+      "bytes": 39331,
+      "fetchedAt": "2026-10-01T16:54:23.238Z",
+      "fetchedFrom": "https://web.archive.org/web/20260207034310id_/https://www.city.utsunomiya.lg.jp/gikai/giin/1008552.html"
+    },
+    {
+      "filename": "1044488.html",
+      "sha256": "443d7f6307924f352c2d14174539a820e366b7ca46a2952a19dd3a8f09071edf",
+      "bytes": 43925,
+      "fetchedAt": "2026-10-01T16:54:23.238Z",
+      "fetchedFrom": "https://www.city.utsunomiya.lg.jp/gikai/kekka/kekka/1044487/1044488.html"
+    },
+    {
+      "filename": "sannpi0324.pdf",
+      "sha256": "0ee185810c7fc19de87a56d20ff52840fd2220fe6e3ef5e6066ce786090a2260",
+      "bytes": 540222,
+      "fetchedAt": "2026-10-01T16:54:23.241Z",
+      "fetchedFrom": "https://www.city.utsunomiya.lg.jp/_res/projects/default_project/_page_/001/044/488/sannpi0324.pdf"
+    },
+    {
+      "filename": "1008462.html",
+      "sha256": "feb32791654113df1d2103d1ec83ad50c87cb368343eaeb7acde76481108c40f",
+      "bytes": 32662,
+      "fetchedAt": "2026-10-01T16:54:23.241Z",
+      "fetchedFrom": "https://www.city.utsunomiya.lg.jp/gikai/about/1008462.html"
+    }
+  ]
+}

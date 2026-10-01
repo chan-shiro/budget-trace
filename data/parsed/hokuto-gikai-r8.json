@@ -1,0 +1,124 @@
+{
+  "docType": "council-composition",
+  "sourceId": "hokuto-gikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.5",
+  "parsedAt": "2026-10-01T19:51:52.562Z",
+  "fiscalYear": "R8",
+  "body": "北杜市議会",
+  "seats": 20,
+  "asOf": "2024-11-28",
+  "factions": [
+    {
+      "name": "みらい創生",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "加藤紀雄",
+        "保坂多枝子",
+        "神田正人",
+        "大芝正和"
+      ],
+      "locator": {
+        "file": "_____R6.11.28___1_.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "ポラリス北杜",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "髙見澤伸光",
+        "輿水崇",
+        "輿石知宏",
+        "大塚愛"
+      ],
+      "locator": {
+        "file": "_____R6.11.28___1_.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "北杜クラブ",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "秋山俊和",
+        "齊藤功文",
+        "秋山真一"
+      ],
+      "locator": {
+        "file": "_____R6.11.28___1_.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "内田俊彦",
+        "進藤正文"
+      ],
+      "locator": {
+        "file": "_____R6.11.28___1_.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "志村清",
+        "清水進"
+      ],
+      "locator": {
+        "file": "_____R6.11.28___1_.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "北杜オール・イン・ワン",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "中山喜夫",
+        "山﨑君江"
+      ],
+      "locator": {
+        "file": "_____R6.11.28___1_.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無会派",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "中村典子",
+        "飛矢﨑雅也",
+        "浅川勝正"
+      ],
+      "locator": {
+        "file": "_____R6.11.28___1_.pdf",
+        "page": 1
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第28号",
+    "billName": "令和8年度北杜市一般会計予算",
+    "sessionLabel": "令和8年第1回定例会",
+    "decidedDate": "2026-03-16",
+    "decidedDateLabel": "令和8年3月16日",
+    "result": "可決",
+    "locator": {
+      "file": "_______86_.pdf",
+      "page": 5
+    }
+  },
+  "rosterTitle": "北杜市議会議員所属会派（令和6年11月28日現在）",
+  "resultTitle": "北杜市議会だより 第86号"
+}

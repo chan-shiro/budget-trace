@@ -1,0 +1,162 @@
+{
+  "docType": "council-composition",
+  "sourceId": "niigata-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.5",
+  "parsedAt": "2026-10-01T19:51:54.850Z",
+  "fiscalYear": "R8",
+  "body": "新潟市議会",
+  "seats": 48,
+  "asOf": "2026-02-20",
+  "factions": [
+    {
+      "name": "翔政会",
+      "seats": 21,
+      "isIndependent": false,
+      "members": [
+        "小野清一郎",
+        "伊藤健太郎",
+        "佐藤幸雄",
+        "佐藤正人",
+        "保苅浩",
+        "内宮貞志",
+        "内山幸紀",
+        "古泉幸一",
+        "土田真清",
+        "小林弘樹",
+        "小野照子",
+        "山際務",
+        "東村里恵子",
+        "林龍太郎",
+        "皆川英二",
+        "米野泰加",
+        "美のよしゆき",
+        "荒井宏幸",
+        "西脇厚",
+        "豊島真",
+        "高橋哲也"
+      ],
+      "locator": {
+        "file": "meibo_03jounin.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "日本共産党新潟市議会議員団",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "倉茂政樹",
+        "武田勝利",
+        "渋谷明治",
+        "野村紀子",
+        "鈴木映",
+        "飯塚孝子"
+      ],
+      "locator": {
+        "file": "meibo_03jounin.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "新風にいがた",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "小林裕史",
+        "小柳聡",
+        "平松洋一",
+        "深谷成信",
+        "野口光晃"
+      ],
+      "locator": {
+        "file": "meibo_03jounin.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "新潟市公明党",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "佐藤誠",
+        "小山進",
+        "志賀泰雄",
+        "松下和子"
+      ],
+      "locator": {
+        "file": "meibo_03jounin.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "ともに躍動する新潟",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "加藤大弥",
+        "宇野耕哉",
+        "細野弘康",
+        "高橋聡子"
+      ],
+      "locator": {
+        "file": "meibo_03jounin.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "無所属の会",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "中山均",
+        "小泉仲之",
+        "幸田健太",
+        "高橋三義"
+      ],
+      "locator": {
+        "file": "meibo_03jounin.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "市民ネットにいがた",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "石附幸子",
+        "竹内功",
+        "青木学"
+      ],
+      "locator": {
+        "file": "meibo_03jounin.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "会派に属さない議員（串田修平）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "串田修平"
+      ],
+      "locator": {
+        "file": "meibo_03jounin.html",
+        "row": 8
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第1号",
+    "billName": "令和８年度新潟市一般会計予算",
+    "sessionLabel": "令和8年2月定例会",
+    "decidedDate": "2026-03-23",
+    "decidedDateLabel": "令和8年3月23日",
+    "result": "可決",
+    "locator": {
+      "file": "r0802.html"
+    }
+  },
+  "rosterTitle": "常任委員会 委員名簿（最終更新日 2026年2月20日）",
+  "resultTitle": "令和8年2月定例会 会議の結果"
+}

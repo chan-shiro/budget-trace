@@ -1,0 +1,19 @@
+{
+  "sourceId": "yao-shigikai-r8",
+  "files": [
+    {
+      "filename": "1009487.html",
+      "sha256": "03f7e97b0706b4ddf33d51ec0d83ec5dad3a3a5ea7d650a5beb79532ebfbe150",
+      "bytes": 34353,
+      "fetchedAt": "2026-10-01T16:54:23.275Z",
+      "fetchedFrom": "https://web.archive.org/web/20260310130721id_/https://www.city.yao.osaka.jp/shisei/yaoshigikai/1009482/1009487.html"
+    },
+    {
+      "filename": "0803saiketutaido.pdf",
+      "sha256": "7daa1c56f6114c5863b51c4877257ddba3433ff528790b0824ae1692637da71f",
+      "bytes": 241212,
+      "fetchedAt": "2026-10-01T16:54:23.276Z",
+      "fetchedFrom": "https://www.city.yao.osaka.jp/_res/projects/default_project/_page_/001/023/883/0803saiketutaido.pdf"
+    }
+  ]
+}

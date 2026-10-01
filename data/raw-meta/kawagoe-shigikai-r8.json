@@ -1,0 +1,36 @@
+{
+  "sourceId": "kawagoe-shigikai-r8",
+  "files": [
+    {
+      "filename": "1007626.html",
+      "sha256": "982dd4f5360ad83a8a08e66b08c09fa85b7cd064ebe6e7616bfad8a7dddb1be6",
+      "bytes": 46567,
+      "fetchedAt": "2026-10-01T16:54:23.244Z",
+      "fetchedFrom": "https://web.archive.org/web/20251213125425id_/https://www.city.kawagoe.saitama.jp/shigikai/giin/1007626.html"
+    },
+    {
+      "filename": "0805shigikai4.pdf",
+      "sha256": "108713c9f07395e234c2bb6f2ff73aa1f3458bc2dc3aaeb8ae3dee79c558ef70",
+      "bytes": 644398,
+      "fetchedAt": "2026-10-01T16:54:23.246Z",
+      "fetchedFrom": "https://www.city.kawagoe.saitama.jp/_res/projects/default_project/_page_/001/021/435/0805shigikai4.pdf"
+    },
+    {
+      "filename": "623531_Template_document_Id_4284.html",
+      "sha256": "ce0b1ade2c9285a5c32523a2efd179b2f968847bb4a5df2bf2a6fb3d98cbea8e",
+      "bytes": 430156,
+      "fetchedAt": "2026-10-01T16:54:23.247Z",
+      "fetchedFrom": "https://www.city.kawagoe.saitama.dbsr.jp/623531?Template=document&Id=4284",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "1007562.html",
+      "sha256": "755b09b5e4c90d8408db6421ab21c5ea24ba57de58038c0d70bcdfb8cd1eeb29",
+      "bytes": 46082,
+      "fetchedAt": "2026-10-01T16:54:23.247Z",
+      "fetchedFrom": "https://www.city.kawagoe.saitama.jp/shigikai/g-about/1007562.html"
+    }
+  ]
+}

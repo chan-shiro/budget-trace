@@ -1,0 +1,171 @@
+{
+  "docType": "council-composition",
+  "sourceId": "utsunomiya-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.5",
+  "parsedAt": "2026-10-01T19:51:56.718Z",
+  "fiscalYear": "R8",
+  "body": "宇都宮市議会",
+  "seats": 45,
+  "asOf": "2025-04-01",
+  "teisu": 45,
+  "factions": [
+    {
+      "name": "自由民主党議員会",
+      "seats": 19,
+      "isIndependent": false,
+      "members": [
+        "熊本和夫",
+        "岡本芳明",
+        "舟本肇",
+        "馬上剛",
+        "篠崎圭一",
+        "塚田典功",
+        "小林紀夫",
+        "今井政範",
+        "山崎昌子",
+        "黒子英明",
+        "内藤良弘",
+        "柴田賢司",
+        "矢古宇芳一",
+        "長谷川武士",
+        "菅原一浩",
+        "今野哲也",
+        "岡本源二郎",
+        "手塚泉",
+        "若林芽育"
+      ],
+      "locator": {
+        "file": "1008552.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "市民連合",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "駒場昭夫",
+        "福田智恵",
+        "郷間康久",
+        "中塚英範",
+        "高橋英樹",
+        "大久保順也",
+        "佐藤孝明",
+        "横須賀咲紀"
+      ],
+      "locator": {
+        "file": "1008552.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "公明党議員会",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "金沢力",
+        "菅野大造",
+        "成島隆裕",
+        "秋成大",
+        "岩井潤子",
+        "小倉久美"
+      ],
+      "locator": {
+        "file": "1008552.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "清風クラブ",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "渡辺道仁",
+        "久保井永三",
+        "平松明夫"
+      ],
+      "locator": {
+        "file": "1008552.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "日本共産党宇都宮市議員団",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "福田久美子",
+        "原ちづる",
+        "小室かな子"
+      ],
+      "locator": {
+        "file": "1008552.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "うつのみや維新",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "茂木祐佳里",
+        "石川京樹",
+        "佐藤恭子"
+      ],
+      "locator": {
+        "file": "1008552.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "未来への架け橋",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "保坂栄次"
+      ],
+      "locator": {
+        "file": "1008552.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "緑の地球",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "出井昌子"
+      ],
+      "locator": {
+        "file": "1008552.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "参政党　政治参加を促す会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "河田敦史"
+      ],
+      "locator": {
+        "file": "1008552.html",
+        "row": 9
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第18号",
+    "billName": "令和8年度宇都宮市一般会計予算",
+    "sessionLabel": "令和8年3月（第1回）定例会",
+    "decidedDate": "2026-03-24",
+    "decidedDateLabel": "令和8年3月24日",
+    "result": "原案可決",
+    "locator": {
+      "file": "1044488.html"
+    }
+  },
+  "rosterTitle": "会派紹介（令和7年4月1日現在）",
+  "resultTitle": "令和8年3月（第1回）定例会 会議結果"
+}

@@ -102,7 +102,7 @@ export { KOFU_R6_DETAIL } from './detail.gen';
 export { BUDGET_DETAIL, type BudgetDetailKo, type BudgetDetailYear } from './budgetdetail.gen';
 export { KOFU_TREND } from './trend.gen';
 export { KOFU_EVALUATION_YEARS, type KofuEvaluationYear } from './evaluations.gen';
-export { KOFU_COUNCIL, KOFU_COUNCIL_YEARS, type KofuCouncil, type CouncilFaction } from './council.gen';
+export { KOFU_COUNCIL, KOFU_COUNCIL_YEARS, MUNI_COUNCIL_YEARS, type Council, type KofuCouncil, type CouncilFaction } from './council.gen';
 export { KOFU_REPORT_YEARS, type KofuReportYear, type KofuReport, type ReportIndicator, type ReportCostYear } from './report.gen';
 export { KOFU_OUTTURN_YEARS, type KofuOutturnYear } from './outturn.gen';
 

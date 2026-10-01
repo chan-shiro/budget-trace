@@ -1,0 +1,33 @@
+{
+  "sourceId": "nara-shigikai-r8",
+  "files": [
+    {
+      "filename": "114364.html",
+      "sha256": "6062518567fdfb4fcc1d5f9f16093324ad00cdf99a8b15f2bb31944a170740ba",
+      "bytes": 33966,
+      "fetchedAt": "2026-10-01T16:54:23.280Z",
+      "fetchedFrom": "https://web.archive.org/web/20260414181844id_/https://www.city.nara.lg.jp/site/narasigikai/114364.html"
+    },
+    {
+      "filename": "208608.pdf",
+      "sha256": "2dd6f9df58497a4ea6d68b96c8657ae94156cda6924542918ed40ea538e18c3b",
+      "bytes": 172036,
+      "fetchedAt": "2026-10-01T16:54:23.282Z",
+      "fetchedFrom": "https://www.city.nara.lg.jp/uploaded/attachment/208608.pdf"
+    },
+    {
+      "filename": "209444.pdf",
+      "sha256": "b0d94e92bac2df47fc5991a5db61b5e87128c645af5c047175f8796a1a99ca9b",
+      "bytes": 357803,
+      "fetchedAt": "2026-10-01T16:54:23.283Z",
+      "fetchedFrom": "https://www.city.nara.lg.jp/uploaded/attachment/209444.pdf"
+    },
+    {
+      "filename": "2371.html",
+      "sha256": "d45b65d90ce0837cca8703e75ec4f962a0d9c989194782fa8b700b241f4192b4",
+      "bytes": 30546,
+      "fetchedAt": "2026-10-01T16:54:23.284Z",
+      "fetchedFrom": "https://www.city.nara.lg.jp/site/narasigikai/2371.html"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "sourceId": "akashi-shigikai-r8",
+  "files": [
+    {
+      "filename": "kaiha.html",
+      "sha256": "0f444d9d7f5e6c80e3ac860adcb9e77e119dd6600f7e96152e66413110b7f523",
+      "bytes": 13559,
+      "fetchedAt": "2026-10-01T16:54:23.278Z",
+      "fetchedFrom": "https://web.archive.org/web/20260311190050id_/https://www.city.akashi.lg.jp/gikai/youkoso/shoukai/kaiha.html"
+    },
+    {
+      "filename": "50803singikekka.pdf",
+      "sha256": "d02d46e480d8e001360194fc8f98ade73c5acf76c79a6dced04f27e5f396285e",
+      "bytes": 188300,
+      "fetchedAt": "2026-10-01T16:54:23.279Z",
+      "fetchedFrom": "https://www.city.akashi.lg.jp/documents/31614/50803singikekka.pdf"
+    },
+    {
+      "filename": "50803sanpi_2.pdf",
+      "sha256": "02ffda6be6bf5515168c067b7ae757ada5d85a99c6d50b9aa20a3dfdc883b3a0",
+      "bytes": 244670,
+      "fetchedAt": "2026-10-01T16:54:23.280Z",
+      "fetchedFrom": "https://www.city.akashi.lg.jp/documents/31615/50803sanpi_2.pdf"
+    },
+    {
+      "filename": "kousei.html",
+      "sha256": "25d4af308dbbcce900311d0a42f40814ea3eea57b6827d07abef78cfc0e44e9a",
+      "bytes": 12271,
+      "fetchedAt": "2026-10-01T16:54:23.280Z",
+      "fetchedFrom": "https://web.archive.org/web/20260305144503id_/https://www.city.akashi.lg.jp/gikai/youkoso/shoukai/kousei.html"
+    }
+  ]
+}

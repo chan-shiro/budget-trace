@@ -9,6 +9,7 @@ import { parseKofuToukeiZaisei } from "./kofu-toukei-zaisei";
 import { parseShichosonSeishitsu } from "./soumu-shichoson-seishitsu";
 import { parseYamanashiKessan } from "./yamanashi-kessan";
 import { parseKofuGikai } from "./kofu-gikai";
+import { parseCouncilTranscribed } from "./council-transcribed";
 import { parseKofuJigyouHoukoku } from "./kofu-jigyou-houkoku";
 import { parseKawasakiJigyouHyouka } from "./kawasaki-jigyou-hyouka";
 import { parseYokohamaJigyoHyoka } from "./yokohama-jigyo-hyoka";
@@ -56,6 +57,7 @@ const PARSERS: Record<string, ParserFn> = {
   "setagaya-mieruka-csv": parseSetagayaMierukaCsv, // 世田谷区 見える化ボード CSV（明細集計・R8）
   "setagaya-tousho-xls": parseSetagayaToushoXls, // 世田谷区 年度別当初予算データ XLS（H21〜R7 の17年）
   "kofu-gikai": parseKofuGikai, // 議会の構成（会派別議席数）＋当初予算の議決
+  "council-transcribed": parseCouncilTranscribed, // 議会の構成（書き写した会派・議員を原典の本文と突合）
   "kofu-jigyou-houkoku": parseKofuJigyouHoukoku, // 事業報告（成果）＝事務事業評価 詳細票
   "saitama-jigyou-houkoku": parseSaitamaJigyouHoukoku, // 行政報告書（事業報告＝成果・676事業・款項目に款名まで内包）
   "kitakyushu-jigyou-hyoka": parseKitakyushuJigyouHyoka, // 行政評価の取組結果（事業評価・198事業・KPI＋4段階評価・款は無し）

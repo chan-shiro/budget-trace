@@ -1,0 +1,22 @@
+{
+  "sourceId": "kitakyushu-gikai-r8",
+  "files": [
+    {
+      "filename": "file_0056.html",
+      "sha256": "54db4a7792e106c7ee5ef08b814b2872029d275672355341cbb8060616878260",
+      "bytes": 14546,
+      "fetchedAt": "2026-10-01T15:47:13.641Z",
+      "fetchedFrom": "https://web.archive.org/web/20260213010153id_/https://www.city.kitakyushu.lg.jp/sigikai/file_0056.html",
+      "transform": [
+        "gunzip"
+      ]
+    },
+    {
+      "filename": "001198333.pdf",
+      "sha256": "a74de8e8e69f61fff4623b84710d1227bc48949dd470a146c69fc6cc8ff238c9",
+      "bytes": 343575,
+      "fetchedAt": "2026-10-01T15:47:13.644Z",
+      "fetchedFrom": "https://www.city.kitakyushu.lg.jp/files/001198333.pdf"
+    }
+  ]
+}

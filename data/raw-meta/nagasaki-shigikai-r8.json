@@ -1,0 +1,33 @@
+{
+  "sourceId": "nagasaki-shigikai-r8",
+  "files": [
+    {
+      "filename": "5681.html",
+      "sha256": "6ca03e66a4b32286b88fd85843798aaa8a3b6d6242957c0f480dc60fb9b3206d",
+      "bytes": 52377,
+      "fetchedAt": "2026-10-01T17:04:04.697Z",
+      "fetchedFrom": "https://www.city.nagasaki.lg.jp/site/gikai/5681.html"
+    },
+    {
+      "filename": "75929.html",
+      "sha256": "e380d99290c48f14f052762c3ece9eb1570d679a1e4b3ce817aeb1c7ac6e2d4c",
+      "bytes": 105851,
+      "fetchedAt": "2026-10-01T17:04:04.697Z",
+      "fetchedFrom": "https://www.city.nagasaki.lg.jp/site/gikai/75929.html"
+    },
+    {
+      "filename": "56672.pdf",
+      "sha256": "80af5fc53666eb74ba19e692783ac700bfeeaa7c1b1aee95968bbc0e5de0989a",
+      "bytes": 348818,
+      "fetchedAt": "2026-10-01T17:04:04.698Z",
+      "fetchedFrom": "https://www.city.nagasaki.lg.jp/uploaded/attachment/56672.pdf"
+    },
+    {
+      "filename": "1635.html",
+      "sha256": "2821cddb36dffd1c869635e8178395b6bf2f8040f51700dcec0094be94e98df1",
+      "bytes": 49949,
+      "fetchedAt": "2026-10-01T17:04:04.699Z",
+      "fetchedFrom": "https://www.city.nagasaki.lg.jp/site/gikai/1635.html"
+    }
+  ]
+}

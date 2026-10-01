@@ -1,0 +1,219 @@
+{
+  "docType": "council-composition",
+  "sourceId": "fukuoka-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.5",
+  "parsedAt": "2026-10-01T19:51:54.234Z",
+  "fiscalYear": "R8",
+  "body": "福岡市議会",
+  "seats": 60,
+  "asOf": "2026-03-27",
+  "teisu": 62,
+  "factions": [
+    {
+      "name": "自由民主党福岡市議団",
+      "seats": 18,
+      "isIndependent": false,
+      "members": [
+        "おばた英達",
+        "もろくま英文",
+        "淀川幸二郎",
+        "稲員稔夫",
+        "鬼塚昌宏",
+        "堤田寛",
+        "大森一馬",
+        "大原弥寿男",
+        "今林ひであき",
+        "阿部真之助",
+        "平畑雅博",
+        "とみながひろゆき",
+        "調崇史",
+        "川上陽平",
+        "津田信太郎",
+        "伊藤嘉人",
+        "打越基安",
+        "川上晋平"
+      ],
+      "locator": {
+        "file": "ichiran_R80327.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "公明党福岡市議団",
+      "seats": 12,
+      "isIndependent": false,
+      "members": [
+        "堤健太郎",
+        "田原香代子",
+        "たのかしら知行",
+        "石本優子",
+        "勝山信吾",
+        "古川清文",
+        "高木勝利",
+        "篠原達也",
+        "尾花康広",
+        "松野隆",
+        "山口剛司",
+        "大石修二"
+      ],
+      "locator": {
+        "file": "ichiran_R80327.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "福岡市民クラブ",
+      "seats": 11,
+      "isIndependent": false,
+      "members": [
+        "前野真実子",
+        "小竹りか",
+        "勝見美代",
+        "井上まい",
+        "ついちはら陽子",
+        "田中たかし",
+        "山田ゆみこ",
+        "近藤里美",
+        "落石俊則",
+        "田中しんすけ",
+        "池田良子"
+      ],
+      "locator": {
+        "file": "ichiran_R80327.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "日本共産党福岡市議団",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "綿貫康代",
+        "堀内徹夫",
+        "倉元達朗",
+        "中山郁美"
+      ],
+      "locator": {
+        "file": "ichiran_R80327.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "新しい風ふくおか",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "坂口よしまさ",
+        "新村まさる",
+        "はしだ和義",
+        "浜崎太郎"
+      ],
+      "locator": {
+        "file": "ichiran_R80327.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "日本維新の会福岡市議団",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "大沢めぐみ",
+        "和田あきひこ",
+        "阿部正剛"
+      ],
+      "locator": {
+        "file": "ichiran_R80327.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "自民党新福岡",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "中島まさひろ",
+        "藤野哲司",
+        "福田まもる"
+      ],
+      "locator": {
+        "file": "ichiran_R80327.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無所属（あべひでき）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "あべひでき"
+      ],
+      "locator": {
+        "file": "ichiran_R80327.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無所属（新開ゆうじ）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "新開ゆうじ"
+      ],
+      "locator": {
+        "file": "ichiran_R80327.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無所属（木村てつあき）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "木村てつあき"
+      ],
+      "locator": {
+        "file": "ichiran_R80327.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無所属（森あやこ）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "森あやこ"
+      ],
+      "locator": {
+        "file": "ichiran_R80327.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無所属（川口浩）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "川口浩"
+      ],
+      "locator": {
+        "file": "ichiran_R80327.pdf",
+        "page": 1
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "27",
+    "billName": "令和８年度福岡市一般会計予算案",
+    "sessionLabel": "令和８年第１回福岡市議会（定例会）",
+    "decidedDate": "2026-03-27",
+    "decidedDateLabel": "令和8年3月27日",
+    "result": "可決",
+    "locator": {
+      "file": "r8_gikai1.html"
+    }
+  },
+  "rosterTitle": "議員一覧（令和８年２月20日時点、令和８年３月27日時点）",
+  "resultTitle": "令和８年第１回福岡市議会（定例会） 議案の議決結果"
+}

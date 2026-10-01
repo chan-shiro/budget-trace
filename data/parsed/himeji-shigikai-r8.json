@@ -1,0 +1,193 @@
+{
+  "docType": "council-composition",
+  "sourceId": "himeji-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.5",
+  "parsedAt": "2026-10-01T19:51:58.398Z",
+  "fiscalYear": "R8",
+  "body": "姫路市議会",
+  "seats": 45,
+  "asOf": "2025-09-01",
+  "factions": [
+    {
+      "name": "公明党",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "西本眞造",
+        "白井義一",
+        "中西祥子",
+        "阿野れい子",
+        "前川藤枝",
+        "川島淳良",
+        "有馬剛朗",
+        "宮下和也"
+      ],
+      "locator": {
+        "file": "0000000374.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "市民クラブ",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "竹尾浩司",
+        "常盤真功",
+        "山口悟",
+        "駒田かすみ",
+        "三輪敏之",
+        "阿山正人",
+        "八木隆次郎",
+        "蔭山敏明"
+      ],
+      "locator": {
+        "file": "0000000374.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "自由民主党",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "竹中隆一",
+        "井川一善",
+        "重田一政",
+        "仁野央子",
+        "石見和之",
+        "石堂大輔",
+        "宮本吉秀"
+      ],
+      "locator": {
+        "file": "0000000374.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "新生ひめじ",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "三和衛",
+        "井上太良",
+        "東影昭",
+        "萩原唯典",
+        "杉本博昭"
+      ],
+      "locator": {
+        "file": "0000000374.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "日本維新の会",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "大西陽介",
+        "竹中由佳",
+        "下林崇史",
+        "三浦充博"
+      ],
+      "locator": {
+        "file": "0000000374.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "姫路無所属の会",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "妻鹿幸二",
+        "神頭敬介",
+        "嶋谷秀樹"
+      ],
+      "locator": {
+        "file": "0000000374.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "改革無所属の会",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "塚本進介",
+        "牧野圭輔",
+        "坂本学"
+      ],
+      "locator": {
+        "file": "0000000374.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "志政会",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "金内義和",
+        "西村しのぶ",
+        "松岡廣幸"
+      ],
+      "locator": {
+        "file": "0000000374.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "日本共産党議員団",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "谷川真由美",
+        "小田響子"
+      ],
+      "locator": {
+        "file": "0000000374.html",
+        "row": 9
+      }
+    },
+    {
+      "name": "刷新の会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "岡部敦吏"
+      ],
+      "locator": {
+        "file": "0000000374.html",
+        "row": 10
+      }
+    },
+    {
+      "name": "無所属（高見千咲）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "高見千咲"
+      ],
+      "locator": {
+        "file": "0000000374.html",
+        "row": 11
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第1号",
+    "billName": "令和８年度姫路市一般会計予算",
+    "sessionLabel": "令和8年第1回定例会",
+    "decidedDate": "2026-03-25",
+    "decidedDateLabel": "令和8年3月25日",
+    "result": "可決",
+    "locator": {
+      "file": "0325giannsinngikekka.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "市議会議員名簿（会派別）（更新日 2025年9月1日）",
+  "resultTitle": "提出議案とその結果（令和8年第1回定例会）議案に対する議員の賛否一覧"
+}

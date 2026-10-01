@@ -1,0 +1,19 @@
+{
+  "sourceId": "kurume-shigikai-r8",
+  "files": [
+    {
+      "filename": "R8.6sanpi.pdf",
+      "sha256": "69b458737c4cbf1c42eaab887061da6c52fbe02bbb9b8241f4156e8f941c217d",
+      "bytes": 305041,
+      "fetchedAt": "2026-10-01T17:04:04.695Z",
+      "fetchedFrom": "https://www.city.kurume.fukuoka.jp/1100keikaku/2040shigikai/3030hongikai/4010giankekka/files/R8.6sanpi.pdf"
+    },
+    {
+      "filename": "2007-0801-1611-375.html",
+      "sha256": "e799bcc17f3d70c193118eeba996a6fb083c228d531c02dcabb67a5a9725cfd6",
+      "bytes": 38075,
+      "fetchedAt": "2026-10-01T17:04:04.696Z",
+      "fetchedFrom": "https://www.city.kurume.fukuoka.jp/1100keikaku/2040shigikai/3010shikumi/2007-0801-1611-375.html"
+    }
+  ]
+}

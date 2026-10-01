@@ -1,0 +1,33 @@
+{
+  "sourceId": "asahikawa-shigikai-r8",
+  "files": [
+    {
+      "filename": "d066336.html",
+      "sha256": "0c774a0c2b8c55569b126891395ecb321fce6260c711ea11dbb7255ff0e2ecf9",
+      "bytes": 17969,
+      "fetchedAt": "2026-10-01T16:54:08.310Z",
+      "fetchedFrom": "https://web.archive.org/web/20260116223223id_/https://www.city.asahikawa.hokkaido.jp/council/6100/6120/d066336.html"
+    },
+    {
+      "filename": "d083645.html",
+      "sha256": "33ded2a03a64bf01565af1403eb20f901271cf28c1808b6430a4bc704ed1c112",
+      "bytes": 47150,
+      "fetchedAt": "2026-10-01T16:54:08.311Z",
+      "fetchedFrom": "https://www.city.asahikawa.hokkaido.jp/council/6400/6410/d083645.html"
+    },
+    {
+      "filename": "d083728.html",
+      "sha256": "e9a912b22f289f707cae7e1f82fcb92ac03386ff114d0a01b8d53428d78fed44",
+      "bytes": 21080,
+      "fetchedAt": "2026-10-01T16:54:08.311Z",
+      "fetchedFrom": "https://www.city.asahikawa.hokkaido.jp/council/6400/6410/d083728.html"
+    },
+    {
+      "filename": "d066334.html",
+      "sha256": "ffcb6c20847d0d5116b04637831aba5c7996bad39d017d49880be4ebfe34318d",
+      "bytes": 17234,
+      "fetchedAt": "2026-10-01T16:54:08.312Z",
+      "fetchedFrom": "https://www.city.asahikawa.hokkaido.jp/council/6200/d066334.html"
+    }
+  ]
+}

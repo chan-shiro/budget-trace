@@ -1,0 +1,19 @@
+{
+  "sourceId": "fukui-shigikai-r8",
+  "files": [
+    {
+      "filename": "p015912.html",
+      "sha256": "1e9f132d5d9bcb55a25e1cf9e3c39275cb0581d11b8c922692f393ec4521b2b6",
+      "bytes": 25537,
+      "fetchedAt": "2026-10-01T16:55:47.079Z",
+      "fetchedFrom": "https://web.archive.org/web/20251210153637id_/https://www.city.fukui.lg.jp/sisei/gikai/giin/p015912.html"
+    },
+    {
+      "filename": "R803t.pdf",
+      "sha256": "eaf7c8ae6dc3688bdd244da2c5f8f1fd88bf174facbd253b8d3037630163c7f2",
+      "bytes": 146644,
+      "fetchedAt": "2026-10-01T16:55:47.081Z",
+      "fetchedFrom": "https://www.city.fukui.lg.jp/sisei/gikai/shingigian/p004023_d/fil/R803t.pdf"
+    }
+  ]
+}

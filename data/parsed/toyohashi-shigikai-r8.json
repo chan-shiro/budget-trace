@@ -1,0 +1,152 @@
+{
+  "docType": "council-composition",
+  "sourceId": "toyohashi-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.5",
+  "parsedAt": "2026-10-01T19:51:57.129Z",
+  "fiscalYear": "R8",
+  "body": "豊橋市議会",
+  "seats": 36,
+  "asOf": "2025-05-15",
+  "teisu": 36,
+  "factions": [
+    {
+      "name": "自由民主党豊橋市議団",
+      "seats": 18,
+      "isIndependent": false,
+      "members": [
+        "松崎正尚",
+        "山本賢太郎",
+        "伊藤哲朗",
+        "石河貫治",
+        "土屋祐司",
+        "鈴木智子",
+        "小林憲生",
+        "本多洋之",
+        "近藤修司",
+        "川原元則",
+        "尾崎雅輝",
+        "市原享吾",
+        "小原昌子",
+        "向坂秀之",
+        "伊藤篤哉",
+        "坂柳泰光",
+        "古関充宏",
+        "田中敏一"
+      ],
+      "locator": {
+        "file": "8130.htm",
+        "row": 1
+      }
+    },
+    {
+      "name": "公明党豊橋市議団",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "尾林伸治",
+        "宍戸秀樹",
+        "井上豪史",
+        "水野恵",
+        "梅田早苗"
+      ],
+      "locator": {
+        "file": "8130.htm",
+        "row": 2
+      }
+    },
+    {
+      "name": "新しい豊橋",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "菅谷竜",
+        "諸井菜々子",
+        "山口倫世",
+        "寺本泰之"
+      ],
+      "locator": {
+        "file": "8130.htm",
+        "row": 3
+      }
+    },
+    {
+      "name": "日本共産党豊橋市議団",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "鈴木みさ子",
+        "斎藤啓",
+        "中西光江"
+      ],
+      "locator": {
+        "file": "8130.htm",
+        "row": 4
+      }
+    },
+    {
+      "name": "まちフォーラム",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "及部克博",
+        "久保大司",
+        "星野隆輝"
+      ],
+      "locator": {
+        "file": "8130.htm",
+        "row": 5
+      }
+    },
+    {
+      "name": "みらい市民",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "豊田八千代"
+      ],
+      "locator": {
+        "file": "8130.htm",
+        "row": 6
+      }
+    },
+    {
+      "name": "とよはし みんなの議会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "古池もも"
+      ],
+      "locator": {
+        "file": "8130.htm",
+        "row": 7
+      }
+    },
+    {
+      "name": "豊橋維新の会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "山田隆司"
+      ],
+      "locator": {
+        "file": "8130.htm",
+        "row": 8
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "4",
+    "billName": "令和8年度豊橋市一般会計予算",
+    "sessionLabel": "3月定例会",
+    "decidedDate": "2026-03-24",
+    "decidedDateLabel": "令和8年3月24日",
+    "result": "原案可決",
+    "locator": {
+      "file": "R8.3giketukekka.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "議員名簿（会派別）（令和7年5月15日現在）",
+  "resultTitle": "議決結果一覧表（3月定例会）"
+}

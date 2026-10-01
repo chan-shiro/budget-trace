@@ -1,0 +1,128 @@
+{
+  "docType": "council-composition",
+  "sourceId": "nagano-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.5",
+  "parsedAt": "2026-10-01T19:52:00.098Z",
+  "fiscalYear": "R8",
+  "body": "長野市議会",
+  "seats": 36,
+  "asOf": "2025-12-01",
+  "factions": [
+    {
+      "name": "長野市議会新友会",
+      "seats": 18,
+      "isIndependent": false,
+      "members": [
+        "小泉栄正",
+        "寺沢さゆり",
+        "西沢利一",
+        "若林祥",
+        "市川和彦",
+        "松田光平",
+        "和田一成",
+        "加藤英夫",
+        "桜井篤",
+        "青木敏明",
+        "宮崎治夫",
+        "北沢哲也",
+        "手塚秀樹",
+        "金沢敦志",
+        "箱山正一",
+        "西脇かおる",
+        "本木晋",
+        "山岸晃"
+      ],
+      "locator": {
+        "file": "p005269.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "公明党長野市議員団",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "堀内伸悟",
+        "松井英雄",
+        "清水美加子",
+        "藤澤紀子",
+        "浅川徹"
+      ],
+      "locator": {
+        "file": "p005269.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "日本共産党長野市会議員団",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "滝沢真一",
+        "黒沢清一",
+        "阿出川希",
+        "佐藤高志"
+      ],
+      "locator": {
+        "file": "p005269.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "改革ながの市民ネット",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "鈴木洋一",
+        "東方みゆき",
+        "原ようこ"
+      ],
+      "locator": {
+        "file": "p005269.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "次世代長野",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "和田凌弥",
+        "内藤武道",
+        "木村けいた"
+      ],
+      "locator": {
+        "file": "p005269.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "無所属",
+      "seats": 3,
+      "isIndependent": true,
+      "members": [
+        "倉野立人",
+        "山﨑裕子",
+        "山﨑昭夫"
+      ],
+      "locator": {
+        "file": "p005269.html",
+        "row": 6
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "1",
+    "billName": "令和8年度長野市一般会計予算",
+    "sessionLabel": "令和8年3月定例会",
+    "decidedDate": "2026-03-23",
+    "decidedDateLabel": "令和8年3月23日",
+    "result": "原案可決",
+    "locator": {
+      "file": "p005627.html"
+    }
+  },
+  "rosterTitle": "会派別名簿（令和7年12月1日現在）",
+  "resultTitle": "令和8年3月定例会 議案の審議状況"
+}

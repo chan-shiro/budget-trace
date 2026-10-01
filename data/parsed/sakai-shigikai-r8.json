@@ -1,0 +1,151 @@
+{
+  "docType": "council-composition",
+  "sourceId": "sakai-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.5",
+  "parsedAt": "2026-10-01T19:51:53.344Z",
+  "fiscalYear": "R8",
+  "body": "堺市議会",
+  "seats": 47,
+  "asOf": "2025-04-02",
+  "factions": [
+    {
+      "name": "大阪維新の会堺市議会議員団",
+      "seats": 16,
+      "isIndependent": false,
+      "members": [
+        "伊豆丸精二",
+        "上野充司",
+        "上村太一",
+        "加藤慎平",
+        "萱野孝弥",
+        "坂本千代子",
+        "中野貴文",
+        "西川知己",
+        "西田浩延",
+        "藤井載子",
+        "札場泰司",
+        "松木僚",
+        "的場慎一",
+        "三宅達也",
+        "山﨑光",
+        "米田敏文"
+      ],
+      "locator": {
+        "file": "75932120220517150837343.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "公明党堺市議団",
+      "seats": 11,
+      "isIndependent": false,
+      "members": [
+        "上田勝人",
+        "大西公彦",
+        "大西耕治",
+        "大林健二",
+        "小野伸也",
+        "兼城剛",
+        "田代優子",
+        "田渕和夫",
+        "広田新一",
+        "宮本恵子",
+        "吉川敏文"
+      ],
+      "locator": {
+        "file": "75932120220517150837343.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "堺創志会",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "木畑匡",
+        "小堀清次",
+        "西哲史",
+        "渕上猛志",
+        "吉川守"
+      ],
+      "locator": {
+        "file": "75932120220517150837343.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "自由民主党堺市議会議員団",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "池尻秀樹",
+        "信貴良太",
+        "西川良平",
+        "野里文盛",
+        "山口典子"
+      ],
+      "locator": {
+        "file": "75932120220517150837343.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "日本共産党堺市議会議員団",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "乾友美",
+        "藤本憲",
+        "藤本幸子",
+        "森田晃一"
+      ],
+      "locator": {
+        "file": "75932120220517150837343.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "自由民主党・市民クラブ",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "青谷幸浩",
+        "白江米一",
+        "西村昭三"
+      ],
+      "locator": {
+        "file": "75932120220517150837343.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "会派に属さない議員",
+      "seats": 3,
+      "isIndependent": true,
+      "members": [
+        "井関貴史",
+        "長谷川俊英",
+        "水ノ上成彰"
+      ],
+      "locator": {
+        "file": "75932120220517150837343.html",
+        "row": 7
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第２号",
+    "billName": "令和８年度堺市一般会計予算",
+    "sessionLabel": "令和８年第２回堺市議会定例会",
+    "decidedDate": "2026-03-26",
+    "decidedDateLabel": "令和8年3月26日",
+    "result": "可決",
+    "locator": {
+      "file": "R8-2giketsuannkennichirann.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "会派別（更新日 2025年4月2日）",
+  "resultTitle": "令和８年第２回堺市議会定例会議決等案件一覧"
+}

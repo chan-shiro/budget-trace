@@ -1,0 +1,127 @@
+{
+  "docType": "council-composition",
+  "sourceId": "fukushima-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.5",
+  "parsedAt": "2026-10-01T19:51:56.104Z",
+  "fiscalYear": "R8",
+  "body": "福島市議会",
+  "seats": 35,
+  "asOf": "2026-03-27",
+  "factions": [
+    {
+      "name": "真政会",
+      "seats": 12,
+      "isIndependent": false,
+      "members": [
+        "鈴木哲",
+        "浦野洋太朗",
+        "佐藤勢",
+        "七島奈緒",
+        "石山波恵",
+        "白川敏明",
+        "萩原太郎",
+        "大平洋人",
+        "小松良行",
+        "半沢正典",
+        "黒沢仁",
+        "渡辺敏彦"
+      ],
+      "locator": {
+        "file": "vol230.pdf",
+        "page": 9
+      }
+    },
+    {
+      "name": "真結の会",
+      "seats": 10,
+      "isIndependent": false,
+      "members": [
+        "菅原美智子",
+        "二階堂利枝",
+        "根本雅昭",
+        "斎藤正臣",
+        "川又康彦",
+        "鈴木正実",
+        "二階堂武文",
+        "尾形武",
+        "真田広志",
+        "宍戸一照"
+      ],
+      "locator": {
+        "file": "vol230.pdf",
+        "page": 9
+      }
+    },
+    {
+      "name": "市民21",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "遠藤幸一",
+        "佐原真紀",
+        "沢井和宏",
+        "羽田房男",
+        "高木克尚"
+      ],
+      "locator": {
+        "file": "vol230.pdf",
+        "page": 9
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "高木直人",
+        "丹治誠",
+        "後藤善次",
+        "小野京子"
+      ],
+      "locator": {
+        "file": "vol230.pdf",
+        "page": 9
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "山田裕",
+        "佐々木優",
+        "村山国子"
+      ],
+      "locator": {
+        "file": "vol230.pdf",
+        "page": 9
+      }
+    },
+    {
+      "name": "無所属（三浦由美子）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "三浦由美子"
+      ],
+      "locator": {
+        "file": "vol230.pdf",
+        "page": 9
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第5号",
+    "billName": "令和8年度福島市一般会計予算",
+    "sessionLabel": "令和8年3月定例会議",
+    "decidedDate": "2026-03-27",
+    "decidedDateLabel": "令和8年3月27日",
+    "result": "原案可決",
+    "locator": {
+      "file": "3751.html"
+    }
+  },
+  "rosterTitle": "ふくしま市議会だより VOL.230 p.9 電子採決システムによる採決結果（令和8年3月定例会議）",
+  "resultTitle": "議案の審議結果-令和8年3月定例会議-"
+}

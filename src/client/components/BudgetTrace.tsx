@@ -27,7 +27,7 @@ const sumOku = D.sumOku;
 
 const {
   GLOSS, SIMILAR_EVIDENCE,
-  KOFU_BUDGET_YEARS, KOFU_PROJECT_YEARS, KOFU_EXECUTION_YEARS, KOFU_EVALUATION_YEARS, KOFU_OUTTURN_YEARS, KOFU_R6_DETAIL, KOFU_TREND, KOFU_COUNCIL, KOFU_COUNCIL_YEARS, KOFU_REPORT_YEARS,
+  KOFU_BUDGET_YEARS, KOFU_PROJECT_YEARS, KOFU_EXECUTION_YEARS, KOFU_EVALUATION_YEARS, KOFU_OUTTURN_YEARS, KOFU_R6_DETAIL, KOFU_TREND, KOFU_COUNCIL, KOFU_COUNCIL_YEARS, MUNI_COUNCIL_YEARS, KOFU_REPORT_YEARS,
   muniFromBudget, fmtOku, pctOf, fmtPerCap, fmtPop, fmtYen, fadeColor, donutBg, setPalette,
 } = D;
 type SimilarAxisKey = D.SimilarAxisKey;
@@ -301,6 +301,13 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
   const budget = KOFU_BUDGET_YEARS.find((b) => b.fy === s.budgetFy) ?? KOFU_BUDGET_YEARS[0]!;
   // 議会の構成は「その予算を議決した議会」を表示年度に連動させる（無ければ最新へフォールバック）
   const councilForFy = KOFU_COUNCIL_YEARS.find((c) => c.fy === budget.fy) ?? KOFU_COUNCIL;
+  // 甲府以外（budget 階層）の議会の構成。**表示年度と同じ年度の構成だけ**を出す — 甲府と違い
+  // 最新へフォールバックしない（別の年度の議会を「その予算を議決した議会」として見せない）
+  const shownCouncil: D.Council | null = isFull
+    ? councilForFy
+    : muniBudget && muniCode
+      ? (MUNI_COUNCIL_YEARS[muniCode]?.find((c) => c.fy === muniBudget.fy) ?? null)
+      : null;
   const projYear = KOFU_PROJECT_YEARS.find((y) => y.fy === budget.fy);
   const KOFU_PROJECTS = React.useMemo(() => projYear?.projects ?? [], [projYear]);
   const KOFU_PROJECTS_SOURCE = projYear?.source ?? { title: "", url: "", originUrl: "", localUrl: "", pagesLabel: "" };
@@ -1237,17 +1244,29 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
     trendSourceUrl: KOFU_TREND[KOFU_TREND.length - 1]?.landingUrl ?? "",
     // 決算の推移は KOFU_TREND（甲府の総務省決算）ベース。full（甲府）だけで出す
     showTrend: isFull,
-    // 議会の構成（予算議決時）。full（甲府）だけ。会派別議席数の横バー＋一覧＋議決チップ。
-    // 賛否内訳は非公表なので出さない（会派ごとの stance 列も持たない）。
-    council: isFull
+    // 議会の構成（予算議決時）。甲府＋議決時点の構成を確かめた budget 階層の議会（council.gen の
+    // MUNI_COUNCIL_YEARS）。会派別議席数の横バー＋一覧＋議決チップ。会派ごとの stance 列は持たない。
+    council: shownCouncil
       ? {
-          body: councilForFy.body,
-          seats: councilForFy.seats,
-          asOfLabel: councilForFy.asOfLabel,
-          fyLabel: councilForFy.fyLabel,
-          factions: councilForFy.factions.map((f, i) => {
+          body: shownCouncil.body,
+          // 甲府は定数＝現員。他の議会は原典で定数を確かめた団体だけ「定数」、無ければ「現員」
+          seatsLabel: isFull ? "定数" : shownCouncil.teisu != null ? "定数" : "現員",
+          seatsShown: isFull ? shownCouncil.seats : (shownCouncil.teisu ?? shownCouncil.seats),
+          vacancyLabel:
+            !isFull && shownCouncil.teisu != null && shownCouncil.teisu > shownCouncil.seats
+              ? `欠員 ${shownCouncil.teisu - shownCouncil.seats}`
+              : null,
+          // 甲府は起立採決で賛否が記録されない（docs §6）。他の議会は議員別の賛否を公表している団体が
+          // あるが、まだ収録していない — 「公表されていない」と書かない
+          voteNote: isFull
+            ? "会派ごとの賛否・票数は起立採決のため公表されていません（記録は「可決」のみ）。"
+            : "会派・議員ごとの賛否は未収録です。",
+          seats: shownCouncil.seats,
+          asOfLabel: shownCouncil.asOfLabel,
+          fyLabel: shownCouncil.fyLabel,
+          factions: shownCouncil.factions.map((f, i) => {
             const sw = D.seriesColor(i);
-            const pct = ((f.seats / councilForFy.seats) * 100).toFixed(1);
+            const pct = ((f.seats / shownCouncil.seats) * 100).toFixed(1);
             return {
               name: f.name,
               seatsLabel: `${f.seats}議席`,
@@ -1256,24 +1275,27 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
               tipMove: mkSegTip(f.name, `${f.seats}議席`, `${pct}%`, sw, { key: "council", idx: i }),
             };
           }),
-          resolution: councilForFy.resolution,
-          sourceTitle: councilForFy.sourceTitle,
-          rosterAction: evAction(councilForFy.roster.localUrl),
-          resultAction: evAction(councilForFy.result.localUrl),
+          resolution: shownCouncil.resolution,
+          sourceTitle: shownCouncil.sourceTitle,
+          // 甲府は従来の固定ラベル（「会派別議員名簿」「○定例会 審議結果」）。他は原典の呼び名
+          rosterTitle: isFull ? "会派別議員名簿" : shownCouncil.roster.title,
+          resultTitle: isFull ? `${shownCouncil.resolution.sessionLabel} 審議結果` : shownCouncil.result.title,
+          rosterAction: evAction(shownCouncil.roster.localUrl),
+          resultAction: evAction(shownCouncil.result.localUrl),
           rosterOpen: () =>
             openViewer({
-              url: councilForFy.roster.localUrl, title: councilForFy.roster.title,
-              sub: `${councilForFy.asOfLabel}現在`, originUrl: councilForFy.roster.originUrl,
-              archiveUrl: councilForFy.roster.archiveUrl,
+              url: shownCouncil.roster.localUrl, title: shownCouncil.roster.title,
+              sub: `${shownCouncil.asOfLabel}現在`, originUrl: shownCouncil.roster.originUrl,
+              archiveUrl: shownCouncil.roster.archiveUrl,
             }),
           resultOpen: () =>
             openViewer({
-              url: councilForFy.result.localUrl, title: councilForFy.result.title,
-              sub: councilForFy.resolution.decidedDateLabel, originUrl: councilForFy.result.originUrl,
-              archiveUrl: councilForFy.result.archiveUrl,
+              url: shownCouncil.result.localUrl, title: shownCouncil.result.title,
+              sub: shownCouncil.resolution.decidedDateLabel, originUrl: shownCouncil.result.originUrl,
+              archiveUrl: shownCouncil.result.archiveUrl,
             }),
-          minutesUrl: councilForFy.minutesUrl,
-          newsletterUrl: councilForFy.newsletterUrl,
+          minutesUrl: shownCouncil.minutesUrl,
+          newsletterUrl: shownCouncil.newsletterUrl,
         }
       : null,
     // 事業報告（成果）＝事務事業評価 詳細票。full（甲府）のみ。予算→執行→成果を1事業で通す。

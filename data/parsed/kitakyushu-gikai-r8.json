@@ -1,0 +1,172 @@
+{
+  "docType": "council-composition",
+  "sourceId": "kitakyushu-gikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.5",
+  "parsedAt": "2026-10-01T19:51:54.139Z",
+  "fiscalYear": "R8",
+  "body": "北九州市議会",
+  "seats": 57,
+  "asOf": "2026-02-02",
+  "factions": [
+    {
+      "name": "自民党・無所属の会",
+      "seats": 16,
+      "isIndependent": false,
+      "members": [
+        "戸町武弘",
+        "片山尹",
+        "香月耕治",
+        "日野雄二",
+        "村上幸一",
+        "中村義雄",
+        "鷹木研一郎",
+        "田仲常郎",
+        "西田一",
+        "宮﨑吉輝",
+        "吉村太志",
+        "吉田幸正",
+        "田中元",
+        "上野照弘",
+        "佐藤栄作",
+        "菊地公平"
+      ],
+      "locator": {
+        "file": "file_0056.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 13,
+      "isIndependent": false,
+      "members": [
+        "成重正丈",
+        "岡本義之",
+        "村上直樹",
+        "木畑広宣",
+        "松岡裕一郎",
+        "中島隆治",
+        "渡辺修一",
+        "冨士川厚子",
+        "金子秀一",
+        "小松みさ子",
+        "たかの久仁子",
+        "立山幸子",
+        "廣田信也"
+      ],
+      "locator": {
+        "file": "file_0056.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "市民とともに北九州",
+      "seats": 10,
+      "isIndependent": false,
+      "members": [
+        "三宅まゆみ",
+        "森本由美",
+        "大久保無我",
+        "小宮けい子",
+        "森結実子",
+        "泉日出夫",
+        "中村じゅん子",
+        "山﨑英樹",
+        "山田大輔",
+        "宇都宮亮"
+      ],
+      "locator": {
+        "file": "file_0056.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "荒川徹",
+        "高橋都",
+        "山内涼成",
+        "大石正信",
+        "伊藤淳一",
+        "永井佑",
+        "宇土浩一郎"
+      ],
+      "locator": {
+        "file": "file_0056.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "北九州会",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "本田一郎",
+        "小金丸かずよし",
+        "奥村直樹",
+        "小宮良彦",
+        "伊﨑大義"
+      ],
+      "locator": {
+        "file": "file_0056.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "緑の風",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "柳井誠",
+        "村上さとこ",
+        "井上しんご"
+      ],
+      "locator": {
+        "file": "file_0056.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "日本維新の会",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "有田絵里",
+        "松尾和也"
+      ],
+      "locator": {
+        "file": "file_0056.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "変革と成長",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "井上 純子"
+      ],
+      "locator": {
+        "file": "file_0056.html",
+        "row": 8
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "1",
+    "billName": "令和８年度北九州市一般会計予算",
+    "sessionLabel": "令和８年２月定例会",
+    "decidedDate": "2026-03-25",
+    "decidedDateLabel": "令和8年3月25日",
+    "result": "可決",
+    "locator": {
+      "file": "001198333.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "議員名簿 会派別（更新日 2026年2月2日）",
+  "resultTitle": "会議結果一覧（令和8年2月定例会）"
+}

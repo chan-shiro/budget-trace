@@ -1,0 +1,153 @@
+{
+  "docType": "council-composition",
+  "sourceId": "iwaki-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.5",
+  "parsedAt": "2026-10-01T19:51:56.404Z",
+  "fiscalYear": "R8",
+  "body": "いわき市議会",
+  "seats": 37,
+  "asOf": "2025-11-25",
+  "teisu": 37,
+  "factions": [
+    {
+      "name": "政風会",
+      "seats": 13,
+      "isIndependent": false,
+      "members": [
+        "西山一美",
+        "菅波健",
+        "山守章二",
+        "川崎憲正",
+        "木田都城子",
+        "長谷川貴士",
+        "田頭弘毅",
+        "佐藤不二夫",
+        "根本重和",
+        "草野大輔",
+        "永山宏恵",
+        "蛭田源治",
+        "大峯英之"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "創世会",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "福嶋あずさ",
+        "坂本稔",
+        "狩野光昭",
+        "鈴木さおり",
+        "遠藤崇広",
+        "上壁充",
+        "佐藤和良"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "真政会",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "鈴木演",
+        "小野邦弘",
+        "小菅悟",
+        "馬上卓也",
+        "赤津一夫"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "塩田美枝子",
+        "小野茂",
+        "柴野美佳",
+        "塩沢昭広"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "日本共産党いわき市議団",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "菅野宗長",
+        "塩恭子",
+        "四家智之"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "フォーラムいわき",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "伊藤浩之",
+        "吉田雅人",
+        "小野光貴"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "正論の会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "小野潤三"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "誠心誠意の会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "大友康夫"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 8
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第35号",
+    "billName": "令和８年度いわき市一般会計予算",
+    "sessionLabel": "令和８年いわき市議会２月定例会",
+    "decidedDate": "2026-03-12",
+    "decidedDateLabel": "令和8年3月12日",
+    "result": "原案可決",
+    "locator": {
+      "file": "R8.2giketsu.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "会派別名簿（各会派のページ・議決前の魚拓）",
+  "resultTitle": "令和８年いわき市議会２月定例会 議決結果一覧"
+}
