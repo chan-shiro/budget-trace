@@ -24,7 +24,7 @@ import { z } from "zod";
 import { readRawMeta } from "../lib/store";
 import type { CouncilCompositionDoc, CouncilFactionFact, SourceEntry } from "../types";
 
-export const PARSER_VERSION = "0.5.4";
+export const PARSER_VERSION = "0.5.5";
 
 const factionSchema = z
   .object({
@@ -644,6 +644,15 @@ export function parseCouncilTranscribed(
     //   「見出しの前に件名がある」では帰属を縛れない（2026-10-01 に実測）。代わりに、件名と同じ本文に見出しがあり、
     //   **件名の直後に結果語が無い**（＝自前の結果を持つ賛否表の行ではない）ことを見る。南アルプスの議案27は
     //   同じページの賛否表に「議案27 国民健康保険特別会計予算 可決 〇〇×…」と出るのでここで落ちる
+    // 見出しを原典より短く書き写す（「修正可決確定した議案」を「可決確定した議案」と書く）と最長語の照合をすり抜けるので、
+    // 本文で見出しの直前が結果語の接頭辞（原案のとおり・原案・修正）で終わっていたら throw（2巡目のレビュー）
+    const headCut = resAnchors.some((a) => {
+      for (let i = a.text.indexOf(headN); i >= 0; i = a.text.indexOf(headN, i + 1)) {
+        if (/(原案のとおり|原案|修正)$/.test(a.text.slice(Math.max(0, i - 6), i))) return true;
+      }
+      return false;
+    });
+    if (headCut) missing.push(`見出し「${r.resultBlock.heading}」が原典より短い（直前に「原案」「修正」などがある）`);
     const ok = resAnchors.some((a) => {
       if (!a.text.includes(headN)) return false;
       const w = a.text.slice(a.at + nameN.length, a.at + nameN.length + AFTER);
