@@ -549,6 +549,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
       }
     ]
   },
+  "202177": {
+    "budget": [
+      {
+        "fyLabel": "令和4年度・令和3年度・令和2年度",
+        "reason": "予算説明資料と当初予算の概要が紙をスキャンした画像のPDFで、文字として取り出せない。予算書は年度のページに掲載が無い。",
+        "checkedOn": "2026-10-01"
+      }
+    ]
+  },
   "212016": {
     "budget": [
       {
@@ -1101,6 +1110,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
         "fyLabel": "令和7年度・令和6年度・令和5年度",
         "reason": "予算に関する説明書は born-digital だがテキスト層が無く、pdftotext が 30〜50バイトしか返さない。R8 が初のテキスト層あり。",
         "checkedOn": "2026-07-26"
+      }
+    ]
+  },
+  "462039": {
+    "budget": [
+      {
+        "fyLabel": "令和2年度",
+        "reason": "予算書と予算に関する説明書は文字を取り出せない画像のPDFで、読める資料は「当初予算の概要」の対前年度比較表だけ。その表の廃止された款「○【廃款】自動車取得税交付金」が当年度の欄が空欄のため既存パーサが当年度を読み違え、歳入の当年度の合計が 40,000千円合わなくなる。",
+        "checkedOn": "2026-10-01"
       }
     ]
   },

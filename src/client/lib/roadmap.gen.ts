@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 318,
+  "budgetCount": 322,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 2369,
-  "fileCount": 3612,
-  "archivedCount": 2194,
+  "sourceCount": 2393,
+  "fileCount": 3636,
+  "archivedCount": 2220,
   "licenseOpen": 102,
-  "licensePermission": 2049,
+  "licensePermission": 2073,
   "licenseUnverified": 218,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -1017,8 +1017,20 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "泉佐野市",
+      "code": "272132",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "富田林市",
       "code": "272141",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "河内長野市",
+      "code": "272167",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },
@@ -1275,6 +1287,12 @@ export const ROADMAP_PROGRESS = {
       "range": "H25〜R6（6年度）"
     },
     {
+      "name": "鹿屋市",
+      "code": "462039",
+      "years": 6,
+      "range": "R3〜R8（6年度）"
+    },
+    {
       "name": "宜野湾市",
       "code": "472051",
       "years": 6,
@@ -1423,6 +1441,12 @@ export const ROADMAP_PROGRESS = {
       "code": "142140",
       "years": 4,
       "range": "R3〜R8（4年度）"
+    },
+    {
+      "name": "佐久市",
+      "code": "202177",
+      "years": 4,
+      "range": "R5〜R8（4年度）"
     },
     {
       "name": "藤枝市",
