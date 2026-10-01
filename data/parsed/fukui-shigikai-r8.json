@@ -1,0 +1,124 @@
+{
+  "docType": "council-composition",
+  "sourceId": "fukui-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.3",
+  "parsedAt": "2026-10-01T17:02:15.319Z",
+  "fiscalYear": "R8",
+  "body": "福井市議会",
+  "seats": 31,
+  "asOf": "2025-06-16",
+  "factions": [
+    {
+      "name": "一真会",
+      "seats": 13,
+      "isIndependent": false,
+      "members": [
+        "青木幹雄",
+        "池上優徳",
+        "佐野弘",
+        "漆﨑與",
+        "見谷喜代三",
+        "皆川信正",
+        "今村辰和",
+        "堀江廣海",
+        "八田一以",
+        "寺島恭也",
+        "榊原光賀",
+        "葛野早智代",
+        "浦上逸人"
+      ],
+      "locator": {
+        "file": "p015912.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "市民クラブ",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "玉村正人",
+        "村田耕一",
+        "酒井良樹",
+        "堀川秀樹",
+        "髙田稔浩",
+        "宮岡勝也"
+      ],
+      "locator": {
+        "file": "p015912.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "新政会",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "野嶋祐記",
+        "藤田諭",
+        "奥島光晴",
+        "伊藤洋一",
+        "田中義乃"
+      ],
+      "locator": {
+        "file": "p015912.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "菅生敬一",
+        "津田かおり",
+        "下畑健二"
+      ],
+      "locator": {
+        "file": "p015912.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "鈴木正樹",
+        "山田文葉"
+      ],
+      "locator": {
+        "file": "p015912.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "会派に属さない議員",
+      "seats": 2,
+      "isIndependent": true,
+      "members": [
+        "近藤實",
+        "岩佐武彦"
+      ],
+      "locator": {
+        "file": "p015912.html",
+        "row": 6
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第１号議案",
+    "billName": "令和８年度福井市一般会計予算",
+    "sessionLabel": "令和８年３月定例会",
+    "decidedDate": "2026-03-19",
+    "decidedDateLabel": "令和8年3月19日",
+    "result": "原案可決",
+    "locator": {
+      "file": "R803t.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "会派等名簿（令和7年6月16日現在）",
+  "resultTitle": "令和８年３月定例会提出議案等及び審議結果"
+}

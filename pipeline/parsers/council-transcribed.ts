@@ -24,7 +24,7 @@ import { z } from "zod";
 import { readRawMeta } from "../lib/store";
 import type { CouncilCompositionDoc, CouncilFactionFact, SourceEntry } from "../types";
 
-export const PARSER_VERSION = "0.5.0";
+export const PARSER_VERSION = "0.5.3";
 
 const factionSchema = z
   .object({
@@ -107,6 +107,12 @@ const optionsSchema = z.object({
    * - totalText: 総数を印字した原文（「現員数37人」「出席議員（３８名）」）。数 = 現員
    */
   memberMarker: z.string().optional(),
+  /**
+   * memberMarker を名簿ではなく別の原典で数える（長崎: 議決当日の賛否表の予算の行の印＝出席して表決した議員ごとに1つ）。
+   * 印の付かない議員（議長など）は memberMarkerExcludes に**氏名で**書く（members の中の人であること）
+   */
+  memberMarkerUrl: z.string().url().optional(),
+  memberMarkerExcludes: z.array(z.string().min(1)).optional(),
   factionMarker: z.string().optional(),
   totalText: z.object({ text: z.string().min(1), url: z.string().url().optional() }).optional(),
   /** 議会全体の人数の網がどれも掛けられない理由（原典の事情）。書けば通るが、会派ごとの書き落としは捕まらない */
@@ -330,9 +336,18 @@ export function parseCouncilTranscribed(
       );
     }
     const head = allNames[i]![0]!;
+    // 会派名が他の会派名の中に含まれる（豊中「無所属」⊂「大阪維新の会・無所属議員団」、吹田「参政党」⊂「吹田党・参政党議員団」）
+    // とき、長い方の会派名の中の出現は区間の始まりにしない
+    const longer = allNames.map((ns) => ns[0]!).filter((nm) => nm !== head && nm.includes(head));
+    const insideLonger = (t: string, st: number) =>
+      longer.some((nm) => {
+        const off = nm.indexOf(head);
+        return t.startsWith(nm, st - off);
+      });
     const out: string[] = [];
     for (const v of roster.views) {
       for (let st = v.text.indexOf(head); st >= 0; st = v.text.indexOf(head, st + 1)) {
+        if (insideLonger(v.text, st)) continue;
         const ends = allNames
           .map((ns, j) => (j === i ? -1 : v.text.indexOf(ns[0]!, st + head.length)))
           .filter((e) => e > st);
@@ -451,8 +466,14 @@ export function parseCouncilTranscribed(
   const countIn = (views: { text: string }[], re: string) => Math.max(0, ...views.map((v) => (v.text.match(new RegExp(re, "g")) ?? []).length));
   const rosterAll = [...roster.views, ...opt.factions.filter((f) => f.url).flatMap((f) => readDoc(fileFor(f.url!)).views)];
   if (opt.memberMarker) {
-    const c = countIn(roster.views, opt.memberMarker);
-    if (c !== seats) missing.push(`${rosterFile.filename}: 議員ごとの印「${opt.memberMarker}」は名簿に ${c} 回、書き写しは ${seats}人`);
+    const views = opt.memberMarkerUrl ? readDoc(fileFor(opt.memberMarkerUrl)).views : roster.views;
+    const ex = opt.memberMarkerExcludes ?? [];
+    const all = opt.factions.flatMap((f) => f.members.map(norm));
+    for (const e of ex) if (!all.includes(norm(e))) missing.push(`memberMarkerExcludes「${e}」が members にありません`);
+    const c = countIn(views, opt.memberMarker);
+    if (c + ex.length !== seats) {
+      missing.push(`議員ごとの印「${opt.memberMarker}」は ${c} 回${ex.length ? `＋印の無い ${ex.length}人` : ""}、書き写しは ${seats}人`);
+    }
   }
   if (opt.factionMarker) {
     const c = countIn(roster.views, opt.factionMarker);
@@ -540,7 +561,9 @@ export function parseCouncilTranscribed(
     for (let i = v.text.indexOf(nameN); i >= 0; i = v.text.indexOf(nameN, i + 1)) {
       // 「1」「議1」のような短い番号は直前の数字に紛れるので、件名の**すぐ前**（番号の長さ＋2字）に限る
       const win = billNoN.length <= 3 ? billNoN.length + 2 : BEFORE;
-      const before = v.text.slice(Math.max(0, i - win), i + (nameN.includes(billNoN) ? nameN.length : 0));
+      // 件名が議案番号で始まる書き方（南アルプス「議案26一般会計予算」）のときだけ件名の頭も窓に含める。
+      // 「件名のどこかに番号の字がある」で広げると、1桁の番号が「令和８年度」の８に当たる（草加で実測）
+      const before = v.text.slice(Math.max(0, i - win), i + (nameN.startsWith(billNoN) ? billNoN.length : 0));
       if (r.farOk?.includes("billNo") || before.includes(billNoN)) anchors.push({ text: v.text, at: i, page: v.page });
     }
   }
@@ -612,7 +635,7 @@ export function parseCouncilTranscribed(
     const headN = norm(r.resultBlock.heading);
     if (!headN.includes(resultN)) missing.push(`結果「${r.result}」が見出し「${r.resultBlock.heading}」の語ではありません`);
     // 見出しは「承認・可決・同意」のように複数の語を並べる。予算の議決に当たる語だけを許す
-    if (!/^(原案可決|修正可決|可決|否決)$/.test(resultN)) missing.push(`結果「${r.result}」は予算の議決の語ではありません`);
+    if (!/^(原案のとおり可決|原案可決|修正可決|可決|否決)$/.test(resultN)) missing.push(`結果「${r.result}」は予算の議決の語ではありません`);
     // ⚠ 見出しと一覧の並び順は抽出モードで変わる（-layout と -raw で見出しが一覧の前にも後にも出る）ので、
     //   「見出しの前に件名がある」では帰属を縛れない（2026-10-01 に実測）。代わりに、件名と同じ本文に見出しがあり、
     //   **件名の直後に結果語が無い**（＝自前の結果を持つ賛否表の行ではない）ことを見る。南アルプスの議案27は
@@ -625,7 +648,7 @@ export function parseCouncilTranscribed(
     if (!ok) missing.push(`${resultFile.filename}: 件名が見出し「${r.resultBlock.heading}」の一覧に属していません`);
   } else {
     // 結果は原典の語のまま — 窓の中で件名に最も近い結果語が、書き写した語と同じであること
-    const RE = /原案可決|修正可決|可決|否決|承認|同意|認定|採択/g;
+    const RE = /原案のとおり可決|修正のとおり可決|原案可決|修正可決|可決|否決|承認|同意|認定|採択/g;
     const ok = resAnchors.some((a) => {
       if (r.resultSide === "before") {
         const w = a.text.slice(Math.max(0, a.at - BEFORE), a.at);
@@ -640,7 +663,12 @@ export function parseCouncilTranscribed(
       const at = m0Index(w, RE);
       if (at == null) return false;
       const m = at.word;
-      if (m === resultN) return true;
+      // 原典が結果語の直後に括弧書き（「可決（多数）」）を付けているなら、それも書き写すこと（丸めない・大分で実測）
+      // 括弧の中が日付（つくば「原案可決(3/25)」）なら結果語の一部ではない
+      if (m === resultN) {
+        const sfx = w.slice(at.index + m.length).match(/^[(（]([^)）]{1,10})[)）]/);
+        return !sfx || /^\d{1,2}[/月.]\d{1,2}日?$/.test(sfx[1]!);
+      }
       return resultN.startsWith(m) && /^[(（][^)）]{1,10}[)）]$/.test(resultN.slice(m.length)) && w.slice(at.index).startsWith(resultN);
     });
     const side = r.resultSide === "before" ? `直前${BEFORE}字` : `直後${AFTER}字`;

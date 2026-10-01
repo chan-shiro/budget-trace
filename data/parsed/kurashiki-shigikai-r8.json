@@ -1,0 +1,148 @@
+{
+  "docType": "council-composition",
+  "sourceId": "kurashiki-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.3",
+  "parsedAt": "2026-10-01T17:02:14.236Z",
+  "fiscalYear": "R8",
+  "body": "倉敷市議会",
+  "seats": 43,
+  "asOf": "2025-02-18",
+  "teisu": 43,
+  "factions": [
+    {
+      "name": "くらしき創生クラブ",
+      "seats": 10,
+      "isIndependent": false,
+      "members": [
+        "北畠克彦",
+        "三村英世",
+        "難波朋裕",
+        "藤原薫子",
+        "天野千歌",
+        "荒木竜二",
+        "伊東裕紀",
+        "塩田健",
+        "時尾博幸",
+        "守屋弘志"
+      ],
+      "locator": {
+        "file": "1008326.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "未来クラブ",
+      "seats": 9,
+      "isIndependent": false,
+      "members": [
+        "大橋賢",
+        "原田龍五",
+        "片山貴光",
+        "若林昭雄",
+        "赤澤幹温",
+        "真田意索",
+        "中西公仁",
+        "矢野周子",
+        "山畑滝男"
+      ],
+      "locator": {
+        "file": "1008326.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "公明党倉敷市議団",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "生水耕二",
+        "新垣敦子",
+        "薮田尊典",
+        "中西善之",
+        "池田和夫",
+        "太田美貴絵",
+        "近藤徹弥"
+      ],
+      "locator": {
+        "file": "1008326.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "新風くらしき",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "中島光浩",
+        "日向豊",
+        "芦田泰宏",
+        "塩津心",
+        "武則史園",
+        "平井俊光"
+      ],
+      "locator": {
+        "file": "1008326.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "新政クラブ",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "大守秀行",
+        "瀧本寛",
+        "松成康昭",
+        "大橋研",
+        "山口博隆"
+      ],
+      "locator": {
+        "file": "1008326.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "青空市民クラブ",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "齋藤武次郎",
+        "小郷ひな子",
+        "藤井昭佐"
+      ],
+      "locator": {
+        "file": "1008326.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "日本共産党倉敷市議会議員団",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "末田正彦",
+        "田辺牧美",
+        "田口明子"
+      ],
+      "locator": {
+        "file": "1008326.html",
+        "row": 7
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第２６号",
+    "billName": "令和８年度倉敷市一般会計予算",
+    "sessionLabel": "令和８年第３回倉敷市議会（第１回定例会）",
+    "decidedDate": "2026-03-18",
+    "decidedDateLabel": "令和8年3月18日",
+    "result": "原案可決",
+    "locator": {
+      "file": "0318giannitiran.pdf",
+      "page": 2
+    }
+  },
+  "rosterTitle": "会派別名簿（更新日 2025年2月18日）",
+  "resultTitle": "令和８年第３回倉敷市議会（第１回定例会）議案一覧"
+}

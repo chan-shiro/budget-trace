@@ -1,0 +1,46 @@
+{
+  "sourceId": "maebashi-shigikai-r8",
+  "files": [
+    {
+      "filename": "13314.html",
+      "sha256": "131cf2b551371ba937e3a08c32c44896a2224c544799d1206f110cb5e43a135e",
+      "bytes": 41186,
+      "fetchedAt": "2026-10-01T16:54:23.242Z",
+      "fetchedFrom": "https://web.archive.org/web/20260326164618id_/https://www.city.maebashi.gunma.jp/gikai/1/13314.html"
+    },
+    {
+      "filename": "r823.pdf",
+      "sha256": "14b1f53d83e75cc802b049ca5ddb103f8c5b78bc119376aba469473b1b07371d",
+      "bytes": 289364,
+      "fetchedAt": "2026-10-01T16:54:23.243Z",
+      "fetchedFrom": "https://www.city.maebashi.gunma.jp/material/files/group/85/r823.pdf"
+    },
+    {
+      "filename": "1234567_Template_doc_print_window_VoiceType_all_DocumentID_1628.html",
+      "sha256": "3b95a0e9e012db75b2bd5fad6577b0273f5c8442fdbc22697d4302ac26fdebcb",
+      "bytes": 10630,
+      "fetchedAt": "2026-10-01T16:54:23.243Z",
+      "fetchedFrom": "https://www.city.maebashi.gunma.dbsr.jp/index.php/1234567?Template=doc-print-window&VoiceType=all&DocumentID=1628",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "1234567_Template_doc_print_window_VoiceType_all_DocumentID_1629.html",
+      "sha256": "00fd581fdcd5ab8a69e01460b3df17fdc5f3c2fd491174e722ef7583b92b0080",
+      "bytes": 163400,
+      "fetchedAt": "2026-10-01T16:54:23.244Z",
+      "fetchedFrom": "https://www.city.maebashi.gunma.dbsr.jp/index.php/1234567?Template=doc-print-window&VoiceType=all&DocumentID=1629",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "13369.html",
+      "sha256": "a0a82bf4372fe0da7406762f70ce63fcd481efb0ffd91c81c0d4b790d80f2af6",
+      "bytes": 55267,
+      "fetchedAt": "2026-10-01T16:54:23.244Z",
+      "fetchedFrom": "https://www.city.maebashi.gunma.jp/gikai/4/13369.html"
+    }
+  ]
+}

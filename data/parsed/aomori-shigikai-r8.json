@@ -1,0 +1,170 @@
+{
+  "docType": "council-composition",
+  "sourceId": "aomori-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.3",
+  "parsedAt": "2026-10-01T17:02:10.991Z",
+  "fiscalYear": "R8",
+  "body": "青森市議会",
+  "seats": 32,
+  "asOf": "2025-01-27",
+  "teisu": 32,
+  "factions": [
+    {
+      "name": "自民クラブ",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "小豆畑緑",
+        "花田明仁",
+        "長谷川章悦",
+        "大矢保",
+        "中田靖人",
+        "澁谷洋子",
+        "柿崎孝治",
+        "関貴光"
+      ],
+      "locator": {
+        "file": "1007118.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "創青会",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "里村誠悦",
+        "小倉尚裕",
+        "木戸喜美男",
+        "舘山善也",
+        "木村淳司"
+      ],
+      "locator": {
+        "file": "1007118.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "市民クラブ",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "木下靖",
+        "工藤健",
+        "奈良祥孝",
+        "竹山美虎"
+      ],
+      "locator": {
+        "file": "1007118.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "山本武朝",
+        "渡部伸広",
+        "軽米智雅子",
+        "工藤夕介"
+      ],
+      "locator": {
+        "file": "1007118.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "村川みどり",
+        "天内慎也",
+        "万徳なお子",
+        "赤平勇人"
+      ],
+      "locator": {
+        "file": "1007118.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "立憲民主・社民",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "蛯名和子",
+        "藤田誠",
+        "小熊ひと美"
+      ],
+      "locator": {
+        "file": "1007118.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "無所属（山田千里）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "山田千里"
+      ],
+      "locator": {
+        "file": "1007118.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "無所属（相馬純子）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "相馬純子"
+      ],
+      "locator": {
+        "file": "1007118.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "無所属（中村美津緒）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "中村美津緒"
+      ],
+      "locator": {
+        "file": "1007118.html",
+        "row": 9
+      }
+    },
+    {
+      "name": "無所属（奈良岡隆）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "奈良岡隆"
+      ],
+      "locator": {
+        "file": "1007118.html",
+        "row": 10
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第２号",
+    "billName": "令和８年度青森市一般会計予算",
+    "sessionLabel": "令和８年第１回定例会",
+    "decidedDate": "2026-03-24",
+    "decidedDateLabel": "令和8年3月24日",
+    "result": "原案可決",
+    "locator": {
+      "file": "r08-t1-giketsu2.pdf",
+      "page": 7
+    }
+  },
+  "rosterTitle": "議員名簿（会派別）（更新日 2025年1月27日）",
+  "resultTitle": "令和８年第１回定例会 議案等審議結果一覧"
+}

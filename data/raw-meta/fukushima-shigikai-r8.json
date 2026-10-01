@@ -1,0 +1,19 @@
+{
+  "sourceId": "fukushima-shigikai-r8",
+  "files": [
+    {
+      "filename": "vol230.pdf",
+      "sha256": "df5c1c0fb9d5dd88b0e6ac4d1c44795d4e751faca474f48c127134f7ff213588",
+      "bytes": 9978505,
+      "fetchedAt": "2026-10-01T16:54:08.326Z",
+      "fetchedFrom": "https://www.city.fukushima.fukushima.jp/material/files/group/72/vol230.pdf"
+    },
+    {
+      "filename": "3751.html",
+      "sha256": "1ec0d4af038c549ccffded4560d0e1c1554f0a7f631619822a99b7a6e32d6f7b",
+      "bytes": 85718,
+      "fetchedAt": "2026-10-01T16:54:08.327Z",
+      "fetchedFrom": "https://www.city.fukushima.fukushima.jp/gikai/gian/2/3751.html"
+    }
+  ]
+}

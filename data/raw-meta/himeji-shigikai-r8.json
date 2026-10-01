@@ -1,0 +1,26 @@
+{
+  "sourceId": "himeji-shigikai-r8",
+  "files": [
+    {
+      "filename": "0000000374.html",
+      "sha256": "24806a37bdfe5002d28c8fdc5f36ac97064857a5be4d44962c64a33e47027a8f",
+      "bytes": 76952,
+      "fetchedAt": "2026-10-01T16:54:23.276Z",
+      "fetchedFrom": "https://web.archive.org/web/20260415193403id_/https://www.city.himeji.lg.jp/shisei/0000000374.html"
+    },
+    {
+      "filename": "0325giannsinngikekka.pdf",
+      "sha256": "858fb292e7df6ef8947996e3c287d29cf4dc15b456a96379c51ce48e54415ea9",
+      "bytes": 401308,
+      "fetchedAt": "2026-10-01T16:54:23.277Z",
+      "fetchedFrom": "https://www.city.himeji.lg.jp/shisei/cmsfiles/contents/0000032/32725/0325giannsinngikekka.pdf"
+    },
+    {
+      "filename": "0000032505.html",
+      "sha256": "142aa32c321834248f65544d13fc5a45f40567f09d845ea5ef3d06daa2233ff4",
+      "bytes": 78089,
+      "fetchedAt": "2026-10-01T16:54:23.278Z",
+      "fetchedFrom": "https://www.city.himeji.lg.jp/shisei/0000032505.html"
+    }
+  ]
+}

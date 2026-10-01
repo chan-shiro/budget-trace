@@ -1,0 +1,133 @@
+{
+  "docType": "council-composition",
+  "sourceId": "hachinohe-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.3",
+  "parsedAt": "2026-10-01T17:02:11.115Z",
+  "fiscalYear": "R8",
+  "body": "八戸市議会",
+  "seats": 28,
+  "asOf": "2023-05-10",
+  "teisu": 28,
+  "factions": [
+    {
+      "name": "自民クラブ",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "長谷川ひろゆき",
+        "岡田英",
+        "日當正男",
+        "藤川優里",
+        "小屋敷孝",
+        "壬生八十博",
+        "立花敬之",
+        "坂本美洋"
+      ],
+      "locator": {
+        "file": "9032.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "きずなクラブ",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "吉田洸龍",
+        "田名部裕美",
+        "三浦博司",
+        "石橋充志",
+        "山名文世",
+        "寺地則行",
+        "五戸定博"
+      ],
+      "locator": {
+        "file": "9032.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "自由民主・無所属クラブ",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "山之内悠",
+        "間盛仁",
+        "久保百恵",
+        "上条幸哉",
+        "森園秀一",
+        "豊田美好"
+      ],
+      "locator": {
+        "file": "9032.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "土嶺直樹",
+        "高橋正人",
+        "中村益則"
+      ],
+      "locator": {
+        "file": "9032.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "新緑・無所属の会",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "伊藤圓子",
+        "吉田淳一"
+      ],
+      "locator": {
+        "file": "9032.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "無所属（苫米地あつ子）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "苫米地あつ子"
+      ],
+      "locator": {
+        "file": "9032.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "無所属（前田由美）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "前田由美"
+      ],
+      "locator": {
+        "file": "9032.html",
+        "row": 7
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第２号",
+    "billName": "令和８年度八戸市一般会計予算",
+    "sessionLabel": "令和８年３月定例会",
+    "decidedDate": "2026-03-23",
+    "decidedDateLabel": "令和8年3月23日",
+    "result": "原案可決",
+    "locator": {
+      "file": "R0803_giannsinnsakekkahyou.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "会派一覧（更新日 2023年05月10日）",
+  "resultTitle": "令和8年3月定例会 議案審査結果表"
+}

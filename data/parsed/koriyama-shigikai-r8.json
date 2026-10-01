@@ -1,0 +1,175 @@
+{
+  "docType": "council-composition",
+  "sourceId": "koriyama-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.3",
+  "parsedAt": "2026-10-01T17:02:11.570Z",
+  "fiscalYear": "R8",
+  "body": "郡山市議会",
+  "seats": 38,
+  "asOf": "2025-09-09",
+  "factions": [
+    {
+      "name": "志翔会",
+      "seats": 11,
+      "isIndependent": false,
+      "members": [
+        "久野三男",
+        "大城宏之",
+        "佐藤政喜",
+        "近内利男",
+        "塩田義智",
+        "森合秀行",
+        "加藤漢太",
+        "伊藤典夫",
+        "薄井長広",
+        "大河原裕勝",
+        "本田豊栄"
+      ],
+      "locator": {
+        "file": "2655.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "新政会",
+      "seats": 9,
+      "isIndependent": false,
+      "members": [
+        "石川義和",
+        "廣田耕一",
+        "栗原晃",
+        "良田金次郎",
+        "折笠正",
+        "會田一男",
+        "福田文子",
+        "遠藤利子",
+        "冨樫賢太郎"
+      ],
+      "locator": {
+        "file": "2655.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "郡山市議会公明党",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "小島寛子",
+        "田川正治",
+        "但野光夫",
+        "山根悟"
+      ],
+      "locator": {
+        "file": "2655.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "緑風会",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "大木進",
+        "諸越裕",
+        "名木敬一",
+        "池田義人"
+      ],
+      "locator": {
+        "file": "2655.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "自由民主党郡山市議団",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "佐藤栄作",
+        "三瓶宗盛",
+        "村上晃一"
+      ],
+      "locator": {
+        "file": "2655.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "日本共産党郡山市議団",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "岡田哲夫",
+        "遠藤隆"
+      ],
+      "locator": {
+        "file": "2655.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "立憲民主党郡山",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "八重樫小代子",
+        "飯塚裕一"
+      ],
+      "locator": {
+        "file": "2655.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "無所属の会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "箭内好彦"
+      ],
+      "locator": {
+        "file": "2655.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "立憲民主党",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "吉田公男"
+      ],
+      "locator": {
+        "file": "2655.html",
+        "row": 9
+      }
+    },
+    {
+      "name": "れいわ新選組",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "古山唯"
+      ],
+      "locator": {
+        "file": "2655.html",
+        "row": 10
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第39号",
+    "billName": "令和８年度郡山市一般会計予算",
+    "sessionLabel": "令和８年３月定例会",
+    "decidedDate": "2026-03-19",
+    "decidedDateLabel": "令和8年3月19日",
+    "result": "原案可決",
+    "locator": {
+      "file": "118874.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "会派別議員名簿（更新日 2025年9月9日）",
+  "resultTitle": "令和８年３月定例会（３月19日）議決結果"
+}

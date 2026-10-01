@@ -1,0 +1,33 @@
+{
+  "sourceId": "koshigaya-shigikai-r8",
+  "files": [
+    {
+      "filename": "kaiha.html",
+      "sha256": "be3dedb3689c5b6e9da7b075a0d727649a011db12e8a020cb35c57e5f342da33",
+      "bytes": 21588,
+      "fetchedAt": "2026-10-01T16:55:24.092Z",
+      "fetchedFrom": "https://web.archive.org/web/20260415105315id_/https://www.city.koshigaya.saitama.jp/gikai/giin/kaiha.html"
+    },
+    {
+      "filename": "gikaikekka80318.pdf",
+      "sha256": "ce3b8819bcb39059f8ba0e0e645ceb2ff78c7cc4729306808eb3d6724abc9f8e",
+      "bytes": 153846,
+      "fetchedAt": "2026-10-01T16:55:24.094Z",
+      "fetchedFrom": "https://www.city.koshigaya.saitama.jp/gikai/singi/gian/giketsu/files/gikaikekka80318.pdf"
+    },
+    {
+      "filename": "gikaikekka0803.html",
+      "sha256": "bae9ac108afb282d25840d211086c564e9c981d836770c54c573b1341ea62d8b",
+      "bytes": 18621,
+      "fetchedAt": "2026-10-01T16:55:24.094Z",
+      "fetchedFrom": "https://www.city.koshigaya.saitama.jp/gikai/singi/gian/giketsu/gikaikekka0803.html"
+    },
+    {
+      "filename": "kaikinittei803.html",
+      "sha256": "a20c154a4409f51123965b1a5eee47a8f9b6e8d00d59d0a313b1510ae8d6fc22",
+      "bytes": 24757,
+      "fetchedAt": "2026-10-01T16:55:24.094Z",
+      "fetchedFrom": "https://www.city.koshigaya.saitama.jp/gikai/singi/kaiki/kaiki/kaikinittei803.html"
+    }
+  ]
+}

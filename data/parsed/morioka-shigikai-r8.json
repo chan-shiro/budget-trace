@@ -1,0 +1,141 @@
+{
+  "docType": "council-composition",
+  "sourceId": "morioka-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.3",
+  "parsedAt": "2026-10-01T17:02:14.407Z",
+  "fiscalYear": "R8",
+  "body": "盛岡市議会",
+  "seats": 38,
+  "asOf": "2025-09-02",
+  "factions": [
+    {
+      "name": "盛友会",
+      "seats": 17,
+      "isIndependent": false,
+      "members": [
+        "浅沼克人",
+        "天沼久純",
+        "遠藤政幸",
+        "小笠原秀夫",
+        "菊田隆",
+        "工藤健一",
+        "櫻裕子",
+        "佐藤明彦",
+        "鈴木真吾",
+        "竹田浩久",
+        "田山俊悦",
+        "千葉順子",
+        "千葉伸行",
+        "野田尚紀",
+        "藤澤由蔵",
+        "村田芳三",
+        "山崎智樹"
+      ],
+      "locator": {
+        "file": "1014492.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "創盛会",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "大畑正二",
+        "兼平孝信",
+        "後藤百合子",
+        "寺長根浩",
+        "豊村徹也",
+        "中村一",
+        "細川由香里"
+      ],
+      "locator": {
+        "file": "1014492.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "日本共産党盛岡市議団",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "神部伸也",
+        "庄子春治",
+        "鈴木努",
+        "高橋和夫",
+        "三田村亜美子"
+      ],
+      "locator": {
+        "file": "1014492.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "市政クラブ",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "伊勢志穂",
+        "中村亨",
+        "中村雅幸",
+        "野中靖志"
+      ],
+      "locator": {
+        "file": "1014492.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "池野直友",
+        "太田隆司",
+        "鈴木聖子"
+      ],
+      "locator": {
+        "file": "1014492.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "日本維新の会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "佐藤尚弘"
+      ],
+      "locator": {
+        "file": "1014492.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "れいわ新選組",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "縄手豊子"
+      ],
+      "locator": {
+        "file": "1014492.html",
+        "row": 7
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第3号",
+    "billName": "令和8年度盛岡市一般会計予算",
+    "sessionLabel": "令和8年3月定例会",
+    "decidedDate": "2026-03-26",
+    "decidedDateLabel": "令和8年3月26日",
+    "result": "可決(多数)",
+    "locator": {
+      "file": "1055511.html"
+    }
+  },
+  "rosterTitle": "会派等別議員名簿（更新日 令和7年9月2日）",
+  "resultTitle": "令和8年3月定例会 提出議案・議決結果"
+}

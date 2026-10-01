@@ -1,0 +1,148 @@
+{
+  "docType": "council-composition",
+  "sourceId": "suita-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.3",
+  "parsedAt": "2026-10-01T17:02:12.701Z",
+  "fiscalYear": "R8",
+  "body": "吹田市議会",
+  "seats": 33,
+  "asOf": "2026-01-27",
+  "factions": [
+    {
+      "name": "大阪維新の会",
+      "seats": 10,
+      "isIndependent": false,
+      "members": [
+        "後藤久美子",
+        "川田尚",
+        "江口礼四郎",
+        "清水亮佑",
+        "今西洋治",
+        "林恭広",
+        "橋本潤",
+        "乾詮",
+        "高村将敏",
+        "井口直美"
+      ],
+      "locator": {
+        "file": "1012851.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "日本共産党 吹田市議会議員団",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "益田洋平",
+        "玉井美樹子",
+        "山根建人",
+        "村口久美子",
+        "竹村博之",
+        "塩見みゆき",
+        "柿原真生"
+      ],
+      "locator": {
+        "file": "1012851.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "公明党 吹田市議会議員団",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "浜川剛",
+        "井上真佐美",
+        "野田泰弘",
+        "矢野伸一郎",
+        "小北一美"
+      ],
+      "locator": {
+        "file": "1012851.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "自民党吹田・無所属の会",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "澤田直己",
+        "白石透",
+        "有澤由真",
+        "泉井智弘",
+        "藤木栄亮"
+      ],
+      "locator": {
+        "file": "1012851.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "吹田党・参政党議員団",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "後藤恭平",
+        "中西勇太"
+      ],
+      "locator": {
+        "file": "1012851.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "市民と歩む議員の会",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "梶川文代",
+        "五十川有香"
+      ],
+      "locator": {
+        "file": "1012851.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "立憲民主党",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "西岡友和"
+      ],
+      "locator": {
+        "file": "1012851.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "参政党",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "久保直子"
+      ],
+      "locator": {
+        "file": "1012851.html",
+        "row": 8
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第19号",
+    "billName": "令和８年度吹田市一般会計予算",
+    "sessionLabel": "令和８年(2026年)２月定例会",
+    "decidedDate": "2026-03-24",
+    "decidedDateLabel": "令和8年3月24日",
+    "result": "原案可決",
+    "locator": {
+      "file": "50802result.pdf",
+      "page": 2
+    }
+  },
+  "rosterTitle": "会派別（令和8年（2026年）1月27日現在）",
+  "resultTitle": "令和８年(2026年)２月定例会議決結果・賛否一覧表"
+}

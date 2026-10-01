@@ -1,0 +1,19 @@
+{
+  "sourceId": "yokosuka-shigikai-r8",
+  "files": [
+    {
+      "filename": "giin_kaiha.html",
+      "sha256": "864552a57cdeb09d32a254b2498f290adea2e9b46220fe3cfb8118f1c253fa0d",
+      "bytes": 31955,
+      "fetchedAt": "2026-10-01T16:55:24.095Z",
+      "fetchedFrom": "https://www.city.yokosuka.kanagawa.jp/7860/council/roster/giin_kaiha.html"
+    },
+    {
+      "filename": "20260325giketsukekka.pdf",
+      "sha256": "94f46c9f25428af811ce6befa9af190a24c3e4b26e631555b53d3c99c94a2a86",
+      "bytes": 93650,
+      "fetchedAt": "2026-10-01T16:55:24.096Z",
+      "fetchedFrom": "https://www.city.yokosuka.kanagawa.jp/7860/council/result_report/giji/documents/20260325giketsukekka.pdf"
+    }
+  ]
+}

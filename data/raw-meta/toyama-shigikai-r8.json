@@ -1,0 +1,19 @@
+{
+  "sourceId": "toyama-shigikai-r8",
+  "files": [
+    {
+      "filename": "1007104.html",
+      "sha256": "02679ab37e6ad826ee4f2e25db0cdfc2f4a600dd9ea072e5cb9fb8e72333fe38",
+      "bytes": 25858,
+      "fetchedAt": "2026-10-01T16:55:24.096Z",
+      "fetchedFrom": "https://www.city.toyama.lg.jp/gikai/giinmeibo/1007104.html"
+    },
+    {
+      "filename": "sanpi-r0803-2.pdf",
+      "sha256": "337da882247b0c3dcbd245fb57123668e6eecf0b4057ced048f604d8e67d16b4",
+      "bytes": 378598,
+      "fetchedAt": "2026-10-01T16:55:24.097Z",
+      "fetchedFrom": "https://www.city.toyama.lg.jp/_res/projects/default_project/_page_/001/007/118/sanpi-r0803-2.pdf"
+    }
+  ]
+}

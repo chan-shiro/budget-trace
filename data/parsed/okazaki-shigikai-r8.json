@@ -1,0 +1,119 @@
+{
+  "docType": "council-composition",
+  "sourceId": "okazaki-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.3",
+  "parsedAt": "2026-10-01T17:02:15.715Z",
+  "fiscalYear": "R8",
+  "body": "岡崎市議会",
+  "seats": 37,
+  "asOf": "2025-11-14",
+  "factions": [
+    {
+      "name": "自民清風会",
+      "seats": 16,
+      "isIndependent": false,
+      "members": [
+        "野々山雄一郎",
+        "磯部亮次",
+        "酒井正一",
+        "前田麗子",
+        "神谷茂樹",
+        "加藤史朗",
+        "加藤義幸",
+        "金山直樹",
+        "杉浦久直",
+        "鈴木静男",
+        "田口正夫",
+        "中根武彦",
+        "野本篤",
+        "蜂須賀一郎",
+        "三浦康宏",
+        "簗瀬太"
+      ],
+      "locator": {
+        "file": "1009848.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "民政クラブ",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "柴田敏光",
+        "原紀彦",
+        "井町圭孝",
+        "加藤嘉哉",
+        "鈴木英樹",
+        "白井正樹",
+        "佐藤哲朗",
+        "瀬戸清太郎"
+      ],
+      "locator": {
+        "file": "1009848.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "野島さつき",
+        "土谷直樹",
+        "山村栄"
+      ],
+      "locator": {
+        "file": "1009848.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "チャレンジ岡崎",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "杉山智騎",
+        "小田高之",
+        "福田澄代"
+      ],
+      "locator": {
+        "file": "1009848.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "無所属",
+      "seats": 7,
+      "isIndependent": true,
+      "members": [
+        "荻野秀範",
+        "畑尻宣長",
+        "伊藤正義",
+        "大原昌幸",
+        "鈴木雅子",
+        "中根善明",
+        "本多勝"
+      ],
+      "locator": {
+        "file": "1009848.html",
+        "row": 5
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "56",
+    "billName": "令和８年度岡崎市一般会計予算",
+    "sessionLabel": "令和８年３月岡崎市議会定例会",
+    "decidedDate": "2026-03-23",
+    "decidedDateLabel": "令和8年3月23日",
+    "result": "原案可決",
+    "locator": {
+      "file": "0803gikateukekka.pdf",
+      "page": 4
+    }
+  },
+  "rosterTitle": "議員名簿（会派別）（令和7年11月14日現在）",
+  "resultTitle": "議決結果一覧表（令和8年3月定例会）"
+}

@@ -1,0 +1,26 @@
+{
+  "sourceId": "okazaki-shigikai-r8",
+  "files": [
+    {
+      "filename": "1009848.html",
+      "sha256": "be8728f65bdad148074116c14f095426bf446151acb60a028b340aceb0bcd6f4",
+      "bytes": 35401,
+      "fetchedAt": "2026-10-01T16:55:47.085Z",
+      "fetchedFrom": "https://web.archive.org/web/20260311184057id_/https://www.city.okazaki.lg.jp/shigikai/meibo/1009848.html"
+    },
+    {
+      "filename": "0803gikateukekka.pdf",
+      "sha256": "6ac0bbecf751a13c02ae3c3591be26d37a8744688603849aa3318677142e111d",
+      "bytes": 282950,
+      "fetchedAt": "2026-10-01T16:55:47.086Z",
+      "fetchedFrom": "https://www.city.okazaki.lg.jp/_res/projects/default_project/_page_/001/009/835/0803gikateukekka.pdf"
+    },
+    {
+      "filename": "2026.03.23.pdf",
+      "sha256": "252277821fdbe8ae8b6ee1fb5e58f367696171267bafcdf0b83f2177756bf5ec",
+      "bytes": 87491,
+      "fetchedAt": "2026-10-01T16:55:47.087Z",
+      "fetchedFrom": "https://www.city.okazaki.lg.jp/_res/projects/default_project/_page_/001/014/429/2026.03.23.pdf"
+    }
+  ]
+}

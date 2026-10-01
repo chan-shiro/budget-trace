@@ -1,0 +1,196 @@
+{
+  "docType": "council-composition",
+  "sourceId": "kawagoe-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.3",
+  "parsedAt": "2026-10-01T17:02:12.274Z",
+  "fiscalYear": "R8",
+  "body": "川越市議会",
+  "seats": 36,
+  "asOf": "2025-09-09",
+  "teisu": 36,
+  "factions": [
+    {
+      "name": "初雁自由政令会",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "中原秀文",
+        "江田崇",
+        "小島洋一",
+        "小林範子",
+        "牛窪喜史",
+        "海沼秀幸",
+        "小高浩行",
+        "吉野郁惠"
+      ],
+      "locator": {
+        "file": "1007626.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "公明党議員団",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "桐野忠",
+        "須藤直樹",
+        "鈴木謙一郎",
+        "嶋田弘二",
+        "田畑たき子",
+        "中村文明",
+        "小ノ澤哲也"
+      ],
+      "locator": {
+        "file": "1007626.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "川越志政会",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "吉敷賢一郎",
+        "松本きみ",
+        "倉嶋真史",
+        "粂真美子",
+        "中野敏浩",
+        "栗原瑞治"
+      ],
+      "locator": {
+        "file": "1007626.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "日本共産党議員団",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "川口知子",
+        "池浜あけみ",
+        "今野英子",
+        "柿田有一"
+      ],
+      "locator": {
+        "file": "1007626.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "川越政策フォーラム",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "山木綾子",
+        "高橋剛",
+        "片野広隆"
+      ],
+      "locator": {
+        "file": "1007626.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "川越未来の会",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "神田賢志",
+        "加藤みなこ"
+      ],
+      "locator": {
+        "file": "1007626.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "日本維新の会（柳沢貴雄）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "柳沢貴雄"
+      ],
+      "locator": {
+        "file": "1007626.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "れいわ新選組（小林透）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "小林透"
+      ],
+      "locator": {
+        "file": "1007626.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "無所属議員（伊藤正子）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "伊藤正子"
+      ],
+      "locator": {
+        "file": "1007626.html",
+        "row": 9
+      }
+    },
+    {
+      "name": "無所属議員（村山博紀）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "村山博紀"
+      ],
+      "locator": {
+        "file": "1007626.html",
+        "row": 10
+      }
+    },
+    {
+      "name": "無所属議員（川口啓介）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "川口啓介"
+      ],
+      "locator": {
+        "file": "1007626.html",
+        "row": 11
+      }
+    },
+    {
+      "name": "無所属議員（小林薫）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "小林薫"
+      ],
+      "locator": {
+        "file": "1007626.html",
+        "row": 12
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案 29",
+    "billName": "令和８年度川越市一般会計予算",
+    "sessionLabel": "令和８年第１回定例会",
+    "decidedDate": "2026-03-25",
+    "decidedDateLabel": "令和8年3月25日",
+    "result": "原案可決",
+    "locator": {
+      "file": "0805shigikai4.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "会派別議員一覧表（令和7年9月9日現在）",
+  "resultTitle": "議会だより（令和8年5月1日発行）議案議決結果一覧表"
+}

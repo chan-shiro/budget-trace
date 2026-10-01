@@ -1,0 +1,161 @@
+{
+  "docType": "council-composition",
+  "sourceId": "kurume-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.3",
+  "parsedAt": "2026-10-01T17:04:05.049Z",
+  "fiscalYear": "R8",
+  "body": "久留米市議会",
+  "seats": 35,
+  "asOf": "2026-06-26",
+  "factions": [
+    {
+      "name": "きずな議員団",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "吉冨巧",
+        "田住和也",
+        "堀田洸太朗",
+        "石井秀夫",
+        "山田貴生",
+        "古賀としかず"
+      ],
+      "locator": {
+        "file": "R8.6sanpi.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "久留米たすき議員団",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "そうだ耕一郎",
+        "中村博俊",
+        "山﨑ケブン",
+        "甲斐田義弘",
+        "石井俊一",
+        "松岡保治"
+      ],
+      "locator": {
+        "file": "R8.6sanpi.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "公明党議員団",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "山下尚",
+        "田中貴子",
+        "生野薫",
+        "田中功一",
+        "塚本弘道",
+        "坂田光弘"
+      ],
+      "locator": {
+        "file": "R8.6sanpi.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "立志会議員団",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "永田一伸",
+        "堺太一郎",
+        "長野哲",
+        "後藤敬介",
+        "権藤智喜",
+        "轟照隆"
+      ],
+      "locator": {
+        "file": "R8.6sanpi.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "みらい久留米議員団",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "秋永峰子",
+        "古賀敏久",
+        "藤林詠子",
+        "石田眞一郎"
+      ],
+      "locator": {
+        "file": "R8.6sanpi.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "緑水会議員団",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "佐藤晶二",
+        "吉武憲治",
+        "森﨑巨樹"
+      ],
+      "locator": {
+        "file": "R8.6sanpi.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "日本共産党久留米市議団",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "金子むつみ",
+        "小林ときこ"
+      ],
+      "locator": {
+        "file": "R8.6sanpi.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "改革の会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "大熊博文"
+      ],
+      "locator": {
+        "file": "R8.6sanpi.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "日本維新の会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "草場公晴"
+      ],
+      "locator": {
+        "file": "R8.6sanpi.pdf",
+        "page": 1
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第45号議案",
+    "billName": "令和８年度久留米市一般会計予算",
+    "sessionLabel": "令和8年第2回市議会定例会",
+    "decidedDate": "2026-06-26",
+    "decidedDateLabel": "令和8年6月26日",
+    "result": "原案可決",
+    "locator": {
+      "file": "R8.6sanpi.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "令和8年第2回市議会定例会（6月）における議案に対する賛否の状況（会派・団体名と議員名の列見出し）",
+  "resultTitle": "令和8年第2回市議会定例会（6月）における議案に対する賛否の状況"
+}

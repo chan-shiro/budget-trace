@@ -1,0 +1,119 @@
+{
+  "docType": "council-composition",
+  "sourceId": "hachioji-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.3",
+  "parsedAt": "2026-10-01T17:02:15.225Z",
+  "fiscalYear": "R8",
+  "body": "八王子市議会",
+  "seats": 38,
+  "asOf": "2025-06-09",
+  "factions": [
+    {
+      "name": "自民党新政会",
+      "seats": 11,
+      "isIndependent": false,
+      "members": [
+        "長谷川順子",
+        "内田由香利",
+        "立川寛之",
+        "西室真希",
+        "岸田功典",
+        "川村奈緒美",
+        "鈴木玲央",
+        "岩田祐樹",
+        "吉本孝良",
+        "福安徹",
+        "小林秀司"
+      ],
+      "locator": {
+        "file": "R7-6-9.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "八王子市議会公明党",
+      "seats": 10,
+      "isIndependent": false,
+      "members": [
+        "美濃部弥生",
+        "古里幸太郎",
+        "森重博正",
+        "村松徹",
+        "日下部広志",
+        "久保井博美",
+        "冨永純子",
+        "渡口禎",
+        "中島正寿",
+        "五間浩"
+      ],
+      "locator": {
+        "file": "R7-6-9.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "日本共産党八王子市議会議員団",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "綿林夕夏",
+        "望月翔平",
+        "市川克宏",
+        "鈴木勇次",
+        "石井宏和"
+      ],
+      "locator": {
+        "file": "R7-6-9.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "立憲民主・市民の会",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "浜野正太",
+        "九鬼ともみ",
+        "森喜彦",
+        "安藤修三",
+        "小林裕恵"
+      ],
+      "locator": {
+        "file": "R7-6-9.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "諸派",
+      "seats": 7,
+      "isIndependent": true,
+      "members": [
+        "高橋剛",
+        "舩木翔平",
+        "玉正彩加",
+        "金子亜希子",
+        "山本貴士",
+        "及川賢一",
+        "星野直美"
+      ],
+      "locator": {
+        "file": "R7-6-9.pdf",
+        "page": 1
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第5号",
+    "billName": "令和8年度八王子市一般会計予算について",
+    "sessionLabel": "令和8年第1回市議会定例会",
+    "decidedDate": "2026-03-26",
+    "decidedDateLabel": "令和8年3月26日",
+    "result": "可決",
+    "locator": {
+      "file": "p037014.html"
+    }
+  },
+  "rosterTitle": "会派名簿（令和7年（2025年）6月9日現在）",
+  "resultTitle": "令和8年(2026年)第1回市議会定例会 議案の一覧"
+}

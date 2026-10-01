@@ -1,0 +1,131 @@
+{
+  "docType": "council-composition",
+  "sourceId": "yokosuka-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.3",
+  "parsedAt": "2026-10-01T17:02:52.616Z",
+  "fiscalYear": "R8",
+  "body": "横須賀市議会",
+  "seats": 38,
+  "asOf": "2025-12-23",
+  "factions": [
+    {
+      "name": "自由民主党",
+      "seats": 14,
+      "isIndependent": false,
+      "members": [
+        "南まさみ",
+        "青木秀介",
+        "田辺昭人",
+        "松岡和行",
+        "加藤眞道",
+        "大野忠之",
+        "渡辺光一",
+        "西郷宗範",
+        "山本けんじゅ",
+        "大貫次郎",
+        "池田徳重",
+        "髙橋いずみ",
+        "泉谷翔",
+        "海老あやの"
+      ],
+      "locator": {
+        "file": "giin_kaiha.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "土田弘之宣",
+        "石山満",
+        "関沢敏行",
+        "本石篤志",
+        "二見英一",
+        "川本伸",
+        "菅原恵美子"
+      ],
+      "locator": {
+        "file": "giin_kaiha.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "一市民",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "加藤ゆうすけ",
+        "小林優人",
+        "竹岡力",
+        "天白牧夫",
+        "堀りょういち"
+      ],
+      "locator": {
+        "file": "giin_kaiha.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "研政会",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "伊関功滋",
+        "長谷川昇",
+        "工藤昭四郎",
+        "髙橋英昭"
+      ],
+      "locator": {
+        "file": "giin_kaiha.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "大村洋子",
+        "井坂直",
+        "ふじそのあき"
+      ],
+      "locator": {
+        "file": "giin_kaiha.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "無会派",
+      "seats": 5,
+      "isIndependent": true,
+      "members": [
+        "中川さおり",
+        "葉山なおし",
+        "ひろなか信太郎",
+        "藤野英明",
+        "安川健人"
+      ],
+      "locator": {
+        "file": "giin_kaiha.html",
+        "row": 6
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第18号",
+    "billName": "令和８年度横須賀市一般会計予算",
+    "sessionLabel": "令和８年３月定例議会",
+    "decidedDate": "2026-03-25",
+    "decidedDateLabel": "令和8年3月25日",
+    "result": "可決(賛成多数)",
+    "locator": {
+      "file": "20260325giketsukekka.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "会派別名簿（更新日：2025年12月23日）",
+  "resultTitle": "令和８年３月定例議会 提出議案等議決結果（２）"
+}

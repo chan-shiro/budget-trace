@@ -1,0 +1,26 @@
+{
+  "sourceId": "aomori-shigikai-r8",
+  "files": [
+    {
+      "filename": "1007118.html",
+      "sha256": "3c139199a3862a7ba7f3105fcafa776bd198245ec108959a29b167db69c03b06",
+      "bytes": 39292,
+      "fetchedAt": "2026-10-01T16:54:08.312Z",
+      "fetchedFrom": "https://web.archive.org/web/20251108061843id_/https://www.city.aomori.aomori.jp/gikai/gaiyou/1007116/1007118.html"
+    },
+    {
+      "filename": "r08-t1-giketsu2.pdf",
+      "sha256": "6c942c6b6103cdaec97d3bbaf9859cf58ed52990d73ee9c5aa70a799635abf29",
+      "bytes": 151670,
+      "fetchedAt": "2026-10-01T16:54:08.313Z",
+      "fetchedFrom": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/010/095/r08-t1-giketsu2.pdf"
+    },
+    {
+      "filename": "1007115.html",
+      "sha256": "be5868f03d591a9a0e4e022438978859ca5090adec4c518a808d314c9bf9b01d",
+      "bytes": 46450,
+      "fetchedAt": "2026-10-01T16:54:08.313Z",
+      "fetchedFrom": "https://www.city.aomori.aomori.jp/gikai/gaiyou/1007115.html"
+    }
+  ]
+}

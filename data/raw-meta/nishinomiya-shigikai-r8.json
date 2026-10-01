@@ -1,0 +1,36 @@
+{
+  "sourceId": "nishinomiya-shigikai-r8",
+  "files": [
+    {
+      "filename": "kaihabetsu-list.html",
+      "sha256": "73bdd9522eeed2e81045bffd1c9fb0d67de048f268cf8d49823123aae0f36ba1",
+      "bytes": 18753,
+      "fetchedAt": "2026-10-01T16:54:23.288Z",
+      "fetchedFrom": "https://web.archive.org/web/20260112181844id_/https://www.nishi.or.jp/nishinomiyashigikai/namelist/kaihabetsu-list.html"
+    },
+    {
+      "filename": "g07_giketsu.asp_Sflg_1_kaigi_2026_02_16_2026_03_19_272_kensu_100.html",
+      "sha256": "b0e62bca4644648616a1626aa8d6271b29e061b552d28ff40649bc631a980198",
+      "bytes": 40559,
+      "fetchedAt": "2026-10-01T16:54:23.288Z",
+      "fetchedFrom": "https://nishi.gijiroku.com/g07_giketsu.asp?Sflg=1&kaigi=2026/02/16,2026/03/19,272&kensu=100",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "202603kekka.pdf",
+      "sha256": "3f280ec55de9ba8227b5641a6d3cea96c809c102c75e7b6bab10dabacdb6fbca",
+      "bytes": 216120,
+      "fetchedAt": "2026-10-01T16:54:23.289Z",
+      "fetchedFrom": "https://www.nishi.or.jp/nishinomiyashigikai/session1/gian-list.files/202603kekka.pdf"
+    },
+    {
+      "filename": "sonota.html",
+      "sha256": "45a7902f378bd05164d91eca5d610b9bb4086eb1014b4c23b74f6500248254a1",
+      "bytes": 21388,
+      "fetchedAt": "2026-10-01T16:54:23.290Z",
+      "fetchedFrom": "https://web.archive.org/web/20260305201103id_/https://www.nishi.or.jp/nishinomiyashigikai/about/sonota.html"
+    }
+  ]
+}

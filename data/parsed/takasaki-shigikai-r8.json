@@ -1,0 +1,132 @@
+{
+  "docType": "council-composition",
+  "sourceId": "takasaki-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.3",
+  "parsedAt": "2026-10-01T17:02:15.818Z",
+  "fiscalYear": "R8",
+  "body": "高崎市議会",
+  "seats": 38,
+  "asOf": "2024-10-29",
+  "teisu": 38,
+  "factions": [
+    {
+      "name": "新風会",
+      "seats": 19,
+      "isIndependent": false,
+      "members": [
+        "渡辺隆宏",
+        "高橋淳",
+        "樋口哲郎",
+        "大河原吉明",
+        "青木和也",
+        "後藤彰",
+        "時田裕之",
+        "青柳隆",
+        "根岸赴夫",
+        "渡辺幹治",
+        "白石隆夫",
+        "長壁真樹",
+        "大竹隆一",
+        "松本賢一",
+        "柄沢高男",
+        "石川徹",
+        "後閑賢二",
+        "丸山和久",
+        "柴田和正"
+      ],
+      "locator": {
+        "file": "2244.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "市民クラブ",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "横田卓也",
+        "三井暢秀",
+        "中島輝男",
+        "林恒徳",
+        "堀口順",
+        "高橋美奈雄"
+      ],
+      "locator": {
+        "file": "2244.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "中村さと美",
+        "小野聡子",
+        "新保克佳",
+        "丸山覚",
+        "逆瀬川義久"
+      ],
+      "locator": {
+        "file": "2244.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "たかさき未来",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "宮原田綾香",
+        "荒木征二",
+        "三島久美子"
+      ],
+      "locator": {
+        "file": "2244.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "超党派の会",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "新倉哲郎",
+        "角倉邦良",
+        "谷川留美子"
+      ],
+      "locator": {
+        "file": "2244.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "日本共産党高崎市議会議員団",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "金子和幸",
+        "伊藤敦博"
+      ],
+      "locator": {
+        "file": "2244.html",
+        "row": 6
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第２８号",
+    "billName": "令和８年度高崎市一般会計予算",
+    "sessionLabel": "令和８年第２回定例会",
+    "decidedDate": "2026-03-18",
+    "decidedDateLabel": "令和8年3月18日",
+    "result": "原案可決",
+    "locator": {
+      "file": "39050.pdf",
+      "page": 2
+    }
+  },
+  "rosterTitle": "会派一覧（令和6年10月29日）",
+  "resultTitle": "令和８年第２回定例会 議案等審議結果一覧"
+}

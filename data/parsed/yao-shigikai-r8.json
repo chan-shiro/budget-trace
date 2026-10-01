@@ -1,0 +1,139 @@
+{
+  "docType": "council-composition",
+  "sourceId": "yao-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.3",
+  "parsedAt": "2026-10-01T17:02:13.597Z",
+  "fiscalYear": "R8",
+  "body": "八尾市議会",
+  "seats": 24,
+  "asOf": "2025-10-03",
+  "factions": [
+    {
+      "name": "大阪維新の会",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "奥田信宏",
+        "景山和香",
+        "木村健二",
+        "坂本尚之",
+        "桝井政佐美"
+      ],
+      "locator": {
+        "file": "1009487.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "五百井真二",
+        "西田尚美",
+        "福永美智子",
+        "前園正昭",
+        "南方武"
+      ],
+      "locator": {
+        "file": "1009487.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "八尾保守の会",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "川上舞",
+        "田中久夫",
+        "露原行隆",
+        "松田憲幸"
+      ],
+      "locator": {
+        "file": "1009487.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "八尾の未来を紡ぐ会",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "柴谷匡哉",
+        "西川あり",
+        "吉村拓哉"
+      ],
+      "locator": {
+        "file": "1009487.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "新声",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "竹田孝吏",
+        "山中宏"
+      ],
+      "locator": {
+        "file": "1009487.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "越智妙子",
+        "田中裕子"
+      ],
+      "locator": {
+        "file": "1009487.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "至誠会",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "稲森洋樹",
+        "田中慎二"
+      ],
+      "locator": {
+        "file": "1009487.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "会派に所属しない議員（鑄方淳治）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "鑄方淳治"
+      ],
+      "locator": {
+        "file": "1009487.html",
+        "row": 8
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第18号",
+    "billName": "令和８年度八尾市一般会計予算の件",
+    "sessionLabel": "令和８年３月市議会定例会",
+    "decidedDate": "2026-03-27",
+    "decidedDateLabel": "令和8年3月27日",
+    "result": "原案可決",
+    "locator": {
+      "file": "0803saiketutaido.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "会派別議員名簿（令和7年10月3日現在）",
+  "resultTitle": "令和８年３月市議会定例会 議決結果（議員別採決態度）"
+}

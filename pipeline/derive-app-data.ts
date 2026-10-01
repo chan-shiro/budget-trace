@@ -972,7 +972,10 @@ export const KOFU_EVALUATION_YEARS: KofuEvaluationYear[] = ${JSON.stringify(eval
       ...(doc.teisu != null ? { teisu: doc.teisu } : {}),
       asOf: doc.asOf,
       asOfLabel,
-      factions: doc.factions.map((f) => ({ name: f.name, seats: f.seats, isIndependent: f.isIndependent })),
+      // 原典の並び（議席番号順の賛否表の列など）は団体ごとにまちまちなので、議席の多い順・無所属は後ろにそろえる
+      factions: doc.factions
+        .map((f) => ({ name: f.name, seats: f.seats, isIndependent: f.isIndependent }))
+        .sort((a, b) => Number(a.isIndependent) - Number(b.isIndependent) || b.seats - a.seats),
       resolution: {
         billNo: doc.resolution.billNo,
         billName: doc.resolution.billName,

@@ -1,0 +1,142 @@
+{
+  "docType": "council-composition",
+  "sourceId": "nagasaki-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.3",
+  "parsedAt": "2026-10-01T17:04:05.214Z",
+  "fiscalYear": "R8",
+  "body": "長崎市議会",
+  "seats": 39,
+  "asOf": "2025-06-04",
+  "factions": [
+    {
+      "name": "市民クラブ",
+      "seats": 10,
+      "isIndependent": false,
+      "members": [
+        "池田章子",
+        "中里泰則",
+        "五輪清隆",
+        "中山大",
+        "井上重久",
+        "野口達也",
+        "梅原和喜",
+        "山口たかゆき",
+        "木森俊也",
+        "山谷よしひろ"
+      ],
+      "locator": {
+        "file": "5681.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "自民創生",
+      "seats": 10,
+      "isIndependent": false,
+      "members": [
+        "相川和彦",
+        "澤㔟みずき",
+        "浅田真五",
+        "竹田雄亮",
+        "岩永敏博",
+        "山﨑猛",
+        "梅元建治",
+        "山下巌記",
+        "柿田正",
+        "吉原孝"
+      ],
+      "locator": {
+        "file": "5681.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "新政ミライ",
+      "seats": 9,
+      "isIndependent": false,
+      "members": [
+        "阿部のぞみ",
+        "平野剛",
+        "平たけし",
+        "毎熊政直",
+        "高橋佳子",
+        "森きょうへい",
+        "武次良治",
+        "山口まさよし",
+        "都留かすみ"
+      ],
+      "locator": {
+        "file": "5681.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "永尾春文",
+        "福澤照充",
+        "林広文",
+        "向山宗子",
+        "久八寸志",
+        "山本信幸"
+      ],
+      "locator": {
+        "file": "5681.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "大石ふみき",
+        "中西敦信"
+      ],
+      "locator": {
+        "file": "5681.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "ながさき次世代の党",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "梅本けいすけ"
+      ],
+      "locator": {
+        "file": "5681.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "明政クラブ",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "筒井正興"
+      ],
+      "locator": {
+        "file": "5681.html",
+        "row": 7
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第13号議案",
+    "billName": "令和8年度長崎市一般会計予算",
+    "sessionLabel": "令和8年第2回（2月）定例会",
+    "decidedDate": "2026-03-12",
+    "decidedDateLabel": "令和8年3月12日",
+    "result": "原案可決",
+    "locator": {
+      "file": "75929.html"
+    }
+  },
+  "rosterTitle": "会派別議員名簿（更新日 2025年6月4日）",
+  "resultTitle": "令和8年第2回（2月）定例会議決結果一覧"
+}

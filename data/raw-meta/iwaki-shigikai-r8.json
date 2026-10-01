@@ -1,0 +1,89 @@
+{
+  "sourceId": "iwaki-shigikai-r8",
+  "files": [
+    {
+      "filename": "index.html",
+      "sha256": "4327961f2605c999763a56c396a2d652434297ef2eb90bb96629d703c0b04a9b",
+      "bytes": 15508,
+      "fetchedAt": "2026-10-01T16:54:08.330Z",
+      "fetchedFrom": "https://web.archive.org/web/20260115044311id_/https://www.city.iwaki.lg.jp/www/contents/1722583989243/index.html"
+    },
+    {
+      "filename": "1722583797543__index.html",
+      "sha256": "6f1e3a2f6aba774ca8b8e62e503417394f9f0436ceb11335c3e3e12b826e033d",
+      "bytes": 17350,
+      "fetchedAt": "2026-10-01T16:54:08.330Z",
+      "fetchedFrom": "https://web.archive.org/web/20251101064355id_/https://www.city.iwaki.lg.jp/www/contents/1722583797543/index.html"
+    },
+    {
+      "filename": "1722567301427__index.html",
+      "sha256": "8049ba35d84af3ae99a893b6dd4674a4c6e7ce125b70d2625ec1a82983428a01",
+      "bytes": 14823,
+      "fetchedAt": "2026-10-01T16:54:08.331Z",
+      "fetchedFrom": "https://web.archive.org/web/20251215091555id_/https://www.city.iwaki.lg.jp/www/contents/1722567301427/index.html"
+    },
+    {
+      "filename": "1722917663698__index.html",
+      "sha256": "0d50871198080a2dab84dff35d7a5f1aef2a4bb31708d552e39289e261f72478",
+      "bytes": 14620,
+      "fetchedAt": "2026-10-01T16:54:08.331Z",
+      "fetchedFrom": "https://web.archive.org/web/20251101060116id_/https://www.city.iwaki.lg.jp/www/contents/1722917663698/index.html"
+    },
+    {
+      "filename": "1722918051796__index.html",
+      "sha256": "c15c9c86bf7e4b005797db8de48d26affa062d7a341e237f92f81c9a37c5af73",
+      "bytes": 14471,
+      "fetchedAt": "2026-10-01T16:54:08.331Z",
+      "fetchedFrom": "https://web.archive.org/web/20251101062423id_/https://www.city.iwaki.lg.jp/www/contents/1722918051796/index.html"
+    },
+    {
+      "filename": "1722918218558__index.html",
+      "sha256": "f7215fca3e1c0bbd883ceebc6b2523c89c7c5dc00d0c347c4ead1f6ba592e218",
+      "bytes": 13662,
+      "fetchedAt": "2026-10-01T16:54:08.332Z",
+      "fetchedFrom": "https://web.archive.org/web/20251114015927id_/https://www.city.iwaki.lg.jp/www/contents/1722918218558/index.html"
+    },
+    {
+      "filename": "1727142543529__index.html",
+      "sha256": "4314b9c8a75379c11727bc699b919a265b8b805a3c8e1cbbce8289558257a2bc",
+      "bytes": 13704,
+      "fetchedAt": "2026-10-01T16:54:08.332Z",
+      "fetchedFrom": "https://web.archive.org/web/20251101062033id_/https://www.city.iwaki.lg.jp/www/contents/1727142543529/index.html"
+    },
+    {
+      "filename": "1759975169296__index.html",
+      "sha256": "4c6be5b00448ee9a9353388ebc29fd4e6eadd8af39d752f9d284becfe201eb25",
+      "bytes": 14424,
+      "fetchedAt": "2026-10-01T16:54:08.333Z",
+      "fetchedFrom": "https://web.archive.org/web/20251204233743id_/https://www.city.iwaki.lg.jp/www/contents/1759975169296/index.html"
+    },
+    {
+      "filename": "R8.2giketsu.pdf",
+      "sha256": "62f5f7aec00870496f01ce95ffbc9cf1658b1ab9cb739bf9544e8e6517b8e52f",
+      "bytes": 115819,
+      "fetchedAt": "2026-10-01T16:54:08.333Z",
+      "fetchedFrom": "https://www.city.iwaki.lg.jp/www/contents/1001000004942/simple/R8.2giketsu.pdf"
+    },
+    {
+      "filename": "hourensou213.pdf",
+      "sha256": "45968562b36c85af4ba200531cac6d97e861fd2f751c81083f54144626f8536d",
+      "bytes": 4848171,
+      "fetchedAt": "2026-10-01T16:54:08.337Z",
+      "fetchedFrom": "https://www.city.iwaki.lg.jp/www/contents/1777358282019/files/hourensou213.pdf"
+    },
+    {
+      "filename": "1601452726278__index.html",
+      "sha256": "a2e07b9d8c739248c0761faab4cd9cc52f2facdfebe978d9b35c4fafa489227d",
+      "bytes": 16453,
+      "fetchedAt": "2026-10-01T16:54:08.338Z",
+      "fetchedFrom": "https://www.city.iwaki.lg.jp/www/contents/1601452726278/index.html"
+    },
+    {
+      "filename": "R8.2Tsanpi.pdf",
+      "sha256": "f695bb1ac35ae95d40ca069d83e14d71d1791890f4646a8bda295c392160fe86",
+      "bytes": 48509,
+      "fetchedAt": "2026-10-01T16:54:08.338Z",
+      "fetchedFrom": "https://www.city.iwaki.lg.jp/www/contents/1001000004918/simple/R8.2Tsanpi.pdf"
+    }
+  ]
+}

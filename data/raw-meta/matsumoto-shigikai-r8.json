@@ -1,0 +1,19 @@
+{
+  "sourceId": "matsumoto-shigikai-r8",
+  "files": [
+    {
+      "filename": "6164.html",
+      "sha256": "60630156e54ea52ea72c572dfb211e372d17c63d0c21451a86974d0d77271338",
+      "bytes": 28527,
+      "fetchedAt": "2026-10-01T16:55:47.082Z",
+      "fetchedFrom": "https://web.archive.org/web/20260213231002id_/https://www.city.matsumoto.nagano.jp/soshiki/213/6164.html"
+    },
+    {
+      "filename": "197638.html",
+      "sha256": "c041c13627e61cae71246f8010b7d65e0b33779f6a0aa21c0dff9f177c58203b",
+      "bytes": 58188,
+      "fetchedAt": "2026-10-01T16:55:47.083Z",
+      "fetchedFrom": "https://www.city.matsumoto.nagano.jp/site/gikai/197638.html"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "docType": "council-composition",
+  "sourceId": "tsukuba-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.3",
+  "parsedAt": "2026-10-01T17:02:52.358Z",
+  "fiscalYear": "R8",
+  "body": "つくば市議会",
+  "seats": 28,
+  "asOf": "2025-06-09",
+  "factions": [
+    {
+      "name": "つくばクラブ",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "伊藤文弥",
+        "小村政文",
+        "黒田健祐",
+        "神谷大蔵",
+        "小久保貴史",
+        "五頭泰誠",
+        "木村清隆",
+        "塩田尚"
+      ],
+      "locator": {
+        "file": "1002610.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "Nextつくば",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "田代優",
+        "市原琢己",
+        "樋口裕大",
+        "中村重雄",
+        "木村修寿",
+        "塚本洋二",
+        "飯岡宏之"
+      ],
+      "locator": {
+        "file": "1002610.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "つくば・市民ネットワーク",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "川田青星",
+        "川村直子",
+        "あさのえくこ",
+        "小森谷さやか"
+      ],
+      "locator": {
+        "file": "1002610.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "公明党つくば",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "梅沢尊信",
+        "篠内幸代",
+        "渡辺峰子"
+      ],
+      "locator": {
+        "file": "1002610.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "創生クラブ",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "高野文男"
+      ],
+      "locator": {
+        "file": "1002610.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "日本共産党つくば",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "山中真弓"
+      ],
+      "locator": {
+        "file": "1002610.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "つくばチェンジチャレンジ",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "川久保皆実"
+      ],
+      "locator": {
+        "file": "1002610.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "新・つくば民主主義の会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "酒井泉"
+      ],
+      "locator": {
+        "file": "1002610.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "ワニナルつくば",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "青木真矢"
+      ],
+      "locator": {
+        "file": "1002610.html",
+        "row": 9
+      }
+    },
+    {
+      "name": "縁粋会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "榊原アリーゼ"
+      ],
+      "locator": {
+        "file": "1002610.html",
+        "row": 10
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第101号",
+    "billName": "令和8年度つくば市一般会計予算",
+    "sessionLabel": "2月定例会議",
+    "decidedDate": "2026-03-25",
+    "decidedDateLabel": "令和8年3月25日",
+    "result": "原案可決",
+    "locator": {
+      "file": "shigikaidayori_191.pdf",
+      "page": 6
+    }
+  },
+  "rosterTitle": "会派名簿（更新日 2025年06月09日）",
+  "resultTitle": "つくば市議会だより第191号（令和8年5月20日発行）"
+}

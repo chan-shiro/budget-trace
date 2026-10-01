@@ -1,0 +1,221 @@
+{
+  "docType": "council-composition",
+  "sourceId": "nara-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.3",
+  "parsedAt": "2026-10-01T17:02:13.933Z",
+  "fiscalYear": "R8",
+  "body": "奈良市議会",
+  "seats": 39,
+  "asOf": "2025-11-19",
+  "teisu": 39,
+  "factions": [
+    {
+      "name": "自由民主党",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "森田一成",
+        "井久保裕也",
+        "植村佳史",
+        "八尾俊宏",
+        "太田晃司",
+        "道端孝治"
+      ],
+      "locator": {
+        "file": "114364.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "公明党奈良市議会議員団",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "九里雄二",
+        "宮池明",
+        "山口寛",
+        "田畑日佐恵",
+        "真鍋弘美",
+        "早田哲朗"
+      ],
+      "locator": {
+        "file": "114364.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "日本維新の会奈良市議団",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "柳田昌孝",
+        "北邨翔平",
+        "中川康",
+        "木下修平",
+        "佐野和則",
+        "大西淳文"
+      ],
+      "locator": {
+        "file": "114364.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "日本共産党奈良市会議員団",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "山口裕司",
+        "白川健太郎",
+        "山本直子",
+        "北村拓哉"
+      ],
+      "locator": {
+        "file": "114364.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "自民党・無所属の会",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "横井雄一",
+        "榎本博一",
+        "鍵田美智子",
+        "塚本勝"
+      ],
+      "locator": {
+        "file": "114364.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "市民ひろば",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "樋口清二郎",
+        "阪本美知子",
+        "柿本元気"
+      ],
+      "locator": {
+        "file": "114364.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "未来の会",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "岡本誠至",
+        "下村千恵",
+        "階戸幸一"
+      ],
+      "locator": {
+        "file": "114364.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "無所属（尾崎暢子）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "尾崎暢子"
+      ],
+      "locator": {
+        "file": "114364.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "無所属（松尾浩司）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "松尾浩司"
+      ],
+      "locator": {
+        "file": "114364.html",
+        "row": 9
+      }
+    },
+    {
+      "name": "無所属（江川友梨）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "江川友梨"
+      ],
+      "locator": {
+        "file": "114364.html",
+        "row": 10
+      }
+    },
+    {
+      "name": "無所属（内藤智司）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "内藤智司"
+      ],
+      "locator": {
+        "file": "114364.html",
+        "row": 11
+      }
+    },
+    {
+      "name": "無所属（松下幸治）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "松下幸治"
+      ],
+      "locator": {
+        "file": "114364.html",
+        "row": 12
+      }
+    },
+    {
+      "name": "無所属（へずまりゅう）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "へずまりゅう"
+      ],
+      "locator": {
+        "file": "114364.html",
+        "row": 13
+      }
+    },
+    {
+      "name": "無所属（松石聖一）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "松石聖一"
+      ],
+      "locator": {
+        "file": "114364.html",
+        "row": 14
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第１６号",
+    "billName": "令和８年度奈良市一般会計予算",
+    "sessionLabel": "令和８年３月定例会",
+    "decidedDate": "2026-03-26",
+    "decidedDateLabel": "令和8年3月26日",
+    "result": "修正可決",
+    "locator": {
+      "file": "208608.pdf",
+      "page": 2
+    }
+  },
+  "rosterTitle": "会派別議員名簿（令和7年11月19日現在）",
+  "resultTitle": "議決結果一覧表（令和８年３月定例会）"
+}

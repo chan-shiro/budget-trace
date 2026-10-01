@@ -1,0 +1,136 @@
+{
+  "docType": "council-composition",
+  "sourceId": "matsue-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.3",
+  "parsedAt": "2026-10-01T17:02:14.124Z",
+  "fiscalYear": "R8",
+  "body": "松江市議会",
+  "seats": 31,
+  "asOf": "2025-04-24",
+  "teisu": 31,
+  "factions": [
+    {
+      "name": "誠政松江",
+      "seats": 12,
+      "isIndependent": false,
+      "members": [
+        "わたなべ良平",
+        "岩田幸子",
+        "長谷川浩司",
+        "佐藤和彦",
+        "小澤一竜",
+        "三島明",
+        "原田守",
+        "細木明美",
+        "米田ときこ",
+        "柳原治",
+        "野々内誠",
+        "森脇勇人"
+      ],
+      "locator": {
+        "file": "kaihabetsumeibo20250425.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "志翔の会",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "中村ひかり",
+        "村松りえ",
+        "岩本雅之",
+        "川島光雅",
+        "石倉徳章",
+        "石倉茂美"
+      ],
+      "locator": {
+        "file": "kaihabetsumeibo20250425.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "民主ネットワーク",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "石倉聡之",
+        "山根宏",
+        "森本秀歳",
+        "津森良治"
+      ],
+      "locator": {
+        "file": "kaihabetsumeibo20250425.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "公明クラブ",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "吉岡麻美",
+        "佐々田慎吾",
+        "海德邦彦",
+        "太田哲"
+      ],
+      "locator": {
+        "file": "kaihabetsumeibo20250425.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "日本共産党松江市議団",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "樋野伸一",
+        "佐野みどり",
+        "たちばなふみ"
+      ],
+      "locator": {
+        "file": "kaihabetsumeibo20250425.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "会派に属しない議員（舟木一真）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "舟木一真"
+      ],
+      "locator": {
+        "file": "kaihabetsumeibo20250425.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "会派に属しない議員（錦織伸行）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "錦織伸行"
+      ],
+      "locator": {
+        "file": "kaihabetsumeibo20250425.pdf",
+        "page": 1
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議第56号",
+    "billName": "令和８年度松江市一般会計予算",
+    "sessionLabel": "令和８年第１回松江市議会（定例会）",
+    "decidedDate": "2026-03-26",
+    "decidedDateLabel": "令和8年3月26日",
+    "result": "原案可決",
+    "locator": {
+      "file": "r8_3_26giantouitiran.pdf",
+      "page": 3
+    }
+  },
+  "rosterTitle": "松江市議会議員名簿（会派別）（令和7年4月24日現在）",
+  "resultTitle": "令和８年第１回松江市議会（定例会）議案等一覧表"
+}

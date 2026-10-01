@@ -1,0 +1,185 @@
+{
+  "docType": "council-composition",
+  "sourceId": "gifu-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.3",
+  "parsedAt": "2026-10-01T17:02:15.599Z",
+  "fiscalYear": "R8",
+  "body": "岐阜市議会",
+  "seats": 37,
+  "asOf": "2026-02-17",
+  "factions": [
+    {
+      "name": "自民岐阜",
+      "seats": 17,
+      "isIndependent": false,
+      "members": [
+        "浅野雅樹",
+        "浅野裕司",
+        "石井浩二",
+        "大野一生",
+        "熊田由弘",
+        "黒田育宏",
+        "佐藤幸太",
+        "杉山利夫",
+        "須田眞",
+        "高橋正",
+        "竹市勲",
+        "野本琢磨",
+        "橋爪大",
+        "日比野浩之",
+        "箕輪光顕",
+        "谷藤錦司",
+        "若山貴嗣"
+      ],
+      "locator": {
+        "file": "1021215.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "岐阜市議会公明党",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "江崎洋子",
+        "河合智美",
+        "小堀将大",
+        "辻󠄀孝子",
+        "西垣信康"
+      ],
+      "locator": {
+        "file": "1021215.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "岐阜市民クラブ",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "石原宏基",
+        "小森忠良",
+        "富田耕二",
+        "松原和生"
+      ],
+      "locator": {
+        "file": "1021215.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "健やか緑政",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "可児隆",
+        "田中成佳",
+        "服部勝弘"
+      ],
+      "locator": {
+        "file": "1021215.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "日本共産党岐阜市議会議員団",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "堀田信夫",
+        "森下満寿美"
+      ],
+      "locator": {
+        "file": "1021215.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "にじいろ",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "原菜穂子"
+      ],
+      "locator": {
+        "file": "1021215.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "日本維新の会岐阜市議会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "林大貴"
+      ],
+      "locator": {
+        "file": "1021215.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "会派に属さない議員（石川宗一郎）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "石川宗一郎"
+      ],
+      "locator": {
+        "file": "1021215.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "会派に属さない議員（大塚翔太）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "大塚翔太"
+      ],
+      "locator": {
+        "file": "1021215.html",
+        "row": 9
+      }
+    },
+    {
+      "name": "会派に属さない議員（道家康生）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "道家康生"
+      ],
+      "locator": {
+        "file": "1021215.html",
+        "row": 10
+      }
+    },
+    {
+      "name": "会派に属さない議員（披田麻衣）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "披田麻衣"
+      ],
+      "locator": {
+        "file": "1021215.html",
+        "row": 11
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第１号議案",
+    "billName": "令和８年度岐阜市一般会計予算",
+    "sessionLabel": "令和８年第１回（３月）定例会",
+    "decidedDate": "2026-03-27",
+    "decidedDateLabel": "令和8年3月27日",
+    "result": "原案のとおり可決",
+    "locator": {
+      "file": "r803giketsu3.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "議員の紹介（一覧表）（更新日 令和8年2月17日）",
+  "resultTitle": "令和８年第１回（３月）定例会議決結果・報告一覧"
+}

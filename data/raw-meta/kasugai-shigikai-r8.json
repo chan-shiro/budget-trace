@@ -1,0 +1,33 @@
+{
+  "sourceId": "kasugai-shigikai-r8",
+  "files": [
+    {
+      "filename": "1016752.html",
+      "sha256": "586bef26d511f8eb5c2c318b4a8fe43b2dcc146e8991d3d17e1bcea748ea2f1f",
+      "bytes": 35376,
+      "fetchedAt": "2026-10-01T16:54:23.252Z",
+      "fetchedFrom": "https://web.archive.org/web/20251206115725id_/https://www.city.kasugai.lg.jp/shisei/shigikai/1016752.html"
+    },
+    {
+      "filename": "R8.1giketsu.pdf",
+      "sha256": "deed114a165229010ca8ab81e0183691e52e6defe090cb71cf1f810d97ea554f",
+      "bytes": 163104,
+      "fetchedAt": "2026-10-01T16:54:23.252Z",
+      "fetchedFrom": "https://www.city.kasugai.lg.jp/_res/projects/default_project/_page_/001/038/638/R8.1giketsu.pdf"
+    },
+    {
+      "filename": "1038638.html",
+      "sha256": "47463277c62fb7feabe44202135a0a00fef5c399fac7ec5614745f7d1d43b1f3",
+      "bytes": 33490,
+      "fetchedAt": "2026-10-01T16:54:23.253Z",
+      "fetchedFrom": "https://www.city.kasugai.lg.jp/shisei/shigikai/gian/1038634/1038636/1038638.html"
+    },
+    {
+      "filename": "20260312hyouketsu.pdf",
+      "sha256": "3afa959edda6596c92dec18ea6c6639a90a328aff9f348923d8cdc0970c30d9c",
+      "bytes": 33515,
+      "fetchedAt": "2026-10-01T16:54:23.253Z",
+      "fetchedFrom": "https://www.city.kasugai.lg.jp/_res/projects/default_project/_page_/001/038/639/20260312hyouketsu.pdf"
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "docType": "council-composition",
+  "sourceId": "toyama-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.3",
+  "parsedAt": "2026-10-01T17:02:14.964Z",
+  "fiscalYear": "R8",
+  "body": "富山市議会",
+  "seats": 38,
+  "asOf": "2026-03-11",
+  "factions": [
+    {
+      "name": "富山市議会自由民主党",
+      "seats": 15,
+      "isIndependent": false,
+      "members": [
+        "木地智美",
+        "飯山勝彦",
+        "織田伸一",
+        "高原ゆずる",
+        "豊岡達郎",
+        "松井邦人",
+        "金谷幸則",
+        "舎川智也",
+        "押田大祐",
+        "髙田真里",
+        "髙道秋彦",
+        "横野昭",
+        "金厚有豊",
+        "鋪田博紀",
+        "高田重信"
+      ],
+      "locator": {
+        "file": "1007104.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "自由民主党",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "金岡貴裕",
+        "藤田克樹",
+        "久保大憲",
+        "江西照康",
+        "柞山数男"
+      ],
+      "locator": {
+        "file": "1007104.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "細川博徳",
+        "柏佳枝",
+        "松尾茂",
+        "松井桂将"
+      ],
+      "locator": {
+        "file": "1007104.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "立憲民主党",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "岡部享",
+        "東篤",
+        "村石篤"
+      ],
+      "locator": {
+        "file": "1007104.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "会派 誠政",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "尾上一彦",
+        "橋本雅雄"
+      ],
+      "locator": {
+        "file": "1007104.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "政策・維新32",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "金井毅俊",
+        "大島満"
+      ],
+      "locator": {
+        "file": "1007104.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "赤星ゆかり"
+      ],
+      "locator": {
+        "file": "1007104.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "太政",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "村上和久"
+      ],
+      "locator": {
+        "file": "1007104.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "政風会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "市田龍一"
+      ],
+      "locator": {
+        "file": "1007104.html",
+        "row": 9
+      }
+    },
+    {
+      "name": "気魄",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "谷口寿一"
+      ],
+      "locator": {
+        "file": "1007104.html",
+        "row": 10
+      }
+    },
+    {
+      "name": "未来をつくる",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "福田敏彦"
+      ],
+      "locator": {
+        "file": "1007104.html",
+        "row": 11
+      }
+    },
+    {
+      "name": "みどり",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "野上明人"
+      ],
+      "locator": {
+        "file": "1007104.html",
+        "row": 12
+      }
+    },
+    {
+      "name": "参政党議員会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "金山茜"
+      ],
+      "locator": {
+        "file": "1007104.html",
+        "row": 13
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第１号",
+    "billName": "令和８年度富山市一般会計予算",
+    "sessionLabel": "令和８年３月定例会",
+    "decidedDate": "2026-03-24",
+    "decidedDateLabel": "令和8年3月24日",
+    "result": "原案可決",
+    "locator": {
+      "file": "sanpi-r0803-2.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "会派別議員名簿（令和8年3月11日現在）",
+  "resultTitle": "令和８年３月定例会 議案等に対する賛否について"
+}

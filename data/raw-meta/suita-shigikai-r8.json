@@ -1,0 +1,26 @@
+{
+  "sourceId": "suita-shigikai-r8",
+  "files": [
+    {
+      "filename": "1012851.html",
+      "sha256": "7bc09bb64a0c637573bc11ac0e8fab67fac8830459535b8934163a419b72515c",
+      "bytes": 20009,
+      "fetchedAt": "2026-10-01T16:54:23.253Z",
+      "fetchedFrom": "https://web.archive.org/web/20260618145337id_/https://www.city.suita.osaka.jp/shigikai/1017062/1012851.html"
+    },
+    {
+      "filename": "50802result.pdf",
+      "sha256": "78814f8df3b4890294b881576df1ec1e0ef3a397fffb5a7d64695fccc3deab65",
+      "bytes": 688051,
+      "fetchedAt": "2026-10-01T16:54:23.255Z",
+      "fetchedFrom": "https://www.city.suita.osaka.jp/_res/projects/default_project/_page_/001/043/624/50802result.pdf"
+    },
+    {
+      "filename": "1040664.html",
+      "sha256": "e1c86cfb62b2a117398492471f9226ee9bc2fcd081992f1e9b85af71755ec8d0",
+      "bytes": 24434,
+      "fetchedAt": "2026-10-01T16:54:23.256Z",
+      "fetchedFrom": "https://www.city.suita.osaka.jp/shigikai/1016981/1016982/1040662/1040663/1040664.html"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "docType": "council-composition",
+  "sourceId": "matsumoto-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.5.3",
+  "parsedAt": "2026-10-01T17:02:15.467Z",
+  "fiscalYear": "R8",
+  "body": "松本市議会",
+  "seats": 30,
+  "asOf": "2025-05-14",
+  "factions": [
+    {
+      "name": "誠の会",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "中山英子",
+        "宇留賀響",
+        "土屋眞一",
+        "今井ゆうすけ",
+        "犬飼信雄",
+        "阿部功祐",
+        "太田更三"
+      ],
+      "locator": {
+        "file": "6164.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "政友会",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "こば陽子",
+        "太田正徳",
+        "和久井悟",
+        "西澤郁弥",
+        "牛丸仁志",
+        "村上幸雄",
+        "中島昌子"
+      ],
+      "locator": {
+        "file": "6164.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "開明",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "菊地徹",
+        "吉村幸代",
+        "川久保文良",
+        "上條温",
+        "芝山稔"
+      ],
+      "locator": {
+        "file": "6164.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "松本市議会公明党",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "大久保美由紀",
+        "内田麻美",
+        "上條美智子",
+        "近藤晴彦"
+      ],
+      "locator": {
+        "file": "6164.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "まつも都",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "花村恵子",
+        "神津ゆかり",
+        "上條一正",
+        "横内裕治"
+      ],
+      "locator": {
+        "file": "6164.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "日本共産党松本市議団",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "宗田まゆ美",
+        "塩原孝子",
+        "犬飼明美"
+      ],
+      "locator": {
+        "file": "6164.html",
+        "row": 6
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第43号",
+    "billName": "令和８年度松本市一般会計予算",
+    "sessionLabel": "令和8年2月定例会",
+    "decidedDate": "2026-03-16",
+    "decidedDateLabel": "令和8年3月16日",
+    "result": "修正可決",
+    "locator": {
+      "file": "197638.html"
+    }
+  },
+  "rosterTitle": "会派名簿（令和7年5月14日現在）",
+  "resultTitle": "議案 議決結果 令和8年2月定例会"
+}

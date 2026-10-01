@@ -1,0 +1,33 @@
+{
+  "sourceId": "kashiwa-shigikai-r8",
+  "files": [
+    {
+      "filename": "gikaidayori253goup2.pdf",
+      "sha256": "66467698d1256a2d12ee649e67ac5032ed86d37888f9a695937ae0503a8121bb",
+      "bytes": 1190969,
+      "fetchedAt": "2026-10-01T16:55:24.099Z",
+      "fetchedFrom": "https://www.city.kashiwa.lg.jp/documents/45575/gikaidayori253goup2.pdf"
+    },
+    {
+      "filename": "giantouhyoukekka2.pdf",
+      "sha256": "b44db3bb892063a144c1597ef1563693d9c8c9c973716e997b502718ba53fc1e",
+      "bytes": 201385,
+      "fetchedAt": "2026-10-01T16:55:24.100Z",
+      "fetchedFrom": "https://www.city.kashiwa.lg.jp/documents/45162/giantouhyoukekka2.pdf"
+    },
+    {
+      "filename": "giketsukekka.html",
+      "sha256": "1da5bfbbf80c54edf2313cea2c302e955eac948264c7b3f3f5b92310c648f668",
+      "bytes": 11271,
+      "fetchedAt": "2026-10-01T16:55:24.100Z",
+      "fetchedFrom": "https://www.city.kashiwa.lg.jp/gikaigiji/assembly/regular_meeting/teireikai/r8teireikai1/giketsukekka.html"
+    },
+    {
+      "filename": "giangiketsukekka.pdf",
+      "sha256": "6a460e396fccae06a198314c4d1caf5859af8d637321ac51983a9157036ed6f6",
+      "bytes": 159508,
+      "fetchedAt": "2026-10-01T16:55:24.101Z",
+      "fetchedFrom": "https://www.city.kashiwa.lg.jp/documents/45162/giangiketsukekka.pdf"
+    }
+  ]
+}

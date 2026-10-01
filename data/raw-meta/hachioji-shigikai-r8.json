@@ -1,0 +1,26 @@
+{
+  "sourceId": "hachioji-shigikai-r8",
+  "files": [
+    {
+      "filename": "R7-6-9.pdf",
+      "sha256": "56896da7fe71a6c782c471b575cd52c2f7003365a9f7210052928399330fb78d",
+      "bytes": 53287,
+      "fetchedAt": "2026-10-01T16:55:24.101Z",
+      "fetchedFrom": "https://www.city.hachioji.tokyo.jp/contents/shigikai_1/giin/kakushu/p010679_d/fil/R7-6-9.pdf"
+    },
+    {
+      "filename": "p010679.html",
+      "sha256": "d6be035f80cb6a5bd4bc94ad14fadaeb43377fd5a122e1e963f9e9e6a5ee6c09",
+      "bytes": 19392,
+      "fetchedAt": "2026-10-01T16:55:24.102Z",
+      "fetchedFrom": "https://web.archive.org/web/20260421073609id_/https://www.city.hachioji.tokyo.jp/contents/shigikai_1/giin/kakushu/p010679.html"
+    },
+    {
+      "filename": "p037014.html",
+      "sha256": "7173104a7c644a869eb69e336ec4a23de1b10b2cb7d00cfe4dc41f4b66ae7b23",
+      "bytes": 69565,
+      "fetchedAt": "2026-10-01T16:55:24.102Z",
+      "fetchedFrom": "https://www.city.hachioji.tokyo.jp/contents/shigikai_1/gikainokatudou/honnkaigi/reiwa8/p037014.html"
+    }
+  ]
+}

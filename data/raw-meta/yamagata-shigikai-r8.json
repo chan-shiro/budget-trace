@@ -1,0 +1,26 @@
+{
+  "sourceId": "yamagata-shigikai-r8",
+  "files": [
+    {
+      "filename": "1001203.html",
+      "sha256": "95122983d16dfeaa94d14a37857f54ee731b9990c747321a8d995cea7a8992cd",
+      "bytes": 28551,
+      "fetchedAt": "2026-10-01T16:54:08.316Z",
+      "fetchedFrom": "https://web.archive.org/web/20260315083000id_/https://www.city.yamagata-yamagata.lg.jp/gikai/giin/1001203.html"
+    },
+    {
+      "filename": "1018030.html",
+      "sha256": "bf0660e3c066f43f043fe57aeeb2730531946dc9f57189bfa04a2773fae3f0fd",
+      "bytes": 32890,
+      "fetchedAt": "2026-10-01T16:54:08.316Z",
+      "fetchedFrom": "https://www.city.yamagata-yamagata.lg.jp/gikai/kaigikekka/1001699/1018028/1018030.html"
+    },
+    {
+      "filename": "202603sanpiitiranhyou.pdf",
+      "sha256": "55065bf7d75061ce40af5368db0c6535b1d16be8d1667eecf665232a2cf38029",
+      "bytes": 59536,
+      "fetchedAt": "2026-10-01T16:54:08.317Z",
+      "fetchedFrom": "https://www.city.yamagata-yamagata.lg.jp/_res/projects/default_project/_page_/001/018/153/202603sanpiitiranhyou.pdf"
+    }
+  ]
+}

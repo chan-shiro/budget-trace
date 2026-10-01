@@ -1,0 +1,29 @@
+{
+  "sourceId": "soka-shigikai-r8",
+  "files": [
+    {
+      "filename": "Kg571_kekka.pdf",
+      "sha256": "5d1ab8babf990d88b25bc0df7e0cb694cb63a19bf59fdee35a28f8b2f9c692d4",
+      "bytes": 215127,
+      "fetchedAt": "2026-10-01T16:59:04.947Z",
+      "fetchedFrom": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Congress/Kg571_kekka.pdf"
+    },
+    {
+      "filename": "g07_gian_sanpi.asp_KaigiID_131.html",
+      "sha256": "46f2b9139ee98464bb5e099ca5cfebb4224080e4a0f387ade5b3189309b846fd",
+      "bytes": 9168,
+      "fetchedAt": "2026-10-01T16:59:04.947Z",
+      "fetchedFrom": "http://www.soka-shigikai.jp/g07_gian_sanpi.asp?KaigiID=131",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "Sr2B68_0318 1.pdf",
+      "sha256": "61fc948b4a52a8e293644de6d2cdfcea2b89c713f7e2ec3bd43c0687e67d688a",
+      "bytes": 912508,
+      "fetchedAt": "2026-10-01T16:59:04.949Z",
+      "fetchedFrom": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/shiryo2/Sr2B68_0318%201.pdf"
+    }
+  ]
+}

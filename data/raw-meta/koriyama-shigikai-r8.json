@@ -1,0 +1,26 @@
+{
+  "sourceId": "koriyama-shigikai-r8",
+  "files": [
+    {
+      "filename": "2655.html",
+      "sha256": "96166aceb3b83e173c7af309b8a33397c926bcdfe66a505158e3fbfcb9267b1c",
+      "bytes": 53843,
+      "fetchedAt": "2026-10-01T16:54:08.327Z",
+      "fetchedFrom": "https://web.archive.org/web/20260208073645id_/https://www.city.koriyama.lg.jp/site/gikai/2655.html"
+    },
+    {
+      "filename": "118874.pdf",
+      "sha256": "3920c64bb3e0af587fafd07594ea975547edeaffa96310e061553dd33bd87945",
+      "bytes": 90751,
+      "fetchedAt": "2026-10-01T16:54:08.328Z",
+      "fetchedFrom": "https://www.city.koriyama.lg.jp/uploaded/attachment/118874.pdf"
+    },
+    {
+      "filename": "118823.pdf",
+      "sha256": "2665a96da05803ba299125c39b8db3f25ec6ceda2bef8490ed455e76cddcfa6e",
+      "bytes": 135053,
+      "fetchedAt": "2026-10-01T16:54:08.330Z",
+      "fetchedFrom": "https://www.city.koriyama.lg.jp/uploaded/attachment/118823.pdf"
+    }
+  ]
+}

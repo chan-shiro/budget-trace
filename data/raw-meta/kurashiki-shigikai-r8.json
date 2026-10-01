@@ -1,0 +1,33 @@
+{
+  "sourceId": "kurashiki-shigikai-r8",
+  "files": [
+    {
+      "filename": "1008326.html",
+      "sha256": "5dec0366e86b4aee498fa9b79e91189bbf7410f0147e976573bb0dafa324e33a",
+      "bytes": 26166,
+      "fetchedAt": "2026-10-01T16:54:23.286Z",
+      "fetchedFrom": "https://web.archive.org/web/20250811201558id_/https://www.city.kurashiki.okayama.jp/cityinfo/assembly/1008324/1008326.html"
+    },
+    {
+      "filename": "0318giannitiran.pdf",
+      "sha256": "cd1d0989d602d8090f35935b7f2b6c4cb06370b1dfe66073a73c37c96b15e0b9",
+      "bytes": 269902,
+      "fetchedAt": "2026-10-01T16:54:23.287Z",
+      "fetchedFrom": "https://www.city.kurashiki.okayama.jp/_res/projects/default_project/_page_/001/023/399/0318giannitiran.pdf"
+    },
+    {
+      "filename": "0318giinnitirann.pdf",
+      "sha256": "d81a9647f692660c4dc5e1c02129e651e1677f6da55be61da02510c55e69185c",
+      "bytes": 167571,
+      "fetchedAt": "2026-10-01T16:54:23.287Z",
+      "fetchedFrom": "https://www.city.kurashiki.okayama.jp/_res/projects/default_project/_page_/001/023/399/0318giinnitirann.pdf"
+    },
+    {
+      "filename": "1008321.html",
+      "sha256": "f768caaa3d58a124723c73c93cefce3618868c80de8f1ec875986946ada41369",
+      "bytes": 37126,
+      "fetchedAt": "2026-10-01T16:54:23.288Z",
+      "fetchedFrom": "https://web.archive.org/web/20251209082124id_/https://www.city.kurashiki.okayama.jp/cityinfo/assembly/1014292/1008321.html"
+    }
+  ]
+}
