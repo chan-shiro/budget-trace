@@ -1591,6 +1591,9 @@ function parseKanPage(
       )
         .replace(ABOLISHED_MARK_RE, "")
         .replace(TAIL_ABOLISHED_MARK_RE, "")
+        // 番号の代わりに `廃.` を置く様式（2026-10-02・四街道 R3 `廃. 災害復旧費 - 2,000 △2,000`）。落とさないと款名が `廃.災害復旧費` になり、
+        // 前年度の `災害復旧費` と名前で結べない（Σ は差0 のまま）。句点つきに限る（裸の `廃` は上の BARE_ABOLISHED_MARK_RE が担う）。
+        .replace(/^廃[.．]/, "")
         .replace(/[○〇]$/, "")
         .replace(/[-‐‑‒–—―−－─━]/g, "");
       // 上段に名前があり下段が続く廃止款（Options.abolishedAwaitTail 参照・松山 R8）
