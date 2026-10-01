@@ -62,6 +62,8 @@ const optionsSchema = z.object({
   teisuText: z.string().optional(),
   teisuUrl: z.string().url().optional(),
   vacancies: z.number().int().nonnegative().optional(),
+  /** 欠員の原文（vacancies > 0 のとき必須。teisuText と同じ原典で照合する） */
+  vacanciesText: z.string().optional(),
   noFactions: z.boolean().optional(),
   roster: z.object({
     url: z.string().url(),
@@ -79,18 +81,28 @@ const optionsSchema = z.object({
      */
     alsoUrls: z.array(z.string().url()).optional(),
     /** 件名の近くに無くてよい項目（原典の組版で離れるもの。理由を registry のコメントに書く） */
-    farOk: z.array(z.enum(["billNo", "result", "decidedDate"])).optional(),
+    farOk: z.array(z.enum(["billNo", "decidedDate"])).optional(),
+    /**
+     * 結果語の位置。既定は件名の直後。賛否表の行が「…○○可決＋件名…」と組まれる原典（北杜の議会だより）は "before"
+     */
+    resultSide: z.enum(["after", "before"]).optional(),
+    /**
+     * 結果が件名の行に無く、**一覧の見出し**で決まる原典（南アルプスの議会だより「◆全会一致で承認・可決・同意した議案」）。
+     * 件名と同じ本文に `heading` があり、件名の直後に結果語が無い（賛否表の行ではない）こと。
+     * 画面の `result` は heading に含まれる語でなければならない
+     */
+    resultBlock: z.object({ heading: z.string().min(1) }).optional(),
+    /**
+     * `farOk: ["decidedDate"]` のときの議決日の原文（例: 「3月23日開催」「３月１６日（月)午前１０時開議」）。
+     * 月日だけで探すと本文の別の日付に当たる（レビューで実測）ので、前後の字ごと書く。M月D日を含むこと
+     */
+    decidedDateText: z.string().optional(),
     billNo: z.string().min(1),
     billName: z.string().min(1),
     sessionLabel: z.string().min(1),
     decidedDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
     /** 結果。**原典の語のまま**（「原案可決」を「可決」に丸めない・合成語を作らない） */
     result: z.string().min(1),
-    /**
-     * 結果の原文が一覧の見出し側にしか無い原典（南アルプスの議会だより「◆全会一致で承認・可決・同意した議案」）
-     * での突き合わせ用の原文。`farOk: ["result"]` と組で使う
-     */
-    resultText: z.string().optional(),
   }),
 });
 export type CouncilTranscribedOptions = z.infer<typeof optionsSchema>;
@@ -224,7 +236,7 @@ export function parseCouncilTranscribed(
       opt.factions.forEach((g, j) => {
         if (j === i) return;
         for (const m of g.members) {
-          if (sections.every((s) => s.includes(norm(m)))) {
+          if (sections.some((s) => s.includes(norm(m)))) {
             missing.push(`${rosterFile.filename}: 会派「${f.name}」の枠に「${g.name}」の議員「${m}」が入っています（枠か書き写しの誤り）`);
           }
         }
@@ -234,6 +246,10 @@ export function parseCouncilTranscribed(
       const n = declaredNumber(f.declared);
       if (n == null) missing.push(`${f.name}: declared「${f.declared}」から人数を1つに読めません`);
       else if (n !== f.members.length) missing.push(`${f.name}: 名簿の印字は ${n}人、書き写しは ${f.members.length}人`);
+      // 区間方式では会派名ごと書かせる（「（1）」だけだと区間内のどこかの数字に当たる）
+      if (!f.box && !allNames[i]!.some((part) => norm(f.declared!).includes(part))) {
+        missing.push(`${f.name}: declared「${f.declared}」は会派名を含めて書く（区間方式）`);
+      }
       if (!sections.some((s) => s.includes(norm(f.declared!)))) {
         missing.push(`${rosterFile.filename}: 会派「${f.name}」の人数の印字「${f.declared}」が${f.box ? "枠" : "区間"}に見つかりません`);
       }
@@ -272,6 +288,10 @@ export function parseCouncilTranscribed(
     if (!opt.teisuText) throw new Error(`${source.id}: teisu には teisuText（原典の表記）が要ります`);
     const tv = opt.teisuUrl ? readDoc(fileFor(opt.teisuUrl)).views : [...roster.views, ...resultViews];
     if (!has(tv, opt.teisuText)) missing.push(`定数の表記「${opt.teisuText}」が原典に見つかりません`);
+    if ((opt.vacancies ?? 0) > 0) {
+      if (!opt.vacanciesText) throw new Error(`${source.id}: vacancies には vacanciesText（原典の表記）が要ります`);
+      if (!has(tv, opt.vacanciesText)) missing.push(`欠員の表記「${opt.vacanciesText}」が原典に見つかりません`);
+    }
     const expect = opt.teisu - (opt.vacancies ?? 0);
     if (seats !== expect) missing.push(`現員 ${seats} が 定数 ${opt.teisu} − 欠員 ${opt.vacancies ?? 0} = ${expect} と合いません（書き落とし？）`);
   }
@@ -302,22 +322,56 @@ export function parseCouncilTranscribed(
   }
   const after = (needle: string, what: string, key: "result" | "decidedDate") => {
     const n = norm(needle);
-    if (r.farOk?.includes(key)) {
-      if (!has(resultViews, needle)) missing.push(`${resultFile.filename}: ${what}「${needle}」が本文に見つかりません`);
+    if (key === "decidedDate" && r.farOk?.includes(key)) {
+      if (!r.decidedDateText) throw new Error(`${source.id}: farOk の decidedDate には decidedDateText（原典の前後の字ごと）が要ります`);
+      if (!norm(r.decidedDateText).includes(n)) missing.push(`decidedDateText「${r.decidedDateText}」に議決月日「${needle}」が含まれません`);
+      if (!has(resultViews, r.decidedDateText)) missing.push(`${resultFile.filename}: ${what}「${r.decidedDateText}」が本文に見つかりません`);
       return;
     }
     if (anchors.length && !anchors.some((a) => a.text.slice(a.at + nameN.length, a.at + nameN.length + AFTER).includes(n))) {
       missing.push(`${resultFile.filename}: ${what}「${needle}」が件名の直後${AFTER}字に見つかりません`);
     }
   };
-  after(r.resultText ?? r.result, "結果", "result");
-  // 結果は原典の語のまま — 直後の窓で最初に出る結果の語が、書き写した語と同じであること（「原案可決」を「可決」に丸めない）
-  if (!r.farOk?.includes("result") && anchors.length) {
-    const ok = anchors.some((a) => {
+  // ---- 結果 ----
+  const resultN = norm(r.result);
+  // 結果を見る起点。議案番号が補助の原典にしか無い（北杜）と、主の原典の件名は議案番号つきの起点に
+  // 入らない。主の原典に起点が無ければ、主の原典での件名の出現を起点にする
+  const mainAnchors = anchors.filter((a) => a.page > 0);
+  const resAnchors = mainAnchors.length
+    ? mainAnchors
+    : mainResult.views.flatMap((v) => {
+        const out: { text: string; at: number; page: number }[] = [];
+        for (let i = v.text.indexOf(nameN); i >= 0; i = v.text.indexOf(nameN, i + 1)) out.push({ text: v.text, at: i, page: v.page });
+        return out;
+      });
+  if (r.resultBlock) {
+    // 件名が見出し（例: ◆全会一致で承認・可決・同意した議案）の一覧に属すること
+    const headN = norm(r.resultBlock.heading);
+    if (!headN.includes(resultN)) missing.push(`結果「${r.result}」が見出し「${r.resultBlock.heading}」の語ではありません`);
+    // ⚠ 見出しと一覧の並び順は抽出モードで変わる（-layout と -raw で見出しが一覧の前にも後にも出る）ので、
+    //   「見出しの前に件名がある」では帰属を縛れない（2026-10-01 に実測）。代わりに、件名と同じ本文に見出しがあり、
+    //   **件名の直後に結果語が無い**（＝自前の結果を持つ賛否表の行ではない）ことを見る。南アルプスの議案27は
+    //   同じページの賛否表に「議案27 国民健康保険特別会計予算 可決 〇〇×…」と出るのでここで落ちる
+    const ok = resAnchors.some((a) => {
+      if (!a.text.includes(headN)) return false;
       const w = a.text.slice(a.at + nameN.length, a.at + nameN.length + AFTER);
-      return w.match(/原案可決|修正可決|可決|否決|承認|同意|認定|採択/)?.[0] === norm(r.result);
+      return !/原案可決|修正可決|可決|否決/.test(w);
     });
-    if (!ok) missing.push(`${resultFile.filename}: 結果「${r.result}」が原典の語（件名の直後の最初の結果語）と一致しません`);
+    if (!ok) missing.push(`${resultFile.filename}: 件名が見出し「${r.resultBlock.heading}」の一覧に属していません`);
+  } else {
+    // 結果は原典の語のまま — 窓の中で件名に最も近い結果語が、書き写した語と同じであること
+    const RE = /原案可決|修正可決|可決|否決|承認|同意|認定|採択/g;
+    const ok = resAnchors.some((a) => {
+      if (r.resultSide === "before") {
+        const w = a.text.slice(Math.max(0, a.at - BEFORE), a.at);
+        const all = [...w.matchAll(RE)];
+        return all.length > 0 && all[all.length - 1]![0] === resultN;
+      }
+      const w = a.text.slice(a.at + nameN.length, a.at + nameN.length + AFTER);
+      return w.match(RE)?.[0] === resultN;
+    });
+    const side = r.resultSide === "before" ? `直前${BEFORE}字` : `直後${AFTER}字`;
+    if (!ok) missing.push(`${resultFile.filename}: 結果「${r.result}」が件名の${side}で最も近い結果語と一致しません`);
   }
   if (!has(resultViews, r.sessionLabel)) missing.push(`${resultFile.filename}: 会期「${r.sessionLabel}」が本文に見つかりません`);
   const [, mo, d] = r.decidedDate.split("-").map(Number) as [number, number, number];

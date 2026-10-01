@@ -23454,8 +23454,10 @@ export const SOURCES: SourceEntry[] = [
         alsoUrls: ["https://www.city.hokuto.yamanashi.jp/fs/5/0/1/2/9/7/_/____.pdf"],
         // 議決日は議事日程の表題（令和８年３月１６日（月)午前１０時開議）にあり、件名の行とは離れる。
         // 結果は議会だより p.5 の賛否表の右端の列で、-raw では「…○○可決令和8年度北杜市一般会計予算○○×…」と
-        // 件名の前に出る（行の区切りが読めないので近接で縛れない）
-        farOk: ["result", "decidedDate"],
+        // 件名の前に出る（件名の直前で最も近い結果語を見る）
+        resultSide: "before",
+        farOk: ["decidedDate"],
+        decidedDateText: "令和８年３月１６日（月)午前１０時開議",
         title: "北杜市議会だより 第86号",
         billNo: "議案第28号",
         billName: "令和8年度北杜市一般会計予算",
@@ -23559,10 +23561,12 @@ export const SOURCES: SourceEntry[] = [
         sessionLabel: "第1回定例会",
         decidedDate: "2026-03-23",
         result: "可決",
-        // 結果は一覧の見出し（全会一致で承認・可決・同意した議案）にあり件名の行には無い。日付は
+        // 結果は一覧の見出し（◆全会一致で承認・可決・同意した議案）にあり件名の行には無い。日付は
         // 「第1回定例会 （３月）２月20日〜 ３月23日開催」としか書かない（閉会日＝議決日。会議録で確認）
-        resultText: "全会一致で承認・可決・同意した議案",
-        farOk: ["result", "decidedDate"],
+        // 件名がこの見出しの一覧に属し、賛否表の行（件名の直後に結果語）ではないことを見る（議案27 は賛否表の側）
+        resultBlock: { heading: "全会一致で承認・可決・同意した議案" },
+        farOk: ["decidedDate"],
+        decidedDateText: "3月23日開催",
       },
     },
   },
