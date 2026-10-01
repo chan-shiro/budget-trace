@@ -19837,6 +19837,18 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "license": "公式ホームページに掲載されている文書や画像、映像、音声等の著作権は、原則として山形市に帰属します（一部の画像等の著作権は、原著作者が所有しています。）。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。",
     "target": "file"
   },
+  "/sources/fukushima-shigikai-r8/vol230.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.fukushima.fukushima.jp/material/files/group/72/vol230.pdf",
+    "license": "ふくしまウェブに掲載されている情報等は知的財産権が法令等により保護されています。利用者は、福島市役所や福島市役所への情報等の提供元に事前の承諾を受けた場合を除いて、情報等やそれらに包含される内容（一部か全部かを問わない。）を複製・公開・送信・頒布・譲渡・貸与・使用許諾・転載・再利用できません。また、ふくしまウェブの内容の全部または一部について、無断で改変をおこなうことはできません。",
+    "target": "file"
+  },
+  "/sources/fukushima-shigikai-r8/3751.html": {
+    "mode": "origin",
+    "href": "https://www.city.fukushima.fukushima.jp/gikai/gian/2/3751.html",
+    "license": "ふくしまウェブに掲載されている情報等は知的財産権が法令等により保護されています。利用者は、福島市役所や福島市役所への情報等の提供元に事前の承諾を受けた場合を除いて、情報等やそれらに包含される内容（一部か全部かを問わない。）を複製・公開・送信・頒布・譲渡・貸与・使用許諾・転載・再利用できません。また、ふくしまウェブの内容の全部または一部について、無断で改変をおこなうことはできません。",
+    "target": "page"
+  },
   "/sources/koriyama-shigikai-r8/2655.html": {
     "mode": "archive",
     "href": "https://web.archive.org/web/20260208073645id_/https://www.city.koriyama.lg.jp/site/gikai/2655.html",

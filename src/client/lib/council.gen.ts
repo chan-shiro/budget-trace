@@ -1166,7 +1166,7 @@ export const MUNI_COUNCIL_YEARS: Record<string, Council[]> = {
         "title": "かしわ市議会だより253号 2面 会派名簿（令和８年３月24日現在）",
         "localUrl": "/sources/kashiwa-shigikai-r8/gikaidayori253goup2.pdf",
         "originUrl": "https://www.city.kashiwa.lg.jp/documents/45575/gikaidayori253goup2.pdf",
-        "archiveUrl": "https://www.city.kashiwa.lg.jp/documents/45575/gikaidayori253goup2.pdf"
+        "archiveUrl": "https://web.archive.org/web/20261001193104/https://www.city.kashiwa.lg.jp/documents/45575/gikaidayori253goup2.pdf"
       },
       "result": {
         "title": "令和8年第1回定例会 議決結果一覧【3月24日】（議案）",
@@ -1799,7 +1799,7 @@ export const MUNI_COUNCIL_YEARS: Record<string, Council[]> = {
         "title": "令和８年３月定例会提出議案等及び審議結果",
         "localUrl": "/sources/fukui-shigikai-r8/R803t.pdf",
         "originUrl": "https://www.city.fukui.lg.jp/sisei/gikai/shingigian/p004023_d/fil/R803t.pdf",
-        "archiveUrl": "https://www.city.fukui.lg.jp/sisei/gikai/shingigian/p004023_d/fil/R803t.pdf"
+        "archiveUrl": "https://web.archive.org/web/20261001193603/https://www.city.fukui.lg.jp/sisei/gikai/shingigian/p004023_d/fil/R803t.pdf"
       },
       "minutesUrl": null,
       "newsletterUrl": null
@@ -4482,7 +4482,7 @@ export const MUNI_COUNCIL_YEARS: Record<string, Council[]> = {
         "title": "令和8年第1回定例会 議案および審議結果（議第３号 賛否一覧）",
         "localUrl": "/sources/kumamoto-shigikai-r8/detail.aspx_c_id_4_coy_id_16_co_id_207_dis_id_3.html",
         "originUrl": "https://kumamoto-shigikai.jp/agenda/pub/detail.aspx?c_id=4&coy_id=16&co_id=207&dis_id=3",
-        "archiveUrl": "https://web.archive.org/web/20261001163846/https://kumamoto-shigikai.jp/agenda/pub/detail.aspx?c_id=4&coy_id=16&co_id=207&dis_id=3"
+        "archiveUrl": "https://web.archive.org/web/20261001194138/https://kumamoto-shigikai.jp/agenda/pub/detail.aspx?c_id=4&coy_id=16&co_id=207&dis_id=3"
       },
       "minutesUrl": null,
       "newsletterUrl": null
@@ -4551,13 +4551,13 @@ export const MUNI_COUNCIL_YEARS: Record<string, Council[]> = {
         "title": "令和８年第１回定例会 議決結果賛否一覧表（会派・議員名〔議席番号順〕の列見出し）",
         "localUrl": "/sources/oita-shigikai-r8/giketukekka.pdf",
         "originUrl": "https://www.city.oita.oita.jp/o186/shigikai/kaiginokekka/documents/giketukekka.pdf",
-        "archiveUrl": "https://web.archive.org/web/20251012180017/https://www.city.oita.oita.jp/o186/shigikai/kaiginokekka/documents/giketukekka.pdf"
+        "archiveUrl": "https://web.archive.org/web/20261001191445/https://www.city.oita.oita.jp/o186/shigikai/kaiginokekka/documents/giketukekka.pdf"
       },
       "result": {
         "title": "令和８年第１回定例会 議決結果賛否一覧表",
         "localUrl": "/sources/oita-shigikai-r8/giketukekka.pdf",
         "originUrl": "https://www.city.oita.oita.jp/o186/shigikai/kaiginokekka/documents/giketukekka.pdf",
-        "archiveUrl": "https://web.archive.org/web/20251012180017/https://www.city.oita.oita.jp/o186/shigikai/kaiginokekka/documents/giketukekka.pdf"
+        "archiveUrl": "https://web.archive.org/web/20261001191445/https://www.city.oita.oita.jp/o186/shigikai/kaiginokekka/documents/giketukekka.pdf"
       },
       "minutesUrl": null,
       "newsletterUrl": null
@@ -5018,7 +5018,7 @@ export const MUNI_COUNCIL_YEARS: Record<string, Council[]> = {
         "sessionLabel": "令和8年3月市議会定例会",
         "decidedDate": "2026-03-24",
         "decidedDateLabel": "令和8年3月24日",
-        "result": "可決"
+        "result": "原案のとおり可決"
       },
       "sourceTitle": "令和8年度 山形市議会の構成（会派別議席数）と当初予算の議決",
       "roster": {
@@ -5090,7 +5090,7 @@ export const MUNI_COUNCIL_YEARS: Record<string, Council[]> = {
         "title": "ふくしま市議会だより VOL.230 p.9 電子採決システムによる採決結果（令和8年3月定例会議）",
         "localUrl": "/sources/fukushima-shigikai-r8/vol230.pdf",
         "originUrl": "https://www.city.fukushima.fukushima.jp/material/files/group/72/vol230.pdf",
-        "archiveUrl": "https://www.city.fukushima.fukushima.jp/material/files/group/72/vol230.pdf"
+        "archiveUrl": "https://web.archive.org/web/20261001183747/https://www.city.fukushima.fukushima.jp/material/files/group/72/vol230.pdf"
       },
       "result": {
         "title": "議案の審議結果-令和8年3月定例会議-",

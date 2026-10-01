@@ -24923,7 +24923,7 @@ export const SOURCES: SourceEntry[] = [
         billName: "令和8年度山形市一般会計予算",
         sessionLabel: "令和8年3月市議会定例会",
         decidedDate: "2026-03-24",
-        result: "可決",
+        result: "原案のとおり可決",
         resultBlock: {"heading": "原案のとおり可決した議案"},
         farOk: ["decidedDate"],
         decidedDateText: "（3月24日議決）",
@@ -24947,7 +24947,7 @@ export const SOURCES: SourceEntry[] = [
     kind: "pdf",
     fiscalYear: "R8",
     scope: "福島市議会（団体コード072010）",
-    license: "ふくしまウェブに掲載されている情報等は知的財産権が法令等により保護されています。利用者は、福島市役所や福島市役所への情報等の提供元に事前の承諾を受けた場合を除いて、情報等やそれらに包含される内容（一部か全部かを問わない。）を複製・公開・送信・頒布・譲渡・貸与・使用許諾・転載・再利用できません。",
+    license: "ふくしまウェブに掲載されている情報等は知的財産権が法令等により保護されています。利用者は、福島市役所や福島市役所への情報等の提供元に事前の承諾を受けた場合を除いて、情報等やそれらに包含される内容（一部か全部かを問わない。）を複製・公開・送信・頒布・譲渡・貸与・使用許諾・転載・再利用できません。また、ふくしまウェブの内容の全部または一部について、無断で改変をおこなうことはできません。",
     parser: "council-transcribed",
     parserOptions: {
       body: "福島市議会",
@@ -26805,6 +26805,8 @@ export const SOURCES: SourceEntry[] = [
       asOf: "2025-12-03",
       asOfText: "更新日：2025年12月3日",
       totalText: {"text": "現在の議員数は31名です。", "url": "https://www.city.sasebo.lg.jp/gikai/gikai/shikumi/tesu-senkyo.html"},
+      // 会派を隣の会派へ合流させる書き写しを捕まえる網（総数だけでは鳴らない・中核市レビュー）。「（代表者）」が会派ごとに1回
+      factionMarker: "\\(代表者\\)",
       roster: {"url": "https://www.city.sasebo.lg.jp/gikai/gikai/ginshokai/kaihalist.html", "title": "会派別議員名簿（更新日 2025年12月3日）"},
       factions: [
         { name: "自民党市民会議", noDeclaredCount: true, noCountReason: "会派別議員名簿は会派ごとの人数を印字せず、定数33に対する欠員2の原文も無い（「現在の議員数は31名です」だけ）。議会全体の人数をその原文（totalText）で照合する", members: ["林健二", "本田ひろし", "黒川英朗", "甲斐義博", "田山藤丸", "鶴大地", "角田隆一郎", "山下こうだい", "山口裕二", "さきやま信幸", "大村のりちか", "田中稔", "松尾裕幸", "長野孝道", "市岡博道"] },

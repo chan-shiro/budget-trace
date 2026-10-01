@@ -24,7 +24,7 @@ import { z } from "zod";
 import { readRawMeta } from "../lib/store";
 import type { CouncilCompositionDoc, CouncilFactionFact, SourceEntry } from "../types";
 
-export const PARSER_VERSION = "0.5.3";
+export const PARSER_VERSION = "0.5.4";
 
 const factionSchema = z
   .object({
@@ -634,6 +634,10 @@ export function parseCouncilTranscribed(
     // 件名が見出し（例: ◆全会一致で承認・可決・同意した議案）の一覧に属すること
     const headN = norm(r.resultBlock.heading);
     if (!headN.includes(resultN)) missing.push(`結果「${r.result}」が見出し「${r.resultBlock.heading}」の語ではありません`);
+    // 見出しに含まれる結果語のうち最長のものと一致すること（「修正可決確定した議案」に「可決」は丸め・明石で実測）
+    const words = [...headN.matchAll(/原案のとおり可決|原案可決|修正可決|可決|否決/g)].map((m) => m[0]);
+    const longest = words.filter((w) => !words.some((o) => o !== w && o.includes(w)));
+    if (longest.length && !longest.includes(resultN)) missing.push(`結果「${r.result}」は見出しの結果語「${longest.join("・")}」を丸めています`);
     // 見出しは「承認・可決・同意」のように複数の語を並べる。予算の議決に当たる語だけを許す
     if (!/^(原案のとおり可決|原案可決|修正可決|可決|否決)$/.test(resultN)) missing.push(`結果「${r.result}」は予算の議決の語ではありません`);
     // ⚠ 見出しと一覧の並び順は抽出モードで変わる（-layout と -raw で見出しが一覧の前にも後にも出る）ので、
