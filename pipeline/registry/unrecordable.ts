@@ -1805,4 +1805,24 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     url: "https://www.city.chikusei.lg.jp/gyousei/zai-kaikei-kansa/zaisei/yosan/",
     checkedOn: "2026-09-28", ref: "docs/data-sources.md §13-52",
   },
+  {
+    // 鹿屋市（462039）R2。R8〜R3 は収録済み（§13-53）。
+    // ⚠ 原典は健全で、こちらの抽出が「廃止の印つきで当年度が空欄」の行に対応していないだけ（第49巡の手当ては印の無い行が対象）。
+    code: "462039", name: "鹿屋市", dataset: "budget", fiscalYears: ["R2"],
+    categories: ["parser-unsupported"],
+    reason:
+      "予算書と予算に関する説明書は文字を取り出せない画像のPDFで、読める資料は「当初予算の概要」の対前年度比較表だけ。" +
+      "その表の廃止された款「○【廃款】自動車取得税交付金」が当年度の欄が空欄のため既存パーサが当年度を読み違え、歳入の当年度の合計が 40,000千円合わなくなる。",
+    url: "https://www.city.kanoya.lg.jp/zaimu/yosan/r2/r2_tousyo.html",
+    checkedOn: "2026-10-01", ref: "docs/data-sources.md §13-53",
+  },
+  {
+    // 佐久市（202177）R4・R3・R2。R8〜R5 は収録済み（§13-53）。
+    code: "202177", name: "佐久市", dataset: "budget", fiscalYears: ["R4", "R3", "R2"],
+    categories: ["scanned-image"],
+    reason:
+      "予算説明資料と当初予算の概要が紙をスキャンした画像のPDFで、文字として取り出せない。予算書は年度のページに掲載が無い。",
+    url: "https://www.city.saku.nagano.jp/shisei/zaisei/yosan/index.html",
+    checkedOn: "2026-10-01", ref: "docs/data-sources.md §13-53",
+  },
 ];
