@@ -928,20 +928,15 @@ export const KOFU_EVALUATION_YEARS: KofuEvaluationYear[] = ${JSON.stringify(eval
     };
   });
   // ---- 甲府以外（`council-transcribed`）。団体コード → 年度の新しい順 ----
-  // **台帳はこの1か所**。ゲートは両方向（docs/handoff.md §4）: 検証 ok の council-transcribed は必ずここに
-  // あること（載せ忘れ）／ここにある資料は検証 ok であること（derive で throw）。
-  const COUNCIL_SOURCES: { srcId: string; muniCode: string }[] = [
-    { srcId: "yamanashi-ken-gikai-r8", muniCode: "190004" },
-    { srcId: "hokuto-gikai-r8", muniCode: "192091" },
-    { srcId: "fuefuki-gikai-r8", muniCode: "192112" },
-    { srcId: "minami-alps-gikai-r8", muniCode: "192082" },
-  ];
-  for (const s of SOURCES) {
-    if (s.parser !== "council-transcribed" || s.fixture) continue;
-    if (!COUNCIL_SOURCES.some((c) => c.srcId === s.id)) {
-      throw new Error(`${s.id}: council-transcribed の資料が derive の COUNCIL_SOURCES にありません（配信漏れ）`);
-    }
-  }
+  // 台帳は registry（parser: council-transcribed）そのもの。団体コードは scope の「団体コードNNNNNN」から取る
+  // （手で並べる台帳を別に持つと載せ忘れが起きる）。取り違えは出口で議会名と団体名を突き合わせて止める
+  const COUNCIL_SOURCES: { srcId: string; muniCode: string }[] = SOURCES.filter(
+    (s) => s.parser === "council-transcribed" && !s.fixture,
+  ).map((s) => {
+    const code = s.scope.match(/団体コード(\d{6})/)?.[1];
+    if (!code) throw new Error(`${s.id}: scope に「団体コードNNNNNN」がありません（議会の構成の配信先が決まらない）`);
+    return { srcId: s.id, muniCode: code };
+  });
   const muniCouncils: Record<string, unknown[]> = {};
   for (const { srcId, muniCode } of COUNCIL_SOURCES) {
     const v = validationResultSchema.parse(readJson(validationPath(srcId)));

@@ -1,0 +1,215 @@
+{
+  "docType": "council-composition",
+  "sourceId": "sapporo-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.4.0",
+  "parsedAt": "2026-10-01T15:50:46.589Z",
+  "fiscalYear": "R8",
+  "body": "札幌市議会",
+  "seats": 67,
+  "asOf": "2025-09-29",
+  "factions": [
+    {
+      "name": "札幌市議会自由民主党議員会",
+      "seats": 25,
+      "isIndependent": false,
+      "members": [
+        "三上洋右",
+        "三神英彦",
+        "和田勝也",
+        "高橋克朋",
+        "勝木勇人",
+        "五十嵐徳美",
+        "こんどう和雄",
+        "長内直也",
+        "よこやま峰子",
+        "飯島弘之",
+        "佐々木みつこ",
+        "細川正人",
+        "こじまゆみ",
+        "北村光一郎",
+        "小竹ともこ",
+        "中川賢一",
+        "伴良隆",
+        "村松叶啓",
+        "川田ただひさ",
+        "小須田大拓",
+        "村山拓司",
+        "松井隆文",
+        "山田洋聡",
+        "藤田稔人",
+        "山田一郎"
+      ],
+      "locator": {
+        "file": "meibo-kaiha.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "札幌市議会民主市民連合議員会",
+      "seats": 17,
+      "isIndependent": false,
+      "members": [
+        "福士勝",
+        "うるしはら直子",
+        "小野正美",
+        "水上美華",
+        "ふじわら広昭",
+        "おんむら健太郎",
+        "しのだ江里子",
+        "村上ゆうこ",
+        "林清治",
+        "あおいひろみ",
+        "中村たけし",
+        "森基誉則",
+        "松原淳二",
+        "篠原すみれ",
+        "かんの太一",
+        "定森光",
+        "たけのうち有美"
+      ],
+      "locator": {
+        "file": "meibo-kaiha.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "札幌市議会公明党議員会",
+      "seats": 10,
+      "isIndependent": false,
+      "members": [
+        "國安政典",
+        "熊谷誠一",
+        "前川隆史",
+        "小口智久",
+        "福田浩太郎",
+        "好井七海",
+        "丸山秀樹",
+        "竹内孝代",
+        "わたなべ泰行",
+        "森山由美子"
+      ],
+      "locator": {
+        "file": "meibo-kaiha.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "日本共産党札幌市議会議員団",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "池田由美",
+        "小形香織",
+        "太田秀子",
+        "佐藤綾",
+        "田中啓介",
+        "長屋いずみ",
+        "吉岡弘子"
+      ],
+      "locator": {
+        "file": "meibo-kaiha.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "坂元倫孝・荒井勇雄",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "坂元みちたか",
+        "荒井勇雄"
+      ],
+      "locator": {
+        "file": "meibo-kaiha.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "山口かずさ",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "山口かずさ"
+      ],
+      "locator": {
+        "file": "meibo-kaiha.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "未来さっぽろ",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "成田祐樹"
+      ],
+      "locator": {
+        "file": "meibo-kaiha.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "健康さっぽろ",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "丸岡守幸"
+      ],
+      "locator": {
+        "file": "meibo-kaiha.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "大地さっぽろ",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "脇元繁之"
+      ],
+      "locator": {
+        "file": "meibo-kaiha.html",
+        "row": 9
+      }
+    },
+    {
+      "name": "札幌市議会市民ネットワーク北海道",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "米倉みな子"
+      ],
+      "locator": {
+        "file": "meibo-kaiha.html",
+        "row": 10
+      }
+    },
+    {
+      "name": "日本維新の会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "波田大専"
+      ],
+      "locator": {
+        "file": "meibo-kaiha.html",
+        "row": 11
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第１号",
+    "billName": "令和８年度札幌市一般会計予算",
+    "sessionLabel": "令和８年第１回札幌市議会定例会",
+    "decidedDate": "2026-03-26",
+    "decidedDateLabel": "令和8年3月26日",
+    "result": "可決",
+    "locator": {
+      "file": "08_kekka1t.pdf",
+      "page": 2
+    }
+  },
+  "rosterTitle": "会派別名簿（更新日 2025年9月29日）",
+  "resultTitle": "令和8年第1回札幌市議会定例会 議決事件等一覧表"
+}

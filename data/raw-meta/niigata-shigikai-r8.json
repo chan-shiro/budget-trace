@@ -1,0 +1,19 @@
+{
+  "sourceId": "niigata-shigikai-r8",
+  "files": [
+    {
+      "filename": "meibo_03jounin.html",
+      "sha256": "88455318bd6892f3d1fe690acb85a301c8a323fed9075db557bbe39341e282d3",
+      "bytes": 25618,
+      "fetchedAt": "2026-10-01T15:50:46.331Z",
+      "fetchedFrom": "https://web.archive.org/web/20260305140442id_/https://www.city.niigata.lg.jp/shigikai/index_meibo/meibo_03jounin.html"
+    },
+    {
+      "filename": "r0802.html",
+      "sha256": "ad11e03d2c6325166dba59546536409adb02088d3c3ad55c3b932459c6572135",
+      "bytes": 74606,
+      "fetchedAt": "2026-10-01T15:50:46.331Z",
+      "fetchedFrom": "https://www.city.niigata.lg.jp/shigikai/index_honkaigi/honkaigi_kekka/r8kekka/r0802.html"
+    }
+  ]
+}

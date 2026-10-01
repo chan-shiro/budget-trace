@@ -1,0 +1,33 @@
+{
+  "sourceId": "nagoya-shikai-r8",
+  "files": [
+    {
+      "filename": "1030799.html",
+      "sha256": "da6ec4fa233bb92ddd1c915e83a76079f1325b8d5e33dc34ab0ac16b5e3582d2",
+      "bytes": 48662,
+      "fetchedAt": "2026-10-01T15:30:37.579Z",
+      "fetchedFrom": "https://web.archive.org/web/20260313164258id_/https://www.city.nagoya.jp/shikai/about/1030778/1030799.html"
+    },
+    {
+      "filename": "1046530.html",
+      "sha256": "3fafa15abf6022ab4b3225e075bb072fadf8e008087d60440a79d2cc8906e369",
+      "bytes": 78882,
+      "fetchedAt": "2026-10-01T15:30:37.665Z",
+      "fetchedFrom": "https://www.city.nagoya.jp/shikai/shingi/1030858/1030859/1046530.html"
+    },
+    {
+      "filename": "index.html",
+      "sha256": "27ffc490e0c39c948fd51d91d92ec145f971c707e89c7671ce8f5267560993c5",
+      "bytes": 46181,
+      "fetchedAt": "2026-10-01T15:30:37.699Z",
+      "fetchedFrom": "https://www.city.nagoya.jp/shikai/about/1030637/1030640/index.html"
+    },
+    {
+      "filename": "1049365.html",
+      "sha256": "fb923adb8545126e15d8697371aaf94d04ab19fd01e9297700044d36b2513a1d",
+      "bytes": 77948,
+      "fetchedAt": "2026-10-01T15:30:37.736Z",
+      "fetchedFrom": "https://www.city.nagoya.jp/shikai/kouhou/1030998/1030999/1051058/1045525/1049358/1049365.html"
+    }
+  ]
+}

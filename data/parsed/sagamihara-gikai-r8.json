@@ -1,0 +1,149 @@
+{
+  "docType": "council-composition",
+  "sourceId": "sagamihara-gikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.4.0",
+  "parsedAt": "2026-10-01T15:50:47.652Z",
+  "fiscalYear": "R8",
+  "body": "相模原市議会",
+  "seats": 45,
+  "asOf": "2025-05-21",
+  "factions": [
+    {
+      "name": "自由民主党相模原市議団",
+      "seats": 14,
+      "isIndependent": false,
+      "members": [
+        "渡部俊明",
+        "西田悠人",
+        "務川慧",
+        "萩生田康治",
+        "折笠正治",
+        "大八木聡",
+        "秋本仁",
+        "佐藤尚史",
+        "大槻和弘",
+        "古内明",
+        "寺田弘子",
+        "阿部善博",
+        "中村昌治",
+        "須田毅"
+      ],
+      "locator": {
+        "file": "2013120600195.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "民主みらい・無所属・地域政党さがみはら",
+      "seats": 10,
+      "isIndependent": false,
+      "members": [
+        "森繁之",
+        "今宮ゆうき",
+        "谷川ヒロシ",
+        "山口恒",
+        "松浦千鶴子",
+        "三須城太郎",
+        "鈴木秀成",
+        "榎本揚助",
+        "関根雅吾郎",
+        "石川達"
+      ],
+      "locator": {
+        "file": "2013120600195.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "公明党相模原市議団",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "後田博美",
+        "保々富美子",
+        "中村忠辰",
+        "岡本浩三",
+        "南波秀樹",
+        "西家克己",
+        "大崎秀治",
+        "加藤明徳"
+      ],
+      "locator": {
+        "file": "2013120600195.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "立憲民主党",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "臼井貴彦",
+        "仁科なつ美",
+        "栗原大",
+        "桜井はるな",
+        "大沢洋子"
+      ],
+      "locator": {
+        "file": "2013120600195.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "日本維新の会相模原市議団",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "こさわ隆宏",
+        "岩井大",
+        "鈴木晃地"
+      ],
+      "locator": {
+        "file": "2013120600195.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "颯爽の会",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "長谷川くみ子",
+        "野元好美",
+        "五十嵐千代"
+      ],
+      "locator": {
+        "file": "2013120600195.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "無所属",
+      "seats": 2,
+      "isIndependent": true,
+      "members": [
+        "小林たかみち",
+        "羽生田学"
+      ],
+      "locator": {
+        "file": "2013120600195.html",
+        "row": 7
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第２号",
+    "billName": "令和８年度相模原市一般会計予算",
+    "sessionLabel": "令和８年３月定例会議",
+    "decidedDate": "2026-03-24",
+    "decidedDateLabel": "令和8年3月24日",
+    "result": "可決",
+    "locator": {
+      "file": "2026_kekka_0324.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "会派別名簿（公開日 2025年5月21日）",
+  "resultTitle": "令和８年３月定例会議・審議結果"
+}

@@ -1,0 +1,68 @@
+{
+  "sourceId": "chiba-shigikai-r8",
+  "files": [
+    {
+      "filename": "kaiha.html",
+      "sha256": "5ca67d4bb40e1cbe123e1f8b7930ea778d87982815b98e8ebc4b09fc5148e849",
+      "bytes": 15692,
+      "fetchedAt": "2026-10-01T15:50:46.327Z",
+      "fetchedFrom": "https://web.archive.org/web/20251018071933id_/https://www.city.chiba.jp/shigikai/kaiha.html"
+    },
+    {
+      "filename": "list_kaiha_jimin.html",
+      "sha256": "ddd6067a3514dec2bfa8911054babc4376ea6b5eec0ecac2b15473cb47718ca2",
+      "bytes": 16996,
+      "fetchedAt": "2026-10-01T15:50:46.328Z",
+      "fetchedFrom": "https://www.city.chiba.jp/shigikai/list_kaiha_jimin.html"
+    },
+    {
+      "filename": "list_kaiha_miraiminsyuchiba.html",
+      "sha256": "52e22838bb60cb3fea1ca5d0c3d8a5d5d6ba6552262db4da9d2f1c4c42dd6d1e",
+      "bytes": 16759,
+      "fetchedAt": "2026-10-01T15:50:46.328Z",
+      "fetchedFrom": "https://web.archive.org/web/20260210231654id_/https://www.city.chiba.jp/shigikai/list_kaiha_miraiminsyuchiba.html"
+    },
+    {
+      "filename": "list_kaiha_koumei.html",
+      "sha256": "52558c752e1491c7e6d7ae0c2697451cb6a84b5b48b4ce20b30706dfc644ac27",
+      "bytes": 16079,
+      "fetchedAt": "2026-10-01T15:50:46.329Z",
+      "fetchedFrom": "https://web.archive.org/web/20251009054556id_/https://www.city.chiba.jp/shigikai/list_kaiha_koumei.html"
+    },
+    {
+      "filename": "list_kaiha_kyousan.html",
+      "sha256": "f0007ce8c4fda037ec277792dc5aa1ea1baf005959f76336d8f3d40f30ccdc00",
+      "bytes": 15918,
+      "fetchedAt": "2026-10-01T15:50:46.329Z",
+      "fetchedFrom": "https://www.city.chiba.jp/shigikai/list_kaiha_kyousan.html"
+    },
+    {
+      "filename": "list_kaiha_ishin.html",
+      "sha256": "126d74369c833bcf093f0415421cc7134cc22ac2bad04fd05d5dea3eb836eacf",
+      "bytes": 15460,
+      "fetchedAt": "2026-10-01T15:50:46.329Z",
+      "fetchedFrom": "https://www.city.chiba.jp/shigikai/list_kaiha_ishin.html"
+    },
+    {
+      "filename": "list_kaiha_mu.html",
+      "sha256": "b3a57258e465c57762d8e5b24f18721688ef9892b9d6c665d246529d3975f7b3",
+      "bytes": 16253,
+      "fetchedAt": "2026-10-01T15:50:46.330Z",
+      "fetchedFrom": "https://www.city.chiba.jp/shigikai/list_kaiha_mu.html"
+    },
+    {
+      "filename": "sichoteisyutu2601.html",
+      "sha256": "fcb83047c584ad7afe4cbf42996c709cf74b76be884c48ea2542563bbc7dccce",
+      "bytes": 69737,
+      "fetchedAt": "2026-10-01T15:50:46.330Z",
+      "fetchedFrom": "https://www.city.chiba.jp/shigikai/sichoteisyutu2601.html"
+    },
+    {
+      "filename": "meibo-menu.html",
+      "sha256": "bcc15fe3f3a354d07b4ad38d4d2e1c62aef0b3b2f5d5a5daa3763d9cca57735e",
+      "bytes": 15604,
+      "fetchedAt": "2026-10-01T15:50:46.331Z",
+      "fetchedFrom": "https://www.city.chiba.jp/shigikai/meibo-menu.html"
+    }
+  ]
+}

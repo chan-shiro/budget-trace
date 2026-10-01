@@ -1,0 +1,33 @@
+{
+  "sourceId": "fukuoka-shigikai-r8",
+  "files": [
+    {
+      "filename": "ichiran_R80327.pdf",
+      "sha256": "b1cfbaaf57b7c2b880b6e5bed9d29d0108f1b85305631fc0cb1e4917f818384a",
+      "bytes": 307044,
+      "fetchedAt": "2026-10-01T15:46:41.258Z",
+      "fetchedFrom": "https://gikai.city.fukuoka.lg.jp/wp-content/uploads/2026/04/ichiran_R80327.pdf"
+    },
+    {
+      "filename": "r8_gikai1.html",
+      "sha256": "d2af26d8db42c677ceeba35aedfa3b2f314426b3d3ee1e39247ce64c101ef0ae",
+      "bytes": 171100,
+      "fetchedAt": "2026-10-01T15:46:41.262Z",
+      "fetchedFrom": "https://gikai.city.fukuoka.lg.jp/result/r8_gikai1"
+    },
+    {
+      "filename": "outline.html",
+      "sha256": "e59747425e9a23e480e675e3c8eecea1b37768e3abddef0913f9c2720532879c",
+      "bytes": 70673,
+      "fetchedAt": "2026-10-01T15:46:41.262Z",
+      "fetchedFrom": "https://web.archive.org/web/20260213103736id_/https://gikai.city.fukuoka.lg.jp/council/outline"
+    },
+    {
+      "filename": "member.html",
+      "sha256": "9118a3987d4c58f185103c7c56112f615173dd033c9ca1463cb9dca218482b7f",
+      "bytes": 66445,
+      "fetchedAt": "2026-10-01T15:46:41.263Z",
+      "fetchedFrom": "https://web.archive.org/web/20260312160820id_/https://gikai.city.fukuoka.lg.jp/member"
+    }
+  ]
+}

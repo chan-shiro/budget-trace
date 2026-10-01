@@ -1,0 +1,194 @@
+{
+  "docType": "council-composition",
+  "sourceId": "kumamoto-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.4.0",
+  "parsedAt": "2026-10-01T15:46:41.519Z",
+  "fiscalYear": "R8",
+  "body": "熊本市議会",
+  "seats": 47,
+  "asOf": "2026-01-07",
+  "factions": [
+    {
+      "name": "自由民主党熊本市議団",
+      "seats": 14,
+      "isIndependent": false,
+      "members": [
+        "大石浩文",
+        "村上麿",
+        "村上誠也",
+        "古川智子",
+        "荒川慎太郎",
+        "齊藤博",
+        "田島幸治",
+        "日隈忍",
+        "小佐井賀瑞宜",
+        "寺本義勝",
+        "田中敦朗",
+        "田中誠一",
+        "坂田誠二",
+        "落水清弘"
+      ],
+      "locator": {
+        "file": "UploadFileDsp.aspx_c_id_53_id_125_set_doc_1.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "熊本自由民主党市議団",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "松本幸隆",
+        "中川栄一郎",
+        "山本浩之",
+        "北川哉",
+        "平江透",
+        "大嶌澄雄",
+        "澤田昌作",
+        "満永寿博"
+      ],
+      "locator": {
+        "file": "UploadFileDsp.aspx_c_id_53_id_125_set_doc_1.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "公明党熊本市議団",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "井本正広",
+        "木庭功二",
+        "吉田健一",
+        "伊藤和仁",
+        "高瀬千鶴子",
+        "三森至加",
+        "浜田大介"
+      ],
+      "locator": {
+        "file": "UploadFileDsp.aspx_c_id_53_id_125_set_doc_1.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "市民連合",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "島津哲也",
+        "山内勝志",
+        "西岡誠也",
+        "田上辰也",
+        "上田芳裕",
+        "村上博"
+      ],
+      "locator": {
+        "file": "UploadFileDsp.aspx_c_id_53_id_125_set_doc_1.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "市民の会",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "菊地渚沙",
+        "井坂隆寛",
+        "吉村健治"
+      ],
+      "locator": {
+        "file": "UploadFileDsp.aspx_c_id_53_id_125_set_doc_1.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "日本共産党熊本市議団",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "井芹栄次",
+        "上野美恵子"
+      ],
+      "locator": {
+        "file": "UploadFileDsp.aspx_c_id_53_id_125_set_doc_1.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "新風熊本市議団",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "紫垣正仁",
+        "藤山英美"
+      ],
+      "locator": {
+        "file": "UploadFileDsp.aspx_c_id_53_id_125_set_doc_1.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "創生熊本市議団",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "松川善範",
+        "髙本一臣"
+      ],
+      "locator": {
+        "file": "UploadFileDsp.aspx_c_id_53_id_125_set_doc_1.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無所属（瀨尾誠一）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "瀨尾誠一"
+      ],
+      "locator": {
+        "file": "UploadFileDsp.aspx_c_id_53_id_125_set_doc_1.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無所属（山中惣一郎）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "山中惣一郎"
+      ],
+      "locator": {
+        "file": "UploadFileDsp.aspx_c_id_53_id_125_set_doc_1.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無所属（筑紫るみ子）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "筑紫るみ子"
+      ],
+      "locator": {
+        "file": "UploadFileDsp.aspx_c_id_53_id_125_set_doc_1.pdf",
+        "page": 1
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議第３号",
+    "billName": "令和８年度熊本市一般会計予算",
+    "sessionLabel": "第１回定例会",
+    "decidedDate": "2026-03-23",
+    "decidedDateLabel": "令和8年3月23日",
+    "result": "可決",
+    "locator": {
+      "file": "detail.aspx_c_id_4_coy_id_16_co_id_207_dis_id_3.html"
+    }
+  },
+  "rosterTitle": "選出区別議員名簿（令和8年（2026年）1月7日現在）",
+  "resultTitle": "令和8年第1回定例会 議案および審議結果（議第３号 賛否一覧）"
+}

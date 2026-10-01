@@ -1,0 +1,19 @@
+{
+  "sourceId": "sakai-shigikai-r8",
+  "files": [
+    {
+      "filename": "75932120220517150837343.html",
+      "sha256": "e31e96d3fb2ec18bf388c095665ac47057a57057366754c93e09b62420a31c21",
+      "bytes": 21034,
+      "fetchedAt": "2026-10-01T15:40:52.336Z",
+      "fetchedFrom": "https://web.archive.org/web/20260124021742id_/https://www.city.sakai.lg.jp/shigikai/meibo/75932120220517150837343.html"
+    },
+    {
+      "filename": "R8-2giketsuannkennichirann.pdf",
+      "sha256": "452568fcdc7ddcf12f2d6a9bc127cf93f0913e511106a0cbd921e0c4e4d11e4e",
+      "bytes": 208176,
+      "fetchedAt": "2026-10-01T15:40:52.338Z",
+      "fetchedFrom": "https://www.city.sakai.lg.jp/shigikai/kekka/giketsukekka/giketsuanken.files/R8-2giketsuannkennichirann.pdf"
+    }
+  ]
+}

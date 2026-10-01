@@ -1,0 +1,124 @@
+{
+  "sourceId": "sendai-shigikai-r8",
+  "files": [
+    {
+      "filename": "index.html",
+      "sha256": "3198afccb0ddef82dbfabbbca35c1cdf51c4c9e705446331e63c77e3ac191b20",
+      "bytes": 7291,
+      "fetchedAt": "2026-10-01T15:50:46.319Z",
+      "fetchedFrom": "https://web.archive.org/web/20260201093434id_/https://www.gikai.city.sendai.jp/list/parties/index.html"
+    },
+    {
+      "filename": "kaiha1.html",
+      "sha256": "8aa4390aa48e9194716b0e3ebd203626c10cbcb215307e19491ab8462566c339",
+      "bytes": 7795,
+      "fetchedAt": "2026-10-01T15:50:46.319Z",
+      "fetchedFrom": "https://web.archive.org/web/20260212005032id_/https://www.gikai.city.sendai.jp/list/parties/kaiha1.html"
+    },
+    {
+      "filename": "kaiha2.html",
+      "sha256": "3d1824dc6bb2e867e97a03907ed3094b347681fe4cf36a30eb81e54bd0d4f10d",
+      "bytes": 7534,
+      "fetchedAt": "2026-10-01T15:50:46.319Z",
+      "fetchedFrom": "https://web.archive.org/web/20260311102727id_/https://www.gikai.city.sendai.jp/list/parties/kaiha2.html"
+    },
+    {
+      "filename": "kaiha3.html",
+      "sha256": "a8d1ae5f112e8c970c2f138424278e55e50d82e737cf5e31eb9eba09fbacdb1d",
+      "bytes": 7009,
+      "fetchedAt": "2026-10-01T15:50:46.320Z",
+      "fetchedFrom": "https://web.archive.org/web/20250911094900id_/https://www.gikai.city.sendai.jp/list/parties/kaiha3.html"
+    },
+    {
+      "filename": "kaiha4.html",
+      "sha256": "b88d1930be4889aab322b715a58c68003ec03cc527c493bfcd2fd2e864829a0e",
+      "bytes": 7204,
+      "fetchedAt": "2026-10-01T15:50:46.320Z",
+      "fetchedFrom": "https://web.archive.org/web/20260311091528id_/https://www.gikai.city.sendai.jp/list/parties/kaiha4.html"
+    },
+    {
+      "filename": "kaiha5.html",
+      "sha256": "d384a78c5f2a1306614bfe10d0b00e2f7cacfb4011887024cf97d15036c82b9f",
+      "bytes": 6837,
+      "fetchedAt": "2026-10-01T15:50:46.320Z",
+      "fetchedFrom": "https://web.archive.org/web/20250614234725id_/http://gikai.city.sendai.jp/list/parties/kaiha5.html"
+    },
+    {
+      "filename": "kaiha7.html",
+      "sha256": "86e3c0b9414c06504c64b786643d6c18617205683b4b620173f5a6da46522db7",
+      "bytes": 6510,
+      "fetchedAt": "2026-10-01T15:50:46.321Z",
+      "fetchedFrom": "https://web.archive.org/web/20250614233856id_/http://gikai.city.sendai.jp/list/parties/kaiha7.html"
+    },
+    {
+      "filename": "kaiha8.html",
+      "sha256": "b37c1c20e6d6b81454b4ba79c793ca8060384b092c63167fa9070bc7096eac60",
+      "bytes": 6924,
+      "fetchedAt": "2026-10-01T15:50:46.321Z",
+      "fetchedFrom": "https://web.archive.org/web/20251009225554id_/http://gikai.city.sendai.jp/list/parties/kaiha8.html"
+    },
+    {
+      "filename": "kaiha9.html",
+      "sha256": "c4888d0070e0d6bf1a921a33867ba132d887c2fa417380efac0f17de219f4d56",
+      "bytes": 6653,
+      "fetchedAt": "2026-10-01T15:50:46.321Z",
+      "fetchedFrom": "https://web.archive.org/web/20260212013916id_/https://www.gikai.city.sendai.jp/list/parties/kaiha9.html"
+    },
+    {
+      "filename": "kaiha10.html",
+      "sha256": "11e6ae363f35327e2a61b55b8ad441b274cde8a14f1d515f81da36a8f5e00688",
+      "bytes": 6828,
+      "fetchedAt": "2026-10-01T15:50:46.322Z",
+      "fetchedFrom": "https://web.archive.org/web/20260212013546id_/https://www.gikai.city.sendai.jp/list/parties/kaiha10.html"
+    },
+    {
+      "filename": "kaiha11.html",
+      "sha256": "e2c48a7fd66fa1f6e6987a544e7305fb131dea85825e051140d4394ad58c34ce",
+      "bytes": 6617,
+      "fetchedAt": "2026-10-01T15:50:46.322Z",
+      "fetchedFrom": "https://web.archive.org/web/20250809024840id_/http://gikai.city.sendai.jp/list/parties/kaiha11.html"
+    },
+    {
+      "filename": "kaiha12.html",
+      "sha256": "483be8e3bf92ed2de2fab7e0a991973c4b874f2e855b9fce70d6fb2b75135e3f",
+      "bytes": 6704,
+      "fetchedAt": "2026-10-01T15:50:46.323Z",
+      "fetchedFrom": "https://web.archive.org/web/20250614234755id_/http://gikai.city.sendai.jp/list/parties/kaiha12.html"
+    },
+    {
+      "filename": "gian_r8_1.html",
+      "sha256": "63b20ed021ea24e2795108170e693eede7da691e4bc50a628da0df8e19c2e57f",
+      "bytes": 21782,
+      "fetchedAt": "2026-10-01T15:50:46.323Z",
+      "fetchedFrom": "https://www.gikai.city.sendai.jp/result/result/confe_2026/gian_r8_1.html"
+    },
+    {
+      "filename": "5286956_Template_view_VoiceType_all_DocumentID_3681.html",
+      "sha256": "14c836ec5951c0f6c248f0797c245c1b37c134562443a164c80d684f9d4115ba",
+      "bytes": 430031,
+      "fetchedAt": "2026-10-01T15:50:46.324Z",
+      "fetchedFrom": "https://www.city.sendai.miyagi.dbsr.jp/index.php/5286956?Template=view&VoiceType=all&DocumentID=3681"
+    },
+    {
+      "filename": "5286956_Template_view_VoiceType_all_DocumentID_3680.html",
+      "sha256": "7157cca73249d6976df60d0c08b332a4f2c2c3326459911fb0af18f01fa52394",
+      "bytes": 18547,
+      "fetchedAt": "2026-10-01T15:50:46.325Z",
+      "fetchedFrom": "https://www.city.sendai.miyagi.dbsr.jp/index.php/5286956?Template=view&VoiceType=all&DocumentID=3680"
+    },
+    {
+      "filename": "212_01.pdf",
+      "sha256": "270d5dea62ba773d214529bbaa756a30b8c35644c59137cd466252108855654a",
+      "bytes": 645652,
+      "fetchedAt": "2026-10-01T15:50:46.327Z",
+      "fetchedFrom": "https://www.gikai.city.sendai.jp/docs/212_01.pdf"
+    },
+    {
+      "filename": "meibo_kubetu.html",
+      "sha256": "2f8c7dba649553c830d58c1ba9fb86e8dc3c5d26068cd53e67733922b388565a",
+      "bytes": 6909,
+      "fetchedAt": "2026-10-01T15:50:46.327Z",
+      "fetchedFrom": "https://www.gikai.city.sendai.jp/list/district/meibo_kubetu.html"
+    }
+  ]
+}

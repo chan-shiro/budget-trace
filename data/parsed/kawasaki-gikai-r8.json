@@ -1,0 +1,197 @@
+{
+  "docType": "council-composition",
+  "sourceId": "kawasaki-gikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.4.0",
+  "parsedAt": "2026-10-01T15:50:47.510Z",
+  "fiscalYear": "R8",
+  "body": "川崎市議会",
+  "seats": 59,
+  "asOf": "2026-01-20",
+  "teisu": 60,
+  "factions": [
+    {
+      "name": "自由民主党川崎市議会議員団",
+      "seats": 16,
+      "isIndependent": false,
+      "members": [
+        "野田雅之",
+        "加藤孝明",
+        "本間賢次郎",
+        "矢沢孝雄",
+        "青木功雄",
+        "浅野文直",
+        "石田康博",
+        "大島明",
+        "各務雅彦",
+        "嶋崎嘉夫",
+        "末永直",
+        "菅谷英彦",
+        "橋本勝",
+        "原典之",
+        "松原成文",
+        "山崎直史"
+      ],
+      "locator": {
+        "file": "40-3-4-0-0-0-0-0-0-0.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "みらい川崎市議会議員団",
+      "seats": 14,
+      "isIndependent": false,
+      "members": [
+        "木庭理香子",
+        "押本吉司",
+        "林敏夫",
+        "鈴木朋子",
+        "雨笠裕治",
+        "井土清貴",
+        "岩隈千尋",
+        "織田勝久",
+        "嶋凌汰",
+        "嶋田和明",
+        "高橋美里",
+        "田倉俊輔",
+        "長谷川智一",
+        "堀添健"
+      ],
+      "locator": {
+        "file": "40-3-4-0-0-0-0-0-0-0.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "公明党川崎市議会議員団",
+      "seats": 11,
+      "isIndependent": false,
+      "members": [
+        "田村伸一郎",
+        "河野ゆかり",
+        "川島雅裕",
+        "浦田大輔",
+        "枝川舞",
+        "かわの忠正",
+        "工藤礼子",
+        "浜田昌利",
+        "春孝明",
+        "平山浩二",
+        "柳沢優"
+      ],
+      "locator": {
+        "file": "40-3-4-0-0-0-0-0-0-0.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "日本共産党川崎市議会議員団",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "宗田裕之",
+        "井口真美",
+        "市古次郎",
+        "石川建二",
+        "後藤真左美",
+        "小堀祥子",
+        "齋藤温",
+        "渡辺学"
+      ],
+      "locator": {
+        "file": "40-3-4-0-0-0-0-0-0-0.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "あしたの川崎・日本維新の会川崎市議会議員団",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "重冨達也",
+        "仁平克枝",
+        "高戸友子",
+        "岩田英高",
+        "那須野純花"
+      ],
+      "locator": {
+        "file": "40-3-4-0-0-0-0-0-0-0.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "無所属（飯田満）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "飯田満"
+      ],
+      "locator": {
+        "file": "40-3-4-0-0-0-0-0-0-0.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "無所属（月本琢也）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "月本琢也"
+      ],
+      "locator": {
+        "file": "40-3-4-0-0-0-0-0-0-0.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "無所属（三浦恵美）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "三浦恵美"
+      ],
+      "locator": {
+        "file": "40-3-4-0-0-0-0-0-0-0.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "無所属（三宅隆介）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "三宅隆介"
+      ],
+      "locator": {
+        "file": "40-3-4-0-0-0-0-0-0-0.html",
+        "row": 9
+      }
+    },
+    {
+      "name": "無所属（吉沢章子）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "吉沢章子"
+      ],
+      "locator": {
+        "file": "40-3-4-0-0-0-0-0-0-0.html",
+        "row": 10
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第45号",
+    "billName": "令和8年度川崎市一般会計予算",
+    "sessionLabel": "令和８年第１回定例会",
+    "decidedDate": "2026-03-18",
+    "decidedDateLabel": "令和8年3月18日",
+    "result": "原案可決",
+    "locator": {
+      "file": "0318sityou.pdf",
+      "page": 15
+    }
+  },
+  "rosterTitle": "会派別議員名簿（令和8年1月20日現在）",
+  "resultTitle": "令和８年第１回定例会議決結果（市長提出議案）"
+}

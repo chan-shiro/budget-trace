@@ -1,0 +1,164 @@
+{
+  "docType": "council-composition",
+  "sourceId": "shizuoka-shi-gikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.4.0",
+  "parsedAt": "2026-10-01T15:50:47.828Z",
+  "fiscalYear": "R8",
+  "body": "静岡市議会",
+  "seats": 48,
+  "asOf": "2025-04-25",
+  "teisu": 48,
+  "factions": [
+    {
+      "name": "自由民主党静岡市議会議員団",
+      "seats": 22,
+      "isIndependent": false,
+      "members": [
+        "坂田和基",
+        "赤池剛直",
+        "木下俊也",
+        "白濱史教",
+        "鈴木直人",
+        "髙木強",
+        "堀努",
+        "島直也",
+        "寺澤潤",
+        "平井正樹",
+        "尾崎行雄",
+        "宮城展代",
+        "畑田響",
+        "福地健",
+        "望月俊明",
+        "大村一雄",
+        "丹沢卓久",
+        "繁田和三",
+        "山根田鶴子",
+        "石上顕太郎",
+        "井上恒彌",
+        "鈴木和彦"
+      ],
+      "locator": {
+        "file": "01_kaihabetsumeibo.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "志政会",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "堀池昂平",
+        "杉山真裕子",
+        "児嶋喜彦",
+        "小山悟",
+        "稲葉寛之",
+        "石井孝治",
+        "後藤哲朗",
+        "佐藤成子"
+      ],
+      "locator": {
+        "file": "01_kaihabetsumeibo.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "公明党静岡市議会",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "坂本靖子",
+        "加藤博男",
+        "長島強",
+        "山梨渉",
+        "大石直樹",
+        "井上智仁"
+      ],
+      "locator": {
+        "file": "01_kaihabetsumeibo.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "日本共産党静岡市議会議員団",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "鈴木明美",
+        "杉本護",
+        "寺尾昭",
+        "内田隆典"
+      ],
+      "locator": {
+        "file": "01_kaihabetsumeibo.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "静岡市議会立憲民主党",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "松井麻未",
+        "髙塚雅子",
+        "長沼滋雄",
+        "浜田佑介"
+      ],
+      "locator": {
+        "file": "01_kaihabetsumeibo.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "創生静岡",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "宮澤圭輔",
+        "風間重樹"
+      ],
+      "locator": {
+        "file": "01_kaihabetsumeibo.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "チェンジングしずおかプロジェクト",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "田中志保"
+      ],
+      "locator": {
+        "file": "01_kaihabetsumeibo.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "緑の党グリーンズジャパン",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "松谷清"
+      ],
+      "locator": {
+        "file": "01_kaihabetsumeibo.pdf",
+        "page": 2
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第46号",
+    "billName": "令和8年度静岡市一般会計予算",
+    "sessionLabel": "令和8年2月定例会",
+    "decidedDate": "2026-03-19",
+    "decidedDateLabel": "令和8年3月19日",
+    "result": "可決",
+    "locator": {
+      "file": "202602gatu_gigetukekka_02.pdf",
+      "page": 4
+    }
+  },
+  "rosterTitle": "静岡市議会会派別名簿（令和7年4月25日現在）",
+  "resultTitle": "令和8年2月定例会の結果"
+}

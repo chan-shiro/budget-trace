@@ -1,0 +1,194 @@
+{
+  "docType": "council-composition",
+  "sourceId": "nagoya-shikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.4.0",
+  "parsedAt": "2026-10-01T15:32:36.472Z",
+  "fiscalYear": "R8",
+  "body": "名古屋市会",
+  "seats": 68,
+  "asOf": "2025-10-28",
+  "teisu": 68,
+  "factions": [
+    {
+      "name": "自由民主党名古屋市会議員団",
+      "seats": 23,
+      "isIndependent": false,
+      "members": [
+        "伊神邦彦",
+        "横井利明",
+        "丹羽ひろし",
+        "ふじた和秀",
+        "小出昭司",
+        "浅野有",
+        "松井よしのり",
+        "吉田茂",
+        "上村みちよ",
+        "中田ちづこ",
+        "岩本たかひろ",
+        "服部しんのすけ",
+        "北野よしはる",
+        "浅井正仁",
+        "沢田ひとみ",
+        "渡辺やすのり",
+        "くずや利枝",
+        "中里高之",
+        "成田たかゆき",
+        "西川学",
+        "藤沢ちあき",
+        "神ひろし",
+        "村瀬きよみ"
+      ],
+      "locator": {
+        "file": "1030799.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "名古屋民主市会議員団",
+      "seats": 17,
+      "isIndependent": false,
+      "members": [
+        "加藤一登",
+        "服部将也",
+        "岡本やすひろ",
+        "橋本ひろき",
+        "おくむら文悟",
+        "日比美咲",
+        "赤松哲次",
+        "山田昌弘",
+        "くにまさ直記",
+        "田中里佳",
+        "うかい春美",
+        "小川としゆき",
+        "森ともお",
+        "うえぞの晋介",
+        "塚本つよし",
+        "久野美穂",
+        "久田邦博"
+      ],
+      "locator": {
+        "file": "1030799.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "公明党名古屋市会議員団",
+      "seats": 12,
+      "isIndependent": false,
+      "members": [
+        "金庭宜雄",
+        "長谷川由美子",
+        "木下優",
+        "田辺雄一",
+        "近藤和博",
+        "さかい大輔",
+        "吉岡正修",
+        "おか千恵",
+        "辻まさお",
+        "月森たくや",
+        "中村しゅうへい",
+        "さわだ晃一"
+      ],
+      "locator": {
+        "file": "1030799.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "減税日本ナゴヤ",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "田山宏之",
+        "大村光子",
+        "豊田かおる",
+        "鈴木孝之",
+        "大谷ともひろ",
+        "永井ゆり",
+        "佐藤ゆうこ",
+        "大田とみひこ"
+      ],
+      "locator": {
+        "file": "1030799.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "日本共産党名古屋市会議員団",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "田口一登",
+        "岡田ゆき子",
+        "みつなか美由紀"
+      ],
+      "locator": {
+        "file": "1030799.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "なごや陽向の会",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "金城ゆたか",
+        "野田留美"
+      ],
+      "locator": {
+        "file": "1030799.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "なごや創政会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "中川あつし"
+      ],
+      "locator": {
+        "file": "1030799.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "新生会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "北角嘉幸"
+      ],
+      "locator": {
+        "file": "1030799.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "日本維新の会名古屋市会議員団",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "大島英勲"
+      ],
+      "locator": {
+        "file": "1030799.html",
+        "row": 9
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第1号",
+    "billName": "令和8年度名古屋市一般会計予算",
+    "sessionLabel": "令和8年2月定例会",
+    "decidedDate": "2026-03-19",
+    "decidedDateLabel": "令和8年3月19日",
+    "result": "附帯決議を付して修正可決",
+    "locator": {
+      "file": "1046530.html"
+    }
+  },
+  "rosterTitle": "会派別議員名簿（更新日 2025年10月28日）",
+  "resultTitle": "令和8年2月定例会 市長提出案件"
+}
