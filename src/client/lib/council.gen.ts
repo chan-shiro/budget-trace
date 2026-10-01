@@ -18,14 +18,16 @@ export interface CouncilEvidence {
   /** Wayback 魚拓（②） */
   archiveUrl: string;
 }
-export interface KofuCouncil {
+export interface Council {
   /** 予算年度（この議会が議決した当初予算の年度。"R8" など） */
   fy: string;
   fyLabel: string;
   /** 議会名 */
   body: string;
-  /** 定数（＝現員＝会派議席合計） */
+  /** 現員（＝会派議席合計）。甲府は定数＝現員 */
   seats: number;
+  /** 条例定数（原典で確かめた団体だけ。欠員があると seats より大きい） */
+  teisu?: number;
   /** 会派構成の基準日 ISO（名簿の更新日） */
   asOf: string;
   asOfLabel: string;
@@ -41,12 +43,15 @@ export interface KofuCouncil {
   sourceTitle: string;
   roster: CouncilEvidence;
   result: CouncilEvidence;
-  minutesUrl: string;
-  newsletterUrl: string;
+  /** 参考リンク（会議録検索・議会だより）。甲府だけが持つ */
+  minutesUrl: string | null;
+  newsletterUrl: string | null;
 }
+/** 互換の別名（甲府） */
+export type KofuCouncil = Council;
 
 /** 甲府市議会の構成（予算議決時）。新しい年度順（R8→R2）。 */
-export const KOFU_COUNCIL_YEARS: KofuCouncil[] = [
+export const KOFU_COUNCIL_YEARS: Council[] = [
   {
     "fy": "R8",
     "fyLabel": "令和8年度 当初予算",
@@ -531,4 +536,293 @@ export const KOFU_COUNCIL_YEARS: KofuCouncil[] = [
 ];
 
 /** 最新（R8）。年度未指定時のフォールバック。 */
-export const KOFU_COUNCIL: KofuCouncil = KOFU_COUNCIL_YEARS[0]!;
+export const KOFU_COUNCIL: Council = KOFU_COUNCIL_YEARS[0]!;
+
+/**
+ * 甲府以外の議会の構成（予算議決時）。団体コード → 新しい年度順。
+ * 会派と所属議員を名簿から書き写し、全員の氏名が原典の本文に出ることをパーサが確かめている
+ * （`council-transcribed`・docs/data-sources.md §6-2）。**年度が合わなければ出さない**（別年度の構成で代用しない）。
+ */
+export const MUNI_COUNCIL_YEARS: Record<string, Council[]> = {
+  "190004": [
+    {
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "body": "山梨県議会",
+      "seats": 36,
+      "asOf": "2025-09-17",
+      "asOfLabel": "2025年9月17日",
+      "factions": [
+        {
+          "name": "自由民主党 政風やまなし",
+          "seats": 15,
+          "isIndependent": false
+        },
+        {
+          "name": "自由民主党新緑の会",
+          "seats": 8,
+          "isIndependent": false
+        },
+        {
+          "name": "未来やまなし",
+          "seats": 4,
+          "isIndependent": false
+        },
+        {
+          "name": "自由民主党・開の国",
+          "seats": 3,
+          "isIndependent": false
+        },
+        {
+          "name": "日本共産党",
+          "seats": 2,
+          "isIndependent": false
+        },
+        {
+          "name": "公明党",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "リベラル山梨",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "やまなし県民会議",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "えがお夢",
+          "seats": 1,
+          "isIndependent": false
+        }
+      ],
+      "resolution": {
+        "billNo": "第27号",
+        "billName": "令和8年度山梨県一般会計予算",
+        "sessionLabel": "令和8年2月定例会",
+        "decidedDate": "2026-03-23",
+        "decidedDateLabel": "令和8年3月23日",
+        "result": "可決"
+      },
+      "sourceTitle": "令和8年度 山梨県議会の構成（会派別議席数）と当初予算の議決",
+      "roster": {
+        "title": "会派別名簿（令和7年9月17日）",
+        "localUrl": "/sources/yamanashi-ken-gikai-r8/kaihabetu_meibo.html",
+        "originUrl": "https://web.archive.org/web/20260209231452id_/https://www.pref.yamanashi.jp/gikaisom/kaihabetu_meibo.html",
+        "archiveUrl": "https://web.archive.org/web/20260209231452id_/https://www.pref.yamanashi.jp/gikaisom/kaihabetu_meibo.html"
+      },
+      "result": {
+        "title": "令和8年2月定例会 議決結果（3月23日）",
+        "localUrl": "/sources/yamanashi-ken-gikai-r8/giketu_0323.pdf",
+        "originUrl": "https://www.pref.yamanashi.jp/documents/124451/giketu_0323.pdf",
+        "archiveUrl": "https://web.archive.org/web/20260710133628/https://www.pref.yamanashi.jp/documents/124451/giketu_0323.pdf"
+      },
+      "minutesUrl": null,
+      "newsletterUrl": null
+    }
+  ],
+  "192082": [
+    {
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "body": "南アルプス市議会",
+      "seats": 22,
+      "teisu": 22,
+      "asOf": "2026-01-09",
+      "asOfLabel": "2026年1月9日",
+      "factions": [
+        {
+          "name": "新政南アルプス",
+          "seats": 7,
+          "isIndependent": false
+        },
+        {
+          "name": "躍進会",
+          "seats": 6,
+          "isIndependent": false
+        },
+        {
+          "name": "公明党",
+          "seats": 3,
+          "isIndependent": false
+        },
+        {
+          "name": "かがやき21",
+          "seats": 2,
+          "isIndependent": false
+        },
+        {
+          "name": "未来創政の会",
+          "seats": 2,
+          "isIndependent": false
+        },
+        {
+          "name": "日本共産党南アルプス市議団",
+          "seats": 2,
+          "isIndependent": false
+        }
+      ],
+      "resolution": {
+        "billNo": "議案 26",
+        "billName": "一般会計予算",
+        "sessionLabel": "第1回定例会",
+        "decidedDate": "2026-03-23",
+        "decidedDateLabel": "令和8年3月23日",
+        "result": "可決"
+      },
+      "sourceTitle": "令和8年度 南アルプス市議会の構成（会派別議席数）と当初予算の議決",
+      "roster": {
+        "title": "各会派構成（令和8年1月9日現在）",
+        "localUrl": "/sources/minami-alps-gikai-r8/______R8.1.9__.pdf",
+        "originUrl": "https://www.city.minami-alps.yamanashi.jp/fs/1/4/0/8/0/1/_/______R8.1.9__.pdf",
+        "archiveUrl": "https://web.archive.org/web/20261001143245/https://www.city.minami-alps.yamanashi.jp/fs/1/4/0/8/0/1/_/______R8.1.9__.pdf"
+      },
+      "result": {
+        "title": "南アルプス市議会だより No.92",
+        "localUrl": "/sources/minami-alps-gikai-r8/________________92_.pdf",
+        "originUrl": "https://www.city.minami-alps.yamanashi.jp/fs/1/4/2/8/3/4/_/________________92_.pdf",
+        "archiveUrl": "https://web.archive.org/web/20261001143322/https://www.city.minami-alps.yamanashi.jp/fs/1/4/2/8/3/4/_/________________92_.pdf"
+      },
+      "minutesUrl": null,
+      "newsletterUrl": null
+    }
+  ],
+  "192091": [
+    {
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "body": "北杜市議会",
+      "seats": 20,
+      "asOf": "2024-11-28",
+      "asOfLabel": "2024年11月28日",
+      "factions": [
+        {
+          "name": "みらい創生",
+          "seats": 4,
+          "isIndependent": false
+        },
+        {
+          "name": "ポラリス北杜",
+          "seats": 4,
+          "isIndependent": false
+        },
+        {
+          "name": "北杜クラブ",
+          "seats": 3,
+          "isIndependent": false
+        },
+        {
+          "name": "公明党",
+          "seats": 2,
+          "isIndependent": false
+        },
+        {
+          "name": "日本共産党",
+          "seats": 2,
+          "isIndependent": false
+        },
+        {
+          "name": "北杜オール・イン・ワン",
+          "seats": 2,
+          "isIndependent": false
+        },
+        {
+          "name": "無会派",
+          "seats": 3,
+          "isIndependent": false
+        }
+      ],
+      "resolution": {
+        "billNo": "議案第28号",
+        "billName": "令和8年度北杜市一般会計予算",
+        "sessionLabel": "令和8年第1回定例会",
+        "decidedDate": "2026-03-16",
+        "decidedDateLabel": "令和8年3月16日",
+        "result": "可決"
+      },
+      "sourceTitle": "令和8年度 北杜市議会の構成（会派別議席数）と当初予算の議決",
+      "roster": {
+        "title": "北杜市議会議員所属会派（令和6年11月28日現在）",
+        "localUrl": "/sources/hokuto-gikai-r8/_____R6.11.28___1_.pdf",
+        "originUrl": "https://www.city.hokuto.yamanashi.jp/fs/4/3/2/3/0/2/_/_____R6.11.28___1_.pdf",
+        "archiveUrl": "https://web.archive.org/web/20260517091748/https://www.city.hokuto.yamanashi.jp/fs/4/3/2/3/0/2/_/_____R6.11.28___1_.pdf"
+      },
+      "result": {
+        "title": "北杜市議会だより 第86号",
+        "localUrl": "/sources/hokuto-gikai-r8/_______86_.pdf",
+        "originUrl": "https://www.city.hokuto.yamanashi.jp/fs/5/0/0/6/4/8/_/_______86_.pdf",
+        "archiveUrl": "https://web.archive.org/web/20261001142745/https://www.city.hokuto.yamanashi.jp/fs/5/0/0/6/4/8/_/_______86_.pdf"
+      },
+      "minutesUrl": null,
+      "newsletterUrl": null
+    }
+  ],
+  "192112": [
+    {
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "body": "笛吹市議会",
+      "seats": 19,
+      "asOf": "2025-06-10",
+      "asOfLabel": "2025年6月10日",
+      "factions": [
+        {
+          "name": "笛新会",
+          "seats": 6,
+          "isIndependent": false
+        },
+        {
+          "name": "笛政クラブ",
+          "seats": 3,
+          "isIndependent": false
+        },
+        {
+          "name": "清心会",
+          "seats": 3,
+          "isIndependent": false
+        },
+        {
+          "name": "煌・フォーラム21",
+          "seats": 3,
+          "isIndependent": false
+        },
+        {
+          "name": "公明党",
+          "seats": 2,
+          "isIndependent": false
+        },
+        {
+          "name": "無会派",
+          "seats": 2,
+          "isIndependent": false
+        }
+      ],
+      "resolution": {
+        "billNo": "議案第18号",
+        "billName": "令和8年度笛吹市一般会計予算について",
+        "sessionLabel": "令和8年笛吹市議会第1回定例会",
+        "decidedDate": "2026-03-24",
+        "decidedDateLabel": "令和8年3月24日",
+        "result": "原案可決"
+      },
+      "sourceTitle": "令和8年度 笛吹市議会の構成（会派別議席数）と当初予算の議決",
+      "roster": {
+        "title": "笛吹市議会 会派一覧表（令和7年6月10日現在）",
+        "localUrl": "/sources/fuefuki-gikai-r8/kaihaitiran.pdf",
+        "originUrl": "https://www.city.fuefuki.yamanashi.jp/documents/1142/kaihaitiran.pdf",
+        "archiveUrl": "https://web.archive.org/web/20261001144140/https://www.city.fuefuki.yamanashi.jp/documents/1142/kaihaitiran.pdf"
+      },
+      "result": {
+        "title": "令和8年笛吹市議会第1回定例会 議決案件一覧",
+        "localUrl": "/sources/fuefuki-gikai-r8/r81giketuitirann.pdf",
+        "originUrl": "https://www.city.fuefuki.yamanashi.jp/documents/11778/r81giketuitirann.pdf",
+        "archiveUrl": "https://web.archive.org/web/20261001143123/https://www.city.fuefuki.yamanashi.jp/documents/11778/r81giketuitirann.pdf"
+      },
+      "minutesUrl": null,
+      "newsletterUrl": null
+    }
+  ]
+};

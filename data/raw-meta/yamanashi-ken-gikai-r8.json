@@ -1,0 +1,26 @@
+{
+  "sourceId": "yamanashi-ken-gikai-r8",
+  "files": [
+    {
+      "filename": "kaihabetu_meibo.html",
+      "sha256": "8df81ba53c473173f79ae28e33b0ab689a9b5a8c092b60e5eaaa507f72948c43",
+      "bytes": 23948,
+      "fetchedAt": "2026-10-01T14:18:48.146Z",
+      "fetchedFrom": "https://web.archive.org/web/20260209231452id_/https://www.pref.yamanashi.jp/gikaisom/kaihabetu_meibo.html"
+    },
+    {
+      "filename": "giketu_0323.pdf",
+      "sha256": "6caa82f838bb26c5e21e52e618ceb4c8921f9ea77e1876b81bc8c14d0963f105",
+      "bytes": 182078,
+      "fetchedAt": "2026-10-01T14:18:48.746Z",
+      "fetchedFrom": "https://www.pref.yamanashi.jp/documents/124451/giketu_0323.pdf"
+    },
+    {
+      "filename": "sanpiichiran_0323.pdf",
+      "sha256": "5e678bb557ac347d5770e9cf0a8ed619d9a9036d04cdfd754e960d631c13e9dc",
+      "bytes": 277519,
+      "fetchedAt": "2026-10-01T14:40:54.313Z",
+      "fetchedFrom": "https://www.pref.yamanashi.jp/documents/124451/sanpiichiran_0323.pdf"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "docType": "council-composition",
+  "sourceId": "yamanashi-ken-gikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-10-01T14:40:54.456Z",
+  "fiscalYear": "R8",
+  "body": "山梨県議会",
+  "seats": 36,
+  "asOf": "2025-09-17",
+  "factions": [
+    {
+      "name": "自由民主党 政風やまなし",
+      "seats": 15,
+      "isIndependent": false,
+      "members": [
+        "望月勝",
+        "河西敏郎",
+        "山田一功",
+        "水岸富美男",
+        "卯月政人",
+        "渡辺淳也",
+        "宮本秀憲",
+        "大久保俊雄",
+        "藤本好彦",
+        "向山憲稔",
+        "飯島力男",
+        "久嶋成美",
+        "石原政信",
+        "中村正仁",
+        "寺田義彦"
+      ],
+      "locator": {
+        "file": "kaihabetu_meibo.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "自由民主党新緑の会",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "流石恭史",
+        "臼井友基",
+        "桐原正仁",
+        "長澤健",
+        "小沢栄一",
+        "伊藤毅",
+        "望月大輔",
+        "渡辺大喜"
+      ],
+      "locator": {
+        "file": "kaihabetu_meibo.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "未来やまなし",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "土橋亨",
+        "清水喜美男",
+        "古屋雅夫",
+        "笠井辰生"
+      ],
+      "locator": {
+        "file": "kaihabetu_meibo.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "自由民主党・開の国",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "浅川力三",
+        "白壁賢一",
+        "久保田松幸"
+      ],
+      "locator": {
+        "file": "kaihabetu_meibo.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "名取泰",
+        "菅野幹子"
+      ],
+      "locator": {
+        "file": "kaihabetu_meibo.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "佐野弘仁"
+      ],
+      "locator": {
+        "file": "kaihabetu_meibo.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "リベラル山梨",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "飯島修"
+      ],
+      "locator": {
+        "file": "kaihabetu_meibo.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "やまなし県民会議",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "志村直毅"
+      ],
+      "locator": {
+        "file": "kaihabetu_meibo.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "えがお夢",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "福井太一"
+      ],
+      "locator": {
+        "file": "kaihabetu_meibo.html",
+        "row": 9
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第27号",
+    "billName": "令和8年度山梨県一般会計予算",
+    "sessionLabel": "令和8年2月定例会",
+    "decidedDate": "2026-03-23",
+    "decidedDateLabel": "令和8年3月23日",
+    "result": "可決",
+    "locator": {
+      "file": "giketu_0323.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "会派別名簿（令和7年9月17日）",
+  "resultTitle": "令和8年2月定例会 議決結果（3月23日）"
+}

@@ -3795,6 +3795,36 @@
       "checkedAt": "2026-09-14T16:30:17.791Z"
     },
     {
+      "sourceId": "fuefuki-gikai-r8",
+      "url": "https://www.city.fuefuki.yamanashi.jp/documents/1142/kaihaitiran.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261001144140/https://www.city.fuefuki.yamanashi.jp/documents/1142/kaihaitiran.pdf",
+      "waybackTimestamp": "20261001144140",
+      "checkedAt": "2026-10-01T14:42:13.355Z",
+      "sha256Match": true,
+      "waybackBytes": 101967,
+      "rawSha256": "e3ced3a3a0730183a47c886901f69a9b995f211568654f735ffaf14356ac44a8"
+    },
+    {
+      "sourceId": "fuefuki-gikai-r8",
+      "url": "https://www.city.fuefuki.yamanashi.jp/documents/11778/r81giketuitirann.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261001143123/https://www.city.fuefuki.yamanashi.jp/documents/11778/r81giketuitirann.pdf",
+      "waybackTimestamp": "20261001143123",
+      "checkedAt": "2026-10-01T14:42:37.629Z",
+      "sha256Match": true,
+      "waybackBytes": 118269,
+      "rawSha256": "998a0da10f9880131490056ab5dcecd5d08f28a633fd74146f0f968db72b8f06"
+    },
+    {
+      "sourceId": "fuefuki-gikai-r8",
+      "url": "https://www.city.fuefuki.yamanashi.jp/gikai/shisejoho/shigikai/ginmebo/index.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260422181245/https://www.city.fuefuki.yamanashi.jp/gikai/shisejoho/shigikai/ginmebo/index.html",
+      "waybackTimestamp": "20260422181245",
+      "checkedAt": "2026-10-01T14:42:53.408Z"
+    },
+    {
       "sourceId": "fuefuki-yosansho-r8",
       "url": "https://www.city.fuefuki.yamanashi.jp/documents/1033/r8toushoyosangaiyou.pdf",
       "kind": "file",
@@ -7775,6 +7805,47 @@
       "waybackUrl": "https://web.archive.org/web/20260514063737/https://www.pref.hokkaido.lg.jp/sm/zsi/239242.html",
       "waybackTimestamp": "20260514063737",
       "checkedAt": "2026-09-14T01:12:00.594Z"
+    },
+    {
+      "sourceId": "hokuto-gikai-r8",
+      "url": "https://www.city.hokuto.yamanashi.jp/docs/8292.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260416215340/https://www.city.hokuto.yamanashi.jp/docs/8292.html",
+      "waybackTimestamp": "20260416215340",
+      "checkedAt": "2026-10-01T14:41:31.549Z"
+    },
+    {
+      "sourceId": "hokuto-gikai-r8",
+      "url": "https://www.city.hokuto.yamanashi.jp/fs/4/3/2/3/0/2/_/_____R6.11.28___1_.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260517091748/https://www.city.hokuto.yamanashi.jp/fs/4/3/2/3/0/2/_/_____R6.11.28___1_.pdf",
+      "waybackTimestamp": "20260517091748",
+      "checkedAt": "2026-10-01T14:39:45.987Z",
+      "sha256Match": true,
+      "waybackBytes": 26731,
+      "rawSha256": "dee7fde232d4c6ee4dfad6c934e77ca7ff345df84686c94ca16e22e5d019ef0a"
+    },
+    {
+      "sourceId": "hokuto-gikai-r8",
+      "url": "https://www.city.hokuto.yamanashi.jp/fs/5/0/0/6/4/8/_/_______86_.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261001142745/https://www.city.hokuto.yamanashi.jp/fs/5/0/0/6/4/8/_/_______86_.pdf",
+      "waybackTimestamp": "20261001142745",
+      "checkedAt": "2026-10-01T14:39:57.219Z",
+      "sha256Match": true,
+      "waybackBytes": 4342296,
+      "rawSha256": "368bfda818d49a0ce0f646bc460f2447eccb834e1fcef06b831691abd56728bb"
+    },
+    {
+      "sourceId": "hokuto-gikai-r8",
+      "url": "https://www.city.hokuto.yamanashi.jp/fs/5/0/1/2/9/7/_/____.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261001144006/https://www.city.hokuto.yamanashi.jp/fs/5/0/1/2/9/7/_/____.pdf",
+      "waybackTimestamp": "20261001144006",
+      "checkedAt": "2026-10-01T14:41:00.302Z",
+      "sha256Match": true,
+      "waybackBytes": 111282,
+      "rawSha256": "90c5cc2de50ba2c44cb663a731496bab63c5621d1b85fd452235f931669bc0d3"
     },
     {
       "sourceId": "hokuto-yosansho-r8",
@@ -19598,6 +19669,47 @@
       "checkedAt": "2026-09-14T01:21:49.765Z"
     },
     {
+      "sourceId": "minami-alps-gikai-r8",
+      "url": "https://www.city.minami-alps.yamanashi.jp/docs/10175.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260615110453/https://www.city.minami-alps.yamanashi.jp/docs/10175.html",
+      "waybackTimestamp": "20260615110453",
+      "checkedAt": "2026-10-01T14:48:25.305Z"
+    },
+    {
+      "sourceId": "minami-alps-gikai-r8",
+      "url": "https://www.city.minami-alps.yamanashi.jp/docs/2149.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261001144552/https://www.city.minami-alps.yamanashi.jp/docs/2149.html",
+      "waybackTimestamp": "20261001144552",
+      "checkedAt": "2026-10-01T14:48:21.204Z",
+      "sha256Match": true,
+      "waybackBytes": 27375,
+      "rawSha256": "bff483d0b6444b416f96374bde84b56a5fc886bd22b2ab6d20488f4f0e015864"
+    },
+    {
+      "sourceId": "minami-alps-gikai-r8",
+      "url": "https://www.city.minami-alps.yamanashi.jp/fs/1/4/0/8/0/1/_/______R8.1.9__.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261001143245/https://www.city.minami-alps.yamanashi.jp/fs/1/4/0/8/0/1/_/______R8.1.9__.pdf",
+      "waybackTimestamp": "20261001143245",
+      "checkedAt": "2026-10-01T14:48:09.285Z",
+      "sha256Match": true,
+      "waybackBytes": 60408,
+      "rawSha256": "6c6f3ff2c015a965abd18826d2ad386ac787079d57f429a3be5eb1e2a33ea9d8"
+    },
+    {
+      "sourceId": "minami-alps-gikai-r8",
+      "url": "https://www.city.minami-alps.yamanashi.jp/fs/1/4/2/8/3/4/_/________________92_.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261001143322/https://www.city.minami-alps.yamanashi.jp/fs/1/4/2/8/3/4/_/________________92_.pdf",
+      "waybackTimestamp": "20261001143322",
+      "checkedAt": "2026-10-01T14:48:19.721Z",
+      "sha256Match": true,
+      "waybackBytes": 8629391,
+      "rawSha256": "d28cd577b2efedc0e10cd23f536d4e8d5a9564edc5ac800d9f08cacd0ca36ead"
+    },
+    {
       "sourceId": "minami-alps-yosansho-r8",
       "url": "https://www.city.minami-alps.yamanashi.jp/docs/21143.html",
       "kind": "landing",
@@ -26761,8 +26873,8 @@
       "checkedAt": "2026-09-28T14:50:54.744Z",
       "sha256Match": false,
       "waybackBytes": 1048576,
-      "waybackTruncated": true,
-      "rawSha256": "e46cc3a3ffe3f2a2f708eef35dab9a0f7afcf24c36c67f1826da6918188554e2"
+      "rawSha256": "e46cc3a3ffe3f2a2f708eef35dab9a0f7afcf24c36c67f1826da6918188554e2",
+      "waybackTruncated": true
     },
     {
       "sourceId": "omura-yosangaiyou-r4",
@@ -45945,6 +46057,36 @@
       "sha256Match": true,
       "waybackBytes": 2274447,
       "rawSha256": "06cee95ba0b2ae71b6e08422614e841dccd5db2c3973970cb3133b110322a0a6"
+    },
+    {
+      "sourceId": "yamanashi-ken-gikai-r8",
+      "url": "https://www.pref.yamanashi.jp/documents/124451/giketu_0323.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260710133628/https://www.pref.yamanashi.jp/documents/124451/giketu_0323.pdf",
+      "waybackTimestamp": "20260710133628",
+      "checkedAt": "2026-10-01T14:47:34.072Z",
+      "sha256Match": true,
+      "waybackBytes": 182078,
+      "rawSha256": "6caa82f838bb26c5e21e52e618ceb4c8921f9ea77e1876b81bc8c14d0963f105"
+    },
+    {
+      "sourceId": "yamanashi-ken-gikai-r8",
+      "url": "https://www.pref.yamanashi.jp/documents/124451/sanpiichiran_0323.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260710133448/https://www.pref.yamanashi.jp/documents/124451/sanpiichiran_0323.pdf",
+      "waybackTimestamp": "20260710133448",
+      "checkedAt": "2026-10-01T14:47:55.248Z",
+      "sha256Match": true,
+      "waybackBytes": 277519,
+      "rawSha256": "5e678bb557ac347d5770e9cf0a8ed619d9a9036d04cdfd754e960d631c13e9dc"
+    },
+    {
+      "sourceId": "yamanashi-ken-gikai-r8",
+      "url": "https://www.pref.yamanashi.jp/gikaisom/r8/teireikainaiyou_0802.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260606104832/https://www.pref.yamanashi.jp/gikaisom/r8/teireikainaiyou_0802.html",
+      "waybackTimestamp": "20260606104832",
+      "checkedAt": "2026-10-01T14:48:04.185Z"
     },
     {
       "sourceId": "yamanashi-kessan-r6",

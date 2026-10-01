@@ -19206,5 +19206,41 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.chikusei.lg.jp/gyousei/zai-kaikei-kansa/zaisei/yosan/page008133.html",
     "license": "本サイトに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として筑西市に帰属しています。ただし、外部委託先の制作による一部の著作物など、筑西市以外に著作者が存在する場合は、著作権は各著作者に帰属することになります。本サイトにお越し頂いた方が、著作権法で認められている「私的使用」または「引用」などの範囲内において、本サイトのコンテンツをダウンロードしたりプリントアウトすることは問題ありませんが、無断で他のホームページや印刷媒体に転載したり、複製、翻訳を行うなどといった行為は違法となりますのでご遠慮ください。",
     "target": "page"
+  },
+  "/sources/yamanashi-ken-gikai-r8/kaihabetu_meibo.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260209231452id_/https://www.pref.yamanashi.jp/gikaisom/kaihabetu_meibo.html",
+    "license": "山梨県ホームページに掲載されている文章、画像等の著作権は、山梨県または文章、画像等の提供者にあります。 これらの著作物は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。",
+    "target": "page"
+  },
+  "/sources/yamanashi-ken-gikai-r8/giketu_0323.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.yamanashi.jp/documents/124451/giketu_0323.pdf",
+    "license": "山梨県ホームページに掲載されている文章、画像等の著作権は、山梨県または文章、画像等の提供者にあります。 これらの著作物は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。",
+    "target": "file"
+  },
+  "/sources/yamanashi-ken-gikai-r8/sanpiichiran_0323.pdf": {
+    "mode": "origin",
+    "href": "https://www.pref.yamanashi.jp/documents/124451/sanpiichiran_0323.pdf",
+    "license": "山梨県ホームページに掲載されている文章、画像等の著作権は、山梨県または文章、画像等の提供者にあります。 これらの著作物は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。",
+    "target": "file"
+  },
+  "/sources/minami-alps-gikai-r8/______R8.1.9__.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minami-alps.yamanashi.jp/fs/1/4/0/8/0/1/_/______R8.1.9__.pdf",
+    "license": "閲覧以外の目的で南アルプス市等に無断で「複製」「公開」「ダウンロード」を行うことはおやめください 本ウェブサイトに掲載されている情報等を利用する場合は、「書類ダウンロード-その他」にある「著作物利用許可申請書」に必要事項を記入の上、南アルプス市秘書課へ申請してください。",
+    "target": "file"
+  },
+  "/sources/minami-alps-gikai-r8/________________92_.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.minami-alps.yamanashi.jp/fs/1/4/2/8/3/4/_/________________92_.pdf",
+    "license": "閲覧以外の目的で南アルプス市等に無断で「複製」「公開」「ダウンロード」を行うことはおやめください 本ウェブサイトに掲載されている情報等を利用する場合は、「書類ダウンロード-その他」にある「著作物利用許可申請書」に必要事項を記入の上、南アルプス市秘書課へ申請してください。",
+    "target": "file"
+  },
+  "/sources/minami-alps-gikai-r8/2149.html": {
+    "mode": "origin",
+    "href": "https://www.city.minami-alps.yamanashi.jp/docs/2149.html",
+    "license": "閲覧以外の目的で南アルプス市等に無断で「複製」「公開」「ダウンロード」を行うことはおやめください 本ウェブサイトに掲載されている情報等を利用する場合は、「書類ダウンロード-その他」にある「著作物利用許可申請書」に必要事項を記入の上、南アルプス市秘書課へ申請してください。",
+    "target": "page"
   }
 };

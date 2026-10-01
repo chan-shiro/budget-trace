@@ -1,0 +1,19 @@
+{
+  "sourceId": "fuefuki-gikai-r8",
+  "files": [
+    {
+      "filename": "kaihaitiran.pdf",
+      "sha256": "e3ced3a3a0730183a47c886901f69a9b995f211568654f735ffaf14356ac44a8",
+      "bytes": 101967,
+      "fetchedAt": "2026-10-01T14:18:52.338Z",
+      "fetchedFrom": "https://www.city.fuefuki.yamanashi.jp/documents/1142/kaihaitiran.pdf"
+    },
+    {
+      "filename": "r81giketuitirann.pdf",
+      "sha256": "998a0da10f9880131490056ab5dcecd5d08f28a633fd74146f0f968db72b8f06",
+      "bytes": 118269,
+      "fetchedAt": "2026-10-01T14:18:52.742Z",
+      "fetchedFrom": "https://www.city.fuefuki.yamanashi.jp/documents/11778/r81giketuitirann.pdf"
+    }
+  ]
+}

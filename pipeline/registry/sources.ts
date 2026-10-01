@@ -23355,6 +23355,217 @@ export const SOURCES: SourceEntry[] = [
     license: "甲府市議会ウェブサイト掲載資料（利用条件は同サイト参照）",
     parser: "kofu-gikai",
   })),
+  // ---- 議会の構成（予算議決時）— 甲府以外（`council-transcribed`・docs/data-sources.md §6-2）----
+  // 会派と所属議員の氏名を名簿から書き写し、パーサが**全員の氏名が原典の本文に出ること**と
+  // 議決の事実（議案番号・件名・結果・月日）が議決結果の原典に出ることを確かめる。議席数は氏名の人数。
+  // **議決時点の構成が確定できる議会だけ**を載せる（名簿の基準日 ≤ 議決日・議決後の更新は魚拓で戻す）。
+  {
+    id: "yamanashi-ken-gikai-r8",
+    title: "令和8年度 山梨県議会の構成（会派別議席数）と当初予算の議決",
+    publisher: "山梨県議会",
+    url: null,
+    urls: [
+      // 名簿は同一URLの上書き更新（現行は令和8年8月25日版）。議決（3/23）前の版を魚拓で固定する
+      "https://web.archive.org/web/20260209231452id_/https://www.pref.yamanashi.jp/gikaisom/kaihabetu_meibo.html",
+      "https://www.pref.yamanashi.jp/documents/124451/giketu_0323.pdf",
+      // 議決当日（3/23）の賛否一覧。全36名の氏名が出ること＝議決時点の在籍を確かめる（望月大輔議員は議決後に退任）
+      "https://www.pref.yamanashi.jp/documents/124451/sanpiichiran_0323.pdf",
+    ],
+    landingPage: "https://www.pref.yamanashi.jp/gikaisom/r8/teireikainaiyou_0802.html",
+    kind: "pdf",
+    fiscalYear: "R8",
+    scope: "山梨県議会（団体コード190004）",
+    license:
+      "山梨県ホームページに掲載されている文章、画像等の著作権は、山梨県または文章、画像等の提供者にあります。 これらの著作物は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。",
+    parser: "council-transcribed",
+    parserOptions: {
+      body: "山梨県議会",
+      asOf: "2025-09-17",
+      asOfText: "会派別名簿（令和7年9月17日）",
+      roster: {
+        url: "https://web.archive.org/web/20260209231452id_/https://www.pref.yamanashi.jp/gikaisom/kaihabetu_meibo.html",
+        title: "会派別名簿（令和7年9月17日）",
+        confirmUrls: ["https://www.pref.yamanashi.jp/documents/124451/sanpiichiran_0323.pdf"],
+      },
+      factions: [
+        { name: "自由民主党 政風やまなし", declared: "自由民主党 政風やまなし（15）", members: ["望月勝", "河西敏郎", "山田一功", "水岸富美男", "卯月政人", "渡辺淳也", "宮本秀憲", "大久保俊雄", "藤本好彦", "向山憲稔", "飯島力男", "久嶋成美", "石原政信", "中村正仁", "寺田義彦"] },
+        { name: "自由民主党新緑の会", declared: "自由民主党新緑の会（8）", members: ["流石恭史", "臼井友基", "桐原正仁", "長澤健", "小沢栄一", "伊藤毅", "望月大輔", "渡辺大喜"] },
+        { name: "未来やまなし", declared: "未来やまなし（4）", members: ["土橋亨", "清水喜美男", "古屋雅夫", "笠井辰生"] },
+        { name: "自由民主党・開の国", declared: "自由民主党・開の国（3）", members: ["浅川力三", "白壁賢一", "久保田松幸"] },
+        { name: "日本共産党", declared: "日本共産党（2）", members: ["名取泰", "菅野幹子"] },
+        { name: "公明党", declared: "公明党（1）", members: ["佐野弘仁"] },
+        { name: "リベラル山梨", declared: "リベラル山梨（1）", members: ["飯島修"] },
+        { name: "やまなし県民会議", declared: "やまなし県民会議（1）", members: ["志村直毅"] },
+        { name: "えがお夢", declared: "えがお夢（1）", members: ["福井太一"] },
+      ],
+      resolution: {
+        url: "https://www.pref.yamanashi.jp/documents/124451/giketu_0323.pdf",
+        title: "令和8年2月定例会 議決結果（3月23日）",
+        billNo: "第27号",
+        billName: "令和8年度山梨県一般会計予算",
+        sessionLabel: "令和8年2月定例会",
+        decidedDate: "2026-03-23",
+        result: "可決",
+      },
+    },
+  },
+  {
+    id: "hokuto-gikai-r8",
+    title: "令和8年度 北杜市議会の構成（会派別議席数）と当初予算の議決",
+    publisher: "北杜市議会",
+    url: null,
+    urls: [
+      "https://www.city.hokuto.yamanashi.jp/fs/4/3/2/3/0/2/_/_____R6.11.28___1_.pdf",
+      "https://www.city.hokuto.yamanashi.jp/fs/5/0/0/6/4/8/_/_______86_.pdf",
+      "https://www.city.hokuto.yamanashi.jp/fs/5/0/1/2/9/7/_/____.pdf",
+    ],
+    landingPage: "https://www.city.hokuto.yamanashi.jp/docs/8292.html",
+    kind: "pdf",
+    fiscalYear: "R8",
+    scope: "北杜市議会（団体コード192091）",
+    // 著作権・二次利用の条項がサイトに無い（サイトポリシーはアクセシビリティだけ）。開ける側へは倒さない
+    // ⚠ 著作権・二次利用の条項がサイトに無い（サイトポリシーはアクセシビリティだけ・フッターの表記だけ）。
+    //   条項の無い市をどちらへ倒すかは Issue #293 で人の判断待ち（鴻巣・入間・米子と同じ型）なので原文だけを置く
+    license: "Copyright(C) Hokuto City All Rights Reserved.",
+    parser: "council-transcribed",
+    parserOptions: {
+      body: "北杜市議会",
+      asOf: "2024-11-28",
+      asOfText: "令和6年11月28日現在",
+      roster: {
+        url: "https://www.city.hokuto.yamanashi.jp/fs/4/3/2/3/0/2/_/_____R6.11.28___1_.pdf",
+        title: "北杜市議会議員所属会派（令和6年11月28日現在）",
+        // 議会だより86号 p.5 の賛否表（3月定例会）に全20名が出る＝議決時点の在籍
+        confirmUrls: ["https://www.city.hokuto.yamanashi.jp/fs/5/0/0/6/4/8/_/_______86_.pdf"],
+      },
+      // 3段組みの枠（A4・pt）。会派名・人数・氏名の位置は pdftotext -bbox で確かめた
+      factions: [
+        { name: "みらい創生", box: [35, 160, 165, 140], declared: "４人", members: ["加藤紀雄", "保坂多枝子", "神田正人", "大芝正和"] },
+        { name: "ポラリス北杜", box: [200, 160, 165, 140], declared: "４人", members: ["髙見澤伸光", "輿水崇", "輿石知宏", "大塚愛"] },
+        { name: "北杜クラブ", box: [365, 160, 175, 140], declared: "３人", members: ["秋山俊和", "齊藤功文", "秋山真一"] },
+        { name: "公明党", box: [35, 335, 165, 105], declared: "２人", members: ["内田俊彦", "進藤正文"] },
+        { name: "日本共産党", box: [200, 335, 165, 105], declared: "２人", members: ["志村清", "清水進"] },
+        { name: "北杜オール・イン・ワン", box: [365, 335, 175, 105], declared: "２人", members: ["中山喜夫", "山﨑君江"] },
+        { name: "無会派", box: [35, 470, 165, 125], declared: "３人", members: ["中村典子", "飛矢﨑雅也", "浅川勝正"] },
+      ],
+      resolution: {
+        // 議会だよりに議案番号が無いので、3月16日の議事日程（日程第15 議案第28号）で補う
+        url: "https://www.city.hokuto.yamanashi.jp/fs/5/0/0/6/4/8/_/_______86_.pdf",
+        alsoUrls: ["https://www.city.hokuto.yamanashi.jp/fs/5/0/1/2/9/7/_/____.pdf"],
+        // 議決日は議事日程の表題（令和８年３月１６日（月)午前１０時開議）にあり、件名の行とは離れる。
+        // 結果は議会だより p.5 の賛否表の右端の列で、-raw では「…○○可決令和8年度北杜市一般会計予算○○×…」と
+        // 件名の前に出る（行の区切りが読めないので近接で縛れない）
+        farOk: ["result", "decidedDate"],
+        title: "北杜市議会だより 第86号",
+        billNo: "議案第28号",
+        billName: "令和8年度北杜市一般会計予算",
+        sessionLabel: "令和8年第1回定例会",
+        decidedDate: "2026-03-16",
+        result: "可決",
+      },
+    },
+  },
+  {
+    id: "fuefuki-gikai-r8",
+    title: "令和8年度 笛吹市議会の構成（会派別議席数）と当初予算の議決",
+    publisher: "笛吹市議会",
+    url: null,
+    urls: [
+      "https://www.city.fuefuki.yamanashi.jp/documents/1142/kaihaitiran.pdf",
+      "https://www.city.fuefuki.yamanashi.jp/documents/11778/r81giketuitirann.pdf",
+    ],
+    landingPage: "https://www.city.fuefuki.yamanashi.jp/gikai/shisejoho/shigikai/ginmebo/index.html",
+    kind: "pdf",
+    fiscalYear: "R8",
+    scope: "笛吹市議会（団体コード192112）",
+    license:
+      "このウェブサイトに掲載または表示されている写真・図面、動画等の表現物などの全部または一部を（「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き）引用又は転載しようとする者は、引用転載許可申請書（ワード：24KB）を市長へ提出していただきます。",
+    parser: "council-transcribed",
+    parserOptions: {
+      body: "笛吹市議会",
+      asOf: "2025-06-10",
+      asOfText: "令和7年6月10日現在",
+      roster: {
+        url: "https://www.city.fuefuki.yamanashi.jp/documents/1142/kaihaitiran.pdf",
+        title: "笛吹市議会 会派一覧表（令和7年6月10日現在）",
+      },
+      // 表の行の枠（A4・pt）。所属議員が2行に折り返す会派があるので会派名の行の上下を含める。
+      // 人数の印字は「代表者氏名＋所属人数」の並びで照合する（煌・フォーラム21 は代表者名が「山本 茂貴」と割れる）
+      factions: [
+        { name: "笛新会", box: [40, 125, 365, 82], declared: "海野利比古6", members: ["海野利比古", "保坂利定", "神澤敏美", "荻野謙一", "神宮司正人", "樋口滝人"] },
+        { name: "笛政クラブ", box: [40, 215, 365, 60], declared: "古屋始芳3", members: ["古屋始芳", "岡由子", "荻野陽子"] },
+        { name: "清心会", box: [40, 285, 365, 30], declared: "落合俊美3", members: ["落合俊美", "山田宏司", "河野正博"] },
+        // 原典では会派名が「煌・フォーラ」「ム21」の2行に割れている
+        { name: "煌・フォーラム21", box: [40, 335, 365, 42], declared: "茂貴3", nameParts: ["煌・フォーラ", "ム21"], members: ["山本茂貴", "三枝賢治", "鈴木駿一"] },
+        { name: "公明党", box: [40, 395, 365, 27], declared: "渡辺清美2", members: ["渡辺清美", "中川秀哉"] },
+        { name: "無会派", box: [40, 460, 365, 45], noDeclaredCount: true, members: ["河野智子", "松本なつき"] },
+      ],
+      resolution: {
+        url: "https://www.city.fuefuki.yamanashi.jp/documents/11778/r81giketuitirann.pdf",
+        title: "令和8年笛吹市議会第1回定例会 議決案件一覧",
+        billNo: "議案第18号",
+        billName: "令和8年度笛吹市一般会計予算について",
+        sessionLabel: "令和8年笛吹市議会第1回定例会",
+        decidedDate: "2026-03-24",
+        result: "原案可決",
+      },
+    },
+  },
+  {
+    id: "minami-alps-gikai-r8",
+    title: "令和8年度 南アルプス市議会の構成（会派別議席数）と当初予算の議決",
+    publisher: "南アルプス市議会",
+    url: null,
+    urls: [
+      "https://www.city.minami-alps.yamanashi.jp/fs/1/4/0/8/0/1/_/______R8.1.9__.pdf",
+      "https://www.city.minami-alps.yamanashi.jp/fs/1/4/2/8/3/4/_/________________92_.pdf",
+      "https://www.city.minami-alps.yamanashi.jp/docs/2149.html",
+    ],
+    landingPage: "https://www.city.minami-alps.yamanashi.jp/docs/10175.html",
+    kind: "pdf",
+    fiscalYear: "R8",
+    scope: "南アルプス市議会（定数22・団体コード192082）",
+    license:
+      "閲覧以外の目的で南アルプス市等に無断で「複製」「公開」「ダウンロード」を行うことはおやめください 本ウェブサイトに掲載されている情報等を利用する場合は、「書類ダウンロード-その他」にある「著作物利用許可申請書」に必要事項を記入の上、南アルプス市秘書課へ申請してください。",
+    parser: "council-transcribed",
+    parserOptions: {
+      body: "南アルプス市議会",
+      asOf: "2026-01-09",
+      asOfText: "令和8年1月9日現在",
+      // 名簿に人数の印字が無いので、定数との一致で書き落としを捕まえる（3/23 の会議録も出席22名・欠席なし）
+      teisu: 22,
+      teisuText: "議員定数は22人です。",
+      teisuUrl: "https://www.city.minami-alps.yamanashi.jp/docs/2149.html",
+      roster: {
+        url: "https://www.city.minami-alps.yamanashi.jp/fs/1/4/0/8/0/1/_/______R8.1.9__.pdf",
+        title: "各会派構成（令和8年1月9日現在）",
+      },
+      factions: [
+        { noDeclaredCount: true, name: "新政南アルプス", members: ["清水麻里", "藤田亜由未", "保坂健", "三木充", "花輪幸長", "村松三千雄", "飯野久"] },
+        { noDeclaredCount: true, name: "躍進会", members: ["吉松大樹", "飯久保貴", "相川宗仁", "保坂広人", "三枝守和", "戸栗淳"] },
+        { noDeclaredCount: true, name: "公明党", members: ["小池伸吾", "齊藤博明", "河野木綿子"] },
+        { noDeclaredCount: true, name: "かがやき21", members: ["名取常雄", "小林敏徳"] },
+        { noDeclaredCount: true, name: "未来創政の会", members: ["秋山浩志", "矢﨑俊秀"] },
+        { noDeclaredCount: true, name: "日本共産党南アルプス市議団", members: ["河阪悠", "松野昇平"] },
+      ],
+      resolution: {
+        // 審議結果一覧（PDF）が R8 第1回定例会の分は未掲載。議会だより No.92 の「◆全会一致で承認・可決・同意した議案」の
+        // 一覧に「議案 26 一般会計予算」とある。**画面には原典にある字だけを出す**（「令和8年度南アルプス市一般会計予算」
+        // 「議案第26号」と 3/23 の議決は会議録（kensakusystem.jp・固定URLなし）にしか無く第三者が追えないため。docs §6-2）
+        url: "https://www.city.minami-alps.yamanashi.jp/fs/1/4/2/8/3/4/_/________________92_.pdf",
+        title: "南アルプス市議会だより No.92",
+        billNo: "議案 26",
+        billName: "一般会計予算",
+        sessionLabel: "第1回定例会",
+        decidedDate: "2026-03-23",
+        result: "可決",
+        // 結果は一覧の見出し（全会一致で承認・可決・同意した議案）にあり件名の行には無い。日付は
+        // 「第1回定例会 （３月）２月20日〜 ３月23日開催」としか書かない（閉会日＝議決日。会議録で確認）
+        resultText: "全会一致で承認・可決・同意した議案",
+        farOk: ["result", "decidedDate"],
+      },
+    },
+  },
   // 事業報告（成果）＝事務事業評価 詳細票（第2号様式）。行政評価の公表用 XLSX に
   // 個別事業の詳細票が数枚だけ埋め込まれている（事業番号がシート名）。事業費（決算＋当初＋計画）・
   // トータルコスト・成果指標の目標/実績・総合評価を1事業で通して見られる。公表は各年サンプルのみ。

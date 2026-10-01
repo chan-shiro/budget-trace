@@ -549,6 +549,11 @@ export const councilFactionFactSchema = z.object({
   seats: z.number().int().positive(),
   /** 無所属（会派に属さない議員）か */
   isIndependent: z.boolean(),
+  /**
+   * 所属議員の氏名（`council-transcribed` のみ）。名簿から書き写し、パーサが原典の本文に
+   * **全員の名前が出ること**を確かめている。議席数はこの人数（申告の人数ではない）。
+   */
+  members: z.array(z.string().min(1)).optional(),
   locator: locatorSchema,
 });
 export type CouncilFactionFact = z.infer<typeof councilFactionFactSchema>;
@@ -583,8 +588,18 @@ export const councilCompositionDocSchema = z.object({
   seats: z.number().int().positive(),
   /** 会派構成の基準日 ISO（名簿の更新日） */
   asOf: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  /**
+   * 条例定数（`council-transcribed` のみ・任意）。欠員があると `seats`（＝現員＝会派の和）より大きい。
+   * 原典で定数を確かめた団体だけが持つ（無い団体は「現員」とだけ表示する）。
+   */
+  teisu: z.number().int().positive().optional(),
   factions: z.array(councilFactionFactSchema),
+  /** 会派制を採らない議会（町村議会に多い）。factions は「会派なし」1件＝全議員 */
+  noFactions: z.boolean().optional(),
   resolution: councilResolutionSchema,
+  /** 名簿・議決結果の原典の呼び名（画面の出典チップ。`council-transcribed` のみ） */
+  rosterTitle: z.string().optional(),
+  resultTitle: z.string().optional(),
 });
 export type CouncilCompositionDoc = z.infer<typeof councilCompositionDocSchema>;
 

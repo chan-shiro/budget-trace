@@ -1,0 +1,116 @@
+{
+  "docType": "council-composition",
+  "sourceId": "minami-alps-gikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-10-01T14:39:18.321Z",
+  "fiscalYear": "R8",
+  "body": "南アルプス市議会",
+  "seats": 22,
+  "asOf": "2026-01-09",
+  "teisu": 22,
+  "factions": [
+    {
+      "name": "新政南アルプス",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "清水麻里",
+        "藤田亜由未",
+        "保坂健",
+        "三木充",
+        "花輪幸長",
+        "村松三千雄",
+        "飯野久"
+      ],
+      "locator": {
+        "file": "______R8.1.9__.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "躍進会",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "吉松大樹",
+        "飯久保貴",
+        "相川宗仁",
+        "保坂広人",
+        "三枝守和",
+        "戸栗淳"
+      ],
+      "locator": {
+        "file": "______R8.1.9__.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "小池伸吾",
+        "齊藤博明",
+        "河野木綿子"
+      ],
+      "locator": {
+        "file": "______R8.1.9__.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "かがやき21",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "名取常雄",
+        "小林敏徳"
+      ],
+      "locator": {
+        "file": "______R8.1.9__.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "未来創政の会",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "秋山浩志",
+        "矢﨑俊秀"
+      ],
+      "locator": {
+        "file": "______R8.1.9__.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "日本共産党南アルプス市議団",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "河阪悠",
+        "松野昇平"
+      ],
+      "locator": {
+        "file": "______R8.1.9__.pdf",
+        "page": 1
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案 26",
+    "billName": "一般会計予算",
+    "sessionLabel": "第1回定例会",
+    "decidedDate": "2026-03-23",
+    "decidedDateLabel": "令和8年3月23日",
+    "result": "可決",
+    "locator": {
+      "file": "________________92_.pdf",
+      "page": 4
+    }
+  },
+  "rosterTitle": "各会派構成（令和8年1月9日現在）",
+  "resultTitle": "南アルプス市議会だより No.92"
+}

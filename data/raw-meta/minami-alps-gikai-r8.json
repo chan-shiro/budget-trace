@@ -1,0 +1,26 @@
+{
+  "sourceId": "minami-alps-gikai-r8",
+  "files": [
+    {
+      "filename": "______R8.1.9__.pdf",
+      "sha256": "6c6f3ff2c015a965abd18826d2ad386ac787079d57f429a3be5eb1e2a33ea9d8",
+      "bytes": 60408,
+      "fetchedAt": "2026-10-01T14:39:14.668Z",
+      "fetchedFrom": "https://www.city.minami-alps.yamanashi.jp/fs/1/4/0/8/0/1/_/______R8.1.9__.pdf"
+    },
+    {
+      "filename": "________________92_.pdf",
+      "sha256": "d28cd577b2efedc0e10cd23f536d4e8d5a9564edc5ac800d9f08cacd0ca36ead",
+      "bytes": 8629391,
+      "fetchedAt": "2026-10-01T14:39:16.647Z",
+      "fetchedFrom": "https://www.city.minami-alps.yamanashi.jp/fs/1/4/2/8/3/4/_/________________92_.pdf"
+    },
+    {
+      "filename": "2149.html",
+      "sha256": "bff483d0b6444b416f96374bde84b56a5fc886bd22b2ab6d20488f4f0e015864",
+      "bytes": 27375,
+      "fetchedAt": "2026-10-01T14:39:16.988Z",
+      "fetchedFrom": "https://www.city.minami-alps.yamanashi.jp/docs/2149.html"
+    }
+  ]
+}
