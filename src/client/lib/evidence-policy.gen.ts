@@ -19206,5 +19206,149 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.chikusei.lg.jp/gyousei/zai-kaikei-kansa/zaisei/yosan/page008133.html",
     "license": "本サイトに掲載されている画像、文書その他すべてのコンテンツの著作権は原則として筑西市に帰属しています。ただし、外部委託先の制作による一部の著作物など、筑西市以外に著作者が存在する場合は、著作権は各著作者に帰属することになります。本サイトにお越し頂いた方が、著作権法で認められている「私的使用」または「引用」などの範囲内において、本サイトのコンテンツをダウンロードしたりプリントアウトすることは問題ありませんが、無断で他のホームページや印刷媒体に転載したり、複製、翻訳を行うなどといった行為は違法となりますのでご遠慮ください。",
     "target": "page"
+  },
+  "/sources/kanoya-yosan-setsumei-r8/r8kanoyacity_yosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kanoya.lg.jp/documents/12223/r8kanoyacity_yosan.pdf",
+    "license": "当サイトに掲載されている文章、写真、イラスト、画像等の著作権は、鹿屋市またはコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。",
+    "target": "file"
+  },
+  "/sources/kanoya-yosan-setsumei-r7/r7kanoyacity_yosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kanoya.lg.jp/documents/11278/r7kanoyacity_yosan.pdf",
+    "license": "当サイトに掲載されている文章、写真、イラスト、画像等の著作権は、鹿屋市またはコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。",
+    "target": "file"
+  },
+  "/sources/kanoya-yosan-setsumei-r6/r6_tousyo_ippannkaikeiyosann.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kanoya.lg.jp/documents/10394/r6_tousyo_ippannkaikeiyosann.pdf",
+    "license": "当サイトに掲載されている文章、写真、イラスト、画像等の著作権は、鹿屋市またはコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。",
+    "target": "file"
+  },
+  "/sources/kanoya-yosan-setsumei-r5/r5_tousyo_ippannkaikeiyosann.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kanoya.lg.jp/documents/9313/r5_tousyo_ippannkaikeiyosann.pdf",
+    "license": "当サイトに掲載されている文章、写真、イラスト、画像等の著作権は、鹿屋市またはコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。",
+    "target": "file"
+  },
+  "/sources/kanoya-yosan-setsumei-r4/r4_tousyo_yosansyo_setumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kanoya.lg.jp/documents/7900/r4_tousyo_yosansyo_setumei.pdf",
+    "license": "当サイトに掲載されている文章、写真、イラスト、画像等の著作権は、鹿屋市またはコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。",
+    "target": "file"
+  },
+  "/sources/kanoya-yosan-setsumei-r3/r3_tousyo_yosansetsumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kanoya.lg.jp/documents/5981/r3_tousyo_yosansetsumei.pdf",
+    "license": "当サイトに掲載されている文章、写真、イラスト、画像等の著作権は、鹿屋市またはコンテンツ提供者の方にあります。これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。",
+    "target": "file"
+  },
+  "/sources/saku-yosan-setsumei-r8/r8-1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.saku.nagano.jp/shisei/zaisei/yosan/reiwa8.html",
+    "license": "本サーバー上の文書・写真 ・イラスト・動画・音楽等（以下、「コンテンツ」といいます）の著作権は、原則として、佐久市が所有しています。著作権法に定められた範囲内において使用する場合を除き、佐久市に無断で本サーバー上のコンテンツを複製、転載、改変、編集、頒布、販売等することはできません。 なお、個別に利用条件が定められている場合は、当該条件が優先されます。",
+    "target": "page"
+  },
+  "/sources/saku-yosan-setsumei-r7/r70001.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.saku.nagano.jp/shisei/zaisei/yosan/reiwa7.html",
+    "license": "本サーバー上の文書・写真 ・イラスト・動画・音楽等（以下、「コンテンツ」といいます）の著作権は、原則として、佐久市が所有しています。著作権法に定められた範囲内において使用する場合を除き、佐久市に無断で本サーバー上のコンテンツを複製、転載、改変、編集、頒布、販売等することはできません。 なお、個別に利用条件が定められている場合は、当該条件が優先されます。",
+    "target": "page"
+  },
+  "/sources/saku-yosan-setsumei-r6/r6tousyoyosansetumei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.saku.nagano.jp/shisei/zaisei/yosan/reiwa6.html",
+    "license": "本サーバー上の文書・写真 ・イラスト・動画・音楽等（以下、「コンテンツ」といいます）の著作権は、原則として、佐久市が所有しています。著作権法に定められた範囲内において使用する場合を除き、佐久市に無断で本サーバー上のコンテンツを複製、転載、改変、編集、頒布、販売等することはできません。 なお、個別に利用条件が定められている場合は、当該条件が優先されます。",
+    "target": "page"
+  },
+  "/sources/saku-yosan-setsumei-r5/R5tousyoyosansetumeisiryou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.saku.nagano.jp/shisei/zaisei/yosan/reiwa5.html",
+    "license": "本サーバー上の文書・写真 ・イラスト・動画・音楽等（以下、「コンテンツ」といいます）の著作権は、原則として、佐久市が所有しています。著作権法に定められた範囲内において使用する場合を除き、佐久市に無断で本サーバー上のコンテンツを複製、転載、改変、編集、頒布、販売等することはできません。 なお、個別に利用条件が定められている場合は、当該条件が優先されます。",
+    "target": "page"
+  },
+  "/sources/izumisano-yosan-gaiyou-r8/R8yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.izumisano.lg.jp/material/files/group/9/R8yosangaiyou.pdf",
+    "license": "このホームページに掲載している文書や写真などについての諸権利は、原則として泉佐野市に帰属します。このホームページの文書・写真などの無断使用・無断転載を禁止します。",
+    "target": "file"
+  },
+  "/sources/izumisano-yosan-gaiyou-r7/R7yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.izumisano.lg.jp/material/files/group/9/R7yosangaiyou.pdf",
+    "license": "このホームページに掲載している文書や写真などについての諸権利は、原則として泉佐野市に帰属します。このホームページの文書・写真などの無断使用・無断転載を禁止します。",
+    "target": "file"
+  },
+  "/sources/izumisano-yosan-gaiyou-r6/R6yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.izumisano.lg.jp/material/files/group/9/R6yosangaiyou.pdf",
+    "license": "このホームページに掲載している文書や写真などについての諸権利は、原則として泉佐野市に帰属します。このホームページの文書・写真などの無断使用・無断転載を禁止します。",
+    "target": "file"
+  },
+  "/sources/izumisano-yosan-gaiyou-r5/05yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.izumisano.lg.jp/material/files/group/9/05yosangaiyou.pdf",
+    "license": "このホームページに掲載している文書や写真などについての諸権利は、原則として泉佐野市に帰属します。このホームページの文書・写真などの無断使用・無断転載を禁止します。",
+    "target": "file"
+  },
+  "/sources/izumisano-yosan-gaiyou-r4/01_R4yosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.izumisano.lg.jp/material/files/group/9/01_R4yosangaiyou.pdf",
+    "license": "このホームページに掲載している文書や写真などについての諸権利は、原則として泉佐野市に帰属します。このホームページの文書・写真などの無断使用・無断転載を禁止します。",
+    "target": "file"
+  },
+  "/sources/izumisano-yosan-gaiyou-r3/02R3gaiyou2.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.izumisano.lg.jp/material/files/group/9/02R3gaiyou2.pdf",
+    "license": "このホームページに掲載している文書や写真などについての諸権利は、原則として泉佐野市に帰属します。このホームページの文書・写真などの無断使用・無断転載を禁止します。",
+    "target": "file"
+  },
+  "/sources/izumisano-yosan-gaiyou-r2/yosangaiyou02.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.izumisano.lg.jp/material/files/group/9/yosangaiyou02.pdf",
+    "license": "このホームページに掲載している文書や写真などについての諸権利は、原則として泉佐野市に帰属します。このホームページの文書・写真などの無断使用・無断転載を禁止します。",
+    "target": "file"
+  },
+  "/sources/kawachinagano-yosan-hikaku-r8/45437.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kawachinagano.lg.jp/uploaded/attachment/45437.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、河内長野市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/kawachinagano-yosan-hikaku-r7/41771.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kawachinagano.lg.jp/uploaded/attachment/41771.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、河内長野市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/kawachinagano-yosan-hikaku-r6/37237.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kawachinagano.lg.jp/uploaded/attachment/37237.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、河内長野市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/kawachinagano-yosan-hikaku-r5/33395.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kawachinagano.lg.jp/uploaded/attachment/33395.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、河内長野市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/kawachinagano-yosan-hikaku-r4/27050.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kawachinagano.lg.jp/uploaded/attachment/27050.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、河内長野市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/kawachinagano-yosan-hikaku-r3/23428.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.kawachinagano.lg.jp/uploaded/attachment/23428.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、河内長野市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
+  },
+  "/sources/kawachinagano-yosan-hikaku-r2/19187.pdf": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20210918230957id_/https://www.city.kawachinagano.lg.jp/uploaded/attachment/19187.pdf",
+    "license": "本サイトに掲載の文章、画像などの著作権は、河内長野市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "file"
   }
 };

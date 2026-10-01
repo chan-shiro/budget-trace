@@ -3306,6 +3306,23 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     ...(["r8", "r7", "r5", "r4"] as const).map((fy) => ({
       srcId: `chikusei-yosansho-${fy}`, muniCode: "082279", muniName: "筑西市", prefName: "茨城県", isPref: false,
     })),
+    // ---- 第51巡（2026-10-01・§13-53） ----
+    // ⚠⚠ 鹿屋 R4・R8 が骨格で R5 に prevNote。R2 は廃止款（印つき・当年度空欄）が読めず未収録
+    ...(["r8", "r7", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
+      srcId: `kanoya-yosan-setsumei-${fy}`, muniCode: "462039", muniName: "鹿屋市", prefName: "鹿児島県", isPref: false,
+    })),
+    // ⚠⚠ 佐久 R8〜R6 は左の注記・グラフを CropX で落とす。R7 骨格で R8 に prevNote。R4〜R2 はスキャン
+    ...(["r8", "r7", "r6", "r5"] as const).map((fy) => ({
+      srcId: `saku-yosan-setsumei-${fy}`, muniCode: "202177", muniName: "佐久市", prefName: "長野県", isPref: false,
+    })),
+    // ⚠⚠ 泉佐野 R8・R3 は decodeGarble（R3 は帯も）。R5・H31 骨格で R6・R2 に prevNote。ふるさと納税で当初が決算の75%
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `izumisano-yosan-gaiyou-${fy}`, muniCode: "272132", muniName: "泉佐野市", prefName: "大阪府", isPref: false,
+    })),
+    // ⚠⚠ 河内長野 R5 は議会修正後の版（33395）。R2 は Wayback
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `kawachinagano-yosan-hikaku-${fy}`, muniCode: "272167", muniName: "河内長野市", prefName: "大阪府", isPref: false,
+    })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。
   // 当初予算（BUDGET_SOURCES）と別年度でよい（山梨県: 当初R8 に対し 決算はR6 が最新）。
