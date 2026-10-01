@@ -19350,5 +19350,173 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://web.archive.org/web/20210918230957id_/https://www.city.kawachinagano.lg.jp/uploaded/attachment/19187.pdf",
     "license": "本サイトに掲載の文章、画像などの著作権は、河内長野市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、本サイトに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
     "target": "file"
+  },
+  "/sources/yotsukaido-yosansho-r8/R8tousyoyosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yotsukaido.chiba.jp/shisei/zaisei/yosan/r-8/R8tousyoyosan.html",
+    "license": "当市のホームページに掲載されている個々の情報（文章・写真・イラストなど）は、著作権保護の対象となり、四街道市に帰属しています。私的利用や引用など著作権法上認められたものを除き、四街道市に許可なく複製・転用等をすることはできません。",
+    "target": "page"
+  },
+  "/sources/yotsukaido-yosansho-r7/R7tousyoyosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yotsukaido.chiba.jp/shisei/zaisei/yosan/r-7/R7tousyoyosan.html",
+    "license": "当市のホームページに掲載されている個々の情報（文章・写真・イラストなど）は、著作権保護の対象となり、四街道市に帰属しています。私的利用や引用など著作権法上認められたものを除き、四街道市に許可なく複製・転用等をすることはできません。",
+    "target": "page"
+  },
+  "/sources/yotsukaido-yosansho-r6/r6tousyoyosannsyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yotsukaido.chiba.jp/shisei/zaisei/yosan/r-6/R6tousyo.html",
+    "license": "当市のホームページに掲載されている個々の情報（文章・写真・イラストなど）は、著作権保護の対象となり、四街道市に帰属しています。私的利用や引用など著作権法上認められたものを除き、四街道市に許可なく複製・転用等をすることはできません。",
+    "target": "page"
+  },
+  "/sources/yotsukaido-yosansho-r5/R5tousyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yotsukaido.chiba.jp/shisei/zaisei/yosan/r-5/R5tousyo.html",
+    "license": "当市のホームページに掲載されている個々の情報（文章・写真・イラストなど）は、著作権保護の対象となり、四街道市に帰属しています。私的利用や引用など著作権法上認められたものを除き、四街道市に許可なく複製・転用等をすることはできません。",
+    "target": "page"
+  },
+  "/sources/yotsukaido-yosansho-r4/r4_toushoyosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yotsukaido.chiba.jp/shisei/zaisei/yosan/r-4/r4_toushoyosan.html",
+    "license": "当市のホームページに掲載されている個々の情報（文章・写真・イラストなど）は、著作権保護の対象となり、四街道市に帰属しています。私的利用や引用など著作権法上認められたものを除き、四街道市に許可なく複製・転用等をすることはできません。",
+    "target": "page"
+  },
+  "/sources/yotsukaido-yosansho-r3/r3tousyoyosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yotsukaido.chiba.jp/shisei/zaisei/yosan/r-3/r3tousyoyosann.html",
+    "license": "当市のホームページに掲載されている個々の情報（文章・写真・イラストなど）は、著作権保護の対象となり、四街道市に帰属しています。私的利用や引用など著作権法上認められたものを除き、四街道市に許可なく複製・転用等をすることはできません。",
+    "target": "page"
+  },
+  "/sources/yotsukaido-yosansho-r2/R02tousho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.yotsukaido.chiba.jp/shisei/zaisei/yosan/reiwa2yosan/r2toushoyosan.html",
+    "license": "当市のホームページに掲載されている個々の情報（文章・写真・イラストなど）は、著作権保護の対象となり、四街道市に帰属しています。私的利用や引用など著作権法上認められたものを除き、四街道市に許可なく複製・転用等をすることはできません。",
+    "target": "page"
+  },
+  "/sources/munakata-yosansho-r8/3_9691_12373_up_v5erhpyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.munakata.lg.jp/kiji0039691/index.html",
+    "license": "宗像市ウェブサイトから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は宗像市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "page"
+  },
+  "/sources/munakata-yosansho-r7/3_7969_1919_up_gu804a1o.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.munakata.lg.jp/kiji0037969/index.html",
+    "license": "宗像市ウェブサイトから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は宗像市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "page"
+  },
+  "/sources/munakata-yosansho-r6/3_1094_7_R6tousyoyosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.munakata.lg.jp/kiji0031094/index.html",
+    "license": "宗像市ウェブサイトから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は宗像市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "page"
+  },
+  "/sources/munakata-yosansho-r5/3_1093_7_R5tousyoyosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.munakata.lg.jp/kiji0031093/index.html",
+    "license": "宗像市ウェブサイトから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は宗像市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "page"
+  },
+  "/sources/munakata-yosansho-r4/3_1092_8_R04tousyoyosann.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.munakata.lg.jp/kiji0031092/index.html",
+    "license": "宗像市ウェブサイトから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は宗像市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "page"
+  },
+  "/sources/munakata-yosansho-r3/3_1091_11_r3nenndotousyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.munakata.lg.jp/kiji0031091/index.html",
+    "license": "宗像市ウェブサイトから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は宗像市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "page"
+  },
+  "/sources/munakata-yosansho-r2/3_1090_13_R2tousyoyosannsyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.munakata.lg.jp/kiji0031090/index.html",
+    "license": "宗像市ウェブサイトから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は宗像市に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。",
+    "target": "page"
+  },
+  "/sources/azumino-yosansho-r8/79348.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.azumino.nagano.jp/soshiki/9/137299.html",
+    "license": "市ホームページに掲載している個々の情報（文章、画像、イラストなど）に関する諸権利は、原則として安曇野市に帰属します。市ホームページは、著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転載、販売、貸与することはできません。また、市ホームページの内容の全部または一部について、無断で改変することもできません。",
+    "target": "page"
+  },
+  "/sources/azumino-yosansho-r7/70959.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.azumino.nagano.jp/soshiki/9/137294.html",
+    "license": "市ホームページに掲載している個々の情報（文章、画像、イラストなど）に関する諸権利は、原則として安曇野市に帰属します。市ホームページは、著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転載、販売、貸与することはできません。また、市ホームページの内容の全部または一部について、無断で改変することもできません。",
+    "target": "page"
+  },
+  "/sources/azumino-yosansho-r6/63271.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.azumino.nagano.jp/soshiki/9/112059.html",
+    "license": "市ホームページに掲載している個々の情報（文章、画像、イラストなど）に関する諸権利は、原則として安曇野市に帰属します。市ホームページは、著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転載、販売、貸与することはできません。また、市ホームページの内容の全部または一部について、無断で改変することもできません。",
+    "target": "page"
+  },
+  "/sources/azumino-yosansho-r5/56370.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.azumino.nagano.jp/soshiki/9/100815.html",
+    "license": "市ホームページに掲載している個々の情報（文章、画像、イラストなど）に関する諸権利は、原則として安曇野市に帰属します。市ホームページは、著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転載、販売、貸与することはできません。また、市ホームページの内容の全部または一部について、無断で改変することもできません。",
+    "target": "page"
+  },
+  "/sources/azumino-yosansho-r4/50207.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.azumino.nagano.jp/soshiki/9/86909.html",
+    "license": "市ホームページに掲載している個々の情報（文章、画像、イラストなど）に関する諸権利は、原則として安曇野市に帰属します。市ホームページは、著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転載、販売、貸与することはできません。また、市ホームページの内容の全部または一部について、無断で改変することもできません。",
+    "target": "page"
+  },
+  "/sources/azumino-yosansho-r3/43672.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.azumino.nagano.jp/soshiki/9/69380.html",
+    "license": "市ホームページに掲載している個々の情報（文章、画像、イラストなど）に関する諸権利は、原則として安曇野市に帰属します。市ホームページは、著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転載、販売、貸与することはできません。また、市ホームページの内容の全部または一部について、無断で改変することもできません。",
+    "target": "page"
+  },
+  "/sources/azumino-yosansho-r2/38962.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.azumino.nagano.jp/soshiki/9/59678.html",
+    "license": "市ホームページに掲載している個々の情報（文章、画像、イラストなど）に関する諸権利は、原則として安曇野市に帰属します。市ホームページは、著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転載、販売、貸与することはできません。また、市ホームページの内容の全部または一部について、無断で改変することもできません。",
+    "target": "page"
+  },
+  "/sources/tsuyama-yosansho-r8/令和８年度津山市当初予算書（両面）.pdf": {
+    "mode": "origin",
+    "href": "https://prdurbanostymapp1.blob.core.windows.net/common-article/65b38e0f5677ea07dd03acaa/%E4%BB%A4%E5%92%8C%EF%BC%98%E5%B9%B4%E5%BA%A6%E6%B4%A5%E5%B1%B1%E5%B8%82%E5%BD%93%E5%88%9D%E4%BA%88%E7%AE%97%E6%9B%B8%EF%BC%88%E4%B8%A1%E9%9D%A2%EF%BC%89.pdf",
+    "license": "・津山市公式ホームページに掲載している内容(文章、写真、図、イラストなど)に関する著作権は、原則として津山市、または文章、画像などの提供者に帰属します。・津山市公式ホームページの内容について「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、各ページに特段の定めがある場合には、その取り扱いが優先されます。・使用許諾は、各ページ内に記載された問い合わせ先に事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/tsuyama-yosansho-r7/令和7年度津山市予算書（両面）.pdf": {
+    "mode": "origin",
+    "href": "https://prdurbanostymapp1.blob.core.windows.net/common-article/65b38e0f5677ea07dd03acaa/%E4%BB%A4%E5%92%8C7%E5%B9%B4%E5%BA%A6%E6%B4%A5%E5%B1%B1%E5%B8%82%E4%BA%88%E7%AE%97%E6%9B%B8%EF%BC%88%E4%B8%A1%E9%9D%A2%EF%BC%89.pdf",
+    "license": "・津山市公式ホームページに掲載している内容(文章、写真、図、イラストなど)に関する著作権は、原則として津山市、または文章、画像などの提供者に帰属します。・津山市公式ホームページの内容について「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、各ページに特段の定めがある場合には、その取り扱いが優先されます。・使用許諾は、各ページ内に記載された問い合わせ先に事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/tsuyama-yosansho-r6/202402211551200177506.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsuyama.lg.jp/common/photo/free/files/4334/202402211551200177506.pdf",
+    "license": "・津山市公式ホームページに掲載している内容(文章、写真、図、イラストなど)に関する著作権は、原則として津山市、または文章、画像などの提供者に帰属します。・津山市公式ホームページの内容について「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、各ページに特段の定めがある場合には、その取り扱いが優先されます。・使用許諾は、各ページ内に記載された問い合わせ先に事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/tsuyama-yosansho-r5/202302201409200176772.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsuyama.lg.jp/common/photo/free/files/4334/202302201409200176772.pdf",
+    "license": "・津山市公式ホームページに掲載している内容(文章、写真、図、イラストなど)に関する著作権は、原則として津山市、または文章、画像などの提供者に帰属します。・津山市公式ホームページの内容について「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、各ページに特段の定めがある場合には、その取り扱いが優先されます。・使用許諾は、各ページ内に記載された問い合わせ先に事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/tsuyama-yosansho-r4/R0400.yosansho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsuyama.lg.jp/common/photo/free/files/4334/R0400.yosansho.pdf",
+    "license": "・津山市公式ホームページに掲載している内容(文章、写真、図、イラストなど)に関する著作権は、原則として津山市、または文章、画像などの提供者に帰属します。・津山市公式ホームページの内容について「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、各ページに特段の定めがある場合には、その取り扱いが優先されます。・使用許諾は、各ページ内に記載された問い合わせ先に事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/tsuyama-yosansho-r3/202102221132430985337.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsuyama.lg.jp/common/photo/free/files/4334/202102221132430985337.pdf",
+    "license": "・津山市公式ホームページに掲載している内容(文章、写真、図、イラストなど)に関する著作権は、原則として津山市、または文章、画像などの提供者に帰属します。・津山市公式ホームページの内容について「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、各ページに特段の定めがある場合には、その取り扱いが優先されます。・使用許諾は、各ページ内に記載された問い合わせ先に事前にご相談ください。",
+    "target": "file"
+  },
+  "/sources/tsuyama-yosansho-r2/202007130848060897676.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tsuyama.lg.jp/common/photo/free/files/4334/202007130848060897676.pdf",
+    "license": "・津山市公式ホームページに掲載している内容(文章、写真、図、イラストなど)に関する著作権は、原則として津山市、または文章、画像などの提供者に帰属します。・津山市公式ホームページの内容について「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、各ページに特段の定めがある場合には、その取り扱いが優先されます。・使用許諾は、各ページ内に記載された問い合わせ先に事前にご相談ください。",
+    "target": "file"
   }
 };
