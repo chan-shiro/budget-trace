@@ -43,6 +43,17 @@ export interface Council {
   sourceTitle: string;
   roster: CouncilEvidence;
   result: CouncilEvidence;
+  /**
+   * 当初予算の議決での賛否（甲府以外・原典で公表している議会だけ）。basis は原典の賛否表の列の単位
+   * （member＝議員ごと、faction＝会派ごと。会派単位の表は会派の全員を同じ賛否として数える）
+   */
+  votes?: {
+    basis: "member" | "faction";
+    stances: string[];
+    tally: Record<string, number>;
+    byFaction: { faction: string; counts: Record<string, number>; members: { name: string; stance: string }[] }[];
+    source: CouncilEvidence;
+  };
   /** 参考リンク（会議録検索・議会だより）。甲府だけが持つ */
   minutesUrl: string | null;
   newsletterUrl: string | null;
@@ -1882,7 +1893,248 @@ export const MUNI_COUNCIL_YEARS: Record<string, Council[]> = {
         "archiveUrl": "https://web.archive.org/web/20260710133628/https://www.pref.yamanashi.jp/documents/124451/giketu_0323.pdf"
       },
       "minutesUrl": null,
-      "newsletterUrl": null
+      "newsletterUrl": null,
+      "votes": {
+        "basis": "member",
+        "stances": [
+          "賛成",
+          "反対",
+          "欠席",
+          "議長"
+        ],
+        "tally": {
+          "欠席": 1,
+          "賛成": 31,
+          "議長": 1,
+          "反対": 3
+        },
+        "byFaction": [
+          {
+            "faction": "自由民主党 政風やまなし",
+            "counts": {
+              "欠席": 1,
+              "賛成": 13,
+              "議長": 1
+            },
+            "members": [
+              {
+                "name": "望月勝",
+                "stance": "欠席"
+              },
+              {
+                "name": "河西敏郎",
+                "stance": "賛成"
+              },
+              {
+                "name": "山田一功",
+                "stance": "賛成"
+              },
+              {
+                "name": "水岸富美男",
+                "stance": "賛成"
+              },
+              {
+                "name": "卯月政人",
+                "stance": "賛成"
+              },
+              {
+                "name": "渡辺淳也",
+                "stance": "議長"
+              },
+              {
+                "name": "宮本秀憲",
+                "stance": "賛成"
+              },
+              {
+                "name": "大久保俊雄",
+                "stance": "賛成"
+              },
+              {
+                "name": "藤本好彦",
+                "stance": "賛成"
+              },
+              {
+                "name": "向山憲稔",
+                "stance": "賛成"
+              },
+              {
+                "name": "飯島力男",
+                "stance": "賛成"
+              },
+              {
+                "name": "久嶋成美",
+                "stance": "賛成"
+              },
+              {
+                "name": "石原政信",
+                "stance": "賛成"
+              },
+              {
+                "name": "中村正仁",
+                "stance": "賛成"
+              },
+              {
+                "name": "寺田義彦",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "自由民主党新緑の会",
+            "counts": {
+              "賛成": 8
+            },
+            "members": [
+              {
+                "name": "流石恭史",
+                "stance": "賛成"
+              },
+              {
+                "name": "臼井友基",
+                "stance": "賛成"
+              },
+              {
+                "name": "桐原正仁",
+                "stance": "賛成"
+              },
+              {
+                "name": "長澤健",
+                "stance": "賛成"
+              },
+              {
+                "name": "小沢栄一",
+                "stance": "賛成"
+              },
+              {
+                "name": "伊藤毅",
+                "stance": "賛成"
+              },
+              {
+                "name": "望月大輔",
+                "stance": "賛成"
+              },
+              {
+                "name": "渡辺大喜",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "未来やまなし",
+            "counts": {
+              "賛成": 4
+            },
+            "members": [
+              {
+                "name": "土橋亨",
+                "stance": "賛成"
+              },
+              {
+                "name": "清水喜美男",
+                "stance": "賛成"
+              },
+              {
+                "name": "古屋雅夫",
+                "stance": "賛成"
+              },
+              {
+                "name": "笠井辰生",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "自由民主党・開の国",
+            "counts": {
+              "賛成": 3
+            },
+            "members": [
+              {
+                "name": "浅川力三",
+                "stance": "賛成"
+              },
+              {
+                "name": "白壁賢一",
+                "stance": "賛成"
+              },
+              {
+                "name": "久保田松幸",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "日本共産党",
+            "counts": {
+              "反対": 2
+            },
+            "members": [
+              {
+                "name": "名取泰",
+                "stance": "反対"
+              },
+              {
+                "name": "菅野幹子",
+                "stance": "反対"
+              }
+            ]
+          },
+          {
+            "faction": "公明党",
+            "counts": {
+              "賛成": 1
+            },
+            "members": [
+              {
+                "name": "佐野弘仁",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "リベラル山梨",
+            "counts": {
+              "反対": 1
+            },
+            "members": [
+              {
+                "name": "飯島修",
+                "stance": "反対"
+              }
+            ]
+          },
+          {
+            "faction": "やまなし県民会議",
+            "counts": {
+              "賛成": 1
+            },
+            "members": [
+              {
+                "name": "志村直毅",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "えがお夢",
+            "counts": {
+              "賛成": 1
+            },
+            "members": [
+              {
+                "name": "福井太一",
+                "stance": "賛成"
+              }
+            ]
+          }
+        ],
+        "source": {
+          "title": "議案に対する賛否一覧（令和8年3月23日分）",
+          "localUrl": "/sources/yamanashi-ken-gikai-r8/sanpiichiran_0323.pdf",
+          "originUrl": "https://www.pref.yamanashi.jp/documents/124451/sanpiichiran_0323.pdf",
+          "archiveUrl": "https://web.archive.org/web/20260710133448/https://www.pref.yamanashi.jp/documents/124451/sanpiichiran_0323.pdf"
+        }
+      }
     }
   ],
   "192082": [

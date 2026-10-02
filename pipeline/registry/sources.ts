@@ -23774,6 +23774,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "やまなし県民会議", declared: "やまなし県民会議（1）", members: ["志村直毅"] },
         { name: "えがお夢", declared: "えがお夢（1）", members: ["福井太一"] },
       ],
+      votes: {"url": "https://www.pref.yamanashi.jp/documents/124451/sanpiichiran_0323.pdf", "title": "議案に対する賛否一覧（令和8年3月23日分）", "basis": "member", "legend": {"○": "賛成", "×": "反対", "議": "議長", "欠": "欠席", "除": "除斥", "ー": "不参加"}, "legendText": "「○」は賛成、「×」は反対、「議」は議長、「欠」は欠席、「除」は除斥、「ー」は議場に不在を表す。", "anchor": "第27号令和8年度山梨県一般会計予算", "symbols": "欠○○○○議○○○○○○○○○○○○○○○○○○○○○○○○××○×○○", "columns": [{"label": "望月勝"}, {"label": "河西敏郎"}, {"label": "山田一功"}, {"label": "水岸富美男"}, {"label": "卯月政人"}, {"label": "渡辺淳也"}, {"label": "宮本秀憲"}, {"label": "大久保俊雄"}, {"label": "藤本好彦"}, {"label": "向山憲稔"}, {"label": "飯島力男"}, {"label": "久嶋成美"}, {"label": "石原政信"}, {"label": "中村正仁"}, {"label": "寺田義彦"}, {"label": "流石恭史"}, {"label": "臼井友基"}, {"label": "桐原正仁"}, {"label": "長澤健"}, {"label": "小沢栄一"}, {"label": "伊藤毅"}, {"label": "望月大輔"}, {"label": "渡辺大喜"}, {"label": "土橋亨"}, {"label": "清水喜美男"}, {"label": "古屋雅夫"}, {"label": "笠井辰生"}, {"label": "浅川力三"}, {"label": "白壁賢一"}, {"label": "久保田松幸"}, {"label": "名取泰"}, {"label": "菅野幹子"}, {"label": "佐野弘仁"}, {"label": "飯島修"}, {"label": "志村直毅"}, {"label": "福井太一"}], "tally": {"text": "第27号令和8年度山梨県一般会計予算3/233534313可決", "counts": {"賛成": 31, "反対": 3}}},
       resolution: {
         url: "https://www.pref.yamanashi.jp/documents/124451/giketu_0323.pdf",
         title: "令和8年2月定例会 議決結果（3月23日）",

@@ -819,7 +819,12 @@ export default function BudgetTraceView({ v }: { v: any }) {
                         {v.council.factions.map((cp: any, i: number) => (
                           <div key={i} data-mq="council" style={S("display:grid; grid-template-columns:14px minmax(140px,1fr) 70px; align-items:center; gap:10px; padding:7px 4px; border-bottom:1px solid #ECF2F6; font-size:13px;")}>
                             <span style={S(`width:10px; height:10px; border-radius:3px; background:${cp.sw};`)}></span>
-                            <span style={S("font-weight:600;")}>{cp.name}</span>
+                            <span style={S("font-weight:600; display:flex; align-items:center; gap:8px; flex-wrap:wrap;")}>
+                              {cp.name}
+                              {cp.stanceLabel && (
+                                <span style={S(`font-size:11px; font-weight:600; border-radius:999px; padding:1px 8px; white-space:nowrap; ${cp.stanceTone === "yes" ? "background:#E3F4FC; color:#0F76A3;" : cp.stanceTone === "no" ? "background:#FDECEA; color:#B3261E;" : "background:#F1F6F9; color:#5C6B77;"}`)}>{cp.stanceLabel}</span>
+                              )}
+                            </span>
                             <span style={S("font-family:'IBM Plex Mono',monospace; text-align:right;")}>{cp.seatsLabel}</span>
                           </div>
                         ))}
@@ -832,11 +837,15 @@ export default function BudgetTraceView({ v }: { v: any }) {
                           <span style={S("font-size:12px; color:#5C6B77;")}>{v.council.resolution.sessionLabel}（{v.council.resolution.decidedDateLabel}）</span>
                         </div>
                         <div style={S("font-size:13px; font-weight:600; color:#14181C; line-height:1.6;")}>{v.council.resolution.billNo}　{v.council.resolution.billName}</div>
+                        {v.council.voteTally && (
+                          <div style={S("margin-top:10px; font-size:12.5px; color:#14181C;")}>賛否 <span style={S("font-family:'IBM Plex Mono',monospace;")}>{v.council.voteTally}</span></div>
+                        )}
                         <p style={S("margin:10px 0 0; font-size:11px; color:#8494A0; line-height:1.7;")}>{v.council.voteNote}</p>
                       </div>
                       <div style={S("display:flex; gap:6px; flex-wrap:wrap; font-size:11.5px;")}>
                         <HoverBox as="button" onClick={v.council.rosterOpen} style={S("border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; border-radius:999px; padding:3px 11px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif; font-size:11.5px;")} hoverStyle={S("border-color:#1798D0; color:#1798D0;")}>出典：{v.council.rosterTitle}（{v.council.rosterAction}）</HoverBox>
                         <HoverBox as="button" onClick={v.council.resultOpen} style={S("border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; border-radius:999px; padding:3px 11px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif; font-size:11.5px;")} hoverStyle={S("border-color:#1798D0; color:#1798D0;")}>出典：{v.council.resultTitle}（{v.council.resultAction}）</HoverBox>
+                        {v.council.voteOpen && <HoverBox as="button" onClick={v.council.voteOpen} style={S("border:1px solid #C6D2DA; background:#FFFFFF; color:#5C6B77; border-radius:999px; padding:3px 11px; cursor:pointer; font-family:'IBM Plex Sans JP',sans-serif; font-size:11.5px;")} hoverStyle={S("border-color:#1798D0; color:#1798D0;")}>出典：{v.council.voteSourceTitle}（{v.council.voteAction}）</HoverBox>}
                         {v.council.newsletterUrl && <a href={v.council.newsletterUrl} target="_blank" rel="noopener noreferrer" style={S("border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:3px 11px; text-decoration:none;")}>議会だより ↗</a>}
                         {v.council.minutesUrl && <a href={v.council.minutesUrl} target="_blank" rel="noopener noreferrer" style={S("border:1px solid #C6D2DA; color:#5C6B77; border-radius:999px; padding:3px 11px; text-decoration:none;")}>会議録検索 ↗</a>}
                       </div>

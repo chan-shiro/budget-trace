@@ -24,7 +24,7 @@ import { z } from "zod";
 import { readRawMeta } from "../lib/store";
 import type { CouncilCompositionDoc, CouncilFactionFact, SourceEntry } from "../types";
 
-export const PARSER_VERSION = "0.5.5";
+export const PARSER_VERSION = "0.6.0";
 
 const factionSchema = z
   .object({
@@ -130,6 +130,36 @@ const optionsSchema = z.object({
     linkedFrom: z.object({ url: z.string().url(), text: z.string().min(1) }).optional(),
   }),
   factions: z.array(factionSchema).min(1),
+  /**
+   * 当初予算の議決の賛否（0.6.0）。賛否表の**列見出しの並び**（columns）と、予算の行の**記号の並び**（symbols）を書き写す。
+   * パーサが確かめること:
+   * - 凡例の原文（legendText）が原典にあること。symbols の各字が legend にあること
+   * - 予算の行の記号: anchor（行の頭の原文）の直後 maxGap 字以内で始まる、凡例の字だけの連なりが symbols と完全に一致すること
+   *   （HTML の表なら table: "row"/"column" で、anchor を含むセルと同じ行／列の、凡例の字だけのセルの並び）
+   * - 列見出し（columns の label）が原典にその順で出ること
+   * - basis "member": 列の議員が名簿の全員とちょうど対応すること／"faction": 全会派を列が覆うこと
+   * - tally（印字された賛成・反対などの数）があれば、記号から数えた数と一致すること
+   */
+  votes: z
+    .object({
+      url: z.string().url(),
+      title: z.string().min(1),
+      basis: z.enum(["member", "faction"]),
+      legend: z.record(z.string().min(1), z.enum(["賛成", "反対", "欠席", "退席", "棄権", "除斥", "議長", "不参加"])),
+      legendText: z.string().min(1),
+      anchor: z.string().min(1),
+      maxGap: z.number().int().nonnegative().max(80).optional(),
+      table: z.enum(["row", "column"]).optional(),
+      symbols: z.string().min(1),
+      /** 列見出し。member: label＝議員名（名簿の表記）。faction: label＝原典の会派の表記、faction＝registry の会派名 */
+      columns: z.array(z.object({ label: z.string().min(1), faction: z.string().optional(), member: z.string().optional() })).min(1),
+      /** 列見出しが賛否表と別の原典にあるとき（無ければ url） */
+      headerUrl: z.string().url().optional(),
+      tally: z
+        .object({ text: z.string().min(1), counts: z.record(z.string(), z.number().int().nonnegative()) })
+        .optional(),
+    })
+    .optional(),
   /** label 方式の窓（字数・既定20） */
   labelWindow: z.number().int().positive().max(60).optional(),
   /**
@@ -694,6 +724,103 @@ export function parseCouncilTranscribed(
     missing.push(`名簿の基準日 ${opt.asOf} が議決日 ${r.decidedDate} より後（議決時点の名簿ではない）`);
   }
 
+  // ---- 賛否（0.6.0） ----
+  type VoteCol = { label: string; faction: string; member?: string; stance: "賛成" | "反対" | "欠席" | "退席" | "棄権" | "除斥" | "議長" | "不参加" };
+  let votesOut: { basis: "member" | "faction"; sourceTitle: string; sourceFile: string; columns: VoteCol[] } | undefined;
+  if (opt.votes) {
+    const vo = opt.votes;
+    const vf = fileFor(vo.url);
+    const vdoc = readDoc(vf);
+    if (!has(vdoc.views, vo.legendText)) missing.push(`${vf.filename}: 凡例の原文「${vo.legendText}」が見つかりません`);
+    const legend = new Map(Object.entries(vo.legend).map(([k, v]) => [norm(k), v] as const));
+    const symN = [...norm(vo.symbols)];
+    for (const c of symN) if (!legend.has(c)) missing.push(`symbols の字「${c}」が legend にありません`);
+    if (symN.length !== vo.columns.length) missing.push(`symbols は ${symN.length}字、列見出しは ${vo.columns.length}列`);
+    // 予算の行の記号
+    const anchorN = norm(vo.anchor);
+    const legendChars = [...legend.keys()];
+    let rowOk = false;
+    if (vo.table) {
+      if (isPdf(vf)) throw new Error(`${source.id}: votes.table は HTML の賛否表にだけ使えます`);
+      for (const t of htmlTables(readHtml(vf.path))) {
+        t.forEach((row, ri) =>
+          row.forEach((cell, ci) => {
+            if (!cell.includes(anchorN)) return;
+            const line = vo.table === "row" ? row.slice(ci + 1) : t.slice(ri + 1).map((rw) => rw[ci] ?? "");
+            const seq = line.filter((c) => c.length > 0 && [...c].every((ch) => legend.has(ch))).join("");
+            if (seq === symN.join("")) rowOk = true;
+          }),
+        );
+      }
+    } else {
+      const gap = vo.maxGap ?? 40;
+      for (const v of vdoc.views) {
+        for (let i = v.text.indexOf(anchorN); i >= 0 && !rowOk; i = v.text.indexOf(anchorN, i + 1)) {
+          const rest = v.text.slice(i + anchorN.length);
+          let st = 0;
+          while (st < rest.length && st <= gap && !legendChars.includes(rest[st]!)) st++;
+          if (st > gap) continue;
+          let en = st;
+          while (en < rest.length && legendChars.includes(rest[en]!)) en++;
+          if (rest.slice(st, en) === symN.join("")) rowOk = true;
+        }
+      }
+    }
+    if (!rowOk) missing.push(`${vf.filename}: 予算の行（「${vo.anchor}」の${vo.table ? `同じ${vo.table === "row" ? "行" : "列"}` : "直後"}）の記号の並びが symbols と一致しません`);
+    // 列見出しが原典にその順で出ること
+    const hviews = vo.headerUrl ? readDoc(fileFor(vo.headerUrl)).views : vdoc.views;
+    const labelsN = vo.columns.map((c) => norm(c.label));
+    const inOrder = hviews.some((v) => {
+      let pos = 0;
+      for (const l of labelsN) {
+        const k = v.text.indexOf(l, pos);
+        if (k < 0) return false;
+        pos = k + l.length;
+      }
+      return true;
+    });
+    if (!inOrder) missing.push(`${vo.headerUrl ?? vf.filename}: 列見出しが原典にその順で出ません`);
+    // 列 → 会派・議員
+    const memberFaction = new Map<string, { display: string; raw: string }>();
+    opt.factions.forEach((f, i) => f.members.forEach((m) => memberFaction.set(norm(m), { display: factions[i]!.name, raw: m })));
+    const cols: VoteCol[] = [];
+    vo.columns.forEach((c, i) => {
+      const stance = legend.get(symN[i] ?? "") ?? "不参加";
+      if (vo.basis === "member") {
+        const key = norm(c.member ?? c.label);
+        const mf = memberFaction.get(key);
+        if (!mf) missing.push(`賛否の列「${c.label}」が名簿の議員にいません`);
+        else cols.push({ label: c.label, faction: mf.display, member: mf.raw, stance });
+      } else {
+        const fname = c.faction ?? c.label;
+        const fi = opt.factions.findIndex((f, j) => f.name === fname || factions[j]!.name === fname || (f.independent && c.member != null && f.members.some((m) => norm(m) === norm(c.member!))));
+        if (fi < 0) missing.push(`賛否の列「${c.label}」の会派「${fname}」が registry にありません`);
+        else cols.push({ label: c.label, faction: factions[fi]!.name, ...(c.member ? { member: c.member } : {}), stance });
+      }
+    });
+    if (vo.basis === "member") {
+      const seen = new Set(cols.map((c) => norm(c.member!)));
+      if (seen.size !== cols.length) missing.push(`賛否の列に同じ議員が重複しています`);
+      const lacking = [...memberFaction.keys()].filter((m) => !seen.has(m));
+      if (lacking.length) missing.push(`賛否の列に名簿の議員がいません: ${lacking.slice(0, 5).join("・")}`);
+    } else {
+      const covered = new Set(cols.map((c) => c.faction));
+      const lacking = factions.filter((f) => !covered.has(f.name)).map((f) => f.name);
+      if (lacking.length) missing.push(`賛否の列が覆っていない会派: ${lacking.join("・")}`);
+    }
+    if (vo.tally) {
+      if (!has(vdoc.views, vo.tally.text)) missing.push(`${vf.filename}: 賛否の数の原文「${vo.tally.text}」が見つかりません`);
+      const cnt = (st: string) =>
+        vo.basis === "member"
+          ? cols.filter((c) => c.stance === st).length
+          : cols.filter((c) => c.stance === st).reduce((a, c) => a + (c.member ? 1 : (factions.find((f) => f.name === c.faction)?.seats ?? 0)), 0);
+      for (const [st, n] of Object.entries(vo.tally.counts)) {
+        if (cnt(st) !== n) missing.push(`賛否の数: ${st} は記号から ${cnt(st)}、原典の印字は ${n}`);
+      }
+    }
+    votesOut = { basis: vo.basis, sourceTitle: vo.title, sourceFile: vf.filename, columns: cols };
+  }
+
   if (missing.length) throw new Error(`${source.id}: 書き写しが原典と合いません\n  - ${missing.join("\n  - ")}`);
 
   // 議案番号が補助の原典にしか無い原典（北杜）でも、結果を照合した主の原典の件名の位置をページにする
@@ -720,6 +847,7 @@ export function parseCouncilTranscribed(
       result: r.result,
       locator: { file: resultFile.filename, ...(billPage != null ? { page: billPage } : {}) },
     },
+    ...(votesOut ? { votes: votesOut } : {}),
     rosterTitle: opt.roster.title,
     resultTitle: opt.resolution.title,
   };
