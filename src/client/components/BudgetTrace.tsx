@@ -1263,7 +1263,7 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
             : shownCouncil.votes
               ? shownCouncil.votes.basis === "member"
                 ? "議員ごとの賛否（議決当日の賛否表）。"
-                : "会派ごとの賛否（議決当日の賛否表）。会派の全員を同じ賛否として数えています。"
+                : "会派ごとの賛否（議決当日の賛否表）。会派の列は、その会派の議員（議長などを除く）を同じ賛否として数えています。"
               : "会派・議員ごとの賛否は未収録です。",
           // 賛否の集計（甲府以外で原典が公表している議会だけ）。賛成・反対を先に、欠席・議長などは括弧で
           voteTally: shownCouncil.votes

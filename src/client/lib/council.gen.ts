@@ -9285,11 +9285,11 @@ export const MUNI_COUNCIL_YEARS: Record<string, Council[]> = {
         "stances": [
           "賛成",
           "反対",
-          "不参加"
+          "議長"
         ],
         "tally": {
           "賛成": 39,
-          "不参加": 1,
+          "議長": 1,
           "反対": 3
         },
         "byFaction": [
@@ -9297,7 +9297,7 @@ export const MUNI_COUNCIL_YEARS: Record<string, Council[]> = {
             "faction": "くらしき創生クラブ",
             "counts": {
               "賛成": 9,
-              "不参加": 1
+              "議長": 1
             },
             "members": [
               {
@@ -9306,7 +9306,7 @@ export const MUNI_COUNCIL_YEARS: Record<string, Council[]> = {
               },
               {
                 "name": "荒木竜二",
-                "stance": "不参加"
+                "stance": "議長"
               },
               {
                 "name": "伊東裕紀",

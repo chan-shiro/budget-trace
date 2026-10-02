@@ -24,7 +24,7 @@ import { z } from "zod";
 import { readRawMeta } from "../lib/store";
 import type { CouncilCompositionDoc, CouncilFactionFact, SourceEntry } from "../types";
 
-export const PARSER_VERSION = "0.6.6";
+export const PARSER_VERSION = "0.6.7";
 
 const factionSchema = z
   .object({
@@ -188,6 +188,11 @@ const optionsSchema = z.object({
             evidence: z.string().min(1),
             /** evidence を探す原典（urls の中）。無ければ賛否表と名簿 */
             evidenceUrl: z.string().url().optional(),
+            /**
+             * stance「議長」で evidence に「議長」の語が無いとき（歴代議長の一覧の行「第85代 髙林修 令和7年5月～」）、
+             * その原典の見出しの原文（「歴代議長」等・「議長」を含むこと）。同じ原典にあることを確かめる
+             */
+            evidenceHeading: z.string().optional(),
           }),
         )
         .optional(),
@@ -987,6 +992,24 @@ export function parseCouncilTranscribed(
       if (!has(evViews, b.evidence)) missing.push(`記号の無い列「${b.label}」の原文「${b.evidence}」が${b.evidenceUrl ? "指定の原典" : "賛否表にも名簿にも"}ありません`);
       // 誰が記号の無い列なのかを原典で特定するため、原文は氏名を含むこと（「議長は採決に加わりません」だけでは誰か分からない）
       if (!norm(b.evidence).includes(norm(b.label))) missing.push(`記号の無い列の原文「${b.evidence}」に氏名「${b.label}」が含まれません`);
+      // 議長として外すなら、原文が議長であることを言っていること（氏名だけだと別の議員にすり替えても通る＝レビューで7団体実測）
+      if (b.stance === "議長" && !norm(b.evidence).includes("議長")) {
+        if (!b.evidenceHeading || !norm(b.evidenceHeading).includes("議長")) {
+          missing.push(`議長の原文「${b.evidence}」に「議長」の語がありません — 歴代議長の一覧なら evidenceHeading に見出しの原文を`);
+        } else {
+          // 見出しの後ろに原文があり、その間に「副議長」の語を挟まないこと（正副議長の一覧で副議長の欄を取らない）
+          const hN = norm(b.evidenceHeading);
+          const eN = norm(b.evidence);
+          const ok = evViews.some((v) => {
+            for (let h = v.text.indexOf(hN); h >= 0; h = v.text.indexOf(hN, h + 1)) {
+              const e = v.text.indexOf(eN, h + hN.length);
+              if (e >= 0 && !v.text.slice(h + hN.length, e).includes("副議長")) return true;
+            }
+            return false;
+          });
+          if (!ok) missing.push(`議長の原文「${b.evidence}」が見出し「${b.evidenceHeading}」の下（副議長の欄より前）にありません`);
+        }
+      }
       if (mf) cols.push({ label: b.label, faction: mf.display, member: mf.raw, stance: b.stance });
     }
     // 議員の列は1人1回まで
