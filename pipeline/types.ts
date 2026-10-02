@@ -622,7 +622,7 @@ export const councilCompositionDocSchema = z.object({
           label: z.string(),
           faction: z.string(),
           member: z.string().optional(),
-          stance: z.enum(["賛成", "反対", "欠席", "退席", "棄権", "除斥", "議長", "不参加"]),
+          stance: z.enum(["賛成", "反対", "賛成でない", "欠席", "退席", "棄権", "除斥", "議長", "不参加"]),
         }),
       ),
     })

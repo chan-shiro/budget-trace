@@ -994,13 +994,14 @@ export const KOFU_EVALUATION_YEARS: KofuEvaluationYear[] = ${JSON.stringify(eval
         ? (() => {
             const vt = doc.votes!;
             const vurl = (src.parserOptions as { votes: { url: string } }).votes.url;
-            const STANCES = ["賛成", "反対", "欠席", "退席", "棄権", "除斥", "議長", "不参加"] as const;
+            const STANCES = ["賛成", "反対", "賛成でない", "欠席", "退席", "棄権", "除斥", "議長", "不参加"] as const;
             const byFaction = doc.factions.map((f) => {
               const cols = vt.columns.filter((c) => c.faction === f.name);
               const counts: Record<string, number> = {};
               const members: { name: string; stance: string }[] = [];
               for (const c of cols) {
-                const n = vt.basis === "member" || c.member ? 1 : f.seats;
+                // 会派の列は「議席 − その会派で自分の列（議長・無所属など）を持つ議員」（パーサの集計と同じ）
+                const n = vt.basis === "member" || c.member ? 1 : f.seats - vt.columns.filter((o) => o.faction === f.name && o.member).length;
                 counts[c.stance] = (counts[c.stance] ?? 0) + n;
                 if (c.member) members.push({ name: c.member, stance: c.stance });
               }

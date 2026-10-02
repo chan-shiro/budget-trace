@@ -46,7 +46,7 @@ for (const sp of specs) {
     if (doc.votes) {
       const t: Record<string, number> = {};
       for (const c of doc.votes.columns) {
-        const n = doc.votes.basis === "member" || c.member ? 1 : (doc.factions.find((f) => f.name === c.faction)?.seats ?? 0);
+        const n = doc.votes.basis === "member" || c.member ? 1 : (doc.factions.find((f) => f.name === c.faction)?.seats ?? 0) - doc.votes.columns.filter((o) => o.faction === c.faction && o.member).length;
         t[c.stance] = (t[c.stance] ?? 0) + n;
       }
       console.log(`    賛否（${doc.votes.basis === "member" ? "議員ごと" : "会派ごと"}・${doc.votes.columns.length}列）: ${Object.entries(t).map(([k, n]) => `${k}${n}`).join("・")}`);

@@ -1269,8 +1269,8 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
           voteTally: shownCouncil.votes
             ? (() => {
                 const t = shownCouncil.votes.tally;
-                const main = ["賛成", "反対"].filter((k) => t[k]).map((k) => `${k}${t[k]}`).join("・");
-                const rest = shownCouncil.votes.stances.filter((k) => k !== "賛成" && k !== "反対").map((k) => `${k}${t[k]}`).join("・");
+                const main = ["賛成", "反対", "賛成でない"].filter((k) => t[k]).map((k) => `${k}${t[k]}`).join("・");
+                const rest = shownCouncil.votes.stances.filter((k) => !["賛成", "反対", "賛成でない"].includes(k)).map((k) => `${k}${t[k]}`).join("・");
                 return rest ? `${main}（${rest}）` : main;
               })()
             : null,
@@ -1292,8 +1292,8 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
             const pct = ((f.seats / shownCouncil.seats) * 100).toFixed(1);
             // 会派の賛否: 1つだけなら「賛成」「反対」、割れていれば「賛成3・反対1」（欠席・議長などは数に入れず括弧で）
             const vc = shownCouncil.votes?.byFaction.find((b) => b.faction === f.name)?.counts;
-            const yn = vc ? ["賛成", "反対"].filter((k) => vc[k]) : [];
-            const other = vc ? Object.keys(vc).filter((k) => k !== "賛成" && k !== "反対") : [];
+            const yn = vc ? ["賛成", "反対", "賛成でない"].filter((k) => vc[k]) : [];
+            const other = vc ? Object.keys(vc).filter((k) => !["賛成", "反対", "賛成でない"].includes(k)) : [];
             const stanceLabel = !vc
               ? null
               : (yn.length === 1 ? yn[0]! : yn.map((k) => `${k}${vc[k]}`).join("・")) +
