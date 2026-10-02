@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "asahikawa-shigikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:51:55.501Z",
+  "parserVersion": "0.6.6",
+  "parsedAt": "2026-10-02T11:33:38.156Z",
   "fiscalYear": "R8",
   "body": "旭川市議会",
   "seats": 34,
@@ -134,5 +134,216 @@
     }
   },
   "rosterTitle": "会派等別名簿（最終更新日 2025年10月23日）",
-  "resultTitle": "令和8年第1回定例会議決結果"
+  "resultTitle": "令和8年第1回定例会議決結果",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "令和8年第1回定例会賛否/議案第14号",
+    "sourceFile": "d083728.html",
+    "columns": [
+      {
+        "label": "いしかわまさき",
+        "faction": "自民党・市民会議",
+        "member": "いしかわまさき",
+        "stance": "賛成"
+      },
+      {
+        "label": "笠井まなみ",
+        "faction": "自民党・市民会議",
+        "member": "笠井まなみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "あべなお",
+        "faction": "自民党・市民会議",
+        "member": "あべなお",
+        "stance": "賛成"
+      },
+      {
+        "label": "たけいしよういち",
+        "faction": "自民党・市民会議",
+        "member": "たけいしよういち",
+        "stance": "賛成"
+      },
+      {
+        "label": "石川まさゆき",
+        "faction": "自民党・市民会議",
+        "member": "石川まさゆき",
+        "stance": "賛成"
+      },
+      {
+        "label": "沼﨑雅之",
+        "faction": "自民党・市民会議",
+        "member": "沼﨑雅之",
+        "stance": "賛成"
+      },
+      {
+        "label": "えびな安信",
+        "faction": "自民党・市民会議",
+        "member": "えびな安信",
+        "stance": "賛成"
+      },
+      {
+        "label": "高橋ひでとし",
+        "faction": "自民党・市民会議",
+        "member": "高橋ひでとし",
+        "stance": "賛成"
+      },
+      {
+        "label": "菅原範明",
+        "faction": "自民党・市民会議",
+        "member": "菅原範明",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐藤さだお",
+        "faction": "自民党・市民会議",
+        "member": "佐藤さだお",
+        "stance": "欠席"
+      },
+      {
+        "label": "松田卓也",
+        "faction": "自民党・市民会議",
+        "member": "松田卓也",
+        "stance": "賛成"
+      },
+      {
+        "label": "福居秀雄",
+        "faction": "自民党・市民会議",
+        "member": "福居秀雄",
+        "stance": "議長"
+      },
+      {
+        "label": "杉山允孝",
+        "faction": "自民党・市民会議",
+        "member": "杉山允孝",
+        "stance": "賛成"
+      },
+      {
+        "label": "江川あや",
+        "faction": "民主・市民連合",
+        "member": "江川あや",
+        "stance": "賛成"
+      },
+      {
+        "label": "上野和幸",
+        "faction": "民主・市民連合",
+        "member": "上野和幸",
+        "stance": "賛成"
+      },
+      {
+        "label": "髙橋紀博",
+        "faction": "民主・市民連合",
+        "member": "髙橋紀博",
+        "stance": "賛成"
+      },
+      {
+        "label": "品田ときえ",
+        "faction": "民主・市民連合",
+        "member": "品田ときえ",
+        "stance": "賛成"
+      },
+      {
+        "label": "高見一典",
+        "faction": "民主・市民連合",
+        "member": "高見一典",
+        "stance": "賛成"
+      },
+      {
+        "label": "金谷美奈子",
+        "faction": "民主・市民連合",
+        "member": "金谷美奈子",
+        "stance": "賛成"
+      },
+      {
+        "label": "駒木おさみ",
+        "faction": "公明党",
+        "member": "駒木おさみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "皆川ゆきたけ",
+        "faction": "公明党",
+        "member": "皆川ゆきたけ",
+        "stance": "賛成"
+      },
+      {
+        "label": "中野ひろゆき",
+        "faction": "公明党",
+        "member": "中野ひろゆき",
+        "stance": "賛成"
+      },
+      {
+        "label": "高花えいこ",
+        "faction": "公明党",
+        "member": "高花えいこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "中村のりゆき",
+        "faction": "公明党",
+        "member": "中村のりゆき",
+        "stance": "賛成"
+      },
+      {
+        "label": "中村みなこ",
+        "faction": "日本共産党",
+        "member": "中村みなこ",
+        "stance": "反対"
+      },
+      {
+        "label": "まじま隆英",
+        "faction": "日本共産党",
+        "member": "まじま隆英",
+        "stance": "反対"
+      },
+      {
+        "label": "石川厚子",
+        "faction": "日本共産党",
+        "member": "石川厚子",
+        "stance": "反対"
+      },
+      {
+        "label": "能登谷繁",
+        "faction": "日本共産党",
+        "member": "能登谷繁",
+        "stance": "反対"
+      },
+      {
+        "label": "植木だいすけ",
+        "faction": "旭川市民連合",
+        "member": "植木だいすけ",
+        "stance": "賛成"
+      },
+      {
+        "label": "小林ゆうき",
+        "faction": "旭川市民連合",
+        "member": "小林ゆうき",
+        "stance": "賛成"
+      },
+      {
+        "label": "塩尻英明",
+        "faction": "旭川市民連合",
+        "member": "塩尻英明",
+        "stance": "賛成"
+      },
+      {
+        "label": "高木ひろたか",
+        "faction": "旭川市民連合",
+        "member": "高木ひろたか",
+        "stance": "賛成"
+      },
+      {
+        "label": "横山啓一",
+        "faction": "無所属（横山啓一）",
+        "member": "横山啓一",
+        "stance": "賛成"
+      },
+      {
+        "label": "安田佳正",
+        "faction": "無所属（安田佳正）",
+        "member": "安田佳正",
+        "stance": "賛成"
+      }
+    ]
+  }
 }

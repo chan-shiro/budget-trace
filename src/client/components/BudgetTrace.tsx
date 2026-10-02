@@ -1276,7 +1276,8 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
             : null,
           voteSourceTitle: shownCouncil.votes?.source.title ?? null,
           voteAction: shownCouncil.votes ? evAction(shownCouncil.votes.source.localUrl) : null,
-          voteOpen: shownCouncil.votes
+          // 賛否表が議決結果と同じ原典なら、出典チップを重ねて出さない（横浜）
+          voteOpen: shownCouncil.votes && shownCouncil.votes.source.localUrl !== shownCouncil.result.localUrl
             ? () =>
                 openViewer({
                   url: shownCouncil.votes!.source.localUrl, title: shownCouncil.votes!.source.title,

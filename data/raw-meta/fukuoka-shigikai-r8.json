@@ -37,6 +37,16 @@
       "transform": [
         "ext:.html"
       ]
+    },
+    {
+      "filename": "address.html",
+      "sha256": "d9431ede800576586199b246f4528c6b4499321a434513ac079c07a586b1f14a",
+      "bytes": 66055,
+      "fetchedAt": "2026-10-02T11:33:13.360Z",
+      "fetchedFrom": "https://web.archive.org/web/20260118082923id_/https://gikai.city.fukuoka.lg.jp/council/address",
+      "transform": [
+        "ext:.html"
+      ]
     }
   ]
 }

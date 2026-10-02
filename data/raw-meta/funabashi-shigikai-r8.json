@@ -7,6 +7,13 @@
       "bytes": 39718,
       "fetchedAt": "2026-10-01T16:55:24.095Z",
       "fetchedFrom": "https://www.city.funabashi.lg.jp/assembly/001/39/02/p145453.html"
+    },
+    {
+      "filename": "8-3-25.pdf",
+      "sha256": "7485f768cb3f4bf5727cbe499750055f6d1c5f56b76948d05d618ce4fce36b94",
+      "bytes": 625627,
+      "fetchedAt": "2026-10-02T11:28:34.946Z",
+      "fetchedFrom": "https://www.city.funabashi.lg.jp/assembly/001/39/02/p145453_d/fil/8-3-25.pdf"
     }
   ]
 }

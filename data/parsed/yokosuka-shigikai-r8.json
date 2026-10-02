@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "yokosuka-shigikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:51:59.471Z",
+  "parserVersion": "0.6.6",
+  "parsedAt": "2026-10-02T11:33:44.121Z",
   "fiscalYear": "R8",
   "body": "横須賀市議会",
   "seats": 38,
@@ -127,5 +127,240 @@
     }
   },
   "rosterTitle": "会派別名簿（更新日：2025年12月23日）",
-  "resultTitle": "令和８年３月定例議会 提出議案等議決結果（２）"
+  "resultTitle": "令和８年３月定例議会 提出議案等議決結果（２）",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "令和８年３月定例議会 提出議案等議決結果【議員別賛否】（２）",
+    "sourceFile": "260325giinbetusanpi.pdf",
+    "columns": [
+      {
+        "label": "南",
+        "faction": "自由民主党",
+        "member": "南まさみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "青",
+        "faction": "自由民主党",
+        "member": "青木秀介",
+        "stance": "賛成"
+      },
+      {
+        "label": "田",
+        "faction": "自由民主党",
+        "member": "田辺昭人",
+        "stance": "賛成"
+      },
+      {
+        "label": "松",
+        "faction": "自由民主党",
+        "member": "松岡和行",
+        "stance": "賛成"
+      },
+      {
+        "label": "大",
+        "faction": "自由民主党",
+        "member": "大野忠之",
+        "stance": "賛成"
+      },
+      {
+        "label": "渡",
+        "faction": "自由民主党",
+        "member": "渡辺光一",
+        "stance": "賛成"
+      },
+      {
+        "label": "西",
+        "faction": "自由民主党",
+        "member": "西郷宗範",
+        "stance": "賛成"
+      },
+      {
+        "label": "山",
+        "faction": "自由民主党",
+        "member": "山本けんじゅ",
+        "stance": "賛成"
+      },
+      {
+        "label": "大",
+        "faction": "自由民主党",
+        "member": "大貫次郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "池",
+        "faction": "自由民主党",
+        "member": "池田徳重",
+        "stance": "賛成"
+      },
+      {
+        "label": "髙",
+        "faction": "自由民主党",
+        "member": "髙橋いずみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "泉",
+        "faction": "自由民主党",
+        "member": "泉谷翔",
+        "stance": "賛成"
+      },
+      {
+        "label": "海",
+        "faction": "自由民主党",
+        "member": "海老あやの",
+        "stance": "賛成"
+      },
+      {
+        "label": "土",
+        "faction": "公明党",
+        "member": "土田弘之宣",
+        "stance": "賛成"
+      },
+      {
+        "label": "石",
+        "faction": "公明党",
+        "member": "石山満",
+        "stance": "賛成"
+      },
+      {
+        "label": "関",
+        "faction": "公明党",
+        "member": "関沢敏行",
+        "stance": "賛成"
+      },
+      {
+        "label": "本",
+        "faction": "公明党",
+        "member": "本石篤志",
+        "stance": "賛成"
+      },
+      {
+        "label": "二",
+        "faction": "公明党",
+        "member": "二見英一",
+        "stance": "賛成"
+      },
+      {
+        "label": "川",
+        "faction": "公明党",
+        "member": "川本伸",
+        "stance": "賛成"
+      },
+      {
+        "label": "菅",
+        "faction": "公明党",
+        "member": "菅原恵美子",
+        "stance": "賛成"
+      },
+      {
+        "label": "加",
+        "faction": "一市民",
+        "member": "加藤ゆうすけ",
+        "stance": "反対"
+      },
+      {
+        "label": "小",
+        "faction": "一市民",
+        "member": "小林優人",
+        "stance": "反対"
+      },
+      {
+        "label": "竹",
+        "faction": "一市民",
+        "member": "竹岡力",
+        "stance": "反対"
+      },
+      {
+        "label": "天",
+        "faction": "一市民",
+        "member": "天白牧夫",
+        "stance": "反対"
+      },
+      {
+        "label": "堀",
+        "faction": "一市民",
+        "member": "堀りょういち",
+        "stance": "反対"
+      },
+      {
+        "label": "伊",
+        "faction": "研政会",
+        "member": "伊関功滋",
+        "stance": "賛成"
+      },
+      {
+        "label": "長",
+        "faction": "研政会",
+        "member": "長谷川昇",
+        "stance": "賛成"
+      },
+      {
+        "label": "工",
+        "faction": "研政会",
+        "member": "工藤昭四郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "髙",
+        "faction": "研政会",
+        "member": "髙橋英昭",
+        "stance": "賛成"
+      },
+      {
+        "label": "大",
+        "faction": "日本共産党",
+        "member": "大村洋子",
+        "stance": "反対"
+      },
+      {
+        "label": "井",
+        "faction": "日本共産党",
+        "member": "井坂直",
+        "stance": "反対"
+      },
+      {
+        "label": "ふ",
+        "faction": "日本共産党",
+        "member": "ふじそのあき",
+        "stance": "反対"
+      },
+      {
+        "label": "中",
+        "faction": "無会派",
+        "member": "中川さおり",
+        "stance": "反対"
+      },
+      {
+        "label": "葉",
+        "faction": "無会派",
+        "member": "葉山なおし",
+        "stance": "賛成"
+      },
+      {
+        "label": "ひ",
+        "faction": "無会派",
+        "member": "ひろなか信太郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "藤",
+        "faction": "無会派",
+        "member": "藤野英明",
+        "stance": "反対"
+      },
+      {
+        "label": "安",
+        "faction": "無会派",
+        "member": "安川健人",
+        "stance": "賛成"
+      },
+      {
+        "label": "加藤眞道",
+        "faction": "自由民主党",
+        "member": "加藤眞道",
+        "stance": "議長"
+      }
+    ]
+  }
 }

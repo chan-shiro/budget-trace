@@ -49,6 +49,13 @@
       "bytes": 12544,
       "fetchedAt": "2026-10-01T15:24:43.498Z",
       "fetchedFrom": "https://www2.city.kyoto.lg.jp/shikai/shikumi/kousei.html"
+    },
+    {
+      "filename": "gicho.html",
+      "sha256": "5b926bb682d2c0be9d32004bd9058b92064d85d23cb794204a230c98b421dd05",
+      "bytes": 24683,
+      "fetchedAt": "2026-10-02T11:34:51.259Z",
+      "fetchedFrom": "https://web.archive.org/web/20260213015107id_/https://www2.city.kyoto.lg.jp/shikai/gichofukugicho/rekidai/gicho.html"
     }
   ]
 }

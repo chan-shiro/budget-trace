@@ -24,7 +24,7 @@ import { z } from "zod";
 import { readRawMeta } from "../lib/store";
 import type { CouncilCompositionDoc, CouncilFactionFact, SourceEntry } from "../types";
 
-export const PARSER_VERSION = "0.6.3";
+export const PARSER_VERSION = "0.6.6";
 
 const factionSchema = z
   .object({
@@ -196,6 +196,11 @@ const optionsSchema = z.object({
       tally: z
         .object({ text: z.string().min(1), counts: z.record(z.string(), z.number().int().nonnegative()) })
         .optional(),
+      /**
+       * 会派単位の表で議長を特定できない理由。会派単位の表は会派の議席で数えるので、議長（採決に加わらない）を
+       * blank か議長の列で外さないと、議長が会派の賛否に数えられる（京都で実測）。外せないときだけ理由を書く
+       */
+      noChairReason: z.string().min(10).optional(),
     })
     .optional(),
   /** label 方式の窓（字数・既定20） */
@@ -258,14 +263,14 @@ export type CouncilTranscribedOptions = z.infer<typeof optionsSchema>;
  * 突き合わせ用の正規化。空白を全部落とし NFKC をかけ、PDF の抽出で揺れる異体字を寄せる。
  * ⚠ **書き写す側も同じ関数を通す**ので、ここで寄せた字は registry でどちらで書いてもよい。
  */
-const VARIANTS: Record<string, string> = { 髙: "高", 﨑: "崎", 𠮷: "吉", 葊: "廣", 濵: "濱", 德: "徳", 栁: "柳", 惠: "恵" };
+const VARIANTS: Record<string, string> = { 髙: "高", 﨑: "崎", 𠮷: "吉", 葊: "廣", 濵: "濱", 德: "徳", 栁: "柳", 惠: "恵", 伹: "但" };
 function norm(s: string): string {
   return (
     s
       .normalize("NFKC")
       // 異体字セレクタ（IVS・SVS）は NFKC で消えない（名古屋「辻󠄀まさお」の U+E0100）
       .replace(/[\u{E0100}-\u{E01EF}︀-️]/gu, "")
-      .replace(/[髙﨑𠮷葊濵德栁惠]/gu, (c) => VARIANTS[c] ?? c)
+      .replace(/[髙﨑𠮷葊濵德栁惠伹]/gu, (c) => VARIANTS[c] ?? c)
       // 丸は「〇」(U+3007) と「○」(U+25CB) が同じ原典の凡例と表で混ざる（松江・盛岡・倉敷）。賛否の記号として寄せる
       .replace(/\u3007/g, "\u25CB")
       .replace(/[\s　]+/g, "")
@@ -843,7 +848,6 @@ export function parseCouncilTranscribed(
     if (vo.table) {
       if (isPdf(vf)) throw new Error(`${source.id}: votes.table は HTML の賛否表にだけ使えます`);
       for (const t of htmlTables(readHtml(vf.path))) {
-        const tableText = t.map((r) => r.join("")).join("");
         if (vo.table === "memberRows") {
           // 予算の列の見出しセルの位置を取り、columns の氏名の行のその列のセルを並べる
           for (let ri = 0; ri < t.length; ri++) {
@@ -867,8 +871,13 @@ export function parseCouncilTranscribed(
               const seq = line.filter((c) => c.length > 0 && legend.has(c));
               if (seq.join("|") === sym.join("|")) {
                 rowOk = true;
-                // 列見出しは同じ表の中にその順で出ること（文書全体だと、同じ見出しが何度も出る原典で入れ替えが通る）
-                if (inOrder(tableText)) headerOk = true;
+                // 列見出しは、予算の行より上の**1行**（転置表なら左の**1列**）の中にその順で並ぶこと。
+                // 表全体の本文だと、rowspan を展開した見出し行が2回出て隣の入れ替えが通る（千葉で実測）
+                const heads =
+                  vo.table === "row"
+                    ? t.slice(0, ri).map((r) => r.join(""))
+                    : Array.from({ length: ci }, (_x, k) => t.map((r) => r[k] ?? "").join(""));
+                if (heads.some((h) => inOrder(h))) headerOk = true;
               }
             }),
           );
@@ -925,6 +934,15 @@ export function parseCouncilTranscribed(
     }
     if (!rowOk) missing.push(`${vf.filename}: 予算の行（「${vo.anchor}」の${vo.table ? "表" : "直後"}）の記号の並びが symbols と一致しません`);
     if (vo.headerUrl) headerOk = readDoc(fileFor(vo.headerUrl)).views.some((v) => inOrder(v.text));
+    // 1字の見出し（縦組みで姓の頭の字だけ）は、本文全体だと氏名の2字目以降の行の字に当たって入れ替えが通る（倉敷で実測）。
+    // **-layout の同じ1行の中に**その順で並ぶことまで求める
+    if (headerOk && vo.columns.some((c) => norm(c.label).length < 2) && isPdf(vf)) {
+      const lines = pdftotext(vf.path, ["-layout"]).split(/\r?\n/).map(norm);
+      if (!lines.some((ln) => inOrder(ln))) {
+        headerOk = false;
+        missing.push(`${vf.filename}: 1字の列見出しが -layout の同じ1行の中にその順で並びません`);
+      }
+    }
     if (rowOk && !headerOk) missing.push(`${vo.headerUrl ?? vf.filename}: 列見出しが${vo.headerUrl ? "原典" : vo.table ? "同じ表" : "予算の行より前"}にその順で出ません`);
     // 列 → 会派・議員
     const memberFaction = new Map<string, { display: string; raw: string }>();
@@ -982,6 +1000,9 @@ export function parseCouncilTranscribed(
       const covered = new Set(cols.map((c) => c.faction));
       const lacking = factions.filter((f) => !covered.has(f.name)).map((f) => f.name);
       if (lacking.length) missing.push(`賛否の列が覆っていない会派: ${lacking.join("・")}`);
+      if (!cols.some((c) => c.stance === "議長") && !vo.noChairReason) {
+        missing.push(`会派単位の表で議長が外れていません — blank（議長）で外すか、外せない理由を noChairReason に`);
+      }
       // 会派の列は「会派の議席 − その会派で自分の列（議長・無所属など）を持つ議員」を数える（議長を二重・賛成に数えない）
       for (const f of factions) {
         const own = cols.filter((c) => c.faction === f.name && c.member).length;

@@ -23827,6 +23827,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "北杜オール・イン・ワン", box: [365, 335, 175, 105], declared: "２人", members: ["中山喜夫", "山﨑君江"] },
         { name: "無会派", box: [35, 470, 165, 125], declared: "３人", members: ["中村典子", "飛矢﨑雅也", "浅川勝正"] },
       ],
+      votes: {"url": "https://www.city.hokuto.yamanashi.jp/fs/5/0/0/6/4/8/_/_______86_.pdf", "title": "北杜市議会だより 第86号 賛否のあった議案等（議長を除く）", "basis": "member", "legend": {"○": "賛成", "×": "反対"}, "legendText": "○＝賛成 ×＝反対", "anchor": "可決令和8年度北杜市一般会計予算", "symbols": "○○○×○○×○○○×○○×××○○○", "columns": [{"label": "秋山俊和"}, {"label": "内田俊彦"}, {"label": "保坂多枝子"}, {"label": "清水進"}, {"label": "加藤紀雄"}, {"label": "齊藤功文"}, {"label": "志村清"}, {"label": "進藤正文"}, {"label": "秋山真一"}, {"label": "神田正人"}, {"label": "中山喜夫"}, {"label": "輿水崇"}, {"label": "髙見澤伸光"}, {"label": "山﨑君江"}, {"label": "中村典子"}, {"label": "飛矢﨑雅也"}, {"label": "輿石知宏"}, {"label": "大塚愛"}, {"label": "浅川勝正"}], "anchorSide": "before", "blank": [{"label": "大芝正和", "stance": "議長", "evidence": "発行人：議長 大芝正和"}], "headerUrl": "https://www.city.hokuto.yamanashi.jp/fs/5/0/0/6/4/8/_/_______86_.pdf"},
       resolution: {
         // 議会だよりに議案番号が無いので、3月16日の議事日程（日程第15 議案第28号）で補う
         url: "https://www.city.hokuto.yamanashi.jp/fs/5/0/0/6/4/8/_/_______86_.pdf",
@@ -23959,6 +23960,8 @@ export const SOURCES: SourceEntry[] = [
     urls: [
       "https://web.archive.org/web/20260315043410id_/https://www.city.hamamatsu.shizuoka.jp/gikai/iinkai/meibokaiha.html",
       "https://www.city.hamamatsu.shizuoka.jp/documents/171369/giketukekkaitirann.pdf",
+      "https://www.city.hamamatsu.shizuoka.jp/documents/171369/giinnsannpiitiran.pdf",
+      "https://www.city.hamamatsu.shizuoka.jp/gikai/gityoufukugityou/rekidai.html",
     ],
     landingPage: "https://www.city.hamamatsu.shizuoka.jp/gikai/iinkai/meibokaiha.html",
     kind: "pdf",
@@ -23982,6 +23985,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "浜松市政向上委員会", declared: "(1人)", members: ["鈴木恵"] },
         { name: "市民サポート浜松", declared: "(1人)", members: ["馬塚彩矢香"] },
       ],
+      votes: {"url": "https://www.city.hamamatsu.shizuoka.jp/documents/171369/giinnsannpiitiran.pdf", "title": "令和8年第1回浜松市議会定例会 会議議決結果（全議案）議員別賛否", "basis": "member", "legend": {"○": "賛成", "×": "反対", "-": "棄権", "※": "除斥", "／": "欠席"}, "legendText": "「○」は賛成、「×」は反対、「-」は棄権、「※」は除斥、「／」は欠席を表します。", "anchor": "第42号議案令和８年度浜松市一般会計予算", "symbols": "○○○○○○○○○／○○○○○○○○○○○○○○○○○○○○○○○○○○○○×××○／", "columns": [{"label": "鈴木裕之"}, {"label": "藤田典良"}, {"label": "辻村公子"}, {"label": "中野和幸"}, {"label": "小泉翠"}, {"label": "神間郁子"}, {"label": "小野田康弘"}, {"label": "露木里江子"}, {"label": "久米丈二"}, {"label": "井田博康"}, {"label": "齋藤和志"}, {"label": "平野岳子"}, {"label": "松本康夫"}, {"label": "加茂俊武"}, {"label": "倉田清一"}, {"label": "須藤京子"}, {"label": "戸田誠"}, {"label": "鳥井德孝"}, {"label": "花井和夫"}, {"label": "渥美誠"}, {"label": "太田康隆"}, {"label": "栁川樹一郎"}, {"label": "山崎とし子"}, {"label": "丸英之"}, {"label": "幸田惠里子"}, {"label": "松下正行"}, {"label": "黒田豊"}, {"label": "大城七瀬"}, {"label": "花井洋介"}, {"label": "石津陽子"}, {"label": "岩田邦泰"}, {"label": "鈴木真人"}, {"label": "斉藤晴明"}, {"label": "森田賢児"}, {"label": "遠山将吾"}, {"label": "太田利実保"}, {"label": "湖東秀隆"}, {"label": "関イチロー"}, {"label": "酒井豊実"}, {"label": "小黒啓子"}, {"label": "北島定"}, {"label": "鈴木恵"}, {"label": "馬塚彩矢香"}], "blank": [{"label": "髙林修", "stance": "議長", "evidence": "第85代 髙林修 令和7年5月～令和8年5月", "evidenceUrl": "https://www.city.hamamatsu.shizuoka.jp/gikai/gityoufukugityou/rekidai.html"}]},
       resolution: {
         url: "https://www.city.hamamatsu.shizuoka.jp/documents/171369/giketukekkaitirann.pdf",
         title: "令和8年第1回浜松市議会定例会 会議議決結果（全議案）",
@@ -24030,6 +24034,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "新生会", declared: "1人", members: ["北角嘉幸"] },
         { name: "日本維新の会名古屋市会議員団", declared: "1人", members: ["大島英勲"] },
       ],
+      votes: {"url": "https://www.city.nagoya.jp/shikai/kouhou/1030998/1030999/1051058/1045525/1049358/1049365.html", "title": "市会だより第200号 2月定例会 提出議案の賛否", "basis": "member", "legend": {"賛成": "賛成", "反対": "反対"}, "anchor": "（2）附帯決議を付して修正可決", "table": "memberRows", "symbolSep": ",", "symbols": "賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,反対,反対,反対,賛成,賛成,賛成,反対,賛成", "columns": [{"label": "伊神邦彦"}, {"label": "神ひろし"}, {"label": "上村みちよ"}, {"label": "渡辺やすのり"}, {"label": "浅野有"}, {"label": "村瀬きよみ"}, {"label": "小出昭司"}, {"label": "中田ちづこ"}, {"label": "ふじた和秀"}, {"label": "服部しんのすけ"}, {"label": "浅井正仁"}, {"label": "吉田茂"}, {"label": "沢田ひとみ"}, {"label": "横井利明"}, {"label": "藤沢ちあき"}, {"label": "松井よしのり"}, {"label": "北野よしはる"}, {"label": "中里高之"}, {"label": "岩本たかひろ"}, {"label": "くずや利枝"}, {"label": "丹羽ひろし"}, {"label": "成田たかゆき"}, {"label": "山田昌弘"}, {"label": "くにまさ直記"}, {"label": "服部将也"}, {"label": "うえぞの晋介"}, {"label": "うかい春美"}, {"label": "塚本つよし"}, {"label": "おくむら文悟"}, {"label": "久田邦博"}, {"label": "森ともお"}, {"label": "久野美穂"}, {"label": "赤松哲次"}, {"label": "加藤一登"}, {"label": "橋本ひろき"}, {"label": "小川としゆき"}, {"label": "岡本やすひろ"}, {"label": "日比美咲"}, {"label": "田中里佳"}, {"label": "田辺雄一"}, {"label": "長谷川由美子"}, {"label": "さわだ晃一"}, {"label": "おか千恵"}, {"label": "木下優"}, {"label": "月森たくや"}, {"label": "吉岡正修"}, {"label": "さかい大輔"}, {"label": "金庭宜雄"}, {"label": "近藤和博"}, {"label": "中村しゅうへい"}, {"label": "辻まさお"}, {"label": "佐藤ゆうこ"}, {"label": "田山宏之"}, {"label": "大田とみひこ"}, {"label": "豊田かおる"}, {"label": "大村光子"}, {"label": "大谷ともひろ"}, {"label": "永井ゆり"}, {"label": "鈴木孝之"}, {"label": "岡田ゆき子"}, {"label": "みつなか美由紀"}, {"label": "田口一登"}, {"label": "金城ゆたか"}, {"label": "野田留美"}, {"label": "中川あつし"}, {"label": "北角嘉幸"}, {"label": "大島英勲"}], "blank": [{"label": "西川学", "stance": "議長", "evidence": "西川学議員(昭和区)議長のため議決に参加できない"}]},
       resolution: {
         url: "https://www.city.nagoya.jp/shikai/shingi/1030858/1030859/1046530.html",
         title: "令和8年2月定例会 市長提出案件",
@@ -24056,6 +24061,7 @@ export const SOURCES: SourceEntry[] = [
       "https://www2.city.kyoto.lg.jp/shikai/meibo/kaiha/mushozoku.html",
       "https://www2.city.kyoto.lg.jp/shikai/honkaigi/R07/gian2.html",
       "https://www2.city.kyoto.lg.jp/shikai/shikumi/kousei.html",
+      "https://web.archive.org/web/20260213015107id_/https://www2.city.kyoto.lg.jp/shikai/gichofukugicho/rekidai/gicho.html",
     ],
     landingPage: "https://www2.city.kyoto.lg.jp/shikai/meibo/kaiha/",
     kind: "page",
@@ -24084,6 +24090,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "無所属", independent: true, url: "https://www2.city.kyoto.lg.jp/shikai/meibo/kaiha/mushozoku.html", noDeclaredCount: true, members: ["菅谷浩平"] },
         { name: "無所属", independent: true, url: "https://www2.city.kyoto.lg.jp/shikai/meibo/kaiha/mushozoku.html", noDeclaredCount: true, members: ["平田圭"] },
       ],
+      votes: {"url": "https://www2.city.kyoto.lg.jp/shikai/honkaigi/R07/gian2.html", "title": "議案・審議結果（令和8年2月市会）各会派の態度", "basis": "faction", "legend": {"〇": "賛成", "×": "反対"}, "legendText": "○＝賛成、×＝反対", "anchor": "令和８年度京都市一般会計予算", "table": "row", "symbols": "〇〇×〇〇×〇〇〇〇〇", "columns": [{"label": "自民", "faction": "自由民主党京都市会議員団", "evidence": "自民 ＝自由民主党京都市会議員団"}, {"label": "維京国", "faction": "維新・京都・国民市会議員団", "evidence": "維京国 ＝維新・京都・国民市会議員団"}, {"label": "共産", "faction": "日本共産党京都市会議員団", "evidence": "共産 ＝日本共産党京都市会議員団"}, {"label": "公明", "faction": "公明党京都市会議員団", "evidence": "公明 ＝公明党京都市会議員団"}, {"label": "無所属1", "faction": "無所属（天方ひろゆき）", "member": "天方ひろゆき", "evidence": "無所属１ ＝天方ひろゆき議員"}, {"label": "無所属2", "faction": "無所属（井﨑敦子）", "member": "井﨑敦子", "evidence": "無所属２ ＝井﨑敦子議員"}, {"label": "無所属3", "faction": "無所属（きくち一秀）", "member": "きくち一秀", "evidence": "無所属３ ＝きくち一秀議員"}, {"label": "無所属4", "faction": "無所属（小島信太郎）", "member": "小島信太郎", "evidence": "無所属４ ＝小島信太郎議員"}, {"label": "無所属5", "faction": "無所属（繁隆夫）", "member": "繁隆夫", "evidence": "無所属５ ＝繁隆夫議員"}, {"label": "無所属6", "faction": "無所属（菅谷浩平）", "member": "菅谷浩平", "evidence": "無所属６ ＝菅谷浩平議員"}, {"label": "無所属7", "faction": "無所属（平田圭）", "member": "平田圭", "evidence": "無所属７ ＝平田圭議員"}], "blank": [{"label": "下村あきら", "stance": "議長", "evidence": "第87代 下村 あきら 令和7年5月27日", "evidenceUrl": "https://web.archive.org/web/20260213015107id_/https://www2.city.kyoto.lg.jp/shikai/gichofukugicho/rekidai/gicho.html"}]},
       resolution: {
         url: "https://www2.city.kyoto.lg.jp/shikai/honkaigi/R07/gian2.html",
         title: "議案・審議結果（令和8年2月市会）",
@@ -24237,6 +24244,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "おかやま未来プロジェクト", declared: "（1人）", members: ["中島純"] },
         { name: "日本維新の会岡山市議団", declared: "（1人）", members: ["前島慶太"] },
       ],
+      votes: {"url": "https://www.city.okayama.jp/gikai/0000078068.html", "title": "議案に対する賛否 令和8年（令和8年3月17日議決分）", "basis": "member", "table": "memberRows", "legend": {"賛成": "賛成", "反対": "反対"}, "anchor": "甲第4号議案", "symbolSep": ",", "symbols": "賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,反対,反対,反対,反対,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,反対,反対,反対,賛成,賛成,賛成,賛成,賛成,賛成", "columns": [{"label": "則武宣弘"}, {"label": "松田安義"}, {"label": "福吉智徳"}, {"label": "林敏宏"}, {"label": "平元道隆"}, {"label": "桑田桂子"}, {"label": "長岡将克"}, {"label": "早野賢一"}, {"label": "林潤"}, {"label": "田中のぞみ"}, {"label": "東毅"}, {"label": "宿女和子"}, {"label": "宮武博"}, {"label": "三木亮治"}, {"label": "和氣健"}, {"label": "成本俊一"}, {"label": "小川信幸"}, {"label": "藤原哲之"}, {"label": "森田卓司"}, {"label": "吉本賢二"}, {"label": "赤木一雄"}, {"label": "難波満津留"}, {"label": "二嶋宣人"}, {"label": "川本浩一郎"}, {"label": "山田正幸"}, {"label": "松田隆之"}, {"label": "松本好厚"}, {"label": "柳井弘"}, {"label": "岡崎隆"}, {"label": "花岡栄太郎"}, {"label": "江田厚志"}, {"label": "大月晴一"}, {"label": "安東真理"}, {"label": "髙橋誠一郎"}, {"label": "森山幸治"}, {"label": "川上智美"}, {"label": "鬼木のぞみ"}, {"label": "土田貴行"}, {"label": "高成壯磨"}, {"label": "小林寿雄"}, {"label": "高橋雄大"}, {"label": "太田栄司"}, {"label": "柳迫和夫"}, {"label": "中島純"}, {"label": "前島慶太"}], "blank": [{"label": "田口裕士", "stance": "議長", "evidence": "田口裕士 議長のため、採決には加わりません。"}]},
       resolution: {
         url: "https://www.city.okayama.jp/gikai/0000078927.html",
         title: "2月定例市議会議決結果（令和8年3月17日議決）",
@@ -24292,6 +24300,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "新風クラブ", declared: "新風クラブ(1)", declaredIn: "https://www.city.hiroshima.lg.jp/_res/projects/default_project/_page_/001/048/719/260326.pdf", members: ["木村唯"] },
         { name: "広島成長フォーラム", declared: "広島成長フォーラム(1)", declaredIn: "https://www.city.hiroshima.lg.jp/_res/projects/default_project/_page_/001/048/719/260326.pdf", members: ["山下正寛"] },
       ],
+      votes: {"url": "https://www.city.hiroshima.lg.jp/_res/projects/default_project/_page_/001/048/719/260326.pdf", "title": "２月定例会の議案と議決結果など（令和８年３月26日議決分）", "basis": "faction", "legend": {"○": "賛成", "×": "反対"}, "legendText": "○：議案に対して賛成 ×：議案に対して反対", "anchor": "1 令和８年度一般会計予算", "symbols": "○○○○○○○○○○○○○", "columns": [{"label": "自民党・市民クラブ", "faction": "自由民主党・市民クラブ", "evidence": "●自由民主党・市民クラブ (略称 自民党・市民クラブ )"}, {"label": "公明党", "faction": "公明党"}, {"label": "市民連合・市民の声", "faction": "市民連合・市民の声"}, {"label": "日本共産党", "faction": "日本共産党"}, {"label": "ひろしま清風会", "faction": "ひろしま清風会"}, {"label": "広島維新の会", "faction": "広島維新の会"}, {"label": "新政クラブ", "faction": "新政クラブ"}, {"label": "無党派クラブ", "faction": "無党派クラブ"}, {"label": "至誠会", "faction": "至誠会"}, {"label": "清流クラブ", "faction": "清流クラブ"}, {"label": "鈴蘭会", "faction": "鈴蘭会"}, {"label": "新風クラブ", "faction": "新風クラブ"}, {"label": "広島成長フォーラム", "faction": "広島成長フォーラム"}], "blank": [{"label": "八條範彦", "stance": "議長", "evidence": "八條 範彦（議長）"}]},
       resolution: {
         url: "https://www.city.hiroshima.lg.jp/gikai/nittei/1027907/1048719.html",
         title: "令和8年第2回定例会（2月13日～3月26日）",
@@ -24317,6 +24326,7 @@ export const SOURCES: SourceEntry[] = [
     urls: [
       "https://web.archive.org/web/20260213010153id_/https://www.city.kitakyushu.lg.jp/sigikai/file_0056.html",
       "https://www.city.kitakyushu.lg.jp/files/001198333.pdf",
+      "https://web.archive.org/web/20250913104338id_/https://www.city.kitakyushu.lg.jp/sigikai/file_0048.html",
     ],
     landingPage: "https://www.city.kitakyushu.lg.jp/sigikai/file_0056.html",
     kind: "page",
@@ -24341,6 +24351,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "日本維新の会", declared: "2人", members: ["有田絵里", "松尾和也"] },
         { name: "変革と成長", declared: "1人", members: ["井上 純子"] },
       ],
+      votes: {"url": "https://www.city.kitakyushu.lg.jp/files/001198333.pdf", "title": "令和８年２月定例会 会議結果（各会派の賛否状況）", "basis": "faction", "legend": {"○": "賛成", "×": "反対"}, "legendText": "賛否状況について ○・・・賛成 ×・・・反対 △・・・賛否双方あり ―・・・欠席等により賛否表明なし", "anchor": "1 令和８年度北九州市一般会計予算", "symbols": "○○○×○×○○", "columns": [{"label": "自民党・無所属の会"}, {"label": "公明党"}, {"label": "市民とともに北九州"}, {"label": "日本共産党"}, {"label": "北九州会"}, {"label": "緑の風"}, {"label": "日本維新の会"}, {"label": "変革と成長"}], "blank": [{"label": "中村義雄", "stance": "議長", "evidence": "議長 中村 義雄", "evidenceUrl": "https://web.archive.org/web/20250913104338id_/https://www.city.kitakyushu.lg.jp/sigikai/file_0048.html"}]},
       resolution: {
         url: "https://www.city.kitakyushu.lg.jp/files/001198333.pdf",
         title: "会議結果一覧（令和8年2月定例会）",
@@ -24364,6 +24375,7 @@ export const SOURCES: SourceEntry[] = [
       "https://gikai.city.fukuoka.lg.jp/result/r8_gikai1",
       "https://web.archive.org/web/20260213103736id_/https://gikai.city.fukuoka.lg.jp/council/outline",
       "https://web.archive.org/web/20260312160820id_/https://gikai.city.fukuoka.lg.jp/member",
+      "https://web.archive.org/web/20260118082923id_/https://gikai.city.fukuoka.lg.jp/council/address",
     ],
     landingPage: "https://gikai.city.fukuoka.lg.jp/result/r8_gikai1",
     kind: "pdf",
@@ -24397,6 +24409,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "無所属", independent: true, noDeclaredCount: true, members: ["森あやこ"] },
         { name: "無所属", independent: true, noDeclaredCount: true, members: ["川口浩"] },
       ],
+      votes: {"url": "https://gikai.city.fukuoka.lg.jp/result/r8_gikai1", "title": "令和８年第１回福岡市議会（定例会） 議案の議決結果（会派ごとの賛否）", "basis": "faction", "table": "column", "legend": {"○": "賛成", "×": "反対"}, "legendText": "○：賛成 ×：反対", "anchor": "令和８年度福岡市一般会計予算案", "symbols": "○○××○○○○○○×○", "columns": [{"label": "自民", "faction": "自由民主党福岡市議団", "evidence": "自民：自由民主党福岡市議団"}, {"label": "公明", "faction": "公明党福岡市議団"}, {"label": "市民ク", "faction": "福岡市民クラブ"}, {"label": "共産", "faction": "日本共産党福岡市議団"}, {"label": "新風", "faction": "新しい風ふくおか", "evidence": "新風：新しい風ふくおか"}, {"label": "維新", "faction": "日本維新の会福岡市議団"}, {"label": "自民新", "faction": "自民党新福岡", "evidence": "自民新：自民党新福岡"}, {"label": "無所属１", "member": "あべひでき", "evidence": "無所属１ あべひでき"}, {"label": "無所属２", "member": "新開ゆうじ", "evidence": "無所属２ 新開ゆうじ"}, {"label": "無所属３", "member": "木村てつあき", "evidence": "無所属３ 木村てつあき"}, {"label": "無所属４", "member": "森あやこ", "evidence": "無所属４ 森あやこ"}, {"label": "無所属５", "member": "川口浩", "evidence": "無所属５ 川口浩"}], "blank": [{"label": "平畑雅博", "stance": "議長", "evidence": "福岡市議会議長 平畑　雅博", "evidenceUrl": "https://web.archive.org/web/20260118082923id_/https://gikai.city.fukuoka.lg.jp/council/address"}]},
       resolution: {
         url: "https://gikai.city.fukuoka.lg.jp/result/r8_gikai1",
         title: "令和８年第１回福岡市議会（定例会） 議案の議決結果",
@@ -24422,6 +24435,7 @@ export const SOURCES: SourceEntry[] = [
       "https://web.archive.org/web/20260421205002id_/https://kumamoto-shigikai.jp/common/UploadFileDsp.aspx?c_id=53&id=125&set_doc=1",
       "https://kumamoto-shigikai.jp/agenda/pub/detail.aspx?c_id=4&coy_id=16&co_id=207&dis_id=3",
       "https://kumamoto-shigikai.jp/common/UploadFileDsp.aspx?c_id=6&id=1417&sub_id=1&flid=7055",
+      "https://kumamoto-shigikai.jp/one_html3/pub/default.aspx?c_id=16",
     ],
     landingPage: "https://kumamoto-shigikai.jp/kiji/pub/Detail.aspx?c_id=53&id=125",
     kind: "pdf",
@@ -24451,6 +24465,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "無所属", independent: true, label: "無所属議員", noDeclaredCount: true, members: ["山中惣一郎"] },
         { name: "無所属", independent: true, label: "無所属議員", noDeclaredCount: true, members: ["筑紫るみ子"] },
       ],
+      votes: {"url": "https://kumamoto-shigikai.jp/agenda/pub/detail.aspx?c_id=4&coy_id=16&co_id=207&dis_id=3", "title": "令和8年第1回定例会 議第３号 賛否一覧", "basis": "member", "table": "memberRows", "legend": {"賛成": "賛成", "反対": "反対"}, "anchor": "採決", "symbolSep": ",", "symbols": "賛成,賛成,賛成,反対,賛成,反対,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,反対,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,反対,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,反対,賛成,賛成", "columns": [{"label": "井本正広"}, {"label": "村上麿"}, {"label": "瀨尾誠一"}, {"label": "菊地渚沙"}, {"label": "山中惣一郎"}, {"label": "井坂隆寛"}, {"label": "木庭功二"}, {"label": "村上誠也"}, {"label": "古川智子"}, {"label": "荒川慎太郎"}, {"label": "松本幸隆"}, {"label": "中川栄一郎"}, {"label": "松川善範"}, {"label": "筑紫るみ子"}, {"label": "井芹栄次"}, {"label": "島津哲也"}, {"label": "吉田健一"}, {"label": "齊藤博"}, {"label": "田島幸治"}, {"label": "日隈忍"}, {"label": "山本浩之"}, {"label": "北川哉"}, {"label": "平江透"}, {"label": "吉村健治"}, {"label": "山内勝志"}, {"label": "伊藤和仁"}, {"label": "高瀬千鶴子"}, {"label": "小佐井賀瑞宜"}, {"label": "寺本義勝"}, {"label": "大嶌澄雄"}, {"label": "髙本一臣"}, {"label": "西岡誠也"}, {"label": "田上辰也"}, {"label": "三森至加"}, {"label": "浜田大介"}, {"label": "田中敦朗"}, {"label": "田中誠一"}, {"label": "坂田誠二"}, {"label": "落水清弘"}, {"label": "澤田昌作"}, {"label": "満永寿博"}, {"label": "紫垣正仁"}, {"label": "藤山英美"}, {"label": "上野美恵子"}, {"label": "上田芳裕"}, {"label": "村上博"}], "blank": [{"label": "大石浩文", "stance": "議長", "evidence": "大石浩文 〃7.3.24～8.3.23", "evidenceUrl": "https://kumamoto-shigikai.jp/one_html3/pub/default.aspx?c_id=16"}]},
       resolution: {
         url: "https://kumamoto-shigikai.jp/agenda/pub/detail.aspx?c_id=4&coy_id=16&co_id=207&dis_id=3",
         title: "令和8年第1回定例会 議案および審議結果（議第３号 賛否一覧）",
@@ -24607,6 +24622,7 @@ export const SOURCES: SourceEntry[] = [
       "https://www.city.chiba.jp/shigikai/list_kaiha_mu.html",
       "https://www.city.chiba.jp/shigikai/sichoteisyutu2601.html",
       "https://www.city.chiba.jp/shigikai/meibo-menu.html",
+      "https://www.city.chiba.jp/shigikai/aisatu_gicho.html",
     ],
     landingPage: "https://www.city.chiba.jp/shigikai/kaiha.html",
     kind: "page",
@@ -24633,6 +24649,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "無所属", independent: true, url: "https://www.city.chiba.jp/shigikai/list_kaiha_mu.html", noDeclaredCount: true, members: ["蛭田浩文"] },
         { name: "無所属", independent: true, url: "https://www.city.chiba.jp/shigikai/list_kaiha_mu.html", noDeclaredCount: true, members: ["櫻井崇"] },
       ],
+      votes: {"url": "https://www.city.chiba.jp/shigikai/sichoteisyutu2601.html", "title": "令和8年第1回定例会議決結果（賛否）表", "basis": "faction", "table": "row", "legend": {"○": "賛成", "×": "反対"}, "legendText": "表中 ○ ：賛成 ×：反対", "anchor": "令和8年度千葉市一般会計予算", "symbols": "○○○×○×○○○", "columns": [{"label": "自由民主党", "faction": "自由民主党千葉市議会議員団"}, {"label": "立憲民主・無所属", "faction": "立憲民主・無所属千葉市議会議員団"}, {"label": "公明党", "faction": "公明党千葉市議会議員団"}, {"label": "日本共産党", "faction": "日本共産党千葉市議会議員団"}, {"label": "日本維新の会ちば", "faction": "日本維新の会ちば"}, {"label": "黒澤", "member": "黒澤和泉"}, {"label": "大平", "member": "大平真弘"}, {"label": "蛭田", "member": "蛭田浩文"}, {"label": "櫻井崇議員", "member": "櫻井崇"}], "blank": [{"label": "松坂吉則", "stance": "議長", "evidence": "第80代議長 松坂 吉則", "evidenceUrl": "https://www.city.chiba.jp/shigikai/aisatu_gicho.html"}]},
       resolution: {
         url: "https://www.city.chiba.jp/shigikai/sichoteisyutu2601.html",
         title: "令和8年第1回定例会市長提出議案議決結果",
@@ -24656,6 +24673,7 @@ export const SOURCES: SourceEntry[] = [
     urls: [
       "https://web.archive.org/web/20260305140442id_/https://www.city.niigata.lg.jp/shigikai/index_meibo/meibo_03jounin.html",
       "https://www.city.niigata.lg.jp/shigikai/index_honkaigi/honkaigi_kekka/r8kekka/r0802.html",
+      "https://www.city.niigata.lg.jp/shigikai/index_gityou/gityou_aisatsu.html",
     ],
     landingPage: "https://www.city.niigata.lg.jp/shigikai/index_meibo/meibo_03jounin.html",
     kind: "page",
@@ -24681,6 +24699,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "市民ネットにいがた", label: "市民ネットにいがた", declared: "市民ネットにいがた 3 人", declaredIn: "https://www.city.niigata.lg.jp/shigikai/index_honkaigi/honkaigi_kekka/r8kekka/r0802.html", members: ["石附幸子", "竹内功", "青木学"] },
         { name: "会派に属さない議員", label: "会派に属さない議員", declared: "会派に属さない議員 １ 人", declaredIn: "https://www.city.niigata.lg.jp/shigikai/index_honkaigi/honkaigi_kekka/r8kekka/r0802.html", independent: true, members: ["串田修平"] },
       ],
+      votes: {"url": "https://www.city.niigata.lg.jp/shigikai/index_honkaigi/honkaigi_kekka/r8kekka/r0802.html", "title": "令和8年2月定例会 会議の結果", "basis": "faction", "legend": {"賛成": "賛成", "反対": "反対"}, "anchor": "令和８年度新潟市一般会計予算", "table": "row", "symbolSep": ",", "symbols": "賛成,反対,賛成,賛成,賛成,賛成,賛成,賛成", "columns": [{"label": "翔政会", "faction": "翔政会"}, {"label": "日本共産党新潟市議会議員団", "faction": "日本共産党新潟市議会議員団"}, {"label": "新風にいがた", "faction": "新風にいがた"}, {"label": "新潟市公明党", "faction": "新潟市公明党"}, {"label": "ともに躍動する新潟", "faction": "ともに躍動する新潟"}, {"label": "無所属の会", "faction": "無所属の会"}, {"label": "市民ネットにいがた", "faction": "市民ネットにいがた"}, {"label": "会派に属さない議員", "faction": "会派に属さない議員", "member": "串田修平", "evidence": "串田 修平 会派に属さない議員"}], "blank": [{"label": "小野清一郎", "stance": "議長", "evidence": "小野 清一郎 議長", "evidenceUrl": "https://www.city.niigata.lg.jp/shigikai/index_gityou/gityou_aisatsu.html"}]},
       resolution: {
         url: "https://www.city.niigata.lg.jp/shigikai/index_honkaigi/honkaigi_kekka/r8kekka/r0802.html",
         title: "令和8年2月定例会 会議の結果",
@@ -24710,6 +24729,7 @@ export const SOURCES: SourceEntry[] = [
       "https://www.city.yokohama.lg.jp/shikai/kiroku/kekka/kaihabetsu.files/20260324_sanpi.pdf",
       "https://www.city.yokohama.lg.jp/shikai/kiroku/kekka/kaihabetsu.html",
       "https://www.city.yokohama.lg.jp/shikai/shikumi/kosei/shikumi21.html",
+      "https://web.archive.org/web/20260305075723id_/https://www.city.yokohama.lg.jp/shikai/gicho-fukugicho/gicho-aisatsu.html",
     ],
     landingPage: "https://www.city.yokohama.lg.jp/shikai/giin/kaihabetsu.html",
     kind: "page",
@@ -24741,6 +24761,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "無所属", independent: true, noDeclaredCount: true, members: ["長谷川えつこ"] },
         { name: "無所属", independent: true, noDeclaredCount: true, members: ["大野トモイ"] },
       ],
+      votes: {"url": "https://www.city.yokohama.lg.jp/shikai/kiroku/kekka/kaihabetsu.files/20260324_sanpi.pdf", "title": "令和８年３月24日 本会議 議決結果（議員別賛否一覧）", "basis": "member", "legend": {"○": "賛成", "×": "反対", "除": "除斥", "／": "欠席"}, "legendText": "○：賛成 ×：反対 空欄：投票なし 除：除斥 ／：欠席（退席）", "anchor": "令和８年度横浜市一般会計予算", "symbols": "○○○／○○○○○○○○○○○○○○○○○○○○○○○○○○○○／○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○×××××○○××○○×○○", "columns": [{"label": "青木亮祐"}, {"label": "東みちよ"}, {"label": "伊波俊之助"}, {"label": "磯部圭太"}, {"label": "おさかべさやか"}, {"label": "大桑正貴"}, {"label": "鴨志田啓介"}, {"label": "川口広"}, {"label": "黒川勝"}, {"label": "小松範昭"}, {"label": "佐藤茂"}, {"label": "佐藤祐文"}, {"label": "斉藤達也"}, {"label": "酒井誠"}, {"label": "清水富雄"}, {"label": "白井亮次"}, {"label": "鈴木太郎"}, {"label": "瀬之間康浩"}, {"label": "関勝則"}, {"label": "田野井一雄"}, {"label": "長谷川琢磨"}, {"label": "福地茂"}, {"label": "伏見幸枝"}, {"label": "藤代哲夫"}, {"label": "増永純女"}, {"label": "松本研"}, {"label": "山下正人"}, {"label": "山田一誠"}, {"label": "横山正人"}, {"label": "横山勇太朗"}, {"label": "渡邊忠則"}, {"label": "安西英俊"}, {"label": "市来栄美子"}, {"label": "尾崎太"}, {"label": "木内秀一"}, {"label": "行田朝仁"}, {"label": "久保和弘"}, {"label": "斉藤伸一"}, {"label": "髙橋正治"}, {"label": "竹内康洋"}, {"label": "武田勝久"}, {"label": "竹野内猛"}, {"label": "中島光徳"}, {"label": "仁田昌寿"}, {"label": "福島直子"}, {"label": "望月康弘"}, {"label": "越久田記子"}, {"label": "大岩真善和"}, {"label": "かざまあさみ"}, {"label": "田中ゆき"}, {"label": "髙田修平"}, {"label": "中山大輔"}, {"label": "花上喜代志"}, {"label": "藤崎浩太郎"}, {"label": "麓理恵"}, {"label": "森ひろたか"}, {"label": "谷田部孝一"}, {"label": "山浦英太"}, {"label": "いそべ尚哉"}, {"label": "伊藤くみこ"}, {"label": "大山しょうじ"}, {"label": "柏原すぐる"}, {"label": "くしだ久子"}, {"label": "坂井太"}, {"label": "田中紳一"}, {"label": "熊本ちひろ"}, {"label": "こがゆ康弘"}, {"label": "坂本勝司"}, {"label": "深作祐衣"}, {"label": "二井くみよ"}, {"label": "横溝じゅん子"}, {"label": "宇佐美さやか"}, {"label": "大和田あきお"}, {"label": "白井正子"}, {"label": "古谷靖彦"}, {"label": "みわ智恵美"}, {"label": "関嵩史"}, {"label": "山田桂一郎"}, {"label": "太田正孝"}, {"label": "井上さくら"}, {"label": "梶村充"}, {"label": "輿石かつ子"}, {"label": "荻原隆宏"}, {"label": "長谷川えつこ"}, {"label": "大野トモイ"}], "blank": [{"label": "渋谷健", "stance": "議長", "evidence": "横浜市会議長 渋谷 健", "evidenceUrl": "https://web.archive.org/web/20260305075723id_/https://www.city.yokohama.lg.jp/shikai/gicho-fukugicho/gicho-aisatsu.html"}]},
       resolution: {
         url: "https://www.city.yokohama.lg.jp/shikai/kiroku/kekka/kaihabetsu.files/20260324_sanpi.pdf",
         title: "令和８年３月24日 本会議 議決結果（議員別賛否一覧）",
@@ -24900,6 +24921,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "チェンジングしずおかプロジェクト", declared: "1人", members: ["田中志保"] },
         { name: "緑の党グリーンズジャパン", declared: "1人", members: ["松谷清"] },
       ],
+      votes: {"url": "https://www.city.shizuoka.lg.jp/documents/6558/202602gatu_gigetukekka_02.pdf", "title": "令和8年2月定例会の結果", "basis": "faction", "legend": {"○": "賛成", "×": "反対"}, "legendText": "※○は賛成、×は反対、△は賛否双方あり", "anchor": "令和８年度静岡市一般会計予算【原案】", "symbols": "○○○×○○○×", "columns": [{"label": "自民党", "faction": "自由民主党静岡市議会議員団", "evidence": "自　　　民　　　党　（自由民主党静岡市議会議員団）"}, {"label": "志政会", "faction": "志政会"}, {"label": "公明党", "faction": "公明党静岡市議会"}, {"label": "共産党", "faction": "日本共産党静岡市議会議員団"}, {"label": "立憲民主党", "faction": "静岡市議会立憲民主党"}, {"label": "創生静岡", "faction": "創生静岡"}, {"label": "チェンジング", "faction": "チェンジングしずおかプロジェクト"}, {"label": "緑の党", "faction": "緑の党グリーンズジャパン"}], "blank": [{"label": "山根田鶴子", "stance": "議長", "evidence": "静岡市議会議長 山根 田鶴子"}]},
       resolution: {
         url: "https://www.city.shizuoka.lg.jp/documents/6558/202602gatu_gigetukekka_02.pdf",
         title: "令和8年2月定例会の結果",
@@ -24950,6 +24972,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "無所属", independent: true, noDeclaredCount: true, members: ["安田佳正"] },
         { name: "無所属", independent: true, noDeclaredCount: true, members: ["横山啓一"] },
       ],
+      votes: {"url": "https://www.city.asahikawa.hokkaido.jp/council/6400/6410/d083728.html", "title": "令和8年第1回定例会賛否/議案第14号", "basis": "member", "legend": {"賛成": "賛成", "反対": "反対", "欠席": "欠席", "採決に加わらず": "議長"}, "legendText": "議長は採決に加わらないため、「採決に加わらず」としています。", "anchor": "賛否等の別", "table": "memberRows", "symbolSep": ",", "symbols": "賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,欠席,賛成,採決に加わらず,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,賛成,反対,反対,反対,反対,賛成,賛成,賛成,賛成,賛成,賛成", "columns": [{"label": "いしかわまさき"}, {"label": "笠井まなみ"}, {"label": "あべなお"}, {"label": "たけいしよういち"}, {"label": "石川まさゆき"}, {"label": "沼﨑雅之"}, {"label": "えびな安信"}, {"label": "高橋ひでとし"}, {"label": "菅原範明"}, {"label": "佐藤さだお"}, {"label": "松田卓也"}, {"label": "福居秀雄"}, {"label": "杉山允孝"}, {"label": "江川あや"}, {"label": "上野和幸"}, {"label": "髙橋紀博"}, {"label": "品田ときえ"}, {"label": "高見一典"}, {"label": "金谷美奈子"}, {"label": "駒木おさみ"}, {"label": "皆川ゆきたけ"}, {"label": "中野ひろゆき"}, {"label": "高花えいこ"}, {"label": "中村のりゆき"}, {"label": "中村みなこ"}, {"label": "まじま隆英"}, {"label": "石川厚子"}, {"label": "能登谷繁"}, {"label": "植木だいすけ"}, {"label": "小林ゆうき"}, {"label": "塩尻英明"}, {"label": "高木ひろたか"}, {"label": "横山啓一"}, {"label": "安田佳正"}]},
       resolution: {
         url: "https://www.city.asahikawa.hokkaido.jp/council/6400/6410/d083645.html",
         title: "令和8年第1回定例会議決結果",
@@ -25194,6 +25217,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "立憲民主党", declared: "（りっけんみんしゅとう）1名", members: ["吉田公男"] },
         { name: "れいわ新選組", declared: "（れいわしんせんぐみ）1名", members: ["古山唯"] },
       ],
+      votes: {"url": "https://www.city.koriyama.lg.jp/uploaded/attachment/118823.pdf", "title": "議案等に対する各議員の賛否（令和８年３月定例会・３月19日議決分）", "basis": "member", "legend": {"〇": "賛成", "×": "反対", "欠": "欠席", "除": "除斥", "棄": "棄権", "議": "議長"}, "legendText": "賛否内容 ○：賛成（可決・承認・認定・同意・採択・一部採択）、×：反対（否決・不承認・不認定・不同意・不採択）、欠：欠席、除：除斥、棄：棄権、議：議長", "anchor": "39令和８年度郡山市一般会計予算原案可決", "symbols": "議〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇欠〇〇〇〇〇〇〇〇××〇〇〇××", "columns": [{"label": "近内利男"}, {"label": "本田豊栄"}, {"label": "大河原裕勝"}, {"label": "薄井長広"}, {"label": "伊藤典夫"}, {"label": "加藤漢太"}, {"label": "森合秀行"}, {"label": "塩田義智"}, {"label": "久野三男"}, {"label": "佐藤政喜"}, {"label": "大城宏之"}, {"label": "冨樫賢太郎"}, {"label": "遠藤利子"}, {"label": "福田文子"}, {"label": "會田一男"}, {"label": "折笠正"}, {"label": "良田金次郎"}, {"label": "栗原晃"}, {"label": "廣田耕一"}, {"label": "石川義和"}, {"label": "山根悟"}, {"label": "伹野光夫", "member": "但野光夫"}, {"label": "田川正治"}, {"label": "小島寛子"}, {"label": "池田義人"}, {"label": "名木敬一"}, {"label": "大木進"}, {"label": "諸越裕"}, {"label": "村上晃一"}, {"label": "三瓶宗盛"}, {"label": "佐藤栄作"}, {"label": "遠藤隆"}, {"label": "岡田哲夫"}, {"label": "飯塚裕一"}, {"label": "八重樫小代子"}, {"label": "箭内好彦"}, {"label": "吉田公男"}, {"label": "古山唯"}]},
       resolution: {
         url: "https://www.city.koriyama.lg.jp/uploaded/attachment/118874.pdf",
         title: "令和８年３月定例会（３月19日）議決結果",
@@ -25358,6 +25382,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "緑の地球", declared: "（1名）", members: ["出井昌子"] },
         { name: "参政党　政治参加を促す会", declared: "（1名）", members: ["河田敦史"] },
       ],
+      votes: {"url": "https://www.city.utsunomiya.lg.jp/_res/projects/default_project/_page_/001/044/488/sannpi0324.pdf", "title": "定例会会議結果（3月24日現在）議員別賛否", "basis": "member", "legend": {"○": "賛成", "✕": "反対", "欠": "欠席"}, "legendText": "※賛成=○，反対=×，欠席者=欠，遅参=遅，議長は採決に加わらないため斜線", "anchor": "第18号令和8年度宇都宮市一般会計予算原案可決", "symbols": "○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○✕✕✕○欠○✕✕✕", "columns": [{"label": "若林芽育"}, {"label": "手塚泉"}, {"label": "岡本源二郎"}, {"label": "今野哲也"}, {"label": "菅原一浩"}, {"label": "長谷川武士"}, {"label": "矢古宇芳一"}, {"label": "柴田賢司"}, {"label": "内藤良弘"}, {"label": "黒子英明"}, {"label": "篠﨑圭一"}, {"label": "山﨑昌子"}, {"label": "馬上剛"}, {"label": "今井政範"}, {"label": "小林紀夫"}, {"label": "舟本肇"}, {"label": "岡本芳明"}, {"label": "熊本和夫"}, {"label": "横須賀咲紀"}, {"label": "佐藤孝明"}, {"label": "大久保順也"}, {"label": "高橋英樹"}, {"label": "中塚英範"}, {"label": "福田智恵"}, {"label": "郷間康久"}, {"label": "駒場昭夫"}, {"label": "小倉久美"}, {"label": "岩井潤子"}, {"label": "秋成大"}, {"label": "成島隆裕"}, {"label": "菅野大造"}, {"label": "金沢力"}, {"label": "平松明夫"}, {"label": "久保井永三"}, {"label": "渡辺道仁"}, {"label": "小室かな子"}, {"label": "原ちづる"}, {"label": "福田久美子"}, {"label": "石川京樹"}, {"label": "佐藤恭子"}, {"label": "茂木祐佳里"}, {"label": "保坂栄次"}, {"label": "出井昌子"}, {"label": "河田敦史"}], "blank": [{"label": "塚田典功", "stance": "議長", "evidence": "塚田典功議長から辞職願が提出され", "evidenceUrl": "https://www.city.utsunomiya.lg.jp/gikai/kekka/kekka/1044487/1044488.html"}]},
       resolution: {
         url: "https://www.city.utsunomiya.lg.jp/gikai/kekka/kekka/1044487/1044488.html",
         title: "令和8年3月（第1回）定例会 会議結果",
@@ -25498,6 +25523,7 @@ export const SOURCES: SourceEntry[] = [
       "https://www.city.toyohashi.lg.jp/secure/40193/R8.3giketukekka.pdf",
       "https://www.city.toyohashi.lg.jp/secure/9867/gikaidayori353(pink.pdf",
       "https://www.city.toyohashi.lg.jp/gikai/",
+      "https://web.archive.org/web/20260417061216id_/https://www.city.toyohashi.lg.jp/8127.htm",
     ],
     landingPage: "https://www.city.toyohashi.lg.jp/8130.htm",
     kind: "page",
@@ -25523,6 +25549,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "とよはし みんなの議会", declared: "（1名）", members: ["古池もも"] },
         { name: "豊橋維新の会", declared: "（1名）", members: ["山田隆司"] },
       ],
+      votes: {"url": "https://www.city.toyohashi.lg.jp/secure/9867/gikaidayori353(pink.pdf", "title": "とよはし市議会だより 第353号「賛否が分かれた議案」", "basis": "faction", "legend": {"○": "賛成", "×": "反対"}, "legendText": "○＝賛成 ×＝反対", "anchor": "・令和８年度豊橋市一般会計予算", "symbols": "○○××○×○×", "columns": [{"label": "自由民主党", "faction": "自由民主党豊橋市議団"}, {"label": "公明党", "faction": "公明党豊橋市議団"}, {"label": "新しい豊橋", "faction": "新しい豊橋"}, {"label": "日本共産党", "faction": "日本共産党豊橋市議団"}, {"label": "まちフォーラム", "faction": "まちフォーラム"}, {"label": "みらい市民", "faction": "みらい市民"}, {"label": "みんなの議会", "faction": "とよはし みんなの議会"}, {"label": "豊橋維新の会", "faction": "豊橋維新の会"}], "blank": [{"label": "小原昌子", "stance": "議長", "evidence": "議長 小原 昌子", "evidenceUrl": "https://web.archive.org/web/20260417061216id_/https://www.city.toyohashi.lg.jp/8127.htm"}]},
       resolution: {
         url: "https://www.city.toyohashi.lg.jp/secure/40193/R8.3giketukekka.pdf",
         title: "議決結果一覧表（3月定例会）",
@@ -25550,6 +25577,7 @@ export const SOURCES: SourceEntry[] = [
       "https://www.city.kasugai.lg.jp/_res/projects/default_project/_page_/001/038/638/R8.1giketsu.pdf",
       "https://www.city.kasugai.lg.jp/shisei/shigikai/gian/1038634/1038636/1038638.html",
       "https://www.city.kasugai.lg.jp/_res/projects/default_project/_page_/001/038/639/20260312hyouketsu.pdf",
+      "https://web.archive.org/web/20260307094440id_/https://www.city.kasugai.lg.jp/shisei/shigikai/gicyou.html",
     ],
     landingPage: "https://www.city.kasugai.lg.jp/shisei/shigikai/1016752.html",
     kind: "page",
@@ -25576,6 +25604,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "無会派", noDeclaredCount: true, noCountReason: "名簿・議決当日（3/12）の表決結果・議会だより138号のどれにも会派の人数・欠員の印字が無い（定数32の原文はあるが、議決時の現員31＝欠員1の原文が見つからない）。表決結果の氏名の列31と書き写しの人数が一致することは目視", independent: true, members: ["小嶋小百合"] },
         { name: "無会派", noDeclaredCount: true, noCountReason: "名簿・議決当日（3/12）の表決結果・議会だより138号のどれにも会派の人数・欠員の印字が無い（定数32の原文はあるが、議決時の現員31＝欠員1の原文が見つからない）。表決結果の氏名の列31と書き写しの人数が一致することは目視", independent: true, members: ["犬塚貴司"] },
       ],
+      votes: {"url": "https://www.city.kasugai.lg.jp/_res/projects/default_project/_page_/001/038/639/20260312hyouketsu.pdf", "title": "第１回定例会 議案等の表決結果", "basis": "member", "legend": {"〇": "賛成", "×": "反対", "－": "除斥", "退": "退席", "欠": "欠席"}, "legendText": "※「〇」・・・賛成、「×」・・・反対、「－」・・・除斥、「退」・・・退場、「欠」・・・欠席 の意味です。", "anchor": "第９号議案", "symbols": "〇○○○○○○○○○○○○○○○○〇○○○○×××〇○○○○", "headerWeakReason": "氏名が縦組みで、-layout では各列の姓の頭の字だけが1行に列の順で並び、-raw では氏名の並びが崩れるため", "columns": [{"label": "金", "member": "金澤陽貴"}, {"label": "前", "member": "前田学"}, {"label": "加", "member": "加納満"}, {"label": "林", "member": "林克巳"}, {"label": "友", "member": "友松孝雄"}, {"label": "鈴", "member": "鈴木貴之"}, {"label": "安", "member": "安達保子"}, {"label": "鈴", "member": "鈴木秀尚"}, {"label": "加", "member": "加藤貴章"}, {"label": "鬼", "member": "鬼頭宏明"}, {"label": "梶", "member": "梶田正直"}, {"label": "堀", "member": "堀尾国大"}, {"label": "長", "member": "長谷川達也"}, {"label": "長", "member": "長縄典夫"}, {"label": "大", "member": "大村勝人"}, {"label": "日", "member": "日比野成利"}, {"label": "石", "member": "石飛厚治"}, {"label": "田", "member": "田口佳子"}, {"label": "鈴", "member": "鈴木宏幸"}, {"label": "伊", "member": "伊藤杏奈"}, {"label": "村", "member": "村上慎二郎"}, {"label": "小", "member": "小原哉"}, {"label": "石", "member": "石田裕信"}, {"label": "原", "member": "原田祐治"}, {"label": "伊", "member": "伊藤建治"}, {"label": "長", "member": "長谷和哉"}, {"label": "奥", "member": "奥村昇次"}, {"label": "鈴", "member": "鈴木昭紀"}, {"label": "小", "member": "小嶋小百合"}, {"label": "犬", "member": "犬塚貴司"}], "blank": [{"label": "梶田高由", "stance": "議長", "evidence": "議長 梶田 高由", "evidenceUrl": "https://web.archive.org/web/20260307094440id_/https://www.city.kasugai.lg.jp/shisei/shigikai/gicyou.html"}]},
       resolution: {
         url: "https://www.city.kasugai.lg.jp/_res/projects/default_project/_page_/001/038/638/R8.1giketsu.pdf",
         title: "令和8年第1回定例会 議案一覧（議決日・結果）",
@@ -25670,6 +25699,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "日本共産党豊中市議会議員団", declared: "（4人）", members: ["山本一徳", "佐々木美穂", "出口文子", "和田愛美"] },
         { name: "無所属", independent: true, declared: "（5人）", members: ["井上弘美", "木村真", "中野宏基", "松岡信道", "山田紗保"] },
       ],
+      votes: {"url": "https://www.city.toyonaka.osaka.jp/shigikai/shigikaioshirase/gikai_ugoki/202603gikaihou.files/202605_gikaihou.pdf", "title": "とよなか市議会のうごき VOL.291「議案などの賛否の状況」", "basis": "faction", "legend": {"〇": "賛成", "×": "反対", "－": "議長"}, "legendText": "〇：賛成（可決・同意・承認・認定・採択）×：反対（否決・不同意・不承認・不認定・不採択）※議長は通常、採決に加わらないため「－」としています。", "anchor": "令和８年度豊中市一般会計予算３／23可決", "symbols": "〇〇〇×〇〇×〇×－", "columns": [{"label": "公明党", "faction": "公明党豊中市議会議員団"}, {"label": "大阪維新の会・無所属", "faction": "大阪維新の会・無所属議員団"}, {"label": "とよなかを共に創る会", "faction": "とよなかを共に創る会"}, {"label": "日本共産党", "faction": "日本共産党豊中市議会議員団"}, {"label": "井上弘美", "faction": "無所属", "member": "井上弘美"}, {"label": "木村真", "faction": "無所属", "member": "木村真"}, {"label": "中野宏基", "faction": "無所属", "member": "中野宏基"}, {"label": "松岡信道", "faction": "無所属", "member": "松岡信道"}, {"label": "山田紗保", "faction": "無所属", "member": "山田紗保"}, {"label": "井本博一", "faction": "とよなかを共に創る会", "member": "井本博一"}]},
       resolution: {
         url: "https://www.city.toyonaka.osaka.jp/shigikai/shigikaioshirase/giketsu_kekka/2026/reiwa8nenn3_giketu.html",
         title: "令和8年(2026年)3月定例会 議決結果",
@@ -25810,6 +25840,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "至誠会", declared: "2人", members: ["稲森洋樹", "田中慎二"] },
         { name: "会派に所属しない議員", independent: true, noDeclaredCount: true, noCountReason: "名簿は「※会派に所属しない議員 鑄方 淳治」と1人を名指しするだけで人数を印字しない。欠員の原文は住所つきの議員名簿にしか無く定数での照合もできない", members: ["鑄方淳治"] },
       ],
+      votes: {"url": "https://www.city.yao.osaka.jp/_res/projects/default_project/_page_/001/023/883/0803saiketutaido.pdf", "title": "令和８年３月市議会定例会 議決結果（議員別採決態度）", "basis": "member", "legend": {"〇": "賛成", "×": "反対", "※１": "議長"}, "legendText": ["○：賛成 ×：反対", "※１・・・議長のため採決に加わらない。"], "anchor": "議案第18号令和８年度八尾市一般会計予算の件", "symbols": "〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇××〇※１〇〇〇", "columns": [{"label": "福永美智子"}, {"label": "南方武"}, {"label": "五百井真二"}, {"label": "前園正昭"}, {"label": "西田尚美"}, {"label": "景山和香"}, {"label": "木村健二"}, {"label": "坂本尚之"}, {"label": "桝井政佐美"}, {"label": "奥田信宏"}, {"label": "川上舞"}, {"label": "松田憲幸"}, {"label": "露原行隆"}, {"label": "田中久夫"}, {"label": "柴谷匡哉"}, {"label": "西川あり"}, {"label": "吉村拓哉"}, {"label": "田中裕子"}, {"label": "越智妙子"}, {"label": "山中宏"}, {"label": "竹田孝吏"}, {"label": "稲森洋樹"}, {"label": "田中慎二"}, {"label": "鑄方淳治"}]},
       resolution: {
         url: "https://www.city.yao.osaka.jp/_res/projects/default_project/_page_/001/023/883/0803saiketutaido.pdf",
         title: "令和８年３月市議会定例会 議決結果（議員別採決態度）",
@@ -25860,6 +25891,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "刷新の会", declared: "（1人）", members: ["岡部敦吏"] },
         { name: "無所属", independent: true, declared: "（1人）", members: ["高見千咲"] },
       ],
+      votes: {"url": "https://www.city.himeji.lg.jp/shisei/cmsfiles/contents/0000032/32725/0325giannsinngikekka.pdf", "title": "提出議案とその結果（令和8年第1回定例会）議案に対する議員の賛否一覧", "basis": "member", "legend": {"○": "賛成", "〇": "賛成", "✕": "反対", "-": "議長"}, "legendText": "賛成者は「〇」、反対者は「×」、欠席者は「欠」、退席者は「退」、除斥者は「除」と表示しています。なお、議長は採決に加わらないため「―」と表示しています。", "anchor": "議案第1号令和８年度姫路市一般会計予算可決", "symbols": "○○○○○○○○○○○○○○○○○○○○○-○○○○○○○○○○○○○○✕○○○○✕✕○〇", "columns": [{"label": "西本眞造"}, {"label": "川島淳良"}, {"label": "白井義一"}, {"label": "中西祥子"}, {"label": "阿野れい子"}, {"label": "前川藤枝"}, {"label": "有馬剛朗"}, {"label": "宮下和也"}, {"label": "竹尾浩司"}, {"label": "常盤真功"}, {"label": "山口悟"}, {"label": "駒田かすみ"}, {"label": "三輪敏之"}, {"label": "阿山正人"}, {"label": "八木隆次郎"}, {"label": "蔭山敏明"}, {"label": "竹中隆一"}, {"label": "井川一善"}, {"label": "重田一政"}, {"label": "仁野央子"}, {"label": "石見和之"}, {"label": "石堂大輔"}, {"label": "宮本吉秀"}, {"label": "三和衛"}, {"label": "井上太良"}, {"label": "東影昭"}, {"label": "萩原唯典"}, {"label": "杉本博昭"}, {"label": "大西陽介"}, {"label": "竹中由佳"}, {"label": "下林崇史"}, {"label": "三浦充博"}, {"label": "妻鹿幸二"}, {"label": "神頭敬介"}, {"label": "嶋谷秀樹"}, {"label": "塚本進介"}, {"label": "牧野圭輔"}, {"label": "坂本学"}, {"label": "金内義和"}, {"label": "西村しのぶ"}, {"label": "松岡廣幸"}, {"label": "谷川真由美"}, {"label": "小田響子"}, {"label": "岡部敦吏"}, {"label": "高見千咲"}]},
       resolution: {
         url: "https://www.city.himeji.lg.jp/shisei/cmsfiles/contents/0000032/32725/0325giannsinngikekka.pdf",
         title: "提出議案とその結果（令和8年第1回定例会）議案に対する議員の賛否一覧",
@@ -26019,6 +26051,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "会派に属しない議員", independent: true, noDeclaredCount: true, members: ["舟木一真"] },
         { name: "会派に属しない議員", independent: true, noDeclaredCount: true, members: ["錦織伸行"] },
       ],
+      votes: {"url": "https://www.city.matsue.lg.jp/material/files/group/108/r8_0326_giinbetuhyouketukekka.pdf", "title": "令和８年第１回松江市議会（定例会）議員別表決結果", "basis": "member", "legend": {"○": "賛成", "●": "反対", "議": "議長", "除": "除斥"}, "legendText": "〇：賛成 ●：反対 議：議長 除：除斥 空欄：欠席、不在等", "anchor": "議第56号令和8年度松江市一般会計予算", "symbols": "○○○○○○○○○○議○○○○○○○○○○○○○○○●●●○○", "columns": [{"label": "わたなべ良平"}, {"label": "岩田幸子"}, {"label": "長谷川浩司"}, {"label": "佐藤和彦"}, {"label": "小澤一竜"}, {"label": "三島明"}, {"label": "原田守"}, {"label": "細木明美"}, {"label": "米田ときこ"}, {"label": "柳原治"}, {"label": "野々内誠"}, {"label": "森脇勇人"}, {"label": "中村ひかり"}, {"label": "村松りえ"}, {"label": "岩本雅之"}, {"label": "川島光雅"}, {"label": "石倉徳章"}, {"label": "石倉茂美"}, {"label": "石倉聡之"}, {"label": "山根宏"}, {"label": "森本秀歳"}, {"label": "津森良治"}, {"label": "吉岡麻美"}, {"label": "佐々田慎吾"}, {"label": "海德邦彦"}, {"label": "太田哲"}, {"label": "樋野伸一"}, {"label": "佐野みどり"}, {"label": "たちばなふみ"}, {"label": "舟木一真"}, {"label": "錦織伸行"}]},
       resolution: {
         url: "https://www.city.matsue.lg.jp/material/files/group/108/r8_3_26giantouitiran.pdf",
         title: "令和８年第１回松江市議会（定例会）議案等一覧表",
@@ -26068,6 +26101,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "青空市民クラブ", declared: "所属議員数3人", members: ["齋藤武次郎", "小郷ひな子", "藤井昭佐"] },
         { name: "日本共産党倉敷市議会議員団", declared: "所属議員数3人", members: ["末田正彦", "田辺牧美", "田口明子"] },
       ],
+      votes: {"url": "https://www.city.kurashiki.okayama.jp/_res/projects/default_project/_page_/001/023/399/0318giinnitirann.pdf", "title": "令和８年２月定例会 議員別表決結果一覧表", "basis": "member", "legend": {"○": "賛成", "×": "反対", "欠": "欠席", "－": "不参加"}, "legendText": "（○：賛成、×：反対、欠：欠席、 －：採決に加わらず）", "anchor": "議案第２６号令和８年度倉敷市一般会計予算", "symbols": "○－○○○○○○○○○○○○○○○○〇○○○○○○○○○○○○○○○○○○○○○×××", "columns": [{"label": "天", "member": "天野千歌"}, {"label": "荒", "member": "荒木竜二"}, {"label": "伊", "member": "伊東裕紀"}, {"label": "北", "member": "北畠克彦"}, {"label": "塩", "member": "塩田健"}, {"label": "時", "member": "時尾博幸"}, {"label": "難", "member": "難波朋裕"}, {"label": "藤", "member": "藤原薫子"}, {"label": "三", "member": "三村英世"}, {"label": "守", "member": "守屋弘志"}, {"label": "赤", "member": "赤澤幹温"}, {"label": "大", "member": "大橋賢"}, {"label": "片", "member": "片山貴光"}, {"label": "真", "member": "真田意索"}, {"label": "中", "member": "中西公仁"}, {"label": "原", "member": "原田龍五"}, {"label": "矢", "member": "矢野周子"}, {"label": "山", "member": "山畑滝男"}, {"label": "若", "member": "若林昭雄"}, {"label": "池", "member": "池田和夫"}, {"label": "太", "member": "太田美貴絵"}, {"label": "生", "member": "生水耕二"}, {"label": "近", "member": "近藤徹弥"}, {"label": "中", "member": "中西善之"}, {"label": "新", "member": "新垣敦子"}, {"label": "薮", "member": "薮田尊典"}, {"label": "芦", "member": "芦田泰宏"}, {"label": "塩", "member": "塩津心"}, {"label": "武", "member": "武則史園"}, {"label": "中", "member": "中島光浩"}, {"label": "日", "member": "日向豊"}, {"label": "平", "member": "平井俊光"}, {"label": "大", "member": "大橋研"}, {"label": "大", "member": "大守秀行"}, {"label": "瀧", "member": "瀧本寛"}, {"label": "松", "member": "松成康昭"}, {"label": "山", "member": "山口博隆"}, {"label": "小", "member": "小郷ひな子"}, {"label": "齋", "member": "齋藤武次郎"}, {"label": "藤", "member": "藤井昭佐"}, {"label": "末", "member": "末田正彦"}, {"label": "田", "member": "田口明子"}, {"label": "田", "member": "田辺牧美"}], "headerWeakReason": "氏名が縦組みで、-raw では氏名の並びが表の列順と違い、-layout では1行目に姓の頭の1字しか横に並ばないため、姓の頭の字を見出しにした（4行を目視で突き合わせた）"},
       resolution: {
         url: "https://www.city.kurashiki.okayama.jp/_res/projects/default_project/_page_/001/023/399/0318giannitiran.pdf",
         title: "令和８年第３回倉敷市議会（第１回定例会）議案一覧",
@@ -26142,6 +26176,7 @@ export const SOURCES: SourceEntry[] = [
       "https://www.city.morioka.iwate.jp/shisei/shigikai/giketsukekka/1055507/1055511.html",
       "https://www.city.morioka.iwate.jp/shisei/shigikai/kaigi_nittei/1055368/1055372.html",
       "https://www.city.morioka.iwate.jp/_res/projects/default_project/_page_/001/056/302/241.2-3.pdf",
+      "https://www.city.morioka.iwate.jp/_res/projects/default_project/_page_/001/055/511/R8.3sanpikekka.pdf",
     ],
     landingPage: "https://www.city.morioka.iwate.jp/shisei/shigikai/giinshokai/1014492.html",
     kind: "page",
@@ -26164,6 +26199,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "日本維新の会", declared: "（にっぽんいしんのかい）1人", members: ["佐藤尚弘"] },
         { name: "れいわ新選組", declared: "（れいわしんせんぐみ）1人", members: ["縄手豊子"] },
       ],
+      votes: {"url": "https://www.city.morioka.iwate.jp/_res/projects/default_project/_page_/001/055/511/R8.3sanpikekka.pdf", "title": "令和8年3月定例会 賛否一覧表", "basis": "member", "legend": {"○": "賛成", "×": "反対", "－": "退席", "欠": "欠席", "／": "議長"}, "legendText": "※ 議案等の賛成者は「〇」、反対者は「×」、退席者は「－」、欠席者は「欠」と表記しています。議長は裁決に加わらないため「／」としています。", "anchor": "議案第3号令和８年度盛岡市一般会計予算", "symbols": "／○○○○○○○○○○○○○○○○○○○○○○○×××××○○○○○○○○×", "columns": [{"label": "櫻裕子"}, {"label": "鈴木真吾"}, {"label": "山崎智樹"}, {"label": "千葉順子"}, {"label": "野田尚紀"}, {"label": "佐藤明彦"}, {"label": "小笠原秀夫"}, {"label": "田山俊悦"}, {"label": "浅沼克人"}, {"label": "千葉伸行"}, {"label": "工藤健一"}, {"label": "藤澤由蔵"}, {"label": "竹田浩久"}, {"label": "天沼久純"}, {"label": "菊田隆"}, {"label": "遠藤政幸"}, {"label": "村田芳三"}, {"label": "細川由香里"}, {"label": "後藤百合子"}, {"label": "兼平孝信"}, {"label": "寺長根浩"}, {"label": "大畑正二"}, {"label": "豊村徹也"}, {"label": "中村一"}, {"label": "庄子春治"}, {"label": "三田村亜美子"}, {"label": "鈴木努"}, {"label": "髙橋和夫"}, {"label": "神部伸也"}, {"label": "中村雅幸"}, {"label": "野中靖志"}, {"label": "中村亨"}, {"label": "伊勢志穂"}, {"label": "太田隆司"}, {"label": "池野直友"}, {"label": "鈴木聖子"}, {"label": "佐藤尚弘"}, {"label": "縄手豊子"}]},
       resolution: {
         url: "https://www.city.morioka.iwate.jp/shisei/shigikai/giketsukekka/1055507/1055511.html",
         title: "令和8年3月定例会 提出議案・議決結果",
@@ -26216,6 +26252,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "市民クラブ", declared: "（2名）", members: ["花田清美", "安井誠悦"] },
         { name: "市民のみかた", declared: "（1名）", members: ["佐藤哲治"] },
       ],
+      votes: {"url": "https://www.city.akita.lg.jp/_res/projects/default_project/_page_/001/049/806/r080317sanpi.pdf", "title": "議案等に対する議員の表決状況（令和８年２月定例会・令和８年３月１７日）", "basis": "member", "legend": {"○": "賛成", "×": "反対", "欠": "欠席", "除": "除斥", "退": "退席", "議": "議長"}, "legendText": "賛否内容（○：賛成【可決・承認・認定・同意・採択・趣旨採択】、×：反対【否決・不承認・不認定・不同意・不採択】、欠：欠席、除：除斥、退：退席、議：議長）", "anchor": "令和８年度秋田市一般会計予算の件", "symbols": "○○○○○○○○○○○○欠○○○○○○○○○○○○○○○○○××○○○議", "columns": [{"label": "荻原貴幸"}, {"label": "細川信二"}, {"label": "見上万里子"}, {"label": "佐藤宏悦"}, {"label": "伊藤一榮"}, {"label": "渡辺正宏"}, {"label": "小木田喜美雄"}, {"label": "飯牟礼克年"}, {"label": "工藤潤平"}, {"label": "工藤知彦"}, {"label": "安井正浩"}, {"label": "伊藤巧一"}, {"label": "熊谷重隆"}, {"label": "菅原琢哉"}, {"label": "小野寺誠"}, {"label": "後藤良"}, {"label": "船木純"}, {"label": "藤田信"}, {"label": "藤枝隆博"}, {"label": "工藤新一"}, {"label": "倉田芳浩"}, {"label": "小林一夫"}, {"label": "佐藤佳人"}, {"label": "牧野守"}, {"label": "武田正子"}, {"label": "石塚秀博"}, {"label": "藤井翼"}, {"label": "菊地格夫"}, {"label": "若松尚利"}, {"label": "小松健"}, {"label": "奈良順子"}, {"label": "佐藤純子"}, {"label": "安井誠悦"}, {"label": "花田清美"}, {"label": "佐藤哲治"}, {"label": "川口雅丈"}]},
       resolution: {
         url: "https://www.city.akita.lg.jp/_res/projects/default_project/_page_/001/049/806/r080317sanpi.pdf",
         title: "議案等に対する議員の表決状況（令和８年２月定例会・令和８年３月１７日）",
@@ -26268,6 +26305,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "日本維新の会", declared: "1名", members: ["小林成好"] },
         { name: "無所属", declared: "2名", independent: true, members: ["清水泉", "大田ちひろ"] },
       ],
+      votes: {"url": "https://www.city.koshigaya.saitama.jp/gikai/singi/gian/giketsu/files/gikaikekka80318.pdf", "title": "令和8年３月定例会 審議結果", "basis": "member", "legend": {"○": "賛成", "×": "反対", "議": "議長"}, "legendText": "凡例：○…賛成 ×…反対 議…議長（議長は採決に加わりません)", "anchor": "第25号議案令和8年度越谷市一般会計予算について", "symbols": "×××××××○○議○○○○○○○○○○○○○○〇○○○〇○○", "columns": [{"label": "浅古高志"}, {"label": "金井直樹"}, {"label": "松島孝夫"}, {"label": "武藤智"}, {"label": "野口高明"}, {"label": "立澤貴明"}, {"label": "横井聖美"}, {"label": "竹内栄治"}, {"label": "瀬賀恭子"}, {"label": "畑谷茂"}, {"label": "久保田茂"}, {"label": "藤部徳治"}, {"label": "和泉田宏幸"}, {"label": "野口佳司"}, {"label": "伊藤治"}, {"label": "島田玲子"}, {"label": "小林豊代子"}, {"label": "清田巳喜男"}, {"label": "白川秀嗣"}, {"label": "菊地貴光"}, {"label": "大野恭子"}, {"label": "斎藤豪人"}, {"label": "後藤孝江"}, {"label": "小口高寛"}, {"label": "土屋来夢"}, {"label": "工藤秀次"}, {"label": "山田大助"}, {"label": "大和田哲"}, {"label": "小林成好"}, {"label": "清水泉"}, {"label": "大田ちひろ"}], "tally": {"text": "第25号議案令和8年度越谷市一般会計予算について×××××××○○議○○○○○○○○○○○○○○〇○○○〇○○237原案可決", "counts": {"賛成": 23, "反対": 7}}},
       resolution: {
         url: "https://www.city.koshigaya.saitama.jp/gikai/singi/gian/giketsu/files/gikaikekka80318.pdf",
         title: "令和8年３月定例会 審議結果",
@@ -26294,6 +26332,7 @@ export const SOURCES: SourceEntry[] = [
     url: null,
     urls: [
       "https://www.city.funabashi.lg.jp/assembly/001/39/02/p145453.html",
+      "https://www.city.funabashi.lg.jp/assembly/001/39/02/p145453_d/fil/8-3-25.pdf",
     ],
     landingPage: "https://www.city.funabashi.lg.jp/assembly/001/39/02/p145453.html",
     kind: "page",
@@ -26317,6 +26356,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "市政会", declared: "（3人）", members: ["滝口一馬", "日色健人", "渡辺賢次"] },
         { name: "無所属", declared: "（4人）", independent: true, members: ["はまの太郎", "三宅けいこ", "佐々木克敏", "朝倉幹晴"] },
       ],
+      votes: {"url": "https://www.city.funabashi.lg.jp/assembly/001/39/02/p145453_d/fil/8-3-25.pdf", "title": "令和8年第1回定例会 議案等に対する賛否について（令和8年3月25日議決）", "basis": "member", "legend": {"○": "賛成", "×": "反対", "欠": "欠席"}, "legendText": "※賛成＝○、反対＝×、欠席＝欠、議長は議員として議決に加わる権利を有しないことが地方自治法第116条第2項で定められており賛否がないため斜線", "anchor": "令和8年度船橋市一般会計予算", "symbols": "○○○○○○○○○○○欠○○○○○○○○○○○○○○○○○○○×××××○○○○○○○○×○○○", "columns": [{"label": "大沢たかのり"}, {"label": "中谷あやの"}, {"label": "池沢みちよ"}, {"label": "高橋けんたろう"}, {"label": "三橋さぶろう"}, {"label": "川井洋基"}, {"label": "浦田秀夫"}, {"label": "神田廣栄"}, {"label": "斉藤誠"}, {"label": "葛生正文"}, {"label": "草場智泉"}, {"label": "上田美穂"}, {"label": "鈴木心一"}, {"label": "木村修"}, {"label": "松橋浩嗣"}, {"label": "橋本和子"}, {"label": "松嵜裕次"}, {"label": "鈴木いくお"}, {"label": "米原まさと"}, {"label": "青木はるか"}, {"label": "市川たけし"}, {"label": "林としのり"}, {"label": "藤代清七郎"}, {"label": "小平奈緒"}, {"label": "いとう紀子"}, {"label": "浅野賢也"}, {"label": "島田たいぞう"}, {"label": "杉川浩"}, {"label": "七戸俊治"}, {"label": "滝口宏"}, {"label": "鈴木和美"}, {"label": "かなみつ理恵"}, {"label": "神子そよ子"}, {"label": "松崎さち"}, {"label": "金沢和子"}, {"label": "岩井友子"}, {"label": "かいさち"}, {"label": "今仲きいこ"}, {"label": "佐藤つぐみ"}, {"label": "齊藤和夫"}, {"label": "大沢ひろゆき"}, {"label": "滝口一馬"}, {"label": "日色健人"}, {"label": "渡辺賢次"}, {"label": "はまの太郎"}, {"label": "三宅けいこ"}, {"label": "佐々木克敏"}, {"label": "朝倉幹晴"}], "blank": [{"label": "岡田とおる", "stance": "議長", "evidence": "岡田とおる（議長）"}]},
       resolution: {
         url: "https://www.city.funabashi.lg.jp/assembly/001/39/02/p145453.html",
         title: "議決結果（令和8年第1回定例会）",
@@ -26343,6 +26383,7 @@ export const SOURCES: SourceEntry[] = [
     urls: [
       "https://www.city.yokosuka.kanagawa.jp/7860/council/roster/giin_kaiha.html",
       "https://www.city.yokosuka.kanagawa.jp/7860/council/result_report/giji/documents/20260325giketsukekka.pdf",
+      "https://www.city.yokosuka.kanagawa.jp/7860/council/result_report/giji/documents/260325giinbetusanpi.pdf",
     ],
     landingPage: "https://www.city.yokosuka.kanagawa.jp/7860/council/roster/giin_kaiha.html",
     kind: "page",
@@ -26364,6 +26405,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "日本共産党", declared: "（3名）", members: ["大村洋子", "井坂直", "ふじそのあき"] },
         { name: "無会派", declared: "（5名）", independent: true, members: ["中川さおり", "葉山なおし", "ひろなか信太郎", "藤野英明", "安川健人"] },
       ],
+      votes: {"url": "https://www.city.yokosuka.kanagawa.jp/7860/council/result_report/giji/documents/260325giinbetusanpi.pdf", "title": "令和８年３月定例議会 提出議案等議決結果【議員別賛否】（２）", "basis": "member", "legend": {"○": "賛成", "×": "反対"}, "legendText": "○＝賛成、×＝反対", "anchor": "横須賀市一", "symbols": "○○○○○○○○○○〇○○○○○○○○○×××××○○○○××××○○×○", "columns": [{"label": "南", "member": "南まさみ"}, {"label": "青", "member": "青木秀介"}, {"label": "田", "member": "田辺昭人"}, {"label": "松", "member": "松岡和行"}, {"label": "大", "member": "大野忠之"}, {"label": "渡", "member": "渡辺光一"}, {"label": "西", "member": "西郷宗範"}, {"label": "山", "member": "山本けんじゅ"}, {"label": "大", "member": "大貫次郎"}, {"label": "池", "member": "池田徳重"}, {"label": "髙", "member": "髙橋いずみ"}, {"label": "泉", "member": "泉谷翔"}, {"label": "海", "member": "海老あやの"}, {"label": "土", "member": "土田弘之宣"}, {"label": "石", "member": "石山満"}, {"label": "関", "member": "関沢敏行"}, {"label": "本", "member": "本石篤志"}, {"label": "二", "member": "二見英一"}, {"label": "川", "member": "川本伸"}, {"label": "菅", "member": "菅原恵美子"}, {"label": "加", "member": "加藤ゆうすけ"}, {"label": "小", "member": "小林優人"}, {"label": "竹", "member": "竹岡力"}, {"label": "天", "member": "天白牧夫"}, {"label": "堀", "member": "堀りょういち"}, {"label": "伊", "member": "伊関功滋"}, {"label": "長", "member": "長谷川昇"}, {"label": "工", "member": "工藤昭四郎"}, {"label": "髙", "member": "髙橋英昭"}, {"label": "大", "member": "大村洋子"}, {"label": "井", "member": "井坂直"}, {"label": "ふ", "member": "ふじそのあき"}, {"label": "中", "member": "中川さおり"}, {"label": "葉", "member": "葉山なおし"}, {"label": "ひ", "member": "ひろなか信太郎"}, {"label": "藤", "member": "藤野英明"}, {"label": "安", "member": "安川健人"}], "blank": [{"label": "加藤眞道", "stance": "議長", "evidence": "加藤眞道（議長）"}], "headerWeakReason": "賛否表の氏名は縦組みで、-layout では1行に各列の1字目が並び（南青田松加大…）、-raw では氏名の順が崩れる。列の順は -layout の字の位置で氏名を組み直して名簿の順と一致することを目で確かめた"},
       resolution: {
         url: "https://www.city.yokosuka.kanagawa.jp/7860/council/result_report/giji/documents/20260325giketsukekka.pdf",
         title: "令和８年３月定例議会 提出議案等議決結果（２）",
@@ -26416,6 +26458,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "みどり", declared: "1人", members: ["野上明人"] },
         { name: "参政党議員会", declared: "1人", members: ["金山茜"] },
       ],
+      votes: {"url": "https://www.city.toyama.lg.jp/_res/projects/default_project/_page_/001/007/118/sanpi-r0803-2.pdf", "title": "令和８年３月定例会 議案等に対する賛否について", "basis": "member", "legend": {"○": "賛成", "×": "反対", "－": "退席"}, "legendText": "※表中の見方：「○」＝賛成 「×」＝反対 「－」＝退席", "anchor": "議案第１号 令和８年度富山市一般会計予算", "symbols": "○〇〇〇〇〇〇〇〇○〇〇○〇○○○○○〇〇〇〇〇○〇○○××××○○○×○", "columns": [{"label": "木地智美"}, {"label": "飯山勝彦"}, {"label": "織田伸一"}, {"label": "高原ゆずる"}, {"label": "豊岡達郎"}, {"label": "松井邦人"}, {"label": "金谷幸則"}, {"label": "舎川智也"}, {"label": "押田大祐"}, {"label": "髙田真里"}, {"label": "髙道秋彦"}, {"label": "横野昭"}, {"label": "金厚有豊"}, {"label": "鋪田博紀"}, {"label": "金岡貴裕"}, {"label": "藤田克樹"}, {"label": "久保大憲"}, {"label": "江西照康"}, {"label": "柞山数男"}, {"label": "細川博徳"}, {"label": "柏佳枝"}, {"label": "松尾茂"}, {"label": "松井桂将"}, {"label": "岡部享"}, {"label": "東篤"}, {"label": "村石篤"}, {"label": "尾上一彦"}, {"label": "橋本雅雄"}, {"label": "金井毅俊"}, {"label": "大島満"}, {"label": "赤星ゆかり"}, {"label": "村上和久"}, {"label": "市田龍一"}, {"label": "谷口寿一"}, {"label": "福田敏彦"}, {"label": "野上明人"}, {"label": "金山茜"}], "blank": [{"label": "高田重信", "stance": "議長", "evidence": "高田 重信（議 長）"}]},
       resolution: {
         url: "https://www.city.toyama.lg.jp/_res/projects/default_project/_page_/001/007/118/sanpi-r0803-2.pdf",
         title: "令和８年３月定例会 議案等に対する賛否について",
@@ -26490,6 +26533,7 @@ export const SOURCES: SourceEntry[] = [
       "https://www.city.hachioji.tokyo.jp/contents/shigikai_1/giin/kakushu/p010679_d/fil/R7-6-9.pdf",
       "https://web.archive.org/web/20260421073609id_/https://www.city.hachioji.tokyo.jp/contents/shigikai_1/giin/kakushu/p010679.html",
       "https://www.city.hachioji.tokyo.jp/contents/shigikai_1/gikainokatudou/honnkaigi/reiwa8/p037014.html",
+      "https://www.city.hachioji.tokyo.jp/contents/shigikai_1/gikainokatudou/honnkaigi/reiwa8/p037014_d/fil/r8yosan_kimei.pdf",
     ],
     landingPage: "https://www.city.hachioji.tokyo.jp/contents/shigikai_1/giin/kakushu/p010679.html",
     kind: "page",
@@ -26510,6 +26554,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "立憲民主・市民の会", noDeclaredCount: true, noCountReason: "会派名簿 PDF に人数の印字が無い。人数は議会だより282号の審議結果一覧（「11人 ９人 ５人 ５人 ７人」・議長を除く）にあるが会派名と数字が別の行に組まれ、定数40・現員38を印字する市議会議員名簿 PDF は議員の自宅の住所・電話番号を載せるので原典にしない", members: ["浜野正太", "九鬼ともみ", "森喜彦", "安藤修三", "小林裕恵"] },
         { name: "諸派", noDeclaredCount: true, noCountReason: "会派名簿 PDF に人数の印字が無い。人数は議会だより282号の審議結果一覧（「11人 ９人 ５人 ５人 ７人」・議長を除く）にあるが会派名と数字が別の行に組まれ、定数40・現員38を印字する市議会議員名簿 PDF は議員の自宅の住所・電話番号を載せるので原典にしない", independent: true, members: ["高橋剛", "舩木翔平", "玉正彩加", "金子亜希子", "山本貴士", "及川賢一", "星野直美"] },
       ],
+      votes: {"url": "https://www.city.hachioji.tokyo.jp/contents/shigikai_1/gikainokatudou/honnkaigi/reiwa8/p037014_d/fil/r8yosan_kimei.pdf", "title": "令和８年第１回定例会 記名投票を行った議案 個人別賛否", "basis": "member", "legend": {"〇": "賛成", "×": "反対", "―": "議長"}, "legendText": "〇：賛成 ×：反対 ―：議長は採決には加わりません", "anchor": "可決", "symbols": "〇〇〇〇〇〇〇〇〇〇〇―〇〇〇〇〇〇〇〇〇×××××〇〇〇〇〇〇〇××〇〇〇", "columns": [{"label": "長谷川順子"}, {"label": "内田由香利"}, {"label": "立川寛之"}, {"label": "西室真希"}, {"label": "岸田功典"}, {"label": "川村奈緒美"}, {"label": "岩田祐樹"}, {"label": "吉本孝良"}, {"label": "鈴木玲央"}, {"label": "福安徹"}, {"label": "小林秀司"}, {"label": "美濃部弥生"}, {"label": "古里幸太郎"}, {"label": "森重博正"}, {"label": "日下部広志"}, {"label": "久保井博美"}, {"label": "冨永純子"}, {"label": "渡口禎"}, {"label": "中島正寿"}, {"label": "五間浩"}, {"label": "村松徹"}, {"label": "綿林夕夏"}, {"label": "望月翔平"}, {"label": "市川克宏"}, {"label": "石井宏和"}, {"label": "鈴木勇次"}, {"label": "浜野正太"}, {"label": "九鬼ともみ"}, {"label": "森喜彦"}, {"label": "安藤修三"}, {"label": "小林裕恵"}, {"label": "高橋剛"}, {"label": "舩木翔平"}, {"label": "玉正彩加"}, {"label": "金子亜希子"}, {"label": "山本貴士"}, {"label": "及川賢一"}, {"label": "星野直美"}], "anchorSide": "before"},
       resolution: {
         url: "https://www.city.hachioji.tokyo.jp/contents/shigikai_1/gikainokatudou/honnkaigi/reiwa8/p037014.html",
         title: "令和8年(2026年)第1回市議会定例会 議案の一覧",
@@ -26579,6 +26624,7 @@ export const SOURCES: SourceEntry[] = [
     urls: [
       "https://web.archive.org/web/20260421110348id_/https://www.city.nagano.nagano.jp/n440500/shigikai/p005269.html",
       "https://www.city.nagano.nagano.jp/n440500/contents/p005627.html",
+      "https://www.city.nagano.nagano.jp/documents/22850/r0803teireikaisinngikkekkaitiran.pdf",
     ],
     landingPage: "https://www.city.nagano.nagano.jp/n440500/shigikai/p005269.html",
     kind: "page",
@@ -26600,6 +26646,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "次世代長野", declared: "（3人）", members: ["和田凌弥", "内藤武道", "木村けいた"] },
         { name: "無所属", independent: true, declared: "（3人）", members: ["倉野立人", "山﨑裕子", "山﨑昭夫"] },
       ],
+      votes: {"url": "https://www.city.nagano.nagano.jp/documents/22850/r0803teireikaisinngikkekkaitiran.pdf", "title": "賛否などの態度が分かれた議案等（議員別賛否一覧）令和8年3月定例会", "basis": "member", "legend": {"〇": "賛成", "×": "反対", "除": "除斥", "退": "退席", "欠": "欠席", "／": "議長"}, "legendText": "※〇＝賛成、×＝反対、除＝除斥、退＝退席、欠＝欠席、議長は裁決に加わらないため「/」と表示しています。", "anchor": "第1号 令和８年度長野市一般会計予算", "symbols": "〇〇〇／〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇××××〇〇〇〇〇〇〇×〇", "columns": [{"label": "小泉栄正"}, {"label": "寺沢さゆり"}, {"label": "西沢利一"}, {"label": "若林祥"}, {"label": "市川和彦"}, {"label": "松田光平"}, {"label": "和田一成"}, {"label": "加藤英夫"}, {"label": "桜井篤"}, {"label": "青木敏明"}, {"label": "宮崎治夫"}, {"label": "北沢哲也"}, {"label": "手塚秀樹"}, {"label": "金沢敦志"}, {"label": "箱山正一"}, {"label": "西脇かおる"}, {"label": "本木晋"}, {"label": "山岸晃"}, {"label": "堀内伸悟"}, {"label": "松井英雄"}, {"label": "清水美加子"}, {"label": "藤澤紀子"}, {"label": "浅川徹"}, {"label": "滝沢真一"}, {"label": "黒沢清一"}, {"label": "阿出川希"}, {"label": "佐藤高志"}, {"label": "鈴木洋一"}, {"label": "東方みゆき"}, {"label": "原ようこ"}, {"label": "和田凌弥"}, {"label": "内藤武道"}, {"label": "木村けいた"}, {"label": "倉野立人"}, {"label": "山﨑裕子"}, {"label": "山﨑昭夫"}]},
       resolution: {
         url: "https://www.city.nagano.nagano.jp/n440500/contents/p005627.html",
         title: "令和8年3月定例会 議案の審議状況",
@@ -26699,6 +26746,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "会派に属さない議員", independent: true, label: "（ー）", noDeclaredCount: true, noCountReason: "名簿（一覧表）に会派ごとの人数の印字が無く、議決前・議決当日の原典にも会派ごとの人数の印字が無い。略称の数（labelSuffix）は凡例「※（ー）は会派に属さない議員」まで数えてしまい使えない。所属は氏名の直後の略称で、全体の人数は「現員数37人」で照合する", members: ["道家康生"] },
         { name: "会派に属さない議員", independent: true, label: "（－）", noDeclaredCount: true, noCountReason: "名簿（一覧表）に会派ごとの人数の印字が無く、議決前・議決当日の原典にも会派ごとの人数の印字が無い。略称の数（labelSuffix）は凡例「※（ー）は会派に属さない議員」まで数えてしまい使えない。所属は氏名の直後の略称で、全体の人数は「現員数37人」で照合する", members: ["披田麻衣"] },
       ],
+      votes: {"url": "https://www.city.gifu.lg.jp/_res/projects/default_project/_page_/001/009/433/r803sanpi2.pdf", "title": "議案等に対する賛否の状況（令和８年３月定例会）", "basis": "member", "legend": {"〇": "賛成", "×": "反対", "除": "除斥", "退": "退席", "欠": "欠席", "－": "議長"}, "legendText": "賛成は「○」、反対は「×」、除斥は「除」、退席は「退」、欠席は「欠」、議長は表決に加わらないため「－」と表記しています。", "anchor": "第1号議案令和8年度岐阜市一般会計予算可決", "symbols": "〇××〇〇〇〇〇〇〇××〇〇〇〇〇欠〇〇〇〇〇〇〇〇〇〇〇〇〇－〇〇×××", "columns": [{"label": "林大貴"}, {"label": "可児隆"}, {"label": "披田麻衣"}, {"label": "大塚翔太"}, {"label": "日比野浩之"}, {"label": "橋爪大"}, {"label": "佐藤幸太"}, {"label": "野本琢磨"}, {"label": "熊田由弘"}, {"label": "河合智美"}, {"label": "原菜穂子"}, {"label": "森下満寿美"}, {"label": "小森忠良"}, {"label": "石原宏基"}, {"label": "富田耕二"}, {"label": "石川宗一郎"}, {"label": "浅野雅樹"}, {"label": "箕輪光顕"}, {"label": "黒田育宏"}, {"label": "若山貴嗣"}, {"label": "石井浩二"}, {"label": "小堀将大"}, {"label": "江崎洋子"}, {"label": "西垣信康"}, {"label": "辻󠄀孝子"}, {"label": "道家康生"}, {"label": "松原和生"}, {"label": "大野一生"}, {"label": "谷藤錦司"}, {"label": "須田眞"}, {"label": "杉山利夫"}, {"label": "竹市勲"}, {"label": "浅野裕司"}, {"label": "高橋正"}, {"label": "田中成佳"}, {"label": "服部勝弘"}, {"label": "堀田信夫"}]},
       resolution: {
         url: "https://www.city.gifu.lg.jp/_res/projects/default_project/_page_/001/009/432/r803giketsu3.pdf",
         title: "令和８年第１回（３月）定例会議決結果・報告一覧",
@@ -26724,6 +26772,7 @@ export const SOURCES: SourceEntry[] = [
       "https://web.archive.org/web/20260311184057id_/https://www.city.okazaki.lg.jp/shigikai/meibo/1009848.html",
       "https://www.city.okazaki.lg.jp/_res/projects/default_project/_page_/001/009/835/0803gikateukekka.pdf",
       "https://www.city.okazaki.lg.jp/_res/projects/default_project/_page_/001/014/429/2026.03.23.pdf",
+      "https://www.city.okazaki.lg.jp/_res/projects/default_project/_page_/001/009/856/232.pdf",
     ],
     landingPage: "https://www.city.okazaki.lg.jp/shigikai/meibo/1009848.html",
     kind: "page",
@@ -26744,6 +26793,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "チャレンジ岡崎", declared: "（3人）", members: ["杉山智騎", "小田高之", "福田澄代"] },
         { name: "無所属", independent: true, declared: "（7人）", members: ["荻野秀範", "畑尻宣長", "伊藤正義", "大原昌幸", "鈴木雅子", "中根善明", "本多勝"] },
       ],
+      votes: {"url": "https://www.city.okazaki.lg.jp/_res/projects/default_project/_page_/001/009/856/232.pdf", "title": "おかざき議会だより vol.232（令和8年3月定例会）議案の賛否一覧表", "basis": "member", "legend": {"○": "賛成", "×": "反対", "−": "議長"}, "legendText": "（ ○：賛成、×：反対 ）", "anchor": "市56", "symbols": "○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○××○×○−○", "columns": [{"label": "磯部亮次"}, {"label": "加藤史朗"}, {"label": "加藤義幸"}, {"label": "金山直樹"}, {"label": "神谷茂樹"}, {"label": "酒井正一"}, {"label": "杉浦久直"}, {"label": "鈴木静男"}, {"label": "田口正夫"}, {"label": "中根武彦"}, {"label": "野々山雄一郎"}, {"label": "野本篤"}, {"label": "蜂須賀一郎"}, {"label": "前田麗子"}, {"label": "三浦康宏"}, {"label": "簗瀬太"}, {"label": "井町圭孝"}, {"label": "加藤嘉哉"}, {"label": "佐藤哲朗"}, {"label": "柴田敏光"}, {"label": "白井正樹"}, {"label": "鈴木英樹"}, {"label": "瀬戸清太郎"}, {"label": "原紀彦"}, {"label": "土谷直樹"}, {"label": "野島さつき"}, {"label": "山村栄"}, {"label": "小田高之"}, {"label": "杉山智騎"}, {"label": "福田澄代"}, {"label": "鈴木雅子"}, {"label": "中根善明"}, {"label": "伊藤正義"}, {"label": "大原昌幸"}, {"label": "本多勝"}, {"label": "荻野秀範"}, {"label": "畑尻宣長"}]},
       resolution: {
         url: "https://www.city.okazaki.lg.jp/_res/projects/default_project/_page_/001/009/835/0803gikateukekka.pdf",
         title: "議決結果一覧表（令和8年3月定例会）",
@@ -26849,6 +26899,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "無所属議員", box: [1640, 125, 27, 137], page: 1, noDeclaredCount: true, noCountReason: "名簿は議決当日の審議結果一覧の列見出しで会派ごとの人数の印字が無い", independent: true, members: ["川﨑久範"] },
         { name: "無所属議員", box: [1669, 125, 28, 137], page: 1, noDeclaredCount: true, noCountReason: "名簿は議決当日の審議結果一覧の列見出しで会派ごとの人数の印字が無い", independent: true, members: ["吉沢哲夫"] },
       ],
+      votes: {"url": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Congress/Kg571_kekka.pdf", "title": "本会議の議決結果（令和8年2月定例会3月18日分）審議結果一覧", "basis": "member", "legend": {"○": "賛成", "×": "反対", "退": "退席"}, "legendText": "○：賛成 ×：反対 退：退席", "anchor": "７ 令和８年度草加市一般会計予算", "symbols": "○○○○○○○○○○○○○○○○○○○○○○○×○○", "columns": [{"label": "田中宣光"}, {"label": "木村忠義"}, {"label": "矢部正平"}, {"label": "小川利八"}, {"label": "芝野勝利"}, {"label": "松井優美子"}, {"label": "白石孝雄"}, {"label": "吉岡健"}, {"label": "佐藤利器"}, {"label": "平山杏香"}, {"label": "関一幸"}, {"label": "田川浩司"}, {"label": "並木正成"}, {"label": "広田丈夫"}, {"label": "石川祐一"}, {"label": "堀込彰二"}, {"label": "金井俊治"}, {"label": "森覚"}, {"label": "藤原みどり"}, {"label": "斉藤雄二"}, {"label": "佐藤憲和"}, {"label": "菊地慶太"}, {"label": "中島綾菜"}, {"label": "平野厚子"}, {"label": "川﨑久範"}, {"label": "吉沢哲夫"}], "blank": [{"label": "鈴木由和", "stance": "議長", "evidence": "草加市議会議長 鈴木由和", "evidenceUrl": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/shiryo2/Sr2B68_0318%201.pdf"}]},
       resolution: {
         url: "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Congress/Kg571_kekka.pdf",
         title: "本会議の議決結果（令和8年2月定例会3月18日分）",
@@ -26899,6 +26950,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "改革の会", box: [1840, 115, 26, 115], page: 1, noDeclaredCount: true, noCountReason: "議決当日の賛否の状況は会派ごとの人数を印字せず、議決時点（原口和人議員の逝去 R8.4.6 後）の会派別名簿は発行元・魚拓のどちらにも残っていない。議会全体の人数は第45号議案の行の表決記号の数（memberMarker）で照合する", members: ["大熊博文"] },
         { name: "日本維新の会", box: [1866, 115, 46, 115], page: 1, noDeclaredCount: true, noCountReason: "議決当日の賛否の状況は会派ごとの人数を印字せず、議決時点（原口和人議員の逝去 R8.4.6 後）の会派別名簿は発行元・魚拓のどちらにも残っていない。議会全体の人数は第45号議案の行の表決記号の数（memberMarker）で照合する", members: ["草場公晴"] },
       ],
+      votes: {"url": "https://www.city.kurume.fukuoka.jp/1100keikaku/2040shigikai/3030hongikai/4010giankekka/files/R8.6sanpi.pdf", "title": "令和8年第2回市議会定例会（6月）における議案に対する賛否の状況", "basis": "member", "legend": {"○": "賛成", "〇": "賛成", "×": "反対", "退": "退席", "欠": "欠席", "除": "除斥", "－": "議長"}, "legendText": "賛成は「○」、反対は「×」、退席は「退」、欠席は「欠」、除斥（利害関係のある議案の審議には参加できないこと）は「除」、議長は表決に加わらないため「－」と表記しています。", "anchor": "第45号議案 令和８年度久留米市一般会計予算 原案可決", "symbols": "○○○－○○○○○○○○○○○○○○〇○○○○○○〇○○×○×××○○", "columns": [{"label": "吉冨巧"}, {"label": "田住和也"}, {"label": "堀田洸太朗"}, {"label": "石井秀夫"}, {"label": "山田貴生"}, {"label": "古賀としかず"}, {"label": "そうだ耕一郎"}, {"label": "中村博俊"}, {"label": "山﨑ケブン"}, {"label": "甲斐田義弘"}, {"label": "石井俊一"}, {"label": "松岡保治"}, {"label": "山下尚"}, {"label": "田中貴子"}, {"label": "生野薫"}, {"label": "田中功一"}, {"label": "塚本弘道"}, {"label": "坂田光弘"}, {"label": "永田一伸"}, {"label": "堺太一郎"}, {"label": "長野哲"}, {"label": "後藤敬介"}, {"label": "権藤智喜"}, {"label": "轟照隆"}, {"label": "秋永峰子"}, {"label": "古賀敏久"}, {"label": "藤林詠子"}, {"label": "石田眞一郎"}, {"label": "佐藤晶二"}, {"label": "吉武憲治"}, {"label": "森﨑巨樹"}, {"label": "金子むつみ"}, {"label": "小林ときこ"}, {"label": "大熊博文"}, {"label": "草場公晴"}]},
       resolution: {
         url: "https://www.city.kurume.fukuoka.jp/1100keikaku/2040shigikai/3030hongikai/4010giankekka/files/R8.6sanpi.pdf",
         title: "令和8年第2回市議会定例会（6月）における議案に対する賛否の状況",

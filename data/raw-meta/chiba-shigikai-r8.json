@@ -63,6 +63,13 @@
       "bytes": 15604,
       "fetchedAt": "2026-10-01T15:50:46.331Z",
       "fetchedFrom": "https://www.city.chiba.jp/shigikai/meibo-menu.html"
+    },
+    {
+      "filename": "aisatu_gicho.html",
+      "sha256": "0a238dae6039b187d9c6673b067237653f5254e79b7602929106d400d532d648",
+      "bytes": 18070,
+      "fetchedAt": "2026-10-02T11:33:13.366Z",
+      "fetchedFrom": "https://www.city.chiba.jp/shigikai/aisatu_gicho.html"
     }
   ]
 }

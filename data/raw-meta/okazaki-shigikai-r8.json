@@ -21,6 +21,13 @@
       "bytes": 87491,
       "fetchedAt": "2026-10-01T16:55:47.087Z",
       "fetchedFrom": "https://www.city.okazaki.lg.jp/_res/projects/default_project/_page_/001/014/429/2026.03.23.pdf"
+    },
+    {
+      "filename": "232.pdf",
+      "sha256": "aa2d559710a8ee0e9818eb360f9b7abb3eb96dd8da5da316813e8cf3c6aa3ff2",
+      "bytes": 2590797,
+      "fetchedAt": "2026-10-02T11:26:04.647Z",
+      "fetchedFrom": "https://www.city.okazaki.lg.jp/_res/projects/default_project/_page_/001/009/856/232.pdf"
     }
   ]
 }

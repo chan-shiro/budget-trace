@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "shizuoka-shi-gikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:51:55.422Z",
+  "parserVersion": "0.6.6",
+  "parsedAt": "2026-10-02T11:33:38.066Z",
   "fiscalYear": "R8",
   "body": "静岡市議会",
   "seats": 48,
@@ -160,5 +160,58 @@
     }
   },
   "rosterTitle": "静岡市議会会派別名簿（令和7年4月25日現在）",
-  "resultTitle": "令和8年2月定例会の結果"
+  "resultTitle": "令和8年2月定例会の結果",
+  "votes": {
+    "basis": "faction",
+    "sourceTitle": "令和8年2月定例会の結果",
+    "sourceFile": "202602gatu_gigetukekka_02.pdf",
+    "columns": [
+      {
+        "label": "自民党",
+        "faction": "自由民主党静岡市議会議員団",
+        "stance": "賛成"
+      },
+      {
+        "label": "志政会",
+        "faction": "志政会",
+        "stance": "賛成"
+      },
+      {
+        "label": "公明党",
+        "faction": "公明党静岡市議会",
+        "stance": "賛成"
+      },
+      {
+        "label": "共産党",
+        "faction": "日本共産党静岡市議会議員団",
+        "stance": "反対"
+      },
+      {
+        "label": "立憲民主党",
+        "faction": "静岡市議会立憲民主党",
+        "stance": "賛成"
+      },
+      {
+        "label": "創生静岡",
+        "faction": "創生静岡",
+        "stance": "賛成"
+      },
+      {
+        "label": "チェンジング",
+        "faction": "チェンジングしずおかプロジェクト",
+        "stance": "賛成"
+      },
+      {
+        "label": "緑の党",
+        "faction": "緑の党グリーンズジャパン",
+        "stance": "反対"
+      },
+      {
+        "label": "山根田鶴子",
+        "faction": "自由民主党静岡市議会議員団",
+        "member": "山根田鶴子",
+        "stance": "議長"
+      }
+    ]
+  }
 }

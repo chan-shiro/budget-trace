@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "hiroshima-shigikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:51:54.035Z",
+  "parserVersion": "0.6.6",
+  "parsedAt": "2026-10-02T11:33:36.093Z",
   "fiscalYear": "R8",
   "body": "広島市議会",
   "seats": 52,
@@ -217,5 +217,83 @@
     }
   },
   "rosterTitle": "会派別一覧（更新日 2026年2月25日）",
-  "resultTitle": "令和8年第2回定例会（2月13日～3月26日）"
+  "resultTitle": "令和8年第2回定例会（2月13日～3月26日）",
+  "votes": {
+    "basis": "faction",
+    "sourceTitle": "２月定例会の議案と議決結果など（令和８年３月26日議決分）",
+    "sourceFile": "260326.pdf",
+    "columns": [
+      {
+        "label": "自民党・市民クラブ",
+        "faction": "自由民主党・市民クラブ",
+        "stance": "賛成"
+      },
+      {
+        "label": "公明党",
+        "faction": "公明党",
+        "stance": "賛成"
+      },
+      {
+        "label": "市民連合・市民の声",
+        "faction": "市民連合・市民の声",
+        "stance": "賛成"
+      },
+      {
+        "label": "日本共産党",
+        "faction": "日本共産党",
+        "stance": "賛成"
+      },
+      {
+        "label": "ひろしま清風会",
+        "faction": "ひろしま清風会",
+        "stance": "賛成"
+      },
+      {
+        "label": "広島維新の会",
+        "faction": "広島維新の会",
+        "stance": "賛成"
+      },
+      {
+        "label": "新政クラブ",
+        "faction": "新政クラブ",
+        "stance": "賛成"
+      },
+      {
+        "label": "無党派クラブ",
+        "faction": "無党派クラブ",
+        "stance": "賛成"
+      },
+      {
+        "label": "至誠会",
+        "faction": "至誠会",
+        "stance": "賛成"
+      },
+      {
+        "label": "清流クラブ",
+        "faction": "清流クラブ",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴蘭会",
+        "faction": "鈴蘭会",
+        "stance": "賛成"
+      },
+      {
+        "label": "新風クラブ",
+        "faction": "新風クラブ",
+        "stance": "賛成"
+      },
+      {
+        "label": "広島成長フォーラム",
+        "faction": "広島成長フォーラム",
+        "stance": "賛成"
+      },
+      {
+        "label": "八條範彦",
+        "faction": "自由民主党・市民クラブ",
+        "member": "八條範彦",
+        "stance": "議長"
+      }
+    ]
+  }
 }

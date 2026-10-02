@@ -14,6 +14,20 @@
       "bytes": 180801,
       "fetchedAt": "2026-10-01T15:24:40.597Z",
       "fetchedFrom": "https://www.city.hamamatsu.shizuoka.jp/documents/171369/giketukekkaitirann.pdf"
+    },
+    {
+      "filename": "giinnsannpiitiran.pdf",
+      "sha256": "7a106193c1b395e51934958c586eea1fb9cc7a82817242dc26965b50bc68ceb5",
+      "bytes": 237767,
+      "fetchedAt": "2026-10-02T11:33:13.376Z",
+      "fetchedFrom": "https://www.city.hamamatsu.shizuoka.jp/documents/171369/giinnsannpiitiran.pdf"
+    },
+    {
+      "filename": "rekidai.html",
+      "sha256": "8603eecb8809565d8fa216748c533a319a9ad71f29df34491323d01f27074765",
+      "bytes": 44600,
+      "fetchedAt": "2026-10-02T11:33:13.377Z",
+      "fetchedFrom": "https://www.city.hamamatsu.shizuoka.jp/gikai/gityoufukugityou/rekidai.html"
     }
   ]
 }

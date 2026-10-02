@@ -14,6 +14,13 @@
       "bytes": 74606,
       "fetchedAt": "2026-10-01T15:50:46.331Z",
       "fetchedFrom": "https://www.city.niigata.lg.jp/shigikai/index_honkaigi/honkaigi_kekka/r8kekka/r0802.html"
+    },
+    {
+      "filename": "gityou_aisatsu.html",
+      "sha256": "0cb22617b71d4ea54b4fb6c4c8b2316a83b26801f99be05ea9435647b0206d9c",
+      "bytes": 17062,
+      "fetchedAt": "2026-10-02T11:33:13.374Z",
+      "fetchedFrom": "https://www.city.niigata.lg.jp/shigikai/index_gityou/gityou_aisatsu.html"
     }
   ]
 }

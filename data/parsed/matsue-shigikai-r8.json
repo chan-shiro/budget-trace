@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "matsue-shigikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:51:58.800Z",
+  "parserVersion": "0.6.6",
+  "parsedAt": "2026-10-02T11:33:42.815Z",
   "fiscalYear": "R8",
   "body": "松江市議会",
   "seats": 31,
@@ -132,5 +132,198 @@
     }
   },
   "rosterTitle": "松江市議会議員名簿（会派別）（令和7年4月24日現在）",
-  "resultTitle": "令和８年第１回松江市議会（定例会）議案等一覧表"
+  "resultTitle": "令和８年第１回松江市議会（定例会）議案等一覧表",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "令和８年第１回松江市議会（定例会）議員別表決結果",
+    "sourceFile": "r8_0326_giinbetuhyouketukekka.pdf",
+    "columns": [
+      {
+        "label": "わたなべ良平",
+        "faction": "誠政松江",
+        "member": "わたなべ良平",
+        "stance": "賛成"
+      },
+      {
+        "label": "岩田幸子",
+        "faction": "誠政松江",
+        "member": "岩田幸子",
+        "stance": "賛成"
+      },
+      {
+        "label": "長谷川浩司",
+        "faction": "誠政松江",
+        "member": "長谷川浩司",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐藤和彦",
+        "faction": "誠政松江",
+        "member": "佐藤和彦",
+        "stance": "賛成"
+      },
+      {
+        "label": "小澤一竜",
+        "faction": "誠政松江",
+        "member": "小澤一竜",
+        "stance": "賛成"
+      },
+      {
+        "label": "三島明",
+        "faction": "誠政松江",
+        "member": "三島明",
+        "stance": "賛成"
+      },
+      {
+        "label": "原田守",
+        "faction": "誠政松江",
+        "member": "原田守",
+        "stance": "賛成"
+      },
+      {
+        "label": "細木明美",
+        "faction": "誠政松江",
+        "member": "細木明美",
+        "stance": "賛成"
+      },
+      {
+        "label": "米田ときこ",
+        "faction": "誠政松江",
+        "member": "米田ときこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "柳原治",
+        "faction": "誠政松江",
+        "member": "柳原治",
+        "stance": "賛成"
+      },
+      {
+        "label": "野々内誠",
+        "faction": "誠政松江",
+        "member": "野々内誠",
+        "stance": "議長"
+      },
+      {
+        "label": "森脇勇人",
+        "faction": "誠政松江",
+        "member": "森脇勇人",
+        "stance": "賛成"
+      },
+      {
+        "label": "中村ひかり",
+        "faction": "志翔の会",
+        "member": "中村ひかり",
+        "stance": "賛成"
+      },
+      {
+        "label": "村松りえ",
+        "faction": "志翔の会",
+        "member": "村松りえ",
+        "stance": "賛成"
+      },
+      {
+        "label": "岩本雅之",
+        "faction": "志翔の会",
+        "member": "岩本雅之",
+        "stance": "賛成"
+      },
+      {
+        "label": "川島光雅",
+        "faction": "志翔の会",
+        "member": "川島光雅",
+        "stance": "賛成"
+      },
+      {
+        "label": "石倉徳章",
+        "faction": "志翔の会",
+        "member": "石倉徳章",
+        "stance": "賛成"
+      },
+      {
+        "label": "石倉茂美",
+        "faction": "志翔の会",
+        "member": "石倉茂美",
+        "stance": "賛成"
+      },
+      {
+        "label": "石倉聡之",
+        "faction": "民主ネットワーク",
+        "member": "石倉聡之",
+        "stance": "賛成"
+      },
+      {
+        "label": "山根宏",
+        "faction": "民主ネットワーク",
+        "member": "山根宏",
+        "stance": "賛成"
+      },
+      {
+        "label": "森本秀歳",
+        "faction": "民主ネットワーク",
+        "member": "森本秀歳",
+        "stance": "賛成"
+      },
+      {
+        "label": "津森良治",
+        "faction": "民主ネットワーク",
+        "member": "津森良治",
+        "stance": "賛成"
+      },
+      {
+        "label": "吉岡麻美",
+        "faction": "公明クラブ",
+        "member": "吉岡麻美",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐々田慎吾",
+        "faction": "公明クラブ",
+        "member": "佐々田慎吾",
+        "stance": "賛成"
+      },
+      {
+        "label": "海德邦彦",
+        "faction": "公明クラブ",
+        "member": "海德邦彦",
+        "stance": "賛成"
+      },
+      {
+        "label": "太田哲",
+        "faction": "公明クラブ",
+        "member": "太田哲",
+        "stance": "賛成"
+      },
+      {
+        "label": "樋野伸一",
+        "faction": "日本共産党松江市議団",
+        "member": "樋野伸一",
+        "stance": "反対"
+      },
+      {
+        "label": "佐野みどり",
+        "faction": "日本共産党松江市議団",
+        "member": "佐野みどり",
+        "stance": "反対"
+      },
+      {
+        "label": "たちばなふみ",
+        "faction": "日本共産党松江市議団",
+        "member": "たちばなふみ",
+        "stance": "反対"
+      },
+      {
+        "label": "舟木一真",
+        "faction": "会派に属しない議員（舟木一真）",
+        "member": "舟木一真",
+        "stance": "賛成"
+      },
+      {
+        "label": "錦織伸行",
+        "faction": "会派に属しない議員（錦織伸行）",
+        "member": "錦織伸行",
+        "stance": "賛成"
+      }
+    ]
+  }
 }

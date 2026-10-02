@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "hachioji-shigikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:51:59.924Z",
+  "parserVersion": "0.6.6",
+  "parsedAt": "2026-10-02T11:33:44.864Z",
   "fiscalYear": "R8",
   "body": "八王子市議会",
   "seats": 38,
@@ -115,5 +115,240 @@
     }
   },
   "rosterTitle": "会派名簿（令和7年（2025年）6月9日現在）",
-  "resultTitle": "令和8年(2026年)第1回市議会定例会 議案の一覧"
+  "resultTitle": "令和8年(2026年)第1回市議会定例会 議案の一覧",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "令和８年第１回定例会 記名投票を行った議案 個人別賛否",
+    "sourceFile": "r8yosan_kimei.pdf",
+    "columns": [
+      {
+        "label": "長谷川順子",
+        "faction": "自民党新政会",
+        "member": "長谷川順子",
+        "stance": "賛成"
+      },
+      {
+        "label": "内田由香利",
+        "faction": "自民党新政会",
+        "member": "内田由香利",
+        "stance": "賛成"
+      },
+      {
+        "label": "立川寛之",
+        "faction": "自民党新政会",
+        "member": "立川寛之",
+        "stance": "賛成"
+      },
+      {
+        "label": "西室真希",
+        "faction": "自民党新政会",
+        "member": "西室真希",
+        "stance": "賛成"
+      },
+      {
+        "label": "岸田功典",
+        "faction": "自民党新政会",
+        "member": "岸田功典",
+        "stance": "賛成"
+      },
+      {
+        "label": "川村奈緒美",
+        "faction": "自民党新政会",
+        "member": "川村奈緒美",
+        "stance": "賛成"
+      },
+      {
+        "label": "岩田祐樹",
+        "faction": "自民党新政会",
+        "member": "岩田祐樹",
+        "stance": "賛成"
+      },
+      {
+        "label": "吉本孝良",
+        "faction": "自民党新政会",
+        "member": "吉本孝良",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴木玲央",
+        "faction": "自民党新政会",
+        "member": "鈴木玲央",
+        "stance": "賛成"
+      },
+      {
+        "label": "福安徹",
+        "faction": "自民党新政会",
+        "member": "福安徹",
+        "stance": "賛成"
+      },
+      {
+        "label": "小林秀司",
+        "faction": "自民党新政会",
+        "member": "小林秀司",
+        "stance": "賛成"
+      },
+      {
+        "label": "美濃部弥生",
+        "faction": "八王子市議会公明党",
+        "member": "美濃部弥生",
+        "stance": "議長"
+      },
+      {
+        "label": "古里幸太郎",
+        "faction": "八王子市議会公明党",
+        "member": "古里幸太郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "森重博正",
+        "faction": "八王子市議会公明党",
+        "member": "森重博正",
+        "stance": "賛成"
+      },
+      {
+        "label": "日下部広志",
+        "faction": "八王子市議会公明党",
+        "member": "日下部広志",
+        "stance": "賛成"
+      },
+      {
+        "label": "久保井博美",
+        "faction": "八王子市議会公明党",
+        "member": "久保井博美",
+        "stance": "賛成"
+      },
+      {
+        "label": "冨永純子",
+        "faction": "八王子市議会公明党",
+        "member": "冨永純子",
+        "stance": "賛成"
+      },
+      {
+        "label": "渡口禎",
+        "faction": "八王子市議会公明党",
+        "member": "渡口禎",
+        "stance": "賛成"
+      },
+      {
+        "label": "中島正寿",
+        "faction": "八王子市議会公明党",
+        "member": "中島正寿",
+        "stance": "賛成"
+      },
+      {
+        "label": "五間浩",
+        "faction": "八王子市議会公明党",
+        "member": "五間浩",
+        "stance": "賛成"
+      },
+      {
+        "label": "村松徹",
+        "faction": "八王子市議会公明党",
+        "member": "村松徹",
+        "stance": "賛成"
+      },
+      {
+        "label": "綿林夕夏",
+        "faction": "日本共産党八王子市議会議員団",
+        "member": "綿林夕夏",
+        "stance": "反対"
+      },
+      {
+        "label": "望月翔平",
+        "faction": "日本共産党八王子市議会議員団",
+        "member": "望月翔平",
+        "stance": "反対"
+      },
+      {
+        "label": "市川克宏",
+        "faction": "日本共産党八王子市議会議員団",
+        "member": "市川克宏",
+        "stance": "反対"
+      },
+      {
+        "label": "石井宏和",
+        "faction": "日本共産党八王子市議会議員団",
+        "member": "石井宏和",
+        "stance": "反対"
+      },
+      {
+        "label": "鈴木勇次",
+        "faction": "日本共産党八王子市議会議員団",
+        "member": "鈴木勇次",
+        "stance": "反対"
+      },
+      {
+        "label": "浜野正太",
+        "faction": "立憲民主・市民の会",
+        "member": "浜野正太",
+        "stance": "賛成"
+      },
+      {
+        "label": "九鬼ともみ",
+        "faction": "立憲民主・市民の会",
+        "member": "九鬼ともみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "森喜彦",
+        "faction": "立憲民主・市民の会",
+        "member": "森喜彦",
+        "stance": "賛成"
+      },
+      {
+        "label": "安藤修三",
+        "faction": "立憲民主・市民の会",
+        "member": "安藤修三",
+        "stance": "賛成"
+      },
+      {
+        "label": "小林裕恵",
+        "faction": "立憲民主・市民の会",
+        "member": "小林裕恵",
+        "stance": "賛成"
+      },
+      {
+        "label": "高橋剛",
+        "faction": "諸派",
+        "member": "高橋剛",
+        "stance": "賛成"
+      },
+      {
+        "label": "舩木翔平",
+        "faction": "諸派",
+        "member": "舩木翔平",
+        "stance": "賛成"
+      },
+      {
+        "label": "玉正彩加",
+        "faction": "諸派",
+        "member": "玉正彩加",
+        "stance": "反対"
+      },
+      {
+        "label": "金子亜希子",
+        "faction": "諸派",
+        "member": "金子亜希子",
+        "stance": "反対"
+      },
+      {
+        "label": "山本貴士",
+        "faction": "諸派",
+        "member": "山本貴士",
+        "stance": "賛成"
+      },
+      {
+        "label": "及川賢一",
+        "faction": "諸派",
+        "member": "及川賢一",
+        "stance": "賛成"
+      },
+      {
+        "label": "星野直美",
+        "faction": "諸派",
+        "member": "星野直美",
+        "stance": "賛成"
+      }
+    ]
+  }
 }

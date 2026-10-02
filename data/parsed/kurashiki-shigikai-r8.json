@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "kurashiki-shigikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:51:58.916Z",
+  "parserVersion": "0.6.6",
+  "parsedAt": "2026-10-02T11:33:43.012Z",
   "fiscalYear": "R8",
   "body": "倉敷市議会",
   "seats": 43,
@@ -144,5 +144,270 @@
     }
   },
   "rosterTitle": "会派別名簿（更新日 2025年2月18日）",
-  "resultTitle": "令和８年第３回倉敷市議会（第１回定例会）議案一覧"
+  "resultTitle": "令和８年第３回倉敷市議会（第１回定例会）議案一覧",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "令和８年２月定例会 議員別表決結果一覧表",
+    "sourceFile": "0318giinnitirann.pdf",
+    "columns": [
+      {
+        "label": "天",
+        "faction": "くらしき創生クラブ",
+        "member": "天野千歌",
+        "stance": "賛成"
+      },
+      {
+        "label": "荒",
+        "faction": "くらしき創生クラブ",
+        "member": "荒木竜二",
+        "stance": "不参加"
+      },
+      {
+        "label": "伊",
+        "faction": "くらしき創生クラブ",
+        "member": "伊東裕紀",
+        "stance": "賛成"
+      },
+      {
+        "label": "北",
+        "faction": "くらしき創生クラブ",
+        "member": "北畠克彦",
+        "stance": "賛成"
+      },
+      {
+        "label": "塩",
+        "faction": "くらしき創生クラブ",
+        "member": "塩田健",
+        "stance": "賛成"
+      },
+      {
+        "label": "時",
+        "faction": "くらしき創生クラブ",
+        "member": "時尾博幸",
+        "stance": "賛成"
+      },
+      {
+        "label": "難",
+        "faction": "くらしき創生クラブ",
+        "member": "難波朋裕",
+        "stance": "賛成"
+      },
+      {
+        "label": "藤",
+        "faction": "くらしき創生クラブ",
+        "member": "藤原薫子",
+        "stance": "賛成"
+      },
+      {
+        "label": "三",
+        "faction": "くらしき創生クラブ",
+        "member": "三村英世",
+        "stance": "賛成"
+      },
+      {
+        "label": "守",
+        "faction": "くらしき創生クラブ",
+        "member": "守屋弘志",
+        "stance": "賛成"
+      },
+      {
+        "label": "赤",
+        "faction": "未来クラブ",
+        "member": "赤澤幹温",
+        "stance": "賛成"
+      },
+      {
+        "label": "大",
+        "faction": "未来クラブ",
+        "member": "大橋賢",
+        "stance": "賛成"
+      },
+      {
+        "label": "片",
+        "faction": "未来クラブ",
+        "member": "片山貴光",
+        "stance": "賛成"
+      },
+      {
+        "label": "真",
+        "faction": "未来クラブ",
+        "member": "真田意索",
+        "stance": "賛成"
+      },
+      {
+        "label": "中",
+        "faction": "未来クラブ",
+        "member": "中西公仁",
+        "stance": "賛成"
+      },
+      {
+        "label": "原",
+        "faction": "未来クラブ",
+        "member": "原田龍五",
+        "stance": "賛成"
+      },
+      {
+        "label": "矢",
+        "faction": "未来クラブ",
+        "member": "矢野周子",
+        "stance": "賛成"
+      },
+      {
+        "label": "山",
+        "faction": "未来クラブ",
+        "member": "山畑滝男",
+        "stance": "賛成"
+      },
+      {
+        "label": "若",
+        "faction": "未来クラブ",
+        "member": "若林昭雄",
+        "stance": "賛成"
+      },
+      {
+        "label": "池",
+        "faction": "公明党倉敷市議団",
+        "member": "池田和夫",
+        "stance": "賛成"
+      },
+      {
+        "label": "太",
+        "faction": "公明党倉敷市議団",
+        "member": "太田美貴絵",
+        "stance": "賛成"
+      },
+      {
+        "label": "生",
+        "faction": "公明党倉敷市議団",
+        "member": "生水耕二",
+        "stance": "賛成"
+      },
+      {
+        "label": "近",
+        "faction": "公明党倉敷市議団",
+        "member": "近藤徹弥",
+        "stance": "賛成"
+      },
+      {
+        "label": "中",
+        "faction": "公明党倉敷市議団",
+        "member": "中西善之",
+        "stance": "賛成"
+      },
+      {
+        "label": "新",
+        "faction": "公明党倉敷市議団",
+        "member": "新垣敦子",
+        "stance": "賛成"
+      },
+      {
+        "label": "薮",
+        "faction": "公明党倉敷市議団",
+        "member": "薮田尊典",
+        "stance": "賛成"
+      },
+      {
+        "label": "芦",
+        "faction": "新風くらしき",
+        "member": "芦田泰宏",
+        "stance": "賛成"
+      },
+      {
+        "label": "塩",
+        "faction": "新風くらしき",
+        "member": "塩津心",
+        "stance": "賛成"
+      },
+      {
+        "label": "武",
+        "faction": "新風くらしき",
+        "member": "武則史園",
+        "stance": "賛成"
+      },
+      {
+        "label": "中",
+        "faction": "新風くらしき",
+        "member": "中島光浩",
+        "stance": "賛成"
+      },
+      {
+        "label": "日",
+        "faction": "新風くらしき",
+        "member": "日向豊",
+        "stance": "賛成"
+      },
+      {
+        "label": "平",
+        "faction": "新風くらしき",
+        "member": "平井俊光",
+        "stance": "賛成"
+      },
+      {
+        "label": "大",
+        "faction": "新政クラブ",
+        "member": "大橋研",
+        "stance": "賛成"
+      },
+      {
+        "label": "大",
+        "faction": "新政クラブ",
+        "member": "大守秀行",
+        "stance": "賛成"
+      },
+      {
+        "label": "瀧",
+        "faction": "新政クラブ",
+        "member": "瀧本寛",
+        "stance": "賛成"
+      },
+      {
+        "label": "松",
+        "faction": "新政クラブ",
+        "member": "松成康昭",
+        "stance": "賛成"
+      },
+      {
+        "label": "山",
+        "faction": "新政クラブ",
+        "member": "山口博隆",
+        "stance": "賛成"
+      },
+      {
+        "label": "小",
+        "faction": "青空市民クラブ",
+        "member": "小郷ひな子",
+        "stance": "賛成"
+      },
+      {
+        "label": "齋",
+        "faction": "青空市民クラブ",
+        "member": "齋藤武次郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "藤",
+        "faction": "青空市民クラブ",
+        "member": "藤井昭佐",
+        "stance": "賛成"
+      },
+      {
+        "label": "末",
+        "faction": "日本共産党倉敷市議会議員団",
+        "member": "末田正彦",
+        "stance": "反対"
+      },
+      {
+        "label": "田",
+        "faction": "日本共産党倉敷市議会議員団",
+        "member": "田口明子",
+        "stance": "反対"
+      },
+      {
+        "label": "田",
+        "faction": "日本共産党倉敷市議会議員団",
+        "member": "田辺牧美",
+        "stance": "反対"
+      }
+    ]
+  }
 }

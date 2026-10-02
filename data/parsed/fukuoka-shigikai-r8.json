@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "fukuoka-shigikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:51:54.234Z",
+  "parserVersion": "0.6.6",
+  "parsedAt": "2026-10-02T11:33:36.357Z",
   "fiscalYear": "R8",
   "body": "福岡市議会",
   "seats": 60,
@@ -215,5 +215,83 @@
     }
   },
   "rosterTitle": "議員一覧（令和８年２月20日時点、令和８年３月27日時点）",
-  "resultTitle": "令和８年第１回福岡市議会（定例会） 議案の議決結果"
+  "resultTitle": "令和８年第１回福岡市議会（定例会） 議案の議決結果",
+  "votes": {
+    "basis": "faction",
+    "sourceTitle": "令和８年第１回福岡市議会（定例会） 議案の議決結果（会派ごとの賛否）",
+    "sourceFile": "r8_gikai1.html",
+    "columns": [
+      {
+        "label": "自民",
+        "faction": "自由民主党福岡市議団",
+        "stance": "賛成"
+      },
+      {
+        "label": "公明",
+        "faction": "公明党福岡市議団",
+        "stance": "賛成"
+      },
+      {
+        "label": "市民ク",
+        "faction": "福岡市民クラブ",
+        "stance": "反対"
+      },
+      {
+        "label": "共産",
+        "faction": "日本共産党福岡市議団",
+        "stance": "反対"
+      },
+      {
+        "label": "新風",
+        "faction": "新しい風ふくおか",
+        "stance": "賛成"
+      },
+      {
+        "label": "維新",
+        "faction": "日本維新の会福岡市議団",
+        "stance": "賛成"
+      },
+      {
+        "label": "自民新",
+        "faction": "自民党新福岡",
+        "stance": "賛成"
+      },
+      {
+        "label": "無所属１",
+        "faction": "無所属（あべひでき）",
+        "member": "あべひでき",
+        "stance": "賛成"
+      },
+      {
+        "label": "無所属２",
+        "faction": "無所属（新開ゆうじ）",
+        "member": "新開ゆうじ",
+        "stance": "賛成"
+      },
+      {
+        "label": "無所属３",
+        "faction": "無所属（木村てつあき）",
+        "member": "木村てつあき",
+        "stance": "賛成"
+      },
+      {
+        "label": "無所属４",
+        "faction": "無所属（森あやこ）",
+        "member": "森あやこ",
+        "stance": "反対"
+      },
+      {
+        "label": "無所属５",
+        "faction": "無所属（川口浩）",
+        "member": "川口浩",
+        "stance": "賛成"
+      },
+      {
+        "label": "平畑雅博",
+        "faction": "自由民主党福岡市議団",
+        "member": "平畑雅博",
+        "stance": "議長"
+      }
+    ]
+  }
 }

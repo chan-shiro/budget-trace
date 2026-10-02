@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "kitakyushu-gikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:51:54.139Z",
+  "parserVersion": "0.6.6",
+  "parsedAt": "2026-10-02T11:33:36.242Z",
   "fiscalYear": "R8",
   "body": "北九州市議会",
   "seats": 57,
@@ -168,5 +168,58 @@
     }
   },
   "rosterTitle": "議員名簿 会派別（更新日 2026年2月2日）",
-  "resultTitle": "会議結果一覧（令和8年2月定例会）"
+  "resultTitle": "会議結果一覧（令和8年2月定例会）",
+  "votes": {
+    "basis": "faction",
+    "sourceTitle": "令和８年２月定例会 会議結果（各会派の賛否状況）",
+    "sourceFile": "001198333.pdf",
+    "columns": [
+      {
+        "label": "自民党・無所属の会",
+        "faction": "自民党・無所属の会",
+        "stance": "賛成"
+      },
+      {
+        "label": "公明党",
+        "faction": "公明党",
+        "stance": "賛成"
+      },
+      {
+        "label": "市民とともに北九州",
+        "faction": "市民とともに北九州",
+        "stance": "賛成"
+      },
+      {
+        "label": "日本共産党",
+        "faction": "日本共産党",
+        "stance": "反対"
+      },
+      {
+        "label": "北九州会",
+        "faction": "北九州会",
+        "stance": "賛成"
+      },
+      {
+        "label": "緑の風",
+        "faction": "緑の風",
+        "stance": "反対"
+      },
+      {
+        "label": "日本維新の会",
+        "faction": "日本維新の会",
+        "stance": "賛成"
+      },
+      {
+        "label": "変革と成長",
+        "faction": "変革と成長",
+        "stance": "賛成"
+      },
+      {
+        "label": "中村義雄",
+        "faction": "自民党・無所属の会",
+        "member": "中村義雄",
+        "stance": "議長"
+      }
+    ]
+  }
 }

@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "koriyama-shigikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:51:56.197Z",
+  "parserVersion": "0.6.6",
+  "parsedAt": "2026-10-02T11:33:39.056Z",
   "fiscalYear": "R8",
   "body": "郡山市議会",
   "seats": 38,
@@ -171,5 +171,240 @@
     }
   },
   "rosterTitle": "会派別議員名簿（更新日 2025年9月9日）",
-  "resultTitle": "令和８年３月定例会（３月19日）議決結果"
+  "resultTitle": "令和８年３月定例会（３月19日）議決結果",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "議案等に対する各議員の賛否（令和８年３月定例会・３月19日議決分）",
+    "sourceFile": "118823.pdf",
+    "columns": [
+      {
+        "label": "近内利男",
+        "faction": "志翔会",
+        "member": "近内利男",
+        "stance": "議長"
+      },
+      {
+        "label": "本田豊栄",
+        "faction": "志翔会",
+        "member": "本田豊栄",
+        "stance": "賛成"
+      },
+      {
+        "label": "大河原裕勝",
+        "faction": "志翔会",
+        "member": "大河原裕勝",
+        "stance": "賛成"
+      },
+      {
+        "label": "薄井長広",
+        "faction": "志翔会",
+        "member": "薄井長広",
+        "stance": "賛成"
+      },
+      {
+        "label": "伊藤典夫",
+        "faction": "志翔会",
+        "member": "伊藤典夫",
+        "stance": "賛成"
+      },
+      {
+        "label": "加藤漢太",
+        "faction": "志翔会",
+        "member": "加藤漢太",
+        "stance": "賛成"
+      },
+      {
+        "label": "森合秀行",
+        "faction": "志翔会",
+        "member": "森合秀行",
+        "stance": "賛成"
+      },
+      {
+        "label": "塩田義智",
+        "faction": "志翔会",
+        "member": "塩田義智",
+        "stance": "賛成"
+      },
+      {
+        "label": "久野三男",
+        "faction": "志翔会",
+        "member": "久野三男",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐藤政喜",
+        "faction": "志翔会",
+        "member": "佐藤政喜",
+        "stance": "賛成"
+      },
+      {
+        "label": "大城宏之",
+        "faction": "志翔会",
+        "member": "大城宏之",
+        "stance": "賛成"
+      },
+      {
+        "label": "冨樫賢太郎",
+        "faction": "新政会",
+        "member": "冨樫賢太郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "遠藤利子",
+        "faction": "新政会",
+        "member": "遠藤利子",
+        "stance": "賛成"
+      },
+      {
+        "label": "福田文子",
+        "faction": "新政会",
+        "member": "福田文子",
+        "stance": "賛成"
+      },
+      {
+        "label": "會田一男",
+        "faction": "新政会",
+        "member": "會田一男",
+        "stance": "賛成"
+      },
+      {
+        "label": "折笠正",
+        "faction": "新政会",
+        "member": "折笠正",
+        "stance": "賛成"
+      },
+      {
+        "label": "良田金次郎",
+        "faction": "新政会",
+        "member": "良田金次郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "栗原晃",
+        "faction": "新政会",
+        "member": "栗原晃",
+        "stance": "賛成"
+      },
+      {
+        "label": "廣田耕一",
+        "faction": "新政会",
+        "member": "廣田耕一",
+        "stance": "賛成"
+      },
+      {
+        "label": "石川義和",
+        "faction": "新政会",
+        "member": "石川義和",
+        "stance": "賛成"
+      },
+      {
+        "label": "山根悟",
+        "faction": "郡山市議会公明党",
+        "member": "山根悟",
+        "stance": "賛成"
+      },
+      {
+        "label": "伹野光夫",
+        "faction": "郡山市議会公明党",
+        "member": "但野光夫",
+        "stance": "賛成"
+      },
+      {
+        "label": "田川正治",
+        "faction": "郡山市議会公明党",
+        "member": "田川正治",
+        "stance": "欠席"
+      },
+      {
+        "label": "小島寛子",
+        "faction": "郡山市議会公明党",
+        "member": "小島寛子",
+        "stance": "賛成"
+      },
+      {
+        "label": "池田義人",
+        "faction": "緑風会",
+        "member": "池田義人",
+        "stance": "賛成"
+      },
+      {
+        "label": "名木敬一",
+        "faction": "緑風会",
+        "member": "名木敬一",
+        "stance": "賛成"
+      },
+      {
+        "label": "大木進",
+        "faction": "緑風会",
+        "member": "大木進",
+        "stance": "賛成"
+      },
+      {
+        "label": "諸越裕",
+        "faction": "緑風会",
+        "member": "諸越裕",
+        "stance": "賛成"
+      },
+      {
+        "label": "村上晃一",
+        "faction": "自由民主党郡山市議団",
+        "member": "村上晃一",
+        "stance": "賛成"
+      },
+      {
+        "label": "三瓶宗盛",
+        "faction": "自由民主党郡山市議団",
+        "member": "三瓶宗盛",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐藤栄作",
+        "faction": "自由民主党郡山市議団",
+        "member": "佐藤栄作",
+        "stance": "賛成"
+      },
+      {
+        "label": "遠藤隆",
+        "faction": "日本共産党郡山市議団",
+        "member": "遠藤隆",
+        "stance": "反対"
+      },
+      {
+        "label": "岡田哲夫",
+        "faction": "日本共産党郡山市議団",
+        "member": "岡田哲夫",
+        "stance": "反対"
+      },
+      {
+        "label": "飯塚裕一",
+        "faction": "立憲民主党郡山",
+        "member": "飯塚裕一",
+        "stance": "賛成"
+      },
+      {
+        "label": "八重樫小代子",
+        "faction": "立憲民主党郡山",
+        "member": "八重樫小代子",
+        "stance": "賛成"
+      },
+      {
+        "label": "箭内好彦",
+        "faction": "無所属の会",
+        "member": "箭内好彦",
+        "stance": "賛成"
+      },
+      {
+        "label": "吉田公男",
+        "faction": "立憲民主党",
+        "member": "吉田公男",
+        "stance": "反対"
+      },
+      {
+        "label": "古山唯",
+        "faction": "れいわ新選組",
+        "member": "古山唯",
+        "stance": "反対"
+      }
+    ]
+  }
 }

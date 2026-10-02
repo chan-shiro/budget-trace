@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "nagoya-shikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:51:53.162Z",
+  "parserVersion": "0.6.6",
+  "parsedAt": "2026-10-02T11:33:35.026Z",
   "fiscalYear": "R8",
   "body": "名古屋市会",
   "seats": 68,
@@ -190,5 +190,420 @@
     }
   },
   "rosterTitle": "会派別議員名簿（更新日 2025年10月28日）",
-  "resultTitle": "令和8年2月定例会 市長提出案件"
+  "resultTitle": "令和8年2月定例会 市長提出案件",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "市会だより第200号 2月定例会 提出議案の賛否",
+    "sourceFile": "1049365.html",
+    "columns": [
+      {
+        "label": "伊神邦彦",
+        "faction": "自由民主党名古屋市会議員団",
+        "member": "伊神邦彦",
+        "stance": "賛成"
+      },
+      {
+        "label": "神ひろし",
+        "faction": "自由民主党名古屋市会議員団",
+        "member": "神ひろし",
+        "stance": "賛成"
+      },
+      {
+        "label": "上村みちよ",
+        "faction": "自由民主党名古屋市会議員団",
+        "member": "上村みちよ",
+        "stance": "賛成"
+      },
+      {
+        "label": "渡辺やすのり",
+        "faction": "自由民主党名古屋市会議員団",
+        "member": "渡辺やすのり",
+        "stance": "賛成"
+      },
+      {
+        "label": "浅野有",
+        "faction": "自由民主党名古屋市会議員団",
+        "member": "浅野有",
+        "stance": "賛成"
+      },
+      {
+        "label": "村瀬きよみ",
+        "faction": "自由民主党名古屋市会議員団",
+        "member": "村瀬きよみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "小出昭司",
+        "faction": "自由民主党名古屋市会議員団",
+        "member": "小出昭司",
+        "stance": "賛成"
+      },
+      {
+        "label": "中田ちづこ",
+        "faction": "自由民主党名古屋市会議員団",
+        "member": "中田ちづこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "ふじた和秀",
+        "faction": "自由民主党名古屋市会議員団",
+        "member": "ふじた和秀",
+        "stance": "賛成"
+      },
+      {
+        "label": "服部しんのすけ",
+        "faction": "自由民主党名古屋市会議員団",
+        "member": "服部しんのすけ",
+        "stance": "賛成"
+      },
+      {
+        "label": "浅井正仁",
+        "faction": "自由民主党名古屋市会議員団",
+        "member": "浅井正仁",
+        "stance": "賛成"
+      },
+      {
+        "label": "吉田茂",
+        "faction": "自由民主党名古屋市会議員団",
+        "member": "吉田茂",
+        "stance": "賛成"
+      },
+      {
+        "label": "沢田ひとみ",
+        "faction": "自由民主党名古屋市会議員団",
+        "member": "沢田ひとみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "横井利明",
+        "faction": "自由民主党名古屋市会議員団",
+        "member": "横井利明",
+        "stance": "賛成"
+      },
+      {
+        "label": "藤沢ちあき",
+        "faction": "自由民主党名古屋市会議員団",
+        "member": "藤沢ちあき",
+        "stance": "賛成"
+      },
+      {
+        "label": "松井よしのり",
+        "faction": "自由民主党名古屋市会議員団",
+        "member": "松井よしのり",
+        "stance": "賛成"
+      },
+      {
+        "label": "北野よしはる",
+        "faction": "自由民主党名古屋市会議員団",
+        "member": "北野よしはる",
+        "stance": "賛成"
+      },
+      {
+        "label": "中里高之",
+        "faction": "自由民主党名古屋市会議員団",
+        "member": "中里高之",
+        "stance": "賛成"
+      },
+      {
+        "label": "岩本たかひろ",
+        "faction": "自由民主党名古屋市会議員団",
+        "member": "岩本たかひろ",
+        "stance": "賛成"
+      },
+      {
+        "label": "くずや利枝",
+        "faction": "自由民主党名古屋市会議員団",
+        "member": "くずや利枝",
+        "stance": "賛成"
+      },
+      {
+        "label": "丹羽ひろし",
+        "faction": "自由民主党名古屋市会議員団",
+        "member": "丹羽ひろし",
+        "stance": "賛成"
+      },
+      {
+        "label": "成田たかゆき",
+        "faction": "自由民主党名古屋市会議員団",
+        "member": "成田たかゆき",
+        "stance": "賛成"
+      },
+      {
+        "label": "山田昌弘",
+        "faction": "名古屋民主市会議員団",
+        "member": "山田昌弘",
+        "stance": "賛成"
+      },
+      {
+        "label": "くにまさ直記",
+        "faction": "名古屋民主市会議員団",
+        "member": "くにまさ直記",
+        "stance": "賛成"
+      },
+      {
+        "label": "服部将也",
+        "faction": "名古屋民主市会議員団",
+        "member": "服部将也",
+        "stance": "賛成"
+      },
+      {
+        "label": "うえぞの晋介",
+        "faction": "名古屋民主市会議員団",
+        "member": "うえぞの晋介",
+        "stance": "賛成"
+      },
+      {
+        "label": "うかい春美",
+        "faction": "名古屋民主市会議員団",
+        "member": "うかい春美",
+        "stance": "賛成"
+      },
+      {
+        "label": "塚本つよし",
+        "faction": "名古屋民主市会議員団",
+        "member": "塚本つよし",
+        "stance": "賛成"
+      },
+      {
+        "label": "おくむら文悟",
+        "faction": "名古屋民主市会議員団",
+        "member": "おくむら文悟",
+        "stance": "賛成"
+      },
+      {
+        "label": "久田邦博",
+        "faction": "名古屋民主市会議員団",
+        "member": "久田邦博",
+        "stance": "賛成"
+      },
+      {
+        "label": "森ともお",
+        "faction": "名古屋民主市会議員団",
+        "member": "森ともお",
+        "stance": "賛成"
+      },
+      {
+        "label": "久野美穂",
+        "faction": "名古屋民主市会議員団",
+        "member": "久野美穂",
+        "stance": "賛成"
+      },
+      {
+        "label": "赤松哲次",
+        "faction": "名古屋民主市会議員団",
+        "member": "赤松哲次",
+        "stance": "賛成"
+      },
+      {
+        "label": "加藤一登",
+        "faction": "名古屋民主市会議員団",
+        "member": "加藤一登",
+        "stance": "賛成"
+      },
+      {
+        "label": "橋本ひろき",
+        "faction": "名古屋民主市会議員団",
+        "member": "橋本ひろき",
+        "stance": "賛成"
+      },
+      {
+        "label": "小川としゆき",
+        "faction": "名古屋民主市会議員団",
+        "member": "小川としゆき",
+        "stance": "賛成"
+      },
+      {
+        "label": "岡本やすひろ",
+        "faction": "名古屋民主市会議員団",
+        "member": "岡本やすひろ",
+        "stance": "賛成"
+      },
+      {
+        "label": "日比美咲",
+        "faction": "名古屋民主市会議員団",
+        "member": "日比美咲",
+        "stance": "賛成"
+      },
+      {
+        "label": "田中里佳",
+        "faction": "名古屋民主市会議員団",
+        "member": "田中里佳",
+        "stance": "賛成"
+      },
+      {
+        "label": "田辺雄一",
+        "faction": "公明党名古屋市会議員団",
+        "member": "田辺雄一",
+        "stance": "賛成"
+      },
+      {
+        "label": "長谷川由美子",
+        "faction": "公明党名古屋市会議員団",
+        "member": "長谷川由美子",
+        "stance": "賛成"
+      },
+      {
+        "label": "さわだ晃一",
+        "faction": "公明党名古屋市会議員団",
+        "member": "さわだ晃一",
+        "stance": "賛成"
+      },
+      {
+        "label": "おか千恵",
+        "faction": "公明党名古屋市会議員団",
+        "member": "おか千恵",
+        "stance": "賛成"
+      },
+      {
+        "label": "木下優",
+        "faction": "公明党名古屋市会議員団",
+        "member": "木下優",
+        "stance": "賛成"
+      },
+      {
+        "label": "月森たくや",
+        "faction": "公明党名古屋市会議員団",
+        "member": "月森たくや",
+        "stance": "賛成"
+      },
+      {
+        "label": "吉岡正修",
+        "faction": "公明党名古屋市会議員団",
+        "member": "吉岡正修",
+        "stance": "賛成"
+      },
+      {
+        "label": "さかい大輔",
+        "faction": "公明党名古屋市会議員団",
+        "member": "さかい大輔",
+        "stance": "賛成"
+      },
+      {
+        "label": "金庭宜雄",
+        "faction": "公明党名古屋市会議員団",
+        "member": "金庭宜雄",
+        "stance": "賛成"
+      },
+      {
+        "label": "近藤和博",
+        "faction": "公明党名古屋市会議員団",
+        "member": "近藤和博",
+        "stance": "賛成"
+      },
+      {
+        "label": "中村しゅうへい",
+        "faction": "公明党名古屋市会議員団",
+        "member": "中村しゅうへい",
+        "stance": "賛成"
+      },
+      {
+        "label": "辻まさお",
+        "faction": "公明党名古屋市会議員団",
+        "member": "辻まさお",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐藤ゆうこ",
+        "faction": "減税日本ナゴヤ",
+        "member": "佐藤ゆうこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "田山宏之",
+        "faction": "減税日本ナゴヤ",
+        "member": "田山宏之",
+        "stance": "賛成"
+      },
+      {
+        "label": "大田とみひこ",
+        "faction": "減税日本ナゴヤ",
+        "member": "大田とみひこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "豊田かおる",
+        "faction": "減税日本ナゴヤ",
+        "member": "豊田かおる",
+        "stance": "賛成"
+      },
+      {
+        "label": "大村光子",
+        "faction": "減税日本ナゴヤ",
+        "member": "大村光子",
+        "stance": "賛成"
+      },
+      {
+        "label": "大谷ともひろ",
+        "faction": "減税日本ナゴヤ",
+        "member": "大谷ともひろ",
+        "stance": "賛成"
+      },
+      {
+        "label": "永井ゆり",
+        "faction": "減税日本ナゴヤ",
+        "member": "永井ゆり",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴木孝之",
+        "faction": "減税日本ナゴヤ",
+        "member": "鈴木孝之",
+        "stance": "賛成"
+      },
+      {
+        "label": "岡田ゆき子",
+        "faction": "日本共産党名古屋市会議員団",
+        "member": "岡田ゆき子",
+        "stance": "反対"
+      },
+      {
+        "label": "みつなか美由紀",
+        "faction": "日本共産党名古屋市会議員団",
+        "member": "みつなか美由紀",
+        "stance": "反対"
+      },
+      {
+        "label": "田口一登",
+        "faction": "日本共産党名古屋市会議員団",
+        "member": "田口一登",
+        "stance": "反対"
+      },
+      {
+        "label": "金城ゆたか",
+        "faction": "なごや陽向の会",
+        "member": "金城ゆたか",
+        "stance": "賛成"
+      },
+      {
+        "label": "野田留美",
+        "faction": "なごや陽向の会",
+        "member": "野田留美",
+        "stance": "賛成"
+      },
+      {
+        "label": "中川あつし",
+        "faction": "なごや創政会",
+        "member": "中川あつし",
+        "stance": "賛成"
+      },
+      {
+        "label": "北角嘉幸",
+        "faction": "新生会",
+        "member": "北角嘉幸",
+        "stance": "反対"
+      },
+      {
+        "label": "大島英勲",
+        "faction": "日本維新の会名古屋市会議員団",
+        "member": "大島英勲",
+        "stance": "賛成"
+      },
+      {
+        "label": "西川学",
+        "faction": "自由民主党名古屋市会議員団",
+        "member": "西川学",
+        "stance": "議長"
+      }
+    ]
+  }
 }

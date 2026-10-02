@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "kumamoto-shigikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:51:54.347Z",
+  "parserVersion": "0.6.6",
+  "parsedAt": "2026-10-02T11:33:36.519Z",
   "fiscalYear": "R8",
   "body": "熊本市議会",
   "seats": 47,
@@ -190,5 +190,294 @@
     }
   },
   "rosterTitle": "選出区別議員名簿（令和8年（2026年）1月7日現在）",
-  "resultTitle": "令和8年第1回定例会 議案および審議結果（議第３号 賛否一覧）"
+  "resultTitle": "令和8年第1回定例会 議案および審議結果（議第３号 賛否一覧）",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "令和8年第1回定例会 議第３号 賛否一覧",
+    "sourceFile": "detail.aspx_c_id_4_coy_id_16_co_id_207_dis_id_3.html",
+    "columns": [
+      {
+        "label": "井本正広",
+        "faction": "公明党熊本市議団",
+        "member": "井本正広",
+        "stance": "賛成"
+      },
+      {
+        "label": "村上麿",
+        "faction": "自由民主党熊本市議団",
+        "member": "村上麿",
+        "stance": "賛成"
+      },
+      {
+        "label": "瀨尾誠一",
+        "faction": "無所属（瀨尾誠一）",
+        "member": "瀨尾誠一",
+        "stance": "賛成"
+      },
+      {
+        "label": "菊地渚沙",
+        "faction": "市民の会",
+        "member": "菊地渚沙",
+        "stance": "反対"
+      },
+      {
+        "label": "山中惣一郎",
+        "faction": "無所属（山中惣一郎）",
+        "member": "山中惣一郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "井坂隆寛",
+        "faction": "市民の会",
+        "member": "井坂隆寛",
+        "stance": "反対"
+      },
+      {
+        "label": "木庭功二",
+        "faction": "公明党熊本市議団",
+        "member": "木庭功二",
+        "stance": "賛成"
+      },
+      {
+        "label": "村上誠也",
+        "faction": "自由民主党熊本市議団",
+        "member": "村上誠也",
+        "stance": "賛成"
+      },
+      {
+        "label": "古川智子",
+        "faction": "自由民主党熊本市議団",
+        "member": "古川智子",
+        "stance": "賛成"
+      },
+      {
+        "label": "荒川慎太郎",
+        "faction": "自由民主党熊本市議団",
+        "member": "荒川慎太郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "松本幸隆",
+        "faction": "熊本自由民主党市議団",
+        "member": "松本幸隆",
+        "stance": "賛成"
+      },
+      {
+        "label": "中川栄一郎",
+        "faction": "熊本自由民主党市議団",
+        "member": "中川栄一郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "松川善範",
+        "faction": "創生熊本市議団",
+        "member": "松川善範",
+        "stance": "賛成"
+      },
+      {
+        "label": "筑紫るみ子",
+        "faction": "無所属（筑紫るみ子）",
+        "member": "筑紫るみ子",
+        "stance": "賛成"
+      },
+      {
+        "label": "井芹栄次",
+        "faction": "日本共産党熊本市議団",
+        "member": "井芹栄次",
+        "stance": "反対"
+      },
+      {
+        "label": "島津哲也",
+        "faction": "市民連合",
+        "member": "島津哲也",
+        "stance": "賛成"
+      },
+      {
+        "label": "吉田健一",
+        "faction": "公明党熊本市議団",
+        "member": "吉田健一",
+        "stance": "賛成"
+      },
+      {
+        "label": "齊藤博",
+        "faction": "自由民主党熊本市議団",
+        "member": "齊藤博",
+        "stance": "賛成"
+      },
+      {
+        "label": "田島幸治",
+        "faction": "自由民主党熊本市議団",
+        "member": "田島幸治",
+        "stance": "賛成"
+      },
+      {
+        "label": "日隈忍",
+        "faction": "自由民主党熊本市議団",
+        "member": "日隈忍",
+        "stance": "賛成"
+      },
+      {
+        "label": "山本浩之",
+        "faction": "熊本自由民主党市議団",
+        "member": "山本浩之",
+        "stance": "賛成"
+      },
+      {
+        "label": "北川哉",
+        "faction": "熊本自由民主党市議団",
+        "member": "北川哉",
+        "stance": "賛成"
+      },
+      {
+        "label": "平江透",
+        "faction": "熊本自由民主党市議団",
+        "member": "平江透",
+        "stance": "賛成"
+      },
+      {
+        "label": "吉村健治",
+        "faction": "市民の会",
+        "member": "吉村健治",
+        "stance": "反対"
+      },
+      {
+        "label": "山内勝志",
+        "faction": "市民連合",
+        "member": "山内勝志",
+        "stance": "賛成"
+      },
+      {
+        "label": "伊藤和仁",
+        "faction": "公明党熊本市議団",
+        "member": "伊藤和仁",
+        "stance": "賛成"
+      },
+      {
+        "label": "高瀬千鶴子",
+        "faction": "公明党熊本市議団",
+        "member": "高瀬千鶴子",
+        "stance": "賛成"
+      },
+      {
+        "label": "小佐井賀瑞宜",
+        "faction": "自由民主党熊本市議団",
+        "member": "小佐井賀瑞宜",
+        "stance": "賛成"
+      },
+      {
+        "label": "寺本義勝",
+        "faction": "自由民主党熊本市議団",
+        "member": "寺本義勝",
+        "stance": "賛成"
+      },
+      {
+        "label": "大嶌澄雄",
+        "faction": "熊本自由民主党市議団",
+        "member": "大嶌澄雄",
+        "stance": "賛成"
+      },
+      {
+        "label": "髙本一臣",
+        "faction": "創生熊本市議団",
+        "member": "髙本一臣",
+        "stance": "賛成"
+      },
+      {
+        "label": "西岡誠也",
+        "faction": "市民連合",
+        "member": "西岡誠也",
+        "stance": "賛成"
+      },
+      {
+        "label": "田上辰也",
+        "faction": "市民連合",
+        "member": "田上辰也",
+        "stance": "賛成"
+      },
+      {
+        "label": "三森至加",
+        "faction": "公明党熊本市議団",
+        "member": "三森至加",
+        "stance": "賛成"
+      },
+      {
+        "label": "浜田大介",
+        "faction": "公明党熊本市議団",
+        "member": "浜田大介",
+        "stance": "賛成"
+      },
+      {
+        "label": "田中敦朗",
+        "faction": "自由民主党熊本市議団",
+        "member": "田中敦朗",
+        "stance": "賛成"
+      },
+      {
+        "label": "田中誠一",
+        "faction": "自由民主党熊本市議団",
+        "member": "田中誠一",
+        "stance": "賛成"
+      },
+      {
+        "label": "坂田誠二",
+        "faction": "自由民主党熊本市議団",
+        "member": "坂田誠二",
+        "stance": "賛成"
+      },
+      {
+        "label": "落水清弘",
+        "faction": "自由民主党熊本市議団",
+        "member": "落水清弘",
+        "stance": "賛成"
+      },
+      {
+        "label": "澤田昌作",
+        "faction": "熊本自由民主党市議団",
+        "member": "澤田昌作",
+        "stance": "賛成"
+      },
+      {
+        "label": "満永寿博",
+        "faction": "熊本自由民主党市議団",
+        "member": "満永寿博",
+        "stance": "賛成"
+      },
+      {
+        "label": "紫垣正仁",
+        "faction": "新風熊本市議団",
+        "member": "紫垣正仁",
+        "stance": "賛成"
+      },
+      {
+        "label": "藤山英美",
+        "faction": "新風熊本市議団",
+        "member": "藤山英美",
+        "stance": "賛成"
+      },
+      {
+        "label": "上野美恵子",
+        "faction": "日本共産党熊本市議団",
+        "member": "上野美恵子",
+        "stance": "反対"
+      },
+      {
+        "label": "上田芳裕",
+        "faction": "市民連合",
+        "member": "上田芳裕",
+        "stance": "賛成"
+      },
+      {
+        "label": "村上博",
+        "faction": "市民連合",
+        "member": "村上博",
+        "stance": "賛成"
+      },
+      {
+        "label": "大石浩文",
+        "faction": "自由民主党熊本市議団",
+        "member": "大石浩文",
+        "stance": "議長"
+      }
+    ]
+  }
 }
