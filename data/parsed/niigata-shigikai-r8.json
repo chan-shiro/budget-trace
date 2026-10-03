@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "niigata-shigikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:51:54.850Z",
+  "parserVersion": "0.6.8",
+  "parsedAt": "2026-10-02T12:40:24.202Z",
   "fiscalYear": "R8",
   "body": "新潟市議会",
   "seats": 48,
@@ -158,5 +158,59 @@
     }
   },
   "rosterTitle": "常任委員会 委員名簿（最終更新日 2026年2月20日）",
-  "resultTitle": "令和8年2月定例会 会議の結果"
+  "resultTitle": "令和8年2月定例会 会議の結果",
+  "votes": {
+    "basis": "faction",
+    "sourceTitle": "令和8年2月定例会 会議の結果",
+    "sourceFile": "r0802.html",
+    "columns": [
+      {
+        "label": "翔政会",
+        "faction": "翔政会",
+        "stance": "賛成"
+      },
+      {
+        "label": "日本共産党新潟市議会議員団",
+        "faction": "日本共産党新潟市議会議員団",
+        "stance": "反対"
+      },
+      {
+        "label": "新風にいがた",
+        "faction": "新風にいがた",
+        "stance": "賛成"
+      },
+      {
+        "label": "新潟市公明党",
+        "faction": "新潟市公明党",
+        "stance": "賛成"
+      },
+      {
+        "label": "ともに躍動する新潟",
+        "faction": "ともに躍動する新潟",
+        "stance": "賛成"
+      },
+      {
+        "label": "無所属の会",
+        "faction": "無所属の会",
+        "stance": "賛成"
+      },
+      {
+        "label": "市民ネットにいがた",
+        "faction": "市民ネットにいがた",
+        "stance": "賛成"
+      },
+      {
+        "label": "会派に属さない議員",
+        "faction": "会派に属さない議員（串田修平）",
+        "member": "串田修平",
+        "stance": "賛成"
+      },
+      {
+        "label": "小野清一郎",
+        "faction": "翔政会",
+        "member": "小野清一郎",
+        "stance": "議長"
+      }
+    ]
+  }
 }

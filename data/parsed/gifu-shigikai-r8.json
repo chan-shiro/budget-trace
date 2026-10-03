@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "gifu-shigikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:52:00.310Z",
+  "parserVersion": "0.6.8",
+  "parsedAt": "2026-10-02T12:40:32.237Z",
   "fiscalYear": "R8",
   "body": "岐阜市議会",
   "seats": 37,
@@ -181,5 +181,234 @@
     }
   },
   "rosterTitle": "議員の紹介（一覧表）（更新日 令和8年2月17日）",
-  "resultTitle": "令和８年第１回（３月）定例会議決結果・報告一覧"
+  "resultTitle": "令和８年第１回（３月）定例会議決結果・報告一覧",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "議案等に対する賛否の状況（令和８年３月定例会）",
+    "sourceFile": "r803sanpi2.pdf",
+    "columns": [
+      {
+        "label": "林大貴",
+        "faction": "日本維新の会岐阜市議会",
+        "member": "林大貴",
+        "stance": "賛成"
+      },
+      {
+        "label": "可児隆",
+        "faction": "健やか緑政",
+        "member": "可児隆",
+        "stance": "反対"
+      },
+      {
+        "label": "披田麻衣",
+        "faction": "会派に属さない議員（披田麻衣）",
+        "member": "披田麻衣",
+        "stance": "反対"
+      },
+      {
+        "label": "大塚翔太",
+        "faction": "会派に属さない議員（大塚翔太）",
+        "member": "大塚翔太",
+        "stance": "賛成"
+      },
+      {
+        "label": "日比野浩之",
+        "faction": "自民岐阜",
+        "member": "日比野浩之",
+        "stance": "賛成"
+      },
+      {
+        "label": "橋爪大",
+        "faction": "自民岐阜",
+        "member": "橋爪大",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐藤幸太",
+        "faction": "自民岐阜",
+        "member": "佐藤幸太",
+        "stance": "賛成"
+      },
+      {
+        "label": "野本琢磨",
+        "faction": "自民岐阜",
+        "member": "野本琢磨",
+        "stance": "賛成"
+      },
+      {
+        "label": "熊田由弘",
+        "faction": "自民岐阜",
+        "member": "熊田由弘",
+        "stance": "賛成"
+      },
+      {
+        "label": "河合智美",
+        "faction": "岐阜市議会公明党",
+        "member": "河合智美",
+        "stance": "賛成"
+      },
+      {
+        "label": "原菜穂子",
+        "faction": "にじいろ",
+        "member": "原菜穂子",
+        "stance": "反対"
+      },
+      {
+        "label": "森下満寿美",
+        "faction": "日本共産党岐阜市議会議員団",
+        "member": "森下満寿美",
+        "stance": "反対"
+      },
+      {
+        "label": "小森忠良",
+        "faction": "岐阜市民クラブ",
+        "member": "小森忠良",
+        "stance": "賛成"
+      },
+      {
+        "label": "石原宏基",
+        "faction": "岐阜市民クラブ",
+        "member": "石原宏基",
+        "stance": "賛成"
+      },
+      {
+        "label": "富田耕二",
+        "faction": "岐阜市民クラブ",
+        "member": "富田耕二",
+        "stance": "賛成"
+      },
+      {
+        "label": "石川宗一郎",
+        "faction": "会派に属さない議員（石川宗一郎）",
+        "member": "石川宗一郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "浅野雅樹",
+        "faction": "自民岐阜",
+        "member": "浅野雅樹",
+        "stance": "賛成"
+      },
+      {
+        "label": "箕輪光顕",
+        "faction": "自民岐阜",
+        "member": "箕輪光顕",
+        "stance": "欠席"
+      },
+      {
+        "label": "黒田育宏",
+        "faction": "自民岐阜",
+        "member": "黒田育宏",
+        "stance": "賛成"
+      },
+      {
+        "label": "若山貴嗣",
+        "faction": "自民岐阜",
+        "member": "若山貴嗣",
+        "stance": "賛成"
+      },
+      {
+        "label": "石井浩二",
+        "faction": "自民岐阜",
+        "member": "石井浩二",
+        "stance": "賛成"
+      },
+      {
+        "label": "小堀将大",
+        "faction": "岐阜市議会公明党",
+        "member": "小堀将大",
+        "stance": "賛成"
+      },
+      {
+        "label": "江崎洋子",
+        "faction": "岐阜市議会公明党",
+        "member": "江崎洋子",
+        "stance": "賛成"
+      },
+      {
+        "label": "西垣信康",
+        "faction": "岐阜市議会公明党",
+        "member": "西垣信康",
+        "stance": "賛成"
+      },
+      {
+        "label": "辻󠄀孝子",
+        "faction": "岐阜市議会公明党",
+        "member": "辻󠄀孝子",
+        "stance": "賛成"
+      },
+      {
+        "label": "道家康生",
+        "faction": "会派に属さない議員（道家康生）",
+        "member": "道家康生",
+        "stance": "賛成"
+      },
+      {
+        "label": "松原和生",
+        "faction": "岐阜市民クラブ",
+        "member": "松原和生",
+        "stance": "賛成"
+      },
+      {
+        "label": "大野一生",
+        "faction": "自民岐阜",
+        "member": "大野一生",
+        "stance": "賛成"
+      },
+      {
+        "label": "谷藤錦司",
+        "faction": "自民岐阜",
+        "member": "谷藤錦司",
+        "stance": "賛成"
+      },
+      {
+        "label": "須田眞",
+        "faction": "自民岐阜",
+        "member": "須田眞",
+        "stance": "賛成"
+      },
+      {
+        "label": "杉山利夫",
+        "faction": "自民岐阜",
+        "member": "杉山利夫",
+        "stance": "賛成"
+      },
+      {
+        "label": "竹市勲",
+        "faction": "自民岐阜",
+        "member": "竹市勲",
+        "stance": "議長"
+      },
+      {
+        "label": "浅野裕司",
+        "faction": "自民岐阜",
+        "member": "浅野裕司",
+        "stance": "賛成"
+      },
+      {
+        "label": "高橋正",
+        "faction": "自民岐阜",
+        "member": "高橋正",
+        "stance": "賛成"
+      },
+      {
+        "label": "田中成佳",
+        "faction": "健やか緑政",
+        "member": "田中成佳",
+        "stance": "反対"
+      },
+      {
+        "label": "服部勝弘",
+        "faction": "健やか緑政",
+        "member": "服部勝弘",
+        "stance": "反対"
+      },
+      {
+        "label": "堀田信夫",
+        "faction": "日本共産党岐阜市議会議員団",
+        "member": "堀田信夫",
+        "stance": "反対"
+      }
+    ]
+  }
 }

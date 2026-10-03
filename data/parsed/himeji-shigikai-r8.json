@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "himeji-shigikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:51:58.398Z",
+  "parserVersion": "0.6.8",
+  "parsedAt": "2026-10-02T12:40:29.230Z",
   "fiscalYear": "R8",
   "body": "姫路市議会",
   "seats": 45,
@@ -189,5 +189,282 @@
     }
   },
   "rosterTitle": "市議会議員名簿（会派別）（更新日 2025年9月1日）",
-  "resultTitle": "提出議案とその結果（令和8年第1回定例会）議案に対する議員の賛否一覧"
+  "resultTitle": "提出議案とその結果（令和8年第1回定例会）議案に対する議員の賛否一覧",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "提出議案とその結果（令和8年第1回定例会）議案に対する議員の賛否一覧",
+    "sourceFile": "0325giannsinngikekka.pdf",
+    "columns": [
+      {
+        "label": "西本眞造",
+        "faction": "公明党",
+        "member": "西本眞造",
+        "stance": "賛成"
+      },
+      {
+        "label": "川島淳良",
+        "faction": "公明党",
+        "member": "川島淳良",
+        "stance": "賛成"
+      },
+      {
+        "label": "白井義一",
+        "faction": "公明党",
+        "member": "白井義一",
+        "stance": "賛成"
+      },
+      {
+        "label": "中西祥子",
+        "faction": "公明党",
+        "member": "中西祥子",
+        "stance": "賛成"
+      },
+      {
+        "label": "阿野れい子",
+        "faction": "公明党",
+        "member": "阿野れい子",
+        "stance": "賛成"
+      },
+      {
+        "label": "前川藤枝",
+        "faction": "公明党",
+        "member": "前川藤枝",
+        "stance": "賛成"
+      },
+      {
+        "label": "有馬剛朗",
+        "faction": "公明党",
+        "member": "有馬剛朗",
+        "stance": "賛成"
+      },
+      {
+        "label": "宮下和也",
+        "faction": "公明党",
+        "member": "宮下和也",
+        "stance": "賛成"
+      },
+      {
+        "label": "竹尾浩司",
+        "faction": "市民クラブ",
+        "member": "竹尾浩司",
+        "stance": "賛成"
+      },
+      {
+        "label": "常盤真功",
+        "faction": "市民クラブ",
+        "member": "常盤真功",
+        "stance": "賛成"
+      },
+      {
+        "label": "山口悟",
+        "faction": "市民クラブ",
+        "member": "山口悟",
+        "stance": "賛成"
+      },
+      {
+        "label": "駒田かすみ",
+        "faction": "市民クラブ",
+        "member": "駒田かすみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "三輪敏之",
+        "faction": "市民クラブ",
+        "member": "三輪敏之",
+        "stance": "賛成"
+      },
+      {
+        "label": "阿山正人",
+        "faction": "市民クラブ",
+        "member": "阿山正人",
+        "stance": "賛成"
+      },
+      {
+        "label": "八木隆次郎",
+        "faction": "市民クラブ",
+        "member": "八木隆次郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "蔭山敏明",
+        "faction": "市民クラブ",
+        "member": "蔭山敏明",
+        "stance": "賛成"
+      },
+      {
+        "label": "竹中隆一",
+        "faction": "自由民主党",
+        "member": "竹中隆一",
+        "stance": "賛成"
+      },
+      {
+        "label": "井川一善",
+        "faction": "自由民主党",
+        "member": "井川一善",
+        "stance": "賛成"
+      },
+      {
+        "label": "重田一政",
+        "faction": "自由民主党",
+        "member": "重田一政",
+        "stance": "賛成"
+      },
+      {
+        "label": "仁野央子",
+        "faction": "自由民主党",
+        "member": "仁野央子",
+        "stance": "賛成"
+      },
+      {
+        "label": "石見和之",
+        "faction": "自由民主党",
+        "member": "石見和之",
+        "stance": "賛成"
+      },
+      {
+        "label": "石堂大輔",
+        "faction": "自由民主党",
+        "member": "石堂大輔",
+        "stance": "議長"
+      },
+      {
+        "label": "宮本吉秀",
+        "faction": "自由民主党",
+        "member": "宮本吉秀",
+        "stance": "賛成"
+      },
+      {
+        "label": "三和衛",
+        "faction": "新生ひめじ",
+        "member": "三和衛",
+        "stance": "賛成"
+      },
+      {
+        "label": "井上太良",
+        "faction": "新生ひめじ",
+        "member": "井上太良",
+        "stance": "賛成"
+      },
+      {
+        "label": "東影昭",
+        "faction": "新生ひめじ",
+        "member": "東影昭",
+        "stance": "賛成"
+      },
+      {
+        "label": "萩原唯典",
+        "faction": "新生ひめじ",
+        "member": "萩原唯典",
+        "stance": "賛成"
+      },
+      {
+        "label": "杉本博昭",
+        "faction": "新生ひめじ",
+        "member": "杉本博昭",
+        "stance": "賛成"
+      },
+      {
+        "label": "大西陽介",
+        "faction": "日本維新の会",
+        "member": "大西陽介",
+        "stance": "賛成"
+      },
+      {
+        "label": "竹中由佳",
+        "faction": "日本維新の会",
+        "member": "竹中由佳",
+        "stance": "賛成"
+      },
+      {
+        "label": "下林崇史",
+        "faction": "日本維新の会",
+        "member": "下林崇史",
+        "stance": "賛成"
+      },
+      {
+        "label": "三浦充博",
+        "faction": "日本維新の会",
+        "member": "三浦充博",
+        "stance": "賛成"
+      },
+      {
+        "label": "妻鹿幸二",
+        "faction": "姫路無所属の会",
+        "member": "妻鹿幸二",
+        "stance": "賛成"
+      },
+      {
+        "label": "神頭敬介",
+        "faction": "姫路無所属の会",
+        "member": "神頭敬介",
+        "stance": "賛成"
+      },
+      {
+        "label": "嶋谷秀樹",
+        "faction": "姫路無所属の会",
+        "member": "嶋谷秀樹",
+        "stance": "賛成"
+      },
+      {
+        "label": "塚本進介",
+        "faction": "改革無所属の会",
+        "member": "塚本進介",
+        "stance": "賛成"
+      },
+      {
+        "label": "牧野圭輔",
+        "faction": "改革無所属の会",
+        "member": "牧野圭輔",
+        "stance": "反対"
+      },
+      {
+        "label": "坂本学",
+        "faction": "改革無所属の会",
+        "member": "坂本学",
+        "stance": "賛成"
+      },
+      {
+        "label": "金内義和",
+        "faction": "志政会",
+        "member": "金内義和",
+        "stance": "賛成"
+      },
+      {
+        "label": "西村しのぶ",
+        "faction": "志政会",
+        "member": "西村しのぶ",
+        "stance": "賛成"
+      },
+      {
+        "label": "松岡廣幸",
+        "faction": "志政会",
+        "member": "松岡廣幸",
+        "stance": "賛成"
+      },
+      {
+        "label": "谷川真由美",
+        "faction": "日本共産党議員団",
+        "member": "谷川真由美",
+        "stance": "反対"
+      },
+      {
+        "label": "小田響子",
+        "faction": "日本共産党議員団",
+        "member": "小田響子",
+        "stance": "反対"
+      },
+      {
+        "label": "岡部敦吏",
+        "faction": "刷新の会",
+        "member": "岡部敦吏",
+        "stance": "賛成"
+      },
+      {
+        "label": "高見千咲",
+        "faction": "無所属（高見千咲）",
+        "member": "高見千咲",
+        "stance": "賛成"
+      }
+    ]
+  }
 }

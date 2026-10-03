@@ -1260,15 +1260,50 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
           // あるが、まだ収録していない — 「公表されていない」と書かない
           voteNote: isFull
             ? "会派ごとの賛否・票数は起立採決のため公表されていません（記録は「可決」のみ）。"
-            : "会派・議員ごとの賛否は未収録です。",
+            : shownCouncil.votes
+              ? shownCouncil.votes.basis === "member"
+                ? "議員ごとの賛否（議決当日の賛否表）。"
+                : "会派ごとの賛否（議決当日の賛否表）。会派の列は、その会派の議員（議長などを除く）を同じ賛否として数えています。"
+              : "会派・議員ごとの賛否は未収録です。",
+          // 賛否の集計（甲府以外で原典が公表している議会だけ）。賛成・反対を先に、欠席・議長などは括弧で
+          voteTally: shownCouncil.votes
+            ? (() => {
+                const t = shownCouncil.votes.tally;
+                const main = ["賛成", "反対", "賛成でない"].filter((k) => t[k]).map((k) => `${k}${t[k]}`).join("・");
+                const rest = shownCouncil.votes.stances.filter((k) => !["賛成", "反対", "賛成でない"].includes(k)).map((k) => `${k}${t[k]}`).join("・");
+                return rest ? `${main}（${rest}）` : main;
+              })()
+            : null,
+          voteSourceTitle: shownCouncil.votes?.source.title ?? null,
+          voteAction: shownCouncil.votes ? evAction(shownCouncil.votes.source.localUrl) : null,
+          // 賛否表が議決結果と同じ原典なら、出典チップを重ねて出さない（横浜）
+          voteOpen: shownCouncil.votes && shownCouncil.votes.source.localUrl !== shownCouncil.result.localUrl
+            ? () =>
+                openViewer({
+                  url: shownCouncil.votes!.source.localUrl, title: shownCouncil.votes!.source.title,
+                  sub: shownCouncil.resolution.decidedDateLabel, originUrl: shownCouncil.votes!.source.originUrl,
+                  archiveUrl: shownCouncil.votes!.source.archiveUrl,
+                })
+            : null,
           seats: shownCouncil.seats,
           asOfLabel: shownCouncil.asOfLabel,
           fyLabel: shownCouncil.fyLabel,
           factions: shownCouncil.factions.map((f, i) => {
             const sw = D.seriesColor(i);
             const pct = ((f.seats / shownCouncil.seats) * 100).toFixed(1);
+            // 会派の賛否: 1つだけなら「賛成」「反対」、割れていれば「賛成3・反対1」（欠席・議長などは数に入れず括弧で）
+            const vc = shownCouncil.votes?.byFaction.find((b) => b.faction === f.name)?.counts;
+            const yn = vc ? ["賛成", "反対", "賛成でない"].filter((k) => vc[k]) : [];
+            const other = vc ? Object.keys(vc).filter((k) => !["賛成", "反対", "賛成でない"].includes(k)) : [];
+            const stanceLabel = !vc
+              ? null
+              : (yn.length === 1 ? yn[0]! : yn.map((k) => `${k}${vc[k]}`).join("・")) +
+                (other.length ? `${yn.length ? "（" : ""}${other.map((k) => `${k}${vc[k]}`).join("・")}${yn.length ? "）" : ""}` : "");
+            const stanceTone = !vc ? null : yn.length === 1 ? (yn[0] === "賛成" ? "yes" : "no") : yn.length > 1 ? "mixed" : "none";
             return {
               name: f.name,
+              stanceLabel,
+              stanceTone,
               seatsLabel: `${f.seats}議席`,
               w: pct,
               sw,

@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "hokuto-gikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:51:52.562Z",
+  "parserVersion": "0.6.8",
+  "parsedAt": "2026-10-02T12:40:21.184Z",
   "fiscalYear": "R8",
   "body": "北杜市議会",
   "seats": 20,
@@ -120,5 +120,132 @@
     }
   },
   "rosterTitle": "北杜市議会議員所属会派（令和6年11月28日現在）",
-  "resultTitle": "北杜市議会だより 第86号"
+  "resultTitle": "北杜市議会だより 第86号",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "北杜市議会だより 第86号 賛否のあった議案等（議長を除く）",
+    "sourceFile": "_______86_.pdf",
+    "columns": [
+      {
+        "label": "秋山俊和",
+        "faction": "北杜クラブ",
+        "member": "秋山俊和",
+        "stance": "賛成"
+      },
+      {
+        "label": "内田俊彦",
+        "faction": "公明党",
+        "member": "内田俊彦",
+        "stance": "賛成"
+      },
+      {
+        "label": "保坂多枝子",
+        "faction": "みらい創生",
+        "member": "保坂多枝子",
+        "stance": "賛成"
+      },
+      {
+        "label": "清水進",
+        "faction": "日本共産党",
+        "member": "清水進",
+        "stance": "反対"
+      },
+      {
+        "label": "加藤紀雄",
+        "faction": "みらい創生",
+        "member": "加藤紀雄",
+        "stance": "賛成"
+      },
+      {
+        "label": "齊藤功文",
+        "faction": "北杜クラブ",
+        "member": "齊藤功文",
+        "stance": "賛成"
+      },
+      {
+        "label": "志村清",
+        "faction": "日本共産党",
+        "member": "志村清",
+        "stance": "反対"
+      },
+      {
+        "label": "進藤正文",
+        "faction": "公明党",
+        "member": "進藤正文",
+        "stance": "賛成"
+      },
+      {
+        "label": "秋山真一",
+        "faction": "北杜クラブ",
+        "member": "秋山真一",
+        "stance": "賛成"
+      },
+      {
+        "label": "神田正人",
+        "faction": "みらい創生",
+        "member": "神田正人",
+        "stance": "賛成"
+      },
+      {
+        "label": "中山喜夫",
+        "faction": "北杜オール・イン・ワン",
+        "member": "中山喜夫",
+        "stance": "反対"
+      },
+      {
+        "label": "輿水崇",
+        "faction": "ポラリス北杜",
+        "member": "輿水崇",
+        "stance": "賛成"
+      },
+      {
+        "label": "髙見澤伸光",
+        "faction": "ポラリス北杜",
+        "member": "髙見澤伸光",
+        "stance": "賛成"
+      },
+      {
+        "label": "山﨑君江",
+        "faction": "北杜オール・イン・ワン",
+        "member": "山﨑君江",
+        "stance": "反対"
+      },
+      {
+        "label": "中村典子",
+        "faction": "無会派",
+        "member": "中村典子",
+        "stance": "反対"
+      },
+      {
+        "label": "飛矢﨑雅也",
+        "faction": "無会派",
+        "member": "飛矢﨑雅也",
+        "stance": "反対"
+      },
+      {
+        "label": "輿石知宏",
+        "faction": "ポラリス北杜",
+        "member": "輿石知宏",
+        "stance": "賛成"
+      },
+      {
+        "label": "大塚愛",
+        "faction": "ポラリス北杜",
+        "member": "大塚愛",
+        "stance": "賛成"
+      },
+      {
+        "label": "浅川勝正",
+        "faction": "無会派",
+        "member": "浅川勝正",
+        "stance": "賛成"
+      },
+      {
+        "label": "大芝正和",
+        "faction": "みらい創生",
+        "member": "大芝正和",
+        "stance": "議長"
+      }
+    ]
+  }
 }

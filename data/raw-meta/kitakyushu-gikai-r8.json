@@ -17,6 +17,13 @@
       "bytes": 343575,
       "fetchedAt": "2026-10-01T15:47:13.644Z",
       "fetchedFrom": "https://www.city.kitakyushu.lg.jp/files/001198333.pdf"
+    },
+    {
+      "filename": "file_0048.html",
+      "sha256": "103f37964cbe320931ad4c152879a1ed210e22d2148b731f49f4f4e2d2211350",
+      "bytes": 12542,
+      "fetchedAt": "2026-10-02T11:33:13.352Z",
+      "fetchedFrom": "https://web.archive.org/web/20250913104338id_/https://www.city.kitakyushu.lg.jp/sigikai/file_0048.html"
     }
   ]
 }

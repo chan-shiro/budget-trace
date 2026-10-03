@@ -28,6 +28,13 @@
       "bytes": 33515,
       "fetchedAt": "2026-10-01T16:54:23.253Z",
       "fetchedFrom": "https://www.city.kasugai.lg.jp/_res/projects/default_project/_page_/001/038/639/20260312hyouketsu.pdf"
+    },
+    {
+      "filename": "gicyou.html",
+      "sha256": "71df65a5d7154a3c0a3f300a956ea759a0518b066b5424629064c6a2c01327e1",
+      "bytes": 35345,
+      "fetchedAt": "2026-10-02T11:31:38.858Z",
+      "fetchedFrom": "https://web.archive.org/web/20260307094440id_/https://www.city.kasugai.lg.jp/shisei/shigikai/gicyou.html"
     }
   ]
 }

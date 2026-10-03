@@ -606,6 +606,27 @@ export const councilCompositionDocSchema = z.object({
   /** 名簿・議決結果の原典の呼び名（画面の出典チップ。`council-transcribed` のみ） */
   rosterTitle: z.string().optional(),
   resultTitle: z.string().optional(),
+  /**
+   * 当初予算の議決での賛否（2026-10-02・`council-transcribed` のみ）。原典の賛否表の**列見出しの並び**と
+   * **予算の行の記号の並び**を書き写し、パーサが原典と突き合わせたもの。
+   * basis: "member" ＝列が議員1人ずつ／"faction" ＝列が会派（無所属は1人ずつのことが多い）
+   */
+  votes: z
+    .object({
+      basis: z.enum(["member", "faction"]),
+      sourceTitle: z.string(),
+      sourceFile: z.string(),
+      /** 列ごとの賛否。faction は registry の会派名（無所属は「無所属（氏名）」の表示名） */
+      columns: z.array(
+        z.object({
+          label: z.string(),
+          faction: z.string(),
+          member: z.string().optional(),
+          stance: z.enum(["賛成", "反対", "賛成でない", "欠席", "退席", "棄権", "除斥", "議長", "不参加"]),
+        }),
+      ),
+    })
+    .optional(),
 });
 export type CouncilCompositionDoc = z.infer<typeof councilCompositionDocSchema>;
 

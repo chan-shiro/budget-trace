@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "toyama-shigikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:51:59.659Z",
+  "parserVersion": "0.6.8",
+  "parsedAt": "2026-10-02T12:40:31.312Z",
   "fiscalYear": "R8",
   "body": "富山市議会",
   "seats": 38,
@@ -204,5 +204,240 @@
     }
   },
   "rosterTitle": "会派別議員名簿（令和8年3月11日現在）",
-  "resultTitle": "令和８年３月定例会 議案等に対する賛否について"
+  "resultTitle": "令和８年３月定例会 議案等に対する賛否について",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "令和８年３月定例会 議案等に対する賛否について",
+    "sourceFile": "sanpi-r0803-2.pdf",
+    "columns": [
+      {
+        "label": "木地智美",
+        "faction": "富山市議会自由民主党",
+        "member": "木地智美",
+        "stance": "賛成"
+      },
+      {
+        "label": "飯山勝彦",
+        "faction": "富山市議会自由民主党",
+        "member": "飯山勝彦",
+        "stance": "賛成"
+      },
+      {
+        "label": "織田伸一",
+        "faction": "富山市議会自由民主党",
+        "member": "織田伸一",
+        "stance": "賛成"
+      },
+      {
+        "label": "高原ゆずる",
+        "faction": "富山市議会自由民主党",
+        "member": "高原ゆずる",
+        "stance": "賛成"
+      },
+      {
+        "label": "豊岡達郎",
+        "faction": "富山市議会自由民主党",
+        "member": "豊岡達郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "松井邦人",
+        "faction": "富山市議会自由民主党",
+        "member": "松井邦人",
+        "stance": "賛成"
+      },
+      {
+        "label": "金谷幸則",
+        "faction": "富山市議会自由民主党",
+        "member": "金谷幸則",
+        "stance": "賛成"
+      },
+      {
+        "label": "舎川智也",
+        "faction": "富山市議会自由民主党",
+        "member": "舎川智也",
+        "stance": "賛成"
+      },
+      {
+        "label": "押田大祐",
+        "faction": "富山市議会自由民主党",
+        "member": "押田大祐",
+        "stance": "賛成"
+      },
+      {
+        "label": "髙田真里",
+        "faction": "富山市議会自由民主党",
+        "member": "髙田真里",
+        "stance": "賛成"
+      },
+      {
+        "label": "髙道秋彦",
+        "faction": "富山市議会自由民主党",
+        "member": "髙道秋彦",
+        "stance": "賛成"
+      },
+      {
+        "label": "横野昭",
+        "faction": "富山市議会自由民主党",
+        "member": "横野昭",
+        "stance": "賛成"
+      },
+      {
+        "label": "金厚有豊",
+        "faction": "富山市議会自由民主党",
+        "member": "金厚有豊",
+        "stance": "賛成"
+      },
+      {
+        "label": "鋪田博紀",
+        "faction": "富山市議会自由民主党",
+        "member": "鋪田博紀",
+        "stance": "賛成"
+      },
+      {
+        "label": "金岡貴裕",
+        "faction": "自由民主党",
+        "member": "金岡貴裕",
+        "stance": "賛成"
+      },
+      {
+        "label": "藤田克樹",
+        "faction": "自由民主党",
+        "member": "藤田克樹",
+        "stance": "賛成"
+      },
+      {
+        "label": "久保大憲",
+        "faction": "自由民主党",
+        "member": "久保大憲",
+        "stance": "賛成"
+      },
+      {
+        "label": "江西照康",
+        "faction": "自由民主党",
+        "member": "江西照康",
+        "stance": "賛成"
+      },
+      {
+        "label": "柞山数男",
+        "faction": "自由民主党",
+        "member": "柞山数男",
+        "stance": "賛成"
+      },
+      {
+        "label": "細川博徳",
+        "faction": "公明党",
+        "member": "細川博徳",
+        "stance": "賛成"
+      },
+      {
+        "label": "柏佳枝",
+        "faction": "公明党",
+        "member": "柏佳枝",
+        "stance": "賛成"
+      },
+      {
+        "label": "松尾茂",
+        "faction": "公明党",
+        "member": "松尾茂",
+        "stance": "賛成"
+      },
+      {
+        "label": "松井桂将",
+        "faction": "公明党",
+        "member": "松井桂将",
+        "stance": "賛成"
+      },
+      {
+        "label": "岡部享",
+        "faction": "立憲民主党",
+        "member": "岡部享",
+        "stance": "賛成"
+      },
+      {
+        "label": "東篤",
+        "faction": "立憲民主党",
+        "member": "東篤",
+        "stance": "賛成"
+      },
+      {
+        "label": "村石篤",
+        "faction": "立憲民主党",
+        "member": "村石篤",
+        "stance": "賛成"
+      },
+      {
+        "label": "尾上一彦",
+        "faction": "会派 誠政",
+        "member": "尾上一彦",
+        "stance": "賛成"
+      },
+      {
+        "label": "橋本雅雄",
+        "faction": "会派 誠政",
+        "member": "橋本雅雄",
+        "stance": "賛成"
+      },
+      {
+        "label": "金井毅俊",
+        "faction": "政策・維新32",
+        "member": "金井毅俊",
+        "stance": "反対"
+      },
+      {
+        "label": "大島満",
+        "faction": "政策・維新32",
+        "member": "大島満",
+        "stance": "反対"
+      },
+      {
+        "label": "赤星ゆかり",
+        "faction": "日本共産党",
+        "member": "赤星ゆかり",
+        "stance": "反対"
+      },
+      {
+        "label": "村上和久",
+        "faction": "太政",
+        "member": "村上和久",
+        "stance": "反対"
+      },
+      {
+        "label": "市田龍一",
+        "faction": "政風会",
+        "member": "市田龍一",
+        "stance": "賛成"
+      },
+      {
+        "label": "谷口寿一",
+        "faction": "気魄",
+        "member": "谷口寿一",
+        "stance": "賛成"
+      },
+      {
+        "label": "福田敏彦",
+        "faction": "未来をつくる",
+        "member": "福田敏彦",
+        "stance": "賛成"
+      },
+      {
+        "label": "野上明人",
+        "faction": "みどり",
+        "member": "野上明人",
+        "stance": "反対"
+      },
+      {
+        "label": "金山茜",
+        "faction": "参政党議員会",
+        "member": "金山茜",
+        "stance": "賛成"
+      },
+      {
+        "label": "高田重信",
+        "faction": "富山市議会自由民主党",
+        "member": "高田重信",
+        "stance": "議長"
+      }
+    ]
+  }
 }

@@ -31,6 +31,16 @@
       "bytes": 25211,
       "fetchedAt": "2026-10-01T15:50:47.093Z",
       "fetchedFrom": "https://www.city.yokohama.lg.jp/shikai/shikumi/kosei/shikumi21.html"
+    },
+    {
+      "filename": "gicho-aisatsu.html",
+      "sha256": "f1f7123ac52b5f96daf87d9a80ac7e65ebaea72762b065eed0ca9a27dc625fc9",
+      "bytes": 18458,
+      "fetchedAt": "2026-10-02T11:33:13.374Z",
+      "fetchedFrom": "https://web.archive.org/web/20260305075723id_/https://www.city.yokohama.lg.jp/shikai/gicho-fukugicho/gicho-aisatsu.html",
+      "transform": [
+        "gunzip"
+      ]
     }
   ]
 }

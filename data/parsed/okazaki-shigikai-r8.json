@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "okazaki-shigikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:52:00.428Z",
+  "parserVersion": "0.6.8",
+  "parsedAt": "2026-10-02T12:40:32.535Z",
   "fiscalYear": "R8",
   "body": "岡崎市議会",
   "seats": 37,
@@ -115,5 +115,234 @@
     }
   },
   "rosterTitle": "議員名簿（会派別）（令和7年11月14日現在）",
-  "resultTitle": "議決結果一覧表（令和8年3月定例会）"
+  "resultTitle": "議決結果一覧表（令和8年3月定例会）",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "おかざき議会だより vol.232（令和8年3月定例会）議案の賛否一覧表",
+    "sourceFile": "232.pdf",
+    "columns": [
+      {
+        "label": "磯部亮次",
+        "faction": "自民清風会",
+        "member": "磯部亮次",
+        "stance": "賛成"
+      },
+      {
+        "label": "加藤史朗",
+        "faction": "自民清風会",
+        "member": "加藤史朗",
+        "stance": "賛成"
+      },
+      {
+        "label": "加藤義幸",
+        "faction": "自民清風会",
+        "member": "加藤義幸",
+        "stance": "賛成"
+      },
+      {
+        "label": "金山直樹",
+        "faction": "自民清風会",
+        "member": "金山直樹",
+        "stance": "賛成"
+      },
+      {
+        "label": "神谷茂樹",
+        "faction": "自民清風会",
+        "member": "神谷茂樹",
+        "stance": "賛成"
+      },
+      {
+        "label": "酒井正一",
+        "faction": "自民清風会",
+        "member": "酒井正一",
+        "stance": "賛成"
+      },
+      {
+        "label": "杉浦久直",
+        "faction": "自民清風会",
+        "member": "杉浦久直",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴木静男",
+        "faction": "自民清風会",
+        "member": "鈴木静男",
+        "stance": "賛成"
+      },
+      {
+        "label": "田口正夫",
+        "faction": "自民清風会",
+        "member": "田口正夫",
+        "stance": "賛成"
+      },
+      {
+        "label": "中根武彦",
+        "faction": "自民清風会",
+        "member": "中根武彦",
+        "stance": "賛成"
+      },
+      {
+        "label": "野々山雄一郎",
+        "faction": "自民清風会",
+        "member": "野々山雄一郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "野本篤",
+        "faction": "自民清風会",
+        "member": "野本篤",
+        "stance": "賛成"
+      },
+      {
+        "label": "蜂須賀一郎",
+        "faction": "自民清風会",
+        "member": "蜂須賀一郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "前田麗子",
+        "faction": "自民清風会",
+        "member": "前田麗子",
+        "stance": "賛成"
+      },
+      {
+        "label": "三浦康宏",
+        "faction": "自民清風会",
+        "member": "三浦康宏",
+        "stance": "賛成"
+      },
+      {
+        "label": "簗瀬太",
+        "faction": "自民清風会",
+        "member": "簗瀬太",
+        "stance": "賛成"
+      },
+      {
+        "label": "井町圭孝",
+        "faction": "民政クラブ",
+        "member": "井町圭孝",
+        "stance": "賛成"
+      },
+      {
+        "label": "加藤嘉哉",
+        "faction": "民政クラブ",
+        "member": "加藤嘉哉",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐藤哲朗",
+        "faction": "民政クラブ",
+        "member": "佐藤哲朗",
+        "stance": "賛成"
+      },
+      {
+        "label": "柴田敏光",
+        "faction": "民政クラブ",
+        "member": "柴田敏光",
+        "stance": "賛成"
+      },
+      {
+        "label": "白井正樹",
+        "faction": "民政クラブ",
+        "member": "白井正樹",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴木英樹",
+        "faction": "民政クラブ",
+        "member": "鈴木英樹",
+        "stance": "賛成"
+      },
+      {
+        "label": "瀬戸清太郎",
+        "faction": "民政クラブ",
+        "member": "瀬戸清太郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "原紀彦",
+        "faction": "民政クラブ",
+        "member": "原紀彦",
+        "stance": "賛成"
+      },
+      {
+        "label": "土谷直樹",
+        "faction": "公明党",
+        "member": "土谷直樹",
+        "stance": "賛成"
+      },
+      {
+        "label": "野島さつき",
+        "faction": "公明党",
+        "member": "野島さつき",
+        "stance": "賛成"
+      },
+      {
+        "label": "山村栄",
+        "faction": "公明党",
+        "member": "山村栄",
+        "stance": "賛成"
+      },
+      {
+        "label": "小田高之",
+        "faction": "チャレンジ岡崎",
+        "member": "小田高之",
+        "stance": "賛成"
+      },
+      {
+        "label": "杉山智騎",
+        "faction": "チャレンジ岡崎",
+        "member": "杉山智騎",
+        "stance": "賛成"
+      },
+      {
+        "label": "福田澄代",
+        "faction": "チャレンジ岡崎",
+        "member": "福田澄代",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴木雅子",
+        "faction": "無所属",
+        "member": "鈴木雅子",
+        "stance": "反対"
+      },
+      {
+        "label": "中根善明",
+        "faction": "無所属",
+        "member": "中根善明",
+        "stance": "反対"
+      },
+      {
+        "label": "伊藤正義",
+        "faction": "無所属",
+        "member": "伊藤正義",
+        "stance": "賛成"
+      },
+      {
+        "label": "大原昌幸",
+        "faction": "無所属",
+        "member": "大原昌幸",
+        "stance": "反対"
+      },
+      {
+        "label": "本多勝",
+        "faction": "無所属",
+        "member": "本多勝",
+        "stance": "賛成"
+      },
+      {
+        "label": "荻野秀範",
+        "faction": "無所属",
+        "member": "荻野秀範",
+        "stance": "議長"
+      },
+      {
+        "label": "畑尻宣長",
+        "faction": "無所属",
+        "member": "畑尻宣長",
+        "stance": "賛成"
+      }
+    ]
+  }
 }

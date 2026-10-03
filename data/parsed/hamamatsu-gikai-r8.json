@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "hamamatsu-gikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:51:53.082Z",
+  "parserVersion": "0.6.8",
+  "parsedAt": "2026-10-02T12:40:21.894Z",
   "fiscalYear": "R8",
   "body": "浜松市議会",
   "seats": 44,
@@ -144,5 +144,276 @@
     }
   },
   "rosterTitle": "会派別名簿（更新日 2026年1月20日）",
-  "resultTitle": "令和8年第1回浜松市議会定例会 会議議決結果（全議案）"
+  "resultTitle": "令和8年第1回浜松市議会定例会 会議議決結果（全議案）",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "令和8年第1回浜松市議会定例会 会議議決結果（全議案）議員別賛否",
+    "sourceFile": "giinnsannpiitiran.pdf",
+    "columns": [
+      {
+        "label": "鈴木裕之",
+        "faction": "自由民主党浜松",
+        "member": "鈴木裕之",
+        "stance": "賛成"
+      },
+      {
+        "label": "藤田典良",
+        "faction": "自由民主党浜松",
+        "member": "藤田典良",
+        "stance": "賛成"
+      },
+      {
+        "label": "辻村公子",
+        "faction": "自由民主党浜松",
+        "member": "辻村公子",
+        "stance": "賛成"
+      },
+      {
+        "label": "中野和幸",
+        "faction": "自由民主党浜松",
+        "member": "中野和幸",
+        "stance": "賛成"
+      },
+      {
+        "label": "小泉翠",
+        "faction": "自由民主党浜松",
+        "member": "小泉翠",
+        "stance": "賛成"
+      },
+      {
+        "label": "神間郁子",
+        "faction": "自由民主党浜松",
+        "member": "神間郁子",
+        "stance": "賛成"
+      },
+      {
+        "label": "小野田康弘",
+        "faction": "自由民主党浜松",
+        "member": "小野田康弘",
+        "stance": "賛成"
+      },
+      {
+        "label": "露木里江子",
+        "faction": "自由民主党浜松",
+        "member": "露木里江子",
+        "stance": "賛成"
+      },
+      {
+        "label": "久米丈二",
+        "faction": "自由民主党浜松",
+        "member": "久米丈二",
+        "stance": "賛成"
+      },
+      {
+        "label": "井田博康",
+        "faction": "自由民主党浜松",
+        "member": "井田博康",
+        "stance": "欠席"
+      },
+      {
+        "label": "齋藤和志",
+        "faction": "自由民主党浜松",
+        "member": "齋藤和志",
+        "stance": "賛成"
+      },
+      {
+        "label": "平野岳子",
+        "faction": "自由民主党浜松",
+        "member": "平野岳子",
+        "stance": "賛成"
+      },
+      {
+        "label": "松本康夫",
+        "faction": "自由民主党浜松",
+        "member": "松本康夫",
+        "stance": "賛成"
+      },
+      {
+        "label": "加茂俊武",
+        "faction": "自由民主党浜松",
+        "member": "加茂俊武",
+        "stance": "賛成"
+      },
+      {
+        "label": "倉田清一",
+        "faction": "自由民主党浜松",
+        "member": "倉田清一",
+        "stance": "賛成"
+      },
+      {
+        "label": "須藤京子",
+        "faction": "自由民主党浜松",
+        "member": "須藤京子",
+        "stance": "賛成"
+      },
+      {
+        "label": "戸田誠",
+        "faction": "自由民主党浜松",
+        "member": "戸田誠",
+        "stance": "賛成"
+      },
+      {
+        "label": "鳥井德孝",
+        "faction": "自由民主党浜松",
+        "member": "鳥井德孝",
+        "stance": "賛成"
+      },
+      {
+        "label": "花井和夫",
+        "faction": "自由民主党浜松",
+        "member": "花井和夫",
+        "stance": "賛成"
+      },
+      {
+        "label": "渥美誠",
+        "faction": "自由民主党浜松",
+        "member": "渥美誠",
+        "stance": "賛成"
+      },
+      {
+        "label": "太田康隆",
+        "faction": "自由民主党浜松",
+        "member": "太田康隆",
+        "stance": "賛成"
+      },
+      {
+        "label": "栁川樹一郎",
+        "faction": "自由民主党浜松",
+        "member": "栁川樹一郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "山崎とし子",
+        "faction": "公明党",
+        "member": "山崎とし子",
+        "stance": "賛成"
+      },
+      {
+        "label": "丸英之",
+        "faction": "公明党",
+        "member": "丸英之",
+        "stance": "賛成"
+      },
+      {
+        "label": "幸田惠里子",
+        "faction": "公明党",
+        "member": "幸田惠里子",
+        "stance": "賛成"
+      },
+      {
+        "label": "松下正行",
+        "faction": "公明党",
+        "member": "松下正行",
+        "stance": "賛成"
+      },
+      {
+        "label": "黒田豊",
+        "faction": "公明党",
+        "member": "黒田豊",
+        "stance": "賛成"
+      },
+      {
+        "label": "大城七瀬",
+        "faction": "市民クラブ",
+        "member": "大城七瀬",
+        "stance": "賛成"
+      },
+      {
+        "label": "花井洋介",
+        "faction": "市民クラブ",
+        "member": "花井洋介",
+        "stance": "賛成"
+      },
+      {
+        "label": "石津陽子",
+        "faction": "市民クラブ",
+        "member": "石津陽子",
+        "stance": "賛成"
+      },
+      {
+        "label": "岩田邦泰",
+        "faction": "市民クラブ",
+        "member": "岩田邦泰",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴木真人",
+        "faction": "市民クラブ",
+        "member": "鈴木真人",
+        "stance": "賛成"
+      },
+      {
+        "label": "斉藤晴明",
+        "faction": "市民クラブ",
+        "member": "斉藤晴明",
+        "stance": "賛成"
+      },
+      {
+        "label": "森田賢児",
+        "faction": "創造浜松・国民民主党浜松",
+        "member": "森田賢児",
+        "stance": "賛成"
+      },
+      {
+        "label": "遠山将吾",
+        "faction": "創造浜松・国民民主党浜松",
+        "member": "遠山将吾",
+        "stance": "賛成"
+      },
+      {
+        "label": "太田利実保",
+        "faction": "創造浜松・国民民主党浜松",
+        "member": "太田利実保",
+        "stance": "賛成"
+      },
+      {
+        "label": "湖東秀隆",
+        "faction": "創造浜松・国民民主党浜松",
+        "member": "湖東秀隆",
+        "stance": "賛成"
+      },
+      {
+        "label": "関イチロー",
+        "faction": "創造浜松・国民民主党浜松",
+        "member": "関イチロー",
+        "stance": "賛成"
+      },
+      {
+        "label": "酒井豊実",
+        "faction": "日本共産党浜松市議団",
+        "member": "酒井豊実",
+        "stance": "反対"
+      },
+      {
+        "label": "小黒啓子",
+        "faction": "日本共産党浜松市議団",
+        "member": "小黒啓子",
+        "stance": "反対"
+      },
+      {
+        "label": "北島定",
+        "faction": "日本共産党浜松市議団",
+        "member": "北島定",
+        "stance": "反対"
+      },
+      {
+        "label": "鈴木恵",
+        "faction": "浜松市政向上委員会",
+        "member": "鈴木恵",
+        "stance": "賛成"
+      },
+      {
+        "label": "馬塚彩矢香",
+        "faction": "市民サポート浜松",
+        "member": "馬塚彩矢香",
+        "stance": "欠席"
+      },
+      {
+        "label": "髙林修",
+        "faction": "自由民主党浜松",
+        "member": "髙林修",
+        "stance": "議長"
+      }
+    ]
+  }
 }

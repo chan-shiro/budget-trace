@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "akita-shigikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:51:59.200Z",
+  "parserVersion": "0.6.8",
+  "parsedAt": "2026-10-02T12:40:30.456Z",
   "fiscalYear": "R8",
   "body": "秋田市議会",
   "seats": 36,
@@ -147,5 +147,228 @@
     }
   },
   "rosterTitle": "市議会議員名簿（会派別）（令和7年6月5日現在）",
-  "resultTitle": "議案等に対する議員の表決状況（令和８年２月定例会・令和８年３月１７日）"
+  "resultTitle": "議案等に対する議員の表決状況（令和８年２月定例会・令和８年３月１７日）",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "議案等に対する議員の表決状況（令和８年２月定例会・令和８年３月１７日）",
+    "sourceFile": "r080317sanpi.pdf",
+    "columns": [
+      {
+        "label": "荻原貴幸",
+        "faction": "秋水会",
+        "member": "荻原貴幸",
+        "stance": "賛成"
+      },
+      {
+        "label": "細川信二",
+        "faction": "秋水会",
+        "member": "細川信二",
+        "stance": "賛成"
+      },
+      {
+        "label": "見上万里子",
+        "faction": "秋水会",
+        "member": "見上万里子",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐藤宏悦",
+        "faction": "秋水会",
+        "member": "佐藤宏悦",
+        "stance": "賛成"
+      },
+      {
+        "label": "伊藤一榮",
+        "faction": "秋水会",
+        "member": "伊藤一榮",
+        "stance": "賛成"
+      },
+      {
+        "label": "渡辺正宏",
+        "faction": "秋水会",
+        "member": "渡辺正宏",
+        "stance": "賛成"
+      },
+      {
+        "label": "小木田喜美雄",
+        "faction": "秋水会",
+        "member": "小木田喜美雄",
+        "stance": "賛成"
+      },
+      {
+        "label": "飯牟礼克年",
+        "faction": "自民党",
+        "member": "飯牟礼克年",
+        "stance": "賛成"
+      },
+      {
+        "label": "工藤潤平",
+        "faction": "自民党",
+        "member": "工藤潤平",
+        "stance": "賛成"
+      },
+      {
+        "label": "工藤知彦",
+        "faction": "自民党",
+        "member": "工藤知彦",
+        "stance": "賛成"
+      },
+      {
+        "label": "安井正浩",
+        "faction": "自民党",
+        "member": "安井正浩",
+        "stance": "賛成"
+      },
+      {
+        "label": "伊藤巧一",
+        "faction": "自民党",
+        "member": "伊藤巧一",
+        "stance": "賛成"
+      },
+      {
+        "label": "熊谷重隆",
+        "faction": "自民党",
+        "member": "熊谷重隆",
+        "stance": "欠席"
+      },
+      {
+        "label": "菅原琢哉",
+        "faction": "自民党",
+        "member": "菅原琢哉",
+        "stance": "賛成"
+      },
+      {
+        "label": "小野寺誠",
+        "faction": "自民党",
+        "member": "小野寺誠",
+        "stance": "賛成"
+      },
+      {
+        "label": "後藤良",
+        "faction": "フロンティア秋田",
+        "member": "後藤良",
+        "stance": "賛成"
+      },
+      {
+        "label": "船木純",
+        "faction": "フロンティア秋田",
+        "member": "船木純",
+        "stance": "賛成"
+      },
+      {
+        "label": "藤田信",
+        "faction": "フロンティア秋田",
+        "member": "藤田信",
+        "stance": "賛成"
+      },
+      {
+        "label": "藤枝隆博",
+        "faction": "フロンティア秋田",
+        "member": "藤枝隆博",
+        "stance": "賛成"
+      },
+      {
+        "label": "工藤新一",
+        "faction": "フロンティア秋田",
+        "member": "工藤新一",
+        "stance": "賛成"
+      },
+      {
+        "label": "倉田芳浩",
+        "faction": "フロンティア秋田",
+        "member": "倉田芳浩",
+        "stance": "賛成"
+      },
+      {
+        "label": "小林一夫",
+        "faction": "フロンティア秋田",
+        "member": "小林一夫",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐藤佳人",
+        "faction": "公明党秋田市議会",
+        "member": "佐藤佳人",
+        "stance": "賛成"
+      },
+      {
+        "label": "牧野守",
+        "faction": "公明党秋田市議会",
+        "member": "牧野守",
+        "stance": "賛成"
+      },
+      {
+        "label": "武田正子",
+        "faction": "公明党秋田市議会",
+        "member": "武田正子",
+        "stance": "賛成"
+      },
+      {
+        "label": "石塚秀博",
+        "faction": "公明党秋田市議会",
+        "member": "石塚秀博",
+        "stance": "賛成"
+      },
+      {
+        "label": "藤井翼",
+        "faction": "そうせいと維新",
+        "member": "藤井翼",
+        "stance": "賛成"
+      },
+      {
+        "label": "菊地格夫",
+        "faction": "そうせいと維新",
+        "member": "菊地格夫",
+        "stance": "賛成"
+      },
+      {
+        "label": "若松尚利",
+        "faction": "そうせいと維新",
+        "member": "若松尚利",
+        "stance": "賛成"
+      },
+      {
+        "label": "小松健",
+        "faction": "そうせいと維新",
+        "member": "小松健",
+        "stance": "賛成"
+      },
+      {
+        "label": "奈良順子",
+        "faction": "日本共産党秋田市議会議員団",
+        "member": "奈良順子",
+        "stance": "反対"
+      },
+      {
+        "label": "佐藤純子",
+        "faction": "日本共産党秋田市議会議員団",
+        "member": "佐藤純子",
+        "stance": "反対"
+      },
+      {
+        "label": "安井誠悦",
+        "faction": "市民クラブ",
+        "member": "安井誠悦",
+        "stance": "賛成"
+      },
+      {
+        "label": "花田清美",
+        "faction": "市民クラブ",
+        "member": "花田清美",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐藤哲治",
+        "faction": "市民のみかた",
+        "member": "佐藤哲治",
+        "stance": "賛成"
+      },
+      {
+        "label": "川口雅丈",
+        "faction": "秋水会",
+        "member": "川口雅丈",
+        "stance": "議長"
+      }
+    ]
+  }
 }

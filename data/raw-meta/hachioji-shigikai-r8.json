@@ -21,6 +21,13 @@
       "bytes": 69565,
       "fetchedAt": "2026-10-01T16:55:24.102Z",
       "fetchedFrom": "https://www.city.hachioji.tokyo.jp/contents/shigikai_1/gikainokatudou/honnkaigi/reiwa8/p037014.html"
+    },
+    {
+      "filename": "r8yosan_kimei.pdf",
+      "sha256": "97f9a751f258624afe004ae98578cd245fd2eda11d86c3cf52e3ab96e22c3841",
+      "bytes": 341123,
+      "fetchedAt": "2026-10-02T11:28:34.948Z",
+      "fetchedFrom": "https://www.city.hachioji.tokyo.jp/contents/shigikai_1/gikainokatudou/honnkaigi/reiwa8/p037014_d/fil/r8yosan_kimei.pdf"
     }
   ]
 }

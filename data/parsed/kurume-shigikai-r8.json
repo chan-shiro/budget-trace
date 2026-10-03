@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "kurume-shigikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:52:01.204Z",
+  "parserVersion": "0.6.8",
+  "parsedAt": "2026-10-02T12:40:33.667Z",
   "fiscalYear": "R8",
   "body": "久留米市議会",
   "seats": 35,
@@ -157,5 +157,222 @@
     }
   },
   "rosterTitle": "令和8年第2回市議会定例会（6月）における議案に対する賛否の状況（会派・団体名と議員名の列見出し）",
-  "resultTitle": "令和8年第2回市議会定例会（6月）における議案に対する賛否の状況"
+  "resultTitle": "令和8年第2回市議会定例会（6月）における議案に対する賛否の状況",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "令和8年第2回市議会定例会（6月）における議案に対する賛否の状況",
+    "sourceFile": "R8.6sanpi.pdf",
+    "columns": [
+      {
+        "label": "吉冨巧",
+        "faction": "きずな議員団",
+        "member": "吉冨巧",
+        "stance": "賛成"
+      },
+      {
+        "label": "田住和也",
+        "faction": "きずな議員団",
+        "member": "田住和也",
+        "stance": "賛成"
+      },
+      {
+        "label": "堀田洸太朗",
+        "faction": "きずな議員団",
+        "member": "堀田洸太朗",
+        "stance": "賛成"
+      },
+      {
+        "label": "石井秀夫",
+        "faction": "きずな議員団",
+        "member": "石井秀夫",
+        "stance": "議長"
+      },
+      {
+        "label": "山田貴生",
+        "faction": "きずな議員団",
+        "member": "山田貴生",
+        "stance": "賛成"
+      },
+      {
+        "label": "古賀としかず",
+        "faction": "きずな議員団",
+        "member": "古賀としかず",
+        "stance": "賛成"
+      },
+      {
+        "label": "そうだ耕一郎",
+        "faction": "久留米たすき議員団",
+        "member": "そうだ耕一郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "中村博俊",
+        "faction": "久留米たすき議員団",
+        "member": "中村博俊",
+        "stance": "賛成"
+      },
+      {
+        "label": "山﨑ケブン",
+        "faction": "久留米たすき議員団",
+        "member": "山﨑ケブン",
+        "stance": "賛成"
+      },
+      {
+        "label": "甲斐田義弘",
+        "faction": "久留米たすき議員団",
+        "member": "甲斐田義弘",
+        "stance": "賛成"
+      },
+      {
+        "label": "石井俊一",
+        "faction": "久留米たすき議員団",
+        "member": "石井俊一",
+        "stance": "賛成"
+      },
+      {
+        "label": "松岡保治",
+        "faction": "久留米たすき議員団",
+        "member": "松岡保治",
+        "stance": "賛成"
+      },
+      {
+        "label": "山下尚",
+        "faction": "公明党議員団",
+        "member": "山下尚",
+        "stance": "賛成"
+      },
+      {
+        "label": "田中貴子",
+        "faction": "公明党議員団",
+        "member": "田中貴子",
+        "stance": "賛成"
+      },
+      {
+        "label": "生野薫",
+        "faction": "公明党議員団",
+        "member": "生野薫",
+        "stance": "賛成"
+      },
+      {
+        "label": "田中功一",
+        "faction": "公明党議員団",
+        "member": "田中功一",
+        "stance": "賛成"
+      },
+      {
+        "label": "塚本弘道",
+        "faction": "公明党議員団",
+        "member": "塚本弘道",
+        "stance": "賛成"
+      },
+      {
+        "label": "坂田光弘",
+        "faction": "公明党議員団",
+        "member": "坂田光弘",
+        "stance": "賛成"
+      },
+      {
+        "label": "永田一伸",
+        "faction": "立志会議員団",
+        "member": "永田一伸",
+        "stance": "賛成"
+      },
+      {
+        "label": "堺太一郎",
+        "faction": "立志会議員団",
+        "member": "堺太一郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "長野哲",
+        "faction": "立志会議員団",
+        "member": "長野哲",
+        "stance": "賛成"
+      },
+      {
+        "label": "後藤敬介",
+        "faction": "立志会議員団",
+        "member": "後藤敬介",
+        "stance": "賛成"
+      },
+      {
+        "label": "権藤智喜",
+        "faction": "立志会議員団",
+        "member": "権藤智喜",
+        "stance": "賛成"
+      },
+      {
+        "label": "轟照隆",
+        "faction": "立志会議員団",
+        "member": "轟照隆",
+        "stance": "賛成"
+      },
+      {
+        "label": "秋永峰子",
+        "faction": "みらい久留米議員団",
+        "member": "秋永峰子",
+        "stance": "賛成"
+      },
+      {
+        "label": "古賀敏久",
+        "faction": "みらい久留米議員団",
+        "member": "古賀敏久",
+        "stance": "賛成"
+      },
+      {
+        "label": "藤林詠子",
+        "faction": "みらい久留米議員団",
+        "member": "藤林詠子",
+        "stance": "賛成"
+      },
+      {
+        "label": "石田眞一郎",
+        "faction": "みらい久留米議員団",
+        "member": "石田眞一郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐藤晶二",
+        "faction": "緑水会議員団",
+        "member": "佐藤晶二",
+        "stance": "反対"
+      },
+      {
+        "label": "吉武憲治",
+        "faction": "緑水会議員団",
+        "member": "吉武憲治",
+        "stance": "賛成"
+      },
+      {
+        "label": "森﨑巨樹",
+        "faction": "緑水会議員団",
+        "member": "森﨑巨樹",
+        "stance": "反対"
+      },
+      {
+        "label": "金子むつみ",
+        "faction": "日本共産党久留米市議団",
+        "member": "金子むつみ",
+        "stance": "反対"
+      },
+      {
+        "label": "小林ときこ",
+        "faction": "日本共産党久留米市議団",
+        "member": "小林ときこ",
+        "stance": "反対"
+      },
+      {
+        "label": "大熊博文",
+        "faction": "改革の会",
+        "member": "大熊博文",
+        "stance": "賛成"
+      },
+      {
+        "label": "草場公晴",
+        "faction": "日本維新の会",
+        "member": "草場公晴",
+        "stance": "賛成"
+      }
+    ]
+  }
 }

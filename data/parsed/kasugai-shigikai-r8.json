@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "kasugai-shigikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:51:57.240Z",
+  "parserVersion": "0.6.8",
+  "parsedAt": "2026-10-02T12:40:27.649Z",
   "fiscalYear": "R8",
   "body": "春日井市議会",
   "seats": 31,
@@ -175,5 +175,198 @@
     }
   },
   "rosterTitle": "第21期市議会議員 会派名簿（更新日 令和7年5月14日）",
-  "resultTitle": "令和8年第1回定例会 議案一覧（議決日・結果）"
+  "resultTitle": "令和8年第1回定例会 議案一覧（議決日・結果）",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "第１回定例会 議案等の表決結果",
+    "sourceFile": "20260312hyouketsu.pdf",
+    "columns": [
+      {
+        "label": "金",
+        "faction": "自由クラブ",
+        "member": "金澤陽貴",
+        "stance": "賛成"
+      },
+      {
+        "label": "前",
+        "faction": "自由クラブ",
+        "member": "前田学",
+        "stance": "賛成"
+      },
+      {
+        "label": "加",
+        "faction": "自由クラブ",
+        "member": "加納満",
+        "stance": "賛成"
+      },
+      {
+        "label": "林",
+        "faction": "自由クラブ",
+        "member": "林克巳",
+        "stance": "賛成"
+      },
+      {
+        "label": "友",
+        "faction": "自由クラブ",
+        "member": "友松孝雄",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴",
+        "faction": "かすがい創政会",
+        "member": "鈴木貴之",
+        "stance": "賛成"
+      },
+      {
+        "label": "安",
+        "faction": "かすがい創政会",
+        "member": "安達保子",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴",
+        "faction": "かすがい創政会",
+        "member": "鈴木秀尚",
+        "stance": "賛成"
+      },
+      {
+        "label": "加",
+        "faction": "かすがい創政会",
+        "member": "加藤貴章",
+        "stance": "賛成"
+      },
+      {
+        "label": "鬼",
+        "faction": "かすがい創政会",
+        "member": "鬼頭宏明",
+        "stance": "賛成"
+      },
+      {
+        "label": "梶",
+        "faction": "春日井自民クラブ",
+        "member": "梶田正直",
+        "stance": "賛成"
+      },
+      {
+        "label": "堀",
+        "faction": "春日井自民クラブ",
+        "member": "堀尾国大",
+        "stance": "賛成"
+      },
+      {
+        "label": "長",
+        "faction": "春日井自民クラブ",
+        "member": "長谷川達也",
+        "stance": "賛成"
+      },
+      {
+        "label": "長",
+        "faction": "春日井自民クラブ",
+        "member": "長縄典夫",
+        "stance": "賛成"
+      },
+      {
+        "label": "大",
+        "faction": "公明党",
+        "member": "大村勝人",
+        "stance": "賛成"
+      },
+      {
+        "label": "日",
+        "faction": "公明党",
+        "member": "日比野成利",
+        "stance": "賛成"
+      },
+      {
+        "label": "石",
+        "faction": "公明党",
+        "member": "石飛厚治",
+        "stance": "賛成"
+      },
+      {
+        "label": "田",
+        "faction": "公明党",
+        "member": "田口佳子",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴",
+        "faction": "市民クラブ",
+        "member": "鈴木宏幸",
+        "stance": "賛成"
+      },
+      {
+        "label": "伊",
+        "faction": "市民クラブ",
+        "member": "伊藤杏奈",
+        "stance": "賛成"
+      },
+      {
+        "label": "村",
+        "faction": "市民クラブ",
+        "member": "村上慎二郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "小",
+        "faction": "市民クラブ",
+        "member": "小原哉",
+        "stance": "賛成"
+      },
+      {
+        "label": "石",
+        "faction": "日本共産党春日井市議会議員団",
+        "member": "石田裕信",
+        "stance": "反対"
+      },
+      {
+        "label": "原",
+        "faction": "日本共産党春日井市議会議員団",
+        "member": "原田祐治",
+        "stance": "反対"
+      },
+      {
+        "label": "伊",
+        "faction": "日本共産党春日井市議会議員団",
+        "member": "伊藤建治",
+        "stance": "反対"
+      },
+      {
+        "label": "長",
+        "faction": "無会派（長谷和哉）",
+        "member": "長谷和哉",
+        "stance": "賛成"
+      },
+      {
+        "label": "奥",
+        "faction": "無会派（奥村昇次）",
+        "member": "奥村昇次",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴",
+        "faction": "無会派（鈴木昭紀）",
+        "member": "鈴木昭紀",
+        "stance": "賛成"
+      },
+      {
+        "label": "小",
+        "faction": "無会派（小嶋小百合）",
+        "member": "小嶋小百合",
+        "stance": "賛成"
+      },
+      {
+        "label": "犬",
+        "faction": "無会派（犬塚貴司）",
+        "member": "犬塚貴司",
+        "stance": "賛成"
+      },
+      {
+        "label": "梶田高由",
+        "faction": "自由クラブ",
+        "member": "梶田高由",
+        "stance": "議長"
+      }
+    ]
+  }
 }

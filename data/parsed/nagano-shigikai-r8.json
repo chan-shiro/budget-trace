@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "nagano-shigikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:52:00.098Z",
+  "parserVersion": "0.6.8",
+  "parsedAt": "2026-10-02T12:40:31.920Z",
   "fiscalYear": "R8",
   "body": "長野市議会",
   "seats": 36,
@@ -124,5 +124,228 @@
     }
   },
   "rosterTitle": "会派別名簿（令和7年12月1日現在）",
-  "resultTitle": "令和8年3月定例会 議案の審議状況"
+  "resultTitle": "令和8年3月定例会 議案の審議状況",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "賛否などの態度が分かれた議案等（議員別賛否一覧）令和8年3月定例会",
+    "sourceFile": "r0803teireikaisinngikkekkaitiran.pdf",
+    "columns": [
+      {
+        "label": "小泉栄正",
+        "faction": "長野市議会新友会",
+        "member": "小泉栄正",
+        "stance": "賛成"
+      },
+      {
+        "label": "寺沢さゆり",
+        "faction": "長野市議会新友会",
+        "member": "寺沢さゆり",
+        "stance": "賛成"
+      },
+      {
+        "label": "西沢利一",
+        "faction": "長野市議会新友会",
+        "member": "西沢利一",
+        "stance": "賛成"
+      },
+      {
+        "label": "若林祥",
+        "faction": "長野市議会新友会",
+        "member": "若林祥",
+        "stance": "議長"
+      },
+      {
+        "label": "市川和彦",
+        "faction": "長野市議会新友会",
+        "member": "市川和彦",
+        "stance": "賛成"
+      },
+      {
+        "label": "松田光平",
+        "faction": "長野市議会新友会",
+        "member": "松田光平",
+        "stance": "賛成"
+      },
+      {
+        "label": "和田一成",
+        "faction": "長野市議会新友会",
+        "member": "和田一成",
+        "stance": "賛成"
+      },
+      {
+        "label": "加藤英夫",
+        "faction": "長野市議会新友会",
+        "member": "加藤英夫",
+        "stance": "賛成"
+      },
+      {
+        "label": "桜井篤",
+        "faction": "長野市議会新友会",
+        "member": "桜井篤",
+        "stance": "賛成"
+      },
+      {
+        "label": "青木敏明",
+        "faction": "長野市議会新友会",
+        "member": "青木敏明",
+        "stance": "賛成"
+      },
+      {
+        "label": "宮崎治夫",
+        "faction": "長野市議会新友会",
+        "member": "宮崎治夫",
+        "stance": "賛成"
+      },
+      {
+        "label": "北沢哲也",
+        "faction": "長野市議会新友会",
+        "member": "北沢哲也",
+        "stance": "賛成"
+      },
+      {
+        "label": "手塚秀樹",
+        "faction": "長野市議会新友会",
+        "member": "手塚秀樹",
+        "stance": "賛成"
+      },
+      {
+        "label": "金沢敦志",
+        "faction": "長野市議会新友会",
+        "member": "金沢敦志",
+        "stance": "賛成"
+      },
+      {
+        "label": "箱山正一",
+        "faction": "長野市議会新友会",
+        "member": "箱山正一",
+        "stance": "賛成"
+      },
+      {
+        "label": "西脇かおる",
+        "faction": "長野市議会新友会",
+        "member": "西脇かおる",
+        "stance": "賛成"
+      },
+      {
+        "label": "本木晋",
+        "faction": "長野市議会新友会",
+        "member": "本木晋",
+        "stance": "賛成"
+      },
+      {
+        "label": "山岸晃",
+        "faction": "長野市議会新友会",
+        "member": "山岸晃",
+        "stance": "賛成"
+      },
+      {
+        "label": "堀内伸悟",
+        "faction": "公明党長野市議員団",
+        "member": "堀内伸悟",
+        "stance": "賛成"
+      },
+      {
+        "label": "松井英雄",
+        "faction": "公明党長野市議員団",
+        "member": "松井英雄",
+        "stance": "賛成"
+      },
+      {
+        "label": "清水美加子",
+        "faction": "公明党長野市議員団",
+        "member": "清水美加子",
+        "stance": "賛成"
+      },
+      {
+        "label": "藤澤紀子",
+        "faction": "公明党長野市議員団",
+        "member": "藤澤紀子",
+        "stance": "賛成"
+      },
+      {
+        "label": "浅川徹",
+        "faction": "公明党長野市議員団",
+        "member": "浅川徹",
+        "stance": "賛成"
+      },
+      {
+        "label": "滝沢真一",
+        "faction": "日本共産党長野市会議員団",
+        "member": "滝沢真一",
+        "stance": "反対"
+      },
+      {
+        "label": "黒沢清一",
+        "faction": "日本共産党長野市会議員団",
+        "member": "黒沢清一",
+        "stance": "反対"
+      },
+      {
+        "label": "阿出川希",
+        "faction": "日本共産党長野市会議員団",
+        "member": "阿出川希",
+        "stance": "反対"
+      },
+      {
+        "label": "佐藤高志",
+        "faction": "日本共産党長野市会議員団",
+        "member": "佐藤高志",
+        "stance": "反対"
+      },
+      {
+        "label": "鈴木洋一",
+        "faction": "改革ながの市民ネット",
+        "member": "鈴木洋一",
+        "stance": "賛成"
+      },
+      {
+        "label": "東方みゆき",
+        "faction": "改革ながの市民ネット",
+        "member": "東方みゆき",
+        "stance": "賛成"
+      },
+      {
+        "label": "原ようこ",
+        "faction": "改革ながの市民ネット",
+        "member": "原ようこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "和田凌弥",
+        "faction": "次世代長野",
+        "member": "和田凌弥",
+        "stance": "賛成"
+      },
+      {
+        "label": "内藤武道",
+        "faction": "次世代長野",
+        "member": "内藤武道",
+        "stance": "賛成"
+      },
+      {
+        "label": "木村けいた",
+        "faction": "次世代長野",
+        "member": "木村けいた",
+        "stance": "賛成"
+      },
+      {
+        "label": "倉野立人",
+        "faction": "無所属",
+        "member": "倉野立人",
+        "stance": "賛成"
+      },
+      {
+        "label": "山﨑裕子",
+        "faction": "無所属",
+        "member": "山﨑裕子",
+        "stance": "反対"
+      },
+      {
+        "label": "山﨑昭夫",
+        "faction": "無所属",
+        "member": "山﨑昭夫",
+        "stance": "賛成"
+      }
+    ]
+  }
 }

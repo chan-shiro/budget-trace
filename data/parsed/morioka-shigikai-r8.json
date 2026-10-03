@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "morioka-shigikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:51:59.090Z",
+  "parserVersion": "0.6.8",
+  "parsedAt": "2026-10-02T12:40:30.280Z",
   "fiscalYear": "R8",
   "body": "盛岡市議会",
   "seats": 38,
@@ -137,5 +137,240 @@
     }
   },
   "rosterTitle": "会派等別議員名簿（更新日 令和7年9月2日）",
-  "resultTitle": "令和8年3月定例会 提出議案・議決結果"
+  "resultTitle": "令和8年3月定例会 提出議案・議決結果",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "令和8年3月定例会 賛否一覧表",
+    "sourceFile": "R8.3sanpikekka.pdf",
+    "columns": [
+      {
+        "label": "櫻裕子",
+        "faction": "盛友会",
+        "member": "櫻裕子",
+        "stance": "議長"
+      },
+      {
+        "label": "鈴木真吾",
+        "faction": "盛友会",
+        "member": "鈴木真吾",
+        "stance": "賛成"
+      },
+      {
+        "label": "山崎智樹",
+        "faction": "盛友会",
+        "member": "山崎智樹",
+        "stance": "賛成"
+      },
+      {
+        "label": "千葉順子",
+        "faction": "盛友会",
+        "member": "千葉順子",
+        "stance": "賛成"
+      },
+      {
+        "label": "野田尚紀",
+        "faction": "盛友会",
+        "member": "野田尚紀",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐藤明彦",
+        "faction": "盛友会",
+        "member": "佐藤明彦",
+        "stance": "賛成"
+      },
+      {
+        "label": "小笠原秀夫",
+        "faction": "盛友会",
+        "member": "小笠原秀夫",
+        "stance": "賛成"
+      },
+      {
+        "label": "田山俊悦",
+        "faction": "盛友会",
+        "member": "田山俊悦",
+        "stance": "賛成"
+      },
+      {
+        "label": "浅沼克人",
+        "faction": "盛友会",
+        "member": "浅沼克人",
+        "stance": "賛成"
+      },
+      {
+        "label": "千葉伸行",
+        "faction": "盛友会",
+        "member": "千葉伸行",
+        "stance": "賛成"
+      },
+      {
+        "label": "工藤健一",
+        "faction": "盛友会",
+        "member": "工藤健一",
+        "stance": "賛成"
+      },
+      {
+        "label": "藤澤由蔵",
+        "faction": "盛友会",
+        "member": "藤澤由蔵",
+        "stance": "賛成"
+      },
+      {
+        "label": "竹田浩久",
+        "faction": "盛友会",
+        "member": "竹田浩久",
+        "stance": "賛成"
+      },
+      {
+        "label": "天沼久純",
+        "faction": "盛友会",
+        "member": "天沼久純",
+        "stance": "賛成"
+      },
+      {
+        "label": "菊田隆",
+        "faction": "盛友会",
+        "member": "菊田隆",
+        "stance": "賛成"
+      },
+      {
+        "label": "遠藤政幸",
+        "faction": "盛友会",
+        "member": "遠藤政幸",
+        "stance": "賛成"
+      },
+      {
+        "label": "村田芳三",
+        "faction": "盛友会",
+        "member": "村田芳三",
+        "stance": "賛成"
+      },
+      {
+        "label": "細川由香里",
+        "faction": "創盛会",
+        "member": "細川由香里",
+        "stance": "賛成"
+      },
+      {
+        "label": "後藤百合子",
+        "faction": "創盛会",
+        "member": "後藤百合子",
+        "stance": "賛成"
+      },
+      {
+        "label": "兼平孝信",
+        "faction": "創盛会",
+        "member": "兼平孝信",
+        "stance": "賛成"
+      },
+      {
+        "label": "寺長根浩",
+        "faction": "創盛会",
+        "member": "寺長根浩",
+        "stance": "賛成"
+      },
+      {
+        "label": "大畑正二",
+        "faction": "創盛会",
+        "member": "大畑正二",
+        "stance": "賛成"
+      },
+      {
+        "label": "豊村徹也",
+        "faction": "創盛会",
+        "member": "豊村徹也",
+        "stance": "賛成"
+      },
+      {
+        "label": "中村一",
+        "faction": "創盛会",
+        "member": "中村一",
+        "stance": "賛成"
+      },
+      {
+        "label": "庄子春治",
+        "faction": "日本共産党盛岡市議団",
+        "member": "庄子春治",
+        "stance": "反対"
+      },
+      {
+        "label": "三田村亜美子",
+        "faction": "日本共産党盛岡市議団",
+        "member": "三田村亜美子",
+        "stance": "反対"
+      },
+      {
+        "label": "鈴木努",
+        "faction": "日本共産党盛岡市議団",
+        "member": "鈴木努",
+        "stance": "反対"
+      },
+      {
+        "label": "髙橋和夫",
+        "faction": "日本共産党盛岡市議団",
+        "member": "高橋和夫",
+        "stance": "反対"
+      },
+      {
+        "label": "神部伸也",
+        "faction": "日本共産党盛岡市議団",
+        "member": "神部伸也",
+        "stance": "反対"
+      },
+      {
+        "label": "中村雅幸",
+        "faction": "市政クラブ",
+        "member": "中村雅幸",
+        "stance": "賛成"
+      },
+      {
+        "label": "野中靖志",
+        "faction": "市政クラブ",
+        "member": "野中靖志",
+        "stance": "賛成"
+      },
+      {
+        "label": "中村亨",
+        "faction": "市政クラブ",
+        "member": "中村亨",
+        "stance": "賛成"
+      },
+      {
+        "label": "伊勢志穂",
+        "faction": "市政クラブ",
+        "member": "伊勢志穂",
+        "stance": "賛成"
+      },
+      {
+        "label": "太田隆司",
+        "faction": "公明党",
+        "member": "太田隆司",
+        "stance": "賛成"
+      },
+      {
+        "label": "池野直友",
+        "faction": "公明党",
+        "member": "池野直友",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴木聖子",
+        "faction": "公明党",
+        "member": "鈴木聖子",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐藤尚弘",
+        "faction": "日本維新の会",
+        "member": "佐藤尚弘",
+        "stance": "賛成"
+      },
+      {
+        "label": "縄手豊子",
+        "faction": "れいわ新選組",
+        "member": "縄手豊子",
+        "stance": "反対"
+      }
+    ]
+  }
 }

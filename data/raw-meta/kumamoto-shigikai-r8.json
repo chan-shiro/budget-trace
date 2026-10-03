@@ -30,6 +30,16 @@
       "transform": [
         "ext:.pdf"
       ]
+    },
+    {
+      "filename": "default.aspx_c_id_16.html",
+      "sha256": "7a07d7fb5263745d9e51471e3d7e09fe9cc65f8c272aec03fe064ae0a092a4cf",
+      "bytes": 62143,
+      "fetchedAt": "2026-10-02T11:33:13.372Z",
+      "fetchedFrom": "https://kumamoto-shigikai.jp/one_html3/pub/default.aspx?c_id=16",
+      "transform": [
+        "ext:.html"
+      ]
     }
   ]
 }

@@ -28,6 +28,13 @@
       "bytes": 629045,
       "fetchedAt": "2026-10-01T16:54:43.244Z",
       "fetchedFrom": "https://www.city.morioka.iwate.jp/_res/projects/default_project/_page_/001/056/302/241.2-3.pdf"
+    },
+    {
+      "filename": "R8.3sanpikekka.pdf",
+      "sha256": "57ee716e4a7b3dc3f66a9d6e10d69d83b9621c206353fecf574a427688b5fa13",
+      "bytes": 1000230,
+      "fetchedAt": "2026-10-02T11:30:13.719Z",
+      "fetchedFrom": "https://www.city.morioka.iwate.jp/_res/projects/default_project/_page_/001/055/511/R8.3sanpikekka.pdf"
     }
   ]
 }

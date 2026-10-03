@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "kyoto-shikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:51:53.244Z",
+  "parserVersion": "0.6.8",
+  "parsedAt": "2026-10-02T12:40:22.100Z",
   "fiscalYear": "R8",
   "body": "京都市会",
   "seats": 67,
@@ -211,5 +211,80 @@
     }
   },
   "rosterTitle": "会派別名簿（最終更新日 令和8年2月3日・2月18日）",
-  "resultTitle": "議案・審議結果（令和8年2月市会）"
+  "resultTitle": "議案・審議結果（令和8年2月市会）",
+  "votes": {
+    "basis": "faction",
+    "sourceTitle": "議案・審議結果（令和8年2月市会）各会派の態度",
+    "sourceFile": "gian2.html",
+    "columns": [
+      {
+        "label": "自民",
+        "faction": "自由民主党京都市会議員団",
+        "stance": "賛成"
+      },
+      {
+        "label": "維京国",
+        "faction": "維新・京都・国民市会議員団",
+        "stance": "賛成"
+      },
+      {
+        "label": "共産",
+        "faction": "日本共産党京都市会議員団",
+        "stance": "反対"
+      },
+      {
+        "label": "公明",
+        "faction": "公明党京都市会議員団",
+        "stance": "賛成"
+      },
+      {
+        "label": "無所属1",
+        "faction": "無所属（天方ひろゆき）",
+        "member": "天方ひろゆき",
+        "stance": "賛成"
+      },
+      {
+        "label": "無所属2",
+        "faction": "無所属（井﨑敦子）",
+        "member": "井﨑敦子",
+        "stance": "反対"
+      },
+      {
+        "label": "無所属3",
+        "faction": "無所属（きくち一秀）",
+        "member": "きくち一秀",
+        "stance": "賛成"
+      },
+      {
+        "label": "無所属4",
+        "faction": "無所属（小島信太郎）",
+        "member": "小島信太郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "無所属5",
+        "faction": "無所属（繁隆夫）",
+        "member": "繁隆夫",
+        "stance": "賛成"
+      },
+      {
+        "label": "無所属6",
+        "faction": "無所属（菅谷浩平）",
+        "member": "菅谷浩平",
+        "stance": "賛成"
+      },
+      {
+        "label": "無所属7",
+        "faction": "無所属（平田圭）",
+        "member": "平田圭",
+        "stance": "賛成"
+      },
+      {
+        "label": "下村あきら",
+        "faction": "自由民主党京都市会議員団",
+        "member": "下村あきら",
+        "stance": "議長"
+      }
+    ]
+  }
 }

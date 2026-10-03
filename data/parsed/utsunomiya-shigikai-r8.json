@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "utsunomiya-shigikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:51:56.718Z",
+  "parserVersion": "0.6.8",
+  "parsedAt": "2026-10-02T12:40:26.825Z",
   "fiscalYear": "R8",
   "body": "宇都宮市議会",
   "seats": 45,
@@ -167,5 +167,282 @@
     }
   },
   "rosterTitle": "会派紹介（令和7年4月1日現在）",
-  "resultTitle": "令和8年3月（第1回）定例会 会議結果"
+  "resultTitle": "令和8年3月（第1回）定例会 会議結果",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "定例会会議結果（3月24日現在）議員別賛否",
+    "sourceFile": "sannpi0324.pdf",
+    "columns": [
+      {
+        "label": "若林芽育",
+        "faction": "自由民主党議員会",
+        "member": "若林芽育",
+        "stance": "賛成"
+      },
+      {
+        "label": "手塚泉",
+        "faction": "自由民主党議員会",
+        "member": "手塚泉",
+        "stance": "賛成"
+      },
+      {
+        "label": "岡本源二郎",
+        "faction": "自由民主党議員会",
+        "member": "岡本源二郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "今野哲也",
+        "faction": "自由民主党議員会",
+        "member": "今野哲也",
+        "stance": "賛成"
+      },
+      {
+        "label": "菅原一浩",
+        "faction": "自由民主党議員会",
+        "member": "菅原一浩",
+        "stance": "賛成"
+      },
+      {
+        "label": "長谷川武士",
+        "faction": "自由民主党議員会",
+        "member": "長谷川武士",
+        "stance": "賛成"
+      },
+      {
+        "label": "矢古宇芳一",
+        "faction": "自由民主党議員会",
+        "member": "矢古宇芳一",
+        "stance": "賛成"
+      },
+      {
+        "label": "柴田賢司",
+        "faction": "自由民主党議員会",
+        "member": "柴田賢司",
+        "stance": "賛成"
+      },
+      {
+        "label": "内藤良弘",
+        "faction": "自由民主党議員会",
+        "member": "内藤良弘",
+        "stance": "賛成"
+      },
+      {
+        "label": "黒子英明",
+        "faction": "自由民主党議員会",
+        "member": "黒子英明",
+        "stance": "賛成"
+      },
+      {
+        "label": "篠﨑圭一",
+        "faction": "自由民主党議員会",
+        "member": "篠崎圭一",
+        "stance": "賛成"
+      },
+      {
+        "label": "山﨑昌子",
+        "faction": "自由民主党議員会",
+        "member": "山崎昌子",
+        "stance": "賛成"
+      },
+      {
+        "label": "馬上剛",
+        "faction": "自由民主党議員会",
+        "member": "馬上剛",
+        "stance": "賛成"
+      },
+      {
+        "label": "今井政範",
+        "faction": "自由民主党議員会",
+        "member": "今井政範",
+        "stance": "賛成"
+      },
+      {
+        "label": "小林紀夫",
+        "faction": "自由民主党議員会",
+        "member": "小林紀夫",
+        "stance": "賛成"
+      },
+      {
+        "label": "舟本肇",
+        "faction": "自由民主党議員会",
+        "member": "舟本肇",
+        "stance": "賛成"
+      },
+      {
+        "label": "岡本芳明",
+        "faction": "自由民主党議員会",
+        "member": "岡本芳明",
+        "stance": "賛成"
+      },
+      {
+        "label": "熊本和夫",
+        "faction": "自由民主党議員会",
+        "member": "熊本和夫",
+        "stance": "賛成"
+      },
+      {
+        "label": "横須賀咲紀",
+        "faction": "市民連合",
+        "member": "横須賀咲紀",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐藤孝明",
+        "faction": "市民連合",
+        "member": "佐藤孝明",
+        "stance": "賛成"
+      },
+      {
+        "label": "大久保順也",
+        "faction": "市民連合",
+        "member": "大久保順也",
+        "stance": "賛成"
+      },
+      {
+        "label": "高橋英樹",
+        "faction": "市民連合",
+        "member": "高橋英樹",
+        "stance": "賛成"
+      },
+      {
+        "label": "中塚英範",
+        "faction": "市民連合",
+        "member": "中塚英範",
+        "stance": "賛成"
+      },
+      {
+        "label": "福田智恵",
+        "faction": "市民連合",
+        "member": "福田智恵",
+        "stance": "賛成"
+      },
+      {
+        "label": "郷間康久",
+        "faction": "市民連合",
+        "member": "郷間康久",
+        "stance": "賛成"
+      },
+      {
+        "label": "駒場昭夫",
+        "faction": "市民連合",
+        "member": "駒場昭夫",
+        "stance": "賛成"
+      },
+      {
+        "label": "小倉久美",
+        "faction": "公明党議員会",
+        "member": "小倉久美",
+        "stance": "賛成"
+      },
+      {
+        "label": "岩井潤子",
+        "faction": "公明党議員会",
+        "member": "岩井潤子",
+        "stance": "賛成"
+      },
+      {
+        "label": "秋成大",
+        "faction": "公明党議員会",
+        "member": "秋成大",
+        "stance": "賛成"
+      },
+      {
+        "label": "成島隆裕",
+        "faction": "公明党議員会",
+        "member": "成島隆裕",
+        "stance": "賛成"
+      },
+      {
+        "label": "菅野大造",
+        "faction": "公明党議員会",
+        "member": "菅野大造",
+        "stance": "賛成"
+      },
+      {
+        "label": "金沢力",
+        "faction": "公明党議員会",
+        "member": "金沢力",
+        "stance": "賛成"
+      },
+      {
+        "label": "平松明夫",
+        "faction": "清風クラブ",
+        "member": "平松明夫",
+        "stance": "賛成"
+      },
+      {
+        "label": "久保井永三",
+        "faction": "清風クラブ",
+        "member": "久保井永三",
+        "stance": "賛成"
+      },
+      {
+        "label": "渡辺道仁",
+        "faction": "清風クラブ",
+        "member": "渡辺道仁",
+        "stance": "賛成"
+      },
+      {
+        "label": "小室かな子",
+        "faction": "日本共産党宇都宮市議員団",
+        "member": "小室かな子",
+        "stance": "反対"
+      },
+      {
+        "label": "原ちづる",
+        "faction": "日本共産党宇都宮市議員団",
+        "member": "原ちづる",
+        "stance": "反対"
+      },
+      {
+        "label": "福田久美子",
+        "faction": "日本共産党宇都宮市議員団",
+        "member": "福田久美子",
+        "stance": "反対"
+      },
+      {
+        "label": "石川京樹",
+        "faction": "うつのみや維新",
+        "member": "石川京樹",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐藤恭子",
+        "faction": "うつのみや維新",
+        "member": "佐藤恭子",
+        "stance": "欠席"
+      },
+      {
+        "label": "茂木祐佳里",
+        "faction": "うつのみや維新",
+        "member": "茂木祐佳里",
+        "stance": "賛成"
+      },
+      {
+        "label": "保坂栄次",
+        "faction": "未来への架け橋",
+        "member": "保坂栄次",
+        "stance": "反対"
+      },
+      {
+        "label": "出井昌子",
+        "faction": "緑の地球",
+        "member": "出井昌子",
+        "stance": "反対"
+      },
+      {
+        "label": "河田敦史",
+        "faction": "参政党　政治参加を促す会",
+        "member": "河田敦史",
+        "stance": "反対"
+      },
+      {
+        "label": "塚田典功",
+        "faction": "自由民主党議員会",
+        "member": "塚田典功",
+        "stance": "議長"
+      }
+    ]
+  }
 }

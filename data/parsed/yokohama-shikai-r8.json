@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "yokohama-shikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.5.5",
-  "parsedAt": "2026-10-01T19:51:55.055Z",
+  "parserVersion": "0.6.8",
+  "parsedAt": "2026-10-02T12:40:24.585Z",
   "fiscalYear": "R8",
   "body": "横浜市会",
   "seats": 86,
@@ -264,5 +264,528 @@
     }
   },
   "rosterTitle": "会派別名簿（令和8年1月27日現在）",
-  "resultTitle": "令和８年３月24日 本会議 議決結果（議員別賛否一覧）"
+  "resultTitle": "令和８年３月24日 本会議 議決結果（議員別賛否一覧）",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "令和８年３月24日 本会議 議決結果（議員別賛否一覧）",
+    "sourceFile": "20260324_sanpi.pdf",
+    "columns": [
+      {
+        "label": "青木亮祐",
+        "faction": "自由民主党",
+        "member": "青木亮祐",
+        "stance": "賛成"
+      },
+      {
+        "label": "東みちよ",
+        "faction": "自由民主党",
+        "member": "東みちよ",
+        "stance": "賛成"
+      },
+      {
+        "label": "伊波俊之助",
+        "faction": "自由民主党",
+        "member": "伊波俊之助",
+        "stance": "賛成"
+      },
+      {
+        "label": "磯部圭太",
+        "faction": "自由民主党",
+        "member": "磯部圭太",
+        "stance": "欠席"
+      },
+      {
+        "label": "おさかべさやか",
+        "faction": "自由民主党",
+        "member": "おさかべさやか",
+        "stance": "賛成"
+      },
+      {
+        "label": "大桑正貴",
+        "faction": "自由民主党",
+        "member": "大桑正貴",
+        "stance": "賛成"
+      },
+      {
+        "label": "鴨志田啓介",
+        "faction": "自由民主党",
+        "member": "鴨志田啓介",
+        "stance": "賛成"
+      },
+      {
+        "label": "川口広",
+        "faction": "自由民主党",
+        "member": "川口広",
+        "stance": "賛成"
+      },
+      {
+        "label": "黒川勝",
+        "faction": "自由民主党",
+        "member": "黒川勝",
+        "stance": "賛成"
+      },
+      {
+        "label": "小松範昭",
+        "faction": "自由民主党",
+        "member": "小松範昭",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐藤茂",
+        "faction": "自由民主党",
+        "member": "佐藤茂",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐藤祐文",
+        "faction": "自由民主党",
+        "member": "佐藤祐文",
+        "stance": "賛成"
+      },
+      {
+        "label": "斉藤達也",
+        "faction": "自由民主党",
+        "member": "斉藤達也",
+        "stance": "賛成"
+      },
+      {
+        "label": "酒井誠",
+        "faction": "自由民主党",
+        "member": "酒井誠",
+        "stance": "賛成"
+      },
+      {
+        "label": "清水富雄",
+        "faction": "自由民主党",
+        "member": "清水富雄",
+        "stance": "賛成"
+      },
+      {
+        "label": "白井亮次",
+        "faction": "自由民主党",
+        "member": "白井亮次",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴木太郎",
+        "faction": "自由民主党",
+        "member": "鈴木太郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "瀬之間康浩",
+        "faction": "自由民主党",
+        "member": "瀬之間康浩",
+        "stance": "賛成"
+      },
+      {
+        "label": "関勝則",
+        "faction": "自由民主党",
+        "member": "関勝則",
+        "stance": "賛成"
+      },
+      {
+        "label": "田野井一雄",
+        "faction": "自由民主党",
+        "member": "田野井一雄",
+        "stance": "賛成"
+      },
+      {
+        "label": "長谷川琢磨",
+        "faction": "自由民主党",
+        "member": "長谷川琢磨",
+        "stance": "賛成"
+      },
+      {
+        "label": "福地茂",
+        "faction": "自由民主党",
+        "member": "福地茂",
+        "stance": "賛成"
+      },
+      {
+        "label": "伏見幸枝",
+        "faction": "自由民主党",
+        "member": "伏見幸枝",
+        "stance": "賛成"
+      },
+      {
+        "label": "藤代哲夫",
+        "faction": "自由民主党",
+        "member": "藤代哲夫",
+        "stance": "賛成"
+      },
+      {
+        "label": "増永純女",
+        "faction": "自由民主党",
+        "member": "増永純女",
+        "stance": "賛成"
+      },
+      {
+        "label": "松本研",
+        "faction": "自由民主党",
+        "member": "松本研",
+        "stance": "賛成"
+      },
+      {
+        "label": "山下正人",
+        "faction": "自由民主党",
+        "member": "山下正人",
+        "stance": "賛成"
+      },
+      {
+        "label": "山田一誠",
+        "faction": "自由民主党",
+        "member": "山田一誠",
+        "stance": "賛成"
+      },
+      {
+        "label": "横山正人",
+        "faction": "自由民主党",
+        "member": "横山正人",
+        "stance": "賛成"
+      },
+      {
+        "label": "横山勇太朗",
+        "faction": "自由民主党",
+        "member": "横山勇太朗",
+        "stance": "賛成"
+      },
+      {
+        "label": "渡邊忠則",
+        "faction": "自由民主党",
+        "member": "渡邊忠則",
+        "stance": "賛成"
+      },
+      {
+        "label": "安西英俊",
+        "faction": "公明党",
+        "member": "安西英俊",
+        "stance": "賛成"
+      },
+      {
+        "label": "市来栄美子",
+        "faction": "公明党",
+        "member": "市来栄美子",
+        "stance": "欠席"
+      },
+      {
+        "label": "尾崎太",
+        "faction": "公明党",
+        "member": "尾崎太",
+        "stance": "賛成"
+      },
+      {
+        "label": "木内秀一",
+        "faction": "公明党",
+        "member": "木内秀一",
+        "stance": "賛成"
+      },
+      {
+        "label": "行田朝仁",
+        "faction": "公明党",
+        "member": "行田朝仁",
+        "stance": "賛成"
+      },
+      {
+        "label": "久保和弘",
+        "faction": "公明党",
+        "member": "久保和弘",
+        "stance": "賛成"
+      },
+      {
+        "label": "斉藤伸一",
+        "faction": "公明党",
+        "member": "斉藤伸一",
+        "stance": "賛成"
+      },
+      {
+        "label": "髙橋正治",
+        "faction": "公明党",
+        "member": "髙橋正治",
+        "stance": "賛成"
+      },
+      {
+        "label": "竹内康洋",
+        "faction": "公明党",
+        "member": "竹内康洋",
+        "stance": "賛成"
+      },
+      {
+        "label": "武田勝久",
+        "faction": "公明党",
+        "member": "武田勝久",
+        "stance": "賛成"
+      },
+      {
+        "label": "竹野内猛",
+        "faction": "公明党",
+        "member": "竹野内猛",
+        "stance": "賛成"
+      },
+      {
+        "label": "中島光徳",
+        "faction": "公明党",
+        "member": "中島光徳",
+        "stance": "賛成"
+      },
+      {
+        "label": "仁田昌寿",
+        "faction": "公明党",
+        "member": "仁田昌寿",
+        "stance": "賛成"
+      },
+      {
+        "label": "福島直子",
+        "faction": "公明党",
+        "member": "福島直子",
+        "stance": "賛成"
+      },
+      {
+        "label": "望月康弘",
+        "faction": "公明党",
+        "member": "望月康弘",
+        "stance": "賛成"
+      },
+      {
+        "label": "越久田記子",
+        "faction": "立憲民主党・無所属の会",
+        "member": "越久田記子",
+        "stance": "賛成"
+      },
+      {
+        "label": "大岩真善和",
+        "faction": "立憲民主党・無所属の会",
+        "member": "大岩真善和",
+        "stance": "賛成"
+      },
+      {
+        "label": "かざまあさみ",
+        "faction": "立憲民主党・無所属の会",
+        "member": "かざまあさみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "田中ゆき",
+        "faction": "立憲民主党・無所属の会",
+        "member": "田中ゆき",
+        "stance": "賛成"
+      },
+      {
+        "label": "髙田修平",
+        "faction": "立憲民主党・無所属の会",
+        "member": "髙田修平",
+        "stance": "賛成"
+      },
+      {
+        "label": "中山大輔",
+        "faction": "立憲民主党・無所属の会",
+        "member": "中山大輔",
+        "stance": "賛成"
+      },
+      {
+        "label": "花上喜代志",
+        "faction": "立憲民主党・無所属の会",
+        "member": "花上喜代志",
+        "stance": "賛成"
+      },
+      {
+        "label": "藤崎浩太郎",
+        "faction": "立憲民主党・無所属の会",
+        "member": "藤崎浩太郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "麓理恵",
+        "faction": "立憲民主党・無所属の会",
+        "member": "麓理恵",
+        "stance": "賛成"
+      },
+      {
+        "label": "森ひろたか",
+        "faction": "立憲民主党・無所属の会",
+        "member": "森ひろたか",
+        "stance": "賛成"
+      },
+      {
+        "label": "谷田部孝一",
+        "faction": "立憲民主党・無所属の会",
+        "member": "谷田部孝一",
+        "stance": "賛成"
+      },
+      {
+        "label": "山浦英太",
+        "faction": "立憲民主党・無所属の会",
+        "member": "山浦英太",
+        "stance": "賛成"
+      },
+      {
+        "label": "いそべ尚哉",
+        "faction": "日本維新の会・無所属の会",
+        "member": "いそべ尚哉",
+        "stance": "賛成"
+      },
+      {
+        "label": "伊藤くみこ",
+        "faction": "日本維新の会・無所属の会",
+        "member": "伊藤くみこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "大山しょうじ",
+        "faction": "日本維新の会・無所属の会",
+        "member": "大山しょうじ",
+        "stance": "賛成"
+      },
+      {
+        "label": "柏原すぐる",
+        "faction": "日本維新の会・無所属の会",
+        "member": "柏原すぐる",
+        "stance": "賛成"
+      },
+      {
+        "label": "くしだ久子",
+        "faction": "日本維新の会・無所属の会",
+        "member": "くしだ久子",
+        "stance": "賛成"
+      },
+      {
+        "label": "坂井太",
+        "faction": "日本維新の会・無所属の会",
+        "member": "坂井太",
+        "stance": "賛成"
+      },
+      {
+        "label": "田中紳一",
+        "faction": "日本維新の会・無所属の会",
+        "member": "田中紳一",
+        "stance": "賛成"
+      },
+      {
+        "label": "熊本ちひろ",
+        "faction": "国民民主党",
+        "member": "熊本ちひろ",
+        "stance": "賛成"
+      },
+      {
+        "label": "こがゆ康弘",
+        "faction": "国民民主党",
+        "member": "こがゆ康弘",
+        "stance": "賛成"
+      },
+      {
+        "label": "坂本勝司",
+        "faction": "国民民主党",
+        "member": "坂本勝司",
+        "stance": "賛成"
+      },
+      {
+        "label": "深作祐衣",
+        "faction": "国民民主党",
+        "member": "深作祐衣",
+        "stance": "賛成"
+      },
+      {
+        "label": "二井くみよ",
+        "faction": "国民民主党",
+        "member": "二井くみよ",
+        "stance": "賛成"
+      },
+      {
+        "label": "横溝じゅん子",
+        "faction": "国民民主党",
+        "member": "横溝じゅん子",
+        "stance": "賛成"
+      },
+      {
+        "label": "宇佐美さやか",
+        "faction": "日本共産党",
+        "member": "宇佐美さやか",
+        "stance": "反対"
+      },
+      {
+        "label": "大和田あきお",
+        "faction": "日本共産党",
+        "member": "大和田あきお",
+        "stance": "反対"
+      },
+      {
+        "label": "白井正子",
+        "faction": "日本共産党",
+        "member": "白井正子",
+        "stance": "反対"
+      },
+      {
+        "label": "古谷靖彦",
+        "faction": "日本共産党",
+        "member": "古谷靖彦",
+        "stance": "反対"
+      },
+      {
+        "label": "みわ智恵美",
+        "faction": "日本共産党",
+        "member": "みわ智恵美",
+        "stance": "反対"
+      },
+      {
+        "label": "関嵩史",
+        "faction": "地域政党よこはま",
+        "member": "関嵩史",
+        "stance": "賛成"
+      },
+      {
+        "label": "山田桂一郎",
+        "faction": "地域政党よこはま",
+        "member": "山田桂一郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "太田正孝",
+        "faction": "無所属（太田正孝）",
+        "member": "太田正孝",
+        "stance": "反対"
+      },
+      {
+        "label": "井上さくら",
+        "faction": "無所属（井上さくら）",
+        "member": "井上さくら",
+        "stance": "反対"
+      },
+      {
+        "label": "梶村充",
+        "faction": "無所属（梶村充）",
+        "member": "梶村充",
+        "stance": "賛成"
+      },
+      {
+        "label": "輿石かつ子",
+        "faction": "無所属（輿石かつ子）",
+        "member": "輿石かつ子",
+        "stance": "賛成"
+      },
+      {
+        "label": "荻原隆宏",
+        "faction": "無所属（荻原隆宏）",
+        "member": "荻原隆宏",
+        "stance": "反対"
+      },
+      {
+        "label": "長谷川えつこ",
+        "faction": "無所属（長谷川えつこ）",
+        "member": "長谷川えつこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "大野トモイ",
+        "faction": "無所属（大野トモイ）",
+        "member": "大野トモイ",
+        "stance": "賛成"
+      },
+      {
+        "label": "渋谷健",
+        "faction": "自由民主党",
+        "member": "渋谷健",
+        "stance": "議長"
+      }
+    ]
+  }
 }

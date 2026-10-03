@@ -31,6 +31,13 @@
       "transform": [
         "ext:.html"
       ]
+    },
+    {
+      "filename": "8127.htm",
+      "sha256": "e316285af3189899651b7c8435de113356b1e99abbb4c7cd622dab26010e0e8f",
+      "bytes": 74165,
+      "fetchedAt": "2026-10-02T11:31:38.857Z",
+      "fetchedFrom": "https://web.archive.org/web/20260417061216id_/https://www.city.toyohashi.lg.jp/8127.htm"
     }
   ]
 }
