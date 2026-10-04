@@ -24,7 +24,7 @@ import { z } from "zod";
 import { readRawMeta } from "../lib/store";
 import type { CouncilCompositionDoc, CouncilFactionFact, SourceEntry } from "../types";
 
-export const PARSER_VERSION = "0.7.3";
+export const PARSER_VERSION = "0.7.4";
 
 const factionSchema = z
   .object({
@@ -840,7 +840,13 @@ export function parseCouncilTranscribed(
       const gap = vo.maxGap ?? 40;
       const near = vdoc.views.some((v) => {
         for (let i = v.text.indexOf(aN); i >= 0; i = v.text.indexOf(aN, i + 1)) {
-          if (v.text.slice(i + aN.length, i + aN.length + gap + uN.length).includes(uN)) return true;
+          const w = v.text.slice(i + aN.length, i + aN.length + gap + uN.length);
+          const at = w.indexOf(uN);
+          if (at < 0) continue;
+          // anchor と「全会一致」の間に記号の並びや次の行の頭があれば、それは別の行の全会一致（賛否が割れた行を全会一致と書けた＝レビューで実測）
+          const between = w.slice(0, at);
+          if (Object.keys(vo.legend).map(norm).some((k) => between.includes(k)) || /議案|報告|請願|陳情|第\d+号/.test(between)) continue;
+          return true;
         }
         return false;
       });
@@ -1111,11 +1117,13 @@ export function parseCouncilTranscribed(
       // 記号の行の上下に割れるので anchor は「除いた原案」、-raw では続けて出る）
       const pN = norm(vp.partText);
       const aN = norm(vp.anchor);
-      const bound = (aN.includes(pN) && pN.length > 0) || (pN.includes(aN) && readDoc(fileFor(vp.url)).views.some((v) => v.text.includes(pN)));
+      // 例外経路の partText は anchor より10字を超えて長くしない（遠くの語まで伸ばせると part の判定をすり替えられる）
+      const bound = (aN.includes(pN) && pN.length > 0) || (pN.includes(aN) && pN.length <= aN.length + 10 && readDoc(fileFor(vp.url)).views.some((v) => v.text.includes(pN)));
       if (!bound) missing.push(`採決「${vp.part}」の原文「${vp.partText}」が予算の行の語（anchor「${vp.anchor}」）に含まれません`);
       // part（画面の名前）は partText から決まること。part だけを入れ替えると修正案と原案の賛否が画面で逆になる（レビューで実測）
-      const isRest = pN.includes("除");
-      const isAmend = !isRest && pN.includes("修正");
+      // 判定は anchor（記号の並びを読んだ行の語）と partText の両方で一致すること。partText だけだと遠くの「除」で入れ替えが通った（レビュー2巡目）
+      const isRest = pN.includes("除") && aN.includes("除");
+      const isAmend = !pN.includes("除") && !aN.includes("除") && pN.includes("修正");
       if ((vp.part === "修正部分を除く原案" && !isRest) || (vp.part === "修正案" && !isAmend))
         missing.push(`採決「${vp.part}」と原文「${vp.partText}」が合いません（「修正部分を除く原案」は「除」を含む原文、「修正案」は「除」を含まず「修正」を含む原文）`);
       return { part: vp.part, ...out };
