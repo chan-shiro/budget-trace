@@ -14,6 +14,13 @@
       "bytes": 58188,
       "fetchedAt": "2026-10-01T16:55:47.083Z",
       "fetchedFrom": "https://www.city.matsumoto.nagano.jp/site/gikai/197638.html"
+    },
+    {
+      "filename": "124997.pdf",
+      "sha256": "3e2cd05f8fca0759897e7e929056c50eb31320c18319197db414f414ea4830c9",
+      "bytes": 897217,
+      "fetchedAt": "2026-10-04T00:53:58.659Z",
+      "fetchedFrom": "https://www.city.matsumoto.nagano.jp/uploaded/attachment/124997.pdf"
     }
   ]
 }

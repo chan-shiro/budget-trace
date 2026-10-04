@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "nara-shigikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.7.1",
-  "parsedAt": "2026-10-04T00:41:42.973Z",
+  "parserVersion": "0.7.2",
+  "parsedAt": "2026-10-04T00:53:59.384Z",
   "fiscalYear": "R8",
   "body": "奈良市議会",
   "seats": 39,
@@ -217,5 +217,333 @@
     }
   },
   "rosterTitle": "会派別議員名簿（令和7年11月19日現在）",
-  "resultTitle": "議決結果一覧表（令和８年３月定例会）"
+  "resultTitle": "議決結果一覧表（令和８年３月定例会）",
+  "votesParts": [
+    {
+      "basis": "faction",
+      "sourceTitle": "令和8年3月定例会 議決結果・賛否一覧表",
+      "sourceFile": "209444.pdf",
+      "columns": [
+        {
+          "label": "大西淳文",
+          "faction": "日本維新の会奈良市議団",
+          "member": "大西淳文",
+          "stance": "議長"
+        },
+        {
+          "label": "自由民主党",
+          "faction": "自由民主党",
+          "stance": "賛成"
+        },
+        {
+          "label": "公明党奈良市議会議員団",
+          "faction": "公明党奈良市議会議員団",
+          "stance": "賛成"
+        },
+        {
+          "label": "日本維新の会奈良市議団",
+          "faction": "日本維新の会奈良市議団",
+          "stance": "賛成"
+        },
+        {
+          "label": "日本共産党奈良市会議員団",
+          "faction": "日本共産党奈良市会議員団",
+          "stance": "賛成"
+        },
+        {
+          "label": "自民党・無所属の会",
+          "faction": "自民党・無所属の会",
+          "stance": "賛成"
+        },
+        {
+          "label": "市民ひろば",
+          "faction": "市民ひろば",
+          "stance": "賛成"
+        },
+        {
+          "label": "未来の会",
+          "faction": "未来の会",
+          "stance": "賛成"
+        },
+        {
+          "label": "無所属（尾崎暢子）",
+          "faction": "無所属（尾崎暢子）",
+          "stance": "賛成"
+        },
+        {
+          "label": "無所属（松尾浩司）",
+          "faction": "無所属（松尾浩司）",
+          "stance": "賛成"
+        },
+        {
+          "label": "無所属（江川友梨）",
+          "faction": "無所属（江川友梨）",
+          "stance": "賛成"
+        },
+        {
+          "label": "無所属（内藤智司）",
+          "faction": "無所属（内藤智司）",
+          "stance": "賛成"
+        },
+        {
+          "label": "無所属（松下幸治）",
+          "faction": "無所属（松下幸治）",
+          "stance": "賛成"
+        },
+        {
+          "label": "無所属（へずまりゅう）",
+          "faction": "無所属（へずまりゅう）",
+          "stance": "賛成"
+        },
+        {
+          "label": "無所属（松石聖一）",
+          "faction": "無所属（松石聖一）",
+          "stance": "賛成"
+        }
+      ],
+      "part": "修正部分を除く原案"
+    },
+    {
+      "basis": "member",
+      "sourceTitle": "令和8年3月定例会 議決結果・賛否一覧表",
+      "sourceFile": "209444.pdf",
+      "columns": [
+        {
+          "label": "森田一成",
+          "faction": "自由民主党",
+          "member": "森田一成",
+          "stance": "賛成"
+        },
+        {
+          "label": "井久保裕也",
+          "faction": "自由民主党",
+          "member": "井久保裕也",
+          "stance": "賛成"
+        },
+        {
+          "label": "植村佳史",
+          "faction": "自由民主党",
+          "member": "植村佳史",
+          "stance": "賛成"
+        },
+        {
+          "label": "八尾俊宏",
+          "faction": "自由民主党",
+          "member": "八尾俊宏",
+          "stance": "賛成"
+        },
+        {
+          "label": "太田晃司",
+          "faction": "自由民主党",
+          "member": "太田晃司",
+          "stance": "賛成"
+        },
+        {
+          "label": "道端孝治",
+          "faction": "自由民主党",
+          "member": "道端孝治",
+          "stance": "賛成"
+        },
+        {
+          "label": "九里雄二",
+          "faction": "公明党奈良市議会議員団",
+          "member": "九里雄二",
+          "stance": "賛成"
+        },
+        {
+          "label": "宮池明",
+          "faction": "公明党奈良市議会議員団",
+          "member": "宮池明",
+          "stance": "賛成"
+        },
+        {
+          "label": "山口寛",
+          "faction": "公明党奈良市議会議員団",
+          "member": "山口寛",
+          "stance": "賛成"
+        },
+        {
+          "label": "田畑日佐恵",
+          "faction": "公明党奈良市議会議員団",
+          "member": "田畑日佐恵",
+          "stance": "賛成"
+        },
+        {
+          "label": "真鍋弘美",
+          "faction": "公明党奈良市議会議員団",
+          "member": "真鍋弘美",
+          "stance": "賛成"
+        },
+        {
+          "label": "早田哲朗",
+          "faction": "公明党奈良市議会議員団",
+          "member": "早田哲朗",
+          "stance": "賛成"
+        },
+        {
+          "label": "栁田昌孝",
+          "faction": "日本維新の会奈良市議団",
+          "member": "柳田昌孝",
+          "stance": "賛成"
+        },
+        {
+          "label": "北邨翔平",
+          "faction": "日本維新の会奈良市議団",
+          "member": "北邨翔平",
+          "stance": "賛成"
+        },
+        {
+          "label": "中川康",
+          "faction": "日本維新の会奈良市議団",
+          "member": "中川康",
+          "stance": "賛成"
+        },
+        {
+          "label": "木下修平",
+          "faction": "日本維新の会奈良市議団",
+          "member": "木下修平",
+          "stance": "賛成"
+        },
+        {
+          "label": "佐野和則",
+          "faction": "日本維新の会奈良市議団",
+          "member": "佐野和則",
+          "stance": "賛成"
+        },
+        {
+          "label": "山口裕司",
+          "faction": "日本共産党奈良市会議員団",
+          "member": "山口裕司",
+          "stance": "賛成"
+        },
+        {
+          "label": "白川健太郎",
+          "faction": "日本共産党奈良市会議員団",
+          "member": "白川健太郎",
+          "stance": "賛成"
+        },
+        {
+          "label": "山本直子",
+          "faction": "日本共産党奈良市会議員団",
+          "member": "山本直子",
+          "stance": "賛成"
+        },
+        {
+          "label": "北村拓哉",
+          "faction": "日本共産党奈良市会議員団",
+          "member": "北村拓哉",
+          "stance": "賛成"
+        },
+        {
+          "label": "横井雄一",
+          "faction": "自民党・無所属の会",
+          "member": "横井雄一",
+          "stance": "反対"
+        },
+        {
+          "label": "榎本博一",
+          "faction": "自民党・無所属の会",
+          "member": "榎本博一",
+          "stance": "反対"
+        },
+        {
+          "label": "鍵田美智子",
+          "faction": "自民党・無所属の会",
+          "member": "鍵田美智子",
+          "stance": "反対"
+        },
+        {
+          "label": "塚本勝",
+          "faction": "自民党・無所属の会",
+          "member": "塚本勝",
+          "stance": "反対"
+        },
+        {
+          "label": "口清二郎",
+          "faction": "市民ひろば",
+          "member": "樋口清二郎",
+          "stance": "反対"
+        },
+        {
+          "label": "阪本美知子",
+          "faction": "市民ひろば",
+          "member": "阪本美知子",
+          "stance": "反対"
+        },
+        {
+          "label": "柿本元気",
+          "faction": "市民ひろば",
+          "member": "柿本元気",
+          "stance": "反対"
+        },
+        {
+          "label": "岡本誠至",
+          "faction": "未来の会",
+          "member": "岡本誠至",
+          "stance": "賛成"
+        },
+        {
+          "label": "下村千恵",
+          "faction": "未来の会",
+          "member": "下村千恵",
+          "stance": "賛成"
+        },
+        {
+          "label": "階戸幸一",
+          "faction": "未来の会",
+          "member": "階戸幸一",
+          "stance": "賛成"
+        },
+        {
+          "label": "尾﨑暢子",
+          "faction": "無所属（尾崎暢子）",
+          "member": "尾崎暢子",
+          "stance": "賛成"
+        },
+        {
+          "label": "松尾浩司",
+          "faction": "無所属（松尾浩司）",
+          "member": "松尾浩司",
+          "stance": "賛成"
+        },
+        {
+          "label": "江川友梨",
+          "faction": "無所属（江川友梨）",
+          "member": "江川友梨",
+          "stance": "賛成"
+        },
+        {
+          "label": "内藤智司",
+          "faction": "無所属（内藤智司）",
+          "member": "内藤智司",
+          "stance": "賛成"
+        },
+        {
+          "label": "松下幸治",
+          "faction": "無所属（松下幸治）",
+          "member": "松下幸治",
+          "stance": "反対"
+        },
+        {
+          "label": "へずまりゅう",
+          "faction": "無所属（へずまりゅう）",
+          "member": "へずまりゅう",
+          "stance": "賛成"
+        },
+        {
+          "label": "松石聖一",
+          "faction": "無所属（松石聖一）",
+          "member": "松石聖一",
+          "stance": "反対"
+        },
+        {
+          "label": "大西淳文",
+          "faction": "日本維新の会奈良市議団",
+          "member": "大西淳文",
+          "stance": "議長"
+        }
+      ],
+      "part": "修正案"
+    }
+  ]
 }

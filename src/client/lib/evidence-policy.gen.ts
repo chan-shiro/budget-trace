@@ -20419,6 +20419,12 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "license": "明石市公式ホームページに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、明石市公式ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されていますので、無断で複製・転用することはできません。",
     "target": "page"
   },
+  "/sources/akashi-shigikai-r8/gichou.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20251205144009id_/https://www.city.akashi.lg.jp/gikai/youkoso/shoukai/gichou.html",
+    "license": "明石市公式ホームページに掲載している個々の情報（文章、写真、イラストなど）は、著作権の対象となっています。また、明石市公式ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されていますので、無断で複製・転用することはできません。",
+    "target": "page"
+  },
   "/sources/nara-shigikai-r8/114364.html": {
     "mode": "archive",
     "href": "https://web.archive.org/web/20260414181844id_/https://www.city.nara.lg.jp/site/narasigikai/114364.html",
@@ -20440,6 +20446,12 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
   "/sources/nara-shigikai-r8/2371.html": {
     "mode": "origin",
     "href": "https://www.city.nara.lg.jp/site/narasigikai/2371.html",
+    "license": "奈良市公式ホームページに掲載の文章、画像などの著作権は、奈良市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、当ホームページに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
+    "target": "page"
+  },
+  "/sources/nara-shigikai-r8/index.html": {
+    "mode": "origin",
+    "href": "http://www.gijiroku.jp/narashi/163/index.html",
     "license": "奈良市公式ホームページに掲載の文章、画像などの著作権は、奈良市または原著作者に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、当ホームページに掲載の文章、画像などについて無断で複製・転用することを禁止します。",
     "target": "page"
   },
@@ -20664,6 +20676,12 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.matsumoto.nagano.jp/site/gikai/197638.html",
     "license": "当サイトに掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として松本市に帰属し、国際条約・法律等によって保護されています。（ただし、一部の画像等の著作権は、原著作者が所有しています。）「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、松本市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することはできません。",
     "target": "page"
+  },
+  "/sources/matsumoto-shigikai-r8/124997.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.matsumoto.nagano.jp/uploaded/attachment/124997.pdf",
+    "license": "当サイトに掲載されている情報（文章、写真、イラスト、画像等の各ファイル）およびその内容に関する諸権利は、原則として松本市に帰属し、国際条約・法律等によって保護されています。（ただし、一部の画像等の著作権は、原著作者が所有しています。）「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、松本市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することはできません。",
+    "target": "file"
   },
   "/sources/gifu-shigikai-r8/1021215.html": {
     "mode": "archive",

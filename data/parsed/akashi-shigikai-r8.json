@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "akashi-shigikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.7.1",
-  "parsedAt": "2026-10-04T00:41:42.866Z",
+  "parserVersion": "0.7.2",
+  "parsedAt": "2026-10-04T00:53:59.177Z",
   "fiscalYear": "R8",
   "body": "明石市議会",
   "seats": 30,
@@ -131,5 +131,383 @@
     }
   },
   "rosterTitle": "会派（令和8年2月1日現在）",
-  "resultTitle": "第１回定例会３月議会審議結果報告のこと"
+  "resultTitle": "第１回定例会３月議会審議結果報告のこと",
+  "votesParts": [
+    {
+      "basis": "member",
+      "sourceTitle": "令和８年第１回定例会３月議会（３月２５日）賛否一覧",
+      "sourceFile": "50803sanpi_2.pdf",
+      "columns": [
+        {
+          "label": "上",
+          "faction": "かがやきネット・市民の会",
+          "member": "上田雅彦",
+          "stance": "賛成"
+        },
+        {
+          "label": "中",
+          "faction": "かがやきネット・市民の会",
+          "member": "中川夏望",
+          "stance": "賛成"
+        },
+        {
+          "label": "山",
+          "faction": "かがやきネット・市民の会",
+          "member": "山下祥",
+          "stance": "賛成"
+        },
+        {
+          "label": "金",
+          "faction": "かがやきネット・市民の会",
+          "member": "金尾良信",
+          "stance": "賛成"
+        },
+        {
+          "label": "黒",
+          "faction": "かがやきネット・市民の会",
+          "member": "黒田智子",
+          "stance": "賛成"
+        },
+        {
+          "label": "山",
+          "faction": "かがやきネット・市民の会",
+          "member": "山中裕司",
+          "stance": "賛成"
+        },
+        {
+          "label": "林",
+          "faction": "かがやきネット・市民の会",
+          "member": "林丸美",
+          "stance": "賛成"
+        },
+        {
+          "label": "竹",
+          "faction": "かがやきネット・市民の会",
+          "member": "竹内きよ子",
+          "stance": "賛成"
+        },
+        {
+          "label": "宮",
+          "faction": "かがやきネット・市民の会",
+          "member": "宮坂祐太",
+          "stance": "賛成"
+        },
+        {
+          "label": "寺",
+          "faction": "かがやきネット・市民の会",
+          "member": "寺井吉広",
+          "stance": "賛成"
+        },
+        {
+          "label": "出",
+          "faction": "自由民主党明石",
+          "member": "出雲有希子",
+          "stance": "反対"
+        },
+        {
+          "label": "石",
+          "faction": "自由民主党明石",
+          "member": "石井宏法",
+          "stance": "反対"
+        },
+        {
+          "label": "井",
+          "faction": "自由民主党明石",
+          "member": "井藤圭順",
+          "stance": "反対"
+        },
+        {
+          "label": "灰",
+          "faction": "自由民主党明石",
+          "member": "灰野修平",
+          "stance": "反対"
+        },
+        {
+          "label": "榎",
+          "faction": "自由民主党明石",
+          "member": "榎本和夫",
+          "stance": "反対"
+        },
+        {
+          "label": "千",
+          "faction": "自由民主党明石",
+          "member": "千住啓介",
+          "stance": "反対"
+        },
+        {
+          "label": "三",
+          "faction": "自由民主党明石",
+          "member": "三好宏",
+          "stance": "反対"
+        },
+        {
+          "label": "辰",
+          "faction": "自由民主党明石",
+          "member": "辰巳浩司",
+          "stance": "反対"
+        },
+        {
+          "label": "長",
+          "faction": "公明党",
+          "member": "長尾博子",
+          "stance": "賛成"
+        },
+        {
+          "label": "河",
+          "faction": "公明党",
+          "member": "河村和歌子",
+          "stance": "賛成"
+        },
+        {
+          "label": "尾",
+          "faction": "公明党",
+          "member": "尾倉あき子",
+          "stance": "賛成"
+        },
+        {
+          "label": "飯",
+          "faction": "公明党",
+          "member": "飯田伸子",
+          "stance": "賛成"
+        },
+        {
+          "label": "梅",
+          "faction": "公明党",
+          "member": "梅田宏希",
+          "stance": "賛成"
+        },
+        {
+          "label": "正",
+          "faction": "明石維新の会",
+          "member": "正木克幸",
+          "stance": "反対"
+        },
+        {
+          "label": "中",
+          "faction": "明石維新の会",
+          "member": "中村茂雄",
+          "stance": "反対"
+        },
+        {
+          "label": "髙",
+          "faction": "明石維新の会",
+          "member": "髙尾秀彰",
+          "stance": "反対"
+        },
+        {
+          "label": "辻",
+          "faction": "日本共産党",
+          "member": "辻本達也",
+          "stance": "賛成"
+        },
+        {
+          "label": "中",
+          "faction": "対話の会あかし",
+          "member": "中西礼皇",
+          "stance": "賛成"
+        },
+        {
+          "label": "家",
+          "faction": "スマイル会",
+          "member": "家根谷敦子",
+          "stance": "賛成"
+        },
+        {
+          "label": "国出拓志",
+          "faction": "公明党",
+          "member": "国出拓志",
+          "stance": "議長"
+        }
+      ],
+      "part": "修正案"
+    },
+    {
+      "basis": "member",
+      "sourceTitle": "令和８年第１回定例会３月議会（３月２５日）賛否一覧",
+      "sourceFile": "50803sanpi_2.pdf",
+      "columns": [
+        {
+          "label": "上",
+          "faction": "かがやきネット・市民の会",
+          "member": "上田雅彦",
+          "stance": "賛成"
+        },
+        {
+          "label": "中",
+          "faction": "かがやきネット・市民の会",
+          "member": "中川夏望",
+          "stance": "賛成"
+        },
+        {
+          "label": "山",
+          "faction": "かがやきネット・市民の会",
+          "member": "山下祥",
+          "stance": "賛成"
+        },
+        {
+          "label": "金",
+          "faction": "かがやきネット・市民の会",
+          "member": "金尾良信",
+          "stance": "賛成"
+        },
+        {
+          "label": "黒",
+          "faction": "かがやきネット・市民の会",
+          "member": "黒田智子",
+          "stance": "賛成"
+        },
+        {
+          "label": "山",
+          "faction": "かがやきネット・市民の会",
+          "member": "山中裕司",
+          "stance": "賛成"
+        },
+        {
+          "label": "林",
+          "faction": "かがやきネット・市民の会",
+          "member": "林丸美",
+          "stance": "賛成"
+        },
+        {
+          "label": "竹",
+          "faction": "かがやきネット・市民の会",
+          "member": "竹内きよ子",
+          "stance": "賛成"
+        },
+        {
+          "label": "宮",
+          "faction": "かがやきネット・市民の会",
+          "member": "宮坂祐太",
+          "stance": "賛成"
+        },
+        {
+          "label": "寺",
+          "faction": "かがやきネット・市民の会",
+          "member": "寺井吉広",
+          "stance": "賛成"
+        },
+        {
+          "label": "出",
+          "faction": "自由民主党明石",
+          "member": "出雲有希子",
+          "stance": "賛成"
+        },
+        {
+          "label": "石",
+          "faction": "自由民主党明石",
+          "member": "石井宏法",
+          "stance": "賛成"
+        },
+        {
+          "label": "井",
+          "faction": "自由民主党明石",
+          "member": "井藤圭順",
+          "stance": "賛成"
+        },
+        {
+          "label": "灰",
+          "faction": "自由民主党明石",
+          "member": "灰野修平",
+          "stance": "賛成"
+        },
+        {
+          "label": "榎",
+          "faction": "自由民主党明石",
+          "member": "榎本和夫",
+          "stance": "賛成"
+        },
+        {
+          "label": "千",
+          "faction": "自由民主党明石",
+          "member": "千住啓介",
+          "stance": "賛成"
+        },
+        {
+          "label": "三",
+          "faction": "自由民主党明石",
+          "member": "三好宏",
+          "stance": "賛成"
+        },
+        {
+          "label": "辰",
+          "faction": "自由民主党明石",
+          "member": "辰巳浩司",
+          "stance": "賛成"
+        },
+        {
+          "label": "長",
+          "faction": "公明党",
+          "member": "長尾博子",
+          "stance": "賛成"
+        },
+        {
+          "label": "河",
+          "faction": "公明党",
+          "member": "河村和歌子",
+          "stance": "賛成"
+        },
+        {
+          "label": "尾",
+          "faction": "公明党",
+          "member": "尾倉あき子",
+          "stance": "賛成"
+        },
+        {
+          "label": "飯",
+          "faction": "公明党",
+          "member": "飯田伸子",
+          "stance": "賛成"
+        },
+        {
+          "label": "梅",
+          "faction": "公明党",
+          "member": "梅田宏希",
+          "stance": "賛成"
+        },
+        {
+          "label": "正",
+          "faction": "明石維新の会",
+          "member": "正木克幸",
+          "stance": "賛成"
+        },
+        {
+          "label": "中",
+          "faction": "明石維新の会",
+          "member": "中村茂雄",
+          "stance": "賛成"
+        },
+        {
+          "label": "髙",
+          "faction": "明石維新の会",
+          "member": "髙尾秀彰",
+          "stance": "賛成"
+        },
+        {
+          "label": "辻",
+          "faction": "日本共産党",
+          "member": "辻本達也",
+          "stance": "反対"
+        },
+        {
+          "label": "中",
+          "faction": "対話の会あかし",
+          "member": "中西礼皇",
+          "stance": "賛成"
+        },
+        {
+          "label": "家",
+          "faction": "スマイル会",
+          "member": "家根谷敦子",
+          "stance": "賛成"
+        },
+        {
+          "label": "国出拓志",
+          "faction": "公明党",
+          "member": "国出拓志",
+          "stance": "議長"
+        }
+      ],
+      "part": "修正部分を除く原案"
+    }
+  ]
 }

@@ -24,7 +24,7 @@ import { z } from "zod";
 import { readRawMeta } from "../lib/store";
 import type { CouncilCompositionDoc, CouncilFactionFact, SourceEntry } from "../types";
 
-export const PARSER_VERSION = "0.7.1";
+export const PARSER_VERSION = "0.7.2";
 
 const factionSchema = z
   .object({
@@ -215,8 +215,8 @@ const optionsSchema = z.object({
   votes: votesSchema.optional(),
   /**
    * 予算の議決が複数の採決に分かれるとき（修正可決: 「修正案」と「修正部分を除く原案」）の採決ごとの賛否（0.7.0）。
-   * 各要素は votes と同じ書き方に、part（画面に出す部分の名前）と partText（その採決の行・見出しの原文の語。
-   * anchor に含まれるか anchor の前後40字にあること）を足す。votes と同時には使わない
+   * 各要素は votes と同じ書き方に、part（画面に出す部分の名前）と partText（その採決の行の原文の語。
+   * anchor に含まれるか、anchor を含んで原典に続けて出ること。0.7.2 で「前後40字」を廃止）を足す。votes と同時には使わない
    */
   votesParts: z.array(votesSchema.extend({ part: z.string().min(1), partText: z.string().min(1) })).min(2).optional(),
   /** label 方式の窓（字数・既定20） */
@@ -934,6 +934,8 @@ export function parseCouncilTranscribed(
     } else {
       const gap = vo.maxGap ?? 40;
       const before = vo.anchorSide === "before";
+      const isWordChar = (c: string | undefined) =>
+        c !== undefined && /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}]/u.test(c) && !keys.some((k) => k.startsWith(c));
       for (const v of vdoc.views) {
         for (let i = v.text.indexOf(anchorN); i >= 0; i = v.text.indexOf(anchorN, i + 1)) {
           // "before": 記号は anchor の前に来る。anchor の前の本文を逆順にして同じ手順で読み、最後に戻す
@@ -952,7 +954,8 @@ export function parseCouncilTranscribed(
               if ((vo.ignoreChars ?? "").includes(tail[j - 1]!)) { j--; continue; }
               break;
             }
-            const prevIsSym = keys.some((k) => tail.endsWith(k, j));
+            // 直前の字が凡例の字でも、さらに前が凡例でない漢字なら語の末尾（「…議」）であって記号ではない
+            const prevIsSym = keys.some((k) => tail.endsWith(k, j) && !isWordChar(tail[j - k.length - 1]));
             if (got.join("|") === sym.join("|") && !prevIsSym) {
               rowOk = true;
               if (inOrder(head.slice(0, j))) headerOk = true;
@@ -971,7 +974,8 @@ export function parseCouncilTranscribed(
             if ((vo.ignoreChars ?? "").includes(rest[j]!)) { j++; continue; }
             break;
           }
-          const nextIsSym = keys.some((k) => rest.startsWith(k, j));
+          // 直後の字が凡例の字でも、続く字が凡例でない漢字なら次の行の語の頭（「議案第44号」の「議」）であって記号ではない（八戸・松本で実測）
+          const nextIsSym = keys.some((k) => rest.startsWith(k, j) && !isWordChar(rest[j + k.length]));
           if (got.join("|") === sym.join("|") && !nextIsSym) {
             rowOk = true;
             // 列見出しは、この行より前（同じ抽出・同じページ）にその順で出ること
@@ -1094,19 +1098,14 @@ export function parseCouncilTranscribed(
   if (opt.votesParts) {
     partsOut = opt.votesParts.map((vp) => {
       const out = verifyVotes(vp);
-      // その採決が「どの部分」か: partText が anchor に含まれるか、anchor の前後40字にあること
+      // その採決が「どの部分」か: partText が anchor に含まれること。
+      // 「anchor の前後40字」では、2つの採決の行が隣り合う原典で part の入れ替えが通る（松本・奈良で実測）
+      // 例外は anchor が partText の一部で、partText が原典に続けて出るとき（明石: -layout で「修正部分を／除いた原案」が
+      // 記号の行の上下に割れるので anchor は「除いた原案」、-raw では続けて出る）
       const pN = norm(vp.partText);
       const aN = norm(vp.anchor);
-      if (!aN.includes(pN)) {
-        const views = readDoc(fileFor(vp.url)).views;
-        const near = views.some((v) => {
-          for (let i = v.text.indexOf(aN); i >= 0; i = v.text.indexOf(aN, i + 1)) {
-            if (v.text.slice(Math.max(0, i - 40), i + aN.length + 40).includes(pN)) return true;
-          }
-          return false;
-        });
-        if (!near) missing.push(`採決「${vp.part}」の原文「${vp.partText}」が予算の行（「${vp.anchor}」）の前後40字にありません`);
-      }
+      const bound = aN.includes(pN) || (pN.includes(aN) && readDoc(fileFor(vp.url)).views.some((v) => v.text.includes(pN)));
+      if (!bound) missing.push(`採決「${vp.part}」の原文「${vp.partText}」が予算の行の語（anchor「${vp.anchor}」）に含まれません`);
       return { part: vp.part, ...out };
     });
     if (new Set(partsOut.map((p) => p.part)).size !== partsOut.length) missing.push(`votesParts の part が重複しています`);
