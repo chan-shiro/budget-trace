@@ -49,6 +49,7 @@ export interface Council {
    */
   votes?: {
     basis: "member" | "faction";
+    unanimousText?: string;
     stances: string[];
     tally: Record<string, number>;
     byFaction: { faction: string; counts: Record<string, number>; members: { name: string; stance: string }[] }[];
@@ -58,6 +59,8 @@ export interface Council {
   voteParts?: {
     part: string;
     basis: "member" | "faction";
+    /** 原典が「全会一致」の語だけで示した採決（数は議席から出したもの）。その原文 */
+    unanimousText?: string;
     stances: string[];
     tally: Record<string, number>;
     byFaction: { faction: string; counts: Record<string, number>; members: { name: string; stance: string }[] }[];
@@ -4937,45 +4940,43 @@ export const MUNI_COUNCIL_YEARS: Record<string, Council[]> = {
       "newsletterUrl": null,
       "voteParts": [
         {
-          "part": "修正案",
+          "part": "修正部分を除く原案",
           "basis": "member",
           "stances": [
             "賛成",
-            "反対",
             "議長"
           ],
           "tally": {
-            "反対": 13,
-            "議長": 1,
-            "賛成": 16
+            "賛成": 29,
+            "議長": 1
           },
           "byFaction": [
             {
               "faction": "誠の会",
               "counts": {
-                "反対": 6,
+                "賛成": 6,
                 "議長": 1
               },
               "members": [
                 {
                   "name": "中山英子",
-                  "stance": "反対"
+                  "stance": "賛成"
                 },
                 {
                   "name": "宇留賀響",
-                  "stance": "反対"
+                  "stance": "賛成"
                 },
                 {
                   "name": "土屋眞一",
-                  "stance": "反対"
+                  "stance": "賛成"
                 },
                 {
                   "name": "今井ゆうすけ",
-                  "stance": "反対"
+                  "stance": "賛成"
                 },
                 {
                   "name": "犬飼信雄",
-                  "stance": "反対"
+                  "stance": "賛成"
                 },
                 {
                   "name": "阿部功祐",
@@ -4983,43 +4984,43 @@ export const MUNI_COUNCIL_YEARS: Record<string, Council[]> = {
                 },
                 {
                   "name": "太田更三",
-                  "stance": "反対"
+                  "stance": "賛成"
                 }
               ]
             },
             {
               "faction": "政友会",
               "counts": {
-                "反対": 7
+                "賛成": 7
               },
               "members": [
                 {
                   "name": "こば陽子",
-                  "stance": "反対"
+                  "stance": "賛成"
                 },
                 {
                   "name": "太田正徳",
-                  "stance": "反対"
+                  "stance": "賛成"
                 },
                 {
                   "name": "和久井悟",
-                  "stance": "反対"
+                  "stance": "賛成"
                 },
                 {
                   "name": "西澤郁弥",
-                  "stance": "反対"
+                  "stance": "賛成"
                 },
                 {
                   "name": "牛丸仁志",
-                  "stance": "反対"
+                  "stance": "賛成"
                 },
                 {
                   "name": "村上幸雄",
-                  "stance": "反対"
+                  "stance": "賛成"
                 },
                 {
                   "name": "中島昌子",
-                  "stance": "反対"
+                  "stance": "賛成"
                 }
               ]
             },
@@ -5128,43 +5129,45 @@ export const MUNI_COUNCIL_YEARS: Record<string, Council[]> = {
           }
         },
         {
-          "part": "修正部分を除く原案",
+          "part": "修正案",
           "basis": "member",
           "stances": [
             "賛成",
+            "反対",
             "議長"
           ],
           "tally": {
-            "賛成": 29,
-            "議長": 1
+            "反対": 13,
+            "議長": 1,
+            "賛成": 16
           },
           "byFaction": [
             {
               "faction": "誠の会",
               "counts": {
-                "賛成": 6,
+                "反対": 6,
                 "議長": 1
               },
               "members": [
                 {
                   "name": "中山英子",
-                  "stance": "賛成"
+                  "stance": "反対"
                 },
                 {
                   "name": "宇留賀響",
-                  "stance": "賛成"
+                  "stance": "反対"
                 },
                 {
                   "name": "土屋眞一",
-                  "stance": "賛成"
+                  "stance": "反対"
                 },
                 {
                   "name": "今井ゆうすけ",
-                  "stance": "賛成"
+                  "stance": "反対"
                 },
                 {
                   "name": "犬飼信雄",
-                  "stance": "賛成"
+                  "stance": "反対"
                 },
                 {
                   "name": "阿部功祐",
@@ -5172,43 +5175,43 @@ export const MUNI_COUNCIL_YEARS: Record<string, Council[]> = {
                 },
                 {
                   "name": "太田更三",
-                  "stance": "賛成"
+                  "stance": "反対"
                 }
               ]
             },
             {
               "faction": "政友会",
               "counts": {
-                "賛成": 7
+                "反対": 7
               },
               "members": [
                 {
                   "name": "こば陽子",
-                  "stance": "賛成"
+                  "stance": "反対"
                 },
                 {
                   "name": "太田正徳",
-                  "stance": "賛成"
+                  "stance": "反対"
                 },
                 {
                   "name": "和久井悟",
-                  "stance": "賛成"
+                  "stance": "反対"
                 },
                 {
                   "name": "西澤郁弥",
-                  "stance": "賛成"
+                  "stance": "反対"
                 },
                 {
                   "name": "牛丸仁志",
-                  "stance": "賛成"
+                  "stance": "反対"
                 },
                 {
                   "name": "村上幸雄",
-                  "stance": "賛成"
+                  "stance": "反対"
                 },
                 {
                   "name": "中島昌子",
-                  "stance": "賛成"
+                  "stance": "反対"
                 }
               ]
             },
@@ -9385,6 +9388,7 @@ export const MUNI_COUNCIL_YEARS: Record<string, Council[]> = {
         {
           "part": "修正部分を除く原案",
           "basis": "faction",
+          "unanimousText": "全会一致",
           "stances": [
             "賛成",
             "議長"

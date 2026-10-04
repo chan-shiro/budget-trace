@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "matsumoto-shigikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.7.2",
-  "parsedAt": "2026-10-04T00:53:58.922Z",
+  "parserVersion": "0.7.3",
+  "parsedAt": "2026-10-04T01:12:23.123Z",
   "fiscalYear": "R8",
   "body": "松本市議会",
   "seats": 30,
@@ -120,194 +120,6 @@
   "rosterTitle": "会派名簿（令和7年5月14日現在）",
   "resultTitle": "議案 議決結果 令和8年2月定例会",
   "votesParts": [
-    {
-      "basis": "member",
-      "sourceTitle": "令和８年２月定例会 議案の審議結果（各議員の賛否）",
-      "sourceFile": "124997.pdf",
-      "columns": [
-        {
-          "label": "中山英子",
-          "faction": "誠の会",
-          "member": "中山英子",
-          "stance": "反対"
-        },
-        {
-          "label": "宇留賀響",
-          "faction": "誠の会",
-          "member": "宇留賀響",
-          "stance": "反対"
-        },
-        {
-          "label": "土屋眞一",
-          "faction": "誠の会",
-          "member": "土屋眞一",
-          "stance": "反対"
-        },
-        {
-          "label": "今井ゆうすけ",
-          "faction": "誠の会",
-          "member": "今井ゆうすけ",
-          "stance": "反対"
-        },
-        {
-          "label": "犬飼信雄",
-          "faction": "誠の会",
-          "member": "犬飼信雄",
-          "stance": "反対"
-        },
-        {
-          "label": "阿部功祐",
-          "faction": "誠の会",
-          "member": "阿部功祐",
-          "stance": "議長"
-        },
-        {
-          "label": "太田更三",
-          "faction": "誠の会",
-          "member": "太田更三",
-          "stance": "反対"
-        },
-        {
-          "label": "こば陽子",
-          "faction": "政友会",
-          "member": "こば陽子",
-          "stance": "反対"
-        },
-        {
-          "label": "太田正徳",
-          "faction": "政友会",
-          "member": "太田正徳",
-          "stance": "反対"
-        },
-        {
-          "label": "和久井悟",
-          "faction": "政友会",
-          "member": "和久井悟",
-          "stance": "反対"
-        },
-        {
-          "label": "西澤郁弥",
-          "faction": "政友会",
-          "member": "西澤郁弥",
-          "stance": "反対"
-        },
-        {
-          "label": "牛丸仁志",
-          "faction": "政友会",
-          "member": "牛丸仁志",
-          "stance": "反対"
-        },
-        {
-          "label": "村上幸雄",
-          "faction": "政友会",
-          "member": "村上幸雄",
-          "stance": "反対"
-        },
-        {
-          "label": "中島昌子",
-          "faction": "政友会",
-          "member": "中島昌子",
-          "stance": "反対"
-        },
-        {
-          "label": "菊地徹",
-          "faction": "開明",
-          "member": "菊地徹",
-          "stance": "賛成"
-        },
-        {
-          "label": "吉村幸代",
-          "faction": "開明",
-          "member": "吉村幸代",
-          "stance": "賛成"
-        },
-        {
-          "label": "川久保文良",
-          "faction": "開明",
-          "member": "川久保文良",
-          "stance": "賛成"
-        },
-        {
-          "label": "上條温",
-          "faction": "開明",
-          "member": "上條温",
-          "stance": "賛成"
-        },
-        {
-          "label": "芝山稔",
-          "faction": "開明",
-          "member": "芝山稔",
-          "stance": "賛成"
-        },
-        {
-          "label": "大久保美由紀",
-          "faction": "松本市議会公明党",
-          "member": "大久保美由紀",
-          "stance": "賛成"
-        },
-        {
-          "label": "内田麻美",
-          "faction": "松本市議会公明党",
-          "member": "内田麻美",
-          "stance": "賛成"
-        },
-        {
-          "label": "上條美智子",
-          "faction": "松本市議会公明党",
-          "member": "上條美智子",
-          "stance": "賛成"
-        },
-        {
-          "label": "近藤晴彦",
-          "faction": "松本市議会公明党",
-          "member": "近藤晴彦",
-          "stance": "賛成"
-        },
-        {
-          "label": "花村恵子",
-          "faction": "まつも都",
-          "member": "花村恵子",
-          "stance": "賛成"
-        },
-        {
-          "label": "神津ゆかり",
-          "faction": "まつも都",
-          "member": "神津ゆかり",
-          "stance": "賛成"
-        },
-        {
-          "label": "上條一正",
-          "faction": "まつも都",
-          "member": "上條一正",
-          "stance": "賛成"
-        },
-        {
-          "label": "横内裕治",
-          "faction": "まつも都",
-          "member": "横内裕治",
-          "stance": "賛成"
-        },
-        {
-          "label": "宗田まゆ美",
-          "faction": "日本共産党松本市議団",
-          "member": "宗田まゆ美",
-          "stance": "賛成"
-        },
-        {
-          "label": "塩原孝子",
-          "faction": "日本共産党松本市議団",
-          "member": "塩原孝子",
-          "stance": "賛成"
-        },
-        {
-          "label": "犬飼明美",
-          "faction": "日本共産党松本市議団",
-          "member": "犬飼明美",
-          "stance": "賛成"
-        }
-      ],
-      "part": "修正案"
-    },
     {
       "basis": "member",
       "sourceTitle": "令和８年２月定例会 議案の審議結果（各議員の賛否）",
@@ -495,6 +307,194 @@
         }
       ],
       "part": "修正部分を除く原案"
+    },
+    {
+      "basis": "member",
+      "sourceTitle": "令和８年２月定例会 議案の審議結果（各議員の賛否）",
+      "sourceFile": "124997.pdf",
+      "columns": [
+        {
+          "label": "中山英子",
+          "faction": "誠の会",
+          "member": "中山英子",
+          "stance": "反対"
+        },
+        {
+          "label": "宇留賀響",
+          "faction": "誠の会",
+          "member": "宇留賀響",
+          "stance": "反対"
+        },
+        {
+          "label": "土屋眞一",
+          "faction": "誠の会",
+          "member": "土屋眞一",
+          "stance": "反対"
+        },
+        {
+          "label": "今井ゆうすけ",
+          "faction": "誠の会",
+          "member": "今井ゆうすけ",
+          "stance": "反対"
+        },
+        {
+          "label": "犬飼信雄",
+          "faction": "誠の会",
+          "member": "犬飼信雄",
+          "stance": "反対"
+        },
+        {
+          "label": "阿部功祐",
+          "faction": "誠の会",
+          "member": "阿部功祐",
+          "stance": "議長"
+        },
+        {
+          "label": "太田更三",
+          "faction": "誠の会",
+          "member": "太田更三",
+          "stance": "反対"
+        },
+        {
+          "label": "こば陽子",
+          "faction": "政友会",
+          "member": "こば陽子",
+          "stance": "反対"
+        },
+        {
+          "label": "太田正徳",
+          "faction": "政友会",
+          "member": "太田正徳",
+          "stance": "反対"
+        },
+        {
+          "label": "和久井悟",
+          "faction": "政友会",
+          "member": "和久井悟",
+          "stance": "反対"
+        },
+        {
+          "label": "西澤郁弥",
+          "faction": "政友会",
+          "member": "西澤郁弥",
+          "stance": "反対"
+        },
+        {
+          "label": "牛丸仁志",
+          "faction": "政友会",
+          "member": "牛丸仁志",
+          "stance": "反対"
+        },
+        {
+          "label": "村上幸雄",
+          "faction": "政友会",
+          "member": "村上幸雄",
+          "stance": "反対"
+        },
+        {
+          "label": "中島昌子",
+          "faction": "政友会",
+          "member": "中島昌子",
+          "stance": "反対"
+        },
+        {
+          "label": "菊地徹",
+          "faction": "開明",
+          "member": "菊地徹",
+          "stance": "賛成"
+        },
+        {
+          "label": "吉村幸代",
+          "faction": "開明",
+          "member": "吉村幸代",
+          "stance": "賛成"
+        },
+        {
+          "label": "川久保文良",
+          "faction": "開明",
+          "member": "川久保文良",
+          "stance": "賛成"
+        },
+        {
+          "label": "上條温",
+          "faction": "開明",
+          "member": "上條温",
+          "stance": "賛成"
+        },
+        {
+          "label": "芝山稔",
+          "faction": "開明",
+          "member": "芝山稔",
+          "stance": "賛成"
+        },
+        {
+          "label": "大久保美由紀",
+          "faction": "松本市議会公明党",
+          "member": "大久保美由紀",
+          "stance": "賛成"
+        },
+        {
+          "label": "内田麻美",
+          "faction": "松本市議会公明党",
+          "member": "内田麻美",
+          "stance": "賛成"
+        },
+        {
+          "label": "上條美智子",
+          "faction": "松本市議会公明党",
+          "member": "上條美智子",
+          "stance": "賛成"
+        },
+        {
+          "label": "近藤晴彦",
+          "faction": "松本市議会公明党",
+          "member": "近藤晴彦",
+          "stance": "賛成"
+        },
+        {
+          "label": "花村恵子",
+          "faction": "まつも都",
+          "member": "花村恵子",
+          "stance": "賛成"
+        },
+        {
+          "label": "神津ゆかり",
+          "faction": "まつも都",
+          "member": "神津ゆかり",
+          "stance": "賛成"
+        },
+        {
+          "label": "上條一正",
+          "faction": "まつも都",
+          "member": "上條一正",
+          "stance": "賛成"
+        },
+        {
+          "label": "横内裕治",
+          "faction": "まつも都",
+          "member": "横内裕治",
+          "stance": "賛成"
+        },
+        {
+          "label": "宗田まゆ美",
+          "faction": "日本共産党松本市議団",
+          "member": "宗田まゆ美",
+          "stance": "賛成"
+        },
+        {
+          "label": "塩原孝子",
+          "faction": "日本共産党松本市議団",
+          "member": "塩原孝子",
+          "stance": "賛成"
+        },
+        {
+          "label": "犬飼明美",
+          "faction": "日本共産党松本市議団",
+          "member": "犬飼明美",
+          "stance": "賛成"
+        }
+      ],
+      "part": "修正案"
     }
   ]
 }

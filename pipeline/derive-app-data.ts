@@ -1009,7 +1009,14 @@ export const KOFU_EVALUATION_YEARS: KofuEvaluationYear[] = ${JSON.stringify(eval
           });
           const tally: Record<string, number> = {};
           for (const bf of byFaction) for (const [k, n] of Object.entries(bf.counts)) tally[k] = (tally[k] ?? 0) + n;
-          return { basis: vt.basis, stances: STANCES.filter((k) => tally[k]), tally, byFaction, source: ev(vurl, vt.sourceTitle) };
+          return {
+            basis: vt.basis,
+            ...(vt.unanimousText ? { unanimousText: vt.unanimousText } : {}),
+            stances: STANCES.filter((k) => tally[k]),
+            tally,
+            byFaction,
+            source: ev(vurl, vt.sourceTitle),
+          };
         };
         const po = src.parserOptions as { votes?: { url: string }; votesParts?: { url: string; part: string }[] };
         if (doc.votes) return { votes: build(doc.votes, po.votes!.url) };
@@ -1082,6 +1089,7 @@ export interface Council {
    */
   votes?: {
     basis: "member" | "faction";
+    unanimousText?: string;
     stances: string[];
     tally: Record<string, number>;
     byFaction: { faction: string; counts: Record<string, number>; members: { name: string; stance: string }[] }[];
@@ -1091,6 +1099,8 @@ export interface Council {
   voteParts?: {
     part: string;
     basis: "member" | "faction";
+    /** 原典が「全会一致」の語だけで示した採決（数は議席から出したもの）。その原文 */
+    unanimousText?: string;
     stances: string[];
     tally: Record<string, number>;
     byFaction: { faction: string; counts: Record<string, number>; members: { name: string; stance: string }[] }[];

@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "nara-shigikai-r8",
   "parser": "council-transcribed",
-  "parserVersion": "0.7.2",
-  "parsedAt": "2026-10-04T00:53:59.384Z",
+  "parserVersion": "0.7.3",
+  "parsedAt": "2026-10-04T01:12:24.194Z",
   "fiscalYear": "R8",
   "body": "奈良市議会",
   "seats": 39,
@@ -221,6 +221,7 @@
   "votesParts": [
     {
       "basis": "faction",
+      "unanimousText": "全会一致",
       "sourceTitle": "令和8年3月定例会 議決結果・賛否一覧表",
       "sourceFile": "209444.pdf",
       "columns": [

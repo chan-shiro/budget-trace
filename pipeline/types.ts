@@ -582,6 +582,8 @@ export const councilResolutionSchema = z.object({
 
 export const councilVotesSchema = z.object({
       basis: z.enum(["member", "faction"]),
+      /** 原典が記号でなく「全会一致」の語だけで示した採決（賛成の数は議席から出した数）。その原文 */
+      unanimousText: z.string().optional(),
       sourceTitle: z.string(),
       sourceFile: z.string(),
       /** 列ごとの賛否。faction は registry の会派名（無所属は「無所属（氏名）」の表示名） */

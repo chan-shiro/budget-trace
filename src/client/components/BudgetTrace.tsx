@@ -309,7 +309,7 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
       ? (MUNI_COUNCIL_YEARS[muniCode]?.find((c) => c.fy === muniBudget.fy) ?? null)
       : null;
   // 賛否は採決ごとの並びに揃える（ふつうは1つ。修正可決で採決が分かれる議会は voteParts の数だけ）
-  const vparts: { part: string | null; basis: "member" | "faction"; stances: string[]; tally: Record<string, number>; byFaction: { faction: string; counts: Record<string, number> }[]; source: D.Council["roster"] }[] =
+  const vparts: { part: string | null; basis: "member" | "faction"; unanimousText?: string; stances: string[]; tally: Record<string, number>; byFaction: { faction: string; counts: Record<string, number> }[]; source: D.Council["roster"] }[] =
     !shownCouncil || isFull ? [] : shownCouncil.votes ? [{ part: null, ...shownCouncil.votes }] : (shownCouncil.voteParts ?? []);
   const projYear = KOFU_PROJECT_YEARS.find((y) => y.fy === budget.fy);
   const KOFU_PROJECTS = React.useMemo(() => projYear?.projects ?? [], [projYear]);
@@ -1276,7 +1276,9 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
             const t = vp.tally;
             const main = ["賛成", "反対", "賛成でない"].filter((k) => t[k]).map((k) => `${k}${t[k]}`).join("・");
             const rest = vp.stances.filter((k) => !["賛成", "反対", "賛成でない"].includes(k)).map((k) => `${k}${t[k]}`).join("・");
-            return { part: vp.part, label: rest ? `${main}（${rest}）` : main };
+            const label = rest ? `${main}（${rest}）` : main;
+            // 原典は「全会一致」の語だけ — 数は議席から出したものなので、そう分かるように書く
+            return { part: vp.part, label: vp.unanimousText ? `${vp.unanimousText}（議席から数えて ${label}）` : label };
           }),
           voteSourceTitle: vparts[0]?.source.title ?? null,
           voteAction: vparts[0] ? evAction(vparts[0].source.localUrl) : null,
