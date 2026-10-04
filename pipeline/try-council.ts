@@ -43,14 +43,15 @@ for (const sp of specs) {
     });
     console.log(`✓ ${source.id}: ${doc.body} 現員${doc.seats}${doc.teisu ? `（定数${doc.teisu}）` : ""}・${doc.factions.length}会派 ／ ${doc.resolution.billNo} ${doc.resolution.billName} ${doc.resolution.decidedDateLabel} ${doc.resolution.result}`);
     for (const f of doc.factions) console.log(`    ${f.name}: ${f.seats}`);
-    if (doc.votes) {
+    const parts = doc.votes ? [{ part: "", ...doc.votes }] : (doc.votesParts ?? []);
+    for (const vt of parts) {
       const t: Record<string, number> = {};
-      for (const c of doc.votes.columns) {
-        const n = doc.votes.basis === "member" || c.member ? 1 : (doc.factions.find((f) => f.name === c.faction)?.seats ?? 0) - doc.votes.columns.filter((o) => o.faction === c.faction && o.member).length;
+      for (const c of vt.columns) {
+        const n = vt.basis === "member" || c.member ? 1 : (doc.factions.find((f) => f.name === c.faction)?.seats ?? 0) - vt.columns.filter((o) => o.faction === c.faction && o.member).length;
         t[c.stance] = (t[c.stance] ?? 0) + n;
       }
-      console.log(`    賛否（${doc.votes.basis === "member" ? "議員ごと" : "会派ごと"}・${doc.votes.columns.length}列）: ${Object.entries(t).map(([k, n]) => `${k}${n}`).join("・")}`);
-      for (const c of doc.votes.columns.filter((c) => c.stance !== "賛成")) console.log(`      ${c.stance}: ${c.member ?? c.label}（${c.faction}）`);
+      console.log(`    ${vt.part ? `「${vt.part}」の` : ""}賛否（${vt.basis === "member" ? "議員ごと" : "会派ごと"}・${vt.columns.length}列）: ${Object.entries(t).map(([k, n]) => `${k}${n}`).join("・")}`);
+      for (const c of vt.columns.filter((c) => c.stance !== "賛成")) console.log(`      ${c.stance}: ${c.member ?? c.label}（${c.faction}）`);
     }
   } catch (e) {
     failed++;

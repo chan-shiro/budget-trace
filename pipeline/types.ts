@@ -580,6 +580,21 @@ export const councilResolutionSchema = z.object({
   locator: locatorSchema,
 });
 
+export const councilVotesSchema = z.object({
+      basis: z.enum(["member", "faction"]),
+      sourceTitle: z.string(),
+      sourceFile: z.string(),
+      /** 列ごとの賛否。faction は registry の会派名（無所属は「無所属（氏名）」の表示名） */
+      columns: z.array(
+        z.object({
+          label: z.string(),
+          faction: z.string(),
+          member: z.string().optional(),
+          stance: z.enum(["賛成", "反対", "賛成でない", "欠席", "退席", "棄権", "除斥", "議長", "不参加"]),
+        }),
+      ),
+    });
+
 export const councilCompositionDocSchema = z.object({
   docType: z.literal("council-composition"),
   sourceId: z.string(),
@@ -611,22 +626,9 @@ export const councilCompositionDocSchema = z.object({
    * **予算の行の記号の並び**を書き写し、パーサが原典と突き合わせたもの。
    * basis: "member" ＝列が議員1人ずつ／"faction" ＝列が会派（無所属は1人ずつのことが多い）
    */
-  votes: z
-    .object({
-      basis: z.enum(["member", "faction"]),
-      sourceTitle: z.string(),
-      sourceFile: z.string(),
-      /** 列ごとの賛否。faction は registry の会派名（無所属は「無所属（氏名）」の表示名） */
-      columns: z.array(
-        z.object({
-          label: z.string(),
-          faction: z.string(),
-          member: z.string().optional(),
-          stance: z.enum(["賛成", "反対", "賛成でない", "欠席", "退席", "棄権", "除斥", "議長", "不参加"]),
-        }),
-      ),
-    })
-    .optional(),
+  votes: councilVotesSchema.optional(),
+  /** 予算の議決が複数の採決に分かれるとき（修正可決: 修正案・修正部分を除く原案）の採決ごとの賛否（0.7.0） */
+  votesParts: z.array(councilVotesSchema.extend({ part: z.string() })).optional(),
 });
 export type CouncilCompositionDoc = z.infer<typeof councilCompositionDocSchema>;
 

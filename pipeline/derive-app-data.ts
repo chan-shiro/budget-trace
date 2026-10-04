@@ -989,37 +989,40 @@ export const KOFU_EVALUATION_YEARS: KofuEvaluationYear[] = ${JSON.stringify(eval
       result: ev(opt.resolution.url, doc.resultTitle ?? `${doc.resolution.sessionLabel} 議決結果`),
       minutesUrl: null,
       newsletterUrl: null,
-      // 賛否（council-transcribed 0.6.0）。会派単位の表は、その会派の全員を同じ賛否として数える
-      ...(doc.votes
-        ? (() => {
-            const vt = doc.votes!;
-            const vurl = (src.parserOptions as { votes: { url: string } }).votes.url;
-            const STANCES = ["賛成", "反対", "賛成でない", "欠席", "退席", "棄権", "除斥", "議長", "不参加"] as const;
-            const byFaction = doc.factions.map((f) => {
-              const cols = vt.columns.filter((c) => c.faction === f.name);
-              const counts: Record<string, number> = {};
-              const members: { name: string; stance: string }[] = [];
-              for (const c of cols) {
-                // 会派の列は「議席 − その会派で自分の列（議長・無所属など）を持つ議員」（パーサの集計と同じ）
-                const n = vt.basis === "member" || c.member ? 1 : f.seats - vt.columns.filter((o) => o.faction === f.name && o.member).length;
-                counts[c.stance] = (counts[c.stance] ?? 0) + n;
-                if (c.member) members.push({ name: c.member, stance: c.stance });
-              }
-              return { faction: f.name, counts, members };
-            });
-            const tally: Record<string, number> = {};
-            for (const b of byFaction) for (const [k, n] of Object.entries(b.counts)) tally[k] = (tally[k] ?? 0) + n;
-            return {
-              votes: {
-                basis: vt.basis,
-                stances: STANCES.filter((k) => tally[k]),
-                tally,
-                byFaction,
-                source: ev(vurl, vt.sourceTitle),
-              },
-            };
-          })()
-        : {}),
+      // 賛否（council-transcribed 0.6.0〜）。会派単位の表は、その会派の全員を同じ賛否として数える。
+      // 修正可決などで採決が分かれる議会は voteParts（採決ごと）に出す（0.7.0）
+      ...(() => {
+        type VT = NonNullable<typeof doc.votes>;
+        const STANCES = ["賛成", "反対", "賛成でない", "欠席", "退席", "棄権", "除斥", "議長", "不参加"] as const;
+        const build = (vt: VT, vurl: string) => {
+          const byFaction = doc.factions.map((f) => {
+            const cols = vt.columns.filter((c) => c.faction === f.name);
+            const counts: Record<string, number> = {};
+            const members: { name: string; stance: string }[] = [];
+            for (const c of cols) {
+              // 会派の列は「議席 − その会派で自分の列（議長・無所属など）を持つ議員」（パーサの集計と同じ）
+              const n = vt.basis === "member" || c.member ? 1 : f.seats - vt.columns.filter((o) => o.faction === f.name && o.member).length;
+              counts[c.stance] = (counts[c.stance] ?? 0) + n;
+              if (c.member) members.push({ name: c.member, stance: c.stance });
+            }
+            return { faction: f.name, counts, members };
+          });
+          const tally: Record<string, number> = {};
+          for (const bf of byFaction) for (const [k, n] of Object.entries(bf.counts)) tally[k] = (tally[k] ?? 0) + n;
+          return { basis: vt.basis, stances: STANCES.filter((k) => tally[k]), tally, byFaction, source: ev(vurl, vt.sourceTitle) };
+        };
+        const po = src.parserOptions as { votes?: { url: string }; votesParts?: { url: string; part: string }[] };
+        if (doc.votes) return { votes: build(doc.votes, po.votes!.url) };
+        if (doc.votesParts) {
+          return {
+            voteParts: doc.votesParts.map((vp) => ({
+              part: vp.part,
+              ...build(vp, po.votesParts!.find((x) => x.part === vp.part)!.url),
+            })),
+          };
+        }
+        return {};
+      })(),
     });
   }
   for (const [code, list] of Object.entries(muniCouncils) as [string, { fy: string }[]][]) {
@@ -1084,6 +1087,15 @@ export interface Council {
     byFaction: { faction: string; counts: Record<string, number>; members: { name: string; stance: string }[] }[];
     source: CouncilEvidence;
   };
+  /** 予算の議決が複数の採決に分かれる議会（修正可決: 修正案・修正部分を除く原案）の採決ごとの賛否 */
+  voteParts?: {
+    part: string;
+    basis: "member" | "faction";
+    stances: string[];
+    tally: Record<string, number>;
+    byFaction: { faction: string; counts: Record<string, number>; members: { name: string; stance: string }[] }[];
+    source: CouncilEvidence;
+  }[];
   /** 参考リンク（会議録検索・議会だより）。甲府だけが持つ */
   minutesUrl: string | null;
   newsletterUrl: string | null;

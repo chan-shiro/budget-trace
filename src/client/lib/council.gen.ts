@@ -54,6 +54,15 @@ export interface Council {
     byFaction: { faction: string; counts: Record<string, number>; members: { name: string; stance: string }[] }[];
     source: CouncilEvidence;
   };
+  /** 予算の議決が複数の採決に分かれる議会（修正可決: 修正案・修正部分を除く原案）の採決ごとの賛否 */
+  voteParts?: {
+    part: string;
+    basis: "member" | "faction";
+    stances: string[];
+    tally: Record<string, number>;
+    byFaction: { faction: string; counts: Record<string, number>; members: { name: string; stance: string }[] }[];
+    source: CouncilEvidence;
+  }[];
   /** 参考リンク（会議録検索・議会だより）。甲府だけが持つ */
   minutesUrl: string | null;
   newsletterUrl: string | null;
