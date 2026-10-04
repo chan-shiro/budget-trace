@@ -24,7 +24,7 @@ import { z } from "zod";
 import { readRawMeta } from "../lib/store";
 import type { CouncilCompositionDoc, CouncilFactionFact, SourceEntry } from "../types";
 
-export const PARSER_VERSION = "0.7.5";
+export const PARSER_VERSION = "0.7.6";
 
 const factionSchema = z
   .object({
@@ -822,17 +822,25 @@ export function parseCouncilTranscribed(
   let partsOut: (VotesOut & { part: string })[] | undefined;
   if (opt.votes && opt.votesParts) throw new Error(`${source.id}: votes と votesParts は同時に使わない`);
   /** 1回の採決の賛否を原典と突き合わせる（votes・votesParts の各要素で共通） */
+  /** 賛否表の記号として出る非漢字の字（既存 registry の凡例から。／・－は日付や空欄にも出るので入れない） */
+  const VOTE_MARKS = /[○〇●◎◯×✕✖△▲▽□■◇◆]/gu;
   const verifyVotes = (vo: z.infer<typeof votesSchema>): VotesOut => {
     const vf = fileFor(vo.url);
     const vdoc = readDoc(vf);
     // 本文の窓で読む原典（表でない）の anchor は「予算の行の語」に限る。記号の並びや次の行の頭まで anchor に飲み込ませると、
     // 直後・直前の検査（記号の並び・全会一致の間）をすり抜けられた（レビュー3巡目）。漢字の凡例（議・除）は語として anchor に入る（松本・明石）
-    if (!vo.table) {
+    if (vo.table && isPdf(vf)) throw new Error(`${source.id}: votes.table は HTML の賛否表にだけ使えます（PDF は anchor の直後を読む）`);
+    // 全会一致の要素は表でも本文の窓で読むので、同じ検査を掛ける（table を付けて検査を外せた＝レビュー4巡目）
+    if (!vo.table || vo.unanimousText) {
       const aN0 = norm(vo.anchor);
       // 上限は既存の最長（松本29字）＋少し。40字だと前の行の「全会一致」から飲み込ませた anchor（奈良でちょうど40字）が通った
       if (aN0.length > 32) missing.push(`anchor「${vo.anchor}」が長すぎます（32字まで）`);
       if (/全会一致|満場一致/.test(aN0)) missing.push(`anchor「${vo.anchor}」に別の行の結果（全会一致）が含まれます`);
-      const bad = Object.keys(vo.legend).map(norm).filter((k) => !/^\p{Script=Han}/u.test(k) && aN0.includes(k));
+      // 書き写し側の legend だけでなく固定の記号クラスでも見る（legend を「賛成」「反対」の語にすると ○× を見なくなった＝レビュー4巡目）
+      const bad = [
+        ...Object.keys(vo.legend).map(norm).filter((k) => !/^\p{Script=Han}/u.test(k) && aN0.includes(k)),
+        ...(aN0.match(VOTE_MARKS) ?? []),
+      ];
       if (bad.length) missing.push(`anchor「${vo.anchor}」に凡例の記号（${bad.join("・")}）が含まれます`);
     }
     // 凡例の原文。凡例が印字されていない原典は、凡例の語がそのまま賛否の語である（セルが「賛成」「反対」）場合だけ認める
@@ -844,6 +852,8 @@ export function parseCouncilTranscribed(
       if (!has(vdoc.views, lt)) missing.push(`${vf.filename}: 凡例の原文「${lt}」が見つかりません`);
     }
     if (vo.unanimousText) {
+      // 凡例の原文が要る（原典が賛否を記号で示す表であることの裏付け。legend を語にして検査を外せた＝レビュー4巡目）
+      if (vo.legendText == null) missing.push(`unanimousText を使う要素は legendText（凡例の原文）が要ります`);
       if (vo.symbols || vo.columns.length) missing.push(`unanimousText と symbols・columns は同時に使わない`);
       const aN = norm(vo.anchor);
       const uN = norm(vo.unanimousText);
@@ -855,7 +865,7 @@ export function parseCouncilTranscribed(
           if (at < 0) continue;
           // anchor と「全会一致」の間に記号の並びや次の行の頭があれば、それは別の行の全会一致（賛否が割れた行を全会一致と書けた＝レビューで実測）
           const between = w.slice(0, at);
-          if (Object.keys(vo.legend).map(norm).some((k) => between.includes(k)) || /議案|報告|請願|陳情|第\d+号/.test(between)) continue;
+          if (Object.keys(vo.legend).map(norm).some((k) => between.includes(k)) || new RegExp(VOTE_MARKS.source).test(between) || /議案|報告|請願|陳情|第\d+号/.test(between)) continue;
           return true;
         }
         return false;
