@@ -24,7 +24,7 @@ import { z } from "zod";
 import { readRawMeta } from "../lib/store";
 import type { CouncilCompositionDoc, CouncilFactionFact, SourceEntry } from "../types";
 
-export const PARSER_VERSION = "0.7.4";
+export const PARSER_VERSION = "0.7.5";
 
 const factionSchema = z
   .object({
@@ -825,6 +825,16 @@ export function parseCouncilTranscribed(
   const verifyVotes = (vo: z.infer<typeof votesSchema>): VotesOut => {
     const vf = fileFor(vo.url);
     const vdoc = readDoc(vf);
+    // 本文の窓で読む原典（表でない）の anchor は「予算の行の語」に限る。記号の並びや次の行の頭まで anchor に飲み込ませると、
+    // 直後・直前の検査（記号の並び・全会一致の間）をすり抜けられた（レビュー3巡目）。漢字の凡例（議・除）は語として anchor に入る（松本・明石）
+    if (!vo.table) {
+      const aN0 = norm(vo.anchor);
+      // 上限は既存の最長（松本29字）＋少し。40字だと前の行の「全会一致」から飲み込ませた anchor（奈良でちょうど40字）が通った
+      if (aN0.length > 32) missing.push(`anchor「${vo.anchor}」が長すぎます（32字まで）`);
+      if (/全会一致|満場一致/.test(aN0)) missing.push(`anchor「${vo.anchor}」に別の行の結果（全会一致）が含まれます`);
+      const bad = Object.keys(vo.legend).map(norm).filter((k) => !/^\p{Script=Han}/u.test(k) && aN0.includes(k));
+      if (bad.length) missing.push(`anchor「${vo.anchor}」に凡例の記号（${bad.join("・")}）が含まれます`);
+    }
     // 凡例の原文。凡例が印字されていない原典は、凡例の語がそのまま賛否の語である（セルが「賛成」「反対」）場合だけ認める
     if (vo.legendText == null) {
       const self = Object.entries(vo.legend).every(([k, v]) => norm(k).includes(v));
