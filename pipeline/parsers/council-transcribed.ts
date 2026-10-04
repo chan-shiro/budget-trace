@@ -854,6 +854,8 @@ export function parseCouncilTranscribed(
     if (vo.unanimousText) {
       // 凡例の原文が要る（原典が賛否を記号で示す表であることの裏付け。legend を語にして検査を外せた＝レビュー4巡目）
       if (vo.legendText == null) missing.push(`unanimousText を使う要素は legendText（凡例の原文）が要ります`);
+      else if (![vo.legendText].flat().some((lt) => Object.keys(vo.legend).some((k) => norm(lt).includes(norm(k)))))
+        missing.push(`legendText に凡例の記号が1つも含まれません（原典にある任意の語では凡例の裏付けにならない）`);
       if (vo.symbols || vo.columns.length) missing.push(`unanimousText と symbols・columns は同時に使わない`);
       const aN = norm(vo.anchor);
       const uN = norm(vo.unanimousText);
