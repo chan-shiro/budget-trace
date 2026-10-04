@@ -3,7 +3,7 @@
   "sourceId": "hachinohe-shigikai-r8",
   "parser": "council-transcribed",
   "parserVersion": "0.7.6",
-  "parsedAt": "2026-10-04T01:25:28.695Z",
+  "parsedAt": "2026-10-04T05:06:55.730Z",
   "fiscalYear": "R8",
   "body": "八戸市議会",
   "seats": 28,
@@ -129,5 +129,180 @@
     }
   },
   "rosterTitle": "会派一覧（更新日 2023年05月10日）",
-  "resultTitle": "令和8年3月定例会 議案審査結果表"
+  "resultTitle": "令和8年3月定例会 議案審査結果表",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "令和８年３月定例会 議員別議案等賛否一覧表",
+    "sourceFile": "R0803_ggiinnbetusannpiitirann.pdf",
+    "columns": [
+      {
+        "label": "長谷川ひろゆき",
+        "faction": "自民クラブ",
+        "member": "長谷川ひろゆき",
+        "stance": "賛成"
+      },
+      {
+        "label": "岡田英",
+        "faction": "自民クラブ",
+        "member": "岡田英",
+        "stance": "賛成"
+      },
+      {
+        "label": "日當正男",
+        "faction": "自民クラブ",
+        "member": "日當正男",
+        "stance": "賛成"
+      },
+      {
+        "label": "小屋敷孝",
+        "faction": "自民クラブ",
+        "member": "小屋敷孝",
+        "stance": "賛成"
+      },
+      {
+        "label": "壬生八十博",
+        "faction": "自民クラブ",
+        "member": "壬生八十博",
+        "stance": "賛成"
+      },
+      {
+        "label": "藤川優里",
+        "faction": "自民クラブ",
+        "member": "藤川優里",
+        "stance": "議長"
+      },
+      {
+        "label": "立花敬之",
+        "faction": "自民クラブ",
+        "member": "立花敬之",
+        "stance": "賛成"
+      },
+      {
+        "label": "坂本美洋",
+        "faction": "自民クラブ",
+        "member": "坂本美洋",
+        "stance": "賛成"
+      },
+      {
+        "label": "吉田洸龍",
+        "faction": "きずなクラブ",
+        "member": "吉田洸龍",
+        "stance": "賛成"
+      },
+      {
+        "label": "田名部裕美",
+        "faction": "きずなクラブ",
+        "member": "田名部裕美",
+        "stance": "賛成"
+      },
+      {
+        "label": "三浦博司",
+        "faction": "きずなクラブ",
+        "member": "三浦博司",
+        "stance": "賛成"
+      },
+      {
+        "label": "石橋充志",
+        "faction": "きずなクラブ",
+        "member": "石橋充志",
+        "stance": "賛成"
+      },
+      {
+        "label": "山名文世",
+        "faction": "きずなクラブ",
+        "member": "山名文世",
+        "stance": "賛成"
+      },
+      {
+        "label": "五戸定博",
+        "faction": "きずなクラブ",
+        "member": "五戸定博",
+        "stance": "賛成"
+      },
+      {
+        "label": "寺地則行",
+        "faction": "きずなクラブ",
+        "member": "寺地則行",
+        "stance": "賛成"
+      },
+      {
+        "label": "山之内悠",
+        "faction": "自由民主・無所属クラブ",
+        "member": "山之内悠",
+        "stance": "賛成"
+      },
+      {
+        "label": "間盛仁",
+        "faction": "自由民主・無所属クラブ",
+        "member": "間盛仁",
+        "stance": "賛成"
+      },
+      {
+        "label": "久保百恵",
+        "faction": "自由民主・無所属クラブ",
+        "member": "久保百恵",
+        "stance": "賛成"
+      },
+      {
+        "label": "上条幸哉",
+        "faction": "自由民主・無所属クラブ",
+        "member": "上条幸哉",
+        "stance": "賛成"
+      },
+      {
+        "label": "森園秀一",
+        "faction": "自由民主・無所属クラブ",
+        "member": "森園秀一",
+        "stance": "賛成"
+      },
+      {
+        "label": "豊田美好",
+        "faction": "自由民主・無所属クラブ",
+        "member": "豊田美好",
+        "stance": "賛成"
+      },
+      {
+        "label": "土嶺直樹",
+        "faction": "公明党",
+        "member": "土嶺直樹",
+        "stance": "賛成"
+      },
+      {
+        "label": "高橋正人",
+        "faction": "公明党",
+        "member": "高橋正人",
+        "stance": "欠席"
+      },
+      {
+        "label": "中村益則",
+        "faction": "公明党",
+        "member": "中村益則",
+        "stance": "賛成"
+      },
+      {
+        "label": "伊藤圓子",
+        "faction": "新緑・無所属の会",
+        "member": "伊藤圓子",
+        "stance": "賛成"
+      },
+      {
+        "label": "吉田淳一",
+        "faction": "新緑・無所属の会",
+        "member": "吉田淳一",
+        "stance": "賛成"
+      },
+      {
+        "label": "苫米地あつ子",
+        "faction": "無所属（苫米地あつ子）",
+        "member": "苫米地あつ子",
+        "stance": "反対"
+      },
+      {
+        "label": "前田由美",
+        "faction": "無所属（前田由美）",
+        "member": "前田由美",
+        "stance": "賛成"
+      }
+    ]
+  }
 }
