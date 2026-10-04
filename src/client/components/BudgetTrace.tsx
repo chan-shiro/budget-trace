@@ -308,6 +308,9 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
     : muniBudget && muniCode
       ? (MUNI_COUNCIL_YEARS[muniCode]?.find((c) => c.fy === muniBudget.fy) ?? null)
       : null;
+  // 賛否は採決ごとの並びに揃える（ふつうは1つ。修正可決で採決が分かれる議会は voteParts の数だけ）
+  const vparts: { part: string | null; basis: "member" | "faction"; unanimousText?: string; stances: string[]; tally: Record<string, number>; byFaction: { faction: string; counts: Record<string, number> }[]; source: D.Council["roster"] }[] =
+    !shownCouncil || isFull ? [] : shownCouncil.votes ? [{ part: null, ...shownCouncil.votes }] : (shownCouncil.voteParts ?? []);
   const projYear = KOFU_PROJECT_YEARS.find((y) => y.fy === budget.fy);
   const KOFU_PROJECTS = React.useMemo(() => projYear?.projects ?? [], [projYear]);
   const KOFU_PROJECTS_SOURCE = projYear?.source ?? { title: "", url: "", originUrl: "", localUrl: "", pagesLabel: "" };
@@ -1260,29 +1263,32 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
           // あるが、まだ収録していない — 「公表されていない」と書かない
           voteNote: isFull
             ? "会派ごとの賛否・票数は起立採決のため公表されていません（記録は「可決」のみ）。"
-            : shownCouncil.votes
-              ? shownCouncil.votes.basis === "member"
-                ? "議員ごとの賛否（議決当日の賛否表）。"
-                : "会派ごとの賛否（議決当日の賛否表）。会派の列は、その会派の議員（議長などを除く）を同じ賛否として数えています。"
+            : vparts.length
+              ? // 採決ごとに記録の単位が違うことがある（奈良: 原案は全会一致で会派ごと、修正案は議員ごと）
+                (vparts.every((vp) => vp.basis === vparts[0]!.basis)
+                  ? (vparts[0]!.basis === "member" ? "議員ごとの賛否" : "会派ごとの賛否") + "（議決当日の賛否表）。"
+                  : `採決ごとの賛否（議決当日の賛否表）。${vparts.map((vp) => `${vp.part}は${vp.basis === "member" ? "議員ごと" : "会派ごと"}`).join("、")}の記録です。`) +
+                (vparts.some((vp) => vp.basis === "faction") ? "会派の列は、その会派の議員（議長などを除く）を同じ賛否として数えています。" : "") +
+                (vparts.length > 1 ? "修正可決のため、採決ごとに分けて出しています。" : "")
               : "会派・議員ごとの賛否は未収録です。",
-          // 賛否の集計（甲府以外で原典が公表している議会だけ）。賛成・反対を先に、欠席・議長などは括弧で
-          voteTally: shownCouncil.votes
-            ? (() => {
-                const t = shownCouncil.votes.tally;
-                const main = ["賛成", "反対", "賛成でない"].filter((k) => t[k]).map((k) => `${k}${t[k]}`).join("・");
-                const rest = shownCouncil.votes.stances.filter((k) => !["賛成", "反対", "賛成でない"].includes(k)).map((k) => `${k}${t[k]}`).join("・");
-                return rest ? `${main}（${rest}）` : main;
-              })()
-            : null,
-          voteSourceTitle: shownCouncil.votes?.source.title ?? null,
-          voteAction: shownCouncil.votes ? evAction(shownCouncil.votes.source.localUrl) : null,
+          // 賛否の集計（採決ごと）。賛成・反対を先に、欠席・議長などは括弧で
+          voteTallies: vparts.map((vp) => {
+            const t = vp.tally;
+            const main = ["賛成", "反対", "賛成でない"].filter((k) => t[k]).map((k) => `${k}${t[k]}`).join("・");
+            const rest = vp.stances.filter((k) => !["賛成", "反対", "賛成でない"].includes(k)).map((k) => `${k}${t[k]}`).join("・");
+            const label = rest ? `${main}（${rest}）` : main;
+            // 原典は「全会一致」の語だけ — 数は議席から出したものなので、そう分かるように書く
+            return { part: vp.part, label: vp.unanimousText ? `${vp.unanimousText}（議席から数えて ${label}）` : label };
+          }),
+          voteSourceTitle: vparts[0]?.source.title ?? null,
+          voteAction: vparts[0] ? evAction(vparts[0].source.localUrl) : null,
           // 賛否表が議決結果と同じ原典なら、出典チップを重ねて出さない（横浜）
-          voteOpen: shownCouncil.votes && shownCouncil.votes.source.localUrl !== shownCouncil.result.localUrl
+          voteOpen: vparts[0] && vparts[0].source.localUrl !== shownCouncil.result.localUrl
             ? () =>
                 openViewer({
-                  url: shownCouncil.votes!.source.localUrl, title: shownCouncil.votes!.source.title,
-                  sub: shownCouncil.resolution.decidedDateLabel, originUrl: shownCouncil.votes!.source.originUrl,
-                  archiveUrl: shownCouncil.votes!.source.archiveUrl,
+                  url: vparts[0]!.source.localUrl, title: vparts[0]!.source.title,
+                  sub: shownCouncil.resolution.decidedDateLabel, originUrl: vparts[0]!.source.originUrl,
+                  archiveUrl: vparts[0]!.source.archiveUrl,
                 })
             : null,
           seats: shownCouncil.seats,
@@ -1291,15 +1297,23 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
           factions: shownCouncil.factions.map((f, i) => {
             const sw = D.seriesColor(i);
             const pct = ((f.seats / shownCouncil.seats) * 100).toFixed(1);
-            // 会派の賛否: 1つだけなら「賛成」「反対」、割れていれば「賛成3・反対1」（欠席・議長などは数に入れず括弧で）
-            const vc = shownCouncil.votes?.byFaction.find((b) => b.faction === f.name)?.counts;
-            const yn = vc ? ["賛成", "反対", "賛成でない"].filter((k) => vc[k]) : [];
-            const other = vc ? Object.keys(vc).filter((k) => !["賛成", "反対", "賛成でない"].includes(k)) : [];
-            const stanceLabel = !vc
-              ? null
-              : (yn.length === 1 ? yn[0]! : yn.map((k) => `${k}${vc[k]}`).join("・")) +
+            // 会派の賛否: 1つだけなら「賛成」「反対」、割れていれば「賛成3・反対1」（欠席・議長などは数に入れず括弧で）。
+            // 採決が分かれる議会（修正可決）は、採決どうしで同じなら1つ、違えば「修正案 反対／原案 賛成」
+            const perPart = vparts.map((vp) => {
+              const vc = vp.byFaction.find((b) => b.faction === f.name)?.counts;
+              if (!vc) return null;
+              const yn = ["賛成", "反対", "賛成でない"].filter((k) => vc[k]);
+              const other = Object.keys(vc).filter((k) => !["賛成", "反対", "賛成でない"].includes(k));
+              const label =
+                (yn.length === 1 ? yn[0]! : yn.map((k) => `${k}${vc[k]}`).join("・")) +
                 (other.length ? `${yn.length ? "（" : ""}${other.map((k) => `${k}${vc[k]}`).join("・")}${yn.length ? "）" : ""}` : "");
-            const stanceTone = !vc ? null : yn.length === 1 ? (yn[0] === "賛成" ? "yes" : "no") : yn.length > 1 ? "mixed" : "none";
+              const tone = yn.length === 1 ? (yn[0] === "賛成" ? "yes" : "no") : yn.length > 1 ? "mixed" : "none";
+              return { part: vp.part, label, tone };
+            });
+            const pp = perPart.filter((x): x is NonNullable<typeof x> => x != null);
+            const same = pp.length > 0 && pp.every((x) => x.label === pp[0]!.label);
+            const stanceLabel = !pp.length ? null : same ? pp[0]!.label : pp.map((x) => `${x.part} ${x.label}`).join("／");
+            const stanceTone = !pp.length ? null : same ? pp[0]!.tone : "mixed";
             return {
               name: f.name,
               stanceLabel,

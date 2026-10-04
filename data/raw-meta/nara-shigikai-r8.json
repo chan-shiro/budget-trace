@@ -28,6 +28,13 @@
       "bytes": 30546,
       "fetchedAt": "2026-10-01T16:54:23.284Z",
       "fetchedFrom": "https://www.city.nara.lg.jp/site/narasigikai/2371.html"
+    },
+    {
+      "filename": "index.html",
+      "sha256": "aba4542bf93fc1281af29278269d62f127e5dd08be1160e97ae0b4e5dd6ce7cc",
+      "bytes": 8543,
+      "fetchedAt": "2026-10-04T00:53:58.660Z",
+      "fetchedFrom": "http://www.gijiroku.jp/narashi/163/index.html"
     }
   ]
 }

@@ -49,11 +49,23 @@ export interface Council {
    */
   votes?: {
     basis: "member" | "faction";
+    unanimousText?: string;
     stances: string[];
     tally: Record<string, number>;
     byFaction: { faction: string; counts: Record<string, number>; members: { name: string; stance: string }[] }[];
     source: CouncilEvidence;
   };
+  /** 予算の議決が複数の採決に分かれる議会（修正可決: 修正案・修正部分を除く原案）の採決ごとの賛否 */
+  voteParts?: {
+    part: string;
+    basis: "member" | "faction";
+    /** 原典が「全会一致」の語だけで示した採決（数は議席から出したもの）。その原文 */
+    unanimousText?: string;
+    stances: string[];
+    tally: Record<string, number>;
+    byFaction: { faction: string; counts: Record<string, number>; members: { name: string; stance: string }[] }[];
+    source: CouncilEvidence;
+  }[];
   /** 参考リンク（会議録検索・議会だより）。甲府だけが持つ */
   minutesUrl: string | null;
   newsletterUrl: string | null;
@@ -4925,7 +4937,389 @@ export const MUNI_COUNCIL_YEARS: Record<string, Council[]> = {
         "archiveUrl": "https://web.archive.org/web/20260324114104/https://www.city.matsumoto.nagano.jp/site/gikai/197638.html"
       },
       "minutesUrl": null,
-      "newsletterUrl": null
+      "newsletterUrl": null,
+      "voteParts": [
+        {
+          "part": "修正部分を除く原案",
+          "basis": "member",
+          "stances": [
+            "賛成",
+            "議長"
+          ],
+          "tally": {
+            "賛成": 29,
+            "議長": 1
+          },
+          "byFaction": [
+            {
+              "faction": "誠の会",
+              "counts": {
+                "賛成": 6,
+                "議長": 1
+              },
+              "members": [
+                {
+                  "name": "中山英子",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "宇留賀響",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "土屋眞一",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "今井ゆうすけ",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "犬飼信雄",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "阿部功祐",
+                  "stance": "議長"
+                },
+                {
+                  "name": "太田更三",
+                  "stance": "賛成"
+                }
+              ]
+            },
+            {
+              "faction": "政友会",
+              "counts": {
+                "賛成": 7
+              },
+              "members": [
+                {
+                  "name": "こば陽子",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "太田正徳",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "和久井悟",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "西澤郁弥",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "牛丸仁志",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "村上幸雄",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "中島昌子",
+                  "stance": "賛成"
+                }
+              ]
+            },
+            {
+              "faction": "開明",
+              "counts": {
+                "賛成": 5
+              },
+              "members": [
+                {
+                  "name": "菊地徹",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "吉村幸代",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "川久保文良",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "上條温",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "芝山稔",
+                  "stance": "賛成"
+                }
+              ]
+            },
+            {
+              "faction": "松本市議会公明党",
+              "counts": {
+                "賛成": 4
+              },
+              "members": [
+                {
+                  "name": "大久保美由紀",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "内田麻美",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "上條美智子",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "近藤晴彦",
+                  "stance": "賛成"
+                }
+              ]
+            },
+            {
+              "faction": "まつも都",
+              "counts": {
+                "賛成": 4
+              },
+              "members": [
+                {
+                  "name": "花村恵子",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "神津ゆかり",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "上條一正",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "横内裕治",
+                  "stance": "賛成"
+                }
+              ]
+            },
+            {
+              "faction": "日本共産党松本市議団",
+              "counts": {
+                "賛成": 3
+              },
+              "members": [
+                {
+                  "name": "宗田まゆ美",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "塩原孝子",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "犬飼明美",
+                  "stance": "賛成"
+                }
+              ]
+            }
+          ],
+          "source": {
+            "title": "令和８年２月定例会 議案の審議結果（各議員の賛否）",
+            "localUrl": "/sources/matsumoto-shigikai-r8/124997.pdf",
+            "originUrl": "https://www.city.matsumoto.nagano.jp/uploaded/attachment/124997.pdf",
+            "archiveUrl": "https://web.archive.org/web/20260323105519/https://www.city.matsumoto.nagano.jp/uploaded/attachment/124997.pdf"
+          }
+        },
+        {
+          "part": "修正案",
+          "basis": "member",
+          "stances": [
+            "賛成",
+            "反対",
+            "議長"
+          ],
+          "tally": {
+            "反対": 13,
+            "議長": 1,
+            "賛成": 16
+          },
+          "byFaction": [
+            {
+              "faction": "誠の会",
+              "counts": {
+                "反対": 6,
+                "議長": 1
+              },
+              "members": [
+                {
+                  "name": "中山英子",
+                  "stance": "反対"
+                },
+                {
+                  "name": "宇留賀響",
+                  "stance": "反対"
+                },
+                {
+                  "name": "土屋眞一",
+                  "stance": "反対"
+                },
+                {
+                  "name": "今井ゆうすけ",
+                  "stance": "反対"
+                },
+                {
+                  "name": "犬飼信雄",
+                  "stance": "反対"
+                },
+                {
+                  "name": "阿部功祐",
+                  "stance": "議長"
+                },
+                {
+                  "name": "太田更三",
+                  "stance": "反対"
+                }
+              ]
+            },
+            {
+              "faction": "政友会",
+              "counts": {
+                "反対": 7
+              },
+              "members": [
+                {
+                  "name": "こば陽子",
+                  "stance": "反対"
+                },
+                {
+                  "name": "太田正徳",
+                  "stance": "反対"
+                },
+                {
+                  "name": "和久井悟",
+                  "stance": "反対"
+                },
+                {
+                  "name": "西澤郁弥",
+                  "stance": "反対"
+                },
+                {
+                  "name": "牛丸仁志",
+                  "stance": "反対"
+                },
+                {
+                  "name": "村上幸雄",
+                  "stance": "反対"
+                },
+                {
+                  "name": "中島昌子",
+                  "stance": "反対"
+                }
+              ]
+            },
+            {
+              "faction": "開明",
+              "counts": {
+                "賛成": 5
+              },
+              "members": [
+                {
+                  "name": "菊地徹",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "吉村幸代",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "川久保文良",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "上條温",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "芝山稔",
+                  "stance": "賛成"
+                }
+              ]
+            },
+            {
+              "faction": "松本市議会公明党",
+              "counts": {
+                "賛成": 4
+              },
+              "members": [
+                {
+                  "name": "大久保美由紀",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "内田麻美",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "上條美智子",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "近藤晴彦",
+                  "stance": "賛成"
+                }
+              ]
+            },
+            {
+              "faction": "まつも都",
+              "counts": {
+                "賛成": 4
+              },
+              "members": [
+                {
+                  "name": "花村恵子",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "神津ゆかり",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "上條一正",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "横内裕治",
+                  "stance": "賛成"
+                }
+              ]
+            },
+            {
+              "faction": "日本共産党松本市議団",
+              "counts": {
+                "賛成": 3
+              },
+              "members": [
+                {
+                  "name": "宗田まゆ美",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "塩原孝子",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "犬飼明美",
+                  "stance": "賛成"
+                }
+              ]
+            }
+          ],
+          "source": {
+            "title": "令和８年２月定例会 議案の審議結果（各議員の賛否）",
+            "localUrl": "/sources/matsumoto-shigikai-r8/124997.pdf",
+            "originUrl": "https://www.city.matsumoto.nagano.jp/uploaded/attachment/124997.pdf",
+            "archiveUrl": "https://web.archive.org/web/20260323105519/https://www.city.matsumoto.nagano.jp/uploaded/attachment/124997.pdf"
+          }
+        }
+      ]
     }
   ],
   "212016": [
@@ -8413,7 +8807,407 @@ export const MUNI_COUNCIL_YEARS: Record<string, Council[]> = {
         "archiveUrl": "https://web.archive.org/web/20261001174401/https://www.city.akashi.lg.jp/documents/31614/50803singikekka.pdf"
       },
       "minutesUrl": null,
-      "newsletterUrl": null
+      "newsletterUrl": null,
+      "voteParts": [
+        {
+          "part": "修正案",
+          "basis": "member",
+          "stances": [
+            "賛成",
+            "反対",
+            "議長"
+          ],
+          "tally": {
+            "賛成": 18,
+            "反対": 11,
+            "議長": 1
+          },
+          "byFaction": [
+            {
+              "faction": "かがやきネット・市民の会",
+              "counts": {
+                "賛成": 10
+              },
+              "members": [
+                {
+                  "name": "上田雅彦",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "中川夏望",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "山下祥",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "金尾良信",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "黒田智子",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "山中裕司",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "林丸美",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "竹内きよ子",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "宮坂祐太",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "寺井吉広",
+                  "stance": "賛成"
+                }
+              ]
+            },
+            {
+              "faction": "自由民主党明石",
+              "counts": {
+                "反対": 8
+              },
+              "members": [
+                {
+                  "name": "出雲有希子",
+                  "stance": "反対"
+                },
+                {
+                  "name": "石井宏法",
+                  "stance": "反対"
+                },
+                {
+                  "name": "井藤圭順",
+                  "stance": "反対"
+                },
+                {
+                  "name": "灰野修平",
+                  "stance": "反対"
+                },
+                {
+                  "name": "榎本和夫",
+                  "stance": "反対"
+                },
+                {
+                  "name": "千住啓介",
+                  "stance": "反対"
+                },
+                {
+                  "name": "三好宏",
+                  "stance": "反対"
+                },
+                {
+                  "name": "辰巳浩司",
+                  "stance": "反対"
+                }
+              ]
+            },
+            {
+              "faction": "公明党",
+              "counts": {
+                "賛成": 5,
+                "議長": 1
+              },
+              "members": [
+                {
+                  "name": "長尾博子",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "河村和歌子",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "尾倉あき子",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "飯田伸子",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "梅田宏希",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "国出拓志",
+                  "stance": "議長"
+                }
+              ]
+            },
+            {
+              "faction": "明石維新の会",
+              "counts": {
+                "反対": 3
+              },
+              "members": [
+                {
+                  "name": "正木克幸",
+                  "stance": "反対"
+                },
+                {
+                  "name": "中村茂雄",
+                  "stance": "反対"
+                },
+                {
+                  "name": "髙尾秀彰",
+                  "stance": "反対"
+                }
+              ]
+            },
+            {
+              "faction": "日本共産党",
+              "counts": {
+                "賛成": 1
+              },
+              "members": [
+                {
+                  "name": "辻本達也",
+                  "stance": "賛成"
+                }
+              ]
+            },
+            {
+              "faction": "対話の会あかし",
+              "counts": {
+                "賛成": 1
+              },
+              "members": [
+                {
+                  "name": "中西礼皇",
+                  "stance": "賛成"
+                }
+              ]
+            },
+            {
+              "faction": "スマイル会",
+              "counts": {
+                "賛成": 1
+              },
+              "members": [
+                {
+                  "name": "家根谷敦子",
+                  "stance": "賛成"
+                }
+              ]
+            }
+          ],
+          "source": {
+            "title": "令和８年第１回定例会３月議会（３月２５日）賛否一覧",
+            "localUrl": "/sources/akashi-shigikai-r8/50803sanpi_2.pdf",
+            "originUrl": "https://www.city.akashi.lg.jp/documents/31615/50803sanpi_2.pdf",
+            "archiveUrl": "https://web.archive.org/web/20261001174454/https://www.city.akashi.lg.jp/documents/31615/50803sanpi_2.pdf"
+          }
+        },
+        {
+          "part": "修正部分を除く原案",
+          "basis": "member",
+          "stances": [
+            "賛成",
+            "反対",
+            "議長"
+          ],
+          "tally": {
+            "賛成": 28,
+            "議長": 1,
+            "反対": 1
+          },
+          "byFaction": [
+            {
+              "faction": "かがやきネット・市民の会",
+              "counts": {
+                "賛成": 10
+              },
+              "members": [
+                {
+                  "name": "上田雅彦",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "中川夏望",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "山下祥",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "金尾良信",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "黒田智子",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "山中裕司",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "林丸美",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "竹内きよ子",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "宮坂祐太",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "寺井吉広",
+                  "stance": "賛成"
+                }
+              ]
+            },
+            {
+              "faction": "自由民主党明石",
+              "counts": {
+                "賛成": 8
+              },
+              "members": [
+                {
+                  "name": "出雲有希子",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "石井宏法",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "井藤圭順",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "灰野修平",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "榎本和夫",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "千住啓介",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "三好宏",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "辰巳浩司",
+                  "stance": "賛成"
+                }
+              ]
+            },
+            {
+              "faction": "公明党",
+              "counts": {
+                "賛成": 5,
+                "議長": 1
+              },
+              "members": [
+                {
+                  "name": "長尾博子",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "河村和歌子",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "尾倉あき子",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "飯田伸子",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "梅田宏希",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "国出拓志",
+                  "stance": "議長"
+                }
+              ]
+            },
+            {
+              "faction": "明石維新の会",
+              "counts": {
+                "賛成": 3
+              },
+              "members": [
+                {
+                  "name": "正木克幸",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "中村茂雄",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "髙尾秀彰",
+                  "stance": "賛成"
+                }
+              ]
+            },
+            {
+              "faction": "日本共産党",
+              "counts": {
+                "反対": 1
+              },
+              "members": [
+                {
+                  "name": "辻本達也",
+                  "stance": "反対"
+                }
+              ]
+            },
+            {
+              "faction": "対話の会あかし",
+              "counts": {
+                "賛成": 1
+              },
+              "members": [
+                {
+                  "name": "中西礼皇",
+                  "stance": "賛成"
+                }
+              ]
+            },
+            {
+              "faction": "スマイル会",
+              "counts": {
+                "賛成": 1
+              },
+              "members": [
+                {
+                  "name": "家根谷敦子",
+                  "stance": "賛成"
+                }
+              ]
+            }
+          ],
+          "source": {
+            "title": "令和８年第１回定例会３月議会（３月２５日）賛否一覧",
+            "localUrl": "/sources/akashi-shigikai-r8/50803sanpi_2.pdf",
+            "originUrl": "https://www.city.akashi.lg.jp/documents/31615/50803sanpi_2.pdf",
+            "archiveUrl": "https://web.archive.org/web/20261001174454/https://www.city.akashi.lg.jp/documents/31615/50803sanpi_2.pdf"
+          }
+        }
+      ]
     }
   ],
   "282049": [
@@ -8586,10 +9380,428 @@ export const MUNI_COUNCIL_YEARS: Record<string, Council[]> = {
         "title": "議決結果一覧表（令和８年３月定例会）",
         "localUrl": "/sources/nara-shigikai-r8/208608.pdf",
         "originUrl": "https://www.city.nara.lg.jp/uploaded/attachment/208608.pdf",
-        "archiveUrl": "https://www.city.nara.lg.jp/uploaded/attachment/208608.pdf"
+        "archiveUrl": "https://web.archive.org/web/20261001174652/https://www.city.nara.lg.jp/uploaded/attachment/208608.pdf"
       },
       "minutesUrl": null,
-      "newsletterUrl": null
+      "newsletterUrl": null,
+      "voteParts": [
+        {
+          "part": "修正部分を除く原案",
+          "basis": "faction",
+          "unanimousText": "全会一致",
+          "stances": [
+            "賛成",
+            "議長"
+          ],
+          "tally": {
+            "賛成": 38,
+            "議長": 1
+          },
+          "byFaction": [
+            {
+              "faction": "自由民主党",
+              "counts": {
+                "賛成": 6
+              },
+              "members": []
+            },
+            {
+              "faction": "公明党奈良市議会議員団",
+              "counts": {
+                "賛成": 6
+              },
+              "members": []
+            },
+            {
+              "faction": "日本維新の会奈良市議団",
+              "counts": {
+                "議長": 1,
+                "賛成": 5
+              },
+              "members": [
+                {
+                  "name": "大西淳文",
+                  "stance": "議長"
+                }
+              ]
+            },
+            {
+              "faction": "日本共産党奈良市会議員団",
+              "counts": {
+                "賛成": 4
+              },
+              "members": []
+            },
+            {
+              "faction": "自民党・無所属の会",
+              "counts": {
+                "賛成": 4
+              },
+              "members": []
+            },
+            {
+              "faction": "市民ひろば",
+              "counts": {
+                "賛成": 3
+              },
+              "members": []
+            },
+            {
+              "faction": "未来の会",
+              "counts": {
+                "賛成": 3
+              },
+              "members": []
+            },
+            {
+              "faction": "無所属（尾崎暢子）",
+              "counts": {
+                "賛成": 1
+              },
+              "members": []
+            },
+            {
+              "faction": "無所属（松尾浩司）",
+              "counts": {
+                "賛成": 1
+              },
+              "members": []
+            },
+            {
+              "faction": "無所属（江川友梨）",
+              "counts": {
+                "賛成": 1
+              },
+              "members": []
+            },
+            {
+              "faction": "無所属（内藤智司）",
+              "counts": {
+                "賛成": 1
+              },
+              "members": []
+            },
+            {
+              "faction": "無所属（松下幸治）",
+              "counts": {
+                "賛成": 1
+              },
+              "members": []
+            },
+            {
+              "faction": "無所属（へずまりゅう）",
+              "counts": {
+                "賛成": 1
+              },
+              "members": []
+            },
+            {
+              "faction": "無所属（松石聖一）",
+              "counts": {
+                "賛成": 1
+              },
+              "members": []
+            }
+          ],
+          "source": {
+            "title": "令和8年3月定例会 議決結果・賛否一覧表",
+            "localUrl": "/sources/nara-shigikai-r8/209444.pdf",
+            "originUrl": "https://www.city.nara.lg.jp/uploaded/attachment/209444.pdf",
+            "archiveUrl": "https://web.archive.org/web/20261001174803/https://www.city.nara.lg.jp/uploaded/attachment/209444.pdf"
+          }
+        },
+        {
+          "part": "修正案",
+          "basis": "member",
+          "stances": [
+            "賛成",
+            "反対",
+            "議長"
+          ],
+          "tally": {
+            "賛成": 29,
+            "議長": 1,
+            "反対": 9
+          },
+          "byFaction": [
+            {
+              "faction": "自由民主党",
+              "counts": {
+                "賛成": 6
+              },
+              "members": [
+                {
+                  "name": "森田一成",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "井久保裕也",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "植村佳史",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "八尾俊宏",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "太田晃司",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "道端孝治",
+                  "stance": "賛成"
+                }
+              ]
+            },
+            {
+              "faction": "公明党奈良市議会議員団",
+              "counts": {
+                "賛成": 6
+              },
+              "members": [
+                {
+                  "name": "九里雄二",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "宮池明",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "山口寛",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "田畑日佐恵",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "真鍋弘美",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "早田哲朗",
+                  "stance": "賛成"
+                }
+              ]
+            },
+            {
+              "faction": "日本維新の会奈良市議団",
+              "counts": {
+                "賛成": 5,
+                "議長": 1
+              },
+              "members": [
+                {
+                  "name": "柳田昌孝",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "北邨翔平",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "中川康",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "木下修平",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "佐野和則",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "大西淳文",
+                  "stance": "議長"
+                }
+              ]
+            },
+            {
+              "faction": "日本共産党奈良市会議員団",
+              "counts": {
+                "賛成": 4
+              },
+              "members": [
+                {
+                  "name": "山口裕司",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "白川健太郎",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "山本直子",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "北村拓哉",
+                  "stance": "賛成"
+                }
+              ]
+            },
+            {
+              "faction": "自民党・無所属の会",
+              "counts": {
+                "反対": 4
+              },
+              "members": [
+                {
+                  "name": "横井雄一",
+                  "stance": "反対"
+                },
+                {
+                  "name": "榎本博一",
+                  "stance": "反対"
+                },
+                {
+                  "name": "鍵田美智子",
+                  "stance": "反対"
+                },
+                {
+                  "name": "塚本勝",
+                  "stance": "反対"
+                }
+              ]
+            },
+            {
+              "faction": "市民ひろば",
+              "counts": {
+                "反対": 3
+              },
+              "members": [
+                {
+                  "name": "樋口清二郎",
+                  "stance": "反対"
+                },
+                {
+                  "name": "阪本美知子",
+                  "stance": "反対"
+                },
+                {
+                  "name": "柿本元気",
+                  "stance": "反対"
+                }
+              ]
+            },
+            {
+              "faction": "未来の会",
+              "counts": {
+                "賛成": 3
+              },
+              "members": [
+                {
+                  "name": "岡本誠至",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "下村千恵",
+                  "stance": "賛成"
+                },
+                {
+                  "name": "階戸幸一",
+                  "stance": "賛成"
+                }
+              ]
+            },
+            {
+              "faction": "無所属（尾崎暢子）",
+              "counts": {
+                "賛成": 1
+              },
+              "members": [
+                {
+                  "name": "尾崎暢子",
+                  "stance": "賛成"
+                }
+              ]
+            },
+            {
+              "faction": "無所属（松尾浩司）",
+              "counts": {
+                "賛成": 1
+              },
+              "members": [
+                {
+                  "name": "松尾浩司",
+                  "stance": "賛成"
+                }
+              ]
+            },
+            {
+              "faction": "無所属（江川友梨）",
+              "counts": {
+                "賛成": 1
+              },
+              "members": [
+                {
+                  "name": "江川友梨",
+                  "stance": "賛成"
+                }
+              ]
+            },
+            {
+              "faction": "無所属（内藤智司）",
+              "counts": {
+                "賛成": 1
+              },
+              "members": [
+                {
+                  "name": "内藤智司",
+                  "stance": "賛成"
+                }
+              ]
+            },
+            {
+              "faction": "無所属（松下幸治）",
+              "counts": {
+                "反対": 1
+              },
+              "members": [
+                {
+                  "name": "松下幸治",
+                  "stance": "反対"
+                }
+              ]
+            },
+            {
+              "faction": "無所属（へずまりゅう）",
+              "counts": {
+                "賛成": 1
+              },
+              "members": [
+                {
+                  "name": "へずまりゅう",
+                  "stance": "賛成"
+                }
+              ]
+            },
+            {
+              "faction": "無所属（松石聖一）",
+              "counts": {
+                "反対": 1
+              },
+              "members": [
+                {
+                  "name": "松石聖一",
+                  "stance": "反対"
+                }
+              ]
+            }
+          ],
+          "source": {
+            "title": "令和8年3月定例会 議決結果・賛否一覧表",
+            "localUrl": "/sources/nara-shigikai-r8/209444.pdf",
+            "originUrl": "https://www.city.nara.lg.jp/uploaded/attachment/209444.pdf",
+            "archiveUrl": "https://web.archive.org/web/20261001174803/https://www.city.nara.lg.jp/uploaded/attachment/209444.pdf"
+          }
+        }
+      ]
     }
   ],
   "322016": [

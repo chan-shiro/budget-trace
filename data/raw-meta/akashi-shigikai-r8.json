@@ -28,6 +28,13 @@
       "bytes": 12271,
       "fetchedAt": "2026-10-01T16:54:23.280Z",
       "fetchedFrom": "https://web.archive.org/web/20260305144503id_/https://www.city.akashi.lg.jp/gikai/youkoso/shoukai/kousei.html"
+    },
+    {
+      "filename": "gichou.html",
+      "sha256": "7e04ac5cdd66cf880de079f18955a75278df9ddf1aeb37b57d816aadd93b4be3",
+      "bytes": 12799,
+      "fetchedAt": "2026-10-04T00:53:58.660Z",
+      "fetchedFrom": "https://web.archive.org/web/20251205144009id_/https://www.city.akashi.lg.jp/gikai/youkoso/shoukai/gichou.html"
     }
   ]
 }

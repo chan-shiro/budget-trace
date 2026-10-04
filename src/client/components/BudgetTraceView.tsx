@@ -837,9 +837,9 @@ export default function BudgetTraceView({ v }: { v: any }) {
                           <span style={S("font-size:12px; color:#5C6B77;")}>{v.council.resolution.sessionLabel}（{v.council.resolution.decidedDateLabel}）</span>
                         </div>
                         <div style={S("font-size:13px; font-weight:600; color:#14181C; line-height:1.6;")}>{v.council.resolution.billNo}　{v.council.resolution.billName}</div>
-                        {v.council.voteTally && (
-                          <div style={S("margin-top:10px; font-size:12.5px; color:#14181C;")}>賛否 <span style={S("font-family:'IBM Plex Mono',monospace;")}>{v.council.voteTally}</span></div>
-                        )}
+                        {v.council.voteTallies.map((vt: any, k: number) => (
+                          <div key={k} style={S("margin-top:10px; font-size:12.5px; color:#14181C;")}>{vt.part ? `${vt.part}の賛否` : "賛否"} <span style={S("font-family:'IBM Plex Mono',monospace;")}>{vt.label}</span></div>
+                        ))}
                         <p style={S("margin:10px 0 0; font-size:11px; color:#8494A0; line-height:1.7;")}>{v.council.voteNote}</p>
                       </div>
                       <div style={S("display:flex; gap:6px; flex-wrap:wrap; font-size:11.5px;")}>
