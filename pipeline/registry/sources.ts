@@ -25074,6 +25074,7 @@ export const SOURCES: SourceEntry[] = [
         { name: "無所属", independent: true, noDeclaredCount: true, members: ["苫米地あつ子"] },
         { name: "無所属", independent: true, noDeclaredCount: true, members: ["前田由美"] },
       ],
+      votes: {"url": "https://www.city.hachinohe.aomori.jp/material/files/group/80/R0803_ggiinnbetusannpiitirann.pdf", "title": "令和８年３月定例会 議員別議案等賛否一覧表", "basis": "member", "legend": {"○": "賛成", "×": "反対", "欠": "欠席", "退": "退席", "除": "除斥", "議": "議長"}, "legendText": "○：賛成 ×：反対 欠：欠席 退：退席 除：除斥 議：議長", "anchor": "令和８年度八戸市一般会計予算", "symbols": "○○○○○議○○○○○○○○○○○○○○○○欠○○○×○", "tally": {"text": "令和８年度八戸市一般会計予算 25 1", "counts": {"賛成": 25, "反対": 1}}, "columns": [{"label": "長谷川ひろゆき"}, {"label": "岡田英"}, {"label": "日當正男"}, {"label": "小屋敷孝"}, {"label": "壬生八十博"}, {"label": "藤川優里"}, {"label": "立花敬之"}, {"label": "坂本美洋"}, {"label": "吉田洸龍"}, {"label": "田名部裕美"}, {"label": "三浦博司"}, {"label": "石橋充志"}, {"label": "山名文世"}, {"label": "五戸定博"}, {"label": "寺地則行"}, {"label": "山之内悠"}, {"label": "間盛仁"}, {"label": "久保百恵"}, {"label": "上条幸哉"}, {"label": "森園秀一"}, {"label": "豊田美好"}, {"label": "土嶺直樹"}, {"label": "高橋正人"}, {"label": "中村益則"}, {"label": "伊藤圓子"}, {"label": "吉田淳一"}, {"label": "苫米地あつ子"}, {"label": "前田由美"}]},
       resolution: {
         url: "https://www.city.hachinohe.aomori.jp/material/files/group/80/R0803_giannsinnsakekkahyou.pdf",
         title: "令和8年3月定例会 議案審査結果表",

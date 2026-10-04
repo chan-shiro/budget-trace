@@ -12891,7 +12891,200 @@ export const MUNI_COUNCIL_YEARS: Record<string, Council[]> = {
         "archiveUrl": "https://web.archive.org/web/20261001170443/https://www.city.hachinohe.aomori.jp/material/files/group/80/R0803_giannsinnsakekkahyou.pdf"
       },
       "minutesUrl": null,
-      "newsletterUrl": null
+      "newsletterUrl": null,
+      "votes": {
+        "basis": "member",
+        "stances": [
+          "賛成",
+          "反対",
+          "欠席",
+          "議長"
+        ],
+        "tally": {
+          "賛成": 25,
+          "議長": 1,
+          "欠席": 1,
+          "反対": 1
+        },
+        "byFaction": [
+          {
+            "faction": "自民クラブ",
+            "counts": {
+              "賛成": 7,
+              "議長": 1
+            },
+            "members": [
+              {
+                "name": "長谷川ひろゆき",
+                "stance": "賛成"
+              },
+              {
+                "name": "岡田英",
+                "stance": "賛成"
+              },
+              {
+                "name": "日當正男",
+                "stance": "賛成"
+              },
+              {
+                "name": "小屋敷孝",
+                "stance": "賛成"
+              },
+              {
+                "name": "壬生八十博",
+                "stance": "賛成"
+              },
+              {
+                "name": "藤川優里",
+                "stance": "議長"
+              },
+              {
+                "name": "立花敬之",
+                "stance": "賛成"
+              },
+              {
+                "name": "坂本美洋",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "きずなクラブ",
+            "counts": {
+              "賛成": 7
+            },
+            "members": [
+              {
+                "name": "吉田洸龍",
+                "stance": "賛成"
+              },
+              {
+                "name": "田名部裕美",
+                "stance": "賛成"
+              },
+              {
+                "name": "三浦博司",
+                "stance": "賛成"
+              },
+              {
+                "name": "石橋充志",
+                "stance": "賛成"
+              },
+              {
+                "name": "山名文世",
+                "stance": "賛成"
+              },
+              {
+                "name": "五戸定博",
+                "stance": "賛成"
+              },
+              {
+                "name": "寺地則行",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "自由民主・無所属クラブ",
+            "counts": {
+              "賛成": 6
+            },
+            "members": [
+              {
+                "name": "山之内悠",
+                "stance": "賛成"
+              },
+              {
+                "name": "間盛仁",
+                "stance": "賛成"
+              },
+              {
+                "name": "久保百恵",
+                "stance": "賛成"
+              },
+              {
+                "name": "上条幸哉",
+                "stance": "賛成"
+              },
+              {
+                "name": "森園秀一",
+                "stance": "賛成"
+              },
+              {
+                "name": "豊田美好",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "公明党",
+            "counts": {
+              "賛成": 2,
+              "欠席": 1
+            },
+            "members": [
+              {
+                "name": "土嶺直樹",
+                "stance": "賛成"
+              },
+              {
+                "name": "高橋正人",
+                "stance": "欠席"
+              },
+              {
+                "name": "中村益則",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "新緑・無所属の会",
+            "counts": {
+              "賛成": 2
+            },
+            "members": [
+              {
+                "name": "伊藤圓子",
+                "stance": "賛成"
+              },
+              {
+                "name": "吉田淳一",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "無所属（苫米地あつ子）",
+            "counts": {
+              "反対": 1
+            },
+            "members": [
+              {
+                "name": "苫米地あつ子",
+                "stance": "反対"
+              }
+            ]
+          },
+          {
+            "faction": "無所属（前田由美）",
+            "counts": {
+              "賛成": 1
+            },
+            "members": [
+              {
+                "name": "前田由美",
+                "stance": "賛成"
+              }
+            ]
+          }
+        ],
+        "source": {
+          "title": "令和８年３月定例会 議員別議案等賛否一覧表",
+          "localUrl": "/sources/hachinohe-shigikai-r8/R0803_ggiinnbetusannpiitirann.pdf",
+          "originUrl": "https://www.city.hachinohe.aomori.jp/material/files/group/80/R0803_ggiinnbetusannpiitirann.pdf",
+          "archiveUrl": "https://web.archive.org/web/20261001170518/https://www.city.hachinohe.aomori.jp/material/files/group/80/R0803_ggiinnbetusannpiitirann.pdf"
+        }
+      }
     }
   ],
   "062014": [
