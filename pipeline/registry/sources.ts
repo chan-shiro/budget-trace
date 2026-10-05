@@ -317,6 +317,15 @@ const ZAMA_LICENSE =
 const KOKUBUNJI_LICENSE =
   "当サイトに掲載されている文章、イラスト、ロゴ、写真、動画、その他すべての情報は、著作権の対象となっています。また、国分寺市公式ホームページ全体も編集著作物として著作権の対象となっており、ともに著作権法により保護されています。国分寺市または第三者が著作権を有しており、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。";
 
+/**
+ * 甲府の過去年度の賛否（kofu-gikai 0.3.0・議員別表決結果一覧の予算の行）。R2〜R6 は審議結果のページに表が無い。
+ * R7: 議長は長沼達彦（政友クラブ）・兵道顕司（公明党）欠席。議案第2・3・7号の3案の一括採決で、会議録（3月25日）の
+ * 「投票者数３０人、賛成２５人、反対５人」と一致
+ */
+const KOFU_VOTES: Record<string, { url: string } & Record<string, unknown>> = {
+  R7: {"url": "https://www.city.kofu.yamanashi.jp/gijichosa/r0703/documents/r7-3hyouketsur.pdf", "title": "令和7年3月定例会 議員別表決結果一覧", "basis": "faction", "legend": {"〇": "賛成", "×": "反対", "△": "棄権", "欠": "欠席", "議": "議長"}, "legendText": ["〇…賛成、×…反対、△…棄権、欠…欠席", "議…議長のため採決に加わらなかった"], "anchor": "令和７年度甲府市一般会計予算", "symbols": "○○議欠○○××○○", "headerBbox": true, "columns": [{"label": "政和こうふ", "faction": "政和こうふ"}, {"label": "政友クラブ", "faction": "政友クラブ"}, {"label": "長沼達彦", "member": "長沼達彦"}, {"label": "兵道顕司", "member": "兵道顕司"}, {"label": "公明党", "faction": "公明党"}, {"label": "こうふ未来", "faction": "こうふ未来"}, {"label": "日本共産党", "faction": "日本共産党"}, {"label": "市民クラブ", "faction": "市民クラブ"}, {"label": "山田弘之", "member": "山田弘之"}, {"label": "村松裕美", "member": "村松裕美"}]},
+};
+
 export const SOURCES: SourceEntry[] = [
   {
     // 全市町村の普通会計決算（人口・歳入歳出総額・目的別内訳）が入った総務省の
@@ -23691,6 +23700,7 @@ export const SOURCES: SourceEntry[] = [
     urls: [
       "https://www.city.kofu.yamanashi.jp/gikai-somu/shise/gikai/mebo/h270512kaihabetu.html",
       "https://www.city.kofu.yamanashi.jp/gijichosa/r0803/shingikekka.html",
+      "https://www.city.kofu.yamanashi.jp/gijichosa/r0803/documents/r8-3hyouketsu2.pdf",
     ],
     landingPage: "https://www.city.kofu.yamanashi.jp/gikai-somu/shise/gikai/mebo/giinmeibo.html",
     kind: "page",
@@ -23698,6 +23708,9 @@ export const SOURCES: SourceEntry[] = [
     scope: "甲府市議会（定数32・団体コード192015）",
     license: "甲府市議会ウェブサイト掲載資料（利用条件は同サイト参照）",
     parser: "kofu-gikai",
+    // 賛否（kofu-gikai 0.3.0）: 議員別表決結果一覧の予算の行。会派全員が同じなら会派の列を結合して記号1つ、
+    // 議長・無所属は議員の列。押しボタン式投票で、会議録（3月25日）の「投票者数３１人、賛成２５人、反対６人」と一致
+    parserOptions: { votes: {"url": "https://www.city.kofu.yamanashi.jp/gijichosa/r0803/documents/r8-3hyouketsu2.pdf", "title": "令和8年3月定例会 議員別表決結果一覧", "basis": "faction", "legend": {"〇": "賛成", "×": "反対", "△": "棄権", "欠": "欠席", "議": "議長"}, "legendText": ["〇…賛成、×…反対、△…棄権、欠…欠席", "議…議長のため採決に加わらなかった"], "anchor": "令和８年度甲府市一般会計予算", "symbols": "○議○○○×○×○×", "headerBbox": true, "columns": [{"label": "政和こうふ", "faction": "政和こうふ"}, {"label": "岡政吉", "member": "岡政吉"}, {"label": "こうふ明水会", "faction": "こうふ明水会"}, {"label": "公明党", "faction": "公明党"}, {"label": "こうふ未来", "faction": "こうふ未来"}, {"label": "日本共産党", "faction": "日本共産党"}, {"label": "政友クラブ", "faction": "政友クラブ"}, {"label": "市民クラブ", "faction": "市民クラブ"}, {"label": "山田弘之", "member": "山田弘之"}, {"label": "村松裕美", "member": "村松裕美"}]} },
   },
   // 過去年度の議会構成（R2〜R7）。会派名簿は同一URLを上書き更新するため、各予算の
   // 議決時点のバージョンを Wayback スナップショット（id_ = pywb 書換えなしの原本）で固定する。
@@ -23713,6 +23726,7 @@ export const SOURCES: SourceEntry[] = [
     ["R3", "20191114183718", "https://www.city.kofu.yamanashi.jp/gijichosa/r0303/shingikekka.html"],
     ["R2", "20191114183718", "https://web.archive.org/web/20200813113035id_/https://www.city.kofu.yamanashi.jp/gijichosa/r0203/shinngikekka.html"],
   ] as const).map(([fy, rosterTs, kekkaUrl]): SourceEntry => ({
+    ...(KOFU_VOTES[fy] ? { parserOptions: { votes: KOFU_VOTES[fy] } } : {}),
     id: `kofu-gikai-${fy.toLowerCase()}`,
     title: `令和${fy.slice(1)}年度 甲府市議会の構成（会派別議席数）と当初予算の議決`,
     publisher: "甲府市議会",
@@ -23720,6 +23734,7 @@ export const SOURCES: SourceEntry[] = [
     urls: [
       `https://web.archive.org/web/${rosterTs}id_/https://www.city.kofu.yamanashi.jp/gikai-somu/shise/gikai/mebo/h270512kaihabetu.html`,
       kekkaUrl,
+      ...(KOFU_VOTES[fy] ? [KOFU_VOTES[fy].url] : []),
     ],
     landingPage: "https://www.city.kofu.yamanashi.jp/gikai-somu/shise/gikai/mebo/giinmeibo.html",
     kind: "page",

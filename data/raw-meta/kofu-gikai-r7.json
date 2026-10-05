@@ -14,6 +14,13 @@
       "bytes": 46058,
       "fetchedAt": "2026-07-14T13:24:09.258Z",
       "fetchedFrom": "https://www.city.kofu.yamanashi.jp/gijichosa/r0703/shingikekka.html"
+    },
+    {
+      "filename": "r7-3hyouketsur.pdf",
+      "sha256": "be2dd53891de76b690634202b80ba6ab9058bc2575d044d3dcaf5038c81e8552",
+      "bytes": 412708,
+      "fetchedAt": "2026-10-05T02:05:49.899Z",
+      "fetchedFrom": "https://www.city.kofu.yamanashi.jp/gijichosa/r0703/documents/r7-3hyouketsur.pdf"
     }
   ]
 }
