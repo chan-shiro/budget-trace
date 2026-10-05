@@ -787,8 +787,15 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
       // 略称（見出しが正式名の一部）は、その略称がほかの列の会派名・氏名に含まれないこと。「クラブ」を政友クラブ・市民クラブの
       // 両方に使うと、列の帰属を入れ替えても見出しの照合が通った（0.8.0 のレビューで実測・0.6.0 からの穴）
       // 1字の見出し（縦組みの姓の頭の字）は headerWeakReason で弱さを申告済みの別の型なので除く（2字以上の略称だけを見る）
-      if (bound && l !== target && target.includes(l) && l.length >= 2) {
-        const clash = vo.columns.filter((o) => o !== c && norm(o.member ?? o.faction ?? o.label) !== target && norm(o.member ?? o.faction ?? o.label).includes(l));
+      // evidence で結び付ける列（bound が偽）も同じ: 見出し「政友クラブ」を faction「市民クラブ」に evidence（名簿の区間）で
+      // 結び付けると、正式名の見出しを交差させた入れ替えが通った（レビュー2巡目）。見出しがほかの列の名前と一致・包含されるなら不可
+      // 例外: evidence が原典の略称の定義そのもの（福岡「自民：自由民主党福岡市議団」＝見出し＋正式名＋4字以内）のとき。名簿の長い区間は不可
+      const tightDef = c.evidence != null && norm(c.evidence).length <= l.length + target.length + 4;
+      if (l !== target && l.length >= 2 && !tightDef) {
+        const clash = vo.columns.filter((o) => {
+          const t2 = norm(o.member ?? o.faction ?? o.label);
+          return o !== c && t2 !== target && (t2.includes(l) || l.includes(t2));
+        });
         if (clash.length) missing.push(`見出し「${c.label}」がほかの列（${clash.map((o) => o.member ?? o.faction).join("・")}）の名前にも含まれ、列を特定できません — 正式名か evidence で書く`);
       }
       if (!bound) {
