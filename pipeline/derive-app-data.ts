@@ -876,7 +876,7 @@ export const KOFU_EVALUATION_YEARS: KofuEvaluationYear[] = ${JSON.stringify(eval
 // ============================================================================
 // 議会の構成（予算議決時）→ src/client/lib/council.gen.ts
 // 甲府市議会の会派別議席数＋当初予算の議決（会派名簿・審議結果の2 HTML）。
-// 賛否内訳・会派別賛否は非公表なので持たない。エビデンスは名簿と審議結果の2件
+// 賛否は未収録（R7・R8 は議員別表決結果一覧が公表されている。リンクの有無だけを votesTable に持つ）。エビデンスは名簿と審議結果の2件
 // （各 ①発行元 ②Wayback ③自サーバー配信）＋参考の会議録検索・議会だより。
 // ============================================================================
 {
@@ -926,6 +926,7 @@ export const KOFU_EVALUATION_YEARS: KofuEvaluationYear[] = ${JSON.stringify(eval
         archiveUrl: wayback(resultOrigin),
       },
       // 参考（二次エビデンス・パイプライン外の外部リンク）
+      votesTable: doc.votesTableLink ? { title: doc.votesTableLink.title, originUrl: doc.votesTableLink.url } : null,
       minutesUrl: "https://www.city.kofu.yamanashi.dbsr.jp/",
       newsletterUrl: "https://www.city.kofu.yamanashi.jp/gijichosa/shise/gikai/koho/r08.html",
     };
@@ -1042,7 +1043,7 @@ export const KOFU_EVALUATION_YEARS: KofuEvaluationYear[] = ${JSON.stringify(eval
 // 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
 // 出典: 甲府市議会 所属会派別議員名簿（各予算の議決時点のバージョン）＋各年3月定例会 審議結果。
 // 会派構成は名簿の更新日でバージョンを固定（過去分は Wayback スナップショット）。
-// 賛否内訳・会派別賛否は非公表（起立採決で「可決」のみ）のため持たない。
+// 甲府の賛否は未収録。R7・R8 は審議結果のページに「議員別表決結果一覧」があり、その有無を votesTable に持つ。
 
 export interface CouncilFaction {
   name: string;
@@ -1106,6 +1107,11 @@ export interface Council {
     byFaction: { faction: string; counts: Record<string, number>; members: { name: string; stance: string }[] }[];
     source: CouncilEvidence;
   }[];
+  /**
+   * 甲府だけ: 審議結果のページにある議員ごとの賛否の表（議員別表決結果一覧）。賛否そのものは未収録で、
+   * 画面の注記を「非公表」と書かないための有無（R7・R8 にあり、R2〜R6 の審議結果のページには無い）
+   */
+  votesTable?: { title: string; originUrl: string } | null;
   /** 参考リンク（会議録検索・議会だより）。甲府だけが持つ */
   minutesUrl: string | null;
   newsletterUrl: string | null;

@@ -8,7 +8,9 @@
 //       <h1>令和8年3月定例会審議結果</h1>、表頭「番号|件名等|議決月日|結果」。
 //       件名に「一般会計予算」を含む行から議案番号・議決日・結果を取る。
 //
-// 賛否内訳・会派別賛否は非公表（起立採決で「可決」のみ）なので保持しない。
+// 賛否は持たない（未収録）。⚠ 「非公表」ではない — R7・R8 の審議結果のページには「議員別表決結果一覧」の PDF が
+// あり（R8 は押しボタン式投票・会議録に「賛成２５人、反対６人」）、R2〜R6 のページには無い。リンクの有無だけを
+// 原典から読み取り、画面の注記に使う（0.2.0・2026-10-05）。
 import { readFileSync } from "node:fs";
 import type {
   CouncilCompositionDoc,
@@ -16,7 +18,7 @@ import type {
   SourceEntry,
 } from "../types";
 
-export const PARSER_VERSION = "0.1.0";
+export const PARSER_VERSION = "0.2.0";
 
 /** HTML → テーブルの行列（セルはタグ除去・空白正規化済みテキスト） */
 function parseTables(html: string): string[][][] {
@@ -160,6 +162,18 @@ export function parseKofuGikai(
 
   const rowIdx = decisionTable.indexOf(bill);
 
+  // 議員ごとの賛否の表（「議員別表決結果一覧」の PDF）へのリンク。年度によって有無が違う
+  const vlinks = [...kekkaHtml.matchAll(/<a\s[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi)].filter((m) =>
+    m[2]!.replace(/<[^>]+>/g, "").includes("議員別表決結果"),
+  );
+  if (vlinks.length > 1) throw new Error(`${kekkaFile.filename}: 「議員別表決結果」のリンクが ${vlinks.length} 件あります`);
+  const votesTableLink = vlinks[0]
+    ? {
+        title: vlinks[0][2]!.replace(/<[^>]+>/g, "").replace(/（PDF[^）]*）/, "").replace(/[\s　]+/g, "").trim(),
+        url: new URL(vlinks[0][1]!, "https://www.city.kofu.yamanashi.jp/").href,
+      }
+    : undefined;
+
   return {
     docType: "council-composition",
     sourceId: source.id,
@@ -180,5 +194,6 @@ export function parseKofuGikai(
       result,
       locator: { file: kekkaFile.filename, row: rowIdx },
     },
+    ...(votesTableLink ? { votesTableLink } : {}),
   };
 }

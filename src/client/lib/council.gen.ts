@@ -2,7 +2,7 @@
 // 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
 // 出典: 甲府市議会 所属会派別議員名簿（各予算の議決時点のバージョン）＋各年3月定例会 審議結果。
 // 会派構成は名簿の更新日でバージョンを固定（過去分は Wayback スナップショット）。
-// 賛否内訳・会派別賛否は非公表（起立採決で「可決」のみ）のため持たない。
+// 甲府の賛否は未収録。R7・R8 は審議結果のページに「議員別表決結果一覧」があり、その有無を votesTable に持つ。
 
 export interface CouncilFaction {
   name: string;
@@ -66,6 +66,11 @@ export interface Council {
     byFaction: { faction: string; counts: Record<string, number>; members: { name: string; stance: string }[] }[];
     source: CouncilEvidence;
   }[];
+  /**
+   * 甲府だけ: 審議結果のページにある議員ごとの賛否の表（議員別表決結果一覧）。賛否そのものは未収録で、
+   * 画面の注記を「非公表」と書かないための有無（R7・R8 にあり、R2〜R6 の審議結果のページには無い）
+   */
+  votesTable?: { title: string; originUrl: string } | null;
   /** 参考リンク（会議録検索・議会だより）。甲府だけが持つ */
   minutesUrl: string | null;
   newsletterUrl: string | null;
@@ -150,6 +155,10 @@ export const KOFU_COUNCIL_YEARS: Council[] = [
       "originUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/r0803/shingikekka.html",
       "archiveUrl": "https://web.archive.org/web/20260714124615/https://www.city.kofu.yamanashi.jp/gijichosa/r0803/shingikekka.html"
     },
+    "votesTable": {
+      "title": "議員別表決結果一覧",
+      "originUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/r0803/documents/r8-3hyouketsu2.pdf"
+    },
     "minutesUrl": "https://www.city.kofu.yamanashi.dbsr.jp/",
     "newsletterUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/shise/gikai/koho/r08.html"
   },
@@ -222,6 +231,10 @@ export const KOFU_COUNCIL_YEARS: Council[] = [
       "localUrl": "/sources/kofu-gikai-r7/shingikekka.html",
       "originUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/r0703/shingikekka.html",
       "archiveUrl": "https://web.archive.org/web/20260714133655/https://www.city.kofu.yamanashi.jp/gijichosa/r0703/shingikekka.html"
+    },
+    "votesTable": {
+      "title": "議員別表決結果一覧",
+      "originUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/r0703/documents/r7-3hyouketsur.pdf"
     },
     "minutesUrl": "https://www.city.kofu.yamanashi.dbsr.jp/",
     "newsletterUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/shise/gikai/koho/r08.html"
@@ -296,6 +309,7 @@ export const KOFU_COUNCIL_YEARS: Council[] = [
       "originUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/r0603/shingikekka.html",
       "archiveUrl": "https://web.archive.org/web/20260513161136/https://www.city.kofu.yamanashi.jp/gijichosa/r0603/shingikekka.html"
     },
+    "votesTable": null,
     "minutesUrl": "https://www.city.kofu.yamanashi.dbsr.jp/",
     "newsletterUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/shise/gikai/koho/r08.html"
   },
@@ -364,6 +378,7 @@ export const KOFU_COUNCIL_YEARS: Council[] = [
       "originUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/r0503/shingikekka.html",
       "archiveUrl": "https://web.archive.org/web/20260116054107/https://www.city.kofu.yamanashi.jp/gijichosa/r0503/shingikekka.html"
     },
+    "votesTable": null,
     "minutesUrl": "https://www.city.kofu.yamanashi.dbsr.jp/",
     "newsletterUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/shise/gikai/koho/r08.html"
   },
@@ -427,6 +442,7 @@ export const KOFU_COUNCIL_YEARS: Council[] = [
       "originUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/r0403/shingikekka.html",
       "archiveUrl": "https://web.archive.org/web/20260610022754/https://www.city.kofu.yamanashi.jp/gijichosa/r0403/shingikekka.html"
     },
+    "votesTable": null,
     "minutesUrl": "https://www.city.kofu.yamanashi.dbsr.jp/",
     "newsletterUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/shise/gikai/koho/r08.html"
   },
@@ -490,6 +506,7 @@ export const KOFU_COUNCIL_YEARS: Council[] = [
       "originUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/r0303/shingikekka.html",
       "archiveUrl": "https://web.archive.org/web/20240227080640/https://www.city.kofu.yamanashi.jp/gijichosa/r0303/shingikekka.html"
     },
+    "votesTable": null,
     "minutesUrl": "https://www.city.kofu.yamanashi.dbsr.jp/",
     "newsletterUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/shise/gikai/koho/r08.html"
   },
@@ -553,6 +570,7 @@ export const KOFU_COUNCIL_YEARS: Council[] = [
       "originUrl": "https://web.archive.org/web/20200813113035id_/https://www.city.kofu.yamanashi.jp/gijichosa/r0203/shinngikekka.html",
       "archiveUrl": "https://web.archive.org/web/20200813113035id_/https://www.city.kofu.yamanashi.jp/gijichosa/r0203/shinngikekka.html"
     },
+    "votesTable": null,
     "minutesUrl": "https://www.city.kofu.yamanashi.dbsr.jp/",
     "newsletterUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/shise/gikai/koho/r08.html"
   }

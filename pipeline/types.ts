@@ -546,8 +546,8 @@ export type MunicipalNatureDoc = z.infer<typeof municipalNatureDocSchema>;
 
 // ---- 議会の構成（予算議決時）: 会派別議席数＋当初予算の議決 -------------------
 // 甲府市議会の所属会派別議員名簿（会派→議席数）と、令和8年3月定例会 審議結果
-// （一般会計当初予算の議案番号・議決日・結果）。賛否内訳・会派別賛否は非公表
-// （起立採決で「可決」のみ）なので保持しない — 推測で埋めない。
+// （一般会計当初予算の議案番号・議決日・結果）。甲府の賛否は未収録（R7・R8 は「議員別表決結果一覧」が
+// 公表されている。リンクの有無だけを votesTableLink に持つ）— 推測で埋めない。
 export const councilFactionFactSchema = z.object({
   /** 会派名（無所属は議員名で一意化） */
   name: z.string().min(1),
@@ -623,6 +623,8 @@ export const councilCompositionDocSchema = z.object({
   /** 名簿・議決結果の原典の呼び名（画面の出典チップ。`council-transcribed` のみ） */
   rosterTitle: z.string().optional(),
   resultTitle: z.string().optional(),
+  /** 審議結果のページにある「議員別表決結果一覧」へのリンク（`kofu-gikai` 0.2.0・あれば）。賛否そのものは未収録 */
+  votesTableLink: z.object({ title: z.string(), url: z.string() }).optional(),
   /**
    * 当初予算の議決での賛否（2026-10-02・`council-transcribed` のみ）。原典の賛否表の**列見出しの並び**と
    * **予算の行の記号の並び**を書き写し、パーサが原典と突き合わせたもの。

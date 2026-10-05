@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "kofu-gikai-r8",
   "parser": "kofu-gikai",
-  "parserVersion": "0.1.0",
-  "parsedAt": "2026-10-04T00:41:34.445Z",
+  "parserVersion": "0.2.0",
+  "parsedAt": "2026-10-05T00:54:34.737Z",
   "fiscalYear": "R8",
   "body": "甲府市議会",
   "seats": 32,
@@ -102,5 +102,9 @@
       "file": "shingikekka.html",
       "row": 1
     }
+  },
+  "votesTableLink": {
+    "title": "議員別表決結果一覧",
+    "url": "https://www.city.kofu.yamanashi.jp/gijichosa/r0803/documents/r8-3hyouketsu2.pdf"
   }
 }

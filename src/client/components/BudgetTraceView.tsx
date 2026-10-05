@@ -801,7 +801,7 @@ export default function BudgetTraceView({ v }: { v: any }) {
                 )}
 
                 {/* 議会の構成（予算議決時）— 甲府（full）＋議決時点の構成を確かめた budget 階層の議会。
-                    会派別議席数＋当初予算の議決。賛否は甲府は非公表（起立採決）、他は未収録。 */}
+                    会派別議席数＋当初予算の議決＋賛否（収録済みの団体）。甲府の賛否は未収録。 */}
                 {v.council && (
                 <section style={S("background:#FFFFFF; border:1px solid #DFE7EC; border-radius:16px; padding:22px 24px; margin:26px 0;")}>
                   <div style={S("display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:16px;")}>
