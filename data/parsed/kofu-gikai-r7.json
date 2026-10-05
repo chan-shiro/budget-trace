@@ -3,7 +3,7 @@
   "sourceId": "kofu-gikai-r7",
   "parser": "kofu-gikai",
   "parserVersion": "0.3.0",
-  "parsedAt": "2026-10-05T02:10:25.759Z",
+  "parsedAt": "2026-10-05T02:28:02.315Z",
   "fiscalYear": "R7",
   "body": "甲府市議会",
   "seats": 32,
@@ -100,7 +100,7 @@
   },
   "votes": {
     "basis": "faction",
-    "sourceTitle": "令和７年３月定例会 議員別表決結果一覧",
+    "sourceTitle": "令和7年3月定例会 議員別表決結果一覧",
     "sourceFile": "r7-3hyouketsur.pdf",
     "columns": [
       {

@@ -2,7 +2,7 @@
 // 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
 // 出典: 甲府市議会 所属会派別議員名簿（各予算の議決時点のバージョン）＋各年3月定例会 審議結果。
 // 会派構成は名簿の更新日でバージョンを固定（過去分は Wayback スナップショット）。
-// 甲府の賛否は未収録。R7・R8 は審議結果のページに「議員別表決結果一覧」があり、その有無を votesTable に持つ。
+// 甲府の賛否は R7・R8 を議員別表決結果一覧から収録。ほかの年度は審議結果のページに表へのリンクが無く未収録（votesTable で書き分ける）。
 
 export interface CouncilFaction {
   name: string;
@@ -253,7 +253,7 @@ export const KOFU_COUNCIL_YEARS: Council[] = [
         }
       ],
       "source": {
-        "title": "令和８年３月定例会 議員別表決結果一覧",
+        "title": "令和8年3月定例会 議員別表決結果一覧",
         "localUrl": "/sources/kofu-gikai-r8/r8-3hyouketsu2.pdf",
         "originUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/r0803/documents/r8-3hyouketsu2.pdf",
         "archiveUrl": "https://web.archive.org/web/20260714124639/https://www.city.kofu.yamanashi.jp/gijichosa/r0803/documents/r8-3hyouketsu2.pdf"
@@ -431,7 +431,7 @@ export const KOFU_COUNCIL_YEARS: Council[] = [
         }
       ],
       "source": {
-        "title": "令和７年３月定例会 議員別表決結果一覧",
+        "title": "令和7年3月定例会 議員別表決結果一覧",
         "localUrl": "/sources/kofu-gikai-r7/r7-3hyouketsur.pdf",
         "originUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/r0703/documents/r7-3hyouketsur.pdf",
         "archiveUrl": "https://web.archive.org/web/20260714133721/https://www.city.kofu.yamanashi.jp/gijichosa/r0703/documents/r7-3hyouketsur.pdf"

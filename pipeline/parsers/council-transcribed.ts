@@ -349,6 +349,8 @@ function bboxHeaderError(path: string, anchorN: string, keys: string[], sym: str
   const words = bboxWords(path);
   const cx = (w: BboxWord) => (w.x0 + w.x1) / 2;
   let reason = `予算の行（「${anchorN}」）が座標の読みで見つかりません`;
+  // 記号の並びが合った行の理由（列見出しの不一致）を、ほかの行（附帯決議の行など）の記号の不一致より優先して返す
+  let headerReason: string | null = null;
   for (const w of words) {
     // anchor は1語に収まるか、同じ行の続く語をつないで現れること
     const line = words.filter((o) => o.page === w.page && Math.abs(o.y0 - w.y0) < 2.5).sort((a, b) => a.x0 - b.x0);
@@ -378,9 +380,9 @@ function bboxHeaderError(path: string, anchorN: string, keys: string[], sym: str
       if (!text.includes(labelsN[i]!)) bad.push(`${i + 1}列目（x=${x.toFixed(1)}）の真上は「${text}」で、見出し「${labelsN[i]}」を含みません`);
     });
     if (!bad.length) return null;
-    reason = bad.join(" / ");
+    headerReason = bad.join(" / ");
   }
-  return reason;
+  return headerReason ?? reason;
 }
 
 /**
@@ -782,6 +784,13 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
       const l = norm(c.label);
       const target = norm(c.member ?? c.faction ?? c.label);
       const bound = target.includes(l) || l.includes(target);
+      // 略称（見出しが正式名の一部）は、その略称がほかの列の会派名・氏名に含まれないこと。「クラブ」を政友クラブ・市民クラブの
+      // 両方に使うと、列の帰属を入れ替えても見出しの照合が通った（0.8.0 のレビューで実測・0.6.0 からの穴）
+      // 1字の見出し（縦組みの姓の頭の字）は headerWeakReason で弱さを申告済みの別の型なので除く（2字以上の略称だけを見る）
+      if (bound && l !== target && target.includes(l) && l.length >= 2) {
+        const clash = vo.columns.filter((o) => o !== c && norm(o.member ?? o.faction ?? o.label) !== target && norm(o.member ?? o.faction ?? o.label).includes(l));
+        if (clash.length) missing.push(`見出し「${c.label}」がほかの列（${clash.map((o) => o.member ?? o.faction).join("・")}）の名前にも含まれ、列を特定できません — 正式名か evidence で書く`);
+      }
       if (!bound) {
         if (!c.evidence) missing.push(`賛否の列「${c.label}」と「${c.member ?? c.faction}」の対応を示す原文（evidence）がありません`);
         else {

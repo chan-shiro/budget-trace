@@ -877,7 +877,7 @@ export const KOFU_EVALUATION_YEARS: KofuEvaluationYear[] = ${JSON.stringify(eval
 // ============================================================================
 // 議会の構成（予算議決時）→ src/client/lib/council.gen.ts
 // 甲府市議会の会派別議席数＋当初予算の議決（会派名簿・審議結果の2 HTML）。
-// 賛否は未収録（R7・R8 は議員別表決結果一覧が公表されている。リンクの有無だけを votesTable に持つ）。エビデンスは名簿と審議結果の2件
+// 賛否は R7・R8 だけ（議員別表決結果一覧・kofu-gikai 0.3.0）。エビデンスは名簿と審議結果（R7・R8 は＋議員別表決結果一覧）
 // （各 ①発行元 ②Wayback ③自サーバー配信）＋参考の会議録検索・議会だより。
 // ============================================================================
 /**
@@ -965,7 +965,8 @@ function buildCouncilVotes(
       // 賛否（kofu-gikai 0.3.0・R7・R8）。原典は議員別表決結果一覧（registry の urls の3つ目）
       ...(doc.votes
         ? (() => {
-            const vurl = src.urls![2]!;
+            // 照合に使った URL（parserOptions.votes.url）から引く。urls の並びに頼らない
+            const vurl = (src.parserOptions as { votes: { url: string } }).votes.url;
             const vf = meta.files.find((f) => f.fetchedFrom === vurl);
             if (!vf) throw new Error(`${srcId}: 議員別表決結果一覧（${vurl}）の raw がありません`);
             return {
@@ -1069,7 +1070,7 @@ function buildCouncilVotes(
 // 再生成: bun run pipeline:derive（pipeline/derive-app-data.ts）
 // 出典: 甲府市議会 所属会派別議員名簿（各予算の議決時点のバージョン）＋各年3月定例会 審議結果。
 // 会派構成は名簿の更新日でバージョンを固定（過去分は Wayback スナップショット）。
-// 甲府の賛否は未収録。R7・R8 は審議結果のページに「議員別表決結果一覧」があり、その有無を votesTable に持つ。
+// 甲府の賛否は R7・R8 を議員別表決結果一覧から収録。ほかの年度は審議結果のページに表へのリンクが無く未収録（votesTable で書き分ける）。
 
 export interface CouncilFaction {
   name: string;

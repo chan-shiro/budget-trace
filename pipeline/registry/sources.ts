@@ -323,7 +323,7 @@ const KOKUBUNJI_LICENSE =
  * 「投票者数３０人、賛成２５人、反対５人」と一致
  */
 const KOFU_VOTES: Record<string, { url: string } & Record<string, unknown>> = {
-  R7: {"url": "https://www.city.kofu.yamanashi.jp/gijichosa/r0703/documents/r7-3hyouketsur.pdf", "title": "令和７年３月定例会 議員別表決結果一覧", "basis": "faction", "legend": {"〇": "賛成", "×": "反対", "△": "棄権", "欠": "欠席", "議": "議長"}, "legendText": ["〇…賛成、×…反対、△…棄権、欠…欠席", "議…議長のため採決に加わらなかった"], "anchor": "令和７年度甲府市一般会計予算", "symbols": "○○議欠○○××○○", "headerBbox": true, "columns": [{"label": "政和こうふ", "faction": "政和こうふ"}, {"label": "政友クラブ", "faction": "政友クラブ"}, {"label": "長沼達彦", "member": "長沼達彦"}, {"label": "兵道顕司", "member": "兵道顕司"}, {"label": "公明党", "faction": "公明党"}, {"label": "こうふ未来", "faction": "こうふ未来"}, {"label": "日本共産党", "faction": "日本共産党"}, {"label": "市民クラブ", "faction": "市民クラブ"}, {"label": "山田弘之", "member": "山田弘之"}, {"label": "村松裕美", "member": "村松裕美"}]},
+  R7: {"url": "https://www.city.kofu.yamanashi.jp/gijichosa/r0703/documents/r7-3hyouketsur.pdf", "title": "令和7年3月定例会 議員別表決結果一覧", "basis": "faction", "legend": {"〇": "賛成", "×": "反対", "△": "棄権", "欠": "欠席", "議": "議長"}, "legendText": ["〇…賛成、×…反対、△…棄権、欠…欠席", "議…議長のため採決に加わらなかった"], "anchor": "令和７年度甲府市一般会計予算", "symbols": "○○議欠○○××○○", "headerBbox": true, "columns": [{"label": "政和こうふ", "faction": "政和こうふ"}, {"label": "政友クラブ", "faction": "政友クラブ"}, {"label": "長沼達彦", "member": "長沼達彦"}, {"label": "兵道顕司", "member": "兵道顕司"}, {"label": "公明党", "faction": "公明党"}, {"label": "こうふ未来", "faction": "こうふ未来"}, {"label": "日本共産党", "faction": "日本共産党"}, {"label": "市民クラブ", "faction": "市民クラブ"}, {"label": "山田弘之", "member": "山田弘之"}, {"label": "村松裕美", "member": "村松裕美"}]},
 };
 
 export const SOURCES: SourceEntry[] = [
@@ -23710,7 +23710,7 @@ export const SOURCES: SourceEntry[] = [
     parser: "kofu-gikai",
     // 賛否（kofu-gikai 0.3.0）: 議員別表決結果一覧の予算の行。会派全員が同じなら会派の列を結合して記号1つ、
     // 議長・無所属は議員の列。押しボタン式投票で、会議録（3月25日）の「投票者数３１人、賛成２５人、反対６人」と一致
-    parserOptions: { votes: {"url": "https://www.city.kofu.yamanashi.jp/gijichosa/r0803/documents/r8-3hyouketsu2.pdf", "title": "令和８年３月定例会 議員別表決結果一覧", "basis": "faction", "legend": {"〇": "賛成", "×": "反対", "△": "棄権", "欠": "欠席", "議": "議長"}, "legendText": ["〇…賛成、×…反対、△…棄権、欠…欠席", "議…議長のため採決に加わらなかった"], "anchor": "令和８年度甲府市一般会計予算", "symbols": "○議○○○×○×○×", "headerBbox": true, "columns": [{"label": "政和こうふ", "faction": "政和こうふ"}, {"label": "岡政吉", "member": "岡政吉"}, {"label": "こうふ明水会", "faction": "こうふ明水会"}, {"label": "公明党", "faction": "公明党"}, {"label": "こうふ未来", "faction": "こうふ未来"}, {"label": "日本共産党", "faction": "日本共産党"}, {"label": "政友クラブ", "faction": "政友クラブ"}, {"label": "市民クラブ", "faction": "市民クラブ"}, {"label": "山田弘之", "member": "山田弘之"}, {"label": "村松裕美", "member": "村松裕美"}]} },
+    parserOptions: { votes: {"url": "https://www.city.kofu.yamanashi.jp/gijichosa/r0803/documents/r8-3hyouketsu2.pdf", "title": "令和8年3月定例会 議員別表決結果一覧", "basis": "faction", "legend": {"〇": "賛成", "×": "反対", "△": "棄権", "欠": "欠席", "議": "議長"}, "legendText": ["〇…賛成、×…反対、△…棄権、欠…欠席", "議…議長のため採決に加わらなかった"], "anchor": "令和８年度甲府市一般会計予算", "symbols": "○議○○○×○×○×", "headerBbox": true, "columns": [{"label": "政和こうふ", "faction": "政和こうふ"}, {"label": "岡政吉", "member": "岡政吉"}, {"label": "こうふ明水会", "faction": "こうふ明水会"}, {"label": "公明党", "faction": "公明党"}, {"label": "こうふ未来", "faction": "こうふ未来"}, {"label": "日本共産党", "faction": "日本共産党"}, {"label": "政友クラブ", "faction": "政友クラブ"}, {"label": "市民クラブ", "faction": "市民クラブ"}, {"label": "山田弘之", "member": "山田弘之"}, {"label": "村松裕美", "member": "村松裕美"}]} },
   },
   // 過去年度の議会構成（R2〜R7）。会派名簿は同一URLを上書き更新するため、各予算の
   // 議決時点のバージョンを Wayback スナップショット（id_ = pywb 書換えなしの原本）で固定する。

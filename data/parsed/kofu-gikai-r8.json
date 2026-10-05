@@ -3,7 +3,7 @@
   "sourceId": "kofu-gikai-r8",
   "parser": "kofu-gikai",
   "parserVersion": "0.3.0",
-  "parsedAt": "2026-10-05T02:10:26.008Z",
+  "parsedAt": "2026-10-05T02:28:02.509Z",
   "fiscalYear": "R8",
   "body": "甲府市議会",
   "seats": 32,
@@ -109,7 +109,7 @@
   },
   "votes": {
     "basis": "faction",
-    "sourceTitle": "令和８年３月定例会 議員別表決結果一覧",
+    "sourceTitle": "令和8年3月定例会 議員別表決結果一覧",
     "sourceFile": "r8-3hyouketsu2.pdf",
     "columns": [
       {

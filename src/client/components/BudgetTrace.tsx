@@ -1248,7 +1248,7 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
     // 決算の推移は KOFU_TREND（甲府の総務省決算）ベース。full（甲府）だけで出す
     showTrend: isFull,
     // 議会の構成（予算議決時）。甲府＋議決時点の構成を確かめた budget 階層の議会（council.gen の
-    // MUNI_COUNCIL_YEARS）。会派別議席数の横バー＋一覧＋議決チップ。会派ごとの stance 列は持たない。
+    // MUNI_COUNCIL_YEARS）。会派別議席数の横バー＋一覧＋議決チップ。賛否は収録済みの議会・年度だけ（甲府は R7・R8）。
     council: shownCouncil
       ? {
           body: shownCouncil.body,
@@ -1266,7 +1266,10 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
               ? `議員ごとの賛否は、市議会が「${shownCouncil.votesTable.title}」で公表していますが、まだ収録していません。`
               : "会派・議員ごとの賛否は未収録です（この年度の審議結果のページには、議員ごとの賛否の表へのリンクがありません）。"
             : vparts.length
-              ? // 採決ごとに記録の単位が違うことがある（奈良: 原案は全会一致で会派ごと、修正案は議員ごと）
+              ? isFull
+                ? // 甲府の原典は議員別の表で、会派全員が同じ賛否の列を発行元が結合している（docs §6）
+                  "議員ごとの賛否（議決当日の議員別表決結果一覧）。会派全員が同じ賛否の列は、原典で1つにまとめられています。"
+                : // 採決ごとに記録の単位が違うことがある（奈良: 原案は全会一致で会派ごと、修正案は議員ごと）
                 (vparts.every((vp) => vp.basis === vparts[0]!.basis)
                   ? (vparts[0]!.basis === "member" ? "議員ごとの賛否" : "会派ごとの賛否") + "（議決当日の賛否表）。"
                   : `採決ごとの賛否（議決当日の賛否表）。${vparts.map((vp) => `${vp.part}は${vp.basis === "member" ? "議員ごと" : "会派ごと"}`).join("、")}の記録です。`) +
