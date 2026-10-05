@@ -1259,10 +1259,12 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
             !isFull && shownCouncil.teisu != null && shownCouncil.teisu > shownCouncil.seats
               ? `欠員 ${shownCouncil.teisu - shownCouncil.seats}`
               : null,
-          // 甲府は起立採決で賛否が記録されない（docs §6）。他の議会は議員別の賛否を公表している団体が
-          // あるが、まだ収録していない — 「公表されていない」と書かない
+          // 甲府の賛否は未収録。⚠ 「非公表」と書かない — R7・R8 は審議結果のページに議員別表決結果一覧がある（docs §6）。
+          // それ以外の年度も、審議結果のページに表が無いことしか確かめていない
           voteNote: isFull
-            ? "会派ごとの賛否・票数は起立採決のため公表されていません（記録は「可決」のみ）。"
+            ? shownCouncil?.votesTable
+              ? `会派・議員ごとの賛否は、市議会が「${shownCouncil.votesTable.title}」で公表していますが、まだ収録していません。`
+              : "会派・議員ごとの賛否は未収録です（この年度の審議結果のページには、議員ごとの賛否の表がありません）。"
             : vparts.length
               ? // 採決ごとに記録の単位が違うことがある（奈良: 原案は全会一致で会派ごと、修正案は議員ごと）
                 (vparts.every((vp) => vp.basis === vparts[0]!.basis)
