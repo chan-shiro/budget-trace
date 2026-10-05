@@ -789,8 +789,13 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
       // 1字の見出し（縦組みの姓の頭の字）は headerWeakReason で弱さを申告済みの別の型なので除く（2字以上の略称だけを見る）
       // evidence で結び付ける列（bound が偽）も同じ: 見出し「政友クラブ」を faction「市民クラブ」に evidence（名簿の区間）で
       // 結び付けると、正式名の見出しを交差させた入れ替えが通った（レビュー2巡目）。見出しがほかの列の名前と一致・包含されるなら不可
-      // 例外: evidence が原典の略称の定義そのもの（福岡「自民：自由民主党福岡市議団」＝見出し＋正式名＋4字以内）のとき。名簿の長い区間は不可
-      const tightDef = c.evidence != null && norm(c.evidence).length <= l.length + target.length + 4;
+      // 例外: evidence が原典の略称の定義そのもの（福岡「自民：自由民主党福岡市議団」）＝「見出し＋区切り（：＝・…など）＋正式名」の形で、
+      // 見出しがほかの列の正式名そのものではないとき。短さだけで認めると、見出し行で隣り合う会派名「市民クラブ公明党」を evidence にした
+      // 交差が通った（レビュー3巡目）
+      const esc = (x: string) => x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      const defForm = c.evidence != null && new RegExp(`^${esc(l)}[:：＝=・…．.→]{1,4}${esc(target)}$`).test(norm(c.evidence));
+      const exactClash = vo.columns.some((o) => o !== c && norm(o.member ?? o.faction ?? o.label) === l);
+      const tightDef = defForm && !exactClash;
       if (l !== target && l.length >= 2 && !tightDef) {
         const clash = vo.columns.filter((o) => {
           const t2 = norm(o.member ?? o.faction ?? o.label);
