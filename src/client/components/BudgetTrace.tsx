@@ -310,7 +310,7 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
       : null;
   // 賛否は採決ごとの並びに揃える（ふつうは1つ。修正可決で採決が分かれる議会は voteParts の数だけ）
   const vparts: { part: string | null; basis: "member" | "faction"; unanimousText?: string; stances: string[]; tally: Record<string, number>; byFaction: { faction: string; counts: Record<string, number> }[]; source: D.Council["roster"] }[] =
-    !shownCouncil || isFull ? [] : shownCouncil.votes ? [{ part: null, ...shownCouncil.votes }] : (shownCouncil.voteParts ?? []);
+    !shownCouncil ? [] : shownCouncil.votes ? [{ part: null, ...shownCouncil.votes }] : (shownCouncil.voteParts ?? []);
   const projYear = KOFU_PROJECT_YEARS.find((y) => y.fy === budget.fy);
   const KOFU_PROJECTS = React.useMemo(() => projYear?.projects ?? [], [projYear]);
   const KOFU_PROJECTS_SOURCE = projYear?.source ?? { title: "", url: "", originUrl: "", localUrl: "", pagesLabel: "" };
@@ -1259,9 +1259,9 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
             !isFull && shownCouncil.teisu != null && shownCouncil.teisu > shownCouncil.seats
               ? `欠員 ${shownCouncil.teisu - shownCouncil.seats}`
               : null,
-          // 甲府の賛否は未収録。⚠ 「非公表」と書かない — R7・R8 は審議結果のページに議員別表決結果一覧がある（docs §6）。
-          // それ以外の年度も、審議結果のページに表が無いことしか確かめていない
-          voteNote: isFull
+          // 甲府は R7・R8 の賛否を議員別表決結果一覧から収録（kofu-gikai 0.3.0）。それ以外の年度は未収録 —
+          // ⚠ 「非公表」と書かない（審議結果のページに表へのリンクが無いことしか確かめていない。docs §6）
+          voteNote: isFull && !vparts.length
             ? shownCouncil?.votesTable
               ? `議員ごとの賛否は、市議会が「${shownCouncil.votesTable.title}」で公表していますが、まだ収録していません。`
               : "会派・議員ごとの賛否は未収録です（この年度の審議結果のページには、議員ごとの賛否の表へのリンクがありません）。"

@@ -159,6 +159,106 @@ export const KOFU_COUNCIL_YEARS: Council[] = [
       "title": "議員別表決結果一覧",
       "originUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/r0803/documents/r8-3hyouketsu2.pdf"
     },
+    "votes": {
+      "basis": "faction",
+      "stances": [
+        "賛成",
+        "反対",
+        "議長"
+      ],
+      "tally": {
+        "賛成": 25,
+        "議長": 1,
+        "反対": 6
+      },
+      "byFaction": [
+        {
+          "faction": "政和こうふ",
+          "counts": {
+            "賛成": 9,
+            "議長": 1
+          },
+          "members": [
+            {
+              "name": "岡政吉",
+              "stance": "議長"
+            }
+          ]
+        },
+        {
+          "faction": "こうふ明水会",
+          "counts": {
+            "賛成": 5
+          },
+          "members": []
+        },
+        {
+          "faction": "公明党",
+          "counts": {
+            "賛成": 4
+          },
+          "members": []
+        },
+        {
+          "faction": "こうふ未来",
+          "counts": {
+            "賛成": 4
+          },
+          "members": []
+        },
+        {
+          "faction": "日本共産党",
+          "counts": {
+            "反対": 3
+          },
+          "members": []
+        },
+        {
+          "faction": "政友クラブ",
+          "counts": {
+            "賛成": 2
+          },
+          "members": []
+        },
+        {
+          "faction": "市民クラブ",
+          "counts": {
+            "反対": 2
+          },
+          "members": []
+        },
+        {
+          "faction": "無所属（山田弘之）",
+          "counts": {
+            "賛成": 1
+          },
+          "members": [
+            {
+              "name": "山田弘之",
+              "stance": "賛成"
+            }
+          ]
+        },
+        {
+          "faction": "無所属（村松裕美）",
+          "counts": {
+            "反対": 1
+          },
+          "members": [
+            {
+              "name": "村松裕美",
+              "stance": "反対"
+            }
+          ]
+        }
+      ],
+      "source": {
+        "title": "令和８年３月定例会 議員別表決結果一覧",
+        "localUrl": "/sources/kofu-gikai-r8/r8-3hyouketsu2.pdf",
+        "originUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/r0803/documents/r8-3hyouketsu2.pdf",
+        "archiveUrl": "https://web.archive.org/web/20260714124639/https://www.city.kofu.yamanashi.jp/gijichosa/r0803/documents/r8-3hyouketsu2.pdf"
+      }
+    },
     "minutesUrl": "https://www.city.kofu.yamanashi.dbsr.jp/",
     "newsletterUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/shise/gikai/koho/r08.html"
   },
@@ -235,6 +335,107 @@ export const KOFU_COUNCIL_YEARS: Council[] = [
     "votesTable": {
       "title": "議員別表決結果一覧",
       "originUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/r0703/documents/r7-3hyouketsur.pdf"
+    },
+    "votes": {
+      "basis": "faction",
+      "stances": [
+        "賛成",
+        "反対",
+        "欠席",
+        "議長"
+      ],
+      "tally": {
+        "賛成": 25,
+        "議長": 1,
+        "欠席": 1,
+        "反対": 5
+      },
+      "byFaction": [
+        {
+          "faction": "政和こうふ",
+          "counts": {
+            "賛成": 10
+          },
+          "members": []
+        },
+        {
+          "faction": "政友クラブ",
+          "counts": {
+            "賛成": 6,
+            "議長": 1
+          },
+          "members": [
+            {
+              "name": "長沼達彦",
+              "stance": "議長"
+            }
+          ]
+        },
+        {
+          "faction": "公明党",
+          "counts": {
+            "欠席": 1,
+            "賛成": 3
+          },
+          "members": [
+            {
+              "name": "兵道顕司",
+              "stance": "欠席"
+            }
+          ]
+        },
+        {
+          "faction": "こうふ未来",
+          "counts": {
+            "賛成": 4
+          },
+          "members": []
+        },
+        {
+          "faction": "日本共産党",
+          "counts": {
+            "反対": 3
+          },
+          "members": []
+        },
+        {
+          "faction": "市民クラブ",
+          "counts": {
+            "反対": 2
+          },
+          "members": []
+        },
+        {
+          "faction": "無所属（山田弘之）",
+          "counts": {
+            "賛成": 1
+          },
+          "members": [
+            {
+              "name": "山田弘之",
+              "stance": "賛成"
+            }
+          ]
+        },
+        {
+          "faction": "無所属（村松裕美）",
+          "counts": {
+            "賛成": 1
+          },
+          "members": [
+            {
+              "name": "村松裕美",
+              "stance": "賛成"
+            }
+          ]
+        }
+      ],
+      "source": {
+        "title": "令和７年３月定例会 議員別表決結果一覧",
+        "localUrl": "/sources/kofu-gikai-r7/r7-3hyouketsur.pdf",
+        "originUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/r0703/documents/r7-3hyouketsur.pdf",
+        "archiveUrl": "https://web.archive.org/web/20260714133721/https://www.city.kofu.yamanashi.jp/gijichosa/r0703/documents/r7-3hyouketsur.pdf"
+      }
     },
     "minutesUrl": "https://www.city.kofu.yamanashi.dbsr.jp/",
     "newsletterUrl": "https://www.city.kofu.yamanashi.jp/gijichosa/shise/gikai/koho/r08.html"

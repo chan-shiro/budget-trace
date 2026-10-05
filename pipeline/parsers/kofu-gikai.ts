@@ -12,13 +12,22 @@
 // あり（R8 は押しボタン式投票・会議録に「賛成２５人、反対６人」）、R2〜R6 のページには無い。リンクの有無だけを
 // 原典から読み取り、画面の注記に使う（0.2.0・2026-10-05）。
 import { readFileSync } from "node:fs";
+import { z } from "zod";
+import { readRawMeta } from "../lib/store";
 import type {
   CouncilCompositionDoc,
   CouncilFactionFact,
   SourceEntry,
 } from "../types";
+import { norm, readDoc, verifyVotes, votesInputSchema } from "./council-transcribed";
 
-export const PARSER_VERSION = "0.2.0";
+/**
+ * registry の parserOptions（任意）。votes は `council-transcribed` と同じ書き方・同じ照合（verifyVotes）。
+ * 議員別表決結果一覧（R7・R8）の予算の行を書き写す（0.3.0）
+ */
+const optionsSchema = z.object({ votes: votesInputSchema.optional() }).strict();
+
+export const PARSER_VERSION = "0.3.0";
 
 /** HTML → テーブルの行列（セルはタグ除去・空白正規化済みテキスト） */
 function parseTables(html: string): string[][][] {
@@ -86,8 +95,10 @@ export function parseKofuGikai(
   files: { path: string; filename: string }[],
   source: SourceEntry,
 ): CouncilCompositionDoc {
-  if (files.length !== 2) {
-    throw new Error(`${source.id}: 会派名簿＋審議結果の2ファイルを想定（現在 ${files.length} 件）`);
+  const opt = optionsSchema.parse(source.parserOptions ?? {});
+  const expected = opt.votes ? 3 : 2;
+  if (files.length !== expected) {
+    throw new Error(`${source.id}: 会派名簿＋審議結果${opt.votes ? "＋議員別表決結果一覧" : ""}の${expected}ファイルを想定（現在 ${files.length} 件）`);
   }
   const kaihaFile = files.find((f) => /kaiha/i.test(f.filename)) ?? files[0]!;
   const kekkaFile = files.find((f) => /kekka|shingi/i.test(f.filename)) ?? files[1]!;
@@ -99,6 +110,8 @@ export function parseKofuGikai(
   const pairs = pairHeadingTables(kaihaHtml);
   if (pairs.length === 0) throw new Error(`${kaihaFile.filename}: 会派の見出し＋名簿テーブルが見つかりません`);
   const factions: CouncilFactionFact[] = [];
+  /** 会派ごとの議員（読み仮名を落とした氏名）。factions と同じ順 */
+  const rosterMembers: string[][] = [];
   for (const { heading, table } of pairs) {
     // 見出し「会派名（N名）」から会派名と申告議席数
     const hm = toHalf(heading).match(/^(.*?)（(\d+)名）$/);
@@ -115,6 +128,7 @@ export function parseKofuGikai(
     const isIndependent = baseName === "無所属";
     // 無所属は「無所属（1名）」が複数並ぶので議員名で一意化する
     const name = isIndependent && members[0] ? `無所属（${members[0].replace(/（.*$/, "")}）` : baseName;
+    rosterMembers.push(members.map((m) => m.replace(/（.*$/, "")));
     factions.push({
       name,
       seats: members.length,
@@ -162,6 +176,7 @@ export function parseKofuGikai(
 
   const rowIdx = decisionTable.indexOf(bill);
 
+
   // 議員ごとの賛否の表（「議員別表決結果一覧」の PDF）へのリンク。年度によって有無が違う
   const vlinks = [...kekkaHtml.matchAll(/<a\s[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi)].filter((m) =>
     m[2]!.replace(/<[^>]+>/g, "").includes("議員別表決結果"),
@@ -173,6 +188,41 @@ export function parseKofuGikai(
         url: new URL(vlinks[0][1]!, "https://www.city.kofu.yamanashi.jp/").href,
       }
     : undefined;
+
+  // ---- 賛否（0.3.0・議員別表決結果一覧の予算の行。照合は council-transcribed の verifyVotes） ----
+  let votes: CouncilCompositionDoc["votes"];
+  if (opt.votes) {
+    const meta = readRawMeta(source.id);
+    if (!meta) throw new Error(`${source.id}: raw-meta がありません`);
+    const fileFor = (url: string) => {
+      const m = meta.files.find((f) => f.fetchedFrom === url);
+      const f = m && files.find((x) => x.filename === m.filename);
+      if (!f) throw new Error(`${source.id}: ${url} の raw ファイルがありません`);
+      return f;
+    };
+    // 議員別表決結果一覧は審議結果のページからリンクされたものであること（別の会期・年度の表を書き写していない）
+    if (!votesTableLink || votesTableLink.url !== opt.votes.url) {
+      throw new Error(`${source.id}: votes.url（${opt.votes.url}）が審議結果のページの「議員別表決結果」のリンク（${votesTableLink?.url ?? "なし"}）と一致しません`);
+    }
+    const missing: string[] = [];
+    const out = verifyVotes(
+      {
+        sourceId: source.id,
+        factionsOpt: factions.map((f, i) => ({ name: f.name, members: rosterMembers[i]! })),
+        factions,
+        rosterViews: readDoc(kaihaFile).views,
+        fileFor,
+        missing,
+      },
+      opt.votes,
+    );
+    // 予算の行は、審議結果で照合した議案番号の行であること（議員別表決結果一覧の行頭「議 案 第 5 号」は字の間に空白が入る）
+    const rowHead = norm(`${billNo}${opt.votes.anchor}`);
+    if (!readDoc(fileFor(opt.votes.url)).views.some((v) => v.text.includes(rowHead)))
+      missing.push(`議員別表決結果一覧に「${billNo}」の直後に「${opt.votes.anchor}」が続く行がありません`);
+    if (missing.length) throw new Error(`${source.id}: 書き写しが原典と合いません\n  - ${missing.join("\n  - ")}`);
+    votes = out;
+  }
 
   return {
     docType: "council-composition",
@@ -195,5 +245,6 @@ export function parseKofuGikai(
       locator: { file: kekkaFile.filename, row: rowIdx },
     },
     ...(votesTableLink ? { votesTableLink } : {}),
+    ...(votes ? { votes } : {}),
   };
 }

@@ -10,6 +10,7 @@ import {
   validationResultSchema,
   type NormalizedMuniAccount,
 } from "./types";
+import type { CouncilCompositionDoc } from "./types";
 import {
   DATA_DIR,
   normalizedPath,
@@ -879,6 +880,40 @@ export const KOFU_EVALUATION_YEARS: KofuEvaluationYear[] = ${JSON.stringify(eval
 // 賛否は未収録（R7・R8 は議員別表決結果一覧が公表されている。リンクの有無だけを votesTable に持つ）。エビデンスは名簿と審議結果の2件
 // （各 ①発行元 ②Wayback ③自サーバー配信）＋参考の会議録検索・議会だより。
 // ============================================================================
+/**
+ * 賛否の表示シェイプ（会派ごとの内訳・集計）を組む。会派単位の表は、その会派の全員を同じ賛否として数える
+ * （会派の列＝議席 − その会派で自分の列（議長・無所属など）を持つ議員。パーサの集計と同じ）。甲府と甲府以外で共通
+ */
+type CouncilVotesDoc = NonNullable<CouncilCompositionDoc["votes"]>;
+function buildCouncilVotes(
+  factions: { name: string; seats: number }[],
+  vt: CouncilVotesDoc,
+  source: { title: string; localUrl: string; originUrl: string; archiveUrl: string },
+) {
+  const STANCES = ["賛成", "反対", "賛成でない", "欠席", "退席", "棄権", "除斥", "議長", "不参加"] as const;
+  const byFaction = factions.map((f) => {
+    const cols = vt.columns.filter((c) => c.faction === f.name);
+    const counts: Record<string, number> = {};
+    const members: { name: string; stance: string }[] = [];
+    for (const c of cols) {
+      const n = vt.basis === "member" || c.member ? 1 : f.seats - vt.columns.filter((o) => o.faction === f.name && o.member).length;
+      counts[c.stance] = (counts[c.stance] ?? 0) + n;
+      if (c.member) members.push({ name: c.member, stance: c.stance });
+    }
+    return { faction: f.name, counts, members };
+  });
+  const tally: Record<string, number> = {};
+  for (const bf of byFaction) for (const [k, n] of Object.entries(bf.counts)) tally[k] = (tally[k] ?? 0) + n;
+  return {
+    basis: vt.basis,
+    ...(vt.unanimousText ? { unanimousText: vt.unanimousText } : {}),
+    stances: STANCES.filter((k) => tally[k]),
+    tally,
+    byFaction,
+    source,
+  };
+}
+
 {
   const COUNCIL_FYS = ["R8", "R7", "R6", "R5", "R4", "R3", "R2"] as const;
   const councils = COUNCIL_FYS.map((fy) => {
@@ -927,6 +962,22 @@ export const KOFU_EVALUATION_YEARS: KofuEvaluationYear[] = ${JSON.stringify(eval
       },
       // 参考（二次エビデンス・パイプライン外の外部リンク）
       votesTable: doc.votesTableLink ? { title: doc.votesTableLink.title, originUrl: doc.votesTableLink.url } : null,
+      // 賛否（kofu-gikai 0.3.0・R7・R8）。原典は議員別表決結果一覧（registry の urls の3つ目）
+      ...(doc.votes
+        ? (() => {
+            const vurl = src.urls![2]!;
+            const vf = meta.files.find((f) => f.fetchedFrom === vurl);
+            if (!vf) throw new Error(`${srcId}: 議員別表決結果一覧（${vurl}）の raw がありません`);
+            return {
+              votes: buildCouncilVotes(doc.factions, doc.votes, {
+                title: doc.votes.sourceTitle,
+                localUrl: `/sources/${srcId}/${vf.filename}`,
+                originUrl: vurl,
+                archiveUrl: wayback(vurl),
+              }),
+            };
+          })()
+        : {}),
       minutesUrl: "https://www.city.kofu.yamanashi.dbsr.jp/",
       newsletterUrl: "https://www.city.kofu.yamanashi.jp/gijichosa/shise/gikai/koho/r08.html",
     };
@@ -993,32 +1044,7 @@ export const KOFU_EVALUATION_YEARS: KofuEvaluationYear[] = ${JSON.stringify(eval
       // 賛否（council-transcribed 0.6.0〜）。会派単位の表は、その会派の全員を同じ賛否として数える。
       // 修正可決などで採決が分かれる議会は voteParts（採決ごと）に出す（0.7.0）
       ...(() => {
-        type VT = NonNullable<typeof doc.votes>;
-        const STANCES = ["賛成", "反対", "賛成でない", "欠席", "退席", "棄権", "除斥", "議長", "不参加"] as const;
-        const build = (vt: VT, vurl: string) => {
-          const byFaction = doc.factions.map((f) => {
-            const cols = vt.columns.filter((c) => c.faction === f.name);
-            const counts: Record<string, number> = {};
-            const members: { name: string; stance: string }[] = [];
-            for (const c of cols) {
-              // 会派の列は「議席 − その会派で自分の列（議長・無所属など）を持つ議員」（パーサの集計と同じ）
-              const n = vt.basis === "member" || c.member ? 1 : f.seats - vt.columns.filter((o) => o.faction === f.name && o.member).length;
-              counts[c.stance] = (counts[c.stance] ?? 0) + n;
-              if (c.member) members.push({ name: c.member, stance: c.stance });
-            }
-            return { faction: f.name, counts, members };
-          });
-          const tally: Record<string, number> = {};
-          for (const bf of byFaction) for (const [k, n] of Object.entries(bf.counts)) tally[k] = (tally[k] ?? 0) + n;
-          return {
-            basis: vt.basis,
-            ...(vt.unanimousText ? { unanimousText: vt.unanimousText } : {}),
-            stances: STANCES.filter((k) => tally[k]),
-            tally,
-            byFaction,
-            source: ev(vurl, vt.sourceTitle),
-          };
-        };
+        const build = (vt: CouncilVotesDoc, vurl: string) => buildCouncilVotes(doc.factions, vt, ev(vurl, vt.sourceTitle));
         const po = src.parserOptions as { votes?: { url: string }; votesParts?: { url: string; part: string }[] };
         if (doc.votes) return { votes: build(doc.votes, po.votes!.url) };
         if (doc.votesParts) {

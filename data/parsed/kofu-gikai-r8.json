@@ -2,8 +2,8 @@
   "docType": "council-composition",
   "sourceId": "kofu-gikai-r8",
   "parser": "kofu-gikai",
-  "parserVersion": "0.2.0",
-  "parsedAt": "2026-10-05T00:54:34.737Z",
+  "parserVersion": "0.3.0",
+  "parsedAt": "2026-10-05T02:10:26.008Z",
   "fiscalYear": "R8",
   "body": "甲府市議会",
   "seats": 32,
@@ -106,5 +106,65 @@
   "votesTableLink": {
     "title": "議員別表決結果一覧",
     "url": "https://www.city.kofu.yamanashi.jp/gijichosa/r0803/documents/r8-3hyouketsu2.pdf"
+  },
+  "votes": {
+    "basis": "faction",
+    "sourceTitle": "令和８年３月定例会 議員別表決結果一覧",
+    "sourceFile": "r8-3hyouketsu2.pdf",
+    "columns": [
+      {
+        "label": "政和こうふ",
+        "faction": "政和こうふ",
+        "stance": "賛成"
+      },
+      {
+        "label": "岡政吉",
+        "faction": "政和こうふ",
+        "member": "岡政吉",
+        "stance": "議長"
+      },
+      {
+        "label": "こうふ明水会",
+        "faction": "こうふ明水会",
+        "stance": "賛成"
+      },
+      {
+        "label": "公明党",
+        "faction": "公明党",
+        "stance": "賛成"
+      },
+      {
+        "label": "こうふ未来",
+        "faction": "こうふ未来",
+        "stance": "賛成"
+      },
+      {
+        "label": "日本共産党",
+        "faction": "日本共産党",
+        "stance": "反対"
+      },
+      {
+        "label": "政友クラブ",
+        "faction": "政友クラブ",
+        "stance": "賛成"
+      },
+      {
+        "label": "市民クラブ",
+        "faction": "市民クラブ",
+        "stance": "反対"
+      },
+      {
+        "label": "山田弘之",
+        "faction": "無所属（山田弘之）",
+        "member": "山田弘之",
+        "stance": "賛成"
+      },
+      {
+        "label": "村松裕美",
+        "faction": "無所属（村松裕美）",
+        "member": "村松裕美",
+        "stance": "反対"
+      }
+    ]
   }
 }
