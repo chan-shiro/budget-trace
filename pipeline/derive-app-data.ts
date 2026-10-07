@@ -149,8 +149,11 @@ const isArchiveUrl = (url: string): boolean => /^https?:\/\/(web\.archive\.org|w
 // ⚠ **「許諾を得…必要」を足した**（2026-10-02・名古屋市会 §6-3）。原文「…個別に名古屋市の担当課の許諾を得ていただく
 //   必要があります」は許可の要求そのものなのに、語彙（許可|承諾|同意 ＋ なく|を得ず）に当たらず unverified に落ちていた。
 //   全 registry で動くのは名古屋の1件だけ（open 側との衝突0・レビューが実測）。
+// ⚠ **`複製・転用` を読点の `複製、転用` にも広げた**（2026-10-07・酒田 §13-55）。原文「…著作権法で認められた場合を除き、複製、転用をすることはできません。」は
+//   多治見の「無断で複製、転用することはできません」と「無断」の有無しか違わない制限的な文言なのに、中黒の語彙に当たらず unverified に落ちていた。
+//   全 registry で区分が動くのは0件（実測・既存で `複製、転用` を含む原文は他の語でもう要許可に落ちている）。
 const licenseClassOf = (lic: string): "open" | "permission-required" | "unverified" =>
-  /(?:許可|承諾|同意|許諾)を得(?:て|る)[^。]{0,20}必要|要許可|非営利|非商業|無断|複製・転用|転載を禁止|使用を禁止|(?:転載|複製|二次利用|引用)[^。]{0,20}(?:禁じ|禁止)|(?:許可|承諾|同意)(?:・(?:許可|承諾|同意))?(?:なく(?!ても|とも)|を得(?:ず|ない|ないまま))[^。]{0,40}(?:できません|禁じ|禁止|お断り)/.test(lic)
+  /(?:許可|承諾|同意|許諾)を得(?:て|る)[^。]{0,20}必要|要許可|非営利|非商業|無断|複製[・、]転用|転載を禁止|使用を禁止|(?:転載|複製|二次利用|引用)[^。]{0,20}(?:禁じ|禁止)|(?:許可|承諾|同意)(?:・(?:許可|承諾|同意))?(?:なく(?!ても|とも)|を得(?:ず|ない|ないまま))[^。]{0,40}(?:できません|禁じ|禁止|お断り)/.test(lic)
     ? "permission-required"
   : /政府標準利用規約|公共データ利用規約|クリエイティブ・コモンズ|CC[ -]?BY/i.test(lic) ? "open"
   : "unverified";
@@ -3517,6 +3520,24 @@ export const DECISION_SOURCES: Record<string, { city: DecisionEvidenceCard[]; to
     // ⚠⚠ 津山 R8・R4 が骨格で R5 に prevNote。サイトは SPA・R8・R7 の PDF は Azure Blob
     ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
       srcId: `tsuyama-yosansho-${fy}`, muniCode: "332038", muniName: "津山市", prefName: "岡山県", isPref: false,
+    })),
+    // ---- 第53巡（2026-10-07・§13-55） ----
+    // ⚠ 島田 R5〜R2 は合冊（最初の総括が一般会計）。R2 の前年度列は議会修正後の H31 当初
+    ...(["r8", "r7", "r6", "r5", "r4", "r3", "r2"] as const).map((fy) => ({
+      srcId: `shimada-yosansho-${fy}`, muniCode: "222097", muniName: "島田市", prefName: "静岡県", isPref: false,
+    })),
+    // ⚠ 日進 R2 は予算書の総括がスキャンで概要の款別一覧表
+    ...(["r8", "r7", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
+      srcId: `nisshin-yosansho-${fy}`, muniCode: "232301", muniName: "日進市", prefName: "愛知県", isPref: false,
+    })),
+    { srcId: "nisshin-yosan-gaiyou-r2", muniCode: "232301", muniName: "日進市", prefName: "愛知県", isPref: false },
+    // ⚠ 酒田 R4 は2面付けで歳入に CropX。R2 は予算書が無く未収録
+    ...(["r8", "r7", "r6", "r5", "r4", "r3"] as const).map((fy) => ({
+      srcId: `sakata-yosansho-${fy}`, muniCode: "062049", muniName: "酒田市", prefName: "山形県", isPref: false,
+    })),
+    // ⚠ 芦屋は R8・R7・R2 だけ（R6〜R3 はスキャン）。R8 の廃止款は款番号つきの当年度空欄
+    ...(["r8", "r7", "r2"] as const).map((fy) => ({
+      srcId: `ashiya-yosansho-${fy}`, muniCode: "282065", muniName: "芦屋市", prefName: "兵庫県", isPref: false,
     })),
   ] as const;
   // budget 階層で決算＋執行率も収録できた自治体（款別 予算現額/決算額/執行率）。

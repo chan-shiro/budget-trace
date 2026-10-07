@@ -19519,6 +19519,144 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "license": "・津山市公式ホームページに掲載している内容(文章、写真、図、イラストなど)に関する著作権は、原則として津山市、または文章、画像などの提供者に帰属します。・津山市公式ホームページの内容について「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、各ページに特段の定めがある場合には、その取り扱いが優先されます。・使用許諾は、各ページ内に記載された問い合わせ先に事前にご相談ください。",
     "target": "file"
   },
+  "/sources/shimada-yosansho-r8/R8yosansetumeisho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.shimada.shizuoka.jp/gyosei-docs/886621296.html",
+    "license": "本サイトに掲載している文章、画像などの著作物は、島田市または原著作者に帰属します。権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。本サイトのコンテンツを引用する場合は、広報課までお問い合わせください。",
+    "target": "page"
+  },
+  "/sources/shimada-yosansho-r7/0331setsumeisho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.shimada.shizuoka.jp/gyosei-docs/844971033.html",
+    "license": "本サイトに掲載している文章、画像などの著作物は、島田市または原著作者に帰属します。権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。本サイトのコンテンツを引用する場合は、広報課までお問い合わせください。",
+    "target": "page"
+  },
+  "/sources/shimada-yosansho-r6/yosannsetumeisyo1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.shimada.shizuoka.jp/gyosei-docs/789322261.html",
+    "license": "本サイトに掲載している文章、画像などの著作物は、島田市または原著作者に帰属します。権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。本サイトのコンテンツを引用する場合は、広報課までお問い合わせください。",
+    "target": "page"
+  },
+  "/sources/shimada-yosansho-r5/2R5yosanshosetsumeisho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.shimada.shizuoka.jp/gyosei-docs/r5tousyoyosann.html",
+    "license": "本サイトに掲載している文章、画像などの著作物は、島田市または原著作者に帰属します。権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。本サイトのコンテンツを引用する場合は、広報課までお問い合わせください。",
+    "target": "page"
+  },
+  "/sources/shimada-yosansho-r4/2R04yosansyosetumeisyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.shimada.shizuoka.jp/gyosei-docs/r4tousyoyosann.html",
+    "license": "本サイトに掲載している文章、画像などの著作物は、島田市または原著作者に帰属します。権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。本サイトのコンテンツを引用する場合は、広報課までお問い合わせください。",
+    "target": "page"
+  },
+  "/sources/shimada-yosansho-r3/R3yosansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.shimada.shizuoka.jp/gyosei-docs/r3tousyoyosan.html",
+    "license": "本サイトに掲載している文章、画像などの著作物は、島田市または原著作者に帰属します。権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。本サイトのコンテンツを引用する場合は、広報課までお問い合わせください。",
+    "target": "page"
+  },
+  "/sources/shimada-yosansho-r2/_____.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.shimada.shizuoka.jp/gyosei-docs/r2tousyoyosan.html",
+    "license": "本サイトに掲載している文章、画像などの著作物は、島田市または原著作者に帰属します。権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。本サイトのコンテンツを引用する場合は、広報課までお問い合わせください。",
+    "target": "page"
+  },
+  "/sources/nisshin-yosansho-r8/R8ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nisshin.lg.jp/material/files/group/172/R8ippan.pdf",
+    "license": "日進市公式Webサイトに掲載している個々の情報（文章、写真、イラストなど）に関する著作権は、原則として日進市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。日進市公式Webサイトは利用目的を問わず自由に閲覧していただくことが可能ですが、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、日進市公式Webサイト内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "file"
+  },
+  "/sources/nisshin-yosansho-r7/R7ippan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nisshin.lg.jp/material/files/group/172/R7ippan.pdf",
+    "license": "日進市公式Webサイトに掲載している個々の情報（文章、写真、イラストなど）に関する著作権は、原則として日進市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。日進市公式Webサイトは利用目的を問わず自由に閲覧していただくことが可能ですが、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、日進市公式Webサイト内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "file"
+  },
+  "/sources/nisshin-yosansho-r6/R6yosan.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nisshin.lg.jp/material/files/group/173/R6yosan.pdf",
+    "license": "日進市公式Webサイトに掲載している個々の情報（文章、写真、イラストなど）に関する著作権は、原則として日進市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。日進市公式Webサイトは利用目的を問わず自由に閲覧していただくことが可能ですが、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、日進市公式Webサイト内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "file"
+  },
+  "/sources/nisshin-yosansho-r5/R5tousyoyosansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nisshin.lg.jp/material/files/group/172/R5tousyoyosansyo.pdf",
+    "license": "日進市公式Webサイトに掲載している個々の情報（文章、写真、イラストなど）に関する著作権は、原則として日進市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。日進市公式Webサイトは利用目的を問わず自由に閲覧していただくことが可能ですが、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、日進市公式Webサイト内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "file"
+  },
+  "/sources/nisshin-yosansho-r4/R4touyoyosannsyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nisshin.lg.jp/material/files/group/173/R4touyoyosannsyo.pdf",
+    "license": "日進市公式Webサイトに掲載している個々の情報（文章、写真、イラストなど）に関する著作権は、原則として日進市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。日進市公式Webサイトは利用目的を問わず自由に閲覧していただくことが可能ですが、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、日進市公式Webサイト内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "file"
+  },
+  "/sources/nisshin-yosansho-r3/R3_yosansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nisshin.lg.jp/material/files/group/173/R3_yosansyo.pdf",
+    "license": "日進市公式Webサイトに掲載している個々の情報（文章、写真、イラストなど）に関する著作権は、原則として日進市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。日進市公式Webサイトは利用目的を問わず自由に閲覧していただくことが可能ですが、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、日進市公式Webサイト内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "file"
+  },
+  "/sources/nisshin-yosan-gaiyou-r2/r2toushoyosangaiyou.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nisshin.lg.jp/material/files/group/18/r2toushoyosangaiyou.pdf",
+    "license": "日進市公式Webサイトに掲載している個々の情報（文章、写真、イラストなど）に関する著作権は、原則として日進市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。日進市公式Webサイトは利用目的を問わず自由に閲覧していただくことが可能ですが、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、日進市公式Webサイト内の各ページに特段の定めがある場合には、その取り扱いが優先されます。",
+    "target": "file"
+  },
+  "/sources/sakata-yosansho-r8/R8_tosho_ippan_yosansho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakata.lg.jp/shisei/zaisei/zaisei0220250905.html",
+    "license": "酒田市ホームページに掲載されている個々の情報（文書、写真、イラスト等）に関する諸権利は、著作権法によって保護されています。これらの情報について、著作権法で認められた場合を除き、複製、転用をすることはできません。",
+    "target": "page"
+  },
+  "/sources/sakata-yosansho-r7/R7_tosho_ippan_yosansho.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakata.lg.jp/shisei/zaisei/yosan_R07.html",
+    "license": "酒田市ホームページに掲載されている個々の情報（文書、写真、イラスト等）に関する諸権利は、著作権法によって保護されています。これらの情報について、著作権法で認められた場合を除き、複製、転用をすることはできません。",
+    "target": "page"
+  },
+  "/sources/sakata-yosansho-r6/R06_ippann_yosansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakata.lg.jp/shisei/zaisei/yosann_R06.html",
+    "license": "酒田市ホームページに掲載されている個々の情報（文書、写真、イラスト等）に関する諸権利は、著作権法によって保護されています。これらの情報について、著作権法で認められた場合を除き、複製、転用をすることはできません。",
+    "target": "page"
+  },
+  "/sources/sakata-yosansho-r5/R5_yosannsyo_ippann02.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakata.lg.jp/shisei/zaisei/yosan.html",
+    "license": "酒田市ホームページに掲載されている個々の情報（文書、写真、イラスト等）に関する諸権利は、著作権法によって保護されています。これらの情報について、著作権法で認められた場合を除き、複製、転用をすることはできません。",
+    "target": "page"
+  },
+  "/sources/sakata-yosansho-r4/R04_yosannsyo_ippann02.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakata.lg.jp/shisei/zaisei/zaisei022023042711.html",
+    "license": "酒田市ホームページに掲載されている個々の情報（文書、写真、イラスト等）に関する諸権利は、著作権法によって保護されています。これらの情報について、著作権法で認められた場合を除き、複製、転用をすることはできません。",
+    "target": "page"
+  },
+  "/sources/sakata-yosansho-r3/R03_yosansyo.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sakata.lg.jp/shisei/zaisei/yosan_R3nendo.html",
+    "license": "酒田市ホームページに掲載されている個々の情報（文書、写真、イラスト等）に関する諸権利は、著作権法によって保護されています。これらの情報について、著作権法で認められた場合を除き、複製、転用をすることはできません。",
+    "target": "page"
+  },
+  "/sources/ashiya-yosansho-r8/08yosansetsumeisho_ippankaikei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ashiya.lg.jp/zaisei/documents/08yosansetsumeisho_ippankaikei.pdf",
+    "license": "「芦屋市公式ホームページ」に掲載されている個々の情報（文字、写真、イラスト等）は著作権の対象となっています。また、「芦屋市ホームページ」全体も編集著作物として、著作権の対象となっています。著作権は日本国著作権法及び国際条約により保護されています。 当ホームページの内容の全部または一部については、適宜の方法により出所を明示することにより、引用・転載・複製を行なうことができますが、無断転載はご遠慮ください。なお、商用目的での複製はお断りしています。 当ホームページの内容の全部または一部について、芦屋市に無断で改変を行なうことはできません。",
+    "target": "file"
+  },
+  "/sources/ashiya-yosansho-r7/07yosansetsumeisho_ippankaikei.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ashiya.lg.jp/zaisei/documents/07yosansetsumeisho_ippankaikei.pdf",
+    "license": "「芦屋市公式ホームページ」に掲載されている個々の情報（文字、写真、イラスト等）は著作権の対象となっています。また、「芦屋市ホームページ」全体も編集著作物として、著作権の対象となっています。著作権は日本国著作権法及び国際条約により保護されています。 当ホームページの内容の全部または一部については、適宜の方法により出所を明示することにより、引用・転載・複製を行なうことができますが、無断転載はご遠慮ください。なお、商用目的での複製はお断りしています。 当ホームページの内容の全部または一部について、芦屋市に無断で改変を行なうことはできません。",
+    "target": "file"
+  },
+  "/sources/ashiya-yosansho-r2/02ippannkaikeiyosannsetumeisyo_1.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.ashiya.lg.jp/zaisei/documents/02ippannkaikeiyosannsetumeisyo_1.pdf",
+    "license": "「芦屋市公式ホームページ」に掲載されている個々の情報（文字、写真、イラスト等）は著作権の対象となっています。また、「芦屋市ホームページ」全体も編集著作物として、著作権の対象となっています。著作権は日本国著作権法及び国際条約により保護されています。 当ホームページの内容の全部または一部については、適宜の方法により出所を明示することにより、引用・転載・複製を行なうことができますが、無断転載はご遠慮ください。なお、商用目的での複製はお断りしています。 当ホームページの内容の全部または一部について、芦屋市に無断で改変を行なうことはできません。",
+    "target": "file"
+  },
   "/sources/yamanashi-ken-gikai-r8/kaihabetu_meibo.html": {
     "mode": "archive",
     "href": "https://web.archive.org/web/20260209231452id_/https://www.pref.yamanashi.jp/gikaisom/kaihabetu_meibo.html",

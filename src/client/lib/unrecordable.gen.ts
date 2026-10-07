@@ -818,6 +818,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
       }
     ]
   },
+  "282065": {
+    "budget": [
+      {
+        "fyLabel": "令和6年度・令和5年度・令和4年度・令和3年度",
+        "reason": "款別の前年度比較を載せた一般会計予算説明書が紙をスキャンした画像のPDFで、文字として取り出せない。令和3年度は議会で予算が修正されていて、文字の残る資料（予算資料・予算の概要）はどれも修正前の数字。",
+        "checkedOn": "2026-10-07"
+      }
+    ]
+  },
   "282103": {
     "budget": [
       {
@@ -1284,6 +1293,15 @@ export const UNRECORDABLE_BY_CODE: Record<string, Record<string, UnrecordableNot
         "fyLabel": "令和4年度",
         "reason": "当初予算資料はページを画像として貼り合わせたもので、文字の情報が入っていない。ウェブの保存記録（国立国会図書館・Internet Archive）の写しも同じファイルで、同じ年度の参考資料は款別の表に前年度の額が無く代わりにならない。",
         "checkedOn": "2026-09-25"
+      }
+    ]
+  },
+  "062049": {
+    "budget": [
+      {
+        "fyLabel": "令和2年度",
+        "reason": "一般会計予算書がウェブに掲載されていない。款別の前年度比較が載っている「当初予算資料」の表は3年度分を並べた表で、新しく設けられた款や廃止された款の古い年度の欄が空欄のため列が詰まり、既存パーサが前年度の列を取り違える。",
+        "checkedOn": "2026-10-07"
       }
     ]
   },
