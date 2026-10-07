@@ -161,7 +161,7 @@ export function prefCodeOf(prefName: string | null | undefined): string | null {
 
 // 未収録資料のリクエスト（リクエスト駆動の情報公開請求 — docs/data-strategy.md）。
 // 賛同が貯まったものから請求・収録する。台帳は GitHub Issues（ラベル: 資料リクエスト）
-const REPO = 'https://github.com/chan-shiro/budget-trace';
+const REPO = 'https://github.com/philosophy-house/budget-trace';
 /**
  * 資料リクエスト Issue の起票 URL。GitHub の issue form は URL クエリで
  * フィールド（id 一致）をプリフィルできるため、「どの画面の・何が・なぜ欲しいか」の
