@@ -1825,4 +1825,23 @@ export const UNRECORDABLE: UnrecordableRecord[] = [
     url: "https://www.city.saku.nagano.jp/shisei/zaisei/yosan/index.html",
     checkedOn: "2026-10-01", ref: "docs/data-sources.md §13-53",
   },
+  {
+    // 酒田市（062049）R2。R8〜R3 は収録済み（§13-55）。
+    code: "062049", name: "酒田市", dataset: "budget", fiscalYears: ["R2"],
+    categories: ["parser-unsupported"],
+    reason:
+      "一般会計予算書がウェブに掲載されていない。款別の前年度比較が載っている「当初予算資料」の表は3年度分を並べた表で、新しく設けられた款や廃止された款の古い年度の欄が空欄のため列が詰まり、既存パーサが前年度の列を取り違える。",
+    url: "https://www.city.sakata.lg.jp/shisei/zaisei/yosan_R2nendo.html",
+    checkedOn: "2026-10-07", ref: "docs/data-sources.md §13-55",
+  },
+  {
+    // 芦屋市（282065）R6〜R3。R8・R7・R2 は収録済み（§13-55）。
+    code: "282065", name: "芦屋市", dataset: "budget", fiscalYears: ["R6", "R5", "R4", "R3"],
+    categories: ["scanned-image"],
+    reason:
+      "款別の前年度比較を載せた一般会計予算説明書が紙をスキャンした画像のPDFで、文字として取り出せない。" +
+      "令和3年度は議会で予算が修正されていて、文字の残る資料（予算資料・予算の概要）はどれも修正前の数字。",
+    url: "https://www.city.ashiya.lg.jp/zaisei/kako_yosan.html",
+    checkedOn: "2026-10-07", ref: "docs/data-sources.md §13-55",
+  },
 ];

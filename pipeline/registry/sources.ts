@@ -238,6 +238,14 @@ const AZUMINO_LICENSE =
   "市ホームページに掲載している個々の情報（文章、画像、イラストなど）に関する諸権利は、原則として安曇野市に帰属します。市ホームページは、著作権法上認められた「私的使用のための複製」や「引用」などの場合を除き、無断で複製、転載、販売、貸与することはできません。また、市ホームページの内容の全部または一部について、無断で改変することもできません。";
 const TSUYAMA_LICENSE =
   "・津山市公式ホームページに掲載している内容(文章、写真、図、イラストなど)に関する著作権は、原則として津山市、または文章、画像などの提供者に帰属します。・津山市公式ホームページの内容について「私的使用のための複製」や「引用」など、著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、各ページに特段の定めがある場合には、その取り扱いが優先されます。・使用許諾は、各ページ内に記載された問い合わせ先に事前にご相談ください。";
+const SHIMADA_LICENSE =
+  "本サイトに掲載している文章、画像などの著作物は、島田市または原著作者に帰属します。権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。本サイトのコンテンツを引用する場合は、広報課までお問い合わせください。";
+const NISSHIN_LICENSE =
+  "日進市公式Webサイトに掲載している個々の情報（文章、写真、イラストなど）に関する著作権は、原則として日進市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。日進市公式Webサイトは利用目的を問わず自由に閲覧していただくことが可能ですが、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、日進市公式Webサイト内の各ページに特段の定めがある場合には、その取り扱いが優先されます。";
+const SAKATA_LICENSE =
+  "酒田市ホームページに掲載されている個々の情報（文書、写真、イラスト等）に関する諸権利は、著作権法によって保護されています。これらの情報について、著作権法で認められた場合を除き、複製、転用をすることはできません。";
+const ASHIYA_LICENSE =
+  "「芦屋市公式ホームページ」に掲載されている個々の情報（文字、写真、イラスト等）は著作権の対象となっています。また、「芦屋市ホームページ」全体も編集著作物として、著作権の対象となっています。著作権は日本国著作権法及び国際条約により保護されています。 当ホームページの内容の全部または一部については、適宜の方法により出所を明示することにより、引用・転載・複製を行なうことができますが、無断転載はご遠慮ください。なお、商用目的での複製はお断りしています。 当ホームページの内容の全部または一部について、芦屋市に無断で改変を行なうことはできません。";
 const KOGA_IBARAKI_LICENSE =
   "古河市ホームページに掲載している個々の情報（文章、写真、イラストなど）に関する著作権は、原則として古河市に帰属します。ただし、一部の画像等の著作権は、原著作者が所有しています。古河市ホームページは利用目的を問わず自由な閲覧が可能ですが、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。ただし、古河市ホームページ内の各ページに特段の定めがある場合には、その取り扱いが優先されます。";
 
@@ -23546,6 +23554,158 @@ export const SOURCES: SourceEntry[] = [
           }
         : {}),
     },
+  } satisfies SourceEntry)),
+
+  // 島田市（静岡県・団体コード 222097 ＝ 総務省 R6.json から実引き）。予算に関する説明書の「歳入歳出予算事項別明細書 １ 総括」。千円。歳入22款（R3 は番号なしの
+  //   `自動車取得税交付金 0 / 1` を加えて23行・R2 は23款）・歳出13款（款6 は島田市の款名「農林業費」）。見出し `歳入`／`歳出`・合計ラベルは既定。
+  //   R8・R7 は説明書が単独の PDF（R8 は表紙だけ ToUnicode 欠落・総括は正常）、R6 は説明書1（p.4 は印字だけの空白ページで歳出は p.5）、
+  //   R5〜R2 は予算書・説明書の合冊（約440ページ）で、後ろに特別会計の同型の総括が続く（最初の総括が一般会計）。年度ページの URL は不規則。
+  // ⚠ R2 の前年度列（H31）42,532,354 は議会修正後の当初（H31 は修正可決・年度ページに修正前と修正後の版が両方ある）。prevBasis は当初のまま。
+  // 前年度列は当初（R8→R2 の6リンクで款単位全一致）。骨格予算: R8〜R2 の施政方針と概要に「骨格」「肉付」0件。
+  // 総額突合: R6 当初 41,700,000 ÷ 総務省 R6 決算歳出 43,637,546 = 95.6%。
+  // ライセンス: 「サイトポリシー」（/gyosei-docs/sitepolicy.html・確認日 2026-10-07）＝要許可。⚠ 静岡県オープンデータカタログに同じ予算書の事項別明細書 CSV（CC BY・H28〜R5）が
+  //   あるが、及ぶのはカタログ上の CSV だけで市サイトの PDF には及ばない（license 欄に書かない）。
+  //   リンクは「原則としてトップページ（…）に対してリンクを張るようお願いします。」＝「原則として」で宛先をトップページに限る ⇒ `noDeepLink`（安曇野・筑西と同じ）。
+  // ⚠ 主な事業（総括・事業別概要書＝款項目の見出しの下に全事業・前年度つき・特別会計が続く）と事業報告（主要な施策の成果に関する報告書 R6〜R1）は別の巡（§13-55）。
+  ...([
+    ["R8", "9/6/6/6/1/5/_/R8yosansetumeisho.pdf", "886621296", 2, 3],
+    ["R7", "9/3/0/9/8/1/_/0331setsumeisho.pdf", "844971033", 4, 5],
+    ["R6", "8/8/7/2/7/1/_/yosannsetumeisyo1.pdf", "789322261", 3, 5],
+    ["R5", "7/2/7/9/5/6/_/2R5yosanshosetsumeisho.pdf", "r5tousyoyosann", 71, 73],
+    ["R4", "5/5/7/6/5/4/_/2R04yosansyosetumeisyo.pdf", "r4tousyoyosann", 67, 69],
+    ["R3", "5/5/6/3/8/6/_/R3yosansyo.pdf", "r3tousyoyosan", 69, 71],
+    ["R2", "3/9/9/3/9/2/_/_____.pdf", "r2tousyoyosan", 69, 71],
+  ] as const).map(([fy, path, page, rp, ep]) => ({
+    id: `shimada-yosansho-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 島田市予算に関する説明書（歳入歳出予算事項別明細書 総括）`,
+    publisher: "島田市",
+    url: `https://www.city.shimada.shizuoka.jp/fs/${path}`,
+    landingPage: `https://www.city.shimada.shizuoka.jp/gyosei-docs/${page}.html`,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "島田市（一般会計・団体コード222097）",
+    license: SHIMADA_LICENSE,
+    noDeepLink: true,
+    parser: "kofu-yosansho" as const,
+    parserOptions: { revenuePage: rp, expenditurePage: ep, revenueHeading: "歳入", expenditureHeading: "歳出" },
+  } satisfies SourceEntry)),
+
+  // 日進市（愛知県・団体コード 232301 ＝ 総務省 R6.json から実引き）。千円。歳入22款（R2 は廃止款を加えて23）・歳出14款。
+  //   R8〜R3: 「一般会計予算書及び予算説明書」の「歳入歳出予算事項別明細書 １ 総括」。歳入は2ページにまたがり（合計は2ページ目）、歳出は1ページ。
+  //   R6〜R3 の PDF は一般・特別・企業会計の合冊（約440ページ）で、p.245 以降に特別会計の同じ見出しの総括が6本ある（ページを誤ると Σ で止まる）。
+  //   R2: 予算書の総括はスキャン画像（テキスト層なし）⇒ 「当初予算の概要」の歳入款別一覧表 p.6・歳出款別一覧表 p.10。
+  //   ⚠ R2 の見出しを「歳出款別一覧表」にすると、ページ冒頭の「４ 歳出の状況（一般会計）」が款1 に付く（`歳出の状況（一般会計）議会費`・Σ 差0 のまま）⇒ 題の行を見出しにする。
+  // 前年度列は当初（R8→R2 の6リンクで款単位全一致・R2 の前年度 25,553,000 は H31 概要の一般会計と一致）。骨格予算: 概要・予算書・編成方針に「骨格」「肉付」0件。
+  // 総額突合: R6 当初 33,635,000 ÷ 総務省 R6 決算歳出 34,193,324 = 98.4%。
+  // ライセンス: 「著作権」（/gaiyo/copyright.html・確認日 2026-10-07）＝要許可。オープンデータ（BODIK・CC BY 4.0）331件に予算・財政は0件。
+  //   リンクポリシーのページは無い ⇒ `noDeepLink` は立てない。
+  // ⚠ 主な事業（概要の「主要事業一覧」・R8 は第6次実施計画の表に様式が変わる）と事業報告（自治行政の実績・事務事業評価）は別の巡（§13-55）。
+  ...([
+    ["R8", "172/R8ippan.pdf", "reiwa8nendoyosan/17923.html", 18],
+    ["R7", "172/R7ippan.pdf", "reiwa7nendoyosan/16448.html", 16],
+    ["R6", "173/R6yosan.pdf", "reiwa6nendoyosan/15781.html", 18],
+    ["R5", "172/R5tousyoyosansyo.pdf", "reiwa5nendoyosan/13641.html", 18],
+    ["R4", "173/R4touyoyosannsyo.pdf", "reiwa4nendoyosan/12910.html", 18],
+    ["R3", "173/R3_yosansyo.pdf", "reiwa3nendoyosan/11372.html", 20],
+  ] as const).map(([fy, file, landing, rp]) => ({
+    id: `nisshin-yosansho-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 日進市予算書及び予算説明書（一般会計 歳入歳出予算事項別明細書 総括）`,
+    publisher: "日進市",
+    url: `https://www.city.nisshin.lg.jp/material/files/group/${file}`,
+    landingPage: `https://www.city.nisshin.lg.jp/department/soumu/zaimu/3/5/yosan/${landing}`,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "日進市（一般会計・団体コード232301）",
+    license: NISSHIN_LICENSE,
+    parser: "kofu-yosansho" as const,
+    parserOptions: { revenuePages: { from: rp, to: rp + 1 }, expenditurePage: rp + 2, revenueHeading: "総括", expenditureHeading: "歳出" },
+  } satisfies SourceEntry)),
+  {
+    id: "nisshin-yosan-gaiyou-r2",
+    title: "令和2年度 日進市当初予算の概要（歳入款別一覧表・歳出款別一覧表）",
+    publisher: "日進市",
+    url: "https://www.city.nisshin.lg.jp/material/files/group/18/r2toushoyosangaiyou.pdf",
+    landingPage: "https://www.city.nisshin.lg.jp/department/soumu/zaimu/3/5/yosan/reiwa2nendoyosan/9589.html",
+    kind: "pdf",
+    fiscalYear: "R2",
+    scope: "日進市（一般会計・団体コード232301）",
+    license: NISSHIN_LICENSE,
+    parser: "kofu-yosansho",
+    parserOptions: {
+      revenuePage: 6,
+      expenditurePage: 10,
+      revenueHeading: "歳入の状況（一般会計）",
+      expenditureHeading: "歳出の状況（一般会計）",
+      revenueTotalLabel: "合計",
+      expenditureTotalLabel: "合計",
+    },
+  } satisfies SourceEntry,
+
+  // 酒田市（山形県・団体コード 062049 ＝ 総務省 R6.json から実引き）。一般会計予算書の「歳入歳出予算事項別明細書 １ 総括」。千円。歳入22款・歳出13款（R8〜R3 で不変）。
+  //   物理ページ: R8〜R5 は 10/11、R4 は A4 横の2面付けで 8/9（p.8 は左に「第４表 地方債」・右に総括（歳入）⇒ `revenueCropX {440,842}`。無いと17款で Σ が割れる）、R3 は 18/19。
+  //   年度ページの URL に規則は無い（R8 `zaisei0220250905`・R7 `yosan_R07`・R6 `yosann_R06`・R5 `yosan`・R4 `zaisei022023042711`・R3 `yosan_R3nendo`）。
+  // ⚠ R2 は予算書がウェブに一度も無く、当初予算資料の3か年表は空欄セルで列が詰まって読めない ⇒ unrecordable（§13-55）。
+  // 前年度列は当初（R8→R3 の5リンクで款単位全一致・予算資料の列見出しも「当初予算額」）。骨格予算: 予算書・予算資料に「骨格」0件。
+  // 総額突合: R6 当初 56,250,000 ÷ 総務省 R6 決算歳出 60,297,157 = 93.3%（R6 7月大雨の災害復旧費の補正が大きい）。
+  // ライセンス: 「このサイトについて」（/shisei/kouho/homepage/saitonituitekoho.html・確認日 2026-10-07）「…著作権法で認められた場合を除き、複製、転用をすることはできません。」
+  //   ＝要許可（読点の `複製、転用` を判定器の語彙に足した・§13-55）。オープンデータ（CC BY 4.0）の財政は当初予算の総額の推移だけ（款別は無い）。
+  //   リンクは「酒田市のリンクをする場合は原則として市トップページ（…）としてください。」＝指示形 ⇒ `noDeepLink`。
+  // ⚠ 主な事業（予算資料の事業カード・款項目と成果指標・特別会計のカードが混ざる）と事業報告（主要な施策の成果報告書 R1〜R7・同じカード様式）は別の巡（§13-55）。
+  ...([
+    ["R8", "zaisei0220250905", "R8_tosho_ippan_yosansho.pdf", 10],
+    ["R7", "yosan_R07", "R7_tosho_ippan_yosansho.pdf", 10],
+    ["R6", "yosann_R06", "R06_ippann_yosansyo.pdf", 10],
+    ["R5", "yosan", "R5_yosannsyo_ippann02.pdf", 10],
+    ["R4", "zaisei022023042711", "R04_yosannsyo_ippann02.pdf", 8],
+    ["R3", "yosan_R3nendo", "R03_yosansyo.pdf", 18],
+  ] as const).map(([fy, page, file, rp]) => ({
+    id: `sakata-yosansho-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 酒田市一般会計予算書（歳入歳出予算事項別明細書 総括）`,
+    publisher: "酒田市",
+    url: `https://www.city.sakata.lg.jp/shisei/zaisei/${page}.files/${file}`,
+    landingPage: `https://www.city.sakata.lg.jp/shisei/zaisei/${page}.html`,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "酒田市（一般会計・団体コード062049）",
+    license: SAKATA_LICENSE,
+    noDeepLink: true,
+    parser: "kofu-yosansho" as const,
+    parserOptions: {
+      revenuePage: rp,
+      expenditurePage: rp + 1,
+      revenueHeading: "（歳入）",
+      expenditureHeading: "（歳出）",
+      ...(fy === "R4" ? { revenueCropX: { from: 440, to: 842 } } : {}),
+    },
+  } satisfies SourceEntry)),
+
+  // 芦屋市（兵庫県・団体コード 282065 ＝ 総務省 R6.json から実引き。福岡県芦屋町 403814 と取り違えない）。「一般会計予算説明書」の事項別明細書の総括表。千円。
+  //   歳入22款（R2 は廃止款 款13 自動車取得税交付金を含め23）・歳出14款。款番号は欠番あり（歳入 01〜12・20〜29、歳出 01〜13・30。説明書 p.6「順不同のもの及び欠番もある」）。
+  //   R8・R7・R2 とも歳入 p.9・歳出 p.10、見出し `（歳 入）`／`（歳 出）`・合計ラベルは既定。
+  // ⚠ R8 の款08 環境性能割交付金は当年度セルが空欄（`08 環境性能割交付金 0.0 24,000 0.1 △ 24,000 △ 100.0`）。款番号つきの空欄型は第53巡のパーサ改修で読める（§13-55）。
+  // ⚠ R6〜R3 は説明書がスキャン画像（テキスト層なし）⇒ unrecordable。R3 は議会で修正可決（当初案 43,130,000 から 42,393,243・繰入金の減額）で、テキストの残る R3 資料は修正前。
+  //   R4 を収録するなら前年度列は修正後（R4 予算資料に「※前年度予算額は，修正可決後の数値に基づいています。」）。
+  // 前年度列は当初（R8←R7 は款単位全一致・R7 の前年度は R6 予算資料の本年度列と全款一致）。骨格予算: テキストのある資料に「骨格」「肉付」0件。
+  // 総額突合: R6 当初 46,964,000 ÷ 総務省 R6 決算歳出 46,317,055 = 101.4%（R7 の前年度列から）。
+  // ライセンス: 「サイトポリシー」（/about_site/site_policy.html・確認日 2026-10-07）＝要許可（「無断転載はご遠慮ください」「商用目的での複製はお断り」）。
+  //   リンクは「悪意によるものを除き、フリーです。リンクされる場合は、秘書・広報課までご一報ください。」⇒ `noDeepLink` は立てない。
+  // ⚠ 主な事業（「予算の概要」の主な事業・1事業1ページ・款項目コードつき）と事業報告（事務事業評価票・主要施策の成果等説明書 R5〜R7）は別の巡（§13-55）。
+  ...([
+    ["R8", "08yosansetsumeisho_ippankaikei.pdf", "r08_yosanngaiyou.html"],
+    ["R7", "07yosansetsumeisho_ippankaikei.pdf", "r07_yosanngaiyou.html"],
+    ["R2", "02ippannkaikeiyosannsetumeisyo_1.pdf", "r02_yosan.html"],
+  ] as const).map(([fy, file, landing]) => ({
+    id: `ashiya-yosansho-${fy.toLowerCase()}`,
+    title: `${eraYear(fy)}年度 芦屋市一般会計予算説明書（歳入歳出予算事項別明細書 総括表）`,
+    publisher: "芦屋市",
+    url: `https://www.city.ashiya.lg.jp/zaisei/documents/${file}`,
+    landingPage: `https://www.city.ashiya.lg.jp/zaisei/${landing}`,
+    kind: "pdf" as const,
+    fiscalYear: fy,
+    scope: "芦屋市（兵庫県・一般会計・団体コード282065）",
+    license: ASHIYA_LICENSE,
+    parser: "kofu-yosansho" as const,
+    parserOptions: { revenuePage: 9, expenditurePage: 10, revenueHeading: "（歳入）", expenditureHeading: "（歳出）" },
   } satisfies SourceEntry)),
 
   {

@@ -13,14 +13,14 @@ export interface RoadmapItem {
 
 export const ROADMAP_PROGRESS = {
   "fullCount": 1,
-  "budgetCount": 326,
+  "budgetCount": 330,
   "muniCount": 1741,
   "prefCount": 47,
-  "sourceCount": 2482,
-  "fileCount": 3919,
-  "archivedCount": 2308,
+  "sourceCount": 2505,
+  "fileCount": 3942,
+  "archivedCount": 2329,
   "licenseOpen": 103,
-  "licensePermission": 2155,
+  "licensePermission": 2178,
   "licenseUnverified": 224,
   "kessanRange": "R2〜R6（5年度）",
   "kofuBudgetRange": "R2〜R8（7年度）",
@@ -963,6 +963,12 @@ export const ROADMAP_PROGRESS = {
       "range": "R2〜R8（7年度）"
     },
     {
+      "name": "島田市",
+      "code": "222097",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
       "name": "掛川市",
       "code": "222135",
       "years": 7,
@@ -989,6 +995,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "東海市",
       "code": "232220",
+      "years": 7,
+      "range": "R2〜R8（7年度）"
+    },
+    {
+      "name": "日進市",
+      "code": "232301",
       "years": 7,
       "range": "R2〜R8（7年度）"
     },
@@ -1175,6 +1187,12 @@ export const ROADMAP_PROGRESS = {
     {
       "name": "八戸市",
       "code": "022039",
+      "years": 6,
+      "range": "R3〜R8（6年度）"
+    },
+    {
+      "name": "酒田市",
+      "code": "062049",
       "years": 6,
       "range": "R3〜R8（6年度）"
     },
@@ -1555,6 +1573,12 @@ export const ROADMAP_PROGRESS = {
       "code": "281000",
       "years": 3,
       "range": "R6〜R8（3年度）"
+    },
+    {
+      "name": "芦屋市",
+      "code": "282065",
+      "years": 3,
+      "range": "R2〜R8（3年度）"
     },
     {
       "name": "山形市",
