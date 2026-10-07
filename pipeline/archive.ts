@@ -26,7 +26,7 @@ import { MIB, VERIFIABLE_RE, classifyVerify } from "./lib/wayback";
 import { archivesLedgerSchema, type ArchiveEntry } from "./types";
 
 const ARCHIVES_PATH = join(DATA_DIR, "archives.json");
-const UA = "budget-trace archive step (github.com/chan-shiro/budget-trace)";
+const UA = "budget-trace archive step (github.com/philosophy-house/budget-trace)";
 const SAVE_INTERVAL_MS = 6_000; // SPN への連続要求の間隔
 const POLL_TRIES = 10;
 const POLL_INTERVAL_MS = 6_000;
