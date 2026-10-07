@@ -118,7 +118,7 @@ gh pr merge <n> --squash
 ```
 
 マージ後は**本番デプロイの成否を見届けるまでが作業**:
-`gh api repos/chan-shiro/budget-trace/commits/$(git rev-parse origin/main)/status`。
+`gh api repos/philosophy-house/budget-trace/commits/$(git rev-parse origin/main)/status`。
 失敗したら次の巡はその修復（新しい仕事を始めない）。
 
 ## 4. 巡の終わり方

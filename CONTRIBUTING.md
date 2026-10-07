@@ -33,7 +33,7 @@ brew install poppler   # pdftotext
 
 ## タスクの拾い方
 
-- **[GitHub Issues](https://github.com/chan-shiro/budget-trace/issues) がタスク表の唯一の正**。
+- **[GitHub Issues](https://github.com/philosophy-house/budget-trace/issues) がタスク表の唯一の正**。
   ピン留めの3件が優先順。各 issue は背景・作法・参照先つきで、単独で拾えるように書いてある
 - ラベルの意味:
   - `収録` — 一次資料の収録（`/ingest-source` の手続きで完結）
