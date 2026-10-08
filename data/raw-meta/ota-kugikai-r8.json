@@ -1,0 +1,33 @@
+{
+  "sourceId": "ota-kugikai-r8",
+  "files": [
+    {
+      "filename": "iinkaimeibo.html",
+      "sha256": "40a15011787338841885911e3a13b3546981ef47e5a2b0d077eab9dde79851ae",
+      "bytes": 21844,
+      "fetchedAt": "2026-10-08T16:05:18.442Z",
+      "fetchedFrom": "https://web.archive.org/web/20260215131259id_/https://www.city.ota.tokyo.jp/gikai/shoukai/iinkaimeibo.html"
+    },
+    {
+      "filename": "r0801teirei_kuchogian.html",
+      "sha256": "1792fa5345d2e2c884933cb5a81f4a6d001dc2d5c3ff5e3e2bde987c2eeb0ae2",
+      "bytes": 25253,
+      "fetchedAt": "2026-10-08T16:05:18.442Z",
+      "fetchedFrom": "https://www.city.ota.tokyo.jp/gikai/kugikai_katsudou/honkaigi/r_8/1teirei/r0801teirei_kuchogian.html"
+    },
+    {
+      "filename": "r0801teirei_taido.html",
+      "sha256": "bec8777d544dd9c86a5cac9c67489fa84ae993d6915651435f7276493c4c3381",
+      "bytes": 31132,
+      "fetchedAt": "2026-10-08T16:05:18.442Z",
+      "fetchedFrom": "https://www.city.ota.tokyo.jp/gikai/kugikai_katsudou/honkaigi/r_8/1teirei/r0801teirei_taido.html"
+    },
+    {
+      "filename": "VoiJson.exe_ACT_200_FINO_4460_CHARSET_UTF8",
+      "sha256": "fe793e2694a20dbc92bd64781819788c03883cd9a0f02aa90eeb08b398ef1f76",
+      "bytes": 183537,
+      "fetchedAt": "2026-10-08T16:05:18.443Z",
+      "fetchedFrom": "https://www.gikai-ota-tokyo.jp/voices2/cgi/VoiJson.exe?ACT=200&FINO=4460&CHARSET=UTF8"
+    }
+  ]
+}

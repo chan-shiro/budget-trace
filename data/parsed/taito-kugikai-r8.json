@@ -1,0 +1,167 @@
+{
+  "docType": "council-composition",
+  "sourceId": "taito-kugikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.1",
+  "parsedAt": "2026-10-08T16:05:20.783Z",
+  "fiscalYear": "R8",
+  "body": "台東区議会",
+  "seats": 31,
+  "asOf": "2026-01-27",
+  "teisu": 32,
+  "factions": [
+    {
+      "name": "台東区議会自由民主党",
+      "seats": 11,
+      "isIndependent": false,
+      "members": [
+        "石塚猛",
+        "拝野健",
+        "望月元美",
+        "岡田勇一郎",
+        "石原喬子",
+        "太田雅久",
+        "髙森喜美子",
+        "石川義弘",
+        "松村智成",
+        "田中宏篤",
+        "大浦美鈴"
+      ],
+      "locator": {
+        "file": "kaihabetsu.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "台東区議会公明党",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "寺田晃",
+        "中澤史夫",
+        "松尾伸子",
+        "弓矢潤",
+        "小坂義久"
+      ],
+      "locator": {
+        "file": "kaihabetsu.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "つなぐプロジェクト（無所属・都ファ・国民）",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "早川太郎",
+        "本目さよ",
+        "中村謙治郎",
+        "大貫はなこ",
+        "青鹿公男"
+      ],
+      "locator": {
+        "file": "kaihabetsu.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "台東むすびの会（維新・参政・無所属）",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "冨永龍司",
+        "高橋えりか",
+        "村上浩一郎",
+        "吉岡誠司"
+      ],
+      "locator": {
+        "file": "kaihabetsu.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "れいわ立憲にじいろの会",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "青柳雅之",
+        "中嶋恵",
+        "風澤純子"
+      ],
+      "locator": {
+        "file": "kaihabetsu.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "日本共産党台東区議団",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "秋間洋",
+        "鈴木昇",
+        "伊藤延子"
+      ],
+      "locator": {
+        "file": "kaihabetsu.html",
+        "row": 6
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第5号議案",
+    "billName": "令和8年度東京都台東区一般会計予算",
+    "sessionLabel": "令和8年第1回定例会",
+    "decidedDate": "2026-03-26",
+    "decidedDateLabel": "令和8年3月26日",
+    "result": "原案可決（賛成多数）",
+    "locator": {
+      "file": "08-dai1kai-kekka.html"
+    }
+  },
+  "rosterTitle": "議員名簿（会派別）（更新日 2026年1月27日・2026-03-13 の魚拓）",
+  "resultTitle": "令和8年第1回定例会の会議結果",
+  "votes": {
+    "basis": "faction",
+    "sourceTitle": "たいとう区議会だより No.249（令和8年4月20日）第１回定例会 議案の概要と審議結果",
+    "sourceFile": "No249_01-08.pdf",
+    "columns": [
+      {
+        "label": "自由民主党",
+        "faction": "台東区議会自由民主党",
+        "stance": "賛成"
+      },
+      {
+        "label": "公明党",
+        "faction": "台東区議会公明党",
+        "stance": "賛成"
+      },
+      {
+        "label": "つなぐプロジェクト",
+        "faction": "つなぐプロジェクト（無所属・都ファ・国民）",
+        "stance": "賛成"
+      },
+      {
+        "label": "台東むすびの会",
+        "faction": "台東むすびの会（維新・参政・無所属）",
+        "stance": "賛成"
+      },
+      {
+        "label": "れいわ立憲にじいろの会",
+        "faction": "れいわ立憲にじいろの会",
+        "stance": "賛成"
+      },
+      {
+        "label": "日本共産党",
+        "faction": "日本共産党台東区議団",
+        "stance": "反対"
+      },
+      {
+        "label": "石川義弘",
+        "faction": "台東区議会自由民主党",
+        "member": "石川義弘",
+        "stance": "議長"
+      }
+    ]
+  }
+}

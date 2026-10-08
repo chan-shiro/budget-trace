@@ -1,0 +1,220 @@
+{
+  "docType": "council-composition",
+  "sourceId": "nerima-kugikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.1",
+  "parsedAt": "2026-10-08T16:05:30.267Z",
+  "fiscalYear": "R8",
+  "body": "練馬区議会",
+  "seats": 50,
+  "asOf": "2025-07-01",
+  "teisu": 50,
+  "factions": [
+    {
+      "name": "練馬区議会自由民主党",
+      "seats": 15,
+      "isIndependent": false,
+      "members": [
+        "かしままさお",
+        "小泉純二",
+        "かしわざき強",
+        "かわすみ雅彦",
+        "つじ誠心",
+        "笠原ともこ",
+        "小林みつぐ",
+        "藤井たかし",
+        "福沢剛",
+        "上野ひろみ",
+        "田中よしゆき",
+        "しばたさちこ",
+        "高橋しんご",
+        "佐藤力",
+        "浜田ゆきひろ"
+      ],
+      "locator": {
+        "file": "070609kaiha.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "練馬区議会公明党",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "酒井妙子",
+        "西野こういち",
+        "星野あつし",
+        "佐藤じゅんや",
+        "吉田ゆりこ",
+        "柳沢よしみ",
+        "鈴木たかし"
+      ],
+      "locator": {
+        "file": "070609kaiha.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "練馬区議会無所属・都民ファーストの会・国民民主党・ウェルビーイングな会",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "井上勇一郎",
+        "石黒たつお",
+        "のださちこ",
+        "水上明子",
+        "山田かずよし",
+        "倉田れいか",
+        "西田まちこ"
+      ],
+      "locator": {
+        "file": "070609kaiha.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "日本共産党練馬区議団",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "やくし辰哉",
+        "有馬豊",
+        "島田拓",
+        "のむら説",
+        "小松あゆみ"
+      ],
+      "locator": {
+        "file": "070609kaiha.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "練馬区議会立憲民主党",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "富田けんじ",
+        "たかはし純",
+        "沢村信太郎",
+        "渡辺てる子",
+        "石森愛"
+      ],
+      "locator": {
+        "file": "070609kaiha.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "インクルーシブな練馬をめざす会",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "かとうぎ桜子",
+        "岩瀬たけし",
+        "高口ようこ"
+      ],
+      "locator": {
+        "file": "070609kaiha.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "生活者ネットワーク",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "山崎まりも",
+        "やない克子"
+      ],
+      "locator": {
+        "file": "070609kaiha.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "つながる市民・練馬",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "池尻成二"
+      ],
+      "locator": {
+        "file": "070609kaiha.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "練馬区議会福祉ループ",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "白石けい子"
+      ],
+      "locator": {
+        "file": "070609kaiha.html",
+        "row": 9
+      }
+    },
+    {
+      "name": "練馬区議会みどりの風",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "しもだ玲"
+      ],
+      "locator": {
+        "file": "070609kaiha.html",
+        "row": 10
+      }
+    },
+    {
+      "name": "練馬区議会参政党",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "ももかわ一郎"
+      ],
+      "locator": {
+        "file": "070609kaiha.html",
+        "row": 11
+      }
+    },
+    {
+      "name": "れいわ新選組練馬",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "山口あきこ"
+      ],
+      "locator": {
+        "file": "070609kaiha.html",
+        "row": 12
+      }
+    },
+    {
+      "name": "練馬区議会日本維新の会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "吹田ひでとし"
+      ],
+      "locator": {
+        "file": "070609kaiha.html",
+        "row": 13
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第1号",
+    "billName": "令和8年度練馬区一般会計予算",
+    "sessionLabel": "令和8年第一回定例会",
+    "decidedDate": "2026-03-13",
+    "decidedDateLabel": "令和8年3月13日",
+    "result": "可決",
+    "locator": {
+      "file": "081giketugian.html"
+    }
+  },
+  "rosterTitle": "会派別名簿（更新日 2025年7月1日）",
+  "resultTitle": "議決された議案（令和8年第一回定例会）"
+}

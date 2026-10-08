@@ -1,0 +1,26 @@
+{
+  "sourceId": "suginami-kugikai-r8",
+  "files": [
+    {
+      "filename": "1teigiankekka.pdf",
+      "sha256": "609e2e94d5718e109e27389a947f852f6fc569a00641b487b518b890865c110f",
+      "bytes": 359007,
+      "fetchedAt": "2026-10-08T16:05:18.453Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/documents/24929/1teigiankekka.pdf"
+    },
+    {
+      "filename": "24929.html",
+      "sha256": "a885fdab1af5d8b2cbab19d374a8c009a5d178a58a63c58d9cff53c4edf72ad3",
+      "bytes": 26741,
+      "fetchedAt": "2026-10-08T16:05:18.454Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/kugikai/s117/24929.html"
+    },
+    {
+      "filename": "4101.html",
+      "sha256": "21ba1226863662485af94e2393bf7c05cd774a3ab6a2379a1ea21099ea87740f",
+      "bytes": 18212,
+      "fetchedAt": "2026-10-08T16:05:18.454Z",
+      "fetchedFrom": "https://www.city.suginami.tokyo.jp/kugikai/s117/4101.html"
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "docType": "council-composition",
+  "sourceId": "adachi-kugikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.1",
+  "parsedAt": "2026-10-08T16:05:30.587Z",
+  "fiscalYear": "R8",
+  "body": "足立区議会",
+  "seats": 41,
+  "asOf": "2026-03-24",
+  "factions": [
+    {
+      "name": "足立区議会自由民主党",
+      "seats": 12,
+      "isIndependent": false,
+      "members": [
+        "白石正輝",
+        "吉岡茂",
+        "渡辺ひであき",
+        "かねだ正",
+        "鹿浜昭",
+        "工藤てつや",
+        "ただ太郎",
+        "伊藤のぶゆき",
+        "くじらい実",
+        "杉本ゆう",
+        "しぶや竜一",
+        "岡田将和"
+      ],
+      "locator": {
+        "file": "Kg112_R8.1T0324.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "足立区議会公明党",
+      "seats": 12,
+      "isIndependent": false,
+      "members": [
+        "小泉ひろし",
+        "たがた直昭",
+        "いいくら昭二",
+        "長井まさのり",
+        "岡安たかし",
+        "くぼた美幸",
+        "佐々木まさひこ",
+        "吉田こうじ",
+        "さの智恵子",
+        "石毛かずあき",
+        "水野あゆみ",
+        "太田せいいち"
+      ],
+      "locator": {
+        "file": "Kg112_R8.1T0324.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "日本共産党足立区議団",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "ぬかが和子",
+        "はたの昭彦",
+        "山中ちえ子",
+        "横田ゆう",
+        "小林ともよ",
+        "西の原ゆま"
+      ],
+      "locator": {
+        "file": "Kg112_R8.1T0324.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "是々非々の会（維新・参政・無所属・立憲）",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "おぐら修平",
+        "へんみ圭二",
+        "加地まさなお",
+        "富田けんたろう"
+      ],
+      "locator": {
+        "file": "Kg112_R8.1T0324.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "都民ファースト・無所属の会",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "中島こういちろう",
+        "佐藤あい",
+        "川村みこと"
+      ],
+      "locator": {
+        "file": "Kg112_R8.1T0324.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "れいわ新選組・市民派の会あだち",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "土屋のりこ",
+        "髙橋まゆみ"
+      ],
+      "locator": {
+        "file": "Kg112_R8.1T0324.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無会派（市川おさと）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "市川おさと"
+      ],
+      "locator": {
+        "file": "Kg112_R8.1T0324.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無会派（野沢てつや）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "野沢てつや"
+      ],
+      "locator": {
+        "file": "Kg112_R8.1T0324.pdf",
+        "page": 1
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第5号議案",
+    "billName": "令和8年度足立区一般会計予算",
+    "sessionLabel": "令和8年 第1回 定例会",
+    "decidedDate": "2026-03-24",
+    "decidedDateLabel": "令和8年3月24日",
+    "result": "原案可決",
+    "locator": {
+      "file": "g07_giketsu.asp_KWORD1_EXP_AND_KWORD2_BUNRUI_KAIGI_2026_02_19_2026_03_24_134_NENFROM_NENTO_KEKKA_SMODE_2_KENSU_100_Sflg_2.html"
+    }
+  },
+  "rosterTitle": "議案の審議結果など（令和８年第１回定例会）の会派別の列見出し",
+  "resultTitle": "議案の検索（令和8年 第1回 定例会）"
+}

@@ -1,0 +1,219 @@
+{
+  "docType": "council-composition",
+  "sourceId": "meguro-kugikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.1",
+  "parsedAt": "2026-10-08T16:05:22.293Z",
+  "fiscalYear": "R8",
+  "body": "目黒区議会",
+  "seats": 32,
+  "asOf": "2026-01-28",
+  "factions": [
+    {
+      "name": "自由民主党目黒区議団・区民の会",
+      "seats": 9,
+      "isIndependent": false,
+      "members": [
+        "鈴木まさし",
+        "おのせ康裕",
+        "岸大介",
+        "木村あきひろ",
+        "小林かなこ",
+        "佐藤昇",
+        "高島なおこ",
+        "田島けんじ",
+        "西村ちほ"
+      ],
+      "locator": {
+        "file": "kosei.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "めぐろの未来をつくる会（無所属・国民・維新）",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "竹村ゆうい",
+        "上田あや",
+        "かいでん和弘",
+        "松田哲也",
+        "山村まい",
+        "吉野正人"
+      ],
+      "locator": {
+        "file": "kosei.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "公明党目黒区議団",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "川原のぶあき",
+        "佐藤ゆたか",
+        "関けんいち",
+        "はまよう子",
+        "武藤まさひろ"
+      ],
+      "locator": {
+        "file": "kosei.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "立憲民主・目黒フォーラム",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "金井ひろし",
+        "後藤さちこ",
+        "橋本しょうへい",
+        "山本ひろこ"
+      ],
+      "locator": {
+        "file": "kosei.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "日本共産党目黒区議団",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "芋川ゆうき",
+        "岩崎ふみひろ",
+        "斉藤優子",
+        "松嶋祐一郎"
+      ],
+      "locator": {
+        "file": "kosei.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "無会派（上田みのり）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "上田みのり"
+      ],
+      "locator": {
+        "file": "kosei.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "無会派（こいでまあり）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "こいでまあり"
+      ],
+      "locator": {
+        "file": "kosei.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "無会派（白川愛）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "白川愛"
+      ],
+      "locator": {
+        "file": "kosei.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "無会派（増茂しのぶ）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "増茂しのぶ"
+      ],
+      "locator": {
+        "file": "kosei.html",
+        "row": 9
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第22号",
+    "billName": "令和8年度目黒区一般会計予算",
+    "sessionLabel": "令和8年第1回定例会",
+    "decidedDate": "2026-03-23",
+    "decidedDateLabel": "令和8年3月23日",
+    "result": "可決",
+    "locator": {
+      "file": "8-1teireigiketukeka.html"
+    }
+  },
+  "rosterTitle": "議会の構成（令和8年1月28日現在）",
+  "resultTitle": "令和8年第1回定例会の議決結果",
+  "votes": {
+    "basis": "faction",
+    "sourceTitle": "令和８年第１回定例会 議決結果【令和8年3月23日議決】（個人名を記載した会派ごとの賛否）",
+    "sourceFile": "k_r08-1teirei0323.pdf",
+    "columns": [
+      {
+        "label": "自民",
+        "faction": "自由民主党目黒区議団・区民の会",
+        "stance": "賛成"
+      },
+      {
+        "label": "未来",
+        "faction": "めぐろの未来をつくる会（無所属・国民・維新）",
+        "stance": "賛成"
+      },
+      {
+        "label": "公明",
+        "faction": "公明党目黒区議団",
+        "stance": "賛成"
+      },
+      {
+        "label": "立目",
+        "faction": "立憲民主・目黒フォーラム",
+        "stance": "賛成"
+      },
+      {
+        "label": "共産",
+        "faction": "日本共産党目黒区議団",
+        "stance": "反対"
+      },
+      {
+        "label": "上田みのり",
+        "faction": "無会派（上田みのり）",
+        "member": "上田みのり",
+        "stance": "賛成"
+      },
+      {
+        "label": "こいでまあり",
+        "faction": "無会派（こいでまあり）",
+        "member": "こいでまあり",
+        "stance": "賛成"
+      },
+      {
+        "label": "白川愛",
+        "faction": "無会派（白川愛）",
+        "member": "白川愛",
+        "stance": "賛成"
+      },
+      {
+        "label": "増茂しのぶ",
+        "faction": "無会派（増茂しのぶ）",
+        "member": "増茂しのぶ",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴木まさし",
+        "faction": "自由民主党目黒区議団・区民の会",
+        "member": "鈴木まさし",
+        "stance": "議長"
+      }
+    ]
+  }
+}

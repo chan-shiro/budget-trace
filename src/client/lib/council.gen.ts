@@ -2220,6 +2220,3365 @@ export const MUNI_COUNCIL_YEARS: Record<string, Council[]> = {
       "newsletterUrl": null
     }
   ],
+  "131016": [
+    {
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "body": "千代田区議会",
+      "seats": 22,
+      "asOf": "2026-01-23",
+      "asOfLabel": "2026年1月23日",
+      "factions": [
+        {
+          "name": "次世代・都民ファースト・立憲の会",
+          "seats": 7,
+          "isIndependent": false
+        },
+        {
+          "name": "千代田区議会 自由民主党",
+          "seats": 5,
+          "isIndependent": false
+        },
+        {
+          "name": "千代田区議会自由民主党議員団",
+          "seats": 4,
+          "isIndependent": false
+        },
+        {
+          "name": "公明党議員団",
+          "seats": 2,
+          "isIndependent": false
+        },
+        {
+          "name": "日本共産党",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "国民民主党",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "ちよだの声",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "日本維新の会千代田議員団",
+          "seats": 1,
+          "isIndependent": false
+        }
+      ],
+      "resolution": {
+        "billNo": "議案第２号",
+        "billName": "令和8年度千代田区一般会計予算",
+        "sessionLabel": "令和8年第1回定例会",
+        "decidedDate": "2026-03-19",
+        "decidedDateLabel": "令和8年3月19日",
+        "result": "可決"
+      },
+      "sourceTitle": "令和8年度 千代田区議会の構成（会派別議席数）と当初予算の議決",
+      "roster": {
+        "title": "会派紹介（更新日 2026年1月23日・2026-03-01 の魚拓）と各会派のページ（議決前の魚拓）",
+        "localUrl": "/sources/chiyoda-kugikai-r8/index.html",
+        "originUrl": "https://web.archive.org/web/20260301085133id_/https://gikai-chiyoda-tokyo.jp/about/kaiha/index.html",
+        "archiveUrl": "https://web.archive.org/web/20260301085133id_/https://gikai-chiyoda-tokyo.jp/about/kaiha/index.html"
+      },
+      "result": {
+        "title": "区議会だより ちよだ No.277",
+        "localUrl": "/sources/chiyoda-kugikai-r8/277dayori.pdf",
+        "originUrl": "https://gikai-chiyoda-tokyo.jp/katsudou/docs/277dayori.pdf",
+        "archiveUrl": "https://web.archive.org/web/20261008160927/https://gikai-chiyoda-tokyo.jp/katsudou/docs/277dayori.pdf"
+      },
+      "minutesUrl": null,
+      "newsletterUrl": null,
+      "votes": {
+        "basis": "member",
+        "stances": [
+          "賛成",
+          "反対",
+          "欠席",
+          "議長"
+        ],
+        "tally": {
+          "賛成": 18,
+          "反対": 2,
+          "議長": 1,
+          "欠席": 1
+        },
+        "byFaction": [
+          {
+            "faction": "次世代・都民ファースト・立憲の会",
+            "counts": {
+              "賛成": 5,
+              "反対": 1,
+              "議長": 1
+            },
+            "members": [
+              {
+                "name": "岩佐りょう子",
+                "stance": "賛成"
+              },
+              {
+                "name": "小野なりこ",
+                "stance": "賛成"
+              },
+              {
+                "name": "入山たけひこ",
+                "stance": "賛成"
+              },
+              {
+                "name": "岩田かずひと",
+                "stance": "反対"
+              },
+              {
+                "name": "ふかみ貴子",
+                "stance": "賛成"
+              },
+              {
+                "name": "おのでら亮",
+                "stance": "賛成"
+              },
+              {
+                "name": "秋谷こうき",
+                "stance": "議長"
+              }
+            ]
+          },
+          {
+            "faction": "千代田区議会 自由民主党",
+            "counts": {
+              "欠席": 1,
+              "賛成": 4
+            },
+            "members": [
+              {
+                "name": "西岡めぐみ",
+                "stance": "欠席"
+              },
+              {
+                "name": "大坂隆洋",
+                "stance": "賛成"
+              },
+              {
+                "name": "池田とものり",
+                "stance": "賛成"
+              },
+              {
+                "name": "はやお恭一",
+                "stance": "賛成"
+              },
+              {
+                "name": "小林たかや",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "千代田区議会自由民主党議員団",
+            "counts": {
+              "賛成": 4
+            },
+            "members": [
+              {
+                "name": "白川司",
+                "stance": "賛成"
+              },
+              {
+                "name": "永田壮一",
+                "stance": "賛成"
+              },
+              {
+                "name": "桜井ただし",
+                "stance": "賛成"
+              },
+              {
+                "name": "富山あゆみ",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "公明党議員団",
+            "counts": {
+              "賛成": 2
+            },
+            "members": [
+              {
+                "name": "えごし雄一",
+                "stance": "賛成"
+              },
+              {
+                "name": "米田かずや",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "日本共産党",
+            "counts": {
+              "反対": 1
+            },
+            "members": [
+              {
+                "name": "牛尾こうじろう",
+                "stance": "反対"
+              }
+            ]
+          },
+          {
+            "faction": "国民民主党",
+            "counts": {
+              "賛成": 1
+            },
+            "members": [
+              {
+                "name": "田中えりか",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "ちよだの声",
+            "counts": {
+              "賛成": 1
+            },
+            "members": [
+              {
+                "name": "小枝すみ子",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "日本維新の会千代田議員団",
+            "counts": {
+              "賛成": 1
+            },
+            "members": [
+              {
+                "name": "のざわ哲夫",
+                "stance": "賛成"
+              }
+            ]
+          }
+        ],
+        "source": {
+          "title": "議案の審議結果等（令和8年第1回定例会）",
+          "localUrl": "/sources/chiyoda-kugikai-r8/20261teikekka.pdf",
+          "originUrl": "https://gikai-chiyoda-tokyo.jp/kaigi/kekka/files/20261teikekka.pdf",
+          "archiveUrl": "https://web.archive.org/web/20261008165315/https://gikai-chiyoda-tokyo.jp/kaigi/kekka/files/20261teikekka.pdf"
+        }
+      }
+    }
+  ],
+  "131032": [
+    {
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "body": "港区議会",
+      "seats": 32,
+      "asOf": "2026-02-05",
+      "asOfLabel": "2026年2月5日",
+      "factions": [
+        {
+          "name": "自民党議員団",
+          "seats": 10,
+          "isIndependent": false
+        },
+        {
+          "name": "みなと未来会議",
+          "seats": 6,
+          "isIndependent": false
+        },
+        {
+          "name": "港区保守系議員団",
+          "seats": 5,
+          "isIndependent": false
+        },
+        {
+          "name": "公明党議員団",
+          "seats": 4,
+          "isIndependent": false
+        },
+        {
+          "name": "立憲民主党議員団",
+          "seats": 2,
+          "isIndependent": false
+        },
+        {
+          "name": "共産党議員団",
+          "seats": 2,
+          "isIndependent": false
+        },
+        {
+          "name": "港区れいわ新選組",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "都民ファーストの会",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "小倉 りえこ",
+          "seats": 1,
+          "isIndependent": false
+        }
+      ],
+      "resolution": {
+        "billNo": "議案第24号",
+        "billName": "令和8年度港区一般会計予算",
+        "sessionLabel": "令和8年第1回定例会",
+        "decidedDate": "2026-03-18",
+        "decidedDateLabel": "令和8年3月18日",
+        "result": "原案可決"
+      },
+      "sourceTitle": "令和8年度 港区議会の構成（会派別議席数）と当初予算の議決",
+      "roster": {
+        "title": "会派別議員名簿（2026年2月5日・2026-02-11 の魚拓）",
+        "localUrl": "/sources/minato-kugikai-r8/0000002539.html",
+        "originUrl": "https://web.archive.org/web/20260211192957id_/https://www.gikai.city.minato.tokyo.jp/0000002539.html",
+        "archiveUrl": "https://web.archive.org/web/20260211192957id_/https://www.gikai.city.minato.tokyo.jp/0000002539.html"
+      },
+      "result": {
+        "title": "議案一覧（令和8年第1回定例会）",
+        "localUrl": "/sources/minato-kugikai-r8/g07_giketsu.asp_Sflg_2_kaigi_2026_2F02_2F18_2C2026_2F03_2F18_2C140.html",
+        "originUrl": "https://gikai2.city.minato.tokyo.jp/g07_giketsu.asp?Sflg=2&kaigi=2026%2F02%2F18%2C2026%2F03%2F18%2C140",
+        "archiveUrl": "https://web.archive.org/web/20261008161308/https://gikai2.city.minato.tokyo.jp/g07_giketsu.asp?Sflg=2&kaigi=2026%2F02%2F18%2C2026%2F03%2F18%2C140"
+      },
+      "minutesUrl": null,
+      "newsletterUrl": null
+    }
+  ],
+  "131041": [
+    {
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "body": "新宿区議会",
+      "seats": 38,
+      "asOf": "2025-05-23",
+      "asOfLabel": "2025年5月23日",
+      "factions": [
+        {
+          "name": "自民・参政クラブ",
+          "seats": 9,
+          "isIndependent": false
+        },
+        {
+          "name": "新宿区議会公明党",
+          "seats": 8,
+          "isIndependent": false
+        },
+        {
+          "name": "日本共産党新宿区議会議員団",
+          "seats": 7,
+          "isIndependent": false
+        },
+        {
+          "name": "新宿未来の会",
+          "seats": 6,
+          "isIndependent": false
+        },
+        {
+          "name": "立憲民主党・無所属クラブ",
+          "seats": 3,
+          "isIndependent": false
+        },
+        {
+          "name": "日本維新の会・新宿区議団",
+          "seats": 2,
+          "isIndependent": false
+        },
+        {
+          "name": "現役世代に優しい新宿・減税の会",
+          "seats": 2,
+          "isIndependent": false
+        },
+        {
+          "name": "れいわ新選組 新宿",
+          "seats": 1,
+          "isIndependent": false
+        }
+      ],
+      "resolution": {
+        "billNo": "第 1 号議案",
+        "billName": "令和8年度新宿区一般会計予算",
+        "sessionLabel": "令和８年第１回定例会",
+        "decidedDate": "2026-03-24",
+        "decidedDateLabel": "令和8年3月24日",
+        "result": "可決"
+      },
+      "sourceTitle": "令和8年度 新宿区議会の構成（会派別議席数）と当初予算の議決",
+      "roster": {
+        "title": "会派構成（最終更新日 2025年5月23日・2025-12-15 の魚拓）",
+        "localUrl": "/sources/shinjuku-kugikai-r8/file08_00003.html",
+        "originUrl": "https://web.archive.org/web/20251215030749id_/https://www.city.shinjuku.lg.jp/kusei/file08_00003.html",
+        "archiveUrl": "https://web.archive.org/web/20251215030749id_/https://www.city.shinjuku.lg.jp/kusei/file08_00003.html"
+      },
+      "result": {
+        "title": "議案の概要と審議結果（令和８年第１回定例会）",
+        "localUrl": "/sources/shinjuku-kugikai-r8/000452334.pdf",
+        "originUrl": "https://www.city.shinjuku.lg.jp/content/000452334.pdf",
+        "archiveUrl": "https://web.archive.org/web/20261008161535/https://www.city.shinjuku.lg.jp/content/000452334.pdf"
+      },
+      "minutesUrl": null,
+      "newsletterUrl": null,
+      "votes": {
+        "basis": "faction",
+        "stances": [
+          "賛成",
+          "反対",
+          "議長"
+        ],
+        "tally": {
+          "賛成": 29,
+          "議長": 1,
+          "反対": 8
+        },
+        "byFaction": [
+          {
+            "faction": "自民・参政クラブ",
+            "counts": {
+              "賛成": 8,
+              "議長": 1
+            },
+            "members": [
+              {
+                "name": "渡辺清人",
+                "stance": "議長"
+              }
+            ]
+          },
+          {
+            "faction": "新宿区議会公明党",
+            "counts": {
+              "賛成": 8
+            },
+            "members": []
+          },
+          {
+            "faction": "日本共産党新宿区議会議員団",
+            "counts": {
+              "反対": 7
+            },
+            "members": []
+          },
+          {
+            "faction": "新宿未来の会",
+            "counts": {
+              "賛成": 6
+            },
+            "members": []
+          },
+          {
+            "faction": "立憲民主党・無所属クラブ",
+            "counts": {
+              "賛成": 3
+            },
+            "members": []
+          },
+          {
+            "faction": "日本維新の会・新宿区議団",
+            "counts": {
+              "賛成": 2
+            },
+            "members": []
+          },
+          {
+            "faction": "現役世代に優しい新宿・減税の会",
+            "counts": {
+              "賛成": 2
+            },
+            "members": []
+          },
+          {
+            "faction": "れいわ新選組 新宿",
+            "counts": {
+              "反対": 1
+            },
+            "members": []
+          }
+        ],
+        "source": {
+          "title": "議案の概要と審議結果（令和８年第１回定例会）",
+          "localUrl": "/sources/shinjuku-kugikai-r8/000452334.pdf",
+          "originUrl": "https://www.city.shinjuku.lg.jp/content/000452334.pdf",
+          "archiveUrl": "https://web.archive.org/web/20261008161535/https://www.city.shinjuku.lg.jp/content/000452334.pdf"
+        }
+      }
+    }
+  ],
+  "131059": [
+    {
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "body": "文京区議会",
+      "seats": 33,
+      "asOf": "2026-01-05",
+      "asOfLabel": "2026年1月5日",
+      "factions": [
+        {
+          "name": "自由民主党文京区議会",
+          "seats": 9,
+          "isIndependent": false
+        },
+        {
+          "name": "日本共産党文京区議会議員団",
+          "seats": 5,
+          "isIndependent": false
+        },
+        {
+          "name": "公明党文京区議団",
+          "seats": 4,
+          "isIndependent": false
+        },
+        {
+          "name": "政策チーム AGORA",
+          "seats": 4,
+          "isIndependent": false
+        },
+        {
+          "name": "区民が主役の会",
+          "seats": 3,
+          "isIndependent": false
+        },
+        {
+          "name": "文京区議会日本維新の会",
+          "seats": 2,
+          "isIndependent": false
+        },
+        {
+          "name": "文京永久の会",
+          "seats": 2,
+          "isIndependent": false
+        },
+        {
+          "name": "市民フォーラム",
+          "seats": 2,
+          "isIndependent": false
+        },
+        {
+          "name": "ぶんきょう子育て.ネット",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "自由民主党「誉」",
+          "seats": 1,
+          "isIndependent": false
+        }
+      ],
+      "resolution": {
+        "billNo": "67",
+        "billName": "令和8年度文京区一般会計予算",
+        "sessionLabel": "令和8年2月定例議会",
+        "decidedDate": "2026-03-17",
+        "decidedDateLabel": "令和8年3月17日",
+        "result": "可決"
+      },
+      "sourceTitle": "令和8年度 文京区議会の構成（会派別議席数）と当初予算の議決",
+      "roster": {
+        "title": "議員名簿（会派別）（令和8年1月5日現在）",
+        "localUrl": "/sources/bunkyo-kugikai-r8/p007737.html",
+        "originUrl": "https://www.city.bunkyo.lg.jp/kugikai/p007737.html",
+        "archiveUrl": "https://web.archive.org/web/20260607052524/https://www.city.bunkyo.lg.jp/kugikai/p007737.html"
+      },
+      "result": {
+        "title": "令和８年２月定例議会 議案等議決結果一覧表",
+        "localUrl": "/sources/bunkyo-kugikai-r8/giketukekka080317.pdf",
+        "originUrl": "https://www.city.bunkyo.lg.jp/documents/6766/giketukekka080317.pdf",
+        "archiveUrl": "https://web.archive.org/web/20261008161750/https://www.city.bunkyo.lg.jp/documents/6766/giketukekka080317.pdf"
+      },
+      "minutesUrl": null,
+      "newsletterUrl": null
+    }
+  ],
+  "131067": [
+    {
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "body": "台東区議会",
+      "seats": 31,
+      "teisu": 32,
+      "asOf": "2026-01-27",
+      "asOfLabel": "2026年1月27日",
+      "factions": [
+        {
+          "name": "台東区議会自由民主党",
+          "seats": 11,
+          "isIndependent": false
+        },
+        {
+          "name": "台東区議会公明党",
+          "seats": 5,
+          "isIndependent": false
+        },
+        {
+          "name": "つなぐプロジェクト（無所属・都ファ・国民）",
+          "seats": 5,
+          "isIndependent": false
+        },
+        {
+          "name": "台東むすびの会（維新・参政・無所属）",
+          "seats": 4,
+          "isIndependent": false
+        },
+        {
+          "name": "れいわ立憲にじいろの会",
+          "seats": 3,
+          "isIndependent": false
+        },
+        {
+          "name": "日本共産党台東区議団",
+          "seats": 3,
+          "isIndependent": false
+        }
+      ],
+      "resolution": {
+        "billNo": "第5号議案",
+        "billName": "令和8年度東京都台東区一般会計予算",
+        "sessionLabel": "令和8年第1回定例会",
+        "decidedDate": "2026-03-26",
+        "decidedDateLabel": "令和8年3月26日",
+        "result": "原案可決（賛成多数）"
+      },
+      "sourceTitle": "令和8年度 台東区議会の構成（会派別議席数）と当初予算の議決",
+      "roster": {
+        "title": "議員名簿（会派別）（更新日 2026年1月27日・2026-03-13 の魚拓）",
+        "localUrl": "/sources/taito-kugikai-r8/kaihabetsu.html",
+        "originUrl": "https://web.archive.org/web/20260313051229id_/https://www.city.taito.lg.jp/kugikai/shokai/kaihabetsu.html",
+        "archiveUrl": "https://web.archive.org/web/20260313051229id_/https://www.city.taito.lg.jp/kugikai/shokai/kaihabetsu.html"
+      },
+      "result": {
+        "title": "令和8年第1回定例会の会議結果",
+        "localUrl": "/sources/taito-kugikai-r8/08-dai1kai-kekka.html",
+        "originUrl": "https://www.city.taito.lg.jp/kugikai/kaigi/honkaigi/r8/r8tei1/08-dai1kai-kekka.html",
+        "archiveUrl": "https://web.archive.org/web/20261008170002/https://www.city.taito.lg.jp/kugikai/kaigi/honkaigi/r8/r8tei1/08-dai1kai-kekka.html"
+      },
+      "minutesUrl": null,
+      "newsletterUrl": null,
+      "votes": {
+        "basis": "faction",
+        "stances": [
+          "賛成",
+          "反対",
+          "議長"
+        ],
+        "tally": {
+          "賛成": 27,
+          "議長": 1,
+          "反対": 3
+        },
+        "byFaction": [
+          {
+            "faction": "台東区議会自由民主党",
+            "counts": {
+              "賛成": 10,
+              "議長": 1
+            },
+            "members": [
+              {
+                "name": "石川義弘",
+                "stance": "議長"
+              }
+            ]
+          },
+          {
+            "faction": "台東区議会公明党",
+            "counts": {
+              "賛成": 5
+            },
+            "members": []
+          },
+          {
+            "faction": "つなぐプロジェクト（無所属・都ファ・国民）",
+            "counts": {
+              "賛成": 5
+            },
+            "members": []
+          },
+          {
+            "faction": "台東むすびの会（維新・参政・無所属）",
+            "counts": {
+              "賛成": 4
+            },
+            "members": []
+          },
+          {
+            "faction": "れいわ立憲にじいろの会",
+            "counts": {
+              "賛成": 3
+            },
+            "members": []
+          },
+          {
+            "faction": "日本共産党台東区議団",
+            "counts": {
+              "反対": 3
+            },
+            "members": []
+          }
+        ],
+        "source": {
+          "title": "たいとう区議会だより No.249（令和8年4月20日）第１回定例会 議案の概要と審議結果",
+          "localUrl": "/sources/taito-kugikai-r8/No249_01-08.pdf",
+          "originUrl": "https://www.city.taito.lg.jp/kugikai/dayori/dayori/r8/249.files/No249_01-08.pdf",
+          "archiveUrl": "https://web.archive.org/web/20261008170108/https://www.city.taito.lg.jp/kugikai/dayori/dayori/r8/249.files/No249_01-08.pdf"
+        }
+      }
+    }
+  ],
+  "131075": [
+    {
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "body": "墨田区議会",
+      "seats": 30,
+      "asOf": "2026-01-28",
+      "asOfLabel": "2026年1月28日",
+      "factions": [
+        {
+          "name": "墨田区議会自由民主党・無所属",
+          "seats": 11,
+          "isIndependent": false
+        },
+        {
+          "name": "墨田区議会公明党",
+          "seats": 7,
+          "isIndependent": false
+        },
+        {
+          "name": "日本共産党墨田区議会議員団",
+          "seats": 3,
+          "isIndependent": false
+        },
+        {
+          "name": "すみだ未来フォーラム（都ファ）",
+          "seats": 2,
+          "isIndependent": false
+        },
+        {
+          "name": "立憲民主党墨田区議団",
+          "seats": 2,
+          "isIndependent": false
+        },
+        {
+          "name": "墨田区議会日本維新の会",
+          "seats": 2,
+          "isIndependent": false
+        },
+        {
+          "name": "新しいすみだ",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "無所属すみだ",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "自由民主党すみだの会",
+          "seats": 1,
+          "isIndependent": false
+        }
+      ],
+      "resolution": {
+        "billNo": "第８２号",
+        "billName": "令和８年度墨田区一般会計予算",
+        "sessionLabel": "令和７年度定例会２月議会",
+        "decidedDate": "2026-03-30",
+        "decidedDateLabel": "令和8年3月30日",
+        "result": "可決"
+      },
+      "sourceTitle": "令和8年度 墨田区議会の構成（会派別議席数）と当初予算の議決",
+      "roster": {
+        "title": "すみだ区議会だより No.246（令和8年5月1日）会派等の所属議員",
+        "localUrl": "/sources/sumida-kugikai-r8/dayori_246_5-8.pdf",
+        "originUrl": "https://www.city.sumida.lg.jp/kugikai/kugikaidayori/R8_dayori.files/dayori_246_5-8.pdf",
+        "archiveUrl": "https://web.archive.org/web/20261008162341/https://www.city.sumida.lg.jp/kugikai/kugikaidayori/R8_dayori.files/dayori_246_5-8.pdf"
+      },
+      "result": {
+        "title": "令和７年度定例会２月議会 議決議案と各議員の賛否の状況（３月３０日分）",
+        "localUrl": "/sources/sumida-kugikai-r8/giantosanpi083030.pdf",
+        "originUrl": "https://www.city.sumida.lg.jp/kugikai/kaigi_info/sanpinojokyo/giantosanpi.files/giantosanpi083030.pdf",
+        "archiveUrl": "https://web.archive.org/web/20261008162446/https://www.city.sumida.lg.jp/kugikai/kaigi_info/sanpinojokyo/giantosanpi.files/giantosanpi083030.pdf"
+      },
+      "minutesUrl": null,
+      "newsletterUrl": null,
+      "votes": {
+        "basis": "member",
+        "stances": [
+          "賛成",
+          "反対",
+          "議長"
+        ],
+        "tally": {
+          "賛成": 26,
+          "議長": 1,
+          "反対": 3
+        },
+        "byFaction": [
+          {
+            "faction": "墨田区議会自由民主党・無所属",
+            "counts": {
+              "賛成": 10,
+              "議長": 1
+            },
+            "members": [
+              {
+                "name": "小林しょう",
+                "stance": "賛成"
+              },
+              {
+                "name": "稲葉かずひろ",
+                "stance": "賛成"
+              },
+              {
+                "name": "加藤ひろき",
+                "stance": "賛成"
+              },
+              {
+                "name": "井上裕幾",
+                "stance": "賛成"
+              },
+              {
+                "name": "あべよしたけ",
+                "stance": "賛成"
+              },
+              {
+                "name": "大門しろう",
+                "stance": "賛成"
+              },
+              {
+                "name": "堀よしあき",
+                "stance": "賛成"
+              },
+              {
+                "name": "坂井ユカコ",
+                "stance": "賛成"
+              },
+              {
+                "name": "しもむら緑",
+                "stance": "賛成"
+              },
+              {
+                "name": "福田はるみ",
+                "stance": "賛成"
+              },
+              {
+                "name": "佐藤篤",
+                "stance": "議長"
+              }
+            ]
+          },
+          {
+            "faction": "墨田区議会公明党",
+            "counts": {
+              "賛成": 7
+            },
+            "members": [
+              {
+                "name": "おまた雄一",
+                "stance": "賛成"
+              },
+              {
+                "name": "たかはしのりこ",
+                "stance": "賛成"
+              },
+              {
+                "name": "はねだ福代",
+                "stance": "賛成"
+              },
+              {
+                "name": "とも宣子",
+                "stance": "賛成"
+              },
+              {
+                "name": "高橋正利",
+                "stance": "賛成"
+              },
+              {
+                "name": "おおこし勝広",
+                "stance": "賛成"
+              },
+              {
+                "name": "加納進",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "日本共産党墨田区議会議員団",
+            "counts": {
+              "反対": 3
+            },
+            "members": [
+              {
+                "name": "山下ひろみ",
+                "stance": "反対"
+              },
+              {
+                "name": "村本ひろや",
+                "stance": "反対"
+              },
+              {
+                "name": "としま剛",
+                "stance": "反対"
+              }
+            ]
+          },
+          {
+            "faction": "すみだ未来フォーラム（都ファ）",
+            "counts": {
+              "賛成": 2
+            },
+            "members": [
+              {
+                "name": "甲斐まりこ",
+                "stance": "賛成"
+              },
+              {
+                "name": "あべきみこ",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "立憲民主党墨田区議団",
+            "counts": {
+              "賛成": 2
+            },
+            "members": [
+              {
+                "name": "遠藤ミホ",
+                "stance": "賛成"
+              },
+              {
+                "name": "中村あきひろ",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "墨田区議会日本維新の会",
+            "counts": {
+              "賛成": 2
+            },
+            "members": [
+              {
+                "name": "船橋けんご",
+                "stance": "賛成"
+              },
+              {
+                "name": "しみず良平",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "新しいすみだ",
+            "counts": {
+              "賛成": 1
+            },
+            "members": [
+              {
+                "name": "井上ノエミ",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "無所属すみだ",
+            "counts": {
+              "賛成": 1
+            },
+            "members": [
+              {
+                "name": "桜井浩之",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "自由民主党すみだの会",
+            "counts": {
+              "賛成": 1
+            },
+            "members": [
+              {
+                "name": "たきざわ正宜",
+                "stance": "賛成"
+              }
+            ]
+          }
+        ],
+        "source": {
+          "title": "令和７年度定例会２月議会 議決議案と各議員の賛否の状況（３月３０日分）",
+          "localUrl": "/sources/sumida-kugikai-r8/giantosanpi083030.pdf",
+          "originUrl": "https://www.city.sumida.lg.jp/kugikai/kaigi_info/sanpinojokyo/giantosanpi.files/giantosanpi083030.pdf",
+          "archiveUrl": "https://web.archive.org/web/20261008162446/https://www.city.sumida.lg.jp/kugikai/kaigi_info/sanpinojokyo/giantosanpi.files/giantosanpi083030.pdf"
+        }
+      }
+    }
+  ],
+  "131083": [
+    {
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "body": "江東区議会",
+      "seats": 39,
+      "asOf": "2026-03-27",
+      "asOfLabel": "2026年3月27日",
+      "factions": [
+        {
+          "name": "江東区議会自民・参政・無所属クラブ",
+          "seats": 10,
+          "isIndependent": false
+        },
+        {
+          "name": "江東区議会公明党",
+          "seats": 9,
+          "isIndependent": false
+        },
+        {
+          "name": "江東新時代の会",
+          "seats": 5,
+          "isIndependent": false
+        },
+        {
+          "name": "江東区議会維新・国民・共生クラブ",
+          "seats": 4,
+          "isIndependent": false
+        },
+        {
+          "name": "日本共産党江東区議団",
+          "seats": 4,
+          "isIndependent": false
+        },
+        {
+          "name": "江東清風会",
+          "seats": 3,
+          "isIndependent": false
+        },
+        {
+          "name": "無所属",
+          "seats": 4,
+          "isIndependent": true
+        }
+      ],
+      "resolution": {
+        "billNo": "議案第5号",
+        "billName": "令和８年度江東区一般会計予算",
+        "sessionLabel": "令和８年第１回定例会",
+        "decidedDate": "2026-03-27",
+        "decidedDateLabel": "令和8年3月27日",
+        "result": "可決"
+      },
+      "sourceTitle": "令和8年度 江東区議会の構成（会派別議席数）と当初予算の議決",
+      "roster": {
+        "title": "こうとう区議会だより 第350号（令和8年5月21日発行）会派別所属議員（令和8年3月27日現在）",
+        "localUrl": "/sources/koto-kugikai-r8/no350.pdf",
+        "originUrl": "https://www.city.koto.lg.jp/650103/kuse/kugikai/dayori/pdf/documents/documents/no350.pdf",
+        "archiveUrl": "https://web.archive.org/web/20261008162522/https://www.city.koto.lg.jp/650103/kuse/kugikai/dayori/pdf/documents/documents/no350.pdf"
+      },
+      "result": {
+        "title": "こうとう区議会だより 第350号（令和8年第1回定例会）第１回定例会で審議した議案等一覧",
+        "localUrl": "/sources/koto-kugikai-r8/no350.pdf",
+        "originUrl": "https://www.city.koto.lg.jp/650103/kuse/kugikai/dayori/pdf/documents/documents/no350.pdf",
+        "archiveUrl": "https://web.archive.org/web/20261008162522/https://www.city.koto.lg.jp/650103/kuse/kugikai/dayori/pdf/documents/documents/no350.pdf"
+      },
+      "minutesUrl": null,
+      "newsletterUrl": null,
+      "votes": {
+        "basis": "faction",
+        "stances": [
+          "賛成",
+          "反対",
+          "欠席",
+          "議長"
+        ],
+        "tally": {
+          "賛成": 31,
+          "議長": 1,
+          "欠席": 1,
+          "反対": 6
+        },
+        "byFaction": [
+          {
+            "faction": "江東区議会自民・参政・無所属クラブ",
+            "counts": {
+              "賛成": 9,
+              "議長": 1
+            },
+            "members": [
+              {
+                "name": "釼先美彦",
+                "stance": "議長"
+              }
+            ]
+          },
+          {
+            "faction": "江東区議会公明党",
+            "counts": {
+              "賛成": 9
+            },
+            "members": []
+          },
+          {
+            "faction": "江東新時代の会",
+            "counts": {
+              "賛成": 4,
+              "欠席": 1
+            },
+            "members": [
+              {
+                "name": "鬼頭たつや",
+                "stance": "欠席"
+              }
+            ]
+          },
+          {
+            "faction": "江東区議会維新・国民・共生クラブ",
+            "counts": {
+              "賛成": 4
+            },
+            "members": []
+          },
+          {
+            "faction": "日本共産党江東区議団",
+            "counts": {
+              "反対": 4
+            },
+            "members": []
+          },
+          {
+            "faction": "江東清風会",
+            "counts": {
+              "賛成": 3
+            },
+            "members": []
+          },
+          {
+            "faction": "無所属",
+            "counts": {
+              "賛成": 2,
+              "反対": 2
+            },
+            "members": [
+              {
+                "name": "まにわ尚之",
+                "stance": "反対"
+              },
+              {
+                "name": "高野はやと",
+                "stance": "反対"
+              },
+              {
+                "name": "千田昌寛",
+                "stance": "賛成"
+              }
+            ]
+          }
+        ],
+        "source": {
+          "title": "議案等の審議結果（令和８年第１回定例会）",
+          "localUrl": "/sources/koto-kugikai-r8/r8-1giketukekka.pdf",
+          "originUrl": "https://www.city.koto.lg.jp/650102/documents/r8-1giketukekka.pdf",
+          "archiveUrl": "https://web.archive.org/web/20261008162546/https://www.city.koto.lg.jp/650102/documents/r8-1giketukekka.pdf"
+        }
+      }
+    }
+  ],
+  "131091": [
+    {
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "body": "品川区議会",
+      "seats": 37,
+      "asOf": "2025-09-17",
+      "asOfLabel": "2025年9月17日",
+      "factions": [
+        {
+          "name": "品川区議会自民党・無所属の会",
+          "seats": 8,
+          "isIndependent": false
+        },
+        {
+          "name": "しながわ未来",
+          "seats": 8,
+          "isIndependent": false
+        },
+        {
+          "name": "品川区議会公明党",
+          "seats": 7,
+          "isIndependent": false
+        },
+        {
+          "name": "日本共産党品川区議団",
+          "seats": 4,
+          "isIndependent": false
+        },
+        {
+          "name": "品川区議会日本維新の会",
+          "seats": 2,
+          "isIndependent": false
+        },
+        {
+          "name": "無所属",
+          "seats": 8,
+          "isIndependent": true
+        }
+      ],
+      "resolution": {
+        "billNo": "第５号議案",
+        "billName": "令和８年度品川区一般会計予算",
+        "sessionLabel": "令和８年第１回定例会",
+        "decidedDate": "2026-03-27",
+        "decidedDateLabel": "令和8年3月27日",
+        "result": "原案可決"
+      },
+      "sourceTitle": "令和8年度 品川区議会の構成（会派別議席数）と当初予算の議決",
+      "roster": {
+        "title": "議員名簿(会派等)（令和7年9月17日現在）",
+        "localUrl": "/sources/shinagawa-kugikai-r8/group.html",
+        "originUrl": "https://web.archive.org/web/20260312074626id_/https://gikai.city.shinagawa.tokyo.jp/profile/group",
+        "archiveUrl": "https://web.archive.org/web/20260312074626id_/https://gikai.city.shinagawa.tokyo.jp/profile/group"
+      },
+      "result": {
+        "title": "令和８年第１回定例会 議案と各議員の賛否の状況",
+        "localUrl": "/sources/shinagawa-kugikai-r8/r08_01t_s.pdf",
+        "originUrl": "https://gikai.city.shinagawa.tokyo.jp/wp-content/themes/shinagawakugikai/pdf/r08_01t_s.pdf",
+        "archiveUrl": "https://web.archive.org/web/20261008162827/https://gikai.city.shinagawa.tokyo.jp/wp-content/themes/shinagawakugikai/pdf/r08_01t_s.pdf"
+      },
+      "minutesUrl": null,
+      "newsletterUrl": null,
+      "votes": {
+        "basis": "member",
+        "stances": [
+          "賛成",
+          "反対",
+          "欠席",
+          "議長"
+        ],
+        "tally": {
+          "賛成": 34,
+          "議長": 1,
+          "欠席": 1,
+          "反対": 1
+        },
+        "byFaction": [
+          {
+            "faction": "品川区議会自民党・無所属の会",
+            "counts": {
+              "賛成": 7,
+              "議長": 1
+            },
+            "members": [
+              {
+                "name": "石田秀男",
+                "stance": "賛成"
+              },
+              {
+                "name": "えのした正人",
+                "stance": "賛成"
+              },
+              {
+                "name": "こしば新",
+                "stance": "賛成"
+              },
+              {
+                "name": "澤田えみこ",
+                "stance": "賛成"
+              },
+              {
+                "name": "せお麻里",
+                "stance": "賛成"
+              },
+              {
+                "name": "西村直子",
+                "stance": "賛成"
+              },
+              {
+                "name": "まつざわ和昌",
+                "stance": "賛成"
+              },
+              {
+                "name": "渡辺ゆういち",
+                "stance": "議長"
+              }
+            ]
+          },
+          {
+            "faction": "しながわ未来",
+            "counts": {
+              "賛成": 7,
+              "欠席": 1
+            },
+            "members": [
+              {
+                "name": "大倉たかひろ",
+                "stance": "賛成"
+              },
+              {
+                "name": "おぎのあやか",
+                "stance": "賛成"
+              },
+              {
+                "name": "木村健悟",
+                "stance": "欠席"
+              },
+              {
+                "name": "田中たけし",
+                "stance": "賛成"
+              },
+              {
+                "name": "筒井ようすけ",
+                "stance": "賛成"
+              },
+              {
+                "name": "藤原正則",
+                "stance": "賛成"
+              },
+              {
+                "name": "松永よしひろ",
+                "stance": "賛成"
+              },
+              {
+                "name": "山本やすゆき",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "品川区議会公明党",
+            "counts": {
+              "賛成": 7
+            },
+            "members": [
+              {
+                "name": "あくつ広王",
+                "stance": "賛成"
+              },
+              {
+                "name": "こんの孝子",
+                "stance": "賛成"
+              },
+              {
+                "name": "塚本よしひろ",
+                "stance": "賛成"
+              },
+              {
+                "name": "つる伸一郎",
+                "stance": "賛成"
+              },
+              {
+                "name": "新妻さえ子",
+                "stance": "賛成"
+              },
+              {
+                "name": "ゆきた政春",
+                "stance": "賛成"
+              },
+              {
+                "name": "若林ひろき",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "日本共産党品川区議団",
+            "counts": {
+              "賛成": 4
+            },
+            "members": [
+              {
+                "name": "安藤たい作",
+                "stance": "賛成"
+              },
+              {
+                "name": "石田ちひろ",
+                "stance": "賛成"
+              },
+              {
+                "name": "鈴木ひろ子",
+                "stance": "賛成"
+              },
+              {
+                "name": "のだて稔史",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "品川区議会日本維新の会",
+            "counts": {
+              "賛成": 2
+            },
+            "members": [
+              {
+                "name": "せらく真央",
+                "stance": "賛成"
+              },
+              {
+                "name": "松本ときひろ",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "無所属",
+            "counts": {
+              "賛成": 7,
+              "反対": 1
+            },
+            "members": [
+              {
+                "name": "須貝行宏",
+                "stance": "賛成"
+              },
+              {
+                "name": "高橋しんじ",
+                "stance": "賛成"
+              },
+              {
+                "name": "高橋伸明",
+                "stance": "賛成"
+              },
+              {
+                "name": "中塚亮",
+                "stance": "賛成"
+              },
+              {
+                "name": "西本たか子",
+                "stance": "反対"
+              },
+              {
+                "name": "やなぎさわ聡",
+                "stance": "賛成"
+              },
+              {
+                "name": "横山由香理",
+                "stance": "賛成"
+              },
+              {
+                "name": "吉田ゆみこ",
+                "stance": "賛成"
+              }
+            ]
+          }
+        ],
+        "source": {
+          "title": "令和８年第１回定例会 議案と各議員の賛否の状況",
+          "localUrl": "/sources/shinagawa-kugikai-r8/r08_01t_s.pdf",
+          "originUrl": "https://gikai.city.shinagawa.tokyo.jp/wp-content/themes/shinagawakugikai/pdf/r08_01t_s.pdf",
+          "archiveUrl": "https://web.archive.org/web/20261008162827/https://gikai.city.shinagawa.tokyo.jp/wp-content/themes/shinagawakugikai/pdf/r08_01t_s.pdf"
+        }
+      }
+    }
+  ],
+  "131105": [
+    {
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "body": "目黒区議会",
+      "seats": 32,
+      "asOf": "2026-01-28",
+      "asOfLabel": "2026年1月28日",
+      "factions": [
+        {
+          "name": "自由民主党目黒区議団・区民の会",
+          "seats": 9,
+          "isIndependent": false
+        },
+        {
+          "name": "めぐろの未来をつくる会（無所属・国民・維新）",
+          "seats": 6,
+          "isIndependent": false
+        },
+        {
+          "name": "公明党目黒区議団",
+          "seats": 5,
+          "isIndependent": false
+        },
+        {
+          "name": "立憲民主・目黒フォーラム",
+          "seats": 4,
+          "isIndependent": false
+        },
+        {
+          "name": "日本共産党目黒区議団",
+          "seats": 4,
+          "isIndependent": false
+        },
+        {
+          "name": "無会派（上田みのり）",
+          "seats": 1,
+          "isIndependent": true
+        },
+        {
+          "name": "無会派（こいでまあり）",
+          "seats": 1,
+          "isIndependent": true
+        },
+        {
+          "name": "無会派（白川愛）",
+          "seats": 1,
+          "isIndependent": true
+        },
+        {
+          "name": "無会派（増茂しのぶ）",
+          "seats": 1,
+          "isIndependent": true
+        }
+      ],
+      "resolution": {
+        "billNo": "議案第22号",
+        "billName": "令和8年度目黒区一般会計予算",
+        "sessionLabel": "令和8年第1回定例会",
+        "decidedDate": "2026-03-23",
+        "decidedDateLabel": "令和8年3月23日",
+        "result": "可決"
+      },
+      "sourceTitle": "令和8年度 目黒区議会の構成（会派別議席数）と当初予算の議決",
+      "roster": {
+        "title": "議会の構成（令和8年1月28日現在）",
+        "localUrl": "/sources/meguro-kugikai-r8/kosei.html",
+        "originUrl": "https://web.archive.org/web/20260214105549id_/https://www.city.meguro.tokyo.jp/kugikai/kusei/kugikai/kosei.html",
+        "archiveUrl": "https://web.archive.org/web/20260214105549id_/https://www.city.meguro.tokyo.jp/kugikai/kusei/kugikai/kosei.html"
+      },
+      "result": {
+        "title": "令和8年第1回定例会の議決結果",
+        "localUrl": "/sources/meguro-kugikai-r8/8-1teireigiketukeka.html",
+        "originUrl": "https://www.city.meguro.tokyo.jp/kugikai/kusei/kugikai/8-1teireigiketukeka.html",
+        "archiveUrl": "https://web.archive.org/web/20260413211157/https://www.city.meguro.tokyo.jp/kugikai/kusei/kugikai/8-1teireigiketukeka.html"
+      },
+      "minutesUrl": null,
+      "newsletterUrl": null,
+      "votes": {
+        "basis": "faction",
+        "stances": [
+          "賛成",
+          "反対",
+          "議長"
+        ],
+        "tally": {
+          "賛成": 27,
+          "議長": 1,
+          "反対": 4
+        },
+        "byFaction": [
+          {
+            "faction": "自由民主党目黒区議団・区民の会",
+            "counts": {
+              "賛成": 8,
+              "議長": 1
+            },
+            "members": [
+              {
+                "name": "鈴木まさし",
+                "stance": "議長"
+              }
+            ]
+          },
+          {
+            "faction": "めぐろの未来をつくる会（無所属・国民・維新）",
+            "counts": {
+              "賛成": 6
+            },
+            "members": []
+          },
+          {
+            "faction": "公明党目黒区議団",
+            "counts": {
+              "賛成": 5
+            },
+            "members": []
+          },
+          {
+            "faction": "立憲民主・目黒フォーラム",
+            "counts": {
+              "賛成": 4
+            },
+            "members": []
+          },
+          {
+            "faction": "日本共産党目黒区議団",
+            "counts": {
+              "反対": 4
+            },
+            "members": []
+          },
+          {
+            "faction": "無会派（上田みのり）",
+            "counts": {
+              "賛成": 1
+            },
+            "members": [
+              {
+                "name": "上田みのり",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "無会派（こいでまあり）",
+            "counts": {
+              "賛成": 1
+            },
+            "members": [
+              {
+                "name": "こいでまあり",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "無会派（白川愛）",
+            "counts": {
+              "賛成": 1
+            },
+            "members": [
+              {
+                "name": "白川愛",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "無会派（増茂しのぶ）",
+            "counts": {
+              "賛成": 1
+            },
+            "members": [
+              {
+                "name": "増茂しのぶ",
+                "stance": "賛成"
+              }
+            ]
+          }
+        ],
+        "source": {
+          "title": "令和８年第１回定例会 議決結果【令和8年3月23日議決】（個人名を記載した会派ごとの賛否）",
+          "localUrl": "/sources/meguro-kugikai-r8/k_r08-1teirei0323.pdf",
+          "originUrl": "https://www.city.meguro.tokyo.jp/documents/19666/k_r08-1teirei0323.pdf",
+          "archiveUrl": "https://web.archive.org/web/20261008163031/https://www.city.meguro.tokyo.jp/documents/19666/k_r08-1teirei0323.pdf"
+        }
+      }
+    }
+  ],
+  "131113": [
+    {
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "body": "大田区議会",
+      "seats": 48,
+      "asOf": "2026-01-05",
+      "asOfLabel": "2026年1月5日",
+      "factions": [
+        {
+          "name": "自由民主党大田区議団・無所属の会",
+          "seats": 13,
+          "isIndependent": false
+        },
+        {
+          "name": "大田区議会公明党",
+          "seats": 11,
+          "isIndependent": false
+        },
+        {
+          "name": "つばさ大田区議団",
+          "seats": 6,
+          "isIndependent": false
+        },
+        {
+          "name": "日本共産党大田区議団",
+          "seats": 5,
+          "isIndependent": false
+        },
+        {
+          "name": "立憲民主党大田区議団",
+          "seats": 4,
+          "isIndependent": false
+        },
+        {
+          "name": "日本維新の会大田区議団",
+          "seats": 3,
+          "isIndependent": false
+        },
+        {
+          "name": "大田区議会 都民ファーストの会・国民民主党",
+          "seats": 2,
+          "isIndependent": false
+        },
+        {
+          "name": "フェアな民主主義",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "OTAれいわ新選組",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "大田子ども防災会",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "おおた未来創志会",
+          "seats": 1,
+          "isIndependent": false
+        }
+      ],
+      "resolution": {
+        "billNo": "1",
+        "billName": "令和８年度大田区一般会計予算",
+        "sessionLabel": "令和8年第1回定例会",
+        "decidedDate": "2026-03-25",
+        "decidedDateLabel": "令和8年3月25日",
+        "result": "原案可決（賛成者多数）"
+      },
+      "sourceTitle": "令和8年度 大田区議会の構成（会派別議席数）と当初予算の議決",
+      "roster": {
+        "title": "委員会名簿（更新日 2026年1月5日・2026-02-15 の魚拓）",
+        "localUrl": "/sources/ota-kugikai-r8/iinkaimeibo.html",
+        "originUrl": "https://web.archive.org/web/20260215131259id_/https://www.city.ota.tokyo.jp/gikai/shoukai/iinkaimeibo.html",
+        "archiveUrl": "https://web.archive.org/web/20260215131259id_/https://www.city.ota.tokyo.jp/gikai/shoukai/iinkaimeibo.html"
+      },
+      "result": {
+        "title": "令和8年第1回定例会 区長提出議案",
+        "localUrl": "/sources/ota-kugikai-r8/r0801teirei_kuchogian.html",
+        "originUrl": "https://www.city.ota.tokyo.jp/gikai/kugikai_katsudou/honkaigi/r_8/1teirei/r0801teirei_kuchogian.html",
+        "archiveUrl": "https://www.city.ota.tokyo.jp/gikai/kugikai_katsudou/honkaigi/r_8/1teirei/r0801teirei_kuchogian.html"
+      },
+      "minutesUrl": null,
+      "newsletterUrl": null,
+      "votes": {
+        "basis": "faction",
+        "stances": [
+          "賛成",
+          "反対",
+          "欠席",
+          "議長"
+        ],
+        "tally": {
+          "賛成": 39,
+          "議長": 1,
+          "反対": 7,
+          "欠席": 1
+        },
+        "byFaction": [
+          {
+            "faction": "自由民主党大田区議団・無所属の会",
+            "counts": {
+              "賛成": 12,
+              "議長": 1
+            },
+            "members": [
+              {
+                "name": "鈴木隆之",
+                "stance": "議長"
+              }
+            ]
+          },
+          {
+            "faction": "大田区議会公明党",
+            "counts": {
+              "賛成": 11
+            },
+            "members": []
+          },
+          {
+            "faction": "つばさ大田区議団",
+            "counts": {
+              "賛成": 6
+            },
+            "members": []
+          },
+          {
+            "faction": "日本共産党大田区議団",
+            "counts": {
+              "反対": 5
+            },
+            "members": []
+          },
+          {
+            "faction": "立憲民主党大田区議団",
+            "counts": {
+              "賛成": 4
+            },
+            "members": []
+          },
+          {
+            "faction": "日本維新の会大田区議団",
+            "counts": {
+              "賛成": 3
+            },
+            "members": []
+          },
+          {
+            "faction": "大田区議会 都民ファーストの会・国民民主党",
+            "counts": {
+              "賛成": 1,
+              "欠席": 1
+            },
+            "members": [
+              {
+                "name": "とく山れいこ",
+                "stance": "欠席"
+              }
+            ]
+          },
+          {
+            "faction": "フェアな民主主義",
+            "counts": {
+              "反対": 1
+            },
+            "members": []
+          },
+          {
+            "faction": "OTAれいわ新選組",
+            "counts": {
+              "賛成": 1
+            },
+            "members": []
+          },
+          {
+            "faction": "大田子ども防災会",
+            "counts": {
+              "賛成": 1
+            },
+            "members": []
+          },
+          {
+            "faction": "おおた未来創志会",
+            "counts": {
+              "反対": 1
+            },
+            "members": []
+          }
+        ],
+        "source": {
+          "title": "意見が異なった議案に対する各会派の態度（令和8年第1回定例会）",
+          "localUrl": "/sources/ota-kugikai-r8/r0801teirei_taido.html",
+          "originUrl": "https://www.city.ota.tokyo.jp/gikai/kugikai_katsudou/honkaigi/r_8/1teirei/r0801teirei_taido.html",
+          "archiveUrl": "https://web.archive.org/web/20261008163242/https://www.city.ota.tokyo.jp/gikai/kugikai_katsudou/honkaigi/r_8/1teirei/r0801teirei_taido.html"
+        }
+      }
+    }
+  ],
+  "131148": [
+    {
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "body": "中野区議会",
+      "seats": 41,
+      "asOf": "2026-03-06",
+      "asOfLabel": "2026年3月6日",
+      "factions": [
+        {
+          "name": "立憲・国民・ネット・無所属議員団",
+          "seats": 11,
+          "isIndependent": false
+        },
+        {
+          "name": "自由民主党議員団",
+          "seats": 8,
+          "isIndependent": false
+        },
+        {
+          "name": "公明党議員団",
+          "seats": 7,
+          "isIndependent": false
+        },
+        {
+          "name": "日本共産党議員団",
+          "seats": 5,
+          "isIndependent": false
+        },
+        {
+          "name": "都民ファーストの会中野区議団",
+          "seats": 3,
+          "isIndependent": false
+        },
+        {
+          "name": "無所属",
+          "seats": 5,
+          "isIndependent": true
+        },
+        {
+          "name": "無所属（日本維新の会）（斉藤けいた）",
+          "seats": 1,
+          "isIndependent": true
+        },
+        {
+          "name": "無所属（れいわ新選組）（井関源二）",
+          "seats": 1,
+          "isIndependent": true
+        }
+      ],
+      "resolution": {
+        "billNo": "第６号議案",
+        "billName": "令和８年度中野区一般会計予算",
+        "sessionLabel": "第１回定例会",
+        "decidedDate": "2026-03-06",
+        "decidedDateLabel": "令和8年3月6日",
+        "result": "可決"
+      },
+      "sourceTitle": "令和8年度 中野区議会の構成（会派別議席数）と当初予算の議決",
+      "roster": {
+        "title": "中野区議会だより第289号（第１回定例会・意見の分かれた案件）",
+        "localUrl": "/sources/nakano-kugikai-r8/289-26427114355.pdf",
+        "originUrl": "https://kugikai-nakano.jp/dayori/289-26427114355.pdf",
+        "archiveUrl": "https://web.archive.org/web/20260512163934/https://kugikai-nakano.jp/dayori/289-26427114355.pdf"
+      },
+      "result": {
+        "title": "本会議 議案一覧（令和8年 第１回定例会）",
+        "localUrl": "/sources/nakano-kugikai-r8/honkaigi.html_nen_2026_gian_id_119.html",
+        "originUrl": "https://kugikai-nakano.jp/honkaigi.html?nen=2026&gian_id=119",
+        "archiveUrl": "https://web.archive.org/web/20260711024539/https://kugikai-nakano.jp/honkaigi.html?nen=2026&gian_id=119"
+      },
+      "minutesUrl": null,
+      "newsletterUrl": null,
+      "votes": {
+        "basis": "faction",
+        "stances": [
+          "賛成",
+          "反対",
+          "議長"
+        ],
+        "tally": {
+          "賛成": 30,
+          "議長": 1,
+          "反対": 10
+        },
+        "byFaction": [
+          {
+            "faction": "立憲・国民・ネット・無所属議員団",
+            "counts": {
+              "賛成": 10,
+              "議長": 1
+            },
+            "members": [
+              {
+                "name": "森たかゆき",
+                "stance": "議長"
+              }
+            ]
+          },
+          {
+            "faction": "自由民主党議員団",
+            "counts": {
+              "反対": 8
+            },
+            "members": []
+          },
+          {
+            "faction": "公明党議員団",
+            "counts": {
+              "賛成": 7
+            },
+            "members": []
+          },
+          {
+            "faction": "日本共産党議員団",
+            "counts": {
+              "賛成": 5
+            },
+            "members": []
+          },
+          {
+            "faction": "都民ファーストの会中野区議団",
+            "counts": {
+              "賛成": 3
+            },
+            "members": []
+          },
+          {
+            "faction": "無所属",
+            "counts": {
+              "反対": 2,
+              "賛成": 3
+            },
+            "members": [
+              {
+                "name": "吉田康一郎",
+                "stance": "反対"
+              },
+              {
+                "name": "立石りお",
+                "stance": "賛成"
+              },
+              {
+                "name": "小宮山たかし",
+                "stance": "賛成"
+              },
+              {
+                "name": "石坂わたる",
+                "stance": "賛成"
+              },
+              {
+                "name": "むとう有子",
+                "stance": "反対"
+              }
+            ]
+          },
+          {
+            "faction": "無所属（日本維新の会）（斉藤けいた）",
+            "counts": {
+              "賛成": 1
+            },
+            "members": [
+              {
+                "name": "斉藤けいた",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "無所属（れいわ新選組）（井関源二）",
+            "counts": {
+              "賛成": 1
+            },
+            "members": [
+              {
+                "name": "井関源二",
+                "stance": "賛成"
+              }
+            ]
+          }
+        ],
+        "source": {
+          "title": "中野区議会だより第289号 意見の分かれた案件（第１回定例会）",
+          "localUrl": "/sources/nakano-kugikai-r8/289-26427114355.pdf",
+          "originUrl": "https://kugikai-nakano.jp/dayori/289-26427114355.pdf",
+          "archiveUrl": "https://web.archive.org/web/20260512163934/https://kugikai-nakano.jp/dayori/289-26427114355.pdf"
+        }
+      }
+    }
+  ],
+  "131156": [
+    {
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "body": "杉並区議会",
+      "seats": 47,
+      "asOf": "2026-03-19",
+      "asOfLabel": "2026年3月19日",
+      "factions": [
+        {
+          "name": "杉並区議会自由民主党",
+          "seats": 8,
+          "isIndependent": false
+        },
+        {
+          "name": "日本共産党杉並区議団",
+          "seats": 6,
+          "isIndependent": false
+        },
+        {
+          "name": "杉並区議会公明党",
+          "seats": 6,
+          "isIndependent": false
+        },
+        {
+          "name": "立憲民主党杉並区議団",
+          "seats": 5,
+          "isIndependent": false
+        },
+        {
+          "name": "シスターフッド杉並",
+          "seats": 5,
+          "isIndependent": false
+        },
+        {
+          "name": "維新・無所属議員団",
+          "seats": 4,
+          "isIndependent": false
+        },
+        {
+          "name": "無所属・都民ファーストの会",
+          "seats": 3,
+          "isIndependent": false
+        },
+        {
+          "name": "安心・安全杉並の会",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "参政党杉並",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "都政を革新する会",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "日本自由党杉並",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "杉並わくわく会議",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "区政杉並クラブ",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "far right",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "杉並区議会国民民主党",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "杉並区議会立憲民主党",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "無所属（堀部やすし）",
+          "seats": 1,
+          "isIndependent": true
+        }
+      ],
+      "resolution": {
+        "billNo": "第28号",
+        "billName": "令和8年度杉並区一般会計予算（予算特別委員会付託案件）",
+        "sessionLabel": "令和8年第1回定例会",
+        "decidedDate": "2026-03-19",
+        "decidedDateLabel": "令和8年3月19日",
+        "result": "原案可決"
+      },
+      "sourceTitle": "令和8年度 杉並区議会の構成（会派別議席数）と当初予算の議決",
+      "roster": {
+        "title": "令和８年第１回定例会 議案等の審議結果（議員別）の列見出し（会派・議席番号順）",
+        "localUrl": "/sources/suginami-kugikai-r8/1teigiankekka.pdf",
+        "originUrl": "https://www.city.suginami.tokyo.jp/documents/24929/1teigiankekka.pdf",
+        "archiveUrl": "https://web.archive.org/web/20260725053656/https://www.city.suginami.tokyo.jp/documents/24929/1teigiankekka.pdf"
+      },
+      "result": {
+        "title": "令和8年第1回定例会議案・議決結果の一覧",
+        "localUrl": "/sources/suginami-kugikai-r8/24929.html",
+        "originUrl": "https://www.city.suginami.tokyo.jp/kugikai/s117/24929.html",
+        "archiveUrl": "https://web.archive.org/web/20260607112125/https://www.city.suginami.tokyo.jp/kugikai/s117/24929.html"
+      },
+      "minutesUrl": null,
+      "newsletterUrl": null,
+      "votes": {
+        "basis": "member",
+        "stances": [
+          "賛成",
+          "反対",
+          "議長"
+        ],
+        "tally": {
+          "反対": 20,
+          "賛成": 26,
+          "議長": 1
+        },
+        "byFaction": [
+          {
+            "faction": "杉並区議会自由民主党",
+            "counts": {
+              "反対": 8
+            },
+            "members": [
+              {
+                "name": "へんみ純一",
+                "stance": "反対"
+              },
+              {
+                "name": "わたなべ友貴",
+                "stance": "反対"
+              },
+              {
+                "name": "矢口やすゆき",
+                "stance": "反対"
+              },
+              {
+                "name": "大和田伸",
+                "stance": "反対"
+              },
+              {
+                "name": "浅井くにお",
+                "stance": "反対"
+              },
+              {
+                "name": "脇坂たつや",
+                "stance": "反対"
+              },
+              {
+                "name": "吉田あい",
+                "stance": "反対"
+              },
+              {
+                "name": "藤本なおや",
+                "stance": "反対"
+              }
+            ]
+          },
+          {
+            "faction": "日本共産党杉並区議団",
+            "counts": {
+              "賛成": 6
+            },
+            "members": [
+              {
+                "name": "和氣みき",
+                "stance": "賛成"
+              },
+              {
+                "name": "小池めぐみ",
+                "stance": "賛成"
+              },
+              {
+                "name": "酒井まさえ",
+                "stance": "賛成"
+              },
+              {
+                "name": "山田耕平",
+                "stance": "賛成"
+              },
+              {
+                "name": "富田たく",
+                "stance": "賛成"
+              },
+              {
+                "name": "くすやま美紀",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "杉並区議会公明党",
+            "counts": {
+              "賛成": 6
+            },
+            "members": [
+              {
+                "name": "斉藤りか",
+                "stance": "賛成"
+              },
+              {
+                "name": "山本ひろ子",
+                "stance": "賛成"
+              },
+              {
+                "name": "中村康弘",
+                "stance": "賛成"
+              },
+              {
+                "name": "川原口宏之",
+                "stance": "賛成"
+              },
+              {
+                "name": "おおつき城一",
+                "stance": "賛成"
+              },
+              {
+                "name": "渡辺富士雄",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "立憲民主党杉並区議団",
+            "counts": {
+              "賛成": 5
+            },
+            "members": [
+              {
+                "name": "松本浩一",
+                "stance": "賛成"
+              },
+              {
+                "name": "前山なおこ",
+                "stance": "賛成"
+              },
+              {
+                "name": "てらだはるか",
+                "stance": "賛成"
+              },
+              {
+                "name": "安田マリ",
+                "stance": "賛成"
+              },
+              {
+                "name": "ひわき岳",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "シスターフッド杉並",
+            "counts": {
+              "賛成": 5
+            },
+            "members": [
+              {
+                "name": "ブランシャー明日香",
+                "stance": "賛成"
+              },
+              {
+                "name": "奥山たえこ",
+                "stance": "賛成"
+              },
+              {
+                "name": "奥田雅子",
+                "stance": "賛成"
+              },
+              {
+                "name": "そね文子",
+                "stance": "賛成"
+              },
+              {
+                "name": "山名かなこ",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "維新・無所属議員団",
+            "counts": {
+              "賛成": 3,
+              "議長": 1
+            },
+            "members": [
+              {
+                "name": "鈴木ちづる",
+                "stance": "賛成"
+              },
+              {
+                "name": "田中朝子",
+                "stance": "賛成"
+              },
+              {
+                "name": "井口かづ子",
+                "stance": "賛成"
+              },
+              {
+                "name": "木梨もりよし",
+                "stance": "議長"
+              }
+            ]
+          },
+          {
+            "faction": "無所属・都民ファーストの会",
+            "counts": {
+              "反対": 3
+            },
+            "members": [
+              {
+                "name": "井口えみ",
+                "stance": "反対"
+              },
+              {
+                "name": "宇田川ゆうじ",
+                "stance": "反対"
+              },
+              {
+                "name": "あかねがくぼ舞",
+                "stance": "反対"
+              }
+            ]
+          },
+          {
+            "faction": "安心・安全杉並の会",
+            "counts": {
+              "反対": 1
+            },
+            "members": [
+              {
+                "name": "倉本みか",
+                "stance": "反対"
+              }
+            ]
+          },
+          {
+            "faction": "参政党杉並",
+            "counts": {
+              "反対": 1
+            },
+            "members": [
+              {
+                "name": "横田政直",
+                "stance": "反対"
+              }
+            ]
+          },
+          {
+            "faction": "都政を革新する会",
+            "counts": {
+              "反対": 1
+            },
+            "members": [
+              {
+                "name": "ほらぐちともこ",
+                "stance": "反対"
+              }
+            ]
+          },
+          {
+            "faction": "日本自由党杉並",
+            "counts": {
+              "反対": 1
+            },
+            "members": [
+              {
+                "name": "田中ゆうたろう",
+                "stance": "反対"
+              }
+            ]
+          },
+          {
+            "faction": "杉並わくわく会議",
+            "counts": {
+              "反対": 1
+            },
+            "members": [
+              {
+                "name": "松尾ゆり",
+                "stance": "反対"
+              }
+            ]
+          },
+          {
+            "faction": "無所属（堀部やすし）",
+            "counts": {
+              "反対": 1
+            },
+            "members": [
+              {
+                "name": "堀部やすし",
+                "stance": "反対"
+              }
+            ]
+          },
+          {
+            "faction": "区政杉並クラブ",
+            "counts": {
+              "反対": 1
+            },
+            "members": [
+              {
+                "name": "岩田いくま",
+                "stance": "反対"
+              }
+            ]
+          },
+          {
+            "faction": "far right",
+            "counts": {
+              "反対": 1
+            },
+            "members": [
+              {
+                "name": "小林ゆみ",
+                "stance": "反対"
+              }
+            ]
+          },
+          {
+            "faction": "杉並区議会国民民主党",
+            "counts": {
+              "反対": 1
+            },
+            "members": [
+              {
+                "name": "安斉あきら",
+                "stance": "反対"
+              }
+            ]
+          },
+          {
+            "faction": "杉並区議会立憲民主党",
+            "counts": {
+              "賛成": 1
+            },
+            "members": [
+              {
+                "name": "赤坂たまよ",
+                "stance": "賛成"
+              }
+            ]
+          }
+        ],
+        "source": {
+          "title": "令和８年第１回定例会 議案等の審議結果（議員別）",
+          "localUrl": "/sources/suginami-kugikai-r8/1teigiankekka.pdf",
+          "originUrl": "https://www.city.suginami.tokyo.jp/documents/24929/1teigiankekka.pdf",
+          "archiveUrl": "https://web.archive.org/web/20260725053656/https://www.city.suginami.tokyo.jp/documents/24929/1teigiankekka.pdf"
+        }
+      }
+    }
+  ],
+  "131199": [
+    {
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "body": "板橋区議会",
+      "seats": 44,
+      "asOf": "2026-03-24",
+      "asOfLabel": "2026年3月24日",
+      "factions": [
+        {
+          "name": "自民党",
+          "seats": 16,
+          "isIndependent": false
+        },
+        {
+          "name": "公明党",
+          "seats": 10,
+          "isIndependent": false
+        },
+        {
+          "name": "民主クラブ",
+          "seats": 6,
+          "isIndependent": false
+        },
+        {
+          "name": "共産党",
+          "seats": 6,
+          "isIndependent": false
+        },
+        {
+          "name": "いたばし未来",
+          "seats": 2,
+          "isIndependent": false
+        },
+        {
+          "name": "日本維新の会",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "参政党",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "無所属議員",
+          "seats": 2,
+          "isIndependent": true
+        }
+      ],
+      "resolution": {
+        "billNo": "議案第1号",
+        "billName": "令和8年度一般会計予算",
+        "sessionLabel": "令和8年第1回定例会",
+        "decidedDate": "2026-03-24",
+        "decidedDateLabel": "令和8年3月24日",
+        "result": "原案可決"
+      },
+      "sourceTitle": "令和8年度 板橋区議会の構成（会派別議席数）と当初予算の議決",
+      "roster": {
+        "title": "議案等に対する審査結果（令和８年第１回定例会）の会派別の列見出し",
+        "localUrl": "/sources/itabashi-kugikai-r8/r80324_giankekka.pdf",
+        "originUrl": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/011/530/r80324_giankekka.pdf",
+        "archiveUrl": "https://web.archive.org/web/20261008163743/https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/011/530/r80324_giankekka.pdf"
+      },
+      "result": {
+        "title": "いたばし区議会だより（令和8年第1回定例会）テキストページ4 第1回定例会の審議結果",
+        "localUrl": "/sources/itabashi-kugikai-r8/1063847.html",
+        "originUrl": "https://www.city.itabashi.tokyo.jp/kugikai/dayori/text/1063843/1063847.html",
+        "archiveUrl": "https://web.archive.org/web/20261008163943/https://www.city.itabashi.tokyo.jp/kugikai/dayori/text/1063843/1063847.html"
+      },
+      "minutesUrl": null,
+      "newsletterUrl": null,
+      "votes": {
+        "basis": "member",
+        "stances": [
+          "賛成",
+          "反対",
+          "議長"
+        ],
+        "tally": {
+          "賛成": 37,
+          "議長": 1,
+          "反対": 6
+        },
+        "byFaction": [
+          {
+            "faction": "自民党",
+            "counts": {
+              "賛成": 15,
+              "議長": 1
+            },
+            "members": [
+              {
+                "name": "ひはらみちこ",
+                "stance": "賛成"
+              },
+              {
+                "name": "近藤タカヒロ",
+                "stance": "賛成"
+              },
+              {
+                "name": "木田おりべ",
+                "stance": "賛成"
+              },
+              {
+                "name": "一島ひろし",
+                "stance": "賛成"
+              },
+              {
+                "name": "横川たかゆき",
+                "stance": "賛成"
+              },
+              {
+                "name": "内田けんいちろう",
+                "stance": "賛成"
+              },
+              {
+                "name": "間中りんぺい",
+                "stance": "賛成"
+              },
+              {
+                "name": "中村とらあき",
+                "stance": "賛成"
+              },
+              {
+                "name": "山田たかゆき",
+                "stance": "賛成"
+              },
+              {
+                "name": "田中しゅんすけ",
+                "stance": "議長"
+              },
+              {
+                "name": "長瀬達也",
+                "stance": "賛成"
+              },
+              {
+                "name": "田中やすのり",
+                "stance": "賛成"
+              },
+              {
+                "name": "元山芳行",
+                "stance": "賛成"
+              },
+              {
+                "name": "大野治彦",
+                "stance": "賛成"
+              },
+              {
+                "name": "川口雅敏",
+                "stance": "賛成"
+              },
+              {
+                "name": "佐々木としたか",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "公明党",
+            "counts": {
+              "賛成": 10
+            },
+            "members": [
+              {
+                "name": "実正やすゆき",
+                "stance": "賛成"
+              },
+              {
+                "name": "いがらし学",
+                "stance": "賛成"
+              },
+              {
+                "name": "わたなべ一美",
+                "stance": "賛成"
+              },
+              {
+                "name": "寺田ひろし",
+                "stance": "賛成"
+              },
+              {
+                "name": "さかまき常行",
+                "stance": "賛成"
+              },
+              {
+                "name": "いしだ圭一郎",
+                "stance": "賛成"
+              },
+              {
+                "name": "成島ゆかり",
+                "stance": "賛成"
+              },
+              {
+                "name": "鈴木こうすけ",
+                "stance": "賛成"
+              },
+              {
+                "name": "しば佳代子",
+                "stance": "賛成"
+              },
+              {
+                "name": "田中いさお",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "民主クラブ",
+            "counts": {
+              "賛成": 6
+            },
+            "members": [
+              {
+                "name": "岩永きりん",
+                "stance": "賛成"
+              },
+              {
+                "name": "くまだ智子",
+                "stance": "賛成"
+              },
+              {
+                "name": "おばた健太郎",
+                "stance": "賛成"
+              },
+              {
+                "name": "中妻じょうた",
+                "stance": "賛成"
+              },
+              {
+                "name": "五十嵐やす子",
+                "stance": "賛成"
+              },
+              {
+                "name": "おなだか勝",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "共産党",
+            "counts": {
+              "反対": 6
+            },
+            "members": [
+              {
+                "name": "小柳しげる",
+                "stance": "反対"
+              },
+              {
+                "name": "石川すみえ",
+                "stance": "反対"
+              },
+              {
+                "name": "山内えり",
+                "stance": "反対"
+              },
+              {
+                "name": "荒川なお",
+                "stance": "反対"
+              },
+              {
+                "name": "いわい桐子",
+                "stance": "反対"
+              },
+              {
+                "name": "小林おとみ",
+                "stance": "反対"
+              }
+            ]
+          },
+          {
+            "faction": "いたばし未来",
+            "counts": {
+              "賛成": 2
+            },
+            "members": [
+              {
+                "name": "大野ゆか",
+                "stance": "賛成"
+              },
+              {
+                "name": "井上温子",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "日本維新の会",
+            "counts": {
+              "賛成": 1
+            },
+            "members": [
+              {
+                "name": "小野ゆりこ",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "参政党",
+            "counts": {
+              "賛成": 1
+            },
+            "members": [
+              {
+                "name": "坂田れい子",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "無所属議員",
+            "counts": {
+              "賛成": 2
+            },
+            "members": [
+              {
+                "name": "しいなひろみ",
+                "stance": "賛成"
+              },
+              {
+                "name": "大森大",
+                "stance": "賛成"
+              }
+            ]
+          }
+        ],
+        "source": {
+          "title": "議案等に対する審査結果（令和８年第１回定例会 ２月１３日、３月２日、２４日）",
+          "localUrl": "/sources/itabashi-kugikai-r8/r80324_giankekka.pdf",
+          "originUrl": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/011/530/r80324_giankekka.pdf",
+          "archiveUrl": "https://web.archive.org/web/20261008163743/https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/011/530/r80324_giankekka.pdf"
+        }
+      }
+    }
+  ],
+  "131202": [
+    {
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "body": "練馬区議会",
+      "seats": 50,
+      "teisu": 50,
+      "asOf": "2025-07-01",
+      "asOfLabel": "2025年7月1日",
+      "factions": [
+        {
+          "name": "練馬区議会自由民主党",
+          "seats": 15,
+          "isIndependent": false
+        },
+        {
+          "name": "練馬区議会公明党",
+          "seats": 7,
+          "isIndependent": false
+        },
+        {
+          "name": "練馬区議会無所属・都民ファーストの会・国民民主党・ウェルビーイングな会",
+          "seats": 7,
+          "isIndependent": false
+        },
+        {
+          "name": "日本共産党練馬区議団",
+          "seats": 5,
+          "isIndependent": false
+        },
+        {
+          "name": "練馬区議会立憲民主党",
+          "seats": 5,
+          "isIndependent": false
+        },
+        {
+          "name": "インクルーシブな練馬をめざす会",
+          "seats": 3,
+          "isIndependent": false
+        },
+        {
+          "name": "生活者ネットワーク",
+          "seats": 2,
+          "isIndependent": false
+        },
+        {
+          "name": "つながる市民・練馬",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "練馬区議会福祉ループ",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "練馬区議会みどりの風",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "練馬区議会参政党",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "れいわ新選組練馬",
+          "seats": 1,
+          "isIndependent": false
+        },
+        {
+          "name": "練馬区議会日本維新の会",
+          "seats": 1,
+          "isIndependent": false
+        }
+      ],
+      "resolution": {
+        "billNo": "第1号",
+        "billName": "令和8年度練馬区一般会計予算",
+        "sessionLabel": "令和8年第一回定例会",
+        "decidedDate": "2026-03-13",
+        "decidedDateLabel": "令和8年3月13日",
+        "result": "可決"
+      },
+      "sourceTitle": "令和8年度 練馬区議会の構成（会派別議席数）と当初予算の議決",
+      "roster": {
+        "title": "会派別名簿（更新日 2025年7月1日）",
+        "localUrl": "/sources/nerima-kugikai-r8/070609kaiha.html",
+        "originUrl": "https://web.archive.org/web/20260214082849id_/https://www.city.nerima.tokyo.jp/gikai/giin/070609kaiha.html",
+        "archiveUrl": "https://web.archive.org/web/20260214082849id_/https://www.city.nerima.tokyo.jp/gikai/giin/070609kaiha.html"
+      },
+      "result": {
+        "title": "議決された議案（令和8年第一回定例会）",
+        "localUrl": "/sources/nerima-kugikai-r8/081giketugian.html",
+        "originUrl": "https://www.city.nerima.tokyo.jp/gikai/kaigi/r8/dai1teirei/081giketugian.html",
+        "archiveUrl": "https://web.archive.org/web/20260519102958/https://www.city.nerima.tokyo.jp/gikai/kaigi/r8/dai1teirei/081giketugian.html"
+      },
+      "minutesUrl": null,
+      "newsletterUrl": null
+    }
+  ],
+  "131211": [
+    {
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "body": "足立区議会",
+      "seats": 41,
+      "asOf": "2026-03-24",
+      "asOfLabel": "2026年3月24日",
+      "factions": [
+        {
+          "name": "足立区議会自由民主党",
+          "seats": 12,
+          "isIndependent": false
+        },
+        {
+          "name": "足立区議会公明党",
+          "seats": 12,
+          "isIndependent": false
+        },
+        {
+          "name": "日本共産党足立区議団",
+          "seats": 6,
+          "isIndependent": false
+        },
+        {
+          "name": "是々非々の会（維新・参政・無所属・立憲）",
+          "seats": 4,
+          "isIndependent": false
+        },
+        {
+          "name": "都民ファースト・無所属の会",
+          "seats": 3,
+          "isIndependent": false
+        },
+        {
+          "name": "れいわ新選組・市民派の会あだち",
+          "seats": 2,
+          "isIndependent": false
+        },
+        {
+          "name": "無会派（市川おさと）",
+          "seats": 1,
+          "isIndependent": true
+        },
+        {
+          "name": "無会派（野沢てつや）",
+          "seats": 1,
+          "isIndependent": true
+        }
+      ],
+      "resolution": {
+        "billNo": "第5号議案",
+        "billName": "令和8年度足立区一般会計予算",
+        "sessionLabel": "令和8年 第1回 定例会",
+        "decidedDate": "2026-03-24",
+        "decidedDateLabel": "令和8年3月24日",
+        "result": "原案可決"
+      },
+      "sourceTitle": "令和8年度 足立区議会の構成（会派別議席数）と当初予算の議決",
+      "roster": {
+        "title": "議案の審議結果など（令和８年第１回定例会）の会派別の列見出し",
+        "localUrl": "/sources/adachi-kugikai-r8/Kg112_R8.1T0324.pdf",
+        "originUrl": "https://www.gikai-adachi.jp/voices/GikaiDoc/attach/Congress/Kg112_R8.1T0324.pdf",
+        "archiveUrl": "https://www.gikai-adachi.jp/voices/GikaiDoc/attach/Congress/Kg112_R8.1T0324.pdf"
+      },
+      "result": {
+        "title": "議案の検索（令和8年 第1回 定例会）",
+        "localUrl": "/sources/adachi-kugikai-r8/g07_giketsu.asp_KWORD1_EXP_AND_KWORD2_BUNRUI_KAIGI_2026_02_19_2026_03_24_134_NENFROM_NENTO_KEKKA_SMODE_2_KENSU_100_Sflg_2.html",
+        "originUrl": "https://www.gikai-adachi.jp/g07_giketsu.asp?KWORD1=&EXP=AND&KWORD2=&BUNRUI=&KAIGI=2026/02/19,2026/03/24,134&NENFROM=&NENTO=&KEKKA=&SMODE=2&KENSU=100&Sflg=2",
+        "archiveUrl": "https://web.archive.org/web/20261008164847/https://www.gikai-adachi.jp/g07_giketsu.asp?KWORD1=&EXP=AND&KWORD2=&BUNRUI=&KAIGI=2026%2F02%2F19,2026%2F03%2F24,134&NENFROM=&NENTO=&KEKKA=&SMODE=2&KENSU=100&Sflg=2"
+      },
+      "minutesUrl": null,
+      "newsletterUrl": null
+    }
+  ],
+  "131237": [
+    {
+      "fy": "R8",
+      "fyLabel": "令和8年度 当初予算",
+      "body": "江戸川区議会",
+      "seats": 44,
+      "teisu": 44,
+      "asOf": "2026-03-25",
+      "asOfLabel": "2026年3月25日",
+      "factions": [
+        {
+          "name": "区議会自由民主党",
+          "seats": 13,
+          "isIndependent": false
+        },
+        {
+          "name": "江戸川区議会公明党",
+          "seats": 12,
+          "isIndependent": false
+        },
+        {
+          "name": "超党会派えどがわ",
+          "seats": 6,
+          "isIndependent": false
+        },
+        {
+          "name": "無所属の会",
+          "seats": 5,
+          "isIndependent": false
+        },
+        {
+          "name": "日本共産党江戸川区議員団",
+          "seats": 4,
+          "isIndependent": false
+        },
+        {
+          "name": "日本維新の会",
+          "seats": 2,
+          "isIndependent": false
+        },
+        {
+          "name": "無所属（五十嵐まさお）",
+          "seats": 1,
+          "isIndependent": true
+        },
+        {
+          "name": "無所属（滝沢泰子）",
+          "seats": 1,
+          "isIndependent": true
+        }
+      ],
+      "resolution": {
+        "billNo": "議案第1号",
+        "billName": "令和8年度江戸川区一般会計予算",
+        "sessionLabel": "令和8年 第1回 定例会",
+        "decidedDate": "2026-03-25",
+        "decidedDateLabel": "令和8年3月25日",
+        "result": "可決"
+      },
+      "sourceTitle": "令和8年度 江戸川区議会の構成（会派別議席数）と当初予算の議決",
+      "roster": {
+        "title": "令和8年第1回定例会 区長提出議案の審議結果（3月25日議決分・会派別の列見出し）",
+        "localUrl": "/sources/edogawa-kugikai-r8/Kg93_sinngikekka2.pdf",
+        "originUrl": "https://www.gikai.city.edogawa.tokyo.jp/voices/GikaiDoc/attach/Congress/Kg93_sinngikekka2.pdf",
+        "archiveUrl": "https://web.archive.org/web/20260325115052/https://www.gikai.city.edogawa.tokyo.jp/voices/GikaiDoc/attach/Congress/Kg93_sinngikekka2.pdf"
+      },
+      "result": {
+        "title": "議案一覧（令和8年 第1回 定例会）",
+        "localUrl": "/sources/edogawa-kugikai-r8/g07_giketsu.asp_KWORD1_EXP_AND_KWORD2_BUNRUI_KAIGI_2026_02_17_2026_03_25_149_NENFROM_NENTO_KEKKA_SMODE_2_KENSU_100_Sflg_2.html",
+        "originUrl": "https://www.gikai.city.edogawa.tokyo.jp/g07_giketsu.asp?KWORD1=&EXP=AND&KWORD2=&BUNRUI=&KAIGI=2026/02/17,2026/03/25,149&NENFROM=&NENTO=&KEKKA=&SMODE=2&KENSU=100&Sflg=2",
+        "archiveUrl": "https://web.archive.org/web/20261008165142/https://www.gikai.city.edogawa.tokyo.jp/g07_giketsu.asp?KWORD1=&EXP=AND&KWORD2=&BUNRUI=&KAIGI=2026%2F02%2F17,2026%2F03%2F25,149&NENFROM=&NENTO=&KEKKA=&SMODE=2&KENSU=100&Sflg=2"
+      },
+      "minutesUrl": null,
+      "newsletterUrl": null,
+      "votes": {
+        "basis": "member",
+        "stances": [
+          "賛成",
+          "反対",
+          "議長"
+        ],
+        "tally": {
+          "賛成": 38,
+          "議長": 1,
+          "反対": 5
+        },
+        "byFaction": [
+          {
+            "faction": "区議会自由民主党",
+            "counts": {
+              "賛成": 12,
+              "議長": 1
+            },
+            "members": [
+              {
+                "name": "高木秀隆",
+                "stance": "賛成"
+              },
+              {
+                "name": "岩田将和",
+                "stance": "賛成"
+              },
+              {
+                "name": "鹿倉勇",
+                "stance": "賛成"
+              },
+              {
+                "name": "勝山まゆみ",
+                "stance": "賛成"
+              },
+              {
+                "name": "小林智夫",
+                "stance": "賛成"
+              },
+              {
+                "name": "金井高志",
+                "stance": "賛成"
+              },
+              {
+                "name": "田島寛之",
+                "stance": "賛成"
+              },
+              {
+                "name": "野﨑信",
+                "stance": "賛成"
+              },
+              {
+                "name": "田中寿一",
+                "stance": "賛成"
+              },
+              {
+                "name": "福本光浩",
+                "stance": "賛成"
+              },
+              {
+                "name": "藤澤進一",
+                "stance": "賛成"
+              },
+              {
+                "name": "須賀精二",
+                "stance": "賛成"
+              },
+              {
+                "name": "島村和成",
+                "stance": "議長"
+              }
+            ]
+          },
+          {
+            "faction": "江戸川区議会公明党",
+            "counts": {
+              "賛成": 12
+            },
+            "members": [
+              {
+                "name": "川瀬泰徳",
+                "stance": "賛成"
+              },
+              {
+                "name": "竹内進",
+                "stance": "賛成"
+              },
+              {
+                "name": "関根麻美子",
+                "stance": "賛成"
+              },
+              {
+                "name": "窪田龍一",
+                "stance": "賛成"
+              },
+              {
+                "name": "中道貴",
+                "stance": "賛成"
+              },
+              {
+                "name": "佐々木勇一",
+                "stance": "賛成"
+              },
+              {
+                "name": "川合佐奈子",
+                "stance": "賛成"
+              },
+              {
+                "name": "佐野朋子",
+                "stance": "賛成"
+              },
+              {
+                "name": "伊藤照子",
+                "stance": "賛成"
+              },
+              {
+                "name": "堀江創一",
+                "stance": "賛成"
+              },
+              {
+                "name": "所隆宏",
+                "stance": "賛成"
+              },
+              {
+                "name": "太田公弘",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "超党会派えどがわ",
+            "counts": {
+              "賛成": 6
+            },
+            "members": [
+              {
+                "name": "笹本ひさし",
+                "stance": "賛成"
+              },
+              {
+                "name": "本西光枝",
+                "stance": "賛成"
+              },
+              {
+                "name": "中野ヘンリ",
+                "stance": "賛成"
+              },
+              {
+                "name": "きもと麻由",
+                "stance": "賛成"
+              },
+              {
+                "name": "伊藤ひとみ",
+                "stance": "賛成"
+              },
+              {
+                "name": "田村ひろし",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "無所属の会",
+            "counts": {
+              "賛成": 5
+            },
+            "members": [
+              {
+                "name": "神尾昭央",
+                "stance": "賛成"
+              },
+              {
+                "name": "金井しげる",
+                "stance": "賛成"
+              },
+              {
+                "name": "間宮由美",
+                "stance": "賛成"
+              },
+              {
+                "name": "桝秀行",
+                "stance": "賛成"
+              },
+              {
+                "name": "小林あすか",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "日本共産党江戸川区議員団",
+            "counts": {
+              "反対": 4
+            },
+            "members": [
+              {
+                "name": "小俣則子",
+                "stance": "反対"
+              },
+              {
+                "name": "牧野けんじ",
+                "stance": "反対"
+              },
+              {
+                "name": "大橋美枝子",
+                "stance": "反対"
+              },
+              {
+                "name": "太田彩花",
+                "stance": "反対"
+              }
+            ]
+          },
+          {
+            "faction": "日本維新の会",
+            "counts": {
+              "賛成": 2
+            },
+            "members": [
+              {
+                "name": "丸山れいこ",
+                "stance": "賛成"
+              },
+              {
+                "name": "林あきこ",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "無所属（五十嵐まさお）",
+            "counts": {
+              "賛成": 1
+            },
+            "members": [
+              {
+                "name": "五十嵐まさお",
+                "stance": "賛成"
+              }
+            ]
+          },
+          {
+            "faction": "無所属（滝沢泰子）",
+            "counts": {
+              "反対": 1
+            },
+            "members": [
+              {
+                "name": "滝沢泰子",
+                "stance": "反対"
+              }
+            ]
+          }
+        ],
+        "source": {
+          "title": "令和8年第1回定例会 区長提出議案に対する議員別審議結果（3月25日議決分）",
+          "localUrl": "/sources/edogawa-kugikai-r8/Kg93_sinngikekka2.pdf",
+          "originUrl": "https://www.gikai.city.edogawa.tokyo.jp/voices/GikaiDoc/attach/Congress/Kg93_sinngikekka2.pdf",
+          "archiveUrl": "https://web.archive.org/web/20260325115052/https://www.gikai.city.edogawa.tokyo.jp/voices/GikaiDoc/attach/Congress/Kg93_sinngikekka2.pdf"
+        }
+      }
+    }
+  ],
   "132012": [
     {
       "fy": "R8",

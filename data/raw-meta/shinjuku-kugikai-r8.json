@@ -1,0 +1,33 @@
+{
+  "sourceId": "shinjuku-kugikai-r8",
+  "files": [
+    {
+      "filename": "file08_00003.html",
+      "sha256": "c60bdafef9e9e1f462dd45ea49b83d44ca47d44d8198229763d91dd30c5366fc",
+      "bytes": 64263,
+      "fetchedAt": "2026-10-08T16:05:18.415Z",
+      "fetchedFrom": "https://web.archive.org/web/20251215030749id_/https://www.city.shinjuku.lg.jp/kusei/file08_00003.html"
+    },
+    {
+      "filename": "000452334.pdf",
+      "sha256": "22ba4f49b18c96bd1fa26241606257c05477f38e25ac46d6f8e4f416a2cedbf2",
+      "bytes": 341528,
+      "fetchedAt": "2026-10-08T16:05:18.417Z",
+      "fetchedFrom": "https://www.city.shinjuku.lg.jp/content/000452334.pdf"
+    },
+    {
+      "filename": "file08_05_0003820210204_00013.html",
+      "sha256": "869549fe3ba94ac28c6e8fd003d4ad71484501a78203fc7a885109aae4ab487c",
+      "bytes": 74198,
+      "fetchedAt": "2026-10-08T16:05:18.417Z",
+      "fetchedFrom": "https://www.city.shinjuku.lg.jp/kusei/file08_05_0003820210204_00013.html"
+    },
+    {
+      "filename": "gikai01_000116.html",
+      "sha256": "ff23e8d6d0b96779411b083a7bb0f807b97b03a2c89495f1d115ccfdf30355d1",
+      "bytes": 64207,
+      "fetchedAt": "2026-10-08T16:05:18.417Z",
+      "fetchedFrom": "https://www.city.shinjuku.lg.jp/kusei/gikai01_000116.html"
+    }
+  ]
+}

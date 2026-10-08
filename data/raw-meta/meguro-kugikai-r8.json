@@ -1,0 +1,26 @@
+{
+  "sourceId": "meguro-kugikai-r8",
+  "files": [
+    {
+      "filename": "kosei.html",
+      "sha256": "c9424617f3b1bab43d9a90a1165401ab1bbdf05c4132badb3b329ee55a1f6aa5",
+      "bytes": 26223,
+      "fetchedAt": "2026-10-08T16:05:18.440Z",
+      "fetchedFrom": "https://web.archive.org/web/20260214105549id_/https://www.city.meguro.tokyo.jp/kugikai/kusei/kugikai/kosei.html"
+    },
+    {
+      "filename": "k_r08-1teirei0323.pdf",
+      "sha256": "0814a944158897cca1fc39400bafc849de40bfc801de709c14110565434c3910",
+      "bytes": 69905,
+      "fetchedAt": "2026-10-08T16:05:18.441Z",
+      "fetchedFrom": "https://www.city.meguro.tokyo.jp/documents/19666/k_r08-1teirei0323.pdf"
+    },
+    {
+      "filename": "8-1teireigiketukeka.html",
+      "sha256": "8fc4f947f66c393a9e9e3ea67cecfe518aa2ca08d0c8f958d20ff79244f2526f",
+      "bytes": 31903,
+      "fetchedAt": "2026-10-08T16:05:18.441Z",
+      "fetchedFrom": "https://www.city.meguro.tokyo.jp/kugikai/kusei/kugikai/8-1teireigiketukeka.html"
+    }
+  ]
+}

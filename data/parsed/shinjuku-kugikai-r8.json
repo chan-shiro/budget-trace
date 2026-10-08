@@ -1,0 +1,206 @@
+{
+  "docType": "council-composition",
+  "sourceId": "shinjuku-kugikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.1",
+  "parsedAt": "2026-10-08T16:05:19.276Z",
+  "fiscalYear": "R8",
+  "body": "新宿区議会",
+  "seats": 38,
+  "asOf": "2025-05-23",
+  "factions": [
+    {
+      "name": "自民・参政クラブ",
+      "seats": 9,
+      "isIndependent": false,
+      "members": [
+        "ひやま真一",
+        "下村治生",
+        "渡辺みちたか",
+        "池田だいすけ",
+        "渡辺清人",
+        "大門さちえ",
+        "石川孝一",
+        "高阪まさし",
+        "青木仁美"
+      ],
+      "locator": {
+        "file": "file08_00003.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "新宿区議会公明党",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "有馬としろう",
+        "中村しんいち",
+        "野もとあきとし",
+        "豊島あつし",
+        "井下田栄一",
+        "木もとひろゆき",
+        "三沢ひで子",
+        "時光じゅん子"
+      ],
+      "locator": {
+        "file": "file08_00003.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "日本共産党新宿区議会議員団",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "沢田あゆみ",
+        "近藤なつ子",
+        "川村のりあき",
+        "佐藤佳一",
+        "藤原たけき",
+        "高月まな",
+        "杉山直子"
+      ],
+      "locator": {
+        "file": "file08_00003.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "新宿未来の会",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "のづケン",
+        "伊藤陽平",
+        "えのき秀隆",
+        "鈴木ひろみ",
+        "たなえひさし",
+        "かなくぼなな子"
+      ],
+      "locator": {
+        "file": "file08_00003.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "立憲民主党・無所属クラブ",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "志田雄一郎",
+        "小野裕次郎",
+        "山口かおる"
+      ],
+      "locator": {
+        "file": "file08_00003.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "日本維新の会・新宿区議団",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "古畑まさのり",
+        "おやまだ静香"
+      ],
+      "locator": {
+        "file": "file08_00003.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "現役世代に優しい新宿・減税の会",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "田中ゆきえ",
+        "渡辺やすし"
+      ],
+      "locator": {
+        "file": "file08_00003.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "れいわ新選組 新宿",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "さわいめぐみ"
+      ],
+      "locator": {
+        "file": "file08_00003.html",
+        "row": 8
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第 1 号議案",
+    "billName": "令和8年度新宿区一般会計予算",
+    "sessionLabel": "令和８年第１回定例会",
+    "decidedDate": "2026-03-24",
+    "decidedDateLabel": "令和8年3月24日",
+    "result": "可決",
+    "locator": {
+      "file": "000452334.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "会派構成（最終更新日 2025年5月23日・2025-12-15 の魚拓）",
+  "resultTitle": "議案の概要と審議結果（令和８年第１回定例会）",
+  "votes": {
+    "basis": "faction",
+    "sourceTitle": "議案の概要と審議結果（令和８年第１回定例会）",
+    "sourceFile": "000452334.pdf",
+    "columns": [
+      {
+        "label": "自参ク",
+        "faction": "自民・参政クラブ",
+        "stance": "賛成"
+      },
+      {
+        "label": "公明",
+        "faction": "新宿区議会公明党",
+        "stance": "賛成"
+      },
+      {
+        "label": "共産",
+        "faction": "日本共産党新宿区議会議員団",
+        "stance": "反対"
+      },
+      {
+        "label": "新宿会",
+        "faction": "新宿未来の会",
+        "stance": "賛成"
+      },
+      {
+        "label": "民無ク",
+        "faction": "立憲民主党・無所属クラブ",
+        "stance": "賛成"
+      },
+      {
+        "label": "維新",
+        "faction": "日本維新の会・新宿区議団",
+        "stance": "賛成"
+      },
+      {
+        "label": "現役",
+        "faction": "現役世代に優しい新宿・減税の会",
+        "stance": "賛成"
+      },
+      {
+        "label": "れいわ",
+        "faction": "れいわ新選組 新宿",
+        "stance": "反対"
+      },
+      {
+        "label": "渡辺清人",
+        "faction": "自民・参政クラブ",
+        "member": "渡辺清人",
+        "stance": "議長"
+      }
+    ]
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "docType": "council-composition",
+  "sourceId": "koto-kugikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.1",
+  "parsedAt": "2026-10-08T16:05:21.788Z",
+  "fiscalYear": "R8",
+  "body": "江東区議会",
+  "seats": 39,
+  "asOf": "2026-03-27",
+  "factions": [
+    {
+      "name": "江東区議会自民・参政・無所属クラブ",
+      "seats": 10,
+      "isIndependent": false,
+      "members": [
+        "井川りょうたろう",
+        "おおやね匠",
+        "金子ひさし",
+        "川北直人",
+        "釼先美彦",
+        "中嶋雅樹",
+        "堀川まさひろ",
+        "やしきだ綾香",
+        "山本香代子",
+        "吉田由紀子"
+      ],
+      "locator": {
+        "file": "no350.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "江東区議会公明党",
+      "seats": 9,
+      "isIndependent": false,
+      "members": [
+        "石川邦夫",
+        "河野清史",
+        "小嶋和芳",
+        "さがやまともえ",
+        "関根友子",
+        "髙村きよみ",
+        "中根たくや",
+        "矢次浩二",
+        "山下金吾"
+      ],
+      "locator": {
+        "file": "no350.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "江東新時代の会",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "鬼頭たつや",
+        "鈴木綾子",
+        "徳永雅博",
+        "中島雄太郎",
+        "吉田要"
+      ],
+      "locator": {
+        "file": "no350.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "江東区議会維新・国民・共生クラブ",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "加藤陽子",
+        "古賀じょうじ",
+        "二瓶文隆",
+        "松澤あいり"
+      ],
+      "locator": {
+        "file": "no350.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "日本共産党江東区議団",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "赤羽目たみお",
+        "正保みきお",
+        "菅谷俊一",
+        "西部ただし"
+      ],
+      "locator": {
+        "file": "no350.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "江東清風会",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "にしがき誠",
+        "星野博",
+        "米沢和裕"
+      ],
+      "locator": {
+        "file": "no350.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "無所属",
+      "seats": 4,
+      "isIndependent": true,
+      "members": [
+        "佐藤信夫",
+        "まにわ尚之",
+        "高野はやと",
+        "千田昌寛"
+      ],
+      "locator": {
+        "file": "no350.pdf",
+        "page": 8
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第5号",
+    "billName": "令和８年度江東区一般会計予算",
+    "sessionLabel": "令和８年第１回定例会",
+    "decidedDate": "2026-03-27",
+    "decidedDateLabel": "令和8年3月27日",
+    "result": "可決",
+    "locator": {
+      "file": "no350.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "こうとう区議会だより 第350号（令和8年5月21日発行）会派別所属議員（令和8年3月27日現在）",
+  "resultTitle": "こうとう区議会だより 第350号（令和8年第1回定例会）第１回定例会で審議した議案等一覧",
+  "votes": {
+    "basis": "faction",
+    "sourceTitle": "議案等の審議結果（令和８年第１回定例会）",
+    "sourceFile": "r8-1giketukekka.pdf",
+    "columns": [
+      {
+        "label": "自参無",
+        "faction": "江東区議会自民・参政・無所属クラブ",
+        "stance": "賛成"
+      },
+      {
+        "label": "公明",
+        "faction": "江東区議会公明党",
+        "stance": "賛成"
+      },
+      {
+        "label": "新時代",
+        "faction": "江東新時代の会",
+        "stance": "賛成"
+      },
+      {
+        "label": "共生",
+        "faction": "江東区議会維新・国民・共生クラブ",
+        "stance": "賛成"
+      },
+      {
+        "label": "共産",
+        "faction": "日本共産党江東区議団",
+        "stance": "反対"
+      },
+      {
+        "label": "清風会",
+        "faction": "江東清風会",
+        "stance": "賛成"
+      },
+      {
+        "label": "無所属",
+        "faction": "無所属",
+        "stance": "賛成"
+      },
+      {
+        "label": "市民",
+        "faction": "無所属",
+        "member": "まにわ尚之",
+        "stance": "反対"
+      },
+      {
+        "label": "立憲",
+        "faction": "無所属",
+        "member": "高野はやと",
+        "stance": "反対"
+      },
+      {
+        "label": "国是",
+        "faction": "無所属",
+        "member": "千田昌寛",
+        "stance": "賛成"
+      },
+      {
+        "label": "釼先美彦",
+        "faction": "江東区議会自民・参政・無所属クラブ",
+        "member": "釼先美彦",
+        "stance": "議長"
+      },
+      {
+        "label": "鬼頭たつや",
+        "faction": "江東新時代の会",
+        "member": "鬼頭たつや",
+        "stance": "欠席"
+      }
+    ]
+  }
+}

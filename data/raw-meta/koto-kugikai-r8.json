@@ -1,0 +1,29 @@
+{
+  "sourceId": "koto-kugikai-r8",
+  "files": [
+    {
+      "filename": "no350.pdf",
+      "sha256": "32be89153679c878a9eb0c4937329ee62cb7c4d450b850595e31083c27fd9b85",
+      "bytes": 2248669,
+      "fetchedAt": "2026-10-08T16:05:18.437Z",
+      "fetchedFrom": "https://www.city.koto.lg.jp/650103/kuse/kugikai/dayori/pdf/documents/documents/no350.pdf"
+    },
+    {
+      "filename": "r8-1giketukekka.pdf",
+      "sha256": "a4e9f54aca0c22b25129d21e889843bac0c682082bab751a2a2c37b847ac83da",
+      "bytes": 98375,
+      "fetchedAt": "2026-10-08T16:05:18.438Z",
+      "fetchedFrom": "https://www.city.koto.lg.jp/650102/documents/r8-1giketukekka.pdf"
+    },
+    {
+      "filename": "100000_Template_document_Id_2713.html",
+      "sha256": "a675cc2dc4afdb83220d5f23c20f41124ffb48770a557b07c77412e6fcfc0acd",
+      "bytes": 25755,
+      "fetchedAt": "2026-10-08T16:05:18.438Z",
+      "fetchedFrom": "https://www.city.koto.tokyo.dbsr.jp/index.php/100000?Template=document&Id=2713",
+      "transform": [
+        "ext:.html"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "docType": "council-composition",
+  "sourceId": "edogawa-kugikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.1",
+  "parsedAt": "2026-10-08T16:05:31.054Z",
+  "fiscalYear": "R8",
+  "body": "江戸川区議会",
+  "seats": 44,
+  "asOf": "2026-03-25",
+  "teisu": 44,
+  "factions": [
+    {
+      "name": "区議会自由民主党",
+      "seats": 13,
+      "isIndependent": false,
+      "members": [
+        "高木秀隆",
+        "岩田将和",
+        "鹿倉勇",
+        "勝山まゆみ",
+        "小林智夫",
+        "金井高志",
+        "田島寛之",
+        "野﨑信",
+        "田中寿一",
+        "福本光浩",
+        "藤澤進一",
+        "須賀精二",
+        "島村和成"
+      ],
+      "locator": {
+        "file": "Kg93_sinngikekka2.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "江戸川区議会公明党",
+      "seats": 12,
+      "isIndependent": false,
+      "members": [
+        "川瀬泰徳",
+        "竹内進",
+        "関根麻美子",
+        "窪田龍一",
+        "中道貴",
+        "佐々木勇一",
+        "川合佐奈子",
+        "佐野朋子",
+        "伊藤照子",
+        "堀江創一",
+        "所隆宏",
+        "太田公弘"
+      ],
+      "locator": {
+        "file": "Kg93_sinngikekka2.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "超党会派えどがわ",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "笹本ひさし",
+        "本西光枝",
+        "中野ヘンリ",
+        "きもと麻由",
+        "伊藤ひとみ",
+        "田村ひろし"
+      ],
+      "locator": {
+        "file": "Kg93_sinngikekka2.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無所属の会",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "神尾昭央",
+        "金井しげる",
+        "間宮由美",
+        "桝秀行",
+        "小林あすか"
+      ],
+      "locator": {
+        "file": "Kg93_sinngikekka2.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "日本共産党江戸川区議員団",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "小俣則子",
+        "牧野けんじ",
+        "大橋美枝子",
+        "太田彩花"
+      ],
+      "locator": {
+        "file": "Kg93_sinngikekka2.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "日本維新の会",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "丸山れいこ",
+        "林あきこ"
+      ],
+      "locator": {
+        "file": "Kg93_sinngikekka2.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無所属（五十嵐まさお）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "五十嵐まさお"
+      ],
+      "locator": {
+        "file": "Kg93_sinngikekka2.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無所属（滝沢泰子）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "滝沢泰子"
+      ],
+      "locator": {
+        "file": "Kg93_sinngikekka2.pdf",
+        "page": 1
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第1号",
+    "billName": "令和8年度江戸川区一般会計予算",
+    "sessionLabel": "令和8年 第1回 定例会",
+    "decidedDate": "2026-03-25",
+    "decidedDateLabel": "令和8年3月25日",
+    "result": "可決",
+    "locator": {
+      "file": "g07_giketsu.asp_KWORD1_EXP_AND_KWORD2_BUNRUI_KAIGI_2026_02_17_2026_03_25_149_NENFROM_NENTO_KEKKA_SMODE_2_KENSU_100_Sflg_2.html"
+    }
+  },
+  "rosterTitle": "令和8年第1回定例会 区長提出議案の審議結果（3月25日議決分・会派別の列見出し）",
+  "resultTitle": "議案一覧（令和8年 第1回 定例会）",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "令和8年第1回定例会 区長提出議案に対する議員別審議結果（3月25日議決分）",
+    "sourceFile": "Kg93_sinngikekka2.pdf",
+    "columns": [
+      {
+        "label": "高木秀隆",
+        "faction": "区議会自由民主党",
+        "member": "高木秀隆",
+        "stance": "賛成"
+      },
+      {
+        "label": "岩田将和",
+        "faction": "区議会自由民主党",
+        "member": "岩田将和",
+        "stance": "賛成"
+      },
+      {
+        "label": "鹿倉勇",
+        "faction": "区議会自由民主党",
+        "member": "鹿倉勇",
+        "stance": "賛成"
+      },
+      {
+        "label": "勝山まゆみ",
+        "faction": "区議会自由民主党",
+        "member": "勝山まゆみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "小林智夫",
+        "faction": "区議会自由民主党",
+        "member": "小林智夫",
+        "stance": "賛成"
+      },
+      {
+        "label": "金井高志",
+        "faction": "区議会自由民主党",
+        "member": "金井高志",
+        "stance": "賛成"
+      },
+      {
+        "label": "田島寛之",
+        "faction": "区議会自由民主党",
+        "member": "田島寛之",
+        "stance": "賛成"
+      },
+      {
+        "label": "野﨑信",
+        "faction": "区議会自由民主党",
+        "member": "野﨑信",
+        "stance": "賛成"
+      },
+      {
+        "label": "田中寿一",
+        "faction": "区議会自由民主党",
+        "member": "田中寿一",
+        "stance": "賛成"
+      },
+      {
+        "label": "福本光浩",
+        "faction": "区議会自由民主党",
+        "member": "福本光浩",
+        "stance": "賛成"
+      },
+      {
+        "label": "藤澤進一",
+        "faction": "区議会自由民主党",
+        "member": "藤澤進一",
+        "stance": "賛成"
+      },
+      {
+        "label": "須賀精二",
+        "faction": "区議会自由民主党",
+        "member": "須賀精二",
+        "stance": "賛成"
+      },
+      {
+        "label": "川瀬泰徳",
+        "faction": "江戸川区議会公明党",
+        "member": "川瀬泰徳",
+        "stance": "賛成"
+      },
+      {
+        "label": "竹内進",
+        "faction": "江戸川区議会公明党",
+        "member": "竹内進",
+        "stance": "賛成"
+      },
+      {
+        "label": "関根麻美子",
+        "faction": "江戸川区議会公明党",
+        "member": "関根麻美子",
+        "stance": "賛成"
+      },
+      {
+        "label": "窪田龍一",
+        "faction": "江戸川区議会公明党",
+        "member": "窪田龍一",
+        "stance": "賛成"
+      },
+      {
+        "label": "中道貴",
+        "faction": "江戸川区議会公明党",
+        "member": "中道貴",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐々木勇一",
+        "faction": "江戸川区議会公明党",
+        "member": "佐々木勇一",
+        "stance": "賛成"
+      },
+      {
+        "label": "川合佐奈子",
+        "faction": "江戸川区議会公明党",
+        "member": "川合佐奈子",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐野朋子",
+        "faction": "江戸川区議会公明党",
+        "member": "佐野朋子",
+        "stance": "賛成"
+      },
+      {
+        "label": "伊藤照子",
+        "faction": "江戸川区議会公明党",
+        "member": "伊藤照子",
+        "stance": "賛成"
+      },
+      {
+        "label": "堀江創一",
+        "faction": "江戸川区議会公明党",
+        "member": "堀江創一",
+        "stance": "賛成"
+      },
+      {
+        "label": "所隆宏",
+        "faction": "江戸川区議会公明党",
+        "member": "所隆宏",
+        "stance": "賛成"
+      },
+      {
+        "label": "太田公弘",
+        "faction": "江戸川区議会公明党",
+        "member": "太田公弘",
+        "stance": "賛成"
+      },
+      {
+        "label": "笹本ひさし",
+        "faction": "超党会派えどがわ",
+        "member": "笹本ひさし",
+        "stance": "賛成"
+      },
+      {
+        "label": "本西光枝",
+        "faction": "超党会派えどがわ",
+        "member": "本西光枝",
+        "stance": "賛成"
+      },
+      {
+        "label": "中野ヘンリ",
+        "faction": "超党会派えどがわ",
+        "member": "中野ヘンリ",
+        "stance": "賛成"
+      },
+      {
+        "label": "きもと麻由",
+        "faction": "超党会派えどがわ",
+        "member": "きもと麻由",
+        "stance": "賛成"
+      },
+      {
+        "label": "伊藤ひとみ",
+        "faction": "超党会派えどがわ",
+        "member": "伊藤ひとみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "田村ひろし",
+        "faction": "超党会派えどがわ",
+        "member": "田村ひろし",
+        "stance": "賛成"
+      },
+      {
+        "label": "神尾昭央",
+        "faction": "無所属の会",
+        "member": "神尾昭央",
+        "stance": "賛成"
+      },
+      {
+        "label": "金井しげる",
+        "faction": "無所属の会",
+        "member": "金井しげる",
+        "stance": "賛成"
+      },
+      {
+        "label": "間宮由美",
+        "faction": "無所属の会",
+        "member": "間宮由美",
+        "stance": "賛成"
+      },
+      {
+        "label": "桝秀行",
+        "faction": "無所属の会",
+        "member": "桝秀行",
+        "stance": "賛成"
+      },
+      {
+        "label": "小林あすか",
+        "faction": "無所属の会",
+        "member": "小林あすか",
+        "stance": "賛成"
+      },
+      {
+        "label": "小俣則子",
+        "faction": "日本共産党江戸川区議員団",
+        "member": "小俣則子",
+        "stance": "反対"
+      },
+      {
+        "label": "牧野けんじ",
+        "faction": "日本共産党江戸川区議員団",
+        "member": "牧野けんじ",
+        "stance": "反対"
+      },
+      {
+        "label": "大橋美枝子",
+        "faction": "日本共産党江戸川区議員団",
+        "member": "大橋美枝子",
+        "stance": "反対"
+      },
+      {
+        "label": "太田彩花",
+        "faction": "日本共産党江戸川区議員団",
+        "member": "太田彩花",
+        "stance": "反対"
+      },
+      {
+        "label": "丸山れいこ",
+        "faction": "日本維新の会",
+        "member": "丸山れいこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "林あきこ",
+        "faction": "日本維新の会",
+        "member": "林あきこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "五十嵐まさお",
+        "faction": "無所属（五十嵐まさお）",
+        "member": "五十嵐まさお",
+        "stance": "賛成"
+      },
+      {
+        "label": "滝沢泰子",
+        "faction": "無所属（滝沢泰子）",
+        "member": "滝沢泰子",
+        "stance": "反対"
+      },
+      {
+        "label": "島村和成",
+        "faction": "区議会自由民主党",
+        "member": "島村和成",
+        "stance": "議長"
+      }
+    ]
+  }
+}

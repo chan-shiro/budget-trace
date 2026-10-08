@@ -1,0 +1,549 @@
+{
+  "docType": "council-composition",
+  "sourceId": "suginami-kugikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.1",
+  "parsedAt": "2026-10-08T16:05:29.388Z",
+  "fiscalYear": "R8",
+  "body": "杉並区議会",
+  "seats": 47,
+  "asOf": "2026-03-19",
+  "factions": [
+    {
+      "name": "杉並区議会自由民主党",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "へんみ純一",
+        "わたなべ友貴",
+        "矢口やすゆき",
+        "大和田伸",
+        "浅井くにお",
+        "脇坂たつや",
+        "吉田あい",
+        "藤本なおや"
+      ],
+      "locator": {
+        "file": "1teigiankekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "日本共産党杉並区議団",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "和氣みき",
+        "小池めぐみ",
+        "酒井まさえ",
+        "山田耕平",
+        "富田たく",
+        "くすやま美紀"
+      ],
+      "locator": {
+        "file": "1teigiankekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "杉並区議会公明党",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "斉藤りか",
+        "山本ひろ子",
+        "中村康弘",
+        "川原口宏之",
+        "おおつき城一",
+        "渡辺富士雄"
+      ],
+      "locator": {
+        "file": "1teigiankekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "立憲民主党杉並区議団",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "松本浩一",
+        "前山なおこ",
+        "てらだはるか",
+        "安田マリ",
+        "ひわき岳"
+      ],
+      "locator": {
+        "file": "1teigiankekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "シスターフッド杉並",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "ブランシャー明日香",
+        "奥山たえこ",
+        "奥田雅子",
+        "そね文子",
+        "山名かなこ"
+      ],
+      "locator": {
+        "file": "1teigiankekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "維新・無所属議員団",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "鈴木ちづる",
+        "田中朝子",
+        "木梨もりよし",
+        "井口かづ子"
+      ],
+      "locator": {
+        "file": "1teigiankekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無所属・都民ファーストの会",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "井口えみ",
+        "宇田川ゆうじ",
+        "あかねがくぼ舞"
+      ],
+      "locator": {
+        "file": "1teigiankekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "安心・安全杉並の会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "倉本みか"
+      ],
+      "locator": {
+        "file": "1teigiankekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "参政党杉並",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "横田政直"
+      ],
+      "locator": {
+        "file": "1teigiankekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "都政を革新する会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "ほらぐちともこ"
+      ],
+      "locator": {
+        "file": "1teigiankekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "日本自由党杉並",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "田中ゆうたろう"
+      ],
+      "locator": {
+        "file": "1teigiankekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "杉並わくわく会議",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "松尾ゆり"
+      ],
+      "locator": {
+        "file": "1teigiankekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無所属（堀部やすし）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "堀部やすし"
+      ],
+      "locator": {
+        "file": "1teigiankekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "区政杉並クラブ",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "岩田いくま"
+      ],
+      "locator": {
+        "file": "1teigiankekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "far right",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "小林ゆみ"
+      ],
+      "locator": {
+        "file": "1teigiankekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "杉並区議会国民民主党",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "安斉あきら"
+      ],
+      "locator": {
+        "file": "1teigiankekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "杉並区議会立憲民主党",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "赤坂たまよ"
+      ],
+      "locator": {
+        "file": "1teigiankekka.pdf",
+        "page": 1
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第28号",
+    "billName": "令和8年度杉並区一般会計予算（予算特別委員会付託案件）",
+    "sessionLabel": "令和8年第1回定例会",
+    "decidedDate": "2026-03-19",
+    "decidedDateLabel": "令和8年3月19日",
+    "result": "原案可決",
+    "locator": {
+      "file": "24929.html"
+    }
+  },
+  "rosterTitle": "令和８年第１回定例会 議案等の審議結果（議員別）の列見出し（会派・議席番号順）",
+  "resultTitle": "令和8年第1回定例会議案・議決結果の一覧",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "令和８年第１回定例会 議案等の審議結果（議員別）",
+    "sourceFile": "1teigiankekka.pdf",
+    "columns": [
+      {
+        "label": "へんみ純一",
+        "faction": "杉並区議会自由民主党",
+        "member": "へんみ純一",
+        "stance": "反対"
+      },
+      {
+        "label": "わたなべ友貴",
+        "faction": "杉並区議会自由民主党",
+        "member": "わたなべ友貴",
+        "stance": "反対"
+      },
+      {
+        "label": "矢口やすゆき",
+        "faction": "杉並区議会自由民主党",
+        "member": "矢口やすゆき",
+        "stance": "反対"
+      },
+      {
+        "label": "大和田伸",
+        "faction": "杉並区議会自由民主党",
+        "member": "大和田伸",
+        "stance": "反対"
+      },
+      {
+        "label": "浅井くにお",
+        "faction": "杉並区議会自由民主党",
+        "member": "浅井くにお",
+        "stance": "反対"
+      },
+      {
+        "label": "脇坂たつや",
+        "faction": "杉並区議会自由民主党",
+        "member": "脇坂たつや",
+        "stance": "反対"
+      },
+      {
+        "label": "吉田あい",
+        "faction": "杉並区議会自由民主党",
+        "member": "吉田あい",
+        "stance": "反対"
+      },
+      {
+        "label": "藤本なおや",
+        "faction": "杉並区議会自由民主党",
+        "member": "藤本なおや",
+        "stance": "反対"
+      },
+      {
+        "label": "和氣みき",
+        "faction": "日本共産党杉並区議団",
+        "member": "和氣みき",
+        "stance": "賛成"
+      },
+      {
+        "label": "小池めぐみ",
+        "faction": "日本共産党杉並区議団",
+        "member": "小池めぐみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "酒井まさえ",
+        "faction": "日本共産党杉並区議団",
+        "member": "酒井まさえ",
+        "stance": "賛成"
+      },
+      {
+        "label": "山田耕平",
+        "faction": "日本共産党杉並区議団",
+        "member": "山田耕平",
+        "stance": "賛成"
+      },
+      {
+        "label": "富田たく",
+        "faction": "日本共産党杉並区議団",
+        "member": "富田たく",
+        "stance": "賛成"
+      },
+      {
+        "label": "くすやま美紀",
+        "faction": "日本共産党杉並区議団",
+        "member": "くすやま美紀",
+        "stance": "賛成"
+      },
+      {
+        "label": "斉藤りか",
+        "faction": "杉並区議会公明党",
+        "member": "斉藤りか",
+        "stance": "賛成"
+      },
+      {
+        "label": "山本ひろ子",
+        "faction": "杉並区議会公明党",
+        "member": "山本ひろ子",
+        "stance": "賛成"
+      },
+      {
+        "label": "中村康弘",
+        "faction": "杉並区議会公明党",
+        "member": "中村康弘",
+        "stance": "賛成"
+      },
+      {
+        "label": "川原口宏之",
+        "faction": "杉並区議会公明党",
+        "member": "川原口宏之",
+        "stance": "賛成"
+      },
+      {
+        "label": "おおつき城一",
+        "faction": "杉並区議会公明党",
+        "member": "おおつき城一",
+        "stance": "賛成"
+      },
+      {
+        "label": "渡辺富士雄",
+        "faction": "杉並区議会公明党",
+        "member": "渡辺富士雄",
+        "stance": "賛成"
+      },
+      {
+        "label": "松本浩一",
+        "faction": "立憲民主党杉並区議団",
+        "member": "松本浩一",
+        "stance": "賛成"
+      },
+      {
+        "label": "前山なおこ",
+        "faction": "立憲民主党杉並区議団",
+        "member": "前山なおこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "てらだはるか",
+        "faction": "立憲民主党杉並区議団",
+        "member": "てらだはるか",
+        "stance": "賛成"
+      },
+      {
+        "label": "安田マリ",
+        "faction": "立憲民主党杉並区議団",
+        "member": "安田マリ",
+        "stance": "賛成"
+      },
+      {
+        "label": "ひわき岳",
+        "faction": "立憲民主党杉並区議団",
+        "member": "ひわき岳",
+        "stance": "賛成"
+      },
+      {
+        "label": "ブランシャー明日香",
+        "faction": "シスターフッド杉並",
+        "member": "ブランシャー明日香",
+        "stance": "賛成"
+      },
+      {
+        "label": "奥山たえこ",
+        "faction": "シスターフッド杉並",
+        "member": "奥山たえこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "奥田雅子",
+        "faction": "シスターフッド杉並",
+        "member": "奥田雅子",
+        "stance": "賛成"
+      },
+      {
+        "label": "そね文子",
+        "faction": "シスターフッド杉並",
+        "member": "そね文子",
+        "stance": "賛成"
+      },
+      {
+        "label": "山名かなこ",
+        "faction": "シスターフッド杉並",
+        "member": "山名かなこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴木ちづる",
+        "faction": "維新・無所属議員団",
+        "member": "鈴木ちづる",
+        "stance": "賛成"
+      },
+      {
+        "label": "田中朝子",
+        "faction": "維新・無所属議員団",
+        "member": "田中朝子",
+        "stance": "賛成"
+      },
+      {
+        "label": "井口かづ子",
+        "faction": "維新・無所属議員団",
+        "member": "井口かづ子",
+        "stance": "賛成"
+      },
+      {
+        "label": "井口えみ",
+        "faction": "無所属・都民ファーストの会",
+        "member": "井口えみ",
+        "stance": "反対"
+      },
+      {
+        "label": "宇田川ゆうじ",
+        "faction": "無所属・都民ファーストの会",
+        "member": "宇田川ゆうじ",
+        "stance": "反対"
+      },
+      {
+        "label": "あかねがくぼ舞",
+        "faction": "無所属・都民ファーストの会",
+        "member": "あかねがくぼ舞",
+        "stance": "反対"
+      },
+      {
+        "label": "倉本みか",
+        "faction": "安心・安全杉並の会",
+        "member": "倉本みか",
+        "stance": "反対"
+      },
+      {
+        "label": "横田政直",
+        "faction": "参政党杉並",
+        "member": "横田政直",
+        "stance": "反対"
+      },
+      {
+        "label": "ほらぐちともこ",
+        "faction": "都政を革新する会",
+        "member": "ほらぐちともこ",
+        "stance": "反対"
+      },
+      {
+        "label": "田中ゆうたろう",
+        "faction": "日本自由党杉並",
+        "member": "田中ゆうたろう",
+        "stance": "反対"
+      },
+      {
+        "label": "松尾ゆり",
+        "faction": "杉並わくわく会議",
+        "member": "松尾ゆり",
+        "stance": "反対"
+      },
+      {
+        "label": "堀部やすし",
+        "faction": "無所属（堀部やすし）",
+        "member": "堀部やすし",
+        "stance": "反対"
+      },
+      {
+        "label": "岩田いくま",
+        "faction": "区政杉並クラブ",
+        "member": "岩田いくま",
+        "stance": "反対"
+      },
+      {
+        "label": "小林ゆみ",
+        "faction": "far right",
+        "member": "小林ゆみ",
+        "stance": "反対"
+      },
+      {
+        "label": "安斉あきら",
+        "faction": "杉並区議会国民民主党",
+        "member": "安斉あきら",
+        "stance": "反対"
+      },
+      {
+        "label": "赤坂たまよ",
+        "faction": "杉並区議会立憲民主党",
+        "member": "赤坂たまよ",
+        "stance": "賛成"
+      },
+      {
+        "label": "木梨もりよし",
+        "faction": "維新・無所属議員団",
+        "member": "木梨もりよし",
+        "stance": "議長"
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "sourceId": "nerima-kugikai-r8",
+  "files": [
+    {
+      "filename": "070609kaiha.html",
+      "sha256": "c68ef190069b67e4cd40d096ed5ce191910367a5ec33d991bd364f455c4aff8f",
+      "bytes": 26720,
+      "fetchedAt": "2026-10-08T16:05:18.456Z",
+      "fetchedFrom": "https://web.archive.org/web/20260214082849id_/https://www.city.nerima.tokyo.jp/gikai/giin/070609kaiha.html"
+    },
+    {
+      "filename": "081giketugian.html",
+      "sha256": "d48a9f153c209e6197bf39405c6d375f6e71026fbcb93c762a9cb78b5c83594f",
+      "bytes": 26778,
+      "fetchedAt": "2026-10-08T16:05:18.456Z",
+      "fetchedFrom": "https://www.city.nerima.tokyo.jp/gikai/kaigi/r8/dai1teirei/081giketugian.html"
+    },
+    {
+      "filename": "08031701.html",
+      "sha256": "f03a45030bf3ce6cd8a6f1cc34531c9872468ba4c5916db69ec00f82331bade8",
+      "bytes": 11389,
+      "fetchedAt": "2026-10-08T16:05:18.456Z",
+      "fetchedFrom": "https://web.archive.org/web/20260318094623id_/https://www.city.nerima.tokyo.jp/gikai/koshin/08031701.html"
+    },
+    {
+      "filename": "shikumi.html",
+      "sha256": "6c419bcc0161d5557f9bf7badc522c6cb7dc3f90bfc5601f7c49b0551c14d543",
+      "bytes": 13225,
+      "fetchedAt": "2026-10-08T16:05:18.457Z",
+      "fetchedFrom": "https://www.city.nerima.tokyo.jp/gikai/gikaiannai/shikumi.html"
+    },
+    {
+      "filename": "240-6-7.pdf",
+      "sha256": "445e7eb2da9b8430a6194c8af849ff8bb6868e8a052412c404fe3d4cfc2569ac",
+      "bytes": 591718,
+      "fetchedAt": "2026-10-08T16:05:18.458Z",
+      "fetchedFrom": "https://www.city.nerima.tokyo.jp/gikai/tayori/dayori240.files/240-6-7.pdf"
+    }
+  ]
+}

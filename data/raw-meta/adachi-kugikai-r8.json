@@ -1,0 +1,32 @@
+{
+  "sourceId": "adachi-kugikai-r8",
+  "files": [
+    {
+      "filename": "Kg112_R8.1T0324.pdf",
+      "sha256": "41df59aa2b65467902f1a064a3b9a71fa61720485ec755554d539ff0ac48ff6c",
+      "bytes": 409980,
+      "fetchedAt": "2026-10-08T16:05:18.459Z",
+      "fetchedFrom": "https://www.gikai-adachi.jp/voices/GikaiDoc/attach/Congress/Kg112_R8.1T0324.pdf"
+    },
+    {
+      "filename": "g07_giketsu.asp_KWORD1_EXP_AND_KWORD2_BUNRUI_KAIGI_2026_02_19_2026_03_24_134_NENFROM_NENTO_KEKKA_SMODE_2_KENSU_100_Sflg_2.html",
+      "sha256": "fa3911d5015460b527fe61849f88d244a747bf6b3cbe5b8ae3f63f6617c1cc81",
+      "bytes": 56650,
+      "fetchedAt": "2026-10-08T16:05:18.459Z",
+      "fetchedFrom": "https://www.gikai-adachi.jp/g07_giketsu.asp?KWORD1=&EXP=AND&KWORD2=&BUNRUI=&KAIGI=2026/02/19,2026/03/24,134&NENFROM=&NENTO=&KEKKA=&SMODE=2&KENSU=100&Sflg=2",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "g07_Kaiha.asp.html",
+      "sha256": "bb14786a59a8e8787359e363640598bdca3c2810a9064329e12b0d4e13b4a2c0",
+      "bytes": 15187,
+      "fetchedAt": "2026-10-08T16:05:18.460Z",
+      "fetchedFrom": "https://web.archive.org/web/20260215175032id_/https://www.gikai-adachi.jp/g07_Kaiha.asp",
+      "transform": [
+        "ext:.html"
+      ]
+    }
+  ]
+}

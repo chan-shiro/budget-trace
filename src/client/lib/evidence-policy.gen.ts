@@ -20970,5 +20970,449 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.oita.oita.jp/o186/shigikai/kaiginokekka/documents/giketukekka.pdf",
     "license": "大分市ホームページ全体および大分市ホームページに掲載されている個々の情報（文章、写真、イラストなど）は、大分市または第三者が有する著作権により保護されています。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で転載・複製・改変などはできません。",
     "target": "file"
+  },
+  "/sources/chiyoda-kugikai-r8/index.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260301085133id_/https://gikai-chiyoda-tokyo.jp/about/kaiha/index.html",
+    "license": "千代田区議会のホームページに掲載している情報は、著作権の対象となっており、著作権法により保護されています。「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "page"
+  },
+  "/sources/chiyoda-kugikai-r8/20261teikekka.pdf": {
+    "mode": "origin",
+    "href": "https://gikai-chiyoda-tokyo.jp/kaigi/kekka/files/20261teikekka.pdf",
+    "license": "千代田区議会のホームページに掲載している情報は、著作権の対象となっており、著作権法により保護されています。「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/chiyoda-kugikai-r8/20260319honkaigikiroku.pdf": {
+    "mode": "origin",
+    "href": "https://gikai-chiyoda-tokyo.jp/katsudou/docs/20260319honkaigikiroku.pdf",
+    "license": "千代田区議会のホームページに掲載している情報は、著作権の対象となっており、著作権法により保護されています。「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/chiyoda-kugikai-r8/277dayori.pdf": {
+    "mode": "origin",
+    "href": "https://gikai-chiyoda-tokyo.jp/katsudou/docs/277dayori.pdf",
+    "license": "千代田区議会のホームページに掲載している情報は、著作権の対象となっており、著作権法により保護されています。「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/chiyoda-kugikai-r8/jisedai.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260123150107id_/https://gikai-chiyoda-tokyo.jp/about/kaiha/jisedai.html",
+    "license": "千代田区議会のホームページに掲載している情報は、著作権の対象となっており、著作権法により保護されています。「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "page"
+  },
+  "/sources/chiyoda-kugikai-r8/jimintou.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20251212185737id_/https://gikai-chiyoda-tokyo.jp/about/kaiha/jimintou.html",
+    "license": "千代田区議会のホームページに掲載している情報は、著作権の対象となっており、著作権法により保護されています。「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "page"
+  },
+  "/sources/chiyoda-kugikai-r8/jimin.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260305165521id_/https://gikai-chiyoda-tokyo.jp/about/kaiha/jimin.html",
+    "license": "千代田区議会のホームページに掲載している情報は、著作権の対象となっており、著作権法により保護されています。「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "page"
+  },
+  "/sources/chiyoda-kugikai-r8/koumei.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260123131431id_/https://gikai-chiyoda-tokyo.jp/about/kaiha/koumei.html",
+    "license": "千代田区議会のホームページに掲載している情報は、著作権の対象となっており、著作権法により保護されています。「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "page"
+  },
+  "/sources/chiyoda-kugikai-r8/kyousantou.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260305163946id_/https://gikai-chiyoda-tokyo.jp/about/kaiha/kyousantou.html",
+    "license": "千代田区議会のホームページに掲載している情報は、著作権の対象となっており、著作権法により保護されています。「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "page"
+  },
+  "/sources/chiyoda-kugikai-r8/kokumin.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260305173059id_/https://gikai-chiyoda-tokyo.jp/about/kaiha/kokumin.html",
+    "license": "千代田区議会のホームページに掲載している情報は、著作権の対象となっており、著作権法により保護されています。「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "page"
+  },
+  "/sources/chiyoda-kugikai-r8/koe.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20251109164925id_/https://gikai-chiyoda-tokyo.jp/about/kaiha/koe.html",
+    "license": "千代田区議会のホームページに掲載している情報は、著作権の対象となっており、著作権法により保護されています。「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "page"
+  },
+  "/sources/chiyoda-kugikai-r8/ishin.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260208115830id_/https://gikai-chiyoda-tokyo.jp/about/kaiha/ishin.html",
+    "license": "千代田区議会のホームページに掲載している情報は、著作権の対象となっており、著作権法により保護されています。「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "page"
+  },
+  "/sources/minato-kugikai-r8/0000002539.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260211192957id_/https://www.gikai.city.minato.tokyo.jp/0000002539.html",
+    "license": "港区議会ホームページ（以下、「区議会ホームページ」という。）の文書や画像等のファイル、およびその内容に関する著作権は、原則として港区に帰属します。また、一部の画像の著作権は現著作権者が所有しています。 ／ 港区公式ホームページ: 港区ホームページ上の文書や画像等の各ファイル、およびその内容に関する諸権利は、原則として港区に帰属します。記載内容の無断での転載は禁じます。もし、記載内容について転載を希望される場合は、その旨下記までご連絡ください。",
+    "target": "page"
+  },
+  "/sources/minato-kugikai-r8/g07_giketsu.asp_Sflg_2_kaigi_2026_2F02_2F18_2C2026_2F03_2F18_2C140.html": {
+    "mode": "origin",
+    "href": "https://gikai2.city.minato.tokyo.jp/g07_giketsu.asp?Sflg=2&kaigi=2026%2F02%2F18%2C2026%2F03%2F18%2C140",
+    "license": "港区議会ホームページ（以下、「区議会ホームページ」という。）の文書や画像等のファイル、およびその内容に関する著作権は、原則として港区に帰属します。また、一部の画像の著作権は現著作権者が所有しています。 ／ 港区公式ホームページ: 港区ホームページ上の文書や画像等の各ファイル、およびその内容に関する諸権利は、原則として港区に帰属します。記載内容の無断での転載は禁じます。もし、記載内容について転載を希望される場合は、その旨下記までご連絡ください。",
+    "target": "file"
+  },
+  "/sources/minato-kugikai-r8/g07_Giketsu_View.asp_SrchID_3535_Sflg_2.html": {
+    "mode": "origin",
+    "href": "https://gikai2.city.minato.tokyo.jp/g07_Giketsu_View.asp?SrchID=3535&Sflg=2",
+    "license": "港区議会ホームページ（以下、「区議会ホームページ」という。）の文書や画像等のファイル、およびその内容に関する著作権は、原則として港区に帰属します。また、一部の画像の著作権は現著作権者が所有しています。 ／ 港区公式ホームページ: 港区ホームページ上の文書や画像等の各ファイル、およびその内容に関する諸権利は、原則として港区に帰属します。記載内容の無断での転載は禁じます。もし、記載内容について転載を希望される場合は、その旨下記までご連絡ください。",
+    "target": "file"
+  },
+  "/sources/shinjuku-kugikai-r8/file08_00003.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20251215030749id_/https://www.city.shinjuku.lg.jp/kusei/file08_00003.html",
+    "license": "新宿区公式ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は新宿区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に問合せ担当課または区政情報課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "page"
+  },
+  "/sources/shinjuku-kugikai-r8/000452334.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.shinjuku.lg.jp/content/000452334.pdf",
+    "license": "新宿区公式ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は新宿区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に問合せ担当課または区政情報課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "file"
+  },
+  "/sources/shinjuku-kugikai-r8/file08_05_0003820210204_00013.html": {
+    "mode": "origin",
+    "href": "https://www.city.shinjuku.lg.jp/kusei/file08_05_0003820210204_00013.html",
+    "license": "新宿区公式ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は新宿区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に問合せ担当課または区政情報課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "page"
+  },
+  "/sources/shinjuku-kugikai-r8/gikai01_000116.html": {
+    "mode": "origin",
+    "href": "https://www.city.shinjuku.lg.jp/kusei/gikai01_000116.html",
+    "license": "新宿区公式ホームページから発信するコンテンツ（テキスト、画像、PDF、そのほかのデータ）の著作権は新宿区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。掲載されている情報は、個人的かつ非営利的な使用目的だけのために利用する場合に限り、複製、使用、ダウンロードすることができます。著作権法上の「私的使用」や「引用」の範囲を越えて、本ページのコンテンツの使用を希望する場合は事前に問合せ担当課または区政情報課までお問い合わせください。事前の許可がない限り、転載、変更、発行、配布、掲示などは一切できません。",
+    "target": "page"
+  },
+  "/sources/bunkyo-kugikai-r8/p007737.html": {
+    "mode": "origin",
+    "href": "https://www.city.bunkyo.lg.jp/kugikai/p007737.html",
+    "license": "文京区ホームページから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は文京区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの文書などについて転用などを希望する場合は、各ページのお問い合わせ先にご相談ください。",
+    "target": "page"
+  },
+  "/sources/bunkyo-kugikai-r8/giketukekka080317.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.bunkyo.lg.jp/documents/6766/giketukekka080317.pdf",
+    "license": "文京区ホームページから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は文京区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの文書などについて転用などを希望する場合は、各ページのお問い合わせ先にご相談ください。",
+    "target": "file"
+  },
+  "/sources/bunkyo-kugikai-r8/p007870.html": {
+    "mode": "origin",
+    "href": "https://www.city.bunkyo.lg.jp/kugikai/p007870.html",
+    "license": "文京区ホームページから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は文京区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの文書などについて転用などを希望する場合は、各ページのお問い合わせ先にご相談ください。",
+    "target": "page"
+  },
+  "/sources/bunkyo-kugikai-r8/dayori222_080425.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.bunkyo.lg.jp/documents/7139/dayori222_080425.pdf",
+    "license": "文京区ホームページから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は文京区に帰属します。また、一部の画像などの著作権は原著作者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの文書などについて転用などを希望する場合は、各ページのお問い合わせ先にご相談ください。",
+    "target": "file"
+  },
+  "/sources/taito-kugikai-r8/kaihabetsu.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260313051229id_/https://www.city.taito.lg.jp/kugikai/shokai/kaihabetsu.html",
+    "license": "台東区議会ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "page"
+  },
+  "/sources/taito-kugikai-r8/08-dai1kai-kekka.html": {
+    "mode": "origin",
+    "href": "https://www.city.taito.lg.jp/kugikai/kaigi/honkaigi/r8/r8tei1/08-dai1kai-kekka.html",
+    "license": "台東区議会ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "page"
+  },
+  "/sources/taito-kugikai-r8/No249_01-08.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.taito.lg.jp/kugikai/dayori/dayori/r8/249.files/No249_01-08.pdf",
+    "license": "台東区議会ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/taito-kugikai-r8/honR080326.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.taito.lg.jp/kugikai/kaigi/sokuhouban/sokuhouban.files/honR080326.pdf",
+    "license": "台東区議会ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/taito-kugikai-r8/shikumi.html": {
+    "mode": "origin",
+    "href": "https://www.city.taito.lg.jp/kugikai/about/shikumi.html",
+    "license": "台東区議会ホームページに掲載されている内容（テキスト、画像、PDFその他のデータ）の著作権は台東区に帰属します。ただし、一部の画像などの著作権は原著作者が所有しています。原則、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "page"
+  },
+  "/sources/sumida-kugikai-r8/dayori_246_5-8.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sumida.lg.jp/kugikai/kugikaidayori/R8_dayori.files/dayori_246_5-8.pdf",
+    "license": "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。",
+    "target": "file"
+  },
+  "/sources/sumida-kugikai-r8/giantosanpi083030.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sumida.lg.jp/kugikai/kaigi_info/sanpinojokyo/giantosanpi.files/giantosanpi083030.pdf",
+    "license": "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。",
+    "target": "file"
+  },
+  "/sources/sumida-kugikai-r8/dayori_245_1-5_s.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.sumida.lg.jp/kugikai/kugikaidayori/R8_dayori.files/dayori_245_1-5_s.pdf",
+    "license": "本サイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として墨田区に帰属します。また、一部の画像等の著作権は、原著作者が所有しています。著作権法上認められている行為を除き、本サイト上の文書・画像等の無断使用・転載を禁止します。使用を希望する場合は、コンテンツの担当課までお問合せください。",
+    "target": "file"
+  },
+  "/sources/koto-kugikai-r8/no350.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koto.lg.jp/650103/kuse/kugikai/dayori/pdf/documents/documents/no350.pdf",
+    "license": "江東区議会公式サイトから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は江東区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの情報の利用などを御希望の場合は、コンテンツの所管係までお問い合わせください。また、いかなる場合であっても、掲載資料の使用に際して、発生した損害等については一切の責任を負いかねます。御承知おきください。",
+    "target": "file"
+  },
+  "/sources/koto-kugikai-r8/r8-1giketukekka.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.koto.lg.jp/650102/documents/r8-1giketukekka.pdf",
+    "license": "江東区議会公式サイトから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は江東区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの情報の利用などを御希望の場合は、コンテンツの所管係までお問い合わせください。また、いかなる場合であっても、掲載資料の使用に際して、発生した損害等については一切の責任を負いかねます。御承知おきください。",
+    "target": "file"
+  },
+  "/sources/koto-kugikai-r8/100000_Template_document_Id_2713.html": {
+    "mode": "origin",
+    "href": "https://www.city.koto.tokyo.dbsr.jp/index.php/100000?Template=document&Id=2713",
+    "license": "江東区議会公式サイトから発信するコンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は江東区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。本サイト上の文書・画像などの無断使用・転載、二次利用を禁止します。これらの情報の利用などを御希望の場合は、コンテンツの所管係までお問い合わせください。また、いかなる場合であっても、掲載資料の使用に際して、発生した損害等については一切の責任を負いかねます。御承知おきください。",
+    "target": "file"
+  },
+  "/sources/shinagawa-kugikai-r8/group.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260312074626id_/https://gikai.city.shinagawa.tokyo.jp/profile/group",
+    "license": "品川区議会ホームページ（https://gikai.city.shinagawa.tokyo.jp/）上の情報・画像・図表等は、特に明示がない限り、その著作権を品川区が保有します(一部の画像等の著作権は、原著作者が保有します)。著作権法上認められた場合を除き、無断で引用・転載・複製することを禁じます。",
+    "target": "file"
+  },
+  "/sources/shinagawa-kugikai-r8/r08_01t_s.pdf": {
+    "mode": "origin",
+    "href": "https://gikai.city.shinagawa.tokyo.jp/wp-content/themes/shinagawakugikai/pdf/r08_01t_s.pdf",
+    "license": "品川区議会ホームページ（https://gikai.city.shinagawa.tokyo.jp/）上の情報・画像・図表等は、特に明示がない限り、その著作権を品川区が保有します(一部の画像等の著作権は、原著作者が保有します)。著作権法上認められた場合を除き、無断で引用・転載・複製することを禁じます。",
+    "target": "file"
+  },
+  "/sources/shinagawa-kugikai-r8/100000_Template_document_Id_7356.html": {
+    "mode": "origin",
+    "href": "https://kaigiroku.city.shinagawa.tokyo.jp/index.php/100000?Template=document&Id=7356",
+    "license": "品川区議会ホームページ（https://gikai.city.shinagawa.tokyo.jp/）上の情報・画像・図表等は、特に明示がない限り、その著作権を品川区が保有します(一部の画像等の著作権は、原著作者が保有します)。著作権法上認められた場合を除き、無断で引用・転載・複製することを禁じます。",
+    "target": "file"
+  },
+  "/sources/shinagawa-kugikai-r8/history.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260401205950id_/https://gikai.city.shinagawa.tokyo.jp/about/history",
+    "license": "品川区議会ホームページ（https://gikai.city.shinagawa.tokyo.jp/）上の情報・画像・図表等は、特に明示がない限り、その著作権を品川区が保有します(一部の画像等の著作権は、原著作者が保有します)。著作権法上認められた場合を除き、無断で引用・転載・複製することを禁じます。",
+    "target": "file"
+  },
+  "/sources/meguro-kugikai-r8/kosei.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260214105549id_/https://www.city.meguro.tokyo.jp/kugikai/kusei/kugikai/kosei.html",
+    "license": "目黒区公式ウェブサイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として目黒区に帰属します。なお、一部の画像等の著作権は、原著作者が所有しています。／目黒区公式ウェブサイト上の文書・画像等の無断使用・転載を禁止します。",
+    "target": "page"
+  },
+  "/sources/meguro-kugikai-r8/k_r08-1teirei0323.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.meguro.tokyo.jp/documents/19666/k_r08-1teirei0323.pdf",
+    "license": "目黒区公式ウェブサイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として目黒区に帰属します。なお、一部の画像等の著作権は、原著作者が所有しています。／目黒区公式ウェブサイト上の文書・画像等の無断使用・転載を禁止します。",
+    "target": "file"
+  },
+  "/sources/meguro-kugikai-r8/8-1teireigiketukeka.html": {
+    "mode": "origin",
+    "href": "https://www.city.meguro.tokyo.jp/kugikai/kusei/kugikai/8-1teireigiketukeka.html",
+    "license": "目黒区公式ウェブサイト上の文書や画像等の各ファイル、及びその内容に関する諸権利は、原則として目黒区に帰属します。なお、一部の画像等の著作権は、原著作者が所有しています。／目黒区公式ウェブサイト上の文書・画像等の無断使用・転載を禁止します。",
+    "target": "page"
+  },
+  "/sources/ota-kugikai-r8/iinkaimeibo.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260215131259id_/https://www.city.ota.tokyo.jp/gikai/shoukai/iinkaimeibo.html",
+    "license": "大田区ホームページ上の文書や画像などの各ファイル、及びその内容に関する諸権利は、原則として大田区に帰属しています。また、一部の画像などの著作権は、原著作権者が所有しています。／大田区ホームページ上の文書や画像などについては、「私的使用のための複製」や「引用」など著作権法上認められた場合や大田区がオープンデータとして公開しているものを除き、無断での使用・転載、二次利用はできません。／大田区がオープンデータとして公開しているもの以外の文書などについて転用等を希望される場合は、各ページのお問い合わせ先の所属に、ご相談ください。",
+    "target": "page"
+  },
+  "/sources/ota-kugikai-r8/r0801teirei_kuchogian.html": {
+    "mode": "origin",
+    "href": "https://www.city.ota.tokyo.jp/gikai/kugikai_katsudou/honkaigi/r_8/1teirei/r0801teirei_kuchogian.html",
+    "license": "大田区ホームページ上の文書や画像などの各ファイル、及びその内容に関する諸権利は、原則として大田区に帰属しています。また、一部の画像などの著作権は、原著作権者が所有しています。／大田区ホームページ上の文書や画像などについては、「私的使用のための複製」や「引用」など著作権法上認められた場合や大田区がオープンデータとして公開しているものを除き、無断での使用・転載、二次利用はできません。／大田区がオープンデータとして公開しているもの以外の文書などについて転用等を希望される場合は、各ページのお問い合わせ先の所属に、ご相談ください。",
+    "target": "page"
+  },
+  "/sources/ota-kugikai-r8/r0801teirei_taido.html": {
+    "mode": "origin",
+    "href": "https://www.city.ota.tokyo.jp/gikai/kugikai_katsudou/honkaigi/r_8/1teirei/r0801teirei_taido.html",
+    "license": "大田区ホームページ上の文書や画像などの各ファイル、及びその内容に関する諸権利は、原則として大田区に帰属しています。また、一部の画像などの著作権は、原著作権者が所有しています。／大田区ホームページ上の文書や画像などについては、「私的使用のための複製」や「引用」など著作権法上認められた場合や大田区がオープンデータとして公開しているものを除き、無断での使用・転載、二次利用はできません。／大田区がオープンデータとして公開しているもの以外の文書などについて転用等を希望される場合は、各ページのお問い合わせ先の所属に、ご相談ください。",
+    "target": "page"
+  },
+  "/sources/ota-kugikai-r8/VoiJson.exe_ACT_200_FINO_4460_CHARSET_UTF8": {
+    "mode": "origin",
+    "href": "https://www.gikai-ota-tokyo.jp/voices2/cgi/VoiJson.exe?ACT=200&FINO=4460&CHARSET=UTF8",
+    "license": "大田区ホームページ上の文書や画像などの各ファイル、及びその内容に関する諸権利は、原則として大田区に帰属しています。また、一部の画像などの著作権は、原著作権者が所有しています。／大田区ホームページ上の文書や画像などについては、「私的使用のための複製」や「引用」など著作権法上認められた場合や大田区がオープンデータとして公開しているものを除き、無断での使用・転載、二次利用はできません。／大田区がオープンデータとして公開しているもの以外の文書などについて転用等を希望される場合は、各ページのお問い合わせ先の所属に、ご相談ください。",
+    "target": "file"
+  },
+  "/sources/nakano-kugikai-r8/giin_list.html_kaiha_id_1.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260208160940id_/https://kugikai-nakano.jp/giin_list.html?kaiha_id=1",
+    "license": "中野区議会ホームページ上の文書や画像等のファイル、およびその内容に関する著作権は、原則として中野区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。 当ホームページ上の文書や画像等の無断での使用・転載・引用、二次利用を禁じます。当ホームページの内容の利用を希望する場合は、事前に中野区議会事務局にご相談ください。",
+    "target": "page"
+  },
+  "/sources/nakano-kugikai-r8/giin_list.html_kaiha_id_2.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260208161106id_/https://kugikai-nakano.jp/giin_list.html?kaiha_id=2",
+    "license": "中野区議会ホームページ上の文書や画像等のファイル、およびその内容に関する著作権は、原則として中野区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。 当ホームページ上の文書や画像等の無断での使用・転載・引用、二次利用を禁じます。当ホームページの内容の利用を希望する場合は、事前に中野区議会事務局にご相談ください。",
+    "target": "page"
+  },
+  "/sources/nakano-kugikai-r8/giin_list.html_kaiha_id_3.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260208161104id_/https://kugikai-nakano.jp/giin_list.html?kaiha_id=3",
+    "license": "中野区議会ホームページ上の文書や画像等のファイル、およびその内容に関する著作権は、原則として中野区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。 当ホームページ上の文書や画像等の無断での使用・転載・引用、二次利用を禁じます。当ホームページの内容の利用を希望する場合は、事前に中野区議会事務局にご相談ください。",
+    "target": "page"
+  },
+  "/sources/nakano-kugikai-r8/giin_list.html_kaiha_id_4.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260208161109id_/https://kugikai-nakano.jp/giin_list.html?kaiha_id=4",
+    "license": "中野区議会ホームページ上の文書や画像等のファイル、およびその内容に関する著作権は、原則として中野区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。 当ホームページ上の文書や画像等の無断での使用・転載・引用、二次利用を禁じます。当ホームページの内容の利用を希望する場合は、事前に中野区議会事務局にご相談ください。",
+    "target": "page"
+  },
+  "/sources/nakano-kugikai-r8/giin_list.html_kaiha_id_5.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260208161108id_/https://kugikai-nakano.jp/giin_list.html?kaiha_id=5",
+    "license": "中野区議会ホームページ上の文書や画像等のファイル、およびその内容に関する著作権は、原則として中野区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。 当ホームページ上の文書や画像等の無断での使用・転載・引用、二次利用を禁じます。当ホームページの内容の利用を希望する場合は、事前に中野区議会事務局にご相談ください。",
+    "target": "page"
+  },
+  "/sources/nakano-kugikai-r8/giin_list.html_kaiha_id_8.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260208161104id_/https://kugikai-nakano.jp/giin_list.html?kaiha_id=8",
+    "license": "中野区議会ホームページ上の文書や画像等のファイル、およびその内容に関する著作権は、原則として中野区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。 当ホームページ上の文書や画像等の無断での使用・転載・引用、二次利用を禁じます。当ホームページの内容の利用を希望する場合は、事前に中野区議会事務局にご相談ください。",
+    "target": "page"
+  },
+  "/sources/nakano-kugikai-r8/giin_list.html_kaiha_id_9.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260208161106id_/https://kugikai-nakano.jp/giin_list.html?kaiha_id=9",
+    "license": "中野区議会ホームページ上の文書や画像等のファイル、およびその内容に関する著作権は、原則として中野区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。 当ホームページ上の文書や画像等の無断での使用・転載・引用、二次利用を禁じます。当ホームページの内容の利用を希望する場合は、事前に中野区議会事務局にご相談ください。",
+    "target": "page"
+  },
+  "/sources/nakano-kugikai-r8/giin_list.html_kaiha_id_10.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260208161104id_/https://kugikai-nakano.jp/giin_list.html?kaiha_id=10",
+    "license": "中野区議会ホームページ上の文書や画像等のファイル、およびその内容に関する著作権は、原則として中野区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。 当ホームページ上の文書や画像等の無断での使用・転載・引用、二次利用を禁じます。当ホームページの内容の利用を希望する場合は、事前に中野区議会事務局にご相談ください。",
+    "target": "page"
+  },
+  "/sources/nakano-kugikai-r8/289-26427114355.pdf": {
+    "mode": "origin",
+    "href": "https://kugikai-nakano.jp/dayori/289-26427114355.pdf",
+    "license": "中野区議会ホームページ上の文書や画像等のファイル、およびその内容に関する著作権は、原則として中野区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。 当ホームページ上の文書や画像等の無断での使用・転載・引用、二次利用を禁じます。当ホームページの内容の利用を希望する場合は、事前に中野区議会事務局にご相談ください。",
+    "target": "file"
+  },
+  "/sources/nakano-kugikai-r8/honkaigi.html_nen_2026_gian_id_119.html": {
+    "mode": "origin",
+    "href": "https://kugikai-nakano.jp/honkaigi.html?nen=2026&gian_id=119",
+    "license": "中野区議会ホームページ上の文書や画像等のファイル、およびその内容に関する著作権は、原則として中野区に帰属します。また、一部の画像などの著作権は原著作権者が所有しています。 当ホームページ上の文書や画像等の無断での使用・転載・引用、二次利用を禁じます。当ホームページの内容の利用を希望する場合は、事前に中野区議会事務局にご相談ください。",
+    "target": "page"
+  },
+  "/sources/suginami-kugikai-r8/1teigiankekka.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/documents/24929/1teigiankekka.pdf",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。 ただし、一部の画像などの著作権は、原著作者が所有しています。 私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/suginami-kugikai-r8/24929.html": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/kugikai/s117/24929.html",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。 ただし、一部の画像などの著作権は、原著作者が所有しています。 私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "page"
+  },
+  "/sources/suginami-kugikai-r8/4101.html": {
+    "mode": "origin",
+    "href": "https://www.city.suginami.tokyo.jp/kugikai/s117/4101.html",
+    "license": "杉並区公式ホームページに掲載されている文字、写真、イラストなど、個々の情報に関する著作権は、原則として杉並区に帰属します。 ただし、一部の画像などの著作権は、原著作者が所有しています。 私的使用や引用などの著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "page"
+  },
+  "/sources/itabashi-kugikai-r8/r80324_giankekka.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/011/530/r80324_giankekka.pdf",
+    "license": "本サイトに掲載する写真・画像などの各ファイル及びその内容に関する諸権利は板橋区役所に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "file"
+  },
+  "/sources/itabashi-kugikai-r8/1063847.html": {
+    "mode": "origin",
+    "href": "https://www.city.itabashi.tokyo.jp/kugikai/dayori/text/1063843/1063847.html",
+    "license": "本サイトに掲載する写真・画像などの各ファイル及びその内容に関する諸権利は板橋区役所に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "page"
+  },
+  "/sources/itabashi-kugikai-r8/1063844.html": {
+    "mode": "origin",
+    "href": "https://www.city.itabashi.tokyo.jp/kugikai/dayori/text/1063843/1063844.html",
+    "license": "本サイトに掲載する写真・画像などの各ファイル及びその内容に関する諸権利は板橋区役所に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "page"
+  },
+  "/sources/itabashi-kugikai-r8/1061282.html": {
+    "mode": "origin",
+    "href": "https://www.city.itabashi.tokyo.jp/kugikai/gian/giansho/1061278/1061282.html",
+    "license": "本サイトに掲載する写真・画像などの各ファイル及びその内容に関する諸権利は板橋区役所に帰属します。「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。",
+    "target": "page"
+  },
+  "/sources/nerima-kugikai-r8/070609kaiha.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260214082849id_/https://www.city.nerima.tokyo.jp/gikai/giin/070609kaiha.html",
+    "license": "サイト上の情報・画像などは、法令により認められる場合などを除き、無断での転載・複製を禁じます。",
+    "target": "page"
+  },
+  "/sources/nerima-kugikai-r8/081giketugian.html": {
+    "mode": "origin",
+    "href": "https://www.city.nerima.tokyo.jp/gikai/kaigi/r8/dai1teirei/081giketugian.html",
+    "license": "サイト上の情報・画像などは、法令により認められる場合などを除き、無断での転載・複製を禁じます。",
+    "target": "page"
+  },
+  "/sources/nerima-kugikai-r8/08031701.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260318094623id_/https://www.city.nerima.tokyo.jp/gikai/koshin/08031701.html",
+    "license": "サイト上の情報・画像などは、法令により認められる場合などを除き、無断での転載・複製を禁じます。",
+    "target": "page"
+  },
+  "/sources/nerima-kugikai-r8/shikumi.html": {
+    "mode": "origin",
+    "href": "https://www.city.nerima.tokyo.jp/gikai/gikaiannai/shikumi.html",
+    "license": "サイト上の情報・画像などは、法令により認められる場合などを除き、無断での転載・複製を禁じます。",
+    "target": "page"
+  },
+  "/sources/nerima-kugikai-r8/240-6-7.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.nerima.tokyo.jp/gikai/tayori/dayori240.files/240-6-7.pdf",
+    "license": "サイト上の情報・画像などは、法令により認められる場合などを除き、無断での転載・複製を禁じます。",
+    "target": "file"
+  },
+  "/sources/adachi-kugikai-r8/Kg112_R8.1T0324.pdf": {
+    "mode": "origin",
+    "href": "https://www.gikai-adachi.jp/voices/GikaiDoc/attach/Congress/Kg112_R8.1T0324.pdf",
+    "license": "ホームページに掲載しているコンテンツ（文章、イラスト、ロゴ、写真、動画、その他のすべての情報）は著作権の対象となっています。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/adachi-kugikai-r8/g07_giketsu.asp_KWORD1_EXP_AND_KWORD2_BUNRUI_KAIGI_2026_02_19_2026_03_24_134_NENFROM_NENTO_KEKKA_SMODE_2_KENSU_100_Sflg_2.html": {
+    "mode": "origin",
+    "href": "https://www.gikai-adachi.jp/g07_giketsu.asp?KWORD1=&EXP=AND&KWORD2=&BUNRUI=&KAIGI=2026/02/19,2026/03/24,134&NENFROM=&NENTO=&KEKKA=&SMODE=2&KENSU=100&Sflg=2",
+    "license": "ホームページに掲載しているコンテンツ（文章、イラスト、ロゴ、写真、動画、その他のすべての情報）は著作権の対象となっています。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/adachi-kugikai-r8/g07_Kaiha.asp.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260215175032id_/https://www.gikai-adachi.jp/g07_Kaiha.asp",
+    "license": "ホームページに掲載しているコンテンツ（文章、イラスト、ロゴ、写真、動画、その他のすべての情報）は著作権の対象となっています。また、一部の画像などの著作権は原著作者が所有しています。私的使用や引用など、著作権法上認められている行為を除き、無断で転載や改変などを行うことはできません。",
+    "target": "file"
+  },
+  "/sources/edogawa-kugikai-r8/Kg93_sinngikekka2.pdf": {
+    "mode": "origin",
+    "href": "https://www.gikai.city.edogawa.tokyo.jp/voices/GikaiDoc/attach/Congress/Kg93_sinngikekka2.pdf",
+    "license": "江戸川区議会公式サイトに掲載している情報（テキスト、画像、PDF、その他のデータ）は、著作権の対象となっており、著作権法により保護されています。「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で複製・転用することはできません。 また、一部の画像などの著作権は第三者に帰属しています。また、江戸川区議会公式サイト上の一部コンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は江戸川区に帰属します。",
+    "target": "file"
+  },
+  "/sources/edogawa-kugikai-r8/g07_giketsu.asp_KWORD1_EXP_AND_KWORD2_BUNRUI_KAIGI_2026_02_17_2026_03_25_149_NENFROM_NENTO_KEKKA_SMODE_2_KENSU_100_Sflg_2.html": {
+    "mode": "origin",
+    "href": "https://www.gikai.city.edogawa.tokyo.jp/g07_giketsu.asp?KWORD1=&EXP=AND&KWORD2=&BUNRUI=&KAIGI=2026/02/17,2026/03/25,149&NENFROM=&NENTO=&KEKKA=&SMODE=2&KENSU=100&Sflg=2",
+    "license": "江戸川区議会公式サイトに掲載している情報（テキスト、画像、PDF、その他のデータ）は、著作権の対象となっており、著作権法により保護されています。「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で複製・転用することはできません。 また、一部の画像などの著作権は第三者に帰属しています。また、江戸川区議会公式サイト上の一部コンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は江戸川区に帰属します。",
+    "target": "file"
+  },
+  "/sources/edogawa-kugikai-r8/g07_Gicho.asp.html": {
+    "mode": "origin",
+    "href": "https://www.gikai.city.edogawa.tokyo.jp/g07_Gicho.asp",
+    "license": "江戸川区議会公式サイトに掲載している情報（テキスト、画像、PDF、その他のデータ）は、著作権の対象となっており、著作権法により保護されています。「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で複製・転用することはできません。 また、一部の画像などの著作権は第三者に帰属しています。また、江戸川区議会公式サイト上の一部コンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は江戸川区に帰属します。",
+    "target": "file"
+  },
+  "/sources/edogawa-kugikai-r8/guide1_3.asp.html": {
+    "mode": "origin",
+    "href": "https://www.gikai.city.edogawa.tokyo.jp/guide1_3.asp",
+    "license": "江戸川区議会公式サイトに掲載している情報（テキスト、画像、PDF、その他のデータ）は、著作権の対象となっており、著作権法により保護されています。「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で複製・転用することはできません。 また、一部の画像などの著作権は第三者に帰属しています。また、江戸川区議会公式サイト上の一部コンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は江戸川区に帰属します。",
+    "target": "file"
   }
 };

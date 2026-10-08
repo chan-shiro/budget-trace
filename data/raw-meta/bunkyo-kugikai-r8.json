@@ -1,0 +1,33 @@
+{
+  "sourceId": "bunkyo-kugikai-r8",
+  "files": [
+    {
+      "filename": "p007737.html",
+      "sha256": "5c216397809b51b975a343055870985a9f770c4242efe8976e49f2d49229e31b",
+      "bytes": 17527,
+      "fetchedAt": "2026-10-08T16:05:18.418Z",
+      "fetchedFrom": "https://www.city.bunkyo.lg.jp/kugikai/p007737.html"
+    },
+    {
+      "filename": "giketukekka080317.pdf",
+      "sha256": "b8030e514b1ebb21bb3577bf5c44aede66bd1a2fcfa0be184e0fe62eae976181",
+      "bytes": 676224,
+      "fetchedAt": "2026-10-08T16:05:18.419Z",
+      "fetchedFrom": "https://www.city.bunkyo.lg.jp/documents/6766/giketukekka080317.pdf"
+    },
+    {
+      "filename": "p007870.html",
+      "sha256": "0c8e0cf75fbbe981a774f2648587a1d38b258caabee5a9384fb057c875d98cb4",
+      "bytes": 20090,
+      "fetchedAt": "2026-10-08T16:05:18.419Z",
+      "fetchedFrom": "https://www.city.bunkyo.lg.jp/kugikai/p007870.html"
+    },
+    {
+      "filename": "dayori222_080425.pdf",
+      "sha256": "84d453cd98abaf31c3d4a34150cebf31fd73216639d0dbb066bcb28ef1cc4a2f",
+      "bytes": 1692676,
+      "fetchedAt": "2026-10-08T16:05:18.421Z",
+      "fetchedFrom": "https://www.city.bunkyo.lg.jp/documents/7139/dayori222_080425.pdf"
+    }
+  ]
+}

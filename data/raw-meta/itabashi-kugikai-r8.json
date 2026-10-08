@@ -1,0 +1,33 @@
+{
+  "sourceId": "itabashi-kugikai-r8",
+  "files": [
+    {
+      "filename": "r80324_giankekka.pdf",
+      "sha256": "381be67944c007d0c95f7f3fe2c7cf7714611264f25d20834266c0eec183e682",
+      "bytes": 217295,
+      "fetchedAt": "2026-10-08T16:05:18.454Z",
+      "fetchedFrom": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/011/530/r80324_giankekka.pdf"
+    },
+    {
+      "filename": "1063847.html",
+      "sha256": "02fdf71cb1d4613ff07ba8e06d624ab919ab22c6e73579ed3d2e10540bfd878b",
+      "bytes": 38588,
+      "fetchedAt": "2026-10-08T16:05:18.455Z",
+      "fetchedFrom": "https://www.city.itabashi.tokyo.jp/kugikai/dayori/text/1063843/1063847.html"
+    },
+    {
+      "filename": "1063844.html",
+      "sha256": "7e052571874b3a3edf8fe4df6f269be9b7375627e284ca1f51c5346862af4aed",
+      "bytes": 21301,
+      "fetchedAt": "2026-10-08T16:05:18.455Z",
+      "fetchedFrom": "https://www.city.itabashi.tokyo.jp/kugikai/dayori/text/1063843/1063844.html"
+    },
+    {
+      "filename": "1061282.html",
+      "sha256": "a56e379e97cb586885bac1604c32b0449fbd180493222ad29b309f19d590af3a",
+      "bytes": 40807,
+      "fetchedAt": "2026-10-08T16:05:18.455Z",
+      "fetchedFrom": "https://www.city.itabashi.tokyo.jp/kugikai/gian/giansho/1061278/1061282.html"
+    }
+  ]
+}

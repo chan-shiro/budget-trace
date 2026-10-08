@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="lr5z0vum21PzvLLmDRqZXYjFwbHPEikWWZE1TcPv">
+    <meta name="author" content="江東区議会事務局">
+    <meta name="description" content="東京都 江東区議会で行われた会議の内容を検索できる。">
+    <meta name="keywords" content="東京都,江東区,議会,会議録,議事録,検索,本会議">
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="icon" href="https://www.city.koto.tokyo.dbsr.jp/favicon.ico">
+    <title>    閲覧 | 江東区議会会議録検索
+</title>
+        <link href="https://www.city.koto.tokyo.dbsr.jp/css/document.css?ver=1788998815" rel="stylesheet">
+</head>
+
+<body class="body-document">
+        <a href="#main" class="skip">ナビゲーションをスキップする</a>
+    <div class="doc" id="app">
+            <header class="header" id="document_command">
+        <div class="nav__header">
+            <img src="https://www.city.koto.tokyo.dbsr.jp/image/title.svg" alt="江東区議会会議録検索" height="30">
+        </div>
+        <nav class="nav">
+            <ul class="navlist">
+                <li class="navlist__item"><a class="navbtn navbtn--top" href="https://www.city.koto.tokyo.dbsr.jp/index.php">検索のやり直し</a></li>
+                <li class="navlist__item"><a class="navbtn navbtn--list" href="https://www.city.koto.tokyo.dbsr.jp/index.php/100000?Template=list">検索結果一覧</a></li>
+                <li class="navlist__item"><a class="navbtn navbtn--help" href="https://www.city.koto.tokyo.dbsr.jp/index.php/100000?Template=help.help-document-move" target="_blank" rel="help">使い方の説明</a></li>
+            </ul>
+        </nav>
+        <section class="command" aria-label="文書情報、文書・発言の移動フレーム">
+                            <h1 class="command__title">
+                    <span class="command__docname">令和８年第１回定例会（第４号）  名簿</span>
+                    <span class="command__date">2026-03-27</span>
+                </h1>
+                        <section class="command__item">
+                <h2 class="command__header visually-hidden">文書・発言の移動</h2>
+                <section class="control">
+                    <h3 class="control__title" aria-label="文書の移動">文書</h3>
+                    <div class="control__item">
+                        <div class="control__button ">
+                            <a role="button" class="btn btn--prev btn_document_prev" aria-disabled="" href="https://www.city.koto.tokyo.dbsr.jp/index.php/100000?Template=document&Id=2739">前へ</a>
+                        </div>
+                        <div class="control__button ">
+                            <a role="button" class="btn btn--next btn_document_next" aria-disabled="" href="https://www.city.koto.tokyo.dbsr.jp/index.php/100000?Template=document&Id=2712">次へ</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="control">
+                    <h3 class="control__title" aria-label="発言の移動">発言</h3>
+                    <div class="control__item">
+                        <div class="control__button">
+                            <button type="button" class="btn btn--prev btn_voice_prev" disabled>前へ</button>
+                        </div>
+                        <div class="control__button">
+                            <button type="button" class="btn btn--next btn_voice_next" disabled>次へ</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="control">
+                    <h3 class="control__title" aria-label="ヒット発言の移動">ヒット発言</h3>
+                    <div class="control__item">
+                        <div class="control__button">
+                            <button type="button" class="btn btn--prev btn_voice_hit_prev" disabled>前へ</button>
+                        </div>
+                        <div class="control__button">
+                            <button type="button" class="btn btn--next btn_voice_hit_next" disabled>次へ</button>
+                        </div>
+                    </div>
+                </section>
+            </section>
+                            <section class="viewtype">
+                    <h2 class="visually-hidden">表示形式切替</h2>
+                    <fieldset class="viewtype__fieldset">
+                        <legend class="visually-hidden">発言の単文・選択・全文表示を切替</legend>
+                        <div class="viewtype__item">
+                            <input class="visually-hidden btn_voice_type_one" id="btn-one" name="btnview" data-voice-type="one" type="radio">
+                            <label class="viewtype__label" for="btn-one">単文表示</label>
+                            <input class="visually-hidden btn_voice_type_select" id="btn-sel" name="btnview" data-voice-type="select" type="radio">
+                            <label class="viewtype__label" for="btn-sel">選択表示</label>
+                            <input class="visually-hidden btn_voice_type_all" id="btn-all" name="btnview" data-voice-type="all" type="radio">
+                            <label class="viewtype__label" for="btn-all">全文表示</label>
+                        </div>
+                    </fieldset>
+                </section>
+                <section class="function">
+                    <h2 class="visually-hidden">文字サイズ・別画面表示ツール</h2>
+                    <div class="function__item">
+                        <div class="fontsize" id="fontsize">
+                            <h3 class="function__header">文字サイズ</h3>
+                            <ul class="function__list">
+                                <li>
+                                    <button type="button" class="fontsize__btn" data-fontsize="large">大きく</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="fontsize__btn" data-fontsize="middle">標準</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="fontsize__btn" data-fontsize="small">小さく</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tool">
+                            <h3 class="function__header">ツール</h3>
+                            <ul class="function__list function__list--tool">
+                                <li>
+                                    <button type="button" class="tool__btn btn_document_tab" data-template="print">印刷ウィンドウ表示</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="tool__btn btn_document_tab" data-template="other">別ウィンドウ表示</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="tool__btn btn_document_download">ダウンロード</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="tool__btn btn_document_pagebreak" aria-pressed="false">表ズレ修正</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                    </section>
+    </header>
+        <main class="main " id="main">
+            <div class="content">
+                <div class="content-menu" id="content_menu" role="region" aria-label="発言者一覧" tabindex="0">
+                        <div class="content-menu__speaker" id="menu">
+        <section class="menu-count">
+            <h2 class="menu-count__header">発言者の表示切替</h2>
+            <div class="menu-count__item">
+                <p class="menu-count__text">全 <span class="menu-count__all">1</span> 発言／<span class="menu-count__hit">0</span> 発言ヒット</p>
+            </div>
+        </section>
+        <section class="menu-switch" id="voice_switch">
+            <fieldset class="menu-switch__fieldset">
+                <legend>
+                    <h2 class="menu-switch__header">全ての発言・ヒット発言の表示切替</h2>
+                </legend>
+                <div class="menu-switch__item">
+                                            <input type="radio" id="view-all" class="visually-hidden menu-switch__radio btn_voice_switch_all" name="vewgroup" data-view-switch="all" autocomplete="off" disabled>
+                        <label class="menu-switch__label" for="view-all">全ての発言</label>
+                        <input type="radio" id="view-hit" class="visually-hidden menu-switch__radio btn_voice_switch_hit" name="vewgroup" data-view-switch="hit" autocomplete="off" disabled>
+                        <label class="menu-switch__label" for="view-hit">ヒット発言</label>
+                                    </div>
+            </fieldset>
+        </section>
+        <section class="menu-button d-none" id="voice_command">
+            <fieldset class="menu-button__fieldset">
+                <legend>
+                    <h2 class="menu-button__header">全ての発言・ヒット発言の表示切替</h2>
+                </legend>
+                <div class="menu-button__item">
+                    <button type="button" class="menu-button__btn menu-button__btn--submit btn_voice_select">選択表示</button>
+                </div>
+                <div class="menu-button__item">
+                    <button type="button" class="menu-button__btn btn_list_select_all">すべて選択</button>
+                    <button type="button" class="menu-button__btn btn_list_select_reset">すべて解除</button>
+                </div>
+            </fieldset>
+        </section>
+        <form method="post" action="https://www.city.koto.tokyo.dbsr.jp/index.php/download/100000" class="menu-form" id="voices_list">
+            <input type="hidden" name="_token" value="lr5z0vum21PzvLLmDRqZXYjFwbHPEikWWZE1TcPv" autocomplete="off">            <input type="hidden" name="Template" value="downloads.document" id="template">
+            <input type="hidden" name="DocumentID" value="2713">
+            <ol class="voicelist">
+                                    <li class="voicelist__item voice-list voice_list " data-voice_code="1">
+                        <div class="vlist">
+                            <input class="speaker__input voice_type_select_check " type="checkbox" name="VoiceID[]" value="178646" aria-label="表示 1" id="voice-check-1">
+                            <label for="voice-check-1" class="visually-hidden">選択</label>
+                            <button type="button" class="speaker voice-link voice_link" data-voice_code="1" aria-pressed="false">
+                                <span class="speaker__item">
+                                    <span class="speaker__number">1</span>
+                                    <span class="speaker__separate">:</span>
+                                                                        <span class="speaker__name ">（ページ名なし）</span>
+                                </span>
+                            </button>
+                        </div>
+                    </li>
+                            </ol>
+        </form>
+        <div class="menu-footer">
+            <a href="#menu" id="go-speaker-top">↑発言者の先頭へ</a>
+        </div>
+    </div>
+                </div>
+                <div class="content-main" id="content_main" role="region" aria-label="本文" tabindex="0">
+                        <div class="page" id="voices_text">
+    <div class="page-header" id="page-header">
+        <div id="voice_title" class="page-header__title">
+            <h1><span class="voice_code"></span>: <span class="voice_title"></span></h1>
+        </div>
+                    <div class="page-header__side">
+                <a href="#" class="page-headerlink first-hit first_hit">↓最初のヒットへ</a><span class="hit_count"></span>
+            </div>
+            </div>
+    <ul class="page-list" id="page-list">
+                                    <li class="voice-block voice_block d-none " data-voice_code="1" data-voice-title="">
+                    <div class="voice voice-text voice_text" data-voice_code="1">
+                        <div class="voice__detail voice-detail">
+                            1:
+                        </div>
+                        <p class="voice__text">令和８年　江東区議会第１回定例会会議録　　　第４号（継続会）<br />
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　令和8年3月27日（金曜日）<br />
+　　────────────────────○────────────────────<br />
+　出　席　議　員　（38名）<br />
+　　　１　番　　吉　田　由紀子　　　　　　　　２　番　　井川　りょうたろう<br />
+　　　３　番　　堀川　まさひろ　　　　　　　　４　番　　山　下　金　吾<br />
+　　　５　番　　さがやま　ともえ　　　　　　　６　番　　中　島　雄太郎<br />
+　　　７　番　　松　澤　あいり　　　　　　　　８　番　　千　田　昌　寛<br />
+　　　９　番　　加　藤　陽　子　　　　　　　　10　番　　高　野　はやと<br />
+　　　11　番　　金　子　ひさし　　　　　　　　12　番　　やしきだ　綾香<br />
+　　　13　番　　中　嶋　雅　樹　　　　　　　　14　番　　中　根　たくや<br />
+　　　15　番　　矢　次　浩　二　　　　　　　　17　番　　吉　田　　　要<br />
+　　　18　番　　西　部　ただし　　　　　　　　19　番　　古賀　じょうじ<br />
+　　　20　番　　二　瓶　文　隆　　　　　　　　21　番　　まにわ　尚　之<br />
+　　　22　番　　川　北　直　人　　　　　　　　23　番　　おおやね　　匠<br />
+　　　24　番　　釼　先　美　彦　　　　　　　　25　番　　河　野　清　史<br />
+　　　26　番　　高　村　きよみ　　　　　　　　27　番　　鈴　木　綾　子<br />
+　　　29　番　　赤羽目　たみお　　　　　　　　30　番　　正　保　みきお<br />
+　　　31　番　　にしがき　　誠　　　　　　　　32　番　　米　沢　和　裕<br />
+　　　33　番　　山　本　香代子　　　　　　　　34　番　　小　嶋　和　芳<br />
+　　　35　番　　関　根　友　子　　　　　　　　36　番　　石　川　邦　夫<br />
+　　　37　番　　徳　永　雅　博　　　　　　　　38　番　　菅　谷　俊　一<br />
+　　　39　番　　星　野　　　博　　　　　　　　40　番　　佐　藤　信　夫<br />
+　　　　─────────────────────────────────────<br />
+　欠　席　議　員<br />
+　　　28　番　　鬼　頭　たつや<br />
+　　────────────────────○────────────────────<br />
+　出　席　説　明　員<br />
+　　　　　　　　　　　　　　　区　　　　　　　長　　　　大久保　朋　果<br />
+　　　　　　　　　　　　　　　副　　　区　　　長　　　　綾　部　吉　行<br />
+　　　　　　　　　　　　　　　副　　　区　　　長　　　　油　井　教　子<br />
+　　　　　　　　　　　　　　　政策経営部長　　　　　　　炭　谷　元　章<br />
+　　　　　　　　　　　　　　　ＤＸ推進室長　　　　　　　星　名　　　剛<br />
+　　　　　　　　　　　　　　　政策経営部参事　　　　　　半　田　智　隆<br />
+　　　　　　　　　　　　　　　総　務　部　長　　　　　　杉　村　勝　利<br />
+　　　　　　　　　　　　　　　危機管理室長　　　　　　　山　崎　　　岳<br />
+　　　　　　　　　　　　　　　総務部参事　　　　　　　　加　藤　章　子<br />
+　　　　　　　　　　　　　　　総務部参事　　　　　　　　鳥谷部　森　夫<br />
+　　　　　　　　　　　　　　　地域振興部長　　　　　　　池　田　良　計<br />
+　　　　　　　　　　　　　　　区　民　部　長　　　　　　市　川　　　聡<br />
+　　　　　　　　　　　　　　　豊洲シビックセンター所長　中　尾　英　樹<br />
+　　　　　　　　　　　　　　　福　祉　部　長　　　　　　岩　井　　　健<br />
+　　　　　　　　　　　　　　　障害福祉部長　　　　　　　干　泥　功　夫<br />
+　　　　　　　　　　　　　　　生活支援部長　　　　　　　大　江　英　樹<br />
+　　　　　　　　　　　　　　　健　康　部　長　　　　　　北　村　淳　子<br />
+　　　　　　　　　　　　　　　健康部次長　　　　　　　　河　野　佳　幸<br />
+　　　　　　　　　　　　　　　健康部参事　　　　　　　　吉　川　秀　夫<br />
+　　　　　　　　　　　　　　　健康部参事　　　　　　　　中　野　雄　一<br />
+　　　　　　　　　　　　　　　健康部参事　　　　　　　　藤　田　友　子<br />
+　　　　　　　　　　　　　　　健康部参事　　　　　　　　菊　地　明　子<br />
+　　　　　　　　　　　　　　　健康部参事　　　　　　　　小松崎　理　香<br />
+　　　　　　　　　　　　　　　こども未来部長　　　　　　堀　田　　　誠<br />
+　　　　　　　　　　　　　　　環境清掃部長　　　　　　　大　塚　尚　史<br />
+　　　　　　　　　　　　　　　都市整備部長　　　　　　　立　花　信　行<br />
+　　　　　　　　　　　　　　　まちづくり調整担当部長　　大久保　雅　典<br />
+　　　　　　　　　　　　　　　都市整備部参事　　　　　　谷　川　寿　朗<br />
+　　　　　　　　　　　　　　　土　木　部　長　　　　　　石　井　康　弘<br />
+　　　　　　　　　　　　　　　土木技術担当部長　　　　　山　田　英　典<br />
+　　　　　　　　　　　　　　　土木部参事　　　　　　　　清　田　光　晴<br />
+　　　　　　　　　　　　　　　会計管理室長　　　　　　　老　川　和　宏<br />
+　　政　策　経　営　部　　　　企　画　課　長　　　　　　小　林　　　愛<br />
+　　　　　　　　　　　　　　　財　政　課　長　　　　　　黒　澤　智　仁<br />
+　　　　　　　　　　　　　　　ＤＸ推進課長　　　　　　　棚　瀬　明日香<br />
+　　総　　　務　　　部　　　　総　務　課　長　　　　　　保　谷　俊　幸<br />
+　　　　　　　　　　　　　　　経　理　課　長　　　　　　賀　来　亘　人<br />
+　　地　域　振　興　部　　　　地域振興課長　　　　　　　上　原　新　次<br />
+　　　　　　　　　　　　　　　文化観光課長　　　　　　　青　山　陽　一<br />
+　　区　　　民　　　部　　　　区　民　課　長　　　　　　西　野　裕　音<br />
+　　　　　　　　　　　　　　　課　税　課　長　　　　　　菅　原　広　盛<br />
+　　福　　　祉　　　部　　　　福　祉　課　長　　　　　　大　町　里　砂<br />
+　　障　害　福　祉　部　　　　障害者施策課長　　　　　　栗　原　真一郎<br />
+　　生　活　支　援　部　　　　医療保険課長　　　　　　　笠　間　　　衛<br />
+　　健　　　康　　　部　　　　健康推進課長　　　　　　　伊　藤　　　剛<br />
+　　　　　　　　　　　　　　　生活衛生課長　　　　　　　伊　藤　丈　彦<br />
+　　こども未来部　　　　　　　こども家庭支援課長　　　　松　村　浩　士<br />
+　　環　境　清　掃　部　　　　温暖化対策課長　　　　　　西　谷　　　淳<br />
+　　都　市　整　備　部　　　　住　宅　課　長　　　　　　渡　邊　明　雄<br />
+　　土　　　木　　　部　　　　地域交通課長　　　　　　　川　野　英　明<br />
+　　教　育　委　員　会　　　　教　　　育　　　長　　　　本　多　健一朗<br />
+　　　　　　　　　　　　　　　事務局次長　　　　　　　　青　柳　幸　恵<br />
+　　　　　　　　　　　　　　　庶　務　課　長　　　　　　瀧　澤　　　慎<br />
+　　選挙管理委員会　　　　　　事　務　局　長　　　　　　藤　田　和　哉<br />
+　　監　　　　　　　査　　　　事　務　局　長　　　　　　加　川　　　彰<br />
+　　　　─────────────────────────────────────<br />
+出席事務局職員<br />
+　　事　務　局　長　　　岩　瀬　亮　太　　　　次　　　　　長　　　愛　澤　　　洋<br />
+　　議　事　係　長　　　田　村　雅　恵　　　　調　査　係　長　　　若　林　克　彦<br />
+　　議　事　主　査　　　大　石　謙　一　　　　議　事　主　査　　　関　根　雄　紀<br />
+　　書　　　　　記　　　飯　島　龍　一　　　　書　　　　　記　　　境　　　芽　衣<br />
+　　────────────────────○────────────────────<br />
+　　　◎　議　事　日　程<br />
+<br />
+日程第１　　議案第５号　令和８年度江東区一般会計予算<br />
+日程第２　　議案第６号　令和８年度江東区国民健康保険会計予算<br />
+日程第３　　議案第７号　令和８年度江東区介護保険会計予算<br />
+日程第４　　議案第８号　令和８年度江東区後期高齢者医療会計予算<br />
+日程第５　　議案第９号　東京都後期高齢者医療広域連合規約の変更に係る協議について<br />
+日程第６　　議案第32号　江東区後期高齢者医療に関する条例の一部を改正する条例<br />
+日程第７　　議案第33号　江東区国民健康保険高額療養費資金貸付基金条例及び江東区国民健康保険<br />
+　　　　　　　　　　　　出産費資金貸付基金条例を廃止する条例<br />
+日程第８　　議案第34号　江東区介護保険条例の一部を改正する条例<br />
+日程第９　　閉会中の継続審査の申し出について<br />
+日程第10　　議員提出議案第１号　事前復興まちづくり計画の策定支援を求める意見書<br />
+日程第11　　議案第35号　江東区国民健康保険条例の一部を改正する条例<br />
+　　────────────────────○────────────────────<br />
+　　　◎　追　加　議　事　日　程<br />
+<br />
+追加日程第１　　議案第35号　江東区国民健康保険条例の一部を改正する条例<br />
+追加日程第２　　議案第36号　江東区教育委員会教育長選任同意方について<br />
+追加日程第３　　議案第37号　江東区教育委員会委員選任同意方について<br />
+　　────────────────────○────────────────────<br />
+
+</p>
+                                            </div>
+                </li>
+                        </ul>
+    <footer class="page-footer">
+        <div class="page-footer__copyright">© Koto City, All Rights Reserved.</div>
+        <div class="page-footer__top"><a id="go-page-top" href="#voices_text">↑本文の先頭へ</a></div>
+    </footer>
+</div>
+                </div>
+            </div>
+        </main>
+    </div>
+        <script src="https://www.city.koto.tokyo.dbsr.jp/js/jquery.min.js?ver=1788998815"></script>
+<script>
+    const $laravel = {
+        URL: 'https://www.city.koto.tokyo.dbsr.jp/index.php/100000',
+        searchID: 'https://www.city.koto.tokyo.dbsr.jp/index.php/download/100000',
+        template: 'document',
+        voicesFirstHitCode: '1'
+    };
+</script>
+<script src="https://www.city.koto.tokyo.dbsr.jp/js/document.js?ver=1788998815"></script>
+</body>
+
+</html>

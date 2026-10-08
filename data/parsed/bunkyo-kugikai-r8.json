@@ -1,0 +1,170 @@
+{
+  "docType": "council-composition",
+  "sourceId": "bunkyo-kugikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.1",
+  "parsedAt": "2026-10-08T16:05:20.357Z",
+  "fiscalYear": "R8",
+  "body": "文京区議会",
+  "seats": 33,
+  "asOf": "2026-01-05",
+  "factions": [
+    {
+      "name": "自由民主党文京区議会",
+      "seats": 9,
+      "isIndependent": false,
+      "members": [
+        "白石英行",
+        "名取顕一",
+        "田中としかね",
+        "市村やすとし",
+        "山田ひろこ",
+        "浅川のぼる",
+        "松平雄一郎",
+        "吉村美紀",
+        "のぐちけんたろう"
+      ],
+      "locator": {
+        "file": "p007737.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "日本共産党文京区議会議員団",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "板倉美千代",
+        "関川けさ子",
+        "金子てるよし",
+        "千田恵美子",
+        "石沢のりゆき"
+      ],
+      "locator": {
+        "file": "p007737.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "公明党文京区議団",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "岡崎義顕",
+        "松丸昌史",
+        "田中香澄",
+        "宮本伸一"
+      ],
+      "locator": {
+        "file": "p007737.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "政策チーム AGORA",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "品田ひでこ",
+        "浅田保雄",
+        "上田ゆきこ",
+        "沢田けいじ"
+      ],
+      "locator": {
+        "file": "p007737.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "区民が主役の会",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "依田翼",
+        "小林れい子",
+        "海津敦子"
+      ],
+      "locator": {
+        "file": "p007737.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "文京区議会日本維新の会",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "高山かずひろ",
+        "宮崎こうき"
+      ],
+      "locator": {
+        "file": "p007737.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "文京永久の会",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "山本一仁",
+        "高山泰三"
+      ],
+      "locator": {
+        "file": "p007737.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "市民フォーラム",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "宮野ゆみこ",
+        "ほかり吉紀"
+      ],
+      "locator": {
+        "file": "p007737.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "ぶんきょう子育て.ネット",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "たかはまなおき"
+      ],
+      "locator": {
+        "file": "p007737.html",
+        "row": 9
+      }
+    },
+    {
+      "name": "自由民主党「誉」",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "豪一"
+      ],
+      "locator": {
+        "file": "p007737.html",
+        "row": 10
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "67",
+    "billName": "令和8年度文京区一般会計予算",
+    "sessionLabel": "令和8年2月定例議会",
+    "decidedDate": "2026-03-17",
+    "decidedDateLabel": "令和8年3月17日",
+    "result": "可決",
+    "locator": {
+      "file": "giketukekka080317.pdf",
+      "page": 2
+    }
+  },
+  "rosterTitle": "議員名簿（会派別）（令和8年1月5日現在）",
+  "resultTitle": "令和８年２月定例議会 議案等議決結果一覧表"
+}
