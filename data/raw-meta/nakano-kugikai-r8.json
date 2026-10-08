@@ -1,0 +1,102 @@
+{
+  "sourceId": "nakano-kugikai-r8",
+  "files": [
+    {
+      "filename": "giin_list.html_kaiha_id_1.html",
+      "sha256": "d2b5c363c172ce484c1199a00b8828adaaa7b2ae4a3826644beb34ec07233db3",
+      "bytes": 17074,
+      "fetchedAt": "2026-10-08T16:05:18.443Z",
+      "fetchedFrom": "https://web.archive.org/web/20260208160940id_/https://kugikai-nakano.jp/giin_list.html?kaiha_id=1",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "giin_list.html_kaiha_id_2.html",
+      "sha256": "73c743a39fb2c925df820aa0650a57551e3087a713ee6e26f54b54c51b85a32b",
+      "bytes": 16080,
+      "fetchedAt": "2026-10-08T16:05:18.444Z",
+      "fetchedFrom": "https://web.archive.org/web/20260208161106id_/https://kugikai-nakano.jp/giin_list.html?kaiha_id=2",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "giin_list.html_kaiha_id_3.html",
+      "sha256": "d22cead87cfec80236b204dbcf00057a6bbb1a4515762cbe16860ff191e4de8c",
+      "bytes": 15705,
+      "fetchedAt": "2026-10-08T16:05:18.444Z",
+      "fetchedFrom": "https://web.archive.org/web/20260208161104id_/https://kugikai-nakano.jp/giin_list.html?kaiha_id=3",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "giin_list.html_kaiha_id_4.html",
+      "sha256": "c39129c9e2e3334171ad49952daccce93548cb47e0cadc1b03dcaffbc7450ba0",
+      "bytes": 15001,
+      "fetchedAt": "2026-10-08T16:05:18.445Z",
+      "fetchedFrom": "https://web.archive.org/web/20260208161109id_/https://kugikai-nakano.jp/giin_list.html?kaiha_id=4",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "giin_list.html_kaiha_id_5.html",
+      "sha256": "2f643908ad2cb829695a171fac2c6c96aeb3ab2bf34ce790749c8819c39ab1b6",
+      "bytes": 14202,
+      "fetchedAt": "2026-10-08T16:05:18.445Z",
+      "fetchedFrom": "https://web.archive.org/web/20260208161108id_/https://kugikai-nakano.jp/giin_list.html?kaiha_id=5",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "giin_list.html_kaiha_id_8.html",
+      "sha256": "14428a95632863dffc02952b139350dfc02fdb4ccdbe9c52407e27cdbae1f65a",
+      "bytes": 14681,
+      "fetchedAt": "2026-10-08T16:05:18.445Z",
+      "fetchedFrom": "https://web.archive.org/web/20260208161104id_/https://kugikai-nakano.jp/giin_list.html?kaiha_id=8",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "giin_list.html_kaiha_id_9.html",
+      "sha256": "9f2f351a9807173bf63da5bbbe9381d58853110d233f8c963cbc5fde5377a785",
+      "bytes": 13279,
+      "fetchedAt": "2026-10-08T16:05:18.446Z",
+      "fetchedFrom": "https://web.archive.org/web/20260208161106id_/https://kugikai-nakano.jp/giin_list.html?kaiha_id=9",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "giin_list.html_kaiha_id_10.html",
+      "sha256": "84f890edcc2a019b64b6b49e6d3323a8153dad9f98965d79884d63624338c21d",
+      "bytes": 13273,
+      "fetchedAt": "2026-10-08T16:05:18.446Z",
+      "fetchedFrom": "https://web.archive.org/web/20260208161104id_/https://kugikai-nakano.jp/giin_list.html?kaiha_id=10",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "289-26427114355.pdf",
+      "sha256": "fbc03c9804198a092314342fe528499b234c7f9392fb0c3b8825fbb77c050a12",
+      "bytes": 6553407,
+      "fetchedAt": "2026-10-08T16:05:18.452Z",
+      "fetchedFrom": "https://kugikai-nakano.jp/dayori/289-26427114355.pdf"
+    },
+    {
+      "filename": "honkaigi.html_nen_2026_gian_id_119.html",
+      "sha256": "04bc2c39787a4d48f54501bea14e9b74fecbaece3791c0ab522e0a19cdc5eac3",
+      "bytes": 45426,
+      "fetchedAt": "2026-10-08T16:05:18.452Z",
+      "fetchedFrom": "https://kugikai-nakano.jp/honkaigi.html?nen=2026&gian_id=119",
+      "transform": [
+        "ext:.html"
+      ]
+    }
+  ]
+}

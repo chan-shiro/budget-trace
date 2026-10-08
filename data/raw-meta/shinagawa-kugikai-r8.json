@@ -1,0 +1,42 @@
+{
+  "sourceId": "shinagawa-kugikai-r8",
+  "files": [
+    {
+      "filename": "group.html",
+      "sha256": "aa31b8e7c64b3ac143fdc2d6558ee8bc940566e35f0e37a983a236db1f3afd2b",
+      "bytes": 44775,
+      "fetchedAt": "2026-10-08T16:05:18.438Z",
+      "fetchedFrom": "https://web.archive.org/web/20260312074626id_/https://gikai.city.shinagawa.tokyo.jp/profile/group",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "r08_01t_s.pdf",
+      "sha256": "35814e52bec66fd08feb5e44dab5565b71a2407ffd122e65a50c6e91c66783d6",
+      "bytes": 207651,
+      "fetchedAt": "2026-10-08T16:05:18.439Z",
+      "fetchedFrom": "https://gikai.city.shinagawa.tokyo.jp/wp-content/themes/shinagawakugikai/pdf/r08_01t_s.pdf"
+    },
+    {
+      "filename": "100000_Template_document_Id_7356.html",
+      "sha256": "d3ca0d82d75726685be5953284734b06a00a2d7022fd9de5a25392f045cc6c78",
+      "bytes": 25855,
+      "fetchedAt": "2026-10-08T16:05:18.440Z",
+      "fetchedFrom": "https://kaigiroku.city.shinagawa.tokyo.jp/index.php/100000?Template=document&Id=7356",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "history.html",
+      "sha256": "e20fa0af204a7c5549ce6a216436d14a9ede82f8dad8c0992dc6e44b56819647",
+      "bytes": 36043,
+      "fetchedAt": "2026-10-08T16:05:18.440Z",
+      "fetchedFrom": "https://web.archive.org/web/20260401205950id_/https://gikai.city.shinagawa.tokyo.jp/about/history",
+      "transform": [
+        "ext:.html"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "sourceId": "sumida-kugikai-r8",
+  "files": [
+    {
+      "filename": "dayori_246_5-8.pdf",
+      "sha256": "1a3d043b567f10f68156460a213fd3775f2d5e5e1de7a934837967de543bc4c4",
+      "bytes": 1485523,
+      "fetchedAt": "2026-10-08T16:05:18.429Z",
+      "fetchedFrom": "https://www.city.sumida.lg.jp/kugikai/kugikaidayori/R8_dayori.files/dayori_246_5-8.pdf"
+    },
+    {
+      "filename": "giantosanpi083030.pdf",
+      "sha256": "0978f7f329a73fd5f6b5578d2a6ac1e3cf2c3ae856c0b5bca8d64f102eb1d2a6",
+      "bytes": 281014,
+      "fetchedAt": "2026-10-08T16:05:18.430Z",
+      "fetchedFrom": "https://www.city.sumida.lg.jp/kugikai/kaigi_info/sanpinojokyo/giantosanpi.files/giantosanpi083030.pdf"
+    },
+    {
+      "filename": "dayori_245_1-5_s.pdf",
+      "sha256": "65585b4a2ad933db6ca9241f5dbc4ae54688249c40731d2982b33221da676faf",
+      "bytes": 3295890,
+      "fetchedAt": "2026-10-08T16:05:18.434Z",
+      "fetchedFrom": "https://www.city.sumida.lg.jp/kugikai/kugikaidayori/R8_dayori.files/dayori_245_1-5_s.pdf"
+    }
+  ]
+}

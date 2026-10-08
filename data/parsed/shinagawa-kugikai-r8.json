@@ -1,0 +1,359 @@
+{
+  "docType": "council-composition",
+  "sourceId": "shinagawa-kugikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.2",
+  "parsedAt": "2026-10-08T17:58:02.851Z",
+  "fiscalYear": "R8",
+  "body": "品川区議会",
+  "seats": 37,
+  "asOf": "2025-09-17",
+  "factions": [
+    {
+      "name": "品川区議会自民党・無所属の会",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "まつざわ和昌",
+        "石田秀男",
+        "せお麻里",
+        "えのした正人",
+        "こしば新",
+        "澤田えみこ",
+        "西村直子",
+        "渡辺ゆういち"
+      ],
+      "locator": {
+        "file": "group.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "しながわ未来",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "山本やすゆき",
+        "田中たけし",
+        "松永よしひろ",
+        "大倉たかひろ",
+        "おぎのあやか",
+        "木村健悟",
+        "筒井ようすけ",
+        "藤原正則"
+      ],
+      "locator": {
+        "file": "group.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "品川区議会公明党",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "若林ひろき",
+        "あくつ広王",
+        "新妻さえ子",
+        "塚本よしひろ",
+        "こんの孝子",
+        "つる伸一郎",
+        "ゆきた政春"
+      ],
+      "locator": {
+        "file": "group.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "日本共産党品川区議団",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "安藤たい作",
+        "のだて稔史",
+        "石田ちひろ",
+        "鈴木ひろ子"
+      ],
+      "locator": {
+        "file": "group.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "品川区議会日本維新の会",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "せらく真央",
+        "松本ときひろ"
+      ],
+      "locator": {
+        "file": "group.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "無所属",
+      "seats": 8,
+      "isIndependent": true,
+      "members": [
+        "高橋しんじ",
+        "西本たか子",
+        "横山由香理",
+        "須貝行宏",
+        "高橋伸明",
+        "中塚亮",
+        "やなぎさわ聡",
+        "吉田ゆみこ"
+      ],
+      "locator": {
+        "file": "group.html",
+        "row": 6
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第５号議案",
+    "billName": "令和８年度品川区一般会計予算",
+    "sessionLabel": "令和８年第１回定例会",
+    "decidedDate": "2026-03-27",
+    "decidedDateLabel": "令和8年3月27日",
+    "result": "原案可決",
+    "locator": {
+      "file": "r08_01t_s.pdf",
+      "page": 3
+    }
+  },
+  "rosterTitle": "議員名簿(会派等)（令和7年9月17日現在）",
+  "resultTitle": "令和８年第１回定例会 議案と各議員の賛否の状況",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "令和８年第１回定例会 議案と各議員の賛否の状況",
+    "sourceFile": "r08_01t_s.pdf",
+    "columns": [
+      {
+        "label": "石田秀男",
+        "faction": "品川区議会自民党・無所属の会",
+        "member": "石田秀男",
+        "stance": "賛成"
+      },
+      {
+        "label": "えのした正人",
+        "faction": "品川区議会自民党・無所属の会",
+        "member": "えのした正人",
+        "stance": "賛成"
+      },
+      {
+        "label": "こしば新",
+        "faction": "品川区議会自民党・無所属の会",
+        "member": "こしば新",
+        "stance": "賛成"
+      },
+      {
+        "label": "澤田えみこ",
+        "faction": "品川区議会自民党・無所属の会",
+        "member": "澤田えみこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "せお麻里",
+        "faction": "品川区議会自民党・無所属の会",
+        "member": "せお麻里",
+        "stance": "賛成"
+      },
+      {
+        "label": "西村直子",
+        "faction": "品川区議会自民党・無所属の会",
+        "member": "西村直子",
+        "stance": "賛成"
+      },
+      {
+        "label": "まつざわ和昌",
+        "faction": "品川区議会自民党・無所属の会",
+        "member": "まつざわ和昌",
+        "stance": "賛成"
+      },
+      {
+        "label": "大倉たかひろ",
+        "faction": "しながわ未来",
+        "member": "大倉たかひろ",
+        "stance": "賛成"
+      },
+      {
+        "label": "おぎのあやか",
+        "faction": "しながわ未来",
+        "member": "おぎのあやか",
+        "stance": "賛成"
+      },
+      {
+        "label": "木村健悟",
+        "faction": "しながわ未来",
+        "member": "木村健悟",
+        "stance": "欠席"
+      },
+      {
+        "label": "田中たけし",
+        "faction": "しながわ未来",
+        "member": "田中たけし",
+        "stance": "賛成"
+      },
+      {
+        "label": "筒井ようすけ",
+        "faction": "しながわ未来",
+        "member": "筒井ようすけ",
+        "stance": "賛成"
+      },
+      {
+        "label": "藤原正則",
+        "faction": "しながわ未来",
+        "member": "藤原正則",
+        "stance": "賛成"
+      },
+      {
+        "label": "松永よしひろ",
+        "faction": "しながわ未来",
+        "member": "松永よしひろ",
+        "stance": "賛成"
+      },
+      {
+        "label": "山本やすゆき",
+        "faction": "しながわ未来",
+        "member": "山本やすゆき",
+        "stance": "賛成"
+      },
+      {
+        "label": "あくつ広王",
+        "faction": "品川区議会公明党",
+        "member": "あくつ広王",
+        "stance": "賛成"
+      },
+      {
+        "label": "こんの孝子",
+        "faction": "品川区議会公明党",
+        "member": "こんの孝子",
+        "stance": "賛成"
+      },
+      {
+        "label": "塚本よしひろ",
+        "faction": "品川区議会公明党",
+        "member": "塚本よしひろ",
+        "stance": "賛成"
+      },
+      {
+        "label": "つる伸一郎",
+        "faction": "品川区議会公明党",
+        "member": "つる伸一郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "新妻さえ子",
+        "faction": "品川区議会公明党",
+        "member": "新妻さえ子",
+        "stance": "賛成"
+      },
+      {
+        "label": "ゆきた政春",
+        "faction": "品川区議会公明党",
+        "member": "ゆきた政春",
+        "stance": "賛成"
+      },
+      {
+        "label": "若林ひろき",
+        "faction": "品川区議会公明党",
+        "member": "若林ひろき",
+        "stance": "賛成"
+      },
+      {
+        "label": "安藤たい作",
+        "faction": "日本共産党品川区議団",
+        "member": "安藤たい作",
+        "stance": "賛成"
+      },
+      {
+        "label": "石田ちひろ",
+        "faction": "日本共産党品川区議団",
+        "member": "石田ちひろ",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴木ひろ子",
+        "faction": "日本共産党品川区議団",
+        "member": "鈴木ひろ子",
+        "stance": "賛成"
+      },
+      {
+        "label": "のだて稔史",
+        "faction": "日本共産党品川区議団",
+        "member": "のだて稔史",
+        "stance": "賛成"
+      },
+      {
+        "label": "せらく真央",
+        "faction": "品川区議会日本維新の会",
+        "member": "せらく真央",
+        "stance": "賛成"
+      },
+      {
+        "label": "松本ときひろ",
+        "faction": "品川区議会日本維新の会",
+        "member": "松本ときひろ",
+        "stance": "賛成"
+      },
+      {
+        "label": "須貝行宏",
+        "faction": "無所属",
+        "member": "須貝行宏",
+        "stance": "賛成"
+      },
+      {
+        "label": "高橋しんじ",
+        "faction": "無所属",
+        "member": "高橋しんじ",
+        "stance": "賛成"
+      },
+      {
+        "label": "高橋伸明",
+        "faction": "無所属",
+        "member": "高橋伸明",
+        "stance": "賛成"
+      },
+      {
+        "label": "中塚亮",
+        "faction": "無所属",
+        "member": "中塚亮",
+        "stance": "賛成"
+      },
+      {
+        "label": "西本たか子",
+        "faction": "無所属",
+        "member": "西本たか子",
+        "stance": "反対"
+      },
+      {
+        "label": "やなぎさわ聡",
+        "faction": "無所属",
+        "member": "やなぎさわ聡",
+        "stance": "賛成"
+      },
+      {
+        "label": "横山由香理",
+        "faction": "無所属",
+        "member": "横山由香理",
+        "stance": "賛成"
+      },
+      {
+        "label": "吉田ゆみこ",
+        "faction": "無所属",
+        "member": "吉田ゆみこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "渡辺ゆういち",
+        "faction": "品川区議会自民党・無所属の会",
+        "member": "渡辺ゆういち",
+        "stance": "議長"
+      }
+    ]
+  }
+}

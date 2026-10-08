@@ -1,0 +1,235 @@
+{
+  "docType": "council-composition",
+  "sourceId": "nakano-kugikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.2",
+  "parsedAt": "2026-10-08T17:57:54.762Z",
+  "fiscalYear": "R8",
+  "body": "中野区議会",
+  "seats": 41,
+  "asOf": "2026-03-06",
+  "factions": [
+    {
+      "name": "立憲・国民・ネット・無所属議員団",
+      "seats": 11,
+      "isIndependent": false,
+      "members": [
+        "中村延子",
+        "いのつめ正太",
+        "間ひとみ",
+        "河合りな",
+        "細野かよこ",
+        "斉藤ゆり",
+        "杉山司",
+        "ひやま隆",
+        "山本たかし",
+        "酒井たくや",
+        "森たかゆき"
+      ],
+      "locator": {
+        "file": "289-26427114355.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "自由民主党議員団",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "伊藤正信",
+        "高橋ちあき",
+        "山内あきひろ",
+        "武井まさき",
+        "市川しんたろう",
+        "加藤たくま",
+        "高橋かずちか",
+        "大内しんご"
+      ],
+      "locator": {
+        "file": "289-26427114355.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "公明党議員団",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "平山英明",
+        "日野たかし",
+        "木村広一",
+        "甲田ゆり子",
+        "小林ぜんいち",
+        "白井ひでふみ",
+        "南かつひこ"
+      ],
+      "locator": {
+        "file": "289-26427114355.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "日本共産党議員団",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "浦野さとみ",
+        "武田やよい",
+        "広川まさのり",
+        "いさ哲郎",
+        "羽鳥だいすけ"
+      ],
+      "locator": {
+        "file": "289-26427114355.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "都民ファーストの会中野区議団",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "内野大三郎",
+        "黒沢ゆか",
+        "大沢ひろゆき"
+      ],
+      "locator": {
+        "file": "289-26427114355.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無所属",
+      "seats": 5,
+      "isIndependent": true,
+      "members": [
+        "吉田康一郎",
+        "立石りお",
+        "小宮山たかし",
+        "石坂わたる",
+        "むとう有子"
+      ],
+      "locator": {
+        "file": "289-26427114355.pdf",
+        "page": 5
+      }
+    },
+    {
+      "name": "無所属（日本維新の会）（斉藤けいた）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "斉藤けいた"
+      ],
+      "locator": {
+        "file": "289-26427114355.pdf",
+        "page": 5
+      }
+    },
+    {
+      "name": "無所属（れいわ新選組）（井関源二）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "井関源二"
+      ],
+      "locator": {
+        "file": "289-26427114355.pdf",
+        "page": 12
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第６号議案",
+    "billName": "令和８年度中野区一般会計予算",
+    "sessionLabel": "第１回定例会",
+    "decidedDate": "2026-03-06",
+    "decidedDateLabel": "令和8年3月6日",
+    "result": "可決",
+    "locator": {
+      "file": "honkaigi.html_nen_2026_gian_id_119.html"
+    }
+  },
+  "rosterTitle": "中野区議会だより第289号（第１回定例会・意見の分かれた案件）",
+  "resultTitle": "本会議 議案一覧（令和8年 第１回定例会）",
+  "votes": {
+    "basis": "faction",
+    "sourceTitle": "中野区議会だより第289号 意見の分かれた案件（第１回定例会）",
+    "sourceFile": "289-26427114355.pdf",
+    "columns": [
+      {
+        "label": "立国ネ無",
+        "faction": "立憲・国民・ネット・無所属議員団",
+        "stance": "賛成"
+      },
+      {
+        "label": "自民",
+        "faction": "自由民主党議員団",
+        "stance": "反対"
+      },
+      {
+        "label": "公明",
+        "faction": "公明党議員団",
+        "stance": "賛成"
+      },
+      {
+        "label": "共産",
+        "faction": "日本共産党議員団",
+        "stance": "賛成"
+      },
+      {
+        "label": "都ファ",
+        "faction": "都民ファーストの会中野区議団",
+        "stance": "賛成"
+      },
+      {
+        "label": "斉藤けいた",
+        "faction": "無所属（日本維新の会）（斉藤けいた）",
+        "member": "斉藤けいた",
+        "stance": "賛成"
+      },
+      {
+        "label": "井関源二",
+        "faction": "無所属（れいわ新選組）（井関源二）",
+        "member": "井関源二",
+        "stance": "賛成"
+      },
+      {
+        "label": "吉田康一郎",
+        "faction": "無所属",
+        "member": "吉田康一郎",
+        "stance": "反対"
+      },
+      {
+        "label": "立石りお",
+        "faction": "無所属",
+        "member": "立石りお",
+        "stance": "賛成"
+      },
+      {
+        "label": "小宮山たかし",
+        "faction": "無所属",
+        "member": "小宮山たかし",
+        "stance": "賛成"
+      },
+      {
+        "label": "石坂わたる",
+        "faction": "無所属",
+        "member": "石坂わたる",
+        "stance": "賛成"
+      },
+      {
+        "label": "むとう有子",
+        "faction": "無所属",
+        "member": "むとう有子",
+        "stance": "反対"
+      },
+      {
+        "label": "森たかゆき",
+        "faction": "立憲・国民・ネット・無所属議員団",
+        "member": "森たかゆき",
+        "stance": "議長"
+      }
+    ]
+  }
+}

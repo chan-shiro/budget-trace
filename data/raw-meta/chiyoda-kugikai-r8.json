@@ -1,0 +1,89 @@
+{
+  "sourceId": "chiyoda-kugikai-r8",
+  "files": [
+    {
+      "filename": "index.html",
+      "sha256": "5451d7de9d10cd85c2602fddbe1d19edf0d7ef5dfb61fb4518e8bd17a6a56e62",
+      "bytes": 14914,
+      "fetchedAt": "2026-10-08T16:05:18.404Z",
+      "fetchedFrom": "https://web.archive.org/web/20260301085133id_/https://gikai-chiyoda-tokyo.jp/about/kaiha/index.html"
+    },
+    {
+      "filename": "20261teikekka.pdf",
+      "sha256": "153ef0c6c954241f6c60083f414613627190e35c10c1403c3112e06e528e3b5c",
+      "bytes": 194068,
+      "fetchedAt": "2026-10-08T16:05:18.406Z",
+      "fetchedFrom": "https://gikai-chiyoda-tokyo.jp/kaigi/kekka/files/20261teikekka.pdf"
+    },
+    {
+      "filename": "20260319honkaigikiroku.pdf",
+      "sha256": "68ab0a3d518bd04fe7cce2ecadab9f82f57483e203b0e8216807ad58f8acdbd4",
+      "bytes": 491702,
+      "fetchedAt": "2026-10-08T16:05:18.407Z",
+      "fetchedFrom": "https://gikai-chiyoda-tokyo.jp/katsudou/docs/20260319honkaigikiroku.pdf"
+    },
+    {
+      "filename": "277dayori.pdf",
+      "sha256": "ada4185736ad60a2ea03f282775be02df6b13d697b5ead126965f40ff22e426e",
+      "bytes": 2468625,
+      "fetchedAt": "2026-10-08T16:05:18.410Z",
+      "fetchedFrom": "https://gikai-chiyoda-tokyo.jp/katsudou/docs/277dayori.pdf"
+    },
+    {
+      "filename": "jisedai.html",
+      "sha256": "2648f1712936cd7a3f1dfc50f31145e5c29be5fba973e796a7d2fd61c26c0aa1",
+      "bytes": 17172,
+      "fetchedAt": "2026-10-08T16:05:18.410Z",
+      "fetchedFrom": "https://web.archive.org/web/20260123150107id_/https://gikai-chiyoda-tokyo.jp/about/kaiha/jisedai.html"
+    },
+    {
+      "filename": "jimintou.html",
+      "sha256": "91f1cb3cf2a0906141d31ec4a6c2a821aebb9acb0a94bd2382f7c943d6b81107",
+      "bytes": 16361,
+      "fetchedAt": "2026-10-08T16:05:18.411Z",
+      "fetchedFrom": "https://web.archive.org/web/20251212185737id_/https://gikai-chiyoda-tokyo.jp/about/kaiha/jimintou.html"
+    },
+    {
+      "filename": "jimin.html",
+      "sha256": "f4e6df7e4be5fe57620a015d4108316649f4a32f7affbe3dc2d8fe059b6e094d",
+      "bytes": 15997,
+      "fetchedAt": "2026-10-08T16:05:18.411Z",
+      "fetchedFrom": "https://web.archive.org/web/20260305165521id_/https://gikai-chiyoda-tokyo.jp/about/kaiha/jimin.html"
+    },
+    {
+      "filename": "koumei.html",
+      "sha256": "610f31e04ceedc67c280922595aab3f851342964b1c0cef6782305b4e758cc48",
+      "bytes": 15192,
+      "fetchedAt": "2026-10-08T16:05:18.412Z",
+      "fetchedFrom": "https://web.archive.org/web/20260123131431id_/https://gikai-chiyoda-tokyo.jp/about/kaiha/koumei.html"
+    },
+    {
+      "filename": "kyousantou.html",
+      "sha256": "f43bb29b848ec6b37bfed3edcbec47b13ba10041d3d8206519af63fe7848b5f6",
+      "bytes": 14809,
+      "fetchedAt": "2026-10-08T16:05:18.412Z",
+      "fetchedFrom": "https://web.archive.org/web/20260305163946id_/https://gikai-chiyoda-tokyo.jp/about/kaiha/kyousantou.html"
+    },
+    {
+      "filename": "kokumin.html",
+      "sha256": "94249cea03445afb13f8381baf4f29e96759584d8fcd2a4a08e1b6b2b2514f9e",
+      "bytes": 14827,
+      "fetchedAt": "2026-10-08T16:05:18.413Z",
+      "fetchedFrom": "https://web.archive.org/web/20260305173059id_/https://gikai-chiyoda-tokyo.jp/about/kaiha/kokumin.html"
+    },
+    {
+      "filename": "koe.html",
+      "sha256": "866d6a0ee1d3041d33cca43f46a4b95fb7b7f1f9e124665f4946db698ef359bb",
+      "bytes": 14830,
+      "fetchedAt": "2026-10-08T16:05:18.413Z",
+      "fetchedFrom": "https://web.archive.org/web/20251109164925id_/https://gikai-chiyoda-tokyo.jp/about/kaiha/koe.html"
+    },
+    {
+      "filename": "ishin.html",
+      "sha256": "7e8a0162952c8f99e200de23b0ba9a5a344b351686afc069ebfe2070c3d9f5b8",
+      "bytes": 14916,
+      "fetchedAt": "2026-10-08T16:05:18.413Z",
+      "fetchedFrom": "https://web.archive.org/web/20260208115830id_/https://gikai-chiyoda-tokyo.jp/about/kaiha/ishin.html"
+    }
+  ]
+}

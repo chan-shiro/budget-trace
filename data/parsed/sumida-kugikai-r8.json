@@ -1,0 +1,343 @@
+{
+  "docType": "council-composition",
+  "sourceId": "sumida-kugikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.2",
+  "parsedAt": "2026-10-08T17:58:05.378Z",
+  "fiscalYear": "R8",
+  "body": "墨田区議会",
+  "seats": 30,
+  "asOf": "2026-01-28",
+  "factions": [
+    {
+      "name": "墨田区議会自由民主党・無所属",
+      "seats": 11,
+      "isIndependent": false,
+      "members": [
+        "あべよしたけ",
+        "稲葉かずひろ",
+        "井上裕幾",
+        "加藤ひろき",
+        "小林しょう",
+        "坂井ユカコ",
+        "佐藤篤",
+        "しもむら緑",
+        "大門しろう",
+        "福田はるみ",
+        "堀よしあき"
+      ],
+      "locator": {
+        "file": "dayori_246_5-8.pdf",
+        "page": 3
+      }
+    },
+    {
+      "name": "墨田区議会公明党",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "おおこし勝広",
+        "おまた雄一",
+        "加納進",
+        "たかはしのりこ",
+        "高橋正利",
+        "とも宣子",
+        "はねだ福代"
+      ],
+      "locator": {
+        "file": "dayori_246_5-8.pdf",
+        "page": 3
+      }
+    },
+    {
+      "name": "日本共産党墨田区議会議員団",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "としま剛",
+        "村本ひろや",
+        "山下ひろみ"
+      ],
+      "locator": {
+        "file": "dayori_246_5-8.pdf",
+        "page": 4
+      }
+    },
+    {
+      "name": "すみだ未来フォーラム（都ファ）",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "あべきみこ",
+        "甲斐まりこ"
+      ],
+      "locator": {
+        "file": "dayori_246_5-8.pdf",
+        "page": 4
+      }
+    },
+    {
+      "name": "立憲民主党墨田区議団",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "遠藤ミホ",
+        "中村あきひろ"
+      ],
+      "locator": {
+        "file": "dayori_246_5-8.pdf",
+        "page": 3
+      }
+    },
+    {
+      "name": "墨田区議会日本維新の会",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "しみず良平",
+        "船橋けんご"
+      ],
+      "locator": {
+        "file": "dayori_246_5-8.pdf",
+        "page": 3
+      }
+    },
+    {
+      "name": "新しいすみだ",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "井上ノエミ"
+      ],
+      "locator": {
+        "file": "dayori_246_5-8.pdf",
+        "page": 4
+      }
+    },
+    {
+      "name": "無所属すみだ",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "桜井浩之"
+      ],
+      "locator": {
+        "file": "dayori_246_5-8.pdf",
+        "page": 3
+      }
+    },
+    {
+      "name": "自由民主党すみだの会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "たきざわ正宜"
+      ],
+      "locator": {
+        "file": "dayori_246_5-8.pdf",
+        "page": 3
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第８２号",
+    "billName": "令和８年度墨田区一般会計予算",
+    "sessionLabel": "令和７年度定例会２月議会",
+    "decidedDate": "2026-03-30",
+    "decidedDateLabel": "令和8年3月30日",
+    "result": "可決",
+    "locator": {
+      "file": "giantosanpi083030.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "すみだ区議会だより No.246（令和8年5月1日）会派等の所属議員",
+  "resultTitle": "令和７年度定例会２月議会 議決議案と各議員の賛否の状況（３月３０日分）",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "令和７年度定例会２月議会 議決議案と各議員の賛否の状況（３月３０日分）",
+    "sourceFile": "giantosanpi083030.pdf",
+    "columns": [
+      {
+        "label": "小林しょう",
+        "faction": "墨田区議会自由民主党・無所属",
+        "member": "小林しょう",
+        "stance": "賛成"
+      },
+      {
+        "label": "船橋けんご",
+        "faction": "墨田区議会日本維新の会",
+        "member": "船橋けんご",
+        "stance": "賛成"
+      },
+      {
+        "label": "稲葉かずひろ",
+        "faction": "墨田区議会自由民主党・無所属",
+        "member": "稲葉かずひろ",
+        "stance": "賛成"
+      },
+      {
+        "label": "加藤ひろき",
+        "faction": "墨田区議会自由民主党・無所属",
+        "member": "加藤ひろき",
+        "stance": "賛成"
+      },
+      {
+        "label": "井上裕幾",
+        "faction": "墨田区議会自由民主党・無所属",
+        "member": "井上裕幾",
+        "stance": "賛成"
+      },
+      {
+        "label": "あべよしたけ",
+        "faction": "墨田区議会自由民主党・無所属",
+        "member": "あべよしたけ",
+        "stance": "賛成"
+      },
+      {
+        "label": "大門しろう",
+        "faction": "墨田区議会自由民主党・無所属",
+        "member": "大門しろう",
+        "stance": "賛成"
+      },
+      {
+        "label": "おまた雄一",
+        "faction": "墨田区議会公明党",
+        "member": "おまた雄一",
+        "stance": "賛成"
+      },
+      {
+        "label": "遠藤ミホ",
+        "faction": "立憲民主党墨田区議団",
+        "member": "遠藤ミホ",
+        "stance": "賛成"
+      },
+      {
+        "label": "甲斐まりこ",
+        "faction": "すみだ未来フォーラム（都ファ）",
+        "member": "甲斐まりこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "しみず良平",
+        "faction": "墨田区議会日本維新の会",
+        "member": "しみず良平",
+        "stance": "賛成"
+      },
+      {
+        "label": "堀よしあき",
+        "faction": "墨田区議会自由民主党・無所属",
+        "member": "堀よしあき",
+        "stance": "賛成"
+      },
+      {
+        "label": "坂井ユカコ",
+        "faction": "墨田区議会自由民主党・無所属",
+        "member": "坂井ユカコ",
+        "stance": "賛成"
+      },
+      {
+        "label": "たかはしのりこ",
+        "faction": "墨田区議会公明党",
+        "member": "たかはしのりこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "はねだ福代",
+        "faction": "墨田区議会公明党",
+        "member": "はねだ福代",
+        "stance": "賛成"
+      },
+      {
+        "label": "たきざわ正宜",
+        "faction": "自由民主党すみだの会",
+        "member": "たきざわ正宜",
+        "stance": "賛成"
+      },
+      {
+        "label": "中村あきひろ",
+        "faction": "立憲民主党墨田区議団",
+        "member": "中村あきひろ",
+        "stance": "賛成"
+      },
+      {
+        "label": "あべきみこ",
+        "faction": "すみだ未来フォーラム（都ファ）",
+        "member": "あべきみこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "山下ひろみ",
+        "faction": "日本共産党墨田区議会議員団",
+        "member": "山下ひろみ",
+        "stance": "反対"
+      },
+      {
+        "label": "村本ひろや",
+        "faction": "日本共産党墨田区議会議員団",
+        "member": "村本ひろや",
+        "stance": "反対"
+      },
+      {
+        "label": "しもむら緑",
+        "faction": "墨田区議会自由民主党・無所属",
+        "member": "しもむら緑",
+        "stance": "賛成"
+      },
+      {
+        "label": "福田はるみ",
+        "faction": "墨田区議会自由民主党・無所属",
+        "member": "福田はるみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "とも宣子",
+        "faction": "墨田区議会公明党",
+        "member": "とも宣子",
+        "stance": "賛成"
+      },
+      {
+        "label": "高橋正利",
+        "faction": "墨田区議会公明党",
+        "member": "高橋正利",
+        "stance": "賛成"
+      },
+      {
+        "label": "おおこし勝広",
+        "faction": "墨田区議会公明党",
+        "member": "おおこし勝広",
+        "stance": "賛成"
+      },
+      {
+        "label": "加納進",
+        "faction": "墨田区議会公明党",
+        "member": "加納進",
+        "stance": "賛成"
+      },
+      {
+        "label": "桜井浩之",
+        "faction": "無所属すみだ",
+        "member": "桜井浩之",
+        "stance": "賛成"
+      },
+      {
+        "label": "井上ノエミ",
+        "faction": "新しいすみだ",
+        "member": "井上ノエミ",
+        "stance": "賛成"
+      },
+      {
+        "label": "としま剛",
+        "faction": "日本共産党墨田区議会議員団",
+        "member": "としま剛",
+        "stance": "反対"
+      },
+      {
+        "label": "佐藤篤",
+        "faction": "墨田区議会自由民主党・無所属",
+        "member": "佐藤篤",
+        "stance": "議長"
+      }
+    ]
+  }
+}

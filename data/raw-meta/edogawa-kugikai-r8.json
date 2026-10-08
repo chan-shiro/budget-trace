@@ -1,0 +1,42 @@
+{
+  "sourceId": "edogawa-kugikai-r8",
+  "files": [
+    {
+      "filename": "Kg93_sinngikekka2.pdf",
+      "sha256": "d1e3050d98fe12cd317bf07ad1eb8461f2559ae35fa483a37487129db9a78fa9",
+      "bytes": 197051,
+      "fetchedAt": "2026-10-08T16:05:18.460Z",
+      "fetchedFrom": "https://www.gikai.city.edogawa.tokyo.jp/voices/GikaiDoc/attach/Congress/Kg93_sinngikekka2.pdf"
+    },
+    {
+      "filename": "g07_giketsu.asp_KWORD1_EXP_AND_KWORD2_BUNRUI_KAIGI_2026_02_17_2026_03_25_149_NENFROM_NENTO_KEKKA_SMODE_2_KENSU_100_Sflg_2.html",
+      "sha256": "8b8786f90831a1d88fcfb8f30128233f9f21451309d2027a3712c46361e54f58",
+      "bytes": 92500,
+      "fetchedAt": "2026-10-08T16:05:18.462Z",
+      "fetchedFrom": "https://www.gikai.city.edogawa.tokyo.jp/g07_giketsu.asp?KWORD1=&EXP=AND&KWORD2=&BUNRUI=&KAIGI=2026/02/17,2026/03/25,149&NENFROM=&NENTO=&KEKKA=&SMODE=2&KENSU=100&Sflg=2",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "g07_Gicho.asp.html",
+      "sha256": "e02e2bc565ce11d7c4a4f8133a6f676c7287b5f194c104708a688f9d38e076a0",
+      "bytes": 44810,
+      "fetchedAt": "2026-10-08T16:05:18.462Z",
+      "fetchedFrom": "https://www.gikai.city.edogawa.tokyo.jp/g07_Gicho.asp",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "guide1_3.asp.html",
+      "sha256": "36d1610263a4ef36f56fc55724311b23dcc7108a5bf377692eaaa816a9298a4a",
+      "bytes": 44725,
+      "fetchedAt": "2026-10-08T16:05:18.463Z",
+      "fetchedFrom": "https://www.gikai.city.edogawa.tokyo.jp/guide1_3.asp",
+      "transform": [
+        "ext:.html"
+      ]
+    }
+  ]
+}

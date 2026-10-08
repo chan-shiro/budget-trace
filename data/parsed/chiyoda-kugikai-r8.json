@@ -1,0 +1,276 @@
+{
+  "docType": "council-composition",
+  "sourceId": "chiyoda-kugikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.2",
+  "parsedAt": "2026-10-08T17:57:44.002Z",
+  "fiscalYear": "R8",
+  "body": "千代田区議会",
+  "seats": 22,
+  "asOf": "2026-01-23",
+  "factions": [
+    {
+      "name": "次世代・都民ファースト・立憲の会",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "小野なりこ",
+        "岩佐りょう子",
+        "ふかみ貴子",
+        "入山たけひこ",
+        "岩田かずひと",
+        "おのでら亮",
+        "秋谷こうき"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "千代田区議会 自由民主党",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "小林たかや",
+        "はやお恭一",
+        "大坂隆洋",
+        "池田とものり",
+        "西岡めぐみ"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "千代田区議会自由民主党議員団",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "桜井ただし",
+        "白川司",
+        "富山あゆみ",
+        "永田壮一"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "公明党議員団",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "米田かずや",
+        "えごし雄一"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "牛尾こうじろう"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "国民民主党",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "田中えりか"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "ちよだの声",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "小枝すみ子"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "日本維新の会千代田議員団",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "のざわ哲夫"
+      ],
+      "locator": {
+        "file": "index.html",
+        "row": 8
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第２号",
+    "billName": "令和8年度千代田区一般会計予算",
+    "sessionLabel": "令和8年第1回定例会",
+    "decidedDate": "2026-03-19",
+    "decidedDateLabel": "令和8年3月19日",
+    "result": "可決",
+    "locator": {
+      "file": "277dayori.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "会派紹介（更新日 2026年1月23日・2026-03-01 の魚拓）と各会派のページ（議決前の魚拓）",
+  "resultTitle": "区議会だより ちよだ No.277",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "議案の審議結果等（令和8年第1回定例会）",
+    "sourceFile": "20261teikekka.pdf",
+    "columns": [
+      {
+        "label": "西岡めぐみ",
+        "faction": "千代田区議会 自由民主党",
+        "member": "西岡めぐみ",
+        "stance": "欠席"
+      },
+      {
+        "label": "大坂隆洋",
+        "faction": "千代田区議会 自由民主党",
+        "member": "大坂隆洋",
+        "stance": "賛成"
+      },
+      {
+        "label": "のざわ哲夫",
+        "faction": "日本維新の会千代田議員団",
+        "member": "のざわ哲夫",
+        "stance": "賛成"
+      },
+      {
+        "label": "小枝すみ子",
+        "faction": "ちよだの声",
+        "member": "小枝すみ子",
+        "stance": "賛成"
+      },
+      {
+        "label": "えごし雄一",
+        "faction": "公明党議員団",
+        "member": "えごし雄一",
+        "stance": "賛成"
+      },
+      {
+        "label": "米田かずや",
+        "faction": "公明党議員団",
+        "member": "米田かずや",
+        "stance": "賛成"
+      },
+      {
+        "label": "牛尾こうじろう",
+        "faction": "日本共産党",
+        "member": "牛尾こうじろう",
+        "stance": "反対"
+      },
+      {
+        "label": "岩佐りょう子",
+        "faction": "次世代・都民ファースト・立憲の会",
+        "member": "岩佐りょう子",
+        "stance": "賛成"
+      },
+      {
+        "label": "小野なりこ",
+        "faction": "次世代・都民ファースト・立憲の会",
+        "member": "小野なりこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "池田とものり",
+        "faction": "千代田区議会 自由民主党",
+        "member": "池田とものり",
+        "stance": "賛成"
+      },
+      {
+        "label": "はやお恭一",
+        "faction": "千代田区議会 自由民主党",
+        "member": "はやお恭一",
+        "stance": "賛成"
+      },
+      {
+        "label": "白川司",
+        "faction": "千代田区議会自由民主党議員団",
+        "member": "白川司",
+        "stance": "賛成"
+      },
+      {
+        "label": "永田壮一",
+        "faction": "千代田区議会自由民主党議員団",
+        "member": "永田壮一",
+        "stance": "賛成"
+      },
+      {
+        "label": "入山たけひこ",
+        "faction": "次世代・都民ファースト・立憲の会",
+        "member": "入山たけひこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "田中えりか",
+        "faction": "国民民主党",
+        "member": "田中えりか",
+        "stance": "賛成"
+      },
+      {
+        "label": "岩田かずひと",
+        "faction": "次世代・都民ファースト・立憲の会",
+        "member": "岩田かずひと",
+        "stance": "反対"
+      },
+      {
+        "label": "小林たかや",
+        "faction": "千代田区議会 自由民主党",
+        "member": "小林たかや",
+        "stance": "賛成"
+      },
+      {
+        "label": "ふかみ貴子",
+        "faction": "次世代・都民ファースト・立憲の会",
+        "member": "ふかみ貴子",
+        "stance": "賛成"
+      },
+      {
+        "label": "桜井ただし",
+        "faction": "千代田区議会自由民主党議員団",
+        "member": "桜井ただし",
+        "stance": "賛成"
+      },
+      {
+        "label": "おのでら亮",
+        "faction": "次世代・都民ファースト・立憲の会",
+        "member": "おのでら亮",
+        "stance": "賛成"
+      },
+      {
+        "label": "富山あゆみ",
+        "faction": "千代田区議会自由民主党議員団",
+        "member": "富山あゆみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "秋谷こうき",
+        "faction": "次世代・都民ファースト・立憲の会",
+        "member": "秋谷こうき",
+        "stance": "議長"
+      }
+    ]
+  }
+}

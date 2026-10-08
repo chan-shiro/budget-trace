@@ -1,0 +1,429 @@
+{
+  "docType": "council-composition",
+  "sourceId": "itabashi-kugikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.2",
+  "parsedAt": "2026-10-08T17:57:48.859Z",
+  "fiscalYear": "R8",
+  "body": "板橋区議会",
+  "seats": 44,
+  "asOf": "2026-03-24",
+  "factions": [
+    {
+      "name": "自民党",
+      "seats": 16,
+      "isIndependent": false,
+      "members": [
+        "ひはらみちこ",
+        "近藤タカヒロ",
+        "木田おりべ",
+        "一島ひろし",
+        "横川たかゆき",
+        "内田けんいちろう",
+        "間中りんぺい",
+        "中村とらあき",
+        "山田たかゆき",
+        "田中しゅんすけ",
+        "長瀬達也",
+        "田中やすのり",
+        "元山芳行",
+        "大野治彦",
+        "川口雅敏",
+        "佐々木としたか"
+      ],
+      "locator": {
+        "file": "r80324_giankekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 10,
+      "isIndependent": false,
+      "members": [
+        "実正やすゆき",
+        "いがらし学",
+        "わたなべ一美",
+        "寺田ひろし",
+        "さかまき常行",
+        "いしだ圭一郎",
+        "成島ゆかり",
+        "鈴木こうすけ",
+        "しば佳代子",
+        "田中いさお"
+      ],
+      "locator": {
+        "file": "r80324_giankekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "民主クラブ",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "岩永きりん",
+        "くまだ智子",
+        "おばた健太郎",
+        "中妻じょうた",
+        "五十嵐やす子",
+        "おなだか勝"
+      ],
+      "locator": {
+        "file": "r80324_giankekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "共産党",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "小柳しげる",
+        "石川すみえ",
+        "山内えり",
+        "荒川なお",
+        "いわい桐子",
+        "小林おとみ"
+      ],
+      "locator": {
+        "file": "r80324_giankekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "いたばし未来",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "大野ゆか",
+        "井上温子"
+      ],
+      "locator": {
+        "file": "r80324_giankekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "日本維新の会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "小野ゆりこ"
+      ],
+      "locator": {
+        "file": "r80324_giankekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "参政党",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "坂田れい子"
+      ],
+      "locator": {
+        "file": "r80324_giankekka.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無所属議員",
+      "seats": 2,
+      "isIndependent": true,
+      "members": [
+        "しいなひろみ",
+        "大森大"
+      ],
+      "locator": {
+        "file": "r80324_giankekka.pdf",
+        "page": 1
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第1号",
+    "billName": "令和8年度一般会計予算",
+    "sessionLabel": "令和8年第1回定例会",
+    "decidedDate": "2026-03-24",
+    "decidedDateLabel": "令和8年3月24日",
+    "result": "原案可決",
+    "locator": {
+      "file": "1063847.html"
+    }
+  },
+  "rosterTitle": "議案等に対する審査結果（令和８年第１回定例会）の会派別の列見出し",
+  "resultTitle": "いたばし区議会だより（令和8年第1回定例会）テキストページ4 第1回定例会の審議結果",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "議案等に対する審査結果（令和８年第１回定例会 ２月１３日、３月２日、２４日）",
+    "sourceFile": "r80324_giankekka.pdf",
+    "columns": [
+      {
+        "label": "ひ",
+        "faction": "自民党",
+        "member": "ひはらみちこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "近",
+        "faction": "自民党",
+        "member": "近藤タカヒロ",
+        "stance": "賛成"
+      },
+      {
+        "label": "木",
+        "faction": "自民党",
+        "member": "木田おりべ",
+        "stance": "賛成"
+      },
+      {
+        "label": "一",
+        "faction": "自民党",
+        "member": "一島ひろし",
+        "stance": "賛成"
+      },
+      {
+        "label": "横",
+        "faction": "自民党",
+        "member": "横川たかゆき",
+        "stance": "賛成"
+      },
+      {
+        "label": "内",
+        "faction": "自民党",
+        "member": "内田けんいちろう",
+        "stance": "賛成"
+      },
+      {
+        "label": "間",
+        "faction": "自民党",
+        "member": "間中りんぺい",
+        "stance": "賛成"
+      },
+      {
+        "label": "中",
+        "faction": "自民党",
+        "member": "中村とらあき",
+        "stance": "賛成"
+      },
+      {
+        "label": "山",
+        "faction": "自民党",
+        "member": "山田たかゆき",
+        "stance": "賛成"
+      },
+      {
+        "label": "田",
+        "faction": "自民党",
+        "member": "田中しゅんすけ",
+        "stance": "議長"
+      },
+      {
+        "label": "長",
+        "faction": "自民党",
+        "member": "長瀬達也",
+        "stance": "賛成"
+      },
+      {
+        "label": "田",
+        "faction": "自民党",
+        "member": "田中やすのり",
+        "stance": "賛成"
+      },
+      {
+        "label": "元",
+        "faction": "自民党",
+        "member": "元山芳行",
+        "stance": "賛成"
+      },
+      {
+        "label": "大",
+        "faction": "自民党",
+        "member": "大野治彦",
+        "stance": "賛成"
+      },
+      {
+        "label": "川",
+        "faction": "自民党",
+        "member": "川口雅敏",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐",
+        "faction": "自民党",
+        "member": "佐々木としたか",
+        "stance": "賛成"
+      },
+      {
+        "label": "実",
+        "faction": "公明党",
+        "member": "実正やすゆき",
+        "stance": "賛成"
+      },
+      {
+        "label": "い",
+        "faction": "公明党",
+        "member": "いがらし学",
+        "stance": "賛成"
+      },
+      {
+        "label": "わ",
+        "faction": "公明党",
+        "member": "わたなべ一美",
+        "stance": "賛成"
+      },
+      {
+        "label": "寺",
+        "faction": "公明党",
+        "member": "寺田ひろし",
+        "stance": "賛成"
+      },
+      {
+        "label": "さ",
+        "faction": "公明党",
+        "member": "さかまき常行",
+        "stance": "賛成"
+      },
+      {
+        "label": "い",
+        "faction": "公明党",
+        "member": "いしだ圭一郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "成",
+        "faction": "公明党",
+        "member": "成島ゆかり",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴",
+        "faction": "公明党",
+        "member": "鈴木こうすけ",
+        "stance": "賛成"
+      },
+      {
+        "label": "し",
+        "faction": "公明党",
+        "member": "しば佳代子",
+        "stance": "賛成"
+      },
+      {
+        "label": "田",
+        "faction": "公明党",
+        "member": "田中いさお",
+        "stance": "賛成"
+      },
+      {
+        "label": "岩",
+        "faction": "民主クラブ",
+        "member": "岩永きりん",
+        "stance": "賛成"
+      },
+      {
+        "label": "く",
+        "faction": "民主クラブ",
+        "member": "くまだ智子",
+        "stance": "賛成"
+      },
+      {
+        "label": "お",
+        "faction": "民主クラブ",
+        "member": "おばた健太郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "中",
+        "faction": "民主クラブ",
+        "member": "中妻じょうた",
+        "stance": "賛成"
+      },
+      {
+        "label": "五",
+        "faction": "民主クラブ",
+        "member": "五十嵐やす子",
+        "stance": "賛成"
+      },
+      {
+        "label": "お",
+        "faction": "民主クラブ",
+        "member": "おなだか勝",
+        "stance": "賛成"
+      },
+      {
+        "label": "小",
+        "faction": "共産党",
+        "member": "小柳しげる",
+        "stance": "反対"
+      },
+      {
+        "label": "石",
+        "faction": "共産党",
+        "member": "石川すみえ",
+        "stance": "反対"
+      },
+      {
+        "label": "山",
+        "faction": "共産党",
+        "member": "山内えり",
+        "stance": "反対"
+      },
+      {
+        "label": "荒",
+        "faction": "共産党",
+        "member": "荒川なお",
+        "stance": "反対"
+      },
+      {
+        "label": "い",
+        "faction": "共産党",
+        "member": "いわい桐子",
+        "stance": "反対"
+      },
+      {
+        "label": "小",
+        "faction": "共産党",
+        "member": "小林おとみ",
+        "stance": "反対"
+      },
+      {
+        "label": "大",
+        "faction": "いたばし未来",
+        "member": "大野ゆか",
+        "stance": "賛成"
+      },
+      {
+        "label": "井",
+        "faction": "いたばし未来",
+        "member": "井上温子",
+        "stance": "賛成"
+      },
+      {
+        "label": "小",
+        "faction": "日本維新の会",
+        "member": "小野ゆりこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "坂",
+        "faction": "参政党",
+        "member": "坂田れい子",
+        "stance": "賛成"
+      },
+      {
+        "label": "し",
+        "faction": "無所属議員",
+        "member": "しいなひろみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "大",
+        "faction": "無所属議員",
+        "member": "大森大",
+        "stance": "賛成"
+      }
+    ]
+  }
+}

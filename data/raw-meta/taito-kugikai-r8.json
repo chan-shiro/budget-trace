@@ -1,0 +1,40 @@
+{
+  "sourceId": "taito-kugikai-r8",
+  "files": [
+    {
+      "filename": "kaihabetsu.html",
+      "sha256": "d53aac9371cd08d515e627a088c5a013d3d5489d436375cedb9ffd4dd2c85959",
+      "bytes": 29304,
+      "fetchedAt": "2026-10-08T16:05:18.422Z",
+      "fetchedFrom": "https://web.archive.org/web/20260313051229id_/https://www.city.taito.lg.jp/kugikai/shokai/kaihabetsu.html"
+    },
+    {
+      "filename": "08-dai1kai-kekka.html",
+      "sha256": "9adc866e353f621f456fc8bda5fa98ce3400184321871f9d5c545df952bce2c8",
+      "bytes": 58230,
+      "fetchedAt": "2026-10-08T16:05:18.423Z",
+      "fetchedFrom": "https://www.city.taito.lg.jp/kugikai/kaigi/honkaigi/r8/r8tei1/08-dai1kai-kekka.html"
+    },
+    {
+      "filename": "No249_01-08.pdf",
+      "sha256": "981f8baf2fd2448c1a754041b2c7050b1baf4450ee91344ed4573f6e55513762",
+      "bytes": 3172810,
+      "fetchedAt": "2026-10-08T16:05:18.426Z",
+      "fetchedFrom": "https://www.city.taito.lg.jp/kugikai/dayori/dayori/r8/249.files/No249_01-08.pdf"
+    },
+    {
+      "filename": "honR080326.pdf",
+      "sha256": "87837385aa8f52ce378cc53049cfca329d17393ce557d0fc342701d83ddcd863",
+      "bytes": 510303,
+      "fetchedAt": "2026-10-08T16:05:18.427Z",
+      "fetchedFrom": "https://www.city.taito.lg.jp/kugikai/kaigi/sokuhouban/sokuhouban.files/honR080326.pdf"
+    },
+    {
+      "filename": "shikumi.html",
+      "sha256": "56c2085fb7c0cd725fe7413f01e539ec368b9f407bcf377b30ffad7eacc84712",
+      "bytes": 25119,
+      "fetchedAt": "2026-10-08T16:05:18.427Z",
+      "fetchedFrom": "https://www.city.taito.lg.jp/kugikai/about/shikumi.html"
+    }
+  ]
+}
