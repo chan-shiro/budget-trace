@@ -24,7 +24,7 @@ import { z } from "zod";
 import { readRawMeta } from "../lib/store";
 import type { CouncilCompositionDoc, CouncilFactionFact, SourceEntry } from "../types";
 
-export const PARSER_VERSION = "0.8.1";
+export const PARSER_VERSION = "0.8.2";
 
 const factionSchema = z
   .object({
@@ -353,7 +353,10 @@ function bboxHeaderError(path: string, anchorN: string, keys: string[], sym: str
   let headerReason: string | null = null;
   for (const w of words) {
     // anchor は1語に収まるか、同じ行の続く語をつないで現れること
-    const line = words.filter((o) => o.page === w.page && Math.abs(o.y0 - w.y0) < 2.5).sort((a, b) => a.x0 - b.x0);
+    // 同じ行: 縦の中心の差が文字の高さの6割（最低4pt）以内。上端で比べると、記号だけ数pt高く組まれた列（江東の新時代）を落とした
+    const cy = (o: BboxWord) => (o.y0 + o.y1) / 2;
+    const tol = Math.max(4, (w.y1 - w.y0) * 0.6);
+    const line = words.filter((o) => o.page === w.page && Math.abs(cy(o) - cy(w)) <= tol).sort((a, b) => a.x0 - b.x0);
     const from = line.indexOf(w);
     let acc = "";
     let end = -1;
@@ -533,6 +536,23 @@ function legendPairOk(texts: string[], k: string, v: string, keys: string[]): bo
   }
   return false;
 }
+/**
+ * 記号の無い列を議長以外の事情（欠席・退席など）で外す原文の検査（0.8.2）。事情の語が**氏名より前**にあり、語と氏名の間が
+ * 25字以内で、間に挟む議席番号（「N番」）が1つまでであること。語と氏名を含むだけだと、出席議員の欄の最後の氏名から次の
+ * 「欠席議員（１名）」の見出しまでをまたぐ原文で、出席議員を欠席にすり替えられた（大田の会議録の組版・レビューで実測）
+ */
+function absenceEvidenceOk(evidence: string, label: string, stance: string): boolean {
+  const ev = norm(evidence);
+  const name = norm(label);
+  const ni = ev.indexOf(name);
+  if (ni < 0) return false;
+  return (STANCE_WORDS[stance] ?? [stance]).some((w) => {
+    const wi = ev.lastIndexOf(w, ni);
+    if (wi < 0 || wi + w.length > ni) return false;
+    const between = ev.slice(wi + w.length, ni);
+    return between.length <= 25 && (between.match(/\d+番/g) ?? []).length <= 1;
+  });
+}
 /** 賛否表の記号として出る非漢字の字（既存 registry の凡例から。／・－は日付や空欄にも出るので入れない） */
 const VOTE_MARKS = /[○〇●◎◯×✕✖△▲▽□■◇◆]/gu;
 /** verifyVotes が名簿・会派・原典を引くための文脈。パーサごとに名簿の読み方は違うが、賛否の照合は1つにする */
@@ -615,7 +635,7 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
       const m = mf.get(norm(b.label));
       const evViews = b.evidenceUrl ? readDoc(fileFor(b.evidenceUrl)).views : [...vdoc.views, ...rosterViews];
       if (!m) missing.push(`記号の無い列「${b.label}」が名簿の議員にいません`);
-      if (!has(evViews, b.evidence) || !norm(b.evidence).includes(norm(b.label)) || (b.stance === "議長" && !norm(b.evidence).replace(/副議長/g, "").includes("議長")) || (b.stance !== "議長" && !(STANCE_WORDS[b.stance] ?? [b.stance]).some((w) => norm(b.evidence).includes(w)))) {
+      if (!has(evViews, b.evidence) || !norm(b.evidence).includes(norm(b.label)) || (b.stance === "議長" && !norm(b.evidence).replace(/副議長/g, "").includes("議長")) || (b.stance !== "議長" && !absenceEvidenceOk(b.evidence, b.label, b.stance))) {
         missing.push(`「${b.label}」の原文「${b.evidence}」が原典に無いか、氏名・「議長」を含みません`);
       }
       if (m) ucols.push({ label: b.label, faction: m.display, member: m.raw, stance: b.stance });
@@ -840,8 +860,8 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
     // 「副議長」も「議長」の字を含むので、取り除いてから探す（副議長を議長として外す書き写しが通った＝2巡目のレビュー）
     const chairWord = (x: string) => norm(x).replace(/副議長/g, "").includes("議長");
     // 欠席・退席などで外すときも、原文がその事情を言っていること（氏名だけ・出席欄の「45番 佐藤なおみ」でも通った＝大田で実測）
-    if (b.stance !== "議長" && !(STANCE_WORDS[b.stance] ?? [b.stance]).some((w) => norm(b.evidence).includes(w))) {
-      missing.push(`記号の無い列「${b.label}」を「${b.stance}」とする原文「${b.evidence}」に「${b.stance}」の語がありません`);
+    if (b.stance !== "議長" && !absenceEvidenceOk(b.evidence, b.label, b.stance)) {
+      missing.push(`記号の無い列「${b.label}」を「${b.stance}」とする原文「${b.evidence}」は、「${b.stance}」の語が氏名の直前（25字以内・議席番号は1つまで）にありません`);
     }
     if (b.stance === "議長" && !chairWord(b.evidence)) {
       if (!b.evidenceHeading || !chairWord(b.evidenceHeading) || norm(b.evidenceHeading).includes("副議長")) {

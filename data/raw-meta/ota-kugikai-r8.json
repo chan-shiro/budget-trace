@@ -23,11 +23,14 @@
       "fetchedFrom": "https://www.city.ota.tokyo.jp/gikai/kugikai_katsudou/honkaigi/r_8/1teirei/r0801teirei_taido.html"
     },
     {
-      "filename": "VoiJson.exe_ACT_200_FINO_4460_CHARSET_UTF8",
+      "filename": "VoiJson.exe_ACT_200_FINO_4460_CHARSET_UTF8.json",
       "sha256": "fe793e2694a20dbc92bd64781819788c03883cd9a0f02aa90eeb08b398ef1f76",
       "bytes": 183537,
       "fetchedAt": "2026-10-08T16:05:18.443Z",
-      "fetchedFrom": "https://www.gikai-ota-tokyo.jp/voices2/cgi/VoiJson.exe?ACT=200&FINO=4460&CHARSET=UTF8"
+      "fetchedFrom": "https://www.gikai-ota-tokyo.jp/voices2/cgi/VoiJson.exe?ACT=200&FINO=4460&CHARSET=UTF8",
+      "transform": [
+        "ext:.json"
+      ]
     }
   ]
 }

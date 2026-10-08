@@ -3954,7 +3954,7 @@ export const MUNI_COUNCIL_YEARS: Record<string, Council[]> = {
         "title": "令和8年第1回定例会 区長提出議案",
         "localUrl": "/sources/ota-kugikai-r8/r0801teirei_kuchogian.html",
         "originUrl": "https://www.city.ota.tokyo.jp/gikai/kugikai_katsudou/honkaigi/r_8/1teirei/r0801teirei_kuchogian.html",
-        "archiveUrl": "https://www.city.ota.tokyo.jp/gikai/kugikai_katsudou/honkaigi/r_8/1teirei/r0801teirei_kuchogian.html"
+        "archiveUrl": "https://web.archive.org/web/20261008170855/https://www.city.ota.tokyo.jp/gikai/kugikai_katsudou/honkaigi/r_8/1teirei/r0801teirei_kuchogian.html"
       },
       "minutesUrl": null,
       "newsletterUrl": null,
