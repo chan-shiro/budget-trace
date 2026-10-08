@@ -550,7 +550,8 @@ function absenceEvidenceOk(evidence: string, label: string, stance: string): boo
     const wi = ev.lastIndexOf(w, ni);
     if (wi < 0 || wi + w.length > ni) return false;
     const between = ev.slice(wi + w.length, ni);
-    return between.length <= 25 && (between.match(/\d+番/g) ?? []).length <= 1;
+    // 間に「出席」「なし」を挟まない（「欠席議員 な し」の直後に出席議員の欄が続く組版で、出席議員を欠席にできる＝レビュー2巡目の指摘）
+    return between.length <= 25 && (between.match(/\d+番/g) ?? []).length <= 1 && !/出席|なし|無し/.test(between);
   });
 }
 /** 賛否表の記号として出る非漢字の字（既存 registry の凡例から。／・－は日付や空欄にも出るので入れない） */
