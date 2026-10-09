@@ -1,0 +1,40 @@
+{
+  "sourceId": "tokorozawa-shigikai-r8",
+  "files": [
+    {
+      "filename": "kaihaitiran.html",
+      "sha256": "ac5f914e958b16b8bfc578d203f8fd0560f19bcce1fdc2da7243ac57e12da90c",
+      "bytes": 12867,
+      "fetchedAt": "2026-10-09T03:09:57.173Z",
+      "fetchedFrom": "https://web.archive.org/web/20260310023149id_/https://www.city.tokorozawa.saitama.jp/shigikai/shokai/kaihaitiran.html"
+    },
+    {
+      "filename": "shityokekka_R8.3.24_2.pdf",
+      "sha256": "c280e61dd6e16d80094de6d9d28c2cf10041bf526f53170f97e352e8875a8405",
+      "bytes": 281074,
+      "fetchedAt": "2026-10-09T03:09:57.175Z",
+      "fetchedFrom": "https://www.city.tokorozawa.saitama.jp/shigikai/shingi/r8dai2/R8_dai2kai_kekka.files/shityokekka_R8.3.24_2.pdf"
+    },
+    {
+      "filename": "218all.pdf",
+      "sha256": "10c6a78fafbe894f96e10a287ff504f4a2268b653cb6b252c31e13d7e1a5c144",
+      "bytes": 4554929,
+      "fetchedAt": "2026-10-09T03:09:57.179Z",
+      "fetchedFrom": "https://www.city.tokorozawa.saitama.jp/shigikai/dayori/dayori_R8.files/218all.pdf"
+    },
+    {
+      "filename": "20260317.pdf",
+      "sha256": "5533ad460c70fcdbbda54a4603794db0d438b8e2a8023a6c3e1831d37a67ddb2",
+      "bytes": 713817,
+      "fetchedAt": "2026-10-09T03:09:57.181Z",
+      "fetchedFrom": "https://www.city.tokorozawa.saitama.jp/shigikai/shingi/r8dai2/202602ippan.files/20260317.pdf"
+    },
+    {
+      "filename": "index.html",
+      "sha256": "f67d560ce8a1677bfed34f005c228c0a8237913218c0b57d22b9a6dded5d4382",
+      "bytes": 9129,
+      "fetchedAt": "2026-10-09T03:09:57.182Z",
+      "fetchedFrom": "https://www.city.tokorozawa.saitama.jp/shigikai/aramashi/teisuu/index.html"
+    }
+  ]
+}

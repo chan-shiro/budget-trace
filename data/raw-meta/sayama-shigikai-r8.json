@@ -1,0 +1,36 @@
+{
+  "sourceId": "sayama-shigikai-r8",
+  "files": [
+    {
+      "filename": "kaihameibo.html",
+      "sha256": "96cdcb5d6513e81d366a77d1e128346739f9ab15d1a2226cd08c9057cd40394c",
+      "bytes": 19662,
+      "fetchedAt": "2026-10-09T03:09:57.183Z",
+      "fetchedFrom": "https://web.archive.org/web/20260314132549id_/https://www.city.sayama.saitama.jp/gikai/meibo/kaihameibo.html"
+    },
+    {
+      "filename": "R8_01gian.html",
+      "sha256": "cf366b24018ef773a2a732f7f97e048df5a3b6bf20ef1d47c72f033774a0bcdf",
+      "bytes": 40172,
+      "fetchedAt": "2026-10-09T03:09:57.184Z",
+      "fetchedFrom": "https://www.city.sayama.saitama.jp/gikai/teireikai/gianitiran/R8_01gian.html"
+    },
+    {
+      "filename": "g07_Video_Search.asp_kaigi_74.html",
+      "sha256": "4a64a4d200918349d1a33757cee15c03f2072bac8a2aa430bf219c39133ae158",
+      "bytes": 23450,
+      "fetchedAt": "2026-10-09T03:09:57.184Z",
+      "fetchedFrom": "http://sayama.gijiroku.com/g07_Video_Search.asp?kaigi=74",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "sikumi.html",
+      "sha256": "4e827df8c3f667b5d3bb64ea9fa7b29e648a8a7f04ec3f5c516335248c254aab",
+      "bytes": 23632,
+      "fetchedAt": "2026-10-09T03:09:57.185Z",
+      "fetchedFrom": "https://www.city.sayama.saitama.jp/gikai/shgikai/sikumi.html"
+    }
+  ]
+}

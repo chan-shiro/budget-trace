@@ -1,0 +1,271 @@
+{
+  "docType": "council-composition",
+  "sourceId": "niiza-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.4",
+  "parsedAt": "2026-10-09T04:02:54.228Z",
+  "fiscalYear": "R8",
+  "body": "新座市議会",
+  "seats": 26,
+  "asOf": "2026-02-20",
+  "factions": [
+    {
+      "name": "未来を創る会",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "島田久仁代",
+        "鈴木芳宗",
+        "よねはしゆうた",
+        "伊藤信太郎",
+        "山口歩",
+        "川村よしひさ",
+        "田口訓子"
+      ],
+      "locator": {
+        "file": "toukaiha.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "自民・維新の会",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "池田貞雄",
+        "鈴木明子",
+        "助川昇",
+        "嶋野加代",
+        "堀内博史"
+      ],
+      "locator": {
+        "file": "toukaiha.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "白井忠雄",
+        "鈴木秀一",
+        "野中弥生",
+        "佐藤重忠",
+        "谷地田庸子",
+        "伊藤智砂子",
+        "片山敏子"
+      ],
+      "locator": {
+        "file": "toukaiha.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "市民と語る会",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "高邑朋矢",
+        "上田美小枝"
+      ],
+      "locator": {
+        "file": "toukaiha.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "石島陽子",
+        "笠原進",
+        "小野大輔",
+        "黒田実樹",
+        "小野由美子"
+      ],
+      "locator": {
+        "file": "toukaiha.html",
+        "row": 5
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第27号",
+    "billName": "令和８年度新座市一般会計予算",
+    "sessionLabel": "令和８年第１回定例会",
+    "decidedDate": "2026-03-26",
+    "decidedDateLabel": "令和8年3月26日",
+    "result": "原案可決",
+    "locator": {
+      "file": "71060.pdf",
+      "page": 4
+    }
+  },
+  "rosterTitle": "党・会派別名簿（令和8年2月20日現在）",
+  "resultTitle": "令和８年第１回定例会 議案の審議結果（市長提出議案）",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "令和８年第１回定例会 議案の審議結果（市長提出議案）",
+    "sourceFile": "71060.pdf",
+    "columns": [
+      {
+        "label": "島田久仁代",
+        "faction": "未来を創る会",
+        "member": "島田久仁代",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴木芳宗",
+        "faction": "未来を創る会",
+        "member": "鈴木芳宗",
+        "stance": "議長"
+      },
+      {
+        "label": "よねはしゆうた",
+        "faction": "未来を創る会",
+        "member": "よねはしゆうた",
+        "stance": "賛成"
+      },
+      {
+        "label": "伊藤信太郎",
+        "faction": "未来を創る会",
+        "member": "伊藤信太郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "山口歩",
+        "faction": "未来を創る会",
+        "member": "山口歩",
+        "stance": "賛成"
+      },
+      {
+        "label": "川村よしひさ",
+        "faction": "未来を創る会",
+        "member": "川村よしひさ",
+        "stance": "賛成"
+      },
+      {
+        "label": "田口訓子",
+        "faction": "未来を創る会",
+        "member": "田口訓子",
+        "stance": "賛成"
+      },
+      {
+        "label": "池田貞雄",
+        "faction": "自民・維新の会",
+        "member": "池田貞雄",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴木明子",
+        "faction": "自民・維新の会",
+        "member": "鈴木明子",
+        "stance": "賛成"
+      },
+      {
+        "label": "助川昇",
+        "faction": "自民・維新の会",
+        "member": "助川昇",
+        "stance": "賛成"
+      },
+      {
+        "label": "嶋野加代",
+        "faction": "自民・維新の会",
+        "member": "嶋野加代",
+        "stance": "賛成"
+      },
+      {
+        "label": "堀内博史",
+        "faction": "自民・維新の会",
+        "member": "堀内博史",
+        "stance": "賛成"
+      },
+      {
+        "label": "白井忠雄",
+        "faction": "公明党",
+        "member": "白井忠雄",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴木秀一",
+        "faction": "公明党",
+        "member": "鈴木秀一",
+        "stance": "賛成"
+      },
+      {
+        "label": "野中弥生",
+        "faction": "公明党",
+        "member": "野中弥生",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐藤重忠",
+        "faction": "公明党",
+        "member": "佐藤重忠",
+        "stance": "賛成"
+      },
+      {
+        "label": "谷地田庸子",
+        "faction": "公明党",
+        "member": "谷地田庸子",
+        "stance": "賛成"
+      },
+      {
+        "label": "伊藤智砂子",
+        "faction": "公明党",
+        "member": "伊藤智砂子",
+        "stance": "賛成"
+      },
+      {
+        "label": "片山敏子",
+        "faction": "公明党",
+        "member": "片山敏子",
+        "stance": "賛成"
+      },
+      {
+        "label": "高邑朋矢",
+        "faction": "市民と語る会",
+        "member": "高邑朋矢",
+        "stance": "反対"
+      },
+      {
+        "label": "上田美小枝",
+        "faction": "市民と語る会",
+        "member": "上田美小枝",
+        "stance": "反対"
+      },
+      {
+        "label": "石島陽子",
+        "faction": "日本共産党",
+        "member": "石島陽子",
+        "stance": "反対"
+      },
+      {
+        "label": "笠原進",
+        "faction": "日本共産党",
+        "member": "笠原進",
+        "stance": "反対"
+      },
+      {
+        "label": "小野大輔",
+        "faction": "日本共産党",
+        "member": "小野大輔",
+        "stance": "反対"
+      },
+      {
+        "label": "黒田実樹",
+        "faction": "日本共産党",
+        "member": "黒田実樹",
+        "stance": "反対"
+      },
+      {
+        "label": "小野由美子",
+        "faction": "日本共産党",
+        "member": "小野由美子",
+        "stance": "反対"
+      }
+    ]
+  }
+}

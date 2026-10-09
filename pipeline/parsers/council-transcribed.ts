@@ -24,7 +24,7 @@ import { z } from "zod";
 import { readRawMeta } from "../lib/store";
 import type { CouncilCompositionDoc, CouncilFactionFact, SourceEntry } from "../types";
 
-export const PARSER_VERSION = "0.8.3";
+export const PARSER_VERSION = "0.8.4";
 
 const factionSchema = z
   .object({
@@ -428,6 +428,8 @@ function dateTokens(s: string): string[] {
     ...[...n.matchAll(/(?<![\d.])R?\d{1,2}\.(\d{1,2})\.(\d{1,2})(?![\d.])/g)].map((m) => `${Number(m[1])}月${Number(m[2])}日`),
     // 「3/24」
     ...[...n.matchAll(/(?<![\d/])(\d{1,2})\/(\d{1,2})(?![\d/])/g)].map((m) => `${Number(m[1])}月${Number(m[2])}日`),
+    // 「R08/3/11」（三郷の議決結果一覧表・元号の頭文字つきの年/月/日）。「3/24」は前後に / を許さないので別に取る
+    ...[...n.matchAll(/(?<![\dA-Za-z/])R\d{1,2}\/(\d{1,2})\/(\d{1,2})(?![\d/])/g)].map((m) => `${Number(m[1])}月${Number(m[2])}日`),
   ];
 }
 

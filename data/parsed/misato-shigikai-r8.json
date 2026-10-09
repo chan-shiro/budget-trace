@@ -1,0 +1,261 @@
+{
+  "docType": "council-composition",
+  "sourceId": "misato-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.4",
+  "parsedAt": "2026-10-09T04:02:50.670Z",
+  "fiscalYear": "R8",
+  "body": "三郷市議会",
+  "seats": 23,
+  "asOf": "2026-03-11",
+  "factions": [
+    {
+      "name": "新政会",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "武居弘治",
+        "佐々木修",
+        "宇治由紀子",
+        "寺沢美紗",
+        "西尾秀貴",
+        "沖原優子",
+        "竹内嘉洋"
+      ],
+      "locator": {
+        "file": "R803sanpi.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "21世紀クラブ",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "渡邉雅人",
+        "柳瀬勝彦",
+        "菊名裕",
+        "柴田吾一"
+      ],
+      "locator": {
+        "file": "R803sanpi.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "鈴木深太郎",
+        "鳴海和美",
+        "西村寿美枝",
+        "桑原洋昭"
+      ],
+      "locator": {
+        "file": "R803sanpi.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "創政MISATO",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "佐藤裕之",
+        "髙橋誠一",
+        "日髙千穂",
+        "鈴木優作"
+      ],
+      "locator": {
+        "file": "R803sanpi.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "共産党",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "工藤智加子",
+        "深川智加",
+        "紺野伊久子"
+      ],
+      "locator": {
+        "file": "R803sanpi.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無所属（篠田隆彦）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "篠田隆彦"
+      ],
+      "locator": {
+        "file": "R803sanpi.pdf",
+        "page": 1
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案21",
+    "billName": "令和８年度三郷市一般会計予算",
+    "sessionLabel": "３月定例会",
+    "decidedDate": "2026-03-11",
+    "decidedDateLabel": "令和8年3月11日",
+    "result": "原案可決",
+    "locator": {
+      "file": "R8_3_giketukekkaitirann.pdf",
+      "page": 2
+    }
+  },
+  "rosterTitle": "令和8年3月定例会会派別賛否（みさと市議会だより第205号 審議結果と賛否）",
+  "resultTitle": "令和8年3月定例会 議決結果一覧表",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "令和8年3月定例会会派別賛否（審議結果と賛否）",
+    "sourceFile": "R803sanpi.pdf",
+    "columns": [
+      {
+        "label": "佐々木修",
+        "faction": "新政会",
+        "member": "佐々木修",
+        "stance": "賛成"
+      },
+      {
+        "label": "宇治由紀子",
+        "faction": "新政会",
+        "member": "宇治由紀子",
+        "stance": "賛成"
+      },
+      {
+        "label": "寺沢美紗",
+        "faction": "新政会",
+        "member": "寺沢美紗",
+        "stance": "賛成"
+      },
+      {
+        "label": "西尾秀貴",
+        "faction": "新政会",
+        "member": "西尾秀貴",
+        "stance": "賛成"
+      },
+      {
+        "label": "沖原優子",
+        "faction": "新政会",
+        "member": "沖原優子",
+        "stance": "賛成"
+      },
+      {
+        "label": "竹内嘉洋",
+        "faction": "新政会",
+        "member": "竹内嘉洋",
+        "stance": "賛成"
+      },
+      {
+        "label": "渡邉雅人",
+        "faction": "21世紀クラブ",
+        "member": "渡邉雅人",
+        "stance": "賛成"
+      },
+      {
+        "label": "柳瀬勝彦",
+        "faction": "21世紀クラブ",
+        "member": "柳瀬勝彦",
+        "stance": "賛成"
+      },
+      {
+        "label": "菊名裕",
+        "faction": "21世紀クラブ",
+        "member": "菊名裕",
+        "stance": "賛成"
+      },
+      {
+        "label": "柴田吾一",
+        "faction": "21世紀クラブ",
+        "member": "柴田吾一",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴木深太郎",
+        "faction": "公明党",
+        "member": "鈴木深太郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "鳴海和美",
+        "faction": "公明党",
+        "member": "鳴海和美",
+        "stance": "賛成"
+      },
+      {
+        "label": "西村寿美枝",
+        "faction": "公明党",
+        "member": "西村寿美枝",
+        "stance": "賛成"
+      },
+      {
+        "label": "桑原洋昭",
+        "faction": "公明党",
+        "member": "桑原洋昭",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐藤裕之",
+        "faction": "創政MISATO",
+        "member": "佐藤裕之",
+        "stance": "賛成"
+      },
+      {
+        "label": "髙橋誠一",
+        "faction": "創政MISATO",
+        "member": "髙橋誠一",
+        "stance": "賛成"
+      },
+      {
+        "label": "日髙千穂",
+        "faction": "創政MISATO",
+        "member": "日髙千穂",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴木優作",
+        "faction": "創政MISATO",
+        "member": "鈴木優作",
+        "stance": "賛成"
+      },
+      {
+        "label": "工藤智加子",
+        "faction": "共産党",
+        "member": "工藤智加子",
+        "stance": "反対"
+      },
+      {
+        "label": "深川智加",
+        "faction": "共産党",
+        "member": "深川智加",
+        "stance": "反対"
+      },
+      {
+        "label": "紺野伊久子",
+        "faction": "共産党",
+        "member": "紺野伊久子",
+        "stance": "反対"
+      },
+      {
+        "label": "篠田隆彦",
+        "faction": "無所属（篠田隆彦）",
+        "member": "篠田隆彦",
+        "stance": "賛成"
+      },
+      {
+        "label": "武居弘治",
+        "faction": "新政会",
+        "member": "武居弘治",
+        "stance": "議長"
+      }
+    ]
+  }
+}

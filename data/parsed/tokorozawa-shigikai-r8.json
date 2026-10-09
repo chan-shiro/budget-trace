@@ -1,0 +1,354 @@
+{
+  "docType": "council-composition",
+  "sourceId": "tokorozawa-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.4",
+  "parsedAt": "2026-10-09T04:03:10.875Z",
+  "fiscalYear": "R8",
+  "body": "所沢市議会",
+  "seats": 33,
+  "asOf": "2025-05-15",
+  "teisu": 33,
+  "factions": [
+    {
+      "name": "自由民主党・維新・参政・無所属の会",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "前田浩昭",
+        "斉藤かおり",
+        "神戸鉄郎",
+        "佐野允彦",
+        "大庭祥照",
+        "入沢豊",
+        "石原昂"
+      ],
+      "locator": {
+        "file": "kaihaitiran.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "福原浩昭",
+        "植竹成年",
+        "大久保竜一",
+        "川辺浩直",
+        "亀山恭子",
+        "山口浩美"
+      ],
+      "locator": {
+        "file": "kaihaitiran.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "至誠自民クラブ",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "秋田孝",
+        "谷口雅典",
+        "大石健一",
+        "大舘隆行",
+        "斎藤由紀"
+      ],
+      "locator": {
+        "file": "kaihaitiran.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "日本共産党所沢市議団",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "矢作いづみ",
+        "小林澄子",
+        "中井めぐみ",
+        "花岡健太"
+      ],
+      "locator": {
+        "file": "kaihaitiran.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "市民クラブ未来",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "松本明信",
+        "粕谷不二夫",
+        "中毅志",
+        "青木利幸"
+      ],
+      "locator": {
+        "file": "kaihaitiran.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "さきがけ",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "荻野泰男",
+        "島田一隆",
+        "長谷川礼奈"
+      ],
+      "locator": {
+        "file": "kaihaitiran.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "立憲リベラルの会",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "末吉美帆子",
+        "石本亮三"
+      ],
+      "locator": {
+        "file": "kaihaitiran.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "立憲民主党・れいわ新選組",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "赤川洋二",
+        "長岡恵子"
+      ],
+      "locator": {
+        "file": "kaihaitiran.html",
+        "row": 8
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第42号",
+    "billName": "令和8年度所沢市一般会計予算",
+    "sessionLabel": "令和８年第２回（２月）定例会議",
+    "decidedDate": "2026-03-24",
+    "decidedDateLabel": "令和8年3月24日",
+    "result": "原案可決",
+    "locator": {
+      "file": "shityokekka_R8.3.24_2.pdf",
+      "page": 5
+    }
+  },
+  "rosterTitle": "会派一覧（会派構成表 令和7年5月現在・更新日 2025年5月15日）",
+  "resultTitle": "市長提出議案の審議結果［令和８年第２回（２月）定例会議］",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "市長提出議案の審議結果［令和８年第２回（２月）定例会議］",
+    "sourceFile": "shityokekka_R8.3.24_2.pdf",
+    "columns": [
+      {
+        "label": "斉藤かおり",
+        "faction": "自由民主党・維新・参政・無所属の会",
+        "member": "斉藤かおり",
+        "stance": "賛成"
+      },
+      {
+        "label": "神戸鉄郎",
+        "faction": "自由民主党・維新・参政・無所属の会",
+        "member": "神戸鉄郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐野允彦",
+        "faction": "自由民主党・維新・参政・無所属の会",
+        "member": "佐野允彦",
+        "stance": "賛成"
+      },
+      {
+        "label": "大庭祥照",
+        "faction": "自由民主党・維新・参政・無所属の会",
+        "member": "大庭祥照",
+        "stance": "賛成"
+      },
+      {
+        "label": "前田浩昭",
+        "faction": "自由民主党・維新・参政・無所属の会",
+        "member": "前田浩昭",
+        "stance": "賛成"
+      },
+      {
+        "label": "入沢豊",
+        "faction": "自由民主党・維新・参政・無所属の会",
+        "member": "入沢豊",
+        "stance": "賛成"
+      },
+      {
+        "label": "石原昂",
+        "faction": "自由民主党・維新・参政・無所属の会",
+        "member": "石原昂",
+        "stance": "賛成"
+      },
+      {
+        "label": "植竹成年",
+        "faction": "公明党",
+        "member": "植竹成年",
+        "stance": "賛成"
+      },
+      {
+        "label": "大久保竜一",
+        "faction": "公明党",
+        "member": "大久保竜一",
+        "stance": "賛成"
+      },
+      {
+        "label": "川辺浩直",
+        "faction": "公明党",
+        "member": "川辺浩直",
+        "stance": "賛成"
+      },
+      {
+        "label": "亀山恭子",
+        "faction": "公明党",
+        "member": "亀山恭子",
+        "stance": "賛成"
+      },
+      {
+        "label": "山口浩美",
+        "faction": "公明党",
+        "member": "山口浩美",
+        "stance": "賛成"
+      },
+      {
+        "label": "福原浩昭",
+        "faction": "公明党",
+        "member": "福原浩昭",
+        "stance": "賛成"
+      },
+      {
+        "label": "谷口雅典",
+        "faction": "至誠自民クラブ",
+        "member": "谷口雅典",
+        "stance": "賛成"
+      },
+      {
+        "label": "大石健一",
+        "faction": "至誠自民クラブ",
+        "member": "大石健一",
+        "stance": "賛成"
+      },
+      {
+        "label": "大舘隆行",
+        "faction": "至誠自民クラブ",
+        "member": "大舘隆行",
+        "stance": "賛成"
+      },
+      {
+        "label": "秋田孝",
+        "faction": "至誠自民クラブ",
+        "member": "秋田孝",
+        "stance": "賛成"
+      },
+      {
+        "label": "斎藤由紀",
+        "faction": "至誠自民クラブ",
+        "member": "斎藤由紀",
+        "stance": "賛成"
+      },
+      {
+        "label": "小林澄子",
+        "faction": "日本共産党所沢市議団",
+        "member": "小林澄子",
+        "stance": "反対"
+      },
+      {
+        "label": "中井めぐみ",
+        "faction": "日本共産党所沢市議団",
+        "member": "中井めぐみ",
+        "stance": "反対"
+      },
+      {
+        "label": "花岡健太",
+        "faction": "日本共産党所沢市議団",
+        "member": "花岡健太",
+        "stance": "反対"
+      },
+      {
+        "label": "矢作いづみ",
+        "faction": "日本共産党所沢市議団",
+        "member": "矢作いづみ",
+        "stance": "反対"
+      },
+      {
+        "label": "松本明信",
+        "faction": "市民クラブ未来",
+        "member": "松本明信",
+        "stance": "賛成"
+      },
+      {
+        "label": "中毅志",
+        "faction": "市民クラブ未来",
+        "member": "中毅志",
+        "stance": "賛成"
+      },
+      {
+        "label": "青木利幸",
+        "faction": "市民クラブ未来",
+        "member": "青木利幸",
+        "stance": "賛成"
+      },
+      {
+        "label": "島田一隆",
+        "faction": "さきがけ",
+        "member": "島田一隆",
+        "stance": "賛成"
+      },
+      {
+        "label": "長谷川礼奈",
+        "faction": "さきがけ",
+        "member": "長谷川礼奈",
+        "stance": "賛成"
+      },
+      {
+        "label": "荻野泰男",
+        "faction": "さきがけ",
+        "member": "荻野泰男",
+        "stance": "賛成"
+      },
+      {
+        "label": "石本亮三",
+        "faction": "立憲リベラルの会",
+        "member": "石本亮三",
+        "stance": "賛成"
+      },
+      {
+        "label": "末吉美帆子",
+        "faction": "立憲リベラルの会",
+        "member": "末吉美帆子",
+        "stance": "賛成"
+      },
+      {
+        "label": "長岡恵子",
+        "faction": "立憲民主党・れいわ新選組",
+        "member": "長岡恵子",
+        "stance": "賛成"
+      },
+      {
+        "label": "赤川洋二",
+        "faction": "立憲民主党・れいわ新選組",
+        "member": "赤川洋二",
+        "stance": "賛成"
+      },
+      {
+        "label": "粕谷不二夫",
+        "faction": "市民クラブ未来",
+        "member": "粕谷不二夫",
+        "stance": "議長"
+      }
+    ]
+  }
+}

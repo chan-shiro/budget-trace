@@ -1,0 +1,32 @@
+{
+  "sourceId": "iruma-shigikai-r8",
+  "files": [
+    {
+      "filename": "gikai214.pdf",
+      "sha256": "e1968429a02d47a08d2bbf6d848f9710844cd1d5eccd941614e5660dcad938f0",
+      "bytes": 2671068,
+      "fetchedAt": "2026-10-09T03:09:57.197Z",
+      "fetchedFrom": "https://www.city.iruma.saitama.jp/material/files/group/50/gikai214.pdf"
+    },
+    {
+      "filename": "g07_Giketsu_View.asp_SrchID_3262_Sflg_2_kword1_kword2_.html",
+      "sha256": "1c1df34786a2c3077938fa6ea01248b5daa4f2d9ad8374fef1215a82f01de446",
+      "bytes": 6091,
+      "fetchedAt": "2026-10-09T03:09:57.198Z",
+      "fetchedFrom": "https://www3.city.iruma.saitama.jp/voices/g07_Giketsu_View.asp?SrchID=3262&Sflg=2&kword1=&kword2=",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "voiweb.exe_f5550cf4d79c.html",
+      "sha256": "0e4402f40c88e56cd25c2576b353716542bbfb9da26517053afb8a7430a4cdda",
+      "bytes": 137495,
+      "fetchedAt": "2026-10-09T03:10:14.150Z",
+      "fetchedFrom": "https://www3.city.iruma.saitama.jp/voices/cgi/voiweb.exe?ACT=203&KENSAKU=0&SORT=0&KTYP=0,1,2,3&KGTP=1&FYY=2026&TYY=2026&TITL_SUBT=%97%DF%98a%81@%82W%94N%81@%81@%82R%8C%8E%81@%92%E8%97%E1%89%EF%81i%91%E6%82P%89%F1%81j%81%7C03%8C%8E16%93%FA-07%8D%86&HUID=243686&KGNO=515&FINO=1929&HATSUGENMODE=1&HYOUJIMODE=0&STYLE=0",
+      "transform": [
+        "ext:.html"
+      ]
+    }
+  ]
+}

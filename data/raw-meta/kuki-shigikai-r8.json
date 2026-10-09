@@ -1,0 +1,40 @@
+{
+  "sourceId": "kuki-shigikai-r8",
+  "files": [
+    {
+      "filename": "1006419.html",
+      "sha256": "5a600c5766e7e89354d785b6ce25c3870ff932ebfe0cde0329f1e8ed9e33748d",
+      "bytes": 28731,
+      "fetchedAt": "2026-10-09T03:10:14.154Z",
+      "fetchedFrom": "https://web.archive.org/web/20250820162324id_/https://www.city.kuki.lg.jp/shigikai/giinnmeibo/1006419.html"
+    },
+    {
+      "filename": "1011952.html",
+      "sha256": "a55fcf5bd9b34467b3e6e3989b4e09f1e6c357e45617a117af6e36745bdd52bb",
+      "bytes": 37900,
+      "fetchedAt": "2026-10-09T03:10:14.155Z",
+      "fetchedFrom": "https://www.city.kuki.lg.jp/shigikai/gian_kekka/1010605/1010610/1011952.html"
+    },
+    {
+      "filename": "r8.2_giketsu.pdf",
+      "sha256": "f226b0a080df7ca5dcbe75fbf544f7f8e8dad15c3505a656964fe902999dc475",
+      "bytes": 572790,
+      "fetchedAt": "2026-10-09T03:10:14.156Z",
+      "fetchedFrom": "https://www.city.kuki.lg.jp/_res/projects/default_project/_page_/001/011/952/r8.2_giketsu.pdf"
+    },
+    {
+      "filename": "1011955.html",
+      "sha256": "f0809dda31edd66519d6daa4d5593c5faec6cdff9a800982b0fb4ac4cc852bd7",
+      "bytes": 33014,
+      "fetchedAt": "2026-10-09T03:10:14.157Z",
+      "fetchedFrom": "https://www.city.kuki.lg.jp/shigikai/gian_kekka/1010605/1010610/1011955.html"
+    },
+    {
+      "filename": "r7-11-giin_gian.pdf",
+      "sha256": "9ac89cbc6319a54341e902114c77bbb0d252e88f399f7ec32c244ec063136065",
+      "bytes": 99046,
+      "fetchedAt": "2026-10-09T03:10:14.157Z",
+      "fetchedFrom": "https://www.city.kuki.lg.jp/_res/projects/default_project/_page_/001/011/602/r7-11-giin_gian.pdf"
+    }
+  ]
+}

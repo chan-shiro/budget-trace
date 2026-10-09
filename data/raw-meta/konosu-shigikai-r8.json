@@ -1,0 +1,33 @@
+{
+  "sourceId": "konosu-shigikai-r8",
+  "files": [
+    {
+      "filename": "2604.html",
+      "sha256": "82458c119d8bad4f49629a146c2cb6023cbab930bf0b38c951d1be52ae80588b",
+      "bytes": 26946,
+      "fetchedAt": "2026-10-09T03:09:57.185Z",
+      "fetchedFrom": "https://web.archive.org/web/20260212003439id_/https://www.city.kounosu.saitama.jp/site/gikai/2604.html"
+    },
+    {
+      "filename": "25906.pdf",
+      "sha256": "1fbf60ff2443dbcb7a44d52124dbb3776ff28500f1a0cf227612b7cb04fcb64c",
+      "bytes": 116558,
+      "fetchedAt": "2026-10-09T03:09:57.186Z",
+      "fetchedFrom": "https://www.city.kounosu.saitama.jp/uploaded/attachment/25906.pdf"
+    },
+    {
+      "filename": "26692.pdf",
+      "sha256": "40419586bccd3c081e1feb65284ca16eb427e58755d3e5a0a7bd6d5733446d29",
+      "bytes": 883320,
+      "fetchedAt": "2026-10-09T03:09:57.188Z",
+      "fetchedFrom": "https://www.city.kounosu.saitama.jp/uploaded/attachment/26692.pdf"
+    },
+    {
+      "filename": "14209.html",
+      "sha256": "a4b9c9381f8ac2d09098c940725b8f1a3c93af86fd70dd6a447062656a6d8dcb",
+      "bytes": 31617,
+      "fetchedAt": "2026-10-09T03:09:57.189Z",
+      "fetchedFrom": "https://www.city.kounosu.saitama.jp/page/14209.html"
+    }
+  ]
+}

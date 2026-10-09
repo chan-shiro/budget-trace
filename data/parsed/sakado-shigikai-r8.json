@@ -1,0 +1,123 @@
+{
+  "docType": "council-composition",
+  "sourceId": "sakado-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.4",
+  "parsedAt": "2026-10-09T04:03:04.384Z",
+  "fiscalYear": "R8",
+  "body": "坂戸市議会",
+  "seats": 19,
+  "asOf": "2026-03-19",
+  "factions": [
+    {
+      "name": "民政クラブ",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "石井寛",
+        "森田文明",
+        "波多野功和",
+        "中島浩喜"
+      ],
+      "locator": {
+        "file": "36142.pdf",
+        "page": 5
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "古内秀宣",
+        "柴田文子",
+        "野沢聖子",
+        "綿貫正寿"
+      ],
+      "locator": {
+        "file": "36142.pdf",
+        "page": 5
+      }
+    },
+    {
+      "name": "民主の会",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "弓削勇人",
+        "中村拡史",
+        "吉川厚季",
+        "小川未奈子"
+      ],
+      "locator": {
+        "file": "36142.pdf",
+        "page": 5
+      }
+    },
+    {
+      "name": "さかど新政会",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "飯田恵",
+        "吉原正洋",
+        "鏑木幸代"
+      ],
+      "locator": {
+        "file": "36142.pdf",
+        "page": 5
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "新井文雄",
+        "大山嘉代子"
+      ],
+      "locator": {
+        "file": "36142.pdf",
+        "page": 5
+      }
+    },
+    {
+      "name": "無会派（田中栄）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "田中栄"
+      ],
+      "locator": {
+        "file": "36142.pdf",
+        "page": 5
+      }
+    },
+    {
+      "name": "無会派（小澤弘）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "小澤弘"
+      ],
+      "locator": {
+        "file": "36142.pdf",
+        "page": 5
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第２４号",
+    "billName": "令和８年度坂戸市一般会計予算を定める件",
+    "sessionLabel": "坂戸市議会３月定例会",
+    "decidedDate": "2026-03-19",
+    "decidedDateLabel": "令和8年3月19日",
+    "result": "原案可決",
+    "locator": {
+      "file": "34919.pdf",
+      "page": 2
+    }
+  },
+  "rosterTitle": "さかど市議会だより No.180（令和8年5月1日発行）会派別の議員（令和８年３月19日現在）",
+  "resultTitle": "坂戸市議会３月定例会議案審議結果"
+}

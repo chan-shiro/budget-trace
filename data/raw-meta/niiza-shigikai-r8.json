@@ -1,0 +1,29 @@
+{
+  "sourceId": "niiza-shigikai-r8",
+  "files": [
+    {
+      "filename": "toukaiha.html",
+      "sha256": "9aaa95e5476580dd330c234c6bbac0b4405a6ba01b636a2e61fbab050376e58e",
+      "bytes": 21352,
+      "fetchedAt": "2026-10-09T03:10:14.152Z",
+      "fetchedFrom": "https://www.city.niiza.lg.jp/soshiki/52/toukaiha.html"
+    },
+    {
+      "filename": "71060.pdf",
+      "sha256": "3d471db95a73e5f48c97b3323dbd2ebcb45acf8609177169bacfcb07de48d063",
+      "bytes": 354598,
+      "fetchedAt": "2026-10-09T03:10:14.153Z",
+      "fetchedFrom": "https://www.city.niiza.lg.jp/uploaded/attachment/71060.pdf"
+    },
+    {
+      "filename": "voiweb.exe_a9bf827ba23c.html",
+      "sha256": "7062d0c3cae78cb7c7b24b9e3571a4ce1da53b3627f1cb01c8cc8c84455c8bfd",
+      "bytes": 117152,
+      "fetchedAt": "2026-10-09T03:10:14.154Z",
+      "fetchedFrom": "http://niiza.gijiroku.com/voices/cgi/voiweb.exe?ACT=203&KENSAKU=0&SORT=0&KTYP=0,1,2,3&KGTP=1&FYY=2026&TYY=2026&TITL_SUBT=%97%DF%98a%81@%82W%94N%91%E6%82P%89%F1%92%E8%97%E1%89%EF%81%7C03%8C%8E26%93%FA-15%8D%86&FINO=2106&HATSUGENMODE=1&HYOUJIMODE=0&HUID=298753&STYLE=0",
+      "transform": [
+        "ext:.html"
+      ]
+    }
+  ]
+}

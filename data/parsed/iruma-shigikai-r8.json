@@ -1,0 +1,246 @@
+{
+  "docType": "council-composition",
+  "sourceId": "iruma-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.4",
+  "parsedAt": "2026-10-09T04:02:42.220Z",
+  "fiscalYear": "R8",
+  "body": "入間市議会",
+  "seats": 21,
+  "asOf": "2026-03-16",
+  "factions": [
+    {
+      "name": "自由民主党入間市議団",
+      "seats": 10,
+      "isIndependent": false,
+      "members": [
+        "横田淳一",
+        "宮岡治郎",
+        "小島清人",
+        "内村忠久",
+        "古仲リカ",
+        "長谷川渉",
+        "双木小百合",
+        "大野勉",
+        "池畠司",
+        "吉田賢一"
+      ],
+      "locator": {
+        "file": "gikai214.pdf",
+        "page": 3
+      }
+    },
+    {
+      "name": "公明党入間市議団",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "永澤美恵子",
+        "向口文恵",
+        "末次正",
+        "栗山英美"
+      ],
+      "locator": {
+        "file": "gikai214.pdf",
+        "page": 3
+      }
+    },
+    {
+      "name": "日本共産党入間市議団",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "安道佳子",
+        "佐藤匡",
+        "田山雅子"
+      ],
+      "locator": {
+        "file": "gikai214.pdf",
+        "page": 3
+      }
+    },
+    {
+      "name": "市民の声",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "町田健治",
+        "山川さおり"
+      ],
+      "locator": {
+        "file": "gikai214.pdf",
+        "page": 3
+      }
+    },
+    {
+      "name": "市民フォーラム",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "野口哲次"
+      ],
+      "locator": {
+        "file": "gikai214.pdf",
+        "page": 3
+      }
+    },
+    {
+      "name": "無所属の会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "細田智也"
+      ],
+      "locator": {
+        "file": "gikai214.pdf",
+        "page": 3
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第31号",
+    "billName": "令和８年度入間市一般会計予算",
+    "sessionLabel": "令和８年３月定例会（第１回）",
+    "decidedDate": "2026-03-16",
+    "decidedDateLabel": "令和8年3月16日",
+    "result": "原案可決",
+    "locator": {
+      "file": "g07_Giketsu_View.asp_SrchID_3262_Sflg_2_kword1_kword2_.html"
+    }
+  },
+  "rosterTitle": "いるま市議会だより第214号（令和８年３月定例会号）賛否が分かれた議案等の会派見出し",
+  "resultTitle": "入間市議会 議案詳細情報（議案第31号）",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "いるま市議会だより第214号 賛否が分かれた議案等",
+    "sourceFile": "gikai214.pdf",
+    "columns": [
+      {
+        "label": "横田淳一",
+        "faction": "自由民主党入間市議団",
+        "member": "横田淳一",
+        "stance": "議長"
+      },
+      {
+        "label": "宮岡治郎",
+        "faction": "自由民主党入間市議団",
+        "member": "宮岡治郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "小島清人",
+        "faction": "自由民主党入間市議団",
+        "member": "小島清人",
+        "stance": "賛成"
+      },
+      {
+        "label": "内村忠久",
+        "faction": "自由民主党入間市議団",
+        "member": "内村忠久",
+        "stance": "賛成"
+      },
+      {
+        "label": "古仲リカ",
+        "faction": "自由民主党入間市議団",
+        "member": "古仲リカ",
+        "stance": "賛成"
+      },
+      {
+        "label": "長谷川渉",
+        "faction": "自由民主党入間市議団",
+        "member": "長谷川渉",
+        "stance": "賛成"
+      },
+      {
+        "label": "双木小百合",
+        "faction": "自由民主党入間市議団",
+        "member": "双木小百合",
+        "stance": "賛成"
+      },
+      {
+        "label": "大野勉",
+        "faction": "自由民主党入間市議団",
+        "member": "大野勉",
+        "stance": "賛成"
+      },
+      {
+        "label": "池畠司",
+        "faction": "自由民主党入間市議団",
+        "member": "池畠司",
+        "stance": "賛成"
+      },
+      {
+        "label": "吉田賢一",
+        "faction": "自由民主党入間市議団",
+        "member": "吉田賢一",
+        "stance": "賛成"
+      },
+      {
+        "label": "永澤美恵子",
+        "faction": "公明党入間市議団",
+        "member": "永澤美恵子",
+        "stance": "賛成"
+      },
+      {
+        "label": "向口文恵",
+        "faction": "公明党入間市議団",
+        "member": "向口文恵",
+        "stance": "賛成"
+      },
+      {
+        "label": "末次正",
+        "faction": "公明党入間市議団",
+        "member": "末次正",
+        "stance": "賛成"
+      },
+      {
+        "label": "栗山英美",
+        "faction": "公明党入間市議団",
+        "member": "栗山英美",
+        "stance": "賛成"
+      },
+      {
+        "label": "安道佳子",
+        "faction": "日本共産党入間市議団",
+        "member": "安道佳子",
+        "stance": "反対"
+      },
+      {
+        "label": "佐藤匡",
+        "faction": "日本共産党入間市議団",
+        "member": "佐藤匡",
+        "stance": "反対"
+      },
+      {
+        "label": "田山雅子",
+        "faction": "日本共産党入間市議団",
+        "member": "田山雅子",
+        "stance": "反対"
+      },
+      {
+        "label": "町田健治",
+        "faction": "市民の声",
+        "member": "町田健治",
+        "stance": "賛成"
+      },
+      {
+        "label": "山川さおり",
+        "faction": "市民の声",
+        "member": "山川さおり",
+        "stance": "賛成"
+      },
+      {
+        "label": "野口哲次",
+        "faction": "市民フォーラム",
+        "member": "野口哲次",
+        "stance": "反対"
+      },
+      {
+        "label": "細田智也",
+        "faction": "無所属の会",
+        "member": "細田智也",
+        "stance": "賛成"
+      }
+    ]
+  }
+}

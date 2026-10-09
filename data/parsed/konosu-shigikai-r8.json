@@ -1,0 +1,302 @@
+{
+  "docType": "council-composition",
+  "sourceId": "konosu-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.4",
+  "parsedAt": "2026-10-09T04:02:46.090Z",
+  "fiscalYear": "R8",
+  "body": "鴻巣市議会",
+  "seats": 24,
+  "asOf": "2025-11-21",
+  "teisu": 24,
+  "factions": [
+    {
+      "name": "新未来こうのす",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "小泉晋史",
+        "藤村孝志",
+        "中西耕二郎",
+        "高橋亜紀",
+        "後藤耕佑"
+      ],
+      "locator": {
+        "file": "2604.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "明誠会",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "芝嵜和好",
+        "田中克美",
+        "金子雄一",
+        "古山大輔"
+      ],
+      "locator": {
+        "file": "2604.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "潮田幸子",
+        "橋本稔",
+        "川崎葉子",
+        "茂利博之"
+      ],
+      "locator": {
+        "file": "2604.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "かいえんたい",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "秋谷修",
+        "大塚佳之",
+        "坂本国広"
+      ],
+      "locator": {
+        "file": "2604.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "こうのす未来",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "金澤孝太郎",
+        "織田京子",
+        "市ノ川徳宏"
+      ],
+      "locator": {
+        "file": "2604.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "竹田悦子",
+        "諏訪三津枝"
+      ],
+      "locator": {
+        "file": "2604.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "社民党",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "西尾綾子"
+      ],
+      "locator": {
+        "file": "2604.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "無所属の会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "矢島洋文"
+      ],
+      "locator": {
+        "file": "2604.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "鴻巣維新の会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "羽鳥健"
+      ],
+      "locator": {
+        "file": "2604.html",
+        "row": 9
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "30",
+    "billName": "令和８年度鴻巣市一般会計予算",
+    "sessionLabel": "令和８年３月鴻巣市議会定例会",
+    "decidedDate": "2026-03-23",
+    "decidedDateLabel": "令和8年3月23日",
+    "result": "原案可決",
+    "locator": {
+      "file": "25906.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "会派構成（令和7年11月21日現在・2026-02-12 の魚拓）",
+  "resultTitle": "令和８年３月 鴻巣市議会定例会議決結果番号表",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "こうのす議会だより第82号 賛否が分かれた議案",
+    "sourceFile": "26692.pdf",
+    "columns": [
+      {
+        "label": "小泉晋史",
+        "faction": "新未来こうのす",
+        "member": "小泉晋史",
+        "stance": "賛成"
+      },
+      {
+        "label": "藤村孝志",
+        "faction": "新未来こうのす",
+        "member": "藤村孝志",
+        "stance": "賛成"
+      },
+      {
+        "label": "中西耕二郎",
+        "faction": "新未来こうのす",
+        "member": "中西耕二郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "高橋亜紀",
+        "faction": "新未来こうのす",
+        "member": "高橋亜紀",
+        "stance": "賛成"
+      },
+      {
+        "label": "後藤耕佑",
+        "faction": "新未来こうのす",
+        "member": "後藤耕佑",
+        "stance": "賛成"
+      },
+      {
+        "label": "芝嵜和好",
+        "faction": "明誠会",
+        "member": "芝嵜和好",
+        "stance": "賛成"
+      },
+      {
+        "label": "田中克美",
+        "faction": "明誠会",
+        "member": "田中克美",
+        "stance": "賛成"
+      },
+      {
+        "label": "金子雄一",
+        "faction": "明誠会",
+        "member": "金子雄一",
+        "stance": "賛成"
+      },
+      {
+        "label": "古山大輔",
+        "faction": "明誠会",
+        "member": "古山大輔",
+        "stance": "賛成"
+      },
+      {
+        "label": "潮田幸子",
+        "faction": "公明党",
+        "member": "潮田幸子",
+        "stance": "賛成"
+      },
+      {
+        "label": "川崎葉子",
+        "faction": "公明党",
+        "member": "川崎葉子",
+        "stance": "賛成"
+      },
+      {
+        "label": "茂利博之",
+        "faction": "公明党",
+        "member": "茂利博之",
+        "stance": "賛成"
+      },
+      {
+        "label": "秋谷修",
+        "faction": "かいえんたい",
+        "member": "秋谷修",
+        "stance": "賛成"
+      },
+      {
+        "label": "大塚佳之",
+        "faction": "かいえんたい",
+        "member": "大塚佳之",
+        "stance": "賛成"
+      },
+      {
+        "label": "坂本国広",
+        "faction": "かいえんたい",
+        "member": "坂本国広",
+        "stance": "賛成"
+      },
+      {
+        "label": "金澤孝太郎",
+        "faction": "こうのす未来",
+        "member": "金澤孝太郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "織田京子",
+        "faction": "こうのす未来",
+        "member": "織田京子",
+        "stance": "賛成"
+      },
+      {
+        "label": "市ノ川徳宏",
+        "faction": "こうのす未来",
+        "member": "市ノ川徳宏",
+        "stance": "賛成"
+      },
+      {
+        "label": "竹田悦子",
+        "faction": "日本共産党",
+        "member": "竹田悦子",
+        "stance": "反対"
+      },
+      {
+        "label": "諏訪三津枝",
+        "faction": "日本共産党",
+        "member": "諏訪三津枝",
+        "stance": "反対"
+      },
+      {
+        "label": "西尾綾子",
+        "faction": "社民党",
+        "member": "西尾綾子",
+        "stance": "反対"
+      },
+      {
+        "label": "矢島洋文",
+        "faction": "無所属の会",
+        "member": "矢島洋文",
+        "stance": "賛成"
+      },
+      {
+        "label": "羽鳥健",
+        "faction": "鴻巣維新の会",
+        "member": "羽鳥健",
+        "stance": "賛成"
+      },
+      {
+        "label": "橋本稔",
+        "faction": "公明党",
+        "member": "橋本稔",
+        "stance": "議長"
+      }
+    ]
+  }
+}

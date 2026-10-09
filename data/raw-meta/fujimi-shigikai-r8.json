@@ -1,0 +1,26 @@
+{
+  "sourceId": "fujimi-shigikai-r8",
+  "files": [
+    {
+      "filename": "sanpi202603.pdf",
+      "sha256": "8bc1669a727799148fbf6813bdfc4db8838cf2c420c4038a48802c05e21d4a83",
+      "bytes": 269336,
+      "fetchedAt": "2026-10-09T03:10:14.158Z",
+      "fetchedFrom": "https://www.city.fujimi.saitama.jp/shigikai/shingi/sannpiichiran/sanpiichiran2026.files/sanpi202603.pdf"
+    },
+    {
+      "filename": "kaikinittei202603.pdf",
+      "sha256": "c50326f291af00c9c6fb3a13c23e50e4dd960eb03e3055909629f1c5cda11978",
+      "bytes": 77026,
+      "fetchedAt": "2026-10-09T03:10:14.159Z",
+      "fetchedFrom": "https://www.city.fujimi.saitama.jp/shigikai/shingi/kaikinittei/gikai2026nittei.files/kaikinittei202603.pdf"
+    },
+    {
+      "filename": "gikai-aramashi.html",
+      "sha256": "27e3d83898fe3ed863e1b2b55689ded1f5bf1f010663302d97e24fbf502fe6b1",
+      "bytes": 25288,
+      "fetchedAt": "2026-10-09T03:10:14.159Z",
+      "fetchedFrom": "https://www.city.fujimi.saitama.jp/shigikai/shoukai/gikai-aramashi.html"
+    }
+  ]
+}
