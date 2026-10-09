@@ -1271,8 +1271,8 @@ export default function BudgetTrace({ initial, consentEnabled }: { initial?: Par
                   "議員ごとの賛否（議決当日の議員別表決結果一覧）。会派全員が同じ賛否の列は、原典で1つにまとめられています。"
                 : // 採決ごとに記録の単位が違うことがある（奈良: 原案は全会一致で会派ごと、修正案は議員ごと）
                 (vparts.every((vp) => vp.basis === vparts[0]!.basis)
-                  ? (vparts[0]!.basis === "member" ? "議員ごとの賛否" : "会派ごとの賛否") + "（議決当日の賛否表）。"
-                  : `採決ごとの賛否（議決当日の賛否表）。${vparts.map((vp) => `${vp.part}は${vp.basis === "member" ? "議員ごと" : "会派ごと"}`).join("、")}の記録です。`) +
+                  ? (vparts[0]!.basis === "member" ? "議員ごとの賛否" : "会派ごとの賛否") + "（議決の賛否表）。"
+                  : `採決ごとの賛否（議決の賛否表）。${vparts.map((vp) => `${vp.part}は${vp.basis === "member" ? "議員ごと" : "会派ごと"}`).join("、")}の記録です。`) +
                 (vparts.some((vp) => vp.basis === "faction") ? "会派の列は、その会派の議員（議長などを除く）を同じ賛否として数えています。" : "") +
                 (vparts.length > 1 ? "修正可決のため、採決ごとに分けて出しています。" : "")
               : "会派・議員ごとの賛否は未収録です。",
