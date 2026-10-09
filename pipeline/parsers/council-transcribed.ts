@@ -24,7 +24,7 @@ import { z } from "zod";
 import { readRawMeta } from "../lib/store";
 import type { CouncilCompositionDoc, CouncilFactionFact, SourceEntry } from "../types";
 
-export const PARSER_VERSION = "0.8.6";
+export const PARSER_VERSION = "0.8.7";
 
 const factionSchema = z
   .object({
@@ -589,6 +589,14 @@ export interface VotesCtx {
 /** 1回の採決の賛否を原典と突き合わせる（votes・votesParts の各要素・kofu-gikai で共通） */
 export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
   const { sourceId, factionsOpt, factions, rosterViews, fileFor, missing } = ctx;
+  // 単一の採決（votes・kofu-gikai）の anchor は修正の語を含めない。isAmendTail の「anchor 自体が修正の語を含めば除外しない」は
+  // 修正可決の採決ごと（votesParts の part あり）のためのもので、単一の votes で anchor を「…に対する修正案」まで伸ばすと
+  // 修正案の行の記号が予算の賛否として通った（朝霞・レビュー3巡目）
+  // 「附帯決議」は語として入れない — 名古屋の anchor「（2）附帯決議を付して修正可決」は予算の行の結果の語そのもの（予算への附帯決議の
+  // 別の行は「…に対する附帯決議」なので「に対する」で落ちる）
+  if ((vo as { part?: string }).part == null && /修正案|修正動議|に対する/.test(norm(vo.anchor))) {
+    missing.push(`賛否の anchor「${vo.anchor}」に修正案・附帯決議の語があります（当初予算の行の語にする。修正可決は votesParts で書く）`);
+  }
   const has = (views: { text: string }[], needle: string) => views.some((v) => v.text.includes(norm(needle)));
   const vf = fileFor(vo.url);
   const vdoc = readDoc(vf);
