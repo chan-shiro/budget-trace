@@ -707,6 +707,21 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
       if (tokRe.test(eN)) errs.push(`凡例の語・記号の並びを含みます`);
       // key は anchor の中の番号（数字を含み、anchor そのものでない）。key＝anchor にすると key なしの「原文の中の出現だけを読む」が外れた（レビュー1巡目）
       if (ev.key && (kN === aN || !/\d/.test(kN))) errs.push(`key「${ev.key}」は anchor の中の番号（数字を含み anchor 全体でない語）にする`);
+      // 本文（表でない）の key は行番号そのもの: 数字だけで、anchor の中で「第…号」「(…)」「問…」「…期」の一部でなく、key の外の anchor の語に
+      // 議案の種類・件名の語が無いこと。key は「番号 ↔ 件名」を示すだけなので、key の数字を含む別の行の頭（「議案第1号…定数条例…否決」
+      // 「諮問第1号…」「(1)条例案40…」「第1期工事)」）を anchor にすると、その行の記号が通った（レビュー3巡目・7団体）
+      if (ev.key && !vo.table && boundedAll(aN, kN).length === 1) {
+        const at = boundedAll(aN, kN)[0]!;
+        const outside = aN.slice(0, at) + "|" + aN.slice(at + kN.length);
+        if (
+          !/^\d+$/.test(kN) ||
+          /[第(（問号]$/.test(aN.slice(0, at)) ||
+          /^[号)）期]/.test(aN.slice(at + kN.length)) ||
+          /議案|条例|請願|陳情|諮問|契約|工事|意見書|決議|人権|同意|承認|報告|号|件|予算(?!審査)|会計/.test(outside) ||
+          NOT_BUDGET_ROW.test(outside)
+        )
+          errs.push(`本文の key「${ev.key}」は数字だけの行番号にし、anchor の key の外に議案の番号・種類・件名の語を入れない`);
+      }
       if (ev.key && boundedAll(aN, kN).length !== 1) errs.push(`key「${ev.key}」が anchor にちょうど1回（数字の途中でなく）含まれません`);
       const kAt = boundedAll(eN, kN);
       if (kAt.length !== 1) errs.push(`${ev.key ? "key" : "anchor"}「${ev.key ?? vo.anchor}」を原文にちょうど1回含みません`);
@@ -913,6 +928,13 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
       }
     }
   } else {
+    // key ありの anchor は本文の各抽出に1回まで（行番号の行は表に1つ）
+    if (keyTight) {
+      for (const v of vdoc.views) {
+        const n = boundedAll(v.text, anchorN).length;
+        if (n > 1) missing.push(`${vf.filename} p.${v.page}: key ありの anchor「${vo.anchor}」が ${n} 回出ます（行番号の行は1つに決まること）`);
+      }
+    }
     if (weakTight) {
       for (const v of vdoc.views) {
         let n = 0;
