@@ -598,9 +598,18 @@ function boundedAll(t: string, n: string): number[] {
 }
 const reiwaYears = (s: string) => [...s.matchAll(/令和(\d+)年度/g)].map((m) => String(Number(m[1])));
 /** 「N年度」の N（令和・西暦の別なく）。「和7年度…」と「令」を欠いて切った anchor でも年度を読む（レビュー1巡目・福岡で前年度の専決処分の行が通った） */
-const fiscalYears = (s: string) => [...s.matchAll(/(\d+)年度/g)].map((m) => String(Number(m[1])));
+const KANJI_DIGIT: Record<string, number> = { 元: 1, 一: 1, 二: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9 };
+/** 漢数字の年（「七」「十二」「元」）を数に。漢数字の年度も「年度なし」として素通りさせない（レビュー2巡目） */
+function kanjiNum(k: string): number {
+  if (k === "元") return 1;
+  const [a, b] = k.split("十") as [string, string | undefined];
+  if (b === undefined) return KANJI_DIGIT[a] ?? NaN;
+  return (a ? (KANJI_DIGIT[a] ?? NaN) : 1) * 10 + (b ? (KANJI_DIGIT[b] ?? NaN) : 0);
+}
+const fiscalYears = (s: string) =>
+  [...s.matchAll(/(\d+|[元一二三四五六七八九十]+)年度/g)].map((m) => String(/\d/.test(m[1]!) ? Number(m[1]) : kanjiNum(m[1]!)));
 /** 当初の一般会計予算の行でないことを示す語。anchor の出現の前後（行の頭から記号まで）にあれば、その出現は読まない */
-const NOT_BUDGET_ROW = /補正|修正|に対する|特別会計|事業会計|専決/;
+const NOT_BUDGET_ROW = /補正|修正|に対する|に関する|特別会計|事業会計|専決|附帯決議|付帯決議/;
 /**
  * 語が当初の一般会計予算を名指すか（0.8.8）。「一般会計予算」か、「当初予算」と「一般会計」の両方（西東京の表「令和8年度｜当初予算｜一般会計」）を含み、
  * 補正・特別会計・修正の語を含まず、令和の年度を書くなら件名の年度と合うこと
@@ -670,6 +679,9 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
   let nameCtx = false;
   /** ② だけで結び付けたとき: 記号は番号の直後から始まり、番号の前は語の続きでない（「議員提出議案第1号」「補正予算(第3号)」を読まない） */
   let noTight = false;
+  /** ③ key ありで結び付けたとき: key は「番号 ↔ 件名」を示すだけで anchor のどの出現かを絞らないので、記号は anchor の直後から・行の語に補正等が無い出現だけ（表はセル＝anchor）。
+   *  これが無いと key を議案番号の数字にするだけで ② の抜け道（「議員提出議案第1号」の行）が開き直した（レビュー2巡目・10団体） */
+  let keyTight = false;
   const single = (vo as { part?: string }).part == null;
   if (single) {
     const aN = norm(vo.anchor);
@@ -720,6 +732,7 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
       else {
         byEvidence = true;
         if (!ev.key) allowedAt = new Set(occ.map((o) => `${o.vi}:${o.at + kAt[0]!}`));
+        else keyTight = true;
       }
     }
     if (vo.anchorWeakReason) {
@@ -727,8 +740,9 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
         missing.push(`anchorWeakReason は本文の行の見出しが「一般会計」だけの原典にだけ使えます（anchor「${vo.anchor}」）`);
       } else weakTight = true;
     }
+    // 制限は重ねて掛ける（③ を足して ② の制限を外せないように）
     if (byName) nameCtx = true;
-    else if (byNo && !byEvidence && !weakTight) noTight = true;
+    else if (byNo) noTight = true;
     if (!byName && !byNo && !byEvidence && !weakTight) {
       missing.push(
         `賛否の anchor「${vo.anchor}」が議決の件名「${ctx.bill.billName}」（議案番号「${ctx.bill.billNo}」）と結び付きません — ` +
@@ -861,7 +875,7 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
       boundedAll(c, anchorN).length > 0 &&
       !isAmendTail(anchorN, c.slice(c.indexOf(anchorN) + anchorN.length)) &&
       (!nameCtx || rowWordsOk(c)) &&
-      (!noTight || c === anchorN);
+      (!(noTight || keyTight) || c === anchorN);
     for (const t of htmlTables(readHtml(vf.path))) {
       if (vo.table === "memberRows") {
         // 予算の列の見出しセルの位置を取り、columns の氏名の行のその列のセルを並べる
@@ -930,7 +944,7 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
           while (e > 0 && g <= gap && !keys.some((k) => tail.endsWith(k, e))) { e--; g++; }
           if (g > gap) continue;
           // ② だけの結び付きは before 側では読まない。① は記号の後ろから anchor の後ろの語（次の記号まで・10字まで）までを見る
-          if (noTight) counts = false;
+          if (noTight || keyTight) counts = false;
           if (nameCtx) {
             let f = i + anchorN.length;
             while (f < v.text.length && f - i - anchorN.length < 10 && !isMarkAt(v.text, f)) f++;
@@ -957,7 +971,8 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
         while (st < rest.length && st <= gap && !keys.some((k) => rest.startsWith(k, st))) st++;
         if (st > gap || (weakTight && st !== 0)) continue;
         if (noTight && (st !== 0 || /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}A-Za-z(（]/u.test(v.text[i - 1] ?? ""))) counts = false;
-        if (nameCtx) {
+        if (keyTight && st !== 0) counts = false;
+        if (nameCtx || keyTight) {
           let b = i;
           while (b > 0 && i - b < 10 && !isMarkAt(v.text, b - 1)) b--;
           if (!rowWordsOk(v.text.slice(b, i + anchorN.length + st))) counts = false;
