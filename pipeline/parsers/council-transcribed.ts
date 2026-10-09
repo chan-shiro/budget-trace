@@ -95,7 +95,14 @@ const votesSchema = z.object({
      * - key あり: key は anchor の中の行番号・列番号（名古屋「(2)」・板橋「1」）。text は key で始まり、key の直後から件名までの間に
      *   key と同じ形（数字を入れ替えた語）が無いこと（名古屋「(2)は、次の1件です。【3月19日議決】令和8年度一般会計予算」）
      */
-    anchorEvidence: z.object({ text: z.string().min(1), key: z.string().min(1).optional() }).optional(),
+    anchorEvidence: z
+      .object({
+        text: z.string().min(1),
+        key: z.string().min(1).optional(),
+        /** 本文の key で、anchor の key の外に入る列見出し・委員会名（板橋「付託委員会」「予算審査特別委員会」）。ここに書いた語と団体の字だけを許す */
+        headings: z.array(z.string().min(1)).optional(),
+      })
+      .optional(),
     /**
      * 件名も議案番号も賛否表の行に無く、行の見出しが会計の名前だけの原典（東村山: 縦書きの「令和8年度予算」の枠の中の行「一般会計」）の理由。
      * anchor は「一般会計」そのもの（補正・特別会計・号数を含まない）で、記号は anchor の**直後から**始まり、そう読める出現が各抽出で1つだけであること
@@ -713,9 +720,10 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
       if (ev.key && !vo.table && boundedAll(aN, kN).length === 1) {
         const at = boundedAll(aN, kN)[0]!;
         const outside = aN.slice(0, at) + "|" + aN.slice(at + kN.length);
-        // key の外に許す語は列見出し・委員会名（「番号」「付託委員会」「予算審査特別委員会」）と団体の字だけ（語のブラックリストは
-        // 「不採択」「円」のような語彙の外の語で抜けた＝レビュー4巡目）
-        const rest = outside.replace(/[\p{Script=Han}ー]{0,12}委員会/gu, "").replace(/番号/g, "");
+        // key の外に許す語は registry で宣言した列見出し・委員会名（headings）と団体の字だけ（語のブラックリストは「不採択」「円」のような
+        // 語彙の外の語で抜けた＝レビュー4巡目。「漢字12字＋委員会」の形で許すと任意の語を吸えた＝レビュー5巡目）
+        let rest = outside;
+        for (const h of [...(ev.headings ?? [])].map(norm).sort((x, y) => y.length - x.length)) rest = rest.split(h).join("");
         if (
           !/^\d+$/.test(kN) ||
           /[第(（問号]$/.test(aN.slice(0, at)) ||
@@ -744,7 +752,8 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
       vdoc.views.forEach((v, vi) => {
         for (let p = v.text.indexOf(eN); p >= 0; p = v.text.indexOf(eN, p + 1)) {
           if (!digitEdgeOk(v.text, p, eN.length)) continue; // 「56令和…」を「156令和…」に当てない
-          if (m && isAmendTail("", v.text.slice(p + m.end))) continue;
+          // 件名の直後に「に関する付帯決議」「特別会計」等が続く出現も件名の行ではない（isAmendTail の語彙だけでは「に関する」「付帯決議」が漏れた＝レビュー5巡目）
+          if (m && (isAmendTail("", v.text.slice(p + m.end)) || NOT_BUDGET_ROW.test(v.text.slice(p + m.end, p + m.end + 8)))) continue;
           occ.push({ vi, at: p });
         }
       });
