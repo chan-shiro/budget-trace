@@ -1,0 +1,303 @@
+{
+  "docType": "council-composition",
+  "sourceId": "odawara-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.3",
+  "parsedAt": "2026-10-09T02:24:24.604Z",
+  "fiscalYear": "R8",
+  "body": "小田原市議会",
+  "seats": 26,
+  "asOf": "2026-02-09",
+  "factions": [
+    {
+      "name": "公明党",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "楊隆子",
+        "荒井信一",
+        "金崎達",
+        "中野正幸"
+      ],
+      "locator": {
+        "file": "1-20260422120015_b69e839bf7fbe8.pdf",
+        "page": 15
+      }
+    },
+    {
+      "name": "誠和",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "加藤仁司",
+        "武松忠",
+        "鈴木和宏",
+        "角田真美",
+        "池田彩乃"
+      ],
+      "locator": {
+        "file": "1-20260422120015_b69e839bf7fbe8.pdf",
+        "page": 15
+      }
+    },
+    {
+      "name": "誠新",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "神戸秀典",
+        "大川裕",
+        "清水隆男",
+        "宮原元紀",
+        "桒畑寿一朗",
+        "原久美子"
+      ],
+      "locator": {
+        "file": "1-20260422120015_b69e839bf7fbe8.pdf",
+        "page": 15
+      }
+    },
+    {
+      "name": "維新の会・次世代おだわら",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "大川晋作",
+        "杉山三郎",
+        "井上昌彦"
+      ],
+      "locator": {
+        "file": "1-20260422120015_b69e839bf7fbe8.pdf",
+        "page": 15
+      }
+    },
+    {
+      "name": "志民・ミモザの会",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "鈴木敦子",
+        "篠原弘",
+        "寺島由美子"
+      ],
+      "locator": {
+        "file": "1-20260422120015_b69e839bf7fbe8.pdf",
+        "page": 15
+      }
+    },
+    {
+      "name": "進民の会",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "稲永朝美",
+        "小谷英次郎",
+        "城戸佐和子"
+      ],
+      "locator": {
+        "file": "1-20260422120015_b69e839bf7fbe8.pdf",
+        "page": 15
+      }
+    },
+    {
+      "name": "無会派（岩田泰明）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "岩田泰明"
+      ],
+      "locator": {
+        "file": "1-20260422120015_b69e839bf7fbe8.pdf",
+        "page": 15
+      }
+    },
+    {
+      "name": "無会派（北森明日香）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "北森明日香"
+      ],
+      "locator": {
+        "file": "1-20260422120015_b69e839bf7fbe8.pdf",
+        "page": 15
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第21号",
+    "billName": "令和８年度小田原市一般会計予算",
+    "sessionLabel": "令和8年3月定例会",
+    "decidedDate": "2026-03-25",
+    "decidedDateLabel": "令和8年3月25日",
+    "result": "原案可決",
+    "locator": {
+      "file": "p40899.html"
+    }
+  },
+  "rosterTitle": "小田原市議会だより 第177号（５月号）15面 会派の構成（令和８年２月9日付）",
+  "resultTitle": "令和8年3月定例会(議案)",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "小田原市議会だより 第177号（５月号）賛否一覧（令和8年3月定例会）",
+    "sourceFile": "1-20260422120015_b69e839bf7fbe8.pdf",
+    "columns": [
+      {
+        "label": "中野正幸",
+        "faction": "公明党",
+        "member": "中野正幸",
+        "stance": "賛成"
+      },
+      {
+        "label": "楊隆子",
+        "faction": "公明党",
+        "member": "楊隆子",
+        "stance": "賛成"
+      },
+      {
+        "label": "金崎達",
+        "faction": "公明党",
+        "member": "金崎達",
+        "stance": "賛成"
+      },
+      {
+        "label": "荒井信一",
+        "faction": "公明党",
+        "member": "荒井信一",
+        "stance": "賛成"
+      },
+      {
+        "label": "角田真美",
+        "faction": "誠和",
+        "member": "角田真美",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴木和宏",
+        "faction": "誠和",
+        "member": "鈴木和宏",
+        "stance": "賛成"
+      },
+      {
+        "label": "池田彩乃",
+        "faction": "誠和",
+        "member": "池田彩乃",
+        "stance": "賛成"
+      },
+      {
+        "label": "武松忠",
+        "faction": "誠和",
+        "member": "武松忠",
+        "stance": "賛成"
+      },
+      {
+        "label": "加藤仁司",
+        "faction": "誠和",
+        "member": "加藤仁司",
+        "stance": "賛成"
+      },
+      {
+        "label": "原久美子",
+        "faction": "誠新",
+        "member": "原久美子",
+        "stance": "賛成"
+      },
+      {
+        "label": "桒畑寿一朗",
+        "faction": "誠新",
+        "member": "桒畑寿一朗",
+        "stance": "賛成"
+      },
+      {
+        "label": "宮原元紀",
+        "faction": "誠新",
+        "member": "宮原元紀",
+        "stance": "賛成"
+      },
+      {
+        "label": "神戸秀典",
+        "faction": "誠新",
+        "member": "神戸秀典",
+        "stance": "賛成"
+      },
+      {
+        "label": "清水隆男",
+        "faction": "誠新",
+        "member": "清水隆男",
+        "stance": "賛成"
+      },
+      {
+        "label": "大川裕",
+        "faction": "誠新",
+        "member": "大川裕",
+        "stance": "賛成"
+      },
+      {
+        "label": "杉山三郎",
+        "faction": "維新の会・次世代おだわら",
+        "member": "杉山三郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "大川晋作",
+        "faction": "維新の会・次世代おだわら",
+        "member": "大川晋作",
+        "stance": "賛成"
+      },
+      {
+        "label": "寺島由美子",
+        "faction": "志民・ミモザの会",
+        "member": "寺島由美子",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴木敦子",
+        "faction": "志民・ミモザの会",
+        "member": "鈴木敦子",
+        "stance": "賛成"
+      },
+      {
+        "label": "篠原弘",
+        "faction": "志民・ミモザの会",
+        "member": "篠原弘",
+        "stance": "賛成"
+      },
+      {
+        "label": "小谷英次郎",
+        "faction": "進民の会",
+        "member": "小谷英次郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "城戸佐和子",
+        "faction": "進民の会",
+        "member": "城戸佐和子",
+        "stance": "賛成"
+      },
+      {
+        "label": "稲永朝美",
+        "faction": "進民の会",
+        "member": "稲永朝美",
+        "stance": "賛成"
+      },
+      {
+        "label": "岩田泰明",
+        "faction": "無会派（岩田泰明）",
+        "member": "岩田泰明",
+        "stance": "反対"
+      },
+      {
+        "label": "北森明日香",
+        "faction": "無会派（北森明日香）",
+        "member": "北森明日香",
+        "stance": "反対"
+      },
+      {
+        "label": "井上昌彦",
+        "faction": "維新の会・次世代おだわら",
+        "member": "井上昌彦",
+        "stance": "議長"
+      }
+    ]
+  }
+}

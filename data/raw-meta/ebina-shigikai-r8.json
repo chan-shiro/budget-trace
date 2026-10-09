@@ -1,0 +1,22 @@
+{
+  "sourceId": "ebina-shigikai-r8",
+  "files": [
+    {
+      "filename": "Kg142_81111.pdf",
+      "sha256": "a2674220895c6e116638e337a67de69c4e55ebc9d6d1e4362674ea7373a78b3b",
+      "bytes": 215975,
+      "fetchedAt": "2026-10-08T23:58:42.473Z",
+      "fetchedFrom": "http://ebina.gijiroku.com/voices/GikaiDoc/attach/Congress/Kg142_81111.pdf"
+    },
+    {
+      "filename": "g07_giketsu.asp_kword1_88_EA_94_CA_89_EF_8Cv_97_5C_8EZ_kaigi_2026_2F02_2F24_2C2026_2F03_2F26_2C112_bunrui_.html",
+      "sha256": "bac773c81dc01618b095e1e9c1451d16ae3bbcd137238f815f533dc6e88e69bc",
+      "bytes": 16945,
+      "fetchedAt": "2026-10-08T23:58:42.474Z",
+      "fetchedFrom": "http://ebina.gijiroku.com/g07_giketsu.asp?kword1=%88%EA%94%CA%89%EF%8Cv%97%5C%8EZ&kaigi=2026%2F02%2F24%2C2026%2F03%2F26%2C112&bunrui=",
+      "transform": [
+        "ext:.html"
+      ]
+    }
+  ]
+}

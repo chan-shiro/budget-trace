@@ -1933,6 +1933,38 @@
       "checkedAt": "2026-10-07T14:31:19.754Z"
     },
     {
+      "sourceId": "atsugi-shigikai-r8",
+      "url": "https://www.city.atsugi.kanagawa.jp/material/files/group/63/080317votingresult.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260406060503/https://www.city.atsugi.kanagawa.jp/material/files/group/63/080317votingresult.pdf",
+      "waybackTimestamp": "20260406060503",
+      "checkedAt": "2026-10-09T00:54:17.193Z"
+    },
+    {
+      "sourceId": "atsugi-shigikai-r8",
+      "url": "https://www.city.atsugi.kanagawa.jp/shigikai/11/8/15708.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009005631/https://www.city.atsugi.kanagawa.jp/shigikai/11/8/15708.html",
+      "waybackTimestamp": "20261009005631",
+      "checkedAt": "2026-10-09T00:58:35.515Z"
+    },
+    {
+      "sourceId": "atsugi-shigikai-r8",
+      "url": "https://www.city.atsugi.kanagawa.jp/shigikai/12/2/15721.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009005438/https://www.city.atsugi.kanagawa.jp/shigikai/12/2/15721.html",
+      "waybackTimestamp": "20261009005438",
+      "checkedAt": "2026-10-09T00:55:44.503Z"
+    },
+    {
+      "sourceId": "atsugi-shigikai-r8",
+      "url": "https://www.city.atsugi.kanagawa.jp/shigikai/3/r8kekka_2/51317.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260406045926/https://www.city.atsugi.kanagawa.jp/shigikai/3/r8kekka_2/51317.html",
+      "waybackTimestamp": "20260406045926",
+      "checkedAt": "2026-10-09T00:58:48.039Z"
+    },
+    {
       "sourceId": "atsugi-yosangaiyou-h28",
       "url": "https://www.city.atsugi.kanagawa.jp/material/files/group/11/gaiyou.pdf",
       "kind": "file",
@@ -2917,6 +2949,30 @@
       "checkedAt": "2026-09-14T06:03:24.614Z"
     },
     {
+      "sourceId": "chigasaki-shigikai-r8",
+      "url": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/066/639/R8t1_saiketsu_0324.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009004404/https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/066/639/R8t1_saiketsu_0324.pdf",
+      "waybackTimestamp": "20261009004404",
+      "checkedAt": "2026-10-09T00:45:08.622Z"
+    },
+    {
+      "sourceId": "chigasaki-shigikai-r8",
+      "url": "https://www.city.chigasaki.kanagawa.jp/gikai/1001072.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009004609/https://www.city.chigasaki.kanagawa.jp/gikai/1001072.html",
+      "waybackTimestamp": "20261009004609",
+      "checkedAt": "2026-10-09T00:47:10.314Z"
+    },
+    {
+      "sourceId": "chigasaki-shigikai-r8",
+      "url": "https://www.city.chigasaki.kanagawa.jp/gikai/meibo/1052691.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260421144725/https://www.city.chigasaki.kanagawa.jp/gikai/meibo/1052691.html",
+      "waybackTimestamp": "20260421144725",
+      "checkedAt": "2026-10-09T00:47:23.273Z"
+    },
+    {
       "sourceId": "chigasaki-yosan-soukatsu-h26",
       "url": "https://www.city.chigasaki.kanagawa.jp/zaisei/1008506/1008513/1008525.html",
       "kind": "landing",
@@ -3139,6 +3195,38 @@
       "waybackUrl": "https://web.archive.org/web/20260716063211/https://www.city.chiyoda.lg.jp/koho/kuse/zaise/yosan/r8-yosan.html",
       "waybackTimestamp": "20260716063211",
       "checkedAt": "2026-09-14T06:13:58.215Z"
+    },
+    {
+      "sourceId": "chofu-shigikai-r8",
+      "url": "https://www.city.chofu.lg.jp/140010/p077010.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20250827123812/https://www.city.chofu.lg.jp/140010/p077010.html",
+      "waybackTimestamp": "20250827123812",
+      "checkedAt": "2026-10-09T00:15:07.952Z"
+    },
+    {
+      "sourceId": "chofu-shigikai-r8",
+      "url": "https://www.city.chofu.lg.jp/140010/p077028.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260412201947/https://www.city.chofu.lg.jp/140010/p077028.html",
+      "waybackTimestamp": "20260412201947",
+      "checkedAt": "2026-10-09T00:15:26.651Z"
+    },
+    {
+      "sourceId": "chofu-shigikai-r8",
+      "url": "https://www.city.chofu.lg.jp/140010/p077265.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260516140228/https://www.city.chofu.lg.jp/140010/p077265.html",
+      "waybackTimestamp": "20260516140228",
+      "checkedAt": "2026-10-09T00:14:31.002Z"
+    },
+    {
+      "sourceId": "chofu-shigikai-r8",
+      "url": "https://www.city.chofu.lg.jp/documents/17083/265-12.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009001354/https://www.city.chofu.lg.jp/documents/17083/265-12.pdf",
+      "waybackTimestamp": "20261009001354",
+      "checkedAt": "2026-10-09T00:14:22.449Z"
     },
     {
       "sourceId": "chofu-yosan-gaiyou-r3",
@@ -3580,6 +3668,30 @@
       "rawSha256": "9c72a6a5b43947628b9568ab297832702d7dba88fd2b21430cae89f4130dd38a"
     },
     {
+      "sourceId": "ebina-shigikai-r8",
+      "url": "http://ebina.gijiroku.com/g07_giketsu.asp?kword1=%88%EA%94%CA%89%EF%8Cv%97%5C%8EZ&kaigi=2026%2F02%2F24%2C2026%2F03%2F26%2C112&bunrui=",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009010819/https://ebina.gijiroku.com/g07_giketsu.asp?kword1=%88%EA%94%CA%89%EF%8Cv%97%5C%8EZ&kaigi=2026%2F02%2F24%2C2026%2F03%2F26%2C112&bunrui=",
+      "waybackTimestamp": "20261009010819",
+      "checkedAt": "2026-10-09T01:46:43.839Z"
+    },
+    {
+      "sourceId": "ebina-shigikai-r8",
+      "url": "http://ebina.gijiroku.com/g07_Kaiha.asp",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20261009014653/https://ebina.gijiroku.com/g07_Kaiha.asp",
+      "waybackTimestamp": "20261009014653",
+      "checkedAt": "2026-10-09T01:47:40.861Z"
+    },
+    {
+      "sourceId": "ebina-shigikai-r8",
+      "url": "http://ebina.gijiroku.com/voices/GikaiDoc/attach/Congress/Kg142_81111.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009014528/https://ebina.gijiroku.com/voices/GikaiDoc/attach/Congress/Kg142_81111.pdf",
+      "waybackTimestamp": "20261009014528",
+      "checkedAt": "2026-10-09T01:46:32.203Z"
+    },
+    {
       "sourceId": "ebina-yosan-setsumei-r2",
       "url": "https://www.city.ebina.kanagawa.jp/_res/projects/default_project/_page_/001/003/917/R02yosansetumei.pdf",
       "kind": "file",
@@ -3988,6 +4100,30 @@
       "sha256Match": true,
       "waybackBytes": 491993,
       "rawSha256": "1e5fa2d8cc3f9789bf1f05e12914acc72e2ebcaf153f086442f9f5f88ec0e4a3"
+    },
+    {
+      "sourceId": "fuchu-shigikai-r8",
+      "url": "https://www.city.fuchu.tokyo.jp/gikai/dayori/backnumber/reiwa8/329.files/fuchu-shigikaidayori_329.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009000938/https://www.city.fuchu.tokyo.jp/gikai/dayori/backnumber/reiwa8/329.files/fuchu-shigikaidayori_329.pdf",
+      "waybackTimestamp": "20261009000938",
+      "checkedAt": "2026-10-09T00:10:35.746Z"
+    },
+    {
+      "sourceId": "fuchu-shigikai-r8",
+      "url": "https://www.city.fuchu.tokyo.jp/gikai/member/kaiha.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20261009001311/https://www.city.fuchu.tokyo.jp/gikai/member/kaiha.html",
+      "waybackTimestamp": "20261009001311",
+      "checkedAt": "2026-10-09T00:13:47.280Z"
+    },
+    {
+      "sourceId": "fuchu-shigikai-r8",
+      "url": "https://www.city.fuchu.tokyo.jp/gikai/shingi/naiyo/r8dai1kaigiketukekka.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009001126/https://www.city.fuchu.tokyo.jp/gikai/shingi/naiyo/r8dai1kaigiketukekka.html",
+      "waybackTimestamp": "20261009001126",
+      "checkedAt": "2026-10-09T00:12:23.446Z"
     },
     {
       "sourceId": "fuchu-tokyo-aramashi-h23",
@@ -4685,6 +4821,38 @@
       "waybackUrl": "https://web.archive.org/web/20260122202633/https://www.city.fujinomiya.lg.jp/1020100000/p004116.html",
       "waybackTimestamp": "20260122202633",
       "checkedAt": "2026-09-15T01:54:15.787Z"
+    },
+    {
+      "sourceId": "fujisawa-shigikai-r8",
+      "url": "https://shigikai.city.fujisawa.kanagawa.jp/g07_giketsu.asp?Sflg=1&kword1=%88%EA%94%CA%89%EF%8Cv%97%5C%8EZ&kaigi=2026%2F02%2F12%2C2026%2F03%2F18%2C112&bunrui=",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009003745/https://shigikai.city.fujisawa.kanagawa.jp/g07_giketsu.asp?Sflg=1&kword1=%88%EA%94%CA%89%EF%8Cv%97%5C%8EZ&kaigi=2026%2F02%2F12%2C2026%2F03%2F18%2C112&bunrui=",
+      "waybackTimestamp": "20261009003745",
+      "checkedAt": "2026-10-09T00:38:43.280Z"
+    },
+    {
+      "sourceId": "fujisawa-shigikai-r8",
+      "url": "https://shigikai.city.fujisawa.kanagawa.jp/g07_Kaiha.asp",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260311060621/https://shigikai.city.fujisawa.kanagawa.jp/g07_Kaiha.asp",
+      "waybackTimestamp": "20260311060621",
+      "checkedAt": "2026-10-09T00:39:23.199Z"
+    },
+    {
+      "sourceId": "fujisawa-shigikai-r8",
+      "url": "https://shigikai.city.fujisawa.kanagawa.jp/guide1_2.asp",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20251206154607/https://shigikai.city.fujisawa.kanagawa.jp/guide1_2.asp",
+      "waybackTimestamp": "20251206154607",
+      "checkedAt": "2026-10-09T00:38:53.108Z"
+    },
+    {
+      "sourceId": "fujisawa-shigikai-r8",
+      "url": "https://shigikai.city.fujisawa.kanagawa.jp/voices/gikaidoc/attach/koho/KhB521_fujisawasigikai261.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260427012616/https://shigikai.city.fujisawa.kanagawa.jp/voices/gikaidoc/attach/koho/KhB521_fujisawasigikai261.pdf",
+      "waybackTimestamp": "20260427012616",
+      "checkedAt": "2026-10-09T00:37:34.998Z"
     },
     {
       "sourceId": "fujisawa-yosansho-r2",
@@ -6347,6 +6515,38 @@
       "checkedAt": "2026-09-14T09:53:33.942Z"
     },
     {
+      "sourceId": "hadano-shigikai-r8",
+      "url": "https://www.city.hadano.kanagawa.jp/gikai/giin/3130.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20261009005217/https://www.city.hadano.kanagawa.jp/gikai/giin/3130.html",
+      "waybackTimestamp": "20261009005217",
+      "checkedAt": "2026-10-09T00:53:42.612Z"
+    },
+    {
+      "sourceId": "hadano-shigikai-r8",
+      "url": "https://www.city.hadano.kanagawa.jp/gikai/shigikainoshikumi/2872.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009005100/https://www.city.hadano.kanagawa.jp/gikai/shigikainoshikumi/2872.html",
+      "waybackTimestamp": "20261009005100",
+      "checkedAt": "2026-10-09T00:52:02.363Z"
+    },
+    {
+      "sourceId": "hadano-shigikai-r8",
+      "url": "https://www.city.hadano.kanagawa.jp/gikai/teireikai-rinjikai/2/16_1/12733.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009004944/https://www.city.hadano.kanagawa.jp/gikai/teireikai-rinjikai/2/16_1/12733.html",
+      "waybackTimestamp": "20261009004944",
+      "checkedAt": "2026-10-09T00:50:46.248Z"
+    },
+    {
+      "sourceId": "hadano-shigikai-r8",
+      "url": "https://www.city.hadano.kanagawa.jp/material/files/group/70/260zenmenQR.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009004743/https://www.city.hadano.kanagawa.jp/material/files/group/70/260zenmenQR.pdf",
+      "waybackTimestamp": "20261009004743",
+      "checkedAt": "2026-10-09T00:49:34.255Z"
+    },
+    {
       "sourceId": "hadano-yosan-aramashi-r4",
       "url": "https://www.city.hadano.kanagawa.jp/material/files/group/4/r4aramashi.pdf",
       "kind": "file",
@@ -6968,6 +7168,30 @@
       "checkedAt": "2026-09-14T18:34:22.983Z"
     },
     {
+      "sourceId": "higashikurume-shigikai-r8",
+      "url": "https://www.city.higashikurume.lg.jp/gikai/1006951/1004008.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260211033928/https://www.city.higashikurume.lg.jp/gikai/1006951/1004008.html",
+      "waybackTimestamp": "20260211033928",
+      "checkedAt": "2026-10-09T00:30:30.778Z"
+    },
+    {
+      "sourceId": "higashikurume-shigikai-r8",
+      "url": "https://www.city.higashikurume.lg.jp/gikai/aramashi/1000105.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009002912/https://www.city.higashikurume.lg.jp/gikai/aramashi/1000105.html",
+      "waybackTimestamp": "20261009002912",
+      "checkedAt": "2026-10-09T00:29:55.462Z"
+    },
+    {
+      "sourceId": "higashikurume-shigikai-r8",
+      "url": "https://www.city.higashikurume.lg.jp/gikai/kaigi/kekka/1028663/1028672.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260511214935/https://www.city.higashikurume.lg.jp/gikai/kaigi/kekka/1028663/1028672.html",
+      "waybackTimestamp": "20260511214935",
+      "checkedAt": "2026-10-09T00:29:03.562Z"
+    },
+    {
       "sourceId": "higashikurume-yosan-gaiyou-r6",
       "url": "https://www.city.higashikurume.lg.jp/_res/projects/default_project/_page_/001/023/874/r6yosannogaiyou.pdf",
       "kind": "file",
@@ -7091,6 +7315,22 @@
       "waybackUrl": "https://web.archive.org/web/20260925123437/https://www.city.higashikurume.lg.jp/shisei/gyousaisei/zaisei/1021641/1028624/1028627/1028628/index.html",
       "waybackTimestamp": "20260925123437",
       "checkedAt": "2026-09-25T12:35:04.867Z"
+    },
+    {
+      "sourceId": "higashimurayama-shigikai-r8",
+      "url": "https://www.city.higashimurayama.tokyo.jp/gikai/katsudo/gikai_09_gian-kekka/r8/8-3shichougian.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260213085917/https://www.city.higashimurayama.tokyo.jp/gikai/katsudo/gikai_09_gian-kekka/r8/8-3shichougian.html",
+      "waybackTimestamp": "20260213085917",
+      "checkedAt": "2026-10-09T00:26:17.326Z"
+    },
+    {
+      "sourceId": "higashimurayama-shigikai-r8",
+      "url": "https://www.city.higashimurayama.tokyo.jp/gikai/shikumi/gikai20.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20240119103847/https://www.city.higashimurayama.tokyo.jp/gikai/shikumi/gikai20.html",
+      "waybackTimestamp": "20240119103847",
+      "checkedAt": "2026-10-09T00:27:03.993Z"
     },
     {
       "sourceId": "higashimurayama-yosan-gaiyou-r3",
@@ -7354,6 +7594,46 @@
       "sha256Match": true,
       "waybackBytes": 57398,
       "rawSha256": "c53bc07fc77aece0061feaf4f9e0163f9c338f96d44689148d206b53cb00cf1f"
+    },
+    {
+      "sourceId": "hino-shigikai-r8",
+      "url": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/031/211/gikai-255-01.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009002343/https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/031/211/gikai-255-01.pdf",
+      "waybackTimestamp": "20261009002343",
+      "checkedAt": "2026-10-09T00:24:07.251Z"
+    },
+    {
+      "sourceId": "hino-shigikai-r8",
+      "url": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/031/211/gikai-255-o6.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009002152/https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/031/211/gikai-255-o6.pdf",
+      "waybackTimestamp": "20261009002152",
+      "checkedAt": "2026-10-09T00:23:32.519Z"
+    },
+    {
+      "sourceId": "hino-shigikai-r8",
+      "url": "https://www.city.hino.lg.jp/shigikai/gian/1030502.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260513190528/https://www.city.hino.lg.jp/shigikai/gian/1030502.html",
+      "waybackTimestamp": "20260513190528",
+      "checkedAt": "2026-10-09T00:20:39.315Z"
+    },
+    {
+      "sourceId": "hino-shigikai-r8",
+      "url": "https://www.city.hino.lg.jp/shigikai/meibo/1000889.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251212030904/https://www.city.hino.lg.jp/shigikai/meibo/1000889.html",
+      "waybackTimestamp": "20251212030904",
+      "checkedAt": "2026-10-09T00:25:01.608Z"
+    },
+    {
+      "sourceId": "hino-shigikai-r8",
+      "url": "https://www.city.hino.lg.jp/shigikai/shoukai/1000883.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009002049/https://www.city.hino.lg.jp/shigikai/shoukai/1000883.html",
+      "waybackTimestamp": "20261009002049",
+      "checkedAt": "2026-10-09T00:21:46.961Z"
     },
     {
       "sourceId": "hino-yosansho-soukatsu-h16",
@@ -10413,6 +10693,54 @@
       "checkedAt": "2026-09-25T09:29:35.439Z"
     },
     {
+      "sourceId": "isehara-shigikai-r8",
+      "url": "https://www.city.isehara.kanagawa.dbsr.jp/index.php/?Template=view&VoiceType=all&DocumentID=1873",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009010507/https://www.city.isehara.kanagawa.dbsr.jp/index.php/?Template=view&VoiceType=all&DocumentID=1873",
+      "waybackTimestamp": "20261009010507",
+      "checkedAt": "2026-10-09T01:14:18.732Z"
+    },
+    {
+      "sourceId": "isehara-shigikai-r8",
+      "url": "https://www.city.isehara.kanagawa.dbsr.jp/index.php/?Template=view&VoiceType=all&DocumentID=1874",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009010611/https://www.city.isehara.kanagawa.dbsr.jp/index.php/?Template=view&VoiceType=all&DocumentID=1874",
+      "waybackTimestamp": "20261009010611",
+      "checkedAt": "2026-10-09T01:14:44.692Z"
+    },
+    {
+      "sourceId": "isehara-shigikai-r8",
+      "url": "https://www.city.isehara.kanagawa.jp/gikai/docs/2013051600011/",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20220704220455/https://www.city.isehara.kanagawa.jp/gikai/docs/2013051600011/",
+      "waybackTimestamp": "20220704220455",
+      "checkedAt": "2026-10-09T01:12:42.318Z"
+    },
+    {
+      "sourceId": "isehara-shigikai-r8",
+      "url": "https://www.city.isehara.kanagawa.jp/gikai/docs/2023110600067/",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20261009011544/https://www.city.isehara.kanagawa.jp/gikai/docs/2023110600067/",
+      "waybackTimestamp": "20261009011544",
+      "checkedAt": "2026-10-09T01:16:33.354Z"
+    },
+    {
+      "sourceId": "isehara-shigikai-r8",
+      "url": "https://www.city.isehara.kanagawa.jp/gikai/docs/2026012200014/file_contents/6p.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009011258/https://www.city.isehara.kanagawa.jp/gikai/docs/2026012200014/file_contents/6p.pdf",
+      "waybackTimestamp": "20261009011258",
+      "checkedAt": "2026-10-09T01:13:50.468Z"
+    },
+    {
+      "sourceId": "isehara-shigikai-r8",
+      "url": "https://www.city.isehara.kanagawa.jp/gikai/docs/2026020500014/",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009010124/https://www.city.isehara.kanagawa.jp/gikai/docs/2026020500014/",
+      "waybackTimestamp": "20261009010124",
+      "checkedAt": "2026-10-09T01:12:16.482Z"
+    },
+    {
       "sourceId": "isehara-yosansho-r3",
       "url": "https://www.city.isehara.kanagawa.jp/docs/2021030900021/",
       "kind": "landing",
@@ -12774,6 +13102,30 @@
       "waybackUrl": "https://web.archive.org/web/20260927144357/https://www.city.kamagaya.chiba.jp/sesakumidashi/sesaku_zaisei/yosan/index.html",
       "waybackTimestamp": "20260927144357",
       "checkedAt": "2026-09-28T04:22:28.024Z"
+    },
+    {
+      "sourceId": "kamakura-shigikai-r8",
+      "url": "https://www.city.kamakura.kanagawa.jp/gikai/20260203.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260520071158/https://www.city.kamakura.kanagawa.jp/gikai/20260203.html",
+      "waybackTimestamp": "20260520071158",
+      "checkedAt": "2026-10-09T00:35:54.589Z"
+    },
+    {
+      "sourceId": "kamakura-shigikai-r8",
+      "url": "https://www.city.kamakura.kanagawa.jp/gikai/tayori/202605.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20261009003646/https://www.city.kamakura.kanagawa.jp/gikai/tayori/202605.html",
+      "waybackTimestamp": "20261009003646",
+      "checkedAt": "2026-10-09T00:37:25.615Z"
+    },
+    {
+      "sourceId": "kamakura-shigikai-r8",
+      "url": "https://www.city.kamakura.kanagawa.jp/gikai/tayori/documents/273.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260424145808/https://www.city.kamakura.kanagawa.jp/gikai/tayori/documents/273.pdf",
+      "waybackTimestamp": "20260424145808",
+      "checkedAt": "2026-10-09T00:35:42.732Z"
     },
     {
       "sourceId": "kamakura-yosansho-r7",
@@ -19959,6 +20311,38 @@
       "rawSha256": "c3995a54d4e2f00a3b376ff594e089bb3a57aff6b5ef3ed72d8afaa46bb8a5b4"
     },
     {
+      "sourceId": "machida-shigikai-r8",
+      "url": "https://www.gikai-machida.jp/g07_gian_shosai.asp?KaigiID=174",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20261009001852/https://www.gikai-machida.jp/g07_gian_shosai.asp?KaigiID=174",
+      "waybackTimestamp": "20261009001852",
+      "checkedAt": "2026-10-09T00:19:53.186Z"
+    },
+    {
+      "sourceId": "machida-shigikai-r8",
+      "url": "https://www.gikai-machida.jp/g07_giketsu.asp?kaigi=2026%2F03%2F09%2C2026%2F03%2F30%2C174&kensu=50&Sflg=1",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009001704/https://www.gikai-machida.jp/g07_giketsu.asp?kaigi=2026%2F03%2F09%2C2026%2F03%2F30%2C174&kensu=50&Sflg=1",
+      "waybackTimestamp": "20261009001704",
+      "checkedAt": "2026-10-09T00:17:41.239Z"
+    },
+    {
+      "sourceId": "machida-shigikai-r8",
+      "url": "https://www.gikai-machida.jp/guide1_2.asp",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009001751/https://www.gikai-machida.jp/guide1_2.asp",
+      "waybackTimestamp": "20261009001751",
+      "checkedAt": "2026-10-09T00:18:43.281Z"
+    },
+    {
+      "sourceId": "machida-shigikai-r8",
+      "url": "https://www.gikai-machida.jp/voices/GikaiDoc/attach/Congress/Kg81_HP_20260325_saiketsu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009001534/https://www.gikai-machida.jp/voices/GikaiDoc/attach/Congress/Kg81_HP_20260325_saiketsu.pdf",
+      "waybackTimestamp": "20261009001534",
+      "checkedAt": "2026-10-09T00:15:55.665Z"
+    },
+    {
       "sourceId": "machida-yosansho-r8",
       "url": "https://www.city.machida.tokyo.jp/shisei/gyouzaisei/siyosan/tousyo_26/2026yosansyo.files/R8_yosansyo_2.pdf",
       "kind": "file",
@@ -22624,6 +23008,30 @@
       "rawSha256": "69ae784875bfed43e883ea7e4373bfe0fe9e2f0b356f34f2db549592a96acea8"
     },
     {
+      "sourceId": "mitaka-shigikai-r8",
+      "url": "https://www.gikai.city.mitaka.tokyo.jp/activity/pdf/2026custom1giantou_saiketu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009013938/https://www.gikai.city.mitaka.tokyo.jp/activity/pdf/2026custom1giantou_saiketu.pdf",
+      "waybackTimestamp": "20261009013938",
+      "checkedAt": "2026-10-09T01:40:13.251Z"
+    },
+    {
+      "sourceId": "mitaka-shigikai-r8",
+      "url": "https://www.gikai.city.mitaka.tokyo.jp/activity/result/2026/custom_2026a.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009014118/https://www.gikai.city.mitaka.tokyo.jp/activity/result/2026/custom_2026a.html",
+      "waybackTimestamp": "20261009014118",
+      "checkedAt": "2026-10-09T01:42:41.948Z"
+    },
+    {
+      "sourceId": "mitaka-shigikai-r8",
+      "url": "https://www.gikai.city.mitaka.tokyo.jp/member/party.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260510013546/https://www.gikai.city.mitaka.tokyo.jp/member/party.html",
+      "waybackTimestamp": "20260510013546",
+      "checkedAt": "2026-10-09T01:42:52.777Z"
+    },
+    {
       "sourceId": "mitaka-yosangaiyou-h26",
       "url": "https://www.city.mitaka.lg.jp/c_service/044/044181.html",
       "kind": "landing",
@@ -23886,6 +24294,38 @@
       "waybackUrl": "https://web.archive.org/web/20260614221613/https://www.city.munakata.lg.jp/kiji0039691/index.html",
       "waybackTimestamp": "20260614221613",
       "checkedAt": "2026-10-01T15:20:11.029Z"
+    },
+    {
+      "sourceId": "musashino-shigikai-r8",
+      "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/001/444/r080327-2.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009000123/https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/001/444/r080327-2.pdf",
+      "waybackTimestamp": "20261009000123",
+      "checkedAt": "2026-10-09T00:01:55.319Z"
+    },
+    {
+      "sourceId": "musashino-shigikai-r8",
+      "url": "https://www.city.musashino.lg.jp/shigikai/gian_seigan_chinzyo/shichogian/1053667.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717002835/https://www.city.musashino.lg.jp/shigikai/gian_seigan_chinzyo/shichogian/1053667.html",
+      "waybackTimestamp": "20260717002835",
+      "checkedAt": "2026-10-09T00:02:09.753Z"
+    },
+    {
+      "sourceId": "musashino-shigikai-r8",
+      "url": "https://www.city.musashino.lg.jp/shigikai/giin/1001172.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260510175651/https://www.city.musashino.lg.jp/shigikai/giin/1001172.html",
+      "waybackTimestamp": "20260510175651",
+      "checkedAt": "2026-10-09T00:02:33.819Z"
+    },
+    {
+      "sourceId": "musashino-shigikai-r8",
+      "url": "https://www.city.musashino.lg.jp/shigikai/kaigi_kekka/teireikai_rinjikai_kekka/1053870.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260717002828/https://www.city.musashino.lg.jp/shigikai/kaigi_kekka/teireikai_rinjikai_kekka/1053870.html",
+      "waybackTimestamp": "20260717002828",
+      "checkedAt": "2026-10-09T00:02:20.483Z"
     },
     {
       "sourceId": "musashino-yosan-sankou-h21",
@@ -27512,6 +27952,30 @@
       "checkedAt": "2026-09-14T19:03:08.204Z"
     },
     {
+      "sourceId": "nishitokyo-shigikai-r8",
+      "url": "https://www.city.nishitokyo.lg.jp/sigikai/giin_meibo/kaiha_meibo.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260513050638/https://www.city.nishitokyo.lg.jp/sigikai/giin_meibo/kaiha_meibo.html",
+      "waybackTimestamp": "20260513050638",
+      "checkedAt": "2026-10-09T00:35:09.021Z"
+    },
+    {
+      "sourceId": "nishitokyo-shigikai-r8",
+      "url": "https://www.city.nishitokyo.lg.jp/sigikai/johokoukai/tayori/gikaihou114.files/no114all.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009003429/https://www.city.nishitokyo.lg.jp/sigikai/johokoukai/tayori/gikaihou114.files/no114all.pdf",
+      "waybackTimestamp": "20261009003429",
+      "checkedAt": "2026-10-09T00:34:51.498Z"
+    },
+    {
+      "sourceId": "nishitokyo-shigikai-r8",
+      "url": "https://www.city.nishitokyo.lg.jp/sigikai/nittei_kekka/nittei_anken/r8/kaikinainittei0801.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260417232806/https://www.city.nishitokyo.lg.jp/sigikai/nittei_kekka/nittei_anken/r8/kaikinainittei0801.html",
+      "waybackTimestamp": "20260417232806",
+      "checkedAt": "2026-10-09T00:33:51.395Z"
+    },
+    {
       "sourceId": "nishitokyo-yosangaiyou-h24",
       "url": "https://www.city.nishitokyo.lg.jp/siseizyoho/zaisei/yosan/kako.html",
       "kind": "landing",
@@ -28179,6 +28643,46 @@
       "waybackUrl": "https://web.archive.org/web/20260909083026/https://www.city.obihiro.hokkaido.jp/shisei/yosan/yosan/1023191.html",
       "waybackTimestamp": "20260909083026",
       "checkedAt": "2026-09-14T20:00:33.250Z"
+    },
+    {
+      "sourceId": "odawara-shigikai-r8",
+      "url": "https://www.city.odawara.kanagawa.jp/citycounc/aplenarysession/conferenc/r8/p40899.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009004241/https://www.city.odawara.kanagawa.jp/citycounc/aplenarysession/conferenc/r8/p40899.html",
+      "waybackTimestamp": "20261009004241",
+      "checkedAt": "2026-10-09T00:43:45.830Z"
+    },
+    {
+      "sourceId": "odawara-shigikai-r8",
+      "url": "https://www.city.odawara.kanagawa.jp/citycounc/confere/",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260901185527/https://www.city.odawara.kanagawa.jp/citycounc/confere/",
+      "waybackTimestamp": "20260901185527",
+      "checkedAt": "2026-10-09T02:22:16.415Z"
+    },
+    {
+      "sourceId": "odawara-shigikai-r8",
+      "url": "https://www.city.odawara.kanagawa.jp/global-image/units/691547/1-20250728125835_b6886f56b17872.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009003944/https://www.city.odawara.kanagawa.jp/global-image/units/691547/1-20250728125835_b6886f56b17872.pdf",
+      "waybackTimestamp": "20261009003944",
+      "checkedAt": "2026-10-09T02:21:40.655Z"
+    },
+    {
+      "sourceId": "odawara-shigikai-r8",
+      "url": "https://www.city.odawara.kanagawa.jp/global-image/units/720028/1-20260326192009_b69c5085905067.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260424164037/https://www.city.odawara.kanagawa.jp/global-image/units/720028/1-20260326192009_b69c5085905067.pdf",
+      "waybackTimestamp": "20260424164037",
+      "checkedAt": "2026-10-09T00:41:51.341Z"
+    },
+    {
+      "sourceId": "odawara-shigikai-r8",
+      "url": "https://www.city.odawara.kanagawa.jp/global-image/units/743714/1-20260422120015_b69e839bf7fbe8.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260901185528/https://www.city.odawara.kanagawa.jp/global-image/units/743714/1-20260422120015_b69e839bf7fbe8.pdf",
+      "waybackTimestamp": "20260901185528",
+      "checkedAt": "2026-10-09T02:21:27.517Z"
     },
     {
       "sourceId": "odawara-yosansho-r5",
@@ -43086,6 +43590,30 @@
       "checkedAt": "2026-09-14T18:00:56.946Z"
     },
     {
+      "sourceId": "tachikawa-shigikai-r8",
+      "url": "https://www.city.tachikawa.lg.jp/_res/projects/default_project/_page_/001/027/149/342-8.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260421070218/https://www.city.tachikawa.lg.jp/_res/projects/default_project/_page_/001/027/149/342-8.pdf",
+      "waybackTimestamp": "20260421070218",
+      "checkedAt": "2026-10-09T02:23:20.610Z"
+    },
+    {
+      "sourceId": "tachikawa-shigikai-r8",
+      "url": "https://www.city.tachikawa.lg.jp/shigikai/katsudo/1007184/1026374/1026375/1026380.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260302103547/https://www.city.tachikawa.lg.jp/shigikai/katsudo/1007184/1026374/1026375/1026380.html",
+      "waybackTimestamp": "20260302103547",
+      "checkedAt": "2026-10-09T02:22:56.315Z"
+    },
+    {
+      "sourceId": "tachikawa-shigikai-r8",
+      "url": "https://www.city.tachikawa.lg.jp/shigikai/shokai/1021861.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260511212522/https://www.city.tachikawa.lg.jp/shigikai/shokai/1021861.html",
+      "waybackTimestamp": "20260511212522",
+      "checkedAt": "2026-10-09T00:01:02.976Z"
+    },
+    {
       "sourceId": "tachikawa-yosan-gaiyou-h28",
       "url": "https://www.city.tachikawa.lg.jp/_res/projects/default_project/_page_/001/007/123/h28yosannannnogaiyou.pdf",
       "kind": "file",
@@ -44799,6 +45327,30 @@
       "sha256Match": true,
       "waybackBytes": 105728,
       "rawSha256": "ab812f87baebf0f561280b1d503e98881965f1e3df68b8957b37c7bf87c40b48"
+    },
+    {
+      "sourceId": "tama-shigikai-r8",
+      "url": "https://www.city.tama.lg.jp/_res/projects/default_project/_page_/001/019/947/249Part16.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260503173054/https://www.city.tama.lg.jp/_res/projects/default_project/_page_/001/019/947/249Part16.pdf",
+      "waybackTimestamp": "20260503173054",
+      "checkedAt": "2026-10-09T00:31:14.875Z"
+    },
+    {
+      "sourceId": "tama-shigikai-r8",
+      "url": "https://www.city.tama.lg.jp/shigikai/giin/meibo/1006619.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20261009003223/https://www.city.tama.lg.jp/shigikai/giin/meibo/1006619.html",
+      "waybackTimestamp": "20261009003223",
+      "checkedAt": "2026-10-09T00:33:10.221Z"
+    },
+    {
+      "sourceId": "tama-shigikai-r8",
+      "url": "https://www.city.tama.lg.jp/shigikai/kaigi/kekka/1019561/1019818.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260418162123/https://www.city.tama.lg.jp/shigikai/kaigi/kekka/1019561/1019818.html",
+      "waybackTimestamp": "20260418162123",
+      "checkedAt": "2026-10-09T00:31:04.309Z"
     },
     {
       "sourceId": "tama-yosan-gaiyou-r3",
@@ -49636,6 +50188,30 @@
       "waybackUrl": "https://web.archive.org/web/20260421045140/https://www.pref.yamanashi.jp/zaisei/43539671890.html",
       "waybackTimestamp": "20260421045140",
       "checkedAt": "2026-09-12T02:38:36.483Z"
+    },
+    {
+      "sourceId": "yamato-shigikai-r8",
+      "url": "https://www.city.yamato.lg.jp/gyosei/shiseijoho/shigikai/kannrenn/johoteikyou/giinnoshokai/11080.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20251213183434/https://www.city.yamato.lg.jp/gyosei/shiseijoho/shigikai/kannrenn/johoteikyou/giinnoshokai/11080.html",
+      "waybackTimestamp": "20251213183434",
+      "checkedAt": "2026-10-09T01:01:13.105Z"
+    },
+    {
+      "sourceId": "yamato-shigikai-r8",
+      "url": "https://www.city.yamato.lg.jp/gyosei/soshik/29/shigikai/honkaigi_iinkai/honkaigi_iinkainittei/25346.html",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260420014357/https://www.city.yamato.lg.jp/gyosei/soshik/29/shigikai/honkaigi_iinkai/honkaigi_iinkainittei/25346.html",
+      "waybackTimestamp": "20260420014357",
+      "checkedAt": "2026-10-09T01:00:47.213Z"
+    },
+    {
+      "sourceId": "yamato-shigikai-r8",
+      "url": "https://www.city.yamato.lg.jp/material/files/group/59/R803sinngikekka.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009010015/https://www.city.yamato.lg.jp/material/files/group/59/R803sinngikekka.pdf",
+      "waybackTimestamp": "20261009010015",
+      "checkedAt": "2026-10-09T01:00:33.267Z"
     },
     {
       "sourceId": "yamato-yosan-fuzoku-r4",
@@ -54894,6 +55470,30 @@
       "sha256Match": true,
       "waybackBytes": 5701135,
       "rawSha256": "1da875b7de7b96faaef944a48da4801b19b91c23386e01f7b5f14bdf6219870e"
+    },
+    {
+      "sourceId": "zama-shigikai-r8",
+      "url": "https://www.city.zama.kanagawa.jp/_res/projects/default_project/_page_/001/013/147/hyouketsuR080324.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260513193742/https://www.city.zama.kanagawa.jp/_res/projects/default_project/_page_/001/013/147/hyouketsuR080324.pdf",
+      "waybackTimestamp": "20260513193742",
+      "checkedAt": "2026-10-09T01:10:38.214Z"
+    },
+    {
+      "sourceId": "zama-shigikai-r8",
+      "url": "https://www.city.zama.kanagawa.jp/_res/projects/default_project/_page_/001/013/561/202605158men.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20260514223830/https://www.city.zama.kanagawa.jp/_res/projects/default_project/_page_/001/013/561/202605158men.pdf",
+      "waybackTimestamp": "20260514223830",
+      "checkedAt": "2026-10-09T01:10:02.555Z"
+    },
+    {
+      "sourceId": "zama-shigikai-r8",
+      "url": "https://www.city.zama.kanagawa.jp/shigikai/giin/1005884.html",
+      "kind": "landing",
+      "waybackUrl": "https://web.archive.org/web/20260418202236/https://www.city.zama.kanagawa.jp/shigikai/giin/1005884.html",
+      "waybackTimestamp": "20260418202236",
+      "checkedAt": "2026-10-09T01:11:19.979Z"
     }
   ]
 }

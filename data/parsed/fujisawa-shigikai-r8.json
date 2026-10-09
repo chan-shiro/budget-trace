@@ -1,0 +1,140 @@
+{
+  "docType": "council-composition",
+  "sourceId": "fujisawa-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.3",
+  "parsedAt": "2026-10-09T02:24:05.761Z",
+  "fiscalYear": "R8",
+  "body": "藤沢市議会",
+  "seats": 36,
+  "asOf": "2026-03-18",
+  "teisu": 36,
+  "factions": [
+    {
+      "name": "市民クラブ藤沢",
+      "seats": 11,
+      "isIndependent": false,
+      "members": [
+        "佐賀和樹",
+        "小池恵子",
+        "石井世悟",
+        "西智",
+        "桜井直人",
+        "町田輝佳",
+        "栗原貴司",
+        "松長由美絵",
+        "石川麻央",
+        "山口政哉",
+        "井上裕介"
+      ],
+      "locator": {
+        "file": "KhB521_fujisawasigikai261.pdf",
+        "page": 15
+      }
+    },
+    {
+      "name": "民主クラブ",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "竹村雅夫",
+        "大矢徹",
+        "柳田あゆ",
+        "安田景輔",
+        "須田一行",
+        "神尾江里",
+        "谷津英美",
+        "安藤好幸"
+      ],
+      "locator": {
+        "file": "KhB521_fujisawasigikai261.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "湘風維新無所属の会",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "甘粕和彦",
+        "佐野洋",
+        "吉松巳希",
+        "西川誠志",
+        "友田宗也",
+        "有賀正義"
+      ],
+      "locator": {
+        "file": "KhB521_fujisawasigikai261.pdf",
+        "page": 10
+      }
+    },
+    {
+      "name": "藤沢市公明党",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "塚本昌紀",
+        "松尾宏之",
+        "今井みきこ",
+        "平川和美",
+        "東木久代"
+      ],
+      "locator": {
+        "file": "KhB521_fujisawasigikai261.pdf",
+        "page": 15
+      }
+    },
+    {
+      "name": "日本共産党藤沢市議会議員団",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "柳沢潤次",
+        "土屋俊則",
+        "味村耕太郎",
+        "加藤彩野"
+      ],
+      "locator": {
+        "file": "KhB521_fujisawasigikai261.pdf",
+        "page": 9
+      }
+    },
+    {
+      "name": "アクティブ藤沢",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "原田建"
+      ],
+      "locator": {
+        "file": "KhB521_fujisawasigikai261.pdf",
+        "page": 15
+      }
+    },
+    {
+      "name": "無所属藤沢",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "森井健太郎"
+      ],
+      "locator": {
+        "file": "KhB521_fujisawasigikai261.pdf",
+        "page": 11
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第108号",
+    "billName": "令和8年度藤沢市一般会計予算",
+    "sessionLabel": "令和8年2月定例会",
+    "decidedDate": "2026-03-18",
+    "decidedDateLabel": "令和8年3月18日",
+    "result": "可決",
+    "locator": {
+      "file": "g07_giketsu.asp_Sflg_1_kword1_88_EA_94_CA_89_EF_8Cv_97_5C_8EZ_kaigi_2026_2F02_2F12_2C2026_2F03_2F18_2C112_bunrui_.html"
+    }
+  },
+  "rosterTitle": "ふじさわ市議会だより 第261号（令和8年4月25日発行）会派構成（2月定例会 議案等審議結果）",
+  "resultTitle": "議案の概要と議決結果（令和8年2月定例会）"
+}

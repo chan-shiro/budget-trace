@@ -1,0 +1,33 @@
+{
+  "sourceId": "odawara-shigikai-r8",
+  "files": [
+    {
+      "filename": "1-20260422120015_b69e839bf7fbe8.pdf",
+      "sha256": "5900ea66bb1424f48d135da218b9376172321bababec59e5b8272e89917922fc",
+      "bytes": 5860567,
+      "fetchedAt": "2026-10-08T23:58:42.450Z",
+      "fetchedFrom": "https://www.city.odawara.kanagawa.jp/global-image/units/743714/1-20260422120015_b69e839bf7fbe8.pdf"
+    },
+    {
+      "filename": "1-20250728125835_b6886f56b17872.pdf",
+      "sha256": "c5aaa78fba25ebd8f69dcaad5eb7cbf18d28da5e085143e0cc01db924270c4ef",
+      "bytes": 2886901,
+      "fetchedAt": "2026-10-08T23:58:42.453Z",
+      "fetchedFrom": "https://www.city.odawara.kanagawa.jp/global-image/units/691547/1-20250728125835_b6886f56b17872.pdf"
+    },
+    {
+      "filename": "1-20260326192009_b69c5085905067.pdf",
+      "sha256": "efd83aedaa285234d3f8468d2aa1c7266c5075e3d3b6a4f32c2852cfcbcef283",
+      "bytes": 280838,
+      "fetchedAt": "2026-10-08T23:58:42.454Z",
+      "fetchedFrom": "https://www.city.odawara.kanagawa.jp/global-image/units/720028/1-20260326192009_b69c5085905067.pdf"
+    },
+    {
+      "filename": "p40899.html",
+      "sha256": "b81127a52f773bf8b93544484354b81413ef860300505a9ecd69b1b065a34788",
+      "bytes": 115972,
+      "fetchedAt": "2026-10-08T23:58:42.454Z",
+      "fetchedFrom": "https://www.city.odawara.kanagawa.jp/citycounc/aplenarysession/conferenc/r8/p40899.html"
+    }
+  ]
+}

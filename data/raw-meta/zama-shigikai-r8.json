@@ -1,0 +1,33 @@
+{
+  "sourceId": "zama-shigikai-r8",
+  "files": [
+    {
+      "filename": "1005884.html",
+      "sha256": "5f2aff132f33138e5bda51442182c8ed0aeefbb18e1cabec72fe99d5229fff26",
+      "bytes": 30388,
+      "fetchedAt": "2026-10-08T23:58:42.474Z",
+      "fetchedFrom": "https://web.archive.org/web/20251208203032id_/https://www.city.zama.kanagawa.jp/shigikai/giin/1005884.html"
+    },
+    {
+      "filename": "202605158men.pdf",
+      "sha256": "b08d54d8fa6fb9f787290982c7e356520347427d1a44a1f70f0feeb31e752183",
+      "bytes": 657547,
+      "fetchedAt": "2026-10-08T23:58:42.476Z",
+      "fetchedFrom": "https://www.city.zama.kanagawa.jp/_res/projects/default_project/_page_/001/013/561/202605158men.pdf"
+    },
+    {
+      "filename": "hyouketsuR080324.pdf",
+      "sha256": "5050a3daf6782347fa1803e25df9ec4e85624176cab45caadeb8c350168bb368",
+      "bytes": 301299,
+      "fetchedAt": "2026-10-08T23:58:42.477Z",
+      "fetchedFrom": "https://www.city.zama.kanagawa.jp/_res/projects/default_project/_page_/001/013/147/hyouketsuR080324.pdf"
+    },
+    {
+      "filename": "1005886.html",
+      "sha256": "2248e8ec13905e9e74cb5d50624fa7b8ab07c74392692da4d030a70e37849bac",
+      "bytes": 37023,
+      "fetchedAt": "2026-10-08T23:58:42.477Z",
+      "fetchedFrom": "https://web.archive.org/web/20260213184625id_/https://www.city.zama.kanagawa.jp/shigikai/giin/1005886.html"
+    }
+  ]
+}

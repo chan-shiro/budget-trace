@@ -1,0 +1,40 @@
+{
+  "sourceId": "hino-shigikai-r8",
+  "files": [
+    {
+      "filename": "1000889.html",
+      "sha256": "eae08f0dc7bd73c55bd5745e8a50e6be5203fc7483b13204f92dc66cc6c06253",
+      "bytes": 16682,
+      "fetchedAt": "2026-10-08T23:58:42.409Z",
+      "fetchedFrom": "https://www.city.hino.lg.jp/shigikai/meibo/1000889.html"
+    },
+    {
+      "filename": "1030502.html",
+      "sha256": "4f7a3ecafb4581dbc6d34d12656373bdcfbedfb7f6d70f1e5081764c02399479",
+      "bytes": 33997,
+      "fetchedAt": "2026-10-08T23:58:42.410Z",
+      "fetchedFrom": "https://www.city.hino.lg.jp/shigikai/gian/1030502.html"
+    },
+    {
+      "filename": "1000883.html",
+      "sha256": "0889e45acb979042c0bc723342f30516db7f6af7f638fe67af8b1c67c2467102",
+      "bytes": 15490,
+      "fetchedAt": "2026-10-08T23:58:42.410Z",
+      "fetchedFrom": "https://www.city.hino.lg.jp/shigikai/shoukai/1000883.html"
+    },
+    {
+      "filename": "gikai-255-o6.pdf",
+      "sha256": "30d47f2a9eb2cfa4efe3914d111f5fcef376b83492c51ab1ff55ee81c195b5bf",
+      "bytes": 1925143,
+      "fetchedAt": "2026-10-08T23:58:42.413Z",
+      "fetchedFrom": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/031/211/gikai-255-o6.pdf"
+    },
+    {
+      "filename": "gikai-255-01.pdf",
+      "sha256": "c3aa0d97cab4f367e7281c903f8bcb3850caf2be02cf25a1af5a8f6721e7f053",
+      "bytes": 4918349,
+      "fetchedAt": "2026-10-08T23:58:42.418Z",
+      "fetchedFrom": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/031/211/gikai-255-01.pdf"
+    }
+  ]
+}

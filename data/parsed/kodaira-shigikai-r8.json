@@ -1,0 +1,310 @@
+{
+  "docType": "council-composition",
+  "sourceId": "kodaira-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.3",
+  "parsedAt": "2026-10-09T02:24:15.124Z",
+  "fiscalYear": "R8",
+  "body": "小平市議会",
+  "seats": 27,
+  "asOf": "2025-06-03",
+  "factions": [
+    {
+      "name": "自民党小平政和会",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "福室英俊",
+        "深谷幸信",
+        "山田大輔",
+        "鈴木洋一",
+        "外山まなみ",
+        "比留間洋一"
+      ],
+      "locator": {
+        "file": "105692.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "市議会公明党",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "幸田昌之",
+        "佐藤徹",
+        "橋本孝二",
+        "虻川浩",
+        "髙橋政美",
+        "津本裕子"
+      ],
+      "locator": {
+        "file": "105692.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "フォーラム小平",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "中江美和",
+        "岡田しんぺい",
+        "岩本誠",
+        "川里富美",
+        "吉本ゆうすけ"
+      ],
+      "locator": {
+        "file": "105692.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "日本共産党小平市議団",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "細谷正",
+        "鈴木だいち",
+        "三輪博美"
+      ],
+      "locator": {
+        "file": "105692.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "一人会派と維新の会",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "伊藤央",
+        "安竹洋平",
+        "石津はるか"
+      ],
+      "locator": {
+        "file": "105692.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "生活者ネットワーク",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "さとう悦子",
+        "柴尾ひろみ"
+      ],
+      "locator": {
+        "file": "105692.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "まちづくり市民こだいら（水口かずえ）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "水口かずえ"
+      ],
+      "locator": {
+        "file": "105692.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "市議会れいわ新選組（中倉茂和）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "中倉茂和"
+      ],
+      "locator": {
+        "file": "105692.html",
+        "row": 8
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第4号",
+    "billName": "令和8年度小平市一般会計予算",
+    "sessionLabel": "令和8年3月定例会",
+    "decidedDate": "2026-03-26",
+    "decidedDateLabel": "令和8年3月26日",
+    "result": "原案可決",
+    "locator": {
+      "file": "127359.html"
+    }
+  },
+  "rosterTitle": "会派名簿（1）（2）（令和7年6月3日現在）",
+  "resultTitle": "令和8年3月定例会で議決した議案",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "こだいら市議会だより267号 8面 議案に対する各議員の賛否（3月定例会）",
+    "sourceFile": "att_0000009.pdf",
+    "columns": [
+      {
+        "label": "福室英俊",
+        "faction": "自民党小平政和会",
+        "member": "福室英俊",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴木洋一",
+        "faction": "自民党小平政和会",
+        "member": "鈴木洋一",
+        "stance": "賛成"
+      },
+      {
+        "label": "外山まなみ",
+        "faction": "自民党小平政和会",
+        "member": "外山まなみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "比留間洋一",
+        "faction": "自民党小平政和会",
+        "member": "比留間洋一",
+        "stance": "賛成"
+      },
+      {
+        "label": "深谷幸信",
+        "faction": "自民党小平政和会",
+        "member": "深谷幸信",
+        "stance": "賛成"
+      },
+      {
+        "label": "山田大輔",
+        "faction": "自民党小平政和会",
+        "member": "山田大輔",
+        "stance": "賛成"
+      },
+      {
+        "label": "幸田昌之",
+        "faction": "市議会公明党",
+        "member": "幸田昌之",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐藤徹",
+        "faction": "市議会公明党",
+        "member": "佐藤徹",
+        "stance": "賛成"
+      },
+      {
+        "label": "髙橋政美",
+        "faction": "市議会公明党",
+        "member": "髙橋政美",
+        "stance": "賛成"
+      },
+      {
+        "label": "津本裕子",
+        "faction": "市議会公明党",
+        "member": "津本裕子",
+        "stance": "賛成"
+      },
+      {
+        "label": "橋本孝二",
+        "faction": "市議会公明党",
+        "member": "橋本孝二",
+        "stance": "賛成"
+      },
+      {
+        "label": "中江美和",
+        "faction": "フォーラム小平",
+        "member": "中江美和",
+        "stance": "賛成"
+      },
+      {
+        "label": "岩本誠",
+        "faction": "フォーラム小平",
+        "member": "岩本誠",
+        "stance": "賛成"
+      },
+      {
+        "label": "岡田しんぺい",
+        "faction": "フォーラム小平",
+        "member": "岡田しんぺい",
+        "stance": "賛成"
+      },
+      {
+        "label": "川里富美",
+        "faction": "フォーラム小平",
+        "member": "川里富美",
+        "stance": "賛成"
+      },
+      {
+        "label": "吉本ゆうすけ",
+        "faction": "フォーラム小平",
+        "member": "吉本ゆうすけ",
+        "stance": "賛成"
+      },
+      {
+        "label": "細谷正",
+        "faction": "日本共産党小平市議団",
+        "member": "細谷正",
+        "stance": "反対"
+      },
+      {
+        "label": "鈴木だいち",
+        "faction": "日本共産党小平市議団",
+        "member": "鈴木だいち",
+        "stance": "反対"
+      },
+      {
+        "label": "三輪博美",
+        "faction": "日本共産党小平市議団",
+        "member": "三輪博美",
+        "stance": "反対"
+      },
+      {
+        "label": "伊藤央",
+        "faction": "一人会派と維新の会",
+        "member": "伊藤央",
+        "stance": "反対"
+      },
+      {
+        "label": "石津はるか",
+        "faction": "一人会派と維新の会",
+        "member": "石津はるか",
+        "stance": "反対"
+      },
+      {
+        "label": "安竹洋平",
+        "faction": "一人会派と維新の会",
+        "member": "安竹洋平",
+        "stance": "反対"
+      },
+      {
+        "label": "さとう悦子",
+        "faction": "生活者ネットワーク",
+        "member": "さとう悦子",
+        "stance": "賛成"
+      },
+      {
+        "label": "柴尾ひろみ",
+        "faction": "生活者ネットワーク",
+        "member": "柴尾ひろみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "水口かずえ",
+        "faction": "まちづくり市民こだいら（水口かずえ）",
+        "member": "水口かずえ",
+        "stance": "反対"
+      },
+      {
+        "label": "中倉茂和",
+        "faction": "市議会れいわ新選組（中倉茂和）",
+        "member": "中倉茂和",
+        "stance": "賛成"
+      },
+      {
+        "label": "虻川浩",
+        "faction": "市議会公明党",
+        "member": "虻川浩",
+        "stance": "議長"
+      }
+    ]
+  }
+}

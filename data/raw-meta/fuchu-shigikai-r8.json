@@ -1,0 +1,33 @@
+{
+  "sourceId": "fuchu-shigikai-r8",
+  "files": [
+    {
+      "filename": "kaiha.html",
+      "sha256": "11c266cf877ed03e8ec5ecafee95b7ff6172a02967474cb563ec58ccd1147980",
+      "bytes": 9529,
+      "fetchedAt": "2026-10-08T23:58:42.396Z",
+      "fetchedFrom": "https://web.archive.org/web/20260215074314id_/https://www.city.fuchu.tokyo.jp/gikai/member/kaiha.html"
+    },
+    {
+      "filename": "fuchu-shigikaidayori_329.pdf",
+      "sha256": "cb839e3647a03f1e309f75fdc2b825627b5b0e5614e9821be504773c26b54125",
+      "bytes": 2294949,
+      "fetchedAt": "2026-10-08T23:58:42.399Z",
+      "fetchedFrom": "https://www.city.fuchu.tokyo.jp/gikai/dayori/backnumber/reiwa8/329.files/fuchu-shigikaidayori_329.pdf"
+    },
+    {
+      "filename": "r8dai1kaigiketukekka.html",
+      "sha256": "3033c860165b18daa9e62250b5e697a5144212067153043cc50656d42dd1573b",
+      "bytes": 19254,
+      "fetchedAt": "2026-10-08T23:58:42.399Z",
+      "fetchedFrom": "https://www.city.fuchu.tokyo.jp/gikai/shingi/naiyo/r8dai1kaigiketukekka.html"
+    },
+    {
+      "filename": "gicho.html",
+      "sha256": "3fdbefda07f3a6e76dae7a3bdf3e59c473cdc2e089bdcdb9b3fd293816756bd4",
+      "bytes": 9522,
+      "fetchedAt": "2026-10-08T23:58:42.400Z",
+      "fetchedFrom": "https://web.archive.org/web/20260210054206id_/https://www.city.fuchu.tokyo.jp/gikai/aramashi/gicho.html"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "sourceId": "chigasaki-shigikai-r8",
+  "files": [
+    {
+      "filename": "1052691.html",
+      "sha256": "ea2d82779b2a852daa3984d41f00be4265175ca25549f07dd98f98a50e28de62",
+      "bytes": 18281,
+      "fetchedAt": "2026-10-08T23:58:42.455Z",
+      "fetchedFrom": "https://web.archive.org/web/20251109224917id_/https://www.city.chigasaki.kanagawa.jp/gikai/meibo/1052691.html"
+    },
+    {
+      "filename": "R8t1_saiketsu_0324.pdf",
+      "sha256": "315036fc2ff127887feeeebc251faec8bb4ed452a9a763a306bf9f43ce48766a",
+      "bytes": 235626,
+      "fetchedAt": "2026-10-08T23:58:42.456Z",
+      "fetchedFrom": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/066/639/R8t1_saiketsu_0324.pdf"
+    },
+    {
+      "filename": "1001072.html",
+      "sha256": "44c2e92bca4a27f3e86d8a30a7474decb52ef18f49d300cba38b139e06262bd9",
+      "bytes": 25763,
+      "fetchedAt": "2026-10-08T23:58:42.456Z",
+      "fetchedFrom": "https://www.city.chigasaki.kanagawa.jp/gikai/1001072.html"
+    }
+  ]
+}

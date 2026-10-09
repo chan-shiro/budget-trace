@@ -1,0 +1,251 @@
+{
+  "docType": "council-composition",
+  "sourceId": "isehara-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.3",
+  "parsedAt": "2026-10-09T02:24:12.158Z",
+  "fiscalYear": "R8",
+  "body": "伊勢原市議会",
+  "seats": 20,
+  "asOf": "2025-06-06",
+  "teisu": 20,
+  "factions": [
+    {
+      "name": "いせはら為成会",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "舘大樹",
+        "越水崇史",
+        "大山学",
+        "長嶋一樹",
+        "八島満雄",
+        "大垣真一"
+      ],
+      "locator": {
+        "file": "2023110600067.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "志政会",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "米谷政久",
+        "小沼富夫",
+        "前田秀資",
+        "夛田嚴"
+      ],
+      "locator": {
+        "file": "2023110600067.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "いせはら未来会議",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "安藤玄一",
+        "森尾武史",
+        "橋田夏枝"
+      ],
+      "locator": {
+        "file": "2023110600067.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "公明党いせはら",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "今野康敏",
+        "中山真由美"
+      ],
+      "locator": {
+        "file": "2023110600067.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "日本共産党伊勢原市会議員団",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "川添康大",
+        "勝又澄子"
+      ],
+      "locator": {
+        "file": "2023110600067.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "進風会",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "山田昌紀",
+        "荻野貴文"
+      ],
+      "locator": {
+        "file": "2023110600067.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "庶民",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "岸圭介"
+      ],
+      "locator": {
+        "file": "2023110600067.html",
+        "row": 7
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第２号",
+    "billName": "令和8年度伊勢原市一般会計予算",
+    "sessionLabel": "令和8年3月定例会",
+    "decidedDate": "2026-03-23",
+    "decidedDateLabel": "令和8年3月23日",
+    "result": "可決",
+    "locator": {
+      "file": "2026020500014.html"
+    }
+  },
+  "rosterTitle": "会派別名簿（更新日 2025年06月06日）",
+  "resultTitle": "令和8年3月定例会の審議案件",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "いせはら議会だより 第223号（令和8年5月1日）6面 ３月定例会の審議状況",
+    "sourceFile": "6p.pdf",
+    "columns": [
+      {
+        "label": "越水崇史",
+        "faction": "いせはら為成会",
+        "member": "越水崇史",
+        "stance": "賛成"
+      },
+      {
+        "label": "大山学",
+        "faction": "いせはら為成会",
+        "member": "大山学",
+        "stance": "賛成"
+      },
+      {
+        "label": "舘大樹",
+        "faction": "いせはら為成会",
+        "member": "舘大樹",
+        "stance": "賛成"
+      },
+      {
+        "label": "長嶋一樹",
+        "faction": "いせはら為成会",
+        "member": "長嶋一樹",
+        "stance": "賛成"
+      },
+      {
+        "label": "八島満雄",
+        "faction": "いせはら為成会",
+        "member": "八島満雄",
+        "stance": "賛成"
+      },
+      {
+        "label": "小沼富夫",
+        "faction": "志政会",
+        "member": "小沼富夫",
+        "stance": "賛成"
+      },
+      {
+        "label": "前田秀資",
+        "faction": "志政会",
+        "member": "前田秀資",
+        "stance": "賛成"
+      },
+      {
+        "label": "夛田嚴",
+        "faction": "志政会",
+        "member": "夛田嚴",
+        "stance": "賛成"
+      },
+      {
+        "label": "米谷政久",
+        "faction": "志政会",
+        "member": "米谷政久",
+        "stance": "賛成"
+      },
+      {
+        "label": "安藤玄一",
+        "faction": "いせはら未来会議",
+        "member": "安藤玄一",
+        "stance": "賛成"
+      },
+      {
+        "label": "森尾武史",
+        "faction": "いせはら未来会議",
+        "member": "森尾武史",
+        "stance": "賛成"
+      },
+      {
+        "label": "橋田夏枝",
+        "faction": "いせはら未来会議",
+        "member": "橋田夏枝",
+        "stance": "賛成"
+      },
+      {
+        "label": "今野康敏",
+        "faction": "公明党いせはら",
+        "member": "今野康敏",
+        "stance": "賛成"
+      },
+      {
+        "label": "中山真由美",
+        "faction": "公明党いせはら",
+        "member": "中山真由美",
+        "stance": "賛成"
+      },
+      {
+        "label": "川添康大",
+        "faction": "日本共産党伊勢原市会議員団",
+        "member": "川添康大",
+        "stance": "反対"
+      },
+      {
+        "label": "勝又澄子",
+        "faction": "日本共産党伊勢原市会議員団",
+        "member": "勝又澄子",
+        "stance": "欠席"
+      },
+      {
+        "label": "荻野貴文",
+        "faction": "進風会",
+        "member": "荻野貴文",
+        "stance": "賛成"
+      },
+      {
+        "label": "山田昌紀",
+        "faction": "進風会",
+        "member": "山田昌紀",
+        "stance": "賛成"
+      },
+      {
+        "label": "岸圭介",
+        "faction": "庶民",
+        "member": "岸圭介",
+        "stance": "反対"
+      },
+      {
+        "label": "大垣真一",
+        "faction": "いせはら為成会",
+        "member": "大垣真一",
+        "stance": "議長"
+      }
+    ]
+  }
+}

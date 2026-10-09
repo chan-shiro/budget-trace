@@ -1,0 +1,279 @@
+{
+  "docType": "council-composition",
+  "sourceId": "ebina-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.3",
+  "parsedAt": "2026-10-09T02:24:01.984Z",
+  "fiscalYear": "R8",
+  "body": "海老名市議会",
+  "seats": 21,
+  "asOf": "2026-03-26",
+  "factions": [
+    {
+      "name": "政進会",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "宇田川希",
+        "倉橋正美",
+        "藤澤菊枝",
+        "森下賢人",
+        "永井浩介",
+        "葉梨之紀",
+        "大塚真樹",
+        "森英之"
+      ],
+      "locator": {
+        "file": "Kg142_81111.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "星伸一",
+        "戸澤幸雄",
+        "大下久美"
+      ],
+      "locator": {
+        "file": "Kg142_81111.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "松本正幸",
+        "鈴木さよ子"
+      ],
+      "locator": {
+        "file": "Kg142_81111.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "涼風の会",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "ありいあいこ",
+        "吉田みな子"
+      ],
+      "locator": {
+        "file": "Kg142_81111.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "立憲民主えびな",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "藤枝ふみひこ",
+        "たち登志子"
+      ],
+      "locator": {
+        "file": "Kg142_81111.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無会派（田中ひろこ）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "田中ひろこ"
+      ],
+      "locator": {
+        "file": "Kg142_81111.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無会派（三宅紀昭）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "三宅紀昭"
+      ],
+      "locator": {
+        "file": "Kg142_81111.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無会派（さのるみ）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "さのるみ"
+      ],
+      "locator": {
+        "file": "Kg142_81111.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無会派（伊左次雄介）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "伊左次雄介"
+      ],
+      "locator": {
+        "file": "Kg142_81111.pdf",
+        "page": 1
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第29号",
+    "billName": "令和８年度海老名市一般会計予算",
+    "sessionLabel": "令和８年３月第１回定例会",
+    "decidedDate": "2026-03-26",
+    "decidedDateLabel": "令和8年3月26日",
+    "result": "原案可決(賛成多数)",
+    "locator": {
+      "file": "g07_giketsu.asp_kword1_88_EA_94_CA_89_EF_8Cv_97_5C_8EZ_kaigi_2026_2F02_2F24_2C2026_2F03_2F26_2C112_bunrui_.html"
+    }
+  },
+  "rosterTitle": "令和８年第１回定例会の会議結果（議決結果と各個人の賛否の状況）の会派・議員名の欄（3月26日議決）",
+  "resultTitle": "議案とその議決結果（令和８年３月第１回定例会・議案第29号）",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "令和８年第１回定例会の会議結果（議決結果と各個人の賛否の状況）",
+    "sourceFile": "Kg142_81111.pdf",
+    "columns": [
+      {
+        "label": "宇田川希",
+        "faction": "政進会",
+        "member": "宇田川希",
+        "stance": "賛成"
+      },
+      {
+        "label": "倉橋正美",
+        "faction": "政進会",
+        "member": "倉橋正美",
+        "stance": "賛成"
+      },
+      {
+        "label": "藤澤菊枝",
+        "faction": "政進会",
+        "member": "藤澤菊枝",
+        "stance": "賛成"
+      },
+      {
+        "label": "森下賢人",
+        "faction": "政進会",
+        "member": "森下賢人",
+        "stance": "賛成"
+      },
+      {
+        "label": "永井浩介",
+        "faction": "政進会",
+        "member": "永井浩介",
+        "stance": "議長"
+      },
+      {
+        "label": "葉梨之紀",
+        "faction": "政進会",
+        "member": "葉梨之紀",
+        "stance": "賛成"
+      },
+      {
+        "label": "大塚真樹",
+        "faction": "政進会",
+        "member": "大塚真樹",
+        "stance": "賛成"
+      },
+      {
+        "label": "森英之",
+        "faction": "政進会",
+        "member": "森英之",
+        "stance": "賛成"
+      },
+      {
+        "label": "星伸一",
+        "faction": "公明党",
+        "member": "星伸一",
+        "stance": "賛成"
+      },
+      {
+        "label": "戸澤幸雄",
+        "faction": "公明党",
+        "member": "戸澤幸雄",
+        "stance": "賛成"
+      },
+      {
+        "label": "大下久美",
+        "faction": "公明党",
+        "member": "大下久美",
+        "stance": "賛成"
+      },
+      {
+        "label": "松本正幸",
+        "faction": "日本共産党",
+        "member": "松本正幸",
+        "stance": "反対"
+      },
+      {
+        "label": "鈴木さよ子",
+        "faction": "日本共産党",
+        "member": "鈴木さよ子",
+        "stance": "欠席"
+      },
+      {
+        "label": "ありいあいこ",
+        "faction": "涼風の会",
+        "member": "ありいあいこ",
+        "stance": "反対"
+      },
+      {
+        "label": "吉田みな子",
+        "faction": "涼風の会",
+        "member": "吉田みな子",
+        "stance": "反対"
+      },
+      {
+        "label": "藤枝ふみひこ",
+        "faction": "立憲民主えびな",
+        "member": "藤枝ふみひこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "たち登志子",
+        "faction": "立憲民主えびな",
+        "member": "たち登志子",
+        "stance": "賛成"
+      },
+      {
+        "label": "田中ひろこ",
+        "faction": "無会派（田中ひろこ）",
+        "member": "田中ひろこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "三宅紀昭",
+        "faction": "無会派（三宅紀昭）",
+        "member": "三宅紀昭",
+        "stance": "賛成"
+      },
+      {
+        "label": "さのるみ",
+        "faction": "無会派（さのるみ）",
+        "member": "さのるみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "伊左次雄介",
+        "faction": "無会派（伊左次雄介）",
+        "member": "伊左次雄介",
+        "stance": "賛成"
+      }
+    ]
+  }
+}

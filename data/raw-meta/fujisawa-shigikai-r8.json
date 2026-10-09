@@ -1,0 +1,42 @@
+{
+  "sourceId": "fujisawa-shigikai-r8",
+  "files": [
+    {
+      "filename": "KhB521_fujisawasigikai261.pdf",
+      "sha256": "73287615871041a43092238b368d081dbff25f757b4cf6706708bfe49ee64c17",
+      "bytes": 7729808,
+      "fetchedAt": "2026-10-08T23:58:42.443Z",
+      "fetchedFrom": "https://shigikai.city.fujisawa.kanagawa.jp/voices/gikaidoc/attach/koho/KhB521_fujisawasigikai261.pdf"
+    },
+    {
+      "filename": "g07_Kaiha.asp.html",
+      "sha256": "2aad3b37b5f812798ad4aa216b35b1a838c1b78a92ed7c914d014697de1a1665",
+      "bytes": 11237,
+      "fetchedAt": "2026-10-08T23:58:42.443Z",
+      "fetchedFrom": "https://web.archive.org/web/20260311060621id_/https://shigikai.city.fujisawa.kanagawa.jp/g07_Kaiha.asp",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "g07_giketsu.asp_Sflg_1_kword1_88_EA_94_CA_89_EF_8Cv_97_5C_8EZ_kaigi_2026_2F02_2F12_2C2026_2F03_2F18_2C112_bunrui_.html",
+      "sha256": "1f5b238c71fa2b6f2c30ade042f963c66cf9460ece47a90d1340d96e567723c4",
+      "bytes": 16867,
+      "fetchedAt": "2026-10-08T23:58:42.444Z",
+      "fetchedFrom": "https://shigikai.city.fujisawa.kanagawa.jp/g07_giketsu.asp?Sflg=1&kword1=%88%EA%94%CA%89%EF%8Cv%97%5C%8EZ&kaigi=2026%2F02%2F12%2C2026%2F03%2F18%2C112&bunrui=",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "guide1_2.asp.html",
+      "sha256": "53668351b4f973b923d1897a340f5275084eb55bef0f742eb0b76f97edb2c114",
+      "bytes": 8716,
+      "fetchedAt": "2026-10-08T23:58:42.444Z",
+      "fetchedFrom": "https://shigikai.city.fujisawa.kanagawa.jp/guide1_2.asp",
+      "transform": [
+        "ext:.html"
+      ]
+    }
+  ]
+}

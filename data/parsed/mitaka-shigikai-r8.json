@@ -1,0 +1,332 @@
+{
+  "docType": "council-composition",
+  "sourceId": "mitaka-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.3",
+  "parsedAt": "2026-10-09T02:24:18.935Z",
+  "fiscalYear": "R8",
+  "body": "三鷹市議会",
+  "seats": 27,
+  "asOf": "2025-05-28",
+  "factions": [
+    {
+      "name": "三鷹市議会自民クラブ",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "加藤こうじ",
+        "吉田まさとし",
+        "池田有也",
+        "吉野けんさく",
+        "太田みつこ",
+        "土屋けんいち",
+        "伊藤俊明"
+      ],
+      "locator": {
+        "file": "party.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "三鷹市議会公明党",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "大倉あき子",
+        "赤松大一",
+        "佐々木かずよ",
+        "粕谷稔"
+      ],
+      "locator": {
+        "file": "party.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "立憲民主緑風会",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "岩見大三",
+        "おばた和仁",
+        "高谷真一朗",
+        "谷口敏也"
+      ],
+      "locator": {
+        "file": "party.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "日本共産党三鷹市議会議員団",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "大城美幸",
+        "紫野あすか",
+        "前田まい",
+        "栗原けんじ"
+      ],
+      "locator": {
+        "file": "party.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "れいわ・市民自治の会",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "野村羊子",
+        "石井れいこ"
+      ],
+      "locator": {
+        "file": "party.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "三鷹市議会都民ファーストの会",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "山田さとみ",
+        "原めぐみ"
+      ],
+      "locator": {
+        "file": "party.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "無所属（半田伸明）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "半田伸明"
+      ],
+      "locator": {
+        "file": "party.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "つなぐ三鷹の会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "成田ちひろ"
+      ],
+      "locator": {
+        "file": "party.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "日本維新の会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "中泉きよし"
+      ],
+      "locator": {
+        "file": "party.html",
+        "row": 9
+      }
+    },
+    {
+      "name": "参政党",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "蛯澤征剛"
+      ],
+      "locator": {
+        "file": "party.html",
+        "row": 10
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第19号",
+    "billName": "令和8年度三鷹市一般会計予算",
+    "sessionLabel": "令和8年第1回定例会",
+    "decidedDate": "2026-03-27",
+    "decidedDateLabel": "令和8年3月27日",
+    "result": "原案可決",
+    "locator": {
+      "file": "custom_2026a.html"
+    }
+  },
+  "rosterTitle": "会派別名簿（令和7年5月28日現在）",
+  "resultTitle": "本会議の結果（令和8年第1回定例会）",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "令和８年第１回定例会採決結果一覧",
+    "sourceFile": "2026custom1giantou_saiketu.pdf",
+    "columns": [
+      {
+        "label": "吉野けんさく",
+        "faction": "三鷹市議会自民クラブ",
+        "member": "吉野けんさく",
+        "stance": "賛成"
+      },
+      {
+        "label": "太田みつこ",
+        "faction": "三鷹市議会自民クラブ",
+        "member": "太田みつこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "吉田まさとし",
+        "faction": "三鷹市議会自民クラブ",
+        "member": "吉田まさとし",
+        "stance": "賛成"
+      },
+      {
+        "label": "池田有也",
+        "faction": "三鷹市議会自民クラブ",
+        "member": "池田有也",
+        "stance": "賛成"
+      },
+      {
+        "label": "加藤こうじ",
+        "faction": "三鷹市議会自民クラブ",
+        "member": "加藤こうじ",
+        "stance": "賛成"
+      },
+      {
+        "label": "土屋けんいち",
+        "faction": "三鷹市議会自民クラブ",
+        "member": "土屋けんいち",
+        "stance": "賛成"
+      },
+      {
+        "label": "伊藤俊明",
+        "faction": "三鷹市議会自民クラブ",
+        "member": "伊藤俊明",
+        "stance": "議長"
+      },
+      {
+        "label": "佐々木かずよ",
+        "faction": "三鷹市議会公明党",
+        "member": "佐々木かずよ",
+        "stance": "賛成"
+      },
+      {
+        "label": "赤松大一",
+        "faction": "三鷹市議会公明党",
+        "member": "赤松大一",
+        "stance": "賛成"
+      },
+      {
+        "label": "大倉あき子",
+        "faction": "三鷹市議会公明党",
+        "member": "大倉あき子",
+        "stance": "賛成"
+      },
+      {
+        "label": "粕谷稔",
+        "faction": "三鷹市議会公明党",
+        "member": "粕谷稔",
+        "stance": "賛成"
+      },
+      {
+        "label": "岩見大三",
+        "faction": "立憲民主緑風会",
+        "member": "岩見大三",
+        "stance": "賛成"
+      },
+      {
+        "label": "おばた和仁",
+        "faction": "立憲民主緑風会",
+        "member": "おばた和仁",
+        "stance": "賛成"
+      },
+      {
+        "label": "高谷真一朗",
+        "faction": "立憲民主緑風会",
+        "member": "高谷真一朗",
+        "stance": "賛成"
+      },
+      {
+        "label": "谷口敏也",
+        "faction": "立憲民主緑風会",
+        "member": "谷口敏也",
+        "stance": "賛成"
+      },
+      {
+        "label": "大城美幸",
+        "faction": "日本共産党三鷹市議会議員団",
+        "member": "大城美幸",
+        "stance": "反対"
+      },
+      {
+        "label": "紫野あすか",
+        "faction": "日本共産党三鷹市議会議員団",
+        "member": "紫野あすか",
+        "stance": "反対"
+      },
+      {
+        "label": "前田まい",
+        "faction": "日本共産党三鷹市議会議員団",
+        "member": "前田まい",
+        "stance": "反対"
+      },
+      {
+        "label": "栗原けんじ",
+        "faction": "日本共産党三鷹市議会議員団",
+        "member": "栗原けんじ",
+        "stance": "反対"
+      },
+      {
+        "label": "石井れいこ",
+        "faction": "れいわ・市民自治の会",
+        "member": "石井れいこ",
+        "stance": "反対"
+      },
+      {
+        "label": "野村羊子",
+        "faction": "れいわ・市民自治の会",
+        "member": "野村羊子",
+        "stance": "反対"
+      },
+      {
+        "label": "山田さとみ",
+        "faction": "三鷹市議会都民ファーストの会",
+        "member": "山田さとみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "原めぐみ",
+        "faction": "三鷹市議会都民ファーストの会",
+        "member": "原めぐみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "半田伸明",
+        "faction": "無所属（半田伸明）",
+        "member": "半田伸明",
+        "stance": "賛成"
+      },
+      {
+        "label": "成田ちひろ",
+        "faction": "つなぐ三鷹の会",
+        "member": "成田ちひろ",
+        "stance": "賛成"
+      },
+      {
+        "label": "中泉きよし",
+        "faction": "日本維新の会",
+        "member": "中泉きよし",
+        "stance": "反対"
+      },
+      {
+        "label": "蛯澤征剛",
+        "faction": "参政党",
+        "member": "蛯澤征剛",
+        "stance": "反対"
+      }
+    ]
+  }
+}

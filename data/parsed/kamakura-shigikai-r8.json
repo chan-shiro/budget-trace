@@ -1,0 +1,318 @@
+{
+  "docType": "council-composition",
+  "sourceId": "kamakura-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.3",
+  "parsedAt": "2026-10-09T02:24:13.767Z",
+  "fiscalYear": "R8",
+  "body": "鎌倉市議会",
+  "seats": 25,
+  "asOf": "2026-03-23",
+  "factions": [
+    {
+      "name": "自民党・無所属の会",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "中村聡一郎",
+        "志田一宏",
+        "森功一",
+        "池田実"
+      ],
+      "locator": {
+        "file": "273.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "公正と法",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "長嶋竜弘",
+        "津野てるひさ",
+        "重黒木優平",
+        "中澤克之"
+      ],
+      "locator": {
+        "file": "273.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "鎌倉前進の会",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "大石香",
+        "上野学",
+        "加藤千華",
+        "岡崎修也"
+      ],
+      "locator": {
+        "file": "273.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "公明党鎌倉市議会議員団",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "水上武史",
+        "岸本都美代",
+        "児玉文彦"
+      ],
+      "locator": {
+        "file": "273.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "夢みらい鎌倉",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "日向慎吾",
+        "小野田康成",
+        "前川綾子"
+      ],
+      "locator": {
+        "file": "273.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "日本共産党鎌倉市議会議員団",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "吉岡和江",
+        "武野裕子"
+      ],
+      "locator": {
+        "file": "273.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "立憲民主党鎌倉市議会議員団",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "岡田かずのり",
+        "中村てつや"
+      ],
+      "locator": {
+        "file": "273.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "無所属（藤本あさこ）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "藤本あさこ"
+      ],
+      "locator": {
+        "file": "273.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "無所属（細川まなか）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "細川まなか"
+      ],
+      "locator": {
+        "file": "273.pdf",
+        "page": 8
+      }
+    },
+    {
+      "name": "無所属（松中健治）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "松中健治"
+      ],
+      "locator": {
+        "file": "273.pdf",
+        "page": 8
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第99号",
+    "billName": "令和8年度鎌倉市一般会計予算",
+    "sessionLabel": "令和8年（2026年）2月定例会",
+    "decidedDate": "2026-03-23",
+    "decidedDateLabel": "令和8年3月23日",
+    "result": "原案可決（賛成多数）",
+    "locator": {
+      "file": "20260203.html"
+    }
+  },
+  "rosterTitle": "かまくら議会だより 第273号（令和8年5月1日）8面 議決された主な議案等（2月定例会・会派名／議員名）",
+  "resultTitle": "令和8年（2026年）2月定例会のお知らせ（審議議案等・議決結果）",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "かまくら議会だより 第273号（令和8年5月1日）8面 議決された主な議案等（2月定例会）",
+    "sourceFile": "273.pdf",
+    "columns": [
+      {
+        "label": "中村聡一郎",
+        "faction": "自民党・無所属の会",
+        "member": "中村聡一郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "志田一宏",
+        "faction": "自民党・無所属の会",
+        "member": "志田一宏",
+        "stance": "賛成"
+      },
+      {
+        "label": "森功一",
+        "faction": "自民党・無所属の会",
+        "member": "森功一",
+        "stance": "賛成"
+      },
+      {
+        "label": "池田実",
+        "faction": "自民党・無所属の会",
+        "member": "池田実",
+        "stance": "賛成"
+      },
+      {
+        "label": "長嶋竜弘",
+        "faction": "公正と法",
+        "member": "長嶋竜弘",
+        "stance": "反対"
+      },
+      {
+        "label": "津野てるひさ",
+        "faction": "公正と法",
+        "member": "津野てるひさ",
+        "stance": "反対"
+      },
+      {
+        "label": "重黒木優平",
+        "faction": "公正と法",
+        "member": "重黒木優平",
+        "stance": "反対"
+      },
+      {
+        "label": "大石香",
+        "faction": "鎌倉前進の会",
+        "member": "大石香",
+        "stance": "賛成"
+      },
+      {
+        "label": "上野学",
+        "faction": "鎌倉前進の会",
+        "member": "上野学",
+        "stance": "賛成"
+      },
+      {
+        "label": "加藤千華",
+        "faction": "鎌倉前進の会",
+        "member": "加藤千華",
+        "stance": "賛成"
+      },
+      {
+        "label": "岡崎修也",
+        "faction": "鎌倉前進の会",
+        "member": "岡崎修也",
+        "stance": "賛成"
+      },
+      {
+        "label": "水上武史",
+        "faction": "公明党鎌倉市議会議員団",
+        "member": "水上武史",
+        "stance": "賛成"
+      },
+      {
+        "label": "岸本都美代",
+        "faction": "公明党鎌倉市議会議員団",
+        "member": "岸本都美代",
+        "stance": "賛成"
+      },
+      {
+        "label": "児玉文彦",
+        "faction": "公明党鎌倉市議会議員団",
+        "member": "児玉文彦",
+        "stance": "賛成"
+      },
+      {
+        "label": "日向慎吾",
+        "faction": "夢みらい鎌倉",
+        "member": "日向慎吾",
+        "stance": "賛成"
+      },
+      {
+        "label": "小野田康成",
+        "faction": "夢みらい鎌倉",
+        "member": "小野田康成",
+        "stance": "賛成"
+      },
+      {
+        "label": "前川綾子",
+        "faction": "夢みらい鎌倉",
+        "member": "前川綾子",
+        "stance": "賛成"
+      },
+      {
+        "label": "吉岡和江",
+        "faction": "日本共産党鎌倉市議会議員団",
+        "member": "吉岡和江",
+        "stance": "反対"
+      },
+      {
+        "label": "武野裕子",
+        "faction": "日本共産党鎌倉市議会議員団",
+        "member": "武野裕子",
+        "stance": "反対"
+      },
+      {
+        "label": "岡田かずのり",
+        "faction": "立憲民主党鎌倉市議会議員団",
+        "member": "岡田かずのり",
+        "stance": "反対"
+      },
+      {
+        "label": "中村てつや",
+        "faction": "立憲民主党鎌倉市議会議員団",
+        "member": "中村てつや",
+        "stance": "反対"
+      },
+      {
+        "label": "藤本あさこ",
+        "faction": "無所属（藤本あさこ）",
+        "member": "藤本あさこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "細川まなか",
+        "faction": "無所属（細川まなか）",
+        "member": "細川まなか",
+        "stance": "賛成"
+      },
+      {
+        "label": "松中健治",
+        "faction": "無所属（松中健治）",
+        "member": "松中健治",
+        "stance": "反対"
+      },
+      {
+        "label": "中澤克之",
+        "faction": "公正と法",
+        "member": "中澤克之",
+        "stance": "議長"
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "sourceId": "atsugi-shigikai-r8",
+  "files": [
+    {
+      "filename": "080317votingresult.pdf",
+      "sha256": "36dd499f87d85b1ed16a6bb350632230505de69a989a2e046c67a5b8bb1aead3",
+      "bytes": 266801,
+      "fetchedAt": "2026-10-08T23:58:42.465Z",
+      "fetchedFrom": "https://www.city.atsugi.kanagawa.jp/material/files/group/63/080317votingresult.pdf"
+    },
+    {
+      "filename": "51317.html",
+      "sha256": "447c2b7c54d07056ba49df05baa27361a676baed3a023f4e22f6f987feeff55e",
+      "bytes": 66454,
+      "fetchedAt": "2026-10-08T23:58:42.466Z",
+      "fetchedFrom": "https://www.city.atsugi.kanagawa.jp/shigikai/3/r8kekka_2/51317.html"
+    },
+    {
+      "filename": "15721.html",
+      "sha256": "af4f46cf922d34ab9bcaa222065ea30935d0bf21d7cb7b52d8691f64e48baa75",
+      "bytes": 65447,
+      "fetchedAt": "2026-10-08T23:58:42.466Z",
+      "fetchedFrom": "https://www.city.atsugi.kanagawa.jp/shigikai/12/2/15721.html"
+    },
+    {
+      "filename": "15708.html",
+      "sha256": "71589b15ef4edc421a229fecde7c4c4c5857ad414ac5609415b8f6608a7c4ff8",
+      "bytes": 79672,
+      "fetchedAt": "2026-10-08T23:58:42.467Z",
+      "fetchedFrom": "https://www.city.atsugi.kanagawa.jp/shigikai/11/8/15708.html"
+    }
+  ]
+}

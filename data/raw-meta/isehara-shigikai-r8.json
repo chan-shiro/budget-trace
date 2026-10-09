@@ -1,0 +1,62 @@
+{
+  "sourceId": "isehara-shigikai-r8",
+  "files": [
+    {
+      "filename": "2023110600067.html",
+      "sha256": "0a9b0d7f818d63665a1ba3239e9ee99d8810879f2e7d47719e3b9962f0949a41",
+      "bytes": 17326,
+      "fetchedAt": "2026-10-08T23:58:42.470Z",
+      "fetchedFrom": "https://web.archive.org/web/20250913232404id_/https://www.city.isehara.kanagawa.jp/gikai/docs/2023110600067/",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "2026020500014.html",
+      "sha256": "e27bc91e02e67af24b08a119330d3a0f0eb5b75ec75da9b59f8d51b884b2e61e",
+      "bytes": 20431,
+      "fetchedAt": "2026-10-08T23:58:42.470Z",
+      "fetchedFrom": "https://www.city.isehara.kanagawa.jp/gikai/docs/2026020500014/",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "2013051600011.html",
+      "sha256": "2469b8224314baa013c4c95ca8848182bd147ffceb00465b67880e47e26189ac",
+      "bytes": 18286,
+      "fetchedAt": "2026-10-08T23:58:42.470Z",
+      "fetchedFrom": "https://www.city.isehara.kanagawa.jp/gikai/docs/2013051600011/",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "6p.pdf",
+      "sha256": "d0b571c73cf260f2138238a8a0edc76cbfe703ffe5098367d5e3fea924173051",
+      "bytes": 225282,
+      "fetchedAt": "2026-10-08T23:58:42.471Z",
+      "fetchedFrom": "https://www.city.isehara.kanagawa.jp/gikai/docs/2026012200014/file_contents/6p.pdf"
+    },
+    {
+      "filename": "index.php_Template_view_VoiceType_all_DocumentID_1873.html",
+      "sha256": "a9a2a4b8d8d09494cf6e585089b0b50d771aa2f824af6e00f98d23944704236e",
+      "bytes": 14927,
+      "fetchedAt": "2026-10-08T23:58:42.471Z",
+      "fetchedFrom": "https://www.city.isehara.kanagawa.dbsr.jp/index.php/?Template=view&VoiceType=all&DocumentID=1873",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "index.php_Template_view_VoiceType_all_DocumentID_1874.html",
+      "sha256": "f69ce4bd807ae10cb67c74cdca0119d1eb511fd1a5f56cbc452ddc304dcd3fe0",
+      "bytes": 231614,
+      "fetchedAt": "2026-10-08T23:58:42.472Z",
+      "fetchedFrom": "https://www.city.isehara.kanagawa.dbsr.jp/index.php/?Template=view&VoiceType=all&DocumentID=1874",
+      "transform": [
+        "ext:.html"
+      ]
+    }
+  ]
+}

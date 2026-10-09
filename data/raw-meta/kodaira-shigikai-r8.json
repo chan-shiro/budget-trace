@@ -1,0 +1,40 @@
+{
+  "sourceId": "kodaira-shigikai-r8",
+  "files": [
+    {
+      "filename": "105692.html",
+      "sha256": "b74ee3c0a376ab1564fcd9d7efd858d2b222f5ab11b553c5276cb2e3b67cc53f",
+      "bytes": 29028,
+      "fetchedAt": "2026-10-08T23:58:42.406Z",
+      "fetchedFrom": "https://web.archive.org/web/20250614015824id_/https://www.city.kodaira.tokyo.jp/gikai/105/105692.html"
+    },
+    {
+      "filename": "105693.html",
+      "sha256": "ee5d9902448a8102993ad1f1d08a0aad30de1f6c1ef3797a742f65f16a3d3a87",
+      "bytes": 28371,
+      "fetchedAt": "2026-10-08T23:58:42.406Z",
+      "fetchedFrom": "https://web.archive.org/web/20251111050103id_/https://www.city.kodaira.tokyo.jp/gikai/105/105693.html"
+    },
+    {
+      "filename": "105900.html",
+      "sha256": "51def36e038495c50a522deda2c6ca35515f567c4537c5bbb2e908e37c9a6dc2",
+      "bytes": 25182,
+      "fetchedAt": "2026-10-08T23:58:42.407Z",
+      "fetchedFrom": "https://web.archive.org/web/20251212001214id_/https://www.city.kodaira.tokyo.jp/gikai/105/105900.html"
+    },
+    {
+      "filename": "127359.html",
+      "sha256": "a8476891b15d00d73abae651eb99373fcb90b406e0706c43e716f023bae4579e",
+      "bytes": 35162,
+      "fetchedAt": "2026-10-08T23:58:42.407Z",
+      "fetchedFrom": "https://web.archive.org/web/20260512160010id_/http://www.city.kodaira.tokyo.jp/gikai/127/127359.html"
+    },
+    {
+      "filename": "att_0000009.pdf",
+      "sha256": "79ca50c17c9476e7f53e7ad3ba7fda922e3fa350d7b1fb3f467af33a2622a5a6",
+      "bytes": 466225,
+      "fetchedAt": "2026-10-08T23:58:42.409Z",
+      "fetchedFrom": "https://web.archive.org/web/20260427173151id_/http://www.city.kodaira.tokyo.jp/gikai/files/127790/127790/att_0000009.pdf"
+    }
+  ]
+}

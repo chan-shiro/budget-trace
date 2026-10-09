@@ -1,0 +1,26 @@
+{
+  "sourceId": "mitaka-shigikai-r8",
+  "files": [
+    {
+      "filename": "party.html",
+      "sha256": "d38be20ddd45a6a75befcdc6d480cb2991d8413657358d136d2f8506139cd615",
+      "bytes": 8674,
+      "fetchedAt": "2026-10-08T23:58:42.392Z",
+      "fetchedFrom": "https://web.archive.org/web/20260315165830id_/https://www.gikai.city.mitaka.tokyo.jp/member/party.html"
+    },
+    {
+      "filename": "2026custom1giantou_saiketu.pdf",
+      "sha256": "9420cfb35fa5c6087b280cbbae13013f84109bc14920da431e01d16f133e2de5",
+      "bytes": 160354,
+      "fetchedAt": "2026-10-08T23:58:42.393Z",
+      "fetchedFrom": "https://www.gikai.city.mitaka.tokyo.jp/activity/pdf/2026custom1giantou_saiketu.pdf"
+    },
+    {
+      "filename": "custom_2026a.html",
+      "sha256": "ea2dce6d4b0ca1fef63069f87cfb6f7431fadcebdc0e47d8a8b4119a2b7d1dea",
+      "bytes": 24844,
+      "fetchedAt": "2026-10-08T23:58:42.393Z",
+      "fetchedFrom": "https://www.gikai.city.mitaka.tokyo.jp/activity/result/2026/custom_2026a.html"
+    }
+  ]
+}

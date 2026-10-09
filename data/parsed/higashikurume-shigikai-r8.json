@@ -1,0 +1,159 @@
+{
+  "docType": "council-composition",
+  "sourceId": "higashikurume-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.3",
+  "parsedAt": "2026-10-09T02:24:07.931Z",
+  "fiscalYear": "R8",
+  "body": "東久留米市議会",
+  "seats": 22,
+  "asOf": "2025-12-24",
+  "teisu": 22,
+  "factions": [
+    {
+      "name": "自民クラブ",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "当麻一哉",
+        "島崎孝",
+        "沢西卓哉",
+        "野島武夫",
+        "篠宮よしのり",
+        "今井和史"
+      ],
+      "locator": {
+        "file": "1004008.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "三浦猛",
+        "関根光浩",
+        "沢田孝康",
+        "阿部利恵子",
+        "高橋和義"
+      ],
+      "locator": {
+        "file": "1004008.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "村山順次郎",
+        "永田雅子",
+        "鴨志田芳美",
+        "北村のり子"
+      ],
+      "locator": {
+        "file": "1004008.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "久留米ハートネット",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "宮川豊史"
+      ],
+      "locator": {
+        "file": "1004008.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "市民自治フォーラム",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "間宮美季"
+      ],
+      "locator": {
+        "file": "1004008.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "ニューウェーブ",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "引間太一"
+      ],
+      "locator": {
+        "file": "1004008.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "市議会立憲民主",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "梶井琢太"
+      ],
+      "locator": {
+        "file": "1004008.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "東久留米維新の会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "佐藤一郎"
+      ],
+      "locator": {
+        "file": "1004008.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "国民民主党",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "岩崎さやこ"
+      ],
+      "locator": {
+        "file": "1004008.html",
+        "row": 9
+      }
+    },
+    {
+      "name": "れいわ新選組 東久留米",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "かやま玲子"
+      ],
+      "locator": {
+        "file": "1004008.html",
+        "row": 10
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第24号",
+    "billName": "令和8年度東久留米市一般会計予算",
+    "sessionLabel": "令和8年第1回定例会",
+    "decidedDate": "2026-03-26",
+    "decidedDateLabel": "令和8年3月26日",
+    "result": "原案可決（多数）",
+    "locator": {
+      "file": "1028672.html"
+    }
+  },
+  "rosterTitle": "会派別名簿（令和7年12月24日現在）",
+  "resultTitle": "令和8年第1回定例会 会議結果"
+}

@@ -1,0 +1,32 @@
+{
+  "sourceId": "machida-shigikai-r8",
+  "files": [
+    {
+      "filename": "Kg81_HP_20260325_saiketsu.pdf",
+      "sha256": "e572464e68ca95ee3723490322f85203b2ff1cca6753d31bd5cabe0d30193430",
+      "bytes": 386068,
+      "fetchedAt": "2026-10-08T23:58:42.405Z",
+      "fetchedFrom": "https://www.gikai-machida.jp/voices/GikaiDoc/attach/Congress/Kg81_HP_20260325_saiketsu.pdf"
+    },
+    {
+      "filename": "g07_giketsu.asp_kaigi_2026_2F03_2F09_2C2026_2F03_2F30_2C174_kensu_50_Sflg_1.html",
+      "sha256": "8bc2b8bb829586a9e127252b562882c0b2b9aac1208b0f280da229adf39c653b",
+      "bytes": 53272,
+      "fetchedAt": "2026-10-08T23:58:42.405Z",
+      "fetchedFrom": "https://www.gikai-machida.jp/g07_giketsu.asp?kaigi=2026%2F03%2F09%2C2026%2F03%2F30%2C174&kensu=50&Sflg=1",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "guide1_2.asp.html",
+      "sha256": "256324e2a1c1e7c80840e7e02b288ba2b459d280b6d2b3beb5d212b7126d8039",
+      "bytes": 10781,
+      "fetchedAt": "2026-10-08T23:58:42.406Z",
+      "fetchedFrom": "https://www.gikai-machida.jp/guide1_2.asp",
+      "transform": [
+        "ext:.html"
+      ]
+    }
+  ]
+}
