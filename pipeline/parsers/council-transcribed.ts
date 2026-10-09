@@ -24,7 +24,7 @@ import { z } from "zod";
 import { readRawMeta } from "../lib/store";
 import type { CouncilCompositionDoc, CouncilFactionFact, SourceEntry } from "../types";
 
-export const PARSER_VERSION = "0.8.2";
+export const PARSER_VERSION = "0.8.3";
 
 const factionSchema = z
   .object({
@@ -297,7 +297,10 @@ export function norm(s: string): string {
       .replace(/[\u{E0100}-\u{E01EF}︀-️]/gu, "")
       .replace(/[髙﨑𠮷葊濵德栁惠伹]/gu, (c) => VARIANTS[c] ?? c)
       // 丸は「〇」(U+3007) と「○」(U+25CB) が同じ原典の凡例と表で混ざる（松江・盛岡・倉敷）。賛否の記号として寄せる
-      .replace(/\u3007/g, "\u25CB")
+      .replace(/[\u3007\u25EF]/g, "\u25CB")
+      // 「◯」(U+25EF・大和の凡例) も同じ丸。ダッシュ類（―‐−—–－・NFKC 後の -）も凡例と表で字が違う（伊勢原: 凡例「－」・表「―」）ので
+      // 1つの字に寄せる（長音「ー」は寄せない＝氏名・会派名に出る）
+      .replace(/[\u2015\u2010\u2212\u2014\u2013\uFF0D-]/g, "\u2015")
       .replace(/[\s　]+/g, "")
   );
 }

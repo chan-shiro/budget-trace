@@ -1,0 +1,165 @@
+{
+  "docType": "council-composition",
+  "sourceId": "chofu-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.3",
+  "parsedAt": "2026-10-09T01:16:42.721Z",
+  "fiscalYear": "R8",
+  "body": "調布市議会",
+  "seats": 28,
+  "asOf": "2025-05-20",
+  "teisu": 28,
+  "factions": [
+    {
+      "name": "チャレンジ調布",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "丸田絵美",
+        "山根洋平",
+        "青山誠",
+        "井上耕志",
+        "川畑英樹",
+        "清水仁恵",
+        "古川陽菜",
+        "宮本和実"
+      ],
+      "locator": {
+        "file": "p077028.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "平野充",
+        "須山妙子",
+        "内藤美貴子",
+        "藤川満恵",
+        "松野英夫"
+      ],
+      "locator": {
+        "file": "p077028.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "自民党新政会",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "大野祐司",
+        "佐藤尭彦",
+        "大須賀浩裕",
+        "鈴木宗貴",
+        "沼田亮"
+      ],
+      "locator": {
+        "file": "p077028.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "岸本直子",
+        "田村ゆう子"
+      ],
+      "locator": {
+        "file": "p077028.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "日本維新の会",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "澤井慧",
+        "田中謙二"
+      ],
+      "locator": {
+        "file": "p077028.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "れいわネット・にじいろの会",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "木下安子",
+        "鈴木ほの香"
+      ],
+      "locator": {
+        "file": "p077028.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "自由民主党",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "伊藤学"
+      ],
+      "locator": {
+        "file": "p077028.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "立憲民主党",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "榊原登志子"
+      ],
+      "locator": {
+        "file": "p077028.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "調布ミライ政策会議",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "磯邉隆"
+      ],
+      "locator": {
+        "file": "p077028.html",
+        "row": 9
+      }
+    },
+    {
+      "name": "次世代・調布",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "阿部草太"
+      ],
+      "locator": {
+        "file": "p077028.html",
+        "row": 10
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "25",
+    "billName": "令和8年度調布市一般会計予算",
+    "sessionLabel": "令和8年第1回調布市議会定例会",
+    "decidedDate": "2026-03-26",
+    "decidedDateLabel": "令和8年3月26日",
+    "result": "可決",
+    "locator": {
+      "file": "p077265.html"
+    }
+  },
+  "rosterTitle": "調布市議会の会派 会派別所属議員（令和7年5月20日現在）",
+  "resultTitle": "令和8年第1回調布市議会定例会会議結果"
+}

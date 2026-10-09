@@ -1,0 +1,158 @@
+{
+  "docType": "council-composition",
+  "sourceId": "tama-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.3",
+  "parsedAt": "2026-10-09T01:17:17.155Z",
+  "fiscalYear": "R8",
+  "body": "多摩市議会",
+  "seats": 22,
+  "asOf": "2025-12-23",
+  "factions": [
+    {
+      "name": "公明党",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "三階道雄",
+        "あらたに隆見",
+        "池田けい子",
+        "渡辺しんじ",
+        "本間としえ"
+      ],
+      "locator": {
+        "file": "1006619.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "橋本由美子",
+        "小林憲一",
+        "大くま真一",
+        "上杉ただし"
+      ],
+      "locator": {
+        "file": "1006619.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "自民党",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "きりき優",
+        "いいじま文彦",
+        "石山ひろあき",
+        "松田だいすけ"
+      ],
+      "locator": {
+        "file": "1006619.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "あすたま・女性の力",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "おにづかこずえ",
+        "中島律子"
+      ],
+      "locator": {
+        "file": "1006619.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "生活者ネットワーク",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "岩崎みなこ",
+        "岸田めぐみ"
+      ],
+      "locator": {
+        "file": "1006619.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "青空りっけん",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "しらた満"
+      ],
+      "locator": {
+        "file": "1006619.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "多摩みらいの会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "しのづか元"
+      ],
+      "locator": {
+        "file": "1006619.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "多摩の風",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "折戸小夜子"
+      ],
+      "locator": {
+        "file": "1006619.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "日本維新の会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "藤條たかゆき"
+      ],
+      "locator": {
+        "file": "1006619.html",
+        "row": 9
+      }
+    },
+    {
+      "name": "社民党",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "いぢち恭子"
+      ],
+      "locator": {
+        "file": "1006619.html",
+        "row": 10
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "8",
+    "billName": "令和8年度多摩市一般会計予算",
+    "sessionLabel": "令和8年第1回定例会",
+    "decidedDate": "2026-03-30",
+    "decidedDateLabel": "令和8年3月30日",
+    "result": "原案可決",
+    "locator": {
+      "file": "1019818.html"
+    }
+  },
+  "rosterTitle": "市議会会派別名簿（令和7年（2025年）12月23日現在）",
+  "resultTitle": "令和8年第1回定例会会議結果"
+}

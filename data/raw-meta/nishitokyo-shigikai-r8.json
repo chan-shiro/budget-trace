@@ -1,0 +1,33 @@
+{
+  "sourceId": "nishitokyo-shigikai-r8",
+  "files": [
+    {
+      "filename": "kaiha_meibo.html",
+      "sha256": "09acd3cd84365bd56f9f798865e3b9b47b167621add54aed56f47c35d996c418",
+      "bytes": 27456,
+      "fetchedAt": "2026-10-08T23:58:42.425Z",
+      "fetchedFrom": "https://web.archive.org/web/20260207175159id_/https://www.city.nishitokyo.lg.jp/sigikai/giin_meibo/kaiha_meibo.html"
+    },
+    {
+      "filename": "kaihakessei.html",
+      "sha256": "d9fa0e2113db69e90f8fd20058ce8e0edc07aae6f0a2a8b8e408a79f58ce7779",
+      "bytes": 22760,
+      "fetchedAt": "2026-10-08T23:58:42.425Z",
+      "fetchedFrom": "https://web.archive.org/web/20260221120042id_/https://www.city.nishitokyo.lg.jp/sigikai/gikai_topics/kaihakessei.html"
+    },
+    {
+      "filename": "kaikinainittei0801.html",
+      "sha256": "801f7f9d4de0281b7c90ef3b248fcc8a0e5ae3f6e350e2348e8535f9ca3b3ab2",
+      "bytes": 33386,
+      "fetchedAt": "2026-10-08T23:58:42.426Z",
+      "fetchedFrom": "https://www.city.nishitokyo.lg.jp/sigikai/nittei_kekka/nittei_anken/r8/kaikinainittei0801.html"
+    },
+    {
+      "filename": "no114all.pdf",
+      "sha256": "d54432f6f217767514ce7c061e5a12ef8e091bd5b283919627456c9856a5d31b",
+      "bytes": 5112419,
+      "fetchedAt": "2026-10-08T23:58:42.432Z",
+      "fetchedFrom": "https://www.city.nishitokyo.lg.jp/sigikai/johokoukai/tayori/gikaihou114.files/no114all.pdf"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "sourceId": "hadano-shigikai-r8",
+  "files": [
+    {
+      "filename": "kaihaichiranhyou20260206.pdf",
+      "sha256": "c604ca5d78f4d59336dec83eb12ce7e17a5b57cf465b397243d47e9791276da0",
+      "bytes": 73459,
+      "fetchedAt": "2026-10-08T23:58:42.457Z",
+      "fetchedFrom": "https://web.archive.org/web/20260207040307id_/https://www.city.hadano.kanagawa.jp/material/files/group/70/kaihaichiranhyou20260206.pdf"
+    },
+    {
+      "filename": "gikaikousei20260118.pdf",
+      "sha256": "5f0000bbf236b1a375808bee2b91684341017643037d3b355d3d7ad51db46161",
+      "bytes": 151052,
+      "fetchedAt": "2026-10-08T23:58:42.458Z",
+      "fetchedFrom": "https://web.archive.org/web/20260207040259id_/https://www.city.hadano.kanagawa.jp/material/files/group/70/gikaikousei20260118.pdf"
+    },
+    {
+      "filename": "260zenmenQR.pdf",
+      "sha256": "14d642d59b185b6f003365366442d02987104379dfca937ffcf726d0a5fe7144",
+      "bytes": 6668313,
+      "fetchedAt": "2026-10-08T23:58:42.463Z",
+      "fetchedFrom": "https://www.city.hadano.kanagawa.jp/material/files/group/70/260zenmenQR.pdf"
+    },
+    {
+      "filename": "12733.html",
+      "sha256": "518b928989897ee40db72e251f08b9cdc652b33f5d8a21d8dc820be9c5487664",
+      "bytes": 95715,
+      "fetchedAt": "2026-10-08T23:58:42.464Z",
+      "fetchedFrom": "https://www.city.hadano.kanagawa.jp/gikai/teireikai-rinjikai/2/16_1/12733.html"
+    },
+    {
+      "filename": "2872.html",
+      "sha256": "d59884a312be956869d67114583c58566328a27fd2c08051bc1030844c5ab1a7",
+      "bytes": 66877,
+      "fetchedAt": "2026-10-08T23:58:42.464Z",
+      "fetchedFrom": "https://www.city.hadano.kanagawa.jp/gikai/shigikainoshikumi/2872.html"
+    }
+  ]
+}

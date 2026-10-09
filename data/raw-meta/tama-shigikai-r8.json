@@ -1,0 +1,26 @@
+{
+  "sourceId": "tama-shigikai-r8",
+  "files": [
+    {
+      "filename": "1006619.html",
+      "sha256": "19833e451baad874061984dd30b6c630bd88e2aa5ece1f79e5db66003a3881cf",
+      "bytes": 32838,
+      "fetchedAt": "2026-10-08T23:58:42.423Z",
+      "fetchedFrom": "https://web.archive.org/web/20260313132653id_/https://www.city.tama.lg.jp/shigikai/giin/meibo/1006619.html"
+    },
+    {
+      "filename": "1019818.html",
+      "sha256": "ec241bed34370ef26b040cf3fea977826e42c9e252d00203de4ea74cab9209c7",
+      "bytes": 43669,
+      "fetchedAt": "2026-10-08T23:58:42.424Z",
+      "fetchedFrom": "https://www.city.tama.lg.jp/shigikai/kaigi/kekka/1019561/1019818.html"
+    },
+    {
+      "filename": "249Part16.pdf",
+      "sha256": "9903261a1ba26911e0828c59e69ff25988f6b83cb8ef0d729c50e639786cef82",
+      "bytes": 292178,
+      "fetchedAt": "2026-10-08T23:58:42.425Z",
+      "fetchedFrom": "https://www.city.tama.lg.jp/_res/projects/default_project/_page_/001/019/947/249Part16.pdf"
+    }
+  ]
+}

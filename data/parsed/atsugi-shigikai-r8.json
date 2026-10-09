@@ -1,0 +1,340 @@
+{
+  "docType": "council-composition",
+  "sourceId": "atsugi-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.3",
+  "parsedAt": "2026-10-09T01:16:40.616Z",
+  "fiscalYear": "R8",
+  "body": "厚木市議会",
+  "seats": 28,
+  "asOf": "2026-03-17",
+  "teisu": 28,
+  "factions": [
+    {
+      "name": "ネクストあつぎ",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "髙橋豊",
+        "神子雅人",
+        "瀧口慎太郎",
+        "田口孝男",
+        "奈良直史",
+        "山口保子",
+        "堀江克己"
+      ],
+      "locator": {
+        "file": "080317votingresult.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "川口仁",
+        "寺岡まゆみ",
+        "遠藤浩一",
+        "山﨑由枝",
+        "白川美作江"
+      ],
+      "locator": {
+        "file": "080317votingresult.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "あつぎみらい",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "渡辺貞雄",
+        "松田則康",
+        "松本樹影"
+      ],
+      "locator": {
+        "file": "080317votingresult.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "あつぎの会",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "名切文梨",
+        "髙田昌慶",
+        "高橋伸也"
+      ],
+      "locator": {
+        "file": "080317votingresult.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "新政あつぎ",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "髙橋知己",
+        "望月真実",
+        "髙村真和"
+      ],
+      "locator": {
+        "file": "080317votingresult.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "きずな",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "石井芳隆",
+        "井上武"
+      ],
+      "locator": {
+        "file": "080317votingresult.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "あつぎ一新",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "いわさきかずや",
+        "小島まさひろ"
+      ],
+      "locator": {
+        "file": "080317votingresult.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無会派（髙田浩）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "髙田浩"
+      ],
+      "locator": {
+        "file": "080317votingresult.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無会派（栗山香代子）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "栗山香代子"
+      ],
+      "locator": {
+        "file": "080317votingresult.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無会派（津森英里花）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "津森英里花"
+      ],
+      "locator": {
+        "file": "080317votingresult.pdf",
+        "page": 1
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第27号",
+    "billName": "令和8年度厚木市一般会計予算",
+    "sessionLabel": "令和8年厚木市議会第2回会議（2月定例会議）",
+    "decidedDate": "2026-03-17",
+    "decidedDateLabel": "令和8年3月17日",
+    "result": "可決",
+    "locator": {
+      "file": "51317.html"
+    }
+  },
+  "rosterTitle": "令和８年厚木市議会第２回会議（２月定例会議）における議案の審議結果一覧（議員別表決結果）の会派名・議員名の欄（3月17日議決）",
+  "resultTitle": "令和8年厚木市議会第2回会議(2月定例会議)の議決結果及び議員別表決結果",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "令和８年厚木市議会第２回会議（２月定例会議）における議案の審議結果一覧（議員別表決結果）",
+    "sourceFile": "080317votingresult.pdf",
+    "columns": [
+      {
+        "label": "髙橋豊",
+        "faction": "ネクストあつぎ",
+        "member": "髙橋豊",
+        "stance": "賛成"
+      },
+      {
+        "label": "神子雅人",
+        "faction": "ネクストあつぎ",
+        "member": "神子雅人",
+        "stance": "賛成"
+      },
+      {
+        "label": "田口孝男",
+        "faction": "ネクストあつぎ",
+        "member": "田口孝男",
+        "stance": "賛成"
+      },
+      {
+        "label": "奈良直史",
+        "faction": "ネクストあつぎ",
+        "member": "奈良直史",
+        "stance": "賛成"
+      },
+      {
+        "label": "山口保子",
+        "faction": "ネクストあつぎ",
+        "member": "山口保子",
+        "stance": "賛成"
+      },
+      {
+        "label": "堀江克己",
+        "faction": "ネクストあつぎ",
+        "member": "堀江克己",
+        "stance": "賛成"
+      },
+      {
+        "label": "川口仁",
+        "faction": "公明党",
+        "member": "川口仁",
+        "stance": "賛成"
+      },
+      {
+        "label": "寺岡まゆみ",
+        "faction": "公明党",
+        "member": "寺岡まゆみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "遠藤浩一",
+        "faction": "公明党",
+        "member": "遠藤浩一",
+        "stance": "賛成"
+      },
+      {
+        "label": "山﨑由枝",
+        "faction": "公明党",
+        "member": "山﨑由枝",
+        "stance": "賛成"
+      },
+      {
+        "label": "白川美作江",
+        "faction": "公明党",
+        "member": "白川美作江",
+        "stance": "賛成"
+      },
+      {
+        "label": "渡辺貞雄",
+        "faction": "あつぎみらい",
+        "member": "渡辺貞雄",
+        "stance": "賛成"
+      },
+      {
+        "label": "松田則康",
+        "faction": "あつぎみらい",
+        "member": "松田則康",
+        "stance": "賛成"
+      },
+      {
+        "label": "松本樹影",
+        "faction": "あつぎみらい",
+        "member": "松本樹影",
+        "stance": "欠席"
+      },
+      {
+        "label": "名切文梨",
+        "faction": "あつぎの会",
+        "member": "名切文梨",
+        "stance": "賛成"
+      },
+      {
+        "label": "髙田昌慶",
+        "faction": "あつぎの会",
+        "member": "髙田昌慶",
+        "stance": "賛成"
+      },
+      {
+        "label": "高橋伸也",
+        "faction": "あつぎの会",
+        "member": "高橋伸也",
+        "stance": "賛成"
+      },
+      {
+        "label": "髙橋知己",
+        "faction": "新政あつぎ",
+        "member": "髙橋知己",
+        "stance": "賛成"
+      },
+      {
+        "label": "望月真実",
+        "faction": "新政あつぎ",
+        "member": "望月真実",
+        "stance": "賛成"
+      },
+      {
+        "label": "髙村真和",
+        "faction": "新政あつぎ",
+        "member": "髙村真和",
+        "stance": "賛成"
+      },
+      {
+        "label": "石井芳隆",
+        "faction": "きずな",
+        "member": "石井芳隆",
+        "stance": "賛成"
+      },
+      {
+        "label": "井上武",
+        "faction": "きずな",
+        "member": "井上武",
+        "stance": "賛成"
+      },
+      {
+        "label": "いわさきかずや",
+        "faction": "あつぎ一新",
+        "member": "いわさきかずや",
+        "stance": "賛成"
+      },
+      {
+        "label": "小島まさひろ",
+        "faction": "あつぎ一新",
+        "member": "小島まさひろ",
+        "stance": "賛成"
+      },
+      {
+        "label": "髙田浩",
+        "faction": "無会派（髙田浩）",
+        "member": "髙田浩",
+        "stance": "賛成"
+      },
+      {
+        "label": "栗山香代子",
+        "faction": "無会派（栗山香代子）",
+        "member": "栗山香代子",
+        "stance": "反対"
+      },
+      {
+        "label": "津森英里花",
+        "faction": "無会派（津森英里花）",
+        "member": "津森英里花",
+        "stance": "賛成"
+      },
+      {
+        "label": "瀧口慎太郎",
+        "faction": "ネクストあつぎ",
+        "member": "瀧口慎太郎",
+        "stance": "議長"
+      }
+    ]
+  }
+}

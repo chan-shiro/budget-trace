@@ -1,0 +1,33 @@
+{
+  "sourceId": "chofu-shigikai-r8",
+  "files": [
+    {
+      "filename": "p077028.html",
+      "sha256": "3be25209c374c58350db0d39a630bd1a597574ce99fb665303b4c8252b45f12d",
+      "bytes": 17359,
+      "fetchedAt": "2026-10-08T23:58:42.400Z",
+      "fetchedFrom": "https://web.archive.org/web/20260412201947id_/https://www.city.chofu.lg.jp/140010/p077028.html"
+    },
+    {
+      "filename": "265-12.pdf",
+      "sha256": "e9e1c5c73058e087aa4bb15992d0dbd0b7edfaabcaacbd9e6d5700bdafb215a4",
+      "bytes": 690046,
+      "fetchedAt": "2026-10-08T23:58:42.402Z",
+      "fetchedFrom": "https://www.city.chofu.lg.jp/documents/17083/265-12.pdf"
+    },
+    {
+      "filename": "p077265.html",
+      "sha256": "63636131f94706573d05159a748c9592ad5b03d6731b427289f2ba2c64b63a0f",
+      "bytes": 49703,
+      "fetchedAt": "2026-10-08T23:58:42.402Z",
+      "fetchedFrom": "https://www.city.chofu.lg.jp/140010/p077265.html"
+    },
+    {
+      "filename": "p077010.html",
+      "sha256": "7e4c7b731f264d5151e8c0ac4a8efff43888fcac6f3571a7e24fc7821c40d67c",
+      "bytes": 17430,
+      "fetchedAt": "2026-10-08T23:58:42.403Z",
+      "fetchedFrom": "https://www.city.chofu.lg.jp/140010/p077010.html"
+    }
+  ]
+}

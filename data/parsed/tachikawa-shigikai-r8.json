@@ -1,0 +1,164 @@
+{
+  "docType": "council-composition",
+  "sourceId": "tachikawa-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.3",
+  "parsedAt": "2026-10-09T01:17:16.240Z",
+  "fiscalYear": "R8",
+  "body": "立川市議会",
+  "seats": 24,
+  "asOf": "2025-06-25",
+  "factions": [
+    {
+      "name": "公明党",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "山本みちよ",
+        "門倉正子",
+        "大沢純一",
+        "瀬順弘",
+        "伊藤幸秀",
+        "福島正美",
+        "高口靖彦"
+      ],
+      "locator": {
+        "file": "1021861.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "中町聡",
+        "浅川修一",
+        "若木早苗",
+        "上條彰一",
+        "永元香子"
+      ],
+      "locator": {
+        "file": "1021861.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "立憲ネット緑たちかわ",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "わたなべ忠司",
+        "稲橋ゆみ子",
+        "山本洋輔",
+        "原ゆき",
+        "あべみさ"
+      ],
+      "locator": {
+        "file": "1021861.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "会派を構成しない議員",
+      "seats": 7,
+      "isIndependent": true,
+      "members": [
+        "中山ひと美",
+        "大石ふみお",
+        "頭山太郎",
+        "江口元気",
+        "粂川敏男",
+        "いしとびかおり",
+        "髙畠奈美"
+      ],
+      "locator": {
+        "file": "1021861.html",
+        "row": 4
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第2号",
+    "billName": "令和8年度立川市一般会計予算",
+    "sessionLabel": "令和8年第1回定例会",
+    "decidedDate": "2026-03-24",
+    "decidedDateLabel": "令和8年3月24日",
+    "result": "可決",
+    "locator": {
+      "file": "1026380.html"
+    }
+  },
+  "rosterTitle": "会派・党派（更新日 2025年6月25日）",
+  "resultTitle": "令和8年第1回定例会議案一覧",
+  "votes": {
+    "basis": "faction",
+    "sourceTitle": "たちかわ市議会便り第342号（令和8年4月25日）各議案等に対する賛否",
+    "sourceFile": "342-8.pdf",
+    "columns": [
+      {
+        "label": "公明",
+        "faction": "公明党",
+        "stance": "賛成"
+      },
+      {
+        "label": "共産",
+        "faction": "日本共産党",
+        "stance": "賛成"
+      },
+      {
+        "label": "立･ネ･緑",
+        "faction": "立憲ネット緑たちかわ",
+        "stance": "賛成"
+      },
+      {
+        "label": "中山ひと美",
+        "faction": "会派を構成しない議員",
+        "member": "中山ひと美",
+        "stance": "賛成"
+      },
+      {
+        "label": "大石ふみお",
+        "faction": "会派を構成しない議員",
+        "member": "大石ふみお",
+        "stance": "賛成"
+      },
+      {
+        "label": "頭山太郎",
+        "faction": "会派を構成しない議員",
+        "member": "頭山太郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "江口元気",
+        "faction": "会派を構成しない議員",
+        "member": "江口元気",
+        "stance": "賛成"
+      },
+      {
+        "label": "粂川敏男",
+        "faction": "会派を構成しない議員",
+        "member": "粂川敏男",
+        "stance": "反対"
+      },
+      {
+        "label": "いしとびかおり",
+        "faction": "会派を構成しない議員",
+        "member": "いしとびかおり",
+        "stance": "賛成"
+      },
+      {
+        "label": "髙畠奈美",
+        "faction": "会派を構成しない議員",
+        "member": "髙畠奈美",
+        "stance": "賛成"
+      },
+      {
+        "label": "福島正美",
+        "faction": "公明党",
+        "member": "福島正美",
+        "stance": "議長"
+      }
+    ]
+  }
+}

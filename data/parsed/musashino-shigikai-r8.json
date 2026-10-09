@@ -1,0 +1,297 @@
+{
+  "docType": "council-composition",
+  "sourceId": "musashino-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.3",
+  "parsedAt": "2026-10-09T01:17:00.664Z",
+  "fiscalYear": "R8",
+  "body": "武蔵野市議会",
+  "seats": 25,
+  "asOf": "2025-10-31",
+  "factions": [
+    {
+      "name": "立憲民主ネット",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "川名ゆうじ",
+        "蔵野恵美子",
+        "菅源太郎",
+        "藪原太郎",
+        "西園寺みきこ",
+        "深沢達也"
+      ],
+      "locator": {
+        "file": "1001172.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "自由民主・市民クラブ",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "与座武",
+        "道場ひでのり",
+        "きくち由美子",
+        "木崎剛",
+        "山崎たかし"
+      ],
+      "locator": {
+        "file": "1001172.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "市議会公明党",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "落合勝利",
+        "大野あつ子",
+        "浜田けい子"
+      ],
+      "locator": {
+        "file": "1001172.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "日本共産党武蔵野市議団",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "本間まさよ",
+        "橋本しげき",
+        "三島杉子"
+      ],
+      "locator": {
+        "file": "1001172.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "日本維新の会武蔵野市議団",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "深田貴美子",
+        "東山あきお"
+      ],
+      "locator": {
+        "file": "1001172.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "ワクワクはたらく",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "宮代一利",
+        "本多夏帆"
+      ],
+      "locator": {
+        "file": "1001172.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "無所属むさしの",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "さこうもみ",
+        "山本ひとみ"
+      ],
+      "locator": {
+        "file": "1001172.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "会派に属さない議員",
+      "seats": 2,
+      "isIndependent": true,
+      "members": [
+        "小林まさよし",
+        "下田ひろき"
+      ],
+      "locator": {
+        "file": "1001172.html",
+        "row": 8
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第24号",
+    "billName": "令和８年度武蔵野市一般会計予算",
+    "sessionLabel": "令和8年第1回定例会",
+    "decidedDate": "2026-03-27",
+    "decidedDateLabel": "令和8年3月27日",
+    "result": "可決",
+    "locator": {
+      "file": "r080327-2.pdf",
+      "page": 2
+    }
+  },
+  "rosterTitle": "武蔵野市議会会派名簿（会派別名簿・更新日 2025年10月31日）",
+  "resultTitle": "令和8年第1回定例会 本会議における審議結果",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "令和8年第1回定例会 本会議における審議結果",
+    "sourceFile": "r080327-2.pdf",
+    "columns": [
+      {
+        "label": "菅源太郎",
+        "faction": "立憲民主ネット",
+        "member": "菅源太郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "藪原太郎",
+        "faction": "立憲民主ネット",
+        "member": "藪原太郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "蔵野恵美子",
+        "faction": "立憲民主ネット",
+        "member": "蔵野恵美子",
+        "stance": "賛成"
+      },
+      {
+        "label": "西園寺みきこ",
+        "faction": "立憲民主ネット",
+        "member": "西園寺みきこ",
+        "stance": "退席"
+      },
+      {
+        "label": "川名ゆうじ",
+        "faction": "立憲民主ネット",
+        "member": "川名ゆうじ",
+        "stance": "賛成"
+      },
+      {
+        "label": "深沢達也",
+        "faction": "立憲民主ネット",
+        "member": "深沢達也",
+        "stance": "賛成"
+      },
+      {
+        "label": "道場ひでのり",
+        "faction": "自由民主・市民クラブ",
+        "member": "道場ひでのり",
+        "stance": "賛成"
+      },
+      {
+        "label": "きくち由美子",
+        "faction": "自由民主・市民クラブ",
+        "member": "きくち由美子",
+        "stance": "賛成"
+      },
+      {
+        "label": "木崎剛",
+        "faction": "自由民主・市民クラブ",
+        "member": "木崎剛",
+        "stance": "議長"
+      },
+      {
+        "label": "山崎たかし",
+        "faction": "自由民主・市民クラブ",
+        "member": "山崎たかし",
+        "stance": "賛成"
+      },
+      {
+        "label": "与座武",
+        "faction": "自由民主・市民クラブ",
+        "member": "与座武",
+        "stance": "賛成"
+      },
+      {
+        "label": "大野あつ子",
+        "faction": "市議会公明党",
+        "member": "大野あつ子",
+        "stance": "賛成"
+      },
+      {
+        "label": "浜田けい子",
+        "faction": "市議会公明党",
+        "member": "浜田けい子",
+        "stance": "賛成"
+      },
+      {
+        "label": "落合勝利",
+        "faction": "市議会公明党",
+        "member": "落合勝利",
+        "stance": "賛成"
+      },
+      {
+        "label": "橋本しげき",
+        "faction": "日本共産党武蔵野市議団",
+        "member": "橋本しげき",
+        "stance": "反対"
+      },
+      {
+        "label": "三島杉子",
+        "faction": "日本共産党武蔵野市議団",
+        "member": "三島杉子",
+        "stance": "反対"
+      },
+      {
+        "label": "本間まさよ",
+        "faction": "日本共産党武蔵野市議団",
+        "member": "本間まさよ",
+        "stance": "反対"
+      },
+      {
+        "label": "深田貴美子",
+        "faction": "日本維新の会武蔵野市議団",
+        "member": "深田貴美子",
+        "stance": "反対"
+      },
+      {
+        "label": "東山あきお",
+        "faction": "日本維新の会武蔵野市議団",
+        "member": "東山あきお",
+        "stance": "反対"
+      },
+      {
+        "label": "宮代一利",
+        "faction": "ワクワクはたらく",
+        "member": "宮代一利",
+        "stance": "賛成"
+      },
+      {
+        "label": "本多夏帆",
+        "faction": "ワクワクはたらく",
+        "member": "本多夏帆",
+        "stance": "賛成"
+      },
+      {
+        "label": "さこうもみ",
+        "faction": "無所属むさしの",
+        "member": "さこうもみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "山本ひとみ",
+        "faction": "無所属むさしの",
+        "member": "山本ひとみ",
+        "stance": "反対"
+      },
+      {
+        "label": "小林まさよし",
+        "faction": "会派に属さない議員",
+        "member": "小林まさよし",
+        "stance": "賛成"
+      },
+      {
+        "label": "下田ひろき",
+        "faction": "会派に属さない議員",
+        "member": "下田ひろき",
+        "stance": "反対"
+      }
+    ]
+  }
+}

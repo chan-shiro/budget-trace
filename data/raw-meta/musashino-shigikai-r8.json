@@ -1,0 +1,33 @@
+{
+  "sourceId": "musashino-shigikai-r8",
+  "files": [
+    {
+      "filename": "1001172.html",
+      "sha256": "a0f7980e7acfa2f7bb3c657a0eb76f44480ba48b5153d19238ef2ebdd448d08c",
+      "bytes": 37325,
+      "fetchedAt": "2026-10-08T23:58:42.390Z",
+      "fetchedFrom": "https://www.city.musashino.lg.jp/shigikai/giin/1001172.html"
+    },
+    {
+      "filename": "r080327-2.pdf",
+      "sha256": "8a478bf65033d792d7a177b17a8103c7bd070f8d49ed6280f896e799b0a5e4f6",
+      "bytes": 245024,
+      "fetchedAt": "2026-10-08T23:58:42.391Z",
+      "fetchedFrom": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/001/444/r080327-2.pdf"
+    },
+    {
+      "filename": "1053667.html",
+      "sha256": "e9f19f862e58598972bc642a1935b6c513eeb0d046901bd5eb237a9e0fc61a0f",
+      "bytes": 57717,
+      "fetchedAt": "2026-10-08T23:58:42.391Z",
+      "fetchedFrom": "https://www.city.musashino.lg.jp/shigikai/gian_seigan_chinzyo/shichogian/1053667.html"
+    },
+    {
+      "filename": "1053870.html",
+      "sha256": "4936ae4a0119ed6d381175aa8ca21937ee35d86c04724dd71f2081bc2c7a568f",
+      "bytes": 41728,
+      "fetchedAt": "2026-10-08T23:58:42.392Z",
+      "fetchedFrom": "https://www.city.musashino.lg.jp/shigikai/kaigi_kekka/teireikai_rinjikai_kekka/1053870.html"
+    }
+  ]
+}

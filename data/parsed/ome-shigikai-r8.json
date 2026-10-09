@@ -1,0 +1,267 @@
+{
+  "docType": "council-composition",
+  "sourceId": "ome-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.3",
+  "parsedAt": "2026-10-09T01:17:06.804Z",
+  "fiscalYear": "R8",
+  "body": "青梅市議会",
+  "seats": 24,
+  "asOf": "2025-05-13",
+  "factions": [
+    {
+      "name": "自民クラブ",
+      "seats": 11,
+      "isIndependent": false,
+      "members": [
+        "中野芳則",
+        "山田紀之",
+        "寺島和成",
+        "山﨑哲男",
+        "阿部悦博",
+        "迫田晃樹",
+        "山田敏夫",
+        "島﨑実",
+        "山﨑勝",
+        "鴨居たかやす",
+        "久保富弘"
+      ],
+      "locator": {
+        "file": "50389.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "長谷川真弓",
+        "湖城宣子",
+        "山内公美子",
+        "鴻井伸二",
+        "野島資雄"
+      ],
+      "locator": {
+        "file": "50389.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "市民フォーラム青梅・都民ファーストの会",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "目黒えり",
+        "山﨑善信",
+        "片谷洋夫"
+      ],
+      "locator": {
+        "file": "50389.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "日本共産党青梅市議団",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "井上たかし",
+        "みねざき拓実",
+        "藤野ひろえ"
+      ],
+      "locator": {
+        "file": "50389.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "立憲民主党",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "ぬのや和代"
+      ],
+      "locator": {
+        "file": "50389.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "日本維新の会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "茂木亮輔"
+      ],
+      "locator": {
+        "file": "50389.html",
+        "row": 6
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議75",
+    "billName": "令和8年度青梅市一般会計予算",
+    "sessionLabel": "令和7年市議会定例会令和8年2月定例議会",
+    "decidedDate": "2026-03-26",
+    "decidedDateLabel": "令和8年3月26日",
+    "result": "原案可決",
+    "locator": {
+      "file": "115363.html"
+    }
+  },
+  "rosterTitle": "議員名簿（議席番号順・更新日 2025年5月13日）",
+  "resultTitle": "議案審議結果一覧（令和7年市議会定例会令和8年2月定例議会）",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "各議員の表決結果（令和7年市議会定例会令和８年2月定例議会）",
+    "sourceFile": "78963.pdf",
+    "columns": [
+      {
+        "label": "中野芳則",
+        "faction": "自民クラブ",
+        "member": "中野芳則",
+        "stance": "賛成"
+      },
+      {
+        "label": "山田紀之",
+        "faction": "自民クラブ",
+        "member": "山田紀之",
+        "stance": "賛成"
+      },
+      {
+        "label": "寺島和成",
+        "faction": "自民クラブ",
+        "member": "寺島和成",
+        "stance": "賛成"
+      },
+      {
+        "label": "茂木亮輔",
+        "faction": "日本維新の会",
+        "member": "茂木亮輔",
+        "stance": "賛成"
+      },
+      {
+        "label": "井上たかし",
+        "faction": "日本共産党青梅市議団",
+        "member": "井上たかし",
+        "stance": "賛成"
+      },
+      {
+        "label": "ぬのや和代",
+        "faction": "立憲民主党",
+        "member": "ぬのや和代",
+        "stance": "賛成"
+      },
+      {
+        "label": "みねざき拓実",
+        "faction": "日本共産党青梅市議団",
+        "member": "みねざき拓実",
+        "stance": "賛成"
+      },
+      {
+        "label": "藤野ひろえ",
+        "faction": "日本共産党青梅市議団",
+        "member": "藤野ひろえ",
+        "stance": "賛成"
+      },
+      {
+        "label": "目黒えり",
+        "faction": "市民フォーラム青梅・都民ファーストの会",
+        "member": "目黒えり",
+        "stance": "賛成"
+      },
+      {
+        "label": "山﨑善信",
+        "faction": "市民フォーラム青梅・都民ファーストの会",
+        "member": "山﨑善信",
+        "stance": "賛成"
+      },
+      {
+        "label": "片谷洋夫",
+        "faction": "市民フォーラム青梅・都民ファーストの会",
+        "member": "片谷洋夫",
+        "stance": "賛成"
+      },
+      {
+        "label": "長谷川真弓",
+        "faction": "公明党",
+        "member": "長谷川真弓",
+        "stance": "賛成"
+      },
+      {
+        "label": "山﨑哲男",
+        "faction": "自民クラブ",
+        "member": "山﨑哲男",
+        "stance": "賛成"
+      },
+      {
+        "label": "阿部悦博",
+        "faction": "自民クラブ",
+        "member": "阿部悦博",
+        "stance": "賛成"
+      },
+      {
+        "label": "迫田晃樹",
+        "faction": "自民クラブ",
+        "member": "迫田晃樹",
+        "stance": "賛成"
+      },
+      {
+        "label": "山田敏夫",
+        "faction": "自民クラブ",
+        "member": "山田敏夫",
+        "stance": "賛成"
+      },
+      {
+        "label": "島﨑実",
+        "faction": "自民クラブ",
+        "member": "島﨑実",
+        "stance": "賛成"
+      },
+      {
+        "label": "鴨居たかやす",
+        "faction": "自民クラブ",
+        "member": "鴨居たかやす",
+        "stance": "賛成"
+      },
+      {
+        "label": "久保富弘",
+        "faction": "自民クラブ",
+        "member": "久保富弘",
+        "stance": "賛成"
+      },
+      {
+        "label": "湖城宣子",
+        "faction": "公明党",
+        "member": "湖城宣子",
+        "stance": "賛成"
+      },
+      {
+        "label": "山内公美子",
+        "faction": "公明党",
+        "member": "山内公美子",
+        "stance": "賛成"
+      },
+      {
+        "label": "鴻井伸二",
+        "faction": "公明党",
+        "member": "鴻井伸二",
+        "stance": "賛成"
+      },
+      {
+        "label": "野島資雄",
+        "faction": "公明党",
+        "member": "野島資雄",
+        "stance": "賛成"
+      },
+      {
+        "label": "山﨑勝",
+        "faction": "自民クラブ",
+        "member": "山﨑勝",
+        "stance": "議長"
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "sourceId": "higashikurume-shigikai-r8",
+  "files": [
+    {
+      "filename": "1004008.html",
+      "sha256": "6819b2bd289411c16b955320e0d3bb6e9de06eb3276116af841086ba8ae4dd99",
+      "bytes": 13745,
+      "fetchedAt": "2026-10-08T23:58:42.422Z",
+      "fetchedFrom": "https://web.archive.org/web/20260211033928id_/https://www.city.higashikurume.lg.jp/gikai/1006951/1004008.html"
+    },
+    {
+      "filename": "1028672.html",
+      "sha256": "8b6726c1d52400bffae61a1ea1f19e923e0efba901dadec8602bd75bf675eaf8",
+      "bytes": 33188,
+      "fetchedAt": "2026-10-08T23:58:42.422Z",
+      "fetchedFrom": "https://www.city.higashikurume.lg.jp/gikai/kaigi/kekka/1028663/1028672.html"
+    },
+    {
+      "filename": "1000105.html",
+      "sha256": "a0c0884fb6e66aae586d456ee8a9487982505c0436d9e3f2b2ae2d67aaeb04da",
+      "bytes": 15382,
+      "fetchedAt": "2026-10-08T23:58:42.423Z",
+      "fetchedFrom": "https://www.city.higashikurume.lg.jp/gikai/aramashi/1000105.html"
+    }
+  ]
+}

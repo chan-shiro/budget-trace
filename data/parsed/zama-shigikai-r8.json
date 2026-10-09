@@ -1,0 +1,158 @@
+{
+  "docType": "council-composition",
+  "sourceId": "zama-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.3",
+  "parsedAt": "2026-10-09T01:17:20.300Z",
+  "fiscalYear": "R8",
+  "body": "座間市議会",
+  "seats": 22,
+  "asOf": "2025-10-01",
+  "factions": [
+    {
+      "name": "座間市公明党",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "伊藤多華",
+        "加藤学",
+        "鈴木一寿",
+        "髙栁浩子"
+      ],
+      "locator": {
+        "file": "1005884.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "日本共産党座間市議団",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "守谷浩一",
+        "星野久美子"
+      ],
+      "locator": {
+        "file": "1005884.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "新政いさま",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "京免康彦",
+        "荻原健司",
+        "美濃口集",
+        "大矢新一郎"
+      ],
+      "locator": {
+        "file": "1005884.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "自由民主党座間市議団",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "吉田義人",
+        "竹田陽介",
+        "熊切和人",
+        "髙波貴志",
+        "内藤幸男"
+      ],
+      "locator": {
+        "file": "1005884.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "あおぞらひまわりの会",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "松橋淳郎",
+        "星野郁"
+      ],
+      "locator": {
+        "file": "1005884.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "会派に属さない議員",
+      "seats": 5,
+      "isIndependent": true,
+      "members": [
+        "沖永明久",
+        "安海のぞみ",
+        "長瀨未紗",
+        "片岡将志",
+        "馬場佳陽"
+      ],
+      "locator": {
+        "file": "1005884.html",
+        "row": 6
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "10",
+    "billName": "令和８年度座間市一般会計予算",
+    "sessionLabel": "3月定例会",
+    "decidedDate": "2026-03-24",
+    "decidedDateLabel": "令和8年3月24日",
+    "result": "原案可決",
+    "locator": {
+      "file": "202605158men.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "市議会議員名簿(会派別)（令和7年10月1日現在）",
+  "resultTitle": "市議会だより令和8年5月15日号 3月定例会の審議結果",
+  "votes": {
+    "basis": "faction",
+    "sourceTitle": "市議会だより令和8年5月15日号 3月定例会の審議結果（各会派等の賛否）",
+    "sourceFile": "202605158men.pdf",
+    "columns": [
+      {
+        "label": "公明",
+        "faction": "座間市公明党",
+        "stance": "賛成"
+      },
+      {
+        "label": "共産",
+        "faction": "日本共産党座間市議団",
+        "stance": "反対"
+      },
+      {
+        "label": "新政",
+        "faction": "新政いさま",
+        "stance": "賛成"
+      },
+      {
+        "label": "自民",
+        "faction": "自由民主党座間市議団",
+        "stance": "賛成"
+      },
+      {
+        "label": "あおぞら",
+        "faction": "あおぞらひまわりの会",
+        "stance": "賛成"
+      },
+      {
+        "label": "無会",
+        "faction": "会派に属さない議員",
+        "stance": "賛成"
+      },
+      {
+        "label": "松橋淳郎",
+        "faction": "あおぞらひまわりの会",
+        "member": "松橋淳郎",
+        "stance": "議長"
+      }
+    ]
+  }
+}

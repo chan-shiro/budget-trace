@@ -1,0 +1,328 @@
+{
+  "docType": "council-composition",
+  "sourceId": "fuchu-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.3",
+  "parsedAt": "2026-10-09T01:16:46.123Z",
+  "fiscalYear": "R8",
+  "body": "府中市議会",
+  "seats": 28,
+  "asOf": "2025-07-01",
+  "factions": [
+    {
+      "name": "府中市議会市政会",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "松村祐樹",
+        "秋山としゆき",
+        "おぎの雄太郎",
+        "宮田よしひと",
+        "大室はじめ",
+        "佐藤新悟",
+        "横田実",
+        "比留間利蔵"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "府中市議会市民フォーラム（立憲民主党・都民ファーストの会・無所属）",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "渡辺しょう",
+        "稲津憲護",
+        "前川浩子",
+        "にしみや幸一",
+        "手塚としひさ"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "公明府中",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "西村陸",
+        "坂本けんいち",
+        "福田千夏",
+        "髙津みどり",
+        "奈良﨑久和"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "自由クラブ",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "ゆうきりょう",
+        "山本真実",
+        "杉村康之",
+        "そなえ邦彦"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "日本共産党府中市議団",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "竹内祐子",
+        "からさわ地平"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "日本維新の会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "えもとひろあき"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "生活者ネットワーク",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "奥村さち子"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "無所属（西のなおみ）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "西のなおみ"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "れいわ野口なかおと仲間たち",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "野口なかお"
+      ],
+      "locator": {
+        "file": "kaiha.html",
+        "row": 9
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "28",
+    "billName": "令和8年度府中市一般会計予算",
+    "sessionLabel": "令和８年第１回定例会",
+    "decidedDate": "2026-03-16",
+    "decidedDateLabel": "令和8年3月16日",
+    "result": "可決",
+    "locator": {
+      "file": "r8dai1kaigiketukekka.html"
+    }
+  },
+  "rosterTitle": "会派（更新日 2025年7月1日）",
+  "resultTitle": "令和8年第1回定例会 議案議決結果一覧",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "ふちゅう市議会だより第329号（令和8年4月29日発行）賛否が分かれた議案",
+    "sourceFile": "fuchu-shigikaidayori_329.pdf",
+    "columns": [
+      {
+        "label": "おぎの雄太郎",
+        "faction": "府中市議会市政会",
+        "member": "おぎの雄太郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "宮田よしひと",
+        "faction": "府中市議会市政会",
+        "member": "宮田よしひと",
+        "stance": "賛成"
+      },
+      {
+        "label": "大室はじめ",
+        "faction": "府中市議会市政会",
+        "member": "大室はじめ",
+        "stance": "賛成"
+      },
+      {
+        "label": "秋山としゆき",
+        "faction": "府中市議会市政会",
+        "member": "秋山としゆき",
+        "stance": "賛成"
+      },
+      {
+        "label": "松村祐樹",
+        "faction": "府中市議会市政会",
+        "member": "松村祐樹",
+        "stance": "賛成"
+      },
+      {
+        "label": "横田実",
+        "faction": "府中市議会市政会",
+        "member": "横田実",
+        "stance": "賛成"
+      },
+      {
+        "label": "比留間利蔵",
+        "faction": "府中市議会市政会",
+        "member": "比留間利蔵",
+        "stance": "賛成"
+      },
+      {
+        "label": "前川浩子",
+        "faction": "府中市議会市民フォーラム（立憲民主党・都民ファーストの会・無所属）",
+        "member": "前川浩子",
+        "stance": "賛成"
+      },
+      {
+        "label": "渡辺しょう",
+        "faction": "府中市議会市民フォーラム（立憲民主党・都民ファーストの会・無所属）",
+        "member": "渡辺しょう",
+        "stance": "賛成"
+      },
+      {
+        "label": "にしみや幸一",
+        "faction": "府中市議会市民フォーラム（立憲民主党・都民ファーストの会・無所属）",
+        "member": "にしみや幸一",
+        "stance": "賛成"
+      },
+      {
+        "label": "稲津憲護",
+        "faction": "府中市議会市民フォーラム（立憲民主党・都民ファーストの会・無所属）",
+        "member": "稲津憲護",
+        "stance": "賛成"
+      },
+      {
+        "label": "手塚としひさ",
+        "faction": "府中市議会市民フォーラム（立憲民主党・都民ファーストの会・無所属）",
+        "member": "手塚としひさ",
+        "stance": "賛成"
+      },
+      {
+        "label": "坂本けんいち",
+        "faction": "公明府中",
+        "member": "坂本けんいち",
+        "stance": "賛成"
+      },
+      {
+        "label": "福田千夏",
+        "faction": "公明府中",
+        "member": "福田千夏",
+        "stance": "賛成"
+      },
+      {
+        "label": "髙津みどり",
+        "faction": "公明府中",
+        "member": "髙津みどり",
+        "stance": "賛成"
+      },
+      {
+        "label": "西村陸",
+        "faction": "公明府中",
+        "member": "西村陸",
+        "stance": "賛成"
+      },
+      {
+        "label": "奈良﨑久和",
+        "faction": "公明府中",
+        "member": "奈良﨑久和",
+        "stance": "賛成"
+      },
+      {
+        "label": "山本真実",
+        "faction": "自由クラブ",
+        "member": "山本真実",
+        "stance": "賛成"
+      },
+      {
+        "label": "ゆうきりょう",
+        "faction": "自由クラブ",
+        "member": "ゆうきりょう",
+        "stance": "賛成"
+      },
+      {
+        "label": "杉村康之",
+        "faction": "自由クラブ",
+        "member": "杉村康之",
+        "stance": "賛成"
+      },
+      {
+        "label": "そなえ邦彦",
+        "faction": "自由クラブ",
+        "member": "そなえ邦彦",
+        "stance": "賛成"
+      },
+      {
+        "label": "竹内祐子",
+        "faction": "日本共産党府中市議団",
+        "member": "竹内祐子",
+        "stance": "反対"
+      },
+      {
+        "label": "からさわ地平",
+        "faction": "日本共産党府中市議団",
+        "member": "からさわ地平",
+        "stance": "反対"
+      },
+      {
+        "label": "えもとひろあき",
+        "faction": "日本維新の会",
+        "member": "えもとひろあき",
+        "stance": "賛成"
+      },
+      {
+        "label": "奥村さち子",
+        "faction": "生活者ネットワーク",
+        "member": "奥村さち子",
+        "stance": "反対"
+      },
+      {
+        "label": "西のなおみ",
+        "faction": "無所属（西のなおみ）",
+        "member": "西のなおみ",
+        "stance": "反対"
+      },
+      {
+        "label": "野口なかお",
+        "faction": "れいわ野口なかおと仲間たち",
+        "member": "野口なかお",
+        "stance": "反対"
+      },
+      {
+        "label": "佐藤新悟",
+        "faction": "府中市議会市政会",
+        "member": "佐藤新悟",
+        "stance": "議長"
+      }
+    ]
+  }
+}

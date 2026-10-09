@@ -1,0 +1,364 @@
+{
+  "docType": "council-composition",
+  "sourceId": "machida-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.3",
+  "parsedAt": "2026-10-09T01:16:58.604Z",
+  "fiscalYear": "R8",
+  "body": "町田市議会",
+  "seats": 36,
+  "asOf": "2026-03-25",
+  "teisu": 36,
+  "factions": [
+    {
+      "name": "まちだみらい",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "森本せいや",
+        "イスレスつばさ",
+        "渡辺さとし",
+        "小野りゅうじ",
+        "佐藤和彦",
+        "笹倉みどり",
+        "今村るか"
+      ],
+      "locator": {
+        "file": "Kg81_HP_20260325_saiketsu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "選ばれる町田をつくる会",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "若林章喜",
+        "前田げんき",
+        "ばんないさき",
+        "白川哲也",
+        "渡辺厳太郎",
+        "岩瀬和子"
+      ],
+      "locator": {
+        "file": "Kg81_HP_20260325_saiketsu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "自由民主党・日本維新の会",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "加藤真彦",
+        "小沢タケル",
+        "おぜき重太郎",
+        "三遊亭らん丈",
+        "熊沢あやり",
+        "佐藤伸一郎"
+      ],
+      "locator": {
+        "file": "Kg81_HP_20260325_saiketsu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "松葉ひろみ",
+        "森じゅん子",
+        "馬部ゆきまさ",
+        "小野寺まなぶ",
+        "おんじょう由久"
+      ],
+      "locator": {
+        "file": "Kg81_HP_20260325_saiketsu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "細野龍子",
+        "大野まこと",
+        "田中みほ",
+        "殿村健一"
+      ],
+      "locator": {
+        "file": "Kg81_HP_20260325_saiketsu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "無所属",
+      "seats": 4,
+      "isIndependent": true,
+      "members": [
+        "松岡みゆき",
+        "はせがわ圭亮",
+        "新井よしなお",
+        "吉田つとむ"
+      ],
+      "locator": {
+        "file": "Kg81_HP_20260325_saiketsu.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "諸派",
+      "seats": 4,
+      "isIndependent": true,
+      "members": [
+        "うのつのぶこ",
+        "矢口まゆ",
+        "友井和彦",
+        "ふじた学"
+      ],
+      "locator": {
+        "file": "Kg81_HP_20260325_saiketsu.pdf",
+        "page": 1
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第9号議案",
+    "billName": "令和８年度（２０２６年度）町田市一般会計予算",
+    "sessionLabel": "令和８年（２０２６年）第１回定例会",
+    "decidedDate": "2026-03-25",
+    "decidedDateLabel": "令和8年3月25日",
+    "result": "可決",
+    "locator": {
+      "file": "Kg81_HP_20260325_saiketsu.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "令和８年（２０２６年）第１回定例会議案審議結果一覧表（列見出しの会派と議員）",
+  "resultTitle": "令和８年（２０２６年）第１回定例会議案審議結果一覧表",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "令和８年（２０２６年）第１回定例会議案審議結果一覧表",
+    "sourceFile": "Kg81_HP_20260325_saiketsu.pdf",
+    "columns": [
+      {
+        "label": "森本せいや",
+        "faction": "まちだみらい",
+        "member": "森本せいや",
+        "stance": "賛成"
+      },
+      {
+        "label": "イスレスつばさ",
+        "faction": "まちだみらい",
+        "member": "イスレスつばさ",
+        "stance": "賛成"
+      },
+      {
+        "label": "渡辺さとし",
+        "faction": "まちだみらい",
+        "member": "渡辺さとし",
+        "stance": "賛成"
+      },
+      {
+        "label": "小野りゅうじ",
+        "faction": "まちだみらい",
+        "member": "小野りゅうじ",
+        "stance": "賛成"
+      },
+      {
+        "label": "笹倉みどり",
+        "faction": "まちだみらい",
+        "member": "笹倉みどり",
+        "stance": "賛成"
+      },
+      {
+        "label": "今村るか",
+        "faction": "まちだみらい",
+        "member": "今村るか",
+        "stance": "賛成"
+      },
+      {
+        "label": "若林章喜",
+        "faction": "選ばれる町田をつくる会",
+        "member": "若林章喜",
+        "stance": "賛成"
+      },
+      {
+        "label": "前田げんき",
+        "faction": "選ばれる町田をつくる会",
+        "member": "前田げんき",
+        "stance": "賛成"
+      },
+      {
+        "label": "ばんないさき",
+        "faction": "選ばれる町田をつくる会",
+        "member": "ばんないさき",
+        "stance": "賛成"
+      },
+      {
+        "label": "白川哲也",
+        "faction": "選ばれる町田をつくる会",
+        "member": "白川哲也",
+        "stance": "賛成"
+      },
+      {
+        "label": "渡辺厳太郎",
+        "faction": "選ばれる町田をつくる会",
+        "member": "渡辺厳太郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "岩瀬和子",
+        "faction": "選ばれる町田をつくる会",
+        "member": "岩瀬和子",
+        "stance": "賛成"
+      },
+      {
+        "label": "加藤真彦",
+        "faction": "自由民主党・日本維新の会",
+        "member": "加藤真彦",
+        "stance": "賛成"
+      },
+      {
+        "label": "小沢タケル",
+        "faction": "自由民主党・日本維新の会",
+        "member": "小沢タケル",
+        "stance": "賛成"
+      },
+      {
+        "label": "おぜき重太郎",
+        "faction": "自由民主党・日本維新の会",
+        "member": "おぜき重太郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "三遊亭らん丈",
+        "faction": "自由民主党・日本維新の会",
+        "member": "三遊亭らん丈",
+        "stance": "賛成"
+      },
+      {
+        "label": "熊沢あやり",
+        "faction": "自由民主党・日本維新の会",
+        "member": "熊沢あやり",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐藤伸一郎",
+        "faction": "自由民主党・日本維新の会",
+        "member": "佐藤伸一郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "松葉ひろみ",
+        "faction": "公明党",
+        "member": "松葉ひろみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "森じゅん子",
+        "faction": "公明党",
+        "member": "森じゅん子",
+        "stance": "賛成"
+      },
+      {
+        "label": "馬部ゆきまさ",
+        "faction": "公明党",
+        "member": "馬部ゆきまさ",
+        "stance": "賛成"
+      },
+      {
+        "label": "小野寺まなぶ",
+        "faction": "公明党",
+        "member": "小野寺まなぶ",
+        "stance": "賛成"
+      },
+      {
+        "label": "おんじょう由久",
+        "faction": "公明党",
+        "member": "おんじょう由久",
+        "stance": "賛成"
+      },
+      {
+        "label": "細野龍子",
+        "faction": "日本共産党",
+        "member": "細野龍子",
+        "stance": "反対"
+      },
+      {
+        "label": "大野まこと",
+        "faction": "日本共産党",
+        "member": "大野まこと",
+        "stance": "反対"
+      },
+      {
+        "label": "田中みほ",
+        "faction": "日本共産党",
+        "member": "田中みほ",
+        "stance": "反対"
+      },
+      {
+        "label": "殿村健一",
+        "faction": "日本共産党",
+        "member": "殿村健一",
+        "stance": "反対"
+      },
+      {
+        "label": "松岡みゆき",
+        "faction": "無所属",
+        "member": "松岡みゆき",
+        "stance": "反対"
+      },
+      {
+        "label": "はせがわ圭亮",
+        "faction": "無所属",
+        "member": "はせがわ圭亮",
+        "stance": "反対"
+      },
+      {
+        "label": "新井よしなお",
+        "faction": "無所属",
+        "member": "新井よしなお",
+        "stance": "反対"
+      },
+      {
+        "label": "吉田つとむ",
+        "faction": "無所属",
+        "member": "吉田つとむ",
+        "stance": "反対"
+      },
+      {
+        "label": "うのつのぶこ",
+        "faction": "諸派",
+        "member": "うのつのぶこ",
+        "stance": "反対"
+      },
+      {
+        "label": "矢口まゆ",
+        "faction": "諸派",
+        "member": "矢口まゆ",
+        "stance": "賛成"
+      },
+      {
+        "label": "友井和彦",
+        "faction": "諸派",
+        "member": "友井和彦",
+        "stance": "賛成"
+      },
+      {
+        "label": "ふじた学",
+        "faction": "諸派",
+        "member": "ふじた学",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐藤和彦",
+        "faction": "まちだみらい",
+        "member": "佐藤和彦",
+        "stance": "議長"
+      }
+    ]
+  }
+}

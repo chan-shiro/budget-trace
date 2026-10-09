@@ -1,0 +1,181 @@
+{
+  "docType": "council-composition",
+  "sourceId": "hino-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.3",
+  "parsedAt": "2026-10-09T01:16:50.964Z",
+  "fiscalYear": "R8",
+  "body": "日野市議会",
+  "seats": 24,
+  "asOf": "2026-03-23",
+  "teisu": 24,
+  "factions": [
+    {
+      "name": "日野みらい",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "島谷広則",
+        "中嶋良樹",
+        "せきともこ",
+        "米内さとし",
+        "町田ゆい"
+      ],
+      "locator": {
+        "file": "1000889.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "自民党日野市議団と維新の会",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "奥住匡人",
+        "鈴木洋子",
+        "伊東秀章",
+        "伊藤あゆみ",
+        "田中翔"
+      ],
+      "locator": {
+        "file": "1000889.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "創る会",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "池田としえ",
+        "佐藤琢磨",
+        "吉澤あかね",
+        "まご田さやか"
+      ],
+      "locator": {
+        "file": "1000889.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "窪田知子",
+        "みねぎし弘行",
+        "小柳たかね"
+      ],
+      "locator": {
+        "file": "1000889.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "無会派",
+      "seats": 7,
+      "isIndependent": true,
+      "members": [
+        "西野正人",
+        "奥野りん子",
+        "新井ともはる",
+        "白井なおこ",
+        "あるが精一",
+        "ちかざわ美樹",
+        "成瀬厚"
+      ],
+      "locator": {
+        "file": "1000889.html",
+        "row": 5
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第30号",
+    "billName": "令和8年度日野市一般会計予算",
+    "sessionLabel": "令和8年第1回定例会",
+    "decidedDate": "2026-03-30",
+    "decidedDateLabel": "令和8年3月30日",
+    "result": "原案可決",
+    "locator": {
+      "file": "1030502.html"
+    }
+  },
+  "rosterTitle": "会派の構成と所属議員名簿（更新日 令和8年3月23日）",
+  "resultTitle": "令和8年第1回定例会 議案等審議結果一覧表",
+  "votes": {
+    "basis": "faction",
+    "sourceTitle": "ひの市議会だより第255号 6面 令和８年第１回定例会で議決した議案（賛否の分かれたもの）",
+    "sourceFile": "gikai-255-o6.pdf",
+    "columns": [
+      {
+        "label": "日野みらい",
+        "faction": "日野みらい",
+        "stance": "賛成"
+      },
+      {
+        "label": "維新の会",
+        "faction": "自民党日野市議団と維新の会",
+        "stance": "賛成"
+      },
+      {
+        "label": "創る会",
+        "faction": "創る会",
+        "stance": "賛成"
+      },
+      {
+        "label": "公明党",
+        "faction": "公明党",
+        "stance": "賛成"
+      },
+      {
+        "label": "成瀬厚",
+        "faction": "無会派",
+        "member": "成瀬厚",
+        "stance": "反対"
+      },
+      {
+        "label": "ちかざわ美樹",
+        "faction": "無会派",
+        "member": "ちかざわ美樹",
+        "stance": "反対"
+      },
+      {
+        "label": "あるが精一",
+        "faction": "無会派",
+        "member": "あるが精一",
+        "stance": "反対"
+      },
+      {
+        "label": "白井なおこ",
+        "faction": "無会派",
+        "member": "白井なおこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "新井ともはる",
+        "faction": "無会派",
+        "member": "新井ともはる",
+        "stance": "賛成"
+      },
+      {
+        "label": "奥野りん子",
+        "faction": "無会派",
+        "member": "奥野りん子",
+        "stance": "賛成"
+      },
+      {
+        "label": "西野正人",
+        "faction": "無会派",
+        "member": "西野正人",
+        "stance": "賛成"
+      },
+      {
+        "label": "中嶋良樹",
+        "faction": "日野みらい",
+        "member": "中嶋良樹",
+        "stance": "議長"
+      }
+    ]
+  }
+}

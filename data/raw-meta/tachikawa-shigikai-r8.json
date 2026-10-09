@@ -1,0 +1,33 @@
+{
+  "sourceId": "tachikawa-shigikai-r8",
+  "files": [
+    {
+      "filename": "1021861.html",
+      "sha256": "b9868cad16a9c53d0d3c0ea255452398da112b7d286a4de16ddccaf974d18ee6",
+      "bytes": 41945,
+      "fetchedAt": "2026-10-08T23:58:42.385Z",
+      "fetchedFrom": "https://web.archive.org/web/20260120122623id_/https://www.city.tachikawa.lg.jp/shigikai/shokai/1021861.html"
+    },
+    {
+      "filename": "1026380.html",
+      "sha256": "79109d55596a2e844d77eccd8f965cf13c0358984fa333d9ed226e91de728522",
+      "bytes": 71723,
+      "fetchedAt": "2026-10-08T23:58:42.387Z",
+      "fetchedFrom": "https://www.city.tachikawa.lg.jp/shigikai/katsudo/1007184/1026374/1026375/1026380.html"
+    },
+    {
+      "filename": "342-8.pdf",
+      "sha256": "c78ab3644e43f000b43ad004a73aa3f4851d84ef78227afa37605d85cdf7c8a5",
+      "bytes": 714937,
+      "fetchedAt": "2026-10-08T23:58:42.389Z",
+      "fetchedFrom": "https://www.city.tachikawa.lg.jp/_res/projects/default_project/_page_/001/027/149/342-8.pdf"
+    },
+    {
+      "filename": "1007606.html",
+      "sha256": "3d831b18b659b84d13f61fbd102ab6f2c560eff303d324a558e281770dc98187",
+      "bytes": 43355,
+      "fetchedAt": "2026-10-08T23:58:42.389Z",
+      "fetchedFrom": "https://web.archive.org/web/20251116090224id_/https://www.city.tachikawa.lg.jp/shigikai/gicho-fukugicho/1007606.html"
+    }
+  ]
+}

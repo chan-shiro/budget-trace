@@ -1,0 +1,40 @@
+{
+  "sourceId": "higashimurayama-shigikai-r8",
+  "files": [
+    {
+      "filename": "r8-03kekka.pdf",
+      "sha256": "6df09d3a710056538842d649966196c69745524712ae73ad034149ed75e523e5",
+      "bytes": 201151,
+      "fetchedAt": "2026-10-08T23:58:42.420Z",
+      "fetchedFrom": "https://www.city.higashimurayama.tokyo.jp/gikai/katsudo/gianseigansanpi/files/r8-03kekka.pdf"
+    },
+    {
+      "filename": "8-3shichougian.html",
+      "sha256": "05f98357ae4828bdbefd6b365ea2df82836747eb90058fa98e9583afa5247390",
+      "bytes": 44279,
+      "fetchedAt": "2026-10-08T23:58:42.420Z",
+      "fetchedFrom": "https://www.city.higashimurayama.tokyo.jp/gikai/katsudo/gikai_09_gian-kekka/r8/8-3shichougian.html"
+    },
+    {
+      "filename": "8shingikekka.html",
+      "sha256": "cb267ae2c2ccf604e9143c6130285bf04af7354a00147804797091e03e48d6f0",
+      "bytes": 21834,
+      "fetchedAt": "2026-10-08T23:58:42.421Z",
+      "fetchedFrom": "https://www.city.higashimurayama.tokyo.jp/gikai/katsudo/gianseigansanpi/8shingikekka.html"
+    },
+    {
+      "filename": "gikai20.html",
+      "sha256": "74376038fb5aab64e59e6741d9b3159fec4b2f8133982f7a3d19156eff4dd0a6",
+      "bytes": 22837,
+      "fetchedAt": "2026-10-08T23:58:42.421Z",
+      "fetchedFrom": "https://www.city.higashimurayama.tokyo.jp/gikai/shikumi/gikai20.html"
+    },
+    {
+      "filename": "gikai_03_giin-teisuu.html",
+      "sha256": "7998d182eafcafdc2a5fba10bf0815f323c94405acaa5ee2aa7ace4a52e77f94",
+      "bytes": 21510,
+      "fetchedAt": "2026-10-08T23:58:42.422Z",
+      "fetchedFrom": "https://www.city.higashimurayama.tokyo.jp/gikai/shikumi/sikumi/gikai_03_giin-teisuu.html"
+    }
+  ]
+}

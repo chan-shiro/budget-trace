@@ -1,0 +1,33 @@
+{
+  "sourceId": "yamato-shigikai-r8",
+  "files": [
+    {
+      "filename": "kaihabetumeiboR71111.pdf",
+      "sha256": "7eb19de27a7304572a43a620a22f051ef78963cd3435b908b0c2cfcbb2211fc8",
+      "bytes": 87975,
+      "fetchedAt": "2026-10-08T23:58:42.468Z",
+      "fetchedFrom": "https://web.archive.org/web/20251217033331id_/https://www.city.yamato.lg.jp/material/files/group/59/kaihabetumeiboR71111.pdf"
+    },
+    {
+      "filename": "11080.html",
+      "sha256": "05b1ebcf4304def9ed5d0fa03bed0cf5f249e9975fb94fd3364ce7b489187747",
+      "bytes": 46096,
+      "fetchedAt": "2026-10-08T23:58:42.468Z",
+      "fetchedFrom": "https://web.archive.org/web/20251213183434id_/https://www.city.yamato.lg.jp/gyosei/shiseijoho/shigikai/kannrenn/johoteikyou/giinnoshokai/11080.html"
+    },
+    {
+      "filename": "R803sinngikekka.pdf",
+      "sha256": "b7e114c4d3ac2145736eb02ee5e0292d00dc26ce3b7a3876eff0673846b1c9b8",
+      "bytes": 174105,
+      "fetchedAt": "2026-10-08T23:58:42.469Z",
+      "fetchedFrom": "https://www.city.yamato.lg.jp/material/files/group/59/R803sinngikekka.pdf"
+    },
+    {
+      "filename": "25346.html",
+      "sha256": "2791abe84c860f08c6d4b8bac2b9c4b26dbdd14b32f288f57e1850a5a6c1f5e3",
+      "bytes": 56649,
+      "fetchedAt": "2026-10-08T23:58:42.469Z",
+      "fetchedFrom": "https://www.city.yamato.lg.jp/gyosei/soshik/29/shigikai/honkaigi_iinkai/honkaigi_iinkainittei/25346.html"
+    }
+  ]
+}

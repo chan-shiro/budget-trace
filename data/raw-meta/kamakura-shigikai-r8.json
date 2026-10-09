@@ -1,0 +1,19 @@
+{
+  "sourceId": "kamakura-shigikai-r8",
+  "files": [
+    {
+      "filename": "273.pdf",
+      "sha256": "80856fbbbb94e1e34a2804d1bcd0cf90736a580ac1b1288ad063696ebc3e3862",
+      "bytes": 3420937,
+      "fetchedAt": "2026-10-08T23:58:42.435Z",
+      "fetchedFrom": "https://www.city.kamakura.kanagawa.jp/gikai/tayori/documents/273.pdf"
+    },
+    {
+      "filename": "20260203.html",
+      "sha256": "d998a615fc37c0c2902ba1c7923bb23712cfec9e6937eff8ab9fef1354b89939",
+      "bytes": 43936,
+      "fetchedAt": "2026-10-08T23:58:42.436Z",
+      "fetchedFrom": "https://www.city.kamakura.kanagawa.jp/gikai/20260203.html"
+    }
+  ]
+}

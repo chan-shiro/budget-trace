@@ -1,0 +1,321 @@
+{
+  "docType": "council-composition",
+  "sourceId": "nishitokyo-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.3",
+  "parsedAt": "2026-10-09T01:17:03.616Z",
+  "fiscalYear": "R8",
+  "body": "西東京市議会",
+  "seats": 27,
+  "asOf": "2026-02-04",
+  "factions": [
+    {
+      "name": "自由民主党西東京市議団",
+      "seats": 9,
+      "isIndependent": false,
+      "members": [
+        "坂井かずひこ",
+        "酒井ごう一郎",
+        "とみながゆうじ",
+        "小林たつや",
+        "稲垣裕二",
+        "保谷なおみ",
+        "中川清志",
+        "山田忠良",
+        "佐藤大介"
+      ],
+      "locator": {
+        "file": "kaiha_meibo.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "西東京市議会公明党",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "大林光昭",
+        "藤田美智子",
+        "田代伸之",
+        "八矢好美",
+        "佐藤公男"
+      ],
+      "locator": {
+        "file": "kaiha_meibo.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "日本共産党西東京市議団",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "中村すぐる",
+        "大竹あつ子",
+        "やまき明美"
+      ],
+      "locator": {
+        "file": "kaiha_meibo.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "立憲民主党",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "森しんいち",
+        "菅原みほ",
+        "千間いずみ"
+      ],
+      "locator": {
+        "file": "kaiha_meibo.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "生活者ネットワーク",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "後藤ゆう子",
+        "かとう涼子"
+      ],
+      "locator": {
+        "file": "kaiha_meibo.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "維新・民主",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "山崎英昭",
+        "下田純一"
+      ],
+      "locator": {
+        "file": "kaiha_meibo.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "無所属（納田さおり）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "納田さおり"
+      ],
+      "locator": {
+        "file": "kaiha_meibo.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "無所属（田村ひろゆき）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "田村ひろゆき"
+      ],
+      "locator": {
+        "file": "kaiha_meibo.html",
+        "row": 8
+      }
+    },
+    {
+      "name": "無所属（長井秀和）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "長井秀和"
+      ],
+      "locator": {
+        "file": "kaiha_meibo.html",
+        "row": 9
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第7号",
+    "billName": "令和8年度西東京市一般会計予算",
+    "sessionLabel": "令和8年第1回定例会",
+    "decidedDate": "2026-03-27",
+    "decidedDateLabel": "令和8年3月27日",
+    "result": "可決",
+    "locator": {
+      "file": "kaikinainittei0801.html"
+    }
+  },
+  "rosterTitle": "議員名簿（会派別）（最終更新日 2026年2月4日）",
+  "resultTitle": "日程・付議案件・結果（令和8年第1回定例会）",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "西東京市議会だより 第114号（令和8年5月15日）賛否が分かれた議案の結果",
+    "sourceFile": "no114all.pdf",
+    "columns": [
+      {
+        "label": "坂井かずひこ",
+        "faction": "自由民主党西東京市議団",
+        "member": "坂井かずひこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "酒井ごう一郎",
+        "faction": "自由民主党西東京市議団",
+        "member": "酒井ごう一郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "とみながゆうじ",
+        "faction": "自由民主党西東京市議団",
+        "member": "とみながゆうじ",
+        "stance": "賛成"
+      },
+      {
+        "label": "小林たつや",
+        "faction": "自由民主党西東京市議団",
+        "member": "小林たつや",
+        "stance": "賛成"
+      },
+      {
+        "label": "稲垣裕二",
+        "faction": "自由民主党西東京市議団",
+        "member": "稲垣裕二",
+        "stance": "賛成"
+      },
+      {
+        "label": "保谷なおみ",
+        "faction": "自由民主党西東京市議団",
+        "member": "保谷なおみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "中川清志",
+        "faction": "自由民主党西東京市議団",
+        "member": "中川清志",
+        "stance": "賛成"
+      },
+      {
+        "label": "山田忠良",
+        "faction": "自由民主党西東京市議団",
+        "member": "山田忠良",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐藤大介",
+        "faction": "自由民主党西東京市議団",
+        "member": "佐藤大介",
+        "stance": "賛成"
+      },
+      {
+        "label": "大林光昭",
+        "faction": "西東京市議会公明党",
+        "member": "大林光昭",
+        "stance": "賛成"
+      },
+      {
+        "label": "藤田美智子",
+        "faction": "西東京市議会公明党",
+        "member": "藤田美智子",
+        "stance": "賛成"
+      },
+      {
+        "label": "田代伸之",
+        "faction": "西東京市議会公明党",
+        "member": "田代伸之",
+        "stance": "賛成"
+      },
+      {
+        "label": "八矢好美",
+        "faction": "西東京市議会公明党",
+        "member": "八矢好美",
+        "stance": "賛成"
+      },
+      {
+        "label": "中村すぐる",
+        "faction": "日本共産党西東京市議団",
+        "member": "中村すぐる",
+        "stance": "反対"
+      },
+      {
+        "label": "大竹あつ子",
+        "faction": "日本共産党西東京市議団",
+        "member": "大竹あつ子",
+        "stance": "反対"
+      },
+      {
+        "label": "やまき明美",
+        "faction": "日本共産党西東京市議団",
+        "member": "やまき明美",
+        "stance": "反対"
+      },
+      {
+        "label": "森しんいち",
+        "faction": "立憲民主党",
+        "member": "森しんいち",
+        "stance": "賛成"
+      },
+      {
+        "label": "菅原みほ",
+        "faction": "立憲民主党",
+        "member": "菅原みほ",
+        "stance": "賛成"
+      },
+      {
+        "label": "千間いずみ",
+        "faction": "立憲民主党",
+        "member": "千間いずみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "後藤ゆう子",
+        "faction": "生活者ネットワーク",
+        "member": "後藤ゆう子",
+        "stance": "賛成"
+      },
+      {
+        "label": "かとう涼子",
+        "faction": "生活者ネットワーク",
+        "member": "かとう涼子",
+        "stance": "賛成"
+      },
+      {
+        "label": "山崎英昭",
+        "faction": "維新・民主",
+        "member": "山崎英昭",
+        "stance": "賛成"
+      },
+      {
+        "label": "下田純一",
+        "faction": "維新・民主",
+        "member": "下田純一",
+        "stance": "賛成"
+      },
+      {
+        "label": "納田さおり",
+        "faction": "無所属（納田さおり）",
+        "member": "納田さおり",
+        "stance": "賛成"
+      },
+      {
+        "label": "田村ひろゆき",
+        "faction": "無所属（田村ひろゆき）",
+        "member": "田村ひろゆき",
+        "stance": "賛成"
+      },
+      {
+        "label": "長井秀和",
+        "faction": "無所属（長井秀和）",
+        "member": "長井秀和",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐藤公男",
+        "faction": "西東京市議会公明党",
+        "member": "佐藤公男",
+        "stance": "議長"
+      }
+    ]
+  }
+}
