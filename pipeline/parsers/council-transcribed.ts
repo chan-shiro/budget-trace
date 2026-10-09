@@ -722,6 +722,13 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
         const outside = aN.slice(0, at) + "|" + aN.slice(at + kN.length);
         // key の外に許す語は registry で宣言した列見出し・委員会名（headings）と団体の字だけ（語のブラックリストは「不採択」「円」のような
         // 語彙の外の語で抜けた＝レビュー4巡目。「漢字12字＋委員会」の形で許すと任意の語を吸えた＝レビュー5巡目）
+        // headings は宣言するだけでは何でも書ける（anchor の残りを丸ごと書いて秋田の諮問の行が通った＝レビュー6巡目）。列見出し・委員会名の形
+        // （12字まで・「…委員会」か「番号」で終わる・議案の種類や結果の語を含まない）に限る
+        for (const h of ev.headings ?? []) {
+          const hN = norm(h);
+          if (hN.length > 12 || !/(委員会|番号)$/.test(hN) || NOT_BUDGET_ROW.test(hN) || /議案|条例|請願|陳情|諮問|同意|承認|認定|選任|採択|可決|否決|件|号/.test(hN))
+            errs.push(`headings「${h}」は列見出し・委員会名（12字まで・「…委員会」「番号」で終わり、議案の種類・結果の語を含まない）にする`);
+        }
         let rest = outside;
         for (const h of [...(ev.headings ?? [])].map(norm).sort((x, y) => y.length - x.length)) rest = rest.split(h).join("");
         if (
@@ -752,8 +759,8 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
       vdoc.views.forEach((v, vi) => {
         for (let p = v.text.indexOf(eN); p >= 0; p = v.text.indexOf(eN, p + 1)) {
           if (!digitEdgeOk(v.text, p, eN.length)) continue; // 「56令和…」を「156令和…」に当てない
-          // 件名の直後に「に関する付帯決議」「特別会計」等が続く出現も件名の行ではない（isAmendTail の語彙だけでは「に関する」「付帯決議」が漏れた＝レビュー5巡目）
-          if (m && (isAmendTail("", v.text.slice(p + m.end)) || NOT_BUDGET_ROW.test(v.text.slice(p + m.end, p + m.end + 8)))) continue;
+          // 件名の直後16字に「に関する付帯決議」「特別会計」等が続く出現も件名の行ではない（isAmendTail の語彙だけでは「に関する」「付帯決議」が漏れた＝レビュー5巡目）
+          if (m && (isAmendTail("", v.text.slice(p + m.end)) || NOT_BUDGET_ROW.test(v.text.slice(p + m.end, p + m.end + 16)))) continue;
           occ.push({ vi, at: p });
         }
       });
