@@ -1,0 +1,929 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no">
+    <title>&#x4F1A;&#x6D3E;&#x5225;&#x540D;&#x7C3F; &#x6238;&#x7530;&#x5E02;&#x8B70;&#x4F1A;</title>
+
+    <link rel="stylesheet" href="/gikai/lib/bootstrap/dist/css/bootstrap.css?v=8b3z2yv36zMMSUvd8UXOIXUfeqJoalpiC60gdTr5qFM" />
+    <link rel="stylesheet" href="/gikai/lib/bootstrap/dist/css/bootstrap-icons.css?v=T_pr6kME0u2kGGg_ViYWhe1HvwCZUDnyflrWLVOTjS0" />
+    <link rel="stylesheet" href="/gikai/css/site.css?v=e8fRh64J36fLm-n5omco13iGfwmpC0xWezV5RLYVbhc" />
+
+
+    <link rel="stylesheet" href="/gikai/css/site.toda-f9fzqijq2awo0kaj.css?v=MU3fxxnb8QolZObpULbQG7PO0AF9x17LI2upmipDEqI" />
+
+    <script src="/gikai/lib/bootstrap/dist/js/bootstrap.bundle.js?v=cylxV1UruqmvQwOaplblZ7N-bxLCJYH-vHSBhlz5kF4"></script>
+    <script src="/gikai/lib/jquery/dist/jquery.js?v=igUc00PXGT1YBL1_Kf7QYy9fPlLqZKcEGrCqDz3EFDI"></script>
+    <script src="/gikai/lib/jquery/dist/jquery-ui.js?v=wyfv3jsPD3C66h1A7HG7Ats_kF-yzmgjhN1amm4Lp8U"></script>
+    <script src="/gikai/js/site.js?v=0r0sww-T_FIE7AlAdAeg2emsOaC_YsmlXJYoLRl43MM"></script>
+    <script src="/gikai/js/GD016_001.js?v=8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U"></script>
+</head>
+
+<body>
+    <div class="container-lg  container-gd">
+        <header>
+            <script>
+  (function() {
+    var iconUrl = 'https://toda.gijiroku.com/gikai/image/favicon.ico?v=' + new Date().getTime();
+    var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'shortcut icon';
+    link.href = iconUrl;
+    document.getElementsByTagName('head')[0].appendChild(link);
+  })();
+</script>
+
+<script type="text/javascript" src="//msta.j-server.com/MSTA/LUC2AITODA/js/msta.js"></script>
+<script id="pt_loader" src="//ewb-c.infocreate.co.jp/download/93/ewbc.min.js"></script>
+
+
+
+<style>
+  /* サイトヘッダー全体 */
+  .site-header {
+    /*background-image: url('https://www2.city.toda.saitama.jp/gikai/image/bg_header.png'); */
+    background-position: 25% 50%;
+    background-repeat: no-repeat;
+    background-size: 440px auto;
+    background-color: #ffffff;
+    padding: 20px 40px;
+    position: relative;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    padding: 0;
+  }
+
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+  }
+
+  .logo-area a {
+    display: block;
+    line-height: 0;
+    transition: transform 0.2s ease-out;
+  }
+
+  .logo-area a:hover {
+    transform: scale(1.02);
+  }
+
+  .logo-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+  }
+
+  .header-utility {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+
+
+  .util-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 4px;
+    transition: color 0.2s ease;
+  }
+
+  .util-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #0066cc;
+    transition: width 0.3s ease-out;
+  }
+
+  .util-link:hover {
+    color: #0066cc;
+  }
+
+  .util-link:hover::after {
+    width: 100%;
+  }
+
+  .language-nav {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .lang-link {
+    background: #e9ecef;
+    border: 1px solid #dee2e6;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-family: inherit;
+    transition: all 0.2s ease-out;
+  }
+
+  .lang-link:hover {
+    background: #ced4da;
+    border-color: #adb5bd;
+    color: #000;
+    transform: translateY(-2px);
+  }
+
+  .lang-link.active {
+    background: #0066cc;
+    color: white;
+    font-weight: bold;
+    border-color: #0066cc;
+  }
+
+
+  /* バーで body が押し下げられないように */
+  body {
+    top: 0 !important;
+    position: static !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin: 0;
+  }
+
+  /* インラインウィジェットは画面外に置いて見えなくする（存在はさせる） */
+  #google_translate_element {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  @media (max-width: 768px) {
+    .site-header {
+      padding: 15px 15px;
+    }
+
+    .header-container {
+      padding: 0;
+    }
+
+    .header-top {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .header-right {
+      width: 100%;
+      align-items: center;
+    }
+
+    .header-utility {
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .language-nav {
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .lang-link {
+      font-size: 12px;
+      padding: 4px 8px;
+    }
+  }
+
+/* 翻訳系 */
+ul.msta_menu {
+  padding: 0;
+  margin: 0;
+}
+
+ul.msta_menu li {
+  display: inline;
+  cursor: pointer;
+}
+
+/* li の間に区切り線「｜」を挿入（視覚のみ） */
+ul.msta_menu li + li::before {
+  content: "｜";
+  margin: 0 6px;
+  color: #555;
+}
+/* 下線を消す */
+ul.msta_menu li a {
+  color: #000;
+  text-decoration: none;
+  outline: none;        /* 初期ブラウザのフォーカス枠を消す（強調は別で付ける） */
+}
+
+/* ホバー時：色のみで軽く変化 */
+ul.msta_menu li a:hover {
+  color: #005bbb;
+}
+
+/* フォーカス時：アクセシビリティに配慮した太めのアウトライン */
+ul.msta_menu li a:focus {
+  outline: 3px solid #005bbb;       /* 見やすい濃い青 */
+  outline-offset: 2px;              /* 少し外側にずらして見やすく */
+  border-radius: 4px;               /* 見た目が自然 */
+}
+</style>
+
+<header class="site-header">
+  <div class="header-container">
+    <div class="header-top">
+      <div class="logo-area">
+        <a href="https://www2.city.toda.saitama.jp/gikai/toda-f9fzqijq2awo0kaj/">
+          <img class="logo-img" src="https://www01.sites.gijiroku.com/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000000001&amp;fileId=ce220bce51da4fcca5b558698d79a961&amp;fileName=logo_gikai.png" alt="戸田市議会">
+        </a>
+      </div>
+
+      <div class="header-right notranslate">
+        <div class="header-utility">
+
+          <a href="https://www2.city.toda.saitama.jp/gikai/toda-f9fzqijq2awo0kaj/GD038/GD038_001/?contents=000030&amp;ban=1&amp;token=00ec4d35acdaab9a03a2d664b93ad5de" class="util-link">サイトマップ</a>
+          <a href="https://www.city.toda.saitama.jp/form/detail.php?sec_sec1=351&amp;check" class="util-link">お問い合わせ</a>
+<a href="javascript:ptspkLoader('toggle')" id="pt_enable" class="util-link">閲覧補助機能</a>
+        </div>
+
+<ul class="msta_menu">
+        <li id="msta_lang_ja" class="hdr_lang msta_standby"><a href="javascript:void(0)">日本語</a></li>
+            <li id="msta_lang_en" class="hdr_lang msta_standby"><a href="javascript:void(0)">ENGLISH</a></li>
+            <li id="msta_lang_zh" class="hdr_lang msta_standby"><a href="javascript:void(0)">中文简体</a></li>
+            <li id="msta_lang_tw" class="hdr_lang msta_standby"><a href="javascript:void(0)">中文繁体</a></li>
+            <li id="msta_lang_ko" class="hdr_lang msta_standby"><a href="javascript:void(0)">한국어</a></li>
+            <li id="msta_lang_pt" class="hdr_lang msta_standby"><a href="javascript:void(0)">Portugues</a></li>
+            <li id="msta_lang_vi" class="hdr_lang msta_standby"><a href="javascript:void(0)">Tiếng Việt</a></li>
+</ul>
+      </div>
+    </div>
+  </div>
+
+
+</header>
+        </header>
+            <!-- パンくずリスト -->
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb bg-light py-1 px-3">
+                    <li class="">&#x73FE;&#x5728;&#x4F4D;&#x7F6E; &#xFF1A;</li>
+                                <li class="breadcrumb-item"><a href="/gikai/toda-f9fzqijq2awo0kaj">&#x30C8;&#x30C3;&#x30D7;&#x30DA;&#x30FC;&#x30B8;</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">&#x4F1A;&#x6D3E;&#x5225;&#x540D;&#x7C3F;</li>
+                </ol>
+            </nav>
+        <div class="row px-3">
+            <!-- メイン -->
+            <main class="col-lg-9 order-lg-last text-break">
+                    <h1 class="midashi">
+&#x4F1A;&#x6D3E;&#x5225;&#x540D;&#x7C3F;<br/>                    </h1>
+<p>各議員の連絡先については、公表・非公表も含め、掲載する項目は各議員の判断としておりますので、ご承知おきください。</p>
+
+
+
+
+
+<div class="row d-flex justify-content-end mx-1 mb-1">
+    <div class="col-auto">
+            <a class="link-gd" href="/gikai/toda-f9fzqijq2awo0kaj/GD012/GD012_001">
+                &#x8B70;&#x54E1;&#x540D;&#x7C3F;(&#x4E94;&#x5341;&#x97F3;&#x9806;)
+            </a>
+            <a class="link-gd" href="/gikai/toda-f9fzqijq2awo0kaj/GD013/GD013_001">
+                &#x8B70;&#x5E2D;&#x756A;&#x53F7;&#x9806;&#x540D;&#x7C3F;
+            </a>
+    </div>
+</div>
+        <h2 class="midashi">&#x6238;&#x7530;&#x306E;&#x4F1A;</h2>
+        <div class="mb-2">
+            <div class="my-1 mx-2">
+&#x4EE4;&#x548C;7&#x5E74;2&#x6708;6&#x65E5;&#x7D50;&#x6210;                <div class="row row-cols-xl-5 row-cols-1 g-2 pb-1">
+                            <div class="col mb-2">
+                                    <div class="text-center border gd-giin-gazou">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000066">
+                                            <img class="h-100" src="/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000053982&amp;fileId=1e2375c65d4c4651a6869381c3b636e8&amp;fileName=Gn56_24_sakai_2025.jpg" alt="Gn56_24_sakai_2025.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center border mb-3 p-1">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000066">
+                                            &#x9152;&#x4E95;&#x3000;&#x3044;&#x304F;&#x308D;&#x3046;
+                                            <br>
+(&#x4EE3;&#x8868;)                                        </a>
+                                    </div>
+                            </div>
+                            <div class="col mb-2">
+                                    <div class="text-center border gd-giin-gazou">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000065">
+                                            <img class="h-100" src="/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000053985&amp;fileId=341c81ca1ace4c3690da164cc4bcefa0&amp;fileName=Gn67_23_asou_2025.jpg" alt="Gn67_23_asou_2025.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center border mb-3 p-1">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000065">
+                                            &#x6D45;&#x751F;&#x3000;&#x548C;&#x82F1;
+                                            <br>
+(&#x5E79;&#x4E8B;&#x9577;)                                        </a>
+                                    </div>
+                            </div>
+                            <div class="col mb-2">
+                                    <div class="text-center border gd-giin-gazou">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000047">
+                                            <img class="h-100" src="/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000053998&amp;fileId=d2e25233a2924f66aa1e2edb85af956c&amp;fileName=Gn75_16_nozawa_2025.jpg" alt="Gn75_16_nozawa_2025.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center border mb-3 p-1">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000047">
+                                            &#x91CE;&#x6FA4;&#x3000;&#x8302;&#x96C5;
+                                            <br>
+(&#x7DCF;&#x52D9;)                                        </a>
+                                    </div>
+                            </div>
+                            <div class="col mb-2">
+                                    <div class="text-center border gd-giin-gazou">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000038">
+                                            <img class="h-100" src="/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000053965&amp;fileId=d865b31ead0c45899cdbe10a1289f424&amp;fileName=Gn68_10_satou_2025.jpg" alt="Gn68_10_satou_2025.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center border mb-3 p-1">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000038">
+                                            &#x4F50;&#x85E4;&#x3000;&#x592A;&#x4FE1;
+                                            <br>
+(&#x4F1A;&#x8A08;)                                        </a>
+                                    </div>
+                            </div>
+                            <div class="col mb-2">
+                                    <div class="text-center border gd-giin-gazou">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000072">
+                                            <img class="h-100" src="/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000054008&amp;fileId=ba908515c09d423b9eb1d5e69989f0dc&amp;fileName=Gn83_4_henmi_2025.jpg" alt="Gn83_4_henmi_2025.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center border mb-3 p-1">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000072">
+                                            &#x8FBA;&#x898B;&#x3000;&#x667A;&#x5B50;
+                                            <br>
+                                        </a>
+                                    </div>
+                            </div>
+                            <div class="col mb-2">
+                                    <div class="text-center border gd-giin-gazou">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000029">
+                                            <img class="h-100" src="/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000054004&amp;fileId=9cd82501670546e8af7cfa20630c78ff&amp;fileName=Gn85_5_konuma_2025.jpg" alt="Gn85_5_konuma_2025.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center border mb-3 p-1">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000029">
+                                            &#x5C0F;&#x6CBC;&#x3000;&#x3055;&#x3086;&#x308A;
+                                            <br>
+                                        </a>
+                                    </div>
+                            </div>
+                            <div class="col mb-2">
+                                    <div class="text-center border gd-giin-gazou">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000036">
+                                            <img class="h-100" src="/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000053961&amp;fileId=38d95eefa9b54636b12e28755eb375db&amp;fileName=Gn74_9_miyauchi_2025.jpg" alt="Gn74_9_miyauchi_2025.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center border mb-3 p-1">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000036">
+                                            &#x5BAE;&#x5185;&#x3000;&#x305D;&#x3046;&#x3053;
+                                            <br>
+                                        </a>
+                                    </div>
+                            </div>
+                            <div class="col mb-2">
+                                    <div class="text-center border gd-giin-gazou">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000050">
+                                            <img class="h-100" src="/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000054006&amp;fileId=ce767e4c9ecf4b48b3c6bc98d58ae7bc&amp;fileName=Gn66_17_yazawa_2025.jpg" alt="Gn66_17_yazawa_2025.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center border mb-3 p-1">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000050">
+                                            &#x77E2;&#x6FA4;&#x3000;&#x9752;&#x6CB3;
+                                            <br>
+                                        </a>
+                                    </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="midashi">&#x653F;&#x7B56;TODA</h2>
+        <div class="mb-2">
+            <div class="my-1 mx-2">
+&#x4EE4;&#x548C;7&#x5E74;2&#x6708;6&#x65E5;&#x7D50;&#x6210;                <div class="row row-cols-xl-5 row-cols-1 g-2 pb-1">
+                            <div class="col mb-2">
+                                    <div class="text-center border gd-giin-gazou">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000063">
+                                            <img class="h-100" src="/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000053983&amp;fileId=7c51353402264daca379cc95a1be9b47&amp;fileName=Gn7_22_endou_2025.jpg" alt="Gn7_22_endou_2025.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center border mb-3 p-1">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000063">
+                                            &#x9060;&#x85E4;&#x3000;&#x82F1;&#x6A39;
+                                            <br>
+(&#x56E3;&#x9577;)                                        </a>
+                                    </div>
+                            </div>
+                            <div class="col mb-2">
+                                    <div class="text-center border gd-giin-gazou">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000060">
+                                            <img class="h-100" src="/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000053980&amp;fileId=cae3898aa25a44d6b2476a8ce77de9a1&amp;fileName=Gn62_21_hosoda_2025.jpg" alt="Gn62_21_hosoda_2025.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center border mb-3 p-1">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000060">
+                                            &#x7D30;&#x7530;&#x3000;&#x660C;&#x5B5D;
+                                            <br>
+(&#x5E79;&#x4E8B;&#x9577;)                                        </a>
+                                    </div>
+                            </div>
+                            <div class="col mb-2">
+                                    <div class="text-center border gd-giin-gazou">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000045">
+                                            <img class="h-100" src="/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000053962&amp;fileId=613b9a5008e34b29af4a3e39b1219822&amp;fileName=Gn69_15_sogou_2025.jpg" alt="Gn69_15_sogou_2025.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center border mb-3 p-1">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000045">
+                                            &#x305D;&#x3054;&#x3046;&#x3000;&#x62D3;&#x4E5F;
+                                            <br>
+(&#x4F1A;&#x8A08;)                                        </a>
+                                    </div>
+                            </div>
+                            <div class="col mb-2">
+                                    <div class="text-center border gd-giin-gazou">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000034">
+                                            <img class="h-100" src="/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000054007&amp;fileId=4b4f8d8564524159852c3ace0fb54bfa&amp;fileName=Gn82_8_koyama_2025.jpg" alt="Gn82_8_koyama_2025.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center border mb-3 p-1">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000034">
+                                            &#x5C0F;&#x5C71;&#x3000;&#x5927;&#x8F14;
+                                            <br>
+                                        </a>
+                                    </div>
+                            </div>
+                            <div class="col mb-2">
+                                    <div class="text-center border gd-giin-gazou">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000044">
+                                            <img class="h-100" src="/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000054002&amp;fileId=96808c9803fd4cf68278a8cda5c4c3af&amp;fileName=Gn76_14_furuya_2025.jpg" alt="Gn76_14_furuya_2025.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center border mb-3 p-1">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000044">
+                                            &#x53E4;&#x5C4B;&#x3000;&#x3068;&#x3057;&#x307F;&#x3064;
+                                            <br>
+                                        </a>
+                                    </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="midashi">&#x516C;&#x660E;&#x515A;</h2>
+        <div class="mb-2">
+            <div class="my-1 mx-2">
+&#x4EE4;&#x548C;7&#x5E74;2&#x6708;6&#x65E5;&#x7D50;&#x6210;                <div class="row row-cols-xl-5 row-cols-1 g-2 pb-1">
+                            <div class="col mb-2">
+                                    <div class="text-center border gd-giin-gazou">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000054">
+                                            <img class="h-100" src="/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000054003&amp;fileId=fff33b74efcc48d2b8ad81baa648423b&amp;fileName=Gn64_19_takeuchi_2025.jpg" alt="Gn64_19_takeuchi_2025.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center border mb-3 p-1">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000054">
+                                            &#x7AF9;&#x5185;&#x3000;&#x6B63;&#x660E;
+                                            <br>
+(&#x56E3;&#x9577;)                                        </a>
+                                    </div>
+                            </div>
+                            <div class="col mb-2">
+                                    <div class="text-center border gd-giin-gazou">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000055">
+                                            <img class="h-100" src="/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000053984&amp;fileId=cdcd10798ec040118e2963745c773dec&amp;fileName=Gn65_20_ishikawa_2025.jpg" alt="Gn65_20_ishikawa_2025.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center border mb-3 p-1">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000055">
+                                            &#x77F3;&#x5DDD;&#x3000;&#x6E05;&#x660E;
+                                            <br>
+(&#x5E79;&#x4E8B;&#x9577;)                                        </a>
+                                    </div>
+                            </div>
+                            <div class="col mb-2">
+                                    <div class="text-center border gd-giin-gazou">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000041">
+                                            <img class="h-100" src="/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000053978&amp;fileId=0bbd317ac60f4467ae2befb309c23c77&amp;fileName=Gn60_13_miwa_2025.jpg" alt="Gn60_13_miwa_2025.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center border mb-3 p-1">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000041">
+                                            &#x4E09;&#x8F2A;&#x3000;&#x306A;&#x304A;&#x5B50;
+                                            <br>
+(&#x4F1A;&#x8A08;)                                        </a>
+                                    </div>
+                            </div>
+                            <div class="col mb-2">
+                                    <div class="text-center border gd-giin-gazou">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000040">
+                                            <img class="h-100" src="/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000053966&amp;fileId=787e45f7894f4f5986e243f5c356ea49&amp;fileName=Gn79_12_miura_2025.jpg" alt="Gn79_12_miura_2025.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center border mb-3 p-1">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000040">
+                                            &#x4E09;&#x6D66;&#x3000;&#x306E;&#x3076;&#x304A;
+                                            <br>
+                                        </a>
+                                    </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="midashi">&#x65E5;&#x672C;&#x5171;&#x7523;&#x515A;&#x6238;&#x7530;&#x5E02;&#x8B70;&#x56E3;</h2>
+        <div class="mb-2">
+            <div class="my-1 mx-2">
+&#x4EE4;&#x548C;7&#x5E74;2&#x6708;6&#x65E5;&#x7D50;&#x6210;                <div class="row row-cols-xl-5 row-cols-1 g-2 pb-1">
+                            <div class="col mb-2">
+                                    <div class="text-center border gd-giin-gazou">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000031">
+                                            <img class="h-100" src="/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000053968&amp;fileId=3cba6782d60a4d0cb861554e4d06c202&amp;fileName=Gn25_7_honda_2025.jpg" alt="Gn25_7_honda_2025.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center border mb-3 p-1">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000031">
+                                            &#x672C;&#x7530;&#x3000;&#x54F2;
+                                            <br>
+(&#x56E3;&#x9577;)                                        </a>
+                                    </div>
+                            </div>
+                            <div class="col mb-2">
+                                    <div class="text-center border gd-giin-gazou">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000030">
+                                            <img class="h-100" src="/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000053967&amp;fileId=92c71e98902a469e81f6a36ab7c8ccee&amp;fileName=Gn71_6_mutou_2025.jpg" alt="Gn71_6_mutou_2025.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center border mb-3 p-1">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000030">
+                                            &#x3080;&#x3068;&#x3046;&#x3000;&#x8449;&#x5B50;
+                                            <br>
+(&#x5E79;&#x4E8B;&#x9577;)                                        </a>
+                                    </div>
+                            </div>
+                            <div class="col mb-2">
+                                    <div class="text-center border gd-giin-gazou">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000019">
+                                            <img class="h-100" src="/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000054005&amp;fileId=47d93bc07f5540408052e5bad288ec7b&amp;fileName=Gn84_1_hanai_2025.jpg" alt="Gn84_1_hanai_2025.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center border mb-3 p-1">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000019">
+                                            &#x82B1;&#x4E95;&#x3000;&#x3042;&#x304D;&#x3053;
+                                            <br>
+                                        </a>
+                                    </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="midashi">&#x5E73;&#x653F;&#x4F1A;</h2>
+        <div class="mb-2">
+            <div class="my-1 mx-2">
+&#x4EE4;&#x548C;7&#x5E74;2&#x6708;6&#x65E5;&#x7D50;&#x6210;                <div class="row row-cols-xl-5 row-cols-1 g-2 pb-1">
+                            <div class="col mb-2">
+                                    <div class="text-center border gd-giin-gazou">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000067">
+                                            <img class="h-100" src="/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000053981&amp;fileId=1db7281ff02c48068f067b8472c62a9a&amp;fileName=Gn14_25_enomoto_2025.jpg" alt="Gn14_25_enomoto_2025.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center border mb-3 p-1">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000067">
+                                            &#x698E;&#x672C;&#x3000;&#x5B88;&#x660E;
+                                            <br>
+(&#x56E3;&#x9577;)                                        </a>
+                                    </div>
+                            </div>
+                            <div class="col mb-2">
+                                    <div class="text-center border gd-giin-gazou">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000052">
+                                            <img class="h-100" src="/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000053979&amp;fileId=2bcdc15a20784d14b0f320d811c957c5&amp;fileName=Gn13_18_saitou_2025.jpg" alt="Gn13_18_saitou_2025.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center border mb-3 p-1">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000052">
+                                            &#x658E;&#x85E4;&#x3000;&#x76F4;&#x5B50;
+                                            <br>
+(&#x5E79;&#x4E8B;&#x9577;)                                        </a>
+                                    </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="midashi">&#x308A;&#x3063;&#x3051;&#x3093;&#x6238;&#x7530;</h2>
+        <div class="mb-2">
+            <div class="my-1 mx-2">
+&#x4EE4;&#x548C;7&#x5E74;2&#x6708;6&#x65E5;&#x7D50;&#x6210;                <div class="row row-cols-xl-5 row-cols-1 g-2 pb-1">
+                            <div class="col mb-2">
+                                    <div class="text-center border gd-giin-gazou">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000039">
+                                            <img class="h-100" src="/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000053963&amp;fileId=057c44100705478093cca5f4fa8a2d47&amp;fileName=Gn78_11_koganezawa_2025.jpg" alt="Gn78_11_koganezawa_2025.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center border mb-3 p-1">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000039">
+                                            &#x5C0F;&#x91D1;&#x6CA2;&#x3000;&#x512A;
+                                            <br>
+(&#x4EE3;&#x8868;)                                        </a>
+                                    </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="midashi">&#x4FDD;&#x5B88;&#x306E;&#x4F1A;</h2>
+        <div class="mb-2">
+            <div class="my-1 mx-2">
+&#x4EE4;&#x548C;7&#x5E74;2&#x6708;6&#x65E5;&#x7D50;&#x6210;                <div class="row row-cols-xl-5 row-cols-1 g-2 pb-1">
+                            <div class="col mb-2">
+                                    <div class="text-center border gd-giin-gazou">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000023">
+                                            <img class="h-100" src="/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000053960&amp;fileId=cdc05efc34084a629b14f222dad3a325&amp;fileName=Gn80_2_kawai_2025.jpg" alt="Gn80_2_kawai_2025.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center border mb-3 p-1">
+                                        <a href="/gikai/toda-f9fzqijq2awo0kaj/GD017/GD017_001?code=000023">
+                                            &#x6CB3;&#x5408;&#x3000;&#x3086;&#x3046;&#x3059;&#x3051;
+                                            <br>
+                                        </a>
+                                    </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+<div class="mb-2 ms-3">
+    【名前の表記について】<br>JIS第1水準・第2水準にない文字については、表示できる書体に換えて表記しています。
+</div>
+
+<div class="row d-flex justify-content-end mx-1 mb-1">
+    <div class="col-auto">
+            <a class="link-gd" href="/gikai/toda-f9fzqijq2awo0kaj/GD012/GD012_001">
+                &#x8B70;&#x54E1;&#x540D;&#x7C3F;(&#x4E94;&#x5341;&#x97F3;&#x9806;)
+            </a>
+            <a class="link-gd" href="/gikai/toda-f9fzqijq2awo0kaj/GD013/GD013_001">
+                &#x8B70;&#x5E2D;&#x756A;&#x53F7;&#x9806;&#x540D;&#x7C3F;
+            </a>
+    </div>
+</div>
+                    <div class="row d-flex justify-content-end mx-1 mb-1">
+                        <div class="col-auto">
+                            <i class="bi bi-arrow-up-square-fill me-2"></i><a href="" id="top">&#x30DA;&#x30FC;&#x30B8;&#x306E;&#x5148;&#x982D;&#x3078;&#x623B;&#x308B;</a>
+                        </div>
+                        <div class="col-auto">
+                            <i class="bi bi-arrow-right-square-fill me-2"></i><a href="javascript:history.back();">&#x524D;&#x306E;&#x753B;&#x9762;&#x306B;&#x623B;&#x308B;</a>
+                        </div>
+                    </div>
+            </main>
+            <!-- メインここまで -->
+            <!-- ナビゲーション -->
+            <div class="col-lg-3 order-lg-first">
+                <nav class="kokai-menu">
+                            <div class="card border-primary border-2 mb-2">
+                                <div class="card-header text-white bg-primary">
+                                    <h2 class="nav-midashi fs-6 fw-normal mb-0">&#x304A;&#x77E5;&#x3089;&#x305B;</h2>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="p-1 m-0">
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD002/GD002_001?menu=000001">&#x304A;&#x77E5;&#x3089;&#x305B;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card border-primary border-2 mb-2">
+                                <div class="card-header text-white bg-primary">
+                                    <h2 class="nav-midashi fs-6 fw-normal mb-0">&#x8B70;&#x54E1;&#x306E;&#x7D39;&#x4ECB;</h2>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="p-1 m-0">
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD009/GD009_001?menu=000002">&#x6B63;&#x526F;&#x8B70;&#x9577;&#x3042;&#x3044;&#x3055;&#x3064;</a></li>
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD013/GD013_001?menu=000008">&#x8B70;&#x5E2D;&#x756A;&#x53F7;&#x9806;&#x540D;&#x7C3F;</a></li>
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD012/GD012_001?menu=000009">&#x4E94;&#x5341;&#x97F3;&#x9806;&#x540D;&#x7C3F;</a></li>
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD016/GD016_001?menu=000010">&#x4F1A;&#x6D3E;&#x5225;&#x540D;&#x7C3F;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card border-primary border-2 mb-2">
+                                <div class="card-header text-white bg-primary">
+                                    <h2 class="nav-midashi fs-6 fw-normal mb-0">&#x8B70;&#x4F1A;&#x306E;&#x4ED5;&#x7D44;&#x307F;</h2>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="p-1 m-0">
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD038/GD038_001?contents=000001&amp;menu=000013">&#x8B70;&#x4F1A;&#x306E;&#x4ED5;&#x7D44;&#x307F;</a></li>
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD038/GD038_001?contents=000002&amp;menu=000014">&#x672C;&#x4F1A;&#x8B70;</a></li>
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD038/GD038_001?contents=000018&amp;menu=000049">&#x59D4;&#x54E1;&#x4F1A;</a></li>
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD038/GD038_001?contents=000012&amp;menu=000048">&#x8B70;&#x4F1A;&#x6539;&#x9769;&#x306E;&#x6B69;&#x307F;</a></li>
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD038/GD038_001?contents=000042&amp;menu=000054">&#x5E74;&#x9593;&#x6D3B;&#x52D5;&#x30C6;&#x30FC;&#x30DE;</a></li>
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD038/GD038_001?contents=000003&amp;menu=000017">&#x8B70;&#x4F1A;&#x3092;&#x77E5;&#x3063;toco &#x5E02;&#x8B70;&#x4F1A;&#x898B;&#x5B66;&#x30C4;&#x30A2;&#x30FC;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card border-primary border-2 mb-2">
+                                <div class="card-header text-white bg-primary">
+                                    <h2 class="nav-midashi fs-6 fw-normal mb-0">&#x4F1A;&#x8B70;&#x9332;</h2>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="p-1 m-0">
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD038/GD038_001?contents=000004&amp;menu=000018">&#x4F1A;&#x8B70;&#x9332;</a></li>
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD024/GD024_001?menu=000024">&#x4F1A;&#x8B70;&#x9332;&#x95B2;&#x89A7;</a></li>
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD026/GD026_001?menu=000012">&#x8A73;&#x7D30;&#x691C;&#x7D22;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card border-primary border-2 mb-2">
+                                <div class="card-header text-white bg-primary">
+                                    <h2 class="nav-midashi fs-6 fw-normal mb-0">&#x6620;&#x50CF;&#x914D;&#x4FE1;</h2>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="p-1 m-0">
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD021/GD021_001?menu=000026">&#x6620;&#x50CF;&#x914D;&#x4FE1;</a></li>
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD022/GD022_001?menu=000027">&#x9332;&#x753B;&#x914D;&#x4FE1;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card border-primary border-2 mb-2">
+                                <div class="card-header text-white bg-primary">
+                                    <h2 class="nav-midashi fs-6 fw-normal mb-0">&#x4F1A;&#x8B70;&#x306E;&#x60C5;&#x5831;</h2>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="p-1 m-0">
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD018/GD018_002?menu=000033">&#x4F1A;&#x8B70;&#x306E;&#x60C5;&#x5831;</a></li>
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD006/GD006_001?menu=000056">&#x4F1A;&#x671F;&#x65E5;&#x7A0B;&#x8868;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card border-primary border-2 mb-2">
+                                <div class="card-header text-white bg-primary">
+                                    <h2 class="nav-midashi fs-6 fw-normal mb-0">&#x8B70;&#x6848;&#x66F8;</h2>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="p-1 m-0">
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD037/GD037_001?shiryo=000001&amp;menu=000058">&#x8B70;&#x6848;&#x66F8;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card border-primary border-2 mb-2">
+                                <div class="card-header text-white bg-primary">
+                                    <h2 class="nav-midashi fs-6 fw-normal mb-0">&#x8CEA;&#x554F;&#x901A;&#x544A;</h2>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="p-1 m-0">
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD027/GD027_001?menu=000035">&#x8CEA;&#x554F;&#x901A;&#x544A;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card border-primary border-2 mb-2">
+                                <div class="card-header text-white bg-primary">
+                                    <h2 class="nav-midashi fs-6 fw-normal mb-0">&#x508D;&#x8074;&#x306E;&#x3054;&#x6848;&#x5185;</h2>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="p-1 m-0">
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD038/GD038_001?contents=000005&amp;menu=000036">&#x672C;&#x4F1A;&#x8B70;&#x306E;&#x508D;&#x8074;</a></li>
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD038/GD038_001?contents=000006&amp;menu=000037">&#x59D4;&#x54E1;&#x4F1A;&#x306E;&#x508D;&#x8074;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card border-primary border-2 mb-2">
+                                <div class="card-header text-white bg-primary">
+                                    <h2 class="nav-midashi fs-6 fw-normal mb-0">&#x8ACB;&#x9858;&#x30FB;&#x9673;&#x60C5;</h2>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="p-1 m-0">
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD038/GD038_001?contents=000007&amp;menu=000041">&#x8ACB;&#x9858;&#x30FB;&#x9673;&#x60C5;</a></li>
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD030/GD030_001?kb=0&amp;menu=000039">&#x8ACB;&#x9858;&#x30FB;&#x9673;&#x60C5;&#x5BE9;&#x67FB;&#x7D50;&#x679C;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card border-primary border-2 mb-2">
+                                <div class="card-header text-white bg-primary">
+                                    <h2 class="nav-midashi fs-6 fw-normal mb-0">&#x60C5;&#x5831;&#x516C;&#x958B;</h2>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="p-1 m-0">
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD011/GD011_001?kb=0&amp;menu=000052">&#x8B70;&#x9577;&#x4EA4;&#x969B;&#x8CBB;</a></li>
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD038/GD038_001?contents=000026&amp;menu=000050">&#x653F;&#x52D9;&#x6D3B;&#x52D5;&#x8CBB;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card border-primary border-2 mb-2">
+                                <div class="card-header text-white bg-primary">
+                                    <h2 class="nav-midashi fs-6 fw-normal mb-0">&#x8B70;&#x4F1A;&#x3060;&#x3088;&#x308A;</h2>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="p-1 m-0">
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD032/GD032_001?menu=000047">&#x8B70;&#x4F1A;&#x3060;&#x3088;&#x308A;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card border-primary border-2 mb-2">
+                                <div class="card-header text-white bg-primary">
+                                    <h2 class="nav-midashi fs-6 fw-normal mb-0">&#x30AD;&#x30C3;&#x30BA;&#x30DA;&#x30FC;&#x30B8;</h2>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="p-1 m-0">
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD038/GD038_001?contents=000008&amp;menu=000042">&#x30AD;&#x30C3;&#x30BA;&#x30DA;&#x30FC;&#x30B8;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card border-primary border-2 mb-2">
+                                <div class="card-header text-white bg-primary">
+                                    <h2 class="nav-midashi fs-6 fw-normal mb-0">&#x884C;&#x653F;&#x8996;&#x5BDF;&#x306E;&#x3054;&#x6848;&#x5185;</h2>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="p-1 m-0">
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD038/GD038_001?contents=000009&amp;menu=000043">&#x884C;&#x653F;&#x8996;&#x5BDF;&#x306E;&#x3054;&#x6848;&#x5185;</a></li>
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD033/GD033_001?shubetsu=1&amp;menu=000053">&#x884C;&#x653F;&#x8996;&#x5BDF;&#x53D7;&#x3051;&#x5165;&#x308C;&#x72B6;&#x6CC1;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card border-primary border-2 mb-2">
+                                <div class="card-header text-white bg-primary">
+                                    <h2 class="nav-midashi fs-6 fw-normal mb-0">&#x30A2;&#x30AF;&#x30BB;&#x30B7;&#x30D3;&#x30EA;&#x30C6;&#x30A3;&#x306B;&#x3064;&#x3044;&#x3066;</h2>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="p-1 m-0">
+                                                <li class="pb-1"><a href="/gikai/toda-f9fzqijq2awo0kaj/GD038/GD038_001?contents=000010&amp;menu=000045">&#x30A2;&#x30AF;&#x30BB;&#x30B7;&#x30D3;&#x30EA;&#x30C6;&#x30A3;&#x306B;&#x3064;&#x3044;&#x3066;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card border-primary border-2 mb-2">
+                                <div class="card-header text-white bg-primary">
+                                    <h2 class="nav-midashi fs-6 fw-normal mb-0">&#x6238;&#x7530;&#x5E02;&#x5F79;&#x6240;</h2>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="p-1 m-0">
+                                                <li class="pb-1">
+                                                    <a href="https://www.city.toda.saitama.jp/" target="_blank" rel="noopener noreferrer">&#x6238;&#x7530;&#x5E02;&#x5F79;&#x6240;</a><i class="bi bi-box-arrow-up-right px-1"></i>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                </nav>
+            </div>
+            <!-- ナビゲーションここまで -->
+        </div>
+        <footer class="border-top">
+            <div style="padding-left: 15px; margin-left: 10px; padding-top: 10px;">
+  <table style="width: 100%; border-collapse: collapse;">
+    <tbody>
+      <tr>
+        <td style="padding: 6px 0; vertical-align: top; white-space: nowrap; min-width: 80px; color: #003E72; font-weight: 500;">問い合わせ先</td>
+        <td style="padding: 6px 0 6px 8px; color: #333;">戸田市議会事務局</td>
+      </tr>
+      <tr>
+        <td style="padding: 6px 0; vertical-align: top; white-space: nowrap; color: #003E72; font-weight: 500;">住所</td>
+        <td style="padding: 6px 0 6px 8px; color: #333;">〒335-8588　埼玉県戸田市上戸田1丁目18番1号</td>
+      </tr>
+      <tr>
+        <td style="padding: 6px 0; vertical-align: top; white-space: nowrap; color: #003E72; font-weight: 500;">電話番号</td>
+        <td style="padding: 6px 0 6px 8px; color: #333;">048-441-1800<br><span style="font-size: 0.9em; color: #003E72; font-weight: 500;">内線</span> <span style="font-size: 0.9em; color: #666;">総務担当 523、議事担当 543、調査担当 524</span></td>
+      </tr>
+      <tr>
+        <td style="padding: 6px 0; vertical-align: top; white-space: nowrap; color: #003E72; font-weight: 500;">ファクス</td>
+        <td style="padding: 6px 0 6px 8px; color: #333;">048-433-2212</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p style="text-align: center; margin-top: 15px; color: #999;">Copyright Toda City. All Rights Reserved.</p>
+        </footer>
+    </div>
+    <!-- コンテナここまで -->
+    <input type="hidden" id="PathBase" name="PathBase" value="/gikai" />
+    <input type="hidden" id="TenantId" name="TenantId" value="toda-f9fzqijq2awo0kaj" />
+    <input type="hidden" id="BASE_KENSAKU_JSON" name="BASE_KENSAKU_JSON" value="" />
+    <input type="hidden" id="BASE_MENU_CODE" name="BASE_MENU_CODE" value="000010" />
+    <input type="hidden" id="BASE_ID_PROGRAM" name="BASE_ID_PROGRAM" value="GD016" />
+</body>
+
+</html>

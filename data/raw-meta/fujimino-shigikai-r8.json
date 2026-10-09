@@ -1,0 +1,26 @@
+{
+  "sourceId": "fujimino-shigikai-r8",
+  "files": [
+    {
+      "filename": "r8_1teirei_sanpi.pdf",
+      "sha256": "feda9a33260a6e4771e4f0574defae24cb702e90f898d72514217bf9b1522e4c",
+      "bytes": 74888,
+      "fetchedAt": "2026-10-09T03:10:14.172Z",
+      "fetchedFrom": "https://www.city.fujimino.saitama.jp/material/files/group/35/r8_1teirei_sanpi.pdf"
+    },
+    {
+      "filename": "R8_1_kaiki.pdf",
+      "sha256": "f9347e75ec40db92374f16ae42423a572b14f918bb091844cd7f809766c0a866",
+      "bytes": 47352,
+      "fetchedAt": "2026-10-09T03:10:14.173Z",
+      "fetchedFrom": "https://www.city.fujimino.saitama.jp/material/files/group/35/R8_1_kaiki.pdf"
+    },
+    {
+      "filename": "4604.html",
+      "sha256": "8ead7d04c65c76c81ce6e0b1b255e983a80fa2c47b1872a496701413503898ca",
+      "bytes": 55747,
+      "fetchedAt": "2026-10-09T03:10:14.173Z",
+      "fetchedFrom": "https://www.city.fujimino.saitama.jp/shinojoho/shigikai/shigikainitsuite/4604.html"
+    }
+  ]
+}

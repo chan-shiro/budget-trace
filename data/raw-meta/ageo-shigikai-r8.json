@@ -1,0 +1,33 @@
+{
+  "sourceId": "ageo-shigikai-r8",
+  "files": [
+    {
+      "filename": "116928.pdf",
+      "sha256": "fbe0ca9cd81b0eed28fd07e186c1d2cc854ff03efae0ed9a687130825d7b2418",
+      "bytes": 243566,
+      "fetchedAt": "2026-10-09T03:09:57.190Z",
+      "fetchedFrom": "https://www.city.ageo.lg.jp/uploaded/attachment/116928.pdf"
+    },
+    {
+      "filename": "416967.html",
+      "sha256": "4cf183c13b1b3783f58d25d5590d06a7c4e6e800f20fcc6b35107b9d09f6822c",
+      "bytes": 22815,
+      "fetchedAt": "2026-10-09T03:09:57.190Z",
+      "fetchedFrom": "https://www.city.ageo.lg.jp/site/shigikai/416967.html"
+    },
+    {
+      "filename": "412525.html",
+      "sha256": "8a3a62b2e4e7cd2b9b6a351d99782502b37dc8e14eee99f63b5c3d175f22f004",
+      "bytes": 29344,
+      "fetchedAt": "2026-10-09T03:09:57.191Z",
+      "fetchedFrom": "https://www.city.ageo.lg.jp/site/shigikai/412525.html"
+    },
+    {
+      "filename": "62-gikaigiyou.html",
+      "sha256": "57823d4dbf1f826e1dfa9ea36b28d90fa500f82f59afacbd9b7c91ce65828ab3",
+      "bytes": 12728,
+      "fetchedAt": "2026-10-09T03:09:57.191Z",
+      "fetchedFrom": "https://www.city.ageo.lg.jp/site/shigikai/62-gikaigiyou.html"
+    }
+  ]
+}

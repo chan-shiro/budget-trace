@@ -1,0 +1,19 @@
+{
+  "sourceId": "kazo-shigikai-r8",
+  "files": [
+    {
+      "filename": "kazoshigikai_kaihameibo_2025_1210.pdf",
+      "sha256": "7f0d622eefd62ada33786bc093f499a79cf8ea771db0fe9be5b330acaa8ee15a",
+      "bytes": 54837,
+      "fetchedAt": "2026-10-09T03:09:57.182Z",
+      "fetchedFrom": "https://www.city.kazo.lg.jp/material/files/group/48/kazoshigikai_kaihameibo_2025_1210.pdf"
+    },
+    {
+      "filename": "43175.html",
+      "sha256": "a49dfe6669c2c3bb9ba6c9016e0aeb663929ed4589ed8e3deb623a6126897109",
+      "bytes": 107840,
+      "fetchedAt": "2026-10-09T03:09:57.183Z",
+      "fetchedFrom": "https://www.city.kazo.lg.jp/soshiki/gikai/teirei/reiwa7nennteireikai/43175.html"
+    }
+  ]
+}

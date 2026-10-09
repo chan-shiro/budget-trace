@@ -1,0 +1,248 @@
+{
+  "docType": "council-composition",
+  "sourceId": "fujimino-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.7",
+  "parsedAt": "2026-10-09T04:52:56.822Z",
+  "fiscalYear": "R8",
+  "body": "ふじみ野市議会",
+  "seats": 21,
+  "asOf": "2026-03-18",
+  "teisu": 21,
+  "factions": [
+    {
+      "name": "青藍会",
+      "seats": 9,
+      "isIndependent": false,
+      "members": [
+        "野口一也",
+        "田中早苗",
+        "川島秀男",
+        "前田広子",
+        "鈴木宏樹",
+        "板倉篤",
+        "加藤恵一",
+        "小林憲人",
+        "山田敏夫"
+      ],
+      "locator": {
+        "file": "r8_1teirei_sanpi.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "自由清進の会",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "小林久美",
+        "坪田敏孝",
+        "近藤善則",
+        "原田雄一",
+        "鈴木啓太郎"
+      ],
+      "locator": {
+        "file": "r8_1teirei_sanpi.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "古越孝子",
+        "鈴木美恵",
+        "川畑京子"
+      ],
+      "locator": {
+        "file": "r8_1teirei_sanpi.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "床井紀範",
+        "塚越洋一"
+      ],
+      "locator": {
+        "file": "r8_1teirei_sanpi.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "会派に属さない（金濵高顕）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "金濵高顕"
+      ],
+      "locator": {
+        "file": "r8_1teirei_sanpi.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "会派に属さない（民部佳代）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "民部佳代"
+      ],
+      "locator": {
+        "file": "r8_1teirei_sanpi.pdf",
+        "page": 2
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第２４号議案",
+    "billName": "令和８年度ふじみ野市一般会計予算",
+    "sessionLabel": "令和８年第１回定例会",
+    "decidedDate": "2026-03-18",
+    "decidedDateLabel": "令和8年3月18日",
+    "result": "可決",
+    "locator": {
+      "file": "r8_1teirei_sanpi.pdf",
+      "page": 2
+    }
+  },
+  "rosterTitle": "令和８年第１回定例会の提出議案等と審議結果",
+  "resultTitle": "令和８年第１回定例会の提出議案等と審議結果",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "令和８年第１回定例会の提出議案等と審議結果",
+    "sourceFile": "r8_1teirei_sanpi.pdf",
+    "columns": [
+      {
+        "label": "野口一也",
+        "faction": "青藍会",
+        "member": "野口一也",
+        "stance": "賛成"
+      },
+      {
+        "label": "田中早苗",
+        "faction": "青藍会",
+        "member": "田中早苗",
+        "stance": "賛成"
+      },
+      {
+        "label": "川島秀男",
+        "faction": "青藍会",
+        "member": "川島秀男",
+        "stance": "賛成"
+      },
+      {
+        "label": "前田広子",
+        "faction": "青藍会",
+        "member": "前田広子",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴木宏樹",
+        "faction": "青藍会",
+        "member": "鈴木宏樹",
+        "stance": "賛成"
+      },
+      {
+        "label": "板倉篤",
+        "faction": "青藍会",
+        "member": "板倉篤",
+        "stance": "賛成"
+      },
+      {
+        "label": "加藤恵一",
+        "faction": "青藍会",
+        "member": "加藤恵一",
+        "stance": "議長"
+      },
+      {
+        "label": "小林憲人",
+        "faction": "青藍会",
+        "member": "小林憲人",
+        "stance": "賛成"
+      },
+      {
+        "label": "山田敏夫",
+        "faction": "青藍会",
+        "member": "山田敏夫",
+        "stance": "賛成"
+      },
+      {
+        "label": "小林久美",
+        "faction": "自由清進の会",
+        "member": "小林久美",
+        "stance": "賛成"
+      },
+      {
+        "label": "坪田敏孝",
+        "faction": "自由清進の会",
+        "member": "坪田敏孝",
+        "stance": "賛成"
+      },
+      {
+        "label": "近藤善則",
+        "faction": "自由清進の会",
+        "member": "近藤善則",
+        "stance": "賛成"
+      },
+      {
+        "label": "原田雄一",
+        "faction": "自由清進の会",
+        "member": "原田雄一",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴木啓太郎",
+        "faction": "自由清進の会",
+        "member": "鈴木啓太郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "古越孝子",
+        "faction": "公明党",
+        "member": "古越孝子",
+        "stance": "賛成"
+      },
+      {
+        "label": "鈴木美恵",
+        "faction": "公明党",
+        "member": "鈴木美恵",
+        "stance": "賛成"
+      },
+      {
+        "label": "川畑京子",
+        "faction": "公明党",
+        "member": "川畑京子",
+        "stance": "賛成"
+      },
+      {
+        "label": "床井紀範",
+        "faction": "日本共産党",
+        "member": "床井紀範",
+        "stance": "反対"
+      },
+      {
+        "label": "塚越洋一",
+        "faction": "日本共産党",
+        "member": "塚越洋一",
+        "stance": "反対"
+      },
+      {
+        "label": "金濵高顕",
+        "faction": "会派に属さない（金濵高顕）",
+        "member": "金濵高顕",
+        "stance": "賛成"
+      },
+      {
+        "label": "民部佳代",
+        "faction": "会派に属さない（民部佳代）",
+        "member": "民部佳代",
+        "stance": "賛成"
+      }
+    ]
+  }
+}

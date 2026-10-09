@@ -1,0 +1,250 @@
+{
+  "docType": "council-composition",
+  "sourceId": "asaka-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.7",
+  "parsedAt": "2026-10-09T04:52:49.718Z",
+  "fiscalYear": "R8",
+  "body": "朝霞市議会",
+  "seats": 23,
+  "asOf": "2025-12-18",
+  "factions": [
+    {
+      "name": "進政会",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "野本一幸",
+        "陶山憲雅",
+        "獅子倉晴樹",
+        "石原茂",
+        "ごん純一",
+        "増田ともみ"
+      ],
+      "locator": {
+        "file": "iinkaimeibo2023.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "あさか未来",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "高堀亮太郎",
+        "福川鷹子",
+        "西明",
+        "飯倉一樹",
+        "田原亮"
+      ],
+      "locator": {
+        "file": "iinkaimeibo2023.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "遠藤光博",
+        "宮林智美",
+        "利根川仁志",
+        "駒牧容子",
+        "岡﨑和広"
+      ],
+      "locator": {
+        "file": "iinkaimeibo2023.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "立憲・歩みの会",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "黒川滋",
+        "本田麻希子"
+      ],
+      "locator": {
+        "file": "iinkaimeibo2023.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "無所属",
+      "seats": 5,
+      "isIndependent": true,
+      "members": [
+        "兼本尚昌",
+        "渡部竜二",
+        "田辺淳",
+        "石川啓子",
+        "外山麻貴"
+      ],
+      "locator": {
+        "file": "iinkaimeibo2023.html",
+        "row": 5
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第3号",
+    "billName": "令和８年度（２０２６年度）朝霞市一般会計予算",
+    "sessionLabel": "令和８年第１回定例会",
+    "decidedDate": "2026-03-23",
+    "decidedDateLabel": "令和8年3月23日",
+    "result": "原案可決",
+    "locator": {
+      "file": "108679.pdf",
+      "page": 1
+    }
+  },
+  "rosterTitle": "委員会・会派名簿（令和7年12月18日現在）",
+  "resultTitle": "令和８年第１回定例会 議案審議結果表",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "令和８年第１回定例会 議案審議結果表",
+    "sourceFile": "108679.pdf",
+    "columns": [
+      {
+        "label": "石原茂",
+        "faction": "進政会",
+        "member": "石原茂",
+        "stance": "賛成"
+      },
+      {
+        "label": "野本一幸",
+        "faction": "進政会",
+        "member": "野本一幸",
+        "stance": "議長"
+      },
+      {
+        "label": "増田ともみ",
+        "faction": "進政会",
+        "member": "増田ともみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "陶山憲雅",
+        "faction": "進政会",
+        "member": "陶山憲雅",
+        "stance": "賛成"
+      },
+      {
+        "label": "獅子倉晴樹",
+        "faction": "進政会",
+        "member": "獅子倉晴樹",
+        "stance": "賛成"
+      },
+      {
+        "label": "ごん純一",
+        "faction": "進政会",
+        "member": "ごん純一",
+        "stance": "賛成"
+      },
+      {
+        "label": "田原亮",
+        "faction": "あさか未来",
+        "member": "田原亮",
+        "stance": "賛成"
+      },
+      {
+        "label": "福川鷹子",
+        "faction": "あさか未来",
+        "member": "福川鷹子",
+        "stance": "賛成"
+      },
+      {
+        "label": "飯倉一樹",
+        "faction": "あさか未来",
+        "member": "飯倉一樹",
+        "stance": "賛成"
+      },
+      {
+        "label": "西明",
+        "faction": "あさか未来",
+        "member": "西明",
+        "stance": "賛成"
+      },
+      {
+        "label": "高堀亮太郎",
+        "faction": "あさか未来",
+        "member": "高堀亮太郎",
+        "stance": "賛成"
+      },
+      {
+        "label": "利根川仁志",
+        "faction": "公明党",
+        "member": "利根川仁志",
+        "stance": "賛成"
+      },
+      {
+        "label": "岡﨑和広",
+        "faction": "公明党",
+        "member": "岡﨑和広",
+        "stance": "賛成"
+      },
+      {
+        "label": "遠藤光博",
+        "faction": "公明党",
+        "member": "遠藤光博",
+        "stance": "賛成"
+      },
+      {
+        "label": "駒牧容子",
+        "faction": "公明党",
+        "member": "駒牧容子",
+        "stance": "賛成"
+      },
+      {
+        "label": "宮林智美",
+        "faction": "公明党",
+        "member": "宮林智美",
+        "stance": "賛成"
+      },
+      {
+        "label": "黒川滋",
+        "faction": "立憲・歩みの会",
+        "member": "黒川滋",
+        "stance": "反対"
+      },
+      {
+        "label": "本田麻希子",
+        "faction": "立憲・歩みの会",
+        "member": "本田麻希子",
+        "stance": "反対"
+      },
+      {
+        "label": "田辺淳",
+        "faction": "無所属",
+        "member": "田辺淳",
+        "stance": "反対"
+      },
+      {
+        "label": "石川啓子",
+        "faction": "無所属",
+        "member": "石川啓子",
+        "stance": "反対"
+      },
+      {
+        "label": "外山麻貴",
+        "faction": "無所属",
+        "member": "外山麻貴",
+        "stance": "賛成"
+      },
+      {
+        "label": "兼本尚昌",
+        "faction": "無所属",
+        "member": "兼本尚昌",
+        "stance": "賛成"
+      },
+      {
+        "label": "渡部竜二",
+        "faction": "無所属",
+        "member": "渡部竜二",
+        "stance": "賛成"
+      }
+    ]
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "docType": "council-composition",
+  "sourceId": "toda-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.7",
+  "parsedAt": "2026-10-09T04:53:31.605Z",
+  "fiscalYear": "R8",
+  "body": "戸田市議会",
+  "seats": 24,
+  "asOf": "2026-03-11",
+  "teisu": 25,
+  "factions": [
+    {
+      "name": "戸田の会",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "辺見智子",
+        "小沼さゆり",
+        "宮内そうこ",
+        "佐藤太信",
+        "野澤茂雅",
+        "矢澤青河",
+        "浅生和英",
+        "酒井いくろう"
+      ],
+      "locator": {
+        "file": "DownLoadTempuFile_dataId_0000054203_fileId_48e00997ad364e7eb59f57a6e294041e_fileName_giketsukekkaitiranR080311_pdf.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "政策TODA",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "小山大輔",
+        "古屋としみつ",
+        "そごう拓也",
+        "細田昌孝",
+        "遠藤英樹"
+      ],
+      "locator": {
+        "file": "DownLoadTempuFile_dataId_0000054203_fileId_48e00997ad364e7eb59f57a6e294041e_fileName_giketsukekkaitiranR080311_pdf.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "三浦のぶお",
+        "三輪なお子",
+        "竹内正明",
+        "石川清明"
+      ],
+      "locator": {
+        "file": "DownLoadTempuFile_dataId_0000054203_fileId_48e00997ad364e7eb59f57a6e294041e_fileName_giketsukekkaitiranR080311_pdf.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "日本共産党戸田市議団",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "花井あきこ",
+        "むとう葉子",
+        "本田哲"
+      ],
+      "locator": {
+        "file": "DownLoadTempuFile_dataId_0000054203_fileId_48e00997ad364e7eb59f57a6e294041e_fileName_giketsukekkaitiranR080311_pdf.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "平政会",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "斎藤直子",
+        "榎本守明"
+      ],
+      "locator": {
+        "file": "DownLoadTempuFile_dataId_0000054203_fileId_48e00997ad364e7eb59f57a6e294041e_fileName_giketsukekkaitiranR080311_pdf.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "りっけん戸田",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "小金沢優"
+      ],
+      "locator": {
+        "file": "DownLoadTempuFile_dataId_0000054203_fileId_48e00997ad364e7eb59f57a6e294041e_fileName_giketsukekkaitiranR080311_pdf.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "保守の会",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "河合ゆうすけ"
+      ],
+      "locator": {
+        "file": "DownLoadTempuFile_dataId_0000054203_fileId_48e00997ad364e7eb59f57a6e294041e_fileName_giketsukekkaitiranR080311_pdf.pdf",
+        "page": 1
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第２２号",
+    "billName": "令和８年度戸田市一般会計予算",
+    "sessionLabel": "令和８年３月定例会",
+    "decidedDate": "2026-03-11",
+    "decidedDateLabel": "令和8年3月11日",
+    "result": "原案可決",
+    "locator": {
+      "file": "DownLoadTempuFile_dataId_0000054203_fileId_48e00997ad364e7eb59f57a6e294041e_fileName_giketsukekkaitiranR080311_pdf.pdf",
+      "page": 4
+    }
+  },
+  "rosterTitle": "議員別採決状況及び議決結果一覧：令和８年３月定例会（会派名・議員名の見出し）",
+  "resultTitle": "議員別採決状況及び議決結果一覧：令和８年３月定例会",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "議員別採決状況及び議決結果一覧：令和８年３月定例会",
+    "sourceFile": "DownLoadTempuFile_dataId_0000054203_fileId_48e00997ad364e7eb59f57a6e294041e_fileName_giketsukekkaitiranR080311_pdf.pdf",
+    "columns": [
+      {
+        "label": "辺見智子",
+        "faction": "戸田の会",
+        "member": "辺見智子",
+        "stance": "賛成"
+      },
+      {
+        "label": "小沼さゆり",
+        "faction": "戸田の会",
+        "member": "小沼さゆり",
+        "stance": "賛成"
+      },
+      {
+        "label": "宮内そうこ",
+        "faction": "戸田の会",
+        "member": "宮内そうこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐藤太信",
+        "faction": "戸田の会",
+        "member": "佐藤太信",
+        "stance": "賛成"
+      },
+      {
+        "label": "野澤茂雅",
+        "faction": "戸田の会",
+        "member": "野澤茂雅",
+        "stance": "賛成"
+      },
+      {
+        "label": "矢澤青河",
+        "faction": "戸田の会",
+        "member": "矢澤青河",
+        "stance": "賛成"
+      },
+      {
+        "label": "浅生和英",
+        "faction": "戸田の会",
+        "member": "浅生和英",
+        "stance": "賛成"
+      },
+      {
+        "label": "酒井いくろう",
+        "faction": "戸田の会",
+        "member": "酒井いくろう",
+        "stance": "賛成"
+      },
+      {
+        "label": "小山大輔",
+        "faction": "政策TODA",
+        "member": "小山大輔",
+        "stance": "賛成"
+      },
+      {
+        "label": "古屋としみつ",
+        "faction": "政策TODA",
+        "member": "古屋としみつ",
+        "stance": "賛成"
+      },
+      {
+        "label": "そごう拓也",
+        "faction": "政策TODA",
+        "member": "そごう拓也",
+        "stance": "賛成"
+      },
+      {
+        "label": "細田昌孝",
+        "faction": "政策TODA",
+        "member": "細田昌孝",
+        "stance": "賛成"
+      },
+      {
+        "label": "遠藤英樹",
+        "faction": "政策TODA",
+        "member": "遠藤英樹",
+        "stance": "賛成"
+      },
+      {
+        "label": "三浦のぶお",
+        "faction": "公明党",
+        "member": "三浦のぶお",
+        "stance": "賛成"
+      },
+      {
+        "label": "三輪なお子",
+        "faction": "公明党",
+        "member": "三輪なお子",
+        "stance": "議長"
+      },
+      {
+        "label": "竹内正明",
+        "faction": "公明党",
+        "member": "竹内正明",
+        "stance": "賛成"
+      },
+      {
+        "label": "石川清明",
+        "faction": "公明党",
+        "member": "石川清明",
+        "stance": "賛成"
+      },
+      {
+        "label": "花井あきこ",
+        "faction": "日本共産党戸田市議団",
+        "member": "花井あきこ",
+        "stance": "賛成"
+      },
+      {
+        "label": "むとう葉子",
+        "faction": "日本共産党戸田市議団",
+        "member": "むとう葉子",
+        "stance": "賛成"
+      },
+      {
+        "label": "本田哲",
+        "faction": "日本共産党戸田市議団",
+        "member": "本田哲",
+        "stance": "賛成"
+      },
+      {
+        "label": "斎藤直子",
+        "faction": "平政会",
+        "member": "斎藤直子",
+        "stance": "賛成"
+      },
+      {
+        "label": "榎本守明",
+        "faction": "平政会",
+        "member": "榎本守明",
+        "stance": "賛成"
+      },
+      {
+        "label": "小金沢優",
+        "faction": "りっけん戸田",
+        "member": "小金沢優",
+        "stance": "賛成"
+      },
+      {
+        "label": "河合ゆうすけ",
+        "faction": "保守の会",
+        "member": "河合ゆうすけ",
+        "stance": "反対"
+      }
+    ]
+  }
+}

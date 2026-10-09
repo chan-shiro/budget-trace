@@ -1,0 +1,116 @@
+{
+  "docType": "council-composition",
+  "sourceId": "kazo-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.7",
+  "parsedAt": "2026-10-09T04:53:07.270Z",
+  "fiscalYear": "R8",
+  "body": "加須市議会",
+  "seats": 24,
+  "asOf": "2025-12-10",
+  "factions": [
+    {
+      "name": "令和会",
+      "seats": 8,
+      "isIndependent": false,
+      "members": [
+        "原田悟",
+        "新井好一",
+        "竹内政雄",
+        "中島正和",
+        "山本仁美",
+        "赤坂和洋",
+        "内田昇",
+        "小坂裕"
+      ],
+      "locator": {
+        "file": "kazoshigikai_kaihameibo_2025_1210.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "新政会",
+      "seats": 7,
+      "isIndependent": false,
+      "members": [
+        "金子正則",
+        "田中良夫",
+        "齋藤理史",
+        "宮崎智司",
+        "山下雄希",
+        "栗原智之",
+        "高橋一夫"
+      ],
+      "locator": {
+        "file": "kazoshigikai_kaihameibo_2025_1210.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "公明党加須市議団",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "大内清心",
+        "中條恵子",
+        "森本寿子",
+        "池田年美"
+      ],
+      "locator": {
+        "file": "kazoshigikai_kaihameibo_2025_1210.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "日本共産党加須市議会議員団",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "佐伯由恵",
+        "及川和子",
+        "松本幸子"
+      ],
+      "locator": {
+        "file": "kazoshigikai_kaihameibo_2025_1210.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "りっけん",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "野中芳子"
+      ],
+      "locator": {
+        "file": "kazoshigikai_kaihameibo_2025_1210.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "はじめの一歩",
+      "seats": 1,
+      "isIndependent": false,
+      "members": [
+        "宮代翔太"
+      ],
+      "locator": {
+        "file": "kazoshigikai_kaihameibo_2025_1210.pdf",
+        "page": 1
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "第2号議案",
+    "billName": "令和8年度加須市一般会計予算",
+    "sessionLabel": "令和8年第1回加須市議会定例会",
+    "decidedDate": "2026-03-09",
+    "decidedDateLabel": "令和8年3月9日",
+    "result": "原案可決",
+    "locator": {
+      "file": "43175.html"
+    }
+  },
+  "rosterTitle": "加須市議会会派一覧（令和7年12月10日現在）",
+  "resultTitle": "令和8年第1回定例会情報（議案等の審議結果一覧表）"
+}

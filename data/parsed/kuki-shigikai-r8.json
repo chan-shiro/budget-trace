@@ -1,0 +1,256 @@
+{
+  "docType": "council-composition",
+  "sourceId": "kuki-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.7",
+  "parsedAt": "2026-10-09T04:53:09.304Z",
+  "fiscalYear": "R8",
+  "body": "久喜市議会",
+  "seats": 24,
+  "asOf": "2025-03-12",
+  "factions": [
+    {
+      "name": "久喜みらいの会",
+      "seats": 11,
+      "isIndependent": false,
+      "members": [
+        "新井兼",
+        "大谷和子",
+        "園部茂雄",
+        "川内鴻輝",
+        "榎本英明",
+        "春山千明",
+        "樋口智洋",
+        "奈良政宏",
+        "瀬川泰祐",
+        "成田ルミ子",
+        "上條哲弘"
+      ],
+      "locator": {
+        "file": "1006419.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "公明党久喜市議団",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "斉藤広子",
+        "丹野郁夫",
+        "大橋きよみ",
+        "山田正義",
+        "岡崎克巳"
+      ],
+      "locator": {
+        "file": "1006419.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "市民の政治を進める会",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "猪股和雄",
+        "川辺美信",
+        "田村栄子"
+      ],
+      "locator": {
+        "file": "1006419.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "日本共産党久喜市議団",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "杉野修",
+        "渡辺昌代"
+      ],
+      "locator": {
+        "file": "1006419.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "会派に属さない議員",
+      "seats": 3,
+      "isIndependent": true,
+      "members": [
+        "宮崎亜希",
+        "瀬田博文",
+        "貴志信智"
+      ],
+      "locator": {
+        "file": "1006419.html",
+        "row": 5
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第89号",
+    "billName": "令和8年度久喜市一般会計予算について",
+    "sessionLabel": "令和8年2月定例会議",
+    "decidedDate": "2026-03-03",
+    "decidedDateLabel": "令和8年3月3日",
+    "result": "可決",
+    "locator": {
+      "file": "1011952.html"
+    }
+  },
+  "rosterTitle": "議員名簿（会派別）（更新日 2025年3月12日）",
+  "resultTitle": "令和8年2月定例会議 議案・議決結果",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "令和8年2月定例会議 市長提出議案とその結果",
+    "sourceFile": "r8.2_giketsu.pdf",
+    "columns": [
+      {
+        "label": "宮崎亜希",
+        "faction": "会派に属さない議員",
+        "member": "宮崎亜希",
+        "stance": "反対"
+      },
+      {
+        "label": "川辺美信",
+        "faction": "市民の政治を進める会",
+        "member": "川辺美信",
+        "stance": "反対"
+      },
+      {
+        "label": "猪股和雄",
+        "faction": "市民の政治を進める会",
+        "member": "猪股和雄",
+        "stance": "反対"
+      },
+      {
+        "label": "田村栄子",
+        "faction": "市民の政治を進める会",
+        "member": "田村栄子",
+        "stance": "反対"
+      },
+      {
+        "label": "瀬田博文",
+        "faction": "会派に属さない議員",
+        "member": "瀬田博文",
+        "stance": "賛成"
+      },
+      {
+        "label": "樋口智洋",
+        "faction": "久喜みらいの会",
+        "member": "樋口智洋",
+        "stance": "賛成"
+      },
+      {
+        "label": "奈良政宏",
+        "faction": "久喜みらいの会",
+        "member": "奈良政宏",
+        "stance": "賛成"
+      },
+      {
+        "label": "瀬川泰祐",
+        "faction": "久喜みらいの会",
+        "member": "瀬川泰祐",
+        "stance": "賛成"
+      },
+      {
+        "label": "渡辺昌代",
+        "faction": "日本共産党久喜市議団",
+        "member": "渡辺昌代",
+        "stance": "反対"
+      },
+      {
+        "label": "杉野修",
+        "faction": "日本共産党久喜市議団",
+        "member": "杉野修",
+        "stance": "反対"
+      },
+      {
+        "label": "貴志信智",
+        "faction": "会派に属さない議員",
+        "member": "貴志信智",
+        "stance": "反対"
+      },
+      {
+        "label": "榎本英明",
+        "faction": "久喜みらいの会",
+        "member": "榎本英明",
+        "stance": "欠席"
+      },
+      {
+        "label": "川内鴻輝",
+        "faction": "久喜みらいの会",
+        "member": "川内鴻輝",
+        "stance": "賛成"
+      },
+      {
+        "label": "成田ルミ子",
+        "faction": "久喜みらいの会",
+        "member": "成田ルミ子",
+        "stance": "賛成"
+      },
+      {
+        "label": "園部茂雄",
+        "faction": "久喜みらいの会",
+        "member": "園部茂雄",
+        "stance": "賛成"
+      },
+      {
+        "label": "岡崎克巳",
+        "faction": "公明党久喜市議団",
+        "member": "岡崎克巳",
+        "stance": "賛成"
+      },
+      {
+        "label": "丹野郁夫",
+        "faction": "公明党久喜市議団",
+        "member": "丹野郁夫",
+        "stance": "賛成"
+      },
+      {
+        "label": "山田正義",
+        "faction": "公明党久喜市議団",
+        "member": "山田正義",
+        "stance": "賛成"
+      },
+      {
+        "label": "大橋きよみ",
+        "faction": "公明党久喜市議団",
+        "member": "大橋きよみ",
+        "stance": "賛成"
+      },
+      {
+        "label": "斉藤広子",
+        "faction": "公明党久喜市議団",
+        "member": "斉藤広子",
+        "stance": "賛成"
+      },
+      {
+        "label": "春山千明",
+        "faction": "久喜みらいの会",
+        "member": "春山千明",
+        "stance": "賛成"
+      },
+      {
+        "label": "大谷和子",
+        "faction": "久喜みらいの会",
+        "member": "大谷和子",
+        "stance": "賛成"
+      },
+      {
+        "label": "新井兼",
+        "faction": "久喜みらいの会",
+        "member": "新井兼",
+        "stance": "賛成"
+      },
+      {
+        "label": "上條哲弘",
+        "faction": "久喜みらいの会",
+        "member": "上條哲弘",
+        "stance": "議長"
+      }
+    ]
+  }
+}

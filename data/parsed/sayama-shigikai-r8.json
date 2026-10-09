@@ -1,0 +1,137 @@
+{
+  "docType": "council-composition",
+  "sourceId": "sayama-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.7",
+  "parsedAt": "2026-10-09T04:53:26.573Z",
+  "fiscalYear": "R8",
+  "body": "狭山市議会",
+  "seats": 22,
+  "asOf": "2025-06-06",
+  "teisu": 22,
+  "factions": [
+    {
+      "name": "健政会",
+      "seats": 6,
+      "isIndependent": false,
+      "members": [
+        "太田博希",
+        "酒井英男",
+        "豊泉正人",
+        "福田正",
+        "笹本英輔",
+        "町田昌弘"
+      ],
+      "locator": {
+        "file": "kaihameibo.html",
+        "row": 1
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "加賀谷勉",
+        "関根弘樹",
+        "船川秀子",
+        "広山清志"
+      ],
+      "locator": {
+        "file": "kaihameibo.html",
+        "row": 2
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "大沢えみ子",
+        "橋本亜矢",
+        "衣川千代子"
+      ],
+      "locator": {
+        "file": "kaihameibo.html",
+        "row": 3
+      }
+    },
+    {
+      "name": "創造",
+      "seats": 3,
+      "isIndependent": false,
+      "members": [
+        "菅野淳",
+        "金子広和",
+        "大島政教"
+      ],
+      "locator": {
+        "file": "kaihameibo.html",
+        "row": 4
+      }
+    },
+    {
+      "name": "新政みらい",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "土方隆司",
+        "内藤光雄"
+      ],
+      "locator": {
+        "file": "kaihameibo.html",
+        "row": 5
+      }
+    },
+    {
+      "name": "光と風",
+      "seats": 2,
+      "isIndependent": false,
+      "members": [
+        "田中寿夫",
+        "丸橋ユキ"
+      ],
+      "locator": {
+        "file": "kaihameibo.html",
+        "row": 6
+      }
+    },
+    {
+      "name": "無所属（三浦和也）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "三浦和也"
+      ],
+      "locator": {
+        "file": "kaihameibo.html",
+        "row": 7
+      }
+    },
+    {
+      "name": "無所属（千葉良秋）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "千葉良秋"
+      ],
+      "locator": {
+        "file": "kaihameibo.html",
+        "row": 8
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第20号",
+    "billName": "令和８年度狭山市一般会計予算",
+    "sessionLabel": "令和8年第1回定例会",
+    "decidedDate": "2026-03-17",
+    "decidedDateLabel": "令和8年3月17日",
+    "result": "原案可決",
+    "locator": {
+      "file": "R8_01gian.html"
+    }
+  },
+  "rosterTitle": "会派名簿（2025年6月6日現在）",
+  "resultTitle": "令和8年第1回定例会【議案】"
+}

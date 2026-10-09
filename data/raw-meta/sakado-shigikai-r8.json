@@ -1,0 +1,19 @@
+{
+  "sourceId": "sakado-shigikai-r8",
+  "files": [
+    {
+      "filename": "36142.pdf",
+      "sha256": "f2b8b3f33a60330c98e5a140a4d5bc5f2df6484b3bb1fb1e3ed073c26a423bba",
+      "bytes": 3881417,
+      "fetchedAt": "2026-10-09T03:10:14.171Z",
+      "fetchedFrom": "https://www.city.sakado.lg.jp/uploaded/attachment/36142.pdf"
+    },
+    {
+      "filename": "34919.pdf",
+      "sha256": "7c4b5829e09d5c7f77623e938e9c3512ac6b42b33008aa13253e9fad2f6452be",
+      "bytes": 87373,
+      "fetchedAt": "2026-10-09T03:10:14.171Z",
+      "fetchedFrom": "https://www.city.sakado.lg.jp/uploaded/attachment/34919.pdf"
+    }
+  ]
+}

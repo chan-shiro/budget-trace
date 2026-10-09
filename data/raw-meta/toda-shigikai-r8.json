@@ -1,0 +1,52 @@
+{
+  "sourceId": "toda-shigikai-r8",
+  "files": [
+    {
+      "filename": "DownLoadTempuFile_dataId_0000054203_fileId_48e00997ad364e7eb59f57a6e294041e_fileName_giketsukekkaitiranR080311_pdf.pdf",
+      "sha256": "831874a390398ed838ec4b464907a4acaac4bc3fb34c29e4a2901b3eaeb50f8f",
+      "bytes": 173378,
+      "fetchedAt": "2026-10-09T03:09:57.192Z",
+      "fetchedFrom": "https://www2.city.toda.saitama.jp/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000054203&fileId=48e00997ad364e7eb59f57a6e294041e&fileName=giketsukekkaitiranR080311.pdf",
+      "transform": [
+        "ext:.pdf"
+      ]
+    },
+    {
+      "filename": "GD016_001_menu_000010.html",
+      "sha256": "0bedece8d559d65135f1cd5d8a8e2d9b034a7f0b6b77c216b6bf77f9761ada1f",
+      "bytes": 56480,
+      "fetchedAt": "2026-10-09T03:09:57.193Z",
+      "fetchedFrom": "https://web.archive.org/web/20260210234237id_/https://www2.city.toda.saitama.jp/gikai/toda-f9fzqijq2awo0kaj/GD016/GD016_001?menu=000010",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "GD038_001_contents_000001_menu_000013.html",
+      "sha256": "e8b3d5cb5b6bb075a81bef5f102f9aa1a680422d5f9b9d410c5b6b4d1079d661",
+      "bytes": 30017,
+      "fetchedAt": "2026-10-09T03:09:57.193Z",
+      "fetchedFrom": "https://www2.city.toda.saitama.jp/gikai/toda-f9fzqijq2awo0kaj/GD038/GD038_001?contents=000001&menu=000013",
+      "transform": [
+        "ext:.html"
+      ]
+    },
+    {
+      "filename": "hisyo-press2025-sityousen.html",
+      "sha256": "13daf1bf1828f844528c911e5ddf31a5a439cb587fba17a056a51541f5d8db9d",
+      "bytes": 24843,
+      "fetchedAt": "2026-10-09T03:09:57.193Z",
+      "fetchedFrom": "https://www.city.toda.saitama.jp/site/press/hisyo-press2025-sityousen.html"
+    },
+    {
+      "filename": "DownLoadTempuFile_dataId_0000054203_fileId_36e0832d53534764a1663ab02ce25b9e_fileName_giketsusokuhoR8_3_pdf.pdf",
+      "sha256": "0743c7afda1d23d907257c65d0231771d0beaa00b7d54728babf4ab2eec0e676",
+      "bytes": 147335,
+      "fetchedAt": "2026-10-09T03:09:57.194Z",
+      "fetchedFrom": "https://www2.city.toda.saitama.jp/gikai/toda-f9fzqijq2awo0kaj/DownLoadTempuFile?dataId=0000054203&fileId=36e0832d53534764a1663ab02ce25b9e&fileName=giketsusokuhoR8-3.pdf",
+      "transform": [
+        "ext:.pdf"
+      ]
+    }
+  ]
+}

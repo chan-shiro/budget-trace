@@ -1,0 +1,26 @@
+{
+  "sourceId": "misato-shigikai-r8",
+  "files": [
+    {
+      "filename": "R803sanpi.pdf",
+      "sha256": "ec7e8c43826a14ea86e3939967406d201759cbabc278fb335100ecfdc5038ed1",
+      "bytes": 369776,
+      "fetchedAt": "2026-10-09T03:10:14.160Z",
+      "fetchedFrom": "https://www.city.misato.lg.jp/material/files/group/57/R803sanpi.pdf"
+    },
+    {
+      "filename": "R8_3_giketukekkaitirann.pdf",
+      "sha256": "d90974c986484cb456fdf8903d7e1c652edd542b899f45d5834c67bd39cdab9d",
+      "bytes": 86203,
+      "fetchedAt": "2026-10-09T03:10:14.161Z",
+      "fetchedFrom": "https://www.city.misato.lg.jp/material/files/group/57/R8_3_giketukekkaitirann.pdf"
+    },
+    {
+      "filename": "204.pdf",
+      "sha256": "d9774c2220e3bcf026ab4306ef896633db290528f48c9a018c4aa3b7fd6898c9",
+      "bytes": 5118497,
+      "fetchedAt": "2026-10-09T03:10:14.166Z",
+      "fetchedFrom": "https://www.city.misato.lg.jp/material/files/group/57/204.pdf"
+    }
+  ]
+}

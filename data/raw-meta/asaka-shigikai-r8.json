@@ -1,0 +1,19 @@
+{
+  "sourceId": "asaka-shigikai-r8",
+  "files": [
+    {
+      "filename": "iinkaimeibo2023.html",
+      "sha256": "6ece9bc197086c57af08ad554ee303771c6a325bc11a6ceec75b545fcf10164c",
+      "bytes": 29252,
+      "fetchedAt": "2026-10-09T03:10:14.151Z",
+      "fetchedFrom": "https://www.city.asaka.lg.jp/site/shigikai/iinkaimeibo2023.html"
+    },
+    {
+      "filename": "108679.pdf",
+      "sha256": "fb95cc22293f3c41dce52917358217baea7108c8919c71820ef3d3da79ecb49f",
+      "bytes": 99215,
+      "fetchedAt": "2026-10-09T03:10:14.151Z",
+      "fetchedFrom": "https://www.city.asaka.lg.jp/uploaded/attachment/108679.pdf"
+    }
+  ]
+}

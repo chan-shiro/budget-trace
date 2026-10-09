@@ -1,0 +1,259 @@
+{
+  "docType": "council-composition",
+  "sourceId": "fujimi-shigikai-r8",
+  "parser": "council-transcribed",
+  "parserVersion": "0.8.7",
+  "parsedAt": "2026-10-09T04:52:56.511Z",
+  "fiscalYear": "R8",
+  "body": "富士見市議会",
+  "seats": 21,
+  "asOf": "2026-03-18",
+  "teisu": 21,
+  "factions": [
+    {
+      "name": "２１・未来クラブ",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "松本剛",
+        "小泉陽",
+        "佐野正幸",
+        "田中栄志",
+        "斉藤隆浩"
+      ],
+      "locator": {
+        "file": "sanpi202603.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "草の根",
+      "seats": 5,
+      "isIndependent": false,
+      "members": [
+        "村元寛",
+        "加賀奈々恵",
+        "熊谷麗",
+        "勝山祥",
+        "今成優太"
+      ],
+      "locator": {
+        "file": "sanpi202603.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "公明党",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "篠田剛",
+        "篠原通裕",
+        "山下淑子",
+        "深瀬優子"
+      ],
+      "locator": {
+        "file": "sanpi202603.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "日本共産党",
+      "seats": 4,
+      "isIndependent": false,
+      "members": [
+        "木村邦憲",
+        "宮尾玲",
+        "須崎悦子",
+        "川畑勝弘"
+      ],
+      "locator": {
+        "file": "sanpi202603.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "無会派（堀航大）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "堀航大"
+      ],
+      "locator": {
+        "file": "sanpi202603.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "無会派（根岸操）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "根岸操"
+      ],
+      "locator": {
+        "file": "sanpi202603.pdf",
+        "page": 2
+      }
+    },
+    {
+      "name": "無会派（伊勢田幸正）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "伊勢田幸正"
+      ],
+      "locator": {
+        "file": "sanpi202603.pdf",
+        "page": 2
+      }
+    }
+  ],
+  "resolution": {
+    "billNo": "議案第24号",
+    "billName": "令和８年度富士見市一般会計予算",
+    "sessionLabel": "令和8年第1回（3月）定例会",
+    "decidedDate": "2026-03-18",
+    "decidedDateLabel": "令和8年3月18日",
+    "result": "原案可決",
+    "locator": {
+      "file": "sanpi202603.pdf",
+      "page": 2
+    }
+  },
+  "rosterTitle": "議案等の審議結果（議員賛否一覧）令和8年第1回（3月）定例会",
+  "resultTitle": "議案等の審議結果（議員賛否一覧）令和8年第1回（3月）定例会",
+  "votes": {
+    "basis": "member",
+    "sourceTitle": "議案等の審議結果（議員賛否一覧）令和8年第1回（3月）定例会",
+    "sourceFile": "sanpi202603.pdf",
+    "columns": [
+      {
+        "label": "松本剛",
+        "faction": "２１・未来クラブ",
+        "member": "松本剛",
+        "stance": "賛成"
+      },
+      {
+        "label": "小泉陽",
+        "faction": "２１・未来クラブ",
+        "member": "小泉陽",
+        "stance": "賛成"
+      },
+      {
+        "label": "佐野正幸",
+        "faction": "２１・未来クラブ",
+        "member": "佐野正幸",
+        "stance": "賛成"
+      },
+      {
+        "label": "田中栄志",
+        "faction": "２１・未来クラブ",
+        "member": "田中栄志",
+        "stance": "賛成"
+      },
+      {
+        "label": "斉藤隆浩",
+        "faction": "２１・未来クラブ",
+        "member": "斉藤隆浩",
+        "stance": "賛成"
+      },
+      {
+        "label": "村元寛",
+        "faction": "草の根",
+        "member": "村元寛",
+        "stance": "賛成"
+      },
+      {
+        "label": "加賀奈々恵",
+        "faction": "草の根",
+        "member": "加賀奈々恵",
+        "stance": "賛成"
+      },
+      {
+        "label": "熊谷麗",
+        "faction": "草の根",
+        "member": "熊谷麗",
+        "stance": "賛成"
+      },
+      {
+        "label": "勝山祥",
+        "faction": "草の根",
+        "member": "勝山祥",
+        "stance": "議長"
+      },
+      {
+        "label": "今成優太",
+        "faction": "草の根",
+        "member": "今成優太",
+        "stance": "賛成"
+      },
+      {
+        "label": "篠田剛",
+        "faction": "公明党",
+        "member": "篠田剛",
+        "stance": "賛成"
+      },
+      {
+        "label": "篠原通裕",
+        "faction": "公明党",
+        "member": "篠原通裕",
+        "stance": "賛成"
+      },
+      {
+        "label": "山下淑子",
+        "faction": "公明党",
+        "member": "山下淑子",
+        "stance": "賛成"
+      },
+      {
+        "label": "深瀬優子",
+        "faction": "公明党",
+        "member": "深瀬優子",
+        "stance": "賛成"
+      },
+      {
+        "label": "木村邦憲",
+        "faction": "日本共産党",
+        "member": "木村邦憲",
+        "stance": "反対"
+      },
+      {
+        "label": "宮尾玲",
+        "faction": "日本共産党",
+        "member": "宮尾玲",
+        "stance": "反対"
+      },
+      {
+        "label": "須崎悦子",
+        "faction": "日本共産党",
+        "member": "須崎悦子",
+        "stance": "反対"
+      },
+      {
+        "label": "川畑勝弘",
+        "faction": "日本共産党",
+        "member": "川畑勝弘",
+        "stance": "反対"
+      },
+      {
+        "label": "堀航大",
+        "faction": "無会派（堀航大）",
+        "member": "堀航大",
+        "stance": "賛成"
+      },
+      {
+        "label": "根岸操",
+        "faction": "無会派（根岸操）",
+        "member": "根岸操",
+        "stance": "賛成"
+      },
+      {
+        "label": "伊勢田幸正",
+        "faction": "無会派（伊勢田幸正）",
+        "member": "伊勢田幸正",
+        "stance": "賛成"
+      }
+    ]
+  }
+}
