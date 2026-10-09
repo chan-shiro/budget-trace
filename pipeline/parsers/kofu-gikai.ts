@@ -27,7 +27,7 @@ import { norm, readDoc, verifyVotes, votesInputSchema } from "./council-transcri
  */
 const optionsSchema = z.object({ votes: votesInputSchema.optional() }).strict();
 
-export const PARSER_VERSION = "0.3.0";
+export const PARSER_VERSION = "0.3.1";
 
 /** HTML → テーブルの行列（セルはタグ除去・空白正規化済みテキスト） */
 function parseTables(html: string): string[][][] {
@@ -213,6 +213,7 @@ export function parseKofuGikai(
         rosterViews: readDoc(kaihaFile).views,
         fileFor,
         missing,
+        bill: { billNo, billName },
       },
       opt.votes,
     );

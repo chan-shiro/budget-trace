@@ -24,7 +24,7 @@ import { z } from "zod";
 import { readRawMeta } from "../lib/store";
 import type { CouncilCompositionDoc, CouncilFactionFact, SourceEntry } from "../types";
 
-export const PARSER_VERSION = "0.8.7";
+export const PARSER_VERSION = "0.8.8";
 
 const factionSchema = z
   .object({
@@ -88,6 +88,20 @@ const votesSchema = z.object({
      */
     ignoreChars: z.string().optional(),
     anchor: z.string().min(1),
+    /**
+     * anchor が件名（resolution.billName）を名指さないとき（「採決」「可決」の行の頭・表の列見出し・行番号）に、anchor の行が
+     * 当初の一般会計予算の行であることを示す原文（0.8.8）。賛否表の本文に続けて出て、件名（または議案番号・「令和N年度…一般会計予算」）を含むこと。
+     * - key なし: text は anchor をちょうど1回含み、記号はその anchor の出現（text の中のもの）から読む（八王子「可決以下の46議案について…第5号議案令和8年度八王子市一般会計予算」）
+     * - key あり: key は anchor の中の行番号・列番号（名古屋「(2)」・板橋「1」）。text は key で始まり、key の直後から件名までの間に
+     *   key と同じ形（数字を入れ替えた語）が無いこと（名古屋「(2)は、次の1件です。【3月19日議決】令和8年度一般会計予算」）
+     */
+    anchorEvidence: z.object({ text: z.string().min(1), key: z.string().min(1).optional() }).optional(),
+    /**
+     * 件名も議案番号も賛否表の行に無く、行の見出しが会計の名前だけの原典（東村山: 縦書きの「令和8年度予算」の枠の中の行「一般会計」）の理由。
+     * anchor は「一般会計」そのもの（補正・特別会計・号数を含まない）で、記号は anchor の**直後から**始まり、そう読める出現が各抽出で1つだけであること
+     * （補正の行「一般会計（第６号）」は号数を挟むので読まない）。⚠ 年度は件名と結び付かない（同じ表に別年度の「一般会計」の行が無いことを目視する）
+     */
+    anchorWeakReason: z.string().min(20).optional(),
     maxGap: z.number().int().nonnegative().max(80).optional(),
     /**
      * HTML の表: "row"/"column" ＝ anchor のセルと同じ行／列の、凡例の字（語）だけのセルの並び。
@@ -571,6 +585,43 @@ function isAmendTail(headN: string, after: string): boolean {
   if (/修正|に対する/.test(headN)) return false;
   return /^.{0,6}(に対する|の修正|修正案|修正動議|附帯決議)/.test(after);
 }
+/** t の i から len 字の出現が、数字の途中で切れていないか（「市56」を「市567」に・「1予算」を「31予算」に当てない） */
+function digitEdgeOk(t: string, i: number, len: number): boolean {
+  const d = (c: string | undefined) => c !== undefined && /\d/.test(c);
+  return !(d(t[i]) && d(t[i - 1])) && !(d(t[i + len - 1]) && d(t[i + len]));
+}
+/** n の出現のうち数字の途中で切れていないものの位置 */
+function boundedAll(t: string, n: string): number[] {
+  const out: number[] = [];
+  for (let i = t.indexOf(n); i >= 0; i = t.indexOf(n, i + 1)) if (digitEdgeOk(t, i, n.length)) out.push(i);
+  return out;
+}
+const reiwaYears = (s: string) => [...s.matchAll(/令和(\d+)年度/g)].map((m) => String(Number(m[1])));
+/**
+ * 語が当初の一般会計予算を名指すか（0.8.8）。「一般会計予算」か、「当初予算」と「一般会計」の両方（西東京の表「令和8年度｜当初予算｜一般会計」）を含み、
+ * 補正・特別会計・修正の語を含まず、令和の年度を書くなら件名の年度と合うこと
+ */
+function namesBudget(sN: string, billNameN: string): boolean {
+  if (!(sN.includes("一般会計予算") || (sN.includes("当初予算") && sN.includes("一般会計")))) return false;
+  if (/補正|特別会計|事業会計|修正|に対する/.test(sN)) return false;
+  const ys = reiwaYears(sN);
+  const by = reiwaYears(billNameN);
+  return ys.every((y) => by.includes(y));
+}
+/** 原文の中の、議決の件名への言及（件名・数字だけでない議案番号・「令和N年度…一般会計予算」）の位置 */
+function billMention(eN: string, bill: { billNo: string; billName: string }): { start: number; end: number } | null {
+  const nameN = norm(bill.billName);
+  const noN = norm(bill.billNo);
+  const cands: { start: number; end: number }[] = [];
+  const ni = eN.indexOf(nameN);
+  if (ni >= 0) cands.push({ start: ni, end: ni + nameN.length });
+  if (/\D/.test(noN) && /\d/.test(noN)) for (const i of boundedAll(eN, noN)) cands.push({ start: i, end: i + noN.length });
+  for (const y of reiwaYears(nameN)) {
+    const m = new RegExp(`令和${y}年度[^\\d補特修]{0,12}?一般会計予算`).exec(eN);
+    if (m) cands.push({ start: m.index, end: m.index + m[0].length });
+  }
+  return cands.sort((a, b) => a.start - b.start)[0] ?? null;
+}
 /** 賛否表の記号として出る非漢字の字（既存 registry の凡例から。／・－は日付や空欄にも出るので入れない） */
 const VOTE_MARKS = /[○〇●◎◯×✕✖△▲▽□■◇◆]/gu;
 /** verifyVotes が名簿・会派・原典を引くための文脈。パーサごとに名簿の読み方は違うが、賛否の照合は1つにする */
@@ -585,6 +636,8 @@ export interface VotesCtx {
   fileFor: (url: string) => { path: string; filename: string };
   /** 照合の不一致をここに積む（呼び出し側がまとめて throw する） */
   missing: string[];
+  /** 議決の件名と議案番号（照合済みのもの）。単一の採決の anchor をこれに結び付ける（0.8.8） */
+  bill: { billNo: string; billName: string };
 }
 /** 1回の採決の賛否を原典と突き合わせる（votes・votesParts の各要素・kofu-gikai で共通） */
 export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
@@ -600,6 +653,73 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
   const has = (views: { text: string }[], needle: string) => views.some((v) => v.text.includes(norm(needle)));
   const vf = fileFor(vo.url);
   const vdoc = readDoc(vf);
+  // ---- anchor と議決の件名の結び付き（0.8.8） ----
+  // anchor は「予算の行の頭」の原文でしかなく、件名と結び付いていなかった — 別の議案の行（特別会計・条例）を anchor にして
+  // その行の記号を写すと予算の賛否として通った（朝霞で国保・介護・水道の3通りを実測・レビュー4巡目）。単一の採決では次のどれかを要求する:
+  // ① anchor が当初の一般会計予算を名指す（namesBudget）か件名を含む ② anchor が議案番号そのもの（番号の飾りの字だけを足したもの）
+  // ③ anchorEvidence（anchor の行が件名の行であることを示す原文）。修正可決の採決ごと（votesParts）は partText の照合が別にある
+  /** 記号を読んでよい anchor の出現（③ の key なしのとき）。null は制限なし */
+  let allowedAt: Set<string> | null = null;
+  /** anchorWeakReason の読み: 記号は anchor の直後から始まり、そう読める出現が各抽出で1つだけ */
+  let weakTight = false;
+  const single = (vo as { part?: string }).part == null;
+  if (single) {
+    const aN = norm(vo.anchor);
+    const nameN = norm(ctx.bill.billName);
+    const noN = norm(ctx.bill.billNo);
+    const byName = namesBudget(aN, nameN) || (aN.includes(nameN) && !/補正|修正|に対する/.test(aN));
+    const byNo =
+      /\d/.test(noN) && boundedAll(aN, noN).length === 1 && /^[第号議案市区町村県甲乙]*$/.test(aN.replace(noN, ""));
+    let byEvidence = false;
+    const ev = vo.anchorEvidence;
+    if (ev) {
+      const eN = norm(ev.text);
+      const kN = norm(ev.key ?? vo.anchor);
+      const errs: string[] = [];
+      if (eN.length > 120) errs.push(`120字まで`);
+      // 記号の並び（2字以上の連なり）を挟まないこと — 挟めば別の行まで伸ばしている
+      const markChars = new Set([...Object.keys(vo.legend).map(norm).filter((k) => k.length === 1 && !/\p{Script=Han}/u.test(k)), ..."○〇●◎◯×✕✖△▲▽□■◇◆"]);
+      if ([...eN].some((c, i) => markChars.has(c) && markChars.has(eN[i + 1] ?? ""))) errs.push(`記号の並びを含みます`);
+      if (ev.key && boundedAll(aN, kN).length !== 1) errs.push(`key「${ev.key}」が anchor にちょうど1回（数字の途中でなく）含まれません`);
+      const kAt = boundedAll(eN, kN);
+      if (kAt.length !== 1) errs.push(`${ev.key ? "key" : "anchor"}「${ev.key ?? vo.anchor}」を原文にちょうど1回含みません`);
+      if (ev.key && kAt[0] !== 0) errs.push(`原文が key「${ev.key}」で始まりません`);
+      const m = billMention(eN, ctx.bill);
+      if (!m) errs.push(`件名「${ctx.bill.billName}」（議案番号「${ctx.bill.billNo}」・令和の年度つきの「一般会計予算」）を含みません`);
+      if (m && ev.key && kAt.length === 1) {
+        // key の直後から件名までに、key と同じ形の語（数字を入れ替えたもの）があれば、件名は別の番号の行のもの
+        const shape = new RegExp(kN.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/\d+/g, "\\d+"));
+        if (m.start < kN.length || shape.test(eN.slice(kN.length, m.start))) errs.push(`key「${ev.key}」の後ろに件名が無いか、間に別の番号があります`);
+      }
+      // 原文の出現。件名の直後に「に対する修正案」等が続くもの（修正案の行）は数えない
+      const occ: { vi: number; at: number }[] = [];
+      vdoc.views.forEach((v, vi) => {
+        for (let p = v.text.indexOf(eN); p >= 0; p = v.text.indexOf(eN, p + 1)) {
+          if (m && isAmendTail("", v.text.slice(p + m.end))) continue;
+          occ.push({ vi, at: p });
+        }
+      });
+      if (!occ.length) errs.push(`${vf.filename} の本文に続けて出ません`);
+      if (errs.length) missing.push(`anchorEvidence「${ev.text}」: ${errs.join("・")}`);
+      else {
+        byEvidence = true;
+        if (!ev.key) allowedAt = new Set(occ.map((o) => `${o.vi}:${o.at + kAt[0]!}`));
+      }
+    }
+    if (vo.anchorWeakReason) {
+      if (aN !== "一般会計" || vo.table || vo.anchorSide === "before" || vo.unanimousText) {
+        missing.push(`anchorWeakReason は本文の行の見出しが「一般会計」だけの原典にだけ使えます（anchor「${vo.anchor}」）`);
+      } else weakTight = true;
+    }
+    if (!byName && !byNo && !byEvidence && !weakTight) {
+      missing.push(
+        `賛否の anchor「${vo.anchor}」が議決の件名「${ctx.bill.billName}」（議案番号「${ctx.bill.billNo}」）と結び付きません — ` +
+          `anchor を件名の行の語にするか、anchorEvidence に anchor と件名が同じ行にあることを示す原文を書く`,
+      );
+    }
+  }
+  /** anchor の出現 i（views[vi]）の記号を予算の行として数えてよいか。列見出しの順の照合は表の性質なので、同じ記号の並びの別の出現（別の抽出）でもよい */
+  const allowed = (vi: number, i: number) => allowedAt == null || allowedAt.has(`${vi}:${i}`);
   // 本文の窓で読む原典（表でない）の anchor は「予算の行の語」に限る。記号の並びや次の行の頭まで anchor に飲み込ませると、
   // 直後・直前の検査（記号の並び・全会一致の間）をすり抜けられた（レビュー3巡目）。漢字の凡例（議・除）は語として anchor に入る（松本・明石）
   if (vo.table && isPdf(vf)) throw new Error(`${sourceId}: votes.table は HTML の賛否表にだけ使えます（PDF は anchor の直後を読む）`);
@@ -641,9 +761,9 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
     const aN = norm(vo.anchor);
     const uN = norm(vo.unanimousText);
     const gap = vo.maxGap ?? 40;
-    const near = vdoc.views.some((v) => {
+    const near = vdoc.views.some((v, vi) => {
       for (let i = v.text.indexOf(aN); i >= 0; i = v.text.indexOf(aN, i + 1)) {
-        if (isAmendTail(aN, v.text.slice(i + aN.length))) continue;
+        if (!digitEdgeOk(v.text, i, aN.length) || !allowed(vi, i) || isAmendTail(aN, v.text.slice(i + aN.length))) continue;
         const w = v.text.slice(i + aN.length, i + aN.length + gap + uN.length);
         const at = w.indexOf(uN);
         if (at < 0) continue;
@@ -709,11 +829,16 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
   let headerOk = false;
   if (vo.table) {
     if (isPdf(vf)) throw new Error(`${sourceId}: votes.table は HTML の賛否表にだけ使えます`);
+    // 表のセルは本文の位置と対応しないので、anchorEvidence（key なし）は anchor が本文にちょうど1回出て、それが原文の中のときだけ認める
+    if (allowedAt) {
+      const at = vdoc.views.flatMap((v, vi) => boundedAll(v.text, anchorN).map((i) => `${vi}:${i}`));
+      if (at.length !== 1 || !allowedAt.has(at[0]!)) missing.push(`anchor「${vo.anchor}」が本文に${at.length}回出ます（表の anchorEvidence は、本文に1回だけ出る anchor にだけ使えます）`);
+    }
     for (const t of htmlTables(readHtml(vf.path))) {
       if (vo.table === "memberRows") {
         // 予算の列の見出しセルの位置を取り、columns の氏名の行のその列のセルを並べる
         for (let ri = 0; ri < t.length; ri++) {
-          const ci = t[ri]!.findIndex((c) => c.includes(anchorN) && !isAmendTail(anchorN, c.slice(c.indexOf(anchorN) + anchorN.length)));
+          const ci = t[ri]!.findIndex((c) => boundedAll(c, anchorN).length > 0 && !isAmendTail(anchorN, c.slice(c.indexOf(anchorN) + anchorN.length)));
           if (ci < 0) continue;
           const seq: string[] = [];
           const rowsOrder: number[] = [];
@@ -728,7 +853,7 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
       } else {
         t.forEach((row, ri) =>
           row.forEach((cell, ci) => {
-            if (!cell.includes(anchorN) || isAmendTail(anchorN, cell.slice(cell.indexOf(anchorN) + anchorN.length))) return;
+            if (!boundedAll(cell, anchorN).length || isAmendTail(anchorN, cell.slice(cell.indexOf(anchorN) + anchorN.length))) return;
             const line = vo.table === "row" ? row.slice(ci + 1) : t.slice(ri + 1).map((rw) => rw[ci] ?? "");
             const seq = line.filter((c) => c.length > 0 && legend.has(c));
             if (seq.join("|") === sym.join("|")) {
@@ -746,6 +871,13 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
       }
     }
   } else {
+    if (weakTight) {
+      for (const v of vdoc.views) {
+        let n = 0;
+        for (let i = v.text.indexOf(anchorN); i >= 0; i = v.text.indexOf(anchorN, i + 1)) if (keys.some((k) => v.text.startsWith(k, i + anchorN.length))) n++;
+        if (n > 1) missing.push(`${vf.filename} p.${v.page}: 「${vo.anchor}」の直後に記号が続く行が ${n} つあります（anchorWeakReason は行が1つに決まる原典にだけ使えます）`);
+      }
+    }
     const gap = vo.maxGap ?? 40;
     const before = vo.anchorSide === "before";
     const isWordChar = (c: string | undefined) =>
@@ -753,8 +885,10 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
     // 語の頭（末尾）として免除するのは、凡例の字そのものが漢字（議・欠・除・退）のときだけ。
     // ○・×・〇などは続く字が何でも記号 — 免除すると「…〇 可決」の末尾の〇を1つ落とした書き写しが通る（レビューで長野・明石に実測）
     const hanKey = (k: string) => /^\p{Script=Han}/u.test(k);
-    for (const v of vdoc.views) {
+    for (const [vi, v] of vdoc.views.entries()) {
       for (let i = v.text.indexOf(anchorN); i >= 0; i = v.text.indexOf(anchorN, i + 1)) {
+        if (!digitEdgeOk(v.text, i, anchorN.length)) continue;
+        const counts = allowed(vi, i);
         // 修正案の行（anchor の直後に「に対する修正案」等）は予算の行ではない（朝霞で修正案の行の記号が予算の賛否として通った＝レビュー2巡目）
         if (isAmendTail(anchorN, v.text.slice(i + anchorN.length))) continue;
         // "before": 記号は anchor の前に来る。anchor の前の本文を逆順にして同じ手順で読み、最後に戻す
@@ -776,7 +910,7 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
           // 直前の字が凡例の字でも、さらに前が凡例でない漢字なら語の末尾（「…議」）であって記号ではない
           const prevIsSym = keys.some((k) => tail.endsWith(k, j) && !(hanKey(k) && isWordChar(tail[j - k.length - 1])));
           if (got.join("|") === sym.join("|") && !prevIsSym) {
-            rowOk = true;
+            if (counts) rowOk = true;
             if (inOrder(head.slice(0, j))) headerOk = true;
           }
           continue;
@@ -784,7 +918,7 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
         const rest = v.text.slice(i + anchorN.length);
         let st = 0;
         while (st < rest.length && st <= gap && !keys.some((k) => rest.startsWith(k, st))) st++;
-        if (st > gap) continue;
+        if (st > gap || (weakTight && st !== 0)) continue;
         const got: string[] = [];
         let j = st;
         while (j < rest.length && got.length < sym.length) {
@@ -796,7 +930,7 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
         // 直後の字が凡例の字でも、続く字が凡例でない漢字なら次の行の語の頭（「議案第44号」の「議」）であって記号ではない（八戸・松本で実測）
         const nextIsSym = keys.some((k) => rest.startsWith(k, j) && !(hanKey(k) && isWordChar(rest[j + k.length])));
         if (got.join("|") === sym.join("|") && !nextIsSym) {
-          rowOk = true;
+          if (counts) rowOk = true;
           // 列見出しは、この行より前（同じ抽出・同じページ）にその順で出ること
           if (inOrder(v.text.slice(0, i))) headerOk = true;
         }
@@ -1365,7 +1499,7 @@ export function parseCouncilTranscribed(
   let votesOut: VotesOut | undefined;
   let partsOut: (VotesOut & { part: string })[] | undefined;
   if (opt.votes && opt.votesParts) throw new Error(`${source.id}: votes と votesParts は同時に使わない`);
-  const vctx: VotesCtx = { sourceId: source.id, factionsOpt: opt.factions, factions, rosterViews: roster.views, fileFor, missing };
+  const vctx: VotesCtx = { sourceId: source.id, factionsOpt: opt.factions, factions, rosterViews: roster.views, fileFor, missing, bill: { billNo: r.billNo, billName: r.billName } };
   if (opt.votes) votesOut = verifyVotes(vctx, opt.votes);
   if (opt.votesParts) {
     partsOut = opt.votesParts.map((vp) => {
