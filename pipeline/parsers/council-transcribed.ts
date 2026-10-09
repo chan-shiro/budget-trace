@@ -24,7 +24,7 @@ import { z } from "zod";
 import { readRawMeta } from "../lib/store";
 import type { CouncilCompositionDoc, CouncilFactionFact, SourceEntry } from "../types";
 
-export const PARSER_VERSION = "0.8.4";
+export const PARSER_VERSION = "0.8.5";
 
 const factionSchema = z
   .object({
@@ -1192,10 +1192,16 @@ export function parseCouncilTranscribed(
   const AFTER = r.afterWindow ?? 60;
   const nameN = norm(r.billName);
   const billNoN = norm(r.billNo);
+  /**
+   * 件名の出現のうち、予算そのものでなく「予算に対する修正案・附帯決議」の行（件名の直後に「に対する」「修正案」等が続く）は数えない。
+   * 加須・朝霞は修正案の行（否決）が予算の件名を前方一致で含み、結果を「否決」と書いても通った（レビューで実測）
+   */
+  const notAmend = (after: string) => nameN.includes("修正") || nameN.includes("に対する") || !/^.{0,6}(に対する|の修正|修正案|修正動議|附帯決議)/.test(after);
   /** 件名の出現のうち、直前に議案番号があるもの（farOk の billNo なら全出現） */
   const anchors: { text: string; at: number; page: number }[] = [];
   for (const v of resultViews) {
     for (let i = v.text.indexOf(nameN); i >= 0; i = v.text.indexOf(nameN, i + 1)) {
+      if (!notAmend(v.text.slice(i + nameN.length))) continue;
       // 「1」「議1」のような短い番号は直前の数字に紛れるので、件名の**すぐ前**（番号の長さ＋2字）に限る
       const win = billNoN.length <= 3 ? billNoN.length + 2 : BEFORE;
       // 件名が議案番号で始まる書き方（南アルプス「議案26一般会計予算」）のときだけ件名の頭も窓に含める。
@@ -1240,7 +1246,7 @@ export function parseCouncilTranscribed(
     ? mainAnchors
     : mainResult.views.flatMap((v) => {
         const out: { text: string; at: number; page: number }[] = [];
-        for (let i = v.text.indexOf(nameN); i >= 0; i = v.text.indexOf(nameN, i + 1)) out.push({ text: v.text, at: i, page: v.page });
+        for (let i = v.text.indexOf(nameN); i >= 0; i = v.text.indexOf(nameN, i + 1)) if (notAmend(v.text.slice(i + nameN.length))) out.push({ text: v.text, at: i, page: v.page });
         return out;
       });
   if (r.table) {
@@ -1252,7 +1258,7 @@ export function parseCouncilTranscribed(
     for (const t of htmlTables(readHtml(resultFile.path))) {
       t.forEach((row, ri) =>
         row.forEach((cell, ci) => {
-          if (!cell.includes(nameN)) return;
+          if (!cell.includes(nameN) || !notAmend(cell.slice(cell.indexOf(nameN) + nameN.length))) return;
           const line = r.table === "row" ? t[ri]! : t.map((rw) => rw[ci] ?? "");
           // 番号が件名と同じセルの頭に入る原典がある（熊本「議第３号 令和８ 年度熊本市一般会計予算」）
           const okNo = r.farOk?.includes("billNo") || line.some((c) => c === billNoN || (c.includes(nameN) && c.startsWith(billNoN)));

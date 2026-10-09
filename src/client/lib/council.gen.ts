@@ -1386,7 +1386,7 @@ export const MUNI_COUNCIL_YEARS: Record<string, Council[]> = {
         "title": "加須市議会会派一覧（令和7年12月10日現在）",
         "localUrl": "/sources/kazo-shigikai-r8/kazoshigikai_kaihameibo_2025_1210.pdf",
         "originUrl": "https://www.city.kazo.lg.jp/material/files/group/48/kazoshigikai_kaihameibo_2025_1210.pdf",
-        "archiveUrl": "https://www.city.kazo.lg.jp/material/files/group/48/kazoshigikai_kaihameibo_2025_1210.pdf"
+        "archiveUrl": "https://web.archive.org/web/20261009043112/https://www.city.kazo.lg.jp/material/files/group/48/kazoshigikai_kaihameibo_2025_1210.pdf"
       },
       "result": {
         "title": "令和8年第1回定例会情報（議案等の審議結果一覧表）",
@@ -1549,7 +1549,7 @@ export const MUNI_COUNCIL_YEARS: Record<string, Council[]> = {
         "title": "令和８年３月 鴻巣市議会定例会議決結果番号表",
         "localUrl": "/sources/konosu-shigikai-r8/25906.pdf",
         "originUrl": "https://www.city.kounosu.saitama.jp/uploaded/attachment/25906.pdf",
-        "archiveUrl": "https://www.city.kounosu.saitama.jp/uploaded/attachment/25906.pdf"
+        "archiveUrl": "https://web.archive.org/web/20261009043211/https://www.city.kounosu.saitama.jp/uploaded/attachment/25906.pdf"
       },
       "minutesUrl": null,
       "newsletterUrl": null,
