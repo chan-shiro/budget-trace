@@ -707,26 +707,32 @@ export function verifyVotes(ctx: VotesCtx, vo: VotesInput): VotesOut {
       if (tokRe.test(eN)) errs.push(`凡例の語・記号の並びを含みます`);
       // key は anchor の中の番号（数字を含み、anchor そのものでない）。key＝anchor にすると key なしの「原文の中の出現だけを読む」が外れた（レビュー1巡目）
       if (ev.key && (kN === aN || !/\d/.test(kN))) errs.push(`key「${ev.key}」は anchor の中の番号（数字を含み anchor 全体でない語）にする`);
-      // 本文（表でない）の key は行番号そのもの: 数字だけで、anchor の中で「第…号」「(…)」「問…」「…期」の一部でなく、key の外の anchor の語に
-      // 議案の種類・件名の語が無いこと。key は「番号 ↔ 件名」を示すだけなので、key の数字を含む別の行の頭（「議案第1号…定数条例…否決」
+      // 本文（表でない）の key は行番号そのもの: 数字だけで、anchor の中で「第…号」「(…)」「問…」「…期」の一部でなく、key の外の anchor の語が
+      // 列見出し・委員会名・団体の字だけであること。key は「番号 ↔ 件名」を示すだけなので、key の数字を含む別の行の頭（「議案第1号…定数条例…否決」
       // 「諮問第1号…」「(1)条例案40…」「第1期工事)」）を anchor にすると、その行の記号が通った（レビュー3巡目・7団体）
       if (ev.key && !vo.table && boundedAll(aN, kN).length === 1) {
         const at = boundedAll(aN, kN)[0]!;
         const outside = aN.slice(0, at) + "|" + aN.slice(at + kN.length);
+        // key の外に許す語は列見出し・委員会名（「番号」「付託委員会」「予算審査特別委員会」）と団体の字だけ（語のブラックリストは
+        // 「不採択」「円」のような語彙の外の語で抜けた＝レビュー4巡目）
+        const rest = outside.replace(/[\p{Script=Han}ー]{0,12}委員会/gu, "").replace(/番号/g, "");
         if (
           !/^\d+$/.test(kN) ||
           /[第(（問号]$/.test(aN.slice(0, at)) ||
           /^[号)）期]/.test(aN.slice(at + kN.length)) ||
-          /議案|条例|請願|陳情|諮問|契約|工事|意見書|決議|人権|同意|承認|報告|号|件|予算(?!審査)|会計/.test(outside) ||
+          !/^[市区町村県甲乙|]*$/.test(rest) ||
           NOT_BUDGET_ROW.test(outside)
         )
-          errs.push(`本文の key「${ev.key}」は数字だけの行番号にし、anchor の key の外に議案の番号・種類・件名の語を入れない`);
+          errs.push(`本文の key「${ev.key}」は数字だけの行番号にし、anchor の key の外は列見出し・委員会名・団体の字だけにする`);
       }
       if (ev.key && boundedAll(aN, kN).length !== 1) errs.push(`key「${ev.key}」が anchor にちょうど1回（数字の途中でなく）含まれません`);
       const kAt = boundedAll(eN, kN);
       if (kAt.length !== 1) errs.push(`${ev.key ? "key" : "anchor"}「${ev.key ?? vo.anchor}」を原文にちょうど1回含みません`);
       if (ev.key && kAt[0] !== 0) errs.push(`原文が key「${ev.key}」で始まりません`);
       const m = billMention(eN, ctx.bill);
+      // 本文の key の原文は「行番号＋件名」: key の直後がそのまま件名の言及であること。「10,000円の使われ方 令和8年度一般会計予算」
+      // 「陳情2件が審議されました…一般会計予算」のように番号でない数字から件名まで伸ばせた（レビュー4巡目・台東・府中）
+      if (ev.key && !vo.table && m && m.start !== kN.length) errs.push(`本文の key「${ev.key}」の直後が件名（議案番号・「令和N年度…一般会計予算」）ではありません`);
       if (!m) errs.push(`件名「${ctx.bill.billName}」（議案番号「${ctx.bill.billNo}」・令和の年度つきの「一般会計予算」）を含みません`);
       if (m && ev.key && kAt.length === 1) {
         // key の直後から件名までに、key と同じ形の語（数字を入れ替えたもの）があれば、件名は別の番号の行のもの
