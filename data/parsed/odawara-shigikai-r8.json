@@ -3,7 +3,7 @@
   "sourceId": "odawara-shigikai-r8",
   "parser": "council-transcribed",
   "parserVersion": "0.8.3",
-  "parsedAt": "2026-10-09T01:17:05.747Z",
+  "parsedAt": "2026-10-09T02:24:24.604Z",
   "fiscalYear": "R8",
   "body": "小田原市議会",
   "seats": 26,
@@ -21,7 +21,7 @@
       ],
       "locator": {
         "file": "1-20260422120015_b69e839bf7fbe8.pdf",
-        "page": 5
+        "page": 15
       }
     },
     {
@@ -37,7 +37,7 @@
       ],
       "locator": {
         "file": "1-20260422120015_b69e839bf7fbe8.pdf",
-        "page": 10
+        "page": 15
       }
     },
     {
@@ -68,7 +68,7 @@
       ],
       "locator": {
         "file": "1-20260422120015_b69e839bf7fbe8.pdf",
-        "page": 10
+        "page": 15
       }
     },
     {
@@ -82,7 +82,7 @@
       ],
       "locator": {
         "file": "1-20260422120015_b69e839bf7fbe8.pdf",
-        "page": 5
+        "page": 15
       }
     },
     {
@@ -96,7 +96,7 @@
       ],
       "locator": {
         "file": "1-20260422120015_b69e839bf7fbe8.pdf",
-        "page": 5
+        "page": 15
       }
     },
     {
@@ -108,7 +108,7 @@
       ],
       "locator": {
         "file": "1-20260422120015_b69e839bf7fbe8.pdf",
-        "page": 5
+        "page": 15
       }
     },
     {
@@ -120,7 +120,7 @@
       ],
       "locator": {
         "file": "1-20260422120015_b69e839bf7fbe8.pdf",
-        "page": 5
+        "page": 15
       }
     }
   ],
@@ -135,7 +135,7 @@
       "file": "p40899.html"
     }
   },
-  "rosterTitle": "小田原市議会だより 第177号（５月号）会派の構成（令和８年２月9日付）",
+  "rosterTitle": "小田原市議会だより 第177号（５月号）15面 会派の構成（令和８年２月9日付）",
   "resultTitle": "令和8年3月定例会(議案)",
   "votes": {
     "basis": "member",

@@ -3,11 +3,11 @@
   "sourceId": "tachikawa-shigikai-r8",
   "parser": "council-transcribed",
   "parserVersion": "0.8.3",
-  "parsedAt": "2026-10-09T01:17:16.240Z",
+  "parsedAt": "2026-10-09T02:24:35.309Z",
   "fiscalYear": "R8",
   "body": "立川市議会",
   "seats": 24,
-  "asOf": "2025-06-25",
+  "asOf": "2026-03-24",
   "factions": [
     {
       "name": "公明党",
@@ -23,8 +23,8 @@
         "高口靖彦"
       ],
       "locator": {
-        "file": "1021861.html",
-        "row": 1
+        "file": "342-8.pdf",
+        "page": 1
       }
     },
     {
@@ -39,8 +39,8 @@
         "永元香子"
       ],
       "locator": {
-        "file": "1021861.html",
-        "row": 2
+        "file": "342-8.pdf",
+        "page": 1
       }
     },
     {
@@ -55,26 +55,92 @@
         "あべみさ"
       ],
       "locator": {
-        "file": "1021861.html",
-        "row": 3
+        "file": "342-8.pdf",
+        "page": 1
       }
     },
     {
-      "name": "会派を構成しない議員",
-      "seats": 7,
+      "name": "会派を構成しない議員（中山ひと美）",
+      "seats": 1,
       "isIndependent": true,
       "members": [
-        "中山ひと美",
-        "大石ふみお",
-        "頭山太郎",
-        "江口元気",
-        "粂川敏男",
-        "いしとびかおり",
+        "中山ひと美"
+      ],
+      "locator": {
+        "file": "342-8.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "会派を構成しない議員（大石ふみお）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "大石ふみお"
+      ],
+      "locator": {
+        "file": "342-8.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "会派を構成しない議員（頭山太郎）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "頭山太郎"
+      ],
+      "locator": {
+        "file": "342-8.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "会派を構成しない議員（江口元気）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "江口元気"
+      ],
+      "locator": {
+        "file": "342-8.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "会派を構成しない議員（粂川敏男）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "粂川敏男"
+      ],
+      "locator": {
+        "file": "342-8.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "会派を構成しない議員（いしとびかおり）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
+        "いしとびかおり"
+      ],
+      "locator": {
+        "file": "342-8.pdf",
+        "page": 1
+      }
+    },
+    {
+      "name": "会派を構成しない議員（髙畠奈美）",
+      "seats": 1,
+      "isIndependent": true,
+      "members": [
         "髙畠奈美"
       ],
       "locator": {
-        "file": "1021861.html",
-        "row": 4
+        "file": "342-8.pdf",
+        "page": 1
       }
     }
   ],
@@ -89,7 +155,7 @@
       "file": "1026380.html"
     }
   },
-  "rosterTitle": "会派・党派（更新日 2025年6月25日）",
+  "rosterTitle": "たちかわ市議会便り第342号（令和8年4月25日）8面 各議案等に対する賛否（会派名／議員名）",
   "resultTitle": "令和8年第1回定例会議案一覧",
   "votes": {
     "basis": "faction",
@@ -113,43 +179,43 @@
       },
       {
         "label": "中山ひと美",
-        "faction": "会派を構成しない議員",
+        "faction": "会派を構成しない議員（中山ひと美）",
         "member": "中山ひと美",
         "stance": "賛成"
       },
       {
         "label": "大石ふみお",
-        "faction": "会派を構成しない議員",
+        "faction": "会派を構成しない議員（大石ふみお）",
         "member": "大石ふみお",
         "stance": "賛成"
       },
       {
         "label": "頭山太郎",
-        "faction": "会派を構成しない議員",
+        "faction": "会派を構成しない議員（頭山太郎）",
         "member": "頭山太郎",
         "stance": "賛成"
       },
       {
         "label": "江口元気",
-        "faction": "会派を構成しない議員",
+        "faction": "会派を構成しない議員（江口元気）",
         "member": "江口元気",
         "stance": "賛成"
       },
       {
         "label": "粂川敏男",
-        "faction": "会派を構成しない議員",
+        "faction": "会派を構成しない議員（粂川敏男）",
         "member": "粂川敏男",
         "stance": "反対"
       },
       {
         "label": "いしとびかおり",
-        "faction": "会派を構成しない議員",
+        "faction": "会派を構成しない議員（いしとびかおり）",
         "member": "いしとびかおり",
         "stance": "賛成"
       },
       {
         "label": "髙畠奈美",
-        "faction": "会派を構成しない議員",
+        "faction": "会派を構成しない議員（髙畠奈美）",
         "member": "髙畠奈美",
         "stance": "賛成"
       },

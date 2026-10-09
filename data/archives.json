@@ -3673,15 +3673,23 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20261009010819/https://ebina.gijiroku.com/g07_giketsu.asp?kword1=%88%EA%94%CA%89%EF%8Cv%97%5C%8EZ&kaigi=2026%2F02%2F24%2C2026%2F03%2F26%2C112&bunrui=",
       "waybackTimestamp": "20261009010819",
-      "checkedAt": "2026-10-09T01:09:06.585Z"
+      "checkedAt": "2026-10-09T01:46:43.839Z"
     },
     {
       "sourceId": "ebina-shigikai-r8",
       "url": "http://ebina.gijiroku.com/g07_Kaiha.asp",
       "kind": "landing",
-      "waybackUrl": "https://web.archive.org/web/20240114064931/https://ebina.gijiroku.com/g07_Kaiha.asp",
-      "waybackTimestamp": "20240114064931",
-      "checkedAt": "2026-10-09T01:09:33.421Z"
+      "waybackUrl": "https://web.archive.org/web/20261009014653/https://ebina.gijiroku.com/g07_Kaiha.asp",
+      "waybackTimestamp": "20261009014653",
+      "checkedAt": "2026-10-09T01:47:40.861Z"
+    },
+    {
+      "sourceId": "ebina-shigikai-r8",
+      "url": "http://ebina.gijiroku.com/voices/GikaiDoc/attach/Congress/Kg142_81111.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009014528/https://ebina.gijiroku.com/voices/GikaiDoc/attach/Congress/Kg142_81111.pdf",
+      "waybackTimestamp": "20261009014528",
+      "checkedAt": "2026-10-09T01:46:32.203Z"
     },
     {
       "sourceId": "ebina-yosan-setsumei-r2",
@@ -23001,11 +23009,19 @@
     },
     {
       "sourceId": "mitaka-shigikai-r8",
+      "url": "https://www.gikai.city.mitaka.tokyo.jp/activity/pdf/2026custom1giantou_saiketu.pdf",
+      "kind": "file",
+      "waybackUrl": "https://web.archive.org/web/20261009013938/https://www.gikai.city.mitaka.tokyo.jp/activity/pdf/2026custom1giantou_saiketu.pdf",
+      "waybackTimestamp": "20261009013938",
+      "checkedAt": "2026-10-09T01:40:13.251Z"
+    },
+    {
+      "sourceId": "mitaka-shigikai-r8",
       "url": "https://www.gikai.city.mitaka.tokyo.jp/activity/result/2026/custom_2026a.html",
       "kind": "file",
-      "waybackUrl": "https://web.archive.org/web/20260422143315/https://www.gikai.city.mitaka.tokyo.jp/activity/result/2026/custom_2026a.html",
-      "waybackTimestamp": "20260422143315",
-      "checkedAt": "2026-10-09T00:03:06.951Z"
+      "waybackUrl": "https://web.archive.org/web/20261009014118/https://www.gikai.city.mitaka.tokyo.jp/activity/result/2026/custom_2026a.html",
+      "waybackTimestamp": "20261009014118",
+      "checkedAt": "2026-10-09T01:42:41.948Z"
     },
     {
       "sourceId": "mitaka-shigikai-r8",
@@ -23013,7 +23029,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260510013546/https://www.gikai.city.mitaka.tokyo.jp/member/party.html",
       "waybackTimestamp": "20260510013546",
-      "checkedAt": "2026-10-09T00:03:17.087Z"
+      "checkedAt": "2026-10-09T01:42:52.777Z"
     },
     {
       "sourceId": "mitaka-yosangaiyou-h26",
@@ -28642,7 +28658,7 @@
       "kind": "landing",
       "waybackUrl": "https://web.archive.org/web/20260901185527/https://www.city.odawara.kanagawa.jp/citycounc/confere/",
       "waybackTimestamp": "20260901185527",
-      "checkedAt": "2026-10-09T00:43:54.400Z"
+      "checkedAt": "2026-10-09T02:22:16.415Z"
     },
     {
       "sourceId": "odawara-shigikai-r8",
@@ -28650,7 +28666,7 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20261009003944/https://www.city.odawara.kanagawa.jp/global-image/units/691547/1-20250728125835_b6886f56b17872.pdf",
       "waybackTimestamp": "20261009003944",
-      "checkedAt": "2026-10-09T00:40:28.607Z"
+      "checkedAt": "2026-10-09T02:21:40.655Z"
     },
     {
       "sourceId": "odawara-shigikai-r8",
@@ -28666,7 +28682,7 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260901185528/https://www.city.odawara.kanagawa.jp/global-image/units/743714/1-20260422120015_b69e839bf7fbe8.pdf",
       "waybackTimestamp": "20260901185528",
-      "checkedAt": "2026-10-09T00:39:35.908Z"
+      "checkedAt": "2026-10-09T02:21:27.517Z"
     },
     {
       "sourceId": "odawara-yosansho-r5",
@@ -29733,30 +29749,6 @@
       "waybackUrl": "https://web.archive.org/web/20260911011441/https://www.city.okinawa.okinawa.jp/k011/shiseijouhou/yosanzaisei/yosan/ippankaikei/reiwa8.html",
       "waybackTimestamp": "20260911011441",
       "checkedAt": "2026-09-11T01:15:19.317Z"
-    },
-    {
-      "sourceId": "ome-shigikai-r8",
-      "url": "https://www.city.ome.tokyo.jp/site/gikai/115363.html",
-      "kind": "file",
-      "waybackUrl": "https://web.archive.org/web/20261009000703/https://www.city.ome.tokyo.jp/site/gikai/115363.html",
-      "waybackTimestamp": "20261009000703",
-      "checkedAt": "2026-10-09T00:08:20.624Z"
-    },
-    {
-      "sourceId": "ome-shigikai-r8",
-      "url": "https://www.city.ome.tokyo.jp/site/gikai/50389.html",
-      "kind": "landing",
-      "waybackUrl": "https://web.archive.org/web/20261009000424/https://www.city.ome.tokyo.jp/site/gikai/50389.html",
-      "waybackTimestamp": "20261009000424",
-      "checkedAt": "2026-10-09T00:09:29.577Z"
-    },
-    {
-      "sourceId": "ome-shigikai-r8",
-      "url": "https://www.city.ome.tokyo.jp/site/gikai/50390.html",
-      "kind": "file",
-      "waybackUrl": "https://web.archive.org/web/20260309143659/https://www.city.ome.tokyo.jp/site/gikai/50390.html",
-      "waybackTimestamp": "20260309143659",
-      "checkedAt": "2026-10-09T00:08:44.199Z"
     },
     {
       "sourceId": "ome-yosan-setsumei-r3",
@@ -43603,7 +43595,7 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260421070218/https://www.city.tachikawa.lg.jp/_res/projects/default_project/_page_/001/027/149/342-8.pdf",
       "waybackTimestamp": "20260421070218",
-      "checkedAt": "2026-10-09T00:00:08.224Z"
+      "checkedAt": "2026-10-09T02:23:20.610Z"
     },
     {
       "sourceId": "tachikawa-shigikai-r8",
@@ -43611,7 +43603,7 @@
       "kind": "file",
       "waybackUrl": "https://web.archive.org/web/20260302103547/https://www.city.tachikawa.lg.jp/shigikai/katsudo/1007184/1026374/1026375/1026380.html",
       "waybackTimestamp": "20260302103547",
-      "checkedAt": "2026-10-08T23:59:25.034Z"
+      "checkedAt": "2026-10-09T02:22:56.315Z"
     },
     {
       "sourceId": "tachikawa-shigikai-r8",

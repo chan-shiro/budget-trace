@@ -21415,30 +21415,6 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "license": "江戸川区議会公式サイトに掲載している情報（テキスト、画像、PDF、その他のデータ）は、著作権の対象となっており、著作権法により保護されています。「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で複製・転用することはできません。 また、一部の画像などの著作権は第三者に帰属しています。また、江戸川区議会公式サイト上の一部コンテンツ（テキスト、画像、PDF、その他のデータ）の著作権は江戸川区に帰属します。",
     "target": "file"
   },
-  "/sources/tachikawa-shigikai-r8/1021861.html": {
-    "mode": "archive",
-    "href": "https://web.archive.org/web/20260120122623id_/https://www.city.tachikawa.lg.jp/shigikai/shokai/1021861.html",
-    "license": "「立川市ホームページ」(以下、当サイトといいます)に掲載されている情報(文章、写真、イラスト、画像等の各ファイル)およびその内容に関する諸権利は、原則として立川市に帰属し、国際条約・法律等によって保護されています(一部の画像等の著作権は、原著作者が所有しています)。また、当サイトに掲載された社名・商品名などの名称は、一般に関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、立川市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
-    "target": "page"
-  },
-  "/sources/tachikawa-shigikai-r8/1026380.html": {
-    "mode": "origin",
-    "href": "https://www.city.tachikawa.lg.jp/shigikai/katsudo/1007184/1026374/1026375/1026380.html",
-    "license": "「立川市ホームページ」(以下、当サイトといいます)に掲載されている情報(文章、写真、イラスト、画像等の各ファイル)およびその内容に関する諸権利は、原則として立川市に帰属し、国際条約・法律等によって保護されています(一部の画像等の著作権は、原著作者が所有しています)。また、当サイトに掲載された社名・商品名などの名称は、一般に関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、立川市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
-    "target": "page"
-  },
-  "/sources/tachikawa-shigikai-r8/342-8.pdf": {
-    "mode": "origin",
-    "href": "https://www.city.tachikawa.lg.jp/_res/projects/default_project/_page_/001/027/149/342-8.pdf",
-    "license": "「立川市ホームページ」(以下、当サイトといいます)に掲載されている情報(文章、写真、イラスト、画像等の各ファイル)およびその内容に関する諸権利は、原則として立川市に帰属し、国際条約・法律等によって保護されています(一部の画像等の著作権は、原著作者が所有しています)。また、当サイトに掲載された社名・商品名などの名称は、一般に関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、立川市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
-    "target": "file"
-  },
-  "/sources/tachikawa-shigikai-r8/1007606.html": {
-    "mode": "archive",
-    "href": "https://web.archive.org/web/20251116090224id_/https://www.city.tachikawa.lg.jp/shigikai/gicho-fukugicho/1007606.html",
-    "license": "「立川市ホームページ」(以下、当サイトといいます)に掲載されている情報(文章、写真、イラスト、画像等の各ファイル)およびその内容に関する諸権利は、原則として立川市に帰属し、国際条約・法律等によって保護されています(一部の画像等の著作権は、原著作者が所有しています)。また、当サイトに掲載された社名・商品名などの名称は、一般に関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、立川市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
-    "target": "page"
-  },
   "/sources/musashino-shigikai-r8/1001172.html": {
     "mode": "origin",
     "href": "https://www.city.musashino.lg.jp/shigikai/giin/1001172.html",
@@ -21479,30 +21455,6 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "mode": "origin",
     "href": "https://www.gikai.city.mitaka.tokyo.jp/activity/result/2026/custom_2026a.html",
     "license": "三鷹市議会ホームページに掲載されている個々の情報（文字、写真、映像、音声等）は著作権の対象となっています。また、「三鷹市議会ホームページ」全体も編集著作物として、著作権の対象となっています。著作権は日本国著作権法および国際条約により保護されています。「私的使用のための複製」や「引用」など著作権上認められた場合を除き、三鷹市の許可なく無断で複製・転用することはできません。",
-    "target": "page"
-  },
-  "/sources/ome-shigikai-r8/50389.html": {
-    "mode": "origin",
-    "href": "https://www.city.ome.tokyo.jp/site/gikai/50389.html",
-    "license": "本ホームページのご利用は、非営利目的の利用に限定させていただきます。この資料の営利目的による複製、あるいは翻訳、有線送信等、上記以外の著作権法上の利用はできませんのでご注意願います。本ホームページのコンテンツ（テキスト、画像、PDF、その他データ）の著作権は、特別の断りがない限り青梅市に帰属します。",
-    "target": "page"
-  },
-  "/sources/ome-shigikai-r8/78963.pdf": {
-    "mode": "origin",
-    "href": "https://www.city.ome.tokyo.jp/uploaded/attachment/78963.pdf",
-    "license": "本ホームページのご利用は、非営利目的の利用に限定させていただきます。この資料の営利目的による複製、あるいは翻訳、有線送信等、上記以外の著作権法上の利用はできませんのでご注意願います。本ホームページのコンテンツ（テキスト、画像、PDF、その他データ）の著作権は、特別の断りがない限り青梅市に帰属します。",
-    "target": "file"
-  },
-  "/sources/ome-shigikai-r8/115363.html": {
-    "mode": "origin",
-    "href": "https://www.city.ome.tokyo.jp/site/gikai/115363.html",
-    "license": "本ホームページのご利用は、非営利目的の利用に限定させていただきます。この資料の営利目的による複製、あるいは翻訳、有線送信等、上記以外の著作権法上の利用はできませんのでご注意願います。本ホームページのコンテンツ（テキスト、画像、PDF、その他データ）の著作権は、特別の断りがない限り青梅市に帰属します。",
-    "target": "page"
-  },
-  "/sources/ome-shigikai-r8/50390.html": {
-    "mode": "origin",
-    "href": "https://www.city.ome.tokyo.jp/site/gikai/50390.html",
-    "license": "本ホームページのご利用は、非営利目的の利用に限定させていただきます。この資料の営利目的による複製、あるいは翻訳、有線送信等、上記以外の著作権法上の利用はできませんのでご注意願います。本ホームページのコンテンツ（テキスト、画像、PDF、その他データ）の著作権は、特別の断りがない限り青梅市に帰属します。",
     "target": "page"
   },
   "/sources/fuchu-shigikai-r8/kaiha.html": {
@@ -21757,30 +21709,6 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "license": "藤沢市議会公式サイト: 「Copyright(c) 2010- 藤沢市議会公式サイト Fujisawa City. All Rights Reserved.」（著作権の条項は議会サイトに無い）。藤沢市ホームページ「このサイトについて」: 「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、藤沢市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
     "target": "file"
   },
-  "/sources/odawara-shigikai-r8/1-20260422120015_b69e839bf7fbe8.pdf": {
-    "mode": "origin",
-    "href": "https://www.city.odawara.kanagawa.jp/global-image/units/743714/1-20260422120015_b69e839bf7fbe8.pdf",
-    "license": "小田原市ホームページ（以下、「当ホームページ」といいます。）で提供するすべてのコンテンツ（情報・文章・画像など）について、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。当ホームページに掲載した著作物（文章・画像・音声など）、プログラムに係る著作権は、特別の断りがない限り小田原市が保有します。",
-    "target": "file"
-  },
-  "/sources/odawara-shigikai-r8/1-20250728125835_b6886f56b17872.pdf": {
-    "mode": "origin",
-    "href": "https://www.city.odawara.kanagawa.jp/global-image/units/691547/1-20250728125835_b6886f56b17872.pdf",
-    "license": "小田原市ホームページ（以下、「当ホームページ」といいます。）で提供するすべてのコンテンツ（情報・文章・画像など）について、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。当ホームページに掲載した著作物（文章・画像・音声など）、プログラムに係る著作権は、特別の断りがない限り小田原市が保有します。",
-    "target": "file"
-  },
-  "/sources/odawara-shigikai-r8/1-20260326192009_b69c5085905067.pdf": {
-    "mode": "origin",
-    "href": "https://www.city.odawara.kanagawa.jp/global-image/units/720028/1-20260326192009_b69c5085905067.pdf",
-    "license": "小田原市ホームページ（以下、「当ホームページ」といいます。）で提供するすべてのコンテンツ（情報・文章・画像など）について、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。当ホームページに掲載した著作物（文章・画像・音声など）、プログラムに係る著作権は、特別の断りがない限り小田原市が保有します。",
-    "target": "file"
-  },
-  "/sources/odawara-shigikai-r8/p40899.html": {
-    "mode": "origin",
-    "href": "https://www.city.odawara.kanagawa.jp/citycounc/aplenarysession/conferenc/r8/p40899.html",
-    "license": "小田原市ホームページ（以下、「当ホームページ」といいます。）で提供するすべてのコンテンツ（情報・文章・画像など）について、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。当ホームページに掲載した著作物（文章・画像・音声など）、プログラムに係る著作権は、特別の断りがない限り小田原市が保有します。",
-    "target": "page"
-  },
   "/sources/chigasaki-shigikai-r8/1052691.html": {
     "mode": "archive",
     "href": "https://web.archive.org/web/20251109224917id_/https://www.city.chigasaki.kanagawa.jp/gikai/meibo/1052691.html",
@@ -21948,5 +21876,53 @@ export const RESTRICTED_EVIDENCE: Record<string, RestrictedEvidenceLink> = {
     "href": "https://www.city.isehara.kanagawa.dbsr.jp/index.php/?Template=view&VoiceType=all&DocumentID=1874",
     "license": "当ホームページに掲載されている文書や画像等の各ファイル及びその内容に関する権利は、伊勢原市に帰属し、法令によって保護されています。また、当ホームページに掲載された社名・商品名などの名称は、関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、市の許可なく当ホームページに掲載されている文書・画像等を無断使用・複製・転用することを禁止します。",
     "target": "file"
+  },
+  "/sources/odawara-shigikai-r8/1-20260422120015_b69e839bf7fbe8.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.odawara.kanagawa.jp/global-image/units/743714/1-20260422120015_b69e839bf7fbe8.pdf",
+    "license": "小田原市ホームページ（以下、「当ホームページ」といいます。）で提供するすべてのコンテンツ（情報・文章・画像など）について、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。当ホームページに掲載した著作物（文章・画像・音声など）、プログラムに係る著作権は、特別の断りがない限り小田原市が保有します。",
+    "target": "file"
+  },
+  "/sources/odawara-shigikai-r8/1-20250728125835_b6886f56b17872.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.odawara.kanagawa.jp/global-image/units/691547/1-20250728125835_b6886f56b17872.pdf",
+    "license": "小田原市ホームページ（以下、「当ホームページ」といいます。）で提供するすべてのコンテンツ（情報・文章・画像など）について、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。当ホームページに掲載した著作物（文章・画像・音声など）、プログラムに係る著作権は、特別の断りがない限り小田原市が保有します。",
+    "target": "file"
+  },
+  "/sources/odawara-shigikai-r8/1-20260326192009_b69c5085905067.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.odawara.kanagawa.jp/global-image/units/720028/1-20260326192009_b69c5085905067.pdf",
+    "license": "小田原市ホームページ（以下、「当ホームページ」といいます。）で提供するすべてのコンテンツ（情報・文章・画像など）について、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。当ホームページに掲載した著作物（文章・画像・音声など）、プログラムに係る著作権は、特別の断りがない限り小田原市が保有します。",
+    "target": "file"
+  },
+  "/sources/odawara-shigikai-r8/p40899.html": {
+    "mode": "origin",
+    "href": "https://www.city.odawara.kanagawa.jp/citycounc/aplenarysession/conferenc/r8/p40899.html",
+    "license": "小田原市ホームページ（以下、「当ホームページ」といいます。）で提供するすべてのコンテンツ（情報・文章・画像など）について、権利者の許可なく複製・転用・販売といった二次利用をすることを固く禁じます。当ホームページに掲載した著作物（文章・画像・音声など）、プログラムに係る著作権は、特別の断りがない限り小田原市が保有します。",
+    "target": "page"
+  },
+  "/sources/tachikawa-shigikai-r8/1021861.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20260120122623id_/https://www.city.tachikawa.lg.jp/shigikai/shokai/1021861.html",
+    "license": "「立川市ホームページ」(以下、当サイトといいます)に掲載されている情報(文章、写真、イラスト、画像等の各ファイル)およびその内容に関する諸権利は、原則として立川市に帰属し、国際条約・法律等によって保護されています(一部の画像等の著作権は、原著作者が所有しています)。また、当サイトに掲載された社名・商品名などの名称は、一般に関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、立川市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/tachikawa-shigikai-r8/1026380.html": {
+    "mode": "origin",
+    "href": "https://www.city.tachikawa.lg.jp/shigikai/katsudo/1007184/1026374/1026375/1026380.html",
+    "license": "「立川市ホームページ」(以下、当サイトといいます)に掲載されている情報(文章、写真、イラスト、画像等の各ファイル)およびその内容に関する諸権利は、原則として立川市に帰属し、国際条約・法律等によって保護されています(一部の画像等の著作権は、原著作者が所有しています)。また、当サイトに掲載された社名・商品名などの名称は、一般に関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、立川市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
+  },
+  "/sources/tachikawa-shigikai-r8/342-8.pdf": {
+    "mode": "origin",
+    "href": "https://www.city.tachikawa.lg.jp/_res/projects/default_project/_page_/001/027/149/342-8.pdf",
+    "license": "「立川市ホームページ」(以下、当サイトといいます)に掲載されている情報(文章、写真、イラスト、画像等の各ファイル)およびその内容に関する諸権利は、原則として立川市に帰属し、国際条約・法律等によって保護されています(一部の画像等の著作権は、原著作者が所有しています)。また、当サイトに掲載された社名・商品名などの名称は、一般に関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、立川市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "file"
+  },
+  "/sources/tachikawa-shigikai-r8/1007606.html": {
+    "mode": "archive",
+    "href": "https://web.archive.org/web/20251116090224id_/https://www.city.tachikawa.lg.jp/shigikai/gicho-fukugicho/1007606.html",
+    "license": "「立川市ホームページ」(以下、当サイトといいます)に掲載されている情報(文章、写真、イラスト、画像等の各ファイル)およびその内容に関する諸権利は、原則として立川市に帰属し、国際条約・法律等によって保護されています(一部の画像等の著作権は、原著作者が所有しています)。また、当サイトに掲載された社名・商品名などの名称は、一般に関係各社の商標・登録商標です。「私的使用のための複製」や「引用」など著作権法上認められる場合を除き、立川市の許可なく当サイトに掲載されている文書・画像等を無断使用・複製・転載・販売・改変・印刷配布することを禁止します。",
+    "target": "page"
   }
 };
