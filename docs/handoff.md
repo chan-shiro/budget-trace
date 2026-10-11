@@ -2918,3 +2918,31 @@ bun run pipeline:fixture && bun run pipeline:parse fixture-shichoson-kessan-r6 \
   && bun run pipeline:validate fixture-shichoson-kessan-r6 \
   && bun run pipeline:normalize fixture-shichoson-kessan-r6   # パイプライン e2e 確認
 ```
+
+### 本番の手動再デプロイ（main への push で Vercel が自動では走らない間）
+
+⚠ **リポジトリを `philosophy-house/budget-trace` へ移転してから、main への push で本番デプロイが自動では走らない**
+（2026-10-10 時点）。Vercel のプロジェクトの GitHub 連携先（`/v9/projects/budget-trace` の `link`）が**移転前の
+`chan-shiro/budget-trace` のまま**なのが原因と見ている（未確認）。連携を直すまでは、**PR を squash マージしたら毎回
+手で本番デプロイを出す**。CLAUDE.md の「`main` への push で本番へ自動デプロイ」は、この間は成り立たない。
+
+**出し方**（直近の本番デプロイ `dpl_GWTY…`（#328）・`dpl_7XdK…`（#327）と同じ形。チームは `philosophyhouse`）:
+
+```bash
+SHA=$(git rev-parse origin/main)   # git fetch origin の後。マージ後の main の先頭
+printf '{"name":"budget-trace","target":"production","gitSource":{"type":"github","repoId":1297414856,"ref":"main","sha":"%s"}}' "$SHA" > /tmp/deploy.json
+bunx vercel api "/v13/deployments?slug=philosophyhouse" -X POST --input /tmp/deploy.json
+```
+
+- `repoId` 1297414856 は移転後も同じ GitHub リポジトリの ID（デプロイの meta は `githubOrg: philosophy-house` になる）
+- **確かめ方**:
+  - 一覧: `bunx vercel api "/v6/deployments?app=budget-trace&slug=philosophyhouse&target=production&limit=4"`
+  - 本番のドメインの向き先: `bunx vercel api "/v4/aliases/budget-trace.phh.jp?slug=philosophyhouse"` の `deploymentId` が自分のデプロイの ID になっていること
+  - ビルドは約6分（`munibudgets.gen.ts` のバンドル）。`/v13/deployments/<id>?slug=philosophyhouse` の `readyState` が `READY` になるまで待つ
+- ⚠⚠ **`bunx vercel api` の出力の先頭に JSON でない行が付く**ので、そのまま `jq` に渡すと
+  「Invalid numeric literal」で落ちる。**この失敗は POST の失敗ではない**（デプロイはできている）。2026-10-10 に
+  これを失敗と取り違えて POST をやり直し、**同じ sha の本番デプロイが2本**できた（後の1本は
+  `bunx vercel api "/v12/deployments/<id>/cancel?slug=philosophyhouse" -X PATCH` で取り消した）。
+  ⇒ **jq に通すなら `sed -n '/^{/,$p' |` を前に挟む。POST をやり直す前に、必ず一覧で同じ sha のデプロイが無いことを確かめる**
+- ⚠ Hobby プランは同時ビルド1本。別のセッションのデプロイがビルド中なら、自分の分は待たされる（取り消さない）。
+  後から出した方（＝新しい sha）が READY になったら、本番のドメインがそちらを向いていることを確かめる
